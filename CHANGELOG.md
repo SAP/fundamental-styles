@@ -1,3 +1,46 @@
+# [0.27.0-rc.17](https://github.com/SAP/fundamental-styles/compare/v0.27.0-rc.16...v0.27.0-rc.17) (2023-02-23)
+
+
+### Features
+
+* **styles:** table fixed end columns, fixed footer and refactoring ([#4214](https://github.com/SAP/fundamental-styles/issues/4214)) ([6dcf7c3](https://github.com/SAP/fundamental-styles/commit/6dcf7c354aa51665f7aad5754bd893a6bbd0b6bc))
+
+
+### BREAKING CHANGES
+
+* **styles:** * `.fd-table--fixed` does not need paddings anymore, remove them
+* from now add `fd-table--no-outer-border fd-table--top-border` classes to the table which is in a card
+
+* feat(styles): table fixed end columns and refactoring
+
+* fix(styles): rollback to import approach
+
+* fix(styles): table variables refactoring
+
+* fix(styles): refactoring
+
+* fix(styles): table group & tree functionality refactoring
+
+* fix(styles): table interactive states refactoring
+
+* fix(styles): table borders and general refactoring
+
+* fix(styles): table refactoring [ci visual]
+
+* feat(styles): fixed footer
+
+* feat(styles): table fixed docs and improvements [ci visual]
+
+* feat(styles): table refactoring [ci visual]
+
+* fix(styles): table navigation arrows in rtl [ci visual]
+
+* fix(styles): table in card borders issue [ci visual]
+
+* fix(styles): navigation icon in table [ci visual]
+
+
+
 # [0.27.0-rc.16](https://github.com/SAP/fundamental-styles/compare/v0.27.0-rc.15...v0.27.0-rc.16) (2023-02-23)
 
 
