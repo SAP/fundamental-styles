@@ -250,7 +250,7 @@
   }
 
   @include fd-compact() {
-    &:not(.#{$objectListBlock}) {
+    &:not(.#{$objectListBlock}):not(.#{$messageViewList}) {
 
       .#{$block}__item {
         --fdList_Item_Height: 2rem;

@@ -130,13 +130,21 @@ $block: #{$fd-namespace}-token;
     padding: $fd-token-padding-vertical $fd-token-readonly-padding-horizontal;
     border: var(--sapButton_BorderWidth) solid var(--fdToken_Border_Color_Read_Only);
 
-    &.#{$block}--compact {
+    @include fd-compact() {
       padding: $fd-token-compact-padding-vertical $fd-token-compact-readonly-padding-horizontal;
 
       @include fd-rtl() {
         padding-left: $fd-token-compact-readonly-padding-horizontal;
       }
     }
+
+    // &.#{$block}--compact {
+    //   padding: $fd-token-compact-padding-vertical $fd-token-compact-readonly-padding-horizontal;
+
+    //   @include fd-rtl() {
+    //     padding-left: $fd-token-compact-readonly-padding-horizontal;
+    //   }
+    // }
 
     @include fd-hover() {
       box-shadow: none;
