@@ -347,11 +347,13 @@ $button: #{$fd-namespace}-button;
         &.has-child {
           padding-right: 0;
         }
-      }
 
-      .#{$block}__title {
-        &:first-child {
-          padding-right: 0;
+        &:not(.has-child) {
+          .#{$block}__title {
+            &:first-child {
+              padding-right: 0;
+            }
+          }
         }
       }
 

@@ -85,6 +85,7 @@ $block: #{$fd-namespace}-step-input;
   @include fd-compact() {
     --fdStepInput_Bordered_Button_Width: #{$fd-step-input-compact-button-width - $fd-step-input-semantic-border-offset};
     --fdStepInput_Button_Width: #{$fd-step-input-compact-button-width};
+    --fdInput_Field_Compact_Padding: 0 0.25rem;
 
     height: $fd-step-input-compact-height;
     min-height: $fd-step-input-compact-height;

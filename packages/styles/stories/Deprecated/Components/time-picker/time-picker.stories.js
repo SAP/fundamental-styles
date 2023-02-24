@@ -10,7 +10,7 @@ export default {
     title: 'Deprecated/Components/Time Picker',
     parameters: {
         description: `## DEPRECATED
-        The time picker allows the user to select a localized time. It is smaller in compact mode and provides a touch-friendly size in cozy mode. 
+        The time picker allows the user to select a localized time. It is smaller in compact mode and provides a touch-friendly size in cozy mode.
 
 
 ##Usage
@@ -136,7 +136,7 @@ export const CozyAndCompactMode = () => `<div class="fd-container" style="height
             <label class="fd-form-label" for="compactTimepicker">Compact Timepicker</label><br />
             <div class="fd-popover fd-popover--no-arrow">
                 <div class="fd-popover__control is-expanded">
-                    <div class="fd-input-group">
+                    <div class="fd-input-group fd-input-group--compact">
                         <input
                             onfocus="
               setElAttr('rKGNR811', 'aria-hidden', 'false');
@@ -252,7 +252,7 @@ CozyAndCompactMode.parameters = {
     docs: {
         iframeHeight: 580,
         description: {
-            story: `The time picker is  a composition of \`input-group\`, \`popover\`, and \`time\` components to create a time selection interaction. 
+            story: `The time picker is  a composition of \`input-group\`, \`popover\`, and \`time\` components to create a time selection interaction.
 It can be displayed in compact mode by adding the \`fd-input--compact\`, \`fd-button--compact\` and \`fd-time--compact\` modifier classes to the building blocks of the component. AM and PM locale-dependent can be set with the property \`localeId\`.`
         }
     }
