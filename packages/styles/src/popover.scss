@@ -70,7 +70,6 @@ $fd-popover-arrow-offset-x: calc(var(--fdIcon_Button_Width) * 0.5 - #{$fd-popove
   }
 
   &__wrapper {
-    @include fd-reset();
     @include fd-popover-border-radius();
     @include fd-scrollbar(var(--fdScrollbar_Border_Radius));
 
