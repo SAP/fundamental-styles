@@ -1,3 +1,12 @@
+# [0.27.0-rc.21](https://github.com/SAP/fundamental-styles/compare/v0.27.0-rc.20...v0.27.0-rc.21) (2023-02-24)
+
+
+### Bug Fixes
+
+* **styles:** update Illustrated Messages to latest design [ci visual] ([#4285](https://github.com/SAP/fundamental-styles/issues/4285)) ([b594e66](https://github.com/SAP/fundamental-styles/commit/b594e668812b57feccb3316d583bbf2a223c5e12))
+
+
+
 # [0.27.0-rc.20](https://github.com/SAP/fundamental-styles/compare/v0.27.0-rc.19...v0.27.0-rc.20) (2023-02-24)
 
 
