@@ -1,3 +1,12 @@
+# [0.27.0-rc.20](https://github.com/SAP/fundamental-styles/compare/v0.27.0-rc.19...v0.27.0-rc.20) (2023-02-24)
+
+
+### Bug Fixes
+
+* **styles:** avatar group control height bug ([#4275](https://github.com/SAP/fundamental-styles/issues/4275)) ([a142b44](https://github.com/SAP/fundamental-styles/commit/a142b448e60d1889bb09caa7b4ff11b86b578dab))
+
+
+
 # [0.27.0-rc.19](https://github.com/SAP/fundamental-styles/compare/v0.27.0-rc.18...v0.27.0-rc.19) (2023-02-24)
 
 
