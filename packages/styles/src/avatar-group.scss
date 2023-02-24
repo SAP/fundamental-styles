@@ -21,6 +21,11 @@ $block: #{$fd-namespace}-avatar-group;
     cursor: pointer;
   }
 
+  &__popover-control {
+    display: flex;
+    height: auto;
+  }
+
   &__focusable-avatar,
   &__item[tabindex="0"] {
     @include fd-avatar-group-item-focus(
