@@ -1,3 +1,12 @@
+# [0.27.0-rc.18](https://github.com/SAP/fundamental-styles/compare/v0.27.0-rc.17...v0.27.0-rc.18) (2023-02-24)
+
+
+### Bug Fixes
+
+* popover wrapper styles overriding custom body class styles [ci visual] ([#4282](https://github.com/SAP/fundamental-styles/issues/4282)) ([16732fb](https://github.com/SAP/fundamental-styles/commit/16732fb613029e4d8a1a1127c1ac7b474fdfc36f))
+
+
+
 # [0.27.0-rc.17](https://github.com/SAP/fundamental-styles/compare/v0.27.0-rc.16...v0.27.0-rc.17) (2023-02-23)
 
 
