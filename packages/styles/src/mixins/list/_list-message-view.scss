@@ -2,14 +2,12 @@
 
 .#{$block} {
   &--message-view {
-    --fdList_Message_View_Item_Height: calc(2.75rem + var(--sapList_BorderWidth));
+    --fdList_Item_Height: calc(2.75rem + var(--sapList_BorderWidth));
     --fdList_Message_View_Item_Byline_Height: calc(3.325rem + var(--sapList_BorderWidth));
     --fdList_Message_View_Title_Size: var(--sapFontHeader5Size);
     .#{$block}__item {
-      height: var(--fdList_Message_View_Item_Height);
-
       &--byline {
-        --fdList_Message_View_Item_Height: var(--fdList_Message_View_Item_Byline_Height);
+        --fdList_Item_Height: var(--fdList_Message_View_Item_Byline_Height);
       }
     }
     .#{$block}__content {

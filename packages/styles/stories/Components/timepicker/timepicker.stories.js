@@ -1704,10 +1704,10 @@ Hours24Compact.parameters = {
 export const Hours12Compact = () => `<div style="min-height: 450px;">
     <div class="fd-popover fd-popover--no-arrow fd-time-picker">
         <div class="fd-popover__control fd-time-picker__control is-expanded">
-            <div class="fd-input-group is-focus">
-                <input type="text" class="fd-input fd-input--compact fd-input-group__input fd-time-picker__input" value="07:00 PM">
-                <span class="fd-input-group__addon fd-input-group__addon--compact fd-input-group__addon--button">
-                    <button class="fd-input-group__button fd-button fd-button--compact fd-button--transparent fd-popover__control is-active" aria-label="show/hide time picker" aria-expanded="true" aria-haspopup="true">
+            <div class="fd-input-group fd-input-group--compact is-focus">
+                <input type="text" class="fd-input fd-input-group__input fd-time-picker__input" value="07:00 PM">
+                <span class="fd-input-group__addon fd-input-group__addon--button">
+                    <button class="fd-input-group__button fd-button fd-button--transparent fd-popover__control is-active" aria-label="show/hide time picker" aria-expanded="true" aria-haspopup="true">
                         <i class="sap-icon--time-entry-request"></i>
                     </button>
                 </span>

@@ -244,13 +244,13 @@ export const DefaultAndCompactSizes = () => `<div style="display:flex;justify-co
       <label class="fd-form-label" for="compactDatepicker">Compact</label>
       <div class="fd-input-group fd-input-group--compact">
         <input id="compactDatepicker" type="text" value="" placeholder="Pick a date"
-          class="fd-input fd-input--compact fd-input-group__input"
+          class="fd-input fd-input-group__input"
           onfocus="
             setElAttr('Itcgq82', 'aria-hidden', 'false');
             setElAttr('fmaiot78aiwohf', 'aria-expanded', 'true');
           ">
-        <span class="fd-input-group__addon fd-input-group__addon--button fd-input-group__addon--compact">
-        <button class="fd-button fd-button--transparent fd-button--compact fd-input-group__button fd-popover__control"
+        <span class="fd-input-group__addon fd-input-group__addon--button">
+        <button class="fd-button fd-button--transparent fd-input-group__button fd-popover__control"
           id="fmaiot78aiwohf"
           onclick="
               toggleElAttrs('Itcgq82', ['aria-hidden']);

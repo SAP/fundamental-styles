@@ -52,7 +52,7 @@ $fd-button-badge-spacing: 0.25rem;
     font-family: var(--fdButton_Font_Family);
   }
 
-  *:not(:first-child) {
+  *:not(:first-child):not(.#{$block-button}__badge) {
     @include fd-set-margin-left(0.375rem);
   }
 

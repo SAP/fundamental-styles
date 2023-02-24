@@ -111,15 +111,15 @@ export const CozyAndCompact = () => `<div style="display:flex;justify-content:sp
                     toggleElAttrs('emi2qudh', ['aria-expanded']);
                 ">
                 <div class="fd-input-group fd-input-group--control fd-input-group--compact">
-                    <input type="text" class="fd-input fd-input--compact fd-input-group__input" id="compactCombobox" placeholder="Select Fruit">
-                    <span class="fd-input-group__addon fd-input-group__addon--compact fd-input-group__addon--button">
+                    <input type="text" class="fd-input fd-input-group__input" id="compactCombobox" placeholder="Select Fruit">
+                    <span class="fd-input-group__addon fd-input-group__addon--button">
                         <button
                             id="nda8sd7abd"
                             aria-label="show/hide fruit options"
                             aria-controls="F4GcX34"
                             aria-expanded="true"
                             aria-haspopup="true"
-                            class="fd-input-group__button fd-button fd-button--compact fd-button--transparent fd-select__button">
+                            class="fd-input-group__button fd-button fd-button--transparent fd-select__button">
                             <i class="sap-icon--navigation-down-arrow"></i>
                         </button>
                     </span>
