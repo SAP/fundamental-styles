@@ -51,7 +51,6 @@
       border-bottom: var(--fdList_Item_Action_Border);
 
       --fdList_Item_Height: var(--fdList_Item_Action_Height);
-      // height: var(--fdList_Item_Action_Height);
 
       &:first-child {
         border-top: var(--fdList_Item_Action_Border);
@@ -249,7 +248,7 @@
     @include fd-set-margin-left(var(--fdList_Button_Spacing));
   }
 
-  @include fd-compact() {
+  @include fd-compact-condensed() {
     &:not(.#{$objectListBlock}):not(.#{$messageViewList}) {
 
       .#{$block}__item {

@@ -68,6 +68,10 @@ $fd-select-padding-x-compact: 0.5rem;
           background-color: var(--sapButton_Selected_Background);
           border-left-color: var(--fdSelect_Expanded_Button_Border_Left_Color);
           box-shadow: map_get($set-props, "hoverBoxShadow");
+
+          @include fd-hover() {
+            color: var(--fdInput_Group_Button_Text_Color);
+          }
         }
 
         @include fd-rtl() {
@@ -165,7 +169,7 @@ $fd-select-padding-x-compact: 0.5rem;
     display: var(--fdSelect_Text_Content_Display, inline-block);
   }
 
-  @include fd-compact() {
+  @include fd-compact-condensed() {
     margin: 0.1875rem 0;
     .#{$block}__control {
       height: $fd-form-input-height--compact;

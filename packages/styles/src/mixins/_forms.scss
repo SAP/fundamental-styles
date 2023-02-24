@@ -313,8 +313,9 @@ $fd-input-field-height--compact: 1.625rem;
     }
 
     @include fd-hover() {
+      --fdInput_Group_Button_Text_Color: var(--fdInput_Group_Button_Hover_Text_Color);
+
       background: var(--fdInput_Group_Button_Hover_Background);
-      color: var(--fdInput_Group_Button_Hover_Text_Color);
       box-shadow: var(--fdInput_Group_Button_Box_Shadow);
     }
 

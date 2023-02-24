@@ -373,7 +373,7 @@ $button: #{$fd-namespace}-button;
     }
   }
 
-  @include fd-compact() {
+  @include fd-compact-condensed() {
     --fdNestedList_Link_Height: 2rem;
     --fdNestedList_Title_Font_Size: var(--sapFontSize);
     --fdNestedList_Icon_Font_Size: var(--sapFontLargeSize);

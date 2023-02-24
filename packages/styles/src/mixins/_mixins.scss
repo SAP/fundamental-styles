@@ -692,7 +692,7 @@
   border-left: $border;
 
   @include fd-rtl() {
-    border-left: none;
+    border-left-style: none;
     border-right: $border;
   }
 }
@@ -706,11 +706,29 @@
   }
 }
 
+@mixin fd-set-border-left-style($style: solid) {
+  border-left-style: $style;
+
+  @include fd-rtl() {
+    border-left-style: none;
+    border-right-style: $style;
+  }
+}
+
+@mixin fd-set-border-right-style($style: solid) {
+  border-right-style: $style;
+
+  @include fd-rtl() {
+    border-right-style: none;
+    border-left-style: $style;
+  }
+}
+
 @mixin fd-set-border-right($border) {
   border-right: $border;
 
   @include fd-rtl() {
-    border-right: none;
+    border-right-style: none;
     border-left: $border;
   }
 }
@@ -779,7 +797,8 @@
 @mixin fd-compact() {
   @at-root {
     [class*="--compact"] &:not([class*="--cozy"]):not([class*="--condensed"]),
-    &[class*="--compact"] {
+    .is-compact &:not(.is-cozy):not(.is-condensed) &[class*="--compact"],
+    &.is-compact {
       @content;
     }
   }
@@ -788,7 +807,9 @@
 @mixin fd-condensed() {
   @at-root {
     [class*="--condensed"] &:not([class*="--cozy"]):not([class*="--compact"]),
-    &[class*="--condensed"] {
+    .is-condensed &:not(.is-cozy):not(.is-compact),
+    &[class*="--condensed"],
+    .is-condensed {
       @content;
     }
   }
@@ -798,8 +819,12 @@
   @at-root {
     [class*="--condensed"] &:not([class*="--cozy"]),
     [class*="--compact"] &:not([class*="--cozy"]),
+    .is-compact &:not(.is-cozy),
+    .is-condensed &:not(.is-cozy),
     &[class*="--condensed"],
-    &[class*="--compact"] {
+    &[class*="--compact"],
+    &.is-condensed,
+    &.is-compact {
       @content;
     }
   }

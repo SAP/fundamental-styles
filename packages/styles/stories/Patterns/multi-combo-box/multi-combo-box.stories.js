@@ -149,31 +149,31 @@ export const CozyAndCompact = () => `<div class="fd-container" style="height: 30
         <div class="fd-popover">
             <div class="fd-popover__control" role="combobox" aria-controls="F4GcX34a" aria-expanded="true" aria-haspopup="true">
                 <div class="fd-input-group fd-input-group--compact fd-input-group--control" tabindex="0">
-                    <div class="fd-tokenizer fd-tokenizer--compact">
+                    <div class="fd-tokenizer">
                         <div class="fd-tokenizer__inner">
-                            <span class="fd-token fd-token--compact" role="button" tabindex="0">
+                            <span class="fd-token" role="button" tabindex="0">
                                 <span class="fd-token__text">
                                     Apple
                                 </span>
                                 <button class="fd-token__close" aria-label="unselect option: Apple"></button>
                             </span>
-                            <span class="fd-token fd-token--compact" role="button" tabindex="0">
+                            <span class="fd-token" role="button" tabindex="0">
                                 <span class="fd-token__text">
                                     Orange
                                 </span>
                                 <button class="fd-token__close" aria-label="unselect option: Orange"></button>
                             </span>
-                            <span class="fd-token fd-token--compact" role="button" tabindex="0">
+                            <span class="fd-token" role="button" tabindex="0">
                                 <span class="fd-token__text">
                                     Banana
                                 </span>
                                 <button class="fd-token__close" aria-label="unselect option: Bannana"></button>
                             </span>
-                            <input class="fd-input fd-input-group__input fd-input--compact fd-tokenizer__input" aria-label="Multi Input Sample" />
+                            <input class="fd-input fd-input-group__input fd-tokenizer__input" aria-label="Multi Input Sample" />
                         </div>
                     </div>
-                    <span class="fd-input-group__addon fd-input-group__addon--button fd-input-group__addon--compact">
-                        <button class="fd-input-group__button fd-button fd-button--transparent fd-button--compact" aria-controls="F4GcX34a" aria-expanded="false" aria-label="hidden button" aria-haspopup="true">
+                    <span class="fd-input-group__addon fd-input-group__addon--button">
+                        <button class="fd-input-group__button fd-button fd-button--transparent" aria-controls="F4GcX34a" aria-expanded="false" aria-label="hidden button" aria-haspopup="true">
                             <i class="sap-icon--navigation-down-arrow"></i>
                         </button>
                     </span>
@@ -181,39 +181,39 @@ export const CozyAndCompact = () => `<div class="fd-container" style="height: 30
             </div>
             <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--dropdown fd-popover__body--dropdown-fill" aria-hidden="false" id="F4GcX34a">
             <div class="fd-popover__wrapper">
-                <ul class="fd-list fd-list--multi-input fd-list--compact"  role="listbox" aria-multiselectable="true" aria-label="Fruits">
-                   	<li role="option" tabindex="0" class="fd-list__item is-selected" aria-selected="true">
-						<div class="fd-form-item fd-list__form-item">
-							<input type="checkbox" class="fd-checkbox fd-checkbox--compact" id="Ai4ez616" checked aria-labelledby="Az0bg25">
-							<label tabindex="-1" class="fd-checkbox__label" for="Ai4ez616"></label>
-						</div>
-						<span class="fd-list__title" id="Az0bg25">Apple</span>
-					</li>
+              <ul class="fd-list fd-list--multi-input fd-list--compact"  role="listbox" aria-multiselectable="true" aria-label="Fruits">
+                <li role="option" tabindex="0" class="fd-list__item is-selected" aria-selected="true">
+						      <div class="fd-form-item fd-list__form-item">
+							      <input type="checkbox" class="fd-checkbox" id="Ai4ez616" checked aria-labelledby="Az0bg25">
+							      <label tabindex="-1" class="fd-checkbox__label" for="Ai4ez616"></label>
+						      </div>
+						      <span class="fd-list__title" id="Az0bg25">Apple</span>
+					      </li>
 
 					<li role="option" tabindex="0" class="fd-list__item is-selected" aria-selected="true">
 						<div class="fd-form-item fd-list__form-item">
-							<input type="checkbox" class="fd-checkbox fd-checkbox--compact" id="Ai4ez617" checked aria-labelledby="Az0bg26">
+							<input type="checkbox" class="fd-checkbox" id="Ai4ez617" checked aria-labelledby="Az0bg26">
 							<label tabindex="-1" class="fd-checkbox__label" for="Ai4ez617"></label>
 						</div>
 						<span class="fd-list__title" id="Az0bg26">Orange</span>
 					</li>
 					<li role="option" tabindex="0" class="fd-list__item is-selected" aria-selected="true">
 						<div class="fd-form-item fd-list__form-item">
-							<input type="checkbox" class="fd-checkbox fd-checkbox--compact" id="Ai4ez61a3" checked aria-labelledby="Az0bg2a">
+							<input type="checkbox" class="fd-checkbox" id="Ai4ez61a3" checked aria-labelledby="Az0bg2a">
 							<label tabindex="-1" class="fd-checkbox__label" for="Ai4ez61a3"></label>
 						</div>
 						<span class="fd-list__title" id="Az0bg2a">Banana</span>
 					</li>
 					<li role="option" tabindex="0" class="fd-list__item">
 						<div class="fd-form-item fd-list__form-item">
-							<input type="checkbox" class="fd-checkbox fd-checkbox--compact" id="Ai4ez618" aria-labelledby="Az0bg27">
+							<input type="checkbox" class="fd-checkbox" id="Ai4ez618" aria-labelledby="Az0bg27">
 							<label tabindex="-1" class="fd-checkbox__label" for="Ai4ez618"></label>
 						</div>
 						<span class="fd-list__title" id="Az0bg27">Kiwi</span>
 					</li>
 					<li role="option" tabindex="0" class="fd-list__item">
 						<div class="fd-form-item fd-list__form-item">
-							<input type="checkbox" class="fd-checkbox fd-checkbox--compact" id="Ai4ez619" aria-labelledby="Az0bg28">
+							<input type="checkbox" class="fd-checkbox" id="Ai4ez619" aria-labelledby="Az0bg28">
 							<label tabindex="-1" class="fd-checkbox__label" for="Ai4ez619"></label>
 						</div>
 						<span class="fd-list__title" id="Az0bg28">Lemon</span>

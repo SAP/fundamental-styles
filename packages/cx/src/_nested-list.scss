@@ -270,7 +270,7 @@ $button: #{$fd-cx-namespace}-button;
     }
   }
 
-  @include fd-compact() {
+  @include fd-compact-condensed() {
     --fdNestedList_Item_Margin: 0.25rem 0;
     --fdNestedList_Item_Spacing: 0.125rem;
     --fdNestedList_Item_Header_Margin_Top: 0.125rem;

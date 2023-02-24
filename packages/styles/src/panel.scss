@@ -89,7 +89,7 @@ $block: #{$fd-namespace}-panel;
     }
   }
 
-  @include fd-compact() {
+  @include fd-compact-condensed() {
     --fdPanel_Header_Height: 2.5rem;
   }
 }

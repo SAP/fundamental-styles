@@ -147,7 +147,7 @@ $split-button-states: (
     max-width: var(--fdButtonSplit_Text_Max_Width, 8.5rem); // 12rem - arrow button - paddings
   }
 
-  @include fd-compact() {
+  @include fd-compact-condensed() {
     --fdButtonSplit_Text_Max_Width: 9rem;
   }
 }

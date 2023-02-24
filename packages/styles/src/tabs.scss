@@ -463,7 +463,7 @@ $fd-tabs-link-active-line-offset-x: 0.1875rem;
     }
   }
 
-  @include fd-compact() {
+  @include fd-compact-condensed() {
     --fdTabs_Icon_Size: 1.125rem;
     --fdTabs_Icon_Selection_Height: 1.875rem;
     --fdTabs_Label_Padding_Bottom: 0.25rem;

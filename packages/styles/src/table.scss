@@ -110,12 +110,12 @@ $table-z-index: (
     padding: 0 0.5rem;
     color: inherit;
     outline: none;
-    border-bottom: var(--sapList_BorderWidth) solid var(--sapList_BorderColor);
+    border-bottom: var(--sapList_BorderWidth) var(--fdTable_Cell_Horizontal_Border_Style, solid) var(--sapList_BorderColor);
 
-    @include fd-set-border-left(var(--sapList_BorderWidth) solid var(--sapList_BorderColor));
+    @include fd-set-border-left(var(--sapList_BorderWidth) var(--fdTable_Cell_Vertical_Border_Style, solid) var(--sapList_BorderColor));
 
     &:last-child {
-      @include fd-set-border-right(var(--sapList_BorderWidth) solid var(--sapList_BorderColor));
+      @include fd-set-border-right(var(--sapList_BorderWidth) var(--fdTable_Cell_Vertical_Border_Style, solid) var(--sapList_BorderColor));
     }
 
     @include fd-rtl() {
@@ -332,167 +332,11 @@ $table-z-index: (
 
   /****** Modifiers ******/
 
-  &--fixed {
-    @include fd-scrollbar();
-
-    overflow-x: scroll;
-
-    .#{$block}__header,
-    .#{$block}__body {
-      border-left: none;
-
-      @include fd-rtl() {
-        border-left: $fd-table-border;
-        border-right: none;
-      }
-    }
-  }
-
-  &--pop-in {
-    .#{$block}__text {
-      color: inherit;
-      margin-bottom: 0.5rem;
-
-      &--title {
-        font-weight: bold;
-      }
-
-      &:last-child {
-        margin-bottom: 0;
-      }
-    }
-
-    .#{$block}__cell {
-      &--checkbox {
-        + .#{$block}__cell {
-          padding-left: 0;
-
-          @include fd-rtl() {
-            padding-right: 0;
-            padding-left: $fd-table-cell-padding;
-          }
-        }
-      }
-    }
-
-    .#{$block}__body {
-      .#{$block}__cell {
-        height: auto;
-      }
-    }
-
-    .#{$block}__row--main {
-      border: none;
-
-      .#{$block}__cell {
-        padding-top: 0.25rem;
-        padding-bottom: 0.25rem;
-      }
-
-      &.#{$block}__row--hoverable {
-        @include fd-hover() {
-          + .#{$block}__row--secondary {
-            background-color: var(--sapList_Hover_Background);
-          }
-        }
-      }
-
-      &.#{$block}__row--activable:not(:hover) {
-        @include fd-active() {
-          + .#{$block}__row--secondary {
-            @include fd-table-active();
-          }
-        }
-      }
-
-      @include fd-selected() {
-        @include fd-hover() {
-          + .#{$block}__row--secondary {
-            background-color: var(--sapList_Hover_SelectionBackground);
-          }
-        }
-      }
-    }
-
-    .#{$block}__row--secondary {
-      background-color: $fd-table-basic-background;
-      border-bottom: $fd-table-border;
-
-      @include fd-hover() {
-        background-color: $fd-table-basic-background;
-      }
-
-      .#{$block}__cell {
-        padding-top: 0.5rem;
-        padding-bottom: 0.5rem;
-      }
-
-      @include fd-selected() {
-        .#{$block}__cell {
-          border-bottom: var(--sapList_BorderWidth) solid var(--sapList_SelectionBorderColor);
-        }
-
-        @include fd-hover() {
-          background-color: var(--sapList_SelectionBackgroundColor);
-        }
-      }
-    }
-  }
-
-  &,
-  &__body,
-  &__header {
-    &--no-vertical-borders {
-      .#{$block}__row {
-        .#{$block}__cell {
-          border-right: none;
-        }
-      }
-    }
-
-    &--no-horizontal-borders {
-      .#{$block}__row {
-        .#{$block}__cell {
-          border-bottom: none;
-        }
-      }
-    }
-  }
-
-  &--responsive {
-    .#{$block}__body,
-    .#{$block}__header {
-      border: none;
-    }
-
-    .#{$block}__row {
-      @include fd-last-child() {
-        .#{$block}__cell {
-          border-bottom: none;
-        }
-      }
-    }
-  }
-
   @include fd-compact() {
-    .#{$block}__body,
-    .#{$block}__footer {
-      .#{$block}__cell {
-        height: $fd-table-compact-cell-height;
-      }
-    }
-
-    &.#{$block}--tree,
-    &.#{$block}--group {
-      .#{$block}__body .#{$block}__cell {
-        .#{$block}__expand {
-          height: $fd-table-compact-cell-height;
-        }
-      }
-    }
+    --fdTable_Cell_Height: 2rem;
   }
 
-  &--condensed {
+  @include fd-condensed() {
     --fdTable_Cell_Height: 1.5rem;
 
     .#{$block}__body,
@@ -519,8 +363,7 @@ $table-z-index: (
     }
   }
 
-  &--compact,
-  &--condensed {
+  @include fd-compact-condensed() {
     --fdTable_Header_Cell_Height: 2rem;
   }
 

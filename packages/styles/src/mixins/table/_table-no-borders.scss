@@ -6,18 +6,18 @@
   &__header {
     &--no-vertical-borders {
       .#{$block}__cell {
-        @include fd-set-border-left-color();
+        --fdTable_Cell_Vertical_Border_Style: none;
 
         @include fd-rtl() {
           border-left-color: var(--sapList_BorderColor);
         }
 
         &:first-child {
-          @include fd-set-border-left-color(var(--sapList_BorderColor));
+          @include fd-set-border-left-style(solid);
         }
 
         &:last-child {
-          @include fd-set-border-right-color(var(--sapList_BorderColor));
+          @include fd-set-border-right-style(solid);
         }
       }
     }
@@ -38,11 +38,11 @@
   .#{$block}__cell {
     &--no-vertical-border {
       & + .#{$block}__cell {
-        border-left-color: transparent;
+        border-left-style: none;
       }
 
       @include fd-rtl() {
-        border-right-color: transparent;
+        border-right-style: none;
       }
     }
 
@@ -70,19 +70,33 @@
     }
 
     .#{$block}__cell {
-      &:first-child {
-        @include fd-set-border-left-color();
+      &:first-child,
+      &:last-child {
+        border-right-style: solid;
+        border-left-style: none;
 
         @include fd-rtl() {
-          border-left-color: var(--sapList_BorderColor);
+          border-right-style: none;
+          border-left-style: none;
         }
       }
 
       &:last-child {
-        @include fd-set-border-right-color();
+        border-right-style: none;
+        border-left-style: solid;
 
         @include fd-rtl() {
-          border-right-color: var(--sapList_BorderColor);
+          border-right-style: solid;
+          border-left-style: none;
+        }
+      }
+    }
+
+    &.#{$block}--no-vertical-borders {
+      .#{$block}__cell {
+        &:last-child {
+          border-left-style: none;
+          border-right-style: none;
         }
       }
     }

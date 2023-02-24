@@ -143,7 +143,7 @@ $fd-popover-arrow-offset-x: calc(var(--fdIcon_Button_Width) * 0.5 - #{$fd-popove
       border-bottom-left-radius: $fd-popover-border-radius;
     }
 
-    @include fd-compact() {
+    @include fd-compact-condensed() {
       --fdIcon_Button_Height: 1.625rem;
       --fdIcon_Button_Width: 2rem;
     }
@@ -357,7 +357,6 @@ $fd-popover-arrow-offset-x: calc(var(--fdIcon_Button_Width) * 0.5 - #{$fd-popove
     &--input-message-group {
       box-shadow: none;
       border: none;
-      margin-top: -0.25rem;
     }
 
     &--inline-help {
@@ -377,7 +376,6 @@ $fd-popover-arrow-offset-x: calc(var(--fdIcon_Button_Width) * 0.5 - #{$fd-popove
     .#{$block}__body--no-arrow {
       box-shadow: none;
       border: none;
-      margin-top: -0.25rem;
     }
   }
 

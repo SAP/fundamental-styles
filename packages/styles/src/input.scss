@@ -15,7 +15,7 @@ $block: #{$fd-namespace}-input;
     z-index: 4;
   }
 
-  @include fd-compact() {
+  @include fd-compact-condensed() {
     @include fd-input-field-base-compact();
   }
 

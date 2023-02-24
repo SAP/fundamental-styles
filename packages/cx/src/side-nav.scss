@@ -105,7 +105,7 @@ $fd-side-nav-border-radius: 1rem;
     margin: 0.75rem 0.5rem !important;
   }
 
-  @include fd-compact() {
+  @include fd-compact-condensed() {
     --fdSideNav_Padding: 0.125rem 0;
     --fdSideNav_First_Item_Margin_Top: 0.125rem;
     --fdSideNav_Utility_Margin_Bottom: 0.75rem;

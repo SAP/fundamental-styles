@@ -48,7 +48,7 @@
       }
     }
 
-    @include fd-compact() {
+    @include fd-compact-condensed() {
       --fdList_Message_View_Item_Height: calc(2rem + var(--sapList_BorderWidth));
       --fdList_Message_View_Title_Size: var(--sapFontHeader6Size);
       --fdList_Message_View_Item_Byline_Height: calc(3.25rem + var(--sapList_BorderWidth));

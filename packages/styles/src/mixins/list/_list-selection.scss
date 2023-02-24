@@ -24,7 +24,7 @@
       z-index: 5;
     }
 
-    @include fd-compact() {
+    @include fd-compact-condensed() {
       .#{$block}__form-item {
         @include fd-set-position-left(0.375rem);
       }
@@ -40,7 +40,7 @@
         top: 0.3125rem;
       }
 
-      @include fd-compact() {
+      @include fd-compact-condensed() {
         .#{$block}__item {
           @include fd-set-paddings-x($fd-list-selection-container-width, $fd-list-byline-item-padding-x);
         }
