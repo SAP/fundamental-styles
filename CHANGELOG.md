@@ -1,3 +1,12 @@
+# [0.27.0-rc.19](https://github.com/SAP/fundamental-styles/compare/v0.27.0-rc.18...v0.27.0-rc.19) (2023-02-24)
+
+
+### Features
+
+* **styles:** update Panel Layout, add new modifier classes [ci visual] ([#4284](https://github.com/SAP/fundamental-styles/issues/4284)) ([e4de6bc](https://github.com/SAP/fundamental-styles/commit/e4de6bcac6f248e41c6a0fd90d7f38f78c88a3dc))
+
+
+
 # [0.27.0-rc.18](https://github.com/SAP/fundamental-styles/compare/v0.27.0-rc.17...v0.27.0-rc.18) (2023-02-24)
 
 
