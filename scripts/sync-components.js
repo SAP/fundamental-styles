@@ -10,10 +10,6 @@ const config = {
     fiori: {
         rootDir: resolve(__dirname, '../packages/styles/src'),
         mainFile: resolve(__dirname, '../packages/styles/src/fundamental-styles.scss')
-    },
-    fn: {
-        rootDir: resolve(__dirname, '../packages/fn/src'),
-        mainFile: resolve(__dirname, '../packages/fn/src/fundamental-next.scss')
     }
 };
 

@@ -60,7 +60,6 @@ export const themes = {
 };
 const projectNames = {
     styles: 'SAP Fiori',
-    fn: 'BTP Experimental Design',
     ['common-css']: 'Common CSS',
     cx: 'CX'
 };

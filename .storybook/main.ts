@@ -14,6 +14,7 @@ const storiesToInclude = () => {
 };
 
 const includedStories = storiesToInclude();
+const includedPackages = '(' + ['common-css', 'cx', 'styles'].join('|') + ')';
 const staticDirs = ['static/', '../node_modules/@sap-theming'];
 const storybookAddons = [
     '@storybook/addon-actions',
@@ -36,7 +37,7 @@ const storybookAddons = [
 const config: StorybookViteConfig = {
     stories: [
         '../stories/docs/introduction.stories.js',
-        `../packages/**/*.@${includedStories}.@(ts|tsx|js|jsx)`,
+        `../packages/@${includedPackages}/**/*.@${includedStories}.@(ts|tsx|js|jsx)`,
         `../stories/**/*.@${includedStories}.@(ts|tsx|js|jsx)`
     ],
     staticDirs: staticDirs,
