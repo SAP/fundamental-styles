@@ -16,8 +16,8 @@
     "build:visual-stories": "nx run-many --target=build-visual --all",
     "lint:style": "stylelint \"packages/*/src/**/*.(sa|sc|c)ss\"",
     "lint:js": "eslint . --ext .js",
-    "lint": "yarn run sync-fiori-components && yarn run sync-fn-components && yarn run lint:style && yarn run lint:js",
-    "lint:fix": "yarn run sync-fiori-components fix && yarn run sync-fn-components fix && yarn run lint:style -- --fix && yarn run lint:js -- --fix",
+    "lint": "yarn run sync-fiori-components && yarn run lint:style && yarn run lint:js",
+    "lint:fix": "yarn run sync-fiori-components fix && yarn run lint:style -- --fix && yarn run lint:js -- --fix",
     "lint:pre-commit": "echo running pre-commit lint... && yarn run lint && echo done!\n",
     "hotfix-release": "./scripts/hotfix-publish-release.sh",
     "hotfix-release-latest": "./scripts/hotfix-publish-release.sh latest",
@@ -36,7 +36,6 @@
     "storybook:chromatic": "yarn run storybook:prep && cross-env STORYBOOK_ENV=chromatic build-storybook -c .storybook -o storybook-chromatic",
     "prepare": "husky install",
     "sync-fiori-components": "node ./scripts/sync-components.js lib=fiori",
-    "sync-fn-components": "node ./scripts/sync-components.js lib=fn",
     "pre-commit": "lint-staged && yarn run lint:pre-commit"
   },
   "repository": {
