@@ -1,3 +1,12 @@
+# [0.27.0-rc.22](https://github.com/SAP/fundamental-styles/compare/v0.27.0-rc.21...v0.27.0-rc.22) (2023-02-27)
+
+
+### Bug Fixes
+
+* **styles:** fix for the font-size of Layout Panel [ci visual] ([#4296](https://github.com/SAP/fundamental-styles/issues/4296)) ([f6d5351](https://github.com/SAP/fundamental-styles/commit/f6d5351793619c8a213d73dafc97c2083229b956))
+
+
+
 # [0.27.0-rc.21](https://github.com/SAP/fundamental-styles/compare/v0.27.0-rc.20...v0.27.0-rc.21) (2023-02-24)
 
 
