@@ -47,7 +47,7 @@ jobs:
             - name: Publish packages to NPM
               uses: ./.github/actions/npm-publish
               with:
-                  packagePaths: 'dist/packages/styles,dist/packages/common-css,dist/packages/fn,dist/packages/icons,dist/packages/theming-preview,dist/packages/cx'
+                  packagePaths: 'dist/packages/styles,dist/packages/common-css,dist/packages/icons,dist/packages/theming-preview,dist/packages/cx'
                   isHotfix: ${{ steps.ciEnv.outputs.isLatest }}
                   token: ${{ secrets.NPM_TOKEN }}
 
