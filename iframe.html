@@ -11,7 +11,7 @@
       window.FRAMEWORK_OPTIONS = {};
       window.CHANNEL_OPTIONS = {};
       window.FEATURES = {"postcss":true,"emotionAlias":false,"warnOnLegacyHierarchySeparator":true,"buildStoriesJson":false,"storyStoreV7":true,"modernInlineRender":false,"breakingChangesV7":false,"interactionsDebugger":false,"babelModeV7":false,"argTypeTargetsV7":false,"previewMdx2":false};
-      window.STORIES = [{"titlePrefix":"","directory":"./stories/docs","files":"introduction.stories.js","importPathMatcher":"^\\.[\\\\/](?:stories\\/docs\\/introduction\\.stories\\.js)$"},{"titlePrefix":"","directory":"./packages","files":"**/*.@(stories).@(ts|tsx|js|jsx)","importPathMatcher":"^\\.[\\\\/](?:packages(?:\\/(?!\\.)(?:(?:(?!(?:^|\\/)\\.).)*?)\\/|\\/|$)(?!\\.)(?=.)[^/]*?\\.(stories)\\.(ts|tsx|js|jsx))$"},{"titlePrefix":"","directory":"./stories","files":"**/*.@(stories).@(ts|tsx|js|jsx)","importPathMatcher":"^\\.[\\\\/](?:stories(?:\\/(?!\\.)(?:(?:(?!(?:^|\\/)\\.).)*?)\\/|\\/|$)(?!\\.)(?=.)[^/]*?\\.(stories)\\.(ts|tsx|js|jsx))$"}];
+      window.STORIES = [{"titlePrefix":"","directory":"./stories/docs","files":"introduction.stories.js","importPathMatcher":"^\\.[\\\\/](?:stories\\/docs\\/introduction\\.stories\\.js)$"},{"titlePrefix":"","directory":"./packages","files":"@(common-css|cx|styles)/**/*.@(stories).@(ts|tsx|js|jsx)","importPathMatcher":"^\\.[\\\\/](?:packages\\/(common-css|cx|styles)(?:\\/(?!\\.)(?:(?:(?!(?:^|\\/)\\.).)*?)\\/|\\/|$)(?!\\.)(?=.)[^/]*?\\.(stories)\\.(ts|tsx|js|jsx))$"},{"titlePrefix":"","directory":"./stories","files":"**/*.@(stories).@(ts|tsx|js|jsx)","importPathMatcher":"^\\.[\\\\/](?:stories(?:\\/(?!\\.)(?:(?:(?!(?:^|\\/)\\.).)*?)\\/|\\/|$)(?!\\.)(?=.)[^/]*?\\.(stories)\\.(ts|tsx|js|jsx))$"}];
       window.SERVER_CHANNEL_URL = undefined;
 
       // We do this so that "module && module.hot" etc. in Storybook source code
@@ -450,7 +450,7 @@
     window.global = typeof global === 'undefined' ? window : global;
 </script>
 
-    <script type="module" crossorigin src="/fundamental-styles/assets/iframe.16288e34.js"></script>
+    <script type="module" crossorigin src="/fundamental-styles/assets/iframe.23fe0934.js"></script>
   <style>
     .sb-show-preparing-story:not(.sb-show-main) > :not(.sb-preparing-story) {
       display: none;

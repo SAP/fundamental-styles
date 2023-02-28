@@ -618,7 +618,7 @@
 		"sapSlider_RangeHandleBackground": "#fff",
 		"sapSlider_Hover_HandleBackground": "#ec8b46",
 		"sapSlider_Hover_HandleBorderColor": "#000",
-		"sapSlider_Hover_RangeHandleBackground": "transparent",
+		"sapSlider_Hover_RangeHandleBackground": "#ec8b46",
 		"sapSlider_Active_HandleBackground": "#ec8b46",
 		"sapSlider_Active_HandleBorderColor": "#000",
 		"sapSlider_Active_RangeHandleBackground": "transparent",

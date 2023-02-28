@@ -39,7 +39,7 @@
 			"Id": "sapBrandColor",
 			"CssValue": "#427cac",
 			"Label": "Brand Color",
-			"Tags": "Quick,Base,Color"
+			"Tags": "Quick,Base,Color,Mobile"
 		},
 		{
 			"Id": "sapHighlightColor",
@@ -51,25 +51,25 @@
 			"Id": "sapBaseColor",
 			"CssValue": "#3f5161",
 			"Label": "Base Color",
-			"Tags": "Quick,Base,Color"
+			"Tags": "Quick,Base,Color,Mobile"
 		},
 		{
 			"Id": "sapShellColor",
 			"CssValue": "transparent",
 			"Label": "Shell Header Color",
-			"Tags": "Quick,Base,Shell,Color"
+			"Tags": "Quick,Base,Shell,Color,Mobile"
 		},
 		{
 			"Id": "sapBackgroundColor",
 			"CssValue": "#3f5161",
 			"Label": "Background Color",
-			"Tags": "Quick,Base,Color"
+			"Tags": "Quick,Base,Color,Mobile"
 		},
 		{
 			"Id": "sapTextColor",
 			"CssValue": "#fafafa",
 			"Label": "Text Color",
-			"Tags": "Quick,Base,Content,Color,Font"
+			"Tags": "Quick,Base,Content,Color,Font,Mobile"
 		},
 		{
 			"Id": "sapLinkColor",

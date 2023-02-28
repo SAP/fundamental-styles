@@ -7,17 +7,17 @@
   "sapBaseColor": {
     "prefix": "sapBaseColor",
     "body": "var(--sapBaseColor)",
-    "description": "Base Color (The color which is used to derive the most dominant background colors.) Value: #3f5161 #Quick, #Base, #Color"
+    "description": "Base Color (The color which is used to derive the most dominant background colors.) Value: #3f5161 #Quick, #Base, #Color, #Mobile"
   },
   "sapBackgroundColor": {
     "prefix": "sapBackgroundColor",
     "body": "var(--sapBackgroundColor)",
-    "description": "Background Color (The main background color of the screen.) Value: #3f5161 #Quick, #Base, #Color"
+    "description": "Background Color (The main background color of the screen.) Value: #3f5161 #Quick, #Base, #Color, #Mobile"
   },
   "sapTextColor": {
     "prefix": "sapTextColor",
     "body": "var(--sapTextColor)",
-    "description": "Text Color (The preferred text color.) Value: #fafafa #Quick, #Base, #Content, #Color, #Font"
+    "description": "Text Color (The preferred text color.) Value: #fafafa #Quick, #Base, #Content, #Color, #Font, #Mobile"
   },
   "sapLinkColor": {
     "prefix": "sapLinkColor",
@@ -32,17 +32,17 @@
   "sapNegativeColor": {
     "prefix": "sapNegativeColor",
     "body": "var(--sapNegativeColor)",
-    "description": "Negative Color (The color for elements showing negative state.) Value: #ff8888 #Base, #SemanticColor, #Color"
+    "description": "Negative Color (The color for elements showing negative state.) Value: #ff8888 #Base, #SemanticColor, #Color, #Mobile"
   },
   "sapCriticalColor": {
     "prefix": "sapCriticalColor",
     "body": "var(--sapCriticalColor)",
-    "description": "Critical Color (The color for elements showing critical state.) Value: #fabd64 #Base, #SemanticColor, #Color"
+    "description": "Critical Color (The color for elements showing critical state.) Value: #fabd64 #Base, #SemanticColor, #Color, #Mobile"
   },
   "sapPositiveColor": {
     "prefix": "sapPositiveColor",
     "body": "var(--sapPositiveColor)",
-    "description": "Positive Color (The color for elements showing positive state.) Value: #abe2ab #Base, #SemanticColor, #Color"
+    "description": "Positive Color (The color for elements showing positive state.) Value: #abe2ab #Base, #SemanticColor, #Color, #Mobile"
   },
   "sapInformativeColor": {
     "prefix": "sapInformativeColor",
@@ -182,7 +182,7 @@
   "sapContent_LabelColor": {
     "prefix": "sapContent_LabelColor",
     "body": "var(--sapContent_LabelColor)",
-    "description": "Label Color (The color of labels in the content area.) Value: #ddd #Base, #Content, #Color, #Font"
+    "description": "Label Color (The color of labels in the content area.) Value: #ddd #Base, #Content, #Color, #Font, #Mobile"
   },
   "sapContent_ContrastTextThreshold": {
     "prefix": "sapContent_ContrastTextThreshold",
@@ -247,7 +247,7 @@
   "sapShell_TextColor": {
     "prefix": "sapShell_TextColor",
     "body": "var(--sapShell_TextColor)",
-    "description": "Shell Text Color (The color of texts in the shell.) Value: #fff #Base, #Shell, #Color, #Font"
+    "description": "Shell Text Color (The color of texts in the shell.) Value: #fff #Base, #Shell, #Color, #Font, #Mobile"
   },
   "sapShell_InteractiveTextColor": {
     "prefix": "sapShell_InteractiveTextColor",
@@ -1002,12 +1002,12 @@
   "sapBrandColor": {
     "prefix": "sapBrandColor",
     "body": "var(--sapBrandColor)",
-    "description": "Brand Color (The color which builds your brand.) Value: #427cac #Quick, #Base, #Color"
+    "description": "Brand Color (The color which builds your brand.) Value: #427cac #Quick, #Base, #Color, #Mobile"
   },
   "sapShellColor": {
     "prefix": "sapShellColor",
     "body": "var(--sapShellColor)",
-    "description": "Shell Header Color (The color of the shell header bar.) Value: transparent #Quick, #Base, #Shell, #Color"
+    "description": "Shell Header Color (The background color of the shell header bar.) Value: transparent #Quick, #Base, #Shell, #Color, #Mobile"
   },
   "sapFontFamily": {
     "prefix": "sapFontFamily",
@@ -1022,7 +1022,7 @@
   "sapCompanyLogo": {
     "prefix": "sapCompanyLogo",
     "body": "var(--sapCompanyLogo)",
-    "description": "Company Logo (The URI to the logo of your company.) Value: none #Quick, #Base, #URI, #Image"
+    "description": "Company Logo (The URI to the logo of your company.) Value: none #Quick, #Base, #URI, #Image, #Mobile"
   },
   "sapBackgroundImage": {
     "prefix": "sapBackgroundImage",
