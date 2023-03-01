@@ -5,70 +5,70 @@
     @include fd-scrollbar();
 
     overflow: auto;
-  }
 
-  .#{$block}__cell {
-    &--fixed {
-      @include fd-set-position-left(0);
+    .#{$block}__cell {
+      &--fixed {
+        @include fd-set-position-left(0);
 
-      &,
-      &-end {
-        z-index: map-get($table-z-index, "fixed");
-        position: sticky;
-        display: table-cell;
-        background-color: inherit;
-      }
-
-      &-last {
-        border-right: var(--sapList_BorderWidth) solid var(--sapList_TableFixedBorderColor);
-
-        + .#{$block}__cell {
-          border-left: none;
+        &,
+        &-end {
+          z-index: map-get($table-z-index, "fixed");
+          position: sticky;
+          display: table-cell;
+          background-color: inherit;
         }
-
-        @include fd-rtl() {
-          border-right: var(--sapList_BorderWidth) solid var(--sapList_BorderColor);
-          border-left: var(--sapList_BorderWidth) solid var(--sapList_TableFixedBorderColor);
-
-          + .#{$block}__cell {
-            border-right: none;
-          }
-        }
-      }
-
-      &-end {
-        @include fd-set-position-right(0);
 
         &-last {
-          border-left: var(--sapList_BorderWidth) solid var(--sapList_TableFixedBorderColor);
+          border-right: var(--sapList_BorderWidth) solid var(--sapList_TableFixedBorderColor);
+
+          + .#{$block}__cell {
+            border-left: none;
+          }
 
           @include fd-rtl() {
-            border-right: var(--sapList_BorderWidth) solid var(--sapList_TableFixedBorderColor);
+            border-right: var(--sapList_BorderWidth) solid var(--sapList_BorderColor);
+            border-left: var(--sapList_BorderWidth) solid var(--sapList_TableFixedBorderColor);
+
+            + .#{$block}__cell {
+              border-right: none;
+            }
+          }
+        }
+
+        &-end {
+          @include fd-set-position-right(0);
+
+          &-last {
+            border-left: var(--sapList_BorderWidth) solid var(--sapList_TableFixedBorderColor);
+
+            @include fd-rtl() {
+              border-right: var(--sapList_BorderWidth) solid var(--sapList_TableFixedBorderColor);
+            }
           }
         }
       }
     }
-  }
 
-  .#{$block}__header {
-    .#{$block}__cell {
-      top: 0;
-      z-index: map-get($table-z-index, "header-footer");
-      position: sticky;
+    .#{$block}__header {
+      .#{$block}__cell {
+        top: 0;
+        z-index: map-get($table-z-index, "header-footer");
+        position: sticky;
 
-      &--fixed,
-      &--fixed-end {
-        z-index: map-get($table-z-index, "header-fixed");
+        &--fixed,
+        &--fixed-end {
+          z-index: map-get($table-z-index, "header-fixed");
+        }
       }
     }
-  }
 
-  .#{$block}__footer {
-    .#{$block}__cell {
-      position: sticky;
-      bottom: 0;
-      z-index: map-get($table-z-index, "header-footer");
-      background-color: inherit;
+    .#{$block}__footer {
+      .#{$block}__cell {
+        position: sticky;
+        bottom: 0;
+        z-index: map-get($table-z-index, "header-footer");
+        background-color: inherit;
+      }
     }
   }
 }
