@@ -1,3 +1,12 @@
+## [0.27.1-rc.0](https://github.com/SAP/fundamental-styles/compare/v0.27.0...v0.27.1-rc.0) (2023-03-01)
+
+
+### Bug Fixes
+
+* **styles:** fixed table styles should only exist under --fixed ([d7c4b44](https://github.com/SAP/fundamental-styles/commit/d7c4b4415870308b6b4a28d6a58a8efeceb7ce67))
+
+
+
 # [0.27.0](https://github.com/SAP/fundamental-styles/compare/v0.27.0-rc.23...v0.27.0) (2023-02-27)
 
 
