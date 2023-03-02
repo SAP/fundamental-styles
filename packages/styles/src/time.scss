@@ -15,11 +15,16 @@ $block: #{$fd-namespace}-time;
   $fd-time-column-margin-x: 0.5rem;
   $fd-time-item-width: 3rem;
 
+  --fdTime_Item_Height: #{$fd-time-item-height};
+  --fdTime_Dropdown_Padding: #{$fd-time-dropdown-padding};
+  --fdTime_Wrapper_Height: #{$fd-time-wrapper-height};
+  --fdTime_Unit_Line_Height: 2.75rem;
+
   @include fd-flex() {
     justify-content: center;
   }
 
-  padding: $fd-time-dropdown-padding;
+  padding: var(--fdTime_Dropdown_Padding);
 
   &__col {
     @include fd-reset();
@@ -44,7 +49,7 @@ $block: #{$fd-namespace}-time;
     transform: translateY(-50%);
     box-sizing: border-box;
     width: $fd-time-item-width;
-    height: $fd-time-item-height;
+    height: var(--fdTime_Item_Height);
     border: 0.0625rem solid var(--sapList_SelectionBorderColor);
     border-radius: var(--sapButton_BorderCornerRadius);
   }
@@ -62,24 +67,24 @@ $block: #{$fd-namespace}-time;
     width: $fd-time-item-width;
 
     &--active {
-      max-height: $fd-time-wrapper-height;
-      height: $fd-time-wrapper-height;
+      max-height: var(--fdTime_Wrapper_Height);
+      height: var(--fdTime_Wrapper_Height);
       justify-content: initial;
     }
 
     &--meridian {
       .#{$block}__item {
         &:first-child {
-          margin-top: $fd-time-item-height * 3;
+          margin-top: calc(var(--fdTime_Item_Height) * 3);
         }
 
         &:last-child {
-          margin-bottom: $fd-time-item-height * 3;
+          margin-bottom: calc(var(--fdTime_Item_Height) * 3);
         }
       }
 
       .#{$block}__list {
-        height: $fd-time-wrapper-height;
+        height: var(--fdTime_Wrapper_Height);
       }
     }
   }
@@ -90,8 +95,8 @@ $block: #{$fd-namespace}-time;
 
     cursor: default;
     width: $fd-time-item-width;
-    height: $fd-time-item-height;
-    min-height: $fd-time-item-height;
+    height: var(--fdTime_Item_Height);
+    min-height: var(--fdTime_Item_Height);
     border-radius: var(--sapButton_BorderCornerRadius);
     background-color: var(--sapLegend_WorkingBackground);
     border: 0.0625rem solid var(--sapList_Background);
@@ -147,7 +152,7 @@ $block: #{$fd-namespace}-time;
     width: 100%;
     height: 100%;
     z-index: 2;
-    line-height: 2.75rem;
+    line-height: var(--fdTime_Unit_Line_Height);
   }
 
   &__list {
@@ -181,52 +186,15 @@ $block: #{$fd-namespace}-time;
   }
 
   &--tablet {
-    padding: $fd-time-dropdown-compact-padding;
-
-    .#{$block}__item {
-      height: $fd-time-item-height;
-      min-height: $fd-time-item-height;
-    }
+    --fdTime_Dropdown_Padding: #{$fd-time-dropdown-compact-padding};
+    --fdTime_Item_Height: #{$fd-time-item-height};
   }
 
-  &--compact {
-    padding: $fd-time-dropdown-compact-padding;
-
-    .#{$block}__item {
-      height: $fd-time-item-compact-height;
-      min-height: $fd-time-item-compact-height;
-    }
-
-    .#{$block}__wrapper {
-      .#{$block}__current-indicator {
-        height: $fd-time-item-compact-height;
-      }
-
-      &.#{$block}__wrapper--active {
-        max-height: $fd-time-wrapper-compact-height;
-        height: $fd-time-wrapper-compact-height;
-      }
-
-      &.#{$block}__wrapper--meridian {
-        .#{$block}__item {
-          &:first-child {
-            margin-top: $fd-time-item-compact-height * 3;
-          }
-
-          &:last-child {
-            margin-bottom: $fd-time-item-compact-height * 3;
-          }
-        }
-
-        .#{$block}__list {
-          height: $fd-time-wrapper-compact-height;
-        }
-      }
-    }
-
-    .#{$block}__unit {
-      line-height: 1.875rem;
-    }
+  @include fd-compact-or-condensed() {
+    --fdTime_Dropdown_Padding: #{$fd-time-dropdown-compact-padding};
+    --fdTime_Item_Height: #{$fd-time-item-compact-height};
+    --fdTime_Wrapper_Height: #{$fd-time-wrapper-compact-height};
+    --fdTime_Unit_Line_Height: 1.875rem;
   }
 
   &--scrollable {

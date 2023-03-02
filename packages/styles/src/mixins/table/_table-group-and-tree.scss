@@ -88,8 +88,7 @@
     }
   }
 
-  &--compact,
-  &--condensed {
+  @include fd-compact-or-condensed() {
     &.#{$block}--tree,
     &.#{$block}--group {
       .#{$block}__body {

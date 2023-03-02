@@ -96,7 +96,7 @@ $block: #{$fd-namespace}-token;
 
   @include fd-token-focus();
 
-  &--compact {
+  @include fd-compact-or-condensed() {
     padding: $fd-token-compact-padding-vertical 0 $fd-token-compact-padding-vertical $fd-token-compact-padding-horizontal;
     height: $fd-token-compact-height;
     min-width: 3rem;
@@ -130,7 +130,7 @@ $block: #{$fd-namespace}-token;
     padding: $fd-token-padding-vertical $fd-token-readonly-padding-horizontal;
     border: var(--sapButton_BorderWidth) solid var(--fdToken_Border_Color_Read_Only);
 
-    &.#{$block}--compact {
+    @include fd-compact-or-condensed() {
       padding: $fd-token-compact-padding-vertical $fd-token-compact-readonly-padding-horizontal;
 
       @include fd-rtl() {

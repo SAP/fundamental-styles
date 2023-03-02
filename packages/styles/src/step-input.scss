@@ -12,6 +12,9 @@ $block: #{$fd-namespace}-step-input;
   $fd-step-input-description-padding: 0.5rem;
   $fd-step-input-semantic-border-offset: 0.125rem;
 
+  --fdStepInput_Button_Width: #{$fd-step-input-cozy-button-width};
+  --fdStepInput_Bordered_Button_Width: #{$fd-step-input-cozy-button-width - $fd-step-input-semantic-border-offset};
+
   // @include fd-reset();
   @include fd-input-field-base(true);
   @include fd-input-field-states(true);
@@ -23,9 +26,9 @@ $block: #{$fd-namespace}-step-input;
   align-items: center;
   padding: 0;
 
-  &__button.#{$fd-namespace}-button {
-    width: $fd-step-input-cozy-button-width;
-    min-width: $fd-step-input-cozy-button-width;
+  & &__button.#{$fd-namespace}-button {
+    width: var(--fdStepInput_Button_Width);
+    min-width: var(--fdStepInput_Button_Width);
 
     &::before,
     &::after {
@@ -39,11 +42,6 @@ $block: #{$fd-namespace}-step-input;
       @include fd-hover() {
         z-index: auto;
       }
-    }
-
-    &--compact {
-      width: $fd-step-input-compact-button-width;
-      min-width: $fd-step-input-compact-button-width;
     }
   }
 
@@ -68,10 +66,6 @@ $block: #{$fd-namespace}-step-input;
 
       outline: none;
     }
-
-    &--compact {
-      height: 100%;
-    }
   }
 
   &__container {
@@ -83,23 +77,21 @@ $block: #{$fd-namespace}-step-input;
   &.is-error,
   &.is-warning {
     .#{$block}__button.#{$fd-namespace}-button {
-      width: calc(#{$fd-step-input-cozy-button-width} - #{$fd-step-input-semantic-border-offset});
-      min-width: calc(#{$fd-step-input-cozy-button-width} - #{$fd-step-input-semantic-border-offset});
+      width: var(--fdStepInput_Bordered_Button_Width);
+      min-width: var(--fdStepInput_Bordered_Button_Width);
     }
   }
 
-  &--compact {
+  @include fd-compact-or-condensed() {
+    --fdStepInput_Bordered_Button_Width: #{$fd-step-input-compact-button-width - $fd-step-input-semantic-border-offset};
+    --fdStepInput_Button_Width: #{$fd-step-input-compact-button-width};
+    --fdInput_Field_Compact_Padding: 0 0.25rem;
+
     height: $fd-step-input-compact-height;
     min-height: $fd-step-input-compact-height;
 
-    /** Width is different due to different border width  */
-    &.is-information,
-    &.is-error,
-    &.is-warning {
-      .#{$block}__button.#{$fd-namespace}-button {
-        width: calc(#{$fd-step-input-compact-button-width} - #{$fd-step-input-semantic-border-offset});
-        min-width: calc(#{$fd-step-input-compact-button-width} - #{$fd-step-input-semantic-border-offset});
-      }
+    .#{$block}__input.#{$fd-namespace}-input {
+      height: 100%;
     }
   }
 

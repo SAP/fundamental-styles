@@ -25,8 +25,8 @@ $fd-input-field-height--compact: 1.625rem;
   width: 100%;
   min-width: var(#{$overrideMinWidth}, 2.75rem);
   border-radius: var(--sapField_BorderCornerRadius);
-  padding: 0 0.625rem;
-  margin: 0.25rem 0;
+  padding: var(--fdInput_Field_Padding, 0 0.625rem);
+  margin: var(--fdInput_Field_Margin, 0.25rem 0);
   box-shadow: none;
   color: var(--sapField_TextColor);
   text-shadow: var(--fdInput_Text_Shadow);
@@ -91,9 +91,9 @@ $fd-input-field-height--compact: 1.625rem;
 @mixin fd-input-field-base-compact {
   @include fd-set-min-height($fd-input-field-height--compact);
 
-  min-width: 2rem;
-  margin: 0.1875rem 0;
-  padding: 0 0.5rem;
+  min-width: var(--fdInput_Field_Compact_Min_Width, 2rem);
+  margin: var(--fdInput_Field_Compact_Margin, 0.1875rem 0);
+  padding: var(--fdInput_Field_Compact_Padding, 0 0.5rem);
   box-sizing: border-box;
 }
 
@@ -313,8 +313,9 @@ $fd-input-field-height--compact: 1.625rem;
     }
 
     @include fd-hover() {
+      --fdInput_Group_Button_Text_Color: var(--fdInput_Group_Button_Hover_Text_Color);
+
       background: var(--fdInput_Group_Button_Hover_Background);
-      color: var(--fdInput_Group_Button_Hover_Text_Color);
       box-shadow: var(--fdInput_Group_Button_Box_Shadow);
     }
 

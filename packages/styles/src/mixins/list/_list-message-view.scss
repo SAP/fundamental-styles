@@ -2,11 +2,12 @@
 
 .#{$block} {
   &--message-view {
+    --fdList_Item_Height: calc(2.75rem + var(--sapList_BorderWidth));
+    --fdList_Message_View_Item_Byline_Height: calc(3.325rem + var(--sapList_BorderWidth));
+    --fdList_Message_View_Title_Size: var(--sapFontHeader5Size);
     .#{$block}__item {
-      height: calc(2.75rem + var(--sapList_BorderWidth));
-
       &--byline {
-        height: calc(3.325rem + var(--sapList_BorderWidth));
+        --fdList_Item_Height: var(--fdList_Message_View_Item_Byline_Height);
       }
     }
     .#{$block}__content {
@@ -23,7 +24,7 @@
 
     .#{$block}__title {
       font-family: var(--sapFontHeaderFamily);
-      font-size: var(--sapFontHeader5Size);
+      font-size: var(--fdList_Message_View_Title_Size);
       font-weight: normal;
       color: var(--sapGroup_TitleTextColor);
 
@@ -47,18 +48,10 @@
       }
     }
 
-    &.#{$block}--compact {
-      .#{$block}__item {
-        height: calc(2rem + var(--sapList_BorderWidth));
-
-        &--byline {
-          height: calc(3.25rem + var(--sapList_BorderWidth));
-        }
-
-        .#{$block}__title {
-          font-size: var(--sapFontHeader6Size);
-        }
-      }
+    @include fd-compact-or-condensed() {
+      --fdList_Message_View_Item_Height: calc(2rem + var(--sapList_BorderWidth));
+      --fdList_Message_View_Title_Size: var(--sapFontHeader6Size);
+      --fdList_Message_View_Item_Byline_Height: calc(3.25rem + var(--sapList_BorderWidth));
     }
   }
 }

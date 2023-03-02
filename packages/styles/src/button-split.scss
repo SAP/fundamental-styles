@@ -144,12 +144,10 @@ $split-button-states: (
 
     color: inherit;
     display: block;
-    max-width: 8.5rem; // 12rem - arrow button - paddings
+    max-width: var(--fdButtonSplit_Text_Max_Width, 8.5rem); // 12rem - arrow button - paddings
   }
 
-  .#{$block-button}--compact {
-    .#{$block}__text {
-      max-width: 9rem; // 12rem - arrow button - paddings
-    }
+  @include fd-compact-or-condensed() {
+    --fdButtonSplit_Text_Max_Width: 9rem;
   }
 }

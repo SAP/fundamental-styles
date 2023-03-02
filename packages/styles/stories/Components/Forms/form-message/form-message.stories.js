@@ -26,7 +26,7 @@ Read-only&nbsp;&nbsp;&nbsp; | \`is-readonly\`&nbsp;&nbsp;&nbsp; | Used to displa
     }
 };
 
-export const Success = () => `<div class="fd-form-item">
+export const Success = () => `<div class="fd-form-item" style="min-height: 100px;">
         <label class="fd-form-label" for="input-1bb">Success input:</label>
         <div class="fd-form-input-message-group fd-popover">
             <div class="fd-popover__control" aria-controls="popoverB2" aria-expanded="true" aria-haspopup="true">
@@ -48,7 +48,7 @@ Success.parameters = {
     }
 };
 
-export const Error = () => `<div class="fd-form-item">
+export const Error = () => `<div class="fd-form-item" style="min-height: 100px;">
         <label class="fd-form-label" for="input-1cc">Error input:</label>
         <div class="fd-form-input-message-group fd-popover">
             <div class="fd-popover__control" aria-controls="popoverB3" aria-expanded="true" aria-haspopup="true">
@@ -70,7 +70,7 @@ Error.parameters = {
     }
 };
 
-export const Warning = () => `<div class="fd-form-item">
+export const Warning = () => `<div class="fd-form-item" style="min-height: 100px;">
         <label class="fd-form-label" for="input-1cc">Warning input:</label>
         <div class="fd-form-input-message-group fd-popover">
             <div class="fd-popover__control" aria-controls="popoverB4" aria-expanded="true" aria-haspopup="true">
@@ -92,7 +92,7 @@ Warning.parameters = {
     }
 };
 
-export const Information = () => `<div class="fd-form-item">
+export const Information = () => `<div class="fd-form-item" style="min-height: 100px;">
         <label class="fd-form-label" for="input-1ee">Information input:</label>
         <div class="fd-form-input-message-group fd-popover">
             <div class="fd-popover__control" aria-controls="popoverB5" aria-expanded="true" aria-haspopup="true">

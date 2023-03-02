@@ -815,20 +815,20 @@ export const Compact = () => `<div style="display: flex; justify-content: space-
         <header class="fd-calendar__header">
             <div class="fd-calendar__navigation">
                 <div class="fd-calendar__action fd-calendar__action--arrow-left">
-                    <button type="button" class="fd-button fd-button--compact fd-button--transparent" aria-label="Previous">
+                    <button type="button" class="fd-button fd-button--transparent" aria-label="Previous">
                         <i class="sap-icon--slim-arrow-left"></i>
                     </button>
                 </div>
                 <div class="fd-calendar__action">
-                    <button type="button" class="fd-button fd-button--compact fd-button--transparent"
+                    <button type="button" class="fd-button fd-button--transparent"
                         aria-expanded="false">January</button>
                 </div>
                 <div class="fd-calendar__action">
-                    <button type="button" class="fd-button fd-button--compact fd-button--transparent"
+                    <button type="button" class="fd-button fd-button--transparent"
                         aria-expanded="true">2018</button>
                 </div>
                 <div class="fd-calendar__action fd-calendar__action--arrow-right">
-                    <button type="button" class="fd-button fd-button--compact fd-button--transparent" aria-label="Next">
+                    <button type="button" class="fd-button fd-button--transparent" aria-label="Next">
                         <i class="sap-icon--slim-arrow-right"></i>
                     </button>
                 </div>

@@ -73,15 +73,6 @@ $gridCol: #{$fd-namespace}-col;
     }
 
     .#{$formItem} {
-      &--compact {
-        .#{$fd-namespace}-select__control {
-          margin-bottom: 0.1875rem;
-        }
-      }
-
-      .#{$fd-namespace}-select__control {
-        margin: 0.25rem 0;
-      }
 
       .#{$fd-namespace}-form-label {
         @include fd-set-margin-right(0);

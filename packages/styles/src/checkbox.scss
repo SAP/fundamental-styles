@@ -17,13 +17,13 @@ $block: #{$fd-namespace}-checkbox;
   @include fd-set-padding-left($offset);
 }
 
-.#{$block} {
-  @mixin fd-checkbox-label() {
-    + .#{$block}__label {
-      @content;
-    }
+@mixin fd-checkbox-label() {
+  + .#{$block}__label {
+    @content;
   }
+}
 
+.#{$block} {
   @mixin fd-checkbox-state(
     $background-color,
     $text-color,
@@ -137,11 +137,6 @@ $block: #{$fd-namespace}-checkbox;
     margin-left: var(--fdCheckbox_Tristate_Offset);
   }
 
-  &:indeterminate + .#{$block}__label--compact::after {
-    --fdCheckbox_Tristate_Size: var(--fdCheckbox_Tristate_Compact_Size);
-    --fdCheckbox_Tristate_Offset: var(--fdCheckbox_Tristate_Compact_Offset);
-  }
-
   @include fd-rtl() {
     &:indeterminate + .#{$block}__label::after {
       margin-left: 0;
@@ -221,10 +216,17 @@ $block: #{$fd-namespace}-checkbox;
     }
   }
 
-  &--compact {
+  @include fd-compact-or-condensed() {
     @include fd-checkbox-label() {
       --fdCheckbox_Dimensions: var(--fdCheckbox_Compact_Dimensions);
       --fdCheckbox_Padding: var(--fdCheckbox_Compact_Padding);
+    }
+
+    &:indeterminate {
+      @include fd-checkbox-label() {
+        --fdCheckbox_Tristate_Size: var(--fdCheckbox_Tristate_Compact_Size);
+        --fdCheckbox_Tristate_Offset: var(--fdCheckbox_Tristate_Compact_Offset);
+      }
     }
 
     @include fd-focus() {

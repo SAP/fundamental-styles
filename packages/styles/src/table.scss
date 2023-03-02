@@ -110,12 +110,12 @@ $table-z-index: (
     padding: 0 0.5rem;
     color: inherit;
     outline: none;
-    border-bottom: var(--sapList_BorderWidth) solid var(--sapList_BorderColor);
+    border-bottom: var(--sapList_BorderWidth) var(--fdTable_Cell_Horizontal_Border_Style, solid) var(--sapList_BorderColor);
 
-    @include fd-set-border-left(var(--sapList_BorderWidth) solid var(--sapList_BorderColor));
+    @include fd-set-border-left(var(--sapList_BorderWidth) var(--fdTable_Cell_Vertical_Border_Style, solid) var(--sapList_BorderColor));
 
     &:last-child {
-      @include fd-set-border-right(var(--sapList_BorderWidth) solid var(--sapList_BorderColor));
+      @include fd-set-border-right(var(--sapList_BorderWidth) var(--fdTable_Cell_Vertical_Border_Style, solid) var(--sapList_BorderColor));
     }
 
     @include fd-rtl() {
@@ -332,11 +332,11 @@ $table-z-index: (
 
   /****** Modifiers ******/
 
-  &--compact {
+  @include fd-compact() {
     --fdTable_Cell_Height: 2rem;
   }
 
-  &--condensed {
+  @include fd-condensed() {
     --fdTable_Cell_Height: 1.5rem;
 
     .#{$block}__body,
@@ -363,8 +363,7 @@ $table-z-index: (
     }
   }
 
-  &--compact,
-  &--condensed {
+  @include fd-compact-or-condensed() {
     --fdTable_Header_Cell_Height: 2rem;
   }
 

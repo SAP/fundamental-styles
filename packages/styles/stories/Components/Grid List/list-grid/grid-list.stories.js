@@ -56,20 +56,20 @@ export const DeleteMode = () => `<div style="min-height: 300px;">
     <div class="fd-container">
         <div class="fd-row">
             <div class="fd-col fd-col--12">
-                <div class="fd-toolbar fd-toolbar--solid">
+                <div class="fd-toolbar fd-toolbar--solid fd-toolbar--compact">
                     <span>Products (420)</span>
 
                     <span class="fd-toolbar__spacer"></span>
 
-                    <button class="fd-button fd-button--compact fd-button--transparent" aria-label="Sort">
+                    <button class="fd-button  fd-button--transparent" aria-label="Sort">
                         <i class="sap-icon--sort"></i>
                     </button>
 
-                    <button class="fd-button fd-button--compact fd-button--transparent" aria-label="Filter">
+                    <button class="fd-button fd-button--transparent" aria-label="Filter">
                         <i class="sap-icon--filter"></i>
                     </button>
 
-                    <button class="fd-button fd-button--compact fd-button--transparent" aria-label="Group">
+                    <button class="fd-button fd-button--transparent" aria-label="Group">
                         <i class="sap-icon--group-2"></i>
                     </button>
                 </div>
@@ -79,12 +79,12 @@ export const DeleteMode = () => `<div style="min-height: 300px;">
         <div class="fd-row">
             <div  class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--4 fd-col-xl--3">
                 <div tabindex="0" class="fd-grid-list__item fd-grid-list__item--link">
-                    <div class="fd-toolbar fd-grid-list__item-toolbar">
+                    <div class="fd-toolbar fd-toolbar--compact fd-grid-list__item-toolbar">
                         <span class="fd-toolbar__spacer"></span>
 
                         <span class="fd-grid-list__item-counter" aria-label="Item has 10 children">10</span>
 
-                        <button class="fd-button fd-button--compact fd-button--transparent" aria-label="Delete">
+                        <button class="fd-button fd-button--transparent" aria-label="Delete">
                             <i class="sap-icon--decline"></i>
                         </button>
 
@@ -114,14 +114,14 @@ export const DeleteMode = () => `<div style="min-height: 300px;">
 
             <div  class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--4 fd-col-xl--3">
                 <div tabindex="0" class="fd-grid-list__item">
-                    <div class="fd-toolbar fd-grid-list__item-toolbar">
+                    <div class="fd-toolbar fd-toolbar--compact fd-grid-list__item-toolbar">
                         <span class="fd-toolbar__spacer"></span>
 
-                        <button class="fd-button fd-button--compact fd-button--transparent" aria-label="Edit">
+                        <button class="fd-button fd-button--transparent" aria-label="Edit">
                             <i class="sap-icon--edit"></i>
                         </button>
 
-                        <button class="fd-button fd-button--compact fd-button--transparent" aria-label="Delete">
+                        <button class="fd-button fd-button--transparent" aria-label="Delete">
                             <i class="sap-icon--decline"></i>
                         </button>
                     </div>
@@ -147,10 +147,10 @@ export const DeleteMode = () => `<div style="min-height: 300px;">
 
             <div  class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--4 fd-col-xl--3">
                 <div tabindex="0" class="fd-grid-list__item">
-                    <div class="fd-toolbar fd-grid-list__item-toolbar">
+                    <div class="fd-toolbar fd-toolbar--compact fd-grid-list__item-toolbar">
                         <span class="fd-toolbar__spacer"></span>
 
-                        <button class="fd-button fd-button--compact fd-button--transparent" aria-label="Delete">
+                        <button class="fd-button fd-button--transparent" aria-label="Delete">
                             <i class="sap-icon--decline"></i>
                         </button>
                     </div>
@@ -176,9 +176,9 @@ export const DeleteMode = () => `<div style="min-height: 300px;">
 
             <div  class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--4 fd-col-xl--3">
                 <div tabindex="0" class="fd-grid-list__item">
-                    <div class="fd-toolbar fd-grid-list__item-toolbar">
+                    <div class="fd-toolbar fd-toolbar--compact fd-grid-list__item-toolbar">
                         <span class="fd-toolbar__spacer"></span>
-                        <button class="fd-button fd-button--compact fd-button--transparent" aria-label="Delete">
+                        <button class="fd-button fd-button--transparent" aria-label="Delete">
                             <i class="sap-icon--decline"></i>
                         </button>
                     </div>
@@ -225,20 +225,20 @@ export const Group = () => `<div style="min-height: 600px;">
     <div class="fd-container">
         <div class="fd-row">
             <div class="fd-col fd-col--12">
-                <div class="fd-toolbar fd-toolbar--solid">
+                <div class="fd-toolbar fd-toolbar--compact fd-toolbar--solid">
                     <span>Products (420)</span>
 
                     <span class="fd-toolbar__spacer"></span>
 
-                    <button class="fd-button fd-button--compact fd-button--transparent" aria-label="Sort">
+                    <button class="fd-button fd-button--transparent" aria-label="Sort">
                         <i class="sap-icon--sort"></i>
                     </button>
 
-                    <button class="fd-button fd-button--compact fd-button--transparent" aria-label="Filter">
+                    <button class="fd-button fd-button--transparent" aria-label="Filter">
                         <i class="sap-icon--filter"></i>
                     </button>
 
-                    <button class="fd-button fd-button--compact fd-button--transparent" aria-label="Group">
+                    <button class="fd-button fd-button--transparent" aria-label="Group">
                         <i class="sap-icon--group-2"></i>
                     </button>
                 </div>
@@ -285,10 +285,10 @@ export const Group = () => `<div style="min-height: 600px;">
 
             <div tabindex="0" class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--4 fd-col-xl--3">
                 <div tabindex="0" class="fd-grid-list__item">
-                    <div class="fd-toolbar fd-grid-list__item-toolbar">
+                    <div class="fd-toolbar fd-toolbar--compact fd-grid-list__item-toolbar">
                         <span class="fd-toolbar__spacer"></span>
 
-                        <button class="fd-button fd-button--compact fd-button--transparent" aria-label="Edit">
+                        <button class="fd-button fd-button--transparent" aria-label="Edit">
                             <i class="sap-icon--edit"></i>
                         </button>
                     </div>
@@ -380,20 +380,20 @@ export const States = () => `<div style="min-height: 600px;">
     <div class="fd-container">
         <div class="fd-row">
             <div class="fd-col fd-col--12">
-                <div class="fd-toolbar fd-toolbar--solid">
+                <div class="fd-toolbar fd-toolbar--compact fd-toolbar--solid">
                     <span>Products (420)</span>
 
                     <span class="fd-toolbar__spacer"></span>
 
-                    <button class="fd-button fd-button--compact fd-button--transparent" aria-label="Sort">
+                    <button class="fd-button fd-button--transparent" aria-label="Sort">
                         <i class="sap-icon--sort"></i>
                     </button>
 
-                    <button class="fd-button fd-button--compact fd-button--transparent" aria-label="Filter">
+                    <button class="fd-button fd-button--transparent" aria-label="Filter">
                         <i class="sap-icon--filter"></i>
                     </button>
 
-                    <button class="fd-button fd-button--compact fd-button--transparent" aria-label="Group">
+                    <button class="fd-button fd-button--transparent" aria-label="Group">
                         <i class="sap-icon--group-2"></i>
                     </button>
                 </div>
@@ -448,10 +448,10 @@ export const States = () => `<div style="min-height: 600px;">
                 <div tabindex="0" class="fd-grid-list__item">
                     <span class="fd-grid-list__highlight fd-grid-list__highlight--negative" aria-label="Item is highlighted. Status: negative."></span>
 
-                    <div class="fd-toolbar fd-grid-list__item-toolbar">
+                    <div class="fd-toolbar fd-toolbar--compact fd-grid-list__item-toolbar">
                         <span class="fd-toolbar__spacer"></span>
 
-                        <button class="fd-button fd-button--compact fd-button--transparent" aria-label="Edit">
+                        <button class="fd-button fd-button--transparent" aria-label="Edit">
                             <i class="sap-icon--edit"></i>
                         </button>
                     </div>
@@ -568,20 +568,20 @@ export const Highlight = () => `<div style="min-height: 350px;">
     <div class="fd-container">
         <div class="fd-row">
             <div class="fd-col fd-col--12">
-                <div class="fd-toolbar fd-toolbar--solid">
+                <div class="fd-toolbar fd-toolbar--compact fd-toolbar--solid">
                     <span>Products (420)</span>
 
                     <span class="fd-toolbar__spacer"></span>
 
-                    <button class="fd-button fd-button--compact fd-button--transparent" aria-label="Sort">
+                    <button class="fd-button fd-button--transparent" aria-label="Sort">
                         <i class="sap-icon--sort"></i>
                     </button>
 
-                    <button class="fd-button fd-button--compact fd-button--transparent" aria-label="Filter">
+                    <button class="fd-button fd-button--transparent" aria-label="Filter">
                         <i class="sap-icon--filter"></i>
                     </button>
 
-                    <button class="fd-button fd-button--compact fd-button--transparent" aria-label="Group">
+                    <button class="fd-button fd-button--transparent" aria-label="Group">
                         <i class="sap-icon--group-2"></i>
                     </button>
                 </div>
@@ -626,10 +626,10 @@ export const Highlight = () => `<div style="min-height: 350px;">
                 <div tabindex="0" class="fd-grid-list__item">
                     <span class="fd-grid-list__highlight fd-grid-list__highlight--negative" aria-label="Item is highlighted. Status: negative."></span>
 
-                    <div class="fd-toolbar fd-grid-list__item-toolbar">
+                    <div class="fd-toolbar fd-toolbar--compact fd-grid-list__item-toolbar">
                         <span class="fd-toolbar__spacer"></span>
 
-                        <button class="fd-button fd-button--compact fd-button--transparent" aria-label="Edit">
+                        <button class="fd-button fd-button--transparent" aria-label="Edit">
                             <i class="sap-icon--edit"></i>
                         </button>
                     </div>
@@ -724,20 +724,20 @@ export const FilterInfobar = () => `<div style="min-height: 350px;">
     <div class="fd-container">
         <div class="fd-row">
             <div class="fd-col fd-col--12">
-                <div class="fd-toolbar fd-toolbar--solid">
+                <div class="fd-toolbar fd-toolbar--compact fd-toolbar--solid">
                     <span>Products (420)</span>
 
                     <span class="fd-toolbar__spacer"></span>
 
-                    <button class="fd-button fd-button--compact fd-button--transparent" aria-label="Sort">
+                    <button class="fd-button fd-button--transparent" aria-label="Sort">
                         <i class="sap-icon--sort"></i>
                     </button>
 
-                    <button class="fd-button fd-button--compact fd-button--transparent" aria-label="Filter">
+                    <button class="fd-button fd-button--transparent" aria-label="Filter">
                         <i class="sap-icon--filter"></i>
                     </button>
 
-                    <button class="fd-button fd-button--compact fd-button--transparent" aria-label="Group">
+                    <button class="fd-button fd-button--transparent" aria-label="Group">
                         <i class="sap-icon--group-2"></i>
                     </button>
                 </div>
@@ -789,10 +789,10 @@ export const FilterInfobar = () => `<div style="min-height: 350px;">
 
             <div  class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--4 fd-col-xl--3">
                 <div tabindex="0" class="fd-grid-list__item">
-                    <div class="fd-toolbar fd-grid-list__item-toolbar">
+                    <div class="fd-toolbar fd-toolbar--compact fd-grid-list__item-toolbar">
                         <span class="fd-toolbar__spacer"></span>
 
-                        <button class="fd-button fd-button--compact fd-button--transparent" aria-label="Edit">
+                        <button class="fd-button fd-button--transparent" aria-label="Edit">
                             <i class="sap-icon--edit"></i>
                         </button>
                     </div>
@@ -879,20 +879,20 @@ export const More = () => `<div style="min-height: 400px;">
     <div class="fd-container">
         <div class="fd-row">
             <div class="fd-col fd-col--12">
-                <div class="fd-toolbar fd-toolbar--solid">
+                <div class="fd-toolbar fd-toolbar--compact fd-toolbar--solid">
                     <span>Products</span>
 
                     <span class="fd-toolbar__spacer"></span>
 
-                    <button class="fd-button fd-button--compact fd-button--transparent" aria-label="Sort">
+                    <button class="fd-button fd-button--transparent" aria-label="Sort">
                         <i class="sap-icon--sort"></i>
                     </button>
 
-                    <button class="fd-button fd-button--compact fd-button--transparent" aria-label="Filter">
+                    <button class="fd-button fd-button--transparent" aria-label="Filter">
                         <i class="sap-icon--filter"></i>
                     </button>
 
-                    <button class="fd-button fd-button--compact fd-button--transparent" aria-label="Group">
+                    <button class="fd-button fd-button--transparent" aria-label="Group">
                         <i class="sap-icon--group-2"></i>
                     </button>
                 </div>
@@ -933,10 +933,10 @@ export const More = () => `<div style="min-height: 400px;">
 
             <div  class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--4 fd-col-xl--3">
                 <div tabindex="0" class="fd-grid-list__item">
-                    <div class="fd-toolbar fd-grid-list__item-toolbar">
+                    <div class="fd-toolbar fd-toolbar--compact fd-grid-list__item-toolbar">
                         <span class="fd-toolbar__spacer"></span>
 
-                        <button class="fd-button fd-button--compact fd-button--transparent" aria-label="Edit">
+                        <button class="fd-button fd-button--transparent" aria-label="Edit">
                             <i class="sap-icon--edit"></i>
                         </button>
                     </div>
@@ -1034,20 +1034,20 @@ export const Footer = () => `<div style="min-height: 300px;">
     <div class="fd-container">
         <div class="fd-row">
             <div class="fd-col fd-col--12">
-                <div class="fd-toolbar fd-toolbar--solid">
+                <div class="fd-toolbar fd-toolbar--compact fd-toolbar--solid">
                     <span>Products (420)</span>
 
                     <span class="fd-toolbar__spacer"></span>
 
-                    <button class="fd-button fd-button--compact fd-button--transparent" aria-label="Sort">
+                    <button class="fd-button fd-button--transparent" aria-label="Sort">
                         <i class="sap-icon--sort"></i>
                     </button>
 
-                    <button class="fd-button fd-button--compact fd-button--transparent" aria-label="Filter">
+                    <button class="fd-button fd-button--transparent" aria-label="Filter">
                         <i class="sap-icon--filter"></i>
                     </button>
 
-                    <button class="fd-button fd-button--compact fd-button--transparent" aria-label="Group">
+                    <button class="fd-button fd-button--transparent" aria-label="Group">
                         <i class="sap-icon--group-2"></i>
                     </button>
                 </div>
@@ -1088,10 +1088,10 @@ export const Footer = () => `<div style="min-height: 300px;">
 
             <div  class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--4 fd-col-xl--3">
                 <div tabindex="0" class="fd-grid-list__item">
-                    <div class="fd-toolbar fd-grid-list__item-toolbar">
+                    <div class="fd-toolbar fd-toolbar--compact fd-grid-list__item-toolbar">
                         <span class="fd-toolbar__spacer"></span>
 
-                        <button class="fd-button fd-button--compact fd-button--transparent" aria-label="Edit">
+                        <button class="fd-button fd-button--transparent" aria-label="Edit">
                             <i class="sap-icon--edit"></i>
                         </button>
                     </div>
@@ -1191,7 +1191,7 @@ export const PartialItems = () => `<div style="min-height: 300px;">
                 </div>
             </div>
           </div>
-      
+
         <div class="fd-row">
             <div  class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--4 fd-col-xl--3">
                 <div tabindex="0" class="fd-grid-list__item fd-grid-list__item--height-auto fd-grid-list__item--link">

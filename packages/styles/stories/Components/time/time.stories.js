@@ -392,7 +392,7 @@ export const CompactMode = () => `<div style="display: flex; justify-content: sp
     <div class='fd-time fd-time--compact'>
         <div class='fd-time__col'>
             <label class='fd-time__slider-label'>Hrs</label>
-            <button class='fd-button fd-button--compact fd-button--transparent' aria-label='Increase hours'>
+            <button class='fd-button fd-button--transparent' aria-label='Increase hours'>
                 <i class="sap-icon--navigation-up-arrow"></i>
             </button>
             <div class='fd-time__wrapper fd-time__wrapper--active'>
@@ -432,7 +432,7 @@ export const CompactMode = () => `<div style="display: flex; justify-content: sp
                     </li>
                 </ul>
             </div>
-            <button class='fd-button fd-button--compact fd-button--transparent' aria-label='Decrease hours'>
+            <button class='fd-button fd-button--transparent' aria-label='Decrease hours'>
                 <i class="sap-icon--navigation-down-arrow"></i>
             </button>
         </div>
@@ -447,7 +447,7 @@ export const CompactMode = () => `<div style="display: flex; justify-content: sp
     <div class='fd-time fd-time--compact'>
         <div class='fd-time__col'>
             <label class='fd-time__slider-label'>Hrs</label>
-            <button class='fd-button fd-button--compact fd-button--transparent' aria-label='Increase hours'>
+            <button class='fd-button fd-button--transparent' aria-label='Increase hours'>
                 <i class="sap-icon--navigation-up-arrow"></i>
             </button>
             <div class='fd-time__wrapper fd-time__wrapper--active'>
@@ -487,7 +487,7 @@ export const CompactMode = () => `<div style="display: flex; justify-content: sp
                    </li>
                </ul>
             </div>
-            <button class='fd-button fd-button--compact fd-button--transparent' aria-label='Decrease hours'>
+            <button class='fd-button fd-button--transparent' aria-label='Decrease hours'>
                 <i class="sap-icon--navigation-down-arrow"></i>
             </button>
         </div>
@@ -526,7 +526,7 @@ export const CompactMode = () => `<div style="display: flex; justify-content: sp
         </div>
         <div class='fd-time__col fd-time__col--period'>
             <label class='fd-time__slider-label'>AM/PM</label>
-            <button class='fd-button fd-button--compact fd-button--transparent' aria-label='Change Meridian'>
+            <button class='fd-button fd-button--transparent' aria-label='Change Meridian'>
                 <i class="sap-icon--navigation-up-arrow"></i>
             </button>
             <div class='fd-time__wrapper fd-time__wrapper--active fd-time__wrapper--meridian'>
@@ -544,7 +544,7 @@ export const CompactMode = () => `<div style="display: flex; justify-content: sp
                     </li>
                 </ul>
             </div>
-            <button class='fd-button fd-button--compact fd-button--transparent' aria-label='Change Meridian'>
+            <button class='fd-button fd-button--transparent' aria-label='Change Meridian'>
                 <i class="sap-icon--navigation-down-arrow"></i>
             </button>
         </div>

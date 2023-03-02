@@ -46,7 +46,7 @@ ${localStyles}
     <div class="fd-form-group">
         <div class="fd-form-item">
             <input type="checkbox" class="fd-checkbox fd-checkbox--compact" id="Ai4ez611c">
-            <label class="fd-checkbox__label fd-checkbox__label--compact" for="Ai4ez611c">
+            <label class="fd-checkbox__label" for="Ai4ez611c">
                 <div class="fd-checkbox__label-container">
                     <span class="fd-checkbox__text">Apple</span>
                 </div>
@@ -54,7 +54,7 @@ ${localStyles}
         </div>
         <div class="fd-form-item">
             <input type="checkbox" class="fd-checkbox fd-checkbox--compact" id="Ai4ez612c" checked>
-            <label class="fd-checkbox__label fd-checkbox__label--compact" for="Ai4ez612c">
+            <label class="fd-checkbox__label" for="Ai4ez612c">
                 <div class="fd-checkbox__label-container">
                     <span class="fd-checkbox__text">Banana</span>
                 </div>
@@ -62,7 +62,7 @@ ${localStyles}
         </div>
         <div class="fd-form-item">
             <input type="checkbox" class="fd-checkbox fd-checkbox--compact" id="Ai4ez622c" disabled>
-            <label class="fd-checkbox__label fd-checkbox__label--compact" for="Ai4ez622c">
+            <label class="fd-checkbox__label" for="Ai4ez622c">
                 <div class="fd-checkbox__label-container">
                     <span class="fd-checkbox__text">Kiwi</span>
                 </div>
@@ -70,7 +70,7 @@ ${localStyles}
         </div>
         <div class="fd-form-item">
             <input type="checkbox" class="fd-checkbox fd-checkbox--compact" id="Ai4ez632c"  checked disabled>
-            <label class="fd-checkbox__label fd-checkbox__label--compact" for="Ai4ez632c">
+            <label class="fd-checkbox__label" for="Ai4ez632c">
                 <div class="fd-checkbox__label-container">
                     <span class="fd-checkbox__text">Lemon</span>
                 </div>
@@ -78,7 +78,7 @@ ${localStyles}
         </div>
         <div class="fd-form-item">
             <input type="checkbox" class="fd-checkbox fd-checkbox--compact" id="Ai4ez613c">
-            <label class="fd-checkbox__label fd-checkbox__label--compact" for="Ai4ez613c">
+            <label class="fd-checkbox__label" for="Ai4ez613c">
                 <div class="fd-checkbox__label-container">
                     <span class="fd-checkbox__text">All Fruits (TriState)</span>
                 </div>
@@ -86,7 +86,7 @@ ${localStyles}
         </div>
         <div class="fd-form-item">
             <input type="checkbox" class="fd-checkbox fd-checkbox--compact" id="Ai4ez643c" disabled>
-            <label class="fd-checkbox__label fd-checkbox__label--compact" for="Ai4ez643c">
+            <label class="fd-checkbox__label" for="Ai4ez643c">
                 <div class="fd-checkbox__label-container">
                     <span class="fd-checkbox__text">All Fruits (TriState)</span>
                 </div>
@@ -113,7 +113,7 @@ export const Required = () => `
     <div class="fd-form-group">
         <div class="fd-form-item">
             <input type="checkbox" class="fd-checkbox fd-checkbox--compact" id="Ai4ez61rc">
-            <label class="fd-checkbox__label fd-checkbox__label--compact fd-checkbox__label--required" for="Ai4ez61rc">
+            <label class="fd-checkbox__label fd-checkbox__label--required" for="Ai4ez61rc">
                 <div class="fd-checkbox__label-container">
                     <span class="fd-checkbox__text">Required Checkbox</span>
                 </div>

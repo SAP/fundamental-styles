@@ -84,8 +84,8 @@ $fd-input-border-radius: var(--sapField_BorderCornerRadius);
     color: var(--sapContent_NonInteractiveIconColor);
     background: var(--fdInputGroup_Addon_Background, none);
     font-size: var(--sapFontLargeSize);
-    min-width: 2.25rem;
-    min-height: $fd-form-input-height;
+    min-width: var(--fdInput_Group_Addon_Width, 2.25rem);
+    min-height: var(--fdInput_Group_Addon_Height, #{$fd-form-input-height});
     padding-left: 0.625rem;
     padding-right: 0.625rem;
 
@@ -93,11 +93,6 @@ $fd-input-border-radius: var(--sapField_BorderCornerRadius);
       &::before {
         font-size: var(--sapFontLargeSize);
       }
-    }
-
-    &--compact {
-      min-width: 2rem;
-      min-height: $fd-form-input-height--compact;
     }
 
     &--readonly {
@@ -116,8 +111,11 @@ $fd-input-border-radius: var(--sapField_BorderCornerRadius);
     }
   }
 
-  &--compact {
-    margin: 0.1875rem 0;
+  @include fd-compact-or-condensed() {
+    --fdInput_Field_Margin: 0.1875rem 0;
+    --fdInput_Field_Compact_Margin: 0;
+    --fdInput_Group_Addon_Width: 2rem;
+    --fdInput_Group_Addon_Height: #{$fd-form-input-height--compact};
   }
 
   .#{$fd-namespace}-textarea {

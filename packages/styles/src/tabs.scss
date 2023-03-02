@@ -71,6 +71,8 @@ $fd-tabs-link-active-line-offset-x: 0.1875rem;
 .#{$block} {
   --fdTabs_Icon_Size: 1.125rem;
   --fdTabs_Icon_Selection_Height: 2.625rem;
+  --fdTabs_Label_Padding_Bottom: 0.375rem;
+  --fdTabs_Filter_Link_Height: 5.5rem;
 
   @include fd-reset();
 
@@ -287,7 +289,7 @@ $fd-tabs-link-active-line-offset-x: 0.1875rem;
     max-width: 100%;
 
     &:first-child {
-      padding-bottom: 0.375rem;
+      padding-bottom: var(--fdTabs_Label_Padding_Bottom);
     }
   }
 
@@ -431,7 +433,7 @@ $fd-tabs-link-active-line-offset-x: 0.1875rem;
     }
 
     .#{$block}__link {
-      height: 5.5rem;
+      height: var(--fdTabs_Filter_Link_Height);
       padding: 0.875rem $fd-tabs-selection-padding-x 0.625rem $fd-tabs-selection-padding-x;
       text-align: center;
       display: flex;
@@ -461,21 +463,11 @@ $fd-tabs-link-active-line-offset-x: 0.1875rem;
     }
   }
 
-  &--compact {
+  @include fd-compact-or-condensed() {
     --fdTabs_Icon_Size: 1.125rem;
     --fdTabs_Icon_Selection_Height: 1.875rem;
-
-    .#{$block}__label {
-      &:first-child {
-        padding-bottom: 0.25rem;
-      }
-    }
-
-    &.#{$block}--filter {
-      .#{$block}__link {
-        height: 4.75rem;
-      }
-    }
+    --fdTabs_Label_Padding_Bottom: 0.25rem;
+    --fdTabs_Filter_Link_Height: 4.75rem;
   }
 
   &--s {

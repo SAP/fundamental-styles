@@ -14,7 +14,6 @@
     @include fd-flex-vertical-center();
 
     padding: 0 $fd-list-item-padding-x;
-    height: 2.75rem;
   }
 
   &__item {
@@ -22,6 +21,9 @@
       bottom: 0.0625rem;
     }
 
+    --fdList_Item_Height: 2.75rem;
+
+    height: var(--fdList_Item_Height);
     border-bottom: var(--sapList_BorderWidth) solid var(--sapList_BorderColor);
     background: var(--sapList_Background);
     position: relative;
@@ -47,7 +49,8 @@
       padding: 0;
       text-align: center;
       border-bottom: var(--fdList_Item_Action_Border);
-      height: var(--fdList_Item_Action_Height);
+
+      --fdList_Item_Height: var(--fdList_Item_Action_Height);
 
       &:first-child {
         border-top: var(--fdList_Item_Action_Border);
@@ -179,11 +182,11 @@
   }
 
   &__group-header {
+    height: 2.75rem;
     background: var(--sapList_GroupHeaderBackground);
     border-bottom: var(--sapList_BorderWidth) solid var(--sapList_GroupHeaderBorderColor);
     color: var(--sapList_GroupHeaderTextColor);
     align-items: flex-end;
-    height: 2.75rem;
 
     .#{$block}__title {
       font-size: $fd-list-normal-font-size;
@@ -193,10 +196,10 @@
   }
 
   &__footer {
+    height: 2rem;
     background: var(--sapList_FooterBackground);
     color: var(--sapList_FooterTextColor);
     font-size: $fd-list-normal-font-size;
-    height: 2rem;
 
     &--right {
       justify-content: flex-end;
@@ -245,25 +248,29 @@
     @include fd-set-margin-left(var(--fdList_Button_Spacing));
   }
 
-  &--compact:not(.#{$objectListBlock}) {
-    .#{$block}__item {
-      height: 2rem;
-    }
+  @include fd-compact-or-condensed() {
+    &:not(.#{$objectListBlock}):not(.#{$messageViewList}) {
 
-    .#{$block}__item.#{$block}__item--action {
-      .#{$block}__title {
-        height: var(--fdList_Item_Action_Button_Size_Compact);
+      .#{$block}__item {
+        --fdList_Item_Height: 2rem;
       }
-    }
 
-    .#{$block}__title {
-      font-size: $fd-list-normal-font-size;
-      min-height: $fd-list-normal-font-size;
-    }
+      .#{$block}__item.#{$block}__item--action {
+        .#{$block}__title {
+          height: var(--fdList_Item_Action_Button_Size_Compact);
+        }
+      }
 
-    .#{$block}__icon {
-      @include fd-icon-selector() {
-        font-size: $fd-list-large-font-size;
+      .#{$block}__title {
+        font-size: $fd-list-normal-font-size;
+        min-height: $fd-list-normal-font-size;
+        line-height: $fd-list-normal-font-size;
+      }
+
+      .#{$block}__icon {
+        @include fd-icon-selector() {
+          font-size: $fd-list-large-font-size;
+        }
       }
     }
   }

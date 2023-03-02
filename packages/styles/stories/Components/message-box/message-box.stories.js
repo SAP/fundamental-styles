@@ -68,15 +68,15 @@ export const Structure = () => `<div class="fd-message-box-docs-static fd-messag
         <div class="fd-message-box__body">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
         </div>
-        <footer class="fd-bar fd-bar--footer fd-message-box__footer">
+        <footer class="fd-bar fd-bar--compact fd-bar--footer fd-message-box__footer">
             <div class="fd-bar__right">
                 <div class="fd-bar__element">
-                    <button class="fd-button fd-button--emphasized fd-button--compact fd-message-box__decisive-button">
+                    <button class="fd-button fd-button--emphasized fd-message-box__decisive-button">
                         Begin button
                     </button>
                 </div>
                 <div class="fd-bar__element">
-                    <button class="fd-button fd-button--transparent fd-button--compact fd-message-box__decisive-button">
+                    <button class="fd-button fd-button--transparent fd-message-box__decisive-button">
                         End button
                     </button>
                 </div>
@@ -112,15 +112,15 @@ export const Types = () => `<div class="fd-message-box-docs-static fd-message-bo
         <div class="fd-message-box__body">
             Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
         </div>
-        <footer class="fd-bar fd-bar--footer fd-message-box__footer">
+        <footer class="fd-bar fd-bar--compact fd-bar--footer fd-message-box__footer">
             <div class="fd-bar__right">
                 <div class="fd-bar__element">
-                    <button class="fd-button fd-button--emphasized fd-button--compact fd-message-box__decisive-button">
+                    <button class="fd-button fd-button--emphasized fd-message-box__decisive-button">
                         OK
                     </button>
                 </div>
                 <div class="fd-bar__element">
-                    <button class="fd-button fd-button--transparent fd-button--compact fd-message-box__decisive-button">
+                    <button class="fd-button fd-button--transparent fd-message-box__decisive-button">
                         Cancel
                     </button>
                 </div>
@@ -144,10 +144,10 @@ export const Types = () => `<div class="fd-message-box-docs-static fd-message-bo
         <div class="fd-message-box__body">
             Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
         </div>
-        <footer class="fd-bar fd-bar--footer fd-message-box__footer">
+        <footer class="fd-bar fd-bar--compact fd-bar--footer fd-message-box__footer">
             <div class="fd-bar__right">
                 <div class="fd-bar__element">
-                    <button class="fd-button fd-button--emphasized fd-button--compact fd-message-box__decisive-button">
+                    <button class="fd-button fd-button--emphasized fd-message-box__decisive-button">
                         Close
                     </button>
                 </div>
@@ -171,10 +171,10 @@ export const Types = () => `<div class="fd-message-box-docs-static fd-message-bo
         <div class="fd-message-box__body">
             Vivamus sagittis diam in vehicula lobortis sapien arcu mattis erat vel aliquet sem urna et mattis erat vel aliquet in sem urna et sagittis diam in vehicula.
         </div>
-        <footer class="fd-bar fd-bar--footer fd-message-box__footer">
+        <footer class="fd-bar fd-bar--compact fd-bar--footer fd-message-box__footer">
             <div class="fd-bar__right">
                 <div class="fd-bar__element">
-                    <button class="fd-button fd-button--emphasized fd-button--compact fd-message-box__decisive-button">
+                    <button class="fd-button fd-button--emphasized fd-message-box__decisive-button">
                         Close
                     </button>
                 </div>
@@ -198,10 +198,10 @@ export const Types = () => `<div class="fd-message-box-docs-static fd-message-bo
         <div class="fd-message-box__body">
             Vivamus sagittis diam in vehicula lobortis sapien arcu mattis erat vel aliquet sem urna et.
         </div>
-        <footer class="fd-bar fd-bar--footer fd-message-box__footer">
+        <footer class="fd-bar fd-bar--compact fd-bar--footer fd-message-box__footer">
             <div class="fd-bar__right">
                 <div class="fd-bar__element">
-                    <button class="fd-button fd-button--emphasized fd-button--compact fd-message-box__decisive-button">
+                    <button class="fd-button fd-button--emphasized fd-message-box__decisive-button">
                         Close
                     </button>
                 </div>
@@ -225,10 +225,10 @@ export const Types = () => `<div class="fd-message-box-docs-static fd-message-bo
         <div class="fd-message-box__body">
             Vivamus sagittis diam in vehicula lobortis.
         </div>
-        <footer class="fd-bar fd-bar--footer fd-message-box__footer">
+        <footer class="fd-bar fd-bar--compact fd-bar--footer fd-message-box__footer">
             <div class="fd-bar__right">
                 <div class="fd-bar__element">
-                    <button class="fd-button fd-button--emphasized fd-button--compact fd-message-box__decisive-button">
+                    <button class="fd-button fd-button--emphasized fd-message-box__decisive-button">
                         Close
                     </button>
                 </div>
@@ -329,10 +329,10 @@ export const Responsive = () =>
         <div class="fd-message-box__body">
             Success message box for a large screen in compact mode (desktop).
         </div>
-        <footer class="fd-bar fd-bar--footer fd-message-box__footer">
+        <footer class="fd-bar fd-bar--compact fd-bar--footer fd-message-box__footer">
             <div class="fd-bar__right">
                 <div class="fd-bar__element">
-                    <button class="fd-button fd-button--emphasized fd-button--compact fd-message-box__decisive-button">
+                    <button class="fd-button fd-button--emphasized fd-message-box__decisive-button">
                         Close
                     </button>
                 </div>
@@ -355,10 +355,10 @@ export const Responsive = () =>
         <div class="fd-message-box__body">
            Warning message box for an extra large screen in compact mode (desktop).
         </div>
-        <footer class="fd-bar fd-bar--footer fd-message-box__footer">
+        <footer class="fd-bar fd-bar--compact fd-bar--footer fd-message-box__footer">
             <div class="fd-bar__right">
                 <div class="fd-bar__element">
-                    <button class="fd-button fd-button--emphasized fd-button--compact fd-message-box__decisive-button">
+                    <button class="fd-button fd-button--emphasized fd-message-box__decisive-button">
                         Close
                     </button>
                 </div>

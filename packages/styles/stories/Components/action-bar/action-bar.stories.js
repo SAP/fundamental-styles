@@ -26,10 +26,10 @@ Note: You may want to display components from right to left on the screen for in
     }
 };
 
-export const BackBtn = () => `<div class="fd-action-bar">
+export const BackBtn = () => `<div class="fd-action-bar fd-action-bar--compact">
     <div class="fd-action-bar__header">
         <div class="fd-action-bar__back">
-            <button aria-label="Go Back" class="fd-button fd-button--transparent fd-button--compact">
+            <button aria-label="Go Back" class="fd-button fd-button--transparent">
                 <i  role="presentation" class="sap-icon--navigation-left-arrow"></i>
             </button>
         </div>
@@ -37,8 +37,8 @@ export const BackBtn = () => `<div class="fd-action-bar">
             <h1 class="fd-title fd-title--h3">Page Title</h1>
         </div>
         <div class="fd-action-bar__actions">
-            <button aria-label="button"class="fd-button fd-button--compact">Button</button>
-            <button aria-label="button"class="fd-button fd-button--compact fd-button--emphasized">Button</button>
+            <button aria-label="button"class="fd-button">Button</button>
+            <button aria-label="button"class="fd-button fd-button--emphasized">Button</button>
         </div>
     </div>
     <p class="fd-action-bar__description fd-action-bar__description--back">Action bar Description </p>
@@ -54,14 +54,14 @@ BackBtn.parameters = {
     }
 };
 
-export const NoBackBtn = () => `<div class="fd-action-bar">
+export const NoBackBtn = () => `<div class="fd-action-bar fd-action-bar--compact">
     <div class="fd-action-bar__header">
         <div class="fd-action-bar__title">
             <h1 class="fd-title fd-title--h3">Page Title</h1>
         </div>
         <div class="fd-action-bar__actions">
-            <button aria-label="button"class="fd-button fd-button--compact">Button</button>
-            <button aria-label="button"class="fd-button fd-button--compact fd-button--emphasized">Button</button>
+            <button aria-label="button"class="fd-button">Button</button>
+            <button aria-label="button"class="fd-button fd-button--emphasized">Button</button>
         </div>
     </div>
     <p class="fd-action-bar__description">Action bar Description </p>
@@ -77,10 +77,10 @@ NoBackBtn.parameters = {
         }
     }
 };
-export const BackBtnNoDescription = () => `<div class="fd-action-bar">
+export const BackBtnNoDescription = () => `<div class="fd-action-bar fd-action-bar--compact">
     <div class="fd-action-bar__header">
         <div class="fd-action-bar__back">
-            <button aria-label="Go Back" class="fd-button fd-button--transparent fd-button--compact">
+            <button aria-label="Go Back" class="fd-button fd-button--transparent">
                 <i  role="presentation" class="sap-icon--navigation-left-arrow"></i>
             </button>
         </div>
@@ -88,8 +88,8 @@ export const BackBtnNoDescription = () => `<div class="fd-action-bar">
             <h1 class="fd-title fd-title--h3">Page Title</h1>
         </div>
         <div class="fd-action-bar__actions">
-            <button aria-label="button"class="fd-button fd-button--compact">Button</button>
-            <button aria-label="button"class="fd-button fd-button--compact fd-button--emphasized">Button</button>
+            <button aria-label="button"class="fd-button">Button</button>
+            <button aria-label="button"class="fd-button fd-button--emphasized">Button</button>
         </div>
     </div>
 </div>
@@ -104,10 +104,10 @@ BackBtnNoDescription.parameters = {
         }
     }
 };
-export const LongTitleDescription = () => `<div class="fd-action-bar">
+export const LongTitleDescription = () => `<div class="fd-action-bar fd-action-bar--compact">
     <div class="fd-action-bar__header">
         <div class="fd-action-bar__back">
-            <button aria-label="Go Back" class="fd-button fd-button--transparent fd-button--compact">
+            <button aria-label="Go Back" class="fd-button fd-button--transparent">
                 <i role="presentation" class="sap-icon--navigation-left-arrow"></i>
             </button>
         </div>
@@ -115,9 +115,9 @@ export const LongTitleDescription = () => `<div class="fd-action-bar">
             <h1 class="fd-title fd-title--h3">Page Title Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Long.</h1>
         </div>
         <div class="fd-action-bar__actions">
-            <button aria-label="button"class="fd-button fd-button--compact">Button</button>
-            <button aria-label="button"class="fd-button fd-button--compact">Button</button>
-            <button aria-label="button"class="fd-button fd-button--compact fd-button--emphasized">Button</button>
+            <button aria-label="button"class="fd-button">Button</button>
+            <button aria-label="button"class="fd-button">Button</button>
+            <button aria-label="button"class="fd-button fd-button--emphasized">Button</button>
         </div>
     </div>
     <p class="fd-action-bar__description fd-action-bar__description--back">Action bar Description Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Long
@@ -135,7 +135,7 @@ LongTitleDescription.parameters = {
     }
 };
 
-export const Actions = () => `<div class="fd-action-bar">
+export const Actions = () => `<div class="fd-action-bar fd-action-bar--compact">
     <div class="fd-action-bar__header">
         <div class="fd-action-bar__title">
             <h1 class="fd-title fd-title--h3">Page Title</h1>
@@ -143,7 +143,7 @@ export const Actions = () => `<div class="fd-action-bar">
         <div class="fd-action-bar__actions">
             <div class="fd-popover">
                 <div class="fd-popover__control">
-                    <button class="fd-button fd-button--transparent fd-button--compact"
+                    <button class="fd-button fd-button--transparent"
                     aria-controls="wgxzK859" aria-haspopup="true" aria-expanded="true" aria-label="More"
                     onclick="onPopoverClick('wgxzK859');">
                         <i class="sap-icon--overflow"></i>
@@ -197,10 +197,10 @@ Actions.parameters = {
     }
 };
 
-export const ResponsiveL = () => `<div class="fd-action-bar fd-action-bar--m_l">
+export const ResponsiveL = () => `<div class="fd-action-bar fd-action-bar--m_l fd-action-bar--compact">
     <div class="fd-action-bar__header">
         <div class="fd-action-bar__back">
-            <button aria-label="Go Back" class="fd-button fd-button--transparent fd-button--compact">
+            <button aria-label="Go Back" class="fd-button fd-button--transparent">
                 <i role="presentation" class="sap-icon--navigation-left-arrow"></i>
             </button>
         </div>
@@ -208,8 +208,8 @@ export const ResponsiveL = () => `<div class="fd-action-bar fd-action-bar--m_l">
             <h1 class="fd-title fd-title--h3">Page Title</h1>
         </div>
         <div class="fd-action-bar__actions">
-            <button aria-label="button"class="fd-button fd-button--compact">Button</button>
-            <button aria-label="button"class="fd-button fd-button--compact fd-button--emphasized">Button</button>
+            <button aria-label="button"class="fd-button">Button</button>
+            <button aria-label="button"class="fd-button fd-button--emphasized">Button</button>
         </div>
     </div>
     <p class="fd-action-bar__description fd-action-bar__description--back">Action bar Description</p>
@@ -226,10 +226,10 @@ ResponsiveL.parameters = {
     }
 };
 
-export const ResponsiveXL = () => `<div class=" fd-action-bar fd-action-bar--xl">
+export const ResponsiveXL = () => `<div class=" fd-action-bar fd-action-bar--xl fd-action-bar--compact">
     <div class="fd-action-bar__header">
         <div class="fd-action-bar__back">
-            <button aria-label="Go Back" class="fd-button fd-button--transparent fd-button--compact">
+            <button aria-label="Go Back" class="fd-button fd-button--transparent">
                 <i role="presentation" class="sap-icon--navigation-left-arrow"></i>
             </button>
         </div>
@@ -237,8 +237,8 @@ export const ResponsiveXL = () => `<div class=" fd-action-bar fd-action-bar--xl"
             <h1 class="fd-title fd-title--h3">Page Title</h1>
         </div>
         <div class="fd-action-bar__actions">
-            <button aria-label="button"class="fd-button fd-button--compact">Button</button>
-            <button aria-label="button"class="fd-button fd-button--compact fd-button--emphasized">Button</button>
+            <button aria-label="button"class="fd-button">Button</button>
+            <button aria-label="button"class="fd-button fd-button--emphasized">Button</button>
         </div>
     </div>
     <p class="fd-action-bar__description fd-action-bar__description--back">Action bar Description </p>

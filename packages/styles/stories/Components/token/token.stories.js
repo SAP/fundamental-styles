@@ -242,71 +242,71 @@ To enable focus, the \`is-focus\` class must be added the container.
 
 export const CompactTokenizer = () => `<div class="fd-tokenizer fd-tokenizer--compact">
     <div class="fd-tokenizer__inner">
-        <span class="fd-token fd-token--compact" role="button" tabindex="0">
+        <span class="fd-token" role="button" tabindex="0">
             <span class="fd-token__text">
                 Bibendum
             </span>
             <button class="fd-token__close" tabindex="-1" aria-label="Token close"></button>
         </span>
-        <span class="fd-token fd-token--compact" role="button" tabindex="0">
+        <span class="fd-token" role="button" tabindex="0">
             <span class="fd-token__text">
                 Lorem
             </span>
             <button class="fd-token__close" tabindex="-1" aria-label="Token close"></button>
         </span>
-        <span class="fd-token fd-token--compact" role="button" tabindex="0">
+        <span class="fd-token" role="button" tabindex="0">
             <span class="fd-token__text">
                 Dolor
             </span>
             <button class="fd-token__close" tabindex="-1" aria-label="Token close"></button>
         </span>
-        <span class="fd-token fd-token--compact" role="button" tabindex="0">
+        <span class="fd-token" role="button" tabindex="0">
             <span class="fd-token__text">
                 Filter
             </span>
             <button class="fd-token__close" tabindex="-1" aria-label="Token close"></button>
         </span>
-        <span class="fd-token fd-token--readonly fd-token--compact">
+        <span class="fd-token fd-token--readonly">
             <span class="fd-token__text">
                 Lorem
             </span>
         </span>
-        <input class="fd-input fd-input--compact fd-tokenizer__input" aria-label="Tokenizer input"/>
+        <input class="fd-input fd-tokenizer__input" aria-label="Tokenizer input"/>
     </div>
 </div>
 <br/><br/>
 <div class="fd-tokenizer fd-tokenizer--compact is-focus">
     <div class="fd-tokenizer__inner">
-        <span class="fd-token fd-token--compact" role="button" tabindex="0">
+        <span class="fd-token" role="button" tabindex="0">
             <span class="fd-token__text">
                 Bibendum
             </span>
             <button class="fd-token__close" tabindex="-1" aria-label="Token close"></button>
         </span>
-        <span class="fd-token fd-token--compact" role="button" tabindex="0">
+        <span class="fd-token" role="button" tabindex="0">
             <span class="fd-token__text">
                 Lorem
             </span>
             <button class="fd-token__close" tabindex="-1" aria-label="Token close"></button>
         </span>
-        <span class="fd-token fd-token--compact" role="button" tabindex="0">
+        <span class="fd-token" role="button" tabindex="0">
             <span class="fd-token__text">
                 Dolor
             </span>
             <button class="fd-token__close" tabindex="-1" aria-label="Token close"></button>
         </span>
-        <span class="fd-token fd-token--compact" role="button" tabindex="0">
+        <span class="fd-token" role="button" tabindex="0">
             <span class="fd-token__text">
                 Filter
             </span>
             <button class="fd-token__close" tabindex="-1" aria-label="Token close"></button>
         </span>
-        <span class="fd-token fd-token--readonly fd-token--compact">
+        <span class="fd-token fd-token--readonly">
             <span class="fd-token__text">
                 Lorem
             </span>
         </span>
-        <input class="fd-input fd-input--compact fd-tokenizer__input" aria-label="Tokenizer input"/>
+        <input class="fd-input fd-tokenizer__input" aria-label="Tokenizer input"/>
     </div>
 </div>
 `;

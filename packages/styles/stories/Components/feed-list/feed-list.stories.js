@@ -248,21 +248,21 @@ export const WithActions = () => `<ul class="fd-feed-list" aria-label="Feed List
                         </button>
                     </div>
                     <div class="fd-popover__body fd-popover__body--compact fd-popover__body--right" aria-hidden="true" id="actionSheetDesktop">
-                        <ul class="fd-action-sheet fd-action-sheet--compact" role="list" aria-label="List of contextual options">
+                        <ul class="fd-action-sheet" role="list" aria-label="List of contextual options">
                             <li class="fd-action-sheet__item" role="listitem">
-                                <button class="fd-button fd-button--full-width fd-button--compact fd-button--transparent fd-button--text-alignment-left">
+                                <button class="fd-button fd-button--full-width fd-button--transparent fd-button--text-alignment-left">
                                     <i class="sap-icon--attachment"></i>
                                     <span class="fd-button__text">Button 1</span>
                                 </button>
                             </li>
                             <li class="fd-action-sheet__item" role="listitem">
-                                <button class="fd-button fd-button--full-width fd-button--compact fd-button--transparent fd-button--text-alignment-left">
+                                <button class="fd-button fd-button--full-width fd-button--transparent fd-button--text-alignment-left">
                                     <i class="sap-icon--add"></i>
                                     <span class="fd-button__text">Button 2</span>
                                 </button>
                             </li>
                             <li class="fd-action-sheet__item" role="listitem">
-                                <button class="fd-button fd-button--full-width fd-button--compact fd-button--transparent fd-button--text-alignment-left">
+                                <button class="fd-button fd-button--full-width fd-button--transparent fd-button--text-alignment-left">
                                     <i class="sap-icon--print"></i>
                                     <span class="fd-button__text">Button 3</span>
                                 </button>

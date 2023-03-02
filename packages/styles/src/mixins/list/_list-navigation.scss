@@ -5,38 +5,34 @@
     @include fd-list-reset-item-paddings();
 
     .#{$block}__link {
-      @include fd-set-paddings-x-equal($fd-list-item-padding-x);
+      @include fd-set-paddings-x(var(--fdList_Navigation_Link_Padding_Left, #{$fd-list-item-padding-x}), var(--fdList_Navigation_Link_Padding_Right, #{$fd-list-item-padding-x}));
     }
 
     &.#{$block}--unread-indicator {
-      .#{$block}__link {
-        @include fd-set-paddings-x($fd-list-unread-indicator-spacing, $fd-list-item-padding-x);
-      }
+      --fdList_Navigation_Link_Padding_Left: #{$fd-list-unread-indicator-spacing};
+      --fdList_Navigation_Link_Padding_Right: #{$fd-list-item-padding-x};
     }
 
     // NAVIGATION + Navigation Indication
     &.#{$block}--navigation-indication {
-      .#{$block}__link {
-        @include fd-set-paddings-x($fd-list-item-padding-x, 0);
-      }
+      --fdList_Navigation_Link_Padding_Left: #{$fd-list-item-padding-x};
+      --fdList_Navigation_Link_Padding_Right: 0;
     }
 
     // NAVIGATION + Selection
     &.#{$block}--selection {
       @include fd-list-reset-item-paddings();
 
-      .#{$block}__link {
-        @include fd-set-paddings-x($fd-list-selection-container-width, $fd-list-item-padding-x);
-      }
+      --fdList_Navigation_Link_Padding_Left: #{$fd-list-selection-container-width};
+      --fdList_Navigation_Link_Padding_Right: #{$fd-list-item-padding-x};
     }
 
     // NAVIGATION + SELECTION + Navigation Indication
     &.#{$block}--selection.#{$block}--navigation-indication {
       @include fd-list-reset-item-paddings();
 
-      .#{$block}__link {
-        @include fd-set-paddings-x($fd-list-selection-container-width, 0);
-      }
+      --fdList_Navigation_Link_Padding_Left: #{$fd-list-selection-container-width};
+      --fdList_Navigation_Link_Padding_Right: 0;
     }
 
     // NAVIGATION + Byline
@@ -44,23 +40,23 @@
     &.#{$block}--byline.#{$block}--compact {
       @include fd-list-reset-item-paddings();
 
+      --fdList_Navigation_Link_Padding_Left: #{$fd-list-byline-item-padding-x};
+      --fdList_Navigation_Link_Padding_Right: #{$fd-list-byline-item-padding-x};
+
       .#{$block}__link {
-        @include fd-set-paddings-x-equal($fd-list-byline-item-padding-x);
         @include fd-set-paddings-y-equal(1rem);
       }
 
       &.#{$block}--unread-indicator {
-        .#{$block}__link {
-          @include fd-set-paddings-x($fd-list-unread-indicator-spacing, $fd-list-byline-item-padding-x);
-        }
+        --fdList_Navigation_Link_Padding_Left: #{$fd-list-unread-indicator-spacing};
+        --fdList_Navigation_Link_Padding_Right: #{$fd-list-byline-item-padding-x};
       }
     }
 
     // NAVIGATION + BYLINE + Navigation Indication
     &.#{$block}--byline.#{$block}--navigation-indication {
-      .#{$block}__link {
-        @include fd-set-paddings-x($fd-list-item-padding-x, 0);
-      }
+      --fdList_Navigation_Link_Padding_Left: #{$fd-list-item-padding-x};
+      --fdList_Navigation_Link_Padding_Right: 0;
     }
 
     // NAVIGATION + BYLINE + Borderless
@@ -72,17 +68,14 @@
     &.#{$block}--byline.#{$block}--selection {
       @include fd-list-reset-item-paddings();
 
-      .#{$block}__link {
-        @include fd-set-paddings-x($fd-list-selection-container-width, $fd-list-byline-item-padding-x);
-      }
-    }
+      --fdList_Navigation_Link_Padding_Left: #{$fd-list-selection-container-width};
+      --fdList_Navigation_Link_Padding_Right: #{$fd-list-byline-item-padding-x};
 
-    // NAVIGATION + BYLINE + SELECTION + Compact
-    &.#{$block}--byline.#{$block}--selection.#{$block}--compact {
-      @include fd-list-reset-item-paddings();
+      @include fd-compact-or-condensed() {
+        @include fd-list-reset-item-paddings();
 
-      .#{$block}__link {
-        @include fd-set-paddings-x($fd-list-selection-container-width, $fd-list-byline-item-padding-x);
+        --fdList_Navigation_Link_Padding_Left: #{$fd-list-selection-container-width};
+        --fdList_Navigation_Link_Padding_Right: #{$fd-list-byline-item-padding-x};
       }
     }
 
@@ -96,15 +89,12 @@
     &.#{$block}--byline.#{$block}--selection.#{$block}--navigation-indication {
       @include fd-list-reset-item-paddings();
 
-      .#{$block}__link {
-        @include fd-set-paddings-x($fd-list-selection-container-width, 0);
-      }
-    }
+      --fdList_Navigation_Link_Padding_Left: #{$fd-list-selection-container-width};
+      --fdList_Navigation_Link_Padding_Right: 0;
 
-    // NAVIGATION + BYLINE + SELECTION + NAVIGATION INDICATION + Compact
-    &.#{$block}--byline.#{$block}--selection.#{$block}--navigation-indication.#{$block}--compact {
-      .#{$block}__link {
-        @include fd-set-paddings-x($fd-list-selection-container-width, 0);
+      @include fd-compact-or-condensed() {
+        --fdList_Navigation_Link_Padding_Left: #{$fd-list-selection-container-width};
+        --fdList_Navigation_Link_Padding_Right: 0;
       }
     }
 
@@ -117,12 +107,14 @@
     &.#{$block}--navigation-object {
       @include fd-list-reset-item-paddings();
 
+      --fdList_Navigation_Link_Padding_Left: #{$fd-list-byline-item-padding-x};
+      --fdList_Navigation_Link_Padding_Right: #{$fd-list-byline-item-padding-x};
+
       @include fd-rtl() {
         @include fd-list-reset-item-paddings();
       }
 
       .#{$block}__link {
-        @include fd-set-paddings-x($fd-list-byline-item-padding-x, $fd-list-byline-item-padding-x);
         @include fd-set-paddings-y-equal(1rem);
       }
     }

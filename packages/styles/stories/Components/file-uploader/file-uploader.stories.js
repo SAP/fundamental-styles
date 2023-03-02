@@ -67,7 +67,7 @@ Primary.parameters = {
     docs: {
         iframeHeight: 250,
         description: {
-            story: `File Uploader is a composition of the \`fd-input\` class and the \`fd-button\` one. The button triggers the action of searching for 
+            story: `File Uploader is a composition of the \`fd-input\` class and the \`fd-button\` one. The button triggers the action of searching for
             the file which needs to be uploaded. The input field shows the predetermined title i.e. Choose a file for upload.`
         }
     }
@@ -120,11 +120,11 @@ Selected.parameters = {
 
 export const Compact = () => `<div class="fd-form-item">
   <label class="fd-form-label" id="browse_input3_label" >Upload Document (Compact)</label>
-  <div class="fd-file-uploader" style="width: 300px;">
+  <div class="fd-file-uploader fd-file-uploader--compact" style="width: 300px;">
     <div class="fd-file-uploader__container">
         <input
         aria-labelledby="browse_input3_label"
-        class="fd-input fd-input--compact fd-file-uploader__input"
+        class="fd-input fd-file-uploader__input"
         onclick="browseFile('input2');"
         id="browse_input3"
         type="text"
@@ -133,7 +133,7 @@ export const Compact = () => `<div class="fd-form-item">
         autocomplete="off"
         >
         <button
-        class="fd-button fd-button--compact fd-file-uploader__button"
+        class="fd-button fd-file-uploader__button"
         onclick="browseFile('input2');"
         id="file-uploader-button-3"
         aria-label="Select a file for uploading">Browse...
@@ -161,11 +161,11 @@ Compact.parameters = {
 
 export const Status = () => `<div class="fd-form-item">
     <label class="fd-form-label" id="browse_input7_label">Upload Document (Success)</label>
-    <div class="fd-file-uploader" style="width: 300px;">
+    <div class="fd-file-uploader fd-file-uploader--compact" style="width: 300px;">
         <div class="fd-file-uploader__container">
             <input
                 aria-labelledby="browse_input7_label"
-                class="fd-input fd-input--compact fd-file-uploader__input is-success"
+                class="fd-input fd-file-uploader__input is-success"
                 onclick="browseFile('input2');"
                 id="browse_input7"
                 type="text"
@@ -174,7 +174,7 @@ export const Status = () => `<div class="fd-form-item">
                 autocomplete="off"
             >
             <button
-                class="fd-button fd-button--compact fd-file-uploader__button"
+                class="fd-button fd-file-uploader__button"
                 onclick="browseFile('input2');"
                 id="file-uploader-button-7"
                 aria-label="Select a file for uploading">Browse...
@@ -192,11 +192,11 @@ export const Status = () => `<div class="fd-form-item">
 </div>
 <br />
 <label class="fd-form-label" id="browse_input4_label">Upload Document (Error)</label>
-<div class="fd-file-uploader" style="width: 300px;">
+<div class="fd-file-uploader fd-file-uploader--compact" style="width: 300px;">
     <div class="fd-file-uploader__container">
         <input
             aria-labelledby="browse_input4_label"
-            class="fd-input fd-input--compact fd-file-uploader__input is-error"
+            class="fd-input fd-file-uploader__input is-error"
             onclick="browseFile('input2');"
             id="browse_input4"
             type="text"
@@ -205,7 +205,7 @@ export const Status = () => `<div class="fd-form-item">
             autocomplete="off"
         >
         <button
-            class="fd-button fd-button--compact fd-file-uploader__button"
+            class="fd-button fd-file-uploader__button"
             onclick="browseFile('input2');"
             id="file-uploader-button-4"
             aria-label="Select a file for uploading">Browse...
@@ -222,11 +222,11 @@ export const Status = () => `<div class="fd-form-item">
 </div>
 <br />
 <label class="fd-form-label" id="browse_input5_label">Upload Document (Warning)</label>
-<div class="fd-file-uploader" style="width: 300px;">
+<div class="fd-file-uploader fd-file-uploader--compact" style="width: 300px;">
     <div class="fd-file-uploader__container">
         <input
             aria-labelledby="browse_input5_label"
-            class="fd-input fd-input--compact fd-file-uploader__input is-warning"
+            class="fd-input fd-file-uploader__input is-warning"
             onclick="browseFile('input2');"
             id="browse_input5"
             type="text"
@@ -235,7 +235,7 @@ export const Status = () => `<div class="fd-form-item">
             autocomplete="off"
         >
         <button
-            class="fd-button fd-button--compact fd-file-uploader__button"
+            class="fd-button fd-file-uploader__button"
             onclick="browseFile('input2');"
             id="file-uploader-button-5"
             aria-label="Select a file for uploading">Browse...
@@ -252,11 +252,11 @@ export const Status = () => `<div class="fd-form-item">
 </div>
 <br />
 <label class="fd-form-label" id="browse_input6_label">Upload Document (Information)</label>
-<div class="fd-file-uploader" style="width: 300px;">
+<div class="fd-file-uploader fd-file-uploader--compact" style="width: 300px;">
     <div class="fd-file-uploader__container">
         <input
             aria-labelledby="browse_input6_label"
-            class="fd-input fd-input--compact fd-file-uploader__input is-information"
+            class="fd-input fd-file-uploader__input is-information"
             onclick="browseFile('input2');"
             id="browse_input3"
             type="text"
@@ -265,7 +265,7 @@ export const Status = () => `<div class="fd-form-item">
             autocomplete="off"
         >
         <button
-            class="fd-button fd-button--compact fd-file-uploader__button"
+            class="fd-button fd-file-uploader__button"
             onclick="browseFile('input2');"
             id="file-uploader-button-6"
             aria-label="Select a file for uploading">Browse...
@@ -323,7 +323,7 @@ export const FileUploaderWithFiles = () => `<div class="fd-form-item">
         </div>
         <div class="fd-file-uploader__hidden" aria-live="polite" aria-atomic="true"></div>
         <input aria-labelledby="browse_input1_label" hidden class="fd-file-uploader__hidden" type="file">
-        
+
         <div class="fd-file-uploader__uploaded-files">
             <h3 class="fd-file-uploader__label">File Selected:</h3>
             <ul class="fd-file-uploader__list">
@@ -381,10 +381,10 @@ export const FileUploaderWithFiles = () => `<div class="fd-form-item">
 
 <h3>Compact</h3>
 <div class="fd-form-item">
-    <div class="fd-file-uploader" style="width: 300px;">
+    <div class="fd-file-uploader fd-file-uploader--compact" style="width: 300px;">
         <div class="fd-file-uploader__container">
-            <input class="fd-input fd-input--compact fd-file-uploader__input" title="Select a file" type="text" autocomplete="off" placeholder="Select a file">
-            <button class="fd-button fd-button--compact" title="Browse for a file" aria-label="Select a file for uploading">
+            <input class="fd-input fd-file-uploader__input" title="Select a file" type="text" autocomplete="off" placeholder="Select a file">
+            <button class="fd-button" title="Browse for a file" aria-label="Select a file for uploading">
                 Browse...
             </button>
         </div>
@@ -400,10 +400,10 @@ export const FileUploaderWithFiles = () => `<div class="fd-form-item">
                         <span class="fd-object-status__text">Filename.format</span>
                     </span>
                     <div class="fd-file-uploader__actions">
-                        <button title="Download File" aria-label="Download" class="fd-button fd-button--compact fd-button--transparent">
+                        <button title="Download File" aria-label="Download" class="fd-button fd-button--transparent">
                             <i class="sap-icon--download"></i>
                         </button>
-                        <button title="Delete File" aria-label="Delete" class="fd-button fd-button--compact fd-button--transparent">
+                        <button title="Delete File" aria-label="Delete" class="fd-button fd-button--transparent">
                             <i class="sap-icon--decline"></i>
                         </button>
                     </div>
@@ -414,10 +414,10 @@ export const FileUploaderWithFiles = () => `<div class="fd-form-item">
                         <span class="fd-object-status__text">Filename.format</span>
                     </span>
                     <div class="fd-file-uploader__actions">
-                        <button title="Download File" aria-label="Download" class="fd-button fd-button--compact fd-button--transparent">
+                        <button title="Download File" aria-label="Download" class="fd-button fd-button--transparent">
                             <i class="sap-icon--download"></i>
                         </button>
-                        <button title="Delete File" aria-label="Delete" class="fd-button fd-button--compact fd-button--transparent">
+                        <button title="Delete File" aria-label="Delete" class="fd-button fd-button--transparent">
                             <i class="sap-icon--decline"></i>
                         </button>
                     </div>
