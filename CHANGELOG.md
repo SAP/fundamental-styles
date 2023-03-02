@@ -1,3 +1,18 @@
+# [0.28.0-rc.0](https://github.com/SAP/fundamental-styles/compare/v0.27.2-rc.0...v0.28.0-rc.0) (2023-03-02)
+
+
+### Features
+
+* **styles:** introduce compact mixin [ci visual] ([#4277](https://github.com/SAP/fundamental-styles/issues/4277)) ([5df9358](https://github.com/SAP/fundamental-styles/commit/5df93582054253c16f3e8b0df0c7ec93fa6d78da))
+
+
+### BREAKING CHANGES
+
+* **styles:** - Compact/Condensed modes can be applied on root level now;
+- If some component should have different content density than the parent one, provide `--compact`, `--condensed`, `--cozy` modifier to the element class.
+
+
+
 ## [0.27.2-rc.0](https://github.com/SAP/fundamental-styles/compare/v0.27.1...v0.27.2-rc.0) (2023-03-01)
 
 
