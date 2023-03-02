@@ -169,7 +169,7 @@ $fd-select-padding-x-compact: 0.5rem;
     display: var(--fdSelect_Text_Content_Display, inline-block);
   }
 
-  @include fd-compact-condensed() {
+  @include fd-compact-or-condensed() {
     margin: 0.1875rem 0;
     .#{$block}__control {
       height: $fd-form-input-height--compact;

@@ -248,7 +248,7 @@
     @include fd-set-margin-left(var(--fdList_Button_Spacing));
   }
 
-  @include fd-compact-condensed() {
+  @include fd-compact-or-condensed() {
     &:not(.#{$objectListBlock}):not(.#{$messageViewList}) {
 
       .#{$block}__item {

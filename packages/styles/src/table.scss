@@ -363,7 +363,7 @@ $table-z-index: (
     }
   }
 
-  @include fd-compact-condensed() {
+  @include fd-compact-or-condensed() {
     --fdTable_Header_Cell_Height: 2rem;
   }
 

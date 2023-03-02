@@ -71,7 +71,7 @@
       --fdList_Navigation_Link_Padding_Left: #{$fd-list-selection-container-width};
       --fdList_Navigation_Link_Padding_Right: #{$fd-list-byline-item-padding-x};
 
-      @include fd-compact-condensed() {
+      @include fd-compact-or-condensed() {
         @include fd-list-reset-item-paddings();
 
         --fdList_Navigation_Link_Padding_Left: #{$fd-list-selection-container-width};
@@ -92,7 +92,7 @@
       --fdList_Navigation_Link_Padding_Left: #{$fd-list-selection-container-width};
       --fdList_Navigation_Link_Padding_Right: 0;
 
-      @include fd-compact-condensed() {
+      @include fd-compact-or-condensed() {
         --fdList_Navigation_Link_Padding_Left: #{$fd-list-selection-container-width};
         --fdList_Navigation_Link_Padding_Right: 0;
       }

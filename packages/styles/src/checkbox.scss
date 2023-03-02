@@ -216,7 +216,7 @@ $block: #{$fd-namespace}-checkbox;
     }
   }
 
-  @include fd-compact-condensed() {
+  @include fd-compact-or-condensed() {
     @include fd-checkbox-label() {
       --fdCheckbox_Dimensions: var(--fdCheckbox_Compact_Dimensions);
       --fdCheckbox_Padding: var(--fdCheckbox_Compact_Padding);

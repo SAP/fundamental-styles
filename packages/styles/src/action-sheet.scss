@@ -61,7 +61,7 @@ $block: #{$fd-namespace}-action-sheet;
     color: var(--sapContent_ContrastTextColor);
   }
 
-  @include fd-compact-condensed() {
+  @include fd-compact-or-condensed() {
     --fdActionSheet_Padding: 0.1875rem 0.375rem;
     --fdActionSheet_Item_Padding: 0.1875rem 0;
   }

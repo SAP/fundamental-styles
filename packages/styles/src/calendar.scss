@@ -483,7 +483,7 @@ $fd-calendar-special-days: (
   }
 
   // CALENDAR COMPACT
-  @include fd-compact-condensed() {
+  @include fd-compact-or-condensed() {
     --fdCalendar_Width: #{$fd-calendar-width-compact};
     --fdCalendar_Padding: #{$fd-calendar-padding-compact};
     --fdCalendar_Item_Height: #{$fd-calendar-item-height-compact};

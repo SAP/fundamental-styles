@@ -1014,7 +1014,7 @@ $fd-icon-tab-bar-semantic-values: (
     }
   }
 
-  @include fd-compact-condensed() {
+  @include fd-compact-or-condensed() {
     --fdIconTabBar_Icon_Size: #{$fd-icon-tab-bar-icon-circle-size-compact};
     --fdIconTabBar_Icon_Font_Size: 1rem;
     --fdIcon_Tab_Bar_Container_Badge_Size: 0.375rem;
@@ -1072,7 +1072,7 @@ $fd-icon-tab-bar-semantic-values: (
       }
     }
 
-    @include fd-compact-condensed() {
+    @include fd-compact-or-condensed() {
       .#{$block}__container {
         .#{$block}__counter {
           @include fd-set-position-left($fd-icon-tab-bar-icon-circle-size-compact + $fd-icon-tab-bar-icon-spacing);
@@ -1146,7 +1146,7 @@ $fd-icon-tab-bar-semantic-values: (
       }
     }
 
-    @include fd-compact-condensed() {
+    @include fd-compact-or-condensed() {
       .#{$block}__details {
         @include fd-reset-paddings-y();
 
@@ -1210,7 +1210,7 @@ $fd-icon-tab-bar-semantic-values: (
       margin-top: 0.375rem;
     }
 
-    @include fd-compact-condensed() {
+    @include fd-compact-or-condensed() {
       .#{$block}__item:first-child {
         .#{$block}__tab {
           @include fd-set-paddings-y-equal($fd-icon-tab-bar-filter-container-top-offset-compact);

@@ -93,7 +93,7 @@ $fd-button-badge-spacing: 0.25rem;
     @include fd-set-margin-left(var(--fdButton_Badge_Margin_Left, 0));
   }
 
-  @include fd-compact-condensed() {
+  @include fd-compact-or-condensed() {
     --fdButton_Height: 1.625rem;
     --fdButton_Clickable_Height: 2rem;
     --fdButton_Padding_X: 0.5rem;

@@ -259,7 +259,7 @@ $block: #{$fd-namespace}-switch;
     }
   }
 
-  @include fd-compact-condensed() {
+  @include fd-compact-or-condensed() {
     --fdSwitch_Padding: var(--fdSwitch_Compact_Padding);
     --fdSwitch_Handle_Width: var(--fdSwitch_Compact_Handle_Width);
     --fdSwitch_Handle_Height: var(--fdSwitch_Compact_Handle_Height);
@@ -297,7 +297,7 @@ $block: #{$fd-namespace}-switch;
       --fdSwitch_Border_Color: var(--fdSwitch_Semantic_Success_Handle_Border_Color);
     }
 
-    @include fd-compact-condensed() {
+    @include fd-compact-or-condensed() {
       --fdSwitch_Width: var(--fdSwitch_Compact_Semantic_Width);
       --fdSwitch_Height: var(--fdSwitch_Compact_Semantic_Height);
 
@@ -327,7 +327,7 @@ $block: #{$fd-namespace}-switch;
     @include fd-rtl() {
       @include fd-slider-track-position(map-get($fd-switch-handle-offset, "semantic", "rtl", "off"), map-get($fd-switch-handle-offset, "semantic", "rtl", "on"));
 
-      @include fd-compact-condensed() {
+      @include fd-compact-or-condensed() {
         @include fd-slider-track-position(map-get($fd-switch-handle-offset, "compactSemantic", "rtl", "off"), map-get($fd-switch-handle-offset, "compactSemantic", "rtl", "on"));
       }
     }

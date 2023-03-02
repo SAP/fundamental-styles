@@ -306,7 +306,7 @@ $block: #{$fd-namespace}-menu;
     max-width: 100%;
   }
 
-  @include fd-compact-condensed() {
+  @include fd-compact-or-condensed() {
     --fdMenu_Icon_Before_Margin: 0 0 0 -0.5rem;
     --fdMenu_Icon_After_Margin: 0 -0.75rem 0 0;
     --fdMenu_Icon_Width: 2rem;

@@ -190,7 +190,7 @@ $block: #{$fd-namespace}-time;
     --fdTime_Item_Height: #{$fd-time-item-height};
   }
 
-  @include fd-compact-condensed() {
+  @include fd-compact-or-condensed() {
     --fdTime_Dropdown_Padding: #{$fd-time-dropdown-compact-padding};
     --fdTime_Item_Height: #{$fd-time-item-compact-height};
     --fdTime_Wrapper_Height: #{$fd-time-wrapper-compact-height};

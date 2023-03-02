@@ -797,7 +797,19 @@
 @mixin fd-compact() {
   @at-root {
     [class*="--compact"] &:not([class*="--cozy"]):not([class*="--condensed"]),
-    .is-compact &:not(.is-cozy):not(.is-condensed) &[class*="--compact"],
+    .is-compact &:not(.is-cozy):not(.is-condensed),
+    &[class*="--compact"],
+    &.is-compact {
+      @content;
+    }
+  }
+}
+
+@mixin fd-compact-and-condensed() {
+  @at-root {
+    [class*="--compact"] &:not([class*="--cozy"]),
+    .is-compact &:not(.is-cozy),
+    &[class*="--compact"],
     &.is-compact {
       @content;
     }
@@ -815,7 +827,7 @@
   }
 }
 
-@mixin fd-compact-condensed() {
+@mixin fd-compact-or-condensed() {
   @at-root {
     [class*="--condensed"] &:not([class*="--cozy"]),
     [class*="--compact"] &:not([class*="--cozy"]),
