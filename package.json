@@ -68,7 +68,7 @@
     "@sap-theming/theming-base-content": "11.1.49",
     "@storybook/addon-a11y": "6.5.13",
     "@storybook/addon-actions": "6.5.13",
-    "@storybook/addon-controls": "6.5.13",
+    "@storybook/addon-controls": "6.5.16",
     "@storybook/addon-cssresources": "6.2.9",
     "@storybook/addon-docs": "6.5.13",
     "@storybook/addon-links": "6.5.13",
