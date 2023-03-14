@@ -1,3 +1,12 @@
+# [0.28.0-rc.2](https://github.com/SAP/fundamental-styles/compare/v0.28.0-rc.1...v0.28.0-rc.2) (2023-03-14)
+
+
+### Features
+
+* **common-css:** add position to common CSS  ([#4337](https://github.com/SAP/fundamental-styles/issues/4337)) ([1eacc6a](https://github.com/SAP/fundamental-styles/commit/1eacc6aaaf70a858d39560870acee7a4cf41f7ae))
+
+
+
 # [0.28.0-rc.1](https://github.com/SAP/fundamental-styles/compare/v0.28.0-rc.0...v0.28.0-rc.1) (2023-03-07)
 
 
