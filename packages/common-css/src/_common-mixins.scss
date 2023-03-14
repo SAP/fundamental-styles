@@ -290,26 +290,18 @@ $sap-position-offset: top right bottom left;
   @content;
 }
 
-/// @param {Arglist} $args - Offsets
-/// @require {mixin} sap-position
 @mixin sap-position-absolute($args...) {
   @include sap-position(absolute, $args...);
 }
 
-/// @param {Arglist} $args - Offsets
-/// @require {mixin} sap-position
 @mixin sap-position-relative($args...) {
   @include sap-position(relative, $args...);
 }
 
-/// @param {Arglist} $args - Offsets
-/// @require {mixin} sap-position
 @mixin sap-position-fixed($args...) {
   @include sap-position(fixed, $args...);
 }
 
-/// @param {Arglist} $args - Offsets
-/// @require {mixin} sap-position
 @mixin sap-position-sticky($args...) {
   @include sap-position(sticky, $args...);
 }
