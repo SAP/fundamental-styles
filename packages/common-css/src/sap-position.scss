@@ -1,0 +1,26 @@
+@import 'common-settings';
+@import 'common-mixins';
+
+@each $type in $sap-position-types {
+  .#{$sap-namespace}-position-#{$type} {
+    @include sap-position(#{$type});
+  }
+}
+
+@each $offset in $sap-position-offset {
+  .#{$sap-namespace}-position-#{$offset}-0 {
+    #{$offset}: 0;
+  }
+}
+
+.#{$sap-namespace}-position-absolute-center {
+  @include sap-position-absolute-center();
+}
+
+.#{$sap-namespace}-position-absolute-center-x {
+  @include sap-position-absolute-center-x();
+}
+
+.#{$sap-namespace}-position-absolute-center-y {
+  @include sap-position-absolute-center-y();
+}
