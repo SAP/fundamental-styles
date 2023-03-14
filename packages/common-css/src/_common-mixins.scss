@@ -276,6 +276,69 @@ $sap-display-types: inline block contents flex grid inline-block inline-flex inl
   @content;
 }
 
+// position mixins
+$sap-position-types: static fixed absolute relative sticky inherit !default;
+$sap-position-offset: top right bottom left;
+
+@mixin sap-position($position, $top: null, $right: null, $bottom: null, $left: null) {
+  position: $position;
+  top: $top;
+  right: $right;
+  bottom: $bottom;
+  left: $left;
+
+  @content;
+}
+
+/// @param {Arglist} $args - Offsets
+/// @require {mixin} sap-position
+@mixin sap-position-absolute($args...) {
+  @include sap-position(absolute, $args...);
+}
+
+/// @param {Arglist} $args - Offsets
+/// @require {mixin} sap-position
+@mixin sap-position-relative($args...) {
+  @include sap-position(relative, $args...);
+}
+
+/// @param {Arglist} $args - Offsets
+/// @require {mixin} sap-position
+@mixin sap-position-fixed($args...) {
+  @include sap-position(fixed, $args...);
+}
+
+/// @param {Arglist} $args - Offsets
+/// @require {mixin} sap-position
+@mixin sap-position-sticky($args...) {
+  @include sap-position(sticky, $args...);
+}
+
+@mixin sap-position-absolute-center() {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  @content;
+}
+
+@mixin sap-position-absolute-center-x() {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+
+  @content;
+}
+
+@mixin sap-position-absolute-center-y() {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+
+  @content;
+}
+
 // border-radius
 $sap-corner-border-radius: (
   "element": var(--sapElement_BorderCornerRadius),
