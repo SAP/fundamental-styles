@@ -124,7 +124,7 @@ library. After adding fonts and icons to your project, include the following in 
 
 @font-face {
     font-family: 'BusinessSuiteInAppSymbols';
-    src: url('~@sap-theming/theming-base-content/content/Base/baseLib/baseTheme/fonts/BusinessSuiteInAppSymbols.woff') format('woff');
+    src: url('~@sap-theming/theming-base-content/content/Base/baseLib/sap_horizon/fonts/BusinessSuiteInAppSymbols.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
