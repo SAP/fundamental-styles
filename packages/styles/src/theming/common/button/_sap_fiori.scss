@@ -3,7 +3,7 @@
   --fdButton_Emphasized_Active_Outline: var(--sapContent_ContrastFocusColor);
   --fdButton_Ghost_Background: var(--sapButton_Lite_Background);
   --fdButton_Outline_Contrast: var(--sapContent_ContrastFocusColor);
-  --fdButton_Outline_Offset: -0.1875rem;
+  --fdButton_Outline_Offset: var(--sapButton_BorderWidth);
   --fdButton_Font_Family: var(--sapFontFamily);
 
   /** Shadows */
@@ -21,6 +21,10 @@
   --fdButton_Border_Radius_Left_RTL: 0 var(--sapButton_BorderCornerRadius) var(--sapButton_BorderCornerRadius) 0;
   --fdButton_Border_Radius_Right: 0 var(--sapButton_BorderCornerRadius) var(--sapButton_BorderCornerRadius) 0;
   --fdButton_Border_Radius_Right_RTL: var(--sapButton_BorderCornerRadius) 0 0 var(--sapButton_BorderCornerRadius);
+  --fdButton_Border_Radius_Outline_Left: var(--sapButton_BorderCornerRadius) 0 0 var(--sapButton_BorderCornerRadius);
+  --fdButton_Border_Radius_Outline_Left_RTL: 0 var(--sapButton_BorderCornerRadius) var(--sapButton_BorderCornerRadius) 0;
+  --fdButton_Border_Radius_Outline_Right: 0 var(--sapButton_BorderCornerRadius) var(--sapButton_BorderCornerRadius) 0;
+  --fdButton_Border_Radius_Outline_Right_RTL: var(--sapButton_BorderCornerRadius) 0 0 var(--sapButton_BorderCornerRadius);
 
   /** Segmented */
   --fdButton_Segmented_Pad_Display: none;
