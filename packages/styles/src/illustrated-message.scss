@@ -17,6 +17,13 @@ $block: #{$fd-namespace}-illustrated-message;
   --textMarginBottom: 0.5rem;
   --actionsMargin: 1rem 0;
 
+  @mixin fd-illustrated-message-truncate() {
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
   @include fd-reset();
 
   @include fd-flex(column) {
@@ -59,9 +66,9 @@ $block: #{$fd-namespace}-illustrated-message;
 
   &__title {
     @include fd-reset();
-    @include fd-ellipsis();
 
     width: 100%;
+    overflow: hidden;
     text-align: center;
     font-size: var(--titleFontSize);
     max-height: var(--titleMaxHeight);
@@ -69,15 +76,34 @@ $block: #{$fd-namespace}-illustrated-message;
     color: var(--sapGroup_TitleTextColor);
     margin-bottom: var(--titleMarginBottom);
     font-family: var(--sapFontHeaderFamily);
+
+    &--auto-height {
+      overflow: visible;
+      max-height: initial;
+    }
+
+    &--truncate {
+      @include fd-ellipsis();
+    }
   }
 
   &__text {
     @include fd-reset();
 
+    overflow: hidden;
     text-align: center;
     max-height: var(--textMaxHeight);
     max-width: var(--figcaptionMaxWidth);
     margin-bottom: var(--textMarginBottom);
+
+    &--auto-height {
+      overflow: visible;
+      max-height: initial;
+    }
+
+    &--truncate {
+      @include fd-illustrated-message-truncate();
+    }
   }
 
   &__actions {
