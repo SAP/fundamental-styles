@@ -133,7 +133,7 @@
     "sass": "1.52.1",
     "semver": "^7.3.7",
     "standard-version": "9.3.2",
-    "start-server-and-test": "^1.14.0",
+    "start-server-and-test": "^2.0.0",
     "story-description-loader": "^1.0.0",
     "stylelint": "^13.13.1",
     "stylelint-config-standard": "^22.0.0",
