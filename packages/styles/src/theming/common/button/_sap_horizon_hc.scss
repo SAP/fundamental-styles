@@ -11,13 +11,18 @@
   --fdButton_Menu_Separator_Display: none;
   --fdButton_Menu_Offset: calc(var(--sapButton_BorderWidth) * -1);
   --fdButton_Menu_Emphasized_Margin: calc(var(--fdButton_Emphasized_Border_Width) * -1);
+  --fdButton_Menu_Transparent_Separator_Display: none;
 
   /** Segmented */
   --fdButton_Segmented_Pad_Display: none;
   --fdButton_Segmented_Border_Offset: calc(var(--sapButton_BorderWidth) * -1);
   --fdButton_Border_Radius_Left: var(--sapButton_BorderCornerRadius) 0 0 var(--sapButton_BorderCornerRadius);
   --fdButton_Border_Radius_Left_RTL: 0 var(--sapButton_BorderCornerRadius) var(--sapButton_BorderCornerRadius) 0;
-  --fdButton_Segmented_Middle_Border_Radius: 0 0 0 0;
   --fdButton_Border_Radius_Right: 0 var(--sapButton_BorderCornerRadius) var(--sapButton_BorderCornerRadius) 0;
   --fdButton_Border_Radius_Right_RTL: var(--sapButton_BorderCornerRadius) 0 0 var(--sapButton_BorderCornerRadius);
+  --fdButton_Border_Radius_Outline_Left: var(--sapButton_BorderCornerRadius) 0 0 var(--sapButton_BorderCornerRadius);
+  --fdButton_Border_Radius_Outline_Left_RTL: 0 var(--sapButton_BorderCornerRadius) var(--sapButton_BorderCornerRadius) 0;
+  --fdButton_Segmented_Middle_Border_Radius: 0 0 0 0;
+  --fdButton_Border_Radius_Outline_Right: 0 var(--sapButton_BorderCornerRadius) var(--sapButton_BorderCornerRadius) 0;
+  --fdButton_Border_Radius_Outline_Right_RTL: var(--sapButton_BorderCornerRadius) 0 0 var(--sapButton_BorderCornerRadius);
 }

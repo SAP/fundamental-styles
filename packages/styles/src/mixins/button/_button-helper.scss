@@ -4,15 +4,26 @@
 $block-button: #{$fd-namespace}-button;
 $block-button-toggled: #{$block-button}--toggled;
 
-@mixin fd-button-focus($fd-button-outline-offset: -0.1875rem) {
-  outline: var(--sapContent_FocusWidth) var(--sapContent_FocusStyle) var(--sapContent_FocusColor);
-  outline-offset: $fd-button-outline-offset;
+@mixin fd-button-focus($fd-button-fake-outline-offset: 0.0625rem) {
+  outline: none;
 
-  @content;
+  &::after {
+    content: '';
+    position: absolute;
+    display: block;
+    border: var(--sapContent_FocusWidth) var(--sapContent_FocusStyle) var(--sapContent_FocusColor);
+    top: $fd-button-fake-outline-offset;
+    left: $fd-button-fake-outline-offset;
+    right: $fd-button-fake-outline-offset;
+    bottom: $fd-button-fake-outline-offset;
+    border-radius: calc(var(--sapButton_BorderCornerRadius) - var(--sapContent_FocusWidth));
+  }
 
   &.#{$block-button-toggled},
   &.is-selected {
-    outline-color: var(--fdButton_Outline_Contrast);
+    &::after {
+      border-color: var(--fdButton_Outline_Contrast);
+    }
   }
 }
 

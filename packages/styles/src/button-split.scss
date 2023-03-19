@@ -41,31 +41,22 @@ $split-button-states: (
   )
 );
 
-@mixin fd-split-button-separator($display, $background) {
-  &:first-of-type:hover + button::after {
-    display: none;
-  }
+.#{$block} {
+  --fdButtonSplit_Separator_Offset: 2.125rem;
 
-  &:nth-of-type(2) {
-    position: relative;
-
+  @mixin fd-split-button-separator($display, $background) {
     &::after {
       content: "";
       display: $display;
       position: absolute;
       top: 50%;
-      left: -0.0625rem;
+      right: var(--fdButtonSplit_Separator_Offset);
       width: var(--sapButton_BorderWidth);
       height: var(--fdButton_Menu_Transparent_Separator_Height);
       background: $background;
       transform: translate(0, -50%);
-    }
-
-    @include fd-rtl() {
-      &::after {
-        left: auto;
-        right: -0.0625rem;
-      }
+      margin: 0 0.125rem;
+      z-index: 10;
     }
 
     @include fd-hover() {
@@ -74,15 +65,14 @@ $split-button-states: (
       }
     }
 
-    @include fd-active() {
+    @include fd-rtl() {
       &::after {
-        display: none;
+        right: auto;
+        left: var(--fdButtonSplit_Separator_Offset);
       }
     }
   }
-}
 
-.#{$block} {
   @include fd-reset();
   @include fd-button-pad();
 
@@ -90,9 +80,9 @@ $split-button-states: (
   vertical-align: middle;
   position: relative;
 
-  > button {
-    @include fd-split-button-separator(var(--fdButton_Menu_Separator_Display), var(--sapButton_TextColor));
+  @include fd-split-button-separator(var(--fdButton_Menu_Separator_Display), var(--sapButton_TextColor));
 
+  > button {
     margin: 0;
 
     &:first-of-type {
@@ -102,16 +92,40 @@ $split-button-states: (
       justify-content: flex-start;
       border-radius: var(--fdButton_Border_Radius_Left);
 
+      @include fd-focus() {
+        &::after {
+          border-radius: var(--fdButton_Border_Radius_Outline_Left);
+        }
+      }
+
       @include fd-rtl() {
         border-radius: var(--fdButton_Border_Radius_Left_RTL);
+
+        @include fd-focus() {
+          &::after {
+            border-radius: var(--fdButton_Border_Radius_Outline_Left_RTL);
+          }
+        }
       }
     }
 
     &:nth-of-type(2) {
       border-radius: var(--fdButton_Border_Radius_Right);
 
+      @include fd-focus() {
+        &::after {
+          border-radius: var(--fdButton_Border_Radius_Outline_Right);
+        }
+      }
+
       @include fd-rtl() {
         border-radius: var(--fdButton_Border_Radius_Right_RTL);
+
+        @include fd-focus() {
+          &::after {
+            border-radius: var(--fdButton_Border_Radius_Outline_Right_RTL);
+          }
+        }
       }
     }
 
@@ -123,10 +137,7 @@ $split-button-states: (
   @each $set-name, $props-set in $split-button-states {
     &--#{$set-name} {
       @include fd-button-pad(map_get($props-set, "padBackground"));
-
-      > button {
-        @include fd-split-button-separator(map_get($props-set, "separatorDisplay"), map_get($props-set, "separatorBackground"));
-      }
+      @include fd-split-button-separator(map_get($props-set, "separatorDisplay"), map_get($props-set, "separatorBackground"));
     }
   }
 
@@ -149,5 +160,6 @@ $split-button-states: (
 
   @include fd-compact-or-condensed() {
     --fdButtonSplit_Text_Max_Width: 9rem;
+    --fdButtonSplit_Separator_Offset: 1.875rem;
   }
 }

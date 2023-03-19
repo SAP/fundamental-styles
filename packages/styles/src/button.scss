@@ -80,6 +80,7 @@ $fd-button-badge-spacing: 0.25rem;
     @include fd-inline-flex-center();
     @include fd-set-position-right(-$fd-button-badge-spacing);
 
+    z-index: 1;
     height: 1rem;
     position: var(--fdButton_Badge_Position, absolute);
     padding: 0 0.3125rem;
