@@ -1,3 +1,12 @@
+# [0.28.0-rc.4](https://github.com/SAP/fundamental-styles/compare/v0.28.0-rc.3...v0.28.0-rc.4) (2023-03-19)
+
+
+### Bug Fixes
+
+* **styles:** add fix for button outline in Safari [ci visual] ([#4341](https://github.com/SAP/fundamental-styles/issues/4341)) ([e6ab593](https://github.com/SAP/fundamental-styles/commit/e6ab593573b388b3e0e80aadd94d7d1cf5f3d07e))
+
+
+
 # [0.28.0-rc.3](https://github.com/SAP/fundamental-styles/compare/v0.28.0-rc.2...v0.28.0-rc.3) (2023-03-15)
 
 
