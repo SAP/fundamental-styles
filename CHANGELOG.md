@@ -1,3 +1,12 @@
+# [0.28.0-rc.6](https://github.com/SAP/fundamental-styles/compare/v0.28.0-rc.5...v0.28.0-rc.6) (2023-03-20)
+
+
+### Bug Fixes
+
+* **styles:** remove max height and truncation from texts in Illustrated Messages [ci visual] ([#4353](https://github.com/SAP/fundamental-styles/issues/4353)) ([5760b57](https://github.com/SAP/fundamental-styles/commit/5760b570d86f8540bb1f9c4e6c6cd0d314bd96a5))
+
+
+
 # [0.28.0-rc.5](https://github.com/SAP/fundamental-styles/compare/v0.28.0-rc.4...v0.28.0-rc.5) (2023-03-20)
 
 
