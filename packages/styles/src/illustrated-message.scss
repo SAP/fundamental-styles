@@ -11,9 +11,7 @@ $block: #{$fd-namespace}-illustrated-message;
   --illustrationMargin: 2rem 0;
   --figcaptionMaxWidth: 25rem;
   --titleMarginBottom: 1rem;
-  --titleMaxHeight: 2.875rem;
   --titleFontSize: var(--sapFontHeader2Size);
-  --textMaxHeight: 5.625rem;
   --textMarginBottom: 0.5rem;
   --actionsMargin: 1rem 0;
 
@@ -59,12 +57,10 @@ $block: #{$fd-namespace}-illustrated-message;
 
   &__title {
     @include fd-reset();
-    @include fd-ellipsis();
 
     width: 100%;
     text-align: center;
     font-size: var(--titleFontSize);
-    max-height: var(--titleMaxHeight);
     max-width: var(--figcaptionMaxWidth);
     color: var(--sapGroup_TitleTextColor);
     margin-bottom: var(--titleMarginBottom);
@@ -75,7 +71,6 @@ $block: #{$fd-namespace}-illustrated-message;
     @include fd-reset();
 
     text-align: center;
-    max-height: var(--textMaxHeight);
     max-width: var(--figcaptionMaxWidth);
     margin-bottom: var(--textMarginBottom);
   }
@@ -113,8 +108,6 @@ $block: #{$fd-namespace}-illustrated-message;
     --illustrationH: 8rem;
     --illustrationMargin: 0 0 0.5rem 0;
     --actionsMargin: 0.5rem 0;
-    --textMaxHeight: 5rem;
-    --titleMaxHeight: 2.5rem;
     --titleMarginBottom: 0.5rem;
     --titleFontSize: var(--sapFontHeader4Size);
   }
@@ -125,8 +118,6 @@ $block: #{$fd-namespace}-illustrated-message;
     --illustrationH: 2.813rem;
     --illustrationMargin: 0;
     --textMarginBottom: 0.313rem;
-    --textMaxHeight: 5rem;
-    --titleMaxHeight: 2.5rem;
     --titleMarginBottom: 0.25rem;
     --titleFontSize: var(--sapFontHeader5Size);
     --actionsMargin: 0.25rem 0;
