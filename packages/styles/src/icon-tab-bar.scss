@@ -346,9 +346,7 @@ $fd-icon-tab-bar-semantic-values: (
       }
 
       .#{$block}__tab {
-        @include fd-selected() {
-          @include fd-set-paddings-x(0.188rem, 2.188rem);
-        }
+        @include fd-set-paddings-x(0.188rem, 2.188rem);
 
         .#{$block}__badge {
           @include fd-set-position-right(1.625rem);

@@ -13968,12 +13968,12 @@ exports[`Check stories > Components/Icon Tab Bar > Story Navigation > Should mat
     <div class=\\"fd-icon-tab-bar fd-icon-tab-bar--navigation fd-icon-tab-bar--md\\">
         <ul role=\\"tablist\\" class=\\"fd-icon-tab-bar__header\\">
             <li role=\\"presentation\\" class=\\"fd-icon-tab-bar__item\\">
-                <a role=\\"tab\\" class=\\"fd-icon-tab-bar__tab\\" href=\\"#\\" id=\\"tab4\\">
+                <a role=\\"tab\\" class=\\"fd-icon-tab-bar__tab\\" href=\\"#\\" id=\\"tabA1\\">
                     <span class=\\"fd-icon-tab-bar__tag\\">Section 1</span>
                 </a>
             </li>
             <li role=\\"presentation\\" class=\\"fd-icon-tab-bar__item fd-icon-tab-bar__item--multi-click\\">
-                <a role=\\"tab\\" class=\\"fd-icon-tab-bar__tab\\" aria-selected=\\"true\\" id=\\"tab5\\" tabindex=\\"0\\">
+                <a role=\\"tab\\" class=\\"fd-icon-tab-bar__tab\\" id=\\"tabA2\\" tabindex=\\"0\\">
                     <span class=\\"fd-icon-tab-bar__tag\\">Section 2</span>
                 </a>
 
@@ -14002,8 +14002,48 @@ exports[`Check stories > Components/Icon Tab Bar > Story Navigation > Should mat
                 </div>
             </li>
             <li role=\\"presentation\\" class=\\"fd-icon-tab-bar__item\\">
-                <a role=\\"tab\\" class=\\"fd-icon-tab-bar__tab\\" href=\\"#\\" id=\\"tab6\\">
+                <a role=\\"tab\\" class=\\"fd-icon-tab-bar__tab\\" href=\\"#\\" id=\\"tabA3\\">
                     <span class=\\"fd-icon-tab-bar__tag\\">Section 3</span>
+                </a>
+            </li>
+            <li role=\\"presentation\\" class=\\"fd-icon-tab-bar__item fd-icon-tab-bar__item--multi-click\\">
+                <a role=\\"tab\\" class=\\"fd-icon-tab-bar__tab\\" id=\\"tabA4\\" tabindex=\\"0\\">
+                    <span class=\\"fd-icon-tab-bar__tag\\">Section 4</span>
+                </a>
+
+                <div class=\\"fd-popover fd-icon-tab-bar__popover\\">
+                    <div class=\\"fd-popover__control\\">
+                        <div class=\\"fd-icon-tab-bar__button-container\\">
+                            <button class=\\"fd-button fd-button--transparent fd-button--compact  fd-icon-tab-bar__button\\" aria-controls=\\"popoverAaC\\" aria-expanded=\\"false\\" aria-haspopup=\\"true\\" onclick=\\"onPopoverClick('popoverAaC');\\" aria-label=\\"open menu button\\">
+                                <i class=\\"sap-icon--slim-arrow-down\\"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li role=\\"presentation\\" class=\\"fd-icon-tab-bar__item\\">
+                <a role=\\"tab\\" class=\\"fd-icon-tab-bar__tab\\" href=\\"#\\" id=\\"tabA5\\">
+                    <span class=\\"fd-icon-tab-bar__tag\\">Section 5</span>
+                </a>
+            </li>
+            <li role=\\"presentation\\" class=\\"fd-icon-tab-bar__item fd-icon-tab-bar__item--multi-click\\">
+                <a role=\\"tab\\" class=\\"fd-icon-tab-bar__tab\\" aria-selected=\\"true\\" id=\\"tabA6\\" tabindex=\\"0\\">
+                    <span class=\\"fd-icon-tab-bar__tag\\">Section 6</span>
+                </a>
+
+                <div class=\\"fd-popover fd-icon-tab-bar__popover\\">
+                    <div class=\\"fd-popover__control\\">
+                        <div class=\\"fd-icon-tab-bar__button-container\\">
+                            <button class=\\"fd-button fd-button--transparent fd-button--compact  fd-icon-tab-bar__button\\" aria-controls=\\"popoverAa1\\" aria-expanded=\\"false\\" aria-haspopup=\\"true\\" onclick=\\"onPopoverClick('popoverAa1');\\" aria-label=\\"open menu button\\">
+                                <i class=\\"sap-icon--slim-arrow-down\\"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li role=\\"presentation\\" class=\\"fd-icon-tab-bar__item\\">
+                <a role=\\"tab\\" class=\\"fd-icon-tab-bar__tab\\" href=\\"#\\" id=\\"tab6\\">
+                    <span class=\\"fd-icon-tab-bar__tag\\">Section 7</span>
                 </a>
             </li>
         </ul>
