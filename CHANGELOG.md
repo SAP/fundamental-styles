@@ -1,3 +1,12 @@
+# [0.28.0-rc.5](https://github.com/SAP/fundamental-styles/compare/v0.28.0-rc.4...v0.28.0-rc.5) (2023-03-20)
+
+
+### Bug Fixes
+
+* **styles:** add fix for multi click Icon Tab Bar [ci visual] ([#4352](https://github.com/SAP/fundamental-styles/issues/4352)) ([7f41707](https://github.com/SAP/fundamental-styles/commit/7f417070ed952bc5b8dd97e813d481dccab869f0))
+
+
+
 # [0.28.0-rc.4](https://github.com/SAP/fundamental-styles/compare/v0.28.0-rc.3...v0.28.0-rc.4) (2023-03-19)
 
 
