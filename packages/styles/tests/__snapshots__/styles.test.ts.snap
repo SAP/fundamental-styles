@@ -1,5 +1,88 @@
 // Vitest Snapshot v1
 
+exports[`Check stories > BTP/Avatar > Story AccentColors > Should match snapshot 1`] = `
+"
+<span class=\\"fd-avatar fd-avatar--accent-color-1 fd-avatar--40\\" aria-label=\\"Avatar\\">
+    <i class=\\"fd-avatar__icon sap-icon--money-bills\\" role=\\"presentation\\"></i>
+</span>
+<span class=\\"fd-avatar fd-avatar--accent-color-2 fd-avatar--40\\" aria-label=\\"Avatar\\">
+    <i class=\\"fd-avatar__icon sap-icon--money-bills\\" role=\\"presentation\\"></i>
+</span>
+<span class=\\"fd-avatar fd-avatar--accent-color-3 fd-avatar--40\\" aria-label=\\"Avatar\\">
+    <i class=\\"fd-avatar__icon sap-icon--money-bills\\" role=\\"presentation\\"></i>
+</span>
+<span class=\\"fd-avatar fd-avatar--accent-color-4 fd-avatar--40\\" aria-label=\\"Avatar\\">
+    <i class=\\"fd-avatar__icon sap-icon--money-bills\\" role=\\"presentation\\"></i>
+</span>
+<span class=\\"fd-avatar fd-avatar--accent-color-5 fd-avatar--40\\" aria-label=\\"Avatar\\">
+    <i class=\\"fd-avatar__icon sap-icon--money-bills\\" role=\\"presentation\\"></i>
+</span>
+<span class=\\"fd-avatar fd-avatar--accent-color-6 fd-avatar--96\\" aria-label=\\"Avatar\\">
+    <i class=\\"fd-avatar__icon sap-icon--money-bills\\" role=\\"presentation\\"></i>
+</span>
+<span class=\\"fd-avatar fd-avatar--accent-color-7 fd-avatar--96\\" aria-label=\\"Avatar\\">
+    <i class=\\"fd-avatar__icon sap-icon--money-bills\\" role=\\"presentation\\"></i>
+</span>
+<span class=\\"fd-avatar fd-avatar--accent-color-8 fd-avatar--96\\" aria-label=\\"Avatar\\">
+    <i class=\\"fd-avatar__icon sap-icon--money-bills\\" role=\\"presentation\\"></i>
+</span>
+<span class=\\"fd-avatar fd-avatar--accent-color-9 fd-avatar--96\\" aria-label=\\"Avatar\\">
+    <i class=\\"fd-avatar__icon sap-icon--money-bills\\" role=\\"presentation\\"></i>
+</span>
+<span class=\\"fd-avatar fd-avatar--accent-color-10 fd-avatar--96\\" aria-label=\\"Avatar\\">
+    <i class=\\"fd-avatar__icon sap-icon--money-bills\\" role=\\"presentation\\"></i>
+</span>
+"
+`;
+
+exports[`Check stories > BTP/Avatar > Story BackgroundImage > Should match snapshot 1`] = `
+"
+<span class=\\"fd-avatar fd-avatar--40 fd-avatar--circle fd-avatar--thumbnail\\" style=\\"background-image: url('/assets/images/portraits/L_80x80_M1.png')\\" role=\\"img\\" aria-label=\\"John Doe\\"></span>
+
+<span class=\\"fd-avatar fd-avatar--96 fd-avatar--circle fd-avatar--thumbnail\\" style=\\"background-image: url('/assets/images/portraits/L_80x80_F3.png')\\" role=\\"img\\" aria-label=\\"John Doe\\"></span>
+
+"
+`;
+
+exports[`Check stories > BTP/Avatar > Story Circle > Should match snapshot 1`] = `
+"
+<span class=\\"fd-avatar fd-avatar--40 fd-avatar--circle\\" aria-label=\\"Avatar\\">
+    <i class=\\"fd-avatar__icon sap-icon--money-bills\\" role=\\"presentation\\"></i>
+</span>
+
+<span class=\\"fd-avatar fd-avatar--96 fd-avatar--circle\\" aria-label=\\"Wendy Wallace\\">AlK</span>
+"
+`;
+
+exports[`Check stories > BTP/Avatar > Story Icon > Should match snapshot 1`] = `
+"
+<span class=\\"fd-avatar fd-avatar--40\\" role=\\"presentation\\">
+    <i role=\\"presentation\\" class=\\"fd-avatar__icon sap-icon--washing-machine\\"></i>
+</span>
+<span class=\\"fd-avatar fd-avatar--96\\" role=\\"presentation\\">
+    <i role=\\"presentation\\" class=\\"fd-avatar__icon sap-icon--washing-machine\\"></i>
+</span>
+
+"
+`;
+
+exports[`Check stories > BTP/Avatar > Story Initials > Should match snapshot 1`] = `
+"
+<span class=\\"fd-avatar fd-avatar--40 fd-avatar--accent-color-1\\" aria-label=\\"Wendy Wallace\\">AlK</span>
+<span class=\\"fd-avatar fd-avatar--96 fd-avatar--accent-color-2\\" aria-label=\\"Wendy Wallace\\">AlK</span>
+"
+`;
+
+exports[`Check stories > BTP/Avatar > Story Transparent > Should match snapshot 1`] = `
+"
+<span class=\\"fd-avatar fd-avatar--40 fd-avatar--circle fd-avatar--transparent\\" aria-label=\\"Avatar\\">
+    <i class=\\"fd-avatar__icon sap-icon--money-bills\\" role=\\"presentation\\"></i>
+</span>
+
+<span class=\\"fd-avatar fd-avatar--96 fd-avatar--circle fd-avatar--transparent\\" aria-label=\\"Wendy Wallace\\">WW</span>
+"
+`;
+
 exports[`Check stories > Components/Action Bar > Story Actions > Should match snapshot 1`] = `
 "<div class=\\"fd-action-bar fd-action-bar--compact\\">
     <div class=\\"fd-action-bar__header\\">
