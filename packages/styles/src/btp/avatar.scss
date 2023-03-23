@@ -1,0 +1,30 @@
+@import "../mixins/mixins";
+@import "../avatar-variables";
+@import "../avatar.scss";
+
+$block: #{$fd-namespace}-avatar;
+
+@mixin fd-avatar-new-size-type($size, $font-size, $icon-size) {
+  @include fd-reset-spacing();
+  @include fd-inline-flex-center();
+  @include fd-avatar-set-size($size);
+
+  font-size: $font-size;
+  font-family: var(--sapFontSemiboldDuplexFamily);
+
+  .#{$block}__icon {
+    @include fd-icon-element-base() {
+      font-size: $icon-size;
+    }
+  }
+}
+
+.#{$block} {
+  &--40 {
+    @include fd-avatar-new-size-type(2.5rem, 1rem, 1.25rem);
+  }
+
+  &--96 {
+    @include fd-avatar-new-size-type(6rem, 2.375rem, 3rem);
+  }
+}

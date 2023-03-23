@@ -1,3 +1,12 @@
+# [0.28.0-rc.7](https://github.com/SAP/fundamental-styles/compare/v0.28.0-rc.6...v0.28.0-rc.7) (2023-03-23)
+
+
+### Features
+
+* **styles:** add BTP avatar extension [ci visual] ([#4355](https://github.com/SAP/fundamental-styles/issues/4355)) ([115371c](https://github.com/SAP/fundamental-styles/commit/115371c597eebfd1a216a502fca031b4bc66a993))
+
+
+
 # [0.28.0-rc.6](https://github.com/SAP/fundamental-styles/compare/v0.28.0-rc.5...v0.28.0-rc.6) (2023-03-20)
 
 
