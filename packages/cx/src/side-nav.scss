@@ -111,6 +111,11 @@ $fd-side-nav-border-radius: 1rem;
     --fdSideNav_Utility_Margin_Bottom: 0.75rem;
   }
 
+  &--mobile {
+    width: 100%;
+    border-radius: 0;
+  }
+
   &--narrow {
     width: 4rem;
 
