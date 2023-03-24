@@ -1,3 +1,12 @@
+# [0.28.0-rc.8](https://github.com/SAP/fundamental-styles/compare/v0.28.0-rc.7...v0.28.0-rc.8) (2023-03-24)
+
+
+### Bug Fixes
+
+* **styles:** add --mobile class to CX side nav [ci visual] ([#4354](https://github.com/SAP/fundamental-styles/issues/4354)) ([dd004e6](https://github.com/SAP/fundamental-styles/commit/dd004e6ed9c62efea4c0ef0e52b9859c3f6b1252))
+
+
+
 # [0.28.0-rc.7](https://github.com/SAP/fundamental-styles/compare/v0.28.0-rc.6...v0.28.0-rc.7) (2023-03-23)
 
 
