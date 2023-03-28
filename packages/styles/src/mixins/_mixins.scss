@@ -796,10 +796,8 @@
 
 @mixin fd-compact() {
   @at-root {
-    [class*="--compact"] &:not([class*="--cozy"]):not([class*="--condensed"]),
-    .is-compact &:not(.is-cozy):not(.is-condensed),
-    &[class*="--compact"],
-    &.is-compact {
+    [class*="-compact"] &:not([class*="-cozy"]):not([class*="-condensed"]),
+    &[class*="-compact"] {
       @content;
     }
   }
@@ -807,10 +805,8 @@
 
 @mixin fd-compact-and-condensed() {
   @at-root {
-    [class*="--compact"] &:not([class*="--cozy"]),
-    .is-compact &:not(.is-cozy),
-    &[class*="--compact"],
-    &.is-compact {
+    [class*="-compact"] &:not([class*="-cozy"]),
+    &[class*="-compact"] {
       @content;
     }
   }
@@ -818,10 +814,8 @@
 
 @mixin fd-condensed() {
   @at-root {
-    [class*="--condensed"] &:not([class*="--cozy"]):not([class*="--compact"]),
-    .is-condensed &:not(.is-cozy):not(.is-compact),
-    &[class*="--condensed"],
-    .is-condensed {
+    [class*="-condensed"] &:not([class*="-cozy"]):not([class*="-compact"]),
+    &[class*="-condensed"] {
       @content;
     }
   }
@@ -829,14 +823,10 @@
 
 @mixin fd-compact-or-condensed() {
   @at-root {
-    [class*="--condensed"] &:not([class*="--cozy"]),
-    [class*="--compact"] &:not([class*="--cozy"]),
-    .is-compact &:not(.is-cozy),
-    .is-condensed &:not(.is-cozy),
-    &[class*="--condensed"],
-    &[class*="--compact"],
-    &.is-condensed,
-    &.is-compact {
+    [class*="-condensed"] &:not([class*="-cozy"]),
+    [class*="-compact"] &:not([class*="-cozy"]),
+    &[class*="-condensed"],
+    &[class*="-compact"] {
       @content;
     }
   }

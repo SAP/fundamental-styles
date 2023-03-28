@@ -34,6 +34,8 @@ $block: #{$fd-namespace}-pagination;
 }
 
 .#{$block} {
+  --fdPaginationMoreWidth: 2.25rem;
+
   @include fd-reset();
 
   @include fd-flex-vertical-center() {
@@ -61,12 +63,12 @@ $block: #{$fd-namespace}-pagination;
     &::before {
       content: "...";
       display: block;
-      width: 2.25rem;
+      width: var(--fdPaginationMoreWidth);
       text-align: center;
     }
 
-    &--compact::before {
-      width: 2rem;
+    @include fd-compact-or-condensed() {
+      --fdPaginationMoreWidth: 2rem;
     }
   }
 
