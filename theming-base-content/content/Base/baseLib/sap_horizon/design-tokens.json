@@ -2385,15 +2385,15 @@
       "type": "file"
     },
     "sapFontUrl_SAP-icons-TNT_woff2": {
-      "value": "url(./../baseTheme/fonts/SAP-icons-TNT.woff2)",
+      "value": "url(./fonts/SAP-icons-TNT.woff2)",
       "type": "file"
     },
     "sapFontUrl_SAP-icons-TNT_woff": {
-      "value": "url(./../baseTheme/fonts/SAP-icons-TNT.woff)",
+      "value": "url(./fonts/SAP-icons-TNT.woff)",
       "type": "file"
     },
     "sapFontUrl_SAP-icons-TNT_ttf": {
-      "value": "url(./../baseTheme/fonts/SAP-icons-TNT.ttf)",
+      "value": "url(./fonts/SAP-icons-TNT.ttf)",
       "type": "file"
     },
     "sapFontUrl_SAP-icons_woff2": {
@@ -10594,7 +10594,7 @@
         "type": "internal"
       },
       "_sapButton_Active_BackgroundL": {
-        "value": "{Interaction._sapActiveColorL} + 15%",
+        "value": "{Interaction._sapActiveColorL} + 11.5%",
         "type": "internal"
       },
       "_sapButton_Active_BackgroundA": {

@@ -154,19 +154,19 @@
         "type": "color"
       },
       "_sapShell_Category_13_TextColorH": {
-        "value": "{Text._sapTextColorH}",
+        "value": "{Text._sapContent_ContrastTextColorH}",
         "type": "internal"
       },
       "_sapShell_Category_13_TextColorS": {
-        "value": "{Text._sapTextColorS}",
+        "value": "{Text._sapContent_ContrastTextColorS}",
         "type": "internal"
       },
       "_sapShell_Category_13_TextColorL": {
-        "value": "{Text._sapTextColorL}",
+        "value": "{Text._sapContent_ContrastTextColorL}",
         "type": "internal"
       },
       "_sapShell_Category_13_TextColorA": {
-        "value": "{Text._sapTextColorA}",
+        "value": "{Text._sapContent_ContrastTextColorA}",
         "type": "internal"
       },
       "sapShell_Category_13_TextColor": {
@@ -250,19 +250,19 @@
         "type": "color"
       },
       "_sapShell_Category_11_TextColorH": {
-        "value": "{Text._sapTextColorH}",
+        "value": "{Text._sapContent_ContrastTextColorH}",
         "type": "internal"
       },
       "_sapShell_Category_11_TextColorS": {
-        "value": "{Text._sapTextColorS}",
+        "value": "{Text._sapContent_ContrastTextColorS}",
         "type": "internal"
       },
       "_sapShell_Category_11_TextColorL": {
-        "value": "{Text._sapTextColorL}",
+        "value": "{Text._sapContent_ContrastTextColorL}",
         "type": "internal"
       },
       "_sapShell_Category_11_TextColorA": {
-        "value": "{Text._sapTextColorA}",
+        "value": "{Text._sapContent_ContrastTextColorA}",
         "type": "internal"
       },
       "sapShell_Category_11_TextColor": {
@@ -346,19 +346,19 @@
         "type": "color"
       },
       "_sapShell_Category_9_TextColorH": {
-        "value": "{Text._sapTextColorH}",
+        "value": "{Text._sapContent_ContrastTextColorH}",
         "type": "internal"
       },
       "_sapShell_Category_9_TextColorS": {
-        "value": "{Text._sapTextColorS}",
+        "value": "{Text._sapContent_ContrastTextColorS}",
         "type": "internal"
       },
       "_sapShell_Category_9_TextColorL": {
-        "value": "{Text._sapTextColorL}",
+        "value": "{Text._sapContent_ContrastTextColorL}",
         "type": "internal"
       },
       "_sapShell_Category_9_TextColorA": {
-        "value": "{Text._sapTextColorA}",
+        "value": "{Text._sapContent_ContrastTextColorA}",
         "type": "internal"
       },
       "sapShell_Category_9_TextColor": {
@@ -2123,7 +2123,7 @@
       "type": "string"
     },
     "sapContent_ContrastTextThreshold": {
-      "value": "0.5",
+      "value": "0.386",
       "type": "number"
     },
     "_sapHighlightTextColorH": {
@@ -2385,15 +2385,15 @@
       "type": "file"
     },
     "sapFontUrl_SAP-icons-TNT_woff2": {
-      "value": "url(./../baseTheme/fonts/SAP-icons-TNT.woff2)",
+      "value": "url(./../sap_horizon/fonts/SAP-icons-TNT.woff2)",
       "type": "file"
     },
     "sapFontUrl_SAP-icons-TNT_woff": {
-      "value": "url(./../baseTheme/fonts/SAP-icons-TNT.woff)",
+      "value": "url(./../sap_horizon/fonts/SAP-icons-TNT.woff)",
       "type": "file"
     },
     "sapFontUrl_SAP-icons-TNT_ttf": {
-      "value": "url(./../baseTheme/fonts/SAP-icons-TNT.ttf)",
+      "value": "url(./../sap_horizon/fonts/SAP-icons-TNT.ttf)",
       "type": "file"
     },
     "sapFontUrl_SAP-icons_woff2": {
@@ -4621,19 +4621,19 @@
       "type": "color"
     },
     "_sapIndicationColor_1_TextColorH": {
-      "value": "{Text._sapTextColorH}",
+      "value": "{Text._sapContent_ContrastTextColorH}",
       "type": "internal"
     },
     "_sapIndicationColor_1_TextColorS": {
-      "value": "{Text._sapTextColorS}",
+      "value": "{Text._sapContent_ContrastTextColorS}",
       "type": "internal"
     },
     "_sapIndicationColor_1_TextColorL": {
-      "value": "{Text._sapTextColorL}",
+      "value": "{Text._sapContent_ContrastTextColorL}",
       "type": "internal"
     },
     "_sapIndicationColor_1_TextColorA": {
-      "value": "{Text._sapTextColorA}",
+      "value": "{Text._sapContent_ContrastTextColorA}",
       "type": "internal"
     },
     "sapIndicationColor_1_TextColor": {
