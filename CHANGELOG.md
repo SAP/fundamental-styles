@@ -1,3 +1,12 @@
+## [0.28.1-rc.0](https://github.com/SAP/fundamental-styles/compare/v0.28.0...v0.28.1-rc.0) (2023-03-28)
+
+
+### Bug Fixes
+
+* **common-css:** remove explicit flex-direction from flex-gap ([#4405](https://github.com/SAP/fundamental-styles/issues/4405)) ([8cf5aa7](https://github.com/SAP/fundamental-styles/commit/8cf5aa7a47dd0f785362808e686f37badd717aeb))
+
+
+
 # [0.28.0](https://github.com/SAP/fundamental-styles/compare/v0.28.0-rc.9...v0.28.0) (2023-03-28)
 
 
