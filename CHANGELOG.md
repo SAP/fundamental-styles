@@ -1,3 +1,12 @@
+# [0.28.0-rc.9](https://github.com/SAP/fundamental-styles/compare/v0.28.0-rc.8...v0.28.0-rc.9) (2023-03-28)
+
+
+### Bug Fixes
+
+* **styles:** simplify compact selector [ci visual] ([#4404](https://github.com/SAP/fundamental-styles/issues/4404)) ([ee2af87](https://github.com/SAP/fundamental-styles/commit/ee2af873107e25438f9b75a3e9ee6fa8b89f8222))
+
+
+
 # [0.28.0-rc.8](https://github.com/SAP/fundamental-styles/compare/v0.28.0-rc.7...v0.28.0-rc.8) (2023-03-24)
 
 
