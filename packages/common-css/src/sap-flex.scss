@@ -5,7 +5,7 @@ $block: #{$sap-namespace}-flex;
 
 .#{$block} {
   // Properties for the Parent (flex container)
-  @include sap-flex();
+  display: flex;
 
   $optionsAlignContent: flex-start, flex-end, center, space-between, space-around, space-evenly, stretch, start, end, baseline;
 
@@ -33,25 +33,22 @@ $block: #{$sap-namespace}-flex;
 
   @each $type, $value in $sap-flex-spacings {
     &--gap-#{$type} {
-      @include sap-flex() {
-        gap: $value;
-      }
+      gap: $value;
+      display: flex;
     }
   }
 
   @each $type, $value in $sap-flex-spacings {
     &--row-gap-#{$type} {
-      @include sap-flex() {
-        row-gap: $value;
-      }
+      display: flex;
+      row-gap: $value;
     }
   }
 
   @each $type, $value in $sap-flex-spacings {
     &--column-gap-#{$type} {
-      @include sap-flex() {
-        column-gap: $value;
-      }
+      display: flex;
+      column-gap: $value;
     }
   }
 
