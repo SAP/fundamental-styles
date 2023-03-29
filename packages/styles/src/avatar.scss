@@ -4,6 +4,8 @@
 $block: #{$fd-namespace}-avatar;
 
 .#{$block} {
+  --fdAvatarZoomIconPosition: 0;
+
   @include fd-reset();
   @include fd-fake-fiori-focus(
     var(--fdAvatar_Focus_Outline_Offset),
@@ -35,6 +37,12 @@ $block: #{$fd-namespace}-avatar;
       border-radius: $fd-avatar-border-radius;
       color: var(--sapButton_Emphasized_TextColor);
       background-color: var(--sapButton_Emphasized_Background);
+
+      @include fd-icon-selector() {
+        @include fd-set-position-right(var(--fdAvatarZoomIconPosition));
+
+        bottom: var(--fdAvatarZoomIconPosition);
+      }
     }
   }
 
@@ -54,14 +62,6 @@ $block: #{$fd-namespace}-avatar;
     );
 
     border-radius: $fd-avatar-border-radius;
-
-    .#{$block}__zoom-icon {
-      @include fd-icon-selector() {
-        @include fd-set-position-right(0);
-
-        bottom: 0;
-      }
-    }
   }
 
   &--transparent {
@@ -91,18 +91,13 @@ $block: #{$fd-namespace}-avatar;
       border: map_get($color-set, "border");
       color: map_get($color-set, "text-color");
       background-color: map_get($color-set, "background-color");
-
-      &.#{$block}--shell {
-        @include fd-set-border(var(--sapShell_InteractiveBorderColor));
-      }
     }
   }
 
-  // sizes
   @each $set-name, $size-set in $fd-avatar-sizes {
     &--#{$set-name} {
-      @include fd-reset-spacing();
-      @include fd-inline-flex-center();
+      --fdAvatarZoomIconOffset: #{map_get($size-set, "offset")};
+
       @include fd-avatar-set-size(map_get($size-set, "ratio"));
 
       font-size: map_get($size-set, "font-size");
@@ -115,17 +110,32 @@ $block: #{$fd-namespace}-avatar;
           font-size: map_get($size-set, "beforeFontSize");
         }
       }
-
-      // Do not modify alignment of the icon if it's circle avatar
-      &:not(.#{$block}--circle) {
-        .#{$block}__zoom-icon {
-          @include fd-icon-selector() {
-            @include fd-set-position-right(map_get($size-set, "offset"));
-
-            bottom: map_get($size-set, "offset");
-          }
-        }
-      }
     }
+  }
+}
+
+$accent-selector: ();
+
+@each $item in map-keys($fd-avatar-accent-colors) {
+  $accent-selector: $accent-selector, '.#{$block}--accent-color-#{$item}';
+}
+
+#{$accent-selector} {
+  &.#{$block}--shell {
+    @include fd-set-border(var(--sapShell_InteractiveBorderColor));
+  }
+}
+
+$selector: ();
+
+@each $item in map-keys($fd-avatar-sizes) {
+  $selector: $selector, '.#{$block}.#{$block}--#{$item}';
+}
+
+#{$selector} {
+  @include fd-reset-spacing();
+  @include fd-inline-flex-center();
+  &:not(.#{$block}--circle) {
+    --fdAvatarZoomIconPosition: var(--fdAvatarZoomIconOffset);
   }
 }

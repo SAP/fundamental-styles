@@ -104,7 +104,7 @@ $fd-input-field-height--compact: 1.625rem;
   background-color: var(--sapField_ReadOnly_Background);
 }
 
-@mixin fd-input-field-states($hasFocusWithin: false) {
+@mixin fd-input-field-states($hasFocusWithin: false, $supportsText: true) {
   $fd-input-states: (
     'success': (
       'background': var(--sapField_SuccessBackgroundStyle),
@@ -187,14 +187,16 @@ $fd-input-field-height--compact: 1.625rem;
     }
   }
 
-  &.is-error,
-  &.is-warning,
-  &.is-alert {
-    font-style: var(--fdInput_State_Text_Style);
-    font-weight: var(--fdInput_State_Font_Weight);
-
-    &::placeholder {
+  @if ($supportsText) {
+    &.is-error,
+    &.is-warning,
+    &.is-alert {
+      font-style: var(--fdInput_State_Text_Style);
       font-weight: var(--fdInput_State_Font_Weight);
+
+      &::placeholder {
+        font-weight: var(--fdInput_State_Font_Weight);
+      }
     }
   }
 
@@ -207,9 +209,11 @@ $fd-input-field-height--compact: 1.625rem;
     }
   }
 
-  &.is-error {
-    &::placeholder {
-      color: var(--sapField_TextColor);
+  @if ($supportsText) {
+    &.is-error {
+      &::placeholder {
+        color: var(--sapField_TextColor);
+      }
     }
   }
 
@@ -217,16 +221,20 @@ $fd-input-field-height--compact: 1.625rem;
     pointer-events: none;
     opacity: var(--sapContent_DisabledOpacity);
 
-    &::placeholder {
-      color: var(--fdInput_Non_Interactive_State_Placeholder_Color);
+    @if ($supportsText) {
+      &::placeholder {
+        color: var(--fdInput_Non_Interactive_State_Placeholder_Color);
+      }
     }
   }
 
   @include fd-readonly() {
     @include fd-input-readonly();
 
-    &::placeholder {
-      color: var(--fdInput_Non_Interactive_State_Placeholder_Color);
+    @if ($supportsText) {
+      &::placeholder {
+        color: var(--fdInput_Non_Interactive_State_Placeholder_Color);
+      }
     }
 
     @include fd-hover() {
@@ -349,7 +357,7 @@ $fd-input-field-height--compact: 1.625rem;
   background-color: var($background-color, transparent);
 }
 
-@mixin fd-form-base {
+@mixin fd-form-base($hasFocusWithin: false, $supportsText: true) {
   @include fd-reset();
   @include fd-ellipsis();
 
@@ -374,7 +382,7 @@ $fd-input-field-height--compact: 1.625rem;
     background-color: var(--sapSelectedColor);
   }
   // states
-  @include fd-input-field-states();
+  @include fd-input-field-states($hasFocusWithin, $supportsText);
 }
 
 @mixin fd-form-text() {

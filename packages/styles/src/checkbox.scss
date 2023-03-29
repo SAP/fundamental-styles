@@ -42,7 +42,7 @@ $block: #{$fd-namespace}-checkbox;
     }
   }
 
-  @include fd-form-base();
+  @include fd-form-base(false, false);
 
   @extend %fd-checkbox-input-hidden;
 
