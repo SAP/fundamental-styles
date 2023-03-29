@@ -1,3 +1,12 @@
+## [0.28.1-rc.1](https://github.com/SAP/fundamental-styles/compare/v0.28.1-rc.0...v0.28.1-rc.1) (2023-03-29)
+
+
+### Bug Fixes
+
+* **styles:** simplify avatar, checkbox and radio built markup ([#4407](https://github.com/SAP/fundamental-styles/issues/4407)) ([2ee7863](https://github.com/SAP/fundamental-styles/commit/2ee7863982b45773f8ec115bd98152a4ece9c204))
+
+
+
 ## [0.28.1-rc.0](https://github.com/SAP/fundamental-styles/compare/v0.28.0...v0.28.1-rc.0) (2023-03-28)
 
 
