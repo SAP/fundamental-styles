@@ -30,7 +30,7 @@ $block: #{$fd-namespace}-radio;
     }
   }
 
-  @include fd-form-base();
+  @include fd-form-base(false, false);
 
   @extend %fd-radio-input-hidden;
 
