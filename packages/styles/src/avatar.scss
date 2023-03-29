@@ -129,7 +129,7 @@ $accent-selector: ();
 $selector: ();
 
 @each $item in map-keys($fd-avatar-sizes) {
-  $selector: $selector, '.#{$block}.#{$block}--#{$item}';
+  $selector: $selector, '.#{$block}--#{$item}';
 }
 
 #{$selector} {
