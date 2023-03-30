@@ -39,6 +39,10 @@ $block: #{$fd-namespace}-step-input;
     @include fd-focus() {
       outline: none;
 
+      &::after {
+        display: none;
+      }
+
       @include fd-hover() {
         z-index: auto;
       }
