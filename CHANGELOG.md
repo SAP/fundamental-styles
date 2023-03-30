@@ -1,3 +1,12 @@
+## [0.28.1-rc.2](https://github.com/SAP/fundamental-styles/compare/v0.28.1-rc.1...v0.28.1-rc.2) (2023-03-30)
+
+
+### Bug Fixes
+
+* **styles:** fix button outline [ci visual] ([#4409](https://github.com/SAP/fundamental-styles/issues/4409)) ([23cc3d3](https://github.com/SAP/fundamental-styles/commit/23cc3d3de02d404485954fa1dbd6b2e0603a4b1b))
+
+
+
 ## [0.28.1-rc.1](https://github.com/SAP/fundamental-styles/compare/v0.28.1-rc.0...v0.28.1-rc.1) (2023-03-29)
 
 
