@@ -311,7 +311,7 @@ $fd-input-field-height--compact: 1.625rem;
 
     border: none;
     z-index: auto !important;
-    position: static !important;
+    position: relative;
     border-radius: var(--fdInput_Group_Button_Border_Raduis);
     background: var(--fdInput_Group_Button_Background);
     color: var(--fdInput_Group_Button_Text_Color);

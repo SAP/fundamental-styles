@@ -42,6 +42,22 @@ export const Primary = () => `<label class="fd-form-label" for="step-3">Default 
     <i class="sap-icon--add"></i>
   </button>
 </div>
+<label class="fd-form-label" for="step-3-focused">Focused Step Input</label><br />
+<div class="fd-step-input is-focus">
+  <button aria-label="Step down" class="
+            fd-button
+            fd-button--transparent
+            fd-step-input__button is-focus" onclick="stepInputValue('step-3-focused', 'down');" tabindex="-1" type="button">
+    <i class="sap-icon--less"></i>
+  </button>
+  <input class="fd-input fd-input--no-number-spinner fd-step-input__input" id="step-3-focused" type="number" value="0" />
+  <button aria-label="Step up" class="
+            fd-button
+            fd-button--transparent
+            fd-step-input__button" onclick="stepInputValue('step-3-focused', 'up');" tabindex="-1" type="button">
+    <i class="sap-icon--add"></i>
+  </button>
+</div>
 `;
 
 Primary.storyName = 'Default';
