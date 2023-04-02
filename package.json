@@ -98,7 +98,7 @@
     "conventional-recommended-bump": "^6.1.0",
     "core-js": "^3.6.5",
     "cross-env": "^7.0.3",
-    "cssnano": "5.1.7",
+    "cssnano": "6.0.0",
     "eslint": "^7.25.0",
     "eslint-plugin-import": "2.26.0",
     "eslint-plugin-jsx-a11y": "6.6.1",
