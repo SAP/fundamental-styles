@@ -108,11 +108,14 @@ Notifications can be displayed without an avatar by adding the \`fd-notification
 };
 
 export const Information = () => `<div class="fd-notification">
-  <div class="fd-message-strip fd-message-strip--information fd-message-strip--dismissible" role="alert">
-      <p class="fd-message-strip__text">
+  <div class="fd-message-strip fd-message-strip--information fd-message-strip--dismissible" role="note" aria-live="assertive" id="message-strip-1" aria-labelledby="message-strip-1">
+    <div class="fd-message-strip__icon-container" aria-hidden="true">
+        <span class="sap-icon sap-icon--message-information" focusable="false" role="presentation" aria-hidden="true"></span>
+    </div>
+    <p class="fd-message-strip__text">
         Vivamus sagittis diam in vehicula lobortis sapien arcu mattis erat vel aliquet.
       </p>
-       <button class="fd-button fd-button--transparent fd-button--compact fd-message-strip__close" aria-label="Close">
+       <button class="fd-button fd-button--transparent fd-button--compact fd-message-strip__close" aria-controls="message-strip-1" aria-label="Close" title="Close">
         <i class="sap-icon--decline"></i>
       </button>
     </div>
@@ -142,18 +145,21 @@ Information.parameters = {
         iframeHeight: 200,
         description: {
             story: `
-Notifications can also include alerts, and in this case it is informative. You can display information alerts by adding the \`fd-message-strip fd-message-strip--information fd-message-strip--dismissible\` class together with \`role="alert"\`. To add text to the message, add the \`fd-message-strip\\__text\` class before the text in paragraph tags.
+Notifications can also include alerts, and in this case it is informative. You can display information alerts by adding the \`fd-message-strip fd-message-strip--information fd-message-strip--dismissible\`. To add text to the message, add the \`fd-message-strip\\__text\` class before the text in paragraph tags.
 `
         }
     }
 };
 
 export const Warning = () => `<div class="fd-notification">
-    <div class="fd-message-strip fd-message-strip--warning fd-message-strip--dismissible" role="alert">
-      <p class="fd-message-strip__text">
+    <div class="fd-message-strip fd-message-strip--warning fd-message-strip--dismissible" role="note" aria-live="assertive" id="message-strip-2" aria-labelledby="message-strip-2">
+    <div class="fd-message-strip__icon-container" aria-hidden="true">
+        <span class="sap-icon sap-icon--message-warning" focusable="false" role="presentation" aria-hidden="true"></span>
+    </div>
+    <p class="fd-message-strip__text">
         Vivamus sagittis diam in vehicula lobortis sapien arcu mattis erat vel aliquet.
       </p>
-      <button class="fd-button fd-button--transparent fd-button--compact fd-message-strip__close" aria-label="Close">
+      <button class="fd-button fd-button--transparent fd-button--compact fd-message-strip__close" aria-controls="message-strip-2" aria-label="Close" title="Close">
         <i class="sap-icon--decline"></i>
       </button>
     </div>
@@ -184,18 +190,21 @@ Warning.parameters = {
         iframeHeight: 200,
         description: {
             story: `
-Notifications can display warning alerts by adding the \`fd-message-strip fd-message-strip--warning fd-message-strip--dismissible\` class together with \`role="alert"\`.
+Notifications can display warning alerts by adding the \`fd-message-strip fd-message-strip--warning fd-message-strip--dismissible\` class.
 `
         }
     }
 };
 
 export const Error = () => `<div class="fd-notification">
-    <div class="fd-message-strip fd-message-strip--error fd-message-strip--dismissible" role="alert">
+    <div class="fd-message-strip fd-message-strip--error fd-message-strip--dismissible" role="note" aria-live="assertive" id="message-strip-3" aria-labelledby="message-strip-3">
+        <div class="fd-message-strip__icon-container" aria-hidden="true">
+            <span class="sap-icon sap-icon--message-information" focusable="false" role="presentation" aria-hidden="true"></span>
+        </div>
         <p class="fd-message-strip__text">
           Vivamus sagittis diam in vehicula lobortis sapien arcu mattis erat vel aliquet.
         </p>
-          <button class="fd-button fd-button--transparent fd-button--compact fd-message-strip__close" aria-label="Close">
+          <button class="fd-button fd-button--transparent fd-button--compact fd-message-strip__close" aria-controls="message-strip-3" aria-label="Close" title="Close">
             <i class="sap-icon--decline"></i>
           </button>
     </div>
@@ -226,7 +235,7 @@ Error.parameters = {
         iframeHeight: 200,
         description: {
             story: `
-Notifications can display error alerts by adding the \`fd-message-strip fd-message-strip--error fd-message-strip--dismissible\` class together with \`role="alert"\`.
+Notifications can display error alerts by adding the \`fd-message-strip fd-message-strip--error fd-message-strip--dismissible\` class.
 `
         }
     }
