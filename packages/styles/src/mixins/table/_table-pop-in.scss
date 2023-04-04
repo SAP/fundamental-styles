@@ -10,7 +10,7 @@
         font-weight: bold;
       }
 
-      &:last-child {
+      @include fd-last-child() {
         margin-bottom: 0;
       }
     }

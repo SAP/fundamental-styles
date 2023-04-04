@@ -335,13 +335,21 @@ $block: #{$fd-namespace}-shellbar;
 
         > * {
           @include fd-set-margin-right(var(--fdShellbar_Search_Category_Offset_Right));
+          @include fd-set-margins-y-equal();
         }
         .#{$block}__search-dropdown {
           background-color: var(--fdShellbar_Input_Background);
           outline: none;
+          position: static;
 
           --fdInput_Group_Button_Background: transparent;
           --fdInput_Group_Button_Text_Color: var(--sapShell_InteractiveTextColor);
+
+          @include fd-focus() {
+            &::after {
+              display: none;
+            }
+          }
         }
         .#{$block}__search-category {
           --fdSelect_Background: transparent;
