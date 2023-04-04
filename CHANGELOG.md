@@ -1,3 +1,12 @@
+## [0.28.2-rc.0](https://github.com/SAP/fundamental-styles/compare/v0.28.1...v0.28.2-rc.0) (2023-04-04)
+
+
+### Bug Fixes
+
+* **styles:** adjust table and shellbar styling [ci visual] ([#4423](https://github.com/SAP/fundamental-styles/issues/4423)) ([d59bef6](https://github.com/SAP/fundamental-styles/commit/d59bef6662e783d038e6cd30e157f23a1517ce02))
+
+
+
 ## [0.28.1](https://github.com/SAP/fundamental-styles/compare/v0.28.1-rc.2...v0.28.1) (2023-03-30)
 
 
