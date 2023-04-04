@@ -8,8 +8,7 @@
       "type": "git",
       "url": "https://github.com/SAP/fundamental-styles"
     },
-    "dependencies": {
+    "peerDependencies": {
         "fundamental-styles": "VERSION_PLACEHOLDER"
     }
   }
-  

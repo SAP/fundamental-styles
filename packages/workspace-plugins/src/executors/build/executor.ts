@@ -7,11 +7,16 @@ import glob from 'glob';
 import { processWithPostCss } from '../shared/postcss';
 import { mkdirpSync } from 'fs-extra';
 import { parse } from 'path';
+import { parse as semverParse } from 'semver';
 
+const aboveMinorVersion = (version) => {
+    const parsed = semverParse(version);
+    return `^${parsed!.major}.${parsed!.minor}.0`;
+};
 const packageJson = JSON.parse(readFileSync('package.json', 'utf-8'));
 const versions = {
     VERSION_PLACEHOLDER: packageJson.version,
-    SAP_THEMING_VERSION: packageJson.devDependencies['@sap-theming/theming-base-content']
+    SAP_THEMING_VERSION: aboveMinorVersion(packageJson.devDependencies['@sap-theming/theming-base-content'])
 };
 
 export default async function runExecutor(options: BuildExecutorSchema, context: ExecutorContext) {
