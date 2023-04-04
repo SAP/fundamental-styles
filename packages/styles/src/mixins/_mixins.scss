@@ -831,3 +831,26 @@
     }
   }
 }
+
+@mixin fd-last-child() {
+  &:last-child,
+  &.is-last-child {
+    @content;
+  }
+}
+
+@mixin fd-first-child() {
+  &:first-child,
+  &.is-first-child {
+    @content;
+  }
+}
+
+@mixin fd-first-and-last-child() {
+  &:first-child,
+  &.is-first-child,
+  &:last-child,
+  &.is-last-child {
+    @content;
+  }
+}

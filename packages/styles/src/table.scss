@@ -114,7 +114,7 @@ $table-z-index: (
 
     @include fd-set-border-left(var(--sapList_BorderWidth) var(--fdTable_Cell_Vertical_Border_Style, solid) var(--sapList_BorderColor));
 
-    &:last-child {
+    @include fd-last-child() {
       @include fd-set-border-right(var(--sapList_BorderWidth) var(--fdTable_Cell_Vertical_Border_Style, solid) var(--sapList_BorderColor));
     }
 
