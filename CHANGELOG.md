@@ -1,3 +1,12 @@
+## [0.28.4-rc.0](https://github.com/SAP/fundamental-styles/compare/v0.28.3...v0.28.4-rc.0) (2023-04-05)
+
+
+### Bug Fixes
+
+* **styles:** include new horizon parameters and their values [ci visual] ([#4427](https://github.com/SAP/fundamental-styles/issues/4427)) ([bd984bc](https://github.com/SAP/fundamental-styles/commit/bd984bc25cc1f611a36083c570d941e98e269299))
+
+
+
 ## [0.28.3](https://github.com/SAP/fundamental-styles/compare/v0.28.3-rc.1...v0.28.3) (2023-04-05)
 
 
