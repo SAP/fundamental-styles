@@ -17654,23 +17654,23 @@ exports[`Check stories > Components/Message Popover > Story DetailsView > Should
 `;
 
 exports[`Check stories > Components/Message Strip > Story DefaultStrip > Should match snapshot 1`] = `
-"<div class=\\"fd-message-strip fd-message-strip--dismissible\\" role=\\"alert\\"  id=\\"ZvPBg609\\" >
+"<div class=\\"fd-message-strip fd-message-strip--no-icon\\" role=\\"note\\" aria-live=\\"assertive\\" id=\\"message-strip-1\\" aria-labelledby=\\"message-strip-1\\">
   <p class=\\"fd-message-strip__text\\">
     Vivamus sagittis diam in vehicula lobortis sapien arcu mattis erat vel aliquet sem urna et.
   </p>
-  <button class=\\"fd-button fd-button--transparent fd-button--compact fd-message-strip__close\\" aria-controls=\\"ZvPBg609\\" aria-label=\\"Close\\">
-    <i class=\\"sap-icon--decline\\"></i>
-  </button>
 </div>
 "
 `;
 
 exports[`Check stories > Components/Message Strip > Story Error > Should match snapshot 1`] = `
-"<div class=\\"fd-message-strip fd-message-strip--error fd-message-strip--dismissible\\" role=\\"alert\\" id=\\"SsoiW591\\">
+"<div class=\\"fd-message-strip fd-message-strip--error fd-message-strip--dismissible\\" role=\\"note\\" aria-live=\\"assertive\\" id=\\"message-strip-5\\" aria-labelledby=\\"message-strip-5\\">
+  <div class=\\"fd-message-strip__icon-container\\" aria-hidden=\\"true\\">
+    <span class=\\"sap-icon sap-icon--message-error\\" focusable=\\"false\\" role=\\"presentation\\" aria-hidden=\\"true\\"></span>
+  </div>
   <p class=\\"fd-message-strip__text\\">
     Vivamus sagittis diam in vehicula lobortis sapien arcu mattis erat vel aliquet sem urna et.
   </p>
-  <button class=\\"fd-button fd-button--transparent fd-button--compact fd-message-strip__close\\" aria-controls=\\"SsoiW591\\" aria-label=\\"Close\\">
+  <button class=\\"fd-button fd-button--transparent fd-button--compact fd-message-strip__close\\" aria-controls=\\"message-strip-5\\" aria-label=\\"Close\\" title=\\"Close\\">
     <i class=\\"sap-icon--decline\\"></i>
   </button>
 </div>
@@ -17678,11 +17678,176 @@ exports[`Check stories > Components/Message Strip > Story Error > Should match s
 `;
 
 exports[`Check stories > Components/Message Strip > Story Information > Should match snapshot 1`] = `
-"<div class=\\"fd-message-strip fd-message-strip--information fd-message-strip--dismissible\\" role=\\"alert\\"  id=\\"JwPcf464\\" >
+"<div class=\\"fd-message-strip fd-message-strip--information fd-message-strip--dismissible\\" role=\\"note\\" aria-live=\\"assertive\\" id=\\"message-strip-2\\" aria-labelledby=\\"message-strip-2\\">
+  <div class=\\"fd-message-strip__icon-container\\" aria-hidden=\\"true\\">
+    <span class=\\"sap-icon sap-icon--message-information\\" focusable=\\"false\\" role=\\"presentation\\" aria-hidden=\\"true\\"></span>
+  </div>
   <p class=\\"fd-message-strip__text\\">
     Vivamus sagittis diam in vehicula lobortis sapien arcu mattis erat vel aliquet sem urna et.
   </p>
-  <button class=\\"fd-button fd-button--transparent fd-button--compact fd-message-strip__close\\" aria-controls=\\"JwPcf464\\" aria-label=\\"Close\\">
+  <button class=\\"fd-button fd-button--transparent fd-button--compact fd-message-strip__close\\" aria-controls=\\"message-strip-2\\" aria-label=\\"Close\\" title=\\"Close\\">
+    <i class=\\"sap-icon--decline\\"></i>
+  </button>
+</div>
+"
+`;
+
+exports[`Check stories > Components/Message Strip > Story MessageStripWithAccentColors > Should match snapshot 1`] = `
+"<div class=\\"fd-message-strip fd-message-strip--dismissible fd-message-strip--accent-color-1\\" role=\\"note\\" aria-live=\\"assertive\\" id=\\"message-strip-17\\" aria-labelledby=\\"message-strip-17\\">
+  <div class=\\"fd-message-strip__icon-container\\" aria-hidden=\\"true\\">
+    <span class=\\"sap-icon sap-icon--master-task-triangle-2\\" focusable=\\"false\\" role=\\"presentation\\" aria-hidden=\\"true\\"></span>
+  </div>
+  <p class=\\"fd-message-strip__text\\">
+    Message Strip with accent color 1 
+  </p>
+</div>
+
+<br>
+
+<div class=\\"fd-message-strip fd-message-strip--dismissible  fd-message-strip--accent-color-2\\" role=\\"note\\" aria-live=\\"assertive\\" id=\\"message-strip-18\\" aria-labelledby=\\"message-strip-18\\">
+  <div class=\\"fd-message-strip__icon-container\\" aria-hidden=\\"true\\">
+    <span class=\\"sap-icon sap-icon--cloud\\" focusable=\\"false\\" role=\\"presentation\\" aria-hidden=\\"true\\"></span>
+  </div>
+  <p class=\\"fd-message-strip__text\\">
+    Message Strip with accent color 2 
+  </p>
+</div>
+
+
+<br>
+
+<div class=\\"fd-message-strip fd-message-strip--dismissible  fd-message-strip--accent-color-3\\" role=\\"note\\" aria-live=\\"assertive\\" id=\\"message-strip-19\\" aria-labelledby=\\"message-strip-19\\">
+  <div class=\\"fd-message-strip__icon-container\\" aria-hidden=\\"true\\">
+    <span class=\\"sap-icon sap-icon--heart-2\\" focusable=\\"false\\" role=\\"presentation\\" aria-hidden=\\"true\\"></span>
+  </div>
+  <p class=\\"fd-message-strip__text\\">
+    Message Strip with accent color 3 
+  </p>
+</div>
+
+
+<br>
+
+<div class=\\"fd-message-strip fd-message-strip--dismissible  fd-message-strip--accent-color-4\\" role=\\"note\\" aria-live=\\"assertive\\" id=\\"message-strip-20\\" aria-labelledby=\\"message-strip-20\\">
+  <div class=\\"fd-message-strip__icon-container\\" aria-hidden=\\"true\\">
+    <span class=\\"sap-icon sap-icon--circle-task\\" focusable=\\"false\\" role=\\"presentation\\" aria-hidden=\\"true\\"></span>
+  </div>
+  <p class=\\"fd-message-strip__text\\">
+    Message Strip with accent color 4 
+  </p>
+</div>
+
+
+<br>
+
+<div class=\\"fd-message-strip fd-message-strip--dismissible  fd-message-strip--accent-color-5\\" role=\\"note\\" aria-live=\\"assertive\\" id=\\"message-strip-21\\" aria-labelledby=\\"message-strip-21\\">
+  <div class=\\"fd-message-strip__icon-container\\" aria-hidden=\\"true\\">
+    <span class=\\"sap-icon sap-icon--feedback\\" focusable=\\"false\\" role=\\"presentation\\" aria-hidden=\\"true\\"></span>
+  </div>
+  <p class=\\"fd-message-strip__text\\">
+    Message Strip with accent color 5 
+  </p>
+</div>
+
+
+<br>
+
+<div class=\\"fd-message-strip fd-message-strip--dismissible  fd-message-strip--accent-color-6\\" role=\\"note\\" aria-live=\\"assertive\\" id=\\"message-strip-22\\" aria-labelledby=\\"message-strip-22\\">
+  <div class=\\"fd-message-strip__icon-container\\" aria-hidden=\\"true\\">
+    <span class=\\"sap-icon sap-icon--text-color\\" focusable=\\"false\\" role=\\"presentation\\" aria-hidden=\\"true\\"></span>
+  </div>
+  <p class=\\"fd-message-strip__text\\">
+    Message Strip with accent color 6
+  </p>
+</div>
+
+
+<br>
+
+<div class=\\"fd-message-strip fd-message-strip--dismissible  fd-message-strip--accent-color-7\\" role=\\"note\\" aria-live=\\"assertive\\" id=\\"message-strip-23\\" aria-labelledby=\\"message-strip-23\\">
+  <div class=\\"fd-message-strip__icon-container\\" aria-hidden=\\"true\\">
+    <span class=\\"sap-icon sap-icon--away\\" focusable=\\"false\\" role=\\"presentation\\" aria-hidden=\\"true\\"></span>
+  </div>
+  <p class=\\"fd-message-strip__text\\">
+    Message Strip with accent color 7 
+  </p>
+</div>
+
+
+<br>
+
+<div class=\\"fd-message-strip fd-message-strip--dismissible  fd-message-strip--accent-color-8\\" role=\\"note\\" aria-live=\\"assertive\\" id=\\"message-strip-24\\" aria-labelledby=\\"message-strip-24\\">
+  <div class=\\"fd-message-strip__icon-container\\" aria-hidden=\\"true\\">
+    <span class=\\"sap-icon sap-icon--cursor\\" focusable=\\"false\\" role=\\"presentation\\" aria-hidden=\\"true\\"></span>
+  </div>
+  <p class=\\"fd-message-strip__text\\">
+    Message Strip with accent color 8 
+  </p>
+</div>
+
+
+<br>
+
+<div class=\\"fd-message-strip fd-message-strip--dismissible  fd-message-strip--accent-color-9\\" role=\\"note\\" aria-live=\\"assertive\\" id=\\"message-strip-25\\" aria-labelledby=\\"message-strip-25\\">
+  <div class=\\"fd-message-strip__icon-container\\" aria-hidden=\\"true\\">
+    <span class=\\"sap-icon sap-icon--copy\\" focusable=\\"false\\" role=\\"presentation\\" aria-hidden=\\"true\\"></span>
+  </div>
+  <p class=\\"fd-message-strip__text\\">
+    Message Strip with accent color 9
+  </p>
+</div>
+
+
+<br>
+
+<div class=\\"fd-message-strip fd-message-strip--dismissible  fd-message-strip--accent-color-10\\" role=\\"note\\" aria-live=\\"assertive\\" id=\\"message-strip-26\\" aria-labelledby=\\"message-strip-26\\">
+  <div class=\\"fd-message-strip__icon-container\\" aria-hidden=\\"true\\">
+    <span class=\\"sap-icon sap-icon--reset\\" focusable=\\"false\\" role=\\"presentation\\" aria-hidden=\\"true\\"></span>
+  </div>
+  <p class=\\"fd-message-strip__text\\">
+    Message Strip with accent color 10
+  </p>
+</div>
+"
+`;
+
+exports[`Check stories > Components/Message Strip > Story MessageStripWithCustomIcon > Should match snapshot 1`] = `
+"<div class=\\"fd-message-strip fd-message-strip--dismissible\\" role=\\"note\\" aria-live=\\"assertive\\" id=\\"message-strip-15\\" aria-labelledby=\\"message-strip-15\\">
+  <div class=\\"fd-message-strip__icon-container\\" aria-hidden=\\"true\\">
+    <span class=\\"sap-icon sap-icon--master-task-triangle-2\\" focusable=\\"false\\" role=\\"presentation\\" aria-hidden=\\"true\\"></span>
+  </div>
+  <p class=\\"fd-message-strip__text\\">
+    Vivamus sagittis diam in vehicula lobortis sapien arcu mattis erat vel aliquet sem urna. 
+  </p>
+  <button class=\\"fd-button fd-button--transparent fd-button--compact fd-message-strip__close\\" aria-controls=\\"message-strip-15\\" aria-label=\\"Close\\" title=\\"Close\\">
+    <i class=\\"sap-icon--decline\\"></i>
+  </button>
+</div>
+<br>
+<div class=\\"fd-message-strip fd-message-strip--dismissible fd-message-strip--error\\" role=\\"note\\" aria-live=\\"assertive\\" id=\\"message-strip-16\\" aria-labelledby=\\"message-strip-16\\">
+  <div class=\\"fd-message-strip__icon-container\\" aria-hidden=\\"true\\">
+    <span class=\\"sap-icon sap-icon--not-editable\\" focusable=\\"false\\" role=\\"presentation\\" aria-hidden=\\"true\\"></span>
+  </div>
+  <p class=\\"fd-message-strip__text\\">
+    Vivamus sagittis diam in vehicula lobortis sapien arcu mattis erat vel aliquet sem urna. 
+  </p>
+  <button class=\\"fd-button fd-button--transparent fd-button--compact fd-message-strip__close\\" aria-controls=\\"message-strip-16\\" aria-label=\\"Close\\" title=\\"Close\\">
+    <i class=\\"sap-icon--decline\\"></i>
+  </button>
+</div>
+"
+`;
+
+exports[`Check stories > Components/Message Strip > Story MessageStripWithLink > Should match snapshot 1`] = `
+"<div class=\\"fd-message-strip fd-message-strip--error fd-message-strip--dismissible fd-message-strip--link\\" role=\\"note\\" aria-live=\\"assertive\\" id=\\"message-strip-14\\" aria-labelledby=\\"message-strip-14\\">
+  <div class=\\"fd-message-strip__icon-container\\" aria-hidden=\\"true\\">
+    <span class=\\"sap-icon sap-icon--message-error\\" focusable=\\"false\\" role=\\"presentation\\" aria-hidden=\\"true\\"></span>
+  </div>
+  <p class=\\"fd-message-strip__text\\">
+    Vivamus sagittis diam in vehicula lobortis sapien arcu mattis erat vel aliquet sem urna et. 
+    <a href=\\"#\\" class=\\"fd-link\\" tabindex=\\"0\\"><span class=\\"fd-link__content\\">Default link</span></a>
+  </p>
+  <button class=\\"fd-button fd-button--transparent fd-button--compact fd-message-strip__close\\" aria-controls=\\"message-strip-14\\" aria-label=\\"Close\\" title=\\"Close\\">
     <i class=\\"sap-icon--decline\\"></i>
   </button>
 </div>
@@ -17691,11 +17856,11 @@ exports[`Check stories > Components/Message Strip > Story Information > Should m
 
 exports[`Check stories > Components/Message Strip > Story NoIcons > Should match snapshot 1`] = `
 "<div class=\\"fd-message-strip fd-message-strip--information fd-message-strip--no-icon fd-message-strip--dismissible\\"
-     role=\\"alert\\" id=\\"SsoiW592\\">
+     role=\\"note\\" aria-live=\\"assertive\\" id=\\"message-strip-6\\" aria-labelledby=\\"message-strip-6\\">
   <p class=\\"fd-message-strip__text\\">
     Vivamus sagittis diam in vehicula lobortis sapien arcu mattis erat vel aliquet sem urna et.
   </p>
-  <button class=\\"fd-button fd-button--transparent fd-button--compact fd-message-strip__close\\" aria-controls=\\"SsoiW592\\" aria-label=\\"Close\\">
+  <button class=\\"fd-button fd-button--transparent fd-button--compact fd-message-strip__close\\" aria-controls=\\"message-strip-6\\" aria-label=\\"Close\\" title=\\"Close\\">
     <i class=\\"sap-icon--decline\\"></i>
   </button>
 </div>
@@ -17703,11 +17868,11 @@ exports[`Check stories > Components/Message Strip > Story NoIcons > Should match
 <br />
 
 <div class=\\"fd-message-strip fd-message-strip--success fd-message-strip--no-icon fd-message-strip--dismissible\\"
-     role=\\"alert\\" id=\\"SsoiW593\\">
+     role=\\"note\\" aria-live=\\"assertive\\" id=\\"message-strip-7\\" aria-labelledby=\\"message-strip-7\\">
   <p class=\\"fd-message-strip__text\\">
     Vivamus sagittis diam in vehicula lobortis sapien arcu mattis erat vel aliquet sem urna et.
   </p>
-  <button class=\\"fd-button fd-button--transparent fd-button--compact fd-message-strip__close\\" aria-controls=\\"SsoiW593\\" aria-label=\\"Close\\">
+  <button class=\\"fd-button fd-button--transparent fd-button--compact fd-message-strip__close\\" aria-controls=\\"message-strip-7\\" aria-label=\\"Close\\" title=\\"Close\\">
     <i class=\\"sap-icon--decline\\"></i>
   </button>
 </div>
@@ -17715,11 +17880,11 @@ exports[`Check stories > Components/Message Strip > Story NoIcons > Should match
 <br />
 
 <div class=\\"fd-message-strip fd-message-strip--warning fd-message-strip--no-icon fd-message-strip--dismissible\\"
-     role=\\"alert\\" id=\\"SsoiW594\\">
+     role=\\"note\\" aria-live=\\"assertive\\" id=\\"message-strip-8\\" aria-labelledby=\\"message-strip-8\\">
   <p class=\\"fd-message-strip__text\\">
     Vivamus sagittis diam in vehicula lobortis sapien arcu mattis erat vel aliquet sem urna et.
   </p>
-  <button class=\\"fd-button fd-button--transparent fd-button--compact fd-message-strip__close\\" aria-controls=\\"SsoiW594\\" aria-label=\\"Close\\">
+  <button class=\\"fd-button fd-button--transparent fd-button--compact fd-message-strip__close\\" aria-controls=\\"message-strip-8\\" aria-label=\\"Close\\" title=\\"Close\\">
     <i class=\\"sap-icon--decline\\"></i>
   </button>
 </div>
@@ -17727,23 +17892,63 @@ exports[`Check stories > Components/Message Strip > Story NoIcons > Should match
 <br />
 
 <div class=\\"fd-message-strip fd-message-strip--error fd-message-strip--no-icon fd-message-strip--dismissible\\"
-     role=\\"alert\\" id=\\"SsoiW595\\">
+     role=\\"note\\" aria-live=\\"assertive\\" id=\\"message-strip-9\\" aria-labelledby=\\"message-strip-9\\">
   <p class=\\"fd-message-strip__text\\">
     Vivamus sagittis diam in vehicula lobortis sapien arcu mattis erat vel aliquet sem urna et.
   </p>
-  <button class=\\"fd-button fd-button--transparent fd-button--compact fd-message-strip__close\\" aria-controls=\\"SsoiW595\\" aria-label=\\"Close\\">
+  <button class=\\"fd-button fd-button--transparent fd-button--compact fd-message-strip__close\\" aria-controls=\\"message-strip-9\\" aria-label=\\"Close\\" title=\\"Close\\">
     <i class=\\"sap-icon--decline\\"></i>
   </button>
 </div>
 "
 `;
 
-exports[`Check stories > Components/Message Strip > Story Success > Should match snapshot 1`] = `
-"<div class=\\"fd-message-strip fd-message-strip--success fd-message-strip--dismissible\\" role=\\"alert\\" id=\\"ulr5z216\\">
+exports[`Check stories > Components/Message Strip > Story NoIconsNotDismissible > Should match snapshot 1`] = `
+"<div class=\\"fd-message-strip fd-message-strip--information fd-message-strip--no-icon\\"
+     role=\\"note\\" aria-live=\\"assertive\\" id=\\"message-strip-10\\" aria-labelledby=\\"message-strip-10\\">
   <p class=\\"fd-message-strip__text\\">
     Vivamus sagittis diam in vehicula lobortis sapien arcu mattis erat vel aliquet sem urna et.
   </p>
-  <button class=\\"fd-button fd-button--transparent fd-button--compact fd-message-strip__close\\" aria-controls=\\"ulr5z216\\" aria-label=\\"Close\\">
+</div>
+
+<br />
+
+<div class=\\"fd-message-strip fd-message-strip--success fd-message-strip--no-icon\\"
+     role=\\"note\\" aria-live=\\"assertive\\" id=\\"message-strip-11\\" aria-labelledby=\\"message-strip-11\\">
+  <p class=\\"fd-message-strip__text\\">
+    Vivamus sagittis diam in vehicula lobortis sapien arcu mattis erat vel aliquet sem urna et.
+  </p>
+</div>
+
+<br />
+
+<div class=\\"fd-message-strip fd-message-strip--warning fd-message-strip--no-icon\\"
+     role=\\"note\\" aria-live=\\"assertive\\" id=\\"message-strip-12\\" aria-labelledby=\\"message-strip-12\\">
+  <p class=\\"fd-message-strip__text\\">
+    Vivamus sagittis diam in vehicula lobortis sapien arcu mattis erat vel aliquet sem urna et.
+  </p>
+</div>
+
+<br />
+
+<div class=\\"fd-message-strip fd-message-strip--error fd-message-strip--no-icon\\"
+     role=\\"note\\" aria-live=\\"assertive\\" id=\\"message-strip-13\\" aria-labelledby=\\"message-strip-13\\">
+  <p class=\\"fd-message-strip__text\\">
+    Vivamus sagittis diam in vehicula lobortis sapien arcu mattis erat vel aliquet sem urna et.
+  </p>
+</div>
+"
+`;
+
+exports[`Check stories > Components/Message Strip > Story Success > Should match snapshot 1`] = `
+"<div class=\\"fd-message-strip fd-message-strip--success fd-message-strip--dismissible\\" role=\\"note\\" aria-live=\\"assertive\\" id=\\"message-strip-3\\" aria-labelledby=\\"message-strip-3\\">
+  <div class=\\"fd-message-strip__icon-container\\" aria-hidden=\\"true\\">
+    <span class=\\"sap-icon sap-icon--message-success\\" focusable=\\"false\\" role=\\"presentation\\" aria-hidden=\\"true\\"></span>
+  </div>
+  <p class=\\"fd-message-strip__text\\">
+    Vivamus sagittis diam in vehicula lobortis sapien arcu mattis erat vel aliquet sem urna et.
+  </p>
+  <button class=\\"fd-button fd-button--transparent fd-button--compact fd-message-strip__close\\" aria-controls=\\"message-strip-3\\" aria-label=\\"Close\\" title=\\"Close\\">
     <i class=\\"sap-icon--decline\\"></i>
   </button>
 </div>
@@ -17751,11 +17956,14 @@ exports[`Check stories > Components/Message Strip > Story Success > Should match
 `;
 
 exports[`Check stories > Components/Message Strip > Story Warning > Should match snapshot 1`] = `
-"<div class=\\"fd-message-strip fd-message-strip--warning fd-message-strip--dismissible\\" role=\\"alert\\" id=\\"fwYq4606\\">
+"<div class=\\"fd-message-strip fd-message-strip--warning fd-message-strip--dismissible\\" role=\\"note\\" aria-live=\\"assertive\\" id=\\"message-strip-4\\" aria-labelledby=\\"message-strip-4\\">
+  <div class=\\"fd-message-strip__icon-container\\" aria-hidden=\\"true\\">
+    <span class=\\"sap-icon sap-icon--message-warning\\" focusable=\\"false\\" role=\\"presentation\\" aria-hidden=\\"true\\"></span>
+  </div>
   <p class=\\"fd-message-strip__text\\">
     Vivamus sagittis diam in vehicula lobortis sapien arcu mattis erat vel aliquet sem urna et.
   </p>
-  <button class=\\"fd-button fd-button--transparent fd-button--compact fd-message-strip__close\\" aria-controls=\\"fwYq4606\\" aria-label=\\"Close\\">
+  <button class=\\"fd-button fd-button--transparent fd-button--compact fd-message-strip__close\\" aria-controls=\\"message-strip-4\\" aria-label=\\"Close\\" title=\\"Close\\">
     <i class=\\"sap-icon--decline\\"></i>
   </button>
 </div>
