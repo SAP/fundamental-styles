@@ -1,3 +1,17 @@
+# [0.29.0-rc.0](https://github.com/SAP/fundamental-styles/compare/v0.28.4-rc.0...v0.29.0-rc.0) (2023-04-05)
+
+
+### Features
+
+* **styles:** update Message Strip to latest Horizon design [ci visual] ([#4426](https://github.com/SAP/fundamental-styles/issues/4426)) ([17af442](https://github.com/SAP/fundamental-styles/commit/17af4427c66288fa48caaa34bd232008f416912c))
+
+
+### BREAKING CHANGES
+
+* **styles:** message-strip (markup change): ability to add custom icon required change in the markup. The status icon is no longer added by the modifier class, but is wrapped in a container.
+
+
+
 ## [0.28.4-rc.0](https://github.com/SAP/fundamental-styles/compare/v0.28.3...v0.28.4-rc.0) (2023-04-05)
 
 
