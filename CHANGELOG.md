@@ -1,3 +1,12 @@
+## [0.28.3-rc.1](https://github.com/SAP/fundamental-styles/compare/v0.28.3-rc.0...v0.28.3-rc.1) (2023-04-05)
+
+
+### Bug Fixes
+
+* changed peer dependency versions ([#4425](https://github.com/SAP/fundamental-styles/issues/4425)) ([cfa96a7](https://github.com/SAP/fundamental-styles/commit/cfa96a72a27a7919e1a546b7e350a7f63386a8e0))
+
+
+
 ## [0.28.3-rc.0](https://github.com/SAP/fundamental-styles/compare/v0.28.2...v0.28.3-rc.0) (2023-04-04)
 
 
