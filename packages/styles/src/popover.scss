@@ -2,6 +2,7 @@
 @import "./mixins";
 
 $block: #{$fd-namespace}-popover;
+$blockBody: #{$fd-namespace}-popover__body;
 
 $fd-popover-z-index: map-get($fd-z-index-levels, "top") !default;
 $fd-popover-arrow-size: 0.5rem !default;
@@ -34,12 +35,6 @@ $fd-popover-arrow-offset-x: calc(var(--fdIcon_Button_Width) * 0.5 - #{$fd-popove
   }
 }
 
-@mixin fd-popover-resizable-body() {
-  &.#{$block}__body--resizable {
-    @content;
-  }
-}
-
 .#{$block} {
   @include fd-reset();
 
@@ -49,10 +44,10 @@ $fd-popover-arrow-offset-x: calc(var(--fdIcon_Button_Width) * 0.5 - #{$fd-popove
   --fdPopover_Resize_Handle_Position_Right: 0;
   --fdPopover_Resize_Handle_Position_Bottom: 0;
   --fdPopover_Resize_Handle_Position_Left: auto;
-  // --fdPopover_Resize_Handle_Margin_Top: 0;
-  // --fdPopover_Resize_Handle_Margin_Bottom: 0.125rem;
   --fdPopover_Resize_Handle_Rotate_Angle: 0;
   --fdPopover_Resize_Handle_Cursor: se-resize;
+  --fdPopover_Resize_Handle_Justify: flex-end;
+  --fdPopover_Resize_Handle_Transform_Scale: 1;
 
   position: relative;
   display: inline-block;
@@ -258,26 +253,6 @@ $fd-popover-arrow-offset-x: calc(var(--fdIcon_Button_Width) * 0.5 - #{$fd-popove
 
           top: 100%;
         }
-
-        @include fd-popover-resizable-body() {
-          --fdPopover_Resize_Handle_Position_Top: 0;
-          --fdPopover_Resize_Handle_Position_Right: 0;
-          --fdPopover_Resize_Handle_Position_Bottom: auto;
-          --fdPopover_Resize_Handle_Position_Left: auto;
-          --fdPopover_Resize_Handle_Rotate_Angle: -90deg;
-          --fdPopover_Resize_Handle_Cursor: ne-resize;
-        }
-
-        &.#{$block}__body--arrow-x-end {
-          @include fd-popover-resizable-body() {
-            --fdPopover_Resize_Handle_Position_Top: 0;
-            --fdPopover_Resize_Handle_Position_Right: auto;
-            --fdPopover_Resize_Handle_Position_Bottom: auto;
-            --fdPopover_Resize_Handle_Position_Left: 0;
-            --fdPopover_Resize_Handle_Rotate_Angle: 180deg;
-            --fdPopover_Resize_Handle_Cursor: nw-resize;
-          }
-        }
       }
 
       &-left {
@@ -403,6 +378,102 @@ $fd-popover-arrow-offset-x: calc(var(--fdIcon_Button_Width) * 0.5 - #{$fd-popove
         --fdIcon_Button_Width: 1.375rem;
       }
     }
+
+    &.#{$blockBody}--resizable {
+      @include fd-rtl() {
+        --fdPopover_Resize_Handle_Position_Right: auto;
+        --fdPopover_Resize_Handle_Position_Left: 0;
+        --fdPopover_Resize_Handle_Cursor: sw-resize;
+        --fdPopover_Resize_Handle_Transform_Scale: -1;
+        --fdPopover_Resize_Handle_Justify: flex-start;
+      }
+
+      &.#{$blockBody}--right.#{$blockBody}--arrow-x-end {
+        --fdPopover_Resize_Handle_Position_Left: 0;
+        --fdPopover_Resize_Handle_Position_Right: auto;
+        --fdPopover_Resize_Handle_Cursor: sw-resize;
+        --fdPopover_Resize_Handle_Transform_Scale: -1;
+
+        @include fd-rtl() {
+          --fdPopover_Resize_Handle_Position_Right: 0;
+          --fdPopover_Resize_Handle_Position_Left: auto;
+          --fdPopover_Resize_Handle_Cursor: se-resize;
+          --fdPopover_Resize_Handle_Transform_Scale: 1;
+        }
+      }
+
+      &.#{$blockBody}--above.#{$blockBody}--arrow-bottom {
+        --fdPopover_Resize_Handle_Position_Top: 0;
+        --fdPopover_Resize_Handle_Position_Bottom: auto;
+        --fdPopover_Resize_Handle_Position_Right: 0;
+        --fdPopover_Resize_Handle_Position_Left: auto;
+        --fdPopover_Resize_Handle_Cursor: ne-resize;
+        --fdPopover_Resize_Handle_Rotate_Angle: -90deg;
+        --fdPopover_Resize_Handle_Transform_Scale: 1;
+
+        @include fd-rtl() {
+          --fdPopover_Resize_Handle_Position_Right: auto;
+          --fdPopover_Resize_Handle_Position_Left: 0;
+          --fdPopover_Resize_Handle_Cursor: nw-resize;
+          --fdPopover_Resize_Handle_Transform_Scale: 1;
+          --fdPopover_Resize_Handle_Rotate_Angle: 180deg;
+        }
+
+        &.#{$blockBody}--right.#{$blockBody}--arrow-x-end {
+          --fdPopover_Resize_Handle_Position_Right: auto;
+          --fdPopover_Resize_Handle_Position_Left: 0;
+          --fdPopover_Resize_Handle_Rotate_Angle: 180deg;
+          --fdPopover_Resize_Handle_Cursor: nw-resize;
+
+          @include fd-rtl() {
+            --fdPopover_Resize_Handle_Position_Right: 0;
+            --fdPopover_Resize_Handle_Position_Left: auto;
+            --fdPopover_Resize_Handle_Rotate_Angle: -90deg;
+            --fdPopover_Resize_Handle_Cursor: ne-resize;
+          }
+        }
+      }
+
+      &.#{$blockBody}--after.#{$blockBody}--arrow-left {
+        --fdPopover_Resize_Handle_Position_Top: auto;
+        --fdPopover_Resize_Handle_Position_Bottom: 0;
+        --fdPopover_Resize_Handle_Position_Right: 0;
+        --fdPopover_Resize_Handle_Position_Left: auto;
+        --fdPopover_Resize_Handle_Cursor: se-resize;
+
+        @include fd-rtl() {
+          --fdPopover_Resize_Handle_Rotate_Angle: -90deg;
+        }
+
+        &.#{$blockBody}--bottom.#{$blockBody}--arrow-y-end {
+          --fdPopover_Resize_Handle_Position_Top: 0;
+          --fdPopover_Resize_Handle_Position_Bottom: auto;
+          --fdPopover_Resize_Handle_Position_Right: 0;
+          --fdPopover_Resize_Handle_Position_Left: auto;
+          --fdPopover_Resize_Handle_Cursor: ne-resize;
+          --fdPopover_Resize_Handle_Rotate_Angle: -90deg;
+          --fdPopover_Resize_Handle_Transform_Scale: 1;
+        }
+      }
+
+      &.#{$blockBody}--before.#{$blockBody}--arrow-right {
+        --fdPopover_Resize_Handle_Position_Top: auto;
+        --fdPopover_Resize_Handle_Position_Bottom: 0;
+        --fdPopover_Resize_Handle_Position_Right: auto;
+        --fdPopover_Resize_Handle_Position_Left: 0;
+        --fdPopover_Resize_Handle_Cursor: sw-resize;
+        --fdPopover_Resize_Handle_Rotate_Angle: 0;
+        --fdPopover_Resize_Handle_Transform_Scale: -1;
+
+        &.#{$blockBody}--middle.#{$blockBody}--arrow-y-center,
+        &.#{$blockBody}--bottom.#{$blockBody}--arrow-y-end {
+          --fdPopover_Resize_Handle_Position_Top: 0;
+          --fdPopover_Resize_Handle_Position_Bottom: auto;
+          --fdPopover_Resize_Handle_Rotate_Angle: 90deg;
+          --fdPopover_Resize_Handle_Cursor: nw-resize;
+        }
+      }
+    }
   }
 
   &__resize-handle {
@@ -412,11 +483,6 @@ $fd-popover-arrow-offset-x: calc(var(--fdIcon_Button_Width) * 0.5 - #{$fd-popove
       justify-content: flex-end;
     }
 
-    @include fd-set-position-right(var(--fdPopover_Resize_Handle_Position_Right));
-    @include fd-set-position-left(var(--fdPopover_Resize_Handle_Position_Left));
-
-    bottom: var(--fdPopover_Resize_Handle_Position_Bottom);
-    top: var(--fdPopover_Resize_Handle_Position_Top);
     font-size: 1rem;
     overflow: hidden;
     line-height: 1rem;
@@ -424,6 +490,10 @@ $fd-popover-arrow-offset-x: calc(var(--fdIcon_Button_Width) * 0.5 - #{$fd-popove
     padding: 0.125rem;
     color: var(--sapButton_Lite_TextColor);
     cursor: var(--fdPopover_Resize_Handle_Cursor);
+    top: var(--fdPopover_Resize_Handle_Position_Top);
+    left: var(--fdPopover_Resize_Handle_Position_Left);
+    right: var(--fdPopover_Resize_Handle_Position_Right);
+    bottom: var(--fdPopover_Resize_Handle_Position_Bottom);
     transform: rotate(var(--fdPopover_Resize_Handle_Rotate_Angle));
 
     @include fd-icon("resize-corner", "after") {
@@ -431,10 +501,12 @@ $fd-popover-arrow-offset-x: calc(var(--fdIcon_Button_Width) * 0.5 - #{$fd-popove
       @include fd-set-height(1rem);
 
       @include fd-flex() {
-        justify-content: flex-end;
+        justify-content: var(--fdPopover_Resize_Handle_Justify);
       }
 
       color: inherit;
+      -webkit-transform: scaleX(var(--fdPopover_Resize_Handle_Transform_Scale));
+      transform: scaleX(var(--fdPopover_Resize_Handle_Transform_Scale));
     }
   }
 

@@ -21715,16 +21715,16 @@ exports[`Check stories > Components/Popover > Story Placement > Should match sna
         <div class=\\"fd-popover__control\\">
             <button
                 class=\\"fd-button\\"
-                aria-controls=\\"popoverF1\\"
+                aria-controls=\\"popoverF1a\\"
                 aria-expanded=\\"true\\"
                 aria-haspopup=\\"true\\"
-                onclick=\\"onPopoverClick('popoverF1');\\"
+                onclick=\\"onPopoverClick('popoverF1a');\\"
                 role=\\"button\\"
             >
                 <i class=\\"sap-icon--navigation-down-arrow\\" role=\\"presentation\\"></i>
             </button>
         </div>
-        <div class=\\"fd-popover__body fd-popover__body--above fd-popover__body--center fd-popover__body--arrow-bottom fd-popover__body--arrow-x-center\\" aria-hidden=\\"false\\" id=\\"popoverF1\\">
+        <div class=\\"fd-popover__body fd-popover__body--above fd-popover__body--center fd-popover__body--arrow-bottom fd-popover__body--arrow-x-center\\" aria-hidden=\\"false\\" id=\\"popoverF1a\\">
             <div class=\\"fd-popover__wrapper\\" style=\\"max-height: 250px;\\">
                 <nav class=\\"fd-menu\\" aria-label=\\"big navigation menu\\">
                     <ul class=\\"fd-menu__list fd-menu__list--no-shadow\\">
@@ -21748,16 +21748,16 @@ exports[`Check stories > Components/Popover > Story Placement > Should match sna
         <div class=\\"fd-popover__control\\">
             <button
                 class=\\"fd-button\\"
-                aria-controls=\\"popoverF1\\"
+                aria-controls=\\"popoverF1b\\"
                 aria-expanded=\\"true\\"
                 aria-haspopup=\\"true\\"
-                onclick=\\"onPopoverClick('popoverF1');\\"
+                onclick=\\"onPopoverClick('popoverF1b');\\"
                 role=\\"button\\"
             >
                 <i class=\\"sap-icon--navigation-down-arrow\\" role=\\"presentation\\"></i>
             </button>
         </div>
-        <div class=\\"fd-popover__body fd-popover__body--above fd-popover__body--right fd-popover__body--arrow-bottom fd-popover__body--arrow-x-end\\" aria-hidden=\\"false\\" id=\\"popoverF1\\">
+        <div class=\\"fd-popover__body fd-popover__body--above fd-popover__body--right fd-popover__body--arrow-bottom fd-popover__body--arrow-x-end\\" aria-hidden=\\"false\\" id=\\"popoverF1b\\">
             <div class=\\"fd-popover__wrapper\\" style=\\"max-height: 250px;\\">
                 <nav class=\\"fd-menu\\" aria-label=\\"big navigation menu\\">
                     <ul class=\\"fd-menu__list fd-menu__list--no-shadow\\">
@@ -21783,16 +21783,16 @@ exports[`Check stories > Components/Popover > Story Placement > Should match sna
         <div class=\\"fd-popover__control\\">
             <button
                 class=\\"fd-button\\"
-                aria-controls=\\"popoverF1\\"
+                aria-controls=\\"popoverF1c\\"
                 aria-expanded=\\"true\\"
                 aria-haspopup=\\"true\\"
-                onclick=\\"onPopoverClick('popoverF1');\\"
+                onclick=\\"onPopoverClick('popoverF1c');\\"
                 role=\\"button\\"
             >
                 <i class=\\"sap-icon--navigation-left-arrow\\" role=\\"presentation\\"></i>
             </button>
         </div>
-        <div class=\\"fd-popover__body fd-popover__body--before fd-popover__body--arrow-right\\" aria-hidden=\\"false\\" id=\\"popoverF1\\">
+        <div class=\\"fd-popover__body fd-popover__body--before fd-popover__body--arrow-right\\" aria-hidden=\\"false\\" id=\\"popoverF1c\\">
             <div class=\\"fd-popover__wrapper\\" style=\\"max-height: 250px;\\">
                 <nav class=\\"fd-menu\\" aria-label=\\"big navigation menu\\">
                     <ul class=\\"fd-menu__list fd-menu__list--no-shadow\\">
@@ -21816,16 +21816,16 @@ exports[`Check stories > Components/Popover > Story Placement > Should match sna
         <div class=\\"fd-popover__control\\">
             <button
                 class=\\"fd-button\\"
-                aria-controls=\\"popoverF1\\"
+                aria-controls=\\"popoverF1d\\"
                 aria-expanded=\\"true\\"
                 aria-haspopup=\\"true\\"
-                onclick=\\"onPopoverClick('popoverF1');\\"
+                onclick=\\"onPopoverClick('popoverF1d');\\"
                 role=\\"button\\"
             >
                 <i class=\\"sap-icon--navigation-right-arrow\\" role=\\"presentation\\"></i>
             </button>
         </div>
-        <div class=\\"fd-popover__body fd-popover__body--after fd-popover__body--arrow-left\\" aria-hidden=\\"false\\" id=\\"popoverF1\\">
+        <div class=\\"fd-popover__body fd-popover__body--after fd-popover__body--arrow-left\\" aria-hidden=\\"false\\" id=\\"popoverF1d\\">
             <div class=\\"fd-popover__wrapper\\" style=\\"max-height: 250px;\\">
                 <nav class=\\"fd-menu\\" aria-label=\\"big navigation menu\\">
                     <ul class=\\"fd-menu__list fd-menu__list--no-shadow\\">
@@ -21851,16 +21851,16 @@ exports[`Check stories > Components/Popover > Story Placement > Should match sna
         <div class=\\"fd-popover__control\\">
             <button
                 class=\\"fd-button\\"
-                aria-controls=\\"popoverF1\\"
+                aria-controls=\\"popoverF1e\\"
                 aria-expanded=\\"true\\"
                 aria-haspopup=\\"true\\"
-                onclick=\\"onPopoverClick('popoverF1');\\"
+                onclick=\\"onPopoverClick('popoverF1e');\\"
                 role=\\"button\\"
             >
                 <i class=\\"sap-icon--navigation-left-arrow\\" role=\\"presentation\\"></i>
             </button>
         </div>
-        <div class=\\"fd-popover__body fd-popover__body--before fd-popover__body--middle fd-popover__body--arrow-right fd-popover__body--arrow-y-center\\" aria-hidden=\\"false\\" id=\\"popoverF1\\">
+        <div class=\\"fd-popover__body fd-popover__body--before fd-popover__body--middle fd-popover__body--arrow-right fd-popover__body--arrow-y-center\\" aria-hidden=\\"false\\" id=\\"popoverF1e\\">
             <div class=\\"fd-popover__wrapper\\" style=\\"max-height: 250px;\\">
                 <nav class=\\"fd-menu\\" aria-label=\\"big navigation menu\\">
                     <ul class=\\"fd-menu__list fd-menu__list--no-shadow\\">
@@ -21884,16 +21884,16 @@ exports[`Check stories > Components/Popover > Story Placement > Should match sna
         <div class=\\"fd-popover__control\\">
             <button
                 class=\\"fd-button\\"
-                aria-controls=\\"popoverF1\\"
+                aria-controls=\\"popoverF1f\\"
                 aria-expanded=\\"true\\"
                 aria-haspopup=\\"true\\"
-                onclick=\\"onPopoverClick('popoverF1');\\"
+                onclick=\\"onPopoverClick('popoverF1f');\\"
                 role=\\"button\\"
             >
                 <i class=\\"sap-icon--navigation-right-arrow\\" role=\\"presentation\\"></i>
             </button>
         </div>
-        <div class=\\"fd-popover__body fd-popover__body--after fd-popover__body--middle fd-popover__body--arrow-left fd-popover__body--arrow-y-center\\" aria-hidden=\\"false\\" id=\\"popoverF1\\">
+        <div class=\\"fd-popover__body fd-popover__body--after fd-popover__body--middle fd-popover__body--arrow-left fd-popover__body--arrow-y-center\\" aria-hidden=\\"false\\" id=\\"popoverF1f\\">
             <div class=\\"fd-popover__wrapper\\" style=\\"max-height: 250px;\\">
                 <nav class=\\"fd-menu\\" aria-label=\\"big navigation menu\\">
                     <ul class=\\"fd-menu__list fd-menu__list--no-shadow\\">
@@ -21919,16 +21919,16 @@ exports[`Check stories > Components/Popover > Story Placement > Should match sna
         <div class=\\"fd-popover__control\\">
             <button
                 class=\\"fd-button\\"
-                aria-controls=\\"popoverF1\\"
+                aria-controls=\\"popoverF1g\\"
                 aria-expanded=\\"true\\"
                 aria-haspopup=\\"true\\"
-                onclick=\\"onPopoverClick('popoverF1');\\"
+                onclick=\\"onPopoverClick('popoverF1g');\\"
                 role=\\"button\\"
             >
                 <i class=\\"sap-icon--navigation-left-arrow\\" role=\\"presentation\\"></i>
             </button>
         </div>
-        <div class=\\"fd-popover__body fd-popover__body--before fd-popover__body--bottom fd-popover__body--arrow-right fd-popover__body--arrow-y-end\\" aria-hidden=\\"false\\" id=\\"popoverF1\\">
+        <div class=\\"fd-popover__body fd-popover__body--before fd-popover__body--bottom fd-popover__body--arrow-right fd-popover__body--arrow-y-end\\" aria-hidden=\\"false\\" id=\\"popoverF1g\\">
             <div class=\\"fd-popover__wrapper\\" style=\\"max-height: 250px;\\">
                 <nav class=\\"fd-menu\\" aria-label=\\"big navigation menu\\">
                     <ul class=\\"fd-menu__list fd-menu__list--no-shadow\\">
@@ -21952,16 +21952,16 @@ exports[`Check stories > Components/Popover > Story Placement > Should match sna
         <div class=\\"fd-popover__control\\">
             <button
                 class=\\"fd-button\\"
-                aria-controls=\\"popoverF1\\"
+                aria-controls=\\"popoverF1h\\"
                 aria-expanded=\\"true\\"
                 aria-haspopup=\\"true\\"
-                onclick=\\"onPopoverClick('popoverF1');\\"
+                onclick=\\"onPopoverClick('popoverF1h');\\"
                 role=\\"button\\"
             >
                 <i class=\\"sap-icon--navigation-right-arrow\\" role=\\"presentation\\"></i>
             </button>
         </div>
-        <div class=\\"fd-popover__body fd-popover__body--after fd-popover__body--bottom fd-popover__body--arrow-left fd-popover__body--arrow-y-end\\" aria-hidden=\\"false\\" id=\\"popoverF1\\">
+        <div class=\\"fd-popover__body fd-popover__body--after fd-popover__body--bottom fd-popover__body--arrow-left fd-popover__body--arrow-y-end\\" aria-hidden=\\"false\\" id=\\"popoverF1h\\">
             <div class=\\"fd-popover__wrapper\\" style=\\"max-height: 250px;\\">
                 <nav class=\\"fd-menu\\" aria-label=\\"big navigation menu\\">
                     <ul class=\\"fd-menu__list fd-menu__list--no-shadow\\">
@@ -21987,16 +21987,16 @@ exports[`Check stories > Components/Popover > Story Placement > Should match sna
         <div class=\\"fd-popover__control\\">
             <button
                 class=\\"fd-button\\"
-                aria-controls=\\"popoverF1\\"
+                aria-controls=\\"popoverF1i\\"
                 aria-expanded=\\"true\\"
                 aria-haspopup=\\"true\\"
-                onclick=\\"onPopoverClick('popoverF1');\\"
+                onclick=\\"onPopoverClick('popoverF1i');\\"
                 role=\\"button\\"
             >
                 <i class=\\"sap-icon--navigation-down-arrow\\" role=\\"presentation\\"></i>
             </button>
         </div>
-        <div class=\\"fd-popover__body\\" aria-hidden=\\"false\\" id=\\"popoverF1\\">
+        <div class=\\"fd-popover__body\\" aria-hidden=\\"false\\" id=\\"popoverF1i\\">
             <div class=\\"fd-popover__wrapper\\" style=\\"max-height: 250px;\\">
                 <nav class=\\"fd-menu\\" aria-label=\\"big navigation menu\\">
                     <ul class=\\"fd-menu__list fd-menu__list--no-shadow\\">
@@ -22020,16 +22020,16 @@ exports[`Check stories > Components/Popover > Story Placement > Should match sna
         <div class=\\"fd-popover__control\\">
             <button
                 class=\\"fd-button\\"
-                aria-controls=\\"popoverF1\\"
+                aria-controls=\\"popoverF1j\\"
                 aria-expanded=\\"true\\"
                 aria-haspopup=\\"true\\"
-                onclick=\\"onPopoverClick('popoverF1');\\"
+                onclick=\\"onPopoverClick('popoverF1j');\\"
                 role=\\"button\\"
             >
                 <i class=\\"sap-icon--navigation-down-arrow\\" role=\\"presentation\\"></i>
             </button>
         </div>
-        <div class=\\"fd-popover__body fd-popover__body--center fd-popover__body--arrow-x-center\\" aria-hidden=\\"false\\" id=\\"popoverF1\\">
+        <div class=\\"fd-popover__body fd-popover__body--center fd-popover__body--arrow-x-center\\" aria-hidden=\\"false\\" id=\\"popoverF1j\\">
             <div class=\\"fd-popover__wrapper\\" style=\\"max-height: 250px;\\">
                 <nav class=\\"fd-menu\\" aria-label=\\"big navigation menu\\">
                     <ul class=\\"fd-menu__list fd-menu__list--no-shadow\\">
@@ -22053,16 +22053,16 @@ exports[`Check stories > Components/Popover > Story Placement > Should match sna
         <div class=\\"fd-popover__control\\">
             <button
                 class=\\"fd-button\\"
-                aria-controls=\\"popoverF1\\"
+                aria-controls=\\"popoverF1k\\"
                 aria-expanded=\\"true\\"
                 aria-haspopup=\\"true\\"
-                onclick=\\"onPopoverClick('popoverF1');\\"
+                onclick=\\"onPopoverClick('popoverF1k');\\"
                 role=\\"button\\"
             >
                 <i class=\\"sap-icon--navigation-down-arrow\\" role=\\"presentation\\"></i>
             </button>
         </div>
-        <div class=\\"fd-popover__body fd-popover__body--right fd-popover__body--arrow-x-end\\" aria-hidden=\\"false\\" id=\\"popoverF1\\">
+        <div class=\\"fd-popover__body fd-popover__body--right fd-popover__body--arrow-x-end\\" aria-hidden=\\"false\\" id=\\"popoverF1k\\">
             <div class=\\"fd-popover__wrapper\\" style=\\"max-height: 250px;\\">
                 <nav class=\\"fd-menu\\" aria-label=\\"big navigation menu\\">
                     <ul class=\\"fd-menu__list fd-menu__list--no-shadow\\">
@@ -22078,6 +22078,427 @@ exports[`Check stories > Components/Popover > Story Placement > Should match sna
                         </li>
                     </ul>
                 </nav>
+            </div>
+        </div>
+    </div>
+</div>
+"
+`;
+
+exports[`Check stories > Components/Popover > Story Resizable > Should match snapshot 1`] = `
+"<div style=\\"display: flex; justify-content: center; padding: 100px 0 25px;\\">
+    <div class=\\"fd-popover\\">
+        <div class=\\"fd-popover__control\\">
+            <button
+                class=\\"fd-button\\"
+                aria-controls=\\"popoverF1r\\"
+                aria-expanded=\\"true\\"
+                aria-haspopup=\\"true\\"
+                onclick=\\"onPopoverClick('popoverF1r');\\"
+                role=\\"button\\"
+            >
+                <i class=\\"sap-icon--navigation-down-arrow\\" role=\\"presentation\\"></i>
+            </button>
+        </div>
+        <div class=\\"fd-popover__body fd-popover__body--above fd-popover__body--arrow-bottom fd-popover__body--resizable\\" aria-hidden=\\"false\\" id=\\"popoverF1r\\">
+            <div class=\\"fd-popover__wrapper\\" style=\\"max-height: 250px;\\">
+                <nav class=\\"fd-menu\\" aria-label=\\"big navigation menu\\">
+                    <ul class=\\"fd-menu__list fd-menu__list--no-shadow\\">
+                        <li class=\\"fd-menu__item\\">
+                            <a class=\\"fd-menu__link\\" href=\\"#\\">
+                                <span class=\\"fd-menu__title\\">Option 1</span>
+                            </a>
+                        </li>
+                        <li class=\\"fd-menu__item\\">
+                            <a class=\\"fd-menu__link\\" href=\\"#\\">
+                                <span class=\\"fd-menu__title\\">Option 2</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <span class=\\"fd-popover__resize-handle\\"></span>
+            </div>
+        </div>
+    </div>
+
+    <div class=\\"fd-popover\\" style=\\"margin: 0 100px;\\">
+        <div class=\\"fd-popover__control\\">
+            <button
+                class=\\"fd-button\\"
+                aria-controls=\\"popoverF2r\\"
+                aria-expanded=\\"true\\"
+                aria-haspopup=\\"true\\"
+                onclick=\\"onPopoverClick('popoverF2r');\\"
+                role=\\"button\\"
+            >
+                <i class=\\"sap-icon--navigation-down-arrow\\" role=\\"presentation\\"></i>
+            </button>
+        </div>
+        <div class=\\"fd-popover__body fd-popover__body--above fd-popover__body--center fd-popover__body--arrow-bottom fd-popover__body--arrow-x-center fd-popover__body--resizable\\" aria-hidden=\\"false\\" id=\\"popoverF2r\\">
+            <div class=\\"fd-popover__wrapper\\" style=\\"max-height: 250px;\\">
+                <nav class=\\"fd-menu\\" aria-label=\\"big navigation menu\\">
+                    <ul class=\\"fd-menu__list fd-menu__list--no-shadow\\">
+                        <li class=\\"fd-menu__item\\">
+                            <a class=\\"fd-menu__link\\" href=\\"#\\">
+                                <span class=\\"fd-menu__title\\">Option 3</span>
+                            </a>
+                        </li>
+                        <li class=\\"fd-menu__item\\">
+                            <a class=\\"fd-menu__link\\" href=\\"#\\">
+                                <span class=\\"fd-menu__title\\">Option 4</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <span class=\\"fd-popover__resize-handle\\"></span>
+            </div>
+        </div>
+    </div>
+
+    <div class=\\"fd-popover\\">
+        <div class=\\"fd-popover__control\\">
+            <button
+                class=\\"fd-button\\"
+                aria-controls=\\"popoverF3r\\"
+                aria-expanded=\\"true\\"
+                aria-haspopup=\\"true\\"
+                onclick=\\"onPopoverClick('popoverF3r');\\"
+                role=\\"button\\"
+            >
+                <i class=\\"sap-icon--navigation-down-arrow\\" role=\\"presentation\\"></i>
+            </button>
+        </div>
+        <div class=\\"fd-popover__body fd-popover__body--above fd-popover__body--right fd-popover__body--arrow-bottom fd-popover__body--arrow-x-end fd-popover__body--resizable\\" aria-hidden=\\"false\\" id=\\"popoverF3r\\">
+            <div class=\\"fd-popover__wrapper\\" style=\\"max-height: 250px;\\">
+                <nav class=\\"fd-menu\\" aria-label=\\"big navigation menu\\">
+                    <ul class=\\"fd-menu__list fd-menu__list--no-shadow\\">
+                        <li class=\\"fd-menu__item\\">
+                            <a class=\\"fd-menu__link\\" href=\\"#\\">
+                                <span class=\\"fd-menu__title\\">Option 5</span>
+                            </a>
+                        </li>
+                        <li class=\\"fd-menu__item\\">
+                            <a class=\\"fd-menu__link\\" href=\\"#\\">
+                                <span class=\\"fd-menu__title\\">Option 6</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <span class=\\"fd-popover__resize-handle\\"></span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div style=\\"display: flex; justify-content: space-between; padding: 0 100px 50px\\">
+    <div class=\\"fd-popover\\">
+        <div class=\\"fd-popover__control\\">
+            <button
+                class=\\"fd-button\\"
+                aria-controls=\\"popoverF4r\\"
+                aria-expanded=\\"true\\"
+                aria-haspopup=\\"true\\"
+                onclick=\\"onPopoverClick('popoverF4r');\\"
+                role=\\"button\\"
+            >
+                <i class=\\"sap-icon--navigation-left-arrow\\" role=\\"presentation\\"></i>
+            </button>
+        </div>
+        <div class=\\"fd-popover__body fd-popover__body--before fd-popover__body--arrow-right fd-popover__body--resizable\\" aria-hidden=\\"false\\" id=\\"popoverF4r\\">
+            <div class=\\"fd-popover__wrapper\\" style=\\"max-height: 250px;\\">
+                <nav class=\\"fd-menu\\" aria-label=\\"big navigation menu\\">
+                    <ul class=\\"fd-menu__list fd-menu__list--no-shadow\\">
+                        <li class=\\"fd-menu__item\\">
+                            <a class=\\"fd-menu__link\\" href=\\"#\\">
+                                <span class=\\"fd-menu__title\\">Option 7</span>
+                            </a>
+                        </li>
+                        <li class=\\"fd-menu__item\\">
+                            <a class=\\"fd-menu__link\\" href=\\"#\\">
+                                <span class=\\"fd-menu__title\\">Option 8</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <span class=\\"fd-popover__resize-handle\\"></span>
+            </div>
+        </div>
+    </div>
+
+    <div class=\\"fd-popover\\">
+        <div class=\\"fd-popover__control\\">
+            <button
+                class=\\"fd-button\\"
+                aria-controls=\\"popoverF5r\\"
+                aria-expanded=\\"true\\"
+                aria-haspopup=\\"true\\"
+                onclick=\\"onPopoverClick('popoverF5r');\\"
+                role=\\"button\\"
+            >
+                <i class=\\"sap-icon--navigation-right-arrow\\" role=\\"presentation\\"></i>
+            </button>
+        </div>
+        <div class=\\"fd-popover__body fd-popover__body--after fd-popover__body--arrow-left fd-popover__body--resizable\\" aria-hidden=\\"false\\" id=\\"popoverF5r\\">
+            <div class=\\"fd-popover__wrapper\\" style=\\"max-height: 250px;\\">
+                <nav class=\\"fd-menu\\" aria-label=\\"big navigation menu\\">
+                    <ul class=\\"fd-menu__list fd-menu__list--no-shadow\\">
+                        <li class=\\"fd-menu__item\\">
+                            <a class=\\"fd-menu__link\\" href=\\"#\\">
+                                <span class=\\"fd-menu__title\\">Option 9</span>
+                            </a>
+                        </li>
+                        <li class=\\"fd-menu__item\\">
+                            <a class=\\"fd-menu__link\\" href=\\"#\\">
+                                <span class=\\"fd-menu__title\\">Option 10</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <span class=\\"fd-popover__resize-handle\\"></span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div style=\\"display: flex; justify-content: space-between; padding: 50px 100px 50px\\">
+    <div class=\\"fd-popover\\">
+        <div class=\\"fd-popover__control\\">
+            <button
+                class=\\"fd-button\\"
+                aria-controls=\\"popoverF6r\\"
+                aria-expanded=\\"true\\"
+                aria-haspopup=\\"true\\"
+                onclick=\\"onPopoverClick('popoverF6r');\\"
+                role=\\"button\\"
+            >
+                <i class=\\"sap-icon--navigation-left-arrow\\" role=\\"presentation\\"></i>
+            </button>
+        </div>
+        <div class=\\"fd-popover__body fd-popover__body--before fd-popover__body--middle fd-popover__body--arrow-right fd-popover__body--arrow-y-center fd-popover__body--resizable\\" aria-hidden=\\"false\\" id=\\"popoverF6r\\">
+            <div class=\\"fd-popover__wrapper\\" style=\\"max-height: 250px;\\">
+                <nav class=\\"fd-menu\\" aria-label=\\"big navigation menu\\">
+                    <ul class=\\"fd-menu__list fd-menu__list--no-shadow\\">
+                        <li class=\\"fd-menu__item\\">
+                            <a class=\\"fd-menu__link\\" href=\\"#\\">
+                                <span class=\\"fd-menu__title\\">Option 11</span>
+                            </a>
+                        </li>
+                        <li class=\\"fd-menu__item\\">
+                            <a class=\\"fd-menu__link\\" href=\\"#\\">
+                                <span class=\\"fd-menu__title\\">Option 12</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <span class=\\"fd-popover__resize-handle\\"></span>
+            </div>
+        </div>
+    </div>
+
+    <div class=\\"fd-popover\\">
+        <div class=\\"fd-popover__control\\">
+            <button
+                class=\\"fd-button\\"
+                aria-controls=\\"popoverF7r\\"
+                aria-expanded=\\"true\\"
+                aria-haspopup=\\"true\\"
+                onclick=\\"onPopoverClick('popoverF7r');\\"
+                role=\\"button\\"
+            >
+                <i class=\\"sap-icon--navigation-right-arrow\\" role=\\"presentation\\"></i>
+            </button>
+        </div>
+        <div class=\\"fd-popover__body fd-popover__body--after fd-popover__body--middle fd-popover__body--arrow-left fd-popover__body--arrow-y-center fd-popover__body--resizable\\" aria-hidden=\\"false\\" id=\\"popoverF7r\\">
+            <div class=\\"fd-popover__wrapper\\" style=\\"max-height: 250px;\\">
+                <nav class=\\"fd-menu\\" aria-label=\\"big navigation menu\\">
+                    <ul class=\\"fd-menu__list fd-menu__list--no-shadow\\">
+                        <li class=\\"fd-menu__item\\">
+                            <a class=\\"fd-menu__link\\" href=\\"#\\">
+                                <span class=\\"fd-menu__title\\">Option 13</span>
+                            </a>
+                        </li>
+                        <li class=\\"fd-menu__item\\">
+                            <a class=\\"fd-menu__link\\" href=\\"#\\">
+                                <span class=\\"fd-menu__title\\">Option 14</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <span class=\\"fd-popover__resize-handle\\"></span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div style=\\"display: flex; justify-content: space-between; padding: 50px 100px 25px\\">
+    <div class=\\"fd-popover\\">
+        <div class=\\"fd-popover__control\\">
+            <button
+                class=\\"fd-button\\"
+                aria-controls=\\"popoverF8r\\"
+                aria-expanded=\\"true\\"
+                aria-haspopup=\\"true\\"
+                onclick=\\"onPopoverClick('popoverF8r');\\"
+                role=\\"button\\"
+            >
+                <i class=\\"sap-icon--navigation-left-arrow\\" role=\\"presentation\\"></i>
+            </button>
+        </div>
+        <div class=\\"fd-popover__body fd-popover__body--before fd-popover__body--bottom fd-popover__body--arrow-right fd-popover__body--arrow-y-end fd-popover__body--resizable\\" aria-hidden=\\"false\\" id=\\"popoverF8r\\">
+            <div class=\\"fd-popover__wrapper\\" style=\\"max-height: 250px;\\">
+                <nav class=\\"fd-menu\\" aria-label=\\"big navigation menu\\">
+                    <ul class=\\"fd-menu__list fd-menu__list--no-shadow\\">
+                        <li class=\\"fd-menu__item\\">
+                            <a class=\\"fd-menu__link\\" href=\\"#\\">
+                                <span class=\\"fd-menu__title\\">Option 15</span>
+                            </a>
+                        </li>
+                        <li class=\\"fd-menu__item\\">
+                            <a class=\\"fd-menu__link\\" href=\\"#\\">
+                                <span class=\\"fd-menu__title\\">Option 16</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <span class=\\"fd-popover__resize-handle\\"></span>
+            </div>
+        </div>
+    </div>
+
+    <div class=\\"fd-popover\\">
+        <div class=\\"fd-popover__control\\">
+            <button
+                class=\\"fd-button\\"
+                aria-controls=\\"popoverF9r\\"
+                aria-expanded=\\"true\\"
+                aria-haspopup=\\"true\\"
+                onclick=\\"onPopoverClick('popoverF9r');\\"
+                role=\\"button\\"
+            >
+                <i class=\\"sap-icon--navigation-right-arrow\\" role=\\"presentation\\"></i>
+            </button>
+        </div>
+        <div class=\\"fd-popover__body fd-popover__body--after fd-popover__body--bottom fd-popover__body--arrow-left fd-popover__body--arrow-y-end fd-popover__body--resizable\\" aria-hidden=\\"false\\" id=\\"popoverF9r\\">
+            <div class=\\"fd-popover__wrapper\\" style=\\"max-height: 250px;\\">
+                <nav class=\\"fd-menu\\" aria-label=\\"big navigation menu\\">
+                    <ul class=\\"fd-menu__list fd-menu__list--no-shadow\\">
+                        <li class=\\"fd-menu__item\\">
+                            <a class=\\"fd-menu__link\\" href=\\"#\\">
+                                <span class=\\"fd-menu__title\\">Option 17</span>
+                            </a>
+                        </li>
+                        <li class=\\"fd-menu__item\\">
+                            <a class=\\"fd-menu__link\\" href=\\"#\\">
+                                <span class=\\"fd-menu__title\\">Option 18</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <span class=\\"fd-popover__resize-handle\\"></span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div style=\\"display: flex; justify-content: center; padding-bottom: 100px;\\">
+    <div class=\\"fd-popover\\">
+        <div class=\\"fd-popover__control\\">
+            <button
+                class=\\"fd-button\\"
+                aria-controls=\\"popoverF10r\\"
+                aria-expanded=\\"true\\"
+                aria-haspopup=\\"true\\"
+                onclick=\\"onPopoverClick('popoverF10r');\\"
+                role=\\"button\\"
+            >
+                <i class=\\"sap-icon--navigation-down-arrow\\" role=\\"presentation\\"></i>
+            </button>
+        </div>
+        <div class=\\"fd-popover__body fd-popover__body--resizable\\" aria-hidden=\\"false\\" id=\\"popoverF10r\\">
+            <div class=\\"fd-popover__wrapper\\" style=\\"max-height: 250px;\\">
+                <nav class=\\"fd-menu\\" aria-label=\\"big navigation menu\\">
+                    <ul class=\\"fd-menu__list fd-menu__list--no-shadow\\">
+                        <li class=\\"fd-menu__item\\">
+                            <a class=\\"fd-menu__link\\" href=\\"#\\">
+                                <span class=\\"fd-menu__title\\">Option 19</span>
+                            </a>
+                        </li>
+                        <li class=\\"fd-menu__item\\">
+                            <a class=\\"fd-menu__link\\" href=\\"#\\">
+                                <span class=\\"fd-menu__title\\">Option 20</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <span class=\\"fd-popover__resize-handle\\"></span>
+            </div>
+        </div>
+    </div>
+
+    <div class=\\"fd-popover\\" style=\\"margin: 0 100px;\\">
+        <div class=\\"fd-popover__control\\">
+            <button
+                class=\\"fd-button\\"
+                aria-controls=\\"popoverF11r\\"
+                aria-expanded=\\"true\\"
+                aria-haspopup=\\"true\\"
+                onclick=\\"onPopoverClick('popoverF11r');\\"
+                role=\\"button\\"
+            >
+                <i class=\\"sap-icon--navigation-down-arrow\\" role=\\"presentation\\"></i>
+            </button>
+        </div>
+        <div class=\\"fd-popover__body fd-popover__body--center fd-popover__body--arrow-x-center fd-popover__body--resizable\\" aria-hidden=\\"false\\" id=\\"popoverF11r\\">
+            <div class=\\"fd-popover__wrapper\\" style=\\"max-height: 250px;\\">
+                <nav class=\\"fd-menu\\" aria-label=\\"big navigation menu\\">
+                    <ul class=\\"fd-menu__list fd-menu__list--no-shadow\\">
+                        <li class=\\"fd-menu__item\\">
+                            <a class=\\"fd-menu__link\\" href=\\"#\\">
+                                <span class=\\"fd-menu__title\\">Option 21</span>
+                            </a>
+                        </li>
+                        <li class=\\"fd-menu__item\\">
+                            <a class=\\"fd-menu__link\\" href=\\"#\\">
+                                <span class=\\"fd-menu__title\\">Option 22</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <span class=\\"fd-popover__resize-handle\\"></span>
+            </div>
+        </div>
+    </div>
+
+    <div class=\\"fd-popover\\">
+        <div class=\\"fd-popover__control\\">
+            <button
+                class=\\"fd-button\\"
+                aria-controls=\\"popoverF12r\\"
+                aria-expanded=\\"true\\"
+                aria-haspopup=\\"true\\"
+                onclick=\\"onPopoverClick('popoverF12r');\\"
+                role=\\"button\\"
+            >
+                <i class=\\"sap-icon--navigation-down-arrow\\" role=\\"presentation\\"></i>
+            </button>
+        </div>
+        <div class=\\"fd-popover__body fd-popover__body--right fd-popover__body--arrow-x-end fd-popover__body--resizable\\" aria-hidden=\\"false\\" id=\\"popoverF12r\\">
+            <div class=\\"fd-popover__wrapper\\" style=\\"max-height: 250px;\\">
+                <nav class=\\"fd-menu\\" aria-label=\\"big navigation menu\\">
+                    <ul class=\\"fd-menu__list fd-menu__list--no-shadow\\">
+                        <li class=\\"fd-menu__item\\">
+                            <a class=\\"fd-menu__link\\" href=\\"#\\">
+                                <span class=\\"fd-menu__title\\">Option 23</span>
+                            </a>
+                        </li>
+                        <li class=\\"fd-menu__item\\">
+                            <a class=\\"fd-menu__link\\" href=\\"#\\">
+                                <span class=\\"fd-menu__title\\">Option 24</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <span class=\\"fd-popover__resize-handle\\"></span>
             </div>
         </div>
     </div>

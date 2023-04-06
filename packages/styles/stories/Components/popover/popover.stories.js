@@ -950,12 +950,12 @@ export const Resizable = () => `<div style="display: flex; justify-content: cent
                     <ul class="fd-menu__list fd-menu__list--no-shadow">
                         <li class="fd-menu__item">
                             <a class="fd-menu__link" href="#">
-                                <span class="fd-menu__title">Option 1</span>
+                                <span class="fd-menu__title">Option 3</span>
                             </a>
                         </li>
                         <li class="fd-menu__item">
                             <a class="fd-menu__link" href="#">
-                                <span class="fd-menu__title">Option 2</span>
+                                <span class="fd-menu__title">Option 4</span>
                             </a>
                         </li>
                     </ul>
@@ -984,12 +984,12 @@ export const Resizable = () => `<div style="display: flex; justify-content: cent
                     <ul class="fd-menu__list fd-menu__list--no-shadow">
                         <li class="fd-menu__item">
                             <a class="fd-menu__link" href="#">
-                                <span class="fd-menu__title">Option 1</span>
+                                <span class="fd-menu__title">Option 5</span>
                             </a>
                         </li>
                         <li class="fd-menu__item">
                             <a class="fd-menu__link" href="#">
-                                <span class="fd-menu__title">Option 2</span>
+                                <span class="fd-menu__title">Option 6</span>
                             </a>
                         </li>
                     </ul>
@@ -1020,12 +1020,12 @@ export const Resizable = () => `<div style="display: flex; justify-content: cent
                     <ul class="fd-menu__list fd-menu__list--no-shadow">
                         <li class="fd-menu__item">
                             <a class="fd-menu__link" href="#">
-                                <span class="fd-menu__title">Option 1</span>
+                                <span class="fd-menu__title">Option 7</span>
                             </a>
                         </li>
                         <li class="fd-menu__item">
                             <a class="fd-menu__link" href="#">
-                                <span class="fd-menu__title">Option 2</span>
+                                <span class="fd-menu__title">Option 8</span>
                             </a>
                         </li>
                     </ul>
@@ -1054,12 +1054,12 @@ export const Resizable = () => `<div style="display: flex; justify-content: cent
                     <ul class="fd-menu__list fd-menu__list--no-shadow">
                         <li class="fd-menu__item">
                             <a class="fd-menu__link" href="#">
-                                <span class="fd-menu__title">Option 1</span>
+                                <span class="fd-menu__title">Option 9</span>
                             </a>
                         </li>
                         <li class="fd-menu__item">
                             <a class="fd-menu__link" href="#">
-                                <span class="fd-menu__title">Option 2</span>
+                                <span class="fd-menu__title">Option 10</span>
                             </a>
                         </li>
                     </ul>
@@ -1090,12 +1090,12 @@ export const Resizable = () => `<div style="display: flex; justify-content: cent
                     <ul class="fd-menu__list fd-menu__list--no-shadow">
                         <li class="fd-menu__item">
                             <a class="fd-menu__link" href="#">
-                                <span class="fd-menu__title">Option 1</span>
+                                <span class="fd-menu__title">Option 11</span>
                             </a>
                         </li>
                         <li class="fd-menu__item">
                             <a class="fd-menu__link" href="#">
-                                <span class="fd-menu__title">Option 2</span>
+                                <span class="fd-menu__title">Option 12</span>
                             </a>
                         </li>
                     </ul>
@@ -1124,12 +1124,12 @@ export const Resizable = () => `<div style="display: flex; justify-content: cent
                     <ul class="fd-menu__list fd-menu__list--no-shadow">
                         <li class="fd-menu__item">
                             <a class="fd-menu__link" href="#">
-                                <span class="fd-menu__title">Option 1</span>
+                                <span class="fd-menu__title">Option 13</span>
                             </a>
                         </li>
                         <li class="fd-menu__item">
                             <a class="fd-menu__link" href="#">
-                                <span class="fd-menu__title">Option 2</span>
+                                <span class="fd-menu__title">Option 14</span>
                             </a>
                         </li>
                     </ul>
@@ -1160,12 +1160,12 @@ export const Resizable = () => `<div style="display: flex; justify-content: cent
                     <ul class="fd-menu__list fd-menu__list--no-shadow">
                         <li class="fd-menu__item">
                             <a class="fd-menu__link" href="#">
-                                <span class="fd-menu__title">Option 1</span>
+                                <span class="fd-menu__title">Option 15</span>
                             </a>
                         </li>
                         <li class="fd-menu__item">
                             <a class="fd-menu__link" href="#">
-                                <span class="fd-menu__title">Option 2</span>
+                                <span class="fd-menu__title">Option 16</span>
                             </a>
                         </li>
                     </ul>
@@ -1194,12 +1194,12 @@ export const Resizable = () => `<div style="display: flex; justify-content: cent
                     <ul class="fd-menu__list fd-menu__list--no-shadow">
                         <li class="fd-menu__item">
                             <a class="fd-menu__link" href="#">
-                                <span class="fd-menu__title">Option 1</span>
+                                <span class="fd-menu__title">Option 17</span>
                             </a>
                         </li>
                         <li class="fd-menu__item">
                             <a class="fd-menu__link" href="#">
-                                <span class="fd-menu__title">Option 2</span>
+                                <span class="fd-menu__title">Option 18</span>
                             </a>
                         </li>
                     </ul>
@@ -1224,18 +1224,18 @@ export const Resizable = () => `<div style="display: flex; justify-content: cent
                 <i class="sap-icon--navigation-down-arrow" role="presentation"></i>
             </button>
         </div>
-        <div class="fd-popover__body" aria-hidden="false" id="popoverF10r">
+        <div class="fd-popover__body fd-popover__body--resizable" aria-hidden="false" id="popoverF10r">
             <div class="fd-popover__wrapper" style="max-height: 250px;">
                 <nav class="fd-menu" aria-label="big navigation menu">
                     <ul class="fd-menu__list fd-menu__list--no-shadow">
                         <li class="fd-menu__item">
                             <a class="fd-menu__link" href="#">
-                                <span class="fd-menu__title">Option 1</span>
+                                <span class="fd-menu__title">Option 19</span>
                             </a>
                         </li>
                         <li class="fd-menu__item">
                             <a class="fd-menu__link" href="#">
-                                <span class="fd-menu__title">Option 2</span>
+                                <span class="fd-menu__title">Option 20</span>
                             </a>
                         </li>
                     </ul>
@@ -1264,12 +1264,12 @@ export const Resizable = () => `<div style="display: flex; justify-content: cent
                     <ul class="fd-menu__list fd-menu__list--no-shadow">
                         <li class="fd-menu__item">
                             <a class="fd-menu__link" href="#">
-                                <span class="fd-menu__title">Option 1</span>
+                                <span class="fd-menu__title">Option 21</span>
                             </a>
                         </li>
                         <li class="fd-menu__item">
                             <a class="fd-menu__link" href="#">
-                                <span class="fd-menu__title">Option 2</span>
+                                <span class="fd-menu__title">Option 22</span>
                             </a>
                         </li>
                     </ul>
@@ -1298,12 +1298,12 @@ export const Resizable = () => `<div style="display: flex; justify-content: cent
                     <ul class="fd-menu__list fd-menu__list--no-shadow">
                         <li class="fd-menu__item">
                             <a class="fd-menu__link" href="#">
-                                <span class="fd-menu__title">Option 1</span>
+                                <span class="fd-menu__title">Option 23</span>
                             </a>
                         </li>
                         <li class="fd-menu__item">
                             <a class="fd-menu__link" href="#">
-                                <span class="fd-menu__title">Option 2</span>
+                                <span class="fd-menu__title">Option 24</span>
                             </a>
                         </li>
                     </ul>
