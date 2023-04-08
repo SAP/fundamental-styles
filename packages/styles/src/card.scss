@@ -60,6 +60,10 @@ $fd-card-header-outline-offset: 0.0625rem !default;
   border-radius: var(--fdCard_Border_Radius);
   border: var(--fdCard_Border);
 
+  @include fd-hover() {
+    box-shadow: var(--sapContent_Shadow2);
+  }
+
   &__header {
     @include fd-reset();
     @include fd-flex();

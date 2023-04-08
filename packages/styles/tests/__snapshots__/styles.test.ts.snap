@@ -3545,6 +3545,12 @@ exports[`Check stories > Components/Card > Story CardAnatomy > Should match snap
             <div class=\\"fd-card__content\\" role=\\"group\\" aria-label=\\"Card Content\\"></div>
         </div>
     </div>
+    <div style=\\"width: 300px; height: 400px; margin: 1rem;\\">
+        <div class=\\"fd-card\\" role=\\"region\\" aria-label=\\"8\\">
+            <div class=\\"fd-badge\\">No Header</div>
+            <div class=\\"fd-card__content\\" role=\\"group\\" aria-label=\\"Card Content\\"></div>
+        </div>
+    </div>
 </div>
 "
 `;

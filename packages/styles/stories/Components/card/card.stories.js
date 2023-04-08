@@ -31,7 +31,7 @@ A card is a container that consists of two main components: a selectable header 
 
 Components | Description
 :--------- |:-----------
-Header (main) | The header displays a mandatory title, indicating what the card is about and functions as a navigation control that directs the user to the parent app.
+Header (optional) | The header displays a mandatory title, indicating what the card is about and functions as a navigation control that directs the user to the parent app.
 Content (main) | The content area is reserved for application content.
 Title | A title is mandatory to explain what content is being displayed to the user.
 Avatar (optional) | An avatar can be displayed in a size S (3rem).
@@ -247,6 +247,12 @@ export const CardAnatomy = () => `<div style="display:flex; justify-content:spac
                     </div>
                 </div>
             </a>
+            <div class="fd-card__content" role="group" aria-label="Card Content"></div>
+        </div>
+    </div>
+    <div style="width: 300px; height: 400px; margin: 1rem;">
+        <div class="fd-card" role="region" aria-label="8">
+            <div class="fd-badge">No Header</div>
             <div class="fd-card__content" role="group" aria-label="Card Content"></div>
         </div>
     </div>
