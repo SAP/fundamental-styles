@@ -1,3 +1,12 @@
+# [0.29.0-rc.2](https://github.com/SAP/fundamental-styles/compare/v0.29.0-rc.1...v0.29.0-rc.2) (2023-04-08)
+
+
+### Features
+
+* **styles:** add resizable functionality to Popover ([#4429](https://github.com/SAP/fundamental-styles/issues/4429)) ([fa6d19a](https://github.com/SAP/fundamental-styles/commit/fa6d19a0f284d92b85333d558ac08d6a70465acd))
+
+
+
 # [0.29.0-rc.1](https://github.com/SAP/fundamental-styles/compare/v0.29.0-rc.0...v0.29.0-rc.1) (2023-04-05)
 
 
