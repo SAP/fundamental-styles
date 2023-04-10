@@ -26,28 +26,92 @@ Avoid texts such as *Click Here* or *Link*, as these do not make it clear to the
     }
 };
 
-export const Primary = () => `
-<a href="#" class="fd-link" tabindex="0"><span class="fd-link__content">Default link</span></a>
-<br><br>
-<a href="#" class="fd-link fd-link--emphasized" tabindex="0"><span class="fd-link__content">Emphasized link</span></a>
-<br><br>
-<a href="#" class="fd-link fd-link--subtle"><span class="fd-link__content">Subtle link</span></a>
-<br><br>
-<a class="fd-link" aria-disabled="true"><span class="fd-link__content">Disabled link</span></a>
-<br><br>
-<div  style="background-color:var(--sapShellColor);padding:10px">
-    <a href="#" class="fd-link fd-link--inverted"><span class="fd-link__content">Inverted link</span></a>
+
+const localStyles = `
+<style>
+
+    .docs-link-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+        column-gap: 0.1rem;
+        row-gap: 0.1rem;
+        padding: 1rem;
+        justify-items: center;
+        align-items: center;
+    }
+
+    .docs-link-container > div {
+        text-align: center;
+    }
+
+    .docs-link-container--inverted {
+        background-color:var(--sapShellColor)
+    }
+</style>
+`;
+
+export const Primary = () => `${localStyles}
+
+<div class="docs-link-container">
+    <a href="#" class="fd-link" tabindex="0"><span class="fd-link__content">Link</span></a>
+    <a href="#" class="fd-link is-active" tabindex="0"><span class="fd-link__content">Active</span></a>
+    <a href="#" class="fd-link is-focus" tabindex="0"><span class="fd-link__content">Focused</span></a>
+    <a href="#" class="fd-link" aria-disabled="true" tabindex="0"><span class="fd-link__content">Disabled</span></a>
 </div>
-<br><br>
-<a href="#" class="fd-link" tabindex="0">
-    <span class="fd-link__content">Right icon link</span>
-    <span class="sap-icon--slim-arrow-right sap-icon--s"></span>
-</a>
-<br><br>
-<a href="#" class="fd-link" tabindex="0">
-    <span class="sap-icon--slim-arrow-left sap-icon--s"></span>
-    <span class="fd-link__content">Left icon link</span>
-</a>
+<div class="docs-link-container">
+    <a href="#" class="fd-link fd-link--emphasized" tabindex="0"><span class="fd-link__content">Emphasized link</span></a>
+    <a href="#" class="fd-link fd-link--emphasized is-active" tabindex="0"><span class="fd-link__content">Active</span></a>
+    <a href="#" class="fd-link fd-link--emphasized is-focus" tabindex="0"><span class="fd-link__content">Focused</span></a>
+    <a href="#" class="fd-link fd-link--emphasized" aria-disabled="true" tabindex="0"><span class="fd-link__content">Disabled</span></a>
+</div>
+<div class="docs-link-container">
+    <a href="#" class="fd-link fd-link--subtle"><span class="fd-link__content">Subtle link</span></a>
+    <a href="#" class="fd-link fd-link--subtle is-active"><span class="fd-link__content">Active</span></a>
+    <a href="#" class="fd-link fd-link--subtle is-focus"><span class="fd-link__content">Focused</span></a>
+    <a href="#" class="fd-link fd-link--subtle" aria-disabled="true"><span class="fd-link__content">Disabled</span></a>
+</div>
+<div class="docs-link-container docs-link-container--inverted">
+    <a href="#" class="fd-link fd-link--inverted"><span class="fd-link__content">Inverted link</span></a>
+    <a href="#" class="fd-link fd-link--inverted is-active"><span class="fd-link__content">Active</span></a>
+    <a href="#" class="fd-link fd-link--inverted is-focus"><span class="fd-link__content">Focused</span></a>
+    <a href="#" class="fd-link fd-link--inverted" aria-disabled="true"><span class="fd-link__content">Disabled</span></a>
+</div>
+<div class="docs-link-container">
+    <a href="#" class="fd-link" tabindex="0">
+        <span class="fd-link__content">Right icon link</span>
+        <span class="sap-icon--delete sap-icon--s"></span>
+    </a>
+    <a href="#" class="fd-link is-active" tabindex="0">
+        <span class="fd-link__content">Active</span>
+        <span class="sap-icon--delete sap-icon--s"></span>
+    </a>
+    <a href="#" class="fd-link is-focus" tabindex="0">
+        <span class="fd-link__content">Focused</span>
+        <span class="sap-icon--delete sap-icon--s"></span>
+    </a>
+    <a href="#" class="fd-link" aria-disabled="true" tabindex="0">
+        <span class="fd-link__content">Disabled</span>
+        <span class="sap-icon--delete sap-icon--s"></span>
+    </a>
+</div>
+<div class="docs-link-container">
+    <a href="#" class="fd-link" tabindex="0">
+        <span class="sap-icon--delete sap-icon--s"></span>
+        <span class="fd-link__content">Left icon link</span>
+    </a>
+    <a href="#" class="fd-link is-active" tabindex="0">
+        <span class="sap-icon--delete sap-icon--s"></span>
+        <span class="fd-link__content">Active</span>
+    </a>
+    <a href="#" class="fd-link is-focus" tabindex="0">
+        <span class="sap-icon--delete sap-icon--s"></span>
+        <span class="fd-link__content">Focused</span>
+    </a>
+    <a href="#" class="fd-link" aria-disabled="true" tabindex="0">
+        <span class="sap-icon--delete sap-icon--s"></span>
+        <span class="fd-link__content">Disabled</span>
+    </a>
+</div>
 `;
 
 Primary.storyName = 'Types';

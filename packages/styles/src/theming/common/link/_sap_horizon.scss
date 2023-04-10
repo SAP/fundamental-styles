@@ -1,13 +1,13 @@
 :root {
-  --fdLink_Text_Content_Decoration: none;
+  --fdLink_Text_Content_Decoration: var(--sapLink_TextDecoration);
   --fdLink_Text_Content_Decoration_Subtle: underline;
   --fdLink_Text_Content_Decoration_Subtle_Hover: none;
   --fdLink_Text_Content_Decoration_Subtle_Active: underline;
-  --fdLink_Text_Content_Decoration_Hover: underline;
+  --fdLink_Text_Content_Decoration_Hover: var(--sapLink_Hover_TextDecoration);
   --fdLink_Text_Content_Decoration_Focus: underline;
-  --fdLink_Text_Content_Decoration_Active: none;
-  --fdLink_Text_Content_Decoration_Visited: underline;
-  --fdLink_Text_Content_Decoration_Disabled: underline;
+  --fdLink_Text_Content_Decoration_Active: var(--sapLink_Active_TextDecoration);
+  --fdLink_Text_Content_Decoration_Visited: var(--sapLink_TextDecoration);
+  --fdLink_Text_Content_Decoration_Disabled: var(--sapLink_TextDecoration);
   --fdLink_Text_Focus_Color: var(--sapContent_ContrastTextColor);
   --fdLink_Focus_Background: var(--sapContent_FocusColor);
   --fdLink_Focus_Border_Radius: 0.125rem;

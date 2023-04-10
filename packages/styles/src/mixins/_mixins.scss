@@ -201,12 +201,11 @@
   align-items: center;
   transition: all $fd-animation-speed ease-in;
   line-height: inherit;
-  padding: 0 0.0625rem;
 
   @include fd-link-underline();
 
   &--emphasized {
-    font-weight: bold;
+    font-family: var(--sapFontBoldFamily);
   }
 
   &:visited {
