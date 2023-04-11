@@ -138,18 +138,11 @@ $fd-card-header-outline-offset: 0.0625rem !default;
       @include fd-reset();
 
       @include fd-flex() {
+        gap: 0.5rem;
         justify-content: flex-end;
       }
 
       width: 100%;
-
-      &-item {
-        @include fd-reset();
-
-        &:not(:last-child) {
-          @include fd-set-margin-right(var(--fdCard_Footer_Actions_Item_Spacing));
-        }
-      }
     }
 
     .#{$block}__footer-link {
@@ -158,10 +151,6 @@ $fd-card-header-outline-offset: 0.0625rem !default;
 
       text-overflow: clip;
     }
-  }
-
-  &__bar-footer {
-    border-radius: 0 0 $fd-card-border-radius $fd-card-border-radius;
   }
 
   &__header-text {

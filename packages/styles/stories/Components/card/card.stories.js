@@ -66,16 +66,12 @@ export const CardAnatomy = () => `<div style="display:flex; justify-content:spac
             <div class="fd-card__content" role="group" aria-label="Card Content"></div>
             <div class="fd-card__footer">
                 <div class="fd-card__footer-actions">
-                    <div class="fd-card__footer-actions-item">
-                        <button class="fd-button fd-button--positive">
-                            Button
-                        </button>
-                    </div>
-                    <div class="fd-card__footer-actions-item">
-                        <button class="fd-button fd-button--negative">
-                            Button
-                        </button>
-                    </div>
+                    <button class="fd-button fd-button--positive">
+                        Button
+                    </button>
+                    <button class="fd-button fd-button--negative">
+                        Button
+                    </button>
                 </div>
             </div>
         </div>
@@ -265,53 +261,6 @@ CardAnatomy.parameters = {
         iframeHeight: 900,
         description: {
             story: `The standard card displays a header area with a title and a content area, as well as any other components mentioned in the card anatomy section.
-`
-        }
-    }
-};
-
-export const CardFooterBar = () => `<div style="display:flex; justify-content:space-around; flex-wrap: wrap">
-    <div style="width: 300px; height: 400px; margin: 1rem;">
-        <div class="fd-card" role="region" aria-label="Card Anatomy Example 1">
-            <a class="fd-card__header" tabindex="0">
-                <span
-                    class="fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--thumbnail fd-card__avatar"
-                    style="background-image: url('/assets/images/backgrounds/city.jpg')"
-                    role="img"
-                    aria-label="John Doe"></span>
-                <div class="fd-card__header-text">
-                    <div class="fd-card__title-area">
-                        <div class="fd-card__title">Card Title</div>
-                        <span class="fd-object-status fd-card__counter">Counter</span>
-                    </div>
-                    <div class="fd-card__subtitle-area">
-                        <div class="fd-card__subtitle">Card Subtitle</div>
-                    </div>
-                </div>
-            </a>
-            <div class="fd-card__content" role="group" aria-label="Card Content"></div>
-            <div class="fd-bar fd-bar--compact fd-bar--footer fd-card__bar-footer">
-                <div class="fd-bar__right">
-                    <div class="fd-bar__element">
-                        <button aria-label="button" class="fd-button fd-button--emphasized">Save</button>
-                    </div>
-                    <div class="fd-bar__element">
-                        <button aria-label="button" class="fd-button fd-button--transparent">Cancel</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-</div>
-`;
-
-CardFooterBar.storyName = 'Card Footer with Bar';
-CardFooterBar.parameters = {
-    docs: {
-        iframeHeight: 900,
-        description: {
-            story: `Alternatively, the Card Footer can be built using the Bar component with an additional <code>fd-card__bar-footer</code> modifier class.
 `
         }
     }
