@@ -1,3 +1,12 @@
+# [0.29.0-rc.5](https://github.com/SAP/fundamental-styles/compare/v0.29.0-rc.4...v0.29.0-rc.5) (2023-04-11)
+
+
+### Features
+
+* **styles:** add Busy Dialog variation to Busy Indicator [ci visual] ([#4444](https://github.com/SAP/fundamental-styles/issues/4444)) ([978fef2](https://github.com/SAP/fundamental-styles/commit/978fef2b7497dc2a0074e08685a101b070466915))
+
+
+
 # [0.29.0-rc.4](https://github.com/SAP/fundamental-styles/compare/v0.29.0-rc.3...v0.29.0-rc.4) (2023-04-11)
 
 
