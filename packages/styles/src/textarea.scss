@@ -24,6 +24,14 @@ $block: #{$fd-namespace}-textarea;
   display: block;
   cursor: text;
 
+  &[readonly],
+  &.is-readonly {
+    font-size: var(--sapFontSmallSize);
+    color: var(--sapField_TextColor);
+    border-radius: var(--sapField_BorderCornerRadius);
+    background-color: var(--sapField_ReadOnly_Background);
+  }
+
   &::-webkit-scrollbar-track,
   &::-webkit-scrollbar-corner {
     border-radius: 0 var(--sapField_BorderCornerRadius) var(--sapField_BorderCornerRadius) 0 !important;
