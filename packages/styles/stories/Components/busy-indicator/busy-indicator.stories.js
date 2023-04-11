@@ -1,5 +1,10 @@
 import '../../../src/busy-indicator.scss';
 import '../../../src/message-toast.scss';
+import '../../../src/dialog.scss';
+import '../../../src/text.scss';
+import '../../../src/bar.scss';
+import '../../../src/title.scss';
+
 export default {
     title: 'Components/Busy Indicator',
     parameters: {
@@ -114,6 +119,52 @@ ExtendedBusyIndicatorInsideMessageToast.parameters = {
         description: {
             story:
             'At the Page level the Busy Indicator should always be placed in a container. The simplest form of container will be centred on the page and inherit the color values from Message Toast.'
+        }
+    }
+};
+
+export const BusyDialog = () => `
+
+<section class="fd-dialog-docs-static fd-dialog fd-dialog--active">
+    <div class="fd-dialog__content fd-dialog__content--s" role="dialog" aria-modal="true" aria-labelledby="dialog-title-2">
+        <header class="fd-dialog__header fd-bar fd-bar--header">
+            <div class="fd-bar__left">
+                <div class="fd-bar__element">
+                    <h2 class="fd-title fd-title--h5" id="dialog-title-2">
+                        Loading Data
+                    </h2>
+                </div>
+            </div>
+        </header>
+        <div class="fd-dialog__body">
+            <div class="fd-busy-indicator-dialog">
+                <p class="fd-text">
+                    ... now loading data from a far far away server from far far away.
+                </p>
+                <div class="fd-busy-indicator fd-busy-indicator--l" aria-hidden="false" aria-label="Loading">
+                    <div class="fd-busy-indicator__circle"></div>
+                    <div class="fd-busy-indicator__circle"></div>
+                    <div class="fd-busy-indicator__circle"></div>
+                </div>
+            </div>
+        </div>
+        <footer class="fd-dialog__footer fd-bar fd-bar--compact fd-bar--footer">
+            <div class="fd-bar__right">
+                <div class="fd-bar__element">
+                    <button class="fd-dialog__decisive-button fd-button fd-button--transparent">Cancel</button>
+                </div>
+            </div>
+        </footer>
+    </div>
+</section>
+`;
+
+BusyDialog.parameters = {
+    docs: {
+        iframeHeight: 200,
+        description: {
+            story:
+            'The busy dialog informs the user about an ongoing operation. During the operation, the entire screen is blocked.'
         }
     }
 };
