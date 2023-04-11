@@ -1,3 +1,12 @@
+# [0.29.0-rc.3](https://github.com/SAP/fundamental-styles/compare/v0.29.0-rc.2...v0.29.0-rc.3) (2023-04-11)
+
+
+### Features
+
+* **styles:** update label for horizon [ci visual] ([#4443](https://github.com/SAP/fundamental-styles/issues/4443)) ([4733967](https://github.com/SAP/fundamental-styles/commit/4733967ce939ef3995d0887a5b05540b5fd00b4d))
+
+
+
 # [0.29.0-rc.2](https://github.com/SAP/fundamental-styles/compare/v0.29.0-rc.1...v0.29.0-rc.2) (2023-04-08)
 
 
