@@ -1580,6 +1580,44 @@ exports[`Check stories > Components/Breadcrumb > Story Standard > Should match s
 "
 `;
 
+exports[`Check stories > Components/Busy Indicator > Story BusyDialog > Should match snapshot 1`] = `
+"
+
+<section class=\\"fd-dialog-docs-static fd-dialog fd-dialog--active\\">
+    <div class=\\"fd-dialog__content fd-dialog__content--s\\" role=\\"dialog\\" aria-modal=\\"true\\" aria-labelledby=\\"dialog-title-2\\">
+        <header class=\\"fd-dialog__header fd-bar fd-bar--header\\">
+            <div class=\\"fd-bar__left\\">
+                <div class=\\"fd-bar__element\\">
+                    <h2 class=\\"fd-title fd-title--h5\\" id=\\"dialog-title-2\\">
+                        Loading Data
+                    </h2>
+                </div>
+            </div>
+        </header>
+        <div class=\\"fd-dialog__body\\">
+            <div class=\\"fd-busy-indicator-dialog\\">
+                <p class=\\"fd-text\\">
+                    ... now loading data from a far far away server from far far away.
+                </p>
+                <div class=\\"fd-busy-indicator fd-busy-indicator--l\\" aria-hidden=\\"false\\" aria-label=\\"Loading\\">
+                    <div class=\\"fd-busy-indicator__circle\\"></div>
+                    <div class=\\"fd-busy-indicator__circle\\"></div>
+                    <div class=\\"fd-busy-indicator__circle\\"></div>
+                </div>
+            </div>
+        </div>
+        <footer class=\\"fd-dialog__footer fd-bar fd-bar--compact fd-bar--footer\\">
+            <div class=\\"fd-bar__right\\">
+                <div class=\\"fd-bar__element\\">
+                    <button class=\\"fd-dialog__decisive-button fd-button fd-button--transparent\\">Cancel</button>
+                </div>
+            </div>
+        </footer>
+    </div>
+</section>
+"
+`;
+
 exports[`Check stories > Components/Busy Indicator > Story ContrastMode > Should match snapshot 1`] = `
 "<div style=\\"display:flex;justify-content:center;flex-direction:column;align-items:center;background-color:cadetblue;height:250px\\">
 <div class=\\"fd-busy-indicator fd-busy-indicator--l fd-busy-indicator--contrast\\" aria-hidden=\\"false\\" aria-label=\\"Loading\\">

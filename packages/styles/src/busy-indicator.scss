@@ -30,7 +30,10 @@ $block: #{$fd-namespace}-busy-indicator;
   &-extended {
     $extendedSelector: &;
 
+    @include fd-reset();
+
     @include fd-flex-center() {
+      gap: 1rem;
       flex-direction: column;
     }
 
@@ -47,7 +50,6 @@ $block: #{$fd-namespace}-busy-indicator;
 
       display: block;
       color: var(--sapPageFooter_TextColor);
-      margin-top: 1rem;
       text-align: center;
     }
   }
@@ -70,6 +72,20 @@ $block: #{$fd-namespace}-busy-indicator;
 
     &:nth-child(3) {
       animation-delay: 0.4s;
+    }
+  }
+
+  &-dialog {
+    @include fd-reset();
+
+    @include fd-flex-center() {
+      gap: 1rem;
+      flex-direction: column;
+    }
+
+    .#{$block} {
+      width: 100%;
+      margin: 0.5rem auto;
     }
   }
 }
