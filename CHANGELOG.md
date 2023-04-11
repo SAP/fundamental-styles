@@ -1,3 +1,12 @@
+# [0.29.0-rc.4](https://github.com/SAP/fundamental-styles/compare/v0.29.0-rc.3...v0.29.0-rc.4) (2023-04-11)
+
+
+### Features
+
+* **styles:** new horizon spec for link [ci visual] ([#4442](https://github.com/SAP/fundamental-styles/issues/4442)) ([47f0a04](https://github.com/SAP/fundamental-styles/commit/47f0a0472ca1e048b20698ef4a7b7c5b92918a44))
+
+
+
 # [0.29.0-rc.3](https://github.com/SAP/fundamental-styles/compare/v0.29.0-rc.2...v0.29.0-rc.3) (2023-04-11)
 
 
