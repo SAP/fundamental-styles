@@ -29,7 +29,7 @@ The default form label is displayed in grey text above an input field. To displa
 };
 
 export const Required = () => `<div class="fd-form-item">
-        <label class="fd-form-label fd-form-label--required" for="input-1c">Required Input</label>
+        <label class="fd-form-label fd-form-label--colon fd-form-label--required" for="input-1c">Required Input</label>
         <input class="fd-input" type="text" id="input-1c" placeholder="Field placeholder text">
     </div>
 `;

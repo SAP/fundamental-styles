@@ -9,7 +9,7 @@ $block: #{$fd-namespace}-form-label;
 .#{$block} {
   $fd-unit-description-padding: 0.25rem;
   $fd-require-space-padding: 0.5rem;
-  $fd-colon-space-padding: 0.25rem;
+  $fd-colon-space-padding: 0.125rem;
   $fd-require-colon-space-spacing: 0.75rem;
 
   $fd-require-colon-spacing: 0.5rem;
@@ -38,7 +38,7 @@ $block: #{$fd-namespace}-form-label;
 
     &::after {
       content: '*';
-      font-size: var(--sapFontSize);
+      font-size: var(--sapFontLargeSize);
       font-weight: bold;
       color: var(--sapField_RequiredColor);
       position: absolute;
