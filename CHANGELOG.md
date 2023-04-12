@@ -1,3 +1,17 @@
+# [0.29.0-rc.6](https://github.com/SAP/fundamental-styles/compare/v0.29.0-rc.5...v0.29.0-rc.6) (2023-04-12)
+
+
+### Features
+
+* **styles:** update card and tile colors [ci visual] ([#4430](https://github.com/SAP/fundamental-styles/issues/4430)) ([b3340ae](https://github.com/SAP/fundamental-styles/commit/b3340ae4aec0f18c8d32cbe67734bf8929db737d))
+
+
+### BREAKING CHANGES
+
+* **styles:** - removed Bar based Card Footer using Bar component; removed class `fd-card__bar-footer` Bar footer; simplify footer markup and drop `fd-card__footer-actions-item`
+
+
+
 # [0.29.0-rc.5](https://github.com/SAP/fundamental-styles/compare/v0.29.0-rc.4...v0.29.0-rc.5) (2023-04-11)
 
 
