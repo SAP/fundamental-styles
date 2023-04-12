@@ -1,3 +1,12 @@
+# [0.29.0-rc.7](https://github.com/SAP/fundamental-styles/compare/v0.29.0-rc.6...v0.29.0-rc.7) (2023-04-12)
+
+
+### Bug Fixes
+
+* **styles:** allow shellbar group shrinking [ci visual] ([#4445](https://github.com/SAP/fundamental-styles/issues/4445)) ([d086ede](https://github.com/SAP/fundamental-styles/commit/d086edea96ab2f7a21101b9cf05a3fd2cf5e7474))
+
+
+
 # [0.29.0-rc.6](https://github.com/SAP/fundamental-styles/compare/v0.29.0-rc.5...v0.29.0-rc.6) (2023-04-12)
 
 
