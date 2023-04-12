@@ -123,6 +123,14 @@ $block: #{$fd-namespace}-shellbar;
     @include fd-flex-vertical-center() {
       flex: 1 1 0;
       gap: $fd-shellbar-item-spacing;
+
+      &--shrink {
+        flex-grow: 0;
+      }
+
+      &--basis-auto {
+        flex-basis: auto;
+      }
     }
 
     &--product {

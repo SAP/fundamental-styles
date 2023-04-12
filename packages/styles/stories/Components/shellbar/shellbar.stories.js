@@ -960,3 +960,115 @@ The Shellbar paddings can be made responsive. Meaning that based on the current 
         }
     }
 };
+
+export const WithoutCenter = () => `<div style="height:300px; max-width: 1024px;">
+<div class="fd-shellbar fd-shellbar--m">
+    <div class="fd-shellbar__group fd-shellbar__group--product fd-shellbar__group--shrink">
+        <span class="fd-shellbar__logo"><img src="//unpkg.com/fundamental-styles/dist/images/sap-logo.png"
+                                             srcset="//unpkg.com/fundamental-styles/dist/images/sap-logo@2x.png 1x, //unpkg.com/fundamental-styles/dist/images/sap-logo@3x.png 2x, //unpkg.com/fundamental-styles/dist/images/sap-logo@4x.png 3x"
+                                             width="48" height="24" alt="SAP"></span>
+        <span class="fd-shellbar__title">Corporate Portal</span>
+    </div>
+    <div class="fd-shellbar__group fd-shellbar__group--actions fd-shellbar__group--basis-auto">
+        <div class="fd-shellbar__action fd-shellbar__action--desktop">
+            <button class="fd-button fd-button--transparent fd-shellbar__button" aria-label="Search">
+                <i class="sap-icon--search"></i>
+            </button>
+        </div>
+        <div class="fd-shellbar__action fd-shellbar__action--desktop">
+            <button class="fd-button fd-button--transparent fd-shellbar__button" aria-label="Notifications">
+                <i class="sap-icon--bell"></i>
+                <span class="fd-button__badge">251K</span>
+            </button>
+        </div>
+        <div class="fd-shellbar__action fd-shellbar__action--desktop">
+            <button class="fd-button fd-button--transparent fd-shellbar__button" aria-label="Pool">
+                <i class="sap-icon--pool"></i>
+            </button>
+        </div>
+        <div class="fd-shellbar__action fd-shellbar__action--mobile">
+            <div class="fd-shellbar-collapse">
+                <div class="fd-popover fd-popover--right">
+                    <div class="fd-popover__control">
+                        <div class="fd-shellbar-collapse--control" onclick="onPopoverClick('CWaGNGD78')"
+                             aria-controls="CWaGNGD78" aria-expanded="false" aria-haspopup="true" role="button">
+                            <button class="fd-button fd-button--transparent fd-shellbar__button" aria-controls="undefined"
+                                    aria-haspopup="true" aria-expanded="false">
+                                <i class="sap-icon--overflow"></i>
+                                <span class="fd-button__badge">251K</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--right"
+                         aria-hidden="true" id="CWaGNGD78">
+                        <nav class="fd-menu">
+                            <ul class="fd-menu__list fd-menu__list--no-shadow">
+                                <li class="fd-menu__item">
+                                    <a role="button" class="fd-menu__link">
+                                        <span class="fd-menu__title">Search</span>
+                                    </a>
+                                </li>
+                                <li class="fd-menu__item">
+                                    <a role="button" class="fd-menu__link">
+                                        <span class="fd-menu__title">Notifications Out</span>
+                                    </a>
+                                </li>
+                                <li class="fd-menu__item">
+                                    <a role="button" class="fd-menu__link">
+                                        <span class="fd-menu__title">Pool</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="fd-shellbar__action">
+            <div class="fd-popover fd-popover--right">
+                <div class="fd-popover__control">
+                    <div class="fd-button fd-button--transparent fd-shellbar__button fd-user-menu__control"
+                         onclick="onPopoverClick('DD35GBK6')" aria-controls="DD35GBK6" aria-expanded="false"
+                         aria-haspopup="true" role="button" tabindex="0">
+                        <span
+                            class="fd-avatar fd-avatar--xs fd-avatar--circle fd-shellbar__avatar--circle">WW</span>
+                    </div>
+                </div>
+                <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--right" aria-hidden="true"
+                     id="DD35GBK6">
+                    <nav class="fd-menu">
+                        <ul class="fd-menu__list fd-menu__list--no-shadow">
+                            <li class="fd-menu__item">
+                                <a role="button" class="fd-menu__link">
+                                    <span class="fd-menu__title">Settings</span>
+                                </a>
+                            </li>
+                            <li class="fd-menu__item">
+                                <a role="button" class="fd-menu__link">
+                                    <span class="fd-menu__title">Sign Out</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+`;
+
+
+
+WithoutCenter.storyName = 'Shellbar without center group';
+
+WithoutCenter.parameters = {
+    docs: {
+        description: {
+            story: `
+The shellbar is optimized to be used with central group for the search. This creates a necessity of centering the groups by giving them equal width.
+If the design suggests that each group can have own width, developers can use \`fd-shellbar__group--shrink\` and \`fd-shellbar__group--basis-auto\` modifiers to allow each group to shrink and grow independently.
+        `
+        }
+    }
+};
