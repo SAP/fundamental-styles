@@ -55,6 +55,7 @@ $block: #{$fd-namespace}-step-input;
     margin: 0;
     padding: 0 0.25rem;
     background: none;
+    box-shadow: none;
     background-color: transparent;
 
     @include fd-rtl() {

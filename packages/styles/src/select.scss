@@ -17,6 +17,7 @@ $fd-select-padding-x-compact: 0.5rem;
     background-color: $bkgdColor;
     border-left-color: $borderLeft;
     box-shadow: var(--fdInput_Group_Button_Box_Shadow);
+    position: static;
     @content;
   }
 
@@ -109,6 +110,8 @@ $fd-select-padding-x-compact: 0.5rem;
     @include fd-input-field-states();
     @include fd-input-group-button-overwrite();
 
+    box-shadow: none;
+
     @include fd-flex-center() {
       justify-content: space-between;
     }
@@ -120,6 +123,15 @@ $fd-select-padding-x-compact: 0.5rem;
     padding: 0;
     margin: 0;
     cursor: pointer;
+
+    &::after {
+      content: "";
+      position: absolute;
+      border-radius: var(--sapField_BorderCornerRadius);
+      box-shadow: var(--sapField_Shadow);
+
+      @include fd-set-equal-positions(0);
+    }
 
     .#{$block}__button {
       @include fd-set-margin-left(0.25rem);
@@ -138,7 +150,9 @@ $fd-select-padding-x-compact: 0.5rem;
     }
 
     @include fd-expanded() {
-      box-shadow: var(--fdInput_Box_Shadow_Hover);
+      &::after {
+        box-shadow: var(--fdInput_Box_Shadow_Hover);
+      }
 
       @include fd-select-button-settings(var(--sapButton_Selected_Background), var(--fdSelect_Expanded_Button_Border_Left_Color)
     );

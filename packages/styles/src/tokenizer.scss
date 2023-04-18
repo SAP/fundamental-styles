@@ -54,6 +54,7 @@ $block: #{$fd-namespace}-tokenizer;
 
   .#{$block}__input {
     background: transparent;
+    box-shadow: none;
 
     &.#{$fd-namespace}-input {
       border: none;

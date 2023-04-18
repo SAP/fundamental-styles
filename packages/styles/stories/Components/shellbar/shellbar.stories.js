@@ -95,7 +95,7 @@ export const ProductMenuAndSearch = () => `<div style="height:200px">
                 <div class="fd-popover__control">
                     <button class="fd-button fd-button--transparent fd-shellbar__button fd-shellbar__button--menu fd-button--menu" onclick="onPopoverClick('9GLB26941');" aria-controls="9GLB26941" aria-haspopup="true" aria-expanded="false">
                         <span class="fd-shellbar__title">Corporate Portal</span>
-                        <i class="sap-icon--megamenu"></i>
+                        <i class="sap-icon--slim-arrow-down"></i>
                     </button>
                 </div>
                 <div class="fd-popover__body fd-popover__body--no-arrow" aria-hidden="true" id="9GLB26941">
@@ -233,6 +233,7 @@ export const LinksWithCollapsibleMenuXlSize = () => `<div style="height:300px">
                     <i class="sap-icon--search"></i>
                   </button>
                 </div>
+                <div class="fd-shellbar__search-field-helper"></div>
               </div>
             </div>
             <div class="fd-shellbar__action fd-shellbar__action--mobile fd-shellbar__action--shrink">
@@ -557,7 +558,7 @@ export const LinksWithCollapsibleMenuSSize = () => `<div style="height:300px; ma
                 <div class="fd-popover__control">
                     <button class="fd-button fd-button--transparent fd-shellbar__button fd-shellbar__button--menu fd-button--menu" onclick="onPopoverClick('9GLB26941');" aria-controls="9GLB26941" aria-haspopup="true" aria-expanded="false">
                         <span class="fd-shellbar__title">Corporate Portal</span>
-                        <i class="sap-icon--megamenu"></i>
+                        <i class="sap-icon--slim-arrow-down"></i>
                     </button>
                 </div>
                 <div class="fd-popover__body fd-popover__body--no-arrow" aria-hidden="true" id="9GLB26941">
