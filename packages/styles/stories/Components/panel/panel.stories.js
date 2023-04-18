@@ -29,19 +29,19 @@ There are two types of panels: fixed and expandable.
     }
 };
 
-export const Fixed = () => `<div class="fd-panel fd-panel--fixed">
+export const Fixed = () => `<div class="fd-panel fd-panel--fixed" aria-labelledby="__panel-title-6" role="form">
     <div class="fd-panel__header">
-        <h4 class="fd-panel__title">Panel header</h4>
+        <h4 class="fd-panel__title" id="__panel-title-6">Panel header</h4>
         <div class="fd-toolbar fd-toolbar--clear fd-toolbar--transparent">
             <span class="fd-toolbar__spacer fd-toolbar__spacer--auto"> </span>
             <div class="fd-segmented-button" role="group" aria-label="Group label">
-              <button class="fd-button fd-button--toggled" id="jhqDKYrt" aria-pressed="true">Left</button>
+              <button class="fd-button fd-button--toggled" aria-pressed="true">Left</button>
               <button class="fd-button" aria-pressed="false">Middle</button>
               <button class="fd-button" aria-pressed="false">Right</button>
             </div>
         </div>
     </div>
-    <div role="region" aria-labelledby="jhqDKYrt" class="fd-panel__content">
+    <div role="region" aria-labelledby="__panel-title-6" class="fd-panel__content">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ut laoreet lorem. Vestibulum ante ipsum primis in faucibus orci luctus
         et ultrices posuere cubilia curae; Aenean sagittis aliquam justo et suscipit.
         Nam molestie, magna at elementum pulvinar, nisi enim venenatis ante, id convallis mi neque nec risus. Cras blandit sagittis augue at facilisis.
@@ -62,25 +62,25 @@ Fixed.parameters = {
     }
 };
 
-export const Expandable = () => `<div class="fd-panel">
+export const Expandable = () => `<div class="fd-panel" aria-labelledby="__panel-title-7" role="form">
     <div class="fd-panel__header">
         <div class="fd-panel__expand">
             <button class="fd-button fd-button--transparent fd-panel__button"
-                aria-expanded="false" aria-haspopup="true" aria-label="expand/collapse panel" aria-controls="fghqwe321">
+                aria-expanded="false" aria-haspopup="true" aria-label="expand/collapse panel" aria-controls="__panel-7">
                 <i class="sap-icon--slim-arrow-right"></i>
             </button>
         </div>
-        <h4 class="fd-panel__title" id="asdASD123">Panel header collapsed</h4>
+        <h4 class="fd-panel__title" id="__panel-title-7">Panel header collapsed</h4>
         <div class="fd-toolbar fd-toolbar--clear fd-toolbar--transparent">
             <span class="fd-toolbar__spacer fd-toolbar__spacer--auto"> </span>
             <div class="fd-segmented-button" role="group" aria-label="Group label">
-              <button class="fd-button fd-button--toggled" id="jhqDKYdf" aria-pressed="true">Left</button>
+              <button class="fd-button fd-button--toggled" aria-pressed="true">Left</button>
               <button class="fd-button" aria-pressed="false">Middle</button>
               <button class="fd-button" aria-pressed="false">Right</button>
             </div>
         </div>
     </div>
-    <div role="region" aria-labelledby="jhqDKYdf" class="fd-panel__content" aria-hidden="true" id="fghqwe321">
+    <div role="region" aria-labelledby="__panel-title-7" class="fd-panel__content" aria-hidden="true" id="__panel-7">
         <span>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ut laoreet lorem. Vestibulum ante ipsum primis in faucibus orci luctus
             et ultrices posuere cubilia curae; Aenean sagittis aliquam justo et suscipit.
@@ -92,17 +92,18 @@ export const Expandable = () => `<div class="fd-panel">
         </span>
     </div>
 </div>
-<div class="fd-panel">
+
+<div class="fd-panel" aria-labelledby="__panel-title-8" role="form">
     <div class="fd-panel__header">
         <div class="fd-panel__expand">
             <button class="fd-button fd-button--transparent fd-panel__button" aria-expanded="true"
-                aria-haspopup="true" aria-label="expand/collapse panel" aria-controls="fghqwe3214213">
+                aria-haspopup="true" aria-label="expand/collapse panel" aria-controls="__panel-8">
                 <i class="sap-icon--slim-arrow-down"></i>
             </button>
         </div>
-        <h4 class="fd-panel__title" id="asdASD1234">Panel header expanded</h4>
+        <h4 class="fd-panel__title" id="__panel-title-8">Panel header expanded</h4>
     </div>
-    <div role="region" aria-labelledby="jhqDKYdf" class="fd-panel__content" aria-hidden="false" id="fghqwe3214213">
+    <div role="region" aria-labelledby="__panel-title-8" class="fd-panel__content" aria-hidden="false" id="__panel-8">
         <span>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ut laoreet lorem. Vestibulum ante ipsum primis in faucibus orci luctus
             et ultrices posuere cubilia curae; Aenean sagittis aliquam justo et suscipit.
@@ -125,24 +126,24 @@ Expandable.parameters = {
     }
 };
 
-export const Compact = () => `<div class="fd-panel fd-panel--compact">
+export const Compact = () => `<div class="fd-panel fd-panel--compact" aria-labelledby="__panel-title-9" role="form">
     <div class="fd-panel__header">
         <div class="fd-panel__expand">
-            <button class="fd-button fd-button--transparent fd-panel__button" aria-expanded="false" aria-haspopup="true" aria-controls="Gekf63a" aria-labelledby="asdASD234">
+            <button class="fd-button fd-button--transparent fd-panel__button" aria-expanded="false" aria-haspopup="true" aria-controls="__panel-9">
                 <i class="sap-icon--slim-arrow-right"></i>
             </button>
         </div>
-        <h4 class="fd-panel__title" id="asdASD234">Panel header</h4>
+        <h4 class="fd-panel__title" id="__panel-title-9">Panel header</h4>
         <div class="fd-toolbar fd-toolbar--clear fd-toolbar--transparent">
             <span class="fd-toolbar__spacer fd-toolbar__spacer--auto"> </span>
             <div class="fd-segmented-button" role="group" aria-label="Group label">
-              <button class="fd-button fd-button--toggled" id="Gekf63D" aria-pressed="true">Left</button>
+              <button class="fd-button fd-button--toggled" aria-pressed="true">Left</button>
               <button class="fd-button" aria-pressed="false">Middle</button>
               <button class="fd-button" aria-pressed="false">Right</button>
             </div>
         </div>
     </div>
-    <div role="region" aria-labelledby="Gekf63D" class="fd-panel__content" aria-hidden="true" id="Gekf63a">
+    <div role="region" aria-labelledby="__panel-title-9" class="fd-panel__content" aria-hidden="true" id="__panel-9">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ut laoreet lorem. Vestibulum ante ipsum primis in faucibus orci luctus
         et ultrices posuere cubilia curae; Aenean sagittis aliquam justo et suscipit.
         Nam molestie, magna at elementum pulvinar, nisi enim venenatis ante, id convallis mi neque nec risus. Cras blandit sagittis augue at facilisis.
@@ -163,24 +164,24 @@ Compact.parameters = {
     }
 };
 
-export const FixedHeightContent = () => `<div class="fd-panel">
+export const FixedHeightContent = () => `<div class="fd-panel" aria-labelledby="__panel-title-10" role="form">
     <div class="fd-panel__header">
         <div class="fd-panel__expand">
-            <button class="fd-button fd-button--transparent fd-panel__button" aria-expanded="false" aria-haspopup="true" aria-controls="GJL745SV" aria-labelledby="asdASD345">
+            <button class="fd-button fd-button--transparent fd-panel__button" aria-expanded="false" aria-haspopup="true" aria-controls="__panel-10">
                 <i class="sap-icon--slim-arrow-right"></i>
             </button>
         </div>
-        <h4 class="fd-panel__title" id="asdASD345">Panel header</h4>
+        <h4 class="fd-panel__title" id="__panel-title-10">Panel header</h4>
         <div class="fd-toolbar fd-toolbar--clear fd-toolbar--transparent">
             <span class="fd-toolbar__spacer fd-toolbar__spacer--auto"> </span>
             <div class="fd-segmented-button" role="group" aria-label="Group label">
-              <button class="fd-button fd-button--toggled" id="GJL745SD" aria-pressed="true">Left</button>
+              <button class="fd-button fd-button--toggled" aria-pressed="true">Left</button>
               <button class="fd-button" aria-pressed="false">Middle</button>
               <button class="fd-button" aria-pressed="false">Right</button>
             </div>
         </div>
     </div>
-    <div role="region" id="GJL745SV" aria-labelledby="GJL745SD" class="fd-panel__content" aria-hidden="true" style="height: 100px;">
+    <div role="region" id="__panel-10" aria-labelledby="__panel-title-10" class="fd-panel__content" aria-hidden="true" style="height: 100px;">
         <span>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ut laoreet lorem. Vestibulum ante ipsum primis in faucibus orci luctus
             et ultrices posuere cubilia curae; Aenean sagittis aliquam justo et suscipit.
@@ -208,6 +209,155 @@ FixedHeightContent.parameters = {
         iframeHeight: 300,
         description: {
             story: `When the height of the panel's content is set to a fixed size, the content area becomes scrollable.
+        ` }
+    }
+};
+
+export const Borderless = () => `<div class="fd-panel fd-panel--borderless" aria-labelledby="__panel-title-1" role="form">
+    <div class="fd-panel__header">
+        <div class="fd-panel__expand">
+            <button class="fd-button fd-button--transparent fd-panel__button"
+                aria-expanded="false" aria-haspopup="true" aria-label="expand/collapse panel" aria-controls="__panel-1">
+                <i class="sap-icon--slim-arrow-right"></i>
+            </button>
+        </div>
+        <h4 class="fd-panel__title" id="__panel-title-1">Panel header collapsed</h4>
+        <div class="fd-toolbar fd-toolbar--clear fd-toolbar--transparent">
+            <span class="fd-toolbar__spacer fd-toolbar__spacer--auto"> </span>
+            <div class="fd-segmented-button" role="group" aria-label="Group label">
+              <button class="fd-button fd-button--toggled" aria-pressed="true">Left</button>
+              <button class="fd-button" aria-pressed="false">Middle</button>
+              <button class="fd-button" aria-pressed="false">Right</button>
+            </div>
+        </div>
+    </div>
+    <div role="region" aria-labelledby="__panel-title-1" class="fd-panel__content" aria-hidden="true" id="__panel-1">
+        <span>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ut laoreet lorem. Vestibulum ante ipsum primis in faucibus orci luctus
+            et ultrices posuere cubilia curae; Aenean sagittis aliquam justo et suscipit.
+            Nam molestie, magna at elementum pulvinar, nisi enim venenatis ante, id convallis mi neque nec risus. Cras blandit sagittis augue at facilisis.
+            Mauris egestas nunc nec diam mollis auctor. Vestibulum sed euismod elit, eget accumsan quam. Donec eleifend porttitor viverra.
+            Nunc porttitor dictum erat at molestie. Sed quis velit dolor. Vestibulum et turpis eget enim gravida gravida vitae at massa.
+            Suspendisse facilisis elit ut dolor posuere consectetur. Morbi ac nibh sit amet dolor lobortis tincidunt in ornare erat.
+            Vestibulum tristique euismod enim, ac volutpat odio cursus sit amet.
+        </span>
+    </div>
+</div>
+
+<br><br>
+
+<div class="fd-panel fd-panel--borderless" aria-labelledby="__panel-title-2" role="form">
+    <div class="fd-panel__header">
+        <div class="fd-panel__expand">
+            <button class="fd-button fd-button--transparent fd-panel__button" aria-expanded="true"
+                aria-haspopup="true" aria-label="expand/collapse panel" aria-controls="__panel-2">
+                <i class="sap-icon--slim-arrow-down"></i>
+            </button>
+        </div>
+        <h4 class="fd-panel__title" id="__panel-title-2">Panel header expanded</h4>
+    </div>
+    <div role="region" aria-labelledby="__panel-title-2" class="fd-panel__content" aria-hidden="false" id="__panel-2">
+        <span>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ut laoreet lorem. Vestibulum ante ipsum primis in faucibus orci luctus
+            et ultrices posuere cubilia curae; Aenean sagittis aliquam justo et suscipit.
+            Nam molestie, magna at elementum pulvinar, nisi enim venenatis ante, id convallis mi neque nec risus. Cras blandit sagittis augue at facilisis.
+            Mauris egestas nunc nec diam mollis auctor. Vestibulum sed euismod elit, eget accumsan quam. Donec eleifend porttitor viverra.
+            Nunc porttitor dictum erat at molestie. Sed quis velit dolor. Vestibulum et turpis eget enim gravida gravida vitae at massa.
+            Suspendisse facilisis elit ut dolor posuere consectetur. Morbi ac nibh sit amet dolor lobortis tincidunt in ornare erat.
+            Vestibulum tristique euismod enim, ac volutpat odio cursus sit amet.
+        </span>
+    </div>
+</div>
+
+<br><br>
+
+<div class="fd-panel fd-panel--fixed fd-panel--borderless" aria-labelledby="__panel-title-3" role="form">
+    <div class="fd-panel__header">
+        <h4 class="fd-panel__title" id="__panel-title-3">Panel header</h4>
+        <div class="fd-toolbar fd-toolbar--clear fd-toolbar--transparent">
+            <span class="fd-toolbar__spacer fd-toolbar__spacer--auto"></span>
+            <div class="fd-segmented-button" role="group" aria-label="Group label">
+              <button class="fd-button fd-button--toggled" aria-pressed="true">Left</button>
+              <button class="fd-button" aria-pressed="false">Middle</button>
+              <button class="fd-button" aria-pressed="false">Right</button>
+            </div>
+        </div>
+    </div>
+    <div role="region" aria-labelledby="__panel-title-3" class="fd-panel__content">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ut laoreet lorem. Vestibulum ante ipsum primis in faucibus orci luctus
+        et ultrices posuere cubilia curae; Aenean sagittis aliquam justo et suscipit.
+        Nam molestie, magna at elementum pulvinar, nisi enim venenatis ante, id convallis mi neque nec risus. Cras blandit sagittis augue at facilisis.
+        Mauris egestas nunc nec diam mollis auctor. Vestibulum sed euismod elit, eget accumsan quam. Donec eleifend porttitor viverra.
+        Nunc porttitor dictum erat at molestie. Sed quis velit dolor. Vestibulum et turpis eget enim gravida gravida vitae at massa.
+        Suspendisse facilisis elit ut dolor posuere consectetur. Morbi ac nibh sit amet dolor lobortis tincidunt in ornare erat.
+        Vestibulum tristique euismod enim, ac volutpat odio cursus sit amet.
+    </div>
+</div>
+`;
+
+Borderless.parameters = {
+    docs: {
+        iframeHeight: 200,
+        description: {
+            story: `Panel may have a border or not. For Panel without border use the \`.fd-panel--borderless \` modifier class.
+        ` }
+    }
+};
+
+export const Transparent = () => `<div class="fd-panel fd-panel--transparent" aria-labelledby="__panel-title-4" role="form">
+    <div class="fd-panel__header">
+        <div class="fd-panel__expand">
+            <button class="fd-button fd-button--transparent fd-panel__button" aria-expanded="true"
+                aria-haspopup="true" aria-label="expand/collapse panel" aria-controls="__panel-4">
+                <i class="sap-icon--slim-arrow-down"></i>
+            </button>
+        </div>
+        <h4 class="fd-panel__title" id="__panel-title-4">Panel header expanded</h4>
+    </div>
+    <div role="region" aria-labelledby="__panel-title-4" class="fd-panel__content" aria-hidden="false" id="__panel-4">
+        <span>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ut laoreet lorem. Vestibulum ante ipsum primis in faucibus orci luctus
+            et ultrices posuere cubilia curae; Aenean sagittis aliquam justo et suscipit.
+            Nam molestie, magna at elementum pulvinar, nisi enim venenatis ante, id convallis mi neque nec risus. Cras blandit sagittis augue at facilisis.
+            Mauris egestas nunc nec diam mollis auctor. Vestibulum sed euismod elit, eget accumsan quam. Donec eleifend porttitor viverra.
+            Nunc porttitor dictum erat at molestie. Sed quis velit dolor. Vestibulum et turpis eget enim gravida gravida vitae at massa.
+            Suspendisse facilisis elit ut dolor posuere consectetur. Morbi ac nibh sit amet dolor lobortis tincidunt in ornare erat.
+            Vestibulum tristique euismod enim, ac volutpat odio cursus sit amet.
+        </span>
+    </div>
+</div>
+
+<br><br>
+
+<div class="fd-panel fd-panel--fixed fd-panel--transparent" aria-labelledby="__panel-title-5" role="form">
+    <div class="fd-panel__header">
+        <h4 class="fd-panel__title" id="__panel-title-5">Panel header</h4>
+        <div class="fd-toolbar fd-toolbar--clear fd-toolbar--transparent">
+            <span class="fd-toolbar__spacer fd-toolbar__spacer--auto"> </span>
+            <div class="fd-segmented-button" role="group" aria-label="Group label">
+              <button class="fd-button fd-button--toggled" aria-pressed="true">Left</button>
+              <button class="fd-button" aria-pressed="false">Middle</button>
+              <button class="fd-button" aria-pressed="false">Right</button>
+            </div>
+        </div>
+    </div>
+    <div role="region" aria-labelledby="__panel-title-5" class="fd-panel__content">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ut laoreet lorem. Vestibulum ante ipsum primis in faucibus orci luctus
+        et ultrices posuere cubilia curae; Aenean sagittis aliquam justo et suscipit.
+        Nam molestie, magna at elementum pulvinar, nisi enim venenatis ante, id convallis mi neque nec risus. Cras blandit sagittis augue at facilisis.
+        Mauris egestas nunc nec diam mollis auctor. Vestibulum sed euismod elit, eget accumsan quam. Donec eleifend porttitor viverra.
+        Nunc porttitor dictum erat at molestie. Sed quis velit dolor. Vestibulum et turpis eget enim gravida gravida vitae at massa.
+        Suspendisse facilisis elit ut dolor posuere consectetur. Morbi ac nibh sit amet dolor lobortis tincidunt in ornare erat.
+        Vestibulum tristique euismod enim, ac volutpat odio cursus sit amet.
+    </div>
+</div>
+`;
+
+Transparent.parameters = {
+    docs: {
+        iframeHeight: 200,
+        description: {
+            story: `The background of the content can be set to transparent by applying the \`.fd-panel--transparent \` modifier class.
         ` }
     }
 };
