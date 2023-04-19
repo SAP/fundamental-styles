@@ -274,6 +274,8 @@ $block: #{$fd-namespace}-shellbar;
       &-input {
         position: relative;
 
+        @include fd-set-paddings-x-equal(var(--fdShellbar_Search_Input_X_Padding));
+
         @include fd-hover() {
           --fdInputGroup_Hover_Input_Background: var(--fdShellbar_Input_Hover_Background);
           --fdInputGroup_Addon_Background: var(--fdShellbar_Search_Container_Hover_Background);
@@ -507,7 +509,7 @@ $block: #{$fd-namespace}-shellbar;
           background-color: var(--fdShellbar_Search_Hover_Background);
 
           &::before {
-            display: none;
+            // display: none;
           }
         }
 
