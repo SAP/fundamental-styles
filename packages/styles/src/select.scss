@@ -14,11 +14,13 @@ $fd-select-padding-x-compact: 0.5rem;
     --fdInput_Group_Button_Text_Color: var(--sapButton_Active_TextColor);
     --fdInput_Group_Button_Background: var(--sapField_BackgroundStyle);
 
+    // Need content here in case we have background property which may override background-color.
+    @content;
+
     background-color: $bkgdColor;
     border-left-color: $borderLeft;
     box-shadow: var(--fdInput_Group_Button_Box_Shadow);
     position: static;
-    @content;
   }
 
   @include fd-rtl() {
@@ -129,6 +131,7 @@ $fd-select-padding-x-compact: 0.5rem;
       position: absolute;
       border-radius: var(--sapField_BorderCornerRadius);
       box-shadow: var(--sapField_Shadow);
+      pointer-events: none;
 
       @include fd-set-equal-positions(0);
     }
@@ -162,8 +165,9 @@ $fd-select-padding-x-compact: 0.5rem;
       }
 
       @include fd-hover() {
-        @include fd-select-button-settings(var(--sapButton_Selected_Hover_Background), var(--fdSelect_Expanded_Button_Border_Left_Color_Hover)
-      );
+        @include fd-select-button-settings(var(--sapButton_Selected_Hover_Background), var(--fdSelect_Expanded_Button_Border_Left_Color_Hover)) {
+          background: var(--sapField_Hover_BackgroundStyle);
+        }
       }
     }
 
