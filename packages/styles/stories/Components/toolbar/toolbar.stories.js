@@ -96,17 +96,17 @@ export const Overflow = () => `<div style="height:250px">
 </div>
 <div style="height:300px">
 <h3>Compact example</h3>
-    <div class="fd-toolbar">
+    <div class="fd-toolbar fd-toolbar--compact">
         <span>Products (34)</span>
-        <button class="fd-button fd-button--compact fd-button--transparent">Create</button>
+        <button class="fd-button fd-button--transparent">Create</button>
         <span class="fd-toolbar__spacer "> </span>
-        <button class="fd-button fd-button--compact fd-button--transparent">Save</button>
-        <button class="fd-button fd-button--compact fd-button--transparent">Copy</button>
+        <button class="fd-button fd-button--transparent">Save</button>
+        <button class="fd-button fd-button--transparent">Copy</button>
         <span class="fd-toolbar__separator"></span>
         <div class="fd-popover">
             <div class="fd-popover__control">
                 <button
-                class="fd-button fd-button--compact fd-button--transparent"
+                class="fd-button fd-button--transparent"
                 aria-controls="mw0daw8d7h"
                 aria-haspopup="true"
                 aria-expanded="true"
@@ -121,14 +121,14 @@ export const Overflow = () => `<div style="height:250px">
                 id="mw0daw8d7h">
                 <div class="fd-toolbar__overflow">
                     <label class="fd-label fd-toolbar__overflow-label">Label</label>
-                    <button class="fd-button fd-button--compact fd-button--transparent fd-toolbar__overflow-button">Edit</button>
+                    <button class="fd-button fd-button--transparent fd-toolbar__overflow-button">Edit</button>
                     <span class="fd-toolbar__separator"></span>
                     <label class="fd-form-label fd-toolbar__overflow-form-label fd-toolbar__overflow-form-label--text">Form label</label>
-                    <button class="fd-button fd-button--compact fd-button--transparent fd-toolbar__overflow-button">Delete</button>
+                    <button class="fd-button fd-button--transparent fd-toolbar__overflow-button">Delete</button>
                     <span class="fd-toolbar__separator"></span>
-                    <button class="fd-button fd-button--compact fd-button--transparent fd-toolbar__overflow-button">Assign</button>
-                    <button class="fd-button fd-button--compact fd-button--transparent fd-toolbar__overflow-button">Exit</button>
-                    <button class="fd-button fd-button--compact fd-button--transparent fd-button--menu fd-toolbar__overflow-button fd-toolbar__overflow-button--menu">
+                    <button class="fd-button fd-button--transparent fd-toolbar__overflow-button">Assign</button>
+                    <button class="fd-button fd-button--transparent fd-toolbar__overflow-button">Exit</button>
+                    <button class="fd-button fd-button--transparent fd-button--menu fd-toolbar__overflow-button fd-toolbar__overflow-button--menu">
                         <span class="fd-button__text">Menu Button</span>
                         <i class="sap-icon--slim-arrow-down"></i>
                     </button>
@@ -152,12 +152,12 @@ To display an overflow in a button, pass the \`sap-icon--overflow\` in the \`fd-
 
 export const Types = () => `<div style="padding: 1rem">
     <h3>Solid</h3>
-    <div class="fd-toolbar fd-toolbar--solid">
+    <div class="fd-toolbar fd-toolbar--solid fd-toolbar--compact">
         <span>Products (23)</span>
-        <button class="fd-button fd-button--compact fd-button--transparent">Create</button>
+        <button class="fd-button fd-button--transparent">Create</button>
         <span class="fd-toolbar__spacer "> </span>
-        <button class="fd-button fd-button--compact fd-button--transparent">Edit</button>
-        <button class="fd-button fd-button--compact fd-button--transparent">Delete</button>
+        <button class="fd-button fd-button--transparent">Edit</button>
+        <button class="fd-button fd-button--transparent">Delete</button>
         <span class="fd-toolbar__separator"></span>
         <button class="fd-button fd-button--transparent" aria-label="Survey">
             <i class="sap-icon--survey"></i>
@@ -170,12 +170,12 @@ export const Types = () => `<div style="padding: 1rem">
         </button>
     </div>
     <h3>Transparent</h3>
-    <div class="fd-toolbar fd-toolbar--clear fd-toolbar--transparent">
-        <button class="fd-button fd-button--compact fd-button--transparent">Create</button>
-        <button class="fd-button fd-button--compact fd-button--transparent">Save</button>
+    <div class="fd-toolbar fd-toolbar--clear fd-toolbar--transparent fd-toolbar--compact">
+        <button class="fd-button fd-button--transparent">Create</button>
+        <button class="fd-button fd-button--transparent">Save</button>
         <span class="fd-toolbar__spacer "> </span>
-        <button class="fd-button fd-button--compact fd-button--transparent">Edit</button>
-        <button class="fd-button fd-button--compact fd-button--transparent">Delete</button>
+        <button class="fd-button fd-button--transparent">Edit</button>
+        <button class="fd-button fd-button--transparent">Delete</button>
         <span class="fd-toolbar__separator"></span>
         <button class="fd-button fd-button--transparent" aria-label="Survey">
             <i class="sap-icon--survey"></i>
@@ -188,19 +188,19 @@ export const Types = () => `<div style="padding: 1rem">
         </button>
     </div>
     <h3>Auto</h3>
-    <div class="fd-toolbar fd-toolbar--clear fd-toolbar--auto">
-        <button class="fd-button fd-button--compact fd-button--transparent">Create</button>
+    <div class="fd-toolbar fd-toolbar--clear fd-toolbar--auto fd-toolbar--compact">
+        <button class="fd-button fd-button--transparent">Create</button>
         <span class="fd-toolbar__spacer "> </span>
-        <button class="fd-button fd-button--compact fd-button--transparent">Edit</button>
-        <button class="fd-button fd-button--compact fd-button--transparent">Delete</button>
+        <button class="fd-button fd-button--transparent">Edit</button>
+        <button class="fd-button fd-button--transparent">Delete</button>
         <span class="fd-toolbar__separator"></span>
-        <button class="fd-button fd-button--compact fd-button--transparent" aria-label="Survey">
+        <button class="fd-button fd-button--transparent" aria-label="Survey">
             <i class="sap-icon--survey"></i>
         </button>
-        <button class="fd-button fd-button--compact fd-button--transparent" aria-label="Pool">
+        <button class="fd-button fd-button--transparent" aria-label="Pool">
             <i class="sap-icon--pool"></i>
         </button>
-        <button class="fd-button fd-button--compact fd-button--transparent" aria-label="Chart">
+        <button class="fd-button fd-button--transparent" aria-label="Chart">
             <i class="sap-icon--pie-chart"></i>
         </button>
     </div>
@@ -209,11 +209,11 @@ export const Types = () => `<div style="padding: 1rem">
     <br>
     <div class="fd-toolbar fd-toolbar--info fd-toolbar--active">3 item selected</div>
     <h3>Title</h3>
-    <div class="fd-toolbar fd-toolbar--title">
+    <div class="fd-toolbar fd-toolbar--title fd-toolbar--compact">
         <h4 class="fd-title fd-title--h4 fd-toolbar__title">Products (104)</h4>
         <span class="fd-toolbar__spacer"></span>
-        <button class="fd-button fd-button--compact fd-button--transparent">Save</button>
-        <button class="fd-button fd-button--compact fd-button--transparent">Delete</button>
+        <button class="fd-button fd-button--transparent">Save</button>
+        <button class="fd-button fd-button--transparent">Delete</button>
     </div>
 </div>
 `;
@@ -228,14 +228,14 @@ export const Separator = () => `
 <div class="fd-toolbar fd-toolbar--solid fd-toolbar--cozy">
     <span class="fd-toolbar__spacer"></span>
     <span class="fd-toolbar__separator"></span>
-    <button class="fd-button fd-button--compact fd-button--transparent" aria-label="Survey">
+    <button class="fd-button fd-button--transparent" aria-label="Survey">
         <i class="sap-icon--survey"></i>
     </button>
     <span class="fd-toolbar__separator"></span>
-    <button class="fd-button fd-button--compact fd-button--transparent" aria-label="Pool">
+    <button class="fd-button fd-button--transparent" aria-label="Pool">
         <i class="sap-icon--pool"></i>
     </button>
-    <button class="fd-button fd-button--compact fd-button--transparent" aria-label="Chart">
+    <button class="fd-button fd-button--transparent" aria-label="Chart">
         <i class="sap-icon--pie-chart"></i>
     </button>
 </div>
@@ -272,53 +272,53 @@ Active | \` fd-toolbar--active\` | This is also not a type, but it enables activ
 };
 
 export const Alignment = () => `<h3>Left and right-aligned</h3>
-<div class="fd-toolbar">
-    <button class="fd-button fd-button--compact fd-button--positive">Accept</button>
+<div class="fd-toolbar fd-toolbar--compact">
+    <button class="fd-button fd-button--positive">Accept</button>
     <span class="fd-toolbar__spacer"></span>
-    <button class="fd-button fd-button--compact fd-button--reject">Reject</button>
+    <button class="fd-button fd-button--reject">Reject</button>
 </div>
 <h3>Left-aligned</h3>
-<div class="fd-toolbar">
-    <button class="fd-button fd-button--compact fd-button--positive">Accept</button>
-    <button class="fd-button fd-button--compact fd-button--reject">Reject</button>
+<div class="fd-toolbar fd-toolbar--compact">
+    <button class="fd-button fd-button--positive">Accept</button>
+    <button class="fd-button fd-button--reject">Reject</button>
 </div>
 <h3>Centered</h3>
-<div class="fd-toolbar">
+<div class="fd-toolbar fd-toolbar--compact">
     <span class="fd-toolbar__spacer"></span>
-    <button class="fd-button fd-button--compact">Centered</button>
+    <button class="fd-button">Centered</button>
     <span class="fd-toolbar__spacer"></span>
 </div>
 <h3>Right-aligned</h3>
-<div class="fd-toolbar">
+<div class="fd-toolba fd-toolbar--compactr">
     <span class="fd-toolbar__spacer"></span>
-    <button class="fd-button fd-button--compact">Right-aligned</button>
+    <button class="fd-button">Right-aligned</button>
 </div>
 <h3>Left, center, and right-aligned</h3>
-<div class="fd-toolbar">
-    <button class="fd-button fd-button--compact">Left-aligned</button>
+<div class="fd-toolbar fd-toolbar--compact">
+    <button class="fd-button">Left-aligned</button>
     <span class="fd-toolbar__spacer"></span>
-    <button class="fd-button fd-button--compact">Centered</button>
+    <button class="fd-button">Centered</button>
     <span class="fd-toolbar__spacer"></span>
-    <button class="fd-button fd-button--compact">Right-aligned</button>
+    <button class="fd-button">Right-aligned</button>
 </div>
 <h3>Spacers</h3>
-<div class="fd-toolbar">
-    <button class="fd-button fd-button--compact">Left-aligned</button>
+<div class="fd-toolbar fd-toolbar--compact">
+    <button class="fd-button">Left-aligned</button>
     <span class="fd-toolbar__spacer"></span>
-    <button class="fd-button fd-button--compact">Inside</button>
+    <button class="fd-button">Inside</button>
     <span class="fd-toolbar__spacer"></span>
-    <button class="fd-button fd-button--compact">Inside</button>
+    <button class="fd-button">Inside</button>
     <span class="fd-toolbar__spacer"></span>
-    <button class="fd-button fd-button--compact">Right-aligned</button>
+    <button class="fd-button">Right-aligned</button>
 </div>
 <h3>Spacers with fixed width</h3>
-<div class="fd-toolbar">
-    <button class="fd-button fd-button--compact fd-button--transparent">Accept</button>
-    <button class="fd-button fd-button--compact fd-button--transparent">Reject</button>
+<div class="fd-toolbar fd-toolbar--compact">
+    <button class="fd-button fd-button--transparent">Accept</button>
+    <button class="fd-button fd-button--transparent">Reject</button>
     <span class="fd-toolbar__spacer fd-toolbar__spacer--fixed" style="width:50px;"></span>
-    <button class="fd-button fd-button--compact">Edit</button>
+    <button class="fd-button">Edit</button>
     <span class="fd-toolbar__spacer fd-toolbar__spacer--fixed" style="width:150px;"></span>
-    <button class="fd-button fd-button--compact fd-button--transparent">Delete</button>
+    <button class="fd-button fd-button--transparent">Delete</button>
 </div>
 `;
 
