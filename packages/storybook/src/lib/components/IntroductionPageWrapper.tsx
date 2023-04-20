@@ -1,7 +1,9 @@
 import { IntroductionPage, SAPContainer } from 'fundamental-styles/doc-ui';
 
-export function IntroductionPageWrapper({ content }) {
+export function IntroductionPageWrapper({ children }) {
     return <SAPContainer>
-        <IntroductionPage content={content}/>
+        <IntroductionPage>
+            { children }
+        </IntroductionPage>
     </SAPContainer>
 }

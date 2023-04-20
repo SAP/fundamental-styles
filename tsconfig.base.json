@@ -24,7 +24,6 @@
         "lib": ["es2018", "dom"],
         "esModuleInterop": true,
         "jsx": "react-jsx",
-        "jsxImportSource": "react",
         "allowJs": true,
         "allowSyntheticDefaultImports": true,
         "paths": {

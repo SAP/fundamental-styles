@@ -1,17 +1,17 @@
-import { DocsContainer as container } from '@storybook/addon-docs';
 import { fundamentalTheme as theme, IntroductionPageWrapper } from 'fundamental-styles/storybook';
-import Readme from '../README.md?raw';
+import Readme from '../../README.md?raw';
+import { DocsContainer as container } from '@storybook/addon-docs';
 import Markdown from 'markdown-to-jsx';
 
 export default {
-    title: 'CX / Introduction',
+    title: 'Introduction',
     component: () => {
         return null;
     },
     parameters: {
         docs: {
             container,
-            page: () => <IntroductionPageWrapper><Markdown children={Readme}/></IntroductionPageWrapper>,
+            page: () => IntroductionPageWrapper({ children: Markdown({ children: Readme }) }),
             theme
         },
         previewTabs: {
@@ -25,7 +25,7 @@ export default {
     }
 };
 
-export const Cx = () => {
+export const Overview = () => {
     /*
       this will serve as default redirect to the docs page,
       otherwise it will render this empty div without ability
@@ -34,7 +34,9 @@ export const Cx = () => {
     return '<div></div>';
 };
 
-Cx.parameters = {
+Overview.parameters = {
+    title: 'Overview',
     storyshots: { disable: true },
+    viewMode: 'docs',
     docsOnly: true
 };

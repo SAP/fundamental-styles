@@ -1,5 +1,9 @@
-import {StorybookViteConfig} from "@storybook/builder-vite";
-import {mergeConfig} from "vite";
+import { StorybookConfig } from '@storybook/html-vite';
+import { readFileSync } from 'fs';
+import { mergeConfig } from 'vite';
+import { loadCsf } from '@storybook/csf-tools';
+import { getOwner } from './custom/addons/utilities/get-owner';
+import { relative } from 'path';
 
 const storiesToInclude = () => {
     const mode = process.env.STORYBOOK_ENV;
@@ -12,52 +16,60 @@ const storiesToInclude = () => {
             return '(stories|visual)';
     }
 };
-
 const includedStories = storiesToInclude();
-const includedPackages = '(' + ['common-css', 'cx', 'styles'].join('|') + ')';
+const includedPackages = '(' + [
+    'common-css',
+    'cx',
+    'styles'
+].join('|') + ')';
 const staticDirs = ['static/', '../node_modules/@sap-theming'];
-const storybookAddons = [
-    '@storybook/addon-actions',
-    '@storybook/addon-links',
-    '@storybook/addon-a11y',
-    '@storybook/addon-cssresources/register',
-    '@storybook/addon-viewport/register',
-    {
-        name: '@storybook/addon-docs',
-        options: {
-            transcludeMarkdown: true
-        }
-    },
-    '@storybook/addon-toolbars',
-    '@storybook/addon-controls',
-    './custom/addons/package-switch/register',
-    './custom/addons/theme-switcher/register'
-];
-
-const config: StorybookViteConfig = {
-    stories: [
-        '../stories/docs/introduction.stories.js',
-        `../packages/@${includedPackages}/**/*.@${includedStories}.@(ts|tsx|js|jsx)`,
-        `../stories/**/*.@${includedStories}.@(ts|tsx|js|jsx)`
-    ],
+const storybookAddons = ['@storybook/addon-actions', '@storybook/addon-links', '@storybook/addon-a11y', '@storybook/addon-viewport/register', {
+    name: '@storybook/addon-docs',
+    options: {
+        transcludeMarkdown: true
+    }
+}, '@storybook/addon-toolbars', '@storybook/addon-controls', './custom/addons/theme-switcher/register', './custom/addons/package-switch/register', '@storybook/addon-mdx-gfm'];
+const config: StorybookConfig = {
+    stories: ['../stories/docs/introduction.stories.ts', `../packages/@${includedPackages}/**/*.@${includedStories}.@(ts|tsx|js|jsx)`, `../stories/**/*.@${includedStories}.@(ts|tsx|js|jsx)`],
     staticDirs: staticDirs,
     addons: storybookAddons,
-    core: {
-        builder: '@storybook/builder-vite'
+    core: {},
+    storyIndexers: (indexers) => {
+        const indexer = async (fileName, opts) => {
+            const owner = getOwner({ importPath: './' + relative(process.cwd(), fileName) });
+            const code = readFileSync(fileName, { encoding: 'utf-8' });
+            return loadCsf(code, {
+                ...opts, fileName, makeTitle: (userTitle) => {
+                    return owner ? `${owner.title} / ${userTitle}` : userTitle;
+                }
+            }).parse();
+        };
+
+        return [
+            {
+                test: /(visual|stories)\.(js|ts)$/,
+                indexer
+            } as any,
+            ...(indexers || [])
+        ];
     },
     features: {
-        storyStoreV7: true,
+        storyStoreV7: true
     },
     typescript: {
         check: false
     },
     async viteFinal(config) {
-        const base = await import('../vite.config');
         return mergeConfig(config, {
-            ...base.default,
             base: process.env.STORYBOOK_BASE_HREF
         });
+    },
+    framework: {
+        name: '@storybook/html-vite',
+        options: {}
+    },
+    docs: {
+        autodocs: true
     }
 };
-
 export default config;

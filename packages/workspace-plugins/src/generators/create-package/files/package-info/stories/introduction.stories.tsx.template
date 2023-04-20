@@ -3,8 +3,7 @@ import { fundamentalTheme as theme, IntroductionPageWrapper } from 'fundamental-
 import Readme from '../README.md';
 
 export default {
-    title: 'Introduction',
-    component: () => {
+        component: () => {
         return null;
     },
     parameters: {

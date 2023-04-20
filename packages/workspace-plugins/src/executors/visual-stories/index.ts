@@ -82,15 +82,14 @@ export default async function (schema: VisualStoriesSchema, context: ExecutorCon
         import { visualStory, withThemeProvider } from 'fundamental-styles/storybook';
         
         export default {
-        ...stories.default,
-        title: 'Visual/${theme.title}/${storyTitle}',
+            title: ${JSON.stringify('Visuals/' + fullTitle + '/' + theme.title)},
             parameters: {
                 theme: ${JSON.stringify(theme.value)},
                 packageId: ${JSON.stringify(projectName)},
             },
             decorators: [withThemeProvider]
         };
-        export const ${className} = visualStory(stories);
+        export const ${className}Visuals = visualStory(stories);
         `,
                 { parser: 'babel-ts' }
             );

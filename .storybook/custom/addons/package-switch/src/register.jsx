@@ -1,5 +1,5 @@
 const React = require('react');
-const { default: addons, types } = require('@storybook/addons');
+const { addons, types } = require('@storybook/addons');
 const { ADDON_ID } = require('./constants');
 const { getOwner } = require('../../utilities/get-owner');
 const { isValidProject } = require('../../utilities/projects');
@@ -7,44 +7,31 @@ const { useStorybookState } = require('@storybook/api');
 const { useEffect, useState, useMemo } = require('react');
 const { useMemoWithComparator } = require('../../utilities/use-memo-with-comparator');
 const deepEqual = require('fast-deep-equal');
-const { DOCS_RENDERED } = require('@storybook/core-events');
-const { BehaviorSubject, filter, first } = require('rxjs');
 
 addons.register(ADDON_ID, (api) => {
     const setStories = (stories) => {
-        return api.setStories(stories);
-    };
-    const getOwnerOfStory = (story) => getOwner(story);
-    const getKindOfStory = (story) => {
-        const owner = getOwnerOfStory(story);
-        return owner ? `${owner.title}/${story.kind}` : story.kind;
+        return api.setIndex({ v: 4, entries: stories });
     };
 
-    const getUpdatedStories = (originalStories, packageId) => {
+    const getUpdatedIndex = (originalStories, packageId) => {
         if (packageId === 'all') {
-            return originalStories.reduce((acc, [storyId, story]) => {
-                acc[storyId] = { ...story, kind: getKindOfStory(story) };
-                return acc;
-            }, {});
+            return originalStories;
         }
-        return originalStories.reduce((acc, [storyId, story]) => {
-            const owner = getOwnerOfStory(story);
-            if (owner?.value === packageId) {
+        return Object.entries(originalStories).reduce((acc, [storyId, story]) => {
+            const owner = getOwner(story);
+            if (owner?.value === packageId || !owner) {
                 acc[storyId] = story;
             }
             return acc;
-        }, []);
+        }, {});
     };
 
-    const updateStories = (originalStories, packageId) => {
+    const updateIndex = (originalIndex, packageId) => {
         packageId = !isValidProject(packageId) ? 'all' : packageId;
-        const newStories = getUpdatedStories(originalStories, packageId);
+        const newStories = getUpdatedIndex(originalIndex, packageId);
         return setStories(newStories).then(() => ({ packageId, newStories }));
     };
 
-    const selectStory = (kindOrId, story, config) => {
-        api.selectStory(kindOrId, story, config);
-    };
     addons.add(ADDON_ID, {
         // I need this because otherwise there is no way to get initial stories
         title: ADDON_ID,
@@ -52,55 +39,45 @@ addons.register(ADDON_ID, (api) => {
         render: () => {
             const state = useStorybookState();
             const {
-                storyId: selectedStoryId,
+                storyId,
                 globals,
-                globals: { packageId },
-                storiesHash
+                globals: { packageId: selectedPackageId },
+                index
             } = state;
-            const [originalStories, setOriginalStories] = useState([]);
-            const storyId = useMemo(() => selectedStoryId, [selectedStoryId]);
-            const selectedPackageId = useMemo(() => packageId, [packageId]);
-            const stories = useMemoWithComparator(
-                () => Object.entries(storiesHash).filter(([, story]) => story.type === 'story'),
-                [storiesHash],
+            const [originalIndex, setOriginalIndex] = useState({});
+            const titledStories = useMemoWithComparator(
+                () => {
+                    if (index) {
+                        return Object.entries(index).reduce((acc, [storyId, story]) => {
+                            if (story.title) {
+                                acc[storyId] = story;
+                            }
+                            return acc;
+                        }, {});
+                    }
+                    return {};
+                },
+                [index],
                 deepEqual
             );
-            const renderedDocStory$ = useMemo(() => new BehaviorSubject(null), []);
             useEffect(() => {
-                const storyNameUpdater = (storyName) => renderedDocStory$.next(storyName);
-                api.on(DOCS_RENDERED, storyNameUpdater);
-                return () => api.off(DOCS_RENDERED, storyNameUpdater);
-            }, []);
-            useEffect(() => {
-                let renderSubscription;
                 if (selectedPackageId) {
-                    const isFirstLoad = originalStories.length === 0;
+                    const isFirstLoad = Object.keys(originalIndex).length === 0;
                     if (!storyId) {
                         return api.selectFirstStory();
                     }
                     if (isFirstLoad) {
-                        setOriginalStories(stories);
+                        setOriginalIndex(titledStories);
+                        return;
                     }
-                    renderSubscription = renderedDocStory$
-                        .pipe(
-                            filter((storyName) => storyName === storyId),
-                            first()
-                        )
-                        .subscribe(() => {
-                            updateStories(isFirstLoad ? stories : originalStories, selectedPackageId).then(({ packageId }) => {
-                                api.updateGlobals({ ...globals, packageId });
-                                if (!api.getCurrentStoryData()) {
-                                    api.selectFirstStory();
-                                }
-                            });
-                        });
+                    updateIndex(originalIndex, selectedPackageId).then(({ packageId }) => {
+                        api.updateGlobals({ ...globals, packageId });
+                        if (!api.getCurrentStoryData()) {
+                            api.selectFirstStory();
+                        }
+                    });
                 }
-                return () => {
-                    if (renderSubscription) {
-                        renderSubscription.unsubscribe();
-                    }
-                }
-            }, [storyId, selectedPackageId, stories]);
+            }, [storyId, selectedPackageId, titledStories]);
             return <></>;
         }
     });

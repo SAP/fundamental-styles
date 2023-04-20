@@ -1,16 +1,18 @@
 import { DocsContainer as container } from '@storybook/addon-docs';
 import { fundamentalTheme as theme, IntroductionPageWrapper } from 'fundamental-styles/storybook';
-import Readme from '../README.md';
+import Readme from '../README.md?raw';
+import Markdown from 'markdown-to-jsx';
+
 
 export default {
-    title: 'Introduction',
+    title: 'SAP Fiori / Introduction',
     component: () => {
         return null;
     },
     parameters: {
         docs: {
             container,
-            page: () => <IntroductionPageWrapper content={<Readme />} />,
+            page: () => <IntroductionPageWrapper>{<Markdown options={{forceBlock: true}}>{ Readme }</Markdown>}</IntroductionPageWrapper>,
             theme
         },
         previewTabs: {

@@ -4,12 +4,12 @@ import Community from '../Community';
 import Versions from '../Versions';
 import Footer from '../Footer';
 
-export const IntroductionPage = ({content}) => {
+export const IntroductionPage = ({children}) => {
     return (
         <>
             <Header/>
             <div className="fd-introduction">
-                {content}
+                {children}
             </div>
             <Community/>
             <Versions/>

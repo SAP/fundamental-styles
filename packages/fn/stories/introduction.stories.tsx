@@ -10,7 +10,7 @@ export default {
     parameters: {
         docs: {
             container,
-            page: () => <IntroductionPageWrapper content={<Readme />} />,
+            page: () => <IntroductionPageWrapper><Readme /></IntroductionPageWrapper>,
             theme
         },
         previewTabs: {
