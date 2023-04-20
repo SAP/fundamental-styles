@@ -71,11 +71,13 @@ export const Range = () => `
 <div class="slider-container slider-container--range">
     <div class="fd-slider fd-slider--range">
         <div class="fd-slider__inner">
+            <div class="fd-slider__track">
+              <div class="fd-slider__track-range" style="width: 40%">
+                <div class="fd-slider__track-focus-range" tabindex="0"></div>
+              </div>
+            </div>
             <div class="fd-slider__handle" tabindex="0" role="slider" aria-label="range slider left" aria-valuemin="1" aria-valuemax="80" aria-valuenow="40" style="left: 40%;"></div>
             <div class="fd-slider__handle" tabindex="0" role="slider" aria-label="range slider right" aria-valuemin="40" aria-valuemax="100" aria-valuenow="80" style="left: 80%;"></div>
-            <div class="fd-slider__track">
-                <div class="fd-slider__track-range" style="width: 40%"></div>
-            </div>
         </div>
     </div>
 </div>
@@ -186,7 +188,7 @@ export const MobileMode = () => `
 <div class="slider-container">
     <div class="fd-slider fd-slider--lg">
         <div class="fd-slider__inner">
-            <div class="fd-slider__handle fd-slider__handle--lg" tabindex="0" role="slider" aria-label="slider" aria-valuemin="1" aria-valuemax="100" aria-valuenow="50" style="left: 50%;"></div>
+            <div class="fd-slider__handle fd-slider__handle" tabindex="0" role="slider" aria-label="slider" aria-valuemin="1" aria-valuemax="100" aria-valuenow="50" style="left: 50%;"></div>
             <div class="fd-slider__track">
                 <div class="fd-slider__track-range" style="width: 50%;"></div>
             </div>
@@ -196,6 +198,114 @@ export const MobileMode = () => `
 `;
 MobileMode.storyName = 'Mobile';
 MobileMode.parameters = {
+    docs: {
+        description: {
+            story: `
+By default, the slider is not responsive. However, to make the slider more mobile-friendly, you may enlarge the slider handle and its hit area by adding \`fd-slider__handle--lg\` class to \`fd-slider__handle\` element.
+To add horizontal paddings of \`0.8125rem\` use the \`fd-slider--lg\` modifier class
+        `
+        }
+    }
+};
+
+export const VerticalMode = () => `
+<div style="display: flex; flex-flow: row wrap; justify-content: space-between">
+  <div>
+  <p>Standard vertical slider</p>
+    <div style="display: flex;">
+      <div class="slider-container" style="height: 500px; width: 50px">
+          <div class="fd-slider fd-slider--vertical">
+              <div class="fd-slider__inner">
+                  <div class="fd-slider__handle fd-slider__handle" tabindex="0" role="slider" aria-label="slider" aria-valuemin="1" aria-valuemax="100" aria-valuenow="50" style="bottom: 50%;"></div>
+                  <div class="fd-slider__track">
+                      <div class="fd-slider__track-range" style="height: 50%;"></div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="slider-container" style="height: 500px; width: 50px">
+          <div class="fd-slider fd-slider--vertical">
+              <div class="fd-slider__inner">
+                  <div class="fd-slider__handle fd-slider__handle" tabindex="0" role="slider" aria-label="slider" aria-valuemin="1" aria-valuemax="100" aria-valuenow="50" style="bottom: 30%;"></div>
+                  <div class="fd-slider__track">
+                      <div class="fd-slider__track-range" style="height: 30%;"></div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="slider-container" style="height: 500px; width: 50px">
+          <div class="fd-slider fd-slider--vertical">
+              <div class="fd-slider__inner">
+                  <div class="fd-slider__handle fd-slider__handle" tabindex="0" role="slider" aria-label="slider" aria-valuemin="1" aria-valuemax="100" aria-valuenow="50" style="bottom: 70%;"></div>
+                  <div class="fd-slider__track">
+                      <div class="fd-slider__track-range" style="height: 70%;"></div>
+                  </div>
+              </div>
+          </div>
+      </div>
+    </div>
+  </div>
+  <div>
+    <p>Mobile vertical slider with ticks and labels</p>
+    <div class="slider-container" style="height: 500px; width: 50px">
+      <div class="fd-slider fd-slider--lg fd-slider--vertical">
+        <div class="fd-slider__inner">
+          <div class="fd-slider__handle" tabindex="0" role="slider" aria-label="slider with ticks and labels" aria-valuemin="1" aria-valuemax="100" aria-valuenow="50" style="bottom: 50%;"></div>
+          <div class="fd-slider__track">
+              <div class="fd-slider__track-range" style="height: 50%;"></div>
+          </div>
+          <div class="fd-slider__tick-wrapper">
+              <div class="fd-slider__ticks">
+                  <div class="fd-slider__tick fd-slider__tick--in-range"></div>
+                  <div class="fd-slider__tick fd-slider__tick--in-range"></div>
+                  <div class="fd-slider__tick fd-slider__tick--in-range"></div>
+                  <div class="fd-slider__tick fd-slider__tick--in-range"></div>
+                  <div class="fd-slider__tick fd-slider__tick--in-range"></div>
+                  <div class="fd-slider__tick fd-slider__tick--in-range"></div>
+                  <div class="fd-slider__tick"></div>
+                  <div class="fd-slider__tick"></div>
+                  <div class="fd-slider__tick"></div>
+                  <div class="fd-slider__tick"></div>
+                  <div class="fd-slider__tick"></div>
+              </div>
+              <div class="fd-slider__labels">
+                  <div class="fd-slider__label">0</div>
+                  <div class="fd-slider__label">10</div>
+                  <div class="fd-slider__label">20</div>
+                  <div class="fd-slider__label">30</div>
+                  <div class="fd-slider__label">40</div>
+                  <div class="fd-slider__label">50</div>
+                  <div class="fd-slider__label">60</div>
+                  <div class="fd-slider__label">70</div>
+                  <div class="fd-slider__label">80</div>
+                  <div class="fd-slider__label">90</div>
+                  <div class="fd-slider__label">100</div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div>
+    <p>Range slider</p>
+    <div class="slider-container slider-container--range" style="height: 500px; width: 50px">
+        <div class="fd-slider fd-slider--range fd-slider--vertical">
+            <div class="fd-slider__inner">
+                <div class="fd-slider__track">
+                  <div class="fd-slider__track-range" style="height: 40%; bottom: 40%">
+                    <div class="fd-slider__track-focus-range" tabindex="0"></div>
+                  </div>
+                </div>
+                <div class="fd-slider__handle" tabindex="0" role="slider" aria-label="range slider left" aria-valuemin="1" aria-valuemax="80" aria-valuenow="40" style="bottom: 40%;"></div>
+                <div class="fd-slider__handle" tabindex="0" role="slider" aria-label="range slider right" aria-valuemin="40" aria-valuemax="100" aria-valuenow="80" style="bottom: 80%;"></div>
+            </div>
+        </div>
+    </div>
+  </div>
+</div>
+`;
+VerticalMode.storyName = 'Vertical Slider';
+VerticalMode.parameters = {
     docs: {
         description: {
             story: `
