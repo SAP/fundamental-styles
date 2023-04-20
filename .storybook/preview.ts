@@ -62,30 +62,19 @@ export default {
         },
         options: {
             storySort: (a, b) => {
-                // We have to be extra specific here because Storybook compiler is pulling
-                // this function from the context of the file and executes it in absolutely isolated environment.
-                // So we have to declare variables inside function and not declare it in upper scope.
-                const storiesOrderByPackage = [
-                    'styles',
-                    'fn',
-                    'cx',
-                    'common-css'
-                ];
-                const aPackage = storiesOrderByPackage.indexOf(a.importPath.split('/')[2]);
-                const bPackage = storiesOrderByPackage.indexOf(b.importPath.split('/')[2]);
-                if (aPackage === -1 && bPackage === -1) {
-                    if (a.title === 'Introduction') {
-                        return -1
-                    }
-                    if (b.title === 'Introduction') {
-                        return 1
-                    }
-                    return a.id.localeCompare(b.id, undefined, { numeric: true });
+                const introductionName = 'Introduction',
+                    aIsIntroduction = a.title.includes(introductionName),
+                    bIsIntroduction = b.title.includes(introductionName);
+                if (aIsIntroduction && bIsIntroduction) {
+                    return 0;
                 }
-                if (aPackage === -1 || bPackage === -1) {
-                    return aPackage === -1 ? -1 : 1;
+                if (aIsIntroduction) {
+                    return -1;
                 }
-                return aPackage - bPackage;
+                if (bIsIntroduction) {
+                    return 1;
+                }
+                return a.id.localeCompare(b.id, undefined, { numeric: true });
             },
             initialActive: 'docs'
         }
