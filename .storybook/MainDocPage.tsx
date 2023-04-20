@@ -1,4 +1,3 @@
-import React from "react";
 import {DocsPage, SAPContainer} from "fundamental-styles/doc-ui";
 
 export function MainDocPage() {

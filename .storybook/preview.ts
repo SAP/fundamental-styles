@@ -74,6 +74,12 @@ export default {
                 if (bIsIntroduction) {
                     return 1;
                 }
+                if (a.name?.endsWith('Docs')) {
+                    return -1;
+                }
+                if (b.name?.endsWith('Docs')) {
+                    return 1;
+                }
                 return a.id.localeCompare(b.id, undefined, { numeric: true });
             },
             initialActive: 'docs'
@@ -88,7 +94,7 @@ export default {
         ['fn-theme']: {},
         ['common-css-theme']: {},
         directionality: {
-            name: 'Directionality',
+            title: 'Directionality',
             description: 'Directionality of components',
             defaultValue: 'ltr',
             toolbar: {
