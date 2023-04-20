@@ -68,9 +68,8 @@ addons.register(ADDON_ID, (api) => {
                     }
                     if (isFirstLoad) {
                         setOriginalIndex(titledStories);
-                        return;
                     }
-                    updateIndex(originalIndex, selectedPackageId).then(({ packageId }) => {
+                    updateIndex(isFirstLoad ? titledStories : originalIndex, selectedPackageId).then(({ packageId }) => {
                         api.updateGlobals({ ...globals, packageId });
                         if (!api.getCurrentStoryData()) {
                             api.selectFirstStory();
