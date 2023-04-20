@@ -1,9 +1,16 @@
 import { IntroductionPage, SAPContainer } from 'fundamental-styles/doc-ui';
+import Markdown from 'markdown-to-jsx';
 
-export function IntroductionPageWrapper({ children }) {
+function IntroductionPageWrapper({ children }) {
     return <SAPContainer>
         <IntroductionPage>
-            { children }
+            {children}
         </IntroductionPage>
-    </SAPContainer>
+    </SAPContainer>;
+}
+
+export function RenderPackageIntroduction(readme: string) {
+    return () => <IntroductionPageWrapper>
+        <Markdown>{readme}</Markdown>
+    </IntroductionPageWrapper>;
 }

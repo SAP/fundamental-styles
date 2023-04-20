@@ -1,18 +1,16 @@
 import { DocsContainer as container } from '@storybook/addon-docs';
-import { fundamentalTheme as theme, IntroductionPageWrapper } from 'fundamental-styles/storybook';
+import { fundamentalTheme as theme, RenderPackageIntroduction } from 'fundamental-styles/storybook';
 import Readme from '../README.md?raw';
-import Markdown from 'markdown-to-jsx';
-
 
 export default {
-    title: 'SAP Fiori / Introduction',
+    title: 'Introduction',
     component: () => {
         return null;
     },
     parameters: {
         docs: {
             container,
-            page: () => <IntroductionPageWrapper>{<Markdown options={{forceBlock: true}}>{ Readme }</Markdown>}</IntroductionPageWrapper>,
+            page: RenderPackageIntroduction(Readme),
             theme
         },
         previewTabs: {
@@ -26,7 +24,7 @@ export default {
     }
 };
 
-export const Styles = () => {
+export const CommonCSS = () => {
     /*
       this will serve as default redirect to the docs page,
       otherwise it will render this empty div without ability
@@ -35,7 +33,7 @@ export const Styles = () => {
     return '<div></div>';
 };
 
-Styles.parameters = {
+CommonCSS.parameters = {
     storyshots: { disable: true },
     docsOnly: true
 };

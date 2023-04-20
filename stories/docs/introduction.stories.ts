@@ -1,7 +1,6 @@
-import { fundamentalTheme as theme, IntroductionPageWrapper } from 'fundamental-styles/storybook';
+import { fundamentalTheme as theme, RenderPackageIntroduction } from 'fundamental-styles/storybook';
 import Readme from '../../README.md?raw';
 import { DocsContainer as container } from '@storybook/addon-docs';
-import Markdown from 'markdown-to-jsx';
 
 export default {
     title: 'Introduction',
@@ -11,7 +10,7 @@ export default {
     parameters: {
         docs: {
             container,
-            page: () => IntroductionPageWrapper({ children: Markdown({ children: Readme }) }),
+            page: RenderPackageIntroduction(Readme),
             theme
         },
         previewTabs: {
