@@ -57,10 +57,10 @@ export const Standard = () => `<div style="text-align: center">
 
 Standard.parameters = {
     docs: {
-        iframeHeight: 200,
+        story: { iframeHeight: 200 },
         description: {
             story:
-            'The standard busy indicator animates a sequence of cascading dots expanding and shrinking in a loop. The component comes in three sizes detailed above. To display the busy indicator, use the `fd-busy-indicator` class. If you want to display a certain size, add the modifier class of the desired size i.e. `--m` to the element.'
+                'The standard busy indicator animates a sequence of cascading dots expanding and shrinking in a loop. The component comes in three sizes detailed above. To display the busy indicator, use the `fd-busy-indicator` class. If you want to display a certain size, add the modifier class of the desired size i.e. `--m` to the element.'
         }
     }
 };
@@ -76,10 +76,10 @@ export const ContrastMode = () => `<div style="display:flex;justify-content:cent
 
 ContrastMode.parameters = {
     docs: {
-        iframeHeight: 200,
+        story: { iframeHeight: 200 },
         description: {
             story:
-            'The busy indicator also comes in contrast mode and displays white dots against a dark background. To apply contrast mode, add `contrast` into the element i.e. `fd-busy-indicator--m contrast`.'
+                'The busy indicator also comes in contrast mode and displays white dots against a dark background. To apply contrast mode, add `contrast` into the element i.e. `fd-busy-indicator--m contrast`.'
         }
     }
 };
@@ -95,10 +95,10 @@ export const ExtendedBusyIndicator = () => `<div class="fd-busy-indicator-extend
 
 ExtendedBusyIndicator.parameters = {
     docs: {
-        iframeHeight: 200,
+        story: { iframeHeight: 200 },
         description: {
             story:
-            'If more information needs to be displayed with the loading animation, it is replaced by the Extended Busy Indicator `fd-busy-indicator-extended`. The additional information is wrapped in an element with `fd-busy-indicator-extended__label` class.'
+                'If more information needs to be displayed with the loading animation, it is replaced by the Extended Busy Indicator `fd-busy-indicator-extended`. The additional information is wrapped in an element with `fd-busy-indicator-extended__label` class.'
         }
     }
 };
@@ -115,10 +115,10 @@ export const ExtendedBusyIndicatorInsideMessageToast = () => `
 
 ExtendedBusyIndicatorInsideMessageToast.parameters = {
     docs: {
-        iframeHeight: 200,
+        story: { iframeHeight: 200 },
         description: {
             story:
-            'At the Page level the Busy Indicator should always be placed in a container. The simplest form of container will be centred on the page and inherit the color values from Message Toast.'
+                'At the Page level the Busy Indicator should always be placed in a container. The simplest form of container will be centred on the page and inherit the color values from Message Toast.'
         }
     }
 };
@@ -161,10 +161,10 @@ export const BusyDialog = () => `
 
 BusyDialog.parameters = {
     docs: {
-        iframeHeight: 200,
+        story: { iframeHeight: 200 },
         description: {
             story:
-            'The busy dialog informs the user about an ongoing operation. During the operation, the entire screen is blocked.'
+                'The busy dialog informs the user about an ongoing operation. During the operation, the entire screen is blocked.'
         }
     }
 };

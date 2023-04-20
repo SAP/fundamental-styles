@@ -154,7 +154,7 @@ export const Shellbar = () => `${localStyles}
 
 Shellbar.parameters = {
     docs: {
-        iframeHeight: 600,
+        story: { iframeHeight: 600 },
         description: {
             story: `The product switch button is typically displayed within a **Shellbar** on the far-right side.
         `
@@ -310,7 +310,7 @@ export const Medium = () => `<div class="fd-product-switch__body fd-product-swit
 
 Medium.parameters = {
     docs: {
-        iframeHeight: 350,
+        story: { iframeHeight: 350 },
         description: {
             story: `If there are 6 (or less) items to display, it is recommended to use the 3-column layout (medium). To display a medium-sized product switch, add the \`fd-product-switchbody--col-3\` modifier class to the main element.
         `
@@ -421,7 +421,7 @@ export const Small = () => `<div style="width:450px;">
 
 Small.parameters = {
     docs: {
-        iframeHeight: 400,
+        story: { iframeHeight: 400 },
         description: {
             story: `For smaller screens (mobile), the product switch is displayed in list format. To achieve this style, add the \`fd-product-switch__body--mobile\` modifier class to the main element.
         `

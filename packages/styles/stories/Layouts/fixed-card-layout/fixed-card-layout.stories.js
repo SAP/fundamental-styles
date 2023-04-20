@@ -516,7 +516,7 @@ export const FixedCardLayout = () =>
 FixedCardLayout.storyName = 'Fixed card layout with 3 columns';
 FixedCardLayout.parameters = {
     docs: {
-        iframeHeight: 900,
+        story: { iframeHeight: 900 },
         description: {
             story: `Cards arrangement in a 3 column layout.
 * Use \`fd-fixed-card-layout__card-layout\` class for the wrapper element, specify amount of columns with \`fd-fixed-card-layout__card-layout--columns-N\` class, where \`1 < N < 11\`.

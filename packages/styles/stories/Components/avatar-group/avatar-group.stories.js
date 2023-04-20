@@ -61,7 +61,7 @@ If an avatar group has too many members to display, an overflow button is displa
 To change the background color of the button, add the \`fd-avatar-group__more-button--accent-color-*\` class with the number indicating the desired color. The color options include numbers ranging from 1 to 10, for example: \`fd-avatar-group__more-button--accent-color-1\`
 
 `,
-        docs: { iframeHeight: 250 },
+        docs: { story: { iframeHeight: 250 } },
         tags: ['a11y', 'f3', 'theme']
     }
 };
@@ -293,7 +293,7 @@ export const IndividualType = () => `<div class="fd-avatar-group fd-avatar-group
 
 IndividualType.parameters = {
     docs: {
-        iframeHeight: 250,
+        story: { iframeHeight: 250 },
         description: {
             story: 'For Individual type add the `fd-avatar-group--individual-type` modifier class to the `fd-avatar-group` base class.'
         }
@@ -412,7 +412,7 @@ export const GroupType = () => `<div class="fd-popover">
 
 GroupType.parameters = {
     docs: {
-        iframeHeight: 250,
+        story: { iframeHeight: 250 },
         description: {
             story: 'For Group type add the `fd-avatar-group--group-type` modifier class to the `fd-avatar-group` base class.'
         }

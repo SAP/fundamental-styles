@@ -55,10 +55,11 @@ export const Fixed = () => `<div class="fd-panel fd-panel--fixed" aria-labelledb
 
 Fixed.parameters = {
     docs: {
-        iframeHeight: 200,
+        story: { iframeHeight: 200 },
         description: {
             story: `When the height of the panel's content is set to a fixed size, the content area becomes scrollable.
-        ` }
+        `
+        }
     }
 };
 
@@ -119,10 +120,11 @@ export const Expandable = () => `<div class="fd-panel" aria-labelledby="__panel-
 
 Expandable.parameters = {
     docs: {
-        iframeHeight: 200,
+        story: { iframeHeight: 200 },
         description: {
             story: `Expandable panels are much like fixed panels, except their content can be expanded and collapsed (including the info toolbar, if available).
-        ` }
+        `
+        }
     }
 };
 
@@ -157,10 +159,11 @@ export const Compact = () => `<div class="fd-panel fd-panel--compact" aria-label
 
 Compact.parameters = {
     docs: {
-        iframeHeight: 200,
+        story: { iframeHeight: 200 },
         description: {
             story: `Panels can be displayed in compact mode, which decreases the padding and button sizes. To display a compact panel, add the \`fd-panel--compact\` modifier class to the main element.
-        ` }
+        `
+        }
     }
 };
 
@@ -206,10 +209,11 @@ FixedHeightContent.storyName = 'Fixed height';
 
 FixedHeightContent.parameters = {
     docs: {
-        iframeHeight: 300,
+        story: { iframeHeight: 300 },
         description: {
             story: `When the height of the panel's content is set to a fixed size, the content area becomes scrollable.
-        ` }
+        `
+        }
     }
 };
 

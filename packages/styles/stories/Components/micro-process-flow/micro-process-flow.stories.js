@@ -108,7 +108,7 @@ export const DefaultMicroProcessFlow = () => `<div class="fd-micro-process-flow"
 DefaultMicroProcessFlow.storyName = 'Micro process flow with dependent steps (Default)';
 DefaultMicroProcessFlow.parameters = {
     docs: {
-        iframeHeight: 210,
+        story: { iframeHeight: 210 },
         description: {
             story: `
         `
@@ -175,7 +175,7 @@ export const MicroProcessFlowIndependentSteps = () => `<div class="fd-micro-proc
 MicroProcessFlowIndependentSteps.storyName = 'Micro process flow with independent steps';
 MicroProcessFlowIndependentSteps.parameters = {
     docs: {
-        iframeHeight: 210,
+        story: { iframeHeight: 210 },
         description: {
             story: `Add the \`.fd-micro-process-flow--independent-steps\` modifier class to \`.fd-micro-process-flow\` class to remove the connector line.
         `
@@ -367,7 +367,7 @@ export const MicroProcessFlowCustom = () => `<div class="fd-micro-process-flow">
 MicroProcessFlowCustom.storyName = 'Micro process flow with custom steps';
 MicroProcessFlowCustom.parameters = {
     docs: {
-        iframeHeight: 210,
+        story: { iframeHeight: 210 },
         description: {
             story: `
         `
@@ -736,7 +736,7 @@ export const OverflowMicroProcessFlow = () => `<div class="fd-micro-process-flow
 OverflowMicroProcessFlow.storyName = 'Micro process flow with overflow';
 OverflowMicroProcessFlow.parameters = {
     docs: {
-        iframeHeight: 210,
+        story: { iframeHeight: 210 },
         description: {
             story: `
         `
@@ -810,7 +810,7 @@ export const MicroProcessFlowWithObjects = () => `<div class="fd-micro-process-f
 MicroProcessFlowWithObjects.storyName = 'Micro process flow with elements inserted between nodes';
 MicroProcessFlowWithObjects.parameters = {
     docs: {
-        iframeHeight: 210,
+        story: { iframeHeight: 210 },
         description: {
             story: `
         `
@@ -876,7 +876,7 @@ export const MicroProcessFlowCustomWidth = () => `<div class="fd-micro-process-f
 MicroProcessFlowCustomWidth.storyName = 'Micro process flow with custom node width';
 MicroProcessFlowCustomWidth.parameters = {
     docs: {
-        iframeHeight: 210,
+        story: { iframeHeight: 210 },
         description: {
             story: `By default, the width of the item container is calculated based on the actual item width and the connector line. To change the width add inline style to the element with \`.fd-micro-process-flow__item\` class and provide value for the width.
 

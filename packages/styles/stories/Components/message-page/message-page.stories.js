@@ -48,7 +48,7 @@ export const Filter = () => `<div style="height: 600px; width: 100%;">
 
 Filter.parameters = {
     docs: {
-        iframeHeight: messageBoxHeight,
+        story: { iframeHeight: messageBoxHeight },
         description: {
             story: `The filter message page is displayed when the user has set a filter and there are no results. This message then prompts the user to remove or re-evaluate the filter they set for the page. It is mandatory to use the \`.sap-icon--filter\`  icon.
     `
@@ -74,7 +74,7 @@ export const Search = () => `<div style="height: 600px; width: 100%;">
 
 Search.parameters = {
     docs: {
-        iframeHeight: messageBoxHeight,
+        story: { iframeHeight: messageBoxHeight },
         description: {
             story: `The search message page is displayed when a user has searched for something, but there are no results for that inquiry. It is mandatory to use the \`.sap-icon--search\` icon.
     `
@@ -101,7 +101,7 @@ export const NoItems = () => `<div style="height: 600px; width: 100%;">
 NoItems.storyName = 'No items';
 NoItems.parameters = {
     docs: {
-        iframeHeight: messageBoxHeight,
+        story: { iframeHeight: messageBoxHeight },
         description: {
             story: `Message page displays a message indicating that there are no items when the user attempts to view a page that is supposed to contain items, but they are either not available or do not exist. It is mandatory to use either the \`.sap-icon--product\` icon, or another icon that matches your use case.
         `
@@ -130,7 +130,7 @@ export const Error = () => `<div style="height: 600px; width: 100%;">
 
 Error.parameters = {
     docs: {
-        iframeHeight: messageBoxHeight,
+        story: { iframeHeight: messageBoxHeight },
         description: {
             story: `The error message page is displayed when the user attempts to view a page but an error has occurred, resulting in no available content. If you can, provide a link to the app start screen in the error message. It is mandatory to use the \`.sap-icon--document\` icon.
     `
@@ -181,7 +181,7 @@ export const Buttons = () => `<div style="height: 600px; width: 100%;">
 Buttons.storyName = 'Formatted text and buttons';
 Buttons.parameters = {
     docs: {
-        iframeHeight: messageBoxHeight,
+        story: { iframeHeight: messageBoxHeight },
         description: {
             story: `The message page with formatted text and buttons is useful for when you want to add formatted text (bold, italic, underline and/or bullet points) and buttons to the action area. It's highly recommended not to add more than two buttons.
     `

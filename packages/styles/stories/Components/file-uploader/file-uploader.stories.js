@@ -65,7 +65,7 @@ export const Primary = () => `<div class="fd-form-item">
 Primary.storyName = 'Default';
 Primary.parameters = {
     docs: {
-        iframeHeight: 250,
+        story: { iframeHeight: 250 },
         description: {
             story: `File Uploader is a composition of the \`fd-input\` class and the \`fd-button\` one. The button triggers the action of searching for
             the file which needs to be uploaded. The input field shows the predetermined title i.e. Choose a file for upload.`
@@ -110,7 +110,7 @@ export const Selected = () => `<div class="fd-form-item">
 Selected.storyName = 'After Selecting';
 Selected.parameters = {
     docs: {
-        iframeHeight: 250,
+        story: { iframeHeight: 250 },
         description: {
             story: 'Once the user selects files, update the input and the hidden div to include the file names. The hidden div will announce the file names only once when the value changes.'
         }
@@ -152,7 +152,7 @@ export const Compact = () => `<div class="fd-form-item">
 `;
 Compact.parameters = {
     docs: {
-        iframeHeight: 250,
+        story: { iframeHeight: 250 },
         description: {
             story: 'For compact File Uploader apply the `--compact` modifier to the button and input elements.'
         }
@@ -283,7 +283,7 @@ export const Status = () => `<div class="fd-form-item">
 `;
 Status.parameters = {
     docs: {
-        iframeHeight: 250,
+        story: { iframeHeight: 250 },
         description: {
             story: 'For Status File Uploader apply the corresponding status class `is-success, is-error, is-warning, is-information ` modifier to the input element.'
         }
@@ -446,7 +446,7 @@ export const FileUploaderWithFiles = () => `<div class="fd-form-item">
 FileUploaderWithFiles.storyName = `File Uploader with File List`;
 FileUploaderWithFiles.parameters = {
     docs: {
-        iframeHeight: 250,
+        story: { iframeHeight: 250 },
         description: {
             story: `<span class="fd-info-label fd-info-label--accent-color-3"><span class="fd-info-label__text">non-fiori 3</span></span><span style="margin-right: 0.5rem;"></span><span class="fd-info-label fd-info-label--accent-color-4"><span class="fd-info-label__text">CX</span></span>`
         }

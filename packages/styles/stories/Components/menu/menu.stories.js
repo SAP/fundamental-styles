@@ -77,7 +77,7 @@ export const DesktopAndTablet = () => `
 DesktopAndTablet.storyName = 'Desktop and Tablet Modes';
 DesktopAndTablet.parameters = {
     docs: {
-        iframeHeight: 300,
+        story: { iframeHeight: 300 },
         description: {
             story: 'The basic stucture of a menu. Place the menu item title in a `<span>` tag using class `fd-menu__title` and wrap it in the `fd-menu__link` and `fd-menu__item` classes as shown. Default mode is the cozy tablet mode, no class has to be added for this. Use class modifier`fd-menu--compact` on menu container level for desktop mode.'
         }
@@ -204,7 +204,7 @@ export const DesktopAndTabletOverflow = () => `
 DesktopAndTabletOverflow.storyName = 'Desktop and Tablet Modes with vertical overflow';
 DesktopAndTabletOverflow.parameters = {
     docs: {
-        iframeHeight: 300,
+        story: { iframeHeight: 300 },
         description: {
             story: 'The `fd-menu--overflow` modifier class will clip the content and add a vertical scroll to the element. You need to manually set the max-height of the element on the `fd-menu` level. For example: `style="max-height: 120px;"`. <br><b>Important: </b>this modifier class cannot be used in cases where the menu has a submenu.'
         }
@@ -352,7 +352,7 @@ export const MobileCozyMode = () => `<div style="width: 50%; display: inline-blo
 
 MobileCozyMode.parameters = {
     docs: {
-        iframeHeight: 300,
+        story: { iframeHeight: 300 },
         description: {
             story: 'The basic stucture of a menu in mobile where it opens as a dialog. Use class `fd-menu--mobile` on menu container level. Example shows the parent menu\'s item in active state to simulate a pressed/touched event. Submenu appears in its own fullscreen dialog in mobile devices. The device\'s back button takes one back to the parent menu fullscreen dialog.'
         }
@@ -395,7 +395,7 @@ export const SeperatedItems = () => `<nav class="fd-menu">
 SeperatedItems.storyName = 'List with separated items';
 SeperatedItems.parameters = {
     docs: {
-        iframeHeight: 300,
+        story: { iframeHeight: 300 },
         description: {
             story: 'To add separators between the items, use the class `fd-menu__separator` in its own `<span>` after the `<li>` item where you want the separation.'
         }
@@ -480,7 +480,7 @@ export const DifferentStates = () => `<div style="width: 50%; display: inline-bl
 DifferentStates.storyName = 'List different states';
 DifferentStates.parameters = {
     docs: {
-        iframeHeight: 300,
+        story: { iframeHeight: 300 },
         description: {
             story: `
 Simulate different states to show state behaviour between the items.
@@ -534,7 +534,7 @@ export const MenuIcon = () => `<nav class="fd-menu">
 MenuIcon.storyName = 'List with Icon';
 MenuIcon.parameters = {
     docs: {
-        iframeHeight: 220,
+        story: { iframeHeight: 220 },
         description: {
             story: `
 To create an addon before or after \`fd-menu__title\` element, use elements with folowing classes inside \`fd-menu__link\`:
@@ -610,7 +610,7 @@ export const WithSubmenu = () => `<nav class="fd-menu">
 `;
 WithSubmenu.parameters = {
     docs: {
-        iframeHeight: 400,
+        story: { iframeHeight: 400 },
         description: {
             story: `
 Menu with an additional submenu that can be used for items that can be further grouped under a level but not necessarily visible to user always.

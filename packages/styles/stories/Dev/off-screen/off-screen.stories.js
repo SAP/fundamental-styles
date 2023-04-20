@@ -17,7 +17,7 @@ export const Primary = () => `<div class="fd-off-screen" aria-live="polite">
 `;
 Primary.parameters = {
     docs: {
-        iframeHeight: 200,
+        story: { iframeHeight: 200 },
         description: {
             story: `For aria-live to read any change in element, we need to place element but it should not be visible to user.
 `

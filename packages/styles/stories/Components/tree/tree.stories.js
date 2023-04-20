@@ -43,7 +43,7 @@ Navigated&nbsp;&nbsp;&nbsp; | \`is-navigated\` | If a certain tree item has been
 
 <br>
 `,
-        docs: { iframeHeight: 400 },
+        docs: { story: { iframeHeight: 400 } },
         tags: ['f3', 'a11y', 'theme', 'development']
     }
 };
@@ -175,7 +175,7 @@ export const Primary = () => `<ul role="tree" aria-label="Root Tree" id="TREE1L1
 
 Primary.parameters = {
     docs: {
-        iframeHeight: 950,
+        story: { iframeHeight: 950 },
         description: {
             story: `
 The primary tree component displays level 1 expanded to show level 2, which is indented by 1.5rem. Only the root tree (ul element) needs to have the \`expanded-level-*\` modifier class to indicate which level is currently expanded.`
@@ -300,7 +300,7 @@ export const Borderless = () => `<ul role="tree" aria-label="Root Tree" id="TREE
 
 Borderless.parameters = {
     docs: {
-        iframeHeight: 400,
+        story: { iframeHeight: 400 },
         description: {
             story: `
 Tree can be displayed without borders. To remove the borders from the first level items, add the \`fd-tree--no-border\` modifier class to the root tree. Additionally, tree list items can display actions, which are added as children of the \`fd-tree__item-container\` class.
@@ -401,7 +401,7 @@ export const HighlightIndicators = () => `<ul role="tree" aria-label="Root Tree"
 HighlightIndicators.storyName = 'Highlight indicators';
 HighlightIndicators.parameters = {
     docs: {
-        iframeHeight: 500,
+        story: { iframeHeight: 500 },
         description: {
             story: `
 Tree can display highlight indicators on tree items to indicate a status. In this example, each level indents by 0.5rem more than the previous level. For example, level 2 indents by 0.5, level 3 by 1rem and level 4 by 1.5rem (up to level 6).
@@ -724,7 +724,7 @@ export const Navigable = () => `<ul role="tree" aria-label="Root Tree" id="TREE6
 
 Navigable.parameters = {
     docs: {
-        iframeHeight: 1350,
+        story: { iframeHeight: 1350 },
         description: {
             story: `
 Tree can be displayed with navigation links by anchoring the \`href\` attribute with the \`fd-tree__content\` class. If only a subset of the tree items is navigable, you should indicate them with navigation arrows.
@@ -1068,7 +1068,7 @@ export const Selection = () => `<h3>Left multi-selection(Dependent Selections)</
 
 Selection.parameters = {
     docs: {
-        iframeHeight: 1000,
+        story: { iframeHeight: 1000 },
         description: {
             story: `
 Tree can be displayed with checkboxes, allowing the user to select multiple items. To display selected tree items, add the \`is-selected\` class to the \`fd-tree__item-container\` element.
@@ -1098,7 +1098,7 @@ export const TreeWithNoData = () => `<ul role="tree" aria-label="Root Tree" id="
 TreeWithNoData.storyName = 'No data';
 TreeWithNoData.parameters = {
     docs: {
-        iframeHeight: 200,
+        story: { iframeHeight: 200 },
         description: {
             story: `
 If there is no data to display, add the \`fd-tree--no-data\` modifier class to the root tree.

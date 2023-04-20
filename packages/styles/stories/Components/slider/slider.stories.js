@@ -59,11 +59,12 @@ export const Standard = () => `
 
 Standard.parameters = {
     docs: {
-        iframeHeight: 500,
+        story: { iframeHeight: 500 },
         description: {
             story: `
 The standard slider displays a track with a handle. When the user hovers over the handle, a hand cursor appears. The user can either drag and drop the handle or click on the bar to change the slider setting.
-` }
+`
+        }
     }
 };
 
@@ -85,12 +86,13 @@ export const Range = () => `
 
 Range.parameters = {
     docs: {
-        iframeHeight: 500,
+        story: { iframeHeight: 500 },
         description: {
             story: `
 The range slider displays a track with two handles, indicating that a range between two values can be selected. To display a range slider, add the \`fd-slider__track-range\` class to the \`fd-slider__track\` element.
 
-        ` }
+        `
+        }
     }
 };
 
