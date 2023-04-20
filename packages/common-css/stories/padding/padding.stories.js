@@ -5,7 +5,7 @@ export default {
     title: 'Padding',
     parameters: {
         description,
-        docs: { iframeHeight: 500 }
+        docs: { story: {iframeHeight: 500 }}
     }
 };
 
@@ -32,7 +32,7 @@ export const AllRoundPadding = () => `${localStyles}
 AllRoundPadding.storyName = 'All-Round Padding';
 AllRoundPadding.parameters = {
     docs: {
-        iframeHeight: 500,
+        story: {iframeHeight: 500},
         description: {
             story: `All-round padding appear on all sides of the container they are applied to.<br>
             <b>CSS class: </b> <code>.sap-padding</code><br>
@@ -68,7 +68,7 @@ export const HorizontalPadding = () => `${localStyles}
 HorizontalPadding.storyName = 'Double Sided Padding';
 HorizontalPadding.parameters = {
     docs: {
-        iframeHeight: 500,
+        story: {iframeHeight: 500},
         description: {
             story: `Double sided paddings appear on two opposite sides of the element. The horizontal margins are displayed on left and right side of the element.
             <table style="width: 100%; border-collapse: collapse; margin-top: 1rem;">
@@ -110,7 +110,7 @@ export const ResponsivePadding = () => `${localStyles}
 ResponsivePadding.storyName = 'Responsive Paddings';
 ResponsivePadding.parameters = {
     docs: {
-        iframeHeight: 500,
+        story: {iframeHeight: 500},
         description: {
             story: `The responsive padding class adds a double sided padding inside a container based on its width.<br>
             <b>CSS Class: </b><code>.sap-padding-responsive</code><br>
@@ -150,7 +150,7 @@ export const NoPadding = () => `${localStyles}
 
 NoPadding.parameters = {
     docs: {
-        iframeHeight: 500,
+        story: {iframeHeight: 500},
         description: {
             story: `No padding class removes existing container paddings. <br>
             <b>CSS class: </b> <code>.sap-padding-none</code><br>

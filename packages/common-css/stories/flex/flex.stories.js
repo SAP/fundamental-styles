@@ -42,7 +42,7 @@ export const Flex = () => `${localStyles}
 Flex.storyName = 'Flex Container';
 Flex.parameters = {
     docs: {
-        iframeHeight: 150,
+        story: {iframeHeight: 150},
         description: {
             story: `To turn a parent element into a flex container apply the <code>.sap-flex</code> class to this element. <br>
             <b>SCSS Mixin:</b> 
@@ -179,7 +179,7 @@ export const FlexAlignContent = () => `${localStyles}
 FlexAlignContent.storyName = 'Flex Align Content (Flex Container)';
 FlexAlignContent.parameters = {
     docs: {
-        iframeHeight: 150,
+        story: {iframeHeight: 150},
         description: {
             story: `
 <table>
@@ -314,7 +314,7 @@ export const FlexAlignItems = () => `${localStyles}
 FlexAlignItems.storyName = 'Flex Align Items (Flex Container)';
 FlexAlignItems.parameters = {
     docs: {
-        iframeHeight: 150,
+        story: {iframeHeight: 150},
         description: {
             story: `
 <table>
@@ -377,7 +377,7 @@ export const FlexCenter = () => `${localStyles}
 FlexCenter.storyName = 'Flex Center (Flex Container)';
 FlexCenter.parameters = {
     docs: {
-        iframeHeight: 150,
+        story: {iframeHeight: 150},
         description: {
             story: `
 
@@ -429,7 +429,7 @@ export const FlexDirection = () => `${localStyles}
 FlexDirection.storyName = 'Flex Direction (Flex Container)';
 FlexDirection.parameters = {
     docs: {
-        iframeHeight: 150,
+        story: {iframeHeight: 150},
         description: {
             story: `To specify the direction of the items placed in the flex container use one of the following modifier classes: <br><br>
             <table>
@@ -546,7 +546,7 @@ export const FlexGap = () => `${localStyles}
 FlexGap.storyName = 'Flex Gap (Flex Container)';
 FlexGap.parameters = {
     docs: {
-        iframeHeight: 150,
+        story: {iframeHeight: 150},
         description: {
             story: `
 <table>
@@ -703,7 +703,7 @@ export const FlexJustify = () => `${localStyles}
 FlexJustify.storyName = 'Flex Justify Content (Flex Container)';
 FlexJustify.parameters = {
     docs: {
-        iframeHeight: 150,
+        story: {iframeHeight: 150},
         description: {
             story: `
 <table>
@@ -804,7 +804,7 @@ export const FlexWrap = () => `${localStyles}
 FlexWrap.storyName = 'Flex Wrap (Flex Container)';
 FlexWrap.parameters = {
     docs: {
-        iframeHeight: 150,
+        story: {iframeHeight: 150},
         description: {
             story: `
 <table>
@@ -850,7 +850,7 @@ export const FlexOrder = () => `${localStyles}
 FlexOrder.storyName = 'Flex Order (Flex Items)';
 FlexOrder.parameters = {
     docs: {
-        iframeHeight: 150,
+        story: {iframeHeight: 150},
         description: {
             story: `
 To change the order in which the flex items appear in the flex container use the <code>.sap-flex-order-*</code> class, where <b>*</b> can be a number from 0 to 20.<br>
@@ -882,7 +882,7 @@ export const FlexShrink = () => `${localStyles}
 FlexShrink.storyName = 'Flex Shrink (Flex Items)';
 FlexShrink.parameters = {
     docs: {
-        iframeHeight: 150,
+        story: {iframeHeight: 150},
         description: {
             story: `
 Flex shrink defines the ability for a flex item to shrink if necessary. The class to specify it is: <code>.sap-flex-shrink-*</code>, where <b>*</b> can be a number from 0 to 20. Negative numbers are invalid.<br>
@@ -908,7 +908,7 @@ export const FlexGrow = () => `${localStyles}
 FlexGrow.storyName = 'Flex Grow (Flex Items)';
 FlexGrow.parameters = {
     docs: {
-        iframeHeight: 150,
+        story: {iframeHeight: 150},
         description: {
             story: `
 Flex grow defines the ability for a flex item to grow if necessary. The class to specify it is: <code>.sap-flex-grow-*</code>, where <b>*</b> can be a number from 0 to 20. Negative numbers are invalid.<br>
@@ -956,7 +956,7 @@ export const FlexAlignSelf = () => `${localStyles}
 FlexAlignSelf.storyName = 'Flex Align Self (Flex Items)';
 FlexAlignSelf.parameters = {
     docs: {
-        iframeHeight: 150,
+        story: {iframeHeight: 150},
         description: {
             story: `
 Align-self allows the default alignment (or the one specified by align-items) to be overridden for individual flex items. <br>

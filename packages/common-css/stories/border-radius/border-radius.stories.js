@@ -60,7 +60,7 @@ Example: <br>
 <code>@include sap-border-radius(1rem 0.5rem 0.25rem)</code><br>
 <code>@include sap-border-radius(1rem 0.5rem 0.25rem 0.25rem)</code><br>
       `,
-        docs: { iframeHeight: 500 }
+        docs: { story: {iframeHeight: 500 }}
     }
 };
 
