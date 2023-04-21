@@ -188,7 +188,7 @@ export const MobileMode = () => `
 <div class="slider-container">
     <div class="fd-slider fd-slider--lg">
         <div class="fd-slider__inner">
-            <div class="fd-slider__handle fd-slider__handle" tabindex="0" role="slider" aria-label="slider" aria-valuemin="1" aria-valuemax="100" aria-valuenow="50" style="left: 50%;"></div>
+            <div class="fd-slider__handle" tabindex="0" role="slider" aria-label="slider" aria-valuemin="1" aria-valuemax="100" aria-valuenow="50" style="left: 50%;"></div>
             <div class="fd-slider__track">
                 <div class="fd-slider__track-range" style="width: 50%;"></div>
             </div>
@@ -216,7 +216,7 @@ export const VerticalMode = () => `
       <div class="slider-container" style="height: 500px; width: 50px">
           <div class="fd-slider fd-slider--vertical">
               <div class="fd-slider__inner">
-                  <div class="fd-slider__handle fd-slider__handle" tabindex="0" role="slider" aria-label="slider" aria-valuemin="1" aria-valuemax="100" aria-valuenow="50" style="bottom: 50%;"></div>
+                  <div class="fd-slider__handle" tabindex="0" role="slider" aria-label="slider" aria-valuemin="1" aria-valuemax="100" aria-valuenow="50" style="bottom: 50%;"></div>
                   <div class="fd-slider__track">
                       <div class="fd-slider__track-range" style="height: 50%;"></div>
                   </div>
@@ -226,7 +226,7 @@ export const VerticalMode = () => `
       <div class="slider-container" style="height: 500px; width: 50px">
           <div class="fd-slider fd-slider--vertical">
               <div class="fd-slider__inner">
-                  <div class="fd-slider__handle fd-slider__handle" tabindex="0" role="slider" aria-label="slider" aria-valuemin="1" aria-valuemax="100" aria-valuenow="50" style="bottom: 30%;"></div>
+                  <div class="fd-slider__handle" tabindex="0" role="slider" aria-label="slider" aria-valuemin="1" aria-valuemax="100" aria-valuenow="50" style="bottom: 30%;"></div>
                   <div class="fd-slider__track">
                       <div class="fd-slider__track-range" style="height: 30%;"></div>
                   </div>
@@ -236,7 +236,7 @@ export const VerticalMode = () => `
       <div class="slider-container" style="height: 500px; width: 50px">
           <div class="fd-slider fd-slider--vertical">
               <div class="fd-slider__inner">
-                  <div class="fd-slider__handle fd-slider__handle" tabindex="0" role="slider" aria-label="slider" aria-valuemin="1" aria-valuemax="100" aria-valuenow="50" style="bottom: 70%;"></div>
+                  <div class="fd-slider__handle" tabindex="0" role="slider" aria-label="slider" aria-valuemin="1" aria-valuemax="100" aria-valuenow="50" style="bottom: 70%;"></div>
                   <div class="fd-slider__track">
                       <div class="fd-slider__track-range" style="height: 70%;"></div>
                   </div>
