@@ -1,3 +1,25 @@
+# [0.29.0-rc.11](https://github.com/SAP/fundamental-styles/compare/v0.29.0-rc.9...v0.29.0-rc.11) (2023-04-21)
+
+
+### Bug Fixes
+
+* **styles:** adjust toolbar styling ([#4461](https://github.com/SAP/fundamental-styles/issues/4461)) ([5d147c1](https://github.com/SAP/fundamental-styles/commit/5d147c17cd02314edddcdbca6ac4ae2abae3cea5))
+
+
+### Features
+
+* **styles:** input and shellbar delta ([#4458](https://github.com/SAP/fundamental-styles/issues/4458)) ([c7ba163](https://github.com/SAP/fundamental-styles/commit/c7ba1635c3c15ef3fb5453e8a0c6e8f3e64b6082))
+* **styles:** slider horizon delta ([#4462](https://github.com/SAP/fundamental-styles/issues/4462)) ([96654cb](https://github.com/SAP/fundamental-styles/commit/96654cb37e210fc2f3911bfa183916d157d36063))
+
+
+### BREAKING CHANGES
+
+* **styles:** - `fd-shellbar__search-field-helper` element is required for shellbar search field
+* **styles:** - Removed `fd-slider__handle--lg` class modifier;
+- `fd-slider--lg` class modifier now handles the slider handle size;
+
+
+
 # [0.29.0-rc.10](https://github.com/SAP/fundamental-styles/compare/v0.29.0-rc.9...v0.29.0-rc.10) (2023-04-21)
 
 
