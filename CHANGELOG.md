@@ -1,3 +1,18 @@
+# [0.29.0-rc.10](https://github.com/SAP/fundamental-styles/compare/v0.29.0-rc.9...v0.29.0-rc.10) (2023-04-21)
+
+
+### Features
+
+* **styles:** slider horizon delta ([#4462](https://github.com/SAP/fundamental-styles/issues/4462)) ([96654cb](https://github.com/SAP/fundamental-styles/commit/96654cb37e210fc2f3911bfa183916d157d36063))
+
+
+### BREAKING CHANGES
+
+* **styles:** - Removed `fd-slider__handle--lg` class modifier;
+- `fd-slider--lg` class modifier now handles the slider handle size;
+
+
+
 # [0.29.0-rc.9](https://github.com/SAP/fundamental-styles/compare/v0.29.0-rc.8...v0.29.0-rc.9) (2023-04-19)
 
 
