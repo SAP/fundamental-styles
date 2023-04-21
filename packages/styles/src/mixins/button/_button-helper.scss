@@ -16,7 +16,7 @@ $block-button-toggled: #{$block-button}--toggled;
     left: $fd-button-fake-outline-offset;
     right: $fd-button-fake-outline-offset;
     bottom: $fd-button-fake-outline-offset;
-    border-radius: calc(var(--sapButton_BorderCornerRadius) - var(--sapContent_FocusWidth));
+    border-radius: var(--fdButton_Focus_Border_Radius);
   }
 
   &.#{$block-button-toggled},

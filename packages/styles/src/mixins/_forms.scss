@@ -99,7 +99,6 @@ $fd-input-field-height--compact: 1.625rem;
 
 @mixin fd-input-readonly() {
   border-color: var(--sapField_ReadOnly_BorderColor);
-  border-radius: var(--fdInput_ReadOnly_Border_Radius);
   background: var(--sapField_ReadOnly_BackgroundStyle);
   background-color: var(--sapField_ReadOnly_Background);
 }

@@ -334,6 +334,9 @@ $block: #{$fd-namespace}-shellbar;
         }
 
         .#{$block}__button {
+          --fdButton_Outline_Offset: 0;
+          --fdButton_Focus_Border_Radius: var(--fdShellbar_Input_Border_Radius);
+
           height: var(--fdShellbar_Input_Addon_Dimension);
           min-width: var(--fdShellbar_Input_Addon_Dimension);
           border-radius: var(--fdShellbar_Input_Border_Radius);

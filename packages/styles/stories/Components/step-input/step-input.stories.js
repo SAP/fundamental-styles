@@ -42,6 +42,7 @@ export const Primary = () => `<label class="fd-form-label" for="step-3">Default 
     <i class="sap-icon--add"></i>
   </button>
 </div>
+<br />
 <label class="fd-form-label" for="step-3-focused">Focused Step Input</label><br />
 <div class="fd-step-input is-focus">
   <button aria-label="Step down" class="

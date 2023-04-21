@@ -5,6 +5,7 @@
   --fdButton_Outline_Contrast: var(--sapContent_ContrastFocusColor);
   --fdButton_Outline_Offset: var(--sapButton_BorderWidth);
   --fdButton_Font_Family: var(--sapFontFamily);
+  --fdButton_Focus_Border_Radius: calc(var(--sapButton_BorderCornerRadius) - var(--sapContent_FocusWidth));
 
   /** Shadows */
   --fdButton_Text_Shadow: none;
