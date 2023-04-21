@@ -20,17 +20,11 @@ $title-toolbar-height: 2.75rem;
   }
 }
 
-@mixin toolbarAuto() {
-  background-color: var(--fdToolbar_Auto_Background);
-}
-
-@mixin toolbarSolid() {
-  background-color: var(--fdToolbar_Solid_Background);
-}
-
-@mixin toolbarTransparent() {
-  background-color: var(--sapToolbar_Background);
-}
+$fdToolbarBackgrounds: (
+  'auto': var(--fdToolbar_Auto_Background),
+  'solid': var(--fdToolbar_Solid_Background),
+  'transparent': var(--sapToolbar_Background)
+);
 
 @mixin toolbarInfo() {
   $active-color: var(--sapInfobar_TextColor);
@@ -97,24 +91,18 @@ $title-toolbar-height: 2.75rem;
   @include toolbarSpacing();
   @include toolbarStandard();
 
+  @each $set-name, $backgroundColor in $fdToolbarBackgrounds {
+    &--#{$set-name} {
+      background-color: #{$backgroundColor};
+    }
+  }
+
   &--title {
     @include titleToolbar();
   }
 
   &--clear {
     @include toolbarClear();
-  }
-
-  &--auto {
-    @include toolbarAuto();
-  }
-
-  &--solid {
-    @include toolbarSolid();
-  }
-
-  &--transparent {
-    @include toolbarTransparent();
   }
 
   &--fade-in {
@@ -225,7 +213,7 @@ $title-toolbar-height: 2.75rem;
     font-size: var(--sapGroup_Title_FontSize);
   }
 
-  &--cozy {
+  @include fd-cozy() {
     height: $toolbar-height-cozy;
     min-height: $toolbar-height-cozy;
 
