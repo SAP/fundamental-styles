@@ -37,4 +37,11 @@
   --fdShellbar_Input_Focus_Background: transparent;
   --fdShellbar_Input_Placeholder_Style: italic;
   --fdShellbar_Button_Left_Border: 0.0625rem solid transparent;
+  --fdShellbar_Input_Group_Background: 0 100% / 100% 0.0625rem no-repeat linear-gradient(0deg, var(--sapField_BorderColor), var(--sapField_BorderColor)) border-box;
+  --fdShellbar_Input_Group_Hover_Background: 0 100% / 100% 0.0625rem no-repeat linear-gradient(0deg, var(--sapField_Hover_BorderColor), var(--sapField_Hover_BorderColor)) border-box;
+  --fdShellbar_Helper_Bottom_Shadow: inset 0 -0.0625rem 0 var(--sapField_BorderColor);
+  --fdShellbar_Hover_Helper_Bottom_Shadow: inset 0 -0.0625rem 0 var(--sapField_Hover_BorderColor);
+  --fdShellbar_Helper_Display: block;
+  --fdShellbar_Button_Color: var(--sapShell_TextColor);
+  --fdShellbar_Search_Input_X_Padding: 0.9rem;
 }

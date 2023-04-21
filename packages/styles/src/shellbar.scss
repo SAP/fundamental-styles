@@ -81,7 +81,7 @@ $block: #{$fd-namespace}-shellbar;
     }
 
     .#{$block}__button--menu {
-      .sap-icon--megamenu {
+      @include fd-icon-selector() {
         margin: 0 !important;
       }
     }
@@ -238,25 +238,55 @@ $block: #{$fd-namespace}-shellbar;
       --fdInputGroup_Input_Color: var(--fdShellbar_Input_Color);
       --fdInputGroup_Input_Placeholder_Color: var(--fdShellbar_Input_Placeholder_Color);
       --fdInputGroup_Input_Placeholder_Style: var(--fdShellbar_Input_Placeholder_Style);
-      --fdInputGroup_Background: transparent;
+      --fdInputGroup_Background: none;
       --fdInputGroup_Background_Color: var(--fdShellbar_Input_Background);
-      --fdInputGroup_Hover_Background: transparent;
+      --fdInputGroup_Hover_Background: none;
       --fdInput_Group_Button_Box_Shadow: none;
       --fdInput_Box_Shadow_Hover: none;
 
+      box-shadow: none;
       border: var(--fdShellbar_Search_Border);
       border-radius: var(--fdShellbar_Input_Border_Radius);
       position: relative;
       cursor: text;
 
+      &-helper {
+        display: var(--fdShellbar_Helper_Display);
+
+        &::before,
+        &::after {
+          position: absolute;
+          content: "";
+          z-index: 20;
+          pointer-events: none;
+          box-shadow: var(--sapField_Shadow);
+          border-radius: var(--fdShellbar_Input_Border_Radius);
+
+          @include fd-set-equal-positions(0);
+        }
+
+        &::after {
+          box-shadow: var(--fdShellbar_Helper_Bottom_Shadow);
+          border-radius: 0;
+        }
+      }
+
       &-input {
         position: relative;
+
+        @include fd-set-paddings-x-equal(var(--fdShellbar_Search_Input_X_Padding));
 
         @include fd-hover() {
           --fdInputGroup_Hover_Input_Background: var(--fdShellbar_Input_Hover_Background);
           --fdInputGroup_Addon_Background: var(--fdShellbar_Search_Container_Hover_Background);
           & ~ .#{$block}__search-field-addon {
             --fdInputGroup_Addon_Background: var(--fdShellbar_Search_Container_Hover_Background);
+          }
+
+          & ~ .#{$block}__search-field-helper {
+            &::after {
+              box-shadow: inset 0 -0.0625rem 0 var(--sapField_Hover_BorderColor);
+            }
           }
         }
 
@@ -304,6 +334,9 @@ $block: #{$fd-namespace}-shellbar;
         }
 
         .#{$block}__button {
+          --fdButton_Outline_Offset: 0;
+          --fdButton_Focus_Border_Radius: var(--fdShellbar_Input_Border_Radius);
+
           height: var(--fdShellbar_Input_Addon_Dimension);
           min-width: var(--fdShellbar_Input_Addon_Dimension);
           border-radius: var(--fdShellbar_Input_Border_Radius);
@@ -376,6 +409,10 @@ $block: #{$fd-namespace}-shellbar;
 
           @include fd-set-margin-left(var(--fdShellbar_Search_Category_Offset_Left));
 
+          &::after {
+            box-shadow: none;
+          }
+
           &::before {
             content: "";
             position: absolute;
@@ -416,19 +453,29 @@ $block: #{$fd-namespace}-shellbar;
       }
 
       @include fd-hover() {
-        --sapField_Hover_BorderColor: var(--fdShellbar_Input_Hover_Border_Color);
-        --fdInput_Box_Shadow_Hover: var(--sapContent_Interaction_Shadow);
         --fdInputGroup_Hover_Background_Color: var(--fdShellbar_Search_Container_Hover_Background);
+
+        .#{$block}__search-field-helper {
+          &::before {
+            box-shadow: var(--sapField_Hover_Shadow);
+          }
+
+          &::after {
+            box-shadow: var(--fdShellbar_Hover_Helper_Bottom_Shadow);
+          }
+        }
 
         .#{$block}__search-field {
           &-category .#{$block}__search-category {
             --fdSelect_Background_Color: var(--fdShellbar_Search_Container_Hover_Background);
             --fdSelect_Hover_Background_Color: var(--fdShellbar_Search_Container_Hover_Background);
 
-            border-radius: var(--fdShellbar_Input_Border_Radius);
+            @include fd-hover() {
+              border-radius: var(--fdShellbar_Input_Border_Radius);
 
-            &::before {
-              display: none;
+              &::before {
+                display: none;
+              }
             }
           }
         }
@@ -445,15 +492,16 @@ $block: #{$fd-namespace}-shellbar;
         box-shadow: var(--fdShellbar_Active_Shadow);
         background-color: var(--fdShellbar_Active_Background);
 
-        &::before {
-          position: absolute;
-          content: "";
-          outline: var(--fdShellbar_Search_Active_Outline);
-          outline-offset: -0.125rem;
-          z-index: 20;
-          pointer-events: none;
+        .#{$block}__search-field-helper {
+          &::before {
+            outline: var(--fdShellbar_Search_Active_Outline);
+            outline-offset: -0.125rem;
+          }
 
-          @include fd-set-equal-positions(0);
+          &::after,
+          &::before {
+            box-shadow: none;
+          }
         }
 
         .#{$block}__search-field-addon {
@@ -464,7 +512,7 @@ $block: #{$fd-namespace}-shellbar;
           background-color: var(--fdShellbar_Search_Hover_Background);
 
           &::before {
-            display: none;
+            // display: none;
           }
         }
 
@@ -479,26 +527,35 @@ $block: #{$fd-namespace}-shellbar;
     .#{$block}__button {
       outline-color: var(--fdShellbar_Button_Outline_Color);
 
-      --fdButtonColor: var(--sapShell_InteractiveTextColor);
+      --fdButtonBackgroundColor: var(--sapButton_Lite_Background);
+      --fdButtonBorderColor: var(--sapButton_Lite_BorderColor);
+      --fdButtonColor: var(--fdShellbar_Button_Color);
+
+      .#{$block}__title {
+        color: inherit;
+      }
 
       &:not(&--menu) {
         padding: 0;
       }
 
       @include fd-hover() {
-        border-color: var(--fdShellbar_Button_Hover_Border_Color);
-
+        --fdButtonBorderColor: var(--fdShellbar_Button_Hover_Border_Color);
         --fdButtonBackgroundColor: var(--fdShellbar_Input_Hover_Background);
 
         @include fd-disabled() {
-          background: $fd-shellbar-background;
+          --fdButtonBackgroundColor: $fd-shellbar-background;
         }
       }
 
       @include fd-active() {
-        border-color: var(--fdShellbar_Button_Active_Border_Color);
-        background: var(--fdShellbar_Button_Active_Background);
-        color: var(--fdShellbar_Button_Active_Color);
+        --fdButtonBorderColor: var(--fdShellbar_Button_Active_Border_Color);
+        --fdButtonBackgroundColor: var(--fdShellbar_Button_Active_Background);
+        --fdButtonColor: var(--fdShellbar_Button_Active_Color);
+
+        &::after {
+          display: none;
+        }
       }
 
       &--menu {

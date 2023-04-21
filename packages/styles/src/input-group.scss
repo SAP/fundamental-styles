@@ -39,6 +39,7 @@ $fd-input-border-radius: var(--sapField_BorderCornerRadius);
     text-shadow: var(--fdInputGroup_Text_Shadow);
     border: var(--fdInputGroup_Input_Border, none);
     color: var(--fdInputGroup_Input_Color, inherit);
+    box-shadow: none;
 
     &::placeholder {
       color: var(--fdInputGroup_Input_Placeholder_Color, var(--sapField_PlaceholderTextColor));

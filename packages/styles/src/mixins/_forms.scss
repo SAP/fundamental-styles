@@ -18,7 +18,7 @@ $fd-input-field-height--compact: 1.625rem;
   @include fd-ellipsis();
 
   @if $withMinHeight {
-    @include fd-set-min-height($fd-input-field-height);
+    @include fd-set-min-height(var(--sapElement_Height));
   }
 
   z-index: 1;
@@ -27,7 +27,7 @@ $fd-input-field-height--compact: 1.625rem;
   border-radius: var(--sapField_BorderCornerRadius);
   padding: var(--fdInput_Field_Padding, 0 0.625rem);
   margin: var(--fdInput_Field_Margin, 0.25rem 0);
-  box-shadow: none;
+  box-shadow: var(--sapField_Shadow);
   color: var(--sapField_TextColor);
   text-shadow: var(--fdInput_Text_Shadow);
   background: var(#{$overrideBackgroundProperty}, var(--sapField_BackgroundStyle));
@@ -89,7 +89,7 @@ $fd-input-field-height--compact: 1.625rem;
 }
 
 @mixin fd-input-field-base-compact {
-  @include fd-set-min-height($fd-input-field-height--compact);
+  @include fd-set-min-height(var(--sapElement_Compact_Height));
 
   min-width: var(--fdInput_Field_Compact_Min_Width, 2rem);
   margin: var(--fdInput_Field_Compact_Margin, 0.1875rem 0);
@@ -99,7 +99,6 @@ $fd-input-field-height--compact: 1.625rem;
 
 @mixin fd-input-readonly() {
   border-color: var(--sapField_ReadOnly_BorderColor);
-  border-radius: var(--fdInput_ReadOnly_Border_Radius);
   background: var(--sapField_ReadOnly_BackgroundStyle);
   background-color: var(--sapField_ReadOnly_Background);
 }
@@ -113,7 +112,9 @@ $fd-input-field-height--compact: 1.625rem;
       'hoverBackground': var(--fdInput_Success_Background_Color_Hover),
       'hoverBorderColor': var(--sapField_SuccessColor),
       'hoverBoxShadow': var(--fdInput_Success_Box_Shadow_Hover),
-      'focusOutlineColor': var(--fdInput_Success_Outline_Color)
+      'focusOutlineColor': var(--fdInput_Success_Outline_Color),
+      'boxShadow': var(--sapField_SuccessShadow),
+      'boxShadowHover': var(--sapField_Hover_SuccessShadow)
     ),
     'error': (
       'background': var(--sapField_InvalidBackgroundStyle),
@@ -122,7 +123,9 @@ $fd-input-field-height--compact: 1.625rem;
       'hoverBackground': var(--fdInput_Error_Background_Color_Hover),
       'hoverBorderColor': var(--sapField_InvalidColor),
       'hoverBoxShadow': var(--fdInput_Error_Box_Shadow_Hover),
-      'focusOutlineColor': var(--fdInput_Error_Outline_Color)
+      'focusOutlineColor': var(--fdInput_Error_Outline_Color),
+      'boxShadow': var(--sapField_InvalidShadow),
+      'boxShadowHover': var(--sapField_Hover_InvalidShadow)
     ),
     'warning': (
       'background': var(--sapField_WarningBackgroundStyle),
@@ -131,7 +134,9 @@ $fd-input-field-height--compact: 1.625rem;
       'hoverBackground': var(--fdInput_Warning_Background_Color_Hover),
       'hoverBorderColor': var(--sapField_WarningColor),
       'hoverBoxShadow':  var(--fdInput_Warning_Box_Shadow_Hover),
-      'focusOutlineColor': var(--fdInput_Warning_Outline_Color)
+      'focusOutlineColor': var(--fdInput_Warning_Outline_Color),
+      'boxShadow': var(--sapField_WarningShadow),
+      'boxShadowHover': var(--sapField_Hover_WarningShadow)
     ),
     'alert': (
       'background': var(--sapField_WarningBackgroundStyle),
@@ -149,7 +154,9 @@ $fd-input-field-height--compact: 1.625rem;
       'hoverBackground': var(--fdInput_Information_Background_Color_Hover),
       'hoverBorderColor': var(--sapField_InformationColor),
       'hoverBoxShadow':  var(--fdInput_Information_Box_Shadow_Hover),
-      'focusOutlineColor': var(--fdInput_Information_Outline_Color)
+      'focusOutlineColor': var(--fdInput_Information_Outline_Color),
+      'boxShadow': var(--sapField_InformationShadow),
+      'boxShadowHover': var(--sapField_Hover_InformationShadow)
     )
   );
 
@@ -158,6 +165,7 @@ $fd-input-field-height--compact: 1.625rem;
       background: map_get($set-props, "background");
       background-color: map_get($set-props, "backgroundColor");
       border: map_get($set-props, "border");
+      box-shadow: map_get($set-props, "boxShadow");
 
       @include fd-hover() {
         background-color: map_get($set-props, "hoverBackground");
@@ -239,8 +247,6 @@ $fd-input-field-height--compact: 1.625rem;
 
     @include fd-hover() {
       @include fd-input-readonly();
-
-      box-shadow: none;
     }
 
     @include fd-focus() {
