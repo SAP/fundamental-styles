@@ -289,7 +289,7 @@ export const Alignment = () => `<h3>Left and right-aligned</h3>
     <span class="fd-toolbar__spacer"></span>
 </div>
 <h3>Right-aligned</h3>
-<div class="fd-toolba fd-toolbar--compactr">
+<div class="fd-toolbar fd-toolbar--compact">
     <span class="fd-toolbar__spacer"></span>
     <button class="fd-button">Right-aligned</button>
 </div>
