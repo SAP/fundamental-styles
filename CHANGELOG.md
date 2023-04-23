@@ -1,3 +1,12 @@
+# [0.29.0-rc.12](https://github.com/SAP/fundamental-styles/compare/v0.29.0-rc.11...v0.29.0-rc.12) (2023-04-23)
+
+
+### Bug Fixes
+
+* **styles:** add latest Horizon updates to Panel [ci visual] ([#4459](https://github.com/SAP/fundamental-styles/issues/4459)) ([13be959](https://github.com/SAP/fundamental-styles/commit/13be959af709974c493fc3066a3b0d40de94aca5))
+
+
+
 # [0.29.0-rc.11](https://github.com/SAP/fundamental-styles/compare/v0.29.0-rc.9...v0.29.0-rc.11) (2023-04-21)
 
 
