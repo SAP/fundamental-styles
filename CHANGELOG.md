@@ -1,3 +1,12 @@
+# [0.29.0-rc.13](https://github.com/SAP/fundamental-styles/compare/v0.29.0-rc.12...v0.29.0-rc.13) (2023-04-24)
+
+
+### Features
+
+* **styles:** introduce Generic Tag [ci visual] ([#4466](https://github.com/SAP/fundamental-styles/issues/4466)) ([b6fbb2a](https://github.com/SAP/fundamental-styles/commit/b6fbb2a5ac41cb853cb083c237ffb8f7f031fc71))
+
+
+
 # [0.29.0-rc.12](https://github.com/SAP/fundamental-styles/compare/v0.29.0-rc.11...v0.29.0-rc.12) (2023-04-23)
 
 
