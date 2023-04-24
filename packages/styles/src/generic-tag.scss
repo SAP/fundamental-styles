@@ -1,0 +1,152 @@
+@import "./new-settings";
+@import "./mixins";
+
+$block: #{$fd-namespace}-generic-tag;
+
+.#{$block} {
+  --fdGenericTag_Spacing: 0.375rem;
+  --fdGenericTag_Margin: 0.5625rem 0;
+  --fdGenericTag_Decorator_Position: 0;
+  --fdGenericTag_Decorator_Color: var(--sapNeutralElementColor);
+  --fdGenericTag_Background_Color: var(--sapNeutralBackground);
+  --fdGenericTag_Icon_Color: var(--sapNeutralElementColor);
+  --fdGenericTag_Name_Color: var(--sapList_TextColor);
+  --fdGenericTag_Name_Text_Shadow: var(--sapContent_TextShadow);
+  --fdGenericTag_Value_Color: var(--sapNeutralTextColor);
+  --fdGenericTag_Value_Text_Shadow: var(--sapContent_TextShadow);
+  --fdGenericTag_Text_Min_Width: 1.5625rem;
+
+  $fd-generic-tag-colors: (
+    "error": (
+      "value": var(--sapNegativeTextColor),
+      "icon": var(--sapNegativeElementColor),
+      "decorator": var(--sapNegativeElementColor),
+      "background": var(--sapErrorBackground),
+      "value-hover": var(--fdGenericTag_Value_Color_Hover_Error),
+      "icon-hover": var(--fdGenericTag_Icon_Color_Hover_Error),
+    ),
+    "warning": (
+      "value": var(--sapCriticalTextColor),
+      "icon": var(--sapCriticalElementColor),
+      "decorator": var(--sapCriticalElementColor),
+      "background": var(--sapWarningBackground),
+      "value-hover": var(--fdGenericTag_Value_Color_Hover_Warning),
+      "icon-hover": var(--fdGenericTag_Icon_Color_Hover_Warning),
+    ),
+    "success": (
+      "value": var(--sapPositiveTextColor),
+      "icon": var(--sapPositiveElementColor),
+      "decorator": var(--sapPositiveElementColor),
+      "background": var(--sapSuccessBackground),
+      "value-hover": var(--fdGenericTag_Value_Color_Hover_Success),
+      "icon-hover": var(--fdGenericTag_Icon_Color_Hover_Success),
+    ),
+    "information": (
+      "value": var(--sapInformativeTextColor),
+      "icon": var(--sapInformativeElementColor),
+      "decorator": var(--sapInformativeElementColor),
+      "background": var(--sapInformationBackground),
+      "value-hover": var(--fdGenericTag_Value_Color_Hover_Information),
+      "icon-hover": var(--fdGenericTag_Icon_Color_Hover_Information),
+    )
+  );
+
+  @include fd-reset();
+  @include fd-flex-vertical-center();
+  @include fd-set-paddings-x(0.75rem, 0.375rem);
+
+  cursor: pointer;
+  height: 1.625rem;
+  width: fit-content;
+  gap: var(--fdGenericTag_Spacing);
+  margin: var(--fdGenericTag_Margin);
+  box-shadow: var(--sapContent_Shadow0);
+  border-radius: var(--sapButton_BorderCornerRadius);
+  background: var(--fdGenericTag_Decorator_Position) 0 / var(--fdGenericTag_Spacing) 100% no-repeat linear-gradient(0deg, var(--fdGenericTag_Decorator_Color), var(--fdGenericTag_Decorator_Color));
+  background-color: var(--fdGenericTag_Background_Color);
+
+  &__icon[class*=sap-icon] {
+    @include fd-flex-center();
+
+    font-size: 1rem;
+    color: var(--fdGenericTag_Icon_Color);
+  }
+
+  &__name,
+  &__value {
+    @include fd-reset();
+    @include fd-ellipsis();
+
+    min-width: var(--fdGenericTag_Text_Min_Width);
+  }
+
+  &__name {
+    color: var(--fdGenericTag_Name_Color);
+    text-shadow: var(--fdGenericTag_Name_Text_Shadow);
+  }
+
+  &__value {
+    @include fd-set-margin-left(0.75rem);
+
+    color: var(--fdGenericTag_Value_Color);
+    text-shadow: var(--fdGenericTag_Value_Text_Shadow);
+  }
+
+  // STATES
+  @include fd-hover() {
+    --fdGenericTag_Background_Color: var(--sapList_Hover_Background);
+    --fdGenericTag_Name_Color: var(--fdGenericTag_Name_Color_Hover);
+    --fdGenericTag_Value_Color: var(--fdGenericTag_Value_Color_Hover_Neutral);
+    --fdGenericTag_Icon_Color: var(--fdGenericTag_Icon_Color_Hover_Neutral);
+    --fdGenericTag_Name_Text_Shadow: none;
+    --fdGenericTag_Value_Text_Shadow: none;
+  }
+
+  @include fd-active() {
+    --fdGenericTag_Background_Color: var(--sapList_Active_Background);
+    --fdGenericTag_Name_Color: var(--sapList_Active_TextColor);
+    --fdGenericTag_Name_Text_Shadow: none;
+    --fdGenericTag_Icon_Color: var(--sapList_Active_TextColor);
+    --fdGenericTag_Value_Color: var(--sapList_Active_TextColor);
+    --fdGenericTag_Value_Text_Shadow: none;
+  }
+
+  @include fd-focus() {
+    outline-offset: var(--fdGenericTag_Spacing_Outline_Offset);
+    outline: var(--sapContent_FocusColor) var(--sapContent_FocusStyle) var(--sapContent_FocusWidth);
+  }
+
+  @include fd-rtl() {
+    --fdGenericTag_Decorator_Position: 100%;
+  }
+
+  // TYPES
+  @include fd-compact-and-condensed() {
+    --fdGenericTag_Margin: 0.1875rem 0;
+  }
+
+  @each $type, $color in $fd-generic-tag-colors {
+    &.#{$block}--#{$type} {
+      --fdGenericTag_Value_Color: #{map_get($color, "value")};
+      --fdGenericTag_Icon_Color: #{map_get($color, "icon")};
+      --fdGenericTag_Decorator_Color: #{map_get($color, "decorator")};
+      --fdGenericTag_Background_Color: #{map_get($color, "background")};
+
+      @include fd-hover() {
+        --fdGenericTag_Value_Color: #{map_get($color, "value-hover")};
+        --fdGenericTag_Icon_Color: #{map_get($color, "icon-hover")};
+        --fdGenericTag_Background_Color: var(--sapList_Hover_Background);
+        --fdGenericTag_Name_Color: var(--fdGenericTag_Name_Color_Hover);
+      }
+
+      @include fd-active() {
+        --fdGenericTag_Name_Text_Shadow: none;
+        --fdGenericTag_Value_Text_Shadow: none;
+        --fdGenericTag_Background_Color: var(--sapList_Active_Background);
+        --fdGenericTag_Name_Color: var(--sapList_Active_TextColor);
+        --fdGenericTag_Icon_Color: var(--sapList_Active_TextColor);
+        --fdGenericTag_Value_Color: var(--sapList_Active_TextColor);
+      }
+    }
+  }
+}

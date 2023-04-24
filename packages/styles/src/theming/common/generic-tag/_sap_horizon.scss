@@ -1,0 +1,14 @@
+:root {
+  --fdGenericTag_Spacing_Outline_Offset: 0;
+  --fdGenericTag_Icon_Color_Hover_Error: var(--sapNegativeElementColor);
+  --fdGenericTag_Icon_Color_Hover_Warning: var(--sapCriticalElementColor);
+  --fdGenericTag_Icon_Color_Hover_Success: var(--sapPositiveElementColor);
+  --fdGenericTag_Icon_Color_Hover_Information: var(--sapInformativeElementColor);
+  --fdGenericTag_Icon_Color_Hover_Neutral: var(--sapNeutralElementColor);
+  --fdGenericTag_Value_Color_Hover_Error: var(--sapNegativeTextColor);
+  --fdGenericTag_Value_Color_Hover_Warning: var(--sapCriticalTextColor);
+  --fdGenericTag_Value_Color_Hover_Success: var(--sapPositiveTextColor);
+  --fdGenericTag_Value_Color_Hover_Information: var(--sapInformativeTextColor);
+  --fdGenericTag_Value_Color_Hover_Neutral: var(--sapNeutralTextColor);
+  --fdGenericTag_Name_Color_Hover: var(--sapList_TextColor);
+}
