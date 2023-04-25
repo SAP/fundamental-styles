@@ -21932,25 +21932,25 @@ exports[`Check stories > Components/Pagination > Story PerPage > Should match sn
 `;
 
 exports[`Check stories > Components/Panel > Story Borderless > Should match snapshot 1`] = `
-"<div class=\\"fd-panel fd-panel--borderless\\">
+"<div class=\\"fd-panel fd-panel--borderless\\" aria-labelledby=\\"__panel-title-1\\" role=\\"form\\">
     <div class=\\"fd-panel__header\\">
         <div class=\\"fd-panel__expand\\">
             <button class=\\"fd-button fd-button--transparent fd-panel__button\\"
-                aria-expanded=\\"false\\" aria-haspopup=\\"true\\" aria-label=\\"expand/collapse panel\\" aria-controls=\\"fghqwe321\\">
+                aria-expanded=\\"false\\" aria-haspopup=\\"true\\" aria-label=\\"expand/collapse panel\\" aria-controls=\\"__panel-1\\">
                 <i class=\\"sap-icon--slim-arrow-right\\"></i>
             </button>
         </div>
-        <h4 class=\\"fd-panel__title\\" id=\\"asdASD123\\">Panel header collapsed</h4>
+        <h4 class=\\"fd-panel__title\\" id=\\"__panel-title-1\\">Panel header collapsed</h4>
         <div class=\\"fd-toolbar fd-toolbar--clear fd-toolbar--transparent\\">
             <span class=\\"fd-toolbar__spacer fd-toolbar__spacer--auto\\"> </span>
             <div class=\\"fd-segmented-button\\" role=\\"group\\" aria-label=\\"Group label\\">
-              <button class=\\"fd-button fd-button--toggled\\" id=\\"jhqDKYdf\\" aria-pressed=\\"true\\">Left</button>
+              <button class=\\"fd-button fd-button--toggled\\" aria-pressed=\\"true\\">Left</button>
               <button class=\\"fd-button\\" aria-pressed=\\"false\\">Middle</button>
               <button class=\\"fd-button\\" aria-pressed=\\"false\\">Right</button>
             </div>
         </div>
     </div>
-    <div role=\\"region\\" aria-labelledby=\\"jhqDKYdf\\" class=\\"fd-panel__content\\" aria-hidden=\\"true\\" id=\\"fghqwe321\\">
+    <div role=\\"region\\" aria-labelledby=\\"__panel-title-1\\" class=\\"fd-panel__content\\" aria-hidden=\\"true\\" id=\\"__panel-1\\">
         <span>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ut laoreet lorem. Vestibulum ante ipsum primis in faucibus orci luctus
             et ultrices posuere cubilia curae; Aenean sagittis aliquam justo et suscipit.
@@ -21965,17 +21965,17 @@ exports[`Check stories > Components/Panel > Story Borderless > Should match snap
 
 <br><br>
 
-<div class=\\"fd-panel fd-panel--borderless\\">
+<div class=\\"fd-panel fd-panel--borderless\\" aria-labelledby=\\"__panel-title-2\\" role=\\"form\\">
     <div class=\\"fd-panel__header\\">
         <div class=\\"fd-panel__expand\\">
             <button class=\\"fd-button fd-button--transparent fd-panel__button\\" aria-expanded=\\"true\\"
-                aria-haspopup=\\"true\\" aria-label=\\"expand/collapse panel\\" aria-controls=\\"fghqwe3214213\\">
+                aria-haspopup=\\"true\\" aria-label=\\"expand/collapse panel\\" aria-controls=\\"__panel-2\\">
                 <i class=\\"sap-icon--slim-arrow-down\\"></i>
             </button>
         </div>
-        <h4 class=\\"fd-panel__title\\" id=\\"asdASD1234\\">Panel header expanded</h4>
+        <h4 class=\\"fd-panel__title\\" id=\\"__panel-title-2\\">Panel header expanded</h4>
     </div>
-    <div role=\\"region\\" aria-labelledby=\\"jhqDKYdf\\" class=\\"fd-panel__content\\" aria-hidden=\\"false\\" id=\\"fghqwe3214213\\">
+    <div role=\\"region\\" aria-labelledby=\\"__panel-title-2\\" class=\\"fd-panel__content\\" aria-hidden=\\"false\\" id=\\"__panel-2\\">
         <span>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ut laoreet lorem. Vestibulum ante ipsum primis in faucibus orci luctus
             et ultrices posuere cubilia curae; Aenean sagittis aliquam justo et suscipit.
@@ -21990,19 +21990,19 @@ exports[`Check stories > Components/Panel > Story Borderless > Should match snap
 
 <br><br>
 
-<div class=\\"fd-panel fd-panel--fixed fd-panel--borderless\\">
+<div class=\\"fd-panel fd-panel--fixed fd-panel--borderless\\" aria-labelledby=\\"__panel-title-3\\" role=\\"form\\">
     <div class=\\"fd-panel__header\\">
-        <h4 class=\\"fd-panel__title\\">Panel header</h4>
+        <h4 class=\\"fd-panel__title\\" id=\\"__panel-title-3\\">Panel header</h4>
         <div class=\\"fd-toolbar fd-toolbar--clear fd-toolbar--transparent\\">
-            <span class=\\"fd-toolbar__spacer fd-toolbar__spacer--auto\\"> </span>
+            <span class=\\"fd-toolbar__spacer fd-toolbar__spacer--auto\\"></span>
             <div class=\\"fd-segmented-button\\" role=\\"group\\" aria-label=\\"Group label\\">
-              <button class=\\"fd-button fd-button--toggled\\" id=\\"jhqDKYrt\\" aria-pressed=\\"true\\">Left</button>
+              <button class=\\"fd-button fd-button--toggled\\" aria-pressed=\\"true\\">Left</button>
               <button class=\\"fd-button\\" aria-pressed=\\"false\\">Middle</button>
               <button class=\\"fd-button\\" aria-pressed=\\"false\\">Right</button>
             </div>
         </div>
     </div>
-    <div role=\\"region\\" aria-labelledby=\\"jhqDKYrt\\" class=\\"fd-panel__content\\">
+    <div role=\\"region\\" aria-labelledby=\\"__panel-title-3\\" class=\\"fd-panel__content\\">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ut laoreet lorem. Vestibulum ante ipsum primis in faucibus orci luctus
         et ultrices posuere cubilia curae; Aenean sagittis aliquam justo et suscipit.
         Nam molestie, magna at elementum pulvinar, nisi enim venenatis ante, id convallis mi neque nec risus. Cras blandit sagittis augue at facilisis.
@@ -22016,24 +22016,24 @@ exports[`Check stories > Components/Panel > Story Borderless > Should match snap
 `;
 
 exports[`Check stories > Components/Panel > Story Compact > Should match snapshot 1`] = `
-"<div class=\\"fd-panel fd-panel--compact\\">
+"<div class=\\"fd-panel fd-panel--compact\\" aria-labelledby=\\"__panel-title-9\\" role=\\"form\\">
     <div class=\\"fd-panel__header\\">
         <div class=\\"fd-panel__expand\\">
-            <button class=\\"fd-button fd-button--transparent fd-panel__button\\" aria-expanded=\\"false\\" aria-haspopup=\\"true\\" aria-controls=\\"Gekf63a\\" aria-labelledby=\\"asdASD234\\">
+            <button class=\\"fd-button fd-button--transparent fd-panel__button\\" aria-expanded=\\"false\\" aria-haspopup=\\"true\\" aria-controls=\\"__panel-9\\">
                 <i class=\\"sap-icon--slim-arrow-right\\"></i>
             </button>
         </div>
-        <h4 class=\\"fd-panel__title\\" id=\\"asdASD234\\">Panel header</h4>
+        <h4 class=\\"fd-panel__title\\" id=\\"__panel-title-9\\">Panel header</h4>
         <div class=\\"fd-toolbar fd-toolbar--clear fd-toolbar--transparent\\">
             <span class=\\"fd-toolbar__spacer fd-toolbar__spacer--auto\\"> </span>
             <div class=\\"fd-segmented-button\\" role=\\"group\\" aria-label=\\"Group label\\">
-              <button class=\\"fd-button fd-button--toggled\\" id=\\"Gekf63D\\" aria-pressed=\\"true\\">Left</button>
+              <button class=\\"fd-button fd-button--toggled\\" aria-pressed=\\"true\\">Left</button>
               <button class=\\"fd-button\\" aria-pressed=\\"false\\">Middle</button>
               <button class=\\"fd-button\\" aria-pressed=\\"false\\">Right</button>
             </div>
         </div>
     </div>
-    <div role=\\"region\\" aria-labelledby=\\"Gekf63D\\" class=\\"fd-panel__content\\" aria-hidden=\\"true\\" id=\\"Gekf63a\\">
+    <div role=\\"region\\" aria-labelledby=\\"__panel-title-9\\" class=\\"fd-panel__content\\" aria-hidden=\\"true\\" id=\\"__panel-9\\">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ut laoreet lorem. Vestibulum ante ipsum primis in faucibus orci luctus
         et ultrices posuere cubilia curae; Aenean sagittis aliquam justo et suscipit.
         Nam molestie, magna at elementum pulvinar, nisi enim venenatis ante, id convallis mi neque nec risus. Cras blandit sagittis augue at facilisis.
@@ -22047,25 +22047,25 @@ exports[`Check stories > Components/Panel > Story Compact > Should match snapsho
 `;
 
 exports[`Check stories > Components/Panel > Story Expandable > Should match snapshot 1`] = `
-"<div class=\\"fd-panel\\">
+"<div class=\\"fd-panel\\" aria-labelledby=\\"__panel-title-7\\" role=\\"form\\">
     <div class=\\"fd-panel__header\\">
         <div class=\\"fd-panel__expand\\">
             <button class=\\"fd-button fd-button--transparent fd-panel__button\\"
-                aria-expanded=\\"false\\" aria-haspopup=\\"true\\" aria-label=\\"expand/collapse panel\\" aria-controls=\\"fghqwe321\\">
+                aria-expanded=\\"false\\" aria-haspopup=\\"true\\" aria-label=\\"expand/collapse panel\\" aria-controls=\\"__panel-7\\">
                 <i class=\\"sap-icon--slim-arrow-right\\"></i>
             </button>
         </div>
-        <h4 class=\\"fd-panel__title\\" id=\\"asdASD123\\">Panel header collapsed</h4>
+        <h4 class=\\"fd-panel__title\\" id=\\"__panel-title-7\\">Panel header collapsed</h4>
         <div class=\\"fd-toolbar fd-toolbar--clear fd-toolbar--transparent\\">
             <span class=\\"fd-toolbar__spacer fd-toolbar__spacer--auto\\"> </span>
             <div class=\\"fd-segmented-button\\" role=\\"group\\" aria-label=\\"Group label\\">
-              <button class=\\"fd-button fd-button--toggled\\" id=\\"jhqDKYdf\\" aria-pressed=\\"true\\">Left</button>
+              <button class=\\"fd-button fd-button--toggled\\" aria-pressed=\\"true\\">Left</button>
               <button class=\\"fd-button\\" aria-pressed=\\"false\\">Middle</button>
               <button class=\\"fd-button\\" aria-pressed=\\"false\\">Right</button>
             </div>
         </div>
     </div>
-    <div role=\\"region\\" aria-labelledby=\\"jhqDKYdf\\" class=\\"fd-panel__content\\" aria-hidden=\\"true\\" id=\\"fghqwe321\\">
+    <div role=\\"region\\" aria-labelledby=\\"__panel-title-7\\" class=\\"fd-panel__content\\" aria-hidden=\\"true\\" id=\\"__panel-7\\">
         <span>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ut laoreet lorem. Vestibulum ante ipsum primis in faucibus orci luctus
             et ultrices posuere cubilia curae; Aenean sagittis aliquam justo et suscipit.
@@ -22077,17 +22077,18 @@ exports[`Check stories > Components/Panel > Story Expandable > Should match snap
         </span>
     </div>
 </div>
-<div class=\\"fd-panel\\">
+
+<div class=\\"fd-panel\\" aria-labelledby=\\"__panel-title-8\\" role=\\"form\\">
     <div class=\\"fd-panel__header\\">
         <div class=\\"fd-panel__expand\\">
             <button class=\\"fd-button fd-button--transparent fd-panel__button\\" aria-expanded=\\"true\\"
-                aria-haspopup=\\"true\\" aria-label=\\"expand/collapse panel\\" aria-controls=\\"fghqwe3214213\\">
+                aria-haspopup=\\"true\\" aria-label=\\"expand/collapse panel\\" aria-controls=\\"__panel-8\\">
                 <i class=\\"sap-icon--slim-arrow-down\\"></i>
             </button>
         </div>
-        <h4 class=\\"fd-panel__title\\" id=\\"asdASD1234\\">Panel header expanded</h4>
+        <h4 class=\\"fd-panel__title\\" id=\\"__panel-title-8\\">Panel header expanded</h4>
     </div>
-    <div role=\\"region\\" aria-labelledby=\\"jhqDKYdf\\" class=\\"fd-panel__content\\" aria-hidden=\\"false\\" id=\\"fghqwe3214213\\">
+    <div role=\\"region\\" aria-labelledby=\\"__panel-title-8\\" class=\\"fd-panel__content\\" aria-hidden=\\"false\\" id=\\"__panel-8\\">
         <span>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ut laoreet lorem. Vestibulum ante ipsum primis in faucibus orci luctus
             et ultrices posuere cubilia curae; Aenean sagittis aliquam justo et suscipit.
@@ -22103,19 +22104,19 @@ exports[`Check stories > Components/Panel > Story Expandable > Should match snap
 `;
 
 exports[`Check stories > Components/Panel > Story Fixed > Should match snapshot 1`] = `
-"<div class=\\"fd-panel fd-panel--fixed\\">
+"<div class=\\"fd-panel fd-panel--fixed\\" aria-labelledby=\\"__panel-title-6\\" role=\\"form\\">
     <div class=\\"fd-panel__header\\">
-        <h4 class=\\"fd-panel__title\\">Panel header</h4>
+        <h4 class=\\"fd-panel__title\\" id=\\"__panel-title-6\\">Panel header</h4>
         <div class=\\"fd-toolbar fd-toolbar--clear fd-toolbar--transparent\\">
             <span class=\\"fd-toolbar__spacer fd-toolbar__spacer--auto\\"> </span>
             <div class=\\"fd-segmented-button\\" role=\\"group\\" aria-label=\\"Group label\\">
-              <button class=\\"fd-button fd-button--toggled\\" id=\\"jhqDKYrt\\" aria-pressed=\\"true\\">Left</button>
+              <button class=\\"fd-button fd-button--toggled\\" aria-pressed=\\"true\\">Left</button>
               <button class=\\"fd-button\\" aria-pressed=\\"false\\">Middle</button>
               <button class=\\"fd-button\\" aria-pressed=\\"false\\">Right</button>
             </div>
         </div>
     </div>
-    <div role=\\"region\\" aria-labelledby=\\"jhqDKYrt\\" class=\\"fd-panel__content\\">
+    <div role=\\"region\\" aria-labelledby=\\"__panel-title-6\\" class=\\"fd-panel__content\\">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ut laoreet lorem. Vestibulum ante ipsum primis in faucibus orci luctus
         et ultrices posuere cubilia curae; Aenean sagittis aliquam justo et suscipit.
         Nam molestie, magna at elementum pulvinar, nisi enim venenatis ante, id convallis mi neque nec risus. Cras blandit sagittis augue at facilisis.
@@ -22129,24 +22130,24 @@ exports[`Check stories > Components/Panel > Story Fixed > Should match snapshot 
 `;
 
 exports[`Check stories > Components/Panel > Story FixedHeightContent > Should match snapshot 1`] = `
-"<div class=\\"fd-panel\\">
+"<div class=\\"fd-panel\\" aria-labelledby=\\"__panel-title-10\\" role=\\"form\\">
     <div class=\\"fd-panel__header\\">
         <div class=\\"fd-panel__expand\\">
-            <button class=\\"fd-button fd-button--transparent fd-panel__button\\" aria-expanded=\\"false\\" aria-haspopup=\\"true\\" aria-controls=\\"GJL745SV\\" aria-labelledby=\\"asdASD345\\">
+            <button class=\\"fd-button fd-button--transparent fd-panel__button\\" aria-expanded=\\"false\\" aria-haspopup=\\"true\\" aria-controls=\\"__panel-10\\">
                 <i class=\\"sap-icon--slim-arrow-right\\"></i>
             </button>
         </div>
-        <h4 class=\\"fd-panel__title\\" id=\\"asdASD345\\">Panel header</h4>
+        <h4 class=\\"fd-panel__title\\" id=\\"__panel-title-10\\">Panel header</h4>
         <div class=\\"fd-toolbar fd-toolbar--clear fd-toolbar--transparent\\">
             <span class=\\"fd-toolbar__spacer fd-toolbar__spacer--auto\\"> </span>
             <div class=\\"fd-segmented-button\\" role=\\"group\\" aria-label=\\"Group label\\">
-              <button class=\\"fd-button fd-button--toggled\\" id=\\"GJL745SD\\" aria-pressed=\\"true\\">Left</button>
+              <button class=\\"fd-button fd-button--toggled\\" aria-pressed=\\"true\\">Left</button>
               <button class=\\"fd-button\\" aria-pressed=\\"false\\">Middle</button>
               <button class=\\"fd-button\\" aria-pressed=\\"false\\">Right</button>
             </div>
         </div>
     </div>
-    <div role=\\"region\\" id=\\"GJL745SV\\" aria-labelledby=\\"GJL745SD\\" class=\\"fd-panel__content\\" aria-hidden=\\"true\\" style=\\"height: 100px;\\">
+    <div role=\\"region\\" id=\\"__panel-10\\" aria-labelledby=\\"__panel-title-10\\" class=\\"fd-panel__content\\" aria-hidden=\\"true\\" style=\\"height: 100px;\\">
         <span>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ut laoreet lorem. Vestibulum ante ipsum primis in faucibus orci luctus
             et ultrices posuere cubilia curae; Aenean sagittis aliquam justo et suscipit.
@@ -22169,17 +22170,17 @@ exports[`Check stories > Components/Panel > Story FixedHeightContent > Should ma
 `;
 
 exports[`Check stories > Components/Panel > Story Transparent > Should match snapshot 1`] = `
-"<div class=\\"fd-panel fd-panel--transparent\\">
+"<div class=\\"fd-panel fd-panel--transparent\\" aria-labelledby=\\"__panel-title-4\\" role=\\"form\\">
     <div class=\\"fd-panel__header\\">
         <div class=\\"fd-panel__expand\\">
             <button class=\\"fd-button fd-button--transparent fd-panel__button\\" aria-expanded=\\"true\\"
-                aria-haspopup=\\"true\\" aria-label=\\"expand/collapse panel\\" aria-controls=\\"fghqwe3214213\\">
+                aria-haspopup=\\"true\\" aria-label=\\"expand/collapse panel\\" aria-controls=\\"__panel-4\\">
                 <i class=\\"sap-icon--slim-arrow-down\\"></i>
             </button>
         </div>
-        <h4 class=\\"fd-panel__title\\" id=\\"asdASD1234\\">Panel header expanded</h4>
+        <h4 class=\\"fd-panel__title\\" id=\\"__panel-title-4\\">Panel header expanded</h4>
     </div>
-    <div role=\\"region\\" aria-labelledby=\\"jhqDKYdf\\" class=\\"fd-panel__content\\" aria-hidden=\\"false\\" id=\\"fghqwe3214213\\">
+    <div role=\\"region\\" aria-labelledby=\\"__panel-title-4\\" class=\\"fd-panel__content\\" aria-hidden=\\"false\\" id=\\"__panel-4\\">
         <span>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ut laoreet lorem. Vestibulum ante ipsum primis in faucibus orci luctus
             et ultrices posuere cubilia curae; Aenean sagittis aliquam justo et suscipit.
@@ -22194,19 +22195,19 @@ exports[`Check stories > Components/Panel > Story Transparent > Should match sna
 
 <br><br>
 
-<div class=\\"fd-panel fd-panel--fixed fd-panel--transparent\\">
+<div class=\\"fd-panel fd-panel--fixed fd-panel--transparent\\" aria-labelledby=\\"__panel-title-5\\" role=\\"form\\">
     <div class=\\"fd-panel__header\\">
-        <h4 class=\\"fd-panel__title\\">Panel header</h4>
+        <h4 class=\\"fd-panel__title\\" id=\\"__panel-title-5\\">Panel header</h4>
         <div class=\\"fd-toolbar fd-toolbar--clear fd-toolbar--transparent\\">
             <span class=\\"fd-toolbar__spacer fd-toolbar__spacer--auto\\"> </span>
             <div class=\\"fd-segmented-button\\" role=\\"group\\" aria-label=\\"Group label\\">
-              <button class=\\"fd-button fd-button--toggled\\" id=\\"jhqDKYrt\\" aria-pressed=\\"true\\">Left</button>
+              <button class=\\"fd-button fd-button--toggled\\" aria-pressed=\\"true\\">Left</button>
               <button class=\\"fd-button\\" aria-pressed=\\"false\\">Middle</button>
               <button class=\\"fd-button\\" aria-pressed=\\"false\\">Right</button>
             </div>
         </div>
     </div>
-    <div role=\\"region\\" aria-labelledby=\\"jhqDKYrt\\" class=\\"fd-panel__content\\">
+    <div role=\\"region\\" aria-labelledby=\\"__panel-title-5\\" class=\\"fd-panel__content\\">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ut laoreet lorem. Vestibulum ante ipsum primis in faucibus orci luctus
         et ultrices posuere cubilia curae; Aenean sagittis aliquam justo et suscipit.
         Nam molestie, magna at elementum pulvinar, nisi enim venenatis ante, id convallis mi neque nec risus. Cras blandit sagittis augue at facilisis.
@@ -26085,7 +26086,7 @@ exports[`Check stories > Components/Shellbar > Story LinksWithCollapsibleMenuSSi
                 <div class=\\"fd-popover__control\\">
                     <button class=\\"fd-button fd-button--transparent fd-shellbar__button fd-shellbar__button--menu fd-button--menu\\" onclick=\\"onPopoverClick('9GLB26941');\\" aria-controls=\\"9GLB26941\\" aria-haspopup=\\"true\\" aria-expanded=\\"false\\">
                         <span class=\\"fd-shellbar__title\\">Corporate Portal</span>
-                        <i class=\\"sap-icon--megamenu\\"></i>
+                        <i class=\\"sap-icon--slim-arrow-down\\"></i>
                     </button>
                 </div>
                 <div class=\\"fd-popover__body fd-popover__body--no-arrow\\" aria-hidden=\\"true\\" id=\\"9GLB26941\\">
@@ -26173,136 +26174,206 @@ exports[`Check stories > Components/Shellbar > Story LinksWithCollapsibleMenuSSi
 `;
 
 exports[`Check stories > Components/Shellbar > Story LinksWithCollapsibleMenuXlSize > Should match snapshot 1`] = `
-"<div style=\\"height:300px\\">
-    <div class=\\"fd-shellbar fd-shellbar--xl\\">
-        <div class=\\"fd-shellbar__group fd-shellbar__group--product\\">
-            <span class=\\"fd-shellbar__logo\\"><img src=\\"//unpkg.com/fundamental-styles/dist/images/sap-logo.png\\"
-                                                 srcset=\\"//unpkg.com/fundamental-styles/dist/images/sap-logo@2x.png 1x, //unpkg.com/fundamental-styles/dist/images/sap-logo@3x.png 2x, //unpkg.com/fundamental-styles/dist/images/sap-logo@4x.png 3x\\"
-                                                 width=\\"48\\" height=\\"24\\" alt=\\"SAP\\"></span>
-            <span class=\\"fd-shellbar__title\\">Corporate Portal</span>
+"
+<div style=\\"height: 300px\\">
+  <div class=\\"fd-shellbar fd-shellbar--xl\\">
+    <div class=\\"fd-shellbar__group fd-shellbar__group--product\\">
+      <span class=\\"fd-shellbar__logo\\"
+        ><img
+          src=\\"//unpkg.com/fundamental-styles/dist/images/sap-logo.png\\"
+          srcset=\\"
+            //unpkg.com/fundamental-styles/dist/images/sap-logo@2x.png 1x,
+            //unpkg.com/fundamental-styles/dist/images/sap-logo@3x.png 2x,
+            //unpkg.com/fundamental-styles/dist/images/sap-logo@4x.png 3x
+          \\"
+          width=\\"48\\"
+          height=\\"24\\"
+          alt=\\"SAP\\"
+      /></span>
+      <span class=\\"fd-shellbar__title\\">Corporate Portal</span>
+    </div>
+    <div
+      class=\\"fd-shellbar__group fd-shellbar__group--center fd-shellbar__group--mobile-flex\\"
+    >
+      <div class=\\"fd-shellbar__action fd-shellbar__action--grow\\">
+        <div id=\\"JKHhjk7234k\\" class=\\"fd-input-group fd-shellbar__search-field\\">
+          <div
+            class=\\"fd-input-group__addon fd-shellbar__search-field-category fd-input-group__addon--button\\"
+          >
+            <div class=\\"fd-select\\">
+              <button
+                aria-expanded=\\"false\\"
+                aria-haspopup=\\"listbox\\"
+                aria-labelledby=\\"cozySelectLabel cozySelectValue\\"
+                class=\\"fd-select__control fd-shellbar__search-category\\"
+                id=\\"cozySelectCombobox\\"
+                onclick=\\"
+                        toggleElAttrs('h0C6A325', ['aria-hidden']);
+                        toggleElAttrs('cozySelectCombobox', ['aria-expanded']);
+                    \\"
+                value=\\"List Item 1\\"
+                tabindex=\\"0\\"
+              >
+                <span is=\\"cozySelectValue\\" class=\\"fd-select__text-content\\"
+                  >List Item 1</span
+                >
+                <span
+                  class=\\"fd-button fd-button--transparent fd-select__button fd-shellbar__search-dropdown\\"
+                >
+                  <i class=\\"sap-icon--slim-arrow-down\\"></i>
+                </span>
+              </button>
+            </div>
+          </div>
+          <input
+            aria-label=\\"search-input\\"
+            type=\\"text\\"
+            onfocus=\\"addClass('JKHhjk7234k', 'is-focus')\\"
+            onblur=\\"removeClass('JKHhjk7234k', 'is-focus')\\"
+            class=\\"fd-input fd-input-group__input fd-shellbar__search-field-input\\"
+            id=\\"F4GcX348b1\\"
+            placeholder=\\"Search everything\\"
+          />
+          <div
+            class=\\"fd-input-group__addon fd-shellbar__search-field-addon fd-shellbar__search-cancel fd-input-group__addon--button\\"
+          >
+            <button
+              aria-label=\\"button-search\\"
+              class=\\"fd-shellbar__button fd-button fd-button--transparent\\"
+            >
+              <i class=\\"sap-icon--decline\\"></i>
+            </button>
+          </div>
+          <div
+            class=\\"fd-input-group__addon fd-shellbar__search-field-addon fd-shellbar__search-submit fd-input-group__addon--button\\"
+          >
+            <button
+              aria-label=\\"button-search\\"
+              class=\\"fd-shellbar__button fd-button fd-button--transparent\\"
+            >
+              <i class=\\"sap-icon--search\\"></i>
+            </button>
+          </div>
+          <div class=\\"fd-shellbar__search-field-helper\\"></div>
         </div>
-        <div class=\\"fd-shellbar__group fd-shellbar__group--center fd-shellbar__group--mobile-flex\\">
-            <div class=\\"fd-shellbar__action fd-shellbar__action--grow\\">
-              <div id=\\"JKHhjk7234k\\" class=\\"fd-input-group fd-shellbar__search-field\\">
-                <div class=\\"fd-input-group__addon fd-shellbar__search-field-category fd-input-group__addon--button\\">
-                  <div class=\\"fd-select\\">
-                    <button
-                      aria-expanded=\\"false\\"
-                      aria-haspopup=\\"listbox\\"
-                      aria-labelledby=\\"cozySelectLabel cozySelectValue\\"
-                      class=\\"fd-select__control fd-shellbar__search-category\\"
-                      id=\\"cozySelectCombobox\\"
-                      onclick=\\"
-                          toggleElAttrs('h0C6A325', ['aria-hidden']);
-                          toggleElAttrs('cozySelectCombobox', ['aria-expanded']);
-                      \\"
-                      value=\\"List Item 1\\"
-                      tabindex=\\"0\\">
-                      <span is=\\"cozySelectValue\\" class=\\"fd-select__text-content\\">List Item 1</span>
-                      <span class=\\"fd-button fd-button--transparent fd-select__button fd-shellbar__search-dropdown\\">
-                          <i class=\\"sap-icon--slim-arrow-down\\"></i>
-                      </span>
-                    </button>
-                  </div>
-                </div>
-                <input aria-label=\\"search-input\\" type=\\"text\\" onfocus=\\"addClass('JKHhjk7234k', 'is-focus')\\" onblur=\\"removeClass('JKHhjk7234k', 'is-focus')\\" class=\\"fd-input fd-input-group__input fd-shellbar__search-field-input\\" id=\\"F4GcX348b1\\" placeholder=\\"Search everything\\">
-                <div class=\\"fd-input-group__addon fd-shellbar__search-field-addon fd-shellbar__search-cancel fd-input-group__addon--button\\">
-                  <button aria-label=\\"button-search\\" class=\\"fd-shellbar__button fd-button fd-button--transparent\\">
-                    <i class=\\"sap-icon--decline\\"></i>
-                  </button>
-                </div>
-                <div class=\\"fd-input-group__addon fd-shellbar__search-field-addon fd-shellbar__search-submit fd-input-group__addon--button\\">
-                  <button aria-label=\\"button-search\\" class=\\"fd-shellbar__button fd-button fd-button--transparent\\">
-                    <i class=\\"sap-icon--search\\"></i>
-                  </button>
-                </div>
+      </div>
+      <div
+        class=\\"fd-shellbar__action fd-shellbar__action--mobile fd-shellbar__action--shrink\\"
+      >
+        <button class=\\"fd-button fd-button--transparent\\">Cancel</button>
+      </div>
+    </div>
+    <div class=\\"fd-shellbar__group fd-shellbar__group--actions\\">
+      <div class=\\"fd-shellbar__action fd-shellbar__action--desktop\\">
+        <button
+          class=\\"fd-button fd-button--transparent fd-shellbar__button\\"
+          aria-label=\\"Notifications\\"
+        >
+          <i class=\\"sap-icon--bell\\"></i>
+          <span class=\\"fd-button__badge\\">251K</span>
+        </button>
+      </div>
+      <div class=\\"fd-shellbar__action fd-shellbar__action--desktop\\">
+        <button
+          class=\\"fd-button fd-button--transparent fd-shellbar__button\\"
+          aria-label=\\"Pool\\"
+        >
+          <i class=\\"sap-icon--pool\\"></i>
+        </button>
+      </div>
+      <div class=\\"fd-shellbar__action fd-shellbar__action--mobile\\">
+        <div class=\\"fd-shellbar-collapse\\">
+          <div class=\\"fd-popover fd-popover--right\\">
+            <div class=\\"fd-popover__control\\">
+              <div
+                class=\\"fd-shellbar-collapse--control\\"
+                onclick=\\"onPopoverClick('CWaGGD78')\\"
+                aria-controls=\\"CWaGGD78\\"
+                aria-expanded=\\"false\\"
+                aria-haspopup=\\"true\\"
+                role=\\"button\\"
+              >
+                <button
+                  class=\\"fd-button fd-button--transparentfd-shellbar__button\\"
+                  aria-controls=\\"undefined\\"
+                  aria-haspopup=\\"true\\"
+                  aria-expanded=\\"false\\"
+                >
+                  <i class=\\"sap-icon--overflow\\"></i>
+                  <span class=\\"fd-buton__badge\\">251K</span>
+                </button>
               </div>
             </div>
-            <div class=\\"fd-shellbar__action fd-shellbar__action--mobile fd-shellbar__action--shrink\\">
-              <button class=\\"fd-button fd-button--transparent\\">Cancel</button>
+            <div
+              class=\\"fd-popover__body fd-popover__body--no-arrow fd-popover__body--right\\"
+              aria-hidden=\\"true\\"
+              id=\\"CWaGGD78\\"
+            >
+              <nav class=\\"fd-menu\\">
+                <ul class=\\"fd-menu__list fd-menu__list--no-shadow\\">
+                  <li class=\\"fd-menu__item\\">
+                    <a role=\\"button\\" class=\\"fd-menu__link\\">
+                      <span class=\\"fd-menu__title\\">Search</span>
+                    </a>
+                  </li>
+                  <li class=\\"fd-menu__item\\">
+                    <a role=\\"button\\" class=\\"fd-menu__link\\">
+                      <span class=\\"fd-menu__title\\">Notifications Out</span>
+                    </a>
+                  </li>
+                  <li class=\\"fd-menu__item\\">
+                    <a role=\\"button\\" class=\\"fd-menu__link\\">
+                      <span class=\\"fd-menu__title\\">Pool</span>
+                    </a>
+                  </li>
+                </ul>
+              </nav>
             </div>
+          </div>
         </div>
-        <div class=\\"fd-shellbar__group fd-shellbar__group--actions\\">
-            <div class=\\"fd-shellbar__action fd-shellbar__action--desktop\\">
-                <button class=\\"fd-button fd-button--transparent fd-shellbar__button\\" aria-label=\\"Notifications\\">
-                    <i class=\\"sap-icon--bell\\"></i>
-                    <span class=\\"fd-button__badge\\">251K</span>
-                </button>
+      </div>
+      <div class=\\"fd-shellbar__action\\">
+        <div class=\\"fd-popover fd-popover--right\\">
+          <div class=\\"fd-popover__control\\">
+            <div
+              class=\\"fd-button fd-button--transparent fd-shellbar__button fd-user-menu__control\\"
+              onclick=\\"onPopoverClick('DD35G276')\\"
+              aria-controls=\\"DD35G276\\"
+              aria-expanded=\\"false\\"
+              aria-haspopup=\\"true\\"
+              role=\\"button\\"
+              tabindex=\\"0\\"
+            >
+              <span
+                class=\\"fd-avatar fd-avatar--xs fd-avatar--circle fd-shellbar__avatar--circle\\"
+                >WW</span
+              >
             </div>
-            <div class=\\"fd-shellbar__action fd-shellbar__action--desktop\\">
-                <button class=\\"fd-button fd-button--transparent fd-shellbar__button\\" aria-label=\\"Pool\\">
-                    <i class=\\"sap-icon--pool\\"></i>
-                </button>
-            </div>
-            <div class=\\"fd-shellbar__action fd-shellbar__action--mobile\\">
-                <div class=\\"fd-shellbar-collapse\\">
-                    <div class=\\"fd-popover fd-popover--right\\">
-                        <div class=\\"fd-popover__control\\">
-                            <div class=\\"fd-shellbar-collapse--control\\" onclick=\\"onPopoverClick('CWaGGD78')\\"
-                                 aria-controls=\\"CWaGGD78\\" aria-expanded=\\"false\\" aria-haspopup=\\"true\\" role=\\"button\\">
-                                <button class=\\"fd-button fd-button--transparentfd-shellbar__button\\" aria-controls=\\"undefined\\"
-                                        aria-haspopup=\\"true\\" aria-expanded=\\"false\\">
-                                    <i class=\\"sap-icon--overflow\\"></i>
-                                    <span class=\\"fd-buton__badge\\">251K</span>
-                                </button>
-                            </div>
-                        </div>
-                        <div class=\\"fd-popover__body fd-popover__body--no-arrow fd-popover__body--right\\"
-                             aria-hidden=\\"true\\" id=\\"CWaGGD78\\">
-                            <nav class=\\"fd-menu\\">
-                                <ul class=\\"fd-menu__list fd-menu__list--no-shadow\\">
-                                    <li class=\\"fd-menu__item\\">
-                                        <a role=\\"button\\" class=\\"fd-menu__link\\">
-                                            <span class=\\"fd-menu__title\\">Search</span>
-                                        </a>
-                                    </li>
-                                    <li class=\\"fd-menu__item\\">
-                                        <a role=\\"button\\" class=\\"fd-menu__link\\">
-                                            <span class=\\"fd-menu__title\\">Notifications Out</span>
-                                        </a>
-                                    </li>
-                                    <li class=\\"fd-menu__item\\">
-                                        <a role=\\"button\\" class=\\"fd-menu__link\\">
-                                            <span class=\\"fd-menu__title\\">Pool</span>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </nav>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class=\\"fd-shellbar__action\\">
-                <div class=\\"fd-popover fd-popover--right\\">
-                    <div class=\\"fd-popover__control\\">
-                        <div class=\\"fd-button fd-button--transparent fd-shellbar__button fd-user-menu__control\\"
-                             onclick=\\"onPopoverClick('DD35G276')\\" aria-controls=\\"DD35G276\\" aria-expanded=\\"false\\"
-                             aria-haspopup=\\"true\\" role=\\"button\\" tabindex=\\"0\\">
-                            <span
-                                class=\\"fd-avatar fd-avatar--xs fd-avatar--circle fd-shellbar__avatar--circle\\">WW</span>
-                        </div>
-                    </div>
-                    <div class=\\"fd-popover__body fd-popover__body--no-arrow fd-popover__body--right\\" aria-hidden=\\"true\\"
-                         id=\\"DD35G276\\">
-                        <nav class=\\"fd-menu\\">
-                            <ul class=\\"fd-menu__list fd-menu__list--no-shadow\\">
-                                <li class=\\"fd-menu__item\\">
-                                    <a role=\\"button\\" class=\\"fd-menu__link\\">
-                                        <span class=\\"fd-menu__title\\">Settings</span>
-                                    </a>
-                                </li>
-                                <li class=\\"fd-menu__item\\">
-                                    <a role=\\"button\\" class=\\"fd-menu__link\\">
-                                        <span class=\\"fd-menu__title\\">Sign Out</span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </nav>
-                    </div>
-                </div>
-            </div>
+          </div>
+          <div
+            class=\\"fd-popover__body fd-popover__body--no-arrow fd-popover__body--right\\"
+            aria-hidden=\\"true\\"
+            id=\\"DD35G276\\"
+          >
+            <nav class=\\"fd-menu\\">
+              <ul class=\\"fd-menu__list fd-menu__list--no-shadow\\">
+                <li class=\\"fd-menu__item\\">
+                  <a role=\\"button\\" class=\\"fd-menu__link\\">
+                    <span class=\\"fd-menu__title\\">Settings</span>
+                  </a>
+                </li>
+                <li class=\\"fd-menu__item\\">
+                  <a role=\\"button\\" class=\\"fd-menu__link\\">
+                    <span class=\\"fd-menu__title\\">Sign Out</span>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
         </div>
+      </div>
     </div>
+  </div>
 </div>
 "
 `;
@@ -26347,96 +26418,162 @@ exports[`Check stories > Components/Shellbar > Story Primary > Should match snap
 `;
 
 exports[`Check stories > Components/Shellbar > Story ProductMenuAndSearch > Should match snapshot 1`] = `
-"<div style=\\"height:200px\\">
-    <div class=\\"fd-shellbar fd-shellbar--xl\\">
-        <div class=\\"fd-shellbar__group fd-shellbar__group--product\\">
-            <a class=\\"fd-shellbar__logo\\" href=\\"https://www.sap.com/index.html\\" target=\\"_blank\\">
-                <img src=\\"//unpkg.com/fundamental-styles/dist/images/sap-logo.png\\" srcset=\\"//unpkg.com/fundamental-styles/dist/images/sap-logo@2x.png 1x, //unpkg.com/fundamental-styles/dist/images/sap-logo@3x.png 2x, //unpkg.com/fundamental-styles/dist/images/sap-logo@4x.png 3x\\" width=\\"48\\" height=\\"24\\" alt=\\"SAP\\">
-            </a>
-            <div class=\\"fd-popover\\">
-                <div class=\\"fd-popover__control\\">
-                    <button class=\\"fd-button fd-button--transparent fd-shellbar__button fd-shellbar__button--menu fd-button--menu\\" onclick=\\"onPopoverClick('9GLB26941');\\" aria-controls=\\"9GLB26941\\" aria-haspopup=\\"true\\" aria-expanded=\\"false\\">
-                        <span class=\\"fd-shellbar__title\\">Corporate Portal</span>
-                        <i class=\\"sap-icon--megamenu\\"></i>
-                    </button>
-                </div>
-                <div class=\\"fd-popover__body fd-popover__body--no-arrow\\" aria-hidden=\\"true\\" id=\\"9GLB26941\\">
-                    <nav class=\\"fd-menu\\">
-                        <ul class=\\"fd-menu__list fd-menu__list--no-shadow\\">
-                            <li class=\\"fd-menu__item\\">
-                                <a role=\\"button\\" class=\\"fd-menu__link\\">
-                                    <span class=\\"fd-menu__title\\">Application A</span>
-                                </a>
-                            </li>
-                            <li class=\\"fd-menu__item\\">
-                                <a role=\\"button\\" class=\\"fd-menu__link\\">
-                                    <span class=\\"fd-menu__title\\">Application B</span>
-                                </a>
-                            </li>
-                            <li class=\\"fd-menu__item\\">
-                                <a role=\\"button\\" class=\\"fd-menu__link\\">
-                                    <span class=\\"fd-menu__title\\">Application C</span>
-                                </a>
-                            </li>
-                            <li class=\\"fd-menu__item\\">
-                                <a role=\\"button\\" class=\\"fd-menu__link\\">
-                                    <span class=\\"fd-menu__title\\">Application D</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
-            </div>
-            <div class=\\"fd-shellbar__subtitle\\">Subtitle</div>
+"
+
+<div style=\\"height: 200px\\">
+  <div class=\\"fd-shellbar fd-shellbar--xl\\">
+    <div class=\\"fd-shellbar__group fd-shellbar__group--product\\">
+      <a
+        class=\\"fd-shellbar__logo\\"
+        href=\\"https://www.sap.com/index.html\\"
+        target=\\"_blank\\"
+      >
+        <img
+          src=\\"//unpkg.com/fundamental-styles/dist/images/sap-logo.png\\"
+          srcset=\\"
+            //unpkg.com/fundamental-styles/dist/images/sap-logo@2x.png 1x,
+            //unpkg.com/fundamental-styles/dist/images/sap-logo@3x.png 2x,
+            //unpkg.com/fundamental-styles/dist/images/sap-logo@4x.png 3x
+          \\"
+          width=\\"48\\"
+          height=\\"24\\"
+          alt=\\"SAP\\"
+        />
+      </a>
+      <div class=\\"fd-popover\\">
+        <div class=\\"fd-popover__control\\">
+          <button
+            class=\\"fd-button fd-button--transparent fd-shellbar__button fd-shellbar__button--menu fd-button--menu\\"
+            onclick=\\"onPopoverClick('9GLB269412');\\"
+            aria-controls=\\"9GLB269412\\"
+            aria-haspopup=\\"true\\"
+            aria-expanded=\\"false\\"
+          >
+            <span class=\\"fd-shellbar__title\\">Corporate Portal</span>
+            <i class=\\"sap-icon--slim-arrow-down\\"></i>
+          </button>
         </div>
-        <div class=\\"fd-shellbar__group fd-shellbar__group--center\\">
-            <div class=\\"fd-shellbar__action\\">
-                <div class=\\"fd-popover__control\\">
-                    <div aria-label=\\"Image label\\" onclick=\\"onPopoverClick('F4GcX348b')\\" aria-controls=\\"F4GcX348b\\" aria-expanded=\\"false\\" aria-haspopup=\\"true\\">
-                        <div class=\\"fd-input-group fd-shellbar__search-field\\">
-                            <input aria-label=\\"search-input\\" type=\\"text\\" class=\\"fd-input fd-input-group__input fd-shellbar__search-field-input\\" id=\\"F4GcX348b1\\" placeholder=\\"Search everything\\">
-                            <span class=\\"fd-input-group__addon fd-shellbar__search-field-addon fd-input-group__addon--button\\">
-                                <button aria-label=\\"button-search\\" class=\\"fd-shellbar__button fd-button fd-button--transparent\\">
-                                        <i class=\\"sap-icon--search\\"></i>
-                                </button>
-                            </span>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <div
+          class=\\"fd-popover__body fd-popover__body--no-arrow\\"
+          aria-hidden=\\"true\\"
+          id=\\"9GLB269412\\"
+        >
+          <nav class=\\"fd-menu\\">
+            <ul class=\\"fd-menu__list fd-menu__list--no-shadow\\">
+              <li class=\\"fd-menu__item\\">
+                <a role=\\"button\\" class=\\"fd-menu__link\\">
+                  <span class=\\"fd-menu__title\\">Application A</span>
+                </a>
+              </li>
+              <li class=\\"fd-menu__item\\">
+                <a role=\\"button\\" class=\\"fd-menu__link\\">
+                  <span class=\\"fd-menu__title\\">Application B</span>
+                </a>
+              </li>
+              <li class=\\"fd-menu__item\\">
+                <a role=\\"button\\" class=\\"fd-menu__link\\">
+                  <span class=\\"fd-menu__title\\">Application C</span>
+                </a>
+              </li>
+              <li class=\\"fd-menu__item\\">
+                <a role=\\"button\\" class=\\"fd-menu__link\\">
+                  <span class=\\"fd-menu__title\\">Application D</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
         </div>
-        <div class=\\"fd-shellbar__group fd-shellbar__group--actions\\">
-            <div class=\\"fd-shellbar__action\\">
-                <div class=\\"fd-popover fd-popover--right\\">
-                    <div class=\\"fd-popover__control\\">
-                        <div class=\\"fd-button fd-button--transparent fd-shellbar__button fd-user-menu__control\\" aria-controls=\\"ZY3AY276\\" onclick=\\"onPopoverClick('ZY3AY276')\\" aria-expanded=\\"false\\" aria-haspopup=\\"true\\" role=\\"button\\" tabindex=\\"0\\">
-                            <span
-                                class=\\"fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--thumbnail fd-shellbar__avatar--circle\\"
-                                style=\\"background-image: url('assets/images/avatars/1.svg');\\"
-                                aria-label=\\"William Wallingham\\">
-                            </span>
-                        </div>
-                    </div>
-                    <div class=\\"fd-popover__body fd-popover__body--no-arrow fd-popover__body--right\\" aria-hidden=\\"false\\" id=\\"ZY3AY276\\">
-                        <nav class=\\"fd-menu\\">
-                            <ul class=\\"fd-menu__list fd-menu__list--no-shadow\\">
-                                <li class=\\"fd-menu__item\\">
-                                    <a role=\\"button\\" class=\\"fd-menu__link\\">
-                                        <span class=\\"fd-menu__title\\">Settings</span>
-                                    </a>
-                                </li>
-                                <li class=\\"fd-menu__item\\">
-                                    <a role=\\"button\\" class=\\"fd-menu__link\\">
-                                        <span class=\\"fd-menu__title\\">Sign Out</span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </nav>
-                    </div>
-                </div>
-            </div>
-        </div>
+      </div>
+      <div class=\\"fd-shellbar__subtitle\\">Subtitle</div>
     </div>
+    <div
+      class=\\"fd-shellbar__group fd-shellbar__group--center fd-shellbar__group--mobile-flex\\"
+    >
+      <div class=\\"fd-shellbar__action fd-shellbar__action--grow\\">
+        <div id=\\"JKHhjk7234k2\\" class=\\"fd-input-group fd-shellbar__search-field\\">
+          <input
+            aria-label=\\"search-input\\"
+            type=\\"text\\"
+            onfocus=\\"addClass('JKHhjk7234k2', 'is-focus')\\"
+            onblur=\\"removeClass('JKHhjk7234k2', 'is-focus')\\"
+            class=\\"fd-input fd-input-group__input fd-shellbar__search-field-input\\"
+            id=\\"F4GcX348b1\\"
+            placeholder=\\"Search everything\\"
+          />
+          <div
+            class=\\"fd-input-group__addon fd-shellbar__search-field-addon fd-shellbar__search-cancel fd-input-group__addon--button\\"
+          >
+            <button
+              aria-label=\\"button-search\\"
+              class=\\"fd-shellbar__button fd-button fd-button--transparent\\"
+            >
+              <i class=\\"sap-icon--decline\\"></i>
+            </button>
+          </div>
+          <div
+            class=\\"fd-input-group__addon fd-shellbar__search-field-addon fd-shellbar__search-submit fd-input-group__addon--button\\"
+          >
+            <button
+              aria-label=\\"button-search\\"
+              class=\\"fd-shellbar__button fd-button fd-button--transparent\\"
+            >
+              <i class=\\"sap-icon--search\\"></i>
+            </button>
+          </div>
+          <div class=\\"fd-shellbar__search-field-helper\\"></div>
+        </div>
+      </div>
+      <div
+        class=\\"fd-shellbar__action fd-shellbar__action--mobile fd-shellbar__action--shrink\\"
+      >
+        <button class=\\"fd-button fd-button--transparent\\">Cancel</button>
+      </div>
+    </div>
+    <div class=\\"fd-shellbar__group fd-shellbar__group--actions\\">
+      <div class=\\"fd-shellbar__action\\">
+        <div class=\\"fd-popover fd-popover--right\\">
+          <div class=\\"fd-popover__control\\">
+            <div
+              class=\\"fd-button fd-button--transparent fd-shellbar__button fd-user-menu__control\\"
+              aria-controls=\\"ZY3AY276\\"
+              onclick=\\"onPopoverClick('ZY3AY276')\\"
+              aria-expanded=\\"false\\"
+              aria-haspopup=\\"true\\"
+              role=\\"button\\"
+              tabindex=\\"0\\"
+            >
+              <span
+                class=\\"fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--thumbnail fd-shellbar__avatar--circle\\"
+                style=\\"background-image: url('assets/images/avatars/1.svg')\\"
+                aria-label=\\"William Wallingham\\"
+              >
+              </span>
+            </div>
+          </div>
+          <div
+            class=\\"fd-popover__body fd-popover__body--no-arrow fd-popover__body--right\\"
+            aria-hidden=\\"false\\"
+            id=\\"ZY3AY276\\"
+          >
+            <nav class=\\"fd-menu\\">
+              <ul class=\\"fd-menu__list fd-menu__list--no-shadow\\">
+                <li class=\\"fd-menu__item\\">
+                  <a role=\\"button\\" class=\\"fd-menu__link\\">
+                    <span class=\\"fd-menu__title\\">Settings</span>
+                  </a>
+                </li>
+                <li class=\\"fd-menu__item\\">
+                  <a role=\\"button\\" class=\\"fd-menu__link\\">
+                    <span class=\\"fd-menu__title\\">Sign Out</span>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
 "
 `;
@@ -26831,7 +26968,7 @@ exports[`Check stories > Components/Slider > Story MobileMode > Should match sna
 <div class=\\"slider-container\\">
     <div class=\\"fd-slider fd-slider--lg\\">
         <div class=\\"fd-slider__inner\\">
-            <div class=\\"fd-slider__handle fd-slider__handle--lg\\" tabindex=\\"0\\" role=\\"slider\\" aria-label=\\"slider\\" aria-valuemin=\\"1\\" aria-valuemax=\\"100\\" aria-valuenow=\\"50\\" style=\\"left: 50%;\\"></div>
+            <div class=\\"fd-slider__handle\\" tabindex=\\"0\\" role=\\"slider\\" aria-label=\\"slider\\" aria-valuemin=\\"1\\" aria-valuemax=\\"100\\" aria-valuenow=\\"50\\" style=\\"left: 50%;\\"></div>
             <div class=\\"fd-slider__track\\">
                 <div class=\\"fd-slider__track-range\\" style=\\"width: 50%;\\"></div>
             </div>
@@ -26846,11 +26983,13 @@ exports[`Check stories > Components/Slider > Story Range > Should match snapshot
 <div class=\\"slider-container slider-container--range\\">
     <div class=\\"fd-slider fd-slider--range\\">
         <div class=\\"fd-slider__inner\\">
+            <div class=\\"fd-slider__track\\">
+              <div class=\\"fd-slider__track-range\\" style=\\"width: 40%\\">
+                <div class=\\"fd-slider__track-focus-range\\" tabindex=\\"0\\"></div>
+              </div>
+            </div>
             <div class=\\"fd-slider__handle\\" tabindex=\\"0\\" role=\\"slider\\" aria-label=\\"range slider left\\" aria-valuemin=\\"1\\" aria-valuemax=\\"80\\" aria-valuenow=\\"40\\" style=\\"left: 40%;\\"></div>
             <div class=\\"fd-slider__handle\\" tabindex=\\"0\\" role=\\"slider\\" aria-label=\\"range slider right\\" aria-valuemin=\\"40\\" aria-valuemax=\\"100\\" aria-valuenow=\\"80\\" style=\\"left: 80%;\\"></div>
-            <div class=\\"fd-slider__track\\">
-                <div class=\\"fd-slider__track-range\\" style=\\"width: 40%\\"></div>
-            </div>
         </div>
     </div>
 </div>
@@ -26941,6 +27080,105 @@ exports[`Check stories > Components/Slider > Story TicksAndLabels > Should match
             </div>
         </div>
     </div>
+</div>
+"
+`;
+
+exports[`Check stories > Components/Slider > Story VerticalMode > Should match snapshot 1`] = `
+"
+<div style=\\"display: flex; flex-flow: row wrap; justify-content: space-between\\">
+  <div>
+  <p>Standard vertical slider</p>
+    <div style=\\"display: flex;\\">
+      <div class=\\"slider-container\\" style=\\"height: 500px; width: 50px\\">
+          <div class=\\"fd-slider fd-slider--vertical\\">
+              <div class=\\"fd-slider__inner\\">
+                  <div class=\\"fd-slider__handle\\" tabindex=\\"0\\" role=\\"slider\\" aria-label=\\"slider\\" aria-valuemin=\\"1\\" aria-valuemax=\\"100\\" aria-valuenow=\\"50\\" style=\\"bottom: 50%;\\"></div>
+                  <div class=\\"fd-slider__track\\">
+                      <div class=\\"fd-slider__track-range\\" style=\\"height: 50%;\\"></div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class=\\"slider-container\\" style=\\"height: 500px; width: 50px\\">
+          <div class=\\"fd-slider fd-slider--vertical\\">
+              <div class=\\"fd-slider__inner\\">
+                  <div class=\\"fd-slider__handle\\" tabindex=\\"0\\" role=\\"slider\\" aria-label=\\"slider\\" aria-valuemin=\\"1\\" aria-valuemax=\\"100\\" aria-valuenow=\\"50\\" style=\\"bottom: 30%;\\"></div>
+                  <div class=\\"fd-slider__track\\">
+                      <div class=\\"fd-slider__track-range\\" style=\\"height: 30%;\\"></div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class=\\"slider-container\\" style=\\"height: 500px; width: 50px\\">
+          <div class=\\"fd-slider fd-slider--vertical\\">
+              <div class=\\"fd-slider__inner\\">
+                  <div class=\\"fd-slider__handle\\" tabindex=\\"0\\" role=\\"slider\\" aria-label=\\"slider\\" aria-valuemin=\\"1\\" aria-valuemax=\\"100\\" aria-valuenow=\\"50\\" style=\\"bottom: 70%;\\"></div>
+                  <div class=\\"fd-slider__track\\">
+                      <div class=\\"fd-slider__track-range\\" style=\\"height: 70%;\\"></div>
+                  </div>
+              </div>
+          </div>
+      </div>
+    </div>
+  </div>
+  <div>
+    <p>Mobile vertical slider with ticks and labels</p>
+    <div class=\\"slider-container\\" style=\\"height: 500px; width: 50px\\">
+      <div class=\\"fd-slider fd-slider--lg fd-slider--vertical\\">
+        <div class=\\"fd-slider__inner\\">
+          <div class=\\"fd-slider__handle\\" tabindex=\\"0\\" role=\\"slider\\" aria-label=\\"slider with ticks and labels\\" aria-valuemin=\\"1\\" aria-valuemax=\\"100\\" aria-valuenow=\\"50\\" style=\\"bottom: 50%;\\"></div>
+          <div class=\\"fd-slider__track\\">
+              <div class=\\"fd-slider__track-range\\" style=\\"height: 50%;\\"></div>
+          </div>
+          <div class=\\"fd-slider__tick-wrapper\\">
+              <div class=\\"fd-slider__ticks\\">
+                  <div class=\\"fd-slider__tick fd-slider__tick--in-range\\"></div>
+                  <div class=\\"fd-slider__tick fd-slider__tick--in-range\\"></div>
+                  <div class=\\"fd-slider__tick fd-slider__tick--in-range\\"></div>
+                  <div class=\\"fd-slider__tick fd-slider__tick--in-range\\"></div>
+                  <div class=\\"fd-slider__tick fd-slider__tick--in-range\\"></div>
+                  <div class=\\"fd-slider__tick fd-slider__tick--in-range\\"></div>
+                  <div class=\\"fd-slider__tick\\"></div>
+                  <div class=\\"fd-slider__tick\\"></div>
+                  <div class=\\"fd-slider__tick\\"></div>
+                  <div class=\\"fd-slider__tick\\"></div>
+                  <div class=\\"fd-slider__tick\\"></div>
+              </div>
+              <div class=\\"fd-slider__labels\\">
+                  <div class=\\"fd-slider__label\\">0</div>
+                  <div class=\\"fd-slider__label\\">10</div>
+                  <div class=\\"fd-slider__label\\">20</div>
+                  <div class=\\"fd-slider__label\\">30</div>
+                  <div class=\\"fd-slider__label\\">40</div>
+                  <div class=\\"fd-slider__label\\">50</div>
+                  <div class=\\"fd-slider__label\\">60</div>
+                  <div class=\\"fd-slider__label\\">70</div>
+                  <div class=\\"fd-slider__label\\">80</div>
+                  <div class=\\"fd-slider__label\\">90</div>
+                  <div class=\\"fd-slider__label\\">100</div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div>
+    <p>Range slider</p>
+    <div class=\\"slider-container slider-container--range\\" style=\\"height: 500px; width: 50px\\">
+        <div class=\\"fd-slider fd-slider--range fd-slider--vertical\\">
+            <div class=\\"fd-slider__inner\\">
+                <div class=\\"fd-slider__track\\">
+                  <div class=\\"fd-slider__track-range\\" style=\\"height: 40%; bottom: 40%\\">
+                    <div class=\\"fd-slider__track-focus-range\\" tabindex=\\"0\\"></div>
+                  </div>
+                </div>
+                <div class=\\"fd-slider__handle\\" tabindex=\\"0\\" role=\\"slider\\" aria-label=\\"range slider left\\" aria-valuemin=\\"1\\" aria-valuemax=\\"80\\" aria-valuenow=\\"40\\" style=\\"bottom: 40%;\\"></div>
+                <div class=\\"fd-slider__handle\\" tabindex=\\"0\\" role=\\"slider\\" aria-label=\\"range slider right\\" aria-valuemin=\\"40\\" aria-valuemax=\\"100\\" aria-valuenow=\\"80\\" style=\\"bottom: 80%;\\"></div>
+            </div>
+        </div>
+    </div>
+  </div>
 </div>
 "
 `;
@@ -28218,6 +28456,7 @@ exports[`Check stories > Components/StepInput > Story Primary > Should match sna
     <i class=\\"sap-icon--add\\"></i>
   </button>
 </div>
+<br />
 <label class=\\"fd-form-label\\" for=\\"step-3-focused\\">Focused Step Input</label><br />
 <div class=\\"fd-step-input is-focus\\">
   <button aria-label=\\"Step down\\" class=\\"
@@ -30589,7 +30828,55 @@ exports[`Check stories > Components/Table > Story TreeRowsTable > Should match s
             </tr>
             <tr class=\\"fd-table__row fd-table__row--hoverable fd-table__row--activable\\">
                 <td class=\\"fd-table__cell fd-table__cell fd-table__cell--expand fd-table__cell--focusable\\" data-nesting-level=\\"3\\" tabindex=\\"0\\">
-                    <span class=\\"fd-table__expand fd-table__expand\\"></span><span class=\\"fd-table__text--no-wrap\\">Tree row, level 3, collapsed</span>
+                    <span class=\\"fd-table__expand fd-table__expand fd-table__expand--open\\"></span><span class=\\"fd-table__text--no-wrap\\">Tree row, level 3, collapsed</span>
+                </td>
+                <td class=\\"fd-table__cell\\">First Name</td>
+                <td class=\\"fd-table__cell\\">Last Name</td>
+                <td class=\\"fd-table__cell\\">01/26/17</td>
+            </tr>
+            <tr class=\\"fd-table__row\\">
+                <td class=\\"fd-table__cell fd-table__cell\\" data-nesting-level=\\"4\\">
+                    Regular row, level 4
+                </td>
+                <td class=\\"fd-table__cell\\">First Name</td>
+                <td class=\\"fd-table__cell\\">Last Name</td>
+                <td class=\\"fd-table__cell\\">01/26/17</td>
+            </tr>
+            <tr class=\\"fd-table__row fd-table__row--hoverable fd-table__row--activable\\">
+                <td class=\\"fd-table__cell fd-table__cell fd-table__cell--expand fd-table__cell--focusable\\" data-nesting-level=\\"4\\" tabindex=\\"0\\">
+                    <span class=\\"fd-table__expand fd-table__expand fd-table__expand--open\\"></span><span class=\\"fd-table__text--no-wrap\\">Tree row, level 4, collapsed</span>
+                </td>
+                <td class=\\"fd-table__cell\\">First Name</td>
+                <td class=\\"fd-table__cell\\">Last Name</td>
+                <td class=\\"fd-table__cell\\">01/26/17</td>
+            </tr>
+            <tr class=\\"fd-table__row\\">
+                <td class=\\"fd-table__cell fd-table__cell\\" data-nesting-level=\\"5\\">
+                    Regular row, level 5
+                </td>
+                <td class=\\"fd-table__cell\\">First Name</td>
+                <td class=\\"fd-table__cell\\">Last Name</td>
+                <td class=\\"fd-table__cell\\">01/26/17</td>
+            </tr>
+            <tr class=\\"fd-table__row fd-table__row--hoverable fd-table__row--activable\\">
+                <td class=\\"fd-table__cell fd-table__cell fd-table__cell--expand fd-table__cell--focusable\\" data-nesting-level=\\"5\\" tabindex=\\"0\\">
+                    <span class=\\"fd-table__expand fd-table__expand fd-table__expand--open\\"></span><span class=\\"fd-table__text--no-wrap\\">Tree row, level 5, collapsed</span>
+                </td>
+                <td class=\\"fd-table__cell\\">First Name</td>
+                <td class=\\"fd-table__cell\\">Last Name</td>
+                <td class=\\"fd-table__cell\\">01/26/17</td>
+            </tr>
+            <tr class=\\"fd-table__row\\">
+                <td class=\\"fd-table__cell fd-table__cell\\" data-nesting-level=\\"6\\">
+                    Regular row, level 6
+                </td>
+                <td class=\\"fd-table__cell\\">First Name</td>
+                <td class=\\"fd-table__cell\\">Last Name</td>
+                <td class=\\"fd-table__cell\\">01/26/17</td>
+            </tr>
+            <tr class=\\"fd-table__row fd-table__row--hoverable fd-table__row--activable\\">
+                <td class=\\"fd-table__cell fd-table__cell fd-table__cell--expand fd-table__cell--focusable\\" data-nesting-level=\\"6\\" tabindex=\\"0\\">
+                    <span class=\\"fd-table__expand fd-table__expand\\"></span><span class=\\"fd-table__text--no-wrap\\">Tree row, level 6, collapsed</span>
                 </td>
                 <td class=\\"fd-table__cell\\">First Name</td>
                 <td class=\\"fd-table__cell\\">Last Name</td>
@@ -34393,53 +34680,53 @@ exports[`Check stories > Components/Tool Header > Story ResponsivePaddings > Sho
 
 exports[`Check stories > Components/Toolbar > Story Alignment > Should match snapshot 1`] = `
 "<h3>Left and right-aligned</h3>
-<div class=\\"fd-toolbar\\">
-    <button class=\\"fd-button fd-button--compact fd-button--positive\\">Accept</button>
+<div class=\\"fd-toolbar fd-toolbar--compact\\">
+    <button class=\\"fd-button fd-button--positive\\">Accept</button>
     <span class=\\"fd-toolbar__spacer\\"></span>
-    <button class=\\"fd-button fd-button--compact fd-button--reject\\">Reject</button>
+    <button class=\\"fd-button fd-button--reject\\">Reject</button>
 </div>
 <h3>Left-aligned</h3>
-<div class=\\"fd-toolbar\\">
-    <button class=\\"fd-button fd-button--compact fd-button--positive\\">Accept</button>
-    <button class=\\"fd-button fd-button--compact fd-button--reject\\">Reject</button>
+<div class=\\"fd-toolbar fd-toolbar--compact\\">
+    <button class=\\"fd-button fd-button--positive\\">Accept</button>
+    <button class=\\"fd-button fd-button--reject\\">Reject</button>
 </div>
 <h3>Centered</h3>
-<div class=\\"fd-toolbar\\">
+<div class=\\"fd-toolbar fd-toolbar--compact\\">
     <span class=\\"fd-toolbar__spacer\\"></span>
-    <button class=\\"fd-button fd-button--compact\\">Centered</button>
+    <button class=\\"fd-button\\">Centered</button>
     <span class=\\"fd-toolbar__spacer\\"></span>
 </div>
 <h3>Right-aligned</h3>
-<div class=\\"fd-toolbar\\">
+<div class=\\"fd-toolbar fd-toolbar--compact\\">
     <span class=\\"fd-toolbar__spacer\\"></span>
-    <button class=\\"fd-button fd-button--compact\\">Right-aligned</button>
+    <button class=\\"fd-button\\">Right-aligned</button>
 </div>
 <h3>Left, center, and right-aligned</h3>
-<div class=\\"fd-toolbar\\">
-    <button class=\\"fd-button fd-button--compact\\">Left-aligned</button>
+<div class=\\"fd-toolbar fd-toolbar--compact\\">
+    <button class=\\"fd-button\\">Left-aligned</button>
     <span class=\\"fd-toolbar__spacer\\"></span>
-    <button class=\\"fd-button fd-button--compact\\">Centered</button>
+    <button class=\\"fd-button\\">Centered</button>
     <span class=\\"fd-toolbar__spacer\\"></span>
-    <button class=\\"fd-button fd-button--compact\\">Right-aligned</button>
+    <button class=\\"fd-button\\">Right-aligned</button>
 </div>
 <h3>Spacers</h3>
-<div class=\\"fd-toolbar\\">
-    <button class=\\"fd-button fd-button--compact\\">Left-aligned</button>
+<div class=\\"fd-toolbar fd-toolbar--compact\\">
+    <button class=\\"fd-button\\">Left-aligned</button>
     <span class=\\"fd-toolbar__spacer\\"></span>
-    <button class=\\"fd-button fd-button--compact\\">Inside</button>
+    <button class=\\"fd-button\\">Inside</button>
     <span class=\\"fd-toolbar__spacer\\"></span>
-    <button class=\\"fd-button fd-button--compact\\">Inside</button>
+    <button class=\\"fd-button\\">Inside</button>
     <span class=\\"fd-toolbar__spacer\\"></span>
-    <button class=\\"fd-button fd-button--compact\\">Right-aligned</button>
+    <button class=\\"fd-button\\">Right-aligned</button>
 </div>
 <h3>Spacers with fixed width</h3>
-<div class=\\"fd-toolbar\\">
-    <button class=\\"fd-button fd-button--compact fd-button--transparent\\">Accept</button>
-    <button class=\\"fd-button fd-button--compact fd-button--transparent\\">Reject</button>
+<div class=\\"fd-toolbar fd-toolbar--compact\\">
+    <button class=\\"fd-button fd-button--transparent\\">Accept</button>
+    <button class=\\"fd-button fd-button--transparent\\">Reject</button>
     <span class=\\"fd-toolbar__spacer fd-toolbar__spacer--fixed\\" style=\\"width:50px;\\"></span>
-    <button class=\\"fd-button fd-button--compact\\">Edit</button>
+    <button class=\\"fd-button\\">Edit</button>
     <span class=\\"fd-toolbar__spacer fd-toolbar__spacer--fixed\\" style=\\"width:150px;\\"></span>
-    <button class=\\"fd-button fd-button--compact fd-button--transparent\\">Delete</button>
+    <button class=\\"fd-button fd-button--transparent\\">Delete</button>
 </div>
 "
 `;
@@ -34483,17 +34770,17 @@ exports[`Check stories > Components/Toolbar > Story Overflow > Should match snap
 </div>
 <div style=\\"height:300px\\">
 <h3>Compact example</h3>
-    <div class=\\"fd-toolbar\\">
+    <div class=\\"fd-toolbar fd-toolbar--compact\\">
         <span>Products (34)</span>
-        <button class=\\"fd-button fd-button--compact fd-button--transparent\\">Create</button>
+        <button class=\\"fd-button fd-button--transparent\\">Create</button>
         <span class=\\"fd-toolbar__spacer \\"> </span>
-        <button class=\\"fd-button fd-button--compact fd-button--transparent\\">Save</button>
-        <button class=\\"fd-button fd-button--compact fd-button--transparent\\">Copy</button>
+        <button class=\\"fd-button fd-button--transparent\\">Save</button>
+        <button class=\\"fd-button fd-button--transparent\\">Copy</button>
         <span class=\\"fd-toolbar__separator\\"></span>
         <div class=\\"fd-popover\\">
             <div class=\\"fd-popover__control\\">
                 <button
-                class=\\"fd-button fd-button--compact fd-button--transparent\\"
+                class=\\"fd-button fd-button--transparent\\"
                 aria-controls=\\"mw0daw8d7h\\"
                 aria-haspopup=\\"true\\"
                 aria-expanded=\\"true\\"
@@ -34508,14 +34795,14 @@ exports[`Check stories > Components/Toolbar > Story Overflow > Should match snap
                 id=\\"mw0daw8d7h\\">
                 <div class=\\"fd-toolbar__overflow\\">
                     <label class=\\"fd-label fd-toolbar__overflow-label\\">Label</label>
-                    <button class=\\"fd-button fd-button--compact fd-button--transparent fd-toolbar__overflow-button\\">Edit</button>
+                    <button class=\\"fd-button fd-button--transparent fd-toolbar__overflow-button\\">Edit</button>
                     <span class=\\"fd-toolbar__separator\\"></span>
                     <label class=\\"fd-form-label fd-toolbar__overflow-form-label fd-toolbar__overflow-form-label--text\\">Form label</label>
-                    <button class=\\"fd-button fd-button--compact fd-button--transparent fd-toolbar__overflow-button\\">Delete</button>
+                    <button class=\\"fd-button fd-button--transparent fd-toolbar__overflow-button\\">Delete</button>
                     <span class=\\"fd-toolbar__separator\\"></span>
-                    <button class=\\"fd-button fd-button--compact fd-button--transparent fd-toolbar__overflow-button\\">Assign</button>
-                    <button class=\\"fd-button fd-button--compact fd-button--transparent fd-toolbar__overflow-button\\">Exit</button>
-                    <button class=\\"fd-button fd-button--compact fd-button--transparent fd-button--menu fd-toolbar__overflow-button fd-toolbar__overflow-button--menu\\">
+                    <button class=\\"fd-button fd-button--transparent fd-toolbar__overflow-button\\">Assign</button>
+                    <button class=\\"fd-button fd-button--transparent fd-toolbar__overflow-button\\">Exit</button>
+                    <button class=\\"fd-button fd-button--transparent fd-button--menu fd-toolbar__overflow-button fd-toolbar__overflow-button--menu\\">
                         <span class=\\"fd-button__text\\">Menu Button</span>
                         <i class=\\"sap-icon--slim-arrow-down\\"></i>
                     </button>
@@ -34559,14 +34846,14 @@ exports[`Check stories > Components/Toolbar > Story Separator > Should match sna
 <div class=\\"fd-toolbar fd-toolbar--solid fd-toolbar--cozy\\">
     <span class=\\"fd-toolbar__spacer\\"></span>
     <span class=\\"fd-toolbar__separator\\"></span>
-    <button class=\\"fd-button fd-button--compact fd-button--transparent\\" aria-label=\\"Survey\\">
+    <button class=\\"fd-button fd-button--transparent\\" aria-label=\\"Survey\\">
         <i class=\\"sap-icon--survey\\"></i>
     </button>
     <span class=\\"fd-toolbar__separator\\"></span>
-    <button class=\\"fd-button fd-button--compact fd-button--transparent\\" aria-label=\\"Pool\\">
+    <button class=\\"fd-button fd-button--transparent\\" aria-label=\\"Pool\\">
         <i class=\\"sap-icon--pool\\"></i>
     </button>
-    <button class=\\"fd-button fd-button--compact fd-button--transparent\\" aria-label=\\"Chart\\">
+    <button class=\\"fd-button fd-button--transparent\\" aria-label=\\"Chart\\">
         <i class=\\"sap-icon--pie-chart\\"></i>
     </button>
 </div>
@@ -34576,12 +34863,12 @@ exports[`Check stories > Components/Toolbar > Story Separator > Should match sna
 exports[`Check stories > Components/Toolbar > Story Types > Should match snapshot 1`] = `
 "<div style=\\"padding: 1rem\\">
     <h3>Solid</h3>
-    <div class=\\"fd-toolbar fd-toolbar--solid\\">
+    <div class=\\"fd-toolbar fd-toolbar--solid fd-toolbar--compact\\">
         <span>Products (23)</span>
-        <button class=\\"fd-button fd-button--compact fd-button--transparent\\">Create</button>
+        <button class=\\"fd-button fd-button--transparent\\">Create</button>
         <span class=\\"fd-toolbar__spacer \\"> </span>
-        <button class=\\"fd-button fd-button--compact fd-button--transparent\\">Edit</button>
-        <button class=\\"fd-button fd-button--compact fd-button--transparent\\">Delete</button>
+        <button class=\\"fd-button fd-button--transparent\\">Edit</button>
+        <button class=\\"fd-button fd-button--transparent\\">Delete</button>
         <span class=\\"fd-toolbar__separator\\"></span>
         <button class=\\"fd-button fd-button--transparent\\" aria-label=\\"Survey\\">
             <i class=\\"sap-icon--survey\\"></i>
@@ -34594,12 +34881,12 @@ exports[`Check stories > Components/Toolbar > Story Types > Should match snapsho
         </button>
     </div>
     <h3>Transparent</h3>
-    <div class=\\"fd-toolbar fd-toolbar--clear fd-toolbar--transparent\\">
-        <button class=\\"fd-button fd-button--compact fd-button--transparent\\">Create</button>
-        <button class=\\"fd-button fd-button--compact fd-button--transparent\\">Save</button>
+    <div class=\\"fd-toolbar fd-toolbar--clear fd-toolbar--transparent fd-toolbar--compact\\">
+        <button class=\\"fd-button fd-button--transparent\\">Create</button>
+        <button class=\\"fd-button fd-button--transparent\\">Save</button>
         <span class=\\"fd-toolbar__spacer \\"> </span>
-        <button class=\\"fd-button fd-button--compact fd-button--transparent\\">Edit</button>
-        <button class=\\"fd-button fd-button--compact fd-button--transparent\\">Delete</button>
+        <button class=\\"fd-button fd-button--transparent\\">Edit</button>
+        <button class=\\"fd-button fd-button--transparent\\">Delete</button>
         <span class=\\"fd-toolbar__separator\\"></span>
         <button class=\\"fd-button fd-button--transparent\\" aria-label=\\"Survey\\">
             <i class=\\"sap-icon--survey\\"></i>
@@ -34612,19 +34899,19 @@ exports[`Check stories > Components/Toolbar > Story Types > Should match snapsho
         </button>
     </div>
     <h3>Auto</h3>
-    <div class=\\"fd-toolbar fd-toolbar--clear fd-toolbar--auto\\">
-        <button class=\\"fd-button fd-button--compact fd-button--transparent\\">Create</button>
+    <div class=\\"fd-toolbar fd-toolbar--clear fd-toolbar--auto fd-toolbar--compact\\">
+        <button class=\\"fd-button fd-button--transparent\\">Create</button>
         <span class=\\"fd-toolbar__spacer \\"> </span>
-        <button class=\\"fd-button fd-button--compact fd-button--transparent\\">Edit</button>
-        <button class=\\"fd-button fd-button--compact fd-button--transparent\\">Delete</button>
+        <button class=\\"fd-button fd-button--transparent\\">Edit</button>
+        <button class=\\"fd-button fd-button--transparent\\">Delete</button>
         <span class=\\"fd-toolbar__separator\\"></span>
-        <button class=\\"fd-button fd-button--compact fd-button--transparent\\" aria-label=\\"Survey\\">
+        <button class=\\"fd-button fd-button--transparent\\" aria-label=\\"Survey\\">
             <i class=\\"sap-icon--survey\\"></i>
         </button>
-        <button class=\\"fd-button fd-button--compact fd-button--transparent\\" aria-label=\\"Pool\\">
+        <button class=\\"fd-button fd-button--transparent\\" aria-label=\\"Pool\\">
             <i class=\\"sap-icon--pool\\"></i>
         </button>
-        <button class=\\"fd-button fd-button--compact fd-button--transparent\\" aria-label=\\"Chart\\">
+        <button class=\\"fd-button fd-button--transparent\\" aria-label=\\"Chart\\">
             <i class=\\"sap-icon--pie-chart\\"></i>
         </button>
     </div>
@@ -34633,11 +34920,11 @@ exports[`Check stories > Components/Toolbar > Story Types > Should match snapsho
     <br>
     <div class=\\"fd-toolbar fd-toolbar--info fd-toolbar--active\\">3 item selected</div>
     <h3>Title</h3>
-    <div class=\\"fd-toolbar fd-toolbar--title\\">
+    <div class=\\"fd-toolbar fd-toolbar--title fd-toolbar--compact\\">
         <h4 class=\\"fd-title fd-title--h4 fd-toolbar__title\\">Products (104)</h4>
         <span class=\\"fd-toolbar__spacer\\"></span>
-        <button class=\\"fd-button fd-button--compact fd-button--transparent\\">Save</button>
-        <button class=\\"fd-button fd-button--compact fd-button--transparent\\">Delete</button>
+        <button class=\\"fd-button fd-button--transparent\\">Save</button>
+        <button class=\\"fd-button fd-button--transparent\\">Delete</button>
     </div>
 </div>
 "
