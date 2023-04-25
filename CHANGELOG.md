@@ -1,3 +1,12 @@
+# [0.29.0-rc.14](https://github.com/SAP/fundamental-styles/compare/v0.29.0-rc.13...v0.29.0-rc.14) (2023-04-25)
+
+
+### Bug Fixes
+
+* **styles:** correct table indentation ([#4478](https://github.com/SAP/fundamental-styles/issues/4478)) ([9528eb5](https://github.com/SAP/fundamental-styles/commit/9528eb53161e3c61b91fac676212feb107e97ef8))
+
+
+
 # [0.29.0-rc.13](https://github.com/SAP/fundamental-styles/compare/v0.29.0-rc.12...v0.29.0-rc.13) (2023-04-24)
 
 
