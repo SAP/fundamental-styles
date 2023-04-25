@@ -18,15 +18,10 @@ $block: #{$fd-namespace}-radio;
     }
   }
 
-  @mixin fd-radio-state($background-color, $text-color, $border-color, $border-size, $border-type, $hover-shadow) {
-    @include fd-radio-label() {
-      --fdRadio_Background_Color: #{$background-color};
-      --fdRadio_Hover_Background: var(--fdRadio_Hover_Background);
-      --fdRadio_Border_Width: #{$border-size};
-      --fdRadio_Border: #{$border-size $border-type $border-color};
-      --fdRadio_Hover_Shadow: #{$hover-shadow};
-      --fdRadio_Selected_Color: #{$border-color};
-      --fdRadio_Hover_Border_Color: #{$border-color};
+  @mixin fd-radio-label-states() {
+    &:checked + .#{$block}__label::after,
+    & + .#{$block}__label::before {
+      @content;
     }
   }
 
@@ -46,13 +41,12 @@ $block: #{$fd-namespace}-radio;
     color: var(--sapField_TextColor);
 
     &::before {
-      @include fd-form-radio-icon-base(var(--fdRadio_Inner_Circle_Diameter)) {
-        background-color: var(--fdRadio_Background_Color);
-        margin-right: var(--fdRadio_Outer_Circle_Padding);
-        color: var(--fdRadio_Selected_Color);
-        border: var(--fdRadio_Border);
-        border-radius: 50%;
-      }
+      @include fd-form-radio-icon-base(var(--fdRadio_Inner_Circle_Diameter));
+
+      border-radius: 50%;
+      margin-right: var(--fdRadio_Outer_Circle_Padding);
+      background-color: var(--fdRadio_Background_Color);
+      border: var(--fdRadio_Inner_Border_Width) var(--fdRadio_Inner_Border_Style) var(--fdRadio_Inner_Border_Color);
     }
 
     &::after {
@@ -68,10 +62,13 @@ $block: #{$fd-namespace}-radio;
 
     @include fd-hover() {
       &::before {
-        background-color: var(--fdRadio_Hover_Background);
-        border-width: var(--fdRadio_Border_Width);
-        border-color: var(--fdRadio_Hover_Border_Color);
-        box-shadow: var(--fdRadio_Hover_Box_Shadow);
+        background-color: var(--fdRadio_Hover_Background_Color);
+
+        --fdRadio_Inner_Border_Width: var(--fdRadio_Inner_Border_Width_Default_Hover);
+        --fdRadio_Inner_Border_Style: var(--fdRadio_Inner_Border_Style_Default_Hover);
+        --fdRadio_Inner_Border_Color: var(--fdRadio_Inner_Border_Color_Default_Hover);
+        --fdRadio_Active_Dot_Color: var(--fdRadio_Active_Dot_Color_Default_Hover);
+        --fdRadio_Hover_Background_Color: var(--fdRadio_Background_Color_Default_Hover);
       }
     }
 
@@ -102,76 +99,63 @@ $block: #{$fd-namespace}-radio;
     content: "";
     position: absolute;
     border-radius: 50%;
-    background: var(--fdRadio_Selected_Color);
+    background: var(--fdRadio_Active_Dot_Color);
   }
 
   // states
-  &.is-warning,
-  &.is-alert {
-    @include fd-radio-state(
-      var(--sapField_WarningBackground),
-      var(--sapField_TextColor),
-      var(--sapField_WarningColor),
-      var(--sapField_WarningBorderWidth),
-      var(--fdRadio_Warning_Error_Information_Border_Style),
-      var(--fdRadio_Warning_Hover_Shadow)
-    );
+  &.is-error {
+    @include fd-radio-label-states() {
+      --fdRadio_Background_Color: var(--fdRadio_Background_Color_Error);
+      --fdRadio_Inner_Border_Width: var(--fdRadio_Inner_Border_Width_Error);
+      --fdRadio_Inner_Border_Style: var(--fdRadio_Inner_Border_Style_Error);
+      --fdRadio_Inner_Border_Color: var(--fdRadio_Inner_Border_Color_Error);
+      --fdRadio_Active_Dot_Color: var(--fdRadio_Active_Dot_Color_Error);
+      --fdRadio_Hover_Background_Color: var(--fdRadio_Background_Color_Error_Hover);
+    }
   }
 
-  &.is-error {
-    @include fd-radio-state(
-      var(--sapField_InvalidBackground),
-      var(--sapField_InvalidColor),
-      var(--sapField_InvalidColor),
-      var(--sapField_InvalidBorderWidth),
-      var(--fdRadio_Warning_Error_Information_Border_Style),
-      var(--fdRadio_Error_Hover_Shadow)
-    );
+  &.is-warning,
+  &.is-alert {
+    @include fd-radio-label-states() {
+      --fdRadio_Background_Color: var(--fdRadio_Background_Color_Warning);
+      --fdRadio_Inner_Border_Width: var(--fdRadio_Inner_Border_Width_Warning);
+      --fdRadio_Inner_Border_Style: var(--fdRadio_Inner_Border_Style_Warning);
+      --fdRadio_Inner_Border_Color: var(--fdRadio_Inner_Border_Color_Warning);
+      --fdRadio_Active_Dot_Color: var(--fdRadio_Active_Dot_Color_Warning);
+      --fdRadio_Hover_Background_Color: var(--fdRadio_Background_Color_Warning_Hover);
+    }
   }
 
   &.is-success {
-    @include fd-radio-state(
-      var(--sapField_SuccessBackground),
-      var(--sapField_SuccessColor),
-      var(--sapField_SuccessColor),
-      var(--sapField_BorderWidth),
-      solid,
-      var(--fdRadio_Success_Hover_Shadow)
-    );
+    @include fd-radio-label-states() {
+      --fdRadio_Background_Color: var(--fdRadio_Background_Color_Success);
+      --fdRadio_Inner_Border_Width: var(--fdRadio_Inner_Border_Width_Success);
+      --fdRadio_Inner_Border_Style: var(--fdRadio_Inner_Border_Style_Success);
+      --fdRadio_Inner_Border_Color: var(--fdRadio_Inner_Border_Color_Success);
+      --fdRadio_Active_Dot_Color: var(--fdRadio_Active_Dot_Color_Success);
+      --fdRadio_Hover_Background_Color: var(--fdRadio_Background_Color_Success_Hover);
+    }
   }
 
   &.is-information {
-    @include fd-radio-state(
-      var(--sapField_InformationBackground),
-      var(--sapField_InformationColor),
-      var(--sapField_InformationColor),
-      var(--sapField_InformationBorderWidth),
-      var(--fdRadio_Warning_Error_Information_Border_Style),
-      var(--fdRadio_Information_Hover_Shadow)
-    );
+    @include fd-radio-label-states() {
+      --fdRadio_Background_Color: var(--fdRadio_Background_Color_Information);
+      --fdRadio_Inner_Border_Width: var(--fdRadio_Inner_Border_Width_Information);
+      --fdRadio_Inner_Border_Style: var(--fdRadio_Inner_Border_Style_Information);
+      --fdRadio_Inner_Border_Color: var(--fdRadio_Inner_Border_Color_Information);
+      --fdRadio_Active_Dot_Color: var(--fdRadio_Active_Dot_Color_Information);
+      --fdRadio_Hover_Background_Color: var(--fdRadio_Background_Color_Information_Hover);
+    }
   }
 
   @include fd-readonly() {
-    @include fd-radio-state(
-      var(--sapField_ReadOnly_Background),
-      var(--sapContent_NonInteractiveIconColor),
-      var(--sapField_ReadOnly_BorderColor),
-      var(--fdRadio_Readonly_Border_Width),
-      var(--fdRadio_Readonly_Border_Type),
-      none
-    );
-  }
-
-  &[readonly],
-  &.is-readonly {
-    @include fd-radio-state(
-      var(--sapField_ReadOnly_Background),
-      var(--sapContent_NonInteractiveIconColor),
-      var(--sapField_ReadOnly_BorderColor),
-      var(--fdRadio_Readonly_Border_Width),
-      var(--fdRadio_Readonly_Border_Type),
-      none
-    );
+    @include fd-radio-label-states() {
+      --fdRadio_Background_Color: var(--fdRadio_Background_Color_ReadOnly);
+      --fdRadio_Inner_Border_Width: var(--fdRadio_Inner_Border_Width_ReadOnly);
+      --fdRadio_Inner_Border_Style: var(--fdRadio_Inner_Border_Style_ReadOnly);
+      --fdRadio_Inner_Border_Color: var(--fdRadio_Inner_Border_Color_ReadOnly);
+      --fdRadio_Active_Dot_Color: var(--fdRadio_Active_Dot_Color_ReadOnly);
+    }
   }
 
   @include fd-focus() {

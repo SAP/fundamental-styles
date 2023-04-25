@@ -66,11 +66,11 @@ $block: #{$fd-namespace}-checkbox;
     &::before {
       @include fd-form-radio-icon-base(var(--fdCheckbox_Dimensions)) {
         font-family: "SAP-icons";
-        background-color: var(--fdCheckbox_Background_Color);
-        color: var(--fdCheckbox_Selected_Color);
-        border: var(--fdCheckbox_Border);
-        border-radius: var(--sapField_BorderCornerRadius);
       }
+
+      background-color: var(--fdCheckbox_Background_Color);
+      border: var(--fdCheckbox_Border);
+      border-radius: var(--sapField_BorderCornerRadius);
     }
 
     &::after {
