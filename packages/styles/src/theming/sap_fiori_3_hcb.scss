@@ -91,19 +91,6 @@
   --fdAvatarGroup_Focus_Outline_Radius: 0;
   --fdAvatarGroup_Focus_Outline_Offset: -0.125rem;
 
-  /* Checkbox */
-  --fdCheckbox_Hover_Background: var(--sapSelectedColor);
-  --fdCheckbox_Hover_Shadow: none;
-  --fdCheckbox_Selected_Color: var(--sapContent_IconColor);
-  --fdCheckbox_Error_State_Shadow: none;
-  --fdCheckbox_Warning_State_Shadow: none;
-  --fdCheckbox_Success_State_Shadow: none;
-  --fdCheckbox_Information_State_Shadow: none;
-  --fdCheckbox_State_Hover_Background: var(--sapSelectedColor);
-  --fdCheckbox_Readonly_Border_Width: var(--sapField_BorderWidth);
-  --fdCheckbox_Readonly_Border_Type: solid;
-  --fdCheckbox_Warning_Error_Information_Border_Style: dashed;
-
   /* Dynamic Page Layout */
   --fdDynamicPage_Hover_Border_Bottom: solid 0.0625rem var(--sapObjectHeader_Hover_Background);
   --fdDynamicPage_Title_Header_Transparent_Background: var(--sapObjectHeader_Background);
