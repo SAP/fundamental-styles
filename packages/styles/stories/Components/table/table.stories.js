@@ -2453,7 +2453,55 @@ export const TreeRowsTable = () => `<table class="fd-table fd-table--tree">
             </tr>
             <tr class="fd-table__row fd-table__row--hoverable fd-table__row--activable">
                 <td class="fd-table__cell fd-table__cell fd-table__cell--expand fd-table__cell--focusable" data-nesting-level="3" tabindex="0">
-                    <span class="fd-table__expand fd-table__expand"></span><span class="fd-table__text--no-wrap">Tree row, level 3, collapsed</span>
+                    <span class="fd-table__expand fd-table__expand fd-table__expand--open"></span><span class="fd-table__text--no-wrap">Tree row, level 3, collapsed</span>
+                </td>
+                <td class="fd-table__cell">First Name</td>
+                <td class="fd-table__cell">Last Name</td>
+                <td class="fd-table__cell">01/26/17</td>
+            </tr>
+            <tr class="fd-table__row">
+                <td class="fd-table__cell fd-table__cell" data-nesting-level="4">
+                    Regular row, level 4
+                </td>
+                <td class="fd-table__cell">First Name</td>
+                <td class="fd-table__cell">Last Name</td>
+                <td class="fd-table__cell">01/26/17</td>
+            </tr>
+            <tr class="fd-table__row fd-table__row--hoverable fd-table__row--activable">
+                <td class="fd-table__cell fd-table__cell fd-table__cell--expand fd-table__cell--focusable" data-nesting-level="4" tabindex="0">
+                    <span class="fd-table__expand fd-table__expand fd-table__expand--open"></span><span class="fd-table__text--no-wrap">Tree row, level 4, collapsed</span>
+                </td>
+                <td class="fd-table__cell">First Name</td>
+                <td class="fd-table__cell">Last Name</td>
+                <td class="fd-table__cell">01/26/17</td>
+            </tr>
+            <tr class="fd-table__row">
+                <td class="fd-table__cell fd-table__cell" data-nesting-level="5">
+                    Regular row, level 5
+                </td>
+                <td class="fd-table__cell">First Name</td>
+                <td class="fd-table__cell">Last Name</td>
+                <td class="fd-table__cell">01/26/17</td>
+            </tr>
+            <tr class="fd-table__row fd-table__row--hoverable fd-table__row--activable">
+                <td class="fd-table__cell fd-table__cell fd-table__cell--expand fd-table__cell--focusable" data-nesting-level="5" tabindex="0">
+                    <span class="fd-table__expand fd-table__expand fd-table__expand--open"></span><span class="fd-table__text--no-wrap">Tree row, level 5, collapsed</span>
+                </td>
+                <td class="fd-table__cell">First Name</td>
+                <td class="fd-table__cell">Last Name</td>
+                <td class="fd-table__cell">01/26/17</td>
+            </tr>
+            <tr class="fd-table__row">
+                <td class="fd-table__cell fd-table__cell" data-nesting-level="6">
+                    Regular row, level 6
+                </td>
+                <td class="fd-table__cell">First Name</td>
+                <td class="fd-table__cell">Last Name</td>
+                <td class="fd-table__cell">01/26/17</td>
+            </tr>
+            <tr class="fd-table__row fd-table__row--hoverable fd-table__row--activable">
+                <td class="fd-table__cell fd-table__cell fd-table__cell--expand fd-table__cell--focusable" data-nesting-level="6" tabindex="0">
+                    <span class="fd-table__expand fd-table__expand"></span><span class="fd-table__text--no-wrap">Tree row, level 6, collapsed</span>
                 </td>
                 <td class="fd-table__cell">First Name</td>
                 <td class="fd-table__cell">Last Name</td>
