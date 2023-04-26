@@ -74,13 +74,7 @@ export default {
                 if (bIsIntroduction) {
                     return 1;
                 }
-                if (a.name?.endsWith('Docs')) {
-                    return -1;
-                }
-                if (b.name?.endsWith('Docs')) {
-                    return 1;
-                }
-                return a.id.localeCompare(b.id, undefined, { numeric: true });
+                return a.title.localeCompare(b.title);
             },
             initialActive: 'docs'
         }
