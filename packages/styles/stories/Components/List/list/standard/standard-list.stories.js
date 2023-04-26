@@ -64,7 +64,7 @@ Standard.storyName = 'Default';
 
 Standard.parameters = {
     docs: {
-        iframeHeight: 445,
+        story: { iframeHeight: 445 },
         description: {
             story: `The default standard list dislays list items in the standard size, which is ideal for mobile. To display the standard list in compact mode (for desktop), add the \`fd-list--compact\` modifier class to the main element.
         `
@@ -91,7 +91,7 @@ export const Unread = () => `<h4>Unread Options</h4>
 
 Unread.parameters = {
     docs: {
-        iframeHeight: 445,
+        story: { iframeHeight: 445 },
         description: {
             story: `The \`fd-list__item--unread\` modifier will change the font weight to bold for easier legibility.
         `
@@ -121,7 +121,7 @@ export const Interactive = () => `<h4>Interactive Items</h4>
 
 Interactive.parameters = {
     docs: {
-        iframeHeight: 445,
+        story: { iframeHeight: 445 },
         description: {
             story: `
 The \`fd-list__item--interractive\` will force list item to handle hover and active states.
@@ -154,7 +154,7 @@ export const Navigation = () => `<ul class="fd-list fd-list--navigation" role="l
 
 Navigation.parameters = {
     docs: {
-        iframeHeight: 165,
+        story: { iframeHeight: 165 },
         description: {
             story: `
 Standard list items can contain navigation links. To add navigation, add the \`fd-list—navigation\` modifier class to the list and the \`fd-list__item--link\` modifier class to the list elements that contain links. All items should be navigable.
@@ -190,7 +190,7 @@ export const Buttons = () => `<ul class="fd-list" role="list">
 
 Buttons.parameters = {
     docs: {
-        iframeHeight: 165,
+        story: { iframeHeight: 165 },
         description: {
             story: `
 `
@@ -231,7 +231,7 @@ NavigationIndicator.storyName = 'Navigation indicators';
 
 NavigationIndicator.parameters = {
     docs: {
-        iframeHeight: 252,
+        story: { iframeHeight: 252 },
         description: {
             story: `
 If only a subset of the list items is navigable you should indicate them with an arrow icon. To display navigation indicators, add the \`fd-list--navigation-indication\` modifier class to the unordered list element. Do not show indicators if all items are navigable. In this case, use a standard list with navigation (in the example above).
@@ -310,7 +310,7 @@ ActionList.storyName = 'Action';
 
 ActionList.parameters = {
     docs: {
-        iframeHeight: 600,
+        story: { iframeHeight: 600 },
         description: {
             story: `
 Standard list items can display actions that users can choose from. To display actions, add the \`fd-list--action\` modifier class to the list elements.
@@ -343,7 +343,7 @@ SecondaryData.storyName = 'Secondary data';
 
 SecondaryData.parameters = {
     docs: {
-        iframeHeight: 210,
+        story: { iframeHeight: 210 },
         description: {
             story: `To display secondary data in standard list items, add the \`fd-list__secondary\` class within the list elements.
         `
@@ -375,7 +375,7 @@ export const ItemCounter = () => `<ul class="fd-list" role="list">
 
 ItemCounter.parameters = {
     docs: {
-        iframeHeight: 210,
+        story: { iframeHeight: 210 },
         description: {
             story: `The item counter is vertically aligned within the list item, to the right. The maximum number of digits is 5. In case of more digits, the formatting and the transformation is left to the applications. It's recommended to avoid combining item counter to other list variations and status texts.
         `
@@ -407,7 +407,7 @@ Icons.storyName = 'Icon';
 
 Icons.parameters = {
     docs: {
-        iframeHeight: 210,
+        story: { iframeHeight: 210 },
         description: {
             story: `To display an icon inside standard list items, add the \`fd-list__icon\` class along with the icon within the list elements. For example, \`fd-list__icon sap-icon—lightbulb\`.
         `
@@ -447,7 +447,7 @@ Groups.storyName = 'Group';
 
 Groups.parameters = {
     docs: {
-        iframeHeight: 385,
+        story: { iframeHeight: 385 },
         description: {
             story: `Standard list items can be displayed with headers, separating the items into groups. To add group headers, add the \`fd-list__group-header\` class to the list elements.
         `
@@ -476,7 +476,7 @@ export const Footer = () => `<ul class="fd-list" role="list">
 
 Footer.parameters = {
     docs: {
-        iframeHeight: 240,
+        story: { iframeHeight: 240 },
         description: {
             story: `The standard list can display a footer by adding a span element with an \`fd-list__footer\` class after the unordered list element.
         `
@@ -502,7 +502,7 @@ export const Borderless = () => `<ul class="fd-list fd-list--no-border" role="li
 
 Borderless.parameters = {
     docs: {
-        iframeHeight: 210,
+        story: { iframeHeight: 210 },
         description: {
             story: `To display a borderless standard list, add the \`fd-list--no-border\` modifier class to the main element.
         `
@@ -563,7 +563,7 @@ export const Selection = () => `<h4 id="XezW11">Standard Size</h4>
 
 Selection.parameters = {
     docs: {
-        iframeHeight: 370,
+        story: { iframeHeight: 370 },
         description: {
             story: `Standard list items can display checkboxes that users can select from. To display standard list items with selection, add the \`fd-list--selection\` modifier class to the main element. To create checkbox form items, add the \`fd-list__form-item\` class within each list element.
 `
@@ -597,7 +597,7 @@ export const Inactive = () => `<ul class="fd-list fd-list--navigation" role="lis
 
 Inactive.parameters = {
     docs: {
-        iframeHeight: 370,
+        story: { iframeHeight: 370 },
         description: {
             story: `Some list item can be made inactive, to make it non-clickable.
 `
@@ -649,7 +649,7 @@ Scroll.storyName = 'Infinite scroll';
 
 Scroll.parameters = {
     docs: {
-        iframeHeight: 380,
+        story: { iframeHeight: 380 },
         description: {
             story: `If height for list is fixed and there are more list otem to show, then we should be able to scroll to next list items.
 `

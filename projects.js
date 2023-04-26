@@ -1,4 +1,22 @@
-import { projects } from './workspace.json';
+import { snakeCase } from 'lodash/string';
+const workspaceProjects = {
+    styles: 'packages/styles',
+    ['common-css']: 'packages/common-css',
+    cx: 'packages/cx',
+    fn: 'packages/fn'
+};
+
+const dashCase = (text) => text ? snakeCase(text).replace(/_/g, '-') : undefined;
+
+const projects = [
+    'styles',
+    'common-css',
+    'cx',
+    'fn'
+].reduce((acc, next) => {
+    acc[next] = workspaceProjects[next];
+    return acc;
+}, {});
 const stylesThemes = {
     defaultTheme: 'sap_horizon',
     themes: [
@@ -69,6 +87,7 @@ export default Object.keys(projects).reduce((acc, projectName) => {
     };
     acc[projectName] = {
         value: projectName,
+        storiesSlug: dashCase(projectNames[projectName]),
         title: projectNames[projectName] || null,
         pathToPackage: `./${projects[projectName]}`,
         defaultTheme: themesConfig.defaultTheme,

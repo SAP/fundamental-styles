@@ -45,10 +45,10 @@ export const SingleLineLink = () => `
 
 SingleLineLink.parameters = {
     docs: {
-        iframeHeight: 100,
+        story: { iframeHeight: 100 },
         description: {
             story:
-            'The Page Footer contains Image/logo, And list of links in the footer. It is responsive to tablet and mobile screen sizes.'
+                'The Page Footer contains Image/logo, And list of links in the footer. It is responsive to tablet and mobile screen sizes.'
         }
     }
 };
@@ -79,10 +79,10 @@ export const MultiLineLink = () => `
 
 MultiLineLink.parameters = {
     docs: {
-        iframeHeight: 100,
+        story: { iframeHeight: 100 },
         description: {
             story:
-            'The Page Footer contains Image/logo, And list of links in the footer. To apply multiline link, add the `fd-page-footer__row` modifier class to the container element.'
+                'The Page Footer contains Image/logo, And list of links in the footer. To apply multiline link, add the `fd-page-footer__row` modifier class to the container element.'
         }
     }
 };
@@ -125,10 +125,10 @@ export const ImageAndIconLink = () => `
 
 ImageAndIconLink.parameters = {
     docs: {
-        iframeHeight: 100,
+        story: { iframeHeight: 100 },
         description: {
             story:
-            'Example of The Page Footer representing multiline link,and adding images in the code to represent the clickable images and multiline is achived by adding the `fd-page-footer__row` modifier class to the container element.'
+                'Example of The Page Footer representing multiline link,and adding images in the code to represent the clickable images and multiline is achived by adding the `fd-page-footer__row` modifier class to the container element.'
         }
     }
 };
@@ -222,10 +222,10 @@ export const FooterWithDiffrentSize = () => `
 
 FooterWithDiffrentSize.parameters = {
     docs: {
-        iframeHeight: 100,
+        story: { iframeHeight: 100 },
         description: {
             story:
-            'Example of The Page Footer representing multiline lin, add the `--xl` `--lg` `--md` `--sm` size modifier class to the container element.'
+                'Example of The Page Footer representing multiline lin, add the `--xl` `--lg` `--md` `--sm` size modifier class to the container element.'
         }
     }
 };

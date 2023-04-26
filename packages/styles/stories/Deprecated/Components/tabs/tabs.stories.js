@@ -87,7 +87,7 @@ export const Primary = () => `
 Primary.storyName = 'Default';
 Primary.parameters = {
     docs: {
-        iframeHeight: 300,
+        story: { iframeHeight: 300 },
         description: {
             story: `By default, tabs are displayed in a bar and are either inactive or active (highlighted in blue). The bar can also contain actions that apply to the whole page. The example below illustrates the tabs component in cozy mode with no horizontal padding.
         `
@@ -139,7 +139,7 @@ export const TabWithCounters = () => `
 TabWithCounters.storyName = 'Counters';
 TabWithCounters.parameters = {
     docs: {
-        iframeHeight: 300,
+        story: { iframeHeight: 300 },
         description: {
             story: `Tabs can be displayed with counters to indicate that there are a number of resources the user can or should access. To display counters, wrap the \`fd-tabs__count\` class in paragraph tags below the \`fd-tabs__link\` element.
 
@@ -190,7 +190,7 @@ export const NavTab = () => `
 NavTab.storyName = 'Navigable';
 NavTab.parameters = {
     docs: {
-        iframeHeight: 300,
+        story: { iframeHeight: 300 },
         description: {
             story: `Tabs can be navigable by applying the \`role=”navigation”\` attribute to the main element.
     `
@@ -243,7 +243,7 @@ export const IconOnly = () => `
 IconOnly.storyName = 'Icon';
 IconOnly.parameters = {
     docs: {
-        iframeHeight: 300,
+        story: { iframeHeight: 300 },
         description: {
             story: `Tabs can display icons instead of text with the \` fd-tabs__icon\` class (see **Icon** for a list of available icons). To display icon tabs without text, you will also need to add the \`fd-tabs--icon-only\` modifier class to the main element.
     `
@@ -295,7 +295,7 @@ export const CompactIconOnly = () => `
 CompactIconOnly.storyName = 'Icon (compact)';
 CompactIconOnly.parameters = {
     docs: {
-        iframeHeight: 300,
+        story: { iframeHeight: 300 },
         description: {
             story: `Tabs can be displayed with icons in compact mode. To display compact tabs, add the \`fd-tabs--compact\` modifier class to the main element. See example above on how to display icon tabs.
     `
@@ -358,7 +358,7 @@ export const ProcessMode = () => `
 ProcessMode.storyName = 'Process mode';
 ProcessMode.parameters = {
     docs: {
-        iframeHeight: 300,
+        story: { iframeHeight: 300 },
         description: {
             story: `Tabs can be displayed in subsequent steps, indicating to the user that there is a process to follow. To display tabs in process mode, add the \`fd-tabs--process\` modifier class to the main element.
     `
@@ -421,7 +421,7 @@ export const CompactProcessMode = () => `
 CompactProcessMode.storyName = 'Process mode (compact)';
 CompactProcessMode.parameters = {
     docs: {
-        iframeHeight: 300,
+        story: { iframeHeight: 300 },
         description: {
             story: `Tabs can be displayed in subsequent steps while in compact mode. To display compact tabs in process mode, add the \`fd-tabs--process\` and \`fd-tabs--compact\` modifier classes to the main element.
     `
@@ -488,7 +488,7 @@ export const FilterMode = () => `
 FilterMode.storyName = 'Filter mode';
 FilterMode.parameters = {
     docs: {
-        iframeHeight: 300,
+        story: { iframeHeight: 300 },
         description: {
             story: `Tabs can be displayed in filter mode, indicating to the user that a value has been filtered into separate tabs. To display tabs in filter mode, add the \`fd-tabs--filter\` modifier class to the main element.
     `
@@ -555,7 +555,7 @@ export const CompactFilterMode = () => `
 CompactFilterMode.storyName = 'Filter mode (compact)';
 CompactFilterMode.parameters = {
     docs: {
-        iframeHeight: 300,
+        story: { iframeHeight: 300 },
         description: {
             story: `Tabs can be displayed in compact mode while in filter mode. To display compact tabs in filter mode, add the \`fd-tabs--filter\` and \`fd-tabs--compact\` modifier classes to the main element.
     `
@@ -629,7 +629,7 @@ export const SemanticMode = () => `
 SemanticMode.storyName = 'Semantic mode';
 SemanticMode.parameters = {
     docs: {
-        iframeHeight: 300,
+        story: { iframeHeight: 300 },
         description: {
             story: `Tabs can be displayed with semantic colors to indicate a status. To display semantic tabs, add the following modifier classes to the \`fd-tabs__item\` elements:
 
@@ -717,7 +717,7 @@ export const SemanticFilterMode = () => `
 SemanticFilterMode.storyName = 'Semantic filter mode';
 SemanticFilterMode.parameters = {
     docs: {
-        iframeHeight: 300,
+        story: { iframeHeight: 300 },
         description: {
             story: `Tabs can be displayed in filter mode with semantic colors. As detailed in the previous examples, add the \`fd-tabs--filter\` modifier class to the main element and add the semantic modifier classes to the \`fd-tabs__item\` elements (see **semantic mode** example for modifier class names).
         `
@@ -791,7 +791,7 @@ export const SemanticInline = () => `
 SemanticInline.storyName = 'Semantic inline';
 SemanticInline.parameters = {
     docs: {
-        iframeHeight: 300,
+        story: { iframeHeight: 300 },
         description: {
             story: `Tabs can be displayed with inline text in semantic colors. To display inline text tabs, add the \`fd-tabs__tag\` class below the \`fd-tabs__link\` element.
         `

@@ -230,7 +230,7 @@ export const AsFormItem = () => `<div style="height:700px">
 
 AsFormItem.parameters = {
     docs: {
-        iframeHeight: 700,
+        story: { iframeHeight: 700 },
         description: {
             story: `
 Note that the popover body width is restricted to a max of 37.5rem to avoid readability issues in large-width popovers.
@@ -360,7 +360,7 @@ export const TwoItemsAndItemsGrouping = () => `<div style="display:flex;justify-
 
 TwoItemsAndItemsGrouping.parameters = {
     docs: {
-        iframeHeight: 500,
+        story: { iframeHeight: 500 },
         description: {
             story: `
 The \`ComboBox\` component can be customized by adding additional information in additional columns as seen below.
@@ -421,7 +421,7 @@ export const MatchPopoverBodySize = () => `<div style="display:flex;height:250px
 
 MatchPopoverBodySize.parameters = {
     docs: {
-        iframeHeight: 250,
+        story: { iframeHeight: 250 },
         description: {
             story: `
 The default length size of the popover body is often different from the text length.
@@ -521,7 +521,7 @@ export const Semantic = () => `<div style="height:200px">
 
 Semantic.parameters = {
     docs: {
-        iframeHeight: 250,
+        story: { iframeHeight: 250 },
         description: {
             story: `
 For a complete list of states supported by the \`combobox\` component, please see the documentation for the form or select components.
@@ -615,7 +615,7 @@ id="select-dialog-example" style="height:600px">
 
 Mobile.parameters = {
     docs: {
-        iframeHeight: 600,
+        story: { iframeHeight: 600 },
         description: {
             story: `
 For mobile devices, or tablets, combobox component should be displayed in fullscreen mode.

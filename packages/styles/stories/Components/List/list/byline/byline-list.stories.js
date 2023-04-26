@@ -127,7 +127,7 @@ Standard.storyName = 'Default';
 
 Standard.parameters = {
     docs: {
-        iframeHeight: 785,
+        story: { iframeHeight: 785 },
         description: {
             story: `The default byline list dislays list items in the standard size, which is ideal for mobile. To display the byline list in compact mode (for desktop), add the \`fd-list--compact\` modifier class to the main element.
     `
@@ -165,7 +165,7 @@ export const Attachment = () => `<h4>Standard size</h4>
 
 Attachment.parameters = {
     docs: {
-        iframeHeight: 785,
+        story: { iframeHeight: 785 },
         description: {
             story: `The Attachment List shares the same specification as the Standard List with Byline. The only difference is that if two text items are set within the Byline row, the text aligned to the right is always standard text (i.e. not semantic text)
     `
@@ -217,7 +217,7 @@ export const Navigation = () => `<ul class="fd-list fd-list--byline fd-list--nav
 
 Navigation.parameters = {
     docs: {
-        iframeHeight: 355,
+        story: { iframeHeight: 355 },
         description: {
             story: `
 Byline list items can contain navigation links. To add navigation, add the \`fd-list--navigation\` modifier class to the list and the \`fd-list__item--link\` modifier class to the list elements that contain links. All items should be navigable.
@@ -245,7 +245,7 @@ export const Buttons = () => `
 
 Buttons.parameters = {
     docs: {
-        iframeHeight: 165,
+        story: { iframeHeight: 165 },
         description: {
             story: `
 `
@@ -274,7 +274,7 @@ export const Interractive = () => `
 
 Interractive.parameters = {
     docs: {
-        iframeHeight: 300,
+        story: { iframeHeight: 300 },
         description: {
             story: `The \`fd-list__item--interractive\` will force list item to handle hover and active states.
             Usage of this modifier is not needed on \`Selection\`, \`Navigation\` and \`Action\` modes.`
@@ -318,7 +318,7 @@ NavigationIndicator.storyName = 'Navigation indicators';
 
 NavigationIndicator.parameters = {
     docs: {
-        iframeHeight: 275,
+        story: { iframeHeight: 275 },
         description: {
             story: `
 If only some of the list items are navigable, you should indicate them with an arrow icon. To display navigation indicators, add the \`fd-list--navigation-indication\` modifier class to the unordered list element. Do not show indicators if all items are navigable. In this case, use a byline list with navigation (in the example above).
@@ -367,7 +367,7 @@ style="background-image: url('assets/images/backgrounds/Godafoss_waterfall_in_no
 
 Borderless.parameters = {
     docs: {
-        iframeHeight: 305,
+        story: { iframeHeight: 305 },
         description: {
             story: `To display a borderless byline list, add the \`fd-list--no-border\` modifier class to the main element.
     `
@@ -458,7 +458,7 @@ style="background-image: url('assets/images/backgrounds/Godafoss_waterfall_in_no
 
 Selection.parameters = {
     docs: {
-        iframeHeight: 625,
+        story: { iframeHeight: 625 },
         description: {
             story: `
 Byline list items can display checkboxes that users can select from. To display byline list items with selection, add the \`fd-list--selection\` modifier class to the main element. To create checkbox form items, add the \`fd-list__form-item\` class within each list element.
@@ -560,7 +560,7 @@ SelectionAndNavigation.storyName = 'Selection with navigation';
 
 SelectionAndNavigation.parameters = {
     docs: {
-        iframeHeight: 625,
+        story: { iframeHeight: 625 },
         description: {
             story: `To display byline list items with selection and navigation, add these following modifier classes to the main element:
 
@@ -660,7 +660,7 @@ LongText.storyName = 'List with long Title and Byline';
 
 LongText.parameters = {
     docs: {
-        iframeHeight: 625,
+        story: { iframeHeight: 625 },
         description: {
             story: `By default, To allow the title and byline text to wrap, add these following modifier classes to the the title and byline respectively:
 
@@ -781,7 +781,7 @@ style="background-image: url('assets/images/backgrounds/Godafoss_waterfall_in_no
 
 UnreadNotification.parameters = {
     docs: {
-        iframeHeight: 625,
+        story: { iframeHeight: 625 },
         description: {
             story: `<span class="fd-info-label fd-info-label--accent-color-1"><span class="fd-info-label__text">non-fiori 3</span></span><br>
     `

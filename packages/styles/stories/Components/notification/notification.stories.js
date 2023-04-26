@@ -64,7 +64,7 @@ export const Primary = () => `<div class="fd-notification">
 `;
 Primary.parameters = {
     docs: {
-        iframeHeight: 200,
+        story: { iframeHeight: 200 },
         description: {
             story: `
 Primary notifications display a container with an avatar, content area with text, as well as an open and close button. To display primary notifications, use the \`fd-notification\` class.
@@ -98,7 +98,7 @@ export const NoAvatar = () => `<div class="fd-notification">
 `;
 NoAvatar.parameters = {
     docs: {
-        iframeHeight: 200,
+        story: { iframeHeight: 200 },
         description: {
             story: `
 Notifications can be displayed without an avatar by adding the \`fd-notification\\__content--no-avatar\` modifier class together with the \`fd-notification\\__content\` class.
@@ -142,7 +142,7 @@ export const Information = () => `<div class="fd-notification">
 `;
 Information.parameters = {
     docs: {
-        iframeHeight: 200,
+        story: { iframeHeight: 200 },
         description: {
             story: `
 Notifications can also include alerts, and in this case it is informative. You can display information alerts by adding the \`fd-message-strip fd-message-strip--information fd-message-strip--dismissible\`. To add text to the message, add the \`fd-message-strip\\__text\` class before the text in paragraph tags.
@@ -187,7 +187,7 @@ export const Warning = () => `<div class="fd-notification">
 `;
 Warning.parameters = {
     docs: {
-        iframeHeight: 200,
+        story: { iframeHeight: 200 },
         description: {
             story: `
 Notifications can display warning alerts by adding the \`fd-message-strip fd-message-strip--warning fd-message-strip--dismissible\` class.
@@ -232,7 +232,7 @@ export const Error = () => `<div class="fd-notification">
 `;
 Error.parameters = {
     docs: {
-        iframeHeight: 200,
+        story: { iframeHeight: 200 },
         description: {
             story: `
 Notifications can display error alerts by adding the \`fd-message-strip fd-message-strip--error fd-message-strip--dismissible\` class.
@@ -473,7 +473,7 @@ export const NotificationGroup = () => `<div class="fd-notification fd-notificat
 `;
 NotificationGroup.parameters = {
     docs: {
-        iframeHeight: 200,
+        story: { iframeHeight: 200 },
         description: {
             story: `You can display a group of notifications in a list format, and the user can sort them from the header. To display a notification group, add the \`fd-notification fd-notification\\__group\` class.
     `

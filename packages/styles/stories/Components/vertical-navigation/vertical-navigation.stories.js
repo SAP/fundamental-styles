@@ -83,7 +83,7 @@ Cozy.storyName = 'Default';
 
 Cozy.parameters = {
     docs: {
-        iframeHeight: 700,
+        story: { iframeHeight: 700 },
         description: {
             story: `
 The default vertical navigation is comprised of several navigation list items.
@@ -172,7 +172,7 @@ Utility.storyName = 'Utility Section';
 
 Utility.parameters = {
     docs: {
-        iframeHeight: 700,
+        story: { iframeHeight: 700 },
         description: {
             story: `
 The vertical navigation can also have a bottom-aligned "Utility" section.
@@ -207,7 +207,7 @@ export const Condensed = () => `<div class="fd-vertical-nav fd-vertical-nav--con
 
 Condensed.parameters = {
     docs: {
-        iframeHeight: 400,
+        story: { iframeHeight: 400 },
         description: {
             story: `
 In condensed mode, only icons are shown unless some navigation items have second levels and the second level is expanded.
@@ -258,7 +258,7 @@ Text.storyName = 'Text Only';
 
 Text.parameters = {
     docs: {
-        iframeHeight: 700,
+        story: { iframeHeight: 700 },
         description: {
             story: `
 A vertical navigation list does not need to have icons. However this is only available in expanded mode.
@@ -341,7 +341,7 @@ Indication.storyName = 'Navigation Indication';
 
 Indication.parameters = {
     docs: {
-        iframeHeight: 700,
+        story: { iframeHeight: 700 },
         description: {
             story: `
 All the possible combinations of navigation indication are visualized below. When a second level item has been navigated to and the second list has been collapsed, the indicator is shown on the right of the corresponding first level item, but the text and icon color do not change.
@@ -413,7 +413,7 @@ export const Grouping = () => `<div class="fd-vertical-nav">
 
 Grouping.parameters = {
     docs: {
-        iframeHeight: 700,
+        story: { iframeHeight: 700 },
         description: {
             story: `The Vertical Navigation items can be further visually grouped using the Group Header List Item.
         `
@@ -484,7 +484,7 @@ export const GroupingOverflow = () => `<div class="fd-vertical-nav fd-vertical-n
 GroupingOverflow.storyName = 'Grouping with Overflow';
 GroupingOverflow.parameters = {
     docs: {
-        iframeHeight: 700,
+        story: { iframeHeight: 700 },
         description: {
             story: `To clip the content and add a vertical scroll to the Vertical Navigation add the  \`fd-vertical-nav--overflow\` modifier class to the \`fd-vertical-nav\` base class. You need to manually set the max-height of the element on the \`fd-vertical-nav\` level. For example: \`style="max-height: 200px;"\`.
         `

@@ -1,5 +1,5 @@
-import {Heading, Subtitle, Title} from '@storybook/addon-docs';
-import React, {useContext} from 'react';
+import {Subtitle, Title, Stories} from '@storybook/addon-docs';
+import {useContext} from 'react';
 import './DocsPage.scss';
 import {useThemedStoryContainers} from '../../hooks/useThemedStoryContainers';
 import Community from '../Community';
@@ -9,7 +9,6 @@ import Footer from '../Footer';
 import Header from '../Header';
 import InfoLabels from '../InfoLabels';
 import Toc from '../Toc/Toc';
-import VisibleStories from '../VisibleStories';
 import {SAPContext} from "../../contexts/SAPContext";
 
 const DocsPage = () => {
@@ -35,8 +34,7 @@ const DocsPage = () => {
                 <Description desc={storyContext.parameters['description']}/>
             </div>
 
-            <Heading>Examples</Heading>
-            <VisibleStories/>
+            <Stories title={"Examples"}/>
             <Community/>
             <Versions/>
             <Footer/>

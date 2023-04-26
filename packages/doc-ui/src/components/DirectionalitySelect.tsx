@@ -1,5 +1,5 @@
 import {SAPContext} from "../contexts/SAPContext";
-import React, {useContext, useMemo} from "react";
+import {useContext, useMemo} from "react";
 import {IconButton, Icons, TooltipLinkList, WithTooltip} from "@storybook/components";
 import IconButtonLabel from "./IconButtonLabel";
 

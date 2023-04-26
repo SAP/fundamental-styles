@@ -2,7 +2,7 @@ import {logger} from "@nrwl/devkit";
 import {readFileSync, writeFileSync} from "fs";
 import postcss from "postcss";
 import postCssConfig from './postcss.plugins';
-import {codeFrameColumns} from "@nrwl/js/src/utils/code-frames/code-frames";
+import { codeFrameColumns } from 'nx/src/utils/code-frames';
 
 interface ProcessPostCssOptions {
     input: string;

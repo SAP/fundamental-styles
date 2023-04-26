@@ -1,4 +1,4 @@
-import React, {useContext} from 'react';
+import {useContext} from 'react';
 import InfoLabel from './InfoLabel';
 import {SAPContext} from "fundamental-styles/doc-ui";
 

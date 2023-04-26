@@ -98,7 +98,7 @@ ${localStyles}
 
 Desktop.parameters = {
     docs: {
-        iframeHeight: 330,
+        story: { iframeHeight: 330 },
         description: {
             story: `A checkbox can be displayed in two different sizes desktop (compact) and mobile (default).
 On desktop screens, the checkbox appears smaller and uses the \`fd-checkbox__label--compact\` modifier class.
@@ -125,7 +125,7 @@ export const Required = () => `
 
 Required.parameters = {
     docs: {
-        iframeHeight: 330,
+        story: { iframeHeight: 330 },
         description: {
             story: `To show that a checkbox input is required, use the \`fd-checkbox__label--required\` class.
         `
@@ -192,7 +192,7 @@ ${localStyles}
 
 Mobile.parameters = {
     docs: {
-        iframeHeight: 330,
+        story: { iframeHeight: 330 },
         description: {
             story: `A checkbox can display larger so users can easily select options on a mobile screen. This is considered the default size for checkbox.
         `
@@ -233,7 +233,7 @@ export const Inline = () => `<fieldset class="fd-fieldset">
 
 Inline.parameters = {
     docs: {
-        iframeHeight: 400,
+        story: { iframeHeight: 400 },
         description: {
             story: 'Checkboxes can display horizontally in a line. To display them this way, add the `fd-checkbox__label--inline` modifier class to the element.'
         }
@@ -427,7 +427,7 @@ ${localStyles}
 
 States.parameters = {
     docs: {
-        iframeHeight: 400,
+        story: { iframeHeight: 400 },
         description: {
             story: `Checkboxes can display several interaction states to communicate semantic meaning to the users. To display different states, add the classes below to the \`fd-form-item\`:
 

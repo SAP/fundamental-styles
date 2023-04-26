@@ -1,7 +1,16 @@
 import { IntroductionPage, SAPContainer } from 'fundamental-styles/doc-ui';
+import { Markdown } from "@storybook/blocks"
 
-export function IntroductionPageWrapper({ content }) {
+function IntroductionPageWrapper({ children }) {
     return <SAPContainer>
-        <IntroductionPage content={content}/>
-    </SAPContainer>
+        <IntroductionPage>
+            {children}
+        </IntroductionPage>
+    </SAPContainer>;
+}
+
+export function RenderPackageIntroduction(readme: any) {
+    return () => <IntroductionPageWrapper>
+        <Markdown options={{forceBlock: true}}>{readme}</Markdown>
+    </IntroductionPageWrapper>;
 }

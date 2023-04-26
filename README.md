@@ -1,12 +1,16 @@
 # Fundamental Library Styles
 
-[![npm version](https://badge.fury.io/js/fundamental-styles.svg)](https://badge.fury.io/js/fundamental-styles)
-![Build Status](https://github.com/SAP/fundamental-styles/actions/workflows/on-pull.yml/badge.svg?branch=main)
-![npm](https://img.shields.io/npm/dm/fundamental-styles?label=npm%20downloads)
-[![Slack](https://img.shields.io/badge/slack-ui--fundamentals-blue.svg?logo=slack)](https://join.slack.com/t/ui-fundamentals/shared_invite/enQtNTIzOTU0Mzc2NTc5LWQzZWI5MWFhYjE5OTc4YzliN2JhOTc1ZjQxZTg1YjZiMWZiYzRkNjMwYzgyMmFkYmNhZDVjMWE5MDIzOWEzMmM)
-[![REUSE status](https://api.reuse.software/badge/github.com/SAP/fundamental-styles)](https://api.reuse.software/info/github.com/SAP/fundamental-styles)
+<a href="https://badge.fury.io/js/fundamental-styles"><img src="https://badge.fury.io/js/fundamental-styles.svg" alt="NPM Version"/></a>
+<img src="https://github.com/SAP/fundamental-styles/actions/workflows/create-release.yml/badge.svg?branch=main" alt="CI Status"/>
+<img src="https://img.shields.io/npm/dm/fundamental-styles?label=npm%20downloads" alt="NPM Downloads">
+<a href="https://join.slack.com/t/ui-fundamentals/shared_invite/enQtNTIzOTU0Mzc2NTc5LWQzZWI5MWFhYjE5OTc4YzliN2JhOTc1ZjQxZTg1YjZiMWZiYzRkNjMwYzgyMmFkYmNhZDVjMWE5MDIzOWEzMmM">
+<img src="https://img.shields.io/badge/slack-ui--fundamentals-blue.svg?logo=slack" alt="Slack">
+</a>
+<a href="https://api.reuse.software/info/github.com/SAP/fundamental-styles">
+    <img src="https://api.reuse.software/badge/github.com/SAP/fundamental-styles" alt="REUSE status">
+</a>
 <a href="https://storybook.js.org/">
-<img src="https://raw.githubusercontent.com/storybookjs/brand/main/badge/badge-storybook.svg" />
+    <img src="https://raw.githubusercontent.com/storybookjs/brand/main/badge/badge-storybook.svg" alt="StorybookJS"/>
 </a>
 
 <a href="https://www.netlify.com">

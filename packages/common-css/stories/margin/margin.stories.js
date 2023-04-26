@@ -6,7 +6,7 @@ export default {
     title: 'Margins',
     parameters: {
         description,
-        docs: { iframeHeight: 500 }
+        docs: { story: {iframeHeight: 500 }}
     }
 };
 
@@ -49,7 +49,7 @@ export const AllRoundMargin = () => `${localStyles}
 AllRoundMargin.storyName = 'All-Round Margins';
 AllRoundMargin.parameters = {
     docs: {
-        iframeHeight: 500,
+        story: {iframeHeight: 500},
         description: {
             story: `All-round margins appear on all sides of the element they are applied to.
             <table style="width: 100%; border-collapse: collapse; margin-top: 1rem;">
@@ -109,7 +109,7 @@ export const TopMargin = () => `${localStyles}
 TopMargin.storyName = 'Top Margins';
 TopMargin.parameters = {
     docs: {
-        iframeHeight: 500,
+        story: {iframeHeight: 500},
         description: {
             story: `The top margin is displayed on the top of the element.
             <table style="width: 100%; border-collapse: collapse; margin-top: 1rem;">
@@ -168,7 +168,7 @@ export const BottomMargin = () => `${localStyles}
 BottomMargin.storyName = 'Bottom Margins';
 BottomMargin.parameters = {
     docs: {
-        iframeHeight: 500,
+        story: {iframeHeight: 500},
         description: {
             story: `The bottom margin is displayed on the bottom of the element.
             <table style="width: 100%; border-collapse: collapse; margin-top: 1rem;">
@@ -227,7 +227,7 @@ export const BeginMargin = () => `${localStyles}
 BeginMargin.storyName = 'Begin Margins';
 BeginMargin.parameters = {
     docs: {
-        iframeHeight: 500,
+        story: {iframeHeight: 500},
         description: {
             story: `The begin margin is displayed on the left side and in right-to-left mode on the right side of the element.
             <table style="width: 100%; border-collapse: collapse; margin-top: 1rem;">
@@ -286,7 +286,7 @@ export const EndMargin = () => `${localStyles}
 EndMargin.storyName = 'End Margins';
 EndMargin.parameters = {
     docs: {
-        iframeHeight: 500,
+        story: {iframeHeight: 500},
         description: {
             story: `The end margin is displayed on the right side and in right-to-left mode on the left side of the element.
             <table style="width: 100%; border-collapse: collapse; margin-top: 1rem;">
@@ -345,7 +345,7 @@ export const HorizontalMargin = () => `${localStyles}
 HorizontalMargin.storyName = 'Horizontal Margins';
 HorizontalMargin.parameters = {
     docs: {
-        iframeHeight: 500,
+        story: {iframeHeight: 500},
         description: {
             story: `The horizontal margins are displayed on left and right side of the element.
             <table style="width: 100%; border-collapse: collapse; margin-top: 1rem;">
@@ -404,7 +404,7 @@ export const VerticalMargin = () => `${localStyles}
 VerticalMargin.storyName = 'Vertical Margins';
 VerticalMargin.parameters = {
     docs: {
-        iframeHeight: 500,
+        story: {iframeHeight: 500},
         description: {
             story: `The vertical margins are displayed on top and bottom of the element.
             <table style="width: 100%; border-collapse: collapse; margin-top: 1rem;">
@@ -446,7 +446,7 @@ export const ResponsiveMargin = () => `${localStyles}
 ResponsiveMargin.storyName = 'Responsive Margins';
 ResponsiveMargin.parameters = {
     docs: {
-        iframeHeight: 500,
+        story: {iframeHeight: 500},
         description: {
             story: `The responsive margins class adds a margin around an element based on the width of the container the element is in. <br>
             <b>CSS Class: </b><code>.sap-margin-responsive</code><br>
@@ -502,7 +502,7 @@ export const NegativeMargin = () => `${localStyles}
 NegativeMargin.storyName = 'Negative Margins';
 NegativeMargin.parameters = {
     docs: {
-        iframeHeight: 500,
+        story: {iframeHeight: 500},
         description: {
             story: `The negative margin class adds a double sided negative margin to an element. This is useful when aligning elements with built-in paddings.
             <table style="width: 100%; border-collapse: collapse; margin-top: 1rem;">

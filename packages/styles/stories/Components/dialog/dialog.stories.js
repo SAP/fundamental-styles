@@ -114,7 +114,7 @@ export const DefaultDialog = () => `
 DefaultDialog.storyName = 'Default';
 DefaultDialog.parameters = {
     docs: {
-        iframeHeight: 400,
+        story: { iframeHeight: 400 },
         description: {
             story: 'The default dialog component displays a container comprising a header, title, and subheader; followed by a body (content area), loader, footer and action buttons. The container also features a resize handle in the bottom-right corner of the footer, see resizable dialog below for more information.'
         }
@@ -234,7 +234,7 @@ export const Sizes = () => `
 
 Sizes.parameters = {
     docs: {
-        iframeHeight: 800,
+        story: { iframeHeight: 800 },
         description: {
             story: `
 By default, dialog’s body has no horizontal paddings. If horizontal paddings are added, they should behave responsively based on dialog's window width.
@@ -305,7 +305,7 @@ export const Resizable = () => `
 
 Resizable.parameters = {
     docs: {
-        iframeHeight: 300,
+        story: { iframeHeight: 300 },
         description: {
             story: `
 Dialog can also be displayed with a resize handle by adding a span element with a \`fd-dialog__resize-handle\` class inside the \`fd-dialog__content\` container.
@@ -346,7 +346,7 @@ export const Draggable = () => `
 
 Draggable.parameters = {
     docs: {
-        iframeHeight: 300,
+        story: { iframeHeight: 300 },
         description: {
             story: `
 Dialog can be draggable, enabling the user to drag the container around with their cursor on a desktop screen.
@@ -453,7 +453,7 @@ export const Selectable = () => `
 
 Selectable.parameters = {
     docs: {
-        iframeHeight: 500,
+        story: { iframeHeight: 500 },
         description: {
             story: `The selectable dialog displays list items in the content area that can be selected. Users can search items from the list, select one or more items, and finalize their choice by selecting the _Select_ button. To display the selectable dialog, include the \`fd-list fd-list--compact\` class to the body's container element.
         `
@@ -494,7 +494,7 @@ export const Loading = () => `
 
 Loading.parameters = {
     docs: {
-        iframeHeight: 500,
+        story: { iframeHeight: 500 },
         description: {
             story: 'Dialog can display a busy indicator that signals to the user that data is loading. To display a busy indicator in the content area, add the `fd-busy-indicator--l` to the `fd-dialog__loader` container element. Although the busy indicator is large in this example, you can choose a smaller size. See **Busy Indicator** for more sizes.'
         }

@@ -12,7 +12,7 @@ export default {
             <li><b>auto</b>: the overflow is not clipped, scrollbars are added only when necessary</li>
         </ul>
       `,
-        docs: { iframeHeight: 500 }
+        docs: { story: {iframeHeight: 500 }}
     }
 };
 
@@ -23,7 +23,7 @@ export const OverflowVisible = () => `<div>
 </div>`;
 OverflowVisible.parameters = {
     docs: {
-        iframeHeight: 500,
+        story: {iframeHeight: 500},
         description: {
             story: `For overflow visible use: <code>.sap-overflow-visible</code>, <code>.sap-overflow-x-visible</code> or <code>.sap-overflow-y-visible</code> classes.`
         }
@@ -37,7 +37,7 @@ export const OverflowHidden = () => `<div>
 </div>`;
 OverflowHidden.parameters = {
     docs: {
-        iframeHeight: 500,
+        story: {iframeHeight: 500},
         description: {
             story: `For overflow hidden use: <code>.sap-overflow-hidden</code>, <code>.sap-overflow-x-hidden</code> or <code>.sap-overflow-y-hidden</code> classes.`
         }
@@ -51,7 +51,7 @@ export const OverflowScroll = () => `<div>
 </div>`;
 OverflowScroll.parameters = {
     docs: {
-        iframeHeight: 500,
+        story: {iframeHeight: 500},
         description: {
             story: `For overflow scroll use: <code>.sap-overflow-scroll</code>, <code>.sap-overflow-x-scroll</code> or <code>.sap-overflow-y-scroll</code> classes.`
         }
@@ -65,7 +65,7 @@ export const OverflowAuto = () => `<div>
 </div>`;
 OverflowAuto.parameters = {
     docs: {
-        iframeHeight: 500,
+        story: {iframeHeight: 500},
         description: {
             story: `For overflow auto use: <code>.sap-overflow-auto</code>, <code>.sap-overflow-x-auto</code> or <code>.sap-overflow-y-auto</code> classes.`
         }

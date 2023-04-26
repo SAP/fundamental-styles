@@ -1,4 +1,4 @@
-import React, {useContext} from 'react';
+import {useContext} from 'react';
 import {packages, packageValueToPackageMap} from 'fundamental-styles/configuration';
 import {SAPContext} from "../contexts/SAPContext";
 import {IconButton, Icons, TooltipLinkList, WithTooltip} from "@storybook/components";

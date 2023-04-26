@@ -4,7 +4,7 @@ export default {
     parameters: {
         description: `
       `,
-        docs: { iframeHeight: 500 }
+        docs: { story: {iframeHeight: 500 }}
     }
 };
 
@@ -21,7 +21,7 @@ export const FontFamily = () => `
 `;
 FontFamily.parameters = {
     docs: {
-        iframeHeight: 500,
+        story: {iframeHeight: 500},
         description: {
             story: `To set the <b>font-family</b> of an element use the <code>.sap-font-family-<i style="color: red;">type</i></code>class or the <code>@include sap-font-family(<i style="color: red;">type</i>)</code> mixin with <i style="color: red;">type</i> being one of the following:<br> regular | light | bold | semibold | semibold-duplex | monospaced-regular | monospaced-bold | black | header 
 <table style="width: 100%; border-collapse: collapse; margin-top: 1rem;">
@@ -103,7 +103,7 @@ export const FontSize = () => `
 `;
 FontSize.parameters = {
     docs: {
-        iframeHeight: 500,
+        story: {iframeHeight: 500},
         description: {
             story: `To set the <b>font-size</b> of an element use the <code>.sap-font-size-<i style="color: red;">value</i></code>class or the <code>@include sap-font-size(<i style="color: red;">value</i>)</code> mixin with <i style="color: red;">value</i> being one of the following:<br> header-6 | header-5 | header-4 | header-3 | header-2 | header-1 | small | medium | large 
 <table style="width: 100%; border-collapse: collapse; margin-top: 1rem;">
@@ -178,7 +178,7 @@ export const LineHeight = () => `
 `;
 LineHeight.parameters = {
     docs: {
-        iframeHeight: 500,
+        story: {iframeHeight: 500},
         description: {
             story: `In general, there is no line height applied to text, as the line height e.g. affects the padding.
 If a more generous line height is required for long continuous text, a consistent line height of 1.4 is recommended.
@@ -201,7 +201,7 @@ export const CommonCases = () => `
 `;
 CommonCases.parameters = {
     docs: {
-        iframeHeight: 500,
+        story: {iframeHeight: 500},
         description: {
             story: `<table style="width: 100%; border-collapse: collapse; margin-top: 1rem;">
     <tr>

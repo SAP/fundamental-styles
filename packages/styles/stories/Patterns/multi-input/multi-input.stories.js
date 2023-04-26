@@ -250,7 +250,7 @@ export const CozyAndCompact = () => `<div style="display:flex;height:310px">
 
 CozyAndCompact.parameters = {
     docs: {
-        iframeHeight: 350,
+        story: { iframeHeight: 350 },
         description: {
             story: `The multi-input component is a composition of
         the \`input group\`, \`popover\`, \`checkbox\`, \`list\` and \`token\` components.  It can be displayed in compact mode by adding
@@ -353,7 +353,7 @@ export const AsFormItem = () => `<div style="height:310px">
 
 AsFormItem.parameters = {
     docs: {
-        iframeHeight: 900,
+        story: { iframeHeight: 900 },
         description: {
             story: `
 Note that the popover body width is restricted to a max of 37.5rem to avoid readability issues in large-width popovers.
@@ -472,10 +472,10 @@ export const Grouping = () => `<div style="height:450px">
 
 Grouping.parameters = {
     docs: {
-        iframeHeight: 500,
+        story: { iframeHeight: 500 },
         description: {
             story:
-            'In cases where the list items need to be categorized into groups, it is possible to add headers for each category as seen below.'
+                'In cases where the list items need to be categorized into groups, it is possible to add headers for each category as seen below.'
         }
     }
 };
@@ -566,7 +566,7 @@ export const MatchPopoverBodySize = () => `<div style="height:270px">
 
 MatchPopoverBodySize.parameters = {
     docs: {
-        iframeHeight: 300,
+        story: { iframeHeight: 300 },
         description: {
             story: `
 The default length size of the popover body is often different from the text length.
@@ -738,7 +738,7 @@ export const ReadOnlyAndDisabled = () => `<div style="display:flex;height:250px;
 
 ReadOnlyAndDisabled.parameters = {
     docs: {
-        iframeHeight: 100,
+        story: { iframeHeight: 100 },
         description: {
             story: `
 To make the \`Multi Input\` component read-only, the readonly attribute needs to be added to the \`fd-nput-group\` element.
@@ -838,7 +838,7 @@ export const Semantic = () => `<div style="height:300px">
 
 Semantic.parameters = {
     docs: {
-        iframeHeight: 350,
+        story: { iframeHeight: 350 },
         description: {
             story: `
 For a complete list of states supported by the \`Multi Input\` component, please see the documentation for the form or select components.
@@ -954,7 +954,7 @@ export const MobileMode = () => `<section role="dialog" aria-labelledby="mobileM
 
 MobileMode.parameters = {
     docs: {
-        iframeHeight: 450,
+        story: { iframeHeight: 450 },
         description: {
             story: `
 For mobile devices, or tablets, multi input component should be displayed in fullscreen mode.
@@ -1061,7 +1061,7 @@ export const Filtering = () => `<div style="min-height: 250px;">
 
 Filtering.parameters = {
     docs: {
-        iframeHeight: 300,
+        story: { iframeHeight: 300 },
         description: {
             story: `
 The user can filter selectable options by typing in the input. A button with the text "Show All" should be displayed, that when clicked, will clear the text in the input and show all options in the list.`

@@ -1,5 +1,3 @@
-import React from 'react';
-
 const communityUrls = [
     {
         url: 'https://sap.github.io/fundamental-styles/',

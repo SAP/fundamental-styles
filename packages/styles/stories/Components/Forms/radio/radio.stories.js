@@ -76,7 +76,7 @@ export const Primary = () => `<div style="display:flex;justify-content:space-bet
 Primary.storyName = 'Responsiveness';
 Primary.parameters = {
     docs: {
-        iframeHeight: 250,
+        story: { iframeHeight: 250 },
         description: {
             story: 'A radio button can appear in two different sizes. In `cozy` mode, it is bigger than it is in `compact` mode. This makes the checkbox easier to select on touch devices.'
         }
@@ -270,7 +270,7 @@ export const InteractionStates = () => `<div style="display:flex;justify-content
 
 InteractionStates.parameters = {
     docs: {
-        iframeHeight: 550,
+        story: { iframeHeight: 550 },
         description: {
             story: 'A radio button can have different states that affect its appearance value states, such as “error” or “warning”, which are indicated using semantic colors'
         }
