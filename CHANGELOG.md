@@ -1,3 +1,12 @@
+# [0.29.0-rc.16](https://github.com/SAP/fundamental-styles/compare/v0.29.0-rc.15...v0.29.0-rc.16) (2023-04-26)
+
+
+### Bug Fixes
+
+* **styles:** update Radio Button to Horizon 2023 [ci visual] ([#4479](https://github.com/SAP/fundamental-styles/issues/4479)) ([e94d31b](https://github.com/SAP/fundamental-styles/commit/e94d31b6c069bce519031ceb75eec7280173bd52))
+
+
+
 # [0.29.0-rc.15](https://github.com/SAP/fundamental-styles/compare/v0.29.0-rc.14...v0.29.0-rc.15) (2023-04-26)
 
 
