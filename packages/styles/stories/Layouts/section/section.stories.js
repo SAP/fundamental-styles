@@ -31,7 +31,7 @@ export const Structure = () => `<section class="fd-section">
 Structure.storyName = 'Section Structure';
 Structure.parameters = {
     docs: {
-        iframeHeight: 300,
+        story: { iframeHeight: 300 },
         description: {
             story: ''
         }
@@ -85,7 +85,7 @@ export const SectionLayoutGrid = () => `<section class="fd-section">
 SectionLayoutGrid.storyName = 'With Layout Grid';
 SectionLayoutGrid.parameters = {
     docs: {
-        iframeHeight: 300,
+        story: { iframeHeight: 300 },
         description: {
             story: `
 Shows an example with the grid span helper class.
@@ -125,7 +125,7 @@ export const SectionPanels = () => `<section class="fd-section">
 SectionPanels.storyName = 'With Panels';
 SectionPanels.parameters = {
     docs: {
-        iframeHeight: 300,
+        story: { iframeHeight: 300 },
         description: {
             story: `
 Shows an alternate layout option using columns.
@@ -149,7 +149,7 @@ export const SectionHeaders = () => `<section class="fd-section">
 SectionHeaders.storyName = 'With Headers';
 SectionHeaders.parameters = {
     docs: {
-        iframeHeight: 300,
+        story: { iframeHeight: 300 },
         description: {
             story: 'Header and title elements are available when necessary to label content groups.'
         }

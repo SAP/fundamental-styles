@@ -68,7 +68,9 @@ correct work of the HMR in the storybook.
 StoryFunction.storyName = 'Story name'; // optional
 StoryFunction.parameters = {
   docs: {
-    iframeHeight: 400, // optional
+    story: {
+        iframeHeight: 500
+    }, // optional
     description: {
       story: 'Story description in markdown format', // optional
     }

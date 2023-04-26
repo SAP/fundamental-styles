@@ -8,7 +8,7 @@ export default {
     title: 'Display',
     parameters: {
         description,
-        docs: { iframeHeight: 500 }
+        docs: { story: {iframeHeight: 500 }}
     }
 };
 
@@ -66,7 +66,7 @@ DisplayHelperClass.storyName = 'Display';
 
 DisplayHelperClass.parameters = {
     docs: {
-        iframeHeight: 500,
+        story: {iframeHeight: 500},
         description: {
             story: `
         ` }
@@ -84,7 +84,7 @@ ScreenReaderOnly.storyName = 'Screen-reader-only elements';
 
 ScreenReaderOnly.parameters = {
     docs: {
-        iframeHeight: 500,
+        story: {iframeHeight: 500},
         description: {
             story: `The <code>.sap-sr-only</code> class will hide the element visually without hiding it from screen readers. <br><br>
             <b>SCSS Mixin: </b>

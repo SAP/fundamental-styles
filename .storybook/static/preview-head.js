@@ -161,8 +161,8 @@
 
         const observer = new MutationObserver(callback);
         const config = { childList: true, subtree: true };
-        observer.observe(document.getElementById('root'), config);
-        observer.observe(document.getElementById('docs-root'), config);
+        observer.observe(document.querySelector('#storybook-root'), config);
+        // observer.observe(document.getElementById('docs-root'), config);
     });
 
 

@@ -1,5 +1,6 @@
 import { defineConfig } from 'vite';
 import tsconfigPaths from 'vite-tsconfig-paths'
+import react from '@vitejs/plugin-react'
 
 import {resolve, join} from "path";
 
@@ -27,7 +28,9 @@ const packagesAliases = [
 ];
 
 export default defineConfig({
-    plugins: [tsconfigPaths()],
+    plugins: [tsconfigPaths({
+        root: __dirname,
+    }), react()],
     resolve: {
         alias: [
             ...packagesAliases
@@ -39,12 +42,10 @@ export default defineConfig({
         minify: 'terser',
         reportCompressedSize: true,
         sourcemap: false
-        // rollupOptions: {
-        //     output: {
-        //         manualChunks
-        //     }
-        // }
     },
+    assetsInclude: [
+        '**/*.md'
+    ],
     test: {
         environment: 'jsdom',
         setupFiles: [resolve(join(__dirname, 'vitest.setup.ts'))]

@@ -1,5 +1,5 @@
 /* eslint-disable no-unused-vars,sort-imports */
-import {Heading, Subtitle, Title} from '@storybook/addon-docs';
+import { Stories, Subtitle, Title } from '@storybook/addon-docs';
 import React from 'react';
 import AvailableIcons from './AvailableIcons/AvailableIcons';
 import Description from './description.md';
@@ -10,7 +10,7 @@ import 'styles/src/layout-panel.scss';
 import 'styles/src/link.scss';
 import 'styles/src/section.scss';
 import 'fn/src/fn-button.scss';
-import {Header, Toc, useThemedStoryContainers, VisibleStories} from "fundamental-styles/doc-ui";
+import {Header, Toc, useThemedStoryContainers} from "fundamental-styles/doc-ui";
 
 export default () => {
     useThemedStoryContainers();
@@ -24,9 +24,8 @@ export default () => {
                 <Subtitle/>
                 <Description/>
             </div>
-            <Heading>Examples</Heading>
 
-            <VisibleStories/>
+            <Stories title={"Examples"}/>
             <AvailableIcons/>
         </>
     );

@@ -121,7 +121,7 @@ Primary.storyName = 'Default';
 
 Primary.parameters = {
     docs: {
-        iframeHeight: 500,
+        story: { iframeHeight: 500 },
         description: {
 
             story: 'The standard input component can be displayed by using `fd-input` class. It can also be displayed in compact mode by adding the `fd-input--compact` class.'

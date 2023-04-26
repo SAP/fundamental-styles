@@ -33,7 +33,7 @@ export const Sizes = () => `
 
 Sizes.parameters = {
     docs: {
-        iframeHeight: 160,
+        story: { iframeHeight: 160 },
         description: {
             story: 'The Input Group supports **compact** mode (by virtue of the `--compact` modifier on child components).'
         }
@@ -77,7 +77,7 @@ export const TextAddOn = () => `
 
 TextAddOn.parameters = {
     docs: {
-        iframeHeight: 400,
+        story: { iframeHeight: 400 },
         description: {
             story: 'The Input Group with text add-on component is typically used to specify the type of the data being entered, such as currency or unit of measure. This add-on can be placed at the left or right (or both) of the input element.'
         }
@@ -118,7 +118,7 @@ export const InputWithIcons = () => `
 
 InputWithIcons.parameters = {
     docs: {
-        iframeHeight: 300,
+        story: { iframeHeight: 300 },
         description: {
             story: 'The Input with add-on supports icons.'
         }
@@ -177,7 +177,7 @@ export const InputWithActions = () => `
 
 InputWithActions.parameters = {
     docs: {
-        iframeHeight: 300,
+        story: { iframeHeight: 300 },
         description: {
             story: 'The Input with add-on supports actions. Actions can be shown with a text label or icon.'
         }
@@ -369,7 +369,7 @@ export const Focus = () => `
 
 Focus.parameters = {
     docs: {
-        iframeHeight: 200,
+        story: { iframeHeight: 200 },
         description: {
             story: 'The Input Group supports <b>focus</b> state, it can be added by putting `.is-focus` class to component.'
         }

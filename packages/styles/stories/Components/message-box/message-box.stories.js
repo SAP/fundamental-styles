@@ -90,7 +90,7 @@ Structure.storyName = 'Default';
 
 Structure.parameters = {
     docs: {
-        iframeHeight: messageBoxHeight,
+        story: { iframeHeight: messageBoxHeight },
         description: {
             story: `
 The default message box displays a small dialog with a title, message text and action buttons. Use the default if the message does not fit with one of the semantic types.
@@ -241,7 +241,7 @@ Types.storyName = 'Semantic types';
 
 Types.parameters = {
     docs: {
-        iframeHeight: messageBoxHeight * 6.5,
+        story: { iframeHeight: messageBoxHeight * 6.5 },
         description: {
             story: `
 The message box can be displayed with various semantic colors and icons, indicating the type of message being relayed.
@@ -370,7 +370,7 @@ export const Responsive = () =>
 
 Responsive.parameters = {
     docs: {
-        iframeHeight: messageBoxHeight * 4,
+        story: { iframeHeight: messageBoxHeight * 4 },
         description: {
             story: `
 The message box has 1rem padding all around the body, and the header and footer both inherit their padding from the **Bar** component. Responsive horizontal padding can be applied to the header, body and footer of the message box; however, the amount depends on the screen width.

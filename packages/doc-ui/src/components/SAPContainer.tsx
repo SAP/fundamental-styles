@@ -1,16 +1,15 @@
-import {DocsContext} from '@storybook/addon-docs';
-import addons from '@storybook/addons';
-import {UPDATE_GLOBALS} from '@storybook/core-events';
-import {useContext, useEffect, useMemo, useState} from 'react';
-import {SAPContext} from '../contexts/SAPContext';
-import {directionalities} from "fundamental-styles/configuration";
-import {getPackage} from "fundamental-styles/utils";
+import { DocsContext } from '@storybook/addon-docs';
+import { addons } from '@storybook/addons';
+import { UPDATE_GLOBALS } from '@storybook/core-events';
+import { useContext, useEffect, useMemo, useState } from 'react';
+import { SAPContext } from '../contexts/SAPContext';
+import { directionalities } from 'fundamental-styles/configuration';
+import { getPackage } from 'fundamental-styles/utils';
 
 export const SAPContainer = ({children}) => {
     const channel = useMemo(() => addons.getChannel(), []);
     const docsContext = useContext(DocsContext);
-
-    const story = docsContext.storyById(docsContext.id);
+    const story = docsContext.storyById();
     const storyContext = docsContext.getStoryContext(story);
 
     const params = {
@@ -19,20 +18,20 @@ export const SAPContainer = ({children}) => {
     };
 
     const [packageValue, setPackageValue] = useState(params["packageId"]);
-    const [storyPackage, setStoryPackage] = useState(getPackage(story));
+    const [storyPackage, setStoryPackage] = useState(getPackage(storyContext));
     const [themeValue, setThemeValue] = useState('');
     const [directionalityValue, setDirectionalityValue] = useState(params["directionality"]);
 
     useEffect(() => {
-        setStoryPackage(getPackage(story))
-    }, [story]);
+        setStoryPackage(getPackage(storyContext))
+    }, [storyContext]);
 
     useEffect(() => {
         if (storyPackage) {
             const theme = params[`${storyPackage.value}-theme`] || storyPackage.defaultTheme;
             setThemeValue(theme);
         }
-    }, [story, storyPackage])
+    }, [storyContext, storyPackage])
 
     const setPackage = (packageId: string) => {
         channel.emit(UPDATE_GLOBALS, {globals: {...storyContext.globals, packageId}});

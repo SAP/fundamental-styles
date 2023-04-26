@@ -44,7 +44,7 @@ DefaultStrip.storyName = 'Default';
 
 DefaultStrip.parameters = {
     docs: {
-        iframeHeight: messageStripHeight,
+        story: { iframeHeight: messageStripHeight },
         description: {
             story: `The default message strip can be used for general messages that don’t fit into any of the semantic type use cases.`
         }
@@ -66,7 +66,7 @@ export const Information = () => `<div class="fd-message-strip fd-message-strip-
 
 Information.parameters = {
     docs: {
-        iframeHeight: messageStripHeight,
+        story: { iframeHeight: messageStripHeight },
         description: {
             story: 'To display an information message strip, add the `fd-message-strip--information` modifier class to the main element.'
         }
@@ -88,7 +88,7 @@ export const Success = () => `<div class="fd-message-strip fd-message-strip--suc
 
 Success.parameters = {
     docs: {
-        iframeHeight: messageStripHeight,
+        story: { iframeHeight: messageStripHeight },
         description: {
             story: 'To display a success message strip, add the `fd-message-strip--success` modifier class to the main element.'
         }
@@ -110,7 +110,7 @@ export const Warning = () => `<div class="fd-message-strip fd-message-strip--war
 
 Warning.parameters = {
     docs: {
-        iframeHeight: messageStripHeight,
+        story: { iframeHeight: messageStripHeight },
         description: {
             story: `To display a warning message strip, add the \`fd-message-strip--warning\` modifier class to the main element.`
         }
@@ -132,7 +132,7 @@ export const Error = () => `<div class="fd-message-strip fd-message-strip--error
 
 Error.parameters = {
     docs: {
-        iframeHeight: messageStripHeight,
+        story: { iframeHeight: messageStripHeight },
         description: {
             story: `To display the error message strip, add the \`fd-message-strip--error\` modifier class to the main element.
 `
@@ -191,7 +191,7 @@ NoIcons.storyName = 'No icon';
 
 NoIcons.parameters = {
     docs: {
-        iframeHeight: messageStripHeight * 4,
+        story: { iframeHeight: messageStripHeight * 4 },
         description: {
             story: 'To display message strip without an icon, add the `fd-message-strip--no-icon` modifier class to the main element. Add the `fd-message-strip--dismissible` modifier class if the element is dismissible.'
         }
@@ -237,7 +237,7 @@ NoIconsNotDismissible.storyName = 'No icon and no dismiss button';
 
 NoIconsNotDismissible.parameters = {
     docs: {
-        iframeHeight: messageStripHeight * 4,
+        story: { iframeHeight: messageStripHeight * 4 },
         description: {
             story: 'To display message strip without an icon, add the `fd-message-strip--no-icon` modifier class to the main element.'
         }
@@ -261,7 +261,7 @@ export const MessageStripWithLink = () => `<div class="fd-message-strip fd-messa
 MessageStripWithLink.storyName = 'Text with link';
 MessageStripWithLink.parameters = {
     docs: {
-        iframeHeight: messageStripHeight,
+        story: { iframeHeight: messageStripHeight },
         description: {
             story: 'The Link inside Message Strip has additional styling. Add the `fd-message-strip--link` modifier class if the message contains a link element.'
         }
@@ -296,7 +296,7 @@ export const MessageStripWithCustomIcon = () => `<div class="fd-message-strip fd
 MessageStripWithCustomIcon.storyName = 'Custom icon';
 MessageStripWithCustomIcon.parameters = {
     docs: {
-        iframeHeight: messageStripHeight,
+        story: { iframeHeight: messageStripHeight },
         description: {
             story: 'The message strip can be customized by changing the status icon. Check <a href="https://sap.github.io/fundamental-styles/?path=/docs/components-icons-sap-icons--sizes" target="_blank" rel="noopener noreferrer" title="click to open Avatar component. Opens in a new window.">Icons</a> control for more icon types.'
         }
@@ -423,9 +423,9 @@ export const MessageStripWithAccentColors = () => `<div class="fd-message-strip 
 MessageStripWithAccentColors.storyName = 'Accent colors';
 MessageStripWithAccentColors.parameters = {
     docs: {
-        iframeHeight: messageStripHeight,
+        story: { iframeHeight: messageStripHeight },
         description: {
-            story: `If the application needs a custom Message Strip, other than the semantic variations, then the colours from <a href="https://sap.github.io/fundamental-styles/?path=/docs/components-avatar--icon" target="_blank" rel="noopener noreferrer" title="click to open Avatar component. Opens in a new window.">Avatar (Horizon)</a> control should be used. Use the modifier classes \`.fd-message-strip--accent-color-*\`, where \`*\` is a number from 1 to 10. `
+            story: `If the application needs a custom Message Strip, other than the semantic variations, then the colours from <a href='https://sap.github.io/fundamental-styles/?path=/docs/components-avatar--icon' target='_blank' rel='noopener noreferrer' title='click to open Avatar component. Opens in a new window.'>Avatar (Horizon)</a> control should be used. Use the modifier classes \`.fd-message-strip--accent-color-*\`, where \`*\` is a number from 1 to 10. `
         }
     }
 };

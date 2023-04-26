@@ -1,6 +1,6 @@
 import { DocsContainer as container } from '@storybook/addon-docs';
-import { fundamentalTheme as theme, IntroductionPageWrapper } from 'fundamental-styles/storybook';
-import Readme from '../README.md';
+import { fundamentalTheme as theme, RenderPackageIntroduction } from 'fundamental-styles/storybook';
+import Readme from '../README.md?raw';
 
 export default {
     title: 'Introduction',
@@ -10,7 +10,7 @@ export default {
     parameters: {
         docs: {
             container,
-            page: () => <IntroductionPageWrapper content={<Readme />} />,
+            page: RenderPackageIntroduction(Readme),
             theme
         },
         previewTabs: {
@@ -24,7 +24,7 @@ export default {
     }
 };
 
-export const FN = () => {
+export const Styles = () => {
     /*
       this will serve as default redirect to the docs page,
       otherwise it will render this empty div without ability
@@ -33,7 +33,7 @@ export const FN = () => {
     return '<div></div>';
 };
 
-FN.parameters = {
+Styles.parameters = {
     storyshots: { disable: true },
     docsOnly: true
 };

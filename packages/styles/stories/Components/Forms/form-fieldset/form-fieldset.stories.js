@@ -106,7 +106,7 @@ export const CheckboxGroups = () => `
 
 CheckboxGroups.parameters = {
     docs: {
-        iframeHeight: 450,
+        story: { iframeHeight: 450 },
         description: {
             story: 'Checkbox groups should always be grouped using fieldset for accessibility reasons.'
         }
@@ -140,7 +140,7 @@ export const RadioButtonGroups = () => `<fieldset class="fd-fieldset" id="radio1
 
 RadioButtonGroups.parameters = {
     docs: {
-        iframeHeight: 200,
+        story: { iframeHeight: 200 },
         description: {
             story: 'Radio button groups should always be grouped using fieldset for accessibility reasons.'
         }

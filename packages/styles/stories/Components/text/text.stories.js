@@ -20,7 +20,7 @@ export const DefaultExample = () => `<p class="fd-text">
 DefaultExample.storyName = 'Default';
 DefaultExample.parameters = {
     docs: {
-        iframeHeight: 100,
+        story: { iframeHeight: 100 },
         description: {
             story: `The default text component can display lines of text that wrap to the next line
         once they reach the end of the content container width.`
@@ -49,7 +49,7 @@ deserunt mollit anim id est laborum.</p>
 
 Whitespace.parameters = {
     docs: {
-        iframeHeight: 300,
+        story: { iframeHeight: 300 },
         description: {
             story: `The text component has a property that allows browsers to render specified indents and
         whitespace. To display indents and/or whitespace, add a
@@ -116,7 +116,7 @@ export const MaxLines = () => `
 MaxLines.storyName = 'Max lines';
 MaxLines.parameters = {
     docs: {
-        iframeHeight: 300,
+        story: { iframeHeight: 300 },
         description: {
             story: `The text component can be displayed with a maximum number of lines.
 When the maximum is reached, the text truncates and displays an ellipsis. To display text with a maximum line count,
@@ -155,7 +155,7 @@ export const Expand = () => `
 
 Expand.parameters = {
     docs: {
-        iframeHeight: 200,
+        story: { iframeHeight: 200 },
         description: {
             story: `Along with max lines, text component can display "MORE" and "LESS" links that can show
 more or less of the text.`
@@ -186,7 +186,7 @@ export const Hyphenation = () => `<div class="example-container">
 
 Hyphenation.parameters = {
     docs: {
-        iframeHeight: 200,
+        story: { iframeHeight: 200 },
         description: {
             story: `The text component can display words that are broken at appropriate hyphenation
 points in a text block. To display hyphens, add the \`fd-text--hyphenation\` to the main element.

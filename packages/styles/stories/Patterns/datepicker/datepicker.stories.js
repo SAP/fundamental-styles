@@ -444,7 +444,7 @@ export const DefaultAndCompactSizes = () => `<div style="display:flex;justify-co
 
 DefaultAndCompactSizes.parameters = {
     docs: {
-        iframeHeight: 500,
+        story: { iframeHeight: 500 },
         description: {
             story: `The date-picker component is a composition of the \`input-group\`, \`popover\` and \`calendar\` components.
           It can be displayed in compact mode by adding the \`fd-input--compact\`, \`fd-button--compact\`, \`fd-calendar--compact\`
@@ -673,7 +673,7 @@ export const TodaySelectionButton = () => `<div class="fd-docs-date-picker" styl
 
 TodaySelectionButton.parameters = {
     docs: {
-        iframeHeight: 500,
+        story: { iframeHeight: 500 },
         description: {
             story: `
 The today selection button in the footer selects today's date in the system or user-preferred timezone and closes the DatePicker popover.
@@ -900,7 +900,7 @@ export const TodayNavigationButton = () => `<div class="fd-docs-date-picker" sty
 
 TodayNavigationButton.parameters = {
     docs: {
-        iframeHeight: 450,
+        story: { iframeHeight: 450 },
         description: {
             story: `
 The today navigation button in the header navigates focus to today's date in the system or user-preferred timezone, selects it but does not close the DatePicker popover.
@@ -1121,7 +1121,7 @@ export const MobileLandscape = () => `<div class="fd-dialog-docs-static fd-calen
 MobileLandscape.storyName = 'Mobile landscape mode with today navigation';
 MobileLandscape.parameters = {
     docs: {
-        iframeHeight: 400,
+        story: { iframeHeight: 400 },
         description: {
             story: 'The additional `Today` button displayed in the navigation part of the calendar, sets the focus to the current date. The landscape sizing and roation of thw the date picker is done by adding the `fd-calendar--mobile-landscape` class.'
 
@@ -1359,7 +1359,7 @@ export const MobilePortrait = () => `<div class="fd-dialog-docs-static fd-calend
 MobilePortrait.storyName = 'Mobile portrait mode with today navigation';
 MobilePortrait.parameters = {
     docs: {
-        iframeHeight: 500,
+        story: { iframeHeight: 500 },
         description: {
             story: 'Similar to the mobile landscape example, mobile portrait mode has a `Today` button. To make date picker visible in portrait mode, add the`fd-calendar--mobile-portrait` class.'
 

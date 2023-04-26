@@ -324,7 +324,7 @@ export const Days = () => `<div style="display: flex; justify-content: space-aro
 
 Days.parameters = {
     docs: {
-        iframeHeight: 400,
+        story: { iframeHeight: 400 },
         description: {
             story: 'The calendar component can display days of the month by adding the `fd-calendar__content--dates` class to the container element.'
         }
@@ -434,7 +434,7 @@ export const Months = () => `<div style="display: flex; justify-content: space-a
 
 Months.parameters = {
     docs: {
-        iframeHeight: 400,
+        story: { iframeHeight: 400 },
         description: {
             story: 'The calendar component can display months in a year by adding the `fd-calendar__content--months` class to the container element.'
         }
@@ -803,7 +803,7 @@ export const Years = () => `<div style="display: flex; justify-content: space-ar
 
 Years.parameters = {
     docs: {
-        iframeHeight: 700,
+        story: { iframeHeight: 700 },
         description: {
             story: 'The calendar component can display a range of years in various ways: short-term, long-term, year ranges etc. Add the `fd-calendar__content--years` class to the container element, and adjust the number of columns, rows, and content to fit your use case.'
         }
@@ -968,7 +968,7 @@ export const Compact = () => `<div style="display: flex; justify-content: space-
 
 Compact.parameters = {
     docs: {
-        iframeHeight: 300,
+        story: { iframeHeight: 300 },
         description: {
             story: 'The calendar component can be displayed in compact mode by adding the `fd-calendar--compact` class to the container element.'
         }
@@ -1146,7 +1146,7 @@ export const LandscapeMobile = () => `<div class="fd-dialog-docs-static fd-calen
 LandscapeMobile.storyName = 'Landscape (mobile)';
 LandscapeMobile.parameters = {
     docs: {
-        iframeHeight: 500,
+        story: { iframeHeight: 500 },
         description: {
             story: `
 While using a mobile in landscape mode, the calendar component is displayed from a **Dialog** window, taking up the full width and height of the screen.
@@ -1354,7 +1354,7 @@ export const PortraitMobile = () => `<div class="fd-dialog-docs-static fd-calend
 PortraitMobile.storyName = 'Portrait (mobile)';
 PortraitMobile.parameters = {
     docs: {
-        iframeHeight: 500,
+        story: { iframeHeight: 500 },
         description: {
             story: `
 While using a mobile in portrait mode, the calendar component is displayed from a **Dialog** window, taking up the full width and height of the screen. It can be displayed in this way by adding the \`fd-calendar--mobile-portrait\` class to the container element.

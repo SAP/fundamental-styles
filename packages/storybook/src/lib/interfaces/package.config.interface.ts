@@ -1,7 +1,3 @@
-import {projects} from '../../../../../workspace.json';
-
-const projectKeys = Object.keys(projects);
-
 export interface ThemeDefinition {
     id: string;
     name: string;
@@ -9,7 +5,7 @@ export interface ThemeDefinition {
 }
 
 export interface PackageConfigInterface {
-    value: typeof projectKeys[number];
+    value: string;
     title: string;
     pathToPackage: string;
     defaultTheme: string;

@@ -386,10 +386,11 @@ export const Hours24Cozy = () => `<div style="min-height: 500px;">
 Hours24Cozy.storyName = 'Time Picker with 24-hour Clock Face';
 Hours24Cozy.parameters = {
     docs: {
-        iframeHeight: 500,
+        story: { iframeHeight: 500 },
         description: {
             story: `The 24-hour clock face shows an additional inner circle for the times from 13:00 to 24:00 hours.
-` }
+`
+        }
     }
 };
 
@@ -713,10 +714,11 @@ export const Hours12Cozy = () => `<div style="min-height: 500px;">
 Hours12Cozy.storyName = 'Time Picker with 12-hour Clock Face';
 Hours12Cozy.parameters = {
     docs: {
-        iframeHeight: 500,
+        story: { iframeHeight: 500 },
         description: {
             story: `The 12-hour clock face shows only one circle and an AM/PM switch is displayed.
-` }
+`
+        }
     }
 };
 
@@ -1039,9 +1041,10 @@ export const MinutesCozy = () => `<div style="min-height: 500px;">
 MinutesCozy.storyName = 'Minutes Face';
 MinutesCozy.parameters = {
     docs: {
-        iframeHeight: 500,
+        story: { iframeHeight: 500 },
         description: {
-            story: `When the minutes value is selected in the time display, the minutes clock face is shown.` }
+            story: `When the minutes value is selected in the time display, the minutes clock face is shown.`
+        }
     }
 };
 
@@ -1365,9 +1368,10 @@ export const SecondsCozy = () => `<div style="min-height: 500px;">
 SecondsCozy.storyName = 'Seconds Face';
 SecondsCozy.parameters = {
     docs: {
-        iframeHeight: 500,
+        story: { iframeHeight: 500 },
         description: {
-            story: `When the seconds value is selected in the time display, the seconds clock face is shown.` }
+            story: `When the seconds value is selected in the time display, the seconds clock face is shown.`
+        }
     }
 };
 
@@ -1693,11 +1697,12 @@ export const Hours24Compact = () => `<div style="min-height: 450px;">
 Hours24Compact.storyName = 'Time Picker with 24-hour Clock Face in Compact Mode';
 Hours24Compact.parameters = {
     docs: {
-        iframeHeight: 500,
+        story: { iframeHeight: 500 },
         description: {
             story: `All controls used as building blocks should be in their compact mode. For example:
             <code>fd-input fd-input--compact</code>, <code>fd-button fd-button--compact</code>, <code>fd-time-picker\\_\\_clock-container fd-time-picker\\_\\_clock-container--compact</code>
-           ` }
+           `
+        }
     }
 };
 
@@ -2395,9 +2400,10 @@ export const Mobile = () => `<div style="min-height: 250px;">
 
 Mobile.parameters = {
     docs: {
-        iframeHeight: 500,
+        story: { iframeHeight: 500 },
         description: {
             story: `On phones, focusing on the time input field opens a time input popover. The user can then use the mobile keyboard to enter the time. For the 12-hour time format, the popover also offers an AM/PM switch.
-` }
+`
+        }
     }
 };
