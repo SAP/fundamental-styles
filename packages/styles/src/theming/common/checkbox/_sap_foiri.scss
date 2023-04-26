@@ -1,18 +1,60 @@
 @import "./common";
 
 :root {
-  --fdCheckbox_Hover_Background: var(--sapField_Hover_Background);
-  --fdCheckbox_Hover_Shadow: none;
-  --fdCheckbox_Selected_Color: var(--sapSelectedColor);
-  --fdCheckbox_Error_State_Shadow: none;
-  --fdCheckbox_Warning_State_Shadow: none;
-  --fdCheckbox_Success_State_Shadow: none;
-  --fdCheckbox_Information_State_Shadow: none;
-  --fdCheckbox_State_Hover_Background: inherit;
-  --fdCheckbox_Readonly_Border_Width: var(--sapField_BorderWidth);
-  --fdCheckbox_Readonly_Border_Type: solid;
-  --fdCheckbox_Warning_Error_Information_Border_Style: solid;
   --fdCheckbox_Focus_Outline_Offset: 0.125rem;
   --fdCheckbox_Outline_Border_Radius: 0;
   --fdCheckbox_Compact_Outline_Border_Radius: 0;
+
+  // Default
+  --fdCheckbox_Background_Color_Default: var(--sapField_Background);
+  --fdCheckbox_Inner_Border_Width_Default: var(--sapField_BorderWidth);
+  --fdCheckbox_Inner_Border_Style_Default: solid;
+  --fdCheckbox_Inner_Border_Color_Default: var(--sapField_BorderColor);
+  --fdCheckbox_Check_Mark_Color_Default: var(--sapSelectedColor);
+
+  // Hover
+  --fdCheckbox_Background_Color_Default_Hover: var(--sapField_Hover_Background);
+  --fdCheckbox_Inner_Border_Width_Default_Hover: var(--sapField_BorderWidth);
+  --fdCheckbox_Inner_Border_Style_Default_Hover: solid;
+  --fdCheckbox_Inner_Border_Color_Default_Hover: var(--sapField_Hover_BorderColor);
+  --fdCheckbox_Check_Mark_Color_Default_Hover: var(--sapSelectedColor);
+
+  // Read-Only
+  --fdCheckbox_Background_Color_ReadOnly: var(--sapField_ReadOnly_Background);
+  --fdCheckbox_Inner_Border_Width_ReadOnly: var(--sapField_BorderWidth);
+  --fdCheckbox_Inner_Border_Style_ReadOnly: solid;
+  --fdCheckbox_Inner_Border_Color_ReadOnly: var(--sapField_ReadOnly_BorderColor);
+  --fdCheckbox_Check_Mark_Color_ReadOnly: var(--sapContent_NonInteractiveIconColor);
+
+  // Error
+  --fdCheckbox_Background_Color_Error: var(--sapField_InvalidBackground);
+  --fdCheckbox_Inner_Border_Width_Error: var(--sapField_InvalidBorderWidth);
+  --fdCheckbox_Inner_Border_Style_Error: var(--sapField_InvalidBorderStyle);
+  --fdCheckbox_Inner_Border_Color_Error: var(--sapField_InvalidColor);
+  --fdCheckbox_Check_Mark_Color_Error: var(--sapField_InvalidColor);
+  --fdCheckbox_Background_Color_Error_Hover: var(--sapField_InvalidBackground);
+
+  // Warning
+  --fdCheckbox_Background_Color_Warning: var(--sapField_WarningBackground);
+  --fdCheckbox_Inner_Border_Width_Warning: var(--sapField_WarningBorderWidth);
+  --fdCheckbox_Inner_Border_Style_Warning: var(--sapField_WarningBorderStyle);
+  --fdCheckbox_Inner_Border_Color_Warning: var(--sapField_WarningColor);
+  --fdCheckbox_Check_Mark_Color_Warning: var(--sapField_TextColor);
+  --fdCheckbox_Background_Color_Warning_Hover: var(--sapField_WarningBackground);
+
+  // Success
+  --fdCheckbox_Background_Color_Success: var(--sapField_SuccessBackground);
+  --fdCheckbox_Inner_Border_Width_Success: var(--sapField_SuccessBorderWidth);
+  --fdCheckbox_Inner_Border_Style_Success: var(--sapField_SuccessBorderStyle);
+  --fdCheckbox_Inner_Border_Color_Success: var(--sapField_SuccessColor);
+  --fdCheckbox_Check_Mark_Color_Success: var(--sapField_SuccessColor);
+  --fdCheckbox_Background_Color_Success_Hover: var(--sapField_SuccessBackground);
+
+  // Information
+  --fdCheckbox_Background_Color_Information: var(--sapField_InformationBackground);
+  --fdCheckbox_Inner_Border_Width_Information: var(--sapField_InformationBorderWidth);
+  --fdCheckbox_Inner_Border_Style_Information: var(--sapField_InformationBorderStyle);
+  --fdCheckbox_Inner_Border_Color_Information: var(--sapField_InformationColor);
+  --fdCheckbox_Check_Mark_Color_Information: var(--sapField_InformationColor);
+  --fdCheckbox_Background_Color_Information_Hover: var(--sapField_InformationBackground);
 }

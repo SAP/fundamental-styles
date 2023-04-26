@@ -1,3 +1,21 @@
+# [0.29.0-rc.17](https://github.com/SAP/fundamental-styles/compare/v0.29.0-rc.16...v0.29.0-rc.17) (2023-04-26)
+
+
+### Bug Fixes
+
+* **styles:** update Checkbox to latest Horizon 2023 [ci visual] ([#4480](https://github.com/SAP/fundamental-styles/issues/4480)) ([ff5c5b3](https://github.com/SAP/fundamental-styles/commit/ff5c5b367b3e9f3f57b21a63c8f675bd4d40f8ef))
+
+
+
+# [0.29.0-rc.16](https://github.com/SAP/fundamental-styles/compare/v0.29.0-rc.15...v0.29.0-rc.16) (2023-04-26)
+
+
+### Bug Fixes
+
+* **styles:** update Radio Button to Horizon 2023 [ci visual] ([#4479](https://github.com/SAP/fundamental-styles/issues/4479)) ([e94d31b](https://github.com/SAP/fundamental-styles/commit/e94d31b6c069bce519031ceb75eec7280173bd52))
+
+
+
 # [0.29.0-rc.15](https://github.com/SAP/fundamental-styles/compare/v0.29.0-rc.14...v0.29.0-rc.15) (2023-04-26)
 
 
