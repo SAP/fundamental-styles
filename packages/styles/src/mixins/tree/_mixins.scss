@@ -20,7 +20,7 @@ $fd-tree-navigated-box-shadow-rtl: inset 0.1875rem 0 0 0 var(--sapSelectedColor)
   }
 
   @include fd-list-fake-outline() {
-    bottom: 0.625rem;
+    bottom: 0.0625rem;
   }
 
   @include fd-active() {
