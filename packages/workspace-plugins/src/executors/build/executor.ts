@@ -49,7 +49,7 @@ export default async function runExecutor(options: BuildExecutorSchema, context:
         commit();
     }
 
-    let projectPackageJsonContent = readFileSync(`${projectJson.root}/package.json`, 'utf-8');
+    let projectPackageJsonContent = readFileSync(`${projectJson!.root}/package.json`, 'utf-8');
     const projectPackageJson = JSON.parse(projectPackageJsonContent);
 
     projectPackageJson['exports'] = projectPackageJson['exports'] || {};
