@@ -1,3 +1,12 @@
+# [0.29.0-rc.15](https://github.com/SAP/fundamental-styles/compare/v0.29.0-rc.14...v0.29.0-rc.15) (2023-04-26)
+
+
+### Bug Fixes
+
+* **styles:** tree item active outline [ci visual] ([#4481](https://github.com/SAP/fundamental-styles/issues/4481)) ([771096c](https://github.com/SAP/fundamental-styles/commit/771096cd26eb264e778fa617f97e4a87f96ed6cb))
+
+
+
 # [0.29.0-rc.14](https://github.com/SAP/fundamental-styles/compare/v0.29.0-rc.13...v0.29.0-rc.14) (2023-04-25)
 
 
