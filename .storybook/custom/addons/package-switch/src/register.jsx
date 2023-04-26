@@ -2,9 +2,9 @@ const React = require('react');
 const { addons, types } = require('@storybook/addons');
 const { ADDON_ID } = require('./constants');
 const { getOwner } = require('../../utilities/get-owner');
-const { isValidProject } = require('../../utilities/projects');
+const { isValidProject, projects } = require('../../utilities/projects');
 const { useStorybookState } = require('@storybook/api');
-const { useEffect, useState, useMemo } = require('react');
+const { useEffect, useState } = require('react');
 const { useMemoWithComparator } = require('../../utilities/use-memo-with-comparator');
 const deepEqual = require('fast-deep-equal');
 
@@ -72,7 +72,11 @@ addons.register(ADDON_ID, (api) => {
                     updateIndex(isFirstLoad ? titledStories : originalIndex, selectedPackageId).then(({ packageId }) => {
                         api.updateGlobals({ ...globals, packageId });
                         if (!api.getCurrentStoryData()) {
-                            api.selectFirstStory();
+                            if (selectedPackageId !== 'all') {
+                                api.selectStory(`${projects[selectedPackageId].storiesSlug}-introduction--docs`)
+                            } else {
+                                api.selectFirstStory();
+                            }
                         }
                     });
                 }
