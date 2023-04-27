@@ -79,7 +79,7 @@ The tool header supports object status in its semantic form. No industry specifi
 - <code style="color:red;">.fd-tool-header__input-group</code>
 
 `,
-        tags: ['btp', 'non-f3', 'theme', 'development']
+        tags: ['btp', 'theme', 'development']
     }
 };
 

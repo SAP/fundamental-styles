@@ -26,7 +26,7 @@ Elements structure:
       * \`fd-splitter__pagination-item--active\` Modifier class for the active pagination item.
         * \`fd-splitter__pagination-item-dot\` Pagination item dot element.
 `,
-        tags: ['non-f3']
+        tags: ['f3', 'theme']
     }
 };
 

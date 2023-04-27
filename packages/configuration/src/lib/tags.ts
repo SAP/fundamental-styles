@@ -5,13 +5,13 @@ export const tags = {
         "color": 1
     },
     "f3": {
-        "name": "fiori 3",
-        "title": "Fiori 3 Component",
+        "name": "sap design",
+        "title": "SAP Design System Component",
         "color": 2
     },
     "theme": {
         "name": "themeable",
-        "title": "Fiori 3 Themeable Component",
+        "title": "SAP Design System Themeable Component",
         "color": 3
     },
     "design": {
@@ -25,8 +25,8 @@ export const tags = {
         "color": 5
     },
     "non-f3": {
-        "name": "non-fiori 3",
-        "title": "Non Fiori 3 Component",
+        "name": "non-sap-design",
+        "title": "Non Standard SAP Design System Component",
         "color": 6
     },
     "under-review": {
@@ -42,6 +42,11 @@ export const tags = {
     "btp": {
         "name": "BTP",
         "title": "BTP Visual Design",
+        "color": 9
+    },
+    "cx": {
+        "name": "I&CX",
+        "title": "I&CX Visual Design",
         "color": 9
     }
 }

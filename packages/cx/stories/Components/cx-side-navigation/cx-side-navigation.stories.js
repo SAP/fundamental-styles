@@ -25,6 +25,7 @@ In the <code>Narrow</code> variant:
 - Second level items do not display an icon and are not indented
 - If second-level items have children, they show the expand/collapse arrows
 - Third level items do not display an icon and are indented by 2 rem (32px)`,
+    tags: ['cx', 'theme']
     }
 };
 
