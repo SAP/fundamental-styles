@@ -9,7 +9,7 @@ export default {
     This control enables the user to load, save, and change variants.
     In some cases, the table settings are also saved within a variant.
     In the context of tables, this control is used to save, manage, and load table settings which include layout, column visibility, sorting, and grouping.`,
-    tags: ['btp', 'non-f3', 'theme', 'development']
+    tags: ['f3', 'theme', 'development']
   }
 }
 

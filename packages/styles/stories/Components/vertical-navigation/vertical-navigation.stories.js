@@ -33,7 +33,7 @@ Vertical navigation can be viewed in three different states:
 **Note:** It is recommend to use only two states per device.
         `,
 
-        tags: ['btp', 'non-f3', 'theme', 'development']
+        tags: ['btp', 'theme', 'development']
     }
 };
 
