@@ -33,6 +33,7 @@
 @import "./common/shellbar/sap_horizon_hc";
 @import "./common/user-menu/sap_horizon";
 @import "./common/generic-tag/sap_horizon_hc";
+@import "./common/flexible-column-layout/sap_horizon_hc";
 @import "./sap_horizon_hcb/css_variables";
 
 :root {
@@ -177,13 +178,6 @@
 
   /* Badge */
   --fdBadge_Border_Color: var(--sapGroup_ContentBorderColor);
-
-  /** Flexible Column Layout */
-  --fdFlexibleColumnLayout_Toggle_Image_Color: var(--sapHighlightColor);
-  --fdFlexibleColumnLayout_Border: none;
-  --fdFlexibleColumnLayout_Background_Solid: var(--sapShell_Background);
-  --fdFlexibleColumnLayout_Background_Translucent: var(--sapGroup_ContentBackground);
-  --fdFlexibleColumnLayout_Background_Transparent: transparent;
 
   /** Dialog */
   --fdDialog_Background_Opacity: 0.6;

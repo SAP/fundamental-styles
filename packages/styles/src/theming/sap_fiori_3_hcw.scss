@@ -32,6 +32,7 @@
 @import "./common/variant-management/sap_fiori";
 @import "./common/shellbar/sap_fiori_hc";
 @import "./common/user-menu/sap_fiori";
+@import "./common/flexible-column-layout/sap_fiori_hc";
 @import "./sap_fiori_3_hcw/css_variables";
 
 :root {
@@ -180,13 +181,6 @@
 
   /* Badge */
   --fdBadge_Border_Color: var(--sapGroup_ContentBorderColor);
-
-  /** Flexible Column Layout */
-  --fdFlexibleColumnLayout_Toggle_Image_Color: var(--sapObjectHeader_BorderColor);
-  --fdFlexibleColumnLayout_Border: solid 0.0625rem var(--sapGroup_ContentBorderColor);
-  --fdFlexibleColumnLayout_Background_Solid: var(--sapBackgroundColor);
-  --fdFlexibleColumnLayout_Background_Translucent: var(--sapBackgroundColor);
-  --fdFlexibleColumnLayout_Background_Transparent: var(--sapBackgroundColor);
 
   /** Dialog */
   --fdDialog_Background_Opacity: 0.8;

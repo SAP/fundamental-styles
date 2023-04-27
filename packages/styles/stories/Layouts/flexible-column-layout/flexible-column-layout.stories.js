@@ -57,7 +57,7 @@ ThreeColumnsLayout.parameters = {
 
 export const TwoColumnsLayout = () => `
 <div style="max-width: 1200px">
-    <div class="fd-flexible-column-layout">
+    <div class="fd-flexible-column-layout fd-flexible-column-layout--transparent">
         <div class="fd-flexible-column-layout__column" style="width: 33%">
             <div class="docs-layout-grid-bg--tall"></div>
         </div>
@@ -85,6 +85,7 @@ TwoColumnsLayout.parameters = {
     docs: {
         description: {
             story: `
+Flexible Column with transparent separators
 - Width of the device: Max: \`1280px\`, Min: 961px
 - Wide column width: \`67%\`
 - Narrow column width: \`33%\`
@@ -95,7 +96,7 @@ TwoColumnsLayout.parameters = {
 
 export const OneColumnsLayout = () => `
 <div style="max-width: 600px">
-    <div class="fd-flexible-column-layout">
+    <div class="fd-flexible-column-layout fd-flexible-column-layout--translucent">
         <div class="fd-flexible-column-layout__column fd-flexible-column-layout__column--hidden" style="width: 0">
             <div class="docs-layout-grid-bg--tall"></div>
         </div>
@@ -123,6 +124,7 @@ OneColumnsLayout.parameters = {
     docs: {
         description: {
             story: `
+Flexible Column Layout with translucent separators
 - Max width of the device: \`960px\`
 - Column width: \`100%\`
 `
