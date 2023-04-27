@@ -1,3 +1,12 @@
+# [0.29.0-rc.19](https://github.com/SAP/fundamental-styles/compare/v0.29.0-rc.18...v0.29.0-rc.19) (2023-04-27)
+
+
+### Features
+
+* **styles:** update Flexible Column Layout Horizon [ci visual] ([#4485](https://github.com/SAP/fundamental-styles/issues/4485)) ([bffc57f](https://github.com/SAP/fundamental-styles/commit/bffc57fa67cc1bf5b495b5bc4cb9722c70379ec5))
+
+
+
 # [0.29.0-rc.18](https://github.com/SAP/fundamental-styles/compare/v0.29.0-rc.17...v0.29.0-rc.18) (2023-04-26)
 
 
