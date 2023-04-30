@@ -61,7 +61,7 @@
     "@jsdevtools/npm-publish": "^1.4.3",
     "@nrwl/devkit": "15.8.7",
     "@nrwl/eslint-plugin-nx": "15.8.7",
-    "@nrwl/js": "15.8.7",
+    "@nrwl/js": "16.0.1",
     "@nrwl/linter": "15.8.7",
     "@nrwl/nx-cloud": "16.0.4",
     "@nrwl/nx-plugin": "15.8.7",
