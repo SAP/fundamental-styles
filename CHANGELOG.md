@@ -1,3 +1,12 @@
+# [0.29.0-rc.21](https://github.com/SAP/fundamental-styles/compare/v0.29.0-rc.20...v0.29.0-rc.21) (2023-05-01)
+
+
+### Features
+
+* **styles:** splitter with horizon 2023 [ci visual] ([#4488](https://github.com/SAP/fundamental-styles/issues/4488)) ([cca9d8b](https://github.com/SAP/fundamental-styles/commit/cca9d8b3b7b8761e41377df9f9b389f88082a1ab))
+
+
+
 # [0.29.0-rc.20](https://github.com/SAP/fundamental-styles/compare/v0.29.0-rc.19...v0.29.0-rc.20) (2023-04-27)
 
 
