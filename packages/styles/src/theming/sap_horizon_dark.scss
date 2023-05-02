@@ -34,6 +34,7 @@
 @import "./common/user-menu/sap_horizon";
 @import "./common/generic-tag/sap_horizon";
 @import "./common/flexible-column-layout/sap_horizon";
+@import "./common/avatar/sap_horizon";
 @import "./sap_horizon_dark/css_variables";
 
 :root {
@@ -52,47 +53,6 @@
 
   /* Action sheet */
   --fdOverlay_Background_Opacity: 0.6;
-
-  /* Avatar */
-  --fdAvatar_BackgroundColor: var(--sapAccentColor6);
-  --fdAvatar_Tile_BackgroundColor: var(--sapTile_IconColor);
-  --fdAvatar_Transparent_BackgroundColor: transparent;
-  --fdAvatar_Border: none;
-  --fdAvatar_Text_Shadow: none;
-  --fdAvatar_Focus_Outline_Offset: -0.3125rem;
-  --fdAvatar_Focus_Outline_Radius: 0.9rem;
-  --fdAvatar_Focus_Outline_Radius_Circle: 100%;
-  --fdAvatar_Accent_Color: var(--sapContent_ContrastTextColor);
-  --fdAvatar_Accent_Color_1: var(--sapAvatar_1_Background);
-  --fdAvatar_Accent_Color_2: var(--sapAvatar_2_Background);
-  --fdAvatar_Accent_Color_3: var(--sapAvatar_3_Background);
-  --fdAvatar_Accent_Color_4: var(--sapAvatar_4_Background);
-  --fdAvatar_Accent_Color_5: var(--sapAvatar_5_Background);
-  --fdAvatar_Accent_Color_6: var(--sapAvatar_6_Background);
-  --fdAvatar_Accent_Color_7: var(--sapAvatar_7_Background);
-  --fdAvatar_Accent_Color_8: var(--sapAvatar_8_Background);
-  --fdAvatar_Accent_Color_9: var(--sapAvatar_9_Background);
-  --fdAvatar_Accent_Color_10: var(--sapAvatar_10_Background);
-  --fdAvatar_Accent_Color_1_Text: var(--sapAvatar_1_TextColor);
-  --fdAvatar_Accent_Color_2_Text: var(--sapAvatar_2_TextColor);
-  --fdAvatar_Accent_Color_3_Text: var(--sapAvatar_3_TextColor);
-  --fdAvatar_Accent_Color_4_Text: var(--sapAvatar_4_TextColor);
-  --fdAvatar_Accent_Color_5_Text: var(--sapAvatar_5_TextColor);
-  --fdAvatar_Accent_Color_6_Text: var(--sapAvatar_6_TextColor);
-  --fdAvatar_Accent_Color_7_Text: var(--sapAvatar_7_TextColor);
-  --fdAvatar_Accent_Color_8_Text: var(--sapAvatar_8_TextColor);
-  --fdAvatar_Accent_Color_9_Text: var(--sapAvatar_9_TextColor);
-  --fdAvatar_Accent_Color_10_Text: var(--sapAvatar_10_TextColor);
-  --fdAvatar_Accent_Color_1_Border: 0.0625rem solid var(--sapAvatar_1_BorderColor);
-  --fdAvatar_Accent_Color_2_Border: 0.0625rem solid var(--sapAvatar_2_BorderColor);
-  --fdAvatar_Accent_Color_3_Border: 0.0625rem solid var(--sapAvatar_3_BorderColor);
-  --fdAvatar_Accent_Color_4_Border: 0.0625rem solid var(--sapAvatar_4_BorderColor);
-  --fdAvatar_Accent_Color_5_Border: 0.0625rem solid var(--sapAvatar_5_BorderColor);
-  --fdAvatar_Accent_Color_6_Border: 0.0625rem solid var(--sapAvatar_6_BorderColor);
-  --fdAvatar_Accent_Color_7_Border: 0.0625rem solid var(--sapAvatar_7_BorderColor);
-  --fdAvatar_Accent_Color_8_Border: 0.0625rem solid var(--sapAvatar_8_BorderColor);
-  --fdAvatar_Accent_Color_9_Border: 0.0625rem solid var(--sapAvatar_9_BorderColor);
-  --fdAvatar_Accent_Color_10_Border: 0.0625rem solid var(--sapAvatar_10_BorderColor);
 
   /* Avatar Group */
   --fdAvatarGroup_MoreButton_Border: var(--sapButton_BorderWidth);

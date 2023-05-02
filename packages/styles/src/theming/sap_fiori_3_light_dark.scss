@@ -31,6 +31,7 @@
 @import "./common/variant-management/sap_fiori";
 @import "./common/user-menu/sap_fiori";
 @import "./common/flexible-column-layout/sap_fiori";
+@import "./common/avatar/sap_fiori";
 @import "./sap_fiori_3_light_dark/css_variables";
 
 :root {
@@ -40,47 +41,6 @@
   /* Rating Indicator */
   // default mode
   --fdRating_Indicator_Selected_Hover_Opacity: 0.8;
-
-  /* Avatar */
-  --fdAvatar_BackgroundColor: var(--sapAccentColor6);
-  --fdAvatar_Tile_BackgroundColor: var(--sapTile_IconColor);
-  --fdAvatar_Transparent_BackgroundColor: transparent;
-  --fdAvatar_Border: none;
-  --fdAvatar_Text_Shadow: var(--sapContent_ContrastTextShadow);
-  --fdAvatar_Focus_Outline_Offset: -0.125rem;
-  --fdAvatar_Focus_Outline_Radius: 0;
-  --fdAvatar_Focus_Outline_Radius_Circle: 0;
-  --fdAvatar_Accent_Color: var(--sapContent_ContrastTextColor);
-  --fdAvatar_Accent_Color_1: var(--sapAccentColor1);
-  --fdAvatar_Accent_Color_2: var(--sapAccentColor2);
-  --fdAvatar_Accent_Color_3: var(--sapAccentColor3);
-  --fdAvatar_Accent_Color_4: var(--sapAccentColor4);
-  --fdAvatar_Accent_Color_5: var(--sapAccentColor5);
-  --fdAvatar_Accent_Color_6: var(--sapAccentColor6);
-  --fdAvatar_Accent_Color_7: var(--sapAccentColor7);
-  --fdAvatar_Accent_Color_8: var(--sapAccentColor8);
-  --fdAvatar_Accent_Color_9: var(--sapAccentColor9);
-  --fdAvatar_Accent_Color_10: var(--sapAccentColor10);
-  --fdAvatar_Accent_Color_1_Text: var(--sapContent_ContrastTextColor);
-  --fdAvatar_Accent_Color_2_Text: var(--sapContent_ContrastTextColor);
-  --fdAvatar_Accent_Color_3_Text: var(--sapContent_ContrastTextColor);
-  --fdAvatar_Accent_Color_4_Text: var(--sapContent_ContrastTextColor);
-  --fdAvatar_Accent_Color_5_Text: var(--sapContent_ContrastTextColor);
-  --fdAvatar_Accent_Color_6_Text: var(--sapContent_ContrastTextColor);
-  --fdAvatar_Accent_Color_7_Text: var(--sapContent_ContrastTextColor);
-  --fdAvatar_Accent_Color_8_Text: var(--sapContent_ContrastTextColor);
-  --fdAvatar_Accent_Color_9_Text: var(--sapContent_ContrastTextColor);
-  --fdAvatar_Accent_Color_10_Text: var(--sapContent_ContrastTextColor);
-  --fdAvatar_Accent_Color_1_Border: none;
-  --fdAvatar_Accent_Color_2_Border: none;
-  --fdAvatar_Accent_Color_3_Border: none;
-  --fdAvatar_Accent_Color_4_Border: none;
-  --fdAvatar_Accent_Color_5_Border: none;
-  --fdAvatar_Accent_Color_6_Border: none;
-  --fdAvatar_Accent_Color_7_Border: none;
-  --fdAvatar_Accent_Color_8_Border: none;
-  --fdAvatar_Accent_Color_9_Border: none;
-  --fdAvatar_Accent_Color_10_Border: none;
 
   /* Avatar Group */
   --fdAvatarGroup_MoreButton_Border: var(--sapButton_BorderWidth);

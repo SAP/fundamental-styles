@@ -1,68 +1,92 @@
 
 // ----- Avatar -----
-$fd-avatar-border-radius: 50%;
 $fd-avatar-zoom-icon-s: 1.125rem;
 $fd-avatar-zoom-icon-l: 1.25rem;
 $fd-avatar-zoom-icon-xl: 1.75rem;
+$fd-avatar-zoom-icon-font-size-s: 0.75rem;
+$fd-avatar-zoom-icon-font-size-l: 0.875rem;
+$fd-avatar-zoom-icon-font-size-xl: 1rem;
 $fd-avatar-const-ratio: 1rem;
+$fd-avatar-font-stretched-condensed: condensed;
+$fd-avatar-font-stretched-normal: normal;
 
 $fd-avatar-accent-colors: (
   "1": (
     "background-color": var(--fdAvatar_Accent_Color_1),
+    "background-color-hover": var(--fdAvatar_Accent_Color_Hover_1),
+    "border-color-hover":var(--fdAvatar_Accent_Color_1_Border_Color_Hover),
     "text-color": var(--fdAvatar_Accent_Color_1_Text),
     "border": var(--fdAvatar_Accent_Color_1_Border),
     "border-color": var(--sapAvatar_1_BorderColor)
   ),
   "2": (
     "background-color": var(--fdAvatar_Accent_Color_2),
+    "background-color-hover": var(--fdAvatar_Accent_Color_Hover_2),
+    "border-color-hover":var(--fdAvatar_Accent_Color_2_Border_Color_Hover),
     "text-color": var(--fdAvatar_Accent_Color_2_Text),
     "border": var(--fdAvatar_Accent_Color_2_Border),
     "border-color": var(--sapAvatar_2_BorderColor)
   ),
   "3": (
     "background-color": var(--fdAvatar_Accent_Color_3),
+    "background-color-hover": var(--fdAvatar_Accent_Color_Hover_3),
+    "border-color-hover":var(--fdAvatar_Accent_Color_3_Border_Color_Hover),
     "text-color": var(--fdAvatar_Accent_Color_3_Text),
     "border": var(--fdAvatar_Accent_Color_3_Border),
     "border-color": var(--sapAvatar_3_BorderColor)
   ),
   "4": (
     "background-color": var(--fdAvatar_Accent_Color_4),
+    "background-color-hover": var(--fdAvatar_Accent_Color_Hover_4),
+    "border-color-hover":var(--fdAvatar_Accent_Color_4_Border_Color_Hover),
     "text-color": var(--fdAvatar_Accent_Color_4_Text),
     "border": var(--fdAvatar_Accent_Color_4_Border),
     "border-color": var(--sapAvatar_4_BorderColor)
   ),
   "5": (
     "background-color": var(--fdAvatar_Accent_Color_5),
+    "background-color-hover": var(--fdAvatar_Accent_Color_Hover_5),
+    "border-color-hover":var(--fdAvatar_Accent_Color_5_Border_Color_Hover),
     "text-color": var(--fdAvatar_Accent_Color_5_Text),
     "border": var(--fdAvatar_Accent_Color_5_Border),
     "border-color": var(--sapAvatar_5_BorderColor)
   ),
   "6": (
     "background-color": var(--fdAvatar_Accent_Color_6),
+    "background-color-hover": var(--fdAvatar_Accent_Color_Hover_6),
+    "border-color-hover":var(--fdAvatar_Accent_Color_6_Border_Color_Hover),
     "text-color": var(--fdAvatar_Accent_Color_6_Text),
     "border": var(--fdAvatar_Accent_Color_6_Border),
     "border-color": var(--sapAvatar_6_BorderColor)
   ),
   "7": (
     "background-color": var(--fdAvatar_Accent_Color_7),
+    "background-color-hover": var(--fdAvatar_Accent_Color_Hover_7),
+    "border-color-hover":var(--fdAvatar_Accent_Color_7_Border_Color_Hover),
     "text-color": var(--fdAvatar_Accent_Color_7_Text),
     "border": var(--fdAvatar_Accent_Color_7_Border),
     "border-color": var(--sapAvatar_7_BorderColor)
   ),
   "8": (
     "background-color": var(--fdAvatar_Accent_Color_8),
+    "background-color-hover": var(--fdAvatar_Accent_Color_Hover_8),
+    "border-color-hover":var(--fdAvatar_Accent_Color_8_Border_Color_Hover),
     "text-color": var(--fdAvatar_Accent_Color_8_Text),
     "border": var(--fdAvatar_Accent_Color_8_Border),
     "border-color": var(--sapAvatar_8_BorderColor)
   ),
   "9": (
     "background-color": var(--fdAvatar_Accent_Color_9),
+    "background-color-hover": var(--fdAvatar_Accent_Color_Hover_9),
+    "border-color-hover":var(--fdAvatar_Accent_Color_9_Border_Color_Hover),
     "text-color": var(--fdAvatar_Accent_Color_9_Text),
     "border": var(--fdAvatar_Accent_Color_9_Border),
     "border-color": var(--sapAvatar_9_BorderColor)
   ),
   "10": (
     "background-color": var(--fdAvatar_Accent_Color_10),
+    "background-color-hover": var(--fdAvatar_Accent_Color_Hover_10),
+    "border-color-hover":var(--fdAvatar_Accent_Color_10_Border_Color_Hover),
     "text-color": var(--fdAvatar_Accent_Color_10_Text),
     "border": var(--fdAvatar_Accent_Color_10_Border),
     "border-color": var(--sapAvatar_10_BorderColor)
@@ -75,40 +99,40 @@ $fd-avatar-sizes: (
     "font-size": 1rem,
     "zoomIconDimensions": $fd-avatar-zoom-icon-s,
     "offset": -0.125rem,
-    "beforeFontSize": 0.75rem,
-    "fontStretch": condensed
+    "zoomIconFontSize": $fd-avatar-zoom-icon-font-size-s,
+    "fontStretch": $fd-avatar-font-stretched-condensed
   ),
   "s": (
     "ratio": ($fd-avatar-const-ratio * 3),
     "font-size": 1.125rem,
     "zoomIconDimensions": $fd-avatar-zoom-icon-s,
     "offset": -0.125rem,
-    "beforeFontSize": 0.75rem,
-    "fontStretch": condensed
+    "zoomIconFontSize": $fd-avatar-zoom-icon-font-size-s,
+    "fontStretch": $fd-avatar-font-stretched-condensed
   ),
   "m": (
     "ratio": ($fd-avatar-const-ratio * 4),
     "font-size": 1.5rem,
     "zoomIconDimensions": $fd-avatar-zoom-icon-s,
     "offset": -0.125rem,
-    "beforeFontSize": 0.75rem,
-    "fontStretch": normal
+    "zoomIconFontSize": $fd-avatar-zoom-icon-font-size-s,
+    "fontStretch": $fd-avatar-font-stretched-normal
   ),
   "l": (
     "ratio": ($fd-avatar-const-ratio * 5),
     "font-size": 2.25rem,
     "zoomIconDimensions": $fd-avatar-zoom-icon-l,
     "offset": -0.1875rem,
-    "beforeFontSize": 0.875rem,
-    "fontStretch": normal
+    "zoomIconFontSize": $fd-avatar-zoom-icon-font-size-l,
+    "fontStretch": $fd-avatar-font-stretched-normal
   ),
   "xl": (
     "ratio": ($fd-avatar-const-ratio * 7),
     "font-size": 3rem,
     "zoomIconDimensions": $fd-avatar-zoom-icon-xl,
     "offset": -0.25rem,
-    "beforeFontSize": 1rem,
-    "fontStretch": normal
+    "zoomIconFontSize": $fd-avatar-zoom-icon-font-size-xl,
+    "fontStretch": $fd-avatar-font-stretched-normal
   )
 );
 
@@ -126,6 +150,29 @@ $fd-avatar-group-item-spacing: (
     "m": ("margin-right": -1.625rem),
     "l": ("margin-right": -2rem),
     "xl": ("margin-right": -2.75rem)
+  )
+);
+
+$fd-avatar-value-states: (
+  "positive": (
+    "background": var(--sapSuccessBackground),
+    "borderColor": var(--sapSuccessBorderColor),
+    "color": var(--sapPositiveTextColor)
+  ),
+  "caution": (
+    "background": var(--sapWarningBackground),
+    "borderColor": var(--sapWarningBorderColor),
+    "color": var(--sapCriticalTextColor)
+  ),
+  "negative": (
+    "background": var(--sapErrorBackground),
+    "borderColor": var(--sapErrorBorderColor),
+    "color": var(--sapNegativeTextColor)
+  ),
+  "information": (
+    "background": var(--sapInformationBackground),
+    "borderColor": var(--sapInformationBorderColor),
+    "color": var(--sapInformativeTextColor)
   )
 );
 

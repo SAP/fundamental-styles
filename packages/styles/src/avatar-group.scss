@@ -2,9 +2,6 @@
 @import "./avatar";
 @import "./avatar-variables";
 
-/*!
-.fd-avatar-group+((--individual|--group), (--xs|--s|--m|--l|--xl)
-*/
 $block: #{$fd-namespace}-avatar-group;
 
 .#{$block} {
