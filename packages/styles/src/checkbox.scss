@@ -99,21 +99,35 @@ $block: #{$fd-namespace}-checkbox;
         @include fd-form-radio-checkbox-required-label();
       }
     }
+
+    &--wrap {
+      .#{$block}__label-container {
+        height: auto;
+        white-space: initial;
+      }
+
+      .#{$block}__text {
+        white-space: initial;
+      }
+    }
   }
 
   &__label-container {
     @include fd-reset();
     @include fd-flex-vertical-center();
+    @include fd-ellipsis();
 
-    width: 100%;
     height: 1rem;
     pointer-events: none;
+    max-width: inherit;
   }
 
   &__text {
     @include fd-reset();
     @include fd-ellipsis();
     @include fd-set-margins-x(var(--fdCheckbox_Padding), 0);
+
+    max-width: inherit;
   }
 
   &:checked + .#{$block}__label::before {

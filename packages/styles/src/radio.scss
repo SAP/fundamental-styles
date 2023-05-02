@@ -32,11 +32,11 @@ $block: #{$fd-namespace}-radio;
   &__label {
     @include fd-form-label();
     @include fd-action-cursor();
+    @include fd-ellipsis();
 
     line-height: 1rem;
     display: flex;
     align-items: center;
-    overflow: hidden;
     padding: var(--fdRadio_Outer_Circle_Padding);
     color: var(--sapField_TextColor);
 
@@ -93,6 +93,23 @@ $block: #{$fd-namespace}-radio;
         margin-left: 0;
       }
     }
+
+    &--wrap {
+      .#{$block}__text {
+        white-space: initial;
+      }
+
+      &::after {
+        top: initial;
+      }
+    }
+  }
+
+  &__text {
+    @include fd-reset();
+    @include fd-ellipsis();
+
+    line-height: 1rem;
   }
 
   &:checked + .#{$block}__label::after {
