@@ -1,9 +1,11 @@
 @import "./sap_fiori";
 
 :root {
+  // Default
   --fdAvatar_BackgroundColor: var(--sapBackgroundColor);
-  --fdAvatar_Border: 0.0625rem solid var(--sapGroup_ContentBorderColor);
+  --fdAvatar_Border_Color: var(--sapGroup_ContentBorderColor);
   --fdAvatar_Text_Shadow: var(--sapContent_ContrastTextShadow);
+  --fdAvatar_Color: var(--sapContent_ContrastTextColor);
 
   // Tile
   --fdAvatar_Tile_BackgroundColor: var(--sapBackgroundColor);
@@ -18,12 +20,11 @@
   --fdAvatar_Transparent_BackgroundColor_Hover: var(--sapBackgroundColor);
 
   // Focus
-  --fdAvatar_Focus_Outline_Offset: -0.125rem;
+  --fdAvatar_Focus_Outline_Offset: -0.25rem;
   --fdAvatar_Focus_Outline_Radius: 0;
   --fdAvatar_Focus_Outline_Radius_Circle: 0;
 
   // Accent Colors
-  --fdAvatar_Accent_Color: var(--sapBackgroundColor);
   --fdAvatar_Accent_Color_1: var(--sapBackgroundColor);
   --fdAvatar_Accent_Color_2: var(--sapBackgroundColor);
   --fdAvatar_Accent_Color_3: var(--sapBackgroundColor);
@@ -44,16 +45,16 @@
   --fdAvatar_Accent_Color_8_Text: var(--sapContent_ContrastTextColor);
   --fdAvatar_Accent_Color_9_Text: var(--sapContent_ContrastTextColor);
   --fdAvatar_Accent_Color_10_Text: var(--sapContent_ContrastTextColor);
-  --fdAvatar_Accent_Color_1_Border: 0.0625rem solid var(--sapGroup_ContentBorderColor);
-  --fdAvatar_Accent_Color_2_Border: 0.0625rem solid var(--sapGroup_ContentBorderColor);
-  --fdAvatar_Accent_Color_3_Border: 0.0625rem solid var(--sapGroup_ContentBorderColor);
-  --fdAvatar_Accent_Color_4_Border: 0.0625rem solid var(--sapGroup_ContentBorderColor);
-  --fdAvatar_Accent_Color_5_Border: 0.0625rem solid var(--sapGroup_ContentBorderColor);
-  --fdAvatar_Accent_Color_6_Border: 0.0625rem solid var(--sapGroup_ContentBorderColor);
-  --fdAvatar_Accent_Color_7_Border: 0.0625rem solid var(--sapGroup_ContentBorderColor);
-  --fdAvatar_Accent_Color_8_Border: 0.0625rem solid var(--sapGroup_ContentBorderColor);
-  --fdAvatar_Accent_Color_9_Border: 0.0625rem solid var(--sapGroup_ContentBorderColor);
-  --fdAvatar_Accent_Color_10_Border: 0.0625rem solid var(--sapGroup_ContentBorderColor);
+  --fdAvatar_Accent_Color_1_Border: var(--sapGroup_ContentBorderColor);
+  --fdAvatar_Accent_Color_2_Border: var(--sapGroup_ContentBorderColor);
+  --fdAvatar_Accent_Color_3_Border: var(--sapGroup_ContentBorderColor);
+  --fdAvatar_Accent_Color_4_Border: var(--sapGroup_ContentBorderColor);
+  --fdAvatar_Accent_Color_5_Border: var(--sapGroup_ContentBorderColor);
+  --fdAvatar_Accent_Color_6_Border: var(--sapGroup_ContentBorderColor);
+  --fdAvatar_Accent_Color_7_Border: var(--sapGroup_ContentBorderColor);
+  --fdAvatar_Accent_Color_8_Border: var(--sapGroup_ContentBorderColor);
+  --fdAvatar_Accent_Color_9_Border: var(--sapGroup_ContentBorderColor);
+  --fdAvatar_Accent_Color_10_Border: var(--sapGroup_ContentBorderColor);
 
   // Accent Colors Hover
   --fdAvatar_Accent_Color_Hover_1: var(--sapActiveColor);

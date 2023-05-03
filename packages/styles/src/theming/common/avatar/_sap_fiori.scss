@@ -1,9 +1,11 @@
 @import "./common";
 
 :root {
+  // Default
   --fdAvatar_BackgroundColor: var(--sapAccentColor6);
-  --fdAvatar_Border: none;
+  --fdAvatar_Border_Color: transparent;
   --fdAvatar_Text_Shadow: var(--sapContent_ContrastTextShadow);
+  --fdAvatar_Color: var(--sapContent_ContrastTextColor);
 
   // Tile
   --fdAvatar_Tile_BackgroundColor: var(--sapTile_IconColor);
@@ -18,12 +20,11 @@
   --fdAvatar_Transparent_BackgroundColor_Hover: transparent;
 
   // Focus
-  --fdAvatar_Focus_Outline_Offset: -0.125rem;
+  --fdAvatar_Focus_Outline_Offset: -0.1875rem;
   --fdAvatar_Focus_Outline_Radius: 0;
   --fdAvatar_Focus_Outline_Radius_Circle: 0;
 
   // Accent Colors
-  --fdAvatar_Accent_Color: var(--sapContent_ContrastTextColor);
   --fdAvatar_Accent_Color_1: var(--sapAccentColor1);
   --fdAvatar_Accent_Color_2: var(--sapAccentColor2);
   --fdAvatar_Accent_Color_3: var(--sapAccentColor3);
@@ -44,16 +45,16 @@
   --fdAvatar_Accent_Color_8_Text: var(--sapContent_ContrastTextColor);
   --fdAvatar_Accent_Color_9_Text: var(--sapContent_ContrastTextColor);
   --fdAvatar_Accent_Color_10_Text: var(--sapContent_ContrastTextColor);
-  --fdAvatar_Accent_Color_1_Border: none;
-  --fdAvatar_Accent_Color_2_Border: none;
-  --fdAvatar_Accent_Color_3_Border: none;
-  --fdAvatar_Accent_Color_4_Border: none;
-  --fdAvatar_Accent_Color_5_Border: none;
-  --fdAvatar_Accent_Color_6_Border: none;
-  --fdAvatar_Accent_Color_7_Border: none;
-  --fdAvatar_Accent_Color_8_Border: none;
-  --fdAvatar_Accent_Color_9_Border: none;
-  --fdAvatar_Accent_Color_10_Border: none;
+  --fdAvatar_Accent_Color_1_Border: transparent;
+  --fdAvatar_Accent_Color_2_Border: transparent;
+  --fdAvatar_Accent_Color_3_Border: transparent;
+  --fdAvatar_Accent_Color_4_Border: transparent;
+  --fdAvatar_Accent_Color_5_Border: transparent;
+  --fdAvatar_Accent_Color_6_Border: transparent;
+  --fdAvatar_Accent_Color_7_Border: transparent;
+  --fdAvatar_Accent_Color_8_Border: transparent;
+  --fdAvatar_Accent_Color_9_Border: transparent;
+  --fdAvatar_Accent_Color_10_Border: transparent;
 
   // Accent Colors Hover
   --fdAvatar_Accent_Color_Hover_1: var(--sapAccentColor1);
