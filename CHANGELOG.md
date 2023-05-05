@@ -1,3 +1,17 @@
+# [0.29.0-rc.22](https://github.com/SAP/fundamental-styles/compare/v0.29.0-rc.21...v0.29.0-rc.22) (2023-05-05)
+
+
+### Bug Fixes
+
+* **styles:** add option to wrap long label for checkbox and radio button ([#4501](https://github.com/SAP/fundamental-styles/issues/4501)) ([8579329](https://github.com/SAP/fundamental-styles/commit/85793294cdb83aecce30c67555969aae0b7d683b))
+
+
+### BREAKING CHANGES
+
+* **styles:** Radio Button: the label text is wrapped in a span element with class "fd-radio__text" to allow truncation options.
+
+
+
 # [0.29.0-rc.21](https://github.com/SAP/fundamental-styles/compare/v0.29.0-rc.20...v0.29.0-rc.21) (2023-05-01)
 
 
