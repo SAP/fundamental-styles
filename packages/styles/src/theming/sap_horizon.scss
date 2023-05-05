@@ -35,6 +35,7 @@
 @import "./common/generic-tag/sap_horizon";
 @import "./common/flexible-column-layout/sap_horizon";
 @import "./common/avatar/sap_horizon";
+@import "./common/avatar-group/sap_horizon";
 @import "./sap_horizon/css_variables";
 
 :root {
@@ -47,12 +48,6 @@
 
   /* Action sheet */
   --fdOverlay_Background_Opacity: 0.6;
-
-  /* Avatar Group */
-  --fdAvatarGroup_MoreButton_Border: var(--sapButton_BorderWidth);
-  --fdAvatarGroup_MoreButton_Vertical_Offset: -0.25rem;
-  --fdAvatarGroup_Focus_Outline_Radius: 0.5rem;
-  --fdAvatarGroup_Focus_Outline_Offset: -0.25rem;
 
   /* Dynamic Page Layout */
   --fdDynamicPage_Hover_Border_Bottom: none;

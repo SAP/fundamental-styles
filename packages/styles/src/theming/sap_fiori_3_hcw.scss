@@ -34,6 +34,7 @@
 @import "./common/user-menu/sap_fiori";
 @import "./common/flexible-column-layout/sap_fiori_hc";
 @import "./common/avatar/sap_fiori_hc";
+@import "./common/avatar-group/sap_fiori";
 @import "./sap_fiori_3_hcw/css_variables";
 
 :root {
@@ -44,12 +45,6 @@
   --fdRating_Indicator_Disabled_Selected_Color: var(--sapContent_RatedColor);
   --fdRating_Indicator_Disabled_Unselected_Color: var(--sapContent_UnratedColor);
   --fdRating_Indicator_Disabled_Control_Opacity: 0.4;
-
-  /* Avatar Group */
-  --fdAvatarGroup_MoreButton_Border: 0.125rem;
-  --fdAvatarGroup_MoreButton_Vertical_Offset: -0.3125rem;
-  --fdAvatarGroup_Focus_Outline_Radius: 0;
-  --fdAvatarGroup_Focus_Outline_Offset: -0.125rem;
 
   /* Dynamic Page Layout */
   --fdDynamicPage_Hover_Border_Bottom: solid 0.0625rem var(--sapObjectHeader_Hover_Background);

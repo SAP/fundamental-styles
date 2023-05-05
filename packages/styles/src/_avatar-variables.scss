@@ -153,6 +153,22 @@ $fd-avatar-group-item-spacing: (
   )
 );
 
+$fd-avatar-group-item-spacing-group: (
+  "xs": -0.75rem,
+  "s": -1.25rem,
+  "m": -1.625rem,
+  "l": -2rem,
+  "xl": -2.75rem
+);
+
+$fd-avatar-group-item-spacing-individual: (
+  "xs": 0.0625rem,
+  "s": 0.125rem,
+  "m": 0.125rem,
+  "l": 0.125rem,
+  "xl": 0.25rem
+);
+
 $fd-avatar-value-states: (
   "positive": (
     "background": var(--sapSuccessBackground),

@@ -26,6 +26,7 @@ $block: #{$fd-namespace}-avatar;
   background-size: var(--fdAvatarBackgroundSize);
   background-color: var(--fdAvatarBackgroundColor);
 
+  &--interactive,
   &[role="button"],
   &[tabindex="0"] {
     cursor: pointer;
@@ -119,7 +120,7 @@ $block: #{$fd-namespace}-avatar;
   }
 
   &--transparent {
-    --fdAvatarBorderColor: transparent;
+    --fdAvatarBorderColor: var(--fdAvatar_Transparent_BorderColor);
     --fdAvatarBackgroundColor: var(--fdAvatar_Transparent_BackgroundColor);
     --fdAvatarColor: var(--sapContent_IconColor);
     --fdAvatarHoverBackgroundColor: var(--fdAvatar_Transparent_BackgroundColor_Hover);
@@ -127,7 +128,7 @@ $block: #{$fd-namespace}-avatar;
   }
 
   &--tile {
-    --fdAvatarBorderColor: transparent;
+    --fdAvatarBorderColor: var(--fdAvatar_Tile_BorderColor);
     --fdAvatarBackgroundColor: var(--fdAvatar_Tile_BackgroundColor);
     --fdAvatarColor: var(--fdAvatar_Tile_TextColor);
     --fdAvatarHoverBackgroundColor: var(--fdAvatar_Tile_BackgroundColor_Hover);
@@ -135,7 +136,7 @@ $block: #{$fd-namespace}-avatar;
   }
 
   &--placeholder {
-    --fdAvatarBorderColor: transparent;
+    --fdAvatarBorderColor: var(--fdAvatar_Placeholder_BorderColor);
     --fdAvatarBackgroundColor: var(--sapContent_ImagePlaceholderBackground);
     --fdAvatarColor: var(--sapContent_ImagePlaceholderForegroundColor);
     --fdAvatarHoverBackgroundColor: var(--fdAvatar_Placeholder_BackgroundColor_Hover);
@@ -143,7 +144,7 @@ $block: #{$fd-namespace}-avatar;
   }
 
   &--thumbnail {
-    --fdAvatarBorderColor: transparent;
+    --fdAvatarBorderColor: var(--fdAvatar_Thumbnail_BorderColor);
     --fdAvatarHoverBorderColor: var(--sapAvatar_10_TextColor);
     --fdAvatarBackgroundColor: var(--fdAvatar_Transparent_BackgroundColor);
   }
@@ -157,8 +158,34 @@ $block: #{$fd-namespace}-avatar;
     }
   }
 
+  &--overflow {
+    cursor: pointer;
+    border-width: var(--fdAvatar_Overflow_Border_Width);
+
+    --fdAvatarBorderColor: var(--fdAvatar_Overflow_BorderColor);
+    --fdAvatarBackgroundColor: var(--fdAvatar_Overflow_BackgroundColor);
+    --fdAvatarColor: var(--fdAvatar_Overflow_TextColor);
+    --fdAvatarHoverBackgroundColor: var(--sapButton_Hover_Background);
+    --fdAvatarHoverBorderColor: var(--sapButton_Hover_BorderColor);
+
+    @include fd-hover() {
+      --fdAvatarColor: var(--sapButton_Hover_TextColor);
+    }
+
+    @include fd-disabled() {
+      opacity: var(--sapContent_DisabledOpacity);
+    }
+
+    @include fd-active() {
+      --fdAvatarBorderColor: var(--sapButton_Active_BorderColor);
+      --fdAvatarBackgroundColor: var(--sapButton_Active_Background);
+      --fdAvatarColor: var(--sapButton_Active_TextColor);
+    }
+  }
+
   // accent-colors
   @each $set-name, $color-set in $fd-avatar-accent-colors {
+    &--accent-color-#{$set-name}.#{$block}--overflow,
     &--accent-color-#{$set-name} {
       --fdAvatarBorderColor: #{map_get($color-set, "border")};
       --fdAvatarColor: #{map_get($color-set, "text-color")};

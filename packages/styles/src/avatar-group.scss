@@ -3,58 +3,15 @@
 @import "./avatar-variables";
 
 $block: #{$fd-namespace}-avatar-group;
+$block-avatar: #{$fd-namespace}-avatar;
 
 .#{$block} {
   @include fd-reset();
   @include fd-flex();
 
-  &__popover-control[tabindex="0"],
-  &--group-type[tabindex="0"] {
-    @include fd-fake-fiori-focus(
-      var(--fdAvatarGroup_Focus_Outline_Offset),
-      var(--fdAvatarGroup_Focus_Outline_Radius)
-    );
-
-    cursor: pointer;
-  }
-
-  &__popover-control {
-    display: flex;
-    height: auto;
-  }
-
-  &__focusable-avatar,
-  &__item[tabindex="0"] {
-    @include fd-avatar-group-item-focus(
-      var(--fdAvatar_Focus_Outline_Offset),
-      var(--fdAvatar_Focus_Outline_Radius_Circle)
-    );
-  }
-
-  &--group-type {
-    .#{$block}__more-button {
-      pointer-events: none;
-    }
-  }
-
-  &__item {
-    @include fd-reset();
-
-    position: relative;
-    display: inline-block;
-  }
-
-  &__more-button {
-    @include fd-fake-fiori-focus(
-      var(--fdAvatar_Focus_Outline_Offset),
-      var(--fdAvatar_Focus_Outline_Radius_Circle)
-    );
-
-    outline: none !important;
-
-    .#{$block}__button-text {
-      font-size: inherit;
-    }
+  .#{$block-avatar}:not(:first-child) {
+    @include fd-set-margins-x(var(--fdAvatarGroupItemsSpacingX), 0);
+    @include fd-set-margins-y(var(--fdAvatarGroupItemsSpacingY), 0);
   }
 
   &__overflow-body {
@@ -75,44 +32,63 @@ $block: #{$fd-namespace}-avatar-group;
       overflow-y: hidden;
     }
 
-    .#{$block}__item {
+    & > .#{$fd-namespace}-avatar {
       margin: 0.25rem;
     }
   }
 
-  @each $set-name, $size-set in $fd-avatar-sizes {
-    &--#{$set-name} {
-      .#{$block}__item {
-        @include fd-avatar-set-size(map_get($size-set, "ratio"));
-      }
+  &--vertical {
+    flex-direction: column;
+  }
 
-      .#{$block}__more-button {
-        @include fd-avatar-set-size(map_get($size-set, "ratio"));
+  &--individual-type {
+    gap: var(--fdAvatarGroupItemsGap);
 
-        border-radius: 25rem;
-        font-size: map_get($size-set, "font-size");
-        border-width: var(--fdAvatarGroup_MoreButton_Border);
+    @each $type, $value in $fd-avatar-group-item-spacing-individual {
+      &.#{$block}--#{$type} {
+        --fdAvatarGroupItemsGap: #{$value};
       }
     }
   }
 
-  @each $type-name, $type-set in $fd-avatar-group-item-spacing {
-    @each $size-name, $size-set in map_get($fd-avatar-group-item-spacing, $type-name) {
-      &--#{$type-name}-type {
-        &.#{$block}--#{$size-name} {
-          .#{$block}__item {
-            @include fd-set-margins-x(0, map_get($size-set, "margin-right"));
-          }
+  &--group-type {
+    .#{$fd-namespace}-avatar {
+      pointer-events: none;
+    }
+
+    @each $type, $value in $fd-avatar-group-item-spacing-group {
+      &.#{$block}--#{$type} {
+        --fdAvatarGroupItemsSpacingX: #{$value};
+
+        &.#{$block}--vertical {
+          --fdAvatarGroupItemsSpacingX: 0;
+          --fdAvatarGroupItemsSpacingY: #{$value};
         }
       }
     }
-  }
 
-  @each $accent-name, $color-set in $fd-avatar-accent-colors {
-    .#{$block}__more-button--accent-color-#{$accent-name} {
-      border: map_get($color-set, "border");
-      color: map_get($color-set, "text-color");
-      background-color: map_get($color-set, "background-color");
+    @include fd-hover() {
+      .#{$block-avatar} {
+        --fdAvatarBorderColor: var(--fdAvatarHoverBorderColor);
+        --fdAvatarBackgroundColor: var(--fdAvatarHoverBackgroundColor);
+      }
+    }
+
+    @include fd-active() {
+      .#{$block-avatar} {
+        --fdAvatarBorderColor: var(--sapButton_Selected_BorderColor);
+        --fdAvatarBackgroundColor: var(--sapButton_Selected_Background);
+        --fdAvatarColor: var(--sapButton_Selected_TextColor);
+      }
+    }
+
+    @include fd-disabled() {
+      pointer-events: none;
+      opacity: var(--sapContent_DisabledOpacity);
+    }
+
+    @include fd-focus() {
+      @include fd-fake-fiori-focus(var(--fdAvatarGroup_Focus_Outline_Offset), var(--fdAvatarGroup_Focus_Outline_Radius));
     }
   }
 }

@@ -9,15 +9,27 @@
 
   // Tile
   --fdAvatar_Tile_BackgroundColor: var(--sapTile_Background);
+  --fdAvatar_Tile_BorderColor: transparent;
   --fdAvatar_Tile_TextColor: var(--sapTile_IconColor);
   --fdAvatar_Tile_BackgroundColor_Hover: var(--sapTile_Background);
 
   // Placeholder
+  --fdAvatar_Placeholder_BorderColor: transparent;
   --fdAvatar_Placeholder_BackgroundColor_Hover: var(--sapContent_ImagePlaceholderBackground);
 
   // Transparent
+  --fdAvatar_Transparent_BorderColor: transparent;
   --fdAvatar_Transparent_BackgroundColor: transparent;
   --fdAvatar_Transparent_BackgroundColor_Hover: transparent;
+
+  // Overflow
+  --fdAvatar_Overflow_BorderColor: var(--sapButton_BorderColor);
+  --fdAvatar_Overflow_BackgroundColor: var(--sapButton_Background);
+  --fdAvatar_Overflow_TextColor: var(--sapButton_TextColor);
+  --fdAvatar_Overflow_Border_Width: 0.0625rem;
+
+  // Thumbnail
+  --fdAvatar_Thumbnail_BorderColor: transparent;
 
   // Focus
   --fdAvatar_Focus_Outline_Offset: -0.3125rem;
