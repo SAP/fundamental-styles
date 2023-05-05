@@ -119,19 +119,19 @@ export const RadioButtonGroups = () => `<fieldset class="fd-fieldset" id="radio1
             <div class="fd-form-item">
                 <input type="radio" class="fd-radio" id="pDidh761" name="radio1" checked>
                 <label class="fd-radio__label" for="pDidh761">
-                    Field label
+                    <span class="fd-radio__text">Field label</span>
                 </label>
             </div>
             <div class="fd-form-item">
                 <input type="radio" class="fd-radio" id="pDidh7612" name="radio1">
                 <label class="fd-radio__label" for="pDidh7612">
-                    Field label
+                    <span class="fd-radio__text">Field label</span>
                 </label>
             </div>
             <div class="fd-form-item">
                 <input type="radio" class="fd-radio" id="pDidh7613" name="radio1">
                 <label class="fd-radio__label" for="pDidh7613">
-                    Field label
+                    <span class="fd-radio__text">Field label</span>
                 </label>
             </div>
         </div>

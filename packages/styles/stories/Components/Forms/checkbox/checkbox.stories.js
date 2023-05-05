@@ -442,3 +442,38 @@ States.parameters = {
         }
     }
 };
+
+export const TextTruncation = () => `
+${localStyles}
+<fieldset class="fd-fieldset">
+    <legend class="fd-fieldset__legend">Truncation Options</legend>
+    <div class="fd-form-group">
+        <div class="fd-form-item">
+            <input type="checkbox" class="fd-checkbox" id="Ai4ez611lw">
+            <label class="fd-checkbox__label" for="Ai4ez611lw" style="max-width: 400px;">
+                <div class="fd-checkbox__label-container">
+                    <span class="fd-checkbox__text">Apple ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </span>
+                </div>
+            </label>
+        </div>
+        <div class="fd-form-item">
+            <input type="checkbox" class="fd-checkbox" id="Ai4ez612lw" checked>
+            <label class="fd-checkbox__label fd-checkbox__label--wrap" for="Ai4ez612lw" style="max-width: 400px;">
+                <div class="fd-checkbox__label-container">
+                    <span class="fd-checkbox__text">Banana ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</span>
+                </div>
+            </label>
+        </div>
+    </div>
+</fieldset>
+`;
+
+TextTruncation.parameters = {
+    docs: {
+        story: { iframeHeight: 330 },
+        description: {
+            story: `By default, long checkbox label truncates with ellipsis. For this behaviour no modifier class is needed. For checkbox label that wraps on a new line to show the entire content, use \`.fd-checkbox__label--wrap\` modifier class applied with \`.fd-checkbox__label\`. Keep in mind that for this to work <b>max-width</b> should be set on the label.
+        `
+        }
+    }
+};
