@@ -2593,16 +2593,12 @@
     tmp "~0.2.1"
     tslib "^2.3.0"
 
-"@nrwl/devkit@>=14.0.0":
-  version "15.9.2"
-  resolved "https://registry.yarnpkg.com/@nrwl/devkit/-/devkit-15.9.2.tgz#482b89f1bf88d3600b11f8b7e3e4452c5766eca4"
-  integrity sha512-2DvTstVZb91m+d4wqUJMBHQ3elxyabdmFE6/3aXmtOGeDxTyXyDzf/1O6JvBBiL8K6XC3ZYchjtxUHgxl/NJ5A==
+"@nrwl/devkit@16.1.1", "@nrwl/devkit@>=14.0.0":
+  version "16.1.1"
+  resolved "https://registry.yarnpkg.com/@nrwl/devkit/-/devkit-16.1.1.tgz#2e87b0e386ad7ac0766ac7dd8fbbeeffd45a05ff"
+  integrity sha512-KIzHt5g2+AkH4LgEMksPL0q5FUiERtbeP1VNDw57grhaOAviLaYklKU3GA8Zaj73KxGIeHhwCQU0Ju5aIoDDdg==
   dependencies:
-    ejs "^3.1.7"
-    ignore "^5.0.4"
-    semver "7.3.4"
-    tmp "~0.2.1"
-    tslib "^2.3.0"
+    "@nx/devkit" "16.1.1"
 
 "@nrwl/eslint-plugin-nx@15.8.7":
   version "15.8.7"
@@ -2829,6 +2825,18 @@
     tslib "^2.3.0"
     yargs "^17.6.2"
     yargs-parser "21.1.1"
+
+"@nx/devkit@16.1.1":
+  version "16.1.1"
+  resolved "https://registry.yarnpkg.com/@nx/devkit/-/devkit-16.1.1.tgz#7d2e1bf4e5c9810980d01078cbc096a49740b046"
+  integrity sha512-Tjsj2tKSQnMBmbXKnVSGzcdWDzy7T1jcvbazJ1pf36AwmGbaUj6+sleXceeOguk4dd3lg1yWibjCk+ICMsXIvg==
+  dependencies:
+    "@nrwl/devkit" "16.1.1"
+    ejs "^3.1.7"
+    ignore "^5.0.4"
+    semver "7.3.4"
+    tmp "~0.2.1"
+    tslib "^2.3.0"
 
 "@parcel/watcher@2.0.4":
   version "2.0.4"
