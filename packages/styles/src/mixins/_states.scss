@@ -26,6 +26,13 @@
   }
 }
 
+// TOGGLE state
+@mixin fd-toggled {
+  &.is-toggled {
+    @content;
+  }
+}
+
 // DISABLED state (not editable, not focusable, not submitted with `form`)
 @mixin fd-disabled {
   &[aria-disabled="true"],
