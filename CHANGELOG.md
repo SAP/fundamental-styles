@@ -1,3 +1,12 @@
+# [0.29.0-rc.27](https://github.com/SAP/fundamental-styles/compare/v0.29.0-rc.26...v0.29.0-rc.27) (2023-05-08)
+
+
+### Features
+
+* **styles:** add Horizon 2023 update for Avatar and Avatar Group[ci visual] ([#4500](https://github.com/SAP/fundamental-styles/issues/4500)) ([36920e5](https://github.com/SAP/fundamental-styles/commit/36920e5828eb955bb3415682b11c7e1ade58a6df))
+
+
+
 # [0.29.0-rc.26](https://github.com/SAP/fundamental-styles/compare/v0.29.0-rc.25...v0.29.0-rc.26) (2023-05-08)
 
 
