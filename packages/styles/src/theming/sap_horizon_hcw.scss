@@ -39,6 +39,7 @@
 @import "./common/avatar-group/sap_horizon";
 @import "./common/message-popover/sap_horizon_hc";
 @import "./common/token/sap_horizon_hc";
+@import "./common/calendar/sap_horizon";
 @import "./sap_horizon_hcw/css_variables";
 
 :root {
@@ -101,13 +102,13 @@
 
   /* Calendar */
   --fdCalendar_Text_Shadow: none;
-  --fdCalendar_Active_Item_Border: 0.125rem solid var(--sapList_SelectionBorderColor);
+  --fdCalendar_Active_Item_Border: 0.0625rem solid var(--sapList_SelectionBorderColor);
   --fdCalendar_Active_Focus_Item_Outline_Color: var(--sapList_SelectionBorderColor);
   --fdCalendar_Active_Focus_Item_Outline_Offset: -0.375rem;
   --fdCalendar_Item_Current_Border: none;
   --fdCalendar_Border_Radius: var(--sapButton_BorderCornerRadius);
   --fdCalendar_Item_Active_Background_Hover: var(--sapList_Hover_Background);
-  --fdCalendar_Special_Day_Marker_Height: 0.375rem;
+  --fdCalendar_Special_Day_Marker_Height: 0.3125rem;
   --fdCalendar_Item_Current_Inner_Border_Color: transparent;
   --fdCalendar_Item_Current_Active_Special_Day_Width: calc(100% - 0.25rem);
   --fdCalendar_Item_Current_Active_Special_Day_Height: calc(100% - 1.25rem);
@@ -115,6 +116,7 @@
   --fdCalendar_Item_Current_Active_Special_Day_Left: auto;
   --fdCalendar_Item_Current_Active_Special_Day_Right: auto;
   --fdCalendar_Month_Year_Item_Border_Radius: 0;
+  --fdCalendar_Active_Item_Font_Weight: var(--sapFontBoldFamily);
 
   /* Form Header */
   --fdFormHeader_Border_Width: var(--sapList_BorderWidth);

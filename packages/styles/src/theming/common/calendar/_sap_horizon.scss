@@ -1,0 +1,14 @@
+:root {
+  --fdCalendar_Text_Wrapper_Border: 0;
+  --fdCalendar_Text_Wrapper_Box_Sizing: content-box;
+  --fdCalendar_Text_Wrapper_Margin: 0;
+  --fdCalendar_Text_Wrapper_Height: 100%;
+  --fdCalendar_Text_Wrapper_After_Z: 0;
+  --fdCalendar_Text_Border_Focus: var(--sapContent_FocusColor) var(--sapContent_FocusStyle) var(--sapContent_FocusWidth);
+  --fdCalendar_Item_Legend_Top_Border: 0;
+  --fdCalendar_Item_Legend_Bottom_Border_Radius: 0.3125rem;
+  --fdCalendar_Item_Selected_Legend_Height: 0.25rem;
+  --fdCalendar_Item_Today_Selected_Bottom_Radius: 0.3125rem;
+  --fdCalendar_Item_Text_Active_Focus: none;
+  --fdCalendar_Item_Text_Wrapper_Height: 0.25rem;
+}
