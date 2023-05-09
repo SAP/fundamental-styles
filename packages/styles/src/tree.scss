@@ -126,8 +126,20 @@ $fd-tree-item-selected-border-bottom: var(--sapList_BorderWidth) solid var(--sap
     min-width: var(--fdTree_Expander_Size);
     min-height: var(--fdTree_Expander_Size);
 
+    @include fd-rtl() {
+      .#{$block}__icon {
+        transform: rotate(180deg);
+      }
+    }
+
     @include fd-expanded() {
       border-bottom: none;
+
+      @include fd-rtl() {
+        .#{$block}__icon {
+          transform: rotate(0);
+        }
+      }
     }
   }
 
