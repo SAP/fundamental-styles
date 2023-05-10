@@ -7,6 +7,11 @@
             "factory": "./src/generators/create-package/generator",
             "schema": "./src/generators/create-package/schema.json",
             "description": "Create package generator"
+        },
+        "extract-html-sections": {
+            "factory": "./src/generators/extract-html-sections/index",
+            "schema": "./src/generators/extract-html-sections/schema.json",
+            "description": "Extract HTML sections from stories"
         }
     }
 }
