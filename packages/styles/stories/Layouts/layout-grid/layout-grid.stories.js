@@ -222,7 +222,6 @@ export const Nesting = () => `<div class='fd-container'>
             </div>
         </div>
     </div>
-  </div>
 </div>
 `;
 
