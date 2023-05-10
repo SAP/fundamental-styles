@@ -157,26 +157,26 @@ Linked.parameters = {
     }
 };
 
-export const ShowMore = () => `<ul class="fd-feed-list" aria-label="Feed List Item with show more text example">
-    <li class="fd-feed-list__body">
+export const ShowMore = () => `<ul class='fd-feed-list' aria-label='Feed List Item with show more text example'>
+    <li class='fd-feed-list__body'>
         <div
-            class="fd-avatar fd-avatar--circle fd-avatar--s fd-avatar--thumbnail fd-feed-list__thumb"
-            style="background-image: url(/assets/images/portraits/XL_Square_112x112_M6.png)"
-            role="img"
-            aria-label="John Doe"
-            title="John Doe"
+            class='fd-avatar fd-avatar--circle fd-avatar--s fd-avatar--thumbnail fd-feed-list__thumb'
+            style='background-image: url(/assets/images/portraits/XL_Square_112x112_M6.png)'
+            role='img'
+            aria-label='John Doe'
+            title='John Doe'
         ></div>
 
-        <div class="fd-feed-list__content">
-            <p class="fd-feed-list__text">
-                <span class="fd-feed-list__name">Joe Doe: </span>
-                <span>Maecenas convallis velit quis felis dictum, in ultrices quam faucibus. Morbi tempor eu elit eu consequat. Sed at lorem a ex consequat pharetra. Etiam convallis odio at vulputate venenatis. In sit amet pharetra urna. Ut nulla nisi, porta at ligula a, elementum ullamcorper lectus. Suspendisse blandit, risus nec vestibulum volutpat, nulla neque rhoncus dolor, vitae rutrum lectus neque nec ligula. Maecenas pulvinar, ligula nec fringilla volutpat, urna quam rutrum tellus, vi...
-                <a class="fd-link fd-feed-list__link--more" tabindex="0"><span class="fd-link__content">More</span></a>
+        <div class='fd-feed-list__content'>
+            <p class='fd-feed-list__text'>
+                <span class='fd-feed-list__name'>Joe Doe: </span>
+                <span>Maecenas convallis velit quis felis dictum, in ultrices quam faucibus. Morbi tempor eu elit eu consequat. Sed at lorem a ex consequat pharetra. Etiam convallis odio at vulputate venenatis. In sit amet pharetra urna. Ut nulla nisi, porta at ligula a, elementum ullamcorper lectus. Suspendisse blandit, risus nec vestibulum volutpat, nulla neque rhoncus dolor, vitae rutrum lectus neque nec ligula. Maecenas pulvinar, ligula nec fringilla volutpat, urna quam rutrum tellus, vi...</span>
+                <a class='fd-link fd-feed-list__link--more' tabindex='0'><span class='fd-link__content'>More</span></a>
             </p>
 
-            <div class="fd-feed-list__footer">
-                <small class="fd-feed-list__footer--byline">Aug 20, 2020</small>
-                <small class="fd-feed-list__footer--byline">Reply</small>
+            <div class='fd-feed-list__footer'>
+                <small class='fd-feed-list__footer--byline'>Aug 20, 2020</small>
+                <small class='fd-feed-list__footer--byline'>Reply</small>
             </div>
         </div>
     </li>
@@ -205,7 +205,7 @@ export const ShowLess = () => `<ul class="fd-feed-list" aria-label="Feed List It
         <div class="fd-feed-list__content">
             <p class="fd-feed-list__text">
                 <span class="fd-feed-list__name">Joe Doe: </span>
-                <span>Maecenas convallis velit quis felis dictum, in ultrices quam faucibus. Morbi tempor eu elit eu consequat. Sed at lorem a ex consequat pharetra. Etiam convallis odio at vulputate venenatis. In sit amet pharetra urna. Ut nulla nisi, porta at ligula a, elementum ullamcorper lectus. Suspendisse blandit, risus nec vestibulum volutpat, nulla neque rhoncus dolor, vitae rutrum lectus neque nec ligula. Maecenas pulvinar, ligula nec fringilla volutpat, urna quam rutrum tellus, vitae elementum elit est malesuada nunc. Maecenas eu risus posuere, volutpat justo in, ultricies sem
+                <span>Maecenas convallis velit quis felis dictum, in ultrices quam faucibus. Morbi tempor eu elit eu consequat. Sed at lorem a ex consequat pharetra. Etiam convallis odio at vulputate venenatis. In sit amet pharetra urna. Ut nulla nisi, porta at ligula a, elementum ullamcorper lectus. Suspendisse blandit, risus nec vestibulum volutpat, nulla neque rhoncus dolor, vitae rutrum lectus neque nec ligula. Maecenas pulvinar, ligula nec fringilla volutpat, urna quam rutrum tellus, vitae elementum elit est malesuada nunc. Maecenas eu risus posuere, volutpat justo in, ultricies sem</span>
                 <a class="fd-link fd-feed-list__link--more" tabindex="0"><span class="fd-link__content">Less</span></a>
             </p>
 
@@ -305,7 +305,7 @@ export const Group = () => ` <ul class="fd-feed-list fd-feed-list--group" aria-l
         <div class="fd-feed-list__content">
             <p class="fd-feed-list__text">
                 <span class="fd-feed-list__name">Cruz: </span>
-                <span>Maecenas convallis velit quis felis dictum, in ultrices quam faucibus.
+                <span>Maecenas convallis velit quis felis dictum, in ultrices quam faucibus. </span>
             </p>
             <div class="fd-feed-list__footer">
                 <small class="fd-feed-list__footer--byline">Aug 21, 2020</small>
@@ -326,7 +326,7 @@ export const Group = () => ` <ul class="fd-feed-list fd-feed-list--group" aria-l
         <div class="fd-feed-list__content">
             <p class="fd-feed-list__text">
                 <span class="fd-feed-list__name">Joe Doe: </span>
-                <span>Maecenas convallis velit quis felis dictum, in ultrices quam faucibus.
+                <span>Maecenas convallis velit quis felis dictum, in ultrices quam faucibus. </span>
             </p>
             <div class="fd-feed-list__footer">
                 <small class="fd-feed-list__footer--byline">Aug 22, 2020</small>
@@ -346,7 +346,7 @@ export const Group = () => ` <ul class="fd-feed-list fd-feed-list--group" aria-l
         <div class="fd-feed-list__content">
             <p class="fd-feed-list__text">
                 <span class="fd-feed-list__name">Sanchez: </span>
-                <span>Maecenas convallis velit quis felis dictum, in ultrices quam faucibus.
+                <span>Maecenas convallis velit quis felis dictum, in ultrices quam faucibus.</span>
             </p>
             <div class="fd-feed-list__footer">
                 <small class="fd-feed-list__footer--byline">Aug 20, 2020</small>
@@ -377,7 +377,7 @@ export const Borderless = () => `<ul class="fd-feed-list fd-feed-list--group fd-
         <div class="fd-feed-list__content">
             <p class="fd-feed-list__text">
                 <span class="fd-feed-list__name">Cruz: </span>
-                <span>Maecenas convallis velit quis felis dictum, in ultrices quam faucibus.
+                <span>Maecenas convallis velit quis felis dictum, in ultrices quam faucibus.</span>
             </p>
             <div class="fd-feed-list__footer">
                 <small class="fd-feed-list__footer--byline">Aug 21, 2020</small>
@@ -398,7 +398,7 @@ export const Borderless = () => `<ul class="fd-feed-list fd-feed-list--group fd-
         <div class="fd-feed-list__content">
             <p class="fd-feed-list__text">
                 <span class="fd-feed-list__name">Joe Doe: </span>
-                <span>Maecenas convallis velit quis felis dictum, in ultrices quam faucibus.
+                <span>Maecenas convallis velit quis felis dictum, in ultrices quam faucibus.</span>
             </p>
             <div class="fd-feed-list__footer">
                 <small class="fd-feed-list__footer--byline">Aug 22, 2020</small>
@@ -418,7 +418,7 @@ export const Borderless = () => `<ul class="fd-feed-list fd-feed-list--group fd-
         <div class="fd-feed-list__content">
             <p class="fd-feed-list__text">
                 <span class="fd-feed-list__name">Sanchez: </span>
-                <span>Maecenas convallis velit quis felis dictum, in ultrices quam faucibus.
+                <span>Maecenas convallis velit quis felis dictum, in ultrices quam faucibus.</span>
             </p>
             <div class="fd-feed-list__footer">
                 <small class="fd-feed-list__footer--byline">Aug 20, 2020</small>
