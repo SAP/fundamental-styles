@@ -62,6 +62,7 @@ style="background-image: url('assets/images/backgrounds/Godafoss_waterfall_in_no
           <div class="fd-list__byline-left">First text item in byline (standard text)</div>
           <div class="fd-list__byline-right">Second text item in byline (can be semantic)</div>
       </div>
+  </div>
   </li>
   <li role="listitem" tabindex="0" class="fd-list__item">
       <span class="fd-list__thumbnail"><i role="presentation" class="sap-icon--employee"></i></span>
