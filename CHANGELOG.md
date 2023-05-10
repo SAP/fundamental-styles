@@ -1,3 +1,12 @@
+# [0.29.0-rc.28](https://github.com/SAP/fundamental-styles/compare/v0.29.0-rc.27...v0.29.0-rc.28) (2023-05-10)
+
+
+### Bug Fixes
+
+* **styles:** tree rtl icon [ci visual] ([#4517](https://github.com/SAP/fundamental-styles/issues/4517)) ([f977b4a](https://github.com/SAP/fundamental-styles/commit/f977b4a99d9013d9099583bae29fbd4cbdfcb3d0))
+
+
+
 # [0.29.0-rc.27](https://github.com/SAP/fundamental-styles/compare/v0.29.0-rc.26...v0.29.0-rc.27) (2023-05-08)
 
 
