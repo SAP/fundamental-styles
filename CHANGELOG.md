@@ -1,3 +1,12 @@
+# [0.29.0-rc.29](https://github.com/SAP/fundamental-styles/compare/v0.29.0-rc.28...v0.29.0-rc.29) (2023-05-10)
+
+
+### Bug Fixes
+
+* **styles:** update tile title font size [ci visual] ([#4516](https://github.com/SAP/fundamental-styles/issues/4516)) ([f241388](https://github.com/SAP/fundamental-styles/commit/f24138855a6b0af87c36f87a10a0072a99d0c11a))
+
+
+
 # [0.29.0-rc.28](https://github.com/SAP/fundamental-styles/compare/v0.29.0-rc.27...v0.29.0-rc.28) (2023-05-10)
 
 
