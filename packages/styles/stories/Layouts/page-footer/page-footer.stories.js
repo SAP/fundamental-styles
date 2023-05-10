@@ -26,7 +26,7 @@ Note: You may want to display components from right to left on the screen for in
 export const SingleLineLink = () => `
 <div class="fd-page-footer fd-page-footer--xl">
 	<div class="fd-page-footer__logo">
-		<img src="//unpkg.com/fundamental-styles/dist/images/sap-logo.png" alt="page footer logo"></img>
+		<img src="//unpkg.com/fundamental-styles/dist/images/sap-logo.png" alt="page footer logo" />
 	</div>
 	<div class="fd-page-footer__container">
         <div class="fd-page-footer__row">
@@ -56,7 +56,7 @@ SingleLineLink.parameters = {
 export const MultiLineLink = () => `
 <div class="fd-page-footer fd-page-footer--xl">
 	<div class="fd-page-footer__logo">
-		<img src="//unpkg.com/fundamental-styles/dist/images/sap-logo.png" alt="page footer logo"></img>
+		<img src="//unpkg.com/fundamental-styles/dist/images/sap-logo.png" alt="page footer logo"/>
 	</div>
 	<div class="fd-page-footer__container">
 		<div class="fd-page-footer__row">
@@ -90,7 +90,7 @@ MultiLineLink.parameters = {
 export const ImageAndIconLink = () => `
 <div class="fd-page-footer fd-page-footer--xl">
 	<div class="fd-page-footer__logo">
-		<img src="//unpkg.com/fundamental-styles/dist/images/sap-logo.png" alt="page footer logo"></img>
+		<img src="//unpkg.com/fundamental-styles/dist/images/sap-logo.png" alt="page footer logo"/>
 	</div>
 	<div class="fd-page-footer__container">
 		<div class="fd-page-footer__row">
@@ -139,7 +139,7 @@ export const FooterWithDiffrentSize = () => `
 
 <div class="fd-page-footer fd-page-footer--xl">
 	<div class="fd-page-footer__logo">
-		<img src="//unpkg.com/fundamental-styles/dist/images/sap-logo.png" alt="page footer logo"></img>
+		<img src="//unpkg.com/fundamental-styles/dist/images/sap-logo.png" alt="page footer logo"/>
 	</div>
 	<div class="fd-page-footer__container">
         <div class="fd-page-footer__row">
@@ -160,7 +160,7 @@ export const FooterWithDiffrentSize = () => `
 
 <div class="fd-page-footer fd-page-footer--lg">
 	<div class="fd-page-footer__logo">
-		<img src="//unpkg.com/fundamental-styles/dist/images/sap-logo.png" alt="page footer logo"></img>
+		<img src="//unpkg.com/fundamental-styles/dist/images/sap-logo.png" alt="page footer logo"/>
 	</div>
 	<div class="fd-page-footer__container">
         <div class="fd-page-footer__row">
@@ -182,7 +182,7 @@ export const FooterWithDiffrentSize = () => `
 
 <div class="fd-page-footer fd-page-footer--md">
 	<div class="fd-page-footer__logo">
-		<img src="//unpkg.com/fundamental-styles/dist/images/sap-logo.png" alt="page footer logo"></img>
+		<img src="//unpkg.com/fundamental-styles/dist/images/sap-logo.png" alt="page footer logo"/>
 	</div>
 	<div class="fd-page-footer__container">
         <div class="fd-page-footer__row">
@@ -203,7 +203,7 @@ export const FooterWithDiffrentSize = () => `
 <label class="fd-form-label">Page footer with 'sm' (Small) size</label><br /><br />
 <div class="fd-page-footer fd-page-footer--sm">
 	<div class="fd-page-footer__logo">
-		<img src="//unpkg.com/fundamental-styles/dist/images/sap-logo.png" alt="page footer logo"></img>
+		<img src="//unpkg.com/fundamental-styles/dist/images/sap-logo.png" alt="page footer logo"/>
 	</div>
 	<div class="fd-page-footer__container">
         <div class="fd-page-footer__row">
