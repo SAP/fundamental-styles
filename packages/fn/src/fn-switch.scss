@@ -53,7 +53,7 @@ $fn-switch-slider-focus-offset: 0.25rem;
     }
 
     &:checked + .#{$block}__slider::before {
-      content: "\e05b";
+      content: "\e05b" / "";
       color: $fn-color-blue-7;
       transform: translateX($fn-switch-slider-translateX);
       -ms-transform: translateX($fn-switch-slider-translateX);
@@ -201,7 +201,7 @@ $fn-switch-slider-focus-offset: 0.25rem;
 
       height: 1.5rem;
       width: 1.875rem;
-      content: "\e069";
+      content: "\e069" / "";
       font-size: 0.75rem;
       position: absolute;
       border-radius: 0.75rem;
