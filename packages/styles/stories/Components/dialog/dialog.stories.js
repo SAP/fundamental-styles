@@ -557,7 +557,7 @@ export const HorizontalFormInDialog = () => `
 
                 <div class="fd-row fd-form-item">
                     <div class="fd-col fd-col-md--2 fd-col-lg--4">
-                        <label class="fd-form-label for="text-243-name">Bio: </label>
+                        <label class="fd-form-label" for="text-243-name">Bio: </label>
                     </div>
                     <div class="fd-col fd-col-md--10  fd-col-lg--8">
                         <textarea class="fd-textarea" id="text-243-name" >Disabled textarea</textarea>
@@ -664,7 +664,7 @@ export const VerticalFormInDialog = () => `<section class="fd-dialog-docs-static
 
                 <div class="fd-row fd-form-item">
                     <div class="fd-col">
-                        <label class="fd-form-label for="text-2434-name">Bio: </label>
+                        <label class="fd-form-label" for="text-2434-name">Bio: </label>
                     </div>
                     <div class="fd-col">
                         <textarea class="fd-textarea" id="text-2434-name" >Disabled textarea</textarea>
