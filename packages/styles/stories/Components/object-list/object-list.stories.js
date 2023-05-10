@@ -474,7 +474,7 @@ export const Selection = () => `
   <li role="option" aria-selected="true" tabindex="0" class="fd-list__item fd-object-list__item is-selected">
     <div class="fd-object-list__container">
       <div class="fd-object-list__intro">
-       Optional inline text</span>
+       Optional inline text
       </div>
       <div class="fd-object-list__header">
         <div class="fd-object-list__header-left">
@@ -534,7 +534,7 @@ export const Selection = () => `
   <li role="option" aria-selected="false" tabindex="0" class="fd-list__item fd-object-list__item">
     <div class="fd-object-list__container">
       <div class="fd-object-list__intro">
-       Optional inline text</span>
+       Optional inline text
       </div>
       <div class="fd-object-list__header">
         <span class="fd-avatar fd-avatar--s"
@@ -612,7 +612,7 @@ export const SelectionWithNavigation = () => `
   <a tabindex="0" id="anchor" class="fd-list__link is-active">
   <div class="fd-object-list__container">
       <div class="fd-object-list__intro">
-       Optional inline text</span>
+       Optional inline text
       </div>
       <div class="fd-object-list__header">
         <span class="fd-avatar fd-avatar--s"
@@ -677,7 +677,7 @@ export const SelectionWithNavigation = () => `
   <a tabindex="0" class="fd-list__link">
   <div class="fd-object-list__container">
       <div class="fd-object-list__intro">
-       Optional inline text</span>
+       Optional inline text
       </div>
       <div class="fd-object-list__header">
         <span class="fd-avatar fd-avatar--s"
@@ -742,7 +742,7 @@ export const SelectionWithNavigation = () => `
   <a tabindex="0" class="fd-list__link">
     <div class="fd-object-list__container">
       <div class="fd-object-list__intro">
-      Optional inline text</span>
+      Optional inline text
       </div>
       <div class="fd-object-list__header">
         <span class="fd-avatar fd-avatar--s"

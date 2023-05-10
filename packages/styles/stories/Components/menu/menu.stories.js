@@ -561,7 +561,7 @@ export const WithSubmenu = () => `<nav class="fd-menu">
                 aria-expanded="true"
                 aria-haspopup="true"
                 role="menuitem"
-                onclick = onPopoverClick('EX100M2')>
+                onclick="onPopoverClick('EX100M2')">
                     <span class="fd-menu__title">Option 2 with submenu</span>
                     <span class="fd-menu__addon-after fd-menu__addon-after--submenu"></span>
             </span>

@@ -268,15 +268,15 @@ export const MicroProcessFlowCustom = () => `<div class="fd-micro-process-flow">
                                     </linearGradient>
                                     <mask id="__path29-mask">
                                     <path id="__path29-mask-shape" d="M19.6,12.9l0-3.7l-4.9,3.7V9.2l-5,3.9l-0.3,0l0-9.4H5.8v9.4H4.6V0.5H1l-0.3,24h23.6V9.3L19.6,12.9z M22.2,19.9H17v-2.4h5.2
-                                            V19.9z stroke-width=" 0" stroke="white" fill="url(#__path29-gradient)">
+                                            V19.9z" stroke-width="0" stroke="white" fill="url(#__path29-gradient)">
                                     </path>
                                     </mask>
                                 </defs>
                                 <path id="__path29-shape" d="M19.6,12.9l0-3.7l-4.9,3.7V9.2l-5,3.9l-0.3,0l0-9.4H5.8v9.4H4.6V0.5H1l-0.3,24h23.6V9.3L19.6,12.9z M22.2,19.9H17v-2.4h5.2
-                                    V19.9z stroke-width=" 0" stroke="#89919A " mask="url(#__path29-mask)">
+                                    V19.9z" stroke-width="0" stroke="#89919A " mask="url(#__path29-mask)">
                                 </path>
                                 <path id="__path29-shape-border" d="M19.6,12.9l0-3.7l-4.9,3.7V9.2l-5,3.9l-0.3,0l0-9.4H5.8v9.4H4.6V0.5H1l-0.3,24h23.6V9.3L19.6,12.9z M22.2,19.9H17v-2.4h5.2
-                                    V19.9z stroke-width=" 0.25" stroke="#89919A " fill="transparent">
+                                    V19.9z" stroke-width="0.25" stroke="#89919A " fill="transparent">
                                 </path>
                                 </svg>
                             </svg>
