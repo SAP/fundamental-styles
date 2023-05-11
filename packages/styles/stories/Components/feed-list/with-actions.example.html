@@ -1,0 +1,55 @@
+<ul class="fd-feed-list" aria-label="Feed List Item with popover actions example">
+    <li class="fd-feed-list__body">
+        <div
+            class="fd-avatar fd-avatar--circle fd-avatar--s fd-avatar--thumbnail fd-feed-list__thumb"
+            style="background-image: url(/assets/images/portraits/XL_Square_112x112_M7.png)"
+            role="img"
+            aria-label="John Doe"
+            title="John Doe">
+        </div>
+
+        <div class="fd-feed-list__content">
+            <div class="fd-feed-list__actions">
+                <div class="fd-popover">
+                    <div class="fd-popover__control">
+                        <button class="fd-button fd-button--compact fd-button--transparent"
+                                aria-label="More Options" aria-controls="actionSheetDesktop" aria-expanded="false"
+                                aria-haspopup="true" onclick="onPopoverClick('actionSheetDesktop');">
+                            <i class="sap-icon--overflow"></i>
+                        </button>
+                    </div>
+                    <div class="fd-popover__body fd-popover__body--compact fd-popover__body--right" aria-hidden="true" id="actionSheetDesktop">
+                        <ul class="fd-action-sheet" role="list" aria-label="List of contextual options">
+                            <li class="fd-action-sheet__item" role="listitem">
+                                <button class="fd-button fd-button--full-width fd-button--transparent fd-button--text-alignment-left">
+                                    <i class="sap-icon--attachment"></i>
+                                    <span class="fd-button__text">Button 1</span>
+                                </button>
+                            </li>
+                            <li class="fd-action-sheet__item" role="listitem">
+                                <button class="fd-button fd-button--full-width fd-button--transparent fd-button--text-alignment-left">
+                                    <i class="sap-icon--add"></i>
+                                    <span class="fd-button__text">Button 2</span>
+                                </button>
+                            </li>
+                            <li class="fd-action-sheet__item" role="listitem">
+                                <button class="fd-button fd-button--full-width fd-button--transparent fd-button--text-alignment-left">
+                                    <i class="sap-icon--print"></i>
+                                    <span class="fd-button__text">Button 3</span>
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <p class="fd-feed-list__text">
+                <span class="fd-feed-list__name">Joe Doe: </span>
+                <span>In hac habitasse platea dictumst. Fusce eu dui viverra, dictum justo in, pul aug. Praesent aliquam massa non lectus commodo, id vestibulum lectus auctor. Proin lorem quam, accumsan ac dui et, cursus ornare dui. Nunc ultricies dolor felis, in viverra mi venenatis in. Sed vel nisl a dui posuere ullamcorper. Donec posuere id massa at dictum. Suspendisse potenti.</span>
+            </p>
+            <div class="fd-feed-list__footer">
+                <small class="fd-feed-list__footer--byline">Aug 20, 2020</small>
+                <small class="fd-feed-list__footer--byline">Reply</small>
+            </div>
+        </div>
+    </li>
+</ul>

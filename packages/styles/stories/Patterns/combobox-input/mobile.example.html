@@ -1,0 +1,77 @@
+<div class="fd-dialog fd-dialog-docs-static fd-select-docs-max-height fd-dialog--active"
+id="select-dialog-example" style="height:600px">
+    <section role="dialog" aria-labelledby="mobileDialogHeader" class="fd-dialog__content fd-dialog__content--mobile">
+        <header class="fd-dialog__header fd-bar fd-bar--header-with-subheader">
+            <div class="fd-bar__left">
+                <div class="fd-bar__element">
+                    <h3 id="mobileDialogHeader" class="fd-title fd-title--h5">
+                        Ingredients
+                    </h3>
+                </div>
+            </div>
+            <div class="fd-bar__right">
+                <div class="fd-bar__element">
+                    <button class="fd-button fd-button--transparent" aria-label="close">
+                        <i class="sap-icon--decline"></i>
+                    </button>
+                </div>
+            </div>
+        </header>
+        <div class="fd-dialog__subheader fd-bar fd-bar--cozy fd-bar--subheader">
+            <div class="fd-bar__middle">
+                <div class="fd-input-group fd-input-group--control">
+                     <input aria-labelledby="mobileDialogHeader"
+                        type="text" class="fd-input fd-input-group__input" value="Apple" id="mobileCombobox" placeholder="Select Ingredient">
+                     <span class="fd-input-group__addon fd-input-group__addon--button">
+                         <button aria-label="hide/show options" class="fd-input-group__button fd-button fd-button--transparent">
+                                <i class="sap-icon--navigation-down-arrow"></i>
+                            </button>
+                     </span>
+                 </div>
+            </div>
+        </div>
+        <div class="fd-dialog__body fd-dialog__body--no-vertical-padding">
+            <label id="fruitsMobileHeader" class="fd-list__group-header">
+                <span class="fd-list__title">Fruits</span>
+            </label>
+            <ul aria-labelledby="fruitsMobileHeader" class="fd-list fd-list--dropdown fd-list--mobile" role="listbox">
+                <li role="option" tabindex="0" class="fd-list__item is-selected">
+                    <span class="fd-list__title">Apple</span>
+                </li>
+                <li role="option" tabindex="0" class="fd-list__item">
+                    <span class="fd-list__title">Orange</span>
+                </li>
+                <li role="option" tabindex="0" class="fd-list__item">
+                    <span class="fd-list__title">Banana</span>
+                </li>
+                <li role="option" tabindex="0" class="fd-list__item">
+                    <span class="fd-list__title">Kiwi</span>
+                </li>
+            </ul>
+            <label id="vegMobileHeader" class="fd-list__group-header">
+                <span class="fd-list__title">Vegetables</span>
+            </label>
+            <ul aria-labelledby="vegMobileHeader" class="fd-list fd-list--dropdown fd-list--mobile" role="listbox">
+                <li role="option" tabindex="0" class="fd-list__item">
+                    <span class="fd-list__title">Tomato</span>
+                </li>
+                <li role="option" tabindex="0" class="fd-list__item">
+                    <span class="fd-list__title">Onion</span>
+                </li>
+                <li role="option" tabindex="0" class="fd-list__item">
+                    <span class="fd-list__title">Spinach</span>
+                </li>
+                <li role="option" tabindex="0" class="fd-list__item">
+                    <span class="fd-list__title">Potato</span>
+                </li>
+            </ul>
+        </div>
+       <footer class="fd-dialog__footer fd-bar fd-bar--cozy fd-bar--footer">
+            <div class="fd-bar__right">
+                <div class="fd-bar__element">
+                    <button class="fd-button fd-button--emphasized fd-dialog__decisive-button">OK</button>
+                </div>
+            </div>
+        </footer>
+    </section>
+</div>

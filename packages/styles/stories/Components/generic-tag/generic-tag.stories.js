@@ -1,9 +1,9 @@
 import '../../../src/icon.scss';
 import '../../../src/generic-tag.scss';
 export default {
-    title: 'Components/Generic Tag',
-    parameters: {
-        description: `The generic tag control displays complementary information related to the current page, such as key performance indicators (KPI) and situations.
+  title: 'Components/Generic Tag',
+  parameters: {
+    description: `The generic tag control displays complementary information related to the current page, such as key performance indicators (KPI) and situations.
 
 Type/State | &nbsp;&nbsp;&nbsp;&nbsp;Modifier class
 :--------- |:-----------
@@ -13,11 +13,9 @@ Success | &nbsp;&nbsp;&nbsp;&nbsp;\`.fd-generic-tag--success\`
 Warning | &nbsp;&nbsp;&nbsp;&nbsp;\`.fd-generic-tag--warning\`
 Information | &nbsp;&nbsp;&nbsp;&nbsp;\`.fd-generic-tag--information\`
 
-`,
-    }
+`
+  }
 };
-
-
 const localStyles = `
 <style>
 
@@ -47,7 +45,6 @@ const localStyles = `
 
 </style>
 `;
-
 export const Primary = () => `${localStyles}
 <div class="docs-link-container">
     <div>
@@ -176,18 +173,15 @@ export const Primary = () => `${localStyles}
     </div>
 </div>
 `;
-
 Primary.storyName = 'Types';
 Primary.parameters = {
-    docs: {
-        iframeHeight: 300,
-        description: {
-            story: ``
-        }
+  docs: {
+    iframeHeight: 300,
+    description: {
+      story: ``
     }
+  }
 };
-
-
 export const Compact = () => `${localStyles}
 <div class="docs-link-container">
     <div>
@@ -254,13 +248,12 @@ export const Compact = () => `${localStyles}
     </div>
 </div>
 `;
-
 Compact.storyName = 'Compact and Cozy';
 Compact.parameters = {
-    docs: {
-        iframeHeight: 300,
-        description: {
-            story: `In cozy mode the Generic Tag has margin top and bottom of 0.5625rem. In compact mode the margin value is 0.1875rem. For compact Generic Tag use the \`.fd-generic-tag--compact\` modifier class. `
-        }
+  docs: {
+    iframeHeight: 300,
+    description: {
+      story: `In cozy mode the Generic Tag has margin top and bottom of 0.5625rem. In compact mode the margin value is 0.1875rem. For compact Generic Tag use the \`.fd-generic-tag--compact\` modifier class. `
     }
+  }
 };

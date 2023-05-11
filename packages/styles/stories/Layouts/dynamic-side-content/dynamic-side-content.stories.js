@@ -1,8 +1,13 @@
+import responsivenessExampleHtml from "./responsiveness.example.html?raw";
+import equalSplitExampleHtml from "./equal-split.example.html?raw";
+import positionBottomExampleHtml from "./position-bottom.example.html?raw";
+import positionRightExampleHtml from "./position-right.example.html?raw";
+import positionLeftExampleHtml from "./position-left.example.html?raw";
 import '../../../src/dynamic-side-content.scss';
 export default {
-    title: 'Layouts/Dynamic Side Content',
-    parameters: {
-        description: `
+  title: 'Layouts/Dynamic Side Content',
+  parameters: {
+    description: `
 Dynamic side content is a layout control that displays supplemental content in a separate area to support the users' understanding of the main content displayed.
 
 **The dynamic side content consists of two elements:**
@@ -32,129 +37,65 @@ The screen width ratio between the side and main content area will vary dependin
 
 Note: For all screens < 720px, the side content disappears entirely.
 `,
-        tags: ['f3', 'development']
-    }
+    tags: ['f3', 'development']
+  }
 };
-
-export const PositionLeft = () => `    <div class="fd-dynamic-side">
-        <div class="fd-dynamic-side__side">
-            <div class="docs-layout-grid-bg docs-layout-grid-bg--color-6">Side</div>
-        </div>
-        <div class="fd-dynamic-side__main">
-            <div class="docs-layout-grid-bg docs-layout-grid-bg--color-9">Main</div>
-        </div>
-    </div>
-`;
-
+export const PositionLeft = () => positionLeftExampleHtml;
 PositionLeft.storyName = 'Left';
 PositionLeft.parameters = {
-    docs: {
-        story: { iframeHeight: 160 },
-        description: {
-            story:
-                'To display side content from the left, put `fd-dynamic-side__side` as the first child element of `fd-dynamic-side`.'
-        }
+  docs: {
+    story: {
+      iframeHeight: 160
+    },
+    description: {
+      story: 'To display side content from the left, put `fd-dynamic-side__side` as the first child element of `fd-dynamic-side`.'
     }
+  }
 };
-
-export const PositionRight = () => `    <div class="fd-dynamic-side">
-        <div class="fd-dynamic-side__main">
-            <div class="docs-layout-grid-bg docs-layout-grid-bg--color-9">Main</div>
-        </div>
-        <div class="fd-dynamic-side__side">
-            <div class="docs-layout-grid-bg docs-layout-grid-bg--color-6">Side</div>
-        </div>
-    </div>
-`;
-
+export const PositionRight = () => positionRightExampleHtml;
 PositionRight.storyName = 'Right';
 PositionRight.parameters = {
-    docs: {
-        story: { iframeHeight: 160 },
-        description: {
-            story:
-                'To display side content from the right, put `fd-dynamic-side__side` as the second child element of `fd-dynamic-side`.'
-        }
+  docs: {
+    story: {
+      iframeHeight: 160
+    },
+    description: {
+      story: 'To display side content from the right, put `fd-dynamic-side__side` as the second child element of `fd-dynamic-side`.'
     }
+  }
 };
-
-export const PositionBottom = () => `    <div class="fd-dynamic-side fd-dynamic-side--below">
-        <div class="fd-dynamic-side__main">
-            <div class="docs-layout-grid-bg docs-layout-grid-bg--color-9">Main</div>
-        </div>
-        <div class="fd-dynamic-side__side">
-            <div class="docs-layout-grid-bg docs-layout-grid-bg--color-6">Side</div>
-        </div>
-    </div>
-`;
-
+export const PositionBottom = () => positionBottomExampleHtml;
 PositionBottom.storyName = 'Below';
 PositionBottom.parameters = {
-    docs: {
-        story: { iframeHeight: 260 },
-        description: {
-            story:
-                'To display side content below the main content area, keep `fd-dynamic-side__side` as the last child element and add the `fd-dynamic-side--below` modifier class.'
-        }
+  docs: {
+    story: {
+      iframeHeight: 260
+    },
+    description: {
+      story: 'To display side content below the main content area, keep `fd-dynamic-side__side` as the last child element and add the `fd-dynamic-side--below` modifier class.'
     }
+  }
 };
-
-export const EqualSplit = () => `    <div class="fd-dynamic-side fd-dynamic-side--equal-split">
-        <div class="fd-dynamic-side__main">
-            <div class="docs-layout-grid-bg docs-layout-grid-bg--color-9">Main</div>
-        </div>
-        <div class="fd-dynamic-side__side">
-            <div class="docs-layout-grid-bg docs-layout-grid-bg--color-6">Side</div>
-        </div>
-    </div>
-`;
-
+export const EqualSplit = () => equalSplitExampleHtml;
 EqualSplit.storyName = 'Equal split';
 EqualSplit.parameters = {
-    docs: {
-        story: { iframeHeight: 160 },
-        description: {
-            story:
-                'The equal split mode provides users with a 50:50 view of the main content and side content, which enables users to show more data i.e. for comparison purposes. To enable equal split mode, add the `fd-dynamic-side--equal-split` modifier class to the container.'
-        }
+  docs: {
+    story: {
+      iframeHeight: 160
+    },
+    description: {
+      story: 'The equal split mode provides users with a 50:50 view of the main content and side content, which enables users to show more data i.e. for comparison purposes. To enable equal split mode, add the `fd-dynamic-side--equal-split` modifier class to the container.'
     }
+  }
 };
-
-export const Responsiveness = () => `
-    <h4>On extra large screens, the main content area occupies 75% of the width.</h4>
-    <div class="fd-dynamic-side fd-dynamic-side--xl">
-        <div class="fd-dynamic-side__side">
-            <div class="docs-layout-grid-bg docs-layout-grid-bg--color-6">Side</div>
-        </div>
-        <div class="fd-dynamic-side__main">
-            <div class="docs-layout-grid-bg docs-layout-grid-bg--color-9">Main</div>
-        </div>
-    </div>
-    <h4>On medium-sized screens, the main content area occupies 66.66% of the width.</h4>
-    <div class="fd-dynamic-side fd-dynamic-side--md" style="max-width: 920px">
-        <div class="fd-dynamic-side__side">
-            <div class="docs-layout-grid-bg docs-layout-grid-bg--color-6">Side</div>
-        </div>
-        <div class="fd-dynamic-side__main">
-            <div class="docs-layout-grid-bg docs-layout-grid-bg--color-9">Main</div>
-        </div>
-    </div>
-    <h4>On small screens, the main content area occupies 100% of the width and the side content is hidden.</h4>
-    <div class="fd-dynamic-side fd-dynamic-side--sm" style="max-width: 420px">
-        <div class="fd-dynamic-side__side">
-            <div class="docs-layout-grid-bg docs-layout-grid-bg--color-6">Side</div>
-        </div>
-        <div class="fd-dynamic-side__main">
-            <div class="docs-layout-grid-bg docs-layout-grid-bg--color-9">Main</div>
-        </div>
-    </div>
-`;
-
+export const Responsiveness = () => responsivenessExampleHtml;
 Responsiveness.parameters = {
-    docs: {
-        story: { iframeHeight: 160 },
-        description: {
-            story: `
+  docs: {
+    story: {
+      iframeHeight: 160
+    },
+    description: {
+      story: `
 To display the dynamic side content for specific screen sizes, use the respective modifier classes:
 
 | Size &nbsp;&nbsp; | Modifier class &nbsp;&nbsp; |
@@ -163,6 +104,6 @@ To display the dynamic side content for specific screen sizes, use the respectiv
 | Medium & Large &nbsp;&nbsp; | \`fd-dynamic-side--md\` |
 | Extra Large &nbsp;&nbsp; | \`fd-dynamic-side--xl\` |
 `
-        }
     }
+  }
 };

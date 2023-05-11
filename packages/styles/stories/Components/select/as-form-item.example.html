@@ -1,0 +1,65 @@
+<div style="height:310px">
+    <div class="fd-form-item">
+    <label class="fd-form-label" id="formSelectLabel">Choose an option</label>
+        <div class="fd-popover">
+            <div class="fd-popover__control" aria-expanded="true" aria-haspopup="true">
+                <div class="fd-select">
+                    <button
+                        aria-labelledby="formSelectLabel formSelectValue"
+                        aria-expanded="true"
+                        aria-haspopup="listbox"
+                        class="fd-select__control"
+                        id="asFormItemSelectCombobox"
+                        onclick="
+                            toggleElAttrs('h0C6B625', ['aria-hidden']);
+                            toggleElAttrs('asFormItemSelectCombobox', ['aria-expanded']);
+                        "
+                        tabindex="0">
+                        <span is="formSelectValue" class="fd-select__text-content">Select</span>
+                        <span class="fd-button fd-button--transparent fd-select__button">
+                            <i class="sap-icon--slim-arrow-down"></i>
+                        </span>
+                    </button>
+                </div>
+            </div>
+            <div
+                aria-hidden="false"
+                class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--dropdown"
+                id="h0C6B625">
+                <ul
+                    aria-activedescendant="asFormItemSelectCombobox-currentlyFocusedItem"
+                    aria-labelledby="formSelectLabel"
+                    class="fd-list fd-list--dropdown"
+                    role="listbox">
+                    <li
+                        id="asFormItemSelectCombobox-currentlyFocusedItem"
+                        aria-selected="true"
+                        class="fd-list__item is-selected"
+                        role="option"
+                        tabindex="0">
+                    <span class="fd-list__title">
+                        List item 1 List item 1 List item 1 List item 1 List item 1 List item 1
+                        List item 1 List item 1 List item 1 List item 1 List item 1 List item 1
+                        List item 1 List item 1 List item 1 List item 1
+                    </span>
+                    </li>
+                    <li class="fd-list__item"
+                        role="option"
+                        tabindex="-1">
+                    <span class="fd-list__title">List item 2</span>
+                </li>
+                    <li class="fd-list__item"
+                        role="option"
+                        tabindex="-1">
+                    <span class="fd-list__title">List item 3</span>
+                    </li>
+                    <li class="fd-list__item"
+                        role="option"
+                        tabindex="-1">
+                    <span class="fd-list__title">List item 4</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>

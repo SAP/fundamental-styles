@@ -1,3 +1,8 @@
+import horizontalPaddingsExampleHtml from "./horizontal-paddings.example.html?raw";
+import responsivePaddingsExampleHtml from "./responsive-paddings.example.html?raw";
+import menuButtonsExampleHtml from "./menu-buttons.example.html?raw";
+import menuExampleHtml from "./menu.example.html?raw";
+import primaryExampleHtml from "./primary.example.html?raw";
 import '../../../src/avatar.scss';
 import '../../../src/button.scss';
 import '../../../src/form-label.scss';
@@ -8,9 +13,9 @@ import '../../../src/text.scss';
 import '../../../src/title.scss';
 import '../../../src/tool-header.scss';
 export default {
-    title: 'Components/Tool Header',
-    parameters: {
-        description: `The tool header is a control that is found in most SAP Cloud Platform products, most commonly as a part of the Tool Page Layout. The tool header inherits its functionality from the overflow toolbar and its visual design from the shell bar.
+  title: 'Components/Tool Header',
+  parameters: {
+    description: `The tool header is a control that is found in most SAP Cloud Platform products, most commonly as a part of the Tool Page Layout. The tool header inherits its functionality from the overflow toolbar and its visual design from the shell bar.
 
 ##Usage
 **Use the tool header if:**
@@ -79,358 +84,35 @@ The tool header supports object status in its semantic form. No industry specifi
 - <code style="color:red;">.fd-tool-header__input-group</code>
 
 `,
-        tags: ['btp', 'theme', 'development']
-    }
+    tags: ['btp', 'theme', 'development']
+  }
 };
-
-export const Primary = () => `<div class="fd-tool-header">
-    <div class="fd-tool-header__group">
-        <div class="fd-tool-header__element">
-            <img class="fd-tool-header__logo" src="//unpkg.com/fundamental-styles/dist/images/sap-logo.png" srcset="//unpkg.com/fundamental-styles/dist/images/sap-logo@2x.png 1x, //unpkg.com/fundamental-styles/dist/images/sap-logo@3x.png 2x, //unpkg.com/fundamental-styles/dist/images/sap-logo@4x.png 3x" alt="SAP">
-
-        </div>
-        <div class="fd-tool-header__element">
-            <h4 class="fd-title fd-title--h5 fd-tool-header__title">Product Name</h4>
-        </div>
-        <div class="fd-tool-header__element">
-            <label class="fd-form-label fd-tool-header__label" for="input-1">Second Title</label>
-        </div>
-    </div>
-    <div class="fd-tool-header__group">
-        <div class="fd-tool-header__element">
-            <span class="sap-icon sap-icon--cart fd-tool-header__icon fd-tool-header__icon--contrast"></span>
-        </div>
-        <div class="fd-tool-header__element">
-            <span class="fd-object-status fd-object-status--inverted  fd-tool-header__object-status--negative">
-                <i class="fd-object-status__icon sap-icon--message-error" role="presentation"></i>
-                <span class="fd-object-status__text">Negative</span>
-            </span>
-        </div>
-        <div class="fd-tool-header__element">
-            <span class="fd-object-status fd-object-status--inverted fd-tool-header__object-status--positive ">
-                <i class="fd-object-status__icon sap-icon--message-success" role="presentation"></i>
-                <span class="fd-object-status__text">Positive</span>
-            </span>
-        </div>
-        <div class="fd-tool-header__element">
-            <button class="fd-button fd-button--compact fd-button--transparent fd-tool-header__button" aria-label="search">
-                 <i class="sap-icon--search"></i>
-            </button>
-        </div>
-        <div class="fd-tool-header__element">
-            <button class="fd-button fd-button--compact fd-button--transparent fd-tool-header__button" aria-label="task">
-                 <i class="sap-icon--circle-task"></i>
-            </button>
-        </div>
-        <div class="fd-tool-header__element">
-            <button class="fd-button fd-button--compact fd-button--transparent fd-tool-header__button" aria-label="notification">
-                 <i class="sap-icon--bell"></i>
-            </button>
-        </div>
-        <div class="fd-tool-header__element">
-            <span class="fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--thumbnail" style="background-image: url('/assets/images/avatars/1.svg')" role="img" aria-label="John Doe"></span>
-        </div>
-        <div class="fd-tool-header__element">
-            <button class="fd-button fd-button--compact fd-button--transparent fd-tool-header__button" aria-label="user menu control">
-                 <i class="sap-icon--grid"></i>
-            </button>
-        </div>
-    </div>
-</div>
-`;
-
+export const Primary = () => primaryExampleHtml;
 Primary.storyName = 'Tool Header with Controls';
-
-export const Menu = () => `<div class="fd-tool-header fd-tool-header--menu">
-    <div class="fd-tool-header__group">
-        <div class="fd-tool-header__element">
-            <button class="fd-button fd-button--compact fd-button--transparent fd-tool-header__button" aria-label="menu">
-                <i class="sap-icon--menu2"></i>
-            </button>
-        </div>
-        <div class="fd-tool-header__element">
-            <img class="fd-tool-header__logo" src="//unpkg.com/fundamental-styles/dist/images/sap-logo.png" srcset="//unpkg.com/fundamental-styles/dist/images/sap-logo@2x.png 1x, //unpkg.com/fundamental-styles/dist/images/sap-logo@3x.png 2x, //unpkg.com/fundamental-styles/dist/images/sap-logo@4x.png 3x" alt="SAP" width="48">
-        </div>
-        <div class="fd-tool-header__element">
-            <h4 class="fd-title fd-title--h5 fd-tool-header__title">Product Name</h4>
-        </div>
-        <div class="fd-tool-header__element">
-            <label class="fd-text fd-tool-header__text" for="input-1">Description (Text Element)</label>
-        </div>
-    </div>
-    <div class="fd-tool-header__group">
-        <div class="fd-tool-header__element">
-            <div class="fd-input-group fd-input-group--compact fd-tool-header__input-group">
-                <input class="fd-input fd-input-group__input" type="text" id="aqwsdewfwfw" name="" placeholder="Search...">
-                <span class="fd-input-group__addon fd-input-group__addon--button">
-                    <button class="fd-input-group__button fd-button fd-button--icon fd-button--transparent fd-button--compact fd-tool-header__button" aria-label="Search">
-                        <i class="sap-icon--search"></i>
-                    </button>
-                    </span>
-            </div>
-        </div>
-        <div class="fd-tool-header__element">
-            <button class="fd-button fd-button--compact fd-button--transparent fd-tool-header__button" aria-label="task">
-                 <i class="sap-icon--circle-task"></i>
-            </button>
-        </div>
-        <div class="fd-tool-header__element">
-            <button class="fd-button fd-button--compact fd-button--transparent fd-tool-header__button" aria-label="notification">
-                 <i class="sap-icon--bell"></i>
-            </button>
-        </div>
-        <div class="fd-tool-header__element">
-            <span class="fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--thumbnail" style="background-image: url('/assets/images/avatars/1.svg')" role="img" aria-label="John Doe"></span>
-        </div>
-        <div class="fd-tool-header__element">
-            <button class="fd-button fd-button--compact fd-button--transparent fd-tool-header__button" aria-label="user menu control">
-                 <i class="sap-icon--grid"></i>
-            </button>
-        </div>
-    </div>
-</div>
-`;
-
+export const Menu = () => menuExampleHtml;
 Menu.storyName = 'Tool Header with Side Navigation Menu Button';
 Menu.parameters = {
-    docs: {
-        description: {
-            story: 'The side navigation menu button is used to collapse/expand the side navigation. It is not recommended to use horizontal and responsive paddings when this button is present.'
-        }
+  docs: {
+    description: {
+      story: 'The side navigation menu button is used to collapse/expand the side navigation. It is not recommended to use horizontal and responsive paddings when this button is present.'
     }
+  }
 };
-
-
-export const MenuButtons = () => `<div class="fd-tool-header fd-tool-header--menu">
-    <div class="fd-tool-header__group">
-        <div class="fd-tool-header__element">
-            <button class="fd-button fd-button--compact fd-button--transparent fd-tool-header__button" aria-label="menu">
-                <i class="sap-icon--menu2"></i>
-            </button>
-        </div>
-        <div class="fd-tool-header__element">
-            <button class="fd-button fd-button--compact fd-button--transparent fd-button--menu fd-tool-header__button" aria-label="menu button file">
-                <span class="fd-button__text">File</span>
-                <i class="sap-icon--slim-arrow-down"></i>
-            </button>
-        </div>
-        <div class="fd-tool-header__element">
-            <button class="fd-button fd-button--compact fd-button--transparent fd-button--menu fd-tool-header__button" aria-label="menu button edit">
-                <span class="fd-button__text">Edit</span>
-                <i class="sap-icon--slim-arrow-down"></i>
-            </button>
-        </div>
-        <div class="fd-tool-header__element">
-            <button class="fd-button fd-button--compact fd-button--transparent fd-button--menu fd-tool-header__button" aria-label="menu button view">
-                <span class="fd-button__text">View</span>
-                <i class="sap-icon--slim-arrow-down"></i>
-            </button>
-        </div>
-        <div class="fd-tool-header__element">
-            <button class="fd-button fd-button--compact fd-button--transparent fd-button--menu fd-tool-header__button" aria-label="menu button delete">
-                <span class="fd-button__text">Delete</span>
-                <i class="sap-icon--slim-arrow-down"></i>
-            </button>
-        </div>
-    </div>
-    <div class="fd-tool-header__group">
-        <div class="fd-tool-header__element">
-            <span class="fd-object-status fd-tool-header__object-status--critical">
-                <i class="fd-object-status__icon sap-icon--message-warning" role="presentation"></i>
-                <span class="fd-object-status__text">Status</span>
-            </span>
-        </div>
-        <div class="fd-tool-header__element">
-            <button class="fd-button fd-button--compact fd-button--transparent fd-tool-header__button">
-                <span class="fd-button__text">User Account</span>
-            </button>
-        </div>
-    </div>
-</div>
-`;
-
+export const MenuButtons = () => menuButtonsExampleHtml;
 MenuButtons.storyName = 'Tool Header with Menu Buttons';
-
-export const ResponsivePaddings = () => `<div class="fd-tool-header fd-tool-header--responsive-paddings">
-    <div class="fd-tool-header__group">
-        <div class="fd-tool-header__element">
-            <img class="fd-tool-header__logo" src="//unpkg.com/fundamental-styles/dist/images/sap-logo.png" srcset="//unpkg.com/fundamental-styles/dist/images/sap-logo@2x.png 1x, //unpkg.com/fundamental-styles/dist/images/sap-logo@3x.png 2x, //unpkg.com/fundamental-styles/dist/images/sap-logo@4x.png 3x" alt="SAP">
-
-        </div>
-        <div class="fd-tool-header__element">
-            <h4 class="fd-title fd-title--h5 fd-tool-header__title">Product Name</h4>
-        </div>
-        <div class="fd-tool-header__element">
-            <label class="fd-form-label fd-tool-header__label" for="input-1">Second Title</label>
-        </div>
-    </div>
-    <div class="fd-tool-header__group">
-        <div class="fd-tool-header__element">
-            <button class="fd-button fd-button--compact fd-button--transparent fd-tool-header__button" aria-label="search">
-                 <i class="sap-icon--search"></i>
-            </button>
-        </div>
-        <div class="fd-tool-header__element">
-            <button class="fd-button fd-button--compact fd-button--transparent fd-tool-header__button" aria-label="task">
-                 <i class="sap-icon--circle-task"></i>
-            </button>
-        </div>
-        <div class="fd-tool-header__element">
-            <button class="fd-button fd-button--compact fd-button--transparent fd-tool-header__button" aria-label="notification">
-                 <i class="sap-icon--bell"></i>
-            </button>
-        </div>
-        <div class="fd-tool-header__element">
-            <span class="fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--thumbnail" style="background-image: url('/assets/images/avatars/1.svg')" role="img" aria-label="John Doe"></span>
-        </div>
-        <div class="fd-tool-header__element">
-            <button class="fd-button fd-button--compact fd-button--transparent fd-tool-header__button" aria-label="user menu control">
-                 <i class="sap-icon--grid"></i>
-            </button>
-        </div>
-    </div>
-</div>
-`;
-
+export const ResponsivePaddings = () => responsivePaddingsExampleHtml;
 ResponsivePaddings.parameters = {
-    docs: {
-        description: {
-            story: 'Horizontal responsive paddings (based on the screen size) can be applied to the tool header by adding the `fd-tool-header--responsive-paddings` modifier class to the container class. In this case the left and right spacing will change as the screen size changes.'
-        }
+  docs: {
+    description: {
+      story: 'Horizontal responsive paddings (based on the screen size) can be applied to the tool header by adding the `fd-tool-header--responsive-paddings` modifier class to the container class. In this case the left and right spacing will change as the screen size changes.'
     }
+  }
 };
-
-
-export const HorizontalPaddings = () => `<h4>Size S (1rem)</h4>
-<div class="fd-tool-header fd-tool-header--sm" style="max-width: 500px;">
-    <div class="fd-tool-header__group">
-        <div class="fd-tool-header__element">
-            <img class="fd-tool-header__logo" src="//unpkg.com/fundamental-styles/dist/images/sap-logo.png" srcset="//unpkg.com/fundamental-styles/dist/images/sap-logo@2x.png 1x, //unpkg.com/fundamental-styles/dist/images/sap-logo@3x.png 2x, //unpkg.com/fundamental-styles/dist/images/sap-logo@4x.png 3x" alt="SAP">
-
-        </div>
-        <div class="fd-tool-header__element">
-            <button class="fd-button fd-button--transparent fd-button--menu fd-tool-header__button" aria-label="mega menu">
-                <i class="sap-icon--megamenu"></i>
-            </button>
-        </div>
-    </div>
-    <div class="fd-tool-header__group">
-        <div class="fd-tool-header__element">
-            <button class="fd-button fd-button--transparent fd-tool-header__button" aria-label="more items">
-                 <i class="sap-icon--overflow"></i>
-            </button>
-        </div>
-        <div class="fd-tool-header__element">
-            <span class="fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--thumbnail" style="background-image: url('/assets/images/avatars/1.svg')" role="img" aria-label="John Doe"></span>
-        </div>
-    </div>
-</div>
-<br>
-<h4>Size M (2rem)</h4>
-<div class="fd-tool-header fd-tool-header--md" style="max-width: 700px;">
-    <div class="fd-tool-header__group">
-        <div class="fd-tool-header__element">
-            <img class="fd-tool-header__logo" src="//unpkg.com/fundamental-styles/dist/images/sap-logo.png" srcset="//unpkg.com/fundamental-styles/dist/images/sap-logo@2x.png 1x, //unpkg.com/fundamental-styles/dist/images/sap-logo@3x.png 2x, //unpkg.com/fundamental-styles/dist/images/sap-logo@4x.png 3x" alt="SAP">
-
-        </div>
-        <div class="fd-tool-header__element">
-            <h4 class="fd-title fd-title--h5 fd-tool-header__title">Product Name</h4>
-        </div>
-    </div>
-    <div class="fd-tool-header__group">
-        <div class="fd-tool-header__element">
-            <button class="fd-button fd-button--compact fd-button--transparent fd-tool-header__button" aria-label="notification">
-                 <i class="sap-icon--bell"></i>
-            </button>
-        </div>
-        <div class="fd-tool-header__element">
-            <span class="fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--thumbnail" style="background-image: url('/assets/images/avatars/1.svg')" role="img" aria-label="John Doe"></span>
-        </div>
-        <div class="fd-tool-header__element">
-            <button class="fd-button fd-button--compact fd-button--transparent fd-tool-header__button" aria-label="user menu control">
-                 <i class="sap-icon--grid"></i>
-            </button>
-        </div>
-    </div>
-</div>
-<br>
-<h4>Size L (2rem)</h4>
-<div class="fd-tool-header fd-tool-header--lg" style="max-width: 1050px;">
-    <div class="fd-tool-header__group">
-        <div class="fd-tool-header__element">
-            <img class="fd-tool-header__logo" src="//unpkg.com/fundamental-styles/dist/images/sap-logo.png" srcset="//unpkg.com/fundamental-styles/dist/images/sap-logo@2x.png 1x, //unpkg.com/fundamental-styles/dist/images/sap-logo@3x.png 2x, //unpkg.com/fundamental-styles/dist/images/sap-logo@4x.png 3x" alt="SAP">
-
-        </div>
-        <div class="fd-tool-header__element">
-            <button class="fd-button fd-button--compact fd-button--transparent fd-button--menu fd-tool-header__button" aria-label="megamenu">
-                <h4 class="fd-title fd-title--h5 fd-tool-header__title">Product Name</h4>
-                <i class="sap-icon--megamenu"></i>
-            </button>
-        </div>
-    </div>
-    <div class="fd-tool-header__group">
-        <div class="fd-tool-header__element">
-            <button class="fd-button fd-button--compact fd-button--transparent fd-tool-header__button" aria-label="notification">
-                 <i class="sap-icon--bell"></i>
-            </button>
-        </div>
-        <div class="fd-tool-header__element">
-            <span class="fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--thumbnail" style="background-image: url('/assets/images/avatars/1.svg')" role="img" aria-label="John Doe"></span>
-        </div>
-        <div class="fd-tool-header__element">
-            <button class="fd-button fd-button--compact fd-button--transparent fd-tool-header__button" aria-label="user menu control">
-                 <i class="sap-icon--grid"></i>
-            </button>
-        </div>
-    </div>
-</div>
-<br>
-<h4>Size XL (3rem)</h4>
-<div class="fd-tool-header fd-tool-header--xl">
-    <div class="fd-tool-header__group">
-        <div class="fd-tool-header__element">
-            <img class="fd-tool-header__logo" src="//unpkg.com/fundamental-styles/dist/images/sap-logo.png" srcset="//unpkg.com/fundamental-styles/dist/images/sap-logo@2x.png 1x, //unpkg.com/fundamental-styles/dist/images/sap-logo@3x.png 2x, //unpkg.com/fundamental-styles/dist/images/sap-logo@4x.png 3x" alt="SAP">
-
-        </div>
-        <div class="fd-tool-header__element">
-            <button class="fd-button fd-button--compact fd-button--transparent fd-button--menu fd-tool-header__button" aria-label="mega menu">
-                <span class="fd-button__text fd-tool-header__button-text">Product Name</span>
-                <i class="sap-icon--megamenu"></i>
-            </button>
-        </div>
-    </div>
-    <div class="fd-tool-header__group">
-        <div class="fd-tool-header__element">
-            <div class="fd-input-group fd-input-group--compact fd-tool-header__input-group">
-                <input class="fd-input fd-input-group__input" type="text" id="aqwsdewfwfw" name="" placeholder="Search...">
-                <span class="fd-input-group__addon fd-input-group__addon--button">
-                    <button class="fd-input-group__button fd-button fd-button--icon fd-button--transparent fd-button--compact fd-tool-header__button" aria-label="Select">
-                        <i class="sap-icon--navigation-down-arrow"></i>
-                    </button>
-                    </span>
-            </div>
-        </div>
-        <div class="fd-tool-header__element">
-            <button class="fd-button fd-button--compact fd-button--transparent fd-tool-header__button" aria-label="notification">
-                 <i class="sap-icon--bell"></i>
-            </button>
-        </div>
-        <div class="fd-tool-header__element">
-            <span class="fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--thumbnail" style="background-image: url('/assets/images/avatars/1.svg')" role="img" aria-label="John Doe"></span>
-        </div>
-        <div class="fd-tool-header__element">
-            <button class="fd-button fd-button--compact fd-button--transparent fd-tool-header__button" aria-label="user menu control">
-                 <i class="sap-icon--grid"></i>
-            </button>
-        </div>
-    </div>
-</div>
-`;
-
+export const HorizontalPaddings = () => horizontalPaddingsExampleHtml;
 HorizontalPaddings.parameters = {
-    docs: {
-        description: {
-            story: 'You can add horizontal paddings by applying a modifier class to the container. For example, `.fd-tool-header--sm` modifier class will add 1rem horizontal paddings on the tool bar container.'
-        }
+  docs: {
+    description: {
+      story: 'You can add horizontal paddings by applying a modifier class to the container. For example, `.fd-tool-header--sm` modifier class will add 1rem horizontal paddings on the tool bar container.'
     }
+  }
 };

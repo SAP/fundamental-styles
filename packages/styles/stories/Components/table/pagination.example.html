@@ -1,0 +1,82 @@
+<div class="fd-toolbar fd-toolbar--title fd-toolbar-active">
+    <h4 class="fd-title fd-title--h4 fd-toolbar__title">Table With Pagination at The Bottom</h4>
+    <span class="fd-toolbar__spacer fd-toolbar__spacer--auto"></span>
+</div>
+<table class="fd-table">
+    <thead class="fd-table__header">
+        <tr class="fd-table__row">
+            <th class="fd-table__cell" scope="col">Name</th>
+            <th class="fd-table__cell" scope="col">Status</th>
+            <th class="fd-table__cell" scope="col">Price</th>
+            <th class="fd-table__cell" scope="col">Country</th>
+        </tr>
+    </thead>
+    <tbody class="fd-table__body">
+        <tr class="fd-table__row">
+            <td class="fd-table__cell">Banana</td>
+            <td class="fd-table__cell">
+                <span class="fd-object-status fd-object-status--positive">
+                    Available
+                </span>
+            </td>
+            <td class="fd-table__cell">5 EUR</td>
+            <td class="fd-table__cell">India</td>
+        </tr>
+        <tr class="fd-table__row">
+            <td class="fd-table__cell">Pineapple</td>
+            <td class="fd-table__cell">
+                <span class="fd-object-status fd-object-status--negative">
+                    Out of stock
+                </span>
+            </td>
+            <td class="fd-table__cell">2 EUR</td>
+            <td class="fd-table__cell">Mexico</td>
+        </tr>
+        <tr class="fd-table__row">
+            <td class="fd-table__cell">Orange</td>
+            <td class="fd-table__cell">
+                <span class="fd-object-status fd-object-status--informative">
+                    Temporary unavailable
+                </span>
+            </td>
+            <td class="fd-table__cell">6 EUR</td>
+            <td class="fd-table__cell">Spain</td>
+        </tr>
+    </tbody>
+</table>
+
+<div class='fd-pagination'>
+    <nav class='fd-pagination__nav'>
+        <a href='#' class='fd-button fd-button--compact fd-button--transparent fd-pagination__button fd-pagination__button--mobile' aria-label='First' aria-disabled='false'>
+            <i class='sap-icon sap-icon--media-rewind'></i>
+        </a>
+
+        <a href='#' class='fd-button fd-button--compact fd-button--transparent fd-pagination__button' aria-label='Previous' aria-disabled='false'>
+            <i class='sap-icon sap-icon--navigation-left-arrow'></i>
+        </a>
+
+        <a href='#' class='fd-button fd-button--compact fd-button--transparent fd-pagination__link'>1</a>
+
+        <label class='fd-form-label fd-pagination__label' for='secondPageInput'>Page:</label>
+
+        <input id='secondPageInput' class='fd-input fd-input--compact fd-pagination__input' type='number' min='1' max='10' value='2' required />
+
+        <a href='#' class='fd-button fd-button--compact fd-button--transparent fd-pagination__link'>3</a>
+
+        <span class='fd-pagination__more' role='presentation'></span>
+
+        <a href='#' class='fd-button fd-button--compact fd-button--transparent fd-pagination__link'>10</a>
+
+        <a href='#' class='fd-button fd-button--compact fd-button--transparent fd-pagination__button' aria-label='Next' aria-disabled='false'>
+            <i class='sap-icon sap-icon--navigation-right-arrow'></i>
+        </a>
+
+        <a href='#' class='fd-button fd-button--compact fd-button--transparent fd-pagination__button fd-pagination__button--mobile' aria-label='Last' aria-disabled='false'>
+            <i class='sap-icon sap-icon--media-forward'></i>
+        </a>
+    </nav>
+
+    <div class='fd-pagination__total'>
+        <span class='fd-form-label fd-pagination__total-label'>30 Results</span>
+    </div>
+</div>

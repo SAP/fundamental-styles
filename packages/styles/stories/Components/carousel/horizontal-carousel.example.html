@@ -1,0 +1,50 @@
+<div style="display: flex; flex-direction: column; align-items: center;">
+    <h4>Items in horizontal direction</h4>
+
+    <div
+        class="fd-carousel"
+        style="max-width: 20rem; max-height: 15.5rem;"
+        data-ride="carousel"
+    >
+        <div class="fd-carousel__content fd-carousel__content--horizontal">
+            <div class="fd-carousel__slides">
+                <div class="fd-carousel__item fd-carousel__item--active">
+                    <img src="https://placehold.co/320x200" alt="first image">
+                </div>
+            </div>
+        </div>
+
+        <div class="fd-carousel__page-indicator-container">
+            <button
+                class="fd-button fd-carousel__button fd-carousel__button--left"
+                data-slide="prev"
+                aria-label="Go to previous item">
+                <i class="sap-icon--slim-arrow-left"></i>
+            </button>
+
+            <ol class="fd-carousel__page-indicators">
+                <li
+                    data-slide-to="1"
+                    class="fd-carousel__page-indicator"></li>
+                <li
+                    data-slide-to="2"
+                    aria-label="Displaying item 2 of 3"
+                    class="fd-carousel__page-indicator fd-carousel__page-indicator--active"></li>
+                <li
+                    data-slide-to="3"
+                    class="fd-carousel__page-indicator"></li>
+            </ol>
+
+            <button
+                class="fd-button fd-carousel__button fd-carousel__button--right"
+                data-slide="next"
+                aria-label="Go to next item">
+                <i class="sap-icon--slim-arrow-right"></i>
+            </button>
+        </div>
+    </div>
+
+    <div style="display: none;" role="region" id="carousel-11" aria-live="polite">
+        Displaying item 2 of 3
+    </div>
+</div>

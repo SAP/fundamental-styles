@@ -1,9 +1,21 @@
+import bordersExampleHtml from "./borders.example.html?raw";
+import valueStatesExampleHtml from "./value-states.example.html?raw";
+import zoomIconExampleHtml from "./zoom-icon.example.html?raw";
+import accentColorsShellHeaderContextExampleHtml from "./accent-colors-shell-header-context.example.html?raw";
+import accentColorsExampleHtml from "./accent-colors.example.html?raw";
+import tileIconBackgroundExampleHtml from "./tile-icon-background.example.html?raw";
+import placeholderBackgroundExampleHtml from "./placeholder-background.example.html?raw";
+import transparentExampleHtml from "./transparent.example.html?raw";
+import backgroundImageExampleHtml from "./background-image.example.html?raw";
+import circleExampleHtml from "./circle.example.html?raw";
+import initialsExampleHtml from "./initials.example.html?raw";
+import iconExampleHtml from "./icon.example.html?raw";
 import '../../../src/avatar.scss';
 import '../../../src/icon.scss';
 export default {
-    title: 'Components/Avatar',
-    parameters: {
-        description: `The avatar component displays an image, icon or user initials, and is used for user profiles, placeholder images, icons or business-related images i.e. product photos. <br>
+  title: 'Components/Avatar',
+  parameters: {
+    description: `The avatar component displays an image, icon or user initials, and is used for user profiles, placeholder images, icons or business-related images i.e. product photos. <br>
         For detailed information check Fiori Design Guidelines for <a target="_blank" href="https://experience.sap.com/fiori-design-web/avatar/">Avatar</a> component. 
 
 
@@ -35,11 +47,9 @@ The avatar control is adaptive and has five predefined sizes. These are the same
 
 <br><br><br>
 `,
-        tags: ['a11y', 'f3', 'theme']
-    }
+    tags: ['a11y', 'f3', 'theme']
+  }
 };
-
-
 const localStyles = `
 <style>
 
@@ -50,101 +60,47 @@ const localStyles = `
 
 </style>
 `;
-
-export const Icon = () => `
-<span class="fd-avatar fd-avatar--xs" role="img" aria-label="Avatar">
-    <i role="presentation" aria-hidden="true" aria-label="Image placeholder" class="fd-avatar__icon sap-icon--washing-machine"></i>
-</span>
-<span class="fd-avatar fd-avatar--s" role="img" aria-label="Avatar">
-    <i role="presentation" aria-hidden="true" aria-label="Image placeholder" class="fd-avatar__icon sap-icon--washing-machine"></i>
-</span>
-<span class="fd-avatar fd-avatar--m" role="img" aria-label="Avatar">
-    <i role="presentation" aria-hidden="true" aria-label="Image placeholder" class="fd-avatar__icon sap-icon--washing-machine"></i>
-</span>
-<span class="fd-avatar fd-avatar--l" role="img" aria-label="Avatar">
-    <i role="presentation" aria-hidden="true" aria-label="Image placeholder" class="fd-avatar__icon sap-icon--washing-machine"></i>
-</span>
-<span class="fd-avatar fd-avatar--xl" role="img" aria-label="Avatar">
-    <i role="presentation" aria-hidden="true" aria-label="Image placeholder" class="fd-avatar__icon sap-icon--washing-machine"></i>
-</span>
-`;
-
+export const Icon = () => iconExampleHtml;
 Icon.parameters = {
-    docs: {
-        story: { iframeHeight: 200 },
-        description: {
-            story: 'The icon avatar can be used to display non-interactive icons. If you want the icon to be interactive, use the **Button** component with an icon inside instead. <br><br>When using the icon avatar for illustrative purposes only, include `role="presentation"` in the element.'
-        }
+  docs: {
+    story: {
+      iframeHeight: 200
+    },
+    description: {
+      story: 'The icon avatar can be used to display non-interactive icons. If you want the icon to be interactive, use the **Button** component with an icon inside instead. <br><br>When using the icon avatar for illustrative purposes only, include `role="presentation"` in the element.'
     }
+  }
 };
-
-
-
-export const Initials = () => `
-<span class="fd-avatar fd-avatar--xs" aria-role="img" aria-label="Wendy Wallace">WW</span>
-<span class="fd-avatar fd-avatar--s" aria-role="img" aria-label="Wendy Wallace">WW</span>
-<span class="fd-avatar fd-avatar--m" aria-role="img" aria-label="Wendy Wallace">WW</span>
-<span class="fd-avatar fd-avatar--l" aria-role="img" aria-label="Wendy Wallace">WW</span>
-<span class="fd-avatar fd-avatar--xl" aria-role="img" aria-label="Wendy Wallace">WW</span>
-`;
-
+export const Initials = () => initialsExampleHtml;
 Initials.parameters = {
-    docs: {
-        story: { iframeHeight: 200 },
-        description: {
-            story: 'The initials avatar can display up to three alphabetical characters representing the first and last name(s) of a person, for example: MvV for Marjolein van Veen. The order in which the first and last name(s) are displayed depends on the language-specific settings.<br><br> When there is no equivalent text for the avatar, include `aria-label` in the element. This isn’t necessary if the avatar is used for illustrative purposes only. See **Icon** above.'
-        }
+  docs: {
+    story: {
+      iframeHeight: 200
+    },
+    description: {
+      story: 'The initials avatar can display up to three alphabetical characters representing the first and last name(s) of a person, for example: MvV for Marjolein van Veen. The order in which the first and last name(s) are displayed depends on the language-specific settings.<br><br> When there is no equivalent text for the avatar, include `aria-label` in the element. This isn’t necessary if the avatar is used for illustrative purposes only. See **Icon** above.'
     }
+  }
 };
-
-
-export const Circle = () => `
-<span class="fd-avatar fd-avatar--xs fd-avatar--circle" aria-role="img" aria-label="Avatar">
-    <i class="fd-avatar__icon sap-icon--money-bills" role="presentation" aria-hidden="true" aria-label="Image placeholder"></i>
-</span>
-<span class="fd-avatar fd-avatar--s fd-avatar--circle" aria-role="img" aria-label="Avatar">
-    <i class="fd-avatar__icon sap-icon--money-bills" role="presentation" aria-hidden="true" aria-label="Image placeholder"></i>
-</span>
-<span class="fd-avatar fd-avatar--m fd-avatar--circle" aria-role="img" aria-label="Avatar">
-    <i class="fd-avatar__icon sap-icon--money-bills" role="presentation" aria-hidden="true" aria-label="Image placeholder"></i>
-</span>
-<span class="fd-avatar fd-avatar--l fd-avatar--circle" aria-role="img" aria-label="Avatar">
-    <i class="fd-avatar__icon sap-icon--money-bills" role="presentation" aria-hidden="true" aria-label="Image placeholder"></i>
-</span>
-<span class="fd-avatar fd-avatar--xl fd-avatar--circle" aria-role="img" aria-label="Avatar">
-    <i class="fd-avatar__icon sap-icon--money-bills" role="presentation" aria-hidden="true" aria-label="Image placeholder"></i>
-</span>
-<span class="fd-avatar fd-avatar--xs fd-avatar--circle" aria-role="img" aria-label="Wendy Wallace">WW</span>
-<span class="fd-avatar fd-avatar--s fd-avatar--circle" aria-role="img" aria-label="Wendy Wallace">WW</span>
-<span class="fd-avatar fd-avatar--m fd-avatar--circle" aria-role="img" aria-label="Wendy Wallace">WW</span>
-<span class="fd-avatar fd-avatar--l fd-avatar--circle" aria-role="img" aria-label="Wendy Wallace">WW</span>
-<span class="fd-avatar fd-avatar--xl fd-avatar--circle" aria-role="img" aria-label="Wendy Wallace">WW</span>
-`;
-
+export const Circle = () => circleExampleHtml;
 Circle.parameters = {
-    docs: {
-        story: { iframeHeight: 200 },
-        description: {
-            story: 'A circle style can be displayed by adding the `fd-avatar--circle` modifier class to the `fd-avatar` base class.'
-        }
+  docs: {
+    story: {
+      iframeHeight: 200
+    },
+    description: {
+      story: 'A circle style can be displayed by adding the `fd-avatar--circle` modifier class to the `fd-avatar` base class.'
     }
+  }
 };
-
-export const BackgroundImage = () => `
-<span class="fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--thumbnail" style="background-image: url('/assets/images/portraits/L_80x80_M1.png')" role="img" aria-label="John Doe"></span>
-<span class="fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--thumbnail" style="background-image: url('/assets/images/portraits/L_80x80_M2.png')" role="img" aria-label="John Doe"></span>
-<span class="fd-avatar fd-avatar--m fd-avatar--circle fd-avatar--thumbnail" style="background-image: url('/assets/images/portraits/L_80x80_F3.png')" role="img" aria-label="John Doe"></span>
-<span class="fd-avatar fd-avatar--l fd-avatar--circle fd-avatar--thumbnail" style="background-image: url('/assets/images/portraits/L_80x80_F4.png')" role="img" aria-label="John Doe"></span>
-<span class="fd-avatar fd-avatar--xl fd-avatar--circle fd-avatar--thumbnail" style="background-image: url('/assets/images/portraits/L_80x80_M1.png')" role="img" aria-label="John Doe"></span>
-<span class="fd-avatar fd-avatar--xl fd-avatar--thumbnail" style="background-image: url('/assets/images/landscape/L1.jpg')" role="img" aria-label="John Doe"></span>
-<span class="fd-avatar fd-avatar--xl fd-avatar--thumbnail fd-avatar--background-contain" style="background-image: url('/assets/images/landscape/L2.jpg')" role="img" aria-label="John Doe"></span>
-`;
-
+export const BackgroundImage = () => backgroundImageExampleHtml;
 BackgroundImage.parameters = {
-    docs: {
-        story: { iframeHeight: 200 },
-        description: {
-            story: `
+  docs: {
+    story: {
+      iframeHeight: 200
+    },
+    description: {
+      story: `
 A background image can be displayed by adding the \`fd-avatar--thumbnail\` modifier class.
 There are two options to set the background: Cover (default) and Contain.
 
@@ -152,319 +108,98 @@ There are two options to set the background: Cover (default) and Contain.
 - <b>Contain:</b> The image is scaled down to fit into the control area. The entire image is displayed, but might not fully fill the shape. In this case, the control displays a default background color. The image itself is always centered inside the shape.
 
 Changing the default \`background-size: cover\` to \`background-size: contain\` CSS property can be achieved by adding \`fd-avatar--background-contain\` modifier class.`
-        }
     }
+  }
 };
-
-export const Transparent = () => `
-<span class="fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--transparent" aria-label="Avatar" aria-role="img">
-    <i class="fd-avatar__icon sap-icon--money-bills" role="presentation" aria-hidden="true" aria-label="Image placeholder"></i>
-</span>
-<span class="fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--transparent" aria-label="Avatar" aria-role="img">
-    <i class="fd-avatar__icon sap-icon--money-bills" role="presentation" aria-hidden="true" aria-label="Image placeholder"></i>
-</span>
-<span class="fd-avatar fd-avatar--m fd-avatar--circle fd-avatar--transparent" aria-label="Avatar" aria-role="img">
-    <i class="fd-avatar__icon sap-icon--money-bills" role="presentation" aria-hidden="true" aria-label="Image placeholder"></i>
-</span>
-<span class="fd-avatar fd-avatar--l fd-avatar--circle fd-avatar--transparent" aria-label="Avatar" aria-role="img">
-    <i class="fd-avatar__icon sap-icon--money-bills" role="presentation" aria-hidden="true" aria-label="Image placeholder"></i>
-</span>
-<span class="fd-avatar fd-avatar--xl fd-avatar--circle fd-avatar--transparent" aria-label="Avatar" aria-role="img">
-    <i class="fd-avatar__icon sap-icon--money-bills" role="presentation" aria-hidden="true" aria-label="Image placeholder"></i>
-</span>
-<span class="fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--transparent" aria-label="Wendy Wallace" role="img">WW</span>
-<span class="fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--transparent" aria-label="Wendy Wallace" role="img">WW</span>
-<span class="fd-avatar fd-avatar--m fd-avatar--circle fd-avatar--transparent" aria-label="Wendy Wallace" role="img">WW</span>
-<span class="fd-avatar fd-avatar--l fd-avatar--circle fd-avatar--transparent" aria-label="Wendy Wallace" role="img">WW</span>
-<span class="fd-avatar fd-avatar--xl fd-avatar--circle fd-avatar--transparent" aria-label="Wendy Wallace" role="img">WW</span>
-`;
-
+export const Transparent = () => transparentExampleHtml;
 Transparent.parameters = {
-    docs: {
-        story: { iframeHeight: 200 },
-        description: {
-            story: 'A transparent style can be displayed by adding the `fd-avatar--transparent` modifier class to the `fd-avatar` base class. This can be useful for displaying descriptive illustrations and decorative pictures, for example.'
-        }
+  docs: {
+    story: {
+      iframeHeight: 200
+    },
+    description: {
+      story: 'A transparent style can be displayed by adding the `fd-avatar--transparent` modifier class to the `fd-avatar` base class. This can be useful for displaying descriptive illustrations and decorative pictures, for example.'
     }
+  }
 };
-
-
-export const PlaceholderBackground = () => `
-<span class="fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--placeholder" aria-label="Avatar" aria-role="img">
-    <i class="fd-avatar__icon sap-icon--money-bills" role="presentation" aria-hidden="true" aria-label="Image placeholder"></i>
-</span>
-<span class="fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--placeholder" aria-label="Avatar" aria-role="img">
-    <i class="fd-avatar__icon sap-icon--money-bills" role="presentation" aria-hidden="true" aria-label="Image placeholder"></i>
-</span>
-<span class="fd-avatar fd-avatar--m fd-avatar--circle fd-avatar--placeholder" aria-label="Avatar" aria-role="img">
-    <i class="fd-avatar__icon sap-icon--money-bills" role="presentation" aria-hidden="true" aria-label="Image placeholder"></i>
-</span>
-<span class="fd-avatar fd-avatar--l fd-avatar--circle fd-avatar--placeholder" aria-label="Avatar" aria-role="img">
-    <i class="fd-avatar__icon sap-icon--money-bills" role="presentation" aria-hidden="true" aria-label="Image placeholder"></i>
-</span>
-<span class="fd-avatar fd-avatar--xl fd-avatar--circle fd-avatar--placeholder" aria-label="Avatar" aria-role="img">
-    <i class="fd-avatar__icon sap-icon--money-bills" role="presentation" aria-hidden="true" aria-label="Image placeholder"></i>
-</span>
-`;
-
+export const PlaceholderBackground = () => placeholderBackgroundExampleHtml;
 PlaceholderBackground.parameters = {
-    docs: {
-        story: { iframeHeight: 200 },
-        description: {
-            story: 'An avatar with a placeholder background can be displayed by adding the `fd-avatar--placeholder` modifier class.'
-        }
+  docs: {
+    story: {
+      iframeHeight: 200
+    },
+    description: {
+      story: 'An avatar with a placeholder background can be displayed by adding the `fd-avatar--placeholder` modifier class.'
     }
+  }
 };
-
-
-export const TileIconBackground = () => `
-<span class="fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--tile" aria-label="Avatar" aria-role="img">
-    <i class="fd-avatar__icon sap-icon--money-bills" role="presentation" aria-hidden="true" aria-label="Image placeholder"></i>
-</span>
-<span class="fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--tile" aria-label="Avatar" aria-role="img">
-    <i class="fd-avatar__icon sap-icon--money-bills" role="presentation" aria-hidden="true" aria-label="Image placeholder"></i>
-</span>
-<span class="fd-avatar fd-avatar--m fd-avatar--circle fd-avatar--tile" aria-label="Avatar" aria-role="img">
-    <i class="fd-avatar__icon sap-icon--money-bills" role="presentation" aria-hidden="true" aria-label="Image placeholder"></i>
-</span>
-<span class="fd-avatar fd-avatar--l fd-avatar--circle fd-avatar--tile" aria-label="Avatar" aria-role="img">
-    <i class="fd-avatar__icon sap-icon--money-bills" role="presentation" aria-hidden="true" aria-label="Image placeholder"></i>
-</span>
-<span class="fd-avatar fd-avatar--xl fd-avatar--circle fd-avatar--tile" aria-label="Avatar" aria-role="img">
-    <i class="fd-avatar__icon sap-icon--money-bills" role="presentation" aria-hidden="true" aria-label="Image placeholder"></i>
-</span>
-`;
-
-
+export const TileIconBackground = () => tileIconBackgroundExampleHtml;
 TileIconBackground.parameters = {
-    docs: {
-        story: { iframeHeight: 200 },
-        description: {
-            story: 'An avatar with a tile icon background can be displayed by adding the `fd-avatar--tile` modifier class.'
-        }
+  docs: {
+    story: {
+      iframeHeight: 200
+    },
+    description: {
+      story: 'An avatar with a tile icon background can be displayed by adding the `fd-avatar--tile` modifier class.'
     }
+  }
 };
-
-
-export const AccentColors = () => `
-<span class="fd-avatar fd-avatar--accent-color-1 fd-avatar--m" aria-label="Avatar" aria-role="img">
-    <i class="fd-avatar__icon sap-icon--money-bills" role="presentation" aria-hidden="true" aria-label="Image placeholder"></i>
-</span>
-<span class="fd-avatar fd-avatar--accent-color-2 fd-avatar--m" aria-label="Avatar" aria-role="img">
-    <i class="fd-avatar__icon sap-icon--money-bills" role="presentation" aria-hidden="true" aria-label="Image placeholder"></i>
-</span>
-<span class="fd-avatar fd-avatar--accent-color-3 fd-avatar--m" aria-label="Avatar" aria-role="img">
-    <i class="fd-avatar__icon sap-icon--money-bills" role="presentation" aria-hidden="true" aria-label="Image placeholder"></i>
-</span>
-<span class="fd-avatar fd-avatar--accent-color-4 fd-avatar--m" aria-label="Avatar" aria-role="img">
-    <i class="fd-avatar__icon sap-icon--money-bills" role="presentation" aria-hidden="true" aria-label="Image placeholder"></i>
-</span>
-<span class="fd-avatar fd-avatar--accent-color-5 fd-avatar--m" aria-label="Avatar" aria-role="img">
-    <i class="fd-avatar__icon sap-icon--money-bills" role="presentation" aria-hidden="true" aria-label="Image placeholder"></i>
-</span>
-<span class="fd-avatar fd-avatar--accent-color-6 fd-avatar--m" aria-label="Avatar" aria-role="img">
-    <i class="fd-avatar__icon sap-icon--money-bills" role="presentation" aria-hidden="true" aria-label="Image placeholder"></i>
-</span>
-<span class="fd-avatar fd-avatar--accent-color-7 fd-avatar--m" aria-label="Avatar" aria-role="img">
-    <i class="fd-avatar__icon sap-icon--money-bills" role="presentation" aria-hidden="true" aria-label="Image placeholder"></i>
-</span>
-<span class="fd-avatar fd-avatar--accent-color-8 fd-avatar--m" aria-label="Avatar" aria-role="img">
-    <i class="fd-avatar__icon sap-icon--money-bills" role="presentation" aria-hidden="true" aria-label="Image placeholder"></i>
-</span>
-<span class="fd-avatar fd-avatar--accent-color-9 fd-avatar--m" aria-label="Avatar" aria-role="img">
-    <i class="fd-avatar__icon sap-icon--money-bills" role="presentation" aria-hidden="true" aria-label="Image placeholder"></i>
-</span>
-<span class="fd-avatar fd-avatar--accent-color-10 fd-avatar--m" aria-label="Avatar" aria-role="img">
-    <i class="fd-avatar__icon sap-icon--money-bills" role="presentation" aria-hidden="true" aria-label="Image placeholder"></i>
-</span>
-`;
-
+export const AccentColors = () => accentColorsExampleHtml;
 AccentColors.parameters = {
-    docs: {
-        story: { iframeHeight: 200 },
-        description: {
-            story: 'To change the accent background color, add the `fd-avatar--accent-color-*` class with the number indicating the desired color. The color options include numbers ranging from 1 to 10, for example: `fd-avatar--accent-color-10`.'
-        }
+  docs: {
+    story: {
+      iframeHeight: 200
+    },
+    description: {
+      story: 'To change the accent background color, add the `fd-avatar--accent-color-*` class with the number indicating the desired color. The color options include numbers ranging from 1 to 10, for example: `fd-avatar--accent-color-10`.'
     }
+  }
 };
-
-export const AccentColorsShellHeaderContext = () => `
-<div style="background-color: var(--sapShellColor); padding: 1rem;">
-    <span class="fd-avatar fd-avatar--shell fd-avatar--accent-color-1 fd-avatar--m" aria-label="Avatar" aria-role="img">
-        <i class="fd-avatar__icon sap-icon--money-bills" role="presentation" aria-hidden="true" aria-label="Image placeholder"></i>
-    </span>
-    <span class="fd-avatar fd-avatar--shell fd-avatar--accent-color-2 fd-avatar--m" aria-label="Avatar" aria-role="img">
-        <i class="fd-avatar__icon sap-icon--money-bills" role="presentation" aria-hidden="true" aria-label="Image placeholder"></i>
-    </span>
-    <span class="fd-avatar fd-avatar--shell fd-avatar--accent-color-3 fd-avatar--m" aria-label="Avatar" aria-role="img">
-        <i class="fd-avatar__icon sap-icon--money-bills" role="presentation" aria-hidden="true" aria-label="Image placeholder"></i>
-    </span>
-    <span class="fd-avatar fd-avatar--shell fd-avatar--accent-color-4 fd-avatar--m" aria-label="Avatar" aria-role="img">
-        <i class="fd-avatar__icon sap-icon--money-bills" role="presentation" aria-hidden="true" aria-label="Image placeholder"></i>
-    </span>
-    <span class="fd-avatar fd-avatar--shell fd-avatar--accent-color-5 fd-avatar--m" aria-label="Avatar" aria-role="img">
-        <i class="fd-avatar__icon sap-icon--money-bills" role="presentation" aria-hidden="true" aria-label="Image placeholder"></i>
-    </span>
-    <span class="fd-avatar fd-avatar--shell fd-avatar--accent-color-6 fd-avatar--m" aria-label="Avatar" aria-role="img">
-        <i class="fd-avatar__icon sap-icon--money-bills" role="presentation" aria-hidden="true" aria-label="Image placeholder"></i>
-    </span>
-    <span class="fd-avatar fd-avatar--shell fd-avatar--accent-color-7 fd-avatar--m" aria-label="Avatar" aria-role="img">
-        <i class="fd-avatar__icon sap-icon--money-bills" role="presentation" aria-hidden="true" aria-label="Image placeholder"></i>
-    </span>
-    <span class="fd-avatar fd-avatar--shell fd-avatar--accent-color-8 fd-avatar--m" aria-label="Avatar" aria-role="img">
-        <i class="fd-avatar__icon sap-icon--money-bills" role="presentation" aria-hidden="true" aria-label="Image placeholder"></i>
-    </span>
-    <span class="fd-avatar fd-avatar--shell fd-avatar--accent-color-9 fd-avatar--m" aria-label="Avatar" aria-role="img">
-        <i class="fd-avatar__icon sap-icon--money-bills" role="presentation" aria-hidden="true" aria-label="Image placeholder"></i>
-    </span>
-    <span class="fd-avatar fd-avatar--shell fd-avatar--accent-color-10 fd-avatar--m" aria-label="Avatar" aria-role="img">
-        <i class="fd-avatar__icon sap-icon--money-bills" role="presentation" aria-hidden="true" aria-label="Image placeholder"></i>
-    </span>
-</div>
-`;
-
+export const AccentColorsShellHeaderContext = () => accentColorsShellHeaderContextExampleHtml;
 AccentColorsShellHeaderContext.parameters = {
-    docs: {
-        story: { iframeHeight: 200 },
-        description: {
-            story: 'When used in Shell header context, an additional modifier class `fd-avatar--shell` should be added to the `fd-avatar` base class and the modifier class specifying the accent color `fd-avatar--accent-color-*`.'
-        }
+  docs: {
+    story: {
+      iframeHeight: 200
+    },
+    description: {
+      story: 'When used in Shell header context, an additional modifier class `fd-avatar--shell` should be added to the `fd-avatar` base class and the modifier class specifying the accent color `fd-avatar--accent-color-*`.'
     }
+  }
 };
-
-
-export const ZoomIcon = () => `
-<span class="fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--accent-color-1" tabindex="0" role="button" aria-label="Avatar">
-    <i class="fd-avatar__icon sap-icon--money-bills" role="presentation" aria-hidden="true" aria-label="Image placeholder"></i>
-    <i class="fd-avatar__zoom-icon sap-icon--edit" aria-label="Edit" role="presentation" aria-hidden="true"></i>
-</span>
-<span class="fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--accent-color-2" tabindex="0" role="button" aria-label="Avatar">
-    <i class="fd-avatar__icon sap-icon--money-bills" role="presentation" aria-hidden="true" aria-label="Image placeholder"></i>
-    <i class="fd-avatar__zoom-icon sap-icon--edit" aria-label="Edit" role="presentation" aria-hidden="true"></i>
-</span>
-<span class="fd-avatar fd-avatar--m fd-avatar--circle fd-avatar--accent-color-3" tabindex="0" role="button" aria-label="Avatar">
-    <i class="fd-avatar__icon sap-icon--money-bills" role="presentation" aria-hidden="true" aria-label="Image placeholder"></i>
-    <i class="fd-avatar__zoom-icon sap-icon--edit" aria-label="Edit" role="presentation" aria-hidden="true"></i>
-</span>
-<span class="fd-avatar fd-avatar--l fd-avatar--circle fd-avatar--accent-color-4" tabindex="0" role="button" aria-label="Avatar">
-    <i class="fd-avatar__icon sap-icon--money-bills" role="presentation" aria-hidden="true" aria-label="Image placeholder"></i>
-    <i class="fd-avatar__zoom-icon sap-icon--edit" aria-label="Edit" role="presentation" aria-hidden="true"></i>
-</span>
-<span class="fd-avatar fd-avatar--xl fd-avatar--circle fd-avatar--accent-color-5" tabindex="0" role="button" aria-label="Avatar">
-    <i class="fd-avatar__icon sap-icon--money-bills" role="presentation" aria-hidden="true" aria-label="Image placeholder"></i>
-    <i class="fd-avatar__zoom-icon sap-icon--edit" aria-label="Edit" role="presentation" aria-hidden="true"></i>
-</span>
-<span class="fd-avatar fd-avatar--accent-color-6 fd-avatar--xs" tabindex="0" role="button" aria-label="Wendy Wallace">WW
-    <i class="fd-avatar__zoom-icon sap-icon--edit" aria-label="Edit" role="presentation" aria-hidden="true"></i>
-</span>
-<span class="fd-avatar fd-avatar--accent-color-7 fd-avatar--s" tabindex="0" role="button" aria-label="Wendy Wallace">WW
-    <i class="fd-avatar__zoom-icon sap-icon--edit" aria-label="Edit" role="presentation" aria-hidden="true"></i>
-</span>
-<span class="fd-avatar fd-avatar--accent-color-8 fd-avatar--m" tabindex="0" role="button" aria-label="Wendy Wallace">WW
-    <i class="fd-avatar__zoom-icon sap-icon--edit" aria-label="Edit" role="presentation" aria-hidden="true"></i>
-</span>
-<span class="fd-avatar fd-avatar--accent-color-9 fd-avatar--l" tabindex="0" role="button" aria-label="Wendy Wallace">WW
-    <i class="fd-avatar__zoom-icon sap-icon--edit" aria-label="Edit" role="presentation" aria-hidden="true"></i>
-</span>
-<span class="fd-avatar fd-avatar--accent-color-10 fd-avatar--xl" tabindex="0" role="button" aria-label="Wendy Wallace">WW
-    <i class="fd-avatar__zoom-icon sap-icon--edit" aria-label="Edit" role="presentation" aria-hidden="true"></i>
-</span>
-`;
-
+export const ZoomIcon = () => zoomIconExampleHtml;
 ZoomIcon.parameters = {
-    docs: {
-        story: { iframeHeight: 200 },
-        description: {
-            story: `If an avatar is clickable, you can show an optional badge and icon. 
+  docs: {
+    story: {
+      iframeHeight: 200
+    },
+    description: {
+      story: `If an avatar is clickable, you can show an optional badge and icon. 
             The badge indicates that the avatar is interactive and the icon indicates the action triggered by clicking the avatar. This feature gives users visual affordance of the available action, and is particularly useful for images.`
-        }
     }
+  }
 };
-
-export const ValueStates = () => `
-<span class="fd-avatar fd-avatar--xl fd-avatar--circle fd-avatar--accent-color-1" tabindex="0" role="button" aria-label="Avatar">
-    <i class="fd-avatar__icon sap-icon--money-bills" role="presentation" aria-hidden="true" aria-label="Image placeholder"></i>
-    <i class="fd-avatar__zoom-icon sap-icon--edit" aria-label="Edit" role="presentation" aria-hidden="true"></i>
-</span>
-<span class="fd-avatar fd-avatar--xl fd-avatar--circle fd-avatar--accent-color-2" tabindex="0" role="button" aria-label="Avatar">
-    <i class="fd-avatar__icon sap-icon--money-bills" role="presentation" aria-hidden="true" aria-label="Image placeholder"></i>
-    <i class="fd-avatar__zoom-icon fd-avatar__zoom-icon--negative sap-icon--message-error" aria-label="Edit" role="presentation" aria-hidden="true"></i>
-</span>
-<span class="fd-avatar fd-avatar--xl fd-avatar--circle fd-avatar--accent-color-3" tabindex="0" role="button" aria-label="Avatar">
-    <i class="fd-avatar__icon sap-icon--money-bills" role="presentation" aria-hidden="true" aria-label="Image placeholder"></i>
-    <i class="fd-avatar__zoom-icon fd-avatar__zoom-icon--caution sap-icon--message-warning" aria-label="Edit" role="presentation" aria-hidden="true"></i>
-</span>
-<span class="fd-avatar fd-avatar--xl fd-avatar--circle fd-avatar--accent-color-4" tabindex="0" role="button" aria-label="Avatar">
-    <i class="fd-avatar__icon sap-icon--money-bills" role="presentation" aria-hidden="true" aria-label="Image placeholder"></i>
-    <i class="fd-avatar__zoom-icon fd-avatar__zoom-icon--positive sap-icon--message-success" aria-label="Edit" role="presentation" aria-hidden="true"></i>
-</span>
-<span class="fd-avatar fd-avatar--xl fd-avatar--circle fd-avatar--accent-color-5" tabindex="0" role="button" aria-label="Avatar">
-    <i class="fd-avatar__icon sap-icon--money-bills" role="presentation" aria-hidden="true" aria-label="Image placeholder"></i>
-    <i class="fd-avatar__zoom-icon fd-avatar__zoom-icon--information sap-icon--message-information" aria-label="Edit" role="presentation" aria-hidden="true"></i>
-</span>
-<span class="fd-avatar fd-avatar--accent-color-6 fd-avatar--xl" tabindex="0" role="button" aria-label="Wendy Wallace">WW
-    <i class="fd-avatar__zoom-icon sap-icon--edit" aria-label="Edit" role="presentation" aria-hidden="true"></i>
-</span>
-<span class="fd-avatar fd-avatar--accent-color-7 fd-avatar--xl" tabindex="0" role="button" aria-label="Wendy Wallace">WW
-    <i class="fd-avatar__zoom-icon fd-avatar__zoom-icon--negative sap-icon--message-error" aria-label="Edit" role="presentation" aria-hidden="true"></i>
-</span>
-<span class="fd-avatar fd-avatar--accent-color-8 fd-avatar--xl" tabindex="0" role="button" aria-label="Wendy Wallace">WW
-    <i class="fd-avatar__zoom-icon fd-avatar__zoom-icon--caution sap-icon--message-warning" aria-label="Edit" role="presentation" aria-hidden="true"></i>
-</span>
-<span class="fd-avatar fd-avatar--accent-color-9 fd-avatar--xl" tabindex="0" role="button" aria-label="Wendy Wallace">WW
-    <i class="fd-avatar__zoom-icon fd-avatar__zoom-icon--positive sap-icon--message-success" aria-label="Edit" role="presentation" aria-hidden="true"></i>
-</span>
-<span class="fd-avatar fd-avatar--accent-color-10 fd-avatar--xl" tabindex="0" role="button" aria-label="Wendy Wallace">WW
-    <i class="fd-avatar__zoom-icon fd-avatar__zoom-icon--information sap-icon--message-information" aria-label="Edit" role="presentation" aria-hidden="true"></i>
-</span>
-`;
-
+export const ValueStates = () => valueStatesExampleHtml;
 ValueStates.parameters = {
-    docs: {
-        story: { iframeHeight: 200 },
-        description: {
-            story: `Value States can be added to the Avatar badge. <br>For <b>positive</b> value state use the \`.fd-avatar__zoom-icon--positive\` modifier class with the \`fd-avatar__zoom-icon\` base class. <br>For <b>caution</b> value state apply the \`.fd-avatar__zoom-icon--caution\` modifier class. <br>The <b>negative</b> value state can be achieved with \`.fd-avatar__zoom-icon--negative\` modifier class. <br><b>Information</b> value state would require adding \`.fd-avatar__zoom-icon--information\` to the \`fd-avatar__zoom-icon\` base class.`
-        }
+  docs: {
+    story: {
+      iframeHeight: 200
+    },
+    description: {
+      story: `Value States can be added to the Avatar badge. <br>For <b>positive</b> value state use the \`.fd-avatar__zoom-icon--positive\` modifier class with the \`fd-avatar__zoom-icon\` base class. <br>For <b>caution</b> value state apply the \`.fd-avatar__zoom-icon--caution\` modifier class. <br>The <b>negative</b> value state can be achieved with \`.fd-avatar__zoom-icon--negative\` modifier class. <br><b>Information</b> value state would require adding \`.fd-avatar__zoom-icon--information\` to the \`fd-avatar__zoom-icon\` base class.`
     }
+  }
 };
-
-export const Borders = () => `
-<span class="fd-avatar fd-avatar--xs fd-avatar--transparent fd-avatar--border" aria-label="Avatar" aria-role="img">
-    <i class="fd-avatar__icon sap-icon--money-bills" role="presentation" aria-hidden="true" aria-label="Image placeholder"></i>
-</span>
-<span class="fd-avatar fd-avatar--s fd-avatar--transparent fd-avatar--border" aria-label="Avatar" aria-role="img">
-    <i class="fd-avatar__icon sap-icon--money-bills" role="presentation" aria-hidden="true" aria-label="Image placeholder"></i>
-</span>
-<span class="fd-avatar fd-avatar--m fd-avatar--transparent fd-avatar--border" aria-label="Avatar" aria-role="img">
-    <i class="fd-avatar__icon sap-icon--money-bills" role="presentation" aria-hidden="true" aria-label="Image placeholder"></i>
-</span>
-<span class="fd-avatar fd-avatar--l fd-avatar--transparent fd-avatar--border" aria-label="Avatar" aria-role="img">
-    <i class="fd-avatar__icon sap-icon--money-bills" role="presentation" aria-hidden="true" aria-label="Image placeholder"></i>
-</span>
-<span class="fd-avatar fd-avatar--xl fd-avatar--transparent fd-avatar--border" aria-label="Avatar" aria-role="img">
-    <i class="fd-avatar__icon sap-icon--money-bills" role="presentation" aria-hidden="true" aria-label="Image placeholder"></i>
-</span>
-<span class="fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--transparent fd-avatar--border" aria-label="Wendy Wallace" aria-role="img">WW
-</span>
-<span class="fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--transparent fd-avatar--border" aria-label="Wendy Wallace" aria-role="img">WW
-</span>
-<span class="fd-avatar fd-avatar--m fd-avatar--circle fd-avatar--transparent fd-avatar--border" aria-label="Wendy Wallace" aria-role="img">WW
-</span>
-<span class="fd-avatar fd-avatar--l fd-avatar--circle fd-avatar--transparent fd-avatar--border" aria-label="Wendy Wallace" aria-role="img">WW
-</span>
-<span class="fd-avatar fd-avatar--xl fd-avatar--circle fd-avatar--transparent fd-avatar--border" aria-label="Wendy Wallace" aria-role="img">WW
-</span>
-`;
-
+export const Borders = () => bordersExampleHtml;
 Borders.parameters = {
-    docs: {
-        story: { iframeHeight: 200 },
-        description: {
-            story: 'You can add a very subtle border to the avatar with the `fd-avatar--border` modifier class.'
-        }
+  docs: {
+    story: {
+      iframeHeight: 200
+    },
+    description: {
+      story: 'You can add a very subtle border to the avatar with the `fd-avatar--border` modifier class.'
     }
+  }
 };
-
 export const Interactive = () => `${localStyles}
 <h3>Regular State</h3>
 <span class="fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--accent-color-1" tabindex="0" role="button" aria-label="Avatar">
@@ -718,12 +453,13 @@ export const Interactive = () => `${localStyles}
 <span class="fd-avatar fd-avatar--xl fd-avatar--circle fd-avatar--transparent fd-avatar--border is-focus" tabindex="0" role="button" aria-label="Wendy Wallace">WW
 </span>
 `;
-
 Interactive.parameters = {
-    docs: {
-        story: { iframeHeight: 200 },
-        description: {
-            story: ``
-        }
+  docs: {
+    story: {
+      iframeHeight: 200
+    },
+    description: {
+      story: ``
     }
+  }
 };

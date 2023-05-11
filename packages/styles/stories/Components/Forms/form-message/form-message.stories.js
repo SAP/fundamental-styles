@@ -1,12 +1,16 @@
+import informationExampleHtml from "./information.example.html?raw";
+import warningExampleHtml from "./warning.example.html?raw";
+import errorExampleHtml from "./error.example.html?raw";
+import successExampleHtml from "./success.example.html?raw";
 import '../../../../src/form-message.scss';
 import '../../../../src/form-item.scss';
 import '../../../../src/form-label.scss';
 import '../../../../src/input.scss';
 import '../../../../src/popover.scss';
 export default {
-    title: 'Components/Forms/Form Message',
-    parameters: {
-        description: `
+  title: 'Components/Forms/Form Message',
+  parameters: {
+    description: `
 A form message can appear as a result of interacting with an input field. It essentially sends semantic feedback to the user, informing them whether the data they entered was successful, erroneous, needs further attention, or more.
 
 ##Highlight indicators
@@ -22,94 +26,42 @@ Disabled | \`is-disabled\` | Indicates the field is not editable. This state is 
 Read-only&nbsp;&nbsp;&nbsp; | \`is-readonly\`&nbsp;&nbsp;&nbsp; | Used to display static information in the context of a form.
 
         `,
-        tags: ['f3', 'a11y', 'theme']
-    }
+    tags: ['f3', 'a11y', 'theme']
+  }
 };
-
-export const Success = () => `<div class="fd-form-item" style="min-height: 100px;">
-        <label class="fd-form-label" for="input-1bb">Success input:</label>
-        <div class="fd-form-input-message-group fd-popover">
-            <div class="fd-popover__control" aria-controls="popoverB2" aria-expanded="true" aria-haspopup="true">
-                <input class="fd-input is-success" type="text" id="input-1bb" placeholder="Field placeholder text" aria-label="Image label">
-            </div>
-            <div class="fd-popover__body fd-popover__body--input-message-group fd-popover__body--no-arrow" aria-hidden="false" id="popoverB2">
-                <div class="fd-form-message fd-form-message--success">Success message</div>
-            </div>
-        </div>
-    </div>
-`;
-
+export const Success = () => successExampleHtml;
 Success.parameters = {
-    docs: {
-        description: {
-            story: `To display a success message below an input field, add the \`--success\` modifier class to the \`fd-form-message\` element.
+  docs: {
+    description: {
+      story: `To display a success message below an input field, add the \`--success\` modifier class to the \`fd-form-message\` element.
         `
-        }
     }
+  }
 };
-
-export const Error = () => `<div class="fd-form-item" style="min-height: 100px;">
-        <label class="fd-form-label" for="input-1cc">Error input:</label>
-        <div class="fd-form-input-message-group fd-popover">
-            <div class="fd-popover__control" aria-controls="popoverB3" aria-expanded="true" aria-haspopup="true">
-                <input class="fd-input is-error" type="text" id="input-1cc" placeholder="Field placeholder text" aria-label="Image label">
-            </div>
-            <div class="fd-popover__body fd-popover__body--input-message-group fd-popover__body--no-arrow" aria-hidden="false" id="popoverB3">
-                <div class="fd-form-message fd-form-message--error" >Error message</div>
-            </div>
-        </div>
-    </div>
-`;
-
+export const Error = () => errorExampleHtml;
 Error.parameters = {
-    docs: {
-        description: {
-            story: `To display an error message below an input field, add the \`--error\` modifier class to the \`fd-form-message\` element.
+  docs: {
+    description: {
+      story: `To display an error message below an input field, add the \`--error\` modifier class to the \`fd-form-message\` element.
         `
-        }
     }
+  }
 };
-
-export const Warning = () => `<div class="fd-form-item" style="min-height: 100px;">
-        <label class="fd-form-label" for="input-1cc">Warning input:</label>
-        <div class="fd-form-input-message-group fd-popover">
-            <div class="fd-popover__control" aria-controls="popoverB4" aria-expanded="true" aria-haspopup="true">
-                <input class="fd-input is-warning" type="text" id="input-1cc" placeholder="Field placeholder text" aria-label="Image label">
-            </div>
-            <div class="fd-popover__body fd-popover__body--input-message-group fd-popover__body--no-arrow" aria-hidden="false" id="popoverB4">
-                <div class="fd-form-message fd-form-message--warning" >Warning message</div>
-            </div>
-        </div>
-    </div>
-`;
-
+export const Warning = () => warningExampleHtml;
 Warning.parameters = {
-    docs: {
-        description: {
-            story: `To display a warning message below an input field, add the \`--warning\` modifier class to the \`fd-form-message\` element.
+  docs: {
+    description: {
+      story: `To display a warning message below an input field, add the \`--warning\` modifier class to the \`fd-form-message\` element.
         `
-        }
     }
+  }
 };
-
-export const Information = () => `<div class="fd-form-item" style="min-height: 100px;">
-        <label class="fd-form-label" for="input-1ee">Information input:</label>
-        <div class="fd-form-input-message-group fd-popover">
-            <div class="fd-popover__control" aria-controls="popoverB5" aria-expanded="true" aria-haspopup="true">
-                <input class="fd-input fd-input--compact is-information" type="text" id="input-1ee" placeholder="Field placeholder text" aria-label="Image label">
-            </div>
-            <div class="fd-popover__body fd-popover__body--input-message-group fd-popover__body--no-arrow" aria-hidden="false" id="popoverB5">
-                <div class="fd-form-message fd-form-message--information">Information message</div>
-            </div>
-        </div>
-    </div>
-`;
-
+export const Information = () => informationExampleHtml;
 Information.parameters = {
-    docs: {
-        description: {
-            story: `To display an information message below an input field, add the \`--information\` modifier class to the \`fd-form-message\` element.
+  docs: {
+    description: {
+      story: `To display an information message below an input field, add the \`--information\` modifier class to the \`fd-form-message\` element.
         `
-        }
     }
+  }
 };

@@ -8,7 +8,10 @@ export const withDirectionality = makeDecorator({
         const story = storyFn(context);
         if (typeof story === 'string') {
             // visual stories return HTMLElements, whereas ordinary stories return html strings
-            return `<div dir='${directionality}'>${storyFn(context)}</div>`;
+            return `
+<div dir="${directionality}">
+    ${storyFn(context)}
+</div>`;
         }
         if (story instanceof HTMLElement) {
             story.setAttribute('dir', directionality);

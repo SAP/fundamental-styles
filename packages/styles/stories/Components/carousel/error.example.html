@@ -1,0 +1,47 @@
+<div style="display: flex; flex-direction: column; align-items: center;">
+    <h4>Error in loading items</h4>
+
+    <div
+        class="fd-carousel fd-carousel--no-navigation"
+        style="max-width: 20rem; max-height: 20rem;"
+        data-ride="carousel"
+    >
+        <div class="fd-carousel__content">
+            <div class="fd-message-page">
+                <div class="fd-message-page__container">
+                    <div class="fd-message-page__icon-container">
+                        <i role="presentation" class="sap-icon--document fd-message-page__icon"></i>
+                    </div>
+
+                    <div role="status" aria-live="polite" class="fd-message-page__content">
+                        <div class="fd-message-page__title">
+                            Items could not be loaded
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="fd-carousel__page-indicator-container">
+            <button
+                class="fd-button fd-carousel__button fd-carousel__button--left"
+                data-slide="prev"
+                aria-label="Go to previous item">
+                <i class="sap-icon--slim-arrow-left"></i>
+            </button>
+
+            <ol class="fd-carousel__page-indicators"></ol>
+
+            <button
+                class="fd-button fd-carousel__button fd-carousel__button--right"
+                data-slide="next"
+                aria-label="Go to next item">
+                <i class="sap-icon--slim-arrow-right"></i>
+            </button>
+        </div>
+    </div>
+
+    <div style="display: none;" role="region" id="carousel-12" aria-live="polite">
+        Error in loading items
+    </div>
+</div>
