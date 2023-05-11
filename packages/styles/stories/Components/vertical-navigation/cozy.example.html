@@ -1,0 +1,40 @@
+<div class="fd-vertical-nav">
+    <nav class="fd-vertical-nav__main-navigation" aria-label="Main Menu">
+        <ul class="fd-list" aria-label="Main Menu List">
+            <li class="fd-list__navigation-item" tabindex="0">
+                <i role="presentation" class="fd-list__navigation-item-icon sap-icon--home"></i>
+                <span class="fd-list__navigation-item-text">Overview</span>
+            </li>
+            <li class="fd-list__navigation-item fd-list__navigation-item--expandable is-expanded" onclick="toggleVerticalNavSubmenu(event)">
+                <i role="presentation" class="fd-list__navigation-item-icon sap-icon--calendar"></i>
+                <span class="fd-list__navigation-item-text">Calendar Calendar Calendar Calendar Calendar Calendar </span>
+                <button class="fd-list__navigation-item-arrow sap-icon--navigation-down-arrow is-expanded" aria-label="Expand submenu"></button>
+                <ul class="fd-list">
+                    <li class="fd-list__navigation-item" tabindex="0">
+                        <span class="fd-list__navigation-item-text">Second level item 1</span>
+                    </li>
+                    <li class="fd-list__navigation-item" tabindex="0">
+                        <span class="fd-list__navigation-item-text">Second level item 2 Second level item 2 Second level item 2 Second level item 2 Second level item 2 </span>
+                    </li>
+                </ul>
+            </li>
+            <li class="fd-list__navigation-item fd-list__navigation-item--expandable is-expanded" onclick="toggleVerticalNavSubmenu(event)">
+                <i role="presentation" class="fd-list__navigation-item-icon sap-icon--customer"></i>
+                <span class="fd-list__navigation-item-text">Customers</span>
+                <button class="fd-list__navigation-item-arrow sap-icon--navigation-down-arrow is-expanded" aria-label="Expand second submenu"></button>
+                <ul class="fd-list">
+                    <li class="fd-list__navigation-item" tabindex="0">
+                        <span class="fd-list__navigation-item-text">Second level item 1</span>
+                    </li>
+                    <li class="fd-list__navigation-item" tabindex="0">
+                        <span class="fd-list__navigation-item-text">Second level item 2</span>
+                    </li>
+                </ul>
+            </li>
+            <li class="fd-list__navigation-item" tabindex="0">
+                <i role="presentation" class="fd-list__navigation-item-icon sap-icon--shipping-status"></i>
+                <span class="fd-list__navigation-item-text">Deliveries</span>
+            </li>
+        </ul>
+    </nav>
+</div>

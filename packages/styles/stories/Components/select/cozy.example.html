@@ -1,0 +1,65 @@
+<div style="height: 250px">
+    <label class="fd-form-label" id="cozySelectLabel">Choose an option</label><br />
+    <div class="fd-popover">
+        <div class="fd-popover__control" aria-expanded="true" aria-haspopup="true">
+            <div class="fd-select">
+                <button
+                    aria-expanded="true"
+                    aria-haspopup="listbox"
+                    aria-labelledby="cozySelectLabel cozySelectValue"
+                    class="fd-select__control"
+                    id="cozySelectCombobox"
+                    onclick="
+                        toggleElAttrs('h0C6A325', ['aria-hidden']);
+                        toggleElAttrs('cozySelectCombobox', ['aria-expanded']);
+                    "
+                    value="List Item 1"
+                    tabindex="0">
+                    <span is="cozySelectValue" class="fd-select__text-content">List Item 1</span>
+                    <span class="fd-button fd-button--transparent fd-select__button">
+                        <i class="sap-icon--slim-arrow-down"></i>
+                    </span>
+                </button>
+            </div>
+        </div>
+        <div
+            aria-hidden="false"
+            class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--dropdown"
+            id="h0C6A325">
+            <ul
+                aria-activedescendant="cozySelectCombobox-currentlyFocusedItem"
+                aria-labelledby="cozySelectLabel"
+                class="fd-list fd-list--dropdown"
+                role="listbox">
+                <li
+                    id="cozySelectCombobox-currentlyFocusedItem"
+                    class="fd-list__item"
+                    role="option"
+                    tabindex="0">
+                <span class="fd-list__title">Select</span>
+                </li>
+                <li aria-selected="true"
+                    class="fd-list__item is-selected"
+                    role="option"
+                    tabindex="0">
+                <span class="fd-list__title">List item 1</span>
+                </li>
+                <li class="fd-list__item"
+                    role="option"
+                    tabindex="0">
+                <span class="fd-list__title">List item 2</span>
+            </li>
+                <li class="fd-list__item"
+                    role="option"
+                    tabindex="0">
+                <span class="fd-list__title">List item 3</span>
+                </li>
+                <li class="fd-list__item"
+                    role="option"
+                    tabindex="0">
+                <span class="fd-list__title">List item 4</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>

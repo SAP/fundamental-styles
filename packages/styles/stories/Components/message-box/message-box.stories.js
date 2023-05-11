@@ -1,3 +1,6 @@
+import responsiveExampleHtml from "./responsive.example.html?raw";
+import typesExampleHtml from "./types.example.html?raw";
+import structureExampleHtml from "./structure.example.html?raw";
 import '../../../src/message-box.scss';
 import '../../../src/title.scss';
 import '../../../src/bar.scss';
@@ -5,9 +8,9 @@ import '../../../src/button.scss';
 import '../../../src/link.scss';
 import '../../../src/icon.scss';
 export default {
-    title: 'Components/Message Box',
-    parameters: {
-        description: `
+  title: 'Components/Message Box',
+  parameters: {
+    description: `
 The message box displays a dialog with a simple message to the user. Contrary to the **Popover**, message box can relay messages unrelated to the UI, such as technical errors. This component inherits the look and behavior of the **Dialog** (excluding dragging/resizing).
 
 Note: Include two action buttons in the message box when the user's decision is required before continuing. The primary action button should always explicitly display the action they're performing (in text), while the secondary buttons provides them with an option to cancel.
@@ -50,200 +53,33 @@ Note: Include two action buttons in the message box when the user's decision is 
         - \`.fd-message-box__footer\`: Footer
             - \`.fd-message-box__decisive-button\`: Action buttons in footer
         `,
-        tags: ['f3', 'a11y', 'theme']
-    }
+    tags: ['f3', 'a11y', 'theme']
+  }
 };
-
 const messageBoxHeight = 200;
-
-export const Structure = () => `<div class="fd-message-box-docs-static fd-message-box fd-message-box--active">
-    <section class="fd-message-box__content">
-        <header class="fd-bar fd-bar--header fd-message-box__header">
-            <div class="fd-bar__left">
-                <div class="fd-bar__element">
-                    <h2 class="fd-title fd-title--h5">Title</h2>
-                </div>
-            </div>
-        </header>
-        <div class="fd-message-box__body">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        </div>
-        <footer class="fd-bar fd-bar--compact fd-bar--footer fd-message-box__footer">
-            <div class="fd-bar__right">
-                <div class="fd-bar__element">
-                    <button class="fd-button fd-button--emphasized fd-message-box__decisive-button">
-                        Begin button
-                    </button>
-                </div>
-                <div class="fd-bar__element">
-                    <button class="fd-button fd-button--transparent fd-message-box__decisive-button">
-                        End button
-                    </button>
-                </div>
-            </div>
-        </footer>
-    </section>
-</div>
-`;
-
+export const Structure = () => structureExampleHtml;
 Structure.storyName = 'Default';
-
 Structure.parameters = {
-    docs: {
-        story: { iframeHeight: messageBoxHeight },
-        description: {
-            story: `
+  docs: {
+    story: {
+      iframeHeight: messageBoxHeight
+    },
+    description: {
+      story: `
 The default message box displays a small dialog with a title, message text and action buttons. Use the default if the message does not fit with one of the semantic types.
     `
-        }
     }
+  }
 };
-
-export const Types = () => `<div class="fd-message-box-docs-static fd-message-box fd-message-box--confirmation fd-message-box--active">
-    <section class="fd-message-box__content">
-        <header class="fd-bar fd-bar--header fd-message-box__header">
-            <div class="fd-bar__left">
-                <div class="fd-bar__element">
-                    <i class="sap-icon--sys-help-2"></i>
-                    <h2 class="fd-title fd-title--h5">Confirmation</h2>
-                </div>
-            </div>
-        </header>
-        <div class="fd-message-box__body">
-            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-        </div>
-        <footer class="fd-bar fd-bar--compact fd-bar--footer fd-message-box__footer">
-            <div class="fd-bar__right">
-                <div class="fd-bar__element">
-                    <button class="fd-button fd-button--emphasized fd-message-box__decisive-button">
-                        OK
-                    </button>
-                </div>
-                <div class="fd-bar__element">
-                    <button class="fd-button fd-button--transparent fd-message-box__decisive-button">
-                        Cancel
-                    </button>
-                </div>
-            </div>
-        </footer>
-    </section>
-</div>
-
-<br><br><br>
-
-<div class="fd-message-box-docs-static fd-message-box fd-message-box--error fd-message-box--active">
-    <section class="fd-message-box__content">
-        <header class="fd-bar fd-bar--header fd-message-box__header">
-            <div class="fd-bar__left">
-                <div class="fd-bar__element">
-                    <i class="sap-icon--error"></i>
-                    <h2 class="fd-title fd-title--h5">Error</h2>
-                </div>
-            </div>
-        </header>
-        <div class="fd-message-box__body">
-            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        </div>
-        <footer class="fd-bar fd-bar--compact fd-bar--footer fd-message-box__footer">
-            <div class="fd-bar__right">
-                <div class="fd-bar__element">
-                    <button class="fd-button fd-button--emphasized fd-message-box__decisive-button">
-                        Close
-                    </button>
-                </div>
-            </div>
-        </footer>
-    </section>
-</div>
-
-<br><br><br>
-
-<div class="fd-message-box-docs-static fd-message-box fd-message-box--success fd-message-box--active">
-    <section class="fd-message-box__content">
-        <header class="fd-bar fd-bar--header fd-message-box__header">
-            <div class="fd-bar__left">
-                <div class="fd-bar__element">
-                    <i class="sap-icon--sys-enter-2"></i>
-                    <h2 class="fd-title fd-title--h5">Success</h2>
-                </div>
-            </div>
-        </header>
-        <div class="fd-message-box__body">
-            Vivamus sagittis diam in vehicula lobortis sapien arcu mattis erat vel aliquet sem urna et mattis erat vel aliquet in sem urna et sagittis diam in vehicula.
-        </div>
-        <footer class="fd-bar fd-bar--compact fd-bar--footer fd-message-box__footer">
-            <div class="fd-bar__right">
-                <div class="fd-bar__element">
-                    <button class="fd-button fd-button--emphasized fd-message-box__decisive-button">
-                        Close
-                    </button>
-                </div>
-            </div>
-        </footer>
-    </section>
-</div>
-
-<br><br><br>
-
-<div class="fd-message-box-docs-static fd-message-box fd-message-box--warning fd-message-box--active">
-    <section class="fd-message-box__content">
-        <header class="fd-bar fd-bar--header fd-message-box__header">
-            <div class="fd-bar__left">
-                <div class="fd-bar__element">
-                    <i class="sap-icon--alert"></i>
-                    <h2 class="fd-title fd-title--h5">Warning</h2>
-                </div>
-            </div>
-        </header>
-        <div class="fd-message-box__body">
-            Vivamus sagittis diam in vehicula lobortis sapien arcu mattis erat vel aliquet sem urna et.
-        </div>
-        <footer class="fd-bar fd-bar--compact fd-bar--footer fd-message-box__footer">
-            <div class="fd-bar__right">
-                <div class="fd-bar__element">
-                    <button class="fd-button fd-button--emphasized fd-message-box__decisive-button">
-                        Close
-                    </button>
-                </div>
-            </div>
-        </footer>
-    </section>
-</div>
-
-<br><br><br>
-
-<div class="fd-message-box-docs-static fd-message-box fd-message-box--information fd-message-box--active">
-    <section class="fd-message-box__content">
-        <header class="fd-bar fd-bar--header fd-message-box__header">
-            <div class="fd-bar__left">
-                <div class="fd-bar__element">
-                    <i class="sap-icon--information"></i>
-                    <h2 class="fd-title fd-title--h5">Information</h2>
-                </div>
-            </div>
-        </header>
-        <div class="fd-message-box__body">
-            Vivamus sagittis diam in vehicula lobortis.
-        </div>
-        <footer class="fd-bar fd-bar--compact fd-bar--footer fd-message-box__footer">
-            <div class="fd-bar__right">
-                <div class="fd-bar__element">
-                    <button class="fd-button fd-button--emphasized fd-message-box__decisive-button">
-                        Close
-                    </button>
-                </div>
-            </div>
-        </footer>
-    </section>
-</div>
-`;
+export const Types = () => typesExampleHtml;
 Types.storyName = 'Semantic types';
-
 Types.parameters = {
-    docs: {
-        story: { iframeHeight: messageBoxHeight * 6.5 },
-        description: {
-            story: `
+  docs: {
+    story: {
+      iframeHeight: messageBoxHeight * 6.5
+    },
+    description: {
+      story: `
 The message box can be displayed with various semantic colors and icons, indicating the type of message being relayed.
 
 Semantic type | Modifier class | Description
@@ -255,124 +91,17 @@ Warning | \`fd-message-box--warning\` | Warning messages highlight potential iss
 Information | \`fd-message-box--information\` | Information messages provide information the user needs to acknowledge, but which does not involve a decision. The message provides information that is useful and relevant, but never critical.
 
         `
-        }
     }
+  }
 };
-
-export const Responsive = () =>
-    `
-<div class="fd-message-box-docs-static fd-message-box fd-message-box--information fd-message-box--active">
-    <section class="fd-message-box__content fd-message-box__content--s">
-        <header class="fd-bar fd-bar--cozy fd-bar--header fd-message-box__header">
-            <div class="fd-bar__left">
-                <div class="fd-bar__element">
-                    <h2 class="fd-title fd-title--h5">Information</h2>
-                </div>
-            </div>
-        </header>
-        <div class="fd-message-box__body">
-            Informative message box for a small screen in cozy mode (mobile) and a "Show more" link in the body.
-            <div class="fd-message-box__more">
-                <a href="#" class="fd-link" tabindex="0"><span class="fd-link__content">Show more</span></a>
-            </div>
-        </div>
-        <footer class="fd-bar fd-bar--cozy fd-bar--footer fd-message-box__footer">
-            <div class="fd-bar__right">
-                <div class="fd-bar__element">
-                    <button class="fd-button fd-button--emphasized fd-message-box__decisive-button">
-                        Close
-                    </button>
-                </div>
-            </div>
-        </footer>
-    </section>
-</div>
-
-<br><br><br>
-
-<div class="fd-message-box-docs-static fd-message-box fd-message-box--error fd-message-box--active">
-    <section class="fd-message-box__content fd-message-box__content--m">
-        <header class="fd-bar fd-bar--cozy fd-bar--header fd-message-box__header">
-            <div class="fd-bar__left">
-                <div class="fd-bar__element">
-                    <h2 class="fd-title fd-title--h5">Error</h2>
-                </div>
-            </div>
-        </header>
-        <div class="fd-message-box__body">
-            Error message box for a medium-sized screen in cozy mode (mobile).
-        </div>
-        <footer class="fd-bar fd-bar--cozy fd-bar--footer fd-message-box__footer">
-            <div class="fd-bar__right">
-                <div class="fd-bar__element">
-                    <button class="fd-button fd-button--emphasized fd-message-box__decisive-button">
-                        Close
-                    </button>
-                </div>
-            </div>
-        </footer>
-    </section>
-</div>
-
-
-<br><br><br>
-
-<div class="fd-message-box-docs-static fd-message-box fd-message-box--success fd-message-box--active">
-    <section class="fd-message-box__content fd-message-box__content--l">
-        <header class="fd-bar fd-bar--header fd-message-box__header">
-            <div class="fd-bar__left">
-                <div class="fd-bar__element">
-                    <h2 class="fd-title fd-title--h5">Success</h2>
-                </div>
-            </div>
-        </header>
-        <div class="fd-message-box__body">
-            Success message box for a large screen in compact mode (desktop).
-        </div>
-        <footer class="fd-bar fd-bar--compact fd-bar--footer fd-message-box__footer">
-            <div class="fd-bar__right">
-                <div class="fd-bar__element">
-                    <button class="fd-button fd-button--emphasized fd-message-box__decisive-button">
-                        Close
-                    </button>
-                </div>
-            </div>
-        </footer>
-    </section>
-</div>
-
-<br><br><br>
-
-<div class="fd-message-box-docs-static fd-message-box fd-message-box--warning fd-message-box--active">
-    <section class="fd-message-box__content fd-message-box__content--xl">
-        <header class="fd-bar fd-bar--header fd-message-box__header">
-             <div class="fd-bar__left">
-                <div class="fd-bar__element">
-                    <h2 class="fd-title fd-title--h5">Warning</h2>
-                </div>
-            </div>
-        </header>
-        <div class="fd-message-box__body">
-           Warning message box for an extra large screen in compact mode (desktop).
-        </div>
-        <footer class="fd-bar fd-bar--compact fd-bar--footer fd-message-box__footer">
-            <div class="fd-bar__right">
-                <div class="fd-bar__element">
-                    <button class="fd-button fd-button--emphasized fd-message-box__decisive-button">
-                        Close
-                    </button>
-                </div>
-            </div>
-        </footer>
-    </section>
-</div>
-`;
-
+export const Responsive = () => responsiveExampleHtml;
 Responsive.parameters = {
-    docs: {
-        story: { iframeHeight: messageBoxHeight * 4 },
-        description: {
-            story: `
+  docs: {
+    story: {
+      iframeHeight: messageBoxHeight * 4
+    },
+    description: {
+      story: `
 The message box has 1rem padding all around the body, and the header and footer both inherit their padding from the **Bar** component. Responsive horizontal padding can be applied to the header, body and footer of the message box; however, the amount depends on the screen width.
 
 **To display responsive padding, add the following modifier classes to the content container:**
@@ -388,6 +117,6 @@ Modifier class | rem | Screen width
 
 Enable cozy mode when message box is being displayed on mobile. To display message box in cozy mode, add the \`fd-bar--cozy\` modifier class to the header and footer (this will also apply to the buttons). It's also important to note that the content container should always take the full height and width of mobile screens. To achieve this, add the \`fd-message-box__content--mobile\` modifier class to the content container.
          `
-        }
     }
+  }
 };

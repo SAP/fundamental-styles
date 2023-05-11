@@ -1,0 +1,68 @@
+<div style="height: 450px">
+<label class="fd-form-label" id="itemGroupingLabel">Choose an option</label><br />
+    <div class="fd-popover">
+    <div class="fd-popover__control" aria-expanded="true" aria-haspopup="true">
+        <div class="fd-select">
+            <button
+                aria-labelledby="itemGroupingLabel itemGroupingValue"
+                class="fd-select__control"
+                tabindex="0"
+                id="itemGroupingSelectCombobox"
+                onclick="
+                    toggleElAttrs('f34HLM5G', ['aria-hidden']);
+                    toggleElAttrs('itemGroupingSelectCombobox', ['aria-expanded']);
+                "
+                aria-expanded="true"
+                aria-haspopup="listbox">
+                <span id="itemGroupingValue" class="fd-select__text-content">Select Ingredient</span>
+                <span class="fd-button fd-button--transparent fd-select__button">
+                    <i class="sap-icon--slim-arrow-down"></i>
+                </span>
+            </button>
+        </div>
+    </div>
+    <div
+        id="f34HLM5G"
+        class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--dropdown fd-popover__body--dropdown-fill"
+        aria-hidden="false">
+            <label class="fd-list__group-header" id="fruitsHeader">
+                <span class="fd-list__title">Fruits</span>
+            </label>
+            <ul
+                aria-activedescendant="itemGroupingSelectCombobox-currentlyFocusedItem"
+                aria-labelledby="itemGroupingLabel fruitsHeader" class="fd-list fd-list--dropdown" role="listbox">
+                <li
+                    id="itemGroupingSelectCombobox-currentlyFocusedItem"
+                    role="option" tabindex="0" class="fd-list__item is-selected" aria-selected="true">
+                    <span class="fd-list__title">Apple</span>
+                </li>
+                <li role="option" tabindex="-1" class="fd-list__item">
+                    <span class="fd-list__title">Orange</span>
+                </li>
+                <li role="option" tabindex="-1" class="fd-list__item">
+                    <span class="fd-list__title">Banana</span>
+                </li>
+                <li role="option" tabindex="-1" class="fd-list__item">
+                    <span class="fd-list__title">Kiwi</span>
+                </li>
+            </ul>
+            <label class="fd-list__group-header" id="vegHeader">
+                <span class="fd-list__title">Vegetables</span>
+            </label>
+            <ul aria-labelledby="itemGroupingLabel vegHeader" class="fd-list fd-list--dropdown" role="listbox">
+                <li role="option" tabindex="-1" class="fd-list__item">
+                    <span class="fd-list__title">Tomato</span>
+                </li>
+                <li role="option" tabindex="-1" class="fd-list__item">
+                    <span class="fd-list__title">Onion</span>
+                </li>
+                <li role="option" tabindex="-1" class="fd-list__item">
+                    <span class="fd-list__title">Spinach</span>
+                </li>
+                <li role="option" tabindex="-1" class="fd-list__item">
+                    <span class="fd-list__title">Potato</span>
+                </li>
+            </ul>
+    </div>
+    </div>
+</div>

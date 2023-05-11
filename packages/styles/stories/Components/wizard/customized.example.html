@@ -1,0 +1,62 @@
+<section class="fd-wizard">
+    <nav class="fd-wizard__navigation" aria-label="Wizard Navigation 2">
+        <ul class="fd-wizard__progress-bar fd-wizard__progress-bar--md">
+            <li class="fd-wizard__step fd-wizard__step--completed">
+                <div class="fd-wizard__step-wrapper">
+                    <a class="fd-wizard__step-container" tabindex="0" aria-label="Step 1: One line">
+                        <span class="fd-wizard__step-indicator">
+                            <i class="fd-wizard__icon sap-icon--accept" role="presentation"></i>
+                        </span>
+                        <div class="fd-wizard__label-container">
+                            <span class="fd-wizard__label">Step 1: One line</span>
+                        </div>
+                    </a>
+                    <span class="fd-wizard__connector fd-wizard__connector--active"></span>
+                </div>
+            </li>
+            <li class="fd-wizard__step fd-wizard__step--current">
+                <div class="fd-wizard__step-wrapper">
+                    <a class="fd-wizard__step-container" tabindex="0" aria-label="Step 2: Very long label that truncates on the second line" aria-current="step">
+                        <span class="fd-wizard__step-indicator">2</span>
+                        <div class="fd-wizard__label-container">
+                            <span class="fd-wizard__label">
+                                Step 2: Very long label that truncates on the second line
+                            </span>
+                        </div>
+                    </a>
+                    <span class="fd-wizard__connector"></span>
+                </div>
+            </li>
+            <li class="fd-wizard__step fd-wizard__step--upcoming">
+                <div class="fd-wizard__step-wrapper">
+                    <a class="fd-wizard__step-container" tabindex="0" aria-label="Step 3: Branching" aria-disabled="true">
+                        <span class="fd-wizard__step-indicator">3</span>
+                        <div class="fd-wizard__label-container fd-wizard__label-container--optional">
+                            <span class="fd-wizard__label">Step 3: Branching</span>
+                        </div>
+                    </a>
+                    <span class="fd-wizard__connector fd-wizard__connector--branching"></span>
+                </div>
+            </li>
+        </ul>
+    </nav>
+    <section class="fd-wizard__content fd-wizard__content--list fd-wizard__content--md" id="wizard-section-2" style="min-height: 300px;">
+        <div class="fd-wizard__step-content-container">
+            <div>
+                Sed fermentum, mi et tristique ullamcorper, sapien sapien faucibus sem, quis pretium nibh lorem malesuada diam. Nulla quis arcu aliquet, feugiat massa semper, volutpat diam. Nam vitae ante posuere, molestie neque sit amet, dapibus velit. Maecenas eleifend tempor lorem. Mauris vitae elementum mi, sed eleifend ligula. Nulla tempor vulputate dolor, nec dignissim quam convallis ut. Praesent vitae commodo felis, ut iaculis felis. Fusce quis eleifend sapien, eget facilisis nibh. Suspendisse est velit, scelerisque ut commodo eget, dignissim quis metus. Cras faucibus consequat gravida. Curabitur vitae quam felis. Phasellus ac leo eleifend, commodo tortor et, varius quam. Aliquam erat volutpat
+            </div>
+            <div class="fd-wizard__next-step">
+                <button class="fd-button fd-button--compact fd-button--emphasized">Step 3</button>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="fd-bar fd-bar--page-m_l fd-bar--footer">
+            <div class="fd-bar__right">
+                <div class="fd-bar__element">
+                    <button class="fd-button fd-button--transparent fd-button--compact">Cancel</button>
+                </div>
+            </div>
+        </div>
+    </footer>
+</section>

@@ -1,0 +1,213 @@
+<div class="fd-docs-date-picker" style="height:500px">
+<div class="fd-popover">
+  <div class="fd-popover__control is-expanded">
+    <label class="fd-form-label" for="todayNavigationDateInput">en-US DatePicker with today navigation</label>
+    <div class="fd-input-group">
+      <input id="todayNavigationDateInput" class="fd-input fd-input-group__input" type="text" value="" placeholder="Pick a date"
+        onfocus="
+          setElAttr('Itcgq830', 'aria-hidden', 'false');
+          setElAttr('smniaof7ahfs', 'aria-expanded', 'true');
+        ">
+      <span class="fd-input-group__addon fd-input-group__addon--button">
+      <button class="fd-input-group__button fd-popover__control fd-button fd-button--transparent"
+          id="smniaof7ahfs"
+          onclick="
+              toggleElAttrs('Itcgq830', ['aria-hidden']);
+              toggleElAttrs('smniaof7ahfs', ['aria-expanded']);
+          "
+        aria-controls="Itcgq830"
+        aria-expanded="true"
+        aria-haspopup="true"
+        aria-label="Choose Date">
+          <i class="sap-icon--appointment-2"></i>
+        </button>
+      </span>
+    </div>
+  </div>
+  <div class="fd-popover__body fd-popover__body--no-arrow" aria-hidden="false" id="Itcgq830">
+    <div class="fd-calendar">
+      <div class="fd-calendar__header">
+        <div class="fd-calendar__navigation">
+          <div class="fd-calendar__action">
+            <button class="fd-button fd-button--transparent" aria-label="Previous" aria-disabled="true">
+              <i class="sap-icon--slim-arrow-left"></i>
+            </button>
+          </div>
+          <div class="fd-calendar__action">
+            <button class="fd-button fd-button--transparent" aria-expanded="false">September</button>
+          </div>
+          <div class="fd-calendar__action">
+            <button class="fd-button fd-button--transparent" aria-expanded="false">2018</button>
+          </div>
+          <div class="fd-calendar__action">
+            <button class="fd-button fd-button--transparent" aria-label="Next">
+              <i class="sap-icon--slim-arrow-right"></i>
+            </button>
+          </div>
+          <div class="fd-calendar__action">
+            <button class="fd-button fd-button--transparent"
+              aria-expanded="false"
+              onClick="
+                setValue('todayNavigationDateInput', new Date('9/6/2018').toLocaleDateString('en-US'));
+                setFocus('mockToday');
+                addClass('mockToday', 'is-active');
+              "
+              >
+              Today
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="fd-calendar__content">
+        <div class="fd-calendar__dates" id="YeayX300" aria-hidden="false">
+          <table class="fd-calendar__table" role="grid">
+            <thead class="fd-calendar__group">
+              <tr class="fd-calendar__row">
+                <th class="fd-calendar__item fd-calendar__item--side-helper">
+                  <span class="fd-calendar__text" role="button">S</span>
+                </th>
+                <th class="fd-calendar__item fd-calendar__item--side-helper">
+                  <span class="fd-calendar__text" role="button">M</span>
+                </th>
+                <th class="fd-calendar__item fd-calendar__item--side-helper">
+                  <span class="fd-calendar__text" role="button">T</span>
+                </th>
+                <th class="fd-calendar__item fd-calendar__item--side-helper">
+                  <span class="fd-calendar__text" role="button">W</span>
+                </th>
+                <th class="fd-calendar__item fd-calendar__item--side-helper">
+                  <span class="fd-calendar__text" role="button">T</span>
+                </th>
+                <th class="fd-calendar__item fd-calendar__item--side-helper">
+                  <span class="fd-calendar__text" role="button">F</span>
+                </th>
+                <th class="fd-calendar__item fd-calendar__item--side-helper">
+                  <span class="fd-calendar__text" role="button">S</span>
+                </th>
+              </tr>
+            </thead>
+            <tbody class="fd-calendar__group">
+              <tr class="fd-calendar__row">
+                <td class="fd-calendar__item fd-calendar__item--other-month is-disabled" role="gridcell">
+                  <span class="fd-calendar__text">29</span>
+                </td>
+                <td class="fd-calendar__item fd-calendar__item--other-month is-disabled" role="gridcell">
+                  <span class="fd-calendar__text">30</span>
+                </td>
+                <td class="fd-calendar__item fd-calendar__item--other-month is-disabled" role="gridcell">
+                  <span class="fd-calendar__text">31</span>
+                </td>
+                <td class="fd-calendar__item is-disabled" role="gridcell">
+                  <span class="fd-calendar__text">1</span>
+                </td>
+                <td class="fd-calendar__item is-disabled" role="gridcell">
+                  <span class="fd-calendar__text">2</span>
+                </td>
+                <td class="fd-calendar__item is-disabled" role="gridcell">
+                  <span class="fd-calendar__text">3</span>
+                </td>
+                <td class="fd-calendar__item is-disabled" role="gridcell">
+                  <span class="fd-calendar__text">4</span>
+                </td>
+              </tr>
+              <tr class="fd-calendar__row">
+                <td class="fd-calendar__item is-disabled" role="gridcell">
+                  <span class="fd-calendar__text">5</span>
+                </td>
+                <td id="mockToday" tabIndex="0" class="fd-calendar__item fd-calendar__item--current" role="gridcell">
+                  <span class="fd-calendar__text">6</span>
+                </td>
+                <td class="fd-calendar__item" role="gridcell">
+                  <span class="fd-calendar__text">7</span>
+                </td>
+                <td class="fd-calendar__item" role="gridcell">
+                  <span class="fd-calendar__text">8</span>
+                </td>
+                <td class="fd-calendar__item" role="gridcell">
+                  <span class="fd-calendar__text">9</span>
+                </td>
+                <td class="fd-calendar__item" role="gridcell">
+                  <span class="fd-calendar__text">10</span>
+                </td>
+                <td class="fd-calendar__item" role="gridcell">
+                  <span class="fd-calendar__text">11</span>
+                </td>
+              </tr>
+              <tr class="fd-calendar__row">
+                <td class="fd-calendar__item" role="gridcell">
+                  <span class="fd-calendar__text">12</span>
+                </td>
+                <td class="fd-calendar__item" role="gridcell">
+                  <span class="fd-calendar__text">13</span>
+                </td>
+                <td class="fd-calendar__item" role="gridcell">
+                  <span class="fd-calendar__text">14</span>
+                </td>
+                <td class="fd-calendar__item is-selected" role="gridcell">
+                  <span class="fd-calendar__text">15</span>
+                </td>
+                <td class="fd-calendar__item" role="gridcell">
+                  <span class="fd-calendar__text">16</span>
+                </td>
+                <td class="fd-calendar__item" role="gridcell">
+                  <span class="fd-calendar__text">17</span>
+                </td>
+                <td class="fd-calendar__item" role="gridcell">
+                  <span class="fd-calendar__text">18</span>
+                </td>
+              </tr>
+              <tr class="fd-calendar__row">
+                <td class="fd-calendar__item" role="gridcell">
+                  <span class="fd-calendar__text">19</span>
+                </td>
+                <td class="fd-calendar__item" role="gridcell">
+                  <span class="fd-calendar__text">20</span>
+                </td>
+                <td class="fd-calendar__item" role="gridcell">
+                  <span class="fd-calendar__text">21</span>
+                </td>
+                <td class="fd-calendar__item" role="gridcell">
+                  <span class="fd-calendar__text">22</span>
+                </td>
+                <td class="fd-calendar__item" role="gridcell">
+                  <span class="fd-calendar__text">23</span>
+                </td>
+                <td class="fd-calendar__item" role="gridcell">
+                  <span class="fd-calendar__text">24</span>
+                </td>
+                <td class="fd-calendar__item" role="gridcell">
+                  <span class="fd-calendar__text">25</span>
+                </td>
+              </tr>
+              <tr class="fd-calendar__row">
+                <td class="fd-calendar__item is-blocked" role="gridcell">
+                  <span class="fd-calendar__text">26</span>
+                </td>
+                <td class="fd-calendar__item is-blocked" role="gridcell">
+                  <span class="fd-calendar__text">27</span>
+                </td>
+                <td class="fd-calendar__item is-blocked" role="gridcell">
+                  <span class="fd-calendar__text">28</span>
+                </td>
+                <td class="fd-calendar__item" role="gridcell">
+                  <span class="fd-calendar__text">29</span>
+                </td>
+                <td class="fd-calendar__item" role="gridcell">
+                  <span class="fd-calendar__text">30</span>
+                </td>
+                <td class="fd-calendar__item fd-calendar__item--other-month" role="gridcell">
+                  <span class="fd-calendar__text">1</span>
+                </td>
+                <td class="fd-calendar__item fd-calendar__item--other-month" role="gridcell">
+                  <span class="fd-calendar__text">2</span>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<small>example considers today as 9/6/2018</small>

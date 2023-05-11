@@ -1,0 +1,67 @@
+<div style="width: 350px; height: 600px; position: relative">
+    <ul class="fd-feed-list fd-feed-list--s" aria-label="Feed List Item small size example">
+        <li class="fd-feed-list__body">
+            <div class="fd-feed-list__wrapper">
+                <div class="fd-feed-list__wrapper fd-feed-list__wrapper--header">
+                <div
+                    class="fd-avatar fd-avatar--circle fd-avatar--s fd-avatar--thumbnail fd-feed-list__thumb"
+                    style="background-image: url(/assets/images/portraits/XL_Square_112x112_M2.png)"
+                    role="img"
+                    aria-label="John Doe"
+                    title="John Doe">
+                </div>
+                <div>
+                    <span class="fd-feed-list__name">Joe Doe: </span>
+                    <div class="fd-feed-list__footer">
+                        <small class="fd-feed-list__footer--byline">Aug 20, 2020</small>
+                        <small class="fd-feed-list__footer--byline">Reply</small>
+                    </div>
+                </div>
+
+                </div>
+                <div class="fd-feed-list__actions">
+                    <button class="fd-button fd-button--transparent"
+                            aria-label="More Options" aria-controls="actionSheetPhone" aria-expanded="false"
+                            aria-haspopup="true" onclick="toggleClass('actionSheetPhone', 'fd-action-sheet__wrapper--active');">
+                            <i class="sap-icon--overflow"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="fd-feed-list__content">
+                <p class="fd-feed-list__text">
+                    Suspendisse facilisis sed odio in mollis. Donec quis justo aliquam, porta justo a, accumsan lorem.
+                </p>
+            </div>
+            <div class="fd-action-sheet__wrapper" id="actionSheetPhone">
+                <h6 class="fd-action-sheet__title">Press cancel to hide action sheet</h6>
+                <ul class="fd-action-sheet fd-action-sheet--mobile" role="list" aria-label="List of contextual options">
+                    <li class="fd-action-sheet__item" role="listitem">
+                        <button class="fd-button fd-button--full-width fd-button--transparent fd-button--text-alignment-left">
+                            <i class="sap-icon--attachment"></i>
+                            <span class="fd-button__text">Button 1</span>
+                        </button>
+                    </li>
+                    <li class="fd-action-sheet__item" role="listitem">
+                        <button class="fd-button fd-button--full-width fd-button--transparent fd-button--text-alignment-left">
+                            <i class="sap-icon--add"></i>
+                            <span class="fd-button__text">Button 2</span>
+                        </button>
+                    </li>
+                    <li class="fd-action-sheet__item" role="listitem">
+                        <button class="fd-button fd-button--full-width fd-button--transparent fd-button--text-alignment-left">
+                            <i class="sap-icon--print"></i>
+                            <span class="fd-button__text">Button 3</span>
+                        </button>
+                    </li>
+                    <li class="fd-action-sheet__item" role="listitem">
+                        <button class="fd-button fd-button--full-width fd-button--negative"
+                                onclick="toggleClass('actionSheetPhone', 'fd-action-sheet__wrapper--active');">
+                            <span class="fd-button__text">Cancel</span>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </li>
+    </ul>
+</div>

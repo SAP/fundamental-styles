@@ -1,0 +1,89 @@
+<div class="fd-container" style="margin-bottom: 200px">
+    <div class="fd-row">
+        <div class="fd-col--3 fd-col--offset-3">
+            <div class="fd-popover fd-popover--right">
+                <div class="fd-popover__control" style="width: 48px; height: 48px;">
+                        <span
+                            class="fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--thumbnail"
+                            aria-controls="popoverB2"
+                            aria-expanded="true"
+                            aria-haspopup="true"
+                            aria-label="Avatar"
+                            style="background-image: url('assets/images/avatars/3.svg');"
+                            onclick="onPopoverClick('popoverB2');"
+                            role="button"
+                            tabindex="0"></span>
+                </div>
+                <div class="fd-popover__body fd-popover__body--left" aria-hidden="false" id="popoverB2">
+                    <nav class="fd-menu" aria-label="navigation items">
+                        <ul class="fd-menu__list fd-menu__list--no-shadow">
+                            <li class="fd-menu__item">
+                                <a class="fd-menu__link" href="#">
+                                    <span class="fd-menu__title">Option 1</span>
+                                </a>
+                            </li>
+                            <li class="fd-menu__item">
+                                <a class="fd-menu__link" href="#">
+                                    <span class="fd-menu__title">Option 2</span>
+                                </a>
+                            </li>
+                            <li class="fd-menu__item">
+                                <a class="fd-menu__link" href="#">
+                                    <span class="fd-menu__title">Option 3</span>
+                                </a>
+                            </li>
+                            <li class="fd-menu__item">
+                                <a class="fd-menu__link" href="#">
+                                    <span class="fd-menu__title">Option 4</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <div class="fd-col--3 fd-col--offset-3">
+            <div class="fd-popover">
+                <div class="fd-popover__control">
+                    <button
+                        class="fd-button"
+                        aria-label="Cart"
+                        aria-controls="popoverB4"
+                        aria-expanded="true"
+                        aria-haspopup="true"
+                        onclick="onPopoverClick('popoverB4');"
+                        role="button">
+                        <!- role is needed to override the combobox role due to aria-haspopup -->
+                        <i class="sap-icon--cart" role="presentation"></i>
+                    </button>
+                </div>
+                <div class="fd-popover__body" aria-hidden="false" id="popoverB4">
+                    <nav class="fd-menu" aria-label="options triggered by icon button">
+                        <ul class="fd-menu__list fd-menu__list--no-shadow">
+                            <li class="fd-menu__item">
+                                <a class="fd-menu__link" href="#">
+                                    <span class="fd-menu__title">Option 1</span>
+                                </a>
+                            </li>
+                            <li class="fd-menu__item">
+                                <a class="fd-menu__link" href="#">
+                                    <span class="fd-menu__title">Option 2</span>
+                                </a>
+                            </li>
+                            <li class="fd-menu__item">
+                                <a class="fd-menu__link" href="#">
+                                    <span class="fd-menu__title">Option 3</span>
+                                </a>
+                            </li>
+                            <li class="fd-menu__item">
+                                <a class="fd-menu__link" href="#">
+                                    <span class="fd-menu__title">Option 4</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

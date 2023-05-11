@@ -1,0 +1,32 @@
+<div class="fd-form-item">
+  <label class="fd-form-label"  id="browse_input2_label" >Upload Document</label>
+  <div class="fd-file-uploader" style="width: 300px;">
+    <div class="fd-file-uploader__container">
+        <input
+        aria-labelledby="browse_input2_label"
+        class="fd-input fd-file-uploader__input"
+        onclick="browseFile('input1');"
+        title="document.pdf"
+        type="text"
+        id="browse_input2"
+        autocomplete="off"
+        value="document.pdf"
+        >
+        <button
+        class="fd-button"
+        onclick="browseFile('input1');"
+        id="file-uploader-button-1"
+        aria-label="Select a file for uploading">Browse...
+        </button>
+    </div>
+    <div class="fd-file-uploader__hidden" aria-live="polite" aria-atomic="true">document.pdf</div>
+    <input
+        aria-labelledby="browse_input2_label"
+        hidden
+        id="input1"
+        class="fd-file-uploader__hidden"
+        type="file"
+        onchange="selectFile(this,'browse_input2')"
+    >
+    </div>
+</div>

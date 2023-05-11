@@ -1,10 +1,12 @@
+import inlineExampleHtml from "./inline.example.html?raw";
+import requiredExampleHtml from "./required.example.html?raw";
 import '../../../../src/form-label.scss';
 import '../../../../src/checkbox.scss';
 import '../../../../src/fieldset.scss';
 export default {
-    title: 'Components/Forms/Checkbox',
-    parameters: {
-        description: `A checkbox lets the user set a binary value such as “true/false”. When the user selects the checkbox, it toggles between:
+  title: 'Components/Forms/Checkbox',
+  parameters: {
+    description: `A checkbox lets the user set a binary value such as “true/false”. When the user selects the checkbox, it toggles between:
 
 - **Checked**: the state described by the checkbox text applies, or that the item has been chosen.
 - **Un-checked**: the state described by the checkbox is not applied.
@@ -27,10 +29,9 @@ Note: With checkboxes, all options are visible, and the user can make one or mor
 - The user needs to perform instantaneous actions that do not need reviewing or confirming. Consider using a **Switch** instead.
 - There is not enough space available on the screen. Use a **Combo Box** instead.
         `,
-        tags: ['f3', 'a11y', 'theme']
-    }
+    tags: ['f3', 'a11y', 'theme']
+  }
 };
-
 const localStyles = `
 <style>
     .checkbox-example-container > fieldset {
@@ -38,7 +39,6 @@ const localStyles = `
     }
 </style>
 `;
-
 export const Desktop = () => `
 ${localStyles}
 <fieldset class="fd-fieldset">
@@ -95,44 +95,30 @@ ${localStyles}
     </div>
 </fieldset>
 `;
-
 Desktop.parameters = {
-    docs: {
-        story: { iframeHeight: 330 },
-        description: {
-            story: `A checkbox can be displayed in two different sizes desktop (compact) and mobile (default).
+  docs: {
+    story: {
+      iframeHeight: 330
+    },
+    description: {
+      story: `A checkbox can be displayed in two different sizes desktop (compact) and mobile (default).
 On desktop screens, the checkbox appears smaller and uses the \`fd-checkbox__label--compact\` modifier class.
         `
-        }
     }
+  }
 };
-
-export const Required = () => `
-<fieldset class="fd-fieldset">
-    <legend class="fd-fieldset__legend">Required checkbox</legend>
-    <div class="fd-form-group">
-        <div class="fd-form-item">
-            <input type="checkbox" class="fd-checkbox fd-checkbox--compact" id="Ai4ez61rc">
-            <label class="fd-checkbox__label fd-checkbox__label--required" for="Ai4ez61rc">
-                <div class="fd-checkbox__label-container">
-                    <span class="fd-checkbox__text">Required Checkbox</span>
-                </div>
-            </label>
-        </div>
-    </div>
-</fieldset>
-`;
-
+export const Required = () => requiredExampleHtml;
 Required.parameters = {
-    docs: {
-        story: { iframeHeight: 330 },
-        description: {
-            story: `To show that a checkbox input is required, use the \`fd-checkbox__label--required\` class.
+  docs: {
+    story: {
+      iframeHeight: 330
+    },
+    description: {
+      story: `To show that a checkbox input is required, use the \`fd-checkbox__label--required\` class.
         `
-        }
     }
+  }
 };
-
 export const Mobile = () => `
 ${localStyles}
 <fieldset class="fd-fieldset">
@@ -189,57 +175,28 @@ ${localStyles}
     </div>
 </fieldset>
 `;
-
 Mobile.parameters = {
-    docs: {
-        story: { iframeHeight: 330 },
-        description: {
-            story: `A checkbox can display larger so users can easily select options on a mobile screen. This is considered the default size for checkbox.
+  docs: {
+    story: {
+      iframeHeight: 330
+    },
+    description: {
+      story: `A checkbox can display larger so users can easily select options on a mobile screen. This is considered the default size for checkbox.
         `
-        }
     }
+  }
 };
-
-export const Inline = () => `<fieldset class="fd-fieldset">
-    <legend class="fd-fieldset__legend">Inline checkboxes</legend>
-    <div class="fd-form-group fd-form-group--inline">
-        <div class="fd-form-item">
-            <input type="checkbox" class="fd-checkbox" id="Ai4ez617">
-            <label class="fd-checkbox__label" for="Ai4ez617">
-                <div class="fd-checkbox__label-container">
-                    <span class="fd-checkbox__text">Potatoes</span>
-                </div>
-            </label>
-        </div>
-        <div class="fd-form-item">
-            <input type="checkbox" class="fd-checkbox" id="Ai4ez618" checked>
-            <label class="fd-checkbox__label" for="Ai4ez618">
-                <div class="fd-checkbox__label-container">
-                    <span class="fd-checkbox__text">Tomatoes</span>
-                </div>
-            </label>
-        </div>
-        <div class="fd-form-item">
-            <input type="checkbox" class="fd-checkbox" id="Ai4ez619" disabled checked>
-            <label class="fd-checkbox__label" for="Ai4ez619">
-                <div class="fd-checkbox__label-container">
-                    <span class="fd-checkbox__text">Carrots</span>
-                </div>
-            </label>
-        </div>
-    </div>
-</fieldset>
-`;
-
+export const Inline = () => inlineExampleHtml;
 Inline.parameters = {
-    docs: {
-        story: { iframeHeight: 400 },
-        description: {
-            story: 'Checkboxes can display horizontally in a line. To display them this way, add the `fd-checkbox__label--inline` modifier class to the element.'
-        }
+  docs: {
+    story: {
+      iframeHeight: 400
+    },
+    description: {
+      story: 'Checkboxes can display horizontally in a line. To display them this way, add the `fd-checkbox__label--inline` modifier class to the element.'
     }
+  }
 };
-
 export const States = () => `
 ${localStyles}
 <div class="checkbox-example-container">
@@ -424,12 +381,13 @@ ${localStyles}
     </fieldset>
 </div>
 `;
-
 States.parameters = {
-    docs: {
-        story: { iframeHeight: 400 },
-        description: {
-            story: `Checkboxes can display several interaction states to communicate semantic meaning to the users. To display different states, add the classes below to the \`fd-form-item\`:
+  docs: {
+    story: {
+      iframeHeight: 400
+    },
+    description: {
+      story: `Checkboxes can display several interaction states to communicate semantic meaning to the users. To display different states, add the classes below to the \`fd-form-item\`:
 
 | States | Class |
 | :----------------- | :------------------ |
@@ -439,10 +397,9 @@ States.parameters = {
 | Information | \`fd-checkbox is-information\` |
 | Disabled | \`fd-checkbox is-disabled\` |
 `
-        }
     }
+  }
 };
-
 export const TextTruncation = () => `
 ${localStyles}
 <fieldset class="fd-fieldset">
@@ -467,13 +424,14 @@ ${localStyles}
     </div>
 </fieldset>
 `;
-
 TextTruncation.parameters = {
-    docs: {
-        story: { iframeHeight: 330 },
-        description: {
-            story: `By default, long checkbox label truncates with ellipsis. For this behaviour no modifier class is needed. For checkbox label that wraps on a new line to show the entire content, use \`.fd-checkbox__label--wrap\` modifier class applied with \`.fd-checkbox__label\`. Keep in mind that for this to work <b>max-width</b> should be set on the label.
+  docs: {
+    story: {
+      iframeHeight: 330
+    },
+    description: {
+      story: `By default, long checkbox label truncates with ellipsis. For this behaviour no modifier class is needed. For checkbox label that wraps on a new line to show the entire content, use \`.fd-checkbox__label--wrap\` modifier class applied with \`.fd-checkbox__label\`. Keep in mind that for this to work <b>max-width</b> should be set on the label.
         `
-        }
     }
+  }
 };
