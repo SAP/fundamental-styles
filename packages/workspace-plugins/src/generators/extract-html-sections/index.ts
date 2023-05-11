@@ -5,16 +5,16 @@ import { sync as fastGlobSync } from 'fast-glob';
 import { parse as babelParser } from '@babel/core';
 import { parse as parsePath } from 'path';
 import {
+    ArrowFunctionExpression,
+    ExportNamedDeclaration,
+    identifier,
+    Identifier,
     importDeclaration,
     importDefaultSpecifier,
     isArrowFunctionExpression,
-    identifier,
+    isIdentifier,
     stringLiteral,
-    Identifier,
-    ExportNamedDeclaration,
-    VariableDeclarator,
-    ArrowFunctionExpression,
-    isIdentifier
+    VariableDeclarator
 } from '@babel/types';
 import generate from '@babel/generator';
 import { names } from '@nrwl/devkit';
@@ -49,29 +49,27 @@ export default async function(
                     const fileNameLiteral = stringLiteral(`./${templateFileName}?raw`);
                     const propertyNameIdentifier = identifier(`${propertyName}ExampleHtml`);
                     const createHTMLTemplate = (contents: string): void => {
-                        try {
-                            contents = prettierFormat(contents, { parser: 'html' }).trim()
-                        } catch (e) {
-                            debugger;
-                        }
+                        // try {
+                        //     contents = prettierFormat(contents, { parser: 'html' }).trim()
+                        // } catch (e) {
+                        //     debugger;
+                        // }
                         tree.write(`${parsedPath.dir}/${templateFileName}`, contents);
                     };
-                    const extractFromArrowFunctionExpression = (arrowFunction: ArrowFunctionExpression): Identifier | ArrowFunctionExpression => {
+                    const extractFromArrowFunctionExpression = (arrowFunction: ArrowFunctionExpression): Identifier | ArrowFunctionExpression['body'] => {
                         const content = arrowFunction.body;
                         if (content.type === 'TemplateLiteral') {
                             if (content.quasis.length > 1) {
-                                return arrowFunction;
+                                return content;
                             }
                             const newFileContent = content.quasis[0].value.raw;
                             createHTMLTemplate(newFileContent);
                             return propertyNameIdentifier;
-                        } else {
-                            // debugger;
                         }
-                        return arrowFunction;
+                        return content;
                     };
-                    variable.init = extractFromArrowFunctionExpression(variable.init);
-                    if (isIdentifier(variable.init)) {
+                    variable.init.body = extractFromArrowFunctionExpression(variable.init);
+                    if (isIdentifier(variable.init.body)) {
                         parsed?.program.body.unshift(importDeclaration([importDefaultSpecifier(propertyNameIdentifier)], fileNameLiteral));
                     } else {
                         // debugger;
