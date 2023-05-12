@@ -1,16 +1,23 @@
-import GithubSvg from "./GithubSvg";
-import packageJson from "../../../../package.json";
+import packageJson from '../../../../package.json';
+import { IconButton, Icons } from '@storybook/components';
+import { styled } from '@storybook/theming';
 
-export default () => <>
-    <a className="fddocs-header__anchor" href="https://github.com/SAP/fundamental-styles" target="_blank"
-       rel="noreferrer">
-        <GithubSvg/>
-    </a>
-    <a
-        className="fddocs-header__anchor"
-        href={`https://github.com/SAP/fundamental-styles/tree/v${packageJson.version}`}
-        target="_blank" rel="noreferrer"
-    >
+const StyledSpan = styled.span(({ theme }) => ({
+    fontSize: theme.typography.size.s1,
+    marginLeft: 10
+}));
+
+export default () => <IconButton
+    href={`https://github.com/SAP/fundamental-styles/tree/v${packageJson.version}`}
+    target={'_blank'}
+    title={'Github Link'}
+    content={undefined}
+    rel={undefined}
+    autoFocus={false}
+    rev={undefined}
+>
+    <Icons icon={'github'}></Icons>
+    <StyledSpan>
         {`v${packageJson.version}`}
-    </a>
-</>;
+    </StyledSpan>
+</IconButton>;

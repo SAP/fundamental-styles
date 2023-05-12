@@ -1,9 +1,11 @@
 import {DocsContainer} from '@storybook/addon-docs';
 import { fundamentalTheme } from 'fundamental-styles/storybook';
 import {MainDocPage} from "./MainDocPage";
-import {directionalities} from "fundamental-styles/configuration";
+import {directionalities, contentDensities} from "fundamental-styles/configuration";
 import {withDirectionality, withThemeProvider} from "fundamental-styles/storybook";
 import { Preview } from '@storybook/html';
+
+const capitalize = (s: string) => s.charAt(0).toUpperCase() + s.slice(1);
 
 export default {
     parameters: {
@@ -92,7 +94,18 @@ export default {
             defaultValue: 'ltr',
             toolbar: {
                 icon: 'paragraph',
-                items: directionalities
+                items: directionalities,
+                dynamicTitle: true
+            }
+        },
+        contentDensity: {
+            title: 'Content Density',
+            description: 'Content Density of components',
+            defaultValue: 'cozy',
+            toolbar: {
+                icon: 'zoom',
+                items: contentDensities,
+                dynamicTitle: true
             }
         }
     },

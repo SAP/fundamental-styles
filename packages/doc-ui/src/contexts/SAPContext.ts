@@ -9,9 +9,12 @@ export interface SAPContextType {
     setTheme: (theme: string) => void,
     directionality: string,
     setDirectionality: (directionality: string) => void,
+    contentDensity: string,
+    setContentDensity: (directionality: string) => void,
     selectedPackage?: string,
     setPackage: (packageId: string) => void,
     directionalities: { value: string, title: string }[],
+    contentDensities: { value: string, title: string }[],
 }
 
 export const SAPContext = createContext<SAPContextType>({} as unknown as SAPContextType);

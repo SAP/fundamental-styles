@@ -29,6 +29,10 @@ export default () => {
             <IconButton
                 title={'Directionality'}
                 active={!!sapContext.directionality}
+                rel={undefined}
+                content={undefined}
+                autoFocus={false}
+                rev={undefined}
             >
                 <Icons icon={'paragraph'}/>
                 {!!currentDirectionality && <IconButtonLabel>{currentDirectionality.title}</IconButtonLabel>}

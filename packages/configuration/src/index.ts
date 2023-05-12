@@ -1,3 +1,4 @@
+export * from './lib/content-densities';
 export * from './lib/directionalities';
 export * from './lib/tags';
 export * from './lib/previous-versions';
