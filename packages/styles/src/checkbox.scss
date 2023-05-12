@@ -131,7 +131,7 @@ $block: #{$fd-namespace}-checkbox;
   }
 
   &:checked + .#{$block}__label::before {
-    content: "\e05b";
+    content: "\e05b" / "";
   }
 
   &:indeterminate + .#{$block}__label::after {
