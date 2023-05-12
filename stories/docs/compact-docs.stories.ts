@@ -1,12 +1,11 @@
 import { fundamentalTheme as theme, RenderPackageIntroduction } from 'fundamental-styles/storybook';
-import Readme from '../../README.md?raw';
+import type { Meta } from '@storybook/html';
+import Readme from './content-density.md?raw';
 import { DocsContainer as container } from '@storybook/addon-docs';
 
 export default {
-    title: 'Docs / Introduction',
-    component: () => {
-        return null;
-    },
+    title: 'Docs / Content Density',
+    component: '',
     parameters: {
         docs: {
             container,
@@ -22,7 +21,7 @@ export default {
         visualDisabled: true,
         docsOnly: true
     }
-};
+} as Meta<unknown>;
 
 export const Overview = () => {
     /*
