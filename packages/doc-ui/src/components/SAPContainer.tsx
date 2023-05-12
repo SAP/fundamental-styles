@@ -21,7 +21,7 @@ export const SAPContainer = ({children}) => {
     const [storyPackage, setStoryPackage] = useState(getPackage(storyContext));
     const [themeValue, setThemeValue] = useState('');
     const [directionalityValue, setDirectionalityValue] = useState(params["directionality"]);
-    const [contentDensityValue, setContentDensityValue] = useState(params["directionality"]);
+    const [contentDensityValue, setContentDensityValue] = useState(params["contentDensity"]);
 
     useEffect(() => {
         setStoryPackage(getPackage(storyContext))

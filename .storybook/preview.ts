@@ -1,11 +1,13 @@
-import {DocsContainer} from '@storybook/addon-docs';
-import { fundamentalTheme } from 'fundamental-styles/storybook';
-import {MainDocPage} from "./MainDocPage";
-import {directionalities, contentDensities} from "fundamental-styles/configuration";
-import {withDirectionality, withThemeProvider} from "fundamental-styles/storybook";
+import { DocsContainer } from '@storybook/addon-docs';
+import {
+    fundamentalTheme,
+    withContentDensity,
+    withDirectionality,
+    withThemeProvider
+} from 'fundamental-styles/storybook';
+import { MainDocPage } from './MainDocPage';
+import { contentDensities, directionalities } from 'fundamental-styles/configuration';
 import { Preview } from '@storybook/html';
-
-const capitalize = (s: string) => s.charAt(0).toUpperCase() + s.slice(1);
 
 export default {
     parameters: {
@@ -59,6 +61,9 @@ export default {
                     const match = SOURCE_REGEX.exec(src);
                     return match ? match[1] : src;
                 }
+            },
+            story: {
+                inline: true
             }
         },
         options: {
@@ -109,5 +114,5 @@ export default {
             }
         }
     },
-    decorators: [withDirectionality, withThemeProvider]
+    decorators: [withDirectionality, withThemeProvider, withContentDensity]
 } as Preview;
