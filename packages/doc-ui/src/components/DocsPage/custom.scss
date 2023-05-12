@@ -97,8 +97,14 @@ $heading-toc-spacer: $docs-hd-tp + $docs-hd-bp + $docs-hd-ch + $docs-tm;
 }
 
 /* storybook iframe inner wrapper */
-.sbdocs.sbdocs-wrapper {
-  padding-top: 75px;
+.sbdocs {
+  &.sbdocs-wrapper {
+    padding-top: 75px;
+  }
+
+  &.sbdocs-content {
+    padding-top: 20px;
+  }
 }
 
 /* header */
@@ -315,9 +321,7 @@ blockquote {
   &.docs-deprecated {
     background: #ffebeb;
     background: var(--sapErrorBackground, #ffebeb);
-    color: #bb0000;
     color: var(--sapNegativeColor, #bb0000);
-    border-color: #bb0000;
     border-color: var(--sapNegativeColor, #bb0000);
   }
 }
@@ -466,7 +470,6 @@ code.docs-code-grey {
 }
 
 .themed-container {
-  background-color: #f7f7f7;
   background-color: var(--sapBackgroundColor, #f7f7f7);
 }
 
@@ -475,13 +478,9 @@ code.docs-code-grey {
 }
 
 body.sb-show-main {
-  background-color: #f7f7f7;
   background-color: var(--sapBackgroundColor, #f7f7f7);
-  font-family: "72", "72full", Arial, Helvetica, sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
-  font-size: 0.875rem;
   font-size: var(--sapFontSize, 0.875rem);
-  color: #32363a;
   color: var(--sapTextColor, #32363a);
 }
 

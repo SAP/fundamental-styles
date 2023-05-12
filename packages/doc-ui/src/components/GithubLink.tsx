@@ -7,17 +7,29 @@ const StyledSpan = styled.span(({ theme }) => ({
     marginLeft: 10
 }));
 
-export default () => <IconButton
-    href={`https://github.com/SAP/fundamental-styles/tree/v${packageJson.version}`}
-    target={'_blank'}
-    title={'Github Link'}
-    content={undefined}
-    rel={undefined}
-    autoFocus={false}
-    rev={undefined}
->
-    <Icons icon={'github'}></Icons>
-    <StyledSpan>
-        {`v${packageJson.version}`}
-    </StyledSpan>
-</IconButton>;
+const StyledGhButtonContainer = styled.div`
+  display: inline-block;
+
+  > a {
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-top: 6px;
+  }
+`;
+
+export default () => <StyledGhButtonContainer>
+    <IconButton
+        href={`https://github.com/SAP/fundamental-styles/tree/v${packageJson.version}`}
+        target={'_blank'}
+        title={'Github Link'}
+        content={undefined}
+        rel={undefined}
+        autoFocus={false}
+        rev={undefined}
+    >
+        <Icons icon={'github'}></Icons>
+        <StyledSpan>
+            {`v${packageJson.version}`}
+        </StyledSpan>
+    </IconButton>
+</StyledGhButtonContainer>;
