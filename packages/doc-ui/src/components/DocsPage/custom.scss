@@ -101,10 +101,6 @@ $heading-toc-spacer: $docs-hd-tp + $docs-hd-bp + $docs-hd-ch + $docs-tm;
   &.sbdocs-wrapper {
     padding-top: 75px;
   }
-
-  &.sbdocs-content {
-    padding-top: 20px;
-  }
 }
 
 /* header */
