@@ -1,3 +1,12 @@
+# [0.29.0-rc.31](https://github.com/SAP/fundamental-styles/compare/v0.29.0-rc.30...v0.29.0-rc.31) (2023-05-12)
+
+
+### Bug Fixes
+
+* **styles:** screenreaders attempting to read icons from content [ci visual] ([#4518](https://github.com/SAP/fundamental-styles/issues/4518)) ([14de174](https://github.com/SAP/fundamental-styles/commit/14de1744cb867f7a1b481faa8866a7ef13aa9277))
+
+
+
 # [0.29.0-rc.30](https://github.com/SAP/fundamental-styles/compare/v0.29.0-rc.29...v0.29.0-rc.30) (2023-05-11)
 
 
