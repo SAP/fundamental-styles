@@ -80,3 +80,21 @@ Some components also support the `condensed` mode, but if the component, under t
 </table>
 </body>
 ```
+If any element does not have the content density specifier class on it's own, then it will be inherited from the parent element and if it has one, any of it's children,
+on any level of nesting will have the same content density mode, if not specified otherwise.
+
+```html
+<body class="is-compact">
+    <div>
+        <div>
+            <button class="fd-button">Button is compact</button>
+        </div>
+        <div class="is-cozy">
+            <div>
+                <button class="fd-button">Button is cozy</button>
+            </div>
+            <button class="fd-button is-compact">This will be compact</button>
+        </div>
+    </div>
+</body>
+```
