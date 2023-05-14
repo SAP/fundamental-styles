@@ -3,7 +3,7 @@ import { addons } from '@storybook/addons';
 import { UPDATE_GLOBALS } from '@storybook/core-events';
 import { useContext, useEffect, useMemo, useState } from 'react';
 import { SAPContext } from '../contexts/SAPContext';
-import { directionalities } from 'fundamental-styles/configuration';
+import { contentDensities, directionalities } from 'fundamental-styles/configuration';
 import { getPackage } from 'fundamental-styles/utils';
 
 export const SAPContainer = ({children}) => {
@@ -21,6 +21,7 @@ export const SAPContainer = ({children}) => {
     const [storyPackage, setStoryPackage] = useState(getPackage(storyContext));
     const [themeValue, setThemeValue] = useState('');
     const [directionalityValue, setDirectionalityValue] = useState(params["directionality"]);
+    const [contentDensityValue, setContentDensityValue] = useState(params["contentDensity"]);
 
     useEffect(() => {
         setStoryPackage(getPackage(storyContext))
@@ -48,6 +49,11 @@ export const SAPContainer = ({children}) => {
         setThemeValue(theme);
     }
 
+    const setContentDensity = (contentDensity: string) => {
+        channel.emit(UPDATE_GLOBALS, {globals: {...storyContext.globals, contentDensity}});
+        setContentDensityValue(contentDensity);
+    }
+
     const setDirectionality = (directionality: string) => {
         channel.emit(UPDATE_GLOBALS, {globals: {...storyContext.globals, directionality}});
         setDirectionalityValue(directionality);
@@ -64,7 +70,10 @@ export const SAPContainer = ({children}) => {
                 setDirectionality,
                 selectedPackage: packageValue,
                 setPackage,
-                directionalities
+                contentDensity: contentDensityValue,
+                setContentDensity,
+                directionalities,
+                contentDensities
             }}
         >
             {children}

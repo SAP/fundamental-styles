@@ -3,6 +3,7 @@ export * from './lib/interfaces/package.config.interface';
 
 export * from './lib/decorators/themeProvider';
 export * from './lib/decorators/directionalityProvider';
+export * from './lib/decorators/contentDensity';
 
 export * from './lib/visual-stories';
 

@@ -1,8 +1,12 @@
-import {DocsContainer} from '@storybook/addon-docs';
-import { fundamentalTheme } from 'fundamental-styles/storybook';
-import {MainDocPage} from "./MainDocPage";
-import {directionalities} from "fundamental-styles/configuration";
-import {withDirectionality, withThemeProvider} from "fundamental-styles/storybook";
+import { DocsContainer } from '@storybook/addon-docs';
+import {
+    fundamentalTheme,
+    withContentDensity,
+    withDirectionality,
+    withThemeProvider
+} from 'fundamental-styles/storybook';
+import { MainDocPage } from './MainDocPage';
+import { contentDensities, directionalities } from 'fundamental-styles/configuration';
 import { Preview } from '@storybook/html';
 
 export default {
@@ -57,6 +61,9 @@ export default {
                     const match = SOURCE_REGEX.exec(src);
                     return match ? match[1] : src;
                 }
+            },
+            story: {
+                inline: true
             }
         },
         options: {
@@ -92,9 +99,20 @@ export default {
             defaultValue: 'ltr',
             toolbar: {
                 icon: 'paragraph',
-                items: directionalities
+                items: directionalities,
+                dynamicTitle: true
+            }
+        },
+        contentDensity: {
+            title: 'Content Density',
+            description: 'Content Density of components',
+            defaultValue: 'cozy',
+            toolbar: {
+                icon: 'zoom',
+                items: contentDensities,
+                dynamicTitle: true
             }
         }
     },
-    decorators: [withDirectionality, withThemeProvider]
+    decorators: [withDirectionality, withThemeProvider, withContentDensity]
 } as Preview;
