@@ -21,11 +21,9 @@
       bottom: 0.0625rem;
     }
 
-    --fdList_Item_Height: 2.75rem;
-
     height: var(--fdList_Item_Height);
-    border-bottom: var(--sapList_BorderWidth) solid var(--sapList_BorderColor);
-    background: var(--sapList_Background);
+    border-bottom: var(--sapList_BorderWidth) solid var(--fdList_Item_Border_Color);
+    background: var(--fdList_Item_Background_Color);
     position: relative;
 
     &--unread {
@@ -48,9 +46,10 @@
     &--action {
       padding: 0;
       text-align: center;
+      font-size: var(--sapFontSize);
       border-bottom: var(--fdList_Item_Action_Border);
 
-      --fdList_Item_Height: var(--fdList_Item_Action_Height);
+      --fdList_Item_Height: var(--sapElement_LineHeight);
 
       &:first-child {
         border-top: var(--fdList_Item_Action_Border);
@@ -83,18 +82,21 @@
     }
 
     &--growing {
+      --fdList_Item_Height: var(--sapElement_LineHeight);
+
       .#{$block}__title {
-        @include fd-flex-center();
+        @include fd-flex-center() {
+          gap: 0.5rem;
+        };
       }
 
       .#{$block}__title-text {
         @include fd-reset();
         @include fd-ellipsis();
-        @include fd-set-margin-left(0.5rem);
 
         color: inherit;
         text-shadow: inherit;
-        font-size: inherit;
+        font-size: var(--sapFontSize);
         font-weight: var(--fdList_Growing_Font_Weight);
       }
     }
@@ -118,14 +120,15 @@
     @include fd-ellipsis();
     @include fd-list-ie11-active-state-fix();
 
-    color: var(--sapList_TextColor);
+    color: var(--fdList_Item_Text_Color);
     pointer-events: all;
+    line-height: normal;
   }
 
   &__title {
     flex: 3 3 10%;
-    font-size: $fd-list-large-font-size;
-    min-height: $fd-list-normal-font-size;
+    font-size: var(--fdList_Item_Text_Font_Size);
+    min-height: var(--fdList_Item_Text_Font_Size);
 
     &:last-child:first-child {
       flex-basis: auto;
@@ -143,9 +146,26 @@
   &__secondary {
     @include fd-set-padding-left(1rem);
 
-    font-size: $fd-list-normal-font-size;
-    flex: 2 2 10%;
+    max-width: 40%;
     text-align: right;
+    font-size: var(--sapFontSize);
+    color: var(--fdList_Status_Text_Color);
+
+    &--positive {
+      --fdList_Status_Text_Color: var(--sapPositiveTextColor);
+    }
+
+    &--critical {
+      --fdList_Status_Text_Color: var(--sapCriticalTextColor);
+    }
+
+    &--negative {
+      --fdList_Status_Text_Color: var(--sapNegativeTextColor);
+    }
+
+    &--informative {
+      --fdList_Status_Text_Color: var(--sapInformativeTextColor);
+    }
 
     @include fd-rtl() {
       text-align: left;
@@ -157,8 +177,8 @@
       @include fd-list-ie11-active-state-fix();
       @include fd-flex-center();
 
-      color: var(--sapList_TextColor);
-      font-size: var(--sapFontHeader4Size);
+      color: var(--sapContent_NonInteractiveIconColor);
+      font-size: var(--fdList_Item_Icon_Font_Size);
       width: 2.75rem;
       flex: 0 0 auto;
 
@@ -174,24 +194,31 @@
     @include fd-list-fake-outline();
     @include fd-list-item-states();
 
+    --fdList_Item_Border_Color: transparent;
+
     text-decoration: none;
     width: 100%;
     height: 100%;
     padding: 0 $fd-list-item-padding-x;
+    border-bottom: var(--sapList_BorderWidth) solid var(--fdList_Item_Border_Color);
+    background: var(--fdList_Item_Background_Color);
     cursor: pointer;
   }
 
   &__group-header {
-    height: 2.75rem;
+    height: var(--sapElement_LineHeight);
     background: var(--sapList_GroupHeaderBackground);
     border-bottom: var(--sapList_BorderWidth) solid var(--sapList_GroupHeaderBorderColor);
-    color: var(--sapList_GroupHeaderTextColor);
     align-items: flex-end;
 
     .#{$block}__title {
-      font-size: $fd-list-normal-font-size;
+      @include fd-ellipsis();
+
       font-weight: bold;
       line-height: 2rem;
+      font-size: var(--sapFontHeader6Size);
+      font-family: var(--sapFontHeaderFamily);
+      color: var(--sapList_TableGroupHeaderTextColor);
     }
   }
 
@@ -226,21 +253,22 @@
     left: 0;
     height: 2rem;
     font-size: var(--sapFontSmallSize);
+    background-color: var(--fdList_Message_Background_Color);
 
     &--error {
-      background-color: var(--sapErrorBackground);
+      --fdList_Message_Background_Color: var(--sapErrorBackground);
     }
 
     &--warning {
-      background-color: var(--sapWarningBackground);
+      --fdList_Message_Background_Color: var(--sapWarningBackground);
     }
 
     &--success {
-      background-color: var(--sapSuccessBackground);
+      --fdList_Message_Background_Color: var(--sapSuccessBackground);
     }
 
     &--information {
-      background-color: var(--sapInformationBackground);
+      --fdList_Message_Background_Color: var(--sapInformationBackground);
     }
   }
 
@@ -250,26 +278,19 @@
 
   @include fd-compact-or-condensed() {
     &:not(.#{$objectListBlock}):not(.#{$messageViewList}) {
+      --fdList_Item_Icon_Font_Size: 1rem;
+      --fdList_Item_Text_Font_Size: var(--sapFontSize);
+      --fdList_Item_Height: var(--sapElement_Compact_LineHeight);
 
-      .#{$block}__item {
-        --fdList_Item_Height: 2rem;
+      .#{$block}__item--growing {
+        --fdList_Item_Height: var(--sapElement_LineHeight);
       }
 
       .#{$block}__item.#{$block}__item--action {
+        --fdList_Item_Height: var(--sapElement_Compact_LineHeight);
+
         .#{$block}__title {
           height: var(--fdList_Item_Action_Button_Size_Compact);
-        }
-      }
-
-      .#{$block}__title {
-        font-size: $fd-list-normal-font-size;
-        min-height: $fd-list-normal-font-size;
-        line-height: $fd-list-normal-font-size;
-      }
-
-      .#{$block}__icon {
-        @include fd-icon-selector() {
-          font-size: $fd-list-large-font-size;
         }
       }
     }

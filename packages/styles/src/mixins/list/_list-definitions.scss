@@ -1,6 +1,17 @@
 @import "../../new-settings";
 @import "../../mixins";
 
+:root {
+  --fdList_Item_Background_Color: var(--sapList_Background);
+  --fdList_Item_Text_Color: var(--sapList_TextColor);
+  --fdList_Item_Border_Color: var(--sapList_BorderColor);
+  --fdList_Item_Text_Font_Size: var(--sapFontLargeSize);
+  --fdList_Item_Icon_Font_Size: 1.125rem;
+  --fdList_Item_Height: var(--sapElement_LineHeight);
+  --fdList_Status_Text_Color: var(--sapNeutralTextColor);
+  --fdList_Message_Background_Color: var(--sapNeutralBackground);
+}
+
 $block: #{$fd-namespace}-list;
 
 $objectListBlock: #{$fd-namespace}-object-list;
@@ -77,8 +88,9 @@ $semantic-color: (
 }
 
 @mixin fd-list-item-base-selected-state() {
-  background: var(--sapList_SelectionBackgroundColor);
-  border-bottom: $fd-list-selected-state-border-bottom;
+  --fdList_Item_Background_Color: var(--sapList_SelectionBackgroundColor);
+  --fdList_Item_Text_Color: var(--sapList_TextColor);
+  --fdList_Item_Border_Color: var(--sapList_SelectionBorderColor);
 }
 
 @mixin fd-list-item-selected-state() {
@@ -88,27 +100,35 @@ $semantic-color: (
     background: inherit;
 
     @include fd-active() {
-      background: var(--sapList_Active_Background);
+      --fdList_Item_Background_Color: var(--sapList_Active_Background);
     }
   }
 
   @include fd-hover() {
-    background: var(--sapList_Hover_SelectionBackground);
+    --fdList_Item_Background_Color: var(--sapList_Hover_SelectionBackground);
   }
 }
 
 @mixin fd-list-item-base-active-state() {
-  background: var(--sapList_Active_Background);
+  --fdList_Item_Background_Color: var(--sapList_Active_Background);
+  --fdList_Item_Text_Color: var(--sapList_Active_TextColor);
+  --fdList_Item_Border_Color: var(--sapList_Active_Background);
 
   @include fd-hover() {
-    background: var(--sapList_Active_Background);
+    --fdList_Item_Background_Color: var(--sapList_Active_Background);
+    --fdList_Item_Text_Color: var(--sapList_Active_TextColor);
+    --fdList_Item_Border_Color: var(--sapList_Active_Background);
   }
 
   @include fd-selected() {
-    background: var(--sapList_Active_Background);
+    --fdList_Item_Background_Color: var(--sapList_Active_Background);
+    --fdList_Item_Text_Color: var(--sapList_Active_TextColor);
+    --fdList_Item_Border_Color: var(--sapList_Active_Background);
 
     @include fd-hover() {
-      background: var(--sapList_Active_Background);
+      --fdList_Item_Background_Color: var(--sapList_Active_Background);
+      --fdList_Item_Text_Color: var(--sapList_Active_TextColor);
+      --fdList_Item_Border_Color: var(--sapList_Active_Background);
     }
   }
 }
@@ -117,13 +137,14 @@ $semantic-color: (
   @include fd-list-item-base-active-state();
 
   @include fd-list-part-elements() {
-    color: var(--sapList_Active_TextColor);
     text-shadow: none;
   }
 }
 
 @mixin fd-list-item-hover-state() {
-  background: var(--sapList_Hover_Background);
+  --fdList_Item_Background_Color: var(--sapList_Hover_Background);
+  --fdList_Item_Text_Color: var(--sapList_TextColor);
+  --fdList_Item_Border_Color: var(--sapList_BorderColor);
 }
 
 @mixin fd-list-item-states() {

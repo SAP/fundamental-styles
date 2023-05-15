@@ -129,7 +129,7 @@ ActionList.parameters = {
     },
     description: {
       story: `
-Standard list items can display actions that users can choose from. To display actions, add the \`fd-list--action\` modifier class to the list elements.
+Standard list items can display actions that users can choose from. To display actions, add the \`fd-list__item--action\` modifier class to the list elements.
 `
     }
   }
@@ -142,7 +142,16 @@ SecondaryData.parameters = {
       iframeHeight: 210
     },
     description: {
-      story: `To display secondary data in standard list items, add the \`fd-list__secondary\` class within the list elements.
+      story: `To display secondary data in standard list items, add a span element with \`fd-list__secondary\` class within the list elements. The secondary data can also be a status message by adding the appropriate modifiers. 
+
+| **Status** | **Modifier class** |
+| :--------- | :---------- | 
+| Neutral | \`fd-list__secondary\` |
+| Positive | \`fd-list__secondary fd-list__secondary--positive\` |
+| Critical | \`fd-list__secondary fd-list__secondary--critical\` |
+| Negative | \`fd-list__secondary fd-list__secondary--negative\` |
+| Informative | \`fd-list__secondary fd-list__secondary--informative\` |
+
         `
     }
   }

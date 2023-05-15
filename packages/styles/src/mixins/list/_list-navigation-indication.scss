@@ -1,6 +1,6 @@
 @import "./list-definitions";
 
-$fd-list-navigation-indicator-width: 2.75rem !default;
+$fd-list-navigation-indicator-width: 2.5rem !default;
 
 .#{$block} {
   &--navigation-indication {
@@ -33,7 +33,7 @@ $fd-list-navigation-indicator-width: 2.75rem !default;
           font-family: "SAP-icons";
           content: '\e1ed';
           color: var(--sapContent_NonInteractiveIconColor);
-          font-size: var(--sapFontSmallSize);
+          font-size: var(--sapFontLargeSize);
           text-decoration: none;
           text-transform: none;
         }
