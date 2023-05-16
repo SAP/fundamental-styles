@@ -1,3 +1,17 @@
+# [0.29.0-rc.33](https://github.com/SAP/fundamental-styles/compare/v0.29.0-rc.32...v0.29.0-rc.33) (2023-05-16)
+
+
+### Bug Fixes
+
+* **styles:** update List component to latest Horizon [ci visual] ([#4533](https://github.com/SAP/fundamental-styles/issues/4533)) ([6194142](https://github.com/SAP/fundamental-styles/commit/6194142733cc7eb798e1d23052d96f3e12dc3a33))
+
+
+### BREAKING CHANGES
+
+* **styles:** added modifier classes for status text (fd-list__secondary): fd-list__secondary fd-list__secondary--positive, fd-list__secondary fd-list__secondary--critical, fd-list__secondary fd-list__secondary--negative, fd-list__secondary fd-list__secondary--informative
+
+
+
 # [0.29.0-rc.32](https://github.com/SAP/fundamental-styles/compare/v0.29.0-rc.31...v0.29.0-rc.32) (2023-05-14)
 
 
