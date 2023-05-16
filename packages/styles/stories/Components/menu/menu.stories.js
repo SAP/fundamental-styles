@@ -5,12 +5,17 @@ import seperatedItemsExampleHtml from "./seperated-items.example.html?raw";
 import mobileCozyModeExampleHtml from "./mobile-cozy-mode.example.html?raw";
 import desktopAndTabletOverflowExampleHtml from "./desktop-and-tablet-overflow.example.html?raw";
 import desktopAndTabletExampleHtml from "./desktop-and-tablet.example.html?raw";
+import segmentedButtonExampleHtml from "./segmented-button.example.html?raw";
+import toggleButtonExampleHtml from "./toggle-button.example.html?raw";
+import inputExampleHtml from "./input.example.html?raw";
+import buttonsExampleHtml from "./buttons.example.html?raw";
 import '../../../src/bar.scss';
 import '../../../src/button.scss';
 import '../../../src/dialog.scss';
 import '../../../src/icon.scss';
 import '../../../src/menu.scss';
 import '../../../src/title.scss';
+import '../../../src/input.scss';
 export default {
   title: 'Components/Menu',
   parameters: {
@@ -65,7 +70,7 @@ SeperatedItems.parameters = {
       iframeHeight: 300
     },
     description: {
-      story: 'To add separators between the items, use the class `fd-menu__separator` in its own `<span>` after the `<li>` item where you want the separation.'
+      story: `Separators can be added between Menu Items by adding the \`has-separator\` class to the element with class \`fd-menu__item\`. The separator will appear under this item.`
     }
   }
 };
@@ -122,6 +127,67 @@ For a submenu, do the following:
 - Create an addon indicating submenu level using \`fd-menu__addon-after--submenu\` class and an icon.
 - After the end of the \`fd-menu__link\` container, use \`fd-menu__sublist\` class in its own \`<ul>\`
 - Follow the same template for submenu as you would for a normal menu. The same \`fd-menu__item\` and \`fd-menu__link\` works for the subitems too.
+`
+    }
+  }
+};
+export const SegmentedButton = () => segmentedButtonExampleHtml;
+SegmentedButton.storyName = 'Extended Menu List Items (Segmented Button)';
+SegmentedButton.parameters = {
+  docs: {
+    story: {
+      iframeHeight: 400
+    },
+    description: {
+      story: `Each view of the segmented button gets its own menu item. The selected Button in the Segmented Button gets the Active Dot in front of the Menu List Item and is always separated with a separator.
+      The ‘segmented button menu items’ cannot have an icon in front. Instead, the place is reserved for the Active Dot.
+`
+    }
+  }
+};
+
+export const ToggleButton = () => toggleButtonExampleHtml;
+ToggleButton.storyName = 'Extended Menu List Items (Toggle Button)';
+ToggleButton.parameters = {
+  docs: {
+    story: {
+      iframeHeight: 400
+    },
+    description: {
+      story: `The toggle button gets “transformed” into a menu item which can be toggled and untoggled. If the toggle button is toggled, then a checkmark appears in front of the text (on position of an icon).
+      If it’s not toggled, then the space is empty.
+      It is not possible to show an icon for the toggle button in the menu. This spot is reserved for the checkmark.
+`
+    }
+  }
+};
+
+export const Input = () => inputExampleHtml;
+Input.storyName = 'Extended Menu List Items (Input)';
+Input.parameters = {
+  docs: {
+    story: {
+      iframeHeight: 400
+    },
+    description: {
+      story: `An Input field can be placed in a menu item.
+      When an input is placed in a menu item, the text serves as a label. 
+      When there is enough space on desktop-based devices, then the input field is positioned next to the text. If there’s not enough space, it moves to the next line. 
+      The input field is always positioned below the label on mobile devices.
+`
+    }
+  }
+};
+
+export const Buttons = () => buttonsExampleHtml;
+Buttons.storyName = 'Extended Menu List Items (Buttons as Menu Items)';
+Buttons.parameters = {
+  docs: {
+    story: {
+      iframeHeight: 400
+    },
+    description: {
+      story: `The buttons are “transformed” into menu items. It is optional to add an icon and those could be replaced by product teams.
 `
     }
   }

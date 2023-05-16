@@ -1,3 +1,9 @@
 :root {
   --fdMenu_Active_State_Focus: var(--sapContent_FocusColor);
+  --fdMenu_Affordance_Arrow_Size: 1rem;
+  --fdMenu_Shortcut_Color_Regular: var(--sapContent_LabelColor);
+  --fdMenu_Shortcut_Color_Active: var(--sapContent_LabelColor);
+  --fdMenu_Shortcut_Color_Selected: var(--sapContent_LabelColor);
+  --fdMenu_Shortcut_Color_Selected_Hover: var(--sapContent_LabelColor);
+  --fdMenu_Text_Color_Active: var(--sapList_TextColor);
 }
