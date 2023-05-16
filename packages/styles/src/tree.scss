@@ -58,7 +58,8 @@ $fd-tree-item-selected-border-bottom: var(--sapList_BorderWidth) solid var(--sap
         border-bottom: var(--sapList_BorderWidth) solid var(--sapList_BorderColor);
 
         @include fd-selected() {
-          @include fd-list-item-base-selected-state();
+          background: var(--sapList_SelectionBackgroundColor);
+          border-bottom: var(--sapList_BorderWidth) solid var(--sapList_SelectionBorderColor);
         }
 
         &--active {
@@ -73,7 +74,8 @@ $fd-tree-item-selected-border-bottom: var(--sapList_BorderWidth) solid var(--sap
       @include fd-set-padding-right($fd-tree-item-padding-right);
 
       @include fd-selected() {
-        @include fd-list-item-base-selected-state();
+        background: var(--sapList_SelectionBackgroundColor);
+        border-bottom: var(--sapList_BorderWidth) solid var(--sapList_SelectionBorderColor);
       }
 
       @include fd-navigated() {
