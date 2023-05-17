@@ -6,6 +6,7 @@ import draggableExampleHtml from "./draggable.example.html?raw";
 import resizableExampleHtml from "./resizable.example.html?raw";
 import sizesExampleHtml from "./sizes.example.html?raw";
 import defaultDialogExampleHtml from "./default-dialog.example.html?raw";
+import deviceSpecificationsExampleHtml from "./device-specifications.example.html?raw";
 import '../../../src/dialog.scss';
 import '../../../src/input-group.scss';
 import '../../../src/icon.scss';
@@ -178,21 +179,28 @@ Loading.parameters = {
     }
   }
 };
-export const HorizontalFormInDialog = () => horizontalFormInDialogExampleHtml;
-HorizontalFormInDialog.storyName = 'Horizontal Form';
-HorizontalFormInDialog.parameters = {
+export const HorizontalForm = () => horizontalFormInDialogExampleHtml;
+HorizontalForm.parameters = {
   docs: {
     description: {
       story: 'Horizontal Form displays all the components aligned horizontally. It is created by positioning the `fd-form-label` class and the `fd-input` class in the same row.'
     }
   }
 };
-export const VerticalFormInDialog = () => verticalFormInDialogExampleHtml;
-VerticalFormInDialog.storyName = 'Vertical Form';
-VerticalFormInDialog.parameters = {
+export const VerticalForm = () => verticalFormInDialogExampleHtml;
+VerticalForm.parameters = {
   docs: {
     description: {
       story: 'Verical Form displays all the components aligned vertically. It is created by positioning the `fd-form-label` class above the `fd-input` class in seperate rows.'
+    }
+  }
+};
+
+export const TabletAndHybridDeviceSpecification = () => deviceSpecificationsExampleHtml;
+TabletAndHybridDeviceSpecification.parameters = {
+  docs: {
+    description: {
+      story: 'To properly support resizing for all input methods, the optional resize handle is context-dependent. Depending on the device, a full screen button is also shown for touch interaction.'
     }
   }
 };
