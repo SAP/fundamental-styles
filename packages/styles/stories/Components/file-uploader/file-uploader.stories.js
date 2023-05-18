@@ -10,14 +10,13 @@ import '../../../src/input.scss';
 import '../../../src/object-status.scss';
 import '../../../src/message-strip.scss';
 import '../../../src/info-label.scss';
+
 export default {
   title: 'Components/File Uploader',
   parameters: {
     description: `
 The File Uploader component allows the user to select the files from the system to upload.
 It is an opinionated composition of the input and button components.
-
-##Usage
 
 ##Usage
 
