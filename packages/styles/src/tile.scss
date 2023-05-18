@@ -127,7 +127,7 @@ $fd-line-tile-badge-horizontal-spacing: 0.375rem !default;
   --fdGenericTileLineHeight: 1.625rem;
   --fdGenericTileTitleHorizontalSpacing: $fd-line-tile-title-horizontal-spacing;
 
-  @include fd-compact-and-condensed() {
+  @include fd-compact-or-condensed() {
     --fdGenericTileLineTileHeight: $fd-line-tile-height-compact;
     --fdGenericTileLineTileMaxHeight: $fd-line-tile-max-height-compact;
     --fdGenericTileLineHeight: 1.4375rem;
