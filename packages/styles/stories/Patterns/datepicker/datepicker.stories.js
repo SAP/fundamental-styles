@@ -2,7 +2,6 @@ import mobilePortraitExampleHtml from "./mobile-portrait.example.html?raw";
 import mobileLandscapeExampleHtml from "./mobile-landscape.example.html?raw";
 import todayNavigationButtonExampleHtml from "./today-navigation-button.example.html?raw";
 import todaySelectionButtonExampleHtml from "./today-selection-button.example.html?raw";
-import defaultAndCompactSizesExampleHtml from "./default-and-compact-sizes.example.html?raw";
 import '../../../src/calendar.scss';
 import '../../../src/input-group.scss';
 import '../../../src/popover.scss';
@@ -36,19 +35,6 @@ Use the **DatePicker** if:
 -    The user needs to navigate directly from one month or year to another.
       `,
     tags: ['f3', 'a11y', 'theme']
-  }
-};
-export const DefaultAndCompactSizes = () => defaultAndCompactSizesExampleHtml;
-DefaultAndCompactSizes.parameters = {
-  docs: {
-    story: {
-      iframeHeight: 500
-    },
-    description: {
-      story: `The date-picker component is a composition of the \`input-group\`, \`popover\` and \`calendar\` components.
-          It can be displayed in compact mode by adding the \`fd-input--compact\`, \`fd-button--compact\`, \`fd-calendar--compact\`
-          to the building blocks of the component.`
-    }
   }
 };
 export const TodaySelectionButton = () => todaySelectionButtonExampleHtml;

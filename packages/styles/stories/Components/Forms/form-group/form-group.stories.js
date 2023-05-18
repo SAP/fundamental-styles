@@ -1,8 +1,6 @@
 import groupHeaderInFormGridExampleHtml from "./group-header-in-form-grid.example.html?raw";
-import groupHeaderCompactExampleHtml from "./group-header-compact.example.html?raw";
 import groupHeaderExampleHtml from "./group-header.example.html?raw";
 import requiredExampleHtml from "./required.example.html?raw";
-import compactExampleHtml from "./compact.example.html?raw";
 import primaryExampleHtml from "./primary.example.html?raw";
 import '../../../../src/form-layout-grid.scss';
 import '../../../../src/form-group.scss';
@@ -32,16 +30,6 @@ The default form group component displays an inline label and an input field tha
     }
   }
 };
-export const Compact = () => compactExampleHtml;
-Compact.parameters = {
-  docs: {
-    description: {
-      story: `
-Form group can be displayed in compact mode, which is ideal for larger desktop screens. To display a compact form group, add the \`--compact\` modifier class to the \`fd-input\` element.
-`
-    }
-  }
-};
 export const Required = () => requiredExampleHtml;
 Required.parameters = {
   docs: {
@@ -60,17 +48,6 @@ GroupHeader.parameters = {
       story: `
 Form groups can be grouped together under a header with the \`fd-form-group__header\` class.
 `
-    }
-  }
-};
-export const GroupHeaderCompact = () => groupHeaderCompactExampleHtml;
-GroupHeaderCompact.storyName = 'Group header (compact)';
-GroupHeaderCompact.parameters = {
-  docs: {
-    description: {
-      story: `
-Form group headers can be displayed in compact mode. To display compact group headers, add the \`--compact\` modifier class to the \`fd-form-group__header\` element.
-        `
     }
   }
 };

@@ -1,11 +1,8 @@
 import semanticInlineExampleHtml from "./semantic-inline.example.html?raw";
 import semanticFilterModeExampleHtml from "./semantic-filter-mode.example.html?raw";
 import semanticModeExampleHtml from "./semantic-mode.example.html?raw";
-import compactFilterModeExampleHtml from "./compact-filter-mode.example.html?raw";
 import filterModeExampleHtml from "./filter-mode.example.html?raw";
-import compactProcessModeExampleHtml from "./compact-process-mode.example.html?raw";
 import processModeExampleHtml from "./process-mode.example.html?raw";
-import compactIconOnlyExampleHtml from "./compact-icon-only.example.html?raw";
 import iconOnlyExampleHtml from "./icon-only.example.html?raw";
 import navTabExampleHtml from "./nav-tab.example.html?raw";
 import tabWithCountersExampleHtml from "./tab-with-counters.example.html?raw";
@@ -110,19 +107,6 @@ IconOnly.parameters = {
     }
   }
 };
-export const CompactIconOnly = () => compactIconOnlyExampleHtml;
-CompactIconOnly.storyName = 'Icon (compact)';
-CompactIconOnly.parameters = {
-  docs: {
-    story: {
-      iframeHeight: 300
-    },
-    description: {
-      story: `Tabs can be displayed with icons in compact mode. To display compact tabs, add the \`fd-tabs--compact\` modifier class to the main element. See example above on how to display icon tabs.
-    `
-    }
-  }
-};
 export const ProcessMode = () => processModeExampleHtml;
 ProcessMode.storyName = 'Process mode';
 ProcessMode.parameters = {
@@ -136,19 +120,6 @@ ProcessMode.parameters = {
     }
   }
 };
-export const CompactProcessMode = () => compactProcessModeExampleHtml;
-CompactProcessMode.storyName = 'Process mode (compact)';
-CompactProcessMode.parameters = {
-  docs: {
-    story: {
-      iframeHeight: 300
-    },
-    description: {
-      story: `Tabs can be displayed in subsequent steps while in compact mode. To display compact tabs in process mode, add the \`fd-tabs--process\` and \`fd-tabs--compact\` modifier classes to the main element.
-    `
-    }
-  }
-};
 export const FilterMode = () => filterModeExampleHtml;
 FilterMode.storyName = 'Filter mode';
 FilterMode.parameters = {
@@ -158,19 +129,6 @@ FilterMode.parameters = {
     },
     description: {
       story: `Tabs can be displayed in filter mode, indicating to the user that a value has been filtered into separate tabs. To display tabs in filter mode, add the \`fd-tabs--filter\` modifier class to the main element.
-    `
-    }
-  }
-};
-export const CompactFilterMode = () => compactFilterModeExampleHtml;
-CompactFilterMode.storyName = 'Filter mode (compact)';
-CompactFilterMode.parameters = {
-  docs: {
-    story: {
-      iframeHeight: 300
-    },
-    description: {
-      story: `Tabs can be displayed in compact mode while in filter mode. To display compact tabs in filter mode, add the \`fd-tabs--filter\` and \`fd-tabs--compact\` modifier classes to the main element.
     `
     }
   }

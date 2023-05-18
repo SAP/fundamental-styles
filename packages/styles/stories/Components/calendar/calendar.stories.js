@@ -1,6 +1,5 @@
 import portraitMobileExampleHtml from "./portrait-mobile.example.html?raw";
 import landscapeMobileExampleHtml from "./landscape-mobile.example.html?raw";
-import compactExampleHtml from "./compact.example.html?raw";
 import yearsExampleHtml from "./years.example.html?raw";
 import monthsExampleHtml from "./months.example.html?raw";
 import daysExampleHtml from "./days.example.html?raw";
@@ -166,17 +165,6 @@ Years.parameters = {
     },
     description: {
       story: 'The calendar component can display a range of years in various ways: short-term, long-term, year ranges etc. Add the `fd-calendar__content--years` class to the container element, and adjust the number of columns, rows, and content to fit your use case.'
-    }
-  }
-};
-export const Compact = () => compactExampleHtml;
-Compact.parameters = {
-  docs: {
-    story: {
-      iframeHeight: 300
-    },
-    description: {
-      story: 'The calendar component can be displayed in compact mode by adding the `fd-calendar--compact` class to the container element.'
     }
   }
 };

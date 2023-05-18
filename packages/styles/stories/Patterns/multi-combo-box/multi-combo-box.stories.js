@@ -6,7 +6,6 @@ import readOnlyAndDisabledExampleHtml from "./read-only-and-disabled.example.htm
 import matchPopoverBodySizeExampleHtml from "./match-popover-body-size.example.html?raw";
 import groupingExampleHtml from "./grouping.example.html?raw";
 import asFormItemExampleHtml from "./as-form-item.example.html?raw";
-import cozyAndCompactExampleHtml from "./cozy-and-compact.example.html?raw";
 import '../../../src/form-label.scss';
 import '../../../src/popover.scss';
 import '../../../src/radio.scss';
@@ -47,17 +46,6 @@ Users can also enter custom values if the entries are not validated by the appli
 `,
     tags: ['f3', 'a11y', 'theme'],
     components: ['form-label', 'popover', 'radio', 'title', 'token', 'input-group', 'checkbox', 'list', 'button', 'icon', 'tokenizer', 'dialog', 'bar', 'input', 'layout-grid', 'link']
-  }
-};
-export const CozyAndCompact = () => cozyAndCompactExampleHtml;
-CozyAndCompact.parameters = {
-  docs: {
-    description: {
-      story: `
-            The multi-combo box component is  composition of the \`input group\`, \`popover\`, \`checkbox\`, \`list\` and \`token\` components. It can be displayed in compact mode by adding
-            the \`--compact\` modifier class to the building blocks of the components.
-`
-    }
   }
 };
 export const AsFormItem = () => asFormItemExampleHtml;

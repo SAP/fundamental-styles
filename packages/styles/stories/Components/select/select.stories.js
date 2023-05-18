@@ -11,7 +11,6 @@ import twoColumnExampleHtml from "./two-column.example.html?raw";
 import asFormItemExampleHtml from "./as-form-item.example.html?raw";
 import semanticStatesExampleHtml from "./semantic-states.example.html?raw";
 import mobileModeExampleHtml from "./mobile-mode.example.html?raw";
-import compactExampleHtml from "./compact.example.html?raw";
 import cozyExampleHtml from "./cozy.example.html?raw";
 import '../../../src/icon.scss';
 import '../../../src/popover.scss';
@@ -55,19 +54,6 @@ Cozy.parameters = {
     description: {
       story: `
 Select displays a predefined option and a button that triggers a dropdown menu to view more options (list items). By default, it is displayed in cozy mode.
-        `
-    }
-  }
-};
-export const Compact = () => compactExampleHtml;
-Compact.parameters = {
-  docs: {
-    story: {
-      iframeHeight: 500
-    },
-    description: {
-      story: `
-When in compact mode, select displays a dropdown menu that can contain long list items with text that wraps to the next line. The maximum width should be 37.5rem (600px) to avoid readability issues, unless the list contains more than 2 columns. If the list has 3 or more columns, the dropdown menu should not be limited to a max width. To display select in compact mode, add \`fd-select--compact\` to the main element.
         `
     }
   }

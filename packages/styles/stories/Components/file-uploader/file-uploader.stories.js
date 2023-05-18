@@ -1,6 +1,5 @@
 import fileUploaderWithFilesExampleHtml from "./file-uploader-with-files.example.html?raw";
 import statusExampleHtml from "./status.example.html?raw";
-import compactExampleHtml from "./compact.example.html?raw";
 import selectedExampleHtml from "./selected.example.html?raw";
 import primaryExampleHtml from "./primary.example.html?raw";
 import '../../../src/button.scss';
@@ -52,17 +51,6 @@ Selected.parameters = {
     },
     description: {
       story: 'Once the user selects files, update the input and the hidden div to include the file names. The hidden div will announce the file names only once when the value changes.'
-    }
-  }
-};
-export const Compact = () => compactExampleHtml;
-Compact.parameters = {
-  docs: {
-    story: {
-      iframeHeight: 250
-    },
-    description: {
-      story: 'For compact File Uploader apply the `--compact` modifier to the button and input elements.'
     }
   }
 };

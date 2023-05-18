@@ -1,12 +1,9 @@
 import nestedListPopoverExampleHtml from "./nested-list-popover.example.html?raw";
 import nestedListWithoutLinksExampleHtml from "./nested-list-without-links.example.html?raw";
-import nestedListWithGroupHeadersCompactModeExampleHtml from "./nested-list-with-group-headers-compact-mode.example.html?raw";
 import nestedListWithGroupHeadersExampleHtml from "./nested-list-with-group-headers.example.html?raw";
 import nestedListWithIconsOnlyInFirstLevelExampleHtml from "./nested-list-with-icons-only-in-first-level.example.html?raw";
 import nestedListWithoutIconsExampleHtml from "./nested-list-without-icons.example.html?raw";
-import condensedStateCompactExampleHtml from "./condensed-state-compact.example.html?raw";
 import condensedStateCozyExampleHtml from "./condensed-state-cozy.example.html?raw";
-import complexCompactSideNavExampleHtml from "./complex-compact-side-nav.example.html?raw";
 import complexCozySideNavExampleHtml from "./complex-cozy-side-nav.example.html?raw";
 import cozyGroupingExampleHtml from "./cozy-grouping.example.html?raw";
 import cozyIconsExampleHtml from "./cozy-icons.example.html?raw";
@@ -110,20 +107,6 @@ Side navigation can display several different features such as icons, group head
     }
   }
 };
-export const ComplexCompactSideNav = () => complexCompactSideNavExampleHtml;
-ComplexCompactSideNav.storyName = 'Complex (compact)';
-ComplexCompactSideNav.parameters = {
-  docs: {
-    story: {
-      iframeHeight: 550
-    },
-    description: {
-      story: `
-Side navigation can be displayed in compact mode and can also display several features like icons, group headers, and two levels of navigation. Compact mode is best viewed from a large desktop screen. To display a complex side navigation in compact mode, add the \`fd-nested-list--compact\` modifier class to the nested list element.
-        `
-    }
-  }
-};
 export const CondensedStateCozy = () => condensedStateCozyExampleHtml;
 CondensedStateCozy.storyName = 'Condensed';
 CondensedStateCozy.parameters = {
@@ -136,21 +119,6 @@ CondensedStateCozy.parameters = {
 Side navigation can be displayed in a condensed state, showing only icons that represent the navigation entries. When the user selects an entry from the navigation, a **Popover** is displayed. The default size for the popover body is often longer than the text length. However, the length can be adjusted to match the text length by adding the \`fd-popover__body--dropdown-fill\` class to the \`fd-popover__body\` element.
 <br><br>To display a condensed side navigation, add the \`fd-side-nav--condensed\` modifier class to the main element.
         `
-    }
-  }
-};
-export const CondensedStateCompact = () => condensedStateCompactExampleHtml;
-CondensedStateCompact.storyName = 'Condensed (compact)';
-CondensedStateCompact.parameters = {
-  docs: {
-    story: {
-      iframeHeight: 500
-    },
-    description: {
-      story: `
-Side navigation can be displayed in a condensed state, showing only icons that represent the navigation entries. Like the previous example, the default size for the popover body is often longer than the text length, and can be adjusted by adding the \`fd-popover__body--dropdown-fill\` class to the \`fd-popover__body\` element.
-<br><br>To display a condensed side navigation in compact mode, add the \` fd-side-nav--condensed\` modifier class to the main element and the \`fd-nested-list--compact\` modifier class to the nested list element.
-`
     }
   }
 };
@@ -168,12 +136,6 @@ NestedListWithIconsOnlyInFirstLevel.parameters = {
 };
 export const NestedListWithGroupHeaders = () => nestedListWithGroupHeadersExampleHtml;
 NestedListWithGroupHeaders.parameters = {
-  docs: {
-    disable: true
-  }
-};
-export const NestedListWithGroupHeadersCompactMode = () => nestedListWithGroupHeadersCompactModeExampleHtml;
-NestedListWithGroupHeadersCompactMode.parameters = {
   docs: {
     disable: true
   }

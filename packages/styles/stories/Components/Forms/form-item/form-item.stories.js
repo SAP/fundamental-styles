@@ -1,5 +1,4 @@
 import requiredExampleHtml from "./required.example.html?raw";
-import compactExampleHtml from "./compact.example.html?raw";
 import primaryExampleHtml from "./primary.example.html?raw";
 import '../../../../src/form-item.scss';
 import '../../../../src/form-label.scss';
@@ -19,15 +18,6 @@ Primary.parameters = {
   docs: {
     description: {
       story: `The default form item displays a label placed above an empty input field with placeholder text that can be replaced with regular text.
-        `
-    }
-  }
-};
-export const Compact = () => compactExampleHtml;
-Compact.parameters = {
-  docs: {
-    description: {
-      story: `Form items can be displayed in compact mode by adding the \`--compact\` modifier class to the \`fd-input\` element.
         `
     }
   }

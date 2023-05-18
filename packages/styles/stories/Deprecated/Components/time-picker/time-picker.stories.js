@@ -1,5 +1,4 @@
 import tabletModeExampleHtml from "./tablet-mode.example.html?raw";
-import cozyAndCompactModeExampleHtml from "./cozy-and-compact-mode.example.html?raw";
 import '../../../../src/popover.scss';
 import '../../../../src/input.scss';
 import '../../../../src/input-group.scss';
@@ -26,18 +25,6 @@ export default {
 
 `,
     tags: ['f3', 'a11y', 'theme']
-  }
-};
-export const CozyAndCompactMode = () => cozyAndCompactModeExampleHtml;
-CozyAndCompactMode.parameters = {
-  docs: {
-    story: {
-      iframeHeight: 580
-    },
-    description: {
-      story: `The time picker is  a composition of \`input-group\`, \`popover\`, and \`time\` components to create a time selection interaction.
-It can be displayed in compact mode by adding the \`fd-input--compact\`, \`fd-button--compact\` and \`fd-time--compact\` modifier classes to the building blocks of the component. AM and PM locale-dependent can be set with the property \`localeId\`.`
-    }
   }
 };
 export const TabletMode = () => tabletModeExampleHtml;

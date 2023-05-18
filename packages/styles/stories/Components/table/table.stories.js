@@ -12,14 +12,12 @@ import contextualMenuExampleHtml from "./contextual-menu.example.html?raw";
 import advancedToolbarExampleHtml from "./advanced-toolbar.example.html?raw";
 import paginationExampleHtml from "./pagination.example.html?raw";
 import condensedCheckboxExampleHtml from "./condensed-checkbox.example.html?raw";
-import compactCheckboxExampleHtml from "./compact-checkbox.example.html?raw";
 import checkboxExampleHtml from "./checkbox.example.html?raw";
 import focusableCellsExampleHtml from "./focusable-cells.example.html?raw";
 import focusableRowsExampleHtml from "./focusable-rows.example.html?raw";
 import semanticRowsExampleHtml from "./semantic-rows.example.html?raw";
 import interactiveExampleHtml from "./interactive.example.html?raw";
 import condensedFooterExampleHtml from "./condensed-footer.example.html?raw";
-import compactFooterExampleHtml from "./compact-footer.example.html?raw";
 import footerExampleHtml from "./footer.example.html?raw";
 import noOuterBorderExampleHtml from "./no-outer-border.example.html?raw";
 import borderlessbodyExampleHtml from "./borderlessbody.example.html?raw";
@@ -147,17 +145,6 @@ Table can be displayed with a footer. To display a table footer, add the \`fd-ta
     }
   }
 };
-export const CompactFooter = () => compactFooterExampleHtml;
-CompactFooter.storyName = 'Footer (compact)';
-CompactFooter.parameters = {
-  docs: {
-    description: {
-      story: `
-Table can be displayed with a footer in compact mode, which is ideal for larger desktop screens. To display a compact table, add the \`fd-table--compact\` modifier class to the main element.
-    `
-    }
-  }
-};
 export const CondensedFooter = () => condensedFooterExampleHtml;
 CondensedFooter.storyName = 'Footer (condensed)';
 CondensedFooter.parameters = {
@@ -235,20 +222,6 @@ Table can display checkboxes to allow the user to perform bulk actions.
 To display checkboxes in table, add the \`fd-table__cell--checkbox\` modifier class to the appropriate cell.
 It is recommended to add the parameter \`aria-selected="true"\` to the row that is selected.
 Also recommended to add class \`fd-table__checkbox\` to the checkbox (input) and \`fd-table__checkbox-label\` class to the checkbox label to have appropriate styles.
-    `
-    }
-  }
-};
-export const CompactCheckbox = () => compactCheckboxExampleHtml;
-CompactCheckbox.storyName = 'Checkbox (compact)';
-CompactCheckbox.parameters = {
-  docs: {
-    description: {
-      story: `
-Table can be displayed with checkboxes in compact mode. To display checkboxes in table, add the \`fd-table__cell--checkbox\` modifier class to the appropriate cell. It is recommended to add the parameter \`aria-selected="true"\` to the row that is selected.
-
-
-To display the table in compact mode, add the \`fd-table--compact\` modifier class to the table element.
     `
     }
   }

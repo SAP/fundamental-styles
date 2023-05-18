@@ -1,7 +1,6 @@
 import transparentExampleHtml from "./transparent.example.html?raw";
 import borderlessExampleHtml from "./borderless.example.html?raw";
 import fixedHeightContentExampleHtml from "./fixed-height-content.example.html?raw";
-import compactExampleHtml from "./compact.example.html?raw";
 import expandableExampleHtml from "./expandable.example.html?raw";
 import fixedExampleHtml from "./fixed.example.html?raw";
 import '../../../src/button.scss';
@@ -54,18 +53,6 @@ Expandable.parameters = {
     },
     description: {
       story: `Expandable panels are much like fixed panels, except their content can be expanded and collapsed (including the info toolbar, if available).
-        `
-    }
-  }
-};
-export const Compact = () => compactExampleHtml;
-Compact.parameters = {
-  docs: {
-    story: {
-      iframeHeight: 200
-    },
-    description: {
-      story: `Panels can be displayed in compact mode, which decreases the padding and button sizes. To display a compact panel, add the \`fd-panel--compact\` modifier class to the main element.
         `
     }
   }

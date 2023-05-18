@@ -11,7 +11,6 @@ import filterExampleHtml from "./filter.example.html?raw";
 import processExampleHtml from "./process.example.html?raw";
 import iconExampleHtml from "./icon.example.html?raw";
 import iconOnlySemanticExampleHtml from "./icon-only-semantic.example.html?raw";
-import iconOnlyCompactExampleHtml from "./icon-only-compact.example.html?raw";
 import iconOnlyExampleHtml from "./icon-only.example.html?raw";
 import counterExampleHtml from "./counter.example.html?raw";
 import textOnlySemanticExampleHtml from "./text-only-semantic.example.html?raw";
@@ -100,15 +99,6 @@ IconOnly.parameters = {
   docs: {
     description: {
       story: 'The Icon tabs are rounded tabs that can be populated with any icon. The labels in this case are omitted and counters are optional. You need to apply the `fd-icon-tab-bar--icon-only` modifier class for this type of tabs.'
-    }
-  }
-};
-export const IconOnlyCompact = () => iconOnlyCompactExampleHtml;
-IconOnlyCompact.storyName = 'Icon Only in Compact Mode';
-IconOnlyCompact.parameters = {
-  docs: {
-    description: {
-      story: 'In compact mode you need to apply an additional modifier class `fd-icon-tab-bar--compact`.'
     }
   }
 };
