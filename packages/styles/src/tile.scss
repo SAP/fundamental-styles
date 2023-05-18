@@ -42,15 +42,9 @@ $fd-tile-close-button-offset: 0.5rem !default;
 $fd-tile-action-indicator-offset: 0.25rem !default;
 
 // LINE TILE
-$fd-line-tile-height: 2.25rem !default;
-$fd-line-tile-height-compact: 1.625rem !default;
-$fd-line-tile-max-height: 3.25rem !default;
-$fd-line-tile-max-height-compact: 2.875rem !default;
 $fd-line-tile-min-width: 2rem !default;
 $fd-line-tile-vertical-spacing: 0.125rem !default;
 $fd-line-tile-horizontal-spacing: 1.25rem !default;
-$fd-line-tile-title-horizontal-spacing: 0.625rem !default;
-$fd-line-tile-title-horizontal-spacing-compact: 0.5rem !default;
 $fd-line-tile-horizontal-padding: 0.5rem !default;
 $fd-line-tile-action-container-horizontal-spacing: 0.25rem !default;
 $fd-line-tile-badge-horizontal-spacing: 0.375rem !default;
@@ -122,16 +116,16 @@ $fd-line-tile-badge-horizontal-spacing: 0.375rem !default;
   @include fd-set-height($fd-tile-height);
   @include fd-set-width($fd-tile-width);
 
-  --fdGenericTileLineTileHeight: $fd-line-tile-height;
-  --fdGenericTileLineTileMaxHeight: $fd-line-tile-max-height;
+  --fdGenericTileLineTileHeight: 2.25rem;
+  --fdGenericTileLineTileMaxHeight: 3.25rem;
   --fdGenericTileLineHeight: 1.625rem;
-  --fdGenericTileTitleHorizontalSpacing: $fd-line-tile-title-horizontal-spacing;
+  --fdGenericTileTitleHorizontalSpacing: 0.625rem;
 
   @include fd-compact-or-condensed() {
-    --fdGenericTileLineTileHeight: $fd-line-tile-height-compact;
-    --fdGenericTileLineTileMaxHeight: $fd-line-tile-max-height-compact;
+    --fdGenericTileLineTileHeight: 1.625rem;
+    --fdGenericTileLineTileMaxHeight: 2.875rem;
     --fdGenericTileLineHeight: 1.4375rem;
-    --fdGenericTileTitleHorizontalSpacing: $fd-line-tile-title-horizontal-spacing-compact;
+    --fdGenericTileTitleHorizontalSpacing: 0.5rem;
   }
 
   position: relative;
