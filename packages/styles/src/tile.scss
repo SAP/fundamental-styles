@@ -122,6 +122,18 @@ $fd-line-tile-badge-horizontal-spacing: 0.375rem !default;
   @include fd-set-height($fd-tile-height);
   @include fd-set-width($fd-tile-width);
 
+  --fd-line-tile-height: $fd-line-tile-height;
+  --fd-line-tile-max-height: $fd-line-tile-max-height;
+  --fd-line-tile-line-height: 1.625rem;
+  --fd-line-tile-title-horizontal-spacing: $fd-line-tile-title-horizontal-spacing;
+
+  @include fd-compact-and-condensed() {
+    --fd-line-tile-height: $fd-line-tile-height-compact;
+    --fd-line-tile-max-height: $fd-line-tile-max-height-compact;
+    --fd-line-tile-line-height: 1.4375rem;
+    --fd-line-tile-title-horizontal-spacing: $fd-line-tile-title-horizontal-spacing-compact;
+  }
+
   position: relative;
   padding: $fd-tile-padding;
   background: var(--sapTile_Background);
@@ -719,11 +731,7 @@ $fd-line-tile-badge-horizontal-spacing: 0.375rem !default;
         flex-wrap: wrap;
         margin-right: 0;
         margin-left: 0;
-        max-height: $fd-line-tile-max-height;
-
-        &.#{$block}--compact {
-          max-height: $fd-line-tile-max-height-compact;
-        }
+        max-height: var(--fd-line-tile-max-height);
       }
 
       .#{$block}--action {
@@ -782,8 +790,8 @@ $fd-line-tile-badge-horizontal-spacing: 0.375rem !default;
       justify-content: space-between;
     }
 
-    min-height: $fd-line-tile-height;
-    max-height: $fd-line-tile-height;
+    min-height: var(--fd-line-tile-height);
+    max-height: var(--fd-line-tile-height);
     height: 100%;
     min-width: $fd-line-tile-min-width;
     max-width: 100%;
@@ -837,40 +845,21 @@ $fd-line-tile-badge-horizontal-spacing: 0.375rem !default;
       font-size: var(--sapFontSize);
       text-shadow: var(--sapContent_TextShadow);
       color: var(--sapTile_TextColor);
-      line-height: 1.625rem;
+      line-height: var(--fd-line-tile-line-height);
       min-width: $fd-line-tile-min-width;
     }
 
     .#{$block}__title {
       @include fd-ellipsis();
 
-      margin-right: $fd-line-tile-title-horizontal-spacing;
+      margin-right: var(--fd-line-tile-title-horizontal-spacing);
       color: var(--sapButton_TextColor);
       display: inline;
       -webkit-line-clamp: initial;
 
       @include fd-rtl() {
         margin-right: 0;
-        margin-left: $fd-line-tile-title-horizontal-spacing;
-      }
-    }
-
-    &.#{$block}--compact {
-      min-height: $fd-line-tile-height-compact;
-      max-height: $fd-line-tile-height-compact;
-
-      .#{$block}__title,
-      .#{$block}__subtitle {
-        line-height: 1.4375rem;
-      }
-
-      .#{$block}__title {
-        margin-right: $fd-line-tile-title-horizontal-spacing-compact;
-
-        @include fd-rtl() {
-          margin-right: 0;
-          margin-left: $fd-line-tile-title-horizontal-spacing-compact;
-        }
+        margin-left: var(--fd-line-tile-title-horizontal-spacing);
       }
     }
 
