@@ -77,7 +77,7 @@ SemanticStates.storyName = 'States';
 SemanticStates.parameters = {
   docs: {
     story: {
-      iframeHeight: 300
+      iframeHeight: 350
     },
     description: {
       story: `
