@@ -72,7 +72,7 @@
         }
 
         .#{$block}__expand {
-          width: var(--fdTable_Header_Cell_Height);
+          min-width: var(--fdTable_Header_Cell_Height);
           height: var(--fdTable_Cell_Height);
           color: var(--sapContent_IconColor);
           font-size: var(--sapFontSmallSize);
