@@ -2,6 +2,9 @@ import withSubmenuExampleHtml from "./with-submenu.example.html?raw";
 import menuIconExampleHtml from "./menu-icon.example.html?raw";
 import differentStatesExampleHtml from "./different-states.example.html?raw";
 import seperatedItemsExampleHtml from "./seperated-items.example.html?raw";
+import mobileModeExampleHtml from "./mobile-mode.example.html?raw";
+import overflowExampleHtml from "./overflow.example.html?raw";
+import defaultExampleHtml from "./default.example.html?raw";
 import mobileCozyModeExampleHtml from "./mobile-cozy-mode.example.html?raw";
 import desktopAndTabletOverflowExampleHtml from "./desktop-and-tablet-overflow.example.html?raw";
 import desktopAndTabletExampleHtml from "./desktop-and-tablet.example.html?raw";
@@ -27,21 +30,21 @@ Commonly used as the contents when composing "dropdowns", "contextual menus", et
 `
   }
 };
-export const DesktopAndTablet = () => desktopAndTabletExampleHtml;
-DesktopAndTablet.storyName = 'Desktop and Tablet Modes';
-DesktopAndTablet.parameters = {
+export const Default = () => defaultExampleHtml;
+Default.parameters = {
   docs: {
     story: {
       iframeHeight: 300
     },
     description: {
-      story: 'The basic stucture of a menu. Place the menu item title in a `<span>` tag using class `fd-menu__title` and wrap it in the `fd-menu__link` and `fd-menu__item` classes as shown. Default mode is the cozy tablet mode, no class has to be added for this. Use class modifier`fd-menu--compact` on menu container level for desktop mode.'
+      story: `The basic structure of a menu. Place the menu item title in a \`<span>\` tag using class \`fd-menu__title\` and wrap it in the \`fd-menu__link\` and \`fd-menu__item\` classes as shown.
+               <br><b>Note:</b>Use compact menus for the Desktop and use cozy for the Tablet mode.`
     }
   }
 };
-export const DesktopAndTabletOverflow = () => desktopAndTabletOverflowExampleHtml;
-DesktopAndTabletOverflow.storyName = 'Desktop and Tablet Modes with vertical overflow';
-DesktopAndTabletOverflow.parameters = {
+export const Overflow = () => overflowExampleHtml;
+Overflow.storyName = 'Vertical overflow';
+Overflow.parameters = {
   docs: {
     story: {
       iframeHeight: 300
@@ -51,14 +54,14 @@ DesktopAndTabletOverflow.parameters = {
     }
   }
 };
-export const MobileCozyMode = () => mobileCozyModeExampleHtml;
-MobileCozyMode.parameters = {
+export const MobileMode = () => mobileModeExampleHtml;
+MobileMode.parameters = {
   docs: {
     story: {
       iframeHeight: 300
     },
     description: {
-      story: 'The basic stucture of a menu in mobile where it opens as a dialog. Use class `fd-menu--mobile` on menu container level. Example shows the parent menu\'s item in active state to simulate a pressed/touched event. Submenu appears in its own fullscreen dialog in mobile devices. The device\'s back button takes one back to the parent menu fullscreen dialog.'
+      story: 'The basic structure of a menu in mobile where it opens as a dialog. Use class `fd-menu--mobile` on menu container level. Example shows the parent menu\'s item in active state to simulate a pressed/touched event. Submenu appears in its own fullscreen dialog in mobile devices. The device\'s back button takes one back to the parent menu fullscreen dialog.'
     }
   }
 };
