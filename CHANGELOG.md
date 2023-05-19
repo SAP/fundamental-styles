@@ -1,3 +1,12 @@
+# [0.29.0-rc.34](https://github.com/SAP/fundamental-styles/compare/v0.29.0-rc.33...v0.29.0-rc.34) (2023-05-19)
+
+
+### Bug Fixes
+
+* fixed generic tile compact mode ([#4537](https://github.com/SAP/fundamental-styles/issues/4537)) ([d0a56cb](https://github.com/SAP/fundamental-styles/commit/d0a56cb4abb257461388eac96429913b44f3a416))
+
+
+
 # [0.29.0-rc.33](https://github.com/SAP/fundamental-styles/compare/v0.29.0-rc.32...v0.29.0-rc.33) (2023-05-16)
 
 
