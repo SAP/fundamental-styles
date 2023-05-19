@@ -1,3 +1,12 @@
+# [0.29.0-rc.35](https://github.com/SAP/fundamental-styles/compare/v0.29.0-rc.34...v0.29.0-rc.35) (2023-05-19)
+
+
+### Bug Fixes
+
+* **styles:** bug where cell with expand icon and ellipses would not size properly [ci visual] ([#4538](https://github.com/SAP/fundamental-styles/issues/4538)) ([0c5a467](https://github.com/SAP/fundamental-styles/commit/0c5a4677ceea823d0e607a0b982c5ca8ab9cedfe))
+
+
+
 # [0.29.0-rc.34](https://github.com/SAP/fundamental-styles/compare/v0.29.0-rc.33...v0.29.0-rc.34) (2023-05-19)
 
 
