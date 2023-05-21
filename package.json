@@ -64,7 +64,7 @@
     "@nrwl/js": "15.8.7",
     "@nrwl/linter": "15.8.7",
     "@nrwl/nx-cloud": "16.0.4",
-    "@nrwl/nx-plugin": "15.8.7",
+    "@nrwl/nx-plugin": "16.2.1",
     "@nrwl/react": "15.8.7",
     "@nrwl/web": "15.8.7",
     "@sap-theming/theming-base-content": "11.3.2",
