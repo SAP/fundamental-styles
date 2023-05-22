@@ -25,7 +25,6 @@ Do not use the text area if
   }
 };
 export const Primary = () => primaryExampleHtml;
-Primary.storyName = 'Content Density - cozy and compact';
 Primary.parameters = {
   docs: {
     iframeHeight: 250
@@ -38,7 +37,7 @@ Counter.parameters = {
       iframeHeight: 150
     },
     description: {
-      story: 'A checkbox can appear in two different sizes. In `cozy` mode, it is bigger than it is in `compact` mode. This makes the checkbox easier to select on touch devices.'
+      story: 'Textarea can have a counter to display the number of characters entered or left to type. The counter is displayed below the textarea.'
     }
   }
 };
@@ -47,9 +46,6 @@ DisabledAndReadOnly.parameters = {
   docs: {
     story: {
       iframeHeight: 200
-    },
-    description: {
-      story: 'A checkbox can appear in two different sizes. In `cozy` mode, it is bigger than it is in `compact` mode. This makes the checkbox easier to select on touch devices.'
     }
   }
 };
