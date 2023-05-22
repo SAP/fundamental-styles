@@ -39,74 +39,6 @@ const localStyles = `
     }
 </style>
 `;
-export const Desktop = () => `
-${localStyles}
-<fieldset class="fd-fieldset">
-    <legend class="fd-fieldset__legend">Desktop (compact) checkboxes</legend>
-    <div class="fd-form-group">
-        <div class="fd-form-item">
-            <input type="checkbox" class="fd-checkbox fd-checkbox--compact" id="Ai4ez611c">
-            <label class="fd-checkbox__label" for="Ai4ez611c">
-                <div class="fd-checkbox__label-container">
-                    <span class="fd-checkbox__text">Apple</span>
-                </div>
-            </label>
-        </div>
-        <div class="fd-form-item">
-            <input type="checkbox" class="fd-checkbox fd-checkbox--compact" id="Ai4ez612c" checked>
-            <label class="fd-checkbox__label" for="Ai4ez612c">
-                <div class="fd-checkbox__label-container">
-                    <span class="fd-checkbox__text">Banana</span>
-                </div>
-            </label>
-        </div>
-        <div class="fd-form-item">
-            <input type="checkbox" class="fd-checkbox fd-checkbox--compact" id="Ai4ez622c" disabled>
-            <label class="fd-checkbox__label" for="Ai4ez622c">
-                <div class="fd-checkbox__label-container">
-                    <span class="fd-checkbox__text">Kiwi</span>
-                </div>
-            </label>
-        </div>
-        <div class="fd-form-item">
-            <input type="checkbox" class="fd-checkbox fd-checkbox--compact" id="Ai4ez632c"  checked disabled>
-            <label class="fd-checkbox__label" for="Ai4ez632c">
-                <div class="fd-checkbox__label-container">
-                    <span class="fd-checkbox__text">Lemon</span>
-                </div>
-            </label>
-        </div>
-        <div class="fd-form-item">
-            <input type="checkbox" class="fd-checkbox fd-checkbox--compact" id="Ai4ez613c">
-            <label class="fd-checkbox__label" for="Ai4ez613c">
-                <div class="fd-checkbox__label-container">
-                    <span class="fd-checkbox__text">All Fruits (TriState)</span>
-                </div>
-            </label>
-        </div>
-        <div class="fd-form-item">
-            <input type="checkbox" class="fd-checkbox fd-checkbox--compact" id="Ai4ez643c" disabled>
-            <label class="fd-checkbox__label" for="Ai4ez643c">
-                <div class="fd-checkbox__label-container">
-                    <span class="fd-checkbox__text">All Fruits (TriState)</span>
-                </div>
-            </label>
-        </div>
-    </div>
-</fieldset>
-`;
-Desktop.parameters = {
-  docs: {
-    story: {
-      iframeHeight: 330
-    },
-    description: {
-      story: `A checkbox can be displayed in two different sizes desktop (compact) and mobile (default).
-On desktop screens, the checkbox appears smaller and uses the \`fd-checkbox__label--compact\` modifier class.
-        `
-    }
-  }
-};
 export const Required = () => requiredExampleHtml;
 Required.parameters = {
   docs: {
@@ -119,10 +51,10 @@ Required.parameters = {
     }
   }
 };
-export const Mobile = () => `
+export const Default = () => `
 ${localStyles}
 <fieldset class="fd-fieldset">
-    <legend class="fd-fieldset__legend">Mobile checkboxes</legend>
+    <legend class="fd-fieldset__legend">Checkbox</legend>
     <div class="fd-form-group">
         <div class="fd-form-item">
             <input type="checkbox" class="fd-checkbox" id="Ai4ez611">
@@ -175,15 +107,11 @@ ${localStyles}
     </div>
 </fieldset>
 `;
-Mobile.parameters = {
+Default.parameters = {
   docs: {
     story: {
       iframeHeight: 330
     },
-    description: {
-      story: `A checkbox can display larger so users can easily select options on a mobile screen. This is considered the default size for checkbox.
-        `
-    }
   }
 };
 export const Inline = () => inlineExampleHtml;
