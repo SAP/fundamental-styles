@@ -3,6 +3,7 @@ import revertedStepsExampleHtml from "./reverted-steps.example.html?raw";
 import responsiveExampleHtml from "./responsive.example.html?raw";
 import customizedExampleHtml from "./customized.example.html?raw";
 import defaultExampleExampleHtml from "./default-example.example.html?raw";
+import description from "./wizard.md?raw";
 import '../../../src/button.scss';
 import '../../../src/icon.scss';
 import '../../../src/bar.scss';
@@ -12,95 +13,7 @@ import '../../../src/wizard.scss';
 export default {
   title: 'Components/Wizard',
   parameters: {
-    description: `The wizard guides a user through a long or unfamiliar task by dividing it into sections, revealing information in an easy and digestible way.
-It consists of a walkthrough screen, where the user is prompted to input required information and upon completing a section, the next sections subsequently follow in a prescribed order; and the summary page, where the form is displayed in read-only mode for assessment and final submission.
-
-## Usage
-
-**Use the wizard if:**
-
-- the user has to accomplish a long or unfamiliar task
-- the flow consist of a minimum of 3 and a maximum of 8 steps
-
-**Do not use the wizard if:**
-
-- a task has only 2 steps
-- a task has more than 8 steps
-- the format of the task is familiar to the user
-
-## Types
-
-There are two types of wizard that offer different functionality: **standard** and **branching**.
-
-**Use the standard type if:**
-
-- The total number of steps is known in advance.
-- The number of steps does not change during usage.
-- There is linear progression from one step to the next.
-
-**Use the branching type if:**
-
-- The total number of steps is not known.
-- The number of steps may change during usage.
-- There is non-linear progression. In other words, the user’s choice during one step determines which step comes next.
-- In both types of wizard you can let users skip steps. Label these steps as “Optional”.
-
-
-## Layout
-
-The wizard can be used both in a full-screen layout and in the flexible column layout. There is no navigation from the wizard to a next page. After completion or cancellation, the user is always navigated back to the page the wizard was triggered from.
-
-## Responsive paddings
-
-These modifier classes will add horizontal paddings to the content and can be applied on the \`fd-wizard__progress-bar\` level, the \`fd-wizard__content\`, and/or the \`fd-wizard__step-content-container\` level.
-
-
-|  **rem** |  <div style="margin-left: 2rem;"> **Min-width** </div> |  <div style="margin-left: 2rem;">**Max-width** </div> |  <div style="margin-left: 2rem;"> **Modifier class** </div> |
-| :---- | :---------- | :---------- | :---------------------------------- |
-| 1rem | <span style="margin-left: 2rem;">_n/a_</span> | <span style="margin-left: 2rem;">599px</span> | <code style="margin-left: 2rem;">fd-wizard__progress-bar--sm</code> / <code>fd-wizard__content--sm</code> / <code>fd-wizard__step-content-container--sm</code> |
-| 2rem | <span style="margin-left: 2rem;">600px</span> | <span style="margin-left: 2rem;">1023px</span> | <code style="margin-left: 2rem;">fd-wizard__progress-bar--md</code> / <code>fd-wizard__content--md</code> / <code>fd-wizard__step-content-container--md</code> |
-| 2rem | <span style="margin-left: 2rem;">1024px</span> | <span style="margin-left: 2rem;">1439px</span> | <code style="margin-left: 2rem;">fd-wizard__progress-bar--lg</code> / <code>fd-wizard__content--lg</code> / <code>fd-wizard__step-content-container--lg</code> |
-| 3rem | <span style="margin-left: 2rem;">1440px</span> | <span style="margin-left: 2rem;">_n/a_</span> | <code style="margin-left: 2rem;">fd-wizard__progress-bar--xl</code> / <code>fd-wizard__content--xl</code> / <code>fd-wizard__step-content-container--xl</code> |
-
-## Modifiers
-
-| **Steps** | <div style="margin-left: 2rem;"> **Modifier class** </div> |
-| :---- | :-------------- |
-| Completed | <code style="margin-left: 2rem;">fd-wizard__step--completed</code>    |
-| Current | <code style="margin-left: 2rem;">fd-wizard__step--current</code>      |
-| Upcoming | <code style="margin-left: 2rem;">fd-wizard__step--upcoming</code>     |
-| No-label | <code style="margin-left: 2rem;">fd-wizard__step--no-label</code>     |
-| Stacked | <code style="margin-left: 2rem;">fd-wizard__step--stacked</code>      |
-| Stacked on top | <code style="margin-left: 2rem;">fd-wizard__step--stacked-top</code>  |
-| Active | <code style="margin-left: 2rem;">fd-wizard__step--active</code>       |
-
-## Connector types
-
-There are multiple connector types that can be displayed depending on the steps involved.
-
-| **Connector type** |<div style="margin-left: 2rem;"> **Connection** </div> | <div style="margin-left: 2rem;"> **Class/Modifier** </div> |
-| :---- | :-------------- | :-------------- |
-| Default | <span style="margin-left: 2rem;"> Inactive step (or Active step) to Inactive step </span> | <code style="margin-left: 2rem;">fd-wizard__connector</code>|
-| Active | <span style="margin-left: 2rem;"> Active step to Active step </span> | <code style="margin-left: 2rem;">fd-wizard__connector--active</code>|
-| Branching | <span style="margin-left: 2rem;"> Branching step to Inactive step or no step </span> | <code style="margin-left: 2rem;">fd-wizard__connector--branching</code>|
-
-## Truncation rules
-
-| **Type** |  <div style="min-width: 6rem; margin-left: 2rem;">**Max lines**</div>  | <div style="margin-left: 2rem;"> **Modifier class** </div> |
-| :---- | :---------------- | :-------------------------- |
-| Label | <span style="margin-left: 2rem;">2</span> |  <span style="margin-left: 2rem;"> Text truncates when it exceeds the maximum space available. When a step has optional text, the label can only accommodate 1 line. </span> |
-| Label with optional text | <span style="margin-left: 2rem;">1</span> | <span style="margin-left: 2rem;">Text truncates when it exceeds the maximum space available. The \`fd-wizard__label-container--optional\` modifier class is applied together with \`fd-wizard__label-container\`.</span> |
-| Optional text | <span style="margin-left: 2rem;">2</span> | <span style="margin-left: 2rem;">Text truncates when it exceeds the maximum space available.</span> |
-
-## Content background
-
-| **Type** | <span style="margin-left: 2rem;">**Modifier class**</span> |
-| :--- | :-------------- |
-| Solid |  <code style="margin-left: 2rem;"> fd-wizard__content--solid</code> |
-| List | <code style="margin-left: 2rem;"> fd-wizard__content--list</code> |
-| Transparent | <code style="margin-left: 2rem;"> fd-wizard__content--transparent</code> |
-
-`,
+    description,
     docs: {
       story: {
         iframeHeight: 400
