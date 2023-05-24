@@ -24,6 +24,7 @@ $block: #{$fd-namespace}-panel;
   }
 
   &__header {
+    overflow: hidden;
     height: var(--fdPanel_Header_Height);
     min-height: var(--fdPanel_Header_Height);
     padding-right: $fd-panel-header-right-padding;
