@@ -1428,52 +1428,7 @@ Empty grid columns | 0 | There is no empty space on the right of the field.
     }
   }
 };
-export const CompactLayout = () => `<div class="fd-container fd-form-layout-grid-container fd-form-layout-grid-container--compact fd-form-group">
-    <div class="fd-row fd-form-item">
-      <div class="fd-col fd-col-md--4">
-        <label class="fd-form-label" for="input-13-compact">Default Input:</label>
-      </div>
-      <div class="fd-col fd-col-md--7 fd-col-md--offset-after--1">
-        <input class="fd-input" type="text" id="input-13-compact" placeholder="Field placeholder text">
-      </div>
-    </div>
-    <div class="fd-row fd-form-item">
-      <div class="fd-col fd-col-md--4">
-        <label class="fd-form-label fd-form-label--required" for="input-13b-compact">Required Input: </label>
-      </div>
-      <div class="fd-col fd-col-md--7 fd-col-md--offset-after--1">
-          <input class="fd-input" type="text" id="input-13b-compact" placeholder="Field placeholder text">
-      </div>
-    </div>
-    <div class="fd-row fd-form-item" role="group" aria-labelledby="groupLabel-compact">
-      <div class="fd-col fd-col-md--4">
-        <label class="fd-form-label" id="groupLabel-compact">2 Inputs: </label>
-      </div>
-      <div class="fd-col fd-col-md--7 fd-col-md--offset-after--1">
-        <div class="fd-row">
-          <div class="fd-col fd-col--6">
-            <input class="fd-input" type="text" id="input1-of-2-compact" aria-label="input1-of-2-compact" placeholder="Field placeholder text">
-          </div>
-          <div class="fd-col fd-col--6">
-            <input class="fd-input" type="text" id="input2-of-2-compact" aria-label="input2-of-2-compact" placeholder="Field placeholder text">
-          </div>
-        </div>
-      </div>
-    </div>
-</div>
-` + docsStyles;
-CompactLayout.storyName = 'Compact form';
-CompactLayout.parameters = {
-  docs: {
-    story: {
-      iframeHeight: 200
-    },
-    description: {
-      story: `
-To display the form using a compact layout, add the \`--compact\` modifier on the \`fd-input\` class.`
-    }
-  }
-};
+
 export const ColumnRecommended = () => `<h2>Layout 1</h2>
 <div class="fd-container fd-form-layout-grid-container fd-form-group">
   <div class="fd-row">

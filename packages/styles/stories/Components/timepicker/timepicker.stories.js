@@ -56,7 +56,7 @@ Users can enter the time in two ways:
         - .fd-time-picker__header
             - .fd-time-picker__output
                 - .fd-time-picker__colon
-        - .fd-time-picker\\_\\_clock-container **Modifier classes:**fd-time-picker\\_\\_clock-container--compact
+        - .fd-time-picker\\_\\_clock-container
             - .fd-time-picker__clock
                 - .fd-time-picker__label
                 - .fd-time-picker\\_\\_item **Modifier classes:** .fd-time-picker\\_\\_item--deg6, .fd-time-picker\\_\\_item--deg12, ... , .fd-time-picker\\_\\_item--deg360

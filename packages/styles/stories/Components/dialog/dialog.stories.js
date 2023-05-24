@@ -162,7 +162,7 @@ Selectable.parameters = {
       iframeHeight: 500
     },
     description: {
-      story: `The selectable dialog displays list items in the content area that can be selected. Users can search items from the list, select one or more items, and finalize their choice by selecting the _Select_ button. To display the selectable dialog, include the \`fd-list fd-list--compact\` class to the body's container element.
+      story: `The selectable dialog displays list items in the content area that can be selected. Users can search items from the list, select one or more items, and finalize their choice by selecting the _Select_ button. To display the selectable dialog, include the \`fd-list is-compact\` class to the body's container element.
         `
     }
   }

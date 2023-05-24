@@ -60,7 +60,6 @@ The following classes describe the block structure of the calendar component.\n
 These modifier classes are used to display the general look of the calendar component.\n
 | Modifier class | Use to... |
 | -------------:| :------------- |
-| \`fd-calendar--compact\` | Display calendar in compact mode
 | \`fd-calendar--mobile-landscape\` | Display calendar in landscape mode for mobile
 | \`fd-calendar--mobile-portrait\` | Display calendar in portrait mode for mobile
 | \`fd-calendar__content--months\` | Display calendar months
