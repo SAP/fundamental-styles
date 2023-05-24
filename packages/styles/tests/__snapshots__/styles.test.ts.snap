@@ -17809,39 +17809,44 @@ exports[`Check stories > Components/List/Standard > Story Unread > Should match 
 "
 `;
 
+exports[`Check stories > Components/Menu > Story Buttons > Should match snapshot 1`] = `
+"<div style=\\"display: flex; gap: 3rem; flex-wrap:wrap;\\">
+    <nav class=\\"fd-menu fd-menu--icons\\">
+        <ul class=\\"fd-menu__list\\" role=\\"menu\\">
+            <li class=\\"fd-menu__item\\" role=\\"presentation\\">
+                <button class=\\"fd-menu__link\\" role=\\"menuitem\\">
+                    <span class=\\"fd-menu__title\\">Sort</span>
+                </button>
+            </li>
+            <li class=\\"fd-menu__item\\" role=\\"presentation\\">
+                <button class=\\"fd-menu__link\\" role=\\"menuitem\\">
+                    <span class=\\"fd-menu__title\\">Edit</span>
+                </button>
+            </li>
+            <li class=\\"fd-menu__item\\" role=\\"presentation\\">
+                <button class=\\"fd-menu__link\\" role=\\"menuitem\\">
+                    <span class=\\"fd-menu__title\\">Save</span>
+                </button>
+            </li>
+            <li class=\\"fd-menu__item\\" role=\\"presentation\\">
+                <button class=\\"fd-menu__link\\" role=\\"menuitem\\">
+                    <span class=\\"fd-menu__addon-before\\"><i class=\\"sap-icon--message-error\\" role=\\"presentation\\"></i></span>
+                    <span class=\\"fd-menu__title\\">Reject</span>
+                </button>
+            </li>
+            <li class=\\"fd-menu__item\\" role=\\"presentation\\">
+                <button class=\\"fd-menu__link\\" role=\\"menuitem\\">
+                    <span class=\\"fd-menu__addon-before\\"><i class=\\"sap-icon--message-success\\" role=\\"presentation\\"></i></span>
+                    <span class=\\"fd-menu__title\\">Accept</span>
+                </button>
+            </li>
+        </ul>
+    </nav>
+</div>"
+`;
+
 exports[`Check stories > Components/Menu > Story DesktopAndTablet > Should match snapshot 1`] = `
-"
-<label class=\\"fd-form-label\\">Combobox Tablet Cozy Mode - default mode</label><br/><br/>
-
-<nav aria-label=\\"navigation menu\\" class=\\"fd-menu\\">
-    <ul class=\\"fd-menu__list\\" role=\\"menu\\">
-        <li class=\\"fd-menu__item\\" role=\\"presentation\\">
-            <a class=\\"fd-menu__link\\" href=\\"#\\" role=\\"menuitem\\">
-                <span class=\\"fd-menu__title\\">Option 1</span>
-            </a>
-        </li>
-        <li class=\\"fd-menu__item\\" role=\\"presentation\\">
-            <a class=\\"fd-menu__link\\" href=\\"#\\" role=\\"menuitem\\">
-                <span class=\\"fd-menu__title\\">Option 2</span>
-            </a>
-        </li>
-        <li class=\\"fd-menu__item\\" role=\\"presentation\\">
-            <a class=\\"fd-menu__link\\" href=\\"#\\" role=\\"menuitem\\">
-                <span class=\\"fd-menu__title\\">Option 3</span>
-            </a>
-        </li>
-        <li class=\\"fd-menu__item\\" role=\\"presentation\\">
-            <a class=\\"fd-menu__link\\" href=\\"#\\" role=\\"menuitem\\">
-                <span class=\\"fd-menu__title\\">Option 4</span>
-            </a>
-        </li>
-    </ul>
-</nav>
-
-<br>
-<label class=\\"fd-form-label\\">Combobox Desktop Compact Mode</label><br/><br/>
-
-<nav class=\\"fd-menu fd-menu--compact\\">
+"<nav aria-label=\\"navigation menu\\" class=\\"fd-menu\\">
     <ul class=\\"fd-menu__list\\" role=\\"menu\\">
         <li class=\\"fd-menu__item\\" role=\\"presentation\\">
             <a class=\\"fd-menu__link\\" href=\\"#\\" role=\\"menuitem\\">
@@ -17869,10 +17874,7 @@ exports[`Check stories > Components/Menu > Story DesktopAndTablet > Should match
 `;
 
 exports[`Check stories > Components/Menu > Story DesktopAndTabletOverflow > Should match snapshot 1`] = `
-"
-<label class=\\"fd-form-label\\">Combobox Tablet Cozy Mode - default mode</label><br/><br/>
-
-<nav aria-label=\\"navigation menu\\" class=\\"fd-menu fd-menu--overflow\\" style=\\"max-height: 200px;\\">
+"<nav aria-label=\\"navigation menu\\" class=\\"fd-menu fd-menu--overflow\\" style=\\"max-height: 200px;\\">
     <ul class=\\"fd-menu__list\\" role=\\"menu\\">
         <li class=\\"fd-menu__item\\" role=\\"presentation\\">
             <a class=\\"fd-menu__link\\" href=\\"#\\" role=\\"menuitem\\">
@@ -17927,68 +17929,11 @@ exports[`Check stories > Components/Menu > Story DesktopAndTabletOverflow > Shou
     </ul>
 </nav>
 
-<br>
-<label class=\\"fd-form-label\\">Combobox Desktop Compact Mode</label><br/><br/>
-
-<nav class=\\"fd-menu fd-menu--compact fd-menu--overflow\\" style=\\"max-height: 120px;\\">
-    <ul class=\\"fd-menu__list\\" role=\\"menu\\">
-        <li class=\\"fd-menu__item\\" role=\\"presentation\\">
-            <a class=\\"fd-menu__link\\" href=\\"#\\" role=\\"menuitem\\">
-                <span class=\\"fd-menu__title\\">Option 1</span>
-            </a>
-        </li>
-        <li class=\\"fd-menu__item\\" role=\\"presentation\\">
-            <a class=\\"fd-menu__link\\" href=\\"#\\" role=\\"menuitem\\">
-                <span class=\\"fd-menu__title\\">Option 2</span>
-            </a>
-        </li>
-        <li class=\\"fd-menu__item\\" role=\\"presentation\\">
-            <a class=\\"fd-menu__link\\" href=\\"#\\" role=\\"menuitem\\">
-                <span class=\\"fd-menu__title\\">Option 3</span>
-            </a>
-        </li>
-        <li class=\\"fd-menu__item\\" role=\\"presentation\\">
-            <a class=\\"fd-menu__link\\" href=\\"#\\" role=\\"menuitem\\">
-                <span class=\\"fd-menu__title\\">Option 4</span>
-            </a>
-        </li>
-        <li class=\\"fd-menu__item\\" role=\\"presentation\\">
-            <a class=\\"fd-menu__link\\" href=\\"#\\" role=\\"menuitem\\">
-                <span class=\\"fd-menu__title\\">Option 5</span>
-            </a>
-        </li>
-        <li class=\\"fd-menu__item\\" role=\\"presentation\\">
-            <a class=\\"fd-menu__link\\" href=\\"#\\" role=\\"menuitem\\">
-                <span class=\\"fd-menu__title\\">Option 6</span>
-            </a>
-        </li>
-        <li class=\\"fd-menu__item\\" role=\\"presentation\\">
-            <a class=\\"fd-menu__link\\" href=\\"#\\" role=\\"menuitem\\">
-                <span class=\\"fd-menu__title\\">Option 7</span>
-            </a>
-        </li>
-        <li class=\\"fd-menu__item\\" role=\\"presentation\\">
-            <a class=\\"fd-menu__link\\" href=\\"#\\" role=\\"menuitem\\">
-                <span class=\\"fd-menu__title\\">Option 8</span>
-            </a>
-        </li>
-        <li class=\\"fd-menu__item\\" role=\\"presentation\\">
-            <a class=\\"fd-menu__link\\" href=\\"#\\" role=\\"menuitem\\">
-                <span class=\\"fd-menu__title\\">Option 9</span>
-            </a>
-        </li>
-        <li class=\\"fd-menu__item\\" role=\\"presentation\\">
-            <a class=\\"fd-menu__link\\" href=\\"#\\" role=\\"menuitem\\">
-                <span class=\\"fd-menu__title\\">Option 10</span>
-            </a>
-        </li>
-    </ul>
-</nav>
 "
 `;
 
 exports[`Check stories > Components/Menu > Story DifferentStates > Should match snapshot 1`] = `
-"<div style=\\"width: 50%; display: inline-block\\">
+"<div style=\\"width: 33%; display: inline-block\\">
     <nav aria-label=\\"navbar\\" class=\\"fd-menu\\">
         <ul class=\\"fd-menu__list\\" role=\\"menu\\">
             <li class=\\"fd-menu__item\\" role=\\"presentation\\">
@@ -18025,37 +17970,90 @@ exports[`Check stories > Components/Menu > Story DifferentStates > Should match 
     </nav>
 </div>
 
-<div style=\\"width: 49%; display: inline-block\\">
+<div style=\\"width: 33%; display: inline-block\\">
+    <nav class=\\"fd-menu fd-menu--icons\\">
+        <ul class=\\"fd-menu__list\\" role=\\"menu\\">
+            <li class=\\"fd-menu__item\\" role=\\"presentation\\">
+                    <a class=\\"fd-menu__link\\" href=\\"#\\" role=\\"menuitem\\">
+                        <span class=\\"fd-menu__addon-before\\"><i class=\\"sap-icon--grid\\" role=\\"presentation\\"></i></span>
+                        <span class=\\"fd-menu__title\\">Option 1 - Regular</span>
+                        <span class=\\"fd-menu__shortcut\\">Ctrl + A</span>
+                        <span class=\\"fd-menu__addon-after\\"><i class=\\"sap-icon--wrench\\" role=\\"presentation\\"></i></span>
+                    </a>
+            </li>
+            <li class=\\"fd-menu__item\\" role=\\"presentation\\">
+                    <a class=\\"fd-menu__link is-hover\\" href=\\"#\\" role=\\"menuitem\\">
+                        <span class=\\"fd-menu__addon-before\\"><i class=\\"sap-icon--accept\\" role=\\"presentation\\"></i></span>
+                        <span class=\\"fd-menu__title\\">Option 2 - Hover</span>
+                        <span class=\\"fd-menu__shortcut\\">Ctrl + A</span>
+                        <span class=\\"fd-menu__addon-after\\"><i class=\\"sap-icon--history\\" role=\\"presentation\\"></i></span>
+                    </a>
+            </li>
+            <li class=\\"fd-menu__item\\" role=\\"presentation\\">
+                    <a class=\\"fd-menu__link is-active\\" href=\\"#\\" role=\\"menuitem\\">
+                        <span class=\\"fd-menu__addon-before\\"><i class=\\"sap-icon--wrench\\" role=\\"presentation\\"></i></span>
+                        <span class=\\"fd-menu__title\\">Option 3 - Active</span>
+                        <span class=\\"fd-menu__shortcut\\">Ctrl + A</span>
+                        <span class=\\"fd-menu__addon-after\\"><i class=\\"sap-icon--lightbulb\\" role=\\"presentation\\"></i></span>
+                    </a>
+            </li>
+            <li class=\\"fd-menu__item\\" role=\\"presentation\\">
+                <a class=\\"fd-menu__link is-selected\\" href=\\"#\\" role=\\"menuitem\\">
+                    <span class=\\"fd-menu__title\\">Option 3 - Selected</span>
+                    <span class=\\"fd-menu__shortcut\\">Ctrl + A</span>
+                    <span class=\\"fd-menu__addon-after\\"><i class=\\"sap-icon--lightbulb\\" role=\\"presentation\\"></i></span>
+                </a>
+            </li>
+            <li class=\\"fd-menu__item\\" role=\\"presentation\\">
+                <a class=\\"fd-menu__link is-selected is-hover\\" href=\\"#\\" role=\\"menuitem\\">
+                    <span class=\\"fd-menu__addon-before\\"><i class=\\"sap-icon--cart\\" role=\\"presentation\\"></i></span>
+                    <span class=\\"fd-menu__title\\">Option 4 - Selected Hover</span>
+                    <span class=\\"fd-menu__shortcut\\">Ctrl + A</span>
+                </a>
+            </li>
+            <li class=\\"fd-menu__item\\" role=\\"presentation\\">
+                    <a class=\\"fd-menu__link is-disabled\\" href=\\"#\\" role=\\"menuitem\\">
+                        <span class=\\"fd-menu__addon-before\\"><i class=\\"sap-icon--cart\\" role=\\"presentation\\"></i></span>
+                        <span class=\\"fd-menu__title\\">Option 4 - Disabled</span>
+                        <span class=\\"fd-menu__shortcut\\">Ctrl + A</span>
+                        <span class=\\"fd-menu__addon-after\\"><i class=\\"sap-icon--history\\" role=\\"presentation\\"></i></span>
+                    </a>
+            </li>
+        </ul>
+    </nav>    
+</div>
+
+<div style=\\"width: 33%; display: inline-block\\">
     <nav class=\\"fd-menu\\">
         <ul class=\\"fd-menu__list fd-menu__list--no-shadow\\" role=\\"menu\\">
             <li class=\\"fd-menu__item\\" role=\\"presentation\\">
                 <a class=\\"fd-menu__link\\" href=\\"#\\" role=\\"menuitem\\">
-                    <span class=\\"fd-menu__title\\">Option 1</span>
+                    <span class=\\"fd-menu__title\\">Option 1 - Regular</span>
                 </a>
             </li>
             <li class=\\"fd-menu__item\\" role=\\"presentation\\">
-                <a class=\\"fd-menu__link\\" href=\\"#\\" role=\\"menuitem\\">
-                    <span class=\\"fd-menu__title\\">Option 2</span>
+                <a class=\\"fd-menu__link is-hover\\" href=\\"#\\" role=\\"menuitem\\">
+                    <span class=\\"fd-menu__title\\">Option 2 - Hover</span>
                 </a>
             </li>
             <li class=\\"fd-menu__item\\" role=\\"presentation\\">
-                <a class=\\"fd-menu__link\\" href=\\"#\\" role=\\"menuitem\\">
-                    <span class=\\"fd-menu__title\\">Option 3</span>
+                <a class=\\"fd-menu__link is-active\\" href=\\"#\\" role=\\"menuitem\\">
+                    <span class=\\"fd-menu__title\\">Option 3 - Active</span>
                 </a>
             </li>
             <li class=\\"fd-menu__item\\" role=\\"presentation\\">
-                <a class=\\"fd-menu__link\\" href=\\"#\\" role=\\"menuitem\\">
-                    <span class=\\"fd-menu__title\\">Option 4</span>
+                <a class=\\"fd-menu__link is-selected\\" href=\\"#\\" role=\\"menuitem\\">
+                    <span class=\\"fd-menu__title\\">Option 4 - Selected</span>
                 </a>
             </li>
             <li class=\\"fd-menu__item\\" role=\\"presentation\\">
-                <a class=\\"fd-menu__link\\" href=\\"#\\" role=\\"menuitem\\">
-                    <span class=\\"fd-menu__title\\">Option 5</span>
+                <a class=\\"fd-menu__link is-selected is-hover\\" href=\\"#\\" role=\\"menuitem\\">
+                    <span class=\\"fd-menu__title\\">Option 5 - Selected Hover</span>
                 </a>
             </li>
-            <li class=\\"fd-menu__item\\" role=\\"presentation\\">
+            <li class=\\"fd-menu__item is-disabled\\" role=\\"presentation\\">
                 <a class=\\"fd-menu__link\\" href=\\"#\\" role=\\"menuitem\\">
-                    <span class=\\"fd-menu__title\\">Option 6</span>
+                    <span class=\\"fd-menu__title\\">Option 6 - Disabled</span>
                 </a>
             </li>
         </ul>
@@ -18064,11 +18062,38 @@ exports[`Check stories > Components/Menu > Story DifferentStates > Should match 
 "
 `;
 
+exports[`Check stories > Components/Menu > Story Input > Should match snapshot 1`] = `
+"<div style=\\"display: flex; gap: 3rem; flex-wrap:wrap;\\">
+    <nav class=\\"fd-menu fd-menu--icons\\">
+        <ul class=\\"fd-menu__list\\" role=\\"menu\\">
+            <li class=\\"fd-menu__item\\" role=\\"presentation\\">
+                <div class=\\"fd-menu__link\\" role=\\"presentation\\">
+                    <input class=\\"fd-input fd-menu__input\\" type=\\"text\\" id=\\"input-1\\" placeholder=\\"Field placeholder text\\">
+                </div>
+            </li>
+            <li class=\\"fd-menu__item\\" role=\\"presentation\\">
+                <a class=\\"fd-menu__link\\" href=\\"#\\" role=\\"menuitem\\">
+                    <span class=\\"fd-menu__addon-before\\"><i class=\\"sap-icon--map\\" role=\\"presentation\\"></i></span>
+                    <span class=\\"fd-menu__title\\">Add New Pin</span>
+                </a>
+            </li>
+            <li class=\\"fd-menu__item\\" role=\\"presentation\\">
+                <a class=\\"fd-menu__link\\" href=\\"#\\" role=\\"menuitem\\">
+                    <span class=\\"fd-menu__addon-before\\"><i class=\\"sap-icon--image-viewer\\" role=\\"presentation\\"></i></span>
+                    <span class=\\"fd-menu__title\\">View 360</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</div>"
+`;
+
 exports[`Check stories > Components/Menu > Story MenuIcon > Should match snapshot 1`] = `
-"<nav class=\\"fd-menu\\">
+"<h3>Cozy</h3>
+<nav class=\\"fd-menu fd-menu--icons\\">
     <ul class=\\"fd-menu__list\\" role=\\"menu\\">
         <li class=\\"fd-menu__item\\" role=\\"presentation\\">
-                <a class=\\"fd-menu__link\\" href=\\"#\\" role=\\"menuitem\\">
+                <a class=\\"fd-menu__link is-focus\\" href=\\"#\\" role=\\"menuitem\\">
                     <span class=\\"fd-menu__addon-before\\"><i class=\\"sap-icon--grid\\" role=\\"presentation\\"></i></span>
                     <span class=\\"fd-menu__title\\">Option 1</span>
                     <span class=\\"fd-menu__addon-after\\"><i class=\\"sap-icon--wrench\\" role=\\"presentation\\"></i></span>
@@ -18082,11 +18107,24 @@ exports[`Check stories > Components/Menu > Story MenuIcon > Should match snapsho
                 </a>
         </li>
         <li class=\\"fd-menu__item\\" role=\\"presentation\\">
-                <a class=\\"fd-menu__link\\" href=\\"#\\" role=\\"menuitem\\">
+                <a class=\\"fd-menu__link is-focus\\" href=\\"#\\" role=\\"menuitem\\">
                     <span class=\\"fd-menu__addon-before\\"><i class=\\"sap-icon--wrench\\" role=\\"presentation\\"></i></span>
                     <span class=\\"fd-menu__title\\">Option 3</span>
                     <span class=\\"fd-menu__addon-after\\"><i class=\\"sap-icon--lightbulb\\" role=\\"presentation\\"></i></span>
                 </a>
+        </li>
+        <li class=\\"fd-menu__item\\" role=\\"presentation\\">
+            <a class=\\"fd-menu__link\\" href=\\"#\\" role=\\"menuitem\\">
+                <span class=\\"fd-menu__title\\">Option 3</span>
+                <span class=\\"fd-menu__addon-after\\"><i class=\\"sap-icon--lightbulb\\" role=\\"presentation\\"></i></span>
+            </a>
+        </li>
+        <li class=\\"fd-menu__item\\" role=\\"presentation\\">
+            <a class=\\"fd-menu__link\\" href=\\"#\\" role=\\"menuitem\\">
+                <span class=\\"fd-menu__addon-before\\"><i class=\\"sap-icon--cart\\" role=\\"presentation\\"></i></span>
+                <span class=\\"fd-menu__title\\">Option 4</span>
+                <span class=\\"fd-menu__shortcut\\">Ctrl + A</span>
+            </a>
         </li>
         <li class=\\"fd-menu__item\\" role=\\"presentation\\">
                 <a class=\\"fd-menu__link\\" href=\\"#\\" role=\\"menuitem\\">
@@ -18102,7 +18140,7 @@ exports[`Check stories > Components/Menu > Story MenuIcon > Should match snapsho
 `;
 
 exports[`Check stories > Components/Menu > Story MobileCozyMode > Should match snapshot 1`] = `
-"<div style=\\"width: 50%; display: inline-block\\" class=\\"fd-dialog fd-dialog-docs-static fd-select-docs-max-height fd-dialog--active\\" id=\\"select-dialog-example\\">
+"<div style=\\"width: 20rem; margin: 0 10rem; display: inline-block\\" class=\\"fd-dialog fd-dialog-docs-static fd-select-docs-max-height fd-dialog--active\\" id=\\"select-dialog-example\\">
     <section
         aria-labelledby=\\"exampleSubMenuHeader\\"
         class=\\"fd-dialog__content fd-dialog__content--mobile\\"
@@ -18121,7 +18159,7 @@ exports[`Check stories > Components/Menu > Story MobileCozyMode > Should match s
         <div class=\\"fd-dialog__body fd-dialog__body--no-vertical-padding\\">
              <nav
                 aria-label=\\"example sub-menu options\\"
-                class=\\"fd-menu fd-menu--mobile\\"
+                class=\\"fd-menu fd-menu--mobile fd-menu--icons\\"
                 id=\\"parent-menu\\"
                 tabindex=\\"-1\\">
                 <ul class=\\"fd-menu__list\\" role=\\"menu\\">
@@ -18141,7 +18179,6 @@ exports[`Check stories > Components/Menu > Story MobileCozyMode > Should match s
                     </li>
                     <li class=\\"fd-menu__item\\" role=\\"presentation\\">
                         <a class=\\"fd-menu__link\\" href=\\"#\\" role=\\"menuitem\\">
-                            <span class=\\"fd-menu__addon-before\\"><i class=\\"sap-icon--history\\" role=\\"presentation\\"></i></span>
                             <span class=\\"fd-menu__title\\">Option 3</span>
                             <span class=\\"fd-menu__addon-after\\"><i class=\\"sap-icon--lightbulb\\" role=\\"presentation\\"></i></span>
                         </a>
@@ -18151,6 +18188,13 @@ exports[`Check stories > Components/Menu > Story MobileCozyMode > Should match s
                             <span class=\\"fd-menu__addon-before\\"><i class=\\"sap-icon--grid\\" role=\\"presentation\\"></i></span>
                             <span class=\\"fd-menu__title\\">Option 4</span>
                             <span class=\\"fd-menu__addon-after\\"><i class=\\"sap-icon--history\\" role=\\"presentation\\"></i></span>
+                        </a>
+                    </li>
+                    <li class=\\"fd-menu__item\\" role=\\"presentation\\">
+                        <a class=\\"fd-menu__link\\" href=\\"#\\" role=\\"menuitem\\">
+                            <span class=\\"fd-menu__addon-before\\"><i class=\\"sap-icon--grid\\" role=\\"presentation\\"></i></span>
+                            <span class=\\"fd-menu__title\\">Option 4</span>
+                            <span class=\\"fd-menu__shortcut\\">Ctrl+Alt+L</span>
                         </a>
                     </li>
                 </ul>
@@ -18220,7 +18264,7 @@ exports[`Check stories > Components/Menu > Story MobileCozyMode > Should match s
                     </li>
                     <li class=\\"fd-menu__item\\" role=\\"presentation\\">
                         <a class=\\"fd-menu__link\\" href=\\"#\\" role=\\"menuitem\\">
-                            <span class=\\"fd-menu__title\\">Sub-option 5 with very very very very long text</span>
+                            <span class=\\"fd-menu__title\\">Sub-option 5 with very very very very very very very very very very very very long text</span>
                         </a>
                     </li>
                 </ul>
@@ -18242,6 +18286,45 @@ exports[`Check stories > Components/Menu > Story MobileCozyMode > Should match s
 "
 `;
 
+exports[`Check stories > Components/Menu > Story SegmentedButton > Should match snapshot 1`] = `
+"<div style=\\"display: flex; gap: 3rem; flex-wrap:wrap;\\">
+    <nav class=\\"fd-menu fd-menu--icons\\">
+        <ul class=\\"fd-menu__list\\" role=\\"menu\\">
+            <li class=\\"fd-menu__item has-separator\\" role=\\"presentation\\">
+                <a class=\\"fd-menu__link\\" href=\\"#\\" role=\\"menuitem\\">
+                    <span class=\\"fd-menu__addon-before\\"><i class=\\"sap-icon--sort\\" role=\\"presentation\\"></i></span>
+                    <span class=\\"fd-menu__title\\">Sort</span>
+                </a>
+            </li>
+            <li class=\\"fd-menu__item\\" role=\\"presentation\\">
+                <a class=\\"fd-menu__link\\" href=\\"#\\" role=\\"menuitem\\">
+                    <span class=\\"fd-menu__addon-before\\">
+                        <span class=\\"fd-menu__active-dot\\" role=\\"presentation\\"></span>
+                    </span>
+                    <span class=\\"fd-menu__title\\">View 1</span>
+                </a>
+            </li>
+            <li class=\\"fd-menu__item\\" role=\\"presentation\\">
+                <a class=\\"fd-menu__link\\" href=\\"#\\" role=\\"menuitem\\">
+                    <span class=\\"fd-menu__title\\">View 2</span>
+                </a>
+            </li>
+            <li class=\\"fd-menu__item has-separator\\" role=\\"presentation\\">
+                <a class=\\"fd-menu__link\\" href=\\"#\\" role=\\"menuitem\\">
+                    <span class=\\"fd-menu__title\\">View 3</span>
+                </a>
+            </li>
+            <li class=\\"fd-menu__item\\" role=\\"presentation\\">
+                <a class=\\"fd-menu__link\\" href=\\"#\\" role=\\"menuitem\\">
+                    <span class=\\"fd-menu__addon-before\\"><i class=\\"sap-icon--action-settings\\" role=\\"presentation\\"></i></span>
+                    <span class=\\"fd-menu__title\\">Settings</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</div>"
+`;
+
 exports[`Check stories > Components/Menu > Story SeperatedItems > Should match snapshot 1`] = `
 "<nav class=\\"fd-menu\\">
     <ul class=\\"fd-menu__list\\" role=\\"menu\\">
@@ -18250,23 +18333,21 @@ exports[`Check stories > Components/Menu > Story SeperatedItems > Should match s
                 <span class=\\"fd-menu__title\\">Option 1</span>
             </a>
         </li>
-        <li class=\\"fd-menu__item\\" role=\\"presentation\\">
-            <a class=\\"fd-menu__link\\" href=\\"#\\" role=\\"menuitem\\">
+        <li class=\\"fd-menu__item has-separator\\" role=\\"presentation\\">
+            <a class=\\"fd-menu__link is-selected\\" href=\\"#\\" role=\\"menuitem\\">
                 <span class=\\"fd-menu__title\\">Option 2</span>
             </a>
         </li>
-        <span class=\\"fd-menu__separator\\"></span>
         <li class=\\"fd-menu__item\\" role=\\"presentation\\">
             <a class=\\"fd-menu__link\\" href=\\"#\\" role=\\"menuitem\\">
                 <span class=\\"fd-menu__title\\">Option 3</span>
             </a>
         </li>
-        <li class=\\"fd-menu__item\\" role=\\"presentation\\">
+        <li class=\\"fd-menu__item has-separator\\" role=\\"presentation\\">
             <a class=\\"fd-menu__link\\" href=\\"#\\" role=\\"menuitem\\">
                 <span class=\\"fd-menu__title\\">Option 4</span>
             </a>
         </li>
-        <span class=\\"fd-menu__separator\\"></span>
         <li class=\\"fd-menu__item\\" role=\\"presentation\\">
             <a class=\\"fd-menu__link\\" href=\\"#\\" role=\\"menuitem\\">
                 <span class=\\"fd-menu__title\\">Option 5</span>
@@ -18275,6 +18356,57 @@ exports[`Check stories > Components/Menu > Story SeperatedItems > Should match s
     </ul>
 </nav>
 "
+`;
+
+exports[`Check stories > Components/Menu > Story ToggleButton > Should match snapshot 1`] = `
+"<div style=\\"display: flex; gap: 3rem; flex-wrap:wrap;\\">
+    <nav class=\\"fd-menu fd-menu--icons\\">
+        <ul class=\\"fd-menu__list\\" role=\\"menu\\">
+            <li class=\\"fd-menu__item has-separator\\" role=\\"presentation\\">
+                <a class=\\"fd-menu__link\\" href=\\"#\\" role=\\"menuitem\\">
+                    <span class=\\"fd-menu__title\\">Toggle Button (untoggled)</span>
+                </a>
+            </li>
+            <li class=\\"fd-menu__item\\" role=\\"presentation\\">
+                <a class=\\"fd-menu__link\\" href=\\"#\\" role=\\"menuitem\\">
+                    <span class=\\"fd-menu__addon-before\\"><i class=\\"sap-icon--sort\\" role=\\"presentation\\"></i></span>
+                    <span class=\\"fd-menu__title\\">View 1</span>
+                </a>
+            </li>
+            <li class=\\"fd-menu__item\\" role=\\"presentation\\">
+                <a class=\\"fd-menu__link\\" href=\\"#\\" role=\\"menuitem\\">
+                    <span class=\\"fd-menu__addon-before\\"><i class=\\"sap-icon--action-settings\\" role=\\"presentation\\"></i></span>
+                    <span class=\\"fd-menu__title\\">View 2</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <nav class=\\"fd-menu fd-menu--icons\\">
+        <ul class=\\"fd-menu__list\\" role=\\"menu\\">
+            <li class=\\"fd-menu__item has-separator\\" role=\\"presentation\\">
+                <a class=\\"fd-menu__link\\" href=\\"#\\" role=\\"menuitem\\">
+                    <span class=\\"fd-menu__addon-before\\">
+                        <i class=\\"sap-icon--accept fd-menu__checkmark\\" role=\\"presentation\\"></i>
+                    </span>
+                    <span class=\\"fd-menu__title\\">Toggle Button (toggled)</span>
+                </a>
+            </li>
+            <li class=\\"fd-menu__item\\" role=\\"presentation\\">
+                <a class=\\"fd-menu__link\\" href=\\"#\\" role=\\"menuitem\\">
+                    <span class=\\"fd-menu__addon-before\\"><i class=\\"sap-icon--sort\\" role=\\"presentation\\"></i></span>
+                    <span class=\\"fd-menu__title\\">View 1</span>
+                </a>
+            </li>
+            <li class=\\"fd-menu__item\\" role=\\"presentation\\">
+                <a class=\\"fd-menu__link\\" href=\\"#\\" role=\\"menuitem\\">
+                    <span class=\\"fd-menu__addon-before\\"><i class=\\"sap-icon--action-settings\\" role=\\"presentation\\"></i></span>
+                    <span class=\\"fd-menu__title\\">View 2</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</div>"
 `;
 
 exports[`Check stories > Components/Menu > Story WithSubmenu > Should match snapshot 1`] = `
@@ -18304,28 +18436,32 @@ exports[`Check stories > Components/Menu > Story WithSubmenu > Should match snap
                     </a>
                 </li>
                 <li class=\\"fd-menu__item\\" role=\\"presentation\\">
-                    <a class=\\"fd-menu__link\\" href=\\"#\\" role=\\"menuitem\\">
-                        <span class=\\"fd-menu__title\\">Sub-option 2</span>
+                    <a class=\\"fd-menu__link is-hover\\" href=\\"#\\" role=\\"menuitem\\">
+                        <span class=\\"fd-menu__title\\">Sub-option 2 - Hover</span>
                     </a>
                 </li>
                 <li class=\\"fd-menu__item\\" role=\\"presentation\\">
-                    <a class=\\"fd-menu__link\\" href=\\"#\\" role=\\"menuitem\\">
-                        <span class=\\"fd-menu__title\\">Sub-option 3</span>
+                    <a class=\\"fd-menu__link is-active\\" href=\\"#\\" role=\\"menuitem\\">
+                        <span class=\\"fd-menu__title\\">Sub-option 3 - Active</span>
                     </a>
                 </li>
                 <li class=\\"fd-menu__item\\" role=\\"presentation\\">
-                    <a class=\\"fd-menu__link\\" href=\\"#\\" role=\\"menuitem\\">
-                        <span class=\\"fd-menu__title\\">Sub-option 4</span>
+                    <a class=\\"fd-menu__link is-selected\\" href=\\"#\\" role=\\"menuitem\\">
+                        <span class=\\"fd-menu__title\\">Sub-option 4 - Selected</span>
                     </a>
                 </li>
                 <li class=\\"fd-menu__item\\" role=\\"presentation\\">
-                    <a class=\\"fd-menu__link\\" href=\\"#\\" role=\\"menuitem\\">
-                        <span class=\\"fd-menu__title\\">Sub-option 5 with very very very very long text</span>
+                    <a class=\\"fd-menu__link is-selected is-hover\\" href=\\"#\\" role=\\"menuitem\\">
+                        <span class=\\"fd-menu__title\\">Sub-option 5 - Selected Hover</span>
+                    </a>
+                </li>
+                <li class=\\"fd-menu__item\\" role=\\"presentation\\">
+                    <a class=\\"fd-menu__link is-disabled\\" href=\\"#\\" role=\\"menuitem\\">
+                        <span class=\\"fd-menu__title\\">Sub-option 6 - Disabled with very very very very very very very very long text</span>
                     </a>
                 </li>
             </ul>
         </li>
-        <span class=\\"fd-menu__separator\\"></span>
         <li class=\\"fd-menu__item\\" role=\\"presentation\\">
             <a class=\\"fd-menu__link\\" href=\\"#\\" role=\\"menuitem\\">
                 <span class=\\"fd-menu__title\\">Option 3</span>
@@ -18338,7 +18474,7 @@ exports[`Check stories > Components/Menu > Story WithSubmenu > Should match snap
         </li>
     </ul>
 </nav>
-<div style=\\"min-height: 75px\\"></div>
+<div style=\\"min-height: 200px\\"></div>
 "
 `;
 
@@ -47864,7 +48000,7 @@ exports[`Check stories > Patterns/Contextual Menu > Story WithIconAndButton > Sh
                                 <span class=\\"fd-menu__title\\">Option 1</span>
                             </a>
                             </li>
-                        <li class=\\"fd-menu__separator\\"></li>
+                        <li class=\\"fd-menu__separator\\" aria-hidden=\\"true\\"></li>
                         <li class=\\"fd-menu__item\\">
                             <a href=\\"#\\" class=\\"fd-menu__link\\">
                                 <span class=\\"fd-menu__title\\">Option 2</span>
