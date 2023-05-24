@@ -1,3 +1,12 @@
+# [0.29.0-rc.37](https://github.com/SAP/fundamental-styles/compare/v0.29.0-rc.36...v0.29.0-rc.37) (2023-05-24)
+
+
+### Bug Fixes
+
+* **styles:** fix the issue with border bottom of Panel header [ci visual] ([#4554](https://github.com/SAP/fundamental-styles/issues/4554)) ([9d8357b](https://github.com/SAP/fundamental-styles/commit/9d8357b5a9e646294f2fe197bf7a4358e74f7850))
+
+
+
 # [0.29.0-rc.36](https://github.com/SAP/fundamental-styles/compare/v0.29.0-rc.35...v0.29.0-rc.36) (2023-05-24)
 
 
