@@ -5,7 +5,6 @@ import readOnlyAndDisabledExampleHtml from "./read-only-and-disabled.example.htm
 import matchPopoverBodySizeExampleHtml from "./match-popover-body-size.example.html?raw";
 import groupingExampleHtml from "./grouping.example.html?raw";
 import asFormItemExampleHtml from "./as-form-item.example.html?raw";
-import cozyAndCompactExampleHtml from "./cozy-and-compact.example.html?raw";
 import '../../../src/input.scss';
 import '../../../src/form-label.scss';
 import '../../../src/form-item.scss';
@@ -43,20 +42,6 @@ If the entries are not validated by the application, users can also enter custom
 `,
     tags: ['f3', 'a11y', 'theme'],
     components: ['input', 'form-label', 'form-item', 'form-message', 'popover', 'radio', 'title', 'token', 'tokenizer', 'input-group', 'checkbox', 'list', 'button', 'icon', 'bar', 'dialog', 'link', 'menu']
-  }
-};
-export const CozyAndCompact = () => cozyAndCompactExampleHtml;
-CozyAndCompact.parameters = {
-  docs: {
-    story: {
-      iframeHeight: 350
-    },
-    description: {
-      story: `The multi-input component is a composition of
-        the \`input group\`, \`popover\`, \`checkbox\`, \`list\` and \`token\` components.  It can be displayed in compact mode by adding
-         the \`--compact\` modifier class to the building blocks of the components.
-        `
-    }
   }
 };
 export const AsFormItem = () => asFormItemExampleHtml;

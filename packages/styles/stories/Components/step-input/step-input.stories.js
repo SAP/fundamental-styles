@@ -2,7 +2,6 @@ import readOnlyExampleHtml from "./read-only.example.html?raw";
 import disabledExampleHtml from "./disabled.example.html?raw";
 import focusedExampleHtml from "./focused.example.html?raw";
 import statesExampleHtml from "./states.example.html?raw";
-import compactExampleHtml from "./compact.example.html?raw";
 import primaryExampleHtml from "./primary.example.html?raw";
 import '../../../src/button.scss';
 import '../../../src/icon.scss';
@@ -40,18 +39,6 @@ Primary.parameters = {
     },
     description: {
       story: `The default step input displays an input field with a plus and minus icon on opposing sides to either increase or decrease the value. It is displayed in cozy mode, which is ideal for mobile and tablet screens.
-        `
-    }
-  }
-};
-export const Compact = () => compactExampleHtml;
-Compact.parameters = {
-  docs: {
-    story: {
-      iframeHeight: 300
-    },
-    description: {
-      story: `The step input can be displayed in compact mode, which is ideal for desktop screens. To display a compact step input, add the \`--compact\` modifier class to the main element, as well as the button and input elements.
         `
     }
   }

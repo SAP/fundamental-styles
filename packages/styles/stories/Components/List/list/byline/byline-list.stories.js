@@ -56,7 +56,7 @@ Standard.parameters = {
       iframeHeight: 785
     },
     description: {
-      story: `The default byline list dislays list items in the standard size, which is ideal for mobile. To display the byline list in compact mode (for desktop), add the \`fd-list--compact\` modifier class to the main element.
+      story: `The default byline list dislays list items in the standard size, which is ideal for mobile. To display the byline list in compact mode (for desktop), add the \`is-compact\` modifier class to the main element.
     `
     }
   }

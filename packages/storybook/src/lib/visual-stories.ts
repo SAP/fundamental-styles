@@ -1,8 +1,8 @@
 import capitalize from 'lodash/capitalize';
 
-const wrappedStory = (storyName, storyFn, direction) => `
-<h2> ${capitalize(storyName)} </h2>
-<div dir="${direction}">
+const wrappedStory = (storyName: string, storyFn, direction: 'ltr' | 'rtl', compact = false) => `
+<h2> ${storyName} </h2>
+<div dir="${direction}"${compact ? ' class="is-compact"' : ''}>
     ${storyFn()}
 </div>
 <br />
@@ -18,12 +18,12 @@ export function visualStory(stories) {
         const allVisualStories = document.createElement('div');
         allVisualStories.innerHTML = storyNames.map(function (eachStoryName) {
             const eachStory = stories[eachStoryName];
-
-            const eachStoryLTR = wrappedStory(eachStoryName, eachStory, 'ltr');
+            const storyName = capitalize(eachStoryName);
+            const eachStoryLTR = wrappedStory(storyName, eachStory, 'ltr');
 
             if (eachStory && eachStory.parameters && eachStory.parameters.skipRTLSnapshot) return eachStoryLTR;
 
-            const eachStoryRTL = wrappedStory(capitalize(eachStoryName) + ' (Right to Left)', eachStory, 'rtl');
+            const eachStoryRTL = wrappedStory(`${storyName}  (RTL and compact)`, eachStory, 'rtl', true);
 
             return eachStoryLTR + eachStoryRTL;
         }).join('');

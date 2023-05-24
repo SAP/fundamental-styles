@@ -1,7 +1,4 @@
 import mobileExampleHtml from "./mobile.example.html?raw";
-import minutesCompactExampleHtml from "./minutes-compact.example.html?raw";
-import hours12CompactExampleHtml from "./hours12-compact.example.html?raw";
-import hours24CompactExampleHtml from "./hours24-compact.example.html?raw";
 import secondsCozyExampleHtml from "./seconds-cozy.example.html?raw";
 import minutesCozyExampleHtml from "./minutes-cozy.example.html?raw";
 import hours12CozyExampleHtml from "./hours12-cozy.example.html?raw";
@@ -59,7 +56,7 @@ Users can enter the time in two ways:
         - .fd-time-picker__header
             - .fd-time-picker__output
                 - .fd-time-picker__colon
-        - .fd-time-picker\\_\\_clock-container **Modifier classes:**fd-time-picker\\_\\_clock-container--compact
+        - .fd-time-picker\\_\\_clock-container
             - .fd-time-picker__clock
                 - .fd-time-picker__label
                 - .fd-time-picker\\_\\_item **Modifier classes:** .fd-time-picker\\_\\_item--deg6, .fd-time-picker\\_\\_item--deg12, ... , .fd-time-picker\\_\\_item--deg360
@@ -119,24 +116,6 @@ SecondsCozy.parameters = {
     }
   }
 };
-export const Hours24Compact = () => hours24CompactExampleHtml;
-Hours24Compact.storyName = 'Time Picker with 24-hour Clock Face in Compact Mode';
-Hours24Compact.parameters = {
-  docs: {
-    story: {
-      iframeHeight: 500
-    },
-    description: {
-      story: `All controls used as building blocks should be in their compact mode. For example:
-            <code>fd-input fd-input--compact</code>, <code>fd-button fd-button--compact</code>, <code>fd-time-picker\\_\\_clock-container fd-time-picker\\_\\_clock-container--compact</code>
-           `
-    }
-  }
-};
-export const Hours12Compact = () => hours12CompactExampleHtml;
-Hours12Compact.storyName = 'Time Picker with 12-hour Clock Face in Compact Mode';
-export const MinutesCompact = () => minutesCompactExampleHtml;
-MinutesCompact.storyName = 'Minutes Face in Compact Mode';
 export const Mobile = () => mobileExampleHtml;
 Mobile.parameters = {
   docs: {

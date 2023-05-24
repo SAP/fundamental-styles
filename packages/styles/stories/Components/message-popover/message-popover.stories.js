@@ -1,5 +1,4 @@
 import detailsViewExampleHtml from "./details-view.example.html?raw";
-import compactMessagePopoverExampleHtml from "./compact-message-popover.example.html?raw";
 import cozyMessagePopoverExampleHtml from "./cozy-message-popover.example.html?raw";
 import '../../../src/list.scss';
 import '../../../src/icon.scss';
@@ -29,5 +28,4 @@ It provides a handy and systematized way to navigate and explore details for eve
   }
 };
 export const CozyMessagePopover = () => cozyMessagePopoverExampleHtml;
-export const CompactMessagePopover = () => compactMessagePopoverExampleHtml;
 export const DetailsView = () => detailsViewExampleHtml;

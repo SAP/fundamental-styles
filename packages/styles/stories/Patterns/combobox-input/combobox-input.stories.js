@@ -4,7 +4,6 @@ import disabledAndReadOnlyExampleHtml from "./disabled-and-read-only.example.htm
 import matchPopoverBodySizeExampleHtml from "./match-popover-body-size.example.html?raw";
 import twoItemsAndItemsGroupingExampleHtml from "./two-items-and-items-grouping.example.html?raw";
 import asFormItemExampleHtml from "./as-form-item.example.html?raw";
-import cozyAndCompactExampleHtml from "./cozy-and-compact.example.html?raw";
 import '../../../src/radio.scss';
 import '../../../src/title.scss';
 import '../../../src/form-label.scss';
@@ -30,12 +29,6 @@ It provides an editable input field for filtering the list, and a dropdown menu 
 If the entries are not validated by the application, users can also enter custom values.
 `,
     tags: ['f3', 'a11y', 'theme']
-  }
-};
-export const CozyAndCompact = () => cozyAndCompactExampleHtml;
-CozyAndCompact.parameters = {
-  docs: {
-    iframeHeight: 700
   }
 };
 export const AsFormItem = () => asFormItemExampleHtml;

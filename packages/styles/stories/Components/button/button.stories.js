@@ -1,7 +1,6 @@
 import focusableDisabledExampleHtml from "./focusable-disabled.example.html?raw";
 import buttonStatesExampleHtml from "./button-states.example.html?raw";
 import iconAndTextExampleHtml from "./icon-and-text.example.html?raw";
-import sizesExampleHtml from "./sizes.example.html?raw";
 import splitMenuButtonExampleHtml from "./split-menu-button.example.html?raw";
 import menuButtonExampleHtml from "./menu-button.example.html?raw";
 import badgeOnButtonExampleHtml from "./badge-on-button.example.html?raw";
@@ -39,7 +38,6 @@ export default {
 * \`fd-segmented-button\` container for the button if you want to use a segmented button
 * \`fd-button-split\` container for the button if you want to use a split button
     * \`fd-button\` the main element
-    * \`fd-button--compact\` modifier class to make the button compact
     * \`fd-button--full-width\` modifier class to make the button full width
     * \`fd-button--toggled\` modifier class to indicate that the button is toggled
     * \`fd-button--menu\` modifier class to indicate that the button is a menu button
@@ -131,17 +129,6 @@ The split menu button can behave in two different ways:
 2. The main button triggers the last action chosen by the user from the menu list. Initially, it triggers the default action. However, when the user selects a different action, the default switches to the last action selected by the user.
 
 The split menu button can be displayed by using container with \`fd-button-split\` class with \`role=”group”\` and the \`aria-label=”button-split”\` attribute.
-`
-    }
-  }
-};
-export const Sizes = () => sizesExampleHtml;
-Sizes.storyName = 'Button sizes';
-Sizes.parameters = {
-  docs: {
-    description: {
-      story: `
-The buttons in the first row are displayed in cozy size, which is the default sizing and does not require a modifier. The compact buttons shown in the second row, however, can be displayed by adding the \`–compact\` modifier class to the element.
 `
     }
   }

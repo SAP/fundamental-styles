@@ -46,9 +46,6 @@ export const NoBackBtn = () => noBackBtnExampleHtml;
 NoBackBtn.storyName = 'No back button';
 NoBackBtn.parameters = {
   docs: {
-    story: {
-      iframeHeight: 400
-    },
     description: {
       story: 'This action bar doesn’t display a back button.'
     }
@@ -58,9 +55,6 @@ export const BackBtnNoDescription = () => backBtnNoDescriptionExampleHtml;
 BackBtnNoDescription.storyName = 'No description';
 BackBtnNoDescription.parameters = {
   docs: {
-    story: {
-      iframeHeight: 400
-    },
     description: {
       story: 'This action bar doesn’t display a description.'
     }
@@ -70,9 +64,6 @@ export const LongTitleDescription = () => longTitleDescriptionExampleHtml;
 LongTitleDescription.storyName = 'Descriptive';
 LongTitleDescription.parameters = {
   docs: {
-    story: {
-      iframeHeight: 400
-    },
     description: {
       story: 'The descriptive action bar displays a long page title and description.'
     }
@@ -82,9 +73,6 @@ export const Actions = () => actionsExampleHtml;
 Actions.storyName = 'Contextual';
 Actions.parameters = {
   docs: {
-    story: {
-      iframeHeight: 400
-    },
     description: {
       story: 'The contextual action bar displays a page title and contextual menu with several main actions. To display a contextual menu, add the `fd-popover` class to the`fd-action-bar__actions` element.'
     }
@@ -94,9 +82,6 @@ export const ResponsiveL = () => responsiveLExampleHtml;
 ResponsiveL.storyName = 'Responsive (M-L)';
 ResponsiveL.parameters = {
   docs: {
-    story: {
-      iframeHeight: 400
-    },
     description: {
       story: 'This action bar is responsive and fits the M and L sizes required for tablet and small desktop screens. To display this size, add the `fd-action-bar--m\\_l` modifier class to the main element.'
     }
@@ -106,9 +91,6 @@ export const ResponsiveXL = () => responsiveXLExampleHtml;
 ResponsiveXL.storyName = 'Responsive (XL)';
 ResponsiveXL.parameters = {
   docs: {
-    story: {
-      iframeHeight: 400
-    },
     description: {
       story: 'This action bar is responsive and fits the XL size required for larger screens of 1440px or more. To display this size, add the `fd-action-bar--xl` modifier class to the main element.'
     }
@@ -117,9 +99,6 @@ ResponsiveXL.parameters = {
 export const Mobile = () => mobileExampleHtml;
 Mobile.parameters = {
   docs: {
-    story: {
-      iframeHeight: 400
-    },
     description: {
       story: 'This action bar is mobile responsive. To display the mobile action bar, add the `fd-action-bar--s` modifier class to the main element.'
     }

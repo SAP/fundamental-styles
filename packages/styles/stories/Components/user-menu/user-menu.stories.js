@@ -1,4 +1,3 @@
-import compactExampleHtml from "./compact.example.html?raw";
 import thirdPartyContentExampleHtml from "./third-party-content.example.html?raw";
 import navigationExampleHtml from "./navigation.example.html?raw";
 import shellbarExampleHtml from "./shellbar.example.html?raw";
@@ -59,14 +58,6 @@ ThirdPartyContent.parameters = {
   docs: {
     description: {
       story: 'User menu displays a sub-navigation component which is populated with data through a 3rd party. '
-    }
-  }
-};
-export const Compact = () => compactExampleHtml;
-Compact.parameters = {
-  docs: {
-    description: {
-      story: 'User menu can be displayed in compact mode by adding the `--compact` modifier to the `fd-user-menu` component as well as the `fd-user-menu__body`.'
     }
   }
 };

@@ -25,7 +25,7 @@ There are two sizes of the toolbar that should be chosen based on the type of de
 
 Size&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Modifier class&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Screen width&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Device
 :---- | :-------- | :--------- | :-------
-Cozy | \`fd-toolbar--cozy\` | < 599 px | Mobile and small tablets
+Cozy | \`is-cozy\` | < 599 px | Mobile and small tablets
 Compact | Default | 600 px and above | Desktop
 <br>
 

@@ -46,7 +46,6 @@ Modifier class | Description
 \`fd-tile--feed\` | To display a feed tile.
 \`fd-tile--double\` | To double the layout dimensions. See the layout section below for more details.
 \`fd-tile--container—list\` | To display a list within a link tile.
-\`fd-tile--compact\` | To display link tile in compact mode (not with any other type).
 \`sap-icon--down\` or \`sap-icon--up\` | To display deviation arrows in the scale factor container area.
 
 **To display different states for numeric content (KPIs):**
@@ -247,7 +246,7 @@ Link tiles are displayed in two modes depending on the screen width.
 M-XL | >= 450px | Default | Floating: If there is insufficient space, the content wraps into two rows. (This behaviour is not provided by Fundamental Styles and requires JavaScript).
 S | < 450px | \`fd-tile-container--list\` | List: The tile grows vertically and the text wraps into two rows, placing the title in the first row and the subtitle in the second.
 
-The link tile can be displayed in cozy (default) and compact mode. To display link tile in compact mode, add the \`fd-tile--compact\` to the main element.
+The link tile can be displayed in cozy (default) and compact mode. To display link tile in compact mode, add the \`is-compact\` to the main element.
 
 **Note:** The compact mode should only be applied to link tiles and should not be applied to the other types.
 

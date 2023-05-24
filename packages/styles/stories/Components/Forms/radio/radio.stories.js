@@ -27,14 +27,10 @@ In special cases, there are only two mutually exclusive options. Combine them in
   }
 };
 export const Primary = () => primaryExampleHtml;
-Primary.storyName = 'Responsiveness';
 Primary.parameters = {
   docs: {
     story: {
       iframeHeight: 250
-    },
-    description: {
-      story: 'A radio button can appear in two different sizes. In `cozy` mode, it is bigger than it is in `compact` mode. This makes the checkbox easier to select on touch devices.'
     }
   }
 };

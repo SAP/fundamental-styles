@@ -9,7 +9,7 @@ import statesExampleHtml from "./states.example.html?raw";
 import inputWithActionsExampleHtml from "./input-with-actions.example.html?raw";
 import inputWithIconsExampleHtml from "./input-with-icons.example.html?raw";
 import textAddOnExampleHtml from "./text-add-on.example.html?raw";
-import sizesExampleHtml from "./sizes.example.html?raw";
+import defaultExampleHtml from "./sizes.example.html?raw";
 import '../../../../src/icon.scss';
 import '../../../../src/button.scss';
 import '../../../../src/form-item.scss';
@@ -24,14 +24,11 @@ export default {
     tags: ['f3', 'a11y', 'theme']
   }
 };
-export const Sizes = () => sizesExampleHtml;
-Sizes.parameters = {
+export const Default = () => defaultExampleHtml;
+Default.parameters = {
   docs: {
     story: {
       iframeHeight: 160
-    },
-    description: {
-      story: 'The Input Group supports **compact** mode (by virtue of the `--compact` modifier on child components).'
     }
   }
 };

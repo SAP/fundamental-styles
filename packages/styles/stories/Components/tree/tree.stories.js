@@ -32,7 +32,8 @@ export default {
 - The hierarchy turns out to be just a categorization based on several details of the item. In this case, an **an analytical table** provides multi-level grouping. Note that the analytical table is not fully responsive. It is only available for desktops and tablets, so you will need to take an adaptive approach by offering an additional UI for smartphones.
 
 ##Behaviour
-The tree is like a list containing hierarchical data. It acts as a container for items, with the possibility to expand and collapse nodes. The tree changes the indentation per level dynamically when the user expands a node, based on number of levels currently showing. The root tree contains a \`expanded-level-*\` class which keeps track of the current expanded level. The indentation rules are the same for compact and cozy mode.
+The tree is like a list containing hierarchical data. It acts as a container for items, with the possibility to expand and collapse nodes. The tree changes the indentation per level dynamically when the user expands a node, based on number of levels currently showing.
+The root tree contains a \`expanded-level-*\` class which keeps track of the current expanded level. The indentation rules are the same for compact and cozy mode.
 
 The default behaviour of the list item is that it does not wrap. To enable wrapping, add the \`fd-tree__content--wrap\` modifier class to the \`fd-tree__content\` element.
 

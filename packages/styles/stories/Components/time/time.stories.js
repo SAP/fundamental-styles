@@ -1,5 +1,4 @@
 import scrollableModeExampleHtml from "./scrollable-mode.example.html?raw";
-import compactModeExampleHtml from "./compact-mode.example.html?raw";
 import tabletModeExampleHtml from "./tablet-mode.example.html?raw";
 import defaultCozyModeExampleHtml from "./default-cozy-mode.example.html?raw";
 import '../../../src/icon.scss';
@@ -63,19 +62,6 @@ TabletMode.parameters = {
     },
     description: {
       story: `Time can be optimized for tablet screens, which adds padding on each side of the component. To display the time component for tablet, add the \`fd-time--tablet\` modifier class to the main element.
-        `
-    }
-  }
-};
-export const CompactMode = () => compactModeExampleHtml;
-CompactMode.storyName = 'Desktop';
-CompactMode.parameters = {
-  docs: {
-    story: {
-      iframeHeight: 550
-    },
-    description: {
-      story: `The time component can be displayed in compact mode, which is ideal for desktop screens.  To display the time component for desktop, add the \`fd-time--compact\` modifier class to the main element.
         `
     }
   }
