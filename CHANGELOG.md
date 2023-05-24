@@ -1,3 +1,12 @@
+# [0.29.0-rc.39](https://github.com/SAP/fundamental-styles/compare/v0.29.0-rc.38...v0.29.0-rc.39) (2023-05-24)
+
+
+### Bug Fixes
+
+* **styles:** update Dialog to latest Horizon [ci visual] ([#4536](https://github.com/SAP/fundamental-styles/issues/4536)) ([c07796e](https://github.com/SAP/fundamental-styles/commit/c07796e7239756988446f83ccaa7372c5df04225))
+
+
+
 # [0.29.0-rc.38](https://github.com/SAP/fundamental-styles/compare/v0.29.0-rc.37...v0.29.0-rc.38) (2023-05-24)
 
 
