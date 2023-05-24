@@ -20,29 +20,6 @@ $button: #{$fd-namespace}-button;
 $menu: #{$fd-namespace}-menu;
 
 .#{$block} {
-
-  // CONTENT
-  $fd-dialog-content-margin-y: 6%;
-  $fd-dialog-content-margin-x: 10%;
-  $fd-dialog-content-min-width: 20rem;
-  $fd-dialog-content-min-height: 7.5rem;
-  $fd-dialog-content-box-shadow: var(--sapContent_Shadow3);
-  $fd-dialog-content-border-radius: var(--sapElement_BorderCornerRadius);
-  $fd-dialog-content-padding-x: (def: 1rem, s: 1rem, m: 2rem, l: 2rem, xl: 3rem);
-
-  // RESIZE HANDLE
-  $fd-dialog-resize-handle-color: var(--sapButton_Lite_TextColor);
-
-  // BODY
-  $fd-dialog-body-padding-y: 1rem;
-  $fd-dialog-body-color: var(--sapGroup_ContentBackground);
-
-  // LOADER
-  $fd-dialog-loader-margin-y: 1.5rem;
-
-  // Footer
-  $fd-dialog-footer-button-min-width: 4rem;
-
   @include fd-reset();
 
   @extend %dialog;
@@ -171,22 +148,32 @@ $menu: #{$fd-namespace}-menu;
 
   &__resize-handle {
     @include fd-reset();
+    @include fd-square(1rem);
 
-    position: absolute;
+    @include fd-flex() {
+      align-items: flex-end;
+      justify-content: flex-end;
+    }
+
+    @include fd-set-position-right(0);
+
+    bottom: 0;
     font-size: 1rem;
-    cursor: se-resize;
     overflow: hidden;
-    bottom: -0.35rem;
-
-    @include fd-set-position-right(0.05rem);
+    margin: 0.125rem;
+    cursor: se-resize;
+    line-height: 1rem;
+    position: absolute;
 
     @include fd-rtl() {
       cursor: sw-resize;
       transform: scaleX(-1);
+      justify-content: flex-start;
     }
 
     @include fd-icon("resize-corner", "after") {
-      color: $fd-dialog-resize-handle-color;
+      height: 1rem;
+      color: var(--sapButton_Lite_TextColor);
     }
   }
 

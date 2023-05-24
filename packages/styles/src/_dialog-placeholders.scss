@@ -4,10 +4,12 @@ $fd-dialog-content-min-width: 20rem;
 $fd-dialog-content-min-height: 7.5rem;
 $fd-dialog-content-box-shadow: var(--sapContent_Shadow3);
 $fd-dialog-content-border-radius: var(--sapElement_BorderCornerRadius);
-$fd-dialog-content-padding-x: (s: 1rem, m: 2rem, l: 2rem, xl: 3rem);
+$fd-dialog-content-padding-x: (def: 1rem, s: 1rem, m: 2rem, l: 2rem, xl: 3rem);
 $fd-dialog-title-font-size: 1rem;
 $fd-dialog-footer-button-min-width: 4rem;
 $fd-dialog-body-color: var(--sapGroup_ContentBackground);
+$fd-dialog-body-padding-y: 1rem;
+$fd-dialog-loader-margin-y: 1.5rem;
 
 %dialog {
   position: fixed;
