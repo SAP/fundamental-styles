@@ -1,3 +1,17 @@
+# [0.29.0-rc.36](https://github.com/SAP/fundamental-styles/compare/v0.29.0-rc.35...v0.29.0-rc.36) (2023-05-24)
+
+
+### Bug Fixes
+
+* **styles:** update Menu to Horizon 2023 [ci visual] ([#4535](https://github.com/SAP/fundamental-styles/issues/4535)) ([8fc9b6f](https://github.com/SAP/fundamental-styles/commit/8fc9b6fd39ddb3062c6bfabf6b1735dd1e737fc1))
+
+
+### BREAKING CHANGES
+
+* **styles:** new elements with classes `fd-menu__active-dot`, `fd-menu__checkmark, fd-menu__input`; span element with class `fd-menu__separator` is removed as we can't have elements between li items
+
+
+
 # [0.29.0-rc.35](https://github.com/SAP/fundamental-styles/compare/v0.29.0-rc.34...v0.29.0-rc.35) (2023-05-19)
 
 
