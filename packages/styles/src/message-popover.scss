@@ -1,10 +1,11 @@
 @import "./mixins";
-@import "./message-view.scss";
+@import "./message-view";
 
 @mixin _fd-message-popover-trigger($colors, $state) {
   --fdButtonColor: #{map-get(map-get($colors, $state), "color")};
   --fdButtonBackgroundColor: #{map-get(map-get($colors, $state), "backgroundColor")};
   --fdButtonBorderColor: #{map-get(map-get($colors, $state), "borderColor")};
+  --fdButtonTextShadow: #{map-get(map-get($colors, $state), "textShadow")};
 }
 
 $block: #{$fd-namespace}-message-popover;
@@ -14,80 +15,99 @@ $fd-trigger-states: (
     "regular": (
       "color": var(--sapButton_Critical_TextColor),
       "backgroundColor": var(--sapButton_Critical_Background),
-      "borderColor": var(--sapButton_Critical_BorderColor)
+      "borderColor": var(--sapButton_Critical_BorderColor),
+      "textShadow": var(--fdMessagePopover_Critical_Regular_Text_Shadow)
     ),
     "hover": (
       "color": var(--sapButton_Critical_Hover_TextColor),
       "backgroundColor": var(--sapButton_Critical_Hover_Background),
-      "borderColor": var(--sapButton_Critical_Hover_BorderColor)
+      "borderColor": var(--sapButton_Critical_Hover_BorderColor),
+      "textShadow": var(--fdMessagePopover_Critical_Hover_Text_Shadow)
     ),
     "active": (
       "color": var(--sapButton_Critical_Active_TextColor),
       "backgroundColor": var(--sapButton_Critical_Active_Background),
-      "borderColor": var(--sapButton_Critical_Active_BorderColor)
+      "borderColor": var(--sapButton_Critical_Active_BorderColor),
+      "textShadow": var(--fdMessagePopover_Critical_Active_Text_Shadow)
     )
   ),
   "negative": (
     "regular": (
       "color": var(--sapButton_Negative_TextColor),
       "backgroundColor": var(--sapButton_Negative_Background),
-      "borderColor": var(--sapButton_Negative_BorderColor)
+      "borderColor": var(--sapButton_Negative_BorderColor),
+      "textShadow": var(--fdMessagePopover_Negative_Regular_Text_Shadow)
     ),
     "hover": (
       "color": var(--sapButton_Negative_Hover_TextColor),
       "backgroundColor": var(--sapButton_Negative_Hover_Background),
-      "borderColor": var(--sapButton_Negative_Hover_BorderColor)
+      "borderColor": var(--sapButton_Negative_Hover_BorderColor),
+      "textShadow": var(--fdMessagePopover_Negative_Hover_Text_Shadow)
     ),
     "active": (
       "color": var(--sapButton_Negative_Active_TextColor),
       "backgroundColor": var(--sapButton_Negative_Active_Background),
-      "borderColor": var(--sapButton_Negative_Active_BorderColor)
+      "borderColor": var(--sapButton_Negative_Active_BorderColor),
+      "textShadow": var(--fdMessagePopover_Negative_Active_Text_Shadow)
     )
   ),
   "success": (
     "regular": (
       "color": var(--sapButton_Success_TextColor),
       "backgroundColor": var(--sapButton_Success_Background),
-      "borderColor": var(--sapButton_Success_BorderColor)
+      "borderColor": var(--sapButton_Success_BorderColor),
+      "textShadow": var(--fdMessagePopover_Success_Regular_Text_Shadow)
     ),
     "hover": (
       "color": var(--sapButton_Success_Hover_TextColor),
       "backgroundColor": var(--sapButton_Success_Hover_Background),
-      "borderColor": var(--sapButton_Success_Hover_BorderColor)
+      "borderColor": var(--sapButton_Success_Hover_BorderColor),
+      "textShadow": var(--fdMessagePopover_Success_Hover_Text_Shadow)
     ),
     "active": (
       "color": var(--sapButton_Success_Active_TextColor),
       "backgroundColor": var(--sapButton_Success_Active_Background),
-      "borderColor": var(--sapButton_Success_Active_BorderColor)
+      "borderColor": var(--sapButton_Success_Active_BorderColor),
+      "textShadow": var(--fdMessagePopover_Success_Active_Text_Shadow)
     )
   ),
   "information": (
     "regular": (
-      "color": var(--sapButton_Neutral_TextColor),
-      "backgroundColor": var(--sapButton_Neutral_Background),
-      "borderColor": var(--sapButton_Neutral_BorderColor)
+      "color": var(--fdMessagePopover_Information_Regular_Color),
+      "backgroundColor": var(--fdMessagePopover_Information_Regular_Background_Color),
+      "borderColor": var(--fdMessagePopover_Information_Regular_Border_Color),
+      "textShadow": var(--fdMessagePopover_Information_Regular_Text_Shadow)
     ),
     "hover": (
-      "color": var(--sapButton_Neutral_Hover_TextColor),
-      "backgroundColor": var(--sapButton_Neutral_Hover_Background),
-      "borderColor": var(--sapButton_Neutral_Hover_BorderColor)
+      "color": var(--fdMessagePopover_Information_Hover_Color),
+      "backgroundColor": var(--fdMessagePopover_Information_Hover_Background_Color),
+      "borderColor": var(--fdMessagePopover_Information_Hover_Border_Color),
+      "textShadow": var(--fdMessagePopover_Information_Hover_Text_Shadow)
     ),
     "active": (
-      "color": var(--sapButton_Neutral_Active_TextColor),
-      "backgroundColor": var(--sapButton_Neutral_Active_Background),
-      "borderColor": var(--sapButton_Neutral_Active_BorderColor)
+      "color": var(--fdMessagePopover_Information_Active_Color),
+      "backgroundColor": var(--fdMessagePopover_Information_Active_Background_Color),
+      "borderColor": var(--fdMessagePopover_Information_Active_Border_Color),
+      "textShadow": var(--fdMessagePopover_Information_Active_Text_Shadow)
     )
   ),
 );
 
 .#{$block} {
   &__trigger {
+    --fdButtonFocusColor: var(--sapContent_ContrastFocusColor);
+
+    text-shadow: var(--fdButtonTextShadow);
+    border-width: var(--fdMessagePopover_Trigger_Border_Width);
+
     @include fd-focus() {
-      outline-color: var(--sapContent_ContrastFocusColor);
+      &::after {
+        border-color: var(--fdButtonFocusColor);
+      }
     }
 
     @each $state, $colors in $fd-trigger-states {
-      &--#{$state} {
+      &.#{$block}__trigger--#{$state} {
         @include _fd-message-popover-trigger($colors, "regular");
 
         @include fd-hover() {
@@ -96,6 +116,19 @@ $fd-trigger-states: (
 
         @include fd-active() {
           @include _fd-message-popover-trigger($colors, "active");
+
+          --fdButtonFocusColor: var(--fdMessagePopover_Active_Focus_Outline_Color);
+        }
+
+        @include fd-disabled() {
+          @include _fd-message-popover-trigger($colors, "regular");
+
+          pointer-events: none;
+          opacity: var(--sapContent_DisabledOpacity);
+        }
+
+        @if $state == "information" {
+          --fdButtonFocusColor: var(--fdMessagePopover_Information_Focus_Outline_Color);
         }
       }
     }

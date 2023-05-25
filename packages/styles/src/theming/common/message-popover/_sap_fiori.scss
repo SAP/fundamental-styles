@@ -1,0 +1,35 @@
+:root {
+  --fdMessagePopover_Trigger_Font_Weight: var(--sapFontBoldFamily);
+  --fdMessagePopover_Trigger_Border_Width: 0.0625rem;
+  --fdMessagePopover_Active_Focus_Outline_Color: var(--sapContent_ContrastFocusColor);
+
+  // Critical
+  --fdMessagePopover_Critical_Regular_Text_Shadow: var(--sapContent_ContrastTextShadow);
+  --fdMessagePopover_Critical_Hover_Text_Shadow: var(--sapContent_ContrastTextShadow);
+  --fdMessagePopover_Critical_Active_Text_Shadow: novar(--sapContent_ContrastTextShadow) ne;
+
+  // Success
+  --fdMessagePopover_Success_Regular_Text_Shadow: var(--sapContent_ContrastTextShadow);
+  --fdMessagePopover_Success_Hover_Text_Shadow: var(--sapContent_ContrastTextShadow);
+  --fdMessagePopover_Success_Active_Text_Shadow: var(--sapContent_ContrastTextShadow);
+
+  // Negative
+  --fdMessagePopover_Negative_Regular_Text_Shadow: var(--sapContent_ContrastTextShadow);
+  --fdMessagePopover_Negative_Hover_Text_Shadow: var(--sapContent_ContrastTextShadow);
+  --fdMessagePopover_Negative_Active_Text_Shadow: var(--sapContent_ContrastTextShadow);
+
+  // Information
+  --fdMessagePopover_Information_Focus_Outline_Color: var(--sapContent_ContrastFocusColor);
+  --fdMessagePopover_Information_Regular_Text_Shadow: var(--sapContent_ContrastTextShadow);
+  --fdMessagePopover_Information_Regular_Background_Color: var(--sapButton_Neutral_Background);
+  --fdMessagePopover_Information_Regular_Color: var(--sapButton_Neutral_TextColor);
+  --fdMessagePopover_Information_Regular_Border_Color: var(--sapButton_Neutral_BorderColor);
+  --fdMessagePopover_Information_Hover_Text_Shadow: var(--sapContent_ContrastTextShadow);
+  --fdMessagePopover_Information_Hover_Background_Color: var(--sapButton_Neutral_Hover_Background);
+  --fdMessagePopover_Information_Hover_Color: var(--sapButton_Neutral_Hover_TextColor);
+  --fdMessagePopover_Information_Hover_Border_Color: var(--sapButton_Neutral_Hover_BorderColor);
+  --fdMessagePopover_Information_Active_Text_Shadow: var(--sapContent_ContrastTextShadow);
+  --fdMessagePopover_Information_Active_Background_Color: var(--sapButton_Neutral_Active_Background);
+  --fdMessagePopover_Information_Active_Color: var(--sapButton_Neutral_Active_TextColor);
+  --fdMessagePopover_Information_Active_Border_Color: var(--sapButton_Neutral_Active_BorderColor);
+}

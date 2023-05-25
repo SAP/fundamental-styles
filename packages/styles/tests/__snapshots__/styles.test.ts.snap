@@ -17490,8 +17490,8 @@ exports[`Check stories > Components/Message Popover > Story DetailsView > Should
 <div style=\\"height: 500px\\">
   <div class=\\"fd-popover\\" style=\\"margin-top: 300px;\\">
       <div class=\\"fd-popover__control\\">
-          <button aria-controls=\\"popoverHSF5\\" aria-expanded=\\"true\\" aria-haspopup=\\"dialog\\" class=\\"fd-button fd-message-popover__trigger fd-message-popover__trigger--negative\\" onclick=\\"onPopoverClick('popoverHSF5');\\" role=\\"button\\">
-            <i class=\\"sap-icon--message-error\\" aria-label=\\"Negative\\"></i>
+          <button aria-controls=\\"popoverHSF5\\" aria-expanded=\\"true\\" aria-haspopup=\\"dialog\\" class=\\"fd-button fd-message-popover__trigger fd-message-popover__trigger--information\\" onclick=\\"onPopoverClick('popoverHSF5');\\" role=\\"button\\">
+            <i class=\\"sap-icon--message-information\\" aria-label=\\"Information\\"></i>
             <span class=\\"fd-button__text\\">5</span>
           </button>
       </div>
@@ -17602,6 +17602,140 @@ exports[`Check stories > Components/Message Popover > Story DetailsView > Should
           </div>
       </section>
   </div>
+</div>
+"
+`;
+
+exports[`Check stories > Components/Message Popover > Story MessageTrigger > Should match snapshot 1`] = `
+"
+<div style=\\"height: 500px\\">
+  <h3>(Secondary) Information/ Neutral Button</h3>
+  <button class=\\"fd-button fd-message-popover__trigger fd-message-popover__trigger--information\\" role=\\"button\\">
+    <i class=\\"sap-icon--message-information\\" aria-label=\\"Information\\"></i>
+    <span class=\\"fd-button__text\\">5</span>
+  </button>
+
+  <button class=\\"fd-button fd-message-popover__trigger fd-message-popover__trigger--information is-hover\\" role=\\"button\\">
+    <i class=\\"sap-icon--message-information\\" aria-label=\\"Information\\"></i>
+    <span class=\\"fd-button__text\\">5</span>
+  </button>
+
+  <button class=\\"fd-button fd-message-popover__trigger fd-message-popover__trigger--information is-active\\" role=\\"button\\">
+    <i class=\\"sap-icon--message-information\\" aria-label=\\"Information\\"></i>
+    <span class=\\"fd-button__text\\">5</span>
+  </button>
+
+  <button class=\\"fd-button fd-message-popover__trigger fd-message-popover__trigger--information is-active is-focus\\" role=\\"button\\">
+    <i class=\\"sap-icon--message-information\\" aria-label=\\"Information\\"></i>
+    <span class=\\"fd-button__text\\">5</span>
+  </button>
+
+  <button class=\\"fd-button fd-message-popover__trigger fd-message-popover__trigger--information is-disabled\\" role=\\"button\\">
+    <i class=\\"sap-icon--message-information\\" aria-label=\\"Information\\"></i>
+    <span class=\\"fd-button__text\\">5</span>
+  </button>
+
+  <button class=\\"fd-button fd-message-popover__trigger fd-message-popover__trigger--information is-focus\\" role=\\"button\\">
+    <i class=\\"sap-icon--message-information\\" aria-label=\\"Information\\"></i>
+    <span class=\\"fd-button__text\\">5</span>
+  </button>
+
+
+  <h3>(Primary) Negative Button</h3>
+  <button class=\\"fd-button fd-message-popover__trigger fd-message-popover__trigger--negative\\" role=\\"button\\">
+    <i class=\\"sap-icon--message-error\\" aria-label=\\"Negative\\"></i>
+    <span class=\\"fd-button__text\\">5</span>
+  </button>
+
+  <button class=\\"fd-button fd-message-popover__trigger fd-message-popover__trigger--negative is-hover\\" role=\\"button\\">
+    <i class=\\"sap-icon--message-error\\" aria-label=\\"Negative\\"></i>
+    <span class=\\"fd-button__text\\">5</span>
+  </button>
+
+  <button class=\\"fd-button fd-message-popover__trigger fd-message-popover__trigger--negative is-active\\" role=\\"button\\">
+    <i class=\\"sap-icon--message-error\\" aria-label=\\"Negative\\"></i>
+    <span class=\\"fd-button__text\\">5</span>
+  </button>
+
+  <button class=\\"fd-button fd-message-popover__trigger fd-message-popover__trigger--negative is-active is-focus\\" role=\\"button\\">
+    <i class=\\"sap-icon--message-error\\" aria-label=\\"Negative\\"></i>
+    <span class=\\"fd-button__text\\">5</span>
+  </button>
+
+  <button class=\\"fd-button fd-message-popover__trigger fd-message-popover__trigger--negative is-disabled\\" role=\\"button\\">
+    <i class=\\"sap-icon--message-error\\" aria-label=\\"Negative\\"></i>
+    <span class=\\"fd-button__text\\">5</span>
+  </button>
+
+  <button class=\\"fd-button fd-message-popover__trigger fd-message-popover__trigger--negative is-focus\\" role=\\"button\\">
+    <i class=\\"sap-icon--message-error\\" aria-label=\\"Negative\\"></i>
+    <span class=\\"fd-button__text\\">5</span>
+  </button>
+
+  <h3>(Primary) Critical Button</h3>
+  <button class=\\"fd-button fd-message-popover__trigger fd-message-popover__trigger--critical\\" role=\\"button\\">
+    <i class=\\"sap-icon--message-warning\\" aria-label=\\"Critical\\"></i>
+    <span class=\\"fd-button__text\\">5</span>
+  </button>
+
+  <button class=\\"fd-button fd-message-popover__trigger fd-message-popover__trigger--critical is-hover\\" role=\\"button\\">
+    <i class=\\"sap-icon--message-warning\\" aria-label=\\"Critical\\"></i>
+    <span class=\\"fd-button__text\\">5</span>
+  </button>
+
+  <button class=\\"fd-button fd-message-popover__trigger fd-message-popover__trigger--critical is-active\\" role=\\"button\\">
+    <i class=\\"sap-icon--message-warning\\" aria-label=\\"Critical\\"></i>
+    <span class=\\"fd-button__text\\">5</span>
+  </button>
+
+  <button class=\\"fd-button fd-message-popover__trigger fd-message-popover__trigger--critical is-active is-focus\\" role=\\"button\\">
+    <i class=\\"sap-icon--message-warning\\" aria-label=\\"Critical\\"></i>
+    <span class=\\"fd-button__text\\">5</span>
+  </button>
+
+  <button class=\\"fd-button fd-message-popover__trigger fd-message-popover__trigger--critical is-disabled\\" role=\\"button\\">
+    <i class=\\"sap-icon--message-warning\\" aria-label=\\"Critical\\"></i>
+    <span class=\\"fd-button__text\\">5</span>
+  </button>
+
+  <button class=\\"fd-button fd-message-popover__trigger fd-message-popover__trigger--critical is-focus\\" role=\\"button\\">
+    <i class=\\"sap-icon--message-warning\\" aria-label=\\"Critical\\"></i>
+    <span class=\\"fd-button__text\\">5</span>
+  </button>
+
+  <h3>(Primary) success Button</h3>
+  <button class=\\"fd-button fd-message-popover__trigger fd-message-popover__trigger--success\\" role=\\"button\\">
+    <i class=\\"sap-icon--message-success\\" aria-label=\\"Success\\"></i>
+    <span class=\\"fd-button__text\\">5</span>
+  </button>
+
+  <button class=\\"fd-button fd-message-popover__trigger fd-message-popover__trigger--success is-hover\\" role=\\"button\\">
+    <i class=\\"sap-icon--message-success\\" aria-label=\\"Success\\"></i>
+    <span class=\\"fd-button__text\\">5</span>
+  </button>
+
+  <button class=\\"fd-button fd-message-popover__trigger fd-message-popover__trigger--success is-active\\" role=\\"button\\">
+    <i class=\\"sap-icon--message-success\\" aria-label=\\"Success\\"></i>
+    <span class=\\"fd-button__text\\">5</span>
+  </button>
+
+  <button class=\\"fd-button fd-message-popover__trigger fd-message-popover__trigger--success is-active is-focus\\" role=\\"button\\">
+    <i class=\\"sap-icon--message-success\\" aria-label=\\"Success\\"></i>
+    <span class=\\"fd-button__text\\">5</span>
+  </button>
+
+  <button class=\\"fd-button fd-message-popover__trigger fd-message-popover__trigger--success is-disabled\\" role=\\"button\\">
+    <i class=\\"sap-icon--message-success\\" aria-label=\\"Success\\"></i>
+    <span class=\\"fd-button__text\\">5</span>
+  </button>
+
+  <button class=\\"fd-button fd-message-popover__trigger fd-message-popover__trigger--success is-focus\\" role=\\"button\\">
+    <i class=\\"sap-icon--message-success\\" aria-label=\\"Success\\"></i>
+    <span class=\\"fd-button__text\\">5</span>
+  </button>
+
+
+
 </div>
 "
 `;
