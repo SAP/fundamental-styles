@@ -1,3 +1,12 @@
+# [0.29.0-rc.40](https://github.com/SAP/fundamental-styles/compare/v0.29.0-rc.39...v0.29.0-rc.40) (2023-05-25)
+
+
+### Bug Fixes
+
+* **styles:** update Message Value State Button [ci visual] ([#4555](https://github.com/SAP/fundamental-styles/issues/4555)) ([0e96d75](https://github.com/SAP/fundamental-styles/commit/0e96d75b6d7c5485d6114bddd457c05f81377882))
+
+
+
 # [0.29.0-rc.39](https://github.com/SAP/fundamental-styles/compare/v0.29.0-rc.38...v0.29.0-rc.39) (2023-05-24)
 
 
