@@ -26,14 +26,26 @@ $block: #{$fd-namespace}-textarea;
 
   &[readonly],
   &.is-readonly {
-    font-size: var(--sapFontSmallSize);
+    box-shadow: none;
     color: var(--sapField_TextColor);
+    font-size: var(--sapFontSmallSize);
+    background: var(--sapField_ReadOnly_Background);
     border-radius: var(--sapField_BorderCornerRadius);
-    background-color: var(--sapField_ReadOnly_Background);
+    border: var(--sapField_BorderWidth) dashed var(--sapField_ReadOnly_BorderColor);
+
+    @include fd-hover() {
+      background: var(--sapField_ReadOnly_Background);
+    }
+
+    @include fd-focus() {
+      outline-offset: -0.25rem;
+      background: var(--sapField_ReadOnly_Background);
+    }
   }
 
   &::-webkit-scrollbar-track,
   &::-webkit-scrollbar-corner {
+    background: transparent;
     border-radius: 0 var(--sapField_BorderCornerRadius) var(--sapField_BorderCornerRadius) 0 !important;
   }
 

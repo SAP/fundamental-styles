@@ -175,7 +175,6 @@ $slider-side-padding: calc((var(--fdSlider_Handle_Width) * 0.5) + #{$handle-outl
     border-radius: var(--fdSlider_Handle_Border_Radius);
     background-color: var(--fdSlider_Handle_Background);
     border: var(--fdSlider_Handle_Border);
-    box-shadow: var(--fdSlider_Handle_Box_Shadow);
     z-index: 3;
 
     &::before {
@@ -198,23 +197,44 @@ $slider-side-padding: calc((var(--fdSlider_Handle_Width) * 0.5) + #{$handle-outl
     }
 
     @include fd-focus() {
-      outline: $handle-outline-width var(--sapContent_FocusStyle) var(--fdSlider_Focus_Handle_Outline_Color);
-      outline-offset: $handle-outline-offset;
-      border: var(--fdSlider_Hover_Handle_Border);
-      background-color: var(--fdSlider_Active_Handle_Background);
+      outline: none;
+      background-color: var(--fdSlider_Focus_Handle_Background);
+      border: var(--fdSlider_Focus_Handle_Border);
+
+      &::after {
+        display: none;
+      }
     }
 
     @include fd-hover() {
       border-color: var(--fdSlider_Handle_Border_Hover_Color);
       background-color: var(--fdSlider_Hover_Handle_Background);
       border: var(--fdSlider_Hover_Handle_Border);
-      box-shadow: var(--fdSlider_Hover_Handle_Box_Shadow);
+
+      @include fd-focus() {
+        outline: none;
+        background-color: var(--fdSlider_Focus_Handle_Background);
+        border: var(--fdSlider_Focus_Handle_Border);
+
+        &::after {
+          display: none;
+        }
+      }
     }
 
     @include fd-active() {
       background-color: var(--fdSlider_Active_Handle_Background);
       border: var(--fdSlider_Active_Handle_Border);
-      box-shadow: var(--fdSlider_Active_Handle_Box_Shadow);
+
+      @include fd-focus() {
+        outline: none;
+        background-color: var(--fdSlider_Focus_Handle_Background);
+        border: var(--fdSlider_Focus_Handle_Border);
+
+        &::after {
+          display: none;
+        }
+      }
     }
   }
 
@@ -228,7 +248,7 @@ $slider-side-padding: calc((var(--fdSlider_Handle_Width) * 0.5) + #{$handle-outl
     left: 0;
     right: 0;
     margin: 0 $focus-range-side-margin;
-    border-radius: 0.5rem;
+    border-radius: var(--fdSlider_Range_Track_Border_Radius);
 
     @include fd-focus() {
       outline: var(--fdSlider_Focus_Range_Outline);
@@ -245,31 +265,27 @@ $slider-side-padding: calc((var(--fdSlider_Handle_Width) * 0.5) + #{$handle-outl
       .#{$block}__handle {
         background-color: var(--fdSlider_Range_Handle_Background);
         border: var(--fdSlider_Range_Handle_Border);
-        box-shadow: var(--fdSlider_Range_Handle_Box_Shadow);
 
         @include fd-hover() {
           background-color: var(--fdSlider_Range_Hover_Handle_Background);
           border-color: var(--fdSlider_Range_Hover_Handle_Border_Color);
-          box-shadow: var(--fdSlider_Range_Hover_Handle_Box_Shadow);
         }
 
         @include fd-active() {
           background-color: var(--fdSlider_Range_Active_Handle_Background);
           border-color: var(--fdSlider_Range_Active_Handle_Border_Color);
-          box-shadow: var(--fdSlider_Range_Active_Handle_Box_Shadow);
 
           &::after {
-            display: none;
+            display: var(--fdSlider_Focus_Handle_Display);
           }
         }
 
         @include fd-focus() {
           background-color: var(--fdSlider_Range_Focus_Handle_Background);
           border: var(--fdSlider_Range_Focus_Handle_Border);
-          box-shadow: var(--fdSlider_Range_Focus_Handle_Box_Shadow);
 
           &::after {
-            display: none;
+            display: var(--fdSlider_Focus_Handle_Display);
           }
         }
       }

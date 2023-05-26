@@ -100,15 +100,19 @@ $fd-trigger-states: (
     text-shadow: var(--fdButtonTextShadow);
     border-width: var(--fdMessagePopover_Trigger_Border_Width);
 
-    @include fd-focus() {
-      &::after {
-        border-color: var(--fdButtonFocusColor);
-      }
-    }
-
     @each $state, $colors in $fd-trigger-states {
       &.#{$block}__trigger--#{$state} {
         @include _fd-message-popover-trigger($colors, "regular");
+
+        @include fd-focus() {
+          &::after {
+            border-color: var(--fdButtonFocusColor);
+          }
+        }
+
+        @if $state == "information" {
+          --fdButtonFocusColor: var(--fdMessagePopover_Information_Focus_Outline_Color);
+        }
 
         @include fd-hover() {
           @include _fd-message-popover-trigger($colors, "hover");
@@ -125,10 +129,6 @@ $fd-trigger-states: (
 
           pointer-events: none;
           opacity: var(--sapContent_DisabledOpacity);
-        }
-
-        @if $state == "information" {
-          --fdButtonFocusColor: var(--fdMessagePopover_Information_Focus_Outline_Color);
         }
       }
     }

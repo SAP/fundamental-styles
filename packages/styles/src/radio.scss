@@ -52,7 +52,6 @@ $block: #{$fd-namespace}-radio;
     &::after {
       @include fd-square(var(--fdRadio_Inner_Content_Size));
 
-      top: var(--fdRadio_Inner_Content_Padding);
       left: var(--fdRadio_Inner_Content_Padding);
     }
 
@@ -99,8 +98,16 @@ $block: #{$fd-namespace}-radio;
         white-space: initial;
       }
 
-      &::after {
-        top: initial;
+      &-top-aligned {
+        align-items: flex-start;
+
+        .#{$block}__text {
+          white-space: initial;
+        }
+
+        &::after {
+          top: var(--fdRadio_Inner_Content_Padding);
+        }
       }
     }
   }
@@ -108,8 +115,6 @@ $block: #{$fd-namespace}-radio;
   &__text {
     @include fd-reset();
     @include fd-ellipsis();
-
-    line-height: 1rem;
   }
 
   &:checked + .#{$block}__label::after {
@@ -172,6 +177,7 @@ $block: #{$fd-namespace}-radio;
       --fdRadio_Inner_Border_Style: var(--fdRadio_Inner_Border_Style_ReadOnly);
       --fdRadio_Inner_Border_Color: var(--fdRadio_Inner_Border_Color_ReadOnly);
       --fdRadio_Active_Dot_Color: var(--fdRadio_Active_Dot_Color_ReadOnly);
+      --fdRadio_Hover_Background_Color: var(--fdRadio_Background_Color_ReadOnly);
     }
   }
 
