@@ -321,7 +321,8 @@ $fd-popover-arrow-offset-x: calc(var(--fdIcon_Button_Width) * 0.5 - #{$fd-popove
         }
       }
 
-      &-y-end {
+      &-y-end,
+      &-y-bottom {
         &::before {
           top: auto;
           bottom: calc(#{$fd-popover-arrow-offset-y} + var(--fdPopover_Border_Width));
@@ -445,7 +446,8 @@ $fd-popover-arrow-offset-x: calc(var(--fdIcon_Button_Width) * 0.5 - #{$fd-popove
           --fdPopover_Resize_Handle_Rotate_Angle: -90deg;
         }
 
-        &.#{$blockBody}--bottom.#{$blockBody}--arrow-y-end {
+        &.#{$blockBody}--bottom.#{$blockBody}--arrow-y-end,
+        &.#{$blockBody}--bottom.#{$blockBody}--arrow-y-bottom {
           --fdPopover_Resize_Handle_Position_Top: 0;
           --fdPopover_Resize_Handle_Position_Bottom: auto;
           --fdPopover_Resize_Handle_Position_Right: 0;
@@ -466,7 +468,8 @@ $fd-popover-arrow-offset-x: calc(var(--fdIcon_Button_Width) * 0.5 - #{$fd-popove
         --fdPopover_Resize_Handle_Transform_Scale: -1;
 
         &.#{$blockBody}--middle.#{$blockBody}--arrow-y-center,
-        &.#{$blockBody}--bottom.#{$blockBody}--arrow-y-end {
+        &.#{$blockBody}--bottom.#{$blockBody}--arrow-y-end,
+        &.#{$blockBody}--bottom.#{$blockBody}--arrow-y-bottom {
           --fdPopover_Resize_Handle_Position_Top: 0;
           --fdPopover_Resize_Handle_Position_Bottom: auto;
           --fdPopover_Resize_Handle_Rotate_Angle: 90deg;
