@@ -111,7 +111,9 @@ To align the popover arrow with the trigger apply the following modifier classes
 | \`fd-popover__body--arrow-x-center\` | Positions the arrow horizontally centered on the popover. |
 | \`fd-popover__body--arrow-x-end\` | Positions the arrow to the end by horizontal line of the popover body. |
 | \`fd-popover__body--arrow-y-center\` | Positions the arrow vertically centered on the popover. |
-| \`fd-popover__body--arrow-y-end\` | Positions the arrow to the end by vertical line of the popover. |
+| \`fd-popover__body--arrow-y-bottom\` | Positions the arrow to the end by vertical line of the popover. |
+
+**note:** \`fd-popover__body--arrow-y--end\` class has been deprecated in favor of \`fd-popover__body--arrow-y-bottom\`!
         `
     }
   }
