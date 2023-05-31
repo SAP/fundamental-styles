@@ -1,3 +1,12 @@
+# [0.29.0-rc.41](https://github.com/SAP/fundamental-styles/compare/v0.29.0-rc.40...v0.29.0-rc.41) (2023-05-31)
+
+
+### Bug Fixes
+
+* **styles:** fixed semantics of the popover vertical arrow positioning modifier name [ci visual] ([#4569](https://github.com/SAP/fundamental-styles/issues/4569)) ([262a747](https://github.com/SAP/fundamental-styles/commit/262a747fb25934d0b493dc396e260daab7d95fda))
+
+
+
 # [0.29.0-rc.40](https://github.com/SAP/fundamental-styles/compare/v0.29.0-rc.39...v0.29.0-rc.40) (2023-05-25)
 
 
