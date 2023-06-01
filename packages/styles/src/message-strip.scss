@@ -13,6 +13,129 @@ $block: #{$fd-namespace}-message-strip;
   --fdMessageStrip_Left_Padding: 2.4375rem;
   --fdMessageStrip_Right_Padding: 0.9375rem;
 
+  $fd-avatar-indication-colors: (
+    "1": (
+      "background-color": var(--sapIndicationColor_1_Background),
+      "text-color": var(--sapIndicationColor_1_TextColor),
+      "border-color": var(--sapIndicationColor_1_BorderColor),
+      "text-shadow": none
+    ),
+    "2": (
+      "background-color": var(--sapIndicationColor_2_Background),
+      "text-color": var(--sapIndicationColor_2_TextColor),
+      "border-color": var(--sapIndicationColor_2_BorderColor),
+      "text-shadow": none
+    ),
+    "3": (
+      "background-color": var(--sapIndicationColor_3_Background),
+      "text-color": var(--sapIndicationColor_3_TextColor),
+      "border-color": var(--sapIndicationColor_3_BorderColor),
+      "text-shadow": none
+    ),
+    "4": (
+      "background-color": var(--sapIndicationColor_4_Background),
+      "text-color": var(--sapIndicationColor_4_TextColor),
+      "border-color": var(--sapIndicationColor_4_BorderColor),
+      "text-shadow": none
+    ),
+    "5": (
+      "background-color": var(--sapIndicationColor_5_Background),
+      "text-color": var(--sapIndicationColor_5_TextColor),
+      "border-color": var(--sapIndicationColor_5_BorderColor),
+      "text-shadow": none
+    ),
+    "6": (
+      "background-color": var(--sapIndicationColor_6_Background),
+      "text-color": var(--sapIndicationColor_6_TextColor),
+      "border-color": var(--sapIndicationColor_6_BorderColor),
+      "text-shadow": none
+    ),
+    "7": (
+      "background-color": var(--sapIndicationColor_7_Background),
+      "text-color": var(--sapIndicationColor_7_TextColor),
+      "border-color": var(--sapIndicationColor_7_BorderColor),
+      "text-shadow": none
+    ),
+    "8": (
+      "background-color": var(--sapIndicationColor_8_Background),
+      "text-color": var(--sapIndicationColor_8_TextColor),
+      "border-color": var(--sapIndicationColor_8_BorderColor),
+      "text-shadow": none
+    ),
+    "9": (
+      "background-color": var(--sapIndicationColor_9_Background),
+      "text-color": var(--sapIndicationColor_9_TextColor),
+      "border-color": var(--sapIndicationColor_9_BorderColor),
+      "text-shadow": none
+    ),
+    "10": (
+      "background-color": var(--sapIndicationColor_10_Background),
+      "text-color": var(--sapIndicationColor_10_TextColor),
+      "border-color": var(--sapIndicationColor_10_BorderColor),
+      "text-shadow": none
+    ),
+    "1b": (
+      "background-color": var(--sapIndicationColor_1b),
+      "text-color": var(--sapIndicationColor_1),
+      "border-color": var(--sapIndicationColor_1b_BorderColor),
+      "text-shadow": var(--sapContent_TextShadow)
+    ),
+    "2b": (
+      "background-color": var(--sapIndicationColor_2b),
+      "text-color": var(--sapIndicationColor_2),
+      "border-color": var(--sapIndicationColor_2b_BorderColor),
+      "text-shadow": var(--sapContent_TextShadow)
+    ),
+    "3b": (
+      "background-color": var(--sapIndicationColor_3b),
+      "text-color": var(--sapIndicationColor_3),
+      "border-color": var(--sapIndicationColor_3b_BorderColor),
+      "text-shadow": var(--sapContent_TextShadow)
+    ),
+    "4b": (
+      "background-color": var(--sapIndicationColor_4b),
+      "text-color": var(--sapIndicationColor_4),
+      "border-color": var(--sapIndicationColor_4b_BorderColor),
+      "text-shadow": var(--sapContent_TextShadow)
+    ),
+    "5b": (
+      "background-color": var(--sapIndicationColor_5b),
+      "text-color": var(--sapIndicationColor_5),
+      "border-color": var(--sapIndicationColor_5b_BorderColor),
+      "text-shadow": var(--sapContent_TextShadow)
+    ),
+    "6b": (
+      "background-color": var(--sapIndicationColor_6b),
+      "text-color": var(--sapIndicationColor_6),
+      "border-color": var(--sapIndicationColor_6b_BorderColor),
+      "text-shadow": var(--sapContent_TextShadow)
+    ),
+    "7b": (
+      "background-color": var(--sapIndicationColor_7b),
+      "text-color": var(--sapIndicationColor_7),
+      "border-color": var(--sapIndicationColor_7b_BorderColor),
+      "text-shadow": var(--sapContent_TextShadow)
+    ),
+    "8b": (
+      "background-color": var(--sapIndicationColor_8b),
+      "text-color": var(--sapIndicationColor_8),
+      "border-color": var(--sapIndicationColor_8b_BorderColor),
+      "text-shadow": var(--sapContent_TextShadow)
+    ),
+    "9b": (
+      "background-color": var(--sapIndicationColor_9b),
+      "text-color": var(--sapIndicationColor_9),
+      "border-color": var(--sapIndicationColor_9b_BorderColor),
+      "text-shadow": var(--sapContent_TextShadow)
+    ),
+    "10b": (
+      "background-color": var(--sapIndicationColor_10b),
+      "text-color": var(--sapIndicationColor_10),
+      "border-color": var(--sapIndicationColor_10b_BorderColor),
+      "text-shadow": var(--sapContent_TextShadow)
+    )
+  );
+
   @include fd-reset();
   @include fd-set-paddings-y-equal(var(--fdMessageStrip_Vertical_Padding));
   @include fd-set-paddings-x(var(--fdMessageStrip_Left_Padding), var(--fdMessageStrip_Right_Padding));
@@ -38,7 +161,7 @@ $block: #{$fd-namespace}-message-strip;
     @include fd-reset();
 
     line-height: 1rem;
-    color: var(-fdMessageStrip_Text_Color);
+    color: var(--fdMessageStrip_Text_Color);
   }
 
   &__icon-container {
@@ -106,8 +229,8 @@ $block: #{$fd-namespace}-message-strip;
     text-shadow: var(--sapContent_TextShadow);
   }
 
-  @each $set-name, $color-set in $fd-avatar-accent-colors {
-    &--accent-color-#{$set-name} {
+  @each $set-name, $color-set in $fd-avatar-indication-colors {
+    &--indication-color-#{$set-name} {
       --fdMessageStrip_Icon_Color: #{map_get($color-set, "text-color")};
       --fdMessageStrip_Text_Color: #{map_get($color-set, "text-color")};
       --fdMessageStrip_Border_Color: #{map_get($color-set, "border-color")};
