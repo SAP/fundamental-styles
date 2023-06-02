@@ -66,7 +66,7 @@ TextTruncation.parameters = {
       iframeHeight: 250
     },
     description: {
-      story: `By default, long radio label truncates with ellipsis. For this behaviour no modifier class is needed. For radio label that wraps on a new line to show the entire content, use \`.fd-radio__label--wrap\` modifier class applied with \`.fd-radio__label\`. Keep in mind that for this to work <b>max-width</b> should be set on the label.`
+      story: `By default, long radio label truncates with ellipsis. For this behaviour no modifier class is needed. For radio label that wraps on a new line to show the entire content, use \`.fd-radio__label--wrap\` modifier class applied with \`.fd-radio__label\`. Keep in mind that for this to work <b>max-width</b> should be set on the label. For a <b>top-left aligned</b> label use the \`.fd-radio__label--wrap-top-aligned\` modifier class.`
     }
   }
 };

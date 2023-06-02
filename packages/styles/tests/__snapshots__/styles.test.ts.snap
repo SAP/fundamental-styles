@@ -6845,7 +6845,15 @@ exports[`Check stories > Components/Forms/Checkbox > Story Default > Should matc
             <input type=\\"checkbox\\" class=\\"fd-checkbox\\" id=\\"Ai4ez611\\">
             <label class=\\"fd-checkbox__label\\" for=\\"Ai4ez611\\">
                 <div class=\\"fd-checkbox__label-container\\">
-                    <span class=\\"fd-checkbox__text\\">Apple</span>
+                    <span class=\\"fd-checkbox__text\\">Normal State</span>
+                </div>
+            </label>
+        </div>
+        <div class=\\"fd-form-item\\">
+            <input type=\\"checkbox\\" class=\\"fd-checkbox\\" id=\\"Ai4ez611hov\\">
+            <label class=\\"fd-checkbox__label is-hover\\" for=\\"Ai4ez611hov\\">
+                <div class=\\"fd-checkbox__label-container\\">
+                    <span class=\\"fd-checkbox__text\\">Hover State</span>
                 </div>
             </label>
         </div>
@@ -6853,7 +6861,7 @@ exports[`Check stories > Components/Forms/Checkbox > Story Default > Should matc
             <input type=\\"checkbox\\" class=\\"fd-checkbox\\" id=\\"Ai4ez612\\" checked>
             <label class=\\"fd-checkbox__label\\" for=\\"Ai4ez612\\">
                 <div class=\\"fd-checkbox__label-container\\">
-                    <span class=\\"fd-checkbox__text\\">Banana</span>
+                    <span class=\\"fd-checkbox__text\\">Selected/Checked State</span>
                 </div>
             </label>
         </div>
@@ -6861,15 +6869,15 @@ exports[`Check stories > Components/Forms/Checkbox > Story Default > Should matc
             <input type=\\"checkbox\\" class=\\"fd-checkbox\\" id=\\"Ai4ez622\\" disabled>
             <label class=\\"fd-checkbox__label\\" for=\\"Ai4ez622\\">
                 <div class=\\"fd-checkbox__label-container\\">
-                    <span class=\\"fd-checkbox__text\\">Kiwi</span>
+                    <span class=\\"fd-checkbox__text\\">Disabled State</span>
                 </div>
             </label>
         </div>
         <div class=\\"fd-form-item\\">
-            <input type=\\"checkbox\\" class=\\"fd-checkbox\\" id=\\"Ai4ez632\\"  checked disabled>
+            <input type=\\"checkbox\\" class=\\"fd-checkbox\\" id=\\"Ai4ez632\\" checked disabled>
             <label class=\\"fd-checkbox__label\\" for=\\"Ai4ez632\\">
                 <div class=\\"fd-checkbox__label-container\\">
-                    <span class=\\"fd-checkbox__text\\">Lemon</span>
+                    <span class=\\"fd-checkbox__text\\">Selected/Checked Disabled State</span>
                 </div>
             </label>
         </div>
@@ -6877,7 +6885,7 @@ exports[`Check stories > Components/Forms/Checkbox > Story Default > Should matc
             <input type=\\"checkbox\\" class=\\"fd-checkbox\\" id=\\"Ai4ez613\\">
             <label class=\\"fd-checkbox__label\\" for=\\"Ai4ez613\\">
                 <div class=\\"fd-checkbox__label-container\\">
-                    <span class=\\"fd-checkbox__text\\">All Fruits (TriState)</span>
+                    <span class=\\"fd-checkbox__text\\">Tri-State</span>
                 </div>
             </label>
         </div>
@@ -6885,7 +6893,7 @@ exports[`Check stories > Components/Forms/Checkbox > Story Default > Should matc
             <input type=\\"checkbox\\" class=\\"fd-checkbox\\" id=\\"Ai4ez643\\" disabled>
             <label class=\\"fd-checkbox__label\\" for=\\"Ai4ez643\\">
                 <div class=\\"fd-checkbox__label-container\\">
-                    <span class=\\"fd-checkbox__text\\">All Fruits (TriState)</span>
+                    <span class=\\"fd-checkbox__text\\">Tri-State Disabled</span>
                 </div>
             </label>
         </div>
@@ -6961,7 +6969,15 @@ exports[`Check stories > Components/Forms/Checkbox > Story States > Should match
                 <input type=\\"checkbox\\" class=\\"fd-checkbox is-error\\" id=\\"Ai4ez6119\\">
                 <label class=\\"fd-checkbox__label\\" for=\\"Ai4ez6119\\">
                     <div class=\\"fd-checkbox__label-container\\">
-                        <span class=\\"fd-checkbox__text\\">Text Option</span>
+                        <span class=\\"fd-checkbox__text\\">Error Regular Stat</span>
+                    </div>
+                </label>
+            </div>
+            <div class=\\"fd-form-item\\">
+                <input type=\\"checkbox\\" class=\\"fd-checkbox is-error\\" id=\\"Ai4ez6119hov\\">
+                <label class=\\"fd-checkbox__label is-hover\\" for=\\"Ai4ez6119hov\\">
+                    <div class=\\"fd-checkbox__label-container\\">
+                        <span class=\\"fd-checkbox__text\\">Error Hover Stat</span>
                     </div>
                 </label>
             </div>
@@ -6969,7 +6985,7 @@ exports[`Check stories > Components/Forms/Checkbox > Story States > Should match
                 <input type=\\"checkbox\\" class=\\"fd-checkbox is-error\\" id=\\"Ai4ez6129\\" checked>
                 <label class=\\"fd-checkbox__label\\" for=\\"Ai4ez6129\\">
                     <div class=\\"fd-checkbox__label-container\\">
-                        <span class=\\"fd-checkbox__text\\">Selected State</span>
+                        <span class=\\"fd-checkbox__text\\">Error Selected State</span>
                     </div>
                 </label>
             </div>
@@ -6977,7 +6993,7 @@ exports[`Check stories > Components/Forms/Checkbox > Story States > Should match
                 <input type=\\"checkbox\\" class=\\"fd-checkbox is-error\\" id=\\"Ai4ez613i1\\">
                 <label class=\\"fd-checkbox__label\\" for=\\"Ai4ez613i1\\">
                     <div class=\\"fd-checkbox__label-container\\">
-                        <span class=\\"fd-checkbox__text\\">TriState Text</span>
+                        <span class=\\"fd-checkbox__text\\">Error Tri-State</span>
                     </div>
                 </label>
             </div>
@@ -6991,7 +7007,15 @@ exports[`Check stories > Components/Forms/Checkbox > Story States > Should match
                 <input type=\\"checkbox\\" class=\\"fd-checkbox is-success\\" id=\\"Ai4ez61192\\">
                 <label class=\\"fd-checkbox__label\\" for=\\"Ai4ez61192\\">
                     <div class=\\"fd-checkbox__label-container\\">
-                        <span class=\\"fd-checkbox__text\\">Text Option</span>
+                        <span class=\\"fd-checkbox__text\\">Success Regular State</span>
+                    </div>
+                </label>
+            </div>
+            <div class=\\"fd-form-item\\">
+                <input type=\\"checkbox\\" class=\\"fd-checkbox is-success\\" id=\\"Ai4ez61192hov\\">
+                <label class=\\"fd-checkbox__label is-hover\\" for=\\"Ai4ez61192hov\\">
+                    <div class=\\"fd-checkbox__label-container\\">
+                        <span class=\\"fd-checkbox__text\\">Success Hover State</span>
                     </div>
                 </label>
             </div>
@@ -6999,7 +7023,7 @@ exports[`Check stories > Components/Forms/Checkbox > Story States > Should match
                 <input type=\\"checkbox\\" class=\\"fd-checkbox is-success\\" id=\\"Ai4ez61292\\" checked>
                 <label class=\\"fd-checkbox__label\\" for=\\"Ai4ez61292\\">
                     <div class=\\"fd-checkbox__label-container\\">
-                        <span class=\\"fd-checkbox__text\\">Selected State</span>
+                        <span class=\\"fd-checkbox__text\\">Success Selected State</span>
                     </div>
                 </label>
             </div>
@@ -7007,7 +7031,7 @@ exports[`Check stories > Components/Forms/Checkbox > Story States > Should match
                 <input type=\\"checkbox\\" class=\\"fd-checkbox is-success\\" id=\\"Ai4ez613i2\\">
                 <label class=\\"fd-checkbox__label\\" for=\\"Ai4ez613i2\\">
                     <div class=\\"fd-checkbox__label-container\\">
-                        <span class=\\"fd-checkbox__text\\">TriState Text</span>
+                        <span class=\\"fd-checkbox__text\\">Success Tri-State</span>
                     </div>
                 </label>
             </div>
@@ -7021,7 +7045,15 @@ exports[`Check stories > Components/Forms/Checkbox > Story States > Should match
                 <input type=\\"checkbox\\" class=\\"fd-checkbox is-warning\\" id=\\"Ai4ez61193\\">
                 <label class=\\"fd-checkbox__label\\" for=\\"Ai4ez61193\\">
                     <div class=\\"fd-checkbox__label-container\\">
-                        <span class=\\"fd-checkbox__text\\">Text Option</span>
+                        <span class=\\"fd-checkbox__text\\">Warning Regular State</span>
+                    </div>
+                </label>
+            </div>
+            <div class=\\"fd-form-item\\">
+                <input type=\\"checkbox\\" class=\\"fd-checkbox is-warning\\" id=\\"Ai4ez61193hov\\">
+                <label class=\\"fd-checkbox__label is-hover\\" for=\\"Ai4ez61193hov\\">
+                    <div class=\\"fd-checkbox__label-container\\">
+                        <span class=\\"fd-checkbox__text\\">Warning Hover State</span>
                     </div>
                 </label>
             </div>
@@ -7029,7 +7061,7 @@ exports[`Check stories > Components/Forms/Checkbox > Story States > Should match
                 <input type=\\"checkbox\\" class=\\"fd-checkbox is-warning\\" id=\\"Ai4ez61293\\" checked>
                 <label class=\\"fd-checkbox__label\\" for=\\"Ai4ez61293\\">
                     <div class=\\"fd-checkbox__label-container\\">
-                        <span class=\\"fd-checkbox__text\\">Selected State</span>
+                        <span class=\\"fd-checkbox__text\\">Warning Selected State</span>
                     </div>
                 </label>
             </div>
@@ -7037,7 +7069,7 @@ exports[`Check stories > Components/Forms/Checkbox > Story States > Should match
                 <input type=\\"checkbox\\" class=\\"fd-checkbox is-warning\\" id=\\"Ai4ez613i3\\">
                 <label class=\\"fd-checkbox__label\\" for=\\"Ai4ez613i3\\">
                     <div class=\\"fd-checkbox__label-container\\">
-                        <span class=\\"fd-checkbox__text\\">TriState Text</span>
+                        <span class=\\"fd-checkbox__text\\">Warning Tri-State</span>
                     </div>
                 </label>
             </div>
@@ -7051,7 +7083,15 @@ exports[`Check stories > Components/Forms/Checkbox > Story States > Should match
                 <input type=\\"checkbox\\" class=\\"fd-checkbox is-information\\" id=\\"Ai4ez61194\\">
                 <label class=\\"fd-checkbox__label\\" for=\\"Ai4ez61194\\">
                     <div class=\\"fd-checkbox__label-container\\">
-                        <span class=\\"fd-checkbox__text\\">Text Option</span>
+                        <span class=\\"fd-checkbox__text\\">Information Regular State</span>
+                    </div>
+                </label>
+            </div>
+            <div class=\\"fd-form-item\\">
+                <input type=\\"checkbox\\" class=\\"fd-checkbox is-information\\" id=\\"Ai4ez61194hov\\">
+                <label class=\\"fd-checkbox__label is-hover\\" for=\\"Ai4ez61194hov\\">
+                    <div class=\\"fd-checkbox__label-container\\">
+                        <span class=\\"fd-checkbox__text\\">Information Hover State</span>
                     </div>
                 </label>
             </div>
@@ -7059,7 +7099,7 @@ exports[`Check stories > Components/Forms/Checkbox > Story States > Should match
                 <input type=\\"checkbox\\" class=\\"fd-checkbox is-information\\" id=\\"Ai4ez61294\\" checked>
                 <label class=\\"fd-checkbox__label\\" for=\\"Ai4ez61294\\">
                     <div class=\\"fd-checkbox__label-container\\">
-                        <span class=\\"fd-checkbox__text\\">Selected State</span>
+                        <span class=\\"fd-checkbox__text\\">Information Checked State</span>
                     </div>
                 </label>
             </div>
@@ -7067,7 +7107,7 @@ exports[`Check stories > Components/Forms/Checkbox > Story States > Should match
                 <input type=\\"checkbox\\" class=\\"fd-checkbox is-information\\" id=\\"Ai4ez613i4\\">
                 <label class=\\"fd-checkbox__label\\" for=\\"Ai4ez613i4\\">
                     <div class=\\"fd-checkbox__label-container\\">
-                        <span class=\\"fd-checkbox__text\\">TriState Text</span>
+                        <span class=\\"fd-checkbox__text\\">Information Tri-State</span>
                     </div>
                 </label>
             </div>
@@ -7111,7 +7151,15 @@ exports[`Check stories > Components/Forms/Checkbox > Story States > Should match
                 <input type=\\"checkbox\\" class=\\"fd-checkbox\\" id=\\"Ai4ez611967\\" readonly>
                 <label class=\\"fd-checkbox__label\\" for=\\"Ai4ez611967\\">
                     <div class=\\"fd-checkbox__label-container\\">
-                        <span class=\\"fd-checkbox__text\\">Text Option</span>
+                        <span class=\\"fd-checkbox__text\\">Read Only Regular State</span>
+                    </div>
+                </label>
+            </div>
+            <div class=\\"fd-form-item\\">
+                <input type=\\"checkbox\\" class=\\"fd-checkbox\\" id=\\"Ai4ez611967hov\\" readonly>
+                <label class=\\"fd-checkbox__label is-hover\\" for=\\"Ai4ez611967hov\\">
+                    <div class=\\"fd-checkbox__label-container\\">
+                        <span class=\\"fd-checkbox__text\\">Read Only Hover State</span>
                     </div>
                 </label>
             </div>
@@ -7119,7 +7167,7 @@ exports[`Check stories > Components/Forms/Checkbox > Story States > Should match
                 <input type=\\"checkbox\\" class=\\"fd-checkbox\\" id=\\"Ai4ez61296cc\\" checked readonly>
                 <label class=\\"fd-checkbox__label\\" for=\\"Ai4ez61296cc\\">
                     <div class=\\"fd-checkbox__label-container\\">
-                        <span class=\\"fd-checkbox__text\\">Selected State</span>
+                        <span class=\\"fd-checkbox__text\\">Read Only Checked State</span>
                     </div>
                 </label>
             </div>
@@ -7127,7 +7175,7 @@ exports[`Check stories > Components/Forms/Checkbox > Story States > Should match
                 <input type=\\"checkbox\\" class=\\"fd-checkbox\\" id=\\"Ai4ez613i6cc\\" readonly>
                 <label class=\\"fd-checkbox__label\\" for=\\"Ai4ez613i6cc\\">
                     <div class=\\"fd-checkbox__label-container\\">
-                        <span class=\\"fd-checkbox__text\\">TriState Text</span>
+                        <span class=\\"fd-checkbox__text\\">Read Only Tri-State</span>
                     </div>
                 </label>
             </div>
@@ -7160,6 +7208,14 @@ exports[`Check stories > Components/Forms/Checkbox > Story TextTruncation > Shou
         <div class=\\"fd-form-item\\">
             <input type=\\"checkbox\\" class=\\"fd-checkbox\\" id=\\"Ai4ez612lw\\" checked>
             <label class=\\"fd-checkbox__label fd-checkbox__label--wrap\\" for=\\"Ai4ez612lw\\" style=\\"max-width: 400px;\\">
+                <div class=\\"fd-checkbox__label-container\\">
+                    <span class=\\"fd-checkbox__text\\">Banana ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</span>
+                </div>
+            </label>
+        </div>
+        <div class=\\"fd-form-item\\">
+            <input type=\\"checkbox\\" class=\\"fd-checkbox\\" id=\\"Ai4ez612lwtop\\" checked>
+            <label class=\\"fd-checkbox__label fd-checkbox__label--wrap-top-aligned\\" for=\\"Ai4ez612lwtop\\" style=\\"max-width: 400px;\\">
                 <div class=\\"fd-checkbox__label-container\\">
                     <span class=\\"fd-checkbox__text\\">Banana ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</span>
                 </div>
@@ -9062,8 +9118,18 @@ exports[`Check stories > Components/Forms/Form Message > Story Warning > Should 
 exports[`Check stories > Components/Forms/Input > Story Primary > Should match snapshot 1`] = `
 "<div style=\\"\\">
     <div class=\\"fd-form-item\\">
-        <label class=\\"fd-form-label\\" for=\\"input-1\\">Default input:</label>
+        <label class=\\"fd-form-label\\" for=\\"input-1\\">Default input (regular):</label>
         <input class=\\"fd-input\\" type=\\"text\\" id=\\"input-1\\" placeholder=\\"Field placeholder text\\">
+    </div>
+    <br>
+    <div class=\\"fd-form-item\\">
+        <label class=\\"fd-form-label\\" for=\\"input-1-hover\\">Default input (hover):</label>
+        <input class=\\"fd-input is-hover\\" type=\\"text\\" id=\\"input-1-hover\\" placeholder=\\"Field placeholder text\\">
+    </div>
+    <br>
+    <div class=\\"fd-form-item\\">
+        <label class=\\"fd-form-label\\" for=\\"input-1-focus\\">Default input (focus):</label>
+        <input class=\\"fd-input is-focus\\" type=\\"text\\" id=\\"input-1-focus\\" placeholder=\\"Field placeholder text\\">
     </div>
     <br>
     <div class=\\"fd-form-item\\">
@@ -9082,8 +9148,28 @@ exports[`Check stories > Components/Forms/Input > Story Primary > Should match s
     </div>
     <br />
     <div class=\\"fd-form-item\\">
+        <label class=\\"fd-form-label\\" for=\\"input-01-hover\\">Error Input:</label>
+        <input class=\\"fd-input is-error is-hover\\" type=\\"text\\" id=\\"input-01-hover\\" placeholder=\\"Field placeholder text\\">
+    </div>
+    <br />
+    <div class=\\"fd-form-item\\">
+        <label class=\\"fd-form-label\\" for=\\"input-01-focus\\">Error Input:</label>
+        <input class=\\"fd-input is-error is-focus\\" type=\\"text\\" id=\\"input-01-focus\\" placeholder=\\"Field placeholder text\\">
+    </div>
+    <br />
+    <div class=\\"fd-form-item\\">
         <label class=\\"fd-form-label\\" for=\\"input-02\\">Success Input:</label>
         <input class=\\"fd-input is-success\\" type=\\"text\\" id=\\"input-02\\" placeholder=\\"Field placeholder text\\">
+    </div>
+    <br />
+    <div class=\\"fd-form-item\\">
+        <label class=\\"fd-form-label\\" for=\\"input-02-hover\\">Success Input:</label>
+        <input class=\\"fd-input is-success is-hover\\" type=\\"text\\" id=\\"input-02-hover\\" placeholder=\\"Field placeholder text\\">
+    </div>
+    <br />
+    <div class=\\"fd-form-item\\">
+        <label class=\\"fd-form-label\\" for=\\"input-02-focus\\">Success Input:</label>
+        <input class=\\"fd-input is-success is-focus\\" type=\\"text\\" id=\\"input-02-focus\\" placeholder=\\"Field placeholder text\\">
     </div>
     <br />
     <div class=\\"fd-form-item\\">
@@ -9092,13 +9178,33 @@ exports[`Check stories > Components/Forms/Input > Story Primary > Should match s
     </div>
     <br />
     <div class=\\"fd-form-item\\">
+        <label class=\\"fd-form-label\\" for=\\"input-03-hover\\">Warning (Alert) Input:</label>
+        <input class=\\"fd-input is-warning is-hover\\" type=\\"text\\" id=\\"input-03-hover\\" placeholder=\\"Field placeholder text\\">
+    </div>
+    <br />
+    <div class=\\"fd-form-item\\">
+        <label class=\\"fd-form-label\\" for=\\"input-03-focus\\">Warning (Alert) Input:</label>
+        <input class=\\"fd-input is-warning is-focus\\" type=\\"text\\" id=\\"input-03-focus\\" placeholder=\\"Field placeholder text\\">
+    </div>
+    <br />
+    <div class=\\"fd-form-item\\">
         <label class=\\"fd-form-label\\" for=\\"input-04\\">Information Input:</label>
-        <input class=\\"fd-input is-information\\" type=\\"text\\" id=\\"input-04\\">
+        <input class=\\"fd-input is-information\\" type=\\"text\\" id=\\"input-04\\" placeholder=\\"Field placeholder text\\">
+    </div>
+    <br />
+    <div class=\\"fd-form-item\\">
+        <label class=\\"fd-form-label\\" for=\\"input-04-hover\\">Information Input:</label>
+        <input class=\\"fd-input is-information is-hover\\" type=\\"text\\" id=\\"input-04-hover\\" placeholder=\\"Field placeholder text\\">
+    </div>
+    <br />
+    <div class=\\"fd-form-item\\">
+        <label class=\\"fd-form-label\\" for=\\"input-04-focus\\">Information Input:</label>
+        <input class=\\"fd-input is-information is-focus\\" type=\\"text\\" id=\\"input-04-focus\\" placeholder=\\"Field placeholder text\\">
     </div>
     <br />
     <div class=\\"fd-form-item\\">
         <label class=\\"fd-form-label\\" for=\\"input-05\\">Disabled Input:</label>
-        <input class=\\"fd-input\\" type=\\"text\\" id=\\"input-05\\" disabled value=\\"Field placeholder text\\">
+        <input class=\\"fd-input\\" type=\\"text\\" id=\\"input-05\\" disabled value=\\"Field placeholder text\\" placeholder=\\"Field placeholder text\\">
     </div>
     <br />
     <div class=\\"fd-form-item\\">
@@ -10006,71 +10112,180 @@ exports[`Check stories > Components/Forms/Radio > Story Inline > Should match sn
 `;
 
 exports[`Check stories > Components/Forms/Radio > Story InteractionStates > Should match snapshot 1`] = `
-"<fieldset class=\\"fd-fieldset\\" id=\\"radio5\\">
-    <legend class=\\"fd-fieldset__legend\\">Interaction States</legend>
+"<fieldset class=\\"fd-fieldset\\" id=\\"radio5a\\">
+    <legend class=\\"fd-fieldset__legend\\">Default Interaction States</legend>
     <div class=\\"fd-form-group\\">
         <div class=\\"fd-form-item\\">
-            <input type=\\"radio\\" class=\\"fd-radio\\" id=\\"iSpDidh761\\" name=\\"radio5\\" checked>
+            <input type=\\"radio\\" class=\\"fd-radio\\" id=\\"iSpDidh761\\" name=\\"radio5a\\">
             <label class=\\"fd-radio__label\\" for=\\"iSpDidh761\\">
                 <span class=\\"fd-radio__text\\">Default Radio Button</span>
             </label>
         </div>
         <div class=\\"fd-form-item\\">
-            <input type=\\"radio\\" class=\\"fd-radio is-success\\" id=\\"iSpDidh7612\\" name=\\"radio5\\">
+            <input type=\\"radio\\" class=\\"fd-radio\\" id=\\"iSpDidh761cc\\" name=\\"radio5a\\" checked>
+            <label class=\\"fd-radio__label\\" for=\\"iSpDidh761cc\\">
+                <span class=\\"fd-radio__text\\">Default Checked Radio Button</span>
+            </label>
+        </div>
+        <div class=\\"fd-form-item\\">
+            <input type=\\"radio\\" class=\\"fd-radio\\" id=\\"iSpDidh761hov\\" name=\\"radio5a\\">
+            <label class=\\"fd-radio__label is-hover\\" for=\\"iSpDidh761hov\\">
+                <span class=\\"fd-radio__text\\">Default Hover Radio Button</span>
+            </label>
+        </div>
+    </div>
+</fieldset>
+<br><br>
+<fieldset class=\\"fd-fieldset\\" id=\\"radio5b\\">
+    <legend class=\\"fd-fieldset__legend\\">Success Interaction States</legend>
+    <div class=\\"fd-form-group\\">
+        <div class=\\"fd-form-item\\">
+            <input type=\\"radio\\" class=\\"fd-radio is-success\\" id=\\"iSpDidh7612\\" name=\\"radio5b\\">
             <label class=\\"fd-radio__label\\" for=\\"iSpDidh7612\\">
                 <span class=\\"fd-radio__text\\">Success Radio Button</span>
             </label>
         </div>
         <div class=\\"fd-form-item\\">
-            <input type=\\"radio\\" class=\\"fd-radio is-error\\" id=\\"iSpDidh7613\\" name=\\"radio5\\">
+            <input type=\\"radio\\" class=\\"fd-radio is-success\\" id=\\"iSpDidh7612cc\\" name=\\"radio5b\\" checked>
+            <label class=\\"fd-radio__label\\" for=\\"iSpDidh7612cc\\">
+                <span class=\\"fd-radio__text\\">Success Checked Radio Button</span>
+            </label>
+        </div>
+        <div class=\\"fd-form-item\\">
+            <input type=\\"radio\\" class=\\"fd-radio is-success\\" id=\\"iSpDidh7612hov\\" name=\\"radio5b\\">
+            <label class=\\"fd-radio__label is-hover\\" for=\\"iSpDidh7612hov\\">
+                <span class=\\"fd-radio__text\\">Success Hover Radio Button</span>
+            </label>
+        </div>
+    </div>
+</fieldset>
+<br><br>
+<fieldset class=\\"fd-fieldset\\" id=\\"radio5c\\">
+    <legend class=\\"fd-fieldset__legend\\">Error Interaction States</legend>
+    <div class=\\"fd-form-group\\">
+        <div class=\\"fd-form-item\\">
+            <input type=\\"radio\\" class=\\"fd-radio is-error\\" id=\\"iSpDidh7613\\" name=\\"radio5c\\">
             <label class=\\"fd-radio__label\\" for=\\"iSpDidh7613\\">
                 <span class=\\"fd-radio__text\\">Error Radio Button</span>
             </label>
         </div>
         <div class=\\"fd-form-item\\">
-            <input type=\\"radio\\" class=\\"fd-radio is-warning\\" id=\\"iSpDidh7614\\" name=\\"radio5\\">
+            <input type=\\"radio\\" class=\\"fd-radio is-error\\" id=\\"iSpDidh7613cc\\" name=\\"radio5c\\" checked>
+            <label class=\\"fd-radio__label\\" for=\\"iSpDidh7613cc\\">
+                <span class=\\"fd-radio__text\\">Error Checked Radio Button</span>
+            </label>
+        </div>
+        <div class=\\"fd-form-item\\">
+            <input type=\\"radio\\" class=\\"fd-radio is-error\\" id=\\"iSpDidh7613hov\\" name=\\"radio5c\\">
+            <label class=\\"fd-radio__label is-hover\\" for=\\"iSpDidh7613hov\\">
+                <span class=\\"fd-radio__text\\">Error Hover Radio Button</span>
+            </label>
+        </div>
+    </div>
+</fieldset>
+<br><br>
+<fieldset class=\\"fd-fieldset\\" id=\\"radio5d\\">
+    <legend class=\\"fd-fieldset__legend\\">Warning Interaction States</legend>
+    <div class=\\"fd-form-group\\">
+        <div class=\\"fd-form-item\\">
+            <input type=\\"radio\\" class=\\"fd-radio is-warning\\" id=\\"iSpDidh7614\\" name=\\"radio5d\\">
             <label class=\\"fd-radio__label\\" for=\\"iSpDidh7614\\">
                 <span class=\\"fd-radio__text\\">Warning Radio Button</span>
             </label>
         </div>
         <div class=\\"fd-form-item\\">
-            <input type=\\"radio\\" class=\\"fd-radio is-information\\" id=\\"iSpDidh7615\\" name=\\"radio5\\">
+            <input type=\\"radio\\" class=\\"fd-radio is-warning\\" id=\\"iSpDidh7614cc\\" name=\\"radio5d\\" checked>
+            <label class=\\"fd-radio__label\\" for=\\"iSpDidh7614cc\\">
+                <span class=\\"fd-radio__text\\">Warning Checked Radio Button</span>
+            </label>
+        </div>
+        <div class=\\"fd-form-item\\">
+            <input type=\\"radio\\" class=\\"fd-radio is-warning\\" id=\\"iSpDidh7614hov\\" name=\\"radio5d\\">
+            <label class=\\"fd-radio__label is-hover\\" for=\\"iSpDidh7614hov\\">
+                <span class=\\"fd-radio__text\\">Warning Hover Radio Button</span>
+            </label>
+        </div>
+    </div>
+</fieldset>
+<br><br>
+<fieldset class=\\"fd-fieldset\\" id=\\"radio5e\\">
+    <legend class=\\"fd-fieldset__legend\\">Information Interaction States</legend>
+    <div class=\\"fd-form-group\\">
+        <div class=\\"fd-form-item\\">
+            <input type=\\"radio\\" class=\\"fd-radio is-information\\" id=\\"iSpDidh7615\\" name=\\"radio5e\\">
             <label class=\\"fd-radio__label\\" for=\\"iSpDidh7615\\">
                 <span class=\\"fd-radio__text\\">Information Radio Button</span>
             </label>
         </div>
         <div class=\\"fd-form-item\\">
-            <input type=\\"radio\\" class=\\"fd-radio is-readonly\\" id=\\"iSpDidh76erfg15\\" name=\\"radio5\\" readonly>
+            <input type=\\"radio\\" class=\\"fd-radio is-information\\" id=\\"iSpDidh7615cc\\" name=\\"radio5e\\" checked>
+            <label class=\\"fd-radio__label\\" for=\\"iSpDidh7615cc\\">
+                <span class=\\"fd-radio__text\\">Information Checked Radio Button</span>
+            </label>
+        </div>
+        <div class=\\"fd-form-item\\">
+            <input type=\\"radio\\" class=\\"fd-radio is-information\\" id=\\"iSpDidh7615hov\\" name=\\"radio5e\\">
+            <label class=\\"fd-radio__label is-hover\\" for=\\"iSpDidh7615hov\\">
+                <span class=\\"fd-radio__text\\">Information Hover Radio Button</span>
+            </label>
+        </div>
+    </div>
+</fieldset>
+<br><br>
+
+<fieldset class=\\"fd-fieldset\\" id=\\"radio5f\\">
+    <legend class=\\"fd-fieldset__legend\\">Read-Only Interaction States</legend>
+    <div class=\\"fd-form-group\\">
+        <div class=\\"fd-form-item\\">
+            <input type=\\"radio\\" class=\\"fd-radio is-readonly\\" id=\\"iSpDidh76erfg15\\" name=\\"radio5f\\" readonly>
             <label class=\\"fd-radio__label\\" for=\\"iSpDidh76erfg15\\">
                 <span class=\\"fd-radio__text\\">ReadOnly Radio Button</span>
             </label>
         </div>
         <div class=\\"fd-form-item\\">
-            <input type=\\"radio\\" class=\\"fd-radio\\" id=\\"iSpDidh7611\\" name=\\"radio5\\" disabled>
+            <input type=\\"radio\\" class=\\"fd-radio is-readonly\\" id=\\"iSpDidh76erfg15cc\\" name=\\"radio5f\\" readonly checked>
+            <label class=\\"fd-radio__label\\" for=\\"iSpDidh76erfg15cc\\">
+                <span class=\\"fd-radio__text\\">ReadOnly Checked Radio Button</span>
+            </label>
+        </div>
+        <div class=\\"fd-form-item\\">
+            <input type=\\"radio\\" class=\\"fd-radio is-readonly\\" id=\\"iSpDidh76erfg15hov\\" name=\\"radio5f\\" readonly>
+            <label class=\\"fd-radio__label is-hover\\" for=\\"iSpDidh76erfg15hov\\">
+                <span class=\\"fd-radio__text\\">ReadOnly Hover Radio Button</span>
+            </label>
+        </div>
+    </div>
+</fieldset>
+<br><br>
+<fieldset class=\\"fd-fieldset\\" id=\\"radio5g\\">
+    <legend class=\\"fd-fieldset__legend\\">Disabled States</legend>
+    <div class=\\"fd-form-group\\">
+        <div class=\\"fd-form-item\\">
+            <input type=\\"radio\\" class=\\"fd-radio\\" id=\\"iSpDidh7611\\" name=\\"radio5g\\" disabled>
             <label class=\\"fd-radio__label\\" for=\\"iSpDidh7611\\">
                 <span class=\\"fd-radio__text\\">Disabled Radio Button</span>
             </label>
         </div>
         <div class=\\"fd-form-item\\">
-            <input type=\\"radio\\" class=\\"fd-radio is-success\\" id=\\"iSpDidh76121\\" name=\\"radio5\\" disabled>
+            <input type=\\"radio\\" class=\\"fd-radio is-success\\" id=\\"iSpDidh76121\\" name=\\"radio5g\\" disabled>
             <label class=\\"fd-radio__label\\" for=\\"iSpDidh76121\\">
                 <span class=\\"fd-radio__text\\">Success Radio Button (disabled)</span>
             </label>
         </div>
         <div class=\\"fd-form-item\\">
-            <input type=\\"radio\\" class=\\"fd-radio is-error\\" id=\\"iSpDidh76131\\" name=\\"radio5\\" disabled>
+            <input type=\\"radio\\" class=\\"fd-radio is-error\\" id=\\"iSpDidh76131\\" name=\\"radio5g\\" disabled>
             <label class=\\"fd-radio__label\\" for=\\"iSpDidh76131\\">
                 <span class=\\"fd-radio__text\\">Error Radio Button (disabled)</span>
             </label>
         </div>
         <div class=\\"fd-form-item\\">
-            <input type=\\"radio\\" class=\\"fd-radio is-warning\\" id=\\"iSpDidh76141\\" name=\\"radio5\\" disabled>
+            <input type=\\"radio\\" class=\\"fd-radio is-warning\\" id=\\"iSpDidh76141\\" name=\\"radio5g\\" disabled>
             <label class=\\"fd-radio__label\\" for=\\"iSpDidh76141\\">
                 <span class=\\"fd-radio__text\\">Warning Radio Button (disabled)</span>
             </label>
         </div>
         <div class=\\"fd-form-item\\">
-            <input type=\\"radio\\" class=\\"fd-radio is-information\\" id=\\"iSpDidh76151\\" name=\\"radio5\\" disabled>
+            <input type=\\"radio\\" class=\\"fd-radio is-information\\" id=\\"iSpDidh76151\\" name=\\"radio5g\\" disabled>
             <label class=\\"fd-radio__label\\" for=\\"iSpDidh76151\\">
                 <span class=\\"fd-radio__text\\">Information Radio Button (disabled)</span>
             </label>
@@ -10119,8 +10334,16 @@ exports[`Check stories > Components/Forms/Radio > Story TextTruncation > Should 
             </label>
         </div>
         <div class=\\"fd-form-item\\">
-            <input type=\\"radio\\" class=\\"fd-radio\\" id=\\"pDidh7612tt\\" name=\\"radio1Truncation\\">
+            <input type=\\"radio\\" class=\\"fd-radio\\" id=\\"pDidh7612tt\\" name=\\"radio2Truncation\\" checked>
             <label class=\\"fd-radio__label fd-radio__label--wrap\\" for=\\"pDidh7612tt\\" style=\\"max-width: 400px;\\">
+                <span class=\\"fd-radio__text\\">
+                    Field label  ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </span>
+            </label>
+        </div>
+        <div class=\\"fd-form-item\\">
+            <input type=\\"radio\\" class=\\"fd-radio\\" id=\\"pDidh7612ttop\\" name=\\"radio3Truncation\\" checked>
+            <label class=\\"fd-radio__label fd-radio__label--wrap-top-aligned\\" for=\\"pDidh7612ttop\\" style=\\"max-width: 400px;\\">
                 <span class=\\"fd-radio__text\\">
                     Field label  ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                 </span>
@@ -10147,6 +10370,10 @@ exports[`Check stories > Components/Forms/Textarea > Story DisabledAndReadOnly >
 <div class=\\"fd-form-item\\">
     <label class=\\"fd-form-label\\" for=\\"textarea-8\\">Text area:</label>
     <textarea class=\\"fd-textarea\\" id=\\"textarea-8\\" readonly>Read Only textarea</textarea>
+</div>
+<div class=\\"fd-form-item\\">
+    <label class=\\"fd-form-label\\" for=\\"textarea-9\\">Text area:</label>
+    <textarea class=\\"fd-textarea is-focus\\" id=\\"textarea-9\\" readonly>Focussed Read Only textarea</textarea>
 </div>
 "
 `;
@@ -26767,7 +26994,7 @@ exports[`Check stories > Components/Slider > Story MobileMode > Should match sna
 `;
 
 exports[`Check stories > Components/Slider > Story Range > Should match snapshot 1`] = `
-"
+"<h3>Regular</h3>
 <div class=\\"slider-container slider-container--range\\">
     <div class=\\"fd-slider fd-slider--range\\">
         <div class=\\"fd-slider__inner\\">
@@ -26781,6 +27008,58 @@ exports[`Check stories > Components/Slider > Story Range > Should match snapshot
         </div>
     </div>
 </div>
+
+<br><br>
+<h3>Hover (on one handle)</h3>
+<div class=\\"slider-container slider-container--range\\">
+  <div class=\\"fd-slider fd-slider--range\\">
+      <div class=\\"fd-slider__inner\\">
+          <div class=\\"fd-slider__track\\">
+            <div class=\\"fd-slider__track-range\\" style=\\"width: 40%\\">
+              <div class=\\"fd-slider__track-focus-range\\" tabindex=\\"0\\"></div>
+            </div>
+          </div>
+          <div class=\\"fd-slider__handle is-hover\\" tabindex=\\"0\\" role=\\"slider\\" aria-label=\\"range slider left\\" aria-valuemin=\\"1\\" aria-valuemax=\\"80\\" aria-valuenow=\\"40\\" style=\\"left: 40%;\\"></div>
+          <div class=\\"fd-slider__handle\\" tabindex=\\"0\\" role=\\"slider\\" aria-label=\\"range slider right\\" aria-valuemin=\\"40\\" aria-valuemax=\\"100\\" aria-valuenow=\\"80\\" style=\\"left: 80%;\\"></div>
+      </div>
+  </div>
+</div>
+
+<br><br>
+<h3>Active (on one handle)</h3>
+<div class=\\"slider-container slider-container--range\\">
+  <div class=\\"fd-slider fd-slider--range\\">
+      <div class=\\"fd-slider__inner\\">
+          <div class=\\"fd-slider__track\\">
+            <div class=\\"fd-slider__track-range\\" style=\\"width: 40%\\">
+              <div class=\\"fd-slider__track-focus-range\\" tabindex=\\"0\\"></div>
+            </div>
+          </div>
+          <div class=\\"fd-slider__handle is-active\\" tabindex=\\"0\\" role=\\"slider\\" aria-label=\\"range slider left\\" aria-valuemin=\\"1\\" aria-valuemax=\\"80\\" aria-valuenow=\\"40\\" style=\\"left: 40%;\\"></div>
+          <div class=\\"fd-slider__handle tabindex=\\"0\\" role=\\"slider\\" aria-label=\\"range slider right\\" aria-valuemin=\\"40\\" aria-valuemax=\\"100\\" aria-valuenow=\\"80\\" style=\\"left: 80%;\\"></div>
+      </div>
+  </div>
+</div>
+
+
+<br><br>
+<h3>Focus</h3>
+<div class=\\"slider-container slider-container--range\\">
+  <div class=\\"fd-slider fd-slider--range\\">
+      <div class=\\"fd-slider__inner\\">
+          <div class=\\"fd-slider__track\\">
+            <div class=\\"fd-slider__track-range\\" style=\\"width: 40%\\">
+              <div class=\\"fd-slider__track-focus-range is-focus\\" tabindex=\\"0\\"></div>
+            </div>
+          </div>
+          <div class=\\"fd-slider__handle\\" tabindex=\\"0\\" role=\\"slider\\" aria-label=\\"range slider left\\" aria-valuemin=\\"1\\" aria-valuemax=\\"80\\" aria-valuenow=\\"40\\" style=\\"left: 40%;\\"></div>
+          <div class=\\"fd-slider__handle\\" tabindex=\\"0\\" role=\\"slider\\" aria-label=\\"range slider right\\" aria-valuemin=\\"40\\" aria-valuemax=\\"100\\" aria-valuenow=\\"80\\" style=\\"left: 80%;\\"></div>
+      </div>
+  </div>
+</div>
+
+
+
 "
 `;
 
@@ -26796,6 +27075,40 @@ exports[`Check stories > Components/Slider > Story Standard > Should match snaps
         </div>
     </div>
 </div>
+<br><br>
+<div class=\\"slider-container\\">
+    <div class=\\"fd-slider\\">
+        <div class=\\"fd-slider__inner\\">
+        <div class=\\"fd-slider__handle is-hover\\" tabindex=\\"0\\" role=\\"slider\\" aria-label=\\"slider\\" aria-valuemin=\\"1\\" aria-valuemax=\\"100\\" aria-valuenow=\\"50\\" style=\\"left: 50%;\\"></div>
+            <div class=\\"fd-slider__track\\">
+                <div class=\\"fd-slider__track-range\\" style=\\"width: 50%;\\"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<br><br>
+<div class=\\"slider-container\\">
+    <div class=\\"fd-slider\\">
+        <div class=\\"fd-slider__inner\\">
+        <div class=\\"fd-slider__handle is-active\\" tabindex=\\"0\\" role=\\"slider\\" aria-label=\\"slider\\" aria-valuemin=\\"1\\" aria-valuemax=\\"100\\" aria-valuenow=\\"50\\" style=\\"left: 50%;\\"></div>
+            <div class=\\"fd-slider__track\\">
+                <div class=\\"fd-slider__track-range\\" style=\\"width: 50%;\\"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<br><br>
+<div class=\\"slider-container\\">
+    <div class=\\"fd-slider\\">
+        <div class=\\"fd-slider__inner\\">
+        <div class=\\"fd-slider__handle is-focus\\" tabindex=\\"0\\" role=\\"slider\\" aria-label=\\"slider\\" aria-valuemin=\\"1\\" aria-valuemax=\\"100\\" aria-valuenow=\\"50\\" style=\\"left: 50%;\\"></div>
+            <div class=\\"fd-slider__track\\">
+                <div class=\\"fd-slider__track-range\\" style=\\"width: 50%;\\"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
 "
 `;
 
