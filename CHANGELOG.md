@@ -1,3 +1,20 @@
+# [0.29.0-rc.42](https://github.com/SAP/fundamental-styles/compare/v0.29.0-rc.41...v0.29.0-rc.42) (2023-06-02)
+
+
+### Features
+
+* **styles:** bring indication colors set to Message Strip [ci visual] ([#4571](https://github.com/SAP/fundamental-styles/issues/4571)) ([cb8daa6](https://github.com/SAP/fundamental-styles/commit/cb8daa691d128bbc035595d5c3c1a57dd3084029))
+
+
+### BREAKING CHANGES
+
+* **styles:** - removed classes fd-message-strip--accent-color-1... fd-message-strip--accent-color-10
+- introduced new classes:
+fd-message-strip--indication-color-1 ... fd-message-strip--indication-color-10
+fd-message-strip--indication-color-1b ... fd-message-strip--indication-color-10b
+
+
+
 # [0.29.0-rc.41](https://github.com/SAP/fundamental-styles/compare/v0.29.0-rc.40...v0.29.0-rc.41) (2023-05-31)
 
 
