@@ -146,14 +146,14 @@ MessageStripWithCustomIcon.parameters = {
   }
 };
 export const MessageStripWithAccentColors = () => messageStripWithAccentColorsExampleHtml;
-MessageStripWithAccentColors.storyName = 'Accent colors';
+MessageStripWithAccentColors.storyName = 'Custom Message Strip';
 MessageStripWithAccentColors.parameters = {
   docs: {
     story: {
       iframeHeight: messageStripHeight
     },
     description: {
-      story: `If the application needs a custom Message Strip, other than the semantic variations, then the colours from <a href='https://sap.github.io/fundamental-styles/?path=/docs/components-avatar--icon' target='_blank' rel='noopener noreferrer' title='click to open Avatar component. Opens in a new window.'>Avatar (Horizon)</a> control should be used. Use the modifier classes \`.fd-message-strip--accent-color-*\`, where \`*\` is a number from 1 to 10. `
+      story: `If the application needs a custom Message Strip, other than the semantic variations, then the colours from Inverted Object Status/Tag control should be used. Use the modifier classes \`.fd-message-strip--indication-color-*\`, where \`*\` is a number from 1 to 10 for the first set, and 1b to 10b for the second set. `
     }
   }
 };
