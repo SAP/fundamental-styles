@@ -2272,6 +2272,222 @@
     }
   },
   "Indication": {
+    "sapIndicationColor_10b_Hover_Background": {
+      "value": "hsla({Indication._sapIndicationColor_10b_Hover_BackgroundH}, {Indication._sapIndicationColor_10b_Hover_BackgroundS}, {Indication._sapIndicationColor_10b_Hover_BackgroundL}, {Indication._sapIndicationColor_10b_Hover_BackgroundA})",
+      "type": "color"
+    },
+    "sapIndicationColor_10b_BorderColor": {
+      "value": "hsla({Indication._sapIndicationColor_10b_BorderColorH}, {Indication._sapIndicationColor_10b_BorderColorS}, {Indication._sapIndicationColor_10b_BorderColorL}, {Indication._sapIndicationColor_10b_BorderColorA})",
+      "type": "color"
+    },
+    "sapIndicationColor_10b": {
+      "value": "hsla({Indication._sapIndicationColor_10bH}, {Indication._sapIndicationColor_10bS}, {Indication._sapIndicationColor_10bL}, {Indication._sapIndicationColor_10bA})",
+      "type": "color"
+    },
+    "sapIndicationColor_10_Selected_TextColor": {
+      "value": "hsla({Indication._sapIndicationColor_10_Selected_TextColorH}, {Indication._sapIndicationColor_10_Selected_TextColorS}, {Indication._sapIndicationColor_10_Selected_TextColorL}, {Indication._sapIndicationColor_10_Selected_TextColorA})",
+      "type": "color"
+    },
+    "sapIndicationColor_10_Selected_BorderColor": {
+      "value": "hsla({Indication._sapIndicationColor_10_Selected_BorderColorH}, {Indication._sapIndicationColor_10_Selected_BorderColorS}, {Indication._sapIndicationColor_10_Selected_BorderColorL}, {Indication._sapIndicationColor_10_Selected_BorderColorA})",
+      "type": "color"
+    },
+    "sapIndicationColor_10_Selected_Background": {
+      "value": "hsla({Indication._sapIndicationColor_10_Selected_BackgroundH}, {Indication._sapIndicationColor_10_Selected_BackgroundS}, {Indication._sapIndicationColor_10_Selected_BackgroundL}, {Indication._sapIndicationColor_10_Selected_BackgroundA})",
+      "type": "color"
+    },
+    "sapIndicationColor_10_Active_TextColor": {
+      "value": "hsla({Indication._sapIndicationColor_10_Active_TextColorH}, {Indication._sapIndicationColor_10_Active_TextColorS}, {Indication._sapIndicationColor_10_Active_TextColorL}, {Indication._sapIndicationColor_10_Active_TextColorA})",
+      "type": "color"
+    },
+    "sapIndicationColor_10_Active_BorderColor": {
+      "value": "hsla({Indication._sapIndicationColor_10_Active_BorderColorH}, {Indication._sapIndicationColor_10_Active_BorderColorS}, {Indication._sapIndicationColor_10_Active_BorderColorL}, {Indication._sapIndicationColor_10_Active_BorderColorA})",
+      "type": "color"
+    },
+    "sapIndicationColor_10_Active_Background": {
+      "value": "hsla({Indication._sapIndicationColor_10_Active_BackgroundH}, {Indication._sapIndicationColor_10_Active_BackgroundS}, {Indication._sapIndicationColor_10_Active_BackgroundL}, {Indication._sapIndicationColor_10_Active_BackgroundA})",
+      "type": "color"
+    },
+    "sapIndicationColor_10_Hover_Background": {
+      "value": "hsla({Indication._sapIndicationColor_10_Hover_BackgroundH}, {Indication._sapIndicationColor_10_Hover_BackgroundS}, {Indication._sapIndicationColor_10_Hover_BackgroundL}, {Indication._sapIndicationColor_10_Hover_BackgroundA})",
+      "type": "color"
+    },
+    "_sapIndicationColor_10_TextColorH": {
+      "value": "{Text._sapTextColorH}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_10_TextColorS": {
+      "value": "{Text._sapTextColorS}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_10_TextColorL": {
+      "value": "{Text._sapTextColorL}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_10_TextColorA": {
+      "value": "{Text._sapTextColorA}",
+      "type": "internal"
+    },
+    "sapIndicationColor_10_TextColor": {
+      "value": "hsla({Indication._sapIndicationColor_10_TextColorH}, {Indication._sapIndicationColor_10_TextColorS}, {Indication._sapIndicationColor_10_TextColorL}, {Indication._sapIndicationColor_10_TextColorA})",
+      "type": "color"
+    },
+    "sapIndicationColor_10_BorderColor": {
+      "value": "hsla({Indication._sapIndicationColor_10_BorderColorH}, {Indication._sapIndicationColor_10_BorderColorS}, {Indication._sapIndicationColor_10_BorderColorL}, {Indication._sapIndicationColor_10_BorderColorA})",
+      "type": "color"
+    },
+    "sapIndicationColor_10_Background": {
+      "value": "hsla({Indication._sapIndicationColor_10_BackgroundH}, {Indication._sapIndicationColor_10_BackgroundS}, {Indication._sapIndicationColor_10_BackgroundL}, {Indication._sapIndicationColor_10_BackgroundA})",
+      "type": "color"
+    },
+    "_sapIndicationColor_10H": {
+      "value": "209.99999999999977",
+      "type": "internal"
+    },
+    "_sapIndicationColor_10S": {
+      "value": "10.526315789473728%",
+      "type": "internal"
+    },
+    "_sapIndicationColor_10L": {
+      "value": "92.54901960784314%",
+      "type": "internal"
+    },
+    "_sapIndicationColor_10A": {
+      "value": "1",
+      "type": "internal"
+    },
+    "sapIndicationColor_10": {
+      "value": "hsla({Indication._sapIndicationColor_10H}, {Indication._sapIndicationColor_10S}, {Indication._sapIndicationColor_10L}, {Indication._sapIndicationColor_10A})",
+      "type": "color"
+    },
+    "sapIndicationColor_9b_Hover_Background": {
+      "value": "hsla({Indication._sapIndicationColor_9b_Hover_BackgroundH}, {Indication._sapIndicationColor_9b_Hover_BackgroundS}, {Indication._sapIndicationColor_9b_Hover_BackgroundL}, {Indication._sapIndicationColor_9b_Hover_BackgroundA})",
+      "type": "color"
+    },
+    "sapIndicationColor_9b_BorderColor": {
+      "value": "hsla({Indication._sapIndicationColor_9b_BorderColorH}, {Indication._sapIndicationColor_9b_BorderColorS}, {Indication._sapIndicationColor_9b_BorderColorL}, {Indication._sapIndicationColor_9b_BorderColorA})",
+      "type": "color"
+    },
+    "sapIndicationColor_9b": {
+      "value": "hsla({Indication._sapIndicationColor_9bH}, {Indication._sapIndicationColor_9bS}, {Indication._sapIndicationColor_9bL}, {Indication._sapIndicationColor_9bA})",
+      "type": "color"
+    },
+    "sapIndicationColor_9_Selected_TextColor": {
+      "value": "hsla({Indication._sapIndicationColor_9_Selected_TextColorH}, {Indication._sapIndicationColor_9_Selected_TextColorS}, {Indication._sapIndicationColor_9_Selected_TextColorL}, {Indication._sapIndicationColor_9_Selected_TextColorA})",
+      "type": "color"
+    },
+    "sapIndicationColor_9_Selected_BorderColor": {
+      "value": "hsla({Indication._sapIndicationColor_9_Selected_BorderColorH}, {Indication._sapIndicationColor_9_Selected_BorderColorS}, {Indication._sapIndicationColor_9_Selected_BorderColorL}, {Indication._sapIndicationColor_9_Selected_BorderColorA})",
+      "type": "color"
+    },
+    "sapIndicationColor_9_Selected_Background": {
+      "value": "hsla({Indication._sapIndicationColor_9_Selected_BackgroundH}, {Indication._sapIndicationColor_9_Selected_BackgroundS}, {Indication._sapIndicationColor_9_Selected_BackgroundL}, {Indication._sapIndicationColor_9_Selected_BackgroundA})",
+      "type": "color"
+    },
+    "sapIndicationColor_9_Active_TextColor": {
+      "value": "hsla({Indication._sapIndicationColor_9_Active_TextColorH}, {Indication._sapIndicationColor_9_Active_TextColorS}, {Indication._sapIndicationColor_9_Active_TextColorL}, {Indication._sapIndicationColor_9_Active_TextColorA})",
+      "type": "color"
+    },
+    "sapIndicationColor_9_Active_BorderColor": {
+      "value": "hsla({Indication._sapIndicationColor_9_Active_BorderColorH}, {Indication._sapIndicationColor_9_Active_BorderColorS}, {Indication._sapIndicationColor_9_Active_BorderColorL}, {Indication._sapIndicationColor_9_Active_BorderColorA})",
+      "type": "color"
+    },
+    "sapIndicationColor_9_Active_Background": {
+      "value": "hsla({Indication._sapIndicationColor_9_Active_BackgroundH}, {Indication._sapIndicationColor_9_Active_BackgroundS}, {Indication._sapIndicationColor_9_Active_BackgroundL}, {Indication._sapIndicationColor_9_Active_BackgroundA})",
+      "type": "color"
+    },
+    "sapIndicationColor_9_Hover_Background": {
+      "value": "hsla({Indication._sapIndicationColor_9_Hover_BackgroundH}, {Indication._sapIndicationColor_9_Hover_BackgroundS}, {Indication._sapIndicationColor_9_Hover_BackgroundL}, {Indication._sapIndicationColor_9_Hover_BackgroundA})",
+      "type": "color"
+    },
+    "_sapIndicationColor_9_TextColorH": {
+      "value": "{Text._sapTextColorH}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_9_TextColorS": {
+      "value": "{Text._sapTextColorS}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_9_TextColorL": {
+      "value": "{Text._sapTextColorL}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_9_TextColorA": {
+      "value": "{Text._sapTextColorA}",
+      "type": "internal"
+    },
+    "sapIndicationColor_9_TextColor": {
+      "value": "hsla({Indication._sapIndicationColor_9_TextColorH}, {Indication._sapIndicationColor_9_TextColorS}, {Indication._sapIndicationColor_9_TextColorL}, {Indication._sapIndicationColor_9_TextColorA})",
+      "type": "color"
+    },
+    "sapIndicationColor_9_BorderColor": {
+      "value": "hsla({Indication._sapIndicationColor_9_BorderColorH}, {Indication._sapIndicationColor_9_BorderColorS}, {Indication._sapIndicationColor_9_BorderColorL}, {Indication._sapIndicationColor_9_BorderColorA})",
+      "type": "color"
+    },
+    "sapIndicationColor_9_Background": {
+      "value": "hsla({Indication._sapIndicationColor_9_BackgroundH}, {Indication._sapIndicationColor_9_BackgroundS}, {Indication._sapIndicationColor_9_BackgroundL}, {Indication._sapIndicationColor_9_BackgroundA})",
+      "type": "color"
+    },
+    "_sapIndicationColor_9H": {
+      "value": "0",
+      "type": "internal"
+    },
+    "_sapIndicationColor_9S": {
+      "value": "0%",
+      "type": "internal"
+    },
+    "_sapIndicationColor_9L": {
+      "value": "100%",
+      "type": "internal"
+    },
+    "_sapIndicationColor_9A": {
+      "value": "1",
+      "type": "internal"
+    },
+    "sapIndicationColor_9": {
+      "value": "hsla({Indication._sapIndicationColor_9H}, {Indication._sapIndicationColor_9S}, {Indication._sapIndicationColor_9L}, {Indication._sapIndicationColor_9A})",
+      "type": "color"
+    },
+    "sapIndicationColor_8b_Hover_Background": {
+      "value": "hsla({Indication._sapIndicationColor_8b_Hover_BackgroundH}, {Indication._sapIndicationColor_8b_Hover_BackgroundS}, {Indication._sapIndicationColor_8b_Hover_BackgroundL}, {Indication._sapIndicationColor_8b_Hover_BackgroundA})",
+      "type": "color"
+    },
+    "sapIndicationColor_8b_BorderColor": {
+      "value": "hsla({Indication._sapIndicationColor_8b_BorderColorH}, {Indication._sapIndicationColor_8b_BorderColorS}, {Indication._sapIndicationColor_8b_BorderColorL}, {Indication._sapIndicationColor_8b_BorderColorA})",
+      "type": "color"
+    },
+    "sapIndicationColor_8b": {
+      "value": "hsla({Indication._sapIndicationColor_8bH}, {Indication._sapIndicationColor_8bS}, {Indication._sapIndicationColor_8bL}, {Indication._sapIndicationColor_8bA})",
+      "type": "color"
+    },
+    "sapIndicationColor_8_Selected_TextColor": {
+      "value": "hsla({Indication._sapIndicationColor_8_Selected_TextColorH}, {Indication._sapIndicationColor_8_Selected_TextColorS}, {Indication._sapIndicationColor_8_Selected_TextColorL}, {Indication._sapIndicationColor_8_Selected_TextColorA})",
+      "type": "color"
+    },
+    "sapIndicationColor_8_Selected_BorderColor": {
+      "value": "hsla({Indication._sapIndicationColor_8_Selected_BorderColorH}, {Indication._sapIndicationColor_8_Selected_BorderColorS}, {Indication._sapIndicationColor_8_Selected_BorderColorL}, {Indication._sapIndicationColor_8_Selected_BorderColorA})",
+      "type": "color"
+    },
+    "sapIndicationColor_8_Selected_Background": {
+      "value": "hsla({Indication._sapIndicationColor_8_Selected_BackgroundH}, {Indication._sapIndicationColor_8_Selected_BackgroundS}, {Indication._sapIndicationColor_8_Selected_BackgroundL}, {Indication._sapIndicationColor_8_Selected_BackgroundA})",
+      "type": "color"
+    },
+    "sapIndicationColor_8_Active_TextColor": {
+      "value": "hsla({Indication._sapIndicationColor_8_Active_TextColorH}, {Indication._sapIndicationColor_8_Active_TextColorS}, {Indication._sapIndicationColor_8_Active_TextColorL}, {Indication._sapIndicationColor_8_Active_TextColorA})",
+      "type": "color"
+    },
+    "sapIndicationColor_8_Active_BorderColor": {
+      "value": "hsla({Indication._sapIndicationColor_8_Active_BorderColorH}, {Indication._sapIndicationColor_8_Active_BorderColorS}, {Indication._sapIndicationColor_8_Active_BorderColorL}, {Indication._sapIndicationColor_8_Active_BorderColorA})",
+      "type": "color"
+    },
+    "sapIndicationColor_8_Active_Background": {
+      "value": "hsla({Indication._sapIndicationColor_8_Active_BackgroundH}, {Indication._sapIndicationColor_8_Active_BackgroundS}, {Indication._sapIndicationColor_8_Active_BackgroundL}, {Indication._sapIndicationColor_8_Active_BackgroundA})",
+      "type": "color"
+    },
+    "sapIndicationColor_8_Hover_Background": {
+      "value": "hsla({Indication._sapIndicationColor_8_Hover_BackgroundH}, {Indication._sapIndicationColor_8_Hover_BackgroundS}, {Indication._sapIndicationColor_8_Hover_BackgroundL}, {Indication._sapIndicationColor_8_Hover_BackgroundA})",
+      "type": "color"
+    },
     "_sapIndicationColor_8_TextColorH": {
       "value": "{Text._sapTextColorH}",
       "type": "internal"
@@ -2290,14 +2506,6 @@
     },
     "sapIndicationColor_8_TextColor": {
       "value": "hsla({Indication._sapIndicationColor_8_TextColorH}, {Indication._sapIndicationColor_8_TextColorS}, {Indication._sapIndicationColor_8_TextColorL}, {Indication._sapIndicationColor_8_TextColorA})",
-      "type": "color"
-    },
-    "sapIndicationColor_8_Active_Background": {
-      "value": "hsla({Indication._sapIndicationColor_8_Active_BackgroundH}, {Indication._sapIndicationColor_8_Active_BackgroundS}, {Indication._sapIndicationColor_8_Active_BackgroundL}, {Indication._sapIndicationColor_8_Active_BackgroundA})",
-      "type": "color"
-    },
-    "sapIndicationColor_8_Hover_Background": {
-      "value": "hsla({Indication._sapIndicationColor_8_Hover_BackgroundH}, {Indication._sapIndicationColor_8_Hover_BackgroundS}, {Indication._sapIndicationColor_8_Hover_BackgroundL}, {Indication._sapIndicationColor_8_Hover_BackgroundA})",
       "type": "color"
     },
     "sapIndicationColor_8_BorderColor": {
@@ -2328,6 +2536,46 @@
       "value": "hsla({Indication._sapIndicationColor_8H}, {Indication._sapIndicationColor_8S}, {Indication._sapIndicationColor_8L}, {Indication._sapIndicationColor_8A})",
       "type": "color"
     },
+    "sapIndicationColor_7b_Hover_Background": {
+      "value": "hsla({Indication._sapIndicationColor_7b_Hover_BackgroundH}, {Indication._sapIndicationColor_7b_Hover_BackgroundS}, {Indication._sapIndicationColor_7b_Hover_BackgroundL}, {Indication._sapIndicationColor_7b_Hover_BackgroundA})",
+      "type": "color"
+    },
+    "sapIndicationColor_7b_BorderColor": {
+      "value": "hsla({Indication._sapIndicationColor_7b_BorderColorH}, {Indication._sapIndicationColor_7b_BorderColorS}, {Indication._sapIndicationColor_7b_BorderColorL}, {Indication._sapIndicationColor_7b_BorderColorA})",
+      "type": "color"
+    },
+    "sapIndicationColor_7b": {
+      "value": "hsla({Indication._sapIndicationColor_7bH}, {Indication._sapIndicationColor_7bS}, {Indication._sapIndicationColor_7bL}, {Indication._sapIndicationColor_7bA})",
+      "type": "color"
+    },
+    "sapIndicationColor_7_Selected_TextColor": {
+      "value": "hsla({Indication._sapIndicationColor_7_Selected_TextColorH}, {Indication._sapIndicationColor_7_Selected_TextColorS}, {Indication._sapIndicationColor_7_Selected_TextColorL}, {Indication._sapIndicationColor_7_Selected_TextColorA})",
+      "type": "color"
+    },
+    "sapIndicationColor_7_Selected_BorderColor": {
+      "value": "hsla({Indication._sapIndicationColor_7_Selected_BorderColorH}, {Indication._sapIndicationColor_7_Selected_BorderColorS}, {Indication._sapIndicationColor_7_Selected_BorderColorL}, {Indication._sapIndicationColor_7_Selected_BorderColorA})",
+      "type": "color"
+    },
+    "sapIndicationColor_7_Selected_Background": {
+      "value": "hsla({Indication._sapIndicationColor_7_Selected_BackgroundH}, {Indication._sapIndicationColor_7_Selected_BackgroundS}, {Indication._sapIndicationColor_7_Selected_BackgroundL}, {Indication._sapIndicationColor_7_Selected_BackgroundA})",
+      "type": "color"
+    },
+    "sapIndicationColor_7_Active_TextColor": {
+      "value": "hsla({Indication._sapIndicationColor_7_Active_TextColorH}, {Indication._sapIndicationColor_7_Active_TextColorS}, {Indication._sapIndicationColor_7_Active_TextColorL}, {Indication._sapIndicationColor_7_Active_TextColorA})",
+      "type": "color"
+    },
+    "sapIndicationColor_7_Active_BorderColor": {
+      "value": "hsla({Indication._sapIndicationColor_7_Active_BorderColorH}, {Indication._sapIndicationColor_7_Active_BorderColorS}, {Indication._sapIndicationColor_7_Active_BorderColorL}, {Indication._sapIndicationColor_7_Active_BorderColorA})",
+      "type": "color"
+    },
+    "sapIndicationColor_7_Active_Background": {
+      "value": "hsla({Indication._sapIndicationColor_7_Active_BackgroundH}, {Indication._sapIndicationColor_7_Active_BackgroundS}, {Indication._sapIndicationColor_7_Active_BackgroundL}, {Indication._sapIndicationColor_7_Active_BackgroundA})",
+      "type": "color"
+    },
+    "sapIndicationColor_7_Hover_Background": {
+      "value": "hsla({Indication._sapIndicationColor_7_Hover_BackgroundH}, {Indication._sapIndicationColor_7_Hover_BackgroundS}, {Indication._sapIndicationColor_7_Hover_BackgroundL}, {Indication._sapIndicationColor_7_Hover_BackgroundA})",
+      "type": "color"
+    },
     "_sapIndicationColor_7_TextColorH": {
       "value": "{Text._sapTextColorH}",
       "type": "internal"
@@ -2346,14 +2594,6 @@
     },
     "sapIndicationColor_7_TextColor": {
       "value": "hsla({Indication._sapIndicationColor_7_TextColorH}, {Indication._sapIndicationColor_7_TextColorS}, {Indication._sapIndicationColor_7_TextColorL}, {Indication._sapIndicationColor_7_TextColorA})",
-      "type": "color"
-    },
-    "sapIndicationColor_7_Active_Background": {
-      "value": "hsla({Indication._sapIndicationColor_7_Active_BackgroundH}, {Indication._sapIndicationColor_7_Active_BackgroundS}, {Indication._sapIndicationColor_7_Active_BackgroundL}, {Indication._sapIndicationColor_7_Active_BackgroundA})",
-      "type": "color"
-    },
-    "sapIndicationColor_7_Hover_Background": {
-      "value": "hsla({Indication._sapIndicationColor_7_Hover_BackgroundH}, {Indication._sapIndicationColor_7_Hover_BackgroundS}, {Indication._sapIndicationColor_7_Hover_BackgroundL}, {Indication._sapIndicationColor_7_Hover_BackgroundA})",
       "type": "color"
     },
     "sapIndicationColor_7_BorderColor": {
@@ -2384,6 +2624,46 @@
       "value": "hsla({Indication._sapIndicationColor_7H}, {Indication._sapIndicationColor_7S}, {Indication._sapIndicationColor_7L}, {Indication._sapIndicationColor_7A})",
       "type": "color"
     },
+    "sapIndicationColor_6b_Hover_Background": {
+      "value": "hsla({Indication._sapIndicationColor_6b_Hover_BackgroundH}, {Indication._sapIndicationColor_6b_Hover_BackgroundS}, {Indication._sapIndicationColor_6b_Hover_BackgroundL}, {Indication._sapIndicationColor_6b_Hover_BackgroundA})",
+      "type": "color"
+    },
+    "sapIndicationColor_6b_BorderColor": {
+      "value": "hsla({Indication._sapIndicationColor_6b_BorderColorH}, {Indication._sapIndicationColor_6b_BorderColorS}, {Indication._sapIndicationColor_6b_BorderColorL}, {Indication._sapIndicationColor_6b_BorderColorA})",
+      "type": "color"
+    },
+    "sapIndicationColor_6b": {
+      "value": "hsla({Indication._sapIndicationColor_6bH}, {Indication._sapIndicationColor_6bS}, {Indication._sapIndicationColor_6bL}, {Indication._sapIndicationColor_6bA})",
+      "type": "color"
+    },
+    "sapIndicationColor_6_Selected_TextColor": {
+      "value": "hsla({Indication._sapIndicationColor_6_Selected_TextColorH}, {Indication._sapIndicationColor_6_Selected_TextColorS}, {Indication._sapIndicationColor_6_Selected_TextColorL}, {Indication._sapIndicationColor_6_Selected_TextColorA})",
+      "type": "color"
+    },
+    "sapIndicationColor_6_Selected_BorderColor": {
+      "value": "hsla({Indication._sapIndicationColor_6_Selected_BorderColorH}, {Indication._sapIndicationColor_6_Selected_BorderColorS}, {Indication._sapIndicationColor_6_Selected_BorderColorL}, {Indication._sapIndicationColor_6_Selected_BorderColorA})",
+      "type": "color"
+    },
+    "sapIndicationColor_6_Selected_Background": {
+      "value": "hsla({Indication._sapIndicationColor_6_Selected_BackgroundH}, {Indication._sapIndicationColor_6_Selected_BackgroundS}, {Indication._sapIndicationColor_6_Selected_BackgroundL}, {Indication._sapIndicationColor_6_Selected_BackgroundA})",
+      "type": "color"
+    },
+    "sapIndicationColor_6_Active_TextColor": {
+      "value": "hsla({Indication._sapIndicationColor_6_Active_TextColorH}, {Indication._sapIndicationColor_6_Active_TextColorS}, {Indication._sapIndicationColor_6_Active_TextColorL}, {Indication._sapIndicationColor_6_Active_TextColorA})",
+      "type": "color"
+    },
+    "sapIndicationColor_6_Active_BorderColor": {
+      "value": "hsla({Indication._sapIndicationColor_6_Active_BorderColorH}, {Indication._sapIndicationColor_6_Active_BorderColorS}, {Indication._sapIndicationColor_6_Active_BorderColorL}, {Indication._sapIndicationColor_6_Active_BorderColorA})",
+      "type": "color"
+    },
+    "sapIndicationColor_6_Active_Background": {
+      "value": "hsla({Indication._sapIndicationColor_6_Active_BackgroundH}, {Indication._sapIndicationColor_6_Active_BackgroundS}, {Indication._sapIndicationColor_6_Active_BackgroundL}, {Indication._sapIndicationColor_6_Active_BackgroundA})",
+      "type": "color"
+    },
+    "sapIndicationColor_6_Hover_Background": {
+      "value": "hsla({Indication._sapIndicationColor_6_Hover_BackgroundH}, {Indication._sapIndicationColor_6_Hover_BackgroundS}, {Indication._sapIndicationColor_6_Hover_BackgroundL}, {Indication._sapIndicationColor_6_Hover_BackgroundA})",
+      "type": "color"
+    },
     "_sapIndicationColor_6_TextColorH": {
       "value": "{Text._sapTextColorH}",
       "type": "internal"
@@ -2402,14 +2682,6 @@
     },
     "sapIndicationColor_6_TextColor": {
       "value": "hsla({Indication._sapIndicationColor_6_TextColorH}, {Indication._sapIndicationColor_6_TextColorS}, {Indication._sapIndicationColor_6_TextColorL}, {Indication._sapIndicationColor_6_TextColorA})",
-      "type": "color"
-    },
-    "sapIndicationColor_6_Active_Background": {
-      "value": "hsla({Indication._sapIndicationColor_6_Active_BackgroundH}, {Indication._sapIndicationColor_6_Active_BackgroundS}, {Indication._sapIndicationColor_6_Active_BackgroundL}, {Indication._sapIndicationColor_6_Active_BackgroundA})",
-      "type": "color"
-    },
-    "sapIndicationColor_6_Hover_Background": {
-      "value": "hsla({Indication._sapIndicationColor_6_Hover_BackgroundH}, {Indication._sapIndicationColor_6_Hover_BackgroundS}, {Indication._sapIndicationColor_6_Hover_BackgroundL}, {Indication._sapIndicationColor_6_Hover_BackgroundA})",
       "type": "color"
     },
     "sapIndicationColor_6_BorderColor": {
@@ -2440,6 +2712,46 @@
       "value": "hsla({Indication._sapIndicationColor_6H}, {Indication._sapIndicationColor_6S}, {Indication._sapIndicationColor_6L}, {Indication._sapIndicationColor_6A})",
       "type": "color"
     },
+    "sapIndicationColor_5b_Hover_Background": {
+      "value": "hsla({Indication._sapIndicationColor_5b_Hover_BackgroundH}, {Indication._sapIndicationColor_5b_Hover_BackgroundS}, {Indication._sapIndicationColor_5b_Hover_BackgroundL}, {Indication._sapIndicationColor_5b_Hover_BackgroundA})",
+      "type": "color"
+    },
+    "sapIndicationColor_5b_BorderColor": {
+      "value": "hsla({Indication._sapIndicationColor_5b_BorderColorH}, {Indication._sapIndicationColor_5b_BorderColorS}, {Indication._sapIndicationColor_5b_BorderColorL}, {Indication._sapIndicationColor_5b_BorderColorA})",
+      "type": "color"
+    },
+    "sapIndicationColor_5b": {
+      "value": "hsla({Indication._sapIndicationColor_5bH}, {Indication._sapIndicationColor_5bS}, {Indication._sapIndicationColor_5bL}, {Indication._sapIndicationColor_5bA})",
+      "type": "color"
+    },
+    "sapIndicationColor_5_Selected_TextColor": {
+      "value": "hsla({Indication._sapIndicationColor_5_Selected_TextColorH}, {Indication._sapIndicationColor_5_Selected_TextColorS}, {Indication._sapIndicationColor_5_Selected_TextColorL}, {Indication._sapIndicationColor_5_Selected_TextColorA})",
+      "type": "color"
+    },
+    "sapIndicationColor_5_Selected_BorderColor": {
+      "value": "hsla({Indication._sapIndicationColor_5_Selected_BorderColorH}, {Indication._sapIndicationColor_5_Selected_BorderColorS}, {Indication._sapIndicationColor_5_Selected_BorderColorL}, {Indication._sapIndicationColor_5_Selected_BorderColorA})",
+      "type": "color"
+    },
+    "sapIndicationColor_5_Selected_Background": {
+      "value": "hsla({Indication._sapIndicationColor_5_Selected_BackgroundH}, {Indication._sapIndicationColor_5_Selected_BackgroundS}, {Indication._sapIndicationColor_5_Selected_BackgroundL}, {Indication._sapIndicationColor_5_Selected_BackgroundA})",
+      "type": "color"
+    },
+    "sapIndicationColor_5_Active_TextColor": {
+      "value": "hsla({Indication._sapIndicationColor_5_Active_TextColorH}, {Indication._sapIndicationColor_5_Active_TextColorS}, {Indication._sapIndicationColor_5_Active_TextColorL}, {Indication._sapIndicationColor_5_Active_TextColorA})",
+      "type": "color"
+    },
+    "sapIndicationColor_5_Active_BorderColor": {
+      "value": "hsla({Indication._sapIndicationColor_5_Active_BorderColorH}, {Indication._sapIndicationColor_5_Active_BorderColorS}, {Indication._sapIndicationColor_5_Active_BorderColorL}, {Indication._sapIndicationColor_5_Active_BorderColorA})",
+      "type": "color"
+    },
+    "sapIndicationColor_5_Active_Background": {
+      "value": "hsla({Indication._sapIndicationColor_5_Active_BackgroundH}, {Indication._sapIndicationColor_5_Active_BackgroundS}, {Indication._sapIndicationColor_5_Active_BackgroundL}, {Indication._sapIndicationColor_5_Active_BackgroundA})",
+      "type": "color"
+    },
+    "sapIndicationColor_5_Hover_Background": {
+      "value": "hsla({Indication._sapIndicationColor_5_Hover_BackgroundH}, {Indication._sapIndicationColor_5_Hover_BackgroundS}, {Indication._sapIndicationColor_5_Hover_BackgroundL}, {Indication._sapIndicationColor_5_Hover_BackgroundA})",
+      "type": "color"
+    },
     "_sapIndicationColor_5_TextColorH": {
       "value": "{Text._sapTextColorH}",
       "type": "internal"
@@ -2458,14 +2770,6 @@
     },
     "sapIndicationColor_5_TextColor": {
       "value": "hsla({Indication._sapIndicationColor_5_TextColorH}, {Indication._sapIndicationColor_5_TextColorS}, {Indication._sapIndicationColor_5_TextColorL}, {Indication._sapIndicationColor_5_TextColorA})",
-      "type": "color"
-    },
-    "sapIndicationColor_5_Active_Background": {
-      "value": "hsla({Indication._sapIndicationColor_5_Active_BackgroundH}, {Indication._sapIndicationColor_5_Active_BackgroundS}, {Indication._sapIndicationColor_5_Active_BackgroundL}, {Indication._sapIndicationColor_5_Active_BackgroundA})",
-      "type": "color"
-    },
-    "sapIndicationColor_5_Hover_Background": {
-      "value": "hsla({Indication._sapIndicationColor_5_Hover_BackgroundH}, {Indication._sapIndicationColor_5_Hover_BackgroundS}, {Indication._sapIndicationColor_5_Hover_BackgroundL}, {Indication._sapIndicationColor_5_Hover_BackgroundA})",
       "type": "color"
     },
     "sapIndicationColor_5_BorderColor": {
@@ -2496,6 +2800,46 @@
       "value": "hsla({Indication._sapIndicationColor_5H}, {Indication._sapIndicationColor_5S}, {Indication._sapIndicationColor_5L}, {Indication._sapIndicationColor_5A})",
       "type": "color"
     },
+    "sapIndicationColor_4b_Hover_Background": {
+      "value": "hsla({Indication._sapIndicationColor_4b_Hover_BackgroundH}, {Indication._sapIndicationColor_4b_Hover_BackgroundS}, {Indication._sapIndicationColor_4b_Hover_BackgroundL}, {Indication._sapIndicationColor_4b_Hover_BackgroundA})",
+      "type": "color"
+    },
+    "sapIndicationColor_4b_BorderColor": {
+      "value": "hsla({Indication._sapIndicationColor_4b_BorderColorH}, {Indication._sapIndicationColor_4b_BorderColorS}, {Indication._sapIndicationColor_4b_BorderColorL}, {Indication._sapIndicationColor_4b_BorderColorA})",
+      "type": "color"
+    },
+    "sapIndicationColor_4b": {
+      "value": "hsla({Indication._sapIndicationColor_4bH}, {Indication._sapIndicationColor_4bS}, {Indication._sapIndicationColor_4bL}, {Indication._sapIndicationColor_4bA})",
+      "type": "color"
+    },
+    "sapIndicationColor_4_Selected_TextColor": {
+      "value": "hsla({Indication._sapIndicationColor_4_Selected_TextColorH}, {Indication._sapIndicationColor_4_Selected_TextColorS}, {Indication._sapIndicationColor_4_Selected_TextColorL}, {Indication._sapIndicationColor_4_Selected_TextColorA})",
+      "type": "color"
+    },
+    "sapIndicationColor_4_Selected_BorderColor": {
+      "value": "hsla({Indication._sapIndicationColor_4_Selected_BorderColorH}, {Indication._sapIndicationColor_4_Selected_BorderColorS}, {Indication._sapIndicationColor_4_Selected_BorderColorL}, {Indication._sapIndicationColor_4_Selected_BorderColorA})",
+      "type": "color"
+    },
+    "sapIndicationColor_4_Selected_Background": {
+      "value": "hsla({Indication._sapIndicationColor_4_Selected_BackgroundH}, {Indication._sapIndicationColor_4_Selected_BackgroundS}, {Indication._sapIndicationColor_4_Selected_BackgroundL}, {Indication._sapIndicationColor_4_Selected_BackgroundA})",
+      "type": "color"
+    },
+    "sapIndicationColor_4_Active_TextColor": {
+      "value": "hsla({Indication._sapIndicationColor_4_Active_TextColorH}, {Indication._sapIndicationColor_4_Active_TextColorS}, {Indication._sapIndicationColor_4_Active_TextColorL}, {Indication._sapIndicationColor_4_Active_TextColorA})",
+      "type": "color"
+    },
+    "sapIndicationColor_4_Active_BorderColor": {
+      "value": "hsla({Indication._sapIndicationColor_4_Active_BorderColorH}, {Indication._sapIndicationColor_4_Active_BorderColorS}, {Indication._sapIndicationColor_4_Active_BorderColorL}, {Indication._sapIndicationColor_4_Active_BorderColorA})",
+      "type": "color"
+    },
+    "sapIndicationColor_4_Active_Background": {
+      "value": "hsla({Indication._sapIndicationColor_4_Active_BackgroundH}, {Indication._sapIndicationColor_4_Active_BackgroundS}, {Indication._sapIndicationColor_4_Active_BackgroundL}, {Indication._sapIndicationColor_4_Active_BackgroundA})",
+      "type": "color"
+    },
+    "sapIndicationColor_4_Hover_Background": {
+      "value": "hsla({Indication._sapIndicationColor_4_Hover_BackgroundH}, {Indication._sapIndicationColor_4_Hover_BackgroundS}, {Indication._sapIndicationColor_4_Hover_BackgroundL}, {Indication._sapIndicationColor_4_Hover_BackgroundA})",
+      "type": "color"
+    },
     "_sapIndicationColor_4_TextColorH": {
       "value": "{Text._sapTextColorH}",
       "type": "internal"
@@ -2514,14 +2858,6 @@
     },
     "sapIndicationColor_4_TextColor": {
       "value": "hsla({Indication._sapIndicationColor_4_TextColorH}, {Indication._sapIndicationColor_4_TextColorS}, {Indication._sapIndicationColor_4_TextColorL}, {Indication._sapIndicationColor_4_TextColorA})",
-      "type": "color"
-    },
-    "sapIndicationColor_4_Active_Background": {
-      "value": "hsla({Indication._sapIndicationColor_4_Active_BackgroundH}, {Indication._sapIndicationColor_4_Active_BackgroundS}, {Indication._sapIndicationColor_4_Active_BackgroundL}, {Indication._sapIndicationColor_4_Active_BackgroundA})",
-      "type": "color"
-    },
-    "sapIndicationColor_4_Hover_Background": {
-      "value": "hsla({Indication._sapIndicationColor_4_Hover_BackgroundH}, {Indication._sapIndicationColor_4_Hover_BackgroundS}, {Indication._sapIndicationColor_4_Hover_BackgroundL}, {Indication._sapIndicationColor_4_Hover_BackgroundA})",
       "type": "color"
     },
     "sapIndicationColor_4_BorderColor": {
@@ -2552,6 +2888,46 @@
       "value": "hsla({Indication._sapIndicationColor_4H}, {Indication._sapIndicationColor_4S}, {Indication._sapIndicationColor_4L}, {Indication._sapIndicationColor_4A})",
       "type": "color"
     },
+    "sapIndicationColor_3b_Hover_Background": {
+      "value": "hsla({Indication._sapIndicationColor_3b_Hover_BackgroundH}, {Indication._sapIndicationColor_3b_Hover_BackgroundS}, {Indication._sapIndicationColor_3b_Hover_BackgroundL}, {Indication._sapIndicationColor_3b_Hover_BackgroundA})",
+      "type": "color"
+    },
+    "sapIndicationColor_3b_BorderColor": {
+      "value": "hsla({Indication._sapIndicationColor_3b_BorderColorH}, {Indication._sapIndicationColor_3b_BorderColorS}, {Indication._sapIndicationColor_3b_BorderColorL}, {Indication._sapIndicationColor_3b_BorderColorA})",
+      "type": "color"
+    },
+    "sapIndicationColor_3b": {
+      "value": "hsla({Indication._sapIndicationColor_3bH}, {Indication._sapIndicationColor_3bS}, {Indication._sapIndicationColor_3bL}, {Indication._sapIndicationColor_3bA})",
+      "type": "color"
+    },
+    "sapIndicationColor_3_Selected_TextColor": {
+      "value": "hsla({Indication._sapIndicationColor_3_Selected_TextColorH}, {Indication._sapIndicationColor_3_Selected_TextColorS}, {Indication._sapIndicationColor_3_Selected_TextColorL}, {Indication._sapIndicationColor_3_Selected_TextColorA})",
+      "type": "color"
+    },
+    "sapIndicationColor_3_Selected_BorderColor": {
+      "value": "hsla({Indication._sapIndicationColor_3_Selected_BorderColorH}, {Indication._sapIndicationColor_3_Selected_BorderColorS}, {Indication._sapIndicationColor_3_Selected_BorderColorL}, {Indication._sapIndicationColor_3_Selected_BorderColorA})",
+      "type": "color"
+    },
+    "sapIndicationColor_3_Selected_Background": {
+      "value": "hsla({Indication._sapIndicationColor_3_Selected_BackgroundH}, {Indication._sapIndicationColor_3_Selected_BackgroundS}, {Indication._sapIndicationColor_3_Selected_BackgroundL}, {Indication._sapIndicationColor_3_Selected_BackgroundA})",
+      "type": "color"
+    },
+    "sapIndicationColor_3_Active_TextColor": {
+      "value": "hsla({Indication._sapIndicationColor_3_Active_TextColorH}, {Indication._sapIndicationColor_3_Active_TextColorS}, {Indication._sapIndicationColor_3_Active_TextColorL}, {Indication._sapIndicationColor_3_Active_TextColorA})",
+      "type": "color"
+    },
+    "sapIndicationColor_3_Active_BorderColor": {
+      "value": "hsla({Indication._sapIndicationColor_3_Active_BorderColorH}, {Indication._sapIndicationColor_3_Active_BorderColorS}, {Indication._sapIndicationColor_3_Active_BorderColorL}, {Indication._sapIndicationColor_3_Active_BorderColorA})",
+      "type": "color"
+    },
+    "sapIndicationColor_3_Active_Background": {
+      "value": "hsla({Indication._sapIndicationColor_3_Active_BackgroundH}, {Indication._sapIndicationColor_3_Active_BackgroundS}, {Indication._sapIndicationColor_3_Active_BackgroundL}, {Indication._sapIndicationColor_3_Active_BackgroundA})",
+      "type": "color"
+    },
+    "sapIndicationColor_3_Hover_Background": {
+      "value": "hsla({Indication._sapIndicationColor_3_Hover_BackgroundH}, {Indication._sapIndicationColor_3_Hover_BackgroundS}, {Indication._sapIndicationColor_3_Hover_BackgroundL}, {Indication._sapIndicationColor_3_Hover_BackgroundA})",
+      "type": "color"
+    },
     "_sapIndicationColor_3_TextColorH": {
       "value": "{Text._sapTextColorH}",
       "type": "internal"
@@ -2570,14 +2946,6 @@
     },
     "sapIndicationColor_3_TextColor": {
       "value": "hsla({Indication._sapIndicationColor_3_TextColorH}, {Indication._sapIndicationColor_3_TextColorS}, {Indication._sapIndicationColor_3_TextColorL}, {Indication._sapIndicationColor_3_TextColorA})",
-      "type": "color"
-    },
-    "sapIndicationColor_3_Active_Background": {
-      "value": "hsla({Indication._sapIndicationColor_3_Active_BackgroundH}, {Indication._sapIndicationColor_3_Active_BackgroundS}, {Indication._sapIndicationColor_3_Active_BackgroundL}, {Indication._sapIndicationColor_3_Active_BackgroundA})",
-      "type": "color"
-    },
-    "sapIndicationColor_3_Hover_Background": {
-      "value": "hsla({Indication._sapIndicationColor_3_Hover_BackgroundH}, {Indication._sapIndicationColor_3_Hover_BackgroundS}, {Indication._sapIndicationColor_3_Hover_BackgroundL}, {Indication._sapIndicationColor_3_Hover_BackgroundA})",
       "type": "color"
     },
     "sapIndicationColor_3_BorderColor": {
@@ -2608,6 +2976,46 @@
       "value": "hsla({Indication._sapIndicationColor_3H}, {Indication._sapIndicationColor_3S}, {Indication._sapIndicationColor_3L}, {Indication._sapIndicationColor_3A})",
       "type": "color"
     },
+    "sapIndicationColor_2b_Hover_Background": {
+      "value": "hsla({Indication._sapIndicationColor_2b_Hover_BackgroundH}, {Indication._sapIndicationColor_2b_Hover_BackgroundS}, {Indication._sapIndicationColor_2b_Hover_BackgroundL}, {Indication._sapIndicationColor_2b_Hover_BackgroundA})",
+      "type": "color"
+    },
+    "sapIndicationColor_2b_BorderColor": {
+      "value": "hsla({Indication._sapIndicationColor_2b_BorderColorH}, {Indication._sapIndicationColor_2b_BorderColorS}, {Indication._sapIndicationColor_2b_BorderColorL}, {Indication._sapIndicationColor_2b_BorderColorA})",
+      "type": "color"
+    },
+    "sapIndicationColor_2b": {
+      "value": "hsla({Indication._sapIndicationColor_2bH}, {Indication._sapIndicationColor_2bS}, {Indication._sapIndicationColor_2bL}, {Indication._sapIndicationColor_2bA})",
+      "type": "color"
+    },
+    "sapIndicationColor_2_Selected_TextColor": {
+      "value": "hsla({Indication._sapIndicationColor_2_Selected_TextColorH}, {Indication._sapIndicationColor_2_Selected_TextColorS}, {Indication._sapIndicationColor_2_Selected_TextColorL}, {Indication._sapIndicationColor_2_Selected_TextColorA})",
+      "type": "color"
+    },
+    "sapIndicationColor_2_Selected_BorderColor": {
+      "value": "hsla({Indication._sapIndicationColor_2_Selected_BorderColorH}, {Indication._sapIndicationColor_2_Selected_BorderColorS}, {Indication._sapIndicationColor_2_Selected_BorderColorL}, {Indication._sapIndicationColor_2_Selected_BorderColorA})",
+      "type": "color"
+    },
+    "sapIndicationColor_2_Selected_Background": {
+      "value": "hsla({Indication._sapIndicationColor_2_Selected_BackgroundH}, {Indication._sapIndicationColor_2_Selected_BackgroundS}, {Indication._sapIndicationColor_2_Selected_BackgroundL}, {Indication._sapIndicationColor_2_Selected_BackgroundA})",
+      "type": "color"
+    },
+    "sapIndicationColor_2_Active_TextColor": {
+      "value": "hsla({Indication._sapIndicationColor_2_Active_TextColorH}, {Indication._sapIndicationColor_2_Active_TextColorS}, {Indication._sapIndicationColor_2_Active_TextColorL}, {Indication._sapIndicationColor_2_Active_TextColorA})",
+      "type": "color"
+    },
+    "sapIndicationColor_2_Active_BorderColor": {
+      "value": "hsla({Indication._sapIndicationColor_2_Active_BorderColorH}, {Indication._sapIndicationColor_2_Active_BorderColorS}, {Indication._sapIndicationColor_2_Active_BorderColorL}, {Indication._sapIndicationColor_2_Active_BorderColorA})",
+      "type": "color"
+    },
+    "sapIndicationColor_2_Active_Background": {
+      "value": "hsla({Indication._sapIndicationColor_2_Active_BackgroundH}, {Indication._sapIndicationColor_2_Active_BackgroundS}, {Indication._sapIndicationColor_2_Active_BackgroundL}, {Indication._sapIndicationColor_2_Active_BackgroundA})",
+      "type": "color"
+    },
+    "sapIndicationColor_2_Hover_Background": {
+      "value": "hsla({Indication._sapIndicationColor_2_Hover_BackgroundH}, {Indication._sapIndicationColor_2_Hover_BackgroundS}, {Indication._sapIndicationColor_2_Hover_BackgroundL}, {Indication._sapIndicationColor_2_Hover_BackgroundA})",
+      "type": "color"
+    },
     "_sapIndicationColor_2_TextColorH": {
       "value": "{Text._sapTextColorH}",
       "type": "internal"
@@ -2626,14 +3034,6 @@
     },
     "sapIndicationColor_2_TextColor": {
       "value": "hsla({Indication._sapIndicationColor_2_TextColorH}, {Indication._sapIndicationColor_2_TextColorS}, {Indication._sapIndicationColor_2_TextColorL}, {Indication._sapIndicationColor_2_TextColorA})",
-      "type": "color"
-    },
-    "sapIndicationColor_2_Active_Background": {
-      "value": "hsla({Indication._sapIndicationColor_2_Active_BackgroundH}, {Indication._sapIndicationColor_2_Active_BackgroundS}, {Indication._sapIndicationColor_2_Active_BackgroundL}, {Indication._sapIndicationColor_2_Active_BackgroundA})",
-      "type": "color"
-    },
-    "sapIndicationColor_2_Hover_Background": {
-      "value": "hsla({Indication._sapIndicationColor_2_Hover_BackgroundH}, {Indication._sapIndicationColor_2_Hover_BackgroundS}, {Indication._sapIndicationColor_2_Hover_BackgroundL}, {Indication._sapIndicationColor_2_Hover_BackgroundA})",
       "type": "color"
     },
     "sapIndicationColor_2_BorderColor": {
@@ -2664,6 +3064,46 @@
       "value": "hsla({Indication._sapIndicationColor_2H}, {Indication._sapIndicationColor_2S}, {Indication._sapIndicationColor_2L}, {Indication._sapIndicationColor_2A})",
       "type": "color"
     },
+    "sapIndicationColor_1b_Hover_Background": {
+      "value": "hsla({Indication._sapIndicationColor_1b_Hover_BackgroundH}, {Indication._sapIndicationColor_1b_Hover_BackgroundS}, {Indication._sapIndicationColor_1b_Hover_BackgroundL}, {Indication._sapIndicationColor_1b_Hover_BackgroundA})",
+      "type": "color"
+    },
+    "sapIndicationColor_1b_BorderColor": {
+      "value": "hsla({Indication._sapIndicationColor_1b_BorderColorH}, {Indication._sapIndicationColor_1b_BorderColorS}, {Indication._sapIndicationColor_1b_BorderColorL}, {Indication._sapIndicationColor_1b_BorderColorA})",
+      "type": "color"
+    },
+    "sapIndicationColor_1b": {
+      "value": "hsla({Indication._sapIndicationColor_1bH}, {Indication._sapIndicationColor_1bS}, {Indication._sapIndicationColor_1bL}, {Indication._sapIndicationColor_1bA})",
+      "type": "color"
+    },
+    "sapIndicationColor_1_Selected_TextColor": {
+      "value": "hsla({Indication._sapIndicationColor_1_Selected_TextColorH}, {Indication._sapIndicationColor_1_Selected_TextColorS}, {Indication._sapIndicationColor_1_Selected_TextColorL}, {Indication._sapIndicationColor_1_Selected_TextColorA})",
+      "type": "color"
+    },
+    "sapIndicationColor_1_Selected_BorderColor": {
+      "value": "hsla({Indication._sapIndicationColor_1_Selected_BorderColorH}, {Indication._sapIndicationColor_1_Selected_BorderColorS}, {Indication._sapIndicationColor_1_Selected_BorderColorL}, {Indication._sapIndicationColor_1_Selected_BorderColorA})",
+      "type": "color"
+    },
+    "sapIndicationColor_1_Selected_Background": {
+      "value": "hsla({Indication._sapIndicationColor_1_Selected_BackgroundH}, {Indication._sapIndicationColor_1_Selected_BackgroundS}, {Indication._sapIndicationColor_1_Selected_BackgroundL}, {Indication._sapIndicationColor_1_Selected_BackgroundA})",
+      "type": "color"
+    },
+    "sapIndicationColor_1_Active_TextColor": {
+      "value": "hsla({Indication._sapIndicationColor_1_Active_TextColorH}, {Indication._sapIndicationColor_1_Active_TextColorS}, {Indication._sapIndicationColor_1_Active_TextColorL}, {Indication._sapIndicationColor_1_Active_TextColorA})",
+      "type": "color"
+    },
+    "sapIndicationColor_1_Active_BorderColor": {
+      "value": "hsla({Indication._sapIndicationColor_1_Active_BorderColorH}, {Indication._sapIndicationColor_1_Active_BorderColorS}, {Indication._sapIndicationColor_1_Active_BorderColorL}, {Indication._sapIndicationColor_1_Active_BorderColorA})",
+      "type": "color"
+    },
+    "sapIndicationColor_1_Active_Background": {
+      "value": "hsla({Indication._sapIndicationColor_1_Active_BackgroundH}, {Indication._sapIndicationColor_1_Active_BackgroundS}, {Indication._sapIndicationColor_1_Active_BackgroundL}, {Indication._sapIndicationColor_1_Active_BackgroundA})",
+      "type": "color"
+    },
+    "sapIndicationColor_1_Hover_Background": {
+      "value": "hsla({Indication._sapIndicationColor_1_Hover_BackgroundH}, {Indication._sapIndicationColor_1_Hover_BackgroundS}, {Indication._sapIndicationColor_1_Hover_BackgroundL}, {Indication._sapIndicationColor_1_Hover_BackgroundA})",
+      "type": "color"
+    },
     "_sapIndicationColor_1_TextColorH": {
       "value": "{Text._sapTextColorH}",
       "type": "internal"
@@ -2682,14 +3122,6 @@
     },
     "sapIndicationColor_1_TextColor": {
       "value": "hsla({Indication._sapIndicationColor_1_TextColorH}, {Indication._sapIndicationColor_1_TextColorS}, {Indication._sapIndicationColor_1_TextColorL}, {Indication._sapIndicationColor_1_TextColorA})",
-      "type": "color"
-    },
-    "sapIndicationColor_1_Active_Background": {
-      "value": "hsla({Indication._sapIndicationColor_1_Active_BackgroundH}, {Indication._sapIndicationColor_1_Active_BackgroundS}, {Indication._sapIndicationColor_1_Active_BackgroundL}, {Indication._sapIndicationColor_1_Active_BackgroundA})",
-      "type": "color"
-    },
-    "sapIndicationColor_1_Hover_Background": {
-      "value": "hsla({Indication._sapIndicationColor_1_Hover_BackgroundH}, {Indication._sapIndicationColor_1_Hover_BackgroundS}, {Indication._sapIndicationColor_1_Hover_BackgroundL}, {Indication._sapIndicationColor_1_Hover_BackgroundA})",
       "type": "color"
     },
     "sapIndicationColor_1_BorderColor": {
@@ -2719,6 +3151,518 @@
     "sapIndicationColor_1": {
       "value": "hsla({Indication._sapIndicationColor_1H}, {Indication._sapIndicationColor_1S}, {Indication._sapIndicationColor_1L}, {Indication._sapIndicationColor_1A})",
       "type": "color"
+    },
+    "_sapIndicationColor_10b_Hover_BackgroundH": {
+      "value": "{Button.Standard._sapButton_Hover_BackgroundH}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_10b_Hover_BackgroundS": {
+      "value": "{Button.Standard._sapButton_Hover_BackgroundS}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_10b_Hover_BackgroundL": {
+      "value": "{Button.Standard._sapButton_Hover_BackgroundL}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_10b_Hover_BackgroundA": {
+      "value": "{Button.Standard._sapButton_Hover_BackgroundA}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_10b_BorderColorH": {
+      "value": "{Foreground._sapContent_ForegroundBorderColorH}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_10b_BorderColorS": {
+      "value": "{Foreground._sapContent_ForegroundBorderColorS}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_10b_BorderColorL": {
+      "value": "{Foreground._sapContent_ForegroundBorderColorL}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_10b_BorderColorA": {
+      "value": "{Foreground._sapContent_ForegroundBorderColorA}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_10bH": {
+      "value": "{Indication._sapIndicationColor_10H}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_10bS": {
+      "value": "{Indication._sapIndicationColor_10S}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_10bL": {
+      "value": "{Indication._sapIndicationColor_10L}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_10bA": {
+      "value": "{Indication._sapIndicationColor_10A}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_10_Selected_TextColorH": {
+      "value": "{Indication._sapIndicationColor_10_TextColorH}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_10_Selected_TextColorS": {
+      "value": "{Indication._sapIndicationColor_10_TextColorS}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_10_Selected_TextColorL": {
+      "value": "{Indication._sapIndicationColor_10_TextColorL}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_10_Selected_TextColorA": {
+      "value": "{Indication._sapIndicationColor_10_TextColorA}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_10_Selected_BorderColorH": {
+      "value": "{Button.Standard._sapButton_Selected_BorderColorH}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_10_Selected_BorderColorS": {
+      "value": "{Button.Standard._sapButton_Selected_BorderColorS}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_10_Selected_BorderColorL": {
+      "value": "{Button.Standard._sapButton_Selected_BorderColorL}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_10_Selected_BorderColorA": {
+      "value": "{Button.Standard._sapButton_Selected_BorderColorA}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_10_Selected_BackgroundH": {
+      "value": "{Button.Standard._sapButton_Selected_BackgroundH}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_10_Selected_BackgroundS": {
+      "value": "{Button.Standard._sapButton_Selected_BackgroundS}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_10_Selected_BackgroundL": {
+      "value": "{Button.Standard._sapButton_Selected_BackgroundL}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_10_Selected_BackgroundA": {
+      "value": "{Button.Standard._sapButton_Selected_BackgroundA}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_10_Active_TextColorH": {
+      "value": "{Indication._sapIndicationColor_10_TextColorH}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_10_Active_TextColorS": {
+      "value": "{Indication._sapIndicationColor_10_TextColorS}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_10_Active_TextColorL": {
+      "value": "{Indication._sapIndicationColor_10_TextColorL}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_10_Active_TextColorA": {
+      "value": "{Indication._sapIndicationColor_10_TextColorA}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_10_Active_BorderColorH": {
+      "value": "{Button.Standard._sapButton_Active_BorderColorH}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_10_Active_BorderColorS": {
+      "value": "{Button.Standard._sapButton_Active_BorderColorS}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_10_Active_BorderColorL": {
+      "value": "{Button.Standard._sapButton_Active_BorderColorL}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_10_Active_BorderColorA": {
+      "value": "{Button.Standard._sapButton_Active_BorderColorA}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_10_Active_BackgroundH": {
+      "value": "{Button.Standard._sapButton_Active_BackgroundH}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_10_Active_BackgroundS": {
+      "value": "{Button.Standard._sapButton_Active_BackgroundS}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_10_Active_BackgroundL": {
+      "value": "{Button.Standard._sapButton_Active_BackgroundL}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_10_Active_BackgroundA": {
+      "value": "{Button.Standard._sapButton_Active_BackgroundA}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_10_Hover_BackgroundH": {
+      "value": "{Button.Standard._sapButton_Hover_BackgroundH}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_10_Hover_BackgroundS": {
+      "value": "{Button.Standard._sapButton_Hover_BackgroundS}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_10_Hover_BackgroundL": {
+      "value": "{Button.Standard._sapButton_Hover_BackgroundL}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_10_Hover_BackgroundA": {
+      "value": "{Button.Standard._sapButton_Hover_BackgroundA}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_10_BorderColorH": {
+      "value": "{Foreground._sapContent_ForegroundBorderColorH}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_10_BorderColorS": {
+      "value": "{Foreground._sapContent_ForegroundBorderColorS}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_10_BorderColorL": {
+      "value": "{Foreground._sapContent_ForegroundBorderColorL}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_10_BorderColorA": {
+      "value": "{Foreground._sapContent_ForegroundBorderColorA}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_10_BackgroundH": {
+      "value": "{Application._sapBackgroundColorH}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_10_BackgroundS": {
+      "value": "{Application._sapBackgroundColorS}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_10_BackgroundL": {
+      "value": "{Application._sapBackgroundColorL}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_10_BackgroundA": {
+      "value": "{Application._sapBackgroundColorA}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_9b_Hover_BackgroundH": {
+      "value": "{Button.Standard._sapButton_Hover_BackgroundH}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_9b_Hover_BackgroundS": {
+      "value": "{Button.Standard._sapButton_Hover_BackgroundS}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_9b_Hover_BackgroundL": {
+      "value": "{Button.Standard._sapButton_Hover_BackgroundL}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_9b_Hover_BackgroundA": {
+      "value": "{Button.Standard._sapButton_Hover_BackgroundA}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_9b_BorderColorH": {
+      "value": "{Foreground._sapContent_ForegroundBorderColorH}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_9b_BorderColorS": {
+      "value": "{Foreground._sapContent_ForegroundBorderColorS}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_9b_BorderColorL": {
+      "value": "{Foreground._sapContent_ForegroundBorderColorL}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_9b_BorderColorA": {
+      "value": "{Foreground._sapContent_ForegroundBorderColorA}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_9bH": {
+      "value": "{Indication._sapIndicationColor_9H}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_9bS": {
+      "value": "{Indication._sapIndicationColor_9S}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_9bL": {
+      "value": "{Indication._sapIndicationColor_9L}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_9bA": {
+      "value": "{Indication._sapIndicationColor_9A}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_9_Selected_TextColorH": {
+      "value": "{Indication._sapIndicationColor_9_TextColorH}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_9_Selected_TextColorS": {
+      "value": "{Indication._sapIndicationColor_9_TextColorS}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_9_Selected_TextColorL": {
+      "value": "{Indication._sapIndicationColor_9_TextColorL}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_9_Selected_TextColorA": {
+      "value": "{Indication._sapIndicationColor_9_TextColorA}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_9_Selected_BorderColorH": {
+      "value": "{Button.Standard._sapButton_Selected_BorderColorH}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_9_Selected_BorderColorS": {
+      "value": "{Button.Standard._sapButton_Selected_BorderColorS}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_9_Selected_BorderColorL": {
+      "value": "{Button.Standard._sapButton_Selected_BorderColorL}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_9_Selected_BorderColorA": {
+      "value": "{Button.Standard._sapButton_Selected_BorderColorA}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_9_Selected_BackgroundH": {
+      "value": "{Button.Standard._sapButton_Selected_BackgroundH}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_9_Selected_BackgroundS": {
+      "value": "{Button.Standard._sapButton_Selected_BackgroundS}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_9_Selected_BackgroundL": {
+      "value": "{Button.Standard._sapButton_Selected_BackgroundL}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_9_Selected_BackgroundA": {
+      "value": "{Button.Standard._sapButton_Selected_BackgroundA}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_9_Active_TextColorH": {
+      "value": "{Indication._sapIndicationColor_9_TextColorH}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_9_Active_TextColorS": {
+      "value": "{Indication._sapIndicationColor_9_TextColorS}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_9_Active_TextColorL": {
+      "value": "{Indication._sapIndicationColor_9_TextColorL}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_9_Active_TextColorA": {
+      "value": "{Indication._sapIndicationColor_9_TextColorA}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_9_Active_BorderColorH": {
+      "value": "{Button.Standard._sapButton_Active_BorderColorH}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_9_Active_BorderColorS": {
+      "value": "{Button.Standard._sapButton_Active_BorderColorS}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_9_Active_BorderColorL": {
+      "value": "{Button.Standard._sapButton_Active_BorderColorL}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_9_Active_BorderColorA": {
+      "value": "{Button.Standard._sapButton_Active_BorderColorA}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_9_Active_BackgroundH": {
+      "value": "{Button.Standard._sapButton_Active_BackgroundH}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_9_Active_BackgroundS": {
+      "value": "{Button.Standard._sapButton_Active_BackgroundS}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_9_Active_BackgroundL": {
+      "value": "{Button.Standard._sapButton_Active_BackgroundL}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_9_Active_BackgroundA": {
+      "value": "{Button.Standard._sapButton_Active_BackgroundA}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_9_Hover_BackgroundH": {
+      "value": "{Button.Standard._sapButton_Hover_BackgroundH}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_9_Hover_BackgroundS": {
+      "value": "{Button.Standard._sapButton_Hover_BackgroundS}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_9_Hover_BackgroundL": {
+      "value": "{Button.Standard._sapButton_Hover_BackgroundL}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_9_Hover_BackgroundA": {
+      "value": "{Button.Standard._sapButton_Hover_BackgroundA}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_9_BorderColorH": {
+      "value": "{Foreground._sapContent_ForegroundBorderColorH}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_9_BorderColorS": {
+      "value": "{Foreground._sapContent_ForegroundBorderColorS}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_9_BorderColorL": {
+      "value": "{Foreground._sapContent_ForegroundBorderColorL}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_9_BorderColorA": {
+      "value": "{Foreground._sapContent_ForegroundBorderColorA}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_9_BackgroundH": {
+      "value": "{Application._sapBackgroundColorH}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_9_BackgroundS": {
+      "value": "{Application._sapBackgroundColorS}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_9_BackgroundL": {
+      "value": "{Application._sapBackgroundColorL}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_9_BackgroundA": {
+      "value": "{Application._sapBackgroundColorA}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_8b_Hover_BackgroundH": {
+      "value": "{Button.Standard._sapButton_Hover_BackgroundH}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_8b_Hover_BackgroundS": {
+      "value": "{Button.Standard._sapButton_Hover_BackgroundS}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_8b_Hover_BackgroundL": {
+      "value": "{Button.Standard._sapButton_Hover_BackgroundL}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_8b_Hover_BackgroundA": {
+      "value": "{Button.Standard._sapButton_Hover_BackgroundA}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_8b_BorderColorH": {
+      "value": "{Foreground._sapContent_ForegroundBorderColorH}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_8b_BorderColorS": {
+      "value": "{Foreground._sapContent_ForegroundBorderColorS}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_8b_BorderColorL": {
+      "value": "{Foreground._sapContent_ForegroundBorderColorL}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_8b_BorderColorA": {
+      "value": "{Foreground._sapContent_ForegroundBorderColorA}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_8bH": {
+      "value": "{Indication._sapIndicationColor_8H}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_8bS": {
+      "value": "{Indication._sapIndicationColor_8S}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_8bL": {
+      "value": "{Indication._sapIndicationColor_8L}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_8bA": {
+      "value": "{Indication._sapIndicationColor_8A}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_8_Selected_TextColorH": {
+      "value": "{Indication._sapIndicationColor_8_TextColorH}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_8_Selected_TextColorS": {
+      "value": "{Indication._sapIndicationColor_8_TextColorS}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_8_Selected_TextColorL": {
+      "value": "{Indication._sapIndicationColor_8_TextColorL}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_8_Selected_TextColorA": {
+      "value": "{Indication._sapIndicationColor_8_TextColorA}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_8_Selected_BorderColorH": {
+      "value": "{Button.Standard._sapButton_Selected_BorderColorH}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_8_Selected_BorderColorS": {
+      "value": "{Button.Standard._sapButton_Selected_BorderColorS}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_8_Selected_BorderColorL": {
+      "value": "{Button.Standard._sapButton_Selected_BorderColorL}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_8_Selected_BorderColorA": {
+      "value": "{Button.Standard._sapButton_Selected_BorderColorA}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_8_Selected_BackgroundH": {
+      "value": "{Button.Standard._sapButton_Selected_BackgroundH}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_8_Selected_BackgroundS": {
+      "value": "{Button.Standard._sapButton_Selected_BackgroundS}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_8_Selected_BackgroundL": {
+      "value": "{Button.Standard._sapButton_Selected_BackgroundL}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_8_Selected_BackgroundA": {
+      "value": "{Button.Standard._sapButton_Selected_BackgroundA}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_8_Active_TextColorH": {
+      "value": "{Indication._sapIndicationColor_8_TextColorH}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_8_Active_TextColorS": {
+      "value": "{Indication._sapIndicationColor_8_TextColorS}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_8_Active_TextColorL": {
+      "value": "{Indication._sapIndicationColor_8_TextColorL}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_8_Active_TextColorA": {
+      "value": "{Indication._sapIndicationColor_8_TextColorA}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_8_Active_BorderColorH": {
+      "value": "{Button.Standard._sapButton_Active_BorderColorH}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_8_Active_BorderColorS": {
+      "value": "{Button.Standard._sapButton_Active_BorderColorS}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_8_Active_BorderColorL": {
+      "value": "{Button.Standard._sapButton_Active_BorderColorL}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_8_Active_BorderColorA": {
+      "value": "{Button.Standard._sapButton_Active_BorderColorA}",
+      "type": "internal"
     },
     "_sapIndicationColor_8_Active_BackgroundH": {
       "value": "{Button.Standard._sapButton_Active_BackgroundH}",
@@ -2782,6 +3726,134 @@
     },
     "_sapIndicationColor_8_BackgroundA": {
       "value": "{Application._sapBackgroundColorA}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_7b_Hover_BackgroundH": {
+      "value": "{Button.Standard._sapButton_Hover_BackgroundH}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_7b_Hover_BackgroundS": {
+      "value": "{Button.Standard._sapButton_Hover_BackgroundS}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_7b_Hover_BackgroundL": {
+      "value": "{Button.Standard._sapButton_Hover_BackgroundL}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_7b_Hover_BackgroundA": {
+      "value": "{Button.Standard._sapButton_Hover_BackgroundA}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_7b_BorderColorH": {
+      "value": "{Foreground._sapContent_ForegroundBorderColorH}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_7b_BorderColorS": {
+      "value": "{Foreground._sapContent_ForegroundBorderColorS}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_7b_BorderColorL": {
+      "value": "{Foreground._sapContent_ForegroundBorderColorL}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_7b_BorderColorA": {
+      "value": "{Foreground._sapContent_ForegroundBorderColorA}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_7bH": {
+      "value": "{Indication._sapIndicationColor_7H}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_7bS": {
+      "value": "{Indication._sapIndicationColor_7S}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_7bL": {
+      "value": "{Indication._sapIndicationColor_7L}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_7bA": {
+      "value": "{Indication._sapIndicationColor_7A}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_7_Selected_TextColorH": {
+      "value": "{Indication._sapIndicationColor_7_TextColorH}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_7_Selected_TextColorS": {
+      "value": "{Indication._sapIndicationColor_7_TextColorS}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_7_Selected_TextColorL": {
+      "value": "{Indication._sapIndicationColor_7_TextColorL}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_7_Selected_TextColorA": {
+      "value": "{Indication._sapIndicationColor_7_TextColorA}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_7_Selected_BorderColorH": {
+      "value": "{Button.Standard._sapButton_Selected_BorderColorH}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_7_Selected_BorderColorS": {
+      "value": "{Button.Standard._sapButton_Selected_BorderColorS}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_7_Selected_BorderColorL": {
+      "value": "{Button.Standard._sapButton_Selected_BorderColorL}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_7_Selected_BorderColorA": {
+      "value": "{Button.Standard._sapButton_Selected_BorderColorA}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_7_Selected_BackgroundH": {
+      "value": "{Button.Standard._sapButton_Selected_BackgroundH}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_7_Selected_BackgroundS": {
+      "value": "{Button.Standard._sapButton_Selected_BackgroundS}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_7_Selected_BackgroundL": {
+      "value": "{Button.Standard._sapButton_Selected_BackgroundL}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_7_Selected_BackgroundA": {
+      "value": "{Button.Standard._sapButton_Selected_BackgroundA}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_7_Active_TextColorH": {
+      "value": "{Indication._sapIndicationColor_7_TextColorH}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_7_Active_TextColorS": {
+      "value": "{Indication._sapIndicationColor_7_TextColorS}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_7_Active_TextColorL": {
+      "value": "{Indication._sapIndicationColor_7_TextColorL}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_7_Active_TextColorA": {
+      "value": "{Indication._sapIndicationColor_7_TextColorA}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_7_Active_BorderColorH": {
+      "value": "{Button.Standard._sapButton_Active_BorderColorH}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_7_Active_BorderColorS": {
+      "value": "{Button.Standard._sapButton_Active_BorderColorS}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_7_Active_BorderColorL": {
+      "value": "{Button.Standard._sapButton_Active_BorderColorL}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_7_Active_BorderColorA": {
+      "value": "{Button.Standard._sapButton_Active_BorderColorA}",
       "type": "internal"
     },
     "_sapIndicationColor_7_Active_BackgroundH": {
@@ -2848,6 +3920,134 @@
       "value": "{Application._sapBackgroundColorA}",
       "type": "internal"
     },
+    "_sapIndicationColor_6b_Hover_BackgroundH": {
+      "value": "{Button.Standard._sapButton_Hover_BackgroundH}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_6b_Hover_BackgroundS": {
+      "value": "{Button.Standard._sapButton_Hover_BackgroundS}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_6b_Hover_BackgroundL": {
+      "value": "{Button.Standard._sapButton_Hover_BackgroundL}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_6b_Hover_BackgroundA": {
+      "value": "{Button.Standard._sapButton_Hover_BackgroundA}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_6b_BorderColorH": {
+      "value": "{Foreground._sapContent_ForegroundBorderColorH}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_6b_BorderColorS": {
+      "value": "{Foreground._sapContent_ForegroundBorderColorS}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_6b_BorderColorL": {
+      "value": "{Foreground._sapContent_ForegroundBorderColorL}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_6b_BorderColorA": {
+      "value": "{Foreground._sapContent_ForegroundBorderColorA}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_6bH": {
+      "value": "{Indication._sapIndicationColor_6H}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_6bS": {
+      "value": "{Indication._sapIndicationColor_6S}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_6bL": {
+      "value": "{Indication._sapIndicationColor_6L}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_6bA": {
+      "value": "{Indication._sapIndicationColor_6A}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_6_Selected_TextColorH": {
+      "value": "{Indication._sapIndicationColor_6_TextColorH}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_6_Selected_TextColorS": {
+      "value": "{Indication._sapIndicationColor_6_TextColorS}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_6_Selected_TextColorL": {
+      "value": "{Indication._sapIndicationColor_6_TextColorL}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_6_Selected_TextColorA": {
+      "value": "{Indication._sapIndicationColor_6_TextColorA}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_6_Selected_BorderColorH": {
+      "value": "{Button.Standard._sapButton_Selected_BorderColorH}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_6_Selected_BorderColorS": {
+      "value": "{Button.Standard._sapButton_Selected_BorderColorS}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_6_Selected_BorderColorL": {
+      "value": "{Button.Standard._sapButton_Selected_BorderColorL}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_6_Selected_BorderColorA": {
+      "value": "{Button.Standard._sapButton_Selected_BorderColorA}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_6_Selected_BackgroundH": {
+      "value": "{Button.Standard._sapButton_Selected_BackgroundH}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_6_Selected_BackgroundS": {
+      "value": "{Button.Standard._sapButton_Selected_BackgroundS}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_6_Selected_BackgroundL": {
+      "value": "{Button.Standard._sapButton_Selected_BackgroundL}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_6_Selected_BackgroundA": {
+      "value": "{Button.Standard._sapButton_Selected_BackgroundA}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_6_Active_TextColorH": {
+      "value": "{Indication._sapIndicationColor_6_TextColorH}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_6_Active_TextColorS": {
+      "value": "{Indication._sapIndicationColor_6_TextColorS}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_6_Active_TextColorL": {
+      "value": "{Indication._sapIndicationColor_6_TextColorL}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_6_Active_TextColorA": {
+      "value": "{Indication._sapIndicationColor_6_TextColorA}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_6_Active_BorderColorH": {
+      "value": "{Button.Standard._sapButton_Active_BorderColorH}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_6_Active_BorderColorS": {
+      "value": "{Button.Standard._sapButton_Active_BorderColorS}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_6_Active_BorderColorL": {
+      "value": "{Button.Standard._sapButton_Active_BorderColorL}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_6_Active_BorderColorA": {
+      "value": "{Button.Standard._sapButton_Active_BorderColorA}",
+      "type": "internal"
+    },
     "_sapIndicationColor_6_Active_BackgroundH": {
       "value": "{Button.Standard._sapButton_Active_BackgroundH}",
       "type": "internal"
@@ -2910,6 +4110,134 @@
     },
     "_sapIndicationColor_6_BackgroundA": {
       "value": "{Application._sapBackgroundColorA}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_5b_Hover_BackgroundH": {
+      "value": "{Button.Standard._sapButton_Hover_BackgroundH}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_5b_Hover_BackgroundS": {
+      "value": "{Button.Standard._sapButton_Hover_BackgroundS}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_5b_Hover_BackgroundL": {
+      "value": "{Button.Standard._sapButton_Hover_BackgroundL}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_5b_Hover_BackgroundA": {
+      "value": "{Button.Standard._sapButton_Hover_BackgroundA}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_5b_BorderColorH": {
+      "value": "{Foreground._sapContent_ForegroundBorderColorH}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_5b_BorderColorS": {
+      "value": "{Foreground._sapContent_ForegroundBorderColorS}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_5b_BorderColorL": {
+      "value": "{Foreground._sapContent_ForegroundBorderColorL}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_5b_BorderColorA": {
+      "value": "{Foreground._sapContent_ForegroundBorderColorA}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_5bH": {
+      "value": "{Indication._sapIndicationColor_5H}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_5bS": {
+      "value": "{Indication._sapIndicationColor_5S}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_5bL": {
+      "value": "{Indication._sapIndicationColor_5L}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_5bA": {
+      "value": "{Indication._sapIndicationColor_5A}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_5_Selected_TextColorH": {
+      "value": "{Indication._sapIndicationColor_5_TextColorH}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_5_Selected_TextColorS": {
+      "value": "{Indication._sapIndicationColor_5_TextColorS}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_5_Selected_TextColorL": {
+      "value": "{Indication._sapIndicationColor_5_TextColorL}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_5_Selected_TextColorA": {
+      "value": "{Indication._sapIndicationColor_5_TextColorA}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_5_Selected_BorderColorH": {
+      "value": "{Button.Standard._sapButton_Selected_BorderColorH}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_5_Selected_BorderColorS": {
+      "value": "{Button.Standard._sapButton_Selected_BorderColorS}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_5_Selected_BorderColorL": {
+      "value": "{Button.Standard._sapButton_Selected_BorderColorL}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_5_Selected_BorderColorA": {
+      "value": "{Button.Standard._sapButton_Selected_BorderColorA}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_5_Selected_BackgroundH": {
+      "value": "{Button.Standard._sapButton_Selected_BackgroundH}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_5_Selected_BackgroundS": {
+      "value": "{Button.Standard._sapButton_Selected_BackgroundS}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_5_Selected_BackgroundL": {
+      "value": "{Button.Standard._sapButton_Selected_BackgroundL}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_5_Selected_BackgroundA": {
+      "value": "{Button.Standard._sapButton_Selected_BackgroundA}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_5_Active_TextColorH": {
+      "value": "{Indication._sapIndicationColor_5_TextColorH}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_5_Active_TextColorS": {
+      "value": "{Indication._sapIndicationColor_5_TextColorS}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_5_Active_TextColorL": {
+      "value": "{Indication._sapIndicationColor_5_TextColorL}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_5_Active_TextColorA": {
+      "value": "{Indication._sapIndicationColor_5_TextColorA}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_5_Active_BorderColorH": {
+      "value": "{Button.Standard._sapButton_Active_BorderColorH}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_5_Active_BorderColorS": {
+      "value": "{Button.Standard._sapButton_Active_BorderColorS}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_5_Active_BorderColorL": {
+      "value": "{Button.Standard._sapButton_Active_BorderColorL}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_5_Active_BorderColorA": {
+      "value": "{Button.Standard._sapButton_Active_BorderColorA}",
       "type": "internal"
     },
     "_sapIndicationColor_5_Active_BackgroundH": {
@@ -2976,6 +4304,134 @@
       "value": "{Application._sapBackgroundColorA}",
       "type": "internal"
     },
+    "_sapIndicationColor_4b_Hover_BackgroundH": {
+      "value": "{Button.Standard._sapButton_Hover_BackgroundH}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_4b_Hover_BackgroundS": {
+      "value": "{Button.Standard._sapButton_Hover_BackgroundS}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_4b_Hover_BackgroundL": {
+      "value": "{Button.Standard._sapButton_Hover_BackgroundL}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_4b_Hover_BackgroundA": {
+      "value": "{Button.Standard._sapButton_Hover_BackgroundA}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_4b_BorderColorH": {
+      "value": "{Foreground._sapContent_ForegroundBorderColorH}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_4b_BorderColorS": {
+      "value": "{Foreground._sapContent_ForegroundBorderColorS}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_4b_BorderColorL": {
+      "value": "{Foreground._sapContent_ForegroundBorderColorL}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_4b_BorderColorA": {
+      "value": "{Foreground._sapContent_ForegroundBorderColorA}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_4bH": {
+      "value": "{Indication._sapIndicationColor_4H}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_4bS": {
+      "value": "{Indication._sapIndicationColor_4S}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_4bL": {
+      "value": "{Indication._sapIndicationColor_4L}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_4bA": {
+      "value": "{Indication._sapIndicationColor_4A}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_4_Selected_TextColorH": {
+      "value": "{Indication._sapIndicationColor_4_TextColorH}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_4_Selected_TextColorS": {
+      "value": "{Indication._sapIndicationColor_4_TextColorS}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_4_Selected_TextColorL": {
+      "value": "{Indication._sapIndicationColor_4_TextColorL}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_4_Selected_TextColorA": {
+      "value": "{Indication._sapIndicationColor_4_TextColorA}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_4_Selected_BorderColorH": {
+      "value": "{Button.Standard._sapButton_Selected_BorderColorH}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_4_Selected_BorderColorS": {
+      "value": "{Button.Standard._sapButton_Selected_BorderColorS}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_4_Selected_BorderColorL": {
+      "value": "{Button.Standard._sapButton_Selected_BorderColorL}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_4_Selected_BorderColorA": {
+      "value": "{Button.Standard._sapButton_Selected_BorderColorA}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_4_Selected_BackgroundH": {
+      "value": "{Button.Standard._sapButton_Selected_BackgroundH}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_4_Selected_BackgroundS": {
+      "value": "{Button.Standard._sapButton_Selected_BackgroundS}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_4_Selected_BackgroundL": {
+      "value": "{Button.Standard._sapButton_Selected_BackgroundL}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_4_Selected_BackgroundA": {
+      "value": "{Button.Standard._sapButton_Selected_BackgroundA}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_4_Active_TextColorH": {
+      "value": "{Indication._sapIndicationColor_4_TextColorH}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_4_Active_TextColorS": {
+      "value": "{Indication._sapIndicationColor_4_TextColorS}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_4_Active_TextColorL": {
+      "value": "{Indication._sapIndicationColor_4_TextColorL}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_4_Active_TextColorA": {
+      "value": "{Indication._sapIndicationColor_4_TextColorA}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_4_Active_BorderColorH": {
+      "value": "{Button.Standard._sapButton_Active_BorderColorH}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_4_Active_BorderColorS": {
+      "value": "{Button.Standard._sapButton_Active_BorderColorS}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_4_Active_BorderColorL": {
+      "value": "{Button.Standard._sapButton_Active_BorderColorL}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_4_Active_BorderColorA": {
+      "value": "{Button.Standard._sapButton_Active_BorderColorA}",
+      "type": "internal"
+    },
     "_sapIndicationColor_4_Active_BackgroundH": {
       "value": "{Button.Standard._sapButton_Active_BackgroundH}",
       "type": "internal"
@@ -3038,6 +4494,134 @@
     },
     "_sapIndicationColor_4_BackgroundA": {
       "value": "{Application._sapBackgroundColorA}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_3b_Hover_BackgroundH": {
+      "value": "{Button.Standard._sapButton_Hover_BackgroundH}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_3b_Hover_BackgroundS": {
+      "value": "{Button.Standard._sapButton_Hover_BackgroundS}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_3b_Hover_BackgroundL": {
+      "value": "{Button.Standard._sapButton_Hover_BackgroundL}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_3b_Hover_BackgroundA": {
+      "value": "{Button.Standard._sapButton_Hover_BackgroundA}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_3b_BorderColorH": {
+      "value": "{Foreground._sapContent_ForegroundBorderColorH}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_3b_BorderColorS": {
+      "value": "{Foreground._sapContent_ForegroundBorderColorS}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_3b_BorderColorL": {
+      "value": "{Foreground._sapContent_ForegroundBorderColorL}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_3b_BorderColorA": {
+      "value": "{Foreground._sapContent_ForegroundBorderColorA}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_3bH": {
+      "value": "{Indication._sapIndicationColor_3H}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_3bS": {
+      "value": "{Indication._sapIndicationColor_3S}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_3bL": {
+      "value": "{Indication._sapIndicationColor_3L}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_3bA": {
+      "value": "{Indication._sapIndicationColor_3A}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_3_Selected_TextColorH": {
+      "value": "{Indication._sapIndicationColor_3_TextColorH}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_3_Selected_TextColorS": {
+      "value": "{Indication._sapIndicationColor_3_TextColorS}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_3_Selected_TextColorL": {
+      "value": "{Indication._sapIndicationColor_3_TextColorL}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_3_Selected_TextColorA": {
+      "value": "{Indication._sapIndicationColor_3_TextColorA}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_3_Selected_BorderColorH": {
+      "value": "{Button.Standard._sapButton_Selected_BorderColorH}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_3_Selected_BorderColorS": {
+      "value": "{Button.Standard._sapButton_Selected_BorderColorS}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_3_Selected_BorderColorL": {
+      "value": "{Button.Standard._sapButton_Selected_BorderColorL}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_3_Selected_BorderColorA": {
+      "value": "{Button.Standard._sapButton_Selected_BorderColorA}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_3_Selected_BackgroundH": {
+      "value": "{Button.Standard._sapButton_Selected_BackgroundH}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_3_Selected_BackgroundS": {
+      "value": "{Button.Standard._sapButton_Selected_BackgroundS}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_3_Selected_BackgroundL": {
+      "value": "{Button.Standard._sapButton_Selected_BackgroundL}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_3_Selected_BackgroundA": {
+      "value": "{Button.Standard._sapButton_Selected_BackgroundA}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_3_Active_TextColorH": {
+      "value": "{Indication._sapIndicationColor_3_TextColorH}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_3_Active_TextColorS": {
+      "value": "{Indication._sapIndicationColor_3_TextColorS}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_3_Active_TextColorL": {
+      "value": "{Indication._sapIndicationColor_3_TextColorL}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_3_Active_TextColorA": {
+      "value": "{Indication._sapIndicationColor_3_TextColorA}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_3_Active_BorderColorH": {
+      "value": "{Button.Standard._sapButton_Active_BorderColorH}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_3_Active_BorderColorS": {
+      "value": "{Button.Standard._sapButton_Active_BorderColorS}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_3_Active_BorderColorL": {
+      "value": "{Button.Standard._sapButton_Active_BorderColorL}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_3_Active_BorderColorA": {
+      "value": "{Button.Standard._sapButton_Active_BorderColorA}",
       "type": "internal"
     },
     "_sapIndicationColor_3_Active_BackgroundH": {
@@ -3104,6 +4688,134 @@
       "value": "{Application._sapBackgroundColorA}",
       "type": "internal"
     },
+    "_sapIndicationColor_2b_Hover_BackgroundH": {
+      "value": "{Button.Standard._sapButton_Hover_BackgroundH}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_2b_Hover_BackgroundS": {
+      "value": "{Button.Standard._sapButton_Hover_BackgroundS}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_2b_Hover_BackgroundL": {
+      "value": "{Button.Standard._sapButton_Hover_BackgroundL}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_2b_Hover_BackgroundA": {
+      "value": "{Button.Standard._sapButton_Hover_BackgroundA}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_2b_BorderColorH": {
+      "value": "{Foreground._sapContent_ForegroundBorderColorH}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_2b_BorderColorS": {
+      "value": "{Foreground._sapContent_ForegroundBorderColorS}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_2b_BorderColorL": {
+      "value": "{Foreground._sapContent_ForegroundBorderColorL}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_2b_BorderColorA": {
+      "value": "{Foreground._sapContent_ForegroundBorderColorA}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_2bH": {
+      "value": "{Indication._sapIndicationColor_2H}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_2bS": {
+      "value": "{Indication._sapIndicationColor_2S}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_2bL": {
+      "value": "{Indication._sapIndicationColor_2L}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_2bA": {
+      "value": "{Indication._sapIndicationColor_2A}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_2_Selected_TextColorH": {
+      "value": "{Indication._sapIndicationColor_2_TextColorH}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_2_Selected_TextColorS": {
+      "value": "{Indication._sapIndicationColor_2_TextColorS}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_2_Selected_TextColorL": {
+      "value": "{Indication._sapIndicationColor_2_TextColorL}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_2_Selected_TextColorA": {
+      "value": "{Indication._sapIndicationColor_2_TextColorA}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_2_Selected_BorderColorH": {
+      "value": "{Button.Standard._sapButton_Selected_BorderColorH}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_2_Selected_BorderColorS": {
+      "value": "{Button.Standard._sapButton_Selected_BorderColorS}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_2_Selected_BorderColorL": {
+      "value": "{Button.Standard._sapButton_Selected_BorderColorL}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_2_Selected_BorderColorA": {
+      "value": "{Button.Standard._sapButton_Selected_BorderColorA}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_2_Selected_BackgroundH": {
+      "value": "{Button.Standard._sapButton_Selected_BackgroundH}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_2_Selected_BackgroundS": {
+      "value": "{Button.Standard._sapButton_Selected_BackgroundS}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_2_Selected_BackgroundL": {
+      "value": "{Button.Standard._sapButton_Selected_BackgroundL}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_2_Selected_BackgroundA": {
+      "value": "{Button.Standard._sapButton_Selected_BackgroundA}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_2_Active_TextColorH": {
+      "value": "{Indication._sapIndicationColor_2_TextColorH}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_2_Active_TextColorS": {
+      "value": "{Indication._sapIndicationColor_2_TextColorS}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_2_Active_TextColorL": {
+      "value": "{Indication._sapIndicationColor_2_TextColorL}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_2_Active_TextColorA": {
+      "value": "{Indication._sapIndicationColor_2_TextColorA}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_2_Active_BorderColorH": {
+      "value": "{Button.Standard._sapButton_Active_BorderColorH}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_2_Active_BorderColorS": {
+      "value": "{Button.Standard._sapButton_Active_BorderColorS}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_2_Active_BorderColorL": {
+      "value": "{Button.Standard._sapButton_Active_BorderColorL}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_2_Active_BorderColorA": {
+      "value": "{Button.Standard._sapButton_Active_BorderColorA}",
+      "type": "internal"
+    },
     "_sapIndicationColor_2_Active_BackgroundH": {
       "value": "{Button.Standard._sapButton_Active_BackgroundH}",
       "type": "internal"
@@ -3166,6 +4878,134 @@
     },
     "_sapIndicationColor_2_BackgroundA": {
       "value": "{Application._sapBackgroundColorA}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_1b_Hover_BackgroundH": {
+      "value": "{Button.Standard._sapButton_Hover_BackgroundH}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_1b_Hover_BackgroundS": {
+      "value": "{Button.Standard._sapButton_Hover_BackgroundS}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_1b_Hover_BackgroundL": {
+      "value": "{Button.Standard._sapButton_Hover_BackgroundL}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_1b_Hover_BackgroundA": {
+      "value": "{Button.Standard._sapButton_Hover_BackgroundA}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_1b_BorderColorH": {
+      "value": "{Foreground._sapContent_ForegroundBorderColorH}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_1b_BorderColorS": {
+      "value": "{Foreground._sapContent_ForegroundBorderColorS}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_1b_BorderColorL": {
+      "value": "{Foreground._sapContent_ForegroundBorderColorL}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_1b_BorderColorA": {
+      "value": "{Foreground._sapContent_ForegroundBorderColorA}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_1bH": {
+      "value": "{Indication._sapIndicationColor_1H}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_1bS": {
+      "value": "{Indication._sapIndicationColor_1S}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_1bL": {
+      "value": "{Indication._sapIndicationColor_1L}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_1bA": {
+      "value": "{Indication._sapIndicationColor_1A}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_1_Selected_TextColorH": {
+      "value": "{Indication._sapIndicationColor_1_TextColorH}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_1_Selected_TextColorS": {
+      "value": "{Indication._sapIndicationColor_1_TextColorS}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_1_Selected_TextColorL": {
+      "value": "{Indication._sapIndicationColor_1_TextColorL}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_1_Selected_TextColorA": {
+      "value": "{Indication._sapIndicationColor_1_TextColorA}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_1_Selected_BorderColorH": {
+      "value": "{Button.Standard._sapButton_Selected_BorderColorH}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_1_Selected_BorderColorS": {
+      "value": "{Button.Standard._sapButton_Selected_BorderColorS}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_1_Selected_BorderColorL": {
+      "value": "{Button.Standard._sapButton_Selected_BorderColorL}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_1_Selected_BorderColorA": {
+      "value": "{Button.Standard._sapButton_Selected_BorderColorA}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_1_Selected_BackgroundH": {
+      "value": "{Button.Standard._sapButton_Selected_BackgroundH}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_1_Selected_BackgroundS": {
+      "value": "{Button.Standard._sapButton_Selected_BackgroundS}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_1_Selected_BackgroundL": {
+      "value": "{Button.Standard._sapButton_Selected_BackgroundL}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_1_Selected_BackgroundA": {
+      "value": "{Button.Standard._sapButton_Selected_BackgroundA}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_1_Active_TextColorH": {
+      "value": "{Indication._sapIndicationColor_1_TextColorH}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_1_Active_TextColorS": {
+      "value": "{Indication._sapIndicationColor_1_TextColorS}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_1_Active_TextColorL": {
+      "value": "{Indication._sapIndicationColor_1_TextColorL}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_1_Active_TextColorA": {
+      "value": "{Indication._sapIndicationColor_1_TextColorA}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_1_Active_BorderColorH": {
+      "value": "{Button.Standard._sapButton_Active_BorderColorH}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_1_Active_BorderColorS": {
+      "value": "{Button.Standard._sapButton_Active_BorderColorS}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_1_Active_BorderColorL": {
+      "value": "{Button.Standard._sapButton_Active_BorderColorL}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_1_Active_BorderColorA": {
+      "value": "{Button.Standard._sapButton_Active_BorderColorA}",
       "type": "internal"
     },
     "_sapIndicationColor_1_Active_BackgroundH": {
@@ -6158,6 +7998,15 @@
   },
   "Input": {
     "Information": {
+      "sapField_InformationShadow": {
+        "type": "boxShadow",
+        "value": [
+          {
+            "type": "dropShadow",
+            "spread": "0"
+          }
+        ]
+      },
       "sapField_InformationBorderStyle": {
         "value": "dashed",
         "type": "border"
@@ -6177,6 +8026,15 @@
       "sapField_InformationColor": {
         "value": "hsla({Input.Information._sapField_InformationColorH}, {Input.Information._sapField_InformationColorS}, {Input.Information._sapField_InformationColorL}, {Input.Information._sapField_InformationColorA})",
         "type": "color"
+      },
+      "sapField_Hover_InformationShadow": {
+        "type": "boxShadow",
+        "value": [
+          {
+            "type": "dropShadow",
+            "spread": "0"
+          }
+        ]
       },
       "_sapField_InformationBackgroundH": {
         "value": "{Input.Standard._sapField_BackgroundH}",
@@ -6212,6 +8070,15 @@
       }
     },
     "Success": {
+      "sapField_SuccessShadow": {
+        "type": "boxShadow",
+        "value": [
+          {
+            "type": "dropShadow",
+            "spread": "0"
+          }
+        ]
+      },
       "sapField_SuccessBorderStyle": {
         "value": "solid",
         "type": "border"
@@ -6231,6 +8098,15 @@
       "sapField_SuccessColor": {
         "value": "hsla({Input.Success._sapField_SuccessColorH}, {Input.Success._sapField_SuccessColorS}, {Input.Success._sapField_SuccessColorL}, {Input.Success._sapField_SuccessColorA})",
         "type": "color"
+      },
+      "sapField_Hover_SuccessShadow": {
+        "type": "boxShadow",
+        "value": [
+          {
+            "type": "dropShadow",
+            "spread": "0"
+          }
+        ]
       },
       "_sapField_SuccessBackgroundH": {
         "value": "{Input.Standard._sapField_BackgroundH}",
@@ -6266,6 +8142,15 @@
       }
     },
     "Warning": {
+      "sapField_WarningShadow": {
+        "type": "boxShadow",
+        "value": [
+          {
+            "type": "dropShadow",
+            "spread": "0"
+          }
+        ]
+      },
       "sapField_WarningBorderStyle": {
         "value": "dashed",
         "type": "border"
@@ -6285,6 +8170,15 @@
       "sapField_WarningColor": {
         "value": "hsla({Input.Warning._sapField_WarningColorH}, {Input.Warning._sapField_WarningColorS}, {Input.Warning._sapField_WarningColorL}, {Input.Warning._sapField_WarningColorA})",
         "type": "color"
+      },
+      "sapField_Hover_WarningShadow": {
+        "type": "boxShadow",
+        "value": [
+          {
+            "type": "dropShadow",
+            "spread": "0"
+          }
+        ]
       },
       "_sapField_WarningBackgroundH": {
         "value": "{Input.Standard._sapField_BackgroundH}",
@@ -6320,6 +8214,15 @@
       }
     },
     "Invalid": {
+      "sapField_InvalidShadow": {
+        "type": "boxShadow",
+        "value": [
+          {
+            "type": "dropShadow",
+            "spread": "0"
+          }
+        ]
+      },
       "sapField_InvalidBorderStyle": {
         "value": "dashed",
         "type": "border"
@@ -6339,6 +8242,15 @@
       "sapField_InvalidColor": {
         "value": "hsla({Input.Invalid._sapField_InvalidColorH}, {Input.Invalid._sapField_InvalidColorS}, {Input.Invalid._sapField_InvalidColorL}, {Input.Invalid._sapField_InvalidColorA})",
         "type": "color"
+      },
+      "sapField_Hover_InvalidShadow": {
+        "type": "boxShadow",
+        "value": [
+          {
+            "type": "dropShadow",
+            "spread": "0"
+          }
+        ]
       },
       "_sapField_InvalidBackgroundH": {
         "value": "{Main._sapHighlightColorH}",
@@ -6394,6 +8306,15 @@
         "value": "hsla({Input.Standard._sapField_Active_BorderColorH}, {Input.Standard._sapField_Active_BorderColorS}, {Input.Standard._sapField_Active_BorderColorL}, {Input.Standard._sapField_Active_BorderColorA})",
         "type": "color"
       },
+      "sapField_Hover_Shadow": {
+        "type": "boxShadow",
+        "value": [
+          {
+            "type": "dropShadow",
+            "spread": "0"
+          }
+        ]
+      },
       "sapField_Hover_HelpBackground": {
         "value": "hsla({Input.Standard._sapField_Hover_HelpBackgroundH}, {Input.Standard._sapField_Hover_HelpBackgroundS}, {Input.Standard._sapField_Hover_HelpBackgroundL}, {Input.Standard._sapField_Hover_HelpBackgroundA})",
         "type": "color"
@@ -6409,6 +8330,15 @@
       "sapField_Hover_Background": {
         "value": "hsla({Input.Standard._sapField_Hover_BackgroundH}, {Input.Standard._sapField_Hover_BackgroundS}, {Input.Standard._sapField_Hover_BackgroundL}, {Input.Standard._sapField_Hover_BackgroundA})",
         "type": "color"
+      },
+      "sapField_Shadow": {
+        "type": "boxShadow",
+        "value": [
+          {
+            "type": "dropShadow",
+            "spread": "0"
+          }
+        ]
       },
       "sapField_BorderCornerRadius": {
         "value": "0",
@@ -12255,13 +14185,25 @@
       "value": "hsla({Link._sapLink_Visited_ColorH}, {Link._sapLink_Visited_ColorS}, {Link._sapLink_Visited_ColorL}, {Link._sapLink_Visited_ColorA})",
       "type": "color"
     },
+    "sapLink_Active_TextDecoration": {
+      "value": "underline",
+      "type": "textDecoration"
+    },
     "sapLink_Active_Color": {
       "value": "hsla({Link._sapLink_Active_ColorH}, {Link._sapLink_Active_ColorS}, {Link._sapLink_Active_ColorL}, {Link._sapLink_Active_ColorA})",
       "type": "color"
     },
+    "sapLink_Hover_TextDecoration": {
+      "value": "none",
+      "type": "textDecoration"
+    },
     "sapLink_Hover_Color": {
       "value": "hsla({Link._sapLink_Hover_ColorH}, {Link._sapLink_Hover_ColorS}, {Link._sapLink_Hover_ColorL}, {Link._sapLink_Hover_ColorA})",
       "type": "color"
+    },
+    "sapLink_TextDecoration": {
+      "value": "underline",
+      "type": "textDecoration"
     },
     "sapLinkColor": {
       "value": "hsla({Link._sapLinkColorH}, {Link._sapLinkColorS}, {Link._sapLinkColorL}, {Link._sapLinkColorA})",
@@ -12622,15 +14564,15 @@
   },
   "Illustrative": {
     "_sapContent_Illustrative_Color20H": {
-      "value": "197.1428571428571",
+      "value": "195",
       "type": "internal"
     },
     "_sapContent_Illustrative_Color20S": {
-      "value": "9.333333333333337%",
+      "value": "6.557377049180327%",
       "type": "internal"
     },
     "_sapContent_Illustrative_Color20L": {
-      "value": "29.411764705882355%",
+      "value": "76.07843137254902%",
       "type": "internal"
     },
     "_sapContent_Illustrative_Color20A": {
@@ -12642,15 +14584,15 @@
       "type": "color"
     },
     "_sapContent_Illustrative_Color19H": {
-      "value": "195",
+      "value": "200",
       "type": "internal"
     },
     "_sapContent_Illustrative_Color19S": {
-      "value": "9.677419354838708%",
+      "value": "6.249999999999978%",
       "type": "internal"
     },
     "_sapContent_Illustrative_Color19L": {
-      "value": "24.313725490196077%",
+      "value": "81.17647058823529%",
       "type": "internal"
     },
     "_sapContent_Illustrative_Color19A": {
@@ -12662,15 +14604,15 @@
       "type": "color"
     },
     "_sapContent_Illustrative_Color18H": {
-      "value": "200",
+      "value": "192",
       "type": "internal"
     },
     "_sapContent_Illustrative_Color18S": {
-      "value": "9.090909090909088%",
+      "value": "7.042253521126778%",
       "type": "internal"
     },
     "_sapContent_Illustrative_Color18L": {
-      "value": "19.411764705882355%",
+      "value": "86.07843137254902%",
       "type": "internal"
     },
     "_sapContent_Illustrative_Color18A": {
@@ -12742,15 +14684,15 @@
       "type": "color"
     },
     "_sapContent_Illustrative_Color14H": {
-      "value": "202.8571428571429",
+      "value": "0",
       "type": "internal"
     },
     "_sapContent_Illustrative_Color14S": {
-      "value": "10.344827586206904%",
+      "value": "0%",
       "type": "internal"
     },
     "_sapContent_Illustrative_Color14L": {
-      "value": "60.196078431372555%",
+      "value": "0%",
       "type": "internal"
     },
     "_sapContent_Illustrative_Color14A": {
@@ -12762,15 +14704,15 @@
       "type": "color"
     },
     "_sapContent_Illustrative_Color13H": {
-      "value": "203.07692307692298",
+      "value": "205.71428571428578",
       "type": "internal"
     },
     "_sapContent_Illustrative_Color13S": {
-      "value": "11.111111111111093%",
+      "value": "13.725490196078436%",
       "type": "internal"
     },
     "_sapContent_Illustrative_Color13L": {
-      "value": "77.05882352941175%",
+      "value": "10%",
       "type": "internal"
     },
     "_sapContent_Illustrative_Color13A": {
@@ -13089,6 +15031,10 @@
       "value": "hsla({Interaction._sapActiveColorH}, {Interaction._sapActiveColorS}, {Interaction._sapActiveColorL}, {Interaction._sapActiveColorA})",
       "type": "color"
     },
+    "sapHoverColor": {
+      "value": "hsla({Interaction._sapHoverColorH}, {Interaction._sapHoverColorS}, {Interaction._sapHoverColorL}, {Interaction._sapHoverColorA})",
+      "type": "color"
+    },
     "sapSelectedColor": {
       "value": "hsla({Interaction._sapSelectedColorH}, {Interaction._sapSelectedColorS}, {Interaction._sapSelectedColorL}, {Interaction._sapSelectedColorA})",
       "type": "color"
@@ -13202,6 +15148,22 @@
       "type": "internal"
     },
     "_sapActiveColorA": {
+      "value": "{Main._sapHighlightColorA}",
+      "type": "internal"
+    },
+    "_sapHoverColorH": {
+      "value": "{Main._sapHighlightColorH}",
+      "type": "internal"
+    },
+    "_sapHoverColorS": {
+      "value": "{Main._sapHighlightColorS}",
+      "type": "internal"
+    },
+    "_sapHoverColorL": {
+      "value": "{Main._sapHighlightColorL}",
+      "type": "internal"
+    },
+    "_sapHoverColorA": {
       "value": "{Main._sapHighlightColorA}",
       "type": "internal"
     },

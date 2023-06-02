@@ -14,6 +14,22 @@
 		"sapShellColor",
 		"sapBackgroundColor",
 		"sapTextColor",
-		"sapLinkColor"
+		"sapLinkColor",
+		"sapContent_Selected_TextColor",
+		"sapContent_Shadow0",
+		"sapField_Background",
+		"sapField_BorderColor",
+		"sapShell_Background",
+		"sapShell_TextColor",
+		"sapShell_InteractiveTextColor",
+		"sapShell_GroupTitleTextColor",
+		"sapShell_Shadow",
+		"sapShell_Navigation_Background",
+		"sapShell_Navigation_TextColor",
+		"sapTile_Background",
+		"sapTile_BorderColor",
+		"sapTile_BorderCornerRadius",
+		"sapTile_TextColor",
+		"sapTile_TitleTextColor"
 	]
 }

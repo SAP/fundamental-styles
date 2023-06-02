@@ -74,6 +74,102 @@
 			"CssValue": "#91c8f6",
 			"Label": "Link Color",
 			"Tags": "Quick,Base,Content,Color,Font,Link"
+		},
+		{
+			"Id": "sapContent_Selected_TextColor",
+			"CssValue": "#29313a",
+			"Label": "Selected Text Color",
+			"Tags": "Base,Content,Color,Font"
+		},
+		{
+			"Id": "sapContent_Shadow0",
+			"CssValue": "0 0 0 0.0625rem rgba(255,255,255,0.2), 0 0.125rem 0.5rem 0 rgba(0,0,0,0.3)",
+			"Label": "Shadow Level 0",
+			"Tags": "Base,Content"
+		},
+		{
+			"Id": "sapField_Background",
+			"CssValue": "#29313a",
+			"Label": "Field Background Color",
+			"Tags": "Base,Field,Color"
+		},
+		{
+			"Id": "sapField_BorderColor",
+			"CssValue": "#8696a9",
+			"Label": "Field Border Color",
+			"Tags": "Base,Field,Color"
+		},
+		{
+			"Id": "sapShell_Background",
+			"CssValue": "#232a31",
+			"Label": "Shell Background Color",
+			"Tags": "Base,Shell,Color"
+		},
+		{
+			"Id": "sapShell_TextColor",
+			"CssValue": "#fafafa",
+			"Label": "Shell Text Color",
+			"Tags": "Base,Shell,Color,Font,Mobile"
+		},
+		{
+			"Id": "sapShell_InteractiveTextColor",
+			"CssValue": "#d1e8ff",
+			"Label": "Shell Interactive Text Color",
+			"Tags": "Base,Shell,Color,Font"
+		},
+		{
+			"Id": "sapShell_GroupTitleTextColor",
+			"CssValue": "#fafafa",
+			"Label": "Shell Group Title Text Color",
+			"Tags": "Base,Shell,Color,Font"
+		},
+		{
+			"Id": "sapShell_Shadow",
+			"CssValue": "0 0.125rem 0.125rem 0 rgba(0,0,0,0.8), inset 0 -0.0625rem 0 0 rgba(255,255,255,0.2)",
+			"Label": "Shell Shadow",
+			"Tags": "Base,Shell"
+		},
+		{
+			"Id": "sapShell_Navigation_Background",
+			"CssValue": "#354a5f",
+			"Label": "Shell Navigation Area Background",
+			"Tags": "Base,Shell,Color"
+		},
+		{
+			"Id": "sapShell_Navigation_TextColor",
+			"CssValue": "#fafafa",
+			"Label": "Shell Navigation Text Color",
+			"Tags": "Base,Shell,Color,Font"
+		},
+		{
+			"Id": "sapTile_Background",
+			"CssValue": "#29313a",
+			"Label": "Tile Background Color",
+			"Tags": "Base,Tile,Color"
+		},
+		{
+			"Id": "sapTile_BorderColor",
+			"CssValue": "transparent",
+			"Label": "Tile Border Color",
+			"Tags": "Base,Tile,Color"
+		},
+		{
+			"Id": "sapTile_BorderCornerRadius",
+			"CssValue": ".25rem",
+			"Label": "Tile Border Corner Radius",
+			"Tags": "Base,Tile,Dimension"
+		},
+		{
+			"Id": "sapTile_TextColor",
+			"CssValue": "#d3d7d9",
+			"Label": "Tile Text Color",
+			"Tags": "Base,Tile,Color,Font"
+		},
+		{
+			"Id": "sapTile_TitleTextColor",
+			"CssValue": "#fafafa",
+			"Label": "Tile Title Text Color",
+			"Tags": "Base,Tile,Color,Font"
 		}
 	]
 }
