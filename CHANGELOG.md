@@ -1,3 +1,12 @@
+# [0.29.0-rc.44](https://github.com/SAP/fundamental-styles/compare/v0.29.0-rc.43...v0.29.0-rc.44) (2023-06-02)
+
+
+### Bug Fixes
+
+* **styles:** address design review comments regarding Horizon 2023 [ci visual] ([#4558](https://github.com/SAP/fundamental-styles/issues/4558)) ([d819ff5](https://github.com/SAP/fundamental-styles/commit/d819ff57c323b082513b4631197ab40dac536ce8))
+
+
+
 # [0.29.0-rc.43](https://github.com/SAP/fundamental-styles/compare/v0.29.0-rc.42...v0.29.0-rc.43) (2023-06-02)
 
 
