@@ -1,0 +1,17 @@
+:root {
+  --fdToken_Text_Shadow: none;
+  --fdToken_Border_Radius: 0.375rem;
+  --fdToken_Text_Color: var(--sapTextColor);
+  --fdToken_Background_Color_Hover: var(--sapButton_Hover_Background);
+  --fdToken_Border_Color_Hover: var(--sapButton_TokenBorderColor);
+  --fdToken_Outline_Offset: 0.0625rem;
+  --fdToken_Outline_Offset_Compact: 0;
+  --fdToken_Background_Color_Read_Only: var(--sapButton_TokenBackground);
+  --fdToken_Border_Color_Read_Only: var(--sapField_ReadOnly_BorderColor);
+  --fdToken_Border_Color_Selected_Focus: var(var(--sapContent_FocusColor));
+  --fdToken_Selected_Border: var(--sapButton_BorderWidth) solid var(--sapButton_Selected_BorderColor);
+  --fdToken_Selected_Font_Family: var(--sapFontSemiboldDuplexFamily);
+  --fdToken_Selected_Border_BottomStyle: 0 100% / 100% 0.125rem no-repeat linear-gradient(0deg, #0064d9, #0064d9) border-box;
+  --fdToken_ReadOnly_Padding_Inline: 0.3125rem;
+  --fdToken_Focus_Border_Radius: 0.5rem;
+}

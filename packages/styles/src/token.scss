@@ -3,57 +3,63 @@
 
 $block: #{$fd-namespace}-token;
 
+@mixin fd-readonly-token {
+  --fdToken_Text_Color: var(--sapContent_LabelColor);
+  --fdToken_Padding_Inline: var(--fdToken_ReadOnly_Padding_Inline);
+  --fdToken_Border: var(--sapButton_BorderWidth) solid var(--fdToken_Border_Color_Read_Only);
+
+  background-color: var(--fdToken_Background_Color_Read_Only);
+
+  @include fd-compact-or-condensed() {
+    --fdToken_Padding_Inline: 0.25rem;
+  }
+
+  @include fd-hover() {
+    --fdToken_Text_Color: var(--sapContent_LabelColor);
+    --fdToken_Border: var(--sapButton_BorderWidth) solid var(--fdToken_Border_Color_Read_Only);
+
+    background-color: var(--fdToken_Background_Color_Read_Only);
+  }
+}
+
 .#{$block} {
+  --fdToken_Background_Color: var(--sapButton_TokenBackground);
+  --fdToken_Border: var(--sapButton_BorderWidth) solid var(--sapButton_TokenBorderColor);
+  --fdToken_Padding_Inline: 0.3125rem 0;
+  --fdToken_Height: 1.625rem;
+  --fdToken_Min_Width: 3.625rem;
+  --fdToken_Close_Color: var(--sapContent_IconColor);
+  --fdToken_Close_Padding: 0.25rem 0.5rem;
+  --fdToken_Close_Width: 1.75rem;
+
   cursor: default;
 
   @mixin fd-token-focus() {
     @include fd-fiori-focus(var(--fdToken_Outline_Offset)) {
-      box-shadow: none;
-
+      --fdToken_Border_Radius: var(--fdToken_Focus_Border_Radius);
       @content;
     }
   }
 
-  $fd-token-height: 1.625rem;
-  $fd-token-compact-height: 1.25rem;
-  $fd-token-compact-close-width: 1.25rem;
-  $fd-token-close-width: 1.75rem;
-  $fd-token-padding-horizontal: var(--fdToken_Padding_Left);
-  $fd-token-padding-vertical: 0.25rem;
-  $fd-token-compact-padding-horizontal: 0.25rem;
-  $fd-token-compact-padding-vertical: 0.1rem;
-
-  $fd-token-icon-color: var(--sapContent_IconColor) !default;
-
-  $fd-token-selected-text-color: var(--sapButton_Selected_TextColor) !default;
-
-  // readonly
-  $fd-token-readonly-padding-horizontal: 0.375rem;
-  $fd-token-compact-readonly-padding-horizontal: 0.25rem;
-
   @include fd-reset();
+
+  @include fd-flex-center() {
+    flex-shrink: 0;
+  }
 
   font-size: var(--sapFontSize);
   color: var(--fdToken_Text_Color);
   border-radius: var(--fdToken_Border_Radius);
-  background-color: var(--sapButton_TokenBackground);
-  border: var(--sapButton_BorderWidth) solid var(--sapButton_TokenBorderColor);
-  display: inline-flex;
-  flex-shrink: 0;
-  align-items: center;
+  background-color: var(--fdToken_Background_Color);
+  border: var(--fdToken_Border);
+  padding-inline: var(--fdToken_Padding_Inline);
+  height: var(--fdToken_Height);
+  min-width: var(--fdToken_Min_Width);
   text-align: center;
-  padding: $fd-token-padding-vertical 0 $fd-token-padding-vertical $fd-token-padding-horizontal;
   white-space: nowrap;
   max-width: 100%;
-  min-width: 3.625rem;
   text-overflow: clip;
-  height: $fd-token-height;
   line-height: 1.5rem;
-
-  @include fd-rtl() {
-    padding-left: 0;
-    padding-right: $fd-token-padding-horizontal;
-  }
 
   &__text {
     overflow: hidden;
@@ -68,11 +74,11 @@ $block: #{$fd-namespace}-token;
     @include fd-reset();
 
     font-size: var(--sapFontSmallSize);
-    color: $fd-token-icon-color;
-    padding: 0.25rem 0.5rem;
-    width: $fd-token-close-width;
-    min-width: $fd-token-close-width;
-    height: $fd-token-height;
+    color: var(--fdToken_Close_Color);
+    padding: var(--fdToken_Close_Padding);
+    width: var(--fdToken_Close_Width);
+    min-width: var(--fdToken_Close_Width);
+    height: var(--fdToken_Height);
     background-color: transparent;
     line-height: 1.25rem;
     cursor: pointer;
@@ -88,32 +94,21 @@ $block: #{$fd-namespace}-token;
     }
   }
 
-  &:hover {
-    background-color: var(--fdToken_Background_Color_Hover);
-    border-color: var(--fdToken_Border_Color_Hover);
-    box-shadow: var(--fdToken_Box_Shadow_Hover);
+  @include fd-hover() {
+    --fdToken_Background_Color: var(--fdToken_Background_Color_Hover);
+    --fdToken_Border: var(--sapButton_BorderWidth) solid var(--fdToken_Border_Color_Hover);
   }
 
   @include fd-token-focus();
 
   @include fd-compact-or-condensed() {
-    padding: $fd-token-compact-padding-vertical 0 $fd-token-compact-padding-vertical $fd-token-compact-padding-horizontal;
-    height: $fd-token-compact-height;
+    --fdToken_Padding_Inline: 0.25rem 0;
+    --fdToken_Height: 1.25rem;
+    --fdToken_Close_Padding: 0.125rem 0.25rem;
+    --fdToken_Close_Width: 1.25rem;
+
     min-width: 3rem;
     line-height: 1.125rem;
-
-    .#{$block}__close {
-      padding: $fd-token-compact-padding-vertical $fd-token-compact-padding-horizontal;
-      vertical-align: baseline;
-      width: $fd-token-compact-close-width;
-      min-width: $fd-token-compact-close-width;
-      height: $fd-token-compact-height;
-    }
-
-    @include fd-rtl() {
-      padding-left: 0;
-      padding-right: $fd-token-compact-padding-horizontal;
-    }
 
     @include fd-token-focus() {
       outline-offset: var(--fdToken_Outline_Offset_Compact);
@@ -125,48 +120,37 @@ $block: #{$fd-namespace}-token;
   }
 
   &--readonly {
-    color: var(--sapContent_LabelColor);
-    background-color: var(--fdToken_Background_Color_Read_Only);
-    padding: $fd-token-padding-vertical $fd-token-readonly-padding-horizontal;
-    border: var(--sapButton_BorderWidth) solid var(--fdToken_Border_Color_Read_Only);
-
-    @include fd-compact-or-condensed() {
-      padding: $fd-token-compact-padding-vertical $fd-token-compact-readonly-padding-horizontal;
-
-      @include fd-rtl() {
-        padding-left: $fd-token-compact-readonly-padding-horizontal;
-      }
-    }
-
-    @include fd-hover() {
-      box-shadow: none;
-      color: var(--sapContent_LabelColor);
-      background-color: var(--fdToken_Background_Color_Read_Only);
-      border: var(--sapButton_BorderWidth) solid var(--fdToken_Border_Color_Read_Only);
-    }
-
-    @include fd-rtl() {
-      padding-left: $fd-token-readonly-padding-horizontal;
-    }
+    @include fd-readonly-token();
   }
 
-  &.#{$block}--selected {
-    color: $fd-token-selected-text-color;
-    background-color: var(--sapButton_Selected_Background);
-    border-color: var(--sapButton_Selected_BorderColor);
+  &--selected {
+    --fdToken_Text_Color: var(--sapButton_Selected_TextColor);
+    --fdToken_Background_Color: var(--sapButton_Selected_Background);
+    --fdToken_Border: var(--fdToken_Selected_Border);
+    --fdToken_Padding_Inline: 0.3125rem 0;
+
+    background: var(--fdToken_Selected_Border_BottomStyle); // bottom underline
+    font-family: var(--fdToken_Selected_Font_Family);
+    position: relative;
+
+    &.#{$block}--readonly {
+      @include fd-readonly-token();
+    }
 
     .#{$block}__close {
-      color: $fd-token-selected-text-color;
+      --fdToken_Close_Color: var(--sapButton_Selected_TextColor);
     }
 
     @include fd-hover() {
       background-color: var(--sapButton_Selected_Hover_Background);
-      border-color: var(--sapButton_Selected_Hover_BorderColor);
-      box-shadow: var(--fdToken_Box_Shadow_Selected_Hover);
+
+      --fdToken_Border: var(--fdToken_Selected_Border);
     }
 
     @include fd-token-focus() {
       outline-color: var(--fdToken_Border_Color_Selected_Focus);
+
+      --fdToken_Border: var(--fdToken_Selected_Border);
     }
   }
 }

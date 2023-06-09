@@ -1,0 +1,12 @@
+@import "sap_horizon";
+
+:root {
+  --fdToken_Border_Radius: 0.25rem;
+  --fdToken_Outline_Offset: -0.1875rem;
+  --fdToken_Outline_Offset_Compact: -0.1875rem;
+  --fdToken_Background_Color_Read_Only: var(--sapField_ReadOnly_Background);
+  --fdToken_Border_Color_Read_Only: var(--sapField_ReadOnly_BorderColor);
+  --fdToken_Border_Color_Selected_Focus: var(--sapContent_ContrastFocusColor);
+  --fdToken_Selected_Border_BottomStyle: var(--sapButton_Selected_Background);
+  --fdToken_Focus_Border_Radius: 0.1875rem;
+}
