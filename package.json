@@ -58,7 +58,7 @@
     "@commitlint/cli": "^17.0.0",
     "@commitlint/config-conventional": "^17.0.0",
     "@commitlint/travis-cli": "^16.0.0",
-    "@jsdevtools/npm-publish": "^1.4.3",
+    "@jsdevtools/npm-publish": "^2.2.0",
     "@nrwl/devkit": "15.8.7",
     "@nrwl/eslint-plugin-nx": "15.8.7",
     "@nrwl/js": "15.8.7",
