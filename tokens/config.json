@@ -1,0 +1,17 @@
+{
+    "source": ["tokens/output.json"],
+    "platforms": {
+      "css": {
+        "transformGroup": "css",
+        "prefix": "sap",
+        "buildPath": "packages/fn/src/tokens/",
+        "files": [{
+          "destination": "_variables.css",
+          "format": "css/variables",
+          "options": {
+            "outputReferences": true
+          }
+        }]
+      }
+    }
+  }

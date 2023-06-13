@@ -3,6 +3,7 @@
 @import "fn-new-variables";
 @import "theming/shared";
 @import "theming/morning";
+@import "tokens/_variables.css";
 
 // library namespace
 $fn-namespace: fn !default;

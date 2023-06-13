@@ -37,7 +37,8 @@
     "prepare": "husky install",
     "sync-fiori-components": "node ./scripts/sync-components.js lib=fiori",
     "sync-fn-components": "node ./scripts/sync-components.js lib=fn",
-    "pre-commit": "lint-staged && yarn run lint:pre-commit"
+    "pre-commit": "lint-staged && yarn run lint:pre-commit",
+    "tokens": "npx token-transformer tokens.json tokens/output.json --expandTypography --expandShadow --expandComposition && style-dictionary build --config tokens/config.json"
   },
   "repository": {
     "type": "git",
@@ -136,11 +137,13 @@
     "standard-version": "9.3.2",
     "start-server-and-test": "^1.14.0",
     "story-description-loader": "^1.0.0",
+    "style-dictionary": "^3.8.0",
     "stylelint": "^13.13.1",
     "stylelint-config-standard": "^22.0.0",
     "stylelint-scss": "^3.19.0",
     "through2": "^4.0.2",
     "tocbot": "^4.12.3",
+    "token-transformer": "^0.0.33",
     "ts-node": "10.9.1",
     "tslib": "^2.3.0",
     "typescript": "^4.8.4",
