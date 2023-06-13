@@ -24,14 +24,14 @@ $block: #{$fn-namespace}-button;
   @include fn-reset();
   @include fn-transition();
   @include fn-flex-center();
-  @include fn-button-base($fn-color-white, $fn-color-blue-7, $fn-shadow-blue-level-0);
+  @include fn-button-base(var(--sap-text-text-inverted), var(--sap-text-regular), $fn-shadow-blue-level-0);
 
   cursor: pointer;
   max-width: 100%;
   position: relative;
   height: $fn-control-height;
-  border-radius: $fn-border-radius-6;
-  padding: 0.3125rem 0.75rem;
+  border-radius: var(--sap-border-radius);
+  padding: var(--sap-padding-vertical) var(--sap-padding-horizontal);
 
   [class*='sap-icon'] {
     @include fn-flex-center();
@@ -116,7 +116,7 @@ $block: #{$fn-namespace}-button;
 
   // EMPHASIZED BUTTON
   &--emphasized {
-    @include fn-button-base($fn-color-blue-7, $fn-color-white, $fn-shadow-blue-level-0);
+    @include fn-button-base($fn-color-blue-7, var(--sap-text-text-inverted), $fn-shadow-blue-level-0);
 
     @include fn-hover() {
       @include fn-button-base($fn-color-blue-8, $fn-color-white, $fn-shadow-blue-level-1);
