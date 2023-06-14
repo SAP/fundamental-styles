@@ -1,4 +1,5 @@
 @import "./sap_fiori";
+@import "./common";
 
 :root {
   --fdIcon_Tab_Bar_Selection_Bar_Height: 0.313rem;
@@ -19,4 +20,5 @@
   --fdIcon_Tab_Bar_Semantic_Badge_Color_Negative: var(--sapContent_IconColor);
   --fdIcon_Tab_Bar_Semantic_Badge_Color_Critical: var(--sapContent_IconColor);
   --fdIcon_Tab_Bar_Semantic_Badge_Color_Informative: var(--sapContent_IconColor);
+  --fdIcon_Tab_Bar_Overflow_Button_Font_Family: var(--sapFontFamily);
 }

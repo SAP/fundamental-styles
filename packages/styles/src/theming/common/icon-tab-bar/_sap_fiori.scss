@@ -1,3 +1,5 @@
+@import "./common";
+
 :root {
   --fdIcon_Tab_Bar_Selection_Bar_Height: 0.188rem;
   --fdIcon_Tab_Bar_Selection_Color: var(--sapSelectedColor);
@@ -18,17 +20,49 @@
   --fdIcon_Tab_Bar_Semantic_Badge_Color_Critical: var(--sapCriticalElementColor);
   --fdIcon_Tab_Bar_Semantic_Badge_Color_Informative: var(--sapInformativeElementColor);
   --fdIcon_Tab_Bar_Overflow_Button_Hover_Box_Shadow: none;
-  --fdIcon_Tab_Bar_Overflow_Button_Focus_Offset: 0.125rem;
+  --fdIcon_Tab_Bar_Overflow_Button_Focus_Offset: 0.0625rem;
   --fdIcon_Tab_Bar_Overflow_Button_Border_Radius: 0.75rem;
+  --fdIcon_Tab_Bar_Overflow_Button_Font_Family: var(--sapFontFamily);
+  --fdIcon_Tab_Bar_Overflow_Button_Text_Color: var(--sapButton_TextColor);
+  --fdIcon_Tab_Bar_Overflow_Button_Icon_Color: var(--sapButton_IconColor);
+  --fdIcon_Tab_Bar_Overflow_Button_Text_Color_Hover: var(--sapButton_Hover_TextColor);
+  --fdIcon_Tab_Bar_Overflow_Button_Icon_Color_Hover: var(--sapButton_Hover_TextColor);
   --fdIcon_Tab_Bar_Inactive_Tab_Icon_Color: var(--sapContent_IconColor);
   --fdIcon_Tab_Bar_Label_Color: var(--sapContent_LabelColor);
   --fdIcon_Tab_Bar_Label_Hover_Color: var(--sapContent_LabelColor);
-  --fdIcon_Tab_Bar_Label_Font_Weight: 400;
-  --fdIcon_Tab_Bar_Label_Font_Size: var(--sapFontSmallSize);
+  --fdIcon_Tab_Bar_Label_Font_Family: var(--sapFontFamily);
   --fdIcon_Tab_Bar_Text_Focus_Radius: 0;
   --fdIcon_Tab_Bar_Icon_Focus_Radius: 50%;
   --fdIcon_Tab_Bar_Focus_Offset: -0.0625rem;
   --fdIcon_Tab_Bar_Icon_Border_Weight: 0.0625rem;
   --fdIcon_Tab_Bar_Icon_Focus_Offset: -0.125rem;
   --fdIcon_Tab_Bar_Separator_Color: var(--sapButton_Hover_BorderColor);
+  --fdIcon_Tab_Bar_Single_Click_Icon_Container_Width: 1rem;
+  --fdIcon_Tab_Bar_Single_Click_Icon_Container_Padding_Left: 0.375rem;
+  --fdIcon_Tab_Bar_Single_Click_Icon_Container_Padding_Right: 0.3125rem;
+  --fdIcon_Tab_Bar_Multi_Click_Button_Separator_Display: none;
+  --fdIcon_Tab_Bar_Multi_Click_Button_Focus_Radius: 0;
+  --fdIconTabBar_Overflow_Button_Shell_Background: var(--sapShell_Navigation_Background);
+  --fdIconTabBar_Overflow_Button_Shell_Border_Color: var(--sapShell_Navigation_SelectedColor);
+  --fdIconTabBar_Overflow_Button_Shell_Text_Color: var(--sapShell_Navigation_SelectedColor);
+  --fdIconTabBar_Overflow_Button_Shell_Icon_Color: var(--sapShell_Navigation_SelectedColor);
+  --fdIconTabBar_Overflow_Button_Shell_Background_Hover: var(--sapShell_Navigation_Hover_Background);
+  --fdIconTabBar_Overflow_Button_Shell_Border_Color_Hover: var(--sapShell_Navigation_SelectedColor);
+  --fdIconTabBar_Overflow_Button_Shell_Text_Color_Hover: var(--sapShell_Navigation_SelectedColor);
+  --fdIconTabBar_Overflow_Button_Shell_Icon_Color_Hover: var(--sapShell_Navigation_SelectedColor);
+  --fdIconTabBar_Overflow_Button_Shell_Background_Active: var(--sapShell_Navigation_Active_Background);
+  --fdIconTabBar_Overflow_Button_Shell_Border_Color_Active: var(--sapShell_Navigation_SelectedColor);
+  --fdIconTabBar_Overflow_Button_Shell_Text_Color_Active: var(--sapShell_Navigation_Active_TextColor);
+  --fdIconTabBar_Overflow_Button_Shell_Icon_Color_Active: var(--sapShell_Navigation_Active_TextColor);
+  --fdIconTabBar_Overflow_Button_Shell_Focus_Color: var(--sapShell_Navigation_TextColor);
+  --fdIconTabBar_Button_Shell_Color: var(--sapShell_Navigation_TextColor);
+  --fdIconTabBar_Button_Shell_Color_Hover: var(--sapShell_Navigation_Selected_TextColor);
+  --fdIconTabBar_Button_Shell_Background_Color_Hover: var(--sapShell_Navigation_Hover_Background);
+  --fdIconTabBar_Button_Shell_Color_Active: var(--sapShell_Navigation_Selected_TextColor);
+  --fdIconTabBar_Button_Shell_Background_Color_Active: var(--sapShell_Navigation_Active_Background);
+  --fdIconTabBar_Button_Shell_Color_Selected: var(--sapShell_Navigation_Selected_TextColor);
+  --fdIconTabBar_Button_Shell_Background_Color_Selected: var(--sapShell_Navigation_Background);
+  --fdIconTabBar_Button_Shell_Focus_Color: var(--sapContent_ContrastFocusColor);
+  --fdIconTabBar_Button_Active_Color: var(--sapButton_Active_TextColor);
+  --fdIconTabBar_Button_Active_Focus_Color: var(--sapContent_ContrastFocusColor);
 }

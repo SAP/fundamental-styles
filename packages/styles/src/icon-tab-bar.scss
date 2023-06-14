@@ -24,11 +24,21 @@ $fd-icon-tab-bar-dnd-separator-circle-size: 0.5rem !default;
 $fd-icon-tab-bar-focus-offset: var(--fdIcon_Tab_Bar_Focus_Offset) !default;
 
 $fd-icon-tab-bar-responsive-paddings: (
-  'sm': ('padding': 0 1rem),
-  'md': ('padding': 0 2rem),
-  'lg': ('padding': 0 2rem),
-  'xl': ('padding': 0 3rem),
-  'xxl': ('padding': 0 3rem)
+  'sm': (
+    'padding': 0 1rem
+  ),
+  'md': (
+    'padding': 0 2rem
+  ),
+  'lg': (
+    'padding': 0 2rem
+  ),
+  'xl': (
+    'padding': 0 3rem
+  ),
+  'xxl': (
+    'padding': 0 3rem
+  )
 );
 
 $fd-icon-tab-bar-semantic-values: (
@@ -75,7 +85,7 @@ $fd-icon-tab-bar-semantic-values: (
     border-radius: 0.125rem 0.125rem 0 0;
     transition: all $fd-animation-speed ease-in;
     height: var(--fdIcon_Tab_Bar_Selection_Bar_Height);
-    background: var(--fdIcon_Tab_Bar_Selection_Bar_Color);
+    background: var(--fdIconTabBar_Selection_Bar_Color);
   }
 }
 
@@ -96,20 +106,6 @@ $fd-icon-tab-bar-semantic-values: (
   }
 }
 
-@mixin fd-icon-tab-bar-set-overflow-state-colors($borderColor, $backgroundColor, $textColor, $iconColor) {
-  background: $backgroundColor;
-  border: $fd-icon-tab-bar-border-thickness solid $borderColor;
-
-  .#{$block}__overflow-text {
-    color: $textColor;
-  }
-
-  [class*='sap-icon'] {
-    font-size: 1rem;
-    color: $iconColor;
-  }
-}
-
 %fd-icon-tab-bar-text {
   @include fd-reset();
 
@@ -123,6 +119,7 @@ $fd-icon-tab-bar-semantic-values: (
   font-size: 0.75rem;
   font-family: 'SAP-icons';
   -webkit-font-smoothing: antialiased;
+  color: var(--fdIconTabBar_Tag_Icon_Color);
   display: var(--fdIcon_Tab_Bar_Semantic_Icon_Display);
 }
 
@@ -139,7 +136,7 @@ $fd-icon-tab-bar-semantic-values: (
   }
 }
 
-@mixin fd-tabs-focus($outlineColor: var(--sapContent_FocusColor), $offset: false, $placement: "after") {
+@mixin fd-tabs-focus($outlineColor: var(--sapContent_FocusColor), $offset: false, $placement: 'after') {
   &::#{$placement} {
     content: '';
     position: absolute;
@@ -185,15 +182,20 @@ $fd-icon-tab-bar-semantic-values: (
     $semantic-icon-position: -0.9rem;
 
     &--#{$set-name} {
-      .#{$block}__tag {
-        color: map_get($set-params, 'color');
+      --fdIconTabBar_Badge_Background: #{map_get($set-params, 'badgeColor')};
+      --fdIconTabBar_Badge_Background_After: #{map_get($set-params, 'badgeColor')};
+      --fdIconTabBar_Tag_Color: #{map_get($set-params, 'color')};
+      --fdIconTabBar_Tag_Icon_Color: #{map_get($set-params, 'iconColor')};
+      --fdIconTabBar_Tag_Icon_Content: #{map_get($set-params, 'icon')};
+      --fdIconTabBar_Icon_Color: #{map_get($set-params, 'color')};
+      --fdIconTabBar_Icon_Border_Color: #{map_get($set-params, 'color')};
 
+      .#{$block}__tag {
         &::before {
           @extend %semantic-icon-base;
 
           margin-right: $semantic-icon-margin;
           content: map_get($set-params, 'icon');
-          color: map_get($set-params, 'iconColor');
         }
 
         @include fd-rtl() {
@@ -204,34 +206,28 @@ $fd-icon-tab-bar-semantic-values: (
 
             margin-left: $semantic-icon-margin;
             content: map_get($set-params, 'icon');
-            color: map_get($set-params, 'iconColor');
           }
         }
       }
 
       .#{$block}__tab {
+        @include fd-hover() {
+          --fdIconTabBar_Tag_Color: #{map_get($set-params, 'color')};
+        }
+
         @include fd-selected() {
-          &::after {
-            background: map_get($set-params, 'color');
-          }
+          --fdIconTabBar_Selection_Bar_Color: #{map_get($set-params, 'color')};
+          --fdIconTabBar_Tag_Color: #{map_get($set-params, 'color')};
+          --fdIconTabBar_Icon_Background: #{map_get($set-params, 'backgroundColor')};
 
-          .#{$block}__tag {
-            color: map_get($set-params, 'color');
-          }
-
-          .#{$block}__icon {
-            background-color: map_get($set-params, 'backgroundColor');
+          @include fd-hover() {
+            --fdIconTabBar_Tag_Color: #{map_get($set-params, 'color')};
           }
         }
       }
 
       .#{$block}__icon {
-        @include fd-icon-selector() {
-          color: map_get($set-params, 'color');
-        }
-
         position: relative;
-        border-color: map_get($set-params, 'color');
 
         &::before {
           @extend %semantic-icon-base;
@@ -239,7 +235,6 @@ $fd-icon-tab-bar-semantic-values: (
 
           right: $semantic-icon-position;
           content: map_get($set-params, 'icon');
-          color: map_get($set-params, 'iconColor');
         }
 
         @include fd-rtl() {
@@ -252,16 +247,7 @@ $fd-icon-tab-bar-semantic-values: (
             right: auto;
             left: $semantic-icon-position;
             content: map_get($set-params, 'icon');
-            color: map_get($set-params, 'iconColor');
           }
-        }
-      }
-
-      .#{$block}__badge {
-        background: map_get($set-params, 'badgeColor');
-
-        &::after {
-          background: map_get($set-params, 'badgeColor');
         }
       }
     }
@@ -269,11 +255,36 @@ $fd-icon-tab-bar-semantic-values: (
 }
 
 @mixin fd-icon-tab-bar-list-item-color($color) {
-  .#{$block}__list-item-icon [class*=sap-icon],
-  .#{$block}__list-item-icon[class*=sap-icon],
+  .#{$block}__list-item-icon [class*='sap-icon'],
+  .#{$block}__list-item-icon[class*='sap-icon'],
   .#{$block}__list-item-title,
   .#{$block}__list-item-counter {
     color: $color;
+  }
+}
+
+@mixin fd-icon-tab-bar-close-btn-overwrite($size: 1.5rem) {
+  @include fd-set-width($size);
+  @include fd-set-height($size);
+
+  border-radius: 0.25rem;
+
+  @include fd-focus() {
+    &::after {
+      border-radius: var(--fdIcon_Tab_Bar_Multi_Click_Button_Focus_Radius);
+    }
+  }
+}
+
+@mixin fd-icon-tab-bar-close-btn-container-overwrite($posRight: 0) {
+  @include fd-set-position-right($posRight);
+  @include fd-set-width(2rem);
+
+  z-index: 10;
+  position: absolute;
+
+  &::before {
+    display: none;
   }
 }
 
@@ -331,26 +342,58 @@ $fd-icon-tab-bar-semantic-values: (
       }
     }
 
-    &--multi-click {
+    &.#{$block}__item--multi-click {
       @include fd-flex-center();
 
       position: relative;
 
-      .#{$block}__button {
-        @include fd-reset-margins();
-        @include fd-reset-paddings();
-
-        width: $fd-icon-tab-bar-multi-click-button-size;
-        height: $fd-icon-tab-bar-multi-click-button-size;
-        min-width: $fd-icon-tab-bar-multi-click-button-size;
-      }
-
       .#{$block}__tab {
-        @include fd-set-paddings-x(0.188rem, 2.188rem);
+        @include fd-set-paddings-x(0.188rem, 1.938rem);
 
         .#{$block}__badge {
           @include fd-set-position-right(1.625rem);
         }
+
+        @include fd-selected() {
+          & + .#{$block}__popover .#{$block}__button-container::before {
+            --fdIconTabBar_Multi_Click_Separator_Background: var(--sapContent_Selected_ForegroundColor);
+          }
+        }
+      }
+
+      &.#{$block}__item--closable {
+        .#{$block}__tab {
+          @include fd-set-paddings-x(0.188rem, 3.938rem);
+        }
+
+        .#{$block}__popover {
+          @include fd-set-position-right(2.188rem);
+          @include fd-set-width(1.5rem);
+
+          height: 100%;
+
+          .#{$block}__button-container {
+            @include fd-set-width(1.5rem);
+
+            &::before {
+              display: var(--fdIcon_Tab_Bar_Multi_Click_Button_Separator_Display);
+            }
+          }
+        }
+      }
+    }
+
+    &.#{$block}__item--closable {
+      @include fd-flex-center();
+
+      position: relative;
+
+      .#{$block}__tab {
+        @include fd-set-paddings-x(0.188rem, 2.188rem);
+      }
+
+      .#{$block}__button-container {
+        @include fd-icon-tab-bar-close-btn-container-overwrite();
       }
     }
 
@@ -468,9 +511,41 @@ $fd-icon-tab-bar-semantic-values: (
   &__button-container {
     @include fd-reset();
     @include fd-flex-center();
+    @include fd-set-width(1.5rem);
+    @include fd-set-height(2.75rem);
 
-    width: 2rem;
-    height: 2.75rem;
+    position: relative;
+
+    &::before {
+      left: 0;
+      content: '';
+      height: 1rem;
+      width: 0.0625rem;
+      position: absolute;
+      background: var(--fdIconTabBar_Multi_Click_Separator_Background);
+      display: var(--fdIcon_Tab_Bar_Multi_Click_Button_Separator_Display);
+    }
+
+    @include fd-rtl() {
+      &::before {
+        right: 0;
+        left: auto;
+      }
+    }
+  }
+
+  .#{$block}__button {
+    border-radius: 0.25rem;
+    font-family: var(--sapContent_IconFontFamily);
+    width: $fd-icon-tab-bar-multi-click-button-size;
+    height: $fd-icon-tab-bar-multi-click-button-size;
+    min-width: $fd-icon-tab-bar-multi-click-button-size;
+
+    @include fd-focus() {
+      &::after {
+        border-radius: var(--fdIcon_Tab_Bar_Multi_Click_Button_Focus_Radius);
+      }
+    }
   }
 
   &__tab {
@@ -481,6 +556,11 @@ $fd-icon-tab-bar-semantic-values: (
     }
 
     @include fd-selected() {
+      --fdIconTabBar_Icon_Background: var(--sapSelectedColor);
+      --fdIconTabBar_Icon_Color: var(--sapContent_ContrastIconColor);
+      --fdIconTabBar_Tag_Color: var(--fdIcon_Tab_Bar_Selection_Color);
+      --fdIconTabBar_Arrow_Color: var(--sapContent_Selected_ForegroundColor);
+
       @include fd-icon-tab-bar-selection-bar();
 
       @include fd-rtl() {
@@ -490,23 +570,16 @@ $fd-icon-tab-bar-semantic-values: (
         }
       }
 
-      .#{$block}__tag {
-        color: var(--fdIcon_Tab_Bar_Selection_Color);
-      }
-
-      .#{$block}__icon {
-        @include fd-icon-selector() {
-          color: var(--sapContent_ContrastIconColor);
+      & + .#{$block}__popover {
+        .#{$block}__button {
+          --fdButtonColor: var(--sapContent_Selected_ForegroundColor);
         }
-
-        background-color: var(--sapSelectedColor);
       }
     }
 
     @include fd-hover() {
-      .#{$block}__tag {
-        color: var(--fdIcon_Tab_Bar_Label_Hover_Color);
-      }
+      --fdIconTabBar_Tag_Color: var(--fdIcon_Tab_Bar_Label_Hover_Color);
+      --fdIconTabBar_Arrow_Color: var(--sapContent_Selected_ForegroundColor);
     }
 
     @include fd-focus() {
@@ -524,13 +597,13 @@ $fd-icon-tab-bar-semantic-values: (
       .#{$block}__tag {
         @include fd-tabs-focus(var(--sapContent_FocusColor), true) {
           border-radius: var(--fdIcon_Tab_Bar_Text_Focus_Radius);
-        };
+        }
       }
 
       .#{$block}__container--filter {
-        @include fd-tabs-focus(var(--sapContent_FocusColor), true, "before") {
+        @include fd-tabs-focus(var(--sapContent_FocusColor), true, 'before') {
           border-radius: var(--fdIcon_Tab_Bar_Text_Focus_Radius);
-        };
+        }
       }
     }
 
@@ -549,18 +622,31 @@ $fd-icon-tab-bar-semantic-values: (
   &__arrow {
     @include fd-reset();
     @include fd-flex-center();
-    @include fd-set-margin-left(0.375rem);
+    @include fd-set-margins-x(
+      var(--fdIcon_Tab_Bar_Single_Click_Icon_Container_Padding_Left), var(--fdIcon_Tab_Bar_Single_Click_Icon_Container_Padding_Right));
 
     height: $fd-icon-tab-bar-single-click-arrow-size;
+    width: var(--fdIcon_Tab_Bar_Single_Click_Icon_Container_Width);
+
+    [class*='sap-icon'] {
+      @include fd-flex-center();
+
+      font-size: 1rem;
+      // color: var(--sapTextColor);
+      color: var(--fdIconTabBar_Arrow_Color);
+      width: $fd-icon-tab-bar-single-click-arrow-size;
+      height: $fd-icon-tab-bar-single-click-arrow-size;
+      line-height: $fd-icon-tab-bar-single-click-arrow-size;
+    }
   }
 
   &__tag {
     @extend %fd-icon-tab-bar-text;
 
     position: relative;
-    font-weight: var(--fdIcon_Tab_Bar_Label_Font_Weight);
-    color: var(--fdIcon_Tab_Bar_Label_Color);
-    font-size: var(--fdIcon_Tab_Bar_Label_Font_Size);
+    color: var(--fdIconTabBar_Tag_Color);
+    font-size: var(--sapFontSize);
+    font-family: var(--fdIcon_Tab_Bar_Label_Font_Family);
   }
 
   &__counter {
@@ -577,13 +663,14 @@ $fd-icon-tab-bar-semantic-values: (
 
     @include fd-icon-selector() {
       font-size: var(--fdIconTabBar_Icon_Font_Size);
-      color: var(--fdIcon_Tab_Bar_Inactive_Tab_Icon_Color);
+      color: var(--fdIconTabBar_Icon_Color);
 
       @include fd-inline-flex-center();
     }
 
     position: relative;
-    border: var(--fdIcon_Tab_Bar_Icon_Border_Weight) solid var(--fdIcon_Tab_Bar_Icon_Border_Color);
+    background: var(--fdIconTabBar_Icon_Background);
+    border: var(--fdIcon_Tab_Bar_Icon_Border_Weight) solid var(--fdIconTabBar_Icon_Border_Color);
   }
 
   &__details {
@@ -606,8 +693,8 @@ $fd-icon-tab-bar-semantic-values: (
     @include fd-ellipsis();
 
     line-height: 0.875rem;
-    font-weight: var(--fdIcon_Tab_Bar_Label_Font_Weight);
-    font-size: var(--fdIcon_Tab_Bar_Label_Font_Size);
+    font-family: var(--fdIcon_Tab_Bar_Label_Font_Family);
+    font-size: var(--sapFontSmallSize);
     color: var(--fdIcon_Tab_Bar_Label_Color);
   }
 
@@ -686,33 +773,47 @@ $fd-icon-tab-bar-semantic-values: (
 
   &__overflow {
     @include fd-reset();
-    @include fd-flex-vertical-center();
     @include fd-set-paddings-x-equal(0.5rem);
-    @include fd-icon-tab-bar-set-overflow-state-colors(
-      var(--sapButton_BorderColor),
-      var(--sapButton_Background),
-      var(--sapButton_TextColor),
-      var(--sapButton_IconColor)
-    );
+
+    @include fd-flex-vertical-center() {
+      gap: 0.375rem;
+    }
+
+    [class*='sap-icon'] {
+      font-size: 1rem;
+      font-family: var(--sapContent_IconFontFamily);
+      color: var(--fdIconTabBar_Overflow_Button_Icon_Color);
+    }
+
+    height: 1.5rem;
+    cursor: pointer;
+    position: relative;
+    border-radius: $fd-icon-tab-bar-overflow-button-border-radius;
+    background: var(--fdIconTabBar_Overflow_Button_Background);
+    border: $fd-icon-tab-bar-border-thickness solid var(--fdIconTabBar_Overflow_Button_Border_Color);
+
+    &-text {
+      @include fd-reset();
+
+      line-height: 1.5rem;
+      color: var(--fdIconTabBar_Overflow_Button_Text_Color);
+      font-family: var(--fdIcon_Tab_Bar_Overflow_Button_Font_Family);
+    }
 
     @include fd-hover() {
-      @include fd-icon-tab-bar-set-overflow-state-colors(
-        var(--sapButton_Hover_BorderColor),
-        var(--sapButton_Hover_Background),
-        var(--sapButton_Hover_TextColor),
-        var(--sapButton_Hover_TextColor)
-      );
+      --fdIconTabBar_Overflow_Button_Background: var(--sapButton_Hover_Background);
+      --fdIconTabBar_Overflow_Button_Border_Color: var(--sapButton_Hover_BorderColor);
+      --fdIconTabBar_Overflow_Button_Text_Color: var(--fdIcon_Tab_Bar_Overflow_Button_Text_Color_Hover);
+      --fdIconTabBar_Overflow_Button_Icon_Color: var(--fdIcon_Tab_Bar_Overflow_Button_Icon_Color_Hover);
 
       box-shadow: var(--fdIcon_Tab_Bar_Overflow_Button_Hover_Box_Shadow);
     }
 
     @include fd-active() {
-      @include fd-icon-tab-bar-set-overflow-state-colors(
-        var(--sapButton_Active_BorderColor),
-        var(--sapButton_Active_Background),
-        var(--sapButton_Active_TextColor),
-        var(--sapButton_Active_TextColor)
-      );
+      --fdIconTabBar_Overflow_Button_Background: var(--sapButton_Active_Background);
+      --fdIconTabBar_Overflow_Button_Border_Color: var(--sapButton_Active_BorderColor);
+      --fdIconTabBar_Overflow_Button_Text_Color: var(--sapButton_Active_TextColor);
+      --fdIconTabBar_Overflow_Button_Icon_Color: var(--sapButton_Active_TextColor);
     }
 
     @include fd-focus() {
@@ -732,26 +833,16 @@ $fd-icon-tab-bar-semantic-values: (
 
       @include fd-active() {
         &::after {
-          border: var(--sapContent_FocusWidth) var(--sapContent_FocusStyle) var(--sapContent_ContrastFocusColor);
+          border:
+            var(--sapContent_FocusWidth) var(--sapContent_FocusStyle)
+            var(--sapContent_ContrastFocusColor);
         }
       }
-    }
-
-    height: 1.5rem;
-    cursor: pointer;
-    position: relative;
-    border-radius: $fd-icon-tab-bar-overflow-button-border-radius;
-
-    &-text {
-      @include fd-reset();
-      @include fd-set-margin-right(0.375rem);
-
-      line-height: 1.5rem;
     }
   }
 
   .#{$block}__popover {
-    @include fd-set-position-right(0);
+    @include fd-set-position-right(0.188rem);
 
     top: 0;
     position: absolute;
@@ -761,6 +852,10 @@ $fd-icon-tab-bar-semantic-values: (
 
       margin-top: -0.25rem;
       z-index: 10;
+    }
+
+    .#{$block}__button {
+      --fdButtonColor: var(--sapTextColor);
     }
   }
 
@@ -774,7 +869,7 @@ $fd-icon-tab-bar-semantic-values: (
     top: 0.75rem;
     position: absolute;
     box-sizing: content-box;
-    background: var(--fdIcon_Tab_Bar_Badge_Color);
+    background: var(--fdIconTabBar_Badge_Background);
     border: $fd-icon-tab-bar-border-thickness solid var(--sapObjectHeader_Background);
 
     &--animated {
@@ -795,7 +890,7 @@ $fd-icon-tab-bar-semantic-values: (
         animation: pulseAfter 1000ms ease-in;
         animation-delay: 1000ms;
         animation-iteration-count: 1;
-        background: var(--sapContent_BadgeBackground);
+        background: var(--fdIconTabBar_Badge_Background_After);
       }
 
       @keyframes pulseAppear {
@@ -860,19 +955,6 @@ $fd-icon-tab-bar-semantic-values: (
     }
   }
 
-  &__line-separator {
-    @include fd-reset();
-
-    width: 100%;
-
-    &::after {
-      content: '';
-      display: block;
-      margin-top: 0.25rem;
-      border-bottom: 0.063rem solid var(--sapGroup_TitleBorderColor);
-    }
-  }
-
   &__icon-separator {
     @include fd-reset();
 
@@ -887,6 +969,7 @@ $fd-icon-tab-bar-semantic-values: (
       width: $fd-icon-tab-bar-icon-separator-size;
       height: $fd-icon-tab-bar-icon-separator-size;
       font-size: $fd-icon-tab-bar-icon-separator-size;
+      color: var(--sapContent_NonInteractiveIconColor);
       line-height: $fd-icon-tab-bar-icon-separator-size;
     }
 
@@ -897,20 +980,34 @@ $fd-icon-tab-bar-semantic-values: (
     }
   }
 
+  &__line-separator {
+    @include fd-reset();
+
+    margin-top: 0.25rem;
+    border-bottom: 0.0625rem solid var(--sapGroup_TitleBorderColor);
+
+    &:first-child {
+      margin-top: 0.5rem;
+
+      @include fd-set-margins-x($fd-icon-tab-bar-list-padding-right, $fd-icon-tab-bar-list-padding-right);
+    }
+  }
+
   &__list {
     width: 100%;
 
     .#{$block}__list-item {
       @for $i from 1 through 10 {
         $offset: (($i - 1) * 0.5rem) + $fd-icon-tab-bar-list-padding-right;
+        $offsetSeparator: ($i * 0.5rem) + $fd-icon-tab-bar-list-padding-right;
 
-        &[aria-level="#{$i}"] {
+        &[aria-level='#{$i}'] {
           & > * {
             @include fd-set-paddings-x($offset, $fd-icon-tab-bar-list-padding-right);
           }
 
           & + .#{$block}__line-separator {
-            @include fd-set-paddings-x($offset, $fd-icon-tab-bar-list-padding-right);
+            @include fd-set-margins-x($offsetSeparator, $fd-icon-tab-bar-list-padding-right);
           }
         }
       }
@@ -928,22 +1025,27 @@ $fd-icon-tab-bar-semantic-values: (
         }
       }
 
-      [class*='sap-icon'] {
-        @include fd-set-margin-right(0.5rem);
-
-        font-size: 1rem;
-      }
-
       @each $set-name, $set-params in $fd-icon-tab-bar-semantic-values {
-
         &--#{$set-name} {
           @include fd-icon-tab-bar-list-item-color(map_get($set-params, 'color'));
         }
       }
     }
 
+    .#{$block}__list-item--closable {
+      .#{$block}__list-link {
+        @include fd-set-paddings-x(1rem, 2rem);
+
+        position: relative;
+      }
+
+      .#{$block}__button-container {
+        @include fd-icon-tab-bar-close-btn-container-overwrite();
+      }
+    }
+
     .#{$block}__list-item-icon-container {
-      @include fd-flex-vertical-center();
+      @include fd-flex-center();
       @include fd-set-margin-right(0.5rem);
 
       width: 1.25rem;
@@ -961,12 +1063,27 @@ $fd-icon-tab-bar-semantic-values: (
       @include fd-active() {
         @include fd-icon-tab-bar-list-item-color(var(--sapList_Active_TextColor));
       }
+
+      @include fd-focus() {
+        &::before {
+          border-radius: 0.375rem;
+        }
+      }
+
+      span {
+        font-size: var(--sapFontSize);
+      }
     }
 
-    .#{$block}__list-item-icon [class*=sap-icon],
-    .#{$block}__list-item-icon [class*=sap-icon]:last-child {
+    .#{$block}__list-item-icon [class*='sap-icon'],
+    .#{$block}__list-item-icon [class*='sap-icon']:last-child {
+      @include fd-rtl() {
+        margin: 0;
+      }
+
       margin: 0;
       width: auto;
+      font-size: 1rem;
     }
 
     .#{$block}__line-separator:first-child {
@@ -980,11 +1097,10 @@ $fd-icon-tab-bar-semantic-values: (
     .#{$block}__icon-separator:first-child {
       @include fd-set-paddings-x-equal($fd-icon-tab-bar-list-padding-right);
 
-      height: 2rem;
+      height: 1.5rem;
     }
 
     @include fd-rtl() {
-
       .#{$block}__list-item-icon {
         justify-content: center;
       }
@@ -1058,6 +1174,16 @@ $fd-icon-tab-bar-semantic-values: (
       }
     }
 
+    .#{$block}__item--closable {
+      .#{$block}__tab {
+        @include fd-set-padding-right(2rem);
+      }
+
+      .#{$block}__button-container {
+        @include fd-set-position-right(0.75rem);
+      }
+    }
+
     .#{$block}__container {
       .#{$block}__badge {
         $badgePosition: $fd-icon-tab-bar-icon-spacing + $fd-icon-tab-bar-border-thickness;
@@ -1123,6 +1249,16 @@ $fd-icon-tab-bar-semantic-values: (
             }
           }
         }
+      }
+    }
+
+    .#{$block}__item--closable {
+      .#{$block}__tab {
+        @include fd-set-padding-right(2rem);
+      }
+
+      .#{$block}__button-container {
+        @include fd-set-position-right(0);
       }
     }
 
@@ -1221,7 +1357,7 @@ $fd-icon-tab-bar-semantic-values: (
     }
   }
 
-  &--navigation {
+  &.#{$block}--navigation {
     .#{$block}__header {
       box-shadow: var(--sapShell_Shadow);
       background: var(--sapShell_Navigation_Background);
@@ -1229,12 +1365,6 @@ $fd-icon-tab-bar-semantic-values: (
 
     .#{$block}__item {
       color: var(--sapShell_Navigation_TextColor);
-
-      &--overflow {
-        .#{$block}__overflow {
-          border-color: transparent;
-        }
-      }
     }
 
     .#{$block}__tab {
@@ -1251,6 +1381,12 @@ $fd-icon-tab-bar-semantic-values: (
 
         &::after {
           background: var(--sapShell_Navigation_SelectedColor);
+        }
+
+        & + .fd-icon-tab-bar__popover {
+          .#{$block}__button {
+            --fdButtonColor: var(--fdIconTabBar_Button_Shell_Color_Active);
+          }
         }
       }
 
@@ -1278,69 +1414,79 @@ $fd-icon-tab-bar-semantic-values: (
       }
     }
 
-    .#{$block}__button {
-      color: var(--sapShell_Navigation_SelectedColor);
-      background: var(--sapShell_Navigation_Background);
-
-      @include fd-hover() {
-        color: var(--sapShell_Navigation_SelectedColor);
-        background: var(--sapShell_Navigation_Hover_Background);
-        border-color: var(--sapShell_Navigation_Hover_Background);
-      }
-
-      @include fd-active() {
-        color: var(--sapShell_Navigation_Active_TextColor);
-        background: var(--sapShell_Navigation_Active_Background);
-        border-color: var(--sapShell_Navigation_Active_Background);
-      }
-
-      @include fd-selected() {
-        border-color: var(--sapShell_Navigation_Background);
-      }
-
-      @include fd-focus() {
-        outline-color: var(--sapShell_Navigation_TextColor);
-      }
-    }
-
     .#{$block}__overflow {
-      background: var(--sapShell_Navigation_Background);
-      border-color: var(--sapShell_Navigation_SelectedColor);
-
-      &-text,
-      [class*='sap-icon'] {
-        color: var(--sapShell_Navigation_SelectedColor);
-      }
+      --fdIconTabBar_Overflow_Button_Background: var(--fdIconTabBar_Overflow_Button_Shell_Background);
+      --fdIconTabBar_Overflow_Button_Border_Color: var(--fdIconTabBar_Overflow_Button_Shell_Border_Color);
+      --fdIconTabBar_Overflow_Button_Text_Color: var(--fdIconTabBar_Overflow_Button_Shell_Text_Color);
+      --fdIconTabBar_Overflow_Button_Icon_Color: var(--fdIconTabBar_Overflow_Button_Shell_Icon_Color);
 
       @include fd-hover() {
-        border-color: var(--sapShell_Navigation_SelectedColor);
-        background: var(--sapShell_Navigation_Hover_Background);
-
-        .#{$block}__overflow-text,
-        [class*='sap-icon'] {
-          color: var(--sapShell_Navigation_SelectedColor);
-        }
+        --fdIconTabBar_Overflow_Button_Background: var(--fdIconTabBar_Overflow_Button_Shell_Background_Hover);
+        --fdIconTabBar_Overflow_Button_Border_Color:
+          var(
+            --fdIconTabBar_Overflow_Button_Shell_Border_Color_Hover
+          );
+        --fdIconTabBar_Overflow_Button_Text_Color: var(--fdIconTabBar_Overflow_Button_Shell_Text_Color_Hover);
+        --fdIconTabBar_Overflow_Button_Icon_Color: var(--fdIconTabBar_Overflow_Button_Shell_Icon_Color_Hover);
       }
 
       @include fd-active() {
-        border-color: var(--sapShell_Navigation_SelectedColor);
-        background: var(--sapShell_Navigation_Active_Background);
-
-        .#{$block}__overflow-text,
-        [class*='sap-icon'] {
-          color: var(--sapShell_Navigation_Active_TextColor);
-        }
+        --fdIconTabBar_Overflow_Button_Background: var(--fdIconTabBar_Overflow_Button_Shell_Background_Active);
+        --fdIconTabBar_Overflow_Button_Border_Color:
+          var(
+            --fdIconTabBar_Overflow_Button_Shell_Border_Color_Active
+          );
+        --fdIconTabBar_Overflow_Button_Text_Color: var(--fdIconTabBar_Overflow_Button_Shell_Text_Color_Active);
+        --fdIconTabBar_Overflow_Button_Icon_Color: var(--fdIconTabBar_Overflow_Button_Shell_Icon_Color_Active);
       }
 
       @include fd-focus() {
         &::after {
-          border-color: var(--sapShell_Navigation_TextColor);
+          border-color: var(--fdIconTabBar_Overflow_Button_Shell_Focus_Color);
+        }
+      }
+    }
+
+    .#{$block}__button {
+      --fdButtonColor: var(--fdIconTabBar_Button_Shell_Color);
+
+      @include fd-hover() {
+        --fdButtonColor: var(--fdIconTabBar_Button_Shell_Color_Hover);
+        --fdButtonBorderColor: var(--fdIconTabBar_Button_Shell_Background_Color_Hover);
+        --fdButtonBackgroundColor: var(--fdIconTabBar_Button_Shell_Background_Color_Hover);
+      }
+
+      @include fd-active() {
+        --fdButtonColor: var(--fdIconTabBar_Button_Shell_Color_Active);
+        --fdButtonBackgroundColor: var(--fdIconTabBar_Button_Shell_Background_Color_Active);
+        --fdButtonBorderColor: var(--fdIconTabBar_Button_Shell_Background_Color_Active);
+      }
+
+      @include fd-focus() {
+        --fdButtonColor: var(--fdIconTabBar_Button_Shell_Color_Active);
+        --fdButtonBackgroundColor: var(--sapShell_Navigation_Background);
+        --fdButtonBorderColor: var(--sapShell_Navigation_Background);
+
+        &::after {
+          border-color: var(--fdIconTabBar_Button_Shell_Focus_Color);
+        }
+      }
+
+      @include fd-selected() {
+        --fdButtonColor: var(--fdIconTabBar_Button_Shell_Color_Active);
+        --fdButtonBackgroundColor: var(--fdIconTabBar_Button_Shell_Background_Color_Selected);
+        --fdButtonBorderColor: var(--fdIconTabBar_Button_Shell_Background_Color_Selected);
+
+        @include fd-hover() {
+          --fdButtonColor: var(--fdIconTabBar_Button_Shell_Color_Hover);
+          --fdButtonBorderColor: transparent;
+          --fdButtonBackgroundColor: var(--fdIconTabBar_Button_Shell_Background_Color_Hover);
         }
       }
     }
   }
 
-  &--navigation-flat {
+  &.#{$block}--navigation-flat {
     .#{$block}__header {
       background: var(--sapShellColor);
     }
