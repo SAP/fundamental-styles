@@ -2,143 +2,34 @@
 @import "./mixins";
 
 $block: #{$fd-namespace}-toolbar;
-$toolbar-height-compact: 2rem;
-$info-toolbar-height: 2rem;
-$toolbar-height-cozy: 2.75rem;
-
-$toolbar-separator-height-compact: 1.5rem;
-$toolbar-separator-height-cozy: 2rem;
-
-$toolbar-spacing: 0.5rem;
-$toolbar-padding: 0 0.5rem;
-$title-toolbar-padding: 0 0.5rem 0 1rem;
-$title-toolbar-height: 2.75rem;
-
-@mixin activeStyles() {
-  &.#{$block}--active {
-    @content;
-  }
-}
-
-$fdToolbarBackgrounds: (
-  'auto': var(--fdToolbar_Auto_Background),
-  'solid': var(--fdToolbar_Solid_Background),
-  'transparent': var(--sapToolbar_Background)
-);
-
-@mixin toolbarInfo() {
-  $active-color: var(--sapInfobar_TextColor);
-
-  background-color: var(--sapInfobar_NonInteractive_Background);
-  color: var(--sapList_TextColor);
-
-  @include activeStyles() {
-    background-color: var(--sapInfobar_Background);
-    color: $active-color;
-
-    @include fd-hover() {
-      background-color: var(--sapInfobar_Hover_Background);
-    }
-
-    @include fd-active() {
-      background-color: var(--sapInfobar_Active_Background);
-    }
-  }
-}
-
-@mixin toolbarStandard() {
-  border-bottom: solid 0.0625rem var(--sapGroup_TitleBorderColor);
-}
-
-@mixin titleToolbar() {
-  padding: $title-toolbar-padding;
-  height: $title-toolbar-height;
-  background-color: var(--sapGroup_TitleBackground) !important;
-}
-
-@mixin toolbarClear() {
-  border-bottom: none;
-}
-
-%spacerMargin {
-  margin-left: $toolbar-spacing;
-
-  @include fd-rtl() {
-    margin-left: 0;
-    margin-right: $toolbar-spacing;
-  }
-}
-
-@mixin toolbarSpacing() {
-  > * ~ *:not(.#{$block}__spacer) {
-    @extend %spacerMargin;
-  }
-
-  > .#{$block}__spacer + *:not(.#{$block}__spacer) {
-    margin-left: 0;
-    margin-right: 0;
-  }
-}
 
 .#{$block} {
+  --fdToolbar_Height: 2.75rem;
+  --fdToolbar_Separator_Margin: 0;
+  --fdToolbar_Padding_Left: 0.5rem;
+  --fdToolbar_Padding_Right: 0.5rem;
+  --fdToolbar_Separator_Height: 2rem;
+  --fdToolbar_Overflow_Max_Width: 100%;
+  --fdToolbar_Separator_Width: 0.0625rem;
+  --fdToolbar_Overflow_Padding: 0.25rem 0.5rem;
+  --fdToolbar_Info_Color: var(--sapList_TextColor);
+  --fdToolbar_Background: var(--sapToolbar_Background);
+  --fdToolbar_Border: 0.0625rem solid var(--sapGroup_TitleBorderColor);
+
   @include fd-reset();
 
-  height: $toolbar-height-compact;
-  padding: $toolbar-padding;
-  display: flex;
-  align-items: center;
-
-  @include toolbarSpacing();
-  @include toolbarStandard();
-
-  @each $set-name, $backgroundColor in $fdToolbarBackgrounds {
-    &--#{$set-name} {
-      background-color: #{$backgroundColor};
-    }
+  @include fd-flex() {
+    gap: 0.5rem;
+    align-items: center;
   }
 
-  &--title {
-    @include titleToolbar();
-  }
+  @include fd-set-paddings-x(var(--fdToolbar_Padding_Left), var(--fdToolbar_Padding_Right));
 
-  &--clear {
-    @include toolbarClear();
-  }
+  height: var(--fdToolbar_Height);
+  border-bottom: var(--fdToolbar_Border);
+  background-color: var(--fdToolbar_Background);
 
-  &--fade-in {
-    visibility: visible;
-    opacity: 1;
-    transition: visibility 0s linear 0s, opacity 1s;
-  }
-
-  &--fade-out {
-    visibility: hidden;
-    opacity: 0;
-    transition: visibility 0s linear 1s, opacity 1ms;
-  }
-
-  &--info {
-    @include toolbarInfo();
-    @include fd-set-paddings-x(0.5rem, 1rem);
-    @include fd-fiori-pseudo-focus();
-
-    position: relative;
-    outline: none;
-
-    @include fd-focus() {
-      &::after {
-        border-color: var(--fdToolbar_Info_Outline_Color);
-      }
-    }
-
-    [class*='sap-icon'] {
-      font-size: 1rem;
-      height: 1rem;
-      line-height: 1rem;
-      color: var(--sapInfobar_TextColor);
-    }
-  }
-
+  // Blocks
   &__spacer {
     @include fd-reset();
 
@@ -154,26 +45,30 @@ $fdToolbarBackgrounds: (
   &__separator {
     @include fd-reset();
 
-    width: 0.0625rem;
-    height: $toolbar-separator-height-compact;
+    width: var(--fdToolbar_Separator_Width);
+    height: var(--fdToolbar_Separator_Height);
+    margin: var(--fdToolbar_Separator_Margin);
     background-color: var(--sapToolbar_SeparatorColor);
   }
 
   &__overflow {
     @include fd-reset();
     @include fd-flex(column);
-    @include fd-set-paddings-x-equal(0.375rem);
-    @include fd-set-paddings-y-equal(0.1875rem);
 
-    max-width: 20rem;
-    max-height: 50vh;
+    --fdToolbar_Separator_Width: auto;
+    --fdToolbar_Separator_Height: 0.0625rem;
+    --fdToolbar_Separator_Margin: 0.1875rem 0;
+
     overflow: auto;
+    max-height: 50vh;
+    padding: var(--fdToolbar_Overflow_Padding);
+    max-width: var(--fdToolbar_Overflow_Max_Width);
 
     & .#{$block}__overflow-button {
-      justify-content: flex-start;
-      text-align: left;
       width: auto;
+      text-align: left;
       margin: 0.1875rem 0;
+      justify-content: flex-start;
 
       @include fd-rtl() {
         text-align: right;
@@ -188,23 +83,12 @@ $fdToolbarBackgrounds: (
       }
     }
 
-    .#{$block}__separator {
-      @include fd-reset();
-
-      height: 0.0625rem;
-      margin: 0.1875rem;
-      width: auto;
-      background-color: var(--sapToolbar_SeparatorColor);
+    .#{$block}__overflow-form-label {
+      margin: 0.625rem 0 0.125rem 0;
     }
 
-    .#{$block}__overflow-form-label,
     .#{$block}__overflow-label {
-      @include fd-reset();
-      @include fd-ellipsis();
-
-      &--text {
-        margin-top: 0.4375rem;
-      }
+      margin: 0.375rem 0;
     }
   }
 
@@ -213,19 +97,88 @@ $fdToolbarBackgrounds: (
     font-size: var(--sapGroup_Title_FontSize);
   }
 
-  @include fd-cozy() {
-    height: $toolbar-height-cozy;
-    min-height: $toolbar-height-cozy;
+  // Modifiers
+  &--auto {
+    --fdToolbar_Background: var(--fdToolbar_Auto_Background);
+  }
 
-    &.#{$block}--info {
-      height: $info-toolbar-height;
-      min-height: $info-toolbar-height;
+  &--solid {
+    --fdToolbar_Background: var(--fdToolbar_Solid_Background);
+  }
+
+  &--transparent {
+    --fdToolbar_Background: var(--fdToolbar_Transparent_Background);
+  }
+
+  &--clear {
+    --fdToolbar_Border: none;
+  }
+
+  &--title {
+    --fdToolbar_Height: 2.75rem;
+    --fdToolbar_Padding_Left: 1rem;
+    --fdToolbar_Background: var(--sapGroup_TitleBackground);
+  }
+
+  &--info {
+    position: relative;
+    color: var(--fdToolbar_Info_Color);
+
+    --fdToolbar_Height: 2rem;
+    --fdToolbar_Background: var(--sapInfobar_NonInteractive_Background);
+
+    [class*='sap-icon'] {
+      font-size: 1rem;
+      height: 1rem;
+      line-height: 1rem;
+      color: var(--sapList_TextColor);
+    }
+  }
+
+  &--active {
+    outline: none;
+    position: relative;
+
+    --fdToolbar_Background: var(--sapInfobar_Background);
+    --fdToolbar_Info_Color: var(--sapInfobar_TextColor);
+
+    @include fd-fiori-pseudo-focus();
+
+    @include fd-hover() {
+      --fdToolbar_Background: var(--sapInfobar_Hover_Background);
     }
 
-    .#{$block}__overflow {
-      @include fd-reset();
-      @include fd-set-paddings-x-equal(0.5rem);
-      @include fd-set-paddings-y-equal(0.25rem);
+    @include fd-active() {
+      --fdToolbar_Background: var(--sapInfobar_Active_Background);
+    }
+
+    @include fd-focus() {
+      &::after {
+        border-color: var(--fdToolbar_Info_Outline_Color);
+      }
+    }
+  }
+
+  &--fade-in {
+    visibility: visible;
+    opacity: 1;
+    transition: visibility 0s linear 0s, opacity 1s;
+  }
+
+  &--fade-out {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s linear 1s, opacity 1ms;
+  }
+
+  @include fd-compact-or-condensed() {
+    --fdToolbar_Height: 2rem;
+    --fdToolbar_Separator_Height: 1.5rem;
+    --fdToolbar_Overflow_Padding: 0.1875rem 0.375rem;
+    --fdToolbar_Overflow_Max_Width: 20rem;
+
+    &.#{$block}--title {
+      --fdToolbar_Height: 2.75rem;
     }
   }
 }
