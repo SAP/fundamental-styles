@@ -1,3 +1,18 @@
+# [0.30.0-rc.0](https://github.com/SAP/fundamental-styles/compare/v0.29.2-rc.0...v0.30.0-rc.0) (2023-06-16)
+
+
+### Bug Fixes
+
+* **styles:** fix the content density for Bar [ci visual] ([#4607](https://github.com/SAP/fundamental-styles/issues/4607)) ([d9c0337](https://github.com/SAP/fundamental-styles/commit/d9c0337e4ab344c23af03cda693a30f88e2b1d33))
+
+
+### BREAKING CHANGES
+
+* **styles:** The default state is now cozy and compact requires a modifier class.
+Removed "fd-bar--cozy" modifier class, introduced "fd-bar--compact"
+
+
+
 ## [0.29.2-rc.0](https://github.com/SAP/fundamental-styles/compare/v0.29.1...v0.29.2-rc.0) (2023-06-13)
 
 
