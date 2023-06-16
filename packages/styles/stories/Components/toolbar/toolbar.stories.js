@@ -25,8 +25,8 @@ There are two sizes of the toolbar that should be chosen based on the type of de
 
 Size&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Modifier class&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Screen width&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Device
 :---- | :-------- | :--------- | :-------
-Cozy | \`is-cozy\` | < 599 px | Mobile and small tablets
-Compact | Default | 600 px and above | Desktop
+Cozy | default | < 599 px | Mobile and small tablets
+Compact |  \`is-compact\` | 600 px and above | Desktop
 <br>
 
         `,
@@ -47,10 +47,12 @@ export const Overflow = () => overflowExampleHtml;
 Overflow.parameters = {
   docs: {
     description: {
-      story: `The overflow toolbar can display additional elements when space is limited. This can be achieved with a **Button** and/or **Popover** component.
-
-To display an overflow in a button, pass the \`sap-icon--overflow\` in the \`fd-button\` class. Additionally, you can add a popover by passing \`fd-popover\` in the \`fd-toolbar__overflow\` element.
- Add any element inside overflow body with \`fd-toolbar__overflow-button\` , \`fd-toolbar__overflow-button--menu\` \`fd-toolbar__overflow-label \` modifier ,        `
+      story: `The Overflow behaviour of the toolbar can place elements in an overflow state when there is not enough space to display all of them.
+      The overflowing elements are represented by a button and upon interacting with the button a popover with a list of elements is shown. <br> The vertical spacing between the elements is achieved by additional modifier classes: <br>
+- \`fd-toolbar__overflow-button\` for buttons <br>
+- \`fd-toolbar__overflow-button--menu\` for menu button<br>
+- \`fd-toolbar__overflow-label\` for label <br>
+- \`fd-toolbar__overflow-form-label\` for form label <br>`
     }
   }
 };
@@ -75,9 +77,9 @@ Types | Modifier class | Description
 Solid | \`fd-toolbar--solid\` | Displays a solid background color.
 Transparent | \`fd-toolbar--transparent\` | Displays a transparent background.
 Auto | \` fd-toolbar--auto\` | Can inherit the design from the parent component it’s being used with.
-Info | \` fd-toolbar--info\` | Commonly used to display information (text or icons) and is slightly smaller than the regular toolbar.
+Info | \` fd-toolbar--info\` | When the toolbar is set to the active state it becomes an info bar. The info bar is fully clickable and is not recommended to be used as a generic toolbar. Recommended contents are text and an icon.
 Title | \` fd-toolbar--title\` | Should be used whenever a title is required.
-No border-bottom | \`fd-toolbar—clear\` | This is not a type, but it removes the bottom border of each toolbar type.
+No border-bottom | \`fd-toolbar--clear\` | This is not a type, but it removes the bottom border of each toolbar type.
 Active | \` fd-toolbar--active\` | This is also not a type, but it enables active and hover states in each type.
 
 `

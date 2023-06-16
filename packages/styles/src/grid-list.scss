@@ -135,8 +135,11 @@ $fd-grid-list-highlight: (
     &-toolbar {
       @include fd-flex-vertical-center();
 
+      --fdToolbar_Padding_Left: 1rem;
+      --fdToolbar_Padding_Right: 1rem;
+      --fdToolbar_Background: transparent;
+
       flex-shrink: 0;
-      padding: 0 1rem;
       border: none;
       box-shadow: var(--fdGrid_List_Item_Toolbar_Shadow);
     }
