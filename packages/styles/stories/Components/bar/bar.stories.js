@@ -4,7 +4,6 @@ import headerWithSubheaderExampleHtml from "./header-with-subheader.example.html
 import subheaderExampleHtml from "./subheader.example.html?raw";
 import headerExampleHtml from "./header.example.html?raw";
 import responsiveExampleHtml from "./responsive.example.html?raw";
-import cozyExampleHtml from "./cozy.example.html?raw";
 import defaultExampleHtml from "./default.example.html?raw";
 import '../../../src/button.scss';
 import '../../../src/icon.scss';
@@ -76,17 +75,7 @@ Default.parameters = {
     }
   }
 };
-export const Cozy = () => cozyExampleHtml;
-Cozy.parameters = {
-  docs: {
-    story: {
-      iframeHeight: 100
-    },
-    description: {
-      story: 'The cozy bar contains a back button, icon buttons, segmented button and product switch button. It is responsive to tablet and mobile screen sizes. To apply cozy mode, add the `--cozy` modifier class to the container element.'
-    }
-  }
-};
+
 export const Responsive = () => responsiveExampleHtml;
 Responsive.parameters = {
   docs: {
