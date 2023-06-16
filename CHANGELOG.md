@@ -1,3 +1,18 @@
+# [0.30.0-rc.1](https://github.com/SAP/fundamental-styles/compare/v0.30.0-rc.0...v0.30.0-rc.1) (2023-06-16)
+
+
+### Bug Fixes
+
+* **styles:** update and refactor Toolbar [ci visual] ([#4603](https://github.com/SAP/fundamental-styles/issues/4603)) ([d006c46](https://github.com/SAP/fundamental-styles/commit/d006c464d5a61fadbe666a41b74faec466a4e6f8))
+
+
+### BREAKING CHANGES
+
+* **styles:** "is-cozy" modifier class is removed, now cozy is the default state
+added "is-compact" modifier class for compact state
+
+
+
 # [0.30.0-rc.0](https://github.com/SAP/fundamental-styles/compare/v0.29.2-rc.0...v0.30.0-rc.0) (2023-06-16)
 
 
