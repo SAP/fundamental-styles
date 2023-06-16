@@ -133,7 +133,7 @@ $fd-side-nav-border-radius: 1rem;
           @include fd-flex-vertical-center();
 
           right: 0;
-          content: "\e066" / "";
+          content: "\e066";
           position: absolute;
           padding-right: 0.25rem;
           font-family: "SAP-icons";
