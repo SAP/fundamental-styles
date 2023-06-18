@@ -4,12 +4,14 @@
 $block: #{$fd-namespace}-page;
 
 .#{$block} {
+  --fdPage_Background: var(--sapBackgroundColor);
+
   @include fd-reset();
 
   position: relative;
   display: flex;
   flex-direction: column;
-  background: var(--sapBackgroundColor);
+  background: var(--fdPage_Background);
 
   &__content {
     @include fd-reset();
@@ -36,15 +38,15 @@ $block: #{$fd-namespace}-page;
   }
 
   &--solid {
-    background: var(--sapBackgroundColor);
+    --fdPage_Background: var(--sapBackgroundColor);
   }
 
   &--list {
-    background: var(--fdPage_List_Background);
+    --fdPage_Background: var(--fdPage_List_Background);
   }
 
   &--transparent {
-    background: var(--fdPage_Transparent_Background);
+    --fdPage_Background: var(--fdPage_Transparent_Background);
   }
 
   &--home {
