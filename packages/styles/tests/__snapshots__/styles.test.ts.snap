@@ -2034,23 +2034,11 @@ exports[`Check stories > Components/Avatar Group > Story Overflow > Should match
 "
 `;
 
-exports[`Check stories > Components/Bar > Story Cozy > Should match snapshot 1`] = `
-"<div class=\\"fd-bar fd-bar--cozy\\">
+exports[`Check stories > Components/Bar > Story Default > Should match snapshot 1`] = `
+"<div class=\\"fd-bar\\">
     <div class=\\"fd-bar__left\\">
         <div class=\\"fd-bar__element\\">
-            <button aria-label=\\"button\\" class=\\"fd-button fd-button--transparent\\">
-                <i class=\\"sap-icon--navigation-left-arrow\\"></i>
-            </button>
-        </div>
-        <div class=\\"fd-bar__element\\">
-            <button aria-label=\\"button\\" class=\\"fd-button fd-button--transparent\\">
-                <i class=\\"sap-icon--home\\"></i>
-            </button>
-        </div>
-        <div class=\\"fd-bar__element\\">
-            <button aria-label=\\"button\\" class=\\"fd-button fd-button--transparent\\">
-                <i class=\\"sap-icon--account\\"></i>
-            </button>
+            <h5 class=\\"fd-title fd-title--h5\\" aria-label=\\"text\\">TEXT</h5>
         </div>
     </div>
     <div class=\\"fd-bar__middle\\">
@@ -2063,47 +2051,6 @@ exports[`Check stories > Components/Bar > Story Cozy > Should match snapshot 1`]
                     <i class=\\"sap-icon--iphone\\"></i>
                 </button>
                 <button aria-label=\\"button\\" class=\\"fd-button\\" aria-pressed=\\"false\\">
-                    <i class=\\"sap-icon--notification-2\\"></i>
-                </button>
-            </div>
-        </div>
-    </div>
-    <div class=\\"fd-bar__right\\">
-        <div class=\\"fd-bar__element\\">
-            <span
-                class=\\"fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--thumbnail\\"
-                style=\\"background-image: url('/assets/images/avatars/1.svg')\\"
-                role=\\"img\\" aria-label=\\"John Doe\\"></span>
-        </div>
-        <div class=\\"fd-bar__element\\">
-            <button aria-label=\\"button\\" class=\\"fd-button fd-button--transparent\\">
-                <i class=\\"sap-icon--grid\\"></i>
-            </button>
-        </div>
-    </div>
-</div>
-"
-`;
-
-exports[`Check stories > Components/Bar > Story Default > Should match snapshot 1`] = `
-"
-<p><b>Compact bar with compact elements</b></p>
-<div class=\\"fd-bar\\">
-    <div class=\\"fd-bar__left\\">
-        <div class=\\"fd-bar__element\\">
-            <h5 class=\\"fd-title fd-title--h5\\" aria-label=\\"text\\">TEXT</h5>
-        </div>
-    </div>
-    <div class=\\"fd-bar__middle\\">
-        <div class=\\"fd-bar__element\\">
-            <div class=\\"fd-segmented-button\\" role=\\"group\\" aria-label=\\"Group label\\">
-                <button aria-label=\\"button\\" class=\\"fd-button fd-button--compact fd-button--toggled\\" aria-pressed=\\"true\\">
-                    <i class=\\"sap-icon--email\\"></i>
-                </button>
-                <button aria-label=\\"button\\" class=\\"fd-button fd-button--compact\\" aria-pressed=\\"false\\">
-                    <i class=\\"sap-icon--iphone\\"></i>
-                </button>
-                <button aria-label=\\"button\\" class=\\"fd-button fd-button--compact\\" aria-pressed=\\"false\\">
                     <i class=\\"sap-icon--notification-2\\"></i>
                 </button>
             </div>
@@ -2117,134 +2064,16 @@ exports[`Check stories > Components/Bar > Story Default > Should match snapshot 
             role=\\"img\\" aria-label=\\"John Doe\\"></span>
         </div>
         <div class=\\"fd-bar__element\\">
-            <button aria-label=\\"button\\" class=\\"fd-button fd-button--transparent fd-button--compact\\">
+            <button aria-label=\\"button\\" class=\\"fd-button fd-button--transparent\\">
                 <i class=\\"sap-icon--grid\\"></i>
             </button>
         </div>
     </div>
 </div>
-"
-`;
 
-exports[`Check stories > Components/Bar > Story FloatingFooter > Should match snapshot 1`] = `
-"
-<div style=\\"margin-bottom: 2rem;\\"><b>Default (desktop)</b></div>
-<br>
-<div style=\\"position: relative;\\">
-    <div class=\\"fd-bar fd-bar--floating-footer\\">
-        <div class=\\"fd-bar__right\\">
-            <div class=\\"fd-bar__element\\">
-                <button aria-label=\\"button\\" class=\\"fd-button fd-button--emphasized fd-button--compact\\">Save</button>
-            </div>
-            <div class=\\"fd-bar__element\\">
-                <button aria-label=\\"button\\" class=\\"fd-button fd-button--transparent fd-button--compact\\">Cancel</button>
-            </div>
-        </div>
-    </div>
-</div>
 <br><br>
-<div style=\\"margin-bottom: 2rem;\\"><b>Cozy (tablet and mobile)</b></div>
-<br>
-<div style=\\"position: relative;\\">
-    <div class=\\"fd-bar fd-bar--floating-footer fd-bar--cozy\\">
-        <div class=\\"fd-bar__right\\">
-            <div class=\\"fd-bar__element\\">
-                <button aria-label=\\"button\\" class=\\"fd-button fd-button--emphasized\\">Save</button>
-            </div>
-            <div class=\\"fd-bar__element\\">
-                <button aria-label=\\"button\\" class=\\"fd-button fd-button--transparent\\">Cancel</button>
-            </div>
-        </div>
-    </div>
-</div>
-"
-`;
 
-exports[`Check stories > Components/Bar > Story Footer > Should match snapshot 1`] = `
-"
-<div><b>Default (desktop)</b></div>
-<br>
-<div class=\\"fd-bar fd-bar--footer\\">
-    <div class=\\"fd-bar__right\\">
-        <div class=\\"fd-bar__element\\">
-            <button aria-label=\\"button\\" class=\\"fd-button fd-button--emphasized fd-button--compact\\">Save</button>
-        </div>
-        <div class=\\"fd-bar__element\\">
-            <button aria-label=\\"button\\" class=\\"fd-button fd-button--transparent fd-button--compact\\">Cancel</button>
-        </div>
-    </div>
-</div>
-<br><br>
-<div><b>Cozy (tablet and mobile)</b></div>
-<br>
-<div class=\\"fd-bar fd-bar--footer fd-bar--cozy\\">
-    <div class=\\"fd-bar__right\\">
-        <div class=\\"fd-bar__element\\">
-            <button aria-label=\\"button\\" class=\\"fd-button fd-button--emphasized\\">Save</button>
-        </div>
-        <div class=\\"fd-bar__element\\">
-            <button aria-label=\\"button\\" class=\\"fd-button fd-button--transparent\\">Cancel</button>
-        </div>
-    </div>
-</div>
-"
-`;
-
-exports[`Check stories > Components/Bar > Story Header > Should match snapshot 1`] = `
-"
-<div><b>Default (desktop)</b></div>
-<br>
-<div class=\\"fd-bar fd-bar--header\\">
-    <div class=\\"fd-bar__left\\">
-        <div class=\\"fd-bar__element\\">
-            <button aria-label=\\"button\\" class=\\"fd-button fd-button--transparent fd-button--compact\\">
-                <i class=\\"sap-icon--navigation-left-arrow\\"></i>
-            </button>
-        </div>
-        <div class=\\"fd-bar__element\\">
-            <button aria-label=\\"button\\" class=\\"fd-button fd-button--transparent fd-button--compact\\">
-                <i class=\\"sap-icon--home\\"></i>
-            </button>
-        </div>
-        <div class=\\"fd-bar__element\\">
-            <button aria-label=\\"button\\" class=\\"fd-button fd-button--transparent fd-button--compact\\">
-                <i class=\\"sap-icon--account\\"></i>
-            </button>
-        </div>
-    </div>
-    <div class=\\"fd-bar__middle\\">
-        <div class=\\"fd-bar__element\\">
-            <div class=\\"fd-segmented-button\\" role=\\"group\\" aria-label=\\"Group label\\">
-                <button aria-label=\\"button\\" class=\\"fd-button fd-button--compact fd-button--toggled\\" aria-pressed=\\"true\\">
-                    <i class=\\"sap-icon--email\\"></i>
-                </button>
-                <button aria-label=\\"button\\" class=\\"fd-button fd-button--compact\\" aria-pressed=\\"false\\">
-                    <i class=\\"sap-icon--iphone\\"></i>
-                </button>
-                <button aria-label=\\"button\\" class=\\"fd-button fd-button--compact\\" aria-pressed=\\"false\\">
-                    <i class=\\"sap-icon--notification-2\\"></i>
-                </button>
-            </div>
-        </div>
-    </div>
-    <div class=\\"fd-bar__right\\">
-        <div class=\\"fd-bar__element\\">
-            <span
-                class=\\"fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--thumbnail\\"
-                style=\\"background-image: url('/assets/images/avatars/1.svg')\\"
-                role=\\"img\\" aria-label=\\"John Doe\\"></span>
-        </div>
-        <div class=\\"fd-bar__element\\">
-            <button aria-label=\\"button\\" class=\\"fd-button fd-button--transparent fd-button--compact\\">
-                <i class=\\"sap-icon--grid\\"></i>
-            </button>
-        </div>
-    </div>
-</div>
-<br><br>
-<div><b>Cozy (tablet and mobile)</b></div>
-<br>
-<div class=\\"fd-bar fd-bar--header fd-bar--cozy\\">
+<div class=\\"fd-bar\\">
     <div class=\\"fd-bar__left\\">
         <div class=\\"fd-bar__element\\">
             <button aria-label=\\"button\\" class=\\"fd-button fd-button--transparent\\">
@@ -2294,10 +2123,90 @@ exports[`Check stories > Components/Bar > Story Header > Should match snapshot 1
 "
 `;
 
+exports[`Check stories > Components/Bar > Story FloatingFooter > Should match snapshot 1`] = `
+"
+<div style=\\"margin-bottom: 2rem;\\"></div>
+<br>
+<div style=\\"position: relative;\\">
+    <div class=\\"fd-bar fd-bar--floating-footer\\">
+        <div class=\\"fd-bar__right\\">
+            <div class=\\"fd-bar__element\\">
+                <button aria-label=\\"button\\" class=\\"fd-button fd-button--emphasized fd-button--compact\\">Save</button>
+            </div>
+            <div class=\\"fd-bar__element\\">
+                <button aria-label=\\"button\\" class=\\"fd-button fd-button--transparent fd-button--compact\\">Cancel</button>
+            </div>
+        </div>
+    </div>
+</div>"
+`;
+
+exports[`Check stories > Components/Bar > Story Footer > Should match snapshot 1`] = `
+"
+<div class=\\"fd-bar fd-bar--footer\\">
+    <div class=\\"fd-bar__right\\">
+        <div class=\\"fd-bar__element\\">
+            <button aria-label=\\"button\\" class=\\"fd-button fd-button--emphasized fd-button--compact\\">Save</button>
+        </div>
+        <div class=\\"fd-bar__element\\">
+            <button aria-label=\\"button\\" class=\\"fd-button fd-button--transparent fd-button--compact\\">Cancel</button>
+        </div>
+    </div>
+</div>"
+`;
+
+exports[`Check stories > Components/Bar > Story Header > Should match snapshot 1`] = `
+"<div class=\\"fd-bar fd-bar--header\\">
+    <div class=\\"fd-bar__left\\">
+        <div class=\\"fd-bar__element\\">
+            <button aria-label=\\"button\\" class=\\"fd-button fd-button--transparent fd-button--compact\\">
+                <i class=\\"sap-icon--navigation-left-arrow\\"></i>
+            </button>
+        </div>
+        <div class=\\"fd-bar__element\\">
+            <button aria-label=\\"button\\" class=\\"fd-button fd-button--transparent fd-button--compact\\">
+                <i class=\\"sap-icon--home\\"></i>
+            </button>
+        </div>
+        <div class=\\"fd-bar__element\\">
+            <button aria-label=\\"button\\" class=\\"fd-button fd-button--transparent fd-button--compact\\">
+                <i class=\\"sap-icon--account\\"></i>
+            </button>
+        </div>
+    </div>
+    <div class=\\"fd-bar__middle\\">
+        <div class=\\"fd-bar__element\\">
+            <div class=\\"fd-segmented-button\\" role=\\"group\\" aria-label=\\"Group label\\">
+                <button aria-label=\\"button\\" class=\\"fd-button fd-button--compact fd-button--toggled\\" aria-pressed=\\"true\\">
+                    <i class=\\"sap-icon--email\\"></i>
+                </button>
+                <button aria-label=\\"button\\" class=\\"fd-button fd-button--compact\\" aria-pressed=\\"false\\">
+                    <i class=\\"sap-icon--iphone\\"></i>
+                </button>
+                <button aria-label=\\"button\\" class=\\"fd-button fd-button--compact\\" aria-pressed=\\"false\\">
+                    <i class=\\"sap-icon--notification-2\\"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class=\\"fd-bar__right\\">
+        <div class=\\"fd-bar__element\\">
+            <span
+                class=\\"fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--thumbnail\\"
+                style=\\"background-image: url('/assets/images/avatars/1.svg')\\"
+                role=\\"img\\" aria-label=\\"John Doe\\"></span>
+        </div>
+        <div class=\\"fd-bar__element\\">
+            <button aria-label=\\"button\\" class=\\"fd-button fd-button--transparent fd-button--compact\\">
+                <i class=\\"sap-icon--grid\\"></i>
+            </button>
+        </div>
+    </div>
+</div>"
+`;
+
 exports[`Check stories > Components/Bar > Story HeaderWithSubheader > Should match snapshot 1`] = `
 "
-<div><b>Default (desktop)</b></div>
-<br>
 <div class=\\"fd-bar fd-bar--header-with-subheader\\">
     <div class=\\"fd-bar__left\\">
         <div class=\\"fd-bar__element\\">
@@ -2407,10 +2316,7 @@ exports[`Check stories > Components/Bar > Story Responsive > Should match snapsh
 `;
 
 exports[`Check stories > Components/Bar > Story Subheader > Should match snapshot 1`] = `
-"
-<div><b>Default (desktop)</b></div>
-<br>
-<div class=\\"fd-bar fd-bar--subheader\\">
+"<div class=\\"fd-bar fd-bar--subheader\\">
     <div class=\\"fd-bar__left\\">
         <div class=\\"fd-bar__element\\">
             <button aria-label=\\"button\\" class=\\"fd-button fd-button--transparent fd-button--compact\\">
@@ -2437,32 +2343,11 @@ exports[`Check stories > Components/Bar > Story Subheader > Should match snapsho
         </div>
     </div>
 </div>
-<br><br>
-<div><b>Cozy (tablet and mobile)</b></div>
-<br>
-<div class=\\"fd-bar fd-bar--subheader fd-bar--cozy\\">
-    <div class=\\"fd-bar__middle\\">
-        <div class=\\"fd-bar__element\\">
-            <div class=\\"fd-form-item\\">
-                <div class=\\"fd-segmented-button\\" role=\\"group\\" aria-label=\\"Group label\\">
-                    <button aria-label=\\"button\\" class=\\"fd-button fd-button--toggled\\" aria-pressed=\\"true\\">
-                        <i class=\\"sap-icon--email\\"></i>
-                    </button>
-                    <button aria-label=\\"button\\" class=\\"fd-button\\" aria-pressed=\\"false\\">
-                        <i class=\\"sap-icon--iphone\\"></i>
-                    </button>
-                    <button aria-label=\\"button\\" class=\\"fd-button\\" aria-pressed=\\"false\\">
-                        <i class=\\"sap-icon--notification-2\\"></i>
-                    </button>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+
 <br><br>
 <div><b>Full width element</b></div>
 <br>
-<div class=\\"fd-bar fd-bar--subheader fd-bar--cozy\\">
+<div class=\\"fd-bar fd-bar--subheader\\">
     <div class=\\"fd-bar__middle\\">
         <div class=\\"fd-bar__element fd-bar__element--full-width\\">
             <input class=\\"fd-input fd-input--compact fd-input-group__input\\" type=\\"text\\" id=\\"\\" name=\\"\\" value=\\"1234568910\\" aria-label=\\"input\\">
@@ -33448,29 +33333,29 @@ exports[`Check stories > Components/Tool Header > Story ResponsivePaddings > Sho
 
 exports[`Check stories > Components/Toolbar > Story Alignment > Should match snapshot 1`] = `
 "<h3>Left and right-aligned</h3>
-<div class=\\"fd-toolbar\\">
+<div class=\\"fd-toolbar\\" role=\\"toolbar\\" aria-label=\\"Left and right-aligned toolbar\\">
     <button class=\\"fd-button fd-button--positive\\">Accept</button>
     <span class=\\"fd-toolbar__spacer\\"></span>
     <button class=\\"fd-button fd-button--reject\\">Reject</button>
 </div>
 <h3>Left-aligned</h3>
-<div class=\\"fd-toolbar\\">
+<div class=\\"fd-toolbar\\" role=\\"toolbar\\" aria-label=\\"Left-aligned toolbar\\">
     <button class=\\"fd-button fd-button--positive\\">Accept</button>
     <button class=\\"fd-button fd-button--reject\\">Reject</button>
 </div>
 <h3>Centered</h3>
-<div class=\\"fd-toolbar\\">
+<div class=\\"fd-toolbar\\" role=\\"toolbar\\" aria-label=\\"Centered toolbar\\">
     <span class=\\"fd-toolbar__spacer\\"></span>
     <button class=\\"fd-button\\">Centered</button>
     <span class=\\"fd-toolbar__spacer\\"></span>
 </div>
 <h3>Right-aligned</h3>
-<div class=\\"fd-toolbar\\">
+<div class=\\"fd-toolbar\\" role=\\"toolbar\\" aria-label=\\"Right-aligned toolbar\\">
     <span class=\\"fd-toolbar__spacer\\"></span>
     <button class=\\"fd-button\\">Right-aligned</button>
 </div>
 <h3>Left, center, and right-aligned</h3>
-<div class=\\"fd-toolbar\\">
+<div class=\\"fd-toolbar\\" role=\\"toolbar\\" aria-label=\\"Left, center, and right-aligned toolbar\\">
     <button class=\\"fd-button\\">Left-aligned</button>
     <span class=\\"fd-toolbar__spacer\\"></span>
     <button class=\\"fd-button\\">Centered</button>
@@ -33478,7 +33363,7 @@ exports[`Check stories > Components/Toolbar > Story Alignment > Should match sna
     <button class=\\"fd-button\\">Right-aligned</button>
 </div>
 <h3>Spacers</h3>
-<div class=\\"fd-toolbar\\">
+<div class=\\"fd-toolbar\\" role=\\"toolbar\\" aria-label=\\"Spacers toolbar\\">
     <button class=\\"fd-button\\">Left-aligned</button>
     <span class=\\"fd-toolbar__spacer\\"></span>
     <button class=\\"fd-button\\">Inside</button>
@@ -33488,7 +33373,7 @@ exports[`Check stories > Components/Toolbar > Story Alignment > Should match sna
     <button class=\\"fd-button\\">Right-aligned</button>
 </div>
 <h3>Spacers with fixed width</h3>
-<div class=\\"fd-toolbar\\">
+<div class=\\"fd-toolbar\\" role=\\"toolbar\\" aria-label=\\"Spacers with fixed width toolbar\\">
     <button class=\\"fd-button fd-button--transparent\\">Accept</button>
     <button class=\\"fd-button fd-button--transparent\\">Reject</button>
     <span class=\\"fd-toolbar__spacer fd-toolbar__spacer--fixed\\" style=\\"width:50px;\\"></span>
@@ -33500,8 +33385,8 @@ exports[`Check stories > Components/Toolbar > Story Alignment > Should match sna
 `;
 
 exports[`Check stories > Components/Toolbar > Story Overflow > Should match snapshot 1`] = `
-"<div style=\\"height:250px\\">
-    <div class=\\"fd-toolbar\\">
+"<div style=\\"height:450px\\">
+    <div class=\\"fd-toolbar\\" role=\\"toolbar\\" aria-label=\\"Toolbar\\">
         <span>Products (34)</span>
         <button class=\\"fd-button fd-button--transparent\\">Create</button>
         <span class=\\"fd-toolbar__spacer\\"> </span>
@@ -33530,6 +33415,9 @@ exports[`Check stories > Components/Toolbar > Story Overflow > Should match snap
                     <span class=\\"fd-toolbar__separator\\"></span>
                     <button class=\\"fd-button fd-button--transparent fd-toolbar__overflow-button\\">Assign</button>
                     <button class=\\"fd-button fd-button--transparent fd-toolbar__overflow-button\\">Exit</button>
+                    <span class=\\"fd-toolbar__separator\\"></span>
+                    <label class=\\"fd-label fd-toolbar__overflow-label\\">Label</label>
+                    <label class=\\"fd-form-label fd-toolbar__overflow-label\\">Form Label</label>
                 </div>
             </div>
         </div>
@@ -33538,7 +33426,7 @@ exports[`Check stories > Components/Toolbar > Story Overflow > Should match snap
 `;
 
 exports[`Check stories > Components/Toolbar > Story Primary > Should match snapshot 1`] = `
-"<div class=\\"fd-toolbar\\">
+"<div class=\\"fd-toolbar\\" role=\\"toolbar\\" aria-label=\\"Toolbar\\">
     <span class=\\"fd-toolbar__spacer\\"> </span>
     <button class=\\"fd-button fd-button--transparent\\">New</button>
     <button class=\\"fd-button fd-button--transparent\\">Open</button>
@@ -33560,13 +33448,14 @@ exports[`Check stories > Components/Toolbar > Story Primary > Should match snaps
 
 exports[`Check stories > Components/Toolbar > Story Separator > Should match snapshot 1`] = `
 "
-<div class=\\"fd-toolbar\\">
+<div class=\\"fd-toolbar\\" role=\\"toolbar\\" aria-label=\\"Toolbar\\">
     <button class=\\"fd-button fd-button--positive\\">Accept</button>
     <span class=\\"fd-toolbar__separator\\"></span>
     <button class=\\"fd-button fd-button--reject\\">Reject</button>
     <span class=\\"fd-toolbar__separator\\"></span>
 </div>
-<div class=\\"fd-toolbar fd-toolbar--solid\\">
+<br><br>
+<div class=\\"fd-toolbar fd-toolbar--solid\\" role=\\"toolbar\\" aria-label=\\"Toolbar\\">
     <span class=\\"fd-toolbar__spacer\\"></span>
     <span class=\\"fd-toolbar__separator\\"></span>
     <button class=\\"fd-button fd-button--transparent\\" aria-label=\\"Survey\\">
@@ -33586,7 +33475,7 @@ exports[`Check stories > Components/Toolbar > Story Separator > Should match sna
 exports[`Check stories > Components/Toolbar > Story Types > Should match snapshot 1`] = `
 "<div style=\\"padding: 1rem\\">
     <h3>Solid</h3>
-    <div class=\\"fd-toolbar fd-toolbar--solid\\">
+    <div class=\\"fd-toolbar fd-toolbar--solid\\" role=\\"toolbar\\" aria-label=\\"Solid toolbar\\">
         <span>Products (23)</span>
         <button class=\\"fd-button fd-button--transparent\\">Create</button>
         <span class=\\"fd-toolbar__spacer \\"> </span>
@@ -33604,7 +33493,7 @@ exports[`Check stories > Components/Toolbar > Story Types > Should match snapsho
         </button>
     </div>
     <h3>Transparent</h3>
-    <div class=\\"fd-toolbar fd-toolbar--clear fd-toolbar--transparent\\">
+    <div class=\\"fd-toolbar fd-toolbar--transparent\\" role=\\"toolbar\\" aria-label=\\"Transparent toolbar\\">
         <button class=\\"fd-button fd-button--transparent\\">Create</button>
         <button class=\\"fd-button fd-button--transparent\\">Save</button>
         <span class=\\"fd-toolbar__spacer\\"> </span>
@@ -33622,7 +33511,7 @@ exports[`Check stories > Components/Toolbar > Story Types > Should match snapsho
         </button>
     </div>
     <h3>Auto</h3>
-    <div class=\\"fd-toolbar fd-toolbar--clear fd-toolbar--auto\\">
+    <div class=\\"fd-toolbar fd-toolbar--auto\\" role=\\"toolbar\\" aria-label=\\"Auto toolbar\\">
         <button class=\\"fd-button fd-button--transparent\\">Create</button>
         <span class=\\"fd-toolbar__spacer\\"> </span>
         <button class=\\"fd-button fd-button--transparent\\">Edit</button>
@@ -33638,12 +33527,48 @@ exports[`Check stories > Components/Toolbar > Story Types > Should match snapsho
             <i class=\\"sap-icon--pie-chart\\"></i>
         </button>
     </div>
-    <h3>Info</h3>
-    <div class=\\"fd-toolbar fd-toolbar--info\\">3 item selected</div>
-    <br>
-    <div class=\\"fd-toolbar fd-toolbar--info fd-toolbar--active\\">3 item selected</div>
+    <h3>Clear</h3>
+    <div class=\\"fd-toolbar fd-toolbar--clear\\" role=\\"toolbar\\" aria-label=\\"Clear toolbar\\">
+        <span class=\\"fd-toolbar__spacer \\"> </span>
+        <button class=\\"fd-button fd-button--transparent\\">Edit</button>
+        <button class=\\"fd-button fd-button--transparent\\">Delete</button>
+        <span class=\\"fd-toolbar__separator\\"></span>
+        <button class=\\"fd-button fd-button--transparent\\" aria-label=\\"Survey\\">
+            <i class=\\"sap-icon--survey\\"></i>
+        </button>
+        <button class=\\"fd-button fd-button--transparent\\" aria-label=\\"Pool\\">
+            <i class=\\"sap-icon--pool\\"></i>
+        </button>
+        <button class=\\"fd-button fd-button--transparent\\" aria-label=\\"Chart\\">
+            <i class=\\"sap-icon--pie-chart\\"></i>
+        </button>
+    </div>
+    <h3>Info (not active)</h3>
+    <div class=\\"fd-toolbar fd-toolbar--info\\" role=\\"toolbar\\" aria-label=\\"Info, not active toolbar\\">
+        <span>3 item selected</span>
+        <span class=\\"fd-toolbar__spacer\\"></span>
+        <i class=\\"sap-icon--undo\\"></i>
+    </div>
+    <h3>Info (active)</h3>
+    <div class=\\"fd-toolbar fd-toolbar--info fd-toolbar--active\\" tabindex=\\"0\\" role=\\"toolbar\\" aria-label=\\"Info, active toolbar\\">
+        <span>3 item selected</span>
+        <span class=\\"fd-toolbar__spacer\\"></span>
+        <i class=\\"sap-icon--undo\\"></i>
+    </div>
+    <h3>Info (active, hover state)</h3>
+    <div class=\\"fd-toolbar fd-toolbar--info fd-toolbar--active is-hover\\" tabindex=\\"0\\" role=\\"toolbar\\" aria-label=\\"Info, active toolbar, hover state\\">
+        <span>3 item selected</span>
+        <span class=\\"fd-toolbar__spacer\\"></span>
+        <i class=\\"sap-icon--undo\\"></i>
+    </div>
+    <h3>Info (active, active state)</h3>
+    <div class=\\"fd-toolbar fd-toolbar--info fd-toolbar--active is-active\\" tabindex=\\"0\\" role=\\"toolbar\\" aria-label=\\"Info, active toolbar, active state\\">
+        <span>3 item selected</span>
+        <span class=\\"fd-toolbar__spacer\\"></span>
+        <i class=\\"sap-icon--undo\\"></i>
+    </div>
     <h3>Title</h3>
-    <div class=\\"fd-toolbar fd-toolbar--title\\">
+    <div class=\\"fd-toolbar fd-toolbar--title\\" role=\\"toolbar\\" aria-label=\\"Title toolbar\\">
         <h4 class=\\"fd-title fd-title--h4 fd-toolbar__title\\">Products (104)</h4>
         <span class=\\"fd-toolbar__spacer\\"></span>
         <button class=\\"fd-button fd-button--transparent\\">Save</button>
@@ -42655,7 +42580,7 @@ exports[`Check stories > Layouts/Page > Story BasicPage > Should match snapshot 
 exports[`Check stories > Layouts/Page > Story ResponsivePage > Should match snapshot 1`] = `
 "<main class=\\"fd-page fd-page--home fd-page--list\\">
     <header>
-        <div class=\\"fd-bar fd-bar--home-page-xl fd-bar--header-with-subheader\\">
+        <div class=\\"fd-bar fd-bar--home-page-xl fd-bar--header\\">
             <div class=\\"fd-bar__left\\">
                 <div class=\\"fd-bar__element\\">
                     <button class=\\"fd-button fd-button--transparent\\" aria-label=\\"Go back\\">
