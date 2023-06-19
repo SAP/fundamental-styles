@@ -51,7 +51,7 @@ jobs:
               uses: ./.github/actions/npm-publish
               with:
                   packagePaths: 'dist/packages/styles,dist/packages/common-css,dist/packages/icons,dist/packages/theming-preview,dist/packages/cx'
-                  isHotfix: ${{ steps.ciEnv.outputs.isLatest }}
+                  isHotfix: false
                   token: ${{ secrets.NPM_TOKEN }}
 
             - uses: ./.github/actions/set-up-git
