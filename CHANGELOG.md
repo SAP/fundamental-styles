@@ -1,3 +1,12 @@
+# [0.30.0-rc.6](https://github.com/SAP/fundamental-styles/compare/v0.30.0-rc.5...v0.30.0-rc.6) (2023-06-19)
+
+
+### Features
+
+* **styles:** add Horizon 2023 updates for Icon tab Bar [ci visual] ([#4602](https://github.com/SAP/fundamental-styles/issues/4602)) ([1df6652](https://github.com/SAP/fundamental-styles/commit/1df6652e33f9ffafb273540d7827df073dbb503f))
+
+
+
 # [0.30.0-rc.5](https://github.com/SAP/fundamental-styles/compare/v0.30.0-rc.4...v0.30.0-rc.5) (2023-06-19)
 
 
