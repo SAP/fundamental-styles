@@ -21,6 +21,9 @@ jobs:
                   fetch-depth: 0
                   token: ${{ secrets.GHACTIONS }}
 
+            - name: Change flag perm
+              run: chmod +x .ci-env/flags.sh
+
             - name: Using CI env flags
               id: ciEnv
               run: .ci-env/flags.sh
@@ -78,11 +81,3 @@ jobs:
                   prerelease: ${{ steps.bumpVersion.outputs.isPrerelease }}
                   tag: v${{ steps.bumpVersion.outputs.newVersion }}
                   body: ${{ steps.generate_body.outputs.generatedReleaseNotes }}
-
-            - if: ${{ steps.ciEnv.outputs.isLatest }}
-              name: Update version on main
-              uses: ./.github/actions/update-version-on-main
-              with:
-                  name: ${{ secrets.GH_NAME }}
-                  email: ${{ secrets.GH_EMAIL }}
-                  token: ${{ secrets.GHACTIONS }}
