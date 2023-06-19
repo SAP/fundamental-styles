@@ -15,6 +15,8 @@ import iconOnlyExampleHtml from "./icon-only.example.html?raw";
 import counterExampleHtml from "./counter.example.html?raw";
 import textOnlySemanticExampleHtml from "./text-only-semantic.example.html?raw";
 import textOnlyExampleHtml from "./text-only.example.html?raw";
+import textOnlyClosableExampleHtml from "./text-only-closable.example.html?raw";
+
 import '../../../src/icon.scss';
 import '../../../src/icon-tab-bar.scss';
 import '../../../src/popover.scss';
@@ -124,11 +126,7 @@ export const Filter = () => filterExampleHtml;
 Filter.parameters = {
   docs: {
     description: {
-      story: `The tab bar as a filter has two parts: <br>
-        - An “all” tab on the left - shows the total number of items, and describes the type of item (for example, 189 Products). <br>
-        -  Tabs for specific filters - the tab text indicates the filter attribute. It is recommended to show a counter on every tab.
-        <br>
-        You need to add the \`fd-icon-tab-bar--filter\` modifier class for this type of tabs.`
+      story: `The tab bar as a filter has two parts: <br>- An “all” tab on the left - shows the total number of items, and describes the type of item (for example, 189 Products).<br>-  Tabs for specific filters - the tab text indicates the filter attribute. It is recommended to show a counter on every tab.<br>You need to add the \`fd-icon-tab-bar--filter\` modifier class for this type of tabs.`
     }
   }
 };
@@ -227,6 +225,19 @@ DragAndDrop.parameters = {
         \`fd-icon-tab-bar__item--dnd-separator\` adds a visual indicator before the tab, to which is applied, when element that is being dragged can be insterted before particular one.
         When used with the subtab, separator will be vertical;
         \`fd-icon-tab-bar__item--dnd-separator-end\` - same as above. Being applied after the tab, to which is applied
+
+        `
+    }
+  }
+};
+
+
+export const TextOnlyClosable = () => textOnlyClosableExampleHtml;
+TextOnlyClosable.storyName = 'Closable Tabs';
+TextOnlyClosable.parameters = {
+  docs: {
+    description: {
+      story: `For closable tabs add the \`.fd-icon-tab-bar__item--closable\` modifier class to the \`.fd-icon-tab-bar__item\`. The close button is placed inside a button container, responsible for the proper spacing between the elements.<br>Closable tabs can also be moved into the overflow. There the close button remains shown for each tab. The modifier class in this case is \`.fd-icon-tab-bar__list-item--closable\` added to the list item with base class \`.fd-icon-tab-bar__list-item\`.
 
         `
     }

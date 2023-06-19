@@ -1,0 +1,17 @@
+:root {
+  --fdIconTabBar_Overflow_Button_Background: var(--sapButton_Background);
+  --fdIconTabBar_Overflow_Button_Border_Color: var(--sapButton_BorderColor);
+  --fdIconTabBar_Overflow_Button_Text_Color: var(--fdIcon_Tab_Bar_Overflow_Button_Text_Color);
+  --fdIconTabBar_Overflow_Button_Icon_Color: var(--fdIcon_Tab_Bar_Overflow_Button_Icon_Color);
+  --fdIconTabBar_Tag_Color: var(--fdIcon_Tab_Bar_Label_Color);
+  --fdIconTabBar_Tag_Icon_Color: var(--fdIcon_Tab_Bar_Label_Color);
+  --fdIconTabBar_Tag_Icon_Content: '';
+  --fdIconTabBar_Icon_Color: var(--fdIcon_Tab_Bar_Inactive_Tab_Icon_Color);
+  --fdIconTabBar_Icon_Border_Color: var(--fdIcon_Tab_Bar_Icon_Border_Color);
+  --fdIconTabBar_Icon_Background: transparent;
+  --fdIconTabBar_Selection_Bar_Color: var(--fdIcon_Tab_Bar_Selection_Bar_Color);
+  --fdIconTabBar_Badge_Background: var(--fdIcon_Tab_Bar_Badge_Color);
+  --fdIconTabBar_Badge_Background_After: var(--sapContent_BadgeBackground);
+  --fdIconTabBar_Arrow_Color: var(--sapTextColor);
+  --fdIconTabBar_Multi_Click_Separator_Background: var(--sapTextColor);
+}
