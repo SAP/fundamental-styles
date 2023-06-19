@@ -1,3 +1,12 @@
+## [0.29.2](https://github.com/SAP/fundamental-styles/compare/v0.29.1...v0.29.2) (2023-06-19)
+
+
+### Bug Fixes
+
+* **styles:** icon name ([5d8a7ee](https://github.com/SAP/fundamental-styles/commit/5d8a7ee8225f19cdd658254ab6203e2433c84b15))
+
+
+
 ## [0.29.1](https://github.com/SAP/fundamental-styles/compare/v0.29.1-rc.1...v0.29.1) (2023-06-08)
 
 
