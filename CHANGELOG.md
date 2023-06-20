@@ -1,3 +1,17 @@
+# [0.30.0-rc.7](https://github.com/SAP/fundamental-styles/compare/v0.30.0-rc.6...v0.30.0-rc.7) (2023-06-20)
+
+
+### Bug Fixes
+
+* **styles:** checkbox refactor and fix the problem with icons in FF ([#4608](https://github.com/SAP/fundamental-styles/issues/4608)) ([fa8711f](https://github.com/SAP/fundamental-styles/commit/fa8711f96e8c00c9b1958ca765d46153ef99403c))
+
+
+### BREAKING CHANGES
+
+* **styles:** change in the label markup. A new span element with class fd-checkbox__checkmark has been introduced
+
+
+
 # [0.30.0-rc.6](https://github.com/SAP/fundamental-styles/compare/v0.30.0-rc.5...v0.30.0-rc.6) (2023-06-19)
 
 
