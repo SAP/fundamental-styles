@@ -1,6 +1,7 @@
 import errorExampleHtml from "./error.example.html?raw";
 import horizontalCarouselExampleHtml from "./horizontal-carousel.example.html?raw";
 import carouselNoNavigationExampleHtml from "./carousel-no-navigation.example.html?raw";
+import carouselBackgroundsExampleHtml from "./carousel-backgrounds.example.html?raw";
 import carouselTopExampleHtml from "./carousel-top.example.html?raw";
 import carouselBottomExampleHtml from "./carousel-bottom.example.html?raw";
 import '../../../src/carousel.scss';
@@ -36,13 +37,15 @@ To ensure that the carousel is accessible, a div element with class \`fd-carouse
 ## Structure
 
 * \`fd-carousel\` The carousel container.
-  * \`fd-carousel__content\` The carousel content.
+  * \`fd-carousel__content\` The carousel content. <b>Modifier classes:</b> \`fd-carousel__content--horizontal\`, \`fd-carousel__content--solid\`, and  \`fd-carousel__content--transparent\`.
     * \`fd-carousel__button\` The carousel button in content.
     * \`fd-carousel__button--left\` The carousel button in content for previous page.
     * \`fd-carousel__button--right\` The carousel button in content for next page.
+    * \`fd-carousel__button--up\` The carousel button in content for previous page in vertical mode.
+    * \`fd-carousel__button--down\` The carousel button in content for next page in vertical mode.
     * \`fd-carousel__slides\` The carousel slides.
       * \`fd-carousel__item\` The carousel item.
-  * \`fd-carousel__page-indicator-container\` The carousel page indicator container.
+  * \`fd-carousel__page-indicator-container\` The carousel page indicator container. <br> <b>Modifier classes:</b> \`fd-carousel__page-indicator-container--translucent\`, \`fd-carousel__page-indicator-container--transparent\` and \`fd-carousel__page-indicator-container--no-border\`
     * \`fd-carousel__button\` The carousel button.
     * \`fd-carousel__button--left\` The carousel button for previous page.
     * \`fd-carousel__button--right\` The carousel button for next page.
@@ -81,6 +84,17 @@ CarouselNoNavigation.parameters = {
     }
   }
 };
+
+export const CarouselBackgrounds = () => carouselBackgroundsExampleHtml;
+CarouselBackgrounds.storyName = 'Background modifiers';
+CarouselBackgrounds.parameters = {
+  docs: {
+    description: {
+      story: `The background of the Carousel Content and Page Indicator Container can be changed by modifier classes. <br><b>Carousel Content</b><br>The <b>default</b> background for the Carousel Content is <b>translucent</b>. For <b>transparent</b> background apply \`fd-carousel__content--transparent\` modifier class. For <b>solid</b> background apply \`fd-carousel__content--solid\` modifier class to the \`fd-carousel__content\` base class.<br><br><b>Page Indicator Container</b><br>The <b>default</b> background for the container is <b>solid</b>. For <b>transparent</b> background apply \`fd-carousel__page-indicator-container--transparent\` modifier class. For <b>translucent</b> background apply \`fd-carousel__page-indicator-container--translucent\` modifier class to the \`fd-carousel__page-indicator-container\` base class. The  \`fd-carousel__page-indicator-container--no-border\` will remove the border top or bottom of the container. `
+    }
+  }
+};
+
 export const HorizontalCarousel = () => horizontalCarouselExampleHtml;
 HorizontalCarousel.storyName = 'Items in horizontal direction';
 HorizontalCarousel.parameters = {

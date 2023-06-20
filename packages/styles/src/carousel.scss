@@ -2,45 +2,74 @@
 @import "./mixins";
 
 $block: #{$fd-namespace}-carousel;
+$blockButton: #{$fd-namespace}-carousel__button;
 
-$fd-carousel-button-size: 2.125rem !default;
-$fd-carousel-touchable-button-size: 2.625rem !default;
 $fd-carousel-button-content-offset: 0.5rem !default;
-$fd-carousel-dot-active-size: 0.5rem !default;
 
 .#{$block} {
+  --fdCarousel_Button_Display: block;
+  --fdCarousel_Content_Background: var(--sapBackgroundColor);
+  --fdCarousel_Page_Indicator_Margin: var(--fdCarousel_Dot_Margin);
+  --fdCarousel_Page_Indicator_Size: var(--fdCarousel_Dot_Size);
+  --fdCarousel_Page_Indicator_Background_Color: var(--fdCarousel_Dot_Background);
+  --fdCarousel_Page_Indicator_Border: var(--fdCarousel_Dot_Border);
+  --fdCarousel_Page_Indicator_Container_Background: var(--sapPageFooter_Background);
+
+  @mixin fd-carousel-content-button-hover() {
+    @include fd-hover() {
+      .#{$block}__content {
+        .#{$blockButton} {
+          @content;
+        }
+      }
+    }
+  }
+
   @include fd-reset();
   @include fd-flex(column);
   @include fd-fiori-focus(0);
+
+  @include fd-carousel-content-button-hover() {
+    --fdCarousel_Button_Display: block;
+  }
 
   width: 100%;
   min-width: 15.5rem;
   height: 100%;
   max-width: 100%;
 
-  @include fd-hover() {
-    .#{$block}__content {
-      .#{$block}__button {
-        display: block;
-      }
-    }
-  }
-
-  .#{$block}__content {
+  &__content {
     @include fd-reset();
 
-    background: var(--fdCarousel_Content_Background);
     flex-basis: 100%;
-    position: relative;
     overflow: hidden;
+    position: relative;
+    background: var(--fdCarousel_Content_Background);
 
     .#{$block}__button {
-      box-shadow: var(--sapContent_Shadow1);
-      position: absolute;
+      --fdCarousel_Button_Display: none;
+
       margin: 0;
-      top: calc(50%);
-      transform: translateY(-50%);
-      display: none;
+      position: absolute;
+      box-shadow: var(--sapContent_Shadow1);
+
+      &--left,
+      &--right {
+        top: calc(50%);
+        transform: translateY(-50%);
+      }
+
+      &--up,
+      &--down {
+        left: calc(50%);
+        transform: translateX(-50%);
+
+        @include fd-rtl() {
+          & > [class*=sap-icon] {
+            transform: rotate(0deg);
+          }
+        }
+      }
 
       &--left {
         @include fd-set-position-left($fd-carousel-button-content-offset);
@@ -48,6 +77,14 @@ $fd-carousel-dot-active-size: 0.5rem !default;
 
       &--right {
         @include fd-set-position-right($fd-carousel-button-content-offset);
+      }
+
+      &--up {
+        top: $fd-carousel-button-content-offset;
+      }
+
+      &--down {
+        bottom: $fd-carousel-button-content-offset;
       }
     }
 
@@ -70,6 +107,14 @@ $fd-carousel-dot-active-size: 0.5rem !default;
         width: auto;
         min-width: auto;
       }
+    }
+
+    &--solid {
+      --fdCarousel_Content_Background: var(--sapGroup_ContentBackground);
+    }
+
+    &--transparent {
+      --fdCarousel_Content_Background: transparent;
     }
   }
 
@@ -110,12 +155,29 @@ $fd-carousel-dot-active-size: 0.5rem !default;
     min-height: 2.75rem;
     max-height: 3.5rem;
     padding: 0.375rem 0.5rem;
-    background: var(--sapPageFooter_Background);
+    background: var(--fdCarousel_Page_Indicator_Container_Background);
     border-top: var(--fdCarousel_Pagination_Border);
 
     &:first-child {
       border-top: none;
       border-bottom: var(--fdCarousel_Pagination_Border);
+    }
+
+    &--translucent {
+      --fdCarousel_Page_Indicator_Container_Background: var(--sapBackgroundColor);
+    }
+
+    &--transparent {
+      --fdCarousel_Page_Indicator_Container_Background: transparent;
+    }
+
+    &--no-border {
+      border-top-color: transparent;
+
+      &:first-child {
+        border-top: none;
+        border-bottom-color: transparent;
+      }
     }
   }
 
@@ -130,21 +192,19 @@ $fd-carousel-dot-active-size: 0.5rem !default;
 
   &__page-indicator {
     @include fd-reset();
+    @include fd-set-square(var(--fdCarousel_Page_Indicator_Size));
 
-    list-style-type: none;
-    margin: var(--fdCarousel_Dot_Margin);
-    width: var(--fdCarousel_Dot_Size);
-    height: var(--fdCarousel_Dot_Size);
     border-radius: 50%;
-    background-color: var(--fdCarousel_Dot_Background);
-    border: var(--fdCarousel_Dot_Border);
+    list-style-type: none;
+    margin: var(--fdCarousel_Page_Indicator_Margin);
+    border: var(--fdCarousel_Page_Indicator_Border);
+    background-color: var(--fdCarousel_Page_Indicator_Background_Color);
 
     &--active {
-      margin: 0 0.25rem;
-      width: $fd-carousel-dot-active-size;
-      height: $fd-carousel-dot-active-size;
-      background-color: var(--fdCarousel_Dot_Selected_Background);
-      border: var(--fdCarousel_Dot_Selected_Border);
+      --fdCarousel_Page_Indicator_Size: 0.5rem;
+      --fdCarousel_Page_Indicator_Margin: 0 0.25rem;
+      --fdCarousel_Page_Indicator_Border: var(--fdCarousel_Dot_Selected_Border);
+      --fdCarousel_Page_Indicator_Background_Color: var(--fdCarousel_Dot_Selected_Background);
     }
   }
 
@@ -152,24 +212,22 @@ $fd-carousel-dot-active-size: 0.5rem !default;
     @include fd-reset();
     @include fd-ellipsis();
 
-    color: var(--sapPageFooter_TextColor);
     text-align: center;
+    color: var(--sapPageFooter_TextColor);
   }
 
-  .#{$block}__button {
+  .#{$blockButton} {
     @include fd-flex-center();
-    @include fd-set-width($fd-carousel-button-size);
-    @include fd-set-height($fd-carousel-button-size);
+    @include fd-set-square(2.125rem);
 
-    border-radius: 50%;
     padding: 0;
     margin: 0.25rem;
+    border-radius: 50%;
+    display: var(--fdCarousel_Button_Display);
 
     &::before {
-      left: -0.25rem;
-      right: -0.25rem;
-      bottom: -0.25rem;
-      top: -0.25rem;
+      @include fd-set-equal-positions(-0.25rem);
+
       width: auto;
     }
 
@@ -182,19 +240,21 @@ $fd-carousel-dot-active-size: 0.5rem !default;
     @include fd-hover() {
       box-shadow: var(--sapContent_Shadow1);
     }
+
+    @include fd-focus() {
+      &::after {
+        --fdButton_Focus_Border_Radius: 50%;
+      }
+    }
   }
 
   &--no-navigation {
-    .#{$block}__button {
-      display: none;
+    .#{$blockButton} {
+      --fdCarousel_Button_Display: none;
     }
 
-    @include fd-hover() {
-      .#{$block}__content {
-        .#{$block}__button {
-          display: none;
-        }
-      }
+    @include fd-carousel-content-button-hover() {
+      --fdCarousel_Button_Display: none;
     }
   }
 }
