@@ -1,3 +1,12 @@
+# [0.30.0-rc.11](https://github.com/SAP/fundamental-styles/compare/v0.30.0-rc.10...v0.30.0-rc.11) (2023-06-20)
+
+
+### Bug Fixes
+
+* **styles:** add Horizon 2023 updates for Carousel [ci visual] ([#4626](https://github.com/SAP/fundamental-styles/issues/4626)) ([925acac](https://github.com/SAP/fundamental-styles/commit/925acaca7d11d12f9442895ce1fdeac1e093ec61))
+
+
+
 # [0.30.0-rc.10](https://github.com/SAP/fundamental-styles/compare/v0.30.0-rc.9...v0.30.0-rc.10) (2023-06-20)
 
 
