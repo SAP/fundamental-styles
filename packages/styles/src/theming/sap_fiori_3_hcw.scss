@@ -36,6 +36,7 @@
 @import "./common/avatar/sap_fiori_hc";
 @import "./common/avatar-group/sap_fiori";
 @import "./common/message-popover/sap_fiori";
+@import "./common/token/sap_fiori_hc";
 @import "./sap_fiori_3_hcw/css_variables";
 
 :root {
@@ -55,21 +56,6 @@
   --fdDynamicPage_Button_Group_Background: var(--sapObjectHeader_BorderColor);
   --fdDynamicPage_Content_List_Background: var(--sapBackgroundColor);
   --fdDynamicPage_Content_Transparent_Background: var(--sapBackgroundColor);
-
-  /* Token */
-  --fdToken_Text_Shadow: none;
-  --fdToken_Border_Radius: 0.25rem;
-  --fdToken_Text_Color: var(--sapTextColor);
-  --fdToken_Padding_Left: 0.3125rem;
-  --fdToken_Background_Color_Hover: var(--sapButton_Hover_Background);
-  --fdToken_Border_Color_Hover: var(--sapButton_Hover_BorderColor);
-  --fdToken_Box_Shadow_Hover: none;
-  --fdToken_Box_Shadow_Selected_Hover: none;
-  --fdToken_Outline_Offset: -0.1875rem;
-  --fdToken_Outline_Offset_Compact: -0.1875rem;
-  --fdToken_Background_Color_Read_Only: var(--sapField_ReadOnly_Background);
-  --fdToken_Border_Color_Read_Only: var(--sapField_ReadOnly_BorderColor);
-  --fdToken_Border_Color_Selected_Focus: var(--sapContent_ContrastFocusColor);
 
   /* TODO: DEPRECATED Side-Nav */
   --fdSideNav_Text_Shadow: none;

@@ -32779,8 +32779,97 @@ exports[`Check stories > Components/Title > Story Wrapping > Should match snapsh
 "
 `;
 
-exports[`Check stories > Components/Token > Story CozyTokenizer > Should match snapshot 1`] = `
+exports[`Check stories > Components/Token > Story Primary > Should match snapshot 1`] = `
+"<style>
+    .docs-tokens {
+        width: 100%;
+    }
+    .docs_tokens_item_wrapper {
+        display: flex;
+    }
+    .docs-tokens-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+        column-gap: 0.1rem;
+        row-gap: 0.1rem;
+        padding: 1rem;
+        justify-items: right;
+        align-items: center;
+    }
+</style>
+
+
+<section class=\\"docs-tokens\\">
+    <div class=\\"docs-tokens-container\\">
+        <div></div>
+        <div>Regular</div>
+        <div>Selected</div>
+    </div>
+    <div class=\\"docs-tokens-container\\">
+        <div>Normal</div>
+        <span class=\\"fd-token\\" role=\\"button\\" tabindex=\\"0\\">
+            <span class=\\"fd-token__text\\">tokenopolis</span>
+            <button class=\\"fd-token__close\\" tabindex=\\"-1\\" aria-label=\\"Bibendum token close\\"></button>
+        </span>
+        <span class=\\"fd-token fd-token--selected\\" role=\\"button\\" tabindex=\\"0\\">
+            <span class=\\"fd-token__text\\">tokenopolis</span>
+            <button class=\\"fd-token__close\\" tabindex=\\"-1\\" aria-label=\\"Bibendum token close\\"></button>
+        </span>
+    </div>
+    <div class=\\"docs-tokens-container\\">
+        <div>Hover</div>
+        <span class=\\"fd-token is-hover\\" role=\\"button\\" tabindex=\\"0\\">
+            <span class=\\"fd-token__text\\">tokenopolis</span>
+            <button class=\\"fd-token__close\\" tabindex=\\"-1\\" aria-label=\\"Bibendum token close\\"></button>
+        </span>
+        <span class=\\"fd-token fd-token--selected is-hover\\" role=\\"button\\" tabindex=\\"0\\">
+            <span class=\\"fd-token__text\\">tokenopolis</span>
+            <button class=\\"fd-token__close\\" tabindex=\\"-1\\" aria-label=\\"Bibendum token close\\"></button>
+        </span>
+    </div>
+    <div class=\\"docs-tokens-container\\">
+        <div>Focus</div>
+        <span class=\\"fd-token is-focus\\" role=\\"button\\" tabindex=\\"0\\">
+            <span class=\\"fd-token__text\\">tokenopolis</span>
+            <button class=\\"fd-token__close\\" tabindex=\\"-1\\" aria-label=\\"Bibendum token close\\"></button>
+        </span>
+        <span class=\\"fd-token fd-token--selected is-focus\\" role=\\"button\\" tabindex=\\"0\\">
+            <span class=\\"fd-token__text\\">tokenopolis</span>
+            <button class=\\"fd-token__close\\" tabindex=\\"-1\\" aria-label=\\"Bibendum token close\\"></button>
+        </span>
+    </div>
+    <div class=\\"docs-tokens-container\\">
+        <div>Hover&Focus</div>
+        <span class=\\"fd-token is-hover is-focus\\" role=\\"button\\" tabindex=\\"0\\">
+            <span class=\\"fd-token__text\\">tokenopolis</span>
+            <button class=\\"fd-token__close\\" tabindex=\\"-1\\" aria-label=\\"Bibendum token close\\"></button>
+        </span>
+        <span class=\\"fd-token fd-token--selected is-hover is-focus\\" role=\\"button\\" tabindex=\\"0\\">
+            <span class=\\"fd-token__text\\">tokenopolis</span>
+            <button class=\\"fd-token__close\\" tabindex=\\"-1\\" aria-label=\\"Bibendum token close\\"></button>
+        </span>
+    </div>
+    <div class=\\"docs-tokens-container\\">
+        <div>Read-only</div>
+        <span class=\\"fd-token fd-token--readonly\\" role=\\"button\\" tabindex=\\"0\\">
+            <span class=\\"fd-token__text\\">tokenopolis</span>
+        </span>
+        <span></span>
+        <!-- <span class=\\"fd-token fd-token--selected fd-token--readonly\\" role=\\"button\\" tabindex=\\"0\\">
+            <span class=\\"fd-token__text\\">tokenopolis</span>
+        </span> -->
+    </div>
+</section>"
+`;
+
+exports[`Check stories > Components/Tokenizer > Story CozyTokenizer > Should match snapshot 1`] = `
 "<div class=\\"fd-tokenizer \\">
+    <div class=\\"fd-tokenizer__inner\\">
+        <input class=\\"fd-input fd-tokenizer__input\\" aria-label=\\"Tokenizer input\\" placeholder=\\"Type Ahead\\"/>
+    </div>
+</div>
+<br/><br/>
+<div class=\\"fd-tokenizer \\">
     <div class=\\"fd-tokenizer__inner\\">
         <span class=\\"fd-token\\" role=\\"button\\" tabindex=\\"0\\">
             <span class=\\"fd-token__text\\">
@@ -32811,7 +32900,7 @@ exports[`Check stories > Components/Token > Story CozyTokenizer > Should match s
                 Lorem
             </span>
         </span>
-        <input class=\\"fd-input fd-tokenizer__input\\" aria-label=\\"Tokenizer input\\"/>
+        <input class=\\"fd-input fd-tokenizer__input\\" aria-label=\\"Tokenizer input\\" placeholder=\\"Type Ahead\\"/>
     </div>
 </div>
 <br/><br/>
@@ -32852,59 +32941,7 @@ exports[`Check stories > Components/Token > Story CozyTokenizer > Should match s
 "
 `;
 
-exports[`Check stories > Components/Token > Story Primary > Should match snapshot 1`] = `
-"<span class=\\"fd-token\\" role=\\"button\\" tabindex=\\"0\\">
-    <span class=\\"fd-token__text\\">
-        Bibendum
-    </span>
-    <button class=\\"fd-token__close\\" tabindex=\\"-1\\" aria-label=\\"Bibendum token close\\"></button>
-</span>
-<span class=\\"fd-token\\" role=\\"button\\" tabindex=\\"0\\">
-    <span class=\\"fd-token__text\\">
-        Lorem
-    </span>
-    <button class=\\"fd-token__close\\" tabindex=\\"-1\\" aria-label=\\"Lorem token close\\"></button>
-</span>
-<span class=\\"fd-token\\" role=\\"button\\" tabindex=\\"0\\">
-    <span class=\\"fd-token__text\\">
-        Dolor
-    </span>
-    <button class=\\"fd-token__close\\" tabindex=\\"-1\\" aria-label=\\"Dolor token close\\"></button>
-</span>
-<span class=\\"fd-token\\" role=\\"button\\" tabindex=\\"0\\">
-    <span class=\\"fd-token__text\\">
-        Filter
-    </span>
-    <button class=\\"fd-token__close\\" tabindex=\\"-1\\" aria-label=\\"Filter token close\\"></button>
-</span>
-"
-`;
-
-exports[`Check stories > Components/Token > Story ReadOnlyToken > Should match snapshot 1`] = `
-"<span class=\\"fd-token fd-token--readonly\\" role=\\"button\\" tabindex=\\"0\\">
-    <span class=\\"fd-token__text\\">
-        Bibendum
-    </span>
-</span>
-<span class=\\"fd-token fd-token--readonly\\" role=\\"button\\" tabindex=\\"0\\">
-    <span class=\\"fd-token__text\\">
-        Lorem
-    </span>
-</span>
-<span class=\\"fd-token fd-token--readonly\\" role=\\"button\\" tabindex=\\"0\\">
-    <span class=\\"fd-token__text\\">
-        Dolor
-    </span>
-</span>
-<span class=\\"fd-token fd-token--readonly\\" role=\\"button\\" tabindex=\\"0\\">
-    <span class=\\"fd-token__text\\">
-        Filter
-    </span>
-</span>
-"
-`;
-
-exports[`Check stories > Components/Token > Story ScrollableTokenizer > Should match snapshot 1`] = `
+exports[`Check stories > Components/Tokenizer > Story ScrollableTokenizer > Should match snapshot 1`] = `
 "<div class=\\"fd-tokenizer fd-tokenizer--scrollable\\">
     <div class=\\"fd-tokenizer__inner\\" id=\\"tokenizer-scrollable\\">
         <span class=\\"fd-token\\" role=\\"button\\" tabindex=\\"0\\">
@@ -32969,34 +33006,6 @@ exports[`Check stories > Components/Token > Story ScrollableTokenizer > Should m
         <input class=\\"fd-input fd-tokenizer__input\\" aria-label=\\"Tokenizer input\\"/>
     </div>
 </div>
-"
-`;
-
-exports[`Check stories > Components/Token > Story Selected > Should match snapshot 1`] = `
-"<span class=\\"fd-token fd-token--selected\\" role=\\"button\\" tabindex=\\"0\\">
-    <span class=\\"fd-token__text\\">
-        Bibendum
-    </span>
-    <button class=\\"fd-token__close\\" tabindex=\\"-1\\" aria-label=\\"Bibendum token close\\"></button>
-</span>
-<span class=\\"fd-token fd-token--selected\\" role=\\"button\\" tabindex=\\"0\\">
-    <span class=\\"fd-token__text\\">
-        Lorem
-    </span>
-    <button class=\\"fd-token__close\\" tabindex=\\"-1\\" aria-label=\\"Lorem token close\\"></button>
-</span>
-<span class=\\"fd-token fd-token--selected\\" role=\\"button\\" tabindex=\\"0\\">
-    <span class=\\"fd-token__text\\">
-        Dolor
-    </span>
-    <button class=\\"fd-token__close\\" tabindex=\\"-1\\" aria-label=\\"Dolor token close\\"></button>
-</span>
-<span class=\\"fd-token fd-token--selected\\" role=\\"button\\" tabindex=\\"0\\">
-    <span class=\\"fd-token__text\\">
-        Filter
-    </span>
-    <button class=\\"fd-token__close\\" tabindex=\\"-1\\" aria-label=\\"Filter token close\\"></button>
-</span>
 "
 `;
 
