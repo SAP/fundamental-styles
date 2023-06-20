@@ -747,6 +747,15 @@
   min-width: $size;
 }
 
+@mixin fd-set-square($size) {
+  width: $size;
+  min-width: $size;
+  max-width: $size;
+  height: $size;
+  min-height: $size;
+  max-height: $size;
+}
+
 @mixin fd-scrollbar($borderRadius: '') {
   @include fd-focus() {
     outline: none;

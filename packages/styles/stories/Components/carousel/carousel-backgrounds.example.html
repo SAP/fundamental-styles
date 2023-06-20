@@ -1,11 +1,11 @@
 <div style="display: flex; flex-direction: column; align-items: center">
-    <h4>Navigation buttons in page indicator (focussed)</h4>
+    <h4>Transparent Carousel Content</h4>
 
-    <div class="fd-carousel is-focus" data-ride="carousel" style="margin-bottom: 3rem; max-width: 20rem; max-height: 15.5rem">
-        <div class="fd-carousel__content">
+    <div class="fd-carousel" data-ride="carousel" style="margin-bottom: 3rem; max-width: 20rem; max-height: 15.5rem">
+        <div class="fd-carousel__content fd-carousel__content--transparent">
             <div class="fd-carousel__slides">
                 <div class="fd-carousel__item fd-carousel__item--active">
-                    <img src="https://placehold.co/320x200" alt="first image" />
+                    <span style="width: 300px; height: 200px; display: flex;"></span>
                 </div>
             </div>
         </div>
@@ -43,12 +43,12 @@
         </div>
     </div>
 
-    <h4>Navigation buttons in page indicator (vertical)</h4>
+    <h4>Solid Carousel Content</h4>
     <div class="fd-carousel" data-ride="carousel" style="margin-bottom: 3rem; max-width: 20rem; max-height: 15.5rem">
-        <div class="fd-carousel__content">
+        <div class="fd-carousel__content fd-carousel__content--solid">
             <div class="fd-carousel__slides">
                 <div class="fd-carousel__item fd-carousel__item--active">
-                    <img src="https://placehold.co/320x200" alt="first image" />
+                    <span style="width: 300px; height: 200px; display: flex;"></span>
                 </div>
             </div>
         </div>
@@ -88,7 +88,7 @@
 
     <div style="display: none" role="region" id="carousel-1" aria-live="polite">Displaying item 1 of 4</div>
 
-    <h4>Content navigation buttons</h4>
+    <h4>Transparent Page Indicator Container</h4>
 
     <div class="fd-carousel" data-ride="carousel" style="margin-bottom: 3rem; max-width: 20rem; max-height: 15.5rem">
         <div class="fd-carousel__content">
@@ -115,7 +115,7 @@
             </button>
         </div>
 
-        <div class="fd-carousel__page-indicator-container">
+        <div class="fd-carousel__page-indicator-container fd-carousel__page-indicator-container--transparent">
             <ol class="fd-carousel__page-indicators">
                 <li data-slide-to="1" class="fd-carousel__page-indicator"></li>
                 <li data-slide-to="2" class="fd-carousel__page-indicator"></li>
@@ -128,7 +128,7 @@
         </div>
     </div>
 
-    <h4>Content navigation buttons (vertical)</h4>
+    <h4>Translucent Page Indicator Container</h4>
     <div class="fd-carousel" data-ride="carousel" style="margin-bottom: 3rem; max-width: 20rem; max-height: 15.5rem">
         <div class="fd-carousel__content">
             <button
@@ -154,7 +154,7 @@
             </button>
         </div>
 
-        <div class="fd-carousel__page-indicator-container">
+        <div class="fd-carousel__page-indicator-container fd-carousel__page-indicator-container--translucent">
             <ol class="fd-carousel__page-indicators">
                 <li data-slide-to="1" class="fd-carousel__page-indicator"></li>
                 <li data-slide-to="2" class="fd-carousel__page-indicator"></li>
@@ -167,71 +167,49 @@
         </div>
     </div>
 
+    <h4>Page Indicator Container with no border</h4>
+
+    <div class="fd-carousel" data-ride="carousel" style="margin-bottom: 3rem; max-width: 20rem; max-height: 15.5rem">
+        <div class="fd-carousel__content fd-carousel__content--solid">
+            <div class="fd-carousel__slides">
+                <div class="fd-carousel__item fd-carousel__item--active">
+                    <span style="width: 300px; height: 200px; display: flex;"></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="fd-carousel__page-indicator-container fd-carousel__page-indicator-container--no-border">
+            <button
+                class="fd-button fd-carousel__button fd-carousel__button--left"
+                data-slide="prev"
+                aria-label="Go to previous item"
+            >
+                <i class="sap-icon--slim-arrow-left"></i>
+            </button>
+
+            <ol class="fd-carousel__page-indicators">
+                <li data-slide-to="1" class="fd-carousel__page-indicator"></li>
+                <li data-slide-to="2" class="fd-carousel__page-indicator"></li>
+                <li data-slide-to="3" class="fd-carousel__page-indicator"></li>
+                <li data-slide-to="4" class="fd-carousel__page-indicator"></li>
+                <li
+                    data-slide-to="5"
+                    aria-label="Displaying item 5 of 7"
+                    class="fd-carousel__page-indicator fd-carousel__page-indicator--active"
+                ></li>
+                <li data-slide-to="6" class="fd-carousel__page-indicator"></li>
+                <li data-slide-to="7" class="fd-carousel__page-indicator"></li>
+            </ol>
+
+            <button
+                class="fd-button fd-carousel__button fd-carousel__button--right"
+                data-slide="next"
+                aria-label="Go to next item"
+            >
+                <i class="sap-icon--slim-arrow-right"></i>
+            </button>
+        </div>
+    </div>
+
     <div style="display: none" role="region" id="carousel-2" aria-live="polite">Displaying item 1 of 4</div>
-
-    <h4>Numeric page indicator</h4>
-
-    <div class="fd-carousel" data-ride="carousel" style="margin-bottom: 3rem; max-width: 20rem; max-height: 15.5rem">
-        <div class="fd-carousel__content">
-            <div class="fd-carousel__slides">
-                <div class="fd-carousel__item fd-carousel__item--active">
-                    <img src="https://placehold.co/320x200" alt="first image" />
-                </div>
-            </div>
-        </div>
-
-        <div class="fd-carousel__page-indicator-container">
-            <button
-                class="fd-button fd-carousel__button fd-carousel__button--left"
-                data-slide="prev"
-                aria-label="Go to previous item"
-            >
-                <i class="sap-icon--slim-arrow-left"></i>
-            </button>
-
-            <div class="fd-carousel__page-indicators">
-                <div class="fd-carousel__text">1 of 4</div>
-            </div>
-
-            <button
-                class="fd-button fd-carousel__button fd-carousel__button--right"
-                data-slide="next"
-                aria-label="Go to next item"
-            >
-                <i class="sap-icon--slim-arrow-right"></i>
-            </button>
-        </div>
-    </div>
-
-    <div style="display: none" role="region" id="carousel-3" aria-live="polite">Displaying item 1 of 4</div>
-
-    <h4>No page indicator</h4>
-
-    <div class="fd-carousel" data-ride="carousel" style="margin-bottom: 3rem; max-width: 20rem; max-height: 15.5rem">
-        <div class="fd-carousel__content">
-            <button
-                class="fd-button fd-carousel__button fd-carousel__button--left"
-                data-slide="prev"
-                aria-label="Go to previous item"
-            >
-                <i class="sap-icon--slim-arrow-left"></i>
-            </button>
-
-            <div class="fd-carousel__slides">
-                <div class="fd-carousel__item fd-carousel__item--active">
-                    <img src="https://placehold.co/320x200" alt="first image" />
-                </div>
-            </div>
-
-            <button
-                class="fd-button fd-carousel__button fd-carousel__button--right"
-                data-slide="next"
-                aria-label="Go to next item"
-            >
-                <i class="sap-icon--slim-arrow-right"></i>
-            </button>
-        </div>
-    </div>
-
-    <div style="display: none" role="region" id="carousel-4" aria-live="polite">Displaying item 1 of 4</div>
 </div>
