@@ -65,11 +65,6 @@ const config: StorybookConfig = {
     typescript: {
         check: false
     },
-    async viteFinal(config) {
-        return mergeConfig(config, {
-            base: process.env.STORYBOOK_BASE_HREF
-        });
-    },
     framework: {
         name: '@storybook/html-vite',
         options: {}
