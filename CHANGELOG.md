@@ -1,3 +1,17 @@
+# [0.30.0-rc.10](https://github.com/SAP/fundamental-styles/compare/v0.30.0-rc.9...v0.30.0-rc.10) (2023-06-20)
+
+
+### Features
+
+* **styles:** update Calendar component - Horizon 2023 [ci visual] ([#4514](https://github.com/SAP/fundamental-styles/issues/4514)) ([f83b9c8](https://github.com/SAP/fundamental-styles/commit/f83b9c82b7e5061609c288e32df16f46c1cc44d4))
+
+
+### BREAKING CHANGES
+
+* **styles:** complete calendar markup refactoring(item, navigation, legend). Many classes were removed.
+
+
+
 # [0.30.0-rc.9](https://github.com/SAP/fundamental-styles/compare/v0.30.0-rc.8...v0.30.0-rc.9) (2023-06-20)
 
 
