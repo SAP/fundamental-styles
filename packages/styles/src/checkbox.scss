@@ -5,17 +5,7 @@
 .fd-checkbox
 */
 $block: #{$fd-namespace}-checkbox;
-
-%fd-checkbox-input-hidden {
-  position: absolute;
-  opacity: 0.0001;
-}
-
-@mixin applyIndeterminatePadding() {
-  $offset: 0.0625rem;
-
-  @include fd-set-padding-left($offset);
-}
+$blockCheckmark: #{$fd-namespace}-checkbox__checkmark;
 
 @mixin fd-checkbox-label() {
   + .#{$block}__label {
@@ -24,16 +14,18 @@ $block: #{$fd-namespace}-checkbox;
 }
 
 @mixin fd-checkbox-label-before() {
-  &:indeterminate + .#{$block}__label::after,
-  & + .fd-checkbox__label::before {
-    @content;
+  & + .#{$block}__label {
+    .#{$blockCheckmark} {
+      @content;
+    }
   }
 }
 
 .#{$block} {
   @include fd-form-base(false, false);
 
-  @extend %fd-checkbox-input-hidden;
+  position: absolute;
+  opacity: 0.0001;
 
   &,
   &.is-warning,
@@ -47,39 +39,16 @@ $block: #{$fd-namespace}-checkbox;
     @include fd-form-label();
     @include fd-action-cursor();
 
+    @include fd-flex-vertical-center() {
+      gap: var(--fdCheckbox_Padding);
+    }
+
+    margin: 0;
     line-height: 1rem;
     padding: var(--fdCheckbox_Padding);
-    display: flex;
-    align-items: center;
-
-    &::before {
-      @include fd-form-radio-icon-base(var(--fdCheckbox_Dimensions)) {
-        font-family: "SAP-icons";
-        background-color: var(--fdCheckbox_Background_Color);
-        border: var(--fdCheckbox_Inner_Border_Width) var(--fdCheckbox_Inner_Border_Style) var(--fdCheckbox_Inner_Border_Color);
-        color: var(--fdCheckbox_Check_Mark_Color);
-        border-radius: var(--sapField_BorderCornerRadius);
-      }
-    }
-
-    &::after {
-      padding-left: 0.125rem;
-      position: relative;
-    }
-
-    @include fd-empty() {
-      margin: 0;
-    }
-
-    @include fd-rtl() {
-      &::after {
-        padding-left: 0;
-        padding-right: 0.125rem;
-      }
-    }
 
     @include fd-hover() {
-      &::before {
+      .#{$blockCheckmark} {
         background-color: var(--fdCheckbox_Hover_Background_Color);
 
         --fdCheckbox_Inner_Border_Width: var(--fdCheckbox_Inner_Border_Width_Default_Hover);
@@ -139,28 +108,39 @@ $block: #{$fd-namespace}-checkbox;
   &__text {
     @include fd-reset();
     @include fd-ellipsis();
-    @include fd-set-margins-x(var(--fdCheckbox_Padding), 0);
 
     max-width: inherit;
   }
 
-  &:checked + .#{$block}__label::before {
-    content: "\e05b" / "";
+  &__checkmark {
+    @include fd-reset();
+    @include fd-inline-flex-center();
+    @include fd-square(var(--fdCheckbox_Dimensions));
+
+    font-family: "SAP-icons";
+    background-color: var(--fdCheckbox_Background_Color);
+    border: var(--fdCheckbox_Inner_Border_Width) var(--fdCheckbox_Inner_Border_Style) var(--fdCheckbox_Inner_Border_Color);
+    color: var(--fdCheckbox_Check_Mark_Color);
+    border-radius: var(--sapField_BorderCornerRadius);
+
+    &::before {
+      content: '';
+    }
   }
 
-  &:indeterminate + .#{$block}__label::after {
-    content: "";
-    width: var(--fdCheckbox_Tristate_Size);
-    height: var(--fdCheckbox_Tristate_Size);
-    background-color: var(--fdCheckbox_Check_Mark_Color);
-    position: absolute;
-    margin-left: var(--fdCheckbox_Tristate_Offset);
+  &:checked + .#{$block}__label {
+    .#{$blockCheckmark}::before {
+      content: "\e05b";
+    }
   }
 
-  @include fd-rtl() {
-    &:indeterminate + .#{$block}__label::after {
-      margin-left: 0;
-      margin-right: var(--fdCheckbox_Tristate_Offset);
+  &:indeterminate + .#{$block}__label {
+    .#{$blockCheckmark}::after {
+      content: "";
+      width: var(--fdCheckbox_Tristate_Size);
+      height: var(--fdCheckbox_Tristate_Size);
+      background-color: var(--fdCheckbox_Check_Mark_Color);
+      position: absolute;
     }
   }
 

@@ -131,7 +131,7 @@ $block: #{$fn-namespace}-checkbox;
     &::after {
       opacity: 0;
       display: block;
-      content: "\e05b" / "";
+      content: "\e05b";
       font-size: 0.75rem;
       color: $fn-color-white;
       font-family: "SAP-icons";
