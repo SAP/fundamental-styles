@@ -1,3 +1,12 @@
+# [0.30.0-rc.9](https://github.com/SAP/fundamental-styles/compare/v0.30.0-rc.8...v0.30.0-rc.9) (2023-06-20)
+
+
+### Features
+
+* **styles:** update token with the latest Horizon design and split tokenizer doc [ci visual] ([#4586](https://github.com/SAP/fundamental-styles/issues/4586)) ([3b69b52](https://github.com/SAP/fundamental-styles/commit/3b69b52dd6b18c5549a5dd032873850c961a0582))
+
+
+
 # [0.30.0-rc.8](https://github.com/SAP/fundamental-styles/compare/v0.30.0-rc.7...v0.30.0-rc.8) (2023-06-20)
 
 
