@@ -1,3 +1,12 @@
+# [0.30.0-rc.12](https://github.com/SAP/fundamental-styles/compare/v0.30.0-rc.11...v0.30.0-rc.12) (2023-06-21)
+
+
+### Bug Fixes
+
+* **styles:** add fix for Object List height [ci visual] ([#4629](https://github.com/SAP/fundamental-styles/issues/4629)) ([17c4b30](https://github.com/SAP/fundamental-styles/commit/17c4b3032a78cb93ddbe3b5d1570e2cd662c0875))
+
+
+
 # [0.30.0-rc.11](https://github.com/SAP/fundamental-styles/compare/v0.30.0-rc.10...v0.30.0-rc.11) (2023-06-20)
 
 
