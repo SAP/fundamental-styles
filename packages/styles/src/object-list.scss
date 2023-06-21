@@ -4,10 +4,6 @@
 
 $block: #{$fd-namespace}-object-list;
 
-$fd-object-list-with-padding-big: 1rem;
-$fd-object-list-with-padding-small: 0.75rem;
-$fd-object-list-font-color: var(--sapContent_LabelColor);
-
 @mixin fd-object-list-text-align($align) {
   text-align: $align;
 
@@ -17,10 +13,10 @@ $fd-object-list-font-color: var(--sapContent_LabelColor);
 }
 
 .#{$block} {
-  &__item {
+  .#{$block}__item {
     @include fd-set-paddings-y-equal(1rem);
 
-    height: 100%;
+    --fdList_Item_Height: 100%;
 
     .#{$fd-namespace}-list__link {
       @include fd-active() {
@@ -47,8 +43,8 @@ $fd-object-list-font-color: var(--sapContent_LabelColor);
 
     width: 100%;
     max-width: 100%;
-    color: $fd-object-list-font-color;
-    padding-bottom: $fd-object-list-with-padding-small;
+    padding-bottom: 0.75rem;
+    color: var(--sapContent_LabelColor);
   }
 
   &__container {
@@ -62,10 +58,8 @@ $fd-object-list-font-color: var(--sapContent_LabelColor);
   &__header {
     @include fd-reset();
 
-    display: flex;
-
-    &-left:not(:first-child) {
-      @include fd-set-margin-left($fd-object-list-with-padding-small);
+    @include fd-flex() {
+      gap: 0.75rem;
     }
   }
 
@@ -78,7 +72,7 @@ $fd-object-list-font-color: var(--sapContent_LabelColor);
 
   &__header-right {
     @include fd-reset();
-    @include fd-set-padding-left($fd-object-list-with-padding-big);
+    @include fd-set-margin-left(0.25rem);
     @include fd-object-list-text-align(right);
 
     width: 40%;
@@ -87,38 +81,32 @@ $fd-object-list-font-color: var(--sapContent_LabelColor);
   &__row {
     @include fd-reset();
 
-    display: flex;
-    align-items: flex-end;
-    justify-content: flex-end;
-
-    > *:only-child {
-      width: 100%;
+    @include fd-flex() {
+      gap: 0.5rem;
     }
+
+    padding-top: 0.5rem;
   }
 
   &__row-left,
   &__row-right {
     @include fd-reset();
     @include fd-ellipsis();
+    @include fd-flex-vertical-center();
 
     width: 50%;
     line-height: 1;
-    padding: 0.5rem 0.5rem 0 0.5rem;
-  }
 
-  &__row-left {
-    @include fd-object-list-text-align(left);
-    @include fd-set-padding-left(0);
+    &:only-child {
+      width: 100%;
+    }
   }
 
   &__row-right {
-    @include fd-object-list-text-align(right);
-    @include fd-set-padding-right(0);
+    justify-content: flex-end;
 
-    .#{$fd-namespace}-object-status {
-      &__text {
-        @include fd-ellipsis();
-      }
+    .#{$fd-namespace}-object-status__text {
+      @include fd-ellipsis();
     }
   }
 
@@ -154,6 +142,6 @@ $fd-object-list-font-color: var(--sapContent_LabelColor);
     @include fd-reset();
     @include fd-ellipsis();
 
-    color: $fd-object-list-font-color;
+    color: var(--sapContent_LabelColor);
   }
 }
