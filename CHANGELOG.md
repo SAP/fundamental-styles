@@ -1,3 +1,12 @@
+# [0.30.0-rc.13](https://github.com/SAP/fundamental-styles/compare/v0.30.0-rc.12...v0.30.0-rc.13) (2023-06-22)
+
+
+### Bug Fixes
+
+* **styles:** menu full width ([#4632](https://github.com/SAP/fundamental-styles/issues/4632)) ([e07d292](https://github.com/SAP/fundamental-styles/commit/e07d292e89bf190645240ea9cf83c81f974e30a5))
+
+
+
 # [0.30.0-rc.12](https://github.com/SAP/fundamental-styles/compare/v0.30.0-rc.11...v0.30.0-rc.12) (2023-06-21)
 
 
