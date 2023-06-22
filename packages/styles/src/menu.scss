@@ -117,6 +117,7 @@ $block: #{$fd-namespace}-menu;
   &__item {
     @include fd-reset();
 
+    max-width: 100%;
     position: relative;
     border-radius: 0;
     background-color: var(--sapList_Background);
