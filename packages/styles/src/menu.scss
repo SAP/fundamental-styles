@@ -63,6 +63,7 @@ $block: #{$fd-namespace}-menu;
       flex-wrap: wrap;
     }
 
+    max-width: 20rem;
     list-style: none;
     box-shadow: var(--sapContent_Shadow1);
     border-radius: $fd-menu-border-radius;
@@ -116,7 +117,6 @@ $block: #{$fd-namespace}-menu;
   &__item {
     @include fd-reset();
 
-    max-width: 20rem;
     position: relative;
     border-radius: 0;
     background-color: var(--sapList_Background);
