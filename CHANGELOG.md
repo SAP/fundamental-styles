@@ -1,3 +1,18 @@
+# [0.30.0-rc.15](https://github.com/SAP/fundamental-styles/compare/v0.30.0-rc.14...v0.30.0-rc.15) (2023-06-23)
+
+
+### Bug Fixes
+
+* **styles:** add fix for Label truncation in Progress Indicator [ci visual] ([#4631](https://github.com/SAP/fundamental-styles/issues/4631)) ([7a1ea07](https://github.com/SAP/fundamental-styles/commit/7a1ea0757c64569dd5825fe9e08d8ff97cab11c9))
+
+
+### BREAKING CHANGES
+
+* **styles:** The container element should be the Popover control. fd-popover__control is used together with fd-progress-indicator__container, not with fd-progress-indicator__progress-bar and fd-progress-indicator__remaining.
+The Popover body should have an arrow in the center.
+
+
+
 # [0.30.0-rc.14](https://github.com/SAP/fundamental-styles/compare/v0.30.0-rc.13...v0.30.0-rc.14) (2023-06-23)
 
 
