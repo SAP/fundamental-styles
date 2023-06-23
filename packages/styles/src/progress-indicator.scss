@@ -65,6 +65,7 @@ $fd-progress-indicator-states: (
 
   &.#{$fd-namespace}-popover {
     margin: var(--rootMargin);
+    cursor: pointer;
   }
 
   &--mobile {
@@ -92,7 +93,7 @@ $fd-progress-indicator-states: (
     }
   }
 
-  &__container {
+  .#{$block}__container {
     @include fd-reset();
     @include fd-flex();
 
@@ -151,18 +152,12 @@ $fd-progress-indicator-states: (
       justify-content: flex-end;
     }
 
-    @include fd-progress-indicator-popover-control() {
-      border: var(--fdProgress_Indicator_Progress_Bar_Popover_Control_Border, 0 solid) var(--progressBarBorderColor);
-      position: var(--fdProgress_Indicator_Progress_Bar_Position, relative);
-    }
-
     height: var(--fdProgress_Indicator_Progress_Bar_Height);
     margin: var(--fdProgress_Indicator_Progress_Bar_Margin);
     border: var(--fdProgress_Indicator_Progress_Bar_Border) var(--progressBarBorderColor);
     border-right: var(--fdProgress_Indicator_Border_Right) var(--progressBarBorderRightColor);
     border-radius: var(--fdProgress_Indicator_Progress_Bar_Border_Radius);
     background: var(--progressBarBackground);
-    position: var(--fdProgress_Indicator_Progress_Bar_Position, static);
     left: var(--fdProgress_Indicator_Progress_Bar_Position_Left);
     bottom: var(--fdProgress_Indicator_Progress_Bar_Position_Bottom);
 
@@ -179,7 +174,7 @@ $fd-progress-indicator-states: (
     }
   }
 
-  &__remaining {
+  .#{$block}__remaining {
     @include fd-reset();
 
     @include fd-flex() {
@@ -190,6 +185,8 @@ $fd-progress-indicator-states: (
       flex-grow: 1;
       min-width: 0;
     }
+
+    position: static;
   }
 
   &__icon {
