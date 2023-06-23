@@ -1,0 +1,22 @@
+<div class="fd-skeleton" style="width: 160px; height: 110px;">
+    <svg width="100%" height="100%" class="fd-skeleton__canvas">
+        <defs>
+            <linearGradient id="skeletonGradient">
+                <stop offset="0" class="fd-skeleton__outer"></stop>
+                <stop class="fd-skeleton__middle">
+                    <animate attributeName="offset" values="0; 0; 0.5; 1; 1" dur="2s" repeatCount="indefinite"></animate>
+                </stop>
+                <stop offset="1" class="fd-skeleton__outer"></stop>
+            </linearGradient>
+            <mask id="fd-skeleton-8">
+                <circle cx="25" cy="25" r="25"></circle>
+                <rect x="60" y="0" width="100" height="16" rx="4"></rect>
+                <rect x="60" y="30" width="60" height="12" rx="4"></rect>
+                <rect x="0" y="60" width="160" height="8" rx="4"></rect>
+                <rect x="0" y="80" width="160" height="8" rx="4"></rect>
+                <rect x="0" y="100" width="100" height="8" rx="4"></rect>
+            </mask>
+        </defs>
+        <rect x="0" y="0" width="100%" height="100%" mask="url(#fd-skeleton-8)"></rect>
+    </svg>
+</div>
