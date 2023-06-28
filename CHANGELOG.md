@@ -1,3 +1,12 @@
+# [0.30.0-rc.16](https://github.com/SAP/fundamental-styles/compare/v0.30.0-rc.15...v0.30.0-rc.16) (2023-06-28)
+
+
+### Features
+
+* **styles:** add skeleton examples and styling [ci visual] ([#4634](https://github.com/SAP/fundamental-styles/issues/4634)) ([3bb1b46](https://github.com/SAP/fundamental-styles/commit/3bb1b46e71e84951541b5a4a5758d5dbd55f7c91))
+
+
+
 # [0.30.0-rc.15](https://github.com/SAP/fundamental-styles/compare/v0.30.0-rc.14...v0.30.0-rc.15) (2023-06-23)
 
 
