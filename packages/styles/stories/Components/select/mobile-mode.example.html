@@ -1,20 +1,11 @@
 <div class="fd-dialog fd-dialog-docs-static fd-select-docs-max-height fd-dialog--active" id="select-dialog-example">
     <div class="fd-dialog__content fd-dialog__content--mobile">
-        <header class="fd-dialog__header fd-bar fd-bar--header-with-subheader">
-            <div class="fd-bar__left">
-                <div class="fd-bar__element">
-                    <h3 id="mobileHeader" class="fd-dialog__title">
-                        <span class="fd-select__text-content">Select Ingredient</span>
-                    </h3>
-                </div>
-            </div>
-            <div class="fd-bar__right">
-                <div class="fd-bar__element">
-                    <button tabindex="-1" class="fd-button fd-button--transparent" aria-label="close">
-                        <i class="sap-icon--decline"></i>
-                    </button>
-                </div>
-            </div>
+        <header class="fd-dialog__header fd-toolbar fd-toolbar--clear">
+            <span class="fd-select__text-content">Select Ingredient</span>
+            <span class="fd-toolbar__spacer"></span>
+            <button tabindex="-1" class="fd-button fd-button--transparent" aria-label="close">
+                <i class="sap-icon--decline"></i>
+            </button>
         </header>
         <div class="fd-dialog__body fd-dialog__body--no-vertical-padding">
             <div aria-live="assertive" class="fd-list__message fd-list__message--information" role="alert">Choose one item</div>

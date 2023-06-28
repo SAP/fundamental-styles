@@ -193,6 +193,13 @@ $fd-input-field-height--compact: 1.625rem;
           }
         }
       }
+
+      @include fd-expanded() {
+        background: var(--sapField_Focus_Background);
+        outline: var(--sapContent_FocusWidth) var(--sapContent_FocusStyle) map_get($set-props, "focusOutlineColor");
+        outline-offset: var(--fdInput_Outline_Offset);
+        box-shadow: none;
+      }
     }
   }
 
@@ -322,15 +329,20 @@ $fd-input-field-height--compact: 1.625rem;
     border-radius: var(--fdInput_Group_Button_Border_Raduis);
     background: var(--fdInput_Group_Button_Background);
     color: var(--fdInput_Group_Button_Text_Color);
+    background-color: var(--fdButtonBackgroundColor);
 
     &::before {
       display: none !important;
     }
 
+    &::after {
+      border-radius: var(--fdInput_Outline_Border_Radius);
+    }
+
     @include fd-hover() {
       --fdInput_Group_Button_Text_Color: var(--fdInput_Group_Button_Hover_Text_Color);
+      --fdButtonBackgroundColor: var(--fdInput_Group_Button_Hover_Background);
 
-      background: var(--fdInput_Group_Button_Hover_Background);
       box-shadow: var(--fdInput_Group_Button_Box_Shadow);
     }
 
@@ -343,6 +355,31 @@ $fd-input-field-height--compact: 1.625rem;
 
   @each $set-name, $set-props in $fd-input-group-button-states {
     &.is-#{$set-name} {
+      @include fd-focus() {
+        .#{$block}__button {
+          color: map_get($set-props, "activeColor");
+          box-shadow: map_get($set-props, "boxShadow");
+
+          --fdButtonBackgroundColor: var(--fdInput_Group_Button_Active_Background);
+
+          @include fd-hover() {
+            --fdButtonBackgroundColor: var(--fdInput_Group_Button_Active_Background);
+          }
+        }
+      }
+
+      @include fd-expanded() {
+        .#{$block}__button {
+          color: map_get($set-props, "activeColor");
+          box-shadow: map_get($set-props, "boxShadow");
+
+          --fdButtonBackgroundColor: var(--fdInput_Group_Button_Active_Background);
+
+          @include fd-hover() {
+            --fdButtonBackgroundColor: var(--fdInput_Group_Button_Active_Background);
+          }
+        }
+      }
 
       .#{$block}__button {
         @include fd-hover() {
