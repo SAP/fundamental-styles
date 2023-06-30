@@ -19,7 +19,7 @@ import '../../../src/form-label.scss';
 import '../../../src/form-message.scss';
 import '../../../src/select.scss';
 import '../../../src/dialog.scss';
-import '../../../src/bar.scss';
+import '../../../src/toolbar.scss';
 import '../../../src/button.scss';
 import '../../../src/icon.scss';
 import '../../../src/layout-grid.scss';
@@ -45,8 +45,8 @@ export default {
 `
   }
 };
-export const Cozy = () => cozyExampleHtml;
-Cozy.parameters = {
+export const Default = () => cozyExampleHtml;
+Default.parameters = {
   docs: {
     story: {
       iframeHeight: 500

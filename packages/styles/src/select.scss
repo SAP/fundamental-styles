@@ -9,89 +9,6 @@ $fd-select-padding-x-compact: 0.5rem;
   min-width: calc(var(--fdSelect_Min_Width) - var(--sapField_BorderWidth) * 2);
 }
 
-@mixin fd-select-button-settings($bkgdColor, $borderLeft) {
-  .#{$block}__button {
-    --fdInput_Group_Button_Text_Color: var(--sapButton_Active_TextColor);
-    --fdInput_Group_Button_Background: var(--sapField_BackgroundStyle);
-
-    // Need content here in case we have background property which may override background-color.
-    @content;
-
-    background-color: $bkgdColor;
-    border-left-color: $borderLeft;
-    box-shadow: var(--fdInput_Group_Button_Box_Shadow);
-    position: static;
-  }
-
-  @include fd-rtl() {
-    .#{$block}__button {
-      border-left-color: transparent;
-      border-right-color: $borderLeft;
-    }
-  }
-}
-
-@mixin fd-select-states-overwrite() {
-  $fd-select-states: (
-    'success': (
-      'activeColor': var(--fdInput_Group_Button_Success_Active_Text_Color),
-      'background': var(--sapField_SuccessBackgroundStyle),
-      'hoverBoxShadow': var(--fdInput_Success_Box_Shadow_Hover)
-    ),
-    'error': (
-      'activeColor': var(--fdInput_Group_Button_Error_Active_Text_Color),
-      'background': var(--sapField_InvalidBackgroundStyle),
-      'hoverBoxShadow': var(--fdInput_Error_Box_Shadow_Hover)
-    ),
-    'warning': (
-      'activeColor': var(--fdInput_Group_Button_Warning_Active_Text_Color),
-      'background': var(--sapField_WarningBackgroundStyle),
-      'hoverBoxShadow':  var(--fdInput_Warning_Box_Shadow_Hover)
-    ),
-    'alert': (
-      'activeColor': var(--fdInput_Group_Button_Warning_Active_Text_Color),
-      'background': var(--sapField_WarningBackgroundStyle),
-      'hoverBoxShadow':  var(--fdInput_Warning_Box_Shadow_Hover)
-    ),
-    'information': (
-      'activeColor': var(--fdInput_Group_Button_Information_Active_Text_Color),
-      'background': var(--sapField_InformationBackgroundStyle),
-      'hoverBoxShadow':  var(--fdInput_Information_Box_Shadow_Hover)
-    )
-  );
-
-  @each $set-name, $set-props in $fd-select-states {
-    &.is-#{$set-name} {
-      @include fd-expanded() {
-        box-shadow: map_get($set-props, "hoverBoxShadow");
-
-        .#{$block}__button {
-          color: map_get($set-props, "activeColor");
-          background: map_get($set-props, "background");
-          background-color: var(--sapButton_Selected_Background);
-          border-left-color: var(--fdSelect_Expanded_Button_Border_Left_Color);
-          box-shadow: map_get($set-props, "hoverBoxShadow");
-
-          @include fd-hover() {
-            color: var(--fdInput_Group_Button_Text_Color);
-          }
-        }
-
-        @include fd-rtl() {
-          .#{$block}__button {
-            border-left-color: transparent;
-            border-right-color: var(--fdSelect_Expanded_Button_Border_Left_Color);
-          }
-        }
-
-        @include fd-focus() {
-          box-shadow: none;
-        }
-      }
-    }
-  }
-}
-
 .#{$block} {
   @include fd-reset();
 
@@ -115,6 +32,7 @@ $fd-select-padding-x-compact: 0.5rem;
     box-shadow: none;
 
     @include fd-flex-center() {
+      gap: 0.25rem;
       justify-content: space-between;
     }
 
@@ -136,12 +54,6 @@ $fd-select-padding-x-compact: 0.5rem;
       @include fd-set-equal-positions(0);
     }
 
-    .#{$block}__button {
-      @include fd-set-margin-left(0.25rem);
-
-      height: 100%;
-    }
-
     @include fd-readonly() {
       cursor: text;
 
@@ -150,28 +62,26 @@ $fd-select-padding-x-compact: 0.5rem;
 
         --fdSelect_Min_Width: 5rem;
       }
+
+      .#{$block}__button {
+        opacity: 0;
+      }
     }
 
-    @include fd-expanded() {
-      &::after {
-        box-shadow: var(--fdInput_Box_Shadow_Hover);
-      }
+    &[aria-selected='false'] {
+      .#{$block}__text-content {
+        font-style: italic;
+        font-weight: normal;
+        padding: 0 0.625rem;
+        color: var(--sapField_PlaceholderTextColor);
 
-      @include fd-select-button-settings(var(--sapButton_Selected_Background), var(--fdSelect_Expanded_Button_Border_Left_Color)
-    );
-
-      @include fd-focus() {
-        box-shadow: none;
-      }
-
-      @include fd-hover() {
-        @include fd-select-button-settings(var(--sapButton_Selected_Hover_Background), var(--fdSelect_Expanded_Button_Border_Left_Color_Hover)) {
-          background: var(--sapField_Hover_BackgroundStyle);
+        [class*='sap-icon'] {
+          font-style: italic;
+          font-weight: normal;
+          color: var(--sapField_PlaceholderTextColor);
         }
       }
     }
-
-    @include fd-select-states-overwrite();
   }
 
   &__text-content {

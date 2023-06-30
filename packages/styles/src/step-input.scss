@@ -7,13 +7,10 @@ $block: #{$fd-namespace}-step-input;
   $fd-button-icon-font-size: 0.875rem;
   $fd-step-input-cozy-height: 2.25rem;
   $fd-step-input-compact-height: 1.625rem;
-  $fd-step-input-cozy-button-width: 2.125rem;
-  $fd-step-input-compact-button-width: 1.5rem;
   $fd-step-input-description-padding: 0.5rem;
-  $fd-step-input-semantic-border-offset: 0.125rem;
 
-  --fdStepInput_Button_Width: #{$fd-step-input-cozy-button-width};
-  --fdStepInput_Bordered_Button_Width: #{$fd-step-input-cozy-button-width - $fd-step-input-semantic-border-offset};
+  --fdStepInput_Button_Width: var(--fdStepInput_Button_Width_Cozy);
+  --fdStepInput_Bordered_Button_Width: var(--fdStepInput_Button_Width_Semantic_Cozy);
 
   // @include fd-reset();
   @include fd-input-field-base(true);
@@ -50,10 +47,11 @@ $block: #{$fd-namespace}-step-input;
   }
 
   &__input.#{$fd-namespace}-input {
+    --fdInput_Field_Padding: 0 0.25rem;
+
     text-align: right;
     border: none;
     margin: 0;
-    padding: 0 0.25rem;
     background: none;
     box-shadow: none;
     background-color: transparent;
@@ -82,14 +80,14 @@ $block: #{$fd-namespace}-step-input;
   &.is-error,
   &.is-warning {
     .#{$block}__button.#{$fd-namespace}-button {
-      width: var(--fdStepInput_Bordered_Button_Width);
-      min-width: var(--fdStepInput_Bordered_Button_Width);
+      width: var(--fdStepInput_Button_Width_Semantic_Cozy);
+      min-width: var(--fdStepInput_Button_Width_Semantic_Cozy);
     }
   }
 
   @include fd-compact-or-condensed() {
-    --fdStepInput_Bordered_Button_Width: #{$fd-step-input-compact-button-width - $fd-step-input-semantic-border-offset};
-    --fdStepInput_Button_Width: #{$fd-step-input-compact-button-width};
+    --fdStepInput_Button_Width: var(--fdStepInput_Button_Width_Compact);
+    --fdStepInput_Bordered_Button_Width: var(--fdStepInput_Button_Width_Semantic_Compact);
     --fdInput_Field_Compact_Padding: 0 0.25rem;
 
     height: $fd-step-input-compact-height;
@@ -98,19 +96,37 @@ $block: #{$fd-namespace}-step-input;
     .#{$block}__input.#{$fd-namespace}-input {
       height: 100%;
     }
+
+    &.is-readonly {
+      --fdInput_Field_Compact_Padding: 0 0.5rem;
+    }
   }
 
   &.is-readonly {
+    .#{$block}__input.#{$fd-namespace}-input {
+      --fdInput_Field_Padding: 0 0.625rem;
+    }
+
     .#{$block}__button.#{$fd-namespace}-button {
       display: none;
     }
 
     @include fd-focus-within() {
-      background: var(--sapField_Focus_Background);
       border-radius: var(--sapField_BorderCornerRadius);
 
       .#{$block}__input {
         background: transparent;
+      }
+    }
+  }
+
+  @include fd-focus() {
+    &.is-information,
+    &.is-error,
+    &.is-warning,
+    &.is-success {
+      .#{$block}__button.#{$fd-namespace}-button:not(:hover) {
+        box-shadow: none;
       }
     }
   }
