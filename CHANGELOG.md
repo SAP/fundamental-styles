@@ -1,3 +1,12 @@
+# [0.30.0-rc.18](https://github.com/SAP/fundamental-styles/compare/v0.30.0-rc.17...v0.30.0-rc.18) (2023-06-30)
+
+
+### Bug Fixes
+
+* **styles:** fixed for Input Group, Select and Step Input after design review [ci visual] ([#4646](https://github.com/SAP/fundamental-styles/issues/4646)) ([483df90](https://github.com/SAP/fundamental-styles/commit/483df90b7d6f56ff7fb6d889bc62621cf8e207c1))
+
+
+
 # [0.30.0-rc.17](https://github.com/SAP/fundamental-styles/compare/v0.30.0-rc.16...v0.30.0-rc.17) (2023-06-30)
 
 
