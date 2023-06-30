@@ -28393,15 +28393,15 @@ exports[`Check stories > Components/Shellbar > Story WithoutCenter > Should matc
 `;
 
 exports[`Check stories > Components/Skeleton > Story Circle > Should match snapshot 1`] = `
-"<div class=\\"fd-skeleton fd-skeleton--animated\\" style=\\"width: 50px; height: 50px;\\">
+"<div class=\\"fd-skeleton\\" style=\\"width: 50px; height: 50px;\\">
     <svg width=\\"100%\\" height=\\"100%\\" class=\\"fd-skeleton__canvas\\">
         <defs>
             <linearGradient id=\\"skeletonGradient\\">
-                <stop offset=\\"0\\" stop-color=\\"var(--sapContent_Placeholderloading_Background)\\"></stop>
+                <stop offset=\\"0\\" class=\\"fd-skeleton__outer\\"></stop>
                 <stop class=\\"fd-skeleton__middle\\">
                     <animate attributeName=\\"offset\\" values=\\"0; 0; 0.5; 1; 1\\" dur=\\"2s\\" repeatCount=\\"indefinite\\"></animate>
                 </stop>
-                <stop offset=\\"1\\" stop-color=\\"var(--sapContent_Placeholderloading_Background)\\"></stop>
+                <stop offset=\\"1\\" class=\\"fd-skeleton__outer\\"></stop>
             </linearGradient>
             <mask id=\\"fd-skeleton-2\\">
                 <circle cx=\\"50%\\" cy=\\"50%\\" r=\\"50%\\" class=\\"ng-star-inserted\\"></circle>
@@ -28409,19 +28409,20 @@ exports[`Check stories > Components/Skeleton > Story Circle > Should match snaps
         </defs>
         <rect x=\\"0\\" y=\\"0\\" width=\\"100%\\" height=\\"100%\\" mask=\\"url(#fd-skeleton-2)\\"></rect>
     </svg>
-</div>"
+</div>
+"
 `;
 
 exports[`Check stories > Components/Skeleton > Story ComplexExamples > Should match snapshot 1`] = `
-"<div class=\\"fd-skeleton fd-skeleton--animated\\" style=\\"width: 160px; height: 110px;\\">
+"<div class=\\"fd-skeleton\\" style=\\"width: 160px; height: 110px;\\">
     <svg width=\\"100%\\" height=\\"100%\\" class=\\"fd-skeleton__canvas\\">
         <defs>
             <linearGradient id=\\"skeletonGradient\\">
-                <stop offset=\\"0\\" stop-color=\\"var(--sapContent_Placeholderloading_Background)\\"></stop>
+                <stop offset=\\"0\\" class=\\"fd-skeleton__outer\\"></stop>
                 <stop class=\\"fd-skeleton__middle\\">
                     <animate attributeName=\\"offset\\" values=\\"0; 0; 0.5; 1; 1\\" dur=\\"2s\\" repeatCount=\\"indefinite\\"></animate>
                 </stop>
-                <stop offset=\\"1\\" stop-color=\\"var(--sapContent_Placeholderloading_Background)\\"></stop>
+                <stop offset=\\"1\\" class=\\"fd-skeleton__outer\\"></stop>
             </linearGradient>
             <mask id=\\"fd-skeleton-8\\">
                 <circle cx=\\"25\\" cy=\\"25\\" r=\\"25\\"></circle>
@@ -28434,20 +28435,21 @@ exports[`Check stories > Components/Skeleton > Story ComplexExamples > Should ma
         </defs>
         <rect x=\\"0\\" y=\\"0\\" width=\\"100%\\" height=\\"100%\\" mask=\\"url(#fd-skeleton-8)\\"></rect>
     </svg>
-</div>"
+</div>
+"
 `;
 
 exports[`Check stories > Components/Skeleton > Story Lines > Should match snapshot 1`] = `
 "<p>3 lines</p>
-<div class=\\"fd-skeleton fd-skeleton--animated\\" style=\\"width: 100px; height: 60px;\\">
+<div class=\\"fd-skeleton\\" style=\\"width: 100px; height: 60px;\\">
     <svg width=\\"100%\\" height=\\"100%\\" class=\\"fd-skeleton__canvas\\">
         <defs>
             <linearGradient id=\\"skeletonGradient\\">
-                <stop offset=\\"0\\" stop-color=\\"var(--sapContent_Placeholderloading_Background)\\"></stop>
+                <stop offset=\\"0\\" class=\\"fd-skeleton__outer\\"></stop>
                 <stop class=\\"fd-skeleton__middle\\">
                     <animate attributeName=\\"offset\\" values=\\"0; 0; 0.5; 1; 1\\" dur=\\"2s\\" repeatCount=\\"indefinite\\"></animate>
                 </stop>
-                <stop offset=\\"1\\" stop-color=\\"var(--sapContent_Placeholderloading_Background)\\"></stop>
+                <stop offset=\\"1\\" class=\\"fd-skeleton__outer\\"></stop>
             </linearGradient>
             <mask id=\\"fd-skeleton-4\\">
                 <rect x=\\"0\\" width=\\"100%\\" rx=\\"4\\" height=\\"8\\" y=\\"0\\" class=\\"ng-star-inserted\\"></rect>
@@ -28462,15 +28464,15 @@ exports[`Check stories > Components/Skeleton > Story Lines > Should match snapsh
 </div>
 
 <p>2 lines</p>
-<div class=\\"fd-skeleton fd-skeleton--animated\\" style=\\"width: 100px; height: 60px;\\">
+<div class=\\"fd-skeleton\\" style=\\"width: 100px; height: 60px;\\">
     <svg width=\\"100%\\" height=\\"100%\\" class=\\"fd-skeleton__canvas\\">
         <defs>
             <linearGradient id=\\"skeletonGradient\\">
-                <stop offset=\\"0\\" stop-color=\\"var(--sapContent_Placeholderloading_Background)\\"></stop>
+                <stop offset=\\"0\\" class=\\"fd-skeleton__outer\\"></stop>
                 <stop class=\\"fd-skeleton__middle\\">
                     <animate attributeName=\\"offset\\" values=\\"0; 0; 0.5; 1; 1\\" dur=\\"2s\\" repeatCount=\\"indefinite\\"></animate>
                 </stop>
-                <stop offset=\\"1\\" stop-color=\\"var(--sapContent_Placeholderloading_Background)\\"></stop>
+                <stop offset=\\"1\\" class=\\"fd-skeleton__outer\\"></stop>
             </linearGradient>
             <mask id=\\"fd-skeleton-5\\">
                 <rect x=\\"0\\" width=\\"100%\\" rx=\\"4\\" height=\\"8\\" y=\\"0\\" class=\\"ng-star-inserted\\"></rect>
@@ -28482,23 +28484,22 @@ exports[`Check stories > Components/Skeleton > Story Lines > Should match snapsh
         </rect>
     </svg>
 </div>
-
 "
 `;
 
 exports[`Check stories > Components/Skeleton > Story Skeleton > Should match snapshot 1`] = `
-"<div class=\\"fd-skeleton fd-skeleton--animated\\" style=\\"width: 100px; height: 50px;\\">
+"<div class=\\"fd-skeleton\\" style=\\"width: 100px; height: 50px;\\">
     <svg width=\\"100%\\" height=\\"100%\\" class=\\"fd-skeleton__canvas\\">
         <defs>
             <linearGradient id=\\"skeletonGradient\\">
-                <stop offset=\\"0\\" stop-color=\\"var(--sapContent_Placeholderloading_Background)\\">
+                <stop offset=\\"0\\" class=\\"fd-skeleton__outer\\">
                 </stop>
                 <stop class=\\"fd-skeleton__middle\\">
                     <animate attributeName=\\"offset\\" values=\\"0; 0; 0.5; 1; 1\\" dur=\\"2s\\" repeatCount=\\"indefinite\\">
     
                     </animate>
                 </stop>
-                <stop offset=\\"1\\" stop-color=\\"var(--sapContent_Placeholderloading_Background)\\">
+                <stop offset=\\"1\\" class=\\"fd-skeleton__outer\\">
     
                 </stop>
             </linearGradient>
@@ -28510,7 +28511,8 @@ exports[`Check stories > Components/Skeleton > Story Skeleton > Should match sna
     
         </rect>
     </svg>
-</div>"
+</div>
+"
 `;
 
 exports[`Check stories > Components/Slider > Story MobileMode > Should match snapshot 1`] = `
