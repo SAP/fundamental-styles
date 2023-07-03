@@ -2848,10 +2848,10 @@
   resolved "https://registry.yarnpkg.com/@rushstack/eslint-patch/-/eslint-patch-1.2.0.tgz#8be36a1f66f3265389e90b5f9c9962146758f728"
   integrity sha512-sXo/qW2/pAcmT43VoRKOJbDOfV3cYpq3szSVfIThQXNt+E4DfKj361vaAt3c88U5tPUxzEswam7GW48PJqtKAg==
 
-"@sap-theming/theming-base-content@11.4.2":
-  version "11.4.2"
-  resolved "https://registry.yarnpkg.com/@sap-theming/theming-base-content/-/theming-base-content-11.4.2.tgz#7b30ed929d53fe494f500ab614bf524feb166209"
-  integrity sha512-luXKyJP0AGxM2S+8aIGOi4eOz/zREftntF9CY4F6xuRBLDmnzRB0Z/OxA2t3lBr6qjDhcmowG8/BVz6XDZXy0g==
+"@sap-theming/theming-base-content@11.5.0":
+  version "11.5.0"
+  resolved "https://registry.yarnpkg.com/@sap-theming/theming-base-content/-/theming-base-content-11.5.0.tgz#d83c172d1d03a3b845ca6ed737b192dd70e4610e"
+  integrity sha512-peN7VGjgcLj7gJTPlZWFgHV/0wkSEqu/yq2TYyZmMOcjqpIWeWI/mItGOFslfCmpyeVVp5lvrfWkbrRQrig/Kg==
 
 "@sideway/address@^4.1.3":
   version "4.1.4"
