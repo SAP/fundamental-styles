@@ -281,7 +281,7 @@
         "widgets",
         "commission-check",
         "collections-insight",
-        "clinical-tast-tracker",
+        "clinical-task-tracker",
         "citizen-connect",
         "cart-approval",
         "capital-projects",
@@ -684,6 +684,12 @@
         "people-connected",
         "select-appointments",
         "light-mode",
-        "dark-mode"
+        "dark-mode",
+        "time-off",
+        "add-calendar",
+        "currency",
+        "bell-2",
+        "accessibility",
+        "high-priority"
     ]
 }
