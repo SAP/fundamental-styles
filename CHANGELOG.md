@@ -1,3 +1,17 @@
+# [0.30.0-rc.24](https://github.com/SAP/fundamental-styles/compare/v0.30.0-rc.23...v0.30.0-rc.24) (2023-07-04)
+
+
+### chore
+
+* **deps:** update theming-base-content version 11.5.0 [ci visual] ([#4660](https://github.com/SAP/fundamental-styles/issues/4660)) ([0234ccb](https://github.com/SAP/fundamental-styles/commit/0234ccb9d191c10186f4c9d0d21620bff64798cd))
+
+
+### BREAKING CHANGES
+
+* **deps:** SAP-Icons icon name changed from `clinical-tast-tracker` to `clinical-task-tracker`
+
+
+
 # [0.30.0-rc.23](https://github.com/SAP/fundamental-styles/compare/v0.30.0-rc.22...v0.30.0-rc.23) (2023-07-03)
 
 
