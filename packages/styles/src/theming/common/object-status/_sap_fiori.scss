@@ -1,0 +1,64 @@
+:root {
+  --fdObjectStatus_TextDecoration_Regular: none;
+  --fdObjectStatus_TextDecoration_Hover: underline;
+  --fdObjectStatus_TextDecoration_Down: underline;
+  --fdObjectStatus_TextDecoration_Visited: none;
+  --fdObjectStatus_TextDecoration_Focus: none;
+
+  // Focus State
+  --fdObjectStatus_Focus_Background: inherit;
+  --fdObjectStatus_Focus_Border_Radius: 0;
+  --fdObjectStatus_Focus_Outline: 0.0625rem dotted var(--sapContent_FocusColor);
+  --fdObjectStatus_Positive_Color_Focus: var(--sapPositiveTextColor);
+  --fdObjectStatus_Positive_IconColor_Focus: var(--sapPositiveElementColor);
+  --fdObjectStatus_Critical_Color_Focus: var(--sapCriticalTextColor);
+  --fdObjectStatus_Critical_IconColor_Focus: var(--sapCriticalElementColor);
+  --fdObjectStatus_Negative_Color_Focus: var(--sapNegativeTextColor);
+  --fdObjectStatus_Negative_IconColor_Focus: var(--sapNegativeElementColor);
+  --fdObjectStatus_Informative_Color_Focus: var(--sapInformativeTextColor);
+  --fdObjectStatus_Informative_IconColor_Focus: var(--sapInformativeElementColor);
+  --fdObjectStatus_Neutral_Color_Focus: var(--sapNeutralTextColor);
+  --fdObjectStatus_Neutral_IconColor_Focus: var(--sapNeutralElementColor);
+  --fdObjectStatus_Accent_Color_1_Focus: var(--sapIndicationColor_1);
+  --fdObjectStatus_Accent_Color_2_Focus: var(--sapIndicationColor_2);
+  --fdObjectStatus_Accent_Color_3_Focus: var(--sapIndicationColor_3);
+  --fdObjectStatus_Accent_Color_4_Focus: var(--sapIndicationColor_4);
+  --fdObjectStatus_Accent_Color_5_Focus: var(--sapIndicationColor_5);
+  --fdObjectStatus_Accent_Color_6_Focus: var(--sapIndicationColor_6);
+  --fdObjectStatus_Accent_Color_7_Focus: var(--sapIndicationColor_7);
+  --fdObjectStatus_Accent_Color_8_Focus: var(--sapIndicationColor_8);
+
+  // Inverted Object Status
+  --fdObjectStatus_Inverted_Border_Width: 0;
+  --fdObjectStatus_Inverted_Underline_Width: 0;
+  --fdObjectStatus_Inverted_Min_Width: 1.25rem;
+  --fdObjectStatus_Inverted_Padding: 0.0625rem 0.25rem;
+  --fdObjectStatus_Inverted_Line_Height: 1.125rem;
+  --fdObjectStatus_Inverted_Border_Radius: 0.25rem;
+  --fdObjectStatus_Inverted_Large_Font_Family: var(--sapFontLightFamily);
+  --fdObjectStatus_Inverted_Neutral_Background_Regular: var(--sapButton_Neutral_Background);
+  --fdObjectStatus_Inverted_Neutral_Color_Regular: var(--sapButton_Neutral_TextColor);
+  --fdObjectStatus_Inverted_Neutral_Border_Color_Regular: var(--sapNeutralBorderColor);
+  --fdObjectStatus_Inverted_Box_Shadow: none;
+  --fdObjectStatus_Inverted_Outline_Color: var(--sapContent_ContrastFocusColor);
+  --fdObjectStatus_Background_Indication_Color_1: var(--sapIndicationColor_1);
+  --fdObjectStatus_Background_Indication_Color_2: var(--sapIndicationColor_2);
+  --fdObjectStatus_Background_Indication_Color_3: var(--sapIndicationColor_3);
+  --fdObjectStatus_Background_Indication_Color_4: var(--sapIndicationColor_4);
+  --fdObjectStatus_Background_Indication_Color_5: var(--sapIndicationColor_5);
+  --fdObjectStatus_Background_Indication_Color_6: var(--sapIndicationColor_6);
+  --fdObjectStatus_Background_Indication_Color_7: var(--sapIndicationColor_7);
+  --fdObjectStatus_Background_Indication_Color_8: var(--sapIndicationColor_8);
+  --fdObjectStatus_Background_Indication_Color_9: var(--sapIndicationColor_9);
+  --fdObjectStatus_Background_Indication_Color_10: var(--sapIndicationColor_10);
+  --fdObjectStatus_Active_Text_Indication_Color_1: var(--sapIndicationColor_1_TextColor);
+  --fdObjectStatus_Active_Text_Indication_Color_2: var(--sapIndicationColor_2_TextColor);
+  --fdObjectStatus_Active_Text_Indication_Color_3: var(--sapIndicationColor_3_TextColor);
+  --fdObjectStatus_Active_Text_Indication_Color_4: var(--sapIndicationColor_4_TextColor);
+  --fdObjectStatus_Active_Text_Indication_Color_5: var(--sapIndicationColor_5_TextColor);
+  --fdObjectStatus_Active_Text_Indication_Color_6: var(--sapIndicationColor_6_TextColor);
+  --fdObjectStatus_Active_Text_Indication_Color_7: var(--sapIndicationColor_7_TextColor);
+  --fdObjectStatus_Active_Text_Indication_Color_8: var(--sapIndicationColor_8_TextColor);
+  --fdObjectStatus_Active_Text_Indication_Color_9: var(--sapIndicationColor_9_TextColor);
+  --fdObjectStatus_Active_Text_Indication_Color_10: var(--sapIndicationColor_10_TextColor);
+}

@@ -1,6 +1,7 @@
 import truncateExampleExampleHtml from "./truncate-example.example.html?raw";
 import invertedIndicationExampleHtml from "./inverted-indication.example.html?raw";
 import invertedExampleHtml from "./inverted.example.html?raw";
+import invertedStatesExampleHtml from "./inverted-states.example.html?raw";
 import largeObjectStatusExampleHtml from "./large-object-status.example.html?raw";
 import clickableObjectStatusExampleHtml from "./clickable-object-status.example.html?raw";
 import genericIndicationColorsExampleHtml from "./generic-indication-colors.example.html?raw";
@@ -84,6 +85,16 @@ Inverted.parameters = {
  Inverted Object Status(optional inverted visualization) determines whether the background color reflects the set state
  instead of the control's text. Use the inverted object status if the information is crucial for the user’s actions and needs to stand out visually.
  Inverted Object Status is achieved by adding the \`fd-object-status--inverted\` modifier class.
+            `
+    }
+  }
+};
+export const InvertedStates = () => invertedStatesExampleHtml;
+InvertedStates.parameters = {
+  docs: {
+    description: {
+      story: `
+ 
             `
     }
   }

@@ -1,0 +1,68 @@
+:root {
+  --fdObjectStatus_TextDecoration_Regular: underline;
+  --fdObjectStatus_TextDecoration_Hover: none;
+  --fdObjectStatus_TextDecoration_Down: none;
+  --fdObjectStatus_TextDecoration_Visited: underline;
+  --fdObjectStatus_TextDecoration_Focus: underline;
+
+  // Focus State
+  --fdObjectStatus_Focus_Background: var(--sapContent_FocusColor);
+  --fdObjectStatus_Focus_Border_Radius: 0.125rem;
+  --fdObjectStatus_Focus_Outline: 0.125rem solid var(--sapContent_FocusColor);
+  --fdObjectStatus_Positive_Color_Focus: var(--sapContent_ContrastTextColor);
+  --fdObjectStatus_Positive_IconColor_Focus: var(--sapContent_ContrastTextColor);
+  --fdObjectStatus_Critical_Color_Focus: var(--sapContent_ContrastTextColor);
+  --fdObjectStatus_Critical_IconColor_Focus: var(--sapContent_ContrastTextColor);
+  --fdObjectStatus_Negative_Color_Focus: var(--sapContent_ContrastTextColor);
+  --fdObjectStatus_Negative_IconColor_Focus: var(--sapContent_ContrastTextColor);
+  --fdObjectStatus_Informative_Color_Focus: var(--sapContent_ContrastTextColor);
+  --fdObjectStatus_Informative_IconColor_Focus: var(--sapContent_ContrastTextColor);
+  --fdObjectStatus_Neutral_Color_Focus: var(--sapContent_ContrastTextColor);
+  --fdObjectStatus_Neutral_IconColor_Focus: var(--sapContent_ContrastTextColor);
+  --fdObjectStatus_Accent_Color_1_Focus: var(--sapContent_ContrastTextColor);
+  --fdObjectStatus_Accent_Color_2_Focus: var(--sapContent_ContrastTextColor);
+  --fdObjectStatus_Accent_Color_3_Focus: var(--sapContent_ContrastTextColor);
+  --fdObjectStatus_Accent_Color_4_Focus: var(--sapContent_ContrastTextColor);
+  --fdObjectStatus_Accent_Color_5_Focus: var(--sapContent_ContrastTextColor);
+  --fdObjectStatus_Accent_Color_6_Focus: var(--sapContent_ContrastTextColor);
+  --fdObjectStatus_Accent_Color_7_Focus: var(--sapContent_ContrastTextColor);
+  --fdObjectStatus_Accent_Color_8_Focus: var(--sapContent_ContrastTextColor);
+
+  // Inverted Object Status
+  --fdObjectStatus_Inverted_Border_Width: 0.0625rem;
+  --fdObjectStatus_Inverted_Underline_Width: 0.125rem;
+  --fdObjectStatus_Inverted_Min_Width: 1.375rem;
+  --fdObjectStatus_Inverted_Padding: 0.1875rem 0.25rem;
+  --fdObjectStatus_Inverted_Line_Height: 1.375rem;
+  --fdObjectStatus_Inverted_Border_Radius: var(--sapButton_BorderCornerRadius);
+  --fdObjectStatus_Inverted_Large_Font_Family: var(--sapFontSemiBoldFamily);
+  --fdObjectStatus_Inverted_Neutral_Background_Regular: var(--sapNeutralBackground);
+  --fdObjectStatus_Inverted_Neutral_Color_Regular: var(--sapTextColor);
+  --fdObjectStatus_Inverted_Neutral_Border_Color_Regular: var(--sapNeutralBorderColor);
+  --fdObjectStatus_Inverted_Box_Shadow: inset 0 0 0 0.125rem var(--sapContent_ContrastFocusColor);
+  --fdObjectStatus_Inverted_Outline_Color: var(--sapContent_FocusColor);
+  --fdObjectStatus_Inverted_Icon_Color_Selected_Negative: var(--sapNegativeElementColor);
+  --fdObjectStatus_Inverted_Icon_Color_Selected_Critical: var(--sapCriticalElementColor);
+  --fdObjectStatus_Inverted_Icon_Color_Selected_Positive: var(--sapPositiveElementColor);
+  --fdObjectStatus_Inverted_Icon_Color_Selected_Informative: var(--sapInformativeElementColor);
+  --fdObjectStatus_Background_Indication_Color_1: var(--sapIndicationColor_1_Background);
+  --fdObjectStatus_Background_Indication_Color_2: var(--sapIndicationColor_2_Background);
+  --fdObjectStatus_Background_Indication_Color_3: var(--sapIndicationColor_3_Background);
+  --fdObjectStatus_Background_Indication_Color_4: var(--sapIndicationColor_4_Background);
+  --fdObjectStatus_Background_Indication_Color_5: var(--sapIndicationColor_5_Background);
+  --fdObjectStatus_Background_Indication_Color_6: var(--sapIndicationColor_6_Background);
+  --fdObjectStatus_Background_Indication_Color_7: var(--sapIndicationColor_7_Background);
+  --fdObjectStatus_Background_Indication_Color_8: var(--sapIndicationColor_8_Background);
+  --fdObjectStatus_Background_Indication_Color_9: var(--sapIndicationColor_9_Background);
+  --fdObjectStatus_Background_Indication_Color_10: var(--sapIndicationColor_10_Background);
+  --fdObjectStatus_Active_Text_Indication_Color_1: var(--sapIndicationColor_1_Active_TextColor);
+  --fdObjectStatus_Active_Text_Indication_Color_2: var(--sapIndicationColor_2_Active_TextColor);
+  --fdObjectStatus_Active_Text_Indication_Color_3: var(--sapIndicationColor_3_Active_TextColor);
+  --fdObjectStatus_Active_Text_Indication_Color_4: var(--sapIndicationColor_4_Active_TextColor);
+  --fdObjectStatus_Active_Text_Indication_Color_5: var(--sapIndicationColor_5_Active_TextColor);
+  --fdObjectStatus_Active_Text_Indication_Color_6: var(--sapIndicationColor_6_Active_TextColor);
+  --fdObjectStatus_Active_Text_Indication_Color_7: var(--sapIndicationColor_7_Active_TextColor);
+  --fdObjectStatus_Active_Text_Indication_Color_8: var(--sapIndicationColor_8_Active_TextColor);
+  --fdObjectStatus_Active_Text_Indication_Color_9: var(--sapIndicationColor_9_Active_TextColor);
+  --fdObjectStatus_Active_Text_Indication_Color_10: var(--sapIndicationColor_10_Active_TextColor);
+}
