@@ -1,11 +1,12 @@
 kind: Component
 metadata:
   displayName: Fundamental Library Styles
-  description: SAP Fiori, theme-able, accessible component library for building SAP user interfaces with any web technology.
+  description: SAP Design System component library for building web applications.
   labels:
     language: CSS
   tags:
     fiori
+    SAP Design System
     UX
     HTML
     CSS

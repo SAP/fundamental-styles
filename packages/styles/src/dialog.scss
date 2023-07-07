@@ -2,18 +2,6 @@
 @import "./mixins";
 @import "./dialog-placeholders";
 
-/*!
-  .fd-dialog+(--active)
-    .fd-dialog__content+(--s, --m, --l, --xl, --draggable-grab, --draggable-grabbing, --mobile, --no-mobile-stretch)
-      .fd-dialog__header
-        .fd-dialog__title
-      .fd-dialog__subheader
-      .fd-dialog__body+(--no-vertical-padding, --no-horizontal-padding)
-      .fd-dialog__loader
-      .fd-dialog__footer
-        .fd-dialog__decisive-button
-      .fd-dialog__resize-handle
-*/
 $block: #{$fd-namespace}-dialog;
 $bar: #{$fd-namespace}-bar;
 $button: #{$fd-namespace}-button;

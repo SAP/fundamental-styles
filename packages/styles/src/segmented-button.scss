@@ -2,10 +2,6 @@
 @import "./mixins";
 @import "./mixins/button/button-helper";
 
-/*!
-.fd-segmented-button
-    button
-*/
 $block: #{$fd-namespace}-segmented-button;
 
 .#{$block} {

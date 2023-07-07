@@ -1,12 +1,6 @@
 @import "./new-settings";
 @import "./mixins";
 
-/*!
-.fd-breadcrumb
-    .fd-breadcrumb__item
-    .fd-breadcrump__link
-*/
-
 $fd-breadcrumb-spacing: 0.25rem;
 
 $fd-breadcrumb-separator-color: var(--sapContent_LabelColor);

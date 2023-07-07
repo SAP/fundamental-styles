@@ -1,9 +1,6 @@
 @import "./new-settings";
 @import "./mixins";
 
-/*!
-.fd-code
-*/
 $block: #{$fd-namespace}-code;
 
 .#{$block} {

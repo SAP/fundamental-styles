@@ -2,11 +2,6 @@
 @import "./mixins";
 @import "./mixins/button/button-helper";
 
-/*!
-.fd-input-group+(--inline, --control)
-    .fd-input-group__addon+(--button)
-*/
-
 $block: #{$fd-namespace}-input-group;
 $fd-input-padding: 0.625rem;
 $fd-input-border-radius: var(--sapField_BorderCornerRadius);

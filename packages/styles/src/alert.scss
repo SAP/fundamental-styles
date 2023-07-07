@@ -1,10 +1,6 @@
 @import "./new-settings";
 @import "./mixins";
 
-/*!
-.fd-alert+(--information, --success, --warning, --error, --no-icon)
-    .fd-alert__close
-*/
 $block: #{$fd-namespace}-alert;
 
 .#{$block} {

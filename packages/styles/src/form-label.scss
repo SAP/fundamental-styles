@@ -1,9 +1,6 @@
 @import './new-settings';
 @import './mixins';
 
-/*!
-.fd-form-label
-*/
 $block: #{$fd-namespace}-form-label;
 
 .#{$block} {

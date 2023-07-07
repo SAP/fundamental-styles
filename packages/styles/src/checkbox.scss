@@ -1,9 +1,6 @@
 @import "./new-settings";
 @import "./mixins";
 
-/*!
-.fd-checkbox
-*/
 $block: #{$fd-namespace}-checkbox;
 $blockCheckmark: #{$fd-namespace}-checkbox__checkmark;
 

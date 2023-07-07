@@ -6,15 +6,6 @@
 @import "./mixins/table/table-no-borders";
 @import "./mixins/table/table-group-and-tree";
 
-/*!
-.fd-table(--compact, --condensed, --no-horizontal-borders, --no-vertical-borders, --fixed, --hidden, --tree, --group)
-    thead(.fd-table__header(--no-horizontal-borders, --no-vertical-borders))
-    tbody(.fd-table__body(--no-horizontal-borders, --no-vertical-borders))
-    tfoot(.fd-table__footer)
-        tr(.fd-table__row)([aria-selected])
-          td(.fd-table__cell(--status-indicator, --checkbox, --fit-content, --fixed, --expand, --group)) + semantic
-*/
-
 $block: #{$fd-namespace}-table;
 
 $table-z-index: (

@@ -2,10 +2,6 @@
 @import "./mixins";
 @import "./mixins/button/button-helper";
 
-/*!
-.fd-button-split
-    button
-*/
 $block: #{$fd-namespace}-button-split;
 
 $split-button-states: (

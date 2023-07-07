@@ -1,18 +1,6 @@
 @import "./new-settings";
 @import "./mixins";
 
-/*!
-.fd-calendar+(--compact, --mobile-landscape, --mobile-portrait)
-    .fd-calendar__header
-      .fd-calendar__action(+[--arrow-left, --arrow-right])
-    .fd-calendar__content(+[--months, --years])
-      .fd-calendar__group
-        .fd-calendar__row
-          .fd-calendar__item(+[--other-month, --today, --side-helper, --weekend, --range, --legend(+[-1, -2, ..., -19, -20])],
-                              +[(.is-disabled | [aria-disabled=true]), (.is-focus | [aria-focus=true]), (.is-active | [aria-active=true])])
-            .fd-calendar__text-wrapper
-              .fd-calendar__text
-*/
 $block: #{$fd-namespace}-calendar;
 
 // Special Days

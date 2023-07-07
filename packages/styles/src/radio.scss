@@ -1,9 +1,6 @@
 @import "./new-settings";
 @import "./mixins";
 
-/*!
-.fd-radio
-*/
 $block: #{$fd-namespace}-radio;
 
 %fd-radio-input-hidden {

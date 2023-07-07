@@ -1,9 +1,6 @@
 @import './new-settings';
 @import './mixins';
 
-/*!
-.fd-grid-list
-*/
 $block: #{$fd-namespace}-grid-list;
 $block-item: #{$block}__item;
 

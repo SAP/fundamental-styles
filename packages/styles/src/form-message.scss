@@ -1,9 +1,6 @@
 @import "./new-settings";
 @import "./mixins";
 
-/*!
-.fd-form-message(--help, --error, --warning)
-*/
 $block: #{$fd-namespace}-form-message;
 
 $form-message-states: (
