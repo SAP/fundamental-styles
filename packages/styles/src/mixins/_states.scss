@@ -185,15 +185,25 @@
   }
 }
 
+// NAVIGATED state
 @mixin fd-navigated {
   &.is-navigated {
     @content;
   }
 }
 
+// HIDDEN state
 @mixin fd-hidden {
   &[aria-hidden="true"],
   &.is-hidden {
+    @content;
+  }
+}
+
+// VISITED state
+@mixin fd-visited {
+  &:visited,
+  &.is-visited {
     @content;
   }
 }

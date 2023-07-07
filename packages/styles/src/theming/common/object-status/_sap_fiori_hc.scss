@@ -1,0 +1,8 @@
+@import "./sap_fiori";
+
+:root {
+  --fdObjectStatus_Inverted_Border_Width: 0.0625rem;
+  --fdObjectStatus_Inverted_Underline_Width: 0;
+  --fdObjectStatus_Inverted_Box_Shadow: none;
+  --fdObjectStatus_Inverted_Outline_Color: var(--sapContent_ContrastFocusColor);
+}

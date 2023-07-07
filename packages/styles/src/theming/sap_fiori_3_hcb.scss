@@ -45,10 +45,10 @@
 @import "./common/token/sap_fiori_hc";
 @import "./common/calendar/sap_fiori";
 @import "./common/step-input/sap_fiori";
+@import "./common/object-status/sap_fiori_hc";
 @import "./sap_fiori_3_hcb/css_variables";
 
 :root {
-  --fdInverted_Object_Border_Width: 0.0625rem;
   --fdOverlay_Background_Opacity: 0.8;
 
   /* Dynamic Page Layout */

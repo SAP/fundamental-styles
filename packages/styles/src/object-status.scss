@@ -5,105 +5,628 @@
 $block: #{$fd-namespace}-object-status;
 
 $color-states: (
-  "positive": ("color": var(--sapPositiveTextColor), "iconColor": var(--sapPositiveElementColor)),
-  "critical": ("color": var(--sapCriticalTextColor), "iconColor": var(--sapCriticalElementColor)),
-  "negative": ("color": var(--sapNegativeTextColor), "iconColor": var(--sapNegativeElementColor)),
-  "informative": ("color": var(--sapInformativeTextColor), "iconColor": var(--sapInformativeElementColor)),
-  "neutral": ("color": var(--sapNeutralTextColor), "iconColor": var(--sapNeutralElementColor))
+  "positive": (
+    "color": var(--sapPositiveTextColor),
+    "iconColor": var(--sapPositiveElementColor),
+    "focusColor": var(--fdObjectStatus_Positive_Color_Focus),
+    "iconFocusColor": var(--fdObjectStatus_Positive_IconColor_Focus),
+  ),
+  "critical": (
+    "color": var(--sapCriticalTextColor),
+    "iconColor": var(--sapCriticalElementColor),
+    "focusColor": var(--fdObjectStatus_Critical_Color_Focus),
+    "iconFocusColor": var(--fdObjectStatus_Critical_IconColor_Focus),
+  ),
+  "negative": (
+    "color": var(--sapNegativeTextColor),
+    "iconColor": var(--sapNegativeElementColor),
+    "focusColor": var(--fdObjectStatus_Negative_Color_Focus),
+    "iconFocusColor": var(--fdObjectStatus_Negative_IconColor_Focus),
+  ),
+  "informative": (
+    "color": var(--sapInformativeTextColor),
+    "iconColor": var(--sapInformativeElementColor),
+    "focusColor": var(--fdObjectStatus_Informative_Color_Focus),
+    "iconFocusColor": var(--fdObjectStatus_Informative_IconColor_Focus),
+  ),
+  "neutral": (
+    "color": var(--sapNeutralTextColor),
+    "iconColor": var(--sapNeutralElementColor),
+    "focusColor": var(--fdObjectStatus_Neutral_Color_Focus),
+    "iconFocusColor": var(--fdObjectStatus_Neutral_IconColor_Focus),
+  )
 );
 
 $color-accents: (
-  "1": ("color": var(--sapIndicationColor_1), "visited": var(--sapIndicationColor_1)),
-  "2": ("color": var(--sapIndicationColor_2), "visited": var(--sapIndicationColor_2)),
-  "3": ("color": var(--sapIndicationColor_3), "visited": var(--sapIndicationColor_3)),
-  "4": ("color": var(--sapIndicationColor_4), "visited": var(--sapIndicationColor_4)),
-  "5": ("color": var(--sapIndicationColor_5), "visited": var(--sapIndicationColor_5)),
-  "6": ("color": var(--sapAccentColor7), "visited": var(--sapAccentColor7)),
-  "7": ("color": var(--sapAccentColor9), "visited": var(--sapAccentColor9)),
-  "8": ("color": var(--sapAccentColor4), "visited": var(--sapAccentColor4))
+  "1": (
+    "color": var(--sapIndicationColor_1),
+    "visited": var(--sapIndicationColor_1),
+    "focus": var(--fdObjectStatus_Accent_Color_1_Focus)
+  ),
+  "2": (
+    "color": var(--sapIndicationColor_2),
+    "visited": var(--sapIndicationColor_2),
+    "focus": var(--fdObjectStatus_Accent_Color_2_Focus)
+  ),
+  "3": (
+    "color": var(--sapIndicationColor_3),
+    "visited": var(--sapIndicationColor_3),
+    "focus": var(--fdObjectStatus_Accent_Color_3_Focus)
+  ),
+  "4": (
+    "color": var(--sapIndicationColor_4),
+    "visited": var(--sapIndicationColor_4),
+    "focus": var(--fdObjectStatus_Accent_Color_4_Focus)
+  ),
+  "5": (
+    "color": var(--sapIndicationColor_5),
+    "visited": var(--sapIndicationColor_5),
+    "focus": var(--fdObjectStatus_Accent_Color_5_Focus)
+  ),
+  "6": (
+    "color": var(--sapIndicationColor_6),
+    "visited": var(--sapIndicationColor_6),
+    "focus": var(--fdObjectStatus_Accent_Color_6_Focus)
+  ),
+  "7": (
+    "color": var(--sapIndicationColor_7),
+    "visited": var(--sapIndicationColor_7),
+    "focus": var(--fdObjectStatus_Accent_Color_7_Focus)
+  ),
+  "8": (
+    "color": var(--sapIndicationColor_8),
+    "visited": var(--sapIndicationColor_8),
+    "focus": var(--fdObjectStatus_Accent_Color_8_Focus)
+  )
 );
 
 $inverted-color-states: (
   "neutral": (
-    "regular": ("color": var(--sapButton_Neutral_TextColor), "background": var(--sapButton_Neutral_Background), "borderColor": var(--sapButton_Neutral_Hover_BorderColor)),
-    "hover": ("color": var(--sapButton_Neutral_Hover_TextColor), "background": var(--sapButton_Neutral_Hover_Background)),
-    "active": ("color": var(--sapButton_Active_TextColor), "background": var(--sapButton_Neutral_Active_Background)),
-    "visited": ("color": var(--sapButton_Neutral_TextColor), "background": var(--sapButton_Neutral_Background)),
+    "regular": (
+      "color": var(--fdObjectStatus_Inverted_Neutral_Color_Regular),
+      "background": var(--fdObjectStatus_Inverted_Neutral_Background_Regular),
+      "borderColor": var(--fdObjectStatus_Inverted_Neutral_Border_Color_Regular)
+    ),
+    "hover": (
+      "color": var(--sapButton_Neutral_Hover_TextColor),
+      "background": var(--sapButton_Neutral_Hover_Background),
+      "borderColor": var(--sapButton_Neutral_Hover_BorderColor)
+    ),
+    "active": (
+      "color": var(--sapButton_Selected_TextColor),
+      "iconColor": var(--sapButton_Selected_TextColor),
+      "background": var(--sapButton_Neutral_Active_Background),
+      "borderColor": var(--sapButton_Neutral_Active_BorderColor)
+    ),
+    "visited": (
+      "color": var(--sapTextColor),
+      "background": var(--sapNeutralBackground),
+      "borderColor": var(--sapNeutralBorderColor)
+    ),
+    "selected": (
+      "color": var(--sapButton_Selected_TextColor),
+      "iconColor": var(--sapButton_Selected_TextColor),
+      "background": var(--sapButton_Selected_Background),
+      "borderColor": var(--sapButton_Selected_BorderColor),
+      "underline": var(--sapButton_Selected_BorderColor)
+    ),
+    "selectedHover": (
+      "color": var(--sapButton_Selected_TextColor),
+      "iconColor": var(--sapButton_Selected_TextColor),
+      "background": var(--sapButton_Selected_Hover_Background),
+      "borderColor": var(--sapButton_Selected_BorderColor),
+      "underline": var(--sapButton_Selected_BorderColor)
+    )
   ),
   "positive": (
-    "regular": ("color": var(--sapButton_Success_TextColor), "background": var(--sapButton_Success_Background), "borderColor": var(--sapButton_Success_BorderColor)),
-    "hover": ("color": var(--sapButton_Success_Hover_TextColor), "background": var(--sapButton_Success_Hover_Background)),
-    "active": ("color": var(--sapButton_Active_TextColor), "background": var(--sapButton_Success_Active_Background)),
-    "visited": ("color": var(--sapButton_Critical_TextColor), "background": var(--sapButton_Success_Background)),
+    "regular": (
+      "color": var(--sapButton_Success_TextColor),
+      "background": var(--sapButton_Success_Background),
+      "borderColor": var(--sapButton_Success_BorderColor)
+    ),
+    "hover": (
+      "color": var(--sapButton_Success_Hover_TextColor),
+      "background": var(--sapButton_Success_Hover_Background),
+      "borderColor": var(--sapButton_Success_Hover_BorderColor)
+    ),
+    "active": (
+      "color": var(--sapButton_Accept_Selected_TextColor),
+      "iconColor": var(--sapButton_Accept_Selected_TextColor),
+      "background": var(--sapButton_Success_Active_Background),
+      "borderColor": var(--sapButton_Success_Active_BorderColor)
+    ),
+    "visited": (
+      "color": var(--sapButton_Critical_TextColor),
+      "background": var(--sapButton_Success_Background),
+      "borderColor": var(--sapButton_Success_BorderColor)
+    ),
+    "selected": (
+      "color": var(--sapButton_Accept_Selected_TextColor),
+      "iconColor": var(--fdObjectStatus_Inverted_Icon_Color_Selected_Positive),
+      "background": var(--sapButton_Accept_Selected_Background),
+      "borderColor": var(--sapButton_Accept_Selected_BorderColor),
+      "underline": var(--sapPositiveElementColor)
+    ),
+    "selectedHover": (
+      "color": var(--sapButton_Accept_Selected_TextColor),
+      "iconColor": var(--fdObjectStatus_Inverted_Icon_Color_Selected_Positive),
+      "background": var(--sapButton_Accept_Selected_Hover_Background),
+      "borderColor": var(--sapButton_Accept_Selected_Hover_BorderColor),
+      "underline": var(--sapPositiveElementColor)
+    )
   ),
   "critical": (
-    "regular": ("color": var(--sapButton_Critical_TextColor), "background": var(--sapButton_Critical_Background), "borderColor": var(--sapButton_Critical_BorderColor)),
-    "hover": ("color": var(--sapButton_Critical_Hover_TextColor), "background": var(--sapButton_Critical_Hover_Background)),
-    "active": ("color": var(--sapButton_Active_TextColor), "background": var(--sapButton_Critical_Active_Background)),
-    "visited": ("color": var(--sapButton_Critical_TextColor), "background": var(--sapButton_Critical_Background)),
+    "regular": (
+      "color": var(--sapButton_Critical_TextColor),
+      "background": var(--sapButton_Critical_Background),
+      "borderColor": var(--sapButton_Critical_BorderColor)
+    ),
+    "hover": (
+      "color": var(--sapButton_Critical_Hover_TextColor),
+      "background": var(--sapButton_Critical_Hover_Background),
+      "borderColor": var(--sapButton_Critical_Hover_BorderColor)
+    ),
+    "active": (
+      "color": var(--sapButton_Attention_Selected_TextColor),
+      "iconColor": var(--sapButton_Attention_Selected_TextColor),
+      "background": var(--sapButton_Critical_Active_Background),
+      "borderColor": var(--sapButton_Critical_Active_BorderColor)
+    ),
+    "visited": (
+      "color": var(--sapButton_Critical_TextColor),
+      "background": var(--sapButton_Critical_Background),
+      "borderColor": var(--sapButton_Critical_BorderColor)
+    ),
+    "selected": (
+      "color": var(--sapButton_Attention_Selected_TextColor),
+      "iconColor": var(--fdObjectStatus_Inverted_Icon_Color_Selected_Critical),
+      "background": var(--sapButton_Attention_Selected_Background),
+      "borderColor": var(--sapButton_Attention_Selected_BorderColor),
+      "underline": var(--sapCriticalElementColor)
+    ),
+    "selectedHover": (
+      "color": var(--sapButton_Attention_Selected_TextColor),
+      "iconColor": var(--fdObjectStatus_Inverted_Icon_Color_Selected_Critical),
+      "background": var(--sapButton_Attention_Selected_Hover_Background),
+      "borderColor": var(--sapButton_Attention_Selected_Hover_BorderColor),
+      "underline": var(--sapCriticalElementColor)
+    )
   ),
   "negative": (
-    "regular": ("color": var(--sapButton_Negative_TextColor),"background": var(--sapButton_Negative_Background), "borderColor": var(--sapButton_Negative_BorderColor)),
-    "hover": ("color": var(--sapButton_Negative_Hover_TextColor), "background": var(--sapButton_Negative_Hover_Background)),
-    "active": ("color": var(--sapButton_Active_TextColor),"background": var(--sapButton_Negative_Active_Background)),
-    "visited": ("color": var(--sapButton_Negative_TextColor), "background": var(--sapButton_Negative_Background)),
+    "regular": (
+      "color": var(--sapButton_Negative_TextColor),
+      "background": var(--sapButton_Negative_Background),
+      "borderColor": var(--sapButton_Negative_BorderColor)
+    ),
+    "hover": (
+      "color": var(--sapButton_Negative_Hover_TextColor),
+      "background": var(--sapButton_Negative_Hover_Background),
+      "borderColor": var(--sapButton_Negative_Hover_BorderColor)
+    ),
+    "active": (
+      "color": var(--sapButton_Reject_Selected_TextColor),
+      "iconColor": var(--sapButton_Reject_Selected_TextColor),
+      "background": var(--sapButton_Negative_Active_Background),
+      "borderColor": var(--sapButton_Negative_Active_BorderColor)
+    ),
+    "visited": (
+      "color": var(--sapButton_Negative_Background),
+      "background": var(--sapButton_Negative_TextColor)
+    ),
+    "selected": (
+      "color": var(--sapButton_Reject_Selected_TextColor),
+      "iconColor": var(--fdObjectStatus_Inverted_Icon_Color_Selected_Negative),
+      "background": var(--sapButton_Reject_Selected_Background),
+      "borderColor": var(--sapButton_Reject_Selected_BorderColor),
+      "underline": var(--sapNegativeElementColor)
+    ),
+    "selectedHover": (
+      "color": var(--sapButton_Reject_Selected_TextColor),
+      "iconColor": var(--fdObjectStatus_Inverted_Icon_Color_Selected_Negative),
+      "background": var(--sapButton_Reject_Selected_Hover_Background),
+      "borderColor": var(--sapButton_Reject_Selected_Hover_BorderColor),
+      "underline": var(--sapNegativeElementColor)
+    )
   ),
   "informative": (
-    "regular": ("color": var(--sapButton_Information_TextColor), "background": var(--sapButton_Information_Background), "borderColor": var(--sapButton_Information_BorderColor)),
-    "hover": ("color": var(--sapButton_Information_Hover_TextColor), "background": var(--sapButton_Information_Hover_Background)),
-    "active": ("color": var(--sapButton_Active_TextColor), "background": var(--sapButton_Information_Active_Background)),
-    "visited": ("color": var(--sapButton_Information_TextColor), "background": var(--sapButton_Information_Background)),
+    "regular": (
+      "color": var(--sapButton_Information_TextColor),
+      "background": var(--sapButton_Information_Background),
+      "borderColor": var(--sapButton_Information_BorderColor)
+    ),
+    "hover": (
+      "color": var(--sapButton_Information_Hover_TextColor),
+      "background": var(--sapButton_Information_Hover_Background),
+      "borderColor": var(--sapButton_Information_Hover_BorderColor)
+    ),
+    "active": (
+      "color": var(--sapButton_Selected_TextColor),
+      "iconColor": var(--sapButton_Selected_TextColor),
+      "background": var(--sapButton_Information_Active_Background),
+      "borderColor": var(--sapButton_Information_Active_BorderColor)
+    ),
+    "visited": (
+      "color": var(--sapButton_Information_TextColor),
+      "background": var(--sapButton_Information_Background),
+      "borderColor": var(--sapButton_Information_BorderColor)
+    ),
+    "selected": (
+      "color": var(--sapButton_Selected_TextColor),
+      "iconColor": var(--fdObjectStatus_Inverted_Icon_Color_Selected_Informative),
+      "background": var(--sapButton_Selected_Background),
+      "borderColor": var(--sapButton_Selected_BorderColor),
+      "underline": var(--sapInformativeElementColor)
+    ),
+    "selectedHover": (
+      "color": var(--sapButton_Selected_TextColor),
+      "iconColor": var(--fdObjectStatus_Inverted_Icon_Color_Selected_Informative),
+      "background": var(--sapButton_Selected_Hover_Background),
+      "borderColor": var(--sapButton_Selected_Hover_BorderColor),
+      "underline": var(--sapInformativeElementColor)
+    )
   ),
 );
 
 $inverted-color-accents: (
   "1": (
-    "regular": ("color": var(--sapIndicationColor_1_TextColor), "background": var(--sapIndicationColor_1)),
-    "hover": ("color": var(--sapIndicationColor_1_TextColor), "background": var(--sapIndicationColor_1_Hover_Background)),
-    "active": ("color": var(--sapIndicationColor_1_TextColor), "background": var(--sapIndicationColor_1_Active_Background)),
-    "visited": ("color": var(--sapIndicationColor_1_TextColor), "background": var(--sapIndicationColor_1)),
+    "regular": (
+      "color": var(--sapIndicationColor_1_TextColor),
+      "background": var(--fdObjectStatus_Background_Indication_Color_1),
+      "borderColor": var(--sapIndicationColor_1_BorderColor),
+    ),
+    "hover": (
+      "color": var(--sapIndicationColor_1_TextColor),
+      "background": var(--sapIndicationColor_1_Hover_Background),
+      "borderColor": var(--sapIndicationColor_1_BorderColor),
+    ),
+    "active": (
+      "color": var(--fdObjectStatus_Active_Text_Indication_Color_1),
+      "background": var(--sapIndicationColor_1_Active_Background),
+      "borderColor": var(--sapIndicationColor_1_Active_BorderColor),
+    ),
+    "visited": (
+      "color": var(--sapIndicationColor_1_Active_TextColor),
+      "background": var(--sapIndicationColor_1),
+      "borderColor": var(--sapIndicationColor_1_Active_BorderColor),
+    ),
+    "selected": (
+      "color": var(--sapIndicationColor_1_Selected_TextColor),
+      "iconColor": var(--sapIndicationColor_1_Selected_TextColor),
+      "background": var(--sapIndicationColor_1_Selected_Background),
+      "borderColor": var(--sapIndicationColor_1_Selected_BorderColor),
+      "underline": var(--sapIndicationColor_1)
+    ),
+    "selectedHover": (
+      "color": var(--sapIndicationColor_1_Selected_TextColor),
+      "iconColor": var(--sapIndicationColor_1_Selected_TextColor),
+      "background": var(--sapIndicationColor_1_Selected_Background),
+      "borderColor": var(--sapIndicationColor_1_Selected_BorderColor),
+      "underline": var(--sapIndicationColor_1)
+    )
   ),
   "2": (
-    "regular": ("color": var(--sapIndicationColor_2_TextColor), "background": var(--sapIndicationColor_2)),
-    "hover": ("color": var(--sapIndicationColor_2_TextColor), "background": var(--sapIndicationColor_2_Hover_Background)),
-    "active": ("color": var(--sapIndicationColor_2_TextColor), "background": var(--sapIndicationColor_2_Active_Background)),
-    "visited": ("color": var(--sapIndicationColor_2_TextColor), "background": var(--sapIndicationColor_2)),
+    "regular": (
+      "color": var(--sapIndicationColor_2_TextColor),
+      "background": var(--fdObjectStatus_Background_Indication_Color_2),
+      "borderColor": var(--sapIndicationColor_2_BorderColor),
+    ),
+    "hover": (
+      "color": var(--sapIndicationColor_2_TextColor),
+      "background": var(--sapIndicationColor_2_Hover_Background),
+      "borderColor": var(--sapIndicationColor_2_BorderColor),
+    ),
+    "active": (
+      "color": var(--fdObjectStatus_Active_Text_Indication_Color_2),
+      "background": var(--sapIndicationColor_2_Active_Background),
+      "borderColor": var(--sapIndicationColor_2_Active_BorderColor),
+    ),
+    "visited": (
+      "color": var(--sapIndicationColor_2_Active_TextColor),
+      "background": var(--sapIndicationColor_2),
+      "borderColor": var(--sapIndicationColor_2_Active_BorderColor),
+    ),
+    "selected": (
+      "color": var(--sapIndicationColor_2_Selected_TextColor),
+      "iconColor": var(--sapIndicationColor_2_Selected_TextColor),
+      "background": var(--sapIndicationColor_2_Selected_Background),
+      "borderColor": var(--sapIndicationColor_2_Selected_BorderColor),
+      "underline": var(--sapIndicationColor_2)
+    ),
+    "selectedHover": (
+      "color": var(--sapIndicationColor_2_Selected_TextColor),
+      "iconColor": var(--sapIndicationColor_2_Selected_TextColor),
+      "background": var(--sapIndicationColor_2_Selected_Background),
+      "borderColor": var(--sapIndicationColor_2_Selected_BorderColor),
+      "underline": var(--sapIndicationColor_2)
+    )
   ),
   "3": (
-    "regular": ("color": var(--sapIndicationColor_3_TextColor), "background": var(--sapIndicationColor_3)),
-    "hover": ("color": var(--sapIndicationColor_3_TextColor), "background": var(--sapIndicationColor_3_Hover_Background)),
-    "active": ("color": var(--sapIndicationColor_3_TextColor), "background": var(--sapIndicationColor_3_Active_Background)),
-    "visited": ("color": var(--sapIndicationColor_3_TextColor), "background": var(--sapIndicationColor_3)),
+    "regular": (
+      "color": var(--sapIndicationColor_3_TextColor),
+      "background": var(--fdObjectStatus_Background_Indication_Color_3),
+      "borderColor": var(--sapIndicationColor_3_BorderColor),
+    ),
+    "hover": (
+      "color": var(--sapIndicationColor_3_TextColor),
+      "background": var(--sapIndicationColor_3_Hover_Background),
+      "borderColor": var(--sapIndicationColor_3_BorderColor),
+    ),
+    "active": (
+      "color": var(--fdObjectStatus_Active_Text_Indication_Color_3),
+      "background": var(--sapIndicationColor_3_Active_Background),
+      "borderColor": var(--sapIndicationColor_3_Active_BorderColor),
+    ),
+    "visited": (
+      "color": var(--sapIndicationColor_3_Active_TextColor),
+      "background": var(--sapIndicationColor_3),
+      "borderColor": var(--sapIndicationColor_3_Active_BorderColor),
+    ),
+    "selected": (
+      "color": var(--sapIndicationColor_3_Selected_TextColor),
+      "iconColor": var(--sapIndicationColor_3_Selected_TextColor),
+      "background": var(--sapIndicationColor_3_Selected_Background),
+      "borderColor": var(--sapIndicationColor_3_Selected_BorderColor),
+      "underline": var(--sapIndicationColor_3)
+    ),
+    "selectedHover": (
+      "color": var(--sapIndicationColor_3_Selected_TextColor),
+      "iconColor": var(--sapIndicationColor_3_Selected_TextColor),
+      "background": var(--sapIndicationColor_3_Selected_Background),
+      "borderColor": var(--sapIndicationColor_3_Selected_BorderColor),
+      "underline": var(--sapIndicationColor_3)
+    )
   ),
   "4": (
-    "regular": ("color": var(--sapIndicationColor_4_TextColor), "background": var(--sapIndicationColor_4)),
-    "hover": ("color": var(--sapIndicationColor_4_TextColor), "background": var(--sapIndicationColor_4_Hover_Background)),
-    "active": ("color": var(--sapIndicationColor_4_TextColor), "background": var(--sapIndicationColor_4_Active_Background)),
-    "visited": ("color": var(--sapIndicationColor_4_TextColor), "background": var(--sapIndicationColor_4)),
+    "regular": (
+      "color": var(--sapIndicationColor_4_TextColor),
+      "background": var(--fdObjectStatus_Background_Indication_Color_4),
+      "borderColor": var(--sapIndicationColor_4_BorderColor),
+    ),
+    "hover": (
+      "color": var(--sapIndicationColor_4_TextColor),
+      "background": var(--sapIndicationColor_4_Hover_Background),
+      "borderColor": var(--sapIndicationColor_4_BorderColor),
+    ),
+    "active": (
+      "color": var(--fdObjectStatus_Active_Text_Indication_Color_4),
+      "background": var(--sapIndicationColor_4_Active_Background),
+      "borderColor": var(--sapIndicationColor_4_Active_BorderColor),
+    ),
+    "visited": (
+      "color": var(--sapIndicationColor_4_Active_TextColor),
+      "background": var(--sapIndicationColor_4),
+      "borderColor": var(--sapIndicationColor_4_Active_BorderColor),
+    ),
+    "selected": (
+      "color": var(--sapIndicationColor_4_Selected_TextColor),
+      "iconColor": var(--sapIndicationColor_4_Selected_TextColor),
+      "background": var(--sapIndicationColor_4_Selected_Background),
+      "borderColor": var(--sapIndicationColor_4_Selected_BorderColor),
+      "underline": var(--sapIndicationColor_4)
+    ),
+    "selectedHover": (
+      "color": var(--sapIndicationColor_4_Selected_TextColor),
+      "iconColor": var(--sapIndicationColor_4_Selected_TextColor),
+      "background": var(--sapIndicationColor_4_Selected_Background),
+      "borderColor": var(--sapIndicationColor_4_Selected_BorderColor),
+      "underline": var(--sapIndicationColor_4)
+    )
   ),
   "5": (
-    "regular": ("color": var(--sapIndicationColor_5_TextColor), "background": var(--sapIndicationColor_5)),
-    "hover": ("color": var(--sapIndicationColor_5_TextColor), "background": var(--sapIndicationColor_5_Hover_Background)),
-    "active": ("color": var(--sapIndicationColor_5_TextColor), "background": var(--sapIndicationColor_5_Active_Background)),
-    "visited": ("color": var(--sapIndicationColor_5_TextColor), "background": var(--sapIndicationColor_5)),
+    "regular": (
+      "color": var(--sapIndicationColor_5_TextColor),
+      "background": var(--fdObjectStatus_Background_Indication_Color_5),
+      "borderColor": var(--sapIndicationColor_5_BorderColor),
+    ),
+    "hover": (
+      "color": var(--sapIndicationColor_5_TextColor),
+      "background": var(--sapIndicationColor_5_Hover_Background),
+      "borderColor": var(--sapIndicationColor_5_BorderColor),
+    ),
+    "active": (
+      "color": var(--fdObjectStatus_Active_Text_Indication_Color_5),
+      "background": var(--sapIndicationColor_5_Active_Background),
+      "borderColor": var(--sapIndicationColor_5_Active_BorderColor),
+    ),
+    "visited": (
+      "color": var(--sapIndicationColor_5_Active_TextColor),
+      "background": var(--sapIndicationColor_5),
+      "borderColor": var(--sapIndicationColor_5_Active_BorderColor),
+    ),
+    "selected": (
+      "color": var(--sapIndicationColor_5_Selected_TextColor),
+      "iconColor": var(--sapIndicationColor_5_Selected_TextColor),
+      "background": var(--sapIndicationColor_5_Selected_Background),
+      "borderColor": var(--sapIndicationColor_5_Selected_BorderColor),
+      "underline": var(--sapIndicationColor_5)
+    ),
+    "selectedHover": (
+      "color": var(--sapIndicationColor_5_Selected_TextColor),
+      "iconColor": var(--sapIndicationColor_5_Selected_TextColor),
+      "background": var(--sapIndicationColor_5_Selected_Background),
+      "borderColor": var(--sapIndicationColor_5_Selected_BorderColor),
+      "underline": var(--sapIndicationColor_5)
+    )
   ),
   "6": (
-    "regular": ("color": var(--sapIndicationColor_6_TextColor), "background": var(--sapIndicationColor_6)),
-    "hover": ("color": var(--sapIndicationColor_6_TextColor), "background": var(--sapIndicationColor_6_Hover_Background)),
-    "active": ("color": var(--sapIndicationColor_6_TextColor), "background": var(--sapIndicationColor_6_Active_Background)),
-    "visited": ("color": var(--sapIndicationColor_6_TextColor), "background": var(--sapIndicationColor_6)),
+    "regular": (
+      "color": var(--sapIndicationColor_6_TextColor),
+      "background": var(--fdObjectStatus_Background_Indication_Color_6),
+      "borderColor": var(--sapIndicationColor_6_BorderColor),
+    ),
+    "hover": (
+      "color": var(--sapIndicationColor_6_TextColor),
+      "background": var(--sapIndicationColor_6_Hover_Background),
+      "borderColor": var(--sapIndicationColor_6_BorderColor),
+    ),
+    "active": (
+      "color": var(--fdObjectStatus_Active_Text_Indication_Color_6),
+      "background": var(--sapIndicationColor_6_Active_Background),
+      "borderColor": var(--sapIndicationColor_6_Active_BorderColor),
+    ),
+    "visited": (
+      "color": var(--sapIndicationColor_6_Active_TextColor),
+      "background": var(--sapIndicationColor_6),
+      "borderColor": var(--sapIndicationColor_6_Active_BorderColor),
+    ),
+    "selected": (
+      "color": var(--sapIndicationColor_6_Selected_TextColor),
+      "iconColor": var(--sapIndicationColor_6_Selected_TextColor),
+      "background": var(--sapIndicationColor_6_Selected_Background),
+      "borderColor": var(--sapIndicationColor_6_Selected_BorderColor),
+      "underline": var(--sapIndicationColor_6)
+    ),
+    "selectedHover": (
+      "color": var(--sapIndicationColor_6_Selected_TextColor),
+      "iconColor": var(--sapIndicationColor_6_Selected_TextColor),
+      "background": var(--sapIndicationColor_6_Selected_Background),
+      "borderColor": var(--sapIndicationColor_6_Selected_BorderColor),
+      "underline": var(--sapIndicationColor_6)
+    )
   ),
   "7": (
-    "regular": ("color": var(--sapIndicationColor_7_TextColor), "background": var(--sapIndicationColor_7)),
-    "hover": ("color": var(--sapIndicationColor_7_TextColor), "background": var(--sapIndicationColor_7_Hover_Background)),
-    "active": ("color": var(--sapIndicationColor_7_TextColor), "background": var(--sapIndicationColor_7_Active_Background)),
-    "visited": ("color": var(--sapIndicationColor_7_TextColor), "background": var(--sapIndicationColor_7)),
+    "regular": (
+      "color": var(--sapIndicationColor_7_TextColor),
+      "background": var(--fdObjectStatus_Background_Indication_Color_7),
+      "borderColor": var(--sapIndicationColor_7_BorderColor),
+    ),
+    "hover": (
+      "color": var(--sapIndicationColor_7_TextColor),
+      "background": var(--sapIndicationColor_7_Hover_Background),
+      "borderColor": var(--sapIndicationColor_7_BorderColor),
+    ),
+    "active": (
+      "color": var(--fdObjectStatus_Active_Text_Indication_Color_7),
+      "background": var(--sapIndicationColor_7_Active_Background),
+      "borderColor": var(--sapIndicationColor_7_Active_BorderColor),
+    ),
+    "visited": (
+      "color": var(--sapIndicationColor_7_Active_TextColor),
+      "background": var(--sapIndicationColor_7),
+      "borderColor": var(--sapIndicationColor_7_Active_BorderColor),
+    ),
+    "selected": (
+      "color": var(--sapIndicationColor_7_Selected_TextColor),
+      "iconColor": var(--sapIndicationColor_7_Selected_TextColor),
+      "background": var(--sapIndicationColor_7_Selected_Background),
+      "borderColor": var(--sapIndicationColor_7_Selected_BorderColor),
+      "underline": var(--sapIndicationColor_7)
+    ),
+    "selectedHover": (
+      "color": var(--sapIndicationColor_7_Selected_TextColor),
+      "iconColor": var(--sapIndicationColor_7_Selected_TextColor),
+      "background": var(--sapIndicationColor_7_Selected_Background),
+      "borderColor": var(--sapIndicationColor_7_Selected_BorderColor),
+      "underline": var(--sapIndicationColor_7)
+    )
   ),
   "8": (
-    "regular": ("color": var(--sapIndicationColor_8_TextColor), "background": var(--sapIndicationColor_8)),
-    "hover": ("color": var(--sapIndicationColor_8_TextColor), "background": var(--sapIndicationColor_8_Hover_Background)),
-    "active": ("color": var(--sapIndicationColor_8_TextColor), "background": var(--sapIndicationColor_8_Active_Background)),
-    "visited": ("color": var(--sapIndicationColor_8_TextColor), "background": var(--sapIndicationColor_8)),
+    "regular": (
+      "color": var(--sapIndicationColor_8_TextColor),
+      "background": var(--fdObjectStatus_Background_Indication_Color_8),
+      "borderColor": var(--sapIndicationColor_8_BorderColor),
+    ),
+    "hover": (
+      "color": var(--sapIndicationColor_8_TextColor),
+      "background": var(--sapIndicationColor_8_Hover_Background),
+      "borderColor": var(--sapIndicationColor_8_BorderColor),
+    ),
+    "active": (
+      "color": var(--fdObjectStatus_Active_Text_Indication_Color_8),
+      "background": var(--sapIndicationColor_8_Active_Background),
+      "borderColor": var(--sapIndicationColor_8_Active_BorderColor),
+    ),
+    "visited": (
+      "color": var(--sapIndicationColor_8_Active_TextColor),
+      "background": var(--sapIndicationColor_8),
+      "borderColor": var(--sapIndicationColor_8_Active_BorderColor),
+    ),
+    "selected": (
+      "color": var(--sapIndicationColor_8_Selected_TextColor),
+      "iconColor": var(--sapIndicationColor_8_Selected_TextColor),
+      "background": var(--sapIndicationColor_8_Selected_Background),
+      "borderColor": var(--sapIndicationColor_8_Selected_BorderColor),
+      "underline": var(--sapIndicationColor_8)
+    ),
+    "selectedHover": (
+      "color": var(--sapIndicationColor_8_Selected_TextColor),
+      "iconColor": var(--sapIndicationColor_8_Selected_TextColor),
+      "background": var(--sapIndicationColor_8_Selected_Background),
+      "borderColor": var(--sapIndicationColor_8_Selected_BorderColor),
+      "underline": var(--sapIndicationColor_8)
+    )
+  ),
+  "9": (
+    "regular": (
+      "color": var(--sapIndicationColor_9_TextColor),
+      "background": var(--fdObjectStatus_Background_Indication_Color_9),
+      "borderColor": var(--sapIndicationColor_9_BorderColor),
+    ),
+    "hover": (
+      "color": var(--sapIndicationColor_9_TextColor),
+      "background": var(--sapIndicationColor_9_Hover_Background),
+      "borderColor": var(--sapIndicationColor_9_BorderColor),
+    ),
+    "active": (
+      "color": var(--fdObjectStatus_Active_Text_Indication_Color_9),
+      "background": var(--sapIndicationColor_9_Active_Background),
+      "borderColor": var(--sapIndicationColor_9_Active_BorderColor),
+    ),
+    "visited": (
+      "color": var(--sapIndicationColor_9_Active_TextColor),
+      "background": var(--sapIndicationColor_9),
+      "borderColor": var(--sapIndicationColor_9_Active_BorderColor),
+    ),
+    "selected": (
+      "color": var(--sapIndicationColor_9_Selected_TextColor),
+      "iconColor": var(--sapIndicationColor_9_Selected_TextColor),
+      "background": var(--sapIndicationColor_9_Selected_Background),
+      "borderColor": var(--sapIndicationColor_9_Selected_BorderColor),
+      "underline": var(--sapIndicationColor_9)
+    ),
+    "selectedHover": (
+      "color": var(--sapIndicationColor_9_Selected_TextColor),
+      "iconColor": var(--sapIndicationColor_9_Selected_TextColor),
+      "background": var(--sapIndicationColor_9_Selected_Background),
+      "borderColor": var(--sapIndicationColor_9_Selected_BorderColor),
+      "underline": var(--sapIndicationColor_9)
+    )
+  ),
+  "10": (
+    "regular": (
+      "color": var(--sapIndicationColor_10_TextColor),
+      "background": var(--fdObjectStatus_Background_Indication_Color_10),
+      "borderColor": var(--sapIndicationColor_10_BorderColor),
+    ),
+    "hover": (
+      "color": var(--sapIndicationColor_10_TextColor),
+      "background": var(--sapIndicationColor_10_Hover_Background),
+      "borderColor": var(--sapIndicationColor_10_BorderColor),
+    ),
+    "active": (
+      "color": var(--fdObjectStatus_Active_Text_Indication_Color_10),
+      "background": var(--sapIndicationColor_10_Active_Background),
+      "borderColor": var(--sapIndicationColor_10_Active_BorderColor),
+    ),
+    "visited": (
+      "color": var(--sapIndicationColor_10_Active_TextColor),
+      "background": var(--sapIndicationColor_10),
+      "borderColor": var(--sapIndicationColor_10_Active_BorderColor),
+    ),
+    "selected": (
+      "color": var(--sapIndicationColor_10_Selected_TextColor),
+      "iconColor": var(--sapIndicationColor_10_Selected_TextColor),
+      "background": var(--sapIndicationColor_10_Selected_Background),
+      "borderColor": var(--sapIndicationColor_10_Selected_BorderColor),
+      "underline": var(--sapIndicationColor_10)
+    ),
+    "selectedHover": (
+      "color": var(--sapIndicationColor_10_Selected_TextColor),
+      "iconColor": var(--sapIndicationColor_10_Selected_TextColor),
+      "background": var(--sapIndicationColor_10_Selected_Background),
+      "borderColor": var(--sapIndicationColor_10_Selected_BorderColor),
+      "underline": var(--sapIndicationColor_10)
+    )
   ),
 );
 
@@ -141,18 +664,56 @@ $inverted-color-accents: (
     --fdObjectStatus_Text_Color: #{map_deep_get($variablesSet, "visited", "color")};
     --fdObjectStatus_Icon_Color: #{map_deep_get($variablesSet, "visited", "color")};
     --fdObjectStatus_Background_Color: #{map_deep_get($variablesSet, "visited", "background")};
+    --fdObjectStatus_Border_Color: #{map_deep_get($variablesSet, "visited", "borderColor")};
+  }
+
+  @include fd-focus() {
+    border-color: var(--sapContent_FocusColor);
+    outline: var(--fdObjectStatus_Inverted_Outline_Color) 0.0625rem var(--sapContent_FocusStyle);
+    outline-offset: -0.125rem;
+    box-shadow: var(--fdObjectStatus_Inverted_Box_Shadow);
   }
 
   @include fd-hover() {
     --fdObjectStatus_Text_Color: #{map_deep_get($variablesSet, "hover", "color")};
     --fdObjectStatus_Icon_Color: #{map_deep_get($variablesSet, "hover", "color")};
     --fdObjectStatus_Background_Color: #{map_deep_get($variablesSet, "hover", "background")};
+    --fdObjectStatus_Border_Color: #{map_deep_get($variablesSet, "hover", "borderColor")};
   }
 
   @include fd-active() {
     --fdObjectStatus_Text_Color: #{map_deep_get($variablesSet, "active", "color")};
-    --fdObjectStatus_Icon_Color: #{map_deep_get($variablesSet, "active", "color")};
+    --fdObjectStatus_Icon_Color: #{map_deep_get($variablesSet, "active", "iconColor")};
     --fdObjectStatus_Background_Color: #{map_deep_get($variablesSet, "active", "background")};
+    --fdObjectStatus_Border_Color: #{map_deep_get($variablesSet, "active", "borderColor")};
+  }
+
+  @include fd-selected() {
+    --fdObjectStatus_Text_Color: #{map_deep_get($variablesSet, "selected", "color")};
+    --fdObjectStatus_Icon_Color: #{map_deep_get($variablesSet, "selected", "iconColor")};
+    --fdObjectStatus_Background_Color: #{map_deep_get($variablesSet, "selected", "background")};
+    --fdObjectStatus_Underline: #{map_deep_get($variablesSet, "selected", "underline")};
+    --fdObjectStatus_Border_Color: #{map_deep_get($variablesSet, "selected", "borderColor")};
+
+    @include fd-hover() {
+      --fdObjectStatus_Text_Color: #{map_deep_get($variablesSet, "selectedHover", "color")};
+      --fdObjectStatus_Icon_Color: #{map_deep_get($variablesSet, "selectedHover", "iconColor")};
+      --fdObjectStatus_Background_Color: #{map_deep_get($variablesSet, "selectedHover", "background")};
+      --fdObjectStatus_Underline: #{map_deep_get($variablesSet, "selectedHover", "underline")};
+      --fdObjectStatus_Border_Color: #{map_deep_get($variablesSet, "selectedHover", "borderColor")};
+    }
+
+    @include fd-focus() {
+      border-color: var(--sapContent_FocusColor);
+      outline: var(--fdObjectStatus_Inverted_Outline_Color) 0.0625rem var(--sapContent_FocusStyle);
+      outline-offset: -0.125rem;
+      box-shadow: none;
+      position: relative;
+
+      &::before {
+        bottom: 0.0626rem;
+      }
+    }
   }
 }
 
@@ -167,9 +728,12 @@ $inverted-color-accents: (
     @content;
   }
 
+  --fdObjectStatus_Decoration: none;
+  --fdObjectStatus_Underline: transparent;
+  --fdObjectStatus_Text_Decoration: var(--fdObjectStatus_TextDecoration_Regular);
+
   // ICON VARIABLES
   --fdObjectStatus_Icon_Font_Size: 1rem;
-  --fdObjectStatus_Icon_Padding: 0.25rem;
   --fdObjectStatus_Icon_Color: var(--sapNeutralElementColor);
 
   // TEXT VARIABLES
@@ -179,42 +743,23 @@ $inverted-color-accents: (
   --fdObjectStatus_Height: 1rem;
   --fdObjectStatus_Text_Shadow: var(--sapContent_TextShadow);
 
-  // INVERTED OBJECT STATUS VARIABLES
-  $fd-object-status-inverted-border-radius: 0.25rem !default;
-  $fd-object-status-inverted-padding: 0.0625rem 0.25rem !default;
-  $fd-object-status-inverted-padding-empty: 0 0.25rem !default;
-  $fd-object-status-inverted-min-height: 1rem !default;
-  $fd-object-status-inverted-min-width: 1.25rem !default;
-  $fd-object-status-inverted-text-font-weight: bold !default;
-  $fd-object-status-inverted-icon-font-size: 0.75rem !default;
-  $fd-object-status-inverted-icon-spacing: 0.25rem !default;
-
-  // LARGE DESIGN VARIABLES
-  $fd-object-status-icon-text-font-size-large: 1.5rem;
-  $fd-object-status-icon-text-font-size-large-inverted: 1.25rem;
-  $fd-object-status-padding-large-inverted: 0.125rem 0.25rem !default;
-  $fd-object-status-padding-large-inverted-empty: 0 0.25rem !default;
-  $fd-object-status-min-width-large-inverted-empty: 1.75rem !default;
-  $fd-object-status-min-height-large-inverted-empty: 1.5rem !default;
-  $fd-object-status-height-large: 1.5rem !default;
-
   @include fd-reset();
 
-  font-family: var(--fdObjectStatus_Text_Font_Family);
-  font-size: var(--fdObjectStatus_Text_Font_Size);
-  color: var(--fdObjectStatus_Text_Color);
-  text-shadow: var(--fdObjectStatus_Text_Shadow);
+  @include fd-flex-center() {
+    gap: 0.25rem;
+    display: inline-flex;
+  }
+
   max-width: 100%;
+  position: relative;
   word-break: break-word;
-  display: inline-flex;
-  align-items: center;
   height: var(--fdObjectStatus_Height);
+  color: var(--fdObjectStatus_Text_Color);
   max-height: var(--fdObjectStatus_Height);
   line-height: var(--fdObjectStatus_Height);
-
-  @include fd-focus() {
-    outline: none;
-  }
+  text-shadow: var(--fdObjectStatus_Text_Shadow);
+  font-size: var(--fdObjectStatus_Text_Font_Size);
+  font-family: var(--fdObjectStatus_Text_Font_Family);
 
   &__text {
     @include fd-reset();
@@ -228,23 +773,8 @@ $inverted-color-accents: (
       @include fd-flex-center();
 
       font-size: var(--fdObjectStatus_Icon_Font_Size);
-      padding-right: var(--fdObjectStatus_Icon_Padding);
       color: var(--fdObjectStatus_Icon_Color);
       line-height: var(--fdObjectStatus_Height);
-
-      // ICON ONLY MODE
-      @include fd-only-child() {
-        justify-content: center;
-        padding-right: 0;
-        padding-left: 0;
-      }
-    }
-  }
-
-  @include fd-rtl() {
-    @include fd-object-status-icon-selector() {
-      padding-right: 0;
-      padding-left: var(--fdObjectStatus_Icon_Padding);
     }
   }
 
@@ -274,63 +804,79 @@ $inverted-color-accents: (
 
   // CLICKABLE OBJECT STATUS
   &--link {
-    @include fd-fiori-focus(0.0625rem);
-
-    text-decoration: none;
     cursor: pointer;
+    text-decoration: var(--fdObjectStatus_Decoration);
 
-    &:hover {
-      .#{$block}__text {
-        text-decoration: underline;
-      }
+    .#{$block}__text {
+      text-decoration: var(--fdObjectStatus_Text_Decoration);
     }
 
-    &:visited {
-      text-decoration: none;
+    @include fd-visited() {
+      --fdObjectStatus_Text_Decoration: var(--fdObjectStatus_TextDecoration_Visited);
+    }
+
+    @include fd-hover() {
+      --fdObjectStatus_Text_Decoration: var(--fdObjectStatus_TextDecoration_Hover);
+    }
+
+    @include fd-active() {
+      --fdObjectStatus_Text_Decoration: var(--fdObjectStatus_TextDecoration_Down);
+    }
+
+    @include fd-focus() {
+      &:not(:active):not(.#{$block}--inverted) {
+        --fdObjectStatus_Text_Color: var(--fdObjectStatus_Neutral_Color_Focus);
+        --fdObjectStatus_Icon_Color: var(--fdObjectStatus_Neutral_IconColor_Focus);
+        --fdObjectStatus_Text_Decoration: var(--fdObjectStatus_TextDecoration_Focus);
+
+        text-shadow: none;
+        border-radius: var(--fdObjectStatus_Focus_Border_Radius);
+        background: var(--fdObjectStatus_Focus_Background);
+        outline: var(--fdObjectStatus_Focus_Outline);
+      }
     }
   }
 
   // LARGE DESIGN
   &--large {
-    --fdObjectStatus_Text_Font_Size: #{$fd-object-status-icon-text-font-size-large};
-    --fdObjectStatus_Height: #{$fd-object-status-height-large};
-    --fdObjectStatus_Icon_Font_Size: #{ $fd-object-status-icon-text-font-size-large};
+    --fdObjectStatus_Text_Font_Size: 1.5rem;
+    --fdObjectStatus_Height: 1.5rem;
+    --fdObjectStatus_Icon_Font_Size: 1.5rem;
     --fdObjectStatus_Text_Font_Family: var(--sapFontLightFamily);
   }
 
   // INVERTED OBJECT STATUS
   &--inverted {
+    --fdObjectStatus_Text_Shadow: none;
+    --fdObjectStatus_Icon_Font_Size: 0.75rem;
     --fdObjectStatus_Text_Font_Size: var(--sapFontSmallSize);
-    --fdObjectStatus_Text_Shadow: var(--sapContent_ContrastTextShadow);
-    --fdObjectStatus_Icon_Font_Size: #{$fd-object-status-inverted-icon-font-size};
+    --fdObjectStatus_Text_Font_Family: var(--sapFontBoldFamily);
 
-    height: auto;
-    min-height: $fd-object-status-inverted-min-height;
-    width: auto;
-    max-width: 100%;
-    min-width: $fd-object-status-inverted-min-width;
-    padding: $fd-object-status-inverted-padding;
-    border-radius: $fd-object-status-inverted-border-radius;
-    font-weight: $fd-object-status-inverted-text-font-weight;
-    border-width: var(--fdInverted_Object_Border_Width);
+    max-height: none;
+    position: relative;
     border-style: solid;
-    background-color: var(--fdObjectStatus_Background_Color, transparent);
+    overflow: hidden;
+    padding: var(--fdObjectStatus_Inverted_Padding);
+    min-width: var(--fdObjectStatus_Inverted_Min_Width);
+    border-width: var(--fdObjectStatus_Inverted_Border_Width);
+    min-height: var(--fdObjectStatus_Inverted_Line_Height);
     border-color: var(--fdObjectStatus_Border_Color, initial);
+    border-radius: var(--fdObjectStatus_Inverted_Border_Radius);
+    background-color: var(--fdObjectStatus_Background_Color, transparent);
 
     .#{$block}__icon,
     .#{$block}__text {
-      line-height: 0.875rem;
+      line-height: 1rem;
     }
 
-    @include fd-object-status-icon-selector() {
-      padding-right: $fd-object-status-inverted-icon-spacing;
-    }
-
-    @include fd-rtl() {
-      @include fd-object-status-icon-selector() {
-        padding-right: 0;
-        padding-left: $fd-object-status-inverted-icon-spacing;
-      }
+    &::before {
+      content: '';
+      width: 100%;
+      position: absolute;
+      bottom: 0;
+      z-index: 1;
+      height: var(--fdObjectStatus_Inverted_Underline_Width);
+      background: var(--fdObjectStatus_Underline);
     }
 
     // TEXT AND BACKGROUND COLOR FOR INVERTED OBJECT STATUS STATES
@@ -353,11 +899,12 @@ $inverted-color-accents: (
 
     // LARGE DESIGN FOR INVERTED OBJECT STATUS
     &.#{$block}--large {
-      --fdObjectStatus_Text_Font_Size: #{$fd-object-status-icon-text-font-size-large-inverted};
-      --fdObjectStatus_Icon_Font_Size: #{$fd-object-status-icon-text-font-size-large-inverted};
-      --fdObjectStatus_Height: #{$fd-object-status-height-large};
+      --fdObjectStatus_Text_Font_Size: 1.25rem;
+      --fdObjectStatus_Icon_Font_Size: 1.25rem;
+      --fdObjectStatus_Height: 1.5rem;
+      --fdObjectStatus_Text_Font_Family: var(--fdObjectStatus_Inverted_Large_Font_Family);
 
-      padding: $fd-object-status-padding-large-inverted;
+      padding: 0.125rem 0.25rem;
       height: auto;
       max-height: none;
 
@@ -365,26 +912,19 @@ $inverted-color-accents: (
       .#{$block}__text {
         line-height: var(--fdObjectStatus_Height);
       }
-
-      @include fd-object-status-icon-selector() {
-        // ICON ONLY MODE
-        @include fd-only-child() {
-          height: $fd-object-status-min-height-large-inverted-empty;
-          min-width: $fd-object-status-min-width-large-inverted-empty;
-          padding: $fd-object-status-padding-large-inverted-empty;
-        }
-      }
     }
 
     // CLICKABLE INVERTED OBJECT STATUS
     &.#{$block}--link {
       cursor: pointer;
 
+      --fdObjectStatus_Text_Decoration: none;
+
       &:hover,
       &:active,
       &:visited {
         .#{$block}__text {
-          text-decoration: none;
+          --fdObjectStatus_Text_Decoration: none;
         }
       }
 
@@ -403,10 +943,12 @@ $inverted-color-accents: (
       @each $set-name, $color-set in $inverted-color-accents {
         &.#{$block}--indication-#{$set-name} {
           @include inverted-object-interaction-states($color-set);
-
-          border-color: var(--sapContent_ForegroundBorderColor);
         }
       }
+    }
+
+    &.#{$block}--icon-only {
+      padding: 0 0.25rem;
     }
   }
 
