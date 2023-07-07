@@ -1,3 +1,17 @@
+# [0.30.0-rc.27](https://github.com/SAP/fundamental-styles/compare/v0.30.0-rc.26...v0.30.0-rc.27) (2023-07-07)
+
+
+### Bug Fixes
+
+* **styles:** update Object Status to latest Horizon 2023 [ci visual] ([#4662](https://github.com/SAP/fundamental-styles/issues/4662)) ([dcd23a4](https://github.com/SAP/fundamental-styles/commit/dcd23a4fa9e986d49de12f09af35a1df22b21cda))
+
+
+### BREAKING CHANGES
+
+* **styles:** Icon only Object status now needs a modifier class fd-object-status--icon-only
+
+
+
 # [0.30.0-rc.26](https://github.com/SAP/fundamental-styles/compare/v0.30.0-rc.25...v0.30.0-rc.26) (2023-07-07)
 
 
