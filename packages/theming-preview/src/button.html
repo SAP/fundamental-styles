@@ -19,7 +19,7 @@
     <script src="theme-manager.js"></script>
 </head>
 <body>
-    <div class="fd-theming">
+    <div class="fd-theming is-cozy">
         <div class="fd-panel fd-panel--fixed">
             <div class="fd-panel__header">
                 <h4 class="fd-panel__title">Button</h4>
@@ -217,28 +217,28 @@
             <div class="fd-panel__content fd-theming__flex">
                 <div class="fd-theming__flex fd-theming__flex-column fd-theming__margin-right-1">
                     <div class="fd-segmented-button" role="group" aria-label="Group label">
-                        <button aria-label="Survey" class="fd-button"><i class="sap-icon--survey"></i></button>
+                        <button aria-label="Survey" class="fd-button" aria-pressed="false"><i class="sap-icon--survey"></i></button>
                         <button aria-label="Chart" class="fd-button is-selected" aria-pressed="true"><i class="sap-icon--pie-chart"></i></button>
-                        <button aria-label="Pool" class="fd-button"><i class="sap-icon--pool"></i></button>
+                        <button aria-label="Pool" class="fd-button" aria-pressed="false"><i class="sap-icon--pool"></i></button>
                     </div>
                     <br>
                     <div class="fd-segmented-button" role="group" aria-label="Group label">
-                        <button aria-label="Survey" class="fd-button" disabled><i class="sap-icon--survey"></i></button>
+                        <button aria-label="Survey" class="fd-button" aria-pressed="false" disabled><i class="sap-icon--survey"></i></button>
                         <button aria-label="Chart" class="fd-button is-selected" aria-pressed="true" disabled><i class="sap-icon--pie-chart"></i></button>
-                        <button aria-label="Pool" class="fd-button" disabled><i class="sap-icon--pool"></i></button>
+                        <button aria-label="Pool" class="fd-button" aria-pressed="false" disabled><i class="sap-icon--pool"></i></button>
                     </div>
                 </div>
                 <div class="fd-theming__flex fd-theming__flex-column fd-theming__margin-right-1">
                     <div class="fd-segmented-button" role="group" aria-label="Group label">
                         <button class="fd-button is-selected" aria-pressed="true">Left</button>
-                        <button class="fd-button">Middle</button>
-                        <button class="fd-button">Right</button>
+                        <button class="fd-button" aria-pressed="false">Middle</button>
+                        <button class="fd-button" aria-pressed="false">Right</button>
                     </div>
                     <br>
                     <div class="fd-segmented-button" role="group" aria-label="Group label">
                         <button class="fd-button is-selected" aria-pressed="true" disabled>Left</button>
-                        <button class="fd-button" disabled>Middle</button>
-                        <button class="fd-button" disabled>Right</button>
+                        <button class="fd-button" aria-pressed="false" disabled>Middle</button>
+                        <button class="fd-button" aria-pressed="false" disabled>Right</button>
                     </div>
                 </div>
                 <div class="fd-theming__flex fd-theming__flex-column">
@@ -247,11 +247,11 @@
                             <i class="sap-icon--employee-approvals"></i>
                             <span class="fd-button__text">Approve</span>
                         </button>
-                        <button class="fd-button">
+                        <button class="fd-button" aria-pressed="false">
                             <i class="sap-icon--employee-rejections"></i>
                             <span class="fd-button__text">Reject</span>
                         </button>
-                        <button class="fd-button">
+                        <button class="fd-button" aria-pressed="false">
                             <i class="sap-icon--employee-lookup"></i>
                             <span class="fd-button__text">Lookup</span>
                         </button>
@@ -262,11 +262,11 @@
                             <i class="sap-icon--employee-approvals"></i>
                             <span class="fd-button__text">Approve</span>
                         </button>
-                        <button class="fd-button" disabled>
+                        <button class="fd-button" aria-pressed="false" disabled>
                             <i class="sap-icon--employee-rejections"></i>
                             <span class="fd-button__text">Reject</span>
                         </button>
-                        <button class="fd-button" disabled>
+                        <button class="fd-button" aria-pressed="false" disabled>
                             <i class="sap-icon--employee-lookup"></i>
                             <span class="fd-button__text">Lookup</span>
                         </button>
@@ -290,18 +290,6 @@
                         <span class="fd-button__text">Default</span>
                         <i class="sap-icon--slim-arrow-down"></i>
                     </button>
-                    <br>
-                    <button class="fd-button fd-button--menu">
-                        <i class="sap-icon--thumb-up"></i>
-                        <span class="fd-button__text">Default</span>
-                        <i class="sap-icon--slim-arrow-down"></i>
-                    </button>
-                    <br>
-                    <button class="fd-button fd-button--menu" disabled>
-                        <i class="sap-icon--thumb-up"></i>
-                        <span class="fd-button__text">Default</span>
-                        <i class="sap-icon--slim-arrow-down"></i>
-                    </button>
                 </div>
                 <div class="fd-theming__flex fd-theming__flex-column fd-theming__margin-right-1">
                     <div class="fd-button-split fd-has-margin-right-small" role="group" aria-label="button-split">
@@ -321,26 +309,6 @@
                             <i class="sap-icon--slim-arrow-down"></i>
                         </button>
                     </div>
-                    <br>
-                    <div class="fd-button-split fd-has-margin-right-small" role="group" aria-label="button-split">
-                        <button class="fd-button" aria-label="button">
-                            <i class="sap-icon--thumb-up"></i>
-                            <span class="fd-button-split__text">Split Default</span>
-                        </button>
-                        <button class="fd-button" aria-controls="t4c0o273">
-                            <i class="sap-icon--slim-arrow-down"></i>
-                        </button>
-                    </div>
-                    <br>
-                    <div class="fd-button-split fd-has-margin-right-small" role="group" aria-label="button-split">
-                        <button class="fd-button" aria-label="button" disabled>
-                            <i class="sap-icon--thumb-up"></i>
-                            <span class="fd-button-split__text">Split Default</span>
-                        </button>
-                        <button class="fd-button" aria-controls="t4c0o273" disabled>
-                            <i class="sap-icon--slim-arrow-down"></i>
-                        </button>
-                    </div>
                 </div>
                 <div class="fd-theming__flex fd-theming__flex-column fd-theming__margin-right-1">
                     <button class="fd-button fd-button--attention fd-button--menu">
@@ -349,18 +317,6 @@
                     </button>
                     <br>
                     <button class="fd-button fd-button--attention fd-button--menu" disabled>
-                        <span class="fd-button__text">Attention</span>
-                        <i class="sap-icon--slim-arrow-down"></i>
-                    </button>
-                    <br>
-                    <button class="fd-button fd-button--attention fd-button--menu">
-                        <i class="sap-icon--thumb-up"></i>
-                        <span class="fd-button__text">Attention</span>
-                        <i class="sap-icon--slim-arrow-down"></i>
-                    </button>
-                    <br>
-                    <button class="fd-button fd-button--attention fd-button--menu" disabled>
-                        <i class="sap-icon--thumb-up"></i>
                         <span class="fd-button__text">Attention</span>
                         <i class="sap-icon--slim-arrow-down"></i>
                     </button>
@@ -383,26 +339,6 @@
                             <i class="sap-icon--slim-arrow-down"></i>
                         </button>
                     </div>
-                    <br>
-                    <div class="fd-button-split fd-has-margin-right-small" role="group" aria-label="button-split">
-                        <button class="fd-button fd-button--attention" aria-label="button">
-                            <i class="sap-icon--thumb-up"></i>
-                            <span class="fd-button__text">Split Attention</span>
-                        </button>
-                        <button class="fd-button fd-button--attention" aria-controls="t4c0o273">
-                            <i class="sap-icon--slim-arrow-down"></i>
-                        </button>
-                    </div>
-                    <br>
-                    <div class="fd-button-split fd-has-margin-right-small" role="group" aria-label="button-split">
-                        <button class="fd-button fd-button--attention" aria-label="button" disabled>
-                            <i class="sap-icon--thumb-up"></i>
-                            <span class="fd-button__text">Split Attention</span>
-                        </button>
-                        <button class="fd-button fd-button--attention" aria-controls="t4c0o273" disabled>
-                            <i class="sap-icon--slim-arrow-down"></i>
-                        </button>
-                    </div>
                 </div>
                 <div class="fd-theming__flex fd-theming__flex-column fd-theming__margin-right-1">
                     <button class="fd-button fd-button--positive fd-button--menu">
@@ -411,18 +347,6 @@
                     </button>
                     <br>
                     <button class="fd-button fd-button--positive fd-button--menu" disabled>
-                        <span class="fd-button__text">Accept</span>
-                        <i class="sap-icon--slim-arrow-down"></i>
-                    </button>
-                    <br>
-                    <button class="fd-button fd-button--positive fd-button--menu">
-                        <i class="sap-icon--thumb-up"></i>
-                        <span class="fd-button__text">Accept</span>
-                        <i class="sap-icon--slim-arrow-down"></i>
-                    </button>
-                    <br>
-                    <button class="fd-button fd-button--positive fd-button--menu" disabled>
-                        <i class="sap-icon--thumb-up"></i>
                         <span class="fd-button__text">Accept</span>
                         <i class="sap-icon--slim-arrow-down"></i>
                     </button>
@@ -445,29 +369,6 @@
                         <button class="fd-button fd-button--positive" aria-controls="t4c0o273" disabled>
                             <i class="sap-icon--slim-arrow-down"></i>
                         </button>
-                        <br>
-                    </div>
-                    <br>
-                    <div class="fd-button-split fd-has-margin-right-small" role="group" aria-label="button-split">
-                        <button class="fd-button fd-button--positive" aria-label="button">
-                            <i class="sap-icon--thumb-up"></i>
-                            <span class="fd-button__text">Split Accept</span>
-                        </button>
-                        <button class="fd-button fd-button--positive" aria-controls="t4c0o273">
-                            <i class="sap-icon--slim-arrow-down"></i>
-                        </button>
-                        <br>
-                    </div>
-                    <br>
-                    <div class="fd-button-split fd-has-margin-right-small" role="group" aria-label="button-split">
-                        <button class="fd-button fd-button--positive" aria-label="button" disabled>
-                            <i class="sap-icon--thumb-up"></i>
-                            <span class="fd-button__text">Split Accept</span>
-                        </button>
-                        <button class="fd-button fd-button--positive" aria-controls="t4c0o273" disabled>
-                            <i class="sap-icon--slim-arrow-down"></i>
-                        </button>
-                        <br>
                     </div>
                 </div>
                 <div class="fd-theming__flex fd-theming__flex-column fd-theming__margin-right-1">
@@ -477,18 +378,6 @@
                     </button>
                     <br>
                     <button class="fd-button fd-button--negative fd-button--menu" disabled>
-                        <span class="fd-button__text">Reject</span>
-                        <i class="sap-icon--slim-arrow-down"></i>
-                    </button>
-                    <br>
-                    <button class="fd-button fd-button--negative fd-button--menu">
-                        <i class="sap-icon--thumb-up"></i>
-                        <span class="fd-button__text">Reject</span>
-                        <i class="sap-icon--slim-arrow-down"></i>
-                    </button>
-                    <br>
-                    <button class="fd-button fd-button--negative fd-button--menu" disabled>
-                        <i class="sap-icon--thumb-up"></i>
                         <span class="fd-button__text">Reject</span>
                         <i class="sap-icon--slim-arrow-down"></i>
                     </button>
@@ -514,6 +403,127 @@
                         <br>
                     </div>
                     <br>
+                </div>
+            </div>
+            <div class="fd-panel__content fd-theming__flex">
+                <div class="fd-theming__flex fd-theming__flex-column fd-theming__margin-right-1">
+                    <button class="fd-button fd-button--menu">
+                        <i class="sap-icon--thumb-up"></i>
+                        <span class="fd-button__text">Default</span>
+                        <i class="sap-icon--slim-arrow-down"></i>
+                    </button>
+                    <br>
+                    <button class="fd-button fd-button--menu" disabled>
+                        <i class="sap-icon--thumb-up"></i>
+                        <span class="fd-button__text">Default</span>
+                        <i class="sap-icon--slim-arrow-down"></i>
+                    </button>
+                </div>
+                <div class="fd-theming__flex fd-theming__flex-column fd-theming__margin-right-1">
+                    <div class="fd-button-split fd-has-margin-right-small" role="group" aria-label="button-split">
+                        <button class="fd-button" aria-label="button">
+                            <i class="sap-icon--thumb-up"></i>
+                            <span class="fd-button-split__text">Split Default</span>
+                        </button>
+                        <button class="fd-button" aria-controls="t4c0o273">
+                            <i class="sap-icon--slim-arrow-down"></i>
+                        </button>
+                    </div>
+                    <br>
+                    <div class="fd-button-split fd-has-margin-right-small" role="group" aria-label="button-split">
+                        <button class="fd-button" aria-label="button" disabled>
+                            <i class="sap-icon--thumb-up"></i>
+                            <span class="fd-button-split__text">Split Default</span>
+                        </button>
+                        <button class="fd-button" aria-controls="t4c0o273" disabled>
+                            <i class="sap-icon--slim-arrow-down"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="fd-theming__flex fd-theming__flex-column fd-theming__margin-right-1">
+                    <button class="fd-button fd-button--attention fd-button--menu">
+                        <i class="sap-icon--thumb-up"></i>
+                        <span class="fd-button__text">Attention</span>
+                        <i class="sap-icon--slim-arrow-down"></i>
+                    </button>
+                    <br>
+                    <button class="fd-button fd-button--attention fd-button--menu" disabled>
+                        <i class="sap-icon--thumb-up"></i>
+                        <span class="fd-button__text">Attention</span>
+                        <i class="sap-icon--slim-arrow-down"></i>
+                    </button>
+                </div>
+                <div class="fd-theming__flex fd-theming__flex-column fd-theming__margin-right-1">
+                    <div class="fd-button-split fd-has-margin-right-small" role="group" aria-label="button-split">
+                        <button class="fd-button fd-button--attention" aria-label="button">
+                            <i class="sap-icon--thumb-up"></i>
+                            <span class="fd-button__text">Split Attention</span>
+                        </button>
+                        <button class="fd-button fd-button--attention" aria-controls="t4c0o273">
+                            <i class="sap-icon--slim-arrow-down"></i>
+                        </button>
+                    </div>
+                    <br>
+                    <div class="fd-button-split fd-has-margin-right-small" role="group" aria-label="button-split">
+                        <button class="fd-button fd-button--attention" aria-label="button" disabled>
+                            <i class="sap-icon--thumb-up"></i>
+                            <span class="fd-button__text">Split Attention</span>
+                        </button>
+                        <button class="fd-button fd-button--attention" aria-controls="t4c0o273" disabled>
+                            <i class="sap-icon--slim-arrow-down"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="fd-theming__flex fd-theming__flex-column fd-theming__margin-right-1">
+                    <button class="fd-button fd-button--positive fd-button--menu">
+                        <i class="sap-icon--thumb-up"></i>
+                        <span class="fd-button__text">Accept</span>
+                        <i class="sap-icon--slim-arrow-down"></i>
+                    </button>
+                    <br>
+                    <button class="fd-button fd-button--positive fd-button--menu" disabled>
+                        <i class="sap-icon--thumb-up"></i>
+                        <span class="fd-button__text">Accept</span>
+                        <i class="sap-icon--slim-arrow-down"></i>
+                    </button>
+                </div>
+                <div class="fd-theming__flex fd-theming__flex-column fd-theming__margin-right-1">
+                    <div class="fd-button-split fd-has-margin-right-small" role="group" aria-label="button-split">
+                        <button class="fd-button fd-button--positive" aria-label="button">
+                            <i class="sap-icon--thumb-up"></i>
+                            <span class="fd-button__text">Split Accept</span>
+                        </button>
+                        <button class="fd-button fd-button--positive" aria-controls="t4c0o273">
+                            <i class="sap-icon--slim-arrow-down"></i>
+                        </button>
+                        <br>
+                    </div>
+                    <br>
+                    <div class="fd-button-split fd-has-margin-right-small" role="group" aria-label="button-split">
+                        <button class="fd-button fd-button--positive" aria-label="button" disabled>
+                            <i class="sap-icon--thumb-up"></i>
+                            <span class="fd-button__text">Split Accept</span>
+                        </button>
+                        <button class="fd-button fd-button--positive" aria-controls="t4c0o273" disabled>
+                            <i class="sap-icon--slim-arrow-down"></i>
+                        </button>
+                        <br>
+                    </div>
+                </div>
+                <div class="fd-theming__flex fd-theming__flex-column fd-theming__margin-right-1">
+                    <button class="fd-button fd-button--negative fd-button--menu">
+                        <i class="sap-icon--thumb-up"></i>
+                        <span class="fd-button__text">Reject</span>
+                        <i class="sap-icon--slim-arrow-down"></i>
+                    </button>
+                    <br>
+                    <button class="fd-button fd-button--negative fd-button--menu" disabled>
+                        <i class="sap-icon--thumb-up"></i>
+                        <span class="fd-button__text">Reject</span>
+                        <i class="sap-icon--slim-arrow-down"></i>
+                    </button>
+                </div>                
+                <div class="fd-theming__flex fd-theming__flex-column">
                     <div class="fd-button-split fd-has-margin-right-small" role="group" aria-label="button-split">
                         <button class="fd-button fd-button--negative" aria-label="button">
                             <i class="sap-icon--thumb-up"></i>
@@ -545,118 +555,118 @@
             </div>
             <div class="fd-panel__content fd-theming__flex">
                 <div class="fd-theming__flex fd-theming__flex-column fd-theming__margin-right-1">
-                    <button class="fd-button">Unpressed</button>
+                    <button class="fd-button" aria-pressed="false">Unpressed</button>
                     <br>
-                    <button class="fd-button" disabled>Unpressed</button>
+                    <button class="fd-button" aria-pressed="false" disabled>Unpressed</button>
                     <br>
-                    <button class="fd-button">
+                    <button class="fd-button" aria-pressed="false">
                         <i class="sap-icon--home"></i>
                         <span class="fd-button__text">Unpressed</span>
                     </button>
                     <br>
-                    <button class="fd-button" disabled>
+                    <button class="fd-button" aria-pressed="false" disabled>
                         <i class="sap-icon--home"></i>
                         <span class="fd-button__text">Unpressed</span>
                     </button>
                 </div>
                 <div class="fd-theming__flex fd-theming__flex-column fd-theming__margin-right-1">
-                    <button class="fd-button fd-button--toggled">Pressed</button>
+                    <button class="fd-button fd-button--toggled" aria-pressed="true">Pressed</button>
                     <br>
-                    <button class="fd-button fd-button--toggled" disabled>Pressed</button>
+                    <button class="fd-button fd-button--toggled" aria-pressed="true" disabled>Pressed</button>
                     <br>
-                    <button class="fd-button fd-button--toggled">
+                    <button class="fd-button fd-button--toggled" aria-pressed="true">
                         <i class="sap-icon--home"></i>
                         <span class="fd-button__text">Pressed</span>
                     </button>
                     <br>
-                    <button class="fd-button fd-button--toggled" disabled>
+                    <button class="fd-button fd-button--toggled" aria-pressed="true" disabled>
                         <i class="sap-icon--home"></i>
                         <span class="fd-button__text">Pressed</span>
                     </button>
                 </div>
                 <div class="fd-theming__flex fd-theming__flex-column fd-theming__margin-right-1">
-                    <button class="fd-button fd-button--attention">Attention Unpressed</button>
+                    <button class="fd-button fd-button--attention" aria-pressed="false">Attention Unpressed</button>
                     <br>
-                    <button class="fd-button fd-button--attention" disabled> Attention Unpressed</button>
+                    <button class="fd-button fd-button--attention" aria-pressed="false" disabled> Attention Unpressed</button>
                     <br>
-                    <button class="fd-button fd-button--attention">
+                    <button class="fd-button fd-button--attention" aria-pressed="false">
                         <i class="sap-icon--home"></i>
                         <span class="fd-button__text"> Attention Unpressed</span>
                     </button>
                     <br>
-                    <button class="fd-button fd-button--attention" disabled>
+                    <button class="fd-button fd-button--attention" aria-pressed="false" disabled>
                         <i class="sap-icon--home"></i>
                         <span class="fd-button__text">Attention Unpressed</span>
                     </button>
                 </div>
                 <div class="fd-theming__flex fd-theming__flex-column fd-theming__margin-right-1">
-                    <button class="fd-button fd-button--attention fd-button--toggled">Attention Pressed</button>
+                    <button class="fd-button fd-button--attention fd-button--toggled" aria-pressed="true">Attention Pressed</button>
                     <br>
-                    <button class="fd-button fd-button--attention fd-button--toggled" disabled>Attention Pressed</button>
+                    <button class="fd-button fd-button--attention fd-button--toggled" aria-pressed="true" disabled>Attention Pressed</button>
                     <br>
-                    <button class="fd-button fd-button--attention fd-button--toggled">
+                    <button class="fd-button fd-button--attention fd-button--toggled" aria-pressed="true">
                         <i class="sap-icon--home"></i>
                         <span class="fd-button__text">Attention Pressed</span>
                     </button>
                     <br>
-                    <button class="fd-button fd-button--attention fd-button--toggled" disabled>
+                    <button class="fd-button fd-button--attention fd-button--toggled" aria-pressed="true" disabled>
                         <i class="sap-icon--home"></i>
                         <span class="fd-button__text">Attention Pressed</span>
                     </button>
                 </div>
                 <div class="fd-theming__flex fd-theming__flex-column fd-theming__margin-right-1">
-                    <button class="fd-button fd-button--positive">Accept Unpressed</button>
+                    <button class="fd-button fd-button--positive" aria-pressed="false">Accept Unpressed</button>
                     <br>
-                    <button class="fd-button fd-button--positive" disabled>Accept Unpressed</button>
+                    <button class="fd-button fd-button--positive" aria-pressed="false" disabled>Accept Unpressed</button>
                     <br>
-                    <button class="fd-button fd-button--positive">
+                    <button class="fd-button fd-button--positive" aria-pressed="false">
                         <i class="sap-icon--thumb-up"></i>
                         <span class="fd-button__text">Accept Unpressed</span>
                     </button>
                     <br>
-                    <button class="fd-button fd-button--positive" disabled>
-                        <i class="sap-icon--thumb-up"></i>
-                        <span class="fd-button__text">Accept Unpressed</span>
-                    </button>
-                </div>
-                <div class="fd-theming__flex fd-theming__flex-column fd-theming__margin-right-1">
-                    <button class="fd-button fd-button--positive fd-button--toggled">Accept Pressed</button>
-                    <br>
-                    <button class="fd-button fd-button--positive fd-button--toggled" disabled>Accept Pressed</button>
-                    <br>
-                    <button class="fd-button fd-button--positive fd-button--toggled">
-                        <i class="sap-icon--thumb-up"></i>
-                        <span class="fd-button__text">Accept Unpressed</span>
-                    </button>
-                    <br>
-                    <button class="fd-button fd-button--positive fd-button--toggled" disabled>
+                    <button class="fd-button fd-button--positive" aria-pressed="false" disabled>
                         <i class="sap-icon--thumb-up"></i>
                         <span class="fd-button__text">Accept Unpressed</span>
                     </button>
                 </div>
                 <div class="fd-theming__flex fd-theming__flex-column fd-theming__margin-right-1">
-                    <button class="fd-button fd-button--negative">Reject Unpressed</button>
+                    <button class="fd-button fd-button--positive fd-button--toggled" aria-pressed="true">Accept Pressed</button>
                     <br>
-                    <button class="fd-button fd-button--negative" disabled>Reject Unpressed</button>
+                    <button class="fd-button fd-button--positive fd-button--toggled" aria-pressed="true" disabled>Accept Pressed</button>
                     <br>
-                    <button class="fd-button fd-button--negative">
+                    <button class="fd-button fd-button--positive fd-button--toggled" aria-pressed="true">
+                        <i class="sap-icon--thumb-up"></i>
+                        <span class="fd-button__text">Accept Unpressed</span>
+                    </button>
+                    <br>
+                    <button class="fd-button fd-button--positive fd-button--toggled" aria-pressed="true" disabled>
+                        <i class="sap-icon--thumb-up"></i>
+                        <span class="fd-button__text">Accept Unpressed</span>
+                    </button>
+                </div>
+                <div class="fd-theming__flex fd-theming__flex-column fd-theming__margin-right-1">
+                    <button class="fd-button fd-button--negative" aria-pressed="false">Reject Unpressed</button>
+                    <br>
+                    <button class="fd-button fd-button--negative" aria-pressed="false" disabled>Reject Unpressed</button>
+                    <br>
+                    <button class="fd-button fd-button--negative" aria-pressed="false">
                         <i class="sap-icon--thumb-up"></i>
                         <span class="fd-button__text">Reject Unpressed</span>
                     </button>
                     <br>
-                    <button class="fd-button fd-button--negative" disabled>
+                    <button class="fd-button fd-button--negative" aria-pressed="false" disabled>
                         <i class="sap-icon--thumb-up"></i>
                         <span class="fd-button__text">Reject Unpressed</span>
                     </button>
                 </div>
                 <div class="fd-theming__flex fd-theming__flex-column">
-                    <button class="fd-button fd-button--negative fd-button--toggled">Reject Pressed</button>
+                    <button class="fd-button fd-button--negative fd-button--toggled" aria-pressed="true">Reject Pressed</button>
                     <br>
-                    <button class="fd-button fd-button--negative fd-button--toggled" disabled>Reject Pressed</button>
+                    <button class="fd-button fd-button--negative fd-button--toggled" aria-pressed="true" disabled>Reject Pressed</button>
                     <br>
-                    <button class="fd-button fd-button--negative fd-button--toggled">
+                    <button class="fd-button fd-button--negative fd-button--toggled" aria-pressed="true">
                         <i class="sap-icon--thumb-up"></i>
-                        <span class="fd-button__text">Reject Pressed</span>
+                        <span class="fd-button__text" aria-pressed="true">Reject Pressed</span>
                     </button>
                     <br>
                     <button class="fd-button fd-button--negative fd-button--toggled" disabled>
