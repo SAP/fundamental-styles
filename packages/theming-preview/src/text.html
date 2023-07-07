@@ -25,9 +25,9 @@
                 <h4 class="fd-panel__title">Label</h4>
             </div>
             <div class="fd-panel__content fd-theming__flex">
-                <label class="fd-form-label">Standard</label>
+                <div class=""fd-form-item><label class="fd-form-label">Standard</label><input class="fd-input" type="text" id="input-ld"></div>
                 &nbsp
-                <label class="fd-form-label fd-form-label--required">Required</label>
+                <div class=""fd-form-item><label class="fd-form-label fd-form-label--required">Required</label><input class="fd-input" type="text" id="input-ld"></div>
             </div>
         </div>
     
@@ -36,20 +36,20 @@
                 <h4 class="fd-panel__title">Link</h4>
             </div>
             <div class="fd-panel__content fd-theming__flex-column">
-                <a href="#" class="fd-link">Link</a>
+                <a href="#" class="fd-link"><span class="fd-link__content">Link</span></a>
                 &nbsp &nbsp
-                <a href="#" class="fd-link" aria-disabled="true">Disabled Link</a>
+                <a href="#" class="fd-link" aria-disabled="true"><span class="fd-link__content">Disabled Link</span></a>
                 &nbsp &nbsp
-                <a href="#" class="fd-link fd-link--subtle">Subtle Link</a>
+                <a href="#" class="fd-link fd-link--subtle"><span class="fd-link__content"></span>Subtle Link</a>
                 &nbsp &nbsp
-                <a href="#" class="fd-link fd-link--subtle" aria-disabled="true">Subtle Disabled Link</a>
+                <a href="#" class="fd-link fd-link--subtle" aria-disabled="true"><span class="fd-link__content">Subtle Disabled Link</span></a>
                 &nbsp &nbsp
-                <a href="#" class="fd-link fd-link--emphasized">Emphasized Link</a>
+                <a href="#" class="fd-link fd-link--emphasized"><span class="fd-link__content">Emphasized Link</span></a>
                 &nbsp &nbsp
-                <a href="#" class="fd-link fd-link--emphasized" aria-disabled="true">Emphasized Disabled Link</a>
+                <a href="#" class="fd-link fd-link--emphasized" aria-disabled="true"><span class="fd-link__content">Emphasized Disabled Link</span></a>
                 &nbsp &nbsp
                 <div style="background-color:#314a5e; padding:10px; width: 30%;">
-                    <a href="#" class="fd-link fd-link--inverted">Inverted link</a>
+                    <a href="#" class="fd-link fd-link--inverted"><span class="fd-link__content">Inverted link</span></a>
                 </div>
             </div>
         </div>
@@ -61,11 +61,11 @@
             <div class="fd-panel__content fd-theming__flex">
                 <nav aria-label="products breadcrumbs">
                     <ul class="fd-breadcrumb">
-                        <li class="fd-breadcrumb__item"><a class="fd-breadcrumb__link" tabindex="0" href="#">root</a></li>
-                        <li class="fd-breadcrumb__item"><a class="fd-breadcrumb__link" tabindex="0" href="#">first</a></li>
-                        <li class="fd-breadcrumb__item"><a class="fd-breadcrumb__link" tabindex="0" href="#">second</a></li>
-                        <li class="fd-breadcrumb__item"><a class="fd-breadcrumb__link" tabindex="0" href="#">fourth</a></li>
-                        <li aria-current="page" class="fd-breadcrumb__item">fifth</li>
+                        <li class="fd-breadcrumb__item"><a class="fd-breadcrumb__link" tabindex="0" href="#"><span class="fd-link__content">root</span></a></li>
+                        <li class="fd-breadcrumb__item"><a class="fd-breadcrumb__link" tabindex="0" href="#"><span class="fd-link__content">first</span></a></li>
+                        <li class="fd-breadcrumb__item"><a class="fd-breadcrumb__link" tabindex="0" href="#"><span class="fd-link__content">second</span></a></li>
+                        <li class="fd-breadcrumb__item"><a class="fd-breadcrumb__link" tabindex="0" href="#"><span class="fd-link__content">fourth</span></a></li>
+                        <li aria-current="page" class="fd-breadcrumb__item"><span class="fd-link__content">fifth</span></li>
                     </ul>
                 </nav>
             </div>
@@ -381,7 +381,10 @@
             <div class="fd-panel__content fd-theming__flex">
                 <div class="fd-theming__flex fd-theming__flex-column fd-theming__margin-right-1">
                     <div class="fd-message-strip fd-message-strip--information fd-message-strip--dismissible fd-theming__margin-bottom-03" 
-                    role="alert" id="SsoiW592">
+                    role="alert" aria-live="assertive" id="SsoiW592" aria-labelledby="message-strip-1">
+                        <div class="fd-message-strip__icon-container" aria-hidden="true">
+                            <span class="sap-icon sap-icon--message-information" focusable="false" role="presentation" aria-hidden="true"></span>
+                        </div>
                         <p class="fd-message-strip__text">
                             Message of type "Information" with icon, close button and <a href="#" class="fd-link" tabindex="0">link</a>
                         </p>
@@ -391,7 +394,10 @@
                     </div>
     
                     <div class="fd-message-strip fd-message-strip--success fd-message-strip--dismissible fd-theming__margin-bottom-03" 
-                        role="alert" id="SsoiW593">
+                        role="alert" aria-live="assertive" id="SsoiW592" aria-labelledby="message-strip-2">
+                        <div class="fd-message-strip__icon-container" aria-hidden="true">
+                            <span class="sap-icon sap-icon--message-success" focusable="false" role="presentation" aria-hidden="true"></span>
+                        </div>
                         <p class="fd-message-strip__text">
                             Message of type "Success" with icon, close button and <a href="#" class="fd-link" tabindex="0">link</a>
                         </p>
@@ -401,7 +407,10 @@
                     </div>
     
                     <div class="fd-message-strip fd-message-strip--warning fd-message-strip--dismissible fd-theming__margin-bottom-03" 
-                        role="alert" id="SsoiW594">
+                        role="alert" aria-live="assertive" id="SsoiW592" aria-labelledby="message-strip-3">
+                        <div class="fd-message-strip__icon-container" aria-hidden="true">
+                            <span class="sap-icon sap-icon--message-warning" focusable="false" role="presentation" aria-hidden="true"></span>
+                        </div>
                         <p class="fd-message-strip__text">
                             Message of type "Warning" with icon, close button and <a href="#" class="fd-link" tabindex="0">link</a>
                         </p>
@@ -411,7 +420,10 @@
                     </div>
     
                     <div class="fd-message-strip fd-message-strip--error fd-message-strip--dismissible fd-theming__margin-bottom-03" 
-                        role="alert" id="SsoiW595">
+                        role="alert" aria-live="assertive" id="SsoiW592" aria-labelledby="message-strip-4">
+                        <div class="fd-message-strip__icon-container" aria-hidden="true">
+                            <span class="sap-icon sap-icon--message-error" focusable="false" role="presentation" aria-hidden="true"></span>
+                        </div>
                         <p class="fd-message-strip__text">
                             Message of type "Error" with icon, close button and <a href="#" class="fd-link" tabindex="0">link</a>
                         </p>

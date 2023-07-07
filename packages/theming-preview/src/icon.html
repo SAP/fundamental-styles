@@ -74,15 +74,15 @@
                 </button>
                 &nbsp; &nbsp;
                 <div class="fd-segmented-button" role="group" aria-label="Group label">
-                    <button aria-label="Survey" class="fd-button"><i class="sap-icon--survey"></i></button>
+                    <button aria-label="Survey" class="fd-button" aria-pressed="false"><i class="sap-icon--survey"></i></button>
                     <button aria-label="Chart" class="fd-button is-selected" aria-pressed="true"><i class="sap-icon--pie-chart"></i></button>
-                    <button aria-label="Pool" class="fd-button"><i class="sap-icon--pool"></i></button>
+                    <button aria-label="Pool" class="fd-button" aria-pressed="false"><i class="sap-icon--pool"></i></button>
                 </div>
                 &nbsp; &nbsp;
                 <div class="fd-segmented-button" role="group" aria-label="Group label">
-                    <button aria-label="Survey" class="fd-button" disabled><i class="sap-icon--survey"></i></button>
+                    <button aria-label="Survey" class="fd-button" disabled aria-pressed="false"><i class="sap-icon--survey"></i></button>
                     <button aria-label="Chart" class="fd-button is-selected" aria-pressed="true" disabled><i class="sap-icon--pie-chart"></i></button>
-                    <button aria-label="Pool" class="fd-button" disabled><i class="sap-icon--pool"></i></button>
+                    <button aria-label="Pool" class="fd-button" disabled aria-pressed="false"><i class="sap-icon--pool"></i></button>
                 </div>
             </div>
         </div>
@@ -132,7 +132,7 @@
                         <span class="fd-rating-indicator__dynamic-text">(2 of 5)</span>
                     </div>
                     <br>
-                    <div class="fd-rating-indicator is-display-mode">
+                    <div class="fd-rating-indicator fd-rating-indicator--display-mode">
                         <div class="fd-rating-indicator__container" aria-label="Star Rating (out of 5)">
                             <input aria-label="1 star" type="radio" class="fd-rating-indicator__input" id="rating-display-mode-1" name="rating-display-mode" value="1" disabled>  
                             <label class="fd-rating-indicator__label" for="rating-display-mode-1"></label>
