@@ -2,9 +2,6 @@
 @import "./functions";
 @import "./mixins";
 
-/*!
-.fd-object-status+(--success | --warning | --error | --informative | --neutral)
-*/
 $block: #{$fd-namespace}-object-status;
 
 $color-states: (

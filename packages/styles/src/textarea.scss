@@ -1,9 +1,6 @@
 @import "./new-settings";
 @import "./mixins";
 
-/*!
-.fd-textarea
-*/
 $block: #{$fd-namespace}-textarea;
 
 .#{$block} {

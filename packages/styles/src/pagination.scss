@@ -2,10 +2,6 @@
 @import "./mixins";
 @import './mixins/button/button-helper';
 
-/*!
-.fd-pagination
-*/
-
 $block: #{$fd-namespace}-pagination;
 
 @mixin fd-pagination-mobile() {

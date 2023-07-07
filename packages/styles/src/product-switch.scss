@@ -3,9 +3,6 @@
 @import "./drag-and-drop";
 @import "./mixins/button/button-helper";
 
-/*!
-.fd-product-switch
-*/
 $block: #{$fd-namespace}-product-switch;
 
 .#{$block} {

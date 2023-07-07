@@ -1,9 +1,6 @@
 @import "./new-settings";
 @import "./mixins";
 
-/*!
-  .fd-form-item(--horizontal)
-*/
 $block: #{$fd-namespace}-form-item;
 
 $fd-form-label-spacing: 0.5rem !default;

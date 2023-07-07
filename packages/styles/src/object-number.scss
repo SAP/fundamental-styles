@@ -1,9 +1,6 @@
 @import "./new-settings";
 @import "./mixins";
 
-/*!
-.fd-object-number+(--success | --warning | --error)
-*/
 $block: #{$fd-namespace}-object-number;
 
 $color-states: (

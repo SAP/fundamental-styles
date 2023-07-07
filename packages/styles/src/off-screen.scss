@@ -1,11 +1,6 @@
 @import './new-settings';
 @import './mixins';
 
-/*!
-.fd-off-screen
-places the element far left of the screen. so it is not visible.
-*/
-
 $block: #{$fd-namespace}-off-screen;
 
 .#{$block} {

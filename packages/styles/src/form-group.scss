@@ -1,10 +1,6 @@
 @import "./new-settings";
 @import "./mixins";
 
-/*!
-  .fd-form-group(--inline)
-*/
-
 $block: #{$fd-namespace}-form-group;
 
 .#{$block} {

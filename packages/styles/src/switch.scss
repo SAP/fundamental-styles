@@ -1,11 +1,6 @@
 @import "./new-settings";
 @import "./mixins";
 
-/*!
-.fd-switch+(--no-border)
-    .fd-switch__content+()
-    .fd-switch__title+()
-*/
 $block: #{$fd-namespace}-switch;
 
 @mixin fd-slider-track-position($off-position, $on-position) {

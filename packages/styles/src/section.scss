@@ -1,12 +1,5 @@
 @import "./mixins";
 
-/*!
-.fd-section+(--full-bleed, --no-border)
-    .fd-section__header
-        .fd-section__title
-        .fd-section__actions
-    .fd-section__footer
-*/
 $block: #{$fd-namespace}-section;
 
 .#{$block} {

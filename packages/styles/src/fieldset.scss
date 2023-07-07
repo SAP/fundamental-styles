@@ -2,9 +2,6 @@
 @import "./mixins";
 @import "./form-group";
 
-/*!
-.fd-fieldset
-*/
 $block: #{$fd-namespace}-fieldset;
 
 .#{$block} {

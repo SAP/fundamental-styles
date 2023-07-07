@@ -1,10 +1,6 @@
 @import './new-settings';
 @import './mixins';
 
-/*!
-.fd-form-header
-   .fd-form-header__text
-*/
 $block: #{$fd-namespace}-form-header;
 $fd-form-header-padding-x: 1rem !default;
 

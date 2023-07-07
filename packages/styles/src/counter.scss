@@ -1,9 +1,6 @@
 @import "./new-settings";
 @import "./mixins";
 
-/*!
-.fd-counter+(--notification)
-*/
 $block: #{$fd-namespace}-counter;
 
 .#{$block} {
