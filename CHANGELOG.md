@@ -1,3 +1,12 @@
+# [0.30.0-rc.26](https://github.com/SAP/fundamental-styles/compare/v0.30.0-rc.25...v0.30.0-rc.26) (2023-07-07)
+
+
+### Bug Fixes
+
+* **styles:** update theming-preview markup with the latest fundamental-styles ([#4661](https://github.com/SAP/fundamental-styles/issues/4661)) ([99c6141](https://github.com/SAP/fundamental-styles/commit/99c61418838503c654e4df9350e7a54496b975fc))
+
+
+
 # [0.30.0-rc.25](https://github.com/SAP/fundamental-styles/compare/v0.30.0-rc.24...v0.30.0-rc.25) (2023-07-07)
 
 
