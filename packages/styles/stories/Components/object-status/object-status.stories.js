@@ -1,5 +1,6 @@
 import truncateExampleExampleHtml from "./truncate-example.example.html?raw";
 import invertedIndicationExampleHtml from "./inverted-indication.example.html?raw";
+import invertedIndicationSecondaryExampleHtml from "./inverted-indication-secondary.example.html?raw";
 import invertedExampleHtml from "./inverted.example.html?raw";
 import invertedStatesExampleHtml from "./inverted-states.example.html?raw";
 import largeObjectStatusExampleHtml from "./large-object-status.example.html?raw";
@@ -104,6 +105,14 @@ InvertedIndication.parameters = {
   docs: {
     description: {
       story: `Inverted indication colors`
+    }
+  }
+};
+export const InvertedIndicationSecondary = () => invertedIndicationSecondaryExampleHtml;
+InvertedIndicationSecondary.parameters = {
+  docs: {
+    description: {
+      story: `Secondary Set of Inverted indication colors`
     }
   }
 };
