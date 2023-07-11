@@ -55,6 +55,22 @@ const stylesThemes = {
         {
             value: 'sap_fiori_3_hcb',
             title: 'Quartz High Contrast Black'
+        },
+        {
+            value: 'sap_belize',
+            title: 'Belize(Preview)'
+        },
+        {
+            value: 'sap_belize_hcb',
+            title: 'Belize High Contrast Black(Preview)'
+        },
+        {
+            value: 'sap_belize_hcw',
+            title: 'Belize High Contrast White(Preview)'
+        },
+        {
+            value: 'sap_belize_plus',
+            title: 'Belize Plus(Preview)'
         }
     ]
 };

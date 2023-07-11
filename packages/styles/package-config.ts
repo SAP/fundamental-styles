@@ -13,6 +13,14 @@ import sap_horizon_hcw from './theming/sap_horizon_hcw.scss?inline';
 // @ts-ignore
 import sap_fiori_3 from './theming/sap_fiori_3.scss?inline';
 // @ts-ignore
+import sap_belize from './theming/sap_belize.scss?inline';
+// @ts-ignore
+import sap_belize_hcb from './theming/sap_belize_hcb.scss?inline';
+// @ts-ignore
+import sap_belize_hcw from './theming/sap_belize_hcw.scss?inline';
+// @ts-ignore
+import sap_belize_plus from './theming/sap_belize_plus.scss?inline';
+// @ts-ignore
 import sap_fiori_3_dark from './theming/sap_fiori_3_dark.scss?inline';
 // @ts-ignore
 import sap_fiori_3_light_dark from './theming/sap_fiori_3_light_dark.scss?inline';
@@ -32,7 +40,11 @@ const themesVariables = {
     sap_fiori_3_dark,
     sap_fiori_3_light_dark,
     sap_fiori_3_hcw,
-    sap_fiori_3_hcb
+    sap_fiori_3_hcb,
+    sap_belize,
+    sap_belize_hcb,
+    sap_belize_hcw,
+    sap_belize_plus,
 };
 
 export const packageConfig: PackageConfigInterface = {
