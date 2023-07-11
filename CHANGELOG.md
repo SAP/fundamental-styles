@@ -1,3 +1,12 @@
+# [0.30.0-rc.31](https://github.com/SAP/fundamental-styles/compare/v0.30.0-rc.30...v0.30.0-rc.31) (2023-07-11)
+
+
+### Bug Fixes
+
+* **styles:** add minor fixes for Object Status [ci visual] ([#4680](https://github.com/SAP/fundamental-styles/issues/4680)) ([16d3a57](https://github.com/SAP/fundamental-styles/commit/16d3a572eec0011eb64ea0b9f3a69dc0119cc75a))
+
+
+
 # [0.30.0-rc.30](https://github.com/SAP/fundamental-styles/compare/v0.30.0-rc.29...v0.30.0-rc.30) (2023-07-11)
 
 
