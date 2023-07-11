@@ -1,3 +1,12 @@
+# [0.30.0-rc.30](https://github.com/SAP/fundamental-styles/compare/v0.30.0-rc.29...v0.30.0-rc.30) (2023-07-11)
+
+
+### Features
+
+* **styles:** add Display Only Mode for Checkbox [ci visual] ([#4681](https://github.com/SAP/fundamental-styles/issues/4681)) ([1063380](https://github.com/SAP/fundamental-styles/commit/10633809d55d3f1f6b1b3ad6b3217201d15c6260))
+
+
+
 # [0.30.0-rc.29](https://github.com/SAP/fundamental-styles/compare/v0.30.0-rc.28...v0.30.0-rc.29) (2023-07-10)
 
 
