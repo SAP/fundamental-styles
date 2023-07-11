@@ -201,7 +201,7 @@ $inverted-color-accents: (
   "1": (
     "regular": (
       "color": var(--sapIndicationColor_1_TextColor),
-      "background": var(--fdObjectStatus_Background_Indication_Color_1),
+      "background": var(--sapIndicationColor_1_Background),
       "borderColor": var(--sapIndicationColor_1_BorderColor),
     ),
     "hover": (
@@ -223,7 +223,7 @@ $inverted-color-accents: (
   "2": (
     "regular": (
       "color": var(--sapIndicationColor_2_TextColor),
-      "background": var(--fdObjectStatus_Background_Indication_Color_2),
+      "background": var(--sapIndicationColor_2_Background),
       "borderColor": var(--sapIndicationColor_2_BorderColor),
     ),
     "hover": (
@@ -245,7 +245,7 @@ $inverted-color-accents: (
   "3": (
     "regular": (
       "color": var(--sapIndicationColor_3_TextColor),
-      "background": var(--fdObjectStatus_Background_Indication_Color_3),
+      "background": var(--sapIndicationColor_3_Background),
       "borderColor": var(--sapIndicationColor_3_BorderColor),
     ),
     "hover": (
@@ -267,7 +267,7 @@ $inverted-color-accents: (
   "4": (
     "regular": (
       "color": var(--sapIndicationColor_4_TextColor),
-      "background": var(--fdObjectStatus_Background_Indication_Color_4),
+      "background": var(--sapIndicationColor_4_Background),
       "borderColor": var(--sapIndicationColor_4_BorderColor),
     ),
     "hover": (
@@ -289,7 +289,7 @@ $inverted-color-accents: (
   "5": (
     "regular": (
       "color": var(--sapIndicationColor_5_TextColor),
-      "background": var(--fdObjectStatus_Background_Indication_Color_5),
+      "background": var(--sapIndicationColor_5_Background),
       "borderColor": var(--sapIndicationColor_5_BorderColor),
     ),
     "hover": (
@@ -311,7 +311,7 @@ $inverted-color-accents: (
   "6": (
     "regular": (
       "color": var(--sapIndicationColor_6_TextColor),
-      "background": var(--fdObjectStatus_Background_Indication_Color_6),
+      "background": var(--sapIndicationColor_6_Background),
       "borderColor": var(--sapIndicationColor_6_BorderColor),
     ),
     "hover": (
@@ -333,7 +333,7 @@ $inverted-color-accents: (
   "7": (
     "regular": (
       "color": var(--sapIndicationColor_7_TextColor),
-      "background": var(--fdObjectStatus_Background_Indication_Color_7),
+      "background": var(--sapIndicationColor_7_Background),
       "borderColor": var(--sapIndicationColor_7_BorderColor),
     ),
     "hover": (
@@ -355,7 +355,7 @@ $inverted-color-accents: (
   "8": (
     "regular": (
       "color": var(--sapIndicationColor_8_TextColor),
-      "background": var(--fdObjectStatus_Background_Indication_Color_8),
+      "background": var(--sapIndicationColor_8_Background),
       "borderColor": var(--sapIndicationColor_8_BorderColor),
     ),
     "hover": (
@@ -377,7 +377,7 @@ $inverted-color-accents: (
   "9": (
     "regular": (
       "color": var(--sapIndicationColor_9_TextColor),
-      "background": var(--fdObjectStatus_Background_Indication_Color_9),
+      "background": var(--sapIndicationColor_9_Background),
       "borderColor": var(--sapIndicationColor_9_BorderColor),
     ),
     "hover": (
@@ -399,7 +399,7 @@ $inverted-color-accents: (
   "10": (
     "regular": (
       "color": var(--sapIndicationColor_10_TextColor),
-      "background": var(--fdObjectStatus_Background_Indication_Color_10),
+      "background": var(--sapIndicationColor_10_Background),
       "borderColor": var(--sapIndicationColor_10_BorderColor),
     ),
     "hover": (
@@ -656,6 +656,7 @@ $inverted-color-accents-b: (
   --fdObjectStatus_Text_Color: #{map_deep_get($variablesSet, "regular", "color")};
   --fdObjectStatus_Icon_Color: #{map_deep_get($variablesSet, "regular", "color")};
   --fdObjectStatus_Background_Color: #{map_deep_get($variablesSet, "regular", "background")};
+  --fdObjectStatus_Border_Color: #{map_deep_get($variablesSet, "regular", "borderColor")};
 
   &:hover,
   &:active,
