@@ -146,6 +146,10 @@ $fd-tnt-icons: (
     status-terminating: '\e08E',
     solution-not-licensed: '\e08F',
     clear-all-mapping: '\e090',
-    map-all-fields: '\e091'
+    map-all-fields: '\e091',
+    indicator: '\e107',
+    indicator-active: '\e108',
+    task-optional: '\e109',
+    task-done: '\e10A'
 ) !default;
 /* stylelint-enable */

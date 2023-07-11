@@ -145,6 +145,10 @@
         "status-terminating",
         "solution-not-licensed",
         "clear-all-mapping",
-        "map-all-fields"
+        "map-all-fields",
+        "indicator",
+        "indicator-active",
+        "task-optional",
+        "task-done"
     ]
 }
