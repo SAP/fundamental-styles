@@ -199,6 +199,61 @@ $blockCheckmark: #{$fd-namespace}-checkbox__checkmark;
     }
   }
 
+  &.is-display {
+    @include fd-checkbox-label() {
+      --fdCheckbox_Check_Mark_Color: var(--sapTextColor);
+
+      gap: 0.5rem;
+
+      @include fd-hover() {
+        .#{$blockCheckmark} {
+          --fdCheckbox_Check_Mark_Color: var(--sapTextColor);
+          --fdCheckbox_Hover_Background_Color: transparent;
+        }
+      }
+    }
+
+    @include fd-checkbox-label-before() {
+      --fdCheckbox_Background_Color: transparent;
+      --fdCheckbox_Dimensions: 1rem;
+
+      border: none;
+
+      &::before {
+        @include fd-flex-center();
+        @include fd-set-width(1rem);
+        @include fd-set-height(1rem);
+
+        content: "\e19a";
+        font-size: 1rem;
+      }
+    }
+
+    &:checked {
+      @include fd-checkbox-label-before() {
+        &::before {
+          content: "\e03f";
+          font-size: 1rem;
+        }
+      }
+    }
+
+    &:indeterminate {
+      @include fd-checkbox-label-before() {
+        &::before {
+          content: "\e295";
+          font-size: 1rem;
+        }
+
+        &::after {
+          content: "";
+          width: 0;
+          height: 0;
+        }
+      }
+    }
+  }
+
   @include fd-focus() {
     @include fd-checkbox-label() {
       @include fd-form-radio-focus(var(--fdCheckbox_Focus_Outline_Offset), var(--fdCheckbox_Padding), var(--fdCheckbox_Outline_Border_Radius));
