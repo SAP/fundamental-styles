@@ -452,3 +452,50 @@ TextTruncation.parameters = {
     }
   }
 };
+
+export const DisplayOnly = () => `
+${localStyles}
+<fieldset class="fd-fieldset">
+    <legend class="fd-fieldset__legend">Display Only</legend>
+    <div class="fd-form-group">
+        <div class="fd-form-item">
+            <input type="checkbox" class="fd-checkbox is-display" id="Ai4ez611lwdo">
+            <label class="fd-checkbox__label" for="Ai4ez611lwdo" style="max-width: 400px;">
+                <span class="fd-checkbox__checkmark" aria-hidden="true"></span>
+                <div class="fd-checkbox__label-container">
+                    <span class="fd-checkbox__text">Unchecked Icon</span>
+                </div>
+            </label>
+        </div>
+        <div class="fd-form-item">
+            <input type="checkbox" class="fd-checkbox is-display" id="Ai4ez612lwdo" checked>
+            <label class="fd-checkbox__label" for="Ai4ez612lwdo" style="max-width: 400px;">
+                <span class="fd-checkbox__checkmark" aria-hidden="true"></span>
+                <div class="fd-checkbox__label-container">
+                    <span class="fd-checkbox__text">Checked Icon</span>
+                </div>
+            </label>
+        </div>
+        <div class="fd-form-item">
+            <input type="checkbox" class="fd-checkbox is-display" id="Ai4ez614ldo">
+            <label class="fd-checkbox__label" for="Ai4ez614ldo" style="max-width: 400px;">
+                <span class="fd-checkbox__checkmark" aria-hidden="true"></span>
+                <div class="fd-checkbox__label-container">
+                    <span class="fd-checkbox__text">Tri-state</span>
+                </div>
+            </label>
+        </div>
+    </div>
+</fieldset>
+`;
+DisplayOnly.parameters = {
+  docs: {
+    story: {
+      iframeHeight: 330
+    },
+    description: {
+      story: `In the Display Only Mode, the checkbox is replaced by two icons to represent the checked and unchecked states. The control becomes a simple icon. <br>Add the <code>.is-display</code> modifier class to <code>.fd-checkbox</code> for Display Only Mode.
+        `
+    }
+  }
+};

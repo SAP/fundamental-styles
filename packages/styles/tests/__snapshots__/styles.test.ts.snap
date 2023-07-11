@@ -7550,6 +7550,50 @@ exports[`Check stories > Components/Forms/Checkbox > Story Default > Should matc
 "
 `;
 
+exports[`Check stories > Components/Forms/Checkbox > Story DisplayOnly > Should match snapshot 1`] = `
+"
+
+<style>
+    .checkbox-example-container > fieldset {
+        max-width: 100%;
+    }
+</style>
+
+<fieldset class=\\"fd-fieldset\\">
+    <legend class=\\"fd-fieldset__legend\\">Display Only</legend>
+    <div class=\\"fd-form-group\\">
+        <div class=\\"fd-form-item\\">
+            <input type=\\"checkbox\\" class=\\"fd-checkbox is-display\\" id=\\"Ai4ez611lwdo\\">
+            <label class=\\"fd-checkbox__label\\" for=\\"Ai4ez611lwdo\\" style=\\"max-width: 400px;\\">
+                <span class=\\"fd-checkbox__checkmark\\" aria-hidden=\\"true\\"></span>
+                <div class=\\"fd-checkbox__label-container\\">
+                    <span class=\\"fd-checkbox__text\\">Unchecked Icon</span>
+                </div>
+            </label>
+        </div>
+        <div class=\\"fd-form-item\\">
+            <input type=\\"checkbox\\" class=\\"fd-checkbox is-display\\" id=\\"Ai4ez612lwdo\\" checked>
+            <label class=\\"fd-checkbox__label\\" for=\\"Ai4ez612lwdo\\" style=\\"max-width: 400px;\\">
+                <span class=\\"fd-checkbox__checkmark\\" aria-hidden=\\"true\\"></span>
+                <div class=\\"fd-checkbox__label-container\\">
+                    <span class=\\"fd-checkbox__text\\">Checked Icon</span>
+                </div>
+            </label>
+        </div>
+        <div class=\\"fd-form-item\\">
+            <input type=\\"checkbox\\" class=\\"fd-checkbox is-display\\" id=\\"Ai4ez614ldo\\">
+            <label class=\\"fd-checkbox__label\\" for=\\"Ai4ez614ldo\\" style=\\"max-width: 400px;\\">
+                <span class=\\"fd-checkbox__checkmark\\" aria-hidden=\\"true\\"></span>
+                <div class=\\"fd-checkbox__label-container\\">
+                    <span class=\\"fd-checkbox__text\\">Tri-state</span>
+                </div>
+            </label>
+        </div>
+    </div>
+</fieldset>
+"
+`;
+
 exports[`Check stories > Components/Forms/Checkbox > Story Inline > Should match snapshot 1`] = `
 "<fieldset class=\\"fd-fieldset\\">
     <legend class=\\"fd-fieldset__legend\\">Inline checkboxes</legend>
