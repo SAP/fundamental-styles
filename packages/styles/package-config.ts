@@ -13,6 +13,8 @@ import sap_horizon_hcw from './theming/sap_horizon_hcw.scss?inline';
 // @ts-ignore
 import sap_fiori_3 from './theming/sap_fiori_3.scss?inline';
 // @ts-ignore
+import sap_belize from './theming/sap_fiori_3.scss?inline';
+// @ts-ignore
 import sap_fiori_3_dark from './theming/sap_fiori_3_dark.scss?inline';
 // @ts-ignore
 import sap_fiori_3_light_dark from './theming/sap_fiori_3_light_dark.scss?inline';
@@ -32,7 +34,8 @@ const themesVariables = {
     sap_fiori_3_dark,
     sap_fiori_3_light_dark,
     sap_fiori_3_hcw,
-    sap_fiori_3_hcb
+    sap_fiori_3_hcb,
+    sap_belize
 };
 
 export const packageConfig: PackageConfigInterface = {
