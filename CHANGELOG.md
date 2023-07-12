@@ -1,3 +1,12 @@
+# [0.30.0-rc.33](https://github.com/SAP/fundamental-styles/compare/v0.30.0-rc.32...v0.30.0-rc.33) (2023-07-12)
+
+
+### Features
+
+* **styles:** bring belize themes as options in the doc ([#4679](https://github.com/SAP/fundamental-styles/issues/4679)) ([26e9fad](https://github.com/SAP/fundamental-styles/commit/26e9fad8ba733c372da370ef9e1b44523c9d8c48))
+
+
+
 # [0.30.0-rc.32](https://github.com/SAP/fundamental-styles/compare/v0.30.0-rc.31...v0.30.0-rc.32) (2023-07-11)
 
 
