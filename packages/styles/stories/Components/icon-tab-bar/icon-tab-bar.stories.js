@@ -92,7 +92,7 @@ Counter.storyName = 'Counters and Text';
 Counter.parameters = {
   docs: {
     description: {
-      story: 'Counters can be shown on top of labels. In this case you need to apply the `fd-icon-tab-bar--counters` modifier class. <br> The control has the same look and feel in Cozy and Compact mode.'
+      story: '<code>NOTE: This is no longer recommended.</code> Counters can be shown on top of labels. In this case you need to apply the `fd-icon-tab-bar--counters` modifier class. <br> The control has the same look and feel in Cozy and Compact mode.'
     }
   }
 };

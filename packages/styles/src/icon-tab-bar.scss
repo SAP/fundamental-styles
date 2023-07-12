@@ -541,6 +541,8 @@ $fd-icon-tab-bar-semantic-values: (
     height: $fd-icon-tab-bar-multi-click-button-size;
     min-width: $fd-icon-tab-bar-multi-click-button-size;
 
+    --fdButton_Hover_Shadow: none;
+
     @include fd-focus() {
       &::after {
         border-radius: var(--fdIcon_Tab_Bar_Multi_Click_Button_Focus_Radius);
@@ -805,8 +807,6 @@ $fd-icon-tab-bar-semantic-values: (
       --fdIconTabBar_Overflow_Button_Border_Color: var(--sapButton_Hover_BorderColor);
       --fdIconTabBar_Overflow_Button_Text_Color: var(--fdIcon_Tab_Bar_Overflow_Button_Text_Color_Hover);
       --fdIconTabBar_Overflow_Button_Icon_Color: var(--fdIcon_Tab_Bar_Overflow_Button_Icon_Color_Hover);
-
-      box-shadow: var(--fdIcon_Tab_Bar_Overflow_Button_Hover_Box_Shadow);
     }
 
     @include fd-active() {
