@@ -17470,9 +17470,9 @@ exports[`Check stories > Components/List/Byline > Story LongText > Should match 
   <span class=\\"fd-image--s fd-list__thumbnail\\" aria-label=\\"Godafoss waterfall in northern Iceland\\"
 style=\\"background-image: url('assets/images/backgrounds/Godafoss_waterfall_in_northern_Iceland.jpg'); background-size:cover;\\"></span>
   <div class=\\"fd-list__content\\">
-      <div class=\\"fd-list__title fd-list__title--wrap\\">List item with 2-column byline and also a very long title, Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
-      <div class=\\"fd-list__byline fd-list__byline--2-col\\">
-          <div class=\\"fd-list__byline-left fd-list__byline-left--wrap\\">First text item in byline (standard text), Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<a href=\\"#\\" class=\\"fd-link fd-list__link--more\\" tabindex=\\"0\\"><span class=\\"fd-link__content\\">Less</span></a></div>
+      <div class=\\"fd-list__title fd-list__title--wrap\\">Very long title, Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+      <div class=\\"fd-list__byline fd-list__byline--wrap\\">
+          <div class=\\"fd-list__byline-left\\">First text item in byline (standard text), Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<a href=\\"#\\" class=\\"fd-link fd-list__link--more\\" tabindex=\\"0\\"><span class=\\"fd-link__content\\">Less</span></a></div>
           <div class=\\"fd-list__byline-right\\">Second text item in byline (can be semantic)</div>
       </div>
   </div>
@@ -17722,7 +17722,7 @@ exports[`Check stories > Components/List/Byline > Story Standard > Should match 
 exports[`Check stories > Components/List/Byline > Story UnreadNotification > Should match snapshot 1`] = `
 "<h4 id=\\"O09lk8\\">Standard</h4>
 <ul class=\\"fd-list fd-list--byline fd-list--unread-indicator\\" role=\\"listbox\\" aria-labelledby=\\"O09lk9\\">
-    <li role=\\"option\\" tabindex=\\"0\\" class=\\"fd-list__item is-selected\\">
+    <li role=\\"option\\" tabindex=\\"0\\" class=\\"fd-list__item fd-list__item--unread is-selected\\">
         <span class=\\"sap-icon--circle-task-2 fd-list__notification\\"></span>
         <span class=\\"fd-list__thumbnail\\"><i role=\\"presentation\\" class=\\"sap-icon--activate\\"></i></span>
         <div class=\\"fd-list__content\\">
@@ -17730,7 +17730,7 @@ exports[`Check stories > Components/List/Byline > Story UnreadNotification > Sho
             <span class=\\"fd-list__byline\\">Byline (description)</span>
         </div>
     </li>
-    <li role=\\"option\\" tabindex=\\"0\\" class=\\"fd-list__item\\">
+    <li role=\\"option\\" tabindex=\\"0\\" class=\\"fd-list__item fd-list__item--unread\\">
         <span class=\\"sap-icon--circle-task-2 fd-list__notification\\"></span>
         <span class=\\"fd-image--s fd-list__thumbnail\\" aria-label=\\"Godafoss waterfall in northern Iceland\\"
               style=\\"background-image: url('assets/images/backgrounds/Godafoss_waterfall_in_northern_Iceland.jpg'); background-size:cover;\\"></span>
@@ -17743,6 +17743,17 @@ exports[`Check stories > Components/List/Byline > Story UnreadNotification > Sho
         </div>
     </li>
     <li role=\\"option\\" tabindex=\\"0\\" class=\\"fd-list__item\\">
+        <span class=\\"fd-image--s fd-list__thumbnail\\" aria-label=\\"Godafoss waterfall in northern Iceland\\"
+              style=\\"background-image: url('assets/images/backgrounds/Godafoss_waterfall_in_northern_Iceland.jpg'); background-size:cover;\\"></span>
+        <div class=\\"fd-list__content\\">
+            <div class=\\"fd-list__title\\" id=\\"O09lk2sdf\\">List item with 2-column byline</div>
+            <div class=\\"fd-list__byline fd-list__byline--2-col\\">
+                <div class=\\"fd-list__byline-left\\">First text item in byline (standard text)</div>
+                <div class=\\"fd-list__byline-right\\">Second text item in byline (can be semantic)</div>
+            </div>
+        </div>
+    </li>
+    <li role=\\"option\\" tabindex=\\"0\\" class=\\"fd-list__item fd-list__item--unread\\">
         <span class=\\"sap-icon--circle-task-2 fd-list__notification\\"></span>
         <div class=\\"fd-list__content\\">
             <div class=\\"fd-list__title\\" id=\\"O09lk3\\">Text-only list item</div>
@@ -17753,7 +17764,7 @@ exports[`Check stories > Components/List/Byline > Story UnreadNotification > Sho
 
 <h4 id=\\"O09lk9\\">Navigation</h4>
 <ul class=\\"fd-list fd-list--byline fd-list--navigation fd-list--unread-indicator\\" role=\\"list\\">
-    <li role=\\"listitem\\" tabindex=\\"-1\\" class=\\"fd-list__item fd-list__item--link\\">
+    <li role=\\"listitem\\" tabindex=\\"-1\\" class=\\"fd-list__item fd-list__item--link fd-list__item--unread\\">
         <span class=\\"sap-icon--circle-task-2 fd-list__notification\\"></span>
         <a tabindex=\\"0\\" class=\\"fd-list__link\\" href=\\"#\\">
             <span class=\\"fd-list__thumbnail\\"><i role=\\"presentation\\" class=\\"sap-icon--activate\\"></i></span>
@@ -17763,7 +17774,7 @@ exports[`Check stories > Components/List/Byline > Story UnreadNotification > Sho
             </div>
         </a>
     </li>
-    <li role=\\"listitem\\" tabindex=\\"-1\\" class=\\"fd-list__item fd-list__item--link is-selected\\">
+    <li role=\\"listitem\\" tabindex=\\"-1\\" class=\\"fd-list__item fd-list__item--link fd-list__item--unread is-selected\\">
         <span class=\\"sap-icon--circle-task-2 fd-list__notification\\"></span>
         <a tabindex=\\"0\\" class=\\"fd-list__link\\" href=\\"#\\">
             <span class=\\"fd-list__thumbnail\\"><i role=\\"presentation\\" class=\\"sap-icon--employee\\"></i></span>
