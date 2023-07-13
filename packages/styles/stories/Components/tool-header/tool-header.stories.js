@@ -80,9 +80,8 @@ The tool header supports object status in its semantic form. No industry specifi
 
 - <code style="color:red;">.fd-tool-header__object-status</code><br>
 
-###Input Group
-- <code style="color:red;">.fd-tool-header__input-group</code>
-
+### Search field
+- <code style="color:red;">.fd-tool-header__search-field</code> this modifier class can be applied together with input.
 `,
     tags: ['btp', 'theme', 'development']
   }
