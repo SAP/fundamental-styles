@@ -23,7 +23,7 @@ Preferably the Horizontal Navigation is suitable for a maximum of seven to nine 
 
 It displays the navigation items respectively in horizontal mode. The Tabs are displayed underneath the Tool Header, enabling the navigation into another page and context within the same Application while the Tool Header and the Tabs remain static.
 
-The Horizontal Navigation Tabs are built with the IconTabBar component with two additional modifier classes \`.fd-icon-tab-bar--navigation\` nad \`.fd-icon-tab-bar--navigation-horizontal\`.
+The Horizontal Navigation Tabs are built with the IconTabBar component with two additional modifier classes \`.fd-icon-tab-bar--navigation\` and \`.fd-icon-tab-bar--navigation-horizontal\`.
 
 The Horizontal Navigation is always integrated with the Tool Header. It should not be displayed standalone.
 
