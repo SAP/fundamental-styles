@@ -540,10 +540,6 @@ $fd-tool-header-object-status-semantic-values: (
 
       .#{$block}__search-category {
         background-color: var(--fdShellbar_Search_Hover_Background);
-
-        &::before {
-          // display: none;
-        }
       }
 
       .#{$block}__search-field-category {
