@@ -1,3 +1,12 @@
+# [0.30.0-rc.38](https://github.com/SAP/fundamental-styles/compare/v0.30.0-rc.37...v0.30.0-rc.38) (2023-07-14)
+
+
+### Bug Fixes
+
+* **styles:** design review fixes for Icon Tab Bar [ci visual] ([#4686](https://github.com/SAP/fundamental-styles/issues/4686)) ([85435b0](https://github.com/SAP/fundamental-styles/commit/85435b05caebcf57d45e659fd63971c93d61e786))
+
+
+
 # [0.30.0-rc.37](https://github.com/SAP/fundamental-styles/compare/v0.30.0-rc.36...v0.30.0-rc.37) (2023-07-14)
 
 
