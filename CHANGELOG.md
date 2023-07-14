@@ -1,3 +1,12 @@
+# [0.30.0-rc.37](https://github.com/SAP/fundamental-styles/compare/v0.30.0-rc.36...v0.30.0-rc.37) (2023-07-14)
+
+
+### Bug Fixes
+
+* **styles:** add the proper box-shadow for Card in Quartz Theme [ci visual] ([#4690](https://github.com/SAP/fundamental-styles/issues/4690)) ([7effd4e](https://github.com/SAP/fundamental-styles/commit/7effd4eabc2062564108cc5df8f0289397ba4716))
+
+
+
 # [0.30.0-rc.36](https://github.com/SAP/fundamental-styles/compare/v0.30.0-rc.35...v0.30.0-rc.36) (2023-07-14)
 
 
