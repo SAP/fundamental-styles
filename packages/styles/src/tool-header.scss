@@ -70,7 +70,7 @@ $fd-tool-header-object-status-semantic-values: (
 
 .#{$block} {
   // Paddings
-  $fd-tool__header-item-spacing: 0.5rem !default;
+  $fd-tool-header-item-spacing: 0.5rem !default;
 
   @include fd-reset();
 
@@ -92,7 +92,7 @@ $fd-tool-header-object-status-semantic-values: (
     &--center {
       display: none;
       justify-content: center;
-      margin: 0 $fd-tool__header-item-spacing;
+      margin: 0 $fd-tool-header-item-spacing;
 
       .#{$block}__action {
         width: 100%;
