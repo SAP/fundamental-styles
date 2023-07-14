@@ -39,6 +39,7 @@
 @import "./common/calendar/sap_fiori";
 @import "./common/step-input/sap_fiori";
 @import "./common/object-status/sap_fiori";
+@import "./common/tokenizer/sap_fiori";
 @import "./sap_fiori_3/css_variables";
 
 :root {
@@ -229,4 +230,7 @@
 
   /** Nested List */
   --fdNested_List_Border_Corner_Radius: var(--sapElement_BorderCornerRadius);
+
+  /** Tokenizer */
+  --fdTokenizer_Indicator_Color: var(--sapTextColor);
 }

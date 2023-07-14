@@ -50,6 +50,7 @@ $block: #{$fd-namespace}-tokenizer;
 
     display: inline-block;
     cursor: pointer;
+    color: var(--fdTokenizer_Indicator_Color);
   }
 
   .#{$block}__input {
