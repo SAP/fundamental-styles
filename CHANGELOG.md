@@ -1,3 +1,12 @@
+# [0.30.0-rc.42](https://github.com/SAP/fundamental-styles/compare/v0.30.0-rc.41...v0.30.0-rc.42) (2023-07-14)
+
+
+### Bug Fixes
+
+* **styles:** update Byline List after design review [ci visual] ([#4687](https://github.com/SAP/fundamental-styles/issues/4687)) ([d4e236b](https://github.com/SAP/fundamental-styles/commit/d4e236b1595a91b49e9be4bc417fb7ce4c84e0c9))
+
+
+
 # [0.30.0-rc.41](https://github.com/SAP/fundamental-styles/compare/v0.30.0-rc.40...v0.30.0-rc.41) (2023-07-14)
 
 
