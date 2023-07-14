@@ -17,13 +17,13 @@ $block: #{$fd-namespace}-list;
 $objectListBlock: #{$fd-namespace}-object-list;
 $messageViewList: #{$block}--message-view;
 
-$fd-list-item-padding-x: 1rem !default;
+$fd-list-item-padding-x: 0.9375rem !default;
 $fd-list-large-font-size: var(--sapFontLargeSize) !default;
 $fd-list-normal-font-size: var(--sapFontSize) !default;
 $fd-list-selected-state-border-bottom: var(--sapList_BorderWidth) solid var(--sapList_SelectionBorderColor);
 
 $fd-list-byline-item-padding-x: 1rem !default;
-$fd-list-byline-item-padding-y: 1rem !default;
+$fd-list-byline-item-padding-y: 0.9375rem !default;
 $fd-list-byline-borderless-item-padding-y: 0.5rem !default;
 
 $fd-list-selection-container-width: 2.75rem !default;

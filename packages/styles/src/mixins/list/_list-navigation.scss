@@ -44,7 +44,7 @@
       --fdList_Navigation_Link_Padding_Right: #{$fd-list-byline-item-padding-x};
 
       .#{$block}__link {
-        @include fd-set-paddings-y-equal(1rem);
+        @include fd-set-paddings-y-equal(0.9375rem);
       }
 
       &.#{$block}--unread-indicator {

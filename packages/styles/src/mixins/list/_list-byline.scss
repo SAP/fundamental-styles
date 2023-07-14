@@ -17,11 +17,12 @@ $fd-list-byline-section-text-color: var(--sapContent_LabelColor) !default;
       min-height: $fd-list-byline-item-height;
       height: auto;
       padding: $fd-list-byline-item-padding-y $fd-list-byline-item-padding-x;
-      align-items: center;
+      align-items: flex-start;
 
       .#{$block}__item-counter {
         @include fd-flex-vertical-center();
 
+        align-self: center;
         justify-content: flex-end;
         height: 100%;
         min-width: 2rem;
@@ -42,7 +43,7 @@ $fd-list-byline-section-text-color: var(--sapContent_LabelColor) !default;
       min-height: $fd-list-byline-thumbnail-dimensions;
       max-height: $fd-list-byline-thumbnail-dimensions;
       border-radius: 0.25rem;
-      font-size: 2.5rem;
+      font-size: 2rem;
       color: var(--sapContent_NonInteractiveIconColor);
 
       > svg {
@@ -59,6 +60,14 @@ $fd-list-byline-section-text-color: var(--sapContent_LabelColor) !default;
       transform: translateY(-50%);
       color: var(--sapAccentColor6);
       font-size: 0.375rem;
+
+      & ~ .#{$block}__content .#{$block}__title {
+        font-weight: bold;
+      }
+
+      & + .#{$block}__link .#{$block}__content .#{$block}__title {
+        font-weight: bold;
+      }
     }
 
     .#{$block}__content {
@@ -88,17 +97,32 @@ $fd-list-byline-section-text-color: var(--sapContent_LabelColor) !default;
       font-size: $fd-list-normal-font-size;
       color: $fd-list-byline-section-text-color;
       line-height: $fd-list-byline-text-line-height;
-      padding-top: 0.75rem;
+      padding-top: 0.5rem;
 
       &--2-col {
         display: flex;
         pointer-events: all;
       }
+
+      &--wrap {
+        .#{$block}__byline-right,
+        .#{$block}__byline-left {
+          padding: 0;
+          width: 100%;
+          display: inline;
+          white-space: normal;
+        }
+
+        .#{$block}__byline-right {
+          width: auto;
+          float: right;
+        }
+      }
     }
 
     .#{$block}__link {
       &--more {
-        text-transform: uppercase;
+        text-transform: capitalize;
         pointer-events: all;
       }
     }
@@ -139,12 +163,6 @@ $fd-list-byline-section-text-color: var(--sapContent_LabelColor) !default;
         &--#{$set-name} {
           color: map_get($color-set, "color");
         }
-      }
-    }
-
-    .#{$block}__byline-left, .#{$block}__byline-right {
-      &--wrap {
-        white-space: normal;
       }
     }
 

@@ -274,6 +274,8 @@
 
   .#{$block}__button {
     @include fd-set-margin-left(var(--fdList_Button_Spacing));
+
+    align-self: center;
   }
 
   @include fd-compact-or-condensed() {
