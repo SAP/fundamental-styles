@@ -1,3 +1,12 @@
+# [0.30.0-rc.36](https://github.com/SAP/fundamental-styles/compare/v0.30.0-rc.35...v0.30.0-rc.36) (2023-07-14)
+
+
+### Bug Fixes
+
+* **styles:** bring Horizon updates for Tokenizer [ci visual] ([#4691](https://github.com/SAP/fundamental-styles/issues/4691)) ([3c4f7ab](https://github.com/SAP/fundamental-styles/commit/3c4f7abd8a2765fb9e678e7f772200d494999142))
+
+
+
 # [0.30.0-rc.35](https://github.com/SAP/fundamental-styles/compare/v0.30.0-rc.34...v0.30.0-rc.35) (2023-07-14)
 
 
