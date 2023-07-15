@@ -589,7 +589,7 @@ exports[`Check stories > Components/Avatar > Story Interactive > Should match sn
 <style>
 
     .fd-avatar {
-        margin: 0 0.5rem;
+        margin: 0.5rem;
     }
 
 
@@ -1429,36 +1429,131 @@ exports[`Check stories > Components/Avatar Group > Story GroupTypeInteractionSta
 `;
 
 exports[`Check stories > Components/Avatar Group > Story GroupTypeVertical > Should match snapshot 1`] = `
-"<div style=\\"min-height: 400px;\\">
-    <div class=\\"fd-popover\\">
-        <div class=\\"fd-popover__control fd-avatar-group__popover-control\\"
-            role=\\"button\\"
-            tabindex=\\"0\\"
-            aria-label=\\"Has popup type dialog Conjoined avatars, 6 avatars displayed, 8 avatars hidden, activate for complete list\\"
-            aria-haspopup=\\"true\\"
-            aria-expanded=\\"false\\">
-            <div class=\\"fd-avatar-group fd-avatar-group--group-type fd-avatar-group--m fd-avatar-group--vertical\\">
-                <span class=\\"fd-avatar fd-avatar--m fd-avatar--circle fd-avatar--border\\" role=\\"img\\" aria-label=\\"Wendy Wallace\\" title=\\"Wendy Wallace\\">WW</span>
-
-                <span class=\\"fd-avatar fd-avatar--m fd-avatar--circle fd-avatar--border\\" role=\\"img\\" aria-label=\\"Simon Doe\\" title=\\"Simon Doe\\">
-                    <i class=\\"fd-avatar__icon sap-icon--money-bills\\" role=\\"presentation\\"></i>
-                </span>
-
-                <span class=\\"fd-avatar fd-avatar--m fd-avatar--circle fd-avatar--border fd-avatar--thumbnail\\" style=\\"background-image: url('/assets/images/portraits/L_80x80_M1.png')\\" role=\\"img\\" alt=\\"John Doe\\" title=\\"John Doe\\"></span>
-
-                <span class=\\"fd-avatar fd-avatar--m fd-avatar--circle fd-avatar--border\\" role=\\"img\\" aria-label=\\"Endy Wallace\\" title=\\"Endy Wallace\\">EW</span>
-
-                <span class=\\"fd-avatar fd-avatar--m fd-avatar--circle fd-avatar--border\\" role=\\"img\\" aria-label=\\"Whitney Copper\\" title=\\"Whitney Copper\\">
-                    <i class=\\"fd-avatar__icon sap-icon--washing-machine\\" role=\\"presentation\\"></i>
-                </span>
-
-                <span class=\\"fd-avatar fd-avatar--m fd-avatar--circle fd-avatar--border fd-avatar--thumbnail\\" style=\\"background-image: url('/assets/images/portraits/L_80x80_M2.png')\\" role=\\"img\\" alt=\\"John Doe\\" title=\\"John Doe\\"></span>
-
-                <span class=\\"fd-avatar fd-avatar--m fd-avatar--circle fd-avatar--border fd-avatar--overflow\\" role=\\"button\\" aria-label=\\"John Doe\\" title=\\"John Doe\\" tabindex=\\"-1\\">+8</span>
+"<div class=\\"is-cozy\\"> 
+    
+    <div dir=\\"ltr\\">
+        <div style=\\"min-height: 400px;\\">
+        <div class=\\"fd-popover\\">
+            <div class=\\"fd-popover__control fd-avatar-group__popover-control\\"
+                role=\\"button\\"
+                tabindex=\\"0\\"
+                aria-label=\\"Has popup type dialog Conjoined avatars, 6 avatars displayed, 8 avatars hidden, activate for complete list\\"
+                aria-haspopup=\\"true\\"
+                aria-expanded=\\"false\\"
+                onclick=\\"onPopoverClick('popover_avatar-group_tztuj-v');\\">
+                <div class=\\"fd-avatar-group fd-avatar-group--group-type fd-avatar-group--m fd-avatar-group--vertical \\">
+                    <span 
+                        class=\\"fd-avatar fd-avatar--m fd-avatar--circle fd-avatar--border\\" 
+                        role=\\"img\\" 
+                        aria-label=\\"Wendy Wallace\\" 
+                        title=\\"Wendy Wallace\\">WW
+                    </span>
+                    
+                    <span 
+                        class=\\"fd-avatar fd-avatar--m fd-avatar--circle fd-avatar--border\\" 
+                        role=\\"img\\" 
+                        aria-label=\\"Simon Doe\\" 
+                        title=\\"Simon Doe\\">
+                            <i class=\\"fd-avatar__icon sap-icon--money-bills\\" role=\\"presentation\\" aria-hidden=\\"true\\"></i>
+                    </span>
+                    
+                    <span 
+                        class=\\"fd-avatar fd-avatar--m fd-avatar--circle fd-avatar--border fd-avatar--thumbnail\\" style=\\"background-image: url('/assets/images/portraits/L_80x80_M1.png')\\" 
+                        role=\\"img\\" 
+                        alt=\\"John Doe\\" 
+                        title=\\"John Doe\\">
+                    </span>
+                    
+                    <span 
+                        class=\\"fd-avatar fd-avatar--m fd-avatar--circle fd-avatar--border\\" 
+                        role=\\"img\\" 
+                        aria-label=\\"Endy Wallace\\" 
+                        title=\\"Endy Wallace\\">EW
+                    </span>
+                    
+                    <span 
+                        class=\\"fd-avatar fd-avatar--m fd-avatar--circle fd-avatar--border\\" 
+                        role=\\"img\\" 
+                        aria-label=\\"Whitney Copper\\" 
+                        title=\\"Whitney Copper\\">
+                            <i class=\\"fd-avatar__icon sap-icon--washing-machine\\" role=\\"presentation\\" aria-hidden=\\"true\\"></i>
+                    </span>
+                    
+                    <span 
+                        class=\\"fd-avatar fd-avatar--m fd-avatar--circle fd-avatar--border fd-avatar--thumbnail\\" 
+                        style=\\"background-image: url('/assets/images/portraits/L_80x80_M2.png')\\" 
+                        role=\\"img\\" 
+                        alt=\\"John Doe\\" 
+                        title=\\"John Doe\\">
+                    </span>
+    
+                    <span 
+                        class=\\"fd-avatar fd-avatar--m fd-avatar--circle fd-avatar--overflow\\" 
+                        role=\\"button\\" 
+                        tabindex=\\"-1\\">+8
+                    </span>
+                </div>
             </div>
-        </div>    
+    
+            <div class=\\"fd-popover__body fd-popover__body--after fd-popover__body--arrow-left\\" aria-hidden=\\"true\\" id=\\"popover_avatar-group_tztuj-v\\" style=\\"width: 332px;\\">
+                <div class=\\"fd-popover__wrapper\\" style=\\"max-height: 200px; overflow-x: hidden\\">
+                    <div class=\\"fd-popover__body-header\\">
+                        <div class=\\"fd-bar fd-bar--header\\">
+                            <div class=\\"fd-bar__middle\\">
+                                <div class=\\"fd-bar__element\\">Team Members (14)</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class=\\"fd-avatar-group__overflow-body\\">
+                        <span class=\\"fd-avatar fd-avatar--m fd-avatar--circle fd-avatar--border\\" role=\\"img\\" aria-label=\\"Wendy Wallace\\" title=\\"Wendy Wallace\\">WW</span>
+                        
+                        <span class=\\"fd-avatar fd-avatar--m fd-avatar--circle fd-avatar--border\\" role=\\"img\\" aria-label=\\"Sarah Smith\\" title=\\"Sarah Smith\\">
+                            <i class=\\"fd-avatar__icon sap-icon--money-bills\\" role=\\"presentation\\"></i>
+                        </span>
+                        
+                        <span class=\\"fd-avatar fd-avatar--m fd-avatar--circle fd-avatar--border fd-avatar--thumbnail\\" style=\\"background-image: url('/assets/images/portraits/L_80x80_M1.png')\\" role=\\"img\\" alt=\\"John Doe\\" title=\\"John Doe\\"></span>
+    
+                        <span class=\\"fd-avatar fd-avatar--m fd-avatar--circle fd-avatar--border\\" role=\\"img\\" aria-label=\\"Endy Wallace\\" title=\\"Endy Wallace\\">EW</span>
+    
+                        <span class=\\"fd-avatar fd-avatar--m fd-avatar--circle fd-avatar--border\\" role=\\"img\\" aria-label=\\"Whitney Bow\\" title=\\"Whitney Bow\\">
+                            <i class=\\"fd-avatar__icon sap-icon--washing-machine\\" role=\\"presentation\\"></i>
+                        </span>
+    
+                        <span class=\\"fd-avatar fd-avatar--m fd-avatar--circle fd-avatar--border fd-avatar--thumbnail\\" style=\\"background-image: url('/assets/images/portraits/L_80x80_M2.png')\\" role=\\"img\\" alt=\\"John Doe\\" title=\\"John Doe\\"></span>
+    
+    
+                        <span class=\\"fd-avatar fd-avatar--m fd-avatar--circle fd-avatar--border\\" role=\\"img\\" aria-label=\\"Andy Wallace\\" title=\\"Andy Wallace\\">AW</span>
+    
+    
+                        <span class=\\"fd-avatar fd-avatar--m fd-avatar--circle fd-avatar--border\\" role=\\"img\\" aria-label=\\"John Carter\\" title=\\"John Carter\\">
+                            <i class=\\"fd-avatar__icon sap-icon--account\\" role=\\"presentation\\"></i>
+                        </span>
+    
+                        <span class=\\"fd-avatar fd-avatar--m fd-avatar--circle fd-avatar--border fd-avatar--thumbnail\\" style=\\"background-image: url('/assets/images/portraits/L_80x80_F3.png')\\" role=\\"img\\" alt=\\"John Doe\\" title=\\"John Doe\\"></span>
+    
+                        <span class=\\"fd-avatar fd-avatar--m fd-avatar--circle fd-avatar--border\\" role=\\"img\\" aria-label=\\"John Moe\\" title=\\"John Moe\\">JM</span>
+    
+                        <span class=\\"fd-avatar fd-avatar--m fd-avatar--circle fd-avatar--border\\" role=\\"img\\" aria-label=\\"Joe Bloggs\\" title=\\"Joe Bloggs\\">JB</span>
+    
+                        <span class=\\"fd-avatar fd-avatar--m fd-avatar--circle fd-avatar--border\\" role=\\"img\\" aria-label=\\"Simon Swan\\" title=\\"Simon Swan\\">
+                            <i class=\\"fd-avatar__icon sap-icon--visits\\" role=\\"presentation\\"></i>
+                        </span>
+    
+                        <span class=\\"fd-avatar fd-avatar--m fd-avatar--circle fd-avatar--border fd-avatar--thumbnail\\" style=\\"background-image: url('/assets/images/portraits/L_80x80_F4.png')\\" role=\\"img\\" alt=\\"John Doe\\" title=\\"John Doe\\"></span>
+    
+    
+                        <span class=\\"fd-avatar fd-avatar--m fd-avatar--circle fd-avatar--border\\" role=\\"img\\" aria-label=\\"Fred Bloggs\\" title=\\"Fred Bloggs\\">FB</span>
+    
+    
+                        <span class=\\"fd-avatar fd-avatar--m fd-avatar--circle fd-avatar--border\\" role=\\"img\\" aria-label=\\"Jan Alleman\\" title=\\"Jan Alleman\\">JA</span>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-</div>
+    
+    </div>
+    </div>
 "
 `;
 
@@ -1746,63 +1841,291 @@ exports[`Check stories > Components/Avatar Group > Story IndividualType > Should
 `;
 
 exports[`Check stories > Components/Avatar Group > Story IndividualTypeVertical > Should match snapshot 1`] = `
-"<div style=\\"min-height: 400px;\\">
-    <div class=\\"fd-avatar-group fd-avatar-group--individual-type fd-avatar-group--s fd-avatar-group--vertical\\">
-        <div class=\\"fd-popover\\">
-            <div class=\\"fd-popover__control\\">
-                <span 
-                    class=\\"fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--border\\" 
-                    role=\\"button\\" 
-                    tabindex=\\"0\\"
-                    aria-label=\\"Wendy Wallace\\" 
-                    title=\\"Wendy Wallace\\">WW
-                </span>
+"<div class=\\"is-compact\\">
+    
+    <div dir=\\"ltr\\">
+        <div style=\\"min-height: 400px; max-width: 3.25rem;\\">
+        <div class=\\"fd-avatar-group fd-avatar-group--individual-type fd-avatar-group--s fd-avatar-group--vertical\\">
+            <div class=\\"fd-popover\\">
+                <div class=\\"fd-popover__control\\">
+                    <span 
+                        class=\\"fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--border\\" 
+                        role=\\"button\\" 
+                        aria-label=\\"Wendy Wallace\\" 
+                        title=\\"Wendy Wallace\\" 
+                        tabindex=\\"0\\" 
+                        aria-haspopup=\\"true\\" 
+                        aria-expanded=\\"false\\" 
+                        onclick=\\"onPopoverClick('popover_avatar_5z28edb-v');\\">WW
+                    </span>
+                </div>
+                <div class=\\"fd-popover__body fd-popover__body--after fd-popover__body--arrow-left\\" aria-hidden=\\"true\\" id=\\"popover_avatar_5z28edb-v\\">
+                    <div class=\\"fd-quick-view\\">
+                        <div class=\\"fd-bar fd-bar--header\\">
+                            <div class=\\"fd-bar__middle\\">
+                                <div class=\\"fd-bar__element\\">Business Card</div>
+                            </div>
+                        </div>
+    
+                        <div class=\\"fd-quick-view__content\\">
+                            <div class=\\"fd-bar fd-bar--header-with-subheader\\">
+                                <div class=\\"fd-bar__left\\">
+                                    <span 
+                                        class=\\"fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--border\\" 
+                                        role=\\"img\\" 
+                                        aria-label=\\"Jason Smith\\" 
+                                        title=\\"Jason Smith\\">WW
+                                    </span>
+                                    <div class=\\"fd-quick-view__subheader-text\\">
+                                        <h5 class=\\"fd-title fd-title--h5\\">Jason Smith</h5>
+                                        <div class=\\"fd-quick-view__subtitle\\">Marketing Manager</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class=\\"fd-form-group\\" role=\\"group\\">
+                                <div class=\\"fd-form-group__header\\" aria-labelledby=\\"contactDetails_5z28edb-v\\">
+                                    <h1 class=\\"fd-form-group__header-text\\" id=\\"contactDetails_5z28edb-v\\">Contact Details</h1>
+                                </div>
+                                <div class=\\"fd-form-item\\">
+                                    <label class=\\"fd-form-label\\">Mobile</label>
+                                    <a class=\\"fd-link\\" href=\\"tel:+89181818181\\"><span class=\\"fd-link__content\\">+89181818181</span></a>
+                                </div>
+                                <div class=\\"fd-form-item\\">
+                                    <label class=\\"fd-form-label\\">Phone</label>
+                                    <a class=\\"fd-link\\" href=\\"tel:+2828282828\\"><span class=\\"fd-link__content\\">+2828282828</span></a>
+                                </div>
+                                <div class=\\"fd-form-item\\">
+                                    <label class=\\"fd-form-label\\">Email</label>
+                                    <a class=\\"fd-link\\" href=\\"mailto:blabla@blabla\\"><span class=\\"fd-link__content\\">blabla@blabla</span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
-        <div class=\\"fd-popover\\">
-            <div class=\\"fd-popover__control\\">
-                <span 
-                    class=\\"fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--border\\" 
-                    role=\\"button\\" 
-                    tabindex=\\"0\\"
-                    aria-label=\\"Jason Goldwell\\" 
-                    title=\\"Jason Goldwell\\">
-                    <i class=\\"fd-avatar__icon sap-icon--money-bills\\" role=\\"presentation\\" aria-hidden=\\"true\\"></i>
-                </span>
+            <div class=\\"fd-popover\\">
+                <div class=\\"fd-popover__control\\">
+                    <span 
+                        class=\\"fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--border\\" 
+                        role=\\"button\\" 
+                        aria-label=\\"Jason Goldwell\\" 
+                        title=\\"Jason Goldwell\\" 
+                        tabindex=\\"0\\" 
+                        aria-haspopup=\\"true\\" 
+                        aria-expanded=\\"false\\" 
+                        onclick=\\"onPopoverClick('popover_avatar_spbw4q-v');\\">
+                            <i class=\\"fd-avatar__icon sap-icon--money-bills\\" role=\\"presentation\\" aria-hidden=\\"true\\"></i>
+                    </span>
+                </div>
+                <div class=\\"fd-popover__body fd-popover__body--after fd-popover__body--arrow-left\\" aria-hidden=\\"true\\" id=\\"popover_avatar_spbw4q-v\\">
+                    <div class=\\"fd-quick-view\\">
+                        <div class=\\"fd-bar fd-bar--header\\">
+                            <div class=\\"fd-bar__middle\\">
+                                <div class=\\"fd-bar__element\\">Business Card</div>
+                            </div>
+                        </div>
+    
+                        <div class=\\"fd-quick-view__content\\">
+                            <div class=\\"fd-bar fd-bar--header-with-subheader\\">
+                                <div class=\\"fd-bar__left\\">
+                                    <span class=\\"fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--border\\" role=\\"img\\" aria-label=\\"Wendy Wallace\\" title=\\"Wendy Wallace\\">WW</span>
+                                    <div class=\\"fd-quick-view__subheader-text\\">
+                                        <h5 class=\\"fd-title fd-title--h5\\">Sarah Parker</h5>
+                                        <div class=\\"fd-quick-view__subtitle\\">Visual Designer</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class=\\"fd-form-group\\" role=\\"group\\">
+                                <div class=\\"fd-form-group__header\\" aria-labelledby=\\"contactDetails_spbw4q-v\\">
+                                    <h1 class=\\"fd-form-group__header-text\\" id=\\"contactDetails_spbw4q-v\\">Contact Details</h1>
+                                </div>
+                                <div class=\\"fd-form-item\\">
+                                    <label class=\\"fd-form-label\\">Mobile</label>
+                                    <a class=\\"fd-link\\" href=\\"tel:+89181818181\\">+89181818181</a>
+                                </div>
+                                <div class=\\"fd-form-item\\">
+                                    <label class=\\"fd-form-label\\">Phone</label>
+                                    <a class=\\"fd-link\\" href=\\"tel:+2828282828\\">+2828282828</a>
+                                </div>
+                                <div class=\\"fd-form-item\\">
+                                    <label class=\\"fd-form-label\\">Email</label>
+                                    <a class=\\"fd-link\\" href=\\"mailto:blabla@blabla\\">blabla@blabla</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
-        <div class=\\"fd-popover\\">
-            <div class=\\"fd-popover__control\\">
-                <span 
-                    class=\\"fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--border fd-avatar--thumbnail\\" style=\\"background-image: url('/assets/images/portraits/L_80x80_M1.png')\\" 
-                    role=\\"button\\" 
-                    alt=\\"Christian Bow\\" 
-                    title=\\"Christian Bow\\"
-                    tabindex=\\"0\\">
-                </span>
+            <div class=\\"fd-popover\\">
+                <div class=\\"fd-popover__control\\">
+                    <span 
+                        class=\\"fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--border fd-avatar--thumbnail\\" style=\\"background-image: url('/assets/images/portraits/L_80x80_M1.png')\\" 
+                        role=\\"button\\" 
+                        aria-label=\\"Christian Bow\\" 
+                        title=\\"Christian Bow\\" 
+                        tabindex=\\"0\\" 
+                        aria-haspopup=\\"true\\" 
+                        aria-expanded=\\"false\\" 
+                        onclick=\\"onPopoverClick('popover_avatar_4ahzcg-v');\\">
+                    </span>
+                </div>
+                <div class=\\"fd-popover__body fd-popover__body--after fd-popover__body--arrow-left\\" aria-hidden=\\"true\\" id=\\"popover_avatar_4ahzcg-v\\">
+                    <div class=\\"fd-quick-view\\">
+                        <div class=\\"fd-bar fd-bar--header\\">
+                            <div class=\\"fd-bar__middle\\">
+                                <div class=\\"fd-bar__element\\">Business Card</div>
+                            </div>
+                        </div>
+    
+                        <div class=\\"fd-quick-view__content\\">
+                            <div class=\\"fd-bar fd-bar--header-with-subheader\\">
+                                <div class=\\"fd-bar__left\\">
+                                    <span class=\\"fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--border fd-avatar--thumbnail\\" style=\\"background-image: url('/assets/images/portraits/L_80x80_M1.png')\\" role=\\"img\\" alt=\\"Christian Bow\\" title=\\"Christian Bow\\"></span>
+                                    <div class=\\"fd-quick-view__subheader-text\\">
+                                        <h5 class=\\"fd-title fd-title--h5\\">Christian Bow</h5>
+                                        <div class=\\"fd-quick-view__subtitle\\">Marketing Manager</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class=\\"fd-form-group\\" role=\\"group\\">
+                                <div class=\\"fd-form-group__header\\" aria-labelledby=\\"contactDetails_4ahzcg-v\\">
+                                    <h1 class=\\"fd-form-group__header-text\\" id=\\"contactDetails_4ahzcg-v\\">Contact Details</h1>
+                                </div>
+                                <div class=\\"fd-form-item\\">
+                                    <label class=\\"fd-form-label\\">Mobile</label>
+                                    <a class=\\"fd-link\\" href=\\"tel:+89181818181\\">+89181818181</a>
+                                </div>
+                                <div class=\\"fd-form-item\\">
+                                    <label class=\\"fd-form-label\\">Phone</label>
+                                    <a class=\\"fd-link\\" href=\\"tel:+2828282828\\">+2828282828</a>
+                                </div>
+                                <div class=\\"fd-form-item\\">
+                                    <label class=\\"fd-form-label\\">Email</label>
+                                    <a class=\\"fd-link\\" href=\\"mailto:blabla@blabla\\">blabla@blabla</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
-        <div class=\\"fd-popover\\">
-            <div class=\\"fd-popover__control\\">
-                <span 
-                    class=\\"fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--border\\" role=\\"button\\" 
-                    aria-label=\\"Endy Wallace\\" 
-                    tabindex=\\"0\\"
-                    title=\\"Endy Wallace\\">EW</span>
+            <div class=\\"fd-popover\\">
+                <div class=\\"fd-popover__control\\">
+                    <span 
+                        class=\\"fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--border\\" 
+                        role=\\"button\\" 
+                        aria-label=\\"Endy Wallace\\" 
+                        title=\\"Endy Wallace\\" 
+                        tabindex=\\"0\\" 
+                        aria-haspopup=\\"true\\" 
+                        aria-expanded=\\"false\\" 
+                        onclick=\\"onPopoverClick('popover_avatar_qc1f1jf-v');\\">EW
+                    </span>
+                </div>
+                <div class=\\"fd-popover__body fd-popover__body--after fd-popover__body--arrow-left\\" aria-hidden=\\"true\\" id=\\"popover_avatar_qc1f1jf-v\\">
+                    <div class=\\"fd-quick-view\\">
+                        <div class=\\"fd-bar fd-bar--header\\">
+                            <div class=\\"fd-bar__middle\\">
+                                <div class=\\"fd-bar__element\\">Business Card</div>
+                            </div>
+                        </div>
+    
+                        <div class=\\"fd-quick-view__content\\">
+                            <div class=\\"fd-bar fd-bar--header-with-subheader\\">
+                                <div class=\\"fd-bar__left\\">
+                                    <span class=\\"fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--border\\" role=\\"img\\" aria-label=\\"Endy Wallace\\" title=\\"Endy Wallace\\">EW</span>
+                                    <div class=\\"fd-quick-view__subheader-text\\">
+                                        <h5 class=\\"fd-title fd-title--h5\\">Endy Wallace</h5>
+                                        <div class=\\"fd-quick-view__subtitle\\">Software Developer</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class=\\"fd-form-group\\" role=\\"group\\">
+                                <div class=\\"fd-form-group__header\\" aria-labelledby=\\"contactDetails_qc1f1jf-v\\">
+                                    <h1 class=\\"fd-form-group__header-text\\" id=\\"contactDetails_qc1f1jf-v\\">Contact Details</h1>
+                                </div>
+                                <div class=\\"fd-form-item\\">
+                                    <label class=\\"fd-form-label\\">Mobile</label>
+                                    <a class=\\"fd-link\\" href=\\"tel:+89181818181\\">+89181818181</a>
+                                </div>
+                                <div class=\\"fd-form-item\\">
+                                    <label class=\\"fd-form-label\\">Phone</label>
+                                    <a class=\\"fd-link\\" href=\\"tel:+2828282828\\">+2828282828</a>
+                                </div>
+                                <div class=\\"fd-form-item\\">
+                                    <label class=\\"fd-form-label\\">Email</label>
+                                    <a class=\\"fd-link\\" href=\\"mailto:blabla@blabla\\">blabla@blabla</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
-
-        <div class=\\"fd-popover\\">
-            <div class=\\"fd-popover__control\\">
-                <span 
-                    class=\\"fd-avatar fd-avatar--accent-color-2 fd-avatar--s fd-avatar--circle fd-avatar--overflow\\" tabindex=\\"0\\" 
-                    role=\\"button\\">+4
-                </span>
+    
+            <div class=\\"fd-popover\\">
+                <div class=\\"fd-popover__control\\">
+                    <span 
+                        class=\\"fd-avatar fd-avatar--accent-color-2  fd-avatar--s fd-avatar--circle fd-avatar--overflow\\"
+                        tabindex=\\"0\\" 
+                        role=\\"button\\"
+                        aria-haspopup=\\"true\\" 
+                        aria-expanded=\\"false\\" 
+                        onclick=\\"onPopoverClick('popover_avatar_more_aoiwjth-v');\\">+4
+                    </span>
+                </div>
+    
+                <div class=\\"fd-popover__body fd-popover__body--after fd-popover__body--arrow-left\\" aria-hidden=\\"true\\" id=\\"popover_avatar_more_aoiwjth-v\\" style=\\"width: 245px;\\">
+                    <div class=\\"fd-popover__wrapper\\">
+                        <div class=\\"fd-popover__body-header\\">
+                            <div class=\\"fd-bar fd-bar--header\\">
+                                <div class=\\"fd-bar__middle\\">
+                                    <div class=\\"fd-bar__element\\">Team Members (4)</div>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class=\\"fd-avatar-group__overflow-body\\">
+                            <span 
+                                class=\\"fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--border\\" 
+                                role=\\"button\\" 
+                                aria-label=\\"Gordon Smith\\" 
+                                title=\\"Gordon Smith\\"
+                                tabindex=\\"0\\">
+                                <i class=\\"fd-avatar__icon sap-icon--washing-machine\\" role=\\"presentation\\" aria-hidden=\\"true\\"></i>
+                            </span>
+    
+                            <span 
+                                class=\\"fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--border fd-avatar--thumbnail\\" 
+                                style=\\"background-image: url('/assets/images/portraits/L_80x80_M2.png')\\" 
+                                role=\\"button\\" 
+                                alt=\\"John Doe\\" 
+                                title=\\"John Doe\\" 
+                                tabindex=\\"0\\">
+                            </span>
+    
+                            <span 
+                                class=\\"fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--border\\" 
+                                role=\\"button\\" 
+                                aria-label=\\"John Moe\\" 
+                                title=\\"John Moe\\" 
+                                tabindex=\\"0\\">JM
+                            </span>
+    
+                            <span 
+                                class=\\"fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--border\\" 
+                                role=\\"button\\" 
+                                aria-label=\\"Joe Bloggs\\" 
+                                title=\\"Joe Bloggs\\" 
+                                tabindex=\\"0\\">JB
+                            </span>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-</div>
-"
+    
+    </div>
+    </div>"
 `;
 
 exports[`Check stories > Components/Avatar Group > Story Overflow > Should match snapshot 1`] = `
@@ -26395,112 +26718,118 @@ exports[`Check stories > Components/Quick View > Story Dialog > Should match sna
 `;
 
 exports[`Check stories > Components/Quick View > Story NoHeader > Should match snapshot 1`] = `
-"<div class=\\"fd-popover\\">
-    <div class=\\"fd-popover__body\\" aria-hidden=\\"false\\" id=\\"popoverA1\\">
-        <div class=\\"fd-quick-view\\">
-            <div class=\\"fd-quick-view__content\\">
-                <div class=\\"fd-bar fd-bar--header-with-subheader\\">
-                    <div class=\\"fd-bar__left\\">
-                        <span class=\\"fd-avatar fd-avatar--s\\" role=\\"presentation\\">
-                            <i role=\\"presentation\\" class=\\"fd-avatar__icon sap-icon--camera\\"></i>
-                        </span>
-
-                        <div class=\\"fd-quick-view__subheader-text\\">
-                            <h5 class=\\"fd-title fd-title--h5\\">Company B</h5>
-
-                            <div class=\\"fd-quick-view__subtitle\\">
-                                Michael Adams
+"
+<div style=\\"margin-bottom: 300px;\\">
+    <div class=\\"fd-popover\\" >
+        <div class=\\"fd-popover__body\\" aria-hidden=\\"false\\" id=\\"popoverA1\\">
+            <div class=\\"fd-quick-view\\">
+                <div class=\\"fd-quick-view__content\\">
+                    <div class=\\"fd-bar fd-bar--header-with-subheader\\">
+                        <div class=\\"fd-bar__left\\">
+                            <span class=\\"fd-avatar fd-avatar--s\\" role=\\"presentation\\">
+                                <i role=\\"presentation\\" class=\\"fd-avatar__icon sap-icon--camera\\"></i>
+                            </span>
+    
+                            <div class=\\"fd-quick-view__subheader-text\\">
+                                <h5 class=\\"fd-title fd-title--h5\\">Company B</h5>
+    
+                                <div class=\\"fd-quick-view__subtitle\\">
+                                    Michael Adams
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-
-                <div class=\\"fd-form-group\\" role=\\"group\\">
-                    <div class=\\"fd-form-item\\">
-                        <label class=\\"fd-form-label\\">Start Date:</label>
-                        <span class=\\"fd-text\\">01/01/2015</span>
-                    </div>
-                    <div class=\\"fd-form-item\\">
-                        <label class=\\"fd-form-label\\">End Date:</label>
-                        <span class=\\"fd-text\\">31/12/2015</span>
-                    </div>
-                    <div class=\\"fd-form-item\\">
-                        <label class=\\"fd-form-label\\">Occurrence:</label>
-                        <span class=\\"fd-text\\">Weekly</span>
+    
+                    <div class=\\"fd-form-group\\" role=\\"group\\">
+                        <div class=\\"fd-form-item\\">
+                            <label class=\\"fd-form-label\\">Start Date:</label>
+                            <span class=\\"fd-text\\">01/01/2015</span>
+                        </div>
+                        <div class=\\"fd-form-item\\">
+                            <label class=\\"fd-form-label\\">End Date:</label>
+                            <span class=\\"fd-text\\">31/12/2015</span>
+                        </div>
+                        <div class=\\"fd-form-item\\">
+                            <label class=\\"fd-form-label\\">Occurrence:</label>
+                            <span class=\\"fd-text\\">Weekly</span>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+    </div>    
 </div>
 "
 `;
 
 exports[`Check stories > Components/Quick View > Story Popover > Should match snapshot 1`] = `
-"<div class=\\"fd-popover\\">
-    <div class=\\"fd-popover__body\\" aria-hidden=\\"false\\" id=\\"popoverA1\\">
-        <div class=\\"fd-quick-view\\">
-            <div class=\\"fd-bar fd-bar--header\\">
-                <div class=\\"fd-bar__middle\\">
-                    <div class=\\"fd-bar__element\\">Company</div>
+"<div style=\\"margin-bottom: 500px;\\">
+    <div class=\\"fd-popover\\" >
+        <div class=\\"fd-popover__body\\" aria-hidden=\\"false\\" id=\\"popoverA1\\">
+            <div class=\\"fd-quick-view\\">
+                <div class=\\"fd-bar fd-bar--header\\">
+                    <div class=\\"fd-bar__middle\\">
+                        <div class=\\"fd-bar__element\\">Company</div>
+                    </div>
                 </div>
-            </div>
-
-            <div class=\\"fd-quick-view__content\\">
-                <div class=\\"fd-bar fd-bar--header-with-subheader\\">
-                    <div class=\\"fd-bar__left\\">
-                        <span class=\\"fd-avatar fd-avatar--s\\" role=\\"presentation\\">
-                            <i role=\\"presentation\\" class=\\"fd-avatar__icon sap-icon--building\\"></i>
-                        </span>
-
-                        <div class=\\"fd-quick-view__subheader-text\\">
-                            <h5 class=\\"fd-title fd-title--h5\\">Company B</h5>
-
-                            <div class=\\"fd-quick-view__subtitle\\">
-                                Michael Adams
+    
+                <div class=\\"fd-quick-view__content\\">
+                    <div class=\\"fd-bar fd-bar--header-with-subheader\\">
+                        <div class=\\"fd-bar__left\\">
+                            <span class=\\"fd-avatar fd-avatar--s\\" role=\\"presentation\\">
+                                <i role=\\"presentation\\" class=\\"fd-avatar__icon sap-icon--building\\"></i>
+                            </span>
+    
+                            <div class=\\"fd-quick-view__subheader-text\\">
+                                <h5 class=\\"fd-title fd-title--h5\\">Company B</h5>
+    
+                                <div class=\\"fd-quick-view__subtitle\\">
+                                    Michael Adams
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-
-
-                <div class=\\"fd-form-group\\" role=\\"group\\">
-                    <div class=\\"fd-form-group__header\\" aria-labelledby=\\"contactDetails\\">
-                        <h1 class=\\"fd-form-group__header-text\\" id=\\"contactDetails\\">Contact Details</h1>
+    
+    
+                    <div class=\\"fd-form-group\\" role=\\"group\\">
+                        <div class=\\"fd-form-group__header\\" aria-labelledby=\\"contactDetails\\">
+                            <h1 class=\\"fd-form-group__header-text\\" id=\\"contactDetails\\">Contact Details</h1>
+                        </div>
+                        <div class=\\"fd-form-item\\">
+                            <label class=\\"fd-form-label\\">Phone</label>
+                            <a class=\\"fd-link\\" href=\\"tel:+1 605 555 5555\\"><span class=\\"fd-link__content\\">+1 605 555 5555</span></a>
+                        </div>
+                        <div class=\\"fd-form-item\\">
+                            <label class=\\"fd-form-label\\">Address</label>
+                            <span class=\\"fd-text\\">
+                                781 Main Street <br>
+                                Anytown, SD 57401, USA
+                            </span>
+                        </div>
                     </div>
-                    <div class=\\"fd-form-item\\">
-                        <label class=\\"fd-form-label\\">Phone</label>
-                        <a class=\\"fd-link\\" href=\\"tel:+1 605 555 5555\\"><span class=\\"fd-link__content\\">+1 605 555 5555</span></a>
-                    </div>
-                    <div class=\\"fd-form-item\\">
-                        <label class=\\"fd-form-label\\">Address</label>
-                        <span class=\\"fd-text\\">
-                            781 Main Street <br>
-                            Anytown, SD 57401, USA
-                        </span>
-                    </div>
-                </div>
-
-                <div class=\\"fd-form-group\\" role=\\"group\\">
-                    <div class=\\"fd-form-group__header\\" aria-labelledby=\\"mainContact\\">
-                        <h1 class=\\"fd-form-group__header-text\\" id=\\"mainContact\\">Main Contact</h1>
-                    </div>
-                    <div class=\\"fd-form-item\\">
-                        <label class=\\"fd-form-label\\">Name</label>
-                        <span class=\\"fd-text\\">Michael Adams</span>
-                    </div>
-                    <div class=\\"fd-form-item\\">
-                        <label class=\\"fd-form-label\\">Mobile</label>
-                        <a class=\\"fd-link\\" href=\\"tel:+1 605 555 5555\\"><span class=\\"fd-link__content\\">+1 605 555 5555</span></a>
-                    </div>
-                    <div class=\\"fd-form-item\\">
-                        <label class=\\"fd-form-label\\">Mobile</label>
-                        <a class=\\"fd-link\\" href=\\"tel:+1 605 555 5555\\"><span class=\\"fd-link__content\\">+1 605 555 5555</span></a>
+    
+                    <div class=\\"fd-form-group\\" role=\\"group\\">
+                        <div class=\\"fd-form-group__header\\" aria-labelledby=\\"mainContact\\">
+                            <h1 class=\\"fd-form-group__header-text\\" id=\\"mainContact\\">Main Contact</h1>
+                        </div>
+                        <div class=\\"fd-form-item\\">
+                            <label class=\\"fd-form-label\\">Name</label>
+                            <span class=\\"fd-text\\">Michael Adams</span>
+                        </div>
+                        <div class=\\"fd-form-item\\">
+                            <label class=\\"fd-form-label\\">Mobile</label>
+                            <a class=\\"fd-link\\" href=\\"tel:+1 605 555 5555\\"><span class=\\"fd-link__content\\">+1 605 555 5555</span></a>
+                        </div>
+                        <div class=\\"fd-form-item\\">
+                            <label class=\\"fd-form-label\\">Mobile</label>
+                            <a class=\\"fd-link\\" href=\\"tel:+1 605 555 5555\\"><span class=\\"fd-link__content\\">+1 605 555 5555</span></a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    
 </div>
 "
 `;
