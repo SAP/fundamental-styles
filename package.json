@@ -79,7 +79,7 @@
     "@storybook/addon-toolbars": "7.0.26",
     "@storybook/addon-viewport": "7.0.26",
     "@storybook/addons": "7.0.26",
-    "@storybook/html": "7.0.26",
+    "@storybook/html": "7.0.27",
     "@storybook/html-vite": "7.0.26",
     "@storybook/theming": "7.0.26",
     "@testing-library/react": "13.4.0",
