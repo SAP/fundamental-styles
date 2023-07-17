@@ -1,0 +1,27 @@
+@import "./sap_horizon";
+
+:root {
+  --fdToolHeader_Search_Border: solid 0.0625rem var(--sapShell_InteractiveBorderColor);
+  --fdToolHeader_Search_Category_Offset: -0.0625rem;
+  --fdToolHeader_Search_Category_Offset_Left: -0.0625rem;
+  --fdToolHeader_Search_Category_Border: solid var(--sapShell_InteractiveBorderColor);
+  --fdToolHeader_Search_Category_Border_width: 0 0.0625rem;
+  --fdToolHeader_Search_Category_Button_Hover_Background: var(--sapButton_Selected_Hover_Background);
+  --fdToolHeader_Search_Hover_Category_Button_Background: var(--fdToolHeader_Input_Hover_Background);
+  --fdToolHeader_Search_Container_Hover_Background: var(--sapShellColor);
+  --fdToolHeader_Input_Hover_Background: var(--sapShellColor);
+  --fdToolHeader_Input_Border_Radius: 0;
+  --fdToolHeader_Input_Addon_Dimension: 2.25rem;
+  --fdToolHeader_Input_Addon_Border_Width: 0;
+  --fdToolHeader_Search_Separator_Display: none;
+  --fdToolHeader_Search_Hover_Background: var(--sapShellColor);
+  --fdToolHeader_Search_Button_Hover_Background: var(--fdToolHeader_Search_Active_Button_Background);
+  --fdToolHeader_Search_Active_Button_Background: var(--sapShell_Active_Background);
+  --fdToolHeader_Active_Background: var(--sapShellColor);
+  --fdToolHeader_Active_Shadow: none;
+  --fdToolHeader_Search_Active_Outline: var(--sapButton_Lite_BorderColor) dotted 0.125rem;
+  --fdToolHeader_Input_Placeholder_Style: normal;
+  --fdToolHeader_Button_Left_Border: solid 0.0625rem var(--fdToolHeader_Search_Active_Button_Color);
+  --fdToolHeader_Helper_Bottom_Shadow: none;
+  --fdToolHeader_Hover_Helper_Bottom_Shadow: none;
+}
