@@ -263,25 +263,25 @@ $fd-tool-header-object-status-semantic-values: (
   }
 
   .#{$block}__search-field {
-    --fdSelect_Text_Content_Color: var(--fdShellbar_Select_Content_Color);
-    --fdInputGroup_Input_Border: var(--fdShellbar_Input_Border);
-    --fdInputGroup_Input_Color: var(--fdShellbar_Input_Color);
-    --fdInputGroup_Input_Placeholder_Color: var(--fdShellbar_Input_Placeholder_Color);
-    --fdInputGroup_Input_Placeholder_Style: var(--fdShellbar_Input_Placeholder_Style);
+    --fdSelect_Text_Content_Color: var(--fdToolHeader_Select_Content_Color);
+    --fdInputGroup_Input_Border: var(--fdToolHeader_Input_Border);
+    --fdInputGroup_Input_Color: var(--fdToolHeader_Input_Color);
+    --fdInputGroup_Input_Placeholder_Color: var(--fdToolHeader_Input_Placeholder_Color);
+    --fdInputGroup_Input_Placeholder_Style: var(--fdToolHeader_Input_Placeholder_Style);
     --fdInputGroup_Background: none;
-    --fdInputGroup_Background_Color: var(--fdShellbar_Input_Background);
+    --fdInputGroup_Background_Color: var(--fdToolHeader_Input_Background);
     --fdInputGroup_Hover_Background: none;
     --fdInput_Group_Button_Box_Shadow: none;
     --fdInput_Box_Shadow_Hover: none;
 
     box-shadow: none;
-    border: var(--fdShellbar_Search_Border);
-    border-radius: var(--fdShellbar_Input_Border_Radius);
+    border: var(--fdToolHeader_Search_Border);
+    border-radius: var(--fdToolHeader_Input_Border_Radius);
     position: relative;
     cursor: text;
 
     &-helper {
-      display: var(--fdShellbar_Helper_Display);
+      display: var(--fdToolHeader_Helper_Display);
 
       &::before,
       &::after {
@@ -290,13 +290,13 @@ $fd-tool-header-object-status-semantic-values: (
         z-index: 20;
         pointer-events: none;
         box-shadow: var(--sapField_Shadow);
-        border-radius: var(--fdShellbar_Input_Border_Radius);
+        border-radius: var(--fdToolHeader_Input_Border_Radius);
 
         @include fd-set-equal-positions(0);
       }
 
       &::after {
-        box-shadow: var(--fdShellbar_Helper_Bottom_Shadow);
+        box-shadow: var(--fdToolHeader_Helper_Bottom_Shadow);
         border-radius: 0;
       }
     }
@@ -304,13 +304,13 @@ $fd-tool-header-object-status-semantic-values: (
     &-input {
       position: relative;
 
-      @include fd-set-paddings-x-equal(var(--fdShellbar_Search_Input_X_Padding));
+      @include fd-set-paddings-x-equal(var(--fdToolHeader_Search_Input_X_Padding));
 
       @include fd-hover() {
-        --fdInputGroup_Hover_Input_Background: var(--fdShellbar_Input_Hover_Background);
-        --fdInputGroup_Addon_Background: var(--fdShellbar_Search_Container_Hover_Background);
+        --fdInputGroup_Hover_Input_Background: var(--fdToolHeader_Input_Hover_Background);
+        --fdInputGroup_Addon_Background: var(--fdToolHeader_Search_Container_Hover_Background);
         & ~ .#{$block}__search-field-addon {
-          --fdInputGroup_Addon_Background: var(--fdShellbar_Search_Container_Hover_Background);
+          --fdInputGroup_Addon_Background: var(--fdToolHeader_Search_Container_Hover_Background);
         }
 
         & ~ .#{$block}__search-field-helper {
@@ -321,8 +321,8 @@ $fd-tool-header-object-status-semantic-values: (
       }
 
       @include fd-focus() {
-        --fdInputGroup_Input_Color: var(--fdShellbar_Input_Focus_Color);
-        --fdInputGroup_Input_Background: var(--fdShellbar_Input_Focus_Background);
+        --fdInputGroup_Input_Color: var(--fdToolHeader_Input_Focus_Color);
+        --fdInputGroup_Input_Background: var(--fdToolHeader_Input_Focus_Background);
       }
 
       &:placeholder-shown {
@@ -334,15 +334,15 @@ $fd-tool-header-object-status-semantic-values: (
       &:not(:placeholder-shown) {
         & ~ .#{$block}__search-submit {
           > * {
-            --fdButtonBackgroundColor: var(--fdShellbar_Search_Active_Button_Background);
-            --fdButtonColor: var(--fdShellbar_Search_Active_Button_Color);
-            --fdShellbar_Button_Active_Background: var(--fdButtonBackgroundColor);
-            --fdShellbar_Button_Active_Color: var(--fdShellbar_Search_Active_Button_Color);
+            --fdButtonBackgroundColor: var(--fdToolHeader_Search_Active_Button_Background);
+            --fdButtonColor: var(--fdToolHeader_Search_Active_Button_Color);
+            --fdToolHeader_Button_Active_Background: var(--fdButtonBackgroundColor);
+            --fdToolHeader_Button_Active_Color: var(--fdToolHeader_Search_Active_Button_Color);
 
-            @include fd-set-border-left(var(--fdShellbar_Button_Left_Border));
+            @include fd-set-border-left(var(--fdToolHeader_Button_Left_Border));
 
             &:hover {
-              --fdButtonBackgroundColor: var(--fdShellbar_Search_Active_Button_Hover_Background);
+              --fdButtonBackgroundColor: var(--fdToolHeader_Search_Active_Button_Hover_Background);
             }
           }
         }
@@ -365,21 +365,21 @@ $fd-tool-header-object-status-semantic-values: (
 
       .#{$block}__button {
         --fdButton_Outline_Offset: 0;
-        --fdButton_Focus_Border_Radius: var(--fdShellbar_Input_Border_Radius);
+        --fdButton_Focus_Border_Radius: var(--fdToolHeader_Input_Border_Radius);
 
-        height: var(--fdShellbar_Input_Addon_Dimension);
-        min-width: var(--fdShellbar_Input_Addon_Dimension);
-        border-radius: var(--fdShellbar_Input_Border_Radius);
-        border-width: var(--fdShellbar_Input_Addon_Border_Width);
+        height: var(--fdToolHeader_Input_Addon_Dimension);
+        min-width: var(--fdToolHeader_Input_Addon_Dimension);
+        border-radius: var(--fdToolHeader_Input_Border_Radius);
+        border-width: var(--fdToolHeader_Input_Addon_Border_Width);
 
         @include fd-hover () {
-          @include fd-set-border-left(var(--fdShellbar_Button_Left_Border));
+          @include fd-set-border-left(var(--fdToolHeader_Button_Left_Border));
 
-          --fdButtonBackgroundColor: var(--fdShellbar_Search_Button_Hover_Background);
+          --fdButtonBackgroundColor: var(--fdToolHeader_Search_Button_Hover_Background);
         }
 
         @include fd-active() {
-          border-color: var(--fdShellbar_Button_Active_Border_Color);
+          border-color: var(--fdToolHeader_Button_Active_Border_Color);
         }
       }
     }
@@ -388,11 +388,11 @@ $fd-tool-header-object-status-semantic-values: (
       flex-shrink: 0;
 
       @include fd-hover() {
-        --fdInputGroup_Addon_Background: var(--fdShellbar_Input_Background);
+        --fdInputGroup_Addon_Background: var(--fdToolHeader_Input_Background);
         & ~ .#{$block}__search-field-input,
         & ~ .#{$block}__search-field-addon {
-          --fdInputGroup_Addon_Background: var(--fdShellbar_Input_Background);
-          --fdInputGroup_Input_Background: var(--fdShellbar_Input_Background);
+          --fdInputGroup_Addon_Background: var(--fdToolHeader_Input_Background);
+          --fdInputGroup_Input_Background: var(--fdToolHeader_Input_Background);
         }
 
         .#{$block}__search-category {
@@ -400,16 +400,16 @@ $fd-tool-header-object-status-semantic-values: (
         }
 
         .#{$block}__search-dropdown {
-          background-color: var(--fdShellbar_Search_Category_Button_Hover_Background);
+          background-color: var(--fdToolHeader_Search_Category_Button_Hover_Background);
         }
       }
 
       > * {
-        @include fd-set-margin-right(var(--fdShellbar_Search_Category_Offset_Right));
+        @include fd-set-margin-right(var(--fdToolHeader_Search_Category_Offset_Right));
         @include fd-set-margins-y-equal();
       }
       .#{$block}__search-dropdown {
-        background-color: var(--fdShellbar_Input_Background);
+        background-color: var(--fdToolHeader_Input_Background);
         outline: none;
         position: static;
 
@@ -426,18 +426,18 @@ $fd-tool-header-object-status-semantic-values: (
         --fdSelect_Background: transparent;
         --fdSelect_Hover_Background: transparent;
         --fdSelect_Focus_Background: transparent;
-        --fdSelect_Background_Color: var(--fdShellbar_Input_Background);
-        --fdSelect_Hover_Background_Color: var(--fdShellbar_Input_Background);
+        --fdSelect_Background_Color: var(--fdToolHeader_Input_Background);
+        --fdSelect_Hover_Background_Color: var(--fdToolHeader_Input_Background);
 
-        border: var(--fdShellbar_Search_Category_Border);
-        border-width: var(--fdShellbar_Search_Category_Border_width);
+        border: var(--fdToolHeader_Search_Category_Border);
+        border-width: var(--fdToolHeader_Search_Category_Border_width);
         border-radius: 0;
-        min-height: var(--fdShellbar_Input_Addon_Dimension);
-        height: var(--fdShellbar_Input_Addon_Dimension);
+        min-height: var(--fdToolHeader_Input_Addon_Dimension);
+        height: var(--fdToolHeader_Input_Addon_Dimension);
         margin: 0;
         position: relative;
 
-        @include fd-set-margin-left(var(--fdShellbar_Search_Category_Offset_Left));
+        @include fd-set-margin-left(var(--fdToolHeader_Search_Category_Offset_Left));
 
         &::after {
           box-shadow: none;
@@ -451,7 +451,7 @@ $fd-tool-header-object-status-semantic-values: (
           bottom: 0;
           background: var(--sapShell_InteractiveBorderColor);
           width: 0.0625rem;
-          display: var(--fdShellbar_Search_Separator_Display);
+          display: var(--fdToolHeader_Search_Separator_Display);
         }
 
         @include fd-rtl() {
@@ -463,10 +463,10 @@ $fd-tool-header-object-status-semantic-values: (
 
         @include fd-focus() {
           --fdSelect_Text_Content_Color: var(--sapButton_Active_TextColor);
-          --fdShellbar_Input_Background: var(--fdShellbar_Search_Category_Button_Hover_Background);
-          --fdSelect_Focus_Background: var(--fdShellbar_Search_Container_Hover_Background);
+          --fdToolHeader_Input_Background: var(--fdToolHeader_Search_Category_Button_Hover_Background);
+          --fdSelect_Focus_Background: var(--fdToolHeader_Search_Container_Hover_Background);
 
-          border-radius: var(--fdShellbar_Input_Border_Radius);
+          border-radius: var(--fdToolHeader_Input_Border_Radius);
           outline-color: var(--sapButton_Lite_Active_BorderColor);
           outline-width: 0.0625rem;
           outline-offset: -0.0625rem;
@@ -483,7 +483,7 @@ $fd-tool-header-object-status-semantic-values: (
     }
 
     @include fd-hover() {
-      --fdInputGroup_Hover_Background_Color: var(--fdShellbar_Search_Container_Hover_Background);
+      --fdInputGroup_Hover_Background_Color: var(--fdToolHeader_Search_Container_Hover_Background);
 
       .#{$block}__search-field-helper {
         &::before {
@@ -491,17 +491,17 @@ $fd-tool-header-object-status-semantic-values: (
         }
 
         &::after {
-          box-shadow: var(--fdShellbar_Hover_Helper_Bottom_Shadow);
+          box-shadow: var(--fdToolHeader_Hover_Helper_Bottom_Shadow);
         }
       }
 
       .#{$block}__search-field {
         &-category .#{$block}__search-category {
-          --fdSelect_Background_Color: var(--fdShellbar_Search_Container_Hover_Background);
-          --fdSelect_Hover_Background_Color: var(--fdShellbar_Search_Container_Hover_Background);
+          --fdSelect_Background_Color: var(--fdToolHeader_Search_Container_Hover_Background);
+          --fdSelect_Hover_Background_Color: var(--fdToolHeader_Search_Container_Hover_Background);
 
           @include fd-hover() {
-            border-radius: var(--fdShellbar_Input_Border_Radius);
+            border-radius: var(--fdToolHeader_Input_Border_Radius);
 
             &::before {
               display: none;
@@ -512,19 +512,19 @@ $fd-tool-header-object-status-semantic-values: (
 
       .#{$block}__search-field-category:not(:hover) {
         .#{$block}__search-dropdown {
-          background-color: var(--fdShellbar_Search_Container_Hover_Background);
+          background-color: var(--fdToolHeader_Search_Container_Hover_Background);
         }
       }
     }
 
     @include fd-focus() {
       outline: none;
-      box-shadow: var(--fdShellbar_Active_Shadow);
-      background-color: var(--fdShellbar_Active_Background);
+      box-shadow: var(--fdToolHeader_Active_Shadow);
+      background-color: var(--fdToolHeader_Active_Background);
 
       .#{$block}__search-field-helper {
         &::before {
-          outline: var(--fdShellbar_Search_Active_Outline);
+          outline: var(--fdToolHeader_Search_Active_Outline);
           outline-offset: -0.125rem;
         }
 
@@ -535,16 +535,16 @@ $fd-tool-header-object-status-semantic-values: (
       }
 
       .#{$block}__search-field-addon {
-        --fdInputGroup_Addon_Background: var(--fdShellbar_Search_Hover_Background);
+        --fdInputGroup_Addon_Background: var(--fdToolHeader_Search_Hover_Background);
       }
 
       .#{$block}__search-category {
-        background-color: var(--fdShellbar_Search_Hover_Background);
+        background-color: var(--fdToolHeader_Search_Hover_Background);
       }
 
       .#{$block}__search-field-category {
         .#{$block}__search-dropdown {
-          background-color: var(--fdShellbar_Search_Hover_Category_Button_Background);
+          background-color: var(--fdToolHeader_Search_Hover_Category_Button_Background);
         }
       }
     }
