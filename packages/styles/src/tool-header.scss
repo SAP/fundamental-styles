@@ -69,9 +69,6 @@ $fd-tool-header-object-status-semantic-values: (
 );
 
 .#{$block} {
-  // Paddings
-  $fd-tool-header-item-spacing: 0.5rem !default;
-
   @include fd-reset();
 
   @include fd-flex-vertical-center() {
@@ -88,20 +85,6 @@ $fd-tool-header-object-status-semantic-values: (
   &__group {
     @include fd-reset();
     @include fd-flex-vertical-center();
-
-    &--center {
-      display: none;
-      justify-content: center;
-      margin: 0 $fd-tool-header-item-spacing;
-
-      .#{$block}__action {
-        width: 100%;
-      }
-
-      @include fd-media-xl() {
-        display: inline-block;
-      }
-    }
   }
 
   &__element {
@@ -262,6 +245,39 @@ $fd-tool-header-object-status-semantic-values: (
     }
   }
 
+  .#{$block}__input-group {
+    background: var(--sapShellColor);
+    border: 0.0625rem solid var(--sapShell_InteractiveBorderColor);
+
+    input {
+      color: var(--sapShell_TextColor);
+
+      &::placeholder {
+        color: var(--sapShell_InteractiveTextColor);
+      }
+    }
+
+    @include fd-hover() {
+      background: var(--sapShell_Hover_Background);
+      border-color: var(--sapShell_InteractiveBorderColor);
+    }
+  }
+
+  // MODIFIER CLASSES
+  &--menu {
+    @include fd-set-paddings-x-equal(0.5rem);
+  }
+
+  @each $set-name, $set-padding in $fd-tool-header-responsive-paddings {
+    &--#{$set-name} {
+      padding: map_get($set-padding, 'padding');
+    }
+  }
+
+  &--responsive-paddings {
+    @include fd-apply-responsive-paddings();
+  }
+
   .#{$block}__search-field {
     --fdSelect_Text_Content_Color: var(--fdToolHeader_Select_Content_Color);
     --fdInputGroup_Input_Border: var(--fdToolHeader_Input_Border);
@@ -367,8 +383,8 @@ $fd-tool-header-object-status-semantic-values: (
         --fdButton_Outline_Offset: 0;
         --fdButton_Focus_Border_Radius: var(--fdToolHeader_Input_Border_Radius);
 
-        height: var(--fdToolHeader_Input_Addon_Dimension);
-        min-width: var(--fdToolHeader_Input_Addon_Dimension);
+        // height: var(--fdToolHeader_Input_Addon_Dimension);
+        // min-width: var(--fdToolHeader_Input_Addon_Dimension);
         border-radius: var(--fdToolHeader_Input_Border_Radius);
         border-width: var(--fdToolHeader_Input_Addon_Border_Width);
 
@@ -548,20 +564,5 @@ $fd-tool-header-object-status-semantic-values: (
         }
       }
     }
-  }
-
-  // MODIFIER CLASSES
-  &--menu {
-    @include fd-set-paddings-x-equal(0.5rem);
-  }
-
-  @each $set-name, $set-padding in $fd-tool-header-responsive-paddings {
-    &--#{$set-name} {
-      padding: map_get($set-padding, 'padding');
-    }
-  }
-
-  &--responsive-paddings {
-    @include fd-apply-responsive-paddings();
   }
 }
