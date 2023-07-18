@@ -69,6 +69,9 @@ $fd-tool-header-object-status-semantic-values: (
 );
 
 .#{$block} {
+  // Paddings
+  $fd-tool-header-item-spacing: 0.5rem !default;
+
   @include fd-reset();
 
   @include fd-flex-vertical-center() {
@@ -85,6 +88,20 @@ $fd-tool-header-object-status-semantic-values: (
   &__group {
     @include fd-reset();
     @include fd-flex-vertical-center();
+
+    &--center {
+      display: none;
+      justify-content: center;
+      margin: 0 $fd-tool-header-item-spacing;
+
+      .#{$block}__action {
+        width: 100%;
+      }
+
+      @include fd-media-xl() {
+        display: inline-block;
+      }
+    }
   }
 
   &__element {
@@ -99,6 +116,12 @@ $fd-tool-header-object-status-semantic-values: (
 
     &:not(:last-child) {
       @include fd-set-margin-right(0.5rem);
+    }
+
+    &--search {
+      @include fd-media-xl () {
+        display: none;
+      }
     }
   }
 
