@@ -420,6 +420,10 @@ $fd-tool-header-object-status-semantic-values: (
         @include fd-active() {
           border-color: var(--fdToolHeader_Button_Active_Border_Color);
         }
+
+        &::after {
+          border-color: var(--fdToolHeader_Button_Active_Border_Color);
+        }
       }
     }
 
