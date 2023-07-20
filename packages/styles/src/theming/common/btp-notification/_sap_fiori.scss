@@ -1,0 +1,12 @@
+:root {
+  --fdbNotification_Item_Border_Color: transparent;
+  --fdbNotification_Unread_Indicator_Background: var(--sapHighlightColor);
+  --fdbNotification_Group_Item_Border_Radius: 0.375rem;
+  --fdbNotification_Group_Item_Transition: background-color 0.3s ease-in-out;
+  --fdbNotification_Group_Item_Color: var(--sapContent_LabelColor);
+  --fdbNotification_Group_Item_Border_Color_Normal: transparent;
+  --fdbNotification_Group_Item_Border_Bottom_Color_Normal: transparent;
+  --fdbNotification_Group_Item_Border_Color_Hover: transparent;
+  --fdbNotification_Group_Item_Border_Color_Active: transparent;
+  --fdbNotification_Group_Item_Border_Color_Focused: transparent;
+}

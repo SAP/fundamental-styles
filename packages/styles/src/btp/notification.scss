@@ -1,0 +1,236 @@
+@import "../mixins/mixins";
+@import "../new-settings";
+
+$block: #{$fd-btp-namespace}-notification;
+
+.#{$block} {
+  --fdbNotification_Item_Background: var(--sapList_Background);
+  --fdbNotification_Item_Border: 0.0625rem solid var(--fdbNotification_Item_Border_Color);
+  --fdbNotification_Group_Item_Border_Color: var(--fdbNotification_Group_Item_Border_Color_Normal);
+  --fdbNotification_Group_Item_Border_Bottom_Color: var(--fdbNotification_Group_Item_Border_Bottom_Color_Normal);
+  --fdbNotification_Group_Item_Children_Indicator_Display: none;
+  --fdbNotification_Group_Item_Background: var(--sapList_Background);
+
+  &__popover-body {
+    @include fd-reset();
+
+    padding: 1rem;
+    min-width: 20rem;
+    max-width: 24rem;
+  }
+
+  &__group-list {
+    @include fd-reset();
+
+    list-style-type: none;
+  }
+
+  &__group {
+    @include fd-reset();
+
+    margin-bottom: 1.5rem;
+
+    &--collapsed,
+    &.is-collapsed,
+    &.collapsed {
+      max-height: 100%;
+
+      .#{$block}__list {
+        display: none;
+      }
+    }
+  }
+
+  &__list {
+    @include fd-reset();
+
+    @include fd-flex(column) {
+      gap: 0.125rem;
+    }
+
+    list-style-type: none;
+  }
+
+  &__item {
+    @include fd-reset();
+    @include fd-set-paddings-x(1rem, 1.5rem);
+    @include fd-set-paddings-y-equal(0.75rem);
+
+    @include fd-flex() {
+      gap: 0.75rem;
+    }
+
+    cursor: pointer;
+    position: relative;
+    border: var(--fdbNotification_Item_Border);
+    transition: background-color 0.3s ease-in-out;
+    border-radius: var(--sapElement_BorderCornerRadius);
+    background-color: var(--fdbNotification_Item_Background);
+
+    @include fd-hover() {
+      --fdbNotification_Item_Background: var(--sapList_Hover_Background);
+    }
+
+    @include fd-active() {
+      --fdbNotification_Item_Background: var(--sapList_Active_Background);
+
+      @include fd-focus() {
+        --fdbNotification_Item_Background: var(--sapList_Active_Background);
+
+        outline: none;
+      }
+    }
+
+    @include fd-focus() {
+      --fdbNotification_Item_Background: var(--sapList_Background);
+
+      outline: var(--sapContent_FocusStyle) var(--sapContent_FocusWidth) var(--sapContent_FocusColor);
+    }
+  }
+
+  &__item-container {
+    @include fd-reset();
+
+    @include fd-flex(column) {
+      gap: 0.5rem;
+    }
+  }
+
+  &__title {
+    @include fd-reset();
+    @include fd-line-clamp();
+
+    line-height: 1.25rem;
+    color: var(--sapTitleColor);
+    font-size: var(--sapFontHeader6Size);
+    font-family: var(--sapFontSemiboldFamily);
+  }
+
+  &__description {
+    @include fd-reset();
+    @include fd-line-clamp();
+
+    color: var(--sapTextColor);
+    font-family: var(--sapFontFamily);
+    font-size: var(--sapFontSmallSize);
+  }
+
+  &__timestamp {
+    @include fd-reset();
+
+    font-family: var(--sapFontFamily);
+    font-size: var(--sapFontSmallSize);
+    color: var(--sapContent_LabelColor);
+  }
+
+  &__unread-indicator {
+    @include fd-reset();
+    @include fd-set-square(0.5rem);
+    @include fd-set-position-right(0.5rem);
+    @include fd-absolute-vertical-center();
+
+    position: absolute;
+    border-radius: 100%;
+    background-color: var(--fdbNotification_Unread_Indicator_Background);
+  }
+
+  &__spacer {
+    @include fd-reset();
+
+    width: auto;
+    height: 1.5rem;
+  }
+
+  &__group-item {
+    @include fd-reset();
+    @include fd-set-paddings-x-equal(0.75rem);
+    @include fd-set-paddings-y-equal(0.5rem);
+
+    @include fd-flex-vertical-center() {
+      gap: 0.4375rem;
+      justify-content: space-between;
+    }
+
+    @include fd-icon-selector() {
+      @include fd-flex-center();
+
+      color: inherit;
+      width: 0.75rem;
+      height: 0.75rem;
+      font-size: 0.75rem;
+      display: var(--fdbNotification_Group_Item_Children_Indicator_Display);
+    }
+
+    width: 100%;
+    height: 2rem;
+    cursor: pointer;
+    color: var(--fdbNotification_Group_Item_Color);
+    transition: var(--fdbNotification_Group_Item_Transition);
+    background: var(--fdbNotification_Group_Item_Background);
+    border-radius: var(--fdbNotification_Group_Item_Border_Radius);
+    border: 0.0625rem solid var(--fdbNotification_Group_Item_Border_Color);
+    border-bottom: 0.0625rem solid var(--fdbNotification_Group_Item_Border_Bottom_Color);
+
+    @include fd-hover() {
+      --fdbNotification_Group_Item_Children_Indicator_Display: inline-flex;
+      --fdbNotification_Group_Item_Background: var(--sapList_Hover_Background);
+      --fdbNotification_Group_Item_Border_Color: var(--fdbNotification_Group_Item_Border_Color_Hover);
+    }
+
+    @include fd-active() {
+      --fdbNotification_Group_Item_Children_Indicator_Display: inline-flex;
+      --fdbNotification_Group_Item_Background: var(--sapList_Active_Background);
+      --fdbNotification_Group_Item_Border_Color: var(--fdbNotification_Group_Item_Border_Color_Active);
+
+      @include fd-focus() {
+        --fdbNotification_Group_Item_Children_Indicator_Display: inline-flex;
+        --fdbNotification_Group_Item_Background: var(--sapList_Active_Background);
+        --fdbNotification_Group_Item_Border_Color: var(--fdbNotification_Group_Item_Border_Color_Active);
+        --fdbNotification_Group_Item_Border_Bottom_Color: var(--fdbNotification_Group_Item_Border_Color_Active);
+
+        outline: none;
+      }
+    }
+
+    @include fd-focus() {
+      --fdbNotification_Group_Item_Background: var(--sapList_Background);
+      --fdbNotification_Group_Item_Border_Bottom_Color: transparent;
+      --fdbNotification_Group_Item_Border_Color: var(--fdbNotification_Group_Item_Border_Color_Focused);
+      --fdbNotification_Group_Item_Children_Indicator_Display: inline-flex;
+
+      outline: var(--sapContent_FocusStyle) var(--sapContent_FocusWidth) var(--sapContent_FocusColor);
+    }
+
+    &--collapsed,
+    &.is-collapsed,
+    &.collapsed {
+      --fdbNotification_Group_Item_Children_Indicator_Display: inline-flex;
+
+      max-height: 2rem;
+
+      @include fd-icon-selector() {
+        transform: rotate(-90deg);
+
+        @include fd-rtl() {
+          transform: rotate(90deg);
+        }
+      }
+    }
+  }
+
+  &__group-item-title {
+    @include fd-reset();
+    @include fd-ellipsis();
+
+    width: 100%;
+    font-size: var(--sapFontSmallSize);
+    font-weight: semibold;
+  }
+
+  &__footer {
+    @include fd-reset();
+    @include fd-flex-center();
+
+    margin-bottom: 1.5rem;
+  }
+}

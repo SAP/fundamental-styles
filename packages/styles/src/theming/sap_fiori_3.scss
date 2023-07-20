@@ -42,6 +42,11 @@
 @import "./common/tokenizer/sap_fiori";
 @import "./sap_fiori_3/css_variables";
 
+// BTP
+@import "./common/btp-info-label/sap_fiori";
+@import "./common/btp-button/sap_fiori";
+@import "./common/btp-notification/sap_fiori";
+
 :root {
   --fdOverlay_Background_Opacity: 0.6;
 

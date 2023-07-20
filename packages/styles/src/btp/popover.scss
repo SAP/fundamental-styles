@@ -1,0 +1,533 @@
+@import "../mixins/mixins";
+@import "../new-settings";
+
+$block: #{$fd-btp-namespace}-popover;
+$blockBody: #{$fd-btp-namespace}-popover__body;
+
+$fdb-popover-body-shadow-offset: var(--sapGroup_BorderWidth) !default;
+$fdb-popover-background-color: var(--sapGroup_ContentBackground) !default;
+$fdb-popover-border-radius: var(--fdPopover_Border_Radius) !default;
+$fdb-popover-box-shadow: var(--sapContent_Shadow2) !default;
+$fdb-popover-box-shadow-no-arrow: var(--sapContent_Shadow1) !default;
+$fdb-popover-full-filled-width: calc(100% - #{$fdb-popover-body-shadow-offset} * 2);
+
+$fdb-popover-z-index: map-get($fd-z-index-levels, "top") !default;
+$fdb-popover-arrow-size: 0.5rem !default;
+$fdb-popover-arrow-size-inner: calc(#{$fdb-popover-arrow-size} - var(--fdPopover_Border_Width)) !default;
+$fdb-popover-arrow-color: var(--fdPopover_Border_Color) !default;
+$fdb-popover-arrow-offset-y: calc(var(--fdIcon_Button_Height) * 0.5 - #{$fdb-popover-arrow-size} - var(--fdPopover_Border_Width));
+$fdb-popover-arrow-offset-x: calc(var(--fdIcon_Button_Width) * 0.5 - #{$fdb-popover-arrow-size} - var(--fdPopover_Border_Width));
+
+@mixin fdb-popover-arrow-x-end() {
+  &::before {
+    left: auto;
+    right: calc(#{$fdb-popover-arrow-offset-x} + var(--fdPopover_Border_Width));
+  }
+
+  &::after {
+    left: auto;
+    right: #{$fdb-popover-arrow-offset-x};
+  }
+
+  @include fd-rtl() {
+    &::before {
+      left: calc(#{$fdb-popover-arrow-offset-x} + var(--fdPopover_Border_Width));
+      right: auto;
+    }
+
+    &::after {
+      left: #{$fdb-popover-arrow-offset-x};
+      right: auto;
+    }
+  }
+}
+
+@mixin fdb-popover-border-radius() {
+  border-radius: $fdb-popover-border-radius;
+
+  @content;
+}
+
+@mixin fdb-left-popover-offset-placement() {
+  left: $fd-popover-body-shadow-offset;
+  right: auto;
+
+  @include fd-rtl() {
+    right: $fd-popover-body-shadow-offset;
+    left: auto;
+  }
+}
+
+@mixin fdb-popover-triangle($direction, $color, $size) {
+  display: inline-block;
+  width: 0;
+  height: 0;
+
+  $directions: top, right, bottom, left;
+
+  @for $i from 1 through length($directions) {
+    @if nth($directions, $i) == $direction {
+      border-#{_get-item($directions, $i)}: none;
+      border-#{_get-item($directions, $i, -1)}: $size solid transparent;
+      border-#{_get-item($directions, $i, 1)}: $size solid transparent;
+      border-#{_get-item($directions, $i, 2)}: $size solid $color;
+    }
+  }
+}
+
+@function _get-item($list, $current, $offset:0) {
+  $result-position: ($current + $offset) % length($list);
+
+  @if $result-position == 0 {
+    $result-position: length($list);
+  }
+
+  @return nth($list, $result-position);
+}
+
+.#{$block} {
+  @include fd-reset();
+
+  --fdbPopover_Offset: 100%;
+  --fdbPopover_Center_Offset: 50%;
+  --fdbPopover_Resize_Handle_Position_Top: auto;
+  --fdbPopover_Resize_Handle_Position_Right: 0;
+  --fdbPopover_Resize_Handle_Position_Bottom: 0;
+  --fdbPopover_Resize_Handle_Position_Left: auto;
+  --fdbPopover_Resize_Handle_Rotate_Angle: 0;
+  --fdbPopover_Resize_Handle_Cursor: se-resize;
+  --fdbPopover_Resize_Handle_Justify: flex-end;
+  --fdbPopover_Resize_Handle_Transform_Scale: 1;
+
+  position: relative;
+  display: inline-block;
+  max-width: 100%;
+
+  &__control {
+    @include fd-reset();
+    @include fd-action-cursor();
+
+    position: relative;
+
+    &:focus-visible {
+      outline: var(--sapContent_FocusWidth) var(--sapContent_FocusStyle) var(--sapContent_FocusColor);
+    }
+
+    @include fd-expanded() {
+      > * {
+        margin-bottom: 0;
+      }
+
+      & + .#{$block}__body--input-message-group {
+        margin-top: 0;
+      }
+    }
+
+    @include fd-disabled() {
+      pointer-events: none;
+    }
+  }
+
+  &__wrapper {
+    @include fd-scrollbar(var(--fdScrollbar_Border_Radius));
+
+    overflow: auto;
+    position: relative;
+
+    &--visible {
+      overflow: visible !important;
+    }
+  }
+
+  &__body {
+    --fdIcon_Button_Height: 2.25rem;
+    --fdIcon_Button_Width: 2.25rem;
+
+    @include fd-reset();
+
+    position: absolute;
+    white-space: nowrap;
+    box-shadow: $fdb-popover-box-shadow;
+    z-index: $fdb-popover-z-index;
+    background: $fdb-popover-background-color;
+    top: calc(var(--fdbPopover_Offset) + #{$fdb-popover-arrow-size});
+    transition: all $fd-animation-speed;
+    opacity: 1;
+    visibility: visible;
+
+    @include fd-both-pseudo-selectors() {
+      content: "";
+      position: absolute;
+    }
+
+    &::before {
+      @include fdb-popover-triangle(top, $fdb-popover-background-color, $fdb-popover-arrow-size-inner);
+
+      top: calc(-#{$fdb-popover-arrow-size} + var(--fdPopover_Border_Width));
+      z-index: $fdb-popover-z-index + 2;
+    }
+
+    &::after {
+      @include fdb-popover-triangle(top, $fdb-popover-arrow-color, $fdb-popover-arrow-size);
+
+      top: -$fdb-popover-arrow-size;
+      z-index: $fdb-popover-z-index + 1;
+    }
+
+    // Inner shadows can affect outer shadow. This will discard such behavior
+    > * {
+      &:not(.#{$block}__wrapper) {
+        overflow: hidden;
+      }
+    }
+
+    > *:first-child,
+    &-header > *:first-child,
+    ul:first-child li:first-child::before,
+    ol:first-child li:first-child::before,
+    ul:first-child li:first-child a::before,
+    ol:first-child li:first-child a::before {
+      border-top-right-radius: $fdb-popover-border-radius;
+      border-top-left-radius: $fdb-popover-border-radius;
+    }
+
+    > *:last-child,
+    &-footer > *:last-child,
+    ul:last-child li:last-child::before,
+    ol:last-child li:last-child::before,
+    ul:last-child li:last-child a::before,
+    ol:last-child li:last-child a::before {
+      border-bottom-right-radius: $fdb-popover-border-radius;
+      border-bottom-left-radius: $fdb-popover-border-radius;
+    }
+
+    @include fd-compact-or-condensed() {
+      --fdIcon_Button_Height: 1.625rem;
+      --fdIcon_Button_Width: 2rem;
+    }
+
+    // works properly only if dropdown below the control
+    &--no-arrow {
+      box-shadow: $fdb-popover-box-shadow-no-arrow;
+      top: var(--fdbPopover_Offset);
+
+      @include fd-both-pseudo-selectors() {
+        display: none;
+      }
+    }
+
+    &,
+    &--left {
+      @include fd-set-position-left(0);
+
+      &::before {
+        left: calc(#{$fdb-popover-arrow-offset-x} + var(--fdPopover_Border_Width));
+      }
+
+      &::after {
+        left: #{$fdb-popover-arrow-offset-x};
+      }
+
+      @include fd-rtl() {
+        &::before {
+          left: auto;
+          right: calc(#{$fdb-popover-arrow-offset-x} + var(--fdPopover_Border_Width));
+        }
+
+        &::after {
+          left: auto;
+          right: #{$fdb-popover-arrow-offset-x};
+        }
+      }
+    }
+
+    &--center {
+      @include fd-set-position-left(var(--fdbPopover_Center_Offset));
+
+      transform: translateX(calc(var(--fdbPopover_Center_Offset) * -1));
+
+      @include fd-rtl() {
+        transform: translateX(var(--fdbPopover_Center_Offset));
+      }
+    }
+
+    &--right {
+      @include fd-set-position-left(auto);
+      @include fd-set-position-right(0);
+
+      // @deprecated, fd-popover__body--arrow-x-end to be used instead
+      @include fdb-popover-arrow-x-end();
+    }
+
+    &--before {
+      top: 0;
+      left: auto !important;
+      right: var(--fdbPopover_Offset) !important;
+    }
+
+    &--after {
+      top: 0;
+      right: auto !important;
+      left: var(--fdbPopover_Offset) !important;
+    }
+
+    &--middle {
+      top: var(--fdbPopover_Center_Offset);
+      transform: translateY(calc(var(--fdbPopover_Center_Offset) * -1));
+    }
+
+    &--bottom {
+      top: auto;
+      bottom: 0;
+    }
+
+    &--above {
+      top: auto;
+      bottom: var(--fdbPopover_Offset);
+    }
+
+    &--arrow {
+      &-bottom {
+        bottom: calc(var(--fdbPopover_Offset) + #{$fdb-popover-arrow-size}) !important;
+
+        &::before {
+          @include fdb-popover-triangle(bottom, $fdb-popover-background-color, $fdb-popover-arrow-size-inner);
+
+          top: 100%;
+        }
+
+        &::after {
+          @include fdb-popover-triangle(bottom, $fdb-popover-arrow-color, $fdb-popover-arrow-size);
+
+          top: 100%;
+        }
+      }
+
+      &-left {
+        left: calc(var(--fdbPopover_Offset) + #{$fdb-popover-arrow-size}) !important;
+
+        &::before {
+          @include fdb-popover-triangle(left, $fdb-popover-background-color, $fdb-popover-arrow-size-inner);
+
+          top: calc(#{$fdb-popover-arrow-offset-y} + var(--fdPopover_Border_Width));
+          left: auto !important;
+          right: 100% !important;
+        }
+
+        &::after {
+          @include fdb-popover-triangle(left, $fdb-popover-arrow-color, $fdb-popover-arrow-size);
+
+          top: #{$fdb-popover-arrow-offset-y};
+          left: auto !important;
+          right: 100% !important;
+        }
+      }
+
+      &-right {
+        right: calc(var(--fdbPopover_Offset) + #{$fdb-popover-arrow-size}) !important;
+
+        &::before {
+          @include fdb-popover-triangle(right, $fdb-popover-background-color, $fdb-popover-arrow-size-inner);
+
+          top: calc(#{$fdb-popover-arrow-offset-y} + var(--fdPopover_Border_Width));
+          left: 100% !important;
+          right: auto !important;
+        }
+
+        &::after {
+          @include fdb-popover-triangle(right, $fdb-popover-arrow-color, $fdb-popover-arrow-size);
+
+          top: #{$fdb-popover-arrow-offset-y};
+          left: 100% !important;
+          right: auto !important;
+        }
+      }
+
+      &-x-center {
+        @include fd-both-pseudo-selectors() {
+          left: 50%;
+          transform: translateX(-50%);
+        }
+
+        @include fd-rtl() {
+          @include fd-both-pseudo-selectors() {
+            left: auto;
+            right: 50%;
+            transform: translateX(50%);
+          }
+        }
+      }
+
+      &-x-end {
+        @include fdb-popover-arrow-x-end();
+      }
+
+      &-y-center {
+        @include fd-both-pseudo-selectors() {
+          top: 50%;
+          transform: translateY(-50%);
+        }
+      }
+
+      &-y-end,
+      &-y-bottom {
+        &::before {
+          top: auto;
+          bottom: calc(#{$fdb-popover-arrow-offset-y} + var(--fdPopover_Border_Width));
+        }
+
+        &::after {
+          top: auto;
+          bottom: #{$fdb-popover-arrow-offset-y};
+        }
+      }
+    }
+
+    &--dropdown {
+      width: max-content;
+
+      &-fill {
+        display: block;
+        max-width: 40rem;
+        width: $fdb-popover-full-filled-width;
+      }
+    }
+
+    // For NGX where we manage positioning with Material Overlay CDK but not CSS
+    &--static {
+      position: relative;
+
+      --fdbPopover_Offset: 0%;
+      --fdbPopover_Center_Offset: 0%;
+    }
+
+    &[aria-hidden="true"],
+    &.is-hidden {
+      z-index: -1;
+      opacity: 0;
+      visibility: hidden;
+    }
+
+    // @deprecated
+    .#{$block}__body--hidden {
+      display: none;
+    }
+
+    &--input-message-group {
+      box-shadow: none;
+      border: none;
+    }
+
+    &--inline-help {
+      padding: 0.75rem;
+      font-size: var(--sapFontSmallSize);
+
+      &-icon {
+        --fdIcon_Button_Height: 1.375rem;
+        --fdIcon_Button_Width: 1.375rem;
+      }
+    }
+
+    &.#{$blockBody}--resizable {
+      @include fd-rtl() {
+        --fdbPopover_Resize_Handle_Position_Right: auto;
+        --fdbPopover_Resize_Handle_Position_Left: 0;
+        --fdbPopover_Resize_Handle_Cursor: sw-resize;
+        --fdbPopover_Resize_Handle_Transform_Scale: -1;
+        --fdbPopover_Resize_Handle_Justify: flex-start;
+      }
+
+      &.#{$blockBody}--right.#{$blockBody}--arrow-x-end {
+        --fdbPopover_Resize_Handle_Position_Left: 0;
+        --fdbPopover_Resize_Handle_Position_Right: auto;
+        --fdbPopover_Resize_Handle_Cursor: sw-resize;
+        --fdbPopover_Resize_Handle_Transform_Scale: -1;
+
+        @include fd-rtl() {
+          --fdbPopover_Resize_Handle_Position_Right: 0;
+          --fdbPopover_Resize_Handle_Position_Left: auto;
+          --fdbPopover_Resize_Handle_Cursor: se-resize;
+          --fdbPopover_Resize_Handle_Transform_Scale: 1;
+        }
+      }
+
+      &.#{$blockBody}--above.#{$blockBody}--arrow-bottom {
+        --fdbPopover_Resize_Handle_Position_Top: 0;
+        --fdbPopover_Resize_Handle_Position_Bottom: auto;
+        --fdbPopover_Resize_Handle_Position_Right: 0;
+        --fdbPopover_Resize_Handle_Position_Left: auto;
+        --fdbPopover_Resize_Handle_Cursor: ne-resize;
+        --fdbPopover_Resize_Handle_Rotate_Angle: -90deg;
+        --fdbPopover_Resize_Handle_Transform_Scale: 1;
+
+        @include fd-rtl() {
+          --fdbPopover_Resize_Handle_Position_Right: auto;
+          --fdbPopover_Resize_Handle_Position_Left: 0;
+          --fdbPopover_Resize_Handle_Cursor: nw-resize;
+          --fdbPopover_Resize_Handle_Transform_Scale: 1;
+          --fdbPopover_Resize_Handle_Rotate_Angle: 180deg;
+        }
+
+        &.#{$blockBody}--right.#{$blockBody}--arrow-x-end {
+          --fdbPopover_Resize_Handle_Position_Right: auto;
+          --fdbPopover_Resize_Handle_Position_Left: 0;
+          --fdbPopover_Resize_Handle_Rotate_Angle: 180deg;
+          --fdbPopover_Resize_Handle_Cursor: nw-resize;
+
+          @include fd-rtl() {
+            --fdbPopover_Resize_Handle_Position_Right: 0;
+            --fdbPopover_Resize_Handle_Position_Left: auto;
+            --fdbPopover_Resize_Handle_Rotate_Angle: -90deg;
+            --fdbPopover_Resize_Handle_Cursor: ne-resize;
+          }
+        }
+      }
+
+      &.#{$blockBody}--after.#{$blockBody}--arrow-left {
+        --fdbPopover_Resize_Handle_Position_Top: auto;
+        --fdbPopover_Resize_Handle_Position_Bottom: 0;
+        --fdbPopover_Resize_Handle_Position_Right: 0;
+        --fdbPopover_Resize_Handle_Position_Left: auto;
+        --fdbPopover_Resize_Handle_Cursor: se-resize;
+
+        @include fd-rtl() {
+          --fdbPopover_Resize_Handle_Rotate_Angle: -90deg;
+        }
+
+        &.#{$blockBody}--bottom.#{$blockBody}--arrow-y-end,
+        &.#{$blockBody}--bottom.#{$blockBody}--arrow-y-bottom {
+          --fdbPopover_Resize_Handle_Position_Top: 0;
+          --fdbPopover_Resize_Handle_Position_Bottom: auto;
+          --fdbPopover_Resize_Handle_Position_Right: 0;
+          --fdbPopover_Resize_Handle_Position_Left: auto;
+          --fdbPopover_Resize_Handle_Cursor: ne-resize;
+          --fdbPopover_Resize_Handle_Rotate_Angle: -90deg;
+          --fdbPopover_Resize_Handle_Transform_Scale: 1;
+        }
+      }
+
+      &.#{$blockBody}--before.#{$blockBody}--arrow-right {
+        --fdbPopover_Resize_Handle_Position_Top: auto;
+        --fdbPopover_Resize_Handle_Position_Bottom: 0;
+        --fdbPopover_Resize_Handle_Position_Right: auto;
+        --fdbPopover_Resize_Handle_Position_Left: 0;
+        --fdbPopover_Resize_Handle_Cursor: sw-resize;
+        --fdbPopover_Resize_Handle_Rotate_Angle: 0;
+        --fdbPopover_Resize_Handle_Transform_Scale: -1;
+
+        &.#{$blockBody}--middle.#{$blockBody}--arrow-y-center,
+        &.#{$blockBody}--bottom.#{$blockBody}--arrow-y-end,
+        &.#{$blockBody}--bottom.#{$blockBody}--arrow-y-bottom {
+          --fdbPopover_Resize_Handle_Position_Top: 0;
+          --fdbPopover_Resize_Handle_Position_Bottom: auto;
+          --fdbPopover_Resize_Handle_Rotate_Angle: 90deg;
+          --fdbPopover_Resize_Handle_Cursor: nw-resize;
+        }
+      }
+    }
+  }
+
+  &--full-width {
+    width: 100%;
+  }
+}

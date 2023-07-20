@@ -44,6 +44,11 @@
 @import "./common/tokenizer/sap_horizon";
 @import "./sap_horizon/css_variables";
 
+// BTP
+@import "./common/btp-info-label/sap_horizon";
+@import "./common/btp-button/sap_horizon";
+@import "./common/btp-notification/sap_horizon";
+
 :root {
   /* Switch */
   --fdSwitch_Semantic_Error_Handle_Border_Color: var(--sapButton_Track_Negative_Background);

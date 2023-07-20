@@ -1,0 +1,12 @@
+:root {
+  --fdbNotification_Item_Border_Color: var(--sapGroup_ContentBorderColor);
+  --fdbNotification_Unread_Indicator_Background: var(--sapContent_IconColor);
+  --fdbNotification_Group_Item_Border_Radius: 0;
+  --fdbNotification_Group_Item_Transition: none;
+  --fdbNotification_Group_Item_Color: var(--sapList_TextColor);
+  --fdbNotification_Group_Item_Border_Color_Normal: transparent;
+  --fdbNotification_Group_Item_Border_Bottom_Color_Normal: var(--sapList_BorderColor);
+  --fdbNotification_Group_Item_Border_Color_Hover: var(--sapList_SelectionBorderColor);
+  --fdbNotification_Group_Item_Border_Color_Active: var(--sapList_SelectionBorderColor);
+  --fdbNotification_Group_Item_Border_Color_Focused: transparent;
+}

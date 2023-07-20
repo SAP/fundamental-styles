@@ -44,6 +44,11 @@
 @import "./common/tokenizer/sap_horizon";
 @import "./sap_horizon_dark/css_variables";
 
+// BTP
+@import "./common/btp-info-label/sap_horizon";
+@import "./common/btp-button/sap_horizon";
+@import "./common/btp-notification/sap_horizon";
+
 :root {
   /* Busy indicator */
   // Currently this variable has incorrect colour value. Use hardcoded until @sap-theming package is fixed.

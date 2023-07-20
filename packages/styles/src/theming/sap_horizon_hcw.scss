@@ -45,6 +45,11 @@
 @import "./common/tokenizer/sap_horizon";
 @import "./sap_horizon_hcw/css_variables";
 
+// BTP
+@import "./common/btp-info-label/sap_horizon_hc";
+@import "./common/btp-button/sap_horizon_hc";
+@import "./common/btp-notification/sap_horizon_hc";
+
 :root {
   /* Switch */
   --fdSwitch_Slider_Box_Sizing: border-box;

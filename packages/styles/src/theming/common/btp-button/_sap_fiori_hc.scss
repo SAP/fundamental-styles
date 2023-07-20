@@ -1,0 +1,10 @@
+:root {
+  --fdbButton_Border_Color_Normal: var(--sapButton_BorderColor);
+  --fdbButton_Border_Color_Hover: var(--sapButton_Hover_BorderColor);
+  --fdbButton_Border_Color_Active: var(--sapButton_Active_BorderColor);
+  --fdbButton_Border_Color_Focus: transparent;
+  --fdbButton_Border_Color_Disabled: var(--sapButton_Hover_BorderColor);
+  --fdbButton_Border_Radius_Focus: 0;
+  --fdbButton_Badge_Border_Color: var(--sapGroup_ContentBorderColor);
+  --fdbButton_Nested_Border_Radius_Focus: 0;
+}

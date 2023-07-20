@@ -1,0 +1,119 @@
+@import "../mixins/mixins";
+@import "../new-settings";
+
+$block: #{$fd-btp-namespace}-button;
+
+.#{$block} {
+  --fdbButton_Size: 2.5rem;
+  --fdbButton_Icon_Size: 1rem;
+  --fdbButton_Click_Area: 2rem;
+  --fdbButton_Padding: 0.75rem;
+  --fdbButton_Border_Radius: 0.375rem;
+  --fdbButton_Color: var(--sapContent_IconColor);
+  --fdbButton_Background: var(--sapButton_Lite_Background);
+  --fdbButton_Border_Color: var(--fdbButton_Border_Color_Normal);
+
+  @include fd-reset();
+  @include fd-inline-flex-center();
+  @include fd-set-square(var(--fdbButton_Size));
+
+  @include fd-icon-selector() {
+    @include fd-flex-center();
+
+    color: inherit;
+    width: var(--fdbButton_Icon_Size);
+    height: var(--fdbButton_Icon_Size);
+    font-size: var(--fdbButton_Icon_Size);
+  }
+
+  cursor: pointer;
+  position: relative;
+  color: var(--fdbButton_Color);
+  padding: var(--fdbButton_Padding);
+  background: var(--fdbButton_Background);
+  border-radius: var(--fdbButton_Border_Radius);
+  border: var(--sapButton_BorderWidth) solid var(--fdbButton_Border_Color);
+
+  @include fd-hover() {
+    --fdbButton_Background: var(--sapButton_Lite_Hover_Background);
+    --fdbButton_Border_Color: var(--fdbButton_Border_Color_Hover);
+  }
+
+  @include fd-active() {
+    --fdbButton_Background: var(--sapActiveColor);
+    --fdbButton_Border_Color: var(--fdbButton_Border_Color_Active);
+
+    outline: none;
+
+    @include fd-focus() {
+      --fdbButton_Border_Radius: 0.375rem;
+      --fdbButton_Background: var(--sapActiveColor);
+      --fdbButton_Border_Color: var(--fdbButton_Border_Color_Active);
+
+      outline: none;
+    }
+  }
+
+  @include fd-focus() {
+    --fdbButton_Background: var(--sapButton_Background);
+    --fdbButton_Border_Color: var(--fdbButton_Border_Color_Focus);
+    --fdbButton_Border_Radius: var(--fdbButton_Border_Radius_Focus);
+
+    outline: var(--sapContent_FocusStyle) var(--sapContent_FocusWidth) var(--sapContent_FocusColor);
+  }
+
+  @include fd-disabled() {
+    --fdbButton_Background: var(--sapButton_Lite_Background);
+    --fdbButton_Border_Color: var(--fdbButton_Border_Color_Disabled);
+
+    pointer-events: none;
+    opacity: var(--sapContent_DisabledOpacity);
+  }
+
+  @include fd-compact-and-condensed() {
+    --fdbButton_Padding: 0.5rem;
+    --fdbButton_Size: 2rem;
+  }
+
+  &__badge {
+    @include fd-reset();
+    @include fd-set-square(0.625rem);
+    @include fd-set-position-right(-0.125rem);
+
+    top: -0.125rem;
+    position: absolute;
+    border-radius: 100%;
+    background: var(--sapContent_BadgeBackground);
+    border: 0.0625rem solid var(--fdbButton_Badge_Border_Color);
+  }
+
+  &--nested {
+    --fdbButton_Padding: 0;
+    --fdbButton_Size: 1.25rem;
+    --fdbButton_Icon_Size: 0.75rem;
+    --fdbButton_Border_Radius: 0.75rem;
+
+    &::before {
+      @include fd-set-square(var(--fdbButton_Click_Area));
+
+      content: "";
+      position: absolute;
+    }
+
+    @include fd-active() {
+      @include fd-focus() {
+        --fdbButton_Border_Radius: 0.75rem;
+      }
+    }
+
+    @include fd-focus() {
+      --fdbButton_Border_Radius: var(--fdbButton_Nested_Border_Radius_Focus);
+    }
+
+    @include fd-compact-and-condensed() {
+      --fdbButton_Padding: 0;
+      --fdbButton_Size: 1.25rem;
+      --fdbButton_Click_Area: 1.625rem;
+    }
+  }
+}
