@@ -1,10 +1,8 @@
 import focusableDisabledExampleHtml from "./focusable-disabled.example.html?raw";
 import buttonStatesExampleHtml from "./button-states.example.html?raw";
 import iconAndTextExampleHtml from "./icon-and-text.example.html?raw";
-import splitMenuButtonExampleHtml from "./split-menu-button.example.html?raw";
 import menuButtonExampleHtml from "./menu-button.example.html?raw";
 import badgeOnButtonExampleHtml from "./badge-on-button.example.html?raw";
-import segmentedButtonExampleHtml from "./segmented-button.example.html?raw";
 import toolHeaderButtonExampleHtml from "./tool-header.example.html?raw";
 import nestedButtonExampleHtml from "./nested.example.html?raw";
 import toggleExampleHtml from "./toggle.example.html?raw";
@@ -16,7 +14,7 @@ import '../../../src/icon.scss';
 import '../../../src/button.scss';
 import '../../../src/button-split.scss';
 export default {
-  title: 'Components/Button',
+  title: 'Components/Buttons/Button',
   parameters: {
     description: `The button component is used to trigger an action. All buttons are characterized by the \`fd-button\` class and an additional modifier classes to specify each button type.
 
@@ -49,7 +47,8 @@ export default {
         * \`fd-button__text\` the text of the button
         * \`fd-button__badge\` the badge of the button
         * \`fd-button__instructions\` the instructions for the button usage, not visible, only being read by screen readers
-`
+`,
+tags: ['f3', 'a11y', 'theme']
   }
 };
 export const Styles = () => stylesExampleHtml;
@@ -80,19 +79,6 @@ Active (toggled) button should have \`aria-pressed="true"\` and \`fd-button--tog
     }
   }
 };
-export const SegmentedButton = () => segmentedButtonExampleHtml;
-SegmentedButton.storyName = 'Segmented button';
-SegmentedButton.parameters = {
-  docs: {
-    description: {
-      story: `The segmented button displays a group of options. Only one option can be active at a time, while the others remain or become inactive when the initial option is selected.
-This button type was previously known as "button group" and is comparable to a radio button group.
-It can be displayed by using the container with \`fd-segmented-button\` class with \`role="group"\` and the \`aria-label="Group label"\` attribute.
-Active button should have \`aria-pressed="true"\` and \`fd-button--toggled\` class and inactive buttons should have \`aria-pressed="false"\`.
-`
-    }
-  }
-};
 export const BadgeOnButton = () => badgeOnButtonExampleHtml;
 BadgeOnButton.storyName = 'Button With Badge';
 BadgeOnButton.parameters = {
@@ -113,25 +99,6 @@ MenuButton.parameters = {
 There are two different type of menu buttons: the default menu button and split menu button.
 \n**Maximum width is 12rem**.
             `
-    }
-  }
-};
-export const SplitMenuButton = () => splitMenuButtonExampleHtml;
-SplitMenuButton.storyName = 'Split menu button';
-SplitMenuButton.parameters = {
-  docs: {
-    description: {
-      story: `The split menu button has two separate areas: the text label and the arrow down icon.
-The separator between them indicates that each area results in a different action, giving the user two choices: trigger the main action or open the menu.
-\n**If the default action is displayed as an icon only, all the menu items must contain icons.**
-
-The split menu button can behave in two different ways:
-
-1. The main button triggers the default action set by the developer. If no default action is defined, the first item in the menu list should be the default.
-2. The main button triggers the last action chosen by the user from the menu list. Initially, it triggers the default action. However, when the user selects a different action, the default switches to the last action selected by the user.
-
-The split menu button can be displayed by using container with \`fd-button-split\` class with \`role=”group”\` and the \`aria-label=”button-split”\` attribute.
-`
     }
   }
 };
