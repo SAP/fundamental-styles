@@ -26,9 +26,6 @@ export const Structure = () => structureExampleHtml;
 Structure.storyName = 'Section Structure';
 Structure.parameters = {
   docs: {
-    story: {
-      iframeHeight: 300
-    },
     description: {
       story: ''
     }
@@ -38,9 +35,6 @@ export const SectionLayoutGrid = () => sectionLayoutGridExampleHtml;
 SectionLayoutGrid.storyName = 'With Layout Grid';
 SectionLayoutGrid.parameters = {
   docs: {
-    story: {
-      iframeHeight: 300
-    },
     description: {
       story: `
 Shows an example with the grid span helper class.
@@ -52,9 +46,6 @@ export const SectionPanels = () => sectionPanelsExampleHtml;
 SectionPanels.storyName = 'With Panels';
 SectionPanels.parameters = {
   docs: {
-    story: {
-      iframeHeight: 300
-    },
     description: {
       story: `
 Shows an alternate layout option using columns.
@@ -66,9 +57,6 @@ export const SectionHeaders = () => sectionHeadersExampleHtml;
 SectionHeaders.storyName = 'With Headers';
 SectionHeaders.parameters = {
   docs: {
-    story: {
-      iframeHeight: 300
-    },
     description: {
       story: 'Header and title elements are available when necessary to label content groups.'
     }

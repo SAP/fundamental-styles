@@ -121,7 +121,6 @@ export const PageTitle = () => `${localStyles}
 `;
 PageTitle.parameters = {
   docs: {
-    iframeHeight: 250,
     description: {
       story: 'For Page Title placed outside of a container use the `.fn-page__title--no-container` modifier class to the `.fn-page__title` base class.'
     }
@@ -140,7 +139,6 @@ export const PageGroupTitle = () => `${localStyles}
 `;
 PageGroupTitle.parameters = {
   docs: {
-    iframeHeight: 250,
     description: {
       story: 'For a Group Title placed outside of a container use the `.fn-page__group-title--no-container` modifier class to the `.fn-page__group-title` base class.'
     }
@@ -219,7 +217,6 @@ export const PageFooter = () => `${localStyles}
 `;
 PageFooter.parameters = {
   docs: {
-    iframeHeight: 250,
     description: {
       story: 'For floating type of footer add the `.fn-page__footer--floating` modifier class to the `.fn-page__footer` base class.'
     }

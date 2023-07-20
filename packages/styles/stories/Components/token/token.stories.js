@@ -24,9 +24,6 @@ export const Primary = () => primaryExampleHtml;
 Primary.storyName = 'Tokens';
 Primary.parameters = {
   docs: {
-    story: {
-      iframeHeight: 350
-    },
     description: {
       story: `The default token is displayed in grey with text, and a close button that will remove the token when selected. It is displayed in cozy mode, which is ideal for mobile and tablet screens.
         `

@@ -14,11 +14,6 @@ export default {
   title: 'Components/Wizard',
   parameters: {
     description,
-    docs: {
-      story: {
-        iframeHeight: 400
-      }
-    },
     tags: ['f3', 'theme', 'development']
   }
 };
@@ -26,9 +21,6 @@ export const DefaultExample = () => defaultExampleExampleHtml;
 DefaultExample.storyName = 'Default';
 DefaultExample.parameters = {
   docs: {
-    story: {
-      iframeHeight: 950
-    },
     description: {
       story: `The default wizard displays a walkthrough screen with forms split into sections. Once the user fills all of the necessary input fields, a button is displayed to go to the next section. A *Cancel* button is displayed in the footer, so the user can exit the wizard at any point during the process. However, if a user exits the wizard after adding their input, they will receive a warning that their information will be lost.
 `
@@ -38,9 +30,6 @@ DefaultExample.parameters = {
 export const Customized = () => customizedExampleHtml;
 Customized.parameters = {
   docs: {
-    story: {
-      iframeHeight: 950
-    },
     description: {
       story: `The wizard component can be customized with modifier classes. For instance, the example below has several modified elements:
 
@@ -59,9 +48,6 @@ Customized.parameters = {
 export const Responsive = () => responsiveExampleHtml;
 Responsive.parameters = {
   docs: {
-    story: {
-      iframeHeight: 950
-    },
     description: {
       story: `If there is sufficient horizontal space, all labels are shown.
 However, when the width decreases, the step labels disappear. To hide the labels, add the \`fd-wizard__step--no-label\` modifier class to the step.
@@ -73,9 +59,6 @@ The unselected steps should stack on top of each other when there is limited scr
 export const RevertedSteps = () => revertedStepsExampleHtml;
 RevertedSteps.parameters = {
   docs: {
-    story: {
-      iframeHeight: 950
-    },
     description: {
       story: 'To indicate reverted steps, use combination of `fd-wizard__step--completed` and `fd-wizard__step--upcoming` classes.'
     }
@@ -84,9 +67,6 @@ RevertedSteps.parameters = {
 export const Mobile = () => mobileExampleHtml;
 Mobile.parameters = {
   docs: {
-    story: {
-      iframeHeight: 950
-    },
     description: {
       story: `For mobile devices, add the \`fd-bar--floating-footer\` modifier class to achieve a floating footer. modifier class to display a floating footer. The *Next Step* button is placed after the content whenever possible. However, it can be placed above the floating footer by adding the \`fd-wizard__next-step--floating\` modifier class.
 `

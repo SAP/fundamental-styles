@@ -4,7 +4,6 @@ export default {
     title: 'Media Queries',
     parameters: {
         description,
-        docs: { iframeHeight: 500 }
     }
 };
 

@@ -35,10 +35,7 @@ export const Standard = () => standardExampleHtml;
 Standard.storyName = 'Default';
 Standard.parameters = {
   docs: {
-    story: {
-      iframeHeight: 150
-    },
-    description: {
+   description: {
       story: 'The default feed input displays an empty text field with an inactive submit button.'
     }
   }
@@ -47,10 +44,7 @@ export const NotEmpty = () => notEmptyExampleHtml;
 NotEmpty.storyName = 'With text';
 NotEmpty.parameters = {
   docs: {
-    story: {
-      iframeHeight: 150
-    },
-    description: {
+   description: {
       story: 'The input with text displays some text, activating the submit button.'
     }
   }
@@ -58,10 +52,7 @@ NotEmpty.parameters = {
 export const Disabled = () => disabledExampleHtml;
 Disabled.parameters = {
   docs: {
-    story: {
-      iframeHeight: 150
-    },
-    description: {
+   description: {
       story: 'The disabled feed input displays a text field and submit button that users cannot interact with.'
     }
   }
@@ -70,10 +61,7 @@ export const WithoutUserImage = () => withoutUserImageExampleHtml;
 WithoutUserImage.storyName = 'No thumbnail';
 WithoutUserImage.parameters = {
   docs: {
-    story: {
-      iframeHeight: 150
-    },
-    description: {
+   description: {
       story: 'Although the default feed input has a thumbnail, it is possible to remove it. Without a thumbnail, the input area size increases automatically.'
     }
   }
@@ -82,10 +70,7 @@ export const PlaceholderImage = () => placeholderImageExampleHtml;
 PlaceholderImage.storyName = 'Generic thumbnail';
 PlaceholderImage.parameters = {
   docs: {
-    story: {
-      iframeHeight: 150
-    },
-    description: {
+   description: {
       story: 'A generic thumbnail will be displayed if no image has been chosen by the user.'
     }
   }
@@ -94,10 +79,7 @@ export const InputGrowth = () => inputGrowthExampleHtml;
 InputGrowth.storyName = 'Multiline';
 InputGrowth.parameters = {
   docs: {
-    story: {
-      iframeHeight: 190
-    },
-    description: {
+   description: {
       story: 'The multiline feed input displays a text field with multiple lines of text, which expands until a maximum height is reached.'
     }
   }
@@ -106,10 +88,7 @@ export const OverMaxHeight = () => overMaxHeightExampleHtml;
 OverMaxHeight.storyName = 'Max height';
 OverMaxHeight.parameters = {
   docs: {
-    story: {
-      iframeHeight: 420
-    },
-    description: {
+   description: {
       story: 'The max height feed input displays a text field with the maximum amount of text lines it can contain. Once the text field has reached the maximum height, a scrollbar appears to access the overflowing text.'
     }
   }

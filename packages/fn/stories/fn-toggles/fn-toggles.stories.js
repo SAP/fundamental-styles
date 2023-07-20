@@ -198,7 +198,6 @@ export const Checkbox = () => `${localStyles}
 `;
 Checkbox.parameters = {
   docs: {
-    iframeHeight: 500
   }
 };
 export const CheckboxGroup = () => `${localStyles}
@@ -321,7 +320,6 @@ export const CheckboxGroup = () => `${localStyles}
 `;
 CheckboxGroup.parameters = {
   docs: {
-    iframeHeight: 500,
     description: {
       story: 'Use the `<fieldset>` HTML element with class `.fn-fieldset` to group checkbox controls. The controls are displayed vertically and have `fit-content` width. The `.fn-fieldset--full-width` modifier class will display the checkbox controls with the same width as the parent element. To display the controls horizontally apply the `.fn-fieldset--horizontal` modifier class.'
     }
@@ -481,7 +479,6 @@ export const Radio = () => `${localStyles}
 `;
 Radio.parameters = {
   docs: {
-    iframeHeight: 500
   }
 };
 export const RadioGroup = () => `${localStyles}
@@ -547,7 +544,6 @@ export const RadioGroup = () => `${localStyles}
 `;
 RadioGroup.parameters = {
   docs: {
-    iframeHeight: 500,
     description: {
       story: 'Use the `<fieldset>` HTML element with class `.fn-fieldset` to group radio button controls. The controls are displayed vertically and have `fit-content` width. The `.fn-fieldset--full-width` modifier class will display the radio buttons with the same width as the parent element. To display the controls horizontally apply the `.fn-fieldset--horizontal` modifier class.'
     }
@@ -587,7 +583,6 @@ export const CheckboxAndRadioButtonLongText = () => `${localStyles}
 `;
 CheckboxAndRadioButtonLongText.parameters = {
   docs: {
-    iframeHeight: 500,
     description: {
       story: 'By default, long checkbox and radio button label will wrap in the next line. To add ellipsis and keep the text in a single line use the `fn-radio__label--truncate` and `fn-checkbox__label--truncate` modifier classes together with the `fn-radio__label` and `fn-checkbox__label` base classes.'
     }
@@ -608,6 +603,5 @@ export const SwitchToggle = () => `${localStyles}
 SwitchToggle.storyName = 'Switch';
 SwitchToggle.parameters = {
   docs: {
-    iframeHeight: 500
   }
 };

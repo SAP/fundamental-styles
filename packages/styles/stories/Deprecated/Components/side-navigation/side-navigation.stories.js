@@ -54,9 +54,6 @@ export const Cozy = () => cozyExampleHtml;
 Cozy.storyName = 'Default';
 Cozy.parameters = {
   docs: {
-    story: {
-      iframeHeight: 400
-    },
     description: {
       story: `
 The default side navigation is displayed in cozy mode with one navigation level. Because there is only one level, all further navigation is shown in the content area. The \`fd-nested-list--text-only\` modifier class should be added to the lists in both the main and utility sections.
@@ -68,9 +65,6 @@ export const CozyIcons = () => cozyIconsExampleHtml;
 CozyIcons.storyName = 'Icons';
 CozyIcons.parameters = {
   docs: {
-    story: {
-      iframeHeight: 400
-    },
     description: {
       story: `
 Side navigation can be displayed with icons. In the expanded state, entries can consist of only text or an icon with text. The use or non-use of icons must be consistent for all links on one level. Do not combine entries with and without icons on the same level. To display icons in list items, add the \`fd-nested-list__icon\` class within the list items.
@@ -82,9 +76,6 @@ export const CozyGrouping = () => cozyGroupingExampleHtml;
 CozyGrouping.storyName = 'Group';
 CozyGrouping.parameters = {
   docs: {
-    story: {
-      iframeHeight: 400
-    },
     description: {
       story: `
 Side navigation can be displayed with group headers that organize the entries, which is ideal for when there is more than one level of hierarchy. When they are grouped, the entries on the first level are just headers and don't trigger navigation themselves.
@@ -97,9 +88,6 @@ export const ComplexCozySideNav = () => complexCozySideNavExampleHtml;
 ComplexCozySideNav.storyName = 'Complex';
 ComplexCozySideNav.parameters = {
   docs: {
-    story: {
-      iframeHeight: 550
-    },
     description: {
       story: `
 Side navigation can display several different features such as icons, group headers, and two levels of navigation.
@@ -111,9 +99,6 @@ export const CondensedStateCozy = () => condensedStateCozyExampleHtml;
 CondensedStateCozy.storyName = 'Condensed';
 CondensedStateCozy.parameters = {
   docs: {
-    story: {
-      iframeHeight: 500
-    },
     description: {
       story: `
 Side navigation can be displayed in a condensed state, showing only icons that represent the navigation entries. When the user selects an entry from the navigation, a **Popover** is displayed. The default size for the popover body is often longer than the text length. However, the length can be adjusted to match the text length by adding the \`fd-popover__body--dropdown-fill\` class to the \`fd-popover__body\` element.
@@ -149,9 +134,6 @@ NestedListWithoutLinks.parameters = {
 export const NestedListPopover = () => nestedListPopoverExampleHtml;
 NestedListPopover.parameters = {
   docs: {
-    story: {
-      iframeHeight: 900
-    },
     description: {
       story: `
 Nested list can be displayed inside popover.

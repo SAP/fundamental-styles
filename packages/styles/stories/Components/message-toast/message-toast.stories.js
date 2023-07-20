@@ -30,9 +30,6 @@ export const DefaultToast = () => defaultToastExampleHtml;
 DefaultToast.storyName = 'Default';
 DefaultToast.parameters = {
   docs: {
-    story: {
-      iframeHeight: 210
-    },
     description: {
       story: `The default message toast displays a simple popup with non-interactive text. The text wraps once it reaches the max-width of 15rem.
         `

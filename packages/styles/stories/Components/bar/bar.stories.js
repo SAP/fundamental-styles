@@ -68,7 +68,6 @@ export const Default = () => defaultExampleHtml;
 Default.parameters = {
   docs: {
     story: {
-      iframeHeight: 200
     },
     description: {
       story: 'The default bar contains a back button, page title, segmented button and product switch button. It can be displayed by using the `fd-bar` class, and is responsive to desktop screen sizes. The default bar is in compact mode.'
@@ -80,7 +79,6 @@ export const Responsive = () => responsiveExampleHtml;
 Responsive.parameters = {
   docs: {
     story: {
-      iframeHeight: 100
     },
     description: {
       story: 'The bar can be made responsive with the `--responsive-paddings` modifier class. The paddings will automatically change with the screen size.'
@@ -91,7 +89,6 @@ export const Header = () => headerExampleHtml;
 Header.parameters = {
   docs: {
     story: {
-      iframeHeight: 350
     },
     description: {
       story: 'The header bar contains actions that impact the entire page. It can be displayed by adding the `--header` modifier class to the container element.'
@@ -102,7 +99,6 @@ export const Subheader = () => subheaderExampleHtml;
 Subheader.parameters = {
   docs: {
     story: {
-      iframeHeight: 450
     },
     description: {
       story: 'To change the header bar into a subheader, add the `--subheader` modifier class to the container element.'
@@ -113,7 +109,6 @@ export const HeaderWithSubheader = () => headerWithSubheaderExampleHtml;
 HeaderWithSubheader.parameters = {
   docs: {
     story: {
-      iframeHeight: 250
     },
     description: {
       story: 'To add a subheader under a header bar, the container element should have the `--header-with-subheader` modifier class, which will remove the element’s box shadow.'
@@ -124,7 +119,6 @@ export const Footer = () => footerExampleHtml;
 Footer.parameters = {
   docs: {
     story: {
-      iframeHeight: 150
     },
     description: {
       story: 'The footer bar should display only closing and finalizing action buttons that impact the entire page such as *Save* or *Cancel*. It can be displayed by adding the `--footer` modifier class to the container element.'
@@ -135,7 +129,6 @@ export const FloatingFooter = () => floatingFooterExampleHtml;
 FloatingFooter.parameters = {
   docs: {
     story: {
-      iframeHeight: 150
     },
     description: {
       story: 'The floating footer bar should also display only finalizing action buttons that impact the entire page. This type floats above the page at the bottom of the screen and is always visible when scrolling. It can be displayed by adding the `--floating-footer` modifier class to the container element.'

@@ -65,6 +65,5 @@ export const ProgressBar = () => `${localStyles}
 `;
 ProgressBar.parameters = {
   docs: {
-    iframeHeight: 500
   }
 };

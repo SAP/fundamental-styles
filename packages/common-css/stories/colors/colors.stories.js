@@ -4,7 +4,6 @@ export default {
     title: 'Colors',
     parameters: {
         description: '',
-        docs: { story: {iframeHeight: 500 }}
     }
 };
 
@@ -39,7 +38,6 @@ export const TextColor = () => `${localStyles}
 
 TextColor.parameters = {
     docs: {
-        story: {iframeHeight: 150},
         description: {
             story: `To set the text color of an element use the class <code>.sap-color-<i style="color: red;">colorName</i></code>, where <i style="color: red;">colorName</i> is the base of the css variable from the SAP-theming package that represent the desired color. <br><br>
             <b>SCSS Mixin:</b> 
@@ -71,7 +69,6 @@ export const BackgroundColor = () => `${localStyles}
 
 BackgroundColor.parameters = {
     docs: {
-        story: {iframeHeight: 150},
         description: {
             story: `To set the background color of an element use the class <code>.sap-bg-color-<i style="color: red;">colorName</i></code>, where <i style="color: red;">colorName</i> is the base of the css variable from the SAP-theming package that represent the desired color. <br><br>
             <b>SCSS Mixin:</b> 

@@ -47,7 +47,6 @@ export const MessageToast = () => `${localStyles}
 `;
 MessageToast.parameters = {
   docs: {
-    iframeHeight: 500,
     description: {
       story: `To truncate long text apply the \`.fn-message-toast__text--truncate\` modifier class to the \`.fn-message-toast__text\` base class. <br>
             You can control the width of the Message Toast with inline styling. For example, by adding \` style="width: 400px;"\` to the parent element with class \`.fn-message-toast\`.

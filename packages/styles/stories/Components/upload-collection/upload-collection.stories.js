@@ -56,9 +56,6 @@ export const Standard = () => standardExampleHtml;
 Standard.storyName = 'Default';
 Standard.parameters = {
   docs: {
-    story: {
-      iframeHeight: 785
-    },
     description: {
       story: 'The default upload collection.'
     }
@@ -67,9 +64,6 @@ Standard.parameters = {
 export const Edit = () => editExampleHtml;
 Edit.parameters = {
   docs: {
-    story: {
-      iframeHeight: 785
-    },
     description: {
       story: 'Users can activate edit mode where the file name can be changed.'
     }
@@ -78,9 +72,6 @@ Edit.parameters = {
 export const NoData = () => noDataExampleHtml;
 NoData.parameters = {
   docs: {
-    story: {
-      iframeHeight: 785
-    },
     description: {
       story: 'Use a message page component when the user has yet to upload any files.'
     }

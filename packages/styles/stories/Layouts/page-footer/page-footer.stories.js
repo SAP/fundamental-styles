@@ -29,9 +29,6 @@ Note: You may want to display components from right to left on the screen for in
 export const SingleLineLink = () => singleLineLinkExampleHtml;
 SingleLineLink.parameters = {
   docs: {
-    story: {
-      iframeHeight: 100
-    },
     description: {
       story: 'The Page Footer contains Image/logo, And list of links in the footer. It is responsive to tablet and mobile screen sizes.'
     }
@@ -40,9 +37,6 @@ SingleLineLink.parameters = {
 export const MultiLineLink = () => multiLineLinkExampleHtml;
 MultiLineLink.parameters = {
   docs: {
-    story: {
-      iframeHeight: 100
-    },
     description: {
       story: 'The Page Footer contains Image/logo, And list of links in the footer. To apply multiline link, add the `fd-page-footer__row` modifier class to the container element.'
     }
@@ -51,9 +45,6 @@ MultiLineLink.parameters = {
 export const ImageAndIconLink = () => imageAndIconLinkExampleHtml;
 ImageAndIconLink.parameters = {
   docs: {
-    story: {
-      iframeHeight: 100
-    },
     description: {
       story: 'Example of The Page Footer representing multiline link,and adding images in the code to represent the clickable images and multiline is achived by adding the `fd-page-footer__row` modifier class to the container element.'
     }
@@ -62,9 +53,6 @@ ImageAndIconLink.parameters = {
 export const FooterWithDiffrentSize = () => footerWithDiffrentSizeExampleHtml;
 FooterWithDiffrentSize.parameters = {
   docs: {
-    story: {
-      iframeHeight: 100
-    },
     description: {
       story: 'Example of The Page Footer representing multiline lin, add the `--xl` `--lg` `--md` `--sm` size modifier class to the container element.'
     }

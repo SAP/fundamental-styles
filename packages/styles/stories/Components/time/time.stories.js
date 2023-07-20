@@ -40,9 +40,6 @@ export const DefaultCozyMode = () => defaultCozyModeExampleHtml;
 DefaultCozyMode.storyName = 'Default';
 DefaultCozyMode.parameters = {
   docs: {
-    story: {
-      iframeHeight: 550
-    },
     description: {
       story: `The default time component is displayed in cozy mode, which is ideal for mobile screens.
 
@@ -57,9 +54,6 @@ export const TabletMode = () => tabletModeExampleHtml;
 TabletMode.storyName = 'Tablet';
 TabletMode.parameters = {
   docs: {
-    story: {
-      iframeHeight: 550
-    },
     description: {
       story: `Time can be optimized for tablet screens, which adds padding on each side of the component. To display the time component for tablet, add the \`fd-time--tablet\` modifier class to the main element.
         `
@@ -70,9 +64,6 @@ export const ScrollableMode = () => scrollableModeExampleHtml;
 ScrollableMode.storyName = 'Scrollable';
 ScrollableMode.parameters = {
   docs: {
-    story: {
-      iframeHeight: 550
-    },
     description: {
       story: `Time can be scrollable by adding the \`fd-time--scrollable\` modifier class to the main element. It provides users with the ability to scroll up and down active columns with either a mouse, or on mobile where they can tap and release.
         `

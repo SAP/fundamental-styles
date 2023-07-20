@@ -28,11 +28,7 @@ In special cases, there are only two mutually exclusive options. Combine them in
 };
 export const Primary = () => primaryExampleHtml;
 Primary.parameters = {
-  docs: {
-    story: {
-      iframeHeight: 250
-    }
-  }
+  docs: {}
 };
 export const Inline = () => inlineExampleHtml;
 Inline.parameters = {
@@ -51,9 +47,6 @@ Do not put two radio button groups right next to each other as it is difficult t
 export const InteractionStates = () => interactionStatesExampleHtml;
 InteractionStates.parameters = {
   docs: {
-    story: {
-      iframeHeight: 550
-    },
     description: {
       story: 'A radio button can have different states that affect its appearance value states, such as “error” or “warning”, which are indicated using semantic colors'
     }
@@ -62,9 +55,6 @@ InteractionStates.parameters = {
 export const TextTruncation = () => textTruncationExampleHtml;
 TextTruncation.parameters = {
   docs: {
-    story: {
-      iframeHeight: 250
-    },
     description: {
       story: `By default, long radio label truncates with ellipsis. For this behaviour no modifier class is needed. For radio label that wraps on a new line to show the entire content, use \`.fd-radio__label--wrap\` modifier class applied with \`.fd-radio__label\`. Keep in mind that for this to work <b>max-width</b> should be set on the label. For a <b>top-left aligned</b> label use the \`.fd-radio__label--wrap-top-aligned\` modifier class.`
     }

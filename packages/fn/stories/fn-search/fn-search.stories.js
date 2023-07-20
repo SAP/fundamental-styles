@@ -73,6 +73,5 @@ export const Search = () => `${localStyles}
 `;
 Search.parameters = {
   docs: {
-    iframeHeight: 500
   }
 };

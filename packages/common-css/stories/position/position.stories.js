@@ -6,7 +6,6 @@ export default {
     title: 'Position',
     parameters: {
         description,
-        docs: { story: {iframeHeight: 500 }}
     }
 };
 
@@ -63,7 +62,6 @@ export const PositionClasses = () => `${localStyles}
 
 PositionClasses.parameters = {
     docs: {
-        story: {iframeHeight: 500},
         description: {
             story: `
         ` }
@@ -126,7 +124,6 @@ export const PositionMixins = () => `${localStyles}
 
 PositionMixins.parameters = {
     docs: {
-        story: {iframeHeight: 500},
         description: {
             story: `
         ` }

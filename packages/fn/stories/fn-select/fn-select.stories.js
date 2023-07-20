@@ -99,6 +99,5 @@ export const DefaultInput = () => `${localStyles}
 DefaultInput.storyName = 'Select';
 DefaultInput.parameters = {
   docs: {
-    iframeHeight: 500
   }
 };

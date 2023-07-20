@@ -91,6 +91,5 @@ export const InfoLabel = () => `${localStyles}
 `;
 InfoLabel.parameters = {
   docs: {
-    iframeHeight: 500
   }
 };

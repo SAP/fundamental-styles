@@ -21,20 +21,12 @@ export default {
   parameters: {
     description: `The quick view is similar to a popover but has a predefined structure, a fixed set of UI
         elements, and automatic UI rendering. Should be used in combination with the popover or dialog components`,
-    docs: {
-      story: {
-        iframeHeight: 500
-      }
-    },
     tags: ['f3', 'a11y', 'theme']
   }
 };
 export const Popover = () => popoverExampleHtml;
 Popover.parameters = {
   docs: {
-    story: {
-      iframeHeight: 500
-    },
     description: {
       story: 'QuickView component as popover'
     }
@@ -43,9 +35,6 @@ Popover.parameters = {
 export const Dialog = () => dialogExampleHtml;
 Dialog.parameters = {
   docs: {
-    story: {
-      iframeHeight: 500
-    },
     description: {
       story: `QuickView component as dialog. Because of the dialog structure quick view title should be
         set within the dialog header but not in the quick view header`
@@ -56,9 +45,6 @@ export const NoHeader = () => noHeaderExampleHtml;
 NoHeader.storyName = 'Without the header';
 NoHeader.parameters = {
   docs: {
-    story: {
-      iframeHeight: 500
-    },
     description: {
       story: 'QuickView without the header'
     }

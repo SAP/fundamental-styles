@@ -3,7 +3,6 @@ export default {
     parameters: {
         description: `
       `,
-        docs: { story: {iframeHeight: 500 }}
     }
 };
 
@@ -35,7 +34,6 @@ export const Reset = () => `<div>
 Reset.storyName = 'Mixin sap-reset';
 Reset.parameters = {
     docs: {
-        story: {iframeHeight: 500},
         description: {
             story: `The <code>sap-reset()</code> mixin can be added to any HTML element to remove some of the default styling coming from the browsers. `
         }

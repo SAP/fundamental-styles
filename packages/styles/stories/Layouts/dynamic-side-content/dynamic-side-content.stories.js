@@ -44,9 +44,6 @@ export const PositionLeft = () => positionLeftExampleHtml;
 PositionLeft.storyName = 'Left';
 PositionLeft.parameters = {
   docs: {
-    story: {
-      iframeHeight: 160
-    },
     description: {
       story: 'To display side content from the left, put `fd-dynamic-side__side` as the first child element of `fd-dynamic-side`.'
     }
@@ -56,9 +53,6 @@ export const PositionRight = () => positionRightExampleHtml;
 PositionRight.storyName = 'Right';
 PositionRight.parameters = {
   docs: {
-    story: {
-      iframeHeight: 160
-    },
     description: {
       story: 'To display side content from the right, put `fd-dynamic-side__side` as the second child element of `fd-dynamic-side`.'
     }
@@ -68,9 +62,6 @@ export const PositionBottom = () => positionBottomExampleHtml;
 PositionBottom.storyName = 'Below';
 PositionBottom.parameters = {
   docs: {
-    story: {
-      iframeHeight: 260
-    },
     description: {
       story: 'To display side content below the main content area, keep `fd-dynamic-side__side` as the last child element and add the `fd-dynamic-side--below` modifier class.'
     }
@@ -80,9 +71,6 @@ export const EqualSplit = () => equalSplitExampleHtml;
 EqualSplit.storyName = 'Equal split';
 EqualSplit.parameters = {
   docs: {
-    story: {
-      iframeHeight: 160
-    },
     description: {
       story: 'The equal split mode provides users with a 50:50 view of the main content and side content, which enables users to show more data i.e. for comparison purposes. To enable equal split mode, add the `fd-dynamic-side--equal-split` modifier class to the container.'
     }
@@ -91,9 +79,6 @@ EqualSplit.parameters = {
 export const Responsiveness = () => responsivenessExampleHtml;
 Responsiveness.parameters = {
   docs: {
-    story: {
-      iframeHeight: 160
-    },
     description: {
       story: `
 To display the dynamic side content for specific screen sizes, use the respective modifier classes:

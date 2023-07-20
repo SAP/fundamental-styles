@@ -112,10 +112,7 @@ CalendarDays.parameters = {
 export const Days = () => daysExampleHtml;
 Days.parameters = {
   docs: {
-    story: {
-      iframeHeight: 400
-    },
-    description: {
+   description: {
       story: 'The calendar component can display days of the month by adding the `fd-calendar__content--dates` class to the container element.'
     }
   }
@@ -123,10 +120,7 @@ Days.parameters = {
 export const Months = () => monthsExampleHtml;
 Months.parameters = {
   docs: {
-    story: {
-      iframeHeight: 400
-    },
-    description: {
+   description: {
       story: 'The calendar component can display months in a year by adding the `fd-calendar__content--months` class to the container element.'
     }
   }
@@ -134,10 +128,7 @@ Months.parameters = {
 export const Years = () => yearsExampleHtml;
 Years.parameters = {
   docs: {
-    story: {
-      iframeHeight: 700
-    },
-    description: {
+   description: {
       story: 'The calendar component can display a range of years in various ways: short-term, long-term, year ranges etc. Add the `fd-calendar__content--years` class to the container element, and adjust the number of columns, rows, and content to fit your use case.'
     }
   }

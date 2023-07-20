@@ -83,7 +83,6 @@ export const DefaultTabs = () => `${localStyles}
 DefaultTabs.storyName = 'Default';
 DefaultTabs.parameters = {
   docs: {
-    iframeHeight: 500
   }
 };
 export const Semantic = () => `${localStyles}
@@ -202,7 +201,6 @@ export const Semantic = () => `${localStyles}
 Semantic.storyName = 'Semantic Tabs';
 Semantic.parameters = {
   docs: {
-    iframeHeight: 500,
     description: {
       story: 'The `.fn-tabs--positive`, `.fn-tabs--critical` or `.fn-tabs--negative` modifier classes are added to the `.fn-tabs` base class to achieve positive, critical or negative tabs. '
     }
@@ -259,7 +257,6 @@ export const MultiInstance = () => `${localStyles}
 MultiInstance.storyName = 'Multi-Instance Tabs';
 MultiInstance.parameters = {
   docs: {
-    iframeHeight: 500,
     description: {
       story: 'The `.fn-tabs--multi-instance` modifier class toachieve Multi Instance tabs. It can be combined with a semantic modifier class.'
     }
@@ -395,7 +392,6 @@ export const Split = () => `${localStyles}
 Split.storyName = 'Split Tabs';
 Split.parameters = {
   docs: {
-    iframeHeight: 500,
     description: {
       story: 'For Split Tabs you need to add the `.fn-nested-button--split` and `.fn-tabs__button--split` modifier classes to the button element with base class `.fn-nested-button` aka the Nested Button.'
     }

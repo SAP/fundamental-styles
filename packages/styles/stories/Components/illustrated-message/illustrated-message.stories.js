@@ -88,9 +88,6 @@ ${localStyles}`;
 Scene.storyName = 'Scene (Large)';
 Scene.parameters = {
   docs: {
-    story: {
-      iframeHeight: 330
-    },
     description: {
       story: `for Large Size (Scene) only, a Container around the Illustration and Text is added. Use a  \`<div>\` element with class  \`.fd-illustrated-message-container\` around the Illustrated Message.
         `
@@ -114,9 +111,6 @@ export const Dialog = () => dialogExampleHtml;
 Dialog.storyName = 'Dialog (Medium)';
 Dialog.parameters = {
   docs: {
-    story: {
-      iframeHeight: 330
-    },
     description: {
       story: `Add \`.fd-illustrated-message--dialog\` class
         `
@@ -127,9 +121,6 @@ export const Spot = () => spotExampleHtml;
 Spot.storyName = 'Spot (Small)';
 Spot.parameters = {
   docs: {
-    story: {
-      iframeHeight: 330
-    },
     description: {
       story: `Add \`.fd-illustrated-message--spot\` class
         `
@@ -140,9 +131,6 @@ export const Dot = () => dotExampleHtml;
 Dot.storyName = 'Dot (Extra Small)';
 Dot.parameters = {
   docs: {
-    story: {
-      iframeHeight: 330
-    },
     description: {
       story: `Add \`.fd-illustrated-message--dot\` class
         `

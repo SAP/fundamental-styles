@@ -205,7 +205,6 @@ export const Interactive = () => `${localStyles}
 Interactive.storyName = 'Interactive Object Status';
 Interactive.parameters = {
   docs: {
-    iframeHeight: 500,
     description: {
       story: 'For interactive Object Status add the `.fn-object-status--interactive` modifier class to the `.fn-object-status` base class and the modifier class for state.'
     }
