@@ -29,7 +29,6 @@ export default {
     tags: ['f3', 'a11y', 'theme', 'development']
   }
 };
-const messageBoxHeight = 800;
 export const Filter = () => filterExampleHtml;
 Filter.parameters = {
   docs: {
