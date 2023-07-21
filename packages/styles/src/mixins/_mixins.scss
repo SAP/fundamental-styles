@@ -320,6 +320,12 @@
   @content;
 }
 
+@mixin fd-inline-flex-vertical-center {
+  display: inline-flex;
+  align-items: center;
+  @content;
+}
+
 @mixin fd-flex-vertical-center {
   display: flex;
   align-items: center;

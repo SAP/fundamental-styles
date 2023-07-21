@@ -30,7 +30,8 @@
   --fdInfo_Label_Color8: var(--sapTextColor);
   --fdInfo_Label_Color9: var(--sapTextColor);
   --fdInfo_Label_Color10: var(--sapTextColor);
-  --fdInfo_Label_Display_Border_Color: transparent;
-  --fdInfo_Label_Display_Background_Color: var(--sapTextColor);
-  --fdInfo_Label_Display_Text_Color: var(--sapContent_ContrastTextColor);
+  --fdInfo_Label_Border_Radius: 0.5rem;
+  --fdInfo_Label_Border_Radius_Display: 0.5rem;
+  --fdInfo_Label_Height: 1rem;
+  --fdInfo_Label_Height_Display: 1rem;
 }

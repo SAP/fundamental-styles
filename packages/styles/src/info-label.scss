@@ -3,99 +3,115 @@
 
 $block: #{$fd-namespace}-info-label;
 
-$fd-info-label-height: 1rem !default;
-$fd-info-label-icon-text-spacing: 0.125rem !default;
-$fd-info-label-border-width: 0.0625rem !default;
-$fd-info-label-border-style: solid !default;
-$fd-info-label-font-size: var(--sapFontSmallSize) !default;
-
 $color-accents: (
-  "1": ("background": var(--fdInfo_Label_Background_Color1), "border": var(--fdInfo_Label_Border_Color1), "color": var(--fdInfo_Label_Color1)),
-  "2": ("background": var(--fdInfo_Label_Background_Color2), "border": var(--fdInfo_Label_Border_Color2), "color": var(--fdInfo_Label_Color2)),
-  "3": ("background": var(--fdInfo_Label_Background_Color3), "border": var(--fdInfo_Label_Border_Color3), "color": var(--fdInfo_Label_Color3)),
-  "4": ("background": var(--fdInfo_Label_Background_Color4), "border": var(--fdInfo_Label_Border_Color4), "color": var(--fdInfo_Label_Color4)),
-  "5": ("background": var(--fdInfo_Label_Background_Color5), "border": var(--fdInfo_Label_Border_Color5), "color": var(--fdInfo_Label_Color5)),
-  "6": ("background": var(--fdInfo_Label_Background_Color6), "border": var(--fdInfo_Label_Border_Color6), "color": var(--fdInfo_Label_Color6)),
-  "7": ("background": var(--fdInfo_Label_Background_Color7), "border": var(--fdInfo_Label_Border_Color7), "color": var(--fdInfo_Label_Color7)),
-  "8": ("background": var(--fdInfo_Label_Background_Color8), "border": var(--fdInfo_Label_Border_Color8), "color": var(--fdInfo_Label_Color8)),
-  "9": ("background": var(--fdInfo_Label_Background_Color9), "border": var(--fdInfo_Label_Border_Color9), "color": var(--fdInfo_Label_Color9)),
-  "10": ("background": var(--fdInfo_Label_Background_Color10), "border": var(--fdInfo_Label_Border_Color10), "color": var(--fdInfo_Label_Color10))
+  "1": (
+    "background": var(--fdInfo_Label_Background_Color1),
+    "border": var(--fdInfo_Label_Border_Color1),
+    "color": var(--fdInfo_Label_Color1)
+  ),
+  "2": (
+    "background": var(--fdInfo_Label_Background_Color2),
+    "border": var(--fdInfo_Label_Border_Color2),
+    "color": var(--fdInfo_Label_Color2)
+  ),
+  "3": (
+    "background": var(--fdInfo_Label_Background_Color3),
+    "border": var(--fdInfo_Label_Border_Color3),
+    "color": var(--fdInfo_Label_Color3)
+  ),
+  "4": (
+    "background": var(--fdInfo_Label_Background_Color4),
+    "border": var(--fdInfo_Label_Border_Color4),
+    "color": var(--fdInfo_Label_Color4)
+  ),
+  "5": (
+    "background": var(--fdInfo_Label_Background_Color5),
+    "border": var(--fdInfo_Label_Border_Color5),
+    "color": var(--fdInfo_Label_Color5)
+  ),
+  "6": (
+    "background": var(--fdInfo_Label_Background_Color6),
+    "border": var(--fdInfo_Label_Border_Color6),
+    "color": var(--fdInfo_Label_Color6)
+  ),
+  "7": (
+    "background": var(--fdInfo_Label_Background_Color7),
+    "border": var(--fdInfo_Label_Border_Color7),
+    "color": var(--fdInfo_Label_Color7)
+  ),
+  "8": (
+    "background": var(--fdInfo_Label_Background_Color8),
+    "border": var(--fdInfo_Label_Border_Color8),
+    "color": var(--fdInfo_Label_Color8)
+  ),
+  "9": (
+    "background": var(--fdInfo_Label_Background_Color9),
+    "border": var(--fdInfo_Label_Border_Color9),
+    "color": var(--fdInfo_Label_Color9)
+  ),
+  "10": (
+    "background": var(--fdInfo_Label_Background_Color10),
+    "border": var(--fdInfo_Label_Border_Color10),
+    "color": var(--fdInfo_Label_Color10)
+  )
 );
 
 .#{$block} {
+  --fdInfoLabel_Margin: 0.25rem;
+  --fdInfoLabel_Padding: 0.375rem;
+  --fdInfoLabel_Icon_Size: 0.75rem;
+  --fdInfoLabel_Height: var(--fdInfo_Label_Height);
+  --fdInfoLabel_Label_Font_Size: var(--sapFontSize);
+  --fdInfoLabel_Color: var(--fdInfoLabel_Color_Accent_7);
+  --fdInfoLabel_Border_Radius: var(--fdInfo_Label_Border_Radius);
+  --fdInfoLabel_Border_Color: var(--fdInfo_Label_Background_Color7);
+  --fdInfoLabel_Background: var(--fdInfoLabel_Background_Color_Accent_7);
+
   @include fd-reset();
-  @include fd-ellipsis();
 
-  display: inline-flex;
-  align-items: center;
-  border-radius: 0.5rem;
-  line-height: normal;
-  height: $fd-info-label-height;
-  max-width: 100%;
-  font-size: $fd-info-label-font-size;
-  letter-spacing: 0.0125rem;
-  text-align: center;
-  padding: 0 0.3125rem;
-  border-width: $fd-info-label-border-width;
-  border-style: $fd-info-label-border-style;
+  @include fd-inline-flex-vertical-center() {
+    gap: var(--fdInfoLabel_Margin);
+  }
 
-  /* Managed in modifiers */
-  background-color: var(--fdInfo_Label_Background_Color);
-  color: var(--fdInfo_Label_Color);
-  border-color: var(--fdInfo_Label_Border_Color);
+  width: auto;
+  color: var(--fdInfoLabel_Color);
+  height: var(--fdInfoLabel_Height);
+  padding: 0 var(--fdInfoLabel_Padding);
+  border-radius: var(--fdInfoLabel_Border_Radius);
+  background-color: var(--fdInfoLabel_Background);
+  border: 0.0625rem solid var(--fdInfoLabel_Border_Color);
 
   &__icon {
-    @include fd-icon-element-base() {
-      @include fd-set-margin-right($fd-info-label-icon-text-spacing);
-
-      @include fd-only-child() {
-        margin: 0;
-      }
-
-      font-size: inherit;
-    }
-
-    &::before {
-      vertical-align: bottom;
+    @include fd-icon-selector() {
+      color: inherit;
+      height: var(--fdInfoLabel_Height);
+      font-size: var(--fdInfoLabel_Icon_Size);
+      line-height: var(--fdInfoLabel_Height);
     }
   }
 
   &__text {
     @include fd-reset();
-    @include fd-ellipsis();
 
-    font-size: inherit;
-    font-weight: bold;
     color: inherit;
-    line-height: 1;
+    font-size: var(--fdInfoLabel_Label_Font_Size);
+    font-family: var(--sapFontSemiboldDuplexFamily);
   }
 
   @each $set-name, $color-set in $color-accents {
     &--accent-color-#{$set-name} {
-      --fdInfo_Label_Background_Color: #{map_get($color-set, "background")};
-      --fdInfo_Label_Color: #{map_get($color-set, "color")};
-      --fdInfo_Label_Border_Color: #{map_get($color-set, "border")};
-
-      @include fd-icon-overwrite() {
-        border-color: map_get($color-set, "border");
-      }
+      --fdInfoLabel_Background: #{map_get($color-set, "background")};
+      --fdInfoLabel_Color: #{map_get($color-set, "color")};
+      --fdInfoLabel_Border_Color: #{map_get($color-set, "border")};
     }
   }
 
   &--display {
-    --fdInfo_Label_Background_Color: var(--fdInfo_Label_Display_Background_Color);
-    --fdInfo_Label_Color: var(--fdInfo_Label_Display_Text_Color);
-    --fdInfo_Label_Border_Color: var(--fdInfo_Label_Display_Border_Color);
-  }
-
-  &--numeric {
-    padding: 0 0.1875rem;
-    font-weight: bold;
-  }
-
-  &--icon {
-    font-size: $fd-info-label-font-size;
-    padding: 0 0.1875rem;
-    line-height: 1rem;
+    --fdInfoLabel_Padding: 0.25rem;
+    --fdInfoLabel_Margin: 0.125rem;
+    --fdInfoLabel_Icon_Size: 0.625rem;
+    --fdInfoLabel_Label_Font_Size: var(--sapFontSmallSize);
+    --fdInfoLabel_Height: var(--fdInfo_Label_Height_Display);
+    --fdInfoLabel_Border_Radius: var(--fdInfo_Label_Border_Radius_Display);
   }
 }
