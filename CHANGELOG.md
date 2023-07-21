@@ -1,3 +1,18 @@
+# [0.30.0-rc.47](https://github.com/SAP/fundamental-styles/compare/v0.30.0-rc.46...v0.30.0-rc.47) (2023-07-21)
+
+
+### Bug Fixes
+
+* **styles:** update Info Label to latest Horizon design [ci visual] ([#4707](https://github.com/SAP/fundamental-styles/issues/4707)) ([8747ab1](https://github.com/SAP/fundamental-styles/commit/8747ab1a0ef7193059123823e5345f3f48857d38))
+
+
+### BREAKING CHANGES
+
+* **styles:** removed fd-info-label--icon modifier class
+removed fd-info-label--numeric modifier class
+
+
+
 # [0.30.0-rc.46](https://github.com/SAP/fundamental-styles/compare/v0.30.0-rc.45...v0.30.0-rc.46) (2023-07-21)
 
 
