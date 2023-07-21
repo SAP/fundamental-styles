@@ -73,10 +73,7 @@ export const DefaultDialog = () => defaultDialogExampleHtml;
 DefaultDialog.storyName = 'Default';
 DefaultDialog.parameters = {
   docs: {
-    story: {
-      iframeHeight: 400
-    },
-    description: {
+   description: {
       story: 'The default dialog component displays a container comprising a header, title, and subheader; followed by a body (content area), loader, footer and action buttons. The container also features a resize handle in the bottom-right corner of the footer, see resizable dialog below for more information.'
     }
   }
@@ -84,10 +81,7 @@ DefaultDialog.parameters = {
 export const Sizes = () => sizesExampleHtml;
 Sizes.parameters = {
   docs: {
-    story: {
-      iframeHeight: 800
-    },
-    description: {
+   description: {
       story: `
 By default, dialog’s body has no horizontal paddings. If horizontal paddings are added, they should behave responsively based on dialog's window width.
 
@@ -127,10 +121,7 @@ Note: On mobile devices, the bar component should be used with the \`fd-bar--coz
 export const Resizable = () => resizableExampleHtml;
 Resizable.parameters = {
   docs: {
-    story: {
-      iframeHeight: 300
-    },
-    description: {
+   description: {
       story: `
 Dialog can also be displayed with a resize handle by adding a span element with a \`fd-dialog__resize-handle\` class inside the \`fd-dialog__content\` container.
 
@@ -141,10 +132,7 @@ Note: This feature should be enabled for desktop screens only.`
 export const Draggable = () => draggableExampleHtml;
 Draggable.parameters = {
   docs: {
-    story: {
-      iframeHeight: 300
-    },
-    description: {
+   description: {
       story: `
 Dialog can be draggable, enabling the user to drag the container around with their cursor on a desktop screen.
 
@@ -159,10 +147,7 @@ Dialog can be draggable, enabling the user to drag the container around with the
 export const Selectable = () => selectableExampleHtml;
 Selectable.parameters = {
   docs: {
-    story: {
-      iframeHeight: 500
-    },
-    description: {
+   description: {
       story: `The selectable dialog displays list items in the content area that can be selected. Users can search items from the list, select one or more items, and finalize their choice by selecting the _Select_ button. To display the selectable dialog, include the \`fd-list is-compact\` class to the body's container element.
         `
     }
@@ -171,10 +156,7 @@ Selectable.parameters = {
 export const Loading = () => loadingExampleHtml;
 Loading.parameters = {
   docs: {
-    story: {
-      iframeHeight: 500
-    },
-    description: {
+   description: {
       story: 'Dialog can display a busy indicator that signals to the user that data is loading. To display a busy indicator in the content area, add the `fd-busy-indicator--l` to the `fd-dialog__loader` container element. Although the busy indicator is large in this example, you can choose a smaller size. See **Busy Indicator** for more sizes.'
     }
   }

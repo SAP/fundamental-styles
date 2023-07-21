@@ -32,10 +32,7 @@ export const Primary = () => primaryExampleHtml;
 Primary.storyName = 'Default';
 Primary.parameters = {
   docs: {
-    story: {
-      iframeHeight: 250
-    },
-    description: {
+   description: {
       story: `File Uploader is a composition of the \`fd-input\` class and the \`fd-button\` one. The button triggers the action of searching for
             the file which needs to be uploaded. The input field shows the predetermined title i.e. Choose a file for upload.`
     }
@@ -45,10 +42,7 @@ export const Selected = () => selectedExampleHtml;
 Selected.storyName = 'After Selecting';
 Selected.parameters = {
   docs: {
-    story: {
-      iframeHeight: 250
-    },
-    description: {
+   description: {
       story: 'Once the user selects files, update the input and the hidden div to include the file names. The hidden div will announce the file names only once when the value changes.'
     }
   }
@@ -56,10 +50,7 @@ Selected.parameters = {
 export const Status = () => statusExampleHtml;
 Status.parameters = {
   docs: {
-    story: {
-      iframeHeight: 250
-    },
-    description: {
+   description: {
       story: 'For Status File Uploader apply the corresponding status class `is-success, is-error, is-warning, is-information ` modifier to the input element.'
     }
   }
@@ -68,10 +59,7 @@ export const FileUploaderWithFiles = () => fileUploaderWithFilesExampleHtml;
 FileUploaderWithFiles.storyName = `File Uploader with File List`;
 FileUploaderWithFiles.parameters = {
   docs: {
-    story: {
-      iframeHeight: 250
-    },
-    description: {
+   description: {
       story: `<span class="fd-info-label fd-info-label--accent-color-3"><span class="fd-info-label__text">non-fiori 3</span></span><span style="margin-right: 0.5rem;"></span><span class="fd-info-label fd-info-label--accent-color-4"><span class="fd-info-label__text">CX</span></span>`
     }
   }

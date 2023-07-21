@@ -34,11 +34,6 @@ export default {
 - You can define a height for the popover. If the content exceeds the height, a scroll bar is displayed.
 
 `,
-    docs: {
-      story: {
-        iframeHeight: 350
-      }
-    },
     tags: ['f3', 'a11y', 'theme']
   }
 };
@@ -46,9 +41,6 @@ export const Variants = () => variantsExampleHtml;
 Variants.storyName = 'Body variants';
 Variants.parameters = {
   docs: {
-    story: {
-      iframeHeight: 200
-    },
     description: {
       story: `There are several variants of the popover body that can be displayed depending on the use case.
 
@@ -66,9 +58,6 @@ export const ControlExamples = () => controlExamplesExampleHtml;
 ControlExamples.storyName = 'Control variants';
 ControlExamples.parameters = {
   docs: {
-    story: {
-      iframeHeight: 200
-    },
     description: {
       story: `As popover's triggers buttons, images, icons, and more can be used. In the example below, the **Avatar** and **Icon** act as triggers.
         `
@@ -78,9 +67,6 @@ ControlExamples.parameters = {
 export const Scrollable = () => scrollableExampleHtml;
 Scrollable.parameters = {
   docs: {
-    story: {
-      iframeHeight: 200
-    },
     description: {
       story: `When the content overflows, the popover body can become scrollable. To achieve this, add element with class \`fd-popover-body__wrapper\` inside the popover body element.
         `

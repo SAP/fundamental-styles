@@ -40,9 +40,6 @@ Use the **DatePicker** if:
 export const TodaySelectionButton = () => todaySelectionButtonExampleHtml;
 TodaySelectionButton.parameters = {
   docs: {
-    story: {
-      iframeHeight: 500
-    },
     description: {
       story: `
 The today selection button in the footer selects today's date in the system or user-preferred timezone and closes the DatePicker popover.
@@ -54,9 +51,6 @@ This date value then appears in the DatePicker's input field. If using a compact
 export const TodayNavigationButton = () => todayNavigationButtonExampleHtml;
 TodayNavigationButton.parameters = {
   docs: {
-    story: {
-      iframeHeight: 450
-    },
     description: {
       story: `
 The today navigation button in the header navigates focus to today's date in the system or user-preferred timezone, selects it but does not close the DatePicker popover.
@@ -72,9 +66,6 @@ export const MobileLandscape = () => mobileLandscapeExampleHtml;
 MobileLandscape.storyName = 'Mobile landscape mode with today navigation';
 MobileLandscape.parameters = {
   docs: {
-    story: {
-      iframeHeight: 400
-    },
     description: {
       story: 'The additional `Today` button displayed in the navigation part of the calendar, sets the focus to the current date. The landscape sizing and roation of thw the date picker is done by adding the `fd-calendar--mobile-landscape` class.'
     }
@@ -84,9 +75,6 @@ export const MobilePortrait = () => mobilePortraitExampleHtml;
 MobilePortrait.storyName = 'Mobile portrait mode with today navigation';
 MobilePortrait.parameters = {
   docs: {
-    story: {
-      iframeHeight: 500
-    },
     description: {
       story: 'Similar to the mobile landscape example, mobile portrait mode has a `Today` button. To make date picker visible in portrait mode, add the`fd-calendar--mobile-portrait` class.'
     }

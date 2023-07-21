@@ -104,10 +104,7 @@ export const SSize = () => `<div class="fd-container fd-form-layout-grid-contain
 SSize.storyName = 'Small';
 SSize.parameters = {
   docs: {
-    story: {
-      iframeHeight: 450
-    },
-    description: {
+   description: {
       story: `
 The small form grid uses a single-column layout and is best used for mobile screens and dialogs. The form groups are positioned below each other in a single column and the labels are positioned above the fields to avoid the labels from truncating.
 
@@ -196,10 +193,7 @@ export const MSizeDefault = () => `<div class="fd-container fd-form-layout-grid-
 MSizeDefault.storyName = 'Default [M]';
 MSizeDefault.parameters = {
   docs: {
-    story: {
-      iframeHeight: 370
-    },
-    description: {
+   description: {
       story: `
 The default medium form grid uses a single-column layout. The labels are positioned in the same row as the corresponding input field or value, and form groups are positioned below each other.
 
@@ -289,10 +283,7 @@ export const MSizeSplitScreen = () => `<div class="fd-container fd-form-layout-g
 MSizeSplitScreen.storyName = 'Split screen [M]';
 MSizeSplitScreen.parameters = {
   docs: {
-    story: {
-      iframeHeight: 370
-    },
-    description: {
+   description: {
       story: `
 When the form is positioned in the details part of a split screen, the medium form grid should use a label-field ratio of 4:7:1.
 
@@ -382,10 +373,7 @@ export const MSizeFullScreenApp = () => `<div class="fd-container fd-form-layout
 MSizeFullScreenApp.storyName = 'Full screen [M]';
 MSizeFullScreenApp.parameters = {
   docs: {
-    story: {
-      iframeHeight: 450
-    },
-    description: {
+   description: {
       story: `
 If the form is being viewed in a full-screen app, the medium form grid should use a single-column layout.
 ####Label-field ratio
@@ -474,10 +462,7 @@ export const MSizeFullScreenAppLongLabel = () => `<div class="fd-container fd-fo
 MSizeFullScreenAppLongLabel.storyName = 'Long label [M]';
 MSizeFullScreenAppLongLabel.parameters = {
   docs: {
-    story: {
-      iframeHeight: 450
-    },
-    description: {
+   description: {
       story: `
 The medium form width can go down to 601 px, providing insufficient space for longer labels and fields. If long labels or input values are necessary, use the label-field ratio of 4:8:0.
 ####Label-field ratio
@@ -567,10 +552,7 @@ export const LSizeDefault = () => `<div class="fd-container fd-form-layout-grid-
 LSizeDefault.storyName = 'Default [L]';
 LSizeDefault.parameters = {
   docs: {
-    story: {
-      iframeHeight: 500
-    },
-    description: {
+   description: {
       story: `
 The default large form grid uses a two-column layout. The form groups are placed side-by-side, displaying all information on one screen to avoid scrolling. In these columns, the labels are positioned in the same row as the corresponding input field or value. Therefore, the form groups adopt the Z layout, directing users’ attention to each row instead of columns.
 ####Label-field ratio
@@ -660,10 +642,7 @@ export const LSizeSingleFormGroup = () => `<div class="fd-container fd-form-layo
 LSizeSingleFormGroup.storyName = 'Single form [L]';
 LSizeSingleFormGroup.parameters = {
   docs: {
-    story: {
-      iframeHeight: 530
-    },
-    description: {
+   description: {
       story: `
 If the form contains a single form group, you can use a single-column layout.
 
@@ -825,10 +804,7 @@ export const LSizeMultipleFormGroup = () => `<div class="fd-container fd-form-la
 LSizeMultipleFormGroup.storyName = 'Multiple form [L]';
 LSizeMultipleFormGroup.parameters = {
   docs: {
-    story: {
-      iframeHeight: 590
-    },
-    description: {
+   description: {
       story: `
 If the form contains multiple form groups, you can use a two-column layout.
 
@@ -920,10 +896,7 @@ export const XlDefault = () => `<div class="fd-container fd-form-layout-grid-con
 XlDefault.storyName = 'Default [XL]';
 XlDefault.parameters = {
   docs: {
-    story: {
-      iframeHeight: 500
-    },
-    description: {
+   description: {
       story: `
 The default extra-large form grid uses a two-column layout. The form groups are placed side-by-side, displaying all information on one screen to avoid scrolling. In these columns, the labels are positioned in the same row as the corresponding input field or value. The form groups adopt the Z layout.
 ####Label-field ratio
@@ -1013,10 +986,7 @@ export const XlSingleFormGroup = () => `<div class="fd-container fd-form-layout-
 XlSingleFormGroup.storyName = 'Single form [XL]';
 XlSingleFormGroup.parameters = {
   docs: {
-    story: {
-      iframeHeight: 500
-    },
-    description: {
+   description: {
       story: `
 If the form contains a single form group, you can use a single-column layout.
 
@@ -1182,10 +1152,7 @@ export const XlDoubleFormGroup = () => `<div class="fd-container fd-form-layout-
 XlDoubleFormGroup.storyName = 'Double form [XL]';
 XlDoubleFormGroup.parameters = {
   docs: {
-    story: {
-      iframeHeight: 650
-    },
-    description: {
+   description: {
       story: `
 If the form contains multiple form groups, you can use a two-column layout.
 
@@ -1410,10 +1377,7 @@ export const XlMultipleFormGroup = () => `<div class="fd-container fd-form-layou
 XlMultipleFormGroup.storyName = 'Multiple form [XL]';
 XlMultipleFormGroup.parameters = {
   docs: {
-    story: {
-      iframeHeight: 850
-    },
-    description: {
+   description: {
       story: `
 ####Label-field ratio
 The extra-large form grid is organized into a **12:12:0** label-field ratio for multiple form groups.
@@ -1513,10 +1477,7 @@ export const ColumnRecommended = () => `<h2>Layout 1</h2>
 ColumnRecommended.storyName = 'Recommended layouts';
 ColumnRecommended.parameters = {
   docs: {
-    story: {
-      iframeHeight: 400
-    },
-    description: {
+   description: {
       story: `
 These are the recommended layouts that display the ideal amount of columns for each screen size.
 
@@ -1619,10 +1580,7 @@ export const ColumnPossible = () => `<h2>Layout 4</h2>
 ColumnPossible.storyName = 'Layout variations';
 ColumnPossible.parameters = {
   docs: {
-    story: {
-      iframeHeight: 400
-    },
-    description: {
+   description: {
       story: `
 Although not the best solutions, these layouts are also possible.
 
@@ -1689,10 +1647,7 @@ export const ColumnNotRecommended = () => `<h1>XL3-L2-M2-S1</h1>
 ` + docsStyles;
 ColumnNotRecommended.parameters = {
   docs: {
-    story: {
-      iframeHeight: 400
-    },
-    description: {
+   description: {
       story: `
 The layout that is not recommended for a form group are XL3-L2-M2-S1
 `
@@ -1756,10 +1711,7 @@ export const Vertical = () => `<h2>Vertical layout at every breakpoint</h2>
 Vertical.storyName = 'Vertical layout';
 Vertical.parameters = {
   docs: {
-    story: {
-      iframeHeight: 590
-    },
-    description: {
+   description: {
       story: `
 Form could be displayed in vertical (form controls below labels) or horizontal layout (form controls on the same line as labels).
 When the form displayed in vertical layout there should be a gap after each form item.

@@ -27,9 +27,6 @@ Note: If an icon needs to be selected or have any interaction states, it is reco
 export const Sizes = () => sizesExampleHtml;
 Sizes.parameters = {
   docs: {
-    story: {
-      iframeHeight: 250
-    },
     description: {
       story: 'Icons don’t have predefined sizes because they align with the font size value. They are vector graphics, meaning they can be easily resized without compromising their appearance. And because icons are essentially a font, there are unlimited sizes.'
     }
@@ -65,9 +62,6 @@ export const TntIcons = () => {
 };
 TntIcons.parameters = {
   docs: {
-    story: {
-      iframeHeight: 200
-    },
     description: {
       story: 'For icons of <b>SAP-icons-TNT</b> font-family add the `sap-icon-TNT--{icon-name}` modifier class identifying the icon style to the `sap-icon-TNT` class. For example, for an <i>exceptions</i> icon, add `sap-icon-TNT sap-icon-TNT--exceptions` with the desired font size value.'
     }

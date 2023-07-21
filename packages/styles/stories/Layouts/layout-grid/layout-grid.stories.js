@@ -36,9 +36,6 @@ To use the grid, the user must use all of the \`fd-container\`, \`fd-row\`, and 
 export const DifferentSizeColumns = () => differentSizeColumnsExampleHtml;
 DifferentSizeColumns.parameters = {
   docs: {
-    story: {
-      iframeHeight: 1150
-    },
     description: {
       story: 'To define the size of that column use the `fd-col--x` modifier, where `x` can go from 1-12'
     }
@@ -47,9 +44,6 @@ DifferentSizeColumns.parameters = {
 export const Responsiveness = () => responsivenessExampleHtml;
 Responsiveness.parameters = {
   docs: {
-    story: {
-      iframeHeight: 320
-    },
     description: {
       story: 'You can define different column sizes for each inflection point. In this example for extra large the cells are taking 4 columns out of 12 `fd-col-xl--4`; 4 columns out of 12 in large `fd-col-lg--4`; 6 columns out of 12 in medium `fd-col-md--6`, and 12 out of 12 in small `fd-col--12`'
     }
@@ -58,9 +52,6 @@ Responsiveness.parameters = {
 export const Nesting = () => nestingExampleHtml;
 Nesting.parameters = {
   docs: {
-    story: {
-      iframeHeight: 150
-    },
     description: {
       story: 'Add an extra `fd-row` class in between inner rows when using nesting. It will add a gutter in between rows.'
     }
@@ -69,9 +60,6 @@ Nesting.parameters = {
 export const Offset = () => offsetExampleHtml;
 Offset.parameters = {
   docs: {
-    story: {
-      iframeHeight: 450
-    },
     description: {
       story: 'To add an offset to the left of the column for all sizes use the `--offset-x` modifier. X will be the size of your choice. If the column after the offset col no longer fits in parent container it will switch to the next line. To add an offset to the left of the column for certain sizes and above use the `--offset-x--size` modifier, where size is either s,m,l,xl. To make the offset after and not before use the `--offset-after-x--size` modifier.'
     }
@@ -80,9 +68,6 @@ Offset.parameters = {
 export const NoHorizontalGap = () => noHorizontalGapExampleHtml;
 NoHorizontalGap.parameters = {
   docs: {
-    story: {
-      iframeHeight: 300
-    },
     description: {
       story: 'To remove gutters between columns apply the `fd-container--no-horizontal-gap` modifier to the container.'
     }
@@ -91,9 +76,6 @@ NoHorizontalGap.parameters = {
 export const NoVerticalGap = () => noVerticalGapExampleHtml;
 NoVerticalGap.parameters = {
   docs: {
-    story: {
-      iframeHeight: 300
-    },
     description: {
       story: 'To remove gutters between rows apply the `fd-container--no-vertical-gap` modifier to the container.'
     }
@@ -102,9 +84,6 @@ NoVerticalGap.parameters = {
 export const NoGap = () => noGapExampleHtml;
 NoGap.parameters = {
   docs: {
-    story: {
-      iframeHeight: 300
-    },
     description: {
       story: 'To remove gutters between rows and columns apply both the `fd-container--no-vertical-gap` and `fd-container--no-horizontal-gap` modifiers to the container.'
     }
@@ -113,9 +92,6 @@ NoGap.parameters = {
 export const AutoAdjusting = () => autoAdjustingExampleHtml;
 AutoAdjusting.parameters = {
   docs: {
-    story: {
-      iframeHeight: 300
-    },
     description: {
       story: 'To make the column auto adjust and occupy the remaining space of the row use the `--full` modifier. There is a minimum width of 1/12 columns'
     }

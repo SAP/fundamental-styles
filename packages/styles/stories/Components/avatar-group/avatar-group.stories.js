@@ -72,7 +72,6 @@ The **AvatarGroup** is available in two orientations:
 `,
     docs: {
       story: {
-        iframeHeight: 250
       }
     },
     tags: ['a11y', 'f3', 'theme']
@@ -82,7 +81,6 @@ export const IndividualType = () => individualTypeExampleHtml;
 IndividualType.parameters = {
   docs: {
     story: {
-      iframeHeight: 250
     },
     description: {
       story: `The avatar individual type consists of avatars and an overflow shape, depending on the use case. Each displayed avatar and the overflow shape have their own, individual click area. <br>For Individual type add the \`fd-avatar-group--individual-type\` modifier class to the \`fd-avatar-group\` base class.`
@@ -93,7 +91,6 @@ export const IndividualTypeVertical = () => individualTypeVerticalExampleHtml;
 IndividualTypeVertical.parameters = {
   docs: {
     story: {
-      iframeHeight: 250
     },
     description: {
       story: `For vertical orientation of the Avatar Group add the \`fd-avatar-group--vertical\` modifier class to the \`fd-avatar-group\` base class.`
@@ -104,7 +101,6 @@ export const GroupType = () => groupTypeExampleHtml;
 GroupType.parameters = {
   docs: {
     story: {
-      iframeHeight: 250
     },
     description: {
       story: `The avatar group type is one single click/tap area. This means that the entire control is the click/tap area. <br>For Group type add the \`fd-avatar-group--group-type\` modifier class to the \`fd-avatar-group\` base class.`
@@ -115,7 +111,6 @@ export const GroupTypeVertical = () => groupTypeVerticalExampleHtml;
 GroupTypeVertical.parameters = {
   docs: {
     story: {
-      iframeHeight: 250
     },
     description: {
       story: `For vertical orientation of the Avatar Group add the \`fd-avatar-group--vertical\` modifier class to the \`fd-avatar-group\` base class.`
@@ -126,7 +121,6 @@ export const GroupTypeInteractionStates = () => groupTypeInteractionStatesExampl
 GroupTypeInteractionStates.parameters = {
   docs: {
     story: {
-      iframeHeight: 250
     },
     description: {
       story: ``

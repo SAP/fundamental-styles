@@ -34,9 +34,6 @@ If the entries are not validated by the application, users can also enter custom
 export const AsFormItem = () => asFormItemExampleHtml;
 AsFormItem.parameters = {
   docs: {
-    story: {
-      iframeHeight: 700
-    },
     description: {
       story: `
 Note that the popover body width is restricted to a max of 37.5rem to avoid readability issues in large-width popovers.
@@ -48,9 +45,6 @@ Applications are free to override this in their custom styles if needed and own 
 export const TwoItemsAndItemsGrouping = () => twoItemsAndItemsGroupingExampleHtml;
 TwoItemsAndItemsGrouping.parameters = {
   docs: {
-    story: {
-      iframeHeight: 500
-    },
     description: {
       story: `
 The \`ComboBox\` component can be customized by adding additional information in additional columns as seen below.
@@ -62,9 +56,6 @@ In cases where the list items need to be categorized into groups, it is possible
 export const MatchPopoverBodySize = () => matchPopoverBodySizeExampleHtml;
 MatchPopoverBodySize.parameters = {
   docs: {
-    story: {
-      iframeHeight: 250
-    },
     description: {
       story: `
 The default length size of the popover body is often different from the text length.
@@ -91,9 +82,6 @@ This can also be done by using the \`.is-readonly\` class or \`aria-readonly="tr
 export const Semantic = () => semanticExampleHtml;
 Semantic.parameters = {
   docs: {
-    story: {
-      iframeHeight: 250
-    },
     description: {
       story: `
 For a complete list of states supported by the \`combobox\` component, please see the documentation for the form or select components.
@@ -108,9 +96,6 @@ To add text in the \`body\` of the component, simply include your text in the \`
 export const Mobile = () => mobileExampleHtml;
 Mobile.parameters = {
   docs: {
-    story: {
-      iframeHeight: 600
-    },
     description: {
       story: `
 For mobile devices, or tablets, combobox component should be displayed in fullscreen mode.

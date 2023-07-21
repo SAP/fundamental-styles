@@ -97,8 +97,7 @@ export const MultiInput = () => `${localStyles}
 MultiInput.storyName = 'Multi-Input';
 MultiInput.parameters = {
   docs: {
-    iframeHeight: 500,
-    description: {
+   description: {
       story: 'Add the `.fn-input--multi-input` modifier classes to `.fn-input` for a Multi-input element. '
     }
   }

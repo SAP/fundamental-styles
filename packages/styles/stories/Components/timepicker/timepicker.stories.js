@@ -70,9 +70,6 @@ export const Hours24Cozy = () => hours24CozyExampleHtml;
 Hours24Cozy.storyName = 'Time Picker with 24-hour Clock Face';
 Hours24Cozy.parameters = {
   docs: {
-    story: {
-      iframeHeight: 500
-    },
     description: {
       story: `The 24-hour clock face shows an additional inner circle for the times from 13:00 to 24:00 hours.
 `
@@ -83,9 +80,6 @@ export const Hours12Cozy = () => hours12CozyExampleHtml;
 Hours12Cozy.storyName = 'Time Picker with 12-hour Clock Face';
 Hours12Cozy.parameters = {
   docs: {
-    story: {
-      iframeHeight: 500
-    },
     description: {
       story: `The 12-hour clock face shows only one circle and an AM/PM switch is displayed.
 `
@@ -96,9 +90,6 @@ export const MinutesCozy = () => minutesCozyExampleHtml;
 MinutesCozy.storyName = 'Minutes Face';
 MinutesCozy.parameters = {
   docs: {
-    story: {
-      iframeHeight: 500
-    },
     description: {
       story: `When the minutes value is selected in the time display, the minutes clock face is shown.`
     }
@@ -108,9 +99,6 @@ export const SecondsCozy = () => secondsCozyExampleHtml;
 SecondsCozy.storyName = 'Seconds Face';
 SecondsCozy.parameters = {
   docs: {
-    story: {
-      iframeHeight: 500
-    },
     description: {
       story: `When the seconds value is selected in the time display, the seconds clock face is shown.`
     }
@@ -119,9 +107,6 @@ SecondsCozy.parameters = {
 export const Mobile = () => mobileExampleHtml;
 Mobile.parameters = {
   docs: {
-    story: {
-      iframeHeight: 500
-    },
     description: {
       story: `On phones, focusing on the time input field opens a time input popover. The user can then use the mobile keyboard to enter the time. For the 12-hour time format, the popover also offers an AM/PM switch.
 `

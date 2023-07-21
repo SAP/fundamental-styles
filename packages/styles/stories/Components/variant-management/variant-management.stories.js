@@ -33,9 +33,6 @@ export const HeaderSizes = () => {
 HeaderSizes.storyName = 'Header sizes';
 HeaderSizes.parameters = {
   docs: {
-    story: {
-      iframeHeight: 700
-    },
     description: {
       story: `
 <p>By using the title control the variant management control can be set to any header level size.
@@ -50,9 +47,6 @@ export const DirtyLabel = () => dirtyLabelExampleHtml;
 DirtyLabel.storyName = 'Dirty state';
 DirtyLabel.parameters = {
   docs: {
-    story: {
-      iframeHeight: 700
-    },
     description: {
       story: `
 <p>Variant management supports dirty indicator in cases when selected variant has been modified but not saved.</p>

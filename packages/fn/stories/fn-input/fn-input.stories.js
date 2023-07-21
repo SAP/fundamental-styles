@@ -99,7 +99,6 @@ export const DefaultInput = () => `${localStyles}
 `;
 DefaultInput.parameters = {
   docs: {
-    iframeHeight: 500
   }
 };
 export const InfoInput = () => `${localStyles}
@@ -159,7 +158,6 @@ export const InfoInput = () => `${localStyles}
 `;
 InfoInput.parameters = {
   docs: {
-    iframeHeight: 500,
     description: {
       story: 'Add the `.fn-input--info` modifier class to `.fn-input` for Info Input.'
     }
@@ -222,7 +220,6 @@ export const CriticalInput = () => `${localStyles}
 `;
 CriticalInput.parameters = {
   docs: {
-    iframeHeight: 500,
     description: {
       story: 'Add the `.fn-input--critical` modifier class to `.fn-input` for Critical Input.'
     }
@@ -285,7 +282,6 @@ export const NegativeInput = () => `${localStyles}
 `;
 NegativeInput.parameters = {
   docs: {
-    iframeHeight: 500,
     description: {
       story: 'Add the `.fn-input--negative` modifier class to `.fn-input` for Negative Input.'
     }
@@ -348,7 +344,6 @@ export const PositiveInput = () => `${localStyles}
 `;
 PositiveInput.parameters = {
   docs: {
-    iframeHeight: 500,
     description: {
       story: 'Add the `.fn-input--positive` modifier class to `.fn-input` for Positive Input.'
     }

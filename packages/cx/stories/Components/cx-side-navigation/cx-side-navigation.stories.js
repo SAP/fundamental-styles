@@ -175,7 +175,6 @@ CozyWideIcons.storyName = 'Cosy Wide With Icon, 1 Level';
 
 CozyWideIcons.parameters = {
     docs: {
-        story: { iframeHeight: 400 },
         description: {
             story: `
         `
@@ -249,7 +248,6 @@ CozyWideTextOnly.storyName = 'Cosy Wide Text Only, 1 Level';
 
 CozyWideTextOnly.parameters = {
     docs: {
-        story: { iframeHeight: 400 },
         description: {
             story: '<b>Important: </b>This type of Side Navigation does not have <code>Narrow</code> variant.'
         }
@@ -398,7 +396,6 @@ export const DynamicWidth = () => `<div class="fdx-side-nav fdx-side-nav--dynami
 
 DynamicWidth.parameters = {
     docs: {
-        story: { iframeHeight: 400 },
         description: {
             story: `Side Navigation can react dynamically to long label texts in navigational items. In such case the width of the Side Navigation is adapted by the longest label. The label does not wrap or truncate. Use the modifier class <code>.fdx-side-nav--dynamic-width</code> for Side Navigation with dynamic width.
 
@@ -520,7 +517,6 @@ CosyWideTextOnlyLevels.storyName = 'Cosy Wide Text Only, 3 Levels';
 
 CosyWideTextOnlyLevels.parameters = {
     docs: {
-        story: { iframeHeight: 400 },
         description: {
             story: `<b>Important: </b>This type of Side Navigation does not have <code>Narrow</code> variant.
         `
@@ -640,7 +636,6 @@ CosyWideIconsLevels.storyName = 'Cosy Wide With Icons, 3 Levels, Collapse Only';
 
 CosyWideIconsLevels.parameters = {
     docs: {
-        story: { iframeHeight: 550 },
         description: {
             story: `
         `
@@ -764,7 +759,6 @@ CosyWideIconsLevelsMultiClick.storyName = 'Cosy Wide With Icons, 3 Levels, Navig
 
 CosyWideIconsLevelsMultiClick.parameters = {
     docs: {
-        story: { iframeHeight: 550 },
         description: {
             story: `
         `
@@ -861,7 +855,6 @@ CompactWideIcons.storyName = 'Compact Wide With Icons, Level 2 Collapsed';
 
 CompactWideIcons.parameters = {
     docs: {
-        story: { iframeHeight: 550 },
         description: {
             story: `For compact Side Navigation apply the <code>.fdx-side-nav--compact</code> modifier class with <code>.fdx-side-nav</code> base class, and <code>.fdx-nested-list--compact</code> modifier class with <code>.fdx-nested-list</code> base class.
         `
@@ -960,7 +953,6 @@ CompactWideIconsNavCollapse.storyName = 'Compact Wide With Icons, Level 2 Collap
 
 CompactWideIconsNavCollapse.parameters = {
     docs: {
-        story: { iframeHeight: 550 },
         description: {
             story: `For compact Side Navigation apply the <code>.fdx-side-nav--compact</code> modifier class with <code>.fdx-side-nav</code> base class, and <code>.fdx-nested-list--compact</code> modifier class with <code>.fdx-nested-list</code> base class.
         `
@@ -1041,7 +1033,6 @@ CosyNarrow.storyName = 'Cosy Narrow, Levels 2 and 3 in Popover Hidden';
 
 CosyNarrow.parameters = {
     docs: {
-        story: { iframeHeight: 500 },
         description: {
             story: `For <code>Narrow</code> variant of Side Navigation apply <code>.fdx-side-nav--narrow</code> modifier class to <code>.fdx-side-nav</code> base class.
         `
@@ -1269,7 +1260,6 @@ export const CosyNarrowPopover = () => `<h3>Level 1 Header</h3>
 
 CosyNarrowPopover.parameters = {
     docs: {
-        story: { iframeHeight: 1000 },
         description: {
             story: `
         `
@@ -1353,7 +1343,6 @@ CosyNarrowPopoverDynamicWidth.storyName = 'Cosy Narrow Popover with Dynamic Widt
 
 CosyNarrowPopoverDynamicWidth.parameters = {
     docs: {
-        story: { iframeHeight: 1000 },
         description: {
             story: `Side Navigation Popover can react dynamically to long label texts in navigational items. In such case the width of the Side Navigation Popover is adapted by the longest label. The label does not wrap or truncate. Use the modifier class <code>.fdx-side-nav__popover-body--dynamic-width</code> modifier class with <code>.fdx-side-nav__popover-body</code> base class for Side Navigation Popover with dynamic width.
         `
@@ -1432,7 +1421,6 @@ export const CompactNarrow = () => `<div class="fdx-side-nav fdx-side-nav--compa
 
 CompactNarrow.parameters = {
     docs: {
-        story: { iframeHeight: 500 },
         description: {
             story: `For <code>Narrow</code> variant of Side Navigation in compact mode apply <code>.fdx-side-nav--narrow</code> and <code>.fdx-side-nav--compact</code> modifier classed to <code>.fdx-side-nav</code> base class.
 `
@@ -1665,7 +1653,6 @@ CozyWideIconsSearch.storyName = 'Cosy Wide With Icon and Filter Integration, 1 L
 
 CozyWideIconsSearch.parameters = {
     docs: {
-        story: { iframeHeight: 400 },
         description: {
             story: `
         `

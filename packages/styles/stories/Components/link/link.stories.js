@@ -113,9 +113,6 @@ export const Primary = () => `${localStyles}
 Primary.storyName = 'Types';
 Primary.parameters = {
   docs: {
-    story: {
-      iframeHeight: 300
-    },
     description: {
       story: `There are different types of links for various use cases.
 

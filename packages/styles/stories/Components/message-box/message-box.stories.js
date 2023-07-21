@@ -56,14 +56,10 @@ Note: Include two action buttons in the message box when the user's decision is 
     tags: ['f3', 'a11y', 'theme']
   }
 };
-const messageBoxHeight = 200;
 export const Structure = () => structureExampleHtml;
 Structure.storyName = 'Default';
 Structure.parameters = {
   docs: {
-    story: {
-      iframeHeight: messageBoxHeight
-    },
     description: {
       story: `
 The default message box displays a small dialog with a title, message text and action buttons. Use the default if the message does not fit with one of the semantic types.
@@ -75,9 +71,6 @@ export const Types = () => typesExampleHtml;
 Types.storyName = 'Semantic types';
 Types.parameters = {
   docs: {
-    story: {
-      iframeHeight: messageBoxHeight * 6.5
-    },
     description: {
       story: `
 The message box can be displayed with various semantic colors and icons, indicating the type of message being relayed.
@@ -97,9 +90,6 @@ Information | \`fd-message-box--information\` | Information messages provide inf
 export const Responsive = () => responsiveExampleHtml;
 Responsive.parameters = {
   docs: {
-    story: {
-      iframeHeight: messageBoxHeight * 4
-    },
     description: {
       story: `
 The message box has 1rem padding all around the body, and the header and footer both inherit their padding from the **Bar** component. Responsive horizontal padding can be applied to the header, body and footer of the message box; however, the amount depends on the screen width.

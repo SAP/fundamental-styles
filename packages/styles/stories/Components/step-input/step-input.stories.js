@@ -34,9 +34,6 @@ export const Primary = () => primaryExampleHtml;
 Primary.storyName = 'Default';
 Primary.parameters = {
   docs: {
-    story: {
-      iframeHeight: 300
-    },
     description: {
       story: `The default step input displays an input field with a plus and minus icon on opposing sides to either increase or decrease the value. It is displayed in cozy mode, which is ideal for mobile and tablet screens.
         `
@@ -46,9 +43,6 @@ Primary.parameters = {
 export const States = () => statesExampleHtml;
 States.parameters = {
   docs: {
-    story: {
-      iframeHeight: 300
-    },
     description: {
       story: `Step input can be displayed in various states such as Success, Information, Error and Warning.
 
@@ -68,9 +62,6 @@ Warning | \`is-warning\`
 export const Focused = () => focusedExampleHtml;
 Focused.parameters = {
   docs: {
-    story: {
-      iframeHeight: 300
-    },
     description: {
       story: `To enable the focused state add the \`.is-focus\` class to the main element with class \`.fd-step-input\`.
         `
@@ -80,9 +71,6 @@ Focused.parameters = {
 export const Disabled = () => disabledExampleHtml;
 Disabled.parameters = {
   docs: {
-    story: {
-      iframeHeight: 300
-    },
     description: {
       story: `Step input can be disabled by adding the \`is-disabled\` class to the main element.
         `
@@ -93,9 +81,6 @@ export const ReadOnly = () => readOnlyExampleHtml;
 ReadOnly.storyName = 'Read-only';
 ReadOnly.parameters = {
   docs: {
-    story: {
-      iframeHeight: 300
-    },
     description: {
       story: `Step input can be displayed as read-only by adding the \`is-readonly\` class to the main element.
         `

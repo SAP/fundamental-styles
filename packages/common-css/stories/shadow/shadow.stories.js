@@ -14,7 +14,6 @@ export default {
 <code><b>$type</b></code> can be one of the following: <code>level-0 | level-1 | level-2 | level-3 | text | contrast-text | group-title-text | emphasized-text | header | shell | none</code>
 
       `,
-        docs: { story: {iframeHeight: 500 }}
     }
 };
 
@@ -61,7 +60,6 @@ export const ShadowExample = () => `${localStyles}
 ShadowExample.storyName = 'Shadow Types';
 ShadowExample.parameters = {
     docs: {
-        story: {iframeHeight: 500},
         description: {
             story: `<table style="width: 100%; border-collapse: collapse; margin-top: 1rem;">
     <tr>

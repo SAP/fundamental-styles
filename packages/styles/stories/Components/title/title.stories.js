@@ -15,9 +15,6 @@ export const Levels = () => levelsExampleHtml;
 Levels.storyName = 'Semantic Level';
 Levels.parameters = {
   docs: {
-    story: {
-      iframeHeight: 250
-    },
     description: {
       story: 'There are 6 semantic levels of a heading element. There should only be one H1 on a page, and headings should only appear in ascending order without skipping a level; i.e. even if there are only 3 levels on a page, the order must be H1-H2-H3, and no other levels used.'
     }
@@ -26,9 +23,6 @@ Levels.parameters = {
 export const VisualLevel = () => visualLevelExampleHtml;
 VisualLevel.parameters = {
   docs: {
-    story: {
-      iframeHeight: 250
-    },
     description: {
       story: 'If a design requires it, the visual level can be set to something different than the semantic level. This allows the sequential order to be maintained while providing flexibility in appearance.'
     }
@@ -38,9 +32,6 @@ export const Elision = () => elisionExampleHtml;
 Elision.storyName = 'Text Elision';
 Elision.parameters = {
   docs: {
-    story: {
-      iframeHeight: 250
-    },
     description: {
       story: 'By default the Title text overflow will be elided when longer than its container.'
     }
@@ -50,9 +41,6 @@ export const Wrapping = () => wrappingExampleHtml;
 Wrapping.storyName = 'Text Wrapping';
 Wrapping.parameters = {
   docs: {
-    story: {
-      iframeHeight: 300
-    },
     description: {
       story: 'Add the `--wrap` modifier to cause the overflow text to wrap instead.'
     }

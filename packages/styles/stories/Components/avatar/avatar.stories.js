@@ -63,9 +63,6 @@ const localStyles = `
 export const Icon = () => iconExampleHtml;
 Icon.parameters = {
   docs: {
-    story: {
-      iframeHeight: 200
-    },
     description: {
       story: 'The icon avatar can be used to display non-interactive icons. If you want the icon to be interactive, use the **Button** component with an icon inside instead. <br><br>When using the icon avatar for illustrative purposes only, include `role="presentation"` in the element.'
     }
@@ -74,9 +71,6 @@ Icon.parameters = {
 export const Initials = () => initialsExampleHtml;
 Initials.parameters = {
   docs: {
-    story: {
-      iframeHeight: 200
-    },
     description: {
       story: 'The initials avatar can display up to three alphabetical characters representing the first and last name(s) of a person, for example: MvV for Marjolein van Veen. The order in which the first and last name(s) are displayed depends on the language-specific settings.<br><br> When there is no equivalent text for the avatar, include `aria-label` in the element. This isn’t necessary if the avatar is used for illustrative purposes only. See **Icon** above.'
     }
@@ -85,9 +79,6 @@ Initials.parameters = {
 export const Circle = () => circleExampleHtml;
 Circle.parameters = {
   docs: {
-    story: {
-      iframeHeight: 200
-    },
     description: {
       story: 'A circle style can be displayed by adding the `fd-avatar--circle` modifier class to the `fd-avatar` base class.'
     }
@@ -96,9 +87,6 @@ Circle.parameters = {
 export const BackgroundImage = () => backgroundImageExampleHtml;
 BackgroundImage.parameters = {
   docs: {
-    story: {
-      iframeHeight: 200
-    },
     description: {
       story: `
 A background image can be displayed by adding the \`fd-avatar--thumbnail\` modifier class.
@@ -114,9 +102,6 @@ Changing the default \`background-size: cover\` to \`background-size: contain\` 
 export const Transparent = () => transparentExampleHtml;
 Transparent.parameters = {
   docs: {
-    story: {
-      iframeHeight: 200
-    },
     description: {
       story: 'A transparent style can be displayed by adding the `fd-avatar--transparent` modifier class to the `fd-avatar` base class. This can be useful for displaying descriptive illustrations and decorative pictures, for example.'
     }
@@ -125,9 +110,6 @@ Transparent.parameters = {
 export const PlaceholderBackground = () => placeholderBackgroundExampleHtml;
 PlaceholderBackground.parameters = {
   docs: {
-    story: {
-      iframeHeight: 200
-    },
     description: {
       story: 'An avatar with a placeholder background can be displayed by adding the `fd-avatar--placeholder` modifier class.'
     }
@@ -136,9 +118,6 @@ PlaceholderBackground.parameters = {
 export const TileIconBackground = () => tileIconBackgroundExampleHtml;
 TileIconBackground.parameters = {
   docs: {
-    story: {
-      iframeHeight: 200
-    },
     description: {
       story: 'An avatar with a tile icon background can be displayed by adding the `fd-avatar--tile` modifier class.'
     }
@@ -147,9 +126,6 @@ TileIconBackground.parameters = {
 export const AccentColors = () => accentColorsExampleHtml;
 AccentColors.parameters = {
   docs: {
-    story: {
-      iframeHeight: 200
-    },
     description: {
       story: 'To change the accent background color, add the `fd-avatar--accent-color-*` class with the number indicating the desired color. The color options include numbers ranging from 1 to 10, for example: `fd-avatar--accent-color-10`.'
     }
@@ -158,9 +134,6 @@ AccentColors.parameters = {
 export const AccentColorsShellHeaderContext = () => accentColorsShellHeaderContextExampleHtml;
 AccentColorsShellHeaderContext.parameters = {
   docs: {
-    story: {
-      iframeHeight: 200
-    },
     description: {
       story: 'When used in Shell header context, an additional modifier class `fd-avatar--shell` should be added to the `fd-avatar` base class and the modifier class specifying the accent color `fd-avatar--accent-color-*`.'
     }
@@ -169,9 +142,6 @@ AccentColorsShellHeaderContext.parameters = {
 export const ZoomIcon = () => zoomIconExampleHtml;
 ZoomIcon.parameters = {
   docs: {
-    story: {
-      iframeHeight: 200
-    },
     description: {
       story: `If an avatar is clickable, you can show an optional badge and icon. 
             The badge indicates that the avatar is interactive and the icon indicates the action triggered by clicking the avatar. This feature gives users visual affordance of the available action, and is particularly useful for images.`
@@ -181,9 +151,6 @@ ZoomIcon.parameters = {
 export const ValueStates = () => valueStatesExampleHtml;
 ValueStates.parameters = {
   docs: {
-    story: {
-      iframeHeight: 200
-    },
     description: {
       story: `Value States can be added to the Avatar badge. <br>For <b>positive</b> value state use the \`.fd-avatar__zoom-icon--positive\` modifier class with the \`fd-avatar__zoom-icon\` base class. <br>For <b>caution</b> value state apply the \`.fd-avatar__zoom-icon--caution\` modifier class. <br>The <b>negative</b> value state can be achieved with \`.fd-avatar__zoom-icon--negative\` modifier class. <br><b>Information</b> value state would require adding \`.fd-avatar__zoom-icon--information\` to the \`fd-avatar__zoom-icon\` base class.`
     }
@@ -192,9 +159,6 @@ ValueStates.parameters = {
 export const Borders = () => bordersExampleHtml;
 Borders.parameters = {
   docs: {
-    story: {
-      iframeHeight: 200
-    },
     description: {
       story: 'You can add a very subtle border to the avatar with the `fd-avatar--border` modifier class.'
     }
@@ -455,9 +419,6 @@ export const Interactive = () => `${localStyles}
 `;
 Interactive.parameters = {
   docs: {
-    story: {
-      iframeHeight: 200
-    },
     description: {
       story: ``
     }
