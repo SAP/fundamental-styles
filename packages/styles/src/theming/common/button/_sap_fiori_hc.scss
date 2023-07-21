@@ -10,4 +10,21 @@
 
   /** Menu */
   --fdButton_Menu_Emphasized_Margin: calc(var(--fdButton_Emphasized_Border_Width) * -1);
+
+  /** Tool Header */
+  --fdButton_ToolHeader_Border_Color_Normal: var(--sapButton_BorderColor);
+  --fdButton_ToolHeader_Border_Color_Hover: var(--sapButton_Hover_BorderColor);
+  --fdButton_ToolHeader_Border_Color_Active: var(--sapButton_Active_BorderColor);
+  --fdButton_ToolHeader_Border_Color_Focus: transparent;
+  --fdButton_ToolHeader_Border_Color_Disabled: var(--sapButton_Hover_BorderColor);
+  --fdButton_ToolHeader_Border_Radius_Focus: 0;
+  --fdButton_ToolHeader_Badge_Border_Color: var(--sapGroup_ContentBorderColor);
+
+  /** Nested */
+  --fdButton_Nested_Border_Color_Normal: var(--sapButton_BorderColor);
+  --fdButton_Nested_Border_Color_Hover: var(--sapButton_Hover_BorderColor);
+  --fdButton_Nested_Border_Color_Active: var(--sapButton_Active_BorderColor);
+  --fdButton_Nested_Border_Color_Focus: transparent;
+  --fdButton_Nested_Border_Color_Disabled: var(--sapButton_Hover_BorderColor);
+  --fdButton_Nested_Border_Radius_Focus: 0;
 }
