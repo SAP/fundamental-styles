@@ -75,7 +75,7 @@
     "@storybook/addon-docs": "7.0.27",
     "@storybook/addon-links": "7.0.27",
     "@storybook/addon-mdx-gfm": "7.0.27",
-    "@storybook/addon-storyshots": "7.0.27",
+    "@storybook/addon-storyshots": "7.1.0",
     "@storybook/addon-toolbars": "7.0.27",
     "@storybook/addon-viewport": "7.0.27",
     "@storybook/addons": "7.0.27",
