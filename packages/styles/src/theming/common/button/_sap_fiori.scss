@@ -39,4 +39,21 @@
   --fdButton_Menu_Separator_Display: none;
   --fdButton_Menu_Transparent_Separator_Height: 100%;
   --fdButton_Menu_Transparent_Separator_Display: block;
+
+  /** Tool Header */
+  --fdButton_ToolHeader_Border_Color_Normal: transparent;
+  --fdButton_ToolHeader_Border_Color_Hover: transparent;
+  --fdButton_ToolHeader_Border_Color_Active: transparent;
+  --fdButton_ToolHeader_Border_Color_Focus: transparent;
+  --fdButton_ToolHeader_Border_Color_Disabled: transparent;
+  --fdButton_ToolHeader_Border_Radius_Focus: 0.375rem;
+  --fdButton_ToolHeader_Badge_Border_Color: var(--sapShellColor);
+
+  /** Nested Button */
+  --fdButton_Nested_Border_Color_Normal: transparent;
+  --fdButton_Nested_Border_Color_Hover: transparent;
+  --fdButton_Nested_Border_Color_Active: transparent;
+  --fdButton_Nested_Border_Color_Focus: transparent;
+  --fdButton_Nested_Border_Color_Disabled: transparent;
+  --fdButton_Nested_Border_Radius_Focus: 0.75rem;
 }
