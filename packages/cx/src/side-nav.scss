@@ -13,6 +13,8 @@ $fd-side-nav-border-radius: 1rem;
   --fdSideNav_First_Item_Margin_Top: 0.25rem;
   --fdSideNav_Utility_Margin_Bottom: 1rem;
 
+  overflow-y: hidden;
+
   @include fd-reset();
 
   @include fd-flex(column) {
@@ -37,6 +39,7 @@ $fd-side-nav-border-radius: 1rem;
       align-items: center;
     }
 
+    display: inline-flex;
     overflow-y: scroll;
     overflow-x: hidden;
 
