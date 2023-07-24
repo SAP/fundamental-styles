@@ -1,3 +1,12 @@
+# [0.30.0-rc.51](https://github.com/SAP/fundamental-styles/compare/v0.30.0-rc.50...v0.30.0-rc.51) (2023-07-24)
+
+
+### Features
+
+* **styles:** add BTP Tool Header and Nested Buttons to Button component [ci visual] ([#4710](https://github.com/SAP/fundamental-styles/issues/4710)) ([9eaf455](https://github.com/SAP/fundamental-styles/commit/9eaf455e371563fcc29af22ec1740feaed821a2e))
+
+
+
 # [0.30.0-rc.50](https://github.com/SAP/fundamental-styles/compare/v0.30.0-rc.49...v0.30.0-rc.50) (2023-07-23)
 
 
