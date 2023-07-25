@@ -4,6 +4,7 @@ import placementExampleHtml from "./placement.example.html?raw";
 import scrollableExampleHtml from "./scrollable.example.html?raw";
 import controlExamplesExampleHtml from "./control-examples.example.html?raw";
 import variantsExampleHtml from "./variants.example.html?raw";
+import controlExamplesBtpExampleHtml from "./control-examples-btp.example.html?raw";
 import '../../../src/avatar.scss';
 import '../../../src/bar.scss';
 import '../../../src/button.scss';
@@ -118,6 +119,19 @@ Resizable.parameters = {
   docs: {
     description: {
       story: ``
+    }
+  }
+};
+
+export const ControlExamplesBtp = () => controlExamplesBtpExampleHtml;
+ControlExamplesBtp.storyName = 'BTP Popover';
+ControlExamplesBtp.parameters = {
+  docs: {
+    description: {
+      story: `This extension of Popover is used by components and patterns in the BTP area. Apply the <code>.fd-popover--btp</code> modifier class to <code>.fd-popover</code> base class. <br>
+      To add padding to the Popover body use the <code>.fd-popover__body--padding</code> modifier class together with <code>.fd-popover__body</code> base class. <br>
+      The content of the footer can be centered by using the <code>.fd-popover__body-footer--center</code> modifier. 
+        `
     }
   }
 };

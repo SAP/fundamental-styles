@@ -3,51 +3,51 @@
 $block: #{$fd-namespace}-notification;
 
 .#{$block} {
-  // variables
-  $fd-notification-max-width-m: 40rem !default;
-  $fd-notification-background-color: var(--sapList_Background) !default;
-  $fd-notification-box-shadow: var(--sapContent_Shadow0) !default;
+  // Notification
+  --fdNotification_Max_Width: 40rem;
+  --fdNotification_Border_Radius: 0.25rem;
+  --fdNotification_Background: var(--sapList_Background);
+  --fdNotification_Box_Shadow: var(--sapContent_Shadow0);
 
-  $fd-notification-border-radius: 0.25rem !default;
-  $fd-notification-group-border-radius-first-child: 0.25rem 0.25rem 0 0 !default;
-  $fd-notification-group-border-radius-last-child: 0 0 0.25rem 0.25rem !default;
+  // Notification Body
+  --fdNotification_Item_Background: var(--sapList_Background);
+  --fdNotification_Item_Box_Shadow: var(--sapContent_Shadow0);
+  --fdNotification_Item_Border_Radius: 0.25rem;
+  --fdNotification_Item_Max_Width: 40rem;
+  --fdNotification_Item_Paddign_Y: 1rem;
+  --fdNotification_Item_Paddign_Left: 1rem;
+  --fdNotification_Item_Paddign_Right: 0.5rem;
+  --fdNotification_Item_Spacing: 1rem;
+
+  // Notification Indicator
+  --fdNotification_Indicator_Color: var(--sapErrorColor);
+
+  // Notification Title
+  --fdNotification_Item_Title_Margin_Bottom: 0.25rem;
+  --fdNotification_Item_Title_Line_Height: 1.25rem;
+  --fdNotification_Item_Title_Color: var(--sapTextColor);
+  --fdNotification_Item_Title_Font_Family: var(--sapFontFamily);
+  --fdNotification_Item_Title_Font_Weight: var(--sapFontHeaderWeight);
+
+  // Notification Paragraph
+  --fdNotification_Item_Paragraph_Font_Size: var(--sapFontSize);
+  --fdNotification_Item_Paragraph_Color: var(--sapTextColor);
+
+  // Notification Footer
+  --fdNotification_Item_Footer_Font_Size: var(--sapFontSize);
+  --fdNotification_Item_Footer_Color: var(--sapTextColor);
+
+  // Notification Group
+  --fdNotification_Group_Item_Border_Color: var(--fdNotification_Group_Item_Border_Color_Normal);
+  --fdNotification_Group_Item_Border_Bottom_Color: var(--fdNotification_Group_Item_Border_Bottom_Color_Normal);
+  --fdNotification_Group_Item_Children_Indicator_Display: none;
+  --fdNotification_Group_Item_Background: var(--sapList_Background);
+
+  // Notification Limit
+  --fdNotification_Limit_Padding: 1rem;
+
+  // Border
   $fd-notification-border: var(--sapList_BorderWidth) solid var(--sapList_BorderColor);
-
-  $fd-notification__footer-padding: 0 0 0 0.5rem;
-
-  $fd-notification-indicator-color-error: var(--sapErrorColor) !default;
-  $fd-notification-indicator-color-warning: var(--sapWarningColor) !default;
-  $fd-notification-indicator-color-success: var(--sapSuccessColor) !default;
-  $fd-notification-indicator-color-information: var(--sapInformationColor) !default;
-
-  $fd-notification-indicator-border-color-default: var(--sapNeutralBorderColor) !default;
-  $fd-notification-indicator-border-color-error: var(--sapErrorBorderColor) !default;
-  $fd-notification-indicator-border-color-warning: var(--sapWarningBorderColor) !default;
-  $fd-notification-indicator-border-color-success: var(--sapSuccessBorderColor) !default;
-  $fd-notification-indicator-border-color-information: var(--sapInformationBorderColor) !default;
-
-  $fd-notification-padding-left: 0.5rem;
-  $fd-notification-padding-right: 1rem;
-  $fd-notification-content-offset: 0.75rem;
-  $fd-notification-padding-mobile: 0.75rem;
-  $fd-notification-actions-offset: 0.5rem;
-  $fd-notification-reset-offset: 0;
-
-  // mixins
-
-  @mixin fd-priority-indicator($type) {
-    @include fd-icon('message-#{$type}');
-  }
-
-  @mixin fd-hide-on-mobile {
-    @include fd-screen(s) {
-      display: none !important;
-    }
-
-    @include fd-screen(m) {
-      display: inline-block !important;
-    }
-  }
 
   @mixin fd-notification-mobile() {
     .#{$block}__body:last-of-type {
@@ -59,63 +59,52 @@ $block: #{$fd-namespace}-notification;
 
   @include fd-reset();
 
-  background-color: $fd-notification-background-color;
-  box-shadow: $fd-notification-box-shadow;
-  border-radius: $fd-notification-border-radius;
-  margin-bottom: 1.25rem;
   width: 100%;
-  max-width: $fd-notification-max-width-m;
-  box-sizing: border-box;
-  padding: 1rem 0.5rem 1rem 1rem;
-
-  @include fd-rtl() {
-    padding-right: $fd-notification-padding-right;
-    padding-left: $fd-notification-padding-left;
-  }
+  max-width: var(--fdNotification_Max_Width);
+  background: var(--fdNotification_Background);
+  box-shadow: var(--fdNotification_Box_Shadow);
+  border-radius: var(--fdNotification_Border_Radius);
 
   &__body {
     @include fd-reset();
 
-    display: flex;
-    justify-content: space-between;
-
-    &--message {
-      padding-top: 1rem;
+    @include fd-flex() {
+      gap: var(--fdNotification_Item_Spacing);
     }
+
+    @include fd-set-paddings-y-equal(var(--fdNotification_Item_Paddign_Y));
+    @include fd-set-paddings-x(var(--fdNotification_Item_Paddign_Left), var(--fdNotification_Item_Paddign_Right));
+
+    position: relative;
+    background: var(--fdNotification_Item_Background);
+    border-radius: var(--fdNotification_Item_Border_Radius);
   }
 
   &__content {
     @include fd-reset();
 
+    @include fd-flex(column) {
+      gap: 0.5rem;
+    }
+
     width: 100%;
-    margin-left: $fd-notification-padding-right;
     overflow: auto;
-
-    @include fd-rtl() {
-      margin-right: $fd-notification-padding-right;
-      margin-left: $fd-notification-reset-offset;
-    }
-
-    &:first-child {
-      margin-left: 0;
-
-      @include fd-rtl() {
-        margin-right: 0;
-      }
-    }
   }
 
   .#{$block}__title {
     @include fd-reset();
     @include fd-line-clamp(2);
 
-    font-weight: var(--sapFontHeaderWeight);
     font-size: var(--sapFontHeader6Size);
-    max-height: 2.5rem;
-    margin-bottom: 0.25rem;
+    color: var(--fdNotification_Item_Title_Color);
+    font-weight: var(--fdNotification_Item_Title_Font_Weight);
+    line-height: var(--fdNotification_Item_Title_Line_Height);
+    font-family: var(--fdNotification_Item_Title_Font_Family);
+    margin-bottom: var(--fdNotification_Item_Title_Margin_Bottom);
+    max-height: calc(2 * var(--fdNotification_Item_Title_Line_Height));
 
     &--unread {
-      font-weight: bold;
+      --fdNotification_Item_Title_Font_Weight: bold;
     }
   }
 
@@ -123,20 +112,22 @@ $block: #{$fd-namespace}-notification;
     @include fd-reset();
     @include fd-line-clamp(2);
 
-    margin-top: 0.5rem;
     max-height: 2.75rem;
+    color: var(--fdNotification_Item_Paragraph_Color);
+    font-size: var(--fdNotification_Item_Paragraph_Font_Size);
   }
 
   .#{$block}__footer {
     @include fd-reset();
+    @include fd-flex();
 
-    display: flex;
-    margin-top: 0.5rem;
+    color: var(--fdNotification_Item_Footer_Color);
 
     &-content {
       @include fd-ellipsis();
 
       max-width: 50%;
+      font-size: var(--fdNotification_Item_Footer_Font_Size);
 
       &:only-child {
         max-width: 100%;
@@ -155,6 +146,12 @@ $block: #{$fd-namespace}-notification;
     }
   }
 
+  &__message-container {
+    @include fd-reset();
+    @include fd-set-paddings-y(1rem, 0);
+    @include fd-set-paddings-x(1rem, 0.5rem);
+  }
+
   &__header {
     @include fd-reset();
 
@@ -164,35 +161,17 @@ $block: #{$fd-namespace}-notification;
   &__actions {
     @include fd-reset();
 
-    display: flex;
-    align-items: flex-start;
-    padding-left: $fd-notification-padding-right;
-    flex: 1 0 auto; // IE11 fix for button
-
-    @include fd-rtl() {
-      padding-left: $fd-notification-reset-offset;
-      padding-right: $fd-notification-padding-right;
-    }
-
-    & > * {
-      margin-left: $fd-notification-actions-offset;
-
-      &:first-child {
-        margin-left: $fd-notification-reset-offset;
-      }
-
-      @include fd-rtl() {
-        margin-left: $fd-notification-reset-offset;
-        margin-right: $fd-notification-actions-offset;
-      }
+    @include fd-flex() {
+      gap: 0.5rem;
+      align-items: flex-start;
     }
   }
 
   &__limit {
     @include fd-reset();
 
-    padding: 1rem;
     text-align: center;
+    padding: var(--fdNotification_Limit_Padding);
 
     &--title {
       @include fd-reset();
@@ -211,110 +190,99 @@ $block: #{$fd-namespace}-notification;
 
   &__indicator {
     @include fd-reset();
+    @include fd-set-margin-right(0.5rem);
 
-    padding-right: 0.5rem;
-
-    @include fd-rtl() {
-      padding-right: 0;
-      padding-left: $fd-notification-padding-left;
-    }
+    color: var(--fdNotification_Indicator_Color);
 
     &--error {
-      @include fd-priority-indicator('error');
+      @include fd-icon('message-error');
 
-      color: $fd-notification-indicator-color-error;
+      --fdNotification_Indicator_Color: var(--sapErrorColor);
     }
 
     &--success {
-      @include fd-priority-indicator('success');
+      @include fd-icon('message-success');
 
-      color: $fd-notification-indicator-color-success;
+      --fdNotification_Indicator_Color: var(--sapSuccessColor);
     }
 
     &--warning {
-      @include fd-priority-indicator('warning');
+      @include fd-icon('message-warning');
 
-      color: $fd-notification-indicator-color-warning;
+      --fdNotification_Indicator_Color: var(--sapWarningColor);
     }
 
     &--information {
-      @include fd-priority-indicator('information');
+      @include fd-icon('message-information');
 
-      color: $fd-notification-indicator-color-information;
+      --fdNotification_Indicator_Color: var(--sapInformationColor);
     }
   }
 
-  &--group {
+  &__unread-indicator {
+    @include fd-reset();
+    @include fd-set-square(0.5rem);
+    @include fd-set-position-right(0.5rem);
+    @include fd-absolute-vertical-center();
+
+    position: absolute;
+    border-radius: 100%;
+    background-color: var(--fdNotification_Unread_Indicator_Background);
+  }
+
+  &.#{$block}--group {
     @include fd-reset();
     @include fd-notification-mobile();
+    @include fd-set-paddings-x-equal(0);
+
+    --fdNotification_Item_Border_Radius: 0;
 
     overflow: hidden;
     height: 100%;
 
     .#{$block}__body {
-      padding: 1rem 0.5rem 1rem 1rem;
       border-bottom: $fd-notification-border;
-
-      @include fd-rtl() {
-        padding-left: $fd-notification-padding-left;
-        padding-right: $fd-notification-padding-right;
-      }
     }
 
     .#{$block}__group-header {
       @include fd-reset();
+      @include fd-set-paddings-y(0.75rem, 0.25rem);
+      @include fd-set-paddings-x(1rem, 0.5rem);
 
-      display: flex;
-      align-items: baseline;
-      border-bottom: $fd-notification-border;
-      padding: 0.75rem 0.5rem 0.25rem 1rem;
-
-      @include fd-rtl() {
-        padding-left: 0.5rem;
-        padding-right: 1rem;
+      @include fd-flex() {
+        align-items: baseline;
       }
-    }
 
-    @include fd-rtl() {
-      padding-left: 0;
-      padding-right: 0;
+      border-bottom: $fd-notification-border;
     }
+  }
+
+  &.#{$block}--padding {
+    padding: 0.75rem;
   }
 
   &--mobile {
     @include fd-notification-mobile();
 
-    padding: $fd-notification-reset-offset;
+    padding: 0;
+    overflow: hidden;
 
     .#{$block}__indicator {
-      padding-right: 0.25rem;
-
-      @include fd-rtl() {
-        padding-right: $fd-notification-reset-offset;
-        padding-left: $fd-notification-padding-mobile;
-      }
+      @include fd-set-padding-right(0.25rem);
     }
 
     .#{$block}__group-header {
-      padding: 0.5rem 0.5rem 0 0.5rem;
+      @include fd-set-paddings-y(0.5rem, 0);
+      @include fd-set-paddings-x-equal(0.5rem);
     }
 
     .#{$block}__body {
-      padding: 1rem 0.5rem 1rem 0.75rem;
-
-      @include fd-rtl() {
-        padding-right: $fd-notification-padding-mobile;
-        padding-left: $fd-notification-padding-left;
-      }
+      @include fd-set-paddings-y-equal(1rem);
+      @include fd-set-paddings-x(0.75rem, 0.5rem);
     }
 
     .#{$block}__content {
-      margin-left: $fd-notification-content-offset;
-
-      @include fd-rtl() {
-        margin-right: $fd-notification-content-offset;
-        margin-left: $fd-notification-reset-offset;
-      }
+      @include fd-set-margin-left(0.75rem);
     }
   }
 
@@ -327,6 +295,175 @@ $block: #{$fd-namespace}-notification;
 
     &:last-of-type {
       border-bottom: none;
+    }
+  }
+
+  // BTP NOTIFICATION
+  &--btp {
+    // Notification
+    --fdNotification_Box_Shadow: none;
+    --fdNotification_Border_Radius: var(--sapElement_BorderCornerRadius);
+
+    // Notification Body
+    --fdNotification_Item_Box_Shadow: none;
+    --fdNotification_Item_Spacing: 0.75rem;
+    --fdNotification_Item_Paddign_Y: 0.75rem;
+    --fdNotification_Item_Paddign_Left: 1rem;
+    --fdNotification_Item_Paddign_Right: 1.5rem;
+    --fdNotification_Item_Border_Radius: var(--sapElement_BorderCornerRadius);
+
+    // Notification Paragraph
+    --fdNotification_Item_Paragraph_Font_Size: var(--sapFontSmallSize);
+
+    // Notification Title
+    --fdNotification_Item_Title_Margin_Bottom: 0;
+    --fdNotification_Item_Title_Line_Height: 1.25rem;
+    --fdNotification_Item_Title_Color: var(--sapTitleColor);
+    --fdNotification_Item_Title_Font_Family: var(--sapFontSemiboldFamily);
+
+    // Notification Footer
+    --fdNotification_Item_Footer_Font_Size: var(--sapFontSmallSize);
+
+    // Notification Limit
+    --fdNotification_Limit_Padding: 1.5rem 0;
+
+    .#{$block}__body {
+      cursor: pointer;
+      border: 0.0625rem solid var(--fdNotification_Item_Border_Color);
+
+      @include fd-hover() {
+        --fdNotification_Item_Background: var(--sapList_Hover_Background);
+      }
+
+      @include fd-active() {
+        --fdNotification_Item_Background: var(--sapList_Active_Background);
+        --fdNotification_Item_Title_Color: var(--fdNotification_Item_Title_Color_Active);
+        --fdNotification_Item_Paragraph_Color: var(--fdNotification_Item_Paragraph_Color_Active);
+        --fdNotification_Item_Footer_Color: var(--fdNotification_Item_Footer_Color_Active);
+
+        @include fd-focus() {
+          --fdNotification_Item_Background: var(--sapList_Active_Background);
+
+          outline: none;
+        }
+      }
+
+      @include fd-focus() {
+        --fdNotification_Item_Background: var(--sapList_Background);
+
+        outline: var(--sapContent_FocusStyle) var(--sapContent_FocusWidth) var(--sapContent_FocusColor);
+      }
+    }
+
+    &.#{$block}--group {
+      --fdNotification_Border_Radius: 0;
+      --fdNotification_Background: transparent;
+      --fdNotification_Item_Border_Radius: var(--sapElement_BorderCornerRadius);
+
+      overflow: visible;
+
+      .#{$block}__group-header {
+        @include fd-set-paddings-x-equal(0.75rem);
+        @include fd-set-paddings-y-equal(0.5rem);
+
+        @include fd-flex-vertical-center() {
+          gap: 0.4375rem;
+          justify-content: space-between;
+        }
+
+        @include fd-icon-selector() {
+          @include fd-flex-center();
+
+          color: inherit;
+          width: 0.75rem;
+          height: 0.75rem;
+          font-size: 0.75rem;
+          display: var(--fdNotification_Group_Item_Children_Indicator_Display);
+        }
+
+        height: 2rem;
+        cursor: pointer;
+        min-width: 20rem;
+        max-width: 24rem;
+        margin-bottom: 0.125rem;
+        color: var(--fdNotification_Group_Item_Color);
+        transition: var(--fdNotification_Group_Item_Transition);
+        background: var(--fdNotification_Group_Item_Background);
+        border-radius: var(--fdNotification_Group_Item_Border_Radius);
+        border: 0.0625rem solid var(--fdNotification_Group_Item_Border_Color);
+        border-bottom: 0.0625rem solid var(--fdNotification_Group_Item_Border_Bottom_Color);
+
+        @include fd-hover() {
+          --fdNotification_Group_Item_Children_Indicator_Display: inline-flex;
+          --fdNotification_Group_Item_Background: var(--sapList_Hover_Background);
+          --fdNotification_Group_Item_Border_Color: var(--fdNotification_Group_Item_Border_Color_Hover);
+        }
+
+        @include fd-active() {
+          --fdNotification_Group_Item_Children_Indicator_Display: inline-flex;
+          --fdNotification_Group_Item_Background: var(--sapList_Active_Background);
+          --fdNotification_Group_Item_Border_Color: var(--fdNotification_Group_Item_Border_Color_Active);
+          --fdNotification_Group_Item_Color: var(--fdNotification_Group_Item_Color_Active);
+
+          @include fd-focus() {
+            --fdNotification_Group_Item_Children_Indicator_Display: inline-flex;
+            --fdNotification_Group_Item_Background: var(--sapList_Active_Background);
+            --fdNotification_Group_Item_Border_Color: var(--fdNotification_Group_Item_Border_Color_Active);
+            --fdNotification_Group_Item_Border_Bottom_Color: var(--fdNotification_Group_Item_Border_Color_Active);
+
+            outline: none;
+          }
+        }
+
+        @include fd-focus() {
+          --fdNotification_Group_Item_Background: var(--sapList_Background);
+          --fdNotification_Group_Item_Border_Bottom_Color: transparent;
+          --fdNotification_Group_Item_Border_Color: var(--fdNotification_Group_Item_Border_Color_Focused);
+          --fdNotification_Group_Item_Children_Indicator_Display: inline-flex;
+
+          outline: var(--sapContent_FocusStyle) var(--sapContent_FocusWidth) var(--sapContent_FocusColor);
+        }
+
+        &--collapsed,
+        &.is-collapsed,
+        &.collapsed {
+          --fdNotification_Group_Item_Children_Indicator_Display: inline-flex;
+
+          max-height: 2rem;
+
+          @include fd-icon-selector() {
+            transform: rotate(-90deg);
+
+            @include fd-rtl() {
+              transform: rotate(90deg);
+            }
+          }
+        }
+      }
+
+      .#{$block}__group-header-title {
+        @include fd-reset();
+        @include fd-ellipsis();
+
+        width: 100%;
+        color: inherit;
+        font-size: var(--sapFontSmallSize);
+        font-weight: semibold;
+      }
+
+      .#{$block}__body {
+        margin-bottom: 0.125rem;
+        border: 0.0625rem solid var(--fdNotification_Item_Border_Color);
+
+        &:last-of-type {
+          border-bottom-left-radius: var(--sapElement_BorderCornerRadius);
+          border-bottom-right-radius: var(--sapElement_BorderCornerRadius);
+          margin-bottom: 1.5rem;
+          border-bottom: 0.0625rem solid var(--fdNotification_Item_Border_Color);
+
+          --fdNotification_Item_Border_Radius: var(--sapElement_BorderCornerRadius);
+        }
+      }
     }
   }
 }
