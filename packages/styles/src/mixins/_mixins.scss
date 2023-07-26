@@ -363,6 +363,12 @@
   transform: translateX(-50%);
 }
 
+@mixin fd-absolute-vertical-center {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
 @mixin fd-position-center($position: absolute) {
   position: $position;
   left: 50%;
