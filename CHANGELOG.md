@@ -1,3 +1,18 @@
+# [0.30.0-rc.54](https://github.com/SAP/fundamental-styles/compare/v0.30.0-rc.53...v0.30.0-rc.54) (2023-07-26)
+
+
+### Features
+
+* **styles:** add BTP Notifications [ci visual] ([#4723](https://github.com/SAP/fundamental-styles/issues/4723)) ([9588422](https://github.com/SAP/fundamental-styles/commit/9588422b1ccda7e32e91954fcc6c38837a837a46))
+
+
+### BREAKING CHANGES
+
+* **styles:** - removed fd-notification__body--message modifier class
+- added fd-notification__message-container applied on a div element that wraps the Message Strip in the Notification
+
+
+
 # [0.30.0-rc.53](https://github.com/SAP/fundamental-styles/compare/v0.30.0-rc.52...v0.30.0-rc.53) (2023-07-24)
 
 
