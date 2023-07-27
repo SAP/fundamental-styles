@@ -30,7 +30,7 @@ $block: #{$fd-namespace}-pagination;
 }
 
 .#{$block} {
-  --fdPaginationMoreWidth: 2.25rem;
+  --fdPaginationMoreWidth: var(--fdPagination_Placeholder_Dots_Width);
 
   @include fd-reset();
 
@@ -49,7 +49,11 @@ $block: #{$fd-namespace}-pagination;
 
   &__nav {
     @include fd-reset();
-    @include fd-flex-center();
+
+    @include fd-flex-center() {
+      gap: var(--fdPagination_Elements_Spacing);
+    }
+
     @include fd-set-margins-x-equal(auto);
   }
 
@@ -64,26 +68,14 @@ $block: #{$fd-namespace}-pagination;
     }
 
     @include fd-compact-or-condensed() {
-      --fdPaginationMoreWidth: 2rem;
+      --fdPaginationMoreWidth: var(--fdPagination_Placeholder_Dots_Width_Compact);
     }
-  }
-
-  &__more,
-  .#{$block}__button,
-  .#{$block}__link,
-  .#{$block}__label {
-    @include fd-set-margins-x-equal(0.125rem);
   }
 
   .#{$block}__input {
     width: auto;
     min-width: 2.5rem;
     text-align: center;
-
-    --fdInput_Field_Margin: 0.125rem;
-    --fdInput_Field_Compact_Margin: 0.125rem;
-
-    /** Hide arrows so the text will be centered in the input. */
 
     /** Firefox */
     -moz-appearance: textfield;
@@ -131,6 +123,10 @@ $block: #{$fd-namespace}-pagination;
 
     &--mobile {
       display: none;
+    }
+
+    @include fd-disabled() {
+      pointer-events: none;
     }
   }
 

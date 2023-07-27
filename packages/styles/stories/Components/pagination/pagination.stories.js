@@ -1,5 +1,4 @@
 import mobileExampleHtml from "./mobile.example.html?raw";
-import cozyExampleHtml from "./cozy.example.html?raw";
 import perPageExampleHtml from "./per-page.example.html?raw";
 import lastPageExampleHtml from "./last-page.example.html?raw";
 import middlePageExampleHtml from "./middle-page.example.html?raw";
@@ -51,7 +50,7 @@ Per page label | \`fd-pagination__per-page-label\` | Per page section label. Hid
 <br>
 <br>
       `,
-    tags: ['a11y', 'theme']
+    tags: ['btp',]
   }
 };
 export const FirstPage = () => firstPageExampleHtml;
@@ -92,15 +91,6 @@ PerPage.parameters = {
   docs: {
     description: {
       story: `Additionally, per page section can be displayed with select to specify which number of items should be shown on the every page.
-    `
-    }
-  }
-};
-export const Cozy = () => cozyExampleHtml;
-Cozy.parameters = {
-  docs: {
-    description: {
-      story: `Showing pagination in Cozy mode is preferable on tablets & mobile.
     `
     }
   }
