@@ -1,3 +1,12 @@
+# [0.30.0-rc.55](https://github.com/SAP/fundamental-styles/compare/v0.30.0-rc.54...v0.30.0-rc.55) (2023-07-28)
+
+
+### Bug Fixes
+
+* **styles:** added missing line for icons  ([#4726](https://github.com/SAP/fundamental-styles/issues/4726)) ([cf29efc](https://github.com/SAP/fundamental-styles/commit/cf29efc2b10c6490d1987ddb90dabaeeac666f2a))
+
+
+
 # [0.30.0-rc.54](https://github.com/SAP/fundamental-styles/compare/v0.30.0-rc.53...v0.30.0-rc.54) (2023-07-26)
 
 
