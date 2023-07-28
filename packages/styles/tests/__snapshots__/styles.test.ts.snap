@@ -2839,7 +2839,7 @@ exports[`Check stories > Components/Busy Indicator > Story Standard > Should mat
 "
 `;
 
-exports[`Check stories > Components/Button > Story BadgeOnButton > Should match snapshot 1`] = `
+exports[`Check stories > Components/Buttons/Button > Story BadgeOnButton > Should match snapshot 1`] = `
 "<div class=\\"fddocs-button-container\\">
     <button class=\\"fd-button\\">
         <span class=\\"fd-button__text\\">Badge Button</span>
@@ -2852,7 +2852,7 @@ exports[`Check stories > Components/Button > Story BadgeOnButton > Should match 
 </div>"
 `;
 
-exports[`Check stories > Components/Button > Story ButtonStates > Should match snapshot 1`] = `
+exports[`Check stories > Components/Buttons/Button > Story ButtonStates > Should match snapshot 1`] = `
 "
     <div class=\\"fddocs-button-container\\">
         <button class=\\"fd-button fd-button--emphasized\\">Normal State</button>
@@ -2898,7 +2898,7 @@ exports[`Check stories > Components/Button > Story ButtonStates > Should match s
 "
 `;
 
-exports[`Check stories > Components/Button > Story FocusableDisabled > Should match snapshot 1`] = `
+exports[`Check stories > Components/Buttons/Button > Story FocusableDisabled > Should match snapshot 1`] = `
 "
     <div class=\\"fddocs-button-container\\">
         <button aria-disabled=\\"true\\" aria-describedby=\\"fd-ONXuqucVcF\\" class=\\"fd-button is-disabled\\" type=\\"button\\">Disabled Focusable</button>
@@ -2907,29 +2907,86 @@ exports[`Check stories > Components/Button > Story FocusableDisabled > Should ma
 "
 `;
 
-exports[`Check stories > Components/Button > Story IconAndText > Should match snapshot 1`] = `
+exports[`Check stories > Components/Buttons/Button > Story IconAndText > Should match snapshot 1`] = `
 "
     <div class=\\"fddocs-button-container\\">
-        <button class=\\"fd-button fd-button--emphasized\\">Add to Cart</button>
-        <button class=\\"fd-button\\">Add to Cart</button>
-        <button class=\\"fd-button fd-button--transparent\\">Add to Cart</button>
-        <button class=\\"fd-button fd-button--ghost\\">Add to Cart</button>
-        <button class=\\"fd-button fd-button--positive\\">Approve</button>
-        <button class=\\"fd-button fd-button--negative\\">Reject</button>
-        <button class=\\"fd-button fd-button--attention\\">Attention</button>
+        <button class=\\"fd-button fd-button--emphasized\\">
+            <span class=\\"fd-button__text\\">Add to Cart</span>
+        </button>
+        <button class=\\"fd-button\\">
+            <span class=\\"fd-button__text\\">Add to Cart</span>
+        </button>
+        <button class=\\"fd-button fd-button--transparent\\">
+            <span class=\\"fd-button__text\\">Add to Cart</span>
+        </button>
+        <button class=\\"fd-button fd-button--ghost\\">
+            <span class=\\"fd-button__text\\">Add to Cart</span>
+        </button>
+        <button class=\\"fd-button fd-button--positive\\">
+            <span class=\\"fd-button__text\\">Approve</span>
+        </button>
+        <button class=\\"fd-button fd-button--negative\\">
+            <span class=\\"fd-button__text\\">Reject</span>
+        </button>
+        <button class=\\"fd-button fd-button--attention\\">
+            <span class=\\"fd-button__text\\">Attention</span>
+        </button>
         <br><br>
-        <button aria-label=\\"Add to cart\\" class=\\"fd-button fd-button--emphasized\\"><i class=\\"sap-icon--cart\\"></i></button>
-        <button aria-label=\\"Add to cart\\" class=\\"fd-button\\"><i class=\\"sap-icon--cart\\"></i></button>
-        <button aria-label=\\"Add to cart\\" class=\\"fd-button fd-button--transparent\\"><i class=\\"sap-icon--cart\\"></i></button>
-        <button aria-label=\\"Filter\\" class=\\"fd-button fd-button--ghost\\"><i class=\\"sap-icon--filter\\"></i></button>
-        <button aria-label=\\"Accept\\" class=\\"fd-button fd-button--positive\\"><i class=\\"sap-icon--accept\\"></i></button>
-        <button aria-label=\\"Decline\\" class=\\"fd-button fd-button--negative\\"><i class=\\"sap-icon--decline\\"></i></button>
-        <button aria-label=\\"Decline\\" class=\\"fd-button fd-button--attention\\"><i class=\\"sap-icon--decline\\"></i></button>
+        <button aria-label=\\"Add to cart\\" class=\\"fd-button fd-button--emphasized\\">
+            <i class=\\"sap-icon--cart\\"></i>
+        </button>
+        <button aria-label=\\"Add to cart\\" class=\\"fd-button\\">
+            <i class=\\"sap-icon--cart\\"></i>
+        </button>
+        <button aria-label=\\"Add to cart\\" class=\\"fd-button fd-button--transparent\\">
+            <i class=\\"sap-icon--cart\\"></i>
+        </button>
+        <button aria-label=\\"Filter\\" class=\\"fd-button fd-button--ghost\\">
+            <i class=\\"sap-icon--filter\\"></i>
+        </button>
+        <button aria-label=\\"Accept\\" class=\\"fd-button fd-button--positive\\">
+            <i class=\\"sap-icon--accept\\"></i>
+        </button>
+        <button aria-label=\\"Decline\\" class=\\"fd-button fd-button--negative\\">
+            <i class=\\"sap-icon--decline\\"></i>
+        </button>
+        <button aria-label=\\"Decline\\" class=\\"fd-button fd-button--attention\\">
+            <i class=\\"sap-icon--decline\\"></i>
+        </button>
+        <br><br>
+        <button aria-label=\\"Add to cart\\" class=\\"fd-button fd-button--emphasized\\">
+            <i class=\\"sap-icon--cart\\"></i>
+            <span class=\\"fd-button__text\\">Add to Cart</span>
+        </button>
+        <button aria-label=\\"Add to cart\\" class=\\"fd-button\\">
+            <i class=\\"sap-icon--cart\\"></i>
+            <span class=\\"fd-button__text\\">Add to Cart</span>
+        </button>
+        <button aria-label=\\"Add to cart\\" class=\\"fd-button fd-button--transparent\\">
+            <i class=\\"sap-icon--cart\\"></i>
+            <span class=\\"fd-button__text\\">Add to Cart</span>
+        </button>
+        <button aria-label=\\"Filter\\" class=\\"fd-button fd-button--ghost\\">
+            <i class=\\"sap-icon--filter\\"></i>
+            <span class=\\"fd-button__text\\">Filter</span>
+        </button>
+        <button aria-label=\\"Accept\\" class=\\"fd-button fd-button--positive\\">
+            <i class=\\"sap-icon--accept\\"></i>
+            <span class=\\"fd-button__text\\">Accept</span>
+        </button>
+        <button aria-label=\\"Decline\\" class=\\"fd-button fd-button--negative\\">
+            <i class=\\"sap-icon--decline\\"></i>
+            <span class=\\"fd-button__text\\">Decline</span>
+        </button>
+        <button aria-label=\\"Decline\\" class=\\"fd-button fd-button--attention\\">
+            <i class=\\"sap-icon--decline\\"></i>
+            <span class=\\"fd-button__text\\">Decline</span>
+        </button>
     </div>
 "
 `;
 
-exports[`Check stories > Components/Button > Story MenuButton > Should match snapshot 1`] = `
+exports[`Check stories > Components/Buttons/Button > Story MenuButton > Should match snapshot 1`] = `
 "<div class=\\"fddocs-button-container\\">
     <button class=\\"fd-button fd-button--emphasized fd-button--menu\\">
         <span class=\\"fd-button__text\\">Emphasized Button</span>
@@ -2985,7 +3042,7 @@ exports[`Check stories > Components/Button > Story MenuButton > Should match sna
 "
 `;
 
-exports[`Check stories > Components/Button > Story NestedButton > Should match snapshot 1`] = `
+exports[`Check stories > Components/Buttons/Button > Story NestedButton > Should match snapshot 1`] = `
 "<h4>normal</h4>
 <div class=\\"fddocs-container fddocs-button-container\\">
     <button class=\\"fd-button fd-button--nested\\" aria-label=\\"Close\\">
@@ -3025,18 +3082,112 @@ exports[`Check stories > Components/Button > Story NestedButton > Should match s
 "
 `;
 
-exports[`Check stories > Components/Button > Story SegmentedButton > Should match snapshot 1`] = `
-"<div class=\\"fddocs-button-container\\">
-    <div class=\\"fd-segmented-button\\" role=\\"group\\" aria-label=\\"Group label\\">
-        <button aria-label=\\"Survey\\" class=\\"fd-button\\"><i class=\\"sap-icon--survey\\" aria-pressed=\\"false\\"></i></button>
-        <button aria-label=\\"Chart\\" class=\\"fd-button fd-button--toggled\\" aria-pressed=\\"true\\"><i class=\\"sap-icon--pie-chart\\"></i></button>
-        <button aria-label=\\"Pool\\" class=\\"fd-button\\"><i class=\\"sap-icon--pool\\" aria-pressed=\\"false\\"></i></button>
-    </div>
+exports[`Check stories > Components/Buttons/Button > Story Styles > Should match snapshot 1`] = `
+"<div class=\\"fddocs-container fddocs-button-container\\">
+    <button class=\\"fd-button\\">
+        <span class=\\"fd-button__text\\">Default Button</span>
+    </button>
+    <button class=\\"fd-button fd-button--emphasized\\">
+        <span class=\\"fd-button__text\\">Emphasized Button</span>
+    </button>
+    <button class=\\"fd-button fd-button--ghost\\">
+        <span class=\\"fd-button__text\\">Ghost Button</span>
+    </button>
+    <button class=\\"fd-button fd-button--positive\\">
+        <span class=\\"fd-button__text\\">Positive Button</span>
+    </button>
+    <button class=\\"fd-button fd-button--negative\\">
+        <span class=\\"fd-button__text\\">Negative Button</span>
+    </button>
+    <button class=\\"fd-button fd-button--attention\\">
+        <span class=\\"fd-button__text\\">Attention Button</span>
+    </button>
+    <button class=\\"fd-button fd-button--transparent\\">
+        <span class=\\"fd-button__text\\">Transparent Button</span>
+    </button>
+</div>"
+`;
+
+exports[`Check stories > Components/Buttons/Button > Story Toggle > Should match snapshot 1`] = `
+"<h4>Inactive state of toggle button</h4>
+<div class=\\"fddocs-container fddocs-button-container\\">
+    <button class=\\"fd-button\\" aria-pressed=\\"false\\">Default Toggle</button>
+    <button class=\\"fd-button fd-button--emphasized\\" aria-pressed=\\"false\\">Emphasized Toggle</button>
+    <button class=\\"fd-button fd-button--ghost\\" aria-pressed=\\"false\\">Ghost Toggle</button>
+    <button class=\\"fd-button fd-button--positive\\" aria-pressed=\\"false\\">Positive Toggle</button>
+    <button class=\\"fd-button fd-button--negative\\" aria-pressed=\\"false\\">Negative Toggle</button>
+    <button class=\\"fd-button fd-button--attention\\" aria-pressed=\\"false\\">Attention Toggle</button>
+    <button class=\\"fd-button fd-button--transparent\\" aria-pressed=\\"false\\">Transparent Toggle</button>
 </div>
+<h4>Active (toggled) state of toggle button</h4>
+<div class=\\"fddocs-container fddocs-button-container\\">
+    <button class=\\"fd-button fd-button--toggled\\" aria-pressed=\\"true\\">Default Toggle</button>
+    <button class=\\"fd-button fd-button--emphasized fd-button--toggled\\" aria-pressed=\\"true\\">Emphasized Toggle</button>
+    <button class=\\"fd-button fd-button--ghost fd-button--toggled\\" aria-pressed=\\"true\\">Ghost Toggle</button>
+    <button class=\\"fd-button fd-button--positive fd-button--toggled\\" aria-pressed=\\"true\\">Positive Toggle</button>
+    <button class=\\"fd-button fd-button--negative fd-button--toggled\\" aria-pressed=\\"true\\">Negative Toggle</button>
+    <button class=\\"fd-button fd-button--attention fd-button--toggled\\" aria-pressed=\\"true\\">Attention Toggle</button>
+    <button class=\\"fd-button fd-button--transparent fd-button--toggled\\" aria-pressed=\\"true\\">Transparent Toggle</button>
+</div>
+<h4>Disabled Toggle button in active state</h4>
+<div class=\\"fddocs-container fddocs-button-container\\">
+    <button class=\\"fd-button fd-button--toggled\\" aria-pressed=\\"false\\" disabled>Default Toggle</button>
+    <button class=\\"fd-button fd-button--emphasized fd-button--toggled\\" aria-pressed=\\"false\\" disabled>Emphasized Toggle</button>
+    <button class=\\"fd-button fd-button--ghost fd-button--toggled\\" aria-pressed=\\"false\\" disabled>Ghost Toggle</button>
+    <button class=\\"fd-button fd-button--positive fd-button--toggled\\" aria-pressed=\\"false\\" disabled>Positive Toggle</button>
+    <button class=\\"fd-button fd-button--negative fd-button--toggled\\" aria-pressed=\\"false\\" disabled>Negative Toggle</button>
+    <button class=\\"fd-button fd-button--attention fd-button--toggled\\" aria-pressed=\\"false\\" disabled>Attention Toggle</button>
+    <button class=\\"fd-button fd-button--transparent fd-button--toggled\\" aria-pressed=\\"false\\" disabled>Transparent Toggle</button>
+</div>"
+`;
+
+exports[`Check stories > Components/Buttons/Button > Story ToolHeaderButton > Should match snapshot 1`] = `
+"<h4>normal</h4>
+<div class=\\"fddocs-container fddocs-button-container\\">
+    <button class=\\"fd-button fd-button--tool-header\\" aria-label=\\"Home\\">
+        <i class=\\"sap-icon--home\\" role=\\"presentation\\"></i>
+    </button>
+</div>
+
+<h4>hover</h4>
+<div class=\\"fddocs-container fddocs-button-container\\">
+    <button class=\\"fd-button fd-button--tool-header is-hover\\" aria-label=\\"Home\\">
+        <i class=\\"sap-icon--home\\" role=\\"presentation\\"></i>
+    </button>
+</div>
+
+<h4>active</h4>
+<div class=\\"fddocs-container fddocs-button-container\\">
+    <button class=\\"fd-button fd-button--tool-header is-active\\" aria-label=\\"Home\\">
+        <i class=\\"sap-icon--home\\" role=\\"presentation\\"></i>
+    </button>
+</div>
+
+<h4>focus</h4>
+<div class=\\"fddocs-container fddocs-button-container\\">
+    <button class=\\"fd-button fd-button--tool-header is-focus\\" aria-label=\\"Home\\">
+        <i class=\\"sap-icon--home\\" role=\\"presentation\\"></i>
+    </button>
+</div>
+
+<h4>disabled</h4>
+<div class=\\"fddocs-container fddocs-button-container\\">
+    <button class=\\"fd-button fd-button--tool-header is-disabled\\" aria-label=\\"Home\\">
+        <i class=\\"sap-icon--home\\" role=\\"presentation\\"></i>
+    </button>
+</div>
+
+<h4>with badge</h4>
+<button class=\\"fd-button fd-button--tool-header\\" aria-label=\\"Home\\">
+    <i class=\\"sap-icon--home\\" role=\\"presentation\\"></i>
+    <span class=\\"fd-button__badge\\"></span>
+</button>
+
+
 "
 `;
 
-exports[`Check stories > Components/Button > Story SplitMenuButton > Should match snapshot 1`] = `
+exports[`Check stories > Components/Buttons/Button Split > Story SplitMenuButton > Should match snapshot 1`] = `
 "<div class=\\"fddocs-button-container\\">
     <div class=\\"fd-button-split fd-button-split--emphasized\\" role=\\"group\\" aria-label=\\"button-split\\">
         <button class=\\"fd-button fd-button--emphasized\\" aria-label=\\"button\\">
@@ -3100,98 +3251,37 @@ exports[`Check stories > Components/Button > Story SplitMenuButton > Should matc
             <i class=\\"sap-icon--slim-arrow-down\\"></i>
         </button>
     </div>
+
+    <div class=\\"fd-button-split fd-button-split--attention\\" role=\\"group\\" aria-label=\\"button-split\\">
+        <button class=\\"fd-button fd-button--attention\\" aria-label=\\"button\\">
+            <i class=\\"sap-icon--cart\\"></i>
+            <span class=\\"fd-button-split__text\\">Attention</span>
+        </button>
+        <button class=\\"fd-button fd-button--attention\\" aria-expanded=\\"false\\">
+            <i class=\\"sap-icon--slim-arrow-down\\"></i>
+        </button>
+    </div>
+
+    <div class=\\"fd-button-split fd-button-split--negative\\" role=\\"group\\" aria-label=\\"button-split\\">
+        <button class=\\"fd-button fd-button--negative\\" aria-label=\\"button\\">
+            <i class=\\"sap-icon--cart\\"></i>
+        </button>
+        <button class=\\"fd-button fd-button--negative\\" aria-expanded=\\"false\\">
+            <i class=\\"sap-icon--slim-arrow-down\\"></i>
+        </button>
+    </div>
 </div>
 "
 `;
 
-exports[`Check stories > Components/Button > Story Styles > Should match snapshot 1`] = `
-"<div class=\\"fddocs-container fddocs-button-container\\">
-    <button class=\\"fd-button\\">Default Button</button>
-    <button class=\\"fd-button fd-button--emphasized\\">Emphasized Button</button>
-    <button class=\\"fd-button fd-button--ghost\\">Ghost Button</button>
-    <button class=\\"fd-button fd-button--positive\\">Positive Button</button>
-    <button class=\\"fd-button fd-button--negative\\">Negative Button</button>
-    <button class=\\"fd-button fd-button--attention\\">Attention Button</button>
-    <button class=\\"fd-button fd-button--transparent\\">Transparent Button</button>
-</div>"
-`;
-
-exports[`Check stories > Components/Button > Story Toggle > Should match snapshot 1`] = `
-"<h4>Inactive state of toggle button</h4>
-<div class=\\"fddocs-container fddocs-button-container\\">
-    <button class=\\"fd-button\\" aria-pressed=\\"false\\">Default Toggle</button>
-    <button class=\\"fd-button fd-button--emphasized\\" aria-pressed=\\"false\\">Emphasized Toggle</button>
-    <button class=\\"fd-button fd-button--ghost\\" aria-pressed=\\"false\\">Ghost Toggle</button>
-    <button class=\\"fd-button fd-button--positive\\" aria-pressed=\\"false\\">Positive Toggle</button>
-    <button class=\\"fd-button fd-button--negative\\" aria-pressed=\\"false\\">Negative Toggle</button>
-    <button class=\\"fd-button fd-button--attention\\" aria-pressed=\\"false\\">Attention Toggle</button>
-    <button class=\\"fd-button fd-button--transparent\\" aria-pressed=\\"false\\">Transparent Toggle</button>
+exports[`Check stories > Components/Buttons/Segmented Button > Story SegmentedButton > Should match snapshot 1`] = `
+"<div class=\\"fddocs-button-container\\">
+    <div class=\\"fd-segmented-button\\" role=\\"group\\" aria-label=\\"Group label\\">
+        <button aria-label=\\"Survey\\" class=\\"fd-button\\"><i class=\\"sap-icon--survey\\" aria-pressed=\\"false\\"></i></button>
+        <button aria-label=\\"Chart\\" class=\\"fd-button fd-button--toggled\\" aria-pressed=\\"true\\"><i class=\\"sap-icon--pie-chart\\"></i></button>
+        <button aria-label=\\"Pool\\" class=\\"fd-button\\"><i class=\\"sap-icon--pool\\" aria-pressed=\\"false\\"></i></button>
+    </div>
 </div>
-<h4>Active (toggled) state of toggle button</h4>
-<div class=\\"fddocs-container fddocs-button-container\\">
-    <button class=\\"fd-button fd-button--toggled\\" aria-pressed=\\"true\\">Default Toggle</button>
-    <button class=\\"fd-button fd-button--emphasized fd-button--toggled\\" aria-pressed=\\"true\\">Emphasized Toggle</button>
-    <button class=\\"fd-button fd-button--ghost fd-button--toggled\\" aria-pressed=\\"true\\">Ghost Toggle</button>
-    <button class=\\"fd-button fd-button--positive fd-button--toggled\\" aria-pressed=\\"true\\">Positive Toggle</button>
-    <button class=\\"fd-button fd-button--negative fd-button--toggled\\" aria-pressed=\\"true\\">Negative Toggle</button>
-    <button class=\\"fd-button fd-button--attention fd-button--toggled\\" aria-pressed=\\"true\\">Attention Toggle</button>
-    <button class=\\"fd-button fd-button--transparent fd-button--toggled\\" aria-pressed=\\"true\\">Transparent Toggle</button>
-</div>
-<h4>Disabled Toggle button in active state</h4>
-<div class=\\"fddocs-container fddocs-button-container\\">
-    <button class=\\"fd-button fd-button--toggled\\" aria-pressed=\\"false\\" disabled>Default Toggle</button>
-    <button class=\\"fd-button fd-button--emphasized fd-button--toggled\\" aria-pressed=\\"false\\" disabled>Emphasized Toggle</button>
-    <button class=\\"fd-button fd-button--ghost fd-button--toggled\\" aria-pressed=\\"false\\" disabled>Ghost Toggle</button>
-    <button class=\\"fd-button fd-button--positive fd-button--toggled\\" aria-pressed=\\"false\\" disabled>Positive Toggle</button>
-    <button class=\\"fd-button fd-button--negative fd-button--toggled\\" aria-pressed=\\"false\\" disabled>Negative Toggle</button>
-    <button class=\\"fd-button fd-button--attention fd-button--toggled\\" aria-pressed=\\"false\\" disabled>Attention Toggle</button>
-    <button class=\\"fd-button fd-button--transparent fd-button--toggled\\" aria-pressed=\\"false\\" disabled>Transparent Toggle</button>
-</div>"
-`;
-
-exports[`Check stories > Components/Button > Story ToolHeaderButton > Should match snapshot 1`] = `
-"<h4>normal</h4>
-<div class=\\"fddocs-container fddocs-button-container\\">
-    <button class=\\"fd-button fd-button--tool-header\\" aria-label=\\"Home\\">
-        <i class=\\"sap-icon--home\\" role=\\"presentation\\"></i>
-    </button>
-</div>
-
-<h4>hover</h4>
-<div class=\\"fddocs-container fddocs-button-container\\">
-    <button class=\\"fd-button fd-button--tool-header is-hover\\" aria-label=\\"Home\\">
-        <i class=\\"sap-icon--home\\" role=\\"presentation\\"></i>
-    </button>
-</div>
-
-<h4>active</h4>
-<div class=\\"fddocs-container fddocs-button-container\\">
-    <button class=\\"fd-button fd-button--tool-header is-active\\" aria-label=\\"Home\\">
-        <i class=\\"sap-icon--home\\" role=\\"presentation\\"></i>
-    </button>
-</div>
-
-<h4>focus</h4>
-<div class=\\"fddocs-container fddocs-button-container\\">
-    <button class=\\"fd-button fd-button--tool-header is-focus\\" aria-label=\\"Home\\">
-        <i class=\\"sap-icon--home\\" role=\\"presentation\\"></i>
-    </button>
-</div>
-
-<h4>disabled</h4>
-<div class=\\"fddocs-container fddocs-button-container\\">
-    <button class=\\"fd-button fd-button--tool-header is-disabled\\" aria-label=\\"Home\\">
-        <i class=\\"sap-icon--home\\" role=\\"presentation\\"></i>
-    </button>
-</div>
-
-<h4>with badge</h4>
-<button class=\\"fd-button fd-button--tool-header\\" aria-label=\\"Home\\">
-    <i class=\\"sap-icon--home\\" role=\\"presentation\\"></i>
-    <span class=\\"fd-button__badge\\"></span>
-</button>
-
-
 "
 `;
 
