@@ -41,6 +41,9 @@
   --fdButton_Menu_Transparent_Separator_Display: block;
 
   /** Tool Header */
+  --fdButton_ToolHeader_Color_Active: var(--sapContent_IconColor);
+  --fdButton_ToolHeader_Background_Active: var(--sapActiveColor);
+  --fdButton_ToolHeader_Background_Focus: var(--sapButton_Background);
   --fdButton_ToolHeader_Border_Color_Normal: transparent;
   --fdButton_ToolHeader_Border_Color_Hover: transparent;
   --fdButton_ToolHeader_Border_Color_Active: transparent;
@@ -50,6 +53,9 @@
   --fdButton_ToolHeader_Badge_Border_Color: var(--sapShellColor);
 
   /** Nested Button */
+  --fdButton_Nested_Color_Active: var(--sapContent_IconColor);
+  --fdButton_Nested_Background_Active: var(--sapActiveColor);
+  --fdButton_Nested_Background_Focus: var(--sapButton_Background);
   --fdButton_Nested_Border_Color_Normal: transparent;
   --fdButton_Nested_Border_Color_Hover: transparent;
   --fdButton_Nested_Border_Color_Active: transparent;

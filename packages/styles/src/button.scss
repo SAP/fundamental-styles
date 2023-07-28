@@ -204,14 +204,15 @@ $fd-button-badge-spacing: 0.25rem;
     }
 
     @include fd-active() {
-      --fdButton_ToolHeader_Background: var(--sapActiveColor);
+      --fdButton_ToolHeader_Background: var(--fdButton_ToolHeader_Background_Active);
       --fdButton_ToolHeader_Border_Color: var(--fdButton_ToolHeader_Border_Color_Active);
+      --fdButton_ToolHeader_Color: var(--fdButton_ToolHeader_Color_Active);
 
       outline: none;
 
       @include fd-focus() {
         --fdButton_ToolHeader_Border_Radius: 0.375rem;
-        --fdButton_ToolHeader_Background: var(--sapActiveColor);
+        --fdButton_ToolHeader_Background: var(--fdButton_ToolHeader_Background_Active);
         --fdButton_ToolHeader_Border_Color: var(--fdButton_ToolHeader_Border_Color_Active);
 
         outline: none;
@@ -300,14 +301,15 @@ $fd-button-badge-spacing: 0.25rem;
     }
 
     @include fd-active() {
-      --fdButton_Nested_Background: var(--sapActiveColor);
+      --fdButton_Nested_Background: var(--fdButton_Nested_Background_Active);
       --fdButton_Nested_Border_Color: var(--fdButton_Nested_Border_Color_Active);
+      --fdButton_Nested_Color: var(--fdButton_Nested_Color_Active);
 
       outline: none;
 
       @include fd-focus() {
         --fdButton_Nested_Border_Radius: 0.75rem;
-        --fdButton_Nested_Background: var(--sapActiveColor);
+        --fdButton_Nested_Background: var(--fdButton_Nested_Background_Active);
         --fdButton_Nested_Border_Color: var(--fdButton_Nested_Border_Color_Active);
 
         outline: none;
@@ -319,7 +321,7 @@ $fd-button-badge-spacing: 0.25rem;
     }
 
     @include fd-focus() {
-      --fdButton_Nested_Background: var(--sapButton_Background);
+      --fdButton_Nested_Background: var(--fdButton_Nested_Background_Focus);
       --fdButton_Nested_Border_Color: var(--fdButton_Nested_Border_Color_Focus);
       --fdButton_Nested_Border_Radius: var(--fdButton_Nested_Border_Radius_Focus);
 

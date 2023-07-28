@@ -1,0 +1,7 @@
+:root {
+  --fdSearchField_Border_Color: var(--sapShell_BorderColor);
+  --fdSearchField_Background_Hover: var(--sapShellColor);
+  --fdSearchField_Background_Focus: var(--sapShellColor);
+  --fdSearchField_Outline: solid var(--sapContent_FocusWidth) var(--sapContent_FocusColor);
+  --fdSearchField_Underline_Color: transparent;
+}
