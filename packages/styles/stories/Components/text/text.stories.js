@@ -17,9 +17,6 @@ export const DefaultExample = () => defaultExampleExampleHtml;
 DefaultExample.storyName = 'Default';
 DefaultExample.parameters = {
   docs: {
-    story: {
-      iframeHeight: 100
-    },
     description: {
       story: `The default text component can display lines of text that wrap to the next line
         once they reach the end of the content container width.`
@@ -29,9 +26,6 @@ DefaultExample.parameters = {
 export const Whitespace = () => whitespaceExampleHtml;
 Whitespace.parameters = {
   docs: {
-    story: {
-      iframeHeight: 300
-    },
     description: {
       story: `The text component has a property that allows browsers to render specified indents and
         whitespace. To display indents and/or whitespace, add a
@@ -43,9 +37,6 @@ export const MaxLines = () => maxLinesExampleHtml;
 MaxLines.storyName = 'Max lines';
 MaxLines.parameters = {
   docs: {
-    story: {
-      iframeHeight: 300
-    },
     description: {
       story: `The text component can be displayed with a maximum number of lines.
 When the maximum is reached, the text truncates and displays an ellipsis. To display text with a maximum line count,
@@ -62,9 +53,6 @@ to \`height\`. For example, \`style="height: 200px;"\`.
 export const Expand = () => expandExampleHtml;
 Expand.parameters = {
   docs: {
-    story: {
-      iframeHeight: 200
-    },
     description: {
       story: `Along with max lines, text component can display "MORE" and "LESS" links that can show
 more or less of the text.`
@@ -74,9 +62,6 @@ more or less of the text.`
 export const Hyphenation = () => hyphenationExampleHtml;
 Hyphenation.parameters = {
   docs: {
-    story: {
-      iframeHeight: 200
-    },
     description: {
       story: `The text component can display words that are broken at appropriate hyphenation
 points in a text block. To display hyphens, add the \`fd-text--hyphenation\` to the main element.

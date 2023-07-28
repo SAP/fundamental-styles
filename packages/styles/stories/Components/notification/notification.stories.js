@@ -6,6 +6,10 @@ import warningExampleHtml from "./warning.example.html?raw";
 import informationExampleHtml from "./information.example.html?raw";
 import noAvatarExampleHtml from "./no-avatar.example.html?raw";
 import primaryExampleHtml from "./primary.example.html?raw";
+import notificationItemBtpHtml from "./notification-item-btp.example.html?raw";
+import notificationGroupHeaderBtpHtml from "./notification-group-header-btp.example.html?raw";
+import notificationGroupBtpHtml from "./notification-group-btp.example.html?raw";
+
 import '../../../src/button.scss';
 import '../../../src/icon.scss';
 import '../../../src/notification.scss';
@@ -17,6 +21,7 @@ import '../../../src/message-strip.scss';
 import '../../../src/dialog.scss';
 import '../../../src/bar.scss';
 import '../../../src/title.scss';
+import '../../../src/btp/avatar.scss';
 export default {
   title: 'Components/Notifications',
   parameters: {
@@ -36,9 +41,6 @@ Notifications are used to relay information to the user about a situation or tas
 export const Primary = () => primaryExampleHtml;
 Primary.parameters = {
   docs: {
-    story: {
-      iframeHeight: 200
-    },
     description: {
       story: `
 Primary notifications display a container with an avatar, content area with text, as well as an open and close button. To display primary notifications, use the \`fd-notification\` class.
@@ -49,12 +51,9 @@ Primary notifications display a container with an avatar, content area with text
 export const NoAvatar = () => noAvatarExampleHtml;
 NoAvatar.parameters = {
   docs: {
-    story: {
-      iframeHeight: 200
-    },
     description: {
       story: `
-Notifications can be displayed without an avatar by adding the \`fd-notification\\__content--no-avatar\` modifier class together with the \`fd-notification\\__content\` class.
+Notifications can be displayed without an avatar by adding the \`fd-notification__content--no-avatar\` modifier class together with the \`fd-notification__content\` class.
 `
     }
   }
@@ -62,12 +61,9 @@ Notifications can be displayed without an avatar by adding the \`fd-notification
 export const Information = () => informationExampleHtml;
 Information.parameters = {
   docs: {
-    story: {
-      iframeHeight: 200
-    },
     description: {
       story: `
-Notifications can also include alerts, and in this case it is informative. You can display information alerts by adding the \`fd-message-strip fd-message-strip--information fd-message-strip--dismissible\`. To add text to the message, add the \`fd-message-strip\\__text\` class before the text in paragraph tags.
+Notifications can also include alerts, and in this case it is informative. You can display information alerts by adding the \`fd-message-strip fd-message-strip--information fd-message-strip--dismissible\`. To add text to the message, add the \`fd-message-strip__text\` class before the text in paragraph tags.
 `
     }
   }
@@ -75,9 +71,6 @@ Notifications can also include alerts, and in this case it is informative. You c
 export const Warning = () => warningExampleHtml;
 Warning.parameters = {
   docs: {
-    story: {
-      iframeHeight: 200
-    },
     description: {
       story: `
 Notifications can display warning alerts by adding the \`fd-message-strip fd-message-strip--warning fd-message-strip--dismissible\` class.
@@ -88,9 +81,6 @@ Notifications can display warning alerts by adding the \`fd-message-strip fd-mes
 export const Error = () => errorExampleHtml;
 Error.parameters = {
   docs: {
-    story: {
-      iframeHeight: 200
-    },
     description: {
       story: `
 Notifications can display error alerts by adding the \`fd-message-strip fd-message-strip--error fd-message-strip--dismissible\` class.
@@ -101,20 +91,15 @@ Notifications can display error alerts by adding the \`fd-message-strip fd-messa
 export const NotificationGroup = () => notificationGroupExampleHtml;
 NotificationGroup.parameters = {
   docs: {
-    story: {
-      iframeHeight: 200
-    },
     description: {
-      story: `You can display a group of notifications in a list format, and the user can sort them from the header. To display a notification group, add the \`fd-notification fd-notification\\__group\` class.
+      story: `You can display a group of notifications in a list format, and the user can sort them from the header. To display a notification group, add the \`fd-notification fd-notification__group\` class.
     `
     }
   }
 };
 export const Mobile = () => mobileExampleHtml;
 Error.mobile = {
-  docs: {
-    iframeHeight: 200
-  }
+  docs: {}
 };
 export const InDialog = () => inDialogExampleHtml;
 InDialog.parameters = {
@@ -122,6 +107,34 @@ InDialog.parameters = {
     description: {
       story: `If you want to show the notification in a dialog, you need to add the <code>fd-notification--in-dialog</code> class to the notification.
             Also, you need to apply \`fd-dialog__body--no-vertical-padding fd-dialog__body--no-horizontal-padding\` classes to the dialog body.`
+    }
+  }
+};
+
+// BTP Examples
+export const NotificationItemBTP = () => notificationItemBtpHtml;
+NotificationItemBTP.parameters = {
+  docs: {
+    description: {
+      story: ``
+    }
+  }
+};
+
+export const NotificationGroupHeaderBTP = () => notificationGroupHeaderBtpHtml;
+NotificationGroupHeaderBTP.parameters = {
+  docs: {
+    description: {
+      story: ``
+    }
+  }
+};
+
+export const NotificationGroupBTP = () => notificationGroupBtpHtml;
+NotificationGroupBTP.parameters = {
+  docs: {
+    description: {
+      story: ``
     }
   }
 };

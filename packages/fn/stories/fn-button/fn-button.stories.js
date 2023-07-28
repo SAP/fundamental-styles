@@ -117,8 +117,7 @@ export const Primary = () => `${localStyles}
 Primary.storyName = 'Primary Button';
 Primary.parameters = {
   docs: {
-    iframeHeight: 500,
-    description: {
+   description: {
       story: 'Primary buttons don\'t need a modifier, just add the `.fn-button` class to your html element. For emphasized button add `.fn-button--emphasized` modifier class to the `.fn-button` base class.'
     }
   }
@@ -183,8 +182,7 @@ export const Secondary = () => `${localStyles}
 Secondary.storyName = 'Secondary Buttons';
 Secondary.parameters = {
   docs: {
-    iframeHeight: 500,
-    description: {
+   description: {
       story: `
 
 | Style&nbsp;&nbsp;&nbsp;&nbsp;                 | Modifier class                                |
@@ -234,8 +232,7 @@ export const LayoutBtn = () => `${localStyles}
 LayoutBtn.storyName = 'Layout Button';
 LayoutBtn.parameters = {
   docs: {
-    iframeHeight: 500,
-    description: {
+   description: {
       story: `For Layout type of button add the \`fn-button--layout\` modifier class to the \`fn-button\` base class.
 `
     }
@@ -365,8 +362,7 @@ export const Semantic = () => `${localStyles}
 Semantic.storyName = 'Semantic Buttons';
 Semantic.parameters = {
   docs: {
-    iframeHeight: 500,
-    description: {
+   description: {
       story: `For semantic button add the appropriate modifier class to the \`.fn-button\` base class.
 
 | Style&nbsp;&nbsp;&nbsp;&nbsp;               | Modifier class                                |
@@ -467,8 +463,7 @@ export const Icon = () => `${localStyles}
 Icon.storyName = 'Icon Buttons';
 Icon.parameters = {
   docs: {
-    iframeHeight: 500,
-    description: {
+   description: {
       story: `For icon-only type of button add the \`.fn-button--icon-only\` modifier class to the \`.fn-button\` base class.
 `
     }
@@ -534,8 +529,7 @@ export const Toggle = () => `${localStyles}
 Toggle.storyName = 'Toggle Buttons';
 Toggle.parameters = {
   docs: {
-    iframeHeight: 500,
-    description: {
+   description: {
       story: 'Add the `.fn-button--selected` class to the button when it is in toggled (selected) state.'
     }
   }
@@ -609,8 +603,7 @@ export const Menu = () => `${localStyles}
 Menu.storyName = 'Menu Buttons';
 Menu.parameters = {
   docs: {
-    iframeHeight: 500,
-    description: {
+   description: {
       story: ''
     }
   }
@@ -729,8 +722,7 @@ export const Segmented = () => `${localStyles}
 Segmented.storyName = 'Segmented Button';
 Segmented.parameters = {
   docs: {
-    iframeHeight: 500,
-    description: {
+   description: {
       story: ''
     }
   }
@@ -779,8 +771,7 @@ export const Nested = () => `${localStyles}
 Nested.storyName = 'Nested Buttons';
 Nested.parameters = {
   docs: {
-    iframeHeight: 500,
-    description: {
+   description: {
       story: ''
     }
   }
@@ -894,8 +885,7 @@ export const Split = () => `${localStyles}
 Split.storyName = 'Split Buttons';
 Split.parameters = {
   docs: {
-    iframeHeight: 500,
-    description: {
+   description: {
       story: ''
     }
   }

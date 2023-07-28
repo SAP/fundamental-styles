@@ -42,10 +42,7 @@ const localStyles = `
 export const Required = () => requiredExampleHtml;
 Required.parameters = {
   docs: {
-    story: {
-      iframeHeight: 330
-    },
-    description: {
+   description: {
       story: `To show that a checkbox input is required, use the \`fd-checkbox__label--required\` class.
         `
     }
@@ -123,19 +120,12 @@ ${localStyles}
 </fieldset>
 `;
 Default.parameters = {
-  docs: {
-    story: {
-      iframeHeight: 330
-    },
-  }
+  docs: {}
 };
 export const Inline = () => inlineExampleHtml;
 Inline.parameters = {
   docs: {
-    story: {
-      iframeHeight: 400
-    },
-    description: {
+   description: {
       story: 'Checkboxes can display horizontally in a line. To display them this way, add the `fd-checkbox__label--inline` modifier class to the element.'
     }
   }
@@ -389,10 +379,7 @@ ${localStyles}
 `;
 States.parameters = {
   docs: {
-    story: {
-      iframeHeight: 400
-    },
-    description: {
+   description: {
       story: `Checkboxes can display several interaction states to communicate semantic meaning to the users. To display different states, add the classes below to the \`fd-form-item\`:
 
 | States | Class |
@@ -443,10 +430,7 @@ ${localStyles}
 `;
 TextTruncation.parameters = {
   docs: {
-    story: {
-      iframeHeight: 330
-    },
-    description: {
+   description: {
       story: `By default, long checkbox label truncates with ellipsis. For this behaviour no modifier class is needed. For checkbox label that wraps on a new line to show the entire content, use \`.fd-checkbox__label--wrap\` modifier class applied with \`.fd-checkbox__label\`. Keep in mind that for this to work <b>max-width</b> should be set on the label. For a <b>top-left aligned</b> label use the \`.fd-checkbox__label--wrap-top-aligned\` modifier class.
         `
     }
@@ -490,10 +474,7 @@ ${localStyles}
 `;
 DisplayOnly.parameters = {
   docs: {
-    story: {
-      iframeHeight: 330
-    },
-    description: {
+   description: {
       story: `In the Display Only Mode, the checkbox is replaced by two icons to represent the checked and unchecked states. The control becomes a simple icon. <br>Add the <code>.is-display</code> modifier class to <code>.fd-checkbox</code> for Display Only Mode.
         `
     }

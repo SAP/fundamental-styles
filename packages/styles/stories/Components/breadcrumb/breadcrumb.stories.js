@@ -44,7 +44,6 @@ export const Overflow = () => overflowExampleHtml;
 Overflow.parameters = {
   docs: {
     story: {
-      iframeHeight: 200
     },
     description: {
       story: 'The overflow breadcrumb component displays a dropdown menu, followed by several pages in the navigation path. <br>Like the standard breadcrumb, each page can be selected to navigate to its corresponding page. This type is responsive and will collapse into a dropdown menu if there is insufficient horizontal space on the screen. <br>To display the overflow breadcrumb, include the `fd-popover` component in the first breadcrumb item within the element.'

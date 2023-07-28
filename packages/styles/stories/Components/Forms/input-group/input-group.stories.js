@@ -26,19 +26,12 @@ export default {
 };
 export const Default = () => defaultExampleHtml;
 Default.parameters = {
-  docs: {
-    story: {
-      iframeHeight: 160
-    }
-  }
+  docs: {}
 };
 export const TextAddOn = () => textAddOnExampleHtml;
 TextAddOn.parameters = {
   docs: {
-    story: {
-      iframeHeight: 400
-    },
-    description: {
+   description: {
       story: 'The Input Group with text add-on component is typically used to specify the type of the data being entered, such as currency or unit of measure. This add-on can be placed at the left or right (or both) of the input element.'
     }
   }
@@ -46,10 +39,7 @@ TextAddOn.parameters = {
 export const InputWithIcons = () => inputWithIconsExampleHtml;
 InputWithIcons.parameters = {
   docs: {
-    story: {
-      iframeHeight: 300
-    },
-    description: {
+   description: {
       story: 'The Input with add-on supports icons.'
     }
   }
@@ -57,27 +47,17 @@ InputWithIcons.parameters = {
 export const InputWithActions = () => inputWithActionsExampleHtml;
 InputWithActions.parameters = {
   docs: {
-    story: {
-      iframeHeight: 300
-    },
-    description: {
+   description: {
       story: 'The Input with add-on supports actions. Actions can be shown with a text label or icon.'
     }
   }
 };
 export const States = () => statesExampleHtml;
-States.parameters = {
-  docs: {
-    iframeHeight: 700
-  }
-};
+States.parameters = {};
 export const Focus = () => focusExampleHtml;
 Focus.parameters = {
   docs: {
-    story: {
-      iframeHeight: 200
-    },
-    description: {
+   description: {
       story: 'The Input Group supports <b>focus</b> state, it can be added by putting `.is-focus` class to component.'
     }
   }

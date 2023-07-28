@@ -97,7 +97,6 @@ export const Combobox = () => `${localStyles}
 `;
 Combobox.parameters = {
   docs: {
-    iframeHeight: 500,
     description: {
       story: 'Add the `.fn-input--combobox` modifier classes to `.fn-input` for a Combobox input. '
     }

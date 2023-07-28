@@ -14,7 +14,6 @@ export default {
         <code style="color: red;">-position</code>: (optional) is one of the following : relative, absolute, fixed, sticky. If the property is omitted, the default value (relative) is applied.<br>
 
       `,
-        docs: { story: {iframeHeight: 500 }}
     }
 };
 
@@ -53,7 +52,6 @@ export const Elevation = () => `${localStyles}
 </div>`;
 Elevation.parameters = {
     docs: {
-        story: {iframeHeight: 500},
         description: {
             story: ''
         }

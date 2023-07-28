@@ -39,14 +39,11 @@ export default {
     tags: ['f3', 'theme']
   }
 };
-const messageStripHeight = 64;
+
 export const DefaultStrip = () => defaultStripExampleHtml;
 DefaultStrip.storyName = 'Default';
 DefaultStrip.parameters = {
   docs: {
-    story: {
-      iframeHeight: messageStripHeight
-    },
     description: {
       story: `The default message strip can be used for general messages that don’t fit into any of the semantic type use cases.`
     }
@@ -55,9 +52,6 @@ DefaultStrip.parameters = {
 export const Information = () => informationExampleHtml;
 Information.parameters = {
   docs: {
-    story: {
-      iframeHeight: messageStripHeight
-    },
     description: {
       story: 'To display an information message strip, add the `fd-message-strip--information` modifier class to the main element.'
     }
@@ -66,9 +60,6 @@ Information.parameters = {
 export const Success = () => successExampleHtml;
 Success.parameters = {
   docs: {
-    story: {
-      iframeHeight: messageStripHeight
-    },
     description: {
       story: 'To display a success message strip, add the `fd-message-strip--success` modifier class to the main element.'
     }
@@ -77,9 +68,6 @@ Success.parameters = {
 export const Warning = () => warningExampleHtml;
 Warning.parameters = {
   docs: {
-    story: {
-      iframeHeight: messageStripHeight
-    },
     description: {
       story: `To display a warning message strip, add the \`fd-message-strip--warning\` modifier class to the main element.`
     }
@@ -88,9 +76,6 @@ Warning.parameters = {
 export const Error = () => errorExampleHtml;
 Error.parameters = {
   docs: {
-    story: {
-      iframeHeight: messageStripHeight
-    },
     description: {
       story: `To display the error message strip, add the \`fd-message-strip--error\` modifier class to the main element.
 `
@@ -101,9 +86,6 @@ export const NoIcons = () => noIconsExampleHtml;
 NoIcons.storyName = 'No icon';
 NoIcons.parameters = {
   docs: {
-    story: {
-      iframeHeight: messageStripHeight * 4
-    },
     description: {
       story: 'To display message strip without an icon, add the `fd-message-strip--no-icon` modifier class to the main element. Add the `fd-message-strip--dismissible` modifier class if the element is dismissible.'
     }
@@ -113,9 +95,6 @@ export const NoIconsNotDismissible = () => noIconsNotDismissibleExampleHtml;
 NoIconsNotDismissible.storyName = 'No icon and no dismiss button';
 NoIconsNotDismissible.parameters = {
   docs: {
-    story: {
-      iframeHeight: messageStripHeight * 4
-    },
     description: {
       story: 'To display message strip without an icon, add the `fd-message-strip--no-icon` modifier class to the main element.'
     }
@@ -125,9 +104,6 @@ export const MessageStripWithLink = () => messageStripWithLinkExampleHtml;
 MessageStripWithLink.storyName = 'Text with link';
 MessageStripWithLink.parameters = {
   docs: {
-    story: {
-      iframeHeight: messageStripHeight
-    },
     description: {
       story: 'The Link inside Message Strip has additional styling. Add the `fd-message-strip--link` modifier class if the message contains a link element.'
     }
@@ -137,9 +113,6 @@ export const MessageStripWithCustomIcon = () => messageStripWithCustomIconExampl
 MessageStripWithCustomIcon.storyName = 'Custom icon';
 MessageStripWithCustomIcon.parameters = {
   docs: {
-    story: {
-      iframeHeight: messageStripHeight
-    },
     description: {
       story: 'The message strip can be customized by changing the status icon. Check <a href="https://sap.github.io/fundamental-styles/?path=/docs/components-icons-sap-icons--sizes" target="_blank" rel="noopener noreferrer" title="click to open Avatar component. Opens in a new window.">Icons</a> control for more icon types.'
     }
@@ -149,9 +122,6 @@ export const MessageStripWithAccentColors = () => messageStripWithAccentColorsEx
 MessageStripWithAccentColors.storyName = 'Custom Message Strip';
 MessageStripWithAccentColors.parameters = {
   docs: {
-    story: {
-      iframeHeight: messageStripHeight
-    },
     description: {
       story: `If the application needs a custom Message Strip, other than the semantic variations, then the colours from Inverted Object Status/Tag control should be used. Use the modifier classes \`.fd-message-strip--indication-color-*\`, where \`*\` is a number from 1 to 10 for the first set, and 1b to 10b for the second set. `
     }

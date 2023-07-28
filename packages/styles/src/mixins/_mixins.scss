@@ -320,6 +320,12 @@
   @content;
 }
 
+@mixin fd-inline-flex-vertical-center {
+  display: inline-flex;
+  align-items: center;
+  @content;
+}
+
 @mixin fd-flex-vertical-center {
   display: flex;
   align-items: center;
@@ -355,6 +361,12 @@
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
+}
+
+@mixin fd-absolute-vertical-center {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 @mixin fd-position-center($position: absolute) {

@@ -16,10 +16,7 @@ Grouping fields together into a fieldset also provides styling and accessibility
 export const CheckboxGroups = () => checkboxGroupsExampleHtml;
 CheckboxGroups.parameters = {
   docs: {
-    story: {
-      iframeHeight: 450
-    },
-    description: {
+   description: {
       story: 'Checkbox groups should always be grouped using fieldset for accessibility reasons.'
     }
   }
@@ -27,10 +24,7 @@ CheckboxGroups.parameters = {
 export const RadioButtonGroups = () => radioButtonGroupsExampleHtml;
 RadioButtonGroups.parameters = {
   docs: {
-    story: {
-      iframeHeight: 200
-    },
-    description: {
+   description: {
       story: 'Radio button groups should always be grouped using fieldset for accessibility reasons.'
     }
   }

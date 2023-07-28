@@ -1,3 +1,79 @@
+# [0.30.0-rc.56](https://github.com/SAP/fundamental-styles/compare/v0.30.0-rc.55...v0.30.0-rc.56) (2023-07-28)
+
+
+
+# [0.30.0-rc.55](https://github.com/SAP/fundamental-styles/compare/v0.30.0-rc.54...v0.30.0-rc.55) (2023-07-28)
+
+
+### Bug Fixes
+
+* **styles:** added missing line for icons  ([#4726](https://github.com/SAP/fundamental-styles/issues/4726)) ([cf29efc](https://github.com/SAP/fundamental-styles/commit/cf29efc2b10c6490d1987ddb90dabaeeac666f2a))
+
+
+
+# [0.30.0-rc.54](https://github.com/SAP/fundamental-styles/compare/v0.30.0-rc.53...v0.30.0-rc.54) (2023-07-26)
+
+
+### Features
+
+* **styles:** add BTP Notifications [ci visual] ([#4723](https://github.com/SAP/fundamental-styles/issues/4723)) ([9588422](https://github.com/SAP/fundamental-styles/commit/9588422b1ccda7e32e91954fcc6c38837a837a46))
+
+
+### BREAKING CHANGES
+
+* **styles:** - removed fd-notification__body--message modifier class
+- added fd-notification__message-container applied on a div element that wraps the Message Strip in the Notification
+
+
+
+# [0.30.0-rc.53](https://github.com/SAP/fundamental-styles/compare/v0.30.0-rc.52...v0.30.0-rc.53) (2023-07-24)
+
+
+
+# [0.30.0-rc.52](https://github.com/SAP/fundamental-styles/compare/v0.30.0-rc.51...v0.30.0-rc.52) (2023-07-24)
+
+
+
+# [0.30.0-rc.51](https://github.com/SAP/fundamental-styles/compare/v0.30.0-rc.50...v0.30.0-rc.51) (2023-07-24)
+
+
+### Features
+
+* **styles:** add BTP Tool Header and Nested Buttons to Button component [ci visual] ([#4710](https://github.com/SAP/fundamental-styles/issues/4710)) ([9eaf455](https://github.com/SAP/fundamental-styles/commit/9eaf455e371563fcc29af22ec1740feaed821a2e))
+
+
+
+# [0.30.0-rc.50](https://github.com/SAP/fundamental-styles/compare/v0.30.0-rc.49...v0.30.0-rc.50) (2023-07-23)
+
+
+
+# [0.30.0-rc.49](https://github.com/SAP/fundamental-styles/compare/v0.30.0-rc.48...v0.30.0-rc.49) (2023-07-23)
+
+
+
+# [0.30.0-rc.48](https://github.com/SAP/fundamental-styles/compare/v0.30.0-rc.47...v0.30.0-rc.48) (2023-07-23)
+
+
+
+# [0.30.0-rc.47](https://github.com/SAP/fundamental-styles/compare/v0.30.0-rc.46...v0.30.0-rc.47) (2023-07-21)
+
+
+### Bug Fixes
+
+* **styles:** update Info Label to latest Horizon design [ci visual] ([#4707](https://github.com/SAP/fundamental-styles/issues/4707)) ([8747ab1](https://github.com/SAP/fundamental-styles/commit/8747ab1a0ef7193059123823e5345f3f48857d38))
+
+
+### BREAKING CHANGES
+
+* **styles:** removed fd-info-label--icon modifier class
+removed fd-info-label--numeric modifier class
+
+
+
+# [0.30.0-rc.46](https://github.com/SAP/fundamental-styles/compare/v0.30.0-rc.45...v0.30.0-rc.46) (2023-07-21)
+
+
+
 # [0.30.0-rc.45](https://github.com/SAP/fundamental-styles/compare/v0.30.0-rc.44...v0.30.0-rc.45) (2023-07-19)
 
 

@@ -47,9 +47,6 @@ If the entries are not validated by the application, users can also enter custom
 export const AsFormItem = () => asFormItemExampleHtml;
 AsFormItem.parameters = {
   docs: {
-    story: {
-      iframeHeight: 900
-    },
     description: {
       story: `
 Note that the popover body width is restricted to a max of 37.5rem to avoid readability issues in large-width popovers.
@@ -61,9 +58,6 @@ Applications are free to override this in their custom styles if needed and own 
 export const Grouping = () => groupingExampleHtml;
 Grouping.parameters = {
   docs: {
-    story: {
-      iframeHeight: 500
-    },
     description: {
       story: 'In cases where the list items need to be categorized into groups, it is possible to add headers for each category as seen below.'
     }
@@ -72,9 +66,6 @@ Grouping.parameters = {
 export const MatchPopoverBodySize = () => matchPopoverBodySizeExampleHtml;
 MatchPopoverBodySize.parameters = {
   docs: {
-    story: {
-      iframeHeight: 300
-    },
     description: {
       story: `
 The default length size of the popover body is often different from the text length.
@@ -89,9 +80,6 @@ In the example you can see how the \`Multi Input\` component looks without the \
 export const ReadOnlyAndDisabled = () => readOnlyAndDisabledExampleHtml;
 ReadOnlyAndDisabled.parameters = {
   docs: {
-    story: {
-      iframeHeight: 100
-    },
     description: {
       story: `
 To make the \`Multi Input\` component read-only, the readonly attribute needs to be added to the \`fd-nput-group\` element.
@@ -106,9 +94,6 @@ The disabled state can also be achieved by adding the \`.is-disabled\` class or 
 export const Semantic = () => semanticExampleHtml;
 Semantic.parameters = {
   docs: {
-    story: {
-      iframeHeight: 350
-    },
     description: {
       story: `
 For a complete list of states supported by the \`Multi Input\` component, please see the documentation for the form or select components.
@@ -122,9 +107,6 @@ To add text in the \`body\` of the component, simply include your text in the \`
 export const MobileMode = () => mobileModeExampleHtml;
 MobileMode.parameters = {
   docs: {
-    story: {
-      iframeHeight: 450
-    },
     description: {
       story: `
 For mobile devices, or tablets, multi input component should be displayed in fullscreen mode.
@@ -135,9 +117,6 @@ So instead of using popover and dropdown, it should be wrapped in \`dialog\` and
 export const Filtering = () => filteringExampleHtml;
 Filtering.parameters = {
   docs: {
-    story: {
-      iframeHeight: 300
-    },
     description: {
       story: `
 The user can filter selectable options by typing in the input. A button with the text "Show All" should be displayed, that when clicked, will clear the text in the input and show all options in the list.`

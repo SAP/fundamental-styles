@@ -32,10 +32,7 @@ export const Primary = () => primaryExampleHtml;
 Primary.storyName = 'Default';
 Primary.parameters = {
   docs: {
-    story: {
-      iframeHeight: 500
-    },
-    description: {
+   description: {
       story: 'The standard input component can be displayed by using `fd-input` class'
     }
   }

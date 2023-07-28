@@ -4,7 +4,6 @@ export default {
     parameters: {
         description: `Content containers (Page, Dynamic Page, Object Page, Tab Container, Icon Tab Bar, Wizard) can hold any types of controls and layouts that are needed to visualize application content. The content areas of these controls should by default use responsive paddings which value is determined by the container width.
       `,
-        docs: { story: {iframeHeight: 500 }}
     }
 };
 
@@ -51,7 +50,6 @@ export const HomeExample = () => `${localStyles}
 HomeExample.storyName = 'Home (content area)';
 HomeExample.parameters = {
     docs: {
-        story: {iframeHeight: 500},
         description: {
             story: `
 <table style="width: 100%; border-collapse: collapse; margin-top: 1rem;">
@@ -135,7 +133,6 @@ export const ContainerExample = () => `${localStyles}
 ContainerExample.storyName = 'Content containers';
 ContainerExample.parameters = {
     docs: {
-        story: {iframeHeight: 500},
         description: {
             story: `
 <table style="width: 100%; border-collapse: collapse; margin-top: 1rem;">

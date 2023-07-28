@@ -13,9 +13,6 @@ export default {
 export const Primary = () => primaryExampleHtml;
 Primary.parameters = {
   docs: {
-    story: {
-      iframeHeight: 200
-    },
     description: {
       story: `For aria-live to read any change in element, we need to place element but it should not be visible to user.
 `

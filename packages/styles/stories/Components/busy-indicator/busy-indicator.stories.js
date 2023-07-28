@@ -42,9 +42,6 @@ The ongoing operation only covers part of a screen that has multiple controls, a
 export const Standard = () => standardExampleHtml;
 Standard.parameters = {
   docs: {
-    story: {
-      iframeHeight: 200
-    },
     description: {
       story: 'The standard busy indicator animates a sequence of cascading dots expanding and shrinking in a loop. The component comes in three sizes detailed above. To display the busy indicator, use the `fd-busy-indicator` class. If you want to display a certain size, add the modifier class of the desired size i.e. `--m` to the element.'
     }
@@ -53,10 +50,7 @@ Standard.parameters = {
 export const ContrastMode = () => contrastModeExampleHtml;
 ContrastMode.parameters = {
   docs: {
-    story: {
-      iframeHeight: 200
-    },
-    description: {
+   description: {
       story: 'The busy indicator also comes in contrast mode and displays white dots against a dark background. To apply contrast mode, add `contrast` into the element i.e. `fd-busy-indicator--m contrast`.'
     }
   }
@@ -64,10 +58,7 @@ ContrastMode.parameters = {
 export const ExtendedBusyIndicator = () => extendedBusyIndicatorExampleHtml;
 ExtendedBusyIndicator.parameters = {
   docs: {
-    story: {
-      iframeHeight: 200
-    },
-    description: {
+   description: {
       story: 'If more information needs to be displayed with the loading animation, it is replaced by the Extended Busy Indicator `fd-busy-indicator-extended`. The additional information is wrapped in an element with `fd-busy-indicator-extended__label` class.'
     }
   }
@@ -75,10 +66,7 @@ ExtendedBusyIndicator.parameters = {
 export const ExtendedBusyIndicatorInsideMessageToast = () => extendedBusyIndicatorInsideMessageToastExampleHtml;
 ExtendedBusyIndicatorInsideMessageToast.parameters = {
   docs: {
-    story: {
-      iframeHeight: 200
-    },
-    description: {
+   description: {
       story: 'At the Page level the Busy Indicator should always be placed in a container. The simplest form of container will be centred on the page and inherit the color values from Message Toast.'
     }
   }
@@ -86,10 +74,7 @@ ExtendedBusyIndicatorInsideMessageToast.parameters = {
 export const BusyDialog = () => busyDialogExampleHtml;
 BusyDialog.parameters = {
   docs: {
-    story: {
-      iframeHeight: 200
-    },
-    description: {
+   description: {
       story: 'The busy dialog informs the user about an ongoing operation. During the operation, the entire screen is blocked.'
     }
   }

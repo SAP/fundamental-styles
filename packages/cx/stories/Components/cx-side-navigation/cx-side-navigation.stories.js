@@ -45,38 +45,21 @@ In the <code>Narrow</code> variant:
 };
 export const CozyWideIcons = () => cozyWideIconsExampleHtml;
 CozyWideIcons.storyName = 'Cosy Wide With Icon, 1 Level';
-CozyWideIcons.parameters = {
-  docs: {
-    story: {
-      iframeHeight: 400
-    },
-    description: {
-      story: `
-        `
-    }
-  }
-};
 export const CozyWideTextOnly = () => cozyWideTextOnlyExampleHtml;
 CozyWideTextOnly.storyName = 'Cosy Wide Text Only, 1 Level';
 CozyWideTextOnly.parameters = {
-  docs: {
-    story: {
-      iframeHeight: 400
-    },
-    description: {
-      story: '<b>Important: </b>This type of Side Navigation does not have <code>Narrow</code> variant.'
+    docs: {
+        description: {
+            story: '<b>Important: </b>This type of Side Navigation does not have <code>Narrow</code> variant.'
+        }
     }
   }
 };
 export const DynamicWidth = () => dynamicWidthExampleHtml;
 DynamicWidth.parameters = {
-  docs: {
-    story: {
-      iframeHeight: 400
-    },
-    description: {
-      story: `Side Navigation can react dynamically to long label texts in navigational items. In such case the width of the Side Navigation is adapted by the longest label. The label does not wrap or truncate. Use the modifier class <code>.fdx-side-nav--dynamic-width</code> for Side Navigation with dynamic width.
-
+    docs: {
+        description: {
+            story: `Side Navigation can react dynamically to long label texts in navigational items. In such case the width of the Side Navigation is adapted by the longest label. The label does not wrap or truncate. Use the modifier class <code>.fdx-side-nav--dynamic-width</code> for Side Navigation with dynamic width.
         `
     }
   }
@@ -84,38 +67,21 @@ DynamicWidth.parameters = {
 export const CosyWideTextOnlyLevels = () => cosyWideTextOnlyLevelsExampleHtml;
 CosyWideTextOnlyLevels.storyName = 'Cosy Wide Text Only, 3 Levels';
 CosyWideTextOnlyLevels.parameters = {
-  docs: {
-    story: {
-      iframeHeight: 400
-    },
-    description: {
-      story: `<b>Important: </b>This type of Side Navigation does not have <code>Narrow</code> variant.
+    docs: {
+        description: {
+            story: `<b>Important: </b>This type of Side Navigation does not have <code>Narrow</code> variant.
         `
     }
   }
 };
 export const CosyWideIconsLevels = () => cosyWideIconsLevelsExampleHtml;
 CosyWideIconsLevels.storyName = 'Cosy Wide With Icons, 3 Levels, Collapse Only';
-CosyWideIconsLevels.parameters = {
-  docs: {
-    story: {
-      iframeHeight: 550
-    },
-    description: {
-      story: `
-        `
-    }
-  }
-};
 export const CosyWideIconsLevelsMultiClick = () => cosyWideIconsLevelsMultiClickExampleHtml;
 CosyWideIconsLevelsMultiClick.storyName = 'Cosy Wide With Icons, 3 Levels, Navigation and Collapse';
 CosyWideIconsLevelsMultiClick.parameters = {
-  docs: {
-    story: {
-      iframeHeight: 550
-    },
-    description: {
-      story: `
+    docs: {
+        description: {
+            story: `
         `
     }
   }
@@ -123,12 +89,9 @@ CosyWideIconsLevelsMultiClick.parameters = {
 export const CompactWideIcons = () => compactWideIconsExampleHtml;
 CompactWideIcons.storyName = 'Compact Wide With Icons, Level 2 Collapsed';
 CompactWideIcons.parameters = {
-  docs: {
-    story: {
-      iframeHeight: 550
-    },
-    description: {
-      story: `For compact Side Navigation apply the <code>.fdx-side-nav--compact</code> modifier class with <code>.fdx-side-nav</code> base class, and <code>.fdx-nested-list--compact</code> modifier class with <code>.fdx-nested-list</code> base class.
+    docs: {
+        description: {
+            story: `For compact Side Navigation apply the <code>.fdx-side-nav--compact</code> modifier class with <code>.fdx-side-nav</code> base class, and <code>.fdx-nested-list--compact</code> modifier class with <code>.fdx-nested-list</code> base class.
         `
     }
   }
@@ -136,12 +99,9 @@ CompactWideIcons.parameters = {
 export const CompactWideIconsNavCollapse = () => compactWideIconsNavCollapseExampleHtml;
 CompactWideIconsNavCollapse.storyName = 'Compact Wide With Icons, Level 2 Collapsed, Navigation and Collapse';
 CompactWideIconsNavCollapse.parameters = {
-  docs: {
-    story: {
-      iframeHeight: 550
-    },
-    description: {
-      story: `For compact Side Navigation apply the <code>.fdx-side-nav--compact</code> modifier class with <code>.fdx-side-nav</code> base class, and <code>.fdx-nested-list--compact</code> modifier class with <code>.fdx-nested-list</code> base class.
+    docs: {
+        description: {
+            story: `For compact Side Navigation apply the <code>.fdx-side-nav--compact</code> modifier class with <code>.fdx-side-nav</code> base class, and <code>.fdx-nested-list--compact</code> modifier class with <code>.fdx-nested-list</code> base class.
         `
     }
   }
@@ -149,12 +109,9 @@ CompactWideIconsNavCollapse.parameters = {
 export const CosyNarrow = () => cosyNarrowExampleHtml;
 CosyNarrow.storyName = 'Cosy Narrow, Levels 2 and 3 in Popover Hidden';
 CosyNarrow.parameters = {
-  docs: {
-    story: {
-      iframeHeight: 500
-    },
-    description: {
-      story: `For <code>Narrow</code> variant of Side Navigation apply <code>.fdx-side-nav--narrow</code> modifier class to <code>.fdx-side-nav</code> base class.
+    docs: {
+        description: {
+            story: `For <code>Narrow</code> variant of Side Navigation apply <code>.fdx-side-nav--narrow</code> modifier class to <code>.fdx-side-nav</code> base class.
         `
     }
   }
@@ -162,38 +119,21 @@ CosyNarrow.parameters = {
 export const CosyNarrowOverflow = () => cosyNarrowOverflowExampleHtml;
 CosyNarrowOverflow.storyName = 'Cosy Narrow with Vertical Overflow Behaviour, Levels 2 and 3 in Popover Hidden';
 export const CosyNarrowPopover = () => cosyNarrowPopoverExampleHtml;
-CosyNarrowPopover.parameters = {
-  docs: {
-    story: {
-      iframeHeight: 1000
-    },
-    description: {
-      story: `
-        `
-    }
-  }
-};
 export const CosyNarrowPopoverDynamicWidth = () => cosyNarrowPopoverDynamicWidthExampleHtml;
 CosyNarrowPopoverDynamicWidth.storyName = 'Cosy Narrow Popover with Dynamic Width';
 CosyNarrowPopoverDynamicWidth.parameters = {
-  docs: {
-    story: {
-      iframeHeight: 1000
-    },
-    description: {
-      story: `Side Navigation Popover can react dynamically to long label texts in navigational items. In such case the width of the Side Navigation Popover is adapted by the longest label. The label does not wrap or truncate. Use the modifier class <code>.fdx-side-nav__popover-body--dynamic-width</code> modifier class with <code>.fdx-side-nav__popover-body</code> base class for Side Navigation Popover with dynamic width.
+    docs: {
+        description: {
+            story: `Side Navigation Popover can react dynamically to long label texts in navigational items. In such case the width of the Side Navigation Popover is adapted by the longest label. The label does not wrap or truncate. Use the modifier class <code>.fdx-side-nav__popover-body--dynamic-width</code> modifier class with <code>.fdx-side-nav__popover-body</code> base class for Side Navigation Popover with dynamic width.
         `
     }
   }
 };
 export const CompactNarrow = () => compactNarrowExampleHtml;
 CompactNarrow.parameters = {
-  docs: {
-    story: {
-      iframeHeight: 500
-    },
-    description: {
-      story: `For <code>Narrow</code> variant of Side Navigation in compact mode apply <code>.fdx-side-nav--narrow</code> and <code>.fdx-side-nav--compact</code> modifier classed to <code>.fdx-side-nav</code> base class.
+    docs: {
+        description: {
+            story: `For <code>Narrow</code> variant of Side Navigation in compact mode apply <code>.fdx-side-nav--narrow</code> and <code>.fdx-side-nav--compact</code> modifier classed to <code>.fdx-side-nav</code> base class.
 `
     }
   }
@@ -203,14 +143,3 @@ CompactNarrowOverflow.storyName = 'Compact Narrow with Vertical Overflow Behavio
 export const CompactNarrowPopover = () => compactNarrowPopoverExampleHtml;
 export const CozyWideIconsSearch = () => cozyWideIconsSearchExampleHtml;
 CozyWideIconsSearch.storyName = 'Cosy Wide With Icon and Filter Integration, 1 Level';
-CozyWideIconsSearch.parameters = {
-  docs: {
-    story: {
-      iframeHeight: 400
-    },
-    description: {
-      story: `
-        `
-    }
-  }
-};

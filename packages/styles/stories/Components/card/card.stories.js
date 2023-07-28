@@ -51,10 +51,7 @@ export const CardAnatomy = () => cardAnatomyExampleHtml;
 CardAnatomy.storyName = 'Standard card';
 CardAnatomy.parameters = {
   docs: {
-    story: {
-      iframeHeight: 900
-    },
-    description: {
+   description: {
       story: `The standard card displays a header area with a title and a content area, as well as any other components mentioned in the card anatomy section.
 `
     }
@@ -64,10 +61,7 @@ export const AnalyticalCard = () => analyticalCardExampleHtml;
 AnalyticalCard.storyName = 'Analytical card';
 AnalyticalCard.parameters = {
   docs: {
-    story: {
-      iframeHeight: 450
-    },
-    description: {
+   description: {
       story: `The analytical card is used for data visualization. It can display a KPI header and various chart types in the content. The only difference between a KPI header and a standard header is that the former requires a subtitle, a KPI area and can display an optional second subtitle. To display an analytical card, add the \`fd-card--analytical\` modifier class to the main element.
 
 ####Chart types
@@ -90,10 +84,7 @@ export const ListCard = () => listCardExampleHtml;
 ListCard.storyName = 'List card';
 ListCard.parameters = {
   docs: {
-    story: {
-      iframeHeight: 400
-    },
-    description: {
+   description: {
       story: `A card can display various types of lists. All components placed inside should behave natively.
             For this kind of card it is not recommended to keep header interactive, or navigable.
             Such a header can be achieved by adding \`fd-card__header--non-interactive\` modifier class.
@@ -105,10 +96,7 @@ export const TableCard = () => tableCardExampleHtml;
 TableCard.storyName = 'Table card';
 TableCard.parameters = {
   docs: {
-    story: {
-      iframeHeight: 400
-    },
-    description: {
+   description: {
       story: 'Cards can display tables within the content area. To display a table card, add the `fd-card--table` modifier class to the main element.'
     }
   }
@@ -117,10 +105,7 @@ export const ObjectCard = () => objectCardExampleHtml;
 ObjectCard.storyName = 'Object card';
 ObjectCard.parameters = {
   docs: {
-    story: {
-      iframeHeight: 600
-    },
-    description: {
+   description: {
       story: `The object card can display a single object or a group of objects. Contrary to other cards, object card has 1rem padding on all sides of the content area. To display an object card, add the \`fd-card--object\` modifier class to the main element.
 
 **Within the content area, there are several components:**

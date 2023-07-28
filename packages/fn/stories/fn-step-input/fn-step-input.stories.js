@@ -116,6 +116,5 @@ export const StepInput = () => `${localStyles}
 `;
 StepInput.parameters = {
   docs: {
-    iframeHeight: 500
   }
 };

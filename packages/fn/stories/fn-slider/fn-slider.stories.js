@@ -110,7 +110,6 @@ export const Slider = () => `${localStyles}
 `;
 Slider.parameters = {
   docs: {
-    iframeHeight: 500
   }
 };
 export const RangeSlider = () => `${localStyles}
@@ -211,6 +210,5 @@ export const RangeSlider = () => `${localStyles}
 `;
 RangeSlider.parameters = {
   docs: {
-    iframeHeight: 500
   }
 };

@@ -26,16 +26,11 @@ Do not use the text area if
 };
 export const Primary = () => primaryExampleHtml;
 Primary.parameters = {
-  docs: {
-    iframeHeight: 250
-  }
+  docs: {}
 };
 export const Counter = () => counterExampleHtml;
 Counter.parameters = {
   docs: {
-    story: {
-      iframeHeight: 150
-    },
     description: {
       story: 'Textarea can have a counter to display the number of characters entered or left to type. The counter is displayed below the textarea.'
     }
@@ -45,7 +40,7 @@ export const DisabledAndReadOnly = () => disabledAndReadOnlyExampleHtml;
 DisabledAndReadOnly.parameters = {
   docs: {
     story: {
-      iframeHeight: 200
+    
     }
   }
 };
@@ -53,9 +48,6 @@ export const States = () => statesExampleHtml;
 States.storyName = 'Responsiveness';
 States.parameters = {
   docs: {
-    story: {
-      iframeHeight: 500
-    },
     description: {
       story: 'As with any other input component, you can validate the fields and show the result as a value state of the component. Possible value states are error, warning, success, information, or neutral (none).'
     }

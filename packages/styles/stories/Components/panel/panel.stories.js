@@ -36,9 +36,6 @@ There are two types of panels: fixed and expandable.
 export const Fixed = () => fixedExampleHtml;
 Fixed.parameters = {
   docs: {
-    story: {
-      iframeHeight: 200
-    },
     description: {
       story: `When the height of the panel's content is set to a fixed size, the content area becomes scrollable.
         `
@@ -48,9 +45,6 @@ Fixed.parameters = {
 export const Expandable = () => expandableExampleHtml;
 Expandable.parameters = {
   docs: {
-    story: {
-      iframeHeight: 200
-    },
     description: {
       story: `Expandable panels are much like fixed panels, except their content can be expanded and collapsed (including the info toolbar, if available).
         `
@@ -61,9 +55,6 @@ export const FixedHeightContent = () => fixedHeightContentExampleHtml;
 FixedHeightContent.storyName = 'Fixed height';
 FixedHeightContent.parameters = {
   docs: {
-    story: {
-      iframeHeight: 300
-    },
     description: {
       story: `When the height of the panel's content is set to a fixed size, the content area becomes scrollable.
         `
@@ -73,7 +64,6 @@ FixedHeightContent.parameters = {
 export const Borderless = () => borderlessExampleHtml;
 Borderless.parameters = {
   docs: {
-    iframeHeight: 200,
     description: {
       story: `Panel may have a border or not. For Panel without border use the \`.fd-panel--borderless \` modifier class.
         `
@@ -83,7 +73,6 @@ Borderless.parameters = {
 export const Transparent = () => transparentExampleHtml;
 Transparent.parameters = {
   docs: {
-    iframeHeight: 200,
     description: {
       story: `The background of the content can be set to transparent by applying the \`.fd-panel--transparent \` modifier class.
         `

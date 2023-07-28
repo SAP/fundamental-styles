@@ -22,7 +22,6 @@ export const Primary = () => primaryExampleHtml;
 Primary.storyName = 'Types';
 Primary.parameters = {
   docs: {
-    iframeHeight: 300,
     description: {
       story: ``
     }

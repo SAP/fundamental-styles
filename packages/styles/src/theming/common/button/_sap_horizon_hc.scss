@@ -25,4 +25,22 @@
   --fdButton_Segmented_Middle_Border_Radius: 0 0 0 0;
   --fdButton_Border_Radius_Outline_Right: 0 var(--sapButton_BorderCornerRadius) var(--sapButton_BorderCornerRadius) 0;
   --fdButton_Border_Radius_Outline_Right_RTL: var(--sapButton_BorderCornerRadius) 0 0 var(--sapButton_BorderCornerRadius);
+
+  /** Tool Header */
+  --fdButton_ToolHeader_Border_Color_Normal: var(--sapButton_BorderColor);
+  --fdButton_ToolHeader_Border_Color_Hover: var(--sapButton_Hover_BorderColor);
+  --fdButton_ToolHeader_Border_Color_Active: var(--sapButton_Active_BorderColor);
+  --fdButton_ToolHeader_Border_Color_Focus: transparent;
+  --fdButton_ToolHeader_Border_Color_Disabled: var(--sapButton_Hover_BorderColor);
+  --fdButton_ToolHeader_Border_Radius_Focus: 0;
+  --fdButton_ToolHeader_Badge_Border_Color: var(--sapGroup_ContentBorderColor);
+  --fdButton_ToolHeader_Nested_Border_Radius_Focus: 0;
+
+  /** Nested */
+  --fdButton_Nested_Border_Color_Normal: var(--sapButton_BorderColor);
+  --fdButton_Nested_Border_Color_Hover: var(--sapButton_Hover_BorderColor);
+  --fdButton_Nested_Border_Color_Active: var(--sapButton_Active_BorderColor);
+  --fdButton_Nested_Border_Color_Focus: transparent;
+  --fdButton_Nested_Border_Color_Disabled: var(--sapButton_Hover_BorderColor);
+  --fdButton_Nested_Border_Radius_Focus: 0;
 }

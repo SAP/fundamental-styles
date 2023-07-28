@@ -154,9 +154,6 @@ export const Shellbar = () => `${localStyles}
 `;
 Shellbar.parameters = {
   docs: {
-    story: {
-      iframeHeight: 600
-    },
     description: {
       story: `The product switch button is typically displayed within a **Shellbar** on the far-right side.
         `
@@ -168,16 +165,12 @@ Large.parameters = {
   docs: {
     description: {
       story: 'Product switch is displayed with a maximum of 4 columns on large desktop screens. When the popover contains too many items, it will grow until the maximum is reached. Once the maximum is reached, the popover can be scrolled vertically.',
-      iframeHeight: 600
     }
   }
 };
 export const Medium = () => mediumExampleHtml;
 Medium.parameters = {
   docs: {
-    story: {
-      iframeHeight: 350
-    },
     description: {
       story: `If there are 6 (or less) items to display, it is recommended to use the 3-column layout (medium). To display a medium-sized product switch, add the \`fd-product-switchbody--col-3\` modifier class to the main element.
         `
@@ -187,9 +180,6 @@ Medium.parameters = {
 export const Small = () => smallExampleHtml;
 Small.parameters = {
   docs: {
-    story: {
-      iframeHeight: 400
-    },
     description: {
       story: `For smaller screens (mobile), the product switch is displayed in list format. To achieve this style, add the \`fd-product-switch__body--mobile\` modifier class to the main element.
         `

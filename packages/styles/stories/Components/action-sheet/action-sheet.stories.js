@@ -36,7 +36,6 @@ export const Default = () => defaultExampleHtml;
 Default.parameters = {
   docs: {
     story: {
-      iframeHeight: 300
     }
   }
 };
@@ -44,7 +43,6 @@ export const ActionSheetMobile = () => actionSheetMobileExampleHtml;
 ActionSheetMobile.parameters = {
   docs: {
     story: {
-      iframeHeight: 800
     },
     description: {
       story: `To display the action sheet on mobile screens,

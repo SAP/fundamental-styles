@@ -22,9 +22,6 @@ export const ScrollableTokenizer = () => scrollableTokenizerExampleHtml;
 ScrollableTokenizer.storyName = 'Scrollable tokenizer';
 ScrollableTokenizer.parameters = {
   docs: {
-    story: {
-      iframeHeight: 350
-    },
     description: {
       story: `The tokenizer can be scrollable by adding the \`fd-tokenizer--scrollable\` modifier class to the main element. The user can view the tokens by pressing the \`Tab\` key, then \`Shift + Tab\` to jump to the next one.
         `

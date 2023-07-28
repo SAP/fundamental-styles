@@ -28,9 +28,6 @@ MarkerText.parameters = {
 export const IconAndText = () => iconAndTextExampleHtml;
 IconAndText.parameters = {
   docs: {
-    story: {
-      iframeHeight: 150
-    },
     description: {
       story: 'The Marker supports the Icon and Text mode of displaying the Object.'
     }
@@ -39,9 +36,6 @@ IconAndText.parameters = {
 export const ClickableObjectMarker = () => clickableObjectMarkerExampleHtml;
 ClickableObjectMarker.parameters = {
   docs: {
-    story: {
-      iframeHeight: 150
-    },
     description: {
       story: 'If the object marker is used as a link, a hover effect is shown on non-touch devices. If the object marker is shown using a combination of icon and text, there is no hover effect for the icon. If Object Marker has to be clicked/tabbed by the user add the fd-object-marker--link modifier class.'
     }

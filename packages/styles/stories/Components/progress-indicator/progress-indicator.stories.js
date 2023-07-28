@@ -41,9 +41,6 @@ Negative | \`fd-progress-indicator--negative\`
 export const Layout = () => layoutExampleHtml;
 Layout.parameters = {
   docs: {
-    story: {
-      iframeHeight: 600
-    },
     description: {
       story: `
 Show the current progress as a percentage value between 0% and 100%.
@@ -58,9 +55,6 @@ export const ValueStates = () => valueStatesExampleHtml;
 ValueStates.storyName = 'States';
 ValueStates.parameters = {
   docs: {
-    story: {
-      iframeHeight: 600
-    },
     description: {
       story: 'The progress indicator can visualize different value states that are represented by various theme-dependent semantic colors. The states are: normal, success, warning, error, and information.'
     }
@@ -70,9 +64,6 @@ export const Truncation = () => truncationExampleHtml;
 Truncation.storyName = 'Truncation Behaviour';
 Truncation.parameters = {
   docs: {
-    story: {
-      iframeHeight: 600
-    },
     description: {
       story: 'If the length of the text exceeds the available space in the progress indicator, the text truncates. In this case, clicking the progress indicator displays an information popover with the full text.'
     }

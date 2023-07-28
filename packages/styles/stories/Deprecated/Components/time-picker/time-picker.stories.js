@@ -30,9 +30,6 @@ export default {
 export const TabletMode = () => tabletModeExampleHtml;
 TabletMode.parameters = {
   docs: {
-    story: {
-      iframeHeight: 550
-    },
     description: {
       story: 'The time picker can be displayed in tablet mode by adding the `.fd-time--tablet` modifier class to the `.fd-time` base class.'
     }

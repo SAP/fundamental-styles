@@ -84,9 +84,6 @@ To display large amounts of data in tabular form, several table components are p
 
 In these cases, use the **Tree** instead.
         `,
-    docs: {
-      iframeHeight: 500
-    },
     components: ['button', 'form-label', 'fieldset', 'icon', 'link', 'object-status', 'table', 'toolbar', 'pagination', 'popover', 'list', 'toolbar', 'bar', 'dialog', 'input', 'input-group', 'checkbox', 'select', 'menu', 'text', 'object-number', 'object-marker']
   }
 };
@@ -306,7 +303,6 @@ If you have more than one fixed column on the left or right, you have to set the
 It’s important to hardcode the width of the columns, otherwise the cells will be squished.
     `
     },
-    iframeHeight: 400
   }
 };
 export const NavIcon = () => navIconExampleHtml;

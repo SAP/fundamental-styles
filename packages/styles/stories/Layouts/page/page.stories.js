@@ -45,17 +45,10 @@ export default {
   }
 };
 export const BasicPage = () => basicPageExampleHtml;
-BasicPage.parameters = {
-  docs: {
-    iframeHeight: 500
-  }
-};
+BasicPage.parameters = {};
 export const TransparentPage = () => transparentPageExampleHtml;
 TransparentPage.parameters = {
   docs: {
-    story: {
-      iframeHeight: 550
-    },
     description: {
       story: 'Page with Transparent Background Design, Header with SubHeader, and Responsive Behaviour - M_L'
     }
@@ -64,9 +57,6 @@ TransparentPage.parameters = {
 export const ResponsivePage = () => responsivePageExampleHtml;
 ResponsivePage.parameters = {
   docs: {
-    story: {
-      iframeHeight: 550
-    },
     description: {
       story: 'Home page with List Background Design, Floating Footer and Responsive Behaviour - XL'
     }
