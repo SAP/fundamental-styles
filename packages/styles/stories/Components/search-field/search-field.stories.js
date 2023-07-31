@@ -14,18 +14,10 @@ import '../../../src/form-item.scss';
 import '../../../src/search-field.scss';
 
 export default {
-  title: 'Components/Search Field',
+  title: 'BTP/Search Field',
   parameters: {
-    description: ``,
+    description: `The Search Field component is intended to be used in BTP Tool Header. `,
     tags: ['btp']
   }
 };
 export const Default = () => defaultExampleHtml;
-Default.parameters = {
-  docs: {
-    description: {
-      story: `
-        `
-    }
-  }
-};

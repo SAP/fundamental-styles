@@ -50,11 +50,12 @@ $blockActions: #{$fd-namespace}-search-field__actions;
   border: 0.0625rem solid var(--fdSearchField_Border_Color);
 
   &__icon {
-    @include fd-flex-center();
     @include fd-set-square(1rem);
     @include fd-set-position-left(var(--fdSearchField_Padding));
 
     @include fd-icon-selector() {
+      @include fd-flex-center();
+
       font-size: 1rem;
     }
 
