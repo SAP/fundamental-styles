@@ -1,3 +1,12 @@
+# [0.30.0-rc.60](https://github.com/SAP/fundamental-styles/compare/v0.30.0-rc.59...v0.30.0-rc.60) (2023-08-01)
+
+
+### Bug Fixes
+
+* **styles:** update Pagination with latest BTP Horizon [ci visual] ([#4725](https://github.com/SAP/fundamental-styles/issues/4725)) ([27a2fad](https://github.com/SAP/fundamental-styles/commit/27a2fad3c6808de0975702f01225bc63d20120a9))
+
+
+
 # [0.30.0-rc.59](https://github.com/SAP/fundamental-styles/compare/v0.30.0-rc.58...v0.30.0-rc.59) (2023-07-30)
 
 
