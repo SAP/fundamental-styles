@@ -20,13 +20,13 @@
 	"aBadgeParameters": [
 		{
 			"Id": "sapBrandColor",
-			"CssValue": "#7a5100",
+			"CssValue": "#795100",
 			"Label": "Brand Color",
 			"Tags": "Quick,Base,Color,Mobile"
 		},
 		{
 			"Id": "sapHighlightColor",
-			"CssValue": "#7a5100",
+			"CssValue": "#795100",
 			"Label": "Highlight Color",
 			"Tags": "Quick,Base,Content,Color"
 		},

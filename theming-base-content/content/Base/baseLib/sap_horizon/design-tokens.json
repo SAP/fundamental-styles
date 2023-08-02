@@ -2373,39 +2373,39 @@
       "type": "file"
     },
     "sapFontUrl_SAP-icons-Business-Suite_woff2": {
-      "value": "url(./fonts/BusinessSuiteInAppSymbols.woff2)",
+      "value": "url(./../sap_horizon/fonts/BusinessSuiteInAppSymbols.woff2)",
       "type": "file"
     },
     "sapFontUrl_SAP-icons-Business-Suite_woff": {
-      "value": "url(./fonts/BusinessSuiteInAppSymbols.woff)",
+      "value": "url(./../sap_horizon/fonts/BusinessSuiteInAppSymbols.woff)",
       "type": "file"
     },
     "sapFontUrl_SAP-icons-Business-Suite_ttf": {
-      "value": "url(./fonts/BusinessSuiteInAppSymbols.ttf)",
+      "value": "url(./../sap_horizon/fonts/BusinessSuiteInAppSymbols.ttf)",
       "type": "file"
     },
     "sapFontUrl_SAP-icons-TNT_woff2": {
-      "value": "url(./fonts/SAP-icons-TNT.woff2)",
+      "value": "url(./../sap_horizon/fonts/SAP-icons-TNT.woff2)",
       "type": "file"
     },
     "sapFontUrl_SAP-icons-TNT_woff": {
-      "value": "url(./fonts/SAP-icons-TNT.woff)",
+      "value": "url(./../sap_horizon/fonts/SAP-icons-TNT.woff)",
       "type": "file"
     },
     "sapFontUrl_SAP-icons-TNT_ttf": {
-      "value": "url(./fonts/SAP-icons-TNT.ttf)",
+      "value": "url(./../sap_horizon/fonts/SAP-icons-TNT.ttf)",
       "type": "file"
     },
     "sapFontUrl_SAP-icons_woff2": {
-      "value": "url(./fonts/SAP-icons.woff2)",
+      "value": "url(./../sap_horizon/fonts/SAP-icons.woff2)",
       "type": "file"
     },
     "sapFontUrl_SAP-icons_woff": {
-      "value": "url(./fonts/SAP-icons.woff)",
+      "value": "url(./../sap_horizon/fonts/SAP-icons.woff)",
       "type": "file"
     },
     "sapFontUrl_SAP-icons_ttf": {
-      "value": "url(./fonts/SAP-icons.ttf)",
+      "value": "url(./../sap_horizon/fonts/SAP-icons.ttf)",
       "type": "file"
     },
     "sapContent_DisabledOpacity": {
@@ -9426,7 +9426,7 @@
         "type": "internal"
       },
       "_sapCriticalTextColorL": {
-        "value": "{Semantic._sapCriticalColorL} - 9%",
+        "value": "{Semantic._sapCriticalColorL} - 10%",
         "type": "internal"
       },
       "_sapCriticalTextColorA": {
@@ -12620,7 +12620,7 @@
         "type": "internal"
       },
       "_sapButton_BorderColorL": {
-        "value": "{Application._sapBackgroundColorL} - 20%",
+        "value": "{Application._sapBackgroundColorL} - 4%",
         "type": "internal"
       },
       "_sapButton_BorderColorA": {

@@ -12620,7 +12620,7 @@
         "type": "internal"
       },
       "_sapButton_BorderColorL": {
-        "value": "{Application._sapBackgroundColorL} + 20%",
+        "value": "{Application._sapBackgroundColorL} + 14%",
         "type": "internal"
       },
       "_sapButton_BorderColorA": {

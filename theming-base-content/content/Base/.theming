@@ -4,7 +4,7 @@
 	"sLabel": "SAP Base Framework",
 	"sDescription": "The SAP Base Framework contains theming data shared by all HTML based SAP UI frameworks.",
 	"sVendor": "SAP",
-	"sVersion": "11.4.2",
+	"sVersion": "11.6.4",
 	"aBuildFiles": [
 		"preview",
 		"css_variables"
@@ -22,6 +22,5 @@
 	"sRuntimeResourcePathPattern": "%../%%frameworkId%/%libId%/%themeId%",
 	"sBaseLibraryId": "baseLib",
 	"sBaseThemeId": "baseTheme",
-	"sBaseFileId": "base",
-	"sFileCheck": "ALL"
+	"sBaseFileId": "base"
 }
