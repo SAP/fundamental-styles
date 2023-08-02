@@ -67,7 +67,7 @@
     "@nrwl/nx-plugin": "15.8.7",
     "@nrwl/react": "15.8.7",
     "@nrwl/web": "15.8.7",
-    "@sap-theming/theming-base-content": "11.6.3",
+    "@sap-theming/theming-base-content": "11.6.4",
     "@storybook/addon-a11y": "7.0.27",
     "@storybook/addon-actions": "7.0.27",
     "@storybook/addon-controls": "7.0.27",
