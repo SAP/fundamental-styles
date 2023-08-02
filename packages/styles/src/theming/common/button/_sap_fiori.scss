@@ -41,8 +41,11 @@
   --fdButton_Menu_Transparent_Separator_Display: block;
 
   /** Tool Header */
+  --fdButton_ToolHeader_Color_Active: var(--sapButton_Active_TextColor);
+  --fdButton_ToolHeader_Background_Active: var(--sapButton_Lite_Active_Background);
+  --fdButton_ToolHeader_Background_Focus: var(--sapButton_Lite_Background);
   --fdButton_ToolHeader_Border_Color_Normal: transparent;
-  --fdButton_ToolHeader_Border_Color_Hover: transparent;
+  --fdButton_ToolHeader_Border_Color_Hover: var(--sapButton_Lite_Hover_BorderColor);
   --fdButton_ToolHeader_Border_Color_Active: transparent;
   --fdButton_ToolHeader_Border_Color_Focus: transparent;
   --fdButton_ToolHeader_Border_Color_Disabled: transparent;
@@ -50,8 +53,11 @@
   --fdButton_ToolHeader_Badge_Border_Color: var(--sapShellColor);
 
   /** Nested Button */
+  --fdButton_Nested_Color_Active: var(--sapButton_Active_TextColor);
+  --fdButton_Nested_Background_Active: var(--sapButton_Lite_Active_Background);
+  --fdButton_Nested_Background_Focus: var(--sapButton_Lite_Background);
   --fdButton_Nested_Border_Color_Normal: transparent;
-  --fdButton_Nested_Border_Color_Hover: transparent;
+  --fdButton_Nested_Border_Color_Hover: var(--sapButton_Lite_Hover_BorderColor);
   --fdButton_Nested_Border_Color_Active: transparent;
   --fdButton_Nested_Border_Color_Focus: transparent;
   --fdButton_Nested_Border_Color_Disabled: transparent;

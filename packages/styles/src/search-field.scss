@@ -1,0 +1,199 @@
+@import "./new-settings";
+@import "./mixins";
+
+$block: #{$fd-namespace}-search-field;
+$blockUnderline: #{$fd-namespace}-search-field__underline;
+$blockActions: #{$fd-namespace}-search-field__actions;
+
+.#{$block} {
+  // Search Field
+  --fdSearchField_Height: 2.5rem;
+  --fdSearchField_Height_Compact: 2rem;
+  --fdSearchField_Height_Border: calc(var(--fdSearchField_Height) - 0.125rem);
+  --fdSearchField_Border_Radius: 2rem;
+  --fdSearchField_Padding: 0.625rem;
+  --fdSearchField_Padding_Compact: 0.5rem;
+  --fdSearchField_Box_Shadow: var(--sapField_Shadow);
+  --fdSearchField_Background: var(--sapShell_InteractiveBackground);
+  --fdSearchField_Color: var(--sapShell_TextColor);
+
+  // Search Field Icon
+  --fdSearchField_Icon_Size: 1rem;
+  --fdSearchField_Icon_Size_Offset: 0.375rem;
+
+  // Actions
+  --fdSearchField_Actions_Offset: 0.25rem;
+  --fdSearchField_Actions_Offset_Compact: 0.1875rem;
+
+  // Actions Button
+  --fdSearchField_Action_Container_Size: 2rem;
+  --fdSearchField_Action_Container_Size_Compact: 1.625rem;
+  --fdSearchField_Clear_Button_Display: none;
+
+  // Search Field Input Padding Left Calculations
+  --fdSearchField_Padding_Left: calc(var(--fdSearchField_Padding) + var(--fdSearchField_Icon_Size) + var(--fdSearchField_Icon_Size_Offset));
+  --fdSearchField_Padding_Left_Compact: calc(var(--fdSearchField_Padding_Compact) + var(--fdSearchField_Icon_Size) + var(--fdSearchField_Icon_Size_Offset));
+
+  // Search Field Input Padding Right Calculations
+  --fdSearchField_Padding_Right: calc(var(--fdSearchField_Action_Container_Size) + var(--fdSearchField_Actions_Offset));
+  --fdSearchField_Padding_Right_Compact: calc(var(--fdSearchField_Action_Container_Size_Compact) + var(--fdSearchField_Actions_Offset_Compact));
+  --fdSearchField_Padding_Right_Typed: calc(2 * var(--fdSearchField_Padding_Right));
+  --fdSearchField_Padding_Right_Typed_Compact: calc(2 * var(--fdSearchField_Padding_Right_Compact));
+
+  @include fd-reset();
+  @include fd-flex-vertical-center();
+  @include fd-set-height(var(--fdSearchField_Height));
+
+  position: relative;
+  width: 16rem;
+  border-radius: var(--fdSearchField_Border_Radius);
+  border: 0.0625rem solid var(--fdSearchField_Border_Color);
+
+  &__icon {
+    @include fd-set-square(1rem);
+    @include fd-set-position-left(var(--fdSearchField_Padding));
+
+    @include fd-icon-selector() {
+      @include fd-flex-center();
+
+      font-size: 1rem;
+    }
+
+    z-index: 10;
+    position: absolute;
+    color: var(--sapContent_NonInteractiveIconColor);
+  }
+
+  &__input {
+    @include fd-reset();
+    @include fd-set-height(var(--fdSearchField_Height_Border));
+    @include fd-set-paddings-x(var(--fdSearchField_Padding_Left), var(--fdSearchField_Padding_Right));
+    @include fd-set-paddings-y-equal(var(--fdSearchField_Padding));
+
+    z-index: 1;
+    width: 16rem;
+    border-radius: var(--fdSearchField_Border_Radius);
+    background: var(--fdSearchField_Background);
+    box-shadow: var(--fdSearchField_Box_Shadow);
+    color: var(--fdSearchField_Color);
+
+    &::placeholder {
+      font-family: var(--sapFontFamily);
+      font-size: var(--sapFontSize);
+      font-style: italic;
+      font-weight: normal;
+      line-height: 1rem;
+    }
+
+    &::-webkit-search-decoration,
+    &::-webkit-search-cancel-button,
+    &::-webkit-search-results-button,
+    &::-webkit-search-results-decoration {
+      -webkit-appearance: none;
+    }
+
+    &:not(:placeholder-shown) {
+      --fdSearchField_Padding_Right: calc(2 * (var(--fdSearchField_Action_Container_Size) + var(--fdSearchField_Actions_Offset)));
+      --fdSearchField_Background: var(--fdSearchField_Background_Focus);
+      --fdSearchField_Box_Shadow: var(--sapSearchHover_Shadow);
+
+      @include fd-compact-and-condensed() {
+        --fdSearchField_Padding_Right: var(--fdSearchField_Padding_Right_Typed_Compact);
+      }
+
+      & + .#{$blockUnderline} {
+        display: none;
+      }
+
+      & ~ .#{$blockActions} {
+        --fdSearchField_Clear_Button_Display: inline-flex;
+      }
+
+      @include fd-focus() {
+        --fdSearchField_Box_Shadow: var(--sapSearchHover_Shadow);
+
+        outline: none;
+      }
+    }
+
+    @include fd-hover() {
+      --fdSearchField_Background: var(--fdSearchField_Background_Hover);
+      --fdSearchField_Box_Shadow: var(--sapSearchHover_Shadow);
+
+      & + .#{$blockUnderline} {
+        display: none;
+      }
+    }
+
+    @include fd-focus() {
+      --fdSearchField_Background: var(--fdSearchField_Background_Focus);
+      --fdSearchField_Border_Color: transparent;
+      --fdSearchField_Box_Shadow: none;
+
+      outline: var(--fdSearchField_Outline);
+
+      & + .#{$blockUnderline} {
+        display: none;
+      }
+    }
+  }
+
+  &__underline {
+    @include fd-reset();
+
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+    border-radius: var(--fdSearchField_Border_Radius);
+
+    &::after {
+      bottom: 0;
+      content: "";
+      z-index: 30;
+      width: 100%;
+      height: 0.0625rem;
+      position: absolute;
+      background: var(--fdSearchField_Underline_Color);
+    }
+  }
+
+  &__actions {
+    @include fd-reset();
+    @include fd-flex-vertical-center();
+    @include fd-set-position-right(var(--fdSearchField_Actions_Offset));
+
+    z-index: 10;
+    height: 100%;
+    position: absolute;
+
+    button {
+      @include fd-disabled () {
+        opacity: 1;
+      }
+    }
+  }
+
+  &__action-container {
+    @include fd-reset();
+    @include fd-flex-center();
+    @include fd-set-square(var(--fdSearchField_Action_Container_Size));
+
+    &:first-child {
+      display: var(--fdSearchField_Clear_Button_Display);
+    }
+
+    button {
+      --fdButton_Nested_Color: var(--sapShell_TextColor);
+    }
+  }
+
+  @include fd-compact-and-condensed() {
+    --fdSearchField_Height: var(--fdSearchField_Height_Compact);
+    --fdSearchField_Padding: var(--fdSearchField_Padding_Compact);
+    --fdSearchField_Actions_Offset: var(--fdSearchField_Actions_Offset_Compact);
+    --fdSearchField_Action_Container_Size: var(--fdSearchField_Action_Container_Size_Compact);
+    --fdSearchField_Padding_Left: var(--fdSearchField_Padding_Left_Compact);
+    --fdSearchField_Padding_Right: var(--fdSearchField_Padding_Right_Compact);
+  }
+}
