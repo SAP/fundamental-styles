@@ -45,6 +45,12 @@
       &::after {
         border-color: var(--sapContent_ContrastFocusColor);
       }
+
+      @include fd-active() {
+        &::after {
+          border-color: var(--sapContent_FocusColor);
+        }
+      }
     }
 
     // @deprecated selected state

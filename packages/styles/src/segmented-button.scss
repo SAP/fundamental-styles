@@ -1,47 +1,98 @@
 @import "./new-settings";
 @import "./mixins";
 @import "./mixins/button/button-helper";
+@import "./mixins/button/button-types";
 
 $block: #{$fd-namespace}-segmented-button;
 
 .#{$block} {
   @include fd-reset();
-  @include fd-button-pad();
+  // @include fd-button-pad();
 
   display: inline-flex;
   vertical-align: middle;
+  background: var(--sapButton_Background);
+  border: var(--sapButton_BorderColor) solid var(--sapButton_BorderWidth);
+  border-radius: var(--sapButton_BorderCornerRadius);
 
-  button {
-    margin: 0;
+  &__item {
+    --fdButton_Height: 2.25rem;
+    --fdButton_Clickable_Height: 2.75rem;
+    --fdButton_Padding_X: 0.625rem;
+    --fdButton_Min_Width: 2.25rem;
 
-    @include fd-hover() {
-      z-index: 1;
-    }
+    background-color: var(--fdButtonBackgorundColor);
 
-    &:first-child {
-      border-radius: var(--fdButton_Border_Radius_Left);
-    }
+    @include fd-reset();
+    @include fd-button-reset();
+    @include fd-inline-flex-center();
+    @include fd-set-paddings-x-equal(calc(var(--fdButton_Padding_X) - var(--sapButton_BorderWidth)));
+    @include _fd-button-type(
+      $defaultText: var(--sapButton_Lite_TextColor),
+      $defaultBorder: var(--sapButton_Lite_BorderColor),
+      $defaultBackground: var(--sapButton_Lite_Background),
+      $hoverText: var(--sapButton_Lite_Hover_TextColor),
+      $hoverBorder: var(--sapButton_Lite_Hover_BorderColor),
+      $hoverBackground: var(--sapButton_Lite_Hover_Background),
+      $activeBorder: var(--sapButton_Lite_Active_BorderColor),
+      $activeBackground: var(--sapButton_Lite_Active_Background)
+    );
 
-    &:not(:first-child):not(:last-child) {
-      border-radius: var(--fdButton_Segmented_Middle_Border_Radius);
-    }
-
-    &:last-child {
-      border-radius: var(--fdButton_Border_Radius_Right);
-    }
-
-    &:not(:last-child) {
-      @include fd-set-margin-right(var(--fdButton_Segmented_Border_Offset));
-    }
-
-    @include fd-rtl() {
-      &:first-child {
-        border-radius: var(--fdButton_Border_Radius_Left_RTL);
-      }
-
-      &:last-child {
-        border-radius: var(--fdButton_Border_Radius_Right_RTL);
-      }
-    }
+    height: var(--fdButton_Height);
+    max-height: var(--fdButton_Height);
+    min-width: var(--fdButton_Min_Width);
+    position: relative;
+    text-align: center;
+    text-shadow: var(--fdButton_Text_Shadow);
+    border-style: solid;
+    border-width: var(--sapButton_BorderWidth);
+    color: var(--sapButton_TextColor);
   }
+
+  &__item-text {
+    @include fd-reset();
+    @include fd-ellipsis();
+
+    font-weight: inherit;
+    color: inherit;
+  }
+
+  // button {
+  //   border: none;
+  //   background: none;
+  // }
+
+  // button {
+  //   margin: 0;
+
+  //   @include fd-hover() {
+  //     z-index: 1;
+  //   }
+
+  //   &:first-child {
+  //     border-radius: var(--fdButton_Border_Radius_Left);
+  //   }
+
+  //   &:not(:first-child):not(:last-child) {
+  //     border-radius: var(--fdButton_Segmented_Middle_Border_Radius);
+  //   }
+
+  //   &:last-child {
+  //     border-radius: var(--fdButton_Border_Radius_Right);
+  //   }
+
+  //   &:not(:last-child) {
+  //     @include fd-set-margin-right(var(--fdButton_Segmented_Border_Offset));
+  //   }
+
+  //   @include fd-rtl() {
+  //     &:first-child {
+  //       border-radius: var(--fdButton_Border_Radius_Left_RTL);
+  //     }
+
+  //     &:last-child {
+  //       border-radius: var(--fdButton_Border_Radius_Right_RTL);
+  //     }
+  //   }
+  // }
 }
