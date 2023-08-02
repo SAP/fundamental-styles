@@ -1,3 +1,12 @@
+# [0.30.0-rc.61](https://github.com/SAP/fundamental-styles/compare/v0.30.0-rc.60...v0.30.0-rc.61) (2023-08-02)
+
+
+### Features
+
+* **styles:** introduce BTP Search field component [ci visual] ([#4729](https://github.com/SAP/fundamental-styles/issues/4729)) ([579d1de](https://github.com/SAP/fundamental-styles/commit/579d1de75507e1ad54a124a28cbc48bf42adefc7))
+
+
+
 # [0.30.0-rc.60](https://github.com/SAP/fundamental-styles/compare/v0.30.0-rc.59...v0.30.0-rc.60) (2023-08-01)
 
 
