@@ -6,7 +6,6 @@ Thumbs.db
 .idea
 .vscode
 .tmp
-package-lock.json
 *.log
 *.tgz
 __diff_output__
@@ -23,3 +22,10 @@ stories/*/*.visual.js
 *.visual.ts
 *.accessibility.test.js
 introduction.stories.mdx
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
