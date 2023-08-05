@@ -1726,6 +1726,10 @@
     --sapChart_Sequence_11: #3571aa;
     --sapChart_Sequence_Neutral: #848f94;
     --sapSearchHover_Shadow: 0 0 0.125rem 0 rgba(0, 0, 0, 0.16), 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.16);
+    --sapMenu_Background: var(--sapList_Background);
+    --sapMenu_Hover_Background: var(--sapList_Hover_Background);
+    --sapMenu_Active_Background: var(--sapList_Active_Background);
+    --sapMenu_Selected_Background: var(--sapList_Hover_SelectionBackground);
   }
 
   .background-image--sapCompanyLogo {
