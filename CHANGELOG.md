@@ -1,3 +1,12 @@
+## [0.30.2-rc.1](https://github.com/SAP/fundamental-styles/compare/v0.30.2-rc.0...v0.30.2-rc.1) (2023-08-05)
+
+
+### Features
+
+* **styles:** add BTP nav items ([#4743](https://github.com/SAP/fundamental-styles/issues/4743)) ([4cf0acb](https://github.com/SAP/fundamental-styles/commit/4cf0acb512f983a98ab6c8f9a39079812a27817d))
+
+
+
 ## [0.30.2-rc.0](https://github.com/SAP/fundamental-styles/compare/v0.30.1...v0.30.2-rc.0) (2023-08-04)
 
 
