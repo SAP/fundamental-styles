@@ -1,3 +1,12 @@
+## [0.30.2-rc.2](https://github.com/SAP/fundamental-styles/compare/v0.30.2-rc.1...v0.30.2-rc.2) (2023-08-08)
+
+
+### Bug Fixes
+
+* **styles:** popover resize handle simplification [ci visual] ([#4755](https://github.com/SAP/fundamental-styles/issues/4755)) ([d1ed62f](https://github.com/SAP/fundamental-styles/commit/d1ed62f1d24e00ca0e4f170e339c8135d898f9fb))
+
+
+
 ## [0.30.2-rc.1](https://github.com/SAP/fundamental-styles/compare/v0.30.2-rc.0...v0.30.2-rc.1) (2023-08-05)
 
 
