@@ -1,37 +1,36 @@
-@import "./new-settings";
-@import "./mixins";
+@import './new-settings';
+@import './mixins';
 
 $block: #{$fd-namespace}-calendar;
 
 // Special Days
 $fd-calendar-special-days: (
-  "1": var(--sapLegendColor1),
-  "2": var(--sapLegendColor2),
-  "3": var(--sapLegendColor3),
-  "4": var(--sapLegendColor4),
-  "5": var(--sapLegendColor5),
-  "6": var(--sapLegendColor6),
-  "7": var(--sapLegendColor7),
-  "8": var(--sapLegendColor8),
-  "9": var(--sapLegendColor9),
-  "10": var(--sapLegendColor10),
-  "11": var(--sapLegendColor11),
-  "12": var(--sapLegendColor12),
-  "13": var(--sapLegendColor13),
-  "14": var(--sapLegendColor14),
-  "15": var(--sapLegendColor15),
-  "16": var(--sapLegendColor16),
-  "17": var(--sapLegendColor17),
-  "18": var(--sapLegendColor18),
-  "19": var(--sapLegendColor19),
-  "20": var(--sapLegendColor20),
+  '1': var(--sapLegendColor1),
+  '2': var(--sapLegendColor2),
+  '3': var(--sapLegendColor3),
+  '4': var(--sapLegendColor4),
+  '5': var(--sapLegendColor5),
+  '6': var(--sapLegendColor6),
+  '7': var(--sapLegendColor7),
+  '8': var(--sapLegendColor8),
+  '9': var(--sapLegendColor9),
+  '10': var(--sapLegendColor10),
+  '11': var(--sapLegendColor11),
+  '12': var(--sapLegendColor12),
+  '13': var(--sapLegendColor13),
+  '14': var(--sapLegendColor14),
+  '15': var(--sapLegendColor15),
+  '16': var(--sapLegendColor16),
+  '17': var(--sapLegendColor17),
+  '18': var(--sapLegendColor18),
+  '19': var(--sapLegendColor19),
+  '20': var(--sapLegendColor20)
 );
 
 @mixin fd-legend-days($nameColorMap) {
-
-  [class*=#{$block}__item--legend-]:not(.#{$block}__item--today) {
+  [class*='#{$block}__item--legend-']:not(.#{$block}__item--today) {
     .#{$block}__text-wrapper::after {
-      content: "";
+      content: '';
       position: absolute;
       width: 100%;
       height: 0.3125rem;
@@ -49,13 +48,13 @@ $fd-calendar-special-days: (
     }
   }
 
-  .#{$block}__item--today[class*=#{$block}__item--legend-] {
+  .#{$block}__item--today[class*='#{$block}__item--legend-'] {
     @include fd-focus() {
       .#{$block}__text-wrapper::after {
         border-bottom: none;
       }
       .#{$block}__text::after {
-        content: "";
+        content: '';
         position: absolute;
         width: 100%;
         height: 0.1875rem;
@@ -66,7 +65,7 @@ $fd-calendar-special-days: (
     }
 
     .#{$block}__text-wrapper::after {
-      content: "";
+      content: '';
       position: absolute;
       width: calc(100% - 0.125rem);
       height: 0.5rem;
@@ -87,7 +86,7 @@ $fd-calendar-special-days: (
   @each $name, $color in $nameColorMap {
     .#{$block}__item--legend-#{$name}:not(.#{$block}__item--today) {
       .#{$block}__text-wrapper::after {
-        box-shadow: inset 0 calc(var(--fdCalendar_Special_Day_Marker_Height) * -1) 0 #{ $color };
+        box-shadow: inset 0 calc(var(--fdCalendar_Special_Day_Marker_Height) * -1) 0 #{$color};
       }
     }
 
@@ -101,12 +100,12 @@ $fd-calendar-special-days: (
     .#{$block}__item--today.#{$block}__item--legend-#{$name} {
       @include fd-focus() {
         .#{$block}__text::after {
-          box-shadow: inset 0 calc(var(--fdCalendar_Special_Day_Marker_Height) * -1) 0 #{ $color };
+          box-shadow: inset 0 calc(var(--fdCalendar_Special_Day_Marker_Height) * -1) 0 #{$color};
         }
       }
 
       .#{$block}__text-wrapper::after {
-        content: "";
+        content: '';
         position: absolute;
         width: calc(100% - 0.125rem);
         height: var(--fdCalendar_Item_Text_Wrapper_Height);
@@ -132,7 +131,7 @@ $fd-calendar-special-days: (
 }
 
 @mixin fd-today_after() {
-  content: "";
+  content: '';
   position: absolute;
   width: calc(100% - 0.125rem);
   height: calc(100% - 0.125rem);
@@ -164,7 +163,10 @@ $fd-calendar-special-days: (
   --fdCalendar_Item_Height: 2.75rem;
   --fdCalendar_Padding: 0.5rem;
   --fdCalendar_Background: var(--sapList_Background);
-  --fdCalendar_Width: calc(var(--fdCalendar_Item_Width) * 8 + 2 * var(--fdCalendar_Padding) + var(--fdCalendar_Item_Spacing) * 16);
+  --fdCalendar_Width:
+    calc(
+      var(--fdCalendar_Item_Width) * 8 + 2 * var(--fdCalendar_Padding) + var(--fdCalendar_Item_Spacing) * 16
+    );
   --fdCalendar_Action_Padding: 0.25rem;
   --fdCalendar_Action_Width: auto;
   --fdCalendar_Button_Horizontal_Space: 0.25rem;
@@ -213,7 +215,7 @@ $fd-calendar-special-days: (
       margin-left: var(--fdCalendar_Action_Padding);
     }
 
-    > [type="button"] {
+    > [type='button'] {
       width: 100%;
     }
 
@@ -228,7 +230,7 @@ $fd-calendar-special-days: (
       @include fd-set-margin-left(auto);
     }
 
-    [class*="sap-icon"] {
+    [class*='sap-icon'] {
       @include fd-rtl() {
         transform: scaleX(-1);
       }
@@ -329,6 +331,11 @@ $fd-calendar-special-days: (
       }
     }
 
+    // Fixes the issue on ngx side.
+    &:focus-visible {
+      outline: none;
+    }
+
     @include fd-focus() {
       .#{$block}__text-wrapper {
         border: var(--fdCalendar_Text_Wrapper_Border);
@@ -414,6 +421,9 @@ $fd-calendar-special-days: (
     font-size: var(--fdCalendar_Item_Font_Size);
     text-shadow: var(--fdCalendar_Text_Shadow);
     border-radius: 0.1875rem;
+    flex-grow: 1;
+    // Compensate inner borders.
+    max-width: calc(100% - 0.7rem);
     position: relative;
 
     @include fd-focus() {
@@ -423,11 +433,14 @@ $fd-calendar-special-days: (
 
   // CALENDAR COMPACT
   @include fd-compact-or-condensed() {
-    --fdCalendar_Width: calc(var(--fdCalendar_Action_Width) * 8 + 2 * var(--fdCalendar_Padding) + var(--fdCalendar_Item_Spacing) * 16);
+    --fdCalendar_Width:
+      calc(
+        var(--fdCalendar_Action_Width) * 8 + 2 * var(--fdCalendar_Padding) + var(--fdCalendar_Item_Spacing) * 16
+      );
     --fdCalendar_Padding: 0.5rem;
     --fdCalendar_Item_Text_Height: 1.375rem;
     --fdCalendar_Item_Height: 2rem;
-    --fdCalendar_Button_Horizontal_Space: 0.1875rem;// This value is used to create additional vertical space on the button which should be created by currently not implemented "Touchable Area" of the button.
+    --fdCalendar_Button_Horizontal_Space: 0.1875rem; // This value is used to create additional vertical space on the button which should be created by currently not implemented "Touchable Area" of the button.
     --fdCalendar_Action_Width: 2rem;
     --fdCalendar_Item_Width: var(--fdCalendar_Action_Width);
   }
