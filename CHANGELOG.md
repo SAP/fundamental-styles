@@ -1,3 +1,12 @@
+## [0.30.2-rc.6](https://github.com/SAP/fundamental-styles/compare/v0.30.2-rc.5...v0.30.2-rc.6) (2023-08-09)
+
+
+### Bug Fixes
+
+* **styles:** toolbar ejected popover scope [ci visual] ([#4760](https://github.com/SAP/fundamental-styles/issues/4760)) ([f6379fe](https://github.com/SAP/fundamental-styles/commit/f6379fe410e13cb5f5f9749d9365a848de8de904))
+
+
+
 ## [0.30.2-rc.5](https://github.com/SAP/fundamental-styles/compare/v0.30.2-rc.4...v0.30.2-rc.5) (2023-08-08)
 
 
