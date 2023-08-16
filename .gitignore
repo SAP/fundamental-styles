@@ -12,10 +12,6 @@ __diff_output__
 storybook-chromatic
 storybook-static
 dist
-dist-theming
-dist-fn
-dist-fn-icons
-dist-common-css
 node_modules
 stories/*/*.visual.ts
 stories/*/*.visual.js

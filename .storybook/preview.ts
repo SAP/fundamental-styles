@@ -91,7 +91,6 @@ export default {
         },
         ['styles-theme']: {},
         ['cx-theme']: {},
-        ['fn-theme']: {},
         ['common-css-theme']: {},
         directionality: {
             title: 'Directionality',
