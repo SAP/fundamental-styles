@@ -7,9 +7,6 @@
       "common-css/*": [
         "packages/common-css/*"
       ],
-      "fn/*": [
-        "packages/fn/*"
-      ],
       "icons/*": [
         "packages/icons/*"
       ],

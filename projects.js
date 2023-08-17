@@ -3,7 +3,6 @@ const workspaceProjects = {
     styles: 'packages/styles',
     ['common-css']: 'packages/common-css',
     cx: 'packages/cx',
-    fn: 'packages/fn'
 };
 
 const dashCase = (text) => text ? snakeCase(text).replace(/_/g, '-') : undefined;
@@ -12,7 +11,6 @@ const projects = [
     'styles',
     'common-css',
     'cx',
-    'fn'
 ].reduce((acc, next) => {
     acc[next] = workspaceProjects[next];
     return acc;

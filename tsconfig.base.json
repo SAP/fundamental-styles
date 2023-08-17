@@ -29,13 +29,11 @@
         "paths": {
             "@fundamental-styles/cx": ["packages/cx"],
             "common-css": ["packages/common-css"],
-            "fn": ["packages/fn", "packages/fn/index.ts"],
             "fundamental-styles/configuration": ["packages/configuration/src/index.ts"],
             "fundamental-styles/doc-ui": ["packages/doc-ui/src/index.ts"],
             "fundamental-styles/storybook": ["packages/storybook/src/index.ts"],
             "fundamental-styles/storybook/current-package": ["packages/storybook/src/lib/addons/current-package"],
             "fundamental-styles/utils": ["packages/utils/src/index.ts"],
-            "icons": ["packages/icons"],
             "styles": ["packages/styles", "packages/styles/index.ts"],
             "theming-preview": ["packages/theming-preview/src/index.js"],
             "workspace-plugins": ["packages/workspace-plugins/src/index.ts"]

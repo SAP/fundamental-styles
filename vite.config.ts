@@ -14,14 +14,6 @@ const packagesAliases = [
         replacement: resolve(__dirname, 'packages/common-css')
     },
     {
-        find: /^fn/,
-        replacement: resolve(__dirname, 'packages/fn')
-    },
-    {
-        find: /^icons/,
-        replacement: resolve(__dirname, 'packages/icons')
-    },
-    {
         find: /^theming-base-content/,
         replacement: resolve(__dirname, 'node_modules/@sap-theming/theming-base-content')
     }
