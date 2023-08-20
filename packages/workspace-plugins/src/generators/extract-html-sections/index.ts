@@ -17,13 +17,10 @@ import {
     VariableDeclarator
 } from '@babel/types';
 import generate from '@babel/generator';
-import { names } from '@nrwl/devkit';
+import { names } from '@nx/devkit';
 import { format as prettierFormat } from 'prettier';
 
-export default async function(
-    tree: Tree,
-    schema: Schema
-): Promise<void> {
+export default async function (tree: Tree, schema: Schema): Promise<void> {
     const projectConfiguration = readProjectConfiguration(tree, schema.projectName);
     if (!projectConfiguration.targets) {
         return;
@@ -33,7 +30,9 @@ export default async function(
     for (const storyFile of storyFiles) {
         const originalContents = tree.read(storyFile, 'utf-8') as string;
         const parsed = babelParser(originalContents);
-        const exports = (parsed?.program.body || []).filter(node => node.type === 'ExportNamedDeclaration') as Array<ExportNamedDeclaration>;
+        const exports = (parsed?.program.body || []).filter(
+            (node) => node.type === 'ExportNamedDeclaration'
+        ) as Array<ExportNamedDeclaration>;
         const parsedPath = parsePath(storyFile);
 
         for (const node of exports) {
@@ -56,7 +55,9 @@ export default async function(
                         // }
                         tree.write(`${parsedPath.dir}/${templateFileName}`, contents);
                     };
-                    const extractFromArrowFunctionExpression = (arrowFunction: ArrowFunctionExpression): Identifier | ArrowFunctionExpression['body'] => {
+                    const extractFromArrowFunctionExpression = (
+                        arrowFunction: ArrowFunctionExpression
+                    ): Identifier | ArrowFunctionExpression['body'] => {
                         const content = arrowFunction.body;
                         if (content.type === 'TemplateLiteral') {
                             if (content.quasis.length > 1) {
@@ -70,7 +71,9 @@ export default async function(
                     };
                     variable.init.body = extractFromArrowFunctionExpression(variable.init);
                     if (isIdentifier(variable.init.body)) {
-                        parsed?.program.body.unshift(importDeclaration([importDefaultSpecifier(propertyNameIdentifier)], fileNameLiteral));
+                        parsed?.program.body.unshift(
+                            importDeclaration([importDefaultSpecifier(propertyNameIdentifier)], fileNameLiteral)
+                        );
                     } else {
                         // debugger;
                     }

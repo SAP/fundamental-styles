@@ -1,6 +1,6 @@
 import { Tree } from 'nx/src/generators/tree';
 import { CreatePackageSchema } from './schema';
-import { formatFiles, generateFiles, getWorkspacePath, logger, names, updateJson, workspaceRoot } from '@nrwl/devkit';
+import { formatFiles, generateFiles, getWorkspacePath, logger, names, updateJson, workspaceRoot } from '@nx/devkit';
 import { parse } from '@babel/parser';
 import traverse from '@babel/traverse';
 import { types } from '@babel/core';
@@ -68,7 +68,10 @@ export default async function (tree: Tree, schema: CreatePackageSchema) {
                 ...workflowContent.match(/packagePaths: "(.*)"/)![1].split(','),
                 `dist/packages/${namings.fileName}`
             ].join(',');
-            tree.write(pathToWorkflow, workflowContent.replace(/packagePaths: "(.*)"/, `packagePaths: "${packageList}"`));
+            tree.write(
+                pathToWorkflow,
+                workflowContent.replace(/packagePaths: "(.*)"/, `packagePaths: "${packageList}"`)
+            );
         });
     }
 

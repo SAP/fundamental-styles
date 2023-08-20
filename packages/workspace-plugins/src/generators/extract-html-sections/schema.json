@@ -1,16 +1,15 @@
 {
-    "$schema": "http://json-schema.org/schema",
-    "cli": "nx",
-    "$id": "ExtractHTMLSections",
-    "title": "",
-    "type": "object",
-    "properties": {
-        "projectName": {
-            "type": "string",
-            "description": "The name of the project."
-        }
-    },
-    "required": [
-        "projectName"
-    ]
+  "$schema": "http://json-schema.org/schema",
+  "$id": "ExtractHTMLSections",
+  "title": "",
+  "type": "object",
+  "properties": {
+    "projectName": {
+      "type": "string",
+      "description": "The name of the project."
+    }
+  },
+  "required": [
+    "projectName"
+  ]
 }

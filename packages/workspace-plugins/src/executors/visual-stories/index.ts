@@ -1,4 +1,4 @@
-import { ExecutorContext, logger, names, workspaceRoot } from '@nrwl/devkit';
+import { ExecutorContext, logger, names, workspaceRoot } from '@nx/devkit';
 import { VisualStoriesSchema } from './schema';
 import glob from 'glob';
 import { themes as projectsThemes } from '../../../../../projects';
