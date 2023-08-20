@@ -1,3 +1,12 @@
+## [0.30.2-rc.13](https://github.com/SAP/fundamental-styles/compare/v0.30.2-rc.12...v0.30.2-rc.13) (2023-08-20)
+
+
+### Bug Fixes
+
+* removed fn-icons from publish ([#4773](https://github.com/SAP/fundamental-styles/issues/4773)) ([0bf09d1](https://github.com/SAP/fundamental-styles/commit/0bf09d15a538242a46537ddd0da024a7ef2de170))
+
+
+
 ## [0.30.2-rc.12](https://github.com/SAP/fundamental-styles/compare/v0.30.2-rc.11...v0.30.2-rc.12) (2023-08-14)
 
 
