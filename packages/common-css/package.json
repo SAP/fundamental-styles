@@ -5,10 +5,10 @@
     "homepage": "https://sap.github.io/fundamental-styles/",
     "description": "Fundamental Library Styles Common CSS",
     "repository": {
-      "type": "git",
-      "url": "https://github.com/SAP/fundamental-styles"
+        "type": "git",
+        "url": "https://github.com/SAP/fundamental-styles"
     },
     "dependencies": {
         "@sap-theming/theming-base-content": "SAP_THEMING_VERSION"
     }
-  }
+}

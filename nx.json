@@ -1,8 +1,7 @@
 {
-    "extends": "nx/presets/npm.json",
     "tasksRunnerOptions": {
         "default": {
-            "runner": "@nrwl/nx-cloud",
+            "runner": "nx-cloud",
             "options": {
                 "parallel": 5,
                 "cacheableOperations": ["stylelint", "build", "build-visual"],
@@ -10,6 +9,7 @@
             }
         }
     },
+    "extends": "nx/presets/npm.json",
     "workspaceLayout": {
         "libsDir": "packages",
         "appsDir": "apps"
@@ -30,21 +30,21 @@
         ".stylelintrc.json": "*"
     },
     "generators": {
-        "@nrwl/react": {
-            "application": {
-                "babel": true
-            }
-        },
-        "@nrwl/web:application": {
+        "@nx/web:application": {
             "style": "scss",
             "linter": "eslint",
             "unitTestRunner": "none",
             "e2eTestRunner": "none"
         },
-        "@nrwl/web:library": {
+        "@nx/web:library": {
             "style": "scss",
             "linter": "eslint",
             "unitTestRunner": "none"
+        },
+        "@nx/react": {
+            "application": {
+                "babel": true
+            }
         }
     },
     "defaultProject": "theming-preview"

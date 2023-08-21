@@ -1,7 +1,7 @@
 import { BuildExecutorSchema } from './schema';
-import { copyAssets } from '@nrwl/js';
+import { copyAssets } from '@nx/js';
 import { execSync } from 'child_process';
-import { ExecutorContext } from '@nrwl/devkit';
+import { ExecutorContext } from '@nx/devkit';
 import { copyFileSync, existsSync, readFileSync, rmSync, writeFileSync } from 'fs';
 import glob from 'glob';
 import { processWithPostCss } from '../shared/postcss';
@@ -27,12 +27,17 @@ export default async function runExecutor(options: BuildExecutorSchema, context:
     const compilationOutputPath = `${options.outputPath}/dist`;
 
     const projectJson = context.projectGraph?.nodes[projectName].data;
-    execSync(`npx sass -q --no-source-map --style expanded ${options.source}:${compilationOutputPath}`, { stdio: 'inherit' });
-    const assetsCopyResult = await copyAssets({
-        assets: options.assets || [],
-        outputPath: options.outputPath,
-        watch: false
-    }, context);
+    execSync(`npx sass -q --no-source-map --style expanded ${options.source}:${compilationOutputPath}`, {
+        stdio: 'inherit'
+    });
+    const assetsCopyResult = await copyAssets(
+        {
+            assets: options.assets || [],
+            outputPath: options.outputPath,
+            watch: false
+        },
+        context
+    );
     if (!assetsCopyResult.success) {
         return assetsCopyResult;
     }
@@ -58,25 +63,31 @@ export default async function runExecutor(options: BuildExecutorSchema, context:
 
     for (const file of files) {
         const content = readFileSync(file, 'utf-8');
-        const filePath = file.replace(new RegExp(`^${compilationOutputPath}(.*).css$`), `${compilationOutputPath}/js$1.mjs`);
-        const typesPath = file.replace(new RegExp(`^${compilationOutputPath}(.*).css$`), `${compilationOutputPath}/js$1.d.ts`);
+        const filePath = file.replace(
+            new RegExp(`^${compilationOutputPath}(.*).css$`),
+            `${compilationOutputPath}/js$1.mjs`
+        );
+        const typesPath = file.replace(
+            new RegExp(`^${compilationOutputPath}(.*).css$`),
+            `${compilationOutputPath}/js$1.d.ts`
+        );
         mkdirpSync(parse(filePath).dir);
         writeFileSync(filePath, `export default { cssSource: \`${content}\` };`);
         writeFileSync(typesPath, `declare const _default: { cssSource: string }; export default _default;`);
     }
     projectPackageJson['exports'] = {
         ...projectPackageJson['exports'],
-        "./dist/js/*": {
-            "types": "./dist/js/*.d.ts",
-            "default": "./dist/js/*.mjs"
+        './dist/js/*': {
+            types: './dist/js/*.d.ts',
+            default: './dist/js/*.mjs'
         },
-        "./dist/*.css": {
-            "default": "./dist/*.css"
+        './dist/*.css': {
+            default: './dist/*.css'
         },
-        "./dist/*": {
-            "default": "./dist/*"
+        './dist/*': {
+            default: './dist/*'
         }
-    }
+    };
     projectPackageJsonContent = JSON.stringify(projectPackageJson, null, 4);
 
     Object.entries(versions).forEach(([key, value]) => {

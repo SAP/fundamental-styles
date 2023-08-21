@@ -28,19 +28,13 @@
         "build-visual": {
             "executor": "workspace-plugins:visual-stories",
             "options": {
-                "themes": [
-                    "sap_fiori_3",
-                    "sap_horizon_hcb",
-                    "sap_horizon"
-                ],
-                "excludedStoriesKinds": [
-                    "^(Helpers|Dev)"
-                ]
+                "themes": ["sap_fiori_3", "sap_horizon_hcb", "sap_horizon"],
+                "excludedStoriesKinds": ["^(Helpers|Dev)"]
             },
-            "outputs": ["stories/Visuals/styles"]
+            "outputs": ["{workspaceRoot}/stories/Visuals/styles"]
         },
         "lint": {
-            "executor": "@nrwl/linter:eslint",
+            "executor": "@nx/linter:eslint",
             "outputs": ["{options.outputFile}"],
             "options": {
                 "lintFilePatterns": ["packages/styles/**/*.ts"]
