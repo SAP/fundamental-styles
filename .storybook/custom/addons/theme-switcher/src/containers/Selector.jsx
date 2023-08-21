@@ -43,7 +43,7 @@ const Selector = ({ api }) => {
         <WithTooltip
             placement="top"
             trigger="click"
-            closeOnClick
+            closeOnOutsideClick={true}
             tooltip={({ onHide }) => {
                 return <TooltipLinkList links={RenderThemes(onHide)}/>;
             }}

@@ -112,4 +112,3 @@ export const projects = Object.keys(workspaceProjects).reduce((acc, projectName)
     };
     return acc;
 }, {});
-export default projects;

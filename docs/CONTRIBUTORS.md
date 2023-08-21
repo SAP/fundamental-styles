@@ -1,4 +1,5 @@
 ## Directories and files
+
 First of all, project is using NX workspaces, so everything that is applicable to NX workspaces is applicable to this project as well.
 This file describes the specific things that are done for the `fundamental-styles`.
 * `./packages` - Here resides packages that are publishable or are for internal use.
@@ -77,4 +78,19 @@ StoryFunction.parameters = {
 };
 ```
 
+## Versioning
 
+fundamental-styles consists of multiple sub-packages and the versions for all of them
+are managed by the root package.json file. This is done to ensure that all the packages
+are in sync with each other. The versioning of the packages is done using
+[Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/) and [Semantic Versioning](https://semver.org/).
+
+All the information about the versioning is given in the links above
+but TL;DR is that before we reach version 1, every fix, feature or chore is resulting in the patch version change,
+if those changes do not break the API, and if they do, then the minor version is changed.
+
+After version 1, the patch version is the result of the bug fixes, minor version is the result of the new features,
+and major version is the result of the breaking changes.
+
+After every merge into the main, `rc` version is released automatically with the changes it includes,
+this ensures fast feedback loop for the users of the library, and allows us to test the changes in the real world.

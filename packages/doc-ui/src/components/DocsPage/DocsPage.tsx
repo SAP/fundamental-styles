@@ -10,6 +10,11 @@ import InfoLabels from '../InfoLabels';
 import Toc from '../Toc/Toc';
 import {SAPContext} from "../../contexts/SAPContext";
 
+
+/**
+ * DocsPage component that wraps all the components that make up the DocsPage
+ * in the Storybook Docs view.
+ */
 const DocsPage = () => {
     const {storyContext} = useContext(SAPContext);
 

@@ -30,6 +30,16 @@ export default {
             }
         },
         options: {
+            /**
+             * We want to sort the stories in the following order:
+             * 1. Introduction
+             * 2. Docs of Stories in alphabetical order
+             *
+             * This function can not use `typescript` or anything from outer scope
+             * because during compilation it will be extracted into separate chunk
+             * as-is and executed in the browser! Only `javascript` is allowed
+             * and it has to be self-contained.
+             */
             storySort: (a, b) => {
                 const introductionName = 'Introduction',
                     aIsIntroduction = a.title.includes(introductionName),
