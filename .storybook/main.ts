@@ -42,21 +42,21 @@ const config: StorybookConfig = {
     core: {
         disableTelemetry: true,
     },
-    storyIndexers: (indexers) => {
-        const indexer = async (fileName, opts) => {
+    experimental_indexers: (indexers) => {
+        const index = async (fileName, opts) => {
             const owner = getOwner({ importPath: './' + relative(process.cwd(), fileName).replace(/\\/g, '/') });
             const code = readFileSync(fileName, { encoding: 'utf-8' });
             return loadCsf(code, {
                 ...opts, fileName, makeTitle: (userTitle) => {
                     return owner ? `${owner.title} / ${userTitle}` : userTitle;
                 }
-            }).parse();
+            }).parse().indexInputs;
         };
 
         return [
             {
                 test: /(visual|stories)\.(js|ts)$/,
-                indexer
+                index
             } as any,
             ...(indexers || [])
         ];
