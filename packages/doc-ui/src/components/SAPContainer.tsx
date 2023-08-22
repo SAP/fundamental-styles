@@ -17,7 +17,6 @@ export const SAPContainer = ({children}) => {
         ...storyContext.parameters
     };
 
-    const [packageValue, setPackageValue] = useState(params["packageId"]);
     const [storyPackage, setStoryPackage] = useState(getPackage(storyContext));
     const [themeValue, setThemeValue] = useState('');
     const [directionalityValue, setDirectionalityValue] = useState(params["directionality"]);
@@ -32,12 +31,8 @@ export const SAPContainer = ({children}) => {
             const theme = params[`${storyPackage.value}-theme`] || storyPackage.defaultTheme;
             setThemeValue(theme);
         }
-    }, [storyContext, storyPackage])
+    }, [storyContext, storyPackage, params])
 
-    const setPackage = (packageId: string) => {
-        channel.emit(UPDATE_GLOBALS, {globals: {...storyContext.globals, packageId}});
-        setPackageValue(packageId);
-    }
 
     const setTheme = (theme: string) => {
         channel.emit(UPDATE_GLOBALS, {
@@ -68,8 +63,6 @@ export const SAPContainer = ({children}) => {
                 setTheme,
                 directionality: directionalityValue,
                 setDirectionality,
-                selectedPackage: packageValue,
-                setPackage,
                 contentDensity: contentDensityValue,
                 setContentDensity,
                 directionalities,

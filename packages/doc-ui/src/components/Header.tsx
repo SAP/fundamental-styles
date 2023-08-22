@@ -1,5 +1,4 @@
 import DirectionalitySelect from './DirectionalitySelect';
-import PackageSelect from './PackageSelect';
 import ThemeSelect from './ThemeSelect';
 import GithubLink from './GithubLink';
 import { IfBlock } from './IfBlock';
@@ -22,18 +21,13 @@ const Header = () => {
 
     return (
         <header className="fddocs-header">
-            <section className="fddocs-header--section">
-                <PackageSelect />
-            </section>
-            <section className="fddocs-header--section">
-                <IfBlock condition={!isVisualStory}>
-                    <HeaderSectionButton><DirectionalitySelect /></HeaderSectionButton>
-                    <HeaderSectionButton><ContentDensitySelect /></HeaderSectionButton>
-                    {(storyPackage?.themes || []).length > 0 &&
-                        <HeaderSectionButton><ThemeSelect /></HeaderSectionButton>}
-                </IfBlock>
-                <GithubLink />
-            </section>
+            <IfBlock condition={!isVisualStory}>
+                <HeaderSectionButton><DirectionalitySelect /></HeaderSectionButton>
+                <HeaderSectionButton><ContentDensitySelect /></HeaderSectionButton>
+                {(storyPackage?.themes || []).length > 0 &&
+                    <HeaderSectionButton><ThemeSelect /></HeaderSectionButton>}
+            </IfBlock>
+            <GithubLink />
         </header>
     );
 };

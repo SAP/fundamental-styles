@@ -86,9 +86,6 @@ export default {
         }
     },
     globalTypes : {
-        ['packageId']: {
-            defaultValue: 'all'
-        },
         ['styles-theme']: {},
         ['cx-theme']: {},
         ['common-css-theme']: {},
