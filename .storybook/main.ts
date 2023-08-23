@@ -34,7 +34,7 @@ const storybookAddons = ['@storybook/addon-actions', '@storybook/addon-links', '
             },
         },
     }
-}, '@storybook/addon-toolbars', '@storybook/addon-controls', './custom/addons/theme-switcher/register', './custom/addons/package-switch/register'];
+}, '@storybook/addon-toolbars', '@storybook/addon-controls', './custom/addons/theme-switcher/register'];
 const config: StorybookConfig = {
     stories: ['../stories/docs/introduction.stories.ts', '../stories/docs/compact-docs.stories.ts', `../packages/@${includedPackages}/**/*.@${includedStories}.@(ts|tsx|js|jsx)`, `../stories/**/*.@${includedStories}.@(ts|tsx|js|jsx)`],
     staticDirs: staticDirs,

@@ -114,33 +114,14 @@ $heading-toc-spacer: $docs-hd-tp + $docs-hd-bp + $docs-hd-ch + $docs-tm;
   color: #404040;
   background-color: #fff;
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: end;
   border-bottom: 2px solid #d7dbde;
   z-index: 1001;
 
   &--label {
     align-self: center;
     margin: 0 6px;
-  }
-
-  &--section {
-    display: flex;
-    align-items: center;
-
-    > * {
-      margin: 0 0.4rem;
-    }
-
-    &:first-child {
-      padding-left: 1rem;
-      justify-content: flex-start;
-    }
-
-    &:last-of-type {
-      padding-right: 1rem;
-      justify-content: flex-end;
-    }
   }
 
   a {

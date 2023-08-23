@@ -11,8 +11,6 @@ export interface SAPContextType {
     setDirectionality: (directionality: string) => void,
     contentDensity: string,
     setContentDensity: (directionality: string) => void,
-    selectedPackage?: string,
-    setPackage: (packageId: string) => void,
     directionalities: { value: string, title: string }[],
     contentDensities: { value: string, title: string }[],
 }
