@@ -7,48 +7,6 @@ $blockBody: #{$fd-namespace}-popover__body;
 .#{$block} {
   @include fd-reset();
 
-  --fdPopover_Offset: 100%;
-  --fdPopover_Center_Offset: 50%;
-  --fdPopover_Arrow_Size: 0.5rem;
-  --fdPopover_Body_Border_Radius: var(--fdPopover_Border_Radius);
-  --fdPopover_Body_Box_Shadow: var(--sapContent_Shadow2);
-  --fdPopover_Body_Box_Shadow_No_Arrow: var(--sapContent_Shadow1);
-
-  $fd-popover-z-index: map-get($fd-z-index-levels, 'top') !default;
-  $fd-popover-arrow-size: var(--fdPopover_Arrow_Size);
-  $fd-popover-arrow-size-inner: calc(var(--fdPopover_Arrow_Size) - var(--fdPopover_Border_Width)) !default;
-  $fd-popover-arrow-color: var(--fdPopover_Border_Color) !default;
-  $fd-popover-arrow-offset-y: calc(
-    var(--fdIcon_Button_Height) * 0.5 - var(--fdPopover_Arrow_Size) - var(--fdPopover_Border_Width)
-  );
-  $fd-popover-arrow-offset-x: calc(
-    var(--fdIcon_Button_Width) * 0.5 - var(--fdPopover_Arrow_Size) - var(--fdPopover_Border_Width)
-  );
-
-  @mixin fd-popover-arrow-x-end() {
-    &::before {
-      left: auto;
-      right: calc(#{$fd-popover-arrow-offset-x} + var(--fdPopover_Border_Width));
-    }
-
-    &::after {
-      left: auto;
-      right: #{$fd-popover-arrow-offset-x};
-    }
-
-    @include fd-rtl() {
-      &::before {
-        left: calc(#{$fd-popover-arrow-offset-x} + var(--fdPopover_Border_Width));
-        right: auto;
-      }
-
-      &::after {
-        left: #{$fd-popover-arrow-offset-x};
-        right: auto;
-      }
-    }
-  }
-
   position: relative;
   display: inline-block;
   max-width: 100%;
@@ -91,6 +49,12 @@ $blockBody: #{$fd-namespace}-popover__body;
   }
 
   &__body {
+    --fdPopover_Offset: 100%;
+    --fdPopover_Center_Offset: 50%;
+    --fdPopover_Arrow_Size: 0.5rem;
+    --fdPopover_Body_Border_Radius: var(--fdPopover_Border_Radius);
+    --fdPopover_Body_Box_Shadow: var(--sapContent_Shadow2);
+    --fdPopover_Body_Box_Shadow_No_Arrow: var(--sapContent_Shadow1);
     --fdIcon_Button_Height: 2.25rem;
     --fdIcon_Button_Width: 2.25rem;
     --fdPopover_Resize_Handle_Position_Top: auto;
@@ -101,6 +65,41 @@ $blockBody: #{$fd-namespace}-popover__body;
     --fdPopover_Resize_Handle_Cursor: se-resize;
     --fdPopover_Resize_Handle_Justify: flex-end;
     --fdPopover_Resize_Handle_Transform_Scale: 1;
+
+    $fd-popover-z-index: map-get($fd-z-index-levels, 'top') !default;
+    $fd-popover-arrow-size: var(--fdPopover_Arrow_Size);
+    $fd-popover-arrow-size-inner: calc(var(--fdPopover_Arrow_Size) - var(--fdPopover_Border_Width)) !default;
+    $fd-popover-arrow-color: var(--fdPopover_Border_Color) !default;
+    $fd-popover-arrow-offset-y: calc(
+      var(--fdIcon_Button_Height) * 0.5 - var(--fdPopover_Arrow_Size) - var(--fdPopover_Border_Width)
+    );
+    $fd-popover-arrow-offset-x: calc(
+      var(--fdIcon_Button_Width) * 0.5 - var(--fdPopover_Arrow_Size) - var(--fdPopover_Border_Width)
+    );
+
+    @mixin fd-popover-arrow-x-end() {
+      &::before {
+        left: auto;
+        right: calc(#{$fd-popover-arrow-offset-x} + var(--fdPopover_Border_Width));
+      }
+
+      &::after {
+        left: auto;
+        right: #{$fd-popover-arrow-offset-x};
+      }
+
+      @include fd-rtl() {
+        &::before {
+          left: calc(#{$fd-popover-arrow-offset-x} + var(--fdPopover_Border_Width));
+          right: auto;
+        }
+
+        &::after {
+          left: #{$fd-popover-arrow-offset-x};
+          right: auto;
+        }
+      }
+    }
 
     @include fd-reset();
 
@@ -535,11 +534,11 @@ $blockBody: #{$fd-namespace}-popover__body;
 
   // BTP Popover
   &--btp {
-    --fdPopover_Arrow_Size: 0.375rem;
-    --fdPopover_Body_Border_Radius: 0.75rem;
-    --fdPopover_Body_Box_Shadow: var(--sapMenu_Shadow2);
-
     .#{$block}__body {
+      --fdPopover_Arrow_Size: 0.375rem;
+      --fdPopover_Body_Border_Radius: 0.75rem;
+      --fdPopover_Body_Box_Shadow: var(--sapMenu_Shadow2);
+
       border: none;
       top: calc(var(--fdPopover_Offset) + (var(--fdPopover_Arrow_Size) - 0.1875rem));
 
