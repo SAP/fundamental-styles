@@ -11,7 +11,7 @@ $block: #{$fd-namespace}-link;
     color: var(--sapLinkColor);
     line-height: 1;
 
-    @include fd-flex-center();
+    @include fd-inline-flex-center();
 
     &:first-child {
       @include fd-set-margin-right(var(--fdLink_Icon_Spacing, 0));
