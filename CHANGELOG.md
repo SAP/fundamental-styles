@@ -1,3 +1,12 @@
+## [0.30.2-rc.20](https://github.com/SAP/fundamental-styles/compare/v0.30.2-rc.19...v0.30.2-rc.20) (2023-08-29)
+
+
+### Bug Fixes
+
+* **styles:** move popover body variables [ci visual] ([#4799](https://github.com/SAP/fundamental-styles/issues/4799)) ([01c74d3](https://github.com/SAP/fundamental-styles/commit/01c74d3f0de3061d1c408f7d0f6e8763ddd36366))
+
+
+
 ## [0.30.2-rc.19](https://github.com/SAP/fundamental-styles/compare/v0.30.2-rc.18...v0.30.2-rc.19) (2023-08-23)
 
 
