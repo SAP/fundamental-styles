@@ -12893,7 +12893,7 @@ __metadata:
     react-dom: ^18.0.11
     react-is: ^18.2.0
     react-scripts: ^5.0.1
-    regenerator-runtime: ^0.13.7
+    regenerator-runtime: ^0.14.0
     remark-gfm: ^3.0.1
     sass: 1.52.1
     semver: ^7.3.7
