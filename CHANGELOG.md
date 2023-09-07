@@ -1,3 +1,12 @@
+## [0.30.2-rc.25](https://github.com/SAP/fundamental-styles/compare/v0.30.2-rc.24...v0.30.2-rc.25) (2023-09-07)
+
+
+### Bug Fixes
+
+* **styles:** link with icon needs inline-flex ([#4800](https://github.com/SAP/fundamental-styles/issues/4800)) ([7bd0243](https://github.com/SAP/fundamental-styles/commit/7bd02438ff601359cae8ecbc398eedaf912f13b5))
+
+
+
 ## [0.30.2-rc.24](https://github.com/SAP/fundamental-styles/compare/v0.30.2-rc.23...v0.30.2-rc.24) (2023-09-03)
 
 
