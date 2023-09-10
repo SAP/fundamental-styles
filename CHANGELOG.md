@@ -1,3 +1,7 @@
+## [0.30.2-rc.26](https://github.com/SAP/fundamental-styles/compare/v0.30.2-rc.25...v0.30.2-rc.26) (2023-09-10)
+
+
+
 ## [0.30.2-rc.25](https://github.com/SAP/fundamental-styles/compare/v0.30.2-rc.24...v0.30.2-rc.25) (2023-09-07)
 
 
