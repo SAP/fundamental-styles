@@ -25,9 +25,19 @@
     "affected": {
         "defaultBase": "main"
     },
-    "implicitDependencies": {
-        "package.json": "*",
-        ".stylelintrc.json": "*"
+    "namedInputs": {
+        "default": ["{projectRoot}/**/*", "sharedGlobals"],
+        "sharedGlobals": [
+            "{workspaceRoot}/package.json",
+            "{workspaceRoot}/tsconfig.json",
+            "{workspaceRoot}/nx.json"
+        ],
+        "production": [
+            "default",
+            "!{projectRoot}/**/*.spec.[jt]s",
+            "!{projectRoot}/tsconfig.spec.json",
+            "!{projectRoot}/.eslintrc.json"
+        ]
     },
     "generators": {
         "@nx/web:application": {
