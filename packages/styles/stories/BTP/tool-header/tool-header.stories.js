@@ -32,7 +32,7 @@ export default {
 
 - <code>fd-tool-header__separator</code> -&nbsp; The Separator is an optional element that adds space between the <b>Custom Actions Area</b> (optional), <b>System Actions Area</b> (optional) and <b>User Avatar</b> (required).
 `,
-        tags: ['btp']
+        tags: ['btp','horizon-only']
     }
 };
 export const Desktop = () => desktopExampleHtml;

@@ -9,7 +9,7 @@ export default {
   title: 'Dev/Navigation Menu',
   parameters: {
     description: ``,
-    tags: ['btp', 'development']
+    tags: ['btp', 'development','horizon-only']
   }
 };
 export const NavigationMenuItem = () => navigationMenuItemExampleHtml;

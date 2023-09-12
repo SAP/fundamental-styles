@@ -48,5 +48,10 @@ export const tags = {
         "name": "I&CX",
         "title": "I&CX Visual Design",
         "color": 9
+    },
+    "horizon-only": {
+        "name": "horizon only",
+        "title": "Horizon Themes support only",
+        "color": 2
     }
 }
