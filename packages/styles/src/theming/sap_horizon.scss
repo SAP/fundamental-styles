@@ -46,9 +46,18 @@
 @import "./common/pagination/sap_horizon";
 @import "./common/search-field/sap_horizon";
 @import "./common/navigation-menu/sap_horizon";
-@import "./sap_horizon/css_variables";
 
 :root {
+  /* BTP */
+  --sapMenu_Shadow1: 0 0 0.125rem 0 rgba(34, 53, 72, 0.16), 0 0.5rem 1rem 0 rgba(34, 53, 72, 0.16);
+  --sapMenu_Shadow2: 0 0 0.125rem 0 rgba(34, 53, 72, 0.48), 0 1rem 2rem 0 rgba(34, 53, 72, 0.16);
+  --sapNotifications_Shadow2: 0 0 0.125rem 0 rgba(34, 53, 72, 0.48), 0 1rem 2rem 0 rgba(34, 53, 72, 0.16);
+  --sapSearchHover_Shadow: 0 0 0.125rem 0 rgba(34, 53, 72, 0.16), 0 0.5rem 1rem 0 rgba(34, 53, 72, 0.16);
+  --sapMenu_Background: var(--sapList_Background);
+  --sapMenu_Hover_Background: var(--sapList_Hover_Background);
+  --sapMenu_Active_Background: var(--sapList_Active_Background);
+  --sapMenu_Selected_Background: var(--sapList_Hover_SelectionBackground);
+
   /* Switch */
   --fdSwitch_Semantic_Error_Handle_Border_Color: var(--sapButton_Track_Negative_Background);
   --fdSwitch_Semantic_Success_Handle_Border_Color: var(--sapButton_Track_Positive_Background);

@@ -38,7 +38,6 @@
 @import "./common/message-popover/sap_fiori";
 @import "./common/token/sap_fiori_hc";
 @import "./common/calendar/sap_fiori";
-@import "./sap_fiori_3_hcw/css_variables";
 @import "./common/object-status/sap_fiori_hc";
 @import "./common/tokenizer/sap_fiori";
 @import "./common/notification/sap_fiori_hc";
@@ -48,6 +47,15 @@
 @import "./common/step-input/sap_fiori";
 
 :root {
+  /* BTP */
+  --sapMenu_Shadow1: 0 0 0 0.0625rem #000, 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.16);
+  --sapMenu_Shadow2: 0 0 0 0.0625rem #000, 0 1rem 2rem 0 rgba(0, 0, 0, 0.16);
+  --sapNotifications_Shadow2: 0 0 0 0.0625rem #000, 0 1rem 2rem 0 rgba(0, 0, 0, 0.16);
+  --sapSearchHover_Shadow: 0 0 0 0.0625rem #000, 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.16);
+  --sapMenu_Background: var(--sapList_Background);
+  --sapMenu_Hover_Background: var(--sapList_Hover_Background);
+  --sapMenu_Active_Background: var(--sapList_Active_Background);
+  --sapMenu_Selected_Background: var(--sapList_SelectionBackgroundColor);
   --fdOverlay_Background_Opacity: 0.8;
 
   /* Rating Indicator */
