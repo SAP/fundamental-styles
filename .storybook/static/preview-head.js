@@ -428,6 +428,41 @@ function toggleVerticalNavSubmenu(event) {
     }
 }
 
+function toggleNavigationSubmenu(event) {
+    let button = event.target;
+    if (button.tagName.toLowerCase() === 'a') {
+        button = event.target.parentNode;
+    }
+
+    if (button.tagName.toLowerCase() === 'span') {
+        button = event.target.parentNode.parentNode;
+    }
+
+    let isExpanded = button.getAttribute('aria-expanded');
+
+    isExpanded === 'true' ? button.setAttribute('aria-expanded', 'false') : button.setAttribute('aria-expanded', 'true');
+}
+
+function toggleNavigationPopover(event) {
+    
+    let button = event.target;
+    if (button.tagName.toLowerCase() === 'a') {
+        button = event.target.parentNode;
+    }
+
+    if (button.tagName.toLowerCase() === 'span') {
+        button = event.target.parentNode.parentNode;
+    }
+
+    let sibling = button.nextElementSibling;
+    let isExpanded = button.getAttribute('aria-expanded');
+
+
+    isExpanded === 'true' ? button.setAttribute('aria-expanded', 'false') : button.setAttribute('aria-expanded', 'true');
+
+    isExpanded === 'true' ? sibling.setAttribute('aria-hidden', 'false') : sibling.setAttribute('aria-hidden', 'true');
+}
+
 function getNetlifyDrawerIframe() {
     try {
 
