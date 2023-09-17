@@ -5048,14 +5048,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/addon-mdx-gfm@npm:7.4.0":
-  version: 7.4.0
-  resolution: "@storybook/addon-mdx-gfm@npm:7.4.0"
+"@storybook/addon-mdx-gfm@npm:7.4.2":
+  version: 7.4.2
+  resolution: "@storybook/addon-mdx-gfm@npm:7.4.2"
   dependencies:
-    "@storybook/node-logger": 7.4.0
+    "@storybook/node-logger": 7.4.2
     remark-gfm: ^3.0.1
     ts-dedent: ^2.0.0
-  checksum: 9fbe8dfc5f6355a77d8c71f4dc14f52565a4b784d401637f7320f2f5873e6daff92ce6b76d9f70bfe564e046d6ea28ef5d5dec1e9b1c320df0dc99388d0092fa
+  checksum: 98fc1e6baab9b863714e35dff9f3d9e20d6e8403dba2710217b8fb1bee5c7e53ab1d4bbba09f807bd994e7a8ccbbd8f1de32d6f2e70c95ffc8586f343471a25b
   languageName: node
   linkType: hard
 
@@ -5799,6 +5799,13 @@ __metadata:
   version: 7.4.0
   resolution: "@storybook/node-logger@npm:7.4.0"
   checksum: 665dcb5327c084a46392a90ae0f5a894ac3b2e8a9f382e5021b39ff72f12faa6682c0f9c3f1b49e114d9a7fc42e1d41d447ddddf04754dad6302261dac0adb75
+  languageName: node
+  linkType: hard
+
+"@storybook/node-logger@npm:7.4.2":
+  version: 7.4.2
+  resolution: "@storybook/node-logger@npm:7.4.2"
+  checksum: 48da54f0f5f95a70a74e7e7d50b1aa85d600387e33e672175910e2bcd55868ec10af28579a41acc0ec331d52fb90695b4eb675918b022a166b43bbcea1847964
   languageName: node
   linkType: hard
 
@@ -12911,7 +12918,7 @@ __metadata:
     "@storybook/addon-cssresources": 6.2.9
     "@storybook/addon-docs": 7.4.0
     "@storybook/addon-links": 7.4.0
-    "@storybook/addon-mdx-gfm": 7.4.0
+    "@storybook/addon-mdx-gfm": 7.4.2
     "@storybook/addon-storyshots": 7.4.0
     "@storybook/addon-toolbars": 7.4.0
     "@storybook/addon-viewport": 7.4.0
