@@ -9725,6 +9725,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"conventional-changelog-angular@npm:^7.0.0":
+  version: 7.0.0
+  resolution: "conventional-changelog-angular@npm:7.0.0"
+  dependencies:
+    compare-func: ^2.0.0
+  checksum: 2478962ad7ce42878449ba3568347d704f22c5c9af1cd36916b5600734bd7f82c09712a338c649195c44e907f1b0372ce52d6cb51df643f495c89af05ad4bc48
+  languageName: node
+  linkType: hard
+
 "conventional-changelog-atom@npm:^2.0.8":
   version: 2.0.8
   resolution: "conventional-changelog-atom@npm:2.0.8"
@@ -12939,7 +12948,7 @@ __metadata:
     clean-css-cli: ^5.4.1
     colors: 1.4.0
     conventional-changelog: ^3.1.25
-    conventional-changelog-angular: ^6.0.0
+    conventional-changelog-angular: ^7.0.0
     conventional-changelog-cli: ^2.2.2
     conventional-recommended-bump: ^6.1.0
     core-js: ^3.6.5
