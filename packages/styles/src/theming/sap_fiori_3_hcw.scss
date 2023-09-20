@@ -58,6 +58,12 @@
   --sapMenu_Active_Background: var(--sapList_Active_Background);
   --sapMenu_Selected_Background: var(--sapList_SelectionBackgroundColor);
   --fdOverlay_Background_Opacity: 0.8;
+  --sapNavigation_Shadow1: 0 0 0 0.0625rem #000, 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.16);
+  --sapNavigation_Shadow2: 0 0 0 0.0625rem #000, 0 1rem 2rem 0 rgba(0, 0, 0, 0.16);
+  --sapNavigation_Background: var(--sapList_Background);
+  --sapNavigation_Hover_Background: var(--sapList_Hover_Background);
+  --sapNavigation_Active_Background: var(--sapList_Active_Background);
+  --sapNavigation_Selected_Background: var(--sapList_SelectionBackgroundColor);
 
   /* Rating Indicator */
   --fdRating_Indicator_Disabled_Selected_Color: var(--sapContent_RatedColor);

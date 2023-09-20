@@ -14,10 +14,12 @@ $childItem: #{$fd-namespace}-navigation__item--child;
   --fdNavigation_Padding_Top: 1.25rem;
   --fdNavigation_Padding_Bottom: 0.5rem;
   --fdNavigation_Padding_X: 0.75rem;
+  --fdNavigation_Item_Spacing: 0.5rem;
   --fdNavigation_Box_Shadow: var(--sapNavigation_Shadow1);
+  --fdNavigation_Expander_Position_Right: 0.5rem;
 
   // Navigation Item
-  --fdNavigation_Link_Background: var(--fdNavigation_Link_Border_Color_Normal);
+  --fdNavigation_Link_Background: var(--sapNavigation_Background);
   --fdNavigation_Link_Border_Color: var(--fdNavigation_Link_Border_Color_Normal);
   --fdNavigation_Link_Border_Bottom_Color: var(--fdNavigation_Link_Border_Bottom_Color_Normal);
   --fdNavigation_Link_Min_Height: 2rem;
@@ -28,6 +30,7 @@ $childItem: #{$fd-namespace}-navigation__item--child;
   --fdNavigation_Link_Child_Indicator_Size: 0.75rem;
   --fdNavigation_Link_Text_Color: inherit;
   --fdNavigation_Link_Font_Weight: bold;
+  --fdNavigation_Link_Icon_Size: 1rem;
   --fdNavigation_Link_Font_Size: var(--sapFontSize);
   --fdNavigation_Link_Has_Child_Indicator_Icon: "\e1ed";
   --fdNavigation_Link_External_Link_Indicator_Icon: "\e04c";
@@ -93,10 +96,24 @@ $childItem: #{$fd-namespace}-navigation__item--child;
             --fdNavigation_Link_Background: var(--sapMenu_Active_Background);
             --fdNavigation_Link_Border_Color: var(--fdNavigation_Link_Border_Color_Active);
             --fdNavigation_Link_Border_Bottom_Color: var(--fdNavigation_Link_Border_Color_Active);
-
-            outline: none;
           }
         }
+
+        @include fd-selected() {
+          .#{$block}__link {
+            --fdNavigation_Link_Background: 0 100% / 100% 0.125rem no-repeat linear-gradient(0deg, var(--sapShell_Navigation_SelectedColor), var(--sapShell_Navigation_SelectedColor)), var(--sapNavigation_Selected_Background);
+          }
+        }
+      }
+    }
+
+    .#{$block}__item--with-expander {
+      .#{$block}__link {
+        --fdNavigation_Link_Padding_Right: 0.5rem;
+      }
+
+      .#{$block}__expander {
+        display: none;
       }
     }
 
@@ -120,15 +137,15 @@ $childItem: #{$fd-namespace}-navigation__item--child;
       }
 
       @include fd-selected() {
-        --fdNavigation_Link_Background: 0 100% / 100% 0.125rem no-repeat linear-gradient(0deg, var(--sapShell_Navigation_SelectedColor), var(--sapShell_Navigation_SelectedColor)), var(--sapMenu_Selected_Background);
+        --fdNavigation_Link_Background: 0 100% / 100% 0.125rem no-repeat linear-gradient(0deg, var(--sapShell_Navigation_SelectedColor), var(--sapShell_Navigation_SelectedColor)), var(--sapNavigation_Selected_Background);
 
         .#{$block}__link {
           @include fd-focus() {
-            --fdNavigation_Link_Background: 0 100% / 100% 0.125rem no-repeat linear-gradient(0deg, var(--sapShell_Navigation_SelectedColor), var(--sapShell_Navigation_SelectedColor)), var(--sapMenu_Selected_Background);
+            --fdNavigation_Link_Background: 0 100% / 100% 0.125rem no-repeat linear-gradient(0deg, var(--sapShell_Navigation_SelectedColor), var(--sapShell_Navigation_SelectedColor)), var(--sapNavigation_Selected_Background);
           }
 
           @include fd-hover() {
-            --fdNavigation_Link_Background: 0 100% / 100% 0.125rem no-repeat linear-gradient(0deg, var(--sapShell_Navigation_SelectedColor), var(--sapShell_Navigation_SelectedColor)), var(--sapMenu_Selected_Background);
+            --fdNavigation_Link_Background: 0 100% / 100% 0.125rem no-repeat linear-gradient(0deg, var(--sapShell_Navigation_SelectedColor), var(--sapShell_Navigation_SelectedColor)), var(--sapNavigation_Selected_Background);
           }
         }
       }
@@ -149,10 +166,30 @@ $childItem: #{$fd-namespace}-navigation__item--child;
         & > .#{$block}__link {
           @include fd-hover() {
             width: auto;
+
+            .#{$block}__text {
+              --fdNavigation_Item_Text_Display: none;
+            }
           }
         }
       }
     }
+
+    // .#{$block}__list-container--menu {
+    //   .#{$block}__list-item > .#{$block}__item:not(.#{$block}__item--child) {
+    //     @include fd-expanded() {
+    //       & > .#{$block}__link {
+    //         @include fd-hover() {
+    //           width: 100%;
+
+    //           .#{$block}__text {
+    //             --fdNavigation_Item_Text_Display: inline-block;
+    //           }
+    //         }
+    //       }
+    //     }
+    //   }
+    // }
 
     .#{$block}__list-container {
       border: none;
@@ -190,7 +227,8 @@ $childItem: #{$fd-namespace}-navigation__item--child;
         }
 
         .#{$block}__list {
-          gap: 0;
+          --fdNavigation_Item_Spacing: 0;
+
           box-shadow: none;
         }
 
@@ -198,6 +236,18 @@ $childItem: #{$fd-namespace}-navigation__item--child;
           @include fd-expanded() {
             .fd-navigation__has-children-indicator {
               --fdNavigation_Link_Has_Child_Indicator_Icon: "\e1ed";
+            }
+          }
+        }
+
+        .#{$block}__list-item > .#{$block}__item:not(.#{$block}__item--child) {
+          & > .#{$block}__link {
+            @include fd-hover() {
+              width: 100%;
+
+              .#{$block}__text {
+                --fdNavigation_Item_Text_Display: inline-block;
+              }
             }
           }
         }
@@ -232,8 +282,53 @@ $childItem: #{$fd-namespace}-navigation__item--child;
     }
 
     .#{$block}__list--child-items {
-      gap: 0;
+      --fdNavigation_Item_Spacing: 0;
+
       height: auto;
+    }
+  }
+
+  &--phone,
+  &--tablet {
+    .#{$block}__link {
+      --fdNavigation_Link_Min_Height: 2.5rem;
+      --fdNavigation_Link_Padding_Left: 0.6875rem;
+      --fdNavigation_Link_Padding_Right: 0.6875rem;
+    }
+
+    .#{$block}__container--top,
+    .#{$block}__container--bottom {
+      --fdNavigation_Padding_X: 0.5rem;
+    }
+
+    .#{$block}__icon {
+      --fdNavigation_Link_Icon_Size: 1.125rem;
+    }
+
+    .#{$block}__item--with-expander {
+      .#{$block}__link {
+        --fdNavigation_Link_Padding_Right: 2.375rem;
+      }
+
+      .#{$block}__expander {
+        --fdNavigation_Expander_Position_Right: 0.6875rem;
+      }
+    }
+
+    .#{$block}__list {
+      --fdNavigation_Item_Spacing: 0.125rem;
+    }
+
+    .#{$block}__list-item {
+      --fdNavigation_Item_Spacing: 0.125rem;
+    }
+
+    &.#{$block}--snapped {
+      .#{$block}__item--with-expander {
+        .#{$block}__link {
+          --fdNavigation_Link_Padding_Right: 0.6875rem;
+        }
+      }
     }
   }
 
@@ -278,7 +373,7 @@ $childItem: #{$fd-namespace}-navigation__item--child;
     @include fd-reset();
 
     @include fd-flex(column) {
-      gap: 0.5rem;
+      gap: var(--fdNavigation_Item_Spacing);
     }
 
     height: 100%;
@@ -298,7 +393,7 @@ $childItem: #{$fd-namespace}-navigation__item--child;
     @include fd-reset();
 
     @include fd-flex(column) {
-      gap: 0.5rem;
+      gap: var(--fdNavigation_Item_Spacing);
     }
 
     &--spacer {
@@ -371,20 +466,20 @@ $childItem: #{$fd-namespace}-navigation__item--child;
 
     @include fd-hover() {
       --fdNavigation_Link_Child_Indicator_Opacity: 1;
-      --fdNavigation_Link_Background: var(--sapMenu_Hover_Background);
+      --fdNavigation_Link_Background: var(--sapNavigation_Hover_Background);
       --fdNavigation_Link_Border_Color: var(--fdNavigation_Link_Border_Color_Hover);
       --fdNavigation_Link_Border_Bottom_Color: var(--fdNavigation_Link_Border_Color_Hover);
     }
 
     @include fd-active() {
       --fdNavigation_Link_Child_Indicator_Opacity: 1;
-      --fdNavigation_Link_Background: var(--sapMenu_Active_Background);
+      --fdNavigation_Link_Background: var(--sapNavigation_Active_Background);
       --fdNavigation_Link_Border_Color: var(--fdNavigation_Link_Border_Color_Active);
       --fdNavigation_Link_Border_Bottom_Color: var(--fdNavigation_Link_Border_Color_Active);
 
       @include fd-focus() {
         --fdNavigation_Link_Child_Indicator_Opacity: 1;
-        --fdNavigation_Link_Background: var(--sapMenu_Active_Background);
+        --fdNavigation_Link_Background: var(--sapNavigation_Active_Background);
         --fdNavigation_Link_Border_Color: var(--fdNavigation_Link_Border_Color_Active);
         --fdNavigation_Link_Border_Bottom_Color: var(--fdNavigation_Link_Border_Color_Active);
 
@@ -394,7 +489,7 @@ $childItem: #{$fd-namespace}-navigation__item--child;
 
     @include fd-focus() {
       --fdNavigation_Link_Child_Indicator_Opacity: 1;
-      --fdNavigation_Link_Background: var(--sapMenu_Background);
+      --fdNavigation_Link_Background: var(--sapNavigation_Background);
       --fdNavigation_Link_Border_Color: transparent;
       --fdNavigation_Link_Border_Bottom_Color: transparent;
 
@@ -413,6 +508,7 @@ $childItem: #{$fd-namespace}-navigation__item--child;
 
   &__item {
     @include fd-reset();
+    @include fd-flex-vertical-center();
 
     @include fd-expanded() {
       .#{$block}__has-children-indicator {
@@ -434,19 +530,19 @@ $childItem: #{$fd-namespace}-navigation__item--child;
 
     @include fd-selected() {
       --fdNavigation_Link_Selection_Indicator_Display: inline-block;
-      --fdNavigation_Link_Background: var(--sapMenu_Selected_Background);
+      --fdNavigation_Link_Background: var(--sapNavigation_Selected_Background);
       --fdNavigation_Link_Border_Color: var(--fdNavigation_Link_Border_Color_Selected);
       --fdNavigation_Link_Border_Bottom_Color: var(--fdNavigation_Link_Border_Color_Selected);
 
       .#{$block}__link {
         @include fd-focus() {
-          --fdNavigation_Link_Background: var(--sapMenu_Selected_Background);
+          --fdNavigation_Link_Background: var(--sapNavigation_Selected_Background);
           --fdNavigation_Link_Border_Color: var(--fdNavigation_Link_Border_Color_Selected);
           --fdNavigation_Link_Border_Bottom_Color: var(--fdNavigation_Link_Border_Color_Selected);
         }
 
         @include fd-hover() {
-          --fdNavigation_Link_Background: var(--sapMenu_Selected_Background);
+          --fdNavigation_Link_Background: var(--sapNavigation_Selected_Background);
           --fdNavigation_Link_Border_Color: var(--fdNavigation_Link_Border_Color_Selected);
           --fdNavigation_Link_Border_Bottom_Color: var(--fdNavigation_Link_Border_Color_Selected);
         }
@@ -456,6 +552,20 @@ $childItem: #{$fd-namespace}-navigation__item--child;
     height: 100%;
     position: relative;
     border-radius: var(--fdNavigation_Link_Border_Radius);
+
+    &--with-expander {
+      position: relative;
+      .#{$block}__link {
+        --fdNavigation_Link_Padding_Right: 2.1975rem;
+      }
+
+      .#{$block}__expander {
+        @include fd-set-position-right(var(--fdNavigation_Expander_Position_Right));
+
+        position: absolute;
+        z-index: 20;
+      }
+    }
   }
 
   &__item--child {
@@ -493,13 +603,13 @@ $childItem: #{$fd-namespace}-navigation__item--child;
   }
 
   &__icon {
-    @include fd-set-square(1rem);
+    @include fd-set-square(var(--fdNavigation_Link_Icon_Size));
 
     @include fd-icon-selector() {
       @include fd-flex-center();
 
-      font-size: 1rem;
       color: inherit;
+      font-size: var(--fdNavigation_Link_Icon_Size);
     }
   }
 
