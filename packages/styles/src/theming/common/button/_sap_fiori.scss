@@ -41,16 +41,21 @@
   --fdButton_Menu_Transparent_Separator_Display: block;
 
   /** Tool Header */
-  --fdButton_ToolHeader_Color_Active: var(--sapButton_Active_TextColor);
-  --fdButton_ToolHeader_Background_Active: var(--sapButton_Lite_Active_Background);
-  --fdButton_ToolHeader_Background_Focus: var(--sapButton_Lite_Background);
+  --fdButton_ToolHeader_Color_Normal: var(--sapShell_InteractiveTextColor);
+  --fdButton_ToolHeader_Color_Active: var(--sapShell_Active_TextColor);
+  --fdButton_ToolHeader_Background_Hover: var(--sapShell_Hover_Background);
+  --fdButton_ToolHeader_Background_Active: var(--sapShell_Active_Background);
   --fdButton_ToolHeader_Border_Color_Normal: transparent;
-  --fdButton_ToolHeader_Border_Color_Hover: var(--sapButton_Lite_Hover_BorderColor);
+  --fdButton_ToolHeader_Border_Color_Hover: transparent;
   --fdButton_ToolHeader_Border_Color_Active: transparent;
   --fdButton_ToolHeader_Border_Color_Focus: transparent;
   --fdButton_ToolHeader_Border_Color_Disabled: transparent;
   --fdButton_ToolHeader_Border_Radius_Focus: 0.375rem;
   --fdButton_ToolHeader_Badge_Border_Color: var(--sapShellColor);
+  --fdButton_ToolHeader_Outline_Color: var(--sapContent_ContrastFocusColor);
+  --fdButton_ToolHeader_Button_Size: 2.25rem;
+  --fdButton_ToolHeader_Button_Size_Compact: 1.625rem;
+  --fdButton_ToolHeader_Button_Border_Radius: var(--sapButton_BorderCornerRadius);
 
   /** Nested Button */
   --fdButton_Nested_Color_Active: var(--sapButton_Active_TextColor);

@@ -4,7 +4,7 @@
 $block: #{$fd-namespace}-tool-header;
 
 .#{$block} {
-  --fdToolHeader_Min_Height: 3.75rem;
+  --fdToolHeader_Min_Height: var(--sapToolHeader_Min_Height_Cozy);
   --fdToolHeader_Padding_Left: 1.5rem;
   --fdToolHeader_Padding_Right: 1.25rem;
 
@@ -14,15 +14,15 @@ $block: #{$fd-namespace}-tool-header;
     gap: 0.75rem;
   }
 
-  @include fd-set-paddings-y-equal(0.625rem);
+  @include fd-set-paddings-y-equal(var(--sapToolHeader_Paddings_Y));
   @include fd-set-paddings-x(var(--fdToolHeader_Padding_Left), var(--fdToolHeader_Padding_Right));
 
   width: 100%;
   height: auto;
-  border-radius: 0.5rem;
   background: var(--sapShellColor);
   box-shadow: var(--sapToolHeader_Shadow1);
   min-height: var(--fdToolHeader_Min_Height);
+  border-radius: var(--sapToolHeader_Border_Radius);
   border: solid 0.0625rem var(--fdToolHeader_Border_Color);
 
   // ELEMENTS
@@ -86,22 +86,22 @@ $block: #{$fd-namespace}-tool-header;
   &__product-name {
     @include fd-reset();
 
-    font-size: 1.125rem;
     line-height: 1.625rem;
     vertical-align: baseline;
     font-family: var(--sapFontBlackFamily);
-    color: var(--sapShell_GroupTitleTextColor);
+    color: var(--sapToolHeader_Product_Name_Color);
+    font-size: var(--sapToolHeader_Product_Name_Font_Size);
   }
 
   &__second-title {
     @include fd-reset();
 
-    margin-top: 0.125rem;
     vertical-align: baseline;
-    font-size: var(--sapFontSize);
     font-family: var(--sapFontFamily);
-    color: var(--sapContent_LabelColor);
     line-height: var(--sapContent_LineHeight);
+    color: var(--sapToolHeader_Second_Title_Color);
+    margin-top: var(--sapToolHeader_Second_Title_Offset);
+    font-size: var(--sapToolHeader_Second_Title_Font_Size);
   }
 
   &--menu {
@@ -109,6 +109,6 @@ $block: #{$fd-namespace}-tool-header;
   }
 
   @include fd-compact-and-condensed() {
-    --fdToolHeader_Min_Height: 3.25rem;
+    --fdToolHeader_Min_Height: var(--sapToolHeader_Min_Height_Compact);
   }
 }

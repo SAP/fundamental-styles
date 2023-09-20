@@ -10,11 +10,11 @@ $blockActions: #{$fd-namespace}-search-field__actions;
   --fdSearchField_Height: 2.5rem;
   --fdSearchField_Height_Compact: 2rem;
   --fdSearchField_Height_Border: calc(var(--fdSearchField_Height) - 0.125rem);
-  --fdSearchField_Border_Radius: 2rem;
+  --fdSearchField_Border_Radius: var(--fdSearchField_BorderRadius);
   --fdSearchField_Padding: 0.625rem;
   --fdSearchField_Padding_Compact: 0.5rem;
   --fdSearchField_Box_Shadow: var(--sapField_Shadow);
-  --fdSearchField_Background: var(--sapShell_InteractiveBackground);
+  --fdSearchField_Background: var(--fdSearchField_Background_Normal);
   --fdSearchField_Color: var(--sapShell_TextColor);
 
   // Search Field Icon
@@ -61,7 +61,7 @@ $blockActions: #{$fd-namespace}-search-field__actions;
 
     z-index: 10;
     position: absolute;
-    color: var(--sapContent_NonInteractiveIconColor);
+    color: var(--fdSearchField_Icon_Color);
   }
 
   &__input {
@@ -83,6 +83,7 @@ $blockActions: #{$fd-namespace}-search-field__actions;
       font-style: italic;
       font-weight: normal;
       line-height: 1rem;
+      color: var(--fdSearchField_Placeholder_Color);
     }
 
     &::-webkit-search-decoration,
@@ -131,6 +132,7 @@ $blockActions: #{$fd-namespace}-search-field__actions;
       --fdSearchField_Box_Shadow: none;
 
       outline: var(--fdSearchField_Outline);
+      outline-offset: var(--fdSearchField_Outline_Offset);
 
       & + .#{$blockUnderline} {
         display: none;
