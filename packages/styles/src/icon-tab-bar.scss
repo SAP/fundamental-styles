@@ -624,8 +624,7 @@ $fd-icon-tab-bar-semantic-values: (
   &__arrow {
     @include fd-reset();
     @include fd-flex-center();
-    @include fd-set-margins-x(
-      var(--fdIcon_Tab_Bar_Single_Click_Icon_Container_Padding_Left), var(--fdIcon_Tab_Bar_Single_Click_Icon_Container_Padding_Right));
+    @include fd-set-margins-x(var(--fdIcon_Tab_Bar_Single_Click_Icon_Container_Padding_Left), var(--fdIcon_Tab_Bar_Single_Click_Icon_Container_Padding_Right));
 
     height: $fd-icon-tab-bar-single-click-arrow-size;
     width: var(--fdIcon_Tab_Bar_Single_Click_Icon_Container_Width);
@@ -634,7 +633,6 @@ $fd-icon-tab-bar-semantic-values: (
       @include fd-flex-center();
 
       font-size: 1rem;
-      // color: var(--sapTextColor);
       color: var(--fdIconTabBar_Arrow_Color);
       width: $fd-icon-tab-bar-single-click-arrow-size;
       height: $fd-icon-tab-bar-single-click-arrow-size;
@@ -1002,9 +1000,8 @@ $fd-icon-tab-bar-semantic-values: (
         $offsetSeparator: ($i * 0.5rem) + $fd-icon-tab-bar-list-padding-right;
 
         &[aria-level='#{$i}'] {
-          & > * {
-            @include fd-set-paddings-x($offset, $fd-icon-tab-bar-list-padding-right);
-          }
+          --fdList_Navigation_Link_Padding_Left: #{$offset};
+          --fdList_Navigation_Link_Padding_Right: #{$fd-icon-tab-bar-list-padding-right};
 
           & + .#{$block}__line-separator {
             @include fd-set-margins-x($offsetSeparator, $fd-icon-tab-bar-list-padding-right);
@@ -1034,7 +1031,7 @@ $fd-icon-tab-bar-semantic-values: (
 
     .#{$block}__list-item--closable {
       .#{$block}__list-link {
-        @include fd-set-paddings-x(1rem, 2rem);
+        --fdList_Navigation_Link_Padding_Right: 2rem;
 
         position: relative;
       }
@@ -1199,7 +1196,9 @@ $fd-icon-tab-bar-semantic-values: (
     @include fd-compact-or-condensed() {
       .#{$block}__container {
         .#{$block}__counter {
-          @include fd-set-position-left($fd-icon-tab-bar-icon-circle-size-compact + $fd-icon-tab-bar-icon-spacing);
+          @include fd-set-position-left(
+            $fd-icon-tab-bar-icon-circle-size-compact + $fd-icon-tab-bar-icon-spacing
+          );
         }
 
         .#{$block}__badge {
