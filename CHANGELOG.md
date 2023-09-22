@@ -1,3 +1,12 @@
+## [0.30.2-rc.30](https://github.com/SAP/fundamental-styles/compare/v0.30.2-rc.29...v0.30.2-rc.30) (2023-09-22)
+
+
+### Bug Fixes
+
+* **styles:** icon tab bar nested paddings fix ([#4841](https://github.com/SAP/fundamental-styles/issues/4841)) ([eef8a3e](https://github.com/SAP/fundamental-styles/commit/eef8a3e26c67132fdc4d9343ac5f66d014aa3b94))
+
+
+
 ## [0.30.2-rc.29](https://github.com/SAP/fundamental-styles/compare/v0.30.2-rc.28...v0.30.2-rc.29) (2023-09-12)
 
 
