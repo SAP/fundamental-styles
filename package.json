@@ -164,7 +164,7 @@
   },
   "dependencies": {
     "@storybook/blocks": "^7.4.0",
-    "@storybook/components": "7.4.0",
+    "@storybook/components": "7.4.4",
     "@storybook/core-events": "7.4.0",
     "@vitejs/plugin-react": "^3.1.0",
     "fast-deep-equal": "^3.1.3",
