@@ -1,3 +1,12 @@
+## [0.30.2-rc.33](https://github.com/SAP/fundamental-styles/compare/v0.30.2-rc.32...v0.30.2-rc.33) (2023-09-26)
+
+
+### Features
+
+* **styles:** new BTP Vertical Navigation ([#4840](https://github.com/SAP/fundamental-styles/issues/4840)) ([b53e86d](https://github.com/SAP/fundamental-styles/commit/b53e86deebf501deff5cc23a700352665ab2a0d5))
+
+
+
 ## [0.30.2-rc.32](https://github.com/SAP/fundamental-styles/compare/v0.30.2-rc.31...v0.30.2-rc.32) (2023-09-26)
 
 
