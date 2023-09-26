@@ -1,3 +1,12 @@
+## [0.30.2-rc.32](https://github.com/SAP/fundamental-styles/compare/v0.30.2-rc.31...v0.30.2-rc.32) (2023-09-26)
+
+
+### Features
+
+* **styles:** new BTP Tool Header [ci visual] ([#4812](https://github.com/SAP/fundamental-styles/issues/4812)) ([52d0591](https://github.com/SAP/fundamental-styles/commit/52d0591f24149c7b3a74a2cca5d9e40200dd366f))
+
+
+
 ## [0.30.2-rc.31](https://github.com/SAP/fundamental-styles/compare/v0.30.2-rc.30...v0.30.2-rc.31) (2023-09-24)
 
 
