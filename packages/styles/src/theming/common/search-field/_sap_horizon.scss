@@ -1,7 +1,12 @@
 :root {
+  --fdSearchField_BorderRadius: 2rem;
   --fdSearchField_Border_Color: transparent;
+  --fdSearchField_Background_Normal: var(--sapShell_InteractiveBackground);
   --fdSearchField_Background_Hover: var(--sapShell_Hover_Background);
   --fdSearchField_Background_Focus: var(--sapShell_Active_Background);
   --fdSearchField_Outline: var(--sapContent_FocusStyle) var(--sapContent_FocusWidth) var(--sapContent_FocusColor);
+  --fdSearchField_Outline_Offset: 0;
   --fdSearchField_Underline_Color: var(--sapField_BorderColor);
+  --fdSearchField_Placeholder_Color: var(--sapField_PlaceholderTextColor);
+  --fdSearchField_Icon_Color: var(--sapContent_NonInteractiveIconColor);
 }

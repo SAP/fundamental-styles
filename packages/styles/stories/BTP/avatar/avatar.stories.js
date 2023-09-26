@@ -20,7 +20,7 @@ export default {
 
 <br><br><br>
 `,
-    tags: ['btp']
+    tags: ['btp','horizon-only']
   }
 };
 export const Icon = () => iconExampleHtml;
