@@ -1,0 +1,11 @@
+:root {
+  --fdNavigation_Link_Border_Radius: 0.375rem;
+  --fdNavigation_Link_Transition: background-color 0.3s ease-in-out, width 0.3s ease-in-out;
+  --fdNavigation_Link_Border_Color_Normal: transparent;
+  --fdNavigation_Link_Border_Bottom_Color_Normal: transparent;
+  --fdNavigation_Link_Border_Color_Hover: transparent;
+  --fdNavigation_Link_Border_Color_Active: transparent;
+  --fdNavigation_Link_Border_Color_Selected: transparent;
+  --fdNavigation_Link_Border_Color_Focus: transparent;
+  --fdNavigation_Link_Selected_Background: var(--sapList_Hover_SelectionBackground);
+}

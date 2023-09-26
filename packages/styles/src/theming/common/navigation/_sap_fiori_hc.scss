@@ -1,0 +1,13 @@
+@import "./sap_fiori";
+
+:root {
+  --fdNavigation_Link_Border_Radius: 0;
+  --fdNavigation_Link_Transition: none;
+  --fdNavigation_Link_Border_Color_Normal: transparent;
+  --fdNavigation_Link_Border_Bottom_Color_Normal: var(--sapList_BorderColor);
+  --fdNavigation_Link_Border_Color_Hover: var(--sapList_SelectionBorderColor);
+  --fdNavigation_Link_Border_Color_Active: var(--sapList_SelectionBorderColor);
+  --fdNavigation_Link_Border_Color_Selected: var(--sapList_SelectionBorderColor);
+  --fdNavigation_Link_Border_Color_Focus: transparent;
+  --fdNavigation_Link_Selected_Background: var(--sapList_SelectionBackgroundColor);
+}

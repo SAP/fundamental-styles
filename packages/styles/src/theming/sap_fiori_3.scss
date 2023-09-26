@@ -43,6 +43,7 @@
 @import "./common/notification/sap_fiori";
 @import "./common/pagination/sap_fiori";
 @import "./common/search-field/sap_fiori";
+@import "./common/navigation/sap_fiori";
 @import "./common/navigation-menu/sap_fiori";
 @import "./common/tool-header/sap_fiori";
 
@@ -57,6 +58,12 @@
   --sapMenu_Active_Background: var(--sapList_Active_Background);
   --sapMenu_Selected_Background: var(--sapList_Hover_SelectionBackground);
   --fdOverlay_Background_Opacity: 0.6;
+  --sapNavigation_Shadow1: 0 0 0.125rem 0 rgba(0, 0, 0, 0.16), 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.16);
+  --sapNavigation_Shadow2: 0 0 0.125rem 0 rgba(0, 0, 0, 0.48), 0 1rem 2rem 0 rgba(0, 0, 0, 0.16);
+  --sapNavigation_Background: var(--sapList_Background);
+  --sapNavigation_Hover_Background: var(--sapList_Hover_Background);
+  --sapNavigation_Active_Background: var(--sapList_Active_Background);
+  --sapNavigation_Selected_Background: var(--sapList_Hover_SelectionBackground);
 
   /* Dynamic Page Layout */
   --fdDynamicPage_Hover_Border_Bottom: none;
