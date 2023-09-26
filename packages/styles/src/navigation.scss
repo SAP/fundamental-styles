@@ -14,7 +14,7 @@ $childItem: #{$fd-namespace}-navigation__item--child;
   --fdNavigation_Padding_Top: 1.25rem;
   --fdNavigation_Padding_Bottom: 0.5rem;
   --fdNavigation_Padding_X: 0.75rem;
-  --fdNavigation_Item_Spacing: 0.5rem;
+  --fdNavigation_Item_Spacing: 0.25rem;
   --fdNavigation_Box_Shadow: var(--sapNavigation_Shadow1);
   --fdNavigation_Expander_Position_Right: 0.5rem;
 
@@ -61,9 +61,14 @@ $childItem: #{$fd-namespace}-navigation__item--child;
 
     &.#{$block}--popup {
       --fdNavigation_Height: auto;
-      --fdNavigation_Padding: 0.5rem;
       --fdNavigation_Border_Radius: 0.5rem;
+      --fdNavigation_Padding_Top: 0.25rem;
       --fdNavigation_Box_Shadow: var(--sapNavigation_Shadow2);
+
+      .#{$block}__container--top,
+      .#{$block}__container--bottom {
+        --fdNavigation_Padding_X: 0.5rem;
+      }
     }
 
     &.#{$block}--snapped {
@@ -79,7 +84,11 @@ $childItem: #{$fd-namespace}-navigation__item--child;
       overflow: visible;
     }
 
-    .#{$block}__item {
+    .#{$block}__item:not(.#{$block}__item--title) {
+      .#{$block}__link {
+        --fdNavigation_Link_Spacing: 0.5rem;
+      }
+
       @include fd-expanded() {
         & + .fd-navigation__list-container {
           display: flex;
@@ -160,6 +169,14 @@ $childItem: #{$fd-namespace}-navigation__item--child;
             --fdNavigation_Item_Text_Display: inline-block;
           }
         }
+
+        @include fd-focus() {
+          width: fit-content;
+
+          .#{$block}__text {
+            --fdNavigation_Item_Text_Display: inline-block;
+          }
+        }
       }
 
       @include fd-expanded() {
@@ -171,25 +188,57 @@ $childItem: #{$fd-namespace}-navigation__item--child;
               --fdNavigation_Item_Text_Display: none;
             }
           }
+
+          @include fd-focus() {
+            width: auto;
+
+            .#{$block}__text {
+              --fdNavigation_Item_Text_Display: none;
+            }
+          }
         }
       }
     }
 
-    // .#{$block}__list-container--menu {
-    //   .#{$block}__list-item > .#{$block}__item:not(.#{$block}__item--child) {
-    //     @include fd-expanded() {
-    //       & > .#{$block}__link {
-    //         @include fd-hover() {
-    //           width: 100%;
+    .#{$block}__list-container--menu .#{$block}__list-item > .#{$block}__item:not(.#{$block}__item--child) {
+      & > .#{$block}__link {
+        @include fd-hover() {
+          width: 100%;
 
-    //           .#{$block}__text {
-    //             --fdNavigation_Item_Text_Display: inline-block;
-    //           }
-    //         }
-    //       }
-    //     }
-    //   }
-    // }
+          .#{$block}__text {
+            --fdNavigation_Item_Text_Display: inline-block;
+          }
+        }
+
+        @include fd-focus() {
+          width: 100%;
+
+          .#{$block}__text {
+            --fdNavigation_Item_Text_Display: inline-block;
+          }
+        }
+      }
+
+      @include fd-expanded() {
+        & > .#{$block}__link {
+          @include fd-hover() {
+            width: 100%;
+
+            .#{$block}__text {
+              --fdNavigation_Item_Text_Display: inline-block;
+            }
+          }
+
+          @include fd-focus() {
+            width: 100%;
+
+            .#{$block}__text {
+              --fdNavigation_Item_Text_Display: inline-block;
+            }
+          }
+        }
+      }
+    }
 
     .#{$block}__list-container {
       border: none;
@@ -270,7 +319,7 @@ $childItem: #{$fd-namespace}-navigation__item--child;
     .#{$block}__item--title {
       height: auto;
       display: flex;
-      margin-bottom: 0.5rem;
+      margin-bottom: 0.75rem;
 
       .#{$block}__text {
         --fdNavigation_Item_Title_Display: block;
@@ -348,7 +397,7 @@ $childItem: #{$fd-namespace}-navigation__item--child;
       @include fd-set-paddings-x-equal(var(--fdNavigation_Padding_X));
 
       &::before {
-        @include fd-set-margins-y-equal(0.8125rem);
+        @include fd-set-margins-y-equal(0.5625rem);
 
         content: "";
         width: 100%;
@@ -584,7 +633,7 @@ $childItem: #{$fd-namespace}-navigation__item--child;
     .#{$block}__link {
       --fdNavigation_Link_Spacing: 0.4375rem;
       --fdNavigation_Link_Text_Color: var(--sapContent_LabelColor);
-      --fdNavigation_Link_Font_Weight: semibold;
+      --fdNavigation_Link_Font_Weight: 600;
       --fdNavigation_Link_Font_Size: var(--sapFontSmallSize);
     }
   }
@@ -599,6 +648,10 @@ $childItem: #{$fd-namespace}-navigation__item--child;
       line-height: 1.5rem;
 
       --fdNavigation_Item_Title_Display: block;
+    }
+
+    .#{$block}__icon[class*=sap-icon] {
+      display: none;
     }
   }
 
@@ -669,5 +722,7 @@ $childItem: #{$fd-namespace}-navigation__item--child;
     @include fd-rtl() {
       --fdNavigation_Link_External_Link_Indicator_Icon: "\e04d";
     }
+
+    color: var(--sapContent_LabelColor);
   }
 }
