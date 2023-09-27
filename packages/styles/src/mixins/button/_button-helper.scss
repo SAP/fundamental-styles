@@ -28,12 +28,11 @@ $block-button-toggled: #{$block-button}--toggled;
 }
 
 // Button pad to create a background under the round segmented buttons in Horizon themes
-@mixin fd-button-pad($background: var(--sapButton_Background)) {
+@mixin fd-button-pad($background: var(--sapButton_Background), $includeShadow: true) {
   position: relative;
 
   &::before {
     content: "";
-    display: var(--fdButton_Segmented_Pad_Display);
     left: 0;
     top: 0;
     width: 100%;
@@ -41,6 +40,10 @@ $block-button-toggled: #{$block-button}--toggled;
     position: absolute;
     background: $background;
     border-radius: var(--sapButton_BorderCornerRadius);
+
+    @if $includeShadow {
+      box-shadow: inset 0 0 0 var(--sapButton_BorderWidth) var(--fdButtonPrioritizedBorderColor, var(--sapButton_BorderColor));
+    }
   }
 }
 

@@ -1,6 +1,8 @@
-@import "./sap_horizon";
+@import './sap_horizon';
 
 :root {
+  --fdButton_Height: var(--sapElement_Height);
+  --fdButton_Compact_Height: var(--sapElement_Compact_Height);
   --fdButton_Emphasized_Border_Width: 0.125rem;
   --fdButton_Font_Family: var(--sapFontFamily);
 
@@ -12,6 +14,14 @@
   --fdButton_Menu_Offset: calc(var(--sapButton_BorderWidth) * -1);
   --fdButton_Menu_Emphasized_Margin: calc(var(--fdButton_Emphasized_Border_Width) * -1);
   --fdButton_Menu_Transparent_Separator_Display: none;
+  --fdButton_Menu_Transparent_Border_Color: var(--sapButton_BorderColor);
+  --fdButton_Split_Border_Color: var(--fdButtonBorderColor);
+  --fdButtonPrioritizedBackgroundColor: var(--fdButtonBackgroundColor);
+  --fdButton_Menu_Default_Shadow_Color: transparent;
+  --fdButton_Menu_Emphasized_Shadow_Color: transparent;
+  --fdButton_Menu_Positive_Shadow_Color: transparent;
+  --fdButton_Menu_Negative_Shadow_Color: transparent;
+  --fdButton_Menu_Attention_Shadow_Color: transparent;
 
   /** Segmented */
   --fdButton_Segmented_Pad_Display: none;
@@ -21,10 +31,16 @@
   --fdButton_Border_Radius_Right: 0 var(--sapButton_BorderCornerRadius) var(--sapButton_BorderCornerRadius) 0;
   --fdButton_Border_Radius_Right_RTL: var(--sapButton_BorderCornerRadius) 0 0 var(--sapButton_BorderCornerRadius);
   --fdButton_Border_Radius_Outline_Left: var(--sapButton_BorderCornerRadius) 0 0 var(--sapButton_BorderCornerRadius);
-  --fdButton_Border_Radius_Outline_Left_RTL: 0 var(--sapButton_BorderCornerRadius) var(--sapButton_BorderCornerRadius) 0;
+  --fdButton_Border_Radius_Outline_Left_RTL:
+    0 var(--sapButton_BorderCornerRadius) var(--sapButton_BorderCornerRadius)
+    0;
   --fdButton_Segmented_Middle_Border_Radius: 0 0 0 0;
   --fdButton_Border_Radius_Outline_Right: 0 var(--sapButton_BorderCornerRadius) var(--sapButton_BorderCornerRadius) 0;
-  --fdButton_Border_Radius_Outline_Right_RTL: var(--sapButton_BorderCornerRadius) 0 0 var(--sapButton_BorderCornerRadius);
+  --fdButton_Border_Radius_Outline_Right_RTL:
+    var(--sapButton_BorderCornerRadius) 0 0
+    var(--sapButton_BorderCornerRadius);
+  --fdButton_Vertical_Border_Radius_Left: var(--sapButton_BorderCornerRadius) var(--sapButton_BorderCornerRadius) 0 0;
+  --fdButton_Vertical_Border_Radius_Right: 0 0 var(--sapButton_BorderCornerRadius) var(--sapButton_BorderCornerRadius);
 
   /** Tool Header */
   --fdButton_ToolHeader_Border_Color_Normal: var(--sapButton_BorderColor);

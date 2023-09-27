@@ -1,4 +1,6 @@
 :root {
+  --fdButton_Height: var(--sapElement_Height);
+  --fdButton_Compact_Height: var(--sapElement_Compact_Height);
   --fdButton_Emphasized_Border_Width: var(--sapButton_BorderWidth);
   --fdButton_Emphasized_Active_Outline: var(--sapContent_FocusColor);
   --fdButton_Ghost_Background: var(--sapButton_Background);
@@ -9,10 +11,7 @@
 
   /** Shadows */
   --fdButton_Text_Shadow: none;
-  --fdButton_Hover_Shadow: var(--sapContent_Interaction_Shadow);
-  --fdButton_Positive_Hover_Shadow: var(--sapContent_Positive_Shadow);
-  --fdButton_Negative_Hover_Shadow: var(--sapContent_Negative_Shadow);
-  --fdButton_Attention_Hover_Shadow: var(--sapContent_Critical_Shadow);
+  --fdButton_Hover_Shadow: none;
 
   /** Badge */
   --fdButton_Badge_Border_Color: var(--sapContent_BadgeBackground);
@@ -25,7 +24,12 @@
   --fdButton_Border_Radius_Outline_Left: calc(var(--sapButton_BorderCornerRadius) - var(--sapContent_FocusWidth));
   --fdButton_Border_Radius_Outline_Left_RTL: calc(var(--sapButton_BorderCornerRadius) - var(--sapContent_FocusWidth));
   --fdButton_Border_Radius_Outline_Right: calc(var(--sapButton_BorderCornerRadius) - var(--sapContent_FocusWidth));
-  --fdButton_Border_Radius_Outline_Right_RTL: calc(var(--sapButton_BorderCornerRadius) - var(--sapContent_FocusWidth));
+  --fdButton_Border_Radius_Outline_Right_RTL:
+    calc(
+      var(--sapButton_BorderCornerRadius) - var(--sapContent_FocusWidth)
+    );
+  --fdButton_Vertical_Border_Radius_Left: var(--fdButton_Border_Radius_Left);
+  --fdButton_Vertical_Border_Radius_Right: var(--fdButton_Border_Radius_Left);
 
   /** Segmented */
   --fdButton_Segmented_Pad_Display: block;
@@ -39,6 +43,14 @@
   --fdButton_Menu_Separator_Display: block;
   --fdButton_Menu_Transparent_Separator_Height: 1rem;
   --fdButton_Menu_Transparent_Separator_Display: block;
+  --fdButton_Menu_Emphasized_Separator_Display: block;
+  --fdButton_Menu_Emphasized_Hover_Separator_Display: none;
+  --fdButton_Menu_Transparent_Border_Color: transparent;
+  --fdButton_Menu_Default_Shadow_Color: var(--sapButton_BorderColor);
+  --fdButton_Menu_Emphasized_Shadow_Color: var(--sapButton_Emphasized_BorderColor);
+  --fdButton_Menu_Positive_Shadow_Color: var(--sapButton_Accept_BorderColor);
+  --fdButton_Menu_Negative_Shadow_Color: var(--sapButton_Reject_BorderColor);
+  --fdButton_Menu_Attention_Shadow_Color: var(--sapButton_Attention_BorderColor);
 
   /** Tool Header */
   --fdButton_ToolHeader_Color_Active: var(--sapContent_IconColor);
@@ -62,4 +74,8 @@
   --fdButton_Nested_Border_Color_Focus: transparent;
   --fdButton_Nested_Border_Color_Disabled: transparent;
   --fdButton_Nested_Border_Radius_Focus: 0.75rem;
+
+  /** Button Split */
+  --fdButton_Split_Border_Color: transparent;
+  --fdButton_Split_Background_Color: transparent;
 }
