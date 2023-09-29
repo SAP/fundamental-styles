@@ -6,14 +6,14 @@ import navigationSnappedTabletExampleHtml from "./navigation-snapped-tablet.exam
 import navigationPopupPhoneExampleHtml from "./navigation-popup-phone.example.html?raw";
 import navigationLegacyExampleHtml from "./navigation-legacy.example.html?raw";
 
-import '../../../src/navigation.scss';
-import '../../../src/icon.scss';
-import '../../../src/popover.scss';
-import '../../../src/menu.scss';
-import '../../../src/button.scss';
+import '../../../../src/navigation.scss';
+import '../../../../src/icon.scss';
+import '../../../../src/popover.scss';
+import '../../../../src/menu.scss';
+import '../../../../src/button.scss';
 
 export default {
-  title: 'BTP/Navigation',
+  title: 'BTP/Navigation/Vertical Navigation',
   parameters: {
     description: `The navigation is one of the signature design elements of BTP Tools. 
 ## Navigation Types:
@@ -48,6 +48,7 @@ export default {
     tags: ['btp', 'development']
   }
 };
+
 export const Navigation = () => navigationExampleHtml;
 Navigation.storyName = 'Vertical Navigation - Expanded';
 Navigation.parameters = {
