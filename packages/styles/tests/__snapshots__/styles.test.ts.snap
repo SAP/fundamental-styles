@@ -39822,7 +39822,7 @@ exports[`Check stories > Components/Vertical Navigation > Story Cozy > Should ma
             <li class=\\"fd-list__navigation-item fd-list__navigation-item--expandable is-expanded\\" onclick=\\"toggleVerticalNavSubmenu(event)\\">
                 <i role=\\"presentation\\" class=\\"fd-list__navigation-item-icon sap-icon--calendar\\"></i>
                 <span class=\\"fd-list__navigation-item-text\\">Calendar Calendar Calendar Calendar Calendar Calendar </span>
-                <button class=\\"fd-list__navigation-item-arrow sap-icon--navigation-down-arrow is-expanded\\" aria-label=\\"Expand submenu\\"></button>
+                <button class=\\"fd-list__navigation-item-arrow sap-icon--slim-arrow-down is-expanded\\" aria-label=\\"Expand submenu\\"></button>
                 <ul class=\\"fd-list\\">
                     <li class=\\"fd-list__navigation-item\\" tabindex=\\"0\\">
                         <span class=\\"fd-list__navigation-item-text\\">Second level item 1</span>
@@ -39835,7 +39835,7 @@ exports[`Check stories > Components/Vertical Navigation > Story Cozy > Should ma
             <li class=\\"fd-list__navigation-item fd-list__navigation-item--expandable is-expanded\\" onclick=\\"toggleVerticalNavSubmenu(event)\\">
                 <i role=\\"presentation\\" class=\\"fd-list__navigation-item-icon sap-icon--customer\\"></i>
                 <span class=\\"fd-list__navigation-item-text\\">Customers</span>
-                <button class=\\"fd-list__navigation-item-arrow sap-icon--navigation-down-arrow is-expanded\\" aria-label=\\"Expand second submenu\\"></button>
+                <button class=\\"fd-list__navigation-item-arrow sap-icon--slim-arrow-down is-expanded\\" aria-label=\\"Expand second submenu\\"></button>
                 <ul class=\\"fd-list\\">
                     <li class=\\"fd-list__navigation-item\\" tabindex=\\"0\\">
                         <span class=\\"fd-list__navigation-item-text\\">Second level item 1</span>
@@ -39866,7 +39866,7 @@ exports[`Check stories > Components/Vertical Navigation > Story Grouping > Shoul
             <li class=\\"fd-list__navigation-item fd-list__navigation-item--expandable\\" onclick=\\"toggleVerticalNavSubmenu(event)\\">
                 <i role=\\"presentation\\" class=\\"fd-list__navigation-item-icon sap-icon--calendar\\"></i>
                 <span class=\\"fd-list__navigation-item-text\\">Calendar</span>
-                <button class=\\"fd-list__navigation-item-arrow sap-icon--navigation-right-arrow\\" aria-label=\\"Expand second submenu 3\\"></button>
+                <button class=\\"fd-list__navigation-item-arrow sap-icon--slim-right-arrow\\" aria-label=\\"Expand second submenu 3\\"></button>
                 <ul class=\\"fd-list\\">
                     <li class=\\"fd-list__navigation-item fd-list__navigation-item--indicated\\" tabindex=\\"0\\">
                         <span class=\\"fd-list__navigation-item-text\\">Second level item 1</span>
@@ -39928,7 +39928,7 @@ exports[`Check stories > Components/Vertical Navigation > Story GroupingOverflow
             <li class=\\"fd-list__navigation-item fd-list__navigation-item--expandable\\" onclick=\\"toggleVerticalNavSubmenu(event)\\">
                 <i role=\\"presentation\\" class=\\"fd-list__navigation-item-icon sap-icon--calendar\\"></i>
                 <span class=\\"fd-list__navigation-item-text\\">Calendar</span>
-                <button class=\\"fd-list__navigation-item-arrow sap-icon--navigation-right-arrow\\" aria-label=\\"Expand second submenu 3\\"></button>
+                <button class=\\"fd-list__navigation-item-arrow sap-icon--slim-right-arrow\\" aria-label=\\"Expand second submenu 3\\"></button>
                 <ul class=\\"fd-list\\">
                     <li class=\\"fd-list__navigation-item fd-list__navigation-item--indicated\\" tabindex=\\"0\\">
                         <span class=\\"fd-list__navigation-item-text\\">Second level item 1</span>
@@ -39990,7 +39990,7 @@ exports[`Check stories > Components/Vertical Navigation > Story Indication > Sho
             <li class=\\"fd-list__navigation-item fd-list__navigation-item--expandable is-expanded\\" onclick=\\"toggleVerticalNavSubmenu(event)\\">
                 <i role=\\"presentation\\" class=\\"fd-list__navigation-item-icon sap-icon--calendar\\"></i>
                 <span class=\\"fd-list__navigation-item-text\\">Calendar</span>
-                <button class=\\"fd-list__navigation-item-arrow sap-icon--navigation-down-arrow is-expanded\\" aria-label=\\"Expand second submenu 3\\"></button>
+                <button class=\\"fd-list__navigation-item-arrow sap-icon--slim-arrow-down is-expanded\\" aria-label=\\"Expand second submenu 3\\"></button>
                 <ul class=\\"fd-list\\">
                     <li class=\\"fd-list__navigation-item fd-list__navigation-item--indicated\\" tabindex=\\"0\\">
                         <span class=\\"fd-list__navigation-item-text\\">Second level item 1</span>
@@ -40015,7 +40015,7 @@ exports[`Check stories > Components/Vertical Navigation > Story Indication > Sho
             </li>
             <li class=\\"fd-list__navigation-item fd-list__navigation-item--condensed\\" id=\\"parentCalendarButton\\" onclick=\\"toggleCondensedVerticalNavSubmenu(event)\\">
                 <i role=\\"presentation\\" class=\\"fd-list__navigation-item-icon sap-icon--calendar\\"></i>
-                <button class=\\"fd-list__navigation-item-arrow sap-icon--navigation-down-arrow\\" aria-label=\\"Expand second submenu 4\\"></button>
+                <button class=\\"fd-list__navigation-item-arrow sap-icon--slim-arrow-down\\" aria-label=\\"Expand second submenu 4\\"></button>
                 <span class=\\"fd-list__navigation-item-indicator\\"></span>
                 <div class=\\"fd-popover__body fd-popover__body--no-arrow fd-list__navigation-item-popover--first-level\\" aria-hidden=\\"false\\" id=\\"popoverA1\\">
                     <ul class=\\"fd-list\\">
@@ -40060,7 +40060,7 @@ exports[`Check stories > Components/Vertical Navigation > Story Text > Should ma
             </li>
             <li class=\\"fd-list__navigation-item fd-list__navigation-item--expandable is-expanded\\" onclick=\\"toggleVerticalNavSubmenu(event)\\">
                 <span class=\\"fd-list__navigation-item-text\\">Calendar</span>
-                <button class=\\"fd-list__navigation-item-arrow sap-icon--navigation-down-arrow is-expanded\\" aria-label=\\"Expand second submenu 3\\"></button>
+                <button class=\\"fd-list__navigation-item-arrow sap-icon--slim-arrow-down is-expanded\\" aria-label=\\"Expand second submenu 3\\"></button>
                 <ul class=\\"fd-list\\">
                     <li class=\\"fd-list__navigation-item\\" tabindex=\\"0\\">
                         <span class=\\"fd-list__navigation-item-text\\">Second level item 1</span>
@@ -40072,7 +40072,7 @@ exports[`Check stories > Components/Vertical Navigation > Story Text > Should ma
             </li>
             <li class=\\"fd-list__navigation-item fd-list__navigation-item--expandable is-expanded\\" onclick=\\"toggleVerticalNavSubmenu(event)\\">
                 <span class=\\"fd-list__navigation-item-text\\">Customers</span>
-                <button class=\\"fd-list__navigation-item-arrow sap-icon--navigation-down-arrow is-expanded\\" aria-label=\\"Expand third submenu 2\\"></button>
+                <button class=\\"fd-list__navigation-item-arrow sap-icon--slim-arrow-down is-expanded\\" aria-label=\\"Expand third submenu 2\\"></button>
                 <ul class=\\"fd-list\\">
                     <li class=\\"fd-list__navigation-item\\" tabindex=\\"0\\">
                         <span class=\\"fd-list__navigation-item-text\\">Second level item 1</span>
@@ -40102,7 +40102,7 @@ exports[`Check stories > Components/Vertical Navigation > Story Utility > Should
             <li class=\\"fd-list__navigation-item fd-list__navigation-item--expandable is-expanded\\" onclick=\\"toggleVerticalNavSubmenu(event)\\">
                 <i role=\\"presentation\\" class=\\"fd-list__navigation-item-icon sap-icon--customer\\"></i>
                 <span class=\\"fd-list__navigation-item-text\\">Customers</span>
-                <button class=\\"fd-list__navigation-item-arrow sap-icon--navigation-down-arrow is-expanded\\" aria-label=\\"Expand second submenu\\"></button>
+                <button class=\\"fd-list__navigation-item-arrow sap-icon--slim-arrow-down is-expanded\\" aria-label=\\"Expand second submenu\\"></button>
                 <ul class=\\"fd-list\\">
                     <li class=\\"fd-list__navigation-item\\" tabindex=\\"0\\">
                         <span class=\\"fd-list__navigation-item-text\\">Second level item 1</span>

@@ -5,12 +5,12 @@
                 <i role="presentation" class="fd-list__navigation-item-icon sap-icon--home"></i>
                 <span class="fd-list__navigation-item-text">Overview</span>
             </li>
-            <li class="fd-list__navigation-item fd-list__navigation-item--expandable is-expanded" onclick="toggleVerticalNavSubmenu(event)">
+            <li class="fd-list__navigation-item fd-list__navigation-item--expandable is-selected is-expanded" onclick="toggleVerticalNavSubmenu(event)">
                 <i role="presentation" class="fd-list__navigation-item-icon sap-icon--customer"></i>
                 <span class="fd-list__navigation-item-text">Customers</span>
-                <button class="fd-list__navigation-item-arrow sap-icon--navigation-down-arrow is-expanded" aria-label="Expand second submenu"></button>
+                <button class="fd-list__navigation-item-arrow sap-icon--slim-arrow-down is-expanded" aria-label="Expand second submenu"></button>
                 <ul class="fd-list">
-                    <li class="fd-list__navigation-item" tabindex="0">
+                    <li class="fd-list__navigation-item is-selected" tabindex="0">
                         <span class="fd-list__navigation-item-text">Second level item 1</span>
                     </li>
                     <li class="fd-list__navigation-item" tabindex="0">
@@ -61,11 +61,11 @@
   </nav>
   <nav class="fd-vertical-nav__utility-section" aria-label="Main Menu">
     <ul class="fd-list" aria-label="Main Menu List">
-        <li class="fd-list__navigation-item" tabindex="0">
+        <li class="fd-list__navigation-item fd-list__navigation-item--condensed" tabindex="0">
             <i role="presentation" class="fd-list__navigation-item-icon sap-icon--legend"></i>
             <span class="fd-list__navigation-item-text">Legal Information</span>
         </li>
-        <li class="fd-list__navigation-item" tabindex="0">
+        <li class="fd-list__navigation-item fd-list__navigation-item--condensed" tabindex="0">
             <i role="presentation" class="fd-list__navigation-item-icon sap-icon--chain-link"></i>
             <span class="fd-list__navigation-item-text">Useful Links</span>
         </li>

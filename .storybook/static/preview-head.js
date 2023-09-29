@@ -418,13 +418,13 @@ function toggleVerticalNavSubmenu(event) {
     if (arrowIcon && arrowIcon.classList.contains('is-expanded')) {
         button.classList.remove('is-expanded');
         arrowIcon.classList.remove('is-expanded');
-        arrowIcon.classList.add('sap-icon--navigation-right-arrow');
-        arrowIcon.classList.remove('sap-icon--navigation-down-arrow');
+        arrowIcon.classList.add('sap-icon--slim-arrow-right');
+        arrowIcon.classList.remove('sap-icon--slim-arrow-down');
     } else if (arrowIcon) {
         button.classList.add('is-expanded');
         arrowIcon.classList.add('is-expanded');
-        arrowIcon.classList.remove('sap-icon--navigation-right-arrow');
-        arrowIcon.classList.add('sap-icon--navigation-down-arrow');
+        arrowIcon.classList.remove('sap-icon--slim-arrow-right');
+        arrowIcon.classList.add('sap-icon--slim-arrow-down');
     }
 }
 

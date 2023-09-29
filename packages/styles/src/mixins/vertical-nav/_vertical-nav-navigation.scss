@@ -8,8 +8,26 @@ $fd-list-second-level-popover-position: 3.25rem !default;
 
 @mixin fd-vertical-nav-navigation($blockList: #{$fd-namespace}-list) {
   .#{$blockList} {
-    .#{$blockList}__navigation-item-indicator {
+    --fdVertNavigation_List_Item_Height: 2.375rem;
+    --fdVertNavigation_List_Item_Background: var(--sapNavigation_Background);
+    --fdVertNavigation_List_Item_Border_Color: var(--fdVertNavigation_List_Item_Border_Color_Normal);
+    --fdVertNavigation_List_Item_Border_Bottom_Color: var(--fdVertNavigation_List_Item_Border_Bottom_Color_Normal);
+    --fdVertNavigation_List_Item_Selection_Indicator_Color: transparent;
+
+    &__navigation-item-indicator {
       @include fd-reset();
+      @include fd-set-position-right(0);
+
+      position: absolute;
+      top: 0;
+      border-radius: 0 var(--fdVertNavigation_List_Item_Border_Radius) var(--fdVertNavigation_List_Item_Border_Radius) 0;
+      width: 0.1875rem;
+      overflow: hidden;
+      height: var(--fdVertNavigation_List_Item_Height);
+
+      @include fd-rtl() {
+        border-radius: var(--fdVertNavigation_List_Item_Border_Radius) 0 0 var(--fdVertNavigation_List_Item_Border_Radius);
+      }
 
       &::after {
         content: '';
@@ -18,7 +36,7 @@ $fd-list-second-level-popover-position: 3.25rem !default;
         position: absolute;
         right: 0;
         top: var(--fdVerticalNav_Item_Indicator_Top);
-        height: var(--fdVerticalNav_Item_Indicator_Height);
+        height: var(--fdVertNavigation_List_Item_Height);
         background-color: var(--sapSelectedColor);
         color: var(--sapSelectedColor);
         border-radius: var(--sapField_BorderCornerRadius);
@@ -38,347 +56,273 @@ $fd-list-second-level-popover-position: 3.25rem !default;
     &__navigation-item {
       @include fd-reset();
       @include fd-fiori-focus();
-      @include fd-set-paddings-x(0.5rem, 1rem);
-      @include _fd-vertical-nav-selected-color();
 
-      @include fd-focus() {
-        outline-offset: var(--fdVerticalNav_Item_Focus_Outline_Offset);
-      }
-
-      &.#{$blockList}__navigation-item--indicated {
-        @include fd-focus() {
-          outline-offset: var(--fdVerticalNav_Item_Indicated_Outline_Offset);
-        }
-      }
-
-      background: transparent;
-      height: $fd-list-navigation-item-height;
-      position: relative;
+      z-index: 3;
+      width: 100%;
       cursor: pointer;
+      position: relative;
+      min-height: var(--fdVertNavigation_List_Item_Height);
+      border-radius: var(--fdVertNavigation_List_Item_Border_Radius);
+      border: 0.0625rem solid var(--fdVertNavigation_List_Item_Border_Color);
+      border-bottom: 0.0625rem solid var(--fdVertNavigation_List_Item_Border_Bottom_Color);
 
-      .fd-list {
+      &::before {
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: -1;
+        content: "";
+        width: 100%;
+        position: absolute;
+        height: var(--fdVertNavigation_List_Item_Height);
+        background: var(--fdVertNavigation_List_Item_Background);
+        border-radius: var(--fdVertNavigation_List_Item_Border_Radius);
+      }
+
+      &::after {
+        @include fd-set-square(0.5rem);
+        @include fd-set-position-right-pseudo(1rem);
+
+        content: "";
+        width: 100%;
+        z-index: -1;
+        position: absolute;
+        border-radius: 50rem;
+        transform: translateY(-50%);
+        top: calc(var(--fdVertNavigation_List_Item_Height) * 0.5);
+        background: var(--fdVertNavigation_List_Item_Selection_Indicator_Color);
+      }
+
+      @include fd-hover() {
+        --fdVertNavigation_List_Item_Background: var(--sapNavigation_Hover_Background);
+        --fdVertNavigation_List_Item_Border_Color: var(--fdVertNavigation_List_Item_Border_Color_Hover);
+        --fdVertNavigation_List_Item_Border_Bottom_Color: var(--fdVertNavigation_List_Item_Border_Bottom_Color_Hover);
+      }
+
+      @include fd-active() {
+        --fdVertNavigation_List_Item_Background: var(--sapNavigation_Active_Background);
+        --fdVertNavigation_List_Item_Border_Color: var(--fdVertNavigation_List_Item_Border_Color_Active);
+        --fdVertNavigation_List_Item_Border_Bottom_Color: var(--fdVertNavigation_List_Item_Border_Bottom_Color_Active);
+      }
+
+      @include fd-selected() {
+        --fdVertNavigation_List_Item_Background: var(--sapNavigation_Selected_Background);
+        --fdVertNavigation_List_Item_Border_Color: var(--fdVertNavigation_List_Item_Border_Color_Selected);
+        --fdVertNavigation_List_Item_Border_Bottom_Color: var(--fdVertNavigation_List_Item_Border_Bottom_Color_Selected);
+        --fdVertNavigation_List_Item_Selection_Indicator_Color: var(--sapList_SelectionBorderColor);
+      }
+
+      .#{$blockList} {
         display: none;
       }
 
-      &--expandable {
-        margin: var(--fdVerticalNav_Item_Expandable_Margin);
-      }
-
       &.is-expanded {
-        @include fd-set-margins-x(var(--fdVerticalNav_Item_Expanded_Margin), var(--fdVerticalNav_Item_Expanded_Margin));
-        @include fd-set-padding-left(var(--fdVerticalNav_Item_Expanded_Padding_Left));
-
-        @include fd-hover() {
-          .#{$blockList} {
-            background-color: var(--sapList_AlternatingBackground);
-          }
-        }
-
-        border-radius: var(--fdVerticalNav_Item_Expanded_Border_Radius);
-        box-shadow: var(--fdVerticalNav_Item_Expanded_Box_Shadow);
-        height: 100%;
-        overflow: hidden;
-
-        .#{$blockList}__navigation-item {
-          @include _fd-vertical-nav-selected-color();
-
-          border-bottom: none;
-          width: 100%;
-
-          .#{$blockList}__navigation-item-indicator {
-            &::after {
-              @include fd-set-margin-right(0);
-            }
-          }
-
-          .#{$blockList}__navigation-item-text {
-            @include fd-reset();
-            @include fd-set-margin-left(var(--fdVerticalNav_Item_Text_No_Icon_Margin));
-
-            line-height: $fd-list-navigation-item-height;
-            color: var(--fdVerticalNav_Item_Child_Text_Color);
-            font-size: var(--sapFontSize);
-          }
-        }
-
-        .#{$blockList}__navigation-item-text {
-          @include fd-set-padding-left();
-        }
-
-        .#{$blockList}__navigation-item-icon {
-          @include fd-set-padding-right(0.5rem);
-        }
-
         .#{$blockList} {
-          margin-left: var(--fdVerticalNav_Expanded_Item_Margin_Left);
-          margin-right: -1rem;
-
-          @include fd-rtl() {
-            margin-right: var(--fdVerticalNav_Expanded_Item_Margin_Left);
-            margin-left: 0;
+          @include fd-flex(column) {
+            gap: 0.25rem;
           }
 
           width: auto;
-          display: block;
-        }
-
-        .#{$blockList}__navigation-item-indicator {
-          &::after {
-            @include fd-set-margin-right();
-          }
+          margin-top: 0.25rem;
         }
       }
 
-      &.is-expanded > .#{$blockList}__navigation-item-indicator {
+      & > .#{$blockList}__navigation-item-text:first-child {
+        @include fd-set-margin-left(0.5rem);
+      }
+    }
+
+    &__navigation-item--expandable {
+      .#{$blockList} .#{$blockList}__navigation-item .#{$blockList}__navigation-item-text {
+        @include fd-set-margin-left(2rem);
+
+        font-weight: 400;
+      }
+
+      @include fd-selected() {
+        .#{$blockList}__navigation-item-text {
+          max-width: 9rem;
+        }
+
         &::after {
+          @include fd-set-position-right-pseudo(2.25rem);
+        }
+      }
+    }
+
+    &__navigation-item--condensed {
+      @include fd-set-paddings-x();
+      @include fd-set-square(var(--fdVertNavigation_List_Item_Height));
+      @include fd-flex();
+
+      .#{$blockList}__navigation-item-popover {
+        &--first-level,
+        &--second-level {
           display: none;
+          background: var(--sapList_AlternatingBackground);
         }
       }
 
-      .#{$blockList}__navigation-item--indicated .#{$blockList}__navigation-item-text {
-        color: var(--sapSelectedColor);
+      .#{$blockList}__navigation-item-text {
+        display: none;
       }
 
-      &--condensed {
-        @include fd-set-paddings-x();
+      .#{$blockList}__navigation-item-icon {
+        @include fd-set-square(calc(var(--fdVertNavigation_List_Item_Height) - 0.125rem));
+        @include fd-set-margins-x(0, 0);
 
-        position: relative;
-        width: 3.25rem;
+        line-height: var(--fdVertNavigation_List_Item_Height);
+      }
 
-        .#{$blockList}__navigation-item-popover {
-          &--first-level,
-          &--second-level {
-            display: none;
-            background: var(--sapList_AlternatingBackground);
+      &.is-expanded {
+        @include fd-set-width(15rem);
+
+        @include fd-hover() {
+          @include fd-set-width(15rem);
+        }
+
+        &::before {
+          box-shadow: var(--sapContent_Shadow0);
+          border-bottom-right-radius: 0;
+        }
+
+        @include fd-rtl() {
+          &::before {
+            border-bottom-left-radius: 0;
+            border-bottom-right-radius: var(--fdVertNavigation_List_Item_Border_Radius);
           }
         }
 
         .#{$blockList}__navigation-item-text {
-          display: none;
+          @include fd-set-margin-left(2.5rem) ;
+
+          display: inline;
+          font-size: 1rem;
         }
 
-        .#{$blockList}__navigation-item-icon {
-          @include fd-set-margins-x(0.5rem, 0.5rem);
-
-          height: $fd-list-navigation-item-height;
-          line-height: $fd-list-navigation-item-height;
-        }
-
-        &.is-expanded {
-          @include fd-set-margins-x();
-
-          height: $fd-list-navigation-item-height;
-          overflow: visible;
-          visibility: hidden;
-
-          .#{$blockList}__navigation-item {
-            @include fd-set-margins-x();
-          }
-
-          .#{$blockList}__navigation-item--condensed {
-            .#{$blockList}__navigation-item-icon {
-              margin-left: 0;
-              padding-left: 0.875rem;
-
-              @include fd-rtl() {
-                margin-right: 0;
-                margin-left: 0.5rem;
-                padding-right: 0.875rem;
-              }
-            }
-          }
-
-          .#{$blockList}__navigation-item-popover {
-            &--first-level,
-            &--second-level {
-              overflow: hidden;
-              display: block;
-
-              .#{$blockList} {
-                width: 100%;
-                display: block;
-                margin: 0 auto;
-                border-top-left-radius: 0;
-                border-top-right-radius: 0;
-              }
-
-              .#{$blockList}__navigation-item-text {
-                @include fd-set-margin-left();
-                @include fd-set-padding-left();
-              }
-            }
-
-            &--first-level {
-              top: 0;
-              left: 0.325rem;
-              width: 14.325rem;
-              border-bottom-right-radius: 0;
-              z-index: 3;
-              height: 100%;
-
-              @include fd-rtl() {
-                border-bottom-left-radius: 0;
-                border-bottom-right-radius: var(--sapElement_BorderCornerRadius);
-                left: unset;
-                right: 0.325rem;
-              }
-            }
-
-            &--second-level {
-              @include fd-set-position-left($fd-list-second-level-popover-position);
-
-              border-top-right-radius: 0;
-              border-top-left-radius: 0;
-              width: 11.4rem;
-
-              .#{$blockList}__navigation-item {
-                .#{$blockList}__navigation-item-text {
-                  @include fd-set-margin-left(1rem);
-                }
-
-                .#{$blockList}__navigation-item-indicator {
-                  &::after {
-                    @include fd-set-margin-right();
-
-                    display: inline-block;
-                  }
-                }
-              }
-            }
-          }
-
-          .#{$blockList}__navigation-item-text {
-            display: inline;
-          }
-
-          .#{$blockList}__navigation-item-arrow {
+        .#{$blockList}__navigation-item-popover {
+          &--first-level {
             display: none;
           }
 
-          .#{$blockList}__navigation-item-indicator {
-            &::after {
-              display: none;
+          &--second-level {
+            overflow: hidden;
+            display: block;
+            box-shadow: none;
+            box-shadow: var(--sapContent_Shadow0);
+            padding: 0.25rem 0.5rem 0.5rem;
+            background: var(--sapList_Background);
+            top: var(--fdVertNavigation_List_Item_Height);
+
+            @include fd-set-width(11rem);
+            @include fd-set-position-left(3.87rem);
+
+            border-top-left-radius: 0;
+            border-top-right-radius: 0;
+
+            .fd-list__navigation-item.fd-list__navigation-item--condensed {
+              @include fd-set-width(100%);
+
+              padding: 0 0.5rem;
+            }
+
+            .#{$blockList}__navigation-item-text {
+              @include fd-set-margin-left(0) ;
+
+              display: inline;
+              font-size: var(--sapFontSize);
+              font-weight: 400;
+            }
+
+            .#{$blockList} {
+              width: 100%;
+              display: block;
+              margin: 0 auto;
+              border-top-left-radius: 0;
+              border-top-right-radius: 0;
             }
           }
         }
 
         .#{$blockList}__navigation-item-arrow {
-          width: 100%;
+          display: none;
+        }
 
-          @include fd-focus() {
-            &::after {
-              border-radius: 0;
-            }
-          }
+        .#{$blockList}__navigation-item-indicator {
+          background-color: var(--sapSelectedColor);
 
-          &::before {
-            display: inline-block;
-            content: '';
-            min-width: 0;
-            min-height: 0;
-            margin-right: 0.75rem;
-            margin-bottom: 0.5625rem;
-            border-style: solid;
-            border-width: 0.25rem 0.25rem 0 0;
-            border-color: transparent var(--sapContent_NonInteractiveIconColor) transparent transparent;
-            right: 0;
-            bottom: 0;
-            position: absolute;
-
-            @include fd-rtl() {
-              right: unset;
-              margin-right: 0;
-              margin-left: 0.75rem;
-              left: 0;
-            }
+          &::after {
+            display: none;
           }
         }
       }
 
-      &-icon {
-        font-size: 1rem;
-        font-family: 'SAP-icons';
-        height: $fd-list-navigation-item-height;
-        line-height: $fd-list-navigation-item-height;
-        width: 2.25rem;
-        color: var(--fdVerticalNav_Icon_Color);
-        vertical-align: top;
-        text-align: center;
+      .#{$blockList}__navigation-item-arrow {
+        display: none;
       }
 
-      &-text {
-        @include fd-set-padding-left(0.25rem);
-
-        font-size: var(--sapFontLargeSize);
-        font-family: var(--sapFontFamily);
-        color: var(--sapList_TextColor);
-        max-width: 9rem;
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        display: inline-block;
-        line-height: $fd-list-navigation-item-height;
-        vertical-align: middle;
-      }
-
-      &-arrow {
-        @include fd-reset();
-        @include fd-button-reset();
-        @include fd-set-position-right(0);
-
-        height: $fd-list-navigation-item-height;
-        width: $fd-list-navigation-item-height;
-        position: absolute;
-        line-height: $fd-list-navigation-item-height;
-        font-family: 'SAP-icons';
-        font-size: 1rem;
-        color: var(--sapContent_NonInteractiveIconColor);
-        background-color: transparent;
-
-        @include fd-rtl() {
-          transform: scaleX(-1);
-        }
-
-        @include fd-focus() {
-          outline: var(--sapContent_FocusWidth) var(--sapContent_FocusStyle) var(--sapContent_FocusColor);
-          outline-offset: var(--fdVerticalNav_Item_Indicated_Outline_Offset);
-        }
-      }
-    }
-
-    &__navigation-item,
-    &__navigation-item--condensed {
       @include fd-hover() {
-        background: var(--sapList_Hover_Background);
+        @include fd-set-width(fit-content);
+        @include fd-set-padding-right(0.5rem);
 
-        .#{$blockList}__navigation-item {
-          &-icon {
-            color: var(--sapList_TextColor);
-          }
+        align-items: flex-start;
+
+        .#{$blockList}__navigation-item-text {
+          display: inline-block;
         }
-      }
-
-      @include fd-pressed() {
-        background: var(--sapList_Active_Background);
-        color: var(--sapContent_ContrastTextColor);
-
-        .#{$blockList}__navigation-item {
-          &-icon,
-          &-arrow {
-            color: var(--sapContent_ContrastIconColor);
-          }
-        }
-      }
-
-      &:not(:last-child) {
-        border-bottom: var(--fdVerticalNav_Item_Border_Top_Bottom);
       }
     }
-  }
 
-  .#{$blockList}__navigation-item-icon + .#{$blockList}__navigation-item-text + .#{$blockList}__navigation-item-arrow + .#{$blockList} {
-    .#{$blockList}__navigation-item-text {
-      @include fd-set-margin-left($fd-list-navigation-item-text-spacing);
+    &__navigation-item-icon {
+      @include fd-set-margins-x(0.5rem, 0.25rem);
+
+      width: 1rem;
+      font-size: 1rem;
+      text-align: center;
+      vertical-align: top;
+      font-family: 'SAP-icons';
+      color: var(--sapList_TextColor);
+      height: calc(var(--fdVertNavigation_List_Item_Height) - 0.125rem);
+      line-height: calc(var(--fdVertNavigation_List_Item_Height) - 0.125rem);
+    }
+
+    &__navigation-item-text {
+      @include fd-ellipsis();
+
+      max-width: 10rem;
+      font-weight: bold;
+      display: inline-block;
+      vertical-align: middle;
+      font-size: var(--sapFontSize);
+      color: var(--sapList_TextColor);
+      line-height: var(--fdVertNavigation_List_Item_Height);
+    }
+
+    &__navigation-item-arrow {
+      @include fd-reset();
+      @include fd-button-reset();
+      @include fd-set-position-right(0);
+
+      position: absolute;
+      font-size: 0.75rem;
+      font-family: 'SAP-icons';
+      color: var(--sapList_TextColor);
+      background-color: transparent;
+      width: var(--fdVertNavigation_List_Item_Height);
+      height: var(--fdVertNavigation_List_Item_Height);
+
+      @include fd-rtl() {
+        transform: scaleX(-1);
+      }
+
+      @include fd-focus() {
+        outline: var(--sapContent_FocusWidth) var(--sapContent_FocusStyle) var(--sapContent_FocusColor);
+        outline-offset: var(--fdVerticalNav_Item_Indicated_Outline_Offset);
+      }
+    }
+
+    @include fd-compact() {
+      --fdVertNavigation_List_Item_Height: 1.875rem;
     }
   }
 }

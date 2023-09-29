@@ -222,4 +222,15 @@
 
   /** Tokenizer */
   --fdTokenizer_Indicator_Color: var(--sapTextColor);
+
+  /** Vertical Navigation */
+  --fdVertNavigation_List_Item_Border_Radius: 0.375rem;
+  --fdVertNavigation_List_Item_Border_Color_Normal: transparent;
+  --fdVertNavigation_List_Item_Border_Bottom_Color_Normal: transparent;
+  --fdVertNavigation_List_Item_Border_Color_Hover: transparent;
+  --fdVertNavigation_List_Item_Border_Bottom_Color_Hover: transparent;
+  --fdVertNavigation_List_Item_Border_Color_Active: transparent;
+  --fdVertNavigation_List_Item_Border_Bottom_Color_Active: transparent;
+  --fdVertNavigation_List_Item_Border_Color_Selected: transparent;
+  --fdVertNavigation_List_Item_Border_Bottom_Color_Selected: transparent;
 }
