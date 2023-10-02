@@ -1,7 +1,9 @@
 import segmentedButtonExampleHtml from "./segmented-button.example.html?raw";
+import segmentedButtonVerticalExampleHtml from "./segmented-button-vertical.example.html?raw";
 import '../../../src/segmented-button.scss';
 import '../../../src/icon.scss';
 import '../../../src/button.scss';
+import '../../../src/message-strip.scss';
 export default {
   title: 'Components/Buttons/Segmented Button',
   parameters: {
@@ -20,6 +22,22 @@ SegmentedButton.parameters = {
   docs: {
     description: {
       story: ``
+    }
+  }
+};
+
+export const Vertical = () => segmentedButtonVerticalExampleHtml;
+Vertical.storyName = 'Vertical alignment';
+Vertical.parameters = {
+  docs: {
+    description: {
+      story: `Segmented button can also be rendered vertically if \`.fd-segmented-button--vertical\` class modifier is added.
+      <div class="fd-message-strip fd-message-strip--no-icon fd-message-strip--information" role="note" aria-live="assertive" id="message-strip-1" aria-labelledby="message-strip-1">
+        <b class="fd-message-strip__text">
+          Vertical segmented button should only be used with icon-only buttons.
+        </b>
+      </div>
+      `
     }
   }
 };

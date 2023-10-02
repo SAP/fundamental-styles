@@ -7,40 +7,51 @@ $block: #{$fd-namespace}-button-split;
 $split-button-states: (
   "emphasized": (
     "padBackground": var(--sapButton_Emphasized_Background),
-    "separatorDisplay": var(--fdButton_Menu_Separator_Display),
-    "separatorBackground": var(--sapButton_Emphasized_TextColor)
+    "separatorDisplay": var(--fdButton_Menu_Emphasized_Separator_Display),
+    "separatorHoverDisplay": var(--fdButton_Menu_Emphasized_Hover_Separator_Display),
+    "separatorBackground": var(--sapButton_Emphasized_TextColor),
+    "borderColor": var(--fdButton_Menu_Emphasized_Shadow_Color)
   ),
   "transparent": (
     "padBackground": var(--sapButton_Lite_Background),
     "separatorDisplay": var(--fdButton_Menu_Transparent_Separator_Display),
-    "separatorBackground": var(--sapButton_Lite_TextColor)
+    "separatorBackground": var(--sapButton_Lite_TextColor),
+    "borderColor": var(--fdButton_Menu_Transparent_Border_Color)
   ),
   "ghost": (
     "padBackground": var(--fdButton_Ghost_Background),
     "separatorDisplay": var(--fdButton_Menu_Separator_Display),
-    "separatorBackground": var(--sapButton_TextColor)
+    "separatorBackground": var(--sapButton_TextColor),
+    "borderColor": var(--fdButton_Menu_Transparent_Border_Color)
   ),
   "positive": (
     "padBackground": var(--sapButton_Accept_Background),
     "separatorDisplay": var(--fdButton_Menu_Separator_Display),
-    "separatorBackground": var(--sapButton_Accept_TextColor)
+    "separatorBackground": var(--sapButton_Accept_TextColor),
+    "borderColor": var(--fdButton_Menu_Positive_Shadow_Color)
   ),
   "negative": (
     "padBackground": var(--sapButton_Reject_Background),
     "separatorDisplay": var(--fdButton_Menu_Separator_Display),
-    "separatorBackground": var(--sapButton_Reject_TextColor)
+    "separatorBackground": var(--sapButton_Reject_TextColor),
+    "borderColor": var(--fdButton_Menu_Negative_Shadow_Color)
   ),
   "attention": (
     "padBackground": var(--sapButton_Attention_Background),
     "separatorDisplay": var(--fdButton_Menu_Separator_Display),
-    "separatorBackground": var(--sapButton_Attention_TextColor)
+    "separatorBackground": var(--sapButton_Attention_TextColor),
+    "borderColor": var(--fdButton_Menu_Attention_Shadow_Color)
   )
 );
 
 .#{$block} {
   --fdButtonSplit_Separator_Offset: 2.125rem;
 
-  @mixin fd-split-button-separator($display, $background) {
+  &::before {
+    --fdButtonPrioritizedBorderColor: var(--fdButton_Menu_Default_Shadow_Color);
+  }
+
+  @mixin fd-split-button-separator($display, $background, $hoverDisplay: none) {
     &::after {
       content: "";
       display: $display;
@@ -57,7 +68,7 @@ $split-button-states: (
 
     @include fd-hover() {
       &::after {
-        display: none;
+        display: $hoverDisplay;
       }
     }
 
@@ -80,6 +91,9 @@ $split-button-states: (
 
   > button {
     margin: 0;
+
+    --fdButtonPrioritizedBorderColor: var(--fdButton_Split_Border_Color);
+    --fdButtonPrioritizedBackgroundColor: var(--fdButton_Split_Background_Color);
 
     &:first-of-type {
       @include fd-set-margin-right(var(--fdButton_Menu_Offset));
@@ -126,21 +140,18 @@ $split-button-states: (
     }
 
     @include fd-hover() {
+      box-shadow: none;
       z-index: 1;
     }
   }
 
   @each $set-name, $props-set in $split-button-states {
     &--#{$set-name} {
-      @include fd-button-pad(map_get($props-set, "padBackground"));
-      @include fd-split-button-separator(map_get($props-set, "separatorDisplay"), map_get($props-set, "separatorBackground"));
-    }
-  }
+      @include fd-button-pad(map_get($props-set, "padBackground"), false);
+      @include fd-split-button-separator(map_get($props-set, "separatorDisplay"), map_get($props-set, "separatorBackground"), map_get($props-set, "separatorHoverDisplay"));
 
-  &--emphasized {
-    > button {
-      &:first-of-type {
-        @include fd-set-margin-right(var(--fdButton_Menu_Emphasized_Margin));
+      &::before {
+        --fdButtonPrioritizedBorderColor: #{map_get($props-set, "borderColor")};
       }
     }
   }
@@ -152,6 +163,18 @@ $split-button-states: (
     color: inherit;
     display: block;
     max-width: var(--fdButtonSplit_Text_Max_Width, 8.5rem); // 12rem - arrow button - paddings
+  }
+
+  &--emphasized {
+    > button {
+      &:first-of-type {
+        @include fd-set-margin-right(var(--fdButton_Menu_Emphasized_Margin));
+      }
+    }
+
+    .#{$block}__text {
+      font-weight: var(--sapButton_Emphasized_FontWeight);
+    }
   }
 
   @include fd-compact-or-condensed() {

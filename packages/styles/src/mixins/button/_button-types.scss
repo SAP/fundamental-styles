@@ -1,157 +1,309 @@
+@use "sass:map";
+
+/* stylelint-disable */
+@import "../../functions";
+/* stylelint-enable */
+
+$default-button-config: (
+  "default": (
+    "borderColor": var(--sapButton_BorderColor),
+    "color": var(--sapButton_TextColor),
+    "background": var(--sapButton_Background),
+  ),
+  "hover": (
+    "color": var(--sapButton_Hover_TextColor),
+    "borderColor": var(--sapButton_Hover_BorderColor),
+    "background": var(--sapButton_Hover_Background),
+  ),
+  "active": (
+    "color": var(--sapButton_Active_TextColor),
+    "borderColor": var(--sapButton_Active_BorderColor),
+    "background": var(--sapButton_Active_Background)
+  ),
+  "toggled": (
+    "color": var(--sapButton_Selected_TextColor),
+    "borderColor": var(--sapButton_Selected_BorderColor),
+    "background": var(--sapButton_Selected_Background)
+  ),
+  "activeToggled": (
+    "color": var(--sapButton_Selected_TextColor),
+    "borderColor": var(--sapButton_Selected_Hover_BorderColor),
+    "background": var(--sapButton_Selected_Hover_Background)
+  )
+);
+
+$button-types-config: (
+  "emphasized": (
+    "default": map.merge(
+      map-get($default-button-config, "default"),
+      (
+        "fontWeight": var(--sapButton_Emphasized_FontWeight),
+        "borderWidth": var(--fdButton_Emphasized_Border_Width),
+        "borderColor": var(--sapButton_Emphasized_BorderColor),
+        "color": var(--sapButton_Emphasized_TextColor),
+        "background": var(--sapButton_Emphasized_Background),
+      )
+    ),
+    "hover": map.merge(
+      map-get($default-button-config, "hover"),
+      (
+        "color": var(--sapButton_Emphasized_Hover_TextColor),
+        "borderColor": var(--sapButton_Emphasized_Hover_BorderColor),
+        "background": var(--sapButton_Emphasized_Hover_Background),
+      )
+    ),
+    "active": map.merge(
+      map-get($default-button-config, "active"),
+      (
+        "color": var(--sapButton_Emphasized_Active_TextColor),
+        "borderColor": var(--sapButton_Emphasized_Active_BorderColor),
+        "background": var(--sapButton_Emphasized_Active_Background)
+      )
+    ),
+    "toggled": map-get($default-button-config, "toggled"),
+    "activeToggled": map-get($default-button-config, "activeToggled")
+  ),
+  "attention": (
+    "default": map.merge(
+      map-get($default-button-config, "default"),
+      (
+        "borderColor": var(--sapButton_Attention_BorderColor),
+        "color": var(--sapButton_Attention_TextColor),
+        "background": var(--sapButton_Attention_Background),
+      )
+    ),
+    "hover": map.merge(
+      map-get($default-button-config, "hover"),
+      (
+        "color": var(--sapButton_Attention_Hover_TextColor),
+        "borderColor": var(--sapButton_Attention_Hover_BorderColor),
+        "background": var(--sapButton_Attention_Hover_Background),
+      )
+    ),
+    "active": map.merge(
+      map-get($default-button-config, "active"),
+      (
+        "color": var(--sapButton_Attention_Active_TextColor),
+        "borderColor": var(--sapButton_Attention_Active_BorderColor),
+        "background": var(--sapButton_Attention_Active_Background)
+      )
+    ),
+    "toggled": map.merge(
+      map-get($default-button-config, "toggled"),
+      (
+        "color": var(--sapButton_Attention_Selected_TextColor),
+        "borderColor": var(--sapButton_Attention_Selected_BorderColor),
+        "background": var(--sapButton_Attention_Selected_Background)
+      )
+    ),
+    "activeToggled": map.merge(
+      map-get($default-button-config, "activeToggled"),
+      (
+        "color": var(--sapButton_Attention_Selected_TextColor),
+        "borderColor": var(--sapButton_Attention_Selected_Hover_BorderColor),
+        "background": var(--sapButton_Attention_Selected_Hover_Background)
+      )
+    )
+  ),
+  "negative": (
+    "default": map.merge(
+      map-get($default-button-config, "default"),
+      (
+        "color": var(--sapButton_Reject_TextColor),
+        "borderColor": var(--sapButton_Reject_BorderColor),
+        "background": var(--sapButton_Reject_Background)
+      )
+    ),
+    "hover": map.merge(
+      map-get($default-button-config, "hover"),
+      (
+        "color": var(--sapButton_Reject_Hover_TextColor),
+        "borderColor": var(--sapButton_Reject_Hover_BorderColor),
+        "background": var(--sapButton_Reject_Hover_Background)
+      )
+    ),
+    "active": map.merge(
+      map-get($default-button-config, "active"),
+      (
+        "color": var(--sapButton_Reject_Active_TextColor),
+        "borderColor": var(--sapButton_Reject_Active_BorderColor),
+        "background": var(--sapButton_Reject_Active_Background)
+      )
+    ),
+    "toggled": map.merge(
+      map-get($default-button-config, "toggled"),
+      (
+        "color": var(--sapButton_Reject_Selected_TextColor),
+        "borderColor": var(--sapButton_Reject_Selected_BorderColor),
+        "background": var(--sapButton_Reject_Selected_Background)
+      )
+    ),
+    "activeToggled": map.merge(
+      map-get($default-button-config, "activeToggled"),
+      (
+        "color": var(--sapButton_Reject_Selected_TextColor),
+        "borderColor": var(--sapButton_Reject_Selected_Hover_BorderColor),
+        "background": var(--sapButton_Reject_Selected_Hover_Background)
+      )
+    )
+  ),
+  "positive": (
+    "default": map.merge(
+      map-get($default-button-config, "default"),
+      (
+        "color": var(--sapButton_Accept_TextColor),
+        "borderColor": var(--sapButton_Accept_BorderColor),
+        "background": var(--sapButton_Accept_Background)
+      )
+    ),
+    "hover": map.merge(
+      map-get($default-button-config, "hover"),
+      (
+        "color": var(--sapButton_Accept_Hover_TextColor),
+        "borderColor": var(--sapButton_Accept_Hover_BorderColor),
+        "background": var(--sapButton_Accept_Hover_Background)
+      )
+    ),
+    "active": map.merge(
+      map-get($default-button-config, "active"),
+      (
+        "color": var(--sapButton_Accept_Active_TextColor),
+        "borderColor": var(--sapButton_Accept_Active_BorderColor),
+        "background": var(--sapButton_Accept_Active_Background),
+      )
+    ),
+    "toggled": map.merge(
+      map-get($default-button-config, "toggled"),
+      (
+        "color": var(--sapButton_Accept_Selected_TextColor),
+        "borderColor": var(--sapButton_Accept_Selected_BorderColor),
+        "background": var(--sapButton_Accept_Selected_Background)
+      )
+    ),
+    "activeToggled": map.merge(
+      map-get($default-button-config, "activeToggled"),
+      (
+        "color": var(--sapButton_Accept_Selected_TextColor),
+        "borderColor": var(--sapButton_Accept_Selected_Hover_BorderColor),
+        "background": var(--sapButton_Accept_Selected_Hover_Background)
+      )
+    )
+  ),
+  "transparent": (
+    "default": map.merge(
+      map-get($default-button-config, "default"),
+      (
+        "color": var(--sapButton_Lite_TextColor),
+        "borderColor": var(--sapButton_Lite_BorderColor),
+        "background": var(--sapButton_Lite_Background)
+      )
+    ),
+    "hover": map.merge(
+      map-get($default-button-config, "hover"),
+      (
+        "color": var(--sapButton_Lite_Hover_TextColor),
+        "borderColor": var(--sapButton_Lite_Hover_BorderColor),
+        "background": var(--sapButton_Lite_Hover_Background)
+      )
+    ),
+    "active": map.merge(
+      map-get($default-button-config, "active"),
+      (
+        "borderColor": var(--sapButton_Lite_Active_BorderColor),
+        "background": var(--sapButton_Lite_Active_Background)
+      )
+    ),
+    "toggled": map-get($default-button-config, "toggled"),
+    "activeToggled": map-get($default-button-config, "activeToggled")
+  ),
+  "ghost": (
+    "default": map.merge(
+      map-get($default-button-config, "default"),
+      (
+        "background": var(--fdButton_Ghost_Background)
+      )
+    ),
+    "hover": map-get($default-button-config, "hover"),
+    "active": map-get($default-button-config, "active"),
+    "toggled": map-get($default-button-config, "toggled"),
+    "activeToggled": map-get($default-button-config, "activeToggled")
+  )
+);
+
 @mixin fd-button-types() {
   /* Default type */
-  @include _fd-button-type();
+  @include _fd-button-type($default-button-config);
 
-  &--attention {
-    @include _fd-button-type(
-      $defaultText: var(--sapButton_Attention_TextColor),
-      $defaultBorder: var(--sapButton_Attention_BorderColor),
-      $defaultBackground: var(--sapButton_Attention_Background),
-      $hoverText: var(--sapButton_Attention_Hover_TextColor),
-      $hoverBorder: var(--sapButton_Attention_Hover_BorderColor),
-      $hoverBackground: var(--sapButton_Attention_Hover_Background),
-      $hoverShadow: var(--fdButton_Attention_Hover_Shadow),
-      $activeText: var(--sapButton_Attention_Active_TextColor),
-      $activeBorder: var(--sapButton_Attention_Active_BorderColor),
-      $activeBackground: var(--sapButton_Attention_Active_Background),
-      $toggledText: var(--sapButton_Attention_Selected_TextColor),
-      $toggledBorder: var(--sapButton_Attention_Selected_BorderColor),
-      $toggledBackground: var(--sapButton_Attention_Selected_Background),
-      $toggledActiveText: var(--sapButton_Attention_Selected_TextColor),
-      $toggledActiveBorder: var(--sapButton_Attention_Selected_Hover_BorderColor),
-      $toggledActiveBackground: var(--sapButton_Attention_Selected_Hover_Background)
-    );
-  }
+  @each $type, $props in $button-types-config {
+    &--#{$type} {
+      @include _fd-button-type($props);
 
-  &--emphasized {
-    font-weight: var(--sapButton_Emphasized_FontWeight);
-    border-width: var(--fdButton_Emphasized_Border_Width);
+      @if $type == "emphasized" {
+        font-weight: var(--sapButton_Emphasized_FontWeight);
+        border-width: var(--fdButton_Emphasized_Border_Width);
 
-    @include _fd-button-type(
-      $defaultText: var(--sapButton_Emphasized_TextColor),
-      $defaultBorder: var(--sapButton_Emphasized_BorderColor),
-      $defaultBackground: var(--sapButton_Emphasized_Background),
-      $hoverText: var(--sapButton_Emphasized_Hover_TextColor),
-      $hoverBorder: var(--sapButton_Emphasized_Hover_BorderColor),
-      $hoverBackground: var(--sapButton_Emphasized_Hover_Background),
-      $hoverShadow: none,
-      $activeText: var(--sapButton_Emphasized_Active_TextColor),
-      $activeBorder: var(--sapButton_Emphasized_Active_BorderColor),
-      $activeBackground: var(--sapButton_Emphasized_Active_Background),
-      $toggledActiveShadow: var(--fdButton_Hover_Shadow)
-    );
+        @include fd-focus() {
+          &::after {
+            border-color: var(--sapContent_ContrastFocusColor);
+          }
 
-    @include fd-focus() {
-      &::after {
-        border-color: var(--sapContent_ContrastFocusColor);
+          @include fd-active() {
+            &::after {
+              border-color: var(--sapContent_FocusColor);
+            }
+          }
+        }
+
+        @include fd-compact-or-condensed() {
+          @include fd-focus() {
+            @include fd-active() {
+              &::after {
+                border-color: transparent;
+              }
+            }
+          }
+        }
+
+        // @deprecated selected state
+        @include fd-button-active-selected() {
+          outline: none;
+        }
+
+        &.#{$block-button-toggled} {
+          @include fd-focus() {
+            outline-color: var(--fdButton_Emphasized_Active_Outline);
+          }
+
+          // @deprecated selected state
+          @include fd-button-active-selected() {
+            outline: none;
+          }
+        }
       }
     }
-
-    // @deprecated selected state
-    @include fd-button-active-selected() {
-      outline: none;
-    }
-
-    &.#{$block-button-toggled} {
-      @include fd-focus() {
-        outline-color: var(--fdButton_Emphasized_Active_Outline);
-      }
-
-      // @deprecated selected state
-      @include fd-button-active-selected() {
-        outline: none;
-      }
-    }
-  }
-
-  &--ghost {
-    @include _fd-button-type(
-      $defaultBackground: var(--fdButton_Ghost_Background)
-    );
-  }
-
-  &--negative {
-    @include _fd-button-type(
-      $defaultText: var(--sapButton_Reject_TextColor),
-      $defaultBorder: var(--sapButton_Reject_BorderColor),
-      $defaultBackground: var(--sapButton_Reject_Background),
-      $hoverText: var(--sapButton_Reject_Hover_TextColor),
-      $hoverBorder: var(--sapButton_Reject_Hover_BorderColor),
-      $hoverBackground: var(--sapButton_Reject_Hover_Background),
-      $hoverShadow: var(--fdButton_Negative_Hover_Shadow),
-      $activeText: var(--sapButton_Reject_Active_TextColor),
-      $activeBorder: var(--sapButton_Reject_Active_BorderColor),
-      $activeBackground: var(--sapButton_Reject_Active_Background),
-      $toggledText: var(--sapButton_Reject_Selected_TextColor),
-      $toggledBorder: var(--sapButton_Reject_Selected_BorderColor),
-      $toggledBackground: var(--sapButton_Reject_Selected_Background),
-      $toggledActiveText: var(--sapButton_Reject_Selected_TextColor),
-      $toggledActiveBorder: var(--sapButton_Reject_Selected_Hover_BorderColor),
-      $toggledActiveBackground: var(--sapButton_Reject_Selected_Hover_Background),
-    );
-  }
-
-  &--positive {
-    @include _fd-button-type(
-      $defaultText: var(--sapButton_Accept_TextColor),
-      $defaultBorder: var(--sapButton_Accept_BorderColor),
-      $defaultBackground: var(--sapButton_Accept_Background),
-      $hoverText: var(--sapButton_Accept_Hover_TextColor),
-      $hoverBorder: var(--sapButton_Accept_Hover_BorderColor),
-      $hoverBackground: var(--sapButton_Accept_Hover_Background),
-      $hoverShadow: var(--fdButton_Positive_Hover_Shadow),
-      $activeText: var(--sapButton_Accept_Active_TextColor),
-      $activeBorder: var(--sapButton_Accept_Active_BorderColor),
-      $activeBackground: var(--sapButton_Accept_Active_Background),
-      $toggledText: var(--sapButton_Accept_Selected_TextColor),
-      $toggledBorder: var(--sapButton_Accept_Selected_BorderColor),
-      $toggledBackground: var(--sapButton_Accept_Selected_Background),
-      $toggledActiveText: var(--sapButton_Accept_Selected_TextColor),
-      $toggledActiveBorder: var(--sapButton_Accept_Selected_Hover_BorderColor),
-      $toggledActiveBackground: var(--sapButton_Accept_Selected_Hover_Background)
-    );
-  }
-
-  &--transparent {
-    @include _fd-button-type(
-      $defaultText: var(--sapButton_Lite_TextColor),
-      $defaultBorder: var(--sapButton_Lite_BorderColor),
-      $defaultBackground: var(--sapButton_Lite_Background),
-      $hoverText: var(--sapButton_Lite_Hover_TextColor),
-      $hoverBorder: var(--sapButton_Lite_Hover_BorderColor),
-      $hoverBackground: var(--sapButton_Lite_Hover_Background),
-      $activeBorder: var(--sapButton_Lite_Active_BorderColor),
-      $activeBackground: var(--sapButton_Lite_Active_Background)
-    );
   }
 }
 
 /* === INTERNAL FOR THIS FILE === */
 
-@mixin _fd-button-type(
-  $defaultText: var(--sapButton_TextColor),
-  $defaultBorder: var(--sapButton_BorderColor),
-  $defaultBackground: var(--sapButton_Background),
-  $hoverText: var(--sapButton_Hover_TextColor),
-  $hoverBorder: var(--sapButton_Hover_BorderColor),
-  $hoverBackground: var(--sapButton_Hover_Background),
-  $hoverShadow: var(--fdButton_Hover_Shadow),
-  $activeText: var(--sapButton_Active_TextColor),
-  $activeBorder: var(--sapButton_Active_BorderColor),
-  $activeBackground: var(--sapButton_Active_Background),
-  $toggledText: var(--sapButton_Selected_TextColor),
-  $toggledBorder: var(--sapButton_Selected_BorderColor),
-  $toggledBackground: var(--sapButton_Selected_Background),
-  $toggledActiveText: var(--sapButton_Selected_TextColor),
-  $toggledActiveBorder: var(--sapButton_Selected_Hover_BorderColor),
-  $toggledActiveBackground: var(--sapButton_Selected_Hover_Background),
-  $toggledActiveShadow: $hoverShadow
-) {
-  @include _fd-button-apply-colors(
-    $defaultText,
-    $defaultBorder,
-    $defaultBackground,
-  );
+@mixin _fd-button-type($props: $default-button-config) {
+  $defaultText: map_deep_get($props, "default", "color");
+  $defaultBorder: map_deep_get($props, "default", "borderColor");
+  $defaultBackground: map_deep_get($props, "default", "background");
+  $hoverText: map_deep_get($props, "hover", "color");
+  $hoverBorder: map_deep_get($props, "hover", "borderColor");
+  $hoverBackground: map_deep_get($props, "hover", "background");
+  $activeText: map_deep_get($props, "active", "color");
+  $activeBorder: map_deep_get($props, "active", "borderColor");
+  $activeBackground: map_deep_get($props, "active", "background");
+  $toggledText: map_deep_get($props, "toggled", "color");
+  $toggledBorder: map_deep_get($props, "toggled", "borderColor");
+  $toggledBackground: map_deep_get($props, "toggled", "background");
+  $toggledActiveText: map_deep_get($props, "activeToggled", "color");
+  $toggledActiveBorder: map_deep_get($props, "activeToggled", "borderColor");
+  $toggledActiveBackground: map_deep_get($props, "activeToggled", "background");
+
+  @include _fd-button-apply-colors($defaultText, $defaultBorder, $defaultBackground);
 
   color: var(--fdButtonColor);
   border-color: var(--fdButtonBorderColor);
@@ -162,7 +314,9 @@
     @include _fd-button-apply-colors(
       $toggledText,
       $toggledBorder,
-      $toggledBackground
+      $toggledBackground,
+      --fdButtonSelectedPrioritizedBorderColor,
+      --fdButtonSelectedPrioritizedBackgroundColor
     );
   }
 
@@ -170,10 +324,10 @@
     @include _fd-button-apply-colors(
       $hoverText,
       $hoverBorder,
-      $hoverBackground
+      $hoverBackground,
+      --fdButtonHoverPrioritizedBorderColor,
+      --fdButtonHoverPrioritizedBackgroundColor
     );
-
-    box-shadow: $hoverShadow;
   }
 
   @include fd-active() {
@@ -181,6 +335,8 @@
       $activeText,
       $activeBorder,
       $activeBackground,
+      --fdButtonActivePrioritizedBorderColor,
+      --fdButtonActivePrioritizedBackgroundColor,
       true
     );
 
@@ -191,19 +347,11 @@
   }
 
   @include fd-disabled() {
-    @include _fd-button-apply-colors(
-      $defaultText,
-      $defaultBorder,
-      $defaultBackground
-    );
+    @include _fd-button-apply-colors($defaultText, $defaultBorder, $defaultBackground);
 
     // @deprecated, toggled state should be used instead
     @include fd-selected() {
-      @include _fd-button-apply-colors(
-        $toggledText,
-        $toggledBorder,
-        $toggledBackground
-      );
+      @include _fd-button-apply-colors($toggledText, $toggledBorder, $toggledBackground);
     }
   }
 
@@ -211,30 +359,24 @@
     @include _fd-button-apply-colors(
       $toggledText,
       $toggledBorder,
-      $toggledBackground
+      $toggledBackground,
+      --fdButtonToggledPrioritizedBorderColor,
+      --fdButtonToggledPrioritizedBackgroundColor,
     );
 
     @include fd-hover() {
       @include _fd-button-apply-colors(
         $toggledActiveText,
         $toggledActiveBorder,
-        $toggledActiveBackground
+        $toggledActiveBackground,
+        --fdButtonToggledActivePrioritizedBorderColor,
+        --fdButtonToggledActivePrioritizedBackgroundColor,
       );
-
-      box-shadow: $toggledActiveShadow;
     }
 
     // @deprecated selected state
     @include fd-button-active-selected() {
-      @include _fd-button-apply-colors(
-        $toggledActiveText,
-        $toggledActiveBorder,
-        $toggledActiveBackground,
-        true
-      );
-
-      box-shadow: $toggledActiveShadow;
-
+      @include _fd-button-apply-colors($toggledActiveText, $toggledActiveBorder, $toggledActiveBackground, true);
       .#{$fd-namespace}-button__icon {
         color: $activeText;
         text-shadow: none;
@@ -247,10 +389,16 @@
   }
 }
 
-@mixin _fd-button-apply-colors($color, $borderColor, $backgroundColor, $changeInnerElementColor: false) {
+@mixin _fd-button-apply-colors(
+  $color,
+  $borderColor,
+  $backgroundColor,
+  $priorityBorderColorVariable: --fdButtonPrioritizedBorderColor,
+  $priorityBackgroundColorVariable: --fdButtonPrioritizedBackgroundColor,
+  $changeInnerElementColor: false) {
   --fdButtonColor: #{$color};
-  --fdButtonBorderColor: #{$borderColor};
-  --fdButtonBackgroundColor: #{$backgroundColor};
+  --fdButtonBorderColor: var(#{$priorityBorderColorVariable}, #{$borderColor});
+  --fdButtonBackgroundColor: var(#{$priorityBackgroundColorVariable}, #{$backgroundColor});
 
   @if $changeInnerElementColor {
     // In case we have styled element inside button, we can change color of it here.

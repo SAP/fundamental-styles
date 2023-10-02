@@ -8,11 +8,15 @@ $block: #{$fd-namespace}-segmented-button;
   @include fd-reset();
   @include fd-button-pad();
 
+  position: relative;
   display: inline-flex;
   vertical-align: middle;
 
   button {
     margin: 0;
+
+    --fdButtonPrioritizedBorderColor: var(--fdButton_Split_Border_Color);
+    --fdButtonPrioritizedBackgroundColor: var(--fdButton_Split_Background_Color);
 
     @include fd-hover() {
       z-index: 1;
@@ -33,14 +37,38 @@ $block: #{$fd-namespace}-segmented-button;
     &:not(:last-child) {
       @include fd-set-margin-right(var(--fdButton_Segmented_Border_Offset));
     }
+  }
 
-    @include fd-rtl() {
+  &:not(&--vertical) {
+    button {
+      @include fd-rtl() {
+        &:first-child {
+          border-radius: var(--fdButton_Border_Radius_Left_RTL);
+        }
+
+        &:last-child {
+          border-radius: var(--fdButton_Border_Radius_Right_RTL);
+        }
+      }
+    }
+  }
+
+  &--vertical {
+    flex-direction: column;
+
+    button {
       &:first-child {
-        border-radius: var(--fdButton_Border_Radius_Left_RTL);
+        border-radius: var(--fdButton_Vertical_Border_Radius_Left);
       }
 
       &:last-child {
-        border-radius: var(--fdButton_Border_Radius_Right_RTL);
+        border-radius: var(--fdButton_Vertical_Border_Radius_Right);
+      }
+
+      &:not(:last-child) {
+        @include fd-set-margin-right(0);
+
+        margin-bottom: var(--fdButton_Segmented_Border_Offset);
       }
     }
   }
