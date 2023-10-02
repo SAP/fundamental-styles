@@ -156,14 +156,6 @@ $split-button-states: (
     }
   }
 
-  &--emphasized {
-    > button {
-      &:first-of-type {
-        @include fd-set-margin-right(var(--fdButton_Menu_Emphasized_Margin));
-      }
-    }
-  }
-
   .#{$block}__text {
     @include fd-reset();
     @include fd-ellipsis();
@@ -171,6 +163,18 @@ $split-button-states: (
     color: inherit;
     display: block;
     max-width: var(--fdButtonSplit_Text_Max_Width, 8.5rem); // 12rem - arrow button - paddings
+  }
+
+  &--emphasized {
+    > button {
+      &:first-of-type {
+        @include fd-set-margin-right(var(--fdButton_Menu_Emphasized_Margin));
+      }
+    }
+
+    .#{$block}__text {
+      font-weight: var(--sapButton_Emphasized_FontWeight);
+    }
   }
 
   @include fd-compact-or-condensed() {
