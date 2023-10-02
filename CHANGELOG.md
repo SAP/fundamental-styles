@@ -1,3 +1,12 @@
+## [0.30.2-rc.35](https://github.com/SAP/fundamental-styles/compare/v0.30.2-rc.34...v0.30.2-rc.35) (2023-10-02)
+
+
+### Features
+
+* **styles:** button horizon update ([#4852](https://github.com/SAP/fundamental-styles/issues/4852)) ([2e3c471](https://github.com/SAP/fundamental-styles/commit/2e3c4710bb9ddea2c7bfb1df5018b191d86c878b))
+
+
+
 ## [0.30.2-rc.34](https://github.com/SAP/fundamental-styles/compare/v0.30.2-rc.33...v0.30.2-rc.34) (2023-09-29)
 
 
