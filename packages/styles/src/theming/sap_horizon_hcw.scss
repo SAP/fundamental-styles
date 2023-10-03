@@ -227,4 +227,8 @@
   --fdObject_List_Title_Font_Size: var(--sapFontHeader5Size);
   --fdObject_List_Title_Font_Weight: bolder;
   --fdObject_List_Number_Font_Size: 1.25rem;
+
+  /** Tool Layout */
+  --fdToolLayout_Background: var(--sapBackgroundColor);
+  --sapToolLayoutContent_Shadow1: 0 0 0 0.0625rem #000, 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.16);
 }

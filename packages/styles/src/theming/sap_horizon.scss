@@ -232,4 +232,8 @@
 
   /** Nested List */
   --fdNested_List_Border_Corner_Radius: var(--sapPopover_BorderCornerRadius);
+
+  /** Tool Layout */
+  --fdToolLayout_Background: #eaecee;
+  --sapToolLayoutContent_Shadow1: 0 0 0.125rem 0 rgba(34, 53, 72, 0.16), 0 0.5rem 1rem 0 rgba(34, 53, 72, 0.16);
 }
