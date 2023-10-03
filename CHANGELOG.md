@@ -1,3 +1,12 @@
+## [0.30.2-rc.37](https://github.com/SAP/fundamental-styles/compare/v0.30.2-rc.36...v0.30.2-rc.37) (2023-10-03)
+
+
+### Features
+
+* **styles:** add new BTP Horizontal Navigation [ci visual] ([#4855](https://github.com/SAP/fundamental-styles/issues/4855)) ([a861493](https://github.com/SAP/fundamental-styles/commit/a861493896c7553b9ef08e154e6d30902bfaa0cc))
+
+
+
 ## [0.30.2-rc.36](https://github.com/SAP/fundamental-styles/compare/v0.30.2-rc.35...v0.30.2-rc.36) (2023-10-03)
 
 
