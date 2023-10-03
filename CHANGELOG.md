@@ -1,3 +1,12 @@
+## [0.30.2-rc.36](https://github.com/SAP/fundamental-styles/compare/v0.30.2-rc.35...v0.30.2-rc.36) (2023-10-03)
+
+
+### Features
+
+* **styles:** add BTP Tool Layout component [ci visual] ([#4866](https://github.com/SAP/fundamental-styles/issues/4866)) ([848a2d9](https://github.com/SAP/fundamental-styles/commit/848a2d9c52ab907162445f3b32fb408ec7b93c85))
+
+
+
 ## [0.30.2-rc.35](https://github.com/SAP/fundamental-styles/compare/v0.30.2-rc.34...v0.30.2-rc.35) (2023-10-02)
 
 
