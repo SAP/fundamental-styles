@@ -68,6 +68,7 @@ $navListContainerSubmenu: #{$block}__list-container--submenu;
   --fdNavigation_Link_Selection_Indicator_Size: 0.5rem;
   --fdNavigation_Link_Has_Child_Indicator_Display: flex;
   --fdNavigation_Link_Selection_Indicator_Display: none;
+  --fdNavigation_Link_Back_Indicator_Icon: "\e1ee";
   --fdNavigation_Link_Has_Child_Indicator_Icon: "\e1ed";
   --fdNavigation_Link_External_Link_Indicator_Icon: "\e04c";
   --fdNavigation_Link_Background: var(--sapNavigation_Background);
@@ -909,6 +910,29 @@ $navListContainerSubmenu: #{$block}__list-container--submenu;
         display: none;
       }
     }
+
+    &--menu {
+      @include fd-expanded() {
+        .#{$navChildrenIndicator} {
+          --fdNavigation_Link_Has_Child_Indicator_Icon: "\e1ed";
+
+          @include fd-rtl() {
+            --fdNavigation_Link_Has_Child_Indicator_Icon: "\e1ee";
+          }
+        }
+
+        --fdNavigation_Link_Child_Indicator_Opacity: 1;
+        --fdNavigation_Link_Background: var(--sapNavigation_Active_Background);
+        --fdNavigation_Link_Border_Color: var(--fdNavigation_Link_Border_Color_Active);
+        --fdNavigation_Link_Border_Bottom_Color: var(--fdNavigation_Link_Border_Color_Active);
+      }
+
+      &.#{$navItemChild} {
+        .#{$navLink} {
+          --fdNavigation_Link_Padding_Left: 0.5rem;
+        }
+      }
+    }
   }
 
   &__icon {
@@ -979,6 +1003,24 @@ $navListContainerSubmenu: #{$block}__list-container--submenu;
 
     @include fd-rtl() {
       --fdNavigation_Link_External_Link_Indicator_Icon: "\e04d";
+    }
+  }
+
+  &__back-indicator {
+    @include fd-reset();
+    @include fd-flex-center();
+    @include fd-set-square(0.75rem);
+
+    color: var(--sapContent_LabelColor);
+
+    &::before {
+      font-size: 0.75rem;
+      font-family: "SAP-icons";
+      content: var(--fdNavigation_Link_Back_Indicator_Icon);
+    }
+
+    @include fd-rtl() {
+      --fdNavigation_Link_Back_Indicator_Icon: "\e1ed";
     }
   }
 }

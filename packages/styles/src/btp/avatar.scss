@@ -20,11 +20,11 @@ $block: #{$fd-namespace}-avatar;
 }
 
 .#{$block} {
-  &--40 {
+  &.#{$block}--40 {
     @include fd-avatar-new-size-type(2.5rem, 1rem, 1.25rem);
   }
 
-  &--96 {
+  &.#{$block}--96 {
     @include fd-avatar-new-size-type(6rem, 2.375rem, 3rem);
   }
 }
