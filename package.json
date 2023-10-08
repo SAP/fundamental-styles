@@ -59,7 +59,7 @@
     "@commitlint/travis-cli": "^16.0.0",
     "@jsdevtools/npm-publish": "^1.4.3",
     "@nx/devkit": "16.7.2",
-    "@nx/eslint-plugin": "16.7.2",
+    "@nx/eslint-plugin": "16.10.0",
     "@nx/js": "16.7.2",
     "@nx/linter": "16.7.2",
     "@nx/plugin": "16.7.2",
