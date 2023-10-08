@@ -12982,7 +12982,7 @@ __metadata:
     sass: 1.52.1
     semver: ^7.3.7
     standard-version: 9.3.2
-    start-server-and-test: ^1.14.0
+    start-server-and-test: ^2.0.1
     story-description-loader: ^1.0.0
     storybook: 7.4.0
     stylelint: ^13.13.1
@@ -22159,9 +22159,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"start-server-and-test@npm:^1.14.0":
-  version: 1.15.5
-  resolution: "start-server-and-test@npm:1.15.5"
+"start-server-and-test@npm:^2.0.1":
+  version: 2.0.1
+  resolution: "start-server-and-test@npm:2.0.1"
   dependencies:
     arg: ^5.0.2
     bluebird: 3.7.2
@@ -22175,7 +22175,7 @@ __metadata:
     server-test: src/bin/start.js
     start-server-and-test: src/bin/start.js
     start-test: src/bin/start.js
-  checksum: 02c17414ad6a1a064851095c691333b12b38b6af6ce1eb679966f2a32a80013e718c6b415eec05e69ea831ebd4c3633690f2b21544bf426c0295a647aa2ecb76
+  checksum: d423e0950815d29180177c6c53d6fddcb13b64ca69ea9735b82db264ad57229f9bc9ceb5fd5623f23331dad2d5fa5a895988e84b77e1a0e37797803bcca8f7d2
   languageName: node
   linkType: hard
 
