@@ -3678,6 +3678,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@nrwl/devkit@npm:16.10.0":
+  version: 16.10.0
+  resolution: "@nrwl/devkit@npm:16.10.0"
+  dependencies:
+    "@nx/devkit": 16.10.0
+  checksum: 92c40138f7d107da82d14adca1cedb16ff45583f486cf624d047b2928521f92da6f69a5bdeae0bd98a37dfa553883843f36088ee6ace8d76a5170a5730b89a40
+  languageName: node
+  linkType: hard
+
 "@nrwl/devkit@npm:16.6.0, @nrwl/devkit@npm:>=14.0.0":
   version: 16.6.0
   resolution: "@nrwl/devkit@npm:16.6.0"
@@ -3786,6 +3795,23 @@ __metadata:
   dependencies:
     "@nx/workspace": 16.7.2
   checksum: 4667b8db80a0f725f1925d06cacc12c47e78fba7ab48ae7c6f83ee1b68351cafde6eb631325226c907061470492efcd20ff8fc775a35c544248bccee06e482a0
+  languageName: node
+  linkType: hard
+
+"@nx/devkit@npm:16.10.0":
+  version: 16.10.0
+  resolution: "@nx/devkit@npm:16.10.0"
+  dependencies:
+    "@nrwl/devkit": 16.10.0
+    ejs: ^3.1.7
+    enquirer: ~2.3.6
+    ignore: ^5.0.4
+    semver: 7.5.3
+    tmp: ~0.2.1
+    tslib: ^2.3.0
+  peerDependencies:
+    nx: ">= 15 <= 17"
+  checksum: f79f22be16d216aabc12df06f4f6d93026082c86114a99a66915f2993b4052ee8c66fd8eccad916e487a3f012890b89c4dd6a2ca8f3f95150ac824fab187a55a
   languageName: node
   linkType: hard
 
@@ -12897,7 +12923,7 @@ __metadata:
     "@commitlint/config-conventional": ^17.0.0
     "@commitlint/travis-cli": ^16.0.0
     "@jsdevtools/npm-publish": ^1.4.3
-    "@nx/devkit": 16.7.2
+    "@nx/devkit": 16.10.0
     "@nx/eslint-plugin": 16.7.2
     "@nx/js": 16.7.2
     "@nx/linter": 16.7.2
