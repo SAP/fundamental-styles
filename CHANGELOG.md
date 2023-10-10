@@ -1,3 +1,12 @@
+## [0.30.2-rc.39](https://github.com/SAP/fundamental-styles/compare/v0.30.2-rc.38...v0.30.2-rc.39) (2023-10-10)
+
+
+### Features
+
+* **styles:** introduce new Title Bar BTP component [ci visual] ([#4874](https://github.com/SAP/fundamental-styles/issues/4874)) ([8f30a88](https://github.com/SAP/fundamental-styles/commit/8f30a88c24ce393727222793cb0da5850c1537b1))
+
+
+
 ## [0.30.2-rc.38](https://github.com/SAP/fundamental-styles/compare/v0.30.2-rc.37...v0.30.2-rc.38) (2023-10-10)
 
 
