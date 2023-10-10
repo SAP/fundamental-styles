@@ -1,3 +1,12 @@
+## [0.30.2-rc.38](https://github.com/SAP/fundamental-styles/compare/v0.30.2-rc.37...v0.30.2-rc.38) (2023-10-10)
+
+
+### Bug Fixes
+
+* **styles:** add some CSS changes and fix docs bugs [ci visual] ([#4890](https://github.com/SAP/fundamental-styles/issues/4890)) ([9257750](https://github.com/SAP/fundamental-styles/commit/9257750c76aa171bc49df636415ab35c68f83565))
+
+
+
 ## [0.30.2-rc.37](https://github.com/SAP/fundamental-styles/compare/v0.30.2-rc.36...v0.30.2-rc.37) (2023-10-03)
 
 
