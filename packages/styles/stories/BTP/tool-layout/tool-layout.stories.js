@@ -19,9 +19,9 @@ export default {
   - <code>.fd-tool-layout--phone</code>&nbsp; - modifier class for phones
 - <code>.fd-tool-layout__container</code>
 - <code>.fd-tool-layout__header-container</code>&nbsp; - wraping element around the Tool Header
-  - <code>.fd-tool-layout__header-container--popup</code>&nbsp; - modifier class for when the Tool Header is a Popup
-  - <code>.fd-tool-layout__header-container--horizontal</code>&nbsp; - modifier class for when the Tool Header is horizontal
 - <code>.fd-tool-layout__navigation-container</code>&nbsp; - wraping element around the Navigation (all its variants)
+  - <code>.fd-tool-layout__navigation-container--popup</code>&nbsp; - modifier class for when the navigation is a Popup
+  - <code>.fd-tool-layout__navigation-container--horizontal</code>&nbsp; - modifier class for when the navigation is horizontal
 - <code>.fd-tool-layout__content-container</code>&nbsp; - wraping element around the page content. By default, the background of the content area is <code>var(--sapBackgroundColor)</code>
   - <code>.fd-tool-layout__content-container--transparent</code>&nbsp; - modifier class to apply transparent background to the content area.
   - <code>.fd-tool-layout__content-container--list</code>&nbsp; - modifier class to apply list <code>var(--sapGroup_ContentBackground)</code> background to the content area.
