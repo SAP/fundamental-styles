@@ -29,6 +29,8 @@ $block: #{$fd-namespace}-tool-layout;
 
   &__header-container {
     @include fd-reset();
+
+    width: 100%;
   }
 
   &__navigation-container {
@@ -59,8 +61,9 @@ $block: #{$fd-namespace}-tool-layout;
     @include fd-reset();
 
     flex: 1;
-    height: 100%;
     width: 100%;
+    height: 100%;
+    overflow: hidden;
     margin-top: var(--fdToolLayout_Content_Container_Margin_Top);
     box-shadow: var(--fdToolLayout_Content_Container_BoxShadow);
     background: var(--fdToolLayout_Content_Container_Background);

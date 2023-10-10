@@ -5064,6 +5064,85 @@ exports[`Check stories > BTP/Tool Header > Story Tablet > Should match snapshot 
 "
 `;
 
+exports[`Check stories > BTP/Tool Layout > Story Desktop > Should match snapshot 1`] = `
+"<div class=\\"fd-tool-layout\\">
+    <div class=\\"fd-tool-layout__container\\">
+        <div class=\\"fd-tool-layout__header-container\\">
+            <div style=\\"width: 100%; height: 3rem; background: #00677F;\\"></div>
+        </div>
+    </div>
+    <div class=\\"fd-tool-layout__container\\">
+        <div class=\\"fd-tool-layout__navigation-container\\">
+            <div style=\\"width: 15rem; height: 20rem; background: #00677F;\\"></div>
+        </div>
+        <div class=\\"fd-tool-layout__content-container\\">
+            <div style=\\"width: 100%; height: 20rem; background: #00677F;\\"></div>
+        </div>
+    </div>
+</div>
+
+"
+`;
+
+exports[`Check stories > BTP/Tool Layout > Story Mobile > Should match snapshot 1`] = `
+"<div style=\\"width: 20rem;\\">
+    <div class=\\"fd-tool-layout fd-tool-layout--phone\\">
+        <div class=\\"fd-tool-layout__container\\">
+            <div class=\\"fd-tool-layout__header-container\\">
+                <div style=\\"width: 100%; height: 3rem; background: #00677F;\\"></div>
+            </div>
+        </div>
+        <div class=\\"fd-tool-layout__container\\">
+            <div class=\\"fd-tool-layout__content-container\\">
+                <div style=\\"width: 100%; height: 20rem; background: #00677F;\\"></div>
+            </div>
+        </div>
+    </div>
+</div>
+"
+`;
+
+exports[`Check stories > BTP/Tool Layout > Story Tablet > Should match snapshot 1`] = `
+"<h4>With Vertical Navigation</h4>
+<div style=\\"width: 800px;\\">
+    <div class=\\"fd-tool-layout fd-tool-layout--tablet\\">
+        <div class=\\"fd-tool-layout__container\\">
+            <div class=\\"fd-tool-layout__header-container\\">
+                <div style=\\"width: 100%; height: 3rem; background: #00677F;\\"></div>
+            </div>
+        </div>
+        <div class=\\"fd-tool-layout__container\\">
+            <div class=\\"fd-tool-layout__navigation-container\\">
+                <div style=\\"width: 5rem; height: 20rem; background: #00677F;\\"></div>
+            </div>
+            <div class=\\"fd-tool-layout__content-container\\">
+                <div  style=\\"width: 100%; height: 20rem; background: #00677F;\\"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<br><br>
+<h4>With Horizontal Navigation</h4>
+<div style=\\"width: 800px;\\">
+    <div class=\\"fd-tool-layout fd-tool-layout--tablet\\">
+        <div class=\\"fd-tool-layout__container\\">
+            <div class=\\"fd-tool-layout__header-container\\">
+                <div style=\\"width: 100%; height: 3rem; background: #00677F;\\"></div>
+            </div>
+        </div>
+        <div class=\\"fd-tool-layout__container\\">
+            <div class=\\"fd-tool-layout__navigation-container fd-tool-layout__navigation-container--horizontal\\">
+                <div style=\\"width: 100%; height: 3rem; background: #00677F;\\"></div>
+            </div>
+            <div class=\\"fd-tool-layout__content-container\\">
+                <div style=\\"width: 100%; height: 20rem; background: #00677F;\\"></div>
+            </div>
+        </div>
+    </div>
+</div>
+"
+`;
+
 exports[`Check stories > Components/Action Bar > Story Actions > Should match snapshot 1`] = `
 "<div class=\\"fd-action-bar\\">
     <div class=\\"fd-action-bar__header\\">
@@ -8169,7 +8248,8 @@ exports[`Check stories > Components/Buttons/Button > Story ToolHeaderButton > Sh
 `;
 
 exports[`Check stories > Components/Buttons/Button Split > Story SplitMenuButton > Should match snapshot 1`] = `
-"<div class=\\"fddocs-button-container\\">
+"<p>Default state:</p>
+<div class=\\"fddocs-button-container\\">
     <div class=\\"fd-button-split fd-button-split--emphasized\\" role=\\"group\\" aria-label=\\"button-split\\">
         <button class=\\"fd-button fd-button--emphasized\\" aria-label=\\"button\\">
             <span class=\\"fd-button-split__text\\">Emphasized</span>
@@ -8252,6 +8332,90 @@ exports[`Check stories > Components/Buttons/Button Split > Story SplitMenuButton
         </button>
     </div>
 </div>
+<p>Arrow toggled:</p>
+<div class=\\"fddocs-button-container\\">
+    <div class=\\"fd-button-split fd-button-split--emphasized is-hover\\" role=\\"group\\" aria-label=\\"button-split\\">
+        <button class=\\"fd-button fd-button--emphasized\\" aria-label=\\"button\\">
+            <span class=\\"fd-button-split__text\\">Emphasized</span>
+        </button>
+        <button class=\\"fd-button fd-button--emphasized is-active\\" aria-expanded=\\"false\\">
+            <i class=\\"sap-icon--slim-arrow-down\\"></i>
+        </button>
+    </div>
+
+    <div class=\\"fd-button-split is-hover\\" role=\\"group\\" aria-label=\\"button-split\\">
+        <button class=\\"fd-button\\" aria-label=\\"button\\">
+            <span class=\\"fd-button-split__text\\">Standard</span>
+        </button>
+        <button class=\\"fd-button is-active\\" aria-expanded=\\"false\\">
+            <i class=\\"sap-icon--slim-arrow-down\\"></i>
+        </button>
+    </div>
+
+    <div class=\\"fd-button-split fd-button-split--transparent is-hover\\" role=\\"group\\" aria-label=\\"button-split\\">
+        <button class=\\"fd-button fd-button--transparent\\" aria-label=\\"button\\">
+            <span class=\\"fd-button-split__text\\">Transparent</span>
+        </button>
+        <button class=\\"fd-button fd-button--transparent is-active\\" aria-expanded=\\"false\\">
+            <i class=\\"sap-icon--slim-arrow-down\\"></i>
+        </button>
+    </div>
+
+    <div class=\\"fd-button-split fd-button-split--ghost is-hover\\" role=\\"group\\" aria-label=\\"button-split\\">
+        <button class=\\"fd-button fd-button--ghost\\" aria-label=\\"button\\">
+            <span class=\\"fd-button-split__text\\">Ghost</span>
+        </button>
+        <button class=\\"fd-button fd-button--ghost is-active\\" aria-expanded=\\"false\\">
+            <i class=\\"sap-icon--slim-arrow-down\\"></i>
+        </button>
+    </div>
+
+    <div class=\\"fd-button-split fd-button-split--positive is-hover\\" role=\\"group\\" aria-label=\\"button-split\\">
+        <button class=\\"fd-button fd-button--positive\\" aria-label=\\"button\\">
+            <span class=\\"fd-button-split__text\\">Positive</span>
+        </button>
+        <button class=\\"fd-button fd-button--positive is-active\\" aria-expanded=\\"false\\">
+            <i class=\\"sap-icon--slim-arrow-down\\"></i>
+        </button>
+    </div>
+
+    <div class=\\"fd-button-split fd-button-split--negative is-hover\\" role=\\"group\\" aria-label=\\"button-split\\">
+        <button class=\\"fd-button fd-button--negative\\" aria-label=\\"button\\">
+            <span class=\\"fd-button-split__text\\">Negative</span>
+        </button>
+        <button class=\\"fd-button fd-button--negative is-active\\" aria-expanded=\\"false\\">
+            <i class=\\"sap-icon--slim-arrow-down\\"></i>
+        </button>
+    </div>
+
+    <div class=\\"fd-button-split fd-button-split--attention is-hover\\" role=\\"group\\" aria-label=\\"button-split\\">
+        <button class=\\"fd-button fd-button--attention\\" aria-label=\\"button\\">
+            <span class=\\"fd-button-split__text\\">Attention</span>
+        </button>
+        <button class=\\"fd-button fd-button--attention is-active\\" aria-expanded=\\"false\\">
+            <i class=\\"sap-icon--slim-arrow-down\\"></i>
+        </button>
+    </div>
+
+    <div class=\\"fd-button-split fd-button-split--attention is-hover\\" role=\\"group\\" aria-label=\\"button-split\\">
+        <button class=\\"fd-button fd-button--attention\\" aria-label=\\"button\\">
+            <i class=\\"sap-icon--cart\\"></i>
+            <span class=\\"fd-button-split__text\\">Attention</span>
+        </button>
+        <button class=\\"fd-button fd-button--attention is-active\\" aria-expanded=\\"false\\">
+            <i class=\\"sap-icon--slim-arrow-down\\"></i>
+        </button>
+    </div>
+
+    <div class=\\"fd-button-split fd-button-split--negative is-hover\\" role=\\"group\\" aria-label=\\"button-split\\">
+        <button class=\\"fd-button fd-button--negative\\" aria-label=\\"button\\">
+            <i class=\\"sap-icon--cart\\"></i>
+        </button>
+        <button class=\\"fd-button fd-button--negative is-active\\" aria-expanded=\\"false\\">
+            <i class=\\"sap-icon--slim-arrow-down\\"></i>
+        </button>
+    </div>
+</div>
 "
 `;
 
@@ -8262,6 +8426,17 @@ exports[`Check stories > Components/Buttons/Segmented Button > Story SegmentedBu
         <button aria-label=\\"Chart\\" class=\\"fd-button fd-button--toggled\\" aria-pressed=\\"true\\"><i class=\\"sap-icon--pie-chart\\"></i></button>
         <button aria-label=\\"Pool\\" class=\\"fd-button\\"><i class=\\"sap-icon--pool\\" aria-pressed=\\"false\\"></i></button>
     </div>
+</div>
+"
+`;
+
+exports[`Check stories > Components/Buttons/Segmented Button > Story Vertical > Should match snapshot 1`] = `
+"<div class=\\"fddocs-button-container\\">
+  <div class=\\"fd-segmented-button fd-segmented-button--vertical\\" role=\\"group\\" aria-label=\\"Group label\\">
+      <button aria-label=\\"Survey\\" class=\\"fd-button\\"><i class=\\"sap-icon--survey\\" aria-pressed=\\"false\\"></i></button>
+      <button aria-label=\\"Chart\\" class=\\"fd-button fd-button--toggled\\" aria-pressed=\\"true\\"><i class=\\"sap-icon--pie-chart\\"></i></button>
+      <button aria-label=\\"Pool\\" class=\\"fd-button\\"><i class=\\"sap-icon--pool\\" aria-pressed=\\"false\\"></i></button>
+  </div>
 </div>
 "
 `;
