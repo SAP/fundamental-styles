@@ -124,6 +124,14 @@ $block: #{$fd-namespace}-toolbar;
     --fdToolbar_Background: var(--sapGroup_TitleBackground);
   }
 
+  &.#{$block}--title-bar {
+    @include fd-set-paddings-y-equal(0.375rem);
+
+    --fdToolbar_Height: auto;
+    --fdToolbar_Padding_Left: 0.75rem;
+    --fdToolbar_Padding_Right: 0.75rem;
+  }
+
   &--info {
     position: relative;
     color: var(--fdToolbar_Info_Color);

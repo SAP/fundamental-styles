@@ -26,7 +26,7 @@ export default {
   - <code>.fd-tool-layout__content-container--transparent</code>&nbsp; - modifier class to apply transparent background to the content area.
   - <code>.fd-tool-layout__content-container--list</code>&nbsp; - modifier class to apply list <code>var(--sapGroup_ContentBackground)</code> background to the content area.
 `,
-        tags: ['btp']
+        tags: ['btp', 'development', 'horizon-only']
     }
 };
 export const Desktop = () => desktopExampleHtml;

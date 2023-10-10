@@ -1,0 +1,50 @@
+@import './new-settings';
+@import './mixins';
+
+$block: #{$fd-namespace}-title-bar;
+
+.#{$block} {
+  @include fd-reset();
+  @include fd-ellipsis();
+
+  @include fd-flex-vertical-center() {
+    gap: 0.125rem;
+  }
+
+  max-width: 100%;
+
+  &__container {
+    @include fd-reset();
+    @include fd-ellipsis();
+
+    @include fd-flex(column) {
+      gap: 0.125rem;
+    }
+  }
+
+  &__title-container {
+    @include fd-reset();
+
+    @include fd-flex-vertical-center() {
+      gap: 0.125rem;
+    }
+  }
+
+  &__title {
+    @include fd-reset();
+    @include fd-ellipsis();
+
+    font-size: 1.25rem;
+    font-weight: bold;
+    line-height: 1.5rem;
+  }
+
+  &__subtitle {
+    @include fd-reset();
+    @include fd-ellipsis();
+
+    font-weight: normal;
+    font-size: var(--sapFontSize);
+    color: var(--sapContent_LabelColor);
+  }
+}
