@@ -1,3 +1,12 @@
+## [0.30.2-rc.40](https://github.com/SAP/fundamental-styles/compare/v0.30.2-rc.39...v0.30.2-rc.40) (2023-10-10)
+
+
+### Features
+
+* **styles:** add BTP variant for User Menu [ci visual] ([#4867](https://github.com/SAP/fundamental-styles/issues/4867)) ([3f315ba](https://github.com/SAP/fundamental-styles/commit/3f315ba9bdbfb067b7e5d189da52d72a243bbd28))
+
+
+
 ## [0.30.2-rc.39](https://github.com/SAP/fundamental-styles/compare/v0.30.2-rc.38...v0.30.2-rc.39) (2023-10-10)
 
 
