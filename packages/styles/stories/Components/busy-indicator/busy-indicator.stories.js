@@ -8,6 +8,7 @@ import '../../../src/message-toast.scss';
 import '../../../src/dialog.scss';
 import '../../../src/text.scss';
 import '../../../src/bar.scss';
+import '../../../src/button.scss';
 import '../../../src/title.scss';
 export default {
   title: 'Components/Busy Indicator',

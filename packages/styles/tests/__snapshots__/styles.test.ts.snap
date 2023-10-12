@@ -8681,7 +8681,7 @@ exports[`Check stories > Components/Busy Indicator > Story BusyDialog > Should m
                 </div>
             </div>
         </div>
-        <footer class=\\"fd-dialog__footer fd-bar is-compact fd-bar--footer\\">
+        <footer class=\\"fd-dialog__footer fd-bar fd-bar--footer\\">
             <div class=\\"fd-bar__right\\">
                 <div class=\\"fd-bar__element\\">
                     <button class=\\"fd-dialog__decisive-button fd-button fd-button--transparent\\">Cancel</button>
