@@ -64,7 +64,7 @@
     "@nx/linter": "16.7.2",
     "@nx/plugin": "16.7.2",
     "@nx/react": "16.7.2",
-    "@nx/web": "16.7.2",
+    "@nx/web": "16.10.0",
     "@sap-theming/theming-base-content": "11.6.8",
     "@storybook/addon-a11y": "7.4.6",
     "@storybook/addon-actions": "7.4.6",
