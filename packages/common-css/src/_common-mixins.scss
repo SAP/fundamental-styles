@@ -539,9 +539,25 @@
   }
 }
 
+@mixin sap-set-margin-right($right: 0) {
+  margin-right: $right;
+
+  @include sap-rtl() {
+    margin-right: 0;
+    margin-left: $right;
+  }
+}
+
 @mixin sap-set-margin-y($valueTop: 0, $valueBottom: 0) {
   margin-top: $valueTop;
   margin-bottom: $valueBottom;
+}
+
+@mixin sap-set-equal-positions($value) {
+  top: $value;
+  right: $value;
+  bottom: $value;
+  left: $value;
 }
 
 @mixin sap-margin($value, $side: '') {

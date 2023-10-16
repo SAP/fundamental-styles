@@ -1,0 +1,20 @@
+@import 'common-settings';
+@import 'common-mixins';
+
+$block: #{$sap-namespace}-busy-indicator;
+
+.#{$block} {
+  &-dialog {
+    @include sap-reset();
+
+    @include sap-flex-center() {
+      gap: 1rem;
+      flex-direction: column;
+    }
+
+    .#{$block} {
+      width: 100%;
+      margin: 0.5rem auto;
+    }
+  }
+}
