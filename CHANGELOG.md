@@ -1,3 +1,12 @@
+## [0.30.2-rc.46](https://github.com/SAP/fundamental-styles/compare/v0.30.2-rc.45...v0.30.2-rc.46) (2023-10-16)
+
+
+### Bug Fixes
+
+* shellbar category dropdown box-shadow invisibility [ci visual] ([#4907](https://github.com/SAP/fundamental-styles/issues/4907)) ([fa2bcb2](https://github.com/SAP/fundamental-styles/commit/fa2bcb2696c12a79c02eede07e4e728f7b729b61))
+
+
+
 ## [0.30.2-rc.45](https://github.com/SAP/fundamental-styles/compare/v0.30.2-rc.44...v0.30.2-rc.45) (2023-10-15)
 
 
