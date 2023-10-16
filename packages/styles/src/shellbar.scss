@@ -367,10 +367,11 @@ $block: #{$fd-namespace}-shellbar;
 
           .#{$block}__search-category {
             box-shadow: var(--sapContent_Interaction_Shadow);
+            background-color: var(--fdShellbar_Search_Category_Button_Hover_Background);
           }
 
           .#{$block}__search-dropdown {
-            background-color: var(--fdShellbar_Search_Category_Button_Hover_Background);
+            background-color: transparent;
           }
         }
 
