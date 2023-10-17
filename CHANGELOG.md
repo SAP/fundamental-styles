@@ -1,3 +1,12 @@
+## [0.30.2-rc.47](https://github.com/SAP/fundamental-styles/compare/v0.30.2-rc.46...v0.30.2-rc.47) (2023-10-17)
+
+
+### Features
+
+* **deps:** bring theming-base-content version 11.7.0 [ci visual] ([#4909](https://github.com/SAP/fundamental-styles/issues/4909)) ([8a9c268](https://github.com/SAP/fundamental-styles/commit/8a9c26865a8a599e1a2c5adb8f7f38284a7ec226))
+
+
+
 ## [0.30.2-rc.46](https://github.com/SAP/fundamental-styles/compare/v0.30.2-rc.45...v0.30.2-rc.46) (2023-10-16)
 
 
