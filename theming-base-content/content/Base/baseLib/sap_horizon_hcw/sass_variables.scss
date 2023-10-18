@@ -1,4 +1,4 @@
-/* Copyright (c) 2012-2020 SAP SE or an SAP affiliate company and Theming Base Content contributors. Licensed under the Apache License, Version 2.0 - see LICENSE.txt..  Theming Engine 1.23071.0-20230727072504+103a4b0abd3804e9712812399620a8b1ef82147d */
+/* Copyright (c) 2012-2023 SAP SE or an SAP affiliate company and Theming Base Content contributors. Licensed under the Apache License, Version 2.0 - see LICENSE.txt..  Theming Engine 1.23061.0 */
 $sapBrandColor: #e97624;
 $sapHighlightColor: #e97624;
 $sapBaseColor: #fff;
@@ -163,7 +163,7 @@ $sapShell_InteractiveBackground: #fff;
 $sapShell_InteractiveTextColor: #000;
 $sapShell_InteractiveBorderColor: #000;
 $sapShell_GroupTitleTextColor: #000;
-$sapShell_GroupTitleTextShadow: -0.0625rem 0 #fff,0 .0625rem #fff,.0625rem 0 #fff,0 -0.0625rem #fff;
+$sapShell_GroupTitleTextShadow: -0.0625rem 0 #fff, 0 0.0625rem #fff, 0.0625rem 0 #fff, 0 -0.0625rem #fff;
 $sapShell_Hover_Background: #e97624;
 $sapShell_Active_Background: #e97624;
 $sapShell_Active_TextColor: #000;
@@ -601,7 +601,7 @@ $sapObjectHeader_Background: #fff;
 $sapObjectHeader_Hover_Background: #e97624;
 $sapObjectHeader_BorderColor: #000;
 $sapObjectHeader_Title_TextColor: #000;
-$sapObjectHeader_Title_FontSize: 2rem;
+$sapObjectHeader_Title_FontSize: 1.5rem;
 $sapObjectHeader_Title_SnappedFontSize: 1.25rem;
 $sapObjectHeader_Title_FontFamily: "72-Bold", "72-Boldfull", "72", "72full", Arial, Helvetica, sans-serif;
 $sapObjectHeader_Subtitle_TextColor: #000;

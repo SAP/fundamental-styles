@@ -25,7 +25,7 @@
 		},
 		{
 			"Id": "sapHighlightColor",
-			"CssValue": "#0070f2",
+			"CssValue": "#0064d9",
 			"Label": "Highlight Color",
 			"Tags": "Quick,Base,Content,Color"
 		},
@@ -55,7 +55,7 @@
 		},
 		{
 			"Id": "sapLinkColor",
-			"CssValue": "#0070f2",
+			"CssValue": "#0064d9",
 			"Label": "Link Color",
 			"Tags": "Quick,Base,Content,Color,Font,Link"
 		},
@@ -67,7 +67,7 @@
 		},
 		{
 			"Id": "sapContent_Shadow0",
-			"CssValue": "0 0 0.125rem 0 rgba(85,107,130,0.16), 0 0.125rem 0.25rem 0 rgba(85,107,130,0.16)",
+			"CssValue": "0 0 0.125rem 0 rgba(34,53,72,0.2), 0 0.125rem 0.25rem 0 rgba(34,53,72,0.2)",
 			"Label": "Shadow Level 0",
 			"Tags": "Base,Content"
 		},
@@ -85,7 +85,7 @@
 		},
 		{
 			"Id": "sapShell_Background",
-			"CssValue": "#f5f6f7",
+			"CssValue": "#eff1f2",
 			"Label": "Shell Background Color",
 			"Tags": "Base,Shell,Color"
 		},
@@ -109,7 +109,7 @@
 		},
 		{
 			"Id": "sapShell_Shadow",
-			"CssValue": "0 0.125rem 0.125rem 0 rgba(85,107,130,0.1), inset 0 -0.0625rem 0 0 rgba(85,107,130,0.2)",
+			"CssValue": "0 0.125rem 0.125rem 0 rgba(34,53,72,0.15), inset 0 -0.0625rem 0 0 rgba(34,53,72,0.2)",
 			"Label": "Shell Shadow",
 			"Tags": "Base,Shell"
 		},
