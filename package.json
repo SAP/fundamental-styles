@@ -61,7 +61,7 @@
     "@nx/devkit": "16.7.2",
     "@nx/eslint-plugin": "16.7.2",
     "@nx/js": "16.7.2",
-    "@nx/linter": "16.7.2",
+    "@nx/linter": "17.0.1",
     "@nx/plugin": "16.7.2",
     "@nx/react": "16.7.2",
     "@nx/web": "16.7.2",
