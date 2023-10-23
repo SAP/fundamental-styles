@@ -43,7 +43,7 @@ $block: #{$fd-namespace}-link;
     }
   }
 
-  &:visited {
+  &:visited:not(:focus) {
     @include fd-icon-selector() {
       color: var(--sapLink_Visited_Color);
     }
