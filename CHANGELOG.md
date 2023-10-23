@@ -1,3 +1,12 @@
+## [0.30.3-rc.0](https://github.com/SAP/fundamental-styles/compare/v0.30.2...v0.30.3-rc.0) (2023-10-23)
+
+
+### Bug Fixes
+
+* link focus icon color [ci visual] ([#4913](https://github.com/SAP/fundamental-styles/issues/4913)) ([7c85521](https://github.com/SAP/fundamental-styles/commit/7c8552118d57aa164f95753bbfd305c4d6a01716))
+
+
+
 ## [0.30.2](https://github.com/SAP/fundamental-styles/compare/v0.30.2-rc.48...v0.30.2) (2023-10-18)
 
 
