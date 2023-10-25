@@ -69,12 +69,12 @@ Disabled.parameters = {
   docs: {
     description: {
       story: `
-To disable rating indicator, the \`[disable]\` attribute needs to be added to all inputs.
+To disable rating indicator, the \`[disabled]\` attribute needs to be added to all inputs.
 Additionally, one of the selectors listed below needs to be added to the \`fd-rating-indicator\` element:
 
-- \`.is-disable\`
-- \`aria-disable="true"\`
-- \`[disable]\`
+- \`.is-disabled\`
+- \`aria-disabled="true"\`
+- \`[disabled]\`
 `
     }
   }

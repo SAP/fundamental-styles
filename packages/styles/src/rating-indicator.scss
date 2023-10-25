@@ -273,6 +273,12 @@ $block: #{$fd-namespace}-rating-indicator;
         font-size: calc(var(--fontSize) * var(--fdRating_Indicator_View_Mode_Unselected_Icon_Size_Ratio));
       }
     }
+
+    &.#{$block}--half-star {
+      @include fd-rating-indicator-labels-after-checked() {
+        width: calc(var(--fontSize) * var(--fdRating_Indicator_View_Mode_Unselected_Icon_Size_Ratio) * 0.5);
+      }
+    }
   }
 
   &--icon {
