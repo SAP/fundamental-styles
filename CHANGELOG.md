@@ -1,3 +1,12 @@
+# [0.31.0-rc.2](https://github.com/SAP/fundamental-styles/compare/v0.31.0-rc.1...v0.31.0-rc.2) (2023-10-25)
+
+
+### Bug Fixes
+
+* **styles:** selected table cell border issue [ci visual] ([#4911](https://github.com/SAP/fundamental-styles/issues/4911)) ([5080ec8](https://github.com/SAP/fundamental-styles/commit/5080ec812a81c4b2de1e705935429b3980181b09))
+
+
+
 # [0.31.0-rc.1](https://github.com/SAP/fundamental-styles/compare/v0.31.0-rc.0...v0.31.0-rc.1) (2023-10-25)
 
 
