@@ -20,7 +20,7 @@ Fundamental Library Common CSS Package is part of the Fundamental Styles. If you
 Fundamental Library Common CSS Package can stand on its own. To install the package:
 
 ```bash
-npm i @fundamental-styles/common-css
+npm i @sap-ui/common-css
 ```
 
 ## Common CSS Properties
