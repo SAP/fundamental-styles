@@ -1,3 +1,12 @@
+## [0.30.3-rc.3](https://github.com/SAP/fundamental-styles/compare/v0.30.3-rc.2...v0.30.3-rc.3) (2023-10-25)
+
+
+### Bug Fixes
+
+* **styles:** position the header on the top for Tool Layout [ci visual] ([#4927](https://github.com/SAP/fundamental-styles/issues/4927)) ([a78a2f8](https://github.com/SAP/fundamental-styles/commit/a78a2f807590f98209c13b92d288fe7cdcff1dd0))
+
+
+
 ## [0.30.3-rc.2](https://github.com/SAP/fundamental-styles/compare/v0.30.3-rc.1...v0.30.3-rc.2) (2023-10-25)
 
 
