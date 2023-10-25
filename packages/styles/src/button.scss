@@ -28,19 +28,17 @@ $btp-button-block: #{$block-button}--btp;
 }
 
 @mixin btp-badge() {
-  @include base-badge() {
-    @include fd-reset();
-    @include fd-set-square(0.625rem);
-    @include fd-set-position-right(-0.125rem);
+  @include fd-reset-paddings();
+  @include fd-set-square(0.625rem);
+  @include fd-set-position-right(-0.125rem);
 
-    top: -0.125rem;
-    position: absolute;
-    border-radius: 100%;
-    background: var(--sapContent_BadgeBackground);
-    border: 0.0625rem solid var(--fdButton_ToolHeader_Badge_Border_Color);
-    color: var(--sapContent_BadgeBackground);
-    overflow: hidden;
-  }
+  top: -0.125rem;
+  position: absolute;
+  border-radius: 100%;
+  background: var(--sapContent_BadgeBackground);
+  border: 0.0625rem solid var(--fdButton_ToolHeader_Badge_Border_Color);
+  color: var(--sapContent_BadgeBackground);
+  overflow: hidden;
 }
 
 @mixin badge() {
