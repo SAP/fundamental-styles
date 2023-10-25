@@ -1,3 +1,17 @@
+# [0.31.0-rc.0](https://github.com/SAP/fundamental-styles/compare/v0.30.3-rc.4...v0.31.0-rc.0) (2023-10-25)
+
+
+### chore
+
+* **common-css:** update the Common CSS doc ([#4929](https://github.com/SAP/fundamental-styles/issues/4929)) ([02e2935](https://github.com/SAP/fundamental-styles/commit/02e293503c2eb1ba8e0d07707b6a570f60f8400d))
+
+
+### BREAKING CHANGES
+
+* **common-css:** move package name `@fundamental-styles/common-css` to `@sap-ui/common-css`
+
+
+
 ## [0.30.3-rc.4](https://github.com/SAP/fundamental-styles/compare/v0.30.3-rc.3...v0.30.3-rc.4) (2023-10-25)
 
 
