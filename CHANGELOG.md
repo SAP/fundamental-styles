@@ -1,3 +1,12 @@
+## [0.30.3-rc.1](https://github.com/SAP/fundamental-styles/compare/v0.30.3-rc.0...v0.30.3-rc.1) (2023-10-25)
+
+
+### Bug Fixes
+
+* **styles:** rating indicator half star display modes [ci visual] ([#4924](https://github.com/SAP/fundamental-styles/issues/4924)) ([cab9768](https://github.com/SAP/fundamental-styles/commit/cab976866f93ba1a4fa944eb8bebc3523c053d32))
+
+
+
 ## [0.30.3-rc.0](https://github.com/SAP/fundamental-styles/compare/v0.30.2...v0.30.3-rc.0) (2023-10-23)
 
 
