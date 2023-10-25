@@ -196,12 +196,6 @@ $table-z-index: (
       &::after {
         z-index: map-get($table-z-index, "focus");
       }
-
-      @include fd-selected() {
-        &::after {
-          border-color: var(--sapContent_ContrastFocusColor);
-        }
-      }
     }
 
     &--activable {
