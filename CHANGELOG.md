@@ -1,3 +1,12 @@
+# [0.31.0-rc.1](https://github.com/SAP/fundamental-styles/compare/v0.31.0-rc.0...v0.31.0-rc.1) (2023-10-25)
+
+
+### Bug Fixes
+
+* **styles:** show the horizon icons [ci visual] ([5448694](https://github.com/SAP/fundamental-styles/commit/544869473876d69fc0f818d911914fdb528ec45e))
+
+
+
 # [0.31.0-rc.0](https://github.com/SAP/fundamental-styles/compare/v0.30.3-rc.4...v0.31.0-rc.0) (2023-10-25)
 
 
