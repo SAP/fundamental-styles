@@ -3,7 +3,7 @@
     "version": "VERSION_PLACEHOLDER",
     "license": "Apache-2.0",
     "homepage": "https://sap.github.io/fundamental-styles/",
-    "description": "Fundamental Library Styles Common CSS",
+    "description": "SAP UI Common CSS",
     "repository": {
         "type": "git",
         "url": "https://github.com/SAP/fundamental-styles"
