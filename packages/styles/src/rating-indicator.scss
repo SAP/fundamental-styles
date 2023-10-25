@@ -1,5 +1,5 @@
-@import "./new-settings";
-@import "./mixins";
+@import './new-settings';
+@import './mixins';
 
 $block: #{$fd-namespace}-rating-indicator;
 
@@ -13,7 +13,7 @@ $block: #{$fd-namespace}-rating-indicator;
     &__label {
       margin-right: 0;
 
-      &:nth-child(4n+6) {
+      &:nth-child(4n + 6) {
         margin-right: $spacing-between-icons;
         flex-direction: row-reverse;
 
@@ -46,7 +46,12 @@ $block: #{$fd-namespace}-rating-indicator;
     }
   }
 
-  @include fd-disabled() {
+  &.#{$block}--display-mode,
+  &.#{$block}--non-interactive,
+  // Cannot use disabled mixin due to additional classes.
+  &[aria-disabled="true"],
+  &.is-disabled,
+  &:disabled {
     @include fd-rating-indicator-first-half-label-after-checked() {
       width: calc(var(--fontSize) * 0.5);
 
@@ -67,7 +72,10 @@ $block: #{$fd-namespace}-rating-indicator;
       .#{$block}__label {
         &-unrated {
           &::before {
-            font-size: calc(var(--fontSize) * var(--fdRating_Indicator_View_Mode_Unselected_Icon_Size_Ratio));
+            font-size:
+              calc(
+                var(--fontSize) * var(--fdRating_Indicator_View_Mode_Unselected_Icon_Size_Ratio)
+              );
           }
         }
       }
@@ -89,18 +97,41 @@ $block: #{$fd-namespace}-rating-indicator;
 
 .#{$block} {
   $fd-rating-indicator-sizes: (
-    "cozy": ("fontSize": 1.5rem, "spacingBetweenIcons": 0.1875rem, "controlMargin": 0.8125rem 0),
-    "compact": ("fontSize": 1rem, "spacingBetweenIcons": 0.125rem, "controlMargin": 0.5rem 0),
-    "condensed": ("fontSize": 1rem, "spacingBetweenIcons": 0.125rem),
-    "xs": ("fontSize": 0.75rem, "spacingBetweenIcons": 1px),
-    "sm": ("fontSize": 1rem, "spacingBetweenIcons": 0.125rem),
-    "md": ("fontSize": 1.375rem, "spacingBetweenIcons": 0.1875rem),
-    "lg": ("fontSize": 2rem, "spacingBetweenIcons": 0.25rem)
+    'cozy': (
+      'fontSize': 1.5rem,
+      'spacingBetweenIcons': 0.1875rem,
+      'controlMargin': 0.8125rem 0
+    ),
+    'compact': (
+      'fontSize': 1rem,
+      'spacingBetweenIcons': 0.125rem,
+      'controlMargin': 0.5rem 0
+    ),
+    'condensed': (
+      'fontSize': 1rem,
+      'spacingBetweenIcons': 0.125rem
+    ),
+    'xs': (
+      'fontSize': 0.75rem,
+      'spacingBetweenIcons': 1px
+    ),
+    'sm': (
+      'fontSize': 1rem,
+      'spacingBetweenIcons': 0.125rem
+    ),
+    'md': (
+      'fontSize': 1.375rem,
+      'spacingBetweenIcons': 0.1875rem
+    ),
+    'lg': (
+      'fontSize': 2rem,
+      'spacingBetweenIcons': 0.25rem
+    )
   );
   $fd-rating-indicator-default-size: map-get($fd-rating-indicator-sizes, 'md');
 
-  --fontSize: #{map_get($fd-rating-indicator-default-size, "fontSize")};
-  --spacingBetweenIcons: #{map_get($fd-rating-indicator-default-size, "spacingBetweenIcons")};
+  --fontSize: #{map_get($fd-rating-indicator-default-size, 'fontSize')};
+  --spacingBetweenIcons: #{map_get($fd-rating-indicator-default-size, 'spacingBetweenIcons')};
 
   $fd-rating-indicator-dynamic-text-space: 0.5rem;
 
@@ -110,10 +141,10 @@ $block: #{$fd-namespace}-rating-indicator;
 
   @each $set-name, $size-set in $fd-rating-indicator-sizes {
     &--#{$set-name} {
-      --fontSize: #{map_get($size-set, "fontSize")};
-      --spacingBetweenIcons: #{map_get($size-set, "spacingBetweenIcons")};
+      --fontSize: #{map_get($size-set, 'fontSize')};
+      --spacingBetweenIcons: #{map_get($size-set, 'spacingBetweenIcons')};
 
-      $control-margin: map_get($size-set, "controlMargin");
+      $control-margin: map_get($size-set, 'controlMargin');
 
       @if $control-margin {
         margin: $control-margin;
@@ -131,7 +162,8 @@ $block: #{$fd-namespace}-rating-indicator;
     @include fd-fiori-focus-within(var(--fdRating_Indicator_Focus_Outline_Offset, 0)) {
       // do not show outline for each rating item
       // keeping it this way in order to preserve fallback behavior for IE
-      .#{$block}__label, .#{$block}__input {
+      .#{$block}__label,
+      .#{$block}__input {
         outline: none !important;
       }
     }
@@ -167,7 +199,7 @@ $block: #{$fd-namespace}-rating-indicator;
     @include fd-flex-vertical-center();
 
     @include fd-icon-glyph('favorite') {
-      font-family: "SAP-icons";
+      font-family: 'SAP-icons';
       color: var(--sapContent_RatedColor);
       font-size: var(--fontSize);
     }
@@ -271,12 +303,6 @@ $block: #{$fd-namespace}-rating-indicator;
       @include fd-icon-glyph('favorite') {
         color: var(--sapContent_UnratedColor);
         font-size: calc(var(--fontSize) * var(--fdRating_Indicator_View_Mode_Unselected_Icon_Size_Ratio));
-      }
-    }
-
-    &.#{$block}--half-star {
-      @include fd-rating-indicator-labels-after-checked() {
-        width: calc(var(--fontSize) * var(--fdRating_Indicator_View_Mode_Unselected_Icon_Size_Ratio) * 0.5);
       }
     }
   }
