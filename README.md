@@ -93,7 +93,7 @@ list of icon class names. See Project Configuration below for instructions to in
 ### Project Configuration
 
 This project does not contain fonts and icons - they must be added to your project separately. Download the @sap-theming
-library. After adding fonts and icons to your project, include the following in your CSS:
+library. After adding fonts and icons to your project, include the following in your CSS(The icon font files have different design for Fiori 3 themes and they can be found in the folder `@sap-theming/theming-base-content/content/Base/baseLib/baseTheme/fonts/`):
 
 ```css
 @font-face {
@@ -133,7 +133,7 @@ library. After adding fonts and icons to your project, include the following in 
 
 @font-face {
     font-family: 'SAP-icons-TNT';
-    src: url('~@sap-theming/theming-base-content/content/Base/baseLib/baseTheme/fonts/SAP-icons-TNT.woff') format('woff');
+    src: url('~@sap-theming/theming-base-content/content/Base/baseLib/sap_horizon/fonts/SAP-icons-TNT.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
