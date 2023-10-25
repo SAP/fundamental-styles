@@ -1,2 +1,0 @@
-import{e as o,F as e,j as r,H as t,C as a,V as s,g as i,S as c}from"./IntroductionPage-71cc1a85.js";import{M as d}from"./chunk-S4VUQJ4A-cc903664.js";const u=({children:n})=>o(e,{children:[r(t,{}),r("div",{className:"fd-introduction",children:n}),r(a,{}),r(s,{}),r(i,{})]});function m({children:n}){return r(c,{children:r(u,{children:n})})}function p(n){return()=>r(m,{children:r(d,{options:{forceBlock:!0},children:n})})}export{p as R};
-//# sourceMappingURL=IntroductionPageWrapper-212f24f5.js.map
