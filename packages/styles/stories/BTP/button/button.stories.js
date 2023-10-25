@@ -1,6 +1,5 @@
 import toolHeaderButtonExampleHtml from './tool-header.example.html?raw';
 import nestedButtonExampleHtml from './nested.example.html?raw';
-import badgeExampleHtml from './badge.example.html?raw';
 import description from './button.md?raw';
 
 import '../../../src/icon.scss';
@@ -13,15 +12,6 @@ export default {
         tags: ['a11y', 'btp', 'horizon-only']
     }
 };
-
-export const Badge = () => badgeExampleHtml;
-Badge.parameters = {
-    docs: {
-        description: {
-            story: `Buttons can contain a badge that acts as a visual eye-catcher and attracts the user’s attention. Badges in BTP, unlike in base SAP Horizon and Fiori, should not contain text. They should be used only as a visual eye-catcher.`
-        }
-    }
-}
 
 export const ToolHeaderButton = () => toolHeaderButtonExampleHtml;
 ToolHeaderButton.parameters = {

@@ -5,53 +5,6 @@
 
 $fd-button-icon-font-size: 1rem;
 $fd-button-badge-spacing: 0.25rem;
-$btp-button-block: #{$block-button}--btp;
-
-@mixin base-badge() {
-  @include fd-reset();
-  @include fd-inline-flex-center();
-  @include fd-set-position-right(-$fd-button-badge-spacing);
-
-  z-index: 1;
-  height: 1rem;
-  position: var(--fdButton_Badge_Position, absolute);
-  padding: 0 0.3125rem;
-  border-radius: 0.5rem;
-  top: -$fd-button-badge-spacing;
-  font-size: var(--sapFontSmallSize);
-  color: var(--sapContent_BadgeTextColor);
-  border: 0.0625rem solid var(--fdButton_Badge_Border_Color);
-  background-color: var(--sapContent_BadgeBackground);
-
-  @include fd-set-margin-left(var(--fdButton_Badge_Margin_Left, 0));
-  @content;
-}
-
-@mixin btp-badge() {
-  @include fd-reset-paddings();
-  @include fd-set-square(0.625rem);
-  @include fd-set-position-right(-0.125rem);
-
-  top: -0.125rem;
-  position: absolute;
-  border-radius: 100%;
-  background: var(--sapContent_BadgeBackground);
-  border: 0.0625rem solid var(--fdButton_ToolHeader_Badge_Border_Color);
-  color: var(--sapContent_BadgeBackground);
-  overflow: hidden;
-}
-
-@mixin badge() {
-  .#{$block-button}__badge {
-    @include base-badge();
-  }
-
-  &.#{$btp-button-block} {
-    .#{$block-button}__badge {
-      @include btp-badge();
-    }
-  }
-}
 
 .#{$block-button} {
   --fdButton_Clickable_Height: 2.75rem;
@@ -62,7 +15,6 @@ $btp-button-block: #{$block-button}--btp;
   @include fd-button-reset();
   @include fd-inline-flex-center();
   @include fd-set-paddings-x-equal(calc(var(--fdButton_Padding_X) - var(--sapButton_BorderWidth)));
-  @include badge();
 
   height: var(--fdButton_Height);
   max-height: var(--fdButton_Height);
@@ -120,6 +72,25 @@ $btp-button-block: #{$block-button}--btp;
       font-size: inherit;
       line-height: inherit;
     }
+  }
+
+  &__badge {
+    @include fd-reset();
+    @include fd-inline-flex-center();
+    @include fd-set-position-right(-$fd-button-badge-spacing);
+
+    z-index: 1;
+    height: 1rem;
+    position: var(--fdButton_Badge_Position, absolute);
+    padding: 0 0.3125rem;
+    border-radius: 0.5rem;
+    top: -$fd-button-badge-spacing;
+    font-size: var(--sapFontSmallSize);
+    color: var(--sapContent_BadgeTextColor);
+    border: 0.0625rem solid var(--fdButton_Badge_Border_Color);
+    background-color: var(--sapContent_BadgeBackground);
+
+    @include fd-set-margin-left(var(--fdButton_Badge_Margin_Left, 0));
   }
 
   @include fd-compact-or-condensed() {
@@ -274,6 +245,21 @@ $btp-button-block: #{$block-button}--btp;
     @include fd-compact-and-condensed() {
       --fdButton_ToolHeader_Padding: 0.5rem;
       --fdButton_ToolHeader_Size: var(--fdButton_ToolHeader_Button_Size_Compact);
+    }
+
+    .#{$block-button}__badge {
+      @include fd-reset();
+      @include fd-set-square(0.625rem);
+      @include fd-set-position-right(-0.125rem);
+
+      top: -0.125rem;
+      position: absolute;
+      border-radius: 100%;
+      background: var(--sapContent_BadgeBackground);
+      border: 0.0625rem solid var(--fdButton_ToolHeader_Badge_Border_Color);
+      color: var(--sapContent_BadgeBackground);
+      padding: 0;
+      overflow: hidden;
     }
   }
 
