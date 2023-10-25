@@ -1,3 +1,12 @@
+## [0.30.3-rc.4](https://github.com/SAP/fundamental-styles/compare/v0.30.3-rc.3...v0.30.3-rc.4) (2023-10-25)
+
+
+### Bug Fixes
+
+* **common-css:** change the common-css package ([#4928](https://github.com/SAP/fundamental-styles/issues/4928)) ([9e7f2a1](https://github.com/SAP/fundamental-styles/commit/9e7f2a188188b46cdc9ff148466670989beb495c))
+
+
+
 ## [0.30.3-rc.3](https://github.com/SAP/fundamental-styles/compare/v0.30.3-rc.2...v0.30.3-rc.3) (2023-10-25)
 
 
