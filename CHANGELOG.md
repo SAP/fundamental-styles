@@ -1,3 +1,12 @@
+## [0.30.3-rc.2](https://github.com/SAP/fundamental-styles/compare/v0.30.3-rc.1...v0.30.3-rc.2) (2023-10-25)
+
+
+### Bug Fixes
+
+* **styles:** half star unification and doc update [ci visual] ([#4926](https://github.com/SAP/fundamental-styles/issues/4926)) ([216cbcc](https://github.com/SAP/fundamental-styles/commit/216cbcc391284272ad3c1589c341fd8abb7a9953))
+
+
+
 ## [0.30.3-rc.1](https://github.com/SAP/fundamental-styles/compare/v0.30.3-rc.0...v0.30.3-rc.1) (2023-10-25)
 
 
