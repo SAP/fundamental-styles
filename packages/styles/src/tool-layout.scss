@@ -4,15 +4,17 @@
 $block: #{$fd-namespace}-tool-layout;
 
 .#{$block} {
+  --fdToolLayout_Gap: 0.5rem;
   --fdToolLayout_Padding: 0.5rem 0.5rem 0 0.5rem;
-  --fdToolLayout_Navigation_Container_Margin_Top: 0.5rem;
-  --fdToolLayout_Navigation_Container_Margin_Right: 0.5rem;
-  --fdToolLayout_Content_Container_Margin_Top: 0.5rem;
   --fdToolLayout_Content_Container_Border_Radius: 0.5rem 0.5rem 0 0;
   --fdToolLayout_Content_Container_Background: var(--sapBackgroundColor);
   --fdToolLayout_Content_Container_BoxShadow: var(--sapToolLayoutContent_Shadow1);
 
   @include fd-reset();
+
+  @include fd-flex(column) {
+    gap: var(--fdToolLayout_Gap);
+  }
 
   width: 100%;
   height: 100%;
@@ -25,6 +27,10 @@ $block: #{$fd-namespace}-tool-layout;
     @include fd-flex() {
       flex-wrap: wrap;
     }
+
+    &:not(:first-child) {
+      gap: var(--fdToolLayout_Gap);
+    }
   }
 
   &__header-container {
@@ -35,19 +41,8 @@ $block: #{$fd-namespace}-tool-layout;
 
   &__navigation-container {
     @include fd-reset();
-    @include fd-set-margin-right(var(--fdToolLayout_Navigation_Container_Margin_Right));
-
-    margin-top: var(--fdToolLayout_Navigation_Container_Margin_Top);
-
-    &--popup {
-      --fdToolLayout_Navigation_Container_Margin_Top: 0;
-      --fdToolLayout_Navigation_Container_Margin_Right: 0;
-    }
 
     &--horizontal {
-      --fdToolLayout_Navigation_Container_Margin_Top: 0;
-      --fdToolLayout_Navigation_Container_Margin_Right: 0;
-
       flex: 1;
       min-width: 100%;
 
@@ -64,7 +59,6 @@ $block: #{$fd-namespace}-tool-layout;
     width: 100%;
     height: 100%;
     overflow: hidden;
-    margin-top: var(--fdToolLayout_Content_Container_Margin_Top);
     box-shadow: var(--fdToolLayout_Content_Container_BoxShadow);
     background: var(--fdToolLayout_Content_Container_Background);
     border-radius: var(--fdToolLayout_Content_Container_Border_Radius);
@@ -79,14 +73,51 @@ $block: #{$fd-namespace}-tool-layout;
     }
   }
 
+  &--horizontal-navigation {
+    --fdToolLayout_Gap: 0;
+
+    .#{$block}__container:not(:first-child) {
+      --fdToolLayout_Gap: 0.5rem;
+    }
+
+    &.#{$block}--phone {
+      .#{$block}__container:not(:first-child) {
+        --fdToolLayout_Gap: 0.25rem;
+      }
+    }
+  }
+
   &--tablet {
     --fdToolLayout_Padding: 0.5rem;
     --fdToolLayout_Content_Container_Border_Radius: 0.5rem;
   }
 
   &--phone {
+    --fdToolLayout_Gap: 0.25rem;
     --fdToolLayout_Padding: 0.25rem;
-    --fdToolLayout_Content_Container_Margin_Top: 0.25rem;
     --fdToolLayout_Content_Container_Border_Radius: 0.25rem;
+  }
+
+  &--sticky {
+    @include fd-set-equal-positions(0);
+
+    position: absolute;
+
+    .#{$block} {
+      &__container {
+        position: relative;
+      }
+
+      &__container:not(:first-child) {
+        flex: 1;
+        overflow: hidden;
+      }
+
+      &__content-container,
+      &__navigation-container {
+        height: 100%;
+        overflow: scroll;
+      }
+    }
   }
 }
