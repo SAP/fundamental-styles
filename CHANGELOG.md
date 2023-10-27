@@ -1,3 +1,12 @@
+# [0.32.0-rc.1](https://github.com/SAP/fundamental-styles/compare/v0.32.0-rc.0...v0.32.0-rc.1) (2023-10-27)
+
+
+### Bug Fixes
+
+* **styles:** input and select disabled placeholder [ci visual] ([#4932](https://github.com/SAP/fundamental-styles/issues/4932)) ([9a4fe47](https://github.com/SAP/fundamental-styles/commit/9a4fe47f700a5e32ccf444ac3288b3c3b3b27867))
+
+
+
 # [0.32.0-rc.0](https://github.com/SAP/fundamental-styles/compare/v0.31.1-rc.1...v0.32.0-rc.0) (2023-10-27)
 
 
