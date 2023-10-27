@@ -1,3 +1,12 @@
+## [0.31.1-rc.0](https://github.com/SAP/fundamental-styles/compare/v0.31.0...v0.31.1-rc.0) (2023-10-27)
+
+
+### Bug Fixes
+
+* **styles:** calendar updates [ci visual] ([#4930](https://github.com/SAP/fundamental-styles/issues/4930)) ([d96e42b](https://github.com/SAP/fundamental-styles/commit/d96e42b31d9dc72d6bfcfb1501eecd0b50e2fac9))
+
+
+
 # [0.31.0](https://github.com/SAP/fundamental-styles/compare/v0.31.0-rc.2...v0.31.0) (2023-10-25)
 
 
