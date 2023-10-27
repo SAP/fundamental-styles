@@ -1,3 +1,12 @@
+## [0.31.1-rc.1](https://github.com/SAP/fundamental-styles/compare/v0.31.1-rc.0...v0.31.1-rc.1) (2023-10-27)
+
+
+### Bug Fixes
+
+* **styles:** visible overflow when more dropdown is available [ci visual] ([#4931](https://github.com/SAP/fundamental-styles/issues/4931)) ([8502822](https://github.com/SAP/fundamental-styles/commit/8502822562264626ec192e9ed52efc8406b1bef5))
+
+
+
 ## [0.31.1-rc.0](https://github.com/SAP/fundamental-styles/compare/v0.31.0...v0.31.1-rc.0) (2023-10-27)
 
 
