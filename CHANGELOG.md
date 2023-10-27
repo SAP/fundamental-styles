@@ -1,3 +1,23 @@
+# [0.32.0-rc.0](https://github.com/SAP/fundamental-styles/compare/v0.31.1-rc.1...v0.32.0-rc.0) (2023-10-27)
+
+
+### chore
+
+* moved btp button examples into the BTP subfolder ([#4925](https://github.com/SAP/fundamental-styles/issues/4925)) ([b54bee9](https://github.com/SAP/fundamental-styles/commit/b54bee9bc108667b5fdcb0334661033870e4c14a))
+
+
+### BREAKING CHANGES
+
+* `fd-button--btp` is required to have a badge on btp button
+
+* fix: excessive CSS overrides [ci visual]
+
+* fix: fixed incorrect usage of the badged buttons in tool-header[ci visual]
+
+* fix: fall back to the main version of the button[ci visual]
+
+
+
 ## [0.31.1-rc.1](https://github.com/SAP/fundamental-styles/compare/v0.31.1-rc.0...v0.31.1-rc.1) (2023-10-27)
 
 
