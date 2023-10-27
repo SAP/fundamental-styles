@@ -2,7 +2,7 @@
     "files": [
         {
             "path": "./dist/packages/styles/dist/fundamental-styles.css",
-            "maxSize": "140 kB"
+            "maxSize": "150 kB"
         }
     ]
 }

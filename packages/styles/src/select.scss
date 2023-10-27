@@ -63,8 +63,22 @@ $fd-select-padding-x-compact: 0.5rem;
         --fdSelect_Min_Width: 5rem;
       }
 
+      &[aria-selected='false'] {
+        .#{$block}__text-content {
+          visibility: hidden;
+        }
+      }
+
       .#{$block}__button {
         opacity: 0;
+      }
+    }
+
+    @include fd-disabled() {
+      &[aria-selected='false'] {
+        .#{$block}__text-content {
+          visibility: hidden;
+        }
       }
     }
 
