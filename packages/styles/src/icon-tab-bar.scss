@@ -304,7 +304,10 @@ $fd-icon-tab-bar-semantic-values: (
     background: var(--sapObjectHeader_Background);
     min-height: 2.75rem;
     position: relative;
-    overflow-x: hidden;
+
+    &:has(.#{$block}__item--overflow) {
+      overflow: visible;
+    }
   }
 
   &__panel {
