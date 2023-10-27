@@ -83,6 +83,92 @@ exports[`Check stories > BTP/Avatar > Story Transparent > Should match snapshot 
 "
 `;
 
+exports[`Check stories > BTP/Button > Story NestedButton > Should match snapshot 1`] = `
+"<h4>normal</h4>
+<div class=\\"fddocs-container fddocs-button-container\\">
+    <button class=\\"fd-button fd-button--nested\\" aria-label=\\"Close\\">
+        <i class=\\"sap-icon--decline\\" role=\\"presentation\\"></i>
+    </button>
+</div>
+
+<h4>hover</h4>
+<div class=\\"fddocs-container fddocs-button-container\\">
+    <button class=\\"fd-button fd-button--nested is-hover\\" aria-label=\\"Close\\">
+        <i class=\\"sap-icon--decline\\" role=\\"presentation\\"></i>
+    </button>
+</div>
+
+<h4>active</h4>
+<div class=\\"fddocs-container fddocs-button-container\\">
+    <button class=\\"fd-button fd-button--nested is-active\\" aria-label=\\"Close\\">
+        <i class=\\"sap-icon--decline\\" role=\\"presentation\\"></i>
+    </button>
+</div>
+
+<h4>focus</h4>
+<div class=\\"fddocs-container fddocs-button-container\\">
+    <button class=\\"fd-button fd-button--nested is-focus\\" aria-label=\\"Close\\">
+        <i class=\\"sap-icon--decline\\" role=\\"presentation\\"></i>
+    </button>
+</div>
+
+<h4>disabled</h4>
+<div class=\\"fddocs-container fddocs-button-container\\">
+    <button class=\\"fd-button fd-button--nested is-disabled\\" aria-label=\\"Close\\">
+        <i class=\\"sap-icon--decline\\" role=\\"presentation\\"></i>
+    </button>
+</div>
+
+
+"
+`;
+
+exports[`Check stories > BTP/Button > Story ToolHeaderButton > Should match snapshot 1`] = `
+"<h4>normal</h4>
+<div class=\\"fddocs-container fddocs-button-container\\">
+    <button class=\\"fd-button fd-button--tool-header\\" aria-label=\\"Home\\">
+        <i class=\\"sap-icon--home\\" role=\\"presentation\\"></i>
+    </button>
+</div>
+
+<h4>hover</h4>
+<div class=\\"fddocs-container fddocs-button-container\\">
+    <button class=\\"fd-button fd-button--tool-header is-hover\\" aria-label=\\"Home\\">
+        <i class=\\"sap-icon--home\\" role=\\"presentation\\"></i>
+    </button>
+</div>
+
+<h4>active</h4>
+<div class=\\"fddocs-container fddocs-button-container\\">
+    <button class=\\"fd-button fd-button--tool-header is-active\\" aria-label=\\"Home\\">
+        <i class=\\"sap-icon--home\\" role=\\"presentation\\"></i>
+    </button>
+</div>
+
+<h4>focus</h4>
+<div class=\\"fddocs-container fddocs-button-container\\">
+    <button class=\\"fd-button fd-button--tool-header is-focus\\" aria-label=\\"Home\\">
+        <i class=\\"sap-icon--home\\" role=\\"presentation\\"></i>
+    </button>
+</div>
+
+<h4>disabled</h4>
+<div class=\\"fddocs-container fddocs-button-container\\">
+    <button class=\\"fd-button fd-button--tool-header is-disabled\\" aria-label=\\"Home\\">
+        <i class=\\"sap-icon--home\\" role=\\"presentation\\"></i>
+    </button>
+</div>
+
+<h4>with badge</h4>
+<button class=\\"fd-button fd-button--tool-header\\" aria-label=\\"Home\\">
+    <i class=\\"sap-icon--home\\" role=\\"presentation\\"></i>
+    <span class=\\"fd-button__badge\\"></span>
+</button>
+
+
+"
+`;
+
 exports[`Check stories > BTP/Navigation/Horizontal Navigation > Story NavigationHorizontal > Should match snapshot 1`] = `
 "<div style=\\"height: 500px\\">
     <nav 
@@ -4418,11 +4504,11 @@ exports[`Check stories > BTP/Tool Header > Story Desktop > Should match snapshot
             tabindex=\\"0\\"
         />
         </div>
-        
+
         <div class=\\"fd-tool-header__element\\">
             <div class=\\"fd-tool-header__product-name\\">Product Name</div>
         </div>
-        
+
         <div class=\\"fd-tool-header__element\\">
             <div class=\\"fd-tool-header__second-title\\">Second Title</div>
         </div>
@@ -4472,13 +4558,13 @@ exports[`Check stories > BTP/Tool Header > Story Desktop > Should match snapshot
         <div class=\\"fd-tool-header__element\\">
             <span class=\\"fd-tool-header__separator\\"></span>
         </div>
-        
+
         <div class=\\"fd-tool-header__element\\">
             <button class=\\"fd-button fd-button--tool-header\\" aria-label=\\"Action 3\\" title=\\"Action 3\\">
                 <i class=\\"sap-icon--action-settings\\" role=\\"presentation\\"></i>
             </button>
         </div>
-        
+
         <div class=\\"fd-tool-header__element\\">
             <button class=\\"fd-button fd-button--tool-header\\" aria-label=\\"Action 4\\" title=\\"Action 4\\">
                 <i class=\\"sap-icon--bell\\" role=\\"presentation\\"></i>
@@ -4497,11 +4583,11 @@ exports[`Check stories > BTP/Tool Header > Story Desktop > Should match snapshot
                 <i class=\\"sap-icon--microphone\\" role=\\"presentation\\"></i>
             </button>
         </div>
-        
+
         <div class=\\"fd-tool-header__element\\">
             <span class=\\"fd-tool-header__separator\\"></span>
         </div>
-        
+
         <div class=\\"fd-tool-header__element\\">
             <span
                 class=\\"fd-avatar fd-avatar--40 fd-avatar--circle fd-avatar--thumbnail\\"
@@ -4511,7 +4597,7 @@ exports[`Check stories > BTP/Tool Header > Story Desktop > Should match snapshot
                 title=\\"John Doe\\"
                 aria-label=\\"John Doe\\"
             ></span>
-        </div> 
+        </div>
     </div>
 </div>
 
@@ -4548,11 +4634,11 @@ exports[`Check stories > BTP/Tool Header > Story Desktop > Should match snapshot
             tabindex=\\"0\\"
         />
         </div>
-        
+
         <div class=\\"fd-tool-header__element\\">
             <div class=\\"fd-tool-header__product-name\\">Product Name</div>
         </div>
-        
+
         <div class=\\"fd-tool-header__element\\">
             <div class=\\"fd-tool-header__second-title\\">Second Title</div>
         </div>
@@ -4602,13 +4688,13 @@ exports[`Check stories > BTP/Tool Header > Story Desktop > Should match snapshot
         <div class=\\"fd-tool-header__element\\">
             <span class=\\"fd-tool-header__separator\\"></span>
         </div>
-        
+
         <div class=\\"fd-tool-header__element\\">
             <button class=\\"fd-button fd-button--tool-header\\" aria-label=\\"Action 3\\" title=\\"Action 3\\">
                 <i class=\\"sap-icon--action-settings\\" role=\\"presentation\\"></i>
             </button>
         </div>
-        
+
         <div class=\\"fd-tool-header__element\\">
             <button class=\\"fd-button fd-button--tool-header\\" aria-label=\\"Action 4\\" title=\\"Action 4\\">
                 <i class=\\"sap-icon--bell\\" role=\\"presentation\\"></i>
@@ -4627,11 +4713,11 @@ exports[`Check stories > BTP/Tool Header > Story Desktop > Should match snapshot
                 <i class=\\"sap-icon--microphone\\" role=\\"presentation\\"></i>
             </button>
         </div>
-        
+
         <div class=\\"fd-tool-header__element\\">
             <span class=\\"fd-tool-header__separator\\"></span>
         </div>
-        
+
         <div class=\\"fd-tool-header__element\\">
             <span
                 class=\\"fd-avatar fd-avatar--40 fd-avatar--circle fd-avatar--thumbnail\\"
@@ -4641,7 +4727,7 @@ exports[`Check stories > BTP/Tool Header > Story Desktop > Should match snapshot
                 title=\\"John Doe\\"
                 aria-label=\\"John Doe\\"
             ></span>
-        </div>    
+        </div>
     </div>
 </div>
 "
@@ -4664,7 +4750,7 @@ exports[`Check stories > BTP/Tool Header > Story Mobile > Should match snapshot 
                 <i class=\\"sap-icon--slim-arrow-left\\" role=\\"presentation\\"></i>
             </button>
         </div>
-        
+
         <div class=\\"fd-tool-header__element\\">
             <img
             class=\\"fd-tool-header__logo\\"
@@ -4681,11 +4767,11 @@ exports[`Check stories > BTP/Tool Header > Story Mobile > Should match snapshot 
             tabindex=\\"0\\"
         />
         </div>
-        
+
         <div class=\\"fd-tool-header__element fd-tool-header__element--hidden\\">
             <div class=\\"fd-tool-header__product-name\\">Product Name</div>
         </div>
-        
+
         <div class=\\"fd-tool-header__element fd-tool-header__element--hidden\\">
             <div class=\\"fd-tool-header__second-title\\">Second Title</div>
         </div>
@@ -4735,13 +4821,13 @@ exports[`Check stories > BTP/Tool Header > Story Mobile > Should match snapshot 
         <div class=\\"fd-tool-header__element fd-tool-header__element--hidden\\">
             <span class=\\"fd-tool-header__separator\\"></span>
         </div>
-        
+
         <div class=\\"fd-tool-header__element fd-tool-header__element--hidden\\">
             <button class=\\"fd-button fd-button--tool-header\\" aria-label=\\"Action 3\\" title=\\"Action 3\\">
                 <i class=\\"sap-icon--action-settings\\" role=\\"presentation\\"></i>
             </button>
         </div>
-        
+
         <div class=\\"fd-tool-header__element\\">
             <button class=\\"fd-button fd-button--tool-header\\" aria-label=\\"Action 4\\" title=\\"Action 4\\">
                 <i class=\\"sap-icon--bell\\" role=\\"presentation\\"></i>
@@ -4760,11 +4846,11 @@ exports[`Check stories > BTP/Tool Header > Story Mobile > Should match snapshot 
                 <i class=\\"sap-icon--microphone\\" role=\\"presentation\\"></i>
             </button>
         </div>
-        
+
         <div class=\\"fd-tool-header__element\\">
             <span class=\\"fd-tool-header__separator\\"></span>
         </div>
-        
+
         <div class=\\"fd-tool-header__element\\">
             <span
                 class=\\"fd-avatar fd-avatar--40 fd-avatar--circle fd-avatar--thumbnail\\"
@@ -4811,11 +4897,11 @@ exports[`Check stories > BTP/Tool Header > Story Mobile > Should match snapshot 
             tabindex=\\"0\\"
         />
         </div>
-        
+
         <div class=\\"fd-tool-header__element fd-tool-header__element--hidden\\">
             <div class=\\"fd-tool-header__product-name\\">Product Name</div>
         </div>
-        
+
         <div class=\\"fd-tool-header__elemen fd-tool-header__element--hidden\\">
             <div class=\\"fd-tool-header__second-title\\">Second Title</div>
         </div>
@@ -4865,13 +4951,13 @@ exports[`Check stories > BTP/Tool Header > Story Mobile > Should match snapshot 
         <div class=\\"fd-tool-header__element fd-tool-header__element--hidden\\">
             <span class=\\"fd-tool-header__separator\\"></span>
         </div>
-        
+
         <div class=\\"fd-tool-header__element fd-tool-header__element--hidden\\">
             <button class=\\"fd-button fd-button--tool-header\\" aria-label=\\"Action 3\\" title=\\"Action 3\\">
                 <i class=\\"sap-icon--action-settings\\" role=\\"presentation\\"></i>
             </button>
         </div>
-        
+
         <div class=\\"fd-tool-header__element fd-tool-header__element--hidden\\">
             <button class=\\"fd-button fd-button--tool-header\\" aria-label=\\"Action 4\\" title=\\"Action 4\\">
                 <i class=\\"sap-icon--bell\\" role=\\"presentation\\"></i>
@@ -4890,12 +4976,12 @@ exports[`Check stories > BTP/Tool Header > Story Mobile > Should match snapshot 
                 <i class=\\"sap-icon--microphone\\" role=\\"presentation\\"></i>
             </button>
         </div>
-        
+
         <div class=\\"fd-tool-header__element fd-tool-header__element--hidden\\">
             <span class=\\"fd-tool-header__separator\\"></span>
         </div>
-        
-        
+
+
         <div class=\\"fd-tool-header__element fd-tool-header__element--hidden\\">
             <span
                 class=\\"fd-avatar fd-avatar--40 fd-avatar--circle fd-avatar--thumbnail\\"
@@ -4906,7 +4992,7 @@ exports[`Check stories > BTP/Tool Header > Story Mobile > Should match snapshot 
                 aria-label=\\"John Doe\\"
             ></span>
         </div>
-        
+
     </div>
 </div>
 "
@@ -4946,11 +5032,11 @@ exports[`Check stories > BTP/Tool Header > Story Tablet > Should match snapshot 
             tabindex=\\"0\\"
         />
         </div>
-        
+
         <div class=\\"fd-tool-header__element\\">
             <div class=\\"fd-tool-header__product-name\\">Product Name</div>
         </div>
-        
+
         <div class=\\"fd-tool-header__element fd-tool-header__element--hidden\\">
             <div class=\\"fd-tool-header__second-title\\">Second Title</div>
         </div>
@@ -5000,13 +5086,13 @@ exports[`Check stories > BTP/Tool Header > Story Tablet > Should match snapshot 
         <div class=\\"fd-tool-header__element\\">
             <span class=\\"fd-tool-header__separator\\"></span>
         </div>
-        
+
         <div class=\\"fd-tool-header__element\\">
             <button class=\\"fd-button fd-button--tool-header\\" aria-label=\\"Action 3\\" title=\\"Action 3\\">
                 <i class=\\"sap-icon--action-settings\\" role=\\"presentation\\"></i>
             </button>
         </div>
-        
+
         <div class=\\"fd-tool-header__element\\">
             <button class=\\"fd-button fd-button--tool-header\\" aria-label=\\"Action 4\\" title=\\"Action 4\\">
                 <i class=\\"sap-icon--bell\\" role=\\"presentation\\"></i>
@@ -5025,11 +5111,11 @@ exports[`Check stories > BTP/Tool Header > Story Tablet > Should match snapshot 
                 <i class=\\"sap-icon--microphone\\" role=\\"presentation\\"></i>
             </button>
         </div>
-        
+
         <div class=\\"fd-tool-header__element\\">
             <span class=\\"fd-tool-header__separator\\"></span>
         </div>
-        
+
         <div class=\\"fd-tool-header__element\\">
             <span
                 class=\\"fd-avatar fd-avatar--40 fd-avatar--circle fd-avatar--thumbnail\\"
@@ -5076,11 +5162,11 @@ exports[`Check stories > BTP/Tool Header > Story Tablet > Should match snapshot 
             tabindex=\\"0\\"
         />
         </div>
-        
+
         <div class=\\"fd-tool-header__element\\">
             <div class=\\"fd-tool-header__product-name\\">Product Name</div>
         </div>
-        
+
         <div class=\\"fd-tool-header__element\\">
             <div class=\\"fd-tool-header__second-title\\">Second Title</div>
         </div>
@@ -5130,13 +5216,13 @@ exports[`Check stories > BTP/Tool Header > Story Tablet > Should match snapshot 
         <div class=\\"fd-tool-header__element fd-tool-header__element--hidden\\">
             <span class=\\"fd-tool-header__separator\\"></span>
         </div>
-        
+
         <div class=\\"fd-tool-header__element\\">
             <button class=\\"fd-button fd-button--tool-header\\" aria-label=\\"Action 3\\" title=\\"Action 3\\">
                 <i class=\\"sap-icon--action-settings\\" role=\\"presentation\\"></i>
             </button>
         </div>
-        
+
         <div class=\\"fd-tool-header__element\\">
             <button class=\\"fd-button fd-button--tool-header\\" aria-label=\\"Action 4\\" title=\\"Action 4\\">
                 <i class=\\"sap-icon--bell\\" role=\\"presentation\\"></i>
@@ -5155,11 +5241,11 @@ exports[`Check stories > BTP/Tool Header > Story Tablet > Should match snapshot 
                 <i class=\\"sap-icon--microphone\\" role=\\"presentation\\"></i>
             </button>
         </div>
-        
+
         <div class=\\"fd-tool-header__element\\">
             <span class=\\"fd-tool-header__separator\\"></span>
         </div>
-        
+
         <div class=\\"fd-tool-header__element\\">
             <span
                 class=\\"fd-avatar fd-avatar--40 fd-avatar--circle fd-avatar--thumbnail\\"
@@ -5170,7 +5256,7 @@ exports[`Check stories > BTP/Tool Header > Story Tablet > Should match snapshot 
                 aria-label=\\"John Doe\\"
             ></span>
         </div>
-        
+
     </div>
 </div>
 
@@ -5207,11 +5293,11 @@ exports[`Check stories > BTP/Tool Header > Story Tablet > Should match snapshot 
             tabindex=\\"0\\"
         />
         </div>
-        
+
         <div class=\\"fd-tool-header__element fd-tool-header__element--hidden\\">
             <div class=\\"fd-tool-header__product-name\\">Product Name</div>
         </div>
-        
+
         <div class=\\"fd-tool-header__element fd-tool-header__element--hidden\\">
             <div class=\\"fd-tool-header__second-title\\">Second Title</div>
         </div>
@@ -5261,13 +5347,13 @@ exports[`Check stories > BTP/Tool Header > Story Tablet > Should match snapshot 
         <div class=\\"fd-tool-header__elemen fd-tool-header__element--hiddent\\">
             <span class=\\"fd-tool-header__separator\\"></span>
         </div>
-        
+
         <div class=\\"fd-tool-header__element\\">
             <button class=\\"fd-button fd-button--tool-header\\" aria-label=\\"Action 3\\" title=\\"Action 3\\">
                 <i class=\\"sap-icon--action-settings\\" role=\\"presentation\\"></i>
             </button>
         </div>
-        
+
         <div class=\\"fd-tool-header__element\\">
             <button class=\\"fd-button fd-button--tool-header\\" aria-label=\\"Action 4\\" title=\\"Action 4\\">
                 <i class=\\"sap-icon--bell\\" role=\\"presentation\\"></i>
@@ -5286,11 +5372,11 @@ exports[`Check stories > BTP/Tool Header > Story Tablet > Should match snapshot 
                 <i class=\\"sap-icon--microphone\\" role=\\"presentation\\"></i>
             </button>
         </div>
-        
+
         <div class=\\"fd-tool-header__element\\">
             <span class=\\"fd-tool-header__separator\\"></span>
         </div>
-        
+
         <div class=\\"fd-tool-header__element\\">
             <span
                 class=\\"fd-avatar fd-avatar--40 fd-avatar--circle fd-avatar--thumbnail\\"
@@ -8976,46 +9062,6 @@ exports[`Check stories > Components/Buttons/Button > Story MenuButton > Should m
 "
 `;
 
-exports[`Check stories > Components/Buttons/Button > Story NestedButton > Should match snapshot 1`] = `
-"<h4>normal</h4>
-<div class=\\"fddocs-container fddocs-button-container\\">
-    <button class=\\"fd-button fd-button--nested\\" aria-label=\\"Close\\">
-        <i class=\\"sap-icon--decline\\" role=\\"presentation\\"></i>
-    </button>
-</div>
-
-<h4>hover</h4>
-<div class=\\"fddocs-container fddocs-button-container\\">
-    <button class=\\"fd-button fd-button--nested is-hover\\" aria-label=\\"Close\\">
-        <i class=\\"sap-icon--decline\\" role=\\"presentation\\"></i>
-    </button>
-</div>
-
-<h4>active</h4>
-<div class=\\"fddocs-container fddocs-button-container\\">
-    <button class=\\"fd-button fd-button--nested is-active\\" aria-label=\\"Close\\">
-        <i class=\\"sap-icon--decline\\" role=\\"presentation\\"></i>
-    </button>
-</div>
-
-<h4>focus</h4>
-<div class=\\"fddocs-container fddocs-button-container\\">
-    <button class=\\"fd-button fd-button--nested is-focus\\" aria-label=\\"Close\\">
-        <i class=\\"sap-icon--decline\\" role=\\"presentation\\"></i>
-    </button>
-</div>
-
-<h4>disabled</h4>
-<div class=\\"fddocs-container fddocs-button-container\\">
-    <button class=\\"fd-button fd-button--nested is-disabled\\" aria-label=\\"Close\\">
-        <i class=\\"sap-icon--decline\\" role=\\"presentation\\"></i>
-    </button>
-</div>
-
-
-"
-`;
-
 exports[`Check stories > Components/Buttons/Button > Story Styles > Should match snapshot 1`] = `
 "<div class=\\"fddocs-container fddocs-button-container\\">
     <button class=\\"fd-button\\">
@@ -9073,52 +9119,6 @@ exports[`Check stories > Components/Buttons/Button > Story Toggle > Should match
     <button class=\\"fd-button fd-button--attention fd-button--toggled\\" aria-pressed=\\"false\\" disabled>Attention Toggle</button>
     <button class=\\"fd-button fd-button--transparent fd-button--toggled\\" aria-pressed=\\"false\\" disabled>Transparent Toggle</button>
 </div>"
-`;
-
-exports[`Check stories > Components/Buttons/Button > Story ToolHeaderButton > Should match snapshot 1`] = `
-"<h4>normal</h4>
-<div class=\\"fddocs-container fddocs-button-container\\">
-    <button class=\\"fd-button fd-button--tool-header\\" aria-label=\\"Home\\">
-        <i class=\\"sap-icon--home\\" role=\\"presentation\\"></i>
-    </button>
-</div>
-
-<h4>hover</h4>
-<div class=\\"fddocs-container fddocs-button-container\\">
-    <button class=\\"fd-button fd-button--tool-header is-hover\\" aria-label=\\"Home\\">
-        <i class=\\"sap-icon--home\\" role=\\"presentation\\"></i>
-    </button>
-</div>
-
-<h4>active</h4>
-<div class=\\"fddocs-container fddocs-button-container\\">
-    <button class=\\"fd-button fd-button--tool-header is-active\\" aria-label=\\"Home\\">
-        <i class=\\"sap-icon--home\\" role=\\"presentation\\"></i>
-    </button>
-</div>
-
-<h4>focus</h4>
-<div class=\\"fddocs-container fddocs-button-container\\">
-    <button class=\\"fd-button fd-button--tool-header is-focus\\" aria-label=\\"Home\\">
-        <i class=\\"sap-icon--home\\" role=\\"presentation\\"></i>
-    </button>
-</div>
-
-<h4>disabled</h4>
-<div class=\\"fddocs-container fddocs-button-container\\">
-    <button class=\\"fd-button fd-button--tool-header is-disabled\\" aria-label=\\"Home\\">
-        <i class=\\"sap-icon--home\\" role=\\"presentation\\"></i>
-    </button>
-</div>
-
-<h4>with badge</h4>
-<button class=\\"fd-button fd-button--tool-header\\" aria-label=\\"Home\\">
-    <i class=\\"sap-icon--home\\" role=\\"presentation\\"></i>
-    <span class=\\"fd-button__badge\\"></span>
-</button>
-
-
-"
 `;
 
 exports[`Check stories > Components/Buttons/Button Split > Story SplitMenuButton > Should match snapshot 1`] = `

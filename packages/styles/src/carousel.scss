@@ -152,8 +152,7 @@ $fd-carousel-button-content-offset: 0.5rem !default;
     @include fd-reset();
     @include fd-flex-center();
 
-    min-height: 2.75rem;
-    max-height: 3.5rem;
+    height: 2.75rem;
     padding: 0.375rem 0.5rem;
     background: var(--fdCarousel_Page_Indicator_Container_Background);
     border-top: var(--fdCarousel_Pagination_Border);
@@ -214,6 +213,7 @@ $fd-carousel-button-content-offset: 0.5rem !default;
 
     text-align: center;
     color: var(--sapPageFooter_TextColor);
+    font-size: var(--sapFontSmallSize);
   }
 
   .#{$blockButton} {
@@ -235,10 +235,6 @@ $fd-carousel-button-content-offset: 0.5rem !default;
       & > [class*=sap-icon] {
         transform: rotate(180deg);
       }
-    }
-
-    @include fd-hover() {
-      box-shadow: var(--sapContent_Shadow1);
     }
 
     @include fd-focus() {
