@@ -257,6 +257,9 @@ $fd-button-badge-spacing: 0.25rem;
       border-radius: 100%;
       background: var(--sapContent_BadgeBackground);
       border: 0.0625rem solid var(--fdButton_ToolHeader_Badge_Border_Color);
+      color: var(--sapContent_BadgeBackground);
+      padding: 0;
+      overflow: hidden;
     }
   }
 

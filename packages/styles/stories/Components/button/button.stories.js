@@ -3,8 +3,6 @@ import buttonStatesExampleHtml from "./button-states.example.html?raw";
 import iconAndTextExampleHtml from "./icon-and-text.example.html?raw";
 import menuButtonExampleHtml from "./menu-button.example.html?raw";
 import badgeOnButtonExampleHtml from "./badge-on-button.example.html?raw";
-import toolHeaderButtonExampleHtml from "./tool-header.example.html?raw";
-import nestedButtonExampleHtml from "./nested.example.html?raw";
 import toggleExampleHtml from "./toggle.example.html?raw";
 import stylesExampleHtml from "./styles.example.html?raw";
 import '../../../src/popover.scss';
@@ -160,24 +158,5 @@ Note: For the text to be read out loud by screen readers, a helper text has been
   }
 };
 
-export const ToolHeaderButton = () => toolHeaderButtonExampleHtml;
-ToolHeaderButton.parameters = {
-  docs: {
-    description: {
-      story: `The Tool Header button is based on the Button (Horizon) Transparent/LiteButton, but has over-styling of the shape, size and interaction states. It is intended to be used within the controls and patterns for the  <b>BTP</b> area. Use the <code>.fd-button--tool-header</code> modifier class for this type of button.
-`
-    }
-  }
-};
-
-export const NestedButton = () => nestedButtonExampleHtml;
-NestedButton.parameters = {
-  docs: {
-    description: {
-      story: `The Nested button is also intended to be used within the controls and patterns for the <b>BTP</b> area. Use the <code>.fd-button--nested</code> modifier class with the <code>.fd-button</code> base class for this type of button.
-`
-    }
-  }
-};
 
 
