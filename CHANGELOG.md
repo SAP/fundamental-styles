@@ -1,3 +1,12 @@
+# [0.32.0-rc.2](https://github.com/SAP/fundamental-styles/compare/v0.32.0-rc.1...v0.32.0-rc.2) (2023-10-27)
+
+
+### Bug Fixes
+
+* **styles:** include the tnt font icons for fiori 3 ([#4934](https://github.com/SAP/fundamental-styles/issues/4934)) ([2ea0c36](https://github.com/SAP/fundamental-styles/commit/2ea0c36eac2de3ae11ef256c188ae3b4ad81573e))
+
+
+
 # [0.32.0-rc.1](https://github.com/SAP/fundamental-styles/compare/v0.32.0-rc.0...v0.32.0-rc.1) (2023-10-27)
 
 
