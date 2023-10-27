@@ -193,8 +193,6 @@ $fd-card-header-outline-offset: 0.0625rem !default;
     @include fd-flex() {
       align-items: flex-end;
     }
-
-    margin-top: 0.25rem;
   }
 
   &__subtitle {
@@ -212,6 +210,7 @@ $fd-card-header-outline-offset: 0.0625rem !default;
     text-align: right;
     margin: var(--fdCard_Counter_Margin);
     white-space: nowrap;
+    color: var(--sapTile_TitleTextColor);
 
     @include fd-rtl() {
       margin: var(--fdCard_Counter_Margin_RTL);
@@ -323,6 +322,10 @@ $fd-card-header-outline-offset: 0.0625rem !default;
       overflow: hidden;
     }
 
+    .#{$list} {
+      @include fd-set-paddings-x(0.125rem);
+    }
+
     &:last-child {
       border-bottom-left-radius: $fd-card-border-radius;
       border-bottom-right-radius: $fd-card-border-radius;
@@ -388,6 +391,10 @@ $fd-card-header-outline-offset: 0.0625rem !default;
     @include fd-reset();
 
     padding-bottom: 0.5rem;
+
+    h3 {
+      font-size: var(--sapFontSize);
+    }
   }
 
   &__content-group {
@@ -411,8 +418,6 @@ $fd-card-header-outline-offset: 0.0625rem !default;
     }
 
     & > * {
-      margin-bottom: 0.25rem;
-
       &:last-child {
         margin-bottom: 0;
       }
@@ -441,6 +446,10 @@ $fd-card-header-outline-offset: 0.0625rem !default;
   }
 
   &--table {
+    .#{$block}__header {
+      padding-bottom: 0.5rem;
+    }
+
     @include fd-compact-or-condensed() {
       .#{$block}__content {
         padding-bottom: 0.5rem;

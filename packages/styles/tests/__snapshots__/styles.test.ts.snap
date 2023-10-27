@@ -11190,23 +11190,23 @@ exports[`Check stories > Components/Card > Story ObjectCard > Should match snaps
             <div class=\\"fd-card__content\\" role=\\"group\\" aria-label=\\"Card Content\\">
                 <div class=\\"fd-card__content-container\\">
                     <div class=\\"fd-card__content-section\\">
-                        <div class=\\"fd-card__content-title-container\\">Group Title 1</div>
+                        <div class=\\"fd-card__content-title-container\\"><h3>Group Title 1</h3></div>
                         <div class=\\"fd-card__content-group\\">
                             <div class=\\"fd-card__content-group-text\\">
-                                <span>Label</span>
-                                <span>Text</span>
+                                <span>Label:</span>
+                                <span class=\\"fd-link\\">Text</span>
                             </div>
                         </div>
                         <div class=\\"fd-card__content-group\\">
                             <div class=\\"fd-card__content-group-text\\">
-                                <span>Label</span>
-                                <span>Text</span>
+                                <span>Label:</span>
+                                <span class=\\"fd-link\\">Text</span>
                             </div>
                         </div>
                         <div class=\\"fd-card__content-group\\">
                             <div class=\\"fd-card__content-group-text\\">
-                                <span>Label</span>
-                                <span>Text</span>
+                                <span>Label:</span>
+                                <span class=\\"fd-link\\">Text</span>
                             </div>
                         </div>
                     </div>
@@ -11214,14 +11214,14 @@ exports[`Check stories > Components/Card > Story ObjectCard > Should match snaps
                         <div class=\\"fd-card__content-title-container\\">Group Title 2</div>
                         <div class=\\"fd-card__content-group\\">
                             <div class=\\"fd-card__content-group-text\\">
-                                <span>Label</span>
-                                <span>Text</span>
+                                <span>Label:</span>
+                                <span class=\\"fd-link\\">Text</span>
                             </div>
                         </div>
                         <div class=\\"fd-card__content-group\\">
                             <div class=\\"fd-card__content-group-text\\">
-                                <span>Label</span>
-                                <span>Text</span>
+                                <span>Label:</span>
+                                <span class=\\"fd-link\\">Text</span>
                             </div>
                         </div>
                         <div class=\\"fd-card__content-group\\">
@@ -11268,14 +11268,14 @@ exports[`Check stories > Components/Card > Story ObjectCard > Should match snaps
                         </div>
                         <div class=\\"fd-card__content-group\\">
                             <div class=\\"fd-card__content-group-text\\">
-                                <span>Label</span>
-                                <span>Text</span>
+                                <span>Label:</span>
+                                <span class=\\"fd-link\\">Text</span>
                             </div>
                         </div>
                         <div class=\\"fd-card__content-group\\">
                             <div class=\\"fd-card__content-group-text\\">
-                                <span>Label</span>
-                                <span>Text</span>
+                                <span>Label:</span>
+                                <span class=\\"fd-link\\">Text</span>
                             </div>
                         </div>
                     </div>
@@ -11293,14 +11293,14 @@ exports[`Check stories > Components/Card > Story ObjectCard > Should match snaps
                         </div>
                         <div class=\\"fd-card__content-group\\">
                             <div class=\\"fd-card__content-group-text\\">
-                                <span>Label</span>
-                                <span>Text</span>
+                                <span>Label:</span>
+                                <span class=\\"fd-link\\">Text</span>
                             </div>
                         </div>
                         <div class=\\"fd-card__content-group\\">
                             <div class=\\"fd-card__content-group-text\\">
-                                <span>Label</span>
-                                <span>Text</span>
+                                <span>Label:</span>
+                                <span class=\\"fd-link\\">Text</span>
                             </div>
                         </div>
                     </div>
@@ -11330,7 +11330,7 @@ exports[`Check stories > Components/Card > Story TableCard > Should match snapsh
                         <tr class=\\"fd-table__row\\">
                             <th class=\\"fd-table__cell fd-table__cell--checkbox\\">
                                 <input aria-label=\\"checkbox\\" type=\\"checkbox\\" class=\\"fd-checkbox\\" id=\\"kqqzPI\\">
-                                <label class=\\"fd-checkbox__label\\" for=\\"kqqzPI\\"></label>
+                                <label class=\\"fd-checkbox__label\\" for=\\"kqqzPI\\"><span class=\\"fd-checkbox__checkmark\\" aria-hidden=\\"true\\"></span></label>
                             </th>
                             <th class=\\"fd-table__cell\\" scope=\\"col\\">Name</th>
                             <th class=\\"fd-table__cell\\" scope=\\"col\\">Status</th>
@@ -11343,7 +11343,7 @@ exports[`Check stories > Components/Card > Story TableCard > Should match snapsh
                         <tr class=\\"fd-table__row\\">
                             <td class=\\"fd-table__cell fd-table__cell--checkbox\\">
                                 <input aria-label=\\"checkbox\\" type=\\"checkbox\\" class=\\"fd-checkbox\\" id=\\"EWuzWh\\">
-                                <label class=\\"fd-checkbox__label\\" for=\\"EWuzWh\\"></label>
+                                <label class=\\"fd-checkbox__label\\" for=\\"EWuzWh\\"><span class=\\"fd-checkbox__checkmark\\" aria-hidden=\\"true\\"></span></label>
                             </td>
                             <td class=\\"fd-table__cell\\">Banana</td>
                             <td class=\\"fd-table__cell\\">
@@ -11360,7 +11360,7 @@ exports[`Check stories > Components/Card > Story TableCard > Should match snapsh
                         <tr class=\\"fd-table__row\\">
                             <td class=\\"fd-table__cell fd-table__cell--checkbox\\">
                                 <input aria-label=\\"checkbox\\" type=\\"checkbox\\" class=\\"fd-checkbox\\" id=\\"19j0Sc\\">
-                                <label class=\\"fd-checkbox__label\\" for=\\"19j0Sc\\"></label>
+                                <label class=\\"fd-checkbox__label\\" for=\\"19j0Sc\\"><span class=\\"fd-checkbox__checkmark\\" aria-hidden=\\"true\\"></span></label>
                             </td>
                             <td class=\\"fd-table__cell\\">Pineapple</td>
                             <td class=\\"fd-table__cell\\">
@@ -11377,7 +11377,7 @@ exports[`Check stories > Components/Card > Story TableCard > Should match snapsh
                         <tr class=\\"fd-table__row\\">
                             <td class=\\"fd-table__cell fd-table__cell--checkbox\\">
                                 <input aria-label=\\"checkbox\\" type=\\"checkbox\\" class=\\"fd-checkbox\\" id=\\"a7SfGX\\">
-                                <label class=\\"fd-checkbox__label\\" for=\\"a7SfGX\\"></label>
+                                <label class=\\"fd-checkbox__label\\" for=\\"a7SfGX\\"><span class=\\"fd-checkbox__checkmark\\" aria-hidden=\\"true\\"></span></label>
                             </td>
                             <td class=\\"fd-table__cell\\">Orange</td>
                             <td class=\\"fd-table__cell\\">
@@ -33569,25 +33569,205 @@ exports[`Check stories > Components/Rating Indicator > Story DifferentValues > S
 
 exports[`Check stories > Components/Rating Indicator > Story Disabled > Should match snapshot 1`] = `
 "<div class=\\"example-container\\">
+    <p>Default:</p>
     <div class=\\"fd-rating-indicator\\" aria-disabled=\\"true\\">
         <div class=\\"fd-rating-indicator__container\\" aria-label=\\"Star Rating (out of 5)\\">
-            <input aria-label=\\"0 star\\" type=\\"radio\\" class=\\"fd-rating-indicator__input fd-rating-indicator__input--zero-rating\\" id=\\"rating-disabled-0\\" name=\\"rating-disabled\\" value=\\"0\\" disabled>
-            <label class=\\"fd-rating-indicator__label fd-rating-indicator__label--zero-rating\\" for=\\"rating-disabled-0\\" aria-hidden=\\"true\\"></label>
+            <input
+                aria-label=\\"0 star\\"
+                type=\\"radio\\"
+                class=\\"fd-rating-indicator__input fd-rating-indicator__input--zero-rating\\"
+                id=\\"rating-disabled-0\\"
+                name=\\"rating-disabled\\"
+                value=\\"0\\"
+                disabled
+            />
+            <label
+                class=\\"fd-rating-indicator__label fd-rating-indicator__label--zero-rating\\"
+                for=\\"rating-disabled-0\\"
+                aria-hidden=\\"true\\"
+            ></label>
 
-            <input aria-label=\\"1 star\\" type=\\"radio\\" class=\\"fd-rating-indicator__input\\" id=\\"rating-disabled-1\\" name=\\"rating-disabled\\" value=\\"1\\" disabled>
+            <input
+                aria-label=\\"1 star\\"
+                type=\\"radio\\"
+                class=\\"fd-rating-indicator__input\\"
+                id=\\"rating-disabled-1\\"
+                name=\\"rating-disabled\\"
+                value=\\"1\\"
+                disabled
+            />
             <label class=\\"fd-rating-indicator__label\\" for=\\"rating-disabled-1\\"></label>
 
-            <input aria-label=\\"2 star\\" type=\\"radio\\" class=\\"fd-rating-indicator__input\\" id=\\"rating-disabled-2\\" name=\\"rating-disabled\\" value=\\"2\\" disabled checked>
+            <input
+                aria-label=\\"2 star\\"
+                type=\\"radio\\"
+                class=\\"fd-rating-indicator__input\\"
+                id=\\"rating-disabled-2\\"
+                name=\\"rating-disabled\\"
+                value=\\"2\\"
+                disabled
+                checked
+            />
             <label class=\\"fd-rating-indicator__label\\" for=\\"rating-disabled-2\\"></label>
 
-            <input aria-label=\\"3 star\\" type=\\"radio\\" class=\\"fd-rating-indicator__input\\" id=\\"rating-disabled-3\\" name=\\"rating-disabled\\" value=\\"3\\" disabled>
+            <input
+                aria-label=\\"3 star\\"
+                type=\\"radio\\"
+                class=\\"fd-rating-indicator__input\\"
+                id=\\"rating-disabled-3\\"
+                name=\\"rating-disabled\\"
+                value=\\"3\\"
+                disabled
+            />
             <label class=\\"fd-rating-indicator__label\\" for=\\"rating-disabled-3\\"></label>
 
-            <input aria-label=\\"4 star\\" type=\\"radio\\" class=\\"fd-rating-indicator__input\\" id=\\"rating-disabled-4\\" name=\\"rating-disabled\\" value=\\"4\\" disabled>
+            <input
+                aria-label=\\"4 star\\"
+                type=\\"radio\\"
+                class=\\"fd-rating-indicator__input\\"
+                id=\\"rating-disabled-4\\"
+                name=\\"rating-disabled\\"
+                value=\\"4\\"
+                disabled
+            />
             <label class=\\"fd-rating-indicator__label\\" for=\\"rating-disabled-4\\"></label>
 
-            <input aria-label=\\"5 star\\" type=\\"radio\\" class=\\"fd-rating-indicator__input\\" id=\\"rating-disabled-5\\" name=\\"rating-disabled\\" value=\\"5\\" disabled>
+            <input
+                aria-label=\\"5 star\\"
+                type=\\"radio\\"
+                class=\\"fd-rating-indicator__input\\"
+                id=\\"rating-disabled-5\\"
+                name=\\"rating-disabled\\"
+                value=\\"5\\"
+                disabled
+            />
             <label class=\\"fd-rating-indicator__label\\" for=\\"rating-disabled-5\\"></label>
+        </div>
+        <span class=\\"fd-rating-indicator__dynamic-text\\">(2 of 5)</span>
+    </div>
+</div>
+<div class=\\"example-container\\">
+    <p>Default:</p>
+    <div class=\\"fd-rating-indicator fd-rating-indicator--half-star\\" aria-disabled=\\"true\\">
+        <div class=\\"fd-rating-indicator__container\\" aria-label=\\"Star Rating (out of 5)\\">
+            <input
+                aria-label=\\"0 star\\"
+                type=\\"radio\\"
+                class=\\"fd-rating-indicator__input fd-rating-indicator__input--zero-rating\\"
+                id=\\"rating-disabled-half-0\\"
+                name=\\"rating-disabled-half\\"
+                value=\\"0\\"
+                disabled
+            />
+            <label
+                class=\\"fd-rating-indicator__label fd-rating-indicator__label--zero-rating\\"
+                for=\\"rating-disabled-half-0\\"
+                aria-hidden=\\"true\\"
+            ></label>
+
+            <input
+                aria-label=\\"half star\\"
+                type=\\"radio\\"
+                class=\\"fd-rating-indicator__input\\"
+                id=\\"rating-disabled-half-05\\"
+                name=\\"rating-disabled-half\\"
+                value=\\"0.5\\"
+                disabled
+            />
+            <label class=\\"fd-rating-indicator__label\\" for=\\"rating-disabled-half-05\\"></label>
+
+            <input
+                aria-label=\\"1 star\\"
+                type=\\"radio\\"
+                class=\\"fd-rating-indicator__input\\"
+                id=\\"rating-disabled-half-1\\"
+                name=\\"rating-disabled-half\\"
+                value=\\"1\\"
+                disabled
+            />
+            <label class=\\"fd-rating-indicator__label\\" for=\\"rating-disabled-half-1\\"></label>
+
+            <input
+                aria-label=\\"1 and half star\\"
+                type=\\"radio\\"
+                class=\\"fd-rating-indicator__input\\"
+                id=\\"rating-disabled-half-15\\"
+                name=\\"rating-disabled-half\\"
+                value=\\"1.5\\"
+                disabled
+            />
+            <label class=\\"fd-rating-indicator__label\\" for=\\"rating-disabled-half-15\\"></label>
+
+            <input aria-label=\\"2 star\\" type=\\"radio\\" class=\\"fd-rating-indicator__input\\" id=\\"rating-disabled-half-2\\"
+            name=\\"rating-disabled-half\\" value=2\\">
+            <label class=\\"fd-rating-indicator__label\\" for=\\"rating-disabled-half-2\\"></label>
+
+            <input
+                aria-label=\\"2 and half star\\"
+                type=\\"radio\\"
+                class=\\"fd-rating-indicator__input\\"
+                id=\\"rating-disabled-half-25\\"
+                name=\\"rating-disabled-half\\"
+                value=\\"2.5\\"
+                checked
+                disabled
+            />
+            <label class=\\"fd-rating-indicator__label\\" for=\\"rating-disabled-half-25\\"></label>
+
+            <input
+                aria-label=\\"3 star\\"
+                type=\\"radio\\"
+                class=\\"fd-rating-indicator__input\\"
+                id=\\"rating-disabled-half-3\\"
+                name=\\"rating-disabled-half\\"
+                value=\\"3\\"
+                disabled
+            />
+            <label class=\\"fd-rating-indicator__label\\" for=\\"rating-disabled-half-3\\"></label>
+
+            <input
+                aria-label=\\"3 and half star\\"
+                type=\\"radio\\"
+                class=\\"fd-rating-indicator__input\\"
+                id=\\"rating-disabled-half-35\\"
+                name=\\"rating-disabled-half\\"
+                value=\\"3.5\\"
+                disabled
+            />
+            <label class=\\"fd-rating-indicator__label\\" for=\\"rating-disabled-half-35\\"></label>
+
+            <input
+                aria-label=\\"4 star\\"
+                type=\\"radio\\"
+                class=\\"fd-rating-indicator__input\\"
+                id=\\"rating-disabled-half-4\\"
+                name=\\"rating-disabled-half\\"
+                value=\\"4\\"
+                disabled
+            />
+            <label class=\\"fd-rating-indicator__label\\" for=\\"rating-disabled-half-4\\"></label>
+
+            <input
+                aria-label=\\"4 and half star\\"
+                type=\\"radio\\"
+                class=\\"fd-rating-indicator__input\\"
+                id=\\"rating-disabled-half-45\\"
+                name=\\"rating-disabled-half\\"
+                value=\\"4.5\\"
+                disabled
+            />
+            <label class=\\"fd-rating-indicator__label\\" for=\\"rating-disabled-half-45\\"></label>
+
+            <input
+                aria-label=\\"5 star\\"
+                type=\\"radio\\"
+                class=\\"fd-rating-indicator__input\\"
+                id=\\"rating-disabled-half-5\\"
+                name=\\"rating-disabled-half\\"
+                value=\\"5\\"
+                disabled
+            />
+            <label class=\\"fd-rating-indicator__label\\" for=\\"rating-disabled-half-5\\"></label>
         </div>
         <span class=\\"fd-rating-indicator__dynamic-text\\">(2 of 5)</span>
     </div>
@@ -33597,29 +33777,209 @@ exports[`Check stories > Components/Rating Indicator > Story Disabled > Should m
 
 exports[`Check stories > Components/Rating Indicator > Story DisplayMode > Should match snapshot 1`] = `
 "<div class=\\"example-container\\">
-        <div class=\\"fd-rating-indicator fd-rating-indicator--display-mode\\">
-            <div class=\\"fd-rating-indicator__container\\" aria-label=\\"Star Rating (out of 5)\\">
-                <input aria-label=\\"0 star\\" type=\\"radio\\" class=\\"fd-rating-indicator__input fd-rating-indicator__input--zero-rating\\" id=\\"rating-display-mode-0\\" name=\\"rating-display-mode\\" value=\\"0\\" disabled>
-                <label class=\\"fd-rating-indicator__label fd-rating-indicator__label--zero-rating\\" for=\\"rating-display-mode-0\\" aria-hidden=\\"true\\"></label>
+    <p>Default:</p>
+    <div class=\\"fd-rating-indicator fd-rating-indicator--display-mode\\">
+        <div class=\\"fd-rating-indicator__container\\" aria-label=\\"Star Rating (out of 5)\\">
+            <input
+                aria-label=\\"0 star\\"
+                type=\\"radio\\"
+                class=\\"fd-rating-indicator__input fd-rating-indicator__input--zero-rating\\"
+                id=\\"rating-display-mode-0\\"
+                name=\\"rating-display-mode\\"
+                value=\\"0\\"
+                disabled
+            />
+            <label
+                class=\\"fd-rating-indicator__label fd-rating-indicator__label--zero-rating\\"
+                for=\\"rating-display-mode-0\\"
+                aria-hidden=\\"true\\"
+            ></label>
 
-                <input aria-label=\\"1 star\\" type=\\"radio\\" class=\\"fd-rating-indicator__input\\" id=\\"rating-display-mode-1\\" name=\\"rating-display-mode\\" value=\\"1\\" disabled>
-                <label class=\\"fd-rating-indicator__label\\" for=\\"rating-display-mode-1\\"></label>
+            <input
+                aria-label=\\"1 star\\"
+                type=\\"radio\\"
+                class=\\"fd-rating-indicator__input\\"
+                id=\\"rating-display-mode-1\\"
+                name=\\"rating-display-mode\\"
+                value=\\"1\\"
+                disabled
+            />
+            <label class=\\"fd-rating-indicator__label\\" for=\\"rating-display-mode-1\\"></label>
 
-                <input aria-label=\\"2 star\\" type=\\"radio\\" class=\\"fd-rating-indicator__input\\" id=\\"rating-display-mode-2\\" name=\\"rating-display-mode\\" value=\\"2\\" disabled checked>
-                <label class=\\"fd-rating-indicator__label\\" for=\\"rating-display-mode-2\\"></label>
+            <input
+                aria-label=\\"2 star\\"
+                type=\\"radio\\"
+                class=\\"fd-rating-indicator__input\\"
+                id=\\"rating-display-mode-2\\"
+                name=\\"rating-display-mode\\"
+                value=\\"2\\"
+                disabled
+                checked
+            />
+            <label class=\\"fd-rating-indicator__label\\" for=\\"rating-display-mode-2\\"></label>
 
-                <input aria-label=\\"3 star\\" type=\\"radio\\" class=\\"fd-rating-indicator__input\\" id=\\"rating-display-mode-3\\" name=\\"rating-display-mode\\" value=\\"3\\" disabled>
-                <label class=\\"fd-rating-indicator__label\\" for=\\"rating-display-mode-3\\"></label>
+            <input
+                aria-label=\\"3 star\\"
+                type=\\"radio\\"
+                class=\\"fd-rating-indicator__input\\"
+                id=\\"rating-display-mode-3\\"
+                name=\\"rating-display-mode\\"
+                value=\\"3\\"
+                disabled
+            />
+            <label class=\\"fd-rating-indicator__label\\" for=\\"rating-display-mode-3\\"></label>
 
-                <input aria-label=\\"4 star\\" type=\\"radio\\" class=\\"fd-rating-indicator__input\\" id=\\"rating-display-mode-4\\" name=\\"rating-display-mode\\" value=\\"4\\" disabled>
-                <label class=\\"fd-rating-indicator__label\\" for=\\"rating-display-mode-4\\"></label>
+            <input
+                aria-label=\\"4 star\\"
+                type=\\"radio\\"
+                class=\\"fd-rating-indicator__input\\"
+                id=\\"rating-display-mode-4\\"
+                name=\\"rating-display-mode\\"
+                value=\\"4\\"
+                disabled
+            />
+            <label class=\\"fd-rating-indicator__label\\" for=\\"rating-display-mode-4\\"></label>
 
-                <input aria-label=\\"5 star\\" type=\\"radio\\" class=\\"fd-rating-indicator__input\\" id=\\"rating-display-mode-5\\" name=\\"rating-display-mode\\" value=\\"5\\" disabled>
-                <label class=\\"fd-rating-indicator__label\\" for=\\"rating-display-mode-5\\"></label>
-            </div>
-            <span class=\\"fd-rating-indicator__dynamic-text\\">(2 of 5)</span>
+            <input
+                aria-label=\\"5 star\\"
+                type=\\"radio\\"
+                class=\\"fd-rating-indicator__input\\"
+                id=\\"rating-display-mode-5\\"
+                name=\\"rating-display-mode\\"
+                value=\\"5\\"
+                disabled
+            />
+            <label class=\\"fd-rating-indicator__label\\" for=\\"rating-display-mode-5\\"></label>
         </div>
+        <span class=\\"fd-rating-indicator__dynamic-text\\">(2 of 5)</span>
     </div>
+</div>
+<div class=\\"example-container\\">
+    <p>Half values:</p>
+    <div class=\\"fd-rating-indicator fd-rating-indicator--half-star fd-rating-indicator--display-mode\\">
+        <div class=\\"fd-rating-indicator__container\\" aria-label=\\"Star Rating (out of 5)\\">
+            <input
+                aria-label=\\"0 star\\"
+                type=\\"radio\\"
+                class=\\"fd-rating-indicator__input fd-rating-indicator__input--zero-rating\\"
+                id=\\"rating-display-mode-half-0\\"
+                name=\\"rating-display-mode-half\\"
+                value=\\"0\\"
+                disabled
+            />
+            <label
+                class=\\"fd-rating-indicator__label fd-rating-indicator__label--zero-rating\\"
+                for=\\"rating-display-mode-half-0\\"
+                aria-hidden=\\"true\\"
+            ></label>
+
+            <input
+                aria-label=\\"half star\\"
+                type=\\"radio\\"
+                class=\\"fd-rating-indicator__input\\"
+                id=\\"rating-display-mode-half-05\\"
+                name=\\"rating-display-mode-half\\"
+                value=\\"0.5\\"
+                disabled
+            />
+            <label class=\\"fd-rating-indicator__label\\" for=\\"rating-display-mode-half-05\\"></label>
+
+            <input
+                aria-label=\\"1 star\\"
+                type=\\"radio\\"
+                class=\\"fd-rating-indicator__input\\"
+                id=\\"rating-display-mode-half-1\\"
+                name=\\"rating-display-mode-half\\"
+                value=\\"1\\"
+                disabled
+            />
+            <label class=\\"fd-rating-indicator__label\\" for=\\"rating-display-mode-half-1\\"></label>
+
+            <input
+                aria-label=\\"1 and half star\\"
+                type=\\"radio\\"
+                class=\\"fd-rating-indicator__input\\"
+                id=\\"rating-display-mode-half-15\\"
+                name=\\"rating-display-mode-half\\"
+                value=\\"1.5\\"
+                disabled
+            />
+            <label class=\\"fd-rating-indicator__label\\" for=\\"rating-display-mode-half-15\\"></label>
+
+            <input aria-label=\\"2 star\\" type=\\"radio\\" class=\\"fd-rating-indicator__input\\" id=\\"rating-display-mode-half-2\\"
+            name=\\"rating-display-mode-half\\" value=2\\">
+            <label class=\\"fd-rating-indicator__label\\" for=\\"rating-display-mode-half-2\\"></label>
+
+            <input
+                aria-label=\\"2 and half star\\"
+                type=\\"radio\\"
+                class=\\"fd-rating-indicator__input\\"
+                id=\\"rating-display-mode-half-25\\"
+                name=\\"rating-display-mode-half\\"
+                value=\\"2.5\\"
+                checked
+                disabled
+            />
+            <label class=\\"fd-rating-indicator__label\\" for=\\"rating-display-mode-half-25\\"></label>
+
+            <input
+                aria-label=\\"3 star\\"
+                type=\\"radio\\"
+                class=\\"fd-rating-indicator__input\\"
+                id=\\"rating-display-mode-half-3\\"
+                name=\\"rating-display-mode-half\\"
+                value=\\"3\\"
+                disabled
+            />
+            <label class=\\"fd-rating-indicator__label\\" for=\\"rating-display-mode-half-3\\"></label>
+
+            <input
+                aria-label=\\"3 and half star\\"
+                type=\\"radio\\"
+                class=\\"fd-rating-indicator__input\\"
+                id=\\"rating-display-mode-half-35\\"
+                name=\\"rating-display-mode-half\\"
+                value=\\"3.5\\"
+                disabled
+            />
+            <label class=\\"fd-rating-indicator__label\\" for=\\"rating-display-mode-half-35\\"></label>
+
+            <input
+                aria-label=\\"4 star\\"
+                type=\\"radio\\"
+                class=\\"fd-rating-indicator__input\\"
+                id=\\"rating-display-mode-half-4\\"
+                name=\\"rating-display-mode-half\\"
+                value=\\"4\\"
+                disabled
+            />
+            <label class=\\"fd-rating-indicator__label\\" for=\\"rating-display-mode-half-4\\"></label>
+
+            <input
+                aria-label=\\"4 and half star\\"
+                type=\\"radio\\"
+                class=\\"fd-rating-indicator__input\\"
+                id=\\"rating-display-mode-half-45\\"
+                name=\\"rating-display-mode-half\\"
+                value=\\"4.5\\"
+                disabled
+            />
+            <label class=\\"fd-rating-indicator__label\\" for=\\"rating-display-mode-half-45\\"></label>
+
+            <input
+                aria-label=\\"5 star\\"
+                type=\\"radio\\"
+                class=\\"fd-rating-indicator__input\\"
+                id=\\"rating-display-mode-half-5\\"
+                name=\\"rating-display-mode-half\\"
+                value=\\"5\\"
+                disabled
+            />
+            <label class=\\"fd-rating-indicator__label\\" for=\\"rating-display-mode-half-5\\"></label>
+        </div>
+        <span class=\\"fd-rating-indicator__dynamic-text\\">(2.5 of 5)</span>
+    </div>
+</div>
 "
 `;
 
@@ -33811,29 +34171,210 @@ exports[`Check stories > Components/Rating Indicator > Story HalfValues > Should
 
 exports[`Check stories > Components/Rating Indicator > Story NonInteractive > Should match snapshot 1`] = `
 "<div class=\\"example-container\\">
-        <div class=\\"fd-rating-indicator fd-rating-indicator--non-interactive\\">
-            <div class=\\"fd-rating-indicator__container\\" aria-label=\\"Star Rating (out of 5)\\">
-                <input aria-label=\\"0 star\\" type=\\"radio\\" class=\\"fd-rating-indicator__input fd-rating-indicator__input--zero-rating\\" id=\\"rating-non-interactive-mode-0\\" name=\\"rating-non-interactive-mode\\" value=\\"0\\" disabled>
-                <label class=\\"fd-rating-indicator__label fd-rating-indicator__label--zero-rating\\" for=\\"rating-non-interactive-mode-0\\" aria-hidden=\\"true\\"></label>
+  <p>Default:</p>
+    <div class=\\"fd-rating-indicator fd-rating-indicator--non-interactive\\">
+        <div class=\\"fd-rating-indicator__container\\" aria-label=\\"Star Rating (out of 5)\\">
+            <input
+                aria-label=\\"0 star\\"
+                type=\\"radio\\"
+                class=\\"fd-rating-indicator__input fd-rating-indicator__input--zero-rating\\"
+                id=\\"rating-non-interactive-mode-0\\"
+                name=\\"rating-non-interactive-mode\\"
+                value=\\"0\\"
+                disabled
+            />
+            <label
+                class=\\"fd-rating-indicator__label fd-rating-indicator__label--zero-rating\\"
+                for=\\"rating-non-interactive-mode-0\\"
+                aria-hidden=\\"true\\"
+            ></label>
 
-                <input aria-label=\\"1 star\\" type=\\"radio\\" class=\\"fd-rating-indicator__input\\" id=\\"rating-non-interactive-mode-1\\" name=\\"rating-non-interactive-mode\\" value=\\"1\\" disabled>
-                <label class=\\"fd-rating-indicator__label\\" for=\\"rating-non-interactive-mode-1\\"></label>
+            <input
+                aria-label=\\"1 star\\"
+                type=\\"radio\\"
+                class=\\"fd-rating-indicator__input\\"
+                id=\\"rating-non-interactive-mode-1\\"
+                name=\\"rating-non-interactive-mode\\"
+                value=\\"1\\"
+                disabled
+            />
+            <label class=\\"fd-rating-indicator__label\\" for=\\"rating-non-interactive-mode-1\\"></label>
 
-                <input aria-label=\\"2 star\\" type=\\"radio\\" class=\\"fd-rating-indicator__input\\" id=\\"rating-non-interactive-mode-2\\" name=\\"rating-non-interactive-mode\\" value=\\"2\\" disabled checked>
-                <label class=\\"fd-rating-indicator__label\\" for=\\"rating-non-interactive-mode-2\\"></label>
+            <input
+                aria-label=\\"2 star\\"
+                type=\\"radio\\"
+                class=\\"fd-rating-indicator__input\\"
+                id=\\"rating-non-interactive-mode-2\\"
+                name=\\"rating-non-interactive-mode\\"
+                value=\\"2\\"
+                disabled
+                checked
+            />
+            <label class=\\"fd-rating-indicator__label\\" for=\\"rating-non-interactive-mode-2\\"></label>
 
-                <input aria-label=\\"3 star\\" type=\\"radio\\" class=\\"fd-rating-indicator__input\\" id=\\"rating-non-interactive-mode-3\\" name=\\"rating-non-interactive-mode\\" value=\\"3\\" disabled>
-                <label class=\\"fd-rating-indicator__label\\" for=\\"rating-non-interactive-mode-3\\"></label>
+            <input
+                aria-label=\\"3 star\\"
+                type=\\"radio\\"
+                class=\\"fd-rating-indicator__input\\"
+                id=\\"rating-non-interactive-mode-3\\"
+                name=\\"rating-non-interactive-mode\\"
+                value=\\"3\\"
+                disabled
+            />
+            <label class=\\"fd-rating-indicator__label\\" for=\\"rating-non-interactive-mode-3\\"></label>
 
-                <input aria-label=\\"4 star\\" type=\\"radio\\" class=\\"fd-rating-indicator__input\\" id=\\"rating-non-interactive-mode-4\\" name=\\"rating-non-interactive-mode\\" value=\\"4\\" disabled>
-                <label class=\\"fd-rating-indicator__label\\" for=\\"rating-non-interactive-mode-4\\"></label>
+            <input
+                aria-label=\\"4 star\\"
+                type=\\"radio\\"
+                class=\\"fd-rating-indicator__input\\"
+                id=\\"rating-non-interactive-mode-4\\"
+                name=\\"rating-non-interactive-mode\\"
+                value=\\"4\\"
+                disabled
+            />
+            <label class=\\"fd-rating-indicator__label\\" for=\\"rating-non-interactive-mode-4\\"></label>
 
-                <input aria-label=\\"5 star\\" type=\\"radio\\" class=\\"fd-rating-indicator__input\\" id=\\"rating-non-interactive-mode-5\\" name=\\"rating-non-interactive-mode\\" value=\\"5\\" disabled>
-                <label class=\\"fd-rating-indicator__label\\" for=\\"rating-non-interactive-mode-5\\"></label>
-            </div>
-            <span class=\\"fd-rating-indicator__dynamic-text\\">(2 of 5)</span>
+            <input
+                aria-label=\\"5 star\\"
+                type=\\"radio\\"
+                class=\\"fd-rating-indicator__input\\"
+                id=\\"rating-non-interactive-mode-5\\"
+                name=\\"rating-non-interactive-mode\\"
+                value=\\"5\\"
+                disabled
+            />
+            <label class=\\"fd-rating-indicator__label\\" for=\\"rating-non-interactive-mode-5\\"></label>
         </div>
+        <span class=\\"fd-rating-indicator__dynamic-text\\">(2 of 5)</span>
     </div>
+</div>
+
+<div class=\\"example-container\\">
+  <p>Half values:</p>
+  <div class=\\"fd-rating-indicator fd-rating-indicator--half-star fd-rating-indicator--non-interactive\\">
+      <div class=\\"fd-rating-indicator__container\\" aria-label=\\"Star Rating (out of 5)\\">
+          <input
+              aria-label=\\"0 star\\"
+              type=\\"radio\\"
+              class=\\"fd-rating-indicator__input fd-rating-indicator__input--zero-rating\\"
+              id=\\"rating-non-interactive-mode-half-0\\"
+              name=\\"rating-non-interactive-mode-half\\"
+              value=\\"0\\"
+              disabled
+          />
+          <label
+              class=\\"fd-rating-indicator__label fd-rating-indicator__label--zero-rating\\"
+              for=\\"rating-non-interactive-mode-half-0\\"
+              aria-hidden=\\"true\\"
+          ></label>
+
+          <input
+              aria-label=\\"half star\\"
+              type=\\"radio\\"
+              class=\\"fd-rating-indicator__input\\"
+              id=\\"rating-non-interactive-mode-half-05\\"
+              name=\\"rating-non-interactive-mode-half\\"
+              value=\\"0.5\\"
+              disabled
+          />
+          <label class=\\"fd-rating-indicator__label\\" for=\\"rating-non-interactive-mode-half-05\\"></label>
+
+          <input
+              aria-label=\\"1 star\\"
+              type=\\"radio\\"
+              class=\\"fd-rating-indicator__input\\"
+              id=\\"rating-non-interactive-mode-half-1\\"
+              name=\\"rating-non-interactive-mode-half\\"
+              value=\\"1\\"
+              disabled
+          />
+          <label class=\\"fd-rating-indicator__label\\" for=\\"rating-non-interactive-mode-half-1\\"></label>
+
+          <input
+              aria-label=\\"1 and half star\\"
+              type=\\"radio\\"
+              class=\\"fd-rating-indicator__input\\"
+              id=\\"rating-non-interactive-mode-half-15\\"
+              name=\\"rating-non-interactive-mode-half\\"
+              value=\\"1.5\\"
+              disabled
+          />
+          <label class=\\"fd-rating-indicator__label\\" for=\\"rating-non-interactive-mode-half-15\\"></label>
+
+          <input aria-label=\\"2 star\\" type=\\"radio\\" class=\\"fd-rating-indicator__input\\" id=\\"rating-non-interactive-mode-half-2\\"
+          name=\\"rating-non-interactive-mode-half\\" value=2\\">
+          <label class=\\"fd-rating-indicator__label\\" for=\\"rating-non-interactive-mode-half-2\\"></label>
+
+          <input
+              aria-label=\\"2 and half star\\"
+              type=\\"radio\\"
+              class=\\"fd-rating-indicator__input\\"
+              id=\\"rating-non-interactive-mode-half-25\\"
+              name=\\"rating-non-interactive-mode-half\\"
+              value=\\"2.5\\"
+              checked
+              disabled
+          />
+          <label class=\\"fd-rating-indicator__label\\" for=\\"rating-non-interactive-mode-half-25\\"></label>
+
+          <input
+              aria-label=\\"3 star\\"
+              type=\\"radio\\"
+              class=\\"fd-rating-indicator__input\\"
+              id=\\"rating-non-interactive-mode-half-3\\"
+              name=\\"rating-non-interactive-mode-half\\"
+              value=\\"3\\"
+              disabled
+          />
+          <label class=\\"fd-rating-indicator__label\\" for=\\"rating-non-interactive-mode-half-3\\"></label>
+
+          <input
+              aria-label=\\"3 and half star\\"
+              type=\\"radio\\"
+              class=\\"fd-rating-indicator__input\\"
+              id=\\"rating-non-interactive-mode-half-35\\"
+              name=\\"rating-non-interactive-mode-half\\"
+              value=\\"3.5\\"
+              disabled
+          />
+          <label class=\\"fd-rating-indicator__label\\" for=\\"rating-non-interactive-mode-half-35\\"></label>
+
+          <input
+              aria-label=\\"4 star\\"
+              type=\\"radio\\"
+              class=\\"fd-rating-indicator__input\\"
+              id=\\"rating-non-interactive-mode-half-4\\"
+              name=\\"rating-non-interactive-mode-half\\"
+              value=\\"4\\"
+              disabled
+          />
+          <label class=\\"fd-rating-indicator__label\\" for=\\"rating-non-interactive-mode-half-4\\"></label>
+
+          <input
+              aria-label=\\"4 and half star\\"
+              type=\\"radio\\"
+              class=\\"fd-rating-indicator__input\\"
+              id=\\"rating-non-interactive-mode-half-45\\"
+              name=\\"rating-non-interactive-mode-half\\"
+              value=\\"4.5\\"
+              disabled
+          />
+          <label class=\\"fd-rating-indicator__label\\" for=\\"rating-non-interactive-mode-half-45\\"></label>
+
+          <input
+              aria-label=\\"5 star\\"
+              type=\\"radio\\"
+              class=\\"fd-rating-indicator__input\\"
+              id=\\"rating-non-interactive-mode-half-5\\"
+              name=\\"rating-non-interactive-mode-half\\"
+              value=\\"5\\"
+              disabled
+          />
+          <label class=\\"fd-rating-indicator__label\\" for=\\"rating-non-interactive-mode-half-5\\"></label>
+      </div>
+      <span class=\\"fd-rating-indicator__dynamic-text\\">(2.5 of 5)</span>
+  </div>
+</div>
 "
 `;
 
