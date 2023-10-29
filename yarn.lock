@@ -3563,36 +3563,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@jsdevtools/ez-spawn@npm:^3.0.4":
-  version: 3.0.4
-  resolution: "@jsdevtools/ez-spawn@npm:3.0.4"
+"@jsdevtools/npm-publish@npm:^3.0.1":
+  version: 3.0.1
+  resolution: "@jsdevtools/npm-publish@npm:3.0.1"
   dependencies:
-    call-me-maybe: ^1.0.1
-    cross-spawn: ^7.0.3
-    string-argv: ^0.3.1
-    type-detect: ^4.0.8
-  checksum: 3f105f4dfb2d809ab058c7b71ae950a90211b17827c83d674f616e1a4d99c10707d9bf15eeba5ac3e3121cc0b309768b72f0088e48b42c779b005511544933dd
-  languageName: node
-  linkType: hard
-
-"@jsdevtools/npm-publish@npm:^1.4.3":
-  version: 1.4.3
-  resolution: "@jsdevtools/npm-publish@npm:1.4.3"
-  dependencies:
-    "@jsdevtools/ez-spawn": ^3.0.4
-    "@jsdevtools/ono": ^7.1.3
-    command-line-args: ^5.1.1
-    semver: ^7.3.4
+    "@types/semver": ^7.5.2
+    command-line-args: ^5.2.1
+    semver: 7.5.4
+    tar: 6.2.0
   bin:
     npm-publish: bin/npm-publish.js
-  checksum: f8e3be9fcab8daeaeb222f4153c03b5794219829b509646b9f53713e0f96d32d90459c456d3c224fd6b56bcc7519aae0b68ef56f6f83c2d77cd932f11aee4c17
-  languageName: node
-  linkType: hard
-
-"@jsdevtools/ono@npm:^7.1.3":
-  version: 7.1.3
-  resolution: "@jsdevtools/ono@npm:7.1.3"
-  checksum: 2297fcd472ba810bffe8519d2249171132844c7174f3a16634f9260761c8c78bc0428a4190b5b6d72d45673c13918ab9844d706c3ed4ef8f62ab11a2627a08ad
+  checksum: dbd35cbfef34ed6c96d715509ad7883eb4b71b5781c1c3442e01b7a7f8971bb4cc276a3a66de8e75513ed8225f6522da59e755d9f1ee2db081bae239153081c0
   languageName: node
   linkType: hard
 
@@ -6966,6 +6947,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/semver@npm:^7.5.2":
+  version: 7.5.4
+  resolution: "@types/semver@npm:7.5.4"
+  checksum: 120c0189f6fec5f2d12d0d71ac8a4cfa952dc17fa3d842e8afddb82bba8828a4052f8799c1653e2b47ae1977435f38e8985658fde971905ce5afb8e23ee97ecf
+  languageName: node
+  linkType: hard
+
 "@types/send@npm:*":
   version: 0.17.1
   resolution: "@types/send@npm:0.17.1"
@@ -8954,13 +8942,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"call-me-maybe@npm:^1.0.1":
-  version: 1.0.2
-  resolution: "call-me-maybe@npm:1.0.2"
-  checksum: 42ff2d0bed5b207e3f0122589162eaaa47ba618f79ad2382fe0ba14d9e49fbf901099a6227440acc5946f86a4953e8aa2d242b330b0a5de4d090bb18f8935cae
-  languageName: node
-  linkType: hard
-
 "caller-callsite@npm:^2.0.0":
   version: 2.0.0
   resolution: "caller-callsite@npm:2.0.0"
@@ -9502,7 +9483,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"command-line-args@npm:^5.1.1":
+"command-line-args@npm:^5.2.1":
   version: 5.2.1
   resolution: "command-line-args@npm:5.2.1"
   dependencies:
@@ -12885,7 +12866,7 @@ __metadata:
     "@commitlint/cli": ^17.0.0
     "@commitlint/config-conventional": ^17.0.0
     "@commitlint/travis-cli": ^16.0.0
-    "@jsdevtools/npm-publish": ^1.4.3
+    "@jsdevtools/npm-publish": ^3.0.1
     "@nx/devkit": 16.7.2
     "@nx/eslint-plugin": 16.7.2
     "@nx/js": 16.7.2
@@ -22874,6 +22855,20 @@ __metadata:
   languageName: node
   linkType: hard
 
+"tar@npm:6.2.0":
+  version: 6.2.0
+  resolution: "tar@npm:6.2.0"
+  dependencies:
+    chownr: ^2.0.0
+    fs-minipass: ^2.0.0
+    minipass: ^5.0.0
+    minizlib: ^2.1.1
+    mkdirp: ^1.0.3
+    yallist: ^4.0.0
+  checksum: db4d9fe74a2082c3a5016630092c54c8375ff3b280186938cfd104f2e089c4fd9bad58688ef6be9cf186a889671bf355c7cda38f09bbf60604b281715ca57f5c
+  languageName: node
+  linkType: hard
+
 "tar@npm:^6.1.11, tar@npm:^6.1.13, tar@npm:^6.1.2":
   version: 6.1.15
   resolution: "tar@npm:6.1.15"
@@ -23394,7 +23389,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"type-detect@npm:4.0.8, type-detect@npm:^4.0.0, type-detect@npm:^4.0.5, type-detect@npm:^4.0.8":
+"type-detect@npm:4.0.8, type-detect@npm:^4.0.0, type-detect@npm:^4.0.5":
   version: 4.0.8
   resolution: "type-detect@npm:4.0.8"
   checksum: 62b5628bff67c0eb0b66afa371bd73e230399a8d2ad30d852716efcc4656a7516904570cd8631a49a3ce57c10225adf5d0cbdcb47f6b0255fe6557c453925a15
