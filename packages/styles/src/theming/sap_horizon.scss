@@ -95,7 +95,7 @@
   /* Popover */
   --fdPopover_Border_Radius: var(--sapPopover_BorderCornerRadius);
   --fdPopover_Border_Width: 0.0625rem;
-  --fdPopover_Border_Color: #acb8c1;
+  --fdPopover_Border_Color: var(--sapNeutralBorderColor);
 
   /* Product Switch */
   --fdProductSwitch_Text_Shadow: none;
