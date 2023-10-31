@@ -2,6 +2,7 @@
 
 .#{$block} {
   &--message-view {
+    --faListNavigationIndicatorFontSize: 0.75rem;
     --fdList_Item_Height: calc(2.75rem + var(--sapList_BorderWidth));
     --fdList_Message_View_Item_Byline_Height: calc(3.325rem + var(--sapList_BorderWidth));
     --fdList_Message_View_Title_Size: var(--sapFontHeader5Size);
@@ -25,7 +26,7 @@
     .#{$block}__title {
       font-family: var(--sapFontHeaderFamily);
       font-size: var(--fdList_Message_View_Title_Size);
-      font-weight: normal;
+      font-weight: var(--sapFontHeaderWeight, normal);
       color: var(--sapGroup_TitleTextColor);
 
       @include fd-ellipsis();
@@ -40,7 +41,14 @@
       @include fd-ellipsis();
     }
 
+    .fd-list__item {
+      height: auto;
+    }
+
     .#{$block}__link {
+      padding-top: 0.5rem;
+      padding-bottom: 0.5rem;
+
       @include fd-active() {
         .#{$block}__title, .#{$block}__subtitle, .fd-object-status .fd-object-status__icon {
           color: var(--sapList_Active_TextColor);
