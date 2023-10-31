@@ -3,13 +3,8 @@
 
 $block: #{$fd-namespace}-popover;
 $blockBody: #{$fd-namespace}-popover__body;
-$bar: #{$fd-namespace}-bar;
 
 .#{$block} {
-  .#{$bar} {
-    @include fd-set-paddings-x-equal(0.5rem);
-  }
-
   @include fd-reset();
 
   position: relative;
