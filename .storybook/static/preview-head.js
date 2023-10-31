@@ -57,6 +57,10 @@
         var els = document.querySelectorAll("[aria-controls]");
         for (var i = 0; i < els.length; i++) {
             var el = els[i];
+            if (el.hasAttribute('data-ignore-click') || el.hasAttribute('data-aria-controls-listener')) {
+              return;
+            }
+            el.setAttribute('data-aria-controls-listener', 'true')
             el.addEventListener('click', function () {
                 var targetId = this.getAttribute("aria-controls");
                 var target = document.getElementById(targetId);
@@ -149,11 +153,15 @@
     }
 
     document.addEventListener('DOMContentLoaded', function () {
+      setTimeout(function() {
         runOnPageChange();
+      }, 10);
         const callback = function(mutationsList) {
             for (let i = 0, len = mutationsList.length; i < len; i++) {
                 if (mutationsList[i].type == 'childList') {
+                  setTimeout(function() {
                     runOnPageChange();
+                  }, 10);
                     break;
                 }
             }
@@ -444,7 +452,7 @@ function toggleNavigationSubmenu(event) {
 }
 
 function toggleNavigationPopover(event) {
-    
+
     let button = event.target;
     if (button.tagName.toLowerCase() === 'a') {
         button = event.target.parentNode;

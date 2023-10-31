@@ -2,16 +2,16 @@
     <div class="fd-popover__control">
         <button
             class="fd-button"
-            aria-controls="popoverF1"
+            aria-controls="popoverScrollable"
             aria-expanded="true"
             aria-haspopup="true"
-            onclick="onPopoverClick('popoverF1');"
+            onclick="onPopoverClick('popoverScrollable');"
             role="button">
-                <!- role is needed to override the combobox role due to aria-haspopup -->
+                <!-- role is needed to override the combobox role due to aria-haspopup -->
                 Popover with overflow
             </button>
     </div>
-    <div class="fd-popover__body" aria-hidden="false" id="popoverF1">
+    <div class="fd-popover__body" aria-hidden="false" id="popoverScrollable">
         <div class="fd-popover__wrapper" style="max-height: 250px;">
             <nav class="fd-menu" aria-label="big navigation menu">
                 <ul class="fd-menu__list fd-menu__list--no-shadow">
