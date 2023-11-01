@@ -1,3 +1,12 @@
+# [0.32.0-rc.5](https://github.com/SAP/fundamental-styles/compare/v0.32.0-rc.4...v0.32.0-rc.5) (2023-11-01)
+
+
+### Bug Fixes
+
+* **styles:** bold link in message strip docs [ci visual] ([#4948](https://github.com/SAP/fundamental-styles/issues/4948)) ([5b59949](https://github.com/SAP/fundamental-styles/commit/5b59949a003eb9555694522e069ccc113972e48f))
+
+
+
 # [0.32.0-rc.4](https://github.com/SAP/fundamental-styles/compare/v0.32.0-rc.3...v0.32.0-rc.4) (2023-11-01)
 
 
