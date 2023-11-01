@@ -193,6 +193,8 @@ $fd-card-header-outline-offset: 0.0625rem !default;
     @include fd-flex() {
       align-items: flex-end;
     }
+
+    margin-top: 0.25rem;
   }
 
   &__subtitle {
@@ -203,6 +205,7 @@ $fd-card-header-outline-offset: 0.0625rem !default;
     word-wrap: break-word;
     max-height: 2.5rem;
     max-width: 100%;
+    line-height: 1rem;
   }
 
   &__counter.#{$object-status} {
@@ -210,7 +213,7 @@ $fd-card-header-outline-offset: 0.0625rem !default;
     text-align: right;
     margin: var(--fdCard_Counter_Margin);
     white-space: nowrap;
-    color: var(--sapTile_TitleTextColor);
+    color: var(--sapNeutralTextColor);
 
     @include fd-rtl() {
       margin: var(--fdCard_Counter_Margin_RTL);
@@ -320,10 +323,6 @@ $fd-card-header-outline-offset: 0.0625rem !default;
     &:first-child,
     &:last-child {
       overflow: hidden;
-    }
-
-    .#{$list} {
-      @include fd-set-paddings-x(0.25rem);
     }
 
     &:last-child {
