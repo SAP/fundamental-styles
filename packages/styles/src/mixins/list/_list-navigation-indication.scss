@@ -33,7 +33,7 @@ $fd-list-navigation-indicator-width: 2.5rem !default;
           font-family: "SAP-icons";
           content: '\e1ed';
           color: var(--sapContent_NonInteractiveIconColor);
-          font-size: var(--faListNavigationIndicatorFontSize, var(--sapFontLargeSize));
+          font-size: var(--fdListNavigationIndicatorFontSize, var(--sapFontLargeSize));
           text-decoration: none;
           text-transform: none;
         }
