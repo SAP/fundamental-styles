@@ -1,3 +1,12 @@
+# [0.32.0-rc.4](https://github.com/SAP/fundamental-styles/compare/v0.32.0-rc.3...v0.32.0-rc.4) (2023-11-01)
+
+
+### Bug Fixes
+
+* **styles:** make panel button work, rename function [ci visual] ([#4949](https://github.com/SAP/fundamental-styles/issues/4949)) ([3a28c5f](https://github.com/SAP/fundamental-styles/commit/3a28c5fc7630cd38ec9a35955b553d484d55d7c8))
+
+
+
 # [0.32.0-rc.3](https://github.com/SAP/fundamental-styles/compare/v0.32.0-rc.2...v0.32.0-rc.3) (2023-10-27)
 
 
