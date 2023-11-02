@@ -1,3 +1,12 @@
+# [0.32.0-rc.7](https://github.com/SAP/fundamental-styles/compare/v0.32.0-rc.6...v0.32.0-rc.7) (2023-11-02)
+
+
+### Bug Fixes
+
+* **styles:** message popover adjustments ([#4951](https://github.com/SAP/fundamental-styles/issues/4951)) ([f679653](https://github.com/SAP/fundamental-styles/commit/f6796538728e495ecfc11430674929c70215ae73))
+
+
+
 # [0.32.0-rc.6](https://github.com/SAP/fundamental-styles/compare/v0.32.0-rc.5...v0.32.0-rc.6) (2023-11-02)
 
 
