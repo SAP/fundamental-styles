@@ -1,3 +1,12 @@
+# [0.32.0-rc.6](https://github.com/SAP/fundamental-styles/compare/v0.32.0-rc.5...v0.32.0-rc.6) (2023-11-02)
+
+
+### Features
+
+* **styles:** add square Nested Button to BTP ([#4953](https://github.com/SAP/fundamental-styles/issues/4953)) ([40b939c](https://github.com/SAP/fundamental-styles/commit/40b939cea4e9e7b41e911d44dc8c401cb5a6fd4f))
+
+
+
 # [0.32.0-rc.5](https://github.com/SAP/fundamental-styles/compare/v0.32.0-rc.4...v0.32.0-rc.5) (2023-11-01)
 
 
