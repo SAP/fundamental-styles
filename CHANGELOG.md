@@ -1,3 +1,12 @@
+# [0.32.0-rc.8](https://github.com/SAP/fundamental-styles/compare/v0.32.0-rc.7...v0.32.0-rc.8) (2023-11-03)
+
+
+### Bug Fixes
+
+* **styles:** dialog updates [ci visual] ([#4937](https://github.com/SAP/fundamental-styles/issues/4937)) ([c98e1e0](https://github.com/SAP/fundamental-styles/commit/c98e1e00e80944bbfe9d0d6effccac9ffefa873c))
+
+
+
 # [0.32.0-rc.7](https://github.com/SAP/fundamental-styles/compare/v0.32.0-rc.6...v0.32.0-rc.7) (2023-11-02)
 
 
