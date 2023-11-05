@@ -43,7 +43,7 @@ const config: StorybookConfig = {
         disableTelemetry: true,
     },
     experimental_indexers: (indexers) => {
-        const index = async (fileName, opts) => {
+        const createIndex = async (fileName, opts) => {
             const owner = getOwner({ importPath: './' + relative(process.cwd(), fileName).replace(/\\/g, '/') });
             const code = readFileSync(fileName, { encoding: 'utf-8' });
             return loadCsf(code, {
@@ -56,7 +56,7 @@ const config: StorybookConfig = {
         return [
             {
                 test: /(visual|stories)\.(js|ts)$/,
-                index
+                createIndex
             } as any,
             ...(indexers || [])
         ];
