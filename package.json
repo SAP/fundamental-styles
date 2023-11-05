@@ -78,7 +78,7 @@
     "@storybook/addon-viewport": "7.4.6",
     "@storybook/addons": "7.4.6",
     "@storybook/html": "7.4.6",
-    "@storybook/html-vite": "7.4.6",
+    "@storybook/html-vite": "7.5.2",
     "@storybook/theming": "7.4.6",
     "@testing-library/react": "13.4.0",
     "@types/node": "18.11.9",
