@@ -390,10 +390,6 @@ $fd-card-header-outline-offset: 0.0625rem !default;
     @include fd-reset();
 
     padding-bottom: 0.5rem;
-
-    h3 {
-      font-size: var(--sapFontSize);
-    }
   }
 
   &__content-group {
