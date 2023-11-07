@@ -152,7 +152,8 @@ $fd-carousel-button-content-offset: 0.5rem !default;
     @include fd-reset();
     @include fd-flex-center();
 
-    height: 2.75rem;
+    min-height: 2.75rem;
+    max-height: 3.5rem;
     padding: 0.375rem 0.5rem;
     background: var(--fdCarousel_Page_Indicator_Container_Background);
     border-top: var(--fdCarousel_Pagination_Border);
