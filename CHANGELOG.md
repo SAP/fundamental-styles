@@ -1,3 +1,116 @@
+# [0.32.0-rc.10](https://github.com/SAP/fundamental-styles/compare/v0.32.0-rc.9...v0.32.0-rc.10) (2023-11-05)
+
+
+
+# [0.32.0-rc.9](https://github.com/SAP/fundamental-styles/compare/v0.32.0-rc.8...v0.32.0-rc.9) (2023-11-05)
+
+
+
+# [0.32.0-rc.8](https://github.com/SAP/fundamental-styles/compare/v0.32.0-rc.7...v0.32.0-rc.8) (2023-11-03)
+
+
+### Bug Fixes
+
+* **styles:** dialog updates [ci visual] ([#4937](https://github.com/SAP/fundamental-styles/issues/4937)) ([c98e1e0](https://github.com/SAP/fundamental-styles/commit/c98e1e00e80944bbfe9d0d6effccac9ffefa873c))
+
+
+
+# [0.32.0-rc.7](https://github.com/SAP/fundamental-styles/compare/v0.32.0-rc.6...v0.32.0-rc.7) (2023-11-02)
+
+
+### Bug Fixes
+
+* **styles:** message popover adjustments ([#4951](https://github.com/SAP/fundamental-styles/issues/4951)) ([f679653](https://github.com/SAP/fundamental-styles/commit/f6796538728e495ecfc11430674929c70215ae73))
+
+
+
+# [0.32.0-rc.6](https://github.com/SAP/fundamental-styles/compare/v0.32.0-rc.5...v0.32.0-rc.6) (2023-11-02)
+
+
+### Features
+
+* **styles:** add square Nested Button to BTP ([#4953](https://github.com/SAP/fundamental-styles/issues/4953)) ([40b939c](https://github.com/SAP/fundamental-styles/commit/40b939cea4e9e7b41e911d44dc8c401cb5a6fd4f))
+
+
+
+# [0.32.0-rc.5](https://github.com/SAP/fundamental-styles/compare/v0.32.0-rc.4...v0.32.0-rc.5) (2023-11-01)
+
+
+### Bug Fixes
+
+* **styles:** bold link in message strip docs [ci visual] ([#4948](https://github.com/SAP/fundamental-styles/issues/4948)) ([5b59949](https://github.com/SAP/fundamental-styles/commit/5b59949a003eb9555694522e069ccc113972e48f))
+
+
+
+# [0.32.0-rc.4](https://github.com/SAP/fundamental-styles/compare/v0.32.0-rc.3...v0.32.0-rc.4) (2023-11-01)
+
+
+### Bug Fixes
+
+* **styles:** make panel button work, rename function [ci visual] ([#4949](https://github.com/SAP/fundamental-styles/issues/4949)) ([3a28c5f](https://github.com/SAP/fundamental-styles/commit/3a28c5fc7630cd38ec9a35955b553d484d55d7c8))
+
+
+
+# [0.32.0-rc.3](https://github.com/SAP/fundamental-styles/compare/v0.32.0-rc.2...v0.32.0-rc.3) (2023-10-27)
+
+
+
+# [0.32.0-rc.2](https://github.com/SAP/fundamental-styles/compare/v0.32.0-rc.1...v0.32.0-rc.2) (2023-10-27)
+
+
+### Bug Fixes
+
+* **styles:** include the tnt font icons for fiori 3 ([#4934](https://github.com/SAP/fundamental-styles/issues/4934)) ([2ea0c36](https://github.com/SAP/fundamental-styles/commit/2ea0c36eac2de3ae11ef256c188ae3b4ad81573e))
+
+
+
+# [0.32.0-rc.1](https://github.com/SAP/fundamental-styles/compare/v0.32.0-rc.0...v0.32.0-rc.1) (2023-10-27)
+
+
+### Bug Fixes
+
+* **styles:** input and select disabled placeholder [ci visual] ([#4932](https://github.com/SAP/fundamental-styles/issues/4932)) ([9a4fe47](https://github.com/SAP/fundamental-styles/commit/9a4fe47f700a5e32ccf444ac3288b3c3b3b27867))
+
+
+
+# [0.32.0-rc.0](https://github.com/SAP/fundamental-styles/compare/v0.31.1-rc.1...v0.32.0-rc.0) (2023-10-27)
+
+
+### chore
+
+* moved btp button examples into the BTP subfolder ([#4925](https://github.com/SAP/fundamental-styles/issues/4925)) ([b54bee9](https://github.com/SAP/fundamental-styles/commit/b54bee9bc108667b5fdcb0334661033870e4c14a))
+
+
+### BREAKING CHANGES
+
+* `fd-button--btp` is required to have a badge on btp button
+
+* fix: excessive CSS overrides [ci visual]
+
+* fix: fixed incorrect usage of the badged buttons in tool-header[ci visual]
+
+* fix: fall back to the main version of the button[ci visual]
+
+
+
+## [0.31.1-rc.1](https://github.com/SAP/fundamental-styles/compare/v0.31.1-rc.0...v0.31.1-rc.1) (2023-10-27)
+
+
+### Bug Fixes
+
+* **styles:** visible overflow when more dropdown is available [ci visual] ([#4931](https://github.com/SAP/fundamental-styles/issues/4931)) ([8502822](https://github.com/SAP/fundamental-styles/commit/8502822562264626ec192e9ed52efc8406b1bef5))
+
+
+
+## [0.31.1-rc.0](https://github.com/SAP/fundamental-styles/compare/v0.31.0...v0.31.1-rc.0) (2023-10-27)
+
+
+### Bug Fixes
+
+* **styles:** calendar updates [ci visual] ([#4930](https://github.com/SAP/fundamental-styles/issues/4930)) ([d96e42b](https://github.com/SAP/fundamental-styles/commit/d96e42b31d9dc72d6bfcfb1501eecd0b50e2fac9))
+
+
+
 # [0.31.0](https://github.com/SAP/fundamental-styles/compare/v0.31.0-rc.2...v0.31.0) (2023-10-25)
 
 

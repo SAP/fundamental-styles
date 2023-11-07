@@ -257,6 +257,9 @@ $fd-button-badge-spacing: 0.25rem;
       border-radius: 100%;
       background: var(--sapContent_BadgeBackground);
       border: 0.0625rem solid var(--fdButton_ToolHeader_Badge_Border_Color);
+      color: var(--sapContent_BadgeBackground);
+      padding: 0;
+      overflow: hidden;
     }
   }
 
@@ -266,14 +269,15 @@ $fd-button-badge-spacing: 0.25rem;
     The code is done this way (not overwriting the CSS variables of Button)
     in case we need to move to a separate component or library in future
   */
-  &--nested {
-    --fdButton_Nested_Size: 1.25rem;
+
+  @mixin nestedButtonBase {
+    --fdButton_Nested_Size: 1.5rem;
     --fdButton_Nested_Icon_Size: 0.75rem;
     --fdButton_Nested_Click_Area: 2rem;
     --fdButton_Nested_Color: var(--sapContent_IconColor);
     --fdButton_Nested_Background: var(--sapButton_Lite_Background);
     --fdButton_Nested_Border_Color: var(--fdButton_ToolHeader_Border_Color_Normal);
-    --fdButton_Nested_Border_Radius: 0.75rem;
+    --fdButton_Nested_Border_Radius: 1rem;
 
     @include fd-set-square(var(--fdButton_Nested_Size));
 
@@ -340,7 +344,29 @@ $fd-button-badge-spacing: 0.25rem;
     }
 
     @include fd-compact-and-condensed() {
+      --fdButton_Nested_Size: 1.375rem;
       --fdButton_Nested_Click_Area: 1.625rem;
+    }
+  }
+
+  &--nested,
+  &--nested-square {
+    @include nestedButtonBase ();
+  }
+
+  &--nested-square {
+    --fdButton_Nested_Border_Radius: 0.1875rem;
+
+    @include fd-active() {
+      --fdButton_Nested_Border_Radius: 0.1875rem;
+
+      @include fd-focus() {
+        --fdButton_Nested_Border_Radius: 0.1875rem;
+      }
+    }
+
+    @include fd-focus() {
+      --fdButton_Nested_Border_Radius: 0.1875rem;
     }
   }
 }

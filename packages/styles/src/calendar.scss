@@ -145,7 +145,6 @@ $fd-calendar-special-days: (
 
   overflow: hidden;
   position: relative;
-  height: var(--fdCalendar_Item_Height);
   margin: var(--fdCalendar_Item_Spacing);
   min-width: var(--fdCalendar_Item_Width);
   border-radius: var(--fdCalendar_Border_Radius);
@@ -246,6 +245,8 @@ $fd-calendar-special-days: (
 
   &__item {
     @extend %fd-calendar-item;
+
+    height: var(--fdCalendar_Item_Height);
 
     @include fd-hover() {
       --fdCalendar_Item_Background: var(--sapList_Hover_Background);
@@ -370,7 +371,6 @@ $fd-calendar-special-days: (
 
     &-button {
       min-width: 100%;
-      min-height: 100%;
       padding: 0;
     }
 

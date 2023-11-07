@@ -52,7 +52,6 @@ export default {
   - \`fd-dialog__content\` Dialog window
     - \`fd-dialog__header\` Dialog header
       - \`fd-dialog__title\` Dialog title
-    - \`fd-dialog__subheader\` Dialog subheader
     - \`fd-dialog__body\` Dialog content
     - \`fd-dialog__loader\` Dialog loader
     - \`fd-dialog__footer\` Dialog footer
