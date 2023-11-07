@@ -24,16 +24,18 @@ export default {
     }
 };
 
-export const Cx = () => {
-    /*
-      this will serve as default redirect to the docs page,
-      otherwise it will render this empty div without ability
-      to select 'docs'
-     */
-    return '<div></div>';
-};
+export const Cx = {
+    render: () => {
+        /*
+          this will serve as default redirect to the docs page,
+          otherwise it will render this empty div without ability
+          to select 'docs'
+         */
+        return '<div></div>';
+    },
 
-Cx.parameters = {
-    storyshots: { disable: true },
-    docsOnly: true
+    parameters: {
+        storyshots: { disable: true },
+        docsOnly: true
+    }
 };
