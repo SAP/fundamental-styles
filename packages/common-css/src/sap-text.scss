@@ -1,0 +1,27 @@
+@import 'common-settings';
+@import 'common-mixins';
+
+$block: #{$sap-namespace}-text;
+
+.#{$block} {
+  @include sap-reset();
+
+  //   &::selection { //todo bring delta theming
+  //     color: var(--sapContent_ContrastTextColor);
+  //     background-color: var(--fdText_Selected_Background_Color);
+  //   }
+
+  &--max-lines {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  &--pre-wrap {
+    white-space: pre-wrap;
+  }
+
+  &--hyphenation {
+    hyphens: auto;
+  }
+}
