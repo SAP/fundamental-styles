@@ -1,3 +1,12 @@
+# [0.32.0-rc.11](https://github.com/SAP/fundamental-styles/compare/v0.32.0-rc.10...v0.32.0-rc.11) (2023-11-07)
+
+
+### Bug Fixes
+
+* **styles:** design review finding fixes for generic tag and object status ([#4968](https://github.com/SAP/fundamental-styles/issues/4968)) ([9a4b58a](https://github.com/SAP/fundamental-styles/commit/9a4b58af01d24ed369155ebab80187613145522d))
+
+
+
 # [0.32.0-rc.10](https://github.com/SAP/fundamental-styles/compare/v0.32.0-rc.9...v0.32.0-rc.10) (2023-11-05)
 
 
