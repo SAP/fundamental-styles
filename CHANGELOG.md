@@ -1,3 +1,18 @@
+# [0.32.0-rc.12](https://github.com/SAP/fundamental-styles/compare/v0.32.0-rc.11...v0.32.0-rc.12) (2023-11-08)
+
+
+### Bug Fixes
+
+* **styles:** update Switch to latest design [ci visual] ([#4967](https://github.com/SAP/fundamental-styles/issues/4967)) ([6fcc250](https://github.com/SAP/fundamental-styles/commit/6fcc250f95664cfb9b5b8856951532d824b260dc))
+
+
+### BREAKING CHANGES
+
+* **styles:** - Basic/Default Switch now has icons
+- Text Switch has the text inside
+
+
+
 # [0.32.0-rc.11](https://github.com/SAP/fundamental-styles/compare/v0.32.0-rc.10...v0.32.0-rc.11) (2023-11-07)
 
 
