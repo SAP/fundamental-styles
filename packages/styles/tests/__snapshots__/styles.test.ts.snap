@@ -39351,7 +39351,9 @@ exports[`Check stories > Components/Switch > Story Basic > Should match snapshot
                 <input class=\\"fd-switch__input\\" type=\\"checkbox\\" name=\\"\\" value=\\"\\" aria-labelledby=\\"label1\\" id=\\"y21YO3251\\">
                 <div class=\\"fd-switch__slider\\">
                     <div class=\\"fd-switch__track\\">
+                        <i role=\\"presentation\\" class=\\"fd-switch__icon fd-switch__icon--on sap-icon--accept\\"></i>
                         <span class=\\"fd-switch__handle\\" role=\\"presentation\\"></span>
+                        <i role=\\"presentation\\" class=\\"fd-switch__icon fd-switch__icon--off sap-icon--less\\"></i>
                     </div>
                 </div>
             </span>
@@ -39364,7 +39366,9 @@ exports[`Check stories > Components/Switch > Story Basic > Should match snapshot
                 <input class=\\"fd-switch__input\\" type=\\"checkbox\\" name=\\"\\" value=\\"\\" aria-labelledby=\\"label7\\" id=\\"y21Y13431\\">
                 <div class=\\"fd-switch__slider\\">
                     <div class=\\"fd-switch__track\\">
+                        <i role=\\"presentation\\" class=\\"fd-switch__icon fd-switch__icon--on sap-icon--accept\\"></i>
                         <span class=\\"fd-switch__handle\\" role=\\"presentation\\"></span>
+                        <i role=\\"presentation\\" class=\\"fd-switch__icon fd-switch__icon--off sap-icon--less\\"></i>
                     </div>
                 </div>
             </span>
@@ -39399,42 +39403,30 @@ exports[`Check stories > Components/Switch > Story WithText > Should match snaps
 "
 <div class=\\"fd-form-group\\">
     <div class=\\"fd-form-item\\">
-        <div class=\\"fd-form-label\\" id=\\"label3\\">With inline text (off)</div>
-        <label class=\\"fd-switch\\">
-            <span class=\\"fd-switch__text\\">Off</span>
+        <div class=\\"fd-form-label\\" id=\\"label3\\">Text Switch (off)</div>
+        <label class=\\"fd-switch fd-switch--text\\">
             <span class=\\"fd-switch__control\\">
                 <input class=\\"fd-switch__input\\" type=\\"checkbox\\" name=\\"\\" aria-labelledby=\\"label3\\" value=\\"\\" id=\\"y21Y677251\\">
                 <div class=\\"fd-switch__slider\\">
                     <div class=\\"fd-switch__track\\">
+                        <span class=\\"fd-switch__text fd-switch__text--on\\">on</span>
                         <span class=\\"fd-switch__handle\\" role=\\"presentation\\"></span>
+                        <span class=\\"fd-switch__text fd-switch__text--off\\">off</span>
                     </div>
                 </div>
             </span>
         </label>
     </div>
     <div class=\\"fd-form-item\\">
-        <div class=\\"fd-form-label\\" id=\\"label4\\">With inline text (on)</div>
-        <label class=\\"fd-switch\\">
-            <span class=\\"fd-switch__text\\">On</span>
+        <div class=\\"fd-form-label\\" id=\\"label4\\">Text Switch (on)</div>
+        <label class=\\"fd-switch fd-switch--text\\">
             <span class=\\"fd-switch__control\\">
                 <input class=\\"fd-switch__input\\" checked type=\\"checkbox\\" aria-labelledby=\\"label4\\" name=\\"\\" value=\\"\\" id=\\"y21653431\\">
                 <div class=\\"fd-switch__slider\\">
                     <div class=\\"fd-switch__track\\">
+                        <span class=\\"fd-switch__text fd-switch__text--on\\">on</span>
                         <span class=\\"fd-switch__handle\\" role=\\"presentation\\"></span>
-                    </div>
-                </div>
-            </span>
-        </label>
-    </div>
-    <div class=\\"fd-form-item\\">
-        <div class=\\"fd-form-label\\" id=\\"label9\\">Disabled with inline text (on)</div>
-        <label class=\\"fd-switch is-disabled\\">
-            <span class=\\"fd-switch__text\\">On</span>
-            <span class=\\"fd-switch__control\\">
-                <input class=\\"fd-switch__input\\" checked type=\\"checkbox\\" aria-labelledby=\\"label9\\" name=\\"\\" value=\\"\\" id=\\"y29653431\\">
-                <div class=\\"fd-switch__slider\\">
-                    <div class=\\"fd-switch__track\\">
-                        <span class=\\"fd-switch__handle\\" role=\\"presentation\\"></span>
+                        <span class=\\"fd-switch__text fd-switch__text--off\\">off</span>
                     </div>
                 </div>
             </span>

@@ -2,8 +2,10 @@ import capitalize from 'lodash/capitalize';
 
 const wrappedStory = (storyName: string, storyFn, direction: 'ltr' | 'rtl', compact = false) => `
 <h2> ${storyName} </h2>
-<div dir="${direction}"${compact ? ' class="is-compact"' : ''}>
-    ${storyFn()}
+<div ${compact ? ' class="is-compact"' : ''}>
+    <div  dir="${direction}">
+     ${storyFn()}
+    </div>
 </div>
 <br />
 <hr />
