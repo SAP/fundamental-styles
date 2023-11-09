@@ -4,6 +4,8 @@
 $block: #{$fd-namespace}-title-bar;
 
 .#{$block} {
+  --fdTitleBar_Button_Container_Size: 2rem;
+
   @include fd-reset();
   @include fd-ellipsis();
 
@@ -12,6 +14,12 @@ $block: #{$fd-namespace}-title-bar;
   }
 
   max-width: 100%;
+
+  &__button-container {
+    @include fd-reset();
+    @include fd-flex-center();
+    @include fd-set-square(var(--fdTitleBar_Button_Container_Size));
+  }
 
   &__container {
     @include fd-reset();
@@ -28,6 +36,8 @@ $block: #{$fd-namespace}-title-bar;
     @include fd-flex-vertical-center() {
       gap: 0.125rem;
     }
+
+    height: 1.625rem;
   }
 
   &__title {
@@ -43,8 +53,13 @@ $block: #{$fd-namespace}-title-bar;
     @include fd-reset();
     @include fd-ellipsis();
 
+    line-height: 1;
     font-weight: normal;
     font-size: var(--sapFontSize);
     color: var(--sapContent_LabelColor);
+  }
+
+  @include fd-compact-and-condensed() {
+    --fdTitleBar_Button_Container_Size: 1.625rem;
   }
 }
