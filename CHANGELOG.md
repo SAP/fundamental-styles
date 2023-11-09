@@ -1,3 +1,17 @@
+# [0.32.0-rc.13](https://github.com/SAP/fundamental-styles/compare/v0.32.0-rc.12...v0.32.0-rc.13) (2023-11-09)
+
+
+### Bug Fixes
+
+* **styles:** update Title Bar to latest design [ci visual] ([#4969](https://github.com/SAP/fundamental-styles/issues/4969)) ([672d1b1](https://github.com/SAP/fundamental-styles/commit/672d1b1b97c08d0ba395d6edb8dfc272180931da))
+
+
+### BREAKING CHANGES
+
+* **styles:** uses Nested button instead of transparent, wrapped in a container with a new classname fd-title-bar__container
+
+
+
 # [0.32.0-rc.12](https://github.com/SAP/fundamental-styles/compare/v0.32.0-rc.11...v0.32.0-rc.12) (2023-11-08)
 
 
