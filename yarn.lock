@@ -16192,14 +16192,14 @@ __metadata:
   linkType: hard
 
 "jsonc-eslint-parser@npm:^2.1.0":
-  version: 2.3.0
-  resolution: "jsonc-eslint-parser@npm:2.3.0"
+  version: 2.4.0
+  resolution: "jsonc-eslint-parser@npm:2.4.0"
   dependencies:
     acorn: ^8.5.0
     eslint-visitor-keys: ^3.0.0
     espree: ^9.0.0
     semver: ^7.3.5
-  checksum: e9343fee870a16f04fdb811b58a9469134c54a03edd58aa5654a888ebae63952cbff3ea3dcad3973465009a275282c6c0dd513e8c3850f7f485a164180085a8b
+  checksum: 495d8be340b464137db0bb25f8280deda2ad773cca6b8b5605325fddb50e8e317842a07ffdfa692b0adcba2d06e25d127087f2d703a63032923d1e67ee5a9efe
   languageName: node
   linkType: hard
 
