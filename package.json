@@ -71,7 +71,7 @@
     "@storybook/addon-controls": "7.5.2",
     "@storybook/addon-cssresources": "6.2.9",
     "@storybook/addon-docs": "7.5.2",
-    "@storybook/addon-links": "7.5.2",
+    "@storybook/addon-links": "7.5.3",
     "@storybook/addon-mdx-gfm": "7.5.2",
     "@storybook/addon-storyshots": "7.5.2",
     "@storybook/addon-toolbars": "7.5.2",
