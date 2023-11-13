@@ -29484,7 +29484,7 @@ exports[`Check stories > Components/Object List > Story SelectionWithNavigation 
 "
 `;
 
-exports[`Check stories > Components/Object List > Story Standart > Should match snapshot 1`] = `
+exports[`Check stories > Components/Object List > Story Standard > Should match snapshot 1`] = `
 "
 <h4 id=\\"objectListItemHeader\\">Object List Item</h4>
 <ul class=\\"fd-list fd-object-list\\" role=\\"list\\" aria-labelledby=\\"objectListItemHeader\\">
@@ -29651,7 +29651,6 @@ exports[`Check stories > Components/Object List > Story Standart > Should match 
           </div>
         </div>
       </div>
-    </div>
     </div>
   </li>
   <li role=\\"listitem\\" tabindex=\\"0\\" class=\\"fd-list__item fd-object-list__item\\">
@@ -29848,19 +29847,19 @@ exports[`Check stories > Components/Object Status > Story ClickableObjectStatus 
 "<h3>Regular State</h3>
 <div class=\\"fddocs-container\\">
     <a href=\\"#\\"  class=\\"fd-object-status fd-object-status--negative fd-object-status--link\\">
-        <i class=\\"fd-object-status__icon sap-icon--message-error\\" role=\\"presentation\\"></i>
+        <i class=\\"fd-object-status__icon sap-icon--error\\" role=\\"presentation\\"></i>
         <span class=\\"fd-object-status__text\\">Negative</span>
     </a>
     <a href=\\"#\\"  class=\\"fd-object-status fd-object-status--critical fd-object-status--link\\">
-        <i class=\\"fd-object-status__icon sap-icon--message-warning\\" role=\\"presentation\\"></i>
+        <i class=\\"fd-object-status__icon sap-icon--alert\\" role=\\"presentation\\"></i>
         <span class=\\"fd-object-status__text\\">Critical</span>
     </a>
     <a href=\\"#\\"class=\\"fd-object-status fd-object-status--positive fd-object-status--link\\">
-        <i class=\\"fd-object-status__icon sap-icon--message-success\\" role=\\"presentation\\"></i>
+        <i class=\\"fd-object-status__icon sap-icon--sys-enter-2\\" role=\\"presentation\\"></i>
         <span class=\\"fd-object-status__text\\">Positive</span>
     </a>
     <span role=\\"button\\" class=\\"fd-object-status fd-object-status--informative fd-object-status--link\\" tabindex=\\"0\\">
-        <i class=\\"fd-object-status__icon sap-icon--message-information\\" role=\\"presentation\\"></i>
+        <i class=\\"fd-object-status__icon sap-icon--information\\" role=\\"presentation\\"></i>
         <span class=\\"fd-object-status__text\\">Info</span>
     </span>
     <span role=\\"button\\" class=\\"fd-object-status fd-object-status--link\\" tabindex=\\"0\\">
@@ -29896,19 +29895,19 @@ exports[`Check stories > Components/Object Status > Story ClickableObjectStatus 
 <h3>Hover State</h3>
 <div class=\\"fddocs-container\\">
     <a href=\\"#\\"  class=\\"fd-object-status fd-object-status--negative fd-object-status--link is-hover\\">
-        <i class=\\"fd-object-status__icon sap-icon--message-error\\" role=\\"presentation\\"></i>
+        <i class=\\"fd-object-status__icon sap-icon--error\\" role=\\"presentation\\"></i>
         <span class=\\"fd-object-status__text\\">Negative</span>
     </a>
     <a href=\\"#\\"  class=\\"fd-object-status fd-object-status--critical fd-object-status--link is-hover\\">
-        <i class=\\"fd-object-status__icon sap-icon--message-warning\\" role=\\"presentation\\"></i>
+        <i class=\\"fd-object-status__icon sap-icon--alert\\" role=\\"presentation\\"></i>
         <span class=\\"fd-object-status__text\\">Critical</span>
     </a>
     <a href=\\"#\\"class=\\"fd-object-status fd-object-status--positive fd-object-status--link is-hover\\">
-        <i class=\\"fd-object-status__icon sap-icon--message-success\\" role=\\"presentation\\"></i>
+        <i class=\\"fd-object-status__icon sap-icon--sys-enter-2\\" role=\\"presentation\\"></i>
         <span class=\\"fd-object-status__text\\">Positive</span>
     </a>
     <span role=\\"button\\" class=\\"fd-object-status fd-object-status--informative fd-object-status--link is-hover\\" tabindex=\\"0\\">
-        <i class=\\"fd-object-status__icon sap-icon--message-information\\" role=\\"presentation\\"></i>
+        <i class=\\"fd-object-status__icon sap-icon--information\\" role=\\"presentation\\"></i>
         <span class=\\"fd-object-status__text\\">Info</span>
     </span>
     <span role=\\"button\\" class=\\"fd-object-status fd-object-status--link is-hover\\" tabindex=\\"0\\">
@@ -29944,19 +29943,19 @@ exports[`Check stories > Components/Object Status > Story ClickableObjectStatus 
 <h3>Down State</h3>
 <div class=\\"fddocs-container\\">
     <a href=\\"#\\"  class=\\"fd-object-status fd-object-status--negative fd-object-status--link is-active\\">
-        <i class=\\"fd-object-status__icon sap-icon--message-error\\" role=\\"presentation\\"></i>
+        <i class=\\"fd-object-status__icon sap-icon--error\\" role=\\"presentation\\"></i>
         <span class=\\"fd-object-status__text\\">Negative</span>
     </a>
     <a href=\\"#\\"  class=\\"fd-object-status fd-object-status--critical fd-object-status--link is-active\\">
-        <i class=\\"fd-object-status__icon sap-icon--message-warning\\" role=\\"presentation\\"></i>
+        <i class=\\"fd-object-status__icon sap-icon--alert\\" role=\\"presentation\\"></i>
         <span class=\\"fd-object-status__text\\">Critical</span>
     </a>
     <a href=\\"#\\"class=\\"fd-object-status fd-object-status--positive fd-object-status--link is-active\\">
-        <i class=\\"fd-object-status__icon sap-icon--message-success\\" role=\\"presentation\\"></i>
+        <i class=\\"fd-object-status__icon sap-icon--sys-enter-2\\" role=\\"presentation\\"></i>
         <span class=\\"fd-object-status__text\\">Positive</span>
     </a>
     <span role=\\"button\\" class=\\"fd-object-status fd-object-status--informative fd-object-status--link is-active\\" tabindex=\\"0\\">
-        <i class=\\"fd-object-status__icon sap-icon--message-information\\" role=\\"presentation\\"></i>
+        <i class=\\"fd-object-status__icon sap-icon--information\\" role=\\"presentation\\"></i>
         <span class=\\"fd-object-status__text\\">Info</span>
     </span>
     <span role=\\"button\\" class=\\"fd-object-status fd-object-status--link is-active\\" tabindex=\\"0\\">
@@ -29992,19 +29991,19 @@ exports[`Check stories > Components/Object Status > Story ClickableObjectStatus 
 <h3>Visited State</h3>
 <div class=\\"fddocs-container\\">
     <a href=\\"#\\"  class=\\"fd-object-status fd-object-status--negative fd-object-status--link is-visited\\">
-        <i class=\\"fd-object-status__icon sap-icon--message-error\\" role=\\"presentation\\"></i>
+        <i class=\\"fd-object-status__icon sap-icon--error\\" role=\\"presentation\\"></i>
         <span class=\\"fd-object-status__text\\">Negative</span>
     </a>
     <a href=\\"#\\"  class=\\"fd-object-status fd-object-status--critical fd-object-status--link is-visited\\">
-        <i class=\\"fd-object-status__icon sap-icon--message-warning\\" role=\\"presentation\\"></i>
+        <i class=\\"fd-object-status__icon sap-icon--alert\\" role=\\"presentation\\"></i>
         <span class=\\"fd-object-status__text\\">Critical</span>
     </a>
     <a href=\\"#\\"class=\\"fd-object-status fd-object-status--positive fd-object-status--link is-visited\\">
-        <i class=\\"fd-object-status__icon sap-icon--message-success\\" role=\\"presentation\\"></i>
+        <i class=\\"fd-object-status__icon sap-icon--sys-enter-2\\" role=\\"presentation\\"></i>
         <span class=\\"fd-object-status__text\\">Positive</span>
     </a>
     <span role=\\"button\\" class=\\"fd-object-status fd-object-status--informative fd-object-status--link is-visited\\" tabindex=\\"0\\">
-        <i class=\\"fd-object-status__icon sap-icon--message-information\\" role=\\"presentation\\"></i>
+        <i class=\\"fd-object-status__icon sap-icon--information\\" role=\\"presentation\\"></i>
         <span class=\\"fd-object-status__text\\">Info</span>
     </span>
     <span role=\\"button\\" class=\\"fd-object-status fd-object-status--link is-visited\\" tabindex=\\"0\\">
@@ -30040,19 +30039,19 @@ exports[`Check stories > Components/Object Status > Story ClickableObjectStatus 
 <h3>Focus State</h3>
 <div class=\\"fddocs-container\\">
     <a href=\\"#\\"  class=\\"fd-object-status fd-object-status--negative fd-object-status--link is-focus\\">
-        <i class=\\"fd-object-status__icon sap-icon--message-error\\" role=\\"presentation\\"></i>
+        <i class=\\"fd-object-status__icon sap-icon--error\\" role=\\"presentation\\"></i>
         <span class=\\"fd-object-status__text\\">Negative</span>
     </a>
     <a href=\\"#\\"  class=\\"fd-object-status fd-object-status--critical fd-object-status--link is-focus\\">
-        <i class=\\"fd-object-status__icon sap-icon--message-warning\\" role=\\"presentation\\"></i>
+        <i class=\\"fd-object-status__icon sap-icon--alert\\" role=\\"presentation\\"></i>
         <span class=\\"fd-object-status__text\\">Critical</span>
     </a>
     <a href=\\"#\\"class=\\"fd-object-status fd-object-status--positive fd-object-status--link is-focus\\">
-        <i class=\\"fd-object-status__icon sap-icon--message-success\\" role=\\"presentation\\"></i>
+        <i class=\\"fd-object-status__icon sap-icon--sys-enter-2\\" role=\\"presentation\\"></i>
         <span class=\\"fd-object-status__text\\">Positive</span>
     </a>
     <span role=\\"button\\" class=\\"fd-object-status fd-object-status--informative fd-object-status--link is-focus\\" tabindex=\\"0\\">
-        <i class=\\"fd-object-status__icon sap-icon--message-information\\" role=\\"presentation\\"></i>
+        <i class=\\"fd-object-status__icon sap-icon--information\\" role=\\"presentation\\"></i>
         <span class=\\"fd-object-status__text\\">Info</span>
     </span>
     <span role=\\"button\\" class=\\"fd-object-status fd-object-status--link is-focus\\" tabindex=\\"0\\">
@@ -30120,16 +30119,16 @@ exports[`Check stories > Components/Object Status > Story GenericIndicationColor
 exports[`Check stories > Components/Object Status > Story Icon > Should match snapshot 1`] = `
 "<div class=\\"fddocs-container\\">
     <span class=\\"fd-object-status fd-object-status--negative\\">
-        <i class=\\"fd-object-status__icon sap-icon--message-error\\" aria-label=\\"Negative\\"></i>
+        <i class=\\"fd-object-status__icon sap-icon--error\\" aria-label=\\"Negative\\"></i>
     </span>
     <span class=\\"fd-object-status fd-object-status--critical\\">
-        <i class=\\"fd-object-status__icon sap-icon--message-warning\\" aria-label=\\"Warning\\"></i>
+        <i class=\\"fd-object-status__icon sap-icon--alert\\" aria-label=\\"Warning\\"></i>
     </span>
     <span class=\\"fd-object-status fd-object-status--positive\\">
-        <i class=\\"fd-object-status__icon sap-icon--message-success\\" aria-label=\\"Correct\\"></i>
+        <i class=\\"fd-object-status__icon sap-icon--sys-enter-2\\" aria-label=\\"Correct\\"></i>
     </span>
     <span class=\\"fd-object-status fd-object-status--informative\\">
-        <i class=\\"fd-object-status__icon sap-icon--message-information\\" aria-label=\\"More information\\"></i>
+        <i class=\\"fd-object-status__icon sap-icon--information\\" aria-label=\\"More information\\"></i>
     </span>
 </div>
 "
@@ -30138,19 +30137,19 @@ exports[`Check stories > Components/Object Status > Story Icon > Should match sn
 exports[`Check stories > Components/Object Status > Story IconAndText > Should match snapshot 1`] = `
 "<div class=\\"fddocs-container\\">
     <span class=\\"fd-object-status fd-object-status--negative\\">
-        <i class=\\"fd-object-status__icon sap-icon--message-error\\" role=\\"presentation\\"></i>
+        <i class=\\"fd-object-status__icon sap-icon--error\\" role=\\"presentation\\"></i>
         <span class=\\"fd-object-status__text\\">Negative</span>
     </span>
     <span class=\\"fd-object-status fd-object-status--critical\\">
-        <i class=\\"fd-object-status__icon sap-icon--message-warning\\" role=\\"presentation\\"></i>
+        <i class=\\"fd-object-status__icon sap-icon--alert\\" role=\\"presentation\\"></i>
         <span class=\\"fd-object-status__text\\">Critical</span>
     </span>
     <span class=\\"fd-object-status fd-object-status--positive\\">
-        <i class=\\"fd-object-status__icon sap-icon--message-success\\" role=\\"presentation\\"></i>
+        <i class=\\"fd-object-status__icon sap-icon--sys-enter-2\\" role=\\"presentation\\"></i>
         <span class=\\"fd-object-status__text\\">Positive</span>
     </span>
     <span class=\\"fd-object-status fd-object-status--informative\\">
-        <i class=\\"fd-object-status__icon sap-icon--message-information\\" role=\\"presentation\\"></i>
+        <i class=\\"fd-object-status__icon sap-icon--information\\" role=\\"presentation\\"></i>
         <span class=\\"fd-object-status__text\\">Info</span>
     </span>
     <span class=\\"fd-object-status fd-object-status--neutral\\">
@@ -30179,22 +30178,22 @@ exports[`Check stories > Components/Object Status > Story Inverted > Should matc
         <span class=\\"fd-object-status__text\\">Inverted Neutral</span>
     </span>
     <span class=\\"fd-object-status fd-object-status--inverted fd-object-status--negative\\">
-        <i class=\\"fd-object-status__icon sap-icon--message-error\\" role=\\"presentation\\"></i>
+        <i class=\\"fd-object-status__icon sap-icon--error\\" role=\\"presentation\\"></i>
     </span>
     <span class=\\"fd-object-status fd-object-status--inverted fd-object-status--negative\\">
-        <i class=\\"fd-object-status__icon sap-icon--message-error\\" role=\\"presentation\\"></i>
+        <i class=\\"fd-object-status__icon sap-icon--error\\" role=\\"presentation\\"></i>
         <span class=\\"fd-object-status__text\\">Negative</span>
     </span>
     <span class=\\"fd-object-status fd-object-status--inverted fd-object-status--critical\\">
-        <i class=\\"fd-object-status__icon sap-icon--message-warning\\" role=\\"presentation\\"></i>
+        <i class=\\"fd-object-status__icon sap-icon--alert\\" role=\\"presentation\\"></i>
         <span class=\\"fd-object-status__text\\">Critical</span>
     </span>
     <span class=\\"fd-object-status fd-object-status--inverted fd-object-status--positive\\">
-        <i class=\\"fd-object-status__icon sap-icon--message-success\\" role=\\"presentation\\"></i>
+        <i class=\\"fd-object-status__icon sap-icon--sys-enter-2\\" role=\\"presentation\\"></i>
         <span class=\\"fd-object-status__text\\">Positive</span>
     </span>
     <span class=\\"fd-object-status fd-object-status--inverted fd-object-status--informative\\">
-        <i class=\\"fd-object-status__icon sap-icon--message-information\\" role=\\"presentation\\"></i>
+        <i class=\\"fd-object-status__icon sap-icon--information\\" role=\\"presentation\\"></i>
         <span class=\\"fd-object-status__text\\">Informative</span>
     </span>
     <span class=\\"fd-object-status fd-object-status--inverted\\">
@@ -30221,22 +30220,22 @@ exports[`Check stories > Components/Object Status > Story Inverted > Should matc
         <span class=\\"fd-object-status__text\\">Inverted Neutral</span>
     </span>
     <span class=\\"fd-object-status fd-object-status--inverted fd-object-status--negative fd-object-status--large fd-object-status--icon-only\\">
-        <i class=\\"fd-object-status__icon sap-icon--message-error\\" role=\\"presentation\\"></i>
+        <i class=\\"fd-object-status__icon sap-icon--error\\" role=\\"presentation\\"></i>
     </span>
     <span class=\\"fd-object-status fd-object-status--inverted fd-object-status--negative fd-object-status--large\\">
-        <i class=\\"fd-object-status__icon sap-icon--message-error\\" role=\\"presentation\\"></i>
+        <i class=\\"fd-object-status__icon sap-icon--error\\" role=\\"presentation\\"></i>
         <span class=\\"fd-object-status__text\\">Negative</span>
     </span>
     <span class=\\"fd-object-status fd-object-status--inverted fd-object-status--critical fd-object-status--large\\">
-        <i class=\\"fd-object-status__icon sap-icon--message-warning\\" role=\\"presentation\\"></i>
+        <i class=\\"fd-object-status__icon sap-icon--alert\\" role=\\"presentation\\"></i>
         <span class=\\"fd-object-status__text\\">Critical</span>
     </span>
     <span class=\\"fd-object-status fd-object-status--inverted fd-object-status--positive fd-object-status--large\\">
-        <i class=\\"fd-object-status__icon sap-icon--message-success\\" role=\\"presentation\\"></i>
+        <i class=\\"fd-object-status__icon sap-icon--sys-enter-2\\" role=\\"presentation\\"></i>
         <span class=\\"fd-object-status__text\\">Positive</span>
     </span>
     <span class=\\"fd-object-status fd-object-status--inverted fd-object-status--informative fd-object-status--large\\">
-        <i class=\\"fd-object-status__icon sap-icon--message-information\\" role=\\"presentation\\"></i>
+        <i class=\\"fd-object-status__icon sap-icon--information\\" role=\\"presentation\\"></i>
         <span class=\\"fd-object-status__text\\">Informative</span>
     </span>
     <span class=\\"fd-object-status fd-object-status--inverted fd-object-status--large\\">
@@ -30603,19 +30602,19 @@ exports[`Check stories > Components/Object Status > Story InvertedStates > Shoul
         <span class=\\"fd-object-status__text\\">Neutral</span>
     </span>
     <span class=\\"fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--informative\\" tabindex=\\"0\\">
-        <i class=\\"fd-object-status__icon sap-icon--message-information\\" role=\\"presentation\\"></i>
+        <i class=\\"fd-object-status__icon sap-icon--information\\" role=\\"presentation\\"></i>
         <span class=\\"fd-object-status__text\\">Information</span>
     </span>
     <span class=\\"fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--critical\\" tabindex=\\"0\\">
-        <i class=\\"fd-object-status__icon sap-icon--message-warning\\" role=\\"presentation\\"></i>
+        <i class=\\"fd-object-status__icon sap-icon--alert\\" role=\\"presentation\\"></i>
         <span class=\\"fd-object-status__text\\">Caution</span>
     </span>
     <span class=\\"fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--positive\\" tabindex=\\"0\\">
-        <i class=\\"fd-object-status__icon sap-icon--message-success\\" role=\\"presentation\\"></i>
+        <i class=\\"fd-object-status__icon sap-icon--sys-enter-2\\" role=\\"presentation\\"></i>
         <span class=\\"fd-object-status__text\\">Positive</span>
     </span>
     <span class=\\"fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--negative\\" tabindex=\\"0\\">
-        <i class=\\"fd-object-status__icon sap-icon--message-error\\" role=\\"presentation\\"></i>
+        <i class=\\"fd-object-status__icon sap-icon--error\\" role=\\"presentation\\"></i>
         <span class=\\"fd-object-status__text\\">Negative</span>
     </span>
 </div>
@@ -30626,19 +30625,19 @@ exports[`Check stories > Components/Object Status > Story InvertedStates > Shoul
         <span class=\\"fd-object-status__text\\">Neutral</span>
     </span>
     <span class=\\"fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--informative is-hover\\" tabindex=\\"0\\">
-        <i class=\\"fd-object-status__icon sap-icon--message-information\\" role=\\"presentation\\"></i>
+        <i class=\\"fd-object-status__icon sap-icon--information\\" role=\\"presentation\\"></i>
         <span class=\\"fd-object-status__text\\">Information</span>
     </span>
     <span class=\\"fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--critical is-hover\\" tabindex=\\"0\\">
-        <i class=\\"fd-object-status__icon sap-icon--message-warning\\" role=\\"presentation\\"></i>
+        <i class=\\"fd-object-status__icon sap-icon--alert\\" role=\\"presentation\\"></i>
         <span class=\\"fd-object-status__text\\">Caution</span>
     </span>
     <span class=\\"fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--positive is-hover\\" tabindex=\\"0\\">
-        <i class=\\"fd-object-status__icon sap-icon--message-success\\" role=\\"presentation\\"></i>
+        <i class=\\"fd-object-status__icon sap-icon--sys-enter-2\\" role=\\"presentation\\"></i>
         <span class=\\"fd-object-status__text\\">Positive</span>
     </span>
     <span class=\\"fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--negative is-hover\\" tabindex=\\"0\\">
-        <i class=\\"fd-object-status__icon sap-icon--message-error\\" role=\\"presentation\\"></i>
+        <i class=\\"fd-object-status__icon sap-icon--error\\" role=\\"presentation\\"></i>
         <span class=\\"fd-object-status__text\\">Negative</span>
     </span>
 </div>
@@ -30649,19 +30648,19 @@ exports[`Check stories > Components/Object Status > Story InvertedStates > Shoul
         <span class=\\"fd-object-status__text\\">Neutral</span>
     </span>
     <span class=\\"fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--informative is-active\\" tabindex=\\"0\\">
-        <i class=\\"fd-object-status__icon sap-icon--message-information\\" role=\\"presentation\\"></i>
+        <i class=\\"fd-object-status__icon sap-icon--information\\" role=\\"presentation\\"></i>
         <span class=\\"fd-object-status__text\\">Information</span>
     </span>
     <span class=\\"fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--critical is-active\\" tabindex=\\"0\\">
-        <i class=\\"fd-object-status__icon sap-icon--message-warning\\" role=\\"presentation\\"></i>
+        <i class=\\"fd-object-status__icon sap-icon--alert\\" role=\\"presentation\\"></i>
         <span class=\\"fd-object-status__text\\">Caution</span>
     </span>
     <span class=\\"fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--positive is-active\\" tabindex=\\"0\\">
-        <i class=\\"fd-object-status__icon sap-icon--message-success\\" role=\\"presentation\\"></i>
+        <i class=\\"fd-object-status__icon sap-icon--sys-enter-2\\" role=\\"presentation\\"></i>
         <span class=\\"fd-object-status__text\\">Positive</span>
     </span>
     <span class=\\"fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--negative is-active\\" tabindex=\\"0\\">
-        <i class=\\"fd-object-status__icon sap-icon--message-error\\" role=\\"presentation\\"></i>
+        <i class=\\"fd-object-status__icon sap-icon--error\\" role=\\"presentation\\"></i>
         <span class=\\"fd-object-status__text\\">Negative</span>
     </span>
 </div>
@@ -30672,19 +30671,19 @@ exports[`Check stories > Components/Object Status > Story InvertedStates > Shoul
         <span class=\\"fd-object-status__text\\">Neutral</span>
     </span>
     <span class=\\"fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--informative is-focus\\" tabindex=\\"0\\">
-        <i class=\\"fd-object-status__icon sap-icon--message-information\\" role=\\"presentation\\"></i>
+        <i class=\\"fd-object-status__icon sap-icon--information\\" role=\\"presentation\\"></i>
         <span class=\\"fd-object-status__text\\">Information</span>
     </span>
     <span class=\\"fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--critical is-focus\\" tabindex=\\"0\\">
-        <i class=\\"fd-object-status__icon sap-icon--message-warning\\" role=\\"presentation\\"></i>
+        <i class=\\"fd-object-status__icon sap-icon--alert\\" role=\\"presentation\\"></i>
         <span class=\\"fd-object-status__text\\">Caution</span>
     </span>
     <span class=\\"fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--positive is-focus\\" tabindex=\\"0\\">
-        <i class=\\"fd-object-status__icon sap-icon--message-success\\" role=\\"presentation\\"></i>
+        <i class=\\"fd-object-status__icon sap-icon--sys-enter-2\\" role=\\"presentation\\"></i>
         <span class=\\"fd-object-status__text\\">Positive</span>
     </span>
     <span class=\\"fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--negative is-focus\\" tabindex=\\"0\\">
-        <i class=\\"fd-object-status__icon sap-icon--message-error\\" role=\\"presentation\\"></i>
+        <i class=\\"fd-object-status__icon sap-icon--error\\" role=\\"presentation\\"></i>
         <span class=\\"fd-object-status__text\\">Negative</span>
     </span>
 </div>
@@ -30695,19 +30694,19 @@ exports[`Check stories > Components/Object Status > Story InvertedStates > Shoul
         <span class=\\"fd-object-status__text\\">Neutral</span>
     </span>
     <span class=\\"fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--informative is-hover is-focus\\" tabindex=\\"0\\">
-        <i class=\\"fd-object-status__icon sap-icon--message-information\\" role=\\"presentation\\"></i>
+        <i class=\\"fd-object-status__icon sap-icon--information\\" role=\\"presentation\\"></i>
         <span class=\\"fd-object-status__text\\">Information</span>
     </span>
     <span class=\\"fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--critical is-hover is-focus\\" tabindex=\\"0\\">
-        <i class=\\"fd-object-status__icon sap-icon--message-warning\\" role=\\"presentation\\"></i>
+        <i class=\\"fd-object-status__icon sap-icon--alert\\" role=\\"presentation\\"></i>
         <span class=\\"fd-object-status__text\\">Caution</span>
     </span>
     <span class=\\"fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--positive is-hover is-focus\\" tabindex=\\"0\\">
-        <i class=\\"fd-object-status__icon sap-icon--message-success\\" role=\\"presentation\\"></i>
+        <i class=\\"fd-object-status__icon sap-icon--sys-enter-2\\" role=\\"presentation\\"></i>
         <span class=\\"fd-object-status__text\\">Positive</span>
     </span>
     <span class=\\"fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--negative is-hover is-focus\\" tabindex=\\"0\\">
-        <i class=\\"fd-object-status__icon sap-icon--message-error\\" role=\\"presentation\\"></i>
+        <i class=\\"fd-object-status__icon sap-icon--error\\" role=\\"presentation\\"></i>
         <span class=\\"fd-object-status__text\\">Negative</span>
     </span>
 </div>
@@ -30717,19 +30716,19 @@ exports[`Check stories > Components/Object Status > Story InvertedStates > Shoul
 exports[`Check stories > Components/Object Status > Story LargeObjectStatus > Should match snapshot 1`] = `
 "<div class=\\"fddocs-container\\">
     <span class=\\"fd-object-status fd-object-status--large fd-object-status--negative\\">
-        <i class=\\"fd-object-status__icon sap-icon--message-error\\" role=\\"presentation\\"></i>
+        <i class=\\"fd-object-status__icon sap-icon--error\\" role=\\"presentation\\"></i>
         <span class=\\"fd-object-status__text\\">Negative</span>
     </span>
     <span class=\\"fd-object-status fd-object-status--large fd-object-status--critical\\">
-        <i class=\\"fd-object-status__icon sap-icon--message-warning\\" role=\\"presentation\\"></i>
+        <i class=\\"fd-object-status__icon sap-icon--alert\\" role=\\"presentation\\"></i>
         <span class=\\"fd-object-status__text\\">Critical</span>
     </span>
     <span class=\\"fd-object-status fd-object-status--large fd-object-status--positive\\">
-        <i class=\\"fd-object-status__icon sap-icon--message-success\\" role=\\"presentation\\"></i>
+        <i class=\\"fd-object-status__icon sap-icon--sys-enter-2\\" role=\\"presentation\\"></i>
         <span class=\\"fd-object-status__text\\">Positive</span>
     </span>
     <span class=\\"fd-object-status fd-object-status--large fd-object-status--informative\\">
-        <i class=\\"fd-object-status__icon sap-icon--message-information\\" role=\\"presentation\\"></i>
+        <i class=\\"fd-object-status__icon sap-icon--information\\" role=\\"presentation\\"></i>
         <span class=\\"fd-object-status__text\\">Info</span>
     </span>
     <span class=\\"fd-object-status fd-object-status--large\\">
@@ -30742,19 +30741,19 @@ exports[`Check stories > Components/Object Status > Story LargeObjectStatus > Sh
 exports[`Check stories > Components/Object Status > Story Primary > Should match snapshot 1`] = `
 "<div class=\\"fddocs-container\\">
     <span class=\\"fd-object-status fd-object-status--negative\\">
-        <i class=\\"fd-object-status__icon sap-icon--message-error\\" role=\\"presentation\\"></i>
+        <i class=\\"fd-object-status__icon sap-icon--error\\" role=\\"presentation\\"></i>
         <span class=\\"fd-object-status__text\\">Negative</span>
     </span>
     <span class=\\"fd-object-status fd-object-status--critical\\">
-        <i class=\\"fd-object-status__icon sap-icon--message-warning\\" role=\\"presentation\\"></i>
+        <i class=\\"fd-object-status__icon sap-icon--alert\\" role=\\"presentation\\"></i>
         <span class=\\"fd-object-status__text\\">Critical</span>
     </span>
     <span class=\\"fd-object-status fd-object-status--positive\\">
-        <i class=\\"fd-object-status__icon sap-icon--message-success\\" role=\\"presentation\\"></i>
+        <i class=\\"fd-object-status__icon sap-icon--sys-enter-2\\" role=\\"presentation\\"></i>
         <span class=\\"fd-object-status__text\\">Positive</span>
     </span>
     <span class=\\"fd-object-status fd-object-status--informative\\">
-        <i class=\\"fd-object-status__icon sap-icon--message-information\\" role=\\"presentation\\"></i>
+        <i class=\\"fd-object-status__icon sap-icon--information\\" role=\\"presentation\\"></i>
         <span class=\\"fd-object-status__text\\">Info</span>
     </span>
 </div>
@@ -30785,18 +30784,18 @@ exports[`Check stories > Components/Object Status > Story Text > Should match sn
 exports[`Check stories > Components/Object Status > Story TruncateExample > Should match snapshot 1`] = `
 "<div class=\\"fddocs-container\\">
     <span class=\\"fd-object-status fd-object-status--negative fd-object-status--truncate\\" style=\\"max-width: 15rem;\\">
-        <i class=\\"fd-object-status__icon sap-icon--message-error\\" role=\\"presentation\\"></i>
+        <i class=\\"fd-object-status__icon sap-icon--error\\" role=\\"presentation\\"></i>
         <span class=\\"fd-object-status__text\\">Default behaviour of Object Status with very long text. The text goes on multiple lines.</span>
     </span>
     <span class=\\"fd-object-status fd-object-status--critical fd-object-status--truncate\\" style=\\"max-width: 15rem;\\">
-        <i class=\\"fd-object-status__icon sap-icon--message-warning\\" role=\\"presentation\\"></i>
+        <i class=\\"fd-object-status__icon sap-icon--alert\\" role=\\"presentation\\"></i>
         <span class=\\"fd-object-status__text\\">Object Status with text truncation with ellipsis</span>
     </span>
     <span class=\\"fd-object-status fd-object-status--negative fd-object-status--inverted fd-object-status--truncate\\" style=\\"max-width: 15rem;\\">
         <span class=\\"fd-object-status__text\\">Inverted Negative with very, very long text which truncates</span>
     </span>
     <span class=\\"fd-object-status fd-object-status--large fd-object-status--positive fd-object-status--truncate\\" style=\\"max-width: 15rem;\\">
-        <i class=\\"fd-object-status__icon sap-icon--message-success\\" role=\\"presentation\\"></i>
+        <i class=\\"fd-object-status__icon sap-icon--sys-enter-2\\" role=\\"presentation\\"></i>
         <span class=\\"fd-object-status__text\\">Positive with very, very long text which truncates</span>
     </span>
     <span class=\\"fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--indication-8 fd-object-status--truncate\\" tabindex=\\"0\\" style=\\"max-width: 15rem;\\">
