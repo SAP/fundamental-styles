@@ -4,8 +4,8 @@
   --fdSwitch_Compact_Height: 1.25rem;
   --fdSwitch_Compact_Handle_Width: 1.25rem;
   --fdSwitch_Compact_Handle_Height: 1rem;
-  --fdSwitch_Compact_Handle_Offset: 0.3075rem;
-  --fdSwitch_Compact_Active_Handle_Offset: var(--fdSwitch_Compact_Handle_Offset);
+  --fdSwitch_Active_Handle_Offset: 0.5075rem;
+  --fdSwitch_Compact_Handle_Offset: -0.8125rem;
   --fdSwitch_Compact_Padding: 0.375rem 0;
 
   // Standard
@@ -23,11 +23,13 @@
   --fdSwitch_Handle_Width: 1.5rem;
   --fdSwitch_Handle_Height: 1.25rem;
   --fdSwitch_Handle_Border_Radius: 0.75rem;
+  --fdSwitch_Handle_Active_Color: var(--sapButton_Handle_Selected_TextColor);
+  --fdSwitch_Handle_Inactive_Color: var(--sapButton_Handle_TextColor);
   --fdSwitch_Handle_Background: var(--sapButton_Handle_Background);
   --fdSwitch_Hover_Handle_Background: var(--sapButton_Handle_Selected_Hover_Background);
   --fdSwitch_Hover_Handle_Active_Background: var(--sapButton_Handle_Selected_Hover_Background);
   --fdSwitch_Handle_Offset: 1.2475rem;
-  --fdSwitch_Active_Handle_Offset: 0.5075rem;
+  --fdSwitch_Compact_Active_Handle_Offset: -0.3125rem;
   --fdSwitch_Shadow: inset 0 0 0 0.0625rem var(--sapButton_Track_BorderColor);
   --fdSwitch_Active_Shadow: inset 0 0 0 0.0625rem var(--sapButton_Selected_BorderColor);
   --fdSwitch_Border_Color: transparent;
@@ -37,6 +39,9 @@
   --fdSwitch_Focus_Outline_Vertical_Offset: calc(var(--sapContent_FocusWidth) * -2);
   --fdSwitch_Focus_Outline_Horizontal_Offset: calc(var(--sapContent_FocusWidth) * -2);
   --fdSwitch_Focus_Outline_Border_Radius: calc(var(--fdSwitch_Border_Radius) + (var(--sapContent_FocusWidth) * 2));
+  --fdSwitch_Icon_Display: flex;
+  --fdSwitch_Text_Active_Color: var(--sapButton_Handle_Selected_TextColor);
+  --fdSwitch_Text_Inactive_Color: var(--sapButton_Handle_TextColor);
 
   // Switch borders
   --fdSwitch_Handle_Border_Color: var(--sapButton_Track_BorderColor);
@@ -97,4 +102,17 @@
   --fdSwitch_Compact_Semantic_Handle_Offset: -0.8125rem;
   --fdSwitch_Compact_Semantic_Active_Handle_Offset: var(--fdSwitch_Compact_Active_Handle_Offset);
   --fdSwitch_Compact_Semantic_Active_Handle_Offset_Rtl: var(--fdSwitch_Compact_Handle_Offset);
+
+  // Text switch
+  --fdSwitch_Text_Width: 2.875rem;
+  --fdSwitch_Text_Handle_Width: 1.75rem;
+  --fdSwitch_Text_Handle_Offset: -1.125rem;
+  --fdSwitch_Text_Handle_Active_Offset: -0.25rem;
+
+  // Text switch Compact mode
+  --fdSwitch_Compact_Text_Width: 2.75rem;
+  --fdSwitch_Compact_Text_Height: 1.25rem;
+  --fdSwitch_Compact_Text_Handle_Width: 1.75rem;
+  --fdSwitch_Compact_Text_Handle_Offset: -0.5625rem;
+  --fdSwitch_Compact_Text_Handle_Active_Offset: 0.1875rem;
 }

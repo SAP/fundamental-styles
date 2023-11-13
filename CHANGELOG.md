@@ -1,3 +1,41 @@
+# [0.32.0-rc.13](https://github.com/SAP/fundamental-styles/compare/v0.32.0-rc.12...v0.32.0-rc.13) (2023-11-09)
+
+
+### Bug Fixes
+
+* **styles:** update Title Bar to latest design [ci visual] ([#4969](https://github.com/SAP/fundamental-styles/issues/4969)) ([672d1b1](https://github.com/SAP/fundamental-styles/commit/672d1b1b97c08d0ba395d6edb8dfc272180931da))
+
+
+### BREAKING CHANGES
+
+* **styles:** uses Nested button instead of transparent, wrapped in a container with a new classname fd-title-bar__container
+
+
+
+# [0.32.0-rc.12](https://github.com/SAP/fundamental-styles/compare/v0.32.0-rc.11...v0.32.0-rc.12) (2023-11-08)
+
+
+### Bug Fixes
+
+* **styles:** update Switch to latest design [ci visual] ([#4967](https://github.com/SAP/fundamental-styles/issues/4967)) ([6fcc250](https://github.com/SAP/fundamental-styles/commit/6fcc250f95664cfb9b5b8856951532d824b260dc))
+
+
+### BREAKING CHANGES
+
+* **styles:** - Basic/Default Switch now has icons
+- Text Switch has the text inside
+
+
+
+# [0.32.0-rc.11](https://github.com/SAP/fundamental-styles/compare/v0.32.0-rc.10...v0.32.0-rc.11) (2023-11-07)
+
+
+### Bug Fixes
+
+* **styles:** design review finding fixes for generic tag and object status ([#4968](https://github.com/SAP/fundamental-styles/issues/4968)) ([9a4b58a](https://github.com/SAP/fundamental-styles/commit/9a4b58af01d24ed369155ebab80187613145522d))
+
+
+
 # [0.32.0-rc.10](https://github.com/SAP/fundamental-styles/compare/v0.32.0-rc.9...v0.32.0-rc.10) (2023-11-05)
 
 
