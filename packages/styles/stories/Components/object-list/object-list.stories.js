@@ -75,8 +75,8 @@ Below are examples of how to add semantic statuses to the components:
     tags: ['f3', 'a11y', 'theme', 'development']
   }
 };
-export const Standart = () => standartExampleHtml;
-Standart.parameters = {
+export const Standard = () => standartExampleHtml;
+Standard.parameters = {
   docs: {
     description: {
       story: 'The standard object list item displays a title, introductory text, an avatar and object display components. It is recommended to display avatar in size S, therefore add the `fd-avatar--s` modifier class to the `fd-avatar` element.'

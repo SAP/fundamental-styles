@@ -109,6 +109,9 @@ $block: #{$fd-namespace}-generic-tag;
     --fdGenericTag_Icon_Color: var(--sapList_Active_TextColor);
     --fdGenericTag_Value_Color: var(--sapList_Active_TextColor);
     --fdGenericTag_Value_Text_Shadow: none;
+
+    outline-offset: var(--fdGenericTag_Spacing_Outline_Offset);
+    outline: var(--sapContent_FocusColor) var(--sapContent_FocusStyle) var(--sapContent_FocusWidth);
   }
 
   @include fd-focus() {

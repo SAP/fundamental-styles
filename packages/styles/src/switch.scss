@@ -33,12 +33,12 @@ $block: #{$fd-namespace}-switch;
     ),
     "compact": (
       "ltr": (
-        "off": -$fd-switch-track-compact-offset,
-        "on": calc(var(--fdSwitch_Compact_Active_Handle_Offset) * -1)
+        "off": var(--fdSwitch_Compact_Handle_Offset),
+        "on": var(--fdSwitch_Compact_Active_Handle_Offset)
       ),
       "rtl": (
-        "off": $fd-switch-track-compact-offset,
-        "on": var(--fdSwitch_Compact_Semantic_Active_Handle_Offset_Rtl)
+        "off": calc(var(--fdSwitch_Compact_Handle_Offset) * -1),
+        "on": calc(var(--fdSwitch_Compact_Active_Handle_Offset) * -1)
       )
     ),
     "semantic": (
@@ -54,17 +54,38 @@ $block: #{$fd-namespace}-switch;
     "compactSemantic": (
       "ltr": (
         "off": var(--fdSwitch_Compact_Semantic_Handle_Offset),
-        "on": calc(var(--fdSwitch_Compact_Semantic_Active_Handle_Offset) * -1)
+        "on": calc(var(--fdSwitch_Compact_Semantic_Active_Handle_Offset))
       ),
       "rtl": (
         "off": calc(var(--fdSwitch_Compact_Semantic_Handle_Offset) * -1),
-        "on": var(--fdSwitch_Compact_Semantic_Active_Handle_Offset)
+        "on": calc(var(--fdSwitch_Compact_Semantic_Active_Handle_Offset) * -1)
+      )
+    ),
+    "text": (
+      "ltr": (
+        "off": var(--fdSwitch_Text_Handle_Offset),
+        "on": var(--fdSwitch_Text_Handle_Active_Offset)
+      ),
+      "rtl": (
+        "off": calc(var(--fdSwitch_Text_Handle_Offset) * -1),
+        "on": calc(var(--fdSwitch_Text_Handle_Active_Offset) * -1)
+      )
+    ),
+    "compactText": (
+      "ltr": (
+        "off": var(--fdSwitch_Compact_Text_Handle_Offset),
+        "on": var(--fdSwitch_Compact_Text_Handle_Active_Offset)
+      ),
+      "rtl": (
+        "off": calc(var(--fdSwitch_Compact_Text_Handle_Offset) * -1),
+        "on": calc(var(--fdSwitch_Compact_Text_Handle_Active_Offset) * -1)
       )
     )
   );
 
   @include fd-reset();
   @include fd-form-label();
+  @include fd-slider-track-position(map-get($fd-switch-handle-offset, "default", "ltr", "off"), map-get($fd-switch-handle-offset, "default", "ltr", "on"));
 
   overflow: initial;
   display: flex;
@@ -110,13 +131,26 @@ $block: #{$fd-namespace}-switch;
     transform: var(--fdSwitch_Track_Offset);
   }
 
-  @include fd-slider-track-position(map-get($fd-switch-handle-offset, "default", "ltr", "off"), map-get($fd-switch-handle-offset, "default", "ltr", "on"));
-
   &__text {
-    @include fd-form-label();
+    @include fd-flex-center();
 
-    align-self: auto;
-    cursor: inherit;
+    width: 1.75rem;
+    line-height: 1;
+    text-transform: uppercase;
+    font-size: var(--sapFontSmallSize);
+    position: var(--fdSwitch_Semantic_Icon_Position);
+    font-family: var(--sapFontSemiboldDuplexFamily);
+    transition: visibility 0s ease 0.03s, opacity 0s ease 0.03s;
+
+    &--off {
+      color: var(--fdSwitch_Text_Inactive_Color);
+    }
+
+    &--on {
+      color: var(--fdSwitch_Text_Active_Color);
+      visibility: hidden;
+      opacity: $fd-switch-off-opacity;
+    }
   }
 
   &__icon {
@@ -125,23 +159,24 @@ $block: #{$fd-namespace}-switch;
     @include fd-icon-selector() {
       @include fd-flex-center();
 
+      line-height: 1.375rem;
       width: $fd-switch-label-width;
       min-width: $fd-switch-label-width;
       font-size: var(--fdSwitch_Icon_Size);
-      line-height: 1.375rem;
+      display: var(--fdSwitch_Icon_Display);
       transition: visibility 0s ease 0.03s, opacity 0s ease 0.03s;
     }
 
     &--off {
       @include fd-icon-selector() {
-        color: var(--fdSwitch_Semantic_Handle_Error_Color);
+        color: var(--fdSwitch_Handle_Inactive_Color);
         margin: var(--fdSwitch_Icon_Error_Margin);
       }
     }
 
     &--on {
       @include fd-icon-selector() {
-        color: var(--fdSwitch_Semantic_Handle_Success_Color);
+        color: var(--fdSwitch_Handle_Active_Color);
         margin: var(--fdSwitch_Icon_Success_Margin);
         visibility: hidden;
         opacity: $fd-switch-off-opacity;
@@ -223,20 +258,18 @@ $block: #{$fd-namespace}-switch;
         }
       }
     }
-  }
 
-  @include fd-rtl() {
-    .#{$block}__icon {
-      &--on {
-        margin: var(--fdSwitch_Icon_Error_Margin);
+    .#{$block}__text {
+      &--off {
+        opacity: $fd-switch-off-opacity;
+        visibility: hidden;
       }
 
-      &--off {
-        margin: var(--fdSwitch_Icon_Success_Margin);
+      &--on {
+        opacity: 1;
+        visibility: visible;
       }
     }
-
-    @include fd-slider-track-position(map-get($fd-switch-handle-offset, "default", "rtl", "off"), map-get($fd-switch-handle-offset, "default", "rtl", "on"));
   }
 
   @include fd-hover() {
@@ -267,13 +300,28 @@ $block: #{$fd-namespace}-switch;
     }
 
     @include fd-slider-track-position(map-get($fd-switch-handle-offset, "compact", "ltr", "off"), map-get($fd-switch-handle-offset, "compact", "ltr", "on"));
+  }
 
-    @include fd-rtl() {
+  @include fd-rtl() {
+    .#{$block}__icon {
+      &--on {
+        margin: var(--fdSwitch_Icon_Error_Margin);
+      }
+
+      &--off {
+        margin: var(--fdSwitch_Icon_Success_Margin);
+      }
+    }
+
+    @include fd-slider-track-position(map-get($fd-switch-handle-offset, "default", "rtl", "off"), map-get($fd-switch-handle-offset, "default", "rtl", "on"));
+
+    @include fd-compact-or-condensed() {
       @include fd-slider-track-position(map-get($fd-switch-handle-offset, "compact", "rtl", "off"), map-get($fd-switch-handle-offset, "compact", "rtl", "on"));
     }
   }
 
   &--semantic {
+    --fdSwitch_Icon_Display: flex;
     --fdSwitch_Width: var(--fdSwitch_Semantic_Width);
     --fdSwitch_Height: var(--fdSwitch_Semantic_Height);
     --fdSwitch_Track_Background: var(--fdSwitch_Semantic_Error_Background_Color);
@@ -281,6 +329,8 @@ $block: #{$fd-namespace}-switch;
     --fdSwitch_Handle_Background: var(--fdSwitch_Semantic_Error_Handle_Background_Color);
     --fdSwitch_Handle_Border_Color: var(--fdSwitch_Semantic_Error_Handle_Border_Color);
     --fdSwitch_Border_Color: var(--sapErrorBorderColor);
+    --fdSwitch_Handle_Active_Color: var(--fdSwitch_Semantic_Handle_Success_Color);
+    --fdSwitch_Handle_Inactive_Color: var(--fdSwitch_Semantic_Handle_Error_Color);
 
     @include fd-slider-track-position(map-get($fd-switch-handle-offset, "semantic", "ltr", "off"), map-get($fd-switch-handle-offset, "semantic", "ltr", "on"));
 
@@ -324,6 +374,29 @@ $block: #{$fd-namespace}-switch;
 
       @include fd-compact-or-condensed() {
         @include fd-slider-track-position(map-get($fd-switch-handle-offset, "compactSemantic", "rtl", "off"), map-get($fd-switch-handle-offset, "compactSemantic", "rtl", "on"));
+      }
+    }
+  }
+
+  &--text {
+    @include fd-slider-track-position(map-get($fd-switch-handle-offset, "text", "ltr", "off"), map-get($fd-switch-handle-offset, "text", "ltr", "on"));
+
+    --fdSwitch_Width: var(--fdSwitch_Text_Width);
+    --fdSwitch_Handle_Width: var(--fdSwitch_Text_Handle_Width);
+
+    @include fd-compact-or-condensed() {
+      --fdSwitch_Width: var(--fdSwitch_Compact_Text_Width);
+      --fdSwitch_Handle_Width: var(--fdSwitch_Compact_Text_Handle_Width);
+      --fdSwitch_Height: var(--fdSwitch_Compact_Text_Height);
+
+      @include fd-slider-track-position(map-get($fd-switch-handle-offset, "compactText", "ltr", "off"), map-get($fd-switch-handle-offset, "compactText", "ltr", "on"));
+    }
+
+    @include fd-rtl() {
+      @include fd-slider-track-position(map-get($fd-switch-handle-offset, "text", "rtl", "off"), map-get($fd-switch-handle-offset, "text", "rtl", "on"));
+
+      @include fd-compact-or-condensed() {
+        @include fd-slider-track-position(map-get($fd-switch-handle-offset, "compactText", "rtl", "off"), map-get($fd-switch-handle-offset, "compactText", "rtl", "on"));
       }
     }
   }
