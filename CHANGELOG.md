@@ -1,3 +1,12 @@
+# [0.32.0-rc.15](https://github.com/SAP/fundamental-styles/compare/v0.32.0-rc.14...v0.32.0-rc.15) (2023-11-15)
+
+
+### Bug Fixes
+
+* **styles:** carousel updates ([#4935](https://github.com/SAP/fundamental-styles/issues/4935)) ([1562c16](https://github.com/SAP/fundamental-styles/commit/1562c16be573e1dd7a5680dde188c13e185d2c4c))
+
+
+
 # [0.32.0-rc.14](https://github.com/SAP/fundamental-styles/compare/v0.32.0-rc.13...v0.32.0-rc.14) (2023-11-15)
 
 
