@@ -472,7 +472,7 @@
 			"attachment",
 			"pdf"
 		],
-		"rtl": "flip"
+		"rtl": "none"
 	},
 	"0xe01b": {
 		"names": [
@@ -12093,6 +12093,36 @@
 			"machine",
 			"filled",
 			"full"
+		],
+		"rtl": "none"
+	},
+	"0xe2a5": {
+		"names": [
+			"ai"
+		],
+		"groups": [
+			"actions"
+		],
+		"tags": [
+			"artificial intelligence", 
+			"star", 
+			"information", 
+			"sparkle", 
+			"magic", 
+			"generate", 
+			"automate", 
+			"automation", 
+			"generic", 
+			"situation", 
+			"machine learning", 
+			"ai", 
+			"digital", 
+			"assistance", 
+			"virtual", 
+			"intelligence", 
+			"contextual understanding", 
+			"artificial", 
+			"machine"
 		],
 		"rtl": "none"
 	},

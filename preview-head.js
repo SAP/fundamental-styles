@@ -381,7 +381,7 @@ function isSpaceOrEnter(event, buttonFn) {
     }
 }
 
-function toggleNestedListSubmenu(event) {
+function toggleExpandedButton(event) {
     let button = event.target;
     let icon = button.children[0];
 
