@@ -237,10 +237,6 @@ $fd-carousel-button-content-offset: 0.5rem !default;
       }
     }
 
-    @include fd-hover() {
-      box-shadow: var(--sapContent_Shadow1);
-    }
-
     @include fd-focus() {
       &::after {
         --fdButton_Focus_Border_Radius: 50%;
