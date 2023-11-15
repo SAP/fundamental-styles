@@ -1,3 +1,12 @@
+# [0.32.0-rc.14](https://github.com/SAP/fundamental-styles/compare/v0.32.0-rc.13...v0.32.0-rc.14) (2023-11-15)
+
+
+### Bug Fixes
+
+* fixed font path to the sap-theming [ci visual] ([#4982](https://github.com/SAP/fundamental-styles/issues/4982)) ([856700a](https://github.com/SAP/fundamental-styles/commit/856700a1de7dd5181b53c75d5a810891cf13f52b))
+
+
+
 # [0.32.0-rc.13](https://github.com/SAP/fundamental-styles/compare/v0.32.0-rc.12...v0.32.0-rc.13) (2023-11-09)
 
 
