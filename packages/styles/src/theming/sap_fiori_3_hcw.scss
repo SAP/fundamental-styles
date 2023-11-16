@@ -227,4 +227,7 @@
   /** Tool Layout */
   --fdToolLayout_Background: var(--sapBackgroundColor);
   --sapToolLayoutContent_Shadow1: 0 0 0 0.0625rem #000, 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.16);
+
+  /** Splitter */
+  --sapSplitPane_Shadow1: 0 0 0 0.0625rem #000, 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.16);
 }
