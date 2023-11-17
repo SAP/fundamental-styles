@@ -3,53 +3,66 @@
 
 $block: #{$fd-namespace}-splitter;
 
-@mixin fd-splitter-gradient($deg) {
-  background: linear-gradient($deg, transparent, var(--fdSplitter_Resizer_Decoration_Background));
-}
-
-@mixin fd-splitter-resizer-decoration() {
-  .#{$block}__resizer-decoration-before,
-  .#{$block}__resizer-decoration-after {
-    @content;
-  }
-}
-
-@mixin fd-splitter-resizer-hover-focus-active() {
-  @include fd-hover() {
-    .#{$block}__resizer-decoration-before,
-    .#{$block}__resizer-decoration-after {
-      @content;
-    }
-  }
-
-  @include fd-focus() {
-    .#{$block}__resizer-decoration-before,
-    .#{$block}__resizer-decoration-after {
-      @content;
-    }
-  }
-
-  @include fd-active() {
-    .#{$block}__resizer-decoration-before,
-    .#{$block}__resizer-decoration-after {
-      @content;
-    }
-  }
-}
-
 .#{$block} {
+  --fdSplitter_Split_Pane_BoxShadow: none;
+  --fdSplitter_Split_Pane_Background: transparent;
+  --fdSplitter_Pane_Container_Flex_Direction: row;
+  --fdSplitter_Pagination_Dot_Value: "\e107";
+  --fdSplitter_Pagination_Container_Height: 2rem;
+  --fdSplitter_Resizer_Gap: 2rem;
+  --fdSplitter_Resizer_Width: auto;
+  --fdSplitter_Resizer_Height: auto;
+  --fdSplitter_Resizer_Cursor: auto;
+  --fdSplitter_Resizer_Grip_Cursor: auto;
+  --fdSplitter_Resizer_Flex_Direction: row;
+  --fdSplitter_Resizer_Background: transparent;
+  --fdSplitter_Resizer_Before_Width: 4rem;
+  --fdSplitter_Resizer_Before_Height: 0.0625rem;
+  --fdSplitter_Resizer_Before_Border_Radius: 0.125rem;
+  --fdSplitter_Resizer_Before_Background: linear-gradient(to left, var(--sapGroup_TitleBorderColor), transparent);
+  --fdSplitter_Resizer_After_Width: 4rem;
+  --fdSplitter_Resizer_After_Height: 0.0625rem;
+  --fdSplitter_Resizer_After_Border_Radius: 0.125rem;
+  --fdSplitter_Resizer_After_Background: linear-gradient(to right, var(--sapGroup_TitleBorderColor), transparent);
+
+  @mixin fd-splitter-resizer-decoration-before-active() {
+    @include fd-active() {
+      & ~ .#{$block}__resizer-decoration-before {
+        @content;
+      }
+    }
+  }
+
+  @mixin fd-splitter-resizer-decoration-after-active() {
+    @include fd-active() {
+      & ~ .#{$block}__resizer-decoration-after {
+        @content;
+      }
+    }
+  }
+
+  @mixin fd-splitter-resizer-decoration-before-focus() {
+    @include fd-focus() {
+      & ~ .#{$block}__resizer-decoration-before {
+        @content;
+      }
+    }
+  }
+
+  @mixin fd-splitter-resizer-decoration-after-focus() {
+    @include fd-focus() {
+      & ~ .#{$block}__resizer-decoration-after {
+        @content;
+      }
+    }
+  }
+
   @include fd-flex();
 
   width: 100%;
   height: 100%;
 
   &,
-  &__pane-container,
-  &__pane,
-  &__resizer,
-  &__resizer-grip-icon,
-  &__resizer-decoration-before,
-  &__resizer-decoration-after,
   &__pagination,
   &__pagination-item-dot {
     @include fd-reset();
@@ -60,95 +73,112 @@ $block: #{$fd-namespace}-splitter;
   &__resizer-grip-icon,
   &__resizer-decoration-before,
   &__resizer-decoration-after {
+    @include fd-reset();
+
     user-select: none;
   }
 
   &__pane-container,
   &__pane {
+    @include fd-reset();
+
     max-width: 100%;
     max-height: 100%;
   }
 
-  .#{$block}__pane-container {
-    @include fd-flex();
-
-    flex-grow: 1;
-    overflow: hidden;
+  &__pane-container {
+    @include fd-flex() {
+      flex: 1;
+      flex-direction: var(--fdSplitter_Pane_Container_Flex_Direction);
+    }
 
     &--horizontal {
-      flex-direction: column;
+      --fdSplitter_Resizer_Width: auto;
+      --fdSplitter_Resizer_Height: 1rem;
+      --fdSplitter_Resizer_Flex_Direction: row;
+      --fdSplitter_Pane_Container_Flex_Direction: column;
+      --fdSplitter_Resizer_Before_Width: 4rem;
+      --fdSplitter_Resizer_Before_Height: 0.0625rem;
+      --fdSplitter_Resizer_Before_Background: linear-gradient(to left, var(--sapGroup_TitleBorderColor), transparent);
+      --fdSplitter_Resizer_After_Width: 4rem;
+      --fdSplitter_Resizer_After_Height: 0.0625rem;
+      --fdSplitter_Resizer_After_Background: linear-gradient(to right, var(--sapGroup_TitleBorderColor), transparent);
 
-      > .#{$block}__resizer {
-        height: 1rem;
-        cursor: row-resize;
-        border-left: none;
-        border-right: none;
-
-        @include fd-splitter-resizer-hover-focus-active() {
-          width: 100%;
-        }
-
-        @include fd-splitter-resizer-decoration() {
-          min-width: 4rem;
-          height: 0.0625rem;
-        }
-
-        .#{$block}__resizer-decoration-before {
-          @include fd-splitter-gradient(90deg);
-        }
-
-        .#{$block}__resizer-decoration-after {
-          @include fd-splitter-gradient(270deg);
-        }
-
+      & > .#{$block}__resizer {
         .#{$block}__resizer-grip {
-          min-width: 2rem;
-          max-width: 2rem;
-          max-height: 1.5rem;
-          cursor: row-resize;
+          --fdSplitter_Resizer_Grip_Cursor: row-resize;
 
-          &-icon {
-            margin-top: 0.0625rem;
+          @include fd-splitter-resizer-decoration-before-focus() {
+            --fdSplitter_Resizer_Before_Background: linear-gradient(to left, var(--sapContent_FocusColor), transparent);
+          }
+
+          @include fd-splitter-resizer-decoration-after-focus() {
+            --fdSplitter_Resizer_After_Background: linear-gradient(to right, var(--sapContent_FocusColor), transparent);
+          }
+
+          @include fd-splitter-resizer-decoration-before-active() {
+            --fdSplitter_Resizer_Before_Width: 100%;
+            --fdSplitter_Resizer_Before_Background: var(--sapGroup_TitleBorderColor);
+          }
+
+          @include fd-splitter-resizer-decoration-after-active() {
+            --fdSplitter_Resizer_After_Width: 100%;
+            --fdSplitter_Resizer_After_Background: var(--sapGroup_TitleBorderColor);
           }
         }
       }
     }
 
     &--vertical {
-      flex-direction: row;
+      --fdSplitter_Resizer_Width: 1rem;
+      --fdSplitter_Resizer_Cursor: col-resize;
+      --fdSplitter_Resizer_Flex_Direction: column;
+      --fdSplitter_Resizer_Before_Height: 4rem;
+      --fdSplitter_Resizer_Before_Width: 0.0625rem;
+      --fdSplitter_Resizer_Before_Background: linear-gradient(to top, var(--sapGroup_TitleBorderColor), transparent);
+      --fdSplitter_Resizer_After_Height: 4rem;
+      --fdSplitter_Resizer_After_Width: 0.0625rem;
+      --fdSplitter_Resizer_After_Background: linear-gradient(to bottom, var(--sapGroup_TitleBorderColor), transparent);
 
-      > .#{$block}__resizer {
-        width: 1rem;
-        cursor: col-resize;
-        flex-direction: column;
-        border-top: none;
-        border-bottom: none;
-
-        @include fd-splitter-resizer-hover-focus-active() {
-          height: 100%;
-        }
-
-        @include fd-splitter-resizer-decoration() {
-          width: 0.0625rem;
-          min-height: 4rem;
-        }
-
-        .#{$block}__resizer-decoration-before {
-          @include fd-splitter-gradient(180deg);
-        }
-
-        .#{$block}__resizer-decoration-after {
-          @include fd-splitter-gradient(0deg);
-        }
-
+      & > .#{$block}__resizer {
         .#{$block}__resizer-grip {
-          min-width: 1.5rem;
-          max-width: 1.5rem;
-          max-height: 2rem;
-          cursor: col-resize;
+          --fdSplitter_Resizer_Grip_Cursor: col-resize;
 
-          &-icon {
-            @include fd-set-margin-left(0.0625rem);
+          @include fd-splitter-resizer-decoration-before-focus() {
+            --fdSplitter_Resizer_Before_Background: linear-gradient(to top, var(--sapContent_FocusColor), transparent);
+          }
+
+          @include fd-splitter-resizer-decoration-after-focus() {
+            --fdSplitter_Resizer_After_Background: linear-gradient(to bottom, var(--sapContent_FocusColor), transparent);
+          }
+
+          @include fd-splitter-resizer-decoration-before-active() {
+            --fdSplitter_Resizer_Before_Height: 100%;
+            --fdSplitter_Resizer_Before_Background: var(--sapGroup_TitleBorderColor);
+          }
+
+          @include fd-splitter-resizer-decoration-after-active() {
+            --fdSplitter_Resizer_After_Height: 100%;
+            --fdSplitter_Resizer_After_Background: var(--sapGroup_TitleBorderColor);
+          }
+        }
+
+        @include fd-active() {
+          --fdSplitter_Resizer_Before_Height: 100%;
+          --fdSplitter_Resizer_Before_Width: 0.0625rem;
+          --fdSplitter_Resizer_After_Height: 100%;
+          --fdSplitter_Resizer_After_Width: 0.0625rem;
+        }
+
+        @include fd-focus() {
+          --fdSplitter_Resizer_Before_Background: linear-gradient(to top, var(--sapContent_FocusColor), transparent);
+          --fdSplitter_Resizer_After_Background: linear-gradient(to bottom, var(--sapContent_FocusColor), transparent);
+
+          @include fd-active() {
+            --fdSplitter_Resizer_Before_Height: 100%;
+            --fdSplitter_Resizer_Before_Width: 0.0625rem;
+            --fdSplitter_Resizer_After_Height: 100%;
+            --fdSplitter_Resizer_After_Width: 0.0625rem;
           }
         }
       }
@@ -156,95 +186,119 @@ $block: #{$fd-namespace}-splitter;
   }
 
   &__split-pane {
-    @include fd-flex(column);
+    @include fd-flex(column) {
+      flex-grow: 1;
+    }
 
-    flex-grow: 1;
     overflow: auto;
+    border-radius: 0.5rem;
     text-overflow: ellipsis;
+    box-shadow: var(--fdSplitter_Split_Pane_BoxShadow);
+    background: var(--fdSplitter_Split_Pane_Background);
+
+    &--translucent {
+      --fdSplitter_Split_Pane_Background: var(--sapBackgroundColor);
+      --fdSplitter_Split_Pane_BoxShadow: var(--sapSplitPane_Shadow1);
+    }
+
+    &--solid {
+      --fdSplitter_Split_Pane_BoxShadow: var(--sapSplitPane_Shadow1);
+      --fdSplitter_Split_Pane_Background: var(--sapGroup_ContentBackground);
+    }
   }
 
-  .#{$block}__resizer {
-    @include fd-flex-center();
-    @include fd-fiori-focus(-0.125rem);
+  &__resizer {
+    @include fd-flex-center() {
+      gap: var(--fdSplitter_Resizer_Gap);
+    }
 
-    background: var(--sapContent_ForegroundColor);
+    overflow: hidden;
+    border-radius: 0.5rem;
+    width: var(--fdSplitter_Resizer_Width);
+    height: var(--fdSplitter_Resizer_Height);
+    cursor: var(--fdSplitter_Resizer_Cursor);
     border: var(--fdSplitter_Resizer_Border);
+    background: var(--fdSplitter_Resizer_Background);
+    flex-direction: var(--fdSplitter_Resizer_Flex_Direction);
 
-    @include fd-splitter-resizer-decoration() {
-      transition: all 0.1s ease-in;
+    &--translucent {
+      --fdSplitter_Resizer_Background: var(--sapGroup_ContentBackground);
+    }
+
+    &--solid {
+      --fdSplitter_Resizer_Background: var(--sapContent_ForegroundColor);
     }
 
     @include fd-active() {
-      .#{$block}__resizer-decoration-before,
-      .#{$block}__resizer-decoration-after {
-        background: var(--sapContent_Selected_ForegroundColor);
-      }
+      --fdSplitter_Resizer_Before_Width: 100%;
+      --fdSplitter_Resizer_Before_Background: var(--sapGroup_TitleBorderColor);
+      --fdSplitter_Resizer_After_Width: 100%;
+      --fdSplitter_Resizer_After_Background: var(--sapGroup_TitleBorderColor);
     }
 
-    &--translucent {
-      background: var(--sapGroup_ContentBackground);
-    }
-
-    &--transparent {
-      background: transparent;
-    }
-
-    .#{$block}__resizer-grip {
-      outline: none;
-      box-shadow: none;
-      border-width: var(--fdSplitter_Resizer_Grip_Border_Width);
-      flex-shrink: 0;
-
-      @include fd-hover() {
-        background: var(--sapButton_Lite_Background);
-      }
+    @include fd-focus() {
+      --fdSplitter_Resizer_Before_Background: linear-gradient(to left, var(--sapContent_FocusColor), transparent);
+      --fdSplitter_Resizer_After_Background: linear-gradient(to right, var(--sapContent_FocusColor), transparent);
 
       @include fd-active() {
-        background: var(--sapButton_Lite_Background);
-        color: var(--sapButton_Lite_TextColor);
+        --fdSplitter_Resizer_Before_Width: 100%;
+        --fdSplitter_Resizer_Before_Background: var(--sapGroup_TitleBorderColor);
+        --fdSplitter_Resizer_After_Width: 100%;
+        --fdSplitter_Resizer_After_Background: var(--sapGroup_TitleBorderColor);
       }
     }
   }
 
+  &__resizer-decoration-before {
+    order: 1;
+    transition: all 0.1s ease-in;
+    height: var(--fdSplitter_Resizer_Before_Height);
+    min-width: var(--fdSplitter_Resizer_Before_Width);
+    background: var(--fdSplitter_Resizer_Before_Background);
+    border-radius: var(--fdSplitter_Resizer_Before_Border_Radius);
+  }
+
+  &__resizer-decoration-after {
+    order: 3;
+    transition: all 0.1s ease-in;
+    height: var(--fdSplitter_Resizer_After_Height);
+    min-width: var(--fdSplitter_Resizer_After_Width);
+    background: var(--fdSplitter_Resizer_After_Background);
+    border-radius: var(--fdSplitter_Resizer_After_Border_Radius);
+  }
+
+  .#{$block}__resizer-grip {
+    order: 2;
+    position: absolute;
+    cursor: var(--fdSplitter_Resizer_Grip_Cursor);
+  }
+
   &__pagination {
-    @include fd-ellipsis();
     @include fd-flex-center();
 
     width: 100%;
-    height: 2.75rem;
-    background: var(--sapPageFooter_Background);
-    border-top: 0.0625rem solid var(--sapPageFooter_BorderColor);
-    flex-shrink: 0;
+    height: var(--fdSplitter_Pagination_Container_Height);
+  }
 
-    .#{$block}__pagination-item {
-      border-width: var(--fdSplitter_Pagination_Item_Border_Width);
+  &__pagination-item {
+    &-dot {
+      &::before {
+        @include fd-flex-vertical-center();
 
-      @include fd-active() {
-        &:not(.#{$block}__pagination-item--active) {
-          .#{$block}__pagination-item-dot {
-            background: var(--sapButton_Active_TextColor);
-          }
-        }
-      }
-
-      &-dot {
-        width: 0.25rem;
-        height: 0.25rem;
-        border-radius: 100%;
-        background: var(--sapContent_NonInteractiveIconColor);
-      }
-
-      &--active {
-        .#{$block}__pagination-item-dot {
-          width: 0.5rem;
-          height: 0.5rem;
-          background: var(--sapSelectedColor);
-        }
-
-        @include fd-active() {
-          background: var(--sapButton_Lite_Hover_Background);
-        }
+        font-size: 0.75rem;
+        line-height: 0.75rem;
+        font-family: "SAP-icons-TNT";
+        content: var(--fdSplitter_Pagination_Dot_Value);
       }
     }
+
+    &--active {
+      --fdSplitter_Pagination_Dot_Value: '\e108';
+    }
+  }
+
+  @include fd-compact-or-condensed() {
+    --fdSplitter_Resizer_Gap: 1.625rem;
+    --fdSplitter_Pagination_Container_Height: 1.625rem;
   }
 }
