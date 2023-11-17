@@ -1,3 +1,20 @@
+# [0.33.0-rc.0](https://github.com/SAP/fundamental-styles/compare/v0.32.0...v0.33.0-rc.0) (2023-11-17)
+
+
+### Bug Fixes
+
+* **styles:** update responsive splitter to latest design [ci visual] ([#4985](https://github.com/SAP/fundamental-styles/issues/4985)) ([3196259](https://github.com/SAP/fundamental-styles/commit/31962591528eecbb7a6cfa42065059143e7ccadc))
+
+
+### BREAKING CHANGES
+
+* **styles:** - new classes: fd-splitter__split-pane--translucent, fd-splitter__split-pane--solid and fd-splitter__resizer--solid
+- deleted class: fd-splitter__resizer--transparent
+- change in the order of the elements inside fd-splitter__resizer
+- The Pagination Bar is part of the Split Pane
+
+
+
 # [0.32.0](https://github.com/SAP/fundamental-styles/compare/v0.32.0-rc.17...v0.32.0) (2023-11-15)
 
 
