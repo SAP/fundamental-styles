@@ -134,7 +134,7 @@
     "react-scripts": "^5.0.1",
     "regenerator-runtime": "^0.13.7",
     "remark-gfm": "^3.0.1",
-    "sass": "1.52.1",
+    "sass": "1.69.5",
     "semver": "^7.3.7",
     "standard-version": "9.3.2",
     "start-server-and-test": "^1.14.0",
