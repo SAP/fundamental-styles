@@ -1,5 +1,6 @@
 import navigationHorizontalExampleHtml from "./navigation-horizontal.example.html?raw";
 import navigationHorizontalTabletExampleHtml from "./navigation-horizontal-tablet.example.html?raw";
+import navigationHorizontalWithExpanderExampleHtml from "./navigation-horizontal-expander.example.html?raw";
 
 import '../../../../src/navigation.scss';
 import '../../../../src/icon.scss';
@@ -10,13 +11,13 @@ import '../../../../src/button.scss';
 export default {
   title: 'BTP/Navigation/Horizontal Navigation',
   parameters: {
-    description: `The navigation is one of the signature design elements of BTP Tools. 
+    description: `The navigation is one of the signature design elements of BTP Tools.
 ## Navigation Types:
 - <b>Vertical Navigation - Expanded</b>. The default navigation visualization provides a logical grouping of navigation items and two levels of hierarchy.
 - <b>Vertical Navigation - Snapped</b>. The snapped vertical navigation variant reduces the navigation width to free horizontal space.
 - <b>Vertical Navigation - Popup</b>. An alternative to the expanded/snapped variant, which places the navigation items in a popup.
 - <b>Horizontal Navigation</b>&nbsp;- The horizontal variant allows for infinite levels of navigation hierarchy through cascading menus.
-    
+
 
 ## Usage
 ### Recommended
@@ -49,7 +50,7 @@ NavigationHorizontal.storyName = 'Horizontal Navigation';
 NavigationHorizontal.parameters = {
   docs: {
     description: {
-      story: `Horizontal Navigation is an optional alternative to the Vertical Navigation variant. 
+      story: `Horizontal Navigation is an optional alternative to the Vertical Navigation variant.
 `
     }
   }
@@ -57,6 +58,17 @@ NavigationHorizontal.parameters = {
 
 export const NavigationHorizontalTablet = () => navigationHorizontalTabletExampleHtml;
 NavigationHorizontalTablet.storyName = 'Horizontal Navigation - Tablet';
+NavigationHorizontalTablet.parameters = {
+  docs: {
+    description: {
+      story: `
+`
+    }
+  }
+};
+
+export const NavigationHorizontalWithExpander = () => navigationHorizontalWithExpanderExampleHtml;
+NavigationHorizontalTablet.storyName = 'Horizontal Navigation - Two-Click Area';
 NavigationHorizontalTablet.parameters = {
   docs: {
     description: {

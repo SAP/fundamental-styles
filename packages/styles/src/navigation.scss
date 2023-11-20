@@ -101,9 +101,29 @@ $navListContainerSubmenu: #{$block}__list-container--submenu;
     }
   }
 
+  @mixin _fd-vertical-nav() {
+    &--vertical {
+      @content;
+    }
+  }
+
+  @mixin _fd-horizontal-nav() {
+    &--horizontal {
+      @content;
+    }
+  }
+
+  @mixin _fd-vertical-nav-with-expander() {
+    &.#{$block}--vertical {
+      .#{$navItemWithExpander} {
+        @content;
+      }
+    }
+  }
+
   @include fd-reset();
 
-  &--vertical {
+  @include _fd-vertical-nav() {
     @include fd-flex(column) {
       justify-content: space-between;
     }
@@ -135,7 +155,7 @@ $navListContainerSubmenu: #{$block}__list-container--submenu;
     }
   }
 
-  &--horizontal {
+  @include _fd-horizontal-nav() {
     width: 100%;
     padding: 0.75rem 1.5rem;
     background: var(--sapNavigation_Background);
@@ -274,27 +294,29 @@ $navListContainerSubmenu: #{$block}__list-container--submenu;
     }
 
     .#{$navItem} {
-      @include fd-expanded() {
-        .#{$navLink} {
-          --fdNavigation_Link_Child_Indicator_Opacity: 1;
-          --fdNavigation_Link_Background: var(--sapMenu_Active_Background);
-          --fdNavigation_Link_Border_Color: var(--fdNavigation_Link_Border_Color_Active);
-          --fdNavigation_Link_Border_Bottom_Color: var(--fdNavigation_Link_Border_Color_Active);
-
-          @include fd-focus() {
+      &:not(.#{$block}__item--with-expander) {
+        @include fd-expanded() {
+          .#{$navLink} {
             --fdNavigation_Link_Child_Indicator_Opacity: 1;
             --fdNavigation_Link_Background: var(--sapMenu_Active_Background);
             --fdNavigation_Link_Border_Color: var(--fdNavigation_Link_Border_Color_Active);
             --fdNavigation_Link_Border_Bottom_Color: var(--fdNavigation_Link_Border_Color_Active);
-          }
-        }
 
-        @include fd-selected() {
-          .#{$navLink} {
-            --fdNavigation_Link_Selection_Indicator_Display: inline-block;
-            --fdNavigation_Link_Background: var(--sapNavigation_Selected_Background);
-            --fdNavigation_Link_Border_Color: var(--fdNavigation_Link_Border_Color_Selected);
-            --fdNavigation_Link_Border_Bottom_Color: var(--fdNavigation_Link_Border_Color_Selected);
+            @include fd-focus() {
+              --fdNavigation_Link_Child_Indicator_Opacity: 1;
+              --fdNavigation_Link_Background: var(--sapMenu_Active_Background);
+              --fdNavigation_Link_Border_Color: var(--fdNavigation_Link_Border_Color_Active);
+              --fdNavigation_Link_Border_Bottom_Color: var(--fdNavigation_Link_Border_Color_Active);
+            }
+          }
+
+          @include fd-selected() {
+            .#{$navLink} {
+              --fdNavigation_Link_Selection_Indicator_Display: inline-block;
+              --fdNavigation_Link_Background: var(--sapNavigation_Selected_Background);
+              --fdNavigation_Link_Border_Color: var(--fdNavigation_Link_Border_Color_Selected);
+              --fdNavigation_Link_Border_Bottom_Color: var(--fdNavigation_Link_Border_Color_Selected);
+            }
           }
         }
       }
@@ -378,7 +400,7 @@ $navListContainerSubmenu: #{$block}__list-container--submenu;
       }
     }
 
-    .#{$navItemWithExpander} {
+    @include _fd-vertical-nav-with-expander() {
       .#{$navLink} {
         --fdNavigation_Link_Padding_Right: 0.5rem;
       }
@@ -602,7 +624,7 @@ $navListContainerSubmenu: #{$block}__list-container--submenu;
       --fdNavigation_Link_Icon_Size: 1.125rem;
     }
 
-    .#{$navItemWithExpander} {
+    @include _fd-vertical-nav-with-expander() {
       .#{$navLink} {
         --fdNavigation_Link_Padding_Right: 2.375rem;
       }
@@ -621,7 +643,7 @@ $navListContainerSubmenu: #{$block}__list-container--submenu;
     }
 
     &.#{$navSnapped} {
-      .#{$navItemWithExpander} {
+      @include _fd-vertical-nav-with-expander() {
         .#{$navLink} {
           --fdNavigation_Link_Padding_Right: 0.6875rem;
         }
@@ -858,21 +880,6 @@ $navListContainerSubmenu: #{$block}__list-container--submenu;
     position: relative;
     border-radius: var(--fdNavigation_Link_Border_Radius);
 
-    &--with-expander {
-      position: relative;
-
-      .#{$navLink} {
-        --fdNavigation_Link_Padding_Right: 2.1975rem;
-      }
-
-      .#{$navExpander} {
-        @include fd-set-position-right(var(--fdNavigation_Expander_Position_Right));
-
-        position: absolute;
-        z-index: 20;
-      }
-    }
-
     &--child {
       .#{$navLink} {
         --fdNavigation_Link_Spacing: 0.5rem;
@@ -1021,6 +1028,58 @@ $navListContainerSubmenu: #{$block}__list-container--submenu;
 
     @include fd-rtl() {
       --fdNavigation_Link_Back_Indicator_Icon: "\e1ed";
+    }
+  }
+
+  @include _fd-vertical-nav() {
+    .#{$block} {
+      &__item {
+        &--with-expander {
+          position: relative;
+
+          .#{$navLink} {
+            --fdNavigation_Link_Padding_Right: 2.1975rem;
+          }
+
+          .#{$navExpander} {
+            @include fd-set-position-right(var(--fdNavigation_Expander_Position_Right));
+
+            position: absolute;
+            z-index: 20;
+          }
+        }
+      }
+    }
+  }
+
+  @include _fd-horizontal-nav() {
+    .#{$block} {
+      &__item {
+        &--with-expander {
+          .fd-navigation__expander {
+            margin: 0 0.0625rem;
+            transition: var(--fdNavigation_Link_Transition);
+
+            --fdButton_Nested_Border_Radius: var(--fdNavigation_Link_Border_Radius);
+
+            @include fd-selected() {
+              background-color: var(--fdNavigation_Item_Selected_Background);
+            }
+
+            &:active {
+              &:focus {
+                --fdButton_Nested_Border_Radius: var(--fdNavigation_Link_Border_Radius);
+              }
+            }
+          }
+
+          @include fd-expanded() {
+            .fd-navigation__expander {
+              background: var(--fdNavigation_Item_Selected_Background);
+            }
+          }
+        }
+      }
     }
   }
 }
