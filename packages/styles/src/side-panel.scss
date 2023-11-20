@@ -1,0 +1,58 @@
+@import './new-settings';
+@import "mixins/mixins";
+
+$block: #{$fd-namespace}-side-panel;
+
+.#{$block} {
+  --fdSide_Panel_Background: var(--sapTile_Background);
+  --fdSide_Panel_BoxShadow: var(--sapNotifications_Shadow2);
+
+  @include fd-reset();
+
+  width: 100%;
+  height: 100%;
+  background: var(--fdSide_Panel_Background);
+  border-radius: var(--sapElement_BorderCornerRadius);
+  border: 0.0625rem solid var(--fdSidePanel_Border_Color);
+  box-shadow: var(--fdSide_Panel_BoxShadow);
+
+  @include fd-hover() {
+    --fdSide_Panel_Background: var(--sapTile_Hover_Background);
+  }
+
+  @include fd-focus() {
+    --fdSide_Panel_BoxShadow: none;
+    --fdSide_Panel_Background: var(--sapTile_Background);
+
+    outline: var(--sapContent_FocusStyle) var(--sapContent_FocusWidth) var(--sapContent_FocusColor);
+  }
+
+  &__header {
+    @include fd-reset();
+
+    @include fd-flex-vertical-center() {
+      gap: 0.75rem;
+      justify-content: space-between;
+    }
+
+    padding: 0.5rem;
+  }
+
+  &__actions {
+    @include fd-reset();
+
+    @include fd-flex-vertical-center() {
+      gap: 0.5rem;
+    }
+  }
+
+  &__content {
+    @include fd-reset();
+
+    padding: 0;
+  }
+
+  &__footer {
+    @include fd-reset();
+  }
+}
