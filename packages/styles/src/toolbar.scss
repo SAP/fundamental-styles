@@ -191,5 +191,9 @@ $block: #{$fd-namespace}-toolbar;
     &.#{$block}--title {
       --fdToolbar_Height: 2.75rem;
     }
+
+    &.#{$block}--title-bar {
+      --fdToolbar_Height: auto;
+    }
   }
 }
