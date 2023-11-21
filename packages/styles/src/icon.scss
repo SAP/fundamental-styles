@@ -11,8 +11,10 @@ $blockTNT: sap-icon-TNT;
   @include fd-icon-base();
   @include fd-icon-control-enumeration($block);
 
+  line-height: 1;
+  font-size: 1rem;
   font-style: normal;
-  display: inline-block;
+  display: inline-flex;
 
   @include fd-fiori-focus(0);
 }
