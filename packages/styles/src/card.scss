@@ -49,6 +49,10 @@ $fd-card-header-outline-offset: 0.0625rem !default;
 }
 
 .#{$block} {
+  --fdCard_Featured_Title_Color: var(--sapTile_TitleTextColor);
+  --fdCard_Featured_Text_Color: var(--sapTextColor);
+  --fdCard_Featured_Spacing: 0.75rem;
+
   @include fd-reset();
   @include fd-flex(column);
 
@@ -459,5 +463,80 @@ $fd-card-header-outline-offset: 0.0625rem !default;
     @include fd-flex-center();
 
     min-height: 5rem;
+  }
+
+  // BTP Design specific card
+  &--featured {
+    .#{$block} {
+      @include fd-flex();
+
+      &__image-area {
+        @include fd-reset();
+
+        width: 100%;
+        height: 100%;
+      }
+
+      &__content-area {
+        @include fd-reset();
+
+        @include fd-flex(column) {
+          gap: 0.75rem;
+        }
+
+        width: 100%;
+        height: 100%;
+        padding: 2rem 1.25rem;
+      }
+
+      &__badge-container {
+        @include fd-reset();
+
+        width: 100%;
+        height: auto;
+      }
+
+      &__title-container {
+        @include fd-reset();
+
+        width: 100%;
+        height: auto;
+
+        h1, h2, h3, h4, h5, h6, .#{$fd-namespace}__title {
+          color: var(--fdCard_Featured_Title_Color);
+        }
+
+        &--contrast {
+          --fdCard_Featured_Title_Color: --sapContent_ContrastTextColor;
+        }
+      }
+
+      &__text-container {
+        @include fd-reset();
+
+        width: 100%;
+        height: auto;
+
+        span, div, p, .#{$fd-namespace}__text {
+          color: var(--fdCard_Featured_Text_Color);
+        }
+
+        &--contrast {
+          --fdCard_Featured_Text_Color: --sapContent_ContrastTextColor;
+        }
+      }
+
+      &__actions-container {
+        @include fd-reset();
+
+        @include fd-flex-vertical-center() {
+          gap: 1rem;
+        }
+
+        width: 100%;
+        height: auto;
+        margin-top: 0.75rem;
+      }
+    }
   }
 }
