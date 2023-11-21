@@ -1,3 +1,12 @@
+# [0.33.0-rc.1](https://github.com/SAP/fundamental-styles/compare/v0.33.0-rc.0...v0.33.0-rc.1) (2023-11-21)
+
+
+### Bug Fixes
+
+* **styles:** add fix for correct height for Title Bar ToolBar in compact state [ci visual] ([#5003](https://github.com/SAP/fundamental-styles/issues/5003)) ([da8e76f](https://github.com/SAP/fundamental-styles/commit/da8e76fe052770176d189ec86812da46f0bf2aa9))
+
+
+
 # [0.33.0-rc.0](https://github.com/SAP/fundamental-styles/compare/v0.32.0...v0.33.0-rc.0) (2023-11-17)
 
 
