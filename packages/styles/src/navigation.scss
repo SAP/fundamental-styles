@@ -5,6 +5,7 @@ $block: #{$fd-namespace}-navigation;
 $navSnapped: #{$block}--snapped;
 $navPopup: #{$block}--popup;
 $navHorizontal: #{$block}--horizontal;
+$navVertical: #{$block}--vertical;
 
 $navLink: #{$block}__link;
 $navText: #{$block}__text;
@@ -103,20 +104,8 @@ $navListContainerSubmenu: #{$block}__list-container--submenu;
     }
   }
 
-  @mixin _fd-vertical-nav() {
-    &--vertical {
-      @content;
-    }
-  }
-
-  @mixin _fd-horizontal-nav() {
-    &--horizontal {
-      @content;
-    }
-  }
-
   @mixin _fd-vertical-nav-with-expander() {
-    &.#{$block}--vertical {
+    &.#{$navVertical} {
       .#{$navItemWithExpander} {
         @content;
       }
@@ -124,212 +113,6 @@ $navListContainerSubmenu: #{$block}__list-container--submenu;
   }
 
   @include fd-reset();
-
-  @include _fd-vertical-nav() {
-    @include fd-flex(column) {
-      justify-content: space-between;
-    }
-
-    min-width: 16rem;
-    height: var(--fdNavigation_Height);
-    box-shadow: var(--fdNavigation_Box_Shadow);
-    background: var(--sapNavigation_Background);
-    padding-top: var(--fdNavigation_Padding_Top);
-    border-radius: var(--fdNavigation_Border_Radius);
-    padding-bottom: var(--fdNavigation_Padding_Bottom);
-
-    &.#{$navPopup} {
-      --fdNavigation_Height: auto;
-      --fdNavigation_Padding_Top: 0.25rem;
-      --fdNavigation_Border_Radius: 0.5rem;
-      --fdNavigation_Box_Shadow: var(--sapNavigation_Shadow2);
-
-      .#{$navContainerTop},
-      .#{$navContainerBottom} {
-        --fdNavigation_Padding_X: 0.5rem;
-      }
-    }
-
-    &.#{$navSnapped} {
-      @include fd-set-width(3.5rem);
-
-      --fdNavigation_Border_Radius: 0.5rem 0.5rem 0 0;
-    }
-  }
-
-  @include _fd-horizontal-nav() {
-    width: 100%;
-    padding: 0.75rem 1.5rem;
-    background: var(--sapNavigation_Background);
-    height: var(--fdNavigation_Horizontal_Height);
-
-    .#{$navLink} {
-      --fdNavigation_Link_Spacing: 0.5rem;
-    }
-
-    .#{$navItem}:not(.#{$navItemChild}):not(.#{$navItemOverflow}) {
-      @include fd-selected() {
-        @include fd-navigation-link-apply-selected-state();
-
-        @include fd-expanded() {
-          .#{$navLink} {
-            --fdNavigation_Link_Selection_Indicator_Display: none;
-            --fdNavigation_Link_Background: var(--fdNavigation_Item_Selected_Background);
-          }
-        }
-      }
-
-      @include fd-expanded() {
-        .#{$navLink} {
-          &::before {
-            --fdNavigation_Link_Border_Bottom_Color: var(--fdNavigation_Link_Border_Color);
-          }
-        }
-      }
-
-      .#{$navLink} {
-        &::before {
-          --fdNavigation_Link_Border_Bottom_Color: transparent;
-        }
-
-        @include fd-hover() {
-          &::before {
-            --fdNavigation_Link_Border_Bottom_Color: var(--fdNavigation_Link_Border_Color);
-          }
-        }
-      }
-    }
-
-    .#{$navList}:not(.#{$navListParentItems}):not(.#{$navListChildItems}) {
-      --fdNavigation_Item_Spacing: 0.75rem;
-
-      flex-direction: row;
-
-      .#{$navChildrenIndicator} {
-        --fdNavigation_Link_Has_Child_Indicator_Icon: '\e287';
-      }
-    }
-
-    .#{$navListChildItems} {
-      --fdNavigation_Item_Spacing: 0;
-    }
-
-    .#{$navListItemSpacer} {
-      width: 100%;
-      height: 0.75rem;
-    }
-
-    .#{$navListItemHome} {
-      padding-top: 0;
-      position: relative;
-      background: transparent;
-
-      &::before {
-        content: none;
-      }
-    }
-
-    .#{$navListContainer} {
-      --fdPopover_Offset: calc(100% + 0.3875rem);
-
-      border: none;
-      padding: 0.05rem;
-      border-radius: 0.75rem;
-      box-shadow: var(--sapMenu_Shadow2);
-      background: var(--sapGroup_ContentBackground);
-
-      &.#{$navListContainerMenu} {
-        @include fd-set-position-right(-0.5rem);
-
-        padding: 0.5rem;
-        position: absolute;
-        top: calc(100% + 0.3875rem);
-        box-shadow: var(--sapMenu_Shadow1);
-
-        .#{$navListWrapper} {
-          padding: 0;
-        }
-
-        .#{$navList} {
-          --fdNavigation_Item_Spacing: 0;
-
-          box-shadow: none;
-        }
-
-        .#{$navItem} {
-          @include fd-expanded() {
-            .#{$navChildrenIndicator} {
-              --fdNavigation_Link_Has_Child_Indicator_Icon: '\e1ed';
-
-              @include fd-rtl-pseudo() {
-                --fdNavigation_Link_Has_Child_Indicator_Icon: '\e1ee';
-              }
-            }
-          }
-        }
-
-        .#{$navListItem} > .#{$navItem}:not(.#{$navItemChild}) {
-          & > .#{$navLink} {
-            @include fd-hover() {
-              width: 100%;
-
-              .#{$navText} {
-                --fdNavigation_Item_Text_Display: inline-block;
-              }
-            }
-          }
-        }
-      }
-
-      &.#{$navListContainerSubmenu} {
-        @include fd-set-position-left(calc(-100% - 0.1875rem));
-
-        margin: 0;
-        padding: 0.5rem;
-        box-shadow: var(--sapMenu_Shadow1);
-        top: calc(var(--fdNavigation_Link_Min_Height) - 0.5rem);
-      }
-    }
-
-    .#{$navListWrapper} {
-      padding: 0.7rem;
-    }
-
-    .#{$navItem} {
-      &:not(.#{$block}__item--with-expander) {
-        @include fd-expanded() {
-          .#{$navLink} {
-            --fdNavigation_Link_Child_Indicator_Opacity: 1;
-            --fdNavigation_Link_Background: var(--sapMenu_Active_Background);
-            --fdNavigation_Link_Border_Color: var(--fdNavigation_Link_Border_Color_Active);
-            --fdNavigation_Link_Border_Bottom_Color: var(--fdNavigation_Link_Border_Color_Active);
-
-            @include fd-focus() {
-              --fdNavigation_Link_Child_Indicator_Opacity: 1;
-              --fdNavigation_Link_Background: var(--sapMenu_Active_Background);
-              --fdNavigation_Link_Border_Color: var(--fdNavigation_Link_Border_Color_Active);
-              --fdNavigation_Link_Border_Bottom_Color: var(--fdNavigation_Link_Border_Color_Active);
-            }
-          }
-
-          @include fd-selected() {
-            .#{$navLink} {
-              --fdNavigation_Link_Selection_Indicator_Display: inline-block;
-              --fdNavigation_Link_Background: var(--sapNavigation_Selected_Background);
-              --fdNavigation_Link_Border_Color: var(--fdNavigation_Link_Border_Color_Selected);
-              --fdNavigation_Link_Border_Bottom_Color: var(--fdNavigation_Link_Border_Color_Selected);
-            }
-          }
-        }
-      }
-    }
-
-    .#{$navItemChild} {
-      .#{$navLink} {
-        --fdNavigation_Link_Padding_Left: 0.5rem;
-      }
-    }
-  }
 
   &--snapped {
     .#{$navContainerTop},
@@ -1033,7 +816,36 @@ $navListContainerSubmenu: #{$block}__list-container--submenu;
     }
   }
 
-  @include _fd-vertical-nav() {
+  &.#{$navVertical} {
+    @include fd-flex(column) {
+      justify-content: space-between;
+    }
+
+    min-width: 16rem;
+    height: var(--fdNavigation_Height);
+    box-shadow: var(--fdNavigation_Box_Shadow);
+    background: var(--sapNavigation_Background);
+    padding-top: var(--fdNavigation_Padding_Top);
+    border-radius: var(--fdNavigation_Border_Radius);
+    padding-bottom: var(--fdNavigation_Padding_Bottom);
+
+    &.#{$navPopup} {
+      --fdNavigation_Height: auto;
+      --fdNavigation_Padding_Top: 0.25rem;
+      --fdNavigation_Border_Radius: 0.5rem;
+      --fdNavigation_Box_Shadow: var(--sapNavigation_Shadow2);
+
+      .#{$navContainerTop},
+      .#{$navContainerBottom} {
+        --fdNavigation_Padding_X: 0.5rem;
+      }
+    }
+
+    &.#{$navSnapped} {
+      @include fd-set-width(3.5rem);
+
+      --fdNavigation_Border_Radius: 0.5rem 0.5rem 0 0;
+    }
     .#{$navItemWithExpander} {
       position: relative;
 
@@ -1050,17 +862,186 @@ $navListContainerSubmenu: #{$block}__list-container--submenu;
     }
   }
 
-  @include _fd-horizontal-nav() {
+  &.#{$navHorizontal} {
+    width: 100%;
+    padding: 0.75rem 1.5rem;
+    background: var(--sapNavigation_Background);
+    height: var(--fdNavigation_Horizontal_Height);
+
+    .#{$navLink} {
+      --fdNavigation_Link_Spacing: 0.5rem;
+    }
+
+    .#{$navItem}:not(.#{$navItemChild}):not(.#{$navItemOverflow}) {
+      @include fd-selected() {
+        @include fd-navigation-link-apply-selected-state();
+
+        @include fd-expanded() {
+          .#{$navLink} {
+            --fdNavigation_Link_Selection_Indicator_Display: none;
+            --fdNavigation_Link_Background: var(--fdNavigation_Item_Selected_Background);
+          }
+        }
+      }
+
+      @include fd-expanded() {
+        .#{$navLink} {
+          &::before {
+            --fdNavigation_Link_Border_Bottom_Color: var(--fdNavigation_Link_Border_Color);
+          }
+        }
+      }
+
+      .#{$navLink} {
+        &::before {
+          --fdNavigation_Link_Border_Bottom_Color: transparent;
+        }
+
+        @include fd-hover() {
+          &::before {
+            --fdNavigation_Link_Border_Bottom_Color: var(--fdNavigation_Link_Border_Color);
+          }
+        }
+      }
+    }
+
+    .#{$navList}:not(.#{$navListParentItems}):not(.#{$navListChildItems}) {
+      --fdNavigation_Item_Spacing: 0.75rem;
+
+      flex-direction: row;
+
+      .#{$navChildrenIndicator} {
+        --fdNavigation_Link_Has_Child_Indicator_Icon: '\e287';
+      }
+    }
+
+    .#{$navListChildItems} {
+      --fdNavigation_Item_Spacing: 0;
+    }
+
+    .#{$navListItemSpacer} {
+      width: 100%;
+      height: 0.75rem;
+    }
+
+    .#{$navListItemHome} {
+      padding-top: 0;
+      position: relative;
+      background: transparent;
+
+      &::before {
+        content: none;
+      }
+    }
+
+    .#{$navListContainer} {
+      --fdPopover_Offset: calc(100% + 0.3875rem);
+
+      border: none;
+      padding: 0.05rem;
+      border-radius: 0.75rem;
+      box-shadow: var(--sapMenu_Shadow2);
+      background: var(--sapGroup_ContentBackground);
+
+      &.#{$navListContainerMenu} {
+        @include fd-set-position-right(-0.5rem);
+
+        padding: 0.5rem;
+        position: absolute;
+        top: calc(100% + 0.3875rem);
+        box-shadow: var(--sapMenu_Shadow1);
+
+        .#{$navListWrapper} {
+          padding: 0;
+        }
+
+        .#{$navList} {
+          --fdNavigation_Item_Spacing: 0;
+
+          box-shadow: none;
+        }
+
+        .#{$navItem} {
+          @include fd-expanded() {
+            .#{$navChildrenIndicator} {
+              --fdNavigation_Link_Has_Child_Indicator_Icon: '\e1ed';
+
+              @include fd-rtl-pseudo() {
+                --fdNavigation_Link_Has_Child_Indicator_Icon: '\e1ee';
+              }
+            }
+          }
+        }
+
+        .#{$navListItem} > .#{$navItem}:not(.#{$navItemChild}) {
+          & > .#{$navLink} {
+            @include fd-hover() {
+              width: 100%;
+
+              .#{$navText} {
+                --fdNavigation_Item_Text_Display: inline-block;
+              }
+            }
+          }
+        }
+      }
+
+      &.#{$navListContainerSubmenu} {
+        @include fd-set-position-left(calc(-100% - 0.1875rem));
+
+        margin: 0;
+        padding: 0.5rem;
+        box-shadow: var(--sapMenu_Shadow1);
+        top: calc(var(--fdNavigation_Link_Min_Height) - 0.5rem);
+      }
+    }
+
+    .#{$navListWrapper} {
+      padding: 0.7rem;
+    }
+
+    .#{$navItem} {
+      &:not(.#{$navItemWithExpander}) {
+        @include fd-expanded() {
+          .#{$navLink} {
+            --fdNavigation_Link_Child_Indicator_Opacity: 1;
+            --fdNavigation_Link_Background: var(--sapMenu_Active_Background);
+            --fdNavigation_Link_Border_Color: var(--fdNavigation_Link_Border_Color_Active);
+            --fdNavigation_Link_Border_Bottom_Color: var(--fdNavigation_Link_Border_Color_Active);
+
+            @include fd-focus() {
+              --fdNavigation_Link_Child_Indicator_Opacity: 1;
+              --fdNavigation_Link_Background: var(--sapMenu_Active_Background);
+              --fdNavigation_Link_Border_Color: var(--fdNavigation_Link_Border_Color_Active);
+              --fdNavigation_Link_Border_Bottom_Color: var(--fdNavigation_Link_Border_Color_Active);
+            }
+          }
+
+          @include fd-selected() {
+            .#{$navLink} {
+              --fdNavigation_Link_Selection_Indicator_Display: inline-block;
+              --fdNavigation_Link_Background: var(--sapNavigation_Selected_Background);
+              --fdNavigation_Link_Border_Color: var(--fdNavigation_Link_Border_Color_Selected);
+              --fdNavigation_Link_Border_Bottom_Color: var(--fdNavigation_Link_Border_Color_Selected);
+            }
+          }
+        }
+      }
+    }
+
+    .#{$navItemChild} {
+      .#{$navLink} {
+        --fdNavigation_Link_Padding_Left: 0.5rem;
+      }
+    }
+
     .#{$navItemWithExpander} {
       .#{$navExpander} {
         margin: 0 0.0625rem;
+        outline-offset: -0.0625rem;
         transition: var(--fdNavigation_Link_Transition);
 
         --fdButton_Nested_Border_Radius: var(--fdNavigation_Link_Border_Radius);
-
-        @include fd-selected() {
-          background-color: var(--fdNavigation_Item_Selected_Background);
-        }
 
         &:active {
           &:focus {
@@ -1071,7 +1052,7 @@ $navListContainerSubmenu: #{$block}__list-container--submenu;
 
       @include fd-expanded() {
         .#{$navExpander} {
-          background: var(--fdNavigation_Item_Selected_Background);
+          --fdButton_Nested_Background: var(--fdNavigation_Item_Selected_Background);
         }
       }
     }
