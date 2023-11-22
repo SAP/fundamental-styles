@@ -1,6 +1,5 @@
-
-@import "./new-settings";
-@import "./mixins";
+@import './new-settings';
+@import './mixins';
 
 $block: #{$fd-namespace}-navigation;
 $navSnapped: #{$block}--snapped;
@@ -68,9 +67,9 @@ $navListContainerSubmenu: #{$block}__list-container--submenu;
   --fdNavigation_Link_Selection_Indicator_Size: 0.5rem;
   --fdNavigation_Link_Has_Child_Indicator_Display: flex;
   --fdNavigation_Link_Selection_Indicator_Display: none;
-  --fdNavigation_Link_Back_Indicator_Icon: "\e1ee";
-  --fdNavigation_Link_Has_Child_Indicator_Icon: "\e1ed";
-  --fdNavigation_Link_External_Link_Indicator_Icon: "\e04c";
+  --fdNavigation_Link_Back_Indicator_Icon: '\e1ee';
+  --fdNavigation_Link_Has_Child_Indicator_Icon: '\e1ed';
+  --fdNavigation_Link_External_Link_Indicator_Icon: '\e04c';
   --fdNavigation_Link_Background: var(--sapNavigation_Background);
   --fdNavigation_Link_Border_Color: var(--fdNavigation_Link_Border_Color_Normal);
   --fdNavigation_Link_Border_Bottom_Color: var(--fdNavigation_Link_Border_Bottom_Color_Normal);
@@ -79,7 +78,10 @@ $navListContainerSubmenu: #{$block}__list-container--submenu;
   --fdNavigation_Item_Group_Display: flex;
   --fdNavigation_Item_Title_Display: none;
   --fdNavigation_Item_Text_Display: inline-block;
-  --fdNavigation_Item_Selected_Background: 0 100% / 100% 0.125rem no-repeat linear-gradient(0deg, var(--sapShell_Navigation_SelectedColor), var(--sapShell_Navigation_SelectedColor)), var(--sapNavigation_Selected_Background);
+  --fdNavigation_Item_Selected_Background:
+    0 100% / 100% 0.125rem no-repeat
+    linear-gradient(0deg, var(--sapShell_Navigation_SelectedColor), var(--sapShell_Navigation_SelectedColor)),
+    var(--sapNavigation_Selected_Background);
 
   // Navigation List
   --fdNavigation_List_Container_Display: none;
@@ -204,7 +206,7 @@ $navListContainerSubmenu: #{$block}__list-container--submenu;
       flex-direction: row;
 
       .#{$navChildrenIndicator} {
-        --fdNavigation_Link_Has_Child_Indicator_Icon: "\e287";
+        --fdNavigation_Link_Has_Child_Indicator_Icon: '\e287';
       }
     }
 
@@ -257,10 +259,10 @@ $navListContainerSubmenu: #{$block}__list-container--submenu;
         .#{$navItem} {
           @include fd-expanded() {
             .#{$navChildrenIndicator} {
-              --fdNavigation_Link_Has_Child_Indicator_Icon: "\e1ed";
+              --fdNavigation_Link_Has_Child_Indicator_Icon: '\e1ed';
 
               @include fd-rtl-pseudo() {
-                --fdNavigation_Link_Has_Child_Indicator_Icon: "\e1ee";
+                --fdNavigation_Link_Has_Child_Indicator_Icon: '\e1ee';
               }
             }
           }
@@ -548,13 +550,13 @@ $navListContainerSubmenu: #{$block}__list-container--submenu;
         .#{$navItem} {
           @include fd-expanded() {
             .#{$navChildrenIndicator} {
-              --fdNavigation_Link_Has_Child_Indicator_Icon: "\e1ed";
+              --fdNavigation_Link_Has_Child_Indicator_Icon: '\e1ed';
             }
           }
 
           @include fd-rtl-pseudo() {
             .#{$navChildrenIndicator} {
-              --fdNavigation_Link_Has_Child_Indicator_Icon: "\e1ee";
+              --fdNavigation_Link_Has_Child_Indicator_Icon: '\e1ee';
             }
           }
         }
@@ -677,7 +679,7 @@ $navListContainerSubmenu: #{$block}__list-container--submenu;
       &::before {
         @include fd-set-margins-y-equal(0.5625rem);
 
-        content: "";
+        content: '';
         width: 100%;
         height: 0.0625rem;
         display: inline-block;
@@ -741,7 +743,7 @@ $navListContainerSubmenu: #{$block}__list-container--submenu;
       &::before {
         @include fd-set-position-left-pseudo(-0.25rem);
 
-        content: "";
+        content: '';
         top: -0.25rem;
         position: absolute;
         width: calc(100% + 0.5rem);
@@ -779,7 +781,7 @@ $navListContainerSubmenu: #{$block}__list-container--submenu;
       @include fd-set-position-left-pseudo(0);
 
       top: 0;
-      content: "";
+      content: '';
       width: 100%;
       height: 100%;
       position: absolute;
@@ -839,10 +841,10 @@ $navListContainerSubmenu: #{$block}__list-container--submenu;
 
     @include fd-expanded() {
       .#{$navChildrenIndicator} {
-        --fdNavigation_Link_Has_Child_Indicator_Icon: "\e1ef";
+        --fdNavigation_Link_Has_Child_Indicator_Icon: '\e1ef';
 
         @include fd-rtl() {
-          --fdNavigation_Link_Has_Child_Indicator_Icon: "\e1ef";
+          --fdNavigation_Link_Has_Child_Indicator_Icon: '\e1ef';
         }
       }
 
@@ -913,7 +915,7 @@ $navListContainerSubmenu: #{$block}__list-container--submenu;
         --fdNavigation_Item_Title_Display: block;
       }
 
-      .#{$navIcon}[class*=sap-icon] {
+      .#{$navIcon}[class*='sap-icon'] {
         display: none;
       }
     }
@@ -921,10 +923,10 @@ $navListContainerSubmenu: #{$block}__list-container--submenu;
     &--menu {
       @include fd-expanded() {
         .#{$navChildrenIndicator} {
-          --fdNavigation_Link_Has_Child_Indicator_Icon: "\e1ed";
+          --fdNavigation_Link_Has_Child_Indicator_Icon: '\e1ed';
 
           @include fd-rtl() {
-            --fdNavigation_Link_Has_Child_Indicator_Icon: "\e1ee";
+            --fdNavigation_Link_Has_Child_Indicator_Icon: '\e1ee';
           }
         }
 
@@ -982,7 +984,7 @@ $navListContainerSubmenu: #{$block}__list-container--submenu;
 
     &::before {
       font-size: 0.75rem;
-      font-family: "SAP-icons";
+      font-family: 'SAP-icons';
       content: var(--fdNavigation_Link_Has_Child_Indicator_Icon);
     }
 
@@ -991,7 +993,7 @@ $navListContainerSubmenu: #{$block}__list-container--submenu;
     display: var(--fdNavigation_Link_Has_Child_Indicator_Display);
 
     @include fd-rtl-pseudo() {
-      --fdNavigation_Link_Has_Child_Indicator_Icon: "\e1ee";
+      --fdNavigation_Link_Has_Child_Indicator_Icon: '\e1ee';
     }
   }
 
@@ -1004,12 +1006,12 @@ $navListContainerSubmenu: #{$block}__list-container--submenu;
 
     &::before {
       font-size: 0.75rem;
-      font-family: "SAP-icons";
+      font-family: 'SAP-icons';
       content: var(--fdNavigation_Link_External_Link_Indicator_Icon);
     }
 
     @include fd-rtl() {
-      --fdNavigation_Link_External_Link_Indicator_Icon: "\e04d";
+      --fdNavigation_Link_External_Link_Indicator_Icon: '\e04d';
     }
   }
 
@@ -1022,62 +1024,54 @@ $navListContainerSubmenu: #{$block}__list-container--submenu;
 
     &::before {
       font-size: 0.75rem;
-      font-family: "SAP-icons";
+      font-family: 'SAP-icons';
       content: var(--fdNavigation_Link_Back_Indicator_Icon);
     }
 
     @include fd-rtl() {
-      --fdNavigation_Link_Back_Indicator_Icon: "\e1ed";
+      --fdNavigation_Link_Back_Indicator_Icon: '\e1ed';
     }
   }
 
   @include _fd-vertical-nav() {
-    .#{$block} {
-      &__item {
-        &--with-expander {
-          position: relative;
+    .#{$navItemWithExpander} {
+      position: relative;
 
-          .#{$navLink} {
-            --fdNavigation_Link_Padding_Right: 2.1975rem;
-          }
+      .#{$navLink} {
+        --fdNavigation_Link_Padding_Right: 2.1975rem;
+      }
 
-          .#{$navExpander} {
-            @include fd-set-position-right(var(--fdNavigation_Expander_Position_Right));
+      .#{$navExpander} {
+        @include fd-set-position-right(var(--fdNavigation_Expander_Position_Right));
 
-            position: absolute;
-            z-index: 20;
-          }
-        }
+        position: absolute;
+        z-index: 20;
       }
     }
   }
 
   @include _fd-horizontal-nav() {
-    .#{$block} {
-      &__item {
-        &--with-expander {
-          .fd-navigation__expander {
-            margin: 0 0.0625rem;
-            transition: var(--fdNavigation_Link_Transition);
+    .#{$navItemWithExpander} {
+      .#{$navExpander} {
+        margin: 0 0.0625rem;
+        transition: var(--fdNavigation_Link_Transition);
 
+        --fdButton_Nested_Border_Radius: var(--fdNavigation_Link_Border_Radius);
+
+        @include fd-selected() {
+          background-color: var(--fdNavigation_Item_Selected_Background);
+        }
+
+        &:active {
+          &:focus {
             --fdButton_Nested_Border_Radius: var(--fdNavigation_Link_Border_Radius);
-
-            @include fd-selected() {
-              background-color: var(--fdNavigation_Item_Selected_Background);
-            }
-
-            &:active {
-              &:focus {
-                --fdButton_Nested_Border_Radius: var(--fdNavigation_Link_Border_Radius);
-              }
-            }
           }
+        }
+      }
 
-          @include fd-expanded() {
-            .fd-navigation__expander {
-              background: var(--fdNavigation_Item_Selected_Background);
-            }
-          }
+      @include fd-expanded() {
+        .#{$navExpander} {
+          background: var(--fdNavigation_Item_Selected_Background);
         }
       }
     }
