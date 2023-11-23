@@ -104,6 +104,50 @@ $navListContainerSubmenu: #{$block}__list-container--submenu;
     }
   }
 
+  @mixin _fd-nav-item-state(
+    $type: link,
+    $background: --fdNavigation_Link_Background,
+    $borderColor: --fdNavigation_Link_Border_Color,
+    $borderBottomColor: --fdNavigation_Link_Border_Bottom_Color
+  ) {
+    @include fd-hover() {
+      @if $type == link {
+        --fdNavigation_Link_Child_Indicator_Opacity: 1;
+      }
+
+      #{$background}: var(--sapNavigation_Hover_Background);
+      #{$borderColor}: var(--fdNavigation_Link_Border_Color_Hover);
+      #{$borderBottomColor}: var(--fdNavigation_Link_Border_Color_Hover);
+    }
+
+    @include fd-active() {
+      @if $type == link {
+        --fdNavigation_Link_Child_Indicator_Opacity: 1;
+      }
+
+      #{$background}: var(--sapNavigation_Active_Background);
+      #{$borderColor}: var(--fdNavigation_Link_Border_Color_Active);
+      #{$borderBottomColor}: var(--fdNavigation_Link_Border_Color_Active);
+
+      @include fd-focus() {
+        @if $type == link {
+          --fdNavigation_Link_Child_Indicator_Opacity: 1;
+        }
+
+        @if $type == link {
+          #{$background}: var(--sapNavigation_Active_Background);
+        }
+
+        #{$borderColor}: var(--fdNavigation_Link_Border_Color_Active);
+        #{$borderBottomColor}: var(--fdNavigation_Link_Border_Color_Active);
+
+        @if $type == link {
+          outline: none;
+        }
+      }
+    }
+  }
+
   @mixin _fd-vertical-nav-with-expander() {
     &.#{$navVertical} {
       .#{$navItemWithExpander} {
@@ -572,28 +616,7 @@ $navListContainerSubmenu: #{$block}__list-container--submenu;
       border-bottom: solid 0.0625rem var(--fdNavigation_Link_Border_Bottom_Color);
     }
 
-    @include fd-hover() {
-      --fdNavigation_Link_Child_Indicator_Opacity: 1;
-      --fdNavigation_Link_Background: var(--sapNavigation_Hover_Background);
-      --fdNavigation_Link_Border_Color: var(--fdNavigation_Link_Border_Color_Hover);
-      --fdNavigation_Link_Border_Bottom_Color: var(--fdNavigation_Link_Border_Color_Hover);
-    }
-
-    @include fd-active() {
-      --fdNavigation_Link_Child_Indicator_Opacity: 1;
-      --fdNavigation_Link_Background: var(--sapNavigation_Active_Background);
-      --fdNavigation_Link_Border_Color: var(--fdNavigation_Link_Border_Color_Active);
-      --fdNavigation_Link_Border_Bottom_Color: var(--fdNavigation_Link_Border_Color_Active);
-
-      @include fd-focus() {
-        --fdNavigation_Link_Child_Indicator_Opacity: 1;
-        --fdNavigation_Link_Background: var(--sapNavigation_Active_Background);
-        --fdNavigation_Link_Border_Color: var(--fdNavigation_Link_Border_Color_Active);
-        --fdNavigation_Link_Border_Bottom_Color: var(--fdNavigation_Link_Border_Color_Active);
-
-        outline: none;
-      }
-    }
+    @include _fd-nav-item-state();
 
     @include fd-focus() {
       --fdNavigation_Link_Border_Color: transparent;
@@ -1039,9 +1062,22 @@ $navListContainerSubmenu: #{$block}__list-container--submenu;
       .#{$navExpander} {
         margin: 0 0.0625rem;
         outline-offset: -0.0625rem;
+        border: none;
         transition: var(--fdNavigation_Link_Transition);
 
+        &::after {
+          content: "";
+
+          @include fd-set-equal-positions(0);
+
+          position: absolute;
+          border: solid 0.0625rem var(--fdNavigation_Expander_Border_Color);
+          border-bottom: solid 0.0625rem var(--fdNavigation_Expander_Border_Bottom_Color);
+        }
+
         --fdButton_Nested_Border_Radius: var(--fdNavigation_Link_Border_Radius);
+
+        @include _fd-nav-item-state(button, --fdButton_Nested_Background, --fdNavigation_Expander_Border_Color, --fdNavigation_Expander_Border_Bottom_Color);
 
         &:active {
           &:focus {
@@ -1053,6 +1089,9 @@ $navListContainerSubmenu: #{$block}__list-container--submenu;
       @include fd-expanded() {
         .#{$navExpander} {
           --fdButton_Nested_Background: var(--fdNavigation_Item_Selected_Background);
+          --fdNavigation_Link_Border_Color: var(--fdNavigation_Link_Border_Color_Selected);
+          --fdNavigation_Expander_Border_Color: var(--fdNavigation_Link_Border_Color_Selected);
+          --fdNavigation_Expander_Border_Bottom_Color: var(--fdNavigation_Link_Border_Color_Selected);
         }
       }
     }
