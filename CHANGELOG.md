@@ -1,3 +1,12 @@
+# [0.33.0-rc.2](https://github.com/SAP/fundamental-styles/compare/v0.33.0-rc.1...v0.33.0-rc.2) (2023-11-23)
+
+
+### Features
+
+* **styles:** btp horizontal nav update ([#4997](https://github.com/SAP/fundamental-styles/issues/4997)) ([5715346](https://github.com/SAP/fundamental-styles/commit/57153464b236970b5d09d0f60e588d21a540032c))
+
+
+
 # [0.33.0-rc.1](https://github.com/SAP/fundamental-styles/compare/v0.33.0-rc.0...v0.33.0-rc.1) (2023-11-21)
 
 
