@@ -1,3 +1,12 @@
+# [0.33.0-rc.3](https://github.com/SAP/fundamental-styles/compare/v0.33.0-rc.2...v0.33.0-rc.3) (2023-11-24)
+
+
+### Bug Fixes
+
+* **styles:** update icon font size, line-height [ci visual] ([#5001](https://github.com/SAP/fundamental-styles/issues/5001)) ([7216696](https://github.com/SAP/fundamental-styles/commit/72166963fb11596444d1a677f97e2165a89c726f))
+
+
+
 # [0.33.0-rc.2](https://github.com/SAP/fundamental-styles/compare/v0.33.0-rc.1...v0.33.0-rc.2) (2023-11-23)
 
 
