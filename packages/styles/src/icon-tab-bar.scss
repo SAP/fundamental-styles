@@ -521,6 +521,7 @@ $fd-icon-tab-bar-semantic-values: (
 
     &::before {
       left: 0;
+      top: 0.75rem;
       content: '';
       height: 1rem;
       width: 0.0625rem;
@@ -1046,13 +1047,9 @@ $fd-icon-tab-bar-semantic-values: (
 
     .#{$block}__list-item-icon-container {
       @include fd-flex-center();
-      @include fd-set-margin-right(0.5rem);
+      @include fd-set-margin-right(0.25rem);
 
       width: 1.25rem;
-    }
-
-    .#{$block}__list-item-counter {
-      @include fd-set-padding-left(0.25rem);
     }
 
     .#{$block}__list-link {

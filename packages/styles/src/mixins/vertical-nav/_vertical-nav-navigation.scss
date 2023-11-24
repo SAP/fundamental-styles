@@ -303,7 +303,7 @@ $fd-list-second-level-popover-position: 3.25rem !default;
         width: 2.25rem;
         color: var(--fdVerticalNav_Icon_Color);
         vertical-align: top;
-        text-align: center;
+        justify-content: center;
       }
 
       &-text {
