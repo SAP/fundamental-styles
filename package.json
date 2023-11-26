@@ -54,7 +54,7 @@
     "@babel/preset-typescript": "^7.21.4",
     "@babel/register": "^7.18.9",
     "@babel/traverse": "^7.19.1",
-    "@commitlint/cli": "^17.0.0",
+    "@commitlint/cli": "^18.4.3",
     "@commitlint/config-conventional": "^17.0.0",
     "@commitlint/travis-cli": "^16.0.0",
     "@jsdevtools/npm-publish": "^1.4.3",
