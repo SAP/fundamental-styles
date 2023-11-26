@@ -23507,9 +23507,9 @@ __metadata:
   linkType: hard
 
 "tocbot@npm:^4.12.3, tocbot@npm:^4.20.1":
-  version: 4.21.1
-  resolution: "tocbot@npm:4.21.1"
-  checksum: c1cdccae0139a731ab007b7537b7cc71229beb0a7ad9b20bd277db2915808855720d256bfa76a868fbd608e8aab02d9fcc38a93a7beebd869cb7816a66acc148
+  version: 4.23.0
+  resolution: "tocbot@npm:4.23.0"
+  checksum: 04289b9ae5f2b2c6e64342bc549fedf44c81a08070feec547fc073a08f3351f7e08f67f5913c992b664caec335509213787143c8739fbba9e14c486669b62968
   languageName: node
   linkType: hard
 
