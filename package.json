@@ -80,7 +80,7 @@
     "@storybook/html": "7.5.3",
     "@storybook/html-vite": "7.5.3",
     "@storybook/theming": "7.5.3",
-    "@testing-library/react": "13.4.0",
+    "@testing-library/react": "14.1.2",
     "@types/node": "18.11.9",
     "@types/react": "18.2.14",
     "@types/react-dom": "18.2.6",
