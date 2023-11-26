@@ -81,7 +81,7 @@
     "@storybook/html-vite": "7.5.3",
     "@storybook/theming": "7.5.3",
     "@testing-library/react": "13.4.0",
-    "@types/node": "18.11.9",
+    "@types/node": "20.10.0",
     "@types/react": "18.2.14",
     "@types/react-dom": "18.2.6",
     "@typescript-eslint/eslint-plugin": "5.62.0",
