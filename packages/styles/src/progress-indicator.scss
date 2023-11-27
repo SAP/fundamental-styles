@@ -248,12 +248,13 @@ $fd-progress-indicator-states: (
 
   &__overflow {
     @include fd-reset();
+    @include fd-set-paddings-y-equal(0.25rem);
+    @include fd-set-paddings-x(0.5rem, 0);
 
     @include fd-flex-vertical-center() {
+      gap: 0.5rem;
       justify-content: space-between;
     }
-
-    @include fd-set-padding-left(0.5rem);
 
     overflow: hidden;
     white-space: normal;
@@ -262,18 +263,16 @@ $fd-progress-indicator-states: (
 
   &__overflow-close {
     @include fd-reset();
-    @include fd-set-margin-left(0.5rem);
+    @include fd-flex-center();
+    @include fd-set-width(1.4375rem);
+    @include fd-set-height(1.375rem);
 
     @include fd-focus() {
       outline: var(--sapContent_FocusWidth) var(--sapContent_FocusStyle) var(--sapContent_FocusColor);
     }
 
     cursor: pointer;
-    width: 1.4375rem;
-    height: 1.375rem;
-    margin: 0.125rem;
     text-align: center;
-    line-height: 1.6rem;
     background: transparent;
 
     [class*='sap-icon'] {
