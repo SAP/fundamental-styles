@@ -1,3 +1,12 @@
+# [0.33.0-rc.4](https://github.com/SAP/fundamental-styles/compare/v0.33.0-rc.3...v0.33.0-rc.4) (2023-11-27)
+
+
+### Bug Fixes
+
+* **styles:** change the default line height to normal [ci visual] ([#5002](https://github.com/SAP/fundamental-styles/issues/5002)) ([7ad15d1](https://github.com/SAP/fundamental-styles/commit/7ad15d1d2124b2add8bc0b9b54c20b97788e9ad5))
+
+
+
 # [0.33.0-rc.3](https://github.com/SAP/fundamental-styles/compare/v0.33.0-rc.2...v0.33.0-rc.3) (2023-11-24)
 
 
