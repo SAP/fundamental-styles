@@ -3,7 +3,6 @@ import {useContext} from 'react';
 import './DocsPage.scss';
 import {useThemedStoryContainers} from '../../hooks/useThemedStoryContainers';
 import Community from '../Community';
-import Versions from '../Versions';
 import Description from '../Description';
 import Footer from '../Footer';
 import Header from '../Header';
@@ -36,7 +35,6 @@ const DocsPage = () => {
 
             <Stories title={"Examples"}/>
             <Community/>
-            <Versions/>
             <Footer/>
         </>
     );

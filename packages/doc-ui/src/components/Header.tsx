@@ -1,6 +1,7 @@
 import DirectionalitySelect from './DirectionalitySelect';
 import ThemeSelect from './ThemeSelect';
 import GithubLink from './GithubLink';
+import Versions from './Versions';
 import { IfBlock } from './IfBlock';
 import { useContext } from 'react';
 import { SAPContext } from '../contexts/SAPContext';
@@ -21,6 +22,7 @@ const Header = () => {
 
     return (
         <header className="fddocs-header">
+            <Versions/>
             <IfBlock condition={!isVisualStory}>
                 <HeaderSectionButton><DirectionalitySelect /></HeaderSectionButton>
                 <HeaderSectionButton><ContentDensitySelect /></HeaderSectionButton>
