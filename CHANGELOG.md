@@ -1,3 +1,17 @@
+# [0.33.0-rc.6](https://github.com/SAP/fundamental-styles/compare/v0.33.0-rc.5...v0.33.0-rc.6) (2023-11-29)
+
+
+### Bug Fixes
+
+* **styles:** update Variant Management [ci visual] ([#5017](https://github.com/SAP/fundamental-styles/issues/5017)) ([6341768](https://github.com/SAP/fundamental-styles/commit/634176813a07b4bb6ebb06c4c073f31f68488181))
+
+
+### BREAKING CHANGES
+
+* **styles:** added new modifier classes: .fd-variant-management__title--object-header, .fd-variant-management__title--snapped-object-header and .fd-variant-management__title--title to the .fd-variant-management__title base class.
+
+
+
 # [0.33.0-rc.5](https://github.com/SAP/fundamental-styles/compare/v0.33.0-rc.4...v0.33.0-rc.5) (2023-11-28)
 
 
