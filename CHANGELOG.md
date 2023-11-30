@@ -1,3 +1,12 @@
+# [0.33.0-rc.9](https://github.com/SAP/fundamental-styles/compare/v0.33.0-rc.8...v0.33.0-rc.9) (2023-11-30)
+
+
+### Bug Fixes
+
+* **common-css:** add CSS vars to Common CSS lib for the most used params [ci visual] ([#5018](https://github.com/SAP/fundamental-styles/issues/5018)) ([5cbde44](https://github.com/SAP/fundamental-styles/commit/5cbde44421f530157b9a54474794a3c3d1d33367))
+
+
+
 # [0.33.0-rc.8](https://github.com/SAP/fundamental-styles/compare/v0.33.0-rc.7...v0.33.0-rc.8) (2023-11-30)
 
 
