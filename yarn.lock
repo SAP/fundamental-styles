@@ -4868,32 +4868,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/addon-a11y@npm:7.5.3":
-  version: 7.5.3
-  resolution: "@storybook/addon-a11y@npm:7.5.3"
+"@storybook/addon-a11y@npm:7.6.3":
+  version: 7.6.3
+  resolution: "@storybook/addon-a11y@npm:7.6.3"
   dependencies:
-    "@storybook/addon-highlight": 7.5.3
-    "@storybook/channels": 7.5.3
-    "@storybook/client-logger": 7.5.3
-    "@storybook/components": 7.5.3
-    "@storybook/core-events": 7.5.3
-    "@storybook/global": ^5.0.0
-    "@storybook/manager-api": 7.5.3
-    "@storybook/preview-api": 7.5.3
-    "@storybook/theming": 7.5.3
-    "@storybook/types": 7.5.3
+    "@storybook/addon-highlight": 7.6.3
     axe-core: ^4.2.0
-    lodash: ^4.17.21
-    react-resize-detector: ^7.1.2
-  peerDependencies:
-    react: ^16.8.0 || ^17.0.0 || ^18.0.0
-    react-dom: ^16.8.0 || ^17.0.0 || ^18.0.0
-  peerDependenciesMeta:
-    react:
-      optional: true
-    react-dom:
-      optional: true
-  checksum: 93cf28fcfc41fc8eea512c04021dae5f527013a9eac3c119b911c40e9f3080c7b7ef2a36730dda3b3f1a504627a4405954bb1b59da2de882f1dac5e2c59cce05
+  checksum: 981a4d17e8cb21b72b0c6b223e6ae1f44128f49bada8de2cdab6abc53f69a05d7e9f0d77a2a5f7c339b7fbd396d20519040cfaafb317e1837c1fb59721a457e3
   languageName: node
   linkType: hard
 
@@ -5011,14 +4992,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/addon-highlight@npm:7.5.3":
-  version: 7.5.3
-  resolution: "@storybook/addon-highlight@npm:7.5.3"
+"@storybook/addon-highlight@npm:7.6.3":
+  version: 7.6.3
+  resolution: "@storybook/addon-highlight@npm:7.6.3"
   dependencies:
-    "@storybook/core-events": 7.5.3
     "@storybook/global": ^5.0.0
-    "@storybook/preview-api": 7.5.3
-  checksum: be468def9a6c3495e72f2c0a15e132b519e909c42e58361fd8d55c1fb1b7764e86b9e0a6531ba0f61b227d9d2ed5646ad294db0729177a39e3da5a7e00a3f2f0
+  checksum: 33c74bcc2277c8bca522a5e902db957d7bbeffdcf07d3d73490bce214cfb13ebdf6e4caab937b36e834c0425a06cb8574520c8f25fa862614ba5c5acf6cf65ea
   languageName: node
   linkType: hard
 
@@ -13057,7 +13036,7 @@ __metadata:
     "@nx/react": 16.7.2
     "@nx/web": 16.7.2
     "@sap-theming/theming-base-content": 11.9.0
-    "@storybook/addon-a11y": 7.5.3
+    "@storybook/addon-a11y": 7.6.3
     "@storybook/addon-actions": 7.5.3
     "@storybook/addon-controls": 7.5.3
     "@storybook/addon-cssresources": 6.2.9
@@ -20729,18 +20708,6 @@ __metadata:
     "@types/react":
       optional: true
   checksum: 2c7fe9cbd766f5e54beb4bec2e2efb2de3583037b23fef8fa511ab426ed7f1ae992382db5acd8ab5bfb030a4b93a06a2ebca41377d6eeaf0e6791bb0a59616a4
-  languageName: node
-  linkType: hard
-
-"react-resize-detector@npm:^7.1.2":
-  version: 7.1.2
-  resolution: "react-resize-detector@npm:7.1.2"
-  dependencies:
-    lodash: ^4.17.21
-  peerDependencies:
-    react: ^16.0.0 || ^17.0.0 || ^18.0.0
-    react-dom: ^16.0.0 || ^17.0.0 || ^18.0.0
-  checksum: 55f4abad7f7523d16b081b5ab20f75c539a54a08253ce7e9df473d48386f42ceca6c31584ba9fa26e3528b498ef6685ec77fb9a22cffc97df05fb326d0bf1b26
   languageName: node
   linkType: hard
 
