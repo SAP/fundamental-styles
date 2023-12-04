@@ -1,3 +1,12 @@
+# [0.33.0-rc.12](https://github.com/SAP/fundamental-styles/compare/v0.33.0-rc.11...v0.33.0-rc.12) (2023-12-04)
+
+
+### Bug Fixes
+
+* **styles:** change body border to allow optional footer [ci visual] ([#5020](https://github.com/SAP/fundamental-styles/issues/5020)) ([fa2f42c](https://github.com/SAP/fundamental-styles/commit/fa2f42c9ec8a2eccfa3e31f60f26c0fa217b712a))
+
+
+
 # [0.33.0-rc.11](https://github.com/SAP/fundamental-styles/compare/v0.33.0-rc.10...v0.33.0-rc.11) (2023-12-03)
 
 
