@@ -6,5 +6,5 @@ outputs:
     description: Generated changelog
 
 runs:
-  using: node16
+  using: node18
   main: ./index.js
