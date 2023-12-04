@@ -1,27 +1,18 @@
 @import 'common-settings';
 @import 'common-mixins';
 
-$block: #{$sap-namespace}-text;
+.#{$sap-namespace}-text {
+  @include sap-text();
+}
 
-.#{$block} {
-  @include sap-reset();
+.#{$sap-namespace}-text-max-lines {
+  @include sap-text('max-lines');
+}
 
-  //   &::selection { //todo bring delta theming
-  //     color: var(--sapContent_ContrastTextColor);
-  //     background-color: var(--fdText_Selected_Background_Color);
-  //   }
+.#{$sap-namespace}-text-pre-wrap {
+  @include sap-text('pre-wrap');
+}
 
-  &--max-lines {
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-  }
-
-  &--pre-wrap {
-    white-space: pre-wrap;
-  }
-
-  &--hyphenation {
-    hyphens: auto;
-  }
+.#{$sap-namespace}-text-hyphenation {
+  @include sap-text('hyphenation');
 }

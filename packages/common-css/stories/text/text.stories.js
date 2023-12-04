@@ -8,8 +8,19 @@ export default {
   title: 'Text',
   parameters: {
     description: `The text component displays text inside a form, table, or any other content area.
-        It is generally used throughout the entire application and is responsive to all screen sizes.`,
-    tags: ['f3', 'a11y', 'theme']
+        It is generally used throughout the entire application and is responsive to all screen sizes.
+<br>
+<b>CSS Classes: </b><br>
+<code>.sap-text</code><br>
+<code>.sap-text-max-lines</code><br>
+<code>.sap-text-pre-wrap</code><br>
+<code>.sap-text-hyphenation</code><br><br>
+<b>SCSS Mixin: </b>
+<code>@include sap-text(<i style="color: red;">$modifier</i>)</code><br>
+where <i style="color: red;">$modifier</i> is optional and can be:
+- <code>"max-lines"</code>: to display text with a maximum line count<br>
+- <code>"pre-wrap"</code>: to display indents and/or whitespace<br>
+- <code>"hyphenation"</code>: to display hyphens<br>`
   }
 };
 export const DefaultExample = () => defaultExampleExampleHtml;
@@ -27,8 +38,8 @@ Whitespace.parameters = {
   docs: {
     description: {
       story: `The text component has a property that allows browsers to render specified indents and
-        whitespace. To display indents and/or whitespace, add a
-        \`fd-text--pre-wrap\` modifier class to the main element.`
+        whitespace. To display indents and/or whitespace, use the
+        \`.fd-text-pre-wrap\` class.`
     }
   }
 };
@@ -39,7 +50,7 @@ MaxLines.parameters = {
     description: {
       story: `The text component can be displayed with a maximum number of lines.
 When the maximum is reached, the text truncates and displays an ellipsis. To display text with a maximum line count,
-add the \`fd-text--max-lines\` modifier class and an inline style rule with the number of
+use the \`.fd-text-max-lines\` class and an inline style rule with the number of
 lines to the main element. For example, add \`style="-webkit-line-clamp: 3;"\` to display
 three lines of text.
 
@@ -54,7 +65,7 @@ Hyphenation.parameters = {
   docs: {
     description: {
       story: `The text component can display words that are broken at appropriate hyphenation
-points in a text block. To display hyphens, add the \`fd-text--hyphenation\` to the main element.
+points in a text block. To display hyphens, use the \`.fd-text-hyphenation\` element.
 
 **It is also possible to suggest line break opportunities with two Unicode characters that manually specify
 potential line breakpoints:**

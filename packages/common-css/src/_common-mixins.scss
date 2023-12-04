@@ -1023,3 +1023,164 @@
 
   background-color: var($bgColorVar);
 }
+
+@mixin sap-text($modifier: none) {
+  @include sap-reset();
+
+  &::selection {
+    color: var(--sapContent_ContrastTextColor);
+    background-color: var(--sapSelectedColor);
+  }
+
+  @if $modifier == 'max-lines' {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  @if $modifier == 'pre-wrap' {
+    white-space: pre-wrap;
+  }
+
+  @if $modifier == 'hyphenation' {
+    hyphens: auto;
+  }
+}
+
+@mixin sap-label($required: false, $colon: false) {
+  @include sap-reset();
+  @include sap-ellipsis();
+  @include sap-set-margin-end(0.5rem);
+
+  cursor: text;
+  max-width: 100%;
+  width: fit-content;
+  position: relative;
+  align-self: flex-start;
+  font-size: var(--sapFontSize);
+  color: var(--sapContent_LabelColor);
+
+  &.is-disabled {
+    opacity: 0.4;
+  }
+
+  @if $required == true {
+    @include sap-set-padding-end(0.5rem);
+
+    &::after {
+      top: 0;
+      right: 0;
+      content: '*';
+      font-weight: bold;
+      position: absolute;
+      font-size: var(--sapFontLargeSize);
+      color: var(--sapField_RequiredColor);
+    }
+
+    @include sap-rtl() {
+      &::after {
+        left: 0;
+        right: auto;
+      }
+    }
+  }
+
+  @if $colon == true {
+    @include sap-set-padding-end(0.25rem);
+
+    &::before {
+      top: 0;
+      right: 0;
+      content: ':';
+      color: inherit;
+      position: absolute;
+      font-size: var(--sapFontSize);
+    }
+
+    @include sap-rtl() {
+      &::before {
+        left: 0;
+        right: auto;
+      }
+    }
+  }
+
+  @if $required == true and $colon == true {
+    @include sap-set-padding-end(0.75rem);
+
+    &::after {
+      top: 0;
+      right: 0;
+      content: '*';
+      font-weight: bold;
+      position: absolute;
+      font-size: var(--sapFontLargeSize);
+      color: var(--sapField_RequiredColor);
+    }
+
+    &::before {
+      top: 0;
+      right: 0.5rem;
+      content: ':';
+      color: inherit;
+      position: absolute;
+      font-size: var(--sapFontSize);
+    }
+
+    @include sap-rtl() {
+      &::before {
+        right: auto;
+        left: 0.5rem;
+      }
+
+      &::after {
+        left: 0;
+        right: auto;
+      }
+    }
+  }
+}
+
+@mixin sap-heading-base() {
+  @include sap-ellipsis();
+
+  margin: 0;
+  line-height: normal;
+  color: var(--sapTextColor);
+  font-size: var(--sapHeading_Font_Size);
+  font-family: var(--sapFontHeaderFamily);
+}
+
+@mixin sap-heading($size) {
+  @if $size == $sap-heading-h1 {
+    @include sap-heading-base();
+
+    --sapHeading_Font_Size: var(--sapFontHeader1Size);
+  } @else if $size == $sap-heading-h2 {
+    @include sap-heading-base();
+
+    --sapHeading_Font_Size: var(--sapFontHeader2Size);
+  } @else if $size == $sap-heading-h3 {
+    @include sap-heading-base();
+
+    --sapHeading_Font_Size: var(--sapFontHeader3Size);
+  } @else if $size == $sap-heading-h4 {
+    @include sap-heading-base();
+
+    --sapHeading_Font_Size: var(--sapFontHeader4Size);
+  } @else if $size == $sap-heading-h5 {
+    @include sap-heading-base();
+
+    --sapHeading_Font_Size: var(--sapFontHeader5Size);
+  } @else if $size == $sap-heading-h6 {
+    @include sap-heading-base();
+
+    --sapHeading_Font_Size: var(--sapFontHeader6Size);
+  } @else {
+    @include sap-heading-base();
+
+    --sapHeading_Font_Size: 1rem;
+  }
+
+  @content;
+}

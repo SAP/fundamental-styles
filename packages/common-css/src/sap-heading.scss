@@ -6,50 +6,6 @@ $block: #{$sap-namespace}-heading;
 .#{$block} {
   --sapHeading_Font_Size: 1rem;
 
-  @mixin sap-heading-base() {
-    @include sap-ellipsis();
-
-    margin: 0;
-    line-height: normal;
-    color: var(--sapTextColor);
-    font-size: var(--sapHeading_Font_Size);
-    font-family: var(--sapFontHeaderFamily);
-  }
-
-  @mixin sap-heading($size) {
-    @if $size == $sap-heading-h1 {
-      @include sap-heading-base();
-
-      --sapHeading_Font_Size: var(--sapFontHeader1Size);
-    } @else if $size == $sap-heading-h2 {
-      @include sap-heading-base();
-
-      --sapHeading_Font_Size: var(--sapFontHeader2Size);
-    } @else if $size == $sap-heading-h3 {
-      @include sap-heading-base();
-
-      --sapHeading_Font_Size: var(--sapFontHeader3Size);
-    } @else if $size == $sap-heading-h4 {
-      @include sap-heading-base();
-
-      --sapHeading_Font_Size: var(--sapFontHeader4Size);
-    } @else if $size == $sap-heading-h5 {
-      @include sap-heading-base();
-
-      --sapHeading_Font_Size: var(--sapFontHeader5Size);
-    } @else if $size == $sap-heading-h6 {
-      @include sap-heading-base();
-
-      --sapHeading_Font_Size: var(--sapFontHeader6Size);
-    } @else {
-      @include sap-heading-base();
-
-      --sapHeading_Font_Size: 1rem;
-    }
-
-    @content;
-  }
-
   &-1 {
     @include sap-heading($sap-heading-h1);
   }
