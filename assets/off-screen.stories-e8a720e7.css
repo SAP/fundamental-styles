@@ -1,0 +1,1 @@
+.fd-off-screen{font-size:var(--sapFontSize);line-height:normal;color:var(--sapTextColor);font-family:var(--sapFontFamily);font-weight:400;box-sizing:border-box;forced-color-adjust:none;padding:0;margin:0;border:0;position:absolute;left:-625rem;top:auto;width:.0625rem;height:.0625rem;overflow:hidden}.fd-off-screen:before,.fd-off-screen:after{box-sizing:inherit;font-size:inherit}
