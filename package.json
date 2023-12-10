@@ -145,7 +145,7 @@
     "stylelint-scss": "^3.19.0",
     "through2": "^4.0.2",
     "tocbot": "^4.12.3",
-    "ts-node": "10.9.1",
+    "ts-node": "10.9.2",
     "tslib": "^2.3.0",
     "typescript": "5.1.6",
     "vite": "^4.3.3",
