@@ -1,4 +1,6 @@
 import '../../src/sap-content-paddings.scss';
+import '../../src/sap-container-type.scss';
+
 export default {
     title: 'Content Paddings',
     parameters: {
@@ -23,8 +25,10 @@ const localStyles = `
 `;
 export const HomeExample = () => `${localStyles}
 <h3>Responsive</h3>
-<div class="demo sap-content-paddings-home">
-    <div></div>
+<div class="sap-container-type-inline-size">
+    <div class="demo sap-content-paddings-home">
+        <div></div>
+    </div>
 </div>
 <br>
 <h3>Size SM</h3>
@@ -106,8 +110,10 @@ HomeExample.parameters = {
 
 export const ContainerExample = () => `${localStyles}
 <h3>Responsive</h3>
-<div class="demo sap-content-paddings-container">
-    <div></div>
+<div class="sap-container-type-inline-size">
+    <div class="demo sap-content-paddings-container">
+        <div></div>
+    </div>
 </div>
 <br>
 <h3>Size SM</h3>

@@ -108,12 +108,52 @@ ResponsivePadding.storyName = 'Responsive Paddings';
 ResponsivePadding.parameters = {
     docs: {
         description: {
-            story: `The responsive padding class adds a double sided padding inside a container based on its width.<br>
+            story: `The responsive padding class adds a double sided padding inside a container based on screen width.<br>
             <b>CSS Class: </b><code>.sap-padding-responsive</code><br>
             <b>Mixin: </b><code>@include sap-padding-responsive()</code>
             <table style="width: 100%; border-collapse: collapse; margin-top: 1rem;">
                 <tr>
                     <th style="padding: 0.25rem;">Screen Size</th>
+                    <th style="padding: 0.25rem;">CSS</th>
+                </tr>
+                <tr>
+                    <td style="padding: 0.25rem;">SM</td>
+                    <td style="padding: 0.25rem;">padding: 0 1rem !important;</td>
+                </tr>
+                <tr>
+                    <td style="padding: 0.25rem;">MD</td>
+                    <td style="padding: 0.25rem;">padding: 0 2rem !important;</td>
+                </tr>
+                <tr>
+                    <td style="padding: 0.25rem;">LG</td>
+                    <td style="padding: 0.25rem;">padding: 0 2rem !important;</td>
+                </tr>
+                <tr>
+                    <td style="padding: 0.25rem;">XL</td>
+                    <td style="padding: 0.25rem;">padding: 0 3rem !important;</td>
+                </tr>
+            </table>`
+        }
+    }
+};
+
+export const ResponsivePaddingContainer = () => `${localStyles}
+<div style="container-type: inline-size;">
+    <div class="demo sap-padding-responsive-container">
+        <div></div>
+    </div>
+</div>
+`;
+ResponsivePaddingContainer.storyName = 'Responsive Container Paddings';
+ResponsivePaddingContainer.parameters = {
+    docs: {
+        description: {
+            story: `The responsive padding class adds a double sided padding inside a container based on its width.<br>
+            <b>CSS Class: </b><code>.sap-padding-responsive-container</code><br>
+            <b>Mixin: </b><code>@include sap-padding-container-responsive()</code>
+            <table style="width: 100%; border-collapse: collapse; margin-top: 1rem;">
+                <tr>
+                    <th style="padding: 0.25rem;">Container Size</th>
                     <th style="padding: 0.25rem;">CSS</th>
                 </tr>
                 <tr>

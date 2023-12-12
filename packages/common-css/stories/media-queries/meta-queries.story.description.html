@@ -42,7 +42,28 @@
     </tr>
     </tbody>
 </table>
+
 <br><br>
+
+<h3>Media Queries From/Until</h3>
+
+<table style="width: 100%; border-collapse: collapse; margin-top: 1rem;">
+    <tbody>
+    <tr>
+        <td style="padding: 0.25rem;"><b>From</b></td>
+        <td style="padding: 0.25rem;"><code>@include sap-media-from($width) {...}</code></td>
+        <td style="padding: 0.25rem;"><code>@media screen and (min-width: $width) { @content; }</code></td>
+    </tr>
+    <tr>
+        <td style="padding: 0.25rem;"><b>Until</b></td>
+        <td style="padding: 0.25rem;"><code>@include sap-media-until($width) {...}</code></td>
+        <td style="padding: 0.25rem;"><code>@media screen and (max-width: $width) { @content; }</code></td>
+    </tr>
+    </tbody>
+</table>
+
+<br><br>
+
 <h3>Orientation</h3>
 <table style="width: 100%; border-collapse: collapse; margin-top: 1rem;">
     <tbody>

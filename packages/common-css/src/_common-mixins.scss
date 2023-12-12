@@ -341,46 +341,6 @@
   @content;
 }
 
-// Content paddings
-@mixin sap-set-content-paddings($type, $value) {
-  @if ($type == 'home') {
-    padding-left: map-get($sap-content-paddings-home, $value) !important;
-    padding-right: map-get($sap-content-paddings-home, $value) !important;
-  } @else if ($type == 'container') {
-    padding-left: map-get($sap-content-paddings-container, $value) !important;
-    padding-right: map-get($sap-content-paddings-container, $value) !important;
-  } @else {
-    padding-left: map-get($sap-content-paddings-nav, $value) !important;
-    padding-right: map-get($sap-content-paddings-nav, $value) !important;
-  }
-}
-
-@mixin sap-set-dynamic-content-paddings($type) {
-  @include sap-media-sm() {
-    @include sap-set-content-paddings($type, 'sm');
-  }
-
-  @include sap-media-md() {
-    @include sap-set-content-paddings($type, 'md');
-  }
-
-  @include sap-media-lg() {
-    @include sap-set-content-paddings($type, 'lg');
-  }
-
-  @include sap-media-xl() {
-    @include sap-set-content-paddings($type, 'xl');
-  }
-}
-
-@mixin sap-content-paddings($type: home, $size: default) {
-  @if ($size == default) {
-    @include sap-set-dynamic-content-paddings($type);
-  } @else {
-    @include sap-set-content-paddings($type, $size);
-  }
-}
-
 // Flex
 @mixin sap-flex($direction: row) {
   display: flex;
@@ -659,6 +619,60 @@
   }
 }
 
+@mixin sap-media-from($width) {
+  @media screen and (min-width: $width) {
+    @content;
+  }
+}
+
+@mixin sap-media-until($width) {
+  @media screen and (max-width: $width) {
+    @content;
+  }
+}
+
+// Container Queries
+@mixin sap-container-type($type: normal) {
+  container-type: $type;
+  @content;
+}
+
+@mixin sap-container-query-from($width) {
+  @container (min-width: $width) {
+    @content;
+  }
+}
+
+@mixin sap-container-query-until($width) {
+  @container (max-width: $width) {
+    @content;
+  }
+}
+
+@mixin sap-container-query-sm() {
+  @container (max-width: 599px) {
+    @content;
+  }
+}
+
+@mixin sap-container-query-md() {
+  @container (600px <= width <= 1023px) {
+    @content;
+  }
+}
+
+@mixin sap-container-query-lg() {
+  @container (1024px <= width <= 1439px) {
+    @content;
+  }
+}
+
+@mixin sap-container-query-xl() {
+  @container (min-width: 1440px) {
+    @content;
+  }
+}
+
 // Paddings
 @mixin sap-set-padding-all($value: 0) {
   padding: $value;
@@ -760,6 +774,68 @@
   @include sap-media-xl() {
     @include sap-padding(large, x);
     @include sap-padding(0, y);
+  }
+}
+
+@mixin sap-padding-container-responsive() {
+  @include sap-container-query-sm() {
+    @include sap-padding(small, x);
+    @include sap-padding(0, y);
+  }
+
+  @include sap-container-query-md() {
+    @include sap-padding(medium, x);
+    @include sap-padding(0, y);
+  }
+
+  @include sap-container-query-lg() {
+    @include sap-padding(medium, x);
+    @include sap-padding(0, y);
+  }
+
+  @include sap-container-query-xl() {
+    @include sap-padding(large, x);
+    @include sap-padding(0, y);
+  }
+}
+
+// Content paddings
+@mixin sap-set-content-paddings($type, $value) {
+  @if ($type == 'home') {
+    padding-left: map-get($sap-content-paddings-home, $value) !important;
+    padding-right: map-get($sap-content-paddings-home, $value) !important;
+  } @else if ($type == 'container') {
+    padding-left: map-get($sap-content-paddings-container, $value) !important;
+    padding-right: map-get($sap-content-paddings-container, $value) !important;
+  } @else {
+    padding-left: map-get($sap-content-paddings-nav, $value) !important;
+    padding-right: map-get($sap-content-paddings-nav, $value) !important;
+  }
+}
+
+@mixin sap-set-dynamic-content-paddings($type) {
+  @include sap-container-query-sm() {
+    @include sap-set-content-paddings($type, 'sm');
+  }
+
+  @include sap-container-query-md() {
+    @include sap-set-content-paddings($type, 'md');
+  }
+
+  @include sap-container-query-lg() {
+    @include sap-set-content-paddings($type, 'lg');
+  }
+
+  @include sap-container-query-xl() {
+    @include sap-set-content-paddings($type, 'xl');
+  }
+}
+
+@mixin sap-content-paddings($type: home, $size: default) {
+  @if ($size == default) {
+    @include sap-set-dynamic-content-paddings($type);
+  } @else {
+    @include sap-set-content-paddings($type, $size);
   }
 }
 
