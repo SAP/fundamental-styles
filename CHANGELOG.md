@@ -1,3 +1,12 @@
+## [0.33.1-rc.6](https://github.com/SAP/fundamental-styles/compare/v0.33.1-rc.5...v0.33.1-rc.6) (2023-12-12)
+
+
+### Features
+
+* **common-css:** add CSS container quesries to common-css [ci visual] ([#5046](https://github.com/SAP/fundamental-styles/issues/5046)) ([f4bc992](https://github.com/SAP/fundamental-styles/commit/f4bc992de1de5d9b00fc829c9c57c33ae5050046))
+
+
+
 ## [0.33.1-rc.5](https://github.com/SAP/fundamental-styles/compare/v0.33.1-rc.4...v0.33.1-rc.5) (2023-12-11)
 
 
