@@ -16,6 +16,10 @@ $block: #{$sap-namespace}-padding;
     @include sap-padding-responsive();
   }
 
+  &-responsive-container {
+    @include sap-padding-container-responsive();
+  }
+
   &-none {
     @include sap-padding(0);
   }

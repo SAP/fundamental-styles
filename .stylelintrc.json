@@ -3,6 +3,7 @@
   "plugins": ["stylelint-scss"],
   "rules": {
     "at-rule-no-unknown": null,
+    "property-no-unknown": null,
     "at-rule-empty-line-before": [
       "always",
       {
@@ -28,7 +29,7 @@
     "scss/at-import-no-partial-leading-underscore": true,
     "scss/at-mixin-argumentless-call-parentheses": "always",
     "scss/at-mixin-parentheses-space-before": "never",
-    "scss/at-rule-no-unknown": true,
+    "scss/at-rule-no-unknown": null,
     "scss/declaration-nested-properties-no-divided-groups": true,
     "scss/declaration-nested-properties": "never",
     "scss/dollar-variable-colon-space-after": "always",
