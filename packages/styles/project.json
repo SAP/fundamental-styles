@@ -34,11 +34,8 @@
             "outputs": ["{workspaceRoot}/stories/Visuals/styles"]
         },
         "lint": {
-            "executor": "@nx/linter:eslint",
-            "outputs": ["{options.outputFile}"],
-            "options": {
-                "lintFilePatterns": ["packages/styles/**/*.ts"]
-            }
+            "executor": "@nx/eslint:lint",
+            "outputs": ["{options.outputFile}"]
         },
         "stylelint": {
             "executor": "nx-stylelint:lint",
