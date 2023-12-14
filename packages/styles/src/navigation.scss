@@ -27,6 +27,7 @@ $navItemChild: #{$block}__item--child;
 $navItemGroup: #{$block}__item--group;
 $navItemOverflow: #{$block}__item--overflow;
 $navItemWithExpander: #{$block}__item--with-expander;
+$navItemSubmenuChild: #{$block}__item--submenu-child;
 
 // Nav List
 $navList: #{$block}__list;
@@ -957,7 +958,7 @@ $navListContainerSubmenu: #{$block}__list-container--submenu;
       }
     }
 
-    .#{$navListContainer} {
+    .#{$navListContainer}:not(.#{$navListContainerSubmenu}) {
       --fdPopover_Offset: calc(100% + 0.3875rem);
 
       border: none;
@@ -979,7 +980,7 @@ $navListContainerSubmenu: #{$block}__list-container--submenu;
         }
 
         .#{$navList} {
-          --fdNavigation_Item_Spacing: 0;
+          --fdNavigation_Item_Spacing: 0.25rem;
 
           box-shadow: none;
         }
@@ -992,6 +993,11 @@ $navListContainerSubmenu: #{$block}__list-container--submenu;
               @include fd-rtl-pseudo() {
                 --fdNavigation_Link_Has_Child_Indicator_Icon: '\e1ee';
               }
+            }
+          }
+          &.#{$navItemOverflow} {
+            .#{$navChildrenIndicator} {
+              display: none;
             }
           }
         }
@@ -1024,7 +1030,7 @@ $navListContainerSubmenu: #{$block}__list-container--submenu;
     }
 
     .#{$navItem} {
-      &:not(.#{$navItemWithExpander}) {
+      &:not(.#{$navItemWithExpander}):not(.#{$navItemOverflow}) {
         @include fd-expanded() {
           .#{$navLink} {
             --fdNavigation_Link_Child_Indicator_Opacity: 1;
@@ -1053,8 +1059,10 @@ $navListContainerSubmenu: #{$block}__list-container--submenu;
     }
 
     .#{$navItemChild} {
-      .#{$navLink} {
-        --fdNavigation_Link_Padding_Left: 0.5rem;
+      &:not(.#{$navItemSubmenuChild}) {
+        .#{$navLink} {
+          --fdNavigation_Link_Padding_Left: 0.5rem;
+        }
       }
     }
 
