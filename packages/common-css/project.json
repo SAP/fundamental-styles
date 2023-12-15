@@ -16,6 +16,16 @@
                         "glob": "_common-mixins.scss",
                         "input": "packages/common-css/src",
                         "output": "dist/sass"
+                    },
+                    {
+                        "glob": "_common-variables.scss",
+                        "input": "packages/common-css/src",
+                        "output": "dist/sass"
+                    },
+                    {
+                        "glob": "_common-settings.scss",
+                        "input": "packages/common-css/src",
+                        "output": "dist/sass"
                     }
                 ]
             },
