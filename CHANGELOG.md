@@ -1,3 +1,12 @@
+## [0.33.1-rc.9](https://github.com/SAP/fundamental-styles/compare/v0.33.1-rc.8...v0.33.1-rc.9) (2023-12-15)
+
+
+### Bug Fixes
+
+* **common-css:** missing scss files in distribution ([#5049](https://github.com/SAP/fundamental-styles/issues/5049)) ([9655c67](https://github.com/SAP/fundamental-styles/commit/9655c67e78a493e07daca4949d05f93940f08943))
+
+
+
 ## [0.33.1-rc.8](https://github.com/SAP/fundamental-styles/compare/v0.33.1-rc.7...v0.33.1-rc.8) (2023-12-15)
 
 
