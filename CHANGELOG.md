@@ -1,3 +1,12 @@
+## [0.33.1-rc.8](https://github.com/SAP/fundamental-styles/compare/v0.33.1-rc.7...v0.33.1-rc.8) (2023-12-15)
+
+
+### Features
+
+* **styles:** horizontal nav update ([#5050](https://github.com/SAP/fundamental-styles/issues/5050)) ([5e5d6a4](https://github.com/SAP/fundamental-styles/commit/5e5d6a433b333212359b790ba372d4f57b775c28))
+
+
+
 ## [0.33.1-rc.7](https://github.com/SAP/fundamental-styles/compare/v0.33.1-rc.6...v0.33.1-rc.7) (2023-12-13)
 
 
