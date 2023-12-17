@@ -6176,12 +6176,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/addon-viewport@npm:7.6.4":
-  version: 7.6.4
-  resolution: "@storybook/addon-viewport@npm:7.6.4"
+"@storybook/addon-viewport@npm:7.6.5":
+  version: 7.6.5
+  resolution: "@storybook/addon-viewport@npm:7.6.5"
   dependencies:
     memoizerific: ^1.11.3
-  checksum: bbba851599552dbf8d69e5ba9b3ed92c94b98ba420c1fe403ef69531cc3bd5f3c141ddf7c622f04d424b963f01a92756c04dc428f5f24ef26c4fa158eacbbc3e
+  checksum: de54b071d9117ed468f170c4a15b551dab83ba97b1716847affe48c96dcfa3b5992dfca8e35a98f240b8f2a00b45d6b4b8e53cf7c1019853ba5e595c35c84592
   languageName: node
   linkType: hard
 
@@ -14357,7 +14357,7 @@ __metadata:
     "@storybook/addon-mdx-gfm": 7.6.4
     "@storybook/addon-storyshots": 7.6.4
     "@storybook/addon-toolbars": 7.6.4
-    "@storybook/addon-viewport": 7.6.4
+    "@storybook/addon-viewport": 7.6.5
     "@storybook/addons": 7.6.4
     "@storybook/blocks": ^7.6.4
     "@storybook/components": 7.6.4
