@@ -146,7 +146,7 @@
     "tocbot": "^4.12.3",
     "ts-node": "10.9.2",
     "tslib": "^2.3.0",
-    "typescript": "5.2.2",
+    "typescript": "5.3.3",
     "vite": "^4.3.3",
     "vite-tsconfig-paths": "^4.2.0",
     "vitest": "^0.30.1",
