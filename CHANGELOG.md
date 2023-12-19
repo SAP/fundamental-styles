@@ -1,3 +1,12 @@
+## [0.33.1-rc.10](https://github.com/SAP/fundamental-styles/compare/v0.33.1-rc.9...v0.33.1-rc.10) (2023-12-19)
+
+
+### Bug Fixes
+
+* **styles:** btp nav expander spanned state [ci visual] ([#5061](https://github.com/SAP/fundamental-styles/issues/5061)) ([7a54749](https://github.com/SAP/fundamental-styles/commit/7a54749e9b49cc42b12f809c0ef464e445488072))
+
+
+
 ## [0.33.1-rc.9](https://github.com/SAP/fundamental-styles/compare/v0.33.1-rc.8...v0.33.1-rc.9) (2023-12-15)
 
 
