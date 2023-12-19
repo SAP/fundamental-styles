@@ -864,15 +864,19 @@ $navListContainerSubmenu: #{$block}__list-container--submenu;
     .#{$navItemWithExpander} {
       position: relative;
 
-      .#{$navLink} {
-        --fdNavigation_Link_Padding_Right: 2.1975rem;
-      }
-
       .#{$navExpander} {
         @include fd-set-position-right(var(--fdNavigation_Expander_Position_Right));
 
         position: absolute;
         z-index: 20;
+      }
+    }
+
+    &:not(.#{$block}--snapped) {
+      .#{$navItemWithExpander} {
+        .#{$navLink} {
+          --fdNavigation_Link_Padding_Right: 2.1975rem;
+        }
       }
     }
   }
