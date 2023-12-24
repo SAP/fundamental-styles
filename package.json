@@ -70,7 +70,7 @@
     "@storybook/addon-actions": "7.6.5",
     "@storybook/addon-controls": "7.6.5",
     "@storybook/addon-cssresources": "6.2.9",
-    "@storybook/addon-docs": "7.6.5",
+    "@storybook/addon-docs": "7.6.6",
     "@storybook/addon-links": "7.6.5",
     "@storybook/addon-mdx-gfm": "7.6.5",
     "@storybook/addon-storyshots": "7.6.5",
