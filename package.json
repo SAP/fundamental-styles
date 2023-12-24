@@ -60,7 +60,7 @@
     "@jsdevtools/npm-publish": "^1.4.3",
     "@nx/devkit": "17.2.3",
     "@nx/eslint": "17.2.3",
-    "@nx/eslint-plugin": "17.2.3",
+    "@nx/eslint-plugin": "17.2.7",
     "@nx/js": "17.2.3",
     "@nx/plugin": "17.2.3",
     "@nx/react": "17.2.3",
