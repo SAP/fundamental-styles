@@ -4801,21 +4801,21 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@nrwl/devkit@npm:16.6.0, @nrwl/devkit@npm:>=14.0.0":
-  version: 16.6.0
-  resolution: "@nrwl/devkit@npm:16.6.0"
-  dependencies:
-    "@nx/devkit": 16.6.0
-  checksum: 37ebdd6b0d59202e5609e9bd1c38db603cf8aabdd5e06d1301512abaca7383b51c9f19b93c83bca50deafc8920cb7af7ad4f5905a6540c24597a0d23ac88f78b
-  languageName: node
-  linkType: hard
-
 "@nrwl/devkit@npm:17.2.3":
   version: 17.2.3
   resolution: "@nrwl/devkit@npm:17.2.3"
   dependencies:
     "@nx/devkit": 17.2.3
   checksum: f2cf73863da6ebc7fcf14ce8b5f4e42c77953e72c4476572d969e69ab6d5408237454bbc1f7ce614282d2f05d3f9bc34316821436c710460a6a728182e3cc4b4
+  languageName: node
+  linkType: hard
+
+"@nrwl/devkit@npm:17.2.7":
+  version: 17.2.7
+  resolution: "@nrwl/devkit@npm:17.2.7"
+  dependencies:
+    "@nx/devkit": 17.2.7
+  checksum: 8b7c0657acef5ea282c3a0082c933a2265cd94e6230974f4669901a06dc167235188a59b5132a339909e5b8524cddf30e941b91bbbbee56da7480705ced94cf6
   languageName: node
   linkType: hard
 
@@ -4894,22 +4894,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@nx/devkit@npm:16.6.0":
-  version: 16.6.0
-  resolution: "@nx/devkit@npm:16.6.0"
-  dependencies:
-    "@nrwl/devkit": 16.6.0
-    ejs: ^3.1.7
-    ignore: ^5.0.4
-    semver: 7.5.3
-    tmp: ~0.2.1
-    tslib: ^2.3.0
-  peerDependencies:
-    nx: ">= 15 <= 17"
-  checksum: 015d60bbf3f09384b3184093083397edeb11b836454169403625808ec1a098b4de86e18ed21365c53b0f7e4d6fcd3a17b8d6c18ad57f9e48b61702158aa8b322
-  languageName: node
-  linkType: hard
-
 "@nx/devkit@npm:17.2.3":
   version: 17.2.3
   resolution: "@nx/devkit@npm:17.2.3"
@@ -4924,6 +4908,23 @@ __metadata:
   peerDependencies:
     nx: ">= 16 <= 18"
   checksum: be2689ac7b8a8334f1abc1b9d5fd5939a1ec3b0b5fed4430132c244e721a2fea7986ac9b1295989846fe84afff1ad235ac31667c073268afa462a4795ff84530
+  languageName: node
+  linkType: hard
+
+"@nx/devkit@npm:17.2.7, @nx/devkit@npm:>=17.0.0":
+  version: 17.2.7
+  resolution: "@nx/devkit@npm:17.2.7"
+  dependencies:
+    "@nrwl/devkit": 17.2.7
+    ejs: ^3.1.7
+    enquirer: ~2.3.6
+    ignore: ^5.0.4
+    semver: 7.5.3
+    tmp: ~0.2.1
+    tslib: ^2.3.0
+  peerDependencies:
+    nx: ">= 16 <= 18"
+  checksum: b5b8b3b2065e5d0c9c93fdc9890cc79d5d28097c2a034442df2a02d66d1ac94e33c77d8d2e299e4cce8d703cb3cd56e62b3a591b38263ace2664ddd197284552
   languageName: node
   linkType: hard
 
@@ -14407,7 +14408,7 @@ __metadata:
     normalize.css: ^8.0.1
     npm-run-all: ^4.1.5
     nx: 17.2.3
-    nx-stylelint: ^14.0.2
+    nx-stylelint: ^17.1.0
     postcss: 8.4.32
     postcss-banner: ^4.0.0
     postcss-cli: ^9.0.1
@@ -19588,25 +19589,22 @@ __metadata:
   languageName: node
   linkType: hard
 
-"nx-stylelint@npm:^14.0.2":
-  version: 14.0.2
-  resolution: "nx-stylelint@npm:14.0.2"
+"nx-stylelint@npm:^17.1.0":
+  version: 17.1.0
+  resolution: "nx-stylelint@npm:17.1.0"
   dependencies:
-    "@nrwl/devkit": ">=14.0.0"
-    tslib: ^2.4.0
+    "@nx/devkit": ">=17.0.0"
+    tslib: ^2.6.2
   peerDependencies:
-    stylelint: ^14.10.0
-    stylelint-config-prettier: ">=8.0.0"
-    stylelint-config-standard: ">=24.0.0"
-    stylelint-config-standard-scss: ">=3.0.0"
+    stylelint: ^15.0.0 || ^16.0.0
+    stylelint-config-standard: ">=30.0.0"
+    stylelint-config-standard-scss: ">=7.0.0"
   peerDependenciesMeta:
-    stylelint-config-prettier:
-      optional: true
     stylelint-config-standard:
       optional: true
     stylelint-config-standard-scss:
       optional: true
-  checksum: 6481293d8c646464efd0c5b8d1605a090d25753db16cd817097cd38585841235b587916d9e48d26ed8a45faa9a86707f3954133a973a3e60c4cdcf542b3f9fd6
+  checksum: 160f162688b5f7fa6e24bea64833ec94b3f73f1d77e32d72dd9473ae5a7da090b5025e2dfc35df89324cedb7e330a75f55d8f08fc823a259d44e89c83cafc258
   languageName: node
   linkType: hard
 
@@ -25072,7 +25070,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"tslib@npm:^2.0.0, tslib@npm:^2.0.1, tslib@npm:^2.0.3, tslib@npm:^2.1.0, tslib@npm:^2.3.0, tslib@npm:^2.4.0":
+"tslib@npm:^2.0.0, tslib@npm:^2.0.1, tslib@npm:^2.0.3, tslib@npm:^2.1.0, tslib@npm:^2.3.0, tslib@npm:^2.4.0, tslib@npm:^2.6.2":
   version: 2.6.2
   resolution: "tslib@npm:2.6.2"
   checksum: 329ea56123005922f39642318e3d1f0f8265d1e7fcb92c633e0809521da75eeaca28d2cf96d7248229deb40e5c19adf408259f4b9640afd20d13aecc1430f3ad
