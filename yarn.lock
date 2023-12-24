@@ -6070,9 +6070,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/addon-links@npm:7.6.5":
-  version: 7.6.5
-  resolution: "@storybook/addon-links@npm:7.6.5"
+"@storybook/addon-links@npm:7.6.6":
+  version: 7.6.6
+  resolution: "@storybook/addon-links@npm:7.6.6"
   dependencies:
     "@storybook/csf": ^0.1.2
     "@storybook/global": ^5.0.0
@@ -6082,7 +6082,7 @@ __metadata:
   peerDependenciesMeta:
     react:
       optional: true
-  checksum: 1ea2eaeff4d16cf5b1346d598f845fc0895ed50f4207844b61e3cdcf8328e68a2f1672e2550434d171aa83321673557ec7f67f9b0f476f4350b730ef69c57d11
+  checksum: e88051c2a3194d17e162c6af6d4342b6a3fee92420d030131439b059e73579589200722622c4659b0a80f8a79bea29d3482e3d9c704c4411e09e214565bbc3f1
   languageName: node
   linkType: hard
 
@@ -14353,7 +14353,7 @@ __metadata:
     "@storybook/addon-controls": 7.6.5
     "@storybook/addon-cssresources": 6.2.9
     "@storybook/addon-docs": 7.6.5
-    "@storybook/addon-links": 7.6.5
+    "@storybook/addon-links": 7.6.6
     "@storybook/addon-mdx-gfm": 7.6.5
     "@storybook/addon-storyshots": 7.6.5
     "@storybook/addon-toolbars": 7.6.5
