@@ -1,3 +1,12 @@
+## [0.33.1-rc.13](https://github.com/SAP/fundamental-styles/compare/v0.33.1-rc.12...v0.33.1-rc.13) (2023-12-26)
+
+
+### Bug Fixes
+
+* **styles:** toolbar title font size [ci visual] ([#5074](https://github.com/SAP/fundamental-styles/issues/5074)) ([f9e9aa4](https://github.com/SAP/fundamental-styles/commit/f9e9aa4f0a2a2f6a01a91c94410b1ac20d198297))
+
+
+
 ## [0.33.1-rc.12](https://github.com/SAP/fundamental-styles/compare/v0.33.1-rc.11...v0.33.1-rc.12) (2023-12-19)
 
 
