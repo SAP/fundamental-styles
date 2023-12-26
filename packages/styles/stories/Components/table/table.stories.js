@@ -45,6 +45,7 @@ import '../../../src/menu.scss';
 import '../../../src/text.scss';
 import '../../../src/object-number.scss';
 import '../../../src/object-marker.scss';
+import '../../../src/title.scss';
 // INCOMPLETE
 export default {
   title: 'Components/Table',

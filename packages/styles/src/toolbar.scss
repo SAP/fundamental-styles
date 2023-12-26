@@ -96,9 +96,11 @@ $block: #{$fd-namespace}-toolbar;
     }
   }
 
-  &__title {
-    color: var(--sapGroup_TitleTextColor);
-    font-size: var(--sapGroup_Title_FontSize);
+  .#{$block} {
+    &__title {
+      --fdTitle_Font_Size: var(--sapGroup_Title_FontSize);
+      --fdTitle_Color: var(--sapGroup_TitleTextColor);
+    }
   }
 
   // Modifiers
