@@ -63,7 +63,7 @@
     "@nx/eslint-plugin": "17.2.3",
     "@nx/js": "17.2.3",
     "@nx/plugin": "17.2.3",
-    "@nx/react": "17.2.3",
+    "@nx/react": "17.2.8",
     "@nx/web": "17.2.3",
     "@sap-theming/theming-base-content": "11.9.0",
     "@storybook/addon-a11y": "7.6.5",
