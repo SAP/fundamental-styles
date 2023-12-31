@@ -10526,20 +10526,20 @@ __metadata:
   linkType: hard
 
 "clean-css-cli@npm:^5.4.1":
-  version: 5.6.2
-  resolution: "clean-css-cli@npm:5.6.2"
+  version: 5.6.3
+  resolution: "clean-css-cli@npm:5.6.3"
   dependencies:
     chokidar: ^3.5.2
-    clean-css: ^5.3.2
+    clean-css: ^5.3.3
     commander: 7.x
     glob: ^7.1.6
   bin:
     cleancss: bin/cleancss
-  checksum: a37e2ee865ca0522e403c8797ac6353f287883fc4968f246a0fc5fd7141adbc467c37dd51f7ef13458cf5a8adb9786374d58e8e92a67dedb7b425d09f4c508eb
+  checksum: 1b8452c76eaeaa6eca6900e2135dd1ffac62bd67c058c6320b8f2f0b932904eb3e772d13c77b340e21e35bb655b8911bf9ce96104424836db8d71d0eaa4cad2d
   languageName: node
   linkType: hard
 
-"clean-css@npm:^5.2.2, clean-css@npm:^5.3.0, clean-css@npm:^5.3.2":
+"clean-css@npm:^5.2.2, clean-css@npm:^5.3.0, clean-css@npm:^5.3.3":
   version: 5.3.3
   resolution: "clean-css@npm:5.3.3"
   dependencies:
