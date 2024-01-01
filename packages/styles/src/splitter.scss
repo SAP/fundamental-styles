@@ -212,7 +212,8 @@ $block: #{$fd-namespace}-splitter;
       gap: var(--fdSplitter_Resizer_Gap);
     }
 
-    overflow: hidden;
+    overflow: visible;
+    position: relative;
     border-radius: 0.5rem;
     width: var(--fdSplitter_Resizer_Width);
     height: var(--fdSplitter_Resizer_Height);
