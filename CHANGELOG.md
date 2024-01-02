@@ -1,3 +1,12 @@
+## [0.33.1-rc.14](https://github.com/SAP/fundamental-styles/compare/v0.33.1-rc.13...v0.33.1-rc.14) (2024-01-02)
+
+
+### Bug Fixes
+
+* **styles:** compact switch fiori [ci visual] ([#5086](https://github.com/SAP/fundamental-styles/issues/5086)) ([7308bdd](https://github.com/SAP/fundamental-styles/commit/7308bddaf236a245dbf0f247f660005cbf5bfe7d))
+
+
+
 ## [0.33.1-rc.13](https://github.com/SAP/fundamental-styles/compare/v0.33.1-rc.12...v0.33.1-rc.13) (2023-12-26)
 
 
