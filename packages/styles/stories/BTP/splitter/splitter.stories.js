@@ -7,7 +7,7 @@ import '../../../src/splitter.scss';
 import '../../../src/icon.scss';
 import '../../../src/button.scss';
 export default {
-  title: 'Components/Splitter',
+  title: 'BTP/Splitter',
   parameters: {
     description: `The Responsive Splitter Layout structures complex application content into defined areas. The areas are resizable manually and programmatically by external triggers such as buttons or menu entries. The split panes and their parent containers are parts of the splitter and have properties that can be changed to meet the application’s needs.
 
