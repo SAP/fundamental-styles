@@ -1,3 +1,12 @@
+## [0.33.1-rc.15](https://github.com/SAP/fundamental-styles/compare/v0.33.1-rc.14...v0.33.1-rc.15) (2024-01-02)
+
+
+### Bug Fixes
+
+* splitter resizer overflow and positioning ([#5085](https://github.com/SAP/fundamental-styles/issues/5085)) ([ea6c693](https://github.com/SAP/fundamental-styles/commit/ea6c693c1309074343b8fb46fee0d6bd55ea160a))
+
+
+
 ## [0.33.1-rc.14](https://github.com/SAP/fundamental-styles/compare/v0.33.1-rc.13...v0.33.1-rc.14) (2024-01-02)
 
 
