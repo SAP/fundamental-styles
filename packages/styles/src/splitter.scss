@@ -3,6 +3,65 @@
 
 $block: #{$fd-namespace}-splitter;
 
+@mixin fd-splitter-line-horizontal($fullWidth) {
+  height: var(--fdSplitter_Resizer_Line_Thickness);
+
+  @if $fullWidth {
+    flex-grow: 1;
+  } @else {
+    flex-basis: var(--fdSplitter_Resizer_Line_Size);
+  }
+}
+
+@mixin fd-splitter-line-vertical($fullHeight) {
+  width: var(--fdSplitter_Resizer_Line_Thickness);
+
+  @if $fullHeight {
+    flex-grow: 1;
+  } @else {
+    flex-basis: var(--fdSplitter_Resizer_Line_Size);
+  }
+}
+
+@mixin fd-splitter-resizer-decorations() {
+  .#{$block}__resizer-decoration-before,
+  .#{$block}__resizer-decoration-after {
+    @content;
+  }
+}
+
+@mixin fd-splitter-resizer-decoration-before-active() {
+  @include fd-active() {
+    & ~ .#{$block}__resizer-decoration-before {
+      @content;
+    }
+  }
+}
+
+@mixin fd-splitter-resizer-decoration-after-active() {
+  @include fd-active() {
+    & ~ .#{$block}__resizer-decoration-after {
+      @content;
+    }
+  }
+}
+
+@mixin fd-splitter-resizer-decoration-before-focus() {
+  @include fd-focus() {
+    & ~ .#{$block}__resizer-decoration-before {
+      @content;
+    }
+  }
+}
+
+@mixin fd-splitter-resizer-decoration-after-focus() {
+  @include fd-focus() {
+    & ~ .#{$block}__resizer-decoration-after {
+      @content;
+    }
+  }
+}
+
 .#{$block} {
   --fdSplitter_Split_Pane_BoxShadow: none;
   --fdSplitter_Split_Pane_Background: transparent;
@@ -16,51 +75,20 @@ $block: #{$fd-namespace}-splitter;
   --fdSplitter_Resizer_Grip_Cursor: auto;
   --fdSplitter_Resizer_Flex_Direction: row;
   --fdSplitter_Resizer_Background: transparent;
-  --fdSplitter_Resizer_Before_Width: 4rem;
-  --fdSplitter_Resizer_Before_Height: 0.0625rem;
-  --fdSplitter_Resizer_Before_Border_Radius: 0.125rem;
   --fdSplitter_Resizer_Before_Background: linear-gradient(to left, var(--sapGroup_TitleBorderColor), transparent);
-  --fdSplitter_Resizer_After_Width: 4rem;
-  --fdSplitter_Resizer_After_Height: 0.0625rem;
-  --fdSplitter_Resizer_After_Border_Radius: 0.125rem;
   --fdSplitter_Resizer_After_Background: linear-gradient(to right, var(--sapGroup_TitleBorderColor), transparent);
-
-  @mixin fd-splitter-resizer-decoration-before-active() {
-    @include fd-active() {
-      & ~ .#{$block}__resizer-decoration-before {
-        @content;
-      }
-    }
-  }
-
-  @mixin fd-splitter-resizer-decoration-after-active() {
-    @include fd-active() {
-      & ~ .#{$block}__resizer-decoration-after {
-        @content;
-      }
-    }
-  }
-
-  @mixin fd-splitter-resizer-decoration-before-focus() {
-    @include fd-focus() {
-      & ~ .#{$block}__resizer-decoration-before {
-        @content;
-      }
-    }
-  }
-
-  @mixin fd-splitter-resizer-decoration-after-focus() {
-    @include fd-focus() {
-      & ~ .#{$block}__resizer-decoration-after {
-        @content;
-      }
-    }
-  }
-
-  @include fd-flex();
+  --fdSplitter_Resizer_Line_Border_Radius: 0.125rem;
+  --fdSplitter_Resizer_Line_Thickness: 0.0625rem;
+  --fdSplitter_Resizer_Line_Size: 4rem;
 
   width: 100%;
   height: 100%;
+
+  @include fd-flex();
+
+  @include fd-splitter-resizer-decorations() {
+    @include fd-splitter-line-horizontal(false);
+  }
 
   &,
   &__pagination,
@@ -96,15 +124,21 @@ $block: #{$fd-namespace}-splitter;
       --fdSplitter_Resizer_Width: auto;
       --fdSplitter_Resizer_Height: 1rem;
       --fdSplitter_Resizer_Flex_Direction: row;
+      --fdSplitter_Resizer_Cursor: row-resize;
       --fdSplitter_Pane_Container_Flex_Direction: column;
-      --fdSplitter_Resizer_Before_Width: 4rem;
-      --fdSplitter_Resizer_Before_Height: 0.0625rem;
       --fdSplitter_Resizer_Before_Background: linear-gradient(to left, var(--sapGroup_TitleBorderColor), transparent);
-      --fdSplitter_Resizer_After_Width: 4rem;
-      --fdSplitter_Resizer_After_Height: 0.0625rem;
       --fdSplitter_Resizer_After_Background: linear-gradient(to right, var(--sapGroup_TitleBorderColor), transparent);
 
       & > .#{$block}__resizer {
+        @include fd-splitter-resizer-decorations() {
+          @include fd-splitter-line-horizontal(false);
+        }
+
+        @include fd-active() {
+          @include fd-splitter-resizer-decorations() {
+            @include fd-splitter-line-horizontal(true);
+          }
+        }
         .#{$block}__resizer-grip {
           --fdSplitter_Resizer_Grip_Cursor: row-resize;
 
@@ -117,12 +151,14 @@ $block: #{$fd-namespace}-splitter;
           }
 
           @include fd-splitter-resizer-decoration-before-active() {
-            --fdSplitter_Resizer_Before_Width: 100%;
+            @include fd-splitter-line-horizontal(true);
+
             --fdSplitter_Resizer_Before_Background: var(--sapGroup_TitleBorderColor);
           }
 
           @include fd-splitter-resizer-decoration-after-active() {
-            --fdSplitter_Resizer_After_Width: 100%;
+            @include fd-splitter-line-horizontal(true);
+
             --fdSplitter_Resizer_After_Background: var(--sapGroup_TitleBorderColor);
           }
         }
@@ -133,14 +169,19 @@ $block: #{$fd-namespace}-splitter;
       --fdSplitter_Resizer_Width: 1rem;
       --fdSplitter_Resizer_Cursor: col-resize;
       --fdSplitter_Resizer_Flex_Direction: column;
-      --fdSplitter_Resizer_Before_Height: 4rem;
-      --fdSplitter_Resizer_Before_Width: 0.0625rem;
       --fdSplitter_Resizer_Before_Background: linear-gradient(to top, var(--sapGroup_TitleBorderColor), transparent);
-      --fdSplitter_Resizer_After_Height: 4rem;
-      --fdSplitter_Resizer_After_Width: 0.0625rem;
       --fdSplitter_Resizer_After_Background: linear-gradient(to bottom, var(--sapGroup_TitleBorderColor), transparent);
 
       & > .#{$block}__resizer {
+        @include fd-splitter-resizer-decorations() {
+          @include fd-splitter-line-vertical(false);
+        }
+
+        @include fd-active() {
+          @include fd-splitter-resizer-decorations() {
+            @include fd-splitter-line-vertical(true);
+          }
+        }
         .#{$block}__resizer-grip {
           --fdSplitter_Resizer_Grip_Cursor: col-resize;
 
@@ -153,33 +194,21 @@ $block: #{$fd-namespace}-splitter;
           }
 
           @include fd-splitter-resizer-decoration-before-active() {
-            --fdSplitter_Resizer_Before_Height: 100%;
+            @include fd-splitter-line-vertical(true);
+
             --fdSplitter_Resizer_Before_Background: var(--sapGroup_TitleBorderColor);
           }
 
           @include fd-splitter-resizer-decoration-after-active() {
-            --fdSplitter_Resizer_After_Height: 100%;
+            @include fd-splitter-line-vertical(true);
+
             --fdSplitter_Resizer_After_Background: var(--sapGroup_TitleBorderColor);
           }
-        }
-
-        @include fd-active() {
-          --fdSplitter_Resizer_Before_Height: 100%;
-          --fdSplitter_Resizer_Before_Width: 0.0625rem;
-          --fdSplitter_Resizer_After_Height: 100%;
-          --fdSplitter_Resizer_After_Width: 0.0625rem;
         }
 
         @include fd-focus() {
           --fdSplitter_Resizer_Before_Background: linear-gradient(to top, var(--sapContent_FocusColor), transparent);
           --fdSplitter_Resizer_After_Background: linear-gradient(to bottom, var(--sapContent_FocusColor), transparent);
-
-          @include fd-active() {
-            --fdSplitter_Resizer_Before_Height: 100%;
-            --fdSplitter_Resizer_Before_Width: 0.0625rem;
-            --fdSplitter_Resizer_After_Height: 100%;
-            --fdSplitter_Resizer_After_Width: 0.0625rem;
-          }
         }
       }
     }
@@ -231,9 +260,7 @@ $block: #{$fd-namespace}-splitter;
     }
 
     @include fd-active() {
-      --fdSplitter_Resizer_Before_Width: 100%;
       --fdSplitter_Resizer_Before_Background: var(--sapGroup_TitleBorderColor);
-      --fdSplitter_Resizer_After_Width: 100%;
       --fdSplitter_Resizer_After_Background: var(--sapGroup_TitleBorderColor);
     }
 
@@ -242,9 +269,7 @@ $block: #{$fd-namespace}-splitter;
       --fdSplitter_Resizer_After_Background: linear-gradient(to right, var(--sapContent_FocusColor), transparent);
 
       @include fd-active() {
-        --fdSplitter_Resizer_Before_Width: 100%;
         --fdSplitter_Resizer_Before_Background: var(--sapGroup_TitleBorderColor);
-        --fdSplitter_Resizer_After_Width: 100%;
         --fdSplitter_Resizer_After_Background: var(--sapGroup_TitleBorderColor);
       }
     }
@@ -253,19 +278,15 @@ $block: #{$fd-namespace}-splitter;
   &__resizer-decoration-before {
     order: 1;
     transition: all 0.1s ease-in;
-    height: var(--fdSplitter_Resizer_Before_Height);
-    min-width: var(--fdSplitter_Resizer_Before_Width);
     background: var(--fdSplitter_Resizer_Before_Background);
-    border-radius: var(--fdSplitter_Resizer_Before_Border_Radius);
+    border-radius: var(--fdSplitter_Resizer_Line_Border_Radius);
   }
 
   &__resizer-decoration-after {
     order: 3;
     transition: all 0.1s ease-in;
-    height: var(--fdSplitter_Resizer_After_Height);
-    min-width: var(--fdSplitter_Resizer_After_Width);
     background: var(--fdSplitter_Resizer_After_Background);
-    border-radius: var(--fdSplitter_Resizer_After_Border_Radius);
+    border-radius: var(--fdSplitter_Resizer_Line_Border_Radius);
   }
 
   .#{$block}__resizer-grip {
