@@ -1,3 +1,12 @@
+## [0.33.1-rc.16](https://github.com/SAP/fundamental-styles/compare/v0.33.1-rc.15...v0.33.1-rc.16) (2024-01-03)
+
+
+### Bug Fixes
+
+* **styles:** splitter horizontal scrolls on active handle ([#5088](https://github.com/SAP/fundamental-styles/issues/5088)) ([af06dee](https://github.com/SAP/fundamental-styles/commit/af06deec9fcd815d4b59c737d55a4070efcc70a4))
+
+
+
 ## [0.33.1-rc.15](https://github.com/SAP/fundamental-styles/compare/v0.33.1-rc.14...v0.33.1-rc.15) (2024-01-02)
 
 
