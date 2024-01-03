@@ -124,6 +124,7 @@ $block: #{$fd-namespace}-splitter;
       --fdSplitter_Resizer_Width: auto;
       --fdSplitter_Resizer_Height: 1rem;
       --fdSplitter_Resizer_Flex_Direction: row;
+      --fdSplitter_Resizer_Cursor: row-resize;
       --fdSplitter_Pane_Container_Flex_Direction: column;
       --fdSplitter_Resizer_Before_Background: linear-gradient(to left, var(--sapGroup_TitleBorderColor), transparent);
       --fdSplitter_Resizer_After_Background: linear-gradient(to right, var(--sapGroup_TitleBorderColor), transparent);
@@ -133,6 +134,11 @@ $block: #{$fd-namespace}-splitter;
           @include fd-splitter-line-horizontal(false);
         }
 
+        @include fd-active() {
+          @include fd-splitter-resizer-decorations() {
+            @include fd-splitter-line-horizontal(true);
+          }
+        }
         .#{$block}__resizer-grip {
           --fdSplitter_Resizer_Grip_Cursor: row-resize;
 
@@ -169,6 +175,12 @@ $block: #{$fd-namespace}-splitter;
       & > .#{$block}__resizer {
         @include fd-splitter-resizer-decorations() {
           @include fd-splitter-line-vertical(false);
+        }
+
+        @include fd-active() {
+          @include fd-splitter-resizer-decorations() {
+            @include fd-splitter-line-vertical(true);
+          }
         }
         .#{$block}__resizer-grip {
           --fdSplitter_Resizer_Grip_Cursor: col-resize;
