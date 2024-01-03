@@ -1,19 +1,19 @@
 <div style="height: 500px">
     <nav class="fd-navigation fd-navigation--horizontal fd-navigation--tablet" aria-label="Horizontal Navigation">
         <div class="fd-navigation__container">
-            <ul class="fd-navigation__list" role="menubar" aria-label="Horizontal Navigation">
-                <li
-                    role="none"
-                    tabindex="-1"
-                    class="fd-navigation__list-item fd-navigation__list-item--home"
-                    aria-hidden="true"
-                >
+            <ul
+                class="fd-navigation__list"
+                role="tablist"
+                aria-orientation="horizontal"
+                aria-label="Horizontal Navigation"
+            >
+                <li role="none" tabindex="-1" class="fd-navigation__list-item fd-navigation__list-item--home">
                     <div
                         class="fd-navigation__item"
                         aria-current="false"
                         aria-selected="false"
                         aria-expanded="false"
-                        role="menuitem"
+                        role="tab"
                     >
                         <a class="fd-navigation__link" role="link" href="#">
                             <span
@@ -32,8 +32,8 @@
                     </div>
                 </li>
 
-                <li role="none" tabindex="-1" class="fd-navigation__list-item" aria-hidden="true">
-                    <div class="fd-navigation__item" aria-current="false" aria-expanded="false" role="menuitem">
+                <li role="none" tabindex="-1" class="fd-navigation__list-item">
+                    <div class="fd-navigation__item" aria-current="false" aria-expanded="false" role="tab">
                         <a class="fd-navigation__link" role="link" href="#">
                             <span
                                 class="fd-navigation__icon sap-icon--calendar"
@@ -51,8 +51,8 @@
                     </div>
                 </li>
 
-                <li role="none" tabindex="-1" class="fd-navigation__list-item" aria-hidden="true">
-                    <div class="fd-navigation__item" aria-current="false" aria-expanded="false" role="menuitem">
+                <li role="none" tabindex="-1" class="fd-navigation__list-item">
+                    <div class="fd-navigation__item" aria-current="false" aria-expanded="false" role="tab">
                         <a class="fd-navigation__link" role="link" href="#">
                             <span
                                 class="fd-navigation__icon sap-icon--database"
@@ -70,8 +70,8 @@
                     </div>
                 </li>
 
-                <li role="none" tabindex="-1" class="fd-navigation__list-item" aria-hidden="true">
-                    <div class="fd-navigation__item" aria-current="false" aria-expanded="false" role="menuitem">
+                <li role="none" tabindex="-1" class="fd-navigation__list-item">
+                    <div class="fd-navigation__item" aria-current="false" aria-expanded="false" role="tab">
                         <a class="fd-navigation__link" role="link" href="#">
                             <span
                                 class="fd-navigation__icon sap-icon--attachment"
@@ -89,8 +89,8 @@
                     </div>
                 </li>
 
-                <li role="none" tabindex="-1" class="fd-navigation__list-item" aria-hidden="true">
-                    <div class="fd-navigation__item" aria-current="false" aria-expanded="false" role="menuitem">
+                <li role="none" tabindex="-1" class="fd-navigation__list-item">
+                    <div class="fd-navigation__item" aria-current="false" aria-expanded="false" role="tab">
                         <a class="fd-navigation__link" role="link" href="#">
                             <span
                                 class="fd-navigation__icon sap-icon--create-entry-time"
@@ -108,14 +108,14 @@
                     </div>
                 </li>
 
-                <li role="none" tabindex="-1" class="fd-navigation__list-item fd-popover" aria-hidden="true">
+                <li role="none" tabindex="-1" class="fd-navigation__list-item fd-popover">
                     <div
                         class="fd-navigation__item fd-popover__control"
                         aria-current="page"
                         aria-selected="true"
                         aria-expanded="true"
-                        aria-haspopup="tree"
-                        role="menuitem"
+                        aria-haspopup="menu"
+                        role="tab"
                     >
                         <a class="fd-navigation__link" role="button" tabindex="0">
                             <span
@@ -145,7 +145,7 @@
                         <div class="fd-navigation__list-wrapper fd-popover__wrapper">
                             <ul
                                 class="fd-navigation__list fd-navigation__list--child-items"
-                                role="tree"
+                                role="menu"
                                 aria-roledescription="Navigation List Tree - Child Items"
                                 tabindex="-1"
                                 aria-hidden="true"
@@ -154,7 +154,7 @@
                                     <div
                                         class="fd-navigation__item fd-navigation__item--child"
                                         aria-level="1"
-                                        role="treeitem"
+                                        role="menuitem"
                                         title="Future Orders"
                                         aria-roledescription="Navigation List Menu Item - Child"
                                         aria-expanded="false"
@@ -175,7 +175,7 @@
                                     <div
                                         class="fd-navigation__item fd-navigation__item--child"
                                         aria-level="1"
-                                        role="treeitem"
+                                        role="menuitem"
                                         title="Current Orders"
                                         aria-roledescription="Navigation List Menu Item - Child"
                                         aria-expanded="false"
@@ -196,7 +196,7 @@
                                     <div
                                         class="fd-navigation__item fd-navigation__item--child"
                                         aria-level="1"
-                                        role="treeitem"
+                                        role="menuitem"
                                         title="Past Orders"
                                         aria-roledescription="Navigation List Menu Item - Child"
                                         aria-expanded="false"
@@ -217,7 +217,7 @@
                                     <div
                                         class="fd-navigation__item fd-navigation__item--child"
                                         aria-level="1"
-                                        role="treeitem"
+                                        role="menuitem"
                                         title="Lost Orders"
                                         aria-roledescription="Navigation List Menu Item - Child"
                                         aria-expanded="false"
@@ -238,7 +238,7 @@
                                     <div
                                         class="fd-navigation__item fd-navigation__item--child"
                                         aria-level="1"
-                                        role="treeitem"
+                                        role="menuitem"
                                         title="Forgotten Orders"
                                         aria-roledescription="Navigation List Menu Item - Child"
                                         aria-expanded="false"
@@ -266,8 +266,8 @@
                     </div>
                 </li>
 
-                <li role="none" tabindex="-1" class="fd-navigation__list-item" aria-hidden="true">
-                    <div class="fd-navigation__item" aria-current="false" aria-expanded="false" role="menuitem">
+                <li role="none" tabindex="-1" class="fd-navigation__list-item">
+                    <div class="fd-navigation__item" aria-current="false" aria-expanded="false" role="tab">
                         <a class="fd-navigation__link" role="link" href="#">
                             <span
                                 class="fd-navigation__icon sap-icon--shield"
@@ -285,8 +285,8 @@
                     </div>
                 </li>
 
-                <li role="none" tabindex="-1" class="fd-navigation__list-item" aria-hidden="true">
-                    <div class="fd-navigation__item" aria-current="false" aria-expanded="false" role="menuitem">
+                <li role="none" tabindex="-1" class="fd-navigation__list-item">
+                    <div class="fd-navigation__item" aria-current="false" aria-expanded="false" role="tab">
                         <a class="fd-navigation__link" role="link" href="#">
                             <span
                                 class="fd-navigation__icon sap-icon--action-settings"
@@ -322,8 +322,8 @@
                     class="fd-navigation__list-item fd-navigation__list-item--overflow"
                     aria-hidden="true"
                 >
-                    <div class="fd-navigation__item" aria-current="false" aria-expanded="true" role="menuitem">
-                        <a class="fd-navigation__link" role="button" tabindex="0">
+                    <div class="fd-navigation__item" aria-current="false" aria-expanded="true" role="none">
+                        <a class="fd-navigation__link" role="button" aria-haspopup="menu" aria-expanded="true" tabindex="0">
                             <span
                                 class="fd-navigation__icon sap-icon--overflow"
                                 role="presentation"

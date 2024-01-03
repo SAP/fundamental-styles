@@ -1091,6 +1091,14 @@ $navListContainerSubmenu: #{$block}__list-container--submenu;
 
       @include fd-expanded() {
         .#{$navExpander} {
+          --fdButton_Nested_Background: var(--sapNavigation_Active_Background);
+          --fdNavigation_Expander_Border_Color: var(--fdNavigation_Link_Border_Color_Active);
+          --fdNavigation_Expander_Border_Bottom_Color: var(--fdNavigation_Link_Border_Color_Active);
+        }
+      }
+
+      &.#{$block}__item--child-selected {
+        .#{$navExpander} {
           --fdButton_Nested_Background: var(--fdNavigation_Item_Selected_Background);
           --fdNavigation_Link_Border_Color: var(--fdNavigation_Link_Border_Color_Selected);
           --fdNavigation_Expander_Border_Color: var(--fdNavigation_Link_Border_Color_Selected);

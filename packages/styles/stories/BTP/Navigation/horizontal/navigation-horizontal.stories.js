@@ -72,8 +72,9 @@ NavigationHorizontalWithExpander.storyName = 'Horizontal Navigation - Two-Click 
 NavigationHorizontalWithExpander.parameters = {
     docs: {
         description: {
-            story: `
-`
+            story: `Two-Click Area allows developers to split the navigation item link and expander button functionality.
+            In cases when the navigation item child item is selected, root navigation item should have modifier class \`fd-navigation__item--child-selected\`.
+            `
         }
     }
 };
