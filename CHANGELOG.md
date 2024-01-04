@@ -1,3 +1,12 @@
+## [0.33.1-rc.17](https://github.com/SAP/fundamental-styles/compare/v0.33.1-rc.16...v0.33.1-rc.17) (2024-01-04)
+
+
+### Bug Fixes
+
+* **styles:** add black font family [ci visual] ([#5089](https://github.com/SAP/fundamental-styles/issues/5089)) ([7e34191](https://github.com/SAP/fundamental-styles/commit/7e34191bc44169196d9cde97dab9da6562171641))
+
+
+
 ## [0.33.1-rc.16](https://github.com/SAP/fundamental-styles/compare/v0.33.1-rc.15...v0.33.1-rc.16) (2024-01-03)
 
 
