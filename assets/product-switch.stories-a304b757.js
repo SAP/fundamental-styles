@@ -485,4 +485,3 @@
 </div>
 <div style="min-height: 530px"></div>
 \``,...(o=(e=i.parameters)==null?void 0:e.docs)==null?void 0:o.source}}};var n,l,a;t.parameters={...t.parameters,docs:{...(n=t.parameters)==null?void 0:n.docs,source:{originalSource:"() => largeExampleHtml",...(a=(l=t.parameters)==null?void 0:l.docs)==null?void 0:a.source}}};var r,_,p;s.parameters={...s.parameters,docs:{...(r=s.parameters)==null?void 0:r.docs,source:{originalSource:"() => mediumExampleHtml",...(p=(_=s.parameters)==null?void 0:_.docs)==null?void 0:p.source}}};var u,h,v;c.parameters={...c.parameters,docs:{...(u=c.parameters)==null?void 0:u.docs,source:{originalSource:"() => smallExampleHtml",...(v=(h=c.parameters)==null?void 0:h.docs)==null?void 0:v.source}}};const H=["Shellbar","Large","Medium","Small"];export{t as Large,s as Medium,i as Shellbar,c as Small,H as __namedExportsOrder,A as default};
-//# sourceMappingURL=product-switch.stories-a304b757.js.map

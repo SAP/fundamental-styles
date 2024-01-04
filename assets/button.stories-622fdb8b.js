@@ -179,4 +179,3 @@ The split menu button can behave in two different ways:
 The split menu button can be displayed by using container with \`fd-button-split\` class with \`role=”group”\` and the \`aria-label=”button-split”\` attribute.
 `,tags:["f3","a11y","theme"]}},t=()=>o;t.storyName="Split menu button";t.parameters={docs:{description:{story:`
 `}}};var n,a,s;t.parameters={...t.parameters,docs:{...(n=t.parameters)==null?void 0:n.docs,source:{originalSource:"() => splitMenuButtonExampleHtml",...(s=(a=t.parameters)==null?void 0:a.docs)==null?void 0:s.source}}};const b=["SplitMenuButton"];export{t as SplitMenuButton,b as __namedExportsOrder,u as default};
-//# sourceMappingURL=button.stories-622fdb8b.js.map

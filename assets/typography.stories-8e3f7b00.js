@@ -246,4 +246,3 @@ Use the <code>.sap-font-line-height</code> class to apply <b>normal</b> line-hei
 <span>Labels: </span><span class="sap-font-label">Used in labels</span><br><br>
 <span>Descriptions: </span><span class="sap-font-description">Used in object attribute</span><br><br>
 \``,...(g=(y=s.parameters)==null?void 0:y.docs)==null?void 0:g.source}}};const h=["FontFamily","FontSize","LineHeight","CommonCases"];export{s as CommonCases,e as FontFamily,a as FontSize,t as LineHeight,h as __namedExportsOrder,b as default};
-//# sourceMappingURL=typography.stories-8e3f7b00.js.map

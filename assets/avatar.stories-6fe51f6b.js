@@ -810,4 +810,3 @@ The avatar control is adaptive and has five predefined sizes. These are the same
 <span class="fd-avatar fd-avatar--xl fd-avatar--circle fd-avatar--transparent fd-avatar--border is-focus" tabindex="0" role="button" aria-label="Wendy Wallace">WW
 </span>
 \``,...(K=(O=p.parameters)==null?void 0:O.docs)==null?void 0:K.source}}};const ba=["Icon","Initials","Circle","BackgroundImage","Transparent","PlaceholderBackground","TileIconBackground","AccentColors","AccentColorsShellHeaderContext","ZoomIcon","ValueStates","Borders","Interactive"];export{s as AccentColors,o as AccentColorsShellHeaderContext,l as BackgroundImage,v as Borders,e as Circle,a as Icon,r as Initials,p as Interactive,n as PlaceholderBackground,i as TileIconBackground,t as Transparent,c as ValueStates,d as ZoomIcon,ba as __namedExportsOrder,fa as default};
-//# sourceMappingURL=avatar.stories-6fe51f6b.js.map

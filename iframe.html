@@ -18,9 +18,11 @@
     window.LOGLEVEL = 'info';
     window.FRAMEWORK_OPTIONS = {};
     window.CHANNEL_OPTIONS = {};
-    window.FEATURES = {"warnOnLegacyHierarchySeparator":true,"buildStoriesJson":false,"storyStoreV7":true,"argTypeTargetsV7":true,"legacyDecoratorFileOrder":false};
+    window.FEATURES = {"warnOnLegacyHierarchySeparator":true,"buildStoriesJson":false,"storyStoreV7":true,"argTypeTargetsV7":true,"legacyDecoratorFileOrder":false,"disallowImplicitActionsInRenderV8":false};
     window.STORIES = [{"titlePrefix":"","directory":"./stories/docs","files":"introduction.stories.ts","importPathMatcher":"^\\.[\\\\/](?:stories\\/docs\\/introduction\\.stories\\.ts)$"},{"titlePrefix":"","directory":"./stories/docs","files":"compact-docs.stories.ts","importPathMatcher":"^\\.[\\\\/](?:stories\\/docs\\/compact-docs\\.stories\\.ts)$"},{"titlePrefix":"","directory":"./packages","files":"@(common-css|cx|styles)/**/*.@(stories).@(ts|tsx|js|jsx)","importPathMatcher":"^\\.[\\\\/](?:packages\\/(common-css|cx|styles)(?:\\/(?!\\.)(?:(?:(?!(?:^|\\/)\\.).)*?)\\/|\\/|$)(?!\\.)(?=.)[^/]*?\\.(stories)\\.(ts|tsx|js|jsx))$"},{"titlePrefix":"","directory":"./stories","files":"**/*.@(stories).@(ts|tsx|js|jsx)","importPathMatcher":"^\\.[\\\\/](?:stories(?:\\/(?!\\.)(?:(?:(?!(?:^|\\/)\\.).)*?)\\/|\\/|$)(?!\\.)(?=.)[^/]*?\\.(stories)\\.(ts|tsx|js|jsx))$"}];
-    window.DOCS_OPTIONS = {"docsMode":true,"defaultName":"Docs","autodocs":true};
+    window.DOCS_OPTIONS = {"defaultName":"Docs","autodocs":true};
+
+    
 
     // We do this so that "module && module.hot" etc. in Storybook source code
     // doesn't fail (it will simply be disabled)
@@ -446,7 +448,7 @@
     window.global = typeof global === 'undefined' ? window : global;
 </script>
 
-  <script type="module" crossorigin src="/fundamental-styles/assets/iframe-5b950ccc.js"></script>
+  <script type="module" crossorigin src="/fundamental-styles/assets/iframe-62cf8465.js"></script>
 </head>
 
 <body>

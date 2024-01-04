@@ -216,4 +216,3 @@ Do not use the input field if:
 - **Read Only**: Used to display static information in the context of a form.
 
 Along with Error and Warning, error messages should be displayed below the field so the user can correct the error and move forward.`}};var a,t,i;e.parameters={...e.parameters,docs:{...(a=e.parameters)==null?void 0:a.docs,source:{originalSource:"() => primaryExampleHtml",...(i=(t=e.parameters)==null?void 0:t.docs)==null?void 0:i.source}}};var r,n,s;l.parameters={...l.parameters,docs:{...(r=l.parameters)==null?void 0:r.docs,source:{originalSource:"() => statesExampleHtml",...(s=(n=l.parameters)==null?void 0:n.docs)==null?void 0:s.source}}};const v=["Primary","States"];export{e as Primary,l as States,v as __namedExportsOrder,b as default};
-//# sourceMappingURL=input.stories-e34e91b2.js.map

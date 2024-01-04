@@ -18,4 +18,3 @@ where <i style="color: red;">$required</i> and <i style="color: red;">$colon</i>
 - <code>@include sap-label($required: true)</code>: to display a label with asterisk<br>
 - <code>@include sap-label($colon: true)</code>: to display a label with colon<br>
 - <code>@include sap-label($required: true, $colon: true)</code>: to display a label with asterisk and colon<br>`}},e=()=>o;e.storyName="Examples";var l,a,r;e.parameters={...e.parameters,docs:{...(l=e.parameters)==null?void 0:l.docs,source:{originalSource:"() => defaultExampleExampleHtml",...(r=(a=e.parameters)==null?void 0:a.docs)==null?void 0:r.source}}};const b=["DefaultExample"];export{e as DefaultExample,b as __namedExportsOrder,s as default};
-//# sourceMappingURL=label.stories-8fa593f9.js.map

@@ -178,4 +178,3 @@ You can display a link with an icon placed on either side of the link text.
     </a>
 </div>
 \``,...(e=(a=n.parameters)==null?void 0:a.docs)==null?void 0:e.source}}};const d=["Primary"];export{n as Primary,d as __namedExportsOrder,c as default};
-//# sourceMappingURL=link.stories-a1431287.js.map

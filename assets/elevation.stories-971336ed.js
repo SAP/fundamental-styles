@@ -50,4 +50,3 @@ const t={title:"Elevation",parameters:{description:`The z-index property specifi
     <div class="sap-elevation-initial">Initial</div>
     <div class="sap-elevation-inherit">Inherit</div>
 </div>\``,...(a=(s=e.parameters)==null?void 0:s.docs)==null?void 0:a.source}}};const l=["Elevation"];export{e as Elevation,l as __namedExportsOrder,t as default};
-//# sourceMappingURL=elevation.stories-971336ed.js.map

@@ -93,4 +93,3 @@ Implementation Guidelines:
 
 - Clicking away from the menu should also close the menu
 `,tags:["f3","a11y","theme"]}},n=()=>o;n.storyName="Examples with Icon and Button";var e,a,t;n.parameters={...n.parameters,docs:{...(e=n.parameters)==null?void 0:e.docs,source:{originalSource:"() => withIconAndButtonExampleHtml",...(t=(a=n.parameters)==null?void 0:a.docs)==null?void 0:t.source}}};const m=["WithIconAndButton"];export{n as WithIconAndButton,m as __namedExportsOrder,p as default};
-//# sourceMappingURL=context-menu.stories-a8e29d25.js.map

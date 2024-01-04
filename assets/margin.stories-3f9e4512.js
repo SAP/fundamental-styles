@@ -663,4 +663,3 @@ const _=`The CSS margin properties are used to create space around elements, out
 </div>
 <br>
 \``,...(F=(V=l.parameters)==null?void 0:V.docs)==null?void 0:F.source}}};const q=["AllRoundMargin","TopMargin","BottomMargin","BeginMargin","EndMargin","HorizontalMargin","VerticalMargin","ResponsiveMargin","NegativeMargin"];export{d as AllRoundMargin,r as BeginMargin,t as BottomMargin,i as EndMargin,n as HorizontalMargin,l as NegativeMargin,m as ResponsiveMargin,a as TopMargin,s as VerticalMargin,q as __namedExportsOrder,k as default};
-//# sourceMappingURL=margin.stories-3f9e4512.js.map

@@ -35,4 +35,3 @@ Note: If an icon needs to be selected or have any interaction states, it is reco
   }).join('');
   return div.outerHTML;
 }`,...(u=(m=t.parameters)==null?void 0:m.docs)==null?void 0:u.source}}};const T=["Sizes","Colors","AvailableIcons"];export{t as AvailableIcons,a as Colors,e as Sizes,T as __namedExportsOrder,j as default};
-//# sourceMappingURL=icon.stories-892a4f56.js.map

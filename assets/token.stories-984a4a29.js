@@ -91,4 +91,3 @@ The default token is displayed in grey with text, and a close button that will r
 | \`fd-token--readonly\` | displayed as read-only, indicating that they cannot be interacted with. Read-only tokens should not contain a close button |
         `,tags:["f3","a11y","theme"]}},n=()=>o;n.storyName="Tokens";n.parameters={docs:{description:{story:`The default token is displayed in grey with text, and a close button that will remove the token when selected. It is displayed in cozy mode, which is ideal for mobile and tablet screens.
         `}}};var e,t,s;n.parameters={...n.parameters,docs:{...(e=n.parameters)==null?void 0:e.docs,source:{originalSource:"() => primaryExampleHtml",...(s=(t=n.parameters)==null?void 0:t.docs)==null?void 0:s.source}}};const l=["Primary"];export{n as Primary,l as __namedExportsOrder,i as default};
-//# sourceMappingURL=token.stories-984a4a29.js.map

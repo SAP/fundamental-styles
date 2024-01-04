@@ -60,4 +60,3 @@ const n={title:"Border",parameters:{description:`
 <br>
 
 </div>\``,...(d=(o=e.parameters)==null?void 0:o.docs)==null?void 0:d.source}}};const t=["Border"];export{e as Border,t as __namedExportsOrder,n as default};
-//# sourceMappingURL=border.stories-8091bf62.js.map

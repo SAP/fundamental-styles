@@ -85,4 +85,3 @@ const d={title:"Colors",parameters:{description:""}},i=`
 <h3>neutralBackground (--sapNeutralBackground)</h3>
 <div class="demo sap-bg-color-neutralBackground"></div>
 \``,...(n=(l=r.parameters)==null?void 0:l.docs)==null?void 0:n.source}}};const t=["TextColor","BackgroundColor"];export{r as BackgroundColor,o as TextColor,t as __namedExportsOrder,d as default};
-//# sourceMappingURL=colors.stories-0c21c25b.js.map

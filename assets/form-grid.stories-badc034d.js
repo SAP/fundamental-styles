@@ -2901,4 +2901,3 @@ Modifier | Breakpoint
   </div>
 </div>
 \` + docsStyles`,...(fl=(cl=u.parameters)==null?void 0:cl.docs)==null?void 0:fl.source}}};const gl=["SSize","MSizeDefault","MSizeSplitScreen","MSizeFullScreenApp","MSizeFullScreenAppLongLabel","LSizeDefault","LSizeSingleFormGroup","LSizeMultipleFormGroup","XlDefault","XlSingleFormGroup","XlDoubleFormGroup","XlMultipleFormGroup","ColumnRecommended","ColumnPossible","ColumnNotRecommended","Vertical"];export{b as ColumnNotRecommended,m as ColumnPossible,p as ColumnRecommended,s as LSizeDefault,n as LSizeMultipleFormGroup,t as LSizeSingleFormGroup,e as MSizeDefault,o as MSizeFullScreenApp,i as MSizeFullScreenAppLongLabel,a as MSizeSplitScreen,d as SSize,u as Vertical,c as XlDefault,r as XlDoubleFormGroup,v as XlMultipleFormGroup,f as XlSingleFormGroup,gl as __namedExportsOrder,hl as default};
-//# sourceMappingURL=form-grid.stories-badc034d.js.map

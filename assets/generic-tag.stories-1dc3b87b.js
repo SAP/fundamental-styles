@@ -159,4 +159,3 @@ Information | &nbsp;&nbsp;&nbsp;&nbsp;\`.fd-generic-tag--information\`
 
 In cozy mode the Generic Tag has margin top and bottom of 0.5625rem. In compact mode the margin value is 0.1875rem
 `}},n=()=>r;n.storyName="Types";n.parameters={docs:{description:{story:""}}};var a,e,s;n.parameters={...n.parameters,docs:{...(a=n.parameters)==null?void 0:a.docs,source:{originalSource:"() => primaryExampleHtml",...(s=(e=n.parameters)==null?void 0:e.docs)==null?void 0:s.source}}};const t=["Primary"];export{n as Primary,t as __namedExportsOrder,c as default};
-//# sourceMappingURL=generic-tag.stories-1dc3b87b.js.map

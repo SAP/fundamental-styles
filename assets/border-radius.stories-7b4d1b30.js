@@ -106,4 +106,3 @@ Example: <br>
 <h3>None</h3>
 <div class="demo sap-border-radius-none"></div>
 \``,...(s=(e=r.parameters)==null?void 0:e.docs)==null?void 0:s.source}}};const i=["BorderRadius"];export{r as BorderRadius,i as __namedExportsOrder,t as default};
-//# sourceMappingURL=border-radius.stories-7b4d1b30.js.map

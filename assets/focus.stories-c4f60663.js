@@ -97,4 +97,3 @@ const $={title:"Focus Visual",parameters:{description:`Focus Visual is the visua
 3. with specified focus offset, radius and alternative focus color ($offset: 0.0625rem, $radius: 0.25rem, $alternative: true)
 <pre>@include sap-fake-fiori-focus-within(0.0625rem, 0.25rem, true);</pre>
 </div>\``,...(h=(m=s.parameters)==null?void 0:m.docs)==null?void 0:h.source}}};const v=["FioriFocus","FioriFocusWithin","FakeFioriFocus","FakeFioriFocusWithin"];export{i as FakeFioriFocus,s as FakeFioriFocusWithin,e as FioriFocus,r as FioriFocusWithin,v as __namedExportsOrder,$ as default};
-//# sourceMappingURL=focus.stories-c4f60663.js.map

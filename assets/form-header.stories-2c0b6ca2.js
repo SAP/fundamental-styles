@@ -6,4 +6,3 @@ Form headers are essentially titles that provide users with more context about a
 `,tags:["f3","theme"]}},e=()=>s;e.storyName="Default";e.parameters={docs:{description:{story:`
 Default form headers are displayed in text that does not wrap but truncates into an ellipsis.
 `}}};var r,t,a;e.parameters={...e.parameters,docs:{...(r=e.parameters)==null?void 0:r.docs,source:{originalSource:"() => primaryExampleHtml",...(a=(t=e.parameters)==null?void 0:t.docs)==null?void 0:a.source}}};const i=["Primary"];export{e as Primary,i as __namedExportsOrder,o as default};
-//# sourceMappingURL=form-header.stories-2c0b6ca2.js.map

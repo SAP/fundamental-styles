@@ -119,4 +119,3 @@
 
 
 `,tags:["f3","a11y","theme"]}},e=()=>a;e.parameters={docs:{description:{story:"The time picker can be displayed in tablet mode by adding the `.fd-time--tablet` modifier class to the `.fd-time` base class."}}};var t,n,i;e.parameters={...e.parameters,docs:{...(t=e.parameters)==null?void 0:t.docs,source:{originalSource:"() => tabletModeExampleHtml",...(i=(n=e.parameters)==null?void 0:n.docs)==null?void 0:i.source}}};const f=["TabletMode"];export{e as TabletMode,f as __namedExportsOrder,_ as default};
-//# sourceMappingURL=time-picker.stories-0318fa4e.js.map

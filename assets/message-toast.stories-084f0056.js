@@ -23,4 +23,3 @@ Note: The timing and duration of the message toast is defined by the application
 - You want to make sure that users read the message before they leave the page.
         `,tags:["f3","a11y","theme"]}},e=()=>o;e.storyName="Default";e.parameters={docs:{description:{story:`The default message toast displays a simple popup with non-interactive text. The text wraps once it reaches the max-width of 15rem.
         `}}};var t,a,s;e.parameters={...e.parameters,docs:{...(t=e.parameters)==null?void 0:t.docs,source:{originalSource:"() => defaultToastExampleHtml",...(s=(a=e.parameters)==null?void 0:a.docs)==null?void 0:s.source}}};const n=["DefaultToast"];export{e as DefaultToast,n as __namedExportsOrder,i as default};
-//# sourceMappingURL=message-toast.stories-084f0056.js.map
