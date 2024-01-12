@@ -20,7 +20,7 @@ $fd-grid-list-highlight: (
 
 @mixin fd-grid-list-item-interactive($setActive) {
   @include fd-hover() {
-    box-shadow: 0 0 0 0.0625rem var(--fdGrid_List_Item_Hover_Border_Color);
+    box-shadow: 0 0 0 0.0625rem var(--fdGrid_List_Item_Hover_Border_Color), var(--sapContent_Shadow2);
     background-color: $fd-grid-list-item-hover-background-color;
   }
 
