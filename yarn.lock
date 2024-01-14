@@ -6169,10 +6169,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/addon-toolbars@npm:7.6.5":
-  version: 7.6.5
-  resolution: "@storybook/addon-toolbars@npm:7.6.5"
-  checksum: 5f0d325e69aca145a9fff204d7caabda1614a4f76a4516ffaf574bbb0791c9be4760c3d0608925fc7dc3f887192b03a4bccdabcece36c99236b76bfb88d18a50
+"@storybook/addon-toolbars@npm:7.6.8":
+  version: 7.6.8
+  resolution: "@storybook/addon-toolbars@npm:7.6.8"
+  checksum: bd256be7276c5bc69187c9b4000b6c39292c74103b91051caa070e7080ea1fe366f1fdab557e9b6a6d36b8bd3c96afcfc90a7d41694f6d9fb252000333695d30
   languageName: node
   linkType: hard
 
@@ -14356,7 +14356,7 @@ __metadata:
     "@storybook/addon-links": 7.6.5
     "@storybook/addon-mdx-gfm": 7.6.5
     "@storybook/addon-storyshots": 7.6.5
-    "@storybook/addon-toolbars": 7.6.5
+    "@storybook/addon-toolbars": 7.6.8
     "@storybook/addon-viewport": 7.6.5
     "@storybook/addons": 7.6.5
     "@storybook/blocks": ^7.6.5
