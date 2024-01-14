@@ -7789,10 +7789,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:18.11.9":
-  version: 18.11.9
-  resolution: "@types/node@npm:18.11.9"
-  checksum: cc0aae109e9b7adefc32eecb838d6fad931663bb06484b5e9cbbbf74865c721b03d16fd8d74ad90e31dbe093d956a7c2c306ba5429ba0c00f3f7505103d7a496
+"@types/node@npm:20.11.0":
+  version: 20.11.0
+  resolution: "@types/node@npm:20.11.0"
+  dependencies:
+    undici-types: ~5.26.4
+  checksum: 1bd6890db7e0404d11c33d28f46f19f73256f0ba35d19f0ef2a0faba09f366f188915fb9338eebebcc472075c1c4941e17c7002786aa69afa44980737846b200
   languageName: node
   linkType: hard
 
@@ -14366,7 +14368,7 @@ __metadata:
     "@storybook/html-vite": 7.6.5
     "@storybook/theming": 7.6.5
     "@testing-library/react": 13.4.0
-    "@types/node": 18.11.9
+    "@types/node": 20.11.0
     "@types/react": 18.2.24
     "@types/react-dom": 18.2.9
     "@typescript-eslint/eslint-plugin": 6.14.0
