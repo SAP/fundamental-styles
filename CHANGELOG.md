@@ -1,3 +1,12 @@
+## [0.33.2-rc.3](https://github.com/SAP/fundamental-styles/compare/v0.33.2-rc.2...v0.33.2-rc.3) (2024-01-17)
+
+
+### Features
+
+* **styles:** add full width modifier to Step Input [ci visual] ([#5116](https://github.com/SAP/fundamental-styles/issues/5116)) ([3ae0393](https://github.com/SAP/fundamental-styles/commit/3ae03939de5b2a060b90f9244dd69ed746f9359a))
+
+
+
 ## [0.33.2-rc.2](https://github.com/SAP/fundamental-styles/compare/v0.33.2-rc.1...v0.33.2-rc.2) (2024-01-17)
 
 
