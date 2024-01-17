@@ -1,3 +1,12 @@
+## [0.33.2-rc.2](https://github.com/SAP/fundamental-styles/compare/v0.33.2-rc.1...v0.33.2-rc.2) (2024-01-17)
+
+
+### Bug Fixes
+
+* **styles:** add a fix for hover state in Grid List [ci visual] ([#5101](https://github.com/SAP/fundamental-styles/issues/5101)) ([50fcc83](https://github.com/SAP/fundamental-styles/commit/50fcc8362a635c3f5afc968297bc0a06b58b870a))
+
+
+
 ## [0.33.2-rc.1](https://github.com/SAP/fundamental-styles/compare/v0.33.2-rc.0...v0.33.2-rc.1) (2024-01-12)
 
 
