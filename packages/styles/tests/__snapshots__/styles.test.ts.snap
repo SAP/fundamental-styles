@@ -5111,11 +5111,8 @@ exports[`Check stories > BTP/Splitter > Story GripAnatomy > Should match snapsho
 
 exports[`Check stories > BTP/Splitter > Story PaginationBarAnatomy > Should match snapshot 1`] = `
 "<div class=\\"fd-splitter\\" style=\\"height: 100px\\">
-    <div class='fd-splitter__pane-container fd-splitter__pane-container--vertical'>
-        <div class=\\"fd-splitter__split-pane fd-splitter__split-pane--solid\\">
-            Pane content
-        </div>
-        <div class='fd-splitter__pagination'>
+    <div class=\\"fd-splitter__pane-container fd-splitter__pane-container--horizontal\\">
+        <div class=\\"fd-splitter__pagination\\">
             <button class=\\"fd-button fd-button--nested fd-splitter__pagination-item\\">
                 <span class=\\"fd-splitter__pagination-item-dot\\"></span>
             </button>
@@ -39665,7 +39662,7 @@ exports[`Check stories > Components/Status Indicator > Story StatusIndicatorRadi
 "
 `;
 
-exports[`Check stories > Components/StepInput > Story Disabled > Should match snapshot 1`] = `
+exports[`Check stories > Components/Step Input > Story Disabled > Should match snapshot 1`] = `
 "<label class=\\"fd-form-label\\" for=\\"step-13\\">Disabled Step Input</label><br />
 <div class=\\"fd-step-input is-disabled\\">
         <button aria-label=\\"Step down\\" class=\\"
@@ -39693,7 +39690,7 @@ exports[`Check stories > Components/StepInput > Story Disabled > Should match sn
 "
 `;
 
-exports[`Check stories > Components/StepInput > Story Focused > Should match snapshot 1`] = `
+exports[`Check stories > Components/Step Input > Story Focused > Should match snapshot 1`] = `
 "<label class=\\"fd-form-label\\" for=\\"step-20\\">Focused Step Input</label><br />
 <div class=\\"fd-step-input is-focus\\">
         <button aria-label=\\"Step down\\" class=\\"
@@ -39825,7 +39822,135 @@ exports[`Check stories > Components/StepInput > Story Focused > Should match sna
 "
 `;
 
-exports[`Check stories > Components/StepInput > Story Primary > Should match snapshot 1`] = `
+exports[`Check stories > Components/Step Input > Story FullWidth > Should match snapshot 1`] = `
+"<label class=\\"fd-form-label\\" for=\\"step-3f\\">Default Step Input</label><br />
+<div class=\\"fd-step-input fd-step-input--full-width\\">
+  <button aria-label=\\"Step down\\" class=\\"
+            fd-button
+            fd-button--transparent
+            fd-step-input__button\\" onclick=\\"stepInputValue('step-3f', 'down');\\" tabindex=\\"-1\\" type=\\"button\\">
+    <i class=\\"sap-icon--less\\"></i>
+  </button>
+  <input class=\\"fd-input fd-input--no-number-spinner fd-step-input__input\\" id=\\"step-3f\\" type=\\"number\\" value=\\"0\\" />
+  <button aria-label=\\"Step up\\" class=\\"
+            fd-button
+            fd-button--transparent
+            fd-step-input__button\\" onclick=\\"stepInputValue('step-3f', 'up');\\" tabindex=\\"-1\\" type=\\"button\\">
+    <i class=\\"sap-icon--add\\"></i>
+  </button>
+</div>
+
+<br><br>
+
+<label class=\\"fd-form-label\\" for=\\"step-5f\\">Success Step Input</label><br />
+<div class=\\"fd-step-input is-success fd-step-input--full-width\\">
+        <button aria-label=\\"Step down\\" class=\\"
+            fd-button
+            fd-button--transparent
+            fd-step-input__button\\"
+            onclick=\\"stepInputValue('step-5f', 'down');\\"
+            tabindex=\\"-1\\" type=\\"button\\">
+                <i class=\\"sap-icon--less\\"></i>
+        </button>
+    <input class=\\"
+            fd-input
+            fd-input--no-number-spinner
+            fd-step-input__input
+    \\" id=\\"step-5f\\" type=\\"number\\" value=\\"0\\">
+        <button aria-label=\\"Step up\\" class=\\"
+            fd-button
+            fd-button--transparent
+            fd-step-input__button\\"
+            onclick=\\"stepInputValue('step-5f', 'up');\\"
+            tabindex=\\"-1\\" type=\\"button\\">
+                <i class=\\"sap-icon--add\\"></i>
+        </button>
+</div>
+
+<br><br>
+
+<label class=\\"fd-form-label\\" for=\\"step-6f\\">Information Step Input</label><br />
+<div class=\\"fd-step-input is-information fd-step-input--full-width\\">
+        <button aria-label=\\"Step down\\" class=\\"
+            fd-button
+            fd-button--transparent
+            fd-step-input__button\\"
+            onclick=\\"stepInputValue('step-6f', 'down');\\"
+            tabindex=\\"-1\\" type=\\"button\\">
+                <i class=\\"sap-icon--less\\"></i>
+        </button>
+    <input class=\\"
+            fd-input
+            fd-input--no-number-spinner
+            fd-step-input__input
+    \\" id=\\"step-6f\\" type=\\"number\\" value=\\"0\\">
+        <button aria-label=\\"Step up\\" class=\\"
+            fd-button
+            fd-button--transparent
+            fd-step-input__button\\"
+            onclick=\\"stepInputValue('step-6f', 'up');\\"
+            tabindex=\\"-1\\" type=\\"button\\">
+                <i class=\\"sap-icon--add\\"></i>
+        </button>
+</div>
+
+<br><br>
+
+<label class=\\"fd-form-label\\" for=\\"step-7f\\">Error Step Input</label><br />
+<div class=\\"fd-step-input is-error fd-step-input--full-width\\">
+        <button aria-label=\\"Step down\\" class=\\"
+            fd-button
+            fd-button--transparent
+            fd-step-input__button\\"
+            onclick=\\"stepInputValue('step-7f', 'down');\\"
+            tabindex=\\"-1\\" type=\\"button\\">
+                <i class=\\"sap-icon--less\\"></i>
+        </button>
+    <input class=\\"
+            fd-input
+            fd-input--no-number-spinner
+            fd-step-input__input
+    \\" id=\\"step-7f\\" type=\\"number\\" value=\\"0\\">
+        <button aria-label=\\"Step up\\" class=\\"
+            fd-button
+            fd-button--transparent
+            fd-step-input__button\\"
+            onclick=\\"stepInputValue('step-7f', 'up');\\"
+            tabindex=\\"-1\\" type=\\"button\\">
+                <i class=\\"sap-icon--add\\"></i>
+        </button>
+</div>
+
+<br><br>
+
+<label class=\\"fd-form-label\\" for=\\"step-8f\\">Warning Step Input</label><br />
+<div class=\\"fd-step-input is-warning fd-step-input--full-width\\">
+    <button aria-label=\\"Step down\\" class=\\"
+        fd-button
+        fd-button--transparent
+        fd-step-input__button\\"
+        onclick=\\"stepInputValue('step-8f', 'down');\\"
+        tabindex=\\"-1\\" type=\\"button\\">
+            <i class=\\"sap-icon--less\\"></i>
+    </button>
+    <input class=\\"
+        fd-input
+        fd-input--no-number-spinner
+        fd-step-input__input
+    \\" id=\\"step-8f\\" type=\\"number\\" value=\\"0\\">
+    <button aria-label=\\"Step up\\" class=\\"
+        fd-button
+        fd-button--transparent
+        fd-step-input__button\\"
+        onclick=\\"stepInputValue('step-8f', 'up');\\"
+        tabindex=\\"-1\\" type=\\"button\\">
+            <i class=\\"sap-icon--add\\"></i>
+    </button>
+</div>
+"
+`;
+
+exports[`Check stories > Components/Step Input > Story Primary > Should match snapshot 1`] = `
 "<label class=\\"fd-form-label\\" for=\\"step-3\\">Default Step Input</label><br />
 <div class=\\"fd-step-input\\">
   <button aria-label=\\"Step down\\" class=\\"
@@ -39862,7 +39987,7 @@ exports[`Check stories > Components/StepInput > Story Primary > Should match sna
 "
 `;
 
-exports[`Check stories > Components/StepInput > Story ReadOnly > Should match snapshot 1`] = `
+exports[`Check stories > Components/Step Input > Story ReadOnly > Should match snapshot 1`] = `
 "<label class=\\"fd-form-label\\" for=\\"step-14\\">Temperature set to</label><br />
 <div class=\\"fd-form-item fd-form-item--horizontal\\">
     <div class=\\"fd-step-input is-readonly\\">
@@ -39893,7 +40018,7 @@ exports[`Check stories > Components/StepInput > Story ReadOnly > Should match sn
 "
 `;
 
-exports[`Check stories > Components/StepInput > Story States > Should match snapshot 1`] = `
+exports[`Check stories > Components/Step Input > Story States > Should match snapshot 1`] = `
 "<label class=\\"fd-form-label\\" for=\\"step-5\\">Success Step Input</label><br />
 <div class=\\"fd-step-input is-success\\">
         <button aria-label=\\"Step down\\" class=\\"
