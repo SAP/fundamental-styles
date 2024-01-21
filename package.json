@@ -138,7 +138,7 @@
     "standard-version": "9.3.2",
     "start-server-and-test": "^1.14.0",
     "story-description-loader": "^1.0.0",
-    "storybook": "7.6.5",
+    "storybook": "7.6.10",
     "stylelint": "^13.13.1",
     "stylelint-config-standard": "^22.0.0",
     "stylelint-scss": "^3.19.0",
