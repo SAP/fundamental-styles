@@ -90,7 +90,6 @@ ReadOnly.parameters = {
 };
 
 export const FullWidth = () => fullWidthExampleHtml;
-FullWidth.storyName = 'Full Width';
 FullWidth.parameters = {
   docs: {
     description: {
