@@ -25,12 +25,7 @@ const TypeList = ['major', 'minor', 'patch'].reverse();
  * @return {string}
  */
 function getCurrentActiveType(version) {
-    const typelist = TypeList;
-    for (let i = 0; i < typelist.length; i++) {
-        if (semver[typelist[i]](version)) {
-            return typelist[i];
-        }
-    }
+    return TypeList.find(type => semver[type](version));
 }
 
 /**
@@ -44,45 +39,47 @@ function getTypePriority(type) {
     return TypeList.indexOf(type);
 }
 
-const bumpedVersionType = () => {
-    return new Promise((resolve, reject) => {
-        recommendedVersion({
-            preset: {
-                name: require.resolve('conventional-changelog-conventionalcommits'),
-                preMajor: semver.lt(currentVersion, '1.0.0')
-            },
-            tagPrefix: 'v'
-        }, (err, release) => {
-            if (err) {
-                return reject(err);
-            }
-            if (prereleaseRequested) {
-                if (isInPrerelease(currentVersion)) {
-                    if (shouldContinuePrerelease(currentVersion, release.releaseType) ||
-                        getTypePriority(getCurrentActiveType(currentVersion)) > getTypePriority(release.releaseType)
-                    ) {
-                        release.releaseType = 'prerelease';
-                        return resolve(release);
-                    }
-                }
-                release.releaseType = 'pre' + release.releaseType;
-                return resolve(release);
-            }
-            return resolve(release);
-        });
+const bumpedVersionType = async () => {
+    const release = await recommendedVersion({
+        preset: 'conventionalcommits',
+        tagPrefix: 'v'
     });
+
+    if (prereleaseRequested) {
+        if (isInPrerelease(currentVersion)) {
+            if (shouldContinuePrerelease(currentVersion, release.releaseType) ||
+                getTypePriority(getCurrentActiveType(currentVersion)) > getTypePriority(release.releaseType)
+            ) {
+                release.releaseType = 'prerelease';
+                return release;
+            }
+        }
+        release.releaseType = 'pre' + release.releaseType;
+        return release;
+    }
+    return release;
+};
+
+const getNewVersion = (release, currentVersion, prereleaseRequested) => {
+    return semver.valid(release.releaseType) || semver.inc(currentVersion, release.releaseType, prereleaseRequested, 'rc');
+};
+
+const writeNewVersionToPackageJson = (newVersion) => {
+    packageJson.version = newVersion;
+    fs.writeFileSync('./package.json', JSON.stringify(packageJson, null, 2));
 };
 
 const run = async() => {
     const release = await bumpedVersionType();
     core.info(`${release.reason}, therefore release type should be ${release.releaseType}`);
 
-    const newVersion = semver.valid(release.releaseType) || semver.inc(currentVersion, release.releaseType, prereleaseRequested, 'rc');
+    const newVersion = getNewVersion(release, currentVersion, prereleaseRequested);
     core.info(`new version is ${newVersion}`);
+
     if (writeFile) {
-        packageJson.version = newVersion;
-        fs.writeFileSync('./package.json', JSON.stringify(packageJson, null, 2));
+        writeNewVersionToPackageJson(newVersion);
     }
+
     core.setOutput('newVersion', newVersion);
     core.setOutput('isPrerelease', semver.prerelease(newVersion) ? 'true' : 'false');
 };
