@@ -2,7 +2,9 @@ const semver = require('semver');
 const fs = require('fs');
 const gitSemverTags = require('git-semver-tags');
 
-const packageJson = JSON.parse(fs.readFileSync('./package.json', 'utf8'));
+const readLernaJson = () => {
+    return JSON.parse(fs.readFileSync('./lerna.json', 'utf8'));
+}
 
 const semverTags = (maxVersion) => {
     return new Promise((resolve, reject) => {
@@ -17,13 +19,19 @@ const semverTags = (maxVersion) => {
     });
 };
 
-module.exports = async() => {
-    const isPrerelease = !!semver.prerelease(packageJson.version);
-    const availableVersions = (await semverTags(packageJson.version));
+const findClosestVersionIndex = (isPrerelease, availableVersions) => {
     let closestIndex = 0;
     if (!isPrerelease) {
         closestIndex = availableVersions.findIndex(v => !semver.prerelease(v));
     }
+    return closestIndex;
+}
+
+module.exports = async() => {
+    const packageJson = readLernaJson();
+    const isPrerelease = !!semver.prerelease(packageJson.version);
+    const availableVersions = await semverTags(packageJson.version);
+    const closestIndex = findClosestVersionIndex(isPrerelease, availableVersions);
     return {
         closest: availableVersions[closestIndex],
         tagsTillClosest: availableVersions.slice(0, closestIndex)
