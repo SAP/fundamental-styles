@@ -6,10 +6,6 @@ inputs:
     description: Whether this is a prerelease
     required: false
     default: "false"
-  writeFile:
-    description: Write to package.json
-    required: false
-    default: "false"
 outputs:
   newVersion:
     description: New version
