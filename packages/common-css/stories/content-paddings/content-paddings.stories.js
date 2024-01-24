@@ -1,5 +1,7 @@
 import '../../src/sap-content-paddings.scss';
 import '../../src/sap-container-type.scss';
+import homeExampleHtml from './home.example.html?raw';
+import containerExampleHtml from './container.example.html?raw';
 
 export default {
     title: 'Content Paddings',
@@ -23,33 +25,9 @@ const localStyles = `
     }
 </style>
 `;
-export const HomeExample = () => `${localStyles}
-<h3>Responsive</h3>
-<div class="sap-container-type-inline-size">
-    <div class="demo sap-content-paddings-home">
-        <div></div>
-    </div>
-</div>
-<br>
-<h3>Size SM</h3>
-<div class="demo sap-content-paddings-home-sm">
-    <div></div>
-</div>
-<br>
-<h3>Size MD</h3>
-<div class="demo sap-content-paddings-home-md">
-    <div></div>
-</div>
-<br>
-<h3>Size LG</h3>
-<div class="demo sap-content-paddings-home-lg">
-    <div></div>
-</div>
-<br>
-<h3>Size XL</h3>
-<div class="demo sap-content-paddings-home-xl">
-    <div></div>
-</div>
+export const HomeExample = () => `
+${localStyles}
+${homeExampleHtml}
 `;
 HomeExample.storyName = 'Home (content area)';
 HomeExample.parameters = {
@@ -108,33 +86,9 @@ HomeExample.parameters = {
     }
 };
 
-export const ContainerExample = () => `${localStyles}
-<h3>Responsive</h3>
-<div class="sap-container-type-inline-size">
-    <div class="demo sap-content-paddings-container">
-        <div></div>
-    </div>
-</div>
-<br>
-<h3>Size SM</h3>
-<div class="demo sap-content-paddings-container-sm">
-    <div></div>
-</div>
-<br>
-<h3>Size MD</h3>
-<div class="demo sap-content-paddings-container-md">
-    <div></div>
-</div>
-<br>
-<h3>Size LG</h3>
-<div class="demo sap-content-paddings-container-lg">
-    <div></div>
-</div>
-<br>
-<h3>Size XL</h3>
-<div class="demo sap-content-paddings-container-xl">
-    <div></div>
-</div>
+export const ContainerExample = () => `
+${localStyles}
+${containerExampleHtml}
 `;
 ContainerExample.storyName = 'Content containers';
 ContainerExample.parameters = {

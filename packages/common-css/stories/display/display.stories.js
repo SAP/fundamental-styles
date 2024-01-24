@@ -1,16 +1,16 @@
 import '../../src/sap-display.scss';
 import '../../src/sap-sr-only.scss';
 import '../../../styles/src/icon.scss';
-
-import description from './display.story.description.html?raw'
+import description from './display.story.description.html?raw';
+import displayHelperClassExampleHtml from './display-helper-class.example.html?raw';
+import screenReaderOnlyExampleHtml from './screen-reader-only.example.html?raw';
 
 export default {
-    title: 'Display',
-    parameters: {
-        description,
-    }
+  title: 'Display',
+  parameters: {
+    description
+  }
 };
-
 const localStyles = `
 <style>
     .sap-docs-container section{
@@ -31,61 +31,25 @@ const localStyles = `
     }
 </style>
 `;
-
-export const DisplayHelperClass = () => `${localStyles}
-<h4>Display Flex</h4>
-<div class="sap-docs-container">
-    <section class="sap-display-flex">
-        <div></div>
-        <div></div>
-        <div></div>
-    </section>
-</div>
-
-<h4>Display Grid</h4>
-<div class="sap-docs-container">
-    <section class="sap-display-grid">
-        <div></div>
-        <div></div>
-        <div></div>
-    </section>
-</div>
-
-<h4>Display Inline-Block</h4>
-<div class="sap-docs-container">
-    <section>
-        <div class="sap-display-inline-block"></div>
-        <div class="sap-display-inline-block"></div>
-        <div class="sap-display-inline-block"></div>
-    </section>
-</div>
-`;
-
+export const DisplayHelperClass = () => `${localStyles}${displayHelperClassExampleHtml}`;
 DisplayHelperClass.storyName = 'Display';
-
 DisplayHelperClass.parameters = {
-    docs: {
-        description: {
-            story: `
-        ` }
+  docs: {
+    description: {
+      story: `
+        `
     }
+  }
 };
-
-export const ScreenReaderOnly = () => `${localStyles}
-<a href="#">
-    <span class="sap-icon sap-icon--account"></span>
-    <span class="sap-sr-only">User Account</span>
-</a>
-`;
-
+export const ScreenReaderOnly = () => `${localStyles}${screenReaderOnlyExampleHtml}`;
 ScreenReaderOnly.storyName = 'Screen-reader-only elements';
-
 ScreenReaderOnly.parameters = {
-    docs: {
-        description: {
-            story: `The <code>.sap-sr-only</code> class will hide the element visually without hiding it from screen readers. <br><br>
+  docs: {
+    description: {
+      story: `The <code>.sap-sr-only</code> class will hide the element visually without hiding it from screen readers. <br><br>
             <b>SCSS Mixin: </b>
             <code>@include sap-sr-only();</code>
-        ` }
+        `
     }
+  }
 };

@@ -1,14 +1,21 @@
 import '../../src/sap-margin.scss';
-
 import description from './margin.story.description.html?raw';
+import allRoundMarginExampleHtml from './all-round-margin.example.html?raw';
+import topMarginExampleHtml from './top-margin.example.html?raw';
+import bottomMarginExampleHtml from './bottom-margin.example.html?raw';
+import beginMarginExampleHtml from './begin-margin.example.html?raw';
+import endMarginExampleHtml from './end-margin.example.html?raw';
+import horizontalMarginExampleHtml from './horizontal-margin.example.html?raw';
+import verticalMarginExampleHtml from './vertical-margin.example.html?raw';
+import responsiveMarginExampleHtml from './responsive-margin.example.html?raw';
+import negativeMarginExampleHtml from './negative-margin.example.html?raw';
 
 export default {
-    title: 'Margins',
-    parameters: {
-        description,
-    }
+  title: 'Margins',
+  parameters: {
+    description
+  }
 };
-
 const localStyles = `
 <style>
     div.demo {
@@ -23,33 +30,12 @@ const localStyles = `
     }
 </style>
 `;
-export const AllRoundMargin = () => `${localStyles}
-<h3>All-Round Tiny (0.5rem)</h3>
-<div class="demo">
-    <div class="sap-margin-tiny"></div>
-</div>
-<br>
-<h3>All-Round Small (1rem)</h3>
-<div class="demo">
-    <div class="sap-margin-small"></div>
-</div>
-<br>
-<h3>All-Round Medium (2rem)</h3>
-<div class="demo">
-    <div class="sap-margin-medium"></div>
-</div>
-<br>
-<h3>All-Round Large (3rem)</h3>
-<div class="demo">
-    <div class="sap-margin-large"></div>
-</div>
-<br>
-`;
+export const AllRoundMargin = () => `${localStyles}${allRoundMarginExampleHtml}`;
 AllRoundMargin.storyName = 'All-Round Margins';
 AllRoundMargin.parameters = {
-    docs: {
-        description: {
-            story: `All-round margins appear on all sides of the element they are applied to.
+  docs: {
+    description: {
+      story: `All-round margins appear on all sides of the element they are applied to.
             <table style="width: 100%; border-collapse: collapse; margin-top: 1rem;">
                 <tr>
                     <th style="padding: 0.25rem;">Type</th>
@@ -78,37 +64,15 @@ AllRoundMargin.parameters = {
                 </tr>
                 
             </table>`
-        }
     }
+  }
 };
-
-export const TopMargin = () => `${localStyles}
-<h3>Top Tiny (0.5rem)</h3>
-<div class="demo">
-    <div class="sap-margin-top-tiny"></div>
-</div>
-<br>
-<h3>Top Small (1rem)</h3>
-<div class="demo">
-    <div class="sap-margin-top-small"></div>
-</div>
-<br>
-<h3>Top Medium (2rem)</h3>
-<div class="demo">
-    <div class="sap-margin-top-medium"></div>
-</div>
-<br>
-<h3>Top Large (3rem)</h3>
-<div class="demo">
-    <div class="sap-margin-top-large"></div>
-</div>
-<br>
-`;
+export const TopMargin = () => `${localStyles}${topMarginExampleHtml}`;
 TopMargin.storyName = 'Top Margins';
 TopMargin.parameters = {
-    docs: {
-        description: {
-            story: `The top margin is displayed on the top of the element.
+  docs: {
+    description: {
+      story: `The top margin is displayed on the top of the element.
             <table style="width: 100%; border-collapse: collapse; margin-top: 1rem;">
                 <tr>
                     <th style="padding: 0.25rem;">Type</th>
@@ -136,37 +100,15 @@ TopMargin.parameters = {
                     <td style="padding: 0.25rem;">@include sap-margin(large, top)</td>
                 </tr>
             </table>`
-        }
     }
+  }
 };
-
-export const BottomMargin = () => `${localStyles}
-<h3>Bottom Tiny (0.5rem)</h3>
-<div class="demo">
-    <div class="sap-margin-bottom-tiny"></div>
-</div>
-<br>
-<h3>Bottom Small (1rem)</h3>
-<div class="demo">
-    <div class="sap-margin-bottom-small"></div>
-</div>
-<br>
-<h3>Bottom Medium (2rem)</h3>
-<div class="demo">
-    <div class="sap-margin-bottom-medium"></div>
-</div>
-<br>
-<h3>Bottom Large (3rem)</h3>
-<div class="demo">
-    <div class="sap-margin-bottom-large"></div>
-</div>
-<br>
-`;
+export const BottomMargin = () => `${localStyles}${bottomMarginExampleHtml}`;
 BottomMargin.storyName = 'Bottom Margins';
 BottomMargin.parameters = {
-    docs: {
-        description: {
-            story: `The bottom margin is displayed on the bottom of the element.
+  docs: {
+    description: {
+      story: `The bottom margin is displayed on the bottom of the element.
             <table style="width: 100%; border-collapse: collapse; margin-top: 1rem;">
                 <tr>
                     <th style="padding: 0.25rem;">Type</th>
@@ -194,37 +136,15 @@ BottomMargin.parameters = {
                     <td style="padding: 0.25rem;">@include sap-margin(large, bottom)</td>
                 </tr>
             </table>`
-        }
     }
+  }
 };
-
-export const BeginMargin = () => `${localStyles}
-<h3>Begin Tiny (0.5rem)</h3>
-<div class="demo">
-    <div class="sap-margin-begin-tiny"></div>
-</div>
-<br>
-<h3>Begin Small (1rem)</h3>
-<div class="demo">
-    <div class="sap-margin-begin-small"></div>
-</div>
-<br>
-<h3>Begin Medium (2rem)</h3>
-<div class="demo">
-    <div class="sap-margin-begin-medium"></div>
-</div>
-<br>
-<h3>Begin Large (3rem)</h3>
-<div class="demo">
-    <div class="sap-margin-begin-large"></div>
-</div>
-<br>
-`;
+export const BeginMargin = () => `${localStyles}${beginMarginExampleHtml}`;
 BeginMargin.storyName = 'Begin Margins';
 BeginMargin.parameters = {
-    docs: {
-        description: {
-            story: `The begin margin is displayed on the left side and in right-to-left mode on the right side of the element.
+  docs: {
+    description: {
+      story: `The begin margin is displayed on the left side and in right-to-left mode on the right side of the element.
             <table style="width: 100%; border-collapse: collapse; margin-top: 1rem;">
                 <tr>
                     <th style="padding: 0.25rem;">Type</th>
@@ -252,37 +172,15 @@ BeginMargin.parameters = {
                     <td style="padding: 0.25rem;">@include sap-margin(large, begin)</td>
                 </tr>
             </table>`
-        }
     }
+  }
 };
-
-export const EndMargin = () => `${localStyles}
-<h3>End Tiny (0.5rem)</h3>
-<div class="demo">
-    <div class="sap-margin-end-tiny"></div>
-</div>
-<br>
-<h3>End Small (1rem)</h3>
-<div class="demo">
-    <div class="sap-margin-end-small"></div>
-</div>
-<br>
-<h3>End Medium (2rem)</h3>
-<div class="demo">
-    <div class="sap-margin-end-medium"></div>
-</div>
-<br>
-<h3>End Large (3rem)</h3>
-<div class="demo">
-    <div class="sap-margin-end-large"></div>
-</div>
-<br>
-`;
+export const EndMargin = () => `${localStyles}${endMarginExampleHtml}`;
 EndMargin.storyName = 'End Margins';
 EndMargin.parameters = {
-    docs: {
-        description: {
-            story: `The end margin is displayed on the right side and in right-to-left mode on the left side of the element.
+  docs: {
+    description: {
+      story: `The end margin is displayed on the right side and in right-to-left mode on the left side of the element.
             <table style="width: 100%; border-collapse: collapse; margin-top: 1rem;">
                 <tr>
                     <th style="padding: 0.25rem;">Type</th>
@@ -310,37 +208,15 @@ EndMargin.parameters = {
                     <td style="padding: 0.25rem;">@include sap-margin(large, end)</td>
                 </tr>
             </table>`
-        }
     }
+  }
 };
-
-export const HorizontalMargin = () => `${localStyles}
-<h3>Horizontal Tiny (0.5rem)</h3>
-<div class="demo">
-    <div class="sap-margin-x-tiny"></div>
-</div>
-<br>
-<h3>Horizontal Small (1rem)</h3>
-<div class="demo">
-    <div class="sap-margin-x-small"></div>
-</div>
-<br>
-<h3>Horizontal Medium (2rem)</h3>
-<div class="demo">
-    <div class="sap-margin-x-medium"></div>
-</div>
-<br>
-<h3>Horizontal Large (3rem)</h3>
-<div class="demo">
-    <div class="sap-margin-x-large"></div>
-</div>
-<br>
-`;
+export const HorizontalMargin = () => `${localStyles}${horizontalMarginExampleHtml}`;
 HorizontalMargin.storyName = 'Horizontal Margins';
 HorizontalMargin.parameters = {
-    docs: {
-        description: {
-            story: `The horizontal margins are displayed on left and right side of the element.
+  docs: {
+    description: {
+      story: `The horizontal margins are displayed on left and right side of the element.
             <table style="width: 100%; border-collapse: collapse; margin-top: 1rem;">
                 <tr>
                     <th style="padding: 0.25rem;">Type</th>
@@ -368,37 +244,15 @@ HorizontalMargin.parameters = {
                     <td style="padding: 0.25rem;">@include sap-margin(large, x)</td>
                 </tr>
             </table>`
-        }
     }
+  }
 };
-
-export const VerticalMargin = () => `${localStyles}
-<h3>Vertical Tiny (0.5rem)</h3>
-<div class="demo">
-    <div class="sap-margin-y-tiny"></div>
-</div>
-<br>
-<h3>Vertical Small (1rem)</h3>
-<div class="demo">
-    <div class="sap-margin-y-small"></div>
-</div>
-<br>
-<h3>Vertical Medium (2rem)</h3>
-<div class="demo">
-    <div class="sap-margin-y-medium"></div>
-</div>
-<br>
-<h3>Vertical Large (3rem)</h3>
-<div class="demo">
-    <div class="sap-margin-y-large"></div>
-</div>
-<br>
-`;
+export const VerticalMargin = () => `${localStyles}${verticalMarginExampleHtml}`;
 VerticalMargin.storyName = 'Vertical Margins';
 VerticalMargin.parameters = {
-    docs: {
-        description: {
-            story: `The vertical margins are displayed on top and bottom of the element.
+  docs: {
+    description: {
+      story: `The vertical margins are displayed on top and bottom of the element.
             <table style="width: 100%; border-collapse: collapse; margin-top: 1rem;">
                 <tr>
                     <th style="padding: 0.25rem;">Type</th>
@@ -426,20 +280,15 @@ VerticalMargin.parameters = {
                     <td style="padding: 0.25rem;">@include sap-margin(large, y)</td>
                 </tr>
             </table>`
-        }
     }
+  }
 };
-
-export const ResponsiveMargin = () => `${localStyles}
-<div class="demo">
-    <div class="sap-margin-responsive"></div>
-</div>
-`;
+export const ResponsiveMargin = () => `${localStyles}${responsiveMarginExampleHtml}`;
 ResponsiveMargin.storyName = 'Responsive Margins';
 ResponsiveMargin.parameters = {
-    docs: {
-        description: {
-            story: `The responsive margins class adds a margin around an element based on the width of the container the element is in. <br>
+  docs: {
+    description: {
+      story: `The responsive margins class adds a margin around an element based on the width of the container the element is in. <br>
             <b>CSS Class: </b><code>.sap-margin-responsive</code><br>
             <b>Mixin: </b><code>@include sap-margin-responsive()</code>
             <table style="width: 100%; border-collapse: collapse; margin-top: 1rem;">
@@ -464,37 +313,15 @@ ResponsiveMargin.parameters = {
                     <td style="padding: 0.25rem;">margin: 1rem 3rem !important;</td>
                 </tr>
             </table>`
-        }
     }
+  }
 };
-
-export const NegativeMargin = () => `${localStyles}
-<h3>Horizontal Negative Tiny (-0.5rem)</h3>
-<div class="demo">
-    <div class="sap-margin-tiny-negative"></div>
-</div>
-<br>
-<h3>Horizontal Negative Small (-1rem)</h3>
-<div class="demo">
-    <div class="sap-margin-small-negative"></div>
-</div>
-<br>
-<h3>Horizontal Negative Medium (-2rem)</h3>
-<div class="demo">
-    <div class="sap-margin-medium-negative"></div>
-</div>
-<br>
-<h3>Horizontal Negative Large (-3rem)</h3>
-<div class="demo">
-    <div class="sap-margin-large-negative"></div>
-</div>
-<br>
-`;
+export const NegativeMargin = () => `${localStyles}${negativeMarginExampleHtml}`;
 NegativeMargin.storyName = 'Negative Margins';
 NegativeMargin.parameters = {
-    docs: {
-        description: {
-            story: `The negative margin class adds a double sided negative margin to an element. This is useful when aligning elements with built-in paddings.
+  docs: {
+    description: {
+      story: `The negative margin class adds a double sided negative margin to an element. This is useful when aligning elements with built-in paddings.
             <table style="width: 100%; border-collapse: collapse; margin-top: 1rem;">
                 <tr>
                     <th style="padding: 0.25rem;">Type</th>
@@ -522,6 +349,6 @@ NegativeMargin.parameters = {
                     <td style="padding: 0.25rem;">.sap-margin-large-negative</td>
                 </tr>
             </table>`
-        }
     }
+  }
 };
