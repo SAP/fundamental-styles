@@ -40,14 +40,14 @@ The avatar control is adaptive and has five predefined sizes. These are the same
 | **Size** | **rem** | &nbsp;&nbsp; **Use for images in…** | **Modifier class** |
 | :--------- | ----------: | :----------------------- | :--------------- |
 | XS | 2 rem | &nbsp;&nbsp; Table list items, Card list items &nbsp;&nbsp;  | \`fd-avatar--xs\` |
-| S | 3 rem | &nbsp;&nbsp; Card headers, Card list items &nbsp;&nbsp; | \`fd-avatar--s\` |
-| M | 4 rem | &nbsp;&nbsp; App headers for small screen sizes &nbsp;&nbsp; | \`fd-avatar--m\` |
-| L | 5 rem | &nbsp;&nbsp; App headers for normal screen sizes &nbsp;&nbsp; | \`fd-avatar--l\` |
+| S | 3 rem | &nbsp;&nbsp; Card headers, Card list items &nbsp;&nbsp; | \`fd-avatar--s\` or <br/>\`fd-avatar--sm\` |
+| M | 4 rem | &nbsp;&nbsp; App headers for small screen sizes &nbsp;&nbsp; | \`fd-avatar--m\` or <br/>\`fd-avatar--md\` |
+| L | 5 rem | &nbsp;&nbsp; App headers for normal screen sizes &nbsp;&nbsp; | \`fd-avatar--l\` or <br/>\`fd-avatar--lg\` |
 | XL | 7 rem | &nbsp;&nbsp; App headers for large screen sizes &nbsp;&nbsp; | \`fd-avatar--xl\` |
 
 <br><br><br>
 `,
-    tags: ['a11y', 'f3', 'theme']
+    tags: []
   }
 };
 const localStyles = `
@@ -60,36 +60,14 @@ const localStyles = `
 
 </style>
 `;
-export const Icon = () => iconExampleHtml;
-Icon.parameters = {
-  docs: {
-    description: {
-      story: 'The icon avatar can be used to display non-interactive icons. If you want the icon to be interactive, use the **Button** component with an icon inside instead. <br><br>When using the icon avatar for illustrative purposes only, include `role="presentation"` in the element.'
-    }
-  }
-};
-export const Initials = () => initialsExampleHtml;
-Initials.parameters = {
-  docs: {
-    description: {
-      story: 'The initials avatar can display up to three alphabetical characters representing the first and last name(s) of a person, for example: MvV for Marjolein van Veen. The order in which the first and last name(s) are displayed depends on the language-specific settings.<br><br> When there is no equivalent text for the avatar, include `aria-label` in the element. This isn’t necessary if the avatar is used for illustrative purposes only. See **Icon** above.'
-    }
-  }
-};
-export const Circle = () => circleExampleHtml;
-Circle.parameters = {
-  docs: {
-    description: {
-      story: 'A circle style can be displayed by adding the `fd-avatar--circle` modifier class to the `fd-avatar` base class.'
-    }
-  }
-};
+
 export const BackgroundImage = () => backgroundImageExampleHtml;
+BackgroundImage.storyName = 'Image, Person';
 BackgroundImage.parameters = {
   docs: {
     description: {
-      story: `
-A background image can be displayed by adding the \`fd-avatar--thumbnail\` modifier class.
+      story: `An avatar is a visual representation of an user or a product in the digital space. For representing a person, the circular shape is used. For representing a product or object, the square shape is used. <br/>
+This type of Avatar requires the \`fd-avatar--thumbnail\` modifier class.
 There are two options to set the background: Cover (default) and Contain.
 
 - <b>Cover:</b> The size of the image is scaled up to completely cover the control area. As a result, parts of the image may be outside the shape.
@@ -99,6 +77,34 @@ Changing the default \`background-size: cover\` to \`background-size: contain\` 
     }
   }
 };
+
+export const Initials = () => initialsExampleHtml;
+Initials.parameters = {
+  docs: {
+    description: {
+      story: `The initials avatar can display up to <b style="color: red;">three</b> alphabetical characters representing the first and last name(s) of a person, for example: MvV for Marjolein van Veen. The order in which the first and last name(s) are displayed depends on the language-specific settings. If more than 3 initials are required to display longer names, then a gender-neutral person icon should be displayed instead. If the three letters does not fit in the shape (e.g. WWW), then the genderneutral person icon is used as a fallback.`
+    }
+  }
+};
+
+export const Icon = () => iconExampleHtml;
+Icon.parameters = {
+  docs: {
+    description: {
+      story: 'Placeholders are used when there is no other image available. Avatar and standardized images require placeholders.'
+    }
+  }
+};
+
+export const Circle = () => circleExampleHtml;
+Circle.parameters = {
+  docs: {
+    description: {
+      story: ' The circular shape is used mainly to represent a person. For this type of Avatar use the `fd-avatar--circle` modifier class with the `fd-avatar` base class.'
+    }
+  }
+};
+
 export const Transparent = () => transparentExampleHtml;
 Transparent.parameters = {
   docs: {
@@ -124,14 +130,16 @@ TileIconBackground.parameters = {
   }
 };
 export const AccentColors = () => accentColorsExampleHtml;
+AccentColors.storyName = 'Color variations';
 AccentColors.parameters = {
   docs: {
     description: {
-      story: 'To change the accent background color, add the `fd-avatar--accent-color-*` class with the number indicating the desired color. The color options include numbers ranging from 1 to 10, for example: `fd-avatar--accent-color-10`.'
+      story: 'The Avatar can have different background colors depending on the scenario. To change the accent background color, add the `fd-avatar--accent-color-*` class with the number indicating the desired color. The color options include numbers ranging from 1 to 10, for example: `fd-avatar--accent-color-10`.'
     }
   }
 };
 export const AccentColorsShellHeaderContext = () => accentColorsShellHeaderContextExampleHtml;
+AccentColorsShellHeaderContext.storyName = 'Color variations in Shell header context';
 AccentColorsShellHeaderContext.parameters = {
   docs: {
     description: {
@@ -167,19 +175,19 @@ Borders.parameters = {
 export const Interactive = () => `${localStyles}
 <h3>Regular State</h3>
 <span class="fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--accent-color-1" tabindex="0" role="button" aria-label="Avatar">
-    <i class="fd-avatar__icon sap-icon--money-bills" role="presentation" aria-hidden="true" aria-label="Image placeholder"></i>
+    <i class="fd-avatar__icon sap-icon--person-placeholder" role="presentation" aria-hidden="true" aria-label="Image placeholder"></i>
 </span>
 <span class="fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--accent-color-2" tabindex="0" role="button" aria-label="Avatar">
-    <i class="fd-avatar__icon sap-icon--money-bills" role="presentation" aria-hidden="true" aria-label="Image placeholder"></i>
+    <i class="fd-avatar__icon sap-icon--person-placeholder" role="presentation" aria-hidden="true" aria-label="Image placeholder"></i>
 </span>
 <span class="fd-avatar fd-avatar--m fd-avatar--circle fd-avatar--accent-color-3" tabindex="0" role="button" aria-label="Avatar">
-    <i class="fd-avatar__icon sap-icon--money-bills" role="presentation" aria-hidden="true" aria-label="Image placeholder"></i>
+    <i class="fd-avatar__icon sap-icon--person-placeholder" role="presentation" aria-hidden="true" aria-label="Image placeholder"></i>
 </span>
 <span class="fd-avatar fd-avatar--l fd-avatar--circle fd-avatar--accent-color-4" tabindex="0" role="button" aria-label="Avatar">
-    <i class="fd-avatar__icon sap-icon--money-bills" role="presentation" aria-hidden="true" aria-label="Image placeholder"></i>
+    <i class="fd-avatar__icon sap-icon--person-placeholder" role="presentation" aria-hidden="true" aria-label="Image placeholder"></i>
 </span>
 <span class="fd-avatar fd-avatar--xl fd-avatar--circle fd-avatar--accent-color-5" tabindex="0" role="button" aria-label="Avatar">
-    <i class="fd-avatar__icon sap-icon--money-bills" role="presentation" aria-hidden="true" aria-label="Image placeholder"></i>
+    <i class="fd-avatar__icon sap-icon--person-placeholder" role="presentation" aria-hidden="true" aria-label="Image placeholder"></i>
 </span>
 <span class="fd-avatar fd-avatar--accent-color-6 fd-avatar--xs" tabindex="0" role="button" aria-label="Wendy Wallace">WW
 </span>
@@ -192,15 +200,15 @@ export const Interactive = () => `${localStyles}
 <span class="fd-avatar fd-avatar--accent-color-10 fd-avatar--xl" tabindex="0" role="button" aria-label="Wendy Wallace">WW
 </span>
 <span class="fd-avatar fd-avatar--xl fd-avatar--circle fd-avatar--placeholder" tabindex="0" role="button" aria-label="Avatar">
-    <i class="fd-avatar__icon sap-icon--money-bills" role="presentation" aria-hidden="true" aria-label="Image placeholder"></i>
+    <i class="fd-avatar__icon sap-icon--person-placeholder" role="presentation" aria-hidden="true" aria-label="Image placeholder"></i>
 </span>
 <span class="fd-avatar fd-avatar--xl fd-avatar--circle fd-avatar--tile" tabindex="0" role="button" aria-label="Avatar">
-    <i class="fd-avatar__icon sap-icon--money-bills" role="presentation" aria-hidden="true" aria-label="Image placeholder"></i>
+    <i class="fd-avatar__icon sap-icon--person-placeholder" role="presentation" aria-hidden="true" aria-label="Image placeholder"></i>
 </span>
 <span class="fd-avatar fd-avatar--xl fd-avatar--circle fd-avatar--thumbnail" tabindex="0" role="button" style="background-image: url('/assets/images/portraits/L_80x80_M1.png')" role="img" aria-label="John Doe"></span>
 <span class="fd-avatar fd-avatar--xl fd-avatar--circle fd-avatar--transparent" tabindex="0" role="button" aria-label="Wendy Wallace">WW</span>
 <span class="fd-avatar fd-avatar--xl fd-avatar--transparent fd-avatar--border" tabindex="0" role="button" aria-label="Avatar">
-    <i class="fd-avatar__icon sap-icon--money-bills" role="presentation" aria-hidden="true" aria-label="Image placeholder"></i>
+    <i class="fd-avatar__icon sap-icon--person-placeholder" role="presentation" aria-hidden="true" aria-label="Image placeholder"></i>
 </span>
 <span class="fd-avatar fd-avatar--xl fd-avatar--circle fd-avatar--transparent fd-avatar--border" tabindex="0" role="button" aria-label="Wendy Wallace">WW
 </span>
@@ -209,19 +217,19 @@ export const Interactive = () => `${localStyles}
 <h3>Hover State</h3>
 
 <span class="fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--accent-color-1 is-hover" tabindex="0" role="button" aria-label="Avatar">
-    <i class="fd-avatar__icon sap-icon--money-bills" role="presentation" aria-hidden="true" aria-label="Image placeholder"></i>
+    <i class="fd-avatar__icon sap-icon--person-placeholder" role="presentation" aria-hidden="true" aria-label="Image placeholder"></i>
 </span>
 <span class="fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--accent-color-2 is-hover" tabindex="0" role="button" aria-label="Avatar">
-    <i class="fd-avatar__icon sap-icon--money-bills" role="presentation" aria-hidden="true" aria-label="Image placeholder"></i>
+    <i class="fd-avatar__icon sap-icon--person-placeholder" role="presentation" aria-hidden="true" aria-label="Image placeholder"></i>
 </span>
 <span class="fd-avatar fd-avatar--m fd-avatar--circle fd-avatar--accent-color-3 is-hover" tabindex="0" role="button" aria-label="Avatar">
-    <i class="fd-avatar__icon sap-icon--money-bills" role="presentation" aria-hidden="true" aria-label="Image placeholder"></i>
+    <i class="fd-avatar__icon sap-icon--person-placeholder" role="presentation" aria-hidden="true" aria-label="Image placeholder"></i>
 </span>
 <span class="fd-avatar fd-avatar--l fd-avatar--circle fd-avatar--accent-color-4 is-hover" tabindex="0" role="button" aria-label="Avatar">
-    <i class="fd-avatar__icon sap-icon--money-bills" role="presentation" aria-hidden="true" aria-label="Image placeholder"></i>
+    <i class="fd-avatar__icon sap-icon--person-placeholder" role="presentation" aria-hidden="true" aria-label="Image placeholder"></i>
 </span>
 <span class="fd-avatar fd-avatar--xl fd-avatar--circle fd-avatar--accent-color-5 is-hover" tabindex="0" role="button" aria-label="Avatar">
-    <i class="fd-avatar__icon sap-icon--money-bills" role="presentation" aria-hidden="true" aria-label="Image placeholder"></i>
+    <i class="fd-avatar__icon sap-icon--person-placeholder" role="presentation" aria-hidden="true" aria-label="Image placeholder"></i>
 </span>
 <span class="fd-avatar fd-avatar--accent-color-6 fd-avatar--xs is-hover" tabindex="0" role="button" aria-label="Wendy Wallace">WW
 </span>
@@ -234,15 +242,15 @@ export const Interactive = () => `${localStyles}
 <span class="fd-avatar fd-avatar--accent-color-10 fd-avatar--xl is-hover" tabindex="0" role="button" aria-label="Wendy Wallace">WW
 </span>
 <span class="fd-avatar fd-avatar--xl fd-avatar--circle fd-avatar--placeholder is-hover" tabindex="0" role="button" aria-label="Avatar">
-    <i class="fd-avatar__icon sap-icon--money-bills" role="presentation" aria-hidden="true" aria-label="Image placeholder"></i>
+    <i class="fd-avatar__icon sap-icon--person-placeholder" role="presentation" aria-hidden="true" aria-label="Image placeholder"></i>
 </span>
 <span class="fd-avatar fd-avatar--xl fd-avatar--circle fd-avatar--tile is-hover" tabindex="0" role="button" aria-label="Avatar">
-    <i class="fd-avatar__icon sap-icon--money-bills" role="presentation" aria-hidden="true" aria-label="Image placeholder"></i>
+    <i class="fd-avatar__icon sap-icon--person-placeholder" role="presentation" aria-hidden="true" aria-label="Image placeholder"></i>
 </span>
 <span class="fd-avatar fd-avatar--xl fd-avatar--circle fd-avatar--thumbnail is-hover" tabindex="0" role="button" style="background-image: url('/assets/images/portraits/L_80x80_M1.png')" role="img" aria-label="John Doe"></span>
 <span class="fd-avatar fd-avatar--xl fd-avatar--circle fd-avatar--transparent is-hover" tabindex="0" role="button" aria-label="Wendy Wallace">WW</span>
 <span class="fd-avatar fd-avatar--xl fd-avatar--transparent fd-avatar--border is-hover" tabindex="0" role="button" aria-label="Avatar">
-    <i class="fd-avatar__icon sap-icon--money-bills" role="presentation" aria-hidden="true" aria-label="Image placeholder"></i>
+    <i class="fd-avatar__icon sap-icon--person-placeholder" role="presentation" aria-hidden="true" aria-label="Image placeholder"></i>
 </span>
 <span class="fd-avatar fd-avatar--xl fd-avatar--circle fd-avatar--transparent fd-avatar--border is-hover" tabindex="0" role="button" aria-label="Wendy Wallace">WW
 </span>
@@ -252,19 +260,19 @@ export const Interactive = () => `${localStyles}
 <h3>Active/Toggled State</h3>
 
 <span class="fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--accent-color-1 is-active" tabindex="0" role="button" aria-label="Avatar">
-    <i class="fd-avatar__icon sap-icon--money-bills" role="presentation" aria-hidden="true" aria-label="Image placeholder"></i>
+    <i class="fd-avatar__icon sap-icon--person-placeholder" role="presentation" aria-hidden="true" aria-label="Image placeholder"></i>
 </span>
 <span class="fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--accent-color-2 is-active" tabindex="0" role="button" aria-label="Avatar">
-    <i class="fd-avatar__icon sap-icon--money-bills" role="presentation" aria-hidden="true" aria-label="Image placeholder"></i>
+    <i class="fd-avatar__icon sap-icon--person-placeholder" role="presentation" aria-hidden="true" aria-label="Image placeholder"></i>
 </span>
 <span class="fd-avatar fd-avatar--m fd-avatar--circle fd-avatar--accent-color-3 is-active" tabindex="0" role="button" aria-label="Avatar">
-    <i class="fd-avatar__icon sap-icon--money-bills" role="presentation" aria-hidden="true" aria-label="Image placeholder"></i>
+    <i class="fd-avatar__icon sap-icon--person-placeholder" role="presentation" aria-hidden="true" aria-label="Image placeholder"></i>
 </span>
 <span class="fd-avatar fd-avatar--l fd-avatar--circle fd-avatar--accent-color-4 is-active" tabindex="0" role="button" aria-label="Avatar">
-    <i class="fd-avatar__icon sap-icon--money-bills" role="presentation" aria-hidden="true" aria-label="Image placeholder"></i>
+    <i class="fd-avatar__icon sap-icon--person-placeholder" role="presentation" aria-hidden="true" aria-label="Image placeholder"></i>
 </span>
 <span class="fd-avatar fd-avatar--xl fd-avatar--circle fd-avatar--accent-color-5 is-active" tabindex="0" role="button" aria-label="Avatar">
-    <i class="fd-avatar__icon sap-icon--money-bills" role="presentation" aria-hidden="true" aria-label="Image placeholder"></i>
+    <i class="fd-avatar__icon sap-icon--person-placeholder" role="presentation" aria-hidden="true" aria-label="Image placeholder"></i>
 </span>
 <span class="fd-avatar fd-avatar--accent-color-6 fd-avatar--xs is-active" tabindex="0" role="button" aria-label="Wendy Wallace">WW
 </span>
@@ -277,15 +285,15 @@ export const Interactive = () => `${localStyles}
 <span class="fd-avatar fd-avatar--accent-color-10 fd-avatar--xl is-active" tabindex="0" role="button" aria-label="Wendy Wallace">WW
 </span>
 <span class="fd-avatar fd-avatar--xl fd-avatar--circle fd-avatar--placeholder is-active" tabindex="0" role="button" aria-label="Avatar">
-    <i class="fd-avatar__icon sap-icon--money-bills" role="presentation" aria-hidden="true" aria-label="Image placeholder"></i>
+    <i class="fd-avatar__icon sap-icon--person-placeholder" role="presentation" aria-hidden="true" aria-label="Image placeholder"></i>
 </span>
 <span class="fd-avatar fd-avatar--xl fd-avatar--circle fd-avatar--tile is-active" tabindex="0" role="button" aria-label="Avatar">
-    <i class="fd-avatar__icon sap-icon--money-bills" role="presentation" aria-hidden="true" aria-label="Image placeholder"></i>
+    <i class="fd-avatar__icon sap-icon--person-placeholder" role="presentation" aria-hidden="true" aria-label="Image placeholder"></i>
 </span>
 <span class="fd-avatar fd-avatar--xl fd-avatar--circle fd-avatar--thumbnail is-active" tabindex="0" role="button" style="background-image: url('/assets/images/portraits/L_80x80_M1.png')" role="img" aria-label="John Doe"></span>
 <span class="fd-avatar fd-avatar--xl fd-avatar--circle fd-avatar--transparent is-active" tabindex="0" role="button" aria-label="Wendy Wallace">WW</span>
 <span class="fd-avatar fd-avatar--xl fd-avatar--transparent fd-avatar--border is-active" tabindex="0" role="button" aria-label="Avatar">
-    <i class="fd-avatar__icon sap-icon--money-bills" role="presentation" aria-hidden="true" aria-label="Image placeholder"></i>
+    <i class="fd-avatar__icon sap-icon--person-placeholder" role="presentation" aria-hidden="true" aria-label="Image placeholder"></i>
 </span>
 <span class="fd-avatar fd-avatar--xl fd-avatar--circle fd-avatar--transparent fd-avatar--border is-active" tabindex="0" role="button" aria-label="Wendy Wallace">WW
 </span>
@@ -294,19 +302,19 @@ export const Interactive = () => `${localStyles}
 <h3>Toggled Hover State</h3>
 
 <span class="fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--accent-color-1 is-toggled is-hover" tabindex="0" role="button" aria-label="Avatar">
-    <i class="fd-avatar__icon sap-icon--money-bills" role="presentation" aria-hidden="true" aria-label="Image placeholder"></i>
+    <i class="fd-avatar__icon sap-icon--person-placeholder" role="presentation" aria-hidden="true" aria-label="Image placeholder"></i>
 </span>
 <span class="fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--accent-color-2 is-toggled is-hover" tabindex="0" role="button" aria-label="Avatar">
-    <i class="fd-avatar__icon sap-icon--money-bills" role="presentation" aria-hidden="true" aria-label="Image placeholder"></i>
+    <i class="fd-avatar__icon sap-icon--person-placeholder" role="presentation" aria-hidden="true" aria-label="Image placeholder"></i>
 </span>
 <span class="fd-avatar fd-avatar--m fd-avatar--circle fd-avatar--accent-color-3 is-toggled is-hover" tabindex="0" role="button" aria-label="Avatar">
-    <i class="fd-avatar__icon sap-icon--money-bills" role="presentation" aria-hidden="true" aria-label="Image placeholder"></i>
+    <i class="fd-avatar__icon sap-icon--person-placeholder" role="presentation" aria-hidden="true" aria-label="Image placeholder"></i>
 </span>
 <span class="fd-avatar fd-avatar--l fd-avatar--circle fd-avatar--accent-color-4 is-toggled is-hover" tabindex="0" role="button" aria-label="Avatar">
-    <i class="fd-avatar__icon sap-icon--money-bills" role="presentation" aria-hidden="true" aria-label="Image placeholder"></i>
+    <i class="fd-avatar__icon sap-icon--person-placeholder" role="presentation" aria-hidden="true" aria-label="Image placeholder"></i>
 </span>
 <span class="fd-avatar fd-avatar--xl fd-avatar--circle fd-avatar--accent-color-5 is-toggled is-hover" tabindex="0" role="button" aria-label="Avatar">
-    <i class="fd-avatar__icon sap-icon--money-bills" role="presentation" aria-hidden="true" aria-label="Image placeholder"></i>
+    <i class="fd-avatar__icon sap-icon--person-placeholder" role="presentation" aria-hidden="true" aria-label="Image placeholder"></i>
 </span>
 <span class="fd-avatar fd-avatar--accent-color-6 fd-avatar--xs is-toggled is-hover" tabindex="0" role="button" aria-label="Wendy Wallace">WW
 </span>
@@ -319,15 +327,15 @@ export const Interactive = () => `${localStyles}
 <span class="fd-avatar fd-avatar--accent-color-10 fd-avatar--xl is-toggled is-hover" tabindex="0" role="button" aria-label="Wendy Wallace">WW
 </span>
 <span class="fd-avatar fd-avatar--xl fd-avatar--circle fd-avatar--placeholder is-toggled is-hover" tabindex="0" role="button" aria-label="Avatar">
-    <i class="fd-avatar__icon sap-icon--money-bills" role="presentation" aria-hidden="true" aria-label="Image placeholder"></i>
+    <i class="fd-avatar__icon sap-icon--person-placeholder" role="presentation" aria-hidden="true" aria-label="Image placeholder"></i>
 </span>
 <span class="fd-avatar fd-avatar--xl fd-avatar--circle fd-avatar--tile is-toggled is-hover" tabindex="0" role="button" aria-label="Avatar">
-    <i class="fd-avatar__icon sap-icon--money-bills" role="presentation" aria-hidden="true" aria-label="Image placeholder"></i>
+    <i class="fd-avatar__icon sap-icon--person-placeholder" role="presentation" aria-hidden="true" aria-label="Image placeholder"></i>
 </span>
 <span class="fd-avatar fd-avatar--xl fd-avatar--circle fd-avatar--thumbnail is-toggled is-hover" tabindex="0" role="button" style="background-image: url('/assets/images/portraits/L_80x80_M1.png')" role="img" aria-label="John Doe"></span>
 <span class="fd-avatar fd-avatar--xl fd-avatar--circle fd-avatar--transparent is-toggled is-hover"  tabindex="0" role="button"aria-label="Wendy Wallace">WW</span>
 <span class="fd-avatar fd-avatar--xl fd-avatar--transparent fd-avatar--border is-toggled is-hover"  tabindex="0" role="button"aria-label="Avatar">
-    <i class="fd-avatar__icon sap-icon--money-bills" role="presentation" aria-hidden="true" aria-label="Image placeholder"></i>
+    <i class="fd-avatar__icon sap-icon--person-placeholder" role="presentation" aria-hidden="true" aria-label="Image placeholder"></i>
 </span>
 <span class="fd-avatar fd-avatar--xl fd-avatar--circle fd-avatar--transparent fd-avatar--border is-toggled is-hover" tabindex="0" role="button" aria-label="Wendy Wallace">WW
 </span>
@@ -336,19 +344,19 @@ export const Interactive = () => `${localStyles}
 <h3>Disabled State</h3>
 
 <span class="fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--accent-color-1 is-disabled" role="button" aria-label="Avatar">
-    <i class="fd-avatar__icon sap-icon--money-bills" role="presentation" aria-hidden="true" aria-label="Image placeholder"></i>
+    <i class="fd-avatar__icon sap-icon--person-placeholder" role="presentation" aria-hidden="true" aria-label="Image placeholder"></i>
 </span>
 <span class="fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--accent-color-2 is-disabled" role="button" aria-label="Avatar">
-    <i class="fd-avatar__icon sap-icon--money-bills" role="presentation" aria-hidden="true" aria-label="Image placeholder"></i>
+    <i class="fd-avatar__icon sap-icon--person-placeholder" role="presentation" aria-hidden="true" aria-label="Image placeholder"></i>
 </span>
 <span class="fd-avatar fd-avatar--m fd-avatar--circle fd-avatar--accent-color-3 is-disabled" role="button" aria-label="Avatar">
-    <i class="fd-avatar__icon sap-icon--money-bills" role="presentation" aria-hidden="true" aria-label="Image placeholder"></i>
+    <i class="fd-avatar__icon sap-icon--person-placeholder" role="presentation" aria-hidden="true" aria-label="Image placeholder"></i>
 </span>
 <span class="fd-avatar fd-avatar--l fd-avatar--circle fd-avatar--accent-color-4 is-disabled" role="button" aria-label="Avatar">
-    <i class="fd-avatar__icon sap-icon--money-bills" role="presentation" aria-hidden="true" aria-label="Image placeholder"></i>
+    <i class="fd-avatar__icon sap-icon--person-placeholder" role="presentation" aria-hidden="true" aria-label="Image placeholder"></i>
 </span>
 <span class="fd-avatar fd-avatar--xl fd-avatar--circle fd-avatar--accent-color-5 is-disabled" role="button" aria-label="Avatar">
-    <i class="fd-avatar__icon sap-icon--money-bills" role="presentation" aria-hidden="true" aria-label="Image placeholder"></i>
+    <i class="fd-avatar__icon sap-icon--person-placeholder" role="presentation" aria-hidden="true" aria-label="Image placeholder"></i>
 </span>
 <span class="fd-avatar fd-avatar--accent-color-6 fd-avatar--xs is-disabled" role="button" aria-label="Wendy Wallace">WW
 </span>
@@ -361,15 +369,15 @@ export const Interactive = () => `${localStyles}
 <span class="fd-avatar fd-avatar--accent-color-10 fd-avatar--xl is-disabled" role="button" aria-label="Wendy Wallace">WW
 </span>
 <span class="fd-avatar fd-avatar--xl fd-avatar--circle fd-avatar--placeholder is-disabled" role="button" aria-label="Avatar">
-    <i class="fd-avatar__icon sap-icon--money-bills" role="presentation" aria-hidden="true" aria-label="Image placeholder"></i>
+    <i class="fd-avatar__icon sap-icon--person-placeholder" role="presentation" aria-hidden="true" aria-label="Image placeholder"></i>
 </span>
 <span class="fd-avatar fd-avatar--xl fd-avatar--circle fd-avatar--tile is-disabled" role="button" aria-label="Avatar">
-    <i class="fd-avatar__icon sap-icon--money-bills" role="presentation" aria-hidden="true" aria-label="Image placeholder"></i>
+    <i class="fd-avatar__icon sap-icon--person-placeholder" role="presentation" aria-hidden="true" aria-label="Image placeholder"></i>
 </span>
 <span class="fd-avatar fd-avatar--xl fd-avatar--circle fd-avatar--thumbnail is-disabled" role="button" style="background-image: url('/assets/images/portraits/L_80x80_M1.png')" role="img" aria-label="John Doe"></span>
 <span class="fd-avatar fd-avatar--xl fd-avatar--circle fd-avatar--transparent is-disabled" role="button" aria-label="Wendy Wallace">WW</span>
 <span class="fd-avatar fd-avatar--xl fd-avatar--transparent fd-avatar--border is-disabled"  role="button" aria-label="Avatar">
-    <i class="fd-avatar__icon sap-icon--money-bills" role="presentation" aria-hidden="true" aria-label="Image placeholder"></i>
+    <i class="fd-avatar__icon sap-icon--person-placeholder" role="presentation" aria-hidden="true" aria-label="Image placeholder"></i>
 </span>
 <span class="fd-avatar fd-avatar--xl fd-avatar--circle fd-avatar--transparent fd-avatar--border is-disabled" role="button" aria-label="Wendy Wallace">WW
 </span>
@@ -379,19 +387,19 @@ export const Interactive = () => `${localStyles}
 <h3>Focus State</h3>
 
 <span class="fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--accent-color-1 is-focus" tabindex="0" role="button" aria-label="Avatar">
-    <i class="fd-avatar__icon sap-icon--money-bills" role="presentation" aria-hidden="true" aria-label="Image placeholder"></i>
+    <i class="fd-avatar__icon sap-icon--person-placeholder" role="presentation" aria-hidden="true" aria-label="Image placeholder"></i>
 </span>
 <span class="fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--accent-color-2 is-focus" tabindex="0" role="button" aria-label="Avatar">
-    <i class="fd-avatar__icon sap-icon--money-bills" role="presentation" aria-hidden="true" aria-label="Image placeholder"></i>
+    <i class="fd-avatar__icon sap-icon--person-placeholder" role="presentation" aria-hidden="true" aria-label="Image placeholder"></i>
 </span>
 <span class="fd-avatar fd-avatar--m fd-avatar--circle fd-avatar--accent-color-3 is-focus" tabindex="0" role="button" aria-label="Avatar">
-    <i class="fd-avatar__icon sap-icon--money-bills" role="presentation" aria-hidden="true" aria-label="Image placeholder"></i>
+    <i class="fd-avatar__icon sap-icon--person-placeholder" role="presentation" aria-hidden="true" aria-label="Image placeholder"></i>
 </span>
 <span class="fd-avatar fd-avatar--l fd-avatar--circle fd-avatar--accent-color-4 is-focus" tabindex="0" role="button" aria-label="Avatar">
-    <i class="fd-avatar__icon sap-icon--money-bills" role="presentation" aria-hidden="true" aria-label="Image placeholder"></i>
+    <i class="fd-avatar__icon sap-icon--person-placeholder" role="presentation" aria-hidden="true" aria-label="Image placeholder"></i>
 </span>
 <span class="fd-avatar fd-avatar--xl fd-avatar--circle fd-avatar--accent-color-5 is-focus" tabindex="0" role="button" aria-label="Avatar">
-    <i class="fd-avatar__icon sap-icon--money-bills" role="presentation" aria-hidden="true" aria-label="Image placeholder"></i>
+    <i class="fd-avatar__icon sap-icon--person-placeholder" role="presentation" aria-hidden="true" aria-label="Image placeholder"></i>
 </span>
 <span class="fd-avatar fd-avatar--accent-color-6 fd-avatar--xs is-focus" tabindex="0" role="button" aria-label="Wendy Wallace">WW
 </span>
@@ -404,15 +412,15 @@ export const Interactive = () => `${localStyles}
 <span class="fd-avatar fd-avatar--accent-color-10 fd-avatar--xl is-focus" tabindex="0" role="button" aria-label="Wendy Wallace">WW
 </span>
 <span class="fd-avatar fd-avatar--xl fd-avatar--circle fd-avatar--placeholder is-focus" tabindex="0" role="button" aria-label="Avatar">
-    <i class="fd-avatar__icon sap-icon--money-bills" role="presentation" aria-hidden="true" aria-label="Image placeholder"></i>
+    <i class="fd-avatar__icon sap-icon--person-placeholder" role="presentation" aria-hidden="true" aria-label="Image placeholder"></i>
 </span>
 <span class="fd-avatar fd-avatar--xl fd-avatar--circle fd-avatar--tile is-focus" tabindex="0" role="button" aria-label="Avatar">
-    <i class="fd-avatar__icon sap-icon--money-bills" role="presentation" aria-hidden="true" aria-label="Image placeholder"></i>
+    <i class="fd-avatar__icon sap-icon--person-placeholder" role="presentation" aria-hidden="true" aria-label="Image placeholder"></i>
 </span>
 <span class="fd-avatar fd-avatar--xl fd-avatar--circle fd-avatar--thumbnail is-focus" tabindex="0" role="button" style="background-image: url('/assets/images/portraits/L_80x80_M1.png')" role="img" aria-label="John Doe"></span>
 <span class="fd-avatar fd-avatar--xl fd-avatar--circle fd-avatar--transparent is-focus" tabindex="0" role="button" aria-label="Wendy Wallace">WW</span>
 <span class="fd-avatar fd-avatar--xl fd-avatar--transparent fd-avatar--border is-focus" tabindex="0" role="button" aria-label="Avatar">
-    <i class="fd-avatar__icon sap-icon--money-bills" role="presentation" aria-hidden="true" aria-label="Image placeholder"></i>
+    <i class="fd-avatar__icon sap-icon--person-placeholder" role="presentation" aria-hidden="true" aria-label="Image placeholder"></i>
 </span>
 <span class="fd-avatar fd-avatar--xl fd-avatar--circle fd-avatar--transparent fd-avatar--border is-focus" tabindex="0" role="button" aria-label="Wendy Wallace">WW
 </span>
