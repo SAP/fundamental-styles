@@ -35,6 +35,22 @@
                 }
             }
         },
+        "sync-entry": {
+            "executor": "workspace-plugins:sync-components",
+            "options": {
+                "entry": "{projectRoot}/src/common-css.scss",
+                "include": [
+                    "{projectRoot}/src/*.scss",
+                    "packages/styles/src/layout-grid.scss"
+                ],
+                "exclude": [
+                    "{options.entry}",
+                    "{projectRoot}/src/_common-mixins.scss",
+                    "{projectRoot}/src/_common-variables.scss"
+                ]
+            },
+            "outputs": ["{options.entry}"]
+        },
         "lint": {
             "executor": "@nx/eslint:lint",
             "outputs": ["{options.outputFile}"]

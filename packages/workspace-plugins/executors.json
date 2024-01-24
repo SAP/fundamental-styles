@@ -15,6 +15,11 @@
       "implementation": "./src/executors/build-theming-preview/executor",
       "schema": "./src/executors/build-theming-preview/schema.json",
       "description": "Builds theming preview project"
+    },
+    "sync-components": {
+      "implementation": "./src/executors/sync-components/index",
+      "schema": "./src/executors/sync-components/schema.json",
+      "description": "Syncs exported components"
     }
   }
 }
