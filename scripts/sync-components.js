@@ -4,7 +4,7 @@
 const fs = require('fs');
 const { resolve, parse } = require('path');
 const postCssScss = require('postcss-scss');
-const glob = require('glob');
+const { sync: fastGlobSync } = require('fast-glob');
 
 const config = {
     fiori: {
@@ -25,7 +25,7 @@ if (!config[lib]) {
 
 const getComponentsList = (libConfig) => {
     // Include only main scss files.
-    const globFiles = glob.sync(`${libConfig.rootDir}/*.scss`, {
+    const globFiles = fastGlobSync(`${libConfig.rootDir}/*.scss`, {
         ignore: [
             libConfig.mainFile,
             `${libConfig.rootDir}/_*`

@@ -1,6 +1,6 @@
 import { ExecutorContext, logger, names, workspaceRoot } from '@nx/devkit';
 import { VisualStoriesSchema } from './schema';
-import glob from 'glob';
+import { sync as fastGlobSync } from 'fast-glob';
 import { themes as projectsThemes } from '../../../../../projects';
 import path, { parse as parsePath, relative } from 'path';
 import { parse as babelParser, ParseResult, types } from '@babel/core';
@@ -13,8 +13,8 @@ export default async function (schema: VisualStoriesSchema, context: ExecutorCon
     logger.info(`Creating Visual stories for ${projectName} 👀`);
     const projectRoot = context.projectGraph?.nodes[projectName].data.root;
     const workspaceRootPath = workspaceRoot.replace(/\\/g, '/');
-    const storiesFiles = glob.sync(`${projectRoot}/stories/**/*.stories.+(js|jsx|ts|tsx)`, { nodir: true });
-    const themes = (projectsThemes[projectName]?.themes || []).filter((theme) => schema.themes.includes(theme.value));
+    const storiesFiles = fastGlobSync(`${projectRoot}/stories/**/*.stories.+(js|jsx|ts|tsx)`, { onlyFiles: true });
+    const themes = (projectsThemes[projectName]?.themes || []).filter((theme: {value: string}) => schema.themes.includes(theme.value));
     const excludedStoriesKinds = (schema.excludedStoriesKinds || []).map((pattern) => new RegExp(pattern));
     if (themes.length === 0) {
         throw new Error(`No themes found for project ${projectName}`);
