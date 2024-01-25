@@ -9098,19 +9098,19 @@
         "description": "The background color for the hovered handle of positive button controls such as the switch."
       },
       "_sapButton_Handle_Positive_TextColorH": {
-        "value": "{Text._sapContent_ContrastTextColorH}",
+        "value": "{Text._sapTextColorH}",
         "type": "internal"
       },
       "_sapButton_Handle_Positive_TextColorS": {
-        "value": "{Text._sapContent_ContrastTextColorS}",
+        "value": "{Text._sapTextColorS}",
         "type": "internal"
       },
       "_sapButton_Handle_Positive_TextColorL": {
-        "value": "{Text._sapContent_ContrastTextColorL}",
+        "value": "{Text._sapTextColorL}",
         "type": "internal"
       },
       "_sapButton_Handle_Positive_TextColorA": {
-        "value": "{Text._sapContent_ContrastTextColorA}",
+        "value": "{Text._sapTextColorA}",
         "type": "internal"
       },
       "sapButton_Handle_Positive_TextColor": {
@@ -9180,19 +9180,19 @@
         "description": "The background color for the hovered handle of negative button controls such as the switch."
       },
       "_sapButton_Handle_Negative_TextColorH": {
-        "value": "{Text._sapContent_ContrastTextColorH}",
+        "value": "{Text._sapTextColorH}",
         "type": "internal"
       },
       "_sapButton_Handle_Negative_TextColorS": {
-        "value": "{Text._sapContent_ContrastTextColorS}",
+        "value": "{Text._sapTextColorS}",
         "type": "internal"
       },
       "_sapButton_Handle_Negative_TextColorL": {
-        "value": "{Text._sapContent_ContrastTextColorL}",
+        "value": "{Text._sapTextColorL}",
         "type": "internal"
       },
       "_sapButton_Handle_Negative_TextColorA": {
-        "value": "{Text._sapContent_ContrastTextColorA}",
+        "value": "{Text._sapTextColorA}",
         "type": "internal"
       },
       "sapButton_Handle_Negative_TextColor": {

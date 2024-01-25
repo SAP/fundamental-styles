@@ -4,7 +4,7 @@
 	"sLabel": "SAP Base Framework",
 	"sDescription": "The SAP Base Framework contains theming data shared by all HTML based SAP UI frameworks.",
 	"sVendor": "SAP",
-	"sVersion": "11.9.0",
+	"sVersion": "11.10.0",
 	"aBuildFiles": [
 		"preview",
 		"css_variables"
@@ -16,7 +16,7 @@
 	],
 	"sCompiler": "SapLess",
 	"sCompilerOptions": "FORCE_PARAMETER_RESOLUTION",
-	"sFallbackThemeId": "sap_fiori_3",
+	"sFallbackThemeId": "sap_horizon",
 	"sSourcePathPattern": "/%frameworkId%/%libId%/%themeId%/%fileId%.less",
 	"sRuntimePathPattern": "/%frameworkId%/%libId%/%themeId%/%fileId%.css",
 	"sRuntimeResourcePathPattern": "%../%%frameworkId%/%libId%/%themeId%",

@@ -9502,6 +9502,22 @@
         "type": "color",
         "description": "The border color of the filled part of progress bars."
       },
+      "_sapProgress_Value_BackgroundH": {
+        "value": "{Semantic.Element._sapNeutralElementColorH}",
+        "type": "internal"
+      },
+      "_sapProgress_Value_BackgroundS": {
+        "value": "{Semantic.Element._sapNeutralElementColorS}",
+        "type": "internal"
+      },
+      "_sapProgress_Value_BackgroundL": {
+        "value": "{Semantic.Element._sapNeutralElementColorL} - 8%",
+        "type": "internal"
+      },
+      "_sapProgress_Value_BackgroundA": {
+        "value": "{Semantic.Element._sapNeutralElementColorA}",
+        "type": "internal"
+      },
       "sapProgress_Value_Background": {
         "value": "hsla({Progress.Standard._sapProgress_Value_BackgroundH}, {Progress.Standard._sapProgress_Value_BackgroundS}, {Progress.Standard._sapProgress_Value_BackgroundL}, {Progress.Standard._sapProgress_Value_BackgroundA})",
         "type": "color",
@@ -9573,22 +9589,6 @@
       },
       "_sapProgress_Value_BorderColorA": {
         "value": "{Progress.Standard._sapProgress_Value_BackgroundA}",
-        "type": "internal"
-      },
-      "_sapProgress_Value_BackgroundH": {
-        "value": "{Semantic.Element._sapNeutralElementColorH}",
-        "type": "internal"
-      },
-      "_sapProgress_Value_BackgroundS": {
-        "value": "{Semantic.Element._sapNeutralElementColorS}",
-        "type": "internal"
-      },
-      "_sapProgress_Value_BackgroundL": {
-        "value": "{Semantic.Element._sapNeutralElementColorL}",
-        "type": "internal"
-      },
-      "_sapProgress_Value_BackgroundA": {
-        "value": "{Semantic.Element._sapNeutralElementColorA}",
         "type": "internal"
       },
       "_sapProgress_TextColorH": {
@@ -13263,6 +13263,22 @@
         "type": "color",
         "description": "The hover state border color of selected (toggled) buttons."
       },
+      "_sapButton_Selected_Hover_BackgroundH": {
+        "value": "{Button.Standard._sapButton_Selected_BackgroundH}",
+        "type": "internal"
+      },
+      "_sapButton_Selected_Hover_BackgroundS": {
+        "value": "{Button.Standard._sapButton_Selected_BackgroundS}",
+        "type": "internal"
+      },
+      "_sapButton_Selected_Hover_BackgroundL": {
+        "value": "{Button.Standard._sapButton_Selected_BackgroundL} - 4%",
+        "type": "internal"
+      },
+      "_sapButton_Selected_Hover_BackgroundA": {
+        "value": "{Button.Standard._sapButton_Selected_BackgroundA}",
+        "type": "internal"
+      },
       "sapButton_Selected_Hover_Background": {
         "value": "hsla({Button.Standard._sapButton_Selected_Hover_BackgroundH}, {Button.Standard._sapButton_Selected_Hover_BackgroundS}, {Button.Standard._sapButton_Selected_Hover_BackgroundL}, {Button.Standard._sapButton_Selected_Hover_BackgroundA})",
         "type": "color",
@@ -13293,6 +13309,22 @@
         "value": "hsla({Button.Standard._sapButton_Selected_BorderColorH}, {Button.Standard._sapButton_Selected_BorderColorS}, {Button.Standard._sapButton_Selected_BorderColorL}, {Button.Standard._sapButton_Selected_BorderColorA})",
         "type": "color",
         "description": "The selected (toggled) state border color of buttons."
+      },
+      "_sapButton_Selected_BackgroundH": {
+        "value": "{Interaction._sapSelectedColorH}",
+        "type": "internal"
+      },
+      "_sapButton_Selected_BackgroundS": {
+        "value": "{Interaction._sapSelectedColorS}",
+        "type": "internal"
+      },
+      "_sapButton_Selected_BackgroundL": {
+        "value": "{Interaction._sapSelectedColorL} + 54%",
+        "type": "internal"
+      },
+      "_sapButton_Selected_BackgroundA": {
+        "value": "{Interaction._sapSelectedColorA}",
+        "type": "internal"
       },
       "sapButton_Selected_Background": {
         "value": "hsla({Button.Standard._sapButton_Selected_BackgroundH}, {Button.Standard._sapButton_Selected_BackgroundS}, {Button.Standard._sapButton_Selected_BackgroundL}, {Button.Standard._sapButton_Selected_BackgroundA})",
@@ -13471,22 +13503,6 @@
         "value": "{Button.Standard._sapButton_Selected_BorderColorA}",
         "type": "internal"
       },
-      "_sapButton_Selected_Hover_BackgroundH": {
-        "value": "{Interaction._sapContent_Selected_Hover_BackgroundH}",
-        "type": "internal"
-      },
-      "_sapButton_Selected_Hover_BackgroundS": {
-        "value": "{Interaction._sapContent_Selected_Hover_BackgroundS}",
-        "type": "internal"
-      },
-      "_sapButton_Selected_Hover_BackgroundL": {
-        "value": "{Interaction._sapContent_Selected_Hover_BackgroundL}",
-        "type": "internal"
-      },
-      "_sapButton_Selected_Hover_BackgroundA": {
-        "value": "{Interaction._sapContent_Selected_Hover_BackgroundA}",
-        "type": "internal"
-      },
       "_sapButton_Selected_BorderColorH": {
         "value": "{Interaction._sapSelectedColorH}",
         "type": "internal"
@@ -13501,22 +13517,6 @@
       },
       "_sapButton_Selected_BorderColorA": {
         "value": "{Interaction._sapSelectedColorA}",
-        "type": "internal"
-      },
-      "_sapButton_Selected_BackgroundH": {
-        "value": "{Interaction._sapContent_Selected_BackgroundH}",
-        "type": "internal"
-      },
-      "_sapButton_Selected_BackgroundS": {
-        "value": "{Interaction._sapContent_Selected_BackgroundS}",
-        "type": "internal"
-      },
-      "_sapButton_Selected_BackgroundL": {
-        "value": "{Interaction._sapContent_Selected_BackgroundL}",
-        "type": "internal"
-      },
-      "_sapButton_Selected_BackgroundA": {
-        "value": "{Interaction._sapContent_Selected_BackgroundA}",
         "type": "internal"
       },
       "_sapButton_Active_BorderColorH": {

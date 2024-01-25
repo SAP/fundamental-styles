@@ -1,7 +1,7 @@
 {
 	"sEntity": "Theme",
 	"sId": "sap_belize_hcw",
-	"sLabel": "SAP High Contrast White (SAP Belize)",
+	"sLabel": "SAP High Contrast White (Belize)",
 	"sDescription": "High Contrast themes provide high contrast ratio by default.",
 	"sHelpLink": "https://experience.sap.com/fiori-design-web/theming",
 	"sVendor": "SAP",

@@ -13150,6 +13150,22 @@
         "type": "color",
         "description": "The selected (toggled) state border color of buttons."
       },
+      "_sapButton_Selected_BackgroundH": {
+        "value": "{Interaction._sapSelectedColorH}",
+        "type": "internal"
+      },
+      "_sapButton_Selected_BackgroundS": {
+        "value": "{Interaction._sapSelectedColorS}",
+        "type": "internal"
+      },
+      "_sapButton_Selected_BackgroundL": {
+        "value": "{Interaction._sapSelectedColorL} - 52%",
+        "type": "internal"
+      },
+      "_sapButton_Selected_BackgroundA": {
+        "value": "{Interaction._sapSelectedColorA}",
+        "type": "internal"
+      },
       "sapButton_Selected_Background": {
         "value": "hsla({Button.Standard._sapButton_Selected_BackgroundH}, {Button.Standard._sapButton_Selected_BackgroundS}, {Button.Standard._sapButton_Selected_BackgroundL}, {Button.Standard._sapButton_Selected_BackgroundA})",
         "type": "color",
@@ -13357,22 +13373,6 @@
       },
       "_sapButton_Selected_BorderColorA": {
         "value": "{Interaction._sapSelectedColorA}",
-        "type": "internal"
-      },
-      "_sapButton_Selected_BackgroundH": {
-        "value": "{Interaction._sapContent_Selected_BackgroundH}",
-        "type": "internal"
-      },
-      "_sapButton_Selected_BackgroundS": {
-        "value": "{Interaction._sapContent_Selected_BackgroundS}",
-        "type": "internal"
-      },
-      "_sapButton_Selected_BackgroundL": {
-        "value": "{Interaction._sapContent_Selected_BackgroundL}",
-        "type": "internal"
-      },
-      "_sapButton_Selected_BackgroundA": {
-        "value": "{Interaction._sapContent_Selected_BackgroundA}",
         "type": "internal"
       },
       "_sapButton_Active_BorderColorH": {

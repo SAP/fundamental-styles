@@ -1344,5 +1344,17 @@
 		"groups": ["status"],
 		"tags": ["bound-validation-rule", "binding", "column"],
 		"rtl": "flip"
+	},
+	"0xe10e": {
+		"names": ["fiori-application"],
+		"groups": ["status"],
+		"tags": ["SAP-fiori", "app", "application", "tool", "integration"],
+		"rtl": "flip"
+	},
+	"0xe10f": {
+		"names": ["build-code"],
+		"groups": ["status"],
+		"tags": ["app", "architecture", "enterprise", "application", "program", "build", "logo", "ide", "bas", "code"],
+		"rtl": "flip"
 	}
 }

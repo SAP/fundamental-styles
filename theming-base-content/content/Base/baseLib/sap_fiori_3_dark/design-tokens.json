@@ -4271,6 +4271,22 @@
       "type": "color",
       "description": "The selected (toggled) state background color for elements showing indication 10."
     },
+    "_sapIndicationColor_10_Active_TextColorH": {
+      "value": "{Text._sapContent_ContrastTextColorH}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_10_Active_TextColorS": {
+      "value": "{Text._sapContent_ContrastTextColorS}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_10_Active_TextColorL": {
+      "value": "{Text._sapContent_ContrastTextColorL}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_10_Active_TextColorA": {
+      "value": "{Text._sapContent_ContrastTextColorA}",
+      "type": "internal"
+    },
     "sapIndicationColor_10_Active_TextColor": {
       "value": "hsla({Indication._sapIndicationColor_10_Active_TextColorH}, {Indication._sapIndicationColor_10_Active_TextColorS}, {Indication._sapIndicationColor_10_Active_TextColorL}, {Indication._sapIndicationColor_10_Active_TextColorA})",
       "type": "color",
@@ -4453,6 +4469,22 @@
       "type": "color",
       "description": "The selected (toggled) state background color for elements showing indication 9."
     },
+    "_sapIndicationColor_9_Active_TextColorH": {
+      "value": "{Text._sapContent_ContrastTextColorH}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_9_Active_TextColorS": {
+      "value": "{Text._sapContent_ContrastTextColorS}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_9_Active_TextColorL": {
+      "value": "{Text._sapContent_ContrastTextColorL}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_9_Active_TextColorA": {
+      "value": "{Text._sapContent_ContrastTextColorA}",
+      "type": "internal"
+    },
     "sapIndicationColor_9_Active_TextColor": {
       "value": "hsla({Indication._sapIndicationColor_9_Active_TextColorH}, {Indication._sapIndicationColor_9_Active_TextColorS}, {Indication._sapIndicationColor_9_Active_TextColorL}, {Indication._sapIndicationColor_9_Active_TextColorA})",
       "type": "color",
@@ -4619,6 +4651,22 @@
       "type": "color",
       "description": "The selected (toggled) state background color for elements showing indication 8."
     },
+    "_sapIndicationColor_8_Active_TextColorH": {
+      "value": "{Text._sapContent_ContrastTextColorH}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_8_Active_TextColorS": {
+      "value": "{Text._sapContent_ContrastTextColorS}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_8_Active_TextColorL": {
+      "value": "{Text._sapContent_ContrastTextColorL}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_8_Active_TextColorA": {
+      "value": "{Text._sapContent_ContrastTextColorA}",
+      "type": "internal"
+    },
     "sapIndicationColor_8_Active_TextColor": {
       "value": "hsla({Indication._sapIndicationColor_8_Active_TextColorH}, {Indication._sapIndicationColor_8_Active_TextColorS}, {Indication._sapIndicationColor_8_Active_TextColorL}, {Indication._sapIndicationColor_8_Active_TextColorA})",
       "type": "color",
@@ -4672,19 +4720,19 @@
       "description": "The hover state background color for elements showing indication 8."
     },
     "_sapIndicationColor_8_TextColorH": {
-      "value": "{Text._sapTextColorH}",
+      "value": "{Text._sapContent_ContrastTextColorH}",
       "type": "internal"
     },
     "_sapIndicationColor_8_TextColorS": {
-      "value": "{Text._sapTextColorS}",
+      "value": "{Text._sapContent_ContrastTextColorS}",
       "type": "internal"
     },
     "_sapIndicationColor_8_TextColorL": {
-      "value": "{Text._sapTextColorL}",
+      "value": "{Text._sapContent_ContrastTextColorL}",
       "type": "internal"
     },
     "_sapIndicationColor_8_TextColorA": {
-      "value": "{Text._sapTextColorA}",
+      "value": "{Text._sapContent_ContrastTextColorA}",
       "type": "internal"
     },
     "sapIndicationColor_8_TextColor": {
@@ -4784,6 +4832,22 @@
       "value": "hsla({Indication._sapIndicationColor_7_Selected_BackgroundH}, {Indication._sapIndicationColor_7_Selected_BackgroundS}, {Indication._sapIndicationColor_7_Selected_BackgroundL}, {Indication._sapIndicationColor_7_Selected_BackgroundA})",
       "type": "color",
       "description": "The selected (toggled) state background color for elements showing indication 7."
+    },
+    "_sapIndicationColor_7_Active_TextColorH": {
+      "value": "{Text._sapContent_ContrastTextColorH}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_7_Active_TextColorS": {
+      "value": "{Text._sapContent_ContrastTextColorS}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_7_Active_TextColorL": {
+      "value": "{Text._sapContent_ContrastTextColorL}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_7_Active_TextColorA": {
+      "value": "{Text._sapContent_ContrastTextColorA}",
+      "type": "internal"
     },
     "sapIndicationColor_7_Active_TextColor": {
       "value": "hsla({Indication._sapIndicationColor_7_Active_TextColorH}, {Indication._sapIndicationColor_7_Active_TextColorS}, {Indication._sapIndicationColor_7_Active_TextColorL}, {Indication._sapIndicationColor_7_Active_TextColorA})",
@@ -4951,6 +5015,22 @@
       "type": "color",
       "description": "The selected (toggled) state background color for elements showing indication 6."
     },
+    "_sapIndicationColor_6_Active_TextColorH": {
+      "value": "{Text._sapContent_ContrastTextColorH}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_6_Active_TextColorS": {
+      "value": "{Text._sapContent_ContrastTextColorS}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_6_Active_TextColorL": {
+      "value": "{Text._sapContent_ContrastTextColorL}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_6_Active_TextColorA": {
+      "value": "{Text._sapContent_ContrastTextColorA}",
+      "type": "internal"
+    },
     "sapIndicationColor_6_Active_TextColor": {
       "value": "hsla({Indication._sapIndicationColor_6_Active_TextColorH}, {Indication._sapIndicationColor_6_Active_TextColorS}, {Indication._sapIndicationColor_6_Active_TextColorL}, {Indication._sapIndicationColor_6_Active_TextColorA})",
       "type": "color",
@@ -5116,6 +5196,22 @@
       "value": "hsla({Indication._sapIndicationColor_5_Selected_BackgroundH}, {Indication._sapIndicationColor_5_Selected_BackgroundS}, {Indication._sapIndicationColor_5_Selected_BackgroundL}, {Indication._sapIndicationColor_5_Selected_BackgroundA})",
       "type": "color",
       "description": "The selected (toggled) state background color for elements showing indication 5."
+    },
+    "_sapIndicationColor_5_Active_TextColorH": {
+      "value": "{Text._sapContent_ContrastTextColorH}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_5_Active_TextColorS": {
+      "value": "{Text._sapContent_ContrastTextColorS}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_5_Active_TextColorL": {
+      "value": "{Text._sapContent_ContrastTextColorL}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_5_Active_TextColorA": {
+      "value": "{Text._sapContent_ContrastTextColorA}",
+      "type": "internal"
     },
     "sapIndicationColor_5_Active_TextColor": {
       "value": "hsla({Indication._sapIndicationColor_5_Active_TextColorH}, {Indication._sapIndicationColor_5_Active_TextColorS}, {Indication._sapIndicationColor_5_Active_TextColorL}, {Indication._sapIndicationColor_5_Active_TextColorA})",
@@ -5283,6 +5379,22 @@
       "type": "color",
       "description": "The selected (toggled) state background color for elements showing indication 4."
     },
+    "_sapIndicationColor_4_Active_TextColorH": {
+      "value": "{Text._sapContent_ContrastTextColorH}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_4_Active_TextColorS": {
+      "value": "{Text._sapContent_ContrastTextColorS}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_4_Active_TextColorL": {
+      "value": "{Text._sapContent_ContrastTextColorL}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_4_Active_TextColorA": {
+      "value": "{Text._sapContent_ContrastTextColorA}",
+      "type": "internal"
+    },
     "sapIndicationColor_4_Active_TextColor": {
       "value": "hsla({Indication._sapIndicationColor_4_Active_TextColorH}, {Indication._sapIndicationColor_4_Active_TextColorS}, {Indication._sapIndicationColor_4_Active_TextColorL}, {Indication._sapIndicationColor_4_Active_TextColorA})",
       "type": "color",
@@ -5448,6 +5560,22 @@
       "value": "hsla({Indication._sapIndicationColor_3_Selected_BackgroundH}, {Indication._sapIndicationColor_3_Selected_BackgroundS}, {Indication._sapIndicationColor_3_Selected_BackgroundL}, {Indication._sapIndicationColor_3_Selected_BackgroundA})",
       "type": "color",
       "description": "The selected (toggled) state background color for elements showing indication 3."
+    },
+    "_sapIndicationColor_3_Active_TextColorH": {
+      "value": "{Text._sapContent_ContrastTextColorH}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_3_Active_TextColorS": {
+      "value": "{Text._sapContent_ContrastTextColorS}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_3_Active_TextColorL": {
+      "value": "{Text._sapContent_ContrastTextColorL}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_3_Active_TextColorA": {
+      "value": "{Text._sapContent_ContrastTextColorA}",
+      "type": "internal"
     },
     "sapIndicationColor_3_Active_TextColor": {
       "value": "hsla({Indication._sapIndicationColor_3_Active_TextColorH}, {Indication._sapIndicationColor_3_Active_TextColorS}, {Indication._sapIndicationColor_3_Active_TextColorL}, {Indication._sapIndicationColor_3_Active_TextColorA})",
@@ -5615,6 +5743,22 @@
       "type": "color",
       "description": "The selected (toggled) state background color for elements showing indication 2."
     },
+    "_sapIndicationColor_2_Active_TextColorH": {
+      "value": "{Text._sapContent_ContrastTextColorH}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_2_Active_TextColorS": {
+      "value": "{Text._sapContent_ContrastTextColorS}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_2_Active_TextColorL": {
+      "value": "{Text._sapContent_ContrastTextColorL}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_2_Active_TextColorA": {
+      "value": "{Text._sapContent_ContrastTextColorA}",
+      "type": "internal"
+    },
     "sapIndicationColor_2_Active_TextColor": {
       "value": "hsla({Indication._sapIndicationColor_2_Active_TextColorH}, {Indication._sapIndicationColor_2_Active_TextColorS}, {Indication._sapIndicationColor_2_Active_TextColorL}, {Indication._sapIndicationColor_2_Active_TextColorA})",
       "type": "color",
@@ -5781,6 +5925,22 @@
       "type": "color",
       "description": "The selected (toggled) state background color for elements showing indication 1."
     },
+    "_sapIndicationColor_1_Active_TextColorH": {
+      "value": "{Text._sapContent_ContrastTextColorH}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_1_Active_TextColorS": {
+      "value": "{Text._sapContent_ContrastTextColorS}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_1_Active_TextColorL": {
+      "value": "{Text._sapContent_ContrastTextColorL}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_1_Active_TextColorA": {
+      "value": "{Text._sapContent_ContrastTextColorA}",
+      "type": "internal"
+    },
     "sapIndicationColor_1_Active_TextColor": {
       "value": "hsla({Indication._sapIndicationColor_1_Active_TextColorH}, {Indication._sapIndicationColor_1_Active_TextColorS}, {Indication._sapIndicationColor_1_Active_TextColorL}, {Indication._sapIndicationColor_1_Active_TextColorA})",
       "type": "color",
@@ -5834,19 +5994,19 @@
       "description": "The hover state background color for elements showing indication 1."
     },
     "_sapIndicationColor_1_TextColorH": {
-      "value": "{Text._sapTextColorH}",
+      "value": "{Text._sapContent_ContrastTextColorH}",
       "type": "internal"
     },
     "_sapIndicationColor_1_TextColorS": {
-      "value": "{Text._sapTextColorS}",
+      "value": "{Text._sapContent_ContrastTextColorS}",
       "type": "internal"
     },
     "_sapIndicationColor_1_TextColorL": {
-      "value": "{Text._sapTextColorL}",
+      "value": "{Text._sapContent_ContrastTextColorL}",
       "type": "internal"
     },
     "_sapIndicationColor_1_TextColorA": {
-      "value": "{Text._sapTextColorA}",
+      "value": "{Text._sapContent_ContrastTextColorA}",
       "type": "internal"
     },
     "sapIndicationColor_1_TextColor": {
@@ -5949,22 +6109,6 @@
       "value": "{Indication._sapIndicationColor_10_Active_BackgroundA}",
       "type": "internal"
     },
-    "_sapIndicationColor_10_Active_TextColorH": {
-      "value": "{Indication._sapIndicationColor_10_TextColorH}",
-      "type": "internal"
-    },
-    "_sapIndicationColor_10_Active_TextColorS": {
-      "value": "{Indication._sapIndicationColor_10_TextColorS}",
-      "type": "internal"
-    },
-    "_sapIndicationColor_10_Active_TextColorL": {
-      "value": "{Indication._sapIndicationColor_10_TextColorL}",
-      "type": "internal"
-    },
-    "_sapIndicationColor_10_Active_TextColorA": {
-      "value": "{Indication._sapIndicationColor_10_TextColorA}",
-      "type": "internal"
-    },
     "_sapIndicationColor_10_Active_BorderColorH": {
       "value": "{Indication._sapIndicationColor_10_BorderColorH}",
       "type": "internal"
@@ -6059,22 +6203,6 @@
     },
     "_sapIndicationColor_9_Selected_BackgroundA": {
       "value": "{Indication._sapIndicationColor_9_Active_BackgroundA}",
-      "type": "internal"
-    },
-    "_sapIndicationColor_9_Active_TextColorH": {
-      "value": "{Indication._sapIndicationColor_9_TextColorH}",
-      "type": "internal"
-    },
-    "_sapIndicationColor_9_Active_TextColorS": {
-      "value": "{Indication._sapIndicationColor_9_TextColorS}",
-      "type": "internal"
-    },
-    "_sapIndicationColor_9_Active_TextColorL": {
-      "value": "{Indication._sapIndicationColor_9_TextColorL}",
-      "type": "internal"
-    },
-    "_sapIndicationColor_9_Active_TextColorA": {
-      "value": "{Indication._sapIndicationColor_9_TextColorA}",
       "type": "internal"
     },
     "_sapIndicationColor_9_Active_BorderColorH": {
@@ -6189,22 +6317,6 @@
       "value": "{Indication._sapIndicationColor_8_Active_BackgroundA}",
       "type": "internal"
     },
-    "_sapIndicationColor_8_Active_TextColorH": {
-      "value": "{Indication._sapIndicationColor_8_TextColorH}",
-      "type": "internal"
-    },
-    "_sapIndicationColor_8_Active_TextColorS": {
-      "value": "{Indication._sapIndicationColor_8_TextColorS}",
-      "type": "internal"
-    },
-    "_sapIndicationColor_8_Active_TextColorL": {
-      "value": "{Indication._sapIndicationColor_8_TextColorL}",
-      "type": "internal"
-    },
-    "_sapIndicationColor_8_Active_TextColorA": {
-      "value": "{Indication._sapIndicationColor_8_TextColorA}",
-      "type": "internal"
-    },
     "_sapIndicationColor_8_Active_BorderColorH": {
       "value": "{Indication._sapIndicationColor_8_BorderColorH}",
       "type": "internal"
@@ -6315,22 +6427,6 @@
     },
     "_sapIndicationColor_7_Selected_BackgroundA": {
       "value": "{Indication._sapIndicationColor_7_Active_BackgroundA}",
-      "type": "internal"
-    },
-    "_sapIndicationColor_7_Active_TextColorH": {
-      "value": "{Indication._sapIndicationColor_7_TextColorH}",
-      "type": "internal"
-    },
-    "_sapIndicationColor_7_Active_TextColorS": {
-      "value": "{Indication._sapIndicationColor_7_TextColorS}",
-      "type": "internal"
-    },
-    "_sapIndicationColor_7_Active_TextColorL": {
-      "value": "{Indication._sapIndicationColor_7_TextColorL}",
-      "type": "internal"
-    },
-    "_sapIndicationColor_7_Active_TextColorA": {
-      "value": "{Indication._sapIndicationColor_7_TextColorA}",
       "type": "internal"
     },
     "_sapIndicationColor_7_Active_BorderColorH": {
@@ -6445,22 +6541,6 @@
       "value": "{Indication._sapIndicationColor_6_Active_BackgroundA}",
       "type": "internal"
     },
-    "_sapIndicationColor_6_Active_TextColorH": {
-      "value": "{Indication._sapIndicationColor_6_TextColorH}",
-      "type": "internal"
-    },
-    "_sapIndicationColor_6_Active_TextColorS": {
-      "value": "{Indication._sapIndicationColor_6_TextColorS}",
-      "type": "internal"
-    },
-    "_sapIndicationColor_6_Active_TextColorL": {
-      "value": "{Indication._sapIndicationColor_6_TextColorL}",
-      "type": "internal"
-    },
-    "_sapIndicationColor_6_Active_TextColorA": {
-      "value": "{Indication._sapIndicationColor_6_TextColorA}",
-      "type": "internal"
-    },
     "_sapIndicationColor_6_Active_BorderColorH": {
       "value": "{Indication._sapIndicationColor_6_BorderColorH}",
       "type": "internal"
@@ -6571,22 +6651,6 @@
     },
     "_sapIndicationColor_5_Selected_BackgroundA": {
       "value": "{Indication._sapIndicationColor_5_Active_BackgroundA}",
-      "type": "internal"
-    },
-    "_sapIndicationColor_5_Active_TextColorH": {
-      "value": "{Indication._sapIndicationColor_5_TextColorH}",
-      "type": "internal"
-    },
-    "_sapIndicationColor_5_Active_TextColorS": {
-      "value": "{Indication._sapIndicationColor_5_TextColorS}",
-      "type": "internal"
-    },
-    "_sapIndicationColor_5_Active_TextColorL": {
-      "value": "{Indication._sapIndicationColor_5_TextColorL}",
-      "type": "internal"
-    },
-    "_sapIndicationColor_5_Active_TextColorA": {
-      "value": "{Indication._sapIndicationColor_5_TextColorA}",
       "type": "internal"
     },
     "_sapIndicationColor_5_Active_BorderColorH": {
@@ -6701,22 +6765,6 @@
       "value": "{Indication._sapIndicationColor_4_Active_BackgroundA}",
       "type": "internal"
     },
-    "_sapIndicationColor_4_Active_TextColorH": {
-      "value": "{Indication._sapIndicationColor_4_TextColorH}",
-      "type": "internal"
-    },
-    "_sapIndicationColor_4_Active_TextColorS": {
-      "value": "{Indication._sapIndicationColor_4_TextColorS}",
-      "type": "internal"
-    },
-    "_sapIndicationColor_4_Active_TextColorL": {
-      "value": "{Indication._sapIndicationColor_4_TextColorL}",
-      "type": "internal"
-    },
-    "_sapIndicationColor_4_Active_TextColorA": {
-      "value": "{Indication._sapIndicationColor_4_TextColorA}",
-      "type": "internal"
-    },
     "_sapIndicationColor_4_Active_BorderColorH": {
       "value": "{Indication._sapIndicationColor_4_BorderColorH}",
       "type": "internal"
@@ -6827,22 +6875,6 @@
     },
     "_sapIndicationColor_3_Selected_BackgroundA": {
       "value": "{Indication._sapIndicationColor_3_Active_BackgroundA}",
-      "type": "internal"
-    },
-    "_sapIndicationColor_3_Active_TextColorH": {
-      "value": "{Indication._sapIndicationColor_3_TextColorH}",
-      "type": "internal"
-    },
-    "_sapIndicationColor_3_Active_TextColorS": {
-      "value": "{Indication._sapIndicationColor_3_TextColorS}",
-      "type": "internal"
-    },
-    "_sapIndicationColor_3_Active_TextColorL": {
-      "value": "{Indication._sapIndicationColor_3_TextColorL}",
-      "type": "internal"
-    },
-    "_sapIndicationColor_3_Active_TextColorA": {
-      "value": "{Indication._sapIndicationColor_3_TextColorA}",
       "type": "internal"
     },
     "_sapIndicationColor_3_Active_BorderColorH": {
@@ -6957,22 +6989,6 @@
       "value": "{Indication._sapIndicationColor_2_Active_BackgroundA}",
       "type": "internal"
     },
-    "_sapIndicationColor_2_Active_TextColorH": {
-      "value": "{Indication._sapIndicationColor_2_TextColorH}",
-      "type": "internal"
-    },
-    "_sapIndicationColor_2_Active_TextColorS": {
-      "value": "{Indication._sapIndicationColor_2_TextColorS}",
-      "type": "internal"
-    },
-    "_sapIndicationColor_2_Active_TextColorL": {
-      "value": "{Indication._sapIndicationColor_2_TextColorL}",
-      "type": "internal"
-    },
-    "_sapIndicationColor_2_Active_TextColorA": {
-      "value": "{Indication._sapIndicationColor_2_TextColorA}",
-      "type": "internal"
-    },
     "_sapIndicationColor_2_Active_BorderColorH": {
       "value": "{Indication._sapIndicationColor_2_BorderColorH}",
       "type": "internal"
@@ -7083,22 +7099,6 @@
     },
     "_sapIndicationColor_1_Selected_BackgroundA": {
       "value": "{Indication._sapIndicationColor_1_Active_BackgroundA}",
-      "type": "internal"
-    },
-    "_sapIndicationColor_1_Active_TextColorH": {
-      "value": "{Indication._sapIndicationColor_1_TextColorH}",
-      "type": "internal"
-    },
-    "_sapIndicationColor_1_Active_TextColorS": {
-      "value": "{Indication._sapIndicationColor_1_TextColorS}",
-      "type": "internal"
-    },
-    "_sapIndicationColor_1_Active_TextColorL": {
-      "value": "{Indication._sapIndicationColor_1_TextColorL}",
-      "type": "internal"
-    },
-    "_sapIndicationColor_1_Active_TextColorA": {
-      "value": "{Indication._sapIndicationColor_1_TextColorA}",
       "type": "internal"
     },
     "_sapIndicationColor_1_Active_BorderColorH": {
