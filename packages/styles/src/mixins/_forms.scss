@@ -18,7 +18,7 @@ $fd-input-field-height--compact: 1.625rem;
   @include fd-ellipsis();
 
   @if $withMinHeight {
-    @include fd-set-min-height(var(--sapElement_Height));
+    @include fd-set-min-height(var(--fdInput_Height, var(--sapElement_Height)));
   }
 
   z-index: 1;
@@ -89,7 +89,7 @@ $fd-input-field-height--compact: 1.625rem;
 }
 
 @mixin fd-input-field-base-compact {
-  @include fd-set-min-height(var(--sapElement_Compact_Height));
+  @include fd-set-min-height(var(--fdInput_Compact_Height, var(--sapElement_Compact_Height)));
 
   min-width: var(--fdInput_Field_Compact_Min_Width, 2rem);
   margin: var(--fdInput_Field_Compact_Margin, 0.1875rem 0);
