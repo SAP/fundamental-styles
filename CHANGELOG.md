@@ -1,3 +1,12 @@
+## [0.33.2-rc.11](https://github.com/SAP/fundamental-styles/compare/v0.33.2-rc.10...v0.33.2-rc.11) (2024-01-25)
+
+
+### Bug Fixes
+
+* **styles:** input group height [ci visual] ([#5132](https://github.com/SAP/fundamental-styles/issues/5132)) ([c5d9e71](https://github.com/SAP/fundamental-styles/commit/c5d9e710b9f25fad35c305b6e8e6f09731236910))
+
+
+
 ## [0.33.2-rc.10](https://github.com/SAP/fundamental-styles/compare/v0.33.2-rc.9...v0.33.2-rc.10) (2024-01-23)
 
 
