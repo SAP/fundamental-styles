@@ -1,9 +1,9 @@
 import { ExecutorContext, logger, names, workspaceRoot } from '@nx/devkit';
 import { VisualStoriesSchema } from './schema';
-import glob from 'glob';
+import { sync as fastGlobSync } from 'fast-glob';
 import { themes as projectsThemes } from '../../../../../projects';
 import path, { parse as parsePath, relative } from 'path';
-import { parse as babelParser, types } from '@babel/core';
+import { parse as babelParser, ParseResult, types } from '@babel/core';
 import { outputFileSync, readFileSync } from 'fs-extra';
 import traverse from '@babel/traverse';
 import { format } from 'prettier';
@@ -13,8 +13,8 @@ export default async function (schema: VisualStoriesSchema, context: ExecutorCon
     logger.info(`Creating Visual stories for ${projectName} 👀`);
     const projectRoot = context.projectGraph?.nodes[projectName].data.root;
     const workspaceRootPath = workspaceRoot.replace(/\\/g, '/');
-    const storiesFiles = glob.sync(`${projectRoot}/stories/**/*.stories.+(js|jsx|ts|tsx)`, { nodir: true });
-    const themes = (projectsThemes[projectName]?.themes || []).filter((theme) => schema.themes.includes(theme.value));
+    const storiesFiles = fastGlobSync(`${projectRoot}/stories/**/*.stories.+(js|jsx|ts|tsx)`, { onlyFiles: true });
+    const themes = (projectsThemes[projectName]?.themes || []).filter((theme: {value: string}) => schema.themes.includes(theme.value));
     const excludedStoriesKinds = (schema.excludedStoriesKinds || []).map((pattern) => new RegExp(pattern));
     if (themes.length === 0) {
         throw new Error(`No themes found for project ${projectName}`);
@@ -27,10 +27,10 @@ export default async function (schema: VisualStoriesSchema, context: ExecutorCon
             sourceType: 'module',
             filename: storyFileName,
             presets: ['@babel/preset-react', '@babel/preset-typescript']
-        });
+        }) as ParseResult;
         let fullTitle = '';
         let storyTitle = '';
-        let visualDisabled;
+        let visualDisabled = false;
         traverse(babelParsedStoryFile, {
             ExportDefaultDeclaration(path) {
                 path.traverse({
@@ -43,8 +43,12 @@ export default async function (schema: VisualStoriesSchema, context: ExecutorCon
                         }
                         if (key === 'parameters') {
                             const parametersExpression = objectPropertyPath.node.value as types.ObjectExpression;
-                            visualDisabled = parametersExpression.properties.some((property: any) => {
-                                return property.key.name === 'visualDisabled' && property.value.value === true;
+                            visualDisabled = parametersExpression.properties.some((property: types.ObjectMethod | types.ObjectProperty | types.SpreadElement) => {
+                                return types.isObjectProperty(property)
+                                    && types.isIdentifier(property.key)
+                                    && property.key.name === 'visualDisabled'
+                                    && types.isBooleanLiteral(property.value)
+                                    && property.value.value;
                             });
                         }
                         if (storyTitle && typeof visualDisabled !== 'undefined') {
@@ -54,7 +58,10 @@ export default async function (schema: VisualStoriesSchema, context: ExecutorCon
                 });
             }
         });
-        visualDisabled = visualDisabled || excludedStoriesKinds.some((pattern) => pattern.test(fullTitle));
+        if (excludedStoriesKinds.some((pattern) => pattern.test(fullTitle))) {
+            logger.info(`Skipping ${fullTitle} because it has excluded story kind`);
+            continue;
+        }
 
         if (visualDisabled) {
             logger.info(`Skipping ${fullTitle} because it is disabled`);
@@ -62,7 +69,7 @@ export default async function (schema: VisualStoriesSchema, context: ExecutorCon
         }
 
         const { className, fileName: fileBaseName } = names(storyTitle);
-        const getFileName = (theme) =>
+        const getFileName = (theme: string) =>
             `${workspaceRootPath}/stories/Visuals/${parsedStoryFileName.dir.replace(
                 /packages\/(.*)\/stories/,
                 '$1'

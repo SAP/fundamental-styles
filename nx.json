@@ -6,7 +6,7 @@
     },
     "targetDefaults": {
         "build": {
-            "dependsOn": ["^build"],
+            "dependsOn": ["^build", "sync-entry"],
             "cache": true
         },
         "test": {
@@ -16,6 +16,9 @@
             "cache": true
         },
         "build-visual": {
+            "cache": true
+        },
+        "sync-entry": {
             "cache": true
         }
     },

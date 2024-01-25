@@ -1,7 +1,7 @@
 import {describe, expect, it} from 'vitest'
-import glob from 'glob';
+import { sync as fastGlobSync } from 'fast-glob';
 
-const stories = glob.sync('packages/styles/stories/**/*.stories.js');
+const stories = fastGlobSync('packages/styles/stories/**/*.stories.js');
 
 describe('Check stories', async () => {
     it('Should find all stories', function () {

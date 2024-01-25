@@ -1,13 +1,17 @@
 import '../../src/sap-padding.scss';
 import description from './padding.story.description.html?raw';
+import allRoundPaddingExampleHtml from './all-round-padding.example.html?raw';
+import horizontalPaddingExampleHtml from './horizontal-padding.example.html?raw';
+import responsivePaddingExampleHtml from './responsive-padding.example.html?raw';
+import responsivePaddingContainerExampleHtml from './responsive-padding-container.example.html?raw';
+import noPaddingExampleHtml from './no-padding.example.html?raw';
 
 export default {
-    title: 'Padding',
-    parameters: {
-        description,
-    }
+  title: 'Padding',
+  parameters: {
+    description
+  }
 };
-
 const localStyles = `
 <style>
     div.demo {
@@ -23,51 +27,25 @@ const localStyles = `
     }
 </style>
 `;
-export const AllRoundPadding = () => `${localStyles}
-<div class="demo sap-padding">
-    <div></div>
-</div>
-`;
+export const AllRoundPadding = () => `${localStyles}${allRoundPaddingExampleHtml}`;
 AllRoundPadding.storyName = 'All-Round Padding';
 AllRoundPadding.parameters = {
-    docs: {
-        description: {
-            story: `All-round padding appear on all sides of the container they are applied to.<br>
+  docs: {
+    description: {
+      story: `All-round padding appear on all sides of the container they are applied to.<br>
             <b>CSS class: </b> <code>.sap-padding</code><br>
             <b>SCSS mixin: </b> <code>@include sap-padding();</code><br>
             This will apply 1rem padding on all sides of the container.
         `
-        }
     }
+  }
 };
-
-export const HorizontalPadding = () => `${localStyles}
-<h3>Tiny (0.5rem)</h3>
-<div class="demo sap-padding-x-tiny">
-    <div></div>
-</div>
-<br>
-<h3>Small (1rem)</h3>
-<div class="demo sap-padding-x-small">
-    <div></div>
-</div>
-<br>
-<h3>Medium (2rem)</h3>
-<div class="demo sap-padding-x-medium">
-    <div></div>
-</div>
-<br>
-<h3>Large (3rem)</h3>
-<div class="demo sap-padding-x-large">
-    <div></div>
-</div>
-<br>
-`;
+export const HorizontalPadding = () => `${localStyles}${horizontalPaddingExampleHtml}`;
 HorizontalPadding.storyName = 'Double Sided Padding';
 HorizontalPadding.parameters = {
-    docs: {
-        description: {
-            story: `Double sided paddings appear on two opposite sides of the element. The horizontal margins are displayed on left and right side of the element.
+  docs: {
+    description: {
+      story: `Double sided paddings appear on two opposite sides of the element. The horizontal margins are displayed on left and right side of the element.
             <table style="width: 100%; border-collapse: collapse; margin-top: 1rem;">
                 <tr>
                     <th style="padding: 0.25rem;">Type</th>
@@ -95,20 +73,15 @@ HorizontalPadding.parameters = {
                     <td style="padding: 0.25rem;">@include sap-padding(large, x)</td>
                 </tr>
             </table>`
-        }
     }
+  }
 };
-
-export const ResponsivePadding = () => `${localStyles}
-<div class="demo sap-padding-responsive">
-    <div></div>
-</div>
-`;
+export const ResponsivePadding = () => `${localStyles}${responsivePaddingExampleHtml}`;
 ResponsivePadding.storyName = 'Responsive Paddings';
 ResponsivePadding.parameters = {
-    docs: {
-        description: {
-            story: `The responsive padding class adds a double sided padding inside a container based on screen width.<br>
+  docs: {
+    description: {
+      story: `The responsive padding class adds a double sided padding inside a container based on screen width.<br>
             <b>CSS Class: </b><code>.sap-padding-responsive</code><br>
             <b>Mixin: </b><code>@include sap-padding-responsive()</code>
             <table style="width: 100%; border-collapse: collapse; margin-top: 1rem;">
@@ -133,22 +106,15 @@ ResponsivePadding.parameters = {
                     <td style="padding: 0.25rem;">padding: 0 3rem !important;</td>
                 </tr>
             </table>`
-        }
     }
+  }
 };
-
-export const ResponsivePaddingContainer = () => `${localStyles}
-<div style="container-type: inline-size;">
-    <div class="demo sap-padding-responsive-container">
-        <div></div>
-    </div>
-</div>
-`;
+export const ResponsivePaddingContainer = () => `${localStyles}${responsivePaddingContainerExampleHtml}`;
 ResponsivePaddingContainer.storyName = 'Responsive Container Paddings';
 ResponsivePaddingContainer.parameters = {
-    docs: {
-        description: {
-            story: `The responsive padding class adds a double sided padding inside a container based on its width.<br>
+  docs: {
+    description: {
+      story: `The responsive padding class adds a double sided padding inside a container based on its width.<br>
             <b>CSS Class: </b><code>.sap-padding-responsive-container</code><br>
             <b>Mixin: </b><code>@include sap-padding-container-responsive()</code>
             <table style="width: 100%; border-collapse: collapse; margin-top: 1rem;">
@@ -173,24 +139,17 @@ ResponsivePaddingContainer.parameters = {
                     <td style="padding: 0.25rem;">padding: 0 3rem !important;</td>
                 </tr>
             </table>`
-        }
     }
+  }
 };
-
-export const NoPadding = () => `${localStyles}
-<div class="demo sap-padding-none">
-    <div></div>
-</div>
-
-`;
-
+export const NoPadding = () => `${localStyles}${noPaddingExampleHtml}`;
 NoPadding.parameters = {
-    docs: {
-        description: {
-            story: `No padding class removes existing container paddings. <br>
+  docs: {
+    description: {
+      story: `No padding class removes existing container paddings. <br>
             <b>CSS class: </b> <code>.sap-padding-none</code><br>
             <b>SCSS mixin: </b> <code>@include sap-padding(0);</code><br>
             `
-        }
     }
+  }
 };

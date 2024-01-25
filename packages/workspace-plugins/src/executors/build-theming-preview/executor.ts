@@ -8,17 +8,17 @@ import { readPackageJson } from 'nx/src/project-graph/file-utils';
 const packageJson = readPackageJson();
 const { copySync } = fs;
 
-export default async function runExecutor(options: BuildThemingPreviewExecutorSchema, context: ExecutorContext) {
-    const rootPath = context.projectGraph?.nodes[context.projectName as string].data.root;
-    const sourcePath = context.projectGraph?.nodes[context.projectName as string].data.sourceRoot;
+export default async function runExecutor(options: BuildThemingPreviewExecutorSchema, context: Required<ExecutorContext>) {
+    const rootPath = context.projectGraph.nodes[context.projectName].data.root;
+    const sourcePath = context.projectGraph.nodes[context.projectName].data.sourceRoot as string;
     const outputPath = `dist/packages/${context.projectName}`;
 
-    copySync(sourcePath, outputPath, { recursive: true, overwrite: true });
+    copySync(sourcePath, outputPath, { overwrite: true });
     const projectPackageJson = readJsonFile(`${rootPath}/package.json`);
     projectPackageJson.version = packageJson.version;
     projectPackageJson.dependencies['fundamental-styles'] = packageJson.version;
     writeJsonFile(`${outputPath}/package.json`, projectPackageJson, { appendNewLine: true });
-    logger.info('Copied theming preview to dist-theming');
+    logger.info(`Copied theming preview to ${outputPath}`);
 
     execSync(
         `npx sass -q --no-source-map --style expanded packages/styles/src/fundamental-styles.scss:${outputPath}/fundamental-styles.css`,

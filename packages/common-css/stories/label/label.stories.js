@@ -1,6 +1,5 @@
 import defaultExampleExampleHtml from "./default-example.example.html?raw";
 import '../../src/sap-label.scss';
-
 export default {
   title: 'Label',
   parameters: {

@@ -1,9 +1,8 @@
-import containerQueriesExampleExampleHtml from './container-queries.story.description.html?raw';
-
+import usingTheMixinsExampleHtml from "./using-the-mixins.example.html?raw";
 export default {
-    title: 'Container Queries',
-    parameters: {
-        description: `Container queries are similar to media queries, but they allow you to apply styles to an element based on the dimensions of the element's container rather than the device’s viewport. For more information please visit the <a target="_blank" title="MDN documentation website" href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_container_queries">MDN website</a>.   
+  title: 'Container Queries',
+  parameters: {
+    description: `Container queries are similar to media queries, but they allow you to apply styles to an element based on the dimensions of the element's container rather than the device’s viewport. For more information please visit the <a target="_blank" title="MDN documentation website" href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_container_queries">MDN website</a>.   
         <br><br><br>
         <h3>Containment Context</h3>
         To define a container, you need to specify the <code>container-type</code> property on the element. The container-type can accept three options: size, inline-size, and normal. <br>
@@ -61,9 +60,7 @@ export default {
         <td style="padding: 0.25rem;">user defined</td>
     </tr>
 </table>
-      `,
-    }
+      `
+  }
 };
-
-
-export const UsingTheMixins = () => containerQueriesExampleExampleHtml;
+export const UsingTheMixins = () => usingTheMixinsExampleHtml;

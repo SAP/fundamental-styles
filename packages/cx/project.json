@@ -18,6 +18,21 @@
                 }
             }
         },
+        "sync-entry": {
+            "executor": "workspace-plugins:sync-components",
+            "options": {
+                "entry": "{projectRoot}/src/fundamental-cx.scss",
+                "include": [
+                    "{projectRoot}/src/*.scss",
+                    "{projectRoot}/src/btp/*.scss"
+                ],
+                "exclude": [
+                    "{options.entry}",
+                    "{projectRoot}/src/**/_*.scss"
+                ]
+            },
+            "outputs": ["{options.entry}"]
+        },
         "build-visual": {
             "executor": "workspace-plugins:visual-stories",
             "options": {

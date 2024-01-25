@@ -1,27 +1,20 @@
+import commonCasesExampleHtml from "./common-cases.example.html?raw";
+import lineHeightExampleHtml from "./line-height.example.html?raw";
+import fontSizeExampleHtml from "./font-size.example.html?raw";
+import fontFamilyExampleHtml from "./font-family.example.html?raw";
 import '../../src/sap-typography.scss';
 export default {
-    title: 'Typography',
-    parameters: {
-        description: `
-      `,
-    }
+  title: 'Typography',
+  parameters: {
+    description: `
+      `
+  }
 };
-
-export const FontFamily = () => `
-<span>Regular: </span><span class="sap-font-family-regular">Font Family</span><br><br>
-<span>Light: </span><span class="sap-font-family-light">Font Family</span><br><br>
-<span>Bold: </span><span class="sap-font-family-bold">Font Family</span><br><br>
-<span>Semibold: </span><span class="sap-font-family-semibold">Font Family</span><br><br>
-<span>Semibold Duplex: </span><span class="sap-font-family-semibold-duplex">Font Family</span><br><br>
-<span>Monospaced Regular: </span><span class="sap-font-family-monospaced-regular">Font Family</span><br><br>
-<span>Monospaced Bold: </span><span class="sap-font-family-monospaced-bold">Font Family</span><br><br>
-<span>Black: </span><span class="sap-font-family-black">Font Family</span><br><br>
-<span>Header: </span><span class="sap-font-family-header">Font Family</span><br><br>
-`;
+export const FontFamily = () => fontFamilyExampleHtml;
 FontFamily.parameters = {
-    docs: {
-        description: {
-            story: `To set the <b>font-family</b> of an element use the <code>.sap-font-family-<i style="color: red;">type</i></code>class or the <code>@include sap-font-family(<i style="color: red;">type</i>)</code> mixin with <i style="color: red;">type</i> being one of the following:<br> regular | light | bold | semibold | semibold-duplex | monospaced-regular | monospaced-bold | black | header 
+  docs: {
+    description: {
+      story: `To set the <b>font-family</b> of an element use the <code>.sap-font-family-<i style="color: red;">type</i></code>class or the <code>@include sap-font-family(<i style="color: red;">type</i>)</code> mixin with <i style="color: red;">type</i> being one of the following:<br> regular | light | bold | semibold | semibold-duplex | monospaced-regular | monospaced-bold | black | header 
 <table style="width: 100%; border-collapse: collapse; margin-top: 1rem;">
     <tr>
         <th style="padding: 0.25rem;">Type</th>
@@ -84,25 +77,14 @@ FontFamily.parameters = {
         <td style="padding: 0.25rem;">@include sap-font-family(header)</td>
     </tr>
 </table>`
-        }
     }
+  }
 };
-
-export const FontSize = () => `
-<span>Header-6: </span><span class="sap-font-size-header-6">Font Size</span><br><br>
-<span>Header-5: </span><span class="sap-font-size-header-5">Font Size</span><br><br>
-<span>Header-4: </span><span class="sap-font-size-header-4">Font Size</span><br><br>
-<span>Header-3: </span><span class="sap-font-size-header-3">Font Size</span><br><br>
-<span>Header-2: </span><span class="sap-font-size-header-2">Font Size</span><br><br>
-<span>Header-1: </span><span class="sap-font-size-header-1">Font Size</span><br><br>
-<span>Small: </span><span class="sap-font-size-small">Font Size</span><br><br>
-<span>Medium: </span><span class="sap-font-size-medium">Font Size</span><br><br>
-<span>Large: </span><span class="sap-font-size-large">Font Size</span><br><br>
-`;
+export const FontSize = () => fontSizeExampleHtml;
 FontSize.parameters = {
-    docs: {
-        description: {
-            story: `To set the <b>font-size</b> of an element use the <code>.sap-font-size-<i style="color: red;">value</i></code>class or the <code>@include sap-font-size(<i style="color: red;">value</i>)</code> mixin with <i style="color: red;">value</i> being one of the following:<br> header-6 | header-5 | header-4 | header-3 | header-2 | header-1 | small | medium | large 
+  docs: {
+    description: {
+      story: `To set the <b>font-size</b> of an element use the <code>.sap-font-size-<i style="color: red;">value</i></code>class or the <code>@include sap-font-size(<i style="color: red;">value</i>)</code> mixin with <i style="color: red;">value</i> being one of the following:<br> header-6 | header-5 | header-4 | header-3 | header-2 | header-1 | small | medium | large 
 <table style="width: 100%; border-collapse: collapse; margin-top: 1rem;">
     <tr>
         <th style="padding: 0.25rem;">Type</th>
@@ -165,40 +147,28 @@ FontSize.parameters = {
         <td style="padding: 0.25rem;">@include sap-font-size(large)</td>
     </tr>
 </table>`
-        }
     }
+  }
 };
-
-export const LineHeight = () => `
-<span>Normal: </span><p class="sap-font-line-height" style="background: cyan;">Line Height</p><br><br>
-<span>1.4: </span><p class="sap-font-line-height-long" style="background: cyan;">Line Height</p><br><br>
-`;
+export const LineHeight = () => lineHeightExampleHtml;
 LineHeight.parameters = {
-    docs: {
-        description: {
-            story: `In general, there is no line height applied to text, as the line height e.g. affects the padding.
+  docs: {
+    description: {
+      story: `In general, there is no line height applied to text, as the line height e.g. affects the padding.
 If a more generous line height is required for long continuous text, a consistent line height of 1.4 is recommended.
 
 Use the <code>.sap-font-line-height</code> class to apply <b>normal</b> line-height to the elements and <code>.sap-font-line-height-long</code> class for <b>1.4</b> line-height. 
 <br><br>
 <b>SCSS Mixin: </b> <code>@include sap-font-line-height(<i style="color:red;">$value</i>)</code>. Omit the value for <b>normal</b> line-height: <code>@include sap-font-line-height()</code>.
 `
-        }
     }
+  }
 };
-
-export const CommonCases = () => `
-<span>Header Text in Size 3: </span><span class="sap-font-header-3">Used in dynamic page header, object page header</span><br><br>
-<span>Standard Text: </span><span class="sap-font-standard-text">Used in text control</span><br><br>
-<span>Small Detail Text: </span><span class="sap-font-small-detail-text">Used in time stamps, small bylines</span><br><br>
-<span>Standard Field Text: </span><span class="sap-font-standard-field-text">Used in input field, feed input, text area</span><br><br>
-<span>Labels: </span><span class="sap-font-label">Used in labels</span><br><br>
-<span>Descriptions: </span><span class="sap-font-description">Used in object attribute</span><br><br>
-`;
+export const CommonCases = () => commonCasesExampleHtml;
 CommonCases.parameters = {
-    docs: {
-        description: {
-            story: `<table style="width: 100%; border-collapse: collapse; margin-top: 1rem;">
+  docs: {
+    description: {
+      story: `<table style="width: 100%; border-collapse: collapse; margin-top: 1rem;">
     <tr>
         <th style="padding: 0.25rem;">Description</th>
         <th style="padding: 0.25rem;">Resultant Style (Quartz Light)</th>
@@ -255,6 +225,6 @@ CommonCases.parameters = {
         <td style="padding: 0.25rem;">@include sap-font(description)</td>
     </tr>
 </table>`
-        }
     }
+  }
 };
