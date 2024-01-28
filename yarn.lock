@@ -14358,7 +14358,7 @@ __metadata:
     postcss: 8.4.32
     postcss-banner: ^4.0.0
     postcss-cli: ^9.0.1
-    postcss-import: ^14.0.1
+    postcss-import: ^16.0.0
     postcss-normalize-charset: ^4.0.1
     postcss-scss: ^4.0.5
     react: ^18.0.37
@@ -20787,19 +20787,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"postcss-import@npm:^14.0.1":
-  version: 14.1.0
-  resolution: "postcss-import@npm:14.1.0"
-  dependencies:
-    postcss-value-parser: ^4.0.0
-    read-cache: ^1.0.0
-    resolve: ^1.1.7
-  peerDependencies:
-    postcss: ^8.0.0
-  checksum: cd45d406e90f67cdab9524352e573cc6b4462b790934a05954e929a6653ebd31288ceebc8ce3c3ed7117ae672d9ebbec57df0bceec0a56e9b259c2e71d47ca86
-  languageName: node
-  linkType: hard
-
 "postcss-import@npm:^15.1.0":
   version: 15.1.0
   resolution: "postcss-import@npm:15.1.0"
@@ -20810,6 +20797,19 @@ __metadata:
   peerDependencies:
     postcss: ^8.0.0
   checksum: 7bd04bd8f0235429009d0022cbf00faebc885de1d017f6d12ccb1b021265882efc9302006ba700af6cab24c46bfa2f3bc590be3f9aee89d064944f171b04e2a3
+  languageName: node
+  linkType: hard
+
+"postcss-import@npm:^16.0.0":
+  version: 16.0.0
+  resolution: "postcss-import@npm:16.0.0"
+  dependencies:
+    postcss-value-parser: ^4.0.0
+    read-cache: ^1.0.0
+    resolve: ^1.1.7
+  peerDependencies:
+    postcss: ^8.0.0
+  checksum: dd25ec2c8da949ec8c271581491888938b4fb1e9777bf248a089e64446f34e62366a266cf33777f9184184afbdf22a95e39ec53a1e090fd2539be04f23eeee83
   languageName: node
   linkType: hard
 
