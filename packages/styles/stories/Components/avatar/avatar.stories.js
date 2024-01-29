@@ -15,8 +15,8 @@ import '../../../src/icon.scss';
 export default {
   title: 'Components/Avatar',
   parameters: {
-    description: `The avatar component displays an image, icon or user initials, and is used for user profiles, placeholder images, icons or business-related images i.e. product photos. <br>
-        For detailed information check Fiori Design Guidelines for <a target="_blank" href="https://experience.sap.com/fiori-design-web/avatar/">Avatar</a> component. 
+    description: `The avatar control is used for presenting various images, including user profiles, user initials, placeholder images, icons, or business-related images like product pictures.<br>
+    For detailed information check Fiori Design Guidelines for <a target="_blank" href="https://experience.sap.com/fiori-design-web/avatar/">Avatar</a> component. 
 
 
 ## Usage
@@ -91,7 +91,7 @@ export const Icon = () => iconExampleHtml;
 Icon.parameters = {
   docs: {
     description: {
-      story: 'Placeholders are used when there is no other image available. Avatar and standardized images require placeholders.'
+      story: 'Placeholders are used when there is no other image available. Avatar and standardized images require placeholders. The default placeholder for an avatar is a gender-neutral person icon inside a circle. The default placeholder for a business image is a neutral product icon inside a square.'
     }
   }
 };
@@ -100,7 +100,7 @@ export const Circle = () => circleExampleHtml;
 Circle.parameters = {
   docs: {
     description: {
-      story: ' The circular shape is used mainly to represent a person. For this type of Avatar use the `fd-avatar--circle` modifier class with the `fd-avatar` base class.'
+      story: ' The circular shape is used mainly to represent a person. For this type of Avatar use the `fd-avatar--circle` modifier class with the `fd-avatar` base class. Business images display a product, company, object, logo, or other business-related content. Always use a square (default) for business images.'
     }
   }
 };
