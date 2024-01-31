@@ -1,3 +1,12 @@
+## [0.33.3-rc.0](https://github.com/SAP/fundamental-styles/compare/v0.33.2...v0.33.3-rc.0) (2024-01-31)
+
+
+### Bug Fixes
+
+* **styles:** Avatar component v1.0.0 updates ([#5143](https://github.com/SAP/fundamental-styles/issues/5143)) ([440e9f1](https://github.com/SAP/fundamental-styles/commit/440e9f1d36695e1b33ccbfedd203416ada4c2ab1))
+
+
+
 ## [0.33.2](https://github.com/SAP/fundamental-styles/compare/v0.33.2-rc.12...v0.33.2) (2024-01-25)
 
 
