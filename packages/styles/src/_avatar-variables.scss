@@ -110,6 +110,14 @@ $fd-avatar-sizes: (
     "zoomIconFontSize": $fd-avatar-zoom-icon-font-size-s,
     "fontStretch": $fd-avatar-font-stretched-condensed
   ),
+  "sm": (
+    "ratio": ($fd-avatar-const-ratio * 3),
+    "font-size": 1.125rem,
+    "zoomIconDimensions": $fd-avatar-zoom-icon-s,
+    "offset": -0.125rem,
+    "zoomIconFontSize": $fd-avatar-zoom-icon-font-size-s,
+    "fontStretch": $fd-avatar-font-stretched-condensed
+  ),
   "m": (
     "ratio": ($fd-avatar-const-ratio * 4),
     "font-size": 1.5rem,
@@ -118,7 +126,23 @@ $fd-avatar-sizes: (
     "zoomIconFontSize": $fd-avatar-zoom-icon-font-size-s,
     "fontStretch": $fd-avatar-font-stretched-normal
   ),
+  "md": (
+    "ratio": ($fd-avatar-const-ratio * 4),
+    "font-size": 1.5rem,
+    "zoomIconDimensions": $fd-avatar-zoom-icon-s,
+    "offset": -0.125rem,
+    "zoomIconFontSize": $fd-avatar-zoom-icon-font-size-s,
+    "fontStretch": $fd-avatar-font-stretched-normal
+  ),
   "l": (
+    "ratio": ($fd-avatar-const-ratio * 5),
+    "font-size": 2.25rem,
+    "zoomIconDimensions": $fd-avatar-zoom-icon-l,
+    "offset": -0.1875rem,
+    "zoomIconFontSize": $fd-avatar-zoom-icon-font-size-l,
+    "fontStretch": $fd-avatar-font-stretched-normal
+  ),
+  "lg": (
     "ratio": ($fd-avatar-const-ratio * 5),
     "font-size": 2.25rem,
     "zoomIconDimensions": $fd-avatar-zoom-icon-l,
