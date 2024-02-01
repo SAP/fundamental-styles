@@ -41,6 +41,7 @@ const run = async () => {
     const bumpedVersion = getInput('bumpedVersion');
     const bumpTag = getInput('bumpTag');
     const tags = await getTags();
+    setOutput('TAGS: ', tags);
     console.log('------->>>>> Fetched tags:', tags);
     const { gh, npm, mainNeedsSync } = await getTags(bumpTag, bumpedVersion);
     info(JSON.stringify({ bumpedVersion, bumpTag, gh, npm, mainNeedsSync }, null, 2));
