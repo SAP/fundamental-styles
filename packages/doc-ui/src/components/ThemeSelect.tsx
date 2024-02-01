@@ -1,6 +1,6 @@
 import {useContext} from "react";
 import { SAPContext } from '../contexts/SAPContext';
-import { IconButton, Icons, Separator, TooltipLinkList, WithTooltip } from '@storybook/components';
+import { IconButton, Icons, TooltipLinkList, WithTooltip } from '@storybook/components';
 import { IfBlock } from './IfBlock';
 import IconButtonLabel from "./IconButtonLabel";
 import {packageValueToPackageThemesMapMap} from "fundamental-styles/configuration";

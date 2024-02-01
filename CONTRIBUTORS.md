@@ -8,11 +8,10 @@ This file describes the specific things that are done for the `fundamental-style
     packages for storybook UI, previous versions and etc.
   * `./packages/workspace-plugins` - Plugin for workspace management. Executors for building, version syncing and etc.
   * `./packages/**` - Packages that are publishable
-* `./projects.js` - List of the projects, computed from the `./workspace.json` file and with the contents of the `./projects.js`;
-    This file exists, because it is consumable by both storybook manager and preview parts. In general, they work in different
-    environments. Manager is running with ESBuild and preview is running with Vite. ESBuild can only include in itself JS or TS
-    files, but we also need to have access to other types of files, things like `scss` files for theming and etc. List of the
-    available themes is described in this file, but what stands behind particular theme is resolved in the
+* `./projects.js` - List of the projects; This file exists, because it is consumable by both storybook manager and preview parts.
+    In general, they work in different environments. Manager is running with ESBuild and preview is running with Vite.
+    ESBuild can only include in itself JS or TS files, but we also need to have access to other types of files, things like `scss`
+    files for theming and etc. List of the available themes is described in this file, but what stands behind particular theme is resolved in the
     `packages/configuration/src/lib/packages.ts` file. Per project themes are described in their folders.
 * `./packages/*/theming/*.scss` - are files, where the variables for themes are defined or collected from various places.
 * `./packages/*/package-config.ts` - are files, where the already collected data from `./projects.js` is consumed and combined

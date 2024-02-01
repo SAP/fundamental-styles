@@ -1,6 +1,6 @@
 import { Tree } from 'nx/src/generators/tree';
 import { CreatePackageSchema } from './schema';
-import { formatFiles, generateFiles, getWorkspacePath, logger, names, updateJson, workspaceRoot } from '@nx/devkit';
+import { formatFiles, generateFiles, logger, names, updateJson, workspaceRoot } from '@nx/devkit';
 import { parse } from '@babel/parser';
 import traverse from '@babel/traverse';
 import { types } from '@babel/core';
@@ -12,10 +12,7 @@ export default async function (tree: Tree, schema: CreatePackageSchema) {
         ...namings,
         ...schema
     });
-    updateJson(tree, '.' + getWorkspacePath(tree), (json) => {
-        json.projects[namings.fileName] = `packages/${namings.fileName}`;
-        return json;
-    });
+
     updateJson(tree, './tsconfig.base.json', (json) => {
         json.compilerOptions.paths[schema.importPath] = [`packages/${namings.fileName}`];
         return json;

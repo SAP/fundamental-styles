@@ -1,20 +1,18 @@
 import { snakeCase } from 'lodash/string';
+
+/**
+ * The map of project name and project path
+ */
 const workspaceProjects = {
     styles: 'packages/styles',
     ['common-css']: 'packages/common-css',
     cx: 'packages/cx',
 };
 
+/** Small utility to convert text to dash-case */
 const dashCase = (text) => text ? snakeCase(text).replace(/_/g, '-') : undefined;
 
-const projects = [
-    'styles',
-    'common-css',
-    'cx',
-].reduce((acc, next) => {
-    acc[next] = workspaceProjects[next];
-    return acc;
-}, {});
+/** Fundamental-styles project themes */
 const stylesThemes = {
     defaultTheme: 'sap_horizon',
     themes: [
@@ -73,6 +71,7 @@ const stylesThemes = {
     ]
 };
 
+/** The map of project name and project's available themes */
 export const themes = {
     styles: stylesThemes,
     cx: stylesThemes,
@@ -90,12 +89,17 @@ export const themes = {
         ]
     }
 };
+
 const projectNames = {
     styles: 'SAP Fiori',
     ['common-css']: 'Common CSS',
     cx: 'CX'
 };
-export default Object.keys(projects).reduce((acc, projectName) => {
+
+/**
+ * The map of project name and project's metadata
+ */
+export const projects = Object.keys(workspaceProjects).reduce((acc, projectName) => {
     const themesConfig = themes[projectName] || {
         themes: []
     };
@@ -103,9 +107,11 @@ export default Object.keys(projects).reduce((acc, projectName) => {
         value: projectName,
         storiesSlug: dashCase(projectNames[projectName]),
         title: projectNames[projectName] || null,
-        pathToPackage: `./${projects[projectName]}`,
+        pathToPackage: `./${workspaceProjects[projectName]}`,
         defaultTheme: themesConfig.defaultTheme,
         themes: themesConfig.themes
     };
     return acc;
 }, {});
+
+export default projects;

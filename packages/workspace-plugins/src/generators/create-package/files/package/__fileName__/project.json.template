@@ -19,11 +19,8 @@
             }
         },
         "lint": {
-            "executor": "@nx/eslint:eslint",
-            "outputs": ["{options.outputFile}"],
-            "options": {
-                "lintFilePatterns": ["packages/<%- fileName %>/**/*.ts"]
-            }
+            "executor": "@nx/eslint:lint",
+            "outputs": ["{options.outputFile}"]
         },
         "stylelint": {
             "executor": "nx-stylelint:lint",
