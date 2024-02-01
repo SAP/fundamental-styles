@@ -111,6 +111,7 @@
     "git-semver-tags": "4.1.1",
     "glob": "8.0.3",
     "husky": "7.0.4",
+    "js-yaml": "^4.1.0",
     "jsonc-eslint-parser": "2.1.0",
     "lerna": "8.1.2",
     "lint-staged": "12.4.2",

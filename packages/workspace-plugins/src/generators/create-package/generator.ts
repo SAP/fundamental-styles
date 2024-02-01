@@ -6,15 +6,16 @@ import traverse from '@babel/traverse';
 import { types } from '@babel/core';
 import generate from '@babel/generator';
 
-export default async function (tree: Tree, schema: CreatePackageSchema) {
+export default async function(tree: Tree, schema: CreatePackageSchema) {
     const namings = names(schema.name);
+    const projectRoot = `packages/${namings.fileName}`;
     generateFiles(tree, `${__dirname}/files/package`, 'packages/', {
         ...namings,
         ...schema
     });
 
     updateJson(tree, './tsconfig.base.json', (json) => {
-        json.compilerOptions.paths[schema.importPath] = [`packages/${namings.fileName}`];
+        json.compilerOptions.paths[schema.importPath] = [projectRoot];
         return json;
     });
 
@@ -30,7 +31,12 @@ export default async function (tree: Tree, schema: CreatePackageSchema) {
                     objectExpression.properties.push(
                         types.objectProperty(types.identifier(namings.fileName), types.stringLiteral(namings.name))
                     );
-                    declaratorPath.stop();
+                }
+                if ((declaratorPath.node.id as types.Identifier).name === 'workspaceProjects') {
+                    const objectExpression = declaratorPath.node.init as types.ObjectExpression;
+                    objectExpression.properties.push(
+                        types.objectProperty(types.identifier(namings.fileName), types.stringLiteral(projectRoot))
+                    );
                 }
             }
         });
@@ -61,13 +67,12 @@ export default async function (tree: Tree, schema: CreatePackageSchema) {
 
         ['.github/workflows/create-hotfix.yml', '.github/workflows/create-release.yml'].forEach((pathToWorkflow) => {
             const workflowContent = tree.read(pathToWorkflow, 'utf-8') as string;
-            const packageList = [
-                ...workflowContent.match(/packagePaths: "(.*)"/)![1].split(','),
-                `dist/packages/${namings.fileName}`
-            ].join(',');
+            const existingPackagePaths = new Set(workflowContent.match(/packagePaths: '(.*)'/)![1].split(','));
+            existingPackagePaths.add(`dist/packages/${namings.fileName}`)
+            const packageList = [...existingPackagePaths.values()].join(',');
             tree.write(
                 pathToWorkflow,
-                workflowContent.replace(/packagePaths: "(.*)"/, `packagePaths: "${packageList}"`)
+                workflowContent.replace(/packagePaths: '(.*)'/, `packagePaths: '${packageList}'`)
             );
         });
     }

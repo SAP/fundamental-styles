@@ -18,6 +18,19 @@
                 }
             }
         },
+        "sync-entry": {
+            "executor": "workspace-plugins:sync-components",
+            "options": {
+                "entry": "{projectRoot}/src/fundamental-<%- fileName %>.scss",
+                "include": [
+                    "{projectRoot}/src/*.scss"
+                ],
+                "exclude": [
+                    "{options.entry}"
+                ]
+            },
+            "outputs": ["{options.entry}"]
+        },
         "lint": {
             "executor": "@nx/eslint:lint",
             "outputs": ["{options.outputFile}"]

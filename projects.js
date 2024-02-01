@@ -6,11 +6,11 @@ import { snakeCase } from 'lodash/string';
 const workspaceProjects = {
     styles: 'packages/styles',
     ['common-css']: 'packages/common-css',
-    cx: 'packages/cx',
+    cx: 'packages/cx'
 };
 
 /** Small utility to convert text to dash-case */
-const dashCase = (text) => text ? snakeCase(text).replace(/_/g, '-') : undefined;
+const dashCase = (text) => (text ? snakeCase(text).replace(/_/g, '-') : undefined);
 
 /** Fundamental-styles project themes */
 const stylesThemes = {
@@ -89,7 +89,6 @@ export const themes = {
         ]
     }
 };
-
 const projectNames = {
     styles: 'SAP Fiori',
     ['common-css']: 'Common CSS',
@@ -113,5 +112,4 @@ export const projects = Object.keys(workspaceProjects).reduce((acc, projectName)
     };
     return acc;
 }, {});
-
 export default projects;
