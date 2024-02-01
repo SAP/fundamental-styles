@@ -1,3 +1,12 @@
+## [0.33.3-rc.1](https://github.com/SAP/fundamental-styles/compare/v0.33.3-rc.0...v0.33.3-rc.1) (2024-02-01)
+
+
+### Bug Fixes
+
+* **styles:** updates related to v1 for Avatar Group [ci visual] ([#5144](https://github.com/SAP/fundamental-styles/issues/5144)) ([796d84e](https://github.com/SAP/fundamental-styles/commit/796d84e261911f426d950a810ad4a927800648b6))
+
+
+
 ## [0.33.3-rc.0](https://github.com/SAP/fundamental-styles/compare/v0.33.2...v0.33.3-rc.0) (2024-01-31)
 
 
