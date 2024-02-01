@@ -15,7 +15,7 @@ jobs:
         runs-on: ubuntu-latest
         steps:
             - name: Fetch from origin repo
-              uses: actions/checkout@v3
+              uses: actions/checkout@v4.1.1
               with:
                   ref: hotfix_tmp_branch_for_automated_release_do_not_use # always fetch from hotfix temporary branch
                   fetch-depth: 0

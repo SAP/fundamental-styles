@@ -4,23 +4,32 @@ const through = require('through2');
 const closestVersion = require('./closest-version');
 const childProcess = require('child_process');
 
+const deleteTags = (tags) => {
+    childProcess.execSync(`git tag -d ${tags.join(' ')}`);
+}
+
+const generateChangelog = (fromVersion) => {
+    return new Promise((resolve, reject) => {
+        let generatedReleaseNotes = '';
+        conventionalChangelog({
+            preset: 'angular',
+            releaseCount: 1
+        }, null, { from: fromVersion }, null, { headerPartial: '' })
+            .pipe(through(function(chunk, _enc, callback) {
+                this.push(chunk);
+                generatedReleaseNotes += chunk.toString();
+                callback();
+            }))
+            .on('finish', () => resolve(generatedReleaseNotes))
+            .on('error', reject);
+    });
+}
+
 const run = async() => {
     const { closest, tagsTillClosest } = await closestVersion();
-    childProcess.execSync(`git tag -d ${tagsTillClosest.join(' ')}`);
-    const changelog = await conventionalChangelog({
-        preset: 'angular',
-        releaseCount: 1
-    }, null, { from: closest }, null, { headerPartial: '' });
-    let generatedReleaseNotes = '';
-    changelog
-        .pipe(through(function(chunk, _enc, callback) {
-            this.push(chunk);
-            generatedReleaseNotes += chunk.toString();
-            callback();
-        }))
-        .on('finish', () => {
-            core.setOutput('generatedReleaseNotes', generatedReleaseNotes);
-        });
+    deleteTags(tagsTillClosest);
+    const generatedReleaseNotes = await generateChangelog(closest);
+    core.setOutput('generatedReleaseNotes', generatedReleaseNotes);
 };
 
 run();

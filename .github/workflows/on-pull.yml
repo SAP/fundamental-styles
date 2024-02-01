@@ -13,7 +13,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Cancel Previous Runs
-        uses: styfle/cancel-workflow-action@0.9.0
+        uses: styfle/cancel-workflow-action@0.12.1
         with:
           access_token: ${{ secrets.GHACTIONS }}
 
@@ -21,7 +21,7 @@ jobs:
     runs-on: ubuntu-latest
     name: Lint commit message
     steps:
-      - uses: actions/checkout@v2.4.0
+      - uses: actions/checkout@v4.1.1
         with:
           fetch-depth: 0
       - uses: wagoid/commitlint-github-action@v3
@@ -31,7 +31,7 @@ jobs:
     name: Dependency installation
     needs: one_run
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4.1.1
       - uses: ./.github/actions/nodejs
         name: Install dependencies
 
@@ -40,7 +40,7 @@ jobs:
     name: Lint code
     needs: install
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4.1.1
       - uses: ./.github/actions/nodejs
       - run: yarn run lint
 
@@ -49,6 +49,6 @@ jobs:
     name: Build and bundle size check
     needs: install
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4.1.1
       - uses: ./.github/actions/nodejs
       - uses: ./.github/actions/build

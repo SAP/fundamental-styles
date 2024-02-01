@@ -6,10 +6,17 @@ const isPrerelease = core.getInput('isPrerelease') !== 'false';
 const isHotfix = core.getInput('isHotfix') !== 'false';
 const npmToken = core.getInput('token');
 
-async function publish({ currentTryNumber = 1, packageJsonPath, tag, token, access, retryCount }) {
+const getTag = () => {
+    if (isPrerelease) return 'prerelease';
+    if (isHotfix) return 'archive';
+    return 'latest';
+};
+
+const publish = async ({ currentTryNumber = 1, packageJsonPath, tag, token, access, retryCount }) => {
     try {
         const result = await npmPublish({
             package: packageJsonPath,
+            dryRun: true,
             token,
             tag,
             access
@@ -28,18 +35,10 @@ async function publish({ currentTryNumber = 1, packageJsonPath, tag, token, acce
             throw e;
         }
     }
-}
-
-let tag = 'latest';
-
-if (isPrerelease) {
-    tag = 'prerelease';
-}
-if (isHotfix) {
-    tag = 'archive';
-}
+};
 
 const run = async () => {
+    const tag = getTag();
     for (const packageJsonPath of packagePaths) {
         await publish({
             packageJsonPath,
