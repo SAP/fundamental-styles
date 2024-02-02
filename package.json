@@ -65,7 +65,7 @@
     "@nx/plugin": "17.2.8",
     "@nx/react": "17.2.8",
     "@nx/web": "17.2.8",
-    "@sap-theming/theming-base-content": "11.10.0",
+    "@sap-theming/theming-base-content": "11.11.0",
     "@storybook/addon-a11y": "7.6.5",
     "@storybook/addon-actions": "7.6.5",
     "@storybook/addon-controls": "7.6.5",
