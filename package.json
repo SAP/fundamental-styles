@@ -113,7 +113,7 @@
     "fs-extra": "^11.2.0",
     "git-semver-tags": "^4.1.1",
     "glob": "^8.0.3",
-    "husky": "7.0.4",
+    "husky": "9.0.10",
     "jsonc-eslint-parser": "^2.1.0",
     "lint-staged": "^12.4.2",
     "lodash": "^4.17.21",

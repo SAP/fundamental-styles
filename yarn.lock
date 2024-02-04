@@ -14345,7 +14345,7 @@ __metadata:
     fs-extra: ^11.2.0
     git-semver-tags: ^4.1.1
     glob: ^8.0.3
-    husky: 7.0.4
+    husky: 9.0.10
     jsdom: ^20.0.1
     jsonc-eslint-parser: ^2.1.0
     lint-staged: ^12.4.2
@@ -15401,12 +15401,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"husky@npm:7.0.4":
-  version: 7.0.4
-  resolution: "husky@npm:7.0.4"
+"husky@npm:9.0.10":
+  version: 9.0.10
+  resolution: "husky@npm:9.0.10"
   bin:
-    husky: lib/bin.js
-  checksum: c6ec4af63da2c9522da8674a20ad9b48362cc92704896cc8a58c6a2a39d797feb2b806f93fbd83a6d653fbdceb2c3b6e0b602c6b2e8565206ffc2882ef7db9e9
+    husky: bin.mjs
+  checksum: 55f4b6db6706ff0bc181607d6a64f55310cbb18b4d7db2a5b85608c87a80abafc14ac3a8c4d0b44d6272f4a62d4c2d3d5491d6a13e2cc7ac4895309e5e5f0ec2
   languageName: node
   linkType: hard
 
