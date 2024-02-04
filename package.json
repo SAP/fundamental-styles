@@ -72,7 +72,7 @@
     "@storybook/addon-cssresources": "6.2.9",
     "@storybook/addon-docs": "7.6.5",
     "@storybook/addon-links": "7.6.5",
-    "@storybook/addon-mdx-gfm": "7.6.5",
+    "@storybook/addon-mdx-gfm": "7.6.12",
     "@storybook/addon-storyshots": "7.6.5",
     "@storybook/addon-toolbars": "7.6.5",
     "@storybook/addon-viewport": "7.6.5",
