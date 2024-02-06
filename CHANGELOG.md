@@ -1,3 +1,12 @@
+## [0.33.3-rc.6](https://github.com/SAP/fundamental-styles/compare/v0.33.3-rc.5...v0.33.3-rc.6) (2024-02-06)
+
+
+### Bug Fixes
+
+* **styles:** bar component v1 update [ci visual] ([#5145](https://github.com/SAP/fundamental-styles/issues/5145)) ([5960249](https://github.com/SAP/fundamental-styles/commit/5960249431541bd62baa58ccfe037a63071286de))
+
+
+
 ## [0.33.3-rc.5](https://github.com/SAP/fundamental-styles/compare/v0.33.3-rc.4...v0.33.3-rc.5) (2024-02-06)
 
 
