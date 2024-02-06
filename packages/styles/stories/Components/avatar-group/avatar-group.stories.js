@@ -78,7 +78,7 @@ By default, an overview of all "overflowed" avatars is shown directly within a p
       story: {
       }
     },
-    tags: []
+    tags: ['v1']
   }
 };
 export const IndividualType = () => individualTypeExampleHtml;

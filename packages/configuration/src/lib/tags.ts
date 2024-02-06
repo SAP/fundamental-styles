@@ -53,5 +53,10 @@ export const tags = {
         "name": "horizon only",
         "title": "Horizon Themes support only",
         "color": 2
-    }
+    },
+    "v1": {
+        "name": "v1.0.0",
+        "title": "Version 1 Component",
+        "color": 1
+    },
 }
