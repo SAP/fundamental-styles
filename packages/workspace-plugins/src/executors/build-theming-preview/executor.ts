@@ -14,7 +14,7 @@ export default async function runExecutor(options: BuildThemingPreviewExecutorSc
     const outputPath = `dist/packages/${context.projectName}`;
 
     copySync(sourcePath, outputPath, { overwrite: true });
-    const projectPackageJson = readJsonFile(`${rootPath}/package.json`);
+    const projectPackageJson = readJsonFile(`${rootPath}/karma.json`);
     projectPackageJson.version = packageJson.version;
     projectPackageJson.dependencies['fundamental-styles'] = packageJson.version;
     writeJsonFile(`${outputPath}/package.json`, projectPackageJson, { appendNewLine: true });
