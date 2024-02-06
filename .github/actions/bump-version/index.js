@@ -2,10 +2,10 @@ const recommendedVersion = require('conventional-recommended-bump');
 const semver = require('semver');
 const fs = require('fs');
 const core = require('@actions/core');
-const packageJson = JSON.parse(fs.readFileSync('./package.json', 'utf8'));
+const lernaJson = JSON.parse(fs.readFileSync('./lerna.json', 'utf8'));
 const releaseType = core.getInput('isPrerelease') !== 'false'  ? 'prerelease' : 'release';
 const writeFile = core.getInput('writeFile') !== 'false';
-const currentVersion = packageJson.version;
+const currentVersion = lernaJson.version;
 const prereleaseRequested = releaseType === 'prerelease';
 
 function isInPrerelease(version) {
@@ -64,9 +64,9 @@ const getNewVersion = (release, currentVersion, prereleaseRequested) => {
     return semver.valid(release.releaseType) || semver.inc(currentVersion, release.releaseType, prereleaseRequested, 'rc');
 };
 
-const writeNewVersionToPackageJson = (newVersion) => {
-    packageJson.version = newVersion;
-    fs.writeFileSync('./package.json', JSON.stringify(packageJson, null, 2));
+const writeNewVersionToLernaJson = (newVersion) => {
+    lernaJson.version = newVersion;
+    fs.writeFileSync('./lerna.json', JSON.stringify(lernaJson, null, 2));
 };
 
 const run = async() => {
@@ -78,7 +78,7 @@ const run = async() => {
     core.info(`new version is ${newVersion}`);
 
     if (writeFile) {
-        writeNewVersionToPackageJson(newVersion);
+        writeNewVersionToLernaJson(newVersion);
     }
 
     console.log("-1--", newVersion);
