@@ -18,6 +18,7 @@ const createTagObject = (ghTag, npmTag, mainNeedsSync) => ({
 const getTags = async (bumpTag, bumpedVersion) => {
     const mainVersion = getVersion('origin/main');
     const mainIsPrerelease = !!semver.prerelease(mainVersion, undefined);
+    console.log('-----3------', mainVersion);
     const bumpedIsGreaterThanMain = semver.gt(bumpedVersion, mainVersion);
     const semverTags = await gitSemverTags(null, true);
     const latestStableVersion = semverTags[0].replace('v', '');
@@ -38,10 +39,10 @@ const getTags = async (bumpTag, bumpedVersion) => {
 module.exports.getTags = getTags;
 
 const run = async () => {
-    console.log('-----1------');
     const bumpedVersion = getInput('bumpedVersion');
-    console.log('-----2------');
+    console.log('-----1------', bumpedVersion);
     const bumpTag = getInput('bumpTag');
+    console.log('-----2------', bumpTag);
     const tags = await getTags(bumpTag, bumpedVersion);
     console.log('------->>>>> Fetched tags:', tags);
     const { gh, npm, mainNeedsSync } = await getTags(bumpTag, bumpedVersion);

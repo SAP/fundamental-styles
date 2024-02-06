@@ -20,5 +20,6 @@ const getVersionFromFile = (fileName, branch) => {
  */
 module.exports = (branch = null) => {
     const version = getVersionFromFile('lerna.json', branch) || getVersionFromFile('package.json', branch);
+    console.log("----4-----", version);
     return version;
 };
