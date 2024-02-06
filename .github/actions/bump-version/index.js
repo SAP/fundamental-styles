@@ -80,6 +80,9 @@ const run = async() => {
         writeNewVersionToPackageJson(newVersion);
     }
 
+    console.log("-1--", newVersion);
+    console.log("-2--", semver.prerelease(newVersion));
+
     core.setOutput('newVersion', newVersion);
     core.setOutput('isPrerelease', semver.prerelease(newVersion) ? 'true' : 'false');
 };
