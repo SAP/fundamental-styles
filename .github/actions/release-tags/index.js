@@ -38,7 +38,9 @@ const getTags = async (bumpTag, bumpedVersion) => {
 module.exports.getTags = getTags;
 
 const run = async () => {
+    console.log('-----1------');
     const bumpedVersion = getInput('bumpedVersion');
+    console.log('-----2------');
     const bumpTag = getInput('bumpTag');
     const tags = await getTags(bumpTag, bumpedVersion);
     console.log('------->>>>> Fetched tags:', tags);
