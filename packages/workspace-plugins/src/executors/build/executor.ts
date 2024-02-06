@@ -13,7 +13,7 @@ const aboveMinorVersion = (version: string) => {
     const parsed = semverParse(version);
     return `^${parsed!.major}.${parsed!.minor}.0`;
 };
-const packageJson = JSON.parse(readFileSync('package.json', 'utf-8'));
+const packageJson = JSON.parse(readFileSync('lerna.json', 'utf-8'));
 const versions = {
     VERSION_PLACEHOLDER: packageJson.version,
     SAP_THEMING_VERSION: aboveMinorVersion(packageJson.devDependencies['@sap-theming/theming-base-content'])
