@@ -41,7 +41,11 @@ function getTypePriority(type) {
 
 const bumpedVersionType = async () => {
     const release = await recommendedVersion({
-        preset: 'conventionalcommits',
+        //preset: 'conventionalcommits',
+        preset: {
+            name: require.resolve('conventional-changelog-conventionalcommits'),
+            preMajor: semver.lt(currentVersion, '1.0.0')
+        },
         tagPrefix: 'v'
     });
 
