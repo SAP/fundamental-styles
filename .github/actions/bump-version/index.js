@@ -72,6 +72,7 @@ const writeNewVersionToPackageJson = (newVersion) => {
 const run = async() => {
     const release = await bumpedVersionType();
     core.info(`${release.reason}, therefore release type should be ${release.releaseType}`);
+    console.log(release,"<>", currentVersion, "<>", prereleaseRequested);
 
     const newVersion = getNewVersion(release, currentVersion, prereleaseRequested);
     core.info(`new version is ${newVersion}`);
@@ -81,7 +82,6 @@ const run = async() => {
     }
 
     console.log("-1--", newVersion);
-    console.log("-2--", semver.prerelease(newVersion));
 
     core.setOutput('newVersion', newVersion);
     core.setOutput('isPrerelease', semver.prerelease(newVersion) ? 'true' : 'false');
