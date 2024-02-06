@@ -43,9 +43,9 @@ const publish = async ({ currentTryNumber = 1, packageJsonPath, tag, token, acce
 const run = async () => {
     const tag = getTag();
     for (const packageJsonPath of packagePaths) {
-        const lernaJson = JSON.parse(fs.readFileSync(packageJsonPath, 'utf8'));
+        const packageJson = JSON.parse(fs.readFileSync(packageJsonPath, 'utf8'));
         console.log('>publish: ', packageJsonPath);
-        console.log('>publish version: ', lernaJson.version);
+        console.log('>publish version: ', packageJson.version);
         await publish({
             packageJsonPath,
             tag,

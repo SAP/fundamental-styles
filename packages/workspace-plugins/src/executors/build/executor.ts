@@ -14,9 +14,9 @@ const aboveMinorVersion = (version: string) => {
     return `^${parsed!.major}.${parsed!.minor}.0`;
 };
 const lernaJson = JSON.parse(readFileSync('lerna.json', 'utf-8'));
-console.log('>> lerna version:', lernaJson.version);
+console.log('>11111111111> lerna version:', lernaJson.version);
 const packageJson = JSON.parse(readFileSync('package.json', 'utf-8'));
-console.log('>> package version:', packageJson.version);
+console.log('>22222222222> package version:', packageJson.version);
 const versions = {
     VERSION_PLACEHOLDER: lernaJson.version,
     SAP_THEMING_VERSION: aboveMinorVersion(packageJson.devDependencies['@sap-theming/theming-base-content'])
@@ -94,6 +94,9 @@ export default async function runExecutor(options: BuildExecutorSchema, context:
     projectPackageJsonContent = JSON.stringify(projectPackageJson, null, 4);
 
     Object.entries(versions).forEach(([key, value]) => {
+        console.log(">333333333> key", key);
+        console.log(">333333333> key", value);
+        console.log(">333333333> projectPackageJsonContent", projectPackageJsonContent);
         projectPackageJsonContent = projectPackageJsonContent.replace(new RegExp(key, 'g'), value);
     });
     writeFileSync(`${options.outputPath}/package.json`, projectPackageJsonContent);
