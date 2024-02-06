@@ -6,6 +6,9 @@ const isPrerelease = core.getInput('isPrerelease') !== 'false';
 const isHotfix = core.getInput('isHotfix') !== 'false';
 const npmToken = core.getInput('token');
 
+
+const fs = require('fs');
+
 const getTag = () => {
     if (isPrerelease) return 'prerelease';
     if (isHotfix) return 'archive';
