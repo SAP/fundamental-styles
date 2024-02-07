@@ -22,7 +22,7 @@ export default async function runExecutor(options: BuildThemingPreviewExecutorSc
     console.log('---4444444----',lernaJson.version);
     projectPackageJson.version = lernaJson.version;
     console.log('---5555555----',projectPackageJson);
-    projectPackageJson.dependencies['fundamental-styles'] = packageJson.version;
+    projectPackageJson.dependencies['fundamental-styles'] = lernaJson.version;
     console.log('---6666666----');
     writeJsonFile(`${outputPath}/package.json`, projectPackageJson, { appendNewLine: true });
     logger.info(`Copied theming preview to ${outputPath}`);
