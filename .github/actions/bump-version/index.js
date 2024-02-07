@@ -68,10 +68,10 @@ const getNewVersion = (release, currentVersion, prereleaseRequested) => {
     return semver.valid(release.releaseType) || semver.inc(currentVersion, release.releaseType, prereleaseRequested, 'rc');
 };
 
-const writeNewVersionToLernaJson = (newVersion) => {
-    lernaJson.version = newVersion;
-    fs.writeFileSync('./lerna.json', JSON.stringify(lernaJson, null, 2));
-};
+// const writeNewVersionToLernaJson = (newVersion) => {
+//     lernaJson.version = newVersion;
+//     fs.writeFileSync('./lerna.json', JSON.stringify(lernaJson, null, 2));
+// };
 
 const run = async() => {
     const release = await bumpedVersionType();
@@ -80,9 +80,9 @@ const run = async() => {
     const newVersion = getNewVersion(release, currentVersion, prereleaseRequested);
     core.info(`new version is ${newVersion}`);
 
-    if (writeFile) {
-        writeNewVersionToLernaJson(newVersion);
-    }
+    // if (writeFile) {
+    //     writeNewVersionToLernaJson(newVersion);
+    // }
 
     core.setOutput('newVersion', newVersion);
     core.setOutput('isPrerelease', semver.prerelease(newVersion) ? 'true' : 'false');
