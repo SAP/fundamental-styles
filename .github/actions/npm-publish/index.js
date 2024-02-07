@@ -44,8 +44,6 @@ const run = async () => {
     const tag = getTag();
     for (const packageJsonPath of packagePaths) {
         const packageJson = JSON.parse(fs.readFileSync(packageJsonPath, 'utf8'));
-        console.log('>publish: ', packageJsonPath);
-        console.log('>publish version: ', packageJson.version);
         await publish({
             packageJsonPath,
             tag,

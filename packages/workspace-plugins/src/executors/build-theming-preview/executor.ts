@@ -18,7 +18,6 @@ export default async function runExecutor(options: BuildThemingPreviewExecutorSc
     const projectPackageJson = readJsonFile(`${rootPath}/package.json`);
     projectPackageJson.version = lernaJson.version;
     projectPackageJson.dependencies['fundamental-styles'] = lernaJson.version;
-    console.log('---5555555----',projectPackageJson);
     writeJsonFile(`${outputPath}/package.json`, projectPackageJson, { appendNewLine: true });
     logger.info(`Copied theming preview to ${outputPath}`);
 
