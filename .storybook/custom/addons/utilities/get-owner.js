@@ -1,4 +1,4 @@
-const {sortedProjects} = require('./projects');
+import { sortedProjects } from './projects';
 
 const ownersCache = new Map();
 
@@ -14,7 +14,7 @@ const ownersCache = new Map();
  * @param story
  * @returns {undefined|any}
  */
-module.exports.getOwner = (story) => {
+export function getOwner(story) {
     if (!story) {
         return undefined;
     }
@@ -35,4 +35,4 @@ module.exports.getOwner = (story) => {
         );
     }
     return ownersCache.get(storyFilePath);
-};
+}

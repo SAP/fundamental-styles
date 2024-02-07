@@ -1,7 +1,8 @@
-const { projects } = require('../../../../projects');
+import { projects } from '../../../../projects';
+
 const sortedProjects = Object.entries(projects).map(([id, data]) => ({ id, ...data })).sort((a, b) => b.pathToPackage.length - a.pathToPackage.length);
 
-module.exports = {
+export {
     projects,
     sortedProjects,
 };

@@ -1,6 +1,6 @@
 import { DocsContainer as container } from '@storybook/addon-docs';
 import { fundamentalTheme as theme, RenderPackageIntroduction } from 'fundamental-styles/storybook';
-import Readme from '../README.md';
+import Readme from '../README.md?raw';
 
 export default {
         component: () => {
@@ -32,7 +32,7 @@ export const <%- className -%> = {
          */
         return '<div></div>';
     },
-    parameters = {
+    parameters: {
         storyshots: { disable: true },
         docsOnly: true
     }

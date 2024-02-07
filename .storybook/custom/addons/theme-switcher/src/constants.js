@@ -1,3 +1,1 @@
-module.exports = {
-    ADDON_ID: 'Theme Switcher',
-};
+export const ADDON_ID = 'Theme Switcher';

@@ -5,6 +5,7 @@ import { loadCsf } from '@storybook/csf-tools';
 import { getOwner } from './custom/addons/utilities/get-owner';
 import { relative } from 'path';
 import remarkGfm from 'remark-gfm';
+import { storybookPackages } from '../projects';
 
 const storiesToInclude = () => {
     const mode = process.env.STORYBOOK_ENV;
@@ -18,11 +19,7 @@ const storiesToInclude = () => {
     }
 };
 const includedStories = storiesToInclude();
-const includedPackages = '(' + [
-    'common-css',
-    'cx',
-    'styles'
-].join('|') + ')';
+const includedPackages = `(${storybookPackages})`;
 const staticDirs = ['static/', '../node_modules/@sap-theming'];
 const storybookAddons = ['@storybook/addon-actions', '@storybook/addon-links', '@storybook/addon-a11y', '@storybook/addon-viewport/register', {
     name: '@storybook/addon-docs',

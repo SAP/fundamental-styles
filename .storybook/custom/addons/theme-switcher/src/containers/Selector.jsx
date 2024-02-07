@@ -1,8 +1,7 @@
-const React = require('react');
-const { WithTooltip, TooltipLinkList, Icons, IconButton } = require('@storybook/components');
-const { useState, useEffect } = require('react');
-const { getOwner } = require('../../../utilities/get-owner');
-const IconButtonLabel = require('./IconButtonLabel').default;
+import { getOwner } from '../../../utilities/get-owner';
+import IconButtonLabel from './IconButtonLabel';
+import React, { useState, useEffect } from 'react';
+import { WithTooltip, TooltipLinkList, Icons, IconButton } from '@storybook/components';
 
 const Selector = ({ api }) => {
     const [availableThemes, setAvailableThemes] = useState([]);
@@ -60,4 +59,4 @@ const Selector = ({ api }) => {
     </>;
 };
 
-module.exports = Selector;
+export default Selector;

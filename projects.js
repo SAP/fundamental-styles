@@ -95,6 +95,10 @@ const projectNames = {
     cx: 'CX'
 };
 
+export const storybookPackages = Object.keys(projectNames).map((projectName) => {
+    return workspaceProjects[projectName].replace('packages/', '');
+}).join('|');
+
 /**
  * The map of project name and project's metadata
  */
