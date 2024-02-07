@@ -5,6 +5,9 @@ import { processWithPostCss } from '../shared/postcss';
 import { ExecutorContext, logger, readJsonFile, writeJsonFile } from '@nx/devkit';
 import { readPackageJson } from 'nx/src/project-graph/file-utils';
 
+import { readFileSync } from 'fs';
+
+const lernaJson = JSON.parse(readFileSync('lerna.json', 'utf-8'));
 const packageJson = readPackageJson();
 const { copySync } = fs;
 
@@ -14,8 +17,9 @@ export default async function runExecutor(options: BuildThemingPreviewExecutorSc
     const outputPath = `dist/packages/${context.projectName}`;
 
     copySync(sourcePath, outputPath, { overwrite: true });
-    const projectPackageJson = readJsonFile(`${rootPath}/karma.json`);
-    projectPackageJson.version = packageJson.version;
+    const projectPackageJson = readJsonFile(`${rootPath}/project.json`);
+    console.log('---4444444----',lernaJson.version);
+    projectPackageJson.version = lernaJson.version;
     projectPackageJson.dependencies['fundamental-styles'] = packageJson.version;
     writeJsonFile(`${outputPath}/package.json`, projectPackageJson, { appendNewLine: true });
     logger.info(`Copied theming preview to ${outputPath}`);
