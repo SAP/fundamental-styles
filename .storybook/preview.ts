@@ -11,43 +11,6 @@ import { Preview } from '@storybook/html';
 
 export default {
     parameters: {
-        cssresources: [
-            {
-                id: 'normalize',
-                code: `<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"/>`,
-                picked: false
-            },
-            {
-                id: 'unnormalize',
-                code: `<link rel="stylesheet" type="text/css" href="./unnormalize.css"/>`,
-                picked: false
-            },
-            {
-                id: 'theme-ugly',
-                code: `<link rel="stylesheet" type="text/css" href="./theme-ugly.css"/>`,
-                picked: false
-            },
-            {
-                id: 'windows-hcm-1',
-                code: '<link rel="stylesheet" type="text/css" href="./windows-hcm-1.css"/>',
-                picked: false
-            },
-            {
-                id: 'windows-hcm-2',
-                code: '<link rel="stylesheet" type="text/css" href="./windows-hcm-2.css"/>',
-                picked: false
-            },
-            {
-                id: 'windows-hcm-dark',
-                code: '<link rel="stylesheet" type="text/css" href="./windows-hcm-dark.css"/>',
-                picked: false
-            },
-            {
-                id: 'windows-hcm-light',
-                code: '<link rel="stylesheet" type="text/css" href="./windows-hcm-light.css"/>',
-                picked: false
-            }
-        ],
         docs: {
             container: DocsContainer,
             page: MainDocPage,
