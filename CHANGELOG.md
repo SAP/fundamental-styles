@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.34.0-rc.3](https://github.com/SAP/fundamental-styles/compare/v0.34.0-rc.2...v0.34.0-rc.3) (2024-02-07)
+
+
+### Bug Fixes
+
+* update ncipollo/release-action version 1.14.0 ([4c6ccac](https://github.com/SAP/fundamental-styles/commit/4c6ccac24e3df5f60e03f6eac6bf939a4d78cd7a))
+
+
+
+
+
 # [0.34.0-rc.2](https://github.com/SAP/fundamental-styles/compare/v0.34.0-rc.1...v0.34.0-rc.2) (2024-02-07)
 
 
