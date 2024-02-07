@@ -3,12 +3,10 @@ import fs from 'fs-extra';
 import { execSync } from 'child_process';
 import { processWithPostCss } from '../shared/postcss';
 import { ExecutorContext, logger, readJsonFile, writeJsonFile } from '@nx/devkit';
-import { readPackageJson } from 'nx/src/project-graph/file-utils';
 
 import { readFileSync } from 'fs';
 
 const lernaJson = JSON.parse(readFileSync('lerna.json', 'utf-8'));
-const packageJson = readPackageJson();
 const { copySync } = fs;
 
 export default async function runExecutor(options: BuildThemingPreviewExecutorSchema, context: Required<ExecutorContext>) {
@@ -18,13 +16,9 @@ export default async function runExecutor(options: BuildThemingPreviewExecutorSc
 
     copySync(sourcePath, outputPath, { overwrite: true });
     const projectPackageJson = readJsonFile(`${rootPath}/package.json`);
-    console.log('---projectPackageJson----',projectPackageJson);
-    console.log('---outputPath----',outputPath);
-    console.log('---lernaJson----',lernaJson.version);
     projectPackageJson.version = lernaJson.version;
-    console.log('---5555555----',projectPackageJson);
     projectPackageJson.dependencies['fundamental-styles'] = lernaJson.version;
-    console.log('---6666666----');
+    console.log('---5555555----',projectPackageJson);
     writeJsonFile(`${outputPath}/package.json`, projectPackageJson, { appendNewLine: true });
     logger.info(`Copied theming preview to ${outputPath}`);
 
