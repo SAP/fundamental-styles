@@ -20,10 +20,6 @@
         },
         "sync-entry": {
             "cache": true
-        },
-        "@nx/eslint:lint": {
-            "cache": true,
-            "inputs": ["default", "{workspaceRoot}/.eslintrc.json", "{workspaceRoot}/tools/eslint-rules/**/*"]
         }
     },
     "affected": {
