@@ -17,9 +17,10 @@ export default async function runExecutor(options: BuildThemingPreviewExecutorSc
     const outputPath = `dist/packages/${context.projectName}`;
 
     copySync(sourcePath, outputPath, { overwrite: true });
-    const projectPackageJson = readJsonFile(`${rootPath}/project.json`);
-    console.log('---4343434----',`${rootPath}/project.json`);
-    console.log('---4444444----',lernaJson.version);
+    const projectPackageJson = readJsonFile(`${rootPath}/package.json`);
+    console.log('---projectPackageJson----',projectPackageJson);
+    console.log('---outputPath----',outputPath);
+    console.log('---lernaJson----',lernaJson.version);
     projectPackageJson.version = lernaJson.version;
     console.log('---5555555----',projectPackageJson);
     projectPackageJson.dependencies['fundamental-styles'] = lernaJson.version;
