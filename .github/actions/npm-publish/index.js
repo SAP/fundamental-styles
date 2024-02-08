@@ -1,5 +1,6 @@
 const core = require('@actions/core');
-const npmPublish = require('@jsdevtools/npm-publish');
+// const npmPublish = require('@jsdevtools/npm-publish');
+const { npmPublish } = require('@jsdevtools/npm-publish');
 
 const packagePaths = core.getInput('packagePaths').split(',').map(path => `./${path}/package.json`);
 const isPrerelease = core.getInput('isPrerelease') !== 'false';
