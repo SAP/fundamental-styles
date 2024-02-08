@@ -1,3 +1,5 @@
+@use "sass:map";
+
 @import "./common";
 
 :root {
@@ -10,28 +12,28 @@
   --fdRadio_Compact_Outline_Border_radius: 0;
   --fdRadio_Success_Border_Style: var(--sapField_SuccessBorderStyle);
 
-  // Default
+  /* Default */
   --fdRadio_Background_Color_Default: var(--sapField_Background);
   --fdRadio_Inner_Border_Width_Default: var(--sapField_BorderWidth);
   --fdRadio_Inner_Border_Style_Default: solid;
   --fdRadio_Inner_Border_Color_Default: var(--sapField_BorderColor);
   --fdRadio_Active_Dot_Color_Default: var(--sapSelectedColor);
 
-  // Hover
+  /* Hover */
   --fdRadio_Background_Color_Default_Hover: var(--sapField_Hover_Background);
   --fdRadio_Inner_Border_Width_Default_Hover: var(--sapField_BorderWidth);
   --fdRadio_Inner_Border_Style_Default_Hover: solid;
   --fdRadio_Inner_Border_Color_Default_Hover: var(--sapField_Hover_BorderColor);
   --fdRadio_Active_Dot_Color_Default_Hover: var(--sapSelectedColor);
 
-  // ReadOnly
+  /* ReadOnly */
   --fdRadio_Background_Color_ReadOnly: var(--sapField_ReadOnly_Background);
   --fdRadio_Inner_Border_Width_ReadOnly: var(--sapField_BorderWidth);
   --fdRadio_Inner_Border_Style_ReadOnly: solid;
   --fdRadio_Inner_Border_Color_ReadOnly: var(--sapField_ReadOnly_BorderColor);
   --fdRadio_Active_Dot_Color_ReadOnly: var(--sapContent_NonInteractiveIconColor);
 
-  // Error
+  /* Error */
   --fdRadio_Background_Color_Error: var(--sapField_InvalidBackground);
   --fdRadio_Inner_Border_Width_Error: var(--sapField_InvalidBorderWidth);
   --fdRadio_Inner_Border_Style_Error: var(--sapField_InvalidBorderStyle);
@@ -39,7 +41,7 @@
   --fdRadio_Active_Dot_Color_Error: var(--sapField_InvalidColor);
   --fdRadio_Background_Color_Error_Hover: var(--sapField_InvalidBackground);
 
-  // Warning
+  /* Warning */
   --fdRadio_Background_Color_Warning: var(--sapField_WarningBackground);
   --fdRadio_Inner_Border_Width_Warning: var(--sapField_WarningBorderWidth);
   --fdRadio_Inner_Border_Style_Warning: var(--sapField_WarningBorderStyle);
@@ -47,7 +49,7 @@
   --fdRadio_Active_Dot_Color_Warning: var(--sapField_TextColor);
   --fdRadio_Background_Color_Warning_Hover: var(--sapField_WarningBackground);
 
-  // Success
+  /* Success */
   --fdRadio_Background_Color_Success: var(--sapField_SuccessBackground);
   --fdRadio_Inner_Border_Width_Success: var(--sapField_SuccessBorderWidth);
   --fdRadio_Inner_Border_Style_Success: var(--sapField_SuccessBorderStyle);
@@ -55,7 +57,7 @@
   --fdRadio_Active_Dot_Color_Success: var(--sapField_SuccessColor);
   --fdRadio_Background_Color_Success_Hover: var(--sapField_SuccessBackground);
 
-  // Information
+  /* Information */
   --fdRadio_Background_Color_Information: var(--sapField_InformationBackground);
   --fdRadio_Inner_Border_Width_Information: var(--sapField_InformationBorderWidth);
   --fdRadio_Inner_Border_Style_Information: var(--sapField_InformationBorderStyle);

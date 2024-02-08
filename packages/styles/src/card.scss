@@ -1,3 +1,5 @@
+@use "sass:map";
+
 @import "./new-settings";
 @import "./mixins";
 
@@ -5,7 +7,6 @@ $block: #{$fd-namespace}-card;
 $object-status: #{$fd-namespace}-object-status;
 $numeric-content: #{$fd-namespace}-numeric-content;
 $list: #{$fd-namespace}-list;
-
 $fd-card-header-border: var(--fdCard_Header_Border_Bottom) !default;
 $fd-card-footer-border: var(--fdCard_Footer_Border_Top) !default;
 $fd-card-border-radius: var(--fdCard_Border_Radius) !default;
@@ -38,10 +39,7 @@ $fd-card-header-outline-offset: 0.0625rem !default;
       position: absolute;
       display: block;
       border: var(--sapContent_FocusWidth) var(--sapContent_FocusStyle) var(--sapContent_FocusColor);
-      top: $fd-card-header-outline-offset;
-      left: $fd-card-header-outline-offset;
-      right: $fd-card-header-outline-offset;
-      bottom: $fd-card-header-outline-offset * 2;
+      inset: $fd-card-header-outline-offset $fd-card-header-outline-offset $fd-card-header-outline-offset * 2 $fd-card-header-outline-offset;
       border-radius: $fd-card-border-radius $fd-card-border-radius 0 0;
       z-index: 3;
     }

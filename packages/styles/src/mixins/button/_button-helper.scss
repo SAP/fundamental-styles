@@ -1,3 +1,5 @@
+@use "sass:map";
+
 @import "../mixins";
 @import "../../new-settings";
 
@@ -12,10 +14,7 @@ $block-button-toggled: #{$block-button}--toggled;
     position: absolute;
     display: block;
     border: var(--sapContent_FocusWidth) var(--sapContent_FocusStyle) var(--sapContent_FocusColor);
-    top: $fd-button-fake-outline-offset;
-    left: $fd-button-fake-outline-offset;
-    right: $fd-button-fake-outline-offset;
-    bottom: $fd-button-fake-outline-offset;
+    inset: $fd-button-fake-outline-offset $fd-button-fake-outline-offset $fd-button-fake-outline-offset $fd-button-fake-outline-offset;
     border-radius: var(--fdButton_Focus_Border_Radius);
   }
 

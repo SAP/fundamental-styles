@@ -1,3 +1,5 @@
+@use "sass:map";
+
 @import "./mixins";
 
 /*!
@@ -11,7 +13,6 @@
 $fd-shell-header-fixed: true !default;
 $fd-shell-footer-height: 2.5rem !default;
 $fd-shell-height: 3rem;
-
 $block: #{$fd-namespace}-shell;
 
 .#{$block} {

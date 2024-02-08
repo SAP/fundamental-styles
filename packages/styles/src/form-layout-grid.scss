@@ -1,12 +1,12 @@
+@use "sass:map";
+
 @import "./mixins";
 @import "./layout-grid";
 
 $block: #{$fd-namespace}-form-layout-grid;
-
 $formContainer: #{$block}-container;
 $formGroup: #{$fd-namespace}-form-group;
 $formItem: #{$fd-namespace}-form-item;
-
 $gridContainer: #{$fd-namespace}-container;
 $gridRow: #{$fd-namespace}-row;
 $gridCol: #{$fd-namespace}-col;
@@ -102,16 +102,16 @@ $gridCol: #{$fd-namespace}-col;
   }
 }
 
-@media (min-width: 0) {
+@media (width >= 0) {
   @include fd-form-vertical(#{$formContainer}--vertical);
   @include fd-form-col-paddings('fd-col');
 }
 
-@media (min-width: 0) and (max-width: 599px) {
+@media (width >= 0) and (width <= 599px) {
   @include fd-form-vertical(#{$formContainer});
 }
 
-@media (min-width: 600px) {
+@media (width >= 600px) {
   .#{$gridContainer}.#{$formContainer} {
     $gutter: 0.25rem;
 
@@ -130,19 +130,19 @@ $gridCol: #{$fd-namespace}-col;
   @include fd-form-col-paddings('fd-col-md');
 }
 
-@media (min-width: 600px) and (max-width: 1023px) {
+@media (width >= 600px) and (width <= 1023px) {
   @include fd-form-vertical(#{$formContainer}--md-vertical);
 }
 
-@media (min-width: 1024px) {
+@media (width >= 1024px) {
   @include fd-form-col-paddings('fd-col-lg');
 }
 
-@media (min-width: 1024px) and (max-width: 1443px) {
+@media (width >= 1024px) and (width <= 1443px) {
   @include fd-form-vertical(#{$formContainer}--lg-vertical);
 }
 
-@media (min-width: 1440px) {
+@media (width >= 1440px) {
   @include fd-form-vertical(#{$formContainer}--xl-vertical);
   @include fd-form-col-paddings('fd-col-xl');
 }

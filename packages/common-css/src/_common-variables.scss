@@ -1,3 +1,5 @@
+@use "sass:map";
+
 // Element height
 $fn-element-height: 2rem; // 32px
 
@@ -188,20 +190,20 @@ $medium: 1024px;
 $large: 1440px;
 $offset: 1px;
 
-$sap-margin-tiny: map-get($sap-margins, $sap-parameter-tiny);
-$sap-margin-small: map-get($sap-margins, $sap-parameter-small);
-$sap-margin-medium: map-get($sap-margins, $sap-parameter-medium);
-$sap-margin-large: map-get($sap-margins, $sap-parameter-large);
+$sap-margin-tiny: map.get($sap-margins, $sap-parameter-tiny);
+$sap-margin-small: map.get($sap-margins, $sap-parameter-small);
+$sap-margin-medium: map.get($sap-margins, $sap-parameter-medium);
+$sap-margin-large: map.get($sap-margins, $sap-parameter-large);
 
-$sap-padding-tiny: map-get($sap-paddings, $sap-parameter-tiny);
-$sap-padding-small: map-get($sap-paddings, $sap-parameter-small);
-$sap-padding-medium: map-get($sap-paddings, $sap-parameter-medium);
-$sap-padding-large: map-get($sap-paddings, $sap-parameter-large);
+$sap-padding-tiny: map.get($sap-paddings, $sap-parameter-tiny);
+$sap-padding-small: map.get($sap-paddings, $sap-parameter-small);
+$sap-padding-medium: map.get($sap-paddings, $sap-parameter-medium);
+$sap-padding-large: map.get($sap-paddings, $sap-parameter-large);
 
-$sap-flex-spacing-tiny: map-get($sap-flex-spacings, $sap-parameter-tiny);
-$sap-flex-spacing-small: map-get($sap-flex-spacings, $sap-parameter-small);
-$sap-flex-spacing-medium: map-get($sap-flex-spacings, $sap-parameter-medium);
-$sap-flex-spacing-large: map-get($sap-flex-spacings, $sap-parameter-large);
+$sap-flex-spacing-tiny: map.get($sap-flex-spacings, $sap-parameter-tiny);
+$sap-flex-spacing-small: map.get($sap-flex-spacings, $sap-parameter-small);
+$sap-flex-spacing-medium: map.get($sap-flex-spacings, $sap-parameter-medium);
+$sap-flex-spacing-large: map.get($sap-flex-spacings, $sap-parameter-large);
 
 // Colors
 /* stylelint-disable */

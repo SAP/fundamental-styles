@@ -1,3 +1,5 @@
+@use "sass:map";
+
 :root {
   --fdInput_Group_Button_Hover_Background: var(--sapButton_Lite_Hover_Background);
   --fdInput_Group_Button_Active_Background: var(--sapButton_Lite_Hover_Background);

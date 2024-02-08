@@ -1,10 +1,11 @@
+@use "sass:map";
+
 @import "./new-settings";
 @import "./mixins";
 
 $block: #{$fd-namespace}-action-sheet;
 
 .#{$block} {
-
   // OVERLAY
   $fd-action-sheet-overlay-color: var(--sapBlockLayer_Background);
 
@@ -57,7 +58,7 @@ $block: #{$fd-namespace}-action-sheet;
 
     max-width: 100%;
     z-index: 1;
-    padding: 0 1rem 0.5rem 1rem;
+    padding: 0 1rem 0.5rem;
     color: var(--sapContent_ContrastTextColor);
   }
 

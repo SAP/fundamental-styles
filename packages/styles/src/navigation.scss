@@ -1,3 +1,5 @@
+@use "sass:map";
+
 @import './new-settings';
 @import './mixins';
 
@@ -6,7 +8,6 @@ $navSnapped: #{$block}--snapped;
 $navPopup: #{$block}--popup;
 $navHorizontal: #{$block}--horizontal;
 $navVertical: #{$block}--vertical;
-
 $navLink: #{$block}__link;
 $navText: #{$block}__text;
 $navIcon: #{$block}__icon;
@@ -782,7 +783,7 @@ $navListContainerSubmenu: #{$block}__list-container--submenu;
 
     &::before {
       font-size: 0.75rem;
-      font-family: 'SAP-icons';
+      font-family: SAP-icons;
       content: var(--fdNavigation_Link_Has_Child_Indicator_Icon);
     }
 
@@ -804,7 +805,7 @@ $navListContainerSubmenu: #{$block}__list-container--submenu;
 
     &::before {
       font-size: 0.75rem;
-      font-family: 'SAP-icons';
+      font-family: SAP-icons;
       content: var(--fdNavigation_Link_External_Link_Indicator_Icon);
     }
 
@@ -822,7 +823,7 @@ $navListContainerSubmenu: #{$block}__list-container--submenu;
 
     &::before {
       font-size: 0.75rem;
-      font-family: 'SAP-icons';
+      font-family: SAP-icons;
       content: var(--fdNavigation_Link_Back_Indicator_Icon);
     }
 

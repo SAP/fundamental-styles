@@ -1,3 +1,5 @@
+@use "sass:map";
+
 @import "./new-settings";
 @import "./mixins";
 
@@ -90,7 +92,7 @@ $blockActions: #{$fd-namespace}-search-field__actions;
     &::-webkit-search-cancel-button,
     &::-webkit-search-results-button,
     &::-webkit-search-results-decoration {
-      -webkit-appearance: none;
+      appearance: none;
     }
 
     &:not(:placeholder-shown) {

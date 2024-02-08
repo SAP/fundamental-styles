@@ -1,3 +1,5 @@
+@use "sass:map";
+
 :root {
   --fdButton_Height: var(--sapElement_Height);
   --fdButton_Compact_Height: var(--sapElement_Compact_Height);

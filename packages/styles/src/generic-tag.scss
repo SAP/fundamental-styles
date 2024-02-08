@@ -1,3 +1,5 @@
+@use "sass:map";
+
 @import "./new-settings";
 @import "./mixins";
 
@@ -65,7 +67,7 @@ $block: #{$fd-namespace}-generic-tag;
   background: var(--fdGenericTag_Decorator_Position) 0 / var(--fdGenericTag_Spacing) 100% no-repeat linear-gradient(0deg, var(--fdGenericTag_Decorator_Color), var(--fdGenericTag_Decorator_Color));
   background-color: var(--fdGenericTag_Background_Color);
 
-  &__icon[class*=sap-icon] {
+  &__icon[class*="sap-icon"] {
     @include fd-flex-center();
 
     font-size: 1rem;
@@ -130,14 +132,14 @@ $block: #{$fd-namespace}-generic-tag;
 
   @each $type, $color in $fd-generic-tag-colors {
     &.#{$block}--#{$type} {
-      --fdGenericTag_Value_Color: #{map_get($color, "value")};
-      --fdGenericTag_Icon_Color: #{map_get($color, "icon")};
-      --fdGenericTag_Decorator_Color: #{map_get($color, "decorator")};
-      --fdGenericTag_Background_Color: #{map_get($color, "background")};
+      --fdGenericTag_Value_Color: #{map.get($color, "value")};
+      --fdGenericTag_Icon_Color: #{map.get($color, "icon")};
+      --fdGenericTag_Decorator_Color: #{map.get($color, "decorator")};
+      --fdGenericTag_Background_Color: #{map.get($color, "background")};
 
       @include fd-hover() {
-        --fdGenericTag_Value_Color: #{map_get($color, "value-hover")};
-        --fdGenericTag_Icon_Color: #{map_get($color, "icon-hover")};
+        --fdGenericTag_Value_Color: #{map.get($color, "value-hover")};
+        --fdGenericTag_Icon_Color: #{map.get($color, "icon-hover")};
         --fdGenericTag_Background_Color: var(--sapList_Hover_Background);
         --fdGenericTag_Name_Color: var(--fdGenericTag_Name_Color_Hover);
       }

@@ -1,6 +1,8 @@
+@use "sass:map";
+
 @import "../mixins/mixins";
 @import "../avatar-variables";
-@import "../avatar.scss";
+@import "../avatar";
 
 $block: #{$fd-namespace}-avatar;
 

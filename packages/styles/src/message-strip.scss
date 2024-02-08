@@ -1,3 +1,5 @@
+@use "sass:map";
+
 @import "./new-settings";
 @import "./mixins";
 @import "./avatar-variables";
@@ -176,7 +178,7 @@ $block: #{$fd-namespace}-message-strip;
     color: var(--fdMessageStrip_Icon_Color);
     top: var(--fdMessageStrip_Vertical_Padding);
 
-    [class*=sap-icon] {
+    [class*="sap-icon"] {
       @include fd-flex-center();
       @include fd-set-width(1rem);
       @include fd-set-height(1rem);
@@ -231,10 +233,10 @@ $block: #{$fd-namespace}-message-strip;
 
   @each $set-name, $color-set in $fd-avatar-indication-colors {
     &--indication-color-#{$set-name} {
-      --fdMessageStrip_Icon_Color: #{map_get($color-set, "text-color")};
-      --fdMessageStrip_Text_Color: #{map_get($color-set, "text-color")};
-      --fdMessageStrip_Border_Color: #{map_get($color-set, "border-color")};
-      --fdMessageStrip_Background_Color: #{map_get($color-set, "background-color")};
+      --fdMessageStrip_Icon_Color: #{map.get($color-set, "text-color")};
+      --fdMessageStrip_Text_Color: #{map.get($color-set, "text-color")};
+      --fdMessageStrip_Border_Color: #{map.get($color-set, "border-color")};
+      --fdMessageStrip_Background_Color: #{map.get($color-set, "background-color")};
     }
   }
 }

@@ -1,3 +1,5 @@
+@use "sass:map";
+
 @import "./new-settings";
 @import "./mixins";
 
@@ -36,8 +38,7 @@ $floating-footer: #{$fd-namespace}-bar--floating-footer;
   background: var(--fdBar_Background);
   padding-inline: var(--fdBar_Padding_X);
   border-radius: var(--fdBar_Border_Radius);
-  padding-block-start: var(--fdBar_Padding_Top);
-  padding-block-end: var(--fdBar_Padding_Bottom);
+  padding-block: var(--fdBar_Padding_Top) var(--fdBar_Padding_Bottom);
 
   .#{$block}__header {
     font-size: var(--sapFontHeader5Size);
@@ -115,7 +116,7 @@ $floating-footer: #{$fd-namespace}-bar--floating-footer;
 
   &--floating-footer {
     --fdBar_Shadow: var(--sapContent_Shadow1);
-    --fdBar_Z_Index: map-get($fd-z-index-levels, "top");
+    --fdBar_Z_Index: map.get($fd-z-index-levels, "top");
     --fdBar_Background: var(--sapPageFooter_Background);
     --fdBar_Border_Radius: var(--sapElement_BorderCornerRadius);
 

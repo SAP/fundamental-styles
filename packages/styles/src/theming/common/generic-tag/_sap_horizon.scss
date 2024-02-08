@@ -1,3 +1,5 @@
+@use "sass:map";
+
 :root {
   --fdGenericTag_Spacing_Outline_Offset: 0;
   --fdGenericTag_Icon_Color_Hover_Error: var(--sapNegativeElementColor);

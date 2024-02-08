@@ -1,9 +1,10 @@
+@use "sass:map";
+
 @import "./new-settings";
 @import "./functions";
 @import "./mixins";
 
 $block: #{$fd-namespace}-object-status;
-
 $color-states: (
   "positive": (
     "color": var(--sapPositiveTextColor),
@@ -36,7 +37,6 @@ $color-states: (
     "iconFocusColor": var(--fdObjectStatus_Neutral_IconColor_Focus),
   )
 );
-
 $color-accents: (
   "1": (
     "color": var(--sapIndicationColor_1),
@@ -79,7 +79,6 @@ $color-accents: (
     "focus": var(--fdObjectStatus_Accent_Color_8_Focus)
   )
 );
-
 $inverted-color-states: (
   "neutral": (
     "regular": (
@@ -196,7 +195,6 @@ $inverted-color-states: (
     )
   ),
 );
-
 $inverted-color-accents: (
   "1": (
     "regular": (
@@ -419,7 +417,6 @@ $inverted-color-accents: (
     )
   ),
 );
-
 $inverted-color-accents-b: (
   "1b": (
     "regular": (
@@ -653,32 +650,32 @@ $inverted-color-accents-b: (
 
 // STATES FOR INVERTED OBJECT STATUS
 @mixin inverted-object-states($variablesSet) {
-  --fdObjectStatus_Text_Color: #{map_deep_get($variablesSet, "regular", "color")};
-  --fdObjectStatus_Icon_Color: #{map_deep_get($variablesSet, "regular", "color")};
-  --fdObjectStatus_Background_Color: #{map_deep_get($variablesSet, "regular", "background")};
-  --fdObjectStatus_Border_Color: #{map_deep_get($variablesSet, "regular", "borderColor")};
+  --fdObjectStatus_Text_Color: #{map-deep-get($variablesSet, "regular", "color")};
+  --fdObjectStatus_Icon_Color: #{map-deep-get($variablesSet, "regular", "color")};
+  --fdObjectStatus_Background_Color: #{map-deep-get($variablesSet, "regular", "background")};
+  --fdObjectStatus_Border_Color: #{map-deep-get($variablesSet, "regular", "borderColor")};
 
   &:hover,
   &:active,
   &:visited {
-    --fdObjectStatus_Text_Color: #{map_deep_get($variablesSet, "regular", "color")};
-    --fdObjectStatus_Icon_Color: #{map_deep_get($variablesSet, "regular", "color")};
-    --fdObjectStatus_Background_Color: #{map_deep_get($variablesSet, "regular", "background")};
+    --fdObjectStatus_Text_Color: #{map-deep-get($variablesSet, "regular", "color")};
+    --fdObjectStatus_Icon_Color: #{map-deep-get($variablesSet, "regular", "color")};
+    --fdObjectStatus_Background_Color: #{map-deep-get($variablesSet, "regular", "background")};
   }
 }
 
 // INTERACTION STATES FOR INVERTED OBJECT STATUS
 @mixin inverted-object-interaction-states($variablesSet) {
-  --fdObjectStatus_Text_Color: #{map_deep_get($variablesSet, "regular", "color")};
-  --fdObjectStatus_Icon_Color: #{map_deep_get($variablesSet, "regular", "color")};
-  --fdObjectStatus_Background_Color: #{map_deep_get($variablesSet, "regular", "background")};
-  --fdObjectStatus_Border_Color: #{map_deep_get($variablesSet, "regular", "borderColor")};
+  --fdObjectStatus_Text_Color: #{map-deep-get($variablesSet, "regular", "color")};
+  --fdObjectStatus_Icon_Color: #{map-deep-get($variablesSet, "regular", "color")};
+  --fdObjectStatus_Background_Color: #{map-deep-get($variablesSet, "regular", "background")};
+  --fdObjectStatus_Border_Color: #{map-deep-get($variablesSet, "regular", "borderColor")};
 
   &:visited {
-    --fdObjectStatus_Text_Color: #{map_deep_get($variablesSet, "visited", "color")};
-    --fdObjectStatus_Icon_Color: #{map_deep_get($variablesSet, "visited", "color")};
-    --fdObjectStatus_Background_Color: #{map_deep_get($variablesSet, "visited", "background")};
-    --fdObjectStatus_Border_Color: #{map_deep_get($variablesSet, "visited", "borderColor")};
+    --fdObjectStatus_Text_Color: #{map-deep-get($variablesSet, "visited", "color")};
+    --fdObjectStatus_Icon_Color: #{map-deep-get($variablesSet, "visited", "color")};
+    --fdObjectStatus_Background_Color: #{map-deep-get($variablesSet, "visited", "background")};
+    --fdObjectStatus_Border_Color: #{map-deep-get($variablesSet, "visited", "borderColor")};
   }
 
   @include fd-focus() {
@@ -689,17 +686,17 @@ $inverted-color-accents-b: (
   }
 
   @include fd-hover() {
-    --fdObjectStatus_Text_Color: #{map_deep_get($variablesSet, "hover", "color")};
-    --fdObjectStatus_Icon_Color: #{map_deep_get($variablesSet, "hover", "color")};
-    --fdObjectStatus_Background_Color: #{map_deep_get($variablesSet, "hover", "background")};
-    --fdObjectStatus_Border_Color: #{map_deep_get($variablesSet, "hover", "borderColor")};
+    --fdObjectStatus_Text_Color: #{map-deep-get($variablesSet, "hover", "color")};
+    --fdObjectStatus_Icon_Color: #{map-deep-get($variablesSet, "hover", "color")};
+    --fdObjectStatus_Background_Color: #{map-deep-get($variablesSet, "hover", "background")};
+    --fdObjectStatus_Border_Color: #{map-deep-get($variablesSet, "hover", "borderColor")};
   }
 
   @include fd-active() {
-    --fdObjectStatus_Text_Color: #{map_deep_get($variablesSet, "active", "color")};
-    --fdObjectStatus_Icon_Color: #{map_deep_get($variablesSet, "active", "iconColor")};
-    --fdObjectStatus_Background_Color: #{map_deep_get($variablesSet, "active", "background")};
-    --fdObjectStatus_Border_Color: #{map_deep_get($variablesSet, "active", "borderColor")};
+    --fdObjectStatus_Text_Color: #{map-deep-get($variablesSet, "active", "color")};
+    --fdObjectStatus_Icon_Color: #{map-deep-get($variablesSet, "active", "iconColor")};
+    --fdObjectStatus_Background_Color: #{map-deep-get($variablesSet, "active", "background")};
+    --fdObjectStatus_Border_Color: #{map-deep-get($variablesSet, "active", "borderColor")};
   }
 }
 
@@ -766,18 +763,18 @@ $inverted-color-accents-b: (
 
   @each $set-name, $color-set in $color-states {
     &.#{$block}--#{$set-name} {
-      --fdObjectStatus_Text_Color: var(--fdElementTextColor, #{map_get($color-set, "color")});
-      --fdObjectStatus_Icon_Color: var(--fdElementIconColor, #{map_get($color-set, "iconColor")});
+      --fdObjectStatus_Text_Color: var(--fdElementTextColor, #{map.get($color-set, "color")});
+      --fdObjectStatus_Icon_Color: var(--fdElementIconColor, #{map.get($color-set, "iconColor")});
 
       &:visited {
-        --fdObjectStatus_Text_Color: #{map_get($color-set, "visited")};
-        --fdObjectStatus_Icon_Color: #{map_get($color-set, "visited")};
+        --fdObjectStatus_Text_Color: #{map.get($color-set, "visited")};
+        --fdObjectStatus_Icon_Color: #{map.get($color-set, "visited")};
       }
 
       @include fd-focus() {
         &:not(:active):not(.#{$block}--inverted) {
-          --fdObjectStatus_Text_Color: #{map_get($color-set, "focusColor")};
-          --fdObjectStatus_Icon_Color: #{map_get($color-set, "iconFocusColor")};
+          --fdObjectStatus_Text_Color: #{map.get($color-set, "focusColor")};
+          --fdObjectStatus_Icon_Color: #{map.get($color-set, "iconFocusColor")};
         }
       }
     }
@@ -785,18 +782,18 @@ $inverted-color-accents-b: (
 
   @each $set-name, $color-set in $color-accents {
     &.#{$block}--indication-#{$set-name} {
-      --fdObjectStatus_Text_Color: #{map_get($color-set, "color")};
-      --fdObjectStatus_Icon_Color: #{map_get($color-set, "color")};
+      --fdObjectStatus_Text_Color: #{map.get($color-set, "color")};
+      --fdObjectStatus_Icon_Color: #{map.get($color-set, "color")};
 
       &:visited {
-        --fdObjectStatus_Text_Color: #{map_get($color-set, "visited")};
-        --fdObjectStatus_Icon_Color: #{map_get($color-set, "visited")};
+        --fdObjectStatus_Text_Color: #{map.get($color-set, "visited")};
+        --fdObjectStatus_Icon_Color: #{map.get($color-set, "visited")};
       }
 
       @include fd-focus() {
         &:not(:active):not(.#{$block}--inverted) {
-          --fdObjectStatus_Text_Color: #{map_get($color-set, "focus")};
-          --fdObjectStatus_Icon_Color: #{map_get($color-set, "focus")};
+          --fdObjectStatus_Text_Color: #{map.get($color-set, "focus")};
+          --fdObjectStatus_Icon_Color: #{map.get($color-set, "focus")};
         }
       }
     }

@@ -1,3 +1,5 @@
+@use "sass:map";
+
 :root {
   /** Info Label */
   --fdInfo_Label_Border_Color1: var(--sapGroup_ContentBorderColor);

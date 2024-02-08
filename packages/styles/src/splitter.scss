@@ -1,3 +1,5 @@
+@use "sass:map";
+
 @import './new-settings';
 @import "mixins/mixins";
 
@@ -309,7 +311,7 @@ $block: #{$fd-namespace}-splitter;
 
         font-size: 0.75rem;
         line-height: 0.75rem;
-        font-family: "SAP-icons-TNT";
+        font-family: SAP-icons-TNT;
         content: var(--fdSplitter_Pagination_Dot_Value);
       }
     }

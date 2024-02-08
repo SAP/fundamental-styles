@@ -1,3 +1,5 @@
+@use "sass:map";
+
 :root {
   --fdVariantManagementHeadingColor: var(--sapButton_TextColor);
   --fdVariantManagementHeadingHoverColor: var(--sapHighlightColor);

@@ -1,3 +1,5 @@
+@use "sass:map";
+
 :root {
   --fdTable_Header_Cell_Hover_Background: var(--sapList_Hover_Background);
   --fdTable_Header_Cell_Active_Background: var(--sapList_Active_Background);

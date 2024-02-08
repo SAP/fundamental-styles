@@ -1,10 +1,8 @@
+@use "sass:map";
 @use "sass:math";
 
-// https://github.com/stylelint/stylelint/issues/5133#issuecomment-834145196
-/* stylelint-disable */
 @import './new-settings';
 @import './mixins';
-/* stylelint-enable */
 
 $block: #{$fd-namespace}-fixed-card-layout;
 
@@ -20,8 +18,7 @@ $block: #{$fd-namespace}-fixed-card-layout;
     @include fd-set-margin-left(-$fd-card-margin);
 
     @include fd-flex-justify-content-start() {
-      flex-wrap: wrap;
-      flex-direction: column;
+      flex-flow: column wrap;
     }
 
     margin-top: -#{$fd-card-margin};

@@ -1,3 +1,5 @@
+@use "sass:map";
+
 :root {
   --fdVariantManagementHeadingColor: var(--sapLinkColor);
   --fdVariantManagementHeadingHoverColor: var(--sapLink_Hover_Color);
