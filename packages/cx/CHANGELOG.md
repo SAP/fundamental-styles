@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.33.0-rc.5](https://github.com/SAP/fundamental-styles/compare/v0.34.0-rc.4...v0.33.0-rc.5) (2024-02-08)
+
+**Note:** Version bump only for package @fundamental-styles/cx
+
+
+
+
+
 # [0.34.0-rc.4](https://github.com/SAP/fundamental-styles/compare/v0.34.0-rc.3...v0.34.0-rc.4) (2024-02-07)
 
 **Note:** Version bump only for package @fundamental-styles/cx
