@@ -5,11 +5,9 @@ const packagePaths = core.getInput('packagePaths').split(',').map(path => `./${p
 const isPrerelease = core.getInput('isPrerelease') !== 'false';
 const isHotfix = core.getInput('isHotfix') !== 'false';
 const npmToken = core.getInput('token');
-
-
 const fs = require('fs');
 
-const getTag = () => {
+const getNpmTag = () => {
     if (isPrerelease) return 'prerelease';
     if (isHotfix) return 'archive';
     return 'latest';
@@ -19,7 +17,7 @@ const publish = async ({ currentTryNumber = 1, packageJsonPath, tag, token, acce
     try {
         const result = await npmPublish({
             package: packageJsonPath,
-            dryRun: true,
+            dryRun: true, //TODO remove dryRun
             token,
             tag,
             access
@@ -41,7 +39,7 @@ const publish = async ({ currentTryNumber = 1, packageJsonPath, tag, token, acce
 };
 
 const run = async () => {
-    const tag = getTag();
+    const tag = getNpmTag();
     for (const packageJsonPath of packagePaths) {
         const packageJson = JSON.parse(fs.readFileSync(packageJsonPath, 'utf8'));
         await publish({
