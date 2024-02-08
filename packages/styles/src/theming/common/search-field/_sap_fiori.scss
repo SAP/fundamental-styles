@@ -1,3 +1,5 @@
+@use "sass:map";
+
 :root {
   --fdSearchField_Border_Radius: 0;
   --fdSearchField_Border_Color: var(--sapShell_InteractiveBorderColor);

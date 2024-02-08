@@ -1,3 +1,5 @@
+@use "sass:map";
+
 @import "./new-settings";
 @import "./mixins";
 
@@ -14,11 +16,9 @@
 $block: #{$fd-namespace}-slider;
 $handle-outline-offset: 0.0625rem;
 $handle-outline-width: 0.0625rem;
-
 $tick-wrapper-offset: calc((var(--fdSlider_Track_Height) - var(--fdSlider_Tick_Height)) / 2);
 $focus-range-size: calc(var(--fdSlider_Handle_Height) + 0.5rem);
 $focus-range-side-margin: calc(-1 * var(--fdSlider_Handle_Height) / 1.1);
-
 $slider-side-padding: calc((var(--fdSlider_Handle_Width) * 0.5) + #{$handle-outline-offset} + #{$handle-outline-width});
 
 .#{$block} {
@@ -71,7 +71,7 @@ $slider-side-padding: calc((var(--fdSlider_Handle_Width) * 0.5) + #{$handle-outl
     }
   }
 
-  &:not(&--vertical):not(&--range) {
+  &:not(&--vertical, &--range) {
     .#{$block}__inner {
       @include fd-rtl() {
         &::before {
@@ -192,7 +192,7 @@ $slider-side-padding: calc((var(--fdSlider_Handle_Width) * 0.5) + #{$handle-outl
       content: '\e29c';
       line-height: 1;
       font-size: 0.875rem;
-      font-family: "SAP-icons";
+      font-family: SAP-icons;
       color: var(--sapContent_Selected_ForegroundColor);
     }
 
@@ -382,14 +382,11 @@ $slider-side-padding: calc((var(--fdSlider_Handle_Width) * 0.5) + #{$handle-outl
         }
 
         &__track-focus-range {
-          top: 0;
-          bottom: 0;
-          left: 50%;
+          inset: 0 auto 0 50%;
           transform: translateX(-50%);
           width: $focus-range-size;
           height: auto;
           margin: $focus-range-side-margin 0;
-          right: auto;
         }
       }
     }

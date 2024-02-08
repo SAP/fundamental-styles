@@ -1,3 +1,5 @@
+@use "sass:map";
+
 @import './new-settings';
 @import './mixins';
 @import './mixins/button/button-helper';
@@ -8,7 +10,6 @@ $block: #{$fd-namespace}-tile;
 $fd-tile-height: 11rem !default;
 $fd-tile-width: 11rem !default;
 $fd-tile-double-width: 22.5rem !default;
-
 $fd-tile-height-s: 9.25rem !default;
 $fd-tile-width-s: 9.25rem !default;
 $fd-tile-double-width-s: 19rem !default;
@@ -17,7 +18,6 @@ $fd-tile-double-width-s: 19rem !default;
 $fd-tile-padding: calc(1rem - 0.0625rem) !default;
 $fd-tile-small-padding: calc(0.5rem - 0.0625rem) !default;
 $fd-tile-inner-padding: 0.25rem !default;
-
 $fd-tile-border-radius: var(--sapElement_BorderCornerRadius) !default;
 
 // REFRESH
@@ -59,7 +59,7 @@ $fd-line-tile-badge-horizontal-spacing: 0.375rem !default;
   height: $height;
   min-height: $height;
 
-  @if ($height == 'auto') {
+  @if  $height == 'auto' {
     max-height: none;
   } @else {
     max-height: $height;
@@ -70,7 +70,7 @@ $fd-line-tile-badge-horizontal-spacing: 0.375rem !default;
   width: $width;
   min-width: $width;
 
-  @if ($width == 'auto') {
+  @if  $width == 'auto' {
     max-width: none;
   } @else {
     max-width: $width;
@@ -94,10 +94,7 @@ $fd-line-tile-badge-horizontal-spacing: 0.375rem !default;
       display: block;
       border: var(--sapContent_FocusWidth) var(--sapContent_FocusStyle) var(--sapContent_FocusColor);
       border-radius: $fd-tile-border-radius;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
+      inset: 0;
       z-index: 3;
     }
   }
@@ -105,10 +102,7 @@ $fd-line-tile-badge-horizontal-spacing: 0.375rem !default;
 
 @mixin reset-position-absolute {
   position: relative;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
+  inset: 0;
 }
 
 .#{$block} {
@@ -404,10 +398,7 @@ $fd-line-tile-badge-horizontal-spacing: 0.375rem !default;
       height: 100%;
       width: 100%;
       position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
+      inset: 0;
       background-size: cover;
       border-radius: $fd-tile-border-radius;
 
@@ -578,10 +569,7 @@ $fd-line-tile-badge-horizontal-spacing: 0.375rem !default;
       position: absolute;
       width: 100%;
       height: 100%;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
+      inset: 0;
       background: var(--sapTile_Background);
       border-radius: $fd-tile-border-radius;
       opacity: 0.7;
@@ -719,7 +707,7 @@ $fd-line-tile-badge-horizontal-spacing: 0.375rem !default;
               color-stop(7%, #000000),
               to(#000000)
             );
-          -webkit-mask-image:
+          mask-image:
             -webkit-gradient(
               linear,
               right top,
@@ -739,7 +727,7 @@ $fd-line-tile-badge-horizontal-spacing: 0.375rem !default;
                 color-stop(7%, #000000),
                 to(#000000)
               );
-            -webkit-mask-image:
+            mask-image:
               -webkit-gradient(
                 linear,
                 left top,

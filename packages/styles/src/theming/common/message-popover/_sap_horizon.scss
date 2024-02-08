@@ -1,24 +1,26 @@
+@use "sass:map";
+
 :root {
   --fdMessagePopover_Trigger_Font_Weight: var(--sapButton_Emphasized_FontWeight);
   --fdMessagePopover_Trigger_Border_Width: var(--sapButton_BorderWidth);
   --fdMessagePopover_Active_Focus_Outline_Color: var(--sapContent_FocusColor);
 
-  // Critical
+  /* Critical */
   --fdMessagePopover_Critical_Regular_Text_Shadow: var(--sapContent_ContrastTextShadow);
   --fdMessagePopover_Critical_Hover_Text_Shadow: none;
   --fdMessagePopover_Critical_Active_Text_Shadow: none;
 
-  // Success
+  /* Success */
   --fdMessagePopover_Success_Regular_Text_Shadow: var(--sapContent_ContrastTextShadow);
   --fdMessagePopover_Success_Hover_Text_Shadow: none;
   --fdMessagePopover_Success_Active_Text_Shadow: none;
 
-  // Negative
+  /* Negative */
   --fdMessagePopover_Negative_Regular_Text_Shadow: var(--sapContent_ContrastTextShadow);
   --fdMessagePopover_Negative_Hover_Text_Shadow: none;
   --fdMessagePopover_Negative_Active_Text_Shadow: none;
 
-  // Information
+  /* Information */
   --fdMessagePopover_Information_Focus_Outline_Color: var(--sapContent_FocusColor);
   --fdMessagePopover_Information_Regular_Text_Shadow: var(--sapContent_TextShadow);
   --fdMessagePopover_Information_Regular_Background_Color: var(--sapButton_Information_Background);

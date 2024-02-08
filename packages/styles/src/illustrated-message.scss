@@ -1,3 +1,5 @@
+@use "sass:map";
+
 @import './new-settings';
 @import 'mixins/mixins';
 
@@ -86,7 +88,7 @@ $block: #{$fd-namespace}-illustrated-message;
     margin: var(--actionsMargin);
   }
 
-  @media screen and (max-width: 599px) {
+  @media screen and (width <= 599px) {
     --illustratedMessageMaxWidth: 20rem;
     --illustrationW: 15rem;
     --illustrationH: 11.25rem;
@@ -123,8 +125,7 @@ $block: #{$fd-namespace}-illustrated-message;
     --actionsMargin: 0.25rem 0;
     --illustrationMarginRight: 0.25rem;
 
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-flow: row wrap;
 
     .#{$block}__illustration {
       @include fd-set-margin-right(var(--illustrationMarginRight));

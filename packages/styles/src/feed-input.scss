@@ -1,3 +1,5 @@
+@use "sass:map";
+
 @import "./new-settings";
 @import "./mixins";
 
@@ -59,10 +61,7 @@ $block: #{$fd-namespace}-feed-input;
 
   // It's needed to have stronger selector to override fd-button styles
   .#{$block}__submit-button {
-    margin-top: auto;
-    margin-bottom: 0.375rem;
-    margin-left: $fd-feed-input-btn-margin-start;
-    margin-right: $fd-feed-input-btn-margin-end;
+    margin: auto $fd-feed-input-btn-margin-end 0.375rem $fd-feed-input-btn-margin-start;
 
     @include fd-rtl() {
       margin-left: $fd-feed-input-btn-margin-end;
@@ -71,7 +70,7 @@ $block: #{$fd-namespace}-feed-input;
     }
   }
 
-  @media (min-width: 25rem) {
+  @media (width >= 25rem) {
     margin-top: 1rem;
     margin-bottom: 1rem;
 

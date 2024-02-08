@@ -1,3 +1,5 @@
+@use "sass:map";
+
 :root {
   --fdToolHeader_Border_Color: transparent;
   --sapToolHeader_Product_Name_Color: var(--sapShell_TextColor);

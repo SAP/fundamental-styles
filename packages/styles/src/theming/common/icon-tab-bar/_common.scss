@@ -1,3 +1,5 @@
+@use "sass:map";
+
 :root {
   --fdIconTabBar_Overflow_Button_Background: var(--sapButton_Background);
   --fdIconTabBar_Overflow_Button_Border_Color: var(--sapButton_BorderColor);

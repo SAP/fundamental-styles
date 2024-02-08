@@ -1,9 +1,10 @@
+@use "sass:map";
+
 @import "./new-settings";
 @import "./mixins";
 
 $block: #{$fd-namespace}-carousel;
 $blockButton: #{$fd-namespace}-carousel__button;
-
 $fd-carousel-button-content-offset: 0.5rem !default;
 
 .#{$block} {
@@ -65,7 +66,7 @@ $fd-carousel-button-content-offset: 0.5rem !default;
         transform: translateX(-50%);
 
         @include fd-rtl() {
-          & > [class*=sap-icon] {
+          & > [class*="sap-icon"] {
             transform: rotate(0deg);
           }
         }
@@ -126,7 +127,7 @@ $fd-carousel-button-content-offset: 0.5rem !default;
     touch-action: pan-x;
     user-select: none;
     -webkit-user-drag: none;
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-tap-highlight-color: rgb(0 0 0 / 0%);
   }
 
   &__item {
@@ -232,7 +233,7 @@ $fd-carousel-button-content-offset: 0.5rem !default;
     }
 
     @include fd-rtl() {
-      & > [class*=sap-icon] {
+      & > [class*="sap-icon"] {
         transform: rotate(180deg);
       }
     }

@@ -1,42 +1,44 @@
+@use "sass:map";
+
 @import "./sap_horizon";
 
 :root {
-  // Default
+  /* Default */
   --fdAvatar_BackgroundColor: var(--sapAvatar_6_Background);
   --fdAvatar_Border_Color: var(--sapAvatar_6_BorderColor);
   --fdAvatar_Text_Shadow: none;
   --fdAvatar_Color: var(--sapAvatar_6_TextColor);
 
-  // Tile
+  /* Tile */
   --fdAvatar_Tile_BackgroundColor: var(--sapTile_Background);
   --fdAvatar_Tile_BorderColor: var(--sapGroup_ContentBorderColor);
   --fdAvatar_Tile_TextColor: var(--sapTile_IconColor);
   --fdAvatar_Tile_BackgroundColor_Hover: var(--sapActiveColor);
 
-  // Placeholder
+  /* Placeholder */
   --fdAvatar_Placeholder_BorderColor: var(--sapGroup_ContentBorderColor);
   --fdAvatar_Placeholder_BackgroundColor_Hover: var(--sapActiveColor);
 
-  // Transparent
+  /* Transparent */
   --fdAvatar_Transparent_BorderColor: var(--sapGroup_ContentBorderColor);
   --fdAvatar_Transparent_BackgroundColor: var(--sapBackgroundColor);
   --fdAvatar_Transparent_BackgroundColor_Hover: var(--sapActiveColor);
 
-  // Overflow
+  /* Overflow */
   --fdAvatar_Overflow_BorderColor: var(--sapButton_BorderColor);
   --fdAvatar_Overflow_BackgroundColor: var(--sapButton_Background);
   --fdAvatar_Overflow_TextColor: var(--sapButton_TextColor);
   --fdAvatar_Overflow_Border_Width: 0.125rem;
 
-  // Thumbnail
+  /* Thumbnail */
   --fdAvatar_Thumbnail_BorderColor: var(--sapGroup_ContentBorderColor);
 
-  // Focus
+  /* Focus */
   --fdAvatar_Focus_Outline_Offset: -0.3125rem;
   --fdAvatar_Focus_Outline_Radius: 0;
   --fdAvatar_Focus_Outline_Radius_Circle: 0;
 
-  // Accent Colors
+  /* Accent Colors */
   --fdAvatar_Accent_Color_1: var(--sapAvatar_1_Background);
   --fdAvatar_Accent_Color_2: var(--sapAvatar_2_Background);
   --fdAvatar_Accent_Color_3: var(--sapAvatar_3_Background);
@@ -68,7 +70,7 @@
   --fdAvatar_Accent_Color_9_Border: var(--sapAvatar_9_BorderColor);
   --fdAvatar_Accent_Color_10_Border: var(--sapAvatar_10_BorderColor);
 
-  // Accent Colors Hover
+  /* Accent Colors Hover */
   --fdAvatar_Accent_Color_Hover_1: var(--sapActiveColor);
   --fdAvatar_Accent_Color_Hover_2: var(--sapActiveColor);
   --fdAvatar_Accent_Color_Hover_3: var(--sapActiveColor);

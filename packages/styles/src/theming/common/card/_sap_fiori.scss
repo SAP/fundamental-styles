@@ -1,3 +1,5 @@
+@use "sass:map";
+
 :root {
   --fdCard_Background_Color: var(--sapTile_Background);
   --fdCard_Box_Shadow: var(--sapContent_Shadow0);

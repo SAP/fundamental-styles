@@ -1,3 +1,5 @@
+@use "sass:map";
+
 :root {
   --fdPanel_Border_Radius: var(--sapElement_BorderCornerRadius);
   --fdPanel_Title_Font_Size: var(--sapGroup_Title_FontSize);

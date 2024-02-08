@@ -1,3 +1,5 @@
+@use "sass:map";
+
 @import "common-variables";
 
 @mixin sap-reset {
@@ -32,14 +34,10 @@
 @mixin sap-transition($property: all, $duration: 150ms, $animation: ease-in) {
   $fn-transition: $property $duration $animation;
 
-  -webkit-transition: $fn-transition;
-  -moz-transition: $fn-transition;
-  -ms-transition: $fn-transition;
-  -o-transition: $fn-transition;
   transition: $fn-transition;
 }
 
-// States
+/* States */
 @mixin sap-hover {
   &:hover,
   &.is-hover {
@@ -137,13 +135,17 @@
   }
 }
 
+/*
+@Todo Remove after visual testing
+
 @mixin sap-display() {
   &.is-display {
     @content;
   }
 }
+ */
 
-// Flex Helpers
+/* Flex Helpers */
 @mixin sap-flex($direction: row) {
   display: flex;
   flex-direction: $direction;
@@ -169,7 +171,7 @@
   @content;
 }
 
-// Set Paddings
+/* Set Paddings */
 @mixin sap-set-padding-left($left: 0) {
   padding-left: $left;
 
@@ -213,7 +215,7 @@
   padding-bottom: $value;
 }
 
-// Set position absolute
+/* Set position absolute */
 @mixin sap-set-position-right($right) {
   right: $right;
 
@@ -234,17 +236,11 @@
 
 @mixin sap-user-select() {
   user-select: none;
-  -ms-user-select: none;
-  -moz-user-select: none;
-  -webkit-user-select: none;
 }
 
 @mixin sap-set-top-right-bottom-left($top:0, $right:0, $bottom:0, $left:0) {
   position: absolute;
-  top: $top;
-  right: $right;
-  bottom: $bottom;
-  left: $left;
+  inset: $top $right $bottom $left;
 
   @include sap-rtl() {
     left: $right;
@@ -269,20 +265,17 @@
   height: $height;
 }
 
-// Display mixins
+/* Display mixins */
 @mixin sap-display($type: inline) {
   display: $type !important;
 
   @content;
 }
 
-// Position mixins
+/* Position mixins */
 @mixin sap-position($position, $top: null, $right: null, $bottom: null, $left: null) {
   position: $position;
-  top: $top;
-  right: $right;
-  bottom: $bottom;
-  left: $left;
+  inset: $top $right $bottom $left;
 
   @content;
 }
@@ -328,23 +321,15 @@
   @content;
 }
 
-// Border-radius
+/* Border-radius */
 @mixin sap-set-border-radius($value...) {
   $_value: $value;
 
-  @if (map-has-key($sap-corner-border-radius, #{$value})) {
-    $_value: map-get($sap-corner-border-radius, #{$value});
+  @if  map-has-key($sap-corner-border-radius, #{$value}) {
+    $_value: map.get($sap-corner-border-radius, #{$value});
   }
 
   border-radius: $_value;
-
-  @content;
-}
-
-// Flex
-@mixin sap-flex($direction: row) {
-  display: flex;
-  flex-direction: $direction;
 
   @content;
 }
@@ -372,13 +357,13 @@
   $_value: "";
 
   @if $value == "tiny" {
-    $_value: map_get($sap-flex-spacings, "tiny");
+    $_value: map.get($sap-flex-spacings, "tiny");
   } @else if $value == "small" {
-    $_value: map_get($sap-flex-spacings, "small");
+    $_value: map.get($sap-flex-spacings, "small");
   } @else if $value == "medium" {
-    $_value: map_get($sap-flex-spacings, "medium");
+    $_value: map.get($sap-flex-spacings, "medium");
   } @else if $value == large {
-    $_value: map_get($sap-flex-spacings, "large");
+    $_value: map.get($sap-flex-spacings, "large");
   } @else {
     $_value: $value;
   }
@@ -403,16 +388,6 @@
 @mixin sap-flex-wrap($type: nowrap, $direction: row) {
   @include sap-flex($direction) {
     flex-wrap: $type;
-  }
-
-  @content;
-}
-
-@mixin sap-flex-center($direction: row) {
-  @include sap-flex() {
-    align-items: center;
-    justify-content: center;
-    flex-direction: $direction;
   }
 
   @content;
@@ -448,7 +423,7 @@
   @content;
 }
 
-// Margins
+/* Margins */
 @mixin sap-set-margin-all($value: 0) {
   margin: $value;
 }
@@ -514,31 +489,28 @@
 }
 
 @mixin sap-set-equal-positions($value) {
-  top: $value;
-  right: $value;
-  bottom: $value;
-  left: $value;
+  inset: $value $value $value $value;
 }
 
 @mixin sap-margin($value, $side: '') {
   $_value: $value !important;
 
-  @if (map-has-key($sap-margins, #{$value})) {
-    $_value: map-get($sap-margins, #{$value}) !important;
+  @if  map-has-key($sap-margins, #{$value}) {
+    $_value: map.get($sap-margins, #{$value}) !important;
   }
 
-  @if ($side != '') {
-    @if ($side == top) {
+  @if  $side != '' {
+    @if  $side == top {
       @include sap-set-margin-top($_value);
-    } @else if($side == bottom) {
+    } @else if $side == bottom {
       @include sap-set-margin-bottom($_value);
-    } @else if($side == begin) {
+    } @else if $side == begin {
       @include sap-set-margin-begin($_value);
-    } @else if($side == end) {
+    } @else if $side == end {
       @include sap-set-margin-end($_value);
-    } @else if($side == x) {
+    } @else if $side == x {
       @include sap-set-margin-x-equal($_value);
-    } @else if($side == y) {
+    } @else if $side == y {
       @include sap-set-margin-y-equal($_value);
     }
   } @else {
@@ -548,7 +520,7 @@
 
 @mixin sap-margin-responsive() {
   @include sap-media-sm() {
-    margin: 0 0 1rem 0 !important;
+    margin: 0 0 1rem !important;
   }
 
   @include sap-media-md() {
@@ -564,7 +536,7 @@
   }
 }
 
-// Media queries
+/* Media queries */
 @mixin sap-media-sm() {
   @media (max-width: #{$small - $offset}) {
     @content;
@@ -631,7 +603,7 @@
   }
 }
 
-// Container Queries
+/* Container Queries */
 @mixin sap-container-type($type: normal) {
   container-type: $type;
   @content;
@@ -673,7 +645,7 @@
   }
 }
 
-// Paddings
+/* Paddings */
 @mixin sap-set-padding-all($value: 0) {
   padding: $value;
 }
@@ -732,22 +704,22 @@
 @mixin sap-padding($value: 1rem, $side: '') {
   $_value: $value !important;
 
-  @if (map-has-key($sap-paddings, #{$value})) {
-    $_value: map-get($sap-paddings, #{$value}) !important;
+  @if  map-has-key($sap-paddings, #{$value}) {
+    $_value: map.get($sap-paddings, #{$value}) !important;
   }
 
-  @if ($side != '') {
-    @if ($side == top) {
+  @if  $side != '' {
+    @if  $side == top {
       @include sap-set-padding-top($_value);
-    } @else if($side == bottom) {
+    } @else if $side == bottom {
       @include sap-set-padding-bottom($_value);
-    } @else if($side == begin) {
+    } @else if $side == begin {
       @include sap-set-padding-begin($_value);
-    } @else if($side == end) {
+    } @else if $side == end {
       @include sap-set-padding-end($_value);
-    } @else if($side == x) {
+    } @else if $side == x {
       @include sap-set-padding-x-equal($_value);
-    } @else if($side == y) {
+    } @else if $side == y {
       @include sap-set-padding-y-equal($_value);
     }
   } @else {
@@ -799,17 +771,17 @@
   }
 }
 
-// Content paddings
+/* Content paddings */
 @mixin sap-set-content-paddings($type, $value) {
-  @if ($type == 'home') {
-    padding-left: map-get($sap-content-paddings-home, $value) !important;
-    padding-right: map-get($sap-content-paddings-home, $value) !important;
-  } @else if ($type == 'container') {
-    padding-left: map-get($sap-content-paddings-container, $value) !important;
-    padding-right: map-get($sap-content-paddings-container, $value) !important;
+  @if  $type == 'home' {
+    padding-left: map.get($sap-content-paddings-home, $value) !important;
+    padding-right: map.get($sap-content-paddings-home, $value) !important;
+  } @else if $type == 'container' {
+    padding-left: map.get($sap-content-paddings-container, $value) !important;
+    padding-right: map.get($sap-content-paddings-container, $value) !important;
   } @else {
-    padding-left: map-get($sap-content-paddings-nav, $value) !important;
-    padding-right: map-get($sap-content-paddings-nav, $value) !important;
+    padding-left: map.get($sap-content-paddings-nav, $value) !important;
+    padding-right: map.get($sap-content-paddings-nav, $value) !important;
   }
 }
 
@@ -832,14 +804,14 @@
 }
 
 @mixin sap-content-paddings($type: home, $size: default) {
-  @if ($size == default) {
+  @if  $size == default {
     @include sap-set-dynamic-content-paddings($type);
   } @else {
     @include sap-set-content-paddings($type, $size);
   }
 }
 
-// Shadows
+/* Shadows */
 @mixin sap-set-box-shadow($value) {
   box-shadow: $value;
 }
@@ -849,10 +821,10 @@
 }
 
 @mixin sap-shadow($type) {
-  @if (map-has-key($sap-box-shadow-types , #{$type} )) {
-    @include sap-set-box-shadow(map-get($sap-box-shadow-types, #{$type}));
-  } @else if (map-has-key($sap-text-shadow-types , #{$type} )) {
-    @include sap-set-text-shadow(map-get($sap-text-shadow-types, #{$type}));
+  @if  map-has-key($sap-box-shadow-types , #{$type} ) {
+    @include sap-set-box-shadow(map.get($sap-box-shadow-types, #{$type}));
+  } @else if map-has-key($sap-text-shadow-types , #{$type} ) {
+    @include sap-set-text-shadow(map.get($sap-text-shadow-types, #{$type}));
   } @else {
     @warn "Unknown type of shadow";
   }
@@ -872,77 +844,77 @@
   @content;
 }
 
-// Font-family
+/* Font-family */
 @mixin sap-font-family($type) {
-  @if ($type == "regular") {
-    font-family: map-get($sap-font-types, "regular");
-  } @else if ($type == "light") {
-    font-family: map-get($sap-font-types, "light");
-  } @else if ($type == "bold") {
-    font-family: map-get($sap-font-types, "bold");
-  } @else if ($type == "semibold") {
-    font-family: map-get($sap-font-types, "semibold");
-  } @else if ($type == "semibold-duplex") {
-    font-family: map-get($sap-font-types, "semibold-duplex");
-  } @else if ($type == "monospaced-regular") {
-    font-family: map-get($sap-font-types, "monospaced-regular");
-  } @else if ($type == "monospaced-bold") {
-    font-family: map-get($sap-font-types, "monospaced-bold");
-  } @else if ($type == "black") {
-    font-family: map-get($sap-font-types, "black");
-  } @else if ($type == "header") {
-    font-family: map-get($sap-font-types, "header");
+  @if  $type == "regular" {
+    font-family: map.get($sap-font-types, "regular");
+  } @else if $type == "light" {
+    font-family: map.get($sap-font-types, "light");
+  } @else if $type == "bold" {
+    font-family: map.get($sap-font-types, "bold");
+  } @else if $type == "semibold" {
+    font-family: map.get($sap-font-types, "semibold");
+  } @else if $type == "semibold-duplex" {
+    font-family: map.get($sap-font-types, "semibold-duplex");
+  } @else if $type == "monospaced-regular" {
+    font-family: map.get($sap-font-types, "monospaced-regular");
+  } @else if $type == "monospaced-bold" {
+    font-family: map.get($sap-font-types, "monospaced-bold");
+  } @else if $type == "black" {
+    font-family: map.get($sap-font-types, "black");
+  } @else if $type == "header" {
+    font-family: map.get($sap-font-types, "header");
   } @else {
     font-family: $type;
   }
 }
 
-// Font-size
+/* Font-size */
 @mixin sap-font-size($size) {
-  @if ($size == "header-6") {
-    font-size: map-get($sap-font-sizes, "header-6");
-  } @else if ($size == "header-5") {
-    font-size: map-get($sap-font-sizes, "header-5");
-  } @else if ($size == "header-4") {
-    font-size: map-get($sap-font-sizes, "header-4");
-  } @else if ($size == "header-3") {
-    font-size: map-get($sap-font-sizes, "header-3");
-  } @else if ($size == "header-2") {
-    font-size: map-get($sap-font-sizes, "header-2");
-  } @else if ($size == "header-1") {
-    font-size: map-get($sap-font-sizes, "header-1");
-  } @else if ($size == "small") {
-    font-size: map-get($sap-font-sizes, "small");
-  } @else if ($size == "medium") {
-    font-size: map-get($sap-font-sizes, "medium");
-  } @else if ($size == "large") {
-    font-size: map-get($sap-font-sizes, "large");
+  @if  $size == "header-6" {
+    font-size: map.get($sap-font-sizes, "header-6");
+  } @else if $size == "header-5" {
+    font-size: map.get($sap-font-sizes, "header-5");
+  } @else if $size == "header-4" {
+    font-size: map.get($sap-font-sizes, "header-4");
+  } @else if $size == "header-3" {
+    font-size: map.get($sap-font-sizes, "header-3");
+  } @else if $size == "header-2" {
+    font-size: map.get($sap-font-sizes, "header-2");
+  } @else if $size == "header-1" {
+    font-size: map.get($sap-font-sizes, "header-1");
+  } @else if $size == "small" {
+    font-size: map.get($sap-font-sizes, "small");
+  } @else if $size == "medium" {
+    font-size: map.get($sap-font-sizes, "medium");
+  } @else if $size == "large" {
+    font-size: map.get($sap-font-sizes, "large");
   } @else {
     font-size: $size;
   }
 }
 
-// Line-height
+/* Line-height */
 @mixin sap-font-line-height($value: normal) {
   line-height: $value;
 }
 
-// Common cases
+/* Common cases */
 @mixin sap-font($type) {
-  @if ($type == header-3) {
+  @if  $type == header-3 {
     font-family: var(--sapFontHeaderFamily);
     font-size: var(--sapFontHeader3Size);
     color: var(--sapGroup_TitleTextColor);
   } @else {
     font-family: var(--sapFontFamily);
 
-    @if ($type == standard-text) {
+    @if  $type == standard-text {
       font-size: var(--sapFontSize);
       color: var(--sapTextColor);
-    } @else if($type == small-detail-text) {
+    } @else if $type == small-detail-text {
       font-size: var(--sapFontSmallSize);
       color: var(--sapContent_LabelColor);
-    } @else if($type == standard-field-text) {
+    } @else if $type == standard-field-text {
       font-size: var(--sapFontSize);
       color: var(--sapField_TextColor);
     } @else {
@@ -953,42 +925,42 @@
   @content;
 }
 
-// Border
+/* Border */
 @mixin sap-border($width, $style, $color, $pos: all) {
   $_border: $width $style $color;
 
-  @if ($pos == "top") {
+  @if  $pos == "top" {
     border-top: $_border;
-  } @else if ($pos == "bottom") {
+  } @else if $pos == "bottom" {
     border-bottom: $_border;
-  } @else if ($pos == "left") {
+  } @else if $pos == "left" {
     border-left: $_border;
 
     @include sap-rtl() {
       border-left: none;
       border-right: $_border;
     }
-  } @else if ($pos == "right") {
+  } @else if $pos == "right" {
     border-right: $_border;
 
     @include sap-rtl() {
       border-left: $_border;
       border-right: none;
     }
-  } @else if ($pos == "x") {
+  } @else if $pos == "x" {
     border-left: $_border;
     border-right: $_border;
-  } @else if ($pos == "y") {
+  } @else if $pos == "y" {
     border-top: $_border;
     border-bottom: $_border;
-  } @else if ($pos == "all") {
+  } @else if $pos == "all" {
     border: $_border;
   } @else {
     border: $_border;
   }
 }
 
-// Focus
+/* Focus */
 @mixin sap-fiori-focus($offset: -0.1875rem, $alternative: false) {
   &:focus,
   &.is-focus {
@@ -1042,10 +1014,7 @@
       content: '';
       position: absolute;
       pointer-events: none;
-      top: $offset;
-      bottom: $offset;
-      left: $offset;
-      right: $offset;
+      inset: $offset $offset $offset $offset;
       @content;
     }
   }
@@ -1070,10 +1039,7 @@
       content: '';
       position: absolute;
       pointer-events: none;
-      top: $offset;
-      bottom: $offset;
-      left: $offset;
-      right: $offset;
+      inset: $offset $offset $offset $offset;
       @content;
     }
   }
@@ -1088,17 +1054,23 @@
   @return to-upper-case(str-slice($string, 1, 1)) + str-slice($string, 2);
 }
 
+/**
+ @todo Investigate why stylelint is not recognizing the functions
+ */
+
+/* stylelint-disable scss/function-no-unknown */
 @mixin sap-color($color) {
   $colorVar: --sap + capitalize($color);
 
-  color: var($colorVar);
+    color: var($colorVar);
 }
 
-@mixin sap-bg-color($color) {
+  @mixin sap-bg-color($color) {
   $bgColorVar: --sap + capitalize($color);
 
   background-color: var($bgColorVar);
 }
+/* stylelint-enable scss/function-no-unknown */
 
 @mixin sap-text($modifier: none) {
   @include sap-reset();

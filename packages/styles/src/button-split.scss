@@ -1,9 +1,10 @@
+@use "sass:map";
+
 @import "./new-settings";
 @import "./mixins";
 @import "./mixins/button/button-helper";
 
 $block: #{$fd-namespace}-button-split;
-
 $split-button-states: (
   "emphasized": (
     "padBackground": var(--sapButton_Emphasized_Background),
@@ -147,11 +148,11 @@ $split-button-states: (
 
   @each $set-name, $props-set in $split-button-states {
     &--#{$set-name} {
-      @include fd-button-pad(map_get($props-set, "padBackground"), false);
-      @include fd-split-button-separator(map_get($props-set, "separatorDisplay"), map_get($props-set, "separatorBackground"), map_get($props-set, "separatorHoverDisplay"));
+      @include fd-button-pad(map.get($props-set, "padBackground"), false);
+      @include fd-split-button-separator(map.get($props-set, "separatorDisplay"), map.get($props-set, "separatorBackground"), map.get($props-set, "separatorHoverDisplay"));
 
       &::before {
-        --fdButtonPrioritizedBorderColor: #{map_get($props-set, "borderColor")};
+        --fdButtonPrioritizedBorderColor: #{map.get($props-set, "borderColor")};
       }
     }
   }

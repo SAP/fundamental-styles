@@ -1,7 +1,8 @@
+@use "sass:map";
+
 @import "./mixins";
 
 $block: #{$fd-namespace}-variant-management;
-
 $title-margin: 0.125rem;
 
 .#{$block} {

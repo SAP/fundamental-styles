@@ -1,3 +1,5 @@
+@use "sass:map";
+
 :root {
   --fdScrollbar_Track_Color: var(--sapScrollBar_TrackColor);
   --fdScrollbar_Thumb_Color: var(--sapScrollBar_FaceColor);

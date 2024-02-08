@@ -1,3 +1,5 @@
+@use "sass:map";
+
 @import "./new-settings";
 @import "./mixins";
 @import "./form-group";
@@ -5,7 +7,7 @@
 $block: #{$fd-namespace}-fieldset;
 
 .#{$block} {
-  @extend .#{$fd-namespace}-form-group;
+  @include fd-reset();
 
   min-inline-size: auto;
 

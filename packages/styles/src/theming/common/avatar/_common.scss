@@ -1,3 +1,5 @@
+@use "sass:map";
+
 :root {
   --fdAvatarRatio: 2rem;
   --fdAvatarFontSize: 1rem;
@@ -10,12 +12,12 @@
   --fdAvatarBackgroundColor: var(--fdAvatar_BackgroundColor);
   --fdAvatarBorderRadius: var(--sapElement_BorderCornerRadius);
 
-  // Hover
+  /* Hover */
   --fdAvatarHoverBorderColor: var(--sapAvatar_6_TextColor);
   --fdAvatarHoverBackgroundColor: var(--fdAvatar_Accent_Color_Hover_6);
   --fdAvatarHoverBorder: 0.0625rem solid var(--fdAvatarHoverBorderColor);
 
-  // Zoom Icon
+  /* Zoom Icon */
   --fdAvatarZoomIconFontSize: 0.75rem;
   --fdAvatarZoomIconDimensions: 1.125rem;
 }

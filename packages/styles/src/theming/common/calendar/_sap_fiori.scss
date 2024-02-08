@@ -1,3 +1,5 @@
+@use "sass:map";
+
 :root {
   --fdCalendar_Text_Wrapper_Border: var(--sapContent_FocusColor) var(--sapContent_FocusStyle) var(--sapContent_FocusWidth);
   --fdCalendar_Text_Wrapper_Box_Sizing: border-box;

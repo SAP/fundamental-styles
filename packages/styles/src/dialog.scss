@@ -1,3 +1,5 @@
+@use "sass:map";
+
 @import "./new-settings";
 @import "./mixins";
 @import "./dialog-placeholders";
@@ -29,8 +31,8 @@ $menu: #{$fd-namespace}-menu;
         .#{$block}__subheader.#{$bar},
         .#{$block}__footer.#{$bar},
         .#{$block}__body {
-          padding-left: map_get($fd-dialog-content-padding-x, $size-label);
-          padding-right: map_get($fd-dialog-content-padding-x, $size-label);
+          padding-left: map.get($fd-dialog-content-padding-x, $size-label);
+          padding-right: map.get($fd-dialog-content-padding-x, $size-label);
         }
       }
     }

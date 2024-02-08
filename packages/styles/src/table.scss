@@ -1,3 +1,5 @@
+@use "sass:map";
+
 @import "./new-settings";
 @import "./mixins";
 @import "./mixins/table/table-fixed";
@@ -7,7 +9,6 @@
 @import "./mixins/table/table-group-and-tree";
 
 $block: #{$fd-namespace}-table;
-
 $table-z-index: (
   "fixed": 1,
   "header-footer": 2,
@@ -194,7 +195,7 @@ $table-z-index: (
       position: relative;
 
       &::after {
-        z-index: map-get($table-z-index, "focus");
+        z-index: map.get($table-z-index, "focus");
       }
     }
 
@@ -338,10 +339,7 @@ $table-z-index: (
         &--activable,
         &--focusable {
           &::after {
-            top: var(--fdTable_Condensed_Focus_Outline_Offset);
-            bottom: var(--fdTable_Condensed_Focus_Outline_Offset);
-            left: var(--fdTable_Condensed_Focus_Outline_Offset);
-            right: var(--fdTable_Condensed_Focus_Outline_Offset);
+            inset: var(--fdTable_Condensed_Focus_Outline_Offset) var(--fdTable_Condensed_Focus_Outline_Offset) var(--fdTable_Condensed_Focus_Outline_Offset) var(--fdTable_Condensed_Focus_Outline_Offset);
           }
         }
       }

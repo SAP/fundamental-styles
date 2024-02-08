@@ -1,3 +1,5 @@
+@use "sass:map";
+
 @import "./mixins";
 @import "./mixins/list/list-definitions";
 @import "./mixins/tree/mixins";
@@ -6,7 +8,6 @@
 // VARIABLES
 $block: #{$fd-namespace}-tree;
 $button: #{$fd-namespace}-button;
-
 $fd-tree-item-padding-right: 1rem !default;
 $fd-tree-item-padding-right-negative: -1rem !default;
 $fd-tree-item-transparent-border-bottom: var(--sapList_BorderWidth) solid transparent !default;

@@ -1,42 +1,44 @@
+@use "sass:map";
+
 @import "./common";
 
 :root {
-  // Default
+  /* Default */
   --fdAvatar_BackgroundColor: var(--sapAccentColor6);
   --fdAvatar_Border_Color: transparent;
   --fdAvatar_Text_Shadow: var(--sapContent_ContrastTextShadow);
   --fdAvatar_Color: var(--sapContent_ContrastTextColor);
 
-  // Tile
+  /* Tile */
   --fdAvatar_Tile_BackgroundColor: var(--sapTile_IconColor);
   --fdAvatar_Tile_BorderColor: transparent;
   --fdAvatar_Tile_TextColor: var(--sapContent_ContrastTextColor);
   --fdAvatar_Tile_BackgroundColor_Hover: var(--sapTile_IconColor);
 
-  // Placeholder
+  /* Placeholder */
   --fdAvatar_Placeholder_BorderColor: transparent;
   --fdAvatar_Placeholder_BackgroundColor_Hover: var(--sapContent_ImagePlaceholderBackground);
 
-  // Transparent
+  /* Transparent */
   --fdAvatar_Transparent_BorderColor: transparent;
   --fdAvatar_Transparent_BackgroundColor: transparent;
   --fdAvatar_Transparent_BackgroundColor_Hover: transparent;
 
-  // Overflow
+  /* Overflow */
   --fdAvatar_Overflow_BorderColor: var(--sapButton_BorderColor);
   --fdAvatar_Overflow_BackgroundColor: var(--sapButton_Background);
   --fdAvatar_Overflow_TextColor: var(--sapButton_TextColor);
   --fdAvatar_Overflow_Border_Width: 0.0625rem;
 
-  // Thumbnail
+  /* Thumbnail */
   --fdAvatar_Thumbnail_BorderColor: transparent;
 
-  // Focus
+  /* Focus */
   --fdAvatar_Focus_Outline_Offset: -0.1875rem;
   --fdAvatar_Focus_Outline_Radius: 0;
   --fdAvatar_Focus_Outline_Radius_Circle: 0;
 
-  // Accent Colors
+  /* Accent Colors */
   --fdAvatar_Accent_Color_1: var(--sapAccentColor1);
   --fdAvatar_Accent_Color_2: var(--sapAccentColor2);
   --fdAvatar_Accent_Color_3: var(--sapAccentColor3);
@@ -68,7 +70,7 @@
   --fdAvatar_Accent_Color_9_Border: transparent;
   --fdAvatar_Accent_Color_10_Border: transparent;
 
-  // Accent Colors Hover
+  /* Accent Colors Hover */
   --fdAvatar_Accent_Color_Hover_1: var(--sapAccentColor1);
   --fdAvatar_Accent_Color_Hover_2: var(--sapAccentColor2);
   --fdAvatar_Accent_Color_Hover_3: var(--sapAccentColor3);
