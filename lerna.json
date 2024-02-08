@@ -3,7 +3,7 @@
   "packages": [
     "packages/*"
   ],
-  "version": "0.33.0-rc.8",
+  "version": "0.33.0-rc.9",
   "conventionalCommits": true,
   "tagVersionPrefix": "v",
   "message": "chore(release): publish %v",
