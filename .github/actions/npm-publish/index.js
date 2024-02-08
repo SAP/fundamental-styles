@@ -40,9 +40,12 @@ const publish = async ({ currentTryNumber = 1, packageJsonPath, tag, token, acce
 };
 
 const run = async () => {
+    console.log('packagePaths',packagePaths);
     const tag = getNpmTag();
     for (const packageJsonPath of packagePaths) {
+        console.log('packageJsonPath',packageJsonPath);
         const packageJson = JSON.parse(fs.readFileSync(packageJsonPath, 'utf8'));
+        console.log('packageJson',packageJson.version);
         await publish({
             packageJsonPath,
             tag,
