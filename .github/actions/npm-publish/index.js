@@ -1,5 +1,4 @@
 const core = require('@actions/core');
-// const npmPublish = require('@jsdevtools/npm-publish');
 const { npmPublish } = require('@jsdevtools/npm-publish');
 
 const packagePaths = core.getInput('packagePaths').split(',').map(path => `./${path}/package.json`);
@@ -23,8 +22,7 @@ const publish = async ({ currentTryNumber = 1, packageJsonPath, tag, token, acce
             tag,
             access
         });
-        console.log('result', result);
-        core.info(`Published ${result.package}@${result.version}`);
+        core.info(`Published ${result.name}@${result.version}`);
     } catch (e) {
         if (currentTryNumber < retryCount) {
             await publish({
@@ -41,12 +39,9 @@ const publish = async ({ currentTryNumber = 1, packageJsonPath, tag, token, acce
 };
 
 const run = async () => {
-    console.log('packagePaths',packagePaths);
     const tag = getNpmTag();
     for (const packageJsonPath of packagePaths) {
-        console.log('packageJsonPath',packageJsonPath);
         const packageJson = JSON.parse(fs.readFileSync(packageJsonPath, 'utf8'));
-        console.log('packageJson',packageJson.version);
         await publish({
             packageJsonPath,
             tag,
