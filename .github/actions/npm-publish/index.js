@@ -22,7 +22,7 @@ const publish = async ({ currentTryNumber = 1, packageJsonPath, tag, token, acce
             tag,
             access
         });
-        core.info(`Published ${result.name}@${result.version}`);
+        core.info(`Published ${result.name}@${result.version} with tag ${result.tag}`);
     } catch (e) {
         if (currentTryNumber < retryCount) {
             await publish({
