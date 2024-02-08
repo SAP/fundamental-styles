@@ -74,7 +74,9 @@ $block: #{$sap-namespace}-flex;
     @include sap-flex-center();
 
     &-column {
-      @include sap-flex-center(column);
+      @include sap-flex-center() {
+        flex-direction: column;
+      }
     }
   }
 

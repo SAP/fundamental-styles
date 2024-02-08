@@ -5,7 +5,7 @@ const autoprefixer = require('autoprefixer');
 const postcssBanner = require('postcss-banner');
 const postcssNormalizeCharset = require('postcss-normalize-charset');
 const postcssImport = require('postcss-import');
-const packageVersion = require('../../../../../package.json').version;
+const packageVersion = require('../../../../../lerna.json').version;
 const year = new Date().getFullYear();
 const cssnano = require('cssnano');
 
