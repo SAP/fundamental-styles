@@ -5,19 +5,13 @@ on:
 
 env:
   NX_CLOUD_ACCESS_TOKEN: ${{ secrets.NX_CLOUD_AUTH_TOKEN }}
-  NX_CLOUD_AUTH_TOKEN: ${{ secrets.NX_CLOUD_AUTH_TOKEN }}
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.event.number || github.ref }}
+  cancel-in-progress: true
 
 jobs:
-  one_run:
-    name: Cancel Previous Runs
-    runs-on: ubuntu-latest
-    steps:
-      - name: Cancel Previous Runs
-        uses: styfle/cancel-workflow-action@0.12.1
-        with:
-          access_token: ${{ secrets.GHACTIONS }}
-
-  commit_lint:
+  commit-lint:
     runs-on: ubuntu-latest
     name: Lint commit message
     steps:
@@ -26,29 +20,19 @@ jobs:
           fetch-depth: 0
       - uses: wagoid/commitlint-github-action@v3
 
-  install:
+  install-lint-build:
     runs-on: ubuntu-latest
-    name: Dependency installation
-    needs: one_run
+    name: Install, Lint, Build
     steps:
       - uses: actions/checkout@v4.1.1
+      - uses: actions/cache@v3
+        with:
+          path: ~/.npm
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-node-
       - uses: ./.github/actions/nodejs
         name: Install dependencies
-
-  lint:
-    runs-on: ubuntu-latest
-    name: Lint code
-    needs: install
-    steps:
-      - uses: actions/checkout@v4.1.1
-      - uses: ./.github/actions/nodejs
       - run: yarn run lint
-
-  build:
-    runs-on: ubuntu-latest
-    name: Build and bundle size check
-    needs: install
-    steps:
-      - uses: actions/checkout@v4.1.1
-      - uses: ./.github/actions/nodejs
-      - uses: ./.github/actions/build
+      - run: yarn run build:prod
+      - run: yarn run size
