@@ -1,9 +1,11 @@
 {
-    "$schema": "node_modules/lerna/schemas/lerna-schema.json",
-    "packages": ["packages/*"],
-    "version": "0.33.3-rc.9",
-    "conventionalCommits": true,
-    "tagVersionPrefix": "v",
-    "message": "chore(release): publish %v",
-    "npmClient": "yarn"
+  "$schema": "node_modules/lerna/schemas/lerna-schema.json",
+  "packages": [
+    "packages/*"
+  ],
+  "version": "0.33.3-rc.10",
+  "conventionalCommits": true,
+  "tagVersionPrefix": "v",
+  "message": "chore(release): publish %v",
+  "npmClient": "yarn"
 }
