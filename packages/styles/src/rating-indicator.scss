@@ -1,3 +1,5 @@
+@use "sass:map";
+
 @import './new-settings';
 @import './mixins';
 
@@ -128,10 +130,10 @@ $block: #{$fd-namespace}-rating-indicator;
       'spacingBetweenIcons': 0.25rem
     )
   );
-  $fd-rating-indicator-default-size: map-get($fd-rating-indicator-sizes, 'md');
+  $fd-rating-indicator-default-size: map.get($fd-rating-indicator-sizes, 'md');
 
-  --fontSize: #{map_get($fd-rating-indicator-default-size, 'fontSize')};
-  --spacingBetweenIcons: #{map_get($fd-rating-indicator-default-size, 'spacingBetweenIcons')};
+  --fontSize: #{map.get($fd-rating-indicator-default-size, 'fontSize')};
+  --spacingBetweenIcons: #{map.get($fd-rating-indicator-default-size, 'spacingBetweenIcons')};
 
   $fd-rating-indicator-dynamic-text-space: 0.5rem;
 
@@ -141,10 +143,10 @@ $block: #{$fd-namespace}-rating-indicator;
 
   @each $set-name, $size-set in $fd-rating-indicator-sizes {
     &--#{$set-name} {
-      --fontSize: #{map_get($size-set, 'fontSize')};
-      --spacingBetweenIcons: #{map_get($size-set, 'spacingBetweenIcons')};
+      --fontSize: #{map.get($size-set, 'fontSize')};
+      --spacingBetweenIcons: #{map.get($size-set, 'spacingBetweenIcons')};
 
-      $control-margin: map_get($size-set, 'controlMargin');
+      $control-margin: map.get($size-set, 'controlMargin');
 
       @if $control-margin {
         margin: $control-margin;
@@ -185,9 +187,7 @@ $block: #{$fd-namespace}-rating-indicator;
       @include fd-fiori-focus(0) {
         + .#{$block}__label {
           outline-offset: 0;
-          outline-width: var(--sapContent_FocusWidth);
-          outline-color: var(--sapContent_FocusColor);
-          outline-style: var(--sapContent_FocusStyle);
+          outline: var(--sapContent_FocusColor) var(--sapContent_FocusStyle) var(--sapContent_FocusWidth);
         }
       }
     }
@@ -199,7 +199,7 @@ $block: #{$fd-namespace}-rating-indicator;
     @include fd-flex-vertical-center();
 
     @include fd-icon-glyph('favorite') {
-      font-family: 'SAP-icons';
+      font-family: SAP-icons;
       color: var(--sapContent_RatedColor);
       font-size: var(--fontSize);
     }

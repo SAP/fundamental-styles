@@ -1,3 +1,5 @@
+@use "sass:map";
+
 @import "./new-settings";
 @import "./mixins";
 
@@ -41,6 +43,7 @@ $block: #{$fd-namespace}-resizable-card-layout;
     order: 1;
     flex: 1;
     position: relative;
+
     // subtract width taken by vertical handler and horizontal handler
     height: calc(100% - #{$fd-resize-handle-width});
   }
@@ -82,6 +85,7 @@ $block: #{$fd-namespace}-resizable-card-layout;
       position: relative;
       cursor: nesw-resize;
       padding: 0 $fd-resize-icon-padding $fd-resize-icon-padding 0.5rem;
+
       // padding-left is needed after rotation
     }
 
@@ -106,6 +110,7 @@ $block: #{$fd-namespace}-resizable-card-layout;
     &--vertical {
       order: 2;
       z-index: $fd-resize-handle-index;
+
       // subtract resize-corner icon font-size/2
       width: $fd-resize-handle-width;
       cursor: ew-resize;
@@ -135,8 +140,8 @@ $block: #{$fd-namespace}-resizable-card-layout;
 
   @each $size-label, $size in $fd-resizable-card-padding-x {
     &--#{$size-label} {
-      padding-left: map_get($fd-resizable-card-padding-x, $size-label);
-      padding-right: map_get($fd-resizable-card-padding-x, $size-label);
+      padding-left: map.get($fd-resizable-card-padding-x, $size-label);
+      padding-right: map.get($fd-resizable-card-padding-x, $size-label);
     }
   }
 }

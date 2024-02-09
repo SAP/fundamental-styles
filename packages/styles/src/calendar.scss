@@ -1,3 +1,5 @@
+@use "sass:map";
+
 @import './new-settings';
 @import './mixins';
 
@@ -113,11 +115,8 @@ $fd-calendar-special-days: (
         right: 0;
         left: 0.0625rem;
         border-bottom: 0.25rem solid $color;
-        border-bottom-left-radius: var(--fdCalendar_Item_Legend_Bottom_Border_Radius);
-        border-bottom-right-radius: var(--fdCalendar_Item_Legend_Bottom_Border_Radius);
+        border-radius: 0 0 var(--fdCalendar_Item_Legend_Bottom_Border_Radius) var(--fdCalendar_Item_Legend_Bottom_Border_Radius);
         border-top: var(--fdCalendar_Item_Legend_Top_Border);
-        border-top-left-radius: 0;
-        border-top-right-radius: 0;
       }
 
       @include fd-rtl() {
@@ -201,7 +200,7 @@ $fd-calendar-special-days: (
 
     flex-grow: 1;
 
-    &:not(:last-child):not(:first-child) {
+    &:not(:last-child, :first-child) {
       margin-left: var(--fdCalendar_Action_Padding);
       margin-right: var(--fdCalendar_Action_Padding);
     }
@@ -422,6 +421,7 @@ $fd-calendar-special-days: (
     text-shadow: var(--fdCalendar_Text_Shadow);
     border-radius: 0.1875rem;
     flex-grow: 1;
+
     // Compensate inner borders.
     max-width: calc(100% - 0.7rem);
     position: relative;

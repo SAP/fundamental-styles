@@ -1,3 +1,5 @@
+@use "sass:map";
+
 :root {
   --fdGrid_List_Item_Hover_Border_Color: var(--sapTile_Interactive_BorderColor);
   --fdGrid_List_Item_Border_Radius: var(--sapTile_BorderCornerRadius);

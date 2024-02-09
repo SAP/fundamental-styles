@@ -1,3 +1,5 @@
+@use "sass:map";
+
 $fd-dialog-content-margin-y: 6%;
 $fd-dialog-content-margin-x: 10%;
 $fd-dialog-content-min-width: 20rem;
@@ -53,8 +55,8 @@ $fd-dialog-loader-margin-y: 1.5rem;
 }
 
 %dialog-paddings {
-  padding-left: map_get($fd-dialog-content-padding-x, s);
-  padding-right: map_get($fd-dialog-content-padding-x, s);
+  padding-left: map.get($fd-dialog-content-padding-x, s);
+  padding-right: map.get($fd-dialog-content-padding-x, s);
   flex-shrink: 0;
 }
 

@@ -1,3 +1,5 @@
+@use "sass:map";
+
 @import './new-settings';
 @import './mixins';
 
@@ -66,7 +68,7 @@ $blockBody: #{$fd-namespace}-popover__body;
     --fdPopover_Resize_Handle_Justify: flex-end;
     --fdPopover_Resize_Handle_Transform_Scale: 1;
 
-    $fd-popover-z-index: map-get($fd-z-index-levels, 'top') !default;
+    $fd-popover-z-index: map.get($fd-z-index-levels, 'top') !default;
     $fd-popover-arrow-size: var(--fdPopover_Arrow_Size);
     $fd-popover-arrow-size-inner: calc(var(--fdPopover_Arrow_Size) - var(--fdPopover_Border_Width)) !default;
     $fd-popover-arrow-color: var(--fdPopover_Border_Color) !default;
@@ -499,10 +501,7 @@ $blockBody: #{$fd-namespace}-popover__body;
     padding: 0.125rem;
     color: var(--sapButton_Lite_TextColor);
     cursor: var(--fdPopover_Resize_Handle_Cursor);
-    top: var(--fdPopover_Resize_Handle_Position_Top);
-    left: var(--fdPopover_Resize_Handle_Position_Left);
-    right: var(--fdPopover_Resize_Handle_Position_Right);
-    bottom: var(--fdPopover_Resize_Handle_Position_Bottom);
+    inset: var(--fdPopover_Resize_Handle_Position_Top) var(--fdPopover_Resize_Handle_Position_Right) var(--fdPopover_Resize_Handle_Position_Bottom) var(--fdPopover_Resize_Handle_Position_Left);
     transform: rotate(var(--fdPopover_Resize_Handle_Rotate_Angle));
 
     @include fd-icon('resize-corner', 'after') {
@@ -514,7 +513,6 @@ $blockBody: #{$fd-namespace}-popover__body;
       }
 
       color: inherit;
-      -webkit-transform: scaleX(var(--fdPopover_Resize_Handle_Transform_Scale));
       transform: scaleX(var(--fdPopover_Resize_Handle_Transform_Scale));
     }
   }

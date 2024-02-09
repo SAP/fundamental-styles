@@ -1,3 +1,5 @@
+@use "sass:map";
+
 :root {
   --fdMessage_Box_Box_Shadow: inset 0 -0.125rem;
   --fdMessage_Box_Error_Box_Shadow: var(--fdMessage_Box_Box_Shadow) var(--sapErrorBorderColor);

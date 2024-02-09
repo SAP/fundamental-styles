@@ -1,3 +1,5 @@
+@use "sass:map";
+
 @import "../mixins";
 
 @mixin fd-table-fixed() {
@@ -12,7 +14,7 @@
 
         &,
         &-end {
-          z-index: map-get($table-z-index, "fixed");
+          z-index: map.get($table-z-index, "fixed");
           position: sticky;
           display: table-cell;
           background-color: inherit;
@@ -52,12 +54,12 @@
     .#{$block}__header {
       .#{$block}__cell {
         top: 0;
-        z-index: map-get($table-z-index, "header-footer");
+        z-index: map.get($table-z-index, "header-footer");
         position: sticky;
 
         &--fixed,
         &--fixed-end {
-          z-index: map-get($table-z-index, "header-fixed");
+          z-index: map.get($table-z-index, "header-fixed");
         }
       }
     }
@@ -66,7 +68,7 @@
       .#{$block}__cell {
         position: sticky;
         bottom: 0;
-        z-index: map-get($table-z-index, "header-footer");
+        z-index: map.get($table-z-index, "header-footer");
         background-color: inherit;
       }
     }

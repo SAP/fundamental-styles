@@ -1,3 +1,5 @@
+@use "sass:map";
+
 @mixin dragged {
   background-color: var(--sapList_Background);
   cursor: grabbing;

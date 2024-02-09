@@ -1,8 +1,9 @@
+@use "sass:map";
+
 @import "./new-settings";
 @import "./mixins";
 
 $block: #{$fd-namespace}-info-label;
-
 $color-accents: (
   "1": (
     "background": var(--fdInfo_Label_Background_Color1),
@@ -100,9 +101,9 @@ $color-accents: (
 
   @each $set-name, $color-set in $color-accents {
     &--accent-color-#{$set-name} {
-      --fdInfoLabel_Background: #{map_get($color-set, "background")};
-      --fdInfoLabel_Color: #{map_get($color-set, "color")};
-      --fdInfoLabel_Border_Color: #{map_get($color-set, "border")};
+      --fdInfoLabel_Background: #{map.get($color-set, "background")};
+      --fdInfoLabel_Color: #{map.get($color-set, "color")};
+      --fdInfoLabel_Border_Color: #{map.get($color-set, "border")};
     }
   }
 

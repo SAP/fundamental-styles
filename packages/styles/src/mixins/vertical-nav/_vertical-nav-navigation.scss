@@ -1,3 +1,5 @@
+@use "sass:map";
+
 @import '../../new-settings';
 @import '../mixins';
 
@@ -297,7 +299,7 @@ $fd-list-second-level-popover-position: 3.25rem !default;
 
       &-icon {
         font-size: 1rem;
-        font-family: 'SAP-icons';
+        font-family: SAP-icons;
         height: $fd-list-navigation-item-height;
         line-height: $fd-list-navigation-item-height;
         width: 2.25rem;
@@ -330,7 +332,7 @@ $fd-list-second-level-popover-position: 3.25rem !default;
         width: $fd-list-navigation-item-height;
         position: absolute;
         line-height: $fd-list-navigation-item-height;
-        font-family: 'SAP-icons';
+        font-family: SAP-icons;
         font-size: 1rem;
         color: var(--sapContent_NonInteractiveIconColor);
         background-color: transparent;

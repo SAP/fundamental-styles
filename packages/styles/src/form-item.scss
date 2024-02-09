@@ -1,8 +1,9 @@
+@use "sass:map";
+
 @import "./new-settings";
 @import "./mixins";
 
 $block: #{$fd-namespace}-form-item;
-
 $fd-form-label-spacing: 0.5rem !default;
 
 .#{$block} {

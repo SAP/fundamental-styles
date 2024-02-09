@@ -1,3 +1,5 @@
+@use "sass:map";
+
 
 // ----- Avatar -----
 $fd-avatar-zoom-icon-s: 1.125rem;
@@ -9,7 +11,6 @@ $fd-avatar-zoom-icon-font-size-xl: 1rem;
 $fd-avatar-const-ratio: 1rem;
 $fd-avatar-font-stretched-condensed: condensed;
 $fd-avatar-font-stretched-normal: normal;
-
 $fd-avatar-accent-colors: (
   "1": (
     "background-color": var(--fdAvatar_Accent_Color_1),
@@ -92,7 +93,6 @@ $fd-avatar-accent-colors: (
     "border-color": var(--sapAvatar_10_BorderColor)
   )
 );
-
 $fd-avatar-sizes: (
   "xs": (
     "ratio": ($fd-avatar-const-ratio * 2),
@@ -159,7 +159,6 @@ $fd-avatar-sizes: (
     "fontStretch": $fd-avatar-font-stretched-normal
   )
 );
-
 $fd-avatar-group-item-spacing: (
   "individual": (
     "xs": ("margin-right": 0.0625rem),
@@ -176,7 +175,6 @@ $fd-avatar-group-item-spacing: (
     "xl": ("margin-right": -2.75rem)
   )
 );
-
 $fd-avatar-group-item-spacing-group: (
   "xs": -0.75rem,
   "s": -1.25rem,
@@ -187,7 +185,6 @@ $fd-avatar-group-item-spacing-group: (
   "lg": -2rem,
   "xl": -2.75rem
 );
-
 $fd-avatar-group-item-spacing-individual: (
   "xs": 0.0625rem,
   "s": 0.125rem,
@@ -198,7 +195,6 @@ $fd-avatar-group-item-spacing-individual: (
   "lg": 0.125rem,
   "xl": 0.25rem
 );
-
 $fd-avatar-value-states: (
   "positive": (
     "background": var(--sapSuccessBackground),
@@ -252,10 +248,7 @@ $fd-avatar-value-states: (
       content: '';
       position: absolute;
       pointer-events: none;
-      top: $offset;
-      bottom: $offset;
-      left: $offset;
-      right: $offset;
+      inset: $offset $offset $offset $offset;
       @content;
     }
   }

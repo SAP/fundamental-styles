@@ -1,8 +1,9 @@
+@use "sass:map";
+
 @import "./new-settings";
 @import "./mixins";
 
 $block: #{$fd-namespace}-quick-view;
-
 $fd-quick-view-avatar-indent: 0.75rem;
 $fd-quick-view-group-item-indent: 0.75rem;
 

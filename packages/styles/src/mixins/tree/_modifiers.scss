@@ -1,3 +1,5 @@
+@use "sass:map";
+
 @mixin fd-tree-borderless($block) {
   &--no-border {
     .#{$block}__item {

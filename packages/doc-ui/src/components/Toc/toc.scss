@@ -1,7 +1,9 @@
+@use "sass:map";
+
 @import 'tocbot/src/scss/tocbot-core';
 @import 'tocbot/src/scss/tocbot-default-theme';
 
-// table of contents (tocbot) overrides
+/* table of contents (tocbot) overrides */
 .toc {
   box-sizing: border-box;
   background-color: white;
@@ -31,13 +33,13 @@ a.toc-link {
   font-weight: 400;
 }
 
-@media (min-width: 1024px) {
+@media (width >= 1024px) {
   .toc {
     width: 200px;
     position: fixed;
     top: 0;
     right: 0;
-    padding: 75px 0 0 0;
+    padding: 75px 0 0;
     height: 100%;
     font-size: 14px;
 

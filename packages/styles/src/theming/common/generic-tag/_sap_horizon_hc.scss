@@ -1,3 +1,5 @@
+@use "sass:map";
+
 :root {
   --fdGenericTag_Spacing_Outline_Offset: -0.1875rem;
   --fdGenericTag_Icon_Color_Hover_Error: var(--sapList_Active_TextColor);

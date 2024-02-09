@@ -1,3 +1,4 @@
+@use "sass:map";
 
 @import "./new-settings";
 @import "./mixins";
@@ -71,7 +72,7 @@ $block: #{$fd-namespace}-navigation-menu;
       --fdNavigationMenu_Item_Background: var(--sapMenu_Selected_Background);
       --fdNavigationMenu_Item_Border_Color: var(--fdNavigationMenu_Item_Border_Color_Selected);
       --fdNavigationMenu_Item_Border_Bottom_Color: var(--fdNavigationMenu_Item_Border_Color_Selected);
-      --fdNavigationMenu_Item_Padding_Right: calc((2*var(--fdNavigationMenu_Item_Spacing)) + var(--fdNavigationMenu_Item_Selection_Indicator_Size));
+      --fdNavigationMenu_Item_Padding_Right: calc((2 * var(--fdNavigationMenu_Item_Spacing)) + var(--fdNavigationMenu_Item_Selection_Indicator_Size));
 
       &::after {
         @include fd-absolute-vertical-center();
@@ -103,7 +104,7 @@ $block: #{$fd-namespace}-navigation-menu;
   }
 
   &__item--has-children {
-    --fdNavigationMenu_Item_Padding_Right: calc((2*var(--fdNavigationMenu_Item_Spacing)) + var(--fdNavigationMenu_Item_Child_Indicator_Size));
+    --fdNavigationMenu_Item_Padding_Right: calc((2 * var(--fdNavigationMenu_Item_Spacing)) + var(--fdNavigationMenu_Item_Child_Indicator_Size));
 
     &::before {
       @include fd-flex-center();
@@ -112,7 +113,7 @@ $block: #{$fd-namespace}-navigation-menu;
       @include fd-set-position-right-pseudo(var(--fdNavigationMenu_Item_Spacing));
 
       font-size: 0.75rem;
-      font-family: "SAP-icons";
+      font-family: SAP-icons;
       content: var(--fdNavigationMenu_Item_Has_Child_Indicator_Icon);
     }
 
@@ -125,13 +126,13 @@ $block: #{$fd-namespace}-navigation-menu;
     }
 
     @include fd-selected() {
-      --fdNavigationMenu_Item_Padding_Right: calc((3*var(--fdNavigationMenu_Item_Spacing)) + var(--fdNavigationMenu_Item_Selection_Indicator_Size) + var(--fdNavigationMenu_Item_Child_Indicator_Size));
-      --fdNavigationMenu_Selection_Indicator_Offset_Right: calc((2*var(--fdNavigationMenu_Item_Spacing)) + var(--fdNavigationMenu_Item_Child_Indicator_Size));
+      --fdNavigationMenu_Item_Padding_Right: calc((3 * var(--fdNavigationMenu_Item_Spacing)) + var(--fdNavigationMenu_Item_Selection_Indicator_Size) + var(--fdNavigationMenu_Item_Child_Indicator_Size));
+      --fdNavigationMenu_Selection_Indicator_Offset_Right: calc((2 * var(--fdNavigationMenu_Item_Spacing)) + var(--fdNavigationMenu_Item_Child_Indicator_Size));
     }
   }
 
   &__item--has-link-indicator {
-    --fdNavigationMenu_Item_Padding_Right: calc((2*var(--fdNavigationMenu_Item_Spacing)) + var(--fdNavigationMenu_Item_Child_Indicator_Size));
+    --fdNavigationMenu_Item_Padding_Right: calc((2 * var(--fdNavigationMenu_Item_Spacing)) + var(--fdNavigationMenu_Item_Child_Indicator_Size));
 
     &::before {
       @include fd-flex-center();
@@ -140,7 +141,7 @@ $block: #{$fd-namespace}-navigation-menu;
       @include fd-set-position-right-pseudo(var(--fdNavigationMenu_Item_Spacing));
 
       font-size: 0.75rem;
-      font-family: "SAP-icons";
+      font-family: SAP-icons;
       color: var(--sapContent_LabelColor);
       content: var(--fdNavigationMenu_Item_Has_Link_Indicator_Icon);
     }
@@ -150,8 +151,8 @@ $block: #{$fd-namespace}-navigation-menu;
     }
 
     @include fd-selected() {
-      --fdNavigationMenu_Item_Padding_Right: calc((3*var(--fdNavigationMenu_Item_Spacing)) + var(--fdNavigationMenu_Item_Selection_Indicator_Size) + var(--fdNavigationMenu_Item_Child_Indicator_Size));
-      --fdNavigationMenu_Selection_Indicator_Offset_Right: calc((2*var(--fdNavigationMenu_Item_Spacing)) + var(--fdNavigationMenu_Item_Child_Indicator_Size));
+      --fdNavigationMenu_Item_Padding_Right: calc((3 * var(--fdNavigationMenu_Item_Spacing)) + var(--fdNavigationMenu_Item_Selection_Indicator_Size) + var(--fdNavigationMenu_Item_Child_Indicator_Size));
+      --fdNavigationMenu_Selection_Indicator_Offset_Right: calc((2 * var(--fdNavigationMenu_Item_Spacing)) + var(--fdNavigationMenu_Item_Child_Indicator_Size));
     }
   }
 

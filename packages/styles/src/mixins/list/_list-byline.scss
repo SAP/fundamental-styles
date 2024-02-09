@@ -1,3 +1,5 @@
+@use "sass:map";
+
 @import "./list-definitions";
 
 $fd-list-byline-thumbnail-dimensions: 3rem !default;
@@ -161,7 +163,7 @@ $fd-list-byline-section-text-color: var(--sapContent_LabelColor) !default;
 
       @each $set-name, $color-set in $semantic-color {
         &--#{$set-name} {
-          color: map_get($color-set, "color");
+          color: map.get($color-set, "color");
         }
       }
     }
