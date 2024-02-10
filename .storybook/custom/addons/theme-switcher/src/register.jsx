@@ -1,5 +1,5 @@
 const React = require('react');
-const { addons, types } = require('@storybook/addons');
+const { addons, types } = require('@storybook/preview-api');
 const { ADDON_ID } = require('./constants');
 const Selector = require('./containers/Selector');
 

@@ -1,4 +1,4 @@
-import { addons } from '@storybook/addons';
+import { addons } from '@storybook/preview-api';
 import fundamentalTheme from '../packages/storybook/src/lib/fundamentals';
 
 addons.setConfig({
