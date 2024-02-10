@@ -56,11 +56,8 @@ jobs:
               run: |
                   npx lerna version ${{ steps.bumpVersion.outputs.newVersion }} --yes --force-publish --message="chore(release): publish %v [ci skip]" --no-push
 
-            - name: Lint
-              run: npm run lint
-
-            - name: Build
-              uses: ./.github/actions/build
+            - run: yarn run lint
+            - run: yarn run build:prod
 
             - name: Publish packages to NPM
               uses: ./.github/actions/npm-publish
