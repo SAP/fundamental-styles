@@ -63,7 +63,7 @@
     "@nx/js": "18.0.2",
     "@nx/plugin": "18.0.2",
     "@nx/react": "18.0.2",
-    "@nx/web": "18.0.2",
+    "@nx/web": "18.0.4",
     "@sap-theming/theming-base-content": "11.11.0",
     "@storybook/addon-a11y": "7.6.12",
     "@storybook/addon-actions": "7.6.12",
