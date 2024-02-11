@@ -90,7 +90,7 @@
     "babel-plugin-named-exports-order": "0.0.2",
     "bundlesize": "0.18.1",
     "chromatic": "10.3.1",
-    "clean-css": "5.3.0",
+    "clean-css": "5.3.3",
     "clean-css-cli": "5.4.1",
     "colors": "1.4.0",
     "conventional-changelog": "5.1.0",

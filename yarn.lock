@@ -7270,16 +7270,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"clean-css@npm:5.3.0":
-  version: 5.3.0
-  resolution: "clean-css@npm:5.3.0"
-  dependencies:
-    source-map: "npm:~0.6.0"
-  checksum: 10/21a0dcd11f766debbb102441b81fcd13668a88c28b4541d19bd980da097ba88c9537ea87a11a777b32983f0694659103b18af2241e6b00647e8d7d2a1da1a661
-  languageName: node
-  linkType: hard
-
-"clean-css@npm:^5.2.1":
+"clean-css@npm:5.3.3, clean-css@npm:^5.2.1":
   version: 5.3.3
   resolution: "clean-css@npm:5.3.3"
   dependencies:
@@ -10553,7 +10544,7 @@ __metadata:
     babel-plugin-named-exports-order: "npm:0.0.2"
     bundlesize: "npm:0.18.1"
     chromatic: "npm:10.3.1"
-    clean-css: "npm:5.3.0"
+    clean-css: "npm:5.3.3"
     clean-css-cli: "npm:5.4.1"
     colors: "npm:1.4.0"
     conventional-changelog: "npm:5.1.0"
