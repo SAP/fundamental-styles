@@ -46,11 +46,6 @@
             "style": "scss",
             "linter": "eslint",
             "unitTestRunner": "none"
-        },
-        "@nx/react": {
-            "application": {
-                "babel": true
-            }
         }
     },
     "defaultProject": "theming-preview",
