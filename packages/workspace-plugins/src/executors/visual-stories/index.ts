@@ -62,7 +62,7 @@ export default async function(schema: VisualStoriesSchema, context: ExecutorCont
             },
             decorators: [withThemeProvider]
         };
-        export const ${className}Visuals = visualStory(stories);
+        export const ${className}Visuals = visualStory(stories as any);
         `,
                 { parser: 'typescript' }
             );
