@@ -7,13 +7,15 @@ import { outputFileSync } from 'fs-extra';
 import { format } from 'prettier';
 import { parseStoriesFile } from './parse-stories-file';
 
-export default async function (schema: VisualStoriesSchema, context: ExecutorContext): Promise<{ success: boolean }> {
+export default async function(schema: VisualStoriesSchema, context: ExecutorContext): Promise<{ success: boolean }> {
     const projectName = <string>context.projectName;
     logger.info(`Creating Visual stories for ${projectName} 👀`);
     const projectRoot = context.projectGraph?.nodes[projectName].data.root;
     const workspaceRootPath = workspaceRoot.replace(/\\/g, '/');
     const storiesFiles = fastGlobSync(`${projectRoot}/stories/**/*.stories.+(js|jsx|ts|tsx)`, { onlyFiles: true });
-    const themes = (projectsThemes[projectName]?.themes || []).filter((theme: {value: string}) => schema.themes.includes(theme.value));
+    const themes = (projectsThemes[projectName]?.themes || []).filter((theme: {
+        value: string
+    }) => schema.themes.includes(theme.value));
     const excludedStoriesKinds = (schema.excludedStoriesKinds || []).map((pattern) => new RegExp(pattern));
     if (themes.length === 0) {
         throw new Error(`No themes found for project ${projectName}`);
@@ -62,7 +64,7 @@ export default async function (schema: VisualStoriesSchema, context: ExecutorCon
         };
         export const ${className}Visuals = visualStory(stories);
         `,
-                { parser: 'babel-ts' }
+                { parser: 'typescript' }
             );
             outputFileSync(visualStoryFileName, fileContent);
             logger.info(`✅ Created ${visualStoryFileName}`);

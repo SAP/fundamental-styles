@@ -9,6 +9,15 @@ const workspaceProjects = {
     cx: 'packages/cx'
 };
 
+/**
+ * The map of the project name and the project title
+ */
+const projectNames = {
+    styles: 'SAP Fiori',
+    ['common-css']: 'Common CSS',
+    cx: 'CX'
+};
+
 /** Small utility to convert text to dash-case */
 const dashCase = (text) => (text ? snakeCase(text).replace(/_/g, '-') : undefined);
 
@@ -89,15 +98,11 @@ export const themes = {
         ]
     }
 };
-const projectNames = {
-    styles: 'SAP Fiori',
-    ['common-css']: 'Common CSS',
-    cx: 'CX'
-};
-
-export const storybookPackages = Object.keys(projectNames).map((projectName) => {
-    return workspaceProjects[projectName].replace('packages/', '');
-}).join('|');
+export const storybookPackages = Object.keys(projectNames)
+    .map((projectName) => {
+        return workspaceProjects[projectName].replace('packages/', '');
+    })
+    .join('|');
 
 /**
  * The map of project name and project's metadata
