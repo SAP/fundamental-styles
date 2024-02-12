@@ -1,1 +1,1 @@
-module.exports = require('./src/register')
+import './src/register';

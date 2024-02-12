@@ -1,4 +1,4 @@
-import packageJson from '../../../../package.json';
+import lernaJson from '../../../../lerna.json';
 import { IconButton, Icons } from '@storybook/components';
 import { styled } from '@storybook/theming';
 
@@ -19,7 +19,7 @@ const StyledGhButtonContainer = styled.div`
 
 export default () => <StyledGhButtonContainer>
     <IconButton
-        href={`https://github.com/SAP/fundamental-styles/tree/v${packageJson.version}`}
+        href={`https://github.com/SAP/fundamental-styles/tree/v${lernaJson.version}`}
         target={'_blank'}
         title={'Github Link'}
         content={undefined}
@@ -29,7 +29,7 @@ export default () => <StyledGhButtonContainer>
     >
         <Icons icon={'github'}></Icons>
         <StyledSpan>
-            {`v${packageJson.version}`}
+            {`v${lernaJson.version}`}
         </StyledSpan>
     </IconButton>
 </StyledGhButtonContainer>;

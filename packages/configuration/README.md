@@ -1,3 +1,3 @@
 # configuration
 
-This library was generated with [Nx](https://nx.dev).
+This library contain's the configuration for the storybook
