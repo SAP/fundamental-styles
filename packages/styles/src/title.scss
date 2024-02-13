@@ -6,6 +6,8 @@ $block: #{$fd-namespace}-title;
 .#{$block} {
   @include fd-reset();
 
+  display: block;
+
   @extend %dialog-title;
 
   color: var(--sapTextColor);
