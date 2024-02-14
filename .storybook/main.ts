@@ -58,9 +58,6 @@ const config: StorybookConfig = {
             ...(indexers || [])
         ];
     },
-    features: {
-        storyStoreV7: true
-    },
     typescript: {
         check: false
     },
