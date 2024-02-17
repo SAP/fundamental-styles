@@ -125,6 +125,18 @@ $fd-micro-process-flow-semantic-colors: (
       --fdMicro_Process_Flow_Icon_Color: var(--fdMicro_Process_Flow_Active_Icon_Color);
     }
   }
+
+  &--information .#{$block}__icon-container{
+    @include fd-hover() {
+      --fdMicro_Process_Flow_Icon_Color: var(--sapButton_Information_Hover_TextColor);
+      --fdMicro_Process_Flow_Item_Border_Color: var(--sapInformationBorderColor);
+    }
+
+    @include fd-active() {
+      --fdMicro_Process_Flow_Icon_Color: var(--sapContent_ContrastIconColor);
+      --fdMicro_Process_Flow_Item_Border_Color: var(--sapContent_Selected_ForegroundColor);
+    }
+  }
 }
 
 .#{$block} {
