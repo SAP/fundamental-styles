@@ -4460,6 +4460,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@storybook/core-events@npm:7.6.16":
+  version: 7.6.16
+  resolution: "@storybook/core-events@npm:7.6.16"
+  dependencies:
+    ts-dedent: "npm:^2.0.0"
+  checksum: 10/b0000d7dfe062e236f18a7ef87d8c7e19e979d87c3cbf13ef771365ff8bd798b8134b185cb567d56c2071c5260031b43bea88ad77ce2ec16b6b0ba39c0708540
+  languageName: node
+  linkType: hard
+
 "@storybook/core-server@npm:7.6.12":
   version: 7.6.12
   resolution: "@storybook/core-server@npm:7.6.12"
@@ -10610,7 +10619,7 @@ __metadata:
     "@storybook/addons": "npm:7.6.12"
     "@storybook/blocks": "npm:7.6.12"
     "@storybook/components": "npm:7.6.12"
-    "@storybook/core-events": "npm:7.6.12"
+    "@storybook/core-events": "npm:7.6.16"
     "@storybook/html": "npm:7.6.12"
     "@storybook/html-vite": "npm:7.6.12"
     "@storybook/theming": "npm:7.6.12"
