@@ -10669,7 +10669,7 @@ __metadata:
     react-dom: "npm:18.2.0"
     react-is: "npm:18.2.0"
     remark-gfm: "npm:3.0.1"
-    sass: "npm:1.52.1"
+    sass: "npm:1.71.0"
     semver: "npm:7.5.4"
     standard-version: "npm:9.3.2"
     start-server-and-test: "npm:1.14.0"
@@ -17655,16 +17655,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"sass@npm:1.52.1":
-  version: 1.52.1
-  resolution: "sass@npm:1.52.1"
+"sass@npm:1.71.0":
+  version: 1.71.0
+  resolution: "sass@npm:1.71.0"
   dependencies:
     chokidar: "npm:>=3.0.0 <4.0.0"
     immutable: "npm:^4.0.0"
     source-map-js: "npm:>=0.6.2 <2.0.0"
   bin:
     sass: sass.js
-  checksum: 10/9f811d6e8d1c734977759e19c65e60c443010a8f4457656c187f44e006f4cbd9f361d4f7553a4f28b37ba08cded63e0ae1e7e50d114913076d1fe965e85572e6
+  checksum: 10/5616f0ef0d764d0a6242155edd02773300e0d9ac1c0b542781ae934095f3b2f73312707f95edc08c34ae88bad633bb55c8cc67ad390bef40e04eb84ae9b028cd
   languageName: node
   linkType: hard
 
