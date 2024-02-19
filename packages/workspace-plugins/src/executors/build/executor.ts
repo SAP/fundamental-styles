@@ -3,19 +3,20 @@ import { copyAssets } from '@nx/js';
 import { execSync } from 'child_process';
 import { ExecutorContext } from '@nx/devkit';
 import { copyFileSync, existsSync, readFileSync, rmSync, writeFileSync } from 'fs';
-import glob from 'glob';
+import { sync as fastGlobSync } from 'fast-glob';
 import { processWithPostCss } from '../shared/postcss';
 import { mkdirpSync } from 'fs-extra';
 import { parse } from 'path';
 import { parse as semverParse } from 'semver';
 
-const aboveMinorVersion = (version) => {
+const aboveMinorVersion = (version: string) => {
     const parsed = semverParse(version);
     return `^${parsed!.major}.${parsed!.minor}.0`;
 };
+const lernaJson = JSON.parse(readFileSync('lerna.json', 'utf-8'));
 const packageJson = JSON.parse(readFileSync('package.json', 'utf-8'));
 const versions = {
-    VERSION_PLACEHOLDER: packageJson.version,
+    VERSION_PLACEHOLDER: lernaJson.version,
     SAP_THEMING_VERSION: aboveMinorVersion(packageJson.devDependencies['@sap-theming/theming-base-content'])
 };
 
@@ -42,7 +43,7 @@ export default async function runExecutor(options: BuildExecutorSchema, context:
         return assetsCopyResult;
     }
 
-    const outputFiles = glob.sync(`${compilationOutputPath}/**/*.css`, { nodir: true });
+    const outputFiles = fastGlobSync(`${compilationOutputPath}/**/*.css`, { onlyFiles: true });
 
     for (const file of outputFiles) {
         const commit = await processWithPostCss({
@@ -59,7 +60,7 @@ export default async function runExecutor(options: BuildExecutorSchema, context:
 
     projectPackageJson['exports'] = projectPackageJson['exports'] || {};
 
-    const files = glob.sync(`${compilationOutputPath}/**/*.css`);
+    const files = fastGlobSync(`${compilationOutputPath}/**/*.css`);
 
     for (const file of files) {
         const content = readFileSync(file, 'utf-8');

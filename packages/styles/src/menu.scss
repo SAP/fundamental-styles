@@ -1,3 +1,5 @@
+@use "sass:map";
+
 @import "./new-settings";
 @import "./mixins";
 
@@ -37,7 +39,7 @@ $block: #{$fd-namespace}-menu;
     --fdMenu_Item_Border_Bottom_Color: var(--sapList_SelectionBorderColor);
 
     @include fd-hover() {
-      &:not(:active):not(.is-active) {
+      &:not(:active, .is-active) {
         --fdMenu_Item_Background_Color: var(--sapList_Hover_SelectionBackground);
         --fdMenu_Shortcut_Color: var(--fdMenu_Shortcut_Color_Selected_Hover);
       }
@@ -195,7 +197,7 @@ $block: #{$fd-namespace}-menu;
       --fdMenu_Item_Spacing_Right: 0;
 
       @include fd-expanded() {
-        &:not(:active):not(.is-active) {
+        &:not(:active, .is-active) {
           @include selected-menu-item();
         }
       }

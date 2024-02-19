@@ -1,3 +1,7 @@
+@use "sass:map";
+
+@import "common-variables";
+
 @mixin sap-reset {
   font-family: "72", "72full", Arial, Helvetica, sans-serif;
   font-size: var(--sapFontSize);
@@ -30,14 +34,10 @@
 @mixin sap-transition($property: all, $duration: 150ms, $animation: ease-in) {
   $fn-transition: $property $duration $animation;
 
-  -webkit-transition: $fn-transition;
-  -moz-transition: $fn-transition;
-  -ms-transition: $fn-transition;
-  -o-transition: $fn-transition;
   transition: $fn-transition;
 }
 
-// States
+/* States */
 @mixin sap-hover {
   &:hover,
   &.is-hover {
@@ -135,13 +135,17 @@
   }
 }
 
+/*
+@Todo Remove after visual testing
+
 @mixin sap-display() {
   &.is-display {
     @content;
   }
 }
+ */
 
-// Flex Helpers
+/* Flex Helpers */
 @mixin sap-flex($direction: row) {
   display: flex;
   flex-direction: $direction;
@@ -167,7 +171,7 @@
   @content;
 }
 
-// Set Paddings
+/* Set Paddings */
 @mixin sap-set-padding-left($left: 0) {
   padding-left: $left;
 
@@ -211,7 +215,7 @@
   padding-bottom: $value;
 }
 
-// Set position absolute
+/* Set position absolute */
 @mixin sap-set-position-right($right) {
   right: $right;
 
@@ -232,17 +236,11 @@
 
 @mixin sap-user-select() {
   user-select: none;
-  -ms-user-select: none;
-  -moz-user-select: none;
-  -webkit-user-select: none;
 }
 
 @mixin sap-set-top-right-bottom-left($top:0, $right:0, $bottom:0, $left:0) {
   position: absolute;
-  top: $top;
-  right: $right;
-  bottom: $bottom;
-  left: $left;
+  inset: $top $right $bottom $left;
 
   @include sap-rtl() {
     left: $right;
@@ -267,25 +265,17 @@
   height: $height;
 }
 
-// display mixins
-$sap-display-types: inline block contents flex grid inline-block inline-flex inline-grid inline-table list-item run-in table table-caption table-column-group table-header-group table-footer-group table-row-group table-cell table-column table-row none initial inherit !default;
-
+/* Display mixins */
 @mixin sap-display($type: inline) {
   display: $type !important;
 
   @content;
 }
 
-// position mixins
-$sap-position-types: static fixed absolute relative sticky inherit !default;
-$sap-position-offset: top right bottom left;
-
+/* Position mixins */
 @mixin sap-position($position, $top: null, $right: null, $bottom: null, $left: null) {
   position: $position;
-  top: $top;
-  right: $right;
-  bottom: $bottom;
-  left: $left;
+  inset: $top $right $bottom $left;
 
   @content;
 }
@@ -331,21 +321,12 @@ $sap-position-offset: top right bottom left;
   @content;
 }
 
-// border-radius
-$sap-corner-border-radius: (
-  "element": var(--sapElement_BorderCornerRadius),
-  "button": var(--sapButton_BorderCornerRadius),
-  "field": var(--sapField_BorderCornerRadius),
-  "group": var(--sapGroup_BorderCornerRadius),
-  "popover": var(--sapPopover_BorderCornerRadius),
-  "tile": var(--sapTile_BorderCornerRadius)
-);
-
+/* Border-radius */
 @mixin sap-set-border-radius($value...) {
   $_value: $value;
 
-  @if (map-has-key($sap-corner-border-radius, #{$value})) {
-    $_value: map-get($sap-corner-border-radius, #{$value});
+  @if  map-has-key($sap-corner-border-radius, #{$value}) {
+    $_value: map.get($sap-corner-border-radius, #{$value});
   }
 
   border-radius: $_value;
@@ -353,85 +334,6 @@ $sap-corner-border-radius: (
   @content;
 }
 
-// content paddings
-
-$sap-content-paddings-home: (
-  "sm": 0.5rem,
-  "md": 2rem,
-  "lg": 2rem,
-  "xl": 3rem,
-);
-
-$sap-content-paddings-container: (
-  "sm": 1rem,
-  "md": 2rem,
-  "lg": 2rem,
-  "xl": 3rem,
-);
-
-$sap-content-paddings-nav: (
-  "sm": 1rem,
-  "md": 2rem,
-  "lg": 2rem,
-  "xl": 3rem,
-);
-
-@mixin sap-set-content-paddings($type, $value) {
-  @if ($type == 'home') {
-    padding-left: map-get($sap-content-paddings-home, $value) !important;
-    padding-right: map-get($sap-content-paddings-home, $value) !important;
-  } @else if ($type == 'container') {
-    padding-left: map-get($sap-content-paddings-container, $value) !important;
-    padding-right: map-get($sap-content-paddings-container, $value) !important;
-  } @else {
-    padding-left: map-get($sap-content-paddings-nav, $value) !important;
-    padding-right: map-get($sap-content-paddings-nav, $value) !important;
-  }
-}
-
-@mixin sap-set-dynamic-content-paddings($type) {
-  @include sap-media-sm() {
-    @include sap-set-content-paddings($type, 'sm');
-  }
-
-  @include sap-media-md() {
-    @include sap-set-content-paddings($type, 'md');
-  }
-
-  @include sap-media-lg() {
-    @include sap-set-content-paddings($type, 'lg');
-  }
-
-  @include sap-media-xl() {
-    @include sap-set-content-paddings($type, 'xl');
-  }
-}
-
-@mixin sap-content-paddings($type: home, $size: default) {
-  @if ($size == default) {
-    @include sap-set-dynamic-content-paddings($type);
-  } @else {
-    @include sap-set-content-paddings($type, $size);
-  }
-}
-
-// flex
-$sap-flex-spacings: (
-  "tiny": 0.5rem,
-  "small": 1rem,
-  "medium": 2rem,
-  "large": 3rem
-);
-
-// ----------- FLEX DIRECTION -----------
-@mixin sap-flex($direction: row) {
-  display: flex;
-  flex-direction: $direction;
-
-  @content;
-}
-
-// ----------- FLEX ALIGN CONTENT -----------
 @mixin sap-flex-align-content($type: normal, $direction: row) {
   @include sap-flex($direction) {
     flex-wrap: wrap;
@@ -441,7 +343,6 @@ $sap-flex-spacings: (
   @content;
 }
 
-// ----------- FLEX ALIGN ITEMS -----------
 @mixin sap-flex-align-items($type: stretch, $direction: row) {
   @include sap-flex($direction) {
     align-items: $type;
@@ -450,20 +351,19 @@ $sap-flex-spacings: (
   @content;
 }
 
-// ----------- FLEX GAP -----------
 @mixin sap-flex-gap($value, $type: "", $direction: row) {
   @include sap-flex($direction);
 
   $_value: "";
 
   @if $value == "tiny" {
-    $_value: map_get($sap-flex-spacings, "tiny");
+    $_value: map.get($sap-flex-spacings, "tiny");
   } @else if $value == "small" {
-    $_value: map_get($sap-flex-spacings, "small");
+    $_value: map.get($sap-flex-spacings, "small");
   } @else if $value == "medium" {
-    $_value: map_get($sap-flex-spacings, "medium");
+    $_value: map.get($sap-flex-spacings, "medium");
   } @else if $value == large {
-    $_value: map_get($sap-flex-spacings, "large");
+    $_value: map.get($sap-flex-spacings, "large");
   } @else {
     $_value: $value;
   }
@@ -477,7 +377,6 @@ $sap-flex-spacings: (
   @content;
 }
 
-// ----------- FLEX JUSTIFY CONTENT -----------
 @mixin sap-flex-justify($type: flex-start, $direction: row) {
   @include sap-flex($direction) {
     justify-content: $type;
@@ -486,7 +385,6 @@ $sap-flex-spacings: (
   @content;
 }
 
-// ----------- FLEX WRAP -----------
 @mixin sap-flex-wrap($type: nowrap, $direction: row) {
   @include sap-flex($direction) {
     flex-wrap: $type;
@@ -495,70 +393,37 @@ $sap-flex-spacings: (
   @content;
 }
 
-// ----------- FLEX CENTER -----------
-@mixin sap-flex-center($direction: row) {
-  @include sap-flex() {
-    align-items: center;
-    justify-content: center;
-    flex-direction: $direction;
-  }
-
-  @content;
-}
-
-// ----------- FLEX ORDER -----------
 @mixin sap-flex-order($value: 0) {
   order: $value;
 
   @content;
 }
 
-// ----------- FLEX GROW -----------
 @mixin sap-flex-grow($value) {
   flex-grow: $value;
 
   @content;
 }
 
-// ----------- FLEX SHRINK -----------
 @mixin sap-flex-shrink($value) {
   flex-shrink: $value;
 
   @content;
 }
 
-// ----------- FLEX ALIGN SELF -----------
 @mixin sap-flex-align-self($value) {
   align-self: $value;
 
   @content;
 }
 
-// ----------- FLEX CHILD -----------
 @mixin sap-flex-child($value) {
   flex: $value;
 
   @content;
 }
 
-// MARGINS
-
-$sap-margins: (
-  "tiny": 0.5rem,
-  "small": 1rem,
-  "medium": 2rem,
-  "large": 3rem
-);
-
-$sap-container-sides: (
-  "top": top,
-  "bottom": bottom,
-  "begin": left,
-  "end": right,
-  "x": horizontal,
-  "y": vertical
-);
-
+/* Margins */
 @mixin sap-set-margin-all($value: 0) {
   margin: $value;
 }
@@ -609,30 +474,43 @@ $sap-container-sides: (
   }
 }
 
+@mixin sap-set-margin-right($right: 0) {
+  margin-right: $right;
+
+  @include sap-rtl() {
+    margin-right: 0;
+    margin-left: $right;
+  }
+}
+
 @mixin sap-set-margin-y($valueTop: 0, $valueBottom: 0) {
   margin-top: $valueTop;
   margin-bottom: $valueBottom;
 }
 
+@mixin sap-set-equal-positions($value) {
+  inset: $value $value $value $value;
+}
+
 @mixin sap-margin($value, $side: '') {
   $_value: $value !important;
 
-  @if (map-has-key($sap-margins, #{$value})) {
-    $_value: map-get($sap-margins, #{$value}) !important;
+  @if  map-has-key($sap-margins, #{$value}) {
+    $_value: map.get($sap-margins, #{$value}) !important;
   }
 
-  @if ($side != '') {
-    @if ($side == top) {
+  @if  $side != '' {
+    @if  $side == top {
       @include sap-set-margin-top($_value);
-    } @else if($side == bottom) {
+    } @else if $side == bottom {
       @include sap-set-margin-bottom($_value);
-    } @else if($side == begin) {
+    } @else if $side == begin {
       @include sap-set-margin-begin($_value);
-    } @else if($side == end) {
+    } @else if $side == end {
       @include sap-set-margin-end($_value);
-    } @else if($side == x) {
+    } @else if $side == x {
       @include sap-set-margin-x-equal($_value);
-    } @else if($side == y) {
+    } @else if $side == y {
       @include sap-set-margin-y-equal($_value);
     }
   } @else {
@@ -642,7 +520,7 @@ $sap-container-sides: (
 
 @mixin sap-margin-responsive() {
   @include sap-media-sm() {
-    margin: 0 0 1rem 0 !important;
+    margin: 0 0 1rem !important;
   }
 
   @include sap-media-md() {
@@ -658,12 +536,7 @@ $sap-container-sides: (
   }
 }
 
-// MEDIA QUERIES
-$small: 600px;
-$medium: 1024px;
-$large: 1440px;
-$offset: 1px;
-
+/* Media queries */
 @mixin sap-media-sm() {
   @media (max-width: #{$small - $offset}) {
     @content;
@@ -718,23 +591,61 @@ $offset: 1px;
   }
 }
 
-// PADDINGS
-$sap-paddings: (
-  "tiny": 0.5rem,
-  "small": 1rem,
-  "medium": 2rem,
-  "large": 3rem
-);
+@mixin sap-media-from($width) {
+  @media screen and (min-width: $width) {
+    @content;
+  }
+}
 
-$sap-container-sides: (
-  "top": top,
-  "bottom": bottom,
-  "begin": left,
-  "end": right,
-  "x": horizontal,
-  "y": vertical
-);
+@mixin sap-media-until($width) {
+  @media screen and (max-width: $width) {
+    @content;
+  }
+}
 
+/* Container Queries */
+@mixin sap-container-type($type: normal) {
+  container-type: $type;
+  @content;
+}
+
+@mixin sap-container-query-from($width) {
+  @container (min-width: $width) {
+    @content;
+  }
+}
+
+@mixin sap-container-query-until($width) {
+  @container (max-width: $width) {
+    @content;
+  }
+}
+
+@mixin sap-container-query-sm() {
+  @container (max-width: 599px) {
+    @content;
+  }
+}
+
+@mixin sap-container-query-md() {
+  @container (600px <= width <= 1023px) {
+    @content;
+  }
+}
+
+@mixin sap-container-query-lg() {
+  @container (1024px <= width <= 1439px) {
+    @content;
+  }
+}
+
+@mixin sap-container-query-xl() {
+  @container (min-width: 1440px) {
+    @content;
+  }
+}
+
+/* Paddings */
 @mixin sap-set-padding-all($value: 0) {
   padding: $value;
 }
@@ -793,22 +704,22 @@ $sap-container-sides: (
 @mixin sap-padding($value: 1rem, $side: '') {
   $_value: $value !important;
 
-  @if (map-has-key($sap-paddings, #{$value})) {
-    $_value: map-get($sap-paddings, #{$value}) !important;
+  @if  map-has-key($sap-paddings, #{$value}) {
+    $_value: map.get($sap-paddings, #{$value}) !important;
   }
 
-  @if ($side != '') {
-    @if ($side == top) {
+  @if  $side != '' {
+    @if  $side == top {
       @include sap-set-padding-top($_value);
-    } @else if($side == bottom) {
+    } @else if $side == bottom {
       @include sap-set-padding-bottom($_value);
-    } @else if($side == begin) {
+    } @else if $side == begin {
       @include sap-set-padding-begin($_value);
-    } @else if($side == end) {
+    } @else if $side == end {
       @include sap-set-padding-end($_value);
-    } @else if($side == x) {
+    } @else if $side == x {
       @include sap-set-padding-x-equal($_value);
-    } @else if($side == y) {
+    } @else if $side == y {
       @include sap-set-padding-y-equal($_value);
     }
   } @else {
@@ -838,24 +749,69 @@ $sap-container-sides: (
   }
 }
 
-// SHADOWS
-$sap-box-shadow-types: (
-  "level-0": var(--sapContent_Shadow0),
-  "level-1": var(--sapContent_Shadow1),
-  "level-2": var(--sapContent_Shadow2),
-  "level-3": var(--sapContent_Shadow3),
-  "header": var(--sapContent_HeaderShadow),
-  "shell": var(--sapShell_Shadow),
-  "none": none,
-);
+@mixin sap-padding-container-responsive() {
+  @include sap-container-query-sm() {
+    @include sap-padding(small, x);
+    @include sap-padding(0, y);
+  }
 
-$sap-text-shadow-types: (
-  "text": var(--sapContent_TextShadow),
-  "contrast-text": var(--sapContent_ContrastTextShadow),
-  "group-title-text": var(--sapShell_GroupTitleTextShadow),
-  "emphasized-text": var(--sapButton_Emphasized_TextShadow),
-);
+  @include sap-container-query-md() {
+    @include sap-padding(medium, x);
+    @include sap-padding(0, y);
+  }
 
+  @include sap-container-query-lg() {
+    @include sap-padding(medium, x);
+    @include sap-padding(0, y);
+  }
+
+  @include sap-container-query-xl() {
+    @include sap-padding(large, x);
+    @include sap-padding(0, y);
+  }
+}
+
+/* Content paddings */
+@mixin sap-set-content-paddings($type, $value) {
+  @if  $type == 'home' {
+    padding-left: map.get($sap-content-paddings-home, $value) !important;
+    padding-right: map.get($sap-content-paddings-home, $value) !important;
+  } @else if $type == 'container' {
+    padding-left: map.get($sap-content-paddings-container, $value) !important;
+    padding-right: map.get($sap-content-paddings-container, $value) !important;
+  } @else {
+    padding-left: map.get($sap-content-paddings-nav, $value) !important;
+    padding-right: map.get($sap-content-paddings-nav, $value) !important;
+  }
+}
+
+@mixin sap-set-dynamic-content-paddings($type) {
+  @include sap-container-query-sm() {
+    @include sap-set-content-paddings($type, 'sm');
+  }
+
+  @include sap-container-query-md() {
+    @include sap-set-content-paddings($type, 'md');
+  }
+
+  @include sap-container-query-lg() {
+    @include sap-set-content-paddings($type, 'lg');
+  }
+
+  @include sap-container-query-xl() {
+    @include sap-set-content-paddings($type, 'xl');
+  }
+}
+
+@mixin sap-content-paddings($type: home, $size: default) {
+  @if  $size == default {
+    @include sap-set-dynamic-content-paddings($type);
+  } @else {
+    @include sap-set-content-paddings($type, $size);
+  }
+}
+
+/* Shadows */
 @mixin sap-set-box-shadow($value) {
   box-shadow: $value;
 }
@@ -865,10 +821,10 @@ $sap-text-shadow-types: (
 }
 
 @mixin sap-shadow($type) {
-  @if (map-has-key($sap-box-shadow-types , #{$type} )) {
-    @include sap-set-box-shadow(map-get($sap-box-shadow-types, #{$type}));
-  } @else if (map-has-key($sap-text-shadow-types , #{$type} )) {
-    @include sap-set-text-shadow(map-get($sap-text-shadow-types, #{$type}));
+  @if  map-has-key($sap-box-shadow-types , #{$type} ) {
+    @include sap-set-box-shadow(map.get($sap-box-shadow-types, #{$type}));
+  } @else if map-has-key($sap-text-shadow-types , #{$type} ) {
+    @include sap-set-text-shadow(map.get($sap-text-shadow-types, #{$type}));
   } @else {
     @warn "Unknown type of shadow";
   }
@@ -888,102 +844,77 @@ $sap-text-shadow-types: (
   @content;
 }
 
-// TYPOGRAPHY
-$sap-font-types: (
-  "regular": var(--sapFontFamily),
-  "light": var(--sapFontLightFamily),
-  "bold": var(--sapFontBoldFamily),
-  "semibold": var(--sapFontSemiboldFamily),
-  "semibold-duplex": var(--sapFontSemiboldDuplexFamily),
-  "monospaced-regular": var(--sapContent_MonospaceFontFamily),
-  "monospaced-bold": var(--sapContent_MonospaceBoldFontFamily),
-  "black": var(--sapFontBlackFamily),
-  "header": var(--sapFontHeaderFamily),
-);
-
-// FONT FAMILY
+/* Font-family */
 @mixin sap-font-family($type) {
-  @if ($type == "regular") {
-    font-family: map-get($sap-font-types, "regular");
-  } @else if ($type == "light") {
-    font-family: map-get($sap-font-types, "light");
-  } @else if ($type == "bold") {
-    font-family: map-get($sap-font-types, "bold");
-  } @else if ($type == "semibold") {
-    font-family: map-get($sap-font-types, "semibold");
-  } @else if ($type == "semibold-duplex") {
-    font-family: map-get($sap-font-types, "semibold-duplex");
-  } @else if ($type == "monospaced-regular") {
-    font-family: map-get($sap-font-types, "monospaced-regular");
-  } @else if ($type == "monospaced-bold") {
-    font-family: map-get($sap-font-types, "monospaced-bold");
-  } @else if ($type == "black") {
-    font-family: map-get($sap-font-types, "black");
-  } @else if ($type == "header") {
-    font-family: map-get($sap-font-types, "header");
+  @if  $type == "regular" {
+    font-family: map.get($sap-font-types, "regular");
+  } @else if $type == "light" {
+    font-family: map.get($sap-font-types, "light");
+  } @else if $type == "bold" {
+    font-family: map.get($sap-font-types, "bold");
+  } @else if $type == "semibold" {
+    font-family: map.get($sap-font-types, "semibold");
+  } @else if $type == "semibold-duplex" {
+    font-family: map.get($sap-font-types, "semibold-duplex");
+  } @else if $type == "monospaced-regular" {
+    font-family: map.get($sap-font-types, "monospaced-regular");
+  } @else if $type == "monospaced-bold" {
+    font-family: map.get($sap-font-types, "monospaced-bold");
+  } @else if $type == "black" {
+    font-family: map.get($sap-font-types, "black");
+  } @else if $type == "header" {
+    font-family: map.get($sap-font-types, "header");
   } @else {
     font-family: $type;
   }
 }
 
-// FONT SIZE
-$sap-font-sizes: (
-  "header-6": var(--sapFontHeader6Size),
-  "header-5": var(--sapFontHeader5Size),
-  "header-4": var(--sapFontHeader4Size),
-  "header-3": var(--sapFontHeader3Size),
-  "header-2": var(--sapFontHeader2Size),
-  "header-1": var(--sapFontHeader1Size),
-  "small": var(--sapFontSmallSize),
-  "medium": var(--sapFontSize),
-  "large": var(--sapFontLargeSize),
-);
-
+/* Font-size */
 @mixin sap-font-size($size) {
-  @if ($size == "header-6") {
-    font-size: map-get($sap-font-sizes, "header-6");
-  } @else if ($size == "header-5") {
-    font-size: map-get($sap-font-sizes, "header-5");
-  } @else if ($size == "header-4") {
-    font-size: map-get($sap-font-sizes, "header-4");
-  } @else if ($size == "header-3") {
-    font-size: map-get($sap-font-sizes, "header-3");
-  } @else if ($size == "header-2") {
-    font-size: map-get($sap-font-sizes, "header-2");
-  } @else if ($size == "header-1") {
-    font-size: map-get($sap-font-sizes, "header-1");
-  } @else if ($size == "small") {
-    font-size: map-get($sap-font-sizes, "small");
-  } @else if ($size == "medium") {
-    font-size: map-get($sap-font-sizes, "medium");
-  } @else if ($size == "large") {
-    font-size: map-get($sap-font-sizes, "large");
+  @if  $size == "header-6" {
+    font-size: map.get($sap-font-sizes, "header-6");
+  } @else if $size == "header-5" {
+    font-size: map.get($sap-font-sizes, "header-5");
+  } @else if $size == "header-4" {
+    font-size: map.get($sap-font-sizes, "header-4");
+  } @else if $size == "header-3" {
+    font-size: map.get($sap-font-sizes, "header-3");
+  } @else if $size == "header-2" {
+    font-size: map.get($sap-font-sizes, "header-2");
+  } @else if $size == "header-1" {
+    font-size: map.get($sap-font-sizes, "header-1");
+  } @else if $size == "small" {
+    font-size: map.get($sap-font-sizes, "small");
+  } @else if $size == "medium" {
+    font-size: map.get($sap-font-sizes, "medium");
+  } @else if $size == "large" {
+    font-size: map.get($sap-font-sizes, "large");
   } @else {
     font-size: $size;
   }
 }
 
-// LINE HEIGHT
+/* Line-height */
 @mixin sap-font-line-height($value: normal) {
   line-height: $value;
 }
 
-// COMMON CASES
+/* Common cases */
 @mixin sap-font($type) {
-  @if ($type == header-3) {
+  @if  $type == header-3 {
     font-family: var(--sapFontHeaderFamily);
     font-size: var(--sapFontHeader3Size);
     color: var(--sapGroup_TitleTextColor);
   } @else {
     font-family: var(--sapFontFamily);
 
-    @if ($type == standard-text) {
+    @if  $type == standard-text {
       font-size: var(--sapFontSize);
       color: var(--sapTextColor);
-    } @else if($type == small-detail-text) {
+    } @else if $type == small-detail-text {
       font-size: var(--sapFontSmallSize);
       color: var(--sapContent_LabelColor);
-    } @else if($type == standard-field-text) {
+    } @else if $type == standard-field-text {
       font-size: var(--sapFontSize);
       color: var(--sapField_TextColor);
     } @else {
@@ -994,42 +925,42 @@ $sap-font-sizes: (
   @content;
 }
 
-// BORDER
+/* Border */
 @mixin sap-border($width, $style, $color, $pos: all) {
   $_border: $width $style $color;
 
-  @if ($pos == "top") {
+  @if  $pos == "top" {
     border-top: $_border;
-  } @else if ($pos == "bottom") {
+  } @else if $pos == "bottom" {
     border-bottom: $_border;
-  } @else if ($pos == "left") {
+  } @else if $pos == "left" {
     border-left: $_border;
 
     @include sap-rtl() {
       border-left: none;
       border-right: $_border;
     }
-  } @else if ($pos == "right") {
+  } @else if $pos == "right" {
     border-right: $_border;
 
     @include sap-rtl() {
       border-left: $_border;
       border-right: none;
     }
-  } @else if ($pos == "x") {
+  } @else if $pos == "x" {
     border-left: $_border;
     border-right: $_border;
-  } @else if ($pos == "y") {
+  } @else if $pos == "y" {
     border-top: $_border;
     border-bottom: $_border;
-  } @else if ($pos == "all") {
+  } @else if $pos == "all" {
     border: $_border;
   } @else {
     border: $_border;
   }
 }
 
-// FOCUS
+/* Focus */
 @mixin sap-fiori-focus($offset: -0.1875rem, $alternative: false) {
   &:focus,
   &.is-focus {
@@ -1083,10 +1014,7 @@ $sap-font-sizes: (
       content: '';
       position: absolute;
       pointer-events: none;
-      top: $offset;
-      bottom: $offset;
-      left: $offset;
-      right: $offset;
+      inset: $offset $offset $offset $offset;
       @content;
     }
   }
@@ -1111,10 +1039,7 @@ $sap-font-sizes: (
       content: '';
       position: absolute;
       pointer-events: none;
-      top: $offset;
-      bottom: $offset;
-      left: $offset;
-      right: $offset;
+      inset: $offset $offset $offset $offset;
       @content;
     }
   }
@@ -1125,606 +1050,185 @@ $sap-font-sizes: (
   z-index: $index;
 }
 
-// COLORS
-/* stylelint-disable */
-$sap-colors:
-  brandColor,
-  highlightColor,
-  baseColor,
-  shellColor,
-  backgroundColor,
-  textColor,
-  linkColor,
-  link_Hover_Color,
-  link_Active_Color,
-  link_Visited_Color,
-  link_InvertedColor,
-  link_SubtleColor,
-  selectedColor,
-  activeColor,
-  highlightTextColor,
-  titleColor,
-  negativeColor,
-  criticalColor,
-  positiveColor,
-  informativeColor,
-  neutralColor,
-  negativeElementColor,
-  criticalElementColor,
-  positiveElementColor,
-  informativeElementColor,
-  neutralElementColor,
-  negativeTextColor,
-  positiveTextColor,
-  criticalTextColor,
-  informativeTextColor,
-  neutralTextColor,
-  neutralBorderColor,
-  errorColor,
-  errorBorderColor,
-  warningColor,
-  warningBorderColor,
-  successColor,
-  successBorderColor,
-  informationColor,
-  informationBorderColor,
-  errorBackground,
-  warningBackground,
-  successBackground,
-  informationBackground,
-  neutralBackground,
-  indicationColor_1,
-  indicationColor_1_Background,
-  indicationColor_1_BorderColor,
-  indicationColor_1_Hover_Background,
-  indicationColor_1_Active_Background,
-  indicationColor_1_TextColor,
-  indicationColor_2,
-  indicationColor_2_Background,
-  indicationColor_2_BorderColor,
-  indicationColor_2_Hover_Background,
-  indicationColor_2_Active_Background,
-  indicationColor_2_TextColor,
-  indicationColor_3,
-  indicationColor_3_Background,
-  indicationColor_3_BorderColor,
-  indicationColor_3_Hover_Background,
-  indicationColor_3_Active_Background,
-  indicationColor_3_TextColor,
-  indicationColor_4,
-  indicationColor_4_Background,
-  indicationColor_4_BorderColor,
-  indicationColor_4_Hover_Background,
-  indicationColor_4_Active_Background,
-  indicationColor_4_TextColor,
-  indicationColor_5,
-  indicationColor_5_Background,
-  indicationColor_5_BorderColor,
-  indicationColor_5_Hover_Background,
-  indicationColor_5_Active_Background,
-  indicationColor_5_TextColor,
-  indicationColor_6,
-  indicationColor_6_Background,
-  indicationColor_6_BorderColor,
-  indicationColor_6_Hover_Background,
-  indicationColor_6_Active_Background,
-  indicationColor_6_TextColor,
-  indicationColor_7,
-  indicationColor_7_Background,
-  indicationColor_7_BorderColor,
-  indicationColor_7_Hover_Background,
-  indicationColor_7_Active_Background,
-  indicationColor_7_TextColor,
-  indicationColor_8,
-  indicationColor_8_Background,
-  indicationColor_8_BorderColor,
-  indicationColor_8_Hover_Background,
-  indicationColor_8_Active_Background,
-  indicationColor_8_TextColor,
-  content_IconColor,
-  content_ContrastIconColor,
-  content_NonInteractiveIconColor,
-  content_MarkerIconColor,
-  content_MarkerTextColor,
-  content_MeasureIndicatorColor,
-  content_Selected_MeasureIndicatorColor,
-  content_ImagePlaceholderBackground,
-  content_ImagePlaceholderForegroundColor,
-  content_RatedColor,
-  content_UnratedColor,
-  content_BusyColor,
-  content_FocusColor,
-  content_ContrastFocusColor,
-  content_ShadowColor,
-  content_ContrastShadowColor,
-  content_SearchHighlightColor,
-  content_HelpColor,
-  content_LabelColor,
-  content_ContrastTextColor,
-  content_ForegroundColor,
-  content_ForegroundBorderColor,
-  content_ForegroundTextColor,
-  content_BadgeBackground,
-  content_BadgeTextColor,
-  content_Placeholderloading_Background,
-  content_DragAndDropActiveColor,
-  content_Selected_Background,
-  content_Selected_TextColor,
-  content_Selected_Hover_Background,
-  content_Selected_ForegroundColor,
-  content_Illustrative_Color1,
-  content_Illustrative_Color2,
-  content_Illustrative_Color3,
-  content_Illustrative_Color4,
-  content_Illustrative_Color5,
-  content_Illustrative_Color6,
-  content_Illustrative_Color7,
-  content_Illustrative_Color8,
-  content_Illustrative_Color9,
-  content_Illustrative_Color10,
-  content_Illustrative_Color11,
-  content_Illustrative_Color12,
-  content_Illustrative_Color13,
-  content_Illustrative_Color14,
-  content_Illustrative_Color15,
-  content_Illustrative_Color16,
-  content_Illustrative_Color17,
-  content_Illustrative_Color18,
-  content_Illustrative_Color19,
-  content_Illustrative_Color20,
-  shell_Background,
-  shell_BorderColor,
-  shell_TextColor,
-  shell_InteractiveBackground,
-  shell_InteractiveTextColor,
-  shell_InteractiveBorderColor,
-  shell_GroupTitleTextColor,
-  shell_Hover_Background,
-  shell_Active_Background,
-  shell_Active_TextColor,
-  shell_Selected_Background,
-  shell_Selected_TextColor,
-  shell_Selected_Hover_Background,
-  shell_Navigation_Background,
-  shell_Navigation_SelectedColor,
-  shell_Navigation_Selected_TextColor,
-  shell_Navigation_TextColor,
-  shell_Navigation_Hover_Background,
-  shell_Navigation_Active_Background,
-  shell_Navigation_Active_TextColor,
-  shell_NegativeColor,
-  shell_CriticalColor,
-  shell_PositiveColor,
-  shell_InformativeColor,
-  shell_NeutralColor,
-  avatar_1_Background,
-  avatar_1_BorderColor,
-  avatar_1_TextColor,
-  avatar_2_Background,
-  avatar_2_BorderColor,
-  avatar_2_TextColor,
-  avatar_3_Background,
-  avatar_3_BorderColor,
-  avatar_3_TextColor,
-  avatar_4_Background,
-  avatar_4_BorderColor,
-  avatar_4_TextColor,
-  avatar_5_Background,
-  avatar_5_BorderColor,
-  avatar_5_TextColor,
-  avatar_6_Background,
-  avatar_6_BorderColor,
-  avatar_6_TextColor,
-  avatar_7_Background,
-  avatar_7_BorderColor,
-  avatar_7_TextColor,
-  avatar_8_Background,
-  avatar_8_BorderColor,
-  avatar_8_TextColor,
-  avatar_9_Background,
-  avatar_9_BorderColor,
-  avatar_9_TextColor,
-  avatar_10_Background,
-  avatar_10_BorderColor,
-  avatar_10_TextColor,
-  button_Background,
-  button_BorderColor,
-  button_TextColor,
-  button_Hover_Background,
-  button_Hover_BorderColor,
-  button_Hover_TextColor,
-  button_IconColor,
-  button_Active_Background,
-  button_Active_BorderColor,
-  button_Active_TextColor,
-  button_Emphasized_Background,
-  button_Emphasized_BorderColor,
-  button_Emphasized_TextColor,
-  button_Emphasized_Hover_Background,
-  button_Emphasized_Hover_BorderColor,
-  button_Emphasized_Hover_TextColor,
-  button_Emphasized_Active_Background,
-  button_Emphasized_Active_BorderColor,
-  button_Emphasized_Active_TextColor,
-  button_Reject_Background,
-  button_Reject_BorderColor,
-  button_Reject_Hover_Background,
-  button_Reject_Hover_BorderColor,
-  button_Reject_Hover_TextColor,
-  button_Reject_Active_Background,
-  button_Reject_Active_BorderColor,
-  button_Reject_Active_TextColor,
-  button_Reject_TextColor,
-  button_Reject_Selected_Background,
-  button_Reject_Selected_BorderColor,
-  button_Reject_Selected_TextColor,
-  button_Reject_Selected_Hover_Background,
-  button_Reject_Selected_Hover_BorderColor,
-  button_Accept_Background,
-  button_Accept_BorderColor,
-  button_Accept_Hover_Background,
-  button_Accept_Hover_BorderColor,
-  button_Accept_Hover_TextColor,
-  button_Accept_Active_Background,
-  button_Accept_Active_BorderColor,
-  button_Accept_Active_TextColor,
-  button_Accept_TextColor,
-  button_Accept_Selected_Background,
-  button_Accept_Selected_BorderColor,
-  button_Accept_Selected_TextColor,
-  button_Accept_Selected_Hover_Background,
-  button_Accept_Selected_Hover_BorderColor,
-  button_Lite_Background,
-  button_Lite_BorderColor,
-  button_Lite_TextColor,
-  button_Lite_Hover_Background,
-  button_Lite_Hover_BorderColor,
-  button_Lite_Hover_TextColor,
-  button_Lite_Active_Background,
-  button_Lite_Active_BorderColor,
-  button_Selected_Background,
-  button_Selected_BorderColor,
-  button_Selected_TextColor,
-  button_Selected_Hover_Background,
-  button_Selected_Hover_BorderColor,
-  button_Attention_Background,
-  button_Attention_BorderColor,
-  button_Attention_TextColor,
-  button_Attention_Hover_Background,
-  button_Attention_Hover_BorderColor,
-  button_Attention_Hover_TextColor,
-  button_Attention_Active_Background,
-  button_Attention_Active_BorderColor,
-  button_Attention_Active_TextColor,
-  button_Attention_Selected_Background,
-  button_Attention_Selected_BorderColor,
-  button_Attention_Selected_TextColor,
-  button_Attention_Selected_Hover_Background,
-  button_Attention_Selected_Hover_BorderColor,
-  button_Negative_Background,
-  button_Negative_BorderColor,
-  button_Negative_TextColor,
-  button_Negative_Hover_Background,
-  button_Negative_Hover_BorderColor,
-  button_Negative_Hover_TextColor,
-  button_Negative_Active_Background,
-  button_Negative_Active_BorderColor,
-  button_Negative_Active_TextColor,
-  button_Critical_Background,
-  button_Critical_BorderColor,
-  button_Critical_TextColor,
-  button_Critical_Hover_Background,
-  button_Critical_Hover_BorderColor,
-  button_Critical_Hover_TextColor,
-  button_Critical_Active_Background,
-  button_Critical_Active_BorderColor,
-  button_Critical_Active_TextColor,
-  button_Success_Background,
-  button_Success_BorderColor,
-  button_Success_TextColor,
-  button_Success_Hover_Background,
-  button_Success_Hover_BorderColor,
-  button_Success_Hover_TextColor,
-  button_Success_Active_Background,
-  button_Success_Active_BorderColor,
-  button_Success_Active_TextColor,
-  button_Information_Background,
-  button_Information_BorderColor,
-  button_Information_TextColor,
-  button_Information_Hover_Background,
-  button_Information_Hover_BorderColor,
-  button_Information_Hover_TextColor,
-  button_Information_Active_Background,
-  button_Information_Active_BorderColor,
-  button_Information_Active_TextColor,
-  button_Neutral_Background,
-  button_Neutral_BorderColor,
-  button_Neutral_TextColor,
-  button_Neutral_Hover_Background,
-  button_Neutral_Hover_BorderColor,
-  button_Neutral_Hover_TextColor,
-  button_Neutral_Active_Background,
-  button_Neutral_Active_BorderColor,
-  button_Neutral_Active_TextColor,
-  button_Track_Background,
-  button_Track_BorderColor,
-  button_Track_TextColor,
-  button_Track_Hover_Background,
-  button_Track_Hover_BorderColor,
-  button_Track_Selected_Background,
-  button_Track_Selected_BorderColor,
-  button_Track_Selected_TextColor,
-  button_Track_Selected_Hover_Background,
-  button_Track_Selected_Hover_BorderColor,
-  button_Handle_Background,
-  button_Handle_BorderColor,
-  button_Handle_TextColor,
-  button_Handle_Hover_Background,
-  button_Handle_Hover_BorderColor,
-  button_Handle_Selected_Background,
-  button_Handle_Selected_BorderColor,
-  button_Handle_Selected_TextColor,
-  button_Handle_Selected_Hover_Background,
-  button_Handle_Selected_Hover_BorderColor,
-  button_Track_Negative_Background,
-  button_Track_Negative_BorderColor,
-  button_Track_Negative_TextColor,
-  button_Track_Negative_Hover_Background,
-  button_Track_Negative_Hover_BorderColor,
-  button_Handle_Negative_Background,
-  button_Handle_Negative_BorderColor,
-  button_Handle_Negative_TextColor,
-  button_Handle_Negative_Hover_Background,
-  button_Handle_Negative_Hover_BorderColor,
-  button_Track_Positive_Background,
-  button_Track_Positive_BorderColor,
-  button_Track_Positive_TextColor,
-  button_Track_Positive_Hover_Background,
-  button_Track_Positive_Hover_BorderColor,
-  button_Handle_Positive_Background,
-  button_Handle_Positive_BorderColor,
-  button_Handle_Positive_TextColor,
-  button_Handle_Positive_Hover_Background,
-  button_Handle_Positive_Hover_BorderColor,
-  button_TokenBackground,
-  button_TokenBorderColor,
-  field_Background,
-  field_TextColor,
-  field_PlaceholderTextColor,
-  field_BorderColor,
-  field_HelpBackground,
-  field_Hover_Background,
-  field_Hover_BorderColor,
-  field_Hover_HelpBackground,
-  field_Active_BorderColor,
-  field_Focus_Background,
-  field_Focus_BorderColor,
-  field_Focus_HelpBackground,
-  field_ReadOnly_BorderColor,
-  field_ReadOnly_HelpBackground,
-  field_RequiredColor,
-  field_InvalidColor,
-  field_InvalidBackground,
-  field_WarningColor,
-  field_WarningBackground,
-  field_SuccessColor,
-  field_SuccessBackground,
-  field_InformationColor,
-  field_InformationBackground,
-  group_TitleBackground,
-  group_TitleBorderColor,
-  group_TitleTextColor,
-  group_ContentBackground,
-  group_ContentBorderColor,
-  group_FooterBackground,
-  toolbar_Background,
-  toolbar_SeparatorColor,
-  list_HeaderBackground,
-  list_HeaderBorderColor,
-  list_HeaderTextColor,
-  list_BorderColor,
-  list_TextColor,
-  list_Active_TextColor,
-  list_Active_Background,
-  list_SelectionBackgroundColor,
-  list_SelectionBorderColor,
-  list_Hover_SelectionBackground,
-  list_Background,
-  list_Hover_Background,
-  list_AlternatingBackground,
-  list_GroupHeaderBackground,
-  list_GroupHeaderBorderColor,
-  list_GroupHeaderTextColor,
-  list_FooterBackground,
-  list_FooterTextColor,
-  list_TableGroupHeaderBackground,
-  list_TableGroupHeaderBorderColor,
-  list_TableGroupHeaderTextColor,
-  list_TableFooterBorder,
-  list_TableFixedBorderColor,
-  message_ErrorBorderColor,
-  message_WarningBorderColor,
-  message_SuccessBorderColor,
-  message_InformationBorderColor,
-  progress_Background,
-  progress_BorderColor,
-  progress_TextColor,
-  progress_NegativeBackground,
-  progress_NegativeBorderColor,
-  progress_NegativeTextColor,
-  progress_CriticalBackground,
-  progress_CriticalBorderColor,
-  progress_CriticalTextColor,
-  progress_PositiveBackground,
-  progress_PositiveBorderColor,
-  progress_PositiveTextColor,
-  progress_InformationBackground,
-  progress_InformationBorderColor,
-  progress_InformationTextColor,
-  progress_Value_Background,
-  progress_Value_BorderColor,
-  progress_Value_TextColor,
-  progress_Value_NegativeBackground,
-  progress_Value_NegativeBorderColor,
-  progress_Value_NegativeTextColor,
-  progress_Value_CriticalBackground,
-  progress_Value_CriticalBorderColor,
-  progress_Value_CriticalTextColor,
-  progress_Value_PositiveBackground,
-  progress_Value_PositiveBorderColor,
-  progress_Value_PositiveTextColor,
-  progress_Value_InformationBackground,
-  progress_Value_InformationBorderColor,
-  progress_Value_InformationTextColor,
-  scrollBar_FaceColor,
-  scrollBar_TrackColor,
-  scrollBar_BorderColor,
-  scrollBar_SymbolColor,
-  scrollBar_Hover_FaceColor,
-  slider_Background,
-  slider_BorderColor,
-  slider_Selected_Background,
-  slider_Selected_BorderColor,
-  slider_HandleBackground,
-  slider_HandleBorderColor,
-  slider_RangeHandleBackground,
-  slider_Hover_HandleBackground,
-  slider_Hover_HandleBorderColor,
-  slider_Hover_RangeHandleBackground,
-  slider_Active_HandleBackground,
-  slider_Active_HandleBorderColor,
-  slider_Active_RangeHandleBackground,
-  pageHeader_Background,
-  pageHeader_BorderColor,
-  pageHeader_TextColor,
-  pageFooter_Background,
-  pageFooter_BorderColor,
-  pageFooter_TextColor,
-  infobar_Background,
-  infobar_Hover_Background,
-  infobar_Active_Background,
-  infobar_NonInteractive_Background,
-  infobar_TextColor,
-  objectHeader_Background,
-  objectHeader_BorderColor,
-  objectHeader_Hover_Background,
-  objectHeader_Title_TextColor,
-  objectHeader_Subtitle_TextColor,
-  blockLayer_Background,
-  tile_Background,
-  tile_Hover_Background,
-  tile_Active_Background,
-  tile_BorderColor,
-  tile_TitleTextColor,
-  tile_TextColor,
-  tile_IconColor,
-  tile_SeparatorColor,
-  tile_Interactive_BorderColor,
-  tile_OverlayBackground,
-  tile_OverlayForegroundColor,
-  accentColor1,
-  accentColor2,
-  accentColor3,
-  accentColor4,
-  accentColor5,
-  accentColor6,
-  accentColor7,
-  accentColor8,
-  accentColor9,
-  accentColor10,
-  accentBackgroundColor1,
-  accentBackgroundColor2,
-  accentBackgroundColor3,
-  accentBackgroundColor4,
-  accentBackgroundColor5,
-  accentBackgroundColor6,
-  accentBackgroundColor7,
-  accentBackgroundColor8,
-  accentBackgroundColor9,
-  accentBackgroundColor10,
-  legend_WorkingBackground,
-  legend_NonWorkingBackground,
-  legend_CurrentDateTime,
-  legendColor1,
-  legendColor2,
-  legendColor3,
-  legendColor4,
-  legendColor5,
-  legendColor6,
-  legendColor7,
-  legendColor8,
-  legendColor9,
-  legendColor10,
-  legendColor11,
-  legendColor12,
-  legendColor13,
-  legendColor14,
-  legendColor15,
-  legendColor16,
-  legendColor17,
-  legendColor18,
-  legendColor19,
-  legendColor20,
-  legendBackgroundColor1,
-  legendBackgroundColor2,
-  legendBackgroundColor3,
-  legendBackgroundColor4,
-  legendBackgroundColor5,
-  legendBackgroundColor6,
-  legendBackgroundColor7,
-  legendBackgroundColor8,
-  legendBackgroundColor9,
-  legendBackgroundColor10,
-  legendBackgroundColor11,
-  legendBackgroundColor12,
-  legendBackgroundColor13,
-  legendBackgroundColor14,
-  legendBackgroundColor15,
-  legendBackgroundColor16,
-  legendBackgroundColor17,
-  legendBackgroundColor18,
-  legendBackgroundColor19,
-  legendBackgroundColor20,
-  chart_OrderedColor_1,
-  chart_OrderedColor_2,
-  chart_OrderedColor_3,
-  chart_OrderedColor_4,
-  chart_OrderedColor_5,
-  chart_OrderedColor_6,
-  chart_OrderedColor_7,
-  chart_OrderedColor_8,
-  chart_OrderedColor_9,
-  chart_OrderedColor_10,
-  chart_OrderedColor_11,
-  chart_Bad,
-  chart_Critical,
-  chart_Good,
-  chart_Neutral,
-  chart_Sequence_1,
-  chart_Sequence_2,
-  chart_Sequence_3,
-  chart_Sequence_4,
-  chart_Sequence_5,
-  chart_Sequence_6,
-  chart_Sequence_7,
-  chart_Sequence_8,
-  chart_Sequence_9,
-  chart_Sequence_10,
-  chart_Sequence_11,
-  chart_Sequence_Neutral;
-
 @function capitalize($string) {
   @return to-upper-case(str-slice($string, 1, 1)) + str-slice($string, 2);
 }
 
+/**
+ @todo Investigate why stylelint is not recognizing the functions
+ */
+
+/* stylelint-disable scss/function-no-unknown */
 @mixin sap-color($color) {
   $colorVar: --sap + capitalize($color);
 
-  color: var($colorVar);
+    color: var($colorVar);
 }
 
-@mixin sap-bg-color($color) {
+  @mixin sap-bg-color($color) {
   $bgColorVar: --sap + capitalize($color);
 
   background-color: var($bgColorVar);
+}
+/* stylelint-enable scss/function-no-unknown */
+
+@mixin sap-text($modifier: none) {
+  @include sap-reset();
+
+  &::selection {
+    color: var(--sapContent_ContrastTextColor);
+    background-color: var(--sapSelectedColor);
+  }
+
+  @if $modifier == 'max-lines' {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  @if $modifier == 'pre-wrap' {
+    white-space: pre-wrap;
+  }
+
+  @if $modifier == 'hyphenation' {
+    hyphens: auto;
+  }
+}
+
+@mixin sap-label($required: false, $colon: false) {
+  @include sap-reset();
+  @include sap-ellipsis();
+  @include sap-set-margin-end(0.5rem);
+
+  cursor: text;
+  max-width: 100%;
+  width: fit-content;
+  position: relative;
+  align-self: flex-start;
+  font-size: var(--sapFontSize);
+  color: var(--sapContent_LabelColor);
+
+  &.is-disabled {
+    opacity: 0.4;
+  }
+
+  @if $required == true {
+    @include sap-set-padding-end(0.5rem);
+
+    &::after {
+      top: 0;
+      right: 0;
+      content: '*';
+      font-weight: bold;
+      position: absolute;
+      font-size: var(--sapFontLargeSize);
+      color: var(--sapField_RequiredColor);
+    }
+
+    @include sap-rtl() {
+      &::after {
+        left: 0;
+        right: auto;
+      }
+    }
+  }
+
+  @if $colon == true {
+    @include sap-set-padding-end(0.25rem);
+
+    &::before {
+      top: 0;
+      right: 0;
+      content: ':';
+      color: inherit;
+      position: absolute;
+      font-size: var(--sapFontSize);
+    }
+
+    @include sap-rtl() {
+      &::before {
+        left: 0;
+        right: auto;
+      }
+    }
+  }
+
+  @if $required == true and $colon == true {
+    @include sap-set-padding-end(0.75rem);
+
+    &::after {
+      top: 0;
+      right: 0;
+      content: '*';
+      font-weight: bold;
+      position: absolute;
+      font-size: var(--sapFontLargeSize);
+      color: var(--sapField_RequiredColor);
+    }
+
+    &::before {
+      top: 0;
+      right: 0.5rem;
+      content: ':';
+      color: inherit;
+      position: absolute;
+      font-size: var(--sapFontSize);
+    }
+
+    @include sap-rtl() {
+      &::before {
+        right: auto;
+        left: 0.5rem;
+      }
+
+      &::after {
+        left: 0;
+        right: auto;
+      }
+    }
+  }
+}
+
+@mixin sap-heading-base() {
+  @include sap-ellipsis();
+
+  margin: 0;
+  line-height: normal;
+  color: var(--sapTextColor);
+  font-size: var(--sapHeading_Font_Size);
+  font-family: var(--sapFontHeaderFamily);
+}
+
+@mixin sap-heading($size) {
+  @if $size == $sap-heading-h1 {
+    @include sap-heading-base();
+
+    --sapHeading_Font_Size: var(--sapFontHeader1Size);
+  } @else if $size == $sap-heading-h2 {
+    @include sap-heading-base();
+
+    --sapHeading_Font_Size: var(--sapFontHeader2Size);
+  } @else if $size == $sap-heading-h3 {
+    @include sap-heading-base();
+
+    --sapHeading_Font_Size: var(--sapFontHeader3Size);
+  } @else if $size == $sap-heading-h4 {
+    @include sap-heading-base();
+
+    --sapHeading_Font_Size: var(--sapFontHeader4Size);
+  } @else if $size == $sap-heading-h5 {
+    @include sap-heading-base();
+
+    --sapHeading_Font_Size: var(--sapFontHeader5Size);
+  } @else if $size == $sap-heading-h6 {
+    @include sap-heading-base();
+
+    --sapHeading_Font_Size: var(--sapFontHeader6Size);
+  } @else {
+    @include sap-heading-base();
+
+    --sapHeading_Font_Size: 1rem;
+  }
+
+  @content;
 }

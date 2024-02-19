@@ -1,3 +1,5 @@
+@use "sass:map";
+
 @import "./mixins";
 @import "./new-settings";
 
@@ -22,6 +24,10 @@ $block: #{$fd-namespace}-step-input;
   display: inline-flex;
   align-items: center;
   padding: 0;
+
+  &--full-width {
+    width: 100%;
+  }
 
   & &__button.#{$fd-namespace}-button {
     width: var(--fdStepInput_Button_Width);

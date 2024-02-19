@@ -1,3 +1,5 @@
+@use "sass:map";
+
 :root {
   --fdProgress_Indicator_Height: 2rem;
   --fdProgress_Indicator_Background_Color_Neutral: var(--sapProgress_Value_Background);

@@ -6,6 +6,11 @@ import { SAPContext } from '../contexts/SAPContext';
 import { contentDensities, directionalities } from 'fundamental-styles/configuration';
 import { getPackage } from 'fundamental-styles/utils';
 
+/**
+ * Main container which wraps any component in the Storybook Docs view
+ * and enriches it with the SAPContext.
+ * This component is a single source of truth for the SAPContext.
+ */
 export const SAPContainer = ({children}) => {
     const channel = useMemo(() => addons.getChannel(), []);
     const docsContext = useContext(DocsContext);

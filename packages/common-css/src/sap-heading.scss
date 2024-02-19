@@ -1,0 +1,34 @@
+@use "sass:map";
+
+@import 'common-settings';
+@import 'common-mixins';
+
+$block: #{$sap-namespace}-heading;
+
+.#{$block} {
+  --sapHeading_Font_Size: 1rem;
+
+  &-1 {
+    @include sap-heading($sap-heading-h1);
+  }
+
+  &-2 {
+    @include sap-heading($sap-heading-h2);
+  }
+
+  &-3 {
+    @include sap-heading($sap-heading-h3);
+  }
+
+  &-4 {
+    @include sap-heading($sap-heading-h4);
+  }
+
+  &-5 {
+    @include sap-heading($sap-heading-h5);
+  }
+
+  &-6 {
+    @include sap-heading($sap-heading-h6);
+  }
+}

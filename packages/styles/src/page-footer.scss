@@ -1,8 +1,9 @@
+@use "sass:map";
+
 @import "./new-settings";
 @import "./mixins";
 
 $block: #{$fd-namespace}-page-footer;
-
 $fd-page-footer-sizes: (
   "xl": ("padding": 3rem),
   "lg": ("padding": 2rem),
@@ -70,8 +71,8 @@ $fd-page-footer-sizes: (
   // sizes
   @each $set-name, $size-set in $fd-page-footer-sizes {
     &--#{$set-name} {
-      padding-right: map-get($size-set, 'padding');
-      padding-left: map-get($size-set, 'padding');
+      padding-right: map.get($size-set, 'padding');
+      padding-left: map.get($size-set, 'padding');
       .#{$block}__container {
         @include fd-flex(column);
 
@@ -80,7 +81,7 @@ $fd-page-footer-sizes: (
     }
   }
 
-  @media (max-width: 768px) {
+  @media (width <= 768px) {
 
     .#{$block}__row {
       margin-right: 0;

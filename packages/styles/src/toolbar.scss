@@ -1,3 +1,5 @@
+@use "sass:map";
+
 @import './new-settings';
 @import './mixins';
 
@@ -88,7 +90,7 @@ $block: #{$fd-namespace}-toolbar;
     }
 
     .#{$block}__overflow-form-label {
-      margin: 0.625rem 0 0.125rem 0;
+      margin: 0.625rem 0 0.125rem;
     }
 
     .#{$block}__overflow-label {
@@ -96,9 +98,11 @@ $block: #{$fd-namespace}-toolbar;
     }
   }
 
-  &__title {
-    color: var(--sapGroup_TitleTextColor);
-    font-size: var(--sapGroup_Title_FontSize);
+  .#{$block} {
+    &__title {
+      --fdTitle_Font_Size: var(--sapGroup_Title_FontSize);
+      --fdTitle_Color: var(--sapGroup_TitleTextColor);
+    }
   }
 
   // Modifiers
@@ -190,6 +194,10 @@ $block: #{$fd-namespace}-toolbar;
 
     &.#{$block}--title {
       --fdToolbar_Height: 2.75rem;
+    }
+
+    &.#{$block}--title-bar {
+      --fdToolbar_Height: auto;
     }
   }
 }

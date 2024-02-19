@@ -3,6 +3,7 @@ import disabledExampleHtml from "./disabled.example.html?raw";
 import focusedExampleHtml from "./focused.example.html?raw";
 import statesExampleHtml from "./states.example.html?raw";
 import primaryExampleHtml from "./primary.example.html?raw";
+import fullWidthExampleHtml from "./full-width.example.html?raw";
 import '../../../src/button.scss';
 import '../../../src/icon.scss';
 import '../../../src/form-item.scss';
@@ -10,7 +11,7 @@ import '../../../src/step-input.scss';
 import '../../../src/form-label.scss';
 import '../../../src/input.scss';
 export default {
-  title: 'Components/StepInput',
+  title: 'Components/Step Input',
   parameters: {
     description: `
 The step input control allows the user to change the input values in predefined increments (steps).
@@ -83,6 +84,16 @@ ReadOnly.parameters = {
   docs: {
     description: {
       story: `Step input can be displayed as read-only by adding the \`is-readonly\` class to the main element.
+        `
+    }
+  }
+};
+
+export const FullWidth = () => fullWidthExampleHtml;
+FullWidth.parameters = {
+  docs: {
+    description: {
+      story: `For Step Input that takes the whole width of the container element add the \`fd-step-input--full-width\` modifier class to the main element.
         `
     }
   }

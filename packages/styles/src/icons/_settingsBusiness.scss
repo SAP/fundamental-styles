@@ -1,5 +1,6 @@
-// business suite icon map
-/* stylelint-disable */
+@use "sass:map";
+
+/* business suite icon map */
 $fd-business-suite-icons: (
   heart: "\e000",
   quarter: "\e001",
@@ -236,5 +237,4 @@ $fd-business-suite-icons: (
   empty-union: "\e183",
   cross-target: "\e184",
   non-stackable: "\e185"
-) !default;
-/* stylelint-enable */
+);

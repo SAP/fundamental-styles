@@ -1,8 +1,9 @@
+@use "sass:map";
+
 @import "./new-settings";
 @import "./mixins";
 
 $block: #{$fd-namespace}-object-number;
-
 $color-states: (
   "positive": ("color": var(--sapPositiveTextColor)),
   "critical": ("color": var(--sapCriticalTextColor)),
@@ -49,7 +50,7 @@ $color-states: (
   @each $set-name, $color-set in $color-states {
     &--#{$set-name} &__text,
     &--#{$set-name} &__unit {
-      color: map_get($color-set, "color");
+      color: map.get($color-set, "color");
     }
   }
 

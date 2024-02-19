@@ -1,8 +1,9 @@
+@use "sass:map";
+
 @import "./new-settings";
 @import "./mixins";
 
 $block: #{$fd-namespace}-message-toast;
-
 $fd-message-toast-max-width: 15rem;
 $fd-message-toast-padding: 1rem;
 $fd-message-toast-border-radius: var(--sapElement_BorderCornerRadius);

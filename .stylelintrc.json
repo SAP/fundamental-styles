@@ -1,8 +1,15 @@
 {
-  "extends": ["stylelint-config-standard"],
+  "extends": ["stylelint-config-standard-scss"],
   "plugins": ["stylelint-scss"],
+  "customSyntax": "postcss-scss",
   "rules": {
     "at-rule-no-unknown": null,
+    "property-no-unknown": null,
+    "custom-property-pattern": null,
+    "import-notation": "string",
+    "selector-id-pattern": null,
+    "selector-class-pattern": null,
+    "function-no-unknown": null,
     "at-rule-empty-line-before": [
       "always",
       {
@@ -11,26 +18,30 @@
         "ignoreAtRules": ["else"]
       }
     ],
-    "block-closing-brace-newline-after": [
-      "always",
-      {
-        "ignoreAtRules": ["if", "else"]
-      }
-    ],
     "color-hex-length": null,
     "block-no-empty": true,
+    "annotation-no-unknown": null,
     "font-family-no-missing-generic-family-keyword": null,
+    "scss/dollar-variable-empty-line-before": null,
     "scss/at-else-closing-brace-newline-after": "always-last-in-chain",
     "scss/at-else-closing-brace-space-after": "always-intermediate",
     "scss/at-else-empty-line-before": "never",
     "scss/at-if-closing-brace-newline-after": "always-last-in-chain",
     "scss/at-if-closing-brace-space-after": "always-intermediate",
-    "scss/at-import-no-partial-leading-underscore": true,
+    "scss/load-no-partial-leading-underscore": true,
     "scss/at-mixin-argumentless-call-parentheses": "always",
     "scss/at-mixin-parentheses-space-before": "never",
     "scss/at-rule-no-unknown": true,
+    "scss/function-no-unknown": [
+        true,
+        {
+            "ignoreFunctions": ["var", "map-deep-get"]
+        }
+    ],
+    "scss/at-mixin-pattern": null,
     "scss/declaration-nested-properties-no-divided-groups": true,
     "scss/declaration-nested-properties": "never",
+    "scss/dollar-variable-pattern": null,
     "scss/dollar-variable-colon-space-after": "always",
     "scss/dollar-variable-colon-space-before": "never",
     "scss/dollar-variable-no-missing-interpolation": true,

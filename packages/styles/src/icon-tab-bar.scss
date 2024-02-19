@@ -1,3 +1,5 @@
+@use "sass:map";
+
 @import './new-settings';
 @import './mixins';
 
@@ -22,7 +24,6 @@ $fd-icon-tab-bar-dnd-separator-circle-horizontal-offset: -0.7rem !default;
 $fd-icon-tab-bar-dnd-separator-circle-vertical-offset: -0.0625rem !default;
 $fd-icon-tab-bar-dnd-separator-circle-size: 0.5rem !default;
 $fd-icon-tab-bar-focus-offset: var(--fdIcon_Tab_Bar_Focus_Offset) !default;
-
 $fd-icon-tab-bar-responsive-paddings: (
   'sm': (
     'padding': 0 1rem
@@ -40,7 +41,6 @@ $fd-icon-tab-bar-responsive-paddings: (
     'padding': 0 3rem
   )
 );
-
 $fd-icon-tab-bar-semantic-values: (
   'negative': (
     'icon': '\e1ec',
@@ -117,7 +117,7 @@ $fd-icon-tab-bar-semantic-values: (
 %semantic-icon-base {
   speak: none;
   font-size: 0.75rem;
-  font-family: 'SAP-icons';
+  font-family: SAP-icons;
   -webkit-font-smoothing: antialiased;
   color: var(--fdIconTabBar_Tag_Icon_Color);
   display: var(--fdIcon_Tab_Bar_Semantic_Icon_Display);
@@ -140,10 +140,7 @@ $fd-icon-tab-bar-semantic-values: (
   &::#{$placement} {
     content: '';
     position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
+    inset: 0;
     display: block;
     border: var(--sapContent_FocusWidth) var(--sapContent_FocusStyle) $outlineColor;
 
@@ -182,20 +179,20 @@ $fd-icon-tab-bar-semantic-values: (
     $semantic-icon-position: -0.9rem;
 
     &--#{$set-name} {
-      --fdIconTabBar_Badge_Background: #{map_get($set-params, 'badgeColor')};
-      --fdIconTabBar_Badge_Background_After: #{map_get($set-params, 'badgeColor')};
-      --fdIconTabBar_Tag_Color: #{map_get($set-params, 'color')};
-      --fdIconTabBar_Tag_Icon_Color: #{map_get($set-params, 'iconColor')};
-      --fdIconTabBar_Tag_Icon_Content: #{map_get($set-params, 'icon')};
-      --fdIconTabBar_Icon_Color: #{map_get($set-params, 'color')};
-      --fdIconTabBar_Icon_Border_Color: #{map_get($set-params, 'color')};
+      --fdIconTabBar_Badge_Background: #{map.get($set-params, 'badgeColor')};
+      --fdIconTabBar_Badge_Background_After: #{map.get($set-params, 'badgeColor')};
+      --fdIconTabBar_Tag_Color: #{map.get($set-params, 'color')};
+      --fdIconTabBar_Tag_Icon_Color: #{map.get($set-params, 'iconColor')};
+      --fdIconTabBar_Tag_Icon_Content: #{map.get($set-params, 'icon')};
+      --fdIconTabBar_Icon_Color: #{map.get($set-params, 'color')};
+      --fdIconTabBar_Icon_Border_Color: #{map.get($set-params, 'color')};
 
       .#{$block}__tag {
         &::before {
           @extend %semantic-icon-base;
 
           margin-right: $semantic-icon-margin;
-          content: map_get($set-params, 'icon');
+          content: map.get($set-params, 'icon');
         }
 
         @include fd-rtl() {
@@ -205,23 +202,23 @@ $fd-icon-tab-bar-semantic-values: (
             @extend %semantic-icon-base;
 
             margin-left: $semantic-icon-margin;
-            content: map_get($set-params, 'icon');
+            content: map.get($set-params, 'icon');
           }
         }
       }
 
       .#{$block}__tab {
         @include fd-hover() {
-          --fdIconTabBar_Tag_Color: #{map_get($set-params, 'color')};
+          --fdIconTabBar_Tag_Color: #{map.get($set-params, 'color')};
         }
 
         @include fd-selected() {
-          --fdIconTabBar_Selection_Bar_Color: #{map_get($set-params, 'color')};
-          --fdIconTabBar_Tag_Color: #{map_get($set-params, 'color')};
-          --fdIconTabBar_Icon_Background: #{map_get($set-params, 'backgroundColor')};
+          --fdIconTabBar_Selection_Bar_Color: #{map.get($set-params, 'color')};
+          --fdIconTabBar_Tag_Color: #{map.get($set-params, 'color')};
+          --fdIconTabBar_Icon_Background: #{map.get($set-params, 'backgroundColor')};
 
           @include fd-hover() {
-            --fdIconTabBar_Tag_Color: #{map_get($set-params, 'color')};
+            --fdIconTabBar_Tag_Color: #{map.get($set-params, 'color')};
           }
         }
       }
@@ -234,7 +231,7 @@ $fd-icon-tab-bar-semantic-values: (
           @extend %semantic-icon-extended;
 
           right: $semantic-icon-position;
-          content: map_get($set-params, 'icon');
+          content: map.get($set-params, 'icon');
         }
 
         @include fd-rtl() {
@@ -246,7 +243,7 @@ $fd-icon-tab-bar-semantic-values: (
 
             right: auto;
             left: $semantic-icon-position;
-            content: map_get($set-params, 'icon');
+            content: map.get($set-params, 'icon');
           }
         }
       }
@@ -521,6 +518,7 @@ $fd-icon-tab-bar-semantic-values: (
 
     &::before {
       left: 0;
+      top: 0.75rem;
       content: '';
       height: 1rem;
       width: 0.0625rem;
@@ -739,6 +737,7 @@ $fd-icon-tab-bar-semantic-values: (
       @include fd-flex-vertical-center();
 
       height: $fd-icon-tab-bar-filter-container-height;
+
       $separator-position: -1 * (0.5rem + $fd-icon-tab-bar-border-thickness);
 
       &::after {
@@ -824,10 +823,7 @@ $fd-icon-tab-bar-semantic-values: (
         content: '';
         display: block;
         position: absolute;
-        top: $fd-icon-tab-bar-overflow-button-focus-offset;
-        left: $fd-icon-tab-bar-overflow-button-focus-offset;
-        right: $fd-icon-tab-bar-overflow-button-focus-offset;
-        bottom: $fd-icon-tab-bar-overflow-button-focus-offset;
+        inset: $fd-icon-tab-bar-overflow-button-focus-offset $fd-icon-tab-bar-overflow-button-focus-offset $fd-icon-tab-bar-overflow-button-focus-offset $fd-icon-tab-bar-overflow-button-focus-offset;
         border-radius: $fd-icon-tab-bar-overflow-button-border-radius;
         border: var(--sapContent_FocusWidth) var(--sapContent_FocusStyle) var(--sapContent_FocusColor);
       }
@@ -875,7 +871,7 @@ $fd-icon-tab-bar-semantic-values: (
 
     &--animated {
       transform: scale(0);
-      animation-name: pulseAppear, pulseDisappear;
+      animation-name: pulse-appear, pulse-disappear;
       animation-duration: 1500ms, 750ms;
       animation-delay: 0ms, 1500ms;
       animation-timing-function: ease-in, ease-out;
@@ -888,13 +884,13 @@ $fd-icon-tab-bar-semantic-values: (
         content: '';
         position: absolute;
         transform: scale(0);
-        animation: pulseAfter 1000ms ease-in;
+        animation: pulse-after 1000ms ease-in;
         animation-delay: 1000ms;
         animation-iteration-count: 1;
         background: var(--fdIconTabBar_Badge_Background_After);
       }
 
-      @keyframes pulseAppear {
+      @keyframes pulse-appear {
         0% {
           transform: scale(0.25);
         }
@@ -912,7 +908,7 @@ $fd-icon-tab-bar-semantic-values: (
         }
       }
 
-      @keyframes pulseDisappear {
+      @keyframes pulse-disappear {
         from {
           transform: scale(1);
         }
@@ -922,7 +918,7 @@ $fd-icon-tab-bar-semantic-values: (
         }
       }
 
-      @keyframes pulseAfter {
+      @keyframes pulse-after {
         0% {
           transform: scale(0);
           opacity: 0;
@@ -1027,7 +1023,7 @@ $fd-icon-tab-bar-semantic-values: (
 
       @each $set-name, $set-params in $fd-icon-tab-bar-semantic-values {
         &--#{$set-name} {
-          @include fd-icon-tab-bar-list-item-color(map_get($set-params, 'color'));
+          @include fd-icon-tab-bar-list-item-color(map.get($set-params, 'color'));
         }
       }
     }
@@ -1046,13 +1042,9 @@ $fd-icon-tab-bar-semantic-values: (
 
     .#{$block}__list-item-icon-container {
       @include fd-flex-center();
-      @include fd-set-margin-right(0.5rem);
+      @include fd-set-margin-right(0.25rem);
 
       width: 1.25rem;
-    }
-
-    .#{$block}__list-item-counter {
-      @include fd-set-padding-left(0.25rem);
     }
 
     .#{$block}__list-link {
@@ -1232,8 +1224,8 @@ $fd-icon-tab-bar-semantic-values: (
               @extend %semantic-icon-base;
 
               margin-right: 0.5rem;
-              content: map_get($set-params, 'icon');
-              color: map_get($set-params, 'iconColor');
+              content: map.get($set-params, 'icon');
+              color: map.get($set-params, 'iconColor');
             }
 
             @include fd-rtl() {
@@ -1245,8 +1237,8 @@ $fd-icon-tab-bar-semantic-values: (
                 @extend %semantic-icon-base;
 
                 margin-left: 0.5rem;
-                content: map_get($set-params, 'icon');
-                color: map_get($set-params, 'iconColor');
+                content: map.get($set-params, 'icon');
+                color: map.get($set-params, 'iconColor');
               }
             }
           }
@@ -1547,7 +1539,7 @@ $fd-icon-tab-bar-semantic-values: (
   @each $set-name, $set-padding in $fd-icon-tab-bar-responsive-paddings {
     &--#{$set-name} {
       .#{$block}__header {
-        padding: map_get($set-padding, 'padding');
+        padding: map.get($set-padding, 'padding');
       }
     }
   }

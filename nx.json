@@ -1,14 +1,4 @@
 {
-    "tasksRunnerOptions": {
-        "default": {
-            "runner": "nx-cloud",
-            "options": {
-                "parallel": 5,
-                "cacheableOperations": ["stylelint", "build", "build-visual"],
-                "accessToken": "MzM5YTVjNjAtNDlkMC00OTg0LWFkM2UtZWM5NDcyYTYzZDcyfHJlYWQ="
-            }
-        }
-    },
     "extends": "nx/presets/npm.json",
     "workspaceLayout": {
         "libsDir": "packages",
@@ -16,10 +6,20 @@
     },
     "targetDefaults": {
         "build": {
-            "dependsOn": ["^build"]
+            "dependsOn": ["^build", "sync-entry"],
+            "cache": true
         },
         "test": {
             "inputs": ["default", "^default", "{workspaceRoot}/jest.preset.js"]
+        },
+        "stylelint": {
+            "cache": true
+        },
+        "build-visual": {
+            "cache": true
+        },
+        "sync-entry": {
+            "cache": true
         }
     },
     "affected": {
@@ -27,11 +27,7 @@
     },
     "namedInputs": {
         "default": ["{projectRoot}/**/*", "sharedGlobals"],
-        "sharedGlobals": [
-            "{workspaceRoot}/package.json",
-            "{workspaceRoot}/tsconfig.json",
-            "{workspaceRoot}/nx.json"
-        ],
+        "sharedGlobals": ["{workspaceRoot}/package.json", "{workspaceRoot}/lerna.json", "{workspaceRoot}/lerna.json", "{workspaceRoot}/tsconfig.json", "{workspaceRoot}/nx.json"],
         "production": [
             "default",
             "!{projectRoot}/**/*.spec.[jt]s",
@@ -50,12 +46,9 @@
             "style": "scss",
             "linter": "eslint",
             "unitTestRunner": "none"
-        },
-        "@nx/react": {
-            "application": {
-                "babel": true
-            }
         }
     },
-    "defaultProject": "theming-preview"
+    "defaultProject": "theming-preview",
+    "nxCloudAccessToken": "MzM5YTVjNjAtNDlkMC00OTg0LWFkM2UtZWM5NDcyYTYzZDcyfHJlYWQ=",
+    "parallel": 5
 }

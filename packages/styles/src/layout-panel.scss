@@ -1,3 +1,5 @@
+@use "sass:map";
+
 @import "./new-settings";
 @import "./mixins";
 
@@ -90,7 +92,6 @@ $fd-layout-panel-element-border: solid 0.0625rem var(--sapGroup_TitleBorderColor
     height: 100%;
     padding: 1rem;
     display: block;
-    border-bottom: $fd-layout-panel-element-border;
 
     &--full-bleed,
     &--bleed {
@@ -111,6 +112,7 @@ $fd-layout-panel-element-border: solid 0.0625rem var(--sapGroup_TitleBorderColor
     @include fd-flex-horizontal-center();
 
     padding: 0.5rem 1rem;
+    border-top: $fd-layout-panel-element-border;
 
     &--end {
       justify-content: flex-end;

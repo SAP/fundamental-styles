@@ -1,3 +1,5 @@
+@use "sass:map";
+
 :root {
   --fdInput_Box_Shadow_Hover: none;
   --fdInput_Outline_Color: var(--sapContent_FocusColor);

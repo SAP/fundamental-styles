@@ -1,3 +1,5 @@
+@use "sass:map";
+
 @import "./mixins";
 @import "./avatar-variables";
 
@@ -41,15 +43,21 @@ $block: #{$fd-namespace}-avatar;
     }
 
     @include fd-active() {
-      --fdAvatarBorderColor: var(--sapButton_Selected_BorderColor);
-      --fdAvatarBackgroundColor: var(--sapButton_Selected_Background);
-      --fdAvatarColor: var(--sapButton_Selected_TextColor);
+      --fdAvatarBorderColor: var(--sapButton_Active_BorderColor);
+      --fdAvatarBackgroundColor: var(--sapButton_Active_Background);
+      --fdAvatarColor: var(--sapButton_Active_TextColor);
+
+      @include fd-hover() {
+        --fdAvatarBorderColor: var(--sapButton_Selected_Hover_BorderColor);
+        --fdAvatarBackgroundColor: var(--sapButton_Selected_Hover_Background);
+        --fdAvatarColor: var(--sapButton_Selected_TextColor);
+      }
     }
 
     @include fd-toggled() {
-      --fdAvatarBorderColor: var(--sapButton_Selected_BorderColor);
-      --fdAvatarBackgroundColor: var(--sapButton_Selected_Background);
-      --fdAvatarColor: var(--sapButton_Selected_TextColor);
+      --fdAvatarBorderColor: var(--sapButton_Active_BorderColor);
+      --fdAvatarBackgroundColor: var(--sapButton_Active_Background);
+      --fdAvatarColor: var(--sapButton_Active_TextColor);
 
       @include fd-hover() {
         --fdAvatarBorderColor: var(--sapButton_Selected_Hover_BorderColor);
@@ -90,9 +98,9 @@ $block: #{$fd-namespace}-avatar;
 
     @each $set-name, $color-set in $fd-avatar-value-states {
       &--#{$set-name} {
-        --fdAvatarZoomIconColor: #{map_get($color-set, "color")};
-        --fdAvatarZoomIconBorderColor: #{map_get($color-set, "border")};
-        --fdAvatarZoomIconBackground: #{map_get($color-set, "background")};
+        --fdAvatarZoomIconColor: #{map.get($color-set, "color")};
+        --fdAvatarZoomIconBorderColor: #{map.get($color-set, "border")};
+        --fdAvatarZoomIconBackground: #{map.get($color-set, "background")};
       }
     }
   }
@@ -187,25 +195,25 @@ $block: #{$fd-namespace}-avatar;
   @each $set-name, $color-set in $fd-avatar-accent-colors {
     &--accent-color-#{$set-name}.#{$block}--overflow,
     &--accent-color-#{$set-name} {
-      --fdAvatarBorderColor: #{map_get($color-set, "border")};
-      --fdAvatarColor: #{map_get($color-set, "text-color")};
-      --fdAvatarBackgroundColor: #{map_get($color-set, "background-color")};
-      --fdAvatarHoverBorderColor: #{map_get($color-set, "border-color-hover")};
-      --fdAvatarHoverBackgroundColor: #{map_get($color-set, "background-color-hover")};
+      --fdAvatarBorderColor: #{map.get($color-set, "border")};
+      --fdAvatarColor: #{map.get($color-set, "text-color")};
+      --fdAvatarBackgroundColor: #{map.get($color-set, "background-color")};
+      --fdAvatarHoverBorderColor: #{map.get($color-set, "border-color-hover")};
+      --fdAvatarHoverBackgroundColor: #{map.get($color-set, "background-color-hover")};
     }
   }
 
   @each $set-name, $size-set in $fd-avatar-sizes {
     &--#{$set-name} {
-      --fdAvatarZoomIconOffset: #{map_get($size-set, "offset")};
-      --fdAvatarRatio: #{map_get($size-set, "ratio")};
-      --fdAvatarFontSize: #{map_get($size-set, "font-size")};
-      --fdAvatarFontStretch: #{map_get($size-set, "fontStretch")};
+      --fdAvatarZoomIconOffset: #{map.get($size-set, "offset")};
+      --fdAvatarRatio: #{map.get($size-set, "ratio")};
+      --fdAvatarFontSize: #{map.get($size-set, "font-size")};
+      --fdAvatarFontStretch: #{map.get($size-set, "fontStretch")};
 
       .#{$block}__zoom-icon {
         @include fd-icon-selector() {
-          --fdAvatarZoomIconDimensions: #{map_get($size-set, "zoomIconDimensions")};
-          --fdAvatarZoomIconFontSize: #{map_get($size-set, "zoomIconFontSize")};
+          --fdAvatarZoomIconDimensions: #{map.get($size-set, "zoomIconDimensions")};
+          --fdAvatarZoomIconFontSize: #{map.get($size-set, "zoomIconFontSize")};
         }
       }
     }

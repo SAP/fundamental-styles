@@ -1,5 +1,6 @@
-// icon map
-/* stylelint-disable */
+@use "sass:map";
+
+/* icon map */
 $fd-tnt-icons: (
     technicalsystem: '\e000',
     systemjava: '\e001',
@@ -174,5 +175,4 @@ $fd-tnt-icons: (
     ai-1: '\e10b',
     ai-2: '\e10c',
     bound-validation-rule: '\e10d'
-) !default;
-/* stylelint-enable */
+);

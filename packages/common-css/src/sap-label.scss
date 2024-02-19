@@ -1,0 +1,20 @@
+@use "sass:map";
+
+@import 'common-settings';
+@import 'common-mixins';
+
+.#{$sap-namespace}-label {
+  @include sap-label();
+}
+
+.#{$sap-namespace}-label-required {
+  @include sap-label($required: true);
+}
+
+.#{$sap-namespace}-label-colon {
+  @include sap-label($colon: true);
+}
+
+.#{$sap-namespace}-label-colon-required {
+  @include sap-label($required: true, $colon: true);
+}

@@ -1,8 +1,16 @@
+@use "sass:map";
+
 @import "./list-definitions";
 
 .#{$block} {
   &--navigation {
     @include fd-list-reset-item-paddings();
+
+    &.fd-icon-tab-bar__list {
+      .#{$block}__link {
+        gap: 0.25rem;
+      }
+    }
 
     .#{$block}__link {
       @include fd-set-paddings-x(var(--fdList_Navigation_Link_Padding_Left, #{$fd-list-item-padding-x}), var(--fdList_Navigation_Link_Padding_Right, #{$fd-list-item-padding-x}));

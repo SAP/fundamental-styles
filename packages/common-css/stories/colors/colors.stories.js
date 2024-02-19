@@ -1,12 +1,13 @@
 import '../../src/sap-colors.scss';
+import textColorExampleHtml from './text-color.example.html?raw';
+import backgroundColorExampleHtml from './background-color.example.html?raw';
 
 export default {
     title: 'Colors',
     parameters: {
-        description: '',
+        description: ''
     }
 };
-
 const localStyles = `
 <style>
     div.demo {
@@ -16,26 +17,10 @@ const localStyles = `
     }
 </style>
 `;
-export const TextColor = () => `${localStyles}
-<h3>brandColor (--sapBrandColor)</h3>
-<div class="sap-color-brandColor">TEXT</div>
-<br>
-<h3>positiveTextColor (--sapPositiveTextColor)</h3>
-<div class="sap-color-positiveTextColor">TEXT</div>
-<br>
-<h3>criticalTextColor (--sapCriticalTextColor)</h3>
-<div class="sap-color-criticalTextColor">TEXT</div>
-<br>
-<h3>negativeTextColor (--sapNegativeTextColor)</h3>
-<div class="sap-color-negativeTextColor">TEXT</div>
-<br>
-<h3>informativeTextColor (--sapInformativeTextColor)</h3>
-<div class="sap-color-informativeTextColor">TEXT</div>
-<br>
-<h3>neutralTextColor (--sapNeutralTextColor)</h3>
-<div class="sap-color-neutralTextColor">TEXT</div>
+export const TextColor = () => `
+${localStyles}
+${textColorExampleHtml}
 `;
-
 TextColor.parameters = {
     docs: {
         description: {
@@ -46,27 +31,10 @@ TextColor.parameters = {
         }
     }
 };
-
-export const BackgroundColor = () => `${localStyles}
-<h3>brandColor (--sapBrandColor)</h3>
-<div class="demo sap-bg-color-brandColor"></div>
-<br>
-<h3>errorBackground (--sapErrorBackground)</h3>
-<div class="demo sap-bg-color-errorBackground"></div>
-<br>
-<h3>warningBackground (--sapWarningBackground)</h3>
-<div class="demo sap-bg-color-warningBackground"></div>
-<br>
-<h3>successBackground (--sapSuccessBackground)</h3>
-<div class="demo sap-bg-color-successBackground"></div>
-<br>
-<h3>informationBackground (--sapInformationBackground)</h3>
-<div class="demo sap-bg-color-informationBackground"></div>
-<br>
-<h3>neutralBackground (--sapNeutralBackground)</h3>
-<div class="demo sap-bg-color-neutralBackground"></div>
+export const BackgroundColor = () => `
+${localStyles}
+${backgroundColorExampleHtml}
 `;
-
 BackgroundColor.parameters = {
     docs: {
         description: {

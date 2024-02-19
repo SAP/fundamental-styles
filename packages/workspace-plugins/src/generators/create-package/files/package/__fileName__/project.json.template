@@ -18,12 +18,22 @@
                 }
             }
         },
-        "lint": {
-            "executor": "@nx/linter:eslint",
-            "outputs": ["{options.outputFile}"],
+        "sync-entry": {
+            "executor": "workspace-plugins:sync-components",
             "options": {
-                "lintFilePatterns": ["packages/<%- fileName %>/**/*.ts"]
-            }
+                "entry": "{projectRoot}/src/fundamental-<%- fileName %>.scss",
+                "include": [
+                    "{projectRoot}/src/*.scss"
+                ],
+                "exclude": [
+                    "{options.entry}"
+                ]
+            },
+            "outputs": ["{options.entry}"]
+        },
+        "lint": {
+            "executor": "@nx/eslint:lint",
+            "outputs": ["{options.outputFile}"]
         },
         "stylelint": {
             "executor": "nx-stylelint:lint",

@@ -1,4 +1,4 @@
-const { styled } = require('@storybook/theming');
+import { styled } from '@storybook/theming';
 
 const IconButtonLabel = styled.div(({ theme }) => ({
     fontSize: theme.typography.size.s2 - 1,

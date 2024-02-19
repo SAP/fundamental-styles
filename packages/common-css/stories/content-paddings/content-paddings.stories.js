@@ -1,4 +1,8 @@
 import '../../src/sap-content-paddings.scss';
+import '../../src/sap-container-type.scss';
+import homeExampleHtml from './home.example.html?raw';
+import containerExampleHtml from './container.example.html?raw';
+
 export default {
     title: 'Content Paddings',
     parameters: {
@@ -21,31 +25,9 @@ const localStyles = `
     }
 </style>
 `;
-export const HomeExample = () => `${localStyles}
-<h3>Responsive</h3>
-<div class="demo sap-content-paddings-home">
-    <div></div>
-</div>
-<br>
-<h3>Size SM</h3>
-<div class="demo sap-content-paddings-home-sm">
-    <div></div>
-</div>
-<br>
-<h3>Size MD</h3>
-<div class="demo sap-content-paddings-home-md">
-    <div></div>
-</div>
-<br>
-<h3>Size LG</h3>
-<div class="demo sap-content-paddings-home-lg">
-    <div></div>
-</div>
-<br>
-<h3>Size XL</h3>
-<div class="demo sap-content-paddings-home-xl">
-    <div></div>
-</div>
+export const HomeExample = () => `
+${localStyles}
+${homeExampleHtml}
 `;
 HomeExample.storyName = 'Home (content area)';
 HomeExample.parameters = {
@@ -65,28 +47,28 @@ HomeExample.parameters = {
     <tbody>
     <tr>
         <td style="padding: 0.25rem;">SM</td>
-        <td style="padding: 0.25rem;">max-widtd: 599px</td>
+        <td style="padding: 0.25rem;">max-width: 599px</td>
         <td style="padding: 0.25rem;">padding-left: 0.5rem; <br>padding-right: 0.5rem;</td>
         <td style="padding: 0.25rem;">.sap-content-paddings-home-sm</td>
         <td style="padding: 0.25rem;">@include sap-content-paddings(home, sm);</td>
     </tr>
     <tr>
         <td style="padding: 0.25rem;">MD</td>
-        <td style="padding: 0.25rem;">min-widtd: 600px, <br>max-widtd: 1023px</td>
+        <td style="padding: 0.25rem;">min-width: 600px, <br>max-width: 1023px</td>
         <td style="padding: 0.25rem;">padding-left: 2rem; <br>padding-right: 2rem;</td>
         <td style="padding: 0.25rem;">.sap-content-paddings-home-md</td>
         <td style="padding: 0.25rem;">@include sap-content-paddings(home, md);</td>
     </tr>
     <tr>
         <td style="padding: 0.25rem;">LG</td>
-        <td style="padding: 0.25rem;">min-widtd: 1024px, <br>max-widtd: 1439px</td>
+        <td style="padding: 0.25rem;">min-width: 1024px, <br>max-width: 1439px</td>
         <td style="padding: 0.25rem;">padding-left: 2rem; <br>padding-right: 2rem;</td>
         <td style="padding: 0.25rem;">.sap-content-paddings-home-lg</td>
         <td style="padding: 0.25rem;">@include sap-content-paddings(home, lg);</td>
     </tr>
     <tr>
         <td style="padding: 0.25rem;">XL</td>
-        <td style="padding: 0.25rem;">min-widtd: 1440px</td>
+        <td style="padding: 0.25rem;">min-width: 1440px</td>
         <td style="padding: 0.25rem;">padding-left: 3rem; <br>padding-right: 3rem;</td>
         <td style="padding: 0.25rem;">.sap-content-paddings-home-xl</td>
         <td style="padding: 0.25rem;">@include sap-content-paddings(home, xl);</td>
@@ -104,31 +86,9 @@ HomeExample.parameters = {
     }
 };
 
-export const ContainerExample = () => `${localStyles}
-<h3>Responsive</h3>
-<div class="demo sap-content-paddings-container">
-    <div></div>
-</div>
-<br>
-<h3>Size SM</h3>
-<div class="demo sap-content-paddings-container-sm">
-    <div></div>
-</div>
-<br>
-<h3>Size MD</h3>
-<div class="demo sap-content-paddings-container-md">
-    <div></div>
-</div>
-<br>
-<h3>Size LG</h3>
-<div class="demo sap-content-paddings-container-lg">
-    <div></div>
-</div>
-<br>
-<h3>Size XL</h3>
-<div class="demo sap-content-paddings-container-xl">
-    <div></div>
-</div>
+export const ContainerExample = () => `
+${localStyles}
+${containerExampleHtml}
 `;
 ContainerExample.storyName = 'Content containers';
 ContainerExample.parameters = {

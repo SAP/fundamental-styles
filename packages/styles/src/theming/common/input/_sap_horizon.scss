@@ -1,3 +1,5 @@
+@use "sass:map";
+
 :root {
   --fdInput_Box_Shadow_Hover: var(--sapField_Hover_Shadow);
   --fdInput_Outline_Color: var(--sapField_Active_BorderColor);

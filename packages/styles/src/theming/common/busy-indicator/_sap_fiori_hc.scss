@@ -1,3 +1,5 @@
+@use "sass:map";
+
 :root {
   --fdBusy_Indicator_Dot_Color: var(--sapContent_BusyColor);
   --fdBusy_Indicator_Dot_Contrast_Color: var(--sapContent_BusyColor);

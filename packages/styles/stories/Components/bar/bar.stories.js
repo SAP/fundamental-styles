@@ -15,12 +15,11 @@ import '../../../src/title.scss';
 export default {
   title: 'Components/Bar',
   parameters: {
-    description: `The bar component is a container that holds titles, buttons and input controls. Its contents are distributed into three areas: left, middle and right. This component’s primary function is to display page **headers** and **footers**. It is mainly used to construct a **Page**, and acts as a building block for other components like **Dialog**, **Popover** etc.
-        <br><br>
+    description: `The bar component is a container that holds titles, buttons and input controls. Its contents are distributed into three areas: left, middle and right. This component’s primary function is to display page **headers** and **footers**. It is mainly used to construct a **Page**, and acts as a building block for other components like **Dialog**, **Popover** etc. A bar can be designed as an Header, Subheader, Fixed Footer or Floating Footer. <br><br>
 
 **The bar component has two modes:**
 
-- Default (desktop)
+- Compact
 - Cozy (tablet and mobile)
 
 ## Usage
@@ -54,14 +53,14 @@ Modifier classes are available to adjust the paddings of the bar when it is bein
 
 | **Padding** | &nbsp;&nbsp; **Amount** | **Modifier class** |
 | :--------- | ----------: | :----------------------- | ---------------: |
-| S | &nbsp;&nbsp; 1rem | \`--page-s\` |
-| S | &nbsp;&nbsp; 1rem | \`--home-page-s\` |
-| M_L | &nbsp;&nbsp; 2rem | \`--page-m_l\` |
-| M_L | &nbsp;&nbsp; 2rem | \`--home-page-m_l\` |
-| XL | &nbsp;&nbsp; 3rem | \`--page-xl\` |
-| XL | &nbsp;&nbsp; 3rem | \`--home-page-xl\` |
+| S / SM      | &nbsp;&nbsp; 1rem | \`fd-bar--page-s\` **or** \`fd-bar--page-sm\` |
+| S / SM      | &nbsp;&nbsp; 1rem | \`fd-bar--home-page-s\` **or** \`fd-bar--home-page-sm\` |
+| M_L / MD_LG | &nbsp;&nbsp; 2rem | \`fd-bar--page-m_l\` **or** \`fd-bar--page-md_lg\` |
+| M_L / MD_LG | &nbsp;&nbsp; 2rem | \`fd-bar--home-page-m_l\` **or** \`fd-bar--home-page-md_lg\` |
+| XL          | &nbsp;&nbsp; 3rem | \`fd-bar--page-xl\` |
+| XL          | &nbsp;&nbsp; 3rem | \`fd-bar--home-page-xl\` |
         `,
-    tags: ['f3', 'a11y', 'theme']
+    tags: ['v1']
   }
 };
 export const Default = () => defaultExampleHtml;
@@ -70,7 +69,7 @@ Default.parameters = {
     story: {
     },
     description: {
-      story: 'The default bar contains a back button, page title, segmented button and product switch button. It can be displayed by using the `fd-bar` class, and is responsive to desktop screen sizes. The default bar is in compact mode.'
+      story: 'The default bar contains a back button, page title, segmented button and product switch button.'
     }
   }
 };
@@ -81,7 +80,7 @@ Responsive.parameters = {
     story: {
     },
     description: {
-      story: 'The bar can be made responsive with the `--responsive-paddings` modifier class. The paddings will automatically change with the screen size.'
+      story: 'Responsive paddings can be added to the Bar component with the `fd-bar--responsive-paddings` modifier class. The value of the paddings will automatically change depending on the screen size.'
     }
   }
 };
@@ -91,7 +90,7 @@ Header.parameters = {
     story: {
     },
     description: {
-      story: 'The header bar contains actions that impact the entire page. It can be displayed by adding the `--header` modifier class to the container element.'
+      story: 'For Bar designed as a **Header** add the `fd-bar--header` modifier class to the `fd-bar` base class.'
     }
   }
 };
@@ -101,7 +100,7 @@ Subheader.parameters = {
     story: {
     },
     description: {
-      story: 'To change the header bar into a subheader, add the `--subheader` modifier class to the container element.'
+      story: 'For Bar designed as a **Subheader** add the `fd-bar--subheader` modifier class to the `fd-bar` base class.'
     }
   }
 };
@@ -111,7 +110,7 @@ HeaderWithSubheader.parameters = {
     story: {
     },
     description: {
-      story: 'To add a subheader under a header bar, the container element should have the `--header-with-subheader` modifier class, which will remove the element’s box shadow.'
+      story: 'When combining Header + Subheader underneath only the subheader will get the shadow and not the header. For this type of Bar design use the `fd-bar--header-with-subheader` modifier class. '
     }
   }
 };
@@ -121,7 +120,7 @@ Footer.parameters = {
     story: {
     },
     description: {
-      story: 'The footer bar should display only closing and finalizing action buttons that impact the entire page such as *Save* or *Cancel*. It can be displayed by adding the `--footer` modifier class to the container element.'
+      story: 'The **Footer** design is achieved by adding the `fd-bar--footer` modifier class to the `fd-bar` base class.'
     }
   }
 };
@@ -131,7 +130,7 @@ FloatingFooter.parameters = {
     story: {
     },
     description: {
-      story: 'The floating footer bar should also display only finalizing action buttons that impact the entire page. This type floats above the page at the bottom of the screen and is always visible when scrolling. It can be displayed by adding the `--floating-footer` modifier class to the container element.'
+      story: 'The **Floating Footer** floats above the page at the bottom of the screen and is always visible when scrolling. For this type of Bar design add the `fd-bar--floating-footer` modifier class to the `fd-bar` base class.'
     }
   }
 };

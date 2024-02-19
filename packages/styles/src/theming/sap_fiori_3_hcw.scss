@@ -1,3 +1,5 @@
+@use "sass:map";
+
 @import "../icons/settings";
 @import "./common/switch/sap_fiori_hc";
 @import "./common/button/sap_fiori_hc";
@@ -50,17 +52,17 @@
 
 :root {
   /* BTP */
-  --sapMenu_Shadow1: 0 0 0 0.0625rem #000, 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.16);
-  --sapMenu_Shadow2: 0 0 0 0.0625rem #000, 0 1rem 2rem 0 rgba(0, 0, 0, 0.16);
-  --sapNotifications_Shadow2: 0 0 0 0.0625rem #000, 0 1rem 2rem 0 rgba(0, 0, 0, 0.16);
-  --sapSearchHover_Shadow: 0 0 0 0.0625rem #000, 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.16);
+  --sapMenu_Shadow1: 0 0 0 0.0625rem #000, 0 0.5rem 1rem 0 rgb(0 0 0 / 16%);
+  --sapMenu_Shadow2: 0 0 0 0.0625rem #000, 0 1rem 2rem 0 rgb(0 0 0 / 16%);
+  --sapNotifications_Shadow2: 0 0 0 0.0625rem #000, 0 1rem 2rem 0 rgb(0 0 0 / 16%);
+  --sapSearchHover_Shadow: 0 0 0 0.0625rem #000, 0 0.5rem 1rem 0 rgb(0 0 0 / 16%);
   --sapMenu_Background: var(--sapList_Background);
   --sapMenu_Hover_Background: var(--sapList_Hover_Background);
   --sapMenu_Active_Background: var(--sapList_Active_Background);
   --sapMenu_Selected_Background: var(--sapList_SelectionBackgroundColor);
   --fdOverlay_Background_Opacity: 0.8;
-  --sapNavigation_Shadow1: 0 0 0 0.0625rem #000, 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.16);
-  --sapNavigation_Shadow2: 0 0 0 0.0625rem #000, 0 1rem 2rem 0 rgba(0, 0, 0, 0.16);
+  --sapNavigation_Shadow1: 0 0 0 0.0625rem #000, 0 0.5rem 1rem 0 rgb(0 0 0 / 16%);
+  --sapNavigation_Shadow2: 0 0 0 0.0625rem #000, 0 1rem 2rem 0 rgb(0 0 0 / 16%);
   --sapNavigation_Background: var(--sapList_Background);
   --sapNavigation_Hover_Background: var(--sapList_Hover_Background);
   --sapNavigation_Active_Background: var(--sapList_Active_Background);
@@ -202,8 +204,8 @@
   --sapIllus_BackgroundColor: var(--sapContent_Illustrative_Color7);
   --sapIllus_ObjectFillColor: var(--sapContent_Illustrative_Color8);
   --sapIllus_NoColor: none;
-  --sapIllus_PatternShadow: url(#sapIllus_PatternShadow);
-  --sapIllus_PatternHighlight: url(#sapIllus_PatternHighlight);
+  --sapIllus_PatternShadow: url("#sapIllus_PatternShadow");
+  --sapIllus_PatternHighlight: url("#sapIllus_PatternHighlight");
 
   /** Text */
   --fdText_Selected_Background_Color: var(--sapSelectedColor);
@@ -226,5 +228,7 @@
 
   /** Tool Layout */
   --fdToolLayout_Background: var(--sapBackgroundColor);
-  --sapToolLayoutContent_Shadow1: 0 0 0 0.0625rem #000, 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.16);
+
+  /** Splitter */
+  --sapSplitPane_Shadow1: 0 0 0 0.0625rem #000, 0 0.5rem 1rem 0 rgb(0 0 0 / 16%);
 }

@@ -1,3 +1,5 @@
+@use "sass:map";
+
 @import "./new-settings";
 @import "./mixins";
 
@@ -5,6 +7,7 @@ $block: #{$fd-namespace}-panel;
 
 .#{$block} {
   --fdPanel_Header_Height: 2.75rem;
+
   $fd-panel-header-right-padding: 0.5rem;
   $fd-panel-header-fixed-left-padding: 1rem;
 
@@ -44,7 +47,7 @@ $block: #{$fd-namespace}-panel;
   &__content {
     @include fd-scrollbar(var(--fdScrollbar_Border_Radius));
 
-    padding: 0.625rem 1rem 0.625rem 1rem;
+    padding: 0.625rem 1rem;
     overflow: auto;
     border-bottom: solid 0.0625rem var(--fdPanel_Content_Border_Bottom_Color);
     background: var(--fdPanel_Content_Background_Color);

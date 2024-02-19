@@ -6,14 +6,6 @@ const communityUrls = [
     {
         url: 'https://sap.github.io/fundamental-ngx/',
         title: <>Fundamental Library for <strong>Angular</strong></>
-    },
-    {
-        url: 'https://sap.github.io/fundamental-react/',
-        title: <>Fundamental Library for <strong>React</strong></>
-    },
-    {
-        url: 'https://sap.github.io/fundamental-vue/',
-        title: <>Fundamental Library for <strong>Vue</strong></>
     }
 ];
 
@@ -37,17 +29,13 @@ const Community = () => {
                         src='./assets/github.png' alt='github logo'/>github.com/sap/fundamental-styles</a>
                 </li>
                 <li>
-                    <a href='https://twitter.com/fundamental_lib' target='_blank' rel="noreferrer"><img
-                        src='./assets/twitter.png' alt='twitter logo'/>twitter.com/fundamental_lib</a>
-                </li>
-                <li>
                     <a href='https://join.slack.com/t/ui-fundamentals/shared_invite/enQtNTIzOTU0Mzc2NTc5LWQzZWI5MWFhYjE5OTc4YzliN2JhOTc1ZjQxZTg1YjZiMWZiYzRkNjMwYzgyMmFkYmNhZDVjMWE5MDIzOWEzMmM'
                        target='_blank' rel="noreferrer">
                         <img src='./assets/slack.png' alt='slack logo'/>ui-fundamentals-slack.com</a>
                 </li>
                 <li>
                     <a href='https://linkedin.com/company/sap-graph/' target='_blank' rel="noreferrer">
-                        <img src='./assets/linkedin.png' alt='linkedin logo'/>
+                        <img src='./assets/linkedin.png' alt='linkedin logo'/>Linkedin
                     </a>
                 </li>
             </ul>

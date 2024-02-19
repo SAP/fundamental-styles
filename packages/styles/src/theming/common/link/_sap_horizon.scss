@@ -1,3 +1,5 @@
+@use "sass:map";
+
 :root {
   --fdLink_Text_Content_Decoration: var(--sapLink_TextDecoration);
   --fdLink_Text_Content_Decoration_Subtle: underline;

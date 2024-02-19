@@ -1,16 +1,16 @@
+@use "sass:map";
+
 @import './new-settings';
 @import './mixins';
 
 $block: #{$fd-namespace}-grid-list;
 $block-item: #{$block}__item;
-
 $fd-grid-list-selection-border-color: var(--sapList_SelectionBorderColor);
 $fd-grid-list-border-radius: var(--fdGrid_List_Item_Border_Radius);
 $fd-grid-list-active-text-color: var(--sapList_Active_TextColor);
 $fd-grid-list-item-box-shadow: var(--sapContent_Shadow0);
 $fd-grid-list-item-active-background-color: var(--sapList_Active_Background);
 $fd-grid-list-item-hover-background-color: var(--sapList_Hover_Background);
-
 $fd-grid-list-highlight: (
   'positive': ('backgroundColor': var(--sapSuccessBorderColor)),
   'negative': ('backgroundColor': var(--sapErrorBorderColor)),
@@ -20,7 +20,7 @@ $fd-grid-list-highlight: (
 
 @mixin fd-grid-list-item-interactive($setActive) {
   @include fd-hover() {
-    box-shadow: 0 0 0 0.0625rem var(--fdGrid_List_Item_Hover_Border_Color);
+    box-shadow: 0 0 0 0.0625rem var(--fdGrid_List_Item_Hover_Border_Color), var(--sapContent_Shadow2);
     background-color: $fd-grid-list-item-hover-background-color;
   }
 
@@ -314,7 +314,7 @@ $fd-grid-list-highlight: (
 
     @each $set-name, $colors in $fd-grid-list-highlight {
       &--#{$set-name} {
-        background-color: map_get($colors, 'backgroundColor');
+        background-color: map.get($colors, 'backgroundColor');
       }
     }
   }

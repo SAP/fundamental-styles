@@ -1,9 +1,9 @@
 import '../../src/sap-border-radius.scss';
-
+import borderRadiusExampleHtml from './border-radius.example.html?raw'
 export default {
-    title: 'Border Radius',
-    parameters: {
-        description: `
+  title: 'Border Radius',
+  parameters: {
+    description: `
 <table style="width: 100%; border-collapse: collapse; margin-top: 1rem;">
     <thead>
         <tr>
@@ -59,40 +59,9 @@ Example: <br>
 <code>@include sap-border-radius(1rem 0.5rem)</code><br>
 <code>@include sap-border-radius(1rem 0.5rem 0.25rem)</code><br>
 <code>@include sap-border-radius(1rem 0.5rem 0.25rem 0.25rem)</code><br>
-      `,
-    }
+      `
+  }
 };
 
-const localStyles = `
-<style>
-    div.demo {
-        display: flex;
-        height: 4rem;
-        width: 8rem;
-        background: #69ADF8;
-    }
-</style>
-`;
-export const BorderRadius = () => `${localStyles}
-<h3>Element</h3>
-<div class="demo sap-border-radius-element"></div>
-<br>
-<h3>Button</h3>
-<div class="demo sap-border-radius-button"></div>
-<br>
-<h3>Field</h3>
-<div class="demo sap-border-radius-field"></div>
-<br>
-<h3>Group</h3>
-<div class="demo sap-border-radius-group"></div>
-<br>
-<h3>Popover</h3>
-<div class="demo sap-border-radius-popover"></div>
-<br>
-<h3>Tile</h3>
-<div class="demo sap-border-radius-tile"></div>
-<br>
-<h3>None</h3>
-<div class="demo sap-border-radius-none"></div>
-`;
+export const BorderRadius = () => borderRadiusExampleHtml;
 BorderRadius.storyName = 'Border Radius Types';

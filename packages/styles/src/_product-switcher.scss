@@ -1,3 +1,5 @@
+@use "sass:map";
+
 @import "./new-settings";
 @import "./mixins";
 
@@ -19,7 +21,7 @@ $block-product-switcher: #{$fd-namespace}-product-switcher;
   &__body {
     @include fd-reset();
 
-    padding: 20px 10px 0 10px;
+    padding: 20px 10px 0;
     color: initial;
 
     &--list {
@@ -39,7 +41,7 @@ $block-product-switcher: #{$fd-namespace}-product-switcher;
       width: $fd-product-switcher-product-width + 10;
       text-align: center;
       padding: 0 5px;
-      margin: 0 0 30px 0;
+      margin: 0 0 30px;
 
       @include fd-rtl() {
         float: right;
@@ -53,7 +55,7 @@ $block-product-switcher: #{$fd-namespace}-product-switcher;
 
       display: block;
       height: $fd-product-switcher-product-height;
-      margin: 0 0 10px 0;
+      margin: 0 0 10px;
 
       > * {
         display: block;

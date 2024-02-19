@@ -16,6 +16,16 @@
                         "glob": "_common-mixins.scss",
                         "input": "packages/common-css/src",
                         "output": "dist/sass"
+                    },
+                    {
+                        "glob": "_common-variables.scss",
+                        "input": "packages/common-css/src",
+                        "output": "dist/sass"
+                    },
+                    {
+                        "glob": "_common-settings.scss",
+                        "input": "packages/common-css/src",
+                        "output": "dist/sass"
                     }
                 ]
             },
@@ -25,12 +35,25 @@
                 }
             }
         },
-        "lint": {
-            "executor": "@nx/linter:eslint",
-            "outputs": ["{options.outputFile}"],
+        "sync-entry": {
+            "executor": "workspace-plugins:sync-components",
             "options": {
-                "lintFilePatterns": ["packages/common-css/**/*.ts"]
-            }
+                "entry": "{projectRoot}/src/common-css.scss",
+                "include": [
+                    "{projectRoot}/src/*.scss",
+                    "packages/styles/src/layout-grid.scss"
+                ],
+                "exclude": [
+                    "{options.entry}",
+                    "{projectRoot}/src/_common-mixins.scss",
+                    "{projectRoot}/src/_common-variables.scss"
+                ]
+            },
+            "outputs": ["{options.entry}"]
+        },
+        "lint": {
+            "executor": "@nx/eslint:lint",
+            "outputs": ["{options.outputFile}"]
         },
         "stylelint": {
             "executor": "nx-stylelint:lint",

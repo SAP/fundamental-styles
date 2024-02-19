@@ -31,7 +31,7 @@ export default {
 
 Use the **AvatarGroup** if:
 
-- You want to display a group of avatars.
+- You want to display a group of avatars (more than two).
 - You want to display several avatars which have something in common.
 
 Do not use the **AvatarGroup** if:
@@ -46,11 +46,11 @@ Do not use the **AvatarGroup** if:
 The spacing between the items depends on the size of the avatars in the group. 
 
 | **Size** | &nbsp;&nbsp; **Group type** | &nbsp;&nbsp; **Individual type** | **Modifier class** |
-| :---------: | :----------: | :-----------------------: | :---------------: |
+| :---------: | :----------: | :-----------------------: | :--------------- |
 | XS | &nbsp;&nbsp; -0.75rem | &nbsp;&nbsp; 0.0625rem | \`fd-avatar-group--xs\` |
-| S | &nbsp;&nbsp; -1.25rem | &nbsp;&nbsp; 0.125rem | \`fd-avatar-group--s\` |
-| M | &nbsp;&nbsp; -1.625rem | &nbsp;&nbsp; 0.125rem | \`fd-avatar-group--m\` |
-| L | &nbsp;&nbsp; -2rem | &nbsp;&nbsp; 0.125rem | \`fd-avatar-group--l\` |
+| S | &nbsp;&nbsp; -1.25rem | &nbsp;&nbsp; 0.125rem | \`fd-avatar-group--s\` or \`fd-avatar-group--sm\`|
+| M | &nbsp;&nbsp; -1.625rem | &nbsp;&nbsp; 0.125rem | \`fd-avatar-group--m\` or \`fd-avatar-group--md\` |
+| L | &nbsp;&nbsp; -2rem | &nbsp;&nbsp; 0.125rem | \`fd-avatar-group--l\` or \`fd-avatar-group--lg\` |
 | XL | &nbsp;&nbsp; -2.75rem | &nbsp;&nbsp; 0.25rem | \`fd-avatar-group--xl\` |
 
 <br />
@@ -69,12 +69,16 @@ The **AvatarGroup** is available in two orientations:
 - **Horizontal**
 - **Vertical**
 
+<br />
+##Responsiveness
+The avatar group adapts responsively: when there isn't enough space to show all avatars, an overflow button appears, and some avatars move into the overflow popover. A circular overflow button indicates the precise number of avatars that cannot be displayed on the screen. 
+By default, an overview of all "overflowed" avatars is shown directly within a popover. Customize the content within the popover to align with the specific requirements of your application.
 `,
     docs: {
       story: {
       }
     },
-    tags: ['a11y', 'f3', 'theme']
+    tags: ['v1']
   }
 };
 export const IndividualType = () => individualTypeExampleHtml;
@@ -83,7 +87,8 @@ IndividualType.parameters = {
     story: {
     },
     description: {
-      story: `The avatar individual type consists of avatars and an overflow shape, depending on the use case. Each displayed avatar and the overflow shape have their own, individual click area. <br>For Individual type add the \`fd-avatar-group--individual-type\` modifier class to the \`fd-avatar-group\` base class.`
+      story: `The Avatar Individual Type component features avatars and an overflow shape, each with its own click area, catering to scenarios where users prioritize detailed information about specific group members. Avatars are displayed adjacent to each other without overlap, making it ideal for smaller groups like project teams.<br>
+      For Individual type add the \`fd-avatar-group--individual-type\` modifier class to the \`fd-avatar-group\` base class.`
     }
   }
 };

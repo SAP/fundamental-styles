@@ -1,3 +1,5 @@
+@use "sass:map";
+
 @import "./new-settings";
 @import "./mixins";
 
@@ -25,36 +27,33 @@ $block: #{$fd-namespace}-micro-process-flow;
 $fd-micro-process-flow-item-padding: 0.1875rem;
 $fd-micro-process-flow-outline-offset: 0.0625rem;
 $fd-micro-process-flow-intermediary-indicator-width: 0.25rem;
-
 $fd-micro-process-flow-semantic-colors: (
-  positive: (
-    default: var(--sapPositiveElementColor),
-    hover: var(--sapButton_Success_Hover_Background)
-  ),
-  information: (
-    default: var(--sapInformativeElementColor),
-    hover: var(--sapButton_Information_Hover_Background)
-  ),
-  negative: (
-    default: var(--sapNegativeElementColor),
-    hover: var(--sapButton_Negative_Hover_Background)
-  ),
-  critical: (
-    default: var(--sapCriticalElementColor),
-    hover: var(--sapButton_Critical_Hover_Background)
-  ),
+        positive: (
+                default: var(--sapPositiveElementColor),
+                hover: var(--sapButton_Success_Hover_Background)
+        ),
+        information: (
+                default: var(--sapInformativeElementColor),
+                hover: var(--sapButton_Information_Hover_Background)
+        ),
+        negative: (
+                default: var(--sapNegativeElementColor),
+                hover: var(--sapButton_Negative_Hover_Background)
+        ),
+        critical: (
+                default: var(--sapCriticalElementColor),
+                hover: var(--sapButton_Critical_Hover_Background)
+        ),
 );
 
 @mixin fd-micro-process-flow-focus($offset: -0.1875rem) {
   &:focus,
   &.is-focus {
-    @if $offset !=0 {
+    @if $offset != 0 {
       outline-offset: $offset;
     }
 
-    outline-width: var(--sapContent_FocusWidth);
-    outline-color: var(--sapContent_FocusColor);
-    outline-style: var(--sapContent_FocusStyle);
+    outline: var(--sapContent_FocusColor) var(--sapContent_FocusStyle) var(--sapContent_FocusWidth);
     @content;
   }
 }
@@ -86,7 +85,7 @@ $fd-micro-process-flow-semantic-colors: (
 }
 
 @mixin fd-micro-process-flow-navigation-icon($direction: previous, $icon-previous: "\e067", $icon-next: "\e066", $padding: 0.313rem) {
-  @if $direction==previous {
+  @if $direction == previous {
     &::before {
       content: $icon-previous;
     }
@@ -115,15 +114,27 @@ $fd-micro-process-flow-semantic-colors: (
 
 @mixin fd-micro-process-flow-semantic-state {
   @each $state,
-    $background in $fd-micro-process-flow-semantic-colors {
+  $background in $fd-micro-process-flow-semantic-colors {
     &--#{$state} {
-      --fdMicro_Process_Flow_Item_Background: #{map-get($background, default)};
-      --fdMicro_Process_Flow_Item_Border_Color: #{map-get($background, default)};
-      --fdMicro_Process_Flow_Item_Hover_Background: #{map-get($background, hover)};
-      --fdMicro_Process_Flow_Item_Hover_Border_Color: #{map-get($background, hover)};
+      --fdMicro_Process_Flow_Item_Background: #{map.get($background, default)};
+      --fdMicro_Process_Flow_Item_Border_Color: #{map.get($background, default)};
+      --fdMicro_Process_Flow_Item_Hover_Background: #{map.get($background, hover)};
+      --fdMicro_Process_Flow_Item_Hover_Border_Color: #{map.get($background, hover)};
       --fdMicro_Process_Flow_Item_Active_Background: var(--sapHighlightColor);
       --fdMicro_Process_Flow_Item_Active_Border_Color: var(--sapHighlightColor);
       --fdMicro_Process_Flow_Icon_Color: var(--fdMicro_Process_Flow_Active_Icon_Color);
+    }
+  }
+
+  &--information .#{$block}__icon-container{
+    @include fd-hover() {
+      --fdMicro_Process_Flow_Icon_Color: var(--sapButton_Information_Hover_TextColor);
+      --fdMicro_Process_Flow_Item_Border_Color: var(--sapInformationBorderColor);
+    }
+
+    @include fd-active() {
+      --fdMicro_Process_Flow_Icon_Color: var(--sapContent_ContrastIconColor);
+      --fdMicro_Process_Flow_Item_Border_Color: var(--sapContent_Selected_ForegroundColor);
     }
   }
 }

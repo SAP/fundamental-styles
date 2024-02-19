@@ -1,3 +1,5 @@
+@use "sass:map";
+
 
 // ----- Avatar -----
 $fd-avatar-zoom-icon-s: 1.125rem;
@@ -9,7 +11,6 @@ $fd-avatar-zoom-icon-font-size-xl: 1rem;
 $fd-avatar-const-ratio: 1rem;
 $fd-avatar-font-stretched-condensed: condensed;
 $fd-avatar-font-stretched-normal: normal;
-
 $fd-avatar-accent-colors: (
   "1": (
     "background-color": var(--fdAvatar_Accent_Color_1),
@@ -92,7 +93,6 @@ $fd-avatar-accent-colors: (
     "border-color": var(--sapAvatar_10_BorderColor)
   )
 );
-
 $fd-avatar-sizes: (
   "xs": (
     "ratio": ($fd-avatar-const-ratio * 2),
@@ -110,6 +110,14 @@ $fd-avatar-sizes: (
     "zoomIconFontSize": $fd-avatar-zoom-icon-font-size-s,
     "fontStretch": $fd-avatar-font-stretched-condensed
   ),
+  "sm": (
+    "ratio": ($fd-avatar-const-ratio * 3),
+    "font-size": 1.125rem,
+    "zoomIconDimensions": $fd-avatar-zoom-icon-s,
+    "offset": -0.125rem,
+    "zoomIconFontSize": $fd-avatar-zoom-icon-font-size-s,
+    "fontStretch": $fd-avatar-font-stretched-condensed
+  ),
   "m": (
     "ratio": ($fd-avatar-const-ratio * 4),
     "font-size": 1.5rem,
@@ -118,7 +126,23 @@ $fd-avatar-sizes: (
     "zoomIconFontSize": $fd-avatar-zoom-icon-font-size-s,
     "fontStretch": $fd-avatar-font-stretched-normal
   ),
+  "md": (
+    "ratio": ($fd-avatar-const-ratio * 4),
+    "font-size": 1.5rem,
+    "zoomIconDimensions": $fd-avatar-zoom-icon-s,
+    "offset": -0.125rem,
+    "zoomIconFontSize": $fd-avatar-zoom-icon-font-size-s,
+    "fontStretch": $fd-avatar-font-stretched-normal
+  ),
   "l": (
+    "ratio": ($fd-avatar-const-ratio * 5),
+    "font-size": 2.25rem,
+    "zoomIconDimensions": $fd-avatar-zoom-icon-l,
+    "offset": -0.1875rem,
+    "zoomIconFontSize": $fd-avatar-zoom-icon-font-size-l,
+    "fontStretch": $fd-avatar-font-stretched-normal
+  ),
+  "lg": (
     "ratio": ($fd-avatar-const-ratio * 5),
     "font-size": 2.25rem,
     "zoomIconDimensions": $fd-avatar-zoom-icon-l,
@@ -135,7 +159,6 @@ $fd-avatar-sizes: (
     "fontStretch": $fd-avatar-font-stretched-normal
   )
 );
-
 $fd-avatar-group-item-spacing: (
   "individual": (
     "xs": ("margin-right": 0.0625rem),
@@ -152,23 +175,26 @@ $fd-avatar-group-item-spacing: (
     "xl": ("margin-right": -2.75rem)
   )
 );
-
 $fd-avatar-group-item-spacing-group: (
   "xs": -0.75rem,
   "s": -1.25rem,
+  "sm": -1.25rem,
   "m": -1.625rem,
+  "md": -1.625rem,
   "l": -2rem,
+  "lg": -2rem,
   "xl": -2.75rem
 );
-
 $fd-avatar-group-item-spacing-individual: (
   "xs": 0.0625rem,
   "s": 0.125rem,
+  "sm": 0.125rem,
   "m": 0.125rem,
+  "md": 0.125rem,
   "l": 0.125rem,
+  "lg": 0.125rem,
   "xl": 0.25rem
 );
-
 $fd-avatar-value-states: (
   "positive": (
     "background": var(--sapSuccessBackground),
@@ -222,10 +248,7 @@ $fd-avatar-value-states: (
       content: '';
       position: absolute;
       pointer-events: none;
-      top: $offset;
-      bottom: $offset;
-      left: $offset;
-      right: $offset;
+      inset: $offset $offset $offset $offset;
       @content;
     }
   }

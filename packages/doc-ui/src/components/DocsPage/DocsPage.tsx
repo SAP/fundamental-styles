@@ -3,7 +3,6 @@ import {useContext} from 'react';
 import './DocsPage.scss';
 import {useThemedStoryContainers} from '../../hooks/useThemedStoryContainers';
 import Community from '../Community';
-import Versions from '../Versions';
 import Description from '../Description';
 import Footer from '../Footer';
 import Header from '../Header';
@@ -11,6 +10,11 @@ import InfoLabels from '../InfoLabels';
 import Toc from '../Toc/Toc';
 import {SAPContext} from "../../contexts/SAPContext";
 
+
+/**
+ * DocsPage component that wraps all the components that make up the DocsPage
+ * in the Storybook Docs view.
+ */
 const DocsPage = () => {
     const {storyContext} = useContext(SAPContext);
 
@@ -36,7 +40,6 @@ const DocsPage = () => {
 
             <Stories title={"Examples"}/>
             <Community/>
-            <Versions/>
             <Footer/>
         </>
     );

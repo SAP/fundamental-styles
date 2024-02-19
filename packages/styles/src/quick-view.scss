@@ -1,8 +1,9 @@
+@use "sass:map";
+
 @import "./new-settings";
 @import "./mixins";
 
 $block: #{$fd-namespace}-quick-view;
-
 $fd-quick-view-avatar-indent: 0.75rem;
 $fd-quick-view-group-item-indent: 0.75rem;
 
@@ -27,6 +28,10 @@ $fd-quick-view-group-item-indent: 0.75rem;
     padding: 1rem;
     background-color: var(--sapGroup_ContentBackground);
 
+    .#{$fd-namespace}-form-item {
+      gap: 0.25rem;
+    }
+
     .#{$fd-namespace}-bar {
       padding: 0;
 
@@ -50,7 +55,13 @@ $fd-quick-view-group-item-indent: 0.75rem;
   }
 
   &__subheader-text {
+    @include fd-flex(column) {
+      gap: 0.25rem;
+      justify-content: center;
+    }
+
     max-width: 100%;
+    height: 100%;
     min-width: 0; // fix for flex width https://github.com/philipwalton/flexbugs#flexbug-17
   }
 
@@ -58,7 +69,6 @@ $fd-quick-view-group-item-indent: 0.75rem;
     @include fd-reset();
     @include fd-ellipsis();
 
-    margin-top: 0.25rem;
     color: var(--sapTile_TextColor);
   }
 

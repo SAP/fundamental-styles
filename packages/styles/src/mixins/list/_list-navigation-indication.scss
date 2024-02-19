@@ -1,3 +1,5 @@
+@use "sass:map";
+
 @import "./list-definitions";
 
 $fd-list-navigation-indicator-width: 2.5rem !default;
@@ -30,7 +32,7 @@ $fd-list-navigation-indicator-width: 2.5rem !default;
           @include fd-flex-center();
 
           height: 100%;
-          font-family: "SAP-icons";
+          font-family: SAP-icons;
           content: '\e1ed';
           color: var(--sapContent_NonInteractiveIconColor);
           font-size: var(--fdListNavigationIndicatorFontSize, var(--sapFontLargeSize));

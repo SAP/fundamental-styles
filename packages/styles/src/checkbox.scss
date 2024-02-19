@@ -1,3 +1,5 @@
+@use "sass:map";
+
 @import "./new-settings";
 @import "./mixins";
 
@@ -114,7 +116,7 @@ $blockCheckmark: #{$fd-namespace}-checkbox__checkmark;
     @include fd-inline-flex-center();
     @include fd-square(var(--fdCheckbox_Dimensions));
 
-    font-family: "SAP-icons";
+    font-family: SAP-icons;
     background-color: var(--fdCheckbox_Background_Color);
     border: var(--fdCheckbox_Inner_Border_Width) var(--fdCheckbox_Inner_Border_Style) var(--fdCheckbox_Inner_Border_Color);
     color: var(--fdCheckbox_Check_Mark_Color);

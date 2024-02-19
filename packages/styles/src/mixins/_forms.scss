@@ -1,3 +1,5 @@
+@use "sass:map";
+
 // Form Mixins
 @import "./mixins";
 @import "./states";
@@ -18,7 +20,7 @@ $fd-input-field-height--compact: 1.625rem;
   @include fd-ellipsis();
 
   @if $withMinHeight {
-    @include fd-set-min-height(var(--sapElement_Height));
+    @include fd-set-min-height(var(--fdInput_Height, var(--sapElement_Height)));
   }
 
   z-index: 1;
@@ -37,8 +39,6 @@ $fd-input-field-height--compact: 1.625rem;
   outline: none;
   overflow: hidden;
   appearance: none;
-  -moz-appearance: none;
-  -webkit-appearance: none;
 
   &::placeholder {
     font-style: var(--fdPlaceholder_Font_Style);
@@ -69,9 +69,7 @@ $fd-input-field-height--compact: 1.625rem;
 
   @include fd-focus() {
     background: var(#{$overrideFocusBackgroundProperty}, var(--sapField_Focus_Background));
-    outline-width: var(--sapContent_FocusWidth);
-    outline-style: var(--sapContent_FocusStyle);
-    outline-color: var(--fdInput_Outline_Color);
+    outline: var(--fdInput_Outline_Color) var(--sapContent_FocusStyle) var(--sapContent_FocusWidth);
     outline-offset: var(--fdInput_Outline_Offset);
     box-shadow: none;
   }
@@ -79,9 +77,7 @@ $fd-input-field-height--compact: 1.625rem;
   @if $hasFocusWithin {
     @include fd-focus-within() {
       background: var(#{$overrideFocusBackgroundProperty}, var(--sapField_Focus_Background));
-      outline-width: var(--sapContent_FocusWidth);
-      outline-style: var(--sapContent_FocusStyle);
-      outline-color: var(--fdInput_Outline_Color);
+      outline: var(--fdInput_Outline_Color) var(--sapContent_FocusStyle) var(--sapContent_FocusWidth);
       outline-offset: var(--fdInput_Outline_Offset_Focus_Within);
       box-shadow: none;
     }
@@ -89,7 +85,7 @@ $fd-input-field-height--compact: 1.625rem;
 }
 
 @mixin fd-input-field-base-compact {
-  @include fd-set-min-height(var(--sapElement_Compact_Height));
+  @include fd-set-min-height(var(--fdInput_Compact_Height, var(--sapElement_Compact_Height)));
 
   min-width: var(--fdInput_Field_Compact_Min_Width, 2rem);
   margin: var(--fdInput_Field_Compact_Margin, 0.1875rem 0);
@@ -163,20 +159,20 @@ $fd-input-field-height--compact: 1.625rem;
 
   @each $set-name, $set-props in $fd-input-states {
     &.is-#{$set-name} {
-      background: map_get($set-props, "background");
-      background-color: map_get($set-props, "backgroundColor");
-      border: map_get($set-props, "border");
-      box-shadow: map_get($set-props, "boxShadow");
+      background: map.get($set-props, "background");
+      background-color: map.get($set-props, "backgroundColor");
+      border: map.get($set-props, "border");
+      box-shadow: map.get($set-props, "boxShadow");
 
       @include fd-hover() {
-        background-color: map_get($set-props, "hoverBackground");
-        border-color: map_get($set-props, "hoverBorderColor");
-        box-shadow: map_get($set-props, "hoverBoxShadow");
+        background-color: map.get($set-props, "hoverBackground");
+        border-color: map.get($set-props, "hoverBorderColor");
+        box-shadow: map.get($set-props, "hoverBoxShadow");
       }
 
       @include fd-focus() {
         background: var(--sapField_Focus_Background);
-        outline-color: map_get($set-props, "focusOutlineColor");
+        outline-color: map.get($set-props, "focusOutlineColor");
 
         @include fd-hover() {
           box-shadow: none;
@@ -186,7 +182,7 @@ $fd-input-field-height--compact: 1.625rem;
       @if $hasFocusWithin {
         @include fd-focus-within() {
           background: var(--sapField_Focus_Background);
-          outline-color: map_get($set-props, "focusOutlineColor");
+          outline-color: map.get($set-props, "focusOutlineColor");
 
           @include fd-hover() {
             box-shadow: none;
@@ -196,14 +192,14 @@ $fd-input-field-height--compact: 1.625rem;
 
       @include fd-expanded() {
         background: var(--sapField_Focus_Background);
-        outline: var(--sapContent_FocusWidth) var(--sapContent_FocusStyle) map_get($set-props, "focusOutlineColor");
+        outline: var(--sapContent_FocusWidth) var(--sapContent_FocusStyle) map.get($set-props, "focusOutlineColor");
         outline-offset: var(--fdInput_Outline_Offset);
         box-shadow: none;
       }
     }
   }
 
-  @if ($supportsText) {
+  @if  $supportsText {
     &.is-error,
     &.is-warning,
     &.is-alert {
@@ -225,7 +221,7 @@ $fd-input-field-height--compact: 1.625rem;
     }
   }
 
-  @if ($supportsText) {
+  @if  $supportsText {
     &.is-error {
       &::placeholder {
         color: var(--sapField_TextColor);
@@ -237,7 +233,7 @@ $fd-input-field-height--compact: 1.625rem;
     pointer-events: none;
     opacity: var(--sapContent_DisabledOpacity);
 
-    @if ($supportsText) {
+    @if  $supportsText {
       &::placeholder {
         opacity: 0;
         color: var(--fdInput_Non_Interactive_State_Placeholder_Color);
@@ -248,7 +244,7 @@ $fd-input-field-height--compact: 1.625rem;
   @include fd-readonly() {
     @include fd-input-readonly();
 
-    @if ($supportsText) {
+    @if  $supportsText {
       &::placeholder {
         opacity: 0;
         color: var(--fdInput_Non_Interactive_State_Placeholder_Color);
@@ -359,8 +355,8 @@ $fd-input-field-height--compact: 1.625rem;
     &.is-#{$set-name} {
       @include fd-focus() {
         .#{$block}__button {
-          color: map_get($set-props, "activeColor");
-          box-shadow: map_get($set-props, "boxShadow");
+          color: map.get($set-props, "activeColor");
+          box-shadow: map.get($set-props, "boxShadow");
 
           --fdButtonBackgroundColor: var(--fdInput_Group_Button_Active_Background);
 
@@ -372,8 +368,8 @@ $fd-input-field-height--compact: 1.625rem;
 
       @include fd-expanded() {
         .#{$block}__button {
-          color: map_get($set-props, "activeColor");
-          box-shadow: map_get($set-props, "boxShadow");
+          color: map.get($set-props, "activeColor");
+          box-shadow: map.get($set-props, "boxShadow");
 
           --fdButtonBackgroundColor: var(--fdInput_Group_Button_Active_Background);
 
@@ -385,12 +381,12 @@ $fd-input-field-height--compact: 1.625rem;
 
       .#{$block}__button {
         @include fd-hover() {
-          box-shadow: map_get($set-props, "boxShadow");
+          box-shadow: map.get($set-props, "boxShadow");
         }
 
         @include fd-active() {
-          color: map_get($set-props, "activeColor");
-          box-shadow: map_get($set-props, "boxShadow");
+          color: map.get($set-props, "activeColor");
+          box-shadow: map.get($set-props, "boxShadow");
         }
       }
     }
@@ -415,8 +411,6 @@ $fd-input-field-height--compact: 1.625rem;
   border-radius: var(--sapField_BorderCornerRadius);
   outline: none;
   appearance: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
 
   &::placeholder {
     font-style: italic;
@@ -427,6 +421,7 @@ $fd-input-field-height--compact: 1.625rem;
     color: var(--sapContent_ContrastTextColor);
     background-color: var(--sapSelectedColor);
   }
+
   // states
   @include fd-input-field-states($hasFocusWithin, $supportsText);
 }
@@ -454,10 +449,7 @@ $fd-input-field-height--compact: 1.625rem;
     display: block;
     border: var(--sapContent_FocusWidth) var(--sapContent_FocusStyle) var(--sapContent_FocusColor);
     border-radius: var(--fdCheckbox_Outline_Border_Radius);
-    top: $offset;
-    right: $offset;
-    bottom: $offset;
-    left: $offset;
+    inset: $offset $offset $offset $offset;
     z-index: 3;
   }
 }

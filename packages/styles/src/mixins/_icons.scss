@@ -1,3 +1,5 @@
+@use "sass:map";
+
 @import '../new-settings';
 @import '../icons/settings';
 @import '../icons/settingsBusiness';
@@ -16,7 +18,7 @@
 // icon base mixin
 @mixin fd-icon-base($position: 'before') {
   &::#{$position} {
-    font-family: 'SAP-icons';
+    font-family: SAP-icons;
     text-align: center;
     text-decoration: inherit;
     text-transform: none;
@@ -29,7 +31,7 @@
 @mixin fd-icon-glyph($glyph, $position: 'before') {
   @if map-has-key($fd-icons, $glyph) {
     &::#{$position} {
-      content: map-get($fd-icons, $glyph);
+      content: map.get($fd-icons, $glyph);
       @content;
     }
   } @else {
@@ -50,7 +52,7 @@
 // business suite icon base mixin
 @mixin fd-business-suite-icon-base($position: 'before') {
   &::#{$position} {
-    font-family: 'BusinessSuiteInAppSymbols';
+    font-family: BusinessSuiteInAppSymbols;
     @content;
   }
 }
@@ -59,7 +61,7 @@
 @mixin fd-business-suite-icon-glyph($glyph, $position: 'before') {
   @if map-has-key($fd-business-suite-icons, $glyph) {
     &::#{$position} {
-      content: map-get($fd-business-suite-icons, $glyph);
+      content: map.get($fd-business-suite-icons, $glyph);
       @content;
     }
   } @else {
@@ -80,7 +82,7 @@
 // SAP-icons-TNT icon base mixin
 @mixin fd-tnt-icon-base($position: 'before') {
   &::#{$position} {
-    font-family: 'SAP-icons-TNT';
+    font-family: SAP-icons-TNT;
     @content;
   }
 }
@@ -89,7 +91,7 @@
 @mixin fd-tnt-icon-glyph($glyph, $position: 'before') {
   @if map-has-key($fd-tnt-icons, $glyph) {
     &::#{$position} {
-      content: map-get($fd-tnt-icons, $glyph);
+      content: map.get($fd-tnt-icons, $glyph);
       @content;
     }
   } @else {
@@ -103,11 +105,11 @@
   @each $enumeration-name, $enumeration-value in $fd-icon-control-enumerations {
     &.#{$block} {
       &--color-#{$enumeration-name} {
-        color: map_get($enumeration-value, "color");
+        color: map.get($enumeration-value, "color");
       }
       &--background-#{$enumeration-name} {
         &::#{$position} {
-          background-color: map_get($enumeration-value, "background-color");
+          background-color: map.get($enumeration-value, "background-color");
         }
       }
     }

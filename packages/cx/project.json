@@ -18,6 +18,21 @@
                 }
             }
         },
+        "sync-entry": {
+            "executor": "workspace-plugins:sync-components",
+            "options": {
+                "entry": "{projectRoot}/src/fundamental-cx.scss",
+                "include": [
+                    "{projectRoot}/src/*.scss",
+                    "{projectRoot}/src/btp/*.scss"
+                ],
+                "exclude": [
+                    "{options.entry}",
+                    "{projectRoot}/src/**/_*.scss"
+                ]
+            },
+            "outputs": ["{options.entry}"]
+        },
         "build-visual": {
             "executor": "workspace-plugins:visual-stories",
             "options": {
@@ -27,11 +42,8 @@
             "outputs": ["{workspaceRoot}/stories/Visuals/cx"]
         },
         "lint": {
-            "executor": "@nx/linter:eslint",
-            "outputs": ["{options.outputFile}"],
-            "options": {
-                "lintFilePatterns": ["packages/cx/**/*.ts"]
-            }
+            "executor": "@nx/eslint:lint",
+            "outputs": ["{options.outputFile}"]
         },
         "stylelint": {
             "executor": "nx-stylelint:lint",

@@ -1,8 +1,8 @@
-const projects = require('../../../../projects').default;
+import { projects } from '../../../../projects';
+
 const sortedProjects = Object.entries(projects).map(([id, data]) => ({ id, ...data })).sort((a, b) => b.pathToPackage.length - a.pathToPackage.length);
 
-module.exports = {
+export {
     projects,
     sortedProjects,
-    isValidProject: (projectId) => !!projects[projectId],
 };

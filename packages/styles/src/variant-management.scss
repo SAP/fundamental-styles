@@ -1,7 +1,8 @@
+@use "sass:map";
+
 @import "./mixins";
 
 $block: #{$fd-namespace}-variant-management;
-
 $title-margin: 0.125rem;
 
 .#{$block} {
@@ -17,14 +18,34 @@ $title-margin: 0.125rem;
   }
 
   .#{$block} &__title {
-    color: var(--fdVariantManagementHeadingColor);
+    --fdTitle_Color: var(--fdVariantManagementHeadingColor);
 
     @include fd-hover() {
-      color: var(--fdVariantManagementHeadingHoverColor);
+      --fdTitle_Color: var(--fdVariantManagementHeadingHoverColor);
     }
 
     @include fd-active() {
-      color: var(--fdVariantManagementHeadingActiveColor);
+      --fdTitle_Color: var(--fdVariantManagementHeadingActiveColor);
+    }
+
+    @include fd-disabled() {
+      --fdTitle_Color: var(--sapGroup_TitleTextColor);
+
+      cursor: default;
+    }
+
+    &--object-header {
+      --fdTitle_Font_Size: var(--sapObjectHeader_Title_FontSize);
+      --fdTitle_Font_Family: var(--sapObjectHeader_Title_FontFamily);
+    }
+
+    &--snapped-object-header {
+      --fdTitle_Font_Size: var(--sapObjectHeader_Title_SnappedFontSize);
+      --fdTitle_Font_Family: var(--sapObjectHeader_Title_FontFamily);
+    }
+
+    &--table {
+      --fdTitle_Font_Size: var(--sapGroup_Title_FontSize);
     }
   }
 
