@@ -149,7 +149,7 @@
     "*.js": "eslint --fix"
   },
   "dependencies": {
-    "@storybook/blocks": "7.6.12",
+    "@storybook/blocks": "7.6.17",
     "@storybook/components": "7.6.12",
     "@storybook/core-events": "7.6.12",
     "@vitejs/plugin-react": "3.1.0",
