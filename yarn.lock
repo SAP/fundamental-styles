@@ -2738,6 +2738,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@nrwl/devkit@npm:18.0.5":
+  version: 18.0.5
+  resolution: "@nrwl/devkit@npm:18.0.5"
+  dependencies:
+    "@nx/devkit": "npm:18.0.5"
+  checksum: 10/0bb373ee136a6f40c54ab8bd85fec36cb822df31d8fb6d2c2db3fd4498103eb5e68f08250d08e1a4d6e2c703f982e4eaed62e9e8c18dec06545d3bf95368be81
+  languageName: node
+  linkType: hard
+
 "@nrwl/eslint-plugin-nx@npm:18.0.2":
   version: 18.0.2
   resolution: "@nrwl/eslint-plugin-nx@npm:18.0.2"
@@ -2858,6 +2867,24 @@ __metadata:
   peerDependencies:
     nx: ">= 16 <= 18"
   checksum: 10/c13d5a50e975bb4feba47e7939227efa122f46b3d295c65732c6aa2aaad43002596c057001fdafe057d9167a40546c139f84786a0a35243b11279d9684fe9793
+  languageName: node
+  linkType: hard
+
+"@nx/devkit@npm:18.0.5":
+  version: 18.0.5
+  resolution: "@nx/devkit@npm:18.0.5"
+  dependencies:
+    "@nrwl/devkit": "npm:18.0.5"
+    ejs: "npm:^3.1.7"
+    enquirer: "npm:~2.3.6"
+    ignore: "npm:^5.0.4"
+    semver: "npm:^7.5.3"
+    tmp: "npm:~0.2.1"
+    tslib: "npm:^2.3.0"
+    yargs-parser: "npm:21.1.1"
+  peerDependencies:
+    nx: ">= 16 <= 18"
+  checksum: 10/3dc412aa0656bc347896948f02a0f2320fbecbc5543d9fa7c35d90ea01b0c69f30eac6a9f7402e35afba5847ff6eeb253a68674d3ff03828fa07459da22df376
   languageName: node
   linkType: hard
 
@@ -10591,7 +10618,7 @@ __metadata:
     "@commitlint/cli": "npm:18.6.0"
     "@commitlint/config-conventional": "npm:18.6.0"
     "@jsdevtools/npm-publish": "npm:3.0.1"
-    "@nx/devkit": "npm:18.0.2"
+    "@nx/devkit": "npm:18.0.5"
     "@nx/eslint": "npm:18.0.2"
     "@nx/eslint-plugin": "npm:18.0.2"
     "@nx/js": "npm:18.0.2"
