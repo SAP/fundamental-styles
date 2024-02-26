@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.33.3-rc.19](https://github.com/SAP/fundamental-styles/compare/v0.33.3-rc.18...v0.33.3-rc.19) (2024-02-26)
+
+### Features
+
+-   **styles:** cx nav update [ci visual] ([#5206](https://github.com/SAP/fundamental-styles/issues/5206)) ([0a36eb6](https://github.com/SAP/fundamental-styles/commit/0a36eb63a899fb5db713a8df3a95e93664e91415))
+
 ## [0.33.3-rc.18](https://github.com/SAP/fundamental-styles/compare/v0.33.3-rc.17...v0.33.3-rc.18) (2024-02-26)
 
 **Note:** Version bump only for package @fundamental-styles/cx
