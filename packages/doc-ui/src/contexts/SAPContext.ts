@@ -15,4 +15,10 @@ export interface SAPContextType {
     contentDensities: { value: string, title: string }[],
 }
 
+/**
+ * Main context for SAP documentation site.
+ * This context is used to store and share state between components.
+ * The state includes theme, directionality, content density and selected package information,
+ * as well as functions to update the state.
+ */
 export const SAPContext = createContext<SAPContextType>({} as unknown as SAPContextType);

@@ -29,7 +29,7 @@ import sap_fiori_3_hcw from './theming/sap_fiori_3_hcw.scss?inline';
 // @ts-ignore
 import sap_fiori_3_hcb from './theming/sap_fiori_3_hcb.scss?inline';
 
-import {default as projects} from '../../projects';
+import {projects} from '../../projects';
 
 const themesVariables = {
     sap_horizon,

@@ -1,3 +1,5 @@
+@use "sass:map";
+
 @import "../../new-settings";
 @import "../../mixins";
 
@@ -13,23 +15,17 @@
 }
 
 $block: #{$fd-namespace}-list;
-
 $objectListBlock: #{$fd-namespace}-object-list;
 $messageViewList: #{$block}--message-view;
-
 $fd-list-item-padding-x: 0.9375rem !default;
 $fd-list-large-font-size: var(--sapFontLargeSize) !default;
 $fd-list-normal-font-size: var(--sapFontSize) !default;
 $fd-list-selected-state-border-bottom: var(--sapList_BorderWidth) solid var(--sapList_SelectionBorderColor);
-
 $fd-list-byline-item-padding-x: 1rem !default;
 $fd-list-byline-item-padding-y: 0.9375rem !default;
 $fd-list-byline-borderless-item-padding-y: 0.5rem !default;
-
 $fd-list-selection-container-width: 2.75rem !default;
-
 $fd-list-unread-indicator-spacing: 2.125rem !default;
-
 $semantic-color: (
   "neutral": ("color": var(--sapNeutralTextColor)),
   "positive": ("color": var(--sapPositiveTextColor)),
@@ -70,10 +66,7 @@ $semantic-color: (
       position: absolute;
       display: block;
       border: var(--sapContent_FocusWidth) var(--sapContent_FocusStyle) var(--sapContent_FocusColor);
-      top: 0.125rem;
-      left: 0.125rem;
-      right: 0.125rem;
-      bottom: 0.125rem;
+      inset: 0.125rem;
       pointer-events: none;
 
       @content;

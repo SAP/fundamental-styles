@@ -47,7 +47,7 @@ The avatar control is adaptive and has five predefined sizes. These are the same
 
 <br><br><br>
 `,
-    tags: []
+  tags: ['v1']
   }
 };
 const localStyles = `

@@ -1,16 +1,14 @@
+@use "sass:map";
+
 @import "./new-settings";
 @import "./mixins";
 
 $block: #{$fd-namespace}-tabs;
-
 $fd-tabs-label-color: var(--sapContent_LabelColor);
 $fd-tabs-selection-padding-x: 0.188rem;
-
 $fd-tabs-icon-link-padding-y: 1rem !default;
-
 $fd-tabs-item-spacing-x: 0.25rem;
 $fd-tabs-item-padding-x: 0.75rem;
-
 $fd-tabs-link-padding-y: 0.875rem !default;
 $fd-tabs-link-transition-params: $fd-animation-speed ease-in !default;
 $fd-tabs-link-active-line-offset-x: 0.1875rem;
@@ -122,10 +120,7 @@ $fd-tabs-link-active-line-offset-x: 0.1875rem;
         &::before {
           content: '';
           position: absolute;
-          top: 0;
-          bottom: 0;
-          right: 0;
-          left: 0;
+          inset: 0;
           outline: var(--sapContent_FocusColor) var(--sapContent_FocusStyle) var(--sapContent_FocusWidth);
           outline-offset: var(--sapContent_FocusWidth);
         }

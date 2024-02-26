@@ -1,8 +1,17 @@
+@use "sass:map";
+
 @import "./new-settings";
 @import "./mixins";
 
 $block: #{$fd-namespace}-bar;
 $floating-footer: #{$fd-namespace}-bar--floating-footer;
+
+@mixin fd-bar-floating-footer-offsets($offsetX: 1rem) {
+  &.#{$floating-footer} {
+    --fdBar_Padding_X: 0.5rem;
+    --fdBar_Floating_Footer_Offset_X: #{$offsetX};
+  }
+}
 
 .#{$block} {
   --fdBar_Z_Index: 1;
@@ -11,13 +20,12 @@ $floating-footer: #{$fd-namespace}-bar--floating-footer;
   --fdBar_Padding_Top: 0;
   --fdBar_Padding_Bottom: 0;
   --fdBar_Border_Radius: 0;
-  --fdBar_Floating_Footer_Offset_X: 0;
-  --fdBar_Floating_Footer_Offset_Y: 0;
+  --fdBar_Floating_Footer_Offset_X: 0.5rem;
+  --fdBar_Floating_Footer_Offset_Y: 0.5rem;
   --fdBar_Shadow: var(--sapContent_HeaderShadow);
   --fdBar_Background: var(--sapPageHeader_Background);
 
   @include fd-reset();
-  @include fd-set-paddings-x-equal(var(--fdBar_Padding_X));
 
   @include fd-flex() {
     gap: 0.5rem;
@@ -28,9 +36,9 @@ $floating-footer: #{$fd-namespace}-bar--floating-footer;
   z-index: var(--fdBar_Z_Index);
   box-shadow: var(--fdBar_Shadow);
   background: var(--fdBar_Background);
-  padding-top: var(--fdBar_Padding_Top);
+  padding-inline: var(--fdBar_Padding_X);
   border-radius: var(--fdBar_Border_Radius);
-  padding-bottom: var(--fdBar_Padding_Bottom);
+  padding-block: var(--fdBar_Padding_Top) var(--fdBar_Padding_Bottom);
 
   .#{$block}__header {
     font-size: var(--sapFontHeader5Size);
@@ -76,24 +84,7 @@ $floating-footer: #{$fd-namespace}-bar--floating-footer;
   }
 
   &--responsive-paddings {
-    margin-top: 0.5rem;
-    margin-bottom: 0.5rem;
-
-    @include fd-media-sm() {
-      --fdBar_Padding_X: 1rem;
-    }
-
-    @include fd-media-md() {
-      --fdBar_Padding_X: 2rem;
-    }
-
-    @include fd-media-lg() {
-      --fdBar_Padding_X: 2rem;
-    }
-
-    @include fd-media-xl() {
-      --fdBar_Padding_X: 3rem;
-    }
+    @include fd-apply-responsive-paddings();
   }
 
   &--header {
@@ -125,16 +116,15 @@ $floating-footer: #{$fd-namespace}-bar--floating-footer;
 
   &--floating-footer {
     --fdBar_Shadow: var(--sapContent_Shadow1);
-    --fdBar_Z_Index: map-get($fd-z-index-levels, "top");
+    --fdBar_Z_Index: map.get($fd-z-index-levels, "top");
     --fdBar_Background: var(--sapPageFooter_Background);
     --fdBar_Border_Radius: var(--sapElement_BorderCornerRadius);
 
-    bottom: 0;
     opacity: 1;
     position: absolute;
     left: var(--fdBar_Floating_Footer_Offset_X);
     right: var(--fdBar_Floating_Footer_Offset_X);
-    margin-bottom: var(--fdBar_Floating_Footer_Offset_Y);
+    bottom: var(--fdBar_Floating_Footer_Offset_Y);
   }
 
   &--growing {
@@ -153,55 +143,39 @@ $floating-footer: #{$fd-namespace}-bar--floating-footer;
   // Page Design
   &--page,
   &--home-page {
-    --fdBar_Padding_X: 1rem;
+    @include fd-bar-floating-footer-offsets();
 
-    &.#{$floating-footer} {
-      --fdBar_Padding_X: 0.5rem;
-      --fdBar_Floating_Footer_Offset_X: 1rem;
-      --fdBar_Floating_Footer_Offset_Y: 0.5rem;
-    }
+    --fdBar_Padding_X: 1rem;
   }
 
-  &--page-s {
-    --fdBar_Padding_X: 1rem;
+  &--page-s,
+  &--page-sm {
+    @include fd-bar-floating-footer-offsets();
 
-    &.#{$floating-footer} {
-      --fdBar_Padding_X: 0.5rem;
-      --fdBar_Floating_Footer_Offset_X: 1rem;
-      --fdBar_Floating_Footer_Offset_Y: 0.5rem;
-    }
+    --fdBar_Padding_X: 1rem;
   }
 
-  &--home-page-s {
+  &--home-page-s,
+  &--home-page-sm {
+    @include fd-bar-floating-footer-offsets();
+
     --fdBar_Padding_X: 0.5rem;
-
-    &.#{$floating-footer} {
-      --fdBar_Padding_X: 0.5rem;
-      --fdBar_Floating_Footer_Offset_X: 1rem;
-      --fdBar_Floating_Footer_Offset_Y: 0.5rem;
-    }
   }
 
   &--page-m_l,
-  &--home-page-m_l {
-    --fdBar_Padding_X: 2rem;
+  &--home-page-m_l,
+  &--page-md_lg,
+  &--home-page-md_lg {
+    @include fd-bar-floating-footer-offsets(2rem);
 
-    &.#{$floating-footer} {
-      --fdBar_Padding_X: 0.5rem;
-      --fdBar_Floating_Footer_Offset_X: 2rem;
-      --fdBar_Floating_Footer_Offset_Y: 0.5rem;
-    }
+    --fdBar_Padding_X: 2rem;
   }
 
   &--page-xl,
   &--home-page-xl {
-    --fdBar_Padding_X: 3rem;
+    @include fd-bar-floating-footer-offsets(3rem);
 
-    &.#{$floating-footer} {
-      --fdBar_Padding_X: 0.5rem;
-      --fdBar_Floating_Footer_Offset_X: 3rem;
-      --fdBar_Floating_Footer_Offset_Y: 0.5rem;
-    }
+    --fdBar_Padding_X: 3rem;
   }
 
   @include fd-compact-or-condensed() {

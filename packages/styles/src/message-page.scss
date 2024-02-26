@@ -1,3 +1,5 @@
+@use "sass:map";
+
 @import "./new-settings";
 @import "./mixins";
 
@@ -52,7 +54,7 @@ $block: #{$fd-namespace}-message-page;
       max-width: 30rem;
       font-size: 6rem;
       color: var(--sapContent_NonInteractiveIconColor);
-      opacity: 50%;
+      opacity: 0.5;
     }
   }
 

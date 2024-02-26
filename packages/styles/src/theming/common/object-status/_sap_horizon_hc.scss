@@ -1,3 +1,5 @@
+@use "sass:map";
+
 @import "./sap_horizon";
 
 :root {
@@ -30,7 +32,7 @@
   --fdObjectStatus_Focus_Border_Radius: 0;
   --fdObjectStatus_Focus_Outline: 0.125rem dotted var(--sapContent_FocusColor);
 
-  // Second Set Indication Color
+  /* Second Set Indication Color */
   --fdObjectStatus_Text_Shadow_Indication_Color: none;
   --fdObjectStatus_Text_Indication_Color_1b: var(--sapIndicationColor_1_TextColor);
   --fdObjectStatus_Background_Indication_Color_1b: var(--sapIndicationColor_1_Background);

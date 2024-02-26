@@ -1,3 +1,5 @@
+@use "sass:map";
+
 :root {
   --fdObjectStatus_TextDecoration_Regular: underline;
   --fdObjectStatus_TextDecoration_Hover: none;
@@ -5,7 +7,7 @@
   --fdObjectStatus_TextDecoration_Visited: underline;
   --fdObjectStatus_TextDecoration_Focus: underline;
 
-  // Focus State
+  /* Focus State */
   --fdObjectStatus_Focus_Background: var(--sapContent_FocusColor);
   --fdObjectStatus_Focus_Border_Radius: 0.125rem;
   --fdObjectStatus_Focus_Outline: 0.125rem solid var(--sapContent_FocusColor);
@@ -28,7 +30,7 @@
   --fdObjectStatus_Accent_Color_7_Focus: var(--sapContent_ContrastTextColor);
   --fdObjectStatus_Accent_Color_8_Focus: var(--sapContent_ContrastTextColor);
 
-  // Inverted Object Status
+  /* Inverted Object Status */
   --fdObjectStatus_Inverted_Border_Width: 0.0625rem;
   --fdObjectStatus_Inverted_Underline_Width: 0.125rem;
   --fdObjectStatus_Inverted_Min_Width: 1.375rem;
@@ -56,7 +58,7 @@
   --fdObjectStatus_Active_Text_Indication_Color_9: var(--sapIndicationColor_9_Active_TextColor);
   --fdObjectStatus_Active_Text_Indication_Color_10: var(--sapIndicationColor_10_Active_TextColor);
 
-  // Second Set Indication Color
+  /* Second Set Indication Color */
   --fdObjectStatus_Text_Shadow_Indication_Color: var(--sapContent_TextShadow);
   --fdObjectStatus_Text_Indication_Color_1b: var(--sapIndicationColor_1);
   --fdObjectStatus_Background_Indication_Color_1b: var(--sapIndicationColor_1b);

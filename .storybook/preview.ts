@@ -11,43 +11,6 @@ import { Preview } from '@storybook/html';
 
 export default {
     parameters: {
-        cssresources: [
-            {
-                id: 'normalize',
-                code: `<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"/>`,
-                picked: false
-            },
-            {
-                id: 'unnormalize',
-                code: `<link rel="stylesheet" type="text/css" href="./unnormalize.css"/>`,
-                picked: false
-            },
-            {
-                id: 'theme-ugly',
-                code: `<link rel="stylesheet" type="text/css" href="./theme-ugly.css"/>`,
-                picked: false
-            },
-            {
-                id: 'windows-hcm-1',
-                code: '<link rel="stylesheet" type="text/css" href="./windows-hcm-1.css"/>',
-                picked: false
-            },
-            {
-                id: 'windows-hcm-2',
-                code: '<link rel="stylesheet" type="text/css" href="./windows-hcm-2.css"/>',
-                picked: false
-            },
-            {
-                id: 'windows-hcm-dark',
-                code: '<link rel="stylesheet" type="text/css" href="./windows-hcm-dark.css"/>',
-                picked: false
-            },
-            {
-                id: 'windows-hcm-light',
-                code: '<link rel="stylesheet" type="text/css" href="./windows-hcm-light.css"/>',
-                picked: false
-            }
-        ],
         docs: {
             container: DocsContainer,
             page: MainDocPage,
@@ -67,6 +30,16 @@ export default {
             }
         },
         options: {
+            /**
+             * We want to sort the stories in the following order:
+             * 1. Introduction
+             * 2. Docs of Stories in alphabetical order
+             *
+             * This function can not use `typescript` or anything from outer scope
+             * because during compilation it will be extracted into separate chunk
+             * as-is and executed in the browser! Only `javascript` is allowed
+             * and it has to be self-contained.
+             */
             storySort: (a, b) => {
                 const introductionName = 'Introduction',
                     aIsIntroduction = a.title.includes(introductionName),

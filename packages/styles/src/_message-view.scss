@@ -1,3 +1,5 @@
+@use "sass:map";
+
 @import "./mixins";
 
 $block: #{$fd-namespace}-message-view;
@@ -24,10 +26,7 @@ $block: #{$fd-namespace}-message-view;
 
     display: none;
     position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
+    inset: 0;
     padding: 1rem 1rem 1rem 3.5rem;
 
     @include fd-rtl() {

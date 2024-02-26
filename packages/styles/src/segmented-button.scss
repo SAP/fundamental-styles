@@ -1,3 +1,5 @@
+@use "sass:map";
+
 @import "./new-settings";
 @import "./mixins";
 @import "./mixins/button/button-helper";
@@ -26,7 +28,7 @@ $block: #{$fd-namespace}-segmented-button;
       border-radius: var(--fdButton_Border_Radius_Left);
     }
 
-    &:not(:first-child):not(:last-child) {
+    &:not(:first-child, :last-child) {
       border-radius: var(--fdButton_Segmented_Middle_Border_Radius);
     }
 

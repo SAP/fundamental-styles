@@ -1,3 +1,5 @@
+@use "sass:map";
+
 // These mixins ensure that all state selectors — ARIA, pseudos, `is` fallbacks — get applied properly.
 
 @mixin fd-internal-pseudo-element-focus($_offset) {
@@ -10,10 +12,7 @@
     content: '';
     position: absolute;
     pointer-events: none;
-    top: $offset;
-    bottom: $offset;
-    left: $offset;
-    right: $offset;
+    inset: $offset $offset $offset $offset;
     @content;
   }
 }
@@ -74,9 +73,7 @@
       outline-offset: $offset;
     }
 
-    outline-width: var(--sapContent_FocusWidth);
-    outline-color: var(--sapContent_FocusColor);
-    outline-style: var(--sapContent_FocusStyle);
+    outline: var(--sapContent_FocusColor) var(--sapContent_FocusStyle) var(--sapContent_FocusWidth);
     @content;
   }
 }
@@ -106,10 +103,7 @@
       content: '';
       position: absolute;
       pointer-events: none;
-      top: $offset;
-      bottom: $offset;
-      left: $offset;
-      right: $offset;
+      inset: $offset $offset $offset $offset;
       @content;
     }
   }
@@ -129,9 +123,7 @@
 @mixin fd-fiori-focus-within($offset: -0.1875rem) {
   &:focus-within {
     outline-offset: $offset;
-    outline-width: var(--sapContent_FocusWidth);
-    outline-color: var(--sapContent_FocusColor);
-    outline-style: var(--sapContent_FocusStyle);
+    outline: var(--sapContent_FocusColor) var(--sapContent_FocusStyle) var(--sapContent_FocusWidth);
     @content;
   }
 }

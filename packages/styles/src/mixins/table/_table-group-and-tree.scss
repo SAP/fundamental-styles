@@ -1,3 +1,5 @@
+@use "sass:map";
+
 @import "../mixins";
 
 @mixin fd-table-nested-cell-padding($levels: 20, $content-density-cozy: false, $include-expand: false) {

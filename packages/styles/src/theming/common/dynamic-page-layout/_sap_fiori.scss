@@ -1,3 +1,5 @@
+@use "sass:map";
+
 :root {
   --fdDynamicPage_Title_Color: var(--sapGroup_TitleTextColor);
   --fdDynamicPage_Title_Font_Size: var(--sapFontHeader3Size);

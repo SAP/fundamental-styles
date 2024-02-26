@@ -1,14 +1,14 @@
 {
-  "name": "@fundamental-styles/theming-preview",
-  "version": "VERSION_PLACEHOLDER",
-  "license": "Apache-2.0",
-  "homepage": "https://sap.github.io/fundamental-styles/",
-  "description": "Fundamental Library Styles - Theming Package Preview",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/SAP/fundamental-styles"
-  },
-  "dependencies": {
-    "fundamental-styles": "VERSION_PLACEHOLDER"
-  }
+    "name": "@fundamental-styles/theming-preview",
+    "version": "0.33.3-rc.17",
+    "license": "Apache-2.0",
+    "homepage": "https://sap.github.io/fundamental-styles/",
+    "description": "Fundamental Library Styles - Theming Package Preview",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/SAP/fundamental-styles"
+    },
+    "dependencies": {
+        "fundamental-styles": "VERSION_PLACEHOLDER"
+    }
 }

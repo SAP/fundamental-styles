@@ -1,9 +1,7 @@
+@use "sass:map";
 @use "sass:math";
 
-// https://github.com/stylelint/stylelint/issues/5133#issuecomment-834145196
-/* stylelint-disable */
 @import "./mixins";
-/* stylelint-enable */
 
 $blockContainer: #{$fd-namespace}-container;
 $blockRow: #{$fd-namespace}-row;
@@ -39,7 +37,7 @@ $cols: 12;
 @mixin fd-column-responsive($sizePrefix: null) {
   $classPrefix: #{$blockCol};
 
-  @if ($sizePrefix) {
+  @if $sizePrefix {
     $classPrefix: $blockCol + '-' + $sizePrefix;
   }
 
@@ -124,7 +122,7 @@ $cols: 12;
   }
 }
 
-@media (min-width: 600px) {
+@media (width >= 600px) {
   .#{$blockContainer} {
     @include fd-row-nested($gutter);
 
@@ -135,23 +133,23 @@ $cols: 12;
     @include fd-set-paddings-x-equal($gutter);
 
     @at-root {
-      @include fd-column-responsive(map-get($size, $md));
+      @include fd-column-responsive(map.get($size, $md));
     }
   }
 }
 
-@media (min-width: 1024px) {
+@media (width >= 1024px) {
   .#{$blockCol} {
     @at-root {
-      @include fd-column-responsive(map-get($size, $lg));
+      @include fd-column-responsive(map.get($size, $lg));
     }
   }
 }
 
-@media (min-width: 1440px) {
+@media (width >= 1440px) {
   .#{$blockCol} {
     @at-root {
-      @include fd-column-responsive(map-get($size, $xl));
+      @include fd-column-responsive(map.get($size, $xl));
     }
   }
 }

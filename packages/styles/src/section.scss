@@ -1,3 +1,5 @@
+@use "sass:map";
+
 @import "./mixins";
 
 $block: #{$fd-namespace}-section;
@@ -10,10 +12,7 @@ $block: #{$fd-namespace}-section;
   @include fd-reset();
   @include fd-clearfix();
 
-  padding-top: $fd-section-padding--top;
-  padding-bottom: $fd-section-padding--bottom;
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
+  padding: $fd-section-padding--top 0.5rem $fd-section-padding--bottom 0.5rem;
 
   @include fd-screen(m) {
     padding-left: 2rem;

@@ -1,8 +1,9 @@
+@use "sass:map";
+
 @import "./mixins";
 
 // VARIABLES
 $block: #{$fd-namespace}-wizard;
-
 $fd-wizard-step-indicator-spacing: 0.1875rem !default;
 $fd-wizard-step-indicator-size: 2rem !default;
 $fd-wizard-step-no-label-max-size: 4rem !default;
@@ -215,9 +216,7 @@ $fd-wizard-stacked-upcoming-step-offset: 2.375rem !default;
     @include fd-flex-vertical-center();
 
     @include fd-focus() {
-      outline-style: var(--sapContent_FocusStyle);
-      outline-width: var(--sapContent_FocusWidth);
-      outline-color: var(--sapContent_FocusColor);
+      outline: var(--sapContent_FocusColor) var(--sapContent_FocusStyle) var(--sapContent_FocusWidth);
     }
 
     cursor: pointer;

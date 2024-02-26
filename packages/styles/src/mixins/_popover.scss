@@ -1,3 +1,6 @@
+@use "sass:map";
+@use "sass:list";
+
 @import "mixins";
 
 $fd-popover-body-shadow-offset: var(--sapGroup_BorderWidth) !default;
@@ -29,22 +32,22 @@ $fd-popover-full-filled-width: calc(100% - #{$fd-popover-body-shadow-offset} * 2
 
   $directions: top, right, bottom, left;
 
-  @for $i from 1 through length($directions) {
-    @if nth($directions, $i) == $direction {
-      border-#{_get-item($directions, $i)}: none;
-      border-#{_get-item($directions, $i, -1)}: $size solid transparent;
-      border-#{_get-item($directions, $i, 1)}: $size solid transparent;
-      border-#{_get-item($directions, $i, 2)}: $size solid $color;
+  @for $i from 1 through list.length($directions) {
+    @if list.nth($directions, $i) == $direction {
+      border-#{get-item($directions, $i)}: none;
+      border-#{get-item($directions, $i, -1)}: $size solid transparent;
+      border-#{get-item($directions, $i, 1)}: $size solid transparent;
+      border-#{get-item($directions, $i, 2)}: $size solid $color;
     }
   }
 }
 
-@function _get-item($list, $current, $offset:0) {
-  $result-position: ($current + $offset) % length($list);
+@function get-item($list, $current, $offset:0) {
+  $result-position: ($current + $offset) % list.length($list);
 
   @if $result-position == 0 {
-    $result-position: length($list);
+    $result-position: list.length($list);
   }
 
-  @return nth($list, $result-position);
+  @return list.nth($list, $result-position);
 }

@@ -1,6 +1,8 @@
+@use "sass:map";
+
 @import "states";
 
-// utils
+/* utils */
 @mixin fd-reset {
   font-size: var(--sapFontSize);
   line-height: normal;
@@ -36,7 +38,7 @@
   &[type="search"]::-webkit-search-cancel-button,
   &[type="search"]::-webkit-search-results-button,
   &[type="search"]::-webkit-search-results-decoration {
-    -webkit-appearance: none;
+    appearance: none;
   }
 }
 
@@ -54,6 +56,11 @@
   }
 }
 
+/**
+
+Commented these because they are not used.
+@todo Remove after visual testing
+
 @mixin fd-last-child {
   &:last-child {
     margin-bottom: 0;
@@ -68,6 +75,7 @@
     @content;
   }
 }
+ */
 
 @mixin fd-only-child {
   &:first-child:last-child {
@@ -77,7 +85,7 @@
 
 @mixin fd-screen($size, $dimension: width) {
   @if map-has-key($fd-breakpoints, $size) {
-    @media (min-#{$dimension}: map-get($fd-breakpoints, $size)) {
+    @media (min-#{$dimension}: map.get($fd-breakpoints, $size)) {
       @content;
     }
   } @else {
@@ -119,8 +127,10 @@
   }
 }
 
-// using pseudo elements with attributes (e.g. [some-selector::before[dir="rtl"] ) is not acceptable by browser
-// creating a new mixin for rtl instead of fixing existing one to be sure nothing is broken
+/*
+  using pseudo elements with attributes (e.g. [some-selector::before[dir="rtl"] ) is not acceptable by browser
+  creating a new mixin for rtl instead of fixing existing one to be sure nothing is broken
+*/
 @mixin fd-rtl-pseudo {
   @at-root {
     [dir="rtl"] & {
@@ -136,7 +146,7 @@
     text-decoration: var(--fdLink_Text_Content_Decoration, none);
   }
 
-  @if ($content-selector != null) {
+  @if  $content-selector {
     #{$content-selector} {
       text-decoration: var(--fdLink_Text_Content_Decoration, none);
     }
@@ -223,9 +233,7 @@
     border-radius: var(--fdLink_Focus_Border_Radius);
     text-shadow: var(--fdLink_Focus_Text_Shadow);
     outline-offset: var(--fdLink_Hover_Outline_Offset);
-    outline-width: var(--fdLink_Hover_Outline_Width);
-    outline-color: var(--fdLink_Hover_Outline_Color);
-    outline-style: var(--fdLink_Hover_Outline_Style);
+    outline: var(--fdLink_Hover_Outline_Color) var(--fdLink_Hover_Outline_Style) var(--fdLink_Hover_Outline_Width);
   }
 
   @include fd-active() {
@@ -390,11 +398,11 @@
 
 @mixin fd-remove-scrollbar {
   &::-webkit-scrollbar {
-    display: none; // hide scrollbar but keep element scrollable for Chrome/Safari/Opera
+    display: none; /* hide scrollbar but keep element scrollable for Chrome/Safari/Opera */
   }
 
-  -ms-overflow-style: none; // hide scrollbar but keep element scrollable for IE/Edge
-  scrollbar-width: none; // hide scrollbar on firefox
+  -ms-overflow-style: none; /* hide scrollbar but keep element scrollable for IE/Edge */
+  scrollbar-width: none; /* hide scrollbar on firefox */
 }
 
 @mixin fd-typography($fd-size, $color: var(--sapGroup_TitleTextColor)) {
@@ -411,20 +419,20 @@
 }
 
 @mixin fd-icon-overwrite {
-  &[class*=sap-icon] {
+  &[class*="sap-icon"] {
     @content;
   }
 }
 
 @mixin fd-icon-before-overwrite {
-  &[class*=sap-icon]::before,
+  &[class*="sap-icon"]::before,
   &::before {
     @content;
   }
 }
 
 @mixin fd-icon-after-overwrite {
-  &[class*=sap-icon]::after,
+  &[class*="sap-icon"]::after,
   &::after {
     @content;
   }
@@ -630,10 +638,7 @@
 }
 
 @mixin fd-set-equal-positions($value) {
-  top: $value;
-  right: $value;
-  bottom: $value;
-  left: $value;
+  inset: $value $value $value $value;
 }
 
 /* Fully expanded pseudo element. Requires parent to have specified position */
@@ -650,27 +655,27 @@
   }
 }
 
-// Media queries
+/* Media queries */
 @mixin fd-media-sm() {
-  @media (max-width: 599px) {
+  @media (width <= 599px) {
     @content;
   }
 }
 
 @mixin fd-media-md() {
-  @media (min-width: 600px) and (max-width: 1023px) {
+  @media (width >= 600px) and (width <= 1023px) {
     @content;
   }
 }
 
 @mixin fd-media-lg() {
-  @media (min-width: 1024px) and (max-width: 1439px) {
+  @media (width >= 1024px) and (width <= 1439px) {
     @content;
   }
 }
 
 @mixin fd-media-xl() {
-  @media (min-width: 1440px) {
+  @media (width >= 1440px) {
     @content;
   }
 }
@@ -787,7 +792,7 @@
   }
 
   &::-webkit-scrollbar-thumb {
-    // In order to achieve space between scrollbar and scrollbar thumb, we need to use box shadow instead of background.
+    /* In order to achieve space between scrollbar and scrollbar thumb, we need to use box shadow instead of background. */
     background-color: transparent;
     box-shadow: inset 0 0 0 var(--fdScrollbar_Dimension) var(--fdScrollbar_Thumb_Color);
     border: var(--fdScrollbar_Thumb_Offset) solid transparent;
@@ -816,7 +821,7 @@
 
 @mixin fd-cozy() {
   @at-root {
-    [class*="-cozy"] &:not([class*="-compact"]):not([class*="-condensed"]),
+    [class*="-cozy"] &:not([class*="-compact"], [class*="-condensed"]),
     &[class*="-cozy"] {
       @content;
     }
@@ -825,7 +830,7 @@
 
 @mixin fd-compact() {
   @at-root {
-    [class*="-compact"] &:not([class*="-cozy"]):not([class*="-condensed"]),
+    [class*="-compact"] &:not([class*="-cozy"], [class*="-condensed"]),
     &[class*="-compact"] {
       @content;
     }
@@ -843,7 +848,7 @@
 
 @mixin fd-condensed() {
   @at-root {
-    [class*="-condensed"] &:not([class*="-cozy"]):not([class*="-compact"]),
+    [class*="-condensed"] &:not([class*="-cozy"], [class*="-compact"]),
     &[class*="-condensed"] {
       @content;
     }

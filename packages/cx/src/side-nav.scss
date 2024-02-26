@@ -1,3 +1,5 @@
+@use "sass:map";
+
 @import "../../styles/src/new-settings";
 @import "./settings";
 @import "../../styles/src/mixins";
@@ -5,7 +7,6 @@
 
 $block: #{$fd-cx-namespace}-side-nav;
 $block-nested-list: #{$fd-cx-namespace}-nested-list;
-
 $fd-side-nav-border-radius: 1rem;
 
 .#{$block} {
@@ -39,8 +40,7 @@ $fd-side-nav-border-radius: 1rem;
       align-items: center;
     }
 
-    overflow-y: scroll;
-    overflow-x: hidden;
+    overflow: hidden scroll;
 
     .#{$block-nested-list}.level-1 {
       & > .#{$block-nested-list}__item:first-child {
@@ -121,7 +121,7 @@ $fd-side-nav-border-radius: 1rem;
   &--narrow-animated-items {
     .#{$fd-cx-namespace}-nested-list {
       &__title,
-      &__arrow[class*=sap-icon] {
+      &__arrow[class*="sap-icon"] {
         visibility: hidden;
         opacity: 0;
         height: var(--fdNestedList_Item_Height);
@@ -136,7 +136,7 @@ $fd-side-nav-border-radius: 1rem;
     &:not(.#{$fd-cx-namespace}--narrow-animated-items) {
       .#{$fd-cx-namespace}-nested-list {
         &__title,
-        &__arrow[class*=sap-icon] {
+        &__arrow[class*="sap-icon"] {
           height: var(--fdNestedList_Item_Height);
         }
       }
@@ -156,7 +156,7 @@ $fd-side-nav-border-radius: 1rem;
           content: "\e066";
           position: absolute;
           padding-right: 0.25rem;
-          font-family: "SAP-icons";
+          font-family: SAP-icons;
           font-size: var(--sapFontSmallSize);
         }
 

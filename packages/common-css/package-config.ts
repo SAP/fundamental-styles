@@ -1,5 +1,5 @@
 /* eslint-disable @typescript-eslint/ban-ts-comment */
-import projects from '../../projects';
+import { projects } from '../../projects';
 import { PackageConfigInterface } from 'fundamental-styles/storybook';
 
 // @ts-ignore

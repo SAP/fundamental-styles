@@ -1,3 +1,5 @@
+@use "sass:map";
+
 $states: (
   "valid": (
     "color": var(--sapSuccessColor),
@@ -21,12 +23,12 @@ $states: (
   @each $name, $state in $states {
     .#{$block}__cell {
       &--#{$name} {
-        color: map-get($state, color);
+        color: map.get($state, color);
       }
 
       &--status-indicator {
         &--#{$name} {
-          background-color: map-get($state, background-color);
+          background-color: map.get($state, background-color);
         }
       }
     }

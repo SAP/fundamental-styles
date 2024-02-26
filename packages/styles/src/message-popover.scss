@@ -1,15 +1,16 @@
+@use "sass:map";
+
 @import "./mixins";
 @import "./message-view";
 
 @mixin _fd-message-popover-trigger($colors, $state) {
-  --fdButtonColor: #{map-get(map-get($colors, $state), "color")};
-  --fdButtonBackgroundColor: #{map-get(map-get($colors, $state), "backgroundColor")};
-  --fdButtonBorderColor: #{map-get(map-get($colors, $state), "borderColor")};
-  --fdButtonTextShadow: #{map-get(map-get($colors, $state), "textShadow")};
+  --fdButtonColor: #{map.get(map.get($colors, $state), "color")};
+  --fdButtonBackgroundColor: #{map.get(map.get($colors, $state), "backgroundColor")};
+  --fdButtonBorderColor: #{map.get(map.get($colors, $state), "borderColor")};
+  --fdButtonTextShadow: #{map.get(map.get($colors, $state), "textShadow")};
 }
 
 $block: #{$fd-namespace}-message-popover;
-
 $fd-trigger-states: (
   "critical": (
     "regular": (

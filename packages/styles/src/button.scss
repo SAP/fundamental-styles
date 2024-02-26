@@ -1,3 +1,5 @@
+@use "sass:map";
+
 @import './new-settings';
 @import './mixins';
 @import './mixins/button/button-helper';
@@ -25,17 +27,14 @@ $fd-button-badge-spacing: 0.25rem;
   border-style: solid;
   border-width: var(--sapButton_BorderWidth);
 
-  // Extended touchable area
+  /* Extended touchable area */
   &::before {
     content: '';
     display: block;
     position: absolute;
     height: auto;
     width: 100%;
-    top: calc((var(--fdButton_Clickable_Height) - var(--fdButton_Height)) * -0.5);
-    bottom: calc((var(--fdButton_Clickable_Height) - var(--fdButton_Height)) * -0.5);
-    left: 0;
-    right: 0;
+    inset: calc((var(--fdButton_Clickable_Height) - var(--fdButton_Height)) * -0.5) 0 calc((var(--fdButton_Clickable_Height) - var(--fdButton_Height)) * -0.5) 0;
   }
 
   &__text {
@@ -149,7 +148,7 @@ $fd-button-badge-spacing: 0.25rem;
     box-shadow: none;
   }
 
-  // @deprecated selected state
+  /* @deprecated selected state */
   @include fd-button-active-selected() {
     box-shadow: none;
     outline: none;
@@ -161,7 +160,7 @@ $fd-button-badge-spacing: 0.25rem;
     opacity: var(--sapContent_DisabledOpacity);
   }
 
-  // Types, including default one
+  /* Types, including default one */
   @include fd-button-types();
 
   /**

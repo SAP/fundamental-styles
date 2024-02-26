@@ -1,3 +1,5 @@
+@use "sass:map";
+
 :root {
   --fdMenu_Active_State_Focus: var(--sapContent_ContrastFocusColor);
   --fdMenu_Affordance_Arrow_Size: 0.75rem;

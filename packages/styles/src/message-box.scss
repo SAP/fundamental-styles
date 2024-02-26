@@ -1,3 +1,5 @@
+@use "sass:map";
+
 @import "./new-settings";
 @import "./mixins";
 @import "./dialog-placeholders";
@@ -5,7 +7,6 @@
 $block: #{$fd-namespace}-message-box;
 $bar: #{$fd-namespace}-bar;
 $button: #{$fd-namespace}-button;
-
 $fd-message-box-icon-text-spacing: 0.5rem;
 $fd-message-box-title-icon-text-size: 1rem;
 $fd-message-box-footer-button-min-width: 4rem;
@@ -15,7 +16,6 @@ $errorBoxShadow: var(--fdMessage_Box_Error_Box_Shadow);
 $successBoxShadow: var(--fdMessage_Box_Success_Box_Shadow);
 $warningBoxShadow: var(--fdMessage_Box_Warning_Box_Shadow);
 $informationBoxShadow: var(--fdMessage_Box_Information_Box_Shadow);
-
 $message-box-states: (
   "confirmation": ("iconColor": var(--sapNeutralElementColor), "boxShadow": var(--sapContent_HeaderShadow)),
   "error": ("iconColor": var(--sapNegativeElementColor), "boxShadow": $errorBoxShadow),
@@ -44,8 +44,8 @@ $message-box-states: (
         .#{$block}__header.#{$bar},
         .#{$block}__footer.#{$bar},
         .#{$block}__body {
-          padding-left: map_get($fd-message-box-content-padding-x, $size-label);
-          padding-right: map_get($fd-message-box-content-padding-x, $size-label);
+          padding-left: map.get($fd-message-box-content-padding-x, $size-label);
+          padding-right: map.get($fd-message-box-content-padding-x, $size-label);
         }
       }
     }
@@ -96,12 +96,12 @@ $message-box-states: (
   @each $set-name, $state-set in $message-box-states {
     &--#{$set-name} {
       .#{$block}__header.#{$bar} {
-        box-shadow: map_get($state-set, "boxShadow");
+        box-shadow: map.get($state-set, "boxShadow");
 
-        [class*=sap-icon] {
+        [class*="sap-icon"] {
           font-size: 1rem;
           margin-right: $fd-message-box-icon-text-spacing;
-          color: map_get($state-set, "iconColor");
+          color: map.get($state-set, "iconColor");
 
           @include fd-rtl() {
             margin-right: 0;

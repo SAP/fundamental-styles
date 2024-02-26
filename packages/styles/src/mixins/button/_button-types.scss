@@ -1,8 +1,6 @@
 @use "sass:map";
 
-/* stylelint-disable */
 @import "../../functions";
-/* stylelint-enable */
 
 $default-button-config: (
   "default": (
@@ -35,7 +33,7 @@ $default-button-config: (
 $button-types-config: (
   "emphasized": (
     "default": map.merge(
-      map-get($default-button-config, "default"),
+      map.get($default-button-config, "default"),
       (
         "fontWeight": var(--sapButton_Emphasized_FontWeight),
         "borderWidth": var(--fdButton_Emphasized_Border_Width),
@@ -45,7 +43,7 @@ $button-types-config: (
       )
     ),
     "hover": map.merge(
-      map-get($default-button-config, "hover"),
+      map.get($default-button-config, "hover"),
       (
         "color": var(--sapButton_Emphasized_Hover_TextColor),
         "borderColor": var(--sapButton_Emphasized_Hover_BorderColor),
@@ -53,19 +51,19 @@ $button-types-config: (
       )
     ),
     "active": map.merge(
-      map-get($default-button-config, "active"),
+      map.get($default-button-config, "active"),
       (
         "color": var(--sapButton_Emphasized_Active_TextColor),
         "borderColor": var(--sapButton_Emphasized_Active_BorderColor),
         "background": var(--sapButton_Emphasized_Active_Background)
       )
     ),
-    "toggled": map-get($default-button-config, "toggled"),
-    "activeToggled": map-get($default-button-config, "activeToggled")
+    "toggled": map.get($default-button-config, "toggled"),
+    "activeToggled": map.get($default-button-config, "activeToggled")
   ),
   "attention": (
     "default": map.merge(
-      map-get($default-button-config, "default"),
+      map.get($default-button-config, "default"),
       (
         "borderColor": var(--sapButton_Attention_BorderColor),
         "color": var(--sapButton_Attention_TextColor),
@@ -73,7 +71,7 @@ $button-types-config: (
       )
     ),
     "hover": map.merge(
-      map-get($default-button-config, "hover"),
+      map.get($default-button-config, "hover"),
       (
         "color": var(--sapButton_Attention_Hover_TextColor),
         "borderColor": var(--sapButton_Attention_Hover_BorderColor),
@@ -81,7 +79,7 @@ $button-types-config: (
       )
     ),
     "active": map.merge(
-      map-get($default-button-config, "active"),
+      map.get($default-button-config, "active"),
       (
         "color": var(--sapButton_Attention_Active_TextColor),
         "borderColor": var(--sapButton_Attention_Active_BorderColor),
@@ -89,7 +87,7 @@ $button-types-config: (
       )
     ),
     "toggled": map.merge(
-      map-get($default-button-config, "toggled"),
+      map.get($default-button-config, "toggled"),
       (
         "color": var(--sapButton_Attention_Selected_TextColor),
         "borderColor": var(--sapButton_Attention_Selected_BorderColor),
@@ -97,7 +95,7 @@ $button-types-config: (
       )
     ),
     "activeToggled": map.merge(
-      map-get($default-button-config, "activeToggled"),
+      map.get($default-button-config, "activeToggled"),
       (
         "color": var(--sapButton_Attention_Selected_TextColor),
         "borderColor": var(--sapButton_Attention_Selected_Hover_BorderColor),
@@ -107,7 +105,7 @@ $button-types-config: (
   ),
   "negative": (
     "default": map.merge(
-      map-get($default-button-config, "default"),
+      map.get($default-button-config, "default"),
       (
         "color": var(--sapButton_Reject_TextColor),
         "borderColor": var(--sapButton_Reject_BorderColor),
@@ -115,7 +113,7 @@ $button-types-config: (
       )
     ),
     "hover": map.merge(
-      map-get($default-button-config, "hover"),
+      map.get($default-button-config, "hover"),
       (
         "color": var(--sapButton_Reject_Hover_TextColor),
         "borderColor": var(--sapButton_Reject_Hover_BorderColor),
@@ -123,7 +121,7 @@ $button-types-config: (
       )
     ),
     "active": map.merge(
-      map-get($default-button-config, "active"),
+      map.get($default-button-config, "active"),
       (
         "color": var(--sapButton_Reject_Active_TextColor),
         "borderColor": var(--sapButton_Reject_Active_BorderColor),
@@ -131,7 +129,7 @@ $button-types-config: (
       )
     ),
     "toggled": map.merge(
-      map-get($default-button-config, "toggled"),
+      map.get($default-button-config, "toggled"),
       (
         "color": var(--sapButton_Reject_Selected_TextColor),
         "borderColor": var(--sapButton_Reject_Selected_BorderColor),
@@ -139,7 +137,7 @@ $button-types-config: (
       )
     ),
     "activeToggled": map.merge(
-      map-get($default-button-config, "activeToggled"),
+      map.get($default-button-config, "activeToggled"),
       (
         "color": var(--sapButton_Reject_Selected_TextColor),
         "borderColor": var(--sapButton_Reject_Selected_Hover_BorderColor),
@@ -149,7 +147,7 @@ $button-types-config: (
   ),
   "positive": (
     "default": map.merge(
-      map-get($default-button-config, "default"),
+      map.get($default-button-config, "default"),
       (
         "color": var(--sapButton_Accept_TextColor),
         "borderColor": var(--sapButton_Accept_BorderColor),
@@ -157,7 +155,7 @@ $button-types-config: (
       )
     ),
     "hover": map.merge(
-      map-get($default-button-config, "hover"),
+      map.get($default-button-config, "hover"),
       (
         "color": var(--sapButton_Accept_Hover_TextColor),
         "borderColor": var(--sapButton_Accept_Hover_BorderColor),
@@ -165,7 +163,7 @@ $button-types-config: (
       )
     ),
     "active": map.merge(
-      map-get($default-button-config, "active"),
+      map.get($default-button-config, "active"),
       (
         "color": var(--sapButton_Accept_Active_TextColor),
         "borderColor": var(--sapButton_Accept_Active_BorderColor),
@@ -173,7 +171,7 @@ $button-types-config: (
       )
     ),
     "toggled": map.merge(
-      map-get($default-button-config, "toggled"),
+      map.get($default-button-config, "toggled"),
       (
         "color": var(--sapButton_Accept_Selected_TextColor),
         "borderColor": var(--sapButton_Accept_Selected_BorderColor),
@@ -181,7 +179,7 @@ $button-types-config: (
       )
     ),
     "activeToggled": map.merge(
-      map-get($default-button-config, "activeToggled"),
+      map.get($default-button-config, "activeToggled"),
       (
         "color": var(--sapButton_Accept_Selected_TextColor),
         "borderColor": var(--sapButton_Accept_Selected_Hover_BorderColor),
@@ -191,7 +189,7 @@ $button-types-config: (
   ),
   "transparent": (
     "default": map.merge(
-      map-get($default-button-config, "default"),
+      map.get($default-button-config, "default"),
       (
         "color": var(--sapButton_Lite_TextColor),
         "borderColor": var(--sapButton_Lite_BorderColor),
@@ -199,7 +197,7 @@ $button-types-config: (
       )
     ),
     "hover": map.merge(
-      map-get($default-button-config, "hover"),
+      map.get($default-button-config, "hover"),
       (
         "color": var(--sapButton_Lite_Hover_TextColor),
         "borderColor": var(--sapButton_Lite_Hover_BorderColor),
@@ -207,26 +205,26 @@ $button-types-config: (
       )
     ),
     "active": map.merge(
-      map-get($default-button-config, "active"),
+      map.get($default-button-config, "active"),
       (
         "borderColor": var(--sapButton_Lite_Active_BorderColor),
         "background": var(--sapButton_Lite_Active_Background)
       )
     ),
-    "toggled": map-get($default-button-config, "toggled"),
-    "activeToggled": map-get($default-button-config, "activeToggled")
+    "toggled": map.get($default-button-config, "toggled"),
+    "activeToggled": map.get($default-button-config, "activeToggled")
   ),
   "ghost": (
     "default": map.merge(
-      map-get($default-button-config, "default"),
+      map.get($default-button-config, "default"),
       (
         "background": var(--fdButton_Ghost_Background)
       )
     ),
-    "hover": map-get($default-button-config, "hover"),
-    "active": map-get($default-button-config, "active"),
-    "toggled": map-get($default-button-config, "toggled"),
-    "activeToggled": map-get($default-button-config, "activeToggled")
+    "hover": map.get($default-button-config, "hover"),
+    "active": map.get($default-button-config, "active"),
+    "toggled": map.get($default-button-config, "toggled"),
+    "activeToggled": map.get($default-button-config, "activeToggled")
   )
 );
 
@@ -287,21 +285,21 @@ $button-types-config: (
 /* === INTERNAL FOR THIS FILE === */
 
 @mixin _fd-button-type($props: $default-button-config) {
-  $defaultText: map_deep_get($props, "default", "color");
-  $defaultBorder: map_deep_get($props, "default", "borderColor");
-  $defaultBackground: map_deep_get($props, "default", "background");
-  $hoverText: map_deep_get($props, "hover", "color");
-  $hoverBorder: map_deep_get($props, "hover", "borderColor");
-  $hoverBackground: map_deep_get($props, "hover", "background");
-  $activeText: map_deep_get($props, "active", "color");
-  $activeBorder: map_deep_get($props, "active", "borderColor");
-  $activeBackground: map_deep_get($props, "active", "background");
-  $toggledText: map_deep_get($props, "toggled", "color");
-  $toggledBorder: map_deep_get($props, "toggled", "borderColor");
-  $toggledBackground: map_deep_get($props, "toggled", "background");
-  $toggledActiveText: map_deep_get($props, "activeToggled", "color");
-  $toggledActiveBorder: map_deep_get($props, "activeToggled", "borderColor");
-  $toggledActiveBackground: map_deep_get($props, "activeToggled", "background");
+  $defaultText: map-deep-get($props, "default", "color");
+  $defaultBorder: map-deep-get($props, "default", "borderColor");
+  $defaultBackground: map-deep-get($props, "default", "background");
+  $hoverText: map-deep-get($props, "hover", "color");
+  $hoverBorder: map-deep-get($props, "hover", "borderColor");
+  $hoverBackground: map-deep-get($props, "hover", "background");
+  $activeText: map-deep-get($props, "active", "color");
+  $activeBorder: map-deep-get($props, "active", "borderColor");
+  $activeBackground: map-deep-get($props, "active", "background");
+  $toggledText: map-deep-get($props, "toggled", "color");
+  $toggledBorder: map-deep-get($props, "toggled", "borderColor");
+  $toggledBackground: map-deep-get($props, "toggled", "background");
+  $toggledActiveText: map-deep-get($props, "activeToggled", "color");
+  $toggledActiveBorder: map-deep-get($props, "activeToggled", "borderColor");
+  $toggledActiveBackground: map-deep-get($props, "activeToggled", "background");
 
   @include _fd-button-apply-colors($defaultText, $defaultBorder, $defaultBackground);
 

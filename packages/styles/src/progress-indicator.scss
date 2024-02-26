@@ -1,3 +1,5 @@
+@use "sass:map";
+
 @import "./new-settings";
 @import "./mixins";
 
@@ -82,13 +84,13 @@ $fd-progress-indicator-states: (
 
   @each $set-name, $set-state in $fd-progress-indicator-states {
     &--#{$set-name} {
-      --progressBarBackground: #{map_get($set-state, "background")};
-      --progressBarBorderColor: #{map_get($set-state, "borderColor")};
-      --containerBackground: #{map_get($set-state, "containerBackground")};
-      --containerBorderColor: #{map_get($set-state, "containerBorderColor")};
-      --iconContent: #{map_get($set-state, "icon")};
+      --progressBarBackground: #{map.get($set-state, "background")};
+      --progressBarBorderColor: #{map.get($set-state, "borderColor")};
+      --containerBackground: #{map.get($set-state, "containerBackground")};
+      --containerBorderColor: #{map.get($set-state, "containerBorderColor")};
+      --iconContent: #{map.get($set-state, "icon")};
       --iconDisplay: inline;
-      --iconColor: #{map_get($set-state, "iconColor")};
+      --iconColor: #{map.get($set-state, "iconColor")};
       --labelMarginStart: 0;
     }
   }
@@ -206,7 +208,7 @@ $fd-progress-indicator-states: (
 
     &::before {
       vertical-align: middle;
-      font-family: "SAP-icons";
+      font-family: SAP-icons;
       color: var(--iconColor);
       font-size: var(--fdProgress_Indicator_Icon_Font_Size);
       content: var(--iconContent);
