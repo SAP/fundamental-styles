@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.33.3-rc.18](https://github.com/SAP/fundamental-styles/compare/v0.33.3-rc.17...v0.33.3-rc.18) (2024-02-26)
+
+### Bug Fixes
+
+-   **styles:** less and more words capitalise not uppercase [ci visual] ([#5207](https://github.com/SAP/fundamental-styles/issues/5207)) ([65769c6](https://github.com/SAP/fundamental-styles/commit/65769c65ead0d4e6741bc877ff40a85c7e95e9ce))
+
 ## [0.33.3-rc.17](https://github.com/SAP/fundamental-styles/compare/v0.33.3-rc.16...v0.33.3-rc.17) (2024-02-17)
 
 ### Bug Fixes
