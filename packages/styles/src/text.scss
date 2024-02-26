@@ -29,7 +29,7 @@ $block: #{$fd-namespace}-text;
 
   &__link {
     &--more {
-      text-transform: uppercase;
+      text-transform: capitalize;
       cursor: pointer;
     }
   }

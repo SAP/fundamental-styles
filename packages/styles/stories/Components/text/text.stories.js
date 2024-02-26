@@ -54,7 +54,7 @@ export const Expand = () => expandExampleHtml;
 Expand.parameters = {
   docs: {
     description: {
-      story: `Along with max lines, text component can display "MORE" and "LESS" links that can show
+      story: `Along with max lines, text component can display "More" and "Less" links that can show
 more or less of the text.`
     }
   }
