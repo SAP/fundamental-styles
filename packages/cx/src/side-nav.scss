@@ -14,6 +14,8 @@ $fd-side-nav-border-radius: 1rem;
   --fdSideNav_First_Item_Margin_Top: 0.25rem;
   --fdSideNav_Utility_Margin_Bottom: 1rem;
 
+  transition: width ease-out 0.2s;
+
   @include fd-reset();
 
   @include fd-flex(column) {
@@ -116,15 +118,32 @@ $fd-side-nav-border-radius: 1rem;
     border-radius: 0;
   }
 
-  &--narrow {
-    width: 4rem;
-
+  &--narrow-animated-items {
     .#{$fd-cx-namespace}-nested-list {
       &__title,
       &__arrow[class*="sap-icon"] {
-        display: none;
+        visibility: hidden;
+        opacity: 0;
+        height: var(--fdNestedList_Item_Height);
+        overflow: hidden;
       }
+    }
+  }
 
+  &--narrow {
+    width: 4rem;
+
+    &:not(.#{$block}--narrow-animated-items) {
+      .#{$fd-cx-namespace}-nested-list {
+        &__title,
+        &__arrow[class*="sap-icon"] {
+          display: none;
+          height: var(--fdNestedList_Item_Height);
+        }
+      }
+    }
+
+    .#{$fd-cx-namespace}-nested-list {
       // Child Level Indicator
       button.#{$fd-cx-namespace}-nested-list__link {
         position: relative;
@@ -132,6 +151,8 @@ $fd-side-nav-border-radius: 1rem;
         &::before {
           @include fd-flex-vertical-center();
 
+          transform: translateY(-50%);
+          top: 50%;
           right: 0;
           content: "\e066";
           position: absolute;
@@ -160,6 +181,22 @@ $fd-side-nav-border-radius: 1rem;
 
     &.#{$fd-cx-namespace}--narrow {
       width: 4rem;
+    }
+  }
+
+  &--shellbar {
+    border-top-right-radius: 0;
+
+    @include fd-rtl() {
+      border-top-left-radius: 0;
+    }
+  }
+
+  &--single-line {
+    .#{$block-nested-list} {
+      &__title {
+        @include fd-ellipsis();
+      }
     }
   }
 }

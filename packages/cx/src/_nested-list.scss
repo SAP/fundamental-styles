@@ -115,20 +115,33 @@ $button: #{$fd-cx-namespace}-button;
         }
       }
     }
+
+    &--group {
+      @include fd-set-padding-left(1rem);
+
+      border-bottom: 0.0625rem solid var(--sapList_GroupHeaderBorderColor);
+      .#{$block}__title {
+        @include fd-set-paddings-x-equal(1rem);
+
+        color: var(--sapList_GroupHeaderTextColor);
+        font-weight: 700;
+        font-size: 0.875rem;
+      }
+    }
   }
 
   &__link {
     @include fd-reset();
 
     @include fd-flex() {
-      align-items: center;
+      align-items: stretch;
     }
 
     width: 100%;
     cursor: pointer;
     position: relative;
     text-decoration: none;
-    height: var(--fdNestedList_Item_Height);
+    min-height: var(--fdNestedList_Item_Height);
     border-radius: $fd-nested-list-item-border-radius;
 
     @include fd-nested-list-states-colors(var(--sapList_TextColor), var(--sapList_Background));
@@ -190,7 +203,6 @@ $button: #{$fd-cx-namespace}-button;
     }
 
     width: 100%;
-    height: 100%;
     overflow: hidden;
     position: relative;
     text-decoration: none;
@@ -210,18 +222,24 @@ $button: #{$fd-cx-namespace}-button;
 
   &__title {
     @include fd-reset();
-    @include fd-ellipsis();
 
     width: 100%;
     text-align: left;
     color: currentColor;
     display: inline-block;
     font-size: var(--sapFontSize);
-    height: var(--fdNestedList_Item_Height);
-    line-height: var(--fdNestedList_Item_Height);
+    transition: opacity 0.1s ease-out, visibility 0.1s ease-out;
+
+    @include fd-set-paddings-y-equal(0.75rem);
+
+    line-height: normal;
 
     @include fd-rtl() {
       text-align: right;
+    }
+
+    @include fd-compact () {
+      @include fd-set-paddings-y-equal(0);
     }
   }
 
@@ -246,7 +264,7 @@ $button: #{$fd-cx-namespace}-button;
     @include fd-set-width(2.75rem);
     @include fd-set-margin-left(var(--fdNestedList_Button_Margin_Left));
 
-    height: 100%;
+    height: var(--fdNestedList_Item_Height);
     cursor: pointer;
     background: transparent;
     border-radius: $fd-nested-list-item-border-radius;
