@@ -133,10 +133,11 @@ $fd-side-nav-border-radius: 1rem;
   &--narrow {
     width: 4rem;
 
-    &:not(.#{$fd-cx-namespace}--narrow-animated-items) {
+    &:not(.#{$block}--narrow-animated-items) {
       .#{$fd-cx-namespace}-nested-list {
         &__title,
         &__arrow[class*="sap-icon"] {
+          display: none;
           height: var(--fdNestedList_Item_Height);
         }
       }
