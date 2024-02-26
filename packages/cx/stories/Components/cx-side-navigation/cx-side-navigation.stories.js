@@ -14,6 +14,7 @@ import cosyWideTextOnlyLevelsExampleHtml from "./cosy-wide-text-only-levels.exam
 import dynamicWidthExampleHtml from "./dynamic-width.example.html?raw";
 import cozyWideTextOnlyExampleHtml from "./cozy-wide-text-only.example.html?raw";
 import cozyWideIconsExampleHtml from "./cozy-wide-icons.example.html?raw";
+import wrappingLongTextExampleHtml from "./wrapping-long-text.example.html?raw";
 import '../../../src/side-nav.scss';
 import '../../../src/_nested-list.scss';
 import '../../../../styles/src/button.scss';
@@ -21,6 +22,7 @@ import '../../../../styles/src/icon.scss';
 import '../../../../styles/src/popover.scss';
 import '../../../../styles/src/input.scss';
 import '../../../../styles/src/input-group.scss';
+import '../../../../styles/src/scrollbar.scss';
 export default {
   title: 'Components/Cx Side Navigation',
   parameters: {
@@ -134,3 +136,13 @@ CompactNarrowOverflow.storyName = 'Compact Narrow with Vertical Overflow Behavio
 export const CompactNarrowPopover = () => compactNarrowPopoverExampleHtml;
 export const CozyWideIconsSearch = () => cozyWideIconsSearchExampleHtml;
 CozyWideIconsSearch.storyName = 'Cosy Wide With Icon and Filter Integration, 1 Level';
+
+export const WrappingLongText = () => wrappingLongTextExampleHtml;
+WrappingLongText.parameters = {
+  docs: {
+    description: {
+      story: `By default, side navigation will wrap long text into multiple lines if the width of the nav is not enough. Developers can modify this behaviour by adding <code>.fdx-side-nav--single-line</code> class modifier.
+        `
+    }
+  }
+};

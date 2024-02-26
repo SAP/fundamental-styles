@@ -1,4 +1,31 @@
-<div class="fdx-side-nav fdx-side-nav--narrow">
+<script>
+  const togglerButton = document.getElementById("navigation_toggler");
+
+  togglerButton.addEventListener("click", () => {
+    const navigation = document.getElementById("narrow_navigation");
+    let shouldExpand = navigation.classList.contains("fdx-side-nav--narrow");
+
+    if (shouldExpand) {
+      navigation.classList.remove("fdx-side-nav--narrow");
+    } else {
+      navigation.classList.add("fdx-side-nav--narrow");
+    }
+
+    setTimeout(() => {
+      if (shouldExpand) {
+        navigation.classList.remove("fdx-side-nav--narrow-animated-items");
+      } else {
+        navigation.classList.add("fdx-side-nav--narrow-animated-items");
+      }
+    }, shouldExpand ? 200 : 0);
+  });
+</script>
+
+<div style="padding-bottom: 2rem">
+  <button class="fd-button" id="navigation_toggler">Toggle navigation narrow state</button>
+</div>
+
+<div class="fdx-side-nav fdx-side-nav--narrow fdx-side-nav--narrow-animated-items" id="narrow_navigation">
     <nav class="fdx-side-nav__main-navigation">
         <ul class="fdx-nested-list level-1">
             <li class="fdx-nested-list__item">
@@ -17,11 +44,11 @@
                     </div>
                 </a>
             </li>
-            <li class="fdx-nested-list__item fd-popover">
+            <li class="fdx-nested-list__item fd-popover" style="display: block;">
                 <button class="fdx-nested-list__link fd-popover__control is-selected" aria-expanded="false" aria-label="Expand Level 2">
                     <div class="fdx-nested-list__link-container">
                         <i role="presentation" class="fdx-nested-list__icon sap-icon--calendar"></i>
-                        <span class="fdx-nested-list__title">Level 1 Item</span>
+                        <span class="fdx-nested-list__title">Level 1 Item with some long text to display line wrapping</span>
                         <i class="fdx-nested-list__arrow sap-icon--navigation-right-arrow" role="presentation"></i>
                     </div>
                 </button>
