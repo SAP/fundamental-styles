@@ -53,7 +53,7 @@
     "@nx/devkit": "18.0.2",
     "@nx/eslint": "18.0.2",
     "@nx/eslint-plugin": "18.0.2",
-    "@nx/js": "18.0.2",
+    "@nx/js": "18.0.8",
     "@nx/plugin": "18.0.2",
     "@nx/react": "18.0.2",
     "@nx/web": "18.0.2",
