@@ -80,7 +80,7 @@
     "@typescript-eslint/parser": "6.21.0",
     "autoprefixer": "10.4.17",
     "bundlesize": "0.18.1",
-    "chromatic": "10.3.1",
+    "chromatic": "11.0.7",
     "clean-css": "5.3.3",
     "clean-css-cli": "5.4.1",
     "colors": "1.4.0",
