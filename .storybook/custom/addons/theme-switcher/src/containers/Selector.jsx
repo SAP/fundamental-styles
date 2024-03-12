@@ -1,7 +1,8 @@
 import { getOwner } from '../../../utilities/get-owner';
 import IconButtonLabel from './IconButtonLabel';
 import React, { useState, useEffect } from 'react';
-import { WithTooltip, TooltipLinkList, Icons, IconButton } from '@storybook/components';
+import { WithTooltip, TooltipLinkList, IconButton } from '@storybook/components';
+import { PaintBrushIcon } from '@storybook/icons';
 
 const Selector = ({ api }) => {
     const [availableThemes, setAvailableThemes] = useState([]);
@@ -52,7 +53,7 @@ const Selector = ({ api }) => {
                 title={'Theme Selector'}
                 active={!!currentTheme}
             >
-                <Icons icon={'paintbrush'}/>
+                <PaintBrushIcon/>
                 {currentTheme ? <IconButtonLabel>{currentTheme?.title}</IconButtonLabel> : <></>}
             </IconButton>
         </WithTooltip>

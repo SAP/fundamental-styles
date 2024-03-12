@@ -1,4 +1,4 @@
-import { addons, types } from '@storybook/addons';
+import { addons, types } from '@storybook/manager-api';
 import React from 'react';
 import { ADDON_ID } from './constants';
 import Selector from './containers/Selector';

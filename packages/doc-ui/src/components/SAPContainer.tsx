@@ -1,5 +1,5 @@
 import { DocsContext } from '@storybook/addon-docs';
-import { addons } from '@storybook/addons';
+import { addons } from '@storybook/preview-api';
 import { UPDATE_GLOBALS } from '@storybook/core-events';
 import { useContext, useEffect, useMemo, useState } from 'react';
 import { SAPContext } from '../contexts/SAPContext';

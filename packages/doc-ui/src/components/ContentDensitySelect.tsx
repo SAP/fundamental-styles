@@ -1,7 +1,8 @@
 import { SAPContext } from '../contexts/SAPContext';
 import { useContext, useMemo } from 'react';
-import { IconButton, Icons, TooltipLinkList, WithTooltip } from '@storybook/components';
+import { IconButton, TooltipLinkList, WithTooltip } from '@storybook/components';
 import IconButtonLabel from './IconButtonLabel';
+import { ZoomIcon } from '@storybook/icons';
 
 export default () => {
     const sapContext = useContext(SAPContext);
@@ -36,7 +37,7 @@ export default () => {
                 autoFocus={false}
                 rev={undefined}
             >
-                <Icons icon={'zoom'} />
+                <ZoomIcon/>
                 <IconButtonLabel>{title}</IconButtonLabel>
             </IconButton>
         </WithTooltip>

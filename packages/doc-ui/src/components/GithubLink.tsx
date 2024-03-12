@@ -1,6 +1,7 @@
 import lernaJson from '../../../../lerna.json';
-import { IconButton, Icons } from '@storybook/components';
+import { IconButton } from '@storybook/components';
 import { styled } from '@storybook/theming';
+import { GithubIcon } from '@storybook/icons';
 
 const StyledSpan = styled.span(({ theme }) => ({
     fontSize: theme.typography.size.s1,
@@ -27,7 +28,7 @@ export default () => <StyledGhButtonContainer>
         autoFocus={false}
         rev={undefined}
     >
-        <Icons icon={'github'}></Icons>
+        <GithubIcon/>
         <StyledSpan>
             {`v${lernaJson.version}`}
         </StyledSpan>

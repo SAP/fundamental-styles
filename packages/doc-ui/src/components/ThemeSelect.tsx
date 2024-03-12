@@ -1,6 +1,7 @@
 import {useContext} from "react";
 import { SAPContext } from '../contexts/SAPContext';
-import { IconButton, Icons, TooltipLinkList, WithTooltip } from '@storybook/components';
+import { IconButton, TooltipLinkList, WithTooltip } from '@storybook/components';
+import { PaintBrushIcon } from '@storybook/icons'
 import { IfBlock } from './IfBlock';
 import IconButtonLabel from "./IconButtonLabel";
 import {packageValueToPackageThemesMapMap} from "fundamental-styles/configuration";
@@ -35,7 +36,7 @@ export default () => {
                 title={'Theme Selector'}
                 active={!!sapContext.theme} content={undefined} rel={undefined} autoFocus={undefined}
                 rev={undefined}>
-                <Icons icon={'paintbrush'} />
+                <PaintBrushIcon/>
                 <IfBlock condition={!!sapContext.theme}>
                     <IconButtonLabel>{currentTheme?.name}</IconButtonLabel>
                 </IfBlock>

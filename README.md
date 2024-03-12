@@ -148,8 +148,7 @@ html {
 
 ### Download and Installation
 
-1. **Clone Repository** - Clone the repo using the git software of your choice or using the git
-   command `git clone https://github.com/SAP/fundamental-styles.git`
+1. **Clone Repository** Clone the repo using the git software of your choice or using the git command `git clone https://github.com/SAP/fundamental-styles.git`
 
 2. **Install NPM Dependencies**: `npm install`
 
