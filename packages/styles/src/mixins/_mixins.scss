@@ -56,27 +56,6 @@
   }
 }
 
-/**
-
-Commented these because they are not used.
-@todo Remove after visual testing
-
-@mixin fd-last-child {
-  &:last-child {
-    margin-bottom: 0;
-    margin-right: 0;
-    @content;
-  }
-}
-
-@mixin fd-first-child {
-  &:first-child {
-    margin-left: 0;
-    @content;
-  }
-}
- */
-
 @mixin fd-only-child {
   &:first-child:last-child {
     @content;
