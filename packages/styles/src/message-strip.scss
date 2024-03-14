@@ -163,6 +163,7 @@ $block: #{$fd-namespace}-message-strip;
     @include fd-reset();
 
     line-height: 1rem;
+    word-break: break-word;
     color: var(--fdMessageStrip_Text_Color);
   }
 
