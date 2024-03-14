@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.34.0-rc.6](https://github.com/SAP/fundamental-styles/compare/v0.34.0-rc.5...v0.34.0-rc.6) (2024-03-14)
+
+### Bug Fixes
+
+-   **styles:** add word break for text in Message Strip component [ci visual] ([#5233](https://github.com/SAP/fundamental-styles/issues/5233)) ([81bd584](https://github.com/SAP/fundamental-styles/commit/81bd5840b3877fe02dddf51d18f9e9a672ae71dd))
+
 # [0.34.0-rc.5](https://github.com/SAP/fundamental-styles/compare/v0.34.0-rc.4...v0.34.0-rc.5) (2024-03-13)
 
 **Note:** Version bump only for package fundamental-styles
