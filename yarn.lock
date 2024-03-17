@@ -5121,12 +5121,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react-dom@npm:18.2.9":
-  version: 18.2.9
-  resolution: "@types/react-dom@npm:18.2.9"
+"@types/react-dom@npm:18.2.22":
+  version: 18.2.22
+  resolution: "@types/react-dom@npm:18.2.22"
   dependencies:
     "@types/react": "npm:*"
-  checksum: 10/f0ce7e87fc6d70cc30bd73943b421ac66ce35e61fef673a1e0c406936e4fcb8f68cbedf1daae647d7569ccbf9d30a322cb941c14b5aa909cd3abe59328e2a1a8
+  checksum: 10/310da22244c1bb65a7f213f8727bda821dd211cfb2dd62d1f9b28dd50ef1c196d59e908494bd5f25c13a3844343f3a6135f39fb830aca6f79646fa56c1b56c08
   languageName: node
   linkType: hard
 
@@ -10294,7 +10294,7 @@ __metadata:
     "@types/fs-extra": "npm:11.0.4"
     "@types/node": "npm:18.19.14"
     "@types/react": "npm:18.2.24"
-    "@types/react-dom": "npm:18.2.9"
+    "@types/react-dom": "npm:18.2.22"
     "@typescript-eslint/eslint-plugin": "npm:6.21.0"
     "@typescript-eslint/parser": "npm:6.21.0"
     "@vitejs/plugin-react": "npm:3.1.0"
