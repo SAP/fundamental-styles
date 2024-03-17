@@ -10352,7 +10352,7 @@ __metadata:
     stylelint: "npm:16.2.1"
     stylelint-config-standard: "npm:36.0.0"
     stylelint-config-standard-scss: "npm:^13.0.0"
-    stylelint-scss: "npm:6.1.0"
+    stylelint-scss: "npm:6.2.1"
     through2: "npm:4.0.2"
     tocbot: "npm:4.12.3"
     ts-node: "npm:10.9.2"
@@ -18706,22 +18706,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"stylelint-scss@npm:6.1.0":
-  version: 6.1.0
-  resolution: "stylelint-scss@npm:6.1.0"
-  dependencies:
-    known-css-properties: "npm:^0.29.0"
-    postcss-media-query-parser: "npm:^0.2.3"
-    postcss-resolve-nested-selector: "npm:^0.1.1"
-    postcss-selector-parser: "npm:^6.0.15"
-    postcss-value-parser: "npm:^4.2.0"
-  peerDependencies:
-    stylelint: ^16.0.2
-  checksum: 10/d1a37af38e6793f60ad3d836741ed624a7a07a56bea094750e72ed6e549243f966efcbe247940c6f1337328db700b1004f49e2119ff421235c979b2574995426
-  languageName: node
-  linkType: hard
-
-"stylelint-scss@npm:^6.0.0":
+"stylelint-scss@npm:6.2.1, stylelint-scss@npm:^6.0.0":
   version: 6.2.1
   resolution: "stylelint-scss@npm:6.2.1"
   dependencies:
