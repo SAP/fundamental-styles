@@ -8,6 +8,8 @@
 $block: #{$fd-namespace}-product-switch;
 
 .#{$block} {
+  --fdProduct_Switch_Item_Border_Color: transparent;
+
   @mixin fd-product-pseudo-element-background($background) {
     .#{$block}__title {
       &::after,
@@ -46,6 +48,7 @@ $block: #{$fd-namespace}-product-switch;
     background-color: var(--sapList_Background);
     border-radius: var(--sapElement_BorderCornerRadius);
     box-shadow: var(--fdProductSwitch_Shadow);
+    border: 0.125rem solid var(--fdProduct_Switch_Item_Border_Color);
 
     .#{$block}__title:not(:last-child) {
       @include fd-ellipsis();
@@ -55,19 +58,19 @@ $block: #{$fd-namespace}-product-switch;
 
     @include fd-hover() {
       background-color: var(--sapList_Hover_Background);
-      border: var(--fdProductSwitch_Border);
       cursor: pointer;
 
       @include fd-product-pseudo-element-background(var(--sapList_Hover_Background));
     }
 
     @include fd-active() {
+      --fdProduct_Switch_Item_Border_Color: var(--sapList_Active_Background);
+
       @include fd-fiori-focus() {
         outline-color: var(--sapContent_ContrastFocusColor);
       }
 
       background-color: var(--sapList_Active_Background);
-      border: var(--fdProductSwitch_Border);
 
       .#{$block}__title,
       .#{$block}__subtitle {
@@ -88,8 +91,9 @@ $block: #{$fd-namespace}-product-switch;
     }
 
     &.selected {
+      --fdProduct_Switch_Item_Border_Color: var(--sapList_SelectionBorderColor);
+
       background-color: var(--sapList_SelectionBackgroundColor);
-      border: 0.125rem solid var(--sapList_SelectionBorderColor);
 
       @include fd-product-pseudo-element-background(var(--sapList_SelectionBackgroundColor));
 
