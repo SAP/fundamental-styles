@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.34.0-rc.9](https://github.com/SAP/fundamental-styles/compare/v0.34.0-rc.8...v0.34.0-rc.9) (2024-03-20)
+
+### Bug Fixes
+
+-   **styles:** add fix for the Tokens focus being cut in Tokenizer [ci visual] ([#5249](https://github.com/SAP/fundamental-styles/issues/5249)) ([38d6a49](https://github.com/SAP/fundamental-styles/commit/38d6a49cadc2b15290955243ce93c9382716b987))
+
 # [0.34.0-rc.8](https://github.com/SAP/fundamental-styles/compare/v0.34.0-rc.7...v0.34.0-rc.8) (2024-03-20)
 
 ### Bug Fixes
