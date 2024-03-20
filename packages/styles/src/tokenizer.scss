@@ -14,7 +14,6 @@ $block: #{$fd-namespace}-tokenizer;
   @include fd-input-field-base();
 
   width: 100%;
-  height: auto;
   display: flex;
   padding: 0;
   margin: 0;
@@ -33,6 +32,7 @@ $block: #{$fd-namespace}-tokenizer;
     float: right;
     white-space: nowrap;
     width: 100%;
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: flex-end;
@@ -135,7 +135,7 @@ $block: #{$fd-namespace}-tokenizer;
   &--scrollable {
     .#{$block}__inner {
       justify-content: initial;
-      overflow: scroll;
+      overflow-x: scroll;
     }
   }
 }
