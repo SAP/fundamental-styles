@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.34.0-rc.8](https://github.com/SAP/fundamental-styles/compare/v0.34.0-rc.7...v0.34.0-rc.8) (2024-03-20)
+
+### Bug Fixes
+
+-   **styles:** add fix for Product Switch items jumping on selection [ci visual] ([#5246](https://github.com/SAP/fundamental-styles/issues/5246)) ([58df9fe](https://github.com/SAP/fundamental-styles/commit/58df9feb716e08010f3f68beda4b226965994ffa))
+
 # [0.34.0-rc.7](https://github.com/SAP/fundamental-styles/compare/v0.34.0-rc.6...v0.34.0-rc.7) (2024-03-15)
 
 **Note:** Version bump only for package fundamental-styles
