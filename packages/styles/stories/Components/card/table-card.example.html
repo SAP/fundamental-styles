@@ -1,22 +1,24 @@
 <div style="display:flex; justify-content:space-around; flex-wrap: wrap">
     <div style="width: 500px; height: 100%; margin: 1rem;">
         <div class="fd-card fd-card--table" role="region" aria-label="Table Card Example 1">
-            <a class="fd-card__header" tabindex="0">
-                <div class="fd-card__header-text">
-                    <div class="fd-card__title-area">
-                        <div class="fd-card__title">Table Card</div>
-                        <span class="fd-object-status fd-card__counter">4 of 20</span>
+            <div class="fd-card__header" role="group" aria-roledescription="Card Header" aria-labelledby="table-card-title-1">
+                <a class="fd-card__header-main" tabindex="0">
+                    <div class="fd-card__header-main-container">
+                        <div class="fd-card__header-text">
+                            <div class="fd-card__title-area">
+                                <div class="fd-card__title" id="table-card-title-1" role="heading" aria-level="3">Table Card</div>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </a>
-            <div class="fd-card__content" role="group" aria-label="Card Content">
+                    <div class="fd-card__header-main-actions">
+                        <span class="fd-object-status fd-card__counter">2 of 20</span>
+                    </div>
+                </a>
+            </div>
+            <div class="fd-card__content" role="group" aria-roledescription="Card Content">
                 <table class="fd-table fd-table--no-horizontal-borders fd-table--no-vertical-borders fd-table--no-outer-border fd-table--top-border">
                     <thead class="fd-table__header">
                         <tr class="fd-table__row">
-                            <th class="fd-table__cell fd-table__cell--checkbox">
-                                <input aria-label="checkbox" type="checkbox" class="fd-checkbox" id="kqqzPI">
-                                <label class="fd-checkbox__label" for="kqqzPI"></label>
-                            </th>
                             <th class="fd-table__cell" scope="col">Name</th>
                             <th class="fd-table__cell" scope="col">Status</th>
                             <th class="fd-table__cell" scope="col">Price</th>
@@ -26,10 +28,6 @@
                     </thead>
                     <tbody class="fd-table__body">
                         <tr class="fd-table__row">
-                            <td class="fd-table__cell fd-table__cell--checkbox">
-                                <input aria-label="checkbox" type="checkbox" class="fd-checkbox" id="EWuzWh">
-                                <label class="fd-checkbox__label" for="EWuzWh"></label>
-                            </td>
                             <td class="fd-table__cell">Banana</td>
                             <td class="fd-table__cell">
                                 <span class="fd-object-status fd-object-status--positive">
@@ -43,10 +41,6 @@
                             </td>
                         </tr>
                         <tr class="fd-table__row">
-                            <td class="fd-table__cell fd-table__cell--checkbox">
-                                <input aria-label="checkbox" type="checkbox" class="fd-checkbox" id="19j0Sc">
-                                <label class="fd-checkbox__label" for="19j0Sc"></label>
-                            </td>
                             <td class="fd-table__cell">Pineapple</td>
                             <td class="fd-table__cell">
                                 <span class="fd-object-status fd-object-status--negative">
@@ -60,10 +54,6 @@
                             </td>
                         </tr>
                         <tr class="fd-table__row">
-                            <td class="fd-table__cell fd-table__cell--checkbox">
-                                <input aria-label="checkbox" type="checkbox" class="fd-checkbox" id="a7SfGX">
-                                <label class="fd-checkbox__label" for="a7SfGX"></label>
-                            </td>
                             <td class="fd-table__cell">Orange</td>
                             <td class="fd-table__cell">
                                 <span class="fd-object-status fd-object-status--informative">

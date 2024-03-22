@@ -1,15 +1,21 @@
 <div style="display:flex; justify-content:space-around; flex-wrap: wrap">
     <div style="width: 300px; height: 100%; margin: 1rem;">
         <div class="fd-card" role="region" aria-label="List Card Example 1">
-            <div class="fd-card__header fd-card__header--non-interactive">
-                <div class="fd-card__header-text">
-                    <div class="fd-card__title-area">
-                        <div class="fd-card__title">Quick Links</div>
-                        <span class="fd-object-status fd-card__counter">6 of 20</span>
+            <div class="fd-card__header" role="group" aria-roledescription="Card Header" aria-labelledby="list-card-title-1">
+                <div class="fd-card__header-main fd-card__header-main--non-interactive">
+                    <div class="fd-card__header-main-container">
+                        <div class="fd-card__header-text">
+                            <div class="fd-card__title-area">
+                                <div class="fd-card__title" id="list-card-title-1" role="heading" aria-level="3">Quick Links</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="fd-card__header-main-actions">
+                        <span class="fd-object-status fd-card__counter">2 of 20</span>
                     </div>
                 </div>
             </div>
-            <div class="fd-card__content" role="group" aria-label="Card Content">
+            <div class="fd-card__content" role="group" aria-roledescription="Card Content">
                 <ul class="fd-list fd-list--no-border" role="list">
                     <li role="listitem" tabindex="0" class="fd-list__item">
                         <i role="presentation" class="fd-list__icon sap-icon--cart"></i>
