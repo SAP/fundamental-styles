@@ -82,6 +82,7 @@ $fd-card-header-outline-offset: 0.0625rem !default;
 
     &:only-child {
       .#{$block}__header-main {
+        border: none;
         border-radius: $fd-card-border-radius;
 
         @include fd-focus() {

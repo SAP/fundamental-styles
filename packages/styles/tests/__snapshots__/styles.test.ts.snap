@@ -54988,10 +54988,6 @@ exports[`Check stories > Layouts/Resizable Card Layout > Story ResizeCardLayout 
                                 <i role=\\"presentation\\" class=\\"fd-list__icon sap-icon--batch-payments\\"></i>
                                 <span class=\\"fd-list__title\\">List item 4</span>
                             </li>
-                            <li role=\\"listitem\\" tabindex=\\"0\\" class=\\"fd-list__item\\">
-                                <i role=\\"presentation\\" class=\\"fd-list__icon sap-icon--retail-store\\"></i>
-                                <span class=\\"fd-list__title\\">List item 5</span>
-                            </li>
                         </ul>
                     </div>
                 </div>
