@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.35.0-rc.0](https://github.com/SAP/fundamental-styles/compare/v0.34.1-rc.4...v0.35.0-rc.0) (2024-03-26)
+
+### Bug Fixes
+
+-   **styles:** update card design ([#5264](https://github.com/SAP/fundamental-styles/issues/5264)) ([19221a9](https://github.com/SAP/fundamental-styles/commit/19221a98955f12e5ce8154fb536e628e32670ac4))
+
+### BREAKING CHANGES
+
+-   **styles:** card redesign implemented.
+
 ## [0.34.1-rc.4](https://github.com/SAP/fundamental-styles/compare/v0.34.1-rc.3...v0.34.1-rc.4) (2024-03-26)
 
 ### Features
