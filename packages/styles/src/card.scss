@@ -10,7 +10,6 @@ $list: #{$fd-namespace}-list;
 $fd-card-header-border: var(--fdCard_Header_Border_Bottom) !default;
 $fd-card-footer-border: var(--fdCard_Footer_Border_Top) !default;
 $fd-card-border-radius: var(--fdCard_Border_Radius) !default;
-$fd-card-avatar-text-spacing: 0.75rem !default;
 $fd-card-title-counter-spacing: 1rem !default;
 $fd-card-currency-spacing: 0.25rem !default;
 $fd-card-analytics-spacing: 1rem !default;
@@ -64,19 +63,58 @@ $fd-card-header-outline-offset: 0.0625rem !default;
 
   &__header {
     @include fd-reset();
-    @include fd-flex();
 
-    &:not(.#{$block}__header--non-interactive) {
+    &:last-child {
+      .#{$block}__header-main {
+        border-bottom: none;
+        border-top: $fd-card-header-border;
+        border-radius: 0 0 $fd-card-border-radius $fd-card-border-radius;
+  
+        @include fd-focus() {
+          &::before {
+            top: $fd-card-header-outline-offset * 2;
+            bottom: $fd-card-header-outline-offset;
+            border-radius: 0 0 $fd-card-border-radius $fd-card-border-radius;
+          }
+        }
+      }
+    }
+
+    &:only-child {
+      .#{$block}__header-main {
+        border: none;
+        border-radius: $fd-card-border-radius;
+
+        @include fd-focus() {
+          &::before {
+            top: $fd-card-header-outline-offset;
+            bottom: $fd-card-header-outline-offset;
+            border-radius: $fd-card-border-radius;
+          }
+        }
+      }
+    }
+  }
+
+  &__header-main {
+    @include fd-reset();
+
+    @include fd-flex() {
+      gap: 0.5rem
+    };
+
+    &:not(.#{$block}__header-main--non-interactive) {
       @include fake-card-outline();
     }
 
-    padding: var(--fdCard_Header_Padding);
+    cursor: pointer;
+    position: relative;
+    padding-block: 1rem;
+    padding-inline: 1rem;
+    text-decoration: none;
     background: $fd-card-default-body-background-color;
     border-bottom: $fd-card-header-border;
     border-radius: $fd-card-border-radius $fd-card-border-radius 0 0;
-    text-decoration: none;
-    cursor: pointer;
-    position: relative;
 
     @include fd-hover() {
       background: var(--sapTile_Hover_Background);
@@ -84,15 +122,6 @@ $fd-card-header-outline-offset: 0.0625rem !default;
 
     @include fd-active() {
       background: var(--sapTile_Active_Background);
-    }
-
-    .#{$block}__avatar {
-      margin-right: $fd-card-avatar-text-spacing;
-
-      @include fd-rtl() {
-        margin-right: 0;
-        margin-left: $fd-card-avatar-text-spacing;
-      }
     }
 
     &--non-interactive {
@@ -106,22 +135,113 @@ $fd-card-header-outline-offset: 0.0625rem !default;
         background: $fd-card-default-body-background-color;
       }
     }
+  }
 
-    &:last-child {
-      padding: var(--fdCard_Bottom_Positioned_Header_Padding);
-      border-bottom: none;
-      border-top: $fd-card-header-border;
-      border-radius: 0 0 $fd-card-border-radius $fd-card-border-radius;
+  &__header-main-container {
+    @include fd-reset();
 
-      @include fd-focus() {
-        &::before {
-          top: $fd-card-header-outline-offset * 2;
-          bottom: $fd-card-header-outline-offset;
-          border-radius: 0 0 $fd-card-border-radius $fd-card-border-radius;
-        }
-      }
+    @include fd-flex() {
+      gap: 0.5rem;
+      flex: 1;
+      align-items: flex-start;
+    };
+
+    height: fit-content;
+  }
+
+  &__header-main-actions {
+    @include fd-reset();
+
+    @include fd-flex(column) {
+      gap: 0.25rem;
+      align-items: flex-end;
+    };
+  }
+
+  &__header-extended {
+    @include fd-reset();
+
+    @include fd-flex() {
+      gap: 0.5rem;
+      align-items: center;
+    };
+
+    padding-inline: 1rem;
+    padding-block: 0.5rem;
+
+    &--top-aligned {
+      align-items: flex-start;
+    }
+
+    &--bottom-aligned {
+      align-items: flex-end;
     }
   }
+
+  &__header-column {
+    @include fd-reset();
+
+    @include fd-flex(column) {
+      flex: 1;
+      gap: 0.25rem;
+      align-items: flex-start;
+    };
+
+    &--right-aligned {
+      align-items: flex-end;
+    }
+  }
+
+  &__header-row {
+    @include fd-reset();
+
+    @include fd-flex() {
+      gap: 0.5rem;
+    };
+  }
+
+
+  &__header-numeric {
+    @include fd-reset();
+
+    @include fd-flex(column) {
+      gap: 0.25rem;
+    };
+
+    padding-inline: 1rem;
+    padding-block: 0.25rem;
+  }
+
+  &__indicator {
+    @include fd-reset();
+
+    @include fd-flex(column) {
+      gap: 0.125rem;
+      align-items: flex-end;
+    };
+  } 
+
+  &__numeric-container {
+    @include fd-reset();
+
+    flex: 1;
+  }
+
+  &__indicator-title {
+    @include fd-reset();
+
+    color: var(--sapTile_TextColor); 
+    font-size: var(--sapFontSmallSize);
+  } 
+
+  &__indicator-value {
+    @include fd-reset();
+
+    text-align: right;
+    color: var(--sapTile_TitleTextColor); 
+    font-size: var(--sapFontSmallSize);
+  } 
+
 
   &__footer {
     @include fd-reset();
@@ -155,10 +275,11 @@ $fd-card-header-outline-offset: 0.0625rem !default;
     @include fd-reset();
 
     @include fd-flex(column) {
-      justify-content: center;
+      align-self: center;
     }
 
     width: 100%;
+    height: 100%;
   }
 
   &__title-area {
@@ -208,12 +329,9 @@ $fd-card-header-outline-offset: 0.0625rem !default;
   &__counter.#{$object-status} {
     font-size: var(--sapFontSmallSize);
     text-align: right;
-    margin: var(--fdCard_Counter_Margin);
     white-space: nowrap;
-
-    @include fd-rtl() {
-      margin: var(--fdCard_Counter_Margin_RTL);
-    }
+    margin-inline-start: 1rem;
+    margin-block-start: var(--fdCard_Counter_Margin);
   }
 
   &__currency {
@@ -339,91 +457,59 @@ $fd-card-header-outline-offset: 0.0625rem !default;
       border-top-left-radius: $fd-card-border-radius;
       border-top-right-radius: $fd-card-border-radius;
     }
+
+    &--with-spacing {
+      padding-block: 1rem;
+      padding-inline: 1rem;
+    }
   }
 
   &__content-container {
     @include fd-reset();
-    @include fd-flex(column);
+
+    @include fd-flex(column) {
+      gap: 1.75rem;
+    };
 
     &--horizontal {
+      gap: 2rem;
       flex-direction: row;
-
-      .#{$block}__content-section {
-        margin-bottom: 0;
-        margin-right: $fd-card-sections-horizontal-spacing;
-
-        &:last-child {
-          margin-right: 0;
-        }
-
-        @include fd-rtl() {
-          margin-right: 0;
-          margin-left: $fd-card-sections-horizontal-spacing;
-
-          &:first-child {
-            margin: 0;
-          }
-        }
-      }
     }
   }
 
   &__content-section {
     @include fd-reset();
-    @include fd-flex(column);
+
+    @include fd-flex(column) {
+      gap: 1rem;
+    };
 
     min-width: 12rem;
     max-width: 24rem;
     width: 100%;
-    margin-bottom: $fd-card-sections-vertical-spacing;
-
-    &:last-child {
-      margin-bottom: 0;
-    }
   }
 
   &__content-title-container {
     @include fd-reset();
 
-    padding-bottom: 0.5rem;
+    padding-block-end: 0.5rem;
   }
 
   &__content-group {
     @include fd-reset();
 
     @include fd-flex() {
+      gap: 0.5rem;
       align-items: center;
     }
-
-    margin-top: 1rem;
   }
 
   &__content-group-text {
     @include fd-reset();
-    @include fd-flex(column);
 
-    margin-left: $fd-card-content-avatar-text-spacing;
-
-    &:first-child {
-      margin-left: 0;
-    }
-
-    & > * {
-      margin-bottom: 0.25rem;
-
-      &:last-child {
-        margin-bottom: 0;
-      }
-    }
-
-    @include fd-rtl() {
-      margin-left: 0;
-      margin-right: $fd-card-content-avatar-text-spacing;
-
-      &:first-child {
-        margin: 0;
-      }
-    }
+    @include fd-flex(column) {
+      gap: 0.25rem;
+    };
   }
 
   &--analytical {
