@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.35.0-rc.1](https://github.com/SAP/fundamental-styles/compare/v0.35.0-rc.0...v0.35.0-rc.1) (2024-03-29)
+
+### Bug Fixes
+
+-   **styles:** add focus and a11y changes for Card header [ci visual] ([#5265](https://github.com/SAP/fundamental-styles/issues/5265)) ([3a4045b](https://github.com/SAP/fundamental-styles/commit/3a4045bca754e9f13787f79585d0ef5697fa0bb5))
+
 # [0.35.0-rc.0](https://github.com/SAP/fundamental-styles/compare/v0.34.1-rc.4...v0.35.0-rc.0) (2024-03-26)
 
 ### Bug Fixes
