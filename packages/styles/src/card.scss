@@ -69,12 +69,14 @@ $fd-card-header-outline-offset: 0.0625rem !default;
         border-bottom: none;
         border-top: $fd-card-header-border;
         border-radius: 0 0 $fd-card-border-radius $fd-card-border-radius;
-  
-        @include fd-focus() {
-          &::before {
-            top: $fd-card-header-outline-offset * 2;
-            bottom: $fd-card-header-outline-offset;
-            border-radius: 0 0 $fd-card-border-radius $fd-card-border-radius;
+
+        &-container {
+          @include fd-focus() {
+            &::before {
+              top: $fd-card-header-outline-offset * 2;
+              bottom: $fd-card-header-outline-offset;
+              border-radius: 0 0 $fd-card-border-radius $fd-card-border-radius;
+            }
           }
         }
       }
@@ -85,11 +87,13 @@ $fd-card-header-outline-offset: 0.0625rem !default;
         border: none;
         border-radius: $fd-card-border-radius;
 
-        @include fd-focus() {
-          &::before {
-            top: $fd-card-header-outline-offset;
-            bottom: $fd-card-header-outline-offset;
-            border-radius: $fd-card-border-radius;
+        &-container {
+          @include fd-focus() {
+            &::before {
+              top: $fd-card-header-outline-offset;
+              bottom: $fd-card-header-outline-offset;
+              border-radius: $fd-card-border-radius;
+            }
           }
         }
       }
@@ -102,10 +106,6 @@ $fd-card-header-outline-offset: 0.0625rem !default;
     @include fd-flex() {
       gap: 0.5rem
     };
-
-    &:not(.#{$block}__header-main--non-interactive) {
-      @include fake-card-outline();
-    }
 
     cursor: pointer;
     position: relative;
@@ -139,6 +139,7 @@ $fd-card-header-outline-offset: 0.0625rem !default;
 
   &__header-main-container {
     @include fd-reset();
+    @include fake-card-outline();
 
     @include fd-flex() {
       gap: 0.5rem;
@@ -146,7 +147,9 @@ $fd-card-header-outline-offset: 0.0625rem !default;
       align-items: flex-start;
     };
 
+    width: 100%;
     height: fit-content;
+   
   }
 
   &__header-main-actions {
