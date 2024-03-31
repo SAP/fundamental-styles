@@ -2631,17 +2631,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@jsdevtools/npm-publish@npm:3.0.1":
-  version: 3.0.1
-  resolution: "@jsdevtools/npm-publish@npm:3.0.1"
+"@jsdevtools/npm-publish@npm:3.1.1":
+  version: 3.1.1
+  resolution: "@jsdevtools/npm-publish@npm:3.1.1"
   dependencies:
     "@types/semver": "npm:^7.5.2"
-    command-line-args: "npm:^5.2.1"
-    semver: "npm:7.5.4"
+    command-line-args: "npm:5.2.1"
+    semver: "npm:7.6.0"
     tar: "npm:6.2.0"
   bin:
     npm-publish: bin/npm-publish.js
-  checksum: 10/a32fa6b7c80a45d1d8dba4fcc2ab452169615716f24924fd1a7cae34fb6283969a8bb0bc1c49dc6254d126178c66c41c5d9f0433dff3c1fa47d9617f21da6543
+  checksum: 10/f7ceaf24f0b0ad993fad6996cec4d87448460d3e9a80ac393370579334a707ee78d71209b03fee731e7569a295282620f239101d9144f3a3b14c814f49dfd232
   languageName: node
   linkType: hard
 
@@ -7184,7 +7184,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"command-line-args@npm:^5.2.1":
+"command-line-args@npm:5.2.1":
   version: 5.2.1
   resolution: "command-line-args@npm:5.2.1"
   dependencies:
@@ -10271,7 +10271,7 @@ __metadata:
     "@babel/core": "npm:7.23.9"
     "@commitlint/cli": "npm:18.6.0"
     "@commitlint/config-conventional": "npm:18.6.0"
-    "@jsdevtools/npm-publish": "npm:3.0.1"
+    "@jsdevtools/npm-publish": "npm:3.1.1"
     "@nx/devkit": "npm:18.0.2"
     "@nx/eslint": "npm:18.0.2"
     "@nx/eslint-plugin": "npm:18.0.2"
