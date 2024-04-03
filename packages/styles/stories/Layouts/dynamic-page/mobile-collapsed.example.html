@@ -1,7 +1,15 @@
 <div class="mobile-container">
-        <section class="fd-dynamic-page fd-dynamic-page--sm" aria-label="Dynamic Page Mobile Collapsed Example">
+        <article class="fd-dynamic-page fd-dynamic-page--sm" aria-label="Dynamic Page Mobile Collapsed Example">
             <header class="fd-dynamic-page__header">
-                <div class="fd-dynamic-page__title-area  fd-dynamic-page__title-area--collapsed" tabindex="0">
+                <span 
+                    role="button" 
+                    aria-expanded="true" 
+                    aria-labelledby="fd-dynamic-page-title-8" 
+                    aria-label="Toggle header" 
+                    tabindex="0"
+                    class="fd-dynamic-page__header-button">
+                </span>
+                <div class="fd-dynamic-page__title-area  fd-dynamic-page__title-area--collapsed">
                     <div class="fd-dynamic-page__main-container">
                         <div class="fd-dynamic-page__breadcrumb-title-container">
                             <div class="fd-dynamic-page__breadcrumb-container">
@@ -19,7 +27,14 @@
                                 </div>
                             </div>
                             <div class="fd-dynamic-page__title-container">
-                                <h1 class="fd-title fd-dynamic-page__title" title="Balenciaga Triple S Trainers"> Balenciaga Triple S Trainers </h1>
+                                <div 
+                                    id="fd-dynamic-page-title-8"
+                                    aria-level="2" 
+                                    role="heading" 
+                                    class="fd-title fd-dynamic-page__title" 
+                                    title="Balenciaga Triple S Trainers">
+                                    Balenciaga Triple S Trainers
+                                </div>
                                 <div role="toolbar" aria-label="Header Content" class="fd-dynamic-page__toolbar fd-dynamic-page__toolbar--content fd-toolbar fd-toolbar--clear fd-toolbar--transparent">
                                     <div class="fd-popover">
                                         <div class="fd-popover__control">
@@ -79,11 +94,11 @@
                     <div class="fd-dynamic-page__subtitle"> Collapsed header </div>
                 </div>
                 <div class="fd-dynamic-page__collapsible-header-container">
-                    <div class="fd-dynamic-page__collapsible-header" role="region" aria-hidden="true" id="fddplhvcm1"  aria-label="Dynamic Page Mobile Collapsed Header" >
+                    <section class="fd-dynamic-page__collapsible-header" role="region" aria-hidden="true" id="fddplhvcm1"  aria-label="Dynamic Page Mobile Collapsed Header" >
                         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam possimus corrupti architecto perspiciatis,
                         delectus necessitatibus incidunt numquam asperiores tenetur iure.
                         Cum consequuntur impedit repellendus esse, facere autem optio consequatur nobis?
-                    </div>
+                    </section>
                     <div class="fd-dynamic-page__collapsible-header-visibility-container fd-dynamic-page__collapsible-header-visibility-container--no-shadow">
                         <div class="fd-dynamic-page__collapsible-header-visibility-container--left-gradient"></div>
                         <div role="toolbar" aria-label="Header actions" class="fd-dynamic-page__collapsible-header-visibility-container--button-group">
@@ -141,5 +156,5 @@
                     </div>
                 </div>
             </footer>
-        </section>
+        </article>
     </div>

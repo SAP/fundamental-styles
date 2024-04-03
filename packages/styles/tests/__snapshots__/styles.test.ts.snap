@@ -51613,9 +51613,17 @@ exports[`Check stories > Dev/Off Screen > Story Primary > Should match snapshot 
 `;
 
 exports[`Check stories > Layouts/Dynamic Page > Story CollapsedHeader > Should match snapshot 1`] = `
-"<section class=\\"fd-dynamic-page fd-dynamic-page--xl\\" aria-label=\\"Dynamic Page Collapsed Example\\">
+"<article class=\\"fd-dynamic-page fd-dynamic-page--xl\\" aria-roledescription=\\"Dynamic Page\\">
         <header class=\\"fd-dynamic-page__header\\">
-            <div class=\\"fd-dynamic-page__title-area  fd-dynamic-page__title-area--collapsed\\" tabindex=\\"0\\">
+            <span 
+                role=\\"button\\" 
+                aria-expanded=\\"true\\" 
+                aria-labelledby=\\"fd-dynamic-page-title-10\\" 
+                aria-label=\\"Toggle header\\" 
+                tabindex=\\"0\\"
+                class=\\"fd-dynamic-page__header-button\\">
+            </span>
+            <div class=\\"fd-dynamic-page__title-area  fd-dynamic-page__title-area--collapsed\\">
                 <div class=\\"fd-dynamic-page__main-container\\">
                     <div class=\\"fd-dynamic-page__breadcrumb-title-container\\">
                         <nav aria-label=\\"Breadcrumbs\\">
@@ -51626,7 +51634,14 @@ exports[`Check stories > Layouts/Dynamic Page > Story CollapsedHeader > Should m
                             </ul>
                         </nav>
                         <div class=\\"fd-dynamic-page__title-container\\">
-                            <h1 class=\\"fd-title fd-dynamic-page__title\\" title=\\"Balenciaga Triple S Trainers Model 123456AB On Sale\\"> Balenciaga Triple S Trainers Model 123456AB On Sale </h1>
+                            <div 
+                                id=\\"fd-dynamic-page-title-10\\"
+                                aria-level=\\"2\\" 
+                                role=\\"heading\\" 
+                                class=\\"fd-title fd-dynamic-page__title\\" 
+                                title=\\"Balenciaga Triple S Trainers\\">
+                                Balenciaga Triple S Trainers
+                            </div>
                             <div class=\\"fd-dynamic-page__title-content\\" title=\\"Collapsed Header with both expand and pin buttons\\">Collapsed Header with both expand and pin buttons </div>
                             <div class=\\"fd-dynamic-page__toolbar-container\\">
                                 <div role=\\"toolbar\\" aria-label=\\"Product actions\\" class=\\"fd-dynamic-page__toolbar fd-toolbar fd-toolbar--clear fd-toolbar--transparent\\">
@@ -51652,11 +51667,11 @@ exports[`Check stories > Layouts/Dynamic Page > Story CollapsedHeader > Should m
                 <div class=\\"fd-dynamic-page__subtitle\\"> Oversized multimaterial sneakers with quilted effect </div>
             </div>
             <div class=\\"fd-dynamic-page__collapsible-header-container\\">
-                <div class=\\"fd-dynamic-page__collapsible-header\\" role=\\"region\\"  aria-hidden=\\"true\\" id=\\"fddplhvc2\\"  aria-label=\\"Collapsed header\\">
+                <section class=\\"fd-dynamic-page__collapsible-header\\" role=\\"region\\"  aria-hidden=\\"true\\" id=\\"fddplhvc2\\"  aria-label=\\"Collapsed header\\">
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam possimus corrupti architecto perspiciatis,
                     delectus necessitatibus incidunt numquam asperiores tenetur iure.
                     Cum consequuntur impedit repellendus esse, facere autem optio consequatur nobis?
-                </div>
+                </section>
                 <div class=\\"fd-dynamic-page__collapsible-header-visibility-container\\">
                     <div class=\\"fd-dynamic-page__collapsible-header-visibility-container--left-gradient\\"></div>
                     <div role=\\"toolbar\\" aria-label=\\"Header actions\\" class=\\"fd-dynamic-page__collapsible-header-visibility-container--button-group\\">
@@ -51682,15 +51697,23 @@ exports[`Check stories > Layouts/Dynamic Page > Story CollapsedHeader > Should m
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum illo voluptatem, unde voluptate aliquam eum tempore aliquid
             dolorem cumque ullam perspiciatis omnis et asperiores dolores, consequatur, suscipit sint animi amet?
         </div>
-    </section>
+    </article>
 "
 `;
 
 exports[`Check stories > Layouts/Dynamic Page > Story Desktop > Should match snapshot 1`] = `
 "
-    <section class=\\"fd-dynamic-page fd-dynamic-page--xl\\" aria-label=\\"Dynamic Page Desktop Example\\">
+    <article class=\\"fd-dynamic-page fd-dynamic-page--xl\\" aria-roledescription=\\"Dynamic Page\\">
         <header class=\\"fd-dynamic-page__header\\">
-            <div class=\\"fd-dynamic-page__title-area \\" tabindex=\\"0\\">
+            <span 
+                role=\\"button\\" 
+                aria-expanded=\\"true\\" 
+                aria-labelledby=\\"fd-dynamic-page-title-1\\" 
+                aria-label=\\"Toggle header\\" 
+                tabindex=\\"0\\"
+                class=\\"fd-dynamic-page__header-button\\">
+            </span>
+            <div class=\\"fd-dynamic-page__title-area\\">
                 <div class=\\"fd-dynamic-page__main-container\\">
                     <div class=\\"fd-dynamic-page__breadcrumb-title-container\\">
                         <nav aria-label=\\"Breadcrumbs\\">
@@ -51701,7 +51724,14 @@ exports[`Check stories > Layouts/Dynamic Page > Story Desktop > Should match sna
                             </ul>
                         </nav>
                         <div class=\\"fd-dynamic-page__title-container\\">
-                            <h1 class=\\"fd-title fd-dynamic-page__title\\" title=\\"Balenciaga Triple S Trainers\\"> Balenciaga Triple S Trainers </h1>
+                            <div 
+                                id=\\"fd-dynamic-page-title-1\\"
+                                aria-level=\\"2\\" 
+                                role=\\"heading\\" 
+                                class=\\"fd-title fd-dynamic-page__title\\" 
+                                title=\\"Balenciaga Triple S Trainers\\">
+                                Balenciaga Triple S Trainers
+                            </div>
                             <div class=\\"fd-dynamic-page__title-content\\" title=\\"Some RANDOM things\\"> Some RANDOM things </div>
                             <div class=\\"fd-dynamic-page__toolbar-container\\">
                                 <div role=\\"toolbar\\" aria-label=\\"Product actions\\" class=\\"fd-dynamic-page__toolbar fd-toolbar fd-toolbar--clear fd-toolbar--transparent\\">
@@ -51727,11 +51757,11 @@ exports[`Check stories > Layouts/Dynamic Page > Story Desktop > Should match sna
                 <div class=\\"fd-dynamic-page__subtitle\\"> Oversized multimaterial sneakers with quilted effect </div>
             </div>
             <div class=\\"fd-dynamic-page__collapsible-header-container\\">
-                <div class=\\"fd-dynamic-page__collapsible-header\\" role=\\"region\\" id=\\"fddplhvc6\\" aria-label=\\"Dynamic Page Desktop Header\\" >
+                <section class=\\"fd-dynamic-page__collapsible-header\\" role=\\"region\\" id=\\"fddplhvc6\\" aria-label=\\"Expanded header\\" >
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam possimus corrupti architecto perspiciatis,
                     delectus necessitatibus incidunt numquam asperiores tenetur iure.
                     Cum consequuntur impedit repellendus esse, facere autem optio consequatur nobis?
-                </div>
+                </section>
                 <div class=\\"fd-dynamic-page__collapsible-header-visibility-container fd-dynamic-page__collapsible-header-visibility-container--no-shadow\\">
                     <div class=\\"fd-dynamic-page__collapsible-header-visibility-container--left-gradient\\"></div>
                     <div role=\\"toolbar\\" aria-label=\\"Header actions\\" class=\\"fd-dynamic-page__collapsible-header-visibility-container--button-group\\">
@@ -51809,15 +51839,23 @@ exports[`Check stories > Layouts/Dynamic Page > Story Desktop > Should match sna
                 </div>
             </div>
         </footer>
-    </section>
+    </article>
     <br /><br />
 "
 `;
 
 exports[`Check stories > Layouts/Dynamic Page > Story Expandable > Should match snapshot 1`] = `
-"<section class=\\"fd-dynamic-page fd-dynamic-page--xl\\" aria-label=\\"Dynamic Page Expandable Example\\" xmlns=\\"http://www.w3.org/1999/html\\">
+"<article class=\\"fd-dynamic-page fd-dynamic-page--xl\\" aria-roledescription=\\"Dynamic Page\\" xmlns=\\"http://www.w3.org/1999/html\\">
         <header class=\\"fd-dynamic-page__header\\">
-            <div class=\\"fd-dynamic-page__title-area \\" tabindex=\\"0\\">
+            <span 
+                role=\\"button\\" 
+                aria-expanded=\\"true\\" 
+                aria-labelledby=\\"fd-dynamic-page-title-9\\" 
+                aria-label=\\"Toggle header\\" 
+                tabindex=\\"0\\"
+                class=\\"fd-dynamic-page__header-button\\">
+            </span>
+            <div class=\\"fd-dynamic-page__title-area\\">
                 <div class=\\"fd-dynamic-page__main-container\\">
                     <div class=\\"fd-dynamic-page__breadcrumb-title-container\\">
                         <nav aria-label=\\"Breadcrumbs\\">
@@ -51828,7 +51866,14 @@ exports[`Check stories > Layouts/Dynamic Page > Story Expandable > Should match 
                             </ul>
                         </nav>
                         <div class=\\"fd-dynamic-page__title-container\\">
-                            <h1 class=\\"fd-title fd-dynamic-page__title\\" title=\\"Balenciaga Triple S Trainers\\"> Balenciaga Triple S Trainers </h1>
+                            <div 
+                                id=\\"fd-dynamic-page-title-9\\"
+                                aria-level=\\"2\\" 
+                                role=\\"heading\\" 
+                                class=\\"fd-title fd-dynamic-page__title\\" 
+                                title=\\"Balenciaga Triple S Trainers\\">
+                                Balenciaga Triple S Trainers
+                            </div>
                             <div class=\\"fd-dynamic-page__title-content\\" title=\\"Header with both collapse and pin buttons, expanded by default\\"> Header with both collapse and pin buttons, expanded by default</div>
                             <div class=\\"fd-dynamic-page__toolbar-container\\">
                                 <div role=\\"toolbar\\" aria-label=\\"Product actions\\" class=\\"fd-dynamic-page__toolbar fd-toolbar fd-toolbar--clear fd-toolbar--transparent\\">
@@ -51854,11 +51899,11 @@ exports[`Check stories > Layouts/Dynamic Page > Story Expandable > Should match 
                 <div class=\\"fd-dynamic-page__subtitle\\"> Oversized multimaterial sneakers with quilted effect </div>
             </div>
             <div class=\\"fd-dynamic-page__collapsible-header-container\\">
-                <div class=\\"fd-dynamic-page__collapsible-header\\" role=\\"region\\"  aria-hidden=\\"false\\" id=\\"fddplhvc1\\" aria-label=\\"Default expanded header\\" >
+                <section class=\\"fd-dynamic-page__collapsible-header\\" role=\\"region\\"  aria-hidden=\\"false\\" id=\\"fddplhvc1\\" aria-label=\\"Default expanded header\\" >
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam possimus corrupti architecto perspiciatis,
                     delectus necessitatibus incidunt numquam asperiores tenetur iure.
                     Cum consequuntur impedit repellendus esse, facere autem optio consequatur nobis?
-                </div>
+                </section>
                 <div class=\\"fd-dynamic-page__collapsible-header-visibility-container\\">
                     <div class=\\"fd-dynamic-page__collapsible-header-visibility-container--left-gradient\\"></div>
                     <div role=\\"toolbar\\" aria-label=\\"Header actions\\" class=\\"fd-dynamic-page__collapsible-header-visibility-container--button-group\\">
@@ -51884,15 +51929,23 @@ exports[`Check stories > Layouts/Dynamic Page > Story Expandable > Should match 
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum illo voluptatem, unde voluptate aliquam eum tempore aliquid
             dolorem cumque ullam perspiciatis omnis et asperiores dolores, consequatur, suscipit sint animi amet?
         </div>
-    </section>
+    </article>
 "
 `;
 
 exports[`Check stories > Layouts/Dynamic Page > Story Mobile > Should match snapshot 1`] = `
 "<div class=\\"mobile-container\\">
-        <section class=\\"fd-dynamic-page fd-dynamic-page--sm\\" aria-label=\\"Dynamic Page Mobile Example\\">
+        <article class=\\"fd-dynamic-page fd-dynamic-page--sm\\" aria-roledescription=\\"Dynamic Page\\">
             <header class=\\"fd-dynamic-page__header\\">
-                <div class=\\"fd-dynamic-page__title-area \\" tabindex=\\"0\\">
+                <span 
+                    role=\\"button\\" 
+                    aria-expanded=\\"true\\" 
+                    aria-labelledby=\\"fd-dynamic-page-title-5\\" 
+                    aria-label=\\"Toggle header\\" 
+                    tabindex=\\"0\\"
+                    class=\\"fd-dynamic-page__header-button\\">
+                </span>
+                <div class=\\"fd-dynamic-page__title-area\\">
                     <div class=\\"fd-dynamic-page__main-container\\">
                         <div class=\\"fd-dynamic-page__breadcrumb-title-container\\">
                             <div class=\\"fd-dynamic-page__breadcrumb-container\\">
@@ -51910,7 +51963,14 @@ exports[`Check stories > Layouts/Dynamic Page > Story Mobile > Should match snap
                                 </div>
                             </div>
                             <div class=\\"fd-dynamic-page__title-container\\">
-                                <h1 class=\\"fd-title fd-dynamic-page__title\\" title=\\"Balenciaga Triple S Trainers\\"> Balenciaga Triple S Trainers </h1>
+                                <div 
+                                    id=\\"fd-dynamic-page-title-5\\"
+                                    aria-level=\\"2\\" 
+                                    role=\\"heading\\" 
+                                    class=\\"fd-title fd-dynamic-page__title\\" 
+                                    title=\\"Balenciaga Triple S Trainers\\">
+                                    Balenciaga Triple S Trainers
+                                </div>
                                 <div role=\\"toolbar\\" aria-label=\\"Header Content\\" class=\\"fd-dynamic-page__toolbar fd-dynamic-page__toolbar--content fd-toolbar fd-toolbar--clear fd-toolbar--transparent\\">
                                     <div class=\\"fd-popover\\">
                                         <div class=\\"fd-popover__control\\">
@@ -51970,11 +52030,11 @@ exports[`Check stories > Layouts/Dynamic Page > Story Mobile > Should match snap
                     <div class=\\"fd-dynamic-page__subtitle\\"> Expanded header in mobile </div>
                 </div>
                 <div class=\\"fd-dynamic-page__collapsible-header-container\\">
-                    <div class=\\"fd-dynamic-page__collapsible-header\\" role=\\"region\\" id=\\"fddplhvc4\\" aria-label=\\"Dynamic Page Mobile Header\\">
+                    <section class=\\"fd-dynamic-page__collapsible-header\\" role=\\"region\\" id=\\"fddplhvc4\\" aria-label=\\"Expanded header\\">
                         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam possimus corrupti architecto perspiciatis,
                         delectus necessitatibus incidunt numquam asperiores tenetur iure.
                         Cum consequuntur impedit repellendus esse, facere autem optio consequatur nobis?
-                    </div>
+                    </section>
                     <div class=\\"fd-dynamic-page__collapsible-header-visibility-container fd-dynamic-page__collapsible-header-visibility-container--no-shadow\\">
                         <div class=\\"fd-dynamic-page__collapsible-header-visibility-container--left-gradient\\"></div>
                         <div role=\\"toolbar\\" aria-label=\\"Header actions\\" class=\\"fd-dynamic-page__collapsible-header-visibility-container--button-group\\">
@@ -52032,16 +52092,24 @@ exports[`Check stories > Layouts/Dynamic Page > Story Mobile > Should match snap
                     </div>
                 </div>
             </footer>
-        </section>
+        </article>
     </div>
 "
 `;
 
 exports[`Check stories > Layouts/Dynamic Page > Story MobileCollapsed > Should match snapshot 1`] = `
 "<div class=\\"mobile-container\\">
-        <section class=\\"fd-dynamic-page fd-dynamic-page--sm\\" aria-label=\\"Dynamic Page Mobile Collapsed Example\\">
+        <article class=\\"fd-dynamic-page fd-dynamic-page--sm\\" aria-label=\\"Dynamic Page Mobile Collapsed Example\\">
             <header class=\\"fd-dynamic-page__header\\">
-                <div class=\\"fd-dynamic-page__title-area  fd-dynamic-page__title-area--collapsed\\" tabindex=\\"0\\">
+                <span 
+                    role=\\"button\\" 
+                    aria-expanded=\\"true\\" 
+                    aria-labelledby=\\"fd-dynamic-page-title-8\\" 
+                    aria-label=\\"Toggle header\\" 
+                    tabindex=\\"0\\"
+                    class=\\"fd-dynamic-page__header-button\\">
+                </span>
+                <div class=\\"fd-dynamic-page__title-area  fd-dynamic-page__title-area--collapsed\\">
                     <div class=\\"fd-dynamic-page__main-container\\">
                         <div class=\\"fd-dynamic-page__breadcrumb-title-container\\">
                             <div class=\\"fd-dynamic-page__breadcrumb-container\\">
@@ -52059,7 +52127,14 @@ exports[`Check stories > Layouts/Dynamic Page > Story MobileCollapsed > Should m
                                 </div>
                             </div>
                             <div class=\\"fd-dynamic-page__title-container\\">
-                                <h1 class=\\"fd-title fd-dynamic-page__title\\" title=\\"Balenciaga Triple S Trainers\\"> Balenciaga Triple S Trainers </h1>
+                                <div 
+                                    id=\\"fd-dynamic-page-title-8\\"
+                                    aria-level=\\"2\\" 
+                                    role=\\"heading\\" 
+                                    class=\\"fd-title fd-dynamic-page__title\\" 
+                                    title=\\"Balenciaga Triple S Trainers\\">
+                                    Balenciaga Triple S Trainers
+                                </div>
                                 <div role=\\"toolbar\\" aria-label=\\"Header Content\\" class=\\"fd-dynamic-page__toolbar fd-dynamic-page__toolbar--content fd-toolbar fd-toolbar--clear fd-toolbar--transparent\\">
                                     <div class=\\"fd-popover\\">
                                         <div class=\\"fd-popover__control\\">
@@ -52119,11 +52194,11 @@ exports[`Check stories > Layouts/Dynamic Page > Story MobileCollapsed > Should m
                     <div class=\\"fd-dynamic-page__subtitle\\"> Collapsed header </div>
                 </div>
                 <div class=\\"fd-dynamic-page__collapsible-header-container\\">
-                    <div class=\\"fd-dynamic-page__collapsible-header\\" role=\\"region\\" aria-hidden=\\"true\\" id=\\"fddplhvcm1\\"  aria-label=\\"Dynamic Page Mobile Collapsed Header\\" >
+                    <section class=\\"fd-dynamic-page__collapsible-header\\" role=\\"region\\" aria-hidden=\\"true\\" id=\\"fddplhvcm1\\"  aria-label=\\"Dynamic Page Mobile Collapsed Header\\" >
                         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam possimus corrupti architecto perspiciatis,
                         delectus necessitatibus incidunt numquam asperiores tenetur iure.
                         Cum consequuntur impedit repellendus esse, facere autem optio consequatur nobis?
-                    </div>
+                    </section>
                     <div class=\\"fd-dynamic-page__collapsible-header-visibility-container fd-dynamic-page__collapsible-header-visibility-container--no-shadow\\">
                         <div class=\\"fd-dynamic-page__collapsible-header-visibility-container--left-gradient\\"></div>
                         <div role=\\"toolbar\\" aria-label=\\"Header actions\\" class=\\"fd-dynamic-page__collapsible-header-visibility-container--button-group\\">
@@ -52181,15 +52256,23 @@ exports[`Check stories > Layouts/Dynamic Page > Story MobileCollapsed > Should m
                     </div>
                 </div>
             </footer>
-        </section>
+        </article>
     </div>
 "
 `;
 
 exports[`Check stories > Layouts/Dynamic Page > Story OnlyCollapse > Should match snapshot 1`] = `
-"<section class=\\"fd-dynamic-page fd-dynamic-page--xl\\" aria-label=\\"Dynamic Page Pinnable Example\\">
+"<article class=\\"fd-dynamic-page fd-dynamic-page--xl\\" aria-roledescription=\\"Dynamic Page\\">
         <header class=\\"fd-dynamic-page__header\\">
-            <div class=\\"fd-dynamic-page__title-area \\" tabindex=\\"0\\">
+            <span 
+                role=\\"button\\" 
+                aria-expanded=\\"true\\" 
+                aria-labelledby=\\"fd-dynamic-page-title-6\\" 
+                aria-label=\\"Toggle header\\" 
+                tabindex=\\"0\\"
+                class=\\"fd-dynamic-page__header-button\\">
+            </span>
+            <div class=\\"fd-dynamic-page__title-area\\">
                 <div class=\\"fd-dynamic-page__main-container\\">
                     <div class=\\"fd-dynamic-page__breadcrumb-title-container\\">
                         <nav aria-label=\\"Breadcrumbs\\">
@@ -52200,7 +52283,14 @@ exports[`Check stories > Layouts/Dynamic Page > Story OnlyCollapse > Should matc
                             </ul>
                         </nav>
                         <div class=\\"fd-dynamic-page__title-container\\">
-                            <h1 class=\\"fd-title fd-dynamic-page__title\\" title=\\"Balenciaga Triple S Trainers\\"> Balenciaga Triple S Trainers </h1>
+                            <div 
+                                id=\\"fd-dynamic-page-title-6\\"
+                                aria-level=\\"2\\" 
+                                role=\\"heading\\" 
+                                class=\\"fd-title fd-dynamic-page__title\\" 
+                                title=\\"Balenciaga Triple S Trainers\\">
+                                Balenciaga Triple S Trainers
+                            </div>
                             <div class=\\"fd-dynamic-page__title-content\\" title=\\"The header can only be expanded/collapsed, not pinned\\"> The header can only be expanded/collapsed, not pinned. </div>
                             <div class=\\"fd-dynamic-page__toolbar-container\\">
                                 <div role=\\"toolbar\\" aria-label=\\"Product actions\\" class=\\"fd-dynamic-page__toolbar fd-toolbar fd-toolbar--clear fd-toolbar--transparent\\">
@@ -52226,11 +52316,11 @@ exports[`Check stories > Layouts/Dynamic Page > Story OnlyCollapse > Should matc
                 <div class=\\"fd-dynamic-page__subtitle\\"> Oversized multimaterial sneakers with quilted effect </div>
             </div>
             <div class=\\"fd-dynamic-page__collapsible-header-container\\">
-                <div class=\\"fd-dynamic-page__collapsible-header\\" role=\\"region\\" id=\\"fddplhvc3\\" aria-hidden=\\"false\\"  aria-label=\\"Pinned header\\">
+                <section class=\\"fd-dynamic-page__collapsible-header\\" role=\\"region\\" id=\\"fddplhvc3\\" aria-hidden=\\"false\\"  aria-label=\\"Pinned header\\">
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam possimus corrupti architecto perspiciatis,
                     delectus necessitatibus incidunt numquam asperiores tenetur iure.
                     Cum consequuntur impedit repellendus esse, facere autem optio consequatur nobis?
-                </div>
+                </section>
                 <div class=\\"fd-dynamic-page__collapsible-header-visibility-container\\">
                     <div class=\\"fd-dynamic-page__collapsible-header-visibility-container--left-gradient\\"></div>
                     <div role=\\"toolbar\\" aria-label=\\"Header actions\\" class=\\"fd-dynamic-page__collapsible-header-visibility-container--button-group\\">
@@ -52252,18 +52342,24 @@ exports[`Check stories > Layouts/Dynamic Page > Story OnlyCollapse > Should matc
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum illo voluptatem, unde voluptate aliquam eum tempore aliquid
             dolorem cumque ullam perspiciatis omnis et asperiores dolores, consequatur, suscipit sint animi amet?
         </div>
-    </section>
+    </article>
 "
 `;
 
 exports[`Check stories > Layouts/Dynamic Page > Story SummaryLine > Should match snapshot 1`] = `
 "<div class=\\"mobile-container\\">
-        <section class=\\"fd-dynamic-page fd-dynamic-page--sm\\" aria-label=\\"Dynamic Page Mobile Summary Line Example\\">
+        <article class=\\"fd-dynamic-page fd-dynamic-page--sm\\" aria-roledescription=\\"Dynamic Page\\">
             <header class=\\"fd-dynamic-page__header\\">
                 <div
-                    class=\\"fd-dynamic-page__summarized-title-area fd-dynamic-page__summarized-title-area--no-shadow\\"
-                    tabindex=\\"0\\">
-                    <h1 class=\\"fd-dynamic-page__summarized-title fd-dynamic-page__summarized-title--collapsed\\" title=\\"Balenciaga Triple S Trainers\\"> Balenciaga Triple S Trainers </h1>
+                    class=\\"fd-dynamic-page__summarized-title-area fd-dynamic-page__summarized-title-area--no-shadow\\">
+                    <div
+                        aria-level=\\"2\\" 
+                        role=\\"heading\\" 
+                        class=\\"fd-dynamic-page__summarized-title fd-dynamic-page__summarized-title--collapsed\\" 
+                        title=\\"Balenciaga Triple S Trainers\\">
+                        Balenciaga Triple S Trainers
+                    </div>
+
                     <div role=\\"toolbar\\" aria-label=\\"Expand summary line action\\"
                         class=\\"fd-dynamic-page__toolbar fd-dynamic-page__toolbar--actions  fd-toolbar fd-toolbar--clear fd-toolbar--transparent\\">
                             <button class=\\"fd-button fd-button--transparent\\" aria-label=\\"Expand\\">
@@ -52288,7 +52384,13 @@ exports[`Check stories > Layouts/Dynamic Page > Story SummaryLine > Should match
                         </div>
                     </div>
                     <div class=\\"fd-dynamic-page__title-container\\">
-                        <h1 class=\\"fd-title fd-dynamic-page__title\\" title=\\"Balenciaga Triple S Trainers\\"> Balenciaga Triple S Trainers </h1>
+                        <div
+                            aria-level=\\"2\\" 
+                            role=\\"heading\\" 
+                            class=\\"fd-dynamic-page__summarized-title fd-dynamic-page__summarized-title--collapsed\\" 
+                            title=\\"Balenciaga Triple S Trainers\\">
+                            Balenciaga Triple S Trainers
+                        </div>
                             <div role=\\"toolbar\\" aria-label=\\"Product actions\\" class=\\"fd-dynamic-page__toolbar fd-dynamic-page__toolbar fd-dynamic-page__toolbar--actions fd-toolbar fd-toolbar--clear fd-toolbar--transparent\\">
                                 <button tabindex=\\"-1\\" class=\\"fd-button fd-button--transparent\\" aria-label=\\"More Header Content\\">
                                     <i class=\\"sap-icon--overflow\\"></i>
@@ -52301,12 +52403,12 @@ exports[`Check stories > Layouts/Dynamic Page > Story SummaryLine > Should match
                     <div class=\\"fd-dynamic-page__subtitle\\"> Collapsed title area and header with summary line </div>
                 </div>
                 <div class=\\"fd-dynamic-page__collapsible-header-container\\">
-                    <div class=\\"fd-dynamic-page__collapsible-header\\"
+                    <section class=\\"fd-dynamic-page__collapsible-header\\"
                         role=\\"region\\" aria-hidden=\\"true\\" id=\\"fddplhvcm2\\"  aria-label=\\"Dynamic Page Mobile Collapsed Header\\" >
                         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam possimus corrupti architecto perspiciatis,
                         delectus necessitatibus incidunt numquam asperiores tenetur iure.
                         Cum consequuntur impedit repellendus esse, facere autem optio consequatur nobis?
-                    </div>
+                    </section>
                     <div class=\\"fd-dynamic-page__collapsible-header-visibility-container fd-dynamic-page__collapsible-header-visibility-container--no-shadow\\"
                         aria-hidden=\\"true\\">
                         <div class=\\"fd-dynamic-page__collapsible-header-visibility-container--left-gradient\\"></div>
@@ -52367,16 +52469,24 @@ exports[`Check stories > Layouts/Dynamic Page > Story SummaryLine > Should match
                     </div>
                 </div>
             </footer>
-        </section>
+        </article>
     </div>
 "
 `;
 
 exports[`Check stories > Layouts/Dynamic Page > Story Tablet > Should match snapshot 1`] = `
 "
-    <section class=\\"fd-dynamic-page fd-dynamic-page--md\\" aria-label=\\"Dynamic Page Tablet Example\\">
+    <article class=\\"fd-dynamic-page fd-dynamic-page--md\\" aria-roledescription=\\"Dynamic Page\\">
         <header class=\\"fd-dynamic-page__header\\">
-            <div class=\\"fd-dynamic-page__title-area\\" tabindex=\\"0\\">
+            <span 
+                role=\\"button\\" 
+                aria-expanded=\\"true\\" 
+                aria-labelledby=\\"fd-dynamic-page-title-2\\" 
+                aria-label=\\"Toggle header\\" 
+                tabindex=\\"0\\"
+                class=\\"fd-dynamic-page__header-button\\">
+            </span>
+            <div class=\\"fd-dynamic-page__title-area\\">
                 <div class=\\"fd-dynamic-page__main-container\\">
                     <div class=\\"fd-dynamic-page__breadcrumb-title-container\\">
                         <div class=\\"fd-dynamic-page__breadcrumb-container\\">
@@ -52418,11 +52528,14 @@ exports[`Check stories > Layouts/Dynamic Page > Story Tablet > Should match snap
                             </div>
                         </div>
                         <div class=\\"fd-dynamic-page__title-container\\">
-                            <h1 class=\\"fd-title fd-dynamic-page__title\\">
-                                <a href=\\"#\\" class=\\"fd-link\\" title=\\"Balenciaga Triple S Trainers\\">
-                                    <span class=\\"fd-link__content\\">Balenciaga Triple S Trainers </span>
-                                </a>
-                            </h1>
+                            <div 
+                                id=\\"fd-dynamic-page-title-2\\"
+                                aria-level=\\"2\\" 
+                                role=\\"heading\\" 
+                                class=\\"fd-title fd-dynamic-page__title\\" 
+                                title=\\"Balenciaga Triple S Trainers\\">
+                                Balenciaga Triple S Trainers
+                            </div>
                             <div class=\\"fd-dynamic-page__title-content\\" title=\\"Some RANDOM things\\">
                                 {\\" \\"}
                                 Some RANDOM things
@@ -52443,11 +52556,11 @@ exports[`Check stories > Layouts/Dynamic Page > Story Tablet > Should match snap
                 <div class=\\"fd-dynamic-page__subtitle\\"> Oversized multimaterial sneakers with quilted effect</div>
             </div>
             <div class=\\"fd-dynamic-page__collapsible-header-container\\">
-                <div class=\\"fd-dynamic-page__collapsible-header\\" role=\\"region\\" aria-hidden=\\"false\\" id=\\"fddplhvc5\\" aria-label=\\"Tablet header\\">
+                <section class=\\"fd-dynamic-page__collapsible-header\\" role=\\"region\\" aria-hidden=\\"false\\" id=\\"fddplhvc5\\" aria-label=\\"Expanded header\\">
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam possimus corrupti architecto perspiciatis, delectus
                     necessitatibus incidunt numquam asperiores tenetur iure. Cum consequuntur impedit repellendus esse, facere autem optio
                     consequatur nobis?
-                </div>
+                </section>
                 <div class=\\"fd-dynamic-page__collapsible-header-visibility-container fd-dynamic-page__collapsible-header-visibility-container--no-shadow\\">
                     <div class=\\"fd-dynamic-page__collapsible-header-visibility-container--left-gradient\\"></div>
                     <div
@@ -52528,15 +52641,23 @@ exports[`Check stories > Layouts/Dynamic Page > Story Tablet > Should match snap
                 </div>
             </div>
         </footer>
-    </section>;
+    </article>;
     <br /><br />
 "
 `;
 
 exports[`Check stories > Layouts/Dynamic Page > Story WithFacets > Should match snapshot 1`] = `
-"<section class=\\"fd-dynamic-page fd-dynamic-page--xl\\" aria-label=\\"Dynamic Page Desktop Example\\">
+"<article class=\\"fd-dynamic-page fd-dynamic-page--xl\\" aria-roledescription=\\"Dynamic Page\\">
         <header class=\\"fd-dynamic-page__header\\">
-            <div class=\\"fd-dynamic-page__title-area\\" tabindex=\\"0\\" aria-hidden=\\"false\\" id=\\"mainContainer\\">
+            <span 
+                role=\\"button\\" 
+                aria-expanded=\\"true\\" 
+                aria-labelledby=\\"fd-dynamic-page-title-4\\" 
+                aria-label=\\"Toggle header\\" 
+                tabindex=\\"0\\"
+                class=\\"fd-dynamic-page__header-button\\">
+            </span>
+            <div class=\\"fd-dynamic-page__title-area\\" aria-hidden=\\"false\\" id=\\"mainContainer\\">
                 <div class=\\"fd-dynamic-page__main-container\\">
                     <div class=\\"fd-dynamic-page__breadcrumb-title-container\\">
                         <nav aria-label=\\"Breadcrumbs\\">
@@ -52547,7 +52668,14 @@ exports[`Check stories > Layouts/Dynamic Page > Story WithFacets > Should match 
                             </ul>
                         </nav>
                         <div class=\\"fd-dynamic-page__title-container\\">
-                            <h1 class=\\"fd-title fd-dynamic-page__title\\" title=\\"Balenciaga Triple S Trainers\\"> Balenciaga Triple S Trainers </h1>
+                            <div 
+                                id=\\"fd-dynamic-page-title-4\\"
+                                aria-level=\\"2\\" 
+                                role=\\"heading\\" 
+                                class=\\"fd-title fd-dynamic-page__title\\" 
+                                title=\\"Balenciaga Triple S Trainers\\">
+                                Balenciaga Triple S Trainers
+                            </div>
                             <div class=\\"fd-dynamic-page__toolbar-container\\">
                                 <div role=\\"toolbar\\" aria-label=\\"Product actions\\" class=\\"fd-dynamic-page__toolbar fd-toolbar fd-toolbar--clear fd-toolbar--transparent\\">
                                     <button class=\\"fd-button fd-button--positive\\">Accept</button>
@@ -52571,7 +52699,7 @@ exports[`Check stories > Layouts/Dynamic Page > Story WithFacets > Should match 
                 </div>
                 <div class=\\"fd-dynamic-page__subtitle\\"> Oversized multimaterial sneakers with quilted effect </div>
             </div>
-            <div class=\\"fd-dynamic-page__title-area fd-dynamic-page__title-area--collapsed\\" tabindex=\\"0\\" aria-hidden=\\"true\\" id=\\"mainImageContainer\\">
+            <div class=\\"fd-dynamic-page__title-area fd-dynamic-page__title-area--collapsed\\" aria-hidden=\\"true\\" id=\\"mainImageContainer\\">
                 <div class=\\"fd-dynamic-page__main-container\\">
                     <div class=\\"fd-dynamic-page__breadcrumb-title-container\\">
                         <nav aria-label=\\"Breadcrumbs\\">
@@ -52614,7 +52742,7 @@ exports[`Check stories > Layouts/Dynamic Page > Story WithFacets > Should match 
                 </div>
             </div>
             <div class=\\"fd-dynamic-page__collapsible-header-container\\">
-                <div class=\\"fd-dynamic-page__collapsible-header\\" role=\\"region\\" id=\\"fddplhvx6\\" aria-hidden=\\"false\\" aria-label=\\"Dynamic Page Desktop Header\\" >
+                <section class=\\"fd-dynamic-page__collapsible-header\\" role=\\"region\\" id=\\"fddplhvx6\\" aria-hidden=\\"false\\" aria-label=\\"Expanded header\\">
                     <div class=\\"fd-facet-group\\">
                         <div class=\\"fd-facet fd-facet--image fd-margin-end--md fd-margin-bottom--sm\\">
                             <span class=\\"fd-avatar fd-avatar--l\\" aria-label=\\"Avatar\\">
@@ -52690,7 +52818,7 @@ exports[`Check stories > Layouts/Dynamic Page > Story WithFacets > Should match 
                             </div>
                         </div>
                     </div>
-                </div>
+                </section>
                 <div class=\\"fd-dynamic-page__collapsible-header-visibility-container fd-dynamic-page__collapsible-header-visibility-container--no-shadow\\">
                     <div class=\\"fd-dynamic-page__collapsible-header-visibility-container--left-gradient\\"></div>
                     <div role=\\"toolbar\\" aria-label=\\"Header actions\\" class=\\"fd-dynamic-page__collapsible-header-visibility-container--button-group\\">
@@ -52793,15 +52921,23 @@ exports[`Check stories > Layouts/Dynamic Page > Story WithFacets > Should match 
                 </div>
             </div>
         </footer>
-    </section>
+    </article>
 "
 `;
 
 exports[`Check stories > Layouts/Dynamic Page > Story WithFacetsMobile > Should match snapshot 1`] = `
 "<div class=\\"mobile-container\\">
-        <section class=\\"fd-dynamic-page fd-dynamic-page--sm\\" aria-label=\\"Dynamic Page Mobile Example\\">
+        <article class=\\"fd-dynamic-page fd-dynamic-page--sm\\" aria-roledescription=\\"Dynamic Page\\">
             <header class=\\"fd-dynamic-page__header\\">
-                <div class=\\"fd-dynamic-page__title-area\\" tabindex=\\"0\\" aria-hidden=\\"false\\" id=\\"mainContainerMobile\\">
+                <span 
+                    role=\\"button\\" 
+                    aria-expanded=\\"true\\" 
+                    aria-labelledby=\\"fd-dynamic-page-title-3\\" 
+                    aria-label=\\"Toggle header\\" 
+                    tabindex=\\"0\\"
+                    class=\\"fd-dynamic-page__header-button\\">
+                </span>
+                <div class=\\"fd-dynamic-page__title-area\\" aria-hidden=\\"false\\" id=\\"mainContainerMobile\\">
                     <div class=\\"fd-dynamic-page__main-container\\">
                         <div class=\\"fd-dynamic-page__breadcrumb-title-container\\">
                             <div class=\\"fd-dynamic-page__breadcrumb-container\\">
@@ -52819,7 +52955,14 @@ exports[`Check stories > Layouts/Dynamic Page > Story WithFacetsMobile > Should 
                                 </div>
                             </div>
                             <div class=\\"fd-dynamic-page__title-container\\">
-                                <h1 class=\\"fd-title fd-dynamic-page__title\\" title=\\"Balenciaga Triple S Trainers\\"> Balenciaga Triple S Trainers </h1>
+                                <div 
+                                    id=\\"fd-dynamic-page-title-3\\"
+                                    aria-level=\\"2\\" 
+                                    role=\\"heading\\" 
+                                    class=\\"fd-title fd-dynamic-page__title\\" 
+                                    title=\\"Balenciaga Triple S Trainers\\">
+                                    Balenciaga Triple S Trainers
+                                </div>
                                 <div role=\\"toolbar\\" aria-label=\\"Product actions\\" class=\\"fd-dynamic-page__toolbar fd-toolbar fd-toolbar--clear fd-toolbar--transparent\\">
                                     <div class=\\"fd-popover\\">
                                         <div class=\\"fd-popover__control\\">
@@ -52852,7 +52995,7 @@ exports[`Check stories > Layouts/Dynamic Page > Story WithFacetsMobile > Should 
                     </div>
                     <div class=\\"fd-dynamic-page__subtitle\\"> Expanded header in mobile </div>
                 </div>
-                <div class=\\"fd-dynamic-page__title-area fd-dynamic-page__title-area--collapsed\\" tabindex=\\"0\\" aria-hidden=\\"true\\" id=\\"mainImageContainerMobile\\">
+                <div class=\\"fd-dynamic-page__title-area fd-dynamic-page__title-area--collapsed\\" aria-hidden=\\"true\\" id=\\"mainImageContainerMobile\\">
                     <div class=\\"fd-dynamic-page__main-container\\">
                         <div class=\\"fd-dynamic-page__breadcrumb-title-container\\">
                             <div class=\\"fd-dynamic-page__breadcrumb-container\\">
@@ -52876,7 +53019,14 @@ exports[`Check stories > Layouts/Dynamic Page > Story WithFacetsMobile > Should 
                                     </span>
                                 </div>
                                 <div class=\\"fd-dynamic-page__title-subtitle-container\\">
-                                    <h1 class=\\"fd-title fd-dynamic-page__title\\" title=\\"Balenciaga Triple S Trainers\\"> Balenciaga Triple S Trainers </h1>
+                                    <div 
+                                        id=\\"fd-dynamic-page-title-3A\\"
+                                        aria-level=\\"2\\" 
+                                        role=\\"heading\\" 
+                                        class=\\"fd-title fd-dynamic-page__title\\" 
+                                        title=\\"Balenciaga Triple S Trainers\\">
+                                        Balenciaga Triple S Trainers
+                                    </div>
                                     <div class=\\"fd-dynamic-page__subtitle\\"> Collapsed header in mobile </div>
                                 </div>
                                 <div role=\\"toolbar\\" aria-label=\\"Product actions\\" class=\\"fd-dynamic-page__toolbar fd-toolbar fd-toolbar--clear fd-toolbar--transparent\\">
@@ -52911,7 +53061,7 @@ exports[`Check stories > Layouts/Dynamic Page > Story WithFacetsMobile > Should 
                     </div>
                 </div>
                 <div class=\\"fd-dynamic-page__collapsible-header-container\\">
-                    <div class=\\"fd-dynamic-page__collapsible-header\\" role=\\"region\\" id=\\"fddplhvc7\\" aria-hidden=\\"false\\" aria-label=\\"Dynamic Page Mobile Header\\">
+                    <section class=\\"fd-dynamic-page__collapsible-header\\" role=\\"region\\" id=\\"fddplhvc7\\" aria-hidden=\\"false\\"  aria-label=\\"Expanded header\\">
                         <div class=\\"fd-facet-group\\">
                             <div class=\\"fd-facet fd-facet--image fd-margin-end--sm fd-margin-bottom--tiny\\">
                                 <span class=\\"fd-avatar fd-avatar--l\\" aria-label=\\"Avatar\\">
@@ -52920,19 +53070,19 @@ exports[`Check stories > Layouts/Dynamic Page > Story WithFacetsMobile > Should 
                             </div>
 
                             <div class=\\"fd-facet fd-facet--key-value fd-margin-end--md  fd-margin-bottom--sm\\" role=\\"group\\" aria-labelledby=\\"kvFacetTitle13\\">
-                                <h1 class=\\"fd-title fd-title--h5 fd-margin-bottom--sm\\" id=\\"kvFacetTitle13\\">Availablity</h1>
+                                <div aria-level=\\"3\\" role=\\"heading\\" class=\\"fd-title fd-title--h5 fd-margin-bottom--sm\\" id=\\"kvFacetTitle13\\">Availablity</div>
                                 <span class=\\"fd-object-status fd-object-status--positive fd-object-status--large fd-facet__object-status\\">
                                     <span class=\\"fd-object-status__text fd-facet__object-status-text\\">In Stock</span>
                                 </span>
                             </div>
                             <div class=\\"fd-facet fd-facet--key-value fd-margin-end--md  fd-margin-bottom--sm\\" role=\\"group\\" aria-labelledby=\\"kvFacetTitle14\\">
-                                <h1 class=\\"fd-title fd-title--h5 fd-margin-bottom--sm\\" id=\\"kvFacetTitle14\\">Price </h1>
+                                <div aria-level=\\"3\\" role=\\"heading\\" class=\\"fd-title fd-title--h5 fd-margin-bottom--sm\\" id=\\"kvFacetTitle14\\">Price </div>
                                 <span class=\\"fd-object-number fd-object-number--large fd-object-number--informative\\">
                                     <span class=\\"fd-object-number__text\\">750</span><span class=\\"fd-object-number__unit\\">EUR</span>
                                 </span>
                             </div>
                         </div>
-                    </div>
+                    </section>
                     <div class=\\"fd-dynamic-page__collapsible-header-visibility-container fd-dynamic-page__collapsible-header-visibility-container--no-shadow\\">
                         <div class=\\"fd-dynamic-page__collapsible-header-visibility-container--left-gradient\\"></div>
                         <div role=\\"toolbar\\" aria-label=\\"Header actions\\" class=\\"fd-dynamic-page__collapsible-header-visibility-container--button-group\\">
@@ -53019,7 +53169,7 @@ exports[`Check stories > Layouts/Dynamic Page > Story WithFacetsMobile > Should 
                     </div>
                 </div>
             </footer>
-        </section>
+        </article>
     </div>
 "
 `;

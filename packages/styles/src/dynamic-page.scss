@@ -55,6 +55,21 @@ $block: #{$fd-namespace}-dynamic-page;
   @include fd-reset();
   @include fd-flex(column);
 
+  &__sr-only {
+    @include fd-screen-reader-only();
+  }
+
+  &__header-button {
+    @include fd-screen-reader-only();
+
+    @include fd-focus() {
+      & + .#{$block}__title-area {
+        outline-offset: $fd-dynamic-page-focus-outline-offset;
+        outline: var(--sapContent_FocusColor) var(--sapContent_FocusStyle) var(--sapContent_FocusWidth); 
+      }
+    }
+  }
+
   &__header-fixed {
     position: fixed;
     left: 0;
@@ -76,10 +91,6 @@ $block: #{$fd-namespace}-dynamic-page;
 
     @include fd-flex(column) {
       justify-content: space-between;
-    }
-
-    @include fd-fiori-focus($fd-dynamic-page-focus-outline-offset) {
-      z-index: 1;
     }
 
     min-height: 3rem;
