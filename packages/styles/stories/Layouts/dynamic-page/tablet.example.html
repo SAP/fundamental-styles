@@ -1,7 +1,15 @@
 
-    <section class="fd-dynamic-page fd-dynamic-page--md" aria-label="Dynamic Page Tablet Example">
+    <article class="fd-dynamic-page fd-dynamic-page--md" aria-roledescription="Dynamic Page">
         <header class="fd-dynamic-page__header">
-            <div class="fd-dynamic-page__title-area" tabindex="0">
+            <span 
+                role="button" 
+                aria-expanded="true" 
+                aria-labelledby="fd-dynamic-page-title-2" 
+                aria-label="Toggle header" 
+                tabindex="0"
+                class="fd-dynamic-page__header-button">
+            </span>
+            <div class="fd-dynamic-page__title-area">
                 <div class="fd-dynamic-page__main-container">
                     <div class="fd-dynamic-page__breadcrumb-title-container">
                         <div class="fd-dynamic-page__breadcrumb-container">
@@ -43,11 +51,14 @@
                             </div>
                         </div>
                         <div class="fd-dynamic-page__title-container">
-                            <h1 class="fd-title fd-dynamic-page__title">
-                                <a href="#" class="fd-link" title="Balenciaga Triple S Trainers">
-                                    <span class="fd-link__content">Balenciaga Triple S Trainers </span>
-                                </a>
-                            </h1>
+                            <div 
+                                id="fd-dynamic-page-title-2"
+                                aria-level="2" 
+                                role="heading" 
+                                class="fd-title fd-dynamic-page__title" 
+                                title="Balenciaga Triple S Trainers">
+                                Balenciaga Triple S Trainers
+                            </div>
                             <div class="fd-dynamic-page__title-content" title="Some RANDOM things">
                                 {" "}
                                 Some RANDOM things
@@ -68,11 +79,11 @@
                 <div class="fd-dynamic-page__subtitle"> Oversized multimaterial sneakers with quilted effect</div>
             </div>
             <div class="fd-dynamic-page__collapsible-header-container">
-                <div class="fd-dynamic-page__collapsible-header" role="region" aria-hidden="false" id="fddplhvc5" aria-label="Tablet header">
+                <section class="fd-dynamic-page__collapsible-header" role="region" aria-hidden="false" id="fddplhvc5" aria-label="Expanded header">
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam possimus corrupti architecto perspiciatis, delectus
                     necessitatibus incidunt numquam asperiores tenetur iure. Cum consequuntur impedit repellendus esse, facere autem optio
                     consequatur nobis?
-                </div>
+                </section>
                 <div class="fd-dynamic-page__collapsible-header-visibility-container fd-dynamic-page__collapsible-header-visibility-container--no-shadow">
                     <div class="fd-dynamic-page__collapsible-header-visibility-container--left-gradient"></div>
                     <div
@@ -153,5 +164,5 @@
                 </div>
             </div>
         </footer>
-    </section>;
+    </article>;
     <br /><br />
