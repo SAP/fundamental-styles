@@ -3,6 +3,21 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.35.0-rc.2](https://github.com/SAP/fundamental-styles/compare/v0.35.0-rc.1...v0.35.0-rc.2) (2024-04-04)
+
+### Bug Fixes
+
+-   **styles:** add a11y improvements for Dynamic Page header [ci visual] ([#5279](https://github.com/SAP/fundamental-styles/issues/5279)) ([9c7a90f](https://github.com/SAP/fundamental-styles/commit/9c7a90ffad9bc43d3732c2e44b8143330400effc))
+
+### BREAKING CHANGES
+
+-   **styles:** - dynamic page container is now article not section with aria-roledescription
+
+*   the fd-dynamic-page\_\_title-area element has a new sibling, a button that receives the focus and once it's focussed applies a visual outline to the container
+*   dynamic page title is not an <h1> element, but a div with role="heading" and aria-level="2". The level in ngx should be exposed as an input property and for this reason we are not using h1, h2, h3, etc
+    the element with class fd-dynamic-page\_\_collapsible-header is now a section not a div
+*   Facets headings have been updated to div elements with role="heading" and aria-level="2"
+
 # [0.35.0-rc.1](https://github.com/SAP/fundamental-styles/compare/v0.35.0-rc.0...v0.35.0-rc.1) (2024-03-29)
 
 ### Bug Fixes
