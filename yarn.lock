@@ -6168,6 +6168,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"axios@npm:^1.6.2":
+  version: 1.6.8
+  resolution: "axios@npm:1.6.8"
+  dependencies:
+    follow-redirects: "npm:^1.15.6"
+    form-data: "npm:^4.0.0"
+    proxy-from-env: "npm:^1.1.0"
+  checksum: 10/3f9a79eaf1d159544fca9576261ff867cbbff64ed30017848e4210e49f3b01e97cf416390150e6fdf6633f336cd43dc1151f890bbd09c3c01ad60bb0891eee63
+  languageName: node
+  linkType: hard
+
 "axobject-query@npm:^2.2.0":
   version: 2.2.0
   resolution: "axobject-query@npm:2.2.0"
@@ -6567,17 +6578,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"bundlesize@npm:0.18.1":
-  version: 0.18.1
-  resolution: "bundlesize@npm:0.18.1"
+"bundlesize@npm:0.18.2":
+  version: 0.18.2
+  resolution: "bundlesize@npm:0.18.2"
   dependencies:
-    axios: "npm:^0.21.1"
+    axios: "npm:^1.6.2"
     brotli-size: "npm:0.1.0"
     bytes: "npm:^3.1.0"
     ci-env: "npm:^1.4.0"
     commander: "npm:^2.20.0"
     cosmiconfig: "npm:^5.2.1"
-    github-build: "npm:^1.2.2"
+    github-build: "npm:^1.2.4"
     glob: "npm:^7.1.4"
     gzip-size: "npm:^4.0.0"
     prettycli: "npm:^1.4.3"
@@ -6585,7 +6596,7 @@ __metadata:
     bundlesize: index.js
     bundlesize-init: src/init-status.js
     bundlesize-pipe: pipe.js
-  checksum: 10/3d0e1e32de5bbc62511dadf7ecdb08e5eee2b76b41d239d0388c811f6fb868375bca53496473be5cacd38db8669796e5d3113932f721de539c31eef74b64c0f1
+  checksum: 10/c182ed0e07c53f64c48e69d8f82bd6f276508e1851434f18b80e0a479a45746201fa662ba143f55992c0c88654bc87e239448773abe79cf465ac40896e5909b0
   languageName: node
   linkType: hard
 
@@ -10086,6 +10097,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"follow-redirects@npm:^1.15.6":
+  version: 1.15.6
+  resolution: "follow-redirects@npm:1.15.6"
+  peerDependenciesMeta:
+    debug:
+      optional: true
+  checksum: 10/70c7612c4cab18e546e36b991bbf8009a1a41cf85354afe04b113d1117569abf760269409cb3eb842d9f7b03d62826687086b081c566ea7b1e6613cf29030bf7
+  languageName: node
+  linkType: hard
+
 "for-each@npm:^0.3.3":
   version: 0.3.3
   resolution: "for-each@npm:0.3.3"
@@ -10307,7 +10328,7 @@ __metadata:
     "@typescript-eslint/parser": "npm:6.21.0"
     "@vitejs/plugin-react": "npm:3.1.0"
     autoprefixer: "npm:10.4.19"
-    bundlesize: "npm:0.18.1"
+    bundlesize: "npm:0.18.2"
     chromatic: "npm:11.0.7"
     clean-css: "npm:5.3.3"
     clean-css-cli: "npm:5.4.1"
@@ -10646,7 +10667,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"github-build@npm:^1.2.2":
+"github-build@npm:^1.2.4":
   version: 1.2.4
   resolution: "github-build@npm:1.2.4"
   dependencies:
