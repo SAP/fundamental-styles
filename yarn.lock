@@ -3792,11 +3792,11 @@ __metadata:
   linkType: hard
 
 "@storybook/addon-viewport@npm:^8.0.5":
-  version: 8.0.5
-  resolution: "@storybook/addon-viewport@npm:8.0.5"
+  version: 8.0.6
+  resolution: "@storybook/addon-viewport@npm:8.0.6"
   dependencies:
     memoizerific: "npm:^1.11.3"
-  checksum: 10/7811fa3bb4b9c9ce465d5782facad7b1cccf4945febd8942c3895bcc12a00fa07871b99d2cbdf94d7aadb2d51b99379c244e536ab396721993d38831ec6af299
+  checksum: 10/02d46fa97a819b1e00d0017043fbdcbe02652f8bed0d7f441dec02f162c36d7a3150e223068193db026003b68622eacc77b3c04b4f80455ac6152a54d027f314
   languageName: node
   linkType: hard
 
