@@ -3785,9 +3785,9 @@ __metadata:
   linkType: hard
 
 "@storybook/addon-toolbars@npm:^8.0.6":
-  version: 8.0.6
-  resolution: "@storybook/addon-toolbars@npm:8.0.6"
-  checksum: 10/6cb47be785d6b155be097022e635a65d874021d3c3f9ee55d4c060909bd7ca8315d9677bb95cfddbdbb14d6047bf8e0eab13e7112737d98325bd13265db3bb25
+  version: 8.0.8
+  resolution: "@storybook/addon-toolbars@npm:8.0.8"
+  checksum: 10/eb70ef0d0223d0035d39eb6644248f08a5ed1f9ce6faf31978298ed348b70890f9c997f1113dc6ca8d06638c988131d3aa565021b47fb385a6cebe3b51752a29
   languageName: node
   linkType: hard
 
