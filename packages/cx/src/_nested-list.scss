@@ -216,7 +216,7 @@ $button: #{$fd-cx-namespace}-button;
       @include fd-set-height(100%);
 
       color: currentColor;
-      font-size: var(--sapFontSize);
+      font-size: var(--sapContent_IconHeight);
     }
   }
 
