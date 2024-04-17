@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.35.0-rc.11](https://github.com/SAP/fundamental-styles/compare/v0.35.0-rc.10...v0.35.0-rc.11) (2024-04-17)
+
+### Bug Fixes
+
+-   **styles:** change the font-size of Side Nav icon [ci visual] ([#5309](https://github.com/SAP/fundamental-styles/issues/5309)) ([73e3c19](https://github.com/SAP/fundamental-styles/commit/73e3c19d5b28b7157ae961374fff6281c61d0fc5))
+
 # [0.35.0-rc.10](https://github.com/SAP/fundamental-styles/compare/v0.35.0-rc.9...v0.35.0-rc.10) (2024-04-17)
 
 **Note:** Version bump only for package @fundamental-styles/cx
