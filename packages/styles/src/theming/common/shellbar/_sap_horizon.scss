@@ -3,7 +3,7 @@
 :root {
   --fdShellbar_Height: 3.25rem;
   --fdShellbar_Shadow: inset 0 -0.0625rem 0 0 var(--sapShell_BorderColor);
-  --fdShellbar_Button_Hover_Border_Color: var(--sapButton_Lite_BorderColor);
+  --fdShellbar_Button_Hover_Border_Color: var(--sapButton_Lite_Hover_BorderColor);
   --fdShellbar_Button_Active_Border_Color: var(--sapButton_Lite_Active_BorderColor);
   --fdShellbar_Button_Outline_Color: var(--sapContent_FocusColor);
   --fdShellbar_Search_Border: none;
@@ -38,7 +38,7 @@
   --fdShellbar_Input_Focus_Color: var(--sapShell_InteractiveTextColor);
   --fdShellbar_Input_Focus_Background: transparent;
   --fdShellbar_Input_Placeholder_Style: italic;
-  --fdShellbar_Button_Left_Border: 0.0625rem solid transparent;
+  --fdShellbar_Button_Left_Border: 0.0625rem solid var(--sapButton_Lite_Hover_BorderColor);
   --fdShellbar_Input_Group_Background: 0 100% / 100% 0.0625rem no-repeat linear-gradient(0deg, var(--sapField_BorderColor), var(--sapField_BorderColor)) border-box;
   --fdShellbar_Input_Group_Hover_Background: 0 100% / 100% 0.0625rem no-repeat linear-gradient(0deg, var(--sapField_Hover_BorderColor), var(--sapField_Hover_BorderColor)) border-box;
   --fdShellbar_Helper_Bottom_Shadow: inset 0 -0.0625rem 0 var(--sapField_BorderColor);

@@ -305,10 +305,9 @@ $block: #{$fd-namespace}-shellbar;
             > * {
               --fdButtonBackgroundColor: var(--fdShellbar_Search_Active_Button_Background);
               --fdButtonColor: var(--fdShellbar_Search_Active_Button_Color);
+              --fdButtonIconColor: var(--fdShellbar_Search_Active_Button_Color);
               --fdShellbar_Button_Active_Background: var(--fdButtonBackgroundColor);
               --fdShellbar_Button_Active_Color: var(--fdShellbar_Search_Active_Button_Color);
-
-              @include fd-set-border-left(var(--fdShellbar_Button_Left_Border));
 
               &:hover {
                 --fdButtonBackgroundColor: var(--fdShellbar_Search_Active_Button_Hover_Background);
@@ -510,10 +509,6 @@ $block: #{$fd-namespace}-shellbar;
 
         .#{$block}__search-category {
           background-color: var(--fdShellbar_Search_Hover_Background);
-
-          &::before {
-            // display: none;
-          }
         }
 
         .#{$block}__search-field-category {
@@ -525,11 +520,16 @@ $block: #{$fd-namespace}-shellbar;
     }
 
     .#{$block}__button {
+      border: solid var(--sapButton_BorderWidth) var(--fdButtonBorderColor);
       outline-color: var(--fdShellbar_Button_Outline_Color);
 
       --fdButtonBackgroundColor: var(--sapButton_Lite_Background);
       --fdButtonBorderColor: var(--sapButton_Lite_BorderColor);
       --fdButtonColor: var(--fdShellbar_Button_Color);
+
+      & > [class*="sap-icon"] {
+        color: var(--fdButtonIconColor, var(--sapShell_InteractiveTextColor));
+      }
 
       .#{$block}__title {
         color: inherit;
@@ -542,6 +542,7 @@ $block: #{$fd-namespace}-shellbar;
       @include fd-hover() {
         --fdButtonBorderColor: var(--fdShellbar_Button_Hover_Border_Color);
         --fdButtonBackgroundColor: var(--fdShellbar_Input_Hover_Background);
+        --fdButtonIconColor: var(--sapShell_InteractiveTextColor);
 
         @include fd-disabled() {
           --fdButtonBackgroundColor: $fd-shellbar-background;
@@ -552,6 +553,7 @@ $block: #{$fd-namespace}-shellbar;
         --fdButtonBorderColor: var(--fdShellbar_Button_Active_Border_Color);
         --fdButtonBackgroundColor: var(--fdShellbar_Button_Active_Background);
         --fdButtonColor: var(--fdShellbar_Button_Active_Color);
+        --fdButtonIconColor: var(--fdShellbar_Button_Active_Color);
 
         &::after {
           display: none;
