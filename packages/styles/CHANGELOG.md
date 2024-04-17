@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.35.0-rc.10](https://github.com/SAP/fundamental-styles/compare/v0.35.0-rc.9...v0.35.0-rc.10) (2024-04-17)
+
+### Bug Fixes
+
+-   **styles:** add fix for buttons hover state in Shell Bar [ci visual] ([#5310](https://github.com/SAP/fundamental-styles/issues/5310)) ([0cad0b9](https://github.com/SAP/fundamental-styles/commit/0cad0b98c057c417a222fadb5f554f4e6b9b5784))
+
 # [0.35.0-rc.9](https://github.com/SAP/fundamental-styles/compare/v0.35.0-rc.8...v0.35.0-rc.9) (2024-04-07)
 
 **Note:** Version bump only for package fundamental-styles
