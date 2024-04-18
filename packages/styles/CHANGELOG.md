@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.35.0-rc.13](https://github.com/SAP/fundamental-styles/compare/v0.35.0-rc.12...v0.35.0-rc.13) (2024-04-18)
+
+### Bug Fixes
+
+-   **styles:** update Inverted object status to latest design [ci visual] ([#5312](https://github.com/SAP/fundamental-styles/issues/5312)) ([7026727](https://github.com/SAP/fundamental-styles/commit/702672718790b60bed54d88e9397d2853fc3607c))
+
 # [0.35.0-rc.12](https://github.com/SAP/fundamental-styles/compare/v0.35.0-rc.11...v0.35.0-rc.12) (2024-04-18)
 
 ### Bug Fixes
