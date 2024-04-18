@@ -31606,7 +31606,7 @@ exports[`Check stories > Components/Object Status > Story Inverted > Should matc
 
 <br><br>
 <h4>Large Inverted Object Status</h4>
-<div class=\\"fddocs-container\\" style=\\"align-items: baseline;\\">
+<div class=\\"fddocs-container\\" style=\\"align-items: baseline; gap: 1rem;\\">
     <span class=\\"fd-object-status fd-object-status--negative fd-object-status--inverted fd-object-status--large\\">
         <span class=\\"fd-object-status__text\\">Inverted Negative</span>
     </span>

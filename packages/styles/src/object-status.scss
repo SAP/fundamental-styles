@@ -908,13 +908,15 @@ $inverted-color-accents-b: (
     // LARGE DESIGN FOR INVERTED OBJECT STATUS
     &.#{$block}--large {
       --fdObjectStatus_Text_Font_Size: 1.25rem;
-      --fdObjectStatus_Icon_Font_Size: 1.25rem;
+      --fdObjectStatus_Icon_Font_Size: 1.5rem;
       --fdObjectStatus_Height: 1.5rem;
       --fdObjectStatus_Text_Font_Family: var(--fdObjectStatus_Inverted_Large_Font_Family);
 
-      padding: 0.125rem 0.25rem;
       height: auto;
       max-height: none;
+      min-width: 1.75rem;
+      align-self: center;
+      padding: 0.0625rem 0.25rem;
 
       .#{$block}__icon,
       .#{$block}__text {
@@ -959,10 +961,6 @@ $inverted-color-accents-b: (
           @include inverted-object-interaction-states($color-set);
         }
       }
-    }
-
-    &.#{$block}--icon-only {
-      padding: 0 0.25rem;
     }
   }
 
