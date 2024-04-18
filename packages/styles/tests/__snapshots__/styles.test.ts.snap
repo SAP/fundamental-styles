@@ -26580,6 +26580,30 @@ exports[`Check stories > Components/Menu > Story Input > Should match snapshot 1
             </li>
         </ul>
     </nav>
+
+    <nav class=\\"fd-menu fd-menu--icons\\">
+        <ul class=\\"fd-menu__list\\" role=\\"menu\\">
+            <li class=\\"fd-menu__item\\" role=\\"presentation\\">
+                <a class=\\"fd-menu__link\\" href=\\"#\\" role=\\"menuitem\\">
+                    <span class=\\"fd-menu__addon-before\\"><i class=\\"sap-icon--map\\" role=\\"presentation\\"></i></span>
+                    <span class=\\"fd-menu__title\\">Add New Pin</span>
+                </a>
+            </li>
+            <li class=\\"fd-menu__item\\" role=\\"presentation\\">
+                <a class=\\"fd-menu__link\\" href=\\"#\\" role=\\"menuitem\\">
+                    <span class=\\"fd-menu__addon-before\\"><i class=\\"sap-icon--image-viewer\\" role=\\"presentation\\"></i></span>
+                    <span class=\\"fd-menu__title\\">View 360</span>
+                </a>
+            </li>
+            <li class=\\"fd-menu__item\\" role=\\"presentation\\">
+                <div class=\\"fd-menu__link\\" role=\\"presentation\\">
+                    <span class=\\"fd-menu__addon-before\\"><i class=\\"sap-icon--filter\\" role=\\"presentation\\"></i></span>
+                    <span class=\\"fd-menu__title\\">Filter</span>
+                    <input class=\\"fd-input fd-menu__input\\" type=\\"text\\" id=\\"input-1\\" placeholder=\\"Field placeholder text\\">
+                </div>
+            </li>
+        </ul>
+    </nav>
 </div>"
 `;
 
@@ -38665,22 +38689,53 @@ exports[`Check stories > Components/Shellbar > Story ResponsivePaddings > Should
                                                  width=\\"48\\" height=\\"24\\" alt=\\"SAP\\"></span>
             <span class=\\"fd-shellbar__title\\">Corporate Portal</span>
         </div>
-        <div class=\\"fd-shellbar__group fd-shellbar__group--center\\">
-            <div class=\\"fd-shellbar__action\\">
-                <div class=\\"fd-popover__control\\">
-                    <div aria-label=\\"Image label\\" onclick=\\"onPopoverClick('F4GcX348b')\\" aria-controls=\\"F4GcX348b\\" aria-expanded=\\"false\\" aria-haspopup=\\"true\\">
-                        <div class=\\"fd-input-group fd-shellbar__search-field\\">
-                            <input aria-label=\\"search-input\\" type=\\"text\\" class=\\"fd-input fd-input-group__input fd-shellbar__search-field-input\\" id=\\"F4GcX348b1\\" placeholder=\\"Search everything\\">
-                            <span class=\\"fd-input-group__addon fd-shellbar__search-field-addon fd-input-group__addon--button\\">
-                                <button aria-label=\\"button-search\\" class=\\"fd-shellbar__button fd-button fd-button--transparent\\">
-                                        <i class=\\"sap-icon--search\\"></i>
-                                </button>
-                            </span>
-                        </div>
-                    </div>
-                </div>
+
+
+        <div
+        class=\\"fd-shellbar__group fd-shellbar__group--center fd-shellbar__group--mobile-flex\\"
+      >
+        <div class=\\"fd-shellbar__action fd-shellbar__action--grow\\">
+          <div id=\\"JKHhjk7234k2a\\" class=\\"fd-input-group fd-shellbar__search-field\\">
+            <input
+              aria-label=\\"search-input\\"
+              type=\\"text\\"
+              onfocus=\\"addClass('JKHhjk7234k2a', 'is-focus')\\"
+              onblur=\\"removeClass('JKHhjk7234k2a', 'is-focus')\\"
+              class=\\"fd-input fd-input-group__input fd-shellbar__search-field-input\\"
+              id=\\"F4GcX348b1\\"
+              placeholder=\\"Search everything\\"
+              value=\\"Typing...\\"
+            />
+            <div
+              class=\\"fd-input-group__addon fd-shellbar__search-field-addon fd-shellbar__search-cancel fd-input-group__addon--button\\"
+            >
+              <button
+                aria-label=\\"button-search\\"
+                class=\\"fd-shellbar__button fd-button fd-button--transparent\\"
+              >
+                <i class=\\"sap-icon--decline\\"></i>
+              </button>
             </div>
+            <div
+              class=\\"fd-input-group__addon fd-shellbar__search-field-addon fd-shellbar__search-submit fd-input-group__addon--button\\"
+            >
+              <button
+                aria-label=\\"button-search\\"
+                class=\\"fd-shellbar__button fd-button fd-button--transparent\\"
+              >
+                <i class=\\"sap-icon--search\\"></i>
+              </button>
+            </div>
+            <div class=\\"fd-shellbar__search-field-helper\\"></div>
+          </div>
         </div>
+        <div
+          class=\\"fd-shellbar__action fd-shellbar__action--mobile fd-shellbar__action--shrink\\"
+        >
+          <button class=\\"fd-button fd-button--transparent\\">Cancel</button>
+        </div>
+      </div>
+
         <div class=\\"fd-shellbar__group fd-shellbar__group--actions\\">
             <div class=\\"fd-shellbar__action fd-shellbar__action--desktop\\">
                 <button

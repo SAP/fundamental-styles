@@ -218,6 +218,11 @@ $block: #{$fd-namespace}-menu;
     @include fd-rtl() {
       text-align: right;
     }
+
+    &:has(+ .#{$block}__input) {
+      width: fit-content;
+      min-width: fit-content;
+    }
   }
 
   &__addon-before,
