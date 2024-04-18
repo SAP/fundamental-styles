@@ -31582,7 +31582,7 @@ exports[`Check stories > Components/Object Status > Story Inverted > Should matc
 
 <br><br>
 <h4>Large Inverted Object Status</h4>
-<div class=\\"fddocs-container\\" style=\\"align-items: baseline;\\">
+<div class=\\"fddocs-container\\" style=\\"align-items: baseline; gap: 1rem;\\">
     <span class=\\"fd-object-status fd-object-status--negative fd-object-status--inverted fd-object-status--large\\">
         <span class=\\"fd-object-status__text\\">Inverted Negative</span>
     </span>
@@ -38665,22 +38665,53 @@ exports[`Check stories > Components/Shellbar > Story ResponsivePaddings > Should
                                                  width=\\"48\\" height=\\"24\\" alt=\\"SAP\\"></span>
             <span class=\\"fd-shellbar__title\\">Corporate Portal</span>
         </div>
-        <div class=\\"fd-shellbar__group fd-shellbar__group--center\\">
-            <div class=\\"fd-shellbar__action\\">
-                <div class=\\"fd-popover__control\\">
-                    <div aria-label=\\"Image label\\" onclick=\\"onPopoverClick('F4GcX348b')\\" aria-controls=\\"F4GcX348b\\" aria-expanded=\\"false\\" aria-haspopup=\\"true\\">
-                        <div class=\\"fd-input-group fd-shellbar__search-field\\">
-                            <input aria-label=\\"search-input\\" type=\\"text\\" class=\\"fd-input fd-input-group__input fd-shellbar__search-field-input\\" id=\\"F4GcX348b1\\" placeholder=\\"Search everything\\">
-                            <span class=\\"fd-input-group__addon fd-shellbar__search-field-addon fd-input-group__addon--button\\">
-                                <button aria-label=\\"button-search\\" class=\\"fd-shellbar__button fd-button fd-button--transparent\\">
-                                        <i class=\\"sap-icon--search\\"></i>
-                                </button>
-                            </span>
-                        </div>
-                    </div>
-                </div>
+
+
+        <div
+        class=\\"fd-shellbar__group fd-shellbar__group--center fd-shellbar__group--mobile-flex\\"
+      >
+        <div class=\\"fd-shellbar__action fd-shellbar__action--grow\\">
+          <div id=\\"JKHhjk7234k2a\\" class=\\"fd-input-group fd-shellbar__search-field\\">
+            <input
+              aria-label=\\"search-input\\"
+              type=\\"text\\"
+              onfocus=\\"addClass('JKHhjk7234k2a', 'is-focus')\\"
+              onblur=\\"removeClass('JKHhjk7234k2a', 'is-focus')\\"
+              class=\\"fd-input fd-input-group__input fd-shellbar__search-field-input\\"
+              id=\\"F4GcX348b1\\"
+              placeholder=\\"Search everything\\"
+              value=\\"Typing...\\"
+            />
+            <div
+              class=\\"fd-input-group__addon fd-shellbar__search-field-addon fd-shellbar__search-cancel fd-input-group__addon--button\\"
+            >
+              <button
+                aria-label=\\"button-search\\"
+                class=\\"fd-shellbar__button fd-button fd-button--transparent\\"
+              >
+                <i class=\\"sap-icon--decline\\"></i>
+              </button>
             </div>
+            <div
+              class=\\"fd-input-group__addon fd-shellbar__search-field-addon fd-shellbar__search-submit fd-input-group__addon--button\\"
+            >
+              <button
+                aria-label=\\"button-search\\"
+                class=\\"fd-shellbar__button fd-button fd-button--transparent\\"
+              >
+                <i class=\\"sap-icon--search\\"></i>
+              </button>
+            </div>
+            <div class=\\"fd-shellbar__search-field-helper\\"></div>
+          </div>
         </div>
+        <div
+          class=\\"fd-shellbar__action fd-shellbar__action--mobile fd-shellbar__action--shrink\\"
+        >
+          <button class=\\"fd-button fd-button--transparent\\">Cancel</button>
+        </div>
+      </div>
+
         <div class=\\"fd-shellbar__group fd-shellbar__group--actions\\">
             <div class=\\"fd-shellbar__action fd-shellbar__action--desktop\\">
                 <button
