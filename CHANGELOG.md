@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.35.0-rc.12](https://github.com/SAP/fundamental-styles/compare/v0.35.0-rc.11...v0.35.0-rc.12) (2024-04-18)
+
+### Bug Fixes
+
+-   **styles:** add an option to have an icon, text and input on same level in Menu item [ci visual] ([#5311](https://github.com/SAP/fundamental-styles/issues/5311)) ([f469234](https://github.com/SAP/fundamental-styles/commit/f469234fd91f8b7d49a60198398a816e0b8bd53e))
+
 # [0.35.0-rc.11](https://github.com/SAP/fundamental-styles/compare/v0.35.0-rc.10...v0.35.0-rc.11) (2024-04-17)
 
 ### Bug Fixes
