@@ -21,17 +21,27 @@ const storiesToInclude = () => {
 const includedStories = storiesToInclude();
 const includedPackages = `(${storybookPackages})`;
 const staticDirs = ['static/', '../node_modules/@sap-theming'];
-const storybookAddons = ['@storybook/addon-actions', '@storybook/addon-links', '@storybook/addon-a11y', '@storybook/addon-viewport/register', {
-    name: '@storybook/addon-docs',
-    options: {
-        transcludeMarkdown: true,
-        mdxPluginOptions: {
-            mdxCompileOptions: {
-                remarkPlugins: [remarkGfm],
+const storybookAddons = [
+    '@storybook/addon-actions',
+    '@storybook/addon-links',
+    '@storybook/addon-a11y',
+    '@storybook/addon-viewport/register',
+    {
+        name: '@storybook/addon-docs',
+        options: {
+            transcludeMarkdown: true,
+            mdxPluginOptions: {
+                mdxCompileOptions: {
+                    remarkPlugins: [remarkGfm],
+                },
             },
-        },
-    }
-}, '@storybook/addon-toolbars', '@storybook/addon-controls', './custom/addons/theme-switcher/register'];
+        }
+    },
+    '@storybook/addon-toolbars',
+    '@storybook/addon-controls',
+    './custom/addons/theme-switcher/register',
+    '@chromatic-com/storybook'
+];
 const config: StorybookConfig = {
     stories: ['../stories/docs/introduction.stories.ts', '../stories/docs/compact-docs.stories.ts', `../packages/@${includedPackages}/**/*.@${includedStories}.@(ts|tsx|js|jsx)`, `../stories/**/*.@${includedStories}.@(ts|tsx|js|jsx)`],
     staticDirs: staticDirs,
