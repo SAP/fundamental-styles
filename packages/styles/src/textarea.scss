@@ -24,10 +24,7 @@ $block: #{$fd-namespace}-textarea;
   cursor: text;
 
   &[readonly],
-  &.is-readonly {
-    box-shadow: none;
-    color: var(--sapField_TextColor);
-    font-size: var(--sapFontSmallSize);
+  &.is-readonly {    
     background: var(--sapField_ReadOnly_Background);
     border-radius: var(--sapField_BorderCornerRadius);
     border: var(--sapField_BorderWidth) dashed var(--sapField_ReadOnly_BorderColor);
@@ -67,9 +64,11 @@ $block: #{$fd-namespace}-textarea;
     @include fd-ellipsis();
 
     color: var(--sapContent_LabelColor);
-    padding: 0.125rem 0.125rem 0.5rem;
+    font-size: var(--sapFontSmallSize);
+    padding-block: 0.375rem 0.5rem;
+    padding-inline: 0.125rem;
     text-align: end;
-
+    
     @include fd-disabled() {
       display: none;
     }
