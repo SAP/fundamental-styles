@@ -118,7 +118,7 @@
     "postcss-banner": "4.0.1",
     "postcss-cli": "9.1.0",
     "postcss-import": "14.1.0",
-    "postcss-normalize-charset": "4.0.1",
+    "postcss-normalize-charset": "7.0.0",
     "postcss-scss": "4.0.9",
     "prettier": "^3.2.5",
     "react": "18.2.0",
