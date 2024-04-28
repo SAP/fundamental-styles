@@ -80,7 +80,7 @@
     "@types/react": "18.2.24",
     "@types/react-dom": "18.2.9",
     "@typescript-eslint/eslint-plugin": "6.21.0",
-    "@typescript-eslint/parser": "6.21.0",
+    "@typescript-eslint/parser": "7.7.1",
     "autoprefixer": "10.4.19",
     "bundlesize": "0.18.2",
     "chromatic": "11.0.7",
