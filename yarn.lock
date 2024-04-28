@@ -10366,7 +10366,7 @@ __metadata:
     react-is: "npm:18.2.0"
     remark-gfm: "npm:3.0.1"
     sass: "npm:1.52.1"
-    semver: "npm:7.5.4"
+    semver: "npm:7.6.0"
     standard-version: "npm:9.3.2"
     start-server-and-test: "npm:1.14.0"
     storybook: "npm:^8.0.9"
