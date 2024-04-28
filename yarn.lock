@@ -10349,7 +10349,7 @@ __metadata:
     lerna: "npm:8.1.2"
     lint-staged: "npm:12.4.2"
     lodash: "npm:4.17.21"
-    markdown-to-jsx: "npm:7.1.2"
+    markdown-to-jsx: "npm:7.4.7"
     normalize.css: "npm:8.0.1"
     npm-run-all: "npm:4.1.5"
     nx: "npm:18.0.2"
@@ -13436,21 +13436,21 @@ __metadata:
   languageName: node
   linkType: hard
 
-"markdown-to-jsx@npm:7.1.2":
-  version: 7.1.2
-  resolution: "markdown-to-jsx@npm:7.1.2"
-  peerDependencies:
-    react: ">= 0.14.0"
-  checksum: 10/7e13c318795f374b858608e9574a3c93c3ee6b08cb207d7c191be06966fbc72462b94f3b5a3a050d5e93be9966ac60745390d37e55adc8cf42751e75ee07cb5c
-  languageName: node
-  linkType: hard
-
 "markdown-to-jsx@npm:7.3.2":
   version: 7.3.2
   resolution: "markdown-to-jsx@npm:7.3.2"
   peerDependencies:
     react: ">= 0.14.0"
   checksum: 10/5a7ca9d04dfe180ea32baac94b471678053843da0be941a84ff7570a26f3afd8876d3bcc8fec8ee8aa68d157615f293f87b93c1d0f64945181bc218d61ee4494
+  languageName: node
+  linkType: hard
+
+"markdown-to-jsx@npm:7.4.7":
+  version: 7.4.7
+  resolution: "markdown-to-jsx@npm:7.4.7"
+  peerDependencies:
+    react: ">= 0.14.0"
+  checksum: 10/d421f561a57256164564f4b4ac1c3439493f7b88d46ca8d1ed429e481a199a8756591e180d401654c0826ccabe9e76ce4fb97286a0b3c43a7a6346c735778b2b
   languageName: node
   linkType: hard
 
