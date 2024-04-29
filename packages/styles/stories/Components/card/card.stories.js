@@ -5,6 +5,9 @@ import analyticalCardExampleHtml from "./analytical-card.example.html?raw";
 import cardAnatomyExampleHtml from "./card-anatomy.example.html?raw";
 import extendedHeaderExampleHtml from "./extended-header.example.html?raw";
 import numericHeaderExampleHtml from "./numeric-header.example.html?raw";
+import cardMediaExampleHtml from "./card-media.example.html?raw";
+import cardInteractionStatesExampleHtml from "./card-interaction-states.example.html?raw";
+import cardEmptyStateExampleHtml from "./card-empty-state.example.html?raw";
 
 import '../../../src/button.scss';
 import '../../../src/avatar.scss';
@@ -19,11 +22,12 @@ import '../../../src/link.scss';
 import '../../../src/icon.scss';
 import '../../../src/form-label.scss';
 import '../../../src/rating-indicator.scss';
+import '../../../src/illustrated-message.scss';
 export default {
   title: 'Components/Card',
   parameters: {
-    description: `The Card is a container that consists of a <b>header</b>, a <b>content</b> and a <b>footer</b> area. 
-    It takes the width of its parent. The <b>header</b> could be placed either above or below the <b>content</b> and is not separated with a line. The <b>footer</b> area is optional.
+    description: `The Card is a container that consists of a <b>Header</b>, <b>Extended Header</b>, <b>Numeric Content</b>, <b>Content</b> and <b>Footer area</b>. 
+    It takes the width of its parent. An additional Media Block is optional. The Header could be placed either above or below the Content and is not separated with a line. All building blocks are optional. 
 
 **Cards can display different types of content, such as:**
 
@@ -37,20 +41,21 @@ export default {
 Card sizes vary depending on the layout, and they are not editable. A card can focus on either a single object or topic, or on a group of objects. Several cards can reference the same application, but the information should be distinct from one card to another.
 
 ##Card anatomy
+
 - <b>header</b> (optional): the card header is a flexible combination of 3 block areas: main header, numeric header and extended header. The header displays a mandatory title, indicating what the card is about and functions as a navigation control that directs the user to the parent app.
   - <b>main header</b>: the main card header block shows the basic information of the card. It can contain <b>avatar</b> (optional), <b>title</b>, <b>subtitle</b> (optional), <b>counter</b> (optional) and/or <b>button</b> (optional).
   - <b>extended header</b>: the extended header is a flexible block to hold various other components, like time stamp, rating, tags, label/value, long text, numeric values, etc. The components can be arranged in left column or right column, each column is suggested to have maximum 3 lines for placing the components.
   - <b>numeric header</b>: the numeric header block is designed for displaying numeric information. It consumes Numeric Content (Horizon) and can show additional qualifying information and side indicators, if required. 
 
+- <b>badge</b> (optional): The Badge for Cards can contain Icon and Text, Text only or Icon only. There are no interaction states on Badge for Cards. Badge on Cards consumes the <b>Inverted Object Status/Tag</b> with some modifications. A Badge can only expand to the max width of the card that it is applied to. Text on it will not wrap, but truncate. 
 - <b>content</b> (main): the content area is reserved for application content.
     
 - <b>footer</b> (optional): the footer displays a list of actions that can be performed on the card. When link is too long, or there is no more place for actions, overflow button should appear.
 
 `,
-    tags: ['f3', 'a11y', 'theme', 'development']
+    tags: ['development']
   }
 };
-
 
 export const CardAnatomy = () => cardAnatomyExampleHtml;
 CardAnatomy.storyName = 'Standard card | Main Header';
@@ -71,6 +76,9 @@ For non-interactive main header add the <code>.fd-card__header-main--non-interac
   }
 };
 
+export const CardInteractionStates = () => cardInteractionStatesExampleHtml;
+CardInteractionStates.storyName = 'Interaction States on Cards';
+
 export const ExtendedHeader = () => extendedHeaderExampleHtml;
 ExtendedHeader.parameters = {
   docs: {
@@ -90,6 +98,48 @@ NumericHeader.parameters = {
    description: {
       story: `The numeric header block is designed for displaying numeric information.
 `
+    }
+  }
+};
+
+export const CardMedia = () => cardMediaExampleHtml;
+CardMedia.storyName = 'Media on Cards';
+CardMedia.parameters = {
+  docs: {
+   description: {
+      story: `The Media Block is flexible in height but fixed in width to the card size. The media can only contain an image / graphic OR solid color plus text.
+      The Image can fill the media container or can come with a padding of 1rem (results in 16px) top, left and right. Corner radius 0.5rem (results in 8px). For this option add the modifier class <code>.fd-card__media--with-padding</code> to <code>.fd-card__media</code> base class. <br><br>
+ 
+<h4>Title on Media</h4>
+A title on Media Block is possible if using a solid colored background an NO image! To ensure legibility and ACC standards in the Media Block / Banner, always make sure a sufficient contrast ratio is achieved. 
+Solid background colors can be bright <b>Shell Category Colors</b> or the lighter <b>Legend Background Colors</b>.
+
+- For <b>Shell Category Colors</b> add the <code>.fd-card__media--bg-shell-*</code> modifier to the <code>.fd-card__media</code> base class, where * can be a number from 1 to 16. For example: <code>fd-card__media--bg-shell-5</code>
+- For <b>Legend Background Colors</b> add the <code>.fd-card__media--bg-legend-*</code> modifier to the <code>.fd-card__media</code> base class, where * can be a number from 1 to 20. For example: <code>fd-card__media--bg-legend-7</code>
+
+
+<h4>Media as Banner</h4>
+To highlight certain content in a crisp and highly visual way, the Media Block offers the flexibility to be designed as a stand-alone banner. Use the <code>.fd-card--banner</code> modifier class to achieve this type of Card. <br>
+When the Card is used as a banner, the solid background can be applied on the whole media container or on the content container, in cases where it's used together with an image or as an overlay.
+
+To achieve a banner with a solid background with no image use the <code>.fd-card__media--bg-shell-*</code> or <code>.fd-card__media--bg-legend-*</code> modifer with the <code>.fd-card__media</code> base class.
+
+If you want to apply background on the content container when it's used with an image, use the <code>.fd-card__media-content-container--bg-shell-*</code> or <code>.fd-card__media-content-container--bg-legend-*</code> modifer with the <code>.fd-card__media-content-container</code> base class.
+
+The content container can be displayed as an overlay in case of using an image / a graphic behind. Use the modifier class <code>.fd-card__media-content-container--overlay</code> with the <code>.fd-card__media-content-container</code> base class.
+
+
+`
+    }
+  }
+};
+
+export const CardEmptyState = () => cardEmptyStateExampleHtml;
+CardEmptyState.storyName = 'Empty State';
+CardEmptyState.parameters = {
+  docs: {
+   description: {
+      story: `Use Illustrated Messages component inside the Card content to represent an empty state. The content container has 1rem spacing.`
     }
   }
 };
