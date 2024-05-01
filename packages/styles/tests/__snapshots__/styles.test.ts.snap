@@ -11762,13 +11762,13 @@ exports[`Check stories > Components/Calendar > Story Years > Should match snapsh
 "
 `;
 
-exports[`Check stories > Components/Card > Story AnalyticalCard > Should match snapshot 1`] = `
+exports[`Check stories > Components/Card/Card > Story AnalyticalCard > Should match snapshot 1`] = `
 "<div style=\\"display:flex; justify-content:space-around; flex-wrap: wrap\\">
     <div style=\\"width: 300px; height: 400px; margin: 1rem;\\">
-        <div class=\\"fd-card fd-card--analytical\\" role=\\"region\\" aria-label=\\"Analytical Card Example 1\\">
-            <div class=\\"fd-card__header\\" role=\\"group\\" aria-roledescription=\\"Card Header\\" aria-labelledby=\\"analytical-card-title-1\\">
+        <div class=\\"fd-card fd-card--analytical\\" role=\\"region\\" aria-labelledby=\\"analytical-card-title-1\\" aria-roledescription=\\"Card\\">
+            <div class=\\"fd-card__header\\" role=\\"group\\" aria-roledescription=\\"Card Header\\">
                 <div class=\\"fd-card__header-main\\">
-                    <div class=\\"fd-card__header-main-container\\" role=\\"button\\" tabindex=\\"0\\">
+                    <div class=\\"fd-card__header-main-container\\">
                         <div class=\\"fd-card__header-text\\">
                             <div class=\\"fd-card__title-area\\">
                                 <div class=\\"fd-card__title\\" id=\\"analytical-card-title-1\\" role=\\"heading\\" aria-level=\\"3\\">Card Title</div>
@@ -11811,10 +11811,10 @@ exports[`Check stories > Components/Card > Story AnalyticalCard > Should match s
     </div>
 
     <div style=\\"width: 700px; height: 400px; margin: 1rem;\\">
-        <div class=\\"fd-card fd-card--analytical\\" role=\\"region\\" aria-label=\\"Analytical Card Example 2\\">
-            <div class=\\"fd-card__header\\" role=\\"group\\" aria-roledescription=\\"Card Header\\" aria-labelledby=\\"analytical-card-title-2\\">
+        <div class=\\"fd-card fd-card--analytical\\" role=\\"region\\" aria-labelledby=\\"analytical-card-title-2\\" aria-roledescription=\\"Card\\">
+            <div class=\\"fd-card__header\\" role=\\"group\\" aria-roledescription=\\"Card Header\\">
                 <div class=\\"fd-card__header-main\\">
-                    <div class=\\"fd-card__header-main-container\\" role=\\"button\\" tabindex=\\"0\\">
+                    <div class=\\"fd-card__header-main-container\\">
                         <div class=\\"fd-card__header-text\\">
                             <div class=\\"fd-card__title-area\\">
                                 <div class=\\"fd-card__title\\" id=\\"analytical-card-title-2\\" role=\\"heading\\" aria-level=\\"3\\">Card Title With a Very Long Text ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</div>
@@ -11864,13 +11864,13 @@ exports[`Check stories > Components/Card > Story AnalyticalCard > Should match s
 "
 `;
 
-exports[`Check stories > Components/Card > Story CardAnatomy > Should match snapshot 1`] = `
+exports[`Check stories > Components/Card/Card > Story CardAnatomy > Should match snapshot 1`] = `
 "<div style=\\"display:flex; justify-content:space-around; flex-wrap: wrap\\">
     <div style=\\"width: 300px; height: 400px; margin: 1rem;\\">
-        <div class=\\"fd-card\\" role=\\"region\\" aria-label=\\"Card Example 1\\">
-            <div class=\\"fd-card__header fd-card__header--interactive\\" role=\\"group\\" aria-roledescription=\\"Card Header\\" aria-labelledby=\\"card-title-a-1\\">
+        <div class=\\"fd-card\\" role=\\"region\\" aria-roledescription=\\"Card\\" aria-labelledby=\\"card-title-1d\\">
+            <div class=\\"fd-card__header\\" role=\\"group\\" aria-roledescription=\\"Card Header\\">
                 <div class=\\"fd-card__header-main\\">
-                    <div class=\\"fd-card__header-main-container\\" role=\\"button\\" tabindex=\\"0\\">
+                    <div class=\\"fd-card__header-main-container\\">
                         <span
                             class=\\"fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--thumbnail fd-card__avatar\\"
                             style=\\"background-image: url('/assets/images/backgrounds/city.jpg')\\"
@@ -11879,7 +11879,7 @@ exports[`Check stories > Components/Card > Story CardAnatomy > Should match snap
                         </span>
                         <div class=\\"fd-card__header-text\\">
                             <div class=\\"fd-card__title-area\\">
-                                <div class=\\"fd-card__title\\" id=\\"card-title-a-1\\" role=\\"heading\\" aria-level=\\"3\\">Card Title</div>
+                                <div class=\\"fd-card__title\\" id=\\"card-title-1d\\" role=\\"heading\\" aria-level=\\"3\\">Non-interactive header</div>
                             </div>
                             <div class=\\"fd-card__subtitle-area\\">
                                 <div class=\\"fd-card__subtitle\\">Card Subtitle</div>
@@ -11896,6 +11896,7 @@ exports[`Check stories > Components/Card > Story CardAnatomy > Should match snap
             </div>
 
             <div class=\\"fd-card__content\\" role=\\"group\\" aria-roledescription=\\"Card content\\"></div>
+            
             <div class=\\"fd-card__footer\\">
                 <div class=\\"fd-card__footer-actions\\">
                     <button class=\\"fd-button fd-button--positive\\">
@@ -11910,10 +11911,10 @@ exports[`Check stories > Components/Card > Story CardAnatomy > Should match snap
     </div>
 
     <div style=\\"width: 300px; height: 400px; margin: 1rem;\\">
-        <div class=\\"fd-card\\" role=\\"region\\" aria-label=\\"Card Example All Headers\\">
-            <div class=\\"fd-card__header fd-card__header--interactive\\" role=\\"group\\" aria-roledescription=\\"Card Header\\" aria-labelledby=\\"card-title-a-1a\\">
+        <div class=\\"fd-card\\" role=\\"region\\" aria-roledescription=\\"Card\\" aria-labelledby=\\"card-title-2d\\">
+            <div class=\\"fd-card__header fd-card__header--interactive\\" role=\\"group\\" aria-roledescription=\\"Card Header\\">
                 <div class=\\"fd-card__header-main\\">
-                    <div class=\\"fd-card__header-main-container\\" role=\\"button\\" tabindex=\\"0\\">
+                    <div class=\\"fd-card__header-main-container\\" role=\\"button\\" tabindex=\\"0\\" aria-description=\\"Activate for action/navigation\\" aria-label=\\"Activate for action/navigation\\" title=\\"Activate for action/navigation\\">
                         <span
                             class=\\"fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--thumbnail fd-card__avatar\\"
                             style=\\"background-image: url('/assets/images/backgrounds/city.jpg')\\"
@@ -11922,7 +11923,7 @@ exports[`Check stories > Components/Card > Story CardAnatomy > Should match snap
                         </span>
                         <div class=\\"fd-card__header-text\\">
                             <div class=\\"fd-card__title-area\\">
-                                <div class=\\"fd-card__title\\" id=\\"card-title-a-1a\\" role=\\"heading\\" aria-level=\\"3\\">Card Title</div>
+                                <div class=\\"fd-card__title\\" id=\\"card-title-2d\\" role=\\"heading\\" aria-level=\\"3\\">Interactive header</div>
                             </div>
                             <div class=\\"fd-card__subtitle-area\\">
                                 <div class=\\"fd-card__subtitle\\">Card Subtitle</div>
@@ -11936,7 +11937,83 @@ exports[`Check stories > Components/Card > Story CardAnatomy > Should match snap
                         <span class=\\"fd-object-status fd-card__counter\\">1 of 3</span>
                     </div>
                 </div>
+            </div>
+    
+            <div class=\\"fd-card__content\\" role=\\"group\\" aria-roledescription=\\"Card content\\"></div>
+            
+            <div class=\\"fd-card__footer\\">
+                <div class=\\"fd-card__footer-actions\\">
+                    <button class=\\"fd-button fd-button--positive\\">
+                        Button
+                    </button>
+                    <button class=\\"fd-button fd-button--negative\\">
+                        Button
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
 
+    <div style=\\"width: 300px; height: 400px; margin: 1rem;\\">
+        <div class=\\"fd-card\\" role=\\"region\\" aria-roledescription=\\"Card\\" aria-labelledby=\\"card-title-4d\\">
+            <span class=\\"fd-object-status fd-object-status--inverted fd-object-status--indication-6 fd-card__badge\\">
+                <span class=\\"fd-object-status__text\\">badge</span>
+            </span>
+            <div class=\\"fd-card__header\\" role=\\"group\\" aria-roledescription=\\"Card Header\\">
+                <div class=\\"fd-card__header-main\\">
+                    <div class=\\"fd-card__header-main-container\\">
+                        <span
+                            class=\\"fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--thumbnail fd-card__avatar\\"
+                            style=\\"background-image: url('/assets/images/backgrounds/city.jpg')\\"
+                            role=\\"img\\"
+                            aria-label=\\"John Doe\\">
+                        </span>
+                        <div class=\\"fd-card__header-text\\">
+                            <div class=\\"fd-card__title-area\\">
+                                <div class=\\"fd-card__title\\" id=\\"card-title-4d\\" role=\\"heading\\" aria-level=\\"3\\">Card title that truncates lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, enim. Aliquam magnam vel culpa eos explicabo. Labore laboriosam omnis explicabo natus doloremque enim, voluptatum consequuntur excepturi, reprehenderit similique, repellendus commodi.</div>
+                            </div>
+                            <div class=\\"fd-card__subtitle-area\\">
+                                <div class=\\"fd-card__subtitle\\">Card subtitle that truncates lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, enim. Aliquam magnam vel culpa eos explicabo. Labore laboriosam omnis explicabo natus doloremque enim, voluptatum consequuntur excepturi, reprehenderit similique, repellendus commodi.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class=\\"fd-card__header-main-actions\\">
+                        <span class=\\"fd-object-status fd-card__counter\\">1 of 3</span>
+                    </div>
+                </div>
+            </div>
+    
+            <div class=\\"fd-card__content\\" role=\\"group\\" aria-roledescription=\\"Card content\\"></div>
+            <div class=\\"fd-card__footer\\">
+                <a class=\\"fd-link fd-card__footer-link\\" href=\\"#\\"><span class=\\"fd-link__content\\">Footer with a link</span></a>
+            </div>
+        </div>
+    </div>
+
+    <div style=\\"width: 300px; height: 400px; margin: 1rem;\\">
+        <div class=\\"fd-card\\" role=\\"region\\" aria-roledescription=\\"Card\\" aria-labelledby=\\"card-title-5d\\">
+            <div class=\\"fd-card__header\\" role=\\"group\\" aria-roledescription=\\"Card Header\\">
+                <div class=\\"fd-card__header-main\\">
+                    <div class=\\"fd-card__header-main-container\\">
+                        <span
+                            class=\\"fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--thumbnail fd-card__avatar\\"
+                            style=\\"background-image: url('/assets/images/backgrounds/city.jpg')\\"
+                            role=\\"img\\"
+                            aria-label=\\"John Doe\\">
+                        </span>
+                        <div class=\\"fd-card__header-text\\">
+                            <div class=\\"fd-card__title-area\\">
+                                <div class=\\"fd-card__title\\" id=\\"card-title-5d\\" role=\\"heading\\" aria-level=\\"3\\">Card with main, extended and numeric headers</div>
+                            </div>
+                            <div class=\\"fd-card__subtitle-area\\">
+                                <div class=\\"fd-card__subtitle\\">Card subtitle</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class=\\"fd-card__header-main-actions\\">
+                        <span class=\\"fd-object-status fd-card__counter\\">1 of 3</span>
+                    </div>
+                </div>
                 <div class=\\"fd-card__header-extended\\" role=\\"group\\" aria-roledescription=\\"Extended content\\">
                     <div class=\\"fd-card__header-column\\">
                         <div class=\\"fd-card__header-row\\">
@@ -11952,7 +12029,6 @@ exports[`Check stories > Components/Card > Story CardAnatomy > Should match snap
                         </div>
                     </div>
                 </div>
-
                 <div class=\\"fd-card__header-numeric\\" role=\\"group\\" aria-roledescription=\\"Numeric content\\">
                     <div class=\\"fd-card__header-row\\">
                         <div class=\\"fd-card__numeric-container\\">
@@ -11962,7 +12038,7 @@ exports[`Check stories > Components/Card > Story CardAnatomy > Should match snap
                                 </div>
                                 <div class=\\"fd-numeric-content__scale-container\\">
                                     <div class=\\"fd-numeric-content__scale\\">
-                                        <i class=\\"fd-numeric-content__scale-arrow sap-icon--down\\" aria-label=\\"decrease\\"></i>
+                                        <i class=\\"fd-numeric-content__scale-arrow sap-icon--down\\" role=\\"presentation\\"></i>
                                         <span class=\\"fd-numeric-content__scale-text\\">M</span>
                                     </div>
                                 </div>
@@ -11982,183 +12058,33 @@ exports[`Check stories > Components/Card > Story CardAnatomy > Should match snap
                     </div>
                 </div>
             </div>
-
-            <div class=\\"fd-card__content\\" role=\\"group\\" aria-roledescription=\\"Card content\\"></div>
-            <div class=\\"fd-card__footer\\">
-                <div class=\\"fd-card__footer-actions\\">
-                    <button class=\\"fd-button fd-button--positive\\">
-                        Button
-                    </button>
-                    <button class=\\"fd-button fd-button--negative\\">
-                        Button
-                    </button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div style=\\"width: 300px; height: 400px; margin: 1rem;\\">
-        <div class=\\"fd-card\\" role=\\"region\\" aria-label=\\"Card Example 2\\">
-            <div class=\\"fd-card__header fd-card__header--interactive\\" role=\\"group\\" aria-roledescription=\\"Card Header\\" aria-labelledby=\\"card-title-a-2\\">
-                <div class=\\"fd-card__header-main\\">
-                    <div class=\\"fd-card__header-main-container\\" role=\\"button\\" tabindex=\\"0\\">
-                        <span
-                            class=\\"fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--thumbnail fd-card__avatar\\"
-                            style=\\"background-image: url('/assets/images/backgrounds/city.jpg')\\"
-                            role=\\"img\\"
-                            aria-label=\\"John Doe\\">
-                        </span>
-                        <div class=\\"fd-card__header-text\\">
-                            <div class=\\"fd-card__title-area\\">
-                                <div class=\\"fd-card__title\\" id=\\"card-title-a-2\\" role=\\"heading\\" aria-level=\\"3\\">Card Title</div>
-                            </div>
-                        </div>
-                    </div>
-                </div> 
-            </div>
-            <div class=\\"fd-card__content\\" role=\\"group\\" aria-roledescription=\\"Card content\\"></div>
-            <div class=\\"fd-card__footer\\">
-                <a class=\\"fd-link fd-card__footer-link\\" href=\\"#\\"><span class=\\"fd-link__content\\">Footer with a link</span></a>
-            </div>
-        </div>
-    </div>
-
-    <div style=\\"width: 300px; height: 400px; margin: 1rem;\\">
-        <div class=\\"fd-card\\" role=\\"region\\" aria-label=\\"Card Example 3\\">
-            <div class=\\"fd-card__header fd-card__header--interactive\\" role=\\"group\\" aria-roledescription=\\"Card Header\\" aria-labelledby=\\"card-title-a-3\\">
-                <div class=\\"fd-card__header-main\\">
-                    <div class=\\"fd-card__header-main-container\\" role=\\"button\\" tabindex=\\"0\\">
-                        <span
-                            class=\\"fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--thumbnail fd-card__avatar\\"
-                            style=\\"background-image: url('/assets/images/backgrounds/city.jpg')\\"
-                            role=\\"img\\"
-                            aria-label=\\"John Doe\\">
-                        </span>
-                        <div class=\\"fd-card__header-text\\">
-                            <div class=\\"fd-card__title-area\\">
-                                <div class=\\"fd-card__title\\" id=\\"card-title-a-3\\" role=\\"heading\\" aria-level=\\"3\\">Card Title</div>
-                            </div>
-                        </div>
-                    </div>
-                </div> 
-            </div>
-            <div class=\\"fd-card__content\\" role=\\"group\\" aria-roledescription=\\"Card content\\"></div>
-            <div class=\\"fd-card__footer\\">
-                <a class=\\"fd-link fd-card__footer-link\\" href=\\"#\\"><span class=\\"fd-link__content\\">Footer with a long link Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium</span></a>
-                <button class=\\"fd-button fd-button--transparent\\">
-                    <i class=\\"sap-icon sap-icon--overflow\\"></i>
-                </button>
-            </div>
-        </div>
-    </div>
-
-    <div style=\\"width: 300px; height: 400px; margin: 1rem;\\">
-        <div class=\\"fd-card\\" role=\\"region\\" aria-label=\\"Card Example 4\\">
-            <div class=\\"fd-card__content\\" role=\\"group\\" aria-roledescription=\\"Card content\\"></div>
-            <div class=\\"fd-card__header fd-card__header--interactive\\" role=\\"group\\" aria-roledescription=\\"Card Header\\" aria-labelledby=\\"card-title-a-4\\">
-                <div class=\\"fd-card__header-main\\">
-                    <div class=\\"fd-card__header-main-container\\" role=\\"button\\" tabindex=\\"0\\">
-                        <span
-                            class=\\"fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--thumbnail fd-card__avatar\\"
-                            style=\\"background-image: url('/assets/images/backgrounds/city.jpg')\\"
-                            role=\\"img\\"
-                            aria-label=\\"John Doe\\">
-                        </span>
-                        <div class=\\"fd-card__header-text\\">
-                            <div class=\\"fd-card__title-area\\">
-                                <div class=\\"fd-card__title\\" id=\\"card-title-a-4\\" role=\\"heading\\" aria-level=\\"3\\">Card Title</div>
-                            </div>
-                            <div class=\\"fd-card__subtitle-area\\">
-                                <div class=\\"fd-card__subtitle\\">Card Subtitle</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class=\\"fd-card__header-main-actions\\">
-                        <span class=\\"fd-object-status fd-card__counter\\">1 of 3</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div style=\\"width: 300px; height: 400px; margin: 1rem;\\">
-        <div class=\\"fd-card\\" role=\\"region\\" aria-label=\\"Card Example 5\\">
-            <div class=\\"fd-card__header fd-card__header--interactive\\" role=\\"group\\" aria-roledescription=\\"Card Header\\" aria-labelledby=\\"card-title-a-5\\">
-                <div class=\\"fd-card__header-main\\">
-                    <div class=\\"fd-card__header-main-container\\" role=\\"button\\" tabindex=\\"0\\">
-                        <span
-                            class=\\"fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--thumbnail fd-card__avatar\\"
-                            style=\\"background-image: url('/assets/images/backgrounds/city.jpg')\\"
-                            role=\\"img\\"
-                            aria-label=\\"John Doe\\">
-                        </span>
-                        <div class=\\"fd-card__header-text\\">
-                            <div class=\\"fd-card__title-area\\">
-                                <div class=\\"fd-card__title\\" id=\\"card-title-a-5\\" role=\\"heading\\" aria-level=\\"3\\">Card Title With a Very Long Text ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</div>
-                            </div>
-                            <div class=\\"fd-card__subtitle-area\\">
-                                <div class=\\"fd-card__subtitle\\">Card Subtitle With a Very Long Text ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class=\\"fd-card__header-main-actions\\">
-                        <span class=\\"fd-object-status fd-card__counter\\">1 of 3</span>
-                    </div>
-                </div>
-            </div>
             <div class=\\"fd-card__content\\" role=\\"group\\" aria-roledescription=\\"Card content\\"></div>
         </div>
     </div>
 
     <div style=\\"width: 300px; height: 400px; margin: 1rem;\\">
-        <div class=\\"fd-card\\" role=\\"region\\" aria-label=\\"Card Example 6\\">
-            <div class=\\"fd-card__header fd-card__header--interactive\\" role=\\"group\\" aria-roledescription=\\"Card Header\\" aria-labelledby=\\"card-title-a-6\\">
-                <div class=\\"fd-card__header-main\\">
-                    <div class=\\"fd-card__header-main-container\\" role=\\"button\\" tabindex=\\"0\\">
-                        <span
-                            class=\\"fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--thumbnail fd-card__avatar\\"
-                            style=\\"background-image: url('/assets/images/backgrounds/city.jpg')\\"
-                            role=\\"img\\"
-                            aria-label=\\"John Doe\\">
-                        </span>
-                        <div class=\\"fd-card__header-text\\">
-                            <div class=\\"fd-card__title-area\\">
-                                <div class=\\"fd-card__title\\" id=\\"card-title-a-6\\" role=\\"heading\\" aria-level=\\"3\\">Card Title</div>
-                            </div>
-                            <div class=\\"fd-card__subtitle-area\\">
-                                <div class=\\"fd-card__subtitle\\">Card Subtitle</div>
-                            </div>
-                        </div>
-                    </div>       
-                    <div class=\\"fd-card__header-main-actions\\">
-                        <span class=\\"fd-object-status fd-card__counter\\">1 of 3</span>
-                    </div>
-                </div>
-            </div>
-            <div class=\\"fd-card__content\\" role=\\"group\\" aria-roledescription=\\"Card content\\"></div>
-        </div>
-    </div>
-
-    <div style=\\"width: 300px; height: 400px; margin: 1rem;\\">
-        <div class=\\"fd-card\\" role=\\"region\\" aria-label=\\"Card Example 7\\">
+        <div class=\\"fd-card\\" role=\\"region\\" aria-roledescription=\\"Card\\" aria-labelledby=\\"card-title-6d\\">
             <span class=\\"fd-object-status fd-object-status--inverted fd-object-status--indication-3 fd-card__badge\\">
                 <i class=\\"fd-object-status__icon sap-icon--example\\" role=\\"presentation\\"></i>
                 <span class=\\"fd-object-status__text\\">badge lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae distinctio natus aperiam doloremque beatae quas, fuga sequi iste officia similique sunt, iusto ad obcaecati voluptatum. Commodi perferendis assumenda modi laudantium.</span>
             </span>
-            <div class=\\"fd-card__header fd-card__header--interactive\\" role=\\"group\\" aria-roledescription=\\"Card Header\\" aria-labelledby=\\"card-title-a-7\\">
+            <div class=\\"fd-card__header\\" role=\\"group\\" aria-roledescription=\\"Card Header\\">
                 <div class=\\"fd-card__header-main\\">
-                    <div class=\\"fd-card__header-main-container\\" role=\\"button\\" tabindex=\\"0\\">
+                    <div class=\\"fd-card__header-main-container\\">
+                        <span
+                            class=\\"fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--thumbnail fd-card__avatar\\"
+                            style=\\"background-image: url('/assets/images/backgrounds/city.jpg')\\"
+                            role=\\"img\\"
+                            aria-label=\\"John Doe\\">
+                        </span>
                         <div class=\\"fd-card__header-text\\">
                             <div class=\\"fd-card__title-area\\">
-                                <div class=\\"fd-card__title\\" id=\\"card-title-a-7\\" role=\\"heading\\" aria-level=\\"3\\">Card Title</div>
+                                <div class=\\"fd-card__title\\" id=\\"card-title-6d\\" role=\\"heading\\" aria-level=\\"3\\">Card with Badge</div>
                             </div>
                             <div class=\\"fd-card__subtitle-area\\">
-                                <div class=\\"fd-card__subtitle\\">Card Subtitle</div>
+                                <div class=\\"fd-card__subtitle\\">Badge text truncates</div>
                             </div>
                         </div>
-                    </div>       
-                    <div class=\\"fd-card__header-main-actions\\">
-                        <span class=\\"fd-object-status fd-card__counter\\">1 of 3</span>
                     </div>
                 </div>
             </div>
@@ -12167,75 +12093,28 @@ exports[`Check stories > Components/Card > Story CardAnatomy > Should match snap
     </div>
 
     <div style=\\"width: 300px; height: 400px; margin: 1rem;\\">
-        <div class=\\"fd-card\\" role=\\"region\\" aria-label=\\"Card Example 8\\">
-            <span class=\\"fd-object-status fd-object-status--inverted fd-object-status--indication-1b fd-card__badge\\">
-                <i class=\\"fd-object-status__icon sap-icon--example\\" role=\\"presentation\\"></i>
-                <span class=\\"fd-object-status__text\\">badge</span>
-            </span>
-            <div class=\\"fd-card__content\\" role=\\"group\\" aria-roledescription=\\"Card content\\"></div>
-            <div class=\\"fd-card__header fd-card__header--interactive\\" role=\\"group\\" aria-roledescription=\\"Card Header\\" aria-labelledby=\\"card-title-a-8\\">
-                <div class=\\"fd-card__header-main\\">
-                    <div class=\\"fd-card__header-main-container\\" role=\\"button\\" tabindex=\\"0\\">
-                        <div class=\\"fd-card__header-text\\">
-                            <div class=\\"fd-card__title-area\\">
-                                <div class=\\"fd-card__title\\" id=\\"card-title-a-8\\" role=\\"heading\\" aria-level=\\"3\\">Card Title</div>
-                            </div>
-                            <div class=\\"fd-card__subtitle-area\\">
-                                <div class=\\"fd-card__subtitle\\">Card Subtitle</div>
-                            </div>
-                        </div>
-                    </div>       
-                    <div class=\\"fd-card__header-main-actions\\">
-                        <span class=\\"fd-object-status fd-object-status--critical fd-card__counter\\">1 of 3</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div style=\\"width: 300px; height: 400px; margin: 1rem;\\">
-        <div class=\\"fd-card\\" role=\\"region\\" aria-label=\\"Card Example 9\\">
-            <span class=\\"fd-object-status fd-object-status--inverted fd-card__badge\\">
-                <i class=\\"fd-object-status__icon sap-icon--example\\" role=\\"presentation\\"></i>
-            </span>
-            <div class=\\"fd-card__header fd-card__header--interactive\\" role=\\"group\\" aria-roledescription=\\"Card Header\\" aria-labelledby=\\"card-title-a-9\\">
-                <div class=\\"fd-card__header-main\\">
-                    <div class=\\"fd-card__header-main-container\\" role=\\"button\\" tabindex=\\"0\\">
-                        <div class=\\"fd-card__header-text\\">
-                            <div class=\\"fd-card__title-area\\">
-                                <div class=\\"fd-card__title\\" id=\\"card-title-a-9\\" role=\\"heading\\" aria-level=\\"3\\">Card Title With a Very Long Text ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</div>
-                            </div>
-                            <div class=\\"fd-card__subtitle-area\\">
-                                <div class=\\"fd-card__subtitle\\">Card Subtitle With a Very Long Text ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class=\\"fd-card__header-main-actions\\">
-                        <span class=\\"fd-object-status fd-card__counter\\">1 of 3</span>
-                    </div>
-                </div>
-            </div>
-            <div class=\\"fd-card__content\\" role=\\"group\\" aria-roledescription=\\"Card content\\"></div>
-        </div>
-    </div>
-
-    <div style=\\"width: 300px; height: 400px; margin: 1rem;\\">
-        <div class=\\"fd-card\\" role=\\"region\\" aria-label=\\"Card Example 10\\">
+        <div class=\\"fd-card\\" role=\\"region\\" aria-roledescription=\\"Card\\" aria-labelledby=\\"card-title-7d\\">
             <span class=\\"fd-object-status fd-object-status--inverted fd-object-status--indication-5b fd-card__badge\\">
                 <i class=\\"fd-object-status__icon sap-icon--example\\" role=\\"presentation\\"></i>
-                <span class=\\"fd-object-status__text\\">Updated content</span>
+                <span class=\\"fd-object-status__text\\">badge</span>
             </span>
-            <div class=\\"fd-card__header fd-card__header--interactive\\" role=\\"group\\" aria-roledescription=\\"Card Header\\" aria-labelledby=\\"card-title-a-10\\">
+            <div class=\\"fd-card__header\\" role=\\"group\\" aria-roledescription=\\"Card Header\\">
                 <div class=\\"fd-card__header-main\\">
-                    <div class=\\"fd-card__header-main-container\\" role=\\"button\\" tabindex=\\"0\\">
+                    <div class=\\"fd-card__header-main-container\\">
+                        <span
+                            class=\\"fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--thumbnail fd-card__avatar\\"
+                            style=\\"background-image: url('/assets/images/backgrounds/city.jpg')\\"
+                            role=\\"img\\"
+                            aria-label=\\"John Doe\\">
+                        </span>
                         <div class=\\"fd-card__header-text\\">
                             <div class=\\"fd-card__title-area\\">
-                                <div class=\\"fd-card__title\\" id=\\"card-title-a-10\\" role=\\"heading\\" aria-level=\\"3\\">Card Title</div>
+                                <div class=\\"fd-card__title\\" id=\\"card-title-7d\\" role=\\"heading\\" aria-level=\\"3\\">Card with Badge</div>
+                            </div>
+                            <div class=\\"fd-card__subtitle-area\\">
+                                <div class=\\"fd-card__subtitle\\">Badge with icon</div>
                             </div>
                         </div>
-                    </div>
-                    <div class=\\"fd-card__header-main-actions\\">
-                        <span class=\\"fd-object-status fd-card__counter\\">1 of 3</span>
                     </div>
                 </div>
             </div>
@@ -12243,29 +12122,20 @@ exports[`Check stories > Components/Card > Story CardAnatomy > Should match snap
         </div>
     </div>
 
-    <div style=\\"width: 300px; height: 400px; margin: 1rem;\\">
-        <div class=\\"fd-card\\" role=\\"region\\" aria-label=\\"Card Example 11\\">
-            <span class=\\"fd-object-status fd-object-status--inverted fd-object-status--indication-6 fd-card__badge\\">
-                <i class=\\"fd-object-status__icon sap-icon--example\\" role=\\"presentation\\"></i>
-                <span class=\\"fd-object-status__text\\">badge</span>
-            </span>
-            <div class=\\"fd-card__content\\" role=\\"group\\" aria-roledescription=\\"Card content\\"></div>
-        </div>
-    </div>
 </div>
 "
 `;
 
-exports[`Check stories > Components/Card > Story CardEmptyState > Should match snapshot 1`] = `
-"<div style=\\"display:flex; justify-content:space-around; flex-wrap: wrap\\">
-    <div style=\\" margin: 1rem;\\">
-        <div class=\\"fd-card\\" role=\\"region\\" aria-label=\\"Card Example 1\\">
-            <div class=\\"fd-card__header\\" role=\\"group\\" aria-roledescription=\\"Card Header\\" aria-labelledby=\\"card-title-1\\">
+exports[`Check stories > Components/Card/Card > Story CardEmptyState > Should match snapshot 1`] = `
+"<div style=\\"min-height: 600px;\\">
+    <div style=\\"width: 500px; height: 400px; margin: 1rem;\\">
+        <div class=\\"fd-card\\" role=\\"region\\" aria-roledescription=\\"Card\\" aria-labelledby=\\"card-title-1h\\">
+            <div class=\\"fd-card__header\\" role=\\"group\\" aria-roledescription=\\"Card Header\\">
                 <div class=\\"fd-card__header-main\\">
                     <div class=\\"fd-card__header-main-container\\">
                         <div class=\\"fd-card__header-text\\">
                             <div class=\\"fd-card__title-area\\">
-                                <div class=\\"fd-card__title\\" id=\\"card-title-1\\" role=\\"heading\\" aria-level=\\"3\\">Card Title</div>
+                                <div class=\\"fd-card__title\\" id=\\"card-title-1h\\" role=\\"heading\\" aria-level=\\"3\\">Card Title</div>
                             </div>
                             <div class=\\"fd-card__subtitle-area\\">
                                 <div class=\\"fd-card__subtitle\\">Card Subtitle</div>
@@ -12274,7 +12144,6 @@ exports[`Check stories > Components/Card > Story CardEmptyState > Should match s
                     </div>
                 </div>
             </div>
-
             <div class=\\"fd-card__content\\" role=\\"group\\" aria-roledescription=\\"Card content\\">
                 <div class=\\"fd-illustrated-message-container\\">
                     <figure class=\\"fd-illustrated-message\\">
@@ -12319,17 +12188,113 @@ exports[`Check stories > Components/Card > Story CardEmptyState > Should match s
 "
 `;
 
-exports[`Check stories > Components/Card > Story CardInteractionStates > Should match snapshot 1`] = `
-"<h4>Global Interaction - interactive Cards</h4>
-<p>If there are no additional interactions on the card header, a hover state on the whole card is possible and will lead to the header's destination. No interactive header is available in this case. <br>
-Apply the modifier class <code>.fd-card--interactive</code> for interactive Cards.
-</p>
+exports[`Check stories > Components/Card/Card > Story CardInteractiveButton > Should match snapshot 1`] = `
+"<div style=\\"display:flex; justify-content:space-around; flex-wrap: wrap\\">
+    <div style=\\"width: 300px; height: fit-content; margin: 1rem;\\">
+        <div class=\\"fd-card\\">
+            <div 
+                class=\\"fd-card__header fd-card__header--interactive\\" 
+                role=\\"group\\" 
+                title=\\"Activate for action/navigation\\"
+                aria-label=\\"Activate for action/navigation\\"
+                aria-roledescription=\\"Card Header\\">
+                
+                <div class=\\"fd-card__header-main\\">
+                    <div 
+                        tabindex=\\"0\\" 
+                        role=\\"button\\" 
+                        aria-labelledby=\\"card-title-1b\\" 
+                        class=\\"fd-card__header-main-container\\" 
+                        aria-description=\\"Activate for action/navigation\\">
+                        
+                        <span
+                            class=\\"fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--thumbnail fd-card__avatar\\"
+                            style=\\"background-image: url('/assets/images/backgrounds/city.jpg')\\"
+                            role=\\"img\\"
+                            aria-label=\\"John Doe\\">
+                        </span>
+                        <div class=\\"fd-card__header-text\\">
+                            <div class=\\"fd-card__title-area\\">
+                                <div class=\\"fd-card__title\\" id=\\"card-title-1b\\" role=\\"heading\\" aria-level=\\"3\\">Interactive header</div>
+                            </div>
+                            <div class=\\"fd-card__subtitle-area\\">
+                                <div class=\\"fd-card__subtitle\\">Card Subtitle</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div style=\\"width: 300px; height: fit-content; margin: 1rem;\\">
+        <div class=\\"fd-card\\">
+            
+            <div 
+                class=\\"fd-card__header fd-card__header--interactive\\" 
+                role=\\"group\\" 
+                title=\\"Activate for action/navigation\\"
+                aria-label=\\"Activate for action/navigation\\"
+                aria-roledescription=\\"Card Header\\">
+                
+                <div class=\\"fd-card__header-main\\">
+                    <div 
+                        tabindex=\\"0\\" 
+                        role=\\"button\\" 
+                        aria-labelledby=\\"card-title-2b\\" 
+                        class=\\"fd-card__header-main-container\\" 
+                        
+                        aria-description=\\"Activate for action/navigation\\">
+                        
+                        <span
+                            class=\\"fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--thumbnail fd-card__avatar\\"
+                            style=\\"background-image: url('/assets/images/backgrounds/city.jpg')\\"
+                            role=\\"img\\"
+                            aria-label=\\"John Doe\\">
+                        </span>
+                        <div class=\\"fd-card__header-text\\">
+                            <div class=\\"fd-card__title-area\\">
+                                <div class=\\"fd-card__title\\" id=\\"card-title-2b\\" role=\\"heading\\" aria-level=\\"3\\">Interactive header</div>
+                            </div>
+                            <div class=\\"fd-card__subtitle-area\\">
+                                <div class=\\"fd-card__subtitle\\">With nested button</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class=\\"fd-card__header-main-actions\\">
+                        <button class=\\"fd-button fd-button--transparent\\" aria-label=\\"overflow\\">
+                            <i class=\\"sap-icon--overflow\\"></i>
+                        </button>
+                        <span class=\\"fd-object-status fd-card__counter\\">1 of 3</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+"
+`;
+
+exports[`Check stories > Components/Card/Card > Story CardInteractiveListitem > Should match snapshot 1`] = `
+"<div role=\\"region\\" aria-label=\\"Interactive Cards and States\\">
+    <h2>Interactive Cards and States</h2>
+    <div 
+        role=\\"list\\" aria-roledescription=\\"Card Container\\" 
+        style=\\"display:flex; gap: 2rem; flex-wrap: wrap\\">
     
-   
-<div style=\\"display:flex; justify-content:space-around; flex-wrap: wrap\\">
-    <div style=\\"width: 300px; height: 400px; margin: 1rem;\\">
-        <div class=\\"fd-card fd-card--interactive\\" role=\\"region\\" aria-label=\\"Card Example 1\\" tabindex=\\"0\\">
-            <div class=\\"fd-card__header\\" role=\\"group\\" aria-roledescription=\\"Card Header\\" aria-labelledby=\\"card-title-1\\">
+        <div 
+            class=\\"fd-card fd-card--interactive\\" 
+            style=\\"width: 400px; min-width: 400px; max-width: 400px;\\"
+            role=\\"listitem\\"
+            tabindex=\\"0\\" 
+            aria-posinset=\\"1\\"
+            aria-setsize=\\"5\\"
+            aria-roledescription=\\"Card\\" 
+            aria-description=\\"Activate for action\\"
+            aria-labelledby=\\"card-title-1c\\">
+                
+            <div class=\\"fd-card__header\\" role=\\"group\\" aria-roledescription=\\"Card Header\\">
                 <div class=\\"fd-card__header-main\\">
                     <div class=\\"fd-card__header-main-container\\">
                         <span
@@ -12340,23 +12305,18 @@ Apply the modifier class <code>.fd-card--interactive</code> for interactive Card
                         </span>
                         <div class=\\"fd-card__header-text\\">
                             <div class=\\"fd-card__title-area\\">
-                                <div class=\\"fd-card__title\\" id=\\"card-title-1\\" role=\\"heading\\" aria-level=\\"3\\">Card Title</div>
+                                <div class=\\"fd-card__title\\" id=\\"card-title-1c\\" role=\\"heading\\" aria-level=\\"3\\">Normal State</div>
                             </div>
                             <div class=\\"fd-card__subtitle-area\\">
                                 <div class=\\"fd-card__subtitle\\">Card Subtitle</div>
                             </div>
                         </div>
                     </div>
-                    <div class=\\"fd-card__header-main-actions\\">
-                        <button class=\\"fd-button fd-button--transparent\\" aria-label=\\"overflow\\">
-                            <i class=\\"sap-icon--overflow\\"></i>
-                        </button>
-                        <span class=\\"fd-object-status fd-card__counter\\">1 of 3</span>
-                    </div>
                 </div>
             </div>
 
-            <div class=\\"fd-card__content\\" role=\\"group\\" aria-roledescription=\\"Card content\\"></div>
+            <div class=\\"fd-card__content\\" role=\\"group\\" aria-roledescription=\\"Card content\\" style=\\"height: 100px;\\"></div>
+            
             <div class=\\"fd-card__footer\\">
                 <div class=\\"fd-card__footer-actions\\">
                     <button class=\\"fd-button fd-button--positive\\">
@@ -12368,11 +12328,19 @@ Apply the modifier class <code>.fd-card--interactive</code> for interactive Card
                 </div>
             </div>
         </div>
-    </div>
 
-    <div style=\\"width: 300px; height: 400px; margin: 1rem;\\">
-        <div class=\\"fd-card fd-card--interactive is-hover\\" role=\\"region\\" aria-label=\\"Card Example 2\\" tabindex=\\"0\\">
-            <div class=\\"fd-card__header\\" role=\\"group\\" aria-roledescription=\\"Card Header\\" aria-labelledby=\\"card-title-2\\">
+        <div 
+            class=\\"fd-card fd-card--interactive is-hover\\" 
+            style=\\"width: 400px; min-width: 400px; max-width: 400px;\\"
+            role=\\"listitem\\"
+            tabindex=\\"0\\" 
+            aria-posinset=\\"2\\"
+            aria-setsize=\\"5\\"
+            aria-roledescription=\\"Card\\" 
+            aria-description=\\"Activate for action\\"
+            aria-labelledby=\\"card-title-2c\\">
+            
+            <div class=\\"fd-card__header\\" role=\\"group\\" aria-roledescription=\\"Card Header\\">
                 <div class=\\"fd-card__header-main\\">
                     <div class=\\"fd-card__header-main-container\\">
                         <span
@@ -12383,23 +12351,18 @@ Apply the modifier class <code>.fd-card--interactive</code> for interactive Card
                         </span>
                         <div class=\\"fd-card__header-text\\">
                             <div class=\\"fd-card__title-area\\">
-                                <div class=\\"fd-card__title\\" id=\\"card-title-2\\" role=\\"heading\\" aria-level=\\"3\\">Card Title</div>
+                                <div class=\\"fd-card__title\\" id=\\"card-title-2c\\" role=\\"heading\\" aria-level=\\"3\\">Hover state</div>
                             </div>
                             <div class=\\"fd-card__subtitle-area\\">
                                 <div class=\\"fd-card__subtitle\\">Card Subtitle</div>
                             </div>
                         </div>
                     </div>
-                    <div class=\\"fd-card__header-main-actions\\">
-                        <button class=\\"fd-button fd-button--transparent\\" aria-label=\\"overflow\\">
-                            <i class=\\"sap-icon--overflow\\"></i>
-                        </button>
-                        <span class=\\"fd-object-status fd-card__counter\\">1 of 3</span>
-                    </div>
                 </div>
             </div>
 
-            <div class=\\"fd-card__content\\" role=\\"group\\" aria-roledescription=\\"Card content\\"></div>
+            <div class=\\"fd-card__content\\" role=\\"group\\" aria-roledescription=\\"Card content\\" style=\\"height: 100px;\\"></div>
+            
             <div class=\\"fd-card__footer\\">
                 <div class=\\"fd-card__footer-actions\\">
                     <button class=\\"fd-button fd-button--positive\\">
@@ -12411,11 +12374,19 @@ Apply the modifier class <code>.fd-card--interactive</code> for interactive Card
                 </div>
             </div>
         </div>
-    </div>
 
-    <div style=\\"width: 300px; height: 400px; margin: 1rem;\\">
-        <div class=\\"fd-card fd-card--interactive is-active\\" role=\\"region\\" aria-label=\\"Card Example 3\\" tabindex=\\"0\\">
-            <div class=\\"fd-card__header\\" role=\\"group\\" aria-roledescription=\\"Card Header\\" aria-labelledby=\\"card-title-3\\">
+        <div 
+            class=\\"fd-card fd-card--interactive is-active\\" 
+            style=\\"width: 400px; min-width: 400px; max-width: 400px;\\"
+            role=\\"listitem\\"
+            tabindex=\\"0\\" 
+            aria-posinset=\\"3\\"
+            aria-setsize=\\"5\\"
+            aria-roledescription=\\"Card\\" 
+            aria-description=\\"Activate for action\\"
+            aria-labelledby=\\"card-title-3c\\">
+            
+            <div class=\\"fd-card__header\\" role=\\"group\\" aria-roledescription=\\"Card Header\\">
                 <div class=\\"fd-card__header-main\\">
                     <div class=\\"fd-card__header-main-container\\">
                         <span
@@ -12426,23 +12397,18 @@ Apply the modifier class <code>.fd-card--interactive</code> for interactive Card
                         </span>
                         <div class=\\"fd-card__header-text\\">
                             <div class=\\"fd-card__title-area\\">
-                                <div class=\\"fd-card__title\\" id=\\"card-title-3\\" role=\\"heading\\" aria-level=\\"3\\">Card Title</div>
+                                <div class=\\"fd-card__title\\" id=\\"card-title-3c\\" role=\\"heading\\" aria-level=\\"3\\">Active state</div>
                             </div>
                             <div class=\\"fd-card__subtitle-area\\">
                                 <div class=\\"fd-card__subtitle\\">Card Subtitle</div>
                             </div>
                         </div>
                     </div>
-                    <div class=\\"fd-card__header-main-actions\\">
-                        <button class=\\"fd-button fd-button--transparent\\" aria-label=\\"overflow\\">
-                            <i class=\\"sap-icon--overflow\\"></i>
-                        </button>
-                        <span class=\\"fd-object-status fd-card__counter\\">1 of 3</span>
-                    </div>
                 </div>
             </div>
 
-            <div class=\\"fd-card__content\\" role=\\"group\\" aria-roledescription=\\"Card content\\"></div>
+            <div class=\\"fd-card__content\\" role=\\"group\\" aria-roledescription=\\"Card content\\" style=\\"height: 100px;\\"></div>
+            
             <div class=\\"fd-card__footer\\">
                 <div class=\\"fd-card__footer-actions\\">
                     <button class=\\"fd-button fd-button--positive\\">
@@ -12454,11 +12420,19 @@ Apply the modifier class <code>.fd-card--interactive</code> for interactive Card
                 </div>
             </div>
         </div>
-    </div>
 
-    <div style=\\"width: 300px; height: 400px; margin: 1rem;\\">
-        <div class=\\"fd-card fd-card--interactive is-focus\\" role=\\"region\\" aria-label=\\"Card Example 4\\" tabindex=\\"0\\">
-            <div class=\\"fd-card__header\\" role=\\"group\\" aria-roledescription=\\"Card Header\\" aria-labelledby=\\"card-title-4\\">
+        <div 
+            class=\\"fd-card fd-card--interactive is-focus\\" 
+            style=\\"width: 400px; min-width: 400px; max-width: 400px;\\"
+            role=\\"listitem\\"
+            tabindex=\\"0\\" 
+            aria-posinset=\\"4\\"
+            aria-setsize=\\"5\\"
+            aria-roledescription=\\"Card\\" 
+            aria-description=\\"Activate for action\\"
+            aria-labelledby=\\"card-title-4c\\">
+            
+            <div class=\\"fd-card__header\\" role=\\"group\\" aria-roledescription=\\"Card Header\\">
                 <div class=\\"fd-card__header-main\\">
                     <div class=\\"fd-card__header-main-container\\">
                         <span
@@ -12469,23 +12443,64 @@ Apply the modifier class <code>.fd-card--interactive</code> for interactive Card
                         </span>
                         <div class=\\"fd-card__header-text\\">
                             <div class=\\"fd-card__title-area\\">
-                                <div class=\\"fd-card__title\\" id=\\"card-title-4\\" role=\\"heading\\" aria-level=\\"3\\">Card Title</div>
+                                <div class=\\"fd-card__title\\" id=\\"card-title-4c\\" role=\\"heading\\" aria-level=\\"3\\">Focus state</div>
                             </div>
                             <div class=\\"fd-card__subtitle-area\\">
                                 <div class=\\"fd-card__subtitle\\">Card Subtitle</div>
                             </div>
                         </div>
                     </div>
-                    <div class=\\"fd-card__header-main-actions\\">
-                        <button class=\\"fd-button fd-button--transparent\\" aria-label=\\"overflow\\">
-                            <i class=\\"sap-icon--overflow\\"></i>
-                        </button>
-                        <span class=\\"fd-object-status fd-card__counter\\">1 of 3</span>
+                </div>
+            </div>
+
+            <div class=\\"fd-card__content\\" role=\\"group\\" aria-roledescription=\\"Card content\\" style=\\"height: 100px;\\"></div>
+            
+            <div class=\\"fd-card__footer\\">
+                <div class=\\"fd-card__footer-actions\\">
+                    <button class=\\"fd-button fd-button--positive\\">
+                        Button
+                    </button>
+                    <button class=\\"fd-button fd-button--negative\\">
+                        Button
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div 
+            class=\\"fd-card fd-card--interactive is-selected\\" 
+            style=\\"width: 400px; min-width: 400px; max-width: 400px;\\"
+            role=\\"listitem\\"
+            tabindex=\\"0\\" 
+            aria-posinset=\\"5\\"
+            aria-setsize=\\"5\\"
+            aria-roledescription=\\"Card\\" 
+            aria-description=\\"Activate for action\\"
+            aria-labelledby=\\"card-title-5c\\">
+            
+            <div class=\\"fd-card__header\\" role=\\"group\\" aria-roledescription=\\"Card Header\\">
+                <div class=\\"fd-card__header-main\\">
+                    <div class=\\"fd-card__header-main-container\\">
+                        <span
+                            class=\\"fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--thumbnail fd-card__avatar\\"
+                            style=\\"background-image: url('/assets/images/backgrounds/city.jpg')\\"
+                            role=\\"img\\"
+                            aria-label=\\"John Doe\\">
+                        </span>
+                        <div class=\\"fd-card__header-text\\">
+                            <div class=\\"fd-card__title-area\\">
+                                <div class=\\"fd-card__title\\" id=\\"card-title-5c\\" role=\\"heading\\" aria-level=\\"3\\">Selected state</div>
+                            </div>
+                            <div class=\\"fd-card__subtitle-area\\">
+                                <div class=\\"fd-card__subtitle\\">Card Subtitle</div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
 
-            <div class=\\"fd-card__content\\" role=\\"group\\" aria-roledescription=\\"Card content\\"></div>
+            <div class=\\"fd-card__content\\" role=\\"group\\" aria-roledescription=\\"Card content\\" style=\\"height: 100px;\\"></div>
+            
             <div class=\\"fd-card__footer\\">
                 <div class=\\"fd-card__footer-actions\\">
                     <button class=\\"fd-button fd-button--positive\\">
@@ -12499,410 +12514,15 @@ Apply the modifier class <code>.fd-card--interactive</code> for interactive Card
         </div>
     </div>
 </div>
+"
+`;
 
-<br><br>
-<h4>Header Interaction - non-interactive Cards</h4>
-<p>There will be interaction states on the main header when there are actions directly attached on the card's header. There is no shadow elevation. This is only available on non-interactive Cards.<br>
-For interactive header use the <code>.fd-card__header--interactive</code> modifier with the <code>.fd-card__header</code> base class.</p>
-    
-   
-<div style=\\"display:flex; justify-content:space-around; flex-wrap: wrap\\">
+exports[`Check stories > Components/Card/Card > Story CardNonInteractive > Should match snapshot 1`] = `
+"<div style=\\"display:flex; justify-content:space-around; flex-wrap: wrap\\">
     <div style=\\"width: 300px; height: 400px; margin: 1rem;\\">
-        <div class=\\"fd-card\\" role=\\"region\\" aria-label=\\"Card Example 5\\">
-            <div class=\\"fd-card__header fd-card__header--interactive\\" role=\\"group\\" aria-roledescription=\\"Card Header\\" aria-labelledby=\\"card-title-5\\">
-                <div class=\\"fd-card__header-main\\">
-                    <div class=\\"fd-card__header-main-container\\" role=\\"button\\" tabindex=\\"0\\">
-                        <span
-                            class=\\"fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--thumbnail fd-card__avatar\\"
-                            style=\\"background-image: url('/assets/images/backgrounds/city.jpg')\\"
-                            role=\\"img\\"
-                            aria-label=\\"John Doe\\">
-                        </span>
-                        <div class=\\"fd-card__header-text\\">
-                            <div class=\\"fd-card__title-area\\">
-                                <div class=\\"fd-card__title\\" id=\\"card-title-5\\" role=\\"heading\\" aria-level=\\"3\\">Card Title</div>
-                            </div>
-                            <div class=\\"fd-card__subtitle-area\\">
-                                <div class=\\"fd-card__subtitle\\">Card Subtitle</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class=\\"fd-card__header-main-actions\\">
-                        <button class=\\"fd-button fd-button--transparent\\" aria-label=\\"overflow\\">
-                            <i class=\\"sap-icon--overflow\\"></i>
-                        </button>
-                        <span class=\\"fd-object-status fd-card__counter\\">1 of 3</span>
-                    </div>
-                </div>
-                <div class=\\"fd-card__header-extended\\" role=\\"group\\" aria-roledescription=\\"Extended content\\">
-                    <div class=\\"fd-card__header-column\\">
-                        <div class=\\"fd-card__header-row\\">
-                            <span class=\\"fd-object-status fd-object-status--inverted fd-object-status--positive\\">
-                                <i class=\\"fd-object-status__icon sap-icon--sys-enter-2\\" role=\\"presentation\\"></i>
-                                <span class=\\"fd-object-status__text\\">Positive</span>
-                            </span>
-                        </div>
-                    </div>
-                    <div class=\\"fd-card__header-column fd-card__header-column--right-aligned\\">
-                        <div class=\\"fd-card__header-row\\">
-                            <div class=\\"fd-text\\">Timestamp</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class=\\"fd-card__content\\" role=\\"group\\" aria-roledescription=\\"Card content\\"></div>
-            <div class=\\"fd-card__footer\\">
-                <div class=\\"fd-card__footer-actions\\">
-                    <button class=\\"fd-button fd-button--positive\\">
-                        Button
-                    </button>
-                    <button class=\\"fd-button fd-button--negative\\">
-                        Button
-                    </button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div style=\\"width: 300px; height: 400px; margin: 1rem;\\">
-        <div class=\\"fd-card\\" role=\\"region\\" aria-label=\\"Card Example 6\\">
-            <div class=\\"fd-card__header fd-card__header--interactive\\" role=\\"group\\" aria-roledescription=\\"Card Header\\" aria-labelledby=\\"card-title-6\\">
-                <div class=\\"fd-card__header-main is-hover\\">
-                    <div class=\\"fd-card__header-main-container\\" role=\\"button\\" tabindex=\\"0\\">
-                        <span
-                            class=\\"fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--thumbnail fd-card__avatar\\"
-                            style=\\"background-image: url('/assets/images/backgrounds/city.jpg')\\"
-                            role=\\"img\\"
-                            aria-label=\\"John Doe\\">
-                        </span>
-                        <div class=\\"fd-card__header-text\\">
-                            <div class=\\"fd-card__title-area\\">
-                                <div class=\\"fd-card__title\\" id=\\"card-title-6\\" role=\\"heading\\" aria-level=\\"3\\">Card Title</div>
-                            </div>
-                            <div class=\\"fd-card__subtitle-area\\">
-                                <div class=\\"fd-card__subtitle\\">Card Subtitle</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class=\\"fd-card__header-main-actions\\">
-                        <button class=\\"fd-button fd-button--transparent\\" aria-label=\\"overflow\\">
-                            <i class=\\"sap-icon--overflow\\"></i>
-                        </button>
-                        <span class=\\"fd-object-status fd-card__counter\\">1 of 3</span>
-                    </div>
-                </div>
-                <div class=\\"fd-card__header-extended\\" role=\\"group\\" aria-roledescription=\\"Extended content\\">
-                    <div class=\\"fd-card__header-column\\">
-                        <div class=\\"fd-card__header-row\\">
-                            <span class=\\"fd-object-status fd-object-status--inverted fd-object-status--positive\\">
-                                <i class=\\"fd-object-status__icon sap-icon--sys-enter-2\\" role=\\"presentation\\"></i>
-                                <span class=\\"fd-object-status__text\\">Positive</span>
-                            </span>
-                        </div>
-                    </div>
-                    <div class=\\"fd-card__header-column fd-card__header-column--right-aligned\\">
-                        <div class=\\"fd-card__header-row\\">
-                            <div class=\\"fd-text\\">Timestamp</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class=\\"fd-card__content\\" role=\\"group\\" aria-roledescription=\\"Card content\\"></div>
-            <div class=\\"fd-card__footer\\">
-                <div class=\\"fd-card__footer-actions\\">
-                    <button class=\\"fd-button fd-button--positive\\">
-                        Button
-                    </button>
-                    <button class=\\"fd-button fd-button--negative\\">
-                        Button
-                    </button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div style=\\"width: 300px; height: 400px; margin: 1rem;\\">
-        <div class=\\"fd-card\\" role=\\"region\\" aria-label=\\"Card Example 7\\">
-            <div class=\\"fd-card__header fd-card__header--interactive\\" role=\\"group\\" aria-roledescription=\\"Card Header\\" aria-labelledby=\\"card-title-7\\">
-                <div class=\\"fd-card__header-main is-active\\">
-                    <div class=\\"fd-card__header-main-container\\" role=\\"button\\" tabindex=\\"0\\">
-                        <span
-                            class=\\"fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--thumbnail fd-card__avatar\\"
-                            style=\\"background-image: url('/assets/images/backgrounds/city.jpg')\\"
-                            role=\\"img\\"
-                            aria-label=\\"John Doe\\">
-                        </span>
-                        <div class=\\"fd-card__header-text\\">
-                            <div class=\\"fd-card__title-area\\">
-                                <div class=\\"fd-card__title\\" id=\\"card-title-7\\" role=\\"heading\\" aria-level=\\"3\\">Card Title</div>
-                            </div>
-                            <div class=\\"fd-card__subtitle-area\\">
-                                <div class=\\"fd-card__subtitle\\">Card Subtitle</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class=\\"fd-card__header-main-actions\\">
-                        <button class=\\"fd-button fd-button--transparent\\" aria-label=\\"overflow\\">
-                            <i class=\\"sap-icon--overflow\\"></i>
-                        </button>
-                        <span class=\\"fd-object-status fd-card__counter\\">1 of 3</span>
-                    </div>
-                </div>
-                <div class=\\"fd-card__header-extended\\" role=\\"group\\" aria-roledescription=\\"Extended content\\">
-                    <div class=\\"fd-card__header-column\\">
-                        <div class=\\"fd-card__header-row\\">
-                            <span class=\\"fd-object-status fd-object-status--inverted fd-object-status--positive\\">
-                                <i class=\\"fd-object-status__icon sap-icon--sys-enter-2\\" role=\\"presentation\\"></i>
-                                <span class=\\"fd-object-status__text\\">Positive</span>
-                            </span>
-                        </div>
-                    </div>
-                    <div class=\\"fd-card__header-column fd-card__header-column--right-aligned\\">
-                        <div class=\\"fd-card__header-row\\">
-                            <div class=\\"fd-text\\">Timestamp</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class=\\"fd-card__content\\" role=\\"group\\" aria-roledescription=\\"Card content\\"></div>
-            <div class=\\"fd-card__footer\\">
-                <div class=\\"fd-card__footer-actions\\">
-                    <button class=\\"fd-button fd-button--positive\\">
-                        Button
-                    </button>
-                    <button class=\\"fd-button fd-button--negative\\">
-                        Button
-                    </button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div style=\\"width: 300px; height: 400px; margin: 1rem;\\">
-        <div class=\\"fd-card\\" role=\\"region\\" aria-label=\\"Card Example 8\\">
-            <div class=\\"fd-card__header fd-card__header--interactive\\" role=\\"group\\" aria-roledescription=\\"Card Header\\" aria-labelledby=\\"card-title-8\\">
-                <div class=\\"fd-card__header-main\\">
-                    <div class=\\"fd-card__header-main-container is-focus\\" role=\\"button\\" tabindex=\\"0\\">
-                        <span
-                            class=\\"fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--thumbnail fd-card__avatar\\"
-                            style=\\"background-image: url('/assets/images/backgrounds/city.jpg')\\"
-                            role=\\"img\\"
-                            aria-label=\\"John Doe\\">
-                        </span>
-                        <div class=\\"fd-card__header-text\\">
-                            <div class=\\"fd-card__title-area\\">
-                                <div class=\\"fd-card__title\\" id=\\"card-title-8\\" role=\\"heading\\" aria-level=\\"3\\">Card Title</div>
-                            </div>
-                            <div class=\\"fd-card__subtitle-area\\">
-                                <div class=\\"fd-card__subtitle\\">Card Subtitle</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class=\\"fd-card__header-main-actions\\">
-                        <button class=\\"fd-button fd-button--transparent\\" aria-label=\\"overflow\\">
-                            <i class=\\"sap-icon--overflow\\"></i>
-                        </button>
-                        <span class=\\"fd-object-status fd-card__counter\\">1 of 3</span>
-                    </div>
-                </div>
-                <div class=\\"fd-card__header-extended\\" role=\\"group\\" aria-roledescription=\\"Extended content\\">
-                    <div class=\\"fd-card__header-column\\">
-                        <div class=\\"fd-card__header-row\\">
-                            <span class=\\"fd-object-status fd-object-status--inverted fd-object-status--positive\\">
-                                <i class=\\"fd-object-status__icon sap-icon--sys-enter-2\\" role=\\"presentation\\"></i>
-                                <span class=\\"fd-object-status__text\\">Positive</span>
-                            </span>
-                        </div>
-                    </div>
-                    <div class=\\"fd-card__header-column fd-card__header-column--right-aligned\\">
-                        <div class=\\"fd-card__header-row\\">
-                            <div class=\\"fd-text\\">Timestamp</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class=\\"fd-card__content\\" role=\\"group\\" aria-roledescription=\\"Card content\\"></div>
-            <div class=\\"fd-card__footer\\">
-                <div class=\\"fd-card__footer-actions\\">
-                    <button class=\\"fd-button fd-button--positive\\">
-                        Button
-                    </button>
-                    <button class=\\"fd-button fd-button--negative\\">
-                        Button
-                    </button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div style=\\"width: 300px; height: 400px; margin: 1rem;\\">
-        <div class=\\"fd-card\\" role=\\"region\\" aria-label=\\"Card Example 9\\">
-            <div class=\\"fd-card__content\\" role=\\"group\\" aria-roledescription=\\"Card content\\"></div>
-            <div class=\\"fd-card__header fd-card__header--interactive\\" role=\\"group\\" aria-roledescription=\\"Card Header\\" aria-labelledby=\\"card-title-9\\">
-                <div class=\\"fd-card__header-main\\">
-                    <div class=\\"fd-card__header-main-container is-focus\\" role=\\"button\\" tabindex=\\"0\\">
-                        <span
-                            class=\\"fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--thumbnail fd-card__avatar\\"
-                            style=\\"background-image: url('/assets/images/backgrounds/city.jpg')\\"
-                            role=\\"img\\"
-                            aria-label=\\"John Doe\\">
-                        </span>
-                        <div class=\\"fd-card__header-text\\">
-                            <div class=\\"fd-card__title-area\\">
-                                <div class=\\"fd-card__title\\" id=\\"card-title-9\\" role=\\"heading\\" aria-level=\\"3\\">Card Title</div>
-                            </div>
-                            <div class=\\"fd-card__subtitle-area\\">
-                                <div class=\\"fd-card__subtitle\\">Card Subtitle</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class=\\"fd-card__header-main-actions\\">
-                        <button class=\\"fd-button fd-button--transparent\\" aria-label=\\"overflow\\">
-                            <i class=\\"sap-icon--overflow\\"></i>
-                        </button>
-                        <span class=\\"fd-object-status fd-card__counter\\">1 of 3</span>
-                    </div>
-                </div>
-                <div class=\\"fd-card__header-extended\\" role=\\"group\\" aria-roledescription=\\"Extended content\\">
-                    <div class=\\"fd-card__header-column\\">
-                        <div class=\\"fd-card__header-row\\">
-                            <span class=\\"fd-object-status fd-object-status--inverted fd-object-status--positive\\">
-                                <i class=\\"fd-object-status__icon sap-icon--sys-enter-2\\" role=\\"presentation\\"></i>
-                                <span class=\\"fd-object-status__text\\">Positive</span>
-                            </span>
-                        </div>
-                    </div>
-                    <div class=\\"fd-card__header-column fd-card__header-column--right-aligned\\">
-                        <div class=\\"fd-card__header-row\\">
-                            <div class=\\"fd-text\\">Timestamp</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div style=\\"width: 300px; height: 400px; margin: 1rem;\\">
-        <div class=\\"fd-card\\" role=\\"region\\" aria-label=\\"Card Example 10\\">
-            <div class=\\"fd-card__content\\" role=\\"group\\" aria-roledescription=\\"Card content\\"></div>
-            <div class=\\"fd-card__header fd-card__header--interactive\\" role=\\"group\\" aria-roledescription=\\"Card Header\\" aria-labelledby=\\"card-title-10\\">
-                <div class=\\"fd-card__header-main\\">
-                    <div class=\\"fd-card__header-main-container is-focus\\" role=\\"button\\" tabindex=\\"0\\">
-                        <span
-                            class=\\"fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--thumbnail fd-card__avatar\\"
-                            style=\\"background-image: url('/assets/images/backgrounds/city.jpg')\\"
-                            role=\\"img\\"
-                            aria-label=\\"John Doe\\">
-                        </span>
-                        <div class=\\"fd-card__header-text\\">
-                            <div class=\\"fd-card__title-area\\">
-                                <div class=\\"fd-card__title\\" id=\\"card-title-10\\" role=\\"heading\\" aria-level=\\"3\\">Card Title</div>
-                            </div>
-                            <div class=\\"fd-card__subtitle-area\\">
-                                <div class=\\"fd-card__subtitle\\">Card Subtitle</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class=\\"fd-card__header-main-actions\\">
-                        <button class=\\"fd-button fd-button--transparent\\" aria-label=\\"overflow\\">
-                            <i class=\\"sap-icon--overflow\\"></i>
-                        </button>
-                        <span class=\\"fd-object-status fd-card__counter\\">1 of 3</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div style=\\"width: 300px; height: fit-content; margin: 1rem;\\">
-        <div class=\\"fd-card\\" role=\\"region\\" aria-label=\\"Card Example 11\\">
-            <div class=\\"fd-card__header fd-card__header--interactive\\" role=\\"group\\" aria-roledescription=\\"Card Header\\" aria-labelledby=\\"card-title-11\\">
-                <div class=\\"fd-card__header-main\\">
-                    <div class=\\"fd-card__header-main-container is-focus\\" role=\\"button\\" tabindex=\\"0\\">
-                        <span
-                            class=\\"fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--thumbnail fd-card__avatar\\"
-                            style=\\"background-image: url('/assets/images/backgrounds/city.jpg')\\"
-                            role=\\"img\\"
-                            aria-label=\\"John Doe\\">
-                        </span>
-                        <div class=\\"fd-card__header-text\\">
-                            <div class=\\"fd-card__title-area\\">
-                                <div class=\\"fd-card__title\\" id=\\"card-title-11\\" role=\\"heading\\" aria-level=\\"3\\">Card Title</div>
-                            </div>
-                            <div class=\\"fd-card__subtitle-area\\">
-                                <div class=\\"fd-card__subtitle\\">Card Subtitle</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class=\\"fd-card__header-main-actions\\">
-                        <button class=\\"fd-button fd-button--transparent\\" aria-label=\\"overflow\\">
-                            <i class=\\"sap-icon--overflow\\"></i>
-                        </button>
-                        <span class=\\"fd-object-status fd-card__counter\\">1 of 3</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div style=\\"width: 300px; height: fit-content; margin: 1rem;\\">
-        <div class=\\"fd-card\\" role=\\"region\\" aria-label=\\"Card Example 12\\">
-            <div class=\\"fd-card__header fd-card__header--interactive\\" role=\\"group\\" aria-roledescription=\\"Card Header\\" aria-labelledby=\\"card-title-12\\">
-                <div class=\\"fd-card__header-main\\">
-                    <div class=\\"fd-card__header-main-container is-focus\\" role=\\"button\\" tabindex=\\"0\\">
-                        <span
-                            class=\\"fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--thumbnail fd-card__avatar\\"
-                            style=\\"background-image: url('/assets/images/backgrounds/city.jpg')\\"
-                            role=\\"img\\"
-                            aria-label=\\"John Doe\\">
-                        </span>
-                        <div class=\\"fd-card__header-text\\">
-                            <div class=\\"fd-card__title-area\\">
-                                <div class=\\"fd-card__title\\" id=\\"card-title-12\\" role=\\"heading\\" aria-level=\\"3\\">Card Title</div>
-                            </div>
-                            <div class=\\"fd-card__subtitle-area\\">
-                                <div class=\\"fd-card__subtitle\\">Card Subtitle</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class=\\"fd-card__header-main-actions\\">
-                        <button class=\\"fd-button fd-button--transparent\\" aria-label=\\"overflow\\">
-                            <i class=\\"sap-icon--overflow\\"></i>
-                        </button>
-                        <span class=\\"fd-object-status fd-card__counter\\">1 of 3</span>
-                    </div>
-                </div>
-                <div class=\\"fd-card__header-extended\\" role=\\"group\\" aria-roledescription=\\"Extended content\\">
-                    <div class=\\"fd-card__header-column\\">
-                        <div class=\\"fd-card__header-row\\">
-                            <span class=\\"fd-object-status fd-object-status--inverted fd-object-status--positive\\">
-                                <i class=\\"fd-object-status__icon sap-icon--sys-enter-2\\" role=\\"presentation\\"></i>
-                                <span class=\\"fd-object-status__text\\">Positive</span>
-                            </span>
-                        </div>
-                    </div>
-                    <div class=\\"fd-card__header-column fd-card__header-column--right-aligned\\">
-                        <div class=\\"fd-card__header-row\\">
-                            <div class=\\"fd-text\\">Timestamp</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<br><br>
-<h4>Content Interaction</h4>
-<p>There will be the option to have interaction states within the body area. Follow the hover visualization for the respective element. There is no shadow elevation.</p>
-<div style=\\"display:flex; justify-content:space-around; flex-wrap: wrap\\">
-    <div style=\\"width: 300px; height: auto; margin: 1rem;\\">
-        <div class=\\"fd-card\\" role=\\"region\\" aria-label=\\"Card Example 13\\">
-            <div class=\\"fd-card__header\\" role=\\"group\\" aria-roledescription=\\"Card Header\\" aria-labelledby=\\"card-title-13\\">
+        <div class=\\"fd-card\\" role=\\"region\\" aria-roledescription=\\"Card\\" aria-labelledby=\\"card-title-1a\\">
+            
+            <div class=\\"fd-card__header\\" role=\\"group\\" aria-roledescription=\\"Card Header\\">
                 <div class=\\"fd-card__header-main\\">
                     <div class=\\"fd-card__header-main-container\\">
                         <span
@@ -12913,7 +12533,147 @@ For interactive header use the <code>.fd-card__header--interactive</code> modifi
                         </span>
                         <div class=\\"fd-card__header-text\\">
                             <div class=\\"fd-card__title-area\\">
-                                <div class=\\"fd-card__title\\" id=\\"card-title-13\\" role=\\"heading\\" aria-level=\\"3\\">Request Approval</div>
+                                <div class=\\"fd-card__title\\" id=\\"card-title-1a\\" role=\\"heading\\" aria-level=\\"3\\">Non-interactive header</div>
+                            </div>
+                            <div class=\\"fd-card__subtitle-area\\">
+                                <div class=\\"fd-card__subtitle\\">Card Subtitle</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class=\\"fd-card__header-main-actions\\">
+                        <button class=\\"fd-button fd-button--transparent\\" aria-label=\\"overflow\\">
+                            <i class=\\"sap-icon--overflow\\"></i>
+                        </button>
+                        <span class=\\"fd-object-status fd-card__counter\\">1 of 3</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class=\\"fd-card__content\\" role=\\"group\\" aria-roledescription=\\"Card content\\"></div>
+            
+            <div class=\\"fd-card__footer\\">
+                <div class=\\"fd-card__footer-actions\\">
+                    <button class=\\"fd-button fd-button--positive\\">
+                        Button
+                    </button>
+                    <button class=\\"fd-button fd-button--negative\\">
+                        Button
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div style=\\"width: 300px; height: 400px; margin: 1rem;\\">
+        <div class=\\"fd-card\\" role=\\"region\\" aria-labelledby=\\"card-title-2a\\">
+            <div class=\\"fd-card__header fd-card__header--interactive\\" role=\\"group\\" aria-roledescription=\\"Card Header\\">
+                <div class=\\"fd-card__header-main\\">
+                    <div class=\\"fd-card__header-main-container\\"role=\\"button\\" tabindex=\\"0\\" aria-description=\\"Activate for action/navigation\\" aria-label=\\"Activate for action/navigation\\" title=\\"Activate for action/navigation\\">
+                        <span
+                            class=\\"fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--thumbnail fd-card__avatar\\"
+                            style=\\"background-image: url('/assets/images/backgrounds/city.jpg')\\"
+                            role=\\"img\\"
+                            aria-label=\\"John Doe\\">
+                        </span>
+                        <div class=\\"fd-card__header-text\\">
+                            <div class=\\"fd-card__title-area\\">
+                                <div class=\\"fd-card__title\\" id=\\"card-title-2a\\" role=\\"heading\\" aria-level=\\"3\\">Interactive Header</div>
+                            </div>
+                            <div class=\\"fd-card__subtitle-area\\">
+                                <div class=\\"fd-card__subtitle\\">Card Subtitle</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class=\\"fd-card__header-main-actions\\">
+                        <button class=\\"fd-button fd-button--transparent\\" aria-label=\\"overflow\\">
+                            <i class=\\"sap-icon--overflow\\"></i>
+                        </button>
+                        <span class=\\"fd-object-status fd-card__counter\\">1 of 3</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class=\\"fd-card__content\\" role=\\"group\\" aria-roledescription=\\"Card content\\"></div>
+            
+            <div class=\\"fd-card__footer\\">
+                <div class=\\"fd-card__footer-actions\\">
+                    <button class=\\"fd-button fd-button--positive\\">
+                        Button
+                    </button>
+                    <button class=\\"fd-button fd-button--negative\\">
+                        Button
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div style=\\"width: 300px; height: 400px; margin: 1rem;\\">
+        <div class=\\"fd-card\\" role=\\"region\\" aria-roledescription=\\"Card\\" aria-labelledby=\\"card-title-3a\\">
+            
+            <div class=\\"fd-card__media\\" role=\\"group\\" aria-roledescription=\\"Card Media Block\\">
+                <div class=\\"fd-card__media-image-container\\">
+                    <img class=\\"fd-card__media-image\\" src=\\"/assets/images/landscape/L1.jpg\\"
+                    alt=\\"image of a sunset over mountains\\" />
+                </div>
+            </div>
+
+            <div class=\\"fd-card__header\\" role=\\"group\\" aria-roledescription=\\"Card Header\\">
+                <div class=\\"fd-card__header-main\\">
+                    <div class=\\"fd-card__header-main-container\\">
+                        <span
+                            class=\\"fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--thumbnail fd-card__avatar\\"
+                            style=\\"background-image: url('/assets/images/backgrounds/city.jpg')\\"
+                            role=\\"img\\"
+                            aria-label=\\"John Doe\\">
+                        </span>
+                        <div class=\\"fd-card__header-text\\">
+                            <div class=\\"fd-card__title-area\\">
+                                <div class=\\"fd-card__title\\" id=\\"card-title-3a\\" role=\\"heading\\" aria-level=\\"3\\">Card with Media</div>
+                            </div>
+                            <div class=\\"fd-card__subtitle-area\\">
+                                <div class=\\"fd-card__subtitle\\">Card Subtitle</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class=\\"fd-card__header-main-actions\\">
+                        <button class=\\"fd-button fd-button--transparent\\" aria-label=\\"overflow\\">
+                            <i class=\\"sap-icon--overflow\\"></i>
+                        </button>
+                        <span class=\\"fd-object-status fd-card__counter\\">1 of 3</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class=\\"fd-card__content\\" role=\\"group\\" aria-roledescription=\\"Card content\\"></div>
+            
+            <div class=\\"fd-card__footer\\">
+                <div class=\\"fd-card__footer-actions\\">
+                    <button class=\\"fd-button fd-button--positive\\">
+                        Button
+                    </button>
+                    <button class=\\"fd-button fd-button--negative\\">
+                        Button
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div style=\\"width: 300px; height: fit-content; margin: 1rem;\\">
+        <div class=\\"fd-card\\" role=\\"region\\" aria-roledescription=\\"Card\\" aria-labelledby=\\"card-title-33a\\">
+            <div class=\\"fd-card__header\\" role=\\"group\\" aria-roledescription=\\"Card Header\\">
+                <div class=\\"fd-card__header-main\\">
+                    <div class=\\"fd-card__header-main-container\\">
+                        <span
+                            class=\\"fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--thumbnail fd-card__avatar\\"
+                            style=\\"background-image: url('/assets/images/backgrounds/city.jpg')\\"
+                            role=\\"img\\"
+                            aria-label=\\"John Doe\\">
+                        </span>
+                        <div class=\\"fd-card__header-text\\">
+                            <div class=\\"fd-card__title-area\\">
+                                <div class=\\"fd-card__title\\" id=\\"card-title-33a\\" role=\\"heading\\" aria-level=\\"3\\">Request Approval</div>
                             </div>
                             <div class=\\"fd-card__subtitle-area\\">
                                 <div class=\\"fd-card__subtitle\\">Marie Johnson</div>
@@ -12966,172 +12726,17 @@ For interactive header use the <code>.fd-card__header--interactive</code> modifi
             </div>
         </div>
     </div>
-</div>
-
-<br><br>
-<h4>Content Focus</h4>
-
-<div style=\\"display:flex; justify-content:space-around; flex-wrap: wrap\\">
-    <div style=\\"width: 300px; height: auto; margin: 1rem;\\">
-        <div style=\\"width: 300px; height: 400px; margin: 1rem;\\">
-            <div class=\\"fd-card\\" role=\\"region\\" aria-label=\\"Card Example 14\\">
-                <div class=\\"fd-card__header\\" role=\\"group\\" aria-roledescription=\\"Card Header\\" aria-labelledby=\\"card-title-14\\">
-                    <div class=\\"fd-card__header-main\\">
-                        <div class=\\"fd-card__header-main-container\\">
-                            <span
-                                class=\\"fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--thumbnail fd-card__avatar\\"
-                                style=\\"background-image: url('/assets/images/backgrounds/city.jpg')\\"
-                                role=\\"img\\"
-                                aria-label=\\"John Doe\\">
-                            </span>
-                            <div class=\\"fd-card__header-text\\">
-                                <div class=\\"fd-card__title-area\\">
-                                    <div class=\\"fd-card__title\\" id=\\"card-title-14\\" role=\\"heading\\" aria-level=\\"3\\">Card Title</div>
-                                </div>
-                                <div class=\\"fd-card__subtitle-area\\">
-                                    <div class=\\"fd-card__subtitle\\">Card Subtitle</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class=\\"fd-card__header-main-actions\\">
-                            <button class=\\"fd-button fd-button--transparent\\" aria-label=\\"overflow\\">
-                                <i class=\\"sap-icon--overflow\\"></i>
-                            </button>
-                            <span class=\\"fd-object-status fd-card__counter\\">1 of 3</span>
-                        </div>
-                    </div>
-                    <div class=\\"fd-card__header-extended\\" role=\\"group\\" aria-roledescription=\\"Extended content\\">
-                        <div class=\\"fd-card__header-column\\">
-                            <div class=\\"fd-card__header-row\\">
-                                <span class=\\"fd-object-status fd-object-status--inverted fd-object-status--positive\\">
-                                    <i class=\\"fd-object-status__icon sap-icon--sys-enter-2\\" role=\\"presentation\\"></i>
-                                    <span class=\\"fd-object-status__text\\">Positive</span>
-                                </span>
-                            </div>
-                        </div>
-                        <div class=\\"fd-card__header-column fd-card__header-column--right-aligned\\">
-                            <div class=\\"fd-card__header-row\\">
-                                <div class=\\"fd-text\\">Timestamp</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-    
-                <div class=\\"fd-card__content is-focus\\" role=\\"group\\" aria-roledescription=\\"Card content\\"></div>
-                <div class=\\"fd-card__footer\\">
-                    <div class=\\"fd-card__footer-actions\\">
-                        <button class=\\"fd-button fd-button--positive\\">
-                            Button
-                        </button>
-                        <button class=\\"fd-button fd-button--negative\\">
-                            Button
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div style=\\"width: 300px; height: auto; margin: 1rem;\\">
-        <div style=\\"width: 300px; height: 400px; margin: 1rem;\\">
-            <div class=\\"fd-card\\" role=\\"region\\" aria-label=\\"Card Example 15\\">
-                <div class=\\"fd-card__content is-focus\\" role=\\"group\\" aria-roledescription=\\"Card content\\"></div>
-                <div class=\\"fd-card__header\\" role=\\"group\\" aria-roledescription=\\"Card Header\\" aria-labelledby=\\"card-title-15\\">
-                    <div class=\\"fd-card__header-main\\">
-                        <div class=\\"fd-card__header-main-container\\">
-                            <span
-                                class=\\"fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--thumbnail fd-card__avatar\\"
-                                style=\\"background-image: url('/assets/images/backgrounds/city.jpg')\\"
-                                role=\\"img\\"
-                                aria-label=\\"John Doe\\">
-                            </span>
-                            <div class=\\"fd-card__header-text\\">
-                                <div class=\\"fd-card__title-area\\">
-                                    <div class=\\"fd-card__title\\" id=\\"card-title-15\\" role=\\"heading\\" aria-level=\\"3\\">Card Title</div>
-                                </div>
-                                <div class=\\"fd-card__subtitle-area\\">
-                                    <div class=\\"fd-card__subtitle\\">Card Subtitle</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class=\\"fd-card__header-main-actions\\">
-                            <button class=\\"fd-button fd-button--transparent\\" aria-label=\\"overflow\\">
-                                <i class=\\"sap-icon--overflow\\"></i>
-                            </button>
-                            <span class=\\"fd-object-status fd-card__counter\\">1 of 3</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div style=\\"width: 300px; height: auto; margin: 1rem;\\">
-        <div style=\\"width: 300px; height: 400px; margin: 1rem;\\">
-            <div class=\\"fd-card\\" role=\\"region\\" aria-label=\\"Card Example 16\\">
-                <div class=\\"fd-card__header\\" role=\\"group\\" aria-roledescription=\\"Card Header\\" aria-labelledby=\\"card-title-16\\">
-                    <div class=\\"fd-card__header-main\\">
-                        <div class=\\"fd-card__header-main-container\\" role=\\"button\\" tabindex=\\"0\\">
-                            <span
-                                class=\\"fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--thumbnail fd-card__avatar\\"
-                                style=\\"background-image: url('/assets/images/backgrounds/city.jpg')\\"
-                                role=\\"img\\"
-                                aria-label=\\"John Doe\\">
-                            </span>
-                            <div class=\\"fd-card__header-text\\">
-                                <div class=\\"fd-card__title-area\\">
-                                    <div class=\\"fd-card__title\\" id=\\"card-title-16\\" role=\\"heading\\" aria-level=\\"3\\">Card Title</div>
-                                </div>
-                                <div class=\\"fd-card__subtitle-area\\">
-                                    <div class=\\"fd-card__subtitle\\">Card Subtitle</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class=\\"fd-card__header-main-actions\\">
-                            <button class=\\"fd-button fd-button--transparent\\" aria-label=\\"overflow\\">
-                                <i class=\\"sap-icon--overflow\\"></i>
-                            </button>
-                            <span class=\\"fd-object-status fd-card__counter\\">1 of 3</span>
-                        </div>
-                    </div>
-                    <div class=\\"fd-card__header-extended\\" role=\\"group\\" aria-roledescription=\\"Extended content\\">
-                        <div class=\\"fd-card__header-column\\">
-                            <div class=\\"fd-card__header-row\\">
-                                <span class=\\"fd-object-status fd-object-status--inverted fd-object-status--positive\\">
-                                    <i class=\\"fd-object-status__icon sap-icon--sys-enter-2\\" role=\\"presentation\\"></i>
-                                    <span class=\\"fd-object-status__text\\">Positive</span>
-                                </span>
-                            </div>
-                        </div>
-                        <div class=\\"fd-card__header-column fd-card__header-column--right-aligned\\">
-                            <div class=\\"fd-card__header-row\\">
-                                <div class=\\"fd-text\\">Timestamp</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-    
-                <div class=\\"fd-card__content is-focus\\" role=\\"group\\" aria-roledescription=\\"Card content\\"></div>
-            </div>
-        </div>
-    </div>
 </div>"
 `;
 
-exports[`Check stories > Components/Card > Story CardMedia > Should match snapshot 1`] = `
-"<h3>Media with image/graphic</h3>
-<div style=\\"display:flex; justify-content:space-around; flex-wrap: wrap\\">
+exports[`Check stories > Components/Card/Card > Story CardNonInteractiveHeader > Should match snapshot 1`] = `
+"<div style=\\"display:flex; justify-content:space-around; flex-wrap: wrap\\">
     <div style=\\"width: 300px; height: 400px; margin: 1rem;\\">
-        <div class=\\"fd-card\\" role=\\"region\\" aria-label=\\"Card Example\\">
-            <div class=\\"fd-card__media\\">
-                <div class=\\"fd-card__media-image-container\\">
-                    <img class=\\"fd-card__media-image\\" src=\\"/assets/images/landscape/L1.jpg\\" />
-                </div>
-            </div>
-
-            <div class=\\"fd-card__header\\" role=\\"group\\" aria-roledescription=\\"Card Header\\" aria-labelledby=\\"card-title-1a\\">
+        <div class=\\"fd-card\\" role=\\"region\\" aria-roledescription=\\"Card\\" aria-labelledby=\\"card-title-4a\\">
+            
+            <div class=\\"fd-card__header fd-card__header--interactive\\" role=\\"group\\" aria-roledescription=\\"Card Header\\">
                 <div class=\\"fd-card__header-main\\">
-                    <div class=\\"fd-card__header-main-container\\">
+                    <div class=\\"fd-card__header-main-container\\"role=\\"button\\" tabindex=\\"0\\" aria-description=\\"Activate for action/navigation\\" aria-label=\\"Activate for action/navigation\\" title=\\"Activate for action/navigation\\">
                         <span
                             class=\\"fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--thumbnail fd-card__avatar\\"
                             style=\\"background-image: url('/assets/images/backgrounds/city.jpg')\\"
@@ -13140,23 +12745,18 @@ exports[`Check stories > Components/Card > Story CardMedia > Should match snapsh
                         </span>
                         <div class=\\"fd-card__header-text\\">
                             <div class=\\"fd-card__title-area\\">
-                                <div class=\\"fd-card__title\\" id=\\"card-title-1a\\" role=\\"heading\\" aria-level=\\"3\\">Card Title</div>
+                                <div class=\\"fd-card__title\\" id=\\"card-title-4a\\" role=\\"heading\\" aria-level=\\"3\\">Normal state</div>
                             </div>
                             <div class=\\"fd-card__subtitle-area\\">
                                 <div class=\\"fd-card__subtitle\\">Card Subtitle</div>
                             </div>
                         </div>
                     </div>
-                    <div class=\\"fd-card__header-main-actions\\">
-                        <button class=\\"fd-button fd-button--transparent\\" aria-label=\\"overflow\\">
-                            <i class=\\"sap-icon--overflow\\"></i>
-                        </button>
-                        <span class=\\"fd-object-status fd-card__counter\\">1 of 3</span>
-                    </div>
                 </div>
             </div>
 
             <div class=\\"fd-card__content\\" role=\\"group\\" aria-roledescription=\\"Card content\\"></div>
+            
             <div class=\\"fd-card__footer\\">
                 <div class=\\"fd-card__footer-actions\\">
                     <button class=\\"fd-button fd-button--positive\\">
@@ -13171,15 +12771,11 @@ exports[`Check stories > Components/Card > Story CardMedia > Should match snapsh
     </div>
 
     <div style=\\"width: 300px; height: 400px; margin: 1rem;\\">
-        <div class=\\"fd-card\\" role=\\"region\\" aria-label=\\"Card Example\\">
-            <div class=\\"fd-card__media fd-card__media--with-padding\\">
-                <div class=\\"fd-card__media-image-container\\">
-                    <img class=\\"fd-card__media-image\\" src=\\"/assets/images/landscape/L1.jpg\\" />
-                </div>
-            </div>
-            <div class=\\"fd-card__header\\" role=\\"group\\" aria-roledescription=\\"Card Header\\" aria-labelledby=\\"card-title-2a\\">
-                <div class=\\"fd-card__header-main\\">
-                    <div class=\\"fd-card__header-main-container\\">
+        <div class=\\"fd-card\\" role=\\"region\\" aria-roledescription=\\"Card\\" aria-labelledby=\\"card-title-4aa\\">
+            
+            <div class=\\"fd-card__header fd-card__header--interactive\\" role=\\"group\\" aria-roledescription=\\"Card Header\\">
+                <div class=\\"fd-card__header-main is-hover\\">
+                    <div class=\\"fd-card__header-main-container\\"role=\\"button\\" tabindex=\\"0\\" aria-description=\\"Activate for action/navigation\\" aria-label=\\"Activate for action/navigation\\" title=\\"Activate for action/navigation\\">
                         <span
                             class=\\"fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--thumbnail fd-card__avatar\\"
                             style=\\"background-image: url('/assets/images/backgrounds/city.jpg')\\"
@@ -13188,23 +12784,18 @@ exports[`Check stories > Components/Card > Story CardMedia > Should match snapsh
                         </span>
                         <div class=\\"fd-card__header-text\\">
                             <div class=\\"fd-card__title-area\\">
-                                <div class=\\"fd-card__title\\" id=\\"card-title-2a\\" role=\\"heading\\" aria-level=\\"3\\">Card Title</div>
+                                <div class=\\"fd-card__title\\" id=\\"card-title-4aa\\" role=\\"heading\\" aria-level=\\"3\\">Hover on header</div>
                             </div>
                             <div class=\\"fd-card__subtitle-area\\">
                                 <div class=\\"fd-card__subtitle\\">Card Subtitle</div>
                             </div>
                         </div>
                     </div>
-                    <div class=\\"fd-card__header-main-actions\\">
-                        <button class=\\"fd-button fd-button--transparent\\" aria-label=\\"overflow\\">
-                            <i class=\\"sap-icon--overflow\\"></i>
-                        </button>
-                        <span class=\\"fd-object-status fd-card__counter\\">1 of 3</span>
-                    </div>
                 </div>
             </div>
 
             <div class=\\"fd-card__content\\" role=\\"group\\" aria-roledescription=\\"Card content\\"></div>
+            
             <div class=\\"fd-card__footer\\">
                 <div class=\\"fd-card__footer-actions\\">
                     <button class=\\"fd-button fd-button--positive\\">
@@ -13218,16 +12809,11 @@ exports[`Check stories > Components/Card > Story CardMedia > Should match snapsh
         </div>
     </div>
 
-    <div style=\\"width: 300px; height: fit-content; margin: 1rem;\\">
-        <div class=\\"fd-card\\" role=\\"region\\" aria-label=\\"Card Example\\">
-            <div class=\\"fd-card__media\\">
-                <div class=\\"fd-card__media-image-container\\">
-                    <img class=\\"fd-card__media-image\\" src=\\"/assets/images/landscape/L1.jpg\\" />
-                </div>
-            </div>
-            <div class=\\"fd-card__header fd-card__header--interactive\\" role=\\"group\\" aria-roledescription=\\"Card Header\\" aria-labelledby=\\"card-title-3a\\">
+    <div style=\\"width: 300px; height: 400px; margin: 1rem;\\">
+        <div class=\\"fd-card\\" role=\\"region\\" aria-roledescription=\\"Card\\" aria-labelledby=\\"card-title-5a\\">
+            <div class=\\"fd-card__header fd-card__header--interactive\\" role=\\"group\\" aria-roledescription=\\"Card Header\\">
                 <div class=\\"fd-card__header-main\\">
-                    <div class=\\"fd-card__header-main-container is-focus\\" role=\\"button\\" tabindex=\\"0\\">
+                    <div class=\\"fd-card__header-main-container is-active\\"role=\\"button\\" tabindex=\\"0\\" aria-description=\\"Activate for action/navigation\\" aria-label=\\"Activate for action/navigation\\" title=\\"Activate for action/navigation\\">
                         <span
                             class=\\"fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--thumbnail fd-card__avatar\\"
                             style=\\"background-image: url('/assets/images/backgrounds/city.jpg')\\"
@@ -13236,35 +12822,36 @@ exports[`Check stories > Components/Card > Story CardMedia > Should match snapsh
                         </span>
                         <div class=\\"fd-card__header-text\\">
                             <div class=\\"fd-card__title-area\\">
-                                <div class=\\"fd-card__title\\" id=\\"card-title-3a\\" role=\\"heading\\" aria-level=\\"3\\">Card Title</div>
+                                <div class=\\"fd-card__title\\" id=\\"card-title-5a\\" role=\\"heading\\" aria-level=\\"3\\">Active Header</div>
                             </div>
                             <div class=\\"fd-card__subtitle-area\\">
                                 <div class=\\"fd-card__subtitle\\">Card Subtitle</div>
                             </div>
                         </div>
                     </div>
-                    <div class=\\"fd-card__header-main-actions\\">
-                        <button class=\\"fd-button fd-button--transparent\\" aria-label=\\"overflow\\">
-                            <i class=\\"sap-icon--overflow\\"></i>
-                        </button>
-                        <span class=\\"fd-object-status fd-card__counter\\">1 of 3</span>
-                    </div>
                 </div>
             </div>
-            <div class=\\"fd-card__content\\" role=\\"group\\" aria-roledescription=\\"Card content\\" style=\\"height: 100px;\\"></div>
+
+            <div class=\\"fd-card__content\\" role=\\"group\\" aria-roledescription=\\"Card content\\"></div>
+            
+            <div class=\\"fd-card__footer\\">
+                <div class=\\"fd-card__footer-actions\\">
+                    <button class=\\"fd-button fd-button--positive\\">
+                        Button
+                    </button>
+                    <button class=\\"fd-button fd-button--negative\\">
+                        Button
+                    </button>
+                </div>
+            </div>
         </div>
     </div>
 
-    <div style=\\"width: 300px; height: fit-content; margin: 1rem;\\">
-        <div class=\\"fd-card\\" role=\\"region\\" aria-label=\\"Card Example\\">
-            <div class=\\"fd-card__media\\">
-                <div class=\\"fd-card__media-image-container\\">
-                    <img class=\\"fd-card__media-image\\" src=\\"/assets/images/landscape/L1.jpg\\" />
-                </div>
-            </div>
-            <div class=\\"fd-card__header fd-card__header--interactive\\" role=\\"group\\" aria-roledescription=\\"Card Header\\" aria-labelledby=\\"card-title-4a\\">
+    <div style=\\"width: 300px; height: 400px; margin: 1rem;\\">
+        <div class=\\"fd-card\\" role=\\"region\\" aria-labelledby=\\"card-title-6a\\" aria-roledescription=\\"Card\\">
+            <div class=\\"fd-card__header fd-card__header--interactive\\" role=\\"group\\" aria-roledescription=\\"Card Header\\">
                 <div class=\\"fd-card__header-main\\">
-                    <div class=\\"fd-card__header-main-container is-focus\\" role=\\"button\\" tabindex=\\"0\\">
+                    <div class=\\"fd-card__header-main-container is-focus\\"role=\\"button\\" tabindex=\\"0\\" aria-description=\\"Activate for action/navigation\\" aria-label=\\"Activate for action/navigation\\" title=\\"Activate for action/navigation\\">
                         <span
                             class=\\"fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--thumbnail fd-card__avatar\\"
                             style=\\"background-image: url('/assets/images/backgrounds/city.jpg')\\"
@@ -13273,523 +12860,100 @@ exports[`Check stories > Components/Card > Story CardMedia > Should match snapsh
                         </span>
                         <div class=\\"fd-card__header-text\\">
                             <div class=\\"fd-card__title-area\\">
-                                <div class=\\"fd-card__title\\" id=\\"card-title-4a\\" role=\\"heading\\" aria-level=\\"3\\">Card Title</div>
+                                <div class=\\"fd-card__title\\" id=\\"card-title-6a\\" role=\\"heading\\" aria-level=\\"3\\">Focus Header</div>
                             </div>
                             <div class=\\"fd-card__subtitle-area\\">
                                 <div class=\\"fd-card__subtitle\\">Card Subtitle</div>
                             </div>
                         </div>
                     </div>
-                    <div class=\\"fd-card__header-main-actions\\">
-                        <button class=\\"fd-button fd-button--transparent\\" aria-label=\\"overflow\\">
-                            <i class=\\"sap-icon--overflow\\"></i>
-                        </button>
-                        <span class=\\"fd-object-status fd-card__counter\\">1 of 3</span>
+                </div>
+            </div>
+
+            <div class=\\"fd-card__content\\" role=\\"group\\" aria-roledescription=\\"Card content\\"></div>
+            
+            <div class=\\"fd-card__footer\\">
+                <div class=\\"fd-card__footer-actions\\">
+                    <button class=\\"fd-button fd-button--positive\\">
+                        Button
+                    </button>
+                    <button class=\\"fd-button fd-button--negative\\">
+                        Button
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div style=\\"width: 300px; height: 400px; margin: 1rem;\\">
+        <div class=\\"fd-card\\" role=\\"region\\" aria-labelledby=\\"card-title-7a\\" aria-roledescription=\\"Card\\">
+            <div class=\\"fd-card__content\\" role=\\"group\\" aria-roledescription=\\"Card content\\"></div>
+            <div class=\\"fd-card__header fd-card__header--interactive\\" role=\\"group\\" aria-roledescription=\\"Card Header\\">
+                <div class=\\"fd-card__header-main\\">
+                    <div class=\\"fd-card__header-main-container is-focus\\"role=\\"button\\" tabindex=\\"0\\" aria-description=\\"Activate for action/navigation\\" aria-label=\\"Activate for action/navigation\\" title=\\"Activate for action/navigation\\">
+                        <span
+                            class=\\"fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--thumbnail fd-card__avatar\\"
+                            style=\\"background-image: url('/assets/images/backgrounds/city.jpg')\\"
+                            role=\\"img\\"
+                            aria-label=\\"John Doe\\">
+                        </span>
+                        <div class=\\"fd-card__header-text\\">
+                            <div class=\\"fd-card__title-area\\">
+                                <div class=\\"fd-card__title\\" id=\\"card-title-7a\\" role=\\"heading\\" aria-level=\\"3\\">Focus Header</div>
+                            </div>
+                            <div class=\\"fd-card__subtitle-area\\">
+                                <div class=\\"fd-card__subtitle\\">Card Subtitle</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div style=\\"width: 300px; height: 400px; margin: 1rem;\\">
+        <div class=\\"fd-card\\" role=\\"region\\" aria-labelledby=\\"card-title-8a\\" aria-roledescription=\\"Card\\">
+            <div class=\\"fd-card__content\\" role=\\"group\\" aria-roledescription=\\"Card content\\"></div>
+            <div class=\\"fd-card__header fd-card__header--interactive\\" role=\\"group\\" aria-roledescription=\\"Card Header\\">
+                <div class=\\"fd-card__header-main\\">
+                    <div class=\\"fd-card__header-main-container is-focus\\"role=\\"button\\" tabindex=\\"0\\" aria-description=\\"Activate for action/navigation\\" aria-label=\\"Activate for action/navigation\\" title=\\"Activate for action/navigation\\">
+                        <span
+                            class=\\"fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--thumbnail fd-card__avatar\\"
+                            style=\\"background-image: url('/assets/images/backgrounds/city.jpg')\\"
+                            role=\\"img\\"
+                            aria-label=\\"John Doe\\">
+                        </span>
+                        <div class=\\"fd-card__header-text\\">
+                            <div class=\\"fd-card__title-area\\">
+                                <div class=\\"fd-card__title\\" id=\\"card-title-8a\\" role=\\"heading\\" aria-level=\\"3\\">Focus Header</div>
+                            </div>
+                            <div class=\\"fd-card__subtitle-area\\">
+                                <div class=\\"fd-card__subtitle\\">Card Subtitle</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class=\\"fd-card__header-extended\\" role=\\"group\\" aria-roledescription=\\"Extended content\\">
+                    <div class=\\"fd-card__header-column fd-card__header-column--right-aligned\\">
+                        <div class=\\"fd-card__header-row\\">
+                            <div class=\\"fd-text\\">Timestamp</div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </div>
-
-<h3>Title on Media, Shell Category background colors </h3>
-<div style=\\"display:flex; justify-content:space-around; flex-wrap: wrap\\">
-    <div style=\\"width: 300px; height: 400px; margin: 1rem;\\">
-        <div class=\\"fd-card\\" role=\\"region\\" aria-label=\\"Card Example\\">
-            <div class=\\"fd-card__media fd-card__media--bg-shell-1\\">
-                <div class=\\"fd-card__media-content-container\\">
-                    <div class=\\"fd-card__media-heading\\" role=\\"heading\\" aria-level=\\"2\\">Incoming Applications</div>
-                </div>
-            </div>
-            <div class=\\"fd-card__header\\" role=\\"group\\" aria-roledescription=\\"Card Header\\" aria-labelledby=\\"card-title-5a\\">
-                <div class=\\"fd-card__header-main\\">
-                    <div class=\\"fd-card__header-main-container\\">
-                        <span
-                            class=\\"fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--thumbnail fd-card__avatar\\"
-                            style=\\"background-image: url('/assets/images/backgrounds/city.jpg')\\"
-                            role=\\"img\\"
-                            aria-label=\\"John Doe\\">
-                        </span>
-                        <div class=\\"fd-card__header-text\\">
-                            <div class=\\"fd-card__title-area\\">
-                                <div class=\\"fd-card__title\\" id=\\"card-title-5a\\" role=\\"heading\\" aria-level=\\"3\\">Card Title</div>
-                            </div>
-                            <div class=\\"fd-card__subtitle-area\\">
-                                <div class=\\"fd-card__subtitle\\">Card Subtitle</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class=\\"fd-card__header-main-actions\\">
-                        <button class=\\"fd-button fd-button--transparent\\" aria-label=\\"overflow\\">
-                            <i class=\\"sap-icon--overflow\\"></i>
-                        </button>
-                        <span class=\\"fd-object-status fd-card__counter\\">1 of 3</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class=\\"fd-card__content\\" role=\\"group\\" aria-roledescription=\\"Card content\\"></div>
-            <div class=\\"fd-card__footer\\">
-                <div class=\\"fd-card__footer-actions\\">
-                    <button class=\\"fd-button fd-button--positive\\">
-                        Button
-                    </button>
-                    <button class=\\"fd-button fd-button--negative\\">
-                        Button
-                    </button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div style=\\"width: 300px; height: 400px; margin: 1rem;\\">
-        <div class=\\"fd-card\\" role=\\"region\\" aria-label=\\"Card Example\\">
-            <div class=\\"fd-card__media fd-card__media--bg-shell-2\\">
-                <div class=\\"fd-card__media-content-container\\">
-                    <div class=\\"fd-card__media-heading\\" role=\\"heading\\" aria-level=\\"2\\">Incoming Applications</div>
-                </div>
-            </div>
-            <div class=\\"fd-card__header\\" role=\\"group\\" aria-roledescription=\\"Card Header\\" aria-labelledby=\\"card-title-6a\\">
-                <div class=\\"fd-card__header-main\\">
-                    <div class=\\"fd-card__header-main-container\\">
-                        <span
-                            class=\\"fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--thumbnail fd-card__avatar\\"
-                            style=\\"background-image: url('/assets/images/backgrounds/city.jpg')\\"
-                            role=\\"img\\"
-                            aria-label=\\"John Doe\\">
-                        </span>
-                        <div class=\\"fd-card__header-text\\">
-                            <div class=\\"fd-card__title-area\\">
-                                <div class=\\"fd-card__title\\" id=\\"card-title-6a\\" role=\\"heading\\" aria-level=\\"3\\">Card Title</div>
-                            </div>
-                            <div class=\\"fd-card__subtitle-area\\">
-                                <div class=\\"fd-card__subtitle\\">Card Subtitle</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class=\\"fd-card__header-main-actions\\">
-                        <button class=\\"fd-button fd-button--transparent\\" aria-label=\\"overflow\\">
-                            <i class=\\"sap-icon--overflow\\"></i>
-                        </button>
-                        <span class=\\"fd-object-status fd-card__counter\\">1 of 3</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class=\\"fd-card__content\\" role=\\"group\\" aria-roledescription=\\"Card content\\"></div>
-            <div class=\\"fd-card__footer\\">
-                <div class=\\"fd-card__footer-actions\\">
-                    <button class=\\"fd-button fd-button--positive\\">
-                        Button
-                    </button>
-                    <button class=\\"fd-button fd-button--negative\\">
-                        Button
-                    </button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div style=\\"width: 300px; height: 400px; margin: 1rem;\\">
-        <div class=\\"fd-card\\" role=\\"region\\" aria-label=\\"Card Example\\">
-            <div class=\\"fd-card__media fd-card__media--bg-shell-3\\">
-                <div class=\\"fd-card__media-content-container\\">
-                    <div class=\\"fd-card__media-heading\\" role=\\"heading\\" aria-level=\\"2\\">Incoming Applications</div>
-                </div>
-            </div>
-            <div class=\\"fd-card__header\\" role=\\"group\\" aria-roledescription=\\"Card Header\\" aria-labelledby=\\"card-title-7a\\">
-                <div class=\\"fd-card__header-main\\">
-                    <div class=\\"fd-card__header-main-container\\">
-                        <span
-                            class=\\"fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--thumbnail fd-card__avatar\\"
-                            style=\\"background-image: url('/assets/images/backgrounds/city.jpg')\\"
-                            role=\\"img\\"
-                            aria-label=\\"John Doe\\">
-                        </span>
-                        <div class=\\"fd-card__header-text\\">
-                            <div class=\\"fd-card__title-area\\">
-                                <div class=\\"fd-card__title\\" id=\\"card-title-7a\\" role=\\"heading\\" aria-level=\\"3\\">Card Title</div>
-                            </div>
-                            <div class=\\"fd-card__subtitle-area\\">
-                                <div class=\\"fd-card__subtitle\\">Card Subtitle</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class=\\"fd-card__header-main-actions\\">
-                        <button class=\\"fd-button fd-button--transparent\\" aria-label=\\"overflow\\">
-                            <i class=\\"sap-icon--overflow\\"></i>
-                        </button>
-                        <span class=\\"fd-object-status fd-card__counter\\">1 of 3</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class=\\"fd-card__content\\" role=\\"group\\" aria-roledescription=\\"Card content\\"></div>
-            <div class=\\"fd-card__footer\\">
-                <div class=\\"fd-card__footer-actions\\">
-                    <button class=\\"fd-button fd-button--positive\\">
-                        Button
-                    </button>
-                    <button class=\\"fd-button fd-button--negative\\">
-                        Button
-                    </button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div style=\\"width: 300px; height: 400px; margin: 1rem;\\">
-        <div class=\\"fd-card\\" role=\\"region\\" aria-label=\\"Card Example\\">
-            <div class=\\"fd-card__media fd-card__media--bg-shell-4\\">
-                <div class=\\"fd-card__media-content-container\\">
-                    <div class=\\"fd-card__media-heading\\" role=\\"heading\\" aria-level=\\"2\\">Incoming Applications</div>
-                </div>
-            </div>
-            <div class=\\"fd-card__header\\" role=\\"group\\" aria-roledescription=\\"Card Header\\" aria-labelledby=\\"card-title-8a\\">
-                <div class=\\"fd-card__header-main\\">
-                    <div class=\\"fd-card__header-main-container\\">
-                        <span
-                            class=\\"fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--thumbnail fd-card__avatar\\"
-                            style=\\"background-image: url('/assets/images/backgrounds/city.jpg')\\"
-                            role=\\"img\\"
-                            aria-label=\\"John Doe\\">
-                        </span>
-                        <div class=\\"fd-card__header-text\\">
-                            <div class=\\"fd-card__title-area\\">
-                                <div class=\\"fd-card__title\\" id=\\"card-title-8a\\" role=\\"heading\\" aria-level=\\"3\\">Card Title</div>
-                            </div>
-                            <div class=\\"fd-card__subtitle-area\\">
-                                <div class=\\"fd-card__subtitle\\">Card Subtitle</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class=\\"fd-card__header-main-actions\\">
-                        <button class=\\"fd-button fd-button--transparent\\" aria-label=\\"overflow\\">
-                            <i class=\\"sap-icon--overflow\\"></i>
-                        </button>
-                        <span class=\\"fd-object-status fd-card__counter\\">1 of 3</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class=\\"fd-card__content\\" role=\\"group\\" aria-roledescription=\\"Card content\\"></div>
-            <div class=\\"fd-card__footer\\">
-                <div class=\\"fd-card__footer-actions\\">
-                    <button class=\\"fd-button fd-button--positive\\">
-                        Button
-                    </button>
-                    <button class=\\"fd-button fd-button--negative\\">
-                        Button
-                    </button>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<h3>Title on Media, Legend background colors </h3>
-<div style=\\"display:flex; justify-content:space-around; flex-wrap: wrap\\">
-    <div style=\\"width: 300px; height: 400px; margin: 1rem;\\">
-        <div class=\\"fd-card\\" role=\\"region\\" aria-label=\\"Card Example\\">
-            <div class=\\"fd-card__media fd-card__media--bg-legend-1\\">
-                <div class=\\"fd-card__media-content-container\\">
-                    <div class=\\"fd-card__media-heading\\" role=\\"heading\\" aria-level=\\"2\\">Incoming Applications</div>
-                </div>
-            </div>
-            <div class=\\"fd-card__header\\" role=\\"group\\" aria-roledescription=\\"Card Header\\" aria-labelledby=\\"card-title-9a\\">
-                <div class=\\"fd-card__header-main\\">
-                    <div class=\\"fd-card__header-main-container\\">
-                        <span
-                            class=\\"fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--thumbnail fd-card__avatar\\"
-                            style=\\"background-image: url('/assets/images/backgrounds/city.jpg')\\"
-                            role=\\"img\\"
-                            aria-label=\\"John Doe\\">
-                        </span>
-                        <div class=\\"fd-card__header-text\\">
-                            <div class=\\"fd-card__title-area\\">
-                                <div class=\\"fd-card__title\\" id=\\"card-title-9a\\" role=\\"heading\\" aria-level=\\"3\\">Card Title</div>
-                            </div>
-                            <div class=\\"fd-card__subtitle-area\\">
-                                <div class=\\"fd-card__subtitle\\">Card Subtitle</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class=\\"fd-card__header-main-actions\\">
-                        <button class=\\"fd-button fd-button--transparent\\" aria-label=\\"overflow\\">
-                            <i class=\\"sap-icon--overflow\\"></i>
-                        </button>
-                        <span class=\\"fd-object-status fd-card__counter\\">1 of 3</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class=\\"fd-card__content\\" role=\\"group\\" aria-roledescription=\\"Card content\\"></div>
-            <div class=\\"fd-card__footer\\">
-                <div class=\\"fd-card__footer-actions\\">
-                    <button class=\\"fd-button fd-button--positive\\">
-                        Button
-                    </button>
-                    <button class=\\"fd-button fd-button--negative\\">
-                        Button
-                    </button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div style=\\"width: 300px; height: 400px; margin: 1rem;\\">
-        <div class=\\"fd-card\\" role=\\"region\\" aria-label=\\"Card Example\\">
-            <div class=\\"fd-card__media fd-card__media--bg-legend-2\\">
-                <div class=\\"fd-card__media-content-container\\">
-                    <div class=\\"fd-card__media-heading\\" role=\\"heading\\" aria-level=\\"2\\">Incoming Applications</div>
-                </div>
-            </div>
-            <div class=\\"fd-card__header\\" role=\\"group\\" aria-roledescription=\\"Card Header\\" aria-labelledby=\\"card-title-10a\\">
-                <div class=\\"fd-card__header-main\\">
-                    <div class=\\"fd-card__header-main-container\\">
-                        <span
-                            class=\\"fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--thumbnail fd-card__avatar\\"
-                            style=\\"background-image: url('/assets/images/backgrounds/city.jpg')\\"
-                            role=\\"img\\"
-                            aria-label=\\"John Doe\\">
-                        </span>
-                        <div class=\\"fd-card__header-text\\">
-                            <div class=\\"fd-card__title-area\\">
-                                <div class=\\"fd-card__title\\" id=\\"card-title-10a\\" role=\\"heading\\" aria-level=\\"3\\">Card Title</div>
-                            </div>
-                            <div class=\\"fd-card__subtitle-area\\">
-                                <div class=\\"fd-card__subtitle\\">Card Subtitle</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class=\\"fd-card__header-main-actions\\">
-                        <button class=\\"fd-button fd-button--transparent\\" aria-label=\\"overflow\\">
-                            <i class=\\"sap-icon--overflow\\"></i>
-                        </button>
-                        <span class=\\"fd-object-status fd-card__counter\\">1 of 3</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class=\\"fd-card__content\\" role=\\"group\\" aria-roledescription=\\"Card content\\"></div>
-            <div class=\\"fd-card__footer\\">
-                <div class=\\"fd-card__footer-actions\\">
-                    <button class=\\"fd-button fd-button--positive\\">
-                        Button
-                    </button>
-                    <button class=\\"fd-button fd-button--negative\\">
-                        Button
-                    </button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div style=\\"width: 300px; height: 400px; margin: 1rem;\\">
-        <div class=\\"fd-card\\" role=\\"region\\" aria-label=\\"Card Example\\">
-            <div class=\\"fd-card__media fd-card__media--bg-legend-3\\">
-                <div class=\\"fd-card__media-content-container\\">
-                    <div class=\\"fd-card__media-heading\\" role=\\"heading\\" aria-level=\\"2\\">Incoming Applications</div>
-                </div>
-            </div>
-            <div class=\\"fd-card__header\\" role=\\"group\\" aria-roledescription=\\"Card Header\\" aria-labelledby=\\"card-title-11a\\">
-                <div class=\\"fd-card__header-main\\">
-                    <div class=\\"fd-card__header-main-container\\">
-                        <span
-                            class=\\"fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--thumbnail fd-card__avatar\\"
-                            style=\\"background-image: url('/assets/images/backgrounds/city.jpg')\\"
-                            role=\\"img\\"
-                            aria-label=\\"John Doe\\">
-                        </span>
-                        <div class=\\"fd-card__header-text\\">
-                            <div class=\\"fd-card__title-area\\">
-                                <div class=\\"fd-card__title\\" id=\\"card-title-11a\\" role=\\"heading\\" aria-level=\\"3\\">Card Title</div>
-                            </div>
-                            <div class=\\"fd-card__subtitle-area\\">
-                                <div class=\\"fd-card__subtitle\\">Card Subtitle</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class=\\"fd-card__header-main-actions\\">
-                        <button class=\\"fd-button fd-button--transparent\\" aria-label=\\"overflow\\">
-                            <i class=\\"sap-icon--overflow\\"></i>
-                        </button>
-                        <span class=\\"fd-object-status fd-card__counter\\">1 of 3</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class=\\"fd-card__content\\" role=\\"group\\" aria-roledescription=\\"Card content\\"></div>
-            <div class=\\"fd-card__footer\\">
-                <div class=\\"fd-card__footer-actions\\">
-                    <button class=\\"fd-button fd-button--positive\\">
-                        Button
-                    </button>
-                    <button class=\\"fd-button fd-button--negative\\">
-                        Button
-                    </button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div style=\\"width: 300px; height: 400px; margin: 1rem;\\">
-        <div class=\\"fd-card\\" role=\\"region\\" aria-label=\\"Card Example\\">
-            <div class=\\"fd-card__media fd-card__media--bg-legend-4\\">
-                <div class=\\"fd-card__media-content-container\\">
-                    <div class=\\"fd-card__media-heading\\" role=\\"heading\\" aria-level=\\"2\\">Incoming Applications</div>
-                </div>
-            </div>
-            <div class=\\"fd-card__header\\" role=\\"group\\" aria-roledescription=\\"Card Header\\" aria-labelledby=\\"card-title-12a\\">
-                <div class=\\"fd-card__header-main\\">
-                    <div class=\\"fd-card__header-main-container\\">
-                        <span
-                            class=\\"fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--thumbnail fd-card__avatar\\"
-                            style=\\"background-image: url('/assets/images/backgrounds/city.jpg')\\"
-                            role=\\"img\\"
-                            aria-label=\\"John Doe\\">
-                        </span>
-                        <div class=\\"fd-card__header-text\\">
-                            <div class=\\"fd-card__title-area\\">
-                                <div class=\\"fd-card__title\\" id=\\"card-title-12a\\" role=\\"heading\\" aria-level=\\"3\\">Card Title</div>
-                            </div>
-                            <div class=\\"fd-card__subtitle-area\\">
-                                <div class=\\"fd-card__subtitle\\">Card Subtitle</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class=\\"fd-card__header-main-actions\\">
-                        <button class=\\"fd-button fd-button--transparent\\" aria-label=\\"overflow\\">
-                            <i class=\\"sap-icon--overflow\\"></i>
-                        </button>
-                        <span class=\\"fd-object-status fd-card__counter\\">1 of 3</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class=\\"fd-card__content\\" role=\\"group\\" aria-roledescription=\\"Card content\\"></div>
-            <div class=\\"fd-card__footer\\">
-                <div class=\\"fd-card__footer-actions\\">
-                    <button class=\\"fd-button fd-button--positive\\">
-                        Button
-                    </button>
-                    <button class=\\"fd-button fd-button--negative\\">
-                        Button
-                    </button>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<h3>Media as Banner</h3>
-<div style=\\"width: 100%;\\">
-    <div class=\\"fd-card fd-card--banner\\" role=\\"region\\" aria-label=\\"Card Example\\">
-        <div class=\\"fd-card__media fd-card__media--bg-shell-13\\">
-            <div class=\\"fd-card__media-content-container\\">
-                <div class=\\"fd-card__media-heading\\" role=\\"heading\\" aria-level=\\"2\\">Get Ready for the AI Learning Days!</div>
-                <p class=\\"fd-card__media-text\\">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat quo delectus deleniti excepturi tempora impedit nobis nulla sint qui quae consequuntur reprehenderit, accusamus amet nihil esse quia doloribus praesentium quidem?
-                </p>
-                <button class=\\"fd-button\\">
-                    <span class=\\"fd-button__text\\">Register</span>
-                </button>
-            </div>
-        </div>
-    </div>
-</div>
-
-<br><br>
-
-<div style=\\"width: 100%; height: 300px;\\">
-    <div class=\\"fd-card fd-card--banner\\" role=\\"region\\" aria-label=\\"Card Example\\">
-        <div class=\\"fd-card__media fd-card__media--bg-legend-13\\">
-            <div class=\\"fd-card__media-content-container\\">
-                <div class=\\"fd-card__media-heading\\" role=\\"heading\\" aria-level=\\"2\\">Get Ready for the AI Learning Days!</div>
-                <p class=\\"fd-card__media-text\\">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat quo delectus deleniti excepturi tempora impedit nobis nulla sint qui quae consequuntur reprehenderit, accusamus amet nihil esse quia doloribus praesentium quidem?
-                </p>
-                <button class=\\"fd-button fd-button--emphasized\\">
-                    <span class=\\"fd-button__text\\">Register</span>
-                </button>
-            </div>
-        </div>
-    </div>
-</div>
-
-<br><br>
-
-<div style=\\"width: 100%; height: 400px;\\">
-    <div class=\\"fd-card fd-card--banner\\" role=\\"region\\" aria-label=\\"Card Example\\">
-        <div class=\\"fd-card__media\\">
-            <div class=\\"fd-card__media-content-container fd-card__media-content-container--bg-shell-13\\">
-                <div class=\\"fd-card__media-heading\\" role=\\"heading\\" aria-level=\\"2\\">Get Ready for the AI Learning Days!</div>
-                <p class=\\"fd-card__media-text\\">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat quo delectus deleniti excepturi tempora impedit nobis nulla sint qui quae consequuntur reprehenderit, accusamus amet nihil esse quia doloribus praesentium quidem?
-                </p>
-                <button class=\\"fd-button\\">
-                    <span class=\\"fd-button__text\\">Register</span>
-                </button>
-            </div>
-
-            <div class=\\"fd-card__media-image-container\\">
-                <img class=\\"fd-card__media-image\\" src=\\"/assets/images/landscape/L1.jpg\\" />
-            </div>
-        </div>
-    </div>
-</div>
-
-<br><br>
-<h3>Media as Banner with content overlay</h3>
-<div style=\\"width: 100%; height: 400px;\\">
-    <div class=\\"fd-card fd-card--banner\\" role=\\"region\\" aria-label=\\"Card Example\\">
-        <div class=\\"fd-card__media\\">
-            <div class=\\"fd-card__media-content-container fd-card__media-content-container--overlay\\">
-                <div class=\\"fd-card__media-heading\\" role=\\"heading\\" aria-level=\\"2\\">Get Ready for the AI Learning Days!</div>
-                <p class=\\"fd-card__media-text\\">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat quo delectus deleniti excepturi tempora impedit nobis nulla sint qui quae consequuntur reprehenderit, accusamus amet nihil esse quia doloribus praesentium quidem?
-                </p>
-                <button class=\\"fd-button\\">
-                    <span class=\\"fd-button__text\\">Register</span>
-                </button>
-            </div>
-
-            <div class=\\"fd-card__media-image-container\\">
-                <img class=\\"fd-card__media-image\\" src=\\"/assets/images/landscape/L1.jpg\\" />
-            </div>
-        </div>
-    </div>
-</div>
-
-<br><br>
-<div style=\\"width: 100%; height: 400px;\\">
-    <div class=\\"fd-card fd-card--banner\\" role=\\"region\\" aria-label=\\"Card Example\\">
-        <div class=\\"fd-card__media\\">
-            <div class=\\"fd-card__media-content-container fd-card__media-content-container--overlay fd-card__media-content-container--bg-legend-1\\">
-                <div class=\\"fd-card__media-heading\\" role=\\"heading\\" aria-level=\\"2\\">Get Ready for the AI Learning Days!</div>
-                <p class=\\"fd-card__media-text\\">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat quo delectus deleniti excepturi tempora impedit nobis nulla sint qui quae consequuntur reprehenderit, accusamus amet nihil esse quia doloribus praesentium quidem?
-                </p>
-                <button class=\\"fd-button fd-button--emphasized\\">
-                    <span class=\\"fd-button__text\\">Register</span>
-                </button>
-            </div>
-
-            <div class=\\"fd-card__media-image-container\\">
-                <img class=\\"fd-card__media-image\\" src=\\"/assets/images/landscape/L1.jpg\\" />
-            </div>
-        </div>
-    </div>
-</div>"
+"
 `;
 
-exports[`Check stories > Components/Card > Story ExtendedHeader > Should match snapshot 1`] = `
+exports[`Check stories > Components/Card/Card > Story ExtendedHeader > Should match snapshot 1`] = `
 "<div style=\\"display:flex; flex-wrap: wrap\\">
     <div style=\\"width: 500px; height: 400px; margin: 1rem;\\">
-        <div class=\\"fd-card\\" role=\\"region\\" aria-label=\\"Extended Header Example 1\\">
-            <div class=\\"fd-card__header fd-card__header--interactive\\" role=\\"group\\" aria-roledescription=\\"Card Header\\" aria-labelledby=\\"extended-header-card-title-1\\">
+        <div class=\\"fd-card\\" role=\\"region\\" aria-roledescription=\\"Card\\" aria-labelledby=\\"card-title-1e\\">
+            <div class=\\"fd-card__header\\" role=\\"group\\" aria-roledescription=\\"Card Header\\">
                 <div class=\\"fd-card__header-main\\">
-                    <div class=\\"fd-card__header-main-container\\" role=\\"button\\" tabindex=\\"0\\">
+                    <div class=\\"fd-card__header-main-container\\">
                         <span
                             class=\\"fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--thumbnail fd-card__avatar\\"
                             style=\\"background-image: url('/assets/images/backgrounds/city.jpg')\\"
@@ -13798,10 +12962,10 @@ exports[`Check stories > Components/Card > Story ExtendedHeader > Should match s
                         </span>
                         <div class=\\"fd-card__header-text\\">
                             <div class=\\"fd-card__title-area\\">
-                                <div class=\\"fd-card__title\\" id=\\"extended-header-card-title-1\\" role=\\"heading\\" aria-level=\\"3\\">Main Header</div>
+                                <div class=\\"fd-card__title\\" id=\\"card-title-1e\\" role=\\"heading\\" aria-level=\\"3\\">Card Title</div>
                             </div>
                             <div class=\\"fd-card__subtitle-area\\">
-                                <div class=\\"fd-card__subtitle\\">Subtitle</div>
+                                <div class=\\"fd-card__subtitle\\">Card Subtitle</div>
                             </div>
                         </div>
                     </div>
@@ -13812,7 +12976,6 @@ exports[`Check stories > Components/Card > Story ExtendedHeader > Should match s
                         <span class=\\"fd-object-status fd-card__counter\\">1 of 3</span>
                     </div>
                 </div>
-
                 <div class=\\"fd-card__header-extended\\" role=\\"group\\" aria-roledescription=\\"Extended content\\">
                     <div class=\\"fd-card__header-column\\">
                         <div class=\\"fd-card__header-row\\">
@@ -13834,15 +12997,14 @@ exports[`Check stories > Components/Card > Story ExtendedHeader > Should match s
                     </div>
                 </div>
             </div>
-
             <div class=\\"fd-card__content\\" role=\\"group\\" aria-roledescription=\\"Card content\\"></div>
         </div>
     </div>
 
     <div style=\\"width: 500px; height: 400px; margin: 1rem;\\">
-        <div class=\\"fd-card\\" role=\\"region\\" aria-label=\\"Extended Header Example 2\\">
-            <div class=\\"fd-card__header\\" role=\\"group\\" aria-roledescription=\\"Card Header\\" aria-labelledby=\\"extended-header-card-title-2\\">
-                <div class=\\"fd-card__header-main fd-card__header-main--non-interactive\\">
+        <div class=\\"fd-card\\" role=\\"region\\" aria-roledescription=\\"Card\\" aria-labelledby=\\"card-title-2e\\">
+            <div class=\\"fd-card__header\\" role=\\"group\\" aria-roledescription=\\"Card Header\\">
+                <div class=\\"fd-card__header-main\\">
                     <div class=\\"fd-card__header-main-container\\">
                         <span
                             class=\\"fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--thumbnail fd-card__avatar\\"
@@ -13852,10 +13014,10 @@ exports[`Check stories > Components/Card > Story ExtendedHeader > Should match s
                         </span>
                         <div class=\\"fd-card__header-text\\">
                             <div class=\\"fd-card__title-area\\">
-                                <div class=\\"fd-card__title\\" id=\\"extended-header-card-title-2\\" role=\\"heading\\" aria-level=\\"3\\">Main Header</div>
+                                <div class=\\"fd-card__title\\" id=\\"card-title-2e\\" role=\\"heading\\" aria-level=\\"3\\">Card Title</div>
                             </div>
                             <div class=\\"fd-card__subtitle-area\\">
-                                <div class=\\"fd-card__subtitle\\">Subtitle</div>
+                                <div class=\\"fd-card__subtitle\\">Card Subtitle</div>
                             </div>
                         </div>
                     </div>
@@ -13866,7 +13028,6 @@ exports[`Check stories > Components/Card > Story ExtendedHeader > Should match s
                         <span class=\\"fd-object-status fd-card__counter\\">1 of 3</span>
                     </div>
                 </div>
-
                 <div class=\\"fd-card__header-extended fd-card__header-extended--bottom-aligned\\" role=\\"group\\" aria-roledescription=\\"Extended content\\">
                     <div class=\\"fd-card__header-column\\">
                         <div class=\\"fd-card__header-row\\">
@@ -13893,15 +13054,14 @@ exports[`Check stories > Components/Card > Story ExtendedHeader > Should match s
                     </div>
                 </div>
             </div>
-
             <div class=\\"fd-card__content\\" role=\\"group\\" aria-roledescription=\\"Card content\\"></div>
         </div>
     </div>
 
     <div style=\\"width: 500px; height: 400px; margin: 1rem;\\">
-        <div class=\\"fd-card\\" role=\\"region\\" aria-label=\\"Extended Header Example 3\\">
-            <div class=\\"fd-card__header\\" role=\\"group\\" aria-roledescription=\\"Card Header\\" aria-labelledby=\\"extended-header-card-title-3\\">
-                <div class=\\"fd-card__header-main fd-card__header-main--non-interactive\\">
+        <div class=\\"fd-card\\" role=\\"region\\" aria-roledescription=\\"Card\\" aria-labelledby=\\"card-title-3e\\">
+            <div class=\\"fd-card__header\\" role=\\"group\\" aria-roledescription=\\"Card Header\\">
+                <div class=\\"fd-card__header-main\\">
                     <div class=\\"fd-card__header-main-container\\">
                         <span
                             class=\\"fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--thumbnail fd-card__avatar\\"
@@ -13911,10 +13071,10 @@ exports[`Check stories > Components/Card > Story ExtendedHeader > Should match s
                         </span>
                         <div class=\\"fd-card__header-text\\">
                             <div class=\\"fd-card__title-area\\">
-                                <div class=\\"fd-card__title\\" id=\\"extended-header-card-title-3\\" role=\\"heading\\" aria-level=\\"3\\">Main Header</div>
+                                <div class=\\"fd-card__title\\" id=\\"card-title-3e\\" role=\\"heading\\" aria-level=\\"3\\">Card Title</div>
                             </div>
                             <div class=\\"fd-card__subtitle-area\\">
-                                <div class=\\"fd-card__subtitle\\">Subtitle</div>
+                                <div class=\\"fd-card__subtitle\\">Card Subtitle</div>
                             </div>
                         </div>
                     </div>
@@ -13925,7 +13085,6 @@ exports[`Check stories > Components/Card > Story ExtendedHeader > Should match s
                         <span class=\\"fd-object-status fd-card__counter\\">1 of 3</span>
                     </div>
                 </div>
-
                 <div class=\\"fd-card__header-extended\\" role=\\"group\\" aria-roledescription=\\"Extended content\\">
                     <div class=\\"fd-card__header-column\\">
                         <div class=\\"fd-card__header-row\\">
@@ -13943,15 +13102,14 @@ exports[`Check stories > Components/Card > Story ExtendedHeader > Should match s
                     </div>
                 </div>
             </div>
-
             <div class=\\"fd-card__content\\" role=\\"group\\" aria-roledescription=\\"Card content\\"></div>
         </div>
     </div>
 
     <div style=\\"width: 500px; height: 400px; margin: 1rem;\\">
-        <div class=\\"fd-card\\" role=\\"region\\" aria-label=\\"Extended Header Example 4\\">
-            <div class=\\"fd-card__header\\" role=\\"group\\" aria-roledescription=\\"Card Header\\" aria-labelledby=\\"extended-header-card-title-4\\">
-                <div class=\\"fd-card__header-main fd-card__header-main--non-interactive\\">
+        <div class=\\"fd-card\\" role=\\"region\\" aria-roledescription=\\"Card\\" aria-labelledby=\\"card-title-4e\\">
+            <div class=\\"fd-card__header\\" role=\\"group\\" aria-roledescription=\\"Card Header\\">
+                <div class=\\"fd-card__header-main\\">
                     <div class=\\"fd-card__header-main-container\\">
                         <span
                             class=\\"fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--thumbnail fd-card__avatar\\"
@@ -13961,10 +13119,10 @@ exports[`Check stories > Components/Card > Story ExtendedHeader > Should match s
                         </span>
                         <div class=\\"fd-card__header-text\\">
                             <div class=\\"fd-card__title-area\\">
-                                <div class=\\"fd-card__title\\" id=\\"extended-header-card-title-4\\" role=\\"heading\\" aria-level=\\"3\\">Main Header</div>
+                                <div class=\\"fd-card__title\\" id=\\"card-title-4e\\" role=\\"heading\\" aria-level=\\"3\\">Card Title</div>
                             </div>
                             <div class=\\"fd-card__subtitle-area\\">
-                                <div class=\\"fd-card__subtitle\\">Subtitle</div>
+                                <div class=\\"fd-card__subtitle\\">Card Subtitle</div>
                             </div>
                         </div>
                     </div>
@@ -13975,7 +13133,6 @@ exports[`Check stories > Components/Card > Story ExtendedHeader > Should match s
                         <span class=\\"fd-object-status fd-card__counter\\">1 of 3</span>
                     </div>
                 </div>
-
                 <div class=\\"fd-card__header-extended\\" role=\\"group\\" aria-roledescription=\\"Extended content\\">
                     <div class=\\"fd-card__header-column fd-card__header-column--right-aligned\\">
                         <div class=\\"fd-card__header-row\\">
@@ -14005,20 +13162,21 @@ exports[`Check stories > Components/Card > Story ExtendedHeader > Should match s
                     </div>
                 </div>
             </div>
-
             <div class=\\"fd-card__content\\" role=\\"group\\" aria-roledescription=\\"Card content\\"></div>
         </div>
     </div>
 </div>
+
+
 "
 `;
 
-exports[`Check stories > Components/Card > Story ListCard > Should match snapshot 1`] = `
+exports[`Check stories > Components/Card/Card > Story ListCard > Should match snapshot 1`] = `
 "<div style=\\"display:flex; justify-content:space-around; flex-wrap: wrap\\">
     <div style=\\"width: 300px; height: 100%; margin: 1rem;\\">
-        <div class=\\"fd-card\\" role=\\"region\\" aria-label=\\"List Card Example 1\\">
-            <div class=\\"fd-card__header\\" role=\\"group\\" aria-roledescription=\\"Card Header\\" aria-labelledby=\\"list-card-title-1\\">
-                <div class=\\"fd-card__header-main fd-card__header-main--non-interactive\\">
+        <div class=\\"fd-card\\" role=\\"region\\" aria-label=\\"List Card Example 1\\" aria-labelledby=\\"list-card-title-1\\">
+            <div class=\\"fd-card__header\\" role=\\"group\\" aria-roledescription=\\"Card Header\\">
+                <div class=\\"fd-card__header-main\\">
                     <div class=\\"fd-card__header-main-container\\">
                         <div class=\\"fd-card__header-text\\">
                             <div class=\\"fd-card__title-area\\">
@@ -14065,12 +13223,12 @@ exports[`Check stories > Components/Card > Story ListCard > Should match snapsho
 "
 `;
 
-exports[`Check stories > Components/Card > Story NumericHeader > Should match snapshot 1`] = `
+exports[`Check stories > Components/Card/Card > Story NumericHeader > Should match snapshot 1`] = `
 "<div style=\\"display:flex; flex-wrap: wrap\\">
     <div style=\\"width: 500px; height: 400px; margin: 1rem;\\">
-        <div class=\\"fd-card\\" role=\\"region\\" aria-label=\\"Numeric Card Example 1\\">
-            <div class=\\"fd-card__header\\" role=\\"group\\" aria-roledescription=\\"Card Header\\" aria-labelledby=\\"numeric-card-title-1\\">
-                <div class=\\"fd-card__header-main fd-card__header-main--non-interactive\\">
+        <div class=\\"fd-card\\" role=\\"region\\" aria-roledescription=\\"Card\\" aria-labelledby=\\"card-title-1f\\">
+            <div class=\\"fd-card__header\\" role=\\"group\\" aria-roledescription=\\"Card Header\\">
+                <div class=\\"fd-card__header-main\\">
                     <div class=\\"fd-card__header-main-container\\">
                         <span
                             class=\\"fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--thumbnail fd-card__avatar\\"
@@ -14080,10 +13238,10 @@ exports[`Check stories > Components/Card > Story NumericHeader > Should match sn
                         </span>
                         <div class=\\"fd-card__header-text\\">
                             <div class=\\"fd-card__title-area\\">
-                                <div class=\\"fd-card__title\\" id=\\"numeric-card-title-1\\" role=\\"heading\\" aria-level=\\"3\\">Lilian Williams</div>
+                                <div class=\\"fd-card__title\\" id=\\"card-title-1f\\" role=\\"heading\\" aria-level=\\"3\\">Card Title</div>
                             </div>
                             <div class=\\"fd-card__subtitle-area\\">
-                                <div class=\\"fd-card__subtitle\\">Project Manager Marketing</div>
+                                <div class=\\"fd-card__subtitle\\">Card Subtitle</div>
                             </div>
                         </div>
                     </div>
@@ -14103,7 +13261,7 @@ exports[`Check stories > Components/Card > Story NumericHeader > Should match sn
                                 </div>
                                 <div class=\\"fd-numeric-content__scale-container\\">
                                     <div class=\\"fd-numeric-content__scale\\">
-                                        <i class=\\"fd-numeric-content__scale-arrow sap-icon--down\\" aria-label=\\"decrease\\"></i>
+                                        <i class=\\"fd-numeric-content__scale-arrow sap-icon--down\\" role=\\"presentation\\"></i>
                                         <span class=\\"fd-numeric-content__scale-text\\">M</span>
                                     </div>
                                 </div>
@@ -14123,21 +13281,20 @@ exports[`Check stories > Components/Card > Story NumericHeader > Should match sn
                     </div>
                 </div>
             </div>
-
             <div class=\\"fd-card__content\\" role=\\"group\\" aria-roledescription=\\"Card content\\"></div>
         </div>
     </div>
 </div>
-    "
+"
 `;
 
-exports[`Check stories > Components/Card > Story ObjectCard > Should match snapshot 1`] = `
+exports[`Check stories > Components/Card/Card > Story ObjectCard > Should match snapshot 1`] = `
 "<div style=\\"display:flex; justify-content:space-around; flex-wrap: wrap\\">
     <div style=\\"width: 14rem; height: 32rem; margin: 1rem;\\">
         <div class=\\"fd-card fd-card--object\\" role=\\"region\\" aria-label=\\"Object Card Example 1\\">
             <div class=\\"fd-card__header\\" role=\\"group\\" aria-roledescription=\\"Card Header\\" aria-labelledby=\\"object-card-title-1\\">
                 <div class=\\"fd-card__header-main\\">
-                    <div class=\\"fd-card__header-main-container\\" role=\\"button\\" tabindex=\\"0\\">
+                    <div class=\\"fd-card__header-main-container\\">
                         <span
                             class=\\"fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--thumbnail fd-card__avatar\\"
                             style=\\"background-image: url('/assets/images/avatars/1.svg')\\"
@@ -14207,7 +13364,7 @@ exports[`Check stories > Components/Card > Story ObjectCard > Should match snaps
         <div class=\\"fd-card fd-card--object\\" role=\\"region\\" aria-label=\\"Object Card Example 2\\">
             <div class=\\"fd-card__header\\" role=\\"group\\" aria-roledescription=\\"Card Header\\" aria-labelledby=\\"object-card-title-2\\">
                 <div class=\\"fd-card__header-main\\">
-                    <div class=\\"fd-card__header-main-container\\" role=\\"button\\" tabindex=\\"0\\">
+                    <div class=\\"fd-card__header-main-container\\">
                         <span
                             class=\\"fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--thumbnail fd-card__avatar\\"
                             style=\\"background-image: url('/assets/images/avatars/1.svg')\\"
@@ -14286,13 +13443,13 @@ exports[`Check stories > Components/Card > Story ObjectCard > Should match snaps
 "
 `;
 
-exports[`Check stories > Components/Card > Story TableCard > Should match snapshot 1`] = `
+exports[`Check stories > Components/Card/Card > Story TableCard > Should match snapshot 1`] = `
 "<div style=\\"display:flex; justify-content:space-around; flex-wrap: wrap\\">
     <div style=\\"width: 500px; height: 100%; margin: 1rem;\\">
         <div class=\\"fd-card fd-card--table\\" role=\\"region\\" aria-label=\\"Table Card Example 1\\">
             <div class=\\"fd-card__header\\" role=\\"group\\" aria-roledescription=\\"Card Header\\" aria-labelledby=\\"table-card-title-1\\">
                 <div class=\\"fd-card__header-main\\">
-                    <div class=\\"fd-card__header-main-container\\" role=\\"button\\" tabindex=\\"0\\">
+                    <div class=\\"fd-card__header-main-container\\">
                         <div class=\\"fd-card__header-text\\">
                             <div class=\\"fd-card__title-area\\">
                                 <div class=\\"fd-card__title\\" id=\\"table-card-title-1\\" role=\\"heading\\" aria-level=\\"3\\">Table Card</div>
@@ -14361,6 +13518,486 @@ exports[`Check stories > Components/Card > Story TableCard > Should match snapsh
         </div>
     </div>
 </div>
+"
+`;
+
+exports[`Check stories > Components/Card/Media Card > Story CardMedia > Should match snapshot 1`] = `
+"<div style=\\"display:flex; justify-content:space-around; flex-wrap: wrap\\">
+    <div style=\\"width: 300px; height: 400px; margin: 1rem;\\">
+        <div class=\\"fd-card\\" role=\\"region\\" aria-roledescription=\\"Card\\" aria-labelledby=\\"card-title-2m\\">
+            <div class=\\"fd-card__media fd-card__media--with-padding\\" role=\\"group\\" aria-roledescription=\\"Card Media Block\\">
+                <div class=\\"fd-card__media-image-container\\">
+                    <img class=\\"fd-card__media-image\\" src=\\"/assets/images/landscape/L1.jpg\\" role=\\"presentation\\" />
+                </div>
+            </div>
+            <div class=\\"fd-card__header\\" role=\\"group\\" aria-roledescription=\\"Card Header\\">
+                <div class=\\"fd-card__header-main\\">
+                    <div class=\\"fd-card__header-main-container\\">
+                        <span
+                            class=\\"fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--thumbnail fd-card__avatar\\"
+                            style=\\"background-image: url('/assets/images/backgrounds/city.jpg')\\"
+                            role=\\"img\\"
+                            aria-label=\\"John Doe\\">
+                        </span>
+                        <div class=\\"fd-card__header-text\\">
+                            <div class=\\"fd-card__title-area\\">
+                                <div class=\\"fd-card__title\\" id=\\"card-title-2m\\" role=\\"heading\\" aria-level=\\"3\\">Card Title</div>
+                            </div>
+                            <div class=\\"fd-card__subtitle-area\\">
+                                <div class=\\"fd-card__subtitle\\">Card Subtitle</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class=\\"fd-card__content\\" role=\\"group\\" aria-roledescription=\\"Card content\\"></div>
+            <div class=\\"fd-card__footer\\">
+                <div class=\\"fd-card__footer-actions\\">
+                    <button class=\\"fd-button fd-button--positive\\">
+                        Button
+                    </button>
+                    <button class=\\"fd-button fd-button--negative\\">
+                        Button
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div style=\\"width: 300px; height: 400px; margin: 1rem;\\">
+        <div class=\\"fd-card\\" role=\\"region\\" aria-roledescription=\\"Card\\" aria-labelledby=\\"card-title-3m\\">
+            <div class=\\"fd-card__media\\" role=\\"group\\" aria-roledescription=\\"Card Media Block\\">
+                <div class=\\"fd-card__media-image-container\\">
+                    <img class=\\"fd-card__media-image\\" src=\\"/assets/images/landscape/L1.jpg\\" role=\\"presentation\\" />
+                </div>
+            </div>
+            <div class=\\"fd-card__header fd-card__header--interactive\\" role=\\"group\\" aria-roledescription=\\"Card Header\\">
+                <div class=\\"fd-card__header-main\\">
+                    <div class=\\"fd-card__header-main-container is-focus\\" role=\\"button\\" tabindex=\\"0\\" aria-description=\\"Activate for action/navigation\\" aria-label=\\"Activate for action/navigation\\" title=\\"Activate for action/navigation\\">
+                        <span
+                            class=\\"fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--thumbnail fd-card__avatar\\"
+                            style=\\"background-image: url('/assets/images/backgrounds/city.jpg')\\"
+                            role=\\"img\\"
+                            aria-label=\\"John Doe\\">
+                        </span>
+                        <div class=\\"fd-card__header-text\\">
+                            <div class=\\"fd-card__title-area\\">
+                                <div class=\\"fd-card__title\\" id=\\"card-title-3m\\" role=\\"heading\\" aria-level=\\"3\\">Card Title</div>
+                            </div>
+                            <div class=\\"fd-card__subtitle-area\\">
+                                <div class=\\"fd-card__subtitle\\">Card Subtitle</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class=\\"fd-card__content\\" role=\\"group\\" aria-roledescription=\\"Card content\\"></div>
+            <div class=\\"fd-card__footer\\">
+                <div class=\\"fd-card__footer-actions\\">
+                    <button class=\\"fd-button fd-button--positive\\">
+                        Button
+                    </button>
+                    <button class=\\"fd-button fd-button--negative\\">
+                        Button
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div style=\\"width: 300px; height: fit-content; margin: 1rem;\\">
+        <div class=\\"fd-card\\" role=\\"region\\" aria-roledescription=\\"Card\\" aria-labelledby=\\"card-title-4m\\">
+            <div class=\\"fd-card__media\\" role=\\"group\\" aria-roledescription=\\"Card Media Block\\">
+                <div class=\\"fd-card__media-image-container\\">
+                    <img class=\\"fd-card__media-image\\" src=\\"/assets/images/landscape/L1.jpg\\" role=\\"presentation\\" />
+                </div>
+            </div>
+            <div class=\\"fd-card__header fd-card__header--interactive\\" role=\\"group\\" aria-roledescription=\\"Card Header\\">
+                <div class=\\"fd-card__header-main\\">
+                    <div class=\\"fd-card__header-main-container is-focus\\" role=\\"button\\" tabindex=\\"0\\" aria-description=\\"Activate for action/navigation\\" aria-label=\\"Activate for action/navigation\\" title=\\"Activate for action/navigation\\">
+                        <span
+                            class=\\"fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--thumbnail fd-card__avatar\\"
+                            style=\\"background-image: url('/assets/images/backgrounds/city.jpg')\\"
+                            role=\\"img\\"
+                            aria-label=\\"John Doe\\">
+                        </span>
+                        <div class=\\"fd-card__header-text\\">
+                            <div class=\\"fd-card__title-area\\">
+                                <div class=\\"fd-card__title\\" id=\\"card-title-4m\\" role=\\"heading\\" aria-level=\\"3\\">Card Title</div>
+                            </div>
+                            <div class=\\"fd-card__subtitle-area\\">
+                                <div class=\\"fd-card__subtitle\\">Card Subtitle</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+"
+`;
+
+exports[`Check stories > Components/Card/Media Card > Story CardMediaBanner > Should match snapshot 1`] = `
+"<div style=\\"width: 100%;\\">
+   <div class=\\"fd-card fd-card--banner\\" aria-label=\\"Get Ready for the AI Learning Days!\\">
+        <div class=\\"fd-card__media fd-card__media--bg-shell-13\\" role=\\"group\\" aria-roledescription=\\"Card Media Block\\">
+            <div class=\\"fd-card__media-content-container\\">
+                <div class=\\"fd-card__media-heading\\" role=\\"heading\\" aria-level=\\"2\\">Get Ready for the AI Learning Days!</div>
+                <p class=\\"fd-card__media-text\\">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat quo delectus deleniti excepturi tempora impedit nobis nulla sint qui quae consequuntur reprehenderit, accusamus amet nihil esse quia doloribus praesentium quidem?
+                </p>
+                <button class=\\"fd-button\\">
+                    <span class=\\"fd-button__text\\">Register</span>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<br><br>
+
+<div style=\\"width: 100%; height: 300px;\\">
+   <div class=\\"fd-card fd-card--banner\\" role=\\"region\\" aria-label=\\"Get Ready for the AI Learning Days!\\">
+        <div class=\\"fd-card__media fd-card__media--bg-legend-13\\" role=\\"group\\" aria-roledescription=\\"Card Media Block\\">
+            <div class=\\"fd-card__media-content-container\\">
+                <div class=\\"fd-card__media-heading\\" role=\\"heading\\" aria-level=\\"2\\">Get Ready for the AI Learning Days!</div>
+                <p class=\\"fd-card__media-text\\">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat quo delectus deleniti excepturi tempora impedit nobis nulla sint qui quae consequuntur reprehenderit, accusamus amet nihil esse quia doloribus praesentium quidem?
+                </p>
+                <button class=\\"fd-button fd-button--emphasized\\">
+                    <span class=\\"fd-button__text\\">Register</span>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<br><br>
+
+<div style=\\"width: 100%; height: 400px;\\">
+   <div class=\\"fd-card fd-card--banner\\" role=\\"region\\" aria-label=\\"Get Ready for the AI Learning Days!\\">
+        <div class=\\"fd-card__media\\">
+            <div class=\\"fd-card__media-content-container fd-card__media-content-container--bg-shell-13\\">
+                <div class=\\"fd-card__media-heading\\" role=\\"heading\\" aria-level=\\"2\\">Get Ready for the AI Learning Days!</div>
+                <p class=\\"fd-card__media-text\\">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat quo delectus deleniti excepturi tempora impedit nobis nulla sint qui quae consequuntur reprehenderit, accusamus amet nihil esse quia doloribus praesentium quidem?
+                </p>
+                <button class=\\"fd-button\\">
+                    <span class=\\"fd-button__text\\">Register</span>
+                </button>
+            </div>
+
+            <div class=\\"fd-card__media-image-container\\">
+                <img class=\\"fd-card__media-image\\" src=\\"/assets/images/landscape/L1.jpg\\" role=\\"presentation\\" />
+            </div>
+        </div>
+    </div>
+</div>
+
+<br><br>
+<h3>Media as Banner with content overlay</h3>
+<div style=\\"width: 100%; height: 400px;\\">
+   <div class=\\"fd-card fd-card--banner\\" role=\\"region\\" aria-label=\\"Get Ready for the AI Learning Days!\\">
+        <div class=\\"fd-card__media\\">
+            <div class=\\"fd-card__media-content-container fd-card__media-content-container--overlay\\">
+                <div class=\\"fd-card__media-heading\\" role=\\"heading\\" aria-level=\\"2\\">Get Ready for the AI Learning Days!</div>
+                <p class=\\"fd-card__media-text\\">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat quo delectus deleniti excepturi tempora impedit nobis nulla sint qui quae consequuntur reprehenderit, accusamus amet nihil esse quia doloribus praesentium quidem?
+                </p>
+                <button class=\\"fd-button\\">
+                    <span class=\\"fd-button__text\\">Register</span>
+                </button>
+            </div>
+
+            <div class=\\"fd-card__media-image-container\\">
+                <img class=\\"fd-card__media-image\\" src=\\"/assets/images/landscape/L1.jpg\\" role=\\"presentation\\" />
+            </div>
+        </div>
+    </div>
+</div>
+
+<br><br>
+<div style=\\"width: 100%; height: 400px;\\">
+   <div class=\\"fd-card fd-card--banner\\" role=\\"region\\" aria-label=\\"Get Ready for the AI Learning Days!\\">
+        <div class=\\"fd-card__media\\">
+            <div class=\\"fd-card__media-content-container fd-card__media-content-container--overlay fd-card__media-content-container--bg-legend-1\\">
+                <p class=\\"fd-card__media-text\\">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat quo delectus deleniti excepturi tempora impedit nobis nulla sint qui quae consequuntur reprehenderit, accusamus amet nihil esse quia doloribus praesentium quidem?
+                </p>
+                <button class=\\"fd-button fd-button--emphasized\\" title=\\"Register\\">
+                    <span class=\\"fd-button__text\\">Register</span>
+                </button>
+            </div>
+
+            <div class=\\"fd-card__media-image-container\\">
+                <img class=\\"fd-card__media-image\\" src=\\"/assets/images/landscape/L1.jpg\\" role=\\"presentation\\" />
+            </div>
+        </div>
+    </div>
+</div>"
+`;
+
+exports[`Check stories > Components/Card/Media Card > Story CardMediaTitle > Should match snapshot 1`] = `
+"<h3>Title on Media, Shell Category background colors </h3>
+<div style=\\"display:flex; justify-content:space-around; flex-wrap: wrap\\">
+    <div style=\\"width: 300px; height: 400px; margin: 1rem;\\">
+        <div class=\\"fd-card\\" role=\\"region\\" aria-roledescription=\\"Card\\" aria-labelledby=\\"card-title-5m\\">
+            <div class=\\"fd-card__media fd-card__media--bg-shell-1\\" role=\\"group\\" aria-roledescription=\\"Card Media Block\\">
+                <div class=\\"fd-card__media-content-container\\">
+                    <div class=\\"fd-card__media-heading\\" role=\\"heading\\" aria-level=\\"2\\">Incoming Applications</div>
+                </div>
+            </div>
+            <div class=\\"fd-card__header\\" role=\\"group\\" aria-roledescription=\\"Card Header\\">
+                <div class=\\"fd-card__header-main\\">
+                    <div class=\\"fd-card__header-main-container\\">
+                        <span
+                            class=\\"fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--thumbnail fd-card__avatar\\"
+                            style=\\"background-image: url('/assets/images/backgrounds/city.jpg')\\"
+                            role=\\"img\\"
+                            aria-label=\\"John Doe\\">
+                        </span>
+                        <div class=\\"fd-card__header-text\\">
+                            <div class=\\"fd-card__title-area\\">
+                                <div class=\\"fd-card__title\\" id=\\"card-title-5m\\" role=\\"heading\\" aria-level=\\"3\\">Card Title</div>
+                            </div>
+                            <div class=\\"fd-card__subtitle-area\\">
+                                <div class=\\"fd-card__subtitle\\">Card Subtitle</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class=\\"fd-card__content\\" role=\\"group\\" aria-roledescription=\\"Card content\\"></div>
+            <div class=\\"fd-card__footer\\">
+                <div class=\\"fd-card__footer-actions\\">
+                    <button class=\\"fd-button fd-button--positive\\">
+                        Button
+                    </button>
+                    <button class=\\"fd-button fd-button--negative\\">
+                        Button
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div style=\\"width: 300px; height: 400px; margin: 1rem;\\">
+        <div class=\\"fd-card\\" role=\\"region\\" aria-roledescription=\\"Card\\" aria-labelledby=\\"card-title-1m\\">
+            <div class=\\"fd-card__media fd-card__media--bg-shell-2\\" role=\\"group\\" aria-roledescription=\\"Card Media Block\\">
+                <div class=\\"fd-card__media-content-container\\">
+                    <div class=\\"fd-card__media-heading\\" role=\\"heading\\" aria-level=\\"2\\">Incoming Applications</div>
+                </div>
+            </div>
+            <div class=\\"fd-card__header\\" role=\\"group\\" aria-roledescription=\\"Card Header\\" aria-labelledby=\\"card-title-6a\\">
+                <div class=\\"fd-card__header-main\\">
+                    <div class=\\"fd-card__header-main-container\\">
+                        <span
+                            class=\\"fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--thumbnail fd-card__avatar\\"
+                            style=\\"background-image: url('/assets/images/backgrounds/city.jpg')\\"
+                            role=\\"img\\"
+                            aria-label=\\"John Doe\\">
+                        </span>
+                        <div class=\\"fd-card__header-text\\">
+                            <div class=\\"fd-card__title-area\\">
+                                <div class=\\"fd-card__title\\" id=\\"card-title-6a\\" role=\\"heading\\" aria-level=\\"3\\">Card Title</div>
+                            </div>
+                            <div class=\\"fd-card__subtitle-area\\">
+                                <div class=\\"fd-card__subtitle\\">Card Subtitle</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class=\\"fd-card__content\\" role=\\"group\\" aria-roledescription=\\"Card content\\"></div>
+            <div class=\\"fd-card__footer\\">
+                <div class=\\"fd-card__footer-actions\\">
+                    <button class=\\"fd-button fd-button--positive\\">
+                        Button
+                    </button>
+                    <button class=\\"fd-button fd-button--negative\\">
+                        Button
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div style=\\"width: 300px; height: 400px; margin: 1rem;\\">
+        <div class=\\"fd-card\\" role=\\"region\\" aria-roledescription=\\"Card\\" aria-labelledby=\\"card-title-1m\\">
+            <div class=\\"fd-card__media fd-card__media--bg-shell-3\\" role=\\"group\\" aria-roledescription=\\"Card Media Block\\">
+                <div class=\\"fd-card__media-content-container\\">
+                    <div class=\\"fd-card__media-heading\\" role=\\"heading\\" aria-level=\\"2\\">Incoming Applications</div>
+                </div>
+            </div>
+            <div class=\\"fd-card__header\\" role=\\"group\\" aria-roledescription=\\"Card Header\\" aria-labelledby=\\"card-title-7a\\">
+                <div class=\\"fd-card__header-main\\">
+                    <div class=\\"fd-card__header-main-container\\">
+                        <span
+                            class=\\"fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--thumbnail fd-card__avatar\\"
+                            style=\\"background-image: url('/assets/images/backgrounds/city.jpg')\\"
+                            role=\\"img\\"
+                            aria-label=\\"John Doe\\">
+                        </span>
+                        <div class=\\"fd-card__header-text\\">
+                            <div class=\\"fd-card__title-area\\">
+                                <div class=\\"fd-card__title\\" id=\\"card-title-7a\\" role=\\"heading\\" aria-level=\\"3\\">Card Title</div>
+                            </div>
+                            <div class=\\"fd-card__subtitle-area\\">
+                                <div class=\\"fd-card__subtitle\\">Card Subtitle</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class=\\"fd-card__content\\" role=\\"group\\" aria-roledescription=\\"Card content\\"></div>
+            <div class=\\"fd-card__footer\\">
+                <div class=\\"fd-card__footer-actions\\">
+                    <button class=\\"fd-button fd-button--positive\\">
+                        Button
+                    </button>
+                    <button class=\\"fd-button fd-button--negative\\">
+                        Button
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<h3>Title on Media, Legend background colors </h3>
+<div style=\\"display:flex; justify-content:space-around; flex-wrap: wrap\\">
+    <div style=\\"width: 300px; height: 400px; margin: 1rem;\\">
+        <div class=\\"fd-card\\" role=\\"region\\" aria-roledescription=\\"Card\\" aria-labelledby=\\"card-title-6m\\">
+            <div class=\\"fd-card__media fd-card__media--bg-legend-1\\" role=\\"group\\" aria-roledescription=\\"Card Media Block\\">
+                <div class=\\"fd-card__media-content-container\\">
+                    <div class=\\"fd-card__media-heading\\" role=\\"heading\\" aria-level=\\"2\\">Incoming Applications</div>
+                </div>
+            </div>
+            <div class=\\"fd-card__header\\" role=\\"group\\" aria-roledescription=\\"Card Header\\">
+                <div class=\\"fd-card__header-main\\">
+                    <div class=\\"fd-card__header-main-container\\">
+                        <span
+                            class=\\"fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--thumbnail fd-card__avatar\\"
+                            style=\\"background-image: url('/assets/images/backgrounds/city.jpg')\\"
+                            role=\\"img\\"
+                            aria-label=\\"John Doe\\">
+                        </span>
+                        <div class=\\"fd-card__header-text\\">
+                            <div class=\\"fd-card__title-area\\">
+                                <div class=\\"fd-card__title\\" id=\\"card-title-6m\\" role=\\"heading\\" aria-level=\\"3\\">Card Title</div>
+                            </div>
+                            <div class=\\"fd-card__subtitle-area\\">
+                                <div class=\\"fd-card__subtitle\\">Card Subtitle</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class=\\"fd-card__content\\" role=\\"group\\" aria-roledescription=\\"Card content\\"></div>
+            <div class=\\"fd-card__footer\\">
+                <div class=\\"fd-card__footer-actions\\">
+                    <button class=\\"fd-button fd-button--positive\\">
+                        Button
+                    </button>
+                    <button class=\\"fd-button fd-button--negative\\">
+                        Button
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div style=\\"width: 300px; height: 400px; margin: 1rem;\\">
+        <div class=\\"fd-card\\" role=\\"region\\" aria-roledescription=\\"Card\\" aria-labelledby=\\"card-title-7m\\">
+            <div class=\\"fd-card__media fd-card__media--bg-legend-2\\" role=\\"group\\" aria-roledescription=\\"Card Media Block\\">
+                <div class=\\"fd-card__media-content-container\\">
+                    <div class=\\"fd-card__media-heading\\" role=\\"heading\\" aria-level=\\"2\\">Incoming Applications</div>
+                </div>
+            </div>
+            <div class=\\"fd-card__header\\" role=\\"group\\" aria-roledescription=\\"Card Header\\">
+                <div class=\\"fd-card__header-main\\">
+                    <div class=\\"fd-card__header-main-container\\">
+                        <span
+                            class=\\"fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--thumbnail fd-card__avatar\\"
+                            style=\\"background-image: url('/assets/images/backgrounds/city.jpg')\\"
+                            role=\\"img\\"
+                            aria-label=\\"John Doe\\">
+                        </span>
+                        <div class=\\"fd-card__header-text\\">
+                            <div class=\\"fd-card__title-area\\">
+                                <div class=\\"fd-card__title\\" id=\\"card-title-7m\\" role=\\"heading\\" aria-level=\\"3\\">Card Title</div>
+                            </div>
+                            <div class=\\"fd-card__subtitle-area\\">
+                                <div class=\\"fd-card__subtitle\\">Card Subtitle</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class=\\"fd-card__content\\" role=\\"group\\" aria-roledescription=\\"Card content\\"></div>
+            <div class=\\"fd-card__footer\\">
+                <div class=\\"fd-card__footer-actions\\">
+                    <button class=\\"fd-button fd-button--positive\\">
+                        Button
+                    </button>
+                    <button class=\\"fd-button fd-button--negative\\">
+                        Button
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div style=\\"width: 300px; height: 400px; margin: 1rem;\\">
+        <div class=\\"fd-card\\" role=\\"region\\" aria-roledescription=\\"Card\\" aria-labelledby=\\"card-title-8m\\">
+            <div class=\\"fd-card__media fd-card__media--bg-legend-3\\" role=\\"group\\" aria-roledescription=\\"Card Media Block\\">
+                <div class=\\"fd-card__media-content-container\\">
+                    <div class=\\"fd-card__media-heading\\" role=\\"heading\\" aria-level=\\"2\\">Incoming Applications</div>
+                </div>
+            </div>
+            <div class=\\"fd-card__header\\" role=\\"group\\" aria-roledescription=\\"Card Header\\">
+                <div class=\\"fd-card__header-main\\">
+                    <div class=\\"fd-card__header-main-container\\">
+                        <span
+                            class=\\"fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--thumbnail fd-card__avatar\\"
+                            style=\\"background-image: url('/assets/images/backgrounds/city.jpg')\\"
+                            role=\\"img\\"
+                            aria-label=\\"John Doe\\">
+                        </span>
+                        <div class=\\"fd-card__header-text\\">
+                            <div class=\\"fd-card__title-area\\">
+                                <div class=\\"fd-card__title\\" id=\\"card-title-8m\\" role=\\"heading\\" aria-level=\\"3\\">Card Title</div>
+                            </div>
+                            <div class=\\"fd-card__subtitle-area\\">
+                                <div class=\\"fd-card__subtitle\\">Card Subtitle</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class=\\"fd-card__content\\" role=\\"group\\" aria-roledescription=\\"Card content\\"></div>
+            <div class=\\"fd-card__footer\\">
+                <div class=\\"fd-card__footer-actions\\">
+                    <button class=\\"fd-button fd-button--positive\\">
+                        Button
+                    </button>
+                    <button class=\\"fd-button fd-button--negative\\">
+                        Button
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
 "
 `;
 
@@ -54858,7 +54495,7 @@ exports[`Check stories > Layouts/Fixed Card Layout > Story FixedCardLayout > Sho
         <div class=\\"fd-fixed-card-layout__card\\">
             <div class=\\"fd-card\\" role=\\"region\\" aria-label=\\"List Card Example 1\\">
                 <div class=\\"fd-card__header\\" role=\\"group\\" aria-roledescription=\\"Card Header\\" aria-labelledby=\\"list-card-title-1\\">
-                    <div class=\\"fd-card__header-main fd-card__header-main--non-interactive\\">
+                    <div class=\\"fd-card__header-main\\">
                         <div class=\\"fd-card__header-main-container\\">
                             <div class=\\"fd-card__header-text\\">
                                 <div class=\\"fd-card__title-area\\">
@@ -54975,7 +54612,7 @@ exports[`Check stories > Layouts/Fixed Card Layout > Story FixedCardLayout > Sho
         <div class=\\"fd-fixed-card-layout__card\\">
             <div class=\\"fd-card\\" role=\\"region\\" aria-label=\\"List Card Example 2\\">
                 <div class=\\"fd-card__header\\" role=\\"group\\" aria-roledescription=\\"Card Header\\" aria-labelledby=\\"list-card-title-2\\">
-                    <div class=\\"fd-card__header-main fd-card__header-main--non-interactive\\">
+                    <div class=\\"fd-card__header-main\\">
                         <div class=\\"fd-card__header-main-container\\">
                             <div class=\\"fd-card__header-text\\">
                                 <div class=\\"fd-card__title-area\\">
@@ -55095,7 +54732,7 @@ exports[`Check stories > Layouts/Fixed Card Layout > Story FixedCardLayout > Sho
         <div class=\\"fd-fixed-card-layout__card\\">
             <div class=\\"fd-card\\" role=\\"region\\" aria-label=\\"List Card Example 3\\">
                 <div class=\\"fd-card__header\\" role=\\"group\\" aria-roledescription=\\"Card Header\\" aria-labelledby=\\"list-card-title-3\\">
-                    <div class=\\"fd-card__header-main fd-card__header-main--non-interactive\\">
+                    <div class=\\"fd-card__header-main\\">
                         <div class=\\"fd-card__header-main-container\\">
                             <div class=\\"fd-card__header-text\\">
                                 <div class=\\"fd-card__title-area\\">
@@ -55134,7 +54771,7 @@ exports[`Check stories > Layouts/Fixed Card Layout > Story FixedCardLayout > Sho
         <div class=\\"fd-fixed-card-layout__card\\">
             <div class=\\"fd-card\\" role=\\"region\\" aria-label=\\"List Card Example 4\\">
                 <div class=\\"fd-card__header\\" role=\\"group\\" aria-roledescription=\\"Card Header\\" aria-labelledby=\\"list-card-title-4\\">
-                    <div class=\\"fd-card__header-main fd-card__header-main--non-interactive\\">
+                    <div class=\\"fd-card__header-main\\">
                         <div class=\\"fd-card__header-main-container\\">
                             <div class=\\"fd-card__header-text\\">
                                 <div class=\\"fd-card__title-area\\">
@@ -55263,7 +54900,7 @@ exports[`Check stories > Layouts/Fixed Card Layout > Story FixedCardLayout > Sho
         <div class=\\"fd-fixed-card-layout__card\\">
             <div class=\\"fd-card\\" role=\\"region\\" aria-label=\\"List Card Example 5\\">
                 <div class=\\"fd-card__header\\" role=\\"group\\" aria-roledescription=\\"Card Header\\" aria-labelledby=\\"list-card-title-5\\">
-                    <div class=\\"fd-card__header-main fd-card__header-main--non-interactive\\">
+                    <div class=\\"fd-card__header-main\\">
                         <div class=\\"fd-card__header-main-container\\">
                             <div class=\\"fd-card__header-text\\">
                                 <div class=\\"fd-card__title-area\\">
@@ -56600,7 +56237,7 @@ exports[`Check stories > Layouts/Resizable Card Layout > Story ResizeCardHorizon
             <div class=\\"fd-resizable-card-layout__card\\">
                 <div class=\\"fd-card\\" role=\\"region\\" aria-label=\\"List Card Example\\">
                     <div class=\\"fd-card__header\\" role=\\"group\\" aria-roledescription=\\"Card Header\\" aria-labelledby=\\"resizable-list-card-title-1\\">
-                        <div class=\\"fd-card__header-main fd-card__header-main--non-interactive\\">
+                        <div class=\\"fd-card__header-main\\">
                             <div class=\\"fd-card__header-main-container\\">
                                 <div class=\\"fd-card__header-text\\">
                                     <div class=\\"fd-card__title-area\\">
@@ -56654,7 +56291,7 @@ exports[`Check stories > Layouts/Resizable Card Layout > Story ResizeCardHorizon
             <div class=\\"fd-resizable-card-layout__card\\">
                 <div class=\\"fd-card\\" role=\\"region\\" aria-label=\\"List Card Example\\">
                     <div class=\\"fd-card__header\\" role=\\"group\\" aria-roledescription=\\"Card Header\\" aria-labelledby=\\"resizable-list-card-title-2\\">
-                        <div class=\\"fd-card__header-main fd-card__header-main--non-interactive\\">
+                        <div class=\\"fd-card__header-main\\">
                             <div class=\\"fd-card__header-main-container\\">
                                 <div class=\\"fd-card__header-text\\">
                                     <div class=\\"fd-card__title-area\\">
@@ -56709,7 +56346,7 @@ exports[`Check stories > Layouts/Resizable Card Layout > Story ResizeCardLayout 
             <div class=\\"fd-resizable-card-layout__card\\">
                 <div class=\\"fd-card\\" role=\\"region\\" aria-label=\\"List Card Example\\">
                     <div class=\\"fd-card__header\\" role=\\"group\\" aria-roledescription=\\"Card Header\\" aria-labelledby=\\"resizable-list-card-title-5\\">
-                        <div class=\\"fd-card__header-main fd-card__header-main--non-interactive\\">
+                        <div class=\\"fd-card__header-main\\">
                             <div class=\\"fd-card__header-main-container\\">
                                 <div class=\\"fd-card__header-text\\">
                                     <div class=\\"fd-card__title-area\\">
@@ -56790,7 +56427,7 @@ exports[`Check stories > Layouts/Resizable Card Layout > Story ResizeCardLayout 
             <div class=\\"fd-resizable-card-layout__card\\">
                 <div class=\\"fd-card\\" role=\\"region\\" aria-label=\\"List Card Example\\">
                     <div class=\\"fd-card__header\\" role=\\"group\\" aria-roledescription=\\"Card Header\\" aria-labelledby=\\"resizable-list-card-title-6\\">
-                        <div class=\\"fd-card__header-main fd-card__header-main--non-interactive\\">
+                        <div class=\\"fd-card__header-main\\">
                             <div class=\\"fd-card__header-main-container\\">
                                 <div class=\\"fd-card__header-text\\">
                                     <div class=\\"fd-card__title-area\\">
@@ -56840,7 +56477,7 @@ exports[`Check stories > Layouts/Resizable Card Layout > Story ResizeCardLayout 
             <div class=\\"fd-resizable-card-layout__card\\">
                 <div class=\\"fd-card\\" role=\\"region\\" aria-label=\\"List Card Example\\">
                     <div class=\\"fd-card__header\\" role=\\"group\\" aria-roledescription=\\"Card Header\\" aria-labelledby=\\"resizable-list-card-title-7\\">
-                        <div class=\\"fd-card__header-main fd-card__header-main--non-interactive\\">
+                        <div class=\\"fd-card__header-main\\">
                             <div class=\\"fd-card__header-main-container\\">
                                 <div class=\\"fd-card__header-text\\">
                                     <div class=\\"fd-card__title-area\\">
@@ -57047,7 +56684,7 @@ exports[`Check stories > Layouts/Resizable Card Layout > Story ResizeCardVertica
             <div class=\\"fd-resizable-card-layout__card\\">
                 <div class=\\"fd-card\\" role=\\"region\\" aria-label=\\"List Card Example\\">
                     <div class=\\"fd-card__header\\" role=\\"group\\" aria-roledescription=\\"Card Header\\" aria-labelledby=\\"resizable-list-card-title-3\\">
-                        <div class=\\"fd-card__header-main fd-card__header-main--non-interactive\\">
+                        <div class=\\"fd-card__header-main\\">
                             <div class=\\"fd-card__header-main-container\\">
                                 <div class=\\"fd-card__header-text\\">
                                     <div class=\\"fd-card__title-area\\">

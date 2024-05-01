@@ -5,9 +5,11 @@ import analyticalCardExampleHtml from "./analytical-card.example.html?raw";
 import cardAnatomyExampleHtml from "./card-anatomy.example.html?raw";
 import extendedHeaderExampleHtml from "./extended-header.example.html?raw";
 import numericHeaderExampleHtml from "./numeric-header.example.html?raw";
-import cardMediaExampleHtml from "./card-media.example.html?raw";
-import cardInteractionStatesExampleHtml from "./card-interaction-states.example.html?raw";
 import cardEmptyStateExampleHtml from "./card-empty-state.example.html?raw";
+import cardNonInteractiveExampleHtml from "./card-non-interactive.example.html?raw";
+import cardNonInteractiveHeaderExampleHtml from "./card-non-interactive-header.example.html?raw";
+import cardInteractiveButtonExampleHtml from "./card-button-interactive.example.html?raw";
+import cardInteractiveListitemExampleHtml from "./card-listitem-interactive.example.html?raw";
 
 import '../../../src/button.scss';
 import '../../../src/avatar.scss';
@@ -24,7 +26,7 @@ import '../../../src/form-label.scss';
 import '../../../src/rating-indicator.scss';
 import '../../../src/illustrated-message.scss';
 export default {
-  title: 'Components/Card',
+  title: 'Components/Card/Card',
   parameters: {
     description: `The Card is a container that consists of a <b>Header</b>, <b>Extended Header</b>, <b>Numeric Content</b>, <b>Content</b> and <b>Footer area</b>. 
     It takes the width of its parent. An additional Media Block is optional. The Header could be placed either above or below the Content and is not separated with a line. All building blocks are optional. 
@@ -57,27 +59,77 @@ Card sizes vary depending on the layout, and they are not editable. A card can f
   }
 };
 
-export const CardAnatomy = () => cardAnatomyExampleHtml;
-CardAnatomy.storyName = 'Standard card | Main Header';
-CardAnatomy.parameters = {
+export const CardNonInteractive = () => cardNonInteractiveExampleHtml;
+CardNonInteractive.storyName = 'Non-interactive card';
+CardNonInteractive.parameters = {
   docs: {
    description: {
-      story: `The main card header block comes in two interactivity variants: non-interactive and interactive. It shows the basic information of the card. 
-
-  - <b>title</b>: title is mandatory to explain what content is being displayed to the user. It wraps 3 lines.
-  - <b>avatar</b> (optional): avatar should be displayed in a size S (3rem).
-  - <b>subtitle</b> (optional): the subtitle provides additional context to the title or displays a status. Its usage depends on the card type. Subtitles that exceed one line are truncated with an ellipsis (it wraps 2 lines).
-  - <b>counter</b> (optional): the counter indicates how many items are showing on the card in relation to the total number of relevant items. If all the relevant items are visible on the card, no counter is shown. There is also no counter if there is an issue loading a card, or if no items are found in the filter criteria. The counter is right-aligned and is never truncated.
-  - <b>interactive element</b> (optional): like an icon button.
-
-For non-interactive main header add the <code>.fd-card__header-main--non-interactive</code> modifier class to the <code>.fd-card__header-main</code> base class.
+      story: `Non-interactive cards have <code>role="region"</code>. In this case the card can be placed in any container. This role covers the interactive variants:
+- no interactivity
+- no interactivity with interactive elements inside (including interactive header).
 `
     }
   }
 };
 
-export const CardInteractionStates = () => cardInteractionStatesExampleHtml;
-CardInteractionStates.storyName = 'Interaction States on Cards';
+export const CardNonInteractiveHeader = () => cardNonInteractiveHeaderExampleHtml;
+CardNonInteractiveHeader.storyName = 'Header Interaction - non-interactive Cards';
+CardNonInteractiveHeader.parameters = {
+  docs: {
+   description: {
+      story: `For interactive header use the modifier class <code>.fd-card__header--interactive</code> on <code>.fd-card__header</code>.
+`
+    }
+  }
+};
+
+export const CardInteractiveButton = () => cardInteractiveButtonExampleHtml;
+CardInteractiveButton.storyName = 'Interactive card with role button';
+CardInteractiveButton.parameters = {
+  docs: {
+   description: {
+      story: `The role <b>button</b> can be assigned to an interactive card that has <b>NO</b> interactive element inside. In this case, the card could be placed in any container.
+`
+    }
+  }
+};
+
+export const CardInteractiveListitem = () => cardInteractiveListitemExampleHtml;
+CardInteractiveListitem.storyName = 'Interactive card with role listitem';
+CardInteractiveListitem.parameters = {
+  docs: {
+   description: {
+      story: `The <b>listitem</b> is the recommended role for card. With this role, all interactive variants of the card can be covered: 
+  - Non-interactive card
+  - Non-interactive card with interactive elements inside
+  - Interactive card 
+  - Interactive card with interactive elements
+<br><br>
+Only the list item role allows nested interactions, which means: the card can be interactive itself while also having interactive elements inside. It is not recommended to use interactive cards outside list containers!<br>
+The card container must be a list, even when there's only one card. The container of the list has role region and aria-label. If there's no container for the list, the label has to be placed on the card container list.`
+    }
+  }
+};
+
+export const CardAnatomy = () => cardAnatomyExampleHtml;
+CardAnatomy.storyName = 'Standard card | Main Header';
+CardAnatomy.parameters = {
+  docs: {
+   description: {
+      story: `The main card header block shows the basic information of the card. It comes in two interactivity variants: 
+- <b>non-interactive</b>: default 
+- <b>interactive</b>: add the <code>.fd-card__header--interactive</code> modifier class to the <code>.fd-card__header</code> base class. 
+
+<br> Building blocks of the Main Header: 
+- <b>title</b>: title is mandatory to explain what content is being displayed to the user. It wraps 3 lines. 
+- <b>avatar</b> (optional): avatar should be displayed in a size S (3rem). 
+- <b>subtitle</b> (optional): the subtitle provides additional context to the title or displays a status. Its usage depends on the card type. Subtitles that exceed one line are truncated with an ellipsis (it wraps 2 lines).
+- <b>counter</b> (optional): the counter indicates how many items are showing on the card in relation to the total number of relevant items. If all the relevant items are visible on the card, no counter is shown. There is also no counter if there is an issue loading a card, or if no items are found in the filter criteria. The counter is right-aligned and is never truncated. 
+- <b>interactive element</b> (optional): like an icon button.
+`
+    }
+  }
+};
 
 export const ExtendedHeader = () => extendedHeaderExampleHtml;
 ExtendedHeader.parameters = {
@@ -97,38 +149,6 @@ NumericHeader.parameters = {
   docs: {
    description: {
       story: `The numeric header block is designed for displaying numeric information.
-`
-    }
-  }
-};
-
-export const CardMedia = () => cardMediaExampleHtml;
-CardMedia.storyName = 'Media on Cards';
-CardMedia.parameters = {
-  docs: {
-   description: {
-      story: `The Media Block is flexible in height but fixed in width to the card size. The media can only contain an image / graphic OR solid color plus text.
-      The Image can fill the media container or can come with a padding of 1rem (results in 16px) top, left and right. Corner radius 0.5rem (results in 8px). For this option add the modifier class <code>.fd-card__media--with-padding</code> to <code>.fd-card__media</code> base class. <br><br>
- 
-<h4>Title on Media</h4>
-A title on Media Block is possible if using a solid colored background an NO image! To ensure legibility and ACC standards in the Media Block / Banner, always make sure a sufficient contrast ratio is achieved. 
-Solid background colors can be bright <b>Shell Category Colors</b> or the lighter <b>Legend Background Colors</b>.
-
-- For <b>Shell Category Colors</b> add the <code>.fd-card__media--bg-shell-*</code> modifier to the <code>.fd-card__media</code> base class, where * can be a number from 1 to 16. For example: <code>fd-card__media--bg-shell-5</code>
-- For <b>Legend Background Colors</b> add the <code>.fd-card__media--bg-legend-*</code> modifier to the <code>.fd-card__media</code> base class, where * can be a number from 1 to 20. For example: <code>fd-card__media--bg-legend-7</code>
-
-
-<h4>Media as Banner</h4>
-To highlight certain content in a crisp and highly visual way, the Media Block offers the flexibility to be designed as a stand-alone banner. Use the <code>.fd-card--banner</code> modifier class to achieve this type of Card. <br>
-When the Card is used as a banner, the solid background can be applied on the whole media container or on the content container, in cases where it's used together with an image or as an overlay.
-
-To achieve a banner with a solid background with no image use the <code>.fd-card__media--bg-shell-*</code> or <code>.fd-card__media--bg-legend-*</code> modifer with the <code>.fd-card__media</code> base class.
-
-If you want to apply background on the content container when it's used with an image, use the <code>.fd-card__media-content-container--bg-shell-*</code> or <code>.fd-card__media-content-container--bg-legend-*</code> modifer with the <code>.fd-card__media-content-container</code> base class.
-
-The content container can be displayed as an overlay in case of using an image / a graphic behind. Use the modifier class <code>.fd-card__media-content-container--overlay</code> with the <code>.fd-card__media-content-container</code> base class.
-
-
 `
     }
   }
@@ -161,12 +181,11 @@ AnalyticalCard.parameters = {
 - Vertical bullet
 - Donut
 - Combined
-- Scatter plot
-
-`
+- Scatter plot`
     }
   }
 };
+
 export const ListCard = () => listCardExampleHtml;
 ListCard.storyName = 'List card';
 ListCard.parameters = {
@@ -174,11 +193,11 @@ ListCard.parameters = {
    description: {
       story: `A card can display various types of lists. All components placed inside should behave natively.
             For this kind of card it is not recommended to keep header interactive, or navigable.
-            Such a header can be achieved by adding \`fd-card__header--non-interactive\` modifier class.
         `
     }
   }
 };
+
 export const TableCard = () => tableCardExampleHtml;
 TableCard.storyName = 'Table card';
 TableCard.parameters = {
@@ -188,6 +207,7 @@ TableCard.parameters = {
     }
   }
 };
+
 export const ObjectCard = () => objectCardExampleHtml;
 ObjectCard.storyName = 'Object card';
 ObjectCard.parameters = {

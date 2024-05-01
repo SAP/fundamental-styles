@@ -171,7 +171,7 @@ $legend-background-colors: (
   --fdCard_Footer_Border_Radius: 0 0 var(--fdCard_Border_Corner_Radius) var(--fdCard_Border_Corner_Radius);
   --fdCard_Content_Border_Radius: 0;
   --fdCard_Focus_Outline_Radius: var(--fdCard_Border_Corner_Radius);
-  --fdCard_Focus_Outline_Offset: 0.0625rem 0.0625rem 0.125rem 0.0625rem;
+  --fdCard_Focus_Outline_Offset: 0.0625rem;
   --fdCard_Media_Border_Radius: var(--fdCard_Border_Corner_Radius) var(--fdCard_Border_Corner_Radius) 0 0;
   --fdCard_Main_Header_Border_Bottom: var(--fdCard_Header_Border_Bottom);
   --fdCard_Main_Header_Border_Top: none;
@@ -197,6 +197,7 @@ $legend-background-colors: (
   @include fd-reset();
   @include fd-flex(column);
 
+  flex: 1;
   width: 100%;
   min-height: 100%;
   position: relative;
@@ -223,6 +224,18 @@ $legend-background-colors: (
       --fdCard_Border: 0.0625rem solid var(--sapTile_Interactive_BorderColor);
     }
 
+    @include fd-selected() {
+      &::before {
+        content: '';
+        position: absolute;
+        display: block;
+        border: var(--sapContent_FocusWidth) var(--sapContent_FocusStyle) var(--sapContent_FocusColor);
+        inset: var(--fdCard_Focus_Outline_Offset);
+        border-radius: var(--fdCard_Focus_Outline_Radius);
+        z-index: 3;
+      }
+    }
+
     .#{$block}__header-main-container {
       @include fake-card-outline();
     }
@@ -242,7 +255,6 @@ $legend-background-colors: (
     
     &:is(:last-child) {
       --fdCard_Main_Header_Border_Bottom: none;
-      --fdCard_Focus_Outline_Offset: 0.0625rem;
       --fdCard_Main_Header_Padding_Block_End: 1rem;
       --fdCard_Main_Header_Padding_Block_Start: 1rem;
       --fdCard_Main_Header_Border_Top: var(--fdCard_Header_Border_Bottom);
@@ -277,10 +289,15 @@ $legend-background-colors: (
         @include fd-hover() {
           --fdCard_Main_Header_Background: var(--sapTile_Hover_Background);
         }
-      
-        @include fd-active() {
+
+        &:has(.#{$block}__header-main-container.is-active) {
           --fdCard_Main_Header_Background: var(--sapTile_Active_Background);
         }
+
+        &:has(.#{$block}__header-main-container:active) {
+          --fdCard_Main_Header_Background: var(--sapTile_Active_Background);
+        }
+      
       }
 
       .#{$block}__header-main-container {
@@ -326,6 +343,8 @@ $legend-background-colors: (
       gap: 0.25rem;
       align-items: flex-end;
     };
+
+    z-index: 5;
   }
 
   &__header-extended {

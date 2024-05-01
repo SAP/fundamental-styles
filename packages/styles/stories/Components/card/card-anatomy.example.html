@@ -1,9 +1,9 @@
 <div style="display:flex; justify-content:space-around; flex-wrap: wrap">
     <div style="width: 300px; height: 400px; margin: 1rem;">
-        <div class="fd-card" role="region" aria-label="Card Example 1">
-            <div class="fd-card__header fd-card__header--interactive" role="group" aria-roledescription="Card Header" aria-labelledby="card-title-a-1">
+        <div class="fd-card" role="region" aria-roledescription="Card" aria-labelledby="card-title-1d">
+            <div class="fd-card__header" role="group" aria-roledescription="Card Header">
                 <div class="fd-card__header-main">
-                    <div class="fd-card__header-main-container" role="button" tabindex="0">
+                    <div class="fd-card__header-main-container">
                         <span
                             class="fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--thumbnail fd-card__avatar"
                             style="background-image: url('/assets/images/backgrounds/city.jpg')"
@@ -12,7 +12,7 @@
                         </span>
                         <div class="fd-card__header-text">
                             <div class="fd-card__title-area">
-                                <div class="fd-card__title" id="card-title-a-1" role="heading" aria-level="3">Card Title</div>
+                                <div class="fd-card__title" id="card-title-1d" role="heading" aria-level="3">Non-interactive header</div>
                             </div>
                             <div class="fd-card__subtitle-area">
                                 <div class="fd-card__subtitle">Card Subtitle</div>
@@ -29,6 +29,7 @@
             </div>
 
             <div class="fd-card__content" role="group" aria-roledescription="Card content"></div>
+            
             <div class="fd-card__footer">
                 <div class="fd-card__footer-actions">
                     <button class="fd-button fd-button--positive">
@@ -43,10 +44,10 @@
     </div>
 
     <div style="width: 300px; height: 400px; margin: 1rem;">
-        <div class="fd-card" role="region" aria-label="Card Example All Headers">
-            <div class="fd-card__header fd-card__header--interactive" role="group" aria-roledescription="Card Header" aria-labelledby="card-title-a-1a">
+        <div class="fd-card" role="region" aria-roledescription="Card" aria-labelledby="card-title-2d">
+            <div class="fd-card__header fd-card__header--interactive" role="group" aria-roledescription="Card Header">
                 <div class="fd-card__header-main">
-                    <div class="fd-card__header-main-container" role="button" tabindex="0">
+                    <div class="fd-card__header-main-container" role="button" tabindex="0" aria-description="Activate for action/navigation" aria-label="Activate for action/navigation" title="Activate for action/navigation">
                         <span
                             class="fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--thumbnail fd-card__avatar"
                             style="background-image: url('/assets/images/backgrounds/city.jpg')"
@@ -55,7 +56,7 @@
                         </span>
                         <div class="fd-card__header-text">
                             <div class="fd-card__title-area">
-                                <div class="fd-card__title" id="card-title-a-1a" role="heading" aria-level="3">Card Title</div>
+                                <div class="fd-card__title" id="card-title-2d" role="heading" aria-level="3">Interactive header</div>
                             </div>
                             <div class="fd-card__subtitle-area">
                                 <div class="fd-card__subtitle">Card Subtitle</div>
@@ -69,7 +70,83 @@
                         <span class="fd-object-status fd-card__counter">1 of 3</span>
                     </div>
                 </div>
+            </div>
+    
+            <div class="fd-card__content" role="group" aria-roledescription="Card content"></div>
+            
+            <div class="fd-card__footer">
+                <div class="fd-card__footer-actions">
+                    <button class="fd-button fd-button--positive">
+                        Button
+                    </button>
+                    <button class="fd-button fd-button--negative">
+                        Button
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
 
+    <div style="width: 300px; height: 400px; margin: 1rem;">
+        <div class="fd-card" role="region" aria-roledescription="Card" aria-labelledby="card-title-4d">
+            <span class="fd-object-status fd-object-status--inverted fd-object-status--indication-6 fd-card__badge">
+                <span class="fd-object-status__text">badge</span>
+            </span>
+            <div class="fd-card__header" role="group" aria-roledescription="Card Header">
+                <div class="fd-card__header-main">
+                    <div class="fd-card__header-main-container">
+                        <span
+                            class="fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--thumbnail fd-card__avatar"
+                            style="background-image: url('/assets/images/backgrounds/city.jpg')"
+                            role="img"
+                            aria-label="John Doe">
+                        </span>
+                        <div class="fd-card__header-text">
+                            <div class="fd-card__title-area">
+                                <div class="fd-card__title" id="card-title-4d" role="heading" aria-level="3">Card title that truncates lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, enim. Aliquam magnam vel culpa eos explicabo. Labore laboriosam omnis explicabo natus doloremque enim, voluptatum consequuntur excepturi, reprehenderit similique, repellendus commodi.</div>
+                            </div>
+                            <div class="fd-card__subtitle-area">
+                                <div class="fd-card__subtitle">Card subtitle that truncates lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, enim. Aliquam magnam vel culpa eos explicabo. Labore laboriosam omnis explicabo natus doloremque enim, voluptatum consequuntur excepturi, reprehenderit similique, repellendus commodi.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="fd-card__header-main-actions">
+                        <span class="fd-object-status fd-card__counter">1 of 3</span>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="fd-card__content" role="group" aria-roledescription="Card content"></div>
+            <div class="fd-card__footer">
+                <a class="fd-link fd-card__footer-link" href="#"><span class="fd-link__content">Footer with a link</span></a>
+            </div>
+        </div>
+    </div>
+
+    <div style="width: 300px; height: 400px; margin: 1rem;">
+        <div class="fd-card" role="region" aria-roledescription="Card" aria-labelledby="card-title-5d">
+            <div class="fd-card__header" role="group" aria-roledescription="Card Header">
+                <div class="fd-card__header-main">
+                    <div class="fd-card__header-main-container">
+                        <span
+                            class="fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--thumbnail fd-card__avatar"
+                            style="background-image: url('/assets/images/backgrounds/city.jpg')"
+                            role="img"
+                            aria-label="John Doe">
+                        </span>
+                        <div class="fd-card__header-text">
+                            <div class="fd-card__title-area">
+                                <div class="fd-card__title" id="card-title-5d" role="heading" aria-level="3">Card with main, extended and numeric headers</div>
+                            </div>
+                            <div class="fd-card__subtitle-area">
+                                <div class="fd-card__subtitle">Card subtitle</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="fd-card__header-main-actions">
+                        <span class="fd-object-status fd-card__counter">1 of 3</span>
+                    </div>
+                </div>
                 <div class="fd-card__header-extended" role="group" aria-roledescription="Extended content">
                     <div class="fd-card__header-column">
                         <div class="fd-card__header-row">
@@ -85,7 +162,6 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="fd-card__header-numeric" role="group" aria-roledescription="Numeric content">
                     <div class="fd-card__header-row">
                         <div class="fd-card__numeric-container">
@@ -95,7 +171,7 @@
                                 </div>
                                 <div class="fd-numeric-content__scale-container">
                                     <div class="fd-numeric-content__scale">
-                                        <i class="fd-numeric-content__scale-arrow sap-icon--down" aria-label="decrease"></i>
+                                        <i class="fd-numeric-content__scale-arrow sap-icon--down" role="presentation"></i>
                                         <span class="fd-numeric-content__scale-text">M</span>
                                     </div>
                                 </div>
@@ -115,183 +191,33 @@
                     </div>
                 </div>
             </div>
-
-            <div class="fd-card__content" role="group" aria-roledescription="Card content"></div>
-            <div class="fd-card__footer">
-                <div class="fd-card__footer-actions">
-                    <button class="fd-button fd-button--positive">
-                        Button
-                    </button>
-                    <button class="fd-button fd-button--negative">
-                        Button
-                    </button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div style="width: 300px; height: 400px; margin: 1rem;">
-        <div class="fd-card" role="region" aria-label="Card Example 2">
-            <div class="fd-card__header fd-card__header--interactive" role="group" aria-roledescription="Card Header" aria-labelledby="card-title-a-2">
-                <div class="fd-card__header-main">
-                    <div class="fd-card__header-main-container" role="button" tabindex="0">
-                        <span
-                            class="fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--thumbnail fd-card__avatar"
-                            style="background-image: url('/assets/images/backgrounds/city.jpg')"
-                            role="img"
-                            aria-label="John Doe">
-                        </span>
-                        <div class="fd-card__header-text">
-                            <div class="fd-card__title-area">
-                                <div class="fd-card__title" id="card-title-a-2" role="heading" aria-level="3">Card Title</div>
-                            </div>
-                        </div>
-                    </div>
-                </div> 
-            </div>
-            <div class="fd-card__content" role="group" aria-roledescription="Card content"></div>
-            <div class="fd-card__footer">
-                <a class="fd-link fd-card__footer-link" href="#"><span class="fd-link__content">Footer with a link</span></a>
-            </div>
-        </div>
-    </div>
-
-    <div style="width: 300px; height: 400px; margin: 1rem;">
-        <div class="fd-card" role="region" aria-label="Card Example 3">
-            <div class="fd-card__header fd-card__header--interactive" role="group" aria-roledescription="Card Header" aria-labelledby="card-title-a-3">
-                <div class="fd-card__header-main">
-                    <div class="fd-card__header-main-container" role="button" tabindex="0">
-                        <span
-                            class="fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--thumbnail fd-card__avatar"
-                            style="background-image: url('/assets/images/backgrounds/city.jpg')"
-                            role="img"
-                            aria-label="John Doe">
-                        </span>
-                        <div class="fd-card__header-text">
-                            <div class="fd-card__title-area">
-                                <div class="fd-card__title" id="card-title-a-3" role="heading" aria-level="3">Card Title</div>
-                            </div>
-                        </div>
-                    </div>
-                </div> 
-            </div>
-            <div class="fd-card__content" role="group" aria-roledescription="Card content"></div>
-            <div class="fd-card__footer">
-                <a class="fd-link fd-card__footer-link" href="#"><span class="fd-link__content">Footer with a long link Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium</span></a>
-                <button class="fd-button fd-button--transparent">
-                    <i class="sap-icon sap-icon--overflow"></i>
-                </button>
-            </div>
-        </div>
-    </div>
-
-    <div style="width: 300px; height: 400px; margin: 1rem;">
-        <div class="fd-card" role="region" aria-label="Card Example 4">
-            <div class="fd-card__content" role="group" aria-roledescription="Card content"></div>
-            <div class="fd-card__header fd-card__header--interactive" role="group" aria-roledescription="Card Header" aria-labelledby="card-title-a-4">
-                <div class="fd-card__header-main">
-                    <div class="fd-card__header-main-container" role="button" tabindex="0">
-                        <span
-                            class="fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--thumbnail fd-card__avatar"
-                            style="background-image: url('/assets/images/backgrounds/city.jpg')"
-                            role="img"
-                            aria-label="John Doe">
-                        </span>
-                        <div class="fd-card__header-text">
-                            <div class="fd-card__title-area">
-                                <div class="fd-card__title" id="card-title-a-4" role="heading" aria-level="3">Card Title</div>
-                            </div>
-                            <div class="fd-card__subtitle-area">
-                                <div class="fd-card__subtitle">Card Subtitle</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="fd-card__header-main-actions">
-                        <span class="fd-object-status fd-card__counter">1 of 3</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div style="width: 300px; height: 400px; margin: 1rem;">
-        <div class="fd-card" role="region" aria-label="Card Example 5">
-            <div class="fd-card__header fd-card__header--interactive" role="group" aria-roledescription="Card Header" aria-labelledby="card-title-a-5">
-                <div class="fd-card__header-main">
-                    <div class="fd-card__header-main-container" role="button" tabindex="0">
-                        <span
-                            class="fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--thumbnail fd-card__avatar"
-                            style="background-image: url('/assets/images/backgrounds/city.jpg')"
-                            role="img"
-                            aria-label="John Doe">
-                        </span>
-                        <div class="fd-card__header-text">
-                            <div class="fd-card__title-area">
-                                <div class="fd-card__title" id="card-title-a-5" role="heading" aria-level="3">Card Title With a Very Long Text ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</div>
-                            </div>
-                            <div class="fd-card__subtitle-area">
-                                <div class="fd-card__subtitle">Card Subtitle With a Very Long Text ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="fd-card__header-main-actions">
-                        <span class="fd-object-status fd-card__counter">1 of 3</span>
-                    </div>
-                </div>
-            </div>
             <div class="fd-card__content" role="group" aria-roledescription="Card content"></div>
         </div>
     </div>
 
     <div style="width: 300px; height: 400px; margin: 1rem;">
-        <div class="fd-card" role="region" aria-label="Card Example 6">
-            <div class="fd-card__header fd-card__header--interactive" role="group" aria-roledescription="Card Header" aria-labelledby="card-title-a-6">
-                <div class="fd-card__header-main">
-                    <div class="fd-card__header-main-container" role="button" tabindex="0">
-                        <span
-                            class="fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--thumbnail fd-card__avatar"
-                            style="background-image: url('/assets/images/backgrounds/city.jpg')"
-                            role="img"
-                            aria-label="John Doe">
-                        </span>
-                        <div class="fd-card__header-text">
-                            <div class="fd-card__title-area">
-                                <div class="fd-card__title" id="card-title-a-6" role="heading" aria-level="3">Card Title</div>
-                            </div>
-                            <div class="fd-card__subtitle-area">
-                                <div class="fd-card__subtitle">Card Subtitle</div>
-                            </div>
-                        </div>
-                    </div>       
-                    <div class="fd-card__header-main-actions">
-                        <span class="fd-object-status fd-card__counter">1 of 3</span>
-                    </div>
-                </div>
-            </div>
-            <div class="fd-card__content" role="group" aria-roledescription="Card content"></div>
-        </div>
-    </div>
-
-    <div style="width: 300px; height: 400px; margin: 1rem;">
-        <div class="fd-card" role="region" aria-label="Card Example 7">
+        <div class="fd-card" role="region" aria-roledescription="Card" aria-labelledby="card-title-6d">
             <span class="fd-object-status fd-object-status--inverted fd-object-status--indication-3 fd-card__badge">
                 <i class="fd-object-status__icon sap-icon--example" role="presentation"></i>
                 <span class="fd-object-status__text">badge lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae distinctio natus aperiam doloremque beatae quas, fuga sequi iste officia similique sunt, iusto ad obcaecati voluptatum. Commodi perferendis assumenda modi laudantium.</span>
             </span>
-            <div class="fd-card__header fd-card__header--interactive" role="group" aria-roledescription="Card Header" aria-labelledby="card-title-a-7">
+            <div class="fd-card__header" role="group" aria-roledescription="Card Header">
                 <div class="fd-card__header-main">
-                    <div class="fd-card__header-main-container" role="button" tabindex="0">
+                    <div class="fd-card__header-main-container">
+                        <span
+                            class="fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--thumbnail fd-card__avatar"
+                            style="background-image: url('/assets/images/backgrounds/city.jpg')"
+                            role="img"
+                            aria-label="John Doe">
+                        </span>
                         <div class="fd-card__header-text">
                             <div class="fd-card__title-area">
-                                <div class="fd-card__title" id="card-title-a-7" role="heading" aria-level="3">Card Title</div>
+                                <div class="fd-card__title" id="card-title-6d" role="heading" aria-level="3">Card with Badge</div>
                             </div>
                             <div class="fd-card__subtitle-area">
-                                <div class="fd-card__subtitle">Card Subtitle</div>
+                                <div class="fd-card__subtitle">Badge text truncates</div>
                             </div>
                         </div>
-                    </div>       
-                    <div class="fd-card__header-main-actions">
-                        <span class="fd-object-status fd-card__counter">1 of 3</span>
                     </div>
                 </div>
             </div>
@@ -300,75 +226,28 @@
     </div>
 
     <div style="width: 300px; height: 400px; margin: 1rem;">
-        <div class="fd-card" role="region" aria-label="Card Example 8">
-            <span class="fd-object-status fd-object-status--inverted fd-object-status--indication-1b fd-card__badge">
-                <i class="fd-object-status__icon sap-icon--example" role="presentation"></i>
-                <span class="fd-object-status__text">badge</span>
-            </span>
-            <div class="fd-card__content" role="group" aria-roledescription="Card content"></div>
-            <div class="fd-card__header fd-card__header--interactive" role="group" aria-roledescription="Card Header" aria-labelledby="card-title-a-8">
-                <div class="fd-card__header-main">
-                    <div class="fd-card__header-main-container" role="button" tabindex="0">
-                        <div class="fd-card__header-text">
-                            <div class="fd-card__title-area">
-                                <div class="fd-card__title" id="card-title-a-8" role="heading" aria-level="3">Card Title</div>
-                            </div>
-                            <div class="fd-card__subtitle-area">
-                                <div class="fd-card__subtitle">Card Subtitle</div>
-                            </div>
-                        </div>
-                    </div>       
-                    <div class="fd-card__header-main-actions">
-                        <span class="fd-object-status fd-object-status--critical fd-card__counter">1 of 3</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div style="width: 300px; height: 400px; margin: 1rem;">
-        <div class="fd-card" role="region" aria-label="Card Example 9">
-            <span class="fd-object-status fd-object-status--inverted fd-card__badge">
-                <i class="fd-object-status__icon sap-icon--example" role="presentation"></i>
-            </span>
-            <div class="fd-card__header fd-card__header--interactive" role="group" aria-roledescription="Card Header" aria-labelledby="card-title-a-9">
-                <div class="fd-card__header-main">
-                    <div class="fd-card__header-main-container" role="button" tabindex="0">
-                        <div class="fd-card__header-text">
-                            <div class="fd-card__title-area">
-                                <div class="fd-card__title" id="card-title-a-9" role="heading" aria-level="3">Card Title With a Very Long Text ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</div>
-                            </div>
-                            <div class="fd-card__subtitle-area">
-                                <div class="fd-card__subtitle">Card Subtitle With a Very Long Text ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="fd-card__header-main-actions">
-                        <span class="fd-object-status fd-card__counter">1 of 3</span>
-                    </div>
-                </div>
-            </div>
-            <div class="fd-card__content" role="group" aria-roledescription="Card content"></div>
-        </div>
-    </div>
-
-    <div style="width: 300px; height: 400px; margin: 1rem;">
-        <div class="fd-card" role="region" aria-label="Card Example 10">
+        <div class="fd-card" role="region" aria-roledescription="Card" aria-labelledby="card-title-7d">
             <span class="fd-object-status fd-object-status--inverted fd-object-status--indication-5b fd-card__badge">
                 <i class="fd-object-status__icon sap-icon--example" role="presentation"></i>
-                <span class="fd-object-status__text">Updated content</span>
+                <span class="fd-object-status__text">badge</span>
             </span>
-            <div class="fd-card__header fd-card__header--interactive" role="group" aria-roledescription="Card Header" aria-labelledby="card-title-a-10">
+            <div class="fd-card__header" role="group" aria-roledescription="Card Header">
                 <div class="fd-card__header-main">
-                    <div class="fd-card__header-main-container" role="button" tabindex="0">
+                    <div class="fd-card__header-main-container">
+                        <span
+                            class="fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--thumbnail fd-card__avatar"
+                            style="background-image: url('/assets/images/backgrounds/city.jpg')"
+                            role="img"
+                            aria-label="John Doe">
+                        </span>
                         <div class="fd-card__header-text">
                             <div class="fd-card__title-area">
-                                <div class="fd-card__title" id="card-title-a-10" role="heading" aria-level="3">Card Title</div>
+                                <div class="fd-card__title" id="card-title-7d" role="heading" aria-level="3">Card with Badge</div>
+                            </div>
+                            <div class="fd-card__subtitle-area">
+                                <div class="fd-card__subtitle">Badge with icon</div>
                             </div>
                         </div>
-                    </div>
-                    <div class="fd-card__header-main-actions">
-                        <span class="fd-object-status fd-card__counter">1 of 3</span>
                     </div>
                 </div>
             </div>
@@ -376,13 +255,4 @@
         </div>
     </div>
 
-    <div style="width: 300px; height: 400px; margin: 1rem;">
-        <div class="fd-card" role="region" aria-label="Card Example 11">
-            <span class="fd-object-status fd-object-status--inverted fd-object-status--indication-6 fd-card__badge">
-                <i class="fd-object-status__icon sap-icon--example" role="presentation"></i>
-                <span class="fd-object-status__text">badge</span>
-            </span>
-            <div class="fd-card__content" role="group" aria-roledescription="Card content"></div>
-        </div>
-    </div>
 </div>
