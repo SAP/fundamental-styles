@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.35.2-rc.1](https://github.com/SAP/fundamental-styles/compare/v0.35.2-rc.0...v0.35.2-rc.1) (2024-05-02)
+
+### Bug Fixes
+
+-   **styles:** fix readonly textarea [ci visual] ([#5326](https://github.com/SAP/fundamental-styles/issues/5326)) ([bf7e51f](https://github.com/SAP/fundamental-styles/commit/bf7e51fc281d00efd7941f84add58dd3838e6c8e))
+
 ## [0.35.2-rc.0](https://github.com/SAP/fundamental-styles/compare/v0.35.1...v0.35.2-rc.0) (2024-04-28)
 
 **Note:** Version bump only for package fundamental-styles
