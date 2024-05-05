@@ -89,7 +89,7 @@
     "colors": "1.4.0",
     "conventional-changelog": "5.1.0",
     "conventional-changelog-angular": "7.0.0",
-    "conventional-changelog-cli": "4.1.0",
+    "conventional-changelog-cli": "5.0.0",
     "conventional-recommended-bump": "9.0.0",
     "core-js": "3.35.1",
     "cross-env": "7.0.3",
