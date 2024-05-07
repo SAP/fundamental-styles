@@ -1,10 +1,9 @@
 @use "sass:map";
 
 :root {
-  --fdCard_Background_Color: var(--sapTile_Background);
   --fdCard_Box_Shadow: var(--sapContent_Shadow0);
   --fdCard_Box_Shadow_Hover: var(--sapContent_Shadow0);
-  --fdCard_Border_Radius: var(--sapElement_BorderCornerRadius);
+  --fdCard_Border_Corner_Radius: var(--sapElement_BorderCornerRadius);
   --fdCard_Header_Border_Bottom: 0.0625rem solid var(--sapTile_SeparatorColor);
   --fdCard_Footer_Border_Top: 0.0625rem solid var(--sapTile_SeparatorColor);
   --fdCard_Border: none;
@@ -14,4 +13,5 @@
   --fdCard_Footer_Actions_Item_Spacing: 0.5rem;
   --fdCard_Title_Font_Size: var(--sapFontHeader5Size);
   --fdCard_Title_Font_Weight: var(--sapFontHeaderWeight);
+  --fdCard_Main_Header_Padding_Bottom: 1rem;
 }

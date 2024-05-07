@@ -1,9 +1,9 @@
 <div style="display:flex; justify-content:space-around; flex-wrap: wrap">
     <div style="width: 300px; height: 400px; margin: 1rem;">
-        <div class="fd-card fd-card--analytical" role="region" aria-label="Analytical Card Example 1">
-            <div class="fd-card__header" role="group" aria-roledescription="Card Header" aria-labelledby="analytical-card-title-1">
+        <div class="fd-card fd-card--analytical" role="region" aria-labelledby="analytical-card-title-1" aria-roledescription="Card">
+            <div class="fd-card__header" role="group" aria-roledescription="Card Header">
                 <div class="fd-card__header-main">
-                    <div class="fd-card__header-main-container" role="button" tabindex="0">
+                    <div class="fd-card__header-main-container">
                         <div class="fd-card__header-text">
                             <div class="fd-card__title-area">
                                 <div class="fd-card__title" id="analytical-card-title-1" role="heading" aria-level="3">Card Title</div>
@@ -46,10 +46,10 @@
     </div>
 
     <div style="width: 700px; height: 400px; margin: 1rem;">
-        <div class="fd-card fd-card--analytical" role="region" aria-label="Analytical Card Example 2">
-            <div class="fd-card__header" role="group" aria-roledescription="Card Header" aria-labelledby="analytical-card-title-2">
+        <div class="fd-card fd-card--analytical" role="region" aria-labelledby="analytical-card-title-2" aria-roledescription="Card">
+            <div class="fd-card__header" role="group" aria-roledescription="Card Header">
                 <div class="fd-card__header-main">
-                    <div class="fd-card__header-main-container" role="button" tabindex="0">
+                    <div class="fd-card__header-main-container">
                         <div class="fd-card__header-text">
                             <div class="fd-card__title-area">
                                 <div class="fd-card__title" id="analytical-card-title-2" role="heading" aria-level="3">Card Title With a Very Long Text ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</div>
@@ -86,7 +86,10 @@
                         </div>
                     </div>
                 </div>
-                <div class="fd-badge">Badge</div>
+                <span class="fd-object-status fd-object-status--inverted fd-object-status--indication-5b fd-card__badge">
+                    <i class="fd-object-status__icon sap-icon--example" role="presentation"></i>
+                    <span class="fd-object-status__text">badge</span>
+                </span>
                 
             </div>
             <div class="fd-card__content" role="group" aria-roledescription="Card content"></div>
