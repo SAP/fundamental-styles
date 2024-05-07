@@ -3,6 +3,20 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.36.0-rc.0](https://github.com/SAP/fundamental-styles/compare/v0.35.2-rc.1...v0.36.0-rc.0) (2024-05-07)
+
+### Features
+
+-   **styles:** add Media cards, design updates [ci visual] ([#5354](https://github.com/SAP/fundamental-styles/issues/5354)) ([5ca8ec2](https://github.com/SAP/fundamental-styles/commit/5ca8ec20c6475514596511536a0960f28a57c340))
+
+### BREAKING CHANGES
+
+-   **styles:** - a11y properties have been updated: aria-label, aria-roledescription, etc.
+
+*   removed class `fd-card__header-main--non-interactive` as it's no longer needed. The default header is non-interactive
+*   Interactive header needs a modifier class `fd-card__header--interactive`
+*   Card badge is now using Inverted Object status
+
 ## [0.35.2-rc.1](https://github.com/SAP/fundamental-styles/compare/v0.35.2-rc.0...v0.35.2-rc.1) (2024-05-02)
 
 ### Bug Fixes
