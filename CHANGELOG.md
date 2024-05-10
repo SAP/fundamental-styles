@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.36.0-rc.2](https://github.com/SAP/fundamental-styles/compare/v0.36.0-rc.1...v0.36.0-rc.2) (2024-05-10)
+
+### Bug Fixes
+
+-   **styles:** update textarea line-height [ci visual] ([#5367](https://github.com/SAP/fundamental-styles/issues/5367)) ([9abdd70](https://github.com/SAP/fundamental-styles/commit/9abdd70cf609f6fabfa6925c2611243afa1943b4))
+
 # [0.36.0-rc.1](https://github.com/SAP/fundamental-styles/compare/v0.36.0-rc.0...v0.36.0-rc.1) (2024-05-10)
 
 **Note:** Version bump only for package fundamental-styles
