@@ -74,7 +74,7 @@
     "@storybook/preview-api": "^8.0.10",
     "@storybook/theming": "^8.0.10",
     "@swc/core": "^1.4.0",
-    "@testing-library/react": "13.4.0",
+    "@testing-library/react": "15.0.7",
     "@types/fs-extra": "11.0.4",
     "@types/node": "18.19.14",
     "@types/react": "18.2.24",
