@@ -102,7 +102,7 @@
     "eslint-plugin-storybook": "^0.8.0",
     "fast-glob": "3.3.2",
     "fs-extra": "11.2.0",
-    "git-semver-tags": "4.1.1",
+    "git-semver-tags": "8.0.0",
     "glob": "8.0.3",
     "husky": "7.0.4",
     "jsonc-eslint-parser": "2.1.0",
