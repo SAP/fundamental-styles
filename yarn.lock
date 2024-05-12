@@ -10394,7 +10394,7 @@ __metadata:
     stylelint-config-standard-scss: "npm:^13.0.0"
     stylelint-scss: "npm:6.1.0"
     through2: "npm:4.0.2"
-    tocbot: "npm:4.12.3"
+    tocbot: "npm:4.27.20"
     ts-node: "npm:10.9.2"
     tslib: "npm:2.3.0"
     typescript: "npm:5.3.3"
@@ -19277,10 +19277,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"tocbot@npm:4.12.3":
-  version: 4.12.3
-  resolution: "tocbot@npm:4.12.3"
-  checksum: 10/5a448151f9fe8bbf51ae5bac0c32f5bd3d8a07f692d7622fde8798413b1c9bae5d35cb0fa4cea5d15f980b26c5e97728a3c0444e2d8f41f912b90ad46a2255c2
+"tocbot@npm:4.27.20":
+  version: 4.27.20
+  resolution: "tocbot@npm:4.27.20"
+  checksum: 10/b62f5988c788e71cfa8ed9f022bb97bb094c57fb42c08dcbecbf36c509f32cd9bcbcfe0b9510589661ae0e3c0b20e6ece3e9486e923576797446bd5db56642b4
   languageName: node
   linkType: hard
 
