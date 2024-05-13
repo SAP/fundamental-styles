@@ -236,9 +236,19 @@ $legend-background-colors: (
       }
     }
 
-    .#{$block}__header-main-container {
-      @include fake-card-outline();
+
+    &[role="button"] {
+      .#{$block}__header-main-container {
+        @include fake-card-outline();
+      }
     }
+
+    &[role="listitem"] {
+      .#{$block}__header-main-container {
+        pointer-events: none;
+      }
+    }
+   
 
     cursor: pointer;
   }
@@ -541,6 +551,18 @@ $legend-background-colors: (
     span {
       @include fd-ellipsis();
     }
+
+    & + .#{$block}__header {
+      --fdCard_Content_Border_Radius: var(--fdCard_Border_Corner_Radius) var(--fdCard_Border_Corner_Radius) 0 0;
+      --fdCard_Focus_Outline_Radius: var(--fdCard_Border_Corner_Radius) var(--fdCard_Border_Corner_Radius) 0 0;
+      --fdCard_Main_Header_Border_Radius: var(--fdCard_Border_Corner_Radius) var(--fdCard_Border_Corner_Radius) 0 0;
+
+      &:is(:last-child) {
+        --fdCard_Content_Border_Radius: var(--fdCard_Border_Corner_Radius);
+        --fdCard_Focus_Outline_Radius: var(--fdCard_Border_Corner_Radius);
+      }
+    }
+
 
     & + .#{$block}__content {
       overflow: hidden;
