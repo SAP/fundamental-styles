@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.36.0-rc.3](https://github.com/SAP/fundamental-styles/compare/v0.36.0-rc.2...v0.36.0-rc.3) (2024-05-13)
+
+### Bug Fixes
+
+-   **styles:** add focus improvements to Card [ci visual] ([#5378](https://github.com/SAP/fundamental-styles/issues/5378)) ([7f7a3a8](https://github.com/SAP/fundamental-styles/commit/7f7a3a89c0852f871c52ced5b12a7a47e0edbb51))
+
 # [0.36.0-rc.2](https://github.com/SAP/fundamental-styles/compare/v0.36.0-rc.1...v0.36.0-rc.2) (2024-05-10)
 
 ### Bug Fixes
