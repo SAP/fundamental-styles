@@ -3986,6 +3986,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@storybook/client-logger@npm:8.1.1":
+  version: 8.1.1
+  resolution: "@storybook/client-logger@npm:8.1.1"
+  dependencies:
+    "@storybook/global": "npm:^5.0.0"
+  checksum: 10/0255552c93c66e2d11fa282a76e813861427e7cb0c3dc860e8d686bfd4cbceb37f04589d3540db39eb1e37761761d964e1d0266cbe3074e1dcc80af26cd5f153
+  languageName: node
+  linkType: hard
+
 "@storybook/codemod@npm:8.0.10":
   version: 8.0.10
   resolution: "@storybook/codemod@npm:8.0.10"
@@ -4339,7 +4348,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/theming@npm:8.0.10, @storybook/theming@npm:^8.0.10":
+"@storybook/theming@npm:8.0.10":
   version: 8.0.10
   resolution: "@storybook/theming@npm:8.0.10"
   dependencies:
@@ -4356,6 +4365,26 @@ __metadata:
     react-dom:
       optional: true
   checksum: 10/479907ba172a175e6062a5f226df89af015b50fe6f1d481149cbf6105288a6c298ca08991b5d3b30f5e52bfaa19134705d033ba53916bb576e988f6a971a3d27
+  languageName: node
+  linkType: hard
+
+"@storybook/theming@npm:^8.0.10":
+  version: 8.1.1
+  resolution: "@storybook/theming@npm:8.1.1"
+  dependencies:
+    "@emotion/use-insertion-effect-with-fallbacks": "npm:^1.0.1"
+    "@storybook/client-logger": "npm:8.1.1"
+    "@storybook/global": "npm:^5.0.0"
+    memoizerific: "npm:^1.11.3"
+  peerDependencies:
+    react: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0-beta
+    react-dom: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0-beta
+  peerDependenciesMeta:
+    react:
+      optional: true
+    react-dom:
+      optional: true
+  checksum: 10/78749434ca26489dcdedee5245577454eef82d33c5ea292c25172790479256fb6ce74dd0d0e8b64d05b61db98eab06370142f2a7093511a969741db7f9b13f28
   languageName: node
   linkType: hard
 
