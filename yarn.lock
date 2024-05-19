@@ -10385,7 +10385,7 @@ __metadata:
     react-is: "npm:18.2.0"
     remark-gfm: "npm:3.0.1"
     sass: "npm:1.52.1"
-    semver: "npm:7.5.4"
+    semver: "npm:7.6.2"
     standard-version: "npm:9.3.2"
     start-server-and-test: "npm:1.14.0"
     storybook: "npm:^8.0.10"
@@ -17898,6 +17898,15 @@ __metadata:
   bin:
     semver: bin/semver.js
   checksum: 10/1b41018df2d8aca5a1db4729985e8e20428c650daea60fcd16e926e9383217d00f574fab92d79612771884a98d2ee2a1973f49d630829a8d54d6570defe62535
+  languageName: node
+  linkType: hard
+
+"semver@npm:7.6.2":
+  version: 7.6.2
+  resolution: "semver@npm:7.6.2"
+  bin:
+    semver: bin/semver.js
+  checksum: 10/296b17d027f57a87ef645e9c725bff4865a38dfc9caf29b26aa084b85820972fbe7372caea1ba6857162fa990702c6d9c1d82297cecb72d56c78ab29070d2ca2
   languageName: node
   linkType: hard
 
