@@ -29,7 +29,7 @@
 
 // icon glyph mixin
 @mixin fd-icon-glyph($glyph, $position: 'before') {
-  @if map-has-key($fd-icons, $glyph) {
+  @if map.has-key($fd-icons, $glyph) {
     &::#{$position} {
       content: map.get($fd-icons, $glyph);
       @content;
@@ -59,7 +59,7 @@
 
 // business suite icon glyph mixin
 @mixin fd-business-suite-icon-glyph($glyph, $position: 'before') {
-  @if map-has-key($fd-business-suite-icons, $glyph) {
+  @if map.has-key($fd-business-suite-icons, $glyph) {
     &::#{$position} {
       content: map.get($fd-business-suite-icons, $glyph);
       @content;
@@ -89,7 +89,7 @@
 
 // SAP-icons-TNT icon glyph mixin
 @mixin fd-tnt-icon-glyph($glyph, $position: 'before') {
-  @if map-has-key($fd-tnt-icons, $glyph) {
+  @if map.has-key($fd-tnt-icons, $glyph) {
     &::#{$position} {
       content: map.get($fd-tnt-icons, $glyph);
       @content;

@@ -63,7 +63,7 @@
 }
 
 @mixin fd-screen($size, $dimension: width) {
-  @if map-has-key($fd-breakpoints, $size) {
+  @if map.has-key($fd-breakpoints, $size) {
     @media (min-#{$dimension}: map.get($fd-breakpoints, $size)) {
       @content;
     }

@@ -1,4 +1,5 @@
 @use "sass:map";
+@use "sass:string";
 
 @import "common-variables";
 
@@ -325,7 +326,7 @@
 @mixin sap-set-border-radius($value...) {
   $_value: $value;
 
-  @if  map-has-key($sap-corner-border-radius, #{$value}) {
+  @if  map.has-key($sap-corner-border-radius, #{$value}) {
     $_value: map.get($sap-corner-border-radius, #{$value});
   }
 
@@ -495,7 +496,7 @@
 @mixin sap-margin($value, $side: '') {
   $_value: $value !important;
 
-  @if  map-has-key($sap-margins, #{$value}) {
+  @if  map.has-key($sap-margins, #{$value}) {
     $_value: map.get($sap-margins, #{$value}) !important;
   }
 
@@ -704,7 +705,7 @@
 @mixin sap-padding($value: 1rem, $side: '') {
   $_value: $value !important;
 
-  @if  map-has-key($sap-paddings, #{$value}) {
+  @if  map.has-key($sap-paddings, #{$value}) {
     $_value: map.get($sap-paddings, #{$value}) !important;
   }
 
@@ -821,9 +822,9 @@
 }
 
 @mixin sap-shadow($type) {
-  @if  map-has-key($sap-box-shadow-types , #{$type} ) {
+  @if  map.has-key($sap-box-shadow-types , #{$type} ) {
     @include sap-set-box-shadow(map.get($sap-box-shadow-types, #{$type}));
-  } @else if map-has-key($sap-text-shadow-types , #{$type} ) {
+  } @else if map.has-key($sap-text-shadow-types , #{$type} ) {
     @include sap-set-text-shadow(map.get($sap-text-shadow-types, #{$type}));
   } @else {
     @warn "Unknown type of shadow";
@@ -1051,7 +1052,7 @@
 }
 
 @function capitalize($string) {
-  @return to-upper-case(str-slice($string, 1, 1)) + str-slice($string, 2);
+  @return string.to-upper-case(string.slice($string, 1, 1)) + string.slice($string, 2);
 }
 
 /**
