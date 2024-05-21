@@ -222,7 +222,7 @@ $block: #{$fd-namespace}-avatar;
 
 $accent-selector: ();
 
-@each $item in map-keys($fd-avatar-accent-colors) {
+@each $item in map.keys($fd-avatar-accent-colors) {
   $accent-selector: $accent-selector, '.#{$block}--accent-color-#{$item}';
 }
 
@@ -234,7 +234,7 @@ $accent-selector: ();
 
 $selector: ();
 
-@each $item in map-keys($fd-avatar-sizes) {
+@each $item in map.keys($fd-avatar-sizes) {
   $selector: $selector, '.#{$block}--#{$item}';
 }
 

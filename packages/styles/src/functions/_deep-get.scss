@@ -2,7 +2,7 @@
 @use "sass:list";
 
 @function map-deep-get($map, $keys...) {
-  @for $i from 1 through length($keys) {
+  @for $i from 1 through list.length($keys) {
     $map: map.get($map, list.nth($keys, $i));
   }
 
