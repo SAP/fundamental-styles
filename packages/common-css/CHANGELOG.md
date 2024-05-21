@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.36.1-rc.1](https://github.com/SAP/fundamental-styles/compare/v0.36.1-rc.0...v0.36.1-rc.1) (2024-05-21)
+
+### Bug Fixes
+
+-   **styles,common-css:** replace global scss functions [ci visual] ([#5391](https://github.com/SAP/fundamental-styles/issues/5391)) ([58a1601](https://github.com/SAP/fundamental-styles/commit/58a16018b10c5572327390551a76abd8a7a817f1))
+
 ## [0.36.1-rc.0](https://github.com/SAP/fundamental-styles/compare/v0.36.0...v0.36.1-rc.0) (2024-05-21)
 
 **Note:** Version bump only for package @sap-ui/common-css
