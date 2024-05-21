@@ -58,6 +58,7 @@ export default {
             initialActive: 'docs'
         }
     },
+
     globalTypes : {
         ['styles-theme']: {},
         ['cx-theme']: {},
@@ -83,5 +84,7 @@ export default {
             }
         }
     },
-    decorators: [withDirectionality, withThemeProvider, withContentDensity]
+
+    decorators: [withDirectionality, withThemeProvider, withContentDensity],
+    tags: ['autodocs']
 } as Preview;
