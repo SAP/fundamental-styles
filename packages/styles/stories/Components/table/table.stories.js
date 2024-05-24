@@ -93,7 +93,8 @@ Primary.parameters = {
   docs: {
     description: {
       story: `
-The primary table contains columns with headers, and rows with links. In the first column, links are displayed. To display links within a table, add the \`fd-link\` class within the table data.
+The primary table contains columns with headers, and rows with links. In the first column, links are displayed. To display links within a table, add the \`fd-link\` class within the table data. <br>
+To disable the hover and active states on header cells apply the <code>fd-table__header--non-interactive</code> modifier to <code>fd-table__header</code> base class.
     `
     }
   }
