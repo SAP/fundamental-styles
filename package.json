@@ -76,7 +76,7 @@
     "@swc/core": "^1.4.0",
     "@testing-library/react": "13.4.0",
     "@types/fs-extra": "11.0.4",
-    "@types/node": "18.19.14",
+    "@types/node": "20.12.12",
     "@types/react": "18.2.24",
     "@types/react-dom": "18.2.9",
     "@typescript-eslint/eslint-plugin": "6.21.0",
