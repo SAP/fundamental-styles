@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.36.3-rc.0](https://github.com/SAP/fundamental-styles/compare/v0.36.2...v0.36.3-rc.0) (2024-05-29)
+
+### Bug Fixes
+
+-   **styles:** add fix for the Mega Manu button color [ci visual] ([#5405](https://github.com/SAP/fundamental-styles/issues/5405)) ([6a5c915](https://github.com/SAP/fundamental-styles/commit/6a5c915945d3155cbc7d377d3fb5d2e360aad904))
+
 ## [0.36.2](https://github.com/SAP/fundamental-styles/compare/v0.36.2-rc.0...v0.36.2) (2024-05-24)
 
 **Note:** Version bump only for package fundamental-styles
