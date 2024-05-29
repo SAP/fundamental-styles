@@ -64,7 +64,7 @@ $block: #{$fd-namespace}-tokenizer;
     &.#{$fd-namespace}-input {
       border: none;
       padding: 0;
-      min-width: var(--fdTokenizer_Input_Width, $fd-tokenizer-input-width);
+      min-width: $fd-tokenizer-input-width;
     }
 
     &:first-child {

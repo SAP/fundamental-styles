@@ -25,7 +25,7 @@ $fd-input-field-height--compact: 1.625rem;
 
   z-index: 1;
   width: 100%;
-  min-width: var(#{$overrideMinWidth}, 2.75rem);
+  min-width: #{$overrideMinWidth};
   border-radius: var(--sapField_BorderCornerRadius);
   padding: var(--fdInput_Field_Padding, 0 0.625rem);
   margin: var(--fdInput_Field_Margin, 0.25rem 0);
