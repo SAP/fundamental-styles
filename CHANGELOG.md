@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.36.3-rc.2](https://github.com/SAP/fundamental-styles/compare/v0.36.3-rc.1...v0.36.3-rc.2) (2024-05-29)
+
+### Bug Fixes
+
+-   **styles:** fix the wrong min-width variable values for Input and Tokenizer [ci visual] ([#5407](https://github.com/SAP/fundamental-styles/issues/5407)) ([ba451be](https://github.com/SAP/fundamental-styles/commit/ba451be44c0b5990341e6fd4994f377a8365e39e))
+
 ## [0.36.3-rc.1](https://github.com/SAP/fundamental-styles/compare/v0.36.3-rc.0...v0.36.3-rc.1) (2024-05-29)
 
 **Note:** Version bump only for package fundamental-styles
