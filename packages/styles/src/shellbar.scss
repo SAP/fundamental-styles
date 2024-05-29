@@ -539,6 +539,10 @@ $block: #{$fd-namespace}-shellbar;
         padding: 0;
       }
 
+      &.#{$block}__button--menu {
+        --fdButtonColor: var(--sapShell_TextColor);
+      }
+
       @include fd-hover() {
         --fdButtonBorderColor: var(--fdShellbar_Button_Hover_Border_Color);
         --fdButtonBackgroundColor: var(--fdShellbar_Input_Hover_Background);
