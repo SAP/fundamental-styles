@@ -13,12 +13,18 @@
         {
             "extends": ["plugin:@nx/typescript"],
             "files": ["*.ts", "*.tsx"],
-            "rules": {}
+            "rules": {
+                "@typescript-eslint/no-extra-semi": "error",
+                "no-extra-semi": "off"
+            }
         },
         {
             "extends": ["plugin:@nx/javascript"],
             "files": ["*.js", "*.jsx"],
-            "rules": {}
+            "rules": {
+                "@typescript-eslint/no-extra-semi": "error",
+                "no-extra-semi": "off"
+            }
         },
         {
             "files": "*.json",

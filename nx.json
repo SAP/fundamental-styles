@@ -22,12 +22,15 @@
             "cache": true
         }
     },
-    "affected": {
-        "defaultBase": "main"
-    },
     "namedInputs": {
         "default": ["{projectRoot}/**/*", "sharedGlobals"],
-        "sharedGlobals": ["{workspaceRoot}/package.json", "{workspaceRoot}/lerna.json", "{workspaceRoot}/lerna.json", "{workspaceRoot}/tsconfig.json", "{workspaceRoot}/nx.json"],
+        "sharedGlobals": [
+            "{workspaceRoot}/package.json",
+            "{workspaceRoot}/lerna.json",
+            "{workspaceRoot}/lerna.json",
+            "{workspaceRoot}/tsconfig.json",
+            "{workspaceRoot}/nx.json"
+        ],
         "production": [
             "default",
             "!{projectRoot}/**/*.spec.[jt]s",
@@ -50,5 +53,6 @@
     },
     "defaultProject": "theming-preview",
     "nxCloudAccessToken": "MzM5YTVjNjAtNDlkMC00OTg0LWFkM2UtZWM5NDcyYTYzZDcyfHJlYWQ=",
-    "parallel": 5
+    "parallel": 5,
+    "defaultBase": "main"
 }
