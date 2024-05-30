@@ -70,7 +70,7 @@ const run = async() => {
     const newVersion = getNewVersion(release, currentVersion, prereleaseRequested);
     const isPrerelease = !!semver.prerelease(newVersion, undefined);
     const releaseTag = await getReleaseTag(isHotfix, isPrerelease, newVersion);
-    core.info(`new version is ${newVersion}`);
+    core.info(`new version is ${newVersion} with release tag ${releaseTag}`);
 
     core.setOutput('newVersion', newVersion);
     core.setOutput('releaseTag', releaseTag);
