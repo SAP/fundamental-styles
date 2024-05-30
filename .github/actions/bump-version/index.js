@@ -2,6 +2,7 @@ const recommendedVersion = require('conventional-recommended-bump');
 const semver = require('semver');
 const fs = require('fs');
 const core = require('@actions/core');
+const isHotfix = getInput('isHotfix') !== 'false';
 const lernaJson = JSON.parse(fs.readFileSync('./lerna.json', 'utf8'));
 const releaseType = core.getInput('isPrerelease') !== 'false'  ? 'prerelease' : 'release';
 const currentVersion = lernaJson.version;
@@ -66,9 +67,12 @@ const run = async() => {
     core.info(`${release.reason}, therefore release type should be ${release.releaseType}`);
 
     const newVersion = getNewVersion(release, currentVersion, prereleaseRequested);
+    const isPrerelease = !!semver.prerelease(newVersion, undefined);
+    const releaseTag = await getReleaseTag(isHotfix, isPrerelease, newVersion);
     core.info(`new version is ${newVersion}`);
 
     core.setOutput('newVersion', newVersion);
+    core.setOutput('releaseTag', releaseTag);
     core.setOutput('isPrerelease', semver.prerelease(newVersion) ? 'true' : 'false');
 };
 
