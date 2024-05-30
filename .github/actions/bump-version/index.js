@@ -2,9 +2,9 @@ const recommendedVersion = require('conventional-recommended-bump');
 const semver = require('semver');
 const fs = require('fs');
 const core = require('@actions/core');
-const isHotfix = getInput('isHotfix') !== 'false';
 const lernaJson = JSON.parse(fs.readFileSync('./lerna.json', 'utf8'));
 const releaseType = core.getInput('isPrerelease') !== 'false'  ? 'prerelease' : 'release';
+const isHotfix = core.getInput('isHotfix') !== 'false';
 const currentVersion = lernaJson.version;
 const prereleaseRequested = releaseType === 'prerelease';
 
