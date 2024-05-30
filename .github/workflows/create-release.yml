@@ -43,6 +43,7 @@ jobs:
               uses: ./.github/actions/bump-version
               with:
                 isPrerelease: ${{ env.IS_PRERELEASE }}
+                isHotfix: ${{ env.IS_HOTFIX }}
 
             - name: Get Release Tags
               uses: ./.github/actions/release-tags
