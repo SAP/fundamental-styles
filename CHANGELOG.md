@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.36.4-rc.0](https://github.com/SAP/fundamental-styles/compare/v0.36.3...v0.36.4-rc.0) (2024-05-30)
+
+### Bug Fixes
+
+-   **ci:** add isHotfix as input param to bumpVersion action ([#5412](https://github.com/SAP/fundamental-styles/issues/5412)) ([dd42095](https://github.com/SAP/fundamental-styles/commit/dd42095ed356241b28ba305f3e00bc3ceb88d57f))
+-   **ci:** fix ci - try 2 ([#5414](https://github.com/SAP/fundamental-styles/issues/5414)) ([399c64a](https://github.com/SAP/fundamental-styles/commit/399c64a9408c513d0c9006f161970207167dd906))
+-   **ci:** fix ci ([#5413](https://github.com/SAP/fundamental-styles/issues/5413)) ([6034da1](https://github.com/SAP/fundamental-styles/commit/6034da18b5fe0fb15d51b8c73e179a9a1e3ba587))
+-   **docs:** publish github pages ([#5411](https://github.com/SAP/fundamental-styles/issues/5411)) ([0926feb](https://github.com/SAP/fundamental-styles/commit/0926febd428b167d5da836600654c62699849b6c))
+
 ## [0.36.3](https://github.com/SAP/fundamental-styles/compare/v0.36.3-rc.4...v0.36.3) (2024-05-29)
 
 **Note:** Version bump only for package fundamental-styles
