@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.36.5-rc.1](https://github.com/SAP/fundamental-styles/compare/v0.36.5-rc.0...v0.36.5-rc.1) (2024-06-11)
+
+### Bug Fixes
+
+-   **styles:** add fix for focused read-only input missing underline [ci visual] ([#5439](https://github.com/SAP/fundamental-styles/issues/5439)) ([a337824](https://github.com/SAP/fundamental-styles/commit/a33782463e9c84e06c10d7a2cca41b33b0834f06))
+
 ## [0.36.5-rc.0](https://github.com/SAP/fundamental-styles/compare/v0.36.4...v0.36.5-rc.0) (2024-06-09)
 
 **Note:** Version bump only for package fundamental-styles
