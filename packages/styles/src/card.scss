@@ -535,22 +535,19 @@ $legend-background-colors: (
     margin-block-start: var(--fdCard_Counter_Margin);
   }
 
-  &__badge.#{$object-status} {
+  &__badge-container {
+    @include fd-reset();
     @include fd-set-position-right(0.5rem); 
 
-    --fdObjectStatus_Inverted_Border_Radius: 0.5rem;
-    --fdObjectStatus_Inverted_Padding: 0 0.25rem;
-    --fdObjectStatus_Inverted_Line_Height: 0.875rem;
+    @include fd-flex-vertical-center() {
+      gap: 0.25rem;
+    }
 
     z-index: 10;
     top: -0.5rem;
     position: absolute;
     min-width: 1.375rem;
     max-width: calc(100% - 1rem);
-
-    span {
-      @include fd-ellipsis();
-    }
 
     & + .#{$block}__header {
       --fdCard_Content_Border_Radius: var(--fdCard_Border_Corner_Radius) var(--fdCard_Border_Corner_Radius) 0 0;
@@ -574,6 +571,17 @@ $legend-background-colors: (
         --fdCard_Content_Border_Radius: var(--fdCard_Border_Corner_Radius);
         --fdCard_Focus_Outline_Radius: var(--fdCard_Border_Corner_Radius);
       }
+    }
+
+  }
+
+  &__badge.#{$object-status} {
+    --fdObjectStatus_Inverted_Border_Radius: 0.5rem;
+    --fdObjectStatus_Inverted_Padding: 0 0.25rem;
+    --fdObjectStatus_Inverted_Line_Height: 0.875rem;
+
+    span {
+      @include fd-ellipsis();
     }
   }
 
@@ -898,9 +906,8 @@ $legend-background-colors: (
   &__media-text {
     @include fd-reset();
 
-    font-weight: regular;
+    font-weight: normal;
     font-size: var(--sapFontSize);
-    font-family: var(--sapFontHeaderFamily);
     color: var(--fdCard_Media_Text_Color, var(--sapTile_TextColor));
   }
 

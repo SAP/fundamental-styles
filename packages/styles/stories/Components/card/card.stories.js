@@ -49,7 +49,7 @@ Card sizes vary depending on the layout, and they are not editable. A card can f
   - <b>extended header</b>: the extended header is a flexible block to hold various other components, like time stamp, rating, tags, label/value, long text, numeric values, etc. The components can be arranged in left column or right column, each column is suggested to have maximum 3 lines for placing the components.
   - <b>numeric header</b>: the numeric header block is designed for displaying numeric information. It consumes Numeric Content (Horizon) and can show additional qualifying information and side indicators, if required. 
 
-- <b>badge</b> (optional): The Badge for Cards can contain Icon and Text, Text only or Icon only. There are no interaction states on Badge for Cards. Badge on Cards consumes the <b>Inverted Object Status/Tag</b> with some modifications. A Badge can only expand to the max width of the card that it is applied to. Text on it will not wrap, but truncate. 
+- <b>badge</b> (optional): The Badge for Cards can contain Icon and Text, Text only or Icon only. There are no interaction states on Badge for Cards. Badge on Cards consumes the <b>Inverted Object Status/Tag</b> with some modifications. A Badge can only expand to the max width of the card that it is applied to. Text on it will not wrap, but truncate. <b>There can be max 2 badges per Card.</b>
 - <b>content</b> (main): the content area is reserved for application content.
     
 - <b>footer</b> (optional): the footer displays a list of actions that can be performed on the card. When link is too long, or there is no more place for actions, overflow button should appear.
