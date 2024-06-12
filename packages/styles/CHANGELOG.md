@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.36.5-rc.2](https://github.com/SAP/fundamental-styles/compare/v0.36.5-rc.1...v0.36.5-rc.2) (2024-06-12)
+
+### Bug Fixes
+
+-   **styles:** add option for a second badge on Cards [ci visual] ([#5440](https://github.com/SAP/fundamental-styles/issues/5440)) ([7f4273a](https://github.com/SAP/fundamental-styles/commit/7f4273ad1d36784e66ef837a5a11926b0ba76c58))
+
 ## [0.36.5-rc.1](https://github.com/SAP/fundamental-styles/compare/v0.36.5-rc.0...v0.36.5-rc.1) (2024-06-11)
 
 ### Bug Fixes
