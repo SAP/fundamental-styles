@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.37.0-rc.0](https://github.com/SAP/fundamental-styles/compare/v0.36.5...v0.37.0-rc.0) (2024-06-12)
+
+### Bug Fixes
+
+-   **styles:** add option for a second badge on Cards ([#5441](https://github.com/SAP/fundamental-styles/issues/5441)) ([1890e33](https://github.com/SAP/fundamental-styles/commit/1890e3349501d31be98b60b8a95a7d6c09d8edcb))
+
+### BREAKING CHANGES
+
+-   **styles:** badges are wrapped in an element with class fd-card\_\_badge-container
+
 ## [0.36.5](https://github.com/SAP/fundamental-styles/compare/v0.36.5-rc.2...v0.36.5) (2024-06-12)
 
 **Note:** Version bump only for package fundamental-styles
