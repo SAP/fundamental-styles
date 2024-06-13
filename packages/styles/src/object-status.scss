@@ -728,7 +728,7 @@ $inverted-color-accents-b: (
 
   @include fd-reset();
 
-  @include fd-flex-center() {
+  @include fd-flex() {
     gap: 0.25rem;
     display: inline-flex;
   }
@@ -748,13 +748,16 @@ $inverted-color-accents-b: (
     @include fd-reset();
     @include fd-object-status-text-inherit();
 
-    line-height: var(--fdObjectStatus_Height);
+    line-height: var(--fdObjectStatus_Text_Line_Height, normal);
+    vertical-align: top;
+    display: inline-block;
   }
 
   &__icon {
     @include fd-icon-element-base() {
       @include fd-flex-center();
 
+      align-self: center;
       font-size: var(--fdObjectStatus_Icon_Font_Size);
       color: var(--fdObjectStatus_Icon_Color);
       line-height: var(--fdObjectStatus_Height);
@@ -836,6 +839,7 @@ $inverted-color-accents-b: (
 
   // LARGE DESIGN
   &--large {
+    --fdObjectStatus_Text_Line_Height: 1;
     --fdObjectStatus_Text_Font_Size: 1.5rem;
     --fdObjectStatus_Height: 1.5rem;
     --fdObjectStatus_Icon_Font_Size: 1.5rem;
@@ -853,7 +857,7 @@ $inverted-color-accents-b: (
     position: relative;
     border-style: solid;
     overflow: hidden;
-    padding: var(--fdObjectStatus_Inverted_Padding);
+    padding-inline: 0.25rem;
     min-width: var(--fdObjectStatus_Inverted_Min_Width);
     border-width: var(--fdObjectStatus_Inverted_Border_Width);
     min-height: var(--fdObjectStatus_Inverted_Line_Height);
@@ -861,9 +865,13 @@ $inverted-color-accents-b: (
     border-radius: var(--fdObjectStatus_Inverted_Border_Radius);
     background-color: var(--fdObjectStatus_Background_Color, transparent);
 
-    .#{$block}__icon,
-    .#{$block}__text {
+    .#{$block}__icon {
       line-height: 1rem;
+    }
+
+    .#{$block}__text {
+      line-height: normal;
+      padding-block: var(--fdObjectStatus_Inverted_Padding);
     }
 
     &::before {

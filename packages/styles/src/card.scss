@@ -577,7 +577,7 @@ $legend-background-colors: (
 
   &__badge.#{$object-status} {
     --fdObjectStatus_Inverted_Border_Radius: 0.5rem;
-    --fdObjectStatus_Inverted_Padding: 0 0.25rem;
+    --fdObjectStatus_Inverted_Padding: 0;
     --fdObjectStatus_Inverted_Line_Height: 0.875rem;
 
     span {
