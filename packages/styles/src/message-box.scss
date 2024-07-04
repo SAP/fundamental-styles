@@ -7,7 +7,6 @@
 $block: #{$fd-namespace}-message-box;
 $bar: #{$fd-namespace}-bar;
 $button: #{$fd-namespace}-button;
-$fd-message-box-icon-text-spacing: 0.5rem;
 $fd-message-box-title-icon-text-size: 1rem;
 $fd-message-box-footer-button-min-width: 4rem;
 $fd-message-box-content-padding-x: (s: 1rem, m: 2rem, l: 2rem, xl: 3rem);
@@ -98,15 +97,10 @@ $message-box-states: (
       .#{$block}__header.#{$bar} {
         box-shadow: map.get($state-set, "boxShadow");
 
-        [class*="sap-icon"] {
+        :not(button) > [class*="sap-icon"] {
           font-size: 1rem;
-          margin-right: $fd-message-box-icon-text-spacing;
+          margin-inline-end: 0.5rem;
           color: map.get($state-set, "iconColor");
-
-          @include fd-rtl() {
-            margin-right: 0;
-            margin-left: $fd-message-box-icon-text-spacing;
-          }
         }
       }
     }
