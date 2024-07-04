@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.37.1-rc.2](https://github.com/SAP/fundamental-styles/compare/v0.37.1-rc.1...v0.37.1-rc.2) (2024-07-04)
+
+### Bug Fixes
+
+-   **styles:** add status color only to the status icon of Message Box [ci visual] ([#5477](https://github.com/SAP/fundamental-styles/issues/5477)) ([f0b0358](https://github.com/SAP/fundamental-styles/commit/f0b0358b0321e81a2f542d3b1a8d89d61b8ebc77))
+
 ## [0.37.1-rc.1](https://github.com/SAP/fundamental-styles/compare/v0.37.1-rc.0...v0.37.1-rc.1) (2024-07-04)
 
 **Note:** Version bump only for package fundamental-styles
