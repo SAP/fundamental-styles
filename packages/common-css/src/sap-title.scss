@@ -1,0 +1,69 @@
+@use "sass:map";
+
+@import 'common-settings';
+@import 'common-mixins';
+
+@mixin sap-title-shared() {
+  @include sap-reset();
+
+  width: 100%;
+  height: auto;
+  font-family: var(--sapFontHeaderFamily);
+  color: var(--sapShell_GroupTitleTextColor);
+  text-shadow: var(--sapShell_GroupTitleTextShadow);
+  padding-inline: var(--sapTitlePaddingInline, 0.5rem);
+
+  @media (width >= 600px) and (width <= 1439px) {
+    --sapTitlePaddingInline: 2rem;
+  }
+  
+  @media (width >= 1440px) {
+    --sapTitlePaddingInline: 3rem;
+  }
+
+  &.no-inline-padding {
+    --sapTitlePaddingInline: 0;
+  }
+}
+
+.sap-subsection-title {
+  @include sap-title-shared();
+
+  font-weight: normal;
+  font-size: var(--sapFontHeader4Size);
+  padding-block: var(--sapSubsectionTitlePaddingBlockStart, 1rem) var(--sapSubsectionTitlePaddingBlockEnd, 1rem);
+}
+
+.sap-section-title {
+  @include sap-title-shared();
+
+  font-weight: bold;
+  font-size: var(--sapFontHeader4Size);
+  padding-block: var(--sapSectionTitlePaddingBlockStart, 2rem) var(--sapSectionTitlePaddingBlockEnd, 1rem);
+
+  &:first-child {
+    --sapSectionTitlePaddingBlockStart: 1.5rem;
+  }
+
+  & + .sap-subsection-title {
+    --sapSubsectionTitlePaddingBlockStart: 0;
+  }
+
+
+  @media (width >= 600px) {
+    --sapSectionTitlePaddingBlockStart: 3rem;
+  }
+}
+
+.sap-page-title {
+  @include sap-title-shared();
+
+  font-weight: bold;
+  padding-block: 1rem 0.5rem;
+  font-size: var(--sapFontHeader3Size);
+
+  & + .sap-section-title {
+    --sapSectionTitlePaddingBlockStart: 0.5rem;
+  }
+}
+
