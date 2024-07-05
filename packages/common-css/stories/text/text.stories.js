@@ -39,7 +39,7 @@ Whitespace.parameters = {
     description: {
       story: `The text component has a property that allows browsers to render specified indents and
         whitespace. To display indents and/or whitespace, use the
-        \`.fd-text-pre-wrap\` class.`
+        \`.fd-text-pre-wrap\` class or \`data-wrap\` attribute to \`.fd-text\` class.`
     }
   }
 };
@@ -54,6 +54,8 @@ use the \`.fd-text-max-lines\` class and an inline style rule with the number of
 lines to the main element. For example, add \`style="-webkit-line-clamp: 3;"\` to display
 three lines of text.
 
+You can also add the \`data-lines\` attribute to \`.fd-text\` class and specify the number of lines. 
+
 **Note**: The property \`-webkit-line-clamp\` doesn't work in IE11 and should be changed
 to \`height\`. For example, \`style="height: 200px;"\`.
 `
@@ -65,7 +67,7 @@ Hyphenation.parameters = {
   docs: {
     description: {
       story: `The text component can display words that are broken at appropriate hyphenation
-points in a text block. To display hyphens, use the \`.fd-text-hyphenation\` element.
+points in a text block. To display hyphens, use the \`.fd-text-hyphenation\` class or or \`data-hyphens\` attribute to \`.fd-text\` class.
 
 **It is also possible to suggest line break opportunities with two Unicode characters that manually specify
 potential line breakpoints:**
