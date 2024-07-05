@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.37.1-rc.3](https://github.com/SAP/fundamental-styles/compare/v0.37.1-rc.2...v0.37.1-rc.3) (2024-07-05)
+
+### Features
+
+-   **common-css:** add Titles to Common CSS package [ci visual] ([#5455](https://github.com/SAP/fundamental-styles/issues/5455)) ([1c532e9](https://github.com/SAP/fundamental-styles/commit/1c532e93b45b7c6352eb9734e64adc2e613dd290))
+
 ## [0.37.1-rc.2](https://github.com/SAP/fundamental-styles/compare/v0.37.1-rc.1...v0.37.1-rc.2) (2024-07-04)
 
 ### Bug Fixes
