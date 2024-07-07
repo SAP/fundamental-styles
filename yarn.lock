@@ -4047,13 +4047,13 @@ __metadata:
   linkType: hard
 
 "@storybook/addon-mdx-gfm@npm:^8.1.6":
-  version: 8.1.6
-  resolution: "@storybook/addon-mdx-gfm@npm:8.1.6"
+  version: 8.1.11
+  resolution: "@storybook/addon-mdx-gfm@npm:8.1.11"
   dependencies:
-    "@storybook/node-logger": "npm:8.1.6"
+    "@storybook/node-logger": "npm:8.1.11"
     remark-gfm: "npm:^4.0.0"
     ts-dedent: "npm:^2.0.0"
-  checksum: 10/62c889bfdc75319b6adceceb5dc7eaf44b8a9a22b0c8747c6a34176f0e1528d210c5b878f1c1c256e04411546d6683fc987092901a565a7c4f538d2947ffd3bf
+  checksum: 10/55df57102fc1e67e364b990b9b4500f67c5cdbddd140d8f2c8f9de5404aeabe53d1d55336df195ce13915d102872dc4c389113bd1c60ca58544cb672df710a4b
   languageName: node
   linkType: hard
 
@@ -4529,6 +4529,13 @@ __metadata:
   version: 8.1.6
   resolution: "@storybook/manager@npm:8.1.6"
   checksum: 10/307108027f7b3c0a8d79c9c49084c319bd8e5a603cf7af9939dd94b9e53766806f17194c474f06ee7821e8404190c044092e05a08d64dcc2a0a7695329719152
+  languageName: node
+  linkType: hard
+
+"@storybook/node-logger@npm:8.1.11":
+  version: 8.1.11
+  resolution: "@storybook/node-logger@npm:8.1.11"
+  checksum: 10/9f96c30cacae8c138f5f17f11e243a3d506faad606e4146e57a5cafdfbcb0d1f3397d6f17c36b2422db4e927451cf9c6de785cc6f81e078b729f7b906af39650
   languageName: node
   linkType: hard
 
