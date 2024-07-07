@@ -55,7 +55,7 @@
     "@nx/eslint": "19.1.1",
     "@nx/eslint-plugin": "19.1.1",
     "@nx/js": "19.1.1",
-    "@nx/plugin": "19.1.1",
+    "@nx/plugin": "19.4.1",
     "@nx/react": "19.1.1",
     "@nx/web": "19.1.1",
     "@sap-theming/theming-base-content": "11.16.1",
