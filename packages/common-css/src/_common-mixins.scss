@@ -1081,10 +1081,36 @@
     background-color: var(--sapSelectedColor);
   }
 
+  &[data-lines] {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  &[data-hyphens] {
+    hyphens: auto;
+  }
+
+  &[data-wrap] {
+    white-space: pre-wrap;
+  }
+
+  @for $i from 0 through 20 {
+    &[data-lines="#{$i}"] {
+      -webkit-line-clamp: #{$i};
+    }
+  }
+
   @if $modifier == 'max-lines' {
     display: -webkit-box;
     -webkit-box-orient: vertical;
     overflow: hidden;
+
+    @for $i from 0 through 20 {
+      &[data-lines="#{$i}"] {
+        -webkit-line-clamp: #{$i};
+      }
+    }
   }
 
   @if $modifier == 'pre-wrap' {
