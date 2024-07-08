@@ -426,67 +426,44 @@
 
 /* Margins */
 @mixin sap-set-margin-all($value: 0) {
-  margin: $value;
+  margin-inline: $value;
+  margin-block: $value;
 }
 
 @mixin sap-set-margin-top($value: 0) {
-  margin-top: $value;
+  margin-block-start: $value;
 }
 
 @mixin sap-set-margin-bottom($value: 0) {
-  margin-bottom: $value;
+  margin-block-end: $value;
 }
 
 @mixin sap-set-margin-begin($value: 0) {
-  margin-left: $value;
-
-  @include sap-rtl() {
-    margin-left: 0;
-    margin-right: $value;
-  }
+  margin-inline-start: $value;
 }
 
 @mixin sap-set-margin-end($value: 0) {
-  margin-right: $value;
-
-  @include sap-rtl() {
-    margin-right: 0;
-    margin-left: $value;
-  }
+  margin-inline-end: $value;
 }
 
 @mixin sap-set-margin-x-equal($value: 0) {
-  margin-right: $value;
-  margin-left: $value;
+  margin-inline: $value;
 }
 
 @mixin sap-set-margin-y-equal($value: 0) {
-  margin-top: $value;
-  margin-bottom: $value;
+  margin-block: $value;
 }
 
 @mixin sap-set-margin-x($valueLeft: 0, $valueRight: 0) {
-  margin-left: $valueLeft;
-  margin-right: $valueRight;
-
-  @include sap-rtl() {
-    margin-left: $valueRight;
-    margin-right: $valueLeft;
-  }
+  margin-inline: $valueLeft $valueRight;
 }
 
 @mixin sap-set-margin-right($right: 0) {
-  margin-right: $right;
-
-  @include sap-rtl() {
-    margin-right: 0;
-    margin-left: $right;
-  }
+  margin-inline-end: $right;
 }
 
 @mixin sap-set-margin-y($valueTop: 0, $valueBottom: 0) {
-  margin-top: $valueTop;
-  margin-bottom: $valueBottom;
+  margin-block: $valueTop $valueBottom;
 }
 
 @mixin sap-set-equal-positions($value) {
@@ -494,10 +471,10 @@
 }
 
 @mixin sap-margin($value, $side: '') {
-  $_value: $value !important;
+  $_value: $value;
 
   @if  map.has-key($sap-margins, #{$value}) {
-    $_value: map.get($sap-margins, #{$value}) !important;
+    $_value: map.get($sap-margins, #{$value});
   }
 
   @if  $side != '' {
@@ -521,19 +498,23 @@
 
 @mixin sap-margin-responsive() {
   @include sap-media-sm() {
-    margin: 0 0 1rem !important;
+    margin-inline: 0;
+    margin-block: 0 1rem;
   }
 
   @include sap-media-md() {
-    margin: 1rem !important;
+    margin-inline: 1rem;
+    margin-block: 1rem;
   }
 
   @include sap-media-lg() {
-    margin: 1rem 2rem !important;
+    margin-inline: 2rem;
+    margin-block: 1rem;
   }
 
   @include sap-media-xl() {
-    margin: 1rem 3rem !important;
+    margin-inline: 3rem;
+    margin-block: 1rem;
   }
 }
 
@@ -648,65 +629,47 @@
 
 /* Paddings */
 @mixin sap-set-padding-all($value: 0) {
-  padding: $value;
+  padding-block: $value;
+  padding-inline: $value;
 }
 
 @mixin sap-set-padding-top($value: 0) {
-  padding-top: $value;
+  padding-block-start: $value;
 }
 
 @mixin sap-set-padding-bottom($value: 0) {
-  padding-bottom: $value;
+  padding-block-end: $value;
 }
 
 @mixin sap-set-padding-begin($value: 0) {
-  padding-left: $value;
-
-  @include sap-rtl() {
-    padding-left: 0;
-    padding-right: $value;
-  }
+  padding-inline-start: $value;
 }
 
 @mixin sap-set-padding-end($value: 0) {
-  padding-right: $value;
-
-  @include sap-rtl() {
-    padding-right: 0;
-    padding-left: $value;
-  }
+  padding-inline-end: $value;
 }
 
 @mixin sap-set-padding-x-equal($value: 0) {
-  padding-right: $value;
-  padding-left: $value;
+  padding-inline: $value;
 }
 
 @mixin sap-set-padding-y-equal($value: 0) {
-  padding-top: $value;
-  padding-bottom: $value;
+  padding-block: $value;
 }
 
 @mixin sap-set-padding-x($valueLeft: 0, $valueRight: 0) {
-  padding-left: $valueLeft;
-  padding-right: $valueRight;
-
-  @include sap-rtl() {
-    padding-left: $valueRight;
-    padding-right: $valueLeft;
-  }
+  padding-inline: $valueLeft $valueRight;
 }
 
 @mixin sap-set-padding-y($valueTop: 0, $valueBottom: 0) {
-  padding-top: $valueTop;
-  padding-bottom: $valueBottom;
+  padding-block: $valueTop $valueBottom;
 }
 
 @mixin sap-padding($value: 1rem, $side: '') {
-  $_value: $value !important;
+  $_value: $value;
 
   @if  map.has-key($sap-paddings, #{$value}) {
-    $_value: map.get($sap-paddings, #{$value}) !important;
+    $_value: map.get($sap-paddings, #{$value});
   }
 
   @if  $side != '' {
@@ -775,14 +738,14 @@
 /* Content paddings */
 @mixin sap-set-content-paddings($type, $value) {
   @if  $type == 'home' {
-    padding-left: map.get($sap-content-paddings-home, $value) !important;
-    padding-right: map.get($sap-content-paddings-home, $value) !important;
+    padding-left: map.get($sap-content-paddings-home, $value);
+    padding-right: map.get($sap-content-paddings-home, $value);
   } @else if $type == 'container' {
-    padding-left: map.get($sap-content-paddings-container, $value) !important;
-    padding-right: map.get($sap-content-paddings-container, $value) !important;
+    padding-left: map.get($sap-content-paddings-container, $value);
+    padding-right: map.get($sap-content-paddings-container, $value);
   } @else {
-    padding-left: map.get($sap-content-paddings-nav, $value) !important;
-    padding-right: map.get($sap-content-paddings-nav, $value) !important;
+    padding-left: map.get($sap-content-paddings-nav, $value);
+    padding-right: map.get($sap-content-paddings-nav, $value);
   }
 }
 

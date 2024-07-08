@@ -87,7 +87,8 @@ $block: #{$sap-namespace}-busy-indicator;
 
     .#{$block} {
       width: 100%;
-      margin: 0.5rem auto;
+      margin-block: 0.5rem;
+      margin-inline: auto;
     }
   }
 }

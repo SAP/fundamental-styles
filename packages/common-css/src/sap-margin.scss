@@ -24,16 +24,16 @@ $block: #{$sap-namespace}-margin;
 
   @each $side, $dim in $sap-container-sides {
     &-#{$side}-none {
-      @include sap-margin(0 !important, #{$side});
+      @include sap-margin(0, #{$side});
     }
   }
 
   @each $type, $value in $sap-margins {
     &-#{$type}-negative {
-      $_value: $value * -1 !important;
+      $_value: $value * -1;
 
       @include sap-set-margin-x-equal($_value);
-      @include sap-set-margin-y-equal(0 !important);
+      @include sap-set-margin-y-equal(0);
     }
   }
 }
