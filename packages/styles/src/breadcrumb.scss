@@ -3,7 +3,6 @@
 @import "./new-settings";
 @import "./mixins";
 
-$fd-breadcrumb-spacing: 0.25rem;
 $fd-breadcrumb-separator-color: var(--sapContent_LabelColor);
 $fd-breadcrumb-item-color: var(--sapContent_LabelColor);
 $block: #{$fd-namespace}-breadcrumb;
@@ -28,8 +27,7 @@ $fd-breadcrumb-overflow-active-color: var(--sapLink_Active_Color);
     &::after {
       content: "/";
       color: $fd-breadcrumb-separator-color;
-      margin-right: $fd-breadcrumb-spacing;
-      margin-left: $fd-breadcrumb-spacing;
+      margin-inline:  0.25rem;
     }
 
     &:last-child::after {

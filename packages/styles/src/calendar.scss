@@ -201,16 +201,15 @@ $fd-calendar-special-days: (
     flex-grow: 1;
 
     &:not(:last-child, :first-child) {
-      margin-left: var(--fdCalendar_Action_Padding);
-      margin-right: var(--fdCalendar_Action_Padding);
+      margin-inline: var(--fdCalendar_Action_Padding);
     }
 
     &:first-child {
-      margin-right: var(--fdCalendar_Action_Padding);
+      margin-inline-end: var(--fdCalendar_Action_Padding);
     }
 
     &:last-child {
-      margin-left: var(--fdCalendar_Action_Padding);
+      margin-inline-start: var(--fdCalendar_Action_Padding);
     }
 
     > [type='button'] {

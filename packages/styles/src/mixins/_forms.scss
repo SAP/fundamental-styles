@@ -465,14 +465,7 @@ $fd-input-field-height--compact: 1.625rem;
     font-weight: bold;
     color: var(--sapField_RequiredColor);
     position: absolute;
-    padding-left: 0.125rem;
-  }
-
-  @include fd-rtl() {
-    &::after {
-      padding-left: 0;
-      padding-right: 0.125rem;
-    }
+    padding-inline-start: 0.125rem;
   }
 }
 
@@ -485,8 +478,6 @@ $fd-input-field-height--compact: 1.625rem;
 }
 
 @mixin fd-form-label() {
-  $fd-label-spacing: 0.5rem;
-
   @include fd-reset();
   @include fd-ellipsis();
 
@@ -495,12 +486,7 @@ $fd-input-field-height--compact: 1.625rem;
   max-width: 100%;
   font-size: var(--sapFontSize);
   color: var(--sapContent_LabelColor);
-  margin-right: $fd-label-spacing;
+  margin-inline-end: 0.5rem;
   cursor: text;
   align-self: flex-start;
-
-  @include fd-rtl() {
-    margin-left: $fd-label-spacing;
-    margin-right: 0;
-  }
 }

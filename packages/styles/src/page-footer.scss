@@ -14,13 +14,9 @@ $fd-page-footer-sizes: (
 .#{$block} {
   @include fd-reset();
 
-  $fd-footer-margin-right: 1.5rem !default;
-  $fd-footer-label-padding-top: 0.75rem !default;
-
   background: var(--sapBaseColor);
   position: relative;
-  padding-top: 1.5rem;
-  padding-bottom: 2rem;
+  padding-block: 1.5rem 2rem;
 
   &__logo {
     @include fd-reset();
@@ -37,12 +33,7 @@ $fd-page-footer-sizes: (
     width: 70%;
 
     &-item {
-      margin-right: $fd-footer-margin-right;
-
-      @include fd-rtl() {
-        margin-right: 0;
-        margin-left: $fd-footer-margin-right;
-      }
+      margin-inline-end: 1.5rem;
     }
 
     &-image {
@@ -50,7 +41,7 @@ $fd-page-footer-sizes: (
     }
 
     &:not(:first-child) {
-      padding-top: 0.25rem;
+      padding-block-start: 0.25rem;
     }
   }
 
@@ -60,23 +51,18 @@ $fd-page-footer-sizes: (
 
     align-self: flex-end;
     width: 30%;
-    text-align: right;
+    text-align: end;
     position: absolute;
-
-    @include fd-rtl() {
-      text-align: left;
-    }
   }
 
   // sizes
   @each $set-name, $size-set in $fd-page-footer-sizes {
     &--#{$set-name} {
-      padding-right: map.get($size-set, 'padding');
-      padding-left: map.get($size-set, 'padding');
+      padding-inline: map.get($size-set, 'padding') map.get($size-set, 'padding');
       .#{$block}__container {
         @include fd-flex(column);
 
-        padding-top: $fd-footer-label-padding-top;
+        padding-block-start: 0.75rem;
       }
     }
   }
@@ -84,22 +70,22 @@ $fd-page-footer-sizes: (
   @media (width <= 768px) {
 
     .#{$block}__row {
-      margin-right: 0;
+      margin-inline-end: 0;
       width: 100%;
 
       &:not(:first-child) {
-        padding-top: 0;
+        padding-block-start: 0;
       }
 
       &-item {
-        padding-top: 0.25rem;
+        padding-block-start: 0.25rem;
       }
     }
 
     .#{$block}__text {
       width: 90%;
-      text-align: left;
-      padding-top: $fd-footer-label-padding-top;
+      text-align: start;
+      padding-block-start: 0.75rem;
     }
 
     .#{$block}__container {

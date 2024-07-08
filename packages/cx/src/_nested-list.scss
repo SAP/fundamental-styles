@@ -224,7 +224,7 @@ $button: #{$fd-cx-namespace}-button;
     @include fd-reset();
 
     width: 100%;
-    text-align: left;
+    text-align: start;
     color: currentColor;
     display: inline-block;
     font-size: var(--sapFontSize);
@@ -233,10 +233,6 @@ $button: #{$fd-cx-namespace}-button;
     @include fd-set-paddings-y-equal(0.75rem);
 
     line-height: normal;
-
-    @include fd-rtl() {
-      text-align: right;
-    }
 
     @include fd-compact () {
       @include fd-set-paddings-y-equal(0);

@@ -149,7 +149,7 @@
     @include fd-set-padding-left(1rem);
 
     max-width: 40%;
-    text-align: right;
+    text-align: end;
     font-size: var(--sapFontSize);
     color: var(--fdList_Status_Text_Color);
 
@@ -167,10 +167,6 @@
 
     &--informative {
       --fdList_Status_Text_Color: var(--sapInformativeTextColor);
-    }
-
-    @include fd-rtl() {
-      text-align: left;
     }
   }
 

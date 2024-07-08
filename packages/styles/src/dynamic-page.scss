@@ -13,7 +13,6 @@ $block: #{$fd-namespace}-dynamic-page;
   $fd-dynamic-page-button-group-width: 4rem;
   $fd-dynamic-page-button-group-height: 0.0625rem;
   $fd-dynamic-page-focus-outline-offset: -0.25rem;
-  $fd-dynamic-page-toolbar-space: 1rem;
 
   @mixin fd-background-page($background-color) {
     .#{$block}__content {
@@ -196,12 +195,9 @@ $block: #{$fd-namespace}-dynamic-page;
     @include fd-reset();
     @include fd-ellipsis();
 
-    padding: 0 0 0 1rem;
+    padding-block: 0;
+    padding-inline: 1rem 0;
     vertical-align: baseline;
-
-    @include fd-rtl() {
-      padding: 0 1rem 0 0;
-    }
   }
 
   &__title-subtitle-container {
@@ -214,24 +210,14 @@ $block: #{$fd-namespace}-dynamic-page;
     @include fd-reset();
     @include fd-flex-vertical-center();
 
-    margin-left: auto;
-
-    @include fd-rtl() {
-      margin-right: auto;
-      margin-left: 0;
-    }
+    margin-inline-start: auto;
   }
 
   .#{$block}__toolbar {
     @include fd-reset-spacing();
 
-    padding-left: $fd-dynamic-page-toolbar-space;
+    padding-inline-start: 1rem;
     background: transparent;
-
-    @include fd-rtl() {
-      padding-left: 0;
-      padding-right: $fd-dynamic-page-toolbar-space;
-    }
 
     &--actions,
     &--content {
@@ -410,22 +396,11 @@ $block: #{$fd-namespace}-dynamic-page;
     }
 
     .#{$block}__toolbar {
-      padding-left: $fd-dynamic-page-toolbar-space;
-      margin-left: auto;
-
-      @include fd-rtl() {
-        margin-left: 0;
-        margin-right: auto;
-        padding-left: 0;
-        padding-right: $fd-dynamic-page-toolbar-space;
-      }
+      padding-inline-start: 1rem;
+      margin-inline-start: auto;
 
       &--content {
-        margin-left: 0;
-
-        @include fd-rtl() {
-          margin-right: 0;
-        }
+        margin-inline-start: 0;
       }
     }
   }

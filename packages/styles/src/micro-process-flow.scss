@@ -60,27 +60,13 @@ $fd-micro-process-flow-semantic-colors: (
 
 @mixin fd-set-padding-left-after($left: 0) {
   &::after {
-    padding-left: $left;
-  }
-
-  @include fd-rtl() {
-    &::after {
-      padding-left: 0;
-      padding-right: $left;
-    }
+    padding-inline-start: $left;
   }
 }
 
 @mixin fd-set-padding-right-before($right: 0) {
   &::before {
-    padding-right: $right;
-  }
-
-  @include fd-rtl() {
-    &::before {
-      padding-right: 0;
-      padding-left: $right;
-    }
+    padding-inline-end: $right;
   }
 }
 

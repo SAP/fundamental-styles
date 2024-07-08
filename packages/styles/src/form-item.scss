@@ -4,7 +4,6 @@
 @import "./mixins";
 
 $block: #{$fd-namespace}-form-item;
-$fd-form-label-spacing: 0.5rem !default;
 
 .#{$block} {
   @include fd-reset();
@@ -20,11 +19,8 @@ $fd-form-label-spacing: 0.5rem !default;
 
     .#{$fd-namespace}-form-label {
       padding-bottom: 0;
-      margin: auto $fd-form-label-spacing auto 0;
-
-      @include fd-rtl() {
-        margin: auto 0 auto $fd-form-label-spacing;
-      }
+      margin-block: auto;
+      margin-inline: 0 0.5rem;
     }
 
     .#{$fd-namespace}-input {

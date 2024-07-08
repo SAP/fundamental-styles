@@ -35,10 +35,10 @@ $block: #{$fd-namespace}-time;
       flex-direction: column;
     }
 
-    margin-right: $fd-time-column-margin-x;
+    margin-block-end: $fd-time-column-margin-x;
 
     &:last-child {
-      margin-right: 0;
+      margin-block-end: 0;
     }
   }
 
@@ -77,11 +77,11 @@ $block: #{$fd-namespace}-time;
     &--meridian {
       .#{$block}__item {
         &:first-child {
-          margin-top: calc(var(--fdTime_Item_Height) * 3);
+          margin-block-start: calc(var(--fdTime_Item_Height) * 3);
         }
 
         &:last-child {
-          margin-bottom: calc(var(--fdTime_Item_Height) * 3);
+          margin-block-end: calc(var(--fdTime_Item_Height) * 3);
         }
       }
 
@@ -176,11 +176,6 @@ $block: #{$fd-namespace}-time;
     padding: 0;
     margin: 0;
     align-self: auto;
-
-    @include fd-rtl() {
-      padding: 0;
-      margin: 0;
-    }
   }
 
   &__control {
@@ -202,17 +197,6 @@ $block: #{$fd-namespace}-time;
   &--scrollable {
     .#{$block}__list {
       overflow: auto;
-    }
-  }
-
-  @include fd-rtl() {
-    .#{$block}__col {
-      margin-right: 0;
-      margin-left: $fd-time-column-margin-x;
-
-      &:last-child {
-        margin-left: 0;
-      }
     }
   }
 }

@@ -55,16 +55,12 @@ $block: #{$fd-namespace}-step-input;
   &__input.#{$fd-namespace}-input {
     --fdInput_Field_Padding: 0 0.25rem;
 
-    text-align: right;
+    text-align: end;
     border: none;
     margin: 0;
     background: none;
     box-shadow: none;
     background-color: transparent;
-
-    @include fd-rtl() {
-      text-align: left;
-    }
 
     @include fd-hover() {
       @include fd-input-field-nested-reset();

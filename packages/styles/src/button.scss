@@ -124,12 +124,12 @@ $fd-button-badge-spacing: 0.25rem;
 
   &--text-alignment {
     &-left {
-      text-align: left;
+      text-align: start;
       justify-content: flex-start;
     }
 
     &-right {
-      text-align: right;
+      text-align: end;
       justify-content: flex-end;
     }
   }

@@ -217,12 +217,11 @@ $fd-grid-list-highlight: (
       @include fd-flex-center();
       @include fd-set-margin-right(-1rem);
 
-      margin-left: 0;
+      margin-inline-start: 0;
       width: 2.5rem;
       color: var(--sapContent_NonInteractiveIconColor);
 
       @include fd-rtl() {
-        margin-right: 0;
         transform: rotate(180deg);
       }
     }

@@ -9,7 +9,6 @@
 $block: #{$fd-namespace}-tree;
 $button: #{$fd-namespace}-button;
 $fd-tree-item-padding-right: 1rem !default;
-$fd-tree-item-padding-right-negative: -1rem !default;
 $fd-tree-item-transparent-border-bottom: var(--sapList_BorderWidth) solid transparent !default;
 $fd-tree-item-selected-border-bottom: var(--sapList_BorderWidth) solid var(--sapList_SelectionBorderColor) !default;
 
@@ -187,14 +186,7 @@ $fd-tree-item-selected-border-bottom: var(--sapList_BorderWidth) solid var(--sap
       }
 
       &:last-child {
-        margin-right: $fd-tree-item-padding-right-negative;
-      }
-
-      @include fd-rtl() {
-        &:last-child {
-          margin-right: 0;
-          margin-left: $fd-tree-item-padding-right-negative;
-        }
+        margin-inline-end: -1rem;
       }
     }
   }

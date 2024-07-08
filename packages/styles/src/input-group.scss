@@ -5,7 +5,6 @@
 @import "./mixins/button/button-helper";
 
 $block: #{$fd-namespace}-input-group;
-$fd-input-padding: 0.625rem;
 $fd-input-border-radius: var(--sapField_BorderCornerRadius);
 
 .#{$block} {
@@ -34,8 +33,7 @@ $fd-input-border-radius: var(--sapField_BorderCornerRadius);
     flex: 1 1 10rem;
     background: none;
     background-color: var(--fdInputGroup_Input_Background, transparent);
-    padding-left: 0.25rem;
-    padding-right: 0.25rem;
+    padding-inline: 0.25rem 0.25rem;
     text-shadow: var(--fdInputGroup_Text_Shadow);
     border: var(--fdInputGroup_Input_Border, none);
     color: var(--fdInputGroup_Input_Color, inherit);
@@ -58,16 +56,11 @@ $fd-input-border-radius: var(--sapField_BorderCornerRadius);
     }
 
     &:nth-child(1) {
-      @include fd-set-padding-left($fd-input-padding);
+      padding-inline-start: 0.625rem;
     }
 
     &:nth-last-child(1) {
-      padding-right: $fd-input-padding;
-
-      @include fd-rtl() {
-        padding-left: $fd-input-padding;
-        padding-right: 0.25rem;
-      }
+      padding-inline-end: 0.625rem;
     }
   }
 

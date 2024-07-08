@@ -57,12 +57,12 @@ $block: #{$fd-namespace}-resizable-card-layout;
     bottom: 0;
     right: 0;
     z-index: $fd-resize-handle-index;
-    padding: 0 $fd-resize-icon-padding $fd-resize-icon-padding 0;
+    padding-block: 0 $fd-resize-icon-padding;
+    padding-inline: 0 $fd-resize-icon-padding;
 
     @include fd-rtl() {
       right: auto;
       left: 0;
-      padding: 0 0 $fd-resize-icon-padding $fd-resize-icon-padding;
     }
   }
 

@@ -12,8 +12,6 @@ $block: #{$fd-namespace}-menu;
 .#{$block} {
   $fd-menu-border-radius: var(--fdButton_Menu_Border_Radius) !default;
   $fd-menu-item-color-active: var(--sapList_Active_TextColor) !default;
-  $fd-menu-link-padding-top: 0.25rem !default;
-  $fd-menu-link-padding-left: -0.25rem !default;
 
   --fdMenu_Icon_Width: 2.25rem;
   --fdMenu_Icon_Before_Margin: 0 0 0 -0.75rem;
@@ -82,13 +80,13 @@ $block: #{$fd-namespace}-menu;
     top: 0;
     left: 100%;
     z-index: 2;
-    margin: $fd-menu-link-padding-top 0 0 $fd-menu-link-padding-left;
     min-width: 100%;
+    margin-block: 0.25rem 0;
+    margin-inline: -0.25rem 0;
 
     @include fd-rtl() {
       right: 100%;
       left: initial;
-      margin: $fd-menu-link-padding-top $fd-menu-link-padding-left 0 0;
     }
 
     &[aria-hidden='true'] {
@@ -209,15 +207,11 @@ $block: #{$fd-namespace}-menu;
     @include fd-ellipsis();
 
     width: 100%;
-    text-align: left;
+    text-align: start;
     font-size: var(--sapFontSize);
     color: var(--fdMenu_Text_Color);
     font-family: var(--sapFontFamily);
     text-shadow: var(--fdMenu_Text_Shadow);
-
-    @include fd-rtl() {
-      text-align: right;
-    }
 
     &:has(+ .#{$block}__input) {
       width: fit-content;
@@ -371,8 +365,7 @@ $block: #{$fd-namespace}-menu;
 
       input,
       .#{$block}__input {
-        margin-left: 1rem;
-        margin-right: 1rem;
+        margin-inline: 1rem 1rem;
       }
     }
   }
@@ -393,8 +386,7 @@ $block: #{$fd-namespace}-menu;
 
       input,
       .#{$block}__input {
-        margin-left: 0.5rem;
-        margin-right: 0.5rem;
+        margin-inline: 0.5rem 0.5rem;
       }
     }
   }

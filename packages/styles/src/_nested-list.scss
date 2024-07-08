@@ -215,11 +215,7 @@ $button: #{$fd-namespace}-button;
         height: 100%;
 
         > .#{$block}__title {
-          padding-right: 0;
-
-          @include fd-rtl() {
-            padding-left: 0;
-          }
+          padding-inline-end: 0;
         }
       }
     }
@@ -265,23 +261,13 @@ $button: #{$fd-namespace}-button;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    padding-right: 1rem;
+    padding-inline-end: 1rem;
     display: flex;
     align-items: center;
+    text-align: start;
 
     &:first-child {
-      padding-left: 2.75rem;
-    }
-
-    @include fd-rtl() {
-      text-align: right;
-      padding-right: 0;
-      padding-left: 1rem;
-
-      &:first-child {
-        padding-right: 2.75rem;
-        padding-left: 0;
-      }
+      padding-inline-start: 2.75rem;
     }
   }
 

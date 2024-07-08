@@ -89,11 +89,7 @@
     // SELECTION + SELECT OBJECT ROW
     &.#{$block}--selection-row {
       .#{$block}__item {
-        padding-left: 1rem;
-
-        @include fd-rtl() {
-          padding-right: 1rem;
-        }
+        padding-inline-start: 1rem;
       }
     }
   }

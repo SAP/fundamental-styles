@@ -34,13 +34,12 @@ $gridCol: #{$fd-namespace}-col;
       .#{$colSelector}--#{$col} {
         > .#{$fd-namespace}-form-label {
           float: right;
-          text-align: right;
+          text-align: end;
           padding-bottom: 0;
           width: 100%;
 
           @include fd-rtl() {
             float: left;
-            text-align: left;
           }
         }
       }
@@ -50,12 +49,11 @@ $gridCol: #{$fd-namespace}-col;
     .#{$colSelector}--12 {
       > .#{$fd-namespace}-form-label {
         float: left;
-        text-align: left;
+        text-align: start;
         width: auto;
         padding-bottom: 0.125rem;
 
         @include fd-rtl() {
-          text-align: right;
           float: right;
         }
       }

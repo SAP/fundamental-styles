@@ -154,12 +154,8 @@ $fd-list-byline-section-text-color: var(--sapContent_LabelColor) !default;
       width: 40%;
       color: $fd-list-byline-section-text-color;
       line-height: $fd-list-byline-text-line-height;
-      text-align: right;
+      text-align: end;
       align-self: flex-end;
-
-      @include fd-rtl() {
-        text-align: left;
-      }
 
       @each $set-name, $color-set in $semantic-color {
         &--#{$set-name} {

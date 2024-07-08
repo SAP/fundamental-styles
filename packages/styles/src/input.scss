@@ -32,7 +32,7 @@ $block: #{$fd-namespace}-input;
   }
 
   &.right-align {
-    text-align: right;
+    text-align: end;
   }
 
   @include fd-input-field-states();

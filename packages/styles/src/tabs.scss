@@ -70,7 +70,7 @@ $fd-tabs-link-active-line-offset-x: 0.1875rem;
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  padding-left: 0;
+  padding-inline-start: 0;
   list-style: none;
   box-shadow: var(--sapContent_HeaderShadow);
   background-color: var(--sapObjectHeader_Background);
@@ -243,7 +243,7 @@ $fd-tabs-link-active-line-offset-x: 0.1875rem;
     font-size: 1.5rem;
     line-height: 1.5rem;
     color: $fd-tabs-label-color;
-    padding-right: 0.5rem;
+    padding-inline-end: 0.5rem;
   }
 
   &__overflow {
@@ -251,7 +251,7 @@ $fd-tabs-link-active-line-offset-x: 0.1875rem;
     @include fd-icon-element-base();
     @include fd-flex-center();
 
-    margin-left: auto;
+    margin-inline-start: auto;
   }
 
   &__process-icon {
@@ -350,7 +350,8 @@ $fd-tabs-link-active-line-offset-x: 0.1875rem;
 
   &--process {
     .#{$block}__item {
-      margin: 0 $fd-tabs-item-spacing-x 0 0;
+      margin-block: 0;
+      margin-inline: 0 $fd-tabs-item-spacing-x;
       display: flex;
       align-items: center;
     }
@@ -374,14 +375,10 @@ $fd-tabs-link-active-line-offset-x: 0.1875rem;
     }
 
     @include fd-rtl() {
-      .#{$block}__item {
-        margin: 0 0 0 $fd-tabs-item-spacing-x;
-
-        &:first-child {
-          .#{$block}__link {
-            padding-right: 0;
-            padding-left: 0;
-          }
+      .#{$block}__item:first-child {
+        .#{$block}__link {
+          padding-right: 0;
+          padding-left: 0;
         }
       }
     }
@@ -422,7 +419,8 @@ $fd-tabs-link-active-line-offset-x: 0.1875rem;
 
     .#{$block}__link {
       height: var(--fdTabs_Filter_Link_Height);
-      padding: 0.875rem $fd-tabs-selection-padding-x 0.625rem $fd-tabs-selection-padding-x;
+      padding-block: 0.875rem 0.625rem;
+      padding-inline: $fd-tabs-selection-padding-x;
       text-align: center;
       display: flex;
       justify-content: center;
@@ -475,16 +473,6 @@ $fd-tabs-link-active-line-offset-x: 0.1875rem;
   @include fd-rtl() {
     .#{$block}__process-icon {
       transform: rotate(180deg);
-    }
-
-    .#{$block}__counter-header {
-      padding-right: 0;
-      padding-left: 0.5rem;
-    }
-
-    .#{$block}__overflow {
-      margin-left: 0;
-      margin-right: auto;
     }
   }
 }

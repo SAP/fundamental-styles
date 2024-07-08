@@ -13,24 +13,15 @@ $block: #{$fd-namespace}-rating-indicator;
     }
 
     &__label {
-      margin-right: 0;
+      margin-inline-end: 0;
 
       &:nth-child(4n + 6) {
-        margin-right: $spacing-between-icons;
+        margin-inline-end: $spacing-between-icons;
         flex-direction: row-reverse;
-
-        @include fd-rtl() {
-          margin-right: 0;
-          margin-left: $spacing-between-icons;
-
-          &:last-child {
-            margin-left: 0;
-          }
-        }
       }
 
       &:last-child {
-        margin-right: 0;
+        margin-inline-end: 0;
       }
 
       overflow: hidden;
@@ -207,10 +198,10 @@ $block: #{$fd-namespace}-rating-indicator;
     float: left;
     opacity: 1;
     height: var(--fontSize);
-    margin-right: var(--spacingBetweenIcons);
+    margin-inline-end: var(--spacingBetweenIcons);
 
     &:last-child {
-      margin-right: 0;
+      margin-inline-end: 0;
     }
 
     &:hover::before {
@@ -231,31 +222,12 @@ $block: #{$fd-namespace}-rating-indicator;
 
     font-size: var(--sapFontSmallSize);
     color: var(--sapContent_LabelColor);
-    margin-left: $fd-rating-indicator-dynamic-text-space;
+    margin-inline-start: $fd-rating-indicator-dynamic-text-space;
   }
 
   &--hide-dynamic-text {
     > .#{$block}__dynamic-text {
       display: none;
-    }
-  }
-
-  @include fd-rtl() {
-    .#{$block}__input:first-child + label {
-      margin-right: 0;
-    }
-
-    .#{$block}__label {
-      float: right;
-
-      &:last-child {
-        margin-right: var(--spacingBetweenIcons);
-      }
-    }
-
-    .#{$block}__dynamic-text {
-      margin-left: 0;
-      margin-right: $fd-rating-indicator-dynamic-text-space;
     }
   }
 
@@ -281,16 +253,11 @@ $block: #{$fd-namespace}-rating-indicator;
     --fontSize: 1rem;
 
     .#{$block}__label {
-      margin-right: 0.125rem;
+      margin-inline-end: 0.125rem;
 
       @include fd-icon-glyph('favorite') {
         font-size: var(--fontSize);
         color: var(--fdRating_Indicator_Display_Only_Selected_Color);
-      }
-
-      @include fd-rtl() {
-        margin-right: 0;
-        margin-left: 0.125rem;
       }
     }
   }

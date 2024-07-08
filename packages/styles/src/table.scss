@@ -109,7 +109,7 @@ $table-z-index: (
   }
 
   &__cell {
-    text-align: left;
+    text-align: start;
     height: var(--fdTable_Cell_Height);
     padding: 0 0.5rem;
     color: inherit;
@@ -120,10 +120,6 @@ $table-z-index: (
 
     @include fd-last-child() {
       @include fd-set-border-right(var(--sapList_BorderWidth) var(--fdTable_Cell_Vertical_Border_Style, solid) var(--sapList_BorderColor));
-    }
-
-    @include fd-rtl() {
-      text-align: right;
     }
 
     &--no-data {
@@ -292,16 +288,12 @@ $table-z-index: (
     display: flex;
 
     .#{$block}__icon:not(:last-child) {
-      margin-right: 0.25rem;
+      margin-inline-end: 0.25rem;
     }
 
     @include fd-rtl() {
       .#{$block}__icon {
         margin-right: 0;
-      }
-
-      .#{$block}__icon:not(:last-child) {
-        margin-left: 0.25rem;
       }
     }
   }

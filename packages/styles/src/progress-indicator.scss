@@ -196,14 +196,11 @@ $fd-progress-indicator-states: (
     right: -1.25rem;
     bottom: -0.625rem;
     display: var(--iconDisplay);
-    margin-left: var(--fdProgress_Indicator_Label_Margin_Start);
-    margin-right: var(--fdProgress_Icon_Space_Before_Label);
+    margin-inline: var(--fdProgress_Indicator_Label_Margin_Start) var(--fdProgress_Icon_Space_Before_Label);
 
     @include fd-rtl() {
       left: -1.25rem;
       right: initial;
-      margin-left: var(--fdProgress_Icon_Space_Before_Label);
-      margin-right: var(--fdProgress_Indicator_Label_Margin_Start);
     }
 
     &::before {
@@ -215,12 +212,7 @@ $fd-progress-indicator-states: (
     }
 
     & + .#{$block}__label {
-      margin-left: 0;
-
-      @include fd-rtl() {
-        margin-left: inherit;
-        margin-right: 0;
-      }
+      margin-inline-start: 0;
     }
   }
 
@@ -230,8 +222,7 @@ $fd-progress-indicator-states: (
 
     display: inline-block;
     max-width: 100%;
-    margin-left: var(--labelMarginStart);
-    margin-right: var(--labelMarginEnd);
+    margin-inline: var(--labelMarginStart) var(--labelMarginEnd);
     position: var(--fdProgress_Indicator_Label_Position, static);
     top: -1.25rem;
     left: 0;
@@ -243,8 +234,6 @@ $fd-progress-indicator-states: (
     @include fd-rtl() {
       left: initial;
       right: 0;
-      margin-left: var(--labelMarginEnd);
-      margin-right: var(--labelMarginStart);
     }
   }
 

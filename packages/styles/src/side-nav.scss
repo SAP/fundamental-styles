@@ -6,7 +6,6 @@
 
 $block: #{$fd-namespace}-side-nav;
 $block-nested-list: #{$fd-namespace}-nested-list;
-$has-child-content-arrow-margin: 0.125rem;
 
 .#{$block} {
   @include fd-reset();
@@ -46,8 +45,7 @@ $has-child-content-arrow-margin: 0.125rem;
     font-size: var(--sapFontSize);
     font-weight: bold;
     line-height: 2rem;
-    padding-right: 1rem;
-    padding-left: 1rem;
+    padding-inline: 1rem 1rem;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -67,7 +65,8 @@ $has-child-content-arrow-margin: 0.125rem;
       display: block;
       border-top: 0.125rem solid;
       border-top-color: var(--sapList_GroupHeaderBorderColor);
-      margin: 0.25rem 0.5rem;
+      margin-block: 0.25rem;
+      margin-inline: 0.5rem;
     }
   }
 
@@ -98,8 +97,8 @@ $has-child-content-arrow-margin: 0.125rem;
             content: "";
             min-width: 0;
             min-height: 0;
-            margin-right: $has-child-content-arrow-margin;
-            margin-bottom: 0.0625rem;
+            margin-inline-end: 0.125rem;
+            margin-block-end: 0.0625rem;
             border-style: solid;
             border-width: 0.375rem 0.375rem 0 0;
             border-color: transparent var(--sapContent_IconColor) transparent transparent;
@@ -143,8 +142,6 @@ $has-child-content-arrow-margin: 0.125rem;
         .#{$block-nested-list}__link {
           &.has-child {
             &::after {
-              margin-right: 0;
-              margin-left: $has-child-content-arrow-margin;
               right: auto;
               left: 0;
               transform: rotate(90deg);
@@ -157,8 +154,7 @@ $has-child-content-arrow-margin: 0.125rem;
         .#{$block-nested-list}__item {
           .#{$block-nested-list}__link,
           .#{$block-nested-list}__content {
-            padding-right: 1rem;
-            padding-left: 1rem;
+            padding-inline: 1rem 1rem;
           }
         }
       }

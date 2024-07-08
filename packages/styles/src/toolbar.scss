@@ -72,13 +72,9 @@ $block: #{$fd-namespace}-toolbar;
 
     & .#{$block}__overflow-button {
       width: auto;
-      text-align: left;
+      text-align: start;
       margin: 0.1875rem 0;
       justify-content: flex-start;
-
-      @include fd-rtl() {
-        text-align: right;
-      }
 
       &--menu {
         @include fd-flex-center() {
