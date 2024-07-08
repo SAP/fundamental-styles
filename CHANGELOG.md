@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.37.1-rc.4](https://github.com/SAP/fundamental-styles/compare/v0.37.1-rc.3...v0.37.1-rc.4) (2024-07-08)
+
+### Features
+
+-   **common-css:** add data attribute to common css Text [ci visual] ([#5478](https://github.com/SAP/fundamental-styles/issues/5478)) ([1762d00](https://github.com/SAP/fundamental-styles/commit/1762d007ecbfa9b26e3bdfc26c51ffb5573f7d70))
+
 ## [0.37.1-rc.3](https://github.com/SAP/fundamental-styles/compare/v0.37.1-rc.2...v0.37.1-rc.3) (2024-07-05)
 
 ### Features
