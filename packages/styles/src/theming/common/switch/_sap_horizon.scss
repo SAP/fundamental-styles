@@ -92,8 +92,8 @@
   /* Semantic switch icon */
   --fdSwitch_Semantic_Icon_Position: absolute;
   --fdSwitch_Icon_Size: var(--sapFontLargeSize);
-  --fdSwitch_Icon_Error_Margin: 0;
-  --fdSwitch_Icon_Success_Margin: 0;
+  --fdSwitch_Icon_Error_Margin: 0 0;
+  --fdSwitch_Icon_Success_Margin: 0 0;
 
   /* Semantic switch Compact mode */
   --fdSwitch_Compact_Icon_Size: var(--sapFontSize);

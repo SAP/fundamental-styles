@@ -23,14 +23,14 @@ $block: #{$fd-namespace}-panel;
   overflow: hidden;
 
   &:not(:last-child) {
-    margin-bottom: var(--fdPanel_Margin_Bottom);
+    margin-block-end: var(--fdPanel_Margin_Bottom);
   }
 
   &__header {
     overflow: hidden;
     height: var(--fdPanel_Header_Height);
     min-height: var(--fdPanel_Header_Height);
-    padding-right: $fd-panel-header-right-padding;
+    padding-inline-end: $fd-panel-header-right-padding;
     background-color: var(--sapGroup_TitleBackground);
     border-bottom: solid 0.0625rem var(--sapGroup_TitleBorderColor);
 
@@ -47,7 +47,8 @@ $block: #{$fd-namespace}-panel;
   &__content {
     @include fd-scrollbar(var(--fdScrollbar_Border_Radius));
 
-    padding: 0.625rem 1rem;
+    padding-block: 0.625rem;
+    padding-inline: 1rem;
     overflow: auto;
     border-bottom: solid 0.0625rem var(--fdPanel_Content_Border_Bottom_Color);
     background: var(--fdPanel_Content_Background_Color);
@@ -75,21 +76,9 @@ $block: #{$fd-namespace}-panel;
     }
   }
 
-  @include fd-rtl() {
-    .#{$block}__header {
-      padding-right: 0;
-      padding-left: $fd-panel-header-right-padding;
-    }
-  }
-
   &--fixed {
     .#{$block}__header {
-      padding-left: $fd-panel-header-fixed-left-padding;
-
-      @include fd-rtl() {
-        padding-left: $fd-panel-header-right-padding;
-        padding-right: $fd-panel-header-fixed-left-padding;
-      }
+      padding-inline-start: $fd-panel-header-fixed-left-padding;
     }
   }
 

@@ -35,7 +35,7 @@ $gridCol: #{$fd-namespace}-col;
         > .#{$fd-namespace}-form-label {
           float: right;
           text-align: right;
-          padding-bottom: 0;
+          padding-block-end: 0;
           width: 100%;
 
           @include fd-rtl() {
@@ -50,12 +50,11 @@ $gridCol: #{$fd-namespace}-col;
     .#{$colSelector}--12 {
       > .#{$fd-namespace}-form-label {
         float: left;
-        text-align: left;
+        text-align: start;
         width: auto;
-        padding-bottom: 0.125rem;
+        padding-block-end: 0.125rem;
 
         @include fd-rtl() {
-          text-align: right;
           float: right;
         }
       }
@@ -66,21 +65,22 @@ $gridCol: #{$fd-namespace}-col;
 .#{$gridContainer}.#{$formContainer} {
   &.#{$formGroup},
   .#{$formGroup} {
-    padding: 1rem !important;
+    padding-block: 1rem !important;
+    padding-inline: 1rem !important;
 
     .#{$formGroup} {
-      padding: 0 !important;
+      padding-block: 0 !important;
+      padding-inline: 0 !important;
     }
 
     .#{$formItem} {
 
       .#{$fd-namespace}-form-label {
-        @include fd-set-margin-right(0);
-
+        margin-inline-end: 0;
         white-space: initial;
 
         &--required {
-          @include fd-set-padding-right(0.5rem);
+          padding-inline-end: 0.5rem;
         }
       }
     }
@@ -92,8 +92,7 @@ $gridCol: #{$fd-namespace}-col;
     .#{$gridCol} {
       @include fd-ellipsis();
 
-      padding-top: 0;
-      padding-bottom: 0;
+      padding-block: 0 0;
 
       &:not(.#{$formGroup}) {
         align-self: center;
@@ -115,14 +114,16 @@ $gridCol: #{$fd-namespace}-col;
   .#{$gridContainer}.#{$formContainer} {
     $gutter: 0.25rem;
 
-    padding: 0 $gutter;
+    padding-block: 0;
+    padding-inline: $gutter;
 
     .#{$gridRow} {
       margin: 0 -#{$gutter};
       min-width: calc(100% + #{$gutter} * 2);
 
       .#{$gridCol} {
-        padding: 0 $gutter;
+        padding-block: 0;
+        padding-inline: $gutter;
       }
     }
   }

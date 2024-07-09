@@ -25,7 +25,8 @@ const localStyles = `
         align-items: center;
         border-radius: 0.5rem;
         color: #fff;
-        margin: 0.1rem;
+        margin-inline: 0.1rem;
+        margin-block: 0.1rem;
         font-weight: bold;
         padding: 0.5rem 1.5rem;
     }

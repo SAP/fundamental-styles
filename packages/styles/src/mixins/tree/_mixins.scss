@@ -49,17 +49,17 @@ $fd-tree-navigated-box-shadow-rtl: inset 0.1875rem 0 0 0 var(--sapSelectedColor)
   .#{$block}__item {
     .#{$block}__item-container {
       .#{$block}__expander {
-        @include fd-set-margin-left(var(--fdTree_Item_Level_Spacing));
+        margin-inline-start: var(--fdTree_Item_Level_Spacing);
       }
 
       .#{$block}__content,
       .#{$fd-namespace}-form-item:first-child {
-        @include fd-set-margin-left(calc(var(--fdTree_Item_Level_Spacing, 0rem) + var(--fdTree_Expander_Size)));
+        margin-inline-start: calc(var(--fdTree_Item_Level_Spacing, 0rem) + var(--fdTree_Expander_Size));
       }
 
       .#{$block}__expander + .#{$block}__content,
       .#{$fd-namespace}-form-item + .#{$block}__content {
-        @include fd-set-margin-left(0);
+        margin-inline-start: 0;
       }
     }
   }
@@ -68,10 +68,10 @@ $fd-tree-navigated-box-shadow-rtl: inset 0.1875rem 0 0 0 var(--sapSelectedColor)
     .#{$block}__item {
       .#{$block}__item-container {
         .#{$fd-namespace}-form-item:first-child {
-          @include fd-set-margin-left(0);
+          margin-inline-start: 0;
 
           & + .#{$block}__content {
-            @include fd-set-margin-left(calc(var(--fdTree_Item_Level_Spacing, 0rem) + var(--fdTree_Expander_Size)));
+            margin-inline-start: calc(var(--fdTree_Item_Level_Spacing, 0rem) + var(--fdTree_Expander_Size));
           }
         }
       }
@@ -110,12 +110,13 @@ $fd-tree-navigated-box-shadow-rtl: inset 0.1875rem 0 0 0 var(--sapSelectedColor)
     .#{$fd-namespace}-form-item:first-child,
     .#{$block}__expander + .#{$fd-namespace}-form-item {
       label {
-        margin: 0;
+        margin-inline: 0;
+        margin-block: 0;
       }
     }
   }
   .#{$block}__expander + .#{$block}__content {
-    @include fd-set-margin-left(0);
+    margin-inline-start: 0;
   }
 }
 

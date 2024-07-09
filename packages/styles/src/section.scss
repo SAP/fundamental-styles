@@ -15,13 +15,11 @@ $block: #{$fd-namespace}-section;
   padding: $fd-section-padding--top 0.5rem $fd-section-padding--bottom 0.5rem;
 
   @include fd-screen(m) {
-    padding-left: 2rem;
-    padding-right: 2rem;
+    padding-inline: 2rem;
   }
 
   @include fd-screen(xl) {
-    padding-left: 3rem;
-    padding-right: 3rem;
+    padding-inline: 3rem;
   }
 
   border-bottom: none;
@@ -36,22 +34,18 @@ $block: #{$fd-namespace}-section;
   &--bleed {
     @include fd-reset();
 
-    padding-right: 0;
-    padding-left: 0;
+    padding-inline: 0;
 
     .#{$block}__header,
     .#{$block}__footer {
-      padding-left: 0.5rem;
-      padding-right: 0.5rem;
+      padding-inline: 0.5rem;
 
       @include fd-screen(m) {
-        padding-left: 2rem;
-        padding-right: 2rem;
+        padding-inline: 2rem;
       }
 
       @include fd-screen(xl) {
-        padding-left: 3rem;
-        padding-right: 3rem;
+        padding-inline: 3rem;
       }
     }
   }
@@ -62,7 +56,7 @@ $block: #{$fd-namespace}-section;
     min-height: 1.5rem;
     display: flex;
     align-items: center;
-    margin-bottom: $fd-section-header-margin--bottom;
+    margin-block-end: $fd-section-header-margin--bottom;
   }
 
   &__title {
@@ -72,13 +66,13 @@ $block: #{$fd-namespace}-section;
     line-height: 2rem;
     color: var(--sapTitleColor);
     flex: 1;
-    margin-bottom: 0;
+    margin-block-end: 0;
   }
 
   &__actions {
     @include fd-reset();
 
-    margin-left: auto;
+    margin-inline-start: auto;
   }
 
   &__footer {

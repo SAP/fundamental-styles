@@ -48,7 +48,8 @@ $block: #{$fd-namespace}-toolbar;
 
     width: var(--fdToolbar_Separator_Width);
     height: var(--fdToolbar_Separator_Height);
-    margin: var(--fdToolbar_Separator_Margin);
+    margin-inline: 0;
+    margin-block: var(--fdToolbar_Separator_Margin);
     background-color: var(--sapToolbar_SeparatorColor);
   }
 
@@ -58,7 +59,7 @@ $block: #{$fd-namespace}-toolbar;
 
     --fdToolbar_Separator_Width: auto;
     --fdToolbar_Separator_Height: 0.0625rem;
-    --fdToolbar_Separator_Margin: 0.1875rem 0;
+    --fdToolbar_Separator_Margin: 0.1875rem;
     --fdToolbar_Overflow_Padding: 0.25rem 0.5rem;
 
     overflow: auto;
@@ -73,7 +74,8 @@ $block: #{$fd-namespace}-toolbar;
     & .#{$block}__overflow-button {
       width: auto;
       text-align: left;
-      margin: 0.1875rem 0;
+      margin-inline: 0;
+      margin-block: 0.1875rem;
       justify-content: flex-start;
 
       @include fd-rtl() {
@@ -90,11 +92,13 @@ $block: #{$fd-namespace}-toolbar;
     }
 
     .#{$block}__overflow-form-label {
-      margin: 0.625rem 0 0.125rem;
+      margin-block: 0.625rem 0.125rem;
+      margin-inline: 0;
     }
 
     .#{$block}__overflow-label {
-      margin: 0.375rem 0;
+      margin-block: 0.375rem;
+      margin-inline: 0;
     }
   }
 

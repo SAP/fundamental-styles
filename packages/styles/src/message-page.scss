@@ -63,19 +63,19 @@ $block: #{$fd-namespace}-message-page;
       align-items: center;
     }
 
-    padding-bottom: 2rem;
+    padding-block-end: 2rem;
   }
 
   &__title {
     margin-top: var(--fdMessage_Page_Title_Margin_Top);
-    margin-bottom: var(--fdMessage_Page_Title_Margin_Bottom);
+    margin-block-end: var(--fdMessage_Page_Title_Margin_Bottom);
     text-align: center;
     font-size: var(--sapFontHeader2Size);
     color: var(--sapGroup_TitleTextColor);
   }
 
   &__subtitle {
-    margin-bottom: 2rem;
+    margin-block-end: 2rem;
     font-size: var(--sapFontHeader5Size);
     color: var(--sapContent_LabelColor);
   }

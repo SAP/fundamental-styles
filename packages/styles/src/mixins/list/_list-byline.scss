@@ -18,7 +18,8 @@ $fd-list-byline-section-text-color: var(--sapContent_LabelColor) !default;
       width: 100%;
       min-height: $fd-list-byline-item-height;
       height: auto;
-      padding: $fd-list-byline-item-padding-y $fd-list-byline-item-padding-x;
+      padding-block: $fd-list-byline-item-padding-y;
+      padding-inline: $fd-list-byline-item-padding-x;
       align-items: flex-start;
 
       .#{$block}__item-counter {
@@ -36,8 +37,8 @@ $fd-list-byline-section-text-color: var(--sapContent_LabelColor) !default;
       @include fd-list-ie11-active-state-fix();
       @include fd-icon-element-base();
       @include fd-flex-center();
-      @include fd-set-margin-right(0.75rem);
 
+      margin-inline-end: 0.75rem;
       width: $fd-list-byline-thumbnail-dimensions;
       height: $fd-list-byline-thumbnail-dimensions;
       min-width: $fd-list-byline-thumbnail-dimensions;
@@ -82,7 +83,8 @@ $fd-list-byline-section-text-color: var(--sapContent_LabelColor) !default;
       min-width: $fd-list-byline-thumbnail-dimensions;
       height: 100%;
       flex: 1 1 auto;
-      padding: 0.125rem 0;
+      padding-block: 0.125rem;
+      padding-inline: 0;
     }
 
     .#{$block}__title {
@@ -99,7 +101,7 @@ $fd-list-byline-section-text-color: var(--sapContent_LabelColor) !default;
       font-size: $fd-list-normal-font-size;
       color: $fd-list-byline-section-text-color;
       line-height: $fd-list-byline-text-line-height;
-      padding-top: 0.5rem;
+      padding-block-start: 0.5rem;
 
       &--2-col {
         display: flex;
@@ -109,7 +111,8 @@ $fd-list-byline-section-text-color: var(--sapContent_LabelColor) !default;
       &--wrap {
         .#{$block}__byline-right,
         .#{$block}__byline-left {
-          padding: 0;
+          padding-inline: 0;
+          padding-block: 0;
           width: 100%;
           display: inline;
           white-space: normal;
@@ -138,24 +141,24 @@ $fd-list-byline-section-text-color: var(--sapContent_LabelColor) !default;
     .#{$block}__byline-left {
       @include fd-reset();
       @include fd-ellipsis();
-      @include fd-set-padding-right($fd-list-byline-elements-spacing);
 
       width: 60%;
       color: $fd-list-byline-section-text-color;
       line-height: $fd-list-byline-text-line-height;
       align-self: flex-end;
+      padding-inline-end: $fd-list-byline-elements-spacing;
     }
 
     .#{$block}__byline-right {
       @include fd-reset();
       @include fd-ellipsis();
-      @include fd-set-padding-left($fd-list-byline-elements-spacing);
 
       width: 40%;
       color: $fd-list-byline-section-text-color;
       line-height: $fd-list-byline-text-line-height;
       text-align: right;
       align-self: flex-end;
+      padding-inline-start: $fd-list-byline-elements-spacing;
 
       @include fd-rtl() {
         text-align: left;
@@ -189,11 +192,11 @@ $fd-list-byline-section-text-color: var(--sapContent_LabelColor) !default;
       }
 
       .#{$block}__item:first-child {
-        padding-top: $fd-list-byline-item-padding-y;
+        padding-block-start: $fd-list-byline-item-padding-y;
       }
 
       .#{$block}__item:last-child {
-        padding-bottom: $fd-list-byline-item-padding-y;
+        padding-block-end: $fd-list-byline-item-padding-y;
       }
     }
   }

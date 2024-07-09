@@ -16,7 +16,7 @@ $button: #{$fd-cx-namespace}-button;
   --fdNestedList_Item_Height: 2.75rem;
   --fdNestedList_Item_Spacing: 0.25rem;
   --fdNestedList_Item_Spacing_Compact: 0.125rem;
-  --fdNestedList_Item_Margin: 0.5rem 0;
+  --fdNestedList_Item_Margin: 0.5rem;
   --fdNestedList_Item_Header_Margin_Top: 0.25rem;
   --fdNestedList_Focus_Offset: 0.125rem;
   --fdNestedList_Focus_Offset_Width: var(--sapContent_FocusWidth);
@@ -49,11 +49,11 @@ $button: #{$fd-cx-namespace}-button;
       @include fd-set-margins-x-equal(0.5rem);
 
       &:first-child {
-        margin-top: var(--fdNestedList_Item_Spacing);
+        margin-block-start: var(--fdNestedList_Item_Spacing);
       }
 
       &:last-child {
-        margin-bottom: var(--fdNestedList_Item_Spacing);
+        margin-block-end: var(--fdNestedList_Item_Spacing);
       }
     }
 
@@ -83,7 +83,8 @@ $button: #{$fd-cx-namespace}-button;
     @include fd-reset();
 
     display: block;
-    margin: var(--fdNestedList_Item_Margin);
+    margin-inline: 0;
+    margin-block: var(--fdNestedList_Item_Margin);
 
     &--header {
       margin-top: var(--fdNestedList_Item_Header_Margin_Top);
@@ -117,8 +118,7 @@ $button: #{$fd-cx-namespace}-button;
     }
 
     &--group {
-      @include fd-set-padding-left(1rem);
-
+      padding-inline-start: 1rem;
       border-bottom: 0.0625rem solid var(--sapList_GroupHeaderBorderColor);
       .#{$block}__title {
         @include fd-set-paddings-x-equal(1rem);
@@ -262,8 +262,8 @@ $button: #{$fd-cx-namespace}-button;
     @include fd-flex-center();
     @include fd-nested-list-focus();
     @include fd-set-width(2.75rem);
-    @include fd-set-margin-left(var(--fdNestedList_Button_Margin_Left));
 
+    margin-inline-start: var(--fdNestedList_Button_Margin_Left);
     height: var(--fdNestedList_Item_Height);
     cursor: pointer;
     background: transparent;
@@ -285,12 +285,12 @@ $button: #{$fd-cx-namespace}-button;
   /* MODIFIERS */
   &--text-only {
     .#{$block}__title:first-child {
-      @include fd-set-padding-left(1rem);
+      padding-inline-start: 1rem;
     }
   }
 
   @include fd-compact-or-condensed() {
-    --fdNestedList_Item_Margin: 0.25rem 0;
+    --fdNestedList_Item_Margin: 0.25rem;
     --fdNestedList_Item_Spacing: 0.125rem;
     --fdNestedList_Item_Header_Margin_Top: 0.125rem;
     --fdNestedList_Focus_Offset: 0.0625rem;

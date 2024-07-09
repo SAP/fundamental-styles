@@ -74,14 +74,17 @@ $block: #{$fd-namespace}-shellbar;
         z-index: 7;
         position: absolute;
         left: 0;
-        padding: 0 0.3rem;
-        margin: 0;
+        margin-inline: 0;
+        margin-block: 0;
+        padding-block: 0;
+        padding-inline: 0.3rem;
       }
     }
 
     .#{$block}__button--menu {
       @include fd-icon-selector() {
-        margin: 0 !important;
+        margin-inline: 0 !important;
+        margin-block: 0 !important;
       }
     }
   }
@@ -114,7 +117,8 @@ $block: #{$fd-namespace}-shellbar;
   height: var(--fdShellbar_Height);
   color: $fd-shellbar-color;
   position: relative;
-  padding: 0 1rem;
+  padding-block: 0;
+  padding-inline: 1rem;
 
   &__group {
     @include fd-reset();
@@ -403,10 +407,10 @@ $block: #{$fd-namespace}-shellbar;
           border-radius: 0;
           min-height: var(--fdShellbar_Input_Addon_Dimension);
           height: var(--fdShellbar_Input_Addon_Dimension);
-          margin: 0;
+          margin-inline: 0;
+          margin-block: 0;
           position: relative;
-
-          @include fd-set-margin-left(var(--fdShellbar_Search_Category_Offset_Left));
+          margin-inline-start: var(--fdShellbar_Search_Category_Offset_Left);
 
           &::after {
             box-shadow: none;
@@ -536,7 +540,8 @@ $block: #{$fd-namespace}-shellbar;
       }
 
       &:not(&--menu) {
-        padding: 0;
+        padding-inline: 0;
+        padding-block: 0;
       }
 
       &.#{$block}__button--menu {
@@ -567,7 +572,8 @@ $block: #{$fd-namespace}-shellbar;
       &--menu {
 
         .#{$block}__title {
-          margin: 0;
+          margin-inline: 0;
+          margin-block: 0;
         }
       }
     }
@@ -582,7 +588,8 @@ $block: #{$fd-namespace}-shellbar;
   &--l,
   &--md,
   &--lg {
-    padding: 0 2rem;
+    padding-block: 0;
+    padding-inline: 2rem;
   }
 
   &--m,
@@ -594,7 +601,8 @@ $block: #{$fd-namespace}-shellbar;
   }
 
   &--xl {
-    padding: 0 3rem;
+    padding-block: 0;
+    padding-inline: 3rem;
   }
 
   &--side-nav {
@@ -605,9 +613,8 @@ $block: #{$fd-namespace}-shellbar;
     &.#{$block}--md,
     &.#{$block}--lg,
     &.#{$block}--xl {
-      @include fd-set-padding-right(0.5rem);
-
-      padding: 0;
+      padding-inline: 0;
+      padding-block: 0;
     }
   }
 

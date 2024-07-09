@@ -269,7 +269,6 @@ $block: #{$fd-namespace}-menu;
   &__shortcut {
     @include fd-reset();
     @include fd-ellipsis();
-    @include fd-set-padding-left(var(--fdMenu_Shortcut_Padding_Left));
 
     display: flex;
     flex-shrink: 0;
@@ -277,6 +276,7 @@ $block: #{$fd-namespace}-menu;
     font-size: var(--sapFontSize);
     font-family: var(--sapFontFamily);
     color: var(--fdMenu_Shortcut_Color);
+    padding-inline-start: var(--fdMenu_Shortcut_Padding_Left);
 
     &:last-child {
       @include fd-set-paddings-x(var(--fdMenu_Shortcut_Padding_Left), var(--fdMenu_Shortcut_Padding_Right));
@@ -323,15 +323,15 @@ $block: #{$fd-namespace}-menu;
 
     .#{$block}__title {
       &:first-child {
-        @include fd-set-margin-left(var(--fdMenu_Icon_Width));
+        margin-inline-start: var(--fdMenu_Icon_Width);
       }
 
       &:last-child {
-        @include fd-set-margin-right(var(--fdMenu_Text_Spacing_Right));
+        margin-inline-end: var(--fdMenu_Text_Spacing_Right);
       }
 
       &:only-child {
-        @include fd-set-margins-x(var(--fdMenu_Icon_Width), var(--fdMenu_Text_Spacing_Right));
+        margin-inline: var(--fdMenu_Icon_Width) var(--fdMenu_Text_Spacing_Right);
       }
     }
 
@@ -371,8 +371,7 @@ $block: #{$fd-namespace}-menu;
 
       input,
       .#{$block}__input {
-        margin-left: 1rem;
-        margin-right: 1rem;
+        margin-inline: 1rem;
       }
     }
   }
@@ -393,8 +392,7 @@ $block: #{$fd-namespace}-menu;
 
       input,
       .#{$block}__input {
-        margin-left: 0.5rem;
-        margin-right: 0.5rem;
+        margin-inline: 0.5rem;
       }
     }
   }

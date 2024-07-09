@@ -162,7 +162,8 @@ $semantic-color: (
 
 @mixin fd-list-reset-item-paddings() {
   .#{$block}__item--link {
-    padding: 0;
+    padding-inline: 0;
+    padding-block: 0;
   }
 }
 
@@ -174,22 +175,22 @@ $semantic-color: (
   }
 
   .#{$block}__item--link:first-child {
-    padding-top: 0;
+    padding-block-start: 0;
 
     .#{$block}__link {
-      padding-top: 1rem;
+      padding-block-start: 1rem;
     }
 
     .#{$block}__link--navigation-indicator::after {
-      margin-bottom: 0.5rem;
+      margin-block-end: 0.5rem;
     }
   }
 
   .#{$block}__item--link:last-child {
-    padding-bottom: 0;
+    padding-block-end: 0;
 
     .#{$block}__link {
-      padding-bottom: 1rem;
+      padding-block-end: 1rem;
     }
 
     .#{$block}__link--navigation-indicator::after {

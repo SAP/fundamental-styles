@@ -37,7 +37,7 @@
     }
 
     .#{$block}__subtitle {
-      padding-top: 0.25rem;
+      padding-block-start: 0.25rem;
       font-family: var(--sapFontFamily);
       font-size: var(--sapFontSize);
       color: var(--sapContent_LabelColor);

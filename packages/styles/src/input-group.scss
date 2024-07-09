@@ -19,7 +19,8 @@ $fd-input-border-radius: var(--sapField_BorderCornerRadius);
   @include fd-input-field-states();
   @include fd-input-group-button-overwrite();
 
-  padding: 0;
+  padding-block: 0;
+  padding-inline: 0;
   width: 100%;
   height: var(--sapElement_Height);
   display: flex;
@@ -34,8 +35,7 @@ $fd-input-border-radius: var(--sapField_BorderCornerRadius);
     flex: 1 1 10rem;
     background: none;
     background-color: var(--fdInputGroup_Input_Background, transparent);
-    padding-left: 0.25rem;
-    padding-right: 0.25rem;
+    padding-inline: 0.25rem;
     text-shadow: var(--fdInputGroup_Text_Shadow);
     border: var(--fdInputGroup_Input_Border, none);
     color: var(--fdInputGroup_Input_Color, inherit);
@@ -58,16 +58,11 @@ $fd-input-border-radius: var(--sapField_BorderCornerRadius);
     }
 
     &:nth-child(1) {
-      @include fd-set-padding-left($fd-input-padding);
+      padding-inline-start: $fd-input-padding;
     }
 
     &:nth-last-child(1) {
-      padding-right: $fd-input-padding;
-
-      @include fd-rtl() {
-        padding-left: $fd-input-padding;
-        padding-right: 0.25rem;
-      }
+      padding-inline-end: $fd-input-padding;
     }
   }
 
@@ -87,8 +82,7 @@ $fd-input-border-radius: var(--sapField_BorderCornerRadius);
     font-size: var(--sapFontLargeSize);
     min-width: var(--fdInput_Group_Addon_Width, 2.25rem);
     min-height: var(--fdInput_Group_Addon_Height, var(--fdInput_Compact_Height));
-    padding-left: 0.625rem;
-    padding-right: 0.625rem;
+    padding-inline: 0.625rem;
 
     span[class*='sap-icon--'] {
       &::before {
@@ -101,14 +95,15 @@ $fd-input-border-radius: var(--sapField_BorderCornerRadius);
     }
 
     &--button {
-      padding: 0;
+      padding-block: 0;
+      padding-inline: 0;
       overflow: visible;
     }
   }
 
   &--control {
     &[aria-expanded="true"] {
-      margin-bottom: 0;
+      margin-block-end: 0;
     }
   }
 

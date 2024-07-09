@@ -27,11 +27,8 @@ $block: #{$fd-namespace}-message-view;
     display: none;
     position: absolute;
     inset: 0;
-    padding: 1rem 1rem 1rem 3.5rem;
-
-    @include fd-rtl() {
-      padding: 1rem 3.5rem 1rem 1rem;
-    }
+    padding-block: 1rem;
+    padding-inline: 3.5rem 1rem;
 
     &-title {
       @include fd-reset();
@@ -40,18 +37,15 @@ $block: #{$fd-namespace}-message-view;
       font-size: var(--sapFontHeader5Size);
       font-weight: var(--sapFontHeaderWeight);
       color: var(--sapGroup_TitleTextColor);
-      margin-bottom: 1rem;
+      margin-block-end: 1rem;
       white-space: normal;
       display: block;
-      margin-left: 0;
+      margin-inline-start: 0;
 
       .#{$block}__icon {
         font-size: 1rem;
-        margin: 0 0.5rem 0 -2rem;
-
-        @include fd-rtl() {
-          margin: 0 -2rem 0 0.5rem;
-        }
+        margin-block: 0;
+        margin-inline: -2rem 0.5rem;
       }
     }
 
@@ -62,7 +56,7 @@ $block: #{$fd-namespace}-message-view;
       font-size: var(--sapFontSize);
       line-height: 1.4;
       color: var(--sapTextColor);
-      margin-bottom: 1rem;
+      margin-block-end: 1rem;
       white-space: normal;
       display: block;
     }

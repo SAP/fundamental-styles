@@ -6,54 +6,47 @@
 $block: #{$fd-namespace}-padding;
 
 .#{$block} {
-  $fd-padding-tiny: 0.5rem;
-  $fd-padding-small: 1rem;
-  $fd-padding-medium: 2rem;
-  $fd-padding-large: 3rem;
-  $fd-padding-responsive-horizontal: 1rem;
-  $fd-padding-responsive-medium-large: 2rem;
-  $fd-padding-responsive-extra-large: 3rem;
-
-  padding: 1rem !important;
+  padding-block: 1rem;
+  padding-inline: 1rem;
 
   &-begin-end {
     &--tiny {
-      padding-left: $fd-padding-tiny !important;
-      padding-right: $fd-padding-tiny !important;
+      padding-inline: 0.5rem;
     }
 
     &--sm {
-      padding-left: $fd-padding-small !important;
-      padding-right: $fd-padding-small !important;
+      padding-inline: 1rem;
     }
 
     &--md {
-      padding-left: $fd-padding-medium !important;
-      padding-right: $fd-padding-medium !important;
+      padding-inline: 2rem;
     }
 
     &--lg {
-      padding-left: $fd-padding-large !important;
-      padding-right: $fd-padding-large !important;
+      padding-inline: 3rem;
     }
   }
 
   &--none {
-    padding: 0 !important;
+    padding-block: 0;
+    padding-inline: 0;
   }
 
   &-responsive {
     &--sm {
-      padding: 0 $fd-padding-responsive-horizontal !important;
+      padding-block: 0;
+      padding-inline: 1rem;
     }
 
     &--md,
     &--lg {
-      padding: 0 $fd-padding-responsive-medium-large !important;
+      padding-block: 0;
+      padding-inline: 2rem;
     }
 
     &--xl {
-      padding: 0 $fd-padding-responsive-extra-large !important;
+      padding-block: 0;
+      padding-inline: 3rem;
     }
   }
 }

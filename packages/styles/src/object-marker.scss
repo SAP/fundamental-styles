@@ -22,15 +22,14 @@ $block: #{$fd-namespace}-object-marker;
   &__icon {
     @include fd-icon-element-base() {
       @include fd-flex-center();
-      @include fd-set-padding-right(0.25rem);
 
       font-size: 1rem;
       line-height: normal;
+      padding-inline-end: 0.25rem;
       color: var(--sapContent_MarkerIconColor);
 
       @include fd-only-child() {
-        padding-right: 0;
-        padding-left: 0;
+        padding-inline: 0;
       }
     }
   }
@@ -48,6 +47,6 @@ $block: #{$fd-namespace}-object-marker;
   }
 
   & + & {
-    @include fd-set-margin-left(0.5rem);
+    margin-inline-start: 0.5rem;
   }
 }

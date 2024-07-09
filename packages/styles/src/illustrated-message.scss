@@ -26,14 +26,16 @@ $block: #{$fd-namespace}-illustrated-message;
   width: auto;
   height: auto;
   text-align: center;
-  padding: var(--illustratedMessagePadding);
   max-width: var(--illustratedMessageMaxWidth);
+  padding-inline: var(--illustratedMessagePadding);
+  padding-block: var(--illustratedMessagePadding);
 
   &-container {
     @include fd-reset();
 
     width: auto;
-    padding: 1rem;
+    padding-inline: 1rem;
+    padding-block: 1rem;
     border-radius: 0.5rem;
     background: var(--sapGroup_ContentBackground);
   }
@@ -65,7 +67,7 @@ $block: #{$fd-namespace}-illustrated-message;
     font-size: var(--titleFontSize);
     max-width: var(--figcaptionMaxWidth);
     color: var(--sapGroup_TitleTextColor);
-    margin-bottom: var(--titleMarginBottom);
+    margin-block-end: var(--titleMarginBottom);
     font-family: var(--sapFontHeaderFamily);
   }
 
@@ -74,7 +76,7 @@ $block: #{$fd-namespace}-illustrated-message;
 
     text-align: center;
     max-width: var(--figcaptionMaxWidth);
-    margin-bottom: var(--textMarginBottom);
+    margin-block-end: var(--textMarginBottom);
   }
 
   &__actions {

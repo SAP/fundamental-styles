@@ -31,8 +31,7 @@ $menu: #{$fd-namespace}-menu;
         .#{$block}__subheader.#{$bar},
         .#{$block}__footer.#{$bar},
         .#{$block}__body {
-          padding-left: map.get($fd-dialog-content-padding-x, $size-label);
-          padding-right: map.get($fd-dialog-content-padding-x, $size-label);
+          padding-inline: map.get($fd-dialog-content-padding-x, $size-label) map.get($fd-dialog-content-padding-x, $size-label);
         }
       }
     }
@@ -103,18 +102,15 @@ $menu: #{$fd-namespace}-menu;
     @extend %dialog-body;
 
     position: relative;
-    padding-top: $fd-dialog-body-padding-y;
-    padding-bottom: $fd-dialog-body-padding-y;
+    padding-block: $fd-dialog-body-padding-y $fd-dialog-body-padding-y;
     border-radius: $fd-dialog-content-border-radius;
 
     &--no-vertical-padding {
-      padding-top: 0;
-      padding-bottom: 0;
+      padding-block: 0 0;
     }
 
     &--no-horizontal-padding {
-      padding-left: 0;
-      padding-right: 0;
+      padding-inline: 0 0;
     }
 
     &:not(:first-child) {
@@ -133,7 +129,7 @@ $menu: #{$fd-namespace}-menu;
 
     text-align: center;
     margin-top: $fd-dialog-loader-margin-y;
-    margin-bottom: $fd-dialog-loader-margin-y - $fd-dialog-body-padding-y;
+    margin-block-end: $fd-dialog-loader-margin-y - $fd-dialog-body-padding-y;
   }
 
   &__resize-handle {
@@ -150,7 +146,8 @@ $menu: #{$fd-namespace}-menu;
     bottom: 0;
     font-size: 1rem;
     overflow: hidden;
-    margin: 0.125rem;
+    margin-block: 0.125rem;
+    margin-inline: 0.125rem;
     cursor: se-resize;
     line-height: 1rem;
     position: absolute;

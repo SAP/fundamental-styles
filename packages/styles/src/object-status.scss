@@ -916,7 +916,8 @@ $inverted-color-accents-b: (
       max-height: none;
       min-width: 1.75rem;
       align-self: center;
-      padding: 0.0625rem 0.25rem;
+      padding-block: 0.0625rem;
+      padding-inline: 0.25rem;
 
       .#{$block}__icon,
       .#{$block}__text {

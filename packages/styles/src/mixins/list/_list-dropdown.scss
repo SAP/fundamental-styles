@@ -18,14 +18,16 @@ $fd-checkbox-dimensions: 1.375rem !default;
 
       height: auto;
       min-height: 2.5rem;
-      padding: 0 $fd-list-item-padding-x;
+      padding-block: 0;
+      padding-inline: $fd-list-item-padding-x;
     }
 
     @include fd-compact-or-condensed() {
       .#{$block}__item:not(.#{$block}__group-header) {
         height: auto;
         min-height: 2rem;
-        padding: 0 $fd-list-item-padding-x;
+        padding-block: 0;
+        padding-inline: $fd-list-item-padding-x;
       }
     }
   }
@@ -34,12 +36,9 @@ $fd-checkbox-dimensions: 1.375rem !default;
     .#{$block}__item {
       @include fd-list-item-states();
 
-      padding: 0 1rem 0 0;
       height: auto;
-
-      @include fd-rtl() {
-        padding: 0 0 0 1rem;
-      }
+      padding-block: 0;
+      padding-inline: 0 1rem;
     }
 
     .#{$block}__label {
@@ -50,11 +49,10 @@ $fd-checkbox-dimensions: 1.375rem !default;
       position: relative;
       overflow: hidden;
       text-overflow: ellipsis;
-      margin-right: 0;
+      margin-inline-end: 0;
 
       &::before {
-        margin-top: (1rem - $fd-checkbox-dimensions) * 0.5;
-        margin-bottom: (1rem - $fd-checkbox-dimensions) * 0.5;
+        margin-block: (1rem - $fd-checkbox-dimensions) * 0.5 (1rem - $fd-checkbox-dimensions) * 0.5;
       }
     }
 
@@ -82,26 +80,29 @@ $fd-checkbox-dimensions: 1.375rem !default;
 
     .#{$block}__footer,
     .#{$block}__label {
-      padding: $fd-list-dropdown-vertical-padding $fd-list-item-padding-x;
+      padding-block: $fd-list-dropdown-vertical-padding;
+      padding-inline: $fd-list-item-padding-x;
     }
 
     @include fd-compact-or-condensed() {
       .#{$block}__item {
-        padding: 0;
+        padding-inline: 0;
+        padding-block: 0;
         height: auto;
       }
 
       .#{$block}__label {
         &::before {
-          margin-left: 0;
+          margin-inline-start: 0;
           margin-top: 0;
-          margin-bottom: 0;
+          margin-block-end: 0;
         }
       }
 
       .#{$block}__footer,
       .#{$block}__label {
-        padding: $fd-list-dropdown-vertical-compact-padding $fd-list-item-padding-x;
+        padding-block: $fd-list-dropdown-vertical-compact-padding;
+        padding-inline: $fd-list-item-padding-x;
       }
     }
   }

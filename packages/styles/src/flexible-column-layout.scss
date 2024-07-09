@@ -57,7 +57,8 @@ $block: #{$fd-namespace}-flexible-column-layout;
     width: $fd-toggle-button-width;
     min-width: $fd-toggle-button-width;
     justify-content: center;
-    padding: 0;
+    padding-inline: 0;
+    padding-block: 0;
     z-index: 2;
 
     @include fd-position-center();

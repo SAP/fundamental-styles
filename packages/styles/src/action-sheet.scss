@@ -15,8 +15,8 @@ $block: #{$fd-namespace}-action-sheet;
 
   @include fd-reset();
 
-  padding: var(--fdActionSheet_Padding);
   width: 100%;
+  padding: var(--fdActionSheet_Padding);
 
   &__item {
     @include fd-reset();
@@ -58,7 +58,8 @@ $block: #{$fd-namespace}-action-sheet;
 
     max-width: 100%;
     z-index: 1;
-    padding: 0 1rem 0.5rem;
+    padding-block: 0 0.5rem;
+    padding-inline: 1rem;
     color: var(--sapContent_ContrastTextColor);
   }
 

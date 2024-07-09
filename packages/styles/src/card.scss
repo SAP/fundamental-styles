@@ -625,7 +625,7 @@ $legend-background-colors: (
       justify-content: flex-end;
     }
 
-    padding-bottom: 0.25rem;
+    padding-block-end: 0.25rem;
     margin-inline-start: 1rem;
     font-size: var(--sapFontSmallSize);
     overflow: hidden;
@@ -635,7 +635,7 @@ $legend-background-colors: (
   &__analytics-text {
     @include fd-reset();
 
-    padding-bottom: 0.25rem;
+    padding-block-end: 0.25rem;
     color: var(--sapTile_TextColor);
   }
 
@@ -765,14 +765,15 @@ $legend-background-colors: (
   &--table {
     @include fd-compact-or-condensed() {
       .#{$block}__content {
-        padding-bottom: 0.5rem;
+        padding-block-end: 0.5rem;
       }
     }
   }
 
   &--object {
     .#{$block}__content {
-      padding: 1rem;
+      padding-block: 1rem;
+      padding-inline: 1rem;
     }
   }
 

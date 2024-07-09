@@ -144,7 +144,8 @@ $fd-calendar-special-days: (
 
   overflow: hidden;
   position: relative;
-  margin: var(--fdCalendar_Item_Spacing);
+  margin-inline: var(--fdCalendar_Item_Spacing);
+  margin-block: var(--fdCalendar_Item_Spacing);
   min-width: var(--fdCalendar_Item_Width);
   border-radius: var(--fdCalendar_Border_Radius);
   background-color: var(--fdCalendar_Item_Background);
@@ -201,16 +202,15 @@ $fd-calendar-special-days: (
     flex-grow: 1;
 
     &:not(:last-child, :first-child) {
-      margin-left: var(--fdCalendar_Action_Padding);
-      margin-right: var(--fdCalendar_Action_Padding);
+      margin-inline: var(--fdCalendar_Action_Padding);
     }
 
     &:first-child {
-      margin-right: var(--fdCalendar_Action_Padding);
+      margin-inline-end: var(--fdCalendar_Action_Padding);
     }
 
     &:last-child {
-      margin-left: var(--fdCalendar_Action_Padding);
+      margin-inline-start: var(--fdCalendar_Action_Padding);
     }
 
     > [type='button'] {
@@ -225,7 +225,7 @@ $fd-calendar-special-days: (
 
     // Years range selection mode
     &--arrow-left + &--arrow-right {
-      @include fd-set-margin-left(auto);
+      margin-inline-start: auto;
     }
 
     [class*='sap-icon'] {
@@ -340,7 +340,8 @@ $fd-calendar-special-days: (
       .#{$block}__text-wrapper {
         border: var(--fdCalendar_Text_Wrapper_Border);
         box-sizing: var(--fdCalendar_Text_Wrapper_Box_Sizing);
-        margin: var(--fdCalendar_Text_Wrapper_Margin);
+        margin-inline: var(--fdCalendar_Text_Wrapper_Margin);
+        margin-block: var(--fdCalendar_Text_Wrapper_Margin);
         height: var(--fdCalendar_Text_Wrapper_Height);
       }
 
@@ -370,7 +371,8 @@ $fd-calendar-special-days: (
 
     &-button {
       min-width: 100%;
-      padding: 0;
+      padding-inline: 0;
+      padding-block: 0;
     }
 
     .#{$block}__text {
@@ -388,7 +390,7 @@ $fd-calendar-special-days: (
 
     &--years,
     &--months {
-      padding-top: var(--fdCalendar_Item_Helper_Height);
+      padding-block-start: var(--fdCalendar_Item_Helper_Height);
 
       --fdCalendar_Item_Background: transparent;
     }

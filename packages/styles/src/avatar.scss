@@ -67,7 +67,8 @@ $block: #{$fd-namespace}-avatar;
     }
 
     @include fd-focus() {
-      padding: 0.125rem;
+      padding-block: 0.125rem;
+      padding-inline: 0.125rem;
     }
   }
 

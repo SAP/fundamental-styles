@@ -60,27 +60,13 @@ $fd-micro-process-flow-semantic-colors: (
 
 @mixin fd-set-padding-left-after($left: 0) {
   &::after {
-    padding-left: $left;
-  }
-
-  @include fd-rtl() {
-    &::after {
-      padding-left: 0;
-      padding-right: $left;
-    }
+    padding-inline-start: $left;
   }
 }
 
 @mixin fd-set-padding-right-before($right: 0) {
   &::before {
-    padding-right: $right;
-  }
-
-  @include fd-rtl() {
-    &::before {
-      padding-right: 0;
-      padding-left: $right;
-    }
+    padding-inline-end: $right;
   }
 }
 
@@ -173,7 +159,8 @@ $fd-micro-process-flow-semantic-colors: (
     @include fd-micro-process-flow-focus();
 
     cursor: pointer;
-    padding: 0 0.313rem;
+    padding-block: 0;
+    padding-inline: 0.313rem;
     font-size: var(--sapFontSize);
     color: var(--sapGroup_TitleTextColor);
     text-shadow: var(--sapContent_TextShadow);
@@ -268,12 +255,12 @@ $fd-micro-process-flow-semantic-colors: (
   &__connector {
     @include fd-reset();
     @include fd-flex-center();
-    @include fd-set-margin-left($fd-micro-process-flow-item-padding);
 
     flex-grow: 1;
     height: 100%;
     position: relative;
     min-width: var(--fdMicro_Process_Flow_Connector_Width);
+    margin-inline-start: $fd-micro-process-flow-item-padding;
 
     &::before {
       content: "";
@@ -294,8 +281,14 @@ $fd-micro-process-flow-semantic-colors: (
         position: absolute;
         background: var(--sapNegativeElementColor);
         width: $fd-micro-process-flow-intermediary-indicator-width;
-        margin-left: -$fd-micro-process-flow-intermediary-indicator-width * 0.5;
+        margin-inline-start: -$fd-micro-process-flow-intermediary-indicator-width * 0.5;
         z-index: 2;
+      }
+
+      @include fd-rtl() {
+        &::after {
+          margin-inline-end: -$fd-micro-process-flow-intermediary-indicator-width * 0.5;
+        }
       }
     }
 

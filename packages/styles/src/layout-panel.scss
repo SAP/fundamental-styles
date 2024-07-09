@@ -25,7 +25,8 @@ $fd-layout-panel-element-border: solid 0.0625rem var(--sapGroup_TitleBorderColor
       justify-content: space-between;
     }
 
-    padding: 1rem;
+    padding-inline: 1rem;
+    padding-block: 1rem;
     min-height: 2.5rem;
     border-bottom: $fd-layout-panel-element-border;
   }
@@ -38,7 +39,7 @@ $fd-layout-panel-element-border: solid 0.0625rem var(--sapGroup_TitleBorderColor
     @include fd-reset();
 
     flex: 1;
-    margin-bottom: 0;
+    margin-block-end: 0;
     color: var(--sapGroup_TitleTextColor);
     font-size: var(--sapGroup_TitleFontSize);
 
@@ -74,15 +75,15 @@ $fd-layout-panel-element-border: solid 0.0625rem var(--sapGroup_TitleBorderColor
   &__filters {
     @include fd-reset();
 
-    padding: 0.5rem 1rem;
+    padding-inline: 1rem;
+    padding-block: 0.5rem;
     transition: all 0.15s ease-in;
     border-bottom: $fd-layout-panel-element-border;
 
     &.is-hidden {
       max-height: 0;
-      padding-top: 0;
+      padding-block: 0 0;
       overflow: hidden;
-      padding-bottom: 0;
     }
   }
 
@@ -90,12 +91,14 @@ $fd-layout-panel-element-border: solid 0.0625rem var(--sapGroup_TitleBorderColor
     @include fd-reset();
 
     height: 100%;
-    padding: 1rem;
     display: block;
+    padding-inline: 1rem;
+    padding-block: 1rem;
 
     &--full-bleed,
     &--bleed {
-      padding: 0;
+      padding-inline: 0;
+      padding-block: 0;
     }
 
     > :first-child {
@@ -103,7 +106,7 @@ $fd-layout-panel-element-border: solid 0.0625rem var(--sapGroup_TitleBorderColor
     }
 
     > :last-child {
-      margin-bottom: 0;
+      margin-block-end: 0;
     }
   }
 
@@ -111,7 +114,8 @@ $fd-layout-panel-element-border: solid 0.0625rem var(--sapGroup_TitleBorderColor
     @include fd-reset();
     @include fd-flex-horizontal-center();
 
-    padding: 0.5rem 1rem;
+    padding-block: 0.5rem;
+    padding-inline: 1rem;
     border-top: $fd-layout-panel-element-border;
 
     &--end {

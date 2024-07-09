@@ -6,8 +6,8 @@
   &__item-counter {
     @include fd-reset();
     @include fd-ellipsis();
-    @include fd-set-margin-left(1rem);
 
+    margin-inline-start: 1rem;
     color: var(--sapContent_MarkerTextColor);
   }
 }

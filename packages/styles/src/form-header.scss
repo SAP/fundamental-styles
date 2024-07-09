@@ -4,7 +4,6 @@
 @import './mixins';
 
 $block: #{$fd-namespace}-form-header;
-$fd-form-header-padding-x: 1rem !default;
 
 .#{$block} {
   @include fd-reset();
@@ -13,8 +12,7 @@ $fd-form-header-padding-x: 1rem !default;
   width: 100%;
   height: 2.75rem;
   background-color: var(--sapGroup_TitleBackground);
-  padding-left: $fd-form-header-padding-x;
-  padding-right: $fd-form-header-padding-x;
+  padding-inline: 1rem;
   box-shadow: 0 var(--fdFormHeader_Border_Width) 0 var(--sapGroup_TitleBorderColor);
 
   &__text {

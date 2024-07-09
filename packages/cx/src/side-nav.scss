@@ -57,7 +57,8 @@ $fd-side-nav-border-radius: 1rem;
     &::before {
       content: " ";
       display: block;
-      margin: 0.25rem 0.5rem var(--fdSideNav_Utility_Margin_Bottom) 0.5rem;
+      margin-block: 0.25rem var(--fdSideNav_Utility_Margin_Bottom);
+      margin-inline: 0.5rem;
       border-top: 0.0625rem solid var(--sapList_HeaderBorderColor);
     }
   }
@@ -96,7 +97,8 @@ $fd-side-nav-border-radius: 1rem;
   }
 
   &__button {
-    margin: 0.25rem 0 !important;
+    margin-block: 0.25rem !important;
+    margin-inline: 0 !important;
   }
 
   &__input-group {
@@ -104,7 +106,8 @@ $fd-side-nav-border-radius: 1rem;
 
     @include fd-set-width($fd-side-nav-search-width);
 
-    margin: 0.75rem 0.5rem !important;
+    margin-block: 0.75rem !important;
+    margin-inline: 0.5rem !important;
   }
 
   @include fd-compact-or-condensed() {
@@ -156,7 +159,7 @@ $fd-side-nav-border-radius: 1rem;
           right: 0;
           content: "\e066";
           position: absolute;
-          padding-right: 0.25rem;
+          padding-inline-end: 0.25rem;
           font-family: SAP-icons;
           font-size: var(--sapFontSmallSize);
         }
@@ -167,7 +170,7 @@ $fd-side-nav-border-radius: 1rem;
 
             left: 0;
             right: auto;
-            transform: rotate(180deg);
+            transform: rotateY(180deg) translateY(-50%);
           }
         }
       }

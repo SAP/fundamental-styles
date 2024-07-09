@@ -10,22 +10,14 @@ $fd-quick-view-group-item-indent: 0.75rem;
 .#{$block} {
   @include fd-reset();
 
-  @include fd-rtl() {
-    .#{$fd-namespace}-bar--header-with-subheader {
-      .#{$fd-namespace}-avatar {
-        margin-right: 0;
-        margin-left: $fd-quick-view-avatar-indent;
-      }
-    }
-  }
-
   display: inherit;
   min-width: 20rem;
 
   &__content {
     @include fd-reset();
 
-    padding: 1rem;
+    padding-block: 1rem;
+    padding-inline: 1rem;
     background-color: var(--sapGroup_ContentBackground);
 
     .#{$fd-namespace}-form-item {
@@ -33,14 +25,15 @@ $fd-quick-view-group-item-indent: 0.75rem;
     }
 
     .#{$fd-namespace}-bar {
-      padding: 0;
+      padding-inline: 0;
+      padding-block: 0;
 
       &--header-with-subheader {
         height: auto;
-        padding-bottom: $fd-quick-view-group-item-indent;
+        padding-block-end: $fd-quick-view-group-item-indent;
 
         .#{$fd-namespace}-avatar {
-          margin-right: $fd-quick-view-avatar-indent;
+          margin-inline-end: $fd-quick-view-avatar-indent;
         }
 
         .#{$fd-namespace}-bar {
@@ -74,19 +67,19 @@ $fd-quick-view-group-item-indent: 0.75rem;
 
   .#{$fd-namespace}-input:not(input) {
     height: auto;
-    padding: 0;
+    padding-inline: 0;
+    padding-block: 0;
     border: none;
   }
 
   .#{$fd-namespace}-dialog__body & {
     &__content {
-      padding-top: 0;
-      padding-bottom: 0;
+      padding-block: 0 0;
     }
   }
 
   .#{$fd-namespace}-form-item {
-    padding-top: $fd-quick-view-group-item-indent;
+    padding-block-start: $fd-quick-view-group-item-indent;
 
     .#{$fd-namespace}-link {
       align-self: flex-start;
@@ -94,7 +87,7 @@ $fd-quick-view-group-item-indent: 0.75rem;
   }
 
   .#{$fd-namespace}-form-group__header + .#{$fd-namespace}-form-item {
-    padding-top: 0;
+    padding-block-start: 0;
   }
 
   .#{$fd-namespace}-title {

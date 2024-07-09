@@ -6,25 +6,21 @@
   &--pop-in {
     .#{$block}__text {
       color: inherit;
-      margin-bottom: 0.5rem;
+      margin-block-end: 0.5rem;
 
       &--title {
         font-weight: bold;
       }
 
       @include fd-last-child() {
-        margin-bottom: 0;
+        margin-block-end: 0;
       }
     }
 
     .#{$block}__cell {
       &--checkbox {
         + .#{$block}__cell {
-          @include fd-set-padding-left(0);
-
-          @include fd-rtl() {
-            padding-left: 0.5rem;
-          }
+          padding-inline-start: 0;
         }
       }
     }
@@ -44,8 +40,7 @@
 
       &--main {
         .#{$block}__cell {
-          padding-top: 0.25rem;
-          padding-bottom: 0.25rem;
+          padding-block: 0.25rem 0.25rem;
           border-bottom-color: transparent;
         }
 
@@ -101,8 +96,7 @@
 
       &--secondary {
         .#{$block}__cell {
-          padding-top: 0.5rem;
-          padding-bottom: 0.5rem;
+          padding-block: 0.5rem 0.5rem;
         }
 
         @include fd-hover() {

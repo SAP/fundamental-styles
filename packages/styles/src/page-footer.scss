@@ -14,13 +14,9 @@ $fd-page-footer-sizes: (
 .#{$block} {
   @include fd-reset();
 
-  $fd-footer-margin-right: 1.5rem !default;
-  $fd-footer-label-padding-top: 0.75rem !default;
-
   background: var(--sapBaseColor);
   position: relative;
-  padding-top: 1.5rem;
-  padding-bottom: 2rem;
+  padding-block: 1.5rem 2rem;
 
   &__logo {
     @include fd-reset();
@@ -36,21 +32,16 @@ $fd-page-footer-sizes: (
     word-break: break-all;
     width: 70%;
 
-    &-item {
-      margin-right: $fd-footer-margin-right;
-
-      @include fd-rtl() {
-        margin-right: 0;
-        margin-left: $fd-footer-margin-right;
-      }
+    .#{$block}__row-item {
+      margin-inline-end: 1.5rem;
     }
 
-    &-image {
+    .#{$block}__row-image {
       display: block;
     }
 
     &:not(:first-child) {
-      padding-top: 0.25rem;
+      padding-block-start: 0.25rem;
     }
   }
 
@@ -71,12 +62,12 @@ $fd-page-footer-sizes: (
   // sizes
   @each $set-name, $size-set in $fd-page-footer-sizes {
     &--#{$set-name} {
-      padding-right: map.get($size-set, 'padding');
-      padding-left: map.get($size-set, 'padding');
+      padding-inline: map.get($size-set, 'padding');
+      
       .#{$block}__container {
         @include fd-flex(column);
 
-        padding-top: $fd-footer-label-padding-top;
+        padding-block-start: 0.75rem;
       }
     }
   }
@@ -84,22 +75,22 @@ $fd-page-footer-sizes: (
   @media (width <= 768px) {
 
     .#{$block}__row {
-      margin-right: 0;
+      margin-inline-end: 0;
       width: 100%;
 
       &:not(:first-child) {
-        padding-top: 0;
+        padding-block-start: 0;
       }
 
       &-item {
-        padding-top: 0.25rem;
+        padding-block-start: 0.25rem;
       }
     }
 
     .#{$block}__text {
       width: 90%;
       text-align: left;
-      padding-top: $fd-footer-label-padding-top;
+      padding-block-start: 0.75rem;
     }
 
     .#{$block}__container {

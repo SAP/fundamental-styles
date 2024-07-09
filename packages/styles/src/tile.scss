@@ -162,19 +162,19 @@ $fd-line-tile-badge-horizontal-spacing: 0.375rem !default;
   &__header {
     @include fd-set-height(3.625rem);
 
-    margin-bottom: $fd-tile-inner-padding;
+    margin-block-end: $fd-tile-inner-padding;
   }
 
   &__content {
     @include fd-set-height(3.875rem);
 
-    margin-bottom: $fd-tile-inner-padding;
+    margin-block-end: $fd-tile-inner-padding;
   }
 
   &__header-content {
     @include fd-set-height(7.75rem);
 
-    margin-bottom: $fd-tile-inner-padding;
+    margin-block-end: $fd-tile-inner-padding;
 
     .#{$block}__title {
       @include fd-line-clamp(4);
@@ -388,7 +388,8 @@ $fd-line-tile-badge-horizontal-spacing: 0.375rem !default;
   }
 
   &--slide {
-    padding: 0;
+    padding-inline: 0;
+    padding-block: 0;
     display: flex;
     align-items: flex-end;
 
@@ -417,7 +418,8 @@ $fd-line-tile-badge-horizontal-spacing: 0.375rem !default;
       @include fd-set-width(3rem);
 
       display: none;
-      padding: 0.5rem;
+      padding-block: 0.5rem;
+      padding-inline: 0.5rem;
       position: absolute;
       background: transparent;
       top: $fd-tile-toggle-button-position;
@@ -479,9 +481,8 @@ $fd-line-tile-badge-horizontal-spacing: 0.375rem !default;
       max-width: 100%;
       background-color: var(--fdSlide_Tile_Background_Color);
       opacity: var(--fdSlide_Tile_Background_Opacity);
-      padding-top: $fd-tile-inner-padding;
-      padding-left: $fd-tile-padding;
-      padding-right: $fd-tile-padding;
+      padding-block-start: $fd-tile-inner-padding;
+      padding-inline: $fd-tile-padding;
       border-bottom-left-radius: $fd-tile-border-radius;
       border-bottom-right-radius: $fd-tile-border-radius;
     }
@@ -506,7 +507,7 @@ $fd-line-tile-badge-horizontal-spacing: 0.375rem !default;
       @include fd-flex-center();
       @include fd-set-height(0.5rem);
 
-      margin-bottom: 0.125rem;
+      margin-block-end: 0.125rem;
       margin-top: 0.375rem;
     }
 
@@ -531,7 +532,8 @@ $fd-line-tile-badge-horizontal-spacing: 0.375rem !default;
       }
 
       &:last-child {
-        margin: 0;
+        margin-inline: 0;
+        margin-block: 0;
       }
     }
 
@@ -540,7 +542,7 @@ $fd-line-tile-badge-horizontal-spacing: 0.375rem !default;
         @include fd-set-height(5.25rem);
         @include fd-set-paddings-x-equal($fd-tile-small-padding);
 
-        padding-top: 0.1875rem;
+        padding-block-start: 0.1875rem;
       }
 
       .#{$block}__title,
@@ -592,7 +594,8 @@ $fd-line-tile-badge-horizontal-spacing: 0.375rem !default;
       align-items: flex-start;
       justify-content: flex-end;
       position: absolute;
-      padding: 0;
+      padding-inline: 0;
+      padding-block: 0;
       top: $fd-tile-close-button-position;
       right: $fd-tile-close-button-position;
       z-index: 5;
@@ -631,15 +634,13 @@ $fd-line-tile-badge-horizontal-spacing: 0.375rem !default;
       position: absolute;
       bottom: 0;
       right: 0;
-      margin-bottom: $fd-tile-action-indicator-offset;
-      margin-right: $fd-tile-action-indicator-offset;
+      margin-block-end: $fd-tile-action-indicator-offset;
+      margin-inline-end: $fd-tile-action-indicator-offset;
       z-index: 5;
 
       @include fd-rtl() {
         right: auto;
         left: 0;
-        margin-right: auto;
-        margin-left: $fd-tile-action-indicator-offset;
       }
 
       @include fd-icon-element-base() {
@@ -683,7 +684,8 @@ $fd-line-tile-badge-horizontal-spacing: 0.375rem !default;
     border: 0.0625rem solid var(--sapTile_BorderColor);
     background-color: var(--sapTile_Background);
     box-shadow: var(--sapContent_Shadow0);
-    padding: 0.5rem;
+    padding-block: 0.5rem;
+    padding-inline: 0.5rem;
 
     &--list {
       flex-direction: column;
@@ -780,14 +782,15 @@ $fd-line-tile-badge-horizontal-spacing: 0.375rem !default;
     }
 
     &:last-child {
-      margin-right: 0;
+      margin-inline-end: 0;
     }
 
     .#{$block}__header {
       @include fd-set-height(100%);
       @include fd-flex-vertical-center();
 
-      margin: 0;
+      margin-inline: 0;
+      margin-block: 0;
     }
 
     .#{$block}__title-container {
@@ -816,12 +819,7 @@ $fd-line-tile-badge-horizontal-spacing: 0.375rem !default;
     }
 
     &.#{$block}--action {
-      padding-right: 0;
-
-      @include fd-rtl() {
-        padding-left: 0;
-        padding-right: $fd-line-tile-horizontal-padding;
-      }
+      padding-inline-end: 0;
 
       .#{$block}__action-container {
         @include fd-reset();
@@ -834,11 +832,13 @@ $fd-line-tile-badge-horizontal-spacing: 0.375rem !default;
         @include reset-position-absolute();
         @include fd-flex-center();
 
-        padding: 0 0.25rem;
+        padding-block: 0;
+        padding-inline: 0.25rem;
       }
 
       .#{$block}__action-indicator {
-        margin: 0;
+        margin-inline: 0;
+        margin-block: 0;
       }
 
       .#{$block}__action-indicator,
@@ -854,12 +854,10 @@ $fd-line-tile-badge-horizontal-spacing: 0.375rem !default;
     .#{$fd-namespace}-badge {
       @include reset-position-absolute();
 
-      margin-right: $fd-line-tile-badge-horizontal-spacing;
+      margin-inline-end: $fd-line-tile-badge-horizontal-spacing;
       flex-shrink: 0;
 
       @include fd-rtl() {
-        margin-left: $fd-line-tile-badge-horizontal-spacing;
-        margin-right: 0;
         left: 0;
         right: 0;
       }

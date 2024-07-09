@@ -47,8 +47,7 @@ $button: #{$fd-namespace}-button;
 
   .#{$block}__link,
   .#{$block}__content {
-    padding-left: var(--fdNestedList_Item_Padding_Left);
-    padding-right: var(--fdNestedList_Item_Padding_Right);
+    padding-inline: var(--fdNestedList_Item_Padding_Left) var(--fdNestedList_Item_Padding_Right);
     border-bottom: none;
 
     @include fd-selected() {
@@ -56,16 +55,14 @@ $button: #{$fd-namespace}-button;
     }
 
     &.has-child {
-      padding-left: 0;
-      padding-right: 0;
+      padding-inline: 0 0;
     }
   }
 
   .#{$block}__content {
     &.has-child {
       > .#{$block}__title {
-        padding-left: var(--fdNestedList_Item_Padding_Left);
-        padding-right: var(--fdNestedList_Item_Padding_Right);
+        padding-inline: var(--fdNestedList_Item_Padding_Left) var(--fdNestedList_Item_Padding_Right);
       }
     }
   }
@@ -75,16 +72,6 @@ $button: #{$fd-namespace}-button;
       $paddingLeft: ($i - 2) + 2.75rem;
 
       @include fd-nested-level-padding($paddingLeft, 0);
-    }
-  }
-
-  @include fd-rtl() {
-    @for $i from 2 through 10 {
-      .level-#{$i} {
-        $paddingRight: ($i - 2) + 2.75rem;
-
-        @include fd-nested-level-padding(0, $paddingRight);
-      }
     }
   }
 
@@ -200,7 +187,8 @@ $button: #{$fd-namespace}-button;
 
     &.has-child {
       justify-content: space-between;
-      padding: 0;
+      padding-inline: 0;
+      padding-block: 0;
 
       > .#{$block}__link,
       > .#{$block}__item {
@@ -215,11 +203,7 @@ $button: #{$fd-namespace}-button;
         height: 100%;
 
         > .#{$block}__title {
-          padding-right: 0;
-
-          @include fd-rtl() {
-            padding-left: 0;
-          }
+          padding-inline-end: 0;
         }
       }
     }
@@ -265,23 +249,13 @@ $button: #{$fd-namespace}-button;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    padding-right: 1rem;
+    padding-inline-end: 1rem;
     display: flex;
     align-items: center;
+    text-align: start;
 
     &:first-child {
-      padding-left: 2.75rem;
-    }
-
-    @include fd-rtl() {
-      text-align: right;
-      padding-right: 0;
-      padding-left: 1rem;
-
-      &:first-child {
-        padding-right: 2.75rem;
-        padding-left: 0;
-      }
+      padding-inline-start: 2.75rem;
     }
   }
 
@@ -297,8 +271,7 @@ $button: #{$fd-namespace}-button;
     font-size: var(--sapFontSize);
     font-weight: bold;
     line-height: 2rem;
-    padding-right: 1rem;
-    padding-left: 1rem;
+    padding-inline: 1rem;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -317,13 +290,14 @@ $button: #{$fd-namespace}-button;
     .#{$block}__link,
     .#{$block}__content {
       &.has-child {
-        padding: 0;
+        padding-inline: 0;
+        padding-block: 0;
       }
     }
 
     .#{$block}__title {
       &:first-child {
-        padding-left: 0;
+        padding-inline-start: 0;
       }
     }
 
@@ -338,39 +312,6 @@ $button: #{$fd-namespace}-button;
         $paddingLeft: ($i - 2) + 2.75rem;
 
         @include fd-nested-level-padding($paddingLeft, 0);
-      }
-    }
-
-    @include fd-rtl() {
-      --fdNestedList_Item_Padding_Left: 0;
-      --fdNestedList_Item_Padding_Right: 1rem;
-      .#{$block}__link,
-      .#{$block}__content {
-        &.has-child {
-          padding-right: 0;
-        }
-
-        &:not(.has-child) {
-          .#{$block}__title {
-            &:first-child {
-              padding-right: 0;
-            }
-          }
-        }
-      }
-
-      @for $i from 2 through 10 {
-        .level-#{$i} {
-          $paddingRight: 1rem * $i;
-
-          @include fd-nested-level-padding(0, $paddingRight);
-        }
-
-        &.level-#{$i} {
-          $paddingRight: ($i - 2) + 2.75rem;
-
-          @include fd-nested-level-padding(0, $paddingRight);
-        }
       }
     }
   }

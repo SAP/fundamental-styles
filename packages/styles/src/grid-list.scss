@@ -146,19 +146,21 @@ $fd-grid-list-highlight: (
       @include fd-flex();
 
       height: 100%;
-      padding: 1rem;
+      padding-inline: 1rem;
+      padding-block: 1rem;
       word-break: break-word;
       flex-wrap: wrap;
 
       &--no-padding {
-        padding: 0;
+        padding-inline: 0;
+        padding-block: 0;
       }
 
       &-actions {
         @include fd-reset();
 
         flex-basis: 100%;
-        margin-top: 1rem;
+        margin-block-start: 1rem;
         order: 1;
       }
     }
@@ -170,16 +172,15 @@ $fd-grid-list-highlight: (
       flex: 0 0 100%;
 
       + .#{$block-item}-content {
-        padding-top: 1rem;
+        padding-block-start: 1rem;
       }
     }
 
     &-image {
-      @include fd-set-margin-right(0.75rem);
+      margin-inline-end: 0.75rem;
 
       + .#{$block-item}-header,
       + .#{$block-item}-content {
-        // 3rem for xs avatar, 0.75rem for margin
         max-width: calc(100% - 3rem - 0.75rem);
       }
     }
@@ -190,7 +191,7 @@ $fd-grid-list-highlight: (
       white-space: normal;
       font-size: var(--sapFontLargeSize);
       color: var(--sapList_TextColor);
-      margin-top: 0.125rem;
+      margin-block-start: 0.125rem;
     }
 
     &-subtitle {
@@ -198,8 +199,7 @@ $fd-grid-list-highlight: (
 
       display: inline-block;
       color: var(--sapContent_LabelColor);
-      margin-top: 0.5rem;
-      margin-bottom: 0.125rem;
+      margin-block: 0.5rem 0.125rem;
     }
 
     &-content {
@@ -215,14 +215,12 @@ $fd-grid-list-highlight: (
 
     .#{$block-item}-navigation-indicator {
       @include fd-flex-center();
-      @include fd-set-margin-right(-1rem);
 
-      margin-left: 0;
+      margin-inline: 0 -1rem;
       width: 2.5rem;
       color: var(--sapContent_NonInteractiveIconColor);
 
       @include fd-rtl() {
-        margin-right: 0;
         transform: rotate(180deg);
       }
     }
@@ -235,14 +233,14 @@ $fd-grid-list-highlight: (
     @include fd-fiori-focus();
 
     height: 2rem;
-    margin-top: 0.75rem;
+    margin-block-start: 0.75rem;
     color: var(--sapList_GroupHeaderTextColo);
     font-size: var(--sapFontHeader5Size);
     font-weight: bold;
     line-height: 2rem;
 
     &--no-margin {
-      margin-top: 0;
+      margin-block-start: 0;
     }
   }
 
@@ -251,7 +249,8 @@ $fd-grid-list-highlight: (
     @include fd-fiori-focus();
 
     cursor: pointer;
-    padding: 0.813rem;
+    padding-block: 0.813rem;
+    padding-inline: 0.813rem;
     background-color: var(--sapGroup_ContentBackground);
     border-radius: $fd-grid-list-border-radius;
     box-shadow: $fd-grid-list-item-box-shadow;
@@ -266,7 +265,8 @@ $fd-grid-list-highlight: (
     &-description {
       @include fd-reset();
 
-      margin: 0.813rem 0 0;
+      margin-block: 0.813rem 0;
+      margin-inline: 0;
     }
 
     &-title,
@@ -331,7 +331,7 @@ $fd-grid-list-highlight: (
           color: var(--sapContent_LabelColor);
 
           @include fd-empty() {
-            @include fd-set-margin-left(-0.5rem);
+            margin-inline-start: -0.5rem;
           }
         }
       }
@@ -370,7 +370,7 @@ $fd-grid-list-highlight: (
         order: 1;
 
         @include fd-empty() {
-          @include fd-set-margins-x(0.5rem, -0.5rem);
+          margin-inline: 0.5rem -0.5rem;
         }
       }
     }
