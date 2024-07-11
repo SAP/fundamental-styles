@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.37.2-rc.0](https://github.com/SAP/fundamental-styles/compare/v0.37.1...v0.37.2-rc.0) (2024-07-11)
+
+### Bug Fixes
+
+-   **common-css:** optimize paddings and margins usage [ci visual] ([#5490](https://github.com/SAP/fundamental-styles/issues/5490)) ([33804e2](https://github.com/SAP/fundamental-styles/commit/33804e21934507744f2837d219e1038f1d82bfba))
+
 ## [0.37.1](https://github.com/SAP/fundamental-styles/compare/v0.37.1-rc.5...v0.37.1) (2024-07-11)
 
 **Note:** Version bump only for package fundamental-styles
