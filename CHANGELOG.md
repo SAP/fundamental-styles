@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.37.1-rc.5](https://github.com/SAP/fundamental-styles/compare/v0.37.1-rc.4...v0.37.1-rc.5) (2024-07-11)
+
+### Bug Fixes
+
+-   add belize preview ([#5492](https://github.com/SAP/fundamental-styles/issues/5492)) ([2612764](https://github.com/SAP/fundamental-styles/commit/261276403ed13d46bfdf3cf3a3648d19217d1e6c))
+
 ## [0.37.1-rc.4](https://github.com/SAP/fundamental-styles/compare/v0.37.1-rc.3...v0.37.1-rc.4) (2024-07-08)
 
 ### Features
