@@ -27,3 +27,4 @@ introduction.stories.mdx
 !.yarn/versions
 
 .nx/cache
+.nx/workspace-data
