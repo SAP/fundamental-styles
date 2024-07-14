@@ -4135,29 +4135,22 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/builder-vite@npm:8.1.6":
-  version: 8.1.6
-  resolution: "@storybook/builder-vite@npm:8.1.6"
+"@storybook/builder-vite@npm:8.2.2":
+  version: 8.2.2
+  resolution: "@storybook/builder-vite@npm:8.2.2"
   dependencies:
-    "@storybook/channels": "npm:8.1.6"
-    "@storybook/client-logger": "npm:8.1.6"
-    "@storybook/core-common": "npm:8.1.6"
-    "@storybook/core-events": "npm:8.1.6"
-    "@storybook/csf-plugin": "npm:8.1.6"
-    "@storybook/node-logger": "npm:8.1.6"
-    "@storybook/preview": "npm:8.1.6"
-    "@storybook/preview-api": "npm:8.1.6"
-    "@storybook/types": "npm:8.1.6"
+    "@storybook/csf-plugin": "npm:8.2.2"
     "@types/find-cache-dir": "npm:^3.2.1"
     browser-assert: "npm:^1.2.1"
     es-module-lexer: "npm:^1.5.0"
-    express: "npm:^4.17.3"
+    express: "npm:^4.19.2"
     find-cache-dir: "npm:^3.0.0"
     fs-extra: "npm:^11.1.0"
     magic-string: "npm:^0.30.0"
     ts-dedent: "npm:^2.0.0"
   peerDependencies:
     "@preact/preset-vite": "*"
+    storybook: ^8.2.2
     typescript: ">= 4.3.x"
     vite: ^4.0.0 || ^5.0.0
     vite-plugin-glimmerx: "*"
@@ -4168,7 +4161,7 @@ __metadata:
       optional: true
     vite-plugin-glimmerx:
       optional: true
-  checksum: 10/3c729cc270eeb5964377452a39bbbbaabe5e183c2b3141771cf7e868161c5fb39c97bdd1ca20af3ae68cb6d1750ffac3343294ec7bf7af5bda4b24c097496af0
+  checksum: 10/d3c2a1901069d8cb73b08f3ebc9b88c8d42ac2da926a4ad9a7a0822ce2de9e4aee859b22a53eac133ade3155baca96844108fcd8cc527bdb0f80de48b3c5ecb8
   languageName: node
   linkType: hard
 
@@ -4400,6 +4393,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@storybook/csf-plugin@npm:8.2.2":
+  version: 8.2.2
+  resolution: "@storybook/csf-plugin@npm:8.2.2"
+  dependencies:
+    unplugin: "npm:^1.3.1"
+  peerDependencies:
+    storybook: ^8.2.2
+  checksum: 10/11a16d00832c13de4a1ed4ef9ad15dd7fc84715dfaa944edb4fe4eb7645d571067e8cd8aafeb7fbe142693ec4be85ae87ef209d595736eeff4b972f25cdd892d
+  languageName: node
+  linkType: hard
+
 "@storybook/csf-tools@npm:8.1.6":
   version: 8.1.6
   resolution: "@storybook/csf-tools@npm:8.1.6"
@@ -4466,20 +4470,31 @@ __metadata:
   linkType: hard
 
 "@storybook/html-vite@npm:^8.1.6":
-  version: 8.1.6
-  resolution: "@storybook/html-vite@npm:8.1.6"
+  version: 8.2.2
+  resolution: "@storybook/html-vite@npm:8.2.2"
   dependencies:
-    "@storybook/builder-vite": "npm:8.1.6"
-    "@storybook/core-server": "npm:8.1.6"
-    "@storybook/html": "npm:8.1.6"
-    "@storybook/node-logger": "npm:8.1.6"
-    "@storybook/types": "npm:8.1.6"
+    "@storybook/builder-vite": "npm:8.2.2"
+    "@storybook/html": "npm:8.2.2"
     magic-string: "npm:^0.30.0"
-  checksum: 10/6fffcd9190d0de3d81fc924eb29238b0ccde1e2d29b0ec69c48a151c09fde572b43ad8c2a044df05de538b0fa455a726e41c99b6838354e605acf9f054bb3e9c
+  peerDependencies:
+    storybook: ^8.2.2
+  checksum: 10/7558a71116d155f441a14c1c4b9db24ae6e8f63fece942bc7ef6f8205784bcc709dc6c401143a402594b8edf60cf493c5e15f6517738c95923777b759e890ad3
   languageName: node
   linkType: hard
 
-"@storybook/html@npm:8.1.6, @storybook/html@npm:^8.1.6":
+"@storybook/html@npm:8.2.2":
+  version: 8.2.2
+  resolution: "@storybook/html@npm:8.2.2"
+  dependencies:
+    "@storybook/global": "npm:^5.0.0"
+    ts-dedent: "npm:^2.0.0"
+  peerDependencies:
+    storybook: ^8.2.2
+  checksum: 10/701e915d9b41c6b8f7b89e8e64614688880c971ab24abc11ae83b6ddba970ec32384709315146b625a0571806ff396c7987bf41109b07ff1b2570f4bae3170eb
+  languageName: node
+  linkType: hard
+
+"@storybook/html@npm:^8.1.6":
   version: 8.1.6
   resolution: "@storybook/html@npm:8.1.6"
   dependencies:
@@ -4558,13 +4573,6 @@ __metadata:
     ts-dedent: "npm:^2.0.0"
     util-deprecate: "npm:^1.0.2"
   checksum: 10/8524c858f473939a1489b74553cc7ffe6db09bb1a22936c9e31093c7acd0bc5e5b87c56957852f67123062a77a2ba00f4c96cba931acb7e2d9330979c4661db1
-  languageName: node
-  linkType: hard
-
-"@storybook/preview@npm:8.1.6":
-  version: 8.1.6
-  resolution: "@storybook/preview@npm:8.1.6"
-  checksum: 10/dc4fc7271dd6aa76c57eccc1ad1a4ba667946ac276c82f305cda4993e198fbcc529ea85a706ddcca0fc8fd094a6981869ca168218112594a132788eeaea55b01
   languageName: node
   linkType: hard
 
@@ -10042,7 +10050,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"express@npm:^4.17.3":
+"express@npm:^4.17.3, express@npm:^4.19.2":
   version: 4.19.2
   resolution: "express@npm:4.19.2"
   dependencies:
