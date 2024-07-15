@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.37.2-rc.2](https://github.com/SAP/fundamental-styles/compare/v0.37.2-rc.1...v0.37.2-rc.2) (2024-07-15)
+
+### Bug Fixes
+
+-   **styles:** fix belize theming ([#5506](https://github.com/SAP/fundamental-styles/issues/5506)) ([9011aba](https://github.com/SAP/fundamental-styles/commit/9011aba9170c808df22d362413a4d82408ab153b))
+
 ## [0.37.2-rc.1](https://github.com/SAP/fundamental-styles/compare/v0.37.2-rc.0...v0.37.2-rc.1) (2024-07-11)
 
 **Note:** Version bump only for package fundamental-styles
