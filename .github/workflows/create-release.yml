@@ -15,7 +15,7 @@ env:
     NX_CLOUD_AUTH_TOKEN: ${{ secrets.NX_CLOUD_AUTH_TOKEN }}
 
 jobs:
-    create-release:
+    create_release:
         name: Run release
         runs-on: ubuntu-latest
         outputs:
@@ -103,7 +103,7 @@ jobs:
     gh_pages:
         name: Github Pages deploy
         runs-on: ubuntu-latest
-        needs: create-release
+        needs: create_release
         if: ${{ needs.create_release.outputs.npmTag == 'latest' }}
         steps:
             - name: Checkout
