@@ -3,7 +3,7 @@
 	"sId": "sap_horizon",
 	"sLabel": "SAP Morning Horizon",
 	"sDescription": "The SAP Horizon themes are recommended as basis for custom themes for Horizon.\nSAP Morning Horizon provides a color scheme suitable for normal working conditions.",
-	"sHelpLink": "https://experience.sap.com/fiori-design-web/theming",
+	"sHelpLink": "https://experience.sap.com/fiori-design-web/morning-horizon/",
 	"sVendor": "SAP",
 	"oExtends": "Base.baseLib.baseTheme",
 	"sTextDirections": "LTR,RTL",

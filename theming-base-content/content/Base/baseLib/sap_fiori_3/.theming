@@ -3,7 +3,7 @@
 	"sId": "sap_fiori_3",
 	"sLabel": "SAP Quartz Light",
 	"sDescription": "The SAP Quartz themes are recommended as basis for custom themes for Fiori 3.\nSAP Quartz Light provides a color scheme suitable for normal working conditions.",
-	"sHelpLink": "https://experience.sap.com/fiori-design-web/theming",
+	"sHelpLink": "https://experience.sap.com/fiori-design-web/quartz-light-colors/",
 	"sVendor": "SAP",
 	"oExtends": "Base.baseLib.sap_base_fiori",
 	"sTextDirections": "LTR,RTL",

@@ -3,7 +3,7 @@
 	"sId": "sap_fiori_3_hcb",
 	"sLabel": "SAP High Contrast Black (Quartz)",
 	"sDescription": "High Contrast themes provide high contrast ratio by default.",
-	"sHelpLink": "https://experience.sap.com/fiori-design-web/theming",
+	"sHelpLink": "https://experience.sap.com/fiori-design-web/theming/#accessibility",
 	"sVendor": "SAP",
 	"oExtends": "Base.baseLib.sap_fiori_3",
 	"sTextDirections": "LTR,RTL",

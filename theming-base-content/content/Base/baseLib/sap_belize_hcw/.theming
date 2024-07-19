@@ -3,7 +3,7 @@
 	"sId": "sap_belize_hcw",
 	"sLabel": "SAP High Contrast White (Belize)",
 	"sDescription": "High Contrast themes provide high contrast ratio by default.",
-	"sHelpLink": "https://experience.sap.com/fiori-design-web/theming",
+	"sHelpLink": "https://experience.sap.com/fiori-design-web/theming/#accessibility",
 	"sVendor": "SAP",
 	"oExtends": "Base.baseLib.sap_belize_hcb",
 	"sTextDirections": "LTR,RTL",

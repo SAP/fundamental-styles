@@ -3,7 +3,7 @@
 	"sId": "sap_horizon_dark",
 	"sLabel": "SAP Evening Horizon",
 	"sDescription": "The SAP Horizon themes are recommended as basis for custom themes for Horizon.\nSAP Evening Horizon provides a color scheme suitable for low lighted types of environment.",
-	"sHelpLink": "https://experience.sap.com/fiori-design-web/theming",
+	"sHelpLink": "https://experience.sap.com/fiori-design-web/evening-horizon/",
 	"sVendor": "SAP",
 	"oExtends": "Base.baseLib.sap_horizon",
 	"sTextDirections": "LTR,RTL",

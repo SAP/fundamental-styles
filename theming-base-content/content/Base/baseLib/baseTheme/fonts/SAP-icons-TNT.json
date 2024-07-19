@@ -1354,7 +1354,53 @@
 	"0xe10f": {
 		"names": ["build-code"],
 		"groups": ["status"],
-		"tags": ["app", "architecture", "enterprise", "application", "program", "build", "logo", "ide", "bas", "code"],
+		"tags": [
+			"app",
+			"architecture",
+			"enterprise",
+			"application",
+			"program",
+			"build",
+			"logo",
+			"ide",
+			"bas",
+			"code"
+		],
+		"rtl": "flip"
+	},
+	"0xe110": {
+		"names": ["business-application-studio"],
+		"groups": ["status"],
+		"tags": [
+			"bas",
+			"dev-space-manager",
+			"code",
+			"developer",
+			"pro-code",
+			"pro-developer",
+			"SAP-build"
+		],
+		"rtl": "flip"
+	},
+	"0xe111": {
+		"names": ["clone-from-git"],
+		"groups": ["status"],
+		"tags": [
+			"clone-project",
+			"clone",
+			"remote-repository",
+			"build-code",
+			"code",
+			"SAP-build",
+			"pro-developer",
+			"developer"
+		],
+		"rtl": "flip"
+	},
+	"0xe112": {
+		"names": ["business-accelerator"],
+		"groups": ["status"],
+		"tags": ["accelerator", "business-content", "business-accelerator"],
 		"rtl": "flip"
 	}
 }

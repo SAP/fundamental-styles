@@ -3,7 +3,7 @@
 	"sId": "sap_belize",
 	"sLabel": "SAP Belize",
 	"sDescription": "The SAP Belize theme is a light theme, but has some dark contrast areas such as the footer bar and the notifications in the Fiori launchpad.\nThe SAP Belize theme is the default theme for Fiori 2. However it can still be used for Fiori 3.",
-	"sHelpLink": "https://experience.sap.com/fiori-design-web/theming",
+	"sHelpLink": "https://experience.sap.com/fiori-design-web/colors/",
 	"sVendor": "SAP",
 	"oExtends": "Base.baseLib.sap_base_fiori",
 	"aBundled": [

@@ -8,7 +8,7 @@ This repository provides color, font and metric definitions of SAP themes to be 
 The SAP Theming Base Content contains all necessary data to connect to the SAP global theming infrastructure.
 The content exposes the central set of colors, metrics and resources of a theme which can be connected by HTML based UI frameworks to get the right values for their specific CSS.
 The consumption is done by the usage of parameter sets exposed in files of the Base Content.
-When a HTML based UI framework uses the exposed parameters,, it also benefits from the fact that it is  integrated in the branding tool of SAP, the [UI Theme Designer](https://cloudplatform.sap.com/capabilities/product-info.UI-Theme-Designer.1bb55da4-292a-4f33-8d97-49ba1d1638f0.html), allowing a customer to create his own custom theme based on SAP themes.
+When a HTML based UI framework uses the exposed parameters, it also benefits from the fact that it is  integrated in the branding tool of SAP, the [UI Theme Designer](https://cloudplatform.sap.com/capabilities/product-info.UI-Theme-Designer.1bb55da4-292a-4f33-8d97-49ba1d1638f0.html), allowing a customer to create his own custom theme based on SAP themes.
 
 ## Installation
 This repository contains all the source files and generated files a framework needs to connect to the theming infrastructure.

@@ -3,7 +3,7 @@
 	"sId": "sap_horizon_hcw",
 	"sLabel": "SAP High Contrast White (Horizon)",
 	"sDescription": "High Contrast themes provide high contrast ratio by default.",
-	"sHelpLink": "https://experience.sap.com/fiori-design-web/theming",
+	"sHelpLink": "https://experience.sap.com/fiori-design-web/theming/#accessibility",
 	"sVendor": "SAP",
 	"oExtends": "Base.baseLib.sap_horizon_hcb",
 	"sTextDirections": "LTR,RTL",

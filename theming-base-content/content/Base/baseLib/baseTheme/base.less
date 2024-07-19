@@ -1,11 +1,11 @@
 /**
-* Copyright (c) 2012-2023 SAP SE or an SAP affiliate company and Theming Base Content contributors. Licensed under the Apache License, Version 2.0 - see LICENSE.txt.
-* Theming Engine 1.23061.0
-* data:{"sModified":"2023-12-13T07:44:03Z"}
+* Copyright (c) 2012-2024 SAP SE or an SAP affiliate company and Theming Base Content contributors. Licensed under the Apache License, Version 2.0 - see LICENSE.txt.
+* Theming Engine 14.0.2
+* data:{"sModified":"2024-07-15T08:44:59Z"}
 */
 
 
-/******************* FILE /Base/baseLib/baseTheme/base.less (Version 11.10.0) *******************/
+/******************* FILE /Base/baseLib/baseTheme/base.less (Version 11.17.1) *******************/
 
 
 // [Label "Brand Color"]
@@ -1513,6 +1513,15 @@
 // [Type "color"]
 @sapShell_NeutralColor: @sapDefault_Color;
 
+// [Label "Shell Assistant Foreground Color"]
+// [Description "The foreground color of the SAP assistant (Joule) within the shell bar."]
+// [TranslationKey "sapShell_Assistant_FgClr"]
+// [Tags "Base", "Shell", "Assistant", "Color", "Protected"]
+// [Protected "true"]
+// [Category "Shell"]
+// [Type "color"]
+@sapShell_Assistant_ForegroundColor: @sapDefault_Color;
+
 // [Label "Shell Category 1 Background Color"]
 // [Description "The background color of shell elements of category 1."]
 // [Tags "Base", "Shell", "Color", "Protected"]
@@ -2056,6 +2065,152 @@
 // [Category "Shell", "Category"]
 // [Type "boxShadow"]
 @sapShell_Category_16_TextShadow: @sapDefault_Color;
+
+// [Label "Assistant Color"]
+// [Description "The color of the SAP assistant (Joule)."]
+// [Tags "Base", "Assistant", "Color", "Protected"]
+// [Protected "true"]
+// [Category "Assistant"]
+// [Type "color"]
+@sapAssistant_Color1: @sapDefault_Color;
+
+// [Label "Assistant Color 2"]
+// [Description "Color 2 of the SAP assistant (Joule)."]
+// [Tags "Base", "Assistant", "Color", "Protected"]
+// [Protected "true"]
+// [Category "Assistant"]
+// [Type "color"]
+@sapAssistant_Color2: @sapDefault_Color;
+
+// [Label "Assistant Background Gradient"]
+// [Description "The gradient of the SAP assistant (Joule)."]
+// [Tags "Base", "Assistant", "Image", "Protected"]
+// [Protected "true"]
+// [Category "Assistant"]
+// [Type "image"]
+@sapAssistant_BackgroundGradient: @sapDefault_URI;
+
+// [Label "Assistant Background"]
+// [Description "The background color of the SAP assistant (Joule)."]
+// [Tags "Base", "Assistant", "Color", "Protected"]
+// [Protected "true"]
+// [Category "Assistant"]
+// [Type "color"]
+@sapAssistant_Background: @sapDefault_Color;
+
+// [Label "Assistant Border Color"]
+// [Description "The border color of the SAP assistant (Joule)."]
+// [Tags "Base", "Assistant", "Color", "Protected"]
+// [Protected "true"]
+// [Category "Assistant"]
+// [Type "color"]
+@sapAssistant_BorderColor: @sapDefault_Color;
+
+// [Label "Assistant Text Color"]
+// [Description "The text color of the SAP assistant (Joule)."]
+// [Tags "Base", "Assistant", "Color", "Protected"]
+// [Protected "true"]
+// [Category "Assistant"]
+// [Type "color"]
+@sapAssistant_TextColor: @sapDefault_Color;
+
+// [Label "Assistant Hover Background"]
+// [Description "The hover state background color of the SAP assistant (Joule)."]
+// [Tags "Base", "Assistant", "Color", "Protected"]
+// [Protected "true"]
+// [Category "Assistant"]
+// [Type "color"]
+@sapAssistant_Hover_Background: @sapDefault_Color;
+
+// [Label "Assistant Hover Border Color"]
+// [Description "The hover state border color of the SAP assistant (Joule)."]
+// [Tags "Base", "Assistant", "Color", "Protected"]
+// [Protected "true"]
+// [Category "Assistant"]
+// [Type "color"]
+@sapAssistant_Hover_BorderColor: @sapDefault_Color;
+
+// [Label "Assistant Hover Text Color"]
+// [Description "The hover state text color of the SAP assistant (Joule)."]
+// [Tags "Base", "Assistant", "Color", "Protected"]
+// [Protected "true"]
+// [Category "Assistant"]
+// [Type "color"]
+@sapAssistant_Hover_TextColor: @sapDefault_Color;
+
+// [Label "Assistant Active Background Color"]
+// [Description "The active state background color of the SAP assistant (Joule)."]
+// [Tags "Base", "Assistant", "Color", "Protected"]
+// [Protected "true"]
+// [Category "Assistant"]
+// [Type "color"]
+@sapAssistant_Active_Background: @sapDefault_Color;
+
+// [Label "Assistant Active Border Color"]
+// [Description "The active state border color of the SAP assistant (Joule)."]
+// [Tags "Base", "Assistant", "Color", "Protected"]
+// [Protected "true"]
+// [Category "Assistant"]
+// [Type "color"]
+@sapAssistant_Active_BorderColor: @sapDefault_Color;
+
+// [Label "Assistant Active Text Color"]
+// [Description "The active state text color of the SAP assistant (Joule)."]
+// [Tags "Base", "Assistant", "Color", "Protected"]
+// [Protected "true"]
+// [Category "Assistant"]
+// [Type "color"]
+@sapAssistant_Active_TextColor: @sapDefault_Color;
+
+// [Label "Assistant Question Background Color"]
+// [Description "The question background color used in the SAP assistant (Joule)."]
+// [Tags "Base", "Assistant", "Color", "Protected"]
+// [Protected "true"]
+// [Category "Assistant"]
+// [Type "color"]
+// [TranslationKey "sapAssistant_Question_Bg"]
+@sapAssistant_Question_Background: @sapDefault_Color;
+
+// [Label "Assistant Question Border Color"]
+// [Description "The question border color used in the SAP assistant (Joule)."]
+// [Tags "Base", "Assistant", "Color", "Protected"]
+// [Protected "true"]
+// [Category "Assistant"]
+// [Type "color"]
+// [TranslationKey "sapAssistant_Question_BrdClr"]
+@sapAssistant_Question_BorderColor: @sapDefault_Color;
+
+// [Label "Assistant Question Text Color"]
+// [Description "The question text color used in the SAP assistant (Joule)."]
+// [Tags "Base", "Assistant", "Color", "Protected"]
+// [Protected "true"]
+// [Category "Assistant"]
+// [Type "color"]
+@sapAssistant_Question_TextColor: @sapDefault_Color;
+
+// [Label "Assistant Answer Background Color"]
+// [Description "The answer background color used in the SAP assistant (Joule)."]
+// [Tags "Base", "Assistant", "Color", "Protected"]
+// [Protected "true"]
+// [Category "Assistant"]
+// [Type "color"]
+@sapAssistant_Answer_Background: @sapDefault_Color;
+
+// [Label "Assistant Answer Border Color"]
+// [Description "The answer border color used in the SAP assistant (Joule)."]
+// [Tags "Base", "Assistant", "Color", "Protected"]
+// [Protected "true"]
+// [Category "Assistant"]
+// [Type "color"]
+@sapAssistant_Answer_BorderColor: @sapDefault_Color;
+
+// [Label "Assistant Answer Text Color"]
+// [Description "The answer text color used in the SAP assistant (Joule)."]
+// [Tags "Base", "Assistant", "Color", "Protected"]
+// [Protected "true"]
+// [Category "Assistant"]
+// [Type "color"]
+@sapAssistant_Answer_TextColor: @sapDefault_Color;
 
 // [Label "Avatar 1 Background Color"]
 // [Description "The background color of type-1 avatars."]
@@ -6929,8 +7084,120 @@
 // [Type "color"]
 @sapLegendBackgroundColor20: @sapDefault_Color;
 
+// [Label "Color for Chart Background"]
+// [Description "The background color of charts."]
+// [Tags "Base", "Color", "Chart", "Protected"]
+// [Protected "true"]
+// [Category "Chart"]
+// [Type "color"]
+@sapChart_Background: @sapDefault_Color;
+
+// [Label "Contrast Text Shadow for Chart Text"]
+// [Description "Used as the halo for chart text to enhance contrast."]
+// [Tags "Base", "Chart", "Protected"]
+// [Protected "true"]
+// [Category "Chart"]
+// [Type "boxShadow"]
+@sapChart_ContrastTextShadow: @sapDefault_Shadow;
+
+// [Label "Contrast Shadow for Chart"]
+// [Description "Used for contrast or inverted shadows in charts."]
+// [Tags "Base", "Chart", "Color", "Protected"]
+// [Protected "true"]
+// [Category "Chart"]
+// [Type "color"]
+@sapChart_ContrastShadowColor: @sapDefault_Color;
+
+// [Label "Chart Color for Contrast Lines"]
+// [Description "Chart Contrast Line Color."]
+// [Tags "Base", "Color", "Chart", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Line"]
+// [Type "color"]
+@sapChart_ContrastLineColor: @sapDefault_Color;
+
+// [Label "Chart Color for Lines in a Grid"]
+// [Description "Chart Grid line Color."]
+// [Tags "Base", "Color", "Chart", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Line"]
+// [Type "color"]
+@sapChart_LineColor_1: @sapDefault_Color;
+
+// [Label "Chart Color for Axis Lines in a Grid"]
+// [Description "Chart Category Axis Line Color."]
+// [Tags "Base", "Color", "Chart", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Line"]
+// [Type "color"]
+@sapChart_LineColor_2: @sapDefault_Color;
+
+// [Label "Chart Color for Lines"]
+// [Description "Chart Reference Line Color."]
+// [Tags "Base", "Color", "Chart", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Line"]
+// [Type "color"]
+@sapChart_LineColor_3: @sapDefault_Color;
+
+// [Label "Color for Chart Choropleth Background"]
+// [Description "The background color of choropleth charts. Used for charts with geographic/map visualizations."]
+// [Tags "Base", "Color", "Chart", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Choropleth"]
+// [Type "color"]
+@sapChart_Choropleth_Background: @sapDefault_Color;
+
+// [Label "Color for Chart Choropleth Region Background"]
+// [Description "The background color of choropleth regions in charts. Used for charts with geographic/map visualizations."]
+// [Tags "Base", "Color", "Chart", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Choropleth"]
+// [Type "color"]
+@sapChart_ChoroplethRegion_Background: @sapDefault_Color;
+
+// [Label "Color for Chart Choropleth Region Border Color"]
+// [Description "The border color of choropleth regions in charts. Used for charts with geographic/map visualizations."]
+// [Tags "Base", "Color", "Chart", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Choropleth"]
+// [Type "color"]
+@sapChart_ChoroplethRegion_BorderColor: @sapDefault_Color;
+
+// [Label "Text Color for Cart Data"]
+// [Description "The text color used for general chart text labels. Also used inside contrast statements for all the sequence text colors."]
+// [Tags "Base", "Chart", "Color", "Font", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Data"]
+// [Type "color"]
+@sapChart_Data_TextColor: @sapDefault_Color;
+
+// [Label "Contrast Text Color for Cart Data"]
+// [Description "Used inside contrast statements for all the sequence text colors."]
+// [Tags "Base", "Chart", "Color", "Font", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Data"]
+// [Type "color"]
+@sapChart_Data_ContrastTextColor: @sapDefault_Color;
+
+// [Label "Color for Interactive Cart Data"]
+// [Description "Used for hover and selected states of chart data points."]
+// [Tags "Base", "Chart", "Color", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Data"]
+// [Type "color"]
+@sapChart_Data_InteractiveColor: @sapDefault_Color;
+
+// [Label "Color for Active Cart Data Background"]
+// [Description "Used for interactive chart labels."]
+// [Tags "Base", "Chart", "Color", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Data"]
+// [Type "color"]
+@sapChart_Data_Active_Background: @sapDefault_Color;
+
 // [Label "Chart Ordered Color 1"]
-// [Description "This color is used as an ordered color of a sequence of 11 chart colors. It has a defined contrast to its predecessor and successor."]
+// [Description "This color is used as an ordered color of a sequence of 12 chart colors. It has a defined contrast to its predecessor and successor."]
 // [Tags "Base", "Chart", "Color", "Protected"]
 // [Protected "true"]
 // [Category "Chart", "Ordered"]
@@ -6938,7 +7205,7 @@
 @sapChart_OrderedColor_1: @sapDefault_Color;
 
 // [Label "Chart Ordered Color 2"]
-// [Description "This color is used as an ordered color of a sequence of 11 chart colors. It has a defined contrast to its predecessor and successor."]
+// [Description "This color is used as an ordered color of a sequence of 12 chart colors. It has a defined contrast to its predecessor and successor."]
 // [Tags "Base", "Chart", "Color", "Protected"]
 // [Protected "true"]
 // [Category "Chart", "Ordered"]
@@ -6946,7 +7213,7 @@
 @sapChart_OrderedColor_2: @sapDefault_Color;
 
 // [Label "Chart Ordered Color 3"]
-// [Description "This color is used as an ordered color of a sequence of 11 chart colors. It has a defined contrast to its predecessor and successor."]
+// [Description "This color is used as an ordered color of a sequence of 12 chart colors. It has a defined contrast to its predecessor and successor."]
 // [Tags "Base", "Chart", "Color", "Protected"]
 // [Protected "true"]
 // [Category "Chart", "Ordered"]
@@ -6954,7 +7221,7 @@
 @sapChart_OrderedColor_3: @sapDefault_Color;
 
 // [Label "Chart Ordered Color 4"]
-// [Description "This color is used as an ordered color of a sequence of 11 chart colors. It has a defined contrast to its predecessor and successor."]
+// [Description "This color is used as an ordered color of a sequence of 12 chart colors. It has a defined contrast to its predecessor and successor."]
 // [Tags "Base", "Chart", "Color", "Protected"]
 // [Protected "true"]
 // [Category "Chart", "Ordered"]
@@ -6962,7 +7229,7 @@
 @sapChart_OrderedColor_4: @sapDefault_Color;
 
 // [Label "Chart Ordered Color 5"]
-// [Description "This color is used as an ordered color of a sequence of 11 chart colors. It has a defined contrast to its predecessor and successor."]
+// [Description "This color is used as an ordered color of a sequence of 12 chart colors. It has a defined contrast to its predecessor and successor."]
 // [Tags "Base", "Chart", "Color", "Protected"]
 // [Protected "true"]
 // [Category "Chart", "Ordered"]
@@ -6970,7 +7237,7 @@
 @sapChart_OrderedColor_5: @sapDefault_Color;
 
 // [Label "Chart Ordered Color 6"]
-// [Description "This color is used as an ordered color of a sequence of 11 chart colors. It has a defined contrast to its predecessor and successor."]
+// [Description "This color is used as an ordered color of a sequence of 12 chart colors. It has a defined contrast to its predecessor and successor."]
 // [Tags "Base", "Chart", "Color", "Protected"]
 // [Protected "true"]
 // [Category "Chart", "Ordered"]
@@ -6978,7 +7245,7 @@
 @sapChart_OrderedColor_6: @sapDefault_Color;
 
 // [Label "Chart Ordered Color 7"]
-// [Description "This color is used as an ordered color of a sequence of 11 chart colors. It has a defined contrast to its predecessor and successor."]
+// [Description "This color is used as an ordered color of a sequence of 12 chart colors. It has a defined contrast to its predecessor and successor."]
 // [Tags "Base", "Chart", "Color", "Protected"]
 // [Protected "true"]
 // [Category "Chart", "Ordered"]
@@ -6986,7 +7253,7 @@
 @sapChart_OrderedColor_7: @sapDefault_Color;
 
 // [Label "Chart Ordered Color 8"]
-// [Description "This color is used as an ordered color of a sequence of 11 chart colors. It has a defined contrast to its predecessor and successor."]
+// [Description "This color is used as an ordered color of a sequence of 12 chart colors. It has a defined contrast to its predecessor and successor."]
 // [Tags "Base", "Chart", "Color", "Protected"]
 // [Protected "true"]
 // [Category "Chart", "Ordered"]
@@ -6994,7 +7261,7 @@
 @sapChart_OrderedColor_8: @sapDefault_Color;
 
 // [Label "Chart Ordered Color 9"]
-// [Description "This color is used as an ordered color of a sequence of 11 chart colors. It has a defined contrast to its predecessor and successor."]
+// [Description "This color is used as an ordered color of a sequence of 12 chart colors. It has a defined contrast to its predecessor and successor."]
 // [Tags "Base", "Chart", "Color", "Protected"]
 // [Protected "true"]
 // [Category "Chart", "Ordered"]
@@ -7002,7 +7269,7 @@
 @sapChart_OrderedColor_9: @sapDefault_Color;
 
 // [Label "Chart Ordered Color 10"]
-// [Description "This color is used as an ordered color of a sequence of 11 chart colors. It has a defined contrast to its predecessor and successor."]
+// [Description "This color is used as an ordered color of a sequence of 12 chart colors. It has a defined contrast to its predecessor and successor."]
 // [Tags "Base", "Chart", "Color", "Protected"]
 // [Protected "true"]
 // [Category "Chart", "Ordered"]
@@ -7010,12 +7277,20 @@
 @sapChart_OrderedColor_10: @sapDefault_Color;
 
 // [Label "Chart Ordered Color 11"]
-// [Description "This color is used as an ordered color of a sequence of 11 chart colors. It has a defined contrast to its predecessor and successor."]
+// [Description "This color is used as an ordered color of a sequence of 12 chart colors. It has a defined contrast to its predecessor and successor."]
 // [Tags "Base", "Chart", "Color", "Protected"]
 // [Protected "true"]
 // [Category "Chart", "Ordered"]
 // [Type "color"]
 @sapChart_OrderedColor_11: @sapDefault_Color;
+
+// [Label "Chart Ordered Color 11"]
+// [Description "This color is used as an ordered color of a sequence of 12 chart colors. It has a defined contrast to its predecessor and successor."]
+// [Tags "Base", "Chart", "Color", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Ordered"]
+// [Type "color"]
+@sapChart_OrderedColor_12: @sapDefault_Color;
 
 // [Label "Chart Color 'Bad'"]
 // [Description "This color is to visualize a 'Bad' value."]
@@ -7049,6 +7324,78 @@
 // [Type "color"]
 @sapChart_Neutral: @sapDefault_Color;
 
+// [Label "Chart Color Sequence 1 Plus 3"]
+// [Description "This color is a 3 levels less intensive chart color of the sequence 1."]
+// [Tags "Base", "Chart", "Color", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_1_Plus3: @sapDefault_Color;
+
+// [Label "Chart Text Color Sequence 1 Plus 3"]
+// [Description "This text color matches a 3 levels less intensive chart color of the sequence 1."]
+// [Tags "Base", "Chart", "Color", "Font", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_1_Plus3_TextColor: @sapDefault_Color;
+
+// [Label "Chart Text Shadow Sequence 1 Plus 3"]
+// [Description "This text shadow matches a 3 levels less intensive chart color of the sequence 1."]
+// [Tags "Base", "Chart", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "boxShadow"]
+@sapChart_Sequence_1_Plus3_TextShadow: @sapDefault_Shadow;
+
+// [Label "Chart Color Sequence 1 Plus 2"]
+// [Description "This color is a 2 levels less intensive chart color of the sequence 1."]
+// [Tags "Base", "Chart", "Color", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_1_Plus2: @sapDefault_Color;
+
+// [Label "Chart Text Color Sequence 1 Plus 2"]
+// [Description "This text color matches a 2 levels less intensive chart color of the sequence 1."]
+// [Tags "Base", "Chart", "Color", "Font", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_1_Plus2_TextColor: @sapDefault_Color;
+
+// [Label "Chart Text Shadow Sequence 1 Plus 2"]
+// [Description "This text shadow matches a 2 levels less intensive chart color of the sequence 1."]
+// [Tags "Base", "Chart", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "boxShadow"]
+@sapChart_Sequence_1_Plus2_TextShadow: @sapDefault_Shadow;
+
+// [Label "Chart Color Sequence 1 Plus 1"]
+// [Description "This color is a 1 level less intensive chart color of the sequence 1."]
+// [Tags "Base", "Chart", "Color", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_1_Plus1: @sapDefault_Color;
+
+// [Label "Chart Text Color Sequence 1 Plus 1"]
+// [Description "This text color matches a 1 level less intensive chart color of the sequence 1."]
+// [Tags "Base", "Chart", "Color", "Font", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_1_Plus1_TextColor: @sapDefault_Color;
+
+// [Label "Chart Text Shadow Sequence 1 Plus 1"]
+// [Description "This text shadow matches a 1 level less intensive chart color of the sequence 1."]
+// [Tags "Base", "Chart", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "boxShadow"]
+@sapChart_Sequence_1_Plus1_TextShadow: @sapDefault_Shadow;
+
 // [Label "Chart Color Sequence 1"]
 // [Description "This color is the base chart color of the sequence 1."]
 // [Tags "Base", "Chart", "Color", "Protected"]
@@ -7056,6 +7403,222 @@
 // [Category "Chart", "Sequence"]
 // [Type "color"]
 @sapChart_Sequence_1: @sapDefault_Color;
+
+// [Label "Chart Text Color Sequence 1"]
+// [Description "This text color matches the base chart color of the sequence 1."]
+// [Tags "Base", "Chart", "Color", "Font", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_1_TextColor: @sapDefault_Color;
+
+// [Label "Chart Text Shadow Sequence 1"]
+// [Description "This text shadow matches the base chart color of the sequence 1."]
+// [Tags "Base", "Chart", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "boxShadow"]
+@sapChart_Sequence_1_TextShadow: @sapDefault_Shadow;
+
+// [Label "Chart Border Color Sequence 1"]
+// [Description "This border color matches the base chart color of the sequence 1."]
+// [Tags "Base", "Chart", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_1_BorderColor: @sapDefault_Color;
+
+// [Label "Chart Color Sequence 1 Minus 1"]
+// [Description "This color is a 1 level more intensive chart color of the sequence 1."]
+// [Tags "Base", "Chart", "Color", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_1_Minus1: @sapDefault_Color;
+
+// [Label "Chart Text Color Sequence 1 Minus 1"]
+// [Description "This text color matches a 1 level less intensive chart color of the sequence 1."]
+// [Tags "Base", "Chart", "Color", "Font", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_1_Minus1_TextColor: @sapDefault_Color;
+
+// [Label "Chart Text Shadow Sequence 1 Minus 1"]
+// [Description "This text shadow matches a 1 level more intensive chart color of the sequence 1."]
+// [Tags "Base", "Chart", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "boxShadow"]
+@sapChart_Sequence_1_Minus1_TextShadow: @sapDefault_Shadow;
+
+// [Label "Chart Color Sequence 1 Minus 2"]
+// [Description "This color is a 2 levels more intensive chart color of the sequence 1."]
+// [Tags "Base", "Chart", "Color", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_1_Minus2: @sapDefault_Color;
+
+// [Label "Chart Text Color Sequence 1 Minus 2"]
+// [Description "This text color matches a 2 levels less intensive chart color of the sequence 1."]
+// [Tags "Base", "Chart", "Color", "Font", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_1_Minus2_TextColor: @sapDefault_Color;
+
+// [Label "Chart Text Shadow Sequence 1 Minus 2"]
+// [Description "This text shadow matches a 2 levels more intensive chart color of the sequence 1."]
+// [Tags "Base", "Chart", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "boxShadow"]
+@sapChart_Sequence_1_Minus2_TextShadow: @sapDefault_Shadow;
+
+// [Label "Chart Color Sequence 1 Minus 3"]
+// [Description "This color is a 3 levels more intensive chart color of the sequence 1."]
+// [Tags "Base", "Chart", "Color", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_1_Minus3: @sapDefault_Color;
+
+// [Label "Chart Text Color Sequence 1 Minus 3"]
+// [Description "This text color matches a 3 levels less intensive chart color of the sequence 1."]
+// [Tags "Base", "Chart", "Color", "Font", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_1_Minus3_TextColor: @sapDefault_Color;
+
+// [Label "Chart Text Shadow Sequence 1 Minus 3"]
+// [Description "This text shadow matches a 3 levels more intensive chart color of the sequence 1."]
+// [Tags "Base", "Chart", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "boxShadow"]
+@sapChart_Sequence_1_Minus3_TextShadow: @sapDefault_Shadow;
+
+// [Label "Chart Color Sequence 1 Minus 4"]
+// [Description "This color is a 4 levels more intensive chart color of the sequence 1."]
+// [Tags "Base", "Chart", "Color", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_1_Minus4: @sapDefault_Color;
+
+// [Label "Chart Text Color Sequence 1 Minus 4"]
+// [Description "This text color matches a 4 levels less intensive chart color of the sequence 1."]
+// [Tags "Base", "Chart", "Color", "Font", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_1_Minus4_TextColor: @sapDefault_Color;
+
+// [Label "Chart Text Shadow Sequence 1 Minus 4"]
+// [Description "This text shadow matches a 4 levels more intensive chart color of the sequence 1."]
+// [Tags "Base", "Chart", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "boxShadow"]
+@sapChart_Sequence_1_Minus4_TextShadow: @sapDefault_Shadow;
+
+// [Label "Chart Color Sequence 1 Minus 5"]
+// [Description "This color is a 5 levels more intensive chart color of the sequence 1."]
+// [Tags "Base", "Chart", "Color", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_1_Minus5: @sapDefault_Color;
+
+// [Label "Chart Text Color Sequence 1 Minus 5"]
+// [Description "This text color matches a 5 levels less intensive chart color of the sequence 1."]
+// [Tags "Base", "Chart", "Color", "Font", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_1_Minus5_TextColor: @sapDefault_Color;
+
+// [Label "Chart Text Shadow Sequence 1 Minus 5"]
+// [Description "This text shadow matches a 5 levels more intensive chart color of the sequence 1."]
+// [Tags "Base", "Chart", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "boxShadow"]
+@sapChart_Sequence_1_Minus5_TextShadow: @sapDefault_Shadow;
+
+// [Label "Chart Color Sequence 2 Plus 3"]
+// [Description "This color is a 3 levels less intensive chart color of the sequence 2."]
+// [Tags "Base", "Chart", "Color", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_2_Plus3: @sapDefault_Color;
+
+// [Label "Chart Text Color Sequence 2 Plus 3"]
+// [Description "This text color matches a 3 levels less intensive chart color of the sequence 2."]
+// [Tags "Base", "Chart", "Color", "Font", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_2_Plus3_TextColor: @sapDefault_Color;
+
+// [Label "Chart Text Shadow Sequence 2 Plus 3"]
+// [Description "This text shadow matches a 3 levels less intensive chart color of the sequence 2."]
+// [Tags "Base", "Chart", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "boxShadow"]
+@sapChart_Sequence_2_Plus3_TextShadow: @sapDefault_Shadow;
+
+// [Label "Chart Color Sequence 2 Plus 2"]
+// [Description "This color is a 2 levels less intensive chart color of the sequence 2."]
+// [Tags "Base", "Chart", "Color", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_2_Plus2: @sapDefault_Color;
+
+// [Label "Chart Text Color Sequence 2 Plus 2"]
+// [Description "This text color matches a 2 levels less intensive chart color of the sequence 2."]
+// [Tags "Base", "Chart", "Color", "Font", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_2_Plus2_TextColor: @sapDefault_Color;
+
+// [Label "Chart Text Shadow Sequence 2 Plus 2"]
+// [Description "This text shadow matches a 2 levels less intensive chart color of the sequence 2."]
+// [Tags "Base", "Chart", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "boxShadow"]
+@sapChart_Sequence_2_Plus2_TextShadow: @sapDefault_Shadow;
+
+// [Label "Chart Color Sequence 2 Plus 1"]
+// [Description "This color is a 1 level less intensive chart color of the sequence 2."]
+// [Tags "Base", "Chart", "Color", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_2_Plus1: @sapDefault_Color;
+
+// [Label "Chart Text Color Sequence 2 Plus 1"]
+// [Description "This text color matches a 1 level less intensive chart color of the sequence 2."]
+// [Tags "Base", "Chart", "Color", "Font", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_2_Plus1_TextColor: @sapDefault_Color;
+
+// [Label "Chart Text Shadow Sequence 2 Plus 1"]
+// [Description "This text shadow matches a 1 level less intensive chart color of the sequence 2."]
+// [Tags "Base", "Chart", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "boxShadow"]
+@sapChart_Sequence_2_Plus1_TextShadow: @sapDefault_Shadow;
 
 // [Label "Chart Color Sequence 2"]
 // [Description "This color is the base chart color of the sequence 2."]
@@ -7065,6 +7628,222 @@
 // [Type "color"]
 @sapChart_Sequence_2: @sapDefault_Color;
 
+// [Label "Chart Text Color Sequence 2"]
+// [Description "This text color matches the base chart color of the sequence 2."]
+// [Tags "Base", "Chart", "Color", "Font", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_2_TextColor: @sapDefault_Color;
+
+// [Label "Chart Text Shadow Sequence 2"]
+// [Description "This text shadow matches the base chart color of the sequence 2."]
+// [Tags "Base", "Chart", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "boxShadow"]
+@sapChart_Sequence_2_TextShadow: @sapDefault_Shadow;
+
+// [Label "Chart Border Color Sequence 2"]
+// [Description "This border color matches the base chart color of the sequence 2."]
+// [Tags "Base", "Chart", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_2_BorderColor: @sapDefault_Color;
+
+// [Label "Chart Color Sequence 2 Minus 1"]
+// [Description "This color is a 1 level more intensive chart color of the sequence 2."]
+// [Tags "Base", "Chart", "Color", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_2_Minus1: @sapDefault_Color;
+
+// [Label "Chart Text Color Sequence 2 Minus 1"]
+// [Description "This text color matches a 1 level less intensive chart color of the sequence 2."]
+// [Tags "Base", "Chart", "Color", "Font", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_2_Minus1_TextColor: @sapDefault_Color;
+
+// [Label "Chart Text Shadow Sequence 2 Minus 1"]
+// [Description "This text shadow matches a 1 level more intensive chart color of the sequence 2."]
+// [Tags "Base", "Chart", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "boxShadow"]
+@sapChart_Sequence_2_Minus1_TextShadow: @sapDefault_Shadow;
+
+// [Label "Chart Color Sequence 2 Minus 2"]
+// [Description "This color is a 2 levels more intensive chart color of the sequence 2."]
+// [Tags "Base", "Chart", "Color", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_2_Minus2: @sapDefault_Color;
+
+// [Label "Chart Text Color Sequence 2 Minus 2"]
+// [Description "This text color matches a 2 levels less intensive chart color of the sequence 2."]
+// [Tags "Base", "Chart", "Color", "Font", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_2_Minus2_TextColor: @sapDefault_Color;
+
+// [Label "Chart Text Shadow Sequence 2 Minus 2"]
+// [Description "This text shadow matches a 2 levels more intensive chart color of the sequence 2."]
+// [Tags "Base", "Chart", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "boxShadow"]
+@sapChart_Sequence_2_Minus2_TextShadow: @sapDefault_Shadow;
+
+// [Label "Chart Color Sequence 2 Minus 3"]
+// [Description "This color is a 3 levels more intensive chart color of the sequence 2."]
+// [Tags "Base", "Chart", "Color", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_2_Minus3: @sapDefault_Color;
+
+// [Label "Chart Text Color Sequence 2 Minus 3"]
+// [Description "This text color matches a 3 levels less intensive chart color of the sequence 2."]
+// [Tags "Base", "Chart", "Color", "Font", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_2_Minus3_TextColor: @sapDefault_Color;
+
+// [Label "Chart Text Shadow Sequence 2 Minus 3"]
+// [Description "This text shadow matches a 3 levels more intensive chart color of the sequence 2."]
+// [Tags "Base", "Chart", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "boxShadow"]
+@sapChart_Sequence_2_Minus3_TextShadow: @sapDefault_Shadow;
+
+// [Label "Chart Color Sequence 2 Minus 4"]
+// [Description "This color is a 4 levels more intensive chart color of the sequence 2."]
+// [Tags "Base", "Chart", "Color", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_2_Minus4: @sapDefault_Color;
+
+// [Label "Chart Text Color Sequence 2 Minus 4"]
+// [Description "This text color matches a 4 levels less intensive chart color of the sequence 2."]
+// [Tags "Base", "Chart", "Color", "Font", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_2_Minus4_TextColor: @sapDefault_Color;
+
+// [Label "Chart Text Shadow Sequence 2 Minus 4"]
+// [Description "This text shadow matches a 4 levels more intensive chart color of the sequence 2."]
+// [Tags "Base", "Chart", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "boxShadow"]
+@sapChart_Sequence_2_Minus4_TextShadow: @sapDefault_Shadow;
+
+// [Label "Chart Color Sequence 2 Minus 5"]
+// [Description "This color is a 5 levels more intensive chart color of the sequence 2."]
+// [Tags "Base", "Chart", "Color", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_2_Minus5: @sapDefault_Color;
+
+// [Label "Chart Text Color Sequence 2 Minus 5"]
+// [Description "This text color matches a 5 levels less intensive chart color of the sequence 2."]
+// [Tags "Base", "Chart", "Color", "Font", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_2_Minus5_TextColor: @sapDefault_Color;
+
+// [Label "Chart Text Shadow Sequence 2 Minus 5"]
+// [Description "This text shadow matches a 5 levels more intensive chart color of the sequence 2."]
+// [Tags "Base", "Chart", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "boxShadow"]
+@sapChart_Sequence_2_Minus5_TextShadow: @sapDefault_Shadow;
+
+// [Label "Chart Color Sequence 3 Plus 3"]
+// [Description "This color is a 3 levels less intensive chart color of the sequence 3."]
+// [Tags "Base", "Chart", "Color", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_3_Plus3: @sapDefault_Color;
+
+// [Label "Chart Text Color Sequence 3 Plus 3"]
+// [Description "This text color matches a 3 levels less intensive chart color of the sequence 3."]
+// [Tags "Base", "Chart", "Color", "Font", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_3_Plus3_TextColor: @sapDefault_Color;
+
+// [Label "Chart Text Shadow Sequence 3 Plus 3"]
+// [Description "This text shadow matches a 3 levels less intensive chart color of the sequence 3."]
+// [Tags "Base", "Chart", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "boxShadow"]
+@sapChart_Sequence_3_Plus3_TextShadow: @sapDefault_Shadow;
+
+// [Label "Chart Color Sequence 3 Plus 2"]
+// [Description "This color is a 2 levels less intensive chart color of the sequence 3."]
+// [Tags "Base", "Chart", "Color", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_3_Plus2: @sapDefault_Color;
+
+// [Label "Chart Text Color Sequence 3 Plus 2"]
+// [Description "This text color matches a 2 levels less intensive chart color of the sequence 3."]
+// [Tags "Base", "Chart", "Color", "Font", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_3_Plus2_TextColor: @sapDefault_Color;
+
+// [Label "Chart Text Shadow Sequence 3 Plus 2"]
+// [Description "This text shadow matches a 2 levels less intensive chart color of the sequence 3."]
+// [Tags "Base", "Chart", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "boxShadow"]
+@sapChart_Sequence_3_Plus2_TextShadow: @sapDefault_Shadow;
+
+// [Label "Chart Color Sequence 3 Plus 1"]
+// [Description "This color is a 1 level less intensive chart color of the sequence 3."]
+// [Tags "Base", "Chart", "Color", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_3_Plus1: @sapDefault_Color;
+
+// [Label "Chart Text Color Sequence 3 Plus 1"]
+// [Description "This text color matches a 1 level less intensive chart color of the sequence 3."]
+// [Tags "Base", "Chart", "Color", "Font", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_3_Plus1_TextColor: @sapDefault_Color;
+
+// [Label "Chart Text Shadow Sequence 3 Plus 1"]
+// [Description "This text shadow matches a 1 level less intensive chart color of the sequence 3."]
+// [Tags "Base", "Chart", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "boxShadow"]
+@sapChart_Sequence_3_Plus1_TextShadow: @sapDefault_Shadow;
+
 // [Label "Chart Color Sequence 3"]
 // [Description "This color is the base chart color of the sequence 3."]
 // [Tags "Base", "Chart", "Color", "Protected"]
@@ -7072,6 +7851,222 @@
 // [Category "Chart", "Sequence"]
 // [Type "color"]
 @sapChart_Sequence_3: @sapDefault_Color;
+
+// [Label "Chart Text Color Sequence 3"]
+// [Description "This text color matches the base chart color of the sequence 3."]
+// [Tags "Base", "Chart", "Color", "Font", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_3_TextColor: @sapDefault_Color;
+
+// [Label "Chart Text Shadow Sequence 3"]
+// [Description "This text shadow matches the base chart color of the sequence 3."]
+// [Tags "Base", "Chart", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "boxShadow"]
+@sapChart_Sequence_3_TextShadow: @sapDefault_Shadow;
+
+// [Label "Chart Border Color Sequence 3"]
+// [Description "This border color matches the base chart color of the sequence 3."]
+// [Tags "Base", "Chart", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_3_BorderColor: @sapDefault_Color;
+
+// [Label "Chart Color Sequence 3 Minus 1"]
+// [Description "This color is a 1 level more intensive chart color of the sequence 3."]
+// [Tags "Base", "Chart", "Color", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_3_Minus1: @sapDefault_Color;
+
+// [Label "Chart Text Color Sequence 3 Minus 1"]
+// [Description "This text color matches a 1 level less intensive chart color of the sequence 3."]
+// [Tags "Base", "Chart", "Color", "Font", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_3_Minus1_TextColor: @sapDefault_Color;
+
+// [Label "Chart Text Shadow Sequence 3 Minus 1"]
+// [Description "This text shadow matches a 1 level more intensive chart color of the sequence 3."]
+// [Tags "Base", "Chart", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "boxShadow"]
+@sapChart_Sequence_3_Minus1_TextShadow: @sapDefault_Shadow;
+
+// [Label "Chart Color Sequence 3 Minus 2"]
+// [Description "This color is a 2 levels more intensive chart color of the sequence 3."]
+// [Tags "Base", "Chart", "Color", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_3_Minus2: @sapDefault_Color;
+
+// [Label "Chart Text Color Sequence 3 Minus 2"]
+// [Description "This text color matches a 2 levels less intensive chart color of the sequence 3."]
+// [Tags "Base", "Chart", "Color", "Font", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_3_Minus2_TextColor: @sapDefault_Color;
+
+// [Label "Chart Text Shadow Sequence 3 Minus 2"]
+// [Description "This text shadow matches a 2 levels more intensive chart color of the sequence 3."]
+// [Tags "Base", "Chart", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "boxShadow"]
+@sapChart_Sequence_3_Minus2_TextShadow: @sapDefault_Shadow;
+
+// [Label "Chart Color Sequence 3 Minus 3"]
+// [Description "This color is a 3 levels more intensive chart color of the sequence 3."]
+// [Tags "Base", "Chart", "Color", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_3_Minus3: @sapDefault_Color;
+
+// [Label "Chart Text Color Sequence 3 Minus 3"]
+// [Description "This text color matches a 3 levels less intensive chart color of the sequence 3."]
+// [Tags "Base", "Chart", "Color", "Font", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_3_Minus3_TextColor: @sapDefault_Color;
+
+// [Label "Chart Text Shadow Sequence 3 Minus 3"]
+// [Description "This text shadow matches a 3 levels more intensive chart color of the sequence 3."]
+// [Tags "Base", "Chart", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "boxShadow"]
+@sapChart_Sequence_3_Minus3_TextShadow: @sapDefault_Shadow;
+
+// [Label "Chart Color Sequence 3 Minus 4"]
+// [Description "This color is a 4 levels more intensive chart color of the sequence 3."]
+// [Tags "Base", "Chart", "Color", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_3_Minus4: @sapDefault_Color;
+
+// [Label "Chart Text Color Sequence 3 Minus 4"]
+// [Description "This text color matches a 4 levels less intensive chart color of the sequence 3."]
+// [Tags "Base", "Chart", "Color", "Font", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_3_Minus4_TextColor: @sapDefault_Color;
+
+// [Label "Chart Text Shadow Sequence 3 Minus 4"]
+// [Description "This text shadow matches a 4 levels more intensive chart color of the sequence 3."]
+// [Tags "Base", "Chart", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "boxShadow"]
+@sapChart_Sequence_3_Minus4_TextShadow: @sapDefault_Shadow;
+
+// [Label "Chart Color Sequence 3 Minus 5"]
+// [Description "This color is a 5 levels more intensive chart color of the sequence 3."]
+// [Tags "Base", "Chart", "Color", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_3_Minus5: @sapDefault_Color;
+
+// [Label "Chart Text Color Sequence 3 Minus 5"]
+// [Description "This text color matches a 5 levels less intensive chart color of the sequence 3."]
+// [Tags "Base", "Chart", "Color", "Font", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_3_Minus5_TextColor: @sapDefault_Color;
+
+// [Label "Chart Text Shadow Sequence 3 Minus 5"]
+// [Description "This text shadow matches a 5 levels more intensive chart color of the sequence 3."]
+// [Tags "Base", "Chart", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "boxShadow"]
+@sapChart_Sequence_3_Minus5_TextShadow: @sapDefault_Shadow;
+
+// [Label "Chart Color Sequence 4 Plus 3"]
+// [Description "This color is a 3 levels less intensive chart color of the sequence 4."]
+// [Tags "Base", "Chart", "Color", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_4_Plus3: @sapDefault_Color;
+
+// [Label "Chart Text Color Sequence 4 Plus 3"]
+// [Description "This text color matches a 3 levels less intensive chart color of the sequence 4."]
+// [Tags "Base", "Chart", "Color", "Font", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_4_Plus3_TextColor: @sapDefault_Color;
+
+// [Label "Chart Text Shadow Sequence 4 Plus 3"]
+// [Description "This text shadow matches a 3 levels less intensive chart color of the sequence 4."]
+// [Tags "Base", "Chart", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "boxShadow"]
+@sapChart_Sequence_4_Plus3_TextShadow: @sapDefault_Shadow;
+
+// [Label "Chart Color Sequence 4 Plus 2"]
+// [Description "This color is a 2 levels less intensive chart color of the sequence 4."]
+// [Tags "Base", "Chart", "Color", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_4_Plus2: @sapDefault_Color;
+
+// [Label "Chart Text Color Sequence 4 Plus 2"]
+// [Description "This text color matches a 2 levels less intensive chart color of the sequence 4."]
+// [Tags "Base", "Chart", "Color", "Font", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_4_Plus2_TextColor: @sapDefault_Color;
+
+// [Label "Chart Text Shadow Sequence 4 Plus 2"]
+// [Description "This text shadow matches a 2 levels less intensive chart color of the sequence 4."]
+// [Tags "Base", "Chart", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "boxShadow"]
+@sapChart_Sequence_4_Plus2_TextShadow: @sapDefault_Shadow;
+
+// [Label "Chart Color Sequence 4 Plus 1"]
+// [Description "This color is a 1 level less intensive chart color of the sequence 4."]
+// [Tags "Base", "Chart", "Color", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_4_Plus1: @sapDefault_Color;
+
+// [Label "Chart Text Color Sequence 4 Plus 1"]
+// [Description "This text color matches a 1 level less intensive chart color of the sequence 4."]
+// [Tags "Base", "Chart", "Color", "Font", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_4_Plus1_TextColor: @sapDefault_Color;
+
+// [Label "Chart Text Shadow Sequence 4 Plus 1"]
+// [Description "This text shadow matches a 1 level less intensive chart color of the sequence 4."]
+// [Tags "Base", "Chart", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "boxShadow"]
+@sapChart_Sequence_4_Plus1_TextShadow: @sapDefault_Shadow;
 
 // [Label "Chart Color Sequence 4"]
 // [Description "This color is the base chart color of the sequence 4."]
@@ -7081,6 +8076,222 @@
 // [Type "color"]
 @sapChart_Sequence_4: @sapDefault_Color;
 
+// [Label "Chart Text Color Sequence 4"]
+// [Description "This text color matches the base chart color of the sequence 4."]
+// [Tags "Base", "Chart", "Color", "Font", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_4_TextColor: @sapDefault_Color;
+
+// [Label "Chart Text Shadow Sequence 4"]
+// [Description "This text shadow matches the base chart color of the sequence 4."]
+// [Tags "Base", "Chart", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "boxShadow"]
+@sapChart_Sequence_4_TextShadow: @sapDefault_Shadow;
+
+// [Label "Chart Border Color Sequence 4"]
+// [Description "This border color matches the base chart color of the sequence 4."]
+// [Tags "Base", "Chart", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_4_BorderColor: @sapDefault_Color;
+
+// [Label "Chart Color Sequence 4 Minus 1"]
+// [Description "This color is a 1 level more intensive chart color of the sequence 4."]
+// [Tags "Base", "Chart", "Color", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_4_Minus1: @sapDefault_Color;
+
+// [Label "Chart Text Color Sequence 4 Minus 1"]
+// [Description "This text color matches a 1 level less intensive chart color of the sequence 4."]
+// [Tags "Base", "Chart", "Color", "Font", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_4_Minus1_TextColor: @sapDefault_Color;
+
+// [Label "Chart Text Shadow Sequence 4 Minus 1"]
+// [Description "This text shadow matches a 1 level more intensive chart color of the sequence 4."]
+// [Tags "Base", "Chart", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "boxShadow"]
+@sapChart_Sequence_4_Minus1_TextShadow: @sapDefault_Shadow;
+
+// [Label "Chart Color Sequence 4 Minus 2"]
+// [Description "This color is a 2 levels more intensive chart color of the sequence 4."]
+// [Tags "Base", "Chart", "Color", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_4_Minus2: @sapDefault_Color;
+
+// [Label "Chart Text Color Sequence 4 Minus 2"]
+// [Description "This text color matches a 2 levels less intensive chart color of the sequence 4."]
+// [Tags "Base", "Chart", "Color", "Font", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_4_Minus2_TextColor: @sapDefault_Color;
+
+// [Label "Chart Text Shadow Sequence 4 Minus 2"]
+// [Description "This text shadow matches a 2 levels more intensive chart color of the sequence 4."]
+// [Tags "Base", "Chart", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "boxShadow"]
+@sapChart_Sequence_4_Minus2_TextShadow: @sapDefault_Shadow;
+
+// [Label "Chart Color Sequence 4 Minus 3"]
+// [Description "This color is a 3 levels more intensive chart color of the sequence 4."]
+// [Tags "Base", "Chart", "Color", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_4_Minus3: @sapDefault_Color;
+
+// [Label "Chart Text Color Sequence 4 Minus 3"]
+// [Description "This text color matches a 3 levels less intensive chart color of the sequence 4."]
+// [Tags "Base", "Chart", "Color", "Font", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_4_Minus3_TextColor: @sapDefault_Color;
+
+// [Label "Chart Text Shadow Sequence 4 Minus 3"]
+// [Description "This text shadow matches a 3 levels more intensive chart color of the sequence 4."]
+// [Tags "Base", "Chart", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "boxShadow"]
+@sapChart_Sequence_4_Minus3_TextShadow: @sapDefault_Shadow;
+
+// [Label "Chart Color Sequence 4 Minus 4"]
+// [Description "This color is a 4 levels more intensive chart color of the sequence 4."]
+// [Tags "Base", "Chart", "Color", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_4_Minus4: @sapDefault_Color;
+
+// [Label "Chart Text Color Sequence 4 Minus 4"]
+// [Description "This text color matches a 4 levels less intensive chart color of the sequence 4."]
+// [Tags "Base", "Chart", "Color", "Font", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_4_Minus4_TextColor: @sapDefault_Color;
+
+// [Label "Chart Text Shadow Sequence 4 Minus 4"]
+// [Description "This text shadow matches a 4 levels more intensive chart color of the sequence 4."]
+// [Tags "Base", "Chart", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "boxShadow"]
+@sapChart_Sequence_4_Minus4_TextShadow: @sapDefault_Shadow;
+
+// [Label "Chart Color Sequence 4 Minus 5"]
+// [Description "This color is a 5 levels more intensive chart color of the sequence 4."]
+// [Tags "Base", "Chart", "Color", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_4_Minus5: @sapDefault_Color;
+
+// [Label "Chart Text Color Sequence 4 Minus 5"]
+// [Description "This text color matches a 5 levels less intensive chart color of the sequence 4."]
+// [Tags "Base", "Chart", "Color", "Font", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_4_Minus5_TextColor: @sapDefault_Color;
+
+// [Label "Chart Text Shadow Sequence 4 Minus 5"]
+// [Description "This text shadow matches a 5 levels more intensive chart color of the sequence 4."]
+// [Tags "Base", "Chart", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "boxShadow"]
+@sapChart_Sequence_4_Minus5_TextShadow: @sapDefault_Shadow;
+
+// [Label "Chart Color Sequence 5 Plus 3"]
+// [Description "This color is a 3 levels less intensive chart color of the sequence 5."]
+// [Tags "Base", "Chart", "Color", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_5_Plus3: @sapDefault_Color;
+
+// [Label "Chart Text Color Sequence 5 Plus 3"]
+// [Description "This text color matches a 3 levels less intensive chart color of the sequence 5."]
+// [Tags "Base", "Chart", "Color", "Font", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_5_Plus3_TextColor: @sapDefault_Color;
+
+// [Label "Chart Text Shadow Sequence 5 Plus 3"]
+// [Description "This text shadow matches a 3 levels less intensive chart color of the sequence 5."]
+// [Tags "Base", "Chart", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "boxShadow"]
+@sapChart_Sequence_5_Plus3_TextShadow: @sapDefault_Shadow;
+
+// [Label "Chart Color Sequence 5 Plus 2"]
+// [Description "This color is a 2 levels less intensive chart color of the sequence 5."]
+// [Tags "Base", "Chart", "Color", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_5_Plus2: @sapDefault_Color;
+
+// [Label "Chart Text Color Sequence 5 Plus 2"]
+// [Description "This text color matches a 2 levels less intensive chart color of the sequence 5."]
+// [Tags "Base", "Chart", "Color", "Font", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_5_Plus2_TextColor: @sapDefault_Color;
+
+// [Label "Chart Text Shadow Sequence 5 Plus 2"]
+// [Description "This text shadow matches a 2 levels less intensive chart color of the sequence 5."]
+// [Tags "Base", "Chart", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "boxShadow"]
+@sapChart_Sequence_5_Plus2_TextShadow: @sapDefault_Shadow;
+
+// [Label "Chart Color Sequence 5 Plus 1"]
+// [Description "This color is a 1 level less intensive chart color of the sequence 5."]
+// [Tags "Base", "Chart", "Color", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_5_Plus1: @sapDefault_Color;
+
+// [Label "Chart Text Color Sequence 5 Plus 1"]
+// [Description "This text color matches a 1 level less intensive chart color of the sequence 5."]
+// [Tags "Base", "Chart", "Color", "Font", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_5_Plus1_TextColor: @sapDefault_Color;
+
+// [Label "Chart Text Shadow Sequence 5 Plus 1"]
+// [Description "This text shadow matches a 1 level less intensive chart color of the sequence 5."]
+// [Tags "Base", "Chart", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "boxShadow"]
+@sapChart_Sequence_5_Plus1_TextShadow: @sapDefault_Shadow;
+
 // [Label "Chart Color Sequence 5"]
 // [Description "This color is the base chart color of the sequence 5."]
 // [Tags "Base", "Chart", "Color", "Protected"]
@@ -7088,6 +8299,222 @@
 // [Category "Chart", "Sequence"]
 // [Type "color"]
 @sapChart_Sequence_5: @sapDefault_Color;
+
+// [Label "Chart Text Color Sequence 5"]
+// [Description "This text color matches the base chart color of the sequence 5."]
+// [Tags "Base", "Chart", "Color", "Font", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_5_TextColor: @sapDefault_Color;
+
+// [Label "Chart Text Shadow Sequence 5"]
+// [Description "This text shadow matches the base chart color of the sequence 5."]
+// [Tags "Base", "Chart", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "boxShadow"]
+@sapChart_Sequence_5_TextShadow: @sapDefault_Shadow;
+
+// [Label "Chart Border Color Sequence 5"]
+// [Description "This border color matches the base chart color of the sequence 5."]
+// [Tags "Base", "Chart", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_5_BorderColor: @sapDefault_Color;
+
+// [Label "Chart Color Sequence 5 Minus 1"]
+// [Description "This color is a 1 level more intensive chart color of the sequence 5."]
+// [Tags "Base", "Chart", "Color", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_5_Minus1: @sapDefault_Color;
+
+// [Label "Chart Text Color Sequence 5 Minus 1"]
+// [Description "This text color matches a 1 level less intensive chart color of the sequence 5."]
+// [Tags "Base", "Chart", "Color", "Font", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_5_Minus1_TextColor: @sapDefault_Color;
+
+// [Label "Chart Text Shadow Sequence 5 Minus 1"]
+// [Description "This text shadow matches a 1 level more intensive chart color of the sequence 5."]
+// [Tags "Base", "Chart", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "boxShadow"]
+@sapChart_Sequence_5_Minus1_TextShadow: @sapDefault_Shadow;
+
+// [Label "Chart Color Sequence 5 Minus 2"]
+// [Description "This color is a 2 levels more intensive chart color of the sequence 5."]
+// [Tags "Base", "Chart", "Color", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_5_Minus2: @sapDefault_Color;
+
+// [Label "Chart Text Color Sequence 5 Minus 2"]
+// [Description "This text color matches a 2 levels less intensive chart color of the sequence 5."]
+// [Tags "Base", "Chart", "Color", "Font", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_5_Minus2_TextColor: @sapDefault_Color;
+
+// [Label "Chart Text Shadow Sequence 5 Minus 2"]
+// [Description "This text shadow matches a 2 levels more intensive chart color of the sequence 5."]
+// [Tags "Base", "Chart", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "boxShadow"]
+@sapChart_Sequence_5_Minus2_TextShadow: @sapDefault_Shadow;
+
+// [Label "Chart Color Sequence 5 Minus 3"]
+// [Description "This color is a 3 levels more intensive chart color of the sequence 5."]
+// [Tags "Base", "Chart", "Color", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_5_Minus3: @sapDefault_Color;
+
+// [Label "Chart Text Color Sequence 5 Minus 3"]
+// [Description "This text color matches a 3 levels less intensive chart color of the sequence 5."]
+// [Tags "Base", "Chart", "Color", "Font", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_5_Minus3_TextColor: @sapDefault_Color;
+
+// [Label "Chart Text Shadow Sequence 5 Minus 3"]
+// [Description "This text shadow matches a 3 levels more intensive chart color of the sequence 5."]
+// [Tags "Base", "Chart", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "boxShadow"]
+@sapChart_Sequence_5_Minus3_TextShadow: @sapDefault_Shadow;
+
+// [Label "Chart Color Sequence 5 Minus 4"]
+// [Description "This color is a 4 levels more intensive chart color of the sequence 5."]
+// [Tags "Base", "Chart", "Color", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_5_Minus4: @sapDefault_Color;
+
+// [Label "Chart Text Color Sequence 5 Minus 4"]
+// [Description "This text color matches a 4 levels less intensive chart color of the sequence 5."]
+// [Tags "Base", "Chart", "Color", "Font", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_5_Minus4_TextColor: @sapDefault_Color;
+
+// [Label "Chart Text Shadow Sequence 5 Minus 4"]
+// [Description "This text shadow matches a 4 levels more intensive chart color of the sequence 5."]
+// [Tags "Base", "Chart", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "boxShadow"]
+@sapChart_Sequence_5_Minus4_TextShadow: @sapDefault_Shadow;
+
+// [Label "Chart Color Sequence 5 Minus 5"]
+// [Description "This color is a 5 levels more intensive chart color of the sequence 5."]
+// [Tags "Base", "Chart", "Color", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_5_Minus5: @sapDefault_Color;
+
+// [Label "Chart Text Color Sequence 5 Minus 5"]
+// [Description "This text color matches a 5 levels less intensive chart color of the sequence 5."]
+// [Tags "Base", "Chart", "Color", "Font", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_5_Minus5_TextColor: @sapDefault_Color;
+
+// [Label "Chart Text Shadow Sequence 5 Minus 5"]
+// [Description "This text shadow matches a 5 levels more intensive chart color of the sequence 5."]
+// [Tags "Base", "Chart", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "boxShadow"]
+@sapChart_Sequence_5_Minus5_TextShadow: @sapDefault_Shadow;
+
+// [Label "Chart Color Sequence 6 Plus 3"]
+// [Description "This color is a 3 levels less intensive chart color of the sequence 6."]
+// [Tags "Base", "Chart", "Color", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_6_Plus3: @sapDefault_Color;
+
+// [Label "Chart Text Color Sequence 6 Plus 3"]
+// [Description "This text color matches a 3 levels less intensive chart color of the sequence 6."]
+// [Tags "Base", "Chart", "Color", "Font", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_6_Plus3_TextColor: @sapDefault_Color;
+
+// [Label "Chart Text Shadow Sequence 6 Plus 3"]
+// [Description "This text shadow matches a 3 levels less intensive chart color of the sequence 6."]
+// [Tags "Base", "Chart", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "boxShadow"]
+@sapChart_Sequence_6_Plus3_TextShadow: @sapDefault_Shadow;
+
+// [Label "Chart Color Sequence 6 Plus 2"]
+// [Description "This color is a 2 levels less intensive chart color of the sequence 6."]
+// [Tags "Base", "Chart", "Color", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_6_Plus2: @sapDefault_Color;
+
+// [Label "Chart Text Color Sequence 6 Plus 2"]
+// [Description "This text color matches a 2 levels less intensive chart color of the sequence 6."]
+// [Tags "Base", "Chart", "Color", "Font", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_6_Plus2_TextColor: @sapDefault_Color;
+
+// [Label "Chart Text Shadow Sequence 6 Plus 2"]
+// [Description "This text shadow matches a 2 levels less intensive chart color of the sequence 6."]
+// [Tags "Base", "Chart", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "boxShadow"]
+@sapChart_Sequence_6_Plus2_TextShadow: @sapDefault_Shadow;
+
+// [Label "Chart Color Sequence 6 Plus 1"]
+// [Description "This color is a 1 level less intensive chart color of the sequence 6."]
+// [Tags "Base", "Chart", "Color", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_6_Plus1: @sapDefault_Color;
+
+// [Label "Chart Text Color Sequence 6 Plus 1"]
+// [Description "This text color matches a 1 level less intensive chart color of the sequence 6."]
+// [Tags "Base", "Chart", "Color", "Font", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_6_Plus1_TextColor: @sapDefault_Color;
+
+// [Label "Chart Text Shadow Sequence 6 Plus 1"]
+// [Description "This text shadow matches a 1 level less intensive chart color of the sequence 6."]
+// [Tags "Base", "Chart", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "boxShadow"]
+@sapChart_Sequence_6_Plus1_TextShadow: @sapDefault_Shadow;
 
 // [Label "Chart Color Sequence 6"]
 // [Description "This color is the base chart color of the sequence 6."]
@@ -7097,6 +8524,222 @@
 // [Type "color"]
 @sapChart_Sequence_6: @sapDefault_Color;
 
+// [Label "Chart Text Color Sequence 6"]
+// [Description "This text color matches the base chart color of the sequence 6."]
+// [Tags "Base", "Chart", "Color", "Font", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_6_TextColor: @sapDefault_Color;
+
+// [Label "Chart Text Shadow Sequence 6"]
+// [Description "This text shadow matches the base chart color of the sequence 6."]
+// [Tags "Base", "Chart", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "boxShadow"]
+@sapChart_Sequence_6_TextShadow: @sapDefault_Shadow;
+
+// [Label "Chart Border Color Sequence 6"]
+// [Description "This border color matches the base chart color of the sequence 6."]
+// [Tags "Base", "Chart", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_6_BorderColor: @sapDefault_Color;
+
+// [Label "Chart Color Sequence 6 Minus 1"]
+// [Description "This color is a 1 level more intensive chart color of the sequence 6."]
+// [Tags "Base", "Chart", "Color", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_6_Minus1: @sapDefault_Color;
+
+// [Label "Chart Text Color Sequence 6 Minus 1"]
+// [Description "This text color matches a 1 level less intensive chart color of the sequence 6."]
+// [Tags "Base", "Chart", "Color", "Font", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_6_Minus1_TextColor: @sapDefault_Color;
+
+// [Label "Chart Text Shadow Sequence 6 Minus 1"]
+// [Description "This text shadow matches a 1 level more intensive chart color of the sequence 6."]
+// [Tags "Base", "Chart", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "boxShadow"]
+@sapChart_Sequence_6_Minus1_TextShadow: @sapDefault_Shadow;
+
+// [Label "Chart Color Sequence 6 Minus 2"]
+// [Description "This color is a 2 levels more intensive chart color of the sequence 6."]
+// [Tags "Base", "Chart", "Color", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_6_Minus2: @sapDefault_Color;
+
+// [Label "Chart Text Color Sequence 6 Minus 2"]
+// [Description "This text color matches a 2 levels less intensive chart color of the sequence 6."]
+// [Tags "Base", "Chart", "Color", "Font", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_6_Minus2_TextColor: @sapDefault_Color;
+
+// [Label "Chart Text Shadow Sequence 6 Minus 2"]
+// [Description "This text shadow matches a 2 levels more intensive chart color of the sequence 6."]
+// [Tags "Base", "Chart", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "boxShadow"]
+@sapChart_Sequence_6_Minus2_TextShadow: @sapDefault_Shadow;
+
+// [Label "Chart Color Sequence 6 Minus 3"]
+// [Description "This color is a 3 levels more intensive chart color of the sequence 6."]
+// [Tags "Base", "Chart", "Color", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_6_Minus3: @sapDefault_Color;
+
+// [Label "Chart Text Color Sequence 6 Minus 3"]
+// [Description "This text color matches a 3 levels less intensive chart color of the sequence 6."]
+// [Tags "Base", "Chart", "Color", "Font", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_6_Minus3_TextColor: @sapDefault_Color;
+
+// [Label "Chart Text Shadow Sequence 6 Minus 3"]
+// [Description "This text shadow matches a 3 levels more intensive chart color of the sequence 6."]
+// [Tags "Base", "Chart", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "boxShadow"]
+@sapChart_Sequence_6_Minus3_TextShadow: @sapDefault_Shadow;
+
+// [Label "Chart Color Sequence 6 Minus 4"]
+// [Description "This color is a 4 levels more intensive chart color of the sequence 6."]
+// [Tags "Base", "Chart", "Color", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_6_Minus4: @sapDefault_Color;
+
+// [Label "Chart Text Color Sequence 6 Minus 4"]
+// [Description "This text color matches a 4 levels less intensive chart color of the sequence 6."]
+// [Tags "Base", "Chart", "Color", "Font", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_6_Minus4_TextColor: @sapDefault_Color;
+
+// [Label "Chart Text Shadow Sequence 6 Minus 4"]
+// [Description "This text shadow matches a 4 levels more intensive chart color of the sequence 6."]
+// [Tags "Base", "Chart", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "boxShadow"]
+@sapChart_Sequence_6_Minus4_TextShadow: @sapDefault_Shadow;
+
+// [Label "Chart Color Sequence 6 Minus 5"]
+// [Description "This color is a 5 levels more intensive chart color of the sequence 6."]
+// [Tags "Base", "Chart", "Color", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_6_Minus5: @sapDefault_Color;
+
+// [Label "Chart Text Color Sequence 6 Minus 5"]
+// [Description "This text color matches a 5 levels less intensive chart color of the sequence 6."]
+// [Tags "Base", "Chart", "Color", "Font", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_6_Minus5_TextColor: @sapDefault_Color;
+
+// [Label "Chart Text Shadow Sequence 6 Minus 5"]
+// [Description "This text shadow matches a 5 levels more intensive chart color of the sequence 6."]
+// [Tags "Base", "Chart", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "boxShadow"]
+@sapChart_Sequence_6_Minus5_TextShadow: @sapDefault_Shadow;
+
+// [Label "Chart Color Sequence 7 Plus 3"]
+// [Description "This color is a 3 levels less intensive chart color of the sequence 7."]
+// [Tags "Base", "Chart", "Color", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_7_Plus3: @sapDefault_Color;
+
+// [Label "Chart Text Color Sequence 7 Plus 3"]
+// [Description "This text color matches a 3 levels less intensive chart color of the sequence 7."]
+// [Tags "Base", "Chart", "Color", "Font", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_7_Plus3_TextColor: @sapDefault_Color;
+
+// [Label "Chart Text Shadow Sequence 7 Plus 3"]
+// [Description "This text shadow matches a 3 levels less intensive chart color of the sequence 7."]
+// [Tags "Base", "Chart", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "boxShadow"]
+@sapChart_Sequence_7_Plus3_TextShadow: @sapDefault_Shadow;
+
+// [Label "Chart Color Sequence 7 Plus 2"]
+// [Description "This color is a 2 levels less intensive chart color of the sequence 7."]
+// [Tags "Base", "Chart", "Color", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_7_Plus2: @sapDefault_Color;
+
+// [Label "Chart Text Color Sequence 7 Plus 2"]
+// [Description "This text color matches a 2 levels less intensive chart color of the sequence 7."]
+// [Tags "Base", "Chart", "Color", "Font", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_7_Plus2_TextColor: @sapDefault_Color;
+
+// [Label "Chart Text Shadow Sequence 7 Plus 2"]
+// [Description "This text shadow matches a 2 levels less intensive chart color of the sequence 7."]
+// [Tags "Base", "Chart", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "boxShadow"]
+@sapChart_Sequence_7_Plus2_TextShadow: @sapDefault_Shadow;
+
+// [Label "Chart Color Sequence 7 Plus 1"]
+// [Description "This color is a 1 level less intensive chart color of the sequence 7."]
+// [Tags "Base", "Chart", "Color", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_7_Plus1: @sapDefault_Color;
+
+// [Label "Chart Text Color Sequence 7 Plus 1"]
+// [Description "This text color matches a 1 level less intensive chart color of the sequence 7."]
+// [Tags "Base", "Chart", "Color", "Font", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_7_Plus1_TextColor: @sapDefault_Color;
+
+// [Label "Chart Text Shadow Sequence 7 Plus 1"]
+// [Description "This text shadow matches a 1 level less intensive chart color of the sequence 7."]
+// [Tags "Base", "Chart", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "boxShadow"]
+@sapChart_Sequence_7_Plus1_TextShadow: @sapDefault_Shadow;
+
 // [Label "Chart Color Sequence 7"]
 // [Description "This color is the base chart color of the sequence 7."]
 // [Tags "Base", "Chart", "Color", "Protected"]
@@ -7104,6 +8747,222 @@
 // [Category "Chart", "Sequence"]
 // [Type "color"]
 @sapChart_Sequence_7: @sapDefault_Color;
+
+// [Label "Chart Text Color Sequence 7"]
+// [Description "This text color matches the base chart color of the sequence 7."]
+// [Tags "Base", "Chart", "Color", "Font", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_7_TextColor: @sapDefault_Color;
+
+// [Label "Chart Text Shadow Sequence 7"]
+// [Description "This text shadow matches the base chart color of the sequence 7."]
+// [Tags "Base", "Chart", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "boxShadow"]
+@sapChart_Sequence_7_TextShadow: @sapDefault_Shadow;
+
+// [Label "Chart Border Color Sequence 7"]
+// [Description "This border color matches the base chart color of the sequence 7."]
+// [Tags "Base", "Chart", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_7_BorderColor: @sapDefault_Color;
+
+// [Label "Chart Color Sequence 7 Minus 1"]
+// [Description "This color is a 1 level more intensive chart color of the sequence 7."]
+// [Tags "Base", "Chart", "Color", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_7_Minus1: @sapDefault_Color;
+
+// [Label "Chart Text Color Sequence 7 Minus 1"]
+// [Description "This text color matches a 1 level less intensive chart color of the sequence 7."]
+// [Tags "Base", "Chart", "Color", "Font", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_7_Minus1_TextColor: @sapDefault_Color;
+
+// [Label "Chart Text Shadow Sequence 7 Minus 1"]
+// [Description "This text shadow matches a 1 level more intensive chart color of the sequence 7."]
+// [Tags "Base", "Chart", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "boxShadow"]
+@sapChart_Sequence_7_Minus1_TextShadow: @sapDefault_Shadow;
+
+// [Label "Chart Color Sequence 7 Minus 2"]
+// [Description "This color is a 2 levels more intensive chart color of the sequence 7."]
+// [Tags "Base", "Chart", "Color", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_7_Minus2: @sapDefault_Color;
+
+// [Label "Chart Text Color Sequence 7 Minus 2"]
+// [Description "This text color matches a 2 levels less intensive chart color of the sequence 7."]
+// [Tags "Base", "Chart", "Color", "Font", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_7_Minus2_TextColor: @sapDefault_Color;
+
+// [Label "Chart Text Shadow Sequence 7 Minus 2"]
+// [Description "This text shadow matches a 2 levels more intensive chart color of the sequence 7."]
+// [Tags "Base", "Chart", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "boxShadow"]
+@sapChart_Sequence_7_Minus2_TextShadow: @sapDefault_Shadow;
+
+// [Label "Chart Color Sequence 7 Minus 3"]
+// [Description "This color is a 3 levels more intensive chart color of the sequence 7."]
+// [Tags "Base", "Chart", "Color", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_7_Minus3: @sapDefault_Color;
+
+// [Label "Chart Text Color Sequence 7 Minus 3"]
+// [Description "This text color matches a 3 levels less intensive chart color of the sequence 7."]
+// [Tags "Base", "Chart", "Color", "Font", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_7_Minus3_TextColor: @sapDefault_Color;
+
+// [Label "Chart Text Shadow Sequence 7 Minus 3"]
+// [Description "This text shadow matches a 3 levels more intensive chart color of the sequence 7."]
+// [Tags "Base", "Chart", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "boxShadow"]
+@sapChart_Sequence_7_Minus3_TextShadow: @sapDefault_Shadow;
+
+// [Label "Chart Color Sequence 7 Minus 4"]
+// [Description "This color is a 4 levels more intensive chart color of the sequence 7."]
+// [Tags "Base", "Chart", "Color", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_7_Minus4: @sapDefault_Color;
+
+// [Label "Chart Text Color Sequence 7 Minus 4"]
+// [Description "This text color matches a 4 levels less intensive chart color of the sequence 7."]
+// [Tags "Base", "Chart", "Color", "Font", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_7_Minus4_TextColor: @sapDefault_Color;
+
+// [Label "Chart Text Shadow Sequence 7 Minus 4"]
+// [Description "This text shadow matches a 4 levels more intensive chart color of the sequence 7."]
+// [Tags "Base", "Chart", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "boxShadow"]
+@sapChart_Sequence_7_Minus4_TextShadow: @sapDefault_Shadow;
+
+// [Label "Chart Color Sequence 7 Minus 5"]
+// [Description "This color is a 5 levels more intensive chart color of the sequence 7."]
+// [Tags "Base", "Chart", "Color", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_7_Minus5: @sapDefault_Color;
+
+// [Label "Chart Text Color Sequence 7 Minus 5"]
+// [Description "This text color matches a 5 levels less intensive chart color of the sequence 7."]
+// [Tags "Base", "Chart", "Color", "Font", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_7_Minus5_TextColor: @sapDefault_Color;
+
+// [Label "Chart Text Shadow Sequence 7 Minus 5"]
+// [Description "This text shadow matches a 5 levels more intensive chart color of the sequence 7."]
+// [Tags "Base", "Chart", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "boxShadow"]
+@sapChart_Sequence_7_Minus5_TextShadow: @sapDefault_Shadow;
+
+// [Label "Chart Color Sequence 8 Plus 3"]
+// [Description "This color is a 3 levels less intensive chart color of the sequence 8."]
+// [Tags "Base", "Chart", "Color", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_8_Plus3: @sapDefault_Color;
+
+// [Label "Chart Text Color Sequence 8 Plus 3"]
+// [Description "This text color matches a 3 levels less intensive chart color of the sequence 8."]
+// [Tags "Base", "Chart", "Color", "Font", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_8_Plus3_TextColor: @sapDefault_Color;
+
+// [Label "Chart Text Shadow Sequence 8 Plus 3"]
+// [Description "This text shadow matches a 3 levels less intensive chart color of the sequence 8."]
+// [Tags "Base", "Chart", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "boxShadow"]
+@sapChart_Sequence_8_Plus3_TextShadow: @sapDefault_Shadow;
+
+// [Label "Chart Color Sequence 8 Plus 2"]
+// [Description "This color is a 2 levels less intensive chart color of the sequence 8."]
+// [Tags "Base", "Chart", "Color", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_8_Plus2: @sapDefault_Color;
+
+// [Label "Chart Text Color Sequence 8 Plus 2"]
+// [Description "This text color matches a 2 levels less intensive chart color of the sequence 8."]
+// [Tags "Base", "Chart", "Color", "Font", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_8_Plus2_TextColor: @sapDefault_Color;
+
+// [Label "Chart Text Shadow Sequence 8 Plus 2"]
+// [Description "This text shadow matches a 2 levels less intensive chart color of the sequence 8."]
+// [Tags "Base", "Chart", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "boxShadow"]
+@sapChart_Sequence_8_Plus2_TextShadow: @sapDefault_Shadow;
+
+// [Label "Chart Color Sequence 8 Plus 1"]
+// [Description "This color is a 1 level less intensive chart color of the sequence 8."]
+// [Tags "Base", "Chart", "Color", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_8_Plus1: @sapDefault_Color;
+
+// [Label "Chart Text Color Sequence 8 Plus 1"]
+// [Description "This text color matches a 1 level less intensive chart color of the sequence 8."]
+// [Tags "Base", "Chart", "Color", "Font", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_8_Plus1_TextColor: @sapDefault_Color;
+
+// [Label "Chart Text Shadow Sequence 8 Plus 1"]
+// [Description "This text shadow matches a 1 level less intensive chart color of the sequence 8."]
+// [Tags "Base", "Chart", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "boxShadow"]
+@sapChart_Sequence_8_Plus1_TextShadow: @sapDefault_Shadow;
 
 // [Label "Chart Color Sequence 8"]
 // [Description "This color is the base chart color of the sequence 8."]
@@ -7113,6 +8972,222 @@
 // [Type "color"]
 @sapChart_Sequence_8: @sapDefault_Color;
 
+// [Label "Chart Text Color Sequence 8"]
+// [Description "This text color matches the base chart color of the sequence 8."]
+// [Tags "Base", "Chart", "Color", "Font", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_8_TextColor: @sapDefault_Color;
+
+// [Label "Chart Text Shadow Sequence 8"]
+// [Description "This text shadow matches the base chart color of the sequence 8."]
+// [Tags "Base", "Chart", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "boxShadow"]
+@sapChart_Sequence_8_TextShadow: @sapDefault_Shadow;
+
+// [Label "Chart Border Color Sequence 8"]
+// [Description "This border color matches the base chart color of the sequence 8."]
+// [Tags "Base", "Chart", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_8_BorderColor: @sapDefault_Color;
+
+// [Label "Chart Color Sequence 8 Minus 1"]
+// [Description "This color is a 1 level more intensive chart color of the sequence 8."]
+// [Tags "Base", "Chart", "Color", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_8_Minus1: @sapDefault_Color;
+
+// [Label "Chart Text Color Sequence 8 Minus 1"]
+// [Description "This text color matches a 1 level less intensive chart color of the sequence 8."]
+// [Tags "Base", "Chart", "Color", "Font", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_8_Minus1_TextColor: @sapDefault_Color;
+
+// [Label "Chart Text Shadow Sequence 8 Minus 1"]
+// [Description "This text shadow matches a 1 level more intensive chart color of the sequence 8."]
+// [Tags "Base", "Chart", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "boxShadow"]
+@sapChart_Sequence_8_Minus1_TextShadow: @sapDefault_Shadow;
+
+// [Label "Chart Color Sequence 8 Minus 2"]
+// [Description "This color is a 2 levels more intensive chart color of the sequence 8."]
+// [Tags "Base", "Chart", "Color", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_8_Minus2: @sapDefault_Color;
+
+// [Label "Chart Text Color Sequence 8 Minus 2"]
+// [Description "This text color matches a 2 levels less intensive chart color of the sequence 8."]
+// [Tags "Base", "Chart", "Color", "Font", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_8_Minus2_TextColor: @sapDefault_Color;
+
+// [Label "Chart Text Shadow Sequence 8 Minus 2"]
+// [Description "This text shadow matches a 2 levels more intensive chart color of the sequence 8."]
+// [Tags "Base", "Chart", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "boxShadow"]
+@sapChart_Sequence_8_Minus2_TextShadow: @sapDefault_Shadow;
+
+// [Label "Chart Color Sequence 8 Minus 3"]
+// [Description "This color is a 3 levels more intensive chart color of the sequence 8."]
+// [Tags "Base", "Chart", "Color", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_8_Minus3: @sapDefault_Color;
+
+// [Label "Chart Text Color Sequence 8 Minus 3"]
+// [Description "This text color matches a 3 levels less intensive chart color of the sequence 8."]
+// [Tags "Base", "Chart", "Color", "Font", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_8_Minus3_TextColor: @sapDefault_Color;
+
+// [Label "Chart Text Shadow Sequence 8 Minus 3"]
+// [Description "This text shadow matches a 3 levels more intensive chart color of the sequence 8."]
+// [Tags "Base", "Chart", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "boxShadow"]
+@sapChart_Sequence_8_Minus3_TextShadow: @sapDefault_Shadow;
+
+// [Label "Chart Color Sequence 8 Minus 4"]
+// [Description "This color is a 4 levels more intensive chart color of the sequence 8."]
+// [Tags "Base", "Chart", "Color", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_8_Minus4: @sapDefault_Color;
+
+// [Label "Chart Text Color Sequence 8 Minus 4"]
+// [Description "This text color matches a 4 levels less intensive chart color of the sequence 8."]
+// [Tags "Base", "Chart", "Color", "Font", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_8_Minus4_TextColor: @sapDefault_Color;
+
+// [Label "Chart Text Shadow Sequence 8 Minus 4"]
+// [Description "This text shadow matches a 4 levels more intensive chart color of the sequence 8."]
+// [Tags "Base", "Chart", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "boxShadow"]
+@sapChart_Sequence_8_Minus4_TextShadow: @sapDefault_Shadow;
+
+// [Label "Chart Color Sequence 8 Minus 5"]
+// [Description "This color is a 5 levels more intensive chart color of the sequence 8."]
+// [Tags "Base", "Chart", "Color", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_8_Minus5: @sapDefault_Color;
+
+// [Label "Chart Text Color Sequence 8 Minus 5"]
+// [Description "This text color matches a 5 levels less intensive chart color of the sequence 8."]
+// [Tags "Base", "Chart", "Color", "Font", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_8_Minus5_TextColor: @sapDefault_Color;
+
+// [Label "Chart Text Shadow Sequence 8 Minus 5"]
+// [Description "This text shadow matches a 5 levels more intensive chart color of the sequence 8."]
+// [Tags "Base", "Chart", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "boxShadow"]
+@sapChart_Sequence_8_Minus5_TextShadow: @sapDefault_Shadow;
+
+// [Label "Chart Color Sequence 9 Plus 3"]
+// [Description "This color is a 3 levels less intensive chart color of the sequence 9."]
+// [Tags "Base", "Chart", "Color", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_9_Plus3: @sapDefault_Color;
+
+// [Label "Chart Text Color Sequence 9 Plus 3"]
+// [Description "This text color matches a 3 levels less intensive chart color of the sequence 9."]
+// [Tags "Base", "Chart", "Color", "Font", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_9_Plus3_TextColor: @sapDefault_Color;
+
+// [Label "Chart Text Shadow Sequence 9 Plus 3"]
+// [Description "This text shadow matches a 3 levels less intensive chart color of the sequence 9."]
+// [Tags "Base", "Chart", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "boxShadow"]
+@sapChart_Sequence_9_Plus3_TextShadow: @sapDefault_Shadow;
+
+// [Label "Chart Color Sequence 9 Plus 2"]
+// [Description "This color is a 2 levels less intensive chart color of the sequence 9."]
+// [Tags "Base", "Chart", "Color", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_9_Plus2: @sapDefault_Color;
+
+// [Label "Chart Text Color Sequence 9 Plus 2"]
+// [Description "This text color matches a 2 levels less intensive chart color of the sequence 9."]
+// [Tags "Base", "Chart", "Color", "Font", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_9_Plus2_TextColor: @sapDefault_Color;
+
+// [Label "Chart Text Shadow Sequence 9 Plus 2"]
+// [Description "This text shadow matches a 2 levels less intensive chart color of the sequence 9."]
+// [Tags "Base", "Chart", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "boxShadow"]
+@sapChart_Sequence_9_Plus2_TextShadow: @sapDefault_Shadow;
+
+// [Label "Chart Color Sequence 9 Plus 1"]
+// [Description "This color is a 1 level less intensive chart color of the sequence 9."]
+// [Tags "Base", "Chart", "Color", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_9_Plus1: @sapDefault_Color;
+
+// [Label "Chart Text Color Sequence 9 Plus 1"]
+// [Description "This text color matches a 1 level less intensive chart color of the sequence 9."]
+// [Tags "Base", "Chart", "Color", "Font", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_9_Plus1_TextColor: @sapDefault_Color;
+
+// [Label "Chart Text Shadow Sequence 9 Plus 1"]
+// [Description "This text shadow matches a 1 level less intensive chart color of the sequence 9."]
+// [Tags "Base", "Chart", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "boxShadow"]
+@sapChart_Sequence_9_Plus1_TextShadow: @sapDefault_Shadow;
+
 // [Label "Chart Color Sequence 9"]
 // [Description "This color is the base chart color of the sequence 9."]
 // [Tags "Base", "Chart", "Color", "Protected"]
@@ -7120,6 +9195,222 @@
 // [Category "Chart", "Sequence"]
 // [Type "color"]
 @sapChart_Sequence_9: @sapDefault_Color;
+
+// [Label "Chart Text Color Sequence 9"]
+// [Description "This text color matches the base chart color of the sequence 9."]
+// [Tags "Base", "Chart", "Color", "Font", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_9_TextColor: @sapDefault_Color;
+
+// [Label "Chart Text Shadow Sequence 9"]
+// [Description "This text shadow matches the base chart color of the sequence 9."]
+// [Tags "Base", "Chart", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "boxShadow"]
+@sapChart_Sequence_9_TextShadow: @sapDefault_Shadow;
+
+// [Label "Chart Border Color Sequence 9"]
+// [Description "This border color matches the base chart color of the sequence 9."]
+// [Tags "Base", "Chart", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_9_BorderColor: @sapDefault_Color;
+
+// [Label "Chart Color Sequence 9 Minus 1"]
+// [Description "This color is a 1 level more intensive chart color of the sequence 9."]
+// [Tags "Base", "Chart", "Color", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_9_Minus1: @sapDefault_Color;
+
+// [Label "Chart Text Color Sequence 9 Minus 1"]
+// [Description "This text color matches a 1 level less intensive chart color of the sequence 9."]
+// [Tags "Base", "Chart", "Color", "Font", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_9_Minus1_TextColor: @sapDefault_Color;
+
+// [Label "Chart Text Shadow Sequence 9 Minus 1"]
+// [Description "This text shadow matches a 1 level more intensive chart color of the sequence 9."]
+// [Tags "Base", "Chart", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "boxShadow"]
+@sapChart_Sequence_9_Minus1_TextShadow: @sapDefault_Shadow;
+
+// [Label "Chart Color Sequence 9 Minus 2"]
+// [Description "This color is a 2 levels more intensive chart color of the sequence 9."]
+// [Tags "Base", "Chart", "Color", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_9_Minus2: @sapDefault_Color;
+
+// [Label "Chart Text Color Sequence 9 Minus 2"]
+// [Description "This text color matches a 2 levels less intensive chart color of the sequence 9."]
+// [Tags "Base", "Chart", "Color", "Font", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_9_Minus2_TextColor: @sapDefault_Color;
+
+// [Label "Chart Text Shadow Sequence 9 Minus 2"]
+// [Description "This text shadow matches a 2 levels more intensive chart color of the sequence 9."]
+// [Tags "Base", "Chart", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "boxShadow"]
+@sapChart_Sequence_9_Minus2_TextShadow: @sapDefault_Shadow;
+
+// [Label "Chart Color Sequence 9 Minus 3"]
+// [Description "This color is a 3 levels more intensive chart color of the sequence 9."]
+// [Tags "Base", "Chart", "Color", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_9_Minus3: @sapDefault_Color;
+
+// [Label "Chart Text Color Sequence 9 Minus 3"]
+// [Description "This text color matches a 3 levels less intensive chart color of the sequence 9."]
+// [Tags "Base", "Chart", "Color", "Font", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_9_Minus3_TextColor: @sapDefault_Color;
+
+// [Label "Chart Text Shadow Sequence 9 Minus 3"]
+// [Description "This text shadow matches a 3 levels more intensive chart color of the sequence 9."]
+// [Tags "Base", "Chart", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "boxShadow"]
+@sapChart_Sequence_9_Minus3_TextShadow: @sapDefault_Shadow;
+
+// [Label "Chart Color Sequence 9 Minus 4"]
+// [Description "This color is a 4 levels more intensive chart color of the sequence 9."]
+// [Tags "Base", "Chart", "Color", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_9_Minus4: @sapDefault_Color;
+
+// [Label "Chart Text Color Sequence 9 Minus 4"]
+// [Description "This text color matches a 4 levels less intensive chart color of the sequence 9."]
+// [Tags "Base", "Chart", "Color", "Font", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_9_Minus4_TextColor: @sapDefault_Color;
+
+// [Label "Chart Text Shadow Sequence 9 Minus 4"]
+// [Description "This text shadow matches a 4 levels more intensive chart color of the sequence 9."]
+// [Tags "Base", "Chart", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "boxShadow"]
+@sapChart_Sequence_9_Minus4_TextShadow: @sapDefault_Shadow;
+
+// [Label "Chart Color Sequence 9 Minus 5"]
+// [Description "This color is a 5 levels more intensive chart color of the sequence 9."]
+// [Tags "Base", "Chart", "Color", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_9_Minus5: @sapDefault_Color;
+
+// [Label "Chart Text Color Sequence 9 Minus 5"]
+// [Description "This text color matches a 5 levels less intensive chart color of the sequence 9."]
+// [Tags "Base", "Chart", "Color", "Font", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_9_Minus5_TextColor: @sapDefault_Color;
+
+// [Label "Chart Text Shadow Sequence 9 Minus 5"]
+// [Description "This text shadow matches a 5 levels more intensive chart color of the sequence 9."]
+// [Tags "Base", "Chart", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "boxShadow"]
+@sapChart_Sequence_9_Minus5_TextShadow: @sapDefault_Shadow;
+
+// [Label "Chart Color Sequence 10 Plus 3"]
+// [Description "This color is a 3 levels less intensive chart color of the sequence 10."]
+// [Tags "Base", "Chart", "Color", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_10_Plus3: @sapDefault_Color;
+
+// [Label "Chart Text Color Sequence 10 Plus 3"]
+// [Description "This text color matches a 3 levels less intensive chart color of the sequence 10."]
+// [Tags "Base", "Chart", "Color", "Font", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_10_Plus3_TextColor: @sapDefault_Color;
+
+// [Label "Chart Text Shadow Sequence 10 Plus 3"]
+// [Description "This text shadow matches a 3 levels less intensive chart color of the sequence 10."]
+// [Tags "Base", "Chart", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "boxShadow"]
+@sapChart_Sequence_10_Plus3_TextShadow: @sapDefault_Shadow;
+
+// [Label "Chart Color Sequence 10 Plus 2"]
+// [Description "This color is a 2 levels less intensive chart color of the sequence 10."]
+// [Tags "Base", "Chart", "Color", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_10_Plus2: @sapDefault_Color;
+
+// [Label "Chart Text Color Sequence 10 Plus 2"]
+// [Description "This text color matches a 2 levels less intensive chart color of the sequence 10."]
+// [Tags "Base", "Chart", "Color", "Font", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_10_Plus2_TextColor: @sapDefault_Color;
+
+// [Label "Chart Text Shadow Sequence 10 Plus 2"]
+// [Description "This text shadow matches a 2 levels less intensive chart color of the sequence 10."]
+// [Tags "Base", "Chart", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "boxShadow"]
+@sapChart_Sequence_10_Plus2_TextShadow: @sapDefault_Shadow;
+
+// [Label "Chart Color Sequence 10 Plus 1"]
+// [Description "This color is a 1 level less intensive chart color of the sequence 10."]
+// [Tags "Base", "Chart", "Color", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_10_Plus1: @sapDefault_Color;
+
+// [Label "Chart Text Color Sequence 10 Plus 1"]
+// [Description "This text color matches a 1 level less intensive chart color of the sequence 10."]
+// [Tags "Base", "Chart", "Color", "Font", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_10_Plus1_TextColor: @sapDefault_Color;
+
+// [Label "Chart Text Shadow Sequence 10 Plus 1"]
+// [Description "This text shadow matches a 1 level less intensive chart color of the sequence 10."]
+// [Tags "Base", "Chart", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "boxShadow"]
+@sapChart_Sequence_10_Plus1_TextShadow: @sapDefault_Shadow;
 
 // [Label "Chart Color Sequence 10"]
 // [Description "This color is the base chart color of the sequence 10."]
@@ -7129,6 +9420,222 @@
 // [Type "color"]
 @sapChart_Sequence_10: @sapDefault_Color;
 
+// [Label "Chart Text Color Sequence 10"]
+// [Description "This text color matches the base chart color of the sequence 10."]
+// [Tags "Base", "Chart", "Color", "Font", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_10_TextColor: @sapDefault_Color;
+
+// [Label "Chart Text Shadow Sequence 10"]
+// [Description "This text shadow matches the base chart color of the sequence 10."]
+// [Tags "Base", "Chart", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "boxShadow"]
+@sapChart_Sequence_10_TextShadow: @sapDefault_Shadow;
+
+// [Label "Chart Border Color Sequence 10"]
+// [Description "This border color matches the base chart color of the sequence 10."]
+// [Tags "Base", "Chart", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_10_BorderColor: @sapDefault_Color;
+
+// [Label "Chart Color Sequence 10 Minus 1"]
+// [Description "This color is a 1 level more intensive chart color of the sequence 10."]
+// [Tags "Base", "Chart", "Color", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_10_Minus1: @sapDefault_Color;
+
+// [Label "Chart Text Color Sequence 10 Minus 1"]
+// [Description "This text color matches a 1 level less intensive chart color of the sequence 10."]
+// [Tags "Base", "Chart", "Color", "Font", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_10_Minus1_TextColor: @sapDefault_Color;
+
+// [Label "Chart Text Shadow Sequence 10 Minus 1"]
+// [Description "This text shadow matches a 1 level more intensive chart color of the sequence 10."]
+// [Tags "Base", "Chart", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "boxShadow"]
+@sapChart_Sequence_10_Minus1_TextShadow: @sapDefault_Shadow;
+
+// [Label "Chart Color Sequence 10 Minus 2"]
+// [Description "This color is a 2 levels more intensive chart color of the sequence 10."]
+// [Tags "Base", "Chart", "Color", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_10_Minus2: @sapDefault_Color;
+
+// [Label "Chart Text Color Sequence 10 Minus 2"]
+// [Description "This text color matches a 2 levels less intensive chart color of the sequence 10."]
+// [Tags "Base", "Chart", "Color", "Font", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_10_Minus2_TextColor: @sapDefault_Color;
+
+// [Label "Chart Text Shadow Sequence 10 Minus 2"]
+// [Description "This text shadow matches a 2 levels more intensive chart color of the sequence 10."]
+// [Tags "Base", "Chart", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "boxShadow"]
+@sapChart_Sequence_10_Minus2_TextShadow: @sapDefault_Shadow;
+
+// [Label "Chart Color Sequence 10 Minus 3"]
+// [Description "This color is a 3 levels more intensive chart color of the sequence 10."]
+// [Tags "Base", "Chart", "Color", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_10_Minus3: @sapDefault_Color;
+
+// [Label "Chart Text Color Sequence 10 Minus 3"]
+// [Description "This text color matches a 3 levels less intensive chart color of the sequence 10."]
+// [Tags "Base", "Chart", "Color", "Font", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_10_Minus3_TextColor: @sapDefault_Color;
+
+// [Label "Chart Text Shadow Sequence 10 Minus 3"]
+// [Description "This text shadow matches a 3 levels more intensive chart color of the sequence 10."]
+// [Tags "Base", "Chart", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "boxShadow"]
+@sapChart_Sequence_10_Minus3_TextShadow: @sapDefault_Shadow;
+
+// [Label "Chart Color Sequence 10 Minus 4"]
+// [Description "This color is a 4 levels more intensive chart color of the sequence 10."]
+// [Tags "Base", "Chart", "Color", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_10_Minus4: @sapDefault_Color;
+
+// [Label "Chart Text Color Sequence 10 Minus 4"]
+// [Description "This text color matches a 4 levels less intensive chart color of the sequence 10."]
+// [Tags "Base", "Chart", "Color", "Font", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_10_Minus4_TextColor: @sapDefault_Color;
+
+// [Label "Chart Text Shadow Sequence 10 Minus 4"]
+// [Description "This text shadow matches a 4 levels more intensive chart color of the sequence 10."]
+// [Tags "Base", "Chart", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "boxShadow"]
+@sapChart_Sequence_10_Minus4_TextShadow: @sapDefault_Shadow;
+
+// [Label "Chart Color Sequence 10 Minus 5"]
+// [Description "This color is a 5 levels more intensive chart color of the sequence 10."]
+// [Tags "Base", "Chart", "Color", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_10_Minus5: @sapDefault_Color;
+
+// [Label "Chart Text Color Sequence 10 Minus 5"]
+// [Description "This text color matches a 5 levels less intensive chart color of the sequence 10."]
+// [Tags "Base", "Chart", "Color", "Font", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_10_Minus5_TextColor: @sapDefault_Color;
+
+// [Label "Chart Text Shadow Sequence 10 Minus 5"]
+// [Description "This text shadow matches a 5 levels more intensive chart color of the sequence 10."]
+// [Tags "Base", "Chart", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "boxShadow"]
+@sapChart_Sequence_10_Minus5_TextShadow: @sapDefault_Shadow;
+
+// [Label "Chart Color Sequence 11 Plus 3"]
+// [Description "This color is a 3 levels less intensive chart color of the sequence 11."]
+// [Tags "Base", "Chart", "Color", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_11_Plus3: @sapDefault_Color;
+
+// [Label "Chart Text Color Sequence 11 Plus 3"]
+// [Description "This text color matches a 3 levels less intensive chart color of the sequence 11."]
+// [Tags "Base", "Chart", "Color", "Font", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_11_Plus3_TextColor: @sapDefault_Color;
+
+// [Label "Chart Text Shadow Sequence 11 Plus 3"]
+// [Description "This text shadow matches a 3 levels less intensive chart color of the sequence 11."]
+// [Tags "Base", "Chart", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "boxShadow"]
+@sapChart_Sequence_11_Plus3_TextShadow: @sapDefault_Shadow;
+
+// [Label "Chart Color Sequence 11 Plus 2"]
+// [Description "This color is a 2 levels less intensive chart color of the sequence 11."]
+// [Tags "Base", "Chart", "Color", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_11_Plus2: @sapDefault_Color;
+
+// [Label "Chart Text Color Sequence 11 Plus 2"]
+// [Description "This text color matches a 2 levels less intensive chart color of the sequence 11."]
+// [Tags "Base", "Chart", "Color", "Font", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_11_Plus2_TextColor: @sapDefault_Color;
+
+// [Label "Chart Text Shadow Sequence 11 Plus 2"]
+// [Description "This text shadow matches a 2 levels less intensive chart color of the sequence 11."]
+// [Tags "Base", "Chart", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "boxShadow"]
+@sapChart_Sequence_11_Plus2_TextShadow: @sapDefault_Shadow;
+
+// [Label "Chart Color Sequence 11 Plus 1"]
+// [Description "This color is a 1 level less intensive chart color of the sequence 11."]
+// [Tags "Base", "Chart", "Color", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_11_Plus1: @sapDefault_Color;
+
+// [Label "Chart Text Color Sequence 11 Plus 1"]
+// [Description "This text color matches a 1 level less intensive chart color of the sequence 11."]
+// [Tags "Base", "Chart", "Color", "Font", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_11_Plus1_TextColor: @sapDefault_Color;
+
+// [Label "Chart Text Shadow Sequence 11 Plus 1"]
+// [Description "This text shadow matches a 1 level less intensive chart color of the sequence 11."]
+// [Tags "Base", "Chart", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "boxShadow"]
+@sapChart_Sequence_11_Plus1_TextShadow: @sapDefault_Shadow;
+
 // [Label "Chart Color Sequence 11"]
 // [Description "This color is the base chart color of the sequence 11."]
 // [Tags "Base", "Chart", "Color", "Protected"]
@@ -7137,6 +9644,1118 @@
 // [Type "color"]
 @sapChart_Sequence_11: @sapDefault_Color;
 
+// [Label "Chart Text Color Sequence 11"]
+// [Description "This text color matches the base chart color of the sequence 11."]
+// [Tags "Base", "Chart", "Color", "Font", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_11_TextColor: @sapDefault_Color;
+
+// [Label "Chart Text Shadow Sequence 11"]
+// [Description "This text shadow matches the base chart color of the sequence 11."]
+// [Tags "Base", "Chart", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "boxShadow"]
+@sapChart_Sequence_11_TextShadow: @sapDefault_Shadow;
+
+// [Label "Chart Border Color Sequence 11"]
+// [Description "This border color matches the base chart color of the sequence 11."]
+// [Tags "Base", "Chart", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_11_BorderColor: @sapDefault_Color;
+
+// [Label "Chart Color Sequence 11 Minus 1"]
+// [Description "This color is a 1 level more intensive chart color of the sequence 11."]
+// [Tags "Base", "Chart", "Color", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_11_Minus1: @sapDefault_Color;
+
+// [Label "Chart Text Color Sequence 11 Minus 1"]
+// [Description "This text color matches a 1 level less intensive chart color of the sequence 11."]
+// [Tags "Base", "Chart", "Color", "Font", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_11_Minus1_TextColor: @sapDefault_Color;
+
+// [Label "Chart Text Shadow Sequence 11 Minus 1"]
+// [Description "This text shadow matches a 1 level more intensive chart color of the sequence 11."]
+// [Tags "Base", "Chart", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "boxShadow"]
+@sapChart_Sequence_11_Minus1_TextShadow: @sapDefault_Shadow;
+
+// [Label "Chart Color Sequence 11 Minus 2"]
+// [Description "This color is a 2 levels more intensive chart color of the sequence 11."]
+// [Tags "Base", "Chart", "Color", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_11_Minus2: @sapDefault_Color;
+
+// [Label "Chart Text Color Sequence 11 Minus 2"]
+// [Description "This text color matches a 2 levels less intensive chart color of the sequence 11."]
+// [Tags "Base", "Chart", "Color", "Font", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_11_Minus2_TextColor: @sapDefault_Color;
+
+// [Label "Chart Text Shadow Sequence 11 Minus 2"]
+// [Description "This text shadow matches a 2 levels more intensive chart color of the sequence 11."]
+// [Tags "Base", "Chart", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "boxShadow"]
+@sapChart_Sequence_11_Minus2_TextShadow: @sapDefault_Shadow;
+
+// [Label "Chart Color Sequence 11 Minus 3"]
+// [Description "This color is a 3 levels more intensive chart color of the sequence 11."]
+// [Tags "Base", "Chart", "Color", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_11_Minus3: @sapDefault_Color;
+
+// [Label "Chart Text Color Sequence 11 Minus 3"]
+// [Description "This text color matches a 3 levels less intensive chart color of the sequence 11."]
+// [Tags "Base", "Chart", "Color", "Font", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_11_Minus3_TextColor: @sapDefault_Color;
+
+// [Label "Chart Text Shadow Sequence 11 Minus 3"]
+// [Description "This text shadow matches a 3 levels more intensive chart color of the sequence 11."]
+// [Tags "Base", "Chart", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "boxShadow"]
+@sapChart_Sequence_11_Minus3_TextShadow: @sapDefault_Shadow;
+
+// [Label "Chart Color Sequence 11 Minus 4"]
+// [Description "This color is a 4 levels more intensive chart color of the sequence 11."]
+// [Tags "Base", "Chart", "Color", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_11_Minus4: @sapDefault_Color;
+
+// [Label "Chart Text Color Sequence 11 Minus 4"]
+// [Description "This text color matches a 4 levels less intensive chart color of the sequence 11."]
+// [Tags "Base", "Chart", "Color", "Font", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_11_Minus4_TextColor: @sapDefault_Color;
+
+// [Label "Chart Text Shadow Sequence 11 Minus 4"]
+// [Description "This text shadow matches a 4 levels more intensive chart color of the sequence 11."]
+// [Tags "Base", "Chart", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "boxShadow"]
+@sapChart_Sequence_11_Minus4_TextShadow: @sapDefault_Shadow;
+
+// [Label "Chart Color Sequence 11 Minus 5"]
+// [Description "This color is a 5 levels more intensive chart color of the sequence 11."]
+// [Tags "Base", "Chart", "Color", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_11_Minus5: @sapDefault_Color;
+
+// [Label "Chart Text Color Sequence 11 Minus 5"]
+// [Description "This text color matches a 5 levels less intensive chart color of the sequence 11."]
+// [Tags "Base", "Chart", "Color", "Font", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_11_Minus5_TextColor: @sapDefault_Color;
+
+// [Label "Chart Text Shadow Sequence 11 Minus 5"]
+// [Description "This text shadow matches a 5 levels more intensive chart color of the sequence 11."]
+// [Tags "Base", "Chart", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "boxShadow"]
+@sapChart_Sequence_11_Minus5_TextShadow: @sapDefault_Shadow;
+
+// [Label "Chart Color Sequence 12 Plus 3"]
+// [Description "This color is a 3 levels less intensive chart color of the sequence 12."]
+// [Tags "Base", "Chart", "Color", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_12_Plus3: @sapDefault_Color;
+
+// [Label "Chart Text Color Sequence 12 Plus 3"]
+// [Description "This text color matches a 3 levels less intensive chart color of the sequence 12."]
+// [Tags "Base", "Chart", "Color", "Font", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_12_Plus3_TextColor: @sapDefault_Color;
+
+// [Label "Chart Text Shadow Sequence 12 Plus 3"]
+// [Description "This text shadow matches a 3 levels less intensive chart color of the sequence 12."]
+// [Tags "Base", "Chart", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "boxShadow"]
+@sapChart_Sequence_12_Plus3_TextShadow: @sapDefault_Shadow;
+
+// [Label "Chart Color Sequence 12 Plus 2"]
+// [Description "This color is a 2 levels less intensive chart color of the sequence 12."]
+// [Tags "Base", "Chart", "Color", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_12_Plus2: @sapDefault_Color;
+
+// [Label "Chart Text Color Sequence 12 Plus 2"]
+// [Description "This text color matches a 2 levels less intensive chart color of the sequence 12."]
+// [Tags "Base", "Chart", "Color", "Font", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_12_Plus2_TextColor: @sapDefault_Color;
+
+// [Label "Chart Text Shadow Sequence 12 Plus 2"]
+// [Description "This text shadow matches a 2 levels less intensive chart color of the sequence 12."]
+// [Tags "Base", "Chart", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "boxShadow"]
+@sapChart_Sequence_12_Plus2_TextShadow: @sapDefault_Shadow;
+
+// [Label "Chart Color Sequence 12 Plus 1"]
+// [Description "This color is a 1 level less intensive chart color of the sequence 12."]
+// [Tags "Base", "Chart", "Color", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_12_Plus1: @sapDefault_Color;
+
+// [Label "Chart Text Color Sequence 12 Plus 1"]
+// [Description "This text color matches a 1 level less intensive chart color of the sequence 12."]
+// [Tags "Base", "Chart", "Color", "Font", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_12_Plus1_TextColor: @sapDefault_Color;
+
+// [Label "Chart Text Shadow Sequence 12 Plus 1"]
+// [Description "This text shadow matches a 1 level less intensive chart color of the sequence 12."]
+// [Tags "Base", "Chart", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "boxShadow"]
+@sapChart_Sequence_12_Plus1_TextShadow: @sapDefault_Shadow;
+
+// [Label "Chart Color Sequence 12"]
+// [Description "This color is the base chart color of the sequence 12."]
+// [Tags "Base", "Chart", "Color", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_12: @sapDefault_Color;
+
+// [Label "Chart Text Color Sequence 12"]
+// [Description "This text color matches the base chart color of the sequence 12."]
+// [Tags "Base", "Chart", "Color", "Font", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_12_TextColor: @sapDefault_Color;
+
+// [Label "Chart Text Shadow Sequence 12"]
+// [Description "This text shadow matches the base chart color of the sequence 12."]
+// [Tags "Base", "Chart", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "boxShadow"]
+@sapChart_Sequence_12_TextShadow: @sapDefault_Shadow;
+
+// [Label "Chart Border Color Sequence 12"]
+// [Description "This border color matches the base chart color of the sequence 12."]
+// [Tags "Base", "Chart", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_12_BorderColor: @sapDefault_Color;
+
+// [Label "Chart Color Sequence 12 Minus 1"]
+// [Description "This color is a 1 level more intensive chart color of the sequence 12."]
+// [Tags "Base", "Chart", "Color", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_12_Minus1: @sapDefault_Color;
+
+// [Label "Chart Text Color Sequence 12 Minus 1"]
+// [Description "This text color matches a 1 level less intensive chart color of the sequence 12."]
+// [Tags "Base", "Chart", "Color", "Font", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_12_Minus1_TextColor: @sapDefault_Color;
+
+// [Label "Chart Text Shadow Sequence 12 Minus 1"]
+// [Description "This text shadow matches a 1 level more intensive chart color of the sequence 12."]
+// [Tags "Base", "Chart", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "boxShadow"]
+@sapChart_Sequence_12_Minus1_TextShadow: @sapDefault_Shadow;
+
+// [Label "Chart Color Sequence 12 Minus 2"]
+// [Description "This color is a 2 levels more intensive chart color of the sequence 12."]
+// [Tags "Base", "Chart", "Color", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_12_Minus2: @sapDefault_Color;
+
+// [Label "Chart Text Color Sequence 12 Minus 2"]
+// [Description "This text color matches a 2 levels less intensive chart color of the sequence 12."]
+// [Tags "Base", "Chart", "Color", "Font", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_12_Minus2_TextColor: @sapDefault_Color;
+
+// [Label "Chart Text Shadow Sequence 12 Minus 2"]
+// [Description "This text shadow matches a 2 levels more intensive chart color of the sequence 12."]
+// [Tags "Base", "Chart", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "boxShadow"]
+@sapChart_Sequence_12_Minus2_TextShadow: @sapDefault_Shadow;
+
+// [Label "Chart Color Sequence 12 Minus 3"]
+// [Description "This color is a 3 levels more intensive chart color of the sequence 12."]
+// [Tags "Base", "Chart", "Color", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_12_Minus3: @sapDefault_Color;
+
+// [Label "Chart Text Color Sequence 12 Minus 3"]
+// [Description "This text color matches a 3 levels less intensive chart color of the sequence 12."]
+// [Tags "Base", "Chart", "Color", "Font", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_12_Minus3_TextColor: @sapDefault_Color;
+
+// [Label "Chart Text Shadow Sequence 12 Minus 3"]
+// [Description "This text shadow matches a 3 levels more intensive chart color of the sequence 12."]
+// [Tags "Base", "Chart", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "boxShadow"]
+@sapChart_Sequence_12_Minus3_TextShadow: @sapDefault_Shadow;
+
+// [Label "Chart Color Sequence 12 Minus 4"]
+// [Description "This color is a 4 levels more intensive chart color of the sequence 12."]
+// [Tags "Base", "Chart", "Color", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_12_Minus4: @sapDefault_Color;
+
+// [Label "Chart Text Color Sequence 12 Minus 4"]
+// [Description "This text color matches a 4 levels less intensive chart color of the sequence 12."]
+// [Tags "Base", "Chart", "Color", "Font", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_12_Minus4_TextColor: @sapDefault_Color;
+
+// [Label "Chart Text Shadow Sequence 12 Minus 4"]
+// [Description "This text shadow matches a 4 levels more intensive chart color of the sequence 12."]
+// [Tags "Base", "Chart", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "boxShadow"]
+@sapChart_Sequence_12_Minus4_TextShadow: @sapDefault_Shadow;
+
+// [Label "Chart Color Sequence 12 Minus 5"]
+// [Description "This color is a 5 levels more intensive chart color of the sequence 12."]
+// [Tags "Base", "Chart", "Color", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_12_Minus5: @sapDefault_Color;
+
+// [Label "Chart Text Color Sequence 12 Minus 5"]
+// [Description "This text color matches a 5 levels less intensive chart color of the sequence 12."]
+// [Tags "Base", "Chart", "Color", "Font", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_12_Minus5_TextColor: @sapDefault_Color;
+
+// [Label "Chart Text Shadow Sequence 12 Minus 5"]
+// [Description "This text shadow matches a 5 levels more intensive chart color of the sequence 12."]
+// [Tags "Base", "Chart", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "boxShadow"]
+@sapChart_Sequence_12_Minus5_TextShadow: @sapDefault_Shadow;
+
+// [Label "Chart Color Sequence 'Bad' Plus 3"]
+// [Description "This color is a 3 levels less intensive chart color of the sequence 'Bad'."]
+// [Tags "Base", "Chart", "Color", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_Bad_Plus3: @sapDefault_Color;
+
+// [Label "Chart Text Color Sequence 'Bad' Plus 3"]
+// [Description "This text color matches a 3 levels less intensive chart color of the sequence 'Bad'."]
+// [Tags "Base", "Chart", "Color", "Font", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_Bad_Plus3_TextColor: @sapDefault_Color;
+
+// [Label "Chart Text Shadow Sequence 'Bad' Plus 3"]
+// [Description "This text shadow matches a 3 levels less intensive chart color of the sequence 'Bad'."]
+// [Tags "Base", "Chart", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "boxShadow"]
+@sapChart_Sequence_Bad_Plus3_TextShadow: @sapDefault_Shadow;
+
+// [Label "Chart Color Sequence 'Bad' Plus 2"]
+// [Description "This color is a 2 levels less intensive chart color of the sequence 'Bad'."]
+// [Tags "Base", "Chart", "Color", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_Bad_Plus2: @sapDefault_Color;
+
+// [Label "Chart Text Color Sequence 'Bad' Plus 2"]
+// [Description "This text color matches a 2 levels less intensive chart color of the sequence 'Bad'."]
+// [Tags "Base", "Chart", "Color", "Font", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_Bad_Plus2_TextColor: @sapDefault_Color;
+
+// [Label "Chart Text Shadow Sequence 'Bad' Plus 2"]
+// [Description "This text shadow matches a 2 levels less intensive chart color of the sequence 'Bad'."]
+// [Tags "Base", "Chart", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "boxShadow"]
+@sapChart_Sequence_Bad_Plus2_TextShadow: @sapDefault_Shadow;
+
+// [Label "Chart Color Sequence 'Bad' Plus 1"]
+// [Description "This color is a 1 level less intensive chart color of the sequence 'Bad'."]
+// [Tags "Base", "Chart", "Color", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_Bad_Plus1: @sapDefault_Color;
+
+// [Label "Chart Text Color Sequence 'Bad' Plus 1"]
+// [Description "This text color matches a 1 level less intensive chart color of the sequence 'Bad'."]
+// [Tags "Base", "Chart", "Color", "Font", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_Bad_Plus1_TextColor: @sapDefault_Color;
+
+// [Label "Chart Text Shadow Sequence 'Bad' Plus 1"]
+// [Description "This text shadow matches a 1 level less intensive chart color of the sequence 'Bad'."]
+// [Tags "Base", "Chart", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "boxShadow"]
+@sapChart_Sequence_Bad_Plus1_TextShadow: @sapDefault_Shadow;
+
+// [Label "Chart Color Sequence 'Bad'"]
+// [Description "This color is the base chart color of the sequence 'Bad'."]
+// [Tags "Base", "Chart", "Color", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_Bad: @sapDefault_Color;
+
+// [Label "Chart Text Color Sequence 'Bad'"]
+// [Description "This text color matches the base chart color of the sequence 'Bad'."]
+// [Tags "Base", "Chart", "Color", "Font", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_Bad_TextColor: @sapDefault_Color;
+
+// [Label "Chart Text Shadow Sequence 'Bad'"]
+// [Description "This text shadow matches the base chart color of the sequence 'Bad'."]
+// [Tags "Base", "Chart", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "boxShadow"]
+@sapChart_Sequence_Bad_TextShadow: @sapDefault_Shadow;
+
+// [Label "Chart Border Color Sequence 'Bad'"]
+// [Description "This border color matches the base chart color of the sequence 'Bad'."]
+// [Tags "Base", "Chart", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_Bad_BorderColor: @sapDefault_Color;
+
+// [Label "Chart Color Sequence 'Bad' Minus 1"]
+// [Description "This color is a 1 level more intensive chart color of the sequence 'Bad'."]
+// [Tags "Base", "Chart", "Color", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_Bad_Minus1: @sapDefault_Color;
+
+// [Label "Chart Text Color Sequence 'Bad' Minus 1"]
+// [Description "This text color matches a 1 level less intensive chart color of the sequence 'Bad'."]
+// [Tags "Base", "Chart", "Color", "Font", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_Bad_Minus1_TextColor: @sapDefault_Color;
+
+// [Label "Chart Text Shadow Sequence 'Bad' Minus 1"]
+// [Description "This text shadow matches a 1 level more intensive chart color of the sequence 'Bad'."]
+// [Tags "Base", "Chart", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "boxShadow"]
+@sapChart_Sequence_Bad_Minus1_TextShadow: @sapDefault_Shadow;
+
+// [Label "Chart Color Sequence 'Bad' Minus 2"]
+// [Description "This color is a 2 levels more intensive chart color of the sequence 'Bad'."]
+// [Tags "Base", "Chart", "Color", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_Bad_Minus2: @sapDefault_Color;
+
+// [Label "Chart Text Color Sequence 'Bad' Minus 2"]
+// [Description "This text color matches a 2 levels less intensive chart color of the sequence 'Bad'."]
+// [Tags "Base", "Chart", "Color", "Font", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_Bad_Minus2_TextColor: @sapDefault_Color;
+
+// [Label "Chart Text Shadow Sequence 'Bad' Minus 2"]
+// [Description "This text shadow matches a 2 levels more intensive chart color of the sequence 'Bad'."]
+// [Tags "Base", "Chart", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "boxShadow"]
+@sapChart_Sequence_Bad_Minus2_TextShadow: @sapDefault_Shadow;
+
+// [Label "Chart Color Sequence 'Bad' Minus 3"]
+// [Description "This color is a 3 levels more intensive chart color of the sequence 'Bad'."]
+// [Tags "Base", "Chart", "Color", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_Bad_Minus3: @sapDefault_Color;
+
+// [Label "Chart Text Color Sequence 'Bad' Minus 3"]
+// [Description "This text color matches a 3 levels less intensive chart color of the sequence 'Bad'."]
+// [Tags "Base", "Chart", "Color", "Font", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_Bad_Minus3_TextColor: @sapDefault_Color;
+
+// [Label "Chart Text Shadow Sequence 'Bad' Minus 3"]
+// [Description "This text shadow matches a 3 levels more intensive chart color of the sequence 'Bad'."]
+// [Tags "Base", "Chart", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "boxShadow"]
+@sapChart_Sequence_Bad_Minus3_TextShadow: @sapDefault_Shadow;
+
+// [Label "Chart Color Sequence 'Bad' Minus 4"]
+// [Description "This color is a 4 levels more intensive chart color of the sequence 'Bad'."]
+// [Tags "Base", "Chart", "Color", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_Bad_Minus4: @sapDefault_Color;
+
+// [Label "Chart Text Color Sequence 'Bad' Minus 4"]
+// [Description "This text color matches a 4 levels less intensive chart color of the sequence 'Bad'."]
+// [Tags "Base", "Chart", "Color", "Font", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_Bad_Minus4_TextColor: @sapDefault_Color;
+
+// [Label "Chart Text Shadow Sequence 'Bad' Minus 4"]
+// [Description "This text shadow matches a 4 levels more intensive chart color of the sequence 'Bad'."]
+// [Tags "Base", "Chart", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "boxShadow"]
+@sapChart_Sequence_Bad_Minus4_TextShadow: @sapDefault_Shadow;
+
+// [Label "Chart Color Sequence 'Bad' Minus 5"]
+// [Description "This color is a 5 levels more intensive chart color of the sequence 'Bad'."]
+// [Tags "Base", "Chart", "Color", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_Bad_Minus5: @sapDefault_Color;
+
+// [Label "Chart Text Color Sequence 'Bad' Minus 5"]
+// [Description "This text color matches a 5 levels less intensive chart color of the sequence 'Bad'."]
+// [Tags "Base", "Chart", "Color", "Font", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_Bad_Minus5_TextColor: @sapDefault_Color;
+
+// [Label "Chart Text Shadow Sequence 'Bad' Minus 5"]
+// [Description "This text shadow matches a 5 levels more intensive chart color of the sequence 'Bad'."]
+// [Tags "Base", "Chart", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "boxShadow"]
+@sapChart_Sequence_Bad_Minus5_TextShadow: @sapDefault_Shadow;
+
+// [Label "Chart Color Sequence 'Critical' Plus 3"]
+// [Description "This color is a 3 levels less intensive chart color of the sequence 'Critical'."]
+// [Tags "Base", "Chart", "Color", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_Critical_Plus3: @sapDefault_Color;
+
+// [Label "Chart Text Color Sequence 'Critical' Plus 3"]
+// [Description "This text color matches a 3 levels less intensive chart color of the sequence 'Critical'."]
+// [Tags "Base", "Chart", "Color", "Font", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_Critical_Plus3_TextColor: @sapDefault_Color;
+
+// [Label "Chart Text Shadow Sequence 'Critical' Plus 3"]
+// [Description "This text shadow matches a 3 levels less intensive chart color of the sequence 'Critical'."]
+// [Tags "Base", "Chart", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "boxShadow"]
+@sapChart_Sequence_Critical_Plus3_TextShadow: @sapDefault_Shadow;
+
+// [Label "Chart Color Sequence 'Critical' Plus 2"]
+// [Description "This color is a 2 levels less intensive chart color of the sequence 'Critical'."]
+// [Tags "Base", "Chart", "Color", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_Critical_Plus2: @sapDefault_Color;
+
+// [Label "Chart Text Color Sequence 'Critical' Plus 2"]
+// [Description "This text color matches a 2 levels less intensive chart color of the sequence 'Critical'."]
+// [Tags "Base", "Chart", "Color", "Font", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_Critical_Plus2_TextColor: @sapDefault_Color;
+
+// [Label "Chart Text Shadow Sequence 'Critical' Plus 2"]
+// [Description "This text shadow matches a 2 levels less intensive chart color of the sequence 'Critical'."]
+// [Tags "Base", "Chart", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "boxShadow"]
+@sapChart_Sequence_Critical_Plus2_TextShadow: @sapDefault_Shadow;
+
+// [Label "Chart Color Sequence 'Critical' Plus 1"]
+// [Description "This color is a 1 level less intensive chart color of the sequence 'Critical'."]
+// [Tags "Base", "Chart", "Color", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_Critical_Plus1: @sapDefault_Color;
+
+// [Label "Chart Text Color Sequence 'Critical' Plus 1"]
+// [Description "This text color matches a 1 level less intensive chart color of the sequence 'Critical'."]
+// [Tags "Base", "Chart", "Color", "Font", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_Critical_Plus1_TextColor: @sapDefault_Color;
+
+// [Label "Chart Text Shadow Sequence 'Critical' Plus 1"]
+// [Description "This text shadow matches a 1 level less intensive chart color of the sequence 'Critical'."]
+// [Tags "Base", "Chart", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "boxShadow"]
+@sapChart_Sequence_Critical_Plus1_TextShadow: @sapDefault_Shadow;
+
+// [Label "Chart Color Sequence 'Critical'"]
+// [Description "This color is the base chart color of the sequence 'Critical'."]
+// [Tags "Base", "Chart", "Color", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_Critical: @sapDefault_Color;
+
+// [Label "Chart Text Color Sequence 'Critical'"]
+// [Description "This text color matches the base chart color of the sequence 'Critical'."]
+// [Tags "Base", "Chart", "Color", "Font", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_Critical_TextColor: @sapDefault_Color;
+
+// [Label "Chart Text Shadow Sequence 'Critical'"]
+// [Description "This text shadow matches the base chart color of the sequence 'Critical'."]
+// [Tags "Base", "Chart", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "boxShadow"]
+@sapChart_Sequence_Critical_TextShadow: @sapDefault_Shadow;
+
+// [Label "Chart Border Color Sequence 'Critical'"]
+// [Description "This border color matches the base chart color of the sequence 'Critical'."]
+// [Tags "Base", "Chart", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_Critical_BorderColor: @sapDefault_Color;
+
+// [Label "Chart Color Sequence 'Critical' Minus 1"]
+// [Description "This color is a 1 level more intensive chart color of the sequence 'Critical'."]
+// [Tags "Base", "Chart", "Color", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_Critical_Minus1: @sapDefault_Color;
+
+// [Label "Chart Text Color Sequence 'Critical' Minus 1"]
+// [Description "This text color matches a 1 level less intensive chart color of the sequence 'Critical'."]
+// [Tags "Base", "Chart", "Color", "Font", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_Critical_Minus1_TextColor: @sapDefault_Color;
+
+// [Label "Chart Text Shadow Sequence 'Critical' Minus 1"]
+// [Description "This text shadow matches a 1 level more intensive chart color of the sequence 'Critical'."]
+// [Tags "Base", "Chart", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "boxShadow"]
+@sapChart_Sequence_Critical_Minus1_TextShadow: @sapDefault_Shadow;
+
+// [Label "Chart Color Sequence 'Critical' Minus 2"]
+// [Description "This color is a 2 levels more intensive chart color of the sequence 'Critical'."]
+// [Tags "Base", "Chart", "Color", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_Critical_Minus2: @sapDefault_Color;
+
+// [Label "Chart Text Color Sequence 'Critical' Minus 2"]
+// [Description "This text color matches a 2 levels less intensive chart color of the sequence 'Critical'."]
+// [Tags "Base", "Chart", "Color", "Font", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_Critical_Minus2_TextColor: @sapDefault_Color;
+
+// [Label "Chart Text Shadow Sequence 'Critical' Minus 2"]
+// [Description "This text shadow matches a 2 levels more intensive chart color of the sequence 'Critical'."]
+// [Tags "Base", "Chart", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "boxShadow"]
+@sapChart_Sequence_Critical_Minus2_TextShadow: @sapDefault_Shadow;
+
+// [Label "Chart Color Sequence 'Critical' Minus 3"]
+// [Description "This color is a 3 levels more intensive chart color of the sequence 'Critical'."]
+// [Tags "Base", "Chart", "Color", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_Critical_Minus3: @sapDefault_Color;
+
+// [Label "Chart Text Color Sequence 'Critical' Minus 3"]
+// [Description "This text color matches a 3 levels less intensive chart color of the sequence 'Critical'."]
+// [Tags "Base", "Chart", "Color", "Font", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_Critical_Minus3_TextColor: @sapDefault_Color;
+
+// [Label "Chart Text Shadow Sequence 'Critical' Minus 3"]
+// [Description "This text shadow matches a 3 levels more intensive chart color of the sequence 'Critical'."]
+// [Tags "Base", "Chart", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "boxShadow"]
+@sapChart_Sequence_Critical_Minus3_TextShadow: @sapDefault_Shadow;
+
+// [Label "Chart Color Sequence 'Critical' Minus 4"]
+// [Description "This color is a 4 levels more intensive chart color of the sequence 'Critical'."]
+// [Tags "Base", "Chart", "Color", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_Critical_Minus4: @sapDefault_Color;
+
+// [Label "Chart Text Color Sequence 'Critical' Minus 4"]
+// [Description "This text color matches a 4 levels less intensive chart color of the sequence 'Critical'."]
+// [Tags "Base", "Chart", "Color", "Font", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_Critical_Minus4_TextColor: @sapDefault_Color;
+
+// [Label "Chart Text Shadow Sequence 'Critical' Minus 4"]
+// [Description "This text shadow matches a 4 levels more intensive chart color of the sequence 'Critical'."]
+// [Tags "Base", "Chart", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "boxShadow"]
+@sapChart_Sequence_Critical_Minus4_TextShadow: @sapDefault_Shadow;
+
+// [Label "Chart Color Sequence 'Critical' Minus 5"]
+// [Description "This color is a 5 levels more intensive chart color of the sequence 'Critical'."]
+// [Tags "Base", "Chart", "Color", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_Critical_Minus5: @sapDefault_Color;
+
+// [Label "Chart Text Color Sequence 'Critical' Minus 5"]
+// [Description "This text color matches a 5 levels less intensive chart color of the sequence 'Critical'."]
+// [Tags "Base", "Chart", "Color", "Font", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_Critical_Minus5_TextColor: @sapDefault_Color;
+
+// [Label "Chart Text Shadow Sequence 'Critical' Minus 5"]
+// [Description "This text shadow matches a 5 levels more intensive chart color of the sequence 'Critical'."]
+// [Tags "Base", "Chart", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "boxShadow"]
+@sapChart_Sequence_Critical_Minus5_TextShadow: @sapDefault_Shadow;
+
+// [Label "Chart Color Sequence 'Good' Plus 3"]
+// [Description "This color is a 3 levels less intensive chart color of the sequence 'Good'."]
+// [Tags "Base", "Chart", "Color", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_Good_Plus3: @sapDefault_Color;
+
+// [Label "Chart Text Color Sequence 'Good' Plus 3"]
+// [Description "This text color matches a 3 levels less intensive chart color of the sequence 'Good'."]
+// [Tags "Base", "Chart", "Color", "Font", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_Good_Plus3_TextColor: @sapDefault_Color;
+
+// [Label "Chart Text Shadow Sequence 'Good' Plus 3"]
+// [Description "This text shadow matches a 3 levels less intensive chart color of the sequence 'Good'."]
+// [Tags "Base", "Chart", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "boxShadow"]
+@sapChart_Sequence_Good_Plus3_TextShadow: @sapDefault_Shadow;
+
+// [Label "Chart Color Sequence 'Good' Plus 2"]
+// [Description "This color is a 2 levels less intensive chart color of the sequence 'Good'."]
+// [Tags "Base", "Chart", "Color", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_Good_Plus2: @sapDefault_Color;
+
+// [Label "Chart Text Color Sequence 'Good' Plus 2"]
+// [Description "This text color matches a 2 levels less intensive chart color of the sequence 'Good'."]
+// [Tags "Base", "Chart", "Color", "Font", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_Good_Plus2_TextColor: @sapDefault_Color;
+
+// [Label "Chart Text Shadow Sequence 'Good' Plus 2"]
+// [Description "This text shadow matches a 2 levels less intensive chart color of the sequence 'Good'."]
+// [Tags "Base", "Chart", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "boxShadow"]
+@sapChart_Sequence_Good_Plus2_TextShadow: @sapDefault_Shadow;
+
+// [Label "Chart Color Sequence 'Good' Plus 1"]
+// [Description "This color is a 1 level less intensive chart color of the sequence 'Good'."]
+// [Tags "Base", "Chart", "Color", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_Good_Plus1: @sapDefault_Color;
+
+// [Label "Chart Text Color Sequence 'Good' Plus 1"]
+// [Description "This text color matches a 1 level less intensive chart color of the sequence 'Good'."]
+// [Tags "Base", "Chart", "Color", "Font", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_Good_Plus1_TextColor: @sapDefault_Color;
+
+// [Label "Chart Text Shadow Sequence 'Good' Plus 1"]
+// [Description "This text shadow matches a 1 level less intensive chart color of the sequence 'Good'."]
+// [Tags "Base", "Chart", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "boxShadow"]
+@sapChart_Sequence_Good_Plus1_TextShadow: @sapDefault_Shadow;
+
+// [Label "Chart Color Sequence 'Good'"]
+// [Description "This color is the base chart color of the sequence 'Good'."]
+// [Tags "Base", "Chart", "Color", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_Good: @sapDefault_Color;
+
+// [Label "Chart Text Color Sequence 'Good'"]
+// [Description "This text color matches the base chart color of the sequence 'Good'."]
+// [Tags "Base", "Chart", "Color", "Font", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_Good_TextColor: @sapDefault_Color;
+
+// [Label "Chart Text Shadow Sequence 'Good'"]
+// [Description "This text shadow matches the base chart color of the sequence 'Good'."]
+// [Tags "Base", "Chart", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "boxShadow"]
+@sapChart_Sequence_Good_TextShadow: @sapDefault_Shadow;
+
+// [Label "Chart Border Color Sequence 'Good'"]
+// [Description "This border color matches the base chart color of the sequence 'Good'."]
+// [Tags "Base", "Chart", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_Good_BorderColor: @sapDefault_Color;
+
+// [Label "Chart Color Sequence 'Good' Minus 1"]
+// [Description "This color is a 1 level more intensive chart color of the sequence 'Good'."]
+// [Tags "Base", "Chart", "Color", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_Good_Minus1: @sapDefault_Color;
+
+// [Label "Chart Text Color Sequence 'Good' Minus 1"]
+// [Description "This text color matches a 1 level less intensive chart color of the sequence 'Good'."]
+// [Tags "Base", "Chart", "Color", "Font", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_Good_Minus1_TextColor: @sapDefault_Color;
+
+// [Label "Chart Text Shadow Sequence 'Good' Minus 1"]
+// [Description "This text shadow matches a 1 level more intensive chart color of the sequence 'Good'."]
+// [Tags "Base", "Chart", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "boxShadow"]
+@sapChart_Sequence_Good_Minus1_TextShadow: @sapDefault_Shadow;
+
+// [Label "Chart Color Sequence 'Good' Minus 2"]
+// [Description "This color is a 2 levels more intensive chart color of the sequence 'Good'."]
+// [Tags "Base", "Chart", "Color", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_Good_Minus2: @sapDefault_Color;
+
+// [Label "Chart Text Color Sequence 'Good' Minus 2"]
+// [Description "This text color matches a 2 levels less intensive chart color of the sequence 'Good'."]
+// [Tags "Base", "Chart", "Color", "Font", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_Good_Minus2_TextColor: @sapDefault_Color;
+
+// [Label "Chart Text Shadow Sequence 'Good' Minus 2"]
+// [Description "This text shadow matches a 2 levels more intensive chart color of the sequence 'Good'."]
+// [Tags "Base", "Chart", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "boxShadow"]
+@sapChart_Sequence_Good_Minus2_TextShadow: @sapDefault_Shadow;
+
+// [Label "Chart Color Sequence 'Good' Minus 3"]
+// [Description "This color is a 3 levels more intensive chart color of the sequence 'Good'."]
+// [Tags "Base", "Chart", "Color", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_Good_Minus3: @sapDefault_Color;
+
+// [Label "Chart Text Color Sequence 'Good' Minus 3"]
+// [Description "This text color matches a 3 levels less intensive chart color of the sequence 'Good'."]
+// [Tags "Base", "Chart", "Color", "Font", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_Good_Minus3_TextColor: @sapDefault_Color;
+
+// [Label "Chart Text Shadow Sequence 'Good' Minus 3"]
+// [Description "This text shadow matches a 3 levels more intensive chart color of the sequence 'Good'."]
+// [Tags "Base", "Chart", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "boxShadow"]
+@sapChart_Sequence_Good_Minus3_TextShadow: @sapDefault_Shadow;
+
+// [Label "Chart Color Sequence 'Good' Minus 4"]
+// [Description "This color is a 4 levels more intensive chart color of the sequence 'Good'."]
+// [Tags "Base", "Chart", "Color", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_Good_Minus4: @sapDefault_Color;
+
+// [Label "Chart Text Color Sequence 'Good' Minus 4"]
+// [Description "This text color matches a 4 levels less intensive chart color of the sequence 'Good'."]
+// [Tags "Base", "Chart", "Color", "Font", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_Good_Minus4_TextColor: @sapDefault_Color;
+
+// [Label "Chart Text Shadow Sequence 'Good' Minus 4"]
+// [Description "This text shadow matches a 4 levels more intensive chart color of the sequence 'Good'."]
+// [Tags "Base", "Chart", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "boxShadow"]
+@sapChart_Sequence_Good_Minus4_TextShadow: @sapDefault_Shadow;
+
+// [Label "Chart Color Sequence 'Good' Minus 5"]
+// [Description "This color is a 5 levels more intensive chart color of the sequence 'Good'."]
+// [Tags "Base", "Chart", "Color", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_Good_Minus5: @sapDefault_Color;
+
+// [Label "Chart Text Color Sequence 'Good' Minus 5"]
+// [Description "This text color matches a 5 levels less intensive chart color of the sequence 'Good'."]
+// [Tags "Base", "Chart", "Color", "Font", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_Good_Minus5_TextColor: @sapDefault_Color;
+
+// [Label "Chart Text Shadow Sequence 'Good' Minus 5"]
+// [Description "This text shadow matches a 5 levels more intensive chart color of the sequence 'Good'."]
+// [Tags "Base", "Chart", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "boxShadow"]
+@sapChart_Sequence_Good_Minus5_TextShadow: @sapDefault_Shadow;
+
+// [Label "Chart Color Sequence Neutral Plus 3"]
+// [Description "This color is a 3 levels less intensive chart color of the sequence 'Neutral'."]
+// [Tags "Base", "Chart", "Color", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_Neutral_Plus3: @sapDefault_Color;
+
+// [Label "Chart Text Color Sequence Neutral Plus 3"]
+// [Description "This text color matches a 3 levels less intensive chart color of the sequence 'Neutral'."]
+// [Tags "Base", "Chart", "Color", "Font", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_Neutral_Plus3_TextColor: @sapDefault_Color;
+
+// [Label "Chart Text Shadow Sequence 'Neutral' Plus 3"]
+// [Description "This text shadow matches a 3 levels less intensive chart color of the sequence 'Neutral'."]
+// [Tags "Base", "Chart", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "boxShadow"]
+@sapChart_Sequence_Neutral_Plus3_TextShadow: @sapDefault_Shadow;
+
+// [Label "Chart Color Sequence Neutral Plus 2"]
+// [Description "This color is a 2 levels less intensive chart color of the sequence 'Neutral'."]
+// [Tags "Base", "Chart", "Color", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_Neutral_Plus2: @sapDefault_Color;
+
+// [Label "Chart Text Color Sequence Neutral Plus 2"]
+// [Description "This text color matches a 2 levels less intensive chart color of the sequence 'Neutral'."]
+// [Tags "Base", "Chart", "Color", "Font", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_Neutral_Plus2_TextColor: @sapDefault_Color;
+
+// [Label "Chart Text Shadow Sequence 'Neutral' Plus 2"]
+// [Description "This text shadow matches a 2 levels less intensive chart color of the sequence 'Neutral'."]
+// [Tags "Base", "Chart", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "boxShadow"]
+@sapChart_Sequence_Neutral_Plus2_TextShadow: @sapDefault_Shadow;
+
+// [Label "Chart Color Sequence Neutral Plus 1"]
+// [Description "This color is a 1 level less intensive chart color of the sequence 'Neutral'."]
+// [Tags "Base", "Chart", "Color", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_Neutral_Plus1: @sapDefault_Color;
+
+// [Label "Chart Text Color Sequence Neutral Plus 1"]
+// [Description "This text color matches a 1 level less intensive chart color of the sequence 'Neutral'."]
+// [Tags "Base", "Chart", "Color", "Font", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_Neutral_Plus1_TextColor: @sapDefault_Color;
+
+// [Label "Chart Text Shadow Sequence 'Neutral' Plus 1"]
+// [Description "This text shadow matches a 1 level less intensive chart color of the sequence 'Neutral'."]
+// [Tags "Base", "Chart", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "boxShadow"]
+@sapChart_Sequence_Neutral_Plus1_TextShadow: @sapDefault_Shadow;
+
 // [Label "Chart Color Sequence 'Neutral'"]
 // [Description "This color is the base chart color of the sequence 'Neutral'."]
 // [Tags "Base", "Chart", "Color", "Protected"]
@@ -7144,6 +10763,150 @@
 // [Category "Chart", "Sequence"]
 // [Type "color"]
 @sapChart_Sequence_Neutral: @sapDefault_Color;
+
+// [Label "Chart Text Color Sequence Neutral"]
+// [Description "This text color matches the base chart color of the sequence 'Neutral'."]
+// [Tags "Base", "Chart", "Color", "Font", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_Neutral_TextColor: @sapDefault_Color;
+
+// [Label "Chart Text Shadow Sequence 'Neutral'"]
+// [Description "This text shadow matches the base chart color of the sequence 'Neutral'."]
+// [Tags "Base", "Chart", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "boxShadow"]
+@sapChart_Sequence_Neutral_TextShadow: @sapDefault_Shadow;
+
+// [Label "Chart Border Color Sequence 'Neutral'"]
+// [Description "This border color matches the base chart color of the sequence 'Neutral'."]
+// [Tags "Base", "Chart", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_Neutral_BorderColor: @sapDefault_Color;
+
+// [Label "Chart Color Sequence Neutral Minus 1"]
+// [Description "This color is a 1 level more intensive chart color of the sequence 'Neutral'."]
+// [Tags "Base", "Chart", "Color", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_Neutral_Minus1: @sapDefault_Color;
+
+// [Label "Chart Text Color Sequence Neutral Minus 1"]
+// [Description "This text color matches a 1 level less intensive chart color of the sequence 'Neutral'."]
+// [Tags "Base", "Chart", "Color", "Font", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_Neutral_Minus1_TextColor: @sapDefault_Color;
+
+// [Label "Chart Text Shadow Sequence 'Neutral' Minus 1"]
+// [Description "This text shadow matches a 1 level more intensive chart color of the sequence 'Neutral'."]
+// [Tags "Base", "Chart", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "boxShadow"]
+@sapChart_Sequence_Neutral_Minus1_TextShadow: @sapDefault_Shadow;
+
+// [Label "Chart Color Sequence Neutral Minus 2"]
+// [Description "This color is a 2 levels more intensive chart color of the sequence 'Neutral'."]
+// [Tags "Base", "Chart", "Color", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_Neutral_Minus2: @sapDefault_Color;
+
+// [Label "Chart Text Color Sequence Neutral Minus 2"]
+// [Description "This text color matches a 2 levels less intensive chart color of the sequence 'Neutral'."]
+// [Tags "Base", "Chart", "Color", "Font", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_Neutral_Minus2_TextColor: @sapDefault_Color;
+
+// [Label "Chart Text Shadow Sequence 'Neutral' Minus 2"]
+// [Description "This text shadow matches a 2 levels more intensive chart color of the sequence 'Neutral'."]
+// [Tags "Base", "Chart", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "boxShadow"]
+@sapChart_Sequence_Neutral_Minus2_TextShadow: @sapDefault_Shadow;
+
+// [Label "Chart Color Sequence Neutral Minus 3"]
+// [Description "This color is a 3 levels more intensive chart color of the sequence 'Neutral'."]
+// [Tags "Base", "Chart", "Color", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_Neutral_Minus3: @sapDefault_Color;
+
+// [Label "Chart Text Color Sequence Neutral Minus 3"]
+// [Description "This text color matches a 3 levels less intensive chart color of the sequence 'Neutral'."]
+// [Tags "Base", "Chart", "Color", "Font", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_Neutral_Minus3_TextColor: @sapDefault_Color;
+
+// [Label "Chart Text Shadow Sequence 'Neutral' Minus 3"]
+// [Description "This text shadow matches a 3 levels more intensive chart color of the sequence 'Neutral'."]
+// [Tags "Base", "Chart", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "boxShadow"]
+@sapChart_Sequence_Neutral_Minus3_TextShadow: @sapDefault_Shadow;
+
+// [Label "Chart Color Sequence Neutral Minus 4"]
+// [Description "This color is a 4 levels more intensive chart color of the sequence 'Neutral'."]
+// [Tags "Base", "Chart", "Color", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_Neutral_Minus4: @sapDefault_Color;
+
+// [Label "Chart Text Color Sequence Neutral Minus 4"]
+// [Description "This text color matches a 4 levels less intensive chart color of the sequence 'Neutral'."]
+// [Tags "Base", "Chart", "Color", "Font", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_Neutral_Minus4_TextColor: @sapDefault_Color;
+
+// [Label "Chart Text Shadow Sequence 'Neutral' Minus 4"]
+// [Description "This text shadow matches a 4 levels more intensive chart color of the sequence 'Neutral'."]
+// [Tags "Base", "Chart", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "boxShadow"]
+@sapChart_Sequence_Neutral_Minus4_TextShadow: @sapDefault_Shadow;
+
+// [Label "Chart Color Sequence Neutral Minus 5"]
+// [Description "This color is a 5 levels more intensive chart color of the sequence 'Neutral'."]
+// [Tags "Base", "Chart", "Color", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_Neutral_Minus5: @sapDefault_Color;
+
+// [Label "Chart Text Color Sequence Neutral Minus 5"]
+// [Description "This text color matches a 5 levels less intensive chart color of the sequence 'Neutral'."]
+// [Tags "Base", "Chart", "Color", "Font", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "color"]
+@sapChart_Sequence_Neutral_Minus5_TextColor: @sapDefault_Color;
+
+// [Label "Chart Text Shadow Sequence 'Neutral' Minus 5"]
+// [Description "This text shadow matches a 5 levels more intensive chart color of the sequence 'Neutral'."]
+// [Tags "Base", "Chart", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "Sequence"]
+// [Type "boxShadow"]
+@sapChart_Sequence_Neutral_Minus5_TextShadow: @sapDefault_Shadow;
 
 // [Tags "SapInternal", "Base", "URI", "Font", "Protected"]
 // [Protected "true"]
@@ -7715,14 +11478,18 @@
 @sapCss_SvgIconPositive: @sapCss_SvgIconBase;
 @sapCss_SvgIconNegative: @sapCss_SvgIconBase;
 /*<SAP_FREETEXT_LESS>*/
-.sapCss_SAP-icons() when (@sapCss_SAP-icons) {@font-face {font-family: 'SAP-icons';
+.sapCss_SAP-icons() when (@sapCss_SAP-icons) {
+@font-face {
+font-family: 'SAP-icons';
 src: @sapFontUrl_SAP-icons_woff2 format('woff2'), @sapFontUrl_SAP-icons_woff format('woff'), @sapFontUrl_SAP-icons_ttf format('truetype'), local('SAP-icons');
 font-weight: normal;
 font-style: normal;
 }
 }
 .sapCss_SAP-icons();
-.sapCss_72() when (@sapCss_72) {@font-face {font-family: '72';
+.sapCss_72() when (@sapCss_72) {
+@font-face {
+font-family: '72';
 font-style: normal;
 font-weight: 400;
 src: @sapFontUrl_72_Regular_woff2 format('woff2'), @sapFontUrl_72_Regular_woff format('woff'), local('72');
@@ -7730,18 +11497,23 @@ unicode-range: U+00, U+0D, U+20-7E, U+A0-FF, U+131, U+152-153, U+161, U+178, U+1
 }
 }
 .sapCss_72();
-.sapCss_72full() when (@sapCss_72full) {@font-face {font-family: '72full';
+.sapCss_72full() when (@sapCss_72full) {
+@font-face {
+font-family: '72full';
 font-style: normal;
 font-weight: 400;
 src: @sapFontUrl_72_Regular_full_woff2 format('woff2'), @sapFontUrl_72_Regular_full_woff format('woff');
 }
 }
 .sapCss_72full();
-.sapCss_72Bold() when (@sapCss_72Bold) {@font-face {font-family: '72-Bold';
+.sapCss_72Bold() when (@sapCss_72Bold) {
+@font-face {
+font-family: '72-Bold';
 src: @sapFontUrl_72_Bold_woff2 format('woff2'), @sapFontUrl_72_Bold_woff format('woff'), local('72-Bold');
 unicode-range: U+00, U+0D, U+20-7E, U+A0-FF, U+131, U+152-153, U+161, U+178, U+17D-17E, U+192, U+237, U+2C6, U+2DC, U+3BC, U+1E9E, U+2013-2014, U+2018-201A, U+201C-201E, U+2020-2022, U+2026, U+2030, U+2039-203A, U+2044, U+20AC, U+2122;
 }
-@font-face {font-family: '72';
+@font-face {
+font-family: '72';
 font-style: normal;
 font-weight: 700;
 src: @sapFontUrl_72_Bold_woff2 format('woff2'), @sapFontUrl_72_Bold_woff format('woff'), local('72-Bold');
@@ -7749,21 +11521,27 @@ unicode-range: U+00, U+0D, U+20-7E, U+A0-FF, U+131, U+152-153, U+161, U+178, U+1
 }
 }
 .sapCss_72Bold();
-.sapCss_72Boldfull() when (@sapCss_72Boldfull) {@font-face {font-family: '72-Boldfull';
+.sapCss_72Boldfull() when (@sapCss_72Boldfull) {
+@font-face {
+font-family: '72-Boldfull';
 src: @sapFontUrl_72_Bold_full_woff2 format('woff2'), @sapFontUrl_72_Bold_full_woff format('woff');
 }
-@font-face {font-family: '72full';
+@font-face {
+font-family: '72full';
 font-style: normal;
 font-weight: 700;
 src: @sapFontUrl_72_Bold_full_woff2 format('woff2'), @sapFontUrl_72_Bold_full_woff format('woff');
 }
 }
 .sapCss_72Boldfull();
-.sapCss_72Semibold() when (@sapCss_72Semibold) {@font-face {font-family: '72-Semibold';
+.sapCss_72Semibold() when (@sapCss_72Semibold) {
+@font-face {
+font-family: '72-Semibold';
 src: @sapFontUrl_72_Semibold_woff2 format('woff2'), @sapFontUrl_72_Semibold_woff format('woff'), local('72-Semibold');
 unicode-range: U+00, U+0D, U+20-7E, U+A0-FF, U+131, U+152-153, U+161, U+178, U+17D-17E, U+192, U+237, U+2C6, U+2DC, U+3BC, U+1E9E, U+2013-2014, U+2018-201A, U+201C-201E, U+2020-2022, U+2026, U+2030, U+2039-203A, U+2044, U+20AC, U+2122;
 }
-@font-face {font-family: '72';
+@font-face {
+font-family: '72';
 font-style: normal;
 font-weight: 600;
 src: @sapFontUrl_72_Semibold_woff2 format('woff2'), @sapFontUrl_72_Semibold_woff format('woff'), local('72-Semibold');
@@ -7771,32 +11549,42 @@ unicode-range: U+00, U+0D, U+20-7E, U+A0-FF, U+131, U+152-153, U+161, U+178, U+1
 }
 }
 .sapCss_72Semibold();
-.sapCss_72Semiboldfull() when (@sapCss_72Semiboldfull) {@font-face {font-family: '72-Semiboldfull';
+.sapCss_72Semiboldfull() when (@sapCss_72Semiboldfull) {
+@font-face {
+font-family: '72-Semiboldfull';
 src: @sapFontUrl_72_Semibold_full_woff2 format('woff2'), @sapFontUrl_72_Semibold_full_woff format('woff');
 }
-@font-face {font-family: '72full';
+@font-face {
+font-family: '72full';
 font-style: normal;
 font-weight: 600;
 src: @sapFontUrl_72_Semibold_full_woff2 format('woff2'), @sapFontUrl_72_Semibold_full_woff format('woff');
 }
 }
 .sapCss_72Semiboldfull();
-.sapCss_72SemiboldDuplex() when (@sapCss_72SemiboldDuplex) {@font-face {font-family: '72-SemiboldDuplex';
+.sapCss_72SemiboldDuplex() when (@sapCss_72SemiboldDuplex) {
+@font-face {
+font-family: '72-SemiboldDuplex';
 src: @sapFontUrl_72_SemiboldDuplex_woff2 format('woff2'), @sapFontUrl_72_SemiboldDuplex_woff format('woff'), local('72-SemiboldDuplex');
 unicode-range: U+00, U+0D, U+20-7E, U+A0-FF, U+131, U+152-153, U+161, U+178, U+17D-17E, U+192, U+237, U+2C6, U+2DC, U+3BC, U+1E9E, U+2013-2014, U+2018-201A, U+201C-201E, U+2020-2022, U+2026, U+2030, U+2039-203A, U+2044, U+20AC, U+2122;
 }
 }
 .sapCss_72SemiboldDuplex();
-.sapCss_72SemiboldDuplexfull() when (@sapCss_72SemiboldDuplexfull) {@font-face {font-family: '72-SemiboldDuplexfull';
+.sapCss_72SemiboldDuplexfull() when (@sapCss_72SemiboldDuplexfull) {
+@font-face {
+font-family: '72-SemiboldDuplexfull';
 src: @sapFontUrl_72_SemiboldDuplex_full_woff2 format('woff2'), @sapFontUrl_72_SemiboldDuplex_full_woff format('woff');
 }
 }
 .sapCss_72SemiboldDuplexfull();
-.sapCss_72Light() when (@sapCss_72Light) {@font-face {font-family: '72-Light';
+.sapCss_72Light() when (@sapCss_72Light) {
+@font-face {
+font-family: '72-Light';
 src: @sapFontUrl_72_Light_woff2 format('woff2'), @sapFontUrl_72_Light_woff format('woff'), local('72-Light');
 unicode-range: U+00, U+0D, U+20-7E, U+A0-FF, U+131, U+152-153, U+161, U+178, U+17D-17E, U+192, U+237, U+2C6, U+2DC, U+3BC, U+1E9E, U+2013-2014, U+2018-201A, U+201C-201E, U+2020-2022, U+2026, U+2030, U+2039-203A, U+2044, U+20AC, U+2122;
 }
-@font-face {font-family: '72';
+@font-face {
+font-family: '72';
 font-style: normal;
 font-weight: 300;
 src: @sapFontUrl_72_Light_woff2 format('woff2'), @sapFontUrl_72_Light_woff format('woff'), local('72-Light');
@@ -7804,21 +11592,27 @@ unicode-range: U+00, U+0D, U+20-7E, U+A0-FF, U+131, U+152-153, U+161, U+178, U+1
 }
 }
 .sapCss_72Light();
-.sapCss_72Lightfull() when (@sapCss_72Lightfull) {@font-face {font-family: '72-Lightfull';
+.sapCss_72Lightfull() when (@sapCss_72Lightfull) {
+@font-face {
+font-family: '72-Lightfull';
 src: @sapFontUrl_72_Light_full_woff2 format('woff2'), @sapFontUrl_72_Light_full_woff format('woff');
 }
-@font-face {font-family: '72full';
+@font-face {
+font-family: '72full';
 font-style: normal;
 font-weight: 300;
 src: @sapFontUrl_72_Light_full_woff2 format('woff2'), @sapFontUrl_72_Light_full_woff format('woff');
 }
 }
 .sapCss_72Lightfull();
-.sapCss_72Black() when (@sapCss_72Black) {@font-face {font-family: '72Black';
+.sapCss_72Black() when (@sapCss_72Black) {
+@font-face {
+font-family: '72Black';
 src: @sapFontUrl_72_Black_woff2 format('woff2'), @sapFontUrl_72_Black_woff format('woff'), local('72Black');
 unicode-range: U+00, U+0D, U+20-7E, U+A0-FF, U+131, U+152-153, U+160-161, U+178, U+17D-17E, U+192, U+237, U+2C6-2C7, U+2DC, U+3BC, U+1E0E, U+2013-2014, U+2018-2019, U+201A, U+201C-201E, U+2020-2022, U+2026, U+2030, U+2039-203A, U+2044, U+20AC, U+2122;
 }
-@font-face {font-family: '72';
+@font-face {
+font-family: '72';
 font-style: normal;
 font-weight: 900;
 src: @sapFontUrl_72_Black_woff2 format('woff2'), @sapFontUrl_72_Black_woff format('woff'), local('72Black');
@@ -7826,21 +11620,27 @@ unicode-range: U+00, U+0D, U+20-7E, U+A0-FF, U+131, U+152-153, U+160-161, U+178,
 }
 }
 .sapCss_72Black();
-.sapCss_72Blackfull() when (@sapCss_72Blackfull) {@font-face {font-family: '72Blackfull';
+.sapCss_72Blackfull() when (@sapCss_72Blackfull) {
+@font-face {
+font-family: '72Blackfull';
 src: @sapFontUrl_72_Black_full_woff2 format('woff2'), @sapFontUrl_72_Black_full_woff format('woff');
 }
-@font-face {font-family: '72full';
+@font-face {
+font-family: '72full';
 font-style: normal;
 font-weight: 900;
 src: @sapFontUrl_72_Black_full_woff2 format('woff2'), @sapFontUrl_72_Black_full_woff format('woff');
 }
 }
 .sapCss_72Blackfull();
-.sapCss_72BoldItalic() when (@sapCss_72BoldItalic) {@font-face {font-family: '72-BoldItalic';
+.sapCss_72BoldItalic() when (@sapCss_72BoldItalic) {
+@font-face {
+font-family: '72-BoldItalic';
 src: @sapFontUrl_72_BoldItalic_woff2 format('woff2'), @sapFontUrl_72_BoldItalic_woff format('woff'), local('72-BoldItalic');
 unicode-range: U+00, U+0D, U+20-7E, U+A0-FF, U+131, U+152-153, U+161, U+178, U+17D-17E, U+192, U+237, U+2C6, U+2DC, U+3BC, U+1E9E, U+2013-2014, U+2018-201A, U+201C-201E, U+2020-2022, U+2026, U+2030, U+2039-203A, U+2044, U+20AC, U+2122;
 }
-@font-face {font-family: '72';
+@font-face {
+font-family: '72';
 font-style: italic;
 font-weight: 700;
 src: @sapFontUrl_72_BoldItalic_woff2 format('woff2'), @sapFontUrl_72_BoldItalic_woff format('woff'), local('72-BoldItalic');
@@ -7848,18 +11648,23 @@ unicode-range: U+00, U+0D, U+20-7E, U+A0-FF, U+131, U+152-153, U+161, U+178, U+1
 }
 }
 .sapCss_72BoldItalic();
-.sapCss_72BoldItalicfull() when (@sapCss_72BoldItalicfull) {@font-face {font-family: '72full';
+.sapCss_72BoldItalicfull() when (@sapCss_72BoldItalicfull) {
+@font-face {
+font-family: '72full';
 font-style: italic;
 font-weight: 700;
 src: @sapFontUrl_72_BoldItalic_full_woff2 format('woff2'), @sapFontUrl_72_BoldItalic_full_woff format('woff');
 }
 }
 .sapCss_72BoldItalicfull();
-.sapCss_72Condensed() when (@sapCss_72Condensed) {@font-face {font-family: '72-Condensed';
+.sapCss_72Condensed() when (@sapCss_72Condensed) {
+@font-face {
+font-family: '72-Condensed';
 src: @sapFontUrl_72_Condensed_woff2 format('woff2'), @sapFontUrl_72_Condensed_woff format('woff'), local('72-Condensed');
 unicode-range: U+00, U+0D, U+20-7E, U+A0-FF, U+131, U+152-153, U+161, U+178, U+17D-17E, U+192, U+237, U+2C6, U+2DC, U+3BC, U+1E9E, U+2013-2014, U+2018-201A, U+201C-201E, U+2020-2022, U+2026, U+2030, U+2039-203A, U+2044, U+20AC, U+2122;
 }
-@font-face {font-family: '72';
+@font-face {
+font-family: '72';
 font-style: normal;
 font-weight: 400;
 font-stretch: condensed;
@@ -7868,7 +11673,9 @@ unicode-range: U+00, U+0D, U+20-7E, U+A0-FF, U+131, U+152-153, U+161, U+178, U+1
 }
 }
 .sapCss_72Condensed();
-.sapCss_72Condensedfull() when (@sapCss_72Condensedfull) {@font-face {font-family: '72';
+.sapCss_72Condensedfull() when (@sapCss_72Condensedfull) {
+@font-face {
+font-family: '72';
 font-style: normal;
 font-weight: 400;
 font-stretch: condensed;
@@ -7877,11 +11684,14 @@ unicode-range: U+00, U+0D, U+20-7E, U+A0-FF, U+131, U+152-153, U+161, U+178, U+1
 }
 }
 .sapCss_72Condensedfull();
-.sapCss_72CondensedBold() when (@sapCss_72CondensedBold) {@font-face {font-family: '72-CondensedBold';
+.sapCss_72CondensedBold() when (@sapCss_72CondensedBold) {
+@font-face {
+font-family: '72-CondensedBold';
 src: @sapFontUrl_72_CondensedBold_woff2 format('woff2'), @sapFontUrl_72_CondensedBold_woff format('woff'), local('72-CondensedBold');
 unicode-range: U+00, U+0D, U+20-7E, U+A0-FF, U+131, U+152-153, U+161, U+178, U+17D-17E, U+192, U+237, U+2C6, U+2DC, U+3BC, U+1E9E, U+2013-2014, U+2018-201A, U+201C-201E, U+2020-2022, U+2026, U+2030, U+2039-203A, U+2044, U+20AC, U+2122;
 }
-@font-face {font-family: '72';
+@font-face {
+font-family: '72';
 font-style: normal;
 font-weight: 700;
 font-stretch: condensed;
@@ -7890,7 +11700,9 @@ unicode-range: U+00, U+0D, U+20-7E, U+A0-FF, U+131, U+152-153, U+161, U+178, U+1
 }
 }
 .sapCss_72CondensedBold();
-.sapCss_72CondensedBoldfull() when (@sapCss_72CondensedBoldfull) {@font-face {font-family: '72full';
+.sapCss_72CondensedBoldfull() when (@sapCss_72CondensedBoldfull) {
+@font-face {
+font-family: '72full';
 font-style: normal;
 font-weight: 700;
 font-stretch: condensed;
@@ -7898,11 +11710,14 @@ src: @sapFontUrl_72_CondensedBold_full_woff2 format('woff2'), @sapFontUrl_72_Con
 }
 }
 .sapCss_72CondensedBoldfull();
-.sapCss_72Italic() when (@sapCss_72Italic) {@font-face {font-family: '72-Italic';
+.sapCss_72Italic() when (@sapCss_72Italic) {
+@font-face {
+font-family: '72-Italic';
 src: @sapFontUrl_72_Italic_woff2 format('woff2'), @sapFontUrl_72_Italic_woff format('woff'), local('72-Italic');
 unicode-range: U+00, U+0D, U+20-7E, U+A0-FF, U+131, U+152-153, U+161, U+178, U+17D-17E, U+192, U+237, U+2C6, U+2DC, U+3BC, U+1E9E, U+2013-2014, U+2018-201A, U+201C-201E, U+2020-2022, U+2026, U+2030, U+2039-203A, U+2044, U+20AC, U+2122;
 }
-@font-face {font-family: '72';
+@font-face {
+font-family: '72';
 font-style: italic;
 font-weight: 400;
 src: @sapFontUrl_72_Italic_woff2 format('woff2'), @sapFontUrl_72_Italic_woff format('woff'), local('72-Italic');
@@ -7910,48 +11725,66 @@ unicode-range: U+00, U+0D, U+20-7E, U+A0-FF, U+131, U+152-153, U+161, U+178, U+1
 }
 }
 .sapCss_72Italic();
-.sapCss_72Italicfull() when (@sapCss_72Italicfull) {@font-face {font-family: '72full';
+.sapCss_72Italicfull() when (@sapCss_72Italicfull) {
+@font-face {
+font-family: '72full';
 font-style: italic;
 font-weight: 400;
 src: @sapFontUrl_72_Italic_full_woff2 format('woff2'), @sapFontUrl_72_Italic_full_woff format('woff');
 }
 }
 .sapCss_72Italicfull();
-.sapCss_72Mono() when (@sapCss_72Mono) {@font-face {font-family: '72Mono';
+.sapCss_72Mono() when (@sapCss_72Mono) {
+@font-face {
+font-family: '72Mono';
 src: @sapFontUrl_72Mono_Regular_woff2 format('woff2'), @sapFontUrl_72Mono_Regular_woff format('woff'), local('72Mono');
 unicode-range: U+00, U+0D, U+20-7E, U+A0-FF, U+131, U+152-153, U+161, U+178, U+17D-17E, U+192, U+237, U+2C6, U+2DC, U+3BC, U+1E9E, U+2013-2014, U+2018-201A, U+201C-201E, U+2020-2022, U+2026, U+2030, U+2039-203A, U+2044, U+20AC, U+2122;
 }
 }
 .sapCss_72Mono();
-.sapCss_72Monofull() when (@sapCss_72Monofull) {@font-face {font-family: '72Monofull';
+.sapCss_72Monofull() when (@sapCss_72Monofull) {
+@font-face {
+font-family: '72Monofull';
 src: @sapFontUrl_72Mono_Regular_full_woff2 format('woff2'), @sapFontUrl_72Mono_Regular_full_woff format('woff');
 }
 }
 .sapCss_72Monofull();
-.sapCss_72MonoBold() when (@sapCss_72MonoBold) {@font-face {font-family: '72Mono-Bold';
+.sapCss_72MonoBold() when (@sapCss_72MonoBold) {
+@font-face {
+font-family: '72Mono-Bold';
 src: @sapFontUrl_72Mono_Bold_woff2 format('woff2'), @sapFontUrl_72Mono_Bold_woff format('woff'), local('72Mono-Bold');
 unicode-range: U+00, U+0D, U+20-7E, U+A0-FF, U+131, U+152-153, U+161, U+178, U+17D-17E, U+192, U+237, U+2C6, U+2DC, U+3BC, U+1E9E, U+2013-2014, U+2018-201A, U+201C-201E, U+2020-2022, U+2026, U+2030, U+2039-203A, U+2044, U+20AC, U+2122;
 }
 }
 .sapCss_72MonoBold();
-.sapCss_72MonoBoldfull() when (@sapCss_72MonoBoldfull) {@font-face {font-family: '72Mono-Boldfull';
+.sapCss_72MonoBoldfull() when (@sapCss_72MonoBoldfull) {
+@font-face {
+font-family: '72Mono-Boldfull';
 src: @sapFontUrl_72Mono_Bold_full_woff2 format('woff2'), @sapFontUrl_72Mono_Bold_full_woff format('woff');
 }
 }
 .sapCss_72MonoBoldfull();
-.sapCss_SvgIconNegative() when (@sapCss_SvgIconNegative) {.sapSvgIconNegative {fill: @sapNegativeElementColor !important;
+.sapCss_SvgIconNegative() when (@sapCss_SvgIconNegative) {
+.sapSvgIconNegative {
+fill: @sapNegativeElementColor !important;
 }
 }
 .sapCss_SvgIconNegative();
-.sapCss_SvgIconCritical() when (@sapCss_SvgIconCritical) {.sapSvgIconCritical {fill: @sapCriticalElementColor !important;
+.sapCss_SvgIconCritical() when (@sapCss_SvgIconCritical) {
+.sapSvgIconCritical {
+fill: @sapCriticalElementColor !important;
 }
 }
 .sapCss_SvgIconCritical();
-.sapCss_SvgIconPositive() when (@sapCss_SvgIconPositive) {.sapSvgIconPositive {fill: @sapPositiveElementColor !important;
+.sapCss_SvgIconPositive() when (@sapCss_SvgIconPositive) {
+.sapSvgIconPositive {
+fill: @sapPositiveElementColor !important;
 }
 }
 .sapCss_SvgIconPositive();
-.sapCss_SvgIconBase() when (@sapCss_SvgIconBase) {.sapSvgIconBase {fill: @sapBaseColor !important;
+.sapCss_SvgIconBase() when (@sapCss_SvgIconBase) {
+.sapSvgIconBase {
+fill: @sapBaseColor !important;
 }
 }
 .sapCss_SvgIconBase();
