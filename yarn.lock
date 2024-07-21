@@ -3721,11 +3721,11 @@ __metadata:
   linkType: hard
 
 "@storybook/addon-toolbars@npm:^8.2.4":
-  version: 8.2.4
-  resolution: "@storybook/addon-toolbars@npm:8.2.4"
+  version: 8.2.5
+  resolution: "@storybook/addon-toolbars@npm:8.2.5"
   peerDependencies:
-    storybook: ^8.2.4
-  checksum: 10/33420c75f0f6b41aac28021007a49eb0dcaa6a37df2e215ab1862a8d240ef6b7c42fa4bdfd38996f509aa2e16d41e353c8b65fc10db090afb9c417ccbe4b42e4
+    storybook: ^8.2.5
+  checksum: 10/928b9bfccb8cfd9696e1e6993a4861cf05d2776c7fb19b6d245a1f4225485a45662000717c8fa3cf236a21f15d5e4e9a1c3af608c9fd14b60c9f98dce653dc05
   languageName: node
   linkType: hard
 
