@@ -9820,7 +9820,7 @@ __metadata:
     stylelint: "npm:16.2.1"
     stylelint-config-standard: "npm:36.0.0"
     stylelint-config-standard-scss: "npm:^13.0.0"
-    stylelint-scss: "npm:6.1.0"
+    stylelint-scss: "npm:6.4.1"
     through2: "npm:4.0.2"
     tocbot: "npm:4.12.3"
     ts-node: "npm:10.9.2"
@@ -12141,6 +12141,13 @@ __metadata:
   version: 0.30.0
   resolution: "known-css-properties@npm:0.30.0"
   checksum: 10/baed51f1c6baf0a904d0c5a041ebdc3a33a22af65a8dcdf7c2ecc22f80360ee44d2992737b745ed2e16a74f37cbb668a27d1e469d776286688921d0b8f0d3c04
+  languageName: node
+  linkType: hard
+
+"known-css-properties@npm:^0.34.0":
+  version: 0.34.0
+  resolution: "known-css-properties@npm:0.34.0"
+  checksum: 10/0e93e83f84537e89b9dc56c16aff511ed9f24128fe509c3f601ce495eb10bf6678e2f4ff521f6b53feabc7bd18088e43efb31aae4cb771da831ef1408c23211a
   languageName: node
   linkType: hard
 
@@ -16068,6 +16075,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"postcss-selector-parser@npm:^6.1.0":
+  version: 6.1.1
+  resolution: "postcss-selector-parser@npm:6.1.1"
+  dependencies:
+    cssesc: "npm:^3.0.0"
+    util-deprecate: "npm:^1.0.2"
+  checksum: 10/ce2af36b56d9333a6873498d3b6ee858466ceb3e9560f998eeaf294e5c11cafffb122d307f3c2904ee8f87d12c71c5ab0b26ca4228b97b6c70b7d1e7cd9b5737
+  languageName: node
+  linkType: hard
+
 "postcss-svgo@npm:^5.1.0":
   version: 5.1.0
   resolution: "postcss-svgo@npm:5.1.0"
@@ -18119,18 +18136,18 @@ __metadata:
   languageName: node
   linkType: hard
 
-"stylelint-scss@npm:6.1.0":
-  version: 6.1.0
-  resolution: "stylelint-scss@npm:6.1.0"
+"stylelint-scss@npm:6.4.1":
+  version: 6.4.1
+  resolution: "stylelint-scss@npm:6.4.1"
   dependencies:
-    known-css-properties: "npm:^0.29.0"
+    known-css-properties: "npm:^0.34.0"
     postcss-media-query-parser: "npm:^0.2.3"
     postcss-resolve-nested-selector: "npm:^0.1.1"
-    postcss-selector-parser: "npm:^6.0.15"
+    postcss-selector-parser: "npm:^6.1.0"
     postcss-value-parser: "npm:^4.2.0"
   peerDependencies:
     stylelint: ^16.0.2
-  checksum: 10/d1a37af38e6793f60ad3d836741ed624a7a07a56bea094750e72ed6e549243f966efcbe247940c6f1337328db700b1004f49e2119ff421235c979b2574995426
+  checksum: 10/7c8d0010ce4949438b4eb0154de0eaede31ecd3c552ca0bfa3cdf07768c63b248554fde31ae020abec791b0e62d62760b436e8967b2ad78d9fc74ebe67f85e9d
   languageName: node
   linkType: hard
 
