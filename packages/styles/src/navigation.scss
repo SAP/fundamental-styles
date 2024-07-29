@@ -338,7 +338,8 @@ $navListContainerSubmenu: #{$block}__list-container--submenu;
 
     .#{$navListContainer} {
       border: none;
-      padding: 0.05rem;
+      padding-block: 0.05rem;
+      padding-inline: 0.05rem;
       border-radius: 0.75rem;
       box-shadow: var(--sapMenu_Shadow2);
       background: var(--sapGroup_ContentBackground);
@@ -363,12 +364,14 @@ $navListContainerSubmenu: #{$block}__list-container--submenu;
         @include fd-set-position-left(calc(100% + 0.1875rem));
 
         top: 0;
-        padding: 0.5rem;
+        padding-block: 0.5rem;
+        padding-inline: 0.5rem;
         position: absolute;
         box-shadow: var(--sapMenu_Shadow1);
 
         .#{$navListWrapper} {
-          padding: 0;
+          padding-inline: 0;
+          padding-block: 0;
         }
 
         .#{$navList} {
@@ -407,21 +410,24 @@ $navListContainerSubmenu: #{$block}__list-container--submenu;
       &.#{$navListContainerSubmenu} {
         @include fd-set-position-left(calc(100% + 0.1875rem));
 
-        margin: 0;
-        padding: 0.5rem;
+        margin-inline: 0;
+        margin-block: 0;
+        padding-inline: 0.5rem;
+        padding-block: 0.5rem;
         box-shadow: var(--sapMenu_Shadow1);
         top: calc(var(--fdNavigation_Link_Min_Height) - 0.5rem);
       }
     }
 
     .#{$navListWrapper} {
-      padding: 0.7rem;
+      padding-block: 0.7rem;
+      padding-inline: 0.7rem;
     }
 
     .#{$navItemTitle} {
       height: auto;
       display: flex;
-      margin-bottom: 0.75rem;
+      margin-block-end: 0.75rem;
 
       .#{$navText} {
         --fdNavigation_Item_Title_Display: block;
@@ -494,7 +500,7 @@ $navListContainerSubmenu: #{$block}__list-container--submenu;
       height: 100%;
       overflow: scroll;
       position: relative;
-      padding-bottom: 0.25rem;
+      padding-block-end: 0.25rem;
     }
 
     &--bottom {
@@ -561,7 +567,7 @@ $navListContainerSubmenu: #{$block}__list-container--submenu;
       top: 0;
       z-index: 10;
       position: sticky;
-      padding-top: 0.25rem;
+      padding-block-start: 0.25rem;
       background: var(--sapList_Background);
 
       &::before {
@@ -841,9 +847,8 @@ $navListContainerSubmenu: #{$block}__list-container--submenu;
     height: var(--fdNavigation_Height);
     box-shadow: var(--fdNavigation_Box_Shadow);
     background: var(--sapNavigation_Background);
-    padding-top: var(--fdNavigation_Padding_Top);
+    padding-block: var(--fdNavigation_Padding_Top) var(--fdNavigation_Padding_Bottom);
     border-radius: var(--fdNavigation_Border_Radius);
-    padding-bottom: var(--fdNavigation_Padding_Bottom);
 
     &.#{$navPopup} {
       --fdNavigation_Height: auto;
@@ -884,7 +889,8 @@ $navListContainerSubmenu: #{$block}__list-container--submenu;
 
   &.#{$navHorizontal} {
     width: 100%;
-    padding: 0.75rem 1.5rem;
+    padding-block: 0.75rem;
+    padding-inline: 1.5rem;
     background: var(--sapNavigation_Background);
     height: var(--fdNavigation_Horizontal_Height);
 
@@ -945,7 +951,7 @@ $navListContainerSubmenu: #{$block}__list-container--submenu;
     }
 
     .#{$navListItemHome} {
-      padding-top: 0;
+      padding-block-start: 0;
       position: relative;
       background: transparent;
 
@@ -958,7 +964,8 @@ $navListContainerSubmenu: #{$block}__list-container--submenu;
       --fdPopover_Offset: calc(100% + 0.3875rem);
 
       border: none;
-      padding: 0.05rem;
+      padding-block: 0.05rem;
+      padding-inline: 0.05rem;
       border-radius: 0.75rem;
       box-shadow: var(--sapMenu_Shadow2);
       background: var(--sapGroup_ContentBackground);
@@ -966,13 +973,15 @@ $navListContainerSubmenu: #{$block}__list-container--submenu;
       &.#{$navListContainerMenu} {
         @include fd-set-position-right(-0.5rem);
 
-        padding: 0.5rem;
+        padding-block: 0.5rem;
+        padding-inline: 0.5rem;
         position: absolute;
         top: calc(100% + 0.3875rem);
         box-shadow: var(--sapMenu_Shadow1);
 
         .#{$navListWrapper} {
-          padding: 0;
+          padding-inline: 0;
+          padding-block: 0;
         }
 
         .#{$navList} {
@@ -1014,15 +1023,18 @@ $navListContainerSubmenu: #{$block}__list-container--submenu;
       &.#{$navListContainerSubmenu} {
         @include fd-set-position-left(calc(-100% - 0.1875rem));
 
-        margin: 0;
-        padding: 0.5rem;
+        margin-inline: 0;
+        margin-block: 0;
+        padding-inline: 0.5rem;
+        padding-block: 0.5rem;
         box-shadow: var(--sapMenu_Shadow1);
         top: calc(var(--fdNavigation_Link_Min_Height) - 0.5rem);
       }
     }
 
     .#{$navListWrapper} {
-      padding: 0.7rem;
+      padding-block: 0.7rem;
+      padding-inline: 0.7rem;
     }
 
     .#{$navItem} {
@@ -1064,7 +1076,8 @@ $navListContainerSubmenu: #{$block}__list-container--submenu;
 
     .#{$navItemWithExpander} {
       .#{$navExpander} {
-        margin: 0 0.0625rem;
+        margin-block: 0;
+        margin-inline: 0.0625rem;
         outline-offset: -0.0625rem;
         border: none;
         transition: var(--fdNavigation_Link_Transition);

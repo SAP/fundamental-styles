@@ -10,8 +10,6 @@ $block: #{$fd-namespace}-resizable-card-layout;
   $fd-resize-handle-width: 0.0625rem;
   $fd-resize-icon-padding: 0.0625rem;
   $fd-border-on-drag: 0.125rem dashed var(--sapContent_DragAndDropActiveColor);
-  $fd-layout-top-margin: 1rem;
-  $fd-layout-default-margin: 0.5rem;
   $fd-resize-handle-index: 2;
 
   // reduced by 0.5rem as card already have 0.5rem padding
@@ -24,9 +22,8 @@ $block: #{$fd-namespace}-resizable-card-layout;
 
   @include fd-reset();
 
-  padding-left: $fd-layout-default-margin;
-  padding-right: $fd-layout-default-margin;
-  margin-top: $fd-layout-top-margin;
+  padding-inline: 0.5rem;
+  margin-top: 1rem;
   position: relative;
 
   &__item {
@@ -140,8 +137,7 @@ $block: #{$fd-namespace}-resizable-card-layout;
 
   @each $size-label, $size in $fd-resizable-card-padding-x {
     &--#{$size-label} {
-      padding-left: map.get($fd-resizable-card-padding-x, $size-label);
-      padding-right: map.get($fd-resizable-card-padding-x, $size-label);
+      padding-inline: map.get($fd-resizable-card-padding-x, $size-label);
     }
   }
 }

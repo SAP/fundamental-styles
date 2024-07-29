@@ -11,8 +11,10 @@
   font-weight: normal;
   box-sizing: border-box;
   forced-color-adjust: none;
-  padding: 0;
-  margin: 0;
+  padding-inline: 0;
+  padding-block: 0;
+  margin-inline: 0;
+  margin-block: 0;
   border: 0;
 
   &::before,
@@ -23,13 +25,16 @@
 }
 
 @mixin fd-reset-spacing {
-  padding: 0;
-  margin: 0;
+  padding-inline: 0;
+  padding-block: 0;
+  margin-inline: 0;
+  margin-block: 0;
 }
 
 @mixin fd-reset-child-spacing {
   &:nth-child(n + 1) {
-    margin: 0;
+    margin-inline: 0;
+    margin-block: 0;
   }
 }
 
@@ -260,8 +265,8 @@
   line-height: $lineHeight;
   max-height: $lineCount * $lineHeight;
   overflow: hidden;
-  margin-right: -1em;
-  padding-right: 1em;
+  margin-inline-end: -1em;
+  padding-inline-end: 1em;
 
   &::before {
     position: absolute;
@@ -276,7 +281,7 @@
     right: 0;
     width: 1em;
     height: 1em;
-    margin-top: 0.2em;
+    margin-block-start: 0.2em;
     background: $backgroundColor;
   }
 }
@@ -369,8 +374,10 @@
   height: 1px;
   width: 1px;
   border: 0;
-  margin: -1px;
-  padding: 0;
+  margin-inline: -1px;
+  margin-block: -1px;
+  padding-inline: 0;
+  padding-block: 0;
   overflow: hidden;
   white-space: nowrap;
 
@@ -465,117 +472,77 @@
 }
 
 @mixin fd-reset-margins() {
-  margin: 0;
+  margin-inline: 0;
+  margin-block: 0;
 }
 
 @mixin fd-reset-margins-x() {
-  margin-left: 0;
-  margin-right: 0;
+  margin-inline: 0;
 }
 
 @mixin fd-reset-margins-y() {
-  margin-top: 0;
-  margin-bottom: 0;
+  margin-block: 0;
 }
 
 @mixin fd-set-margins-x($left: 0, $right: 0) {
-  margin-left: $left;
-  margin-right: $right;
-
-  @include fd-rtl() {
-    margin-right: $left;
-    margin-left: $right;
-  }
+  margin-inline: $left $right;
 }
 
 @mixin fd-set-margins-x-equal($value: 0) {
-  margin-left: $value;
-  margin-right: $value;
+  margin-inline: $value;
 }
 
 @mixin fd-set-margins-y($top: 0, $bottom: 0) {
-  margin-top: $top;
-  margin-bottom: $bottom;
+  margin-block: $top $bottom;
 }
 
 @mixin fd-set-margins-y-equal($value: 0) {
-  margin-top: $value;
-  margin-bottom: $value;
+  margin-block: $value;
 }
 
 @mixin fd-set-margin-left($left: 0) {
-  margin-left: $left;
-
-  @include fd-rtl() {
-    margin-right: $left;
-    margin-left: 0;
-  }
+  margin-inline-start: $left;
 }
 
 @mixin fd-set-margin-right($right: 0) {
-  margin-right: $right;
-
-  @include fd-rtl() {
-    margin-right: 0;
-    margin-left: $right;
-  }
+  margin-inline-end: $right;
 }
 
 @mixin fd-reset-paddings() {
-  padding: 0;
+  padding-inline: 0;
+  padding-block: 0;
 }
 
 @mixin fd-reset-paddings-x() {
-  padding-left: 0;
-  padding-right: 0;
+  padding-inline: 0;
 }
 
 @mixin fd-reset-paddings-y() {
-  padding-top: 0;
-  padding-bottom: 0;
+  padding-block: 0;
 }
 
 @mixin fd-set-paddings-x($left: 0, $right: 0) {
-  padding-left: $left;
-  padding-right: $right;
-
-  @include fd-rtl() {
-    padding-right: $left;
-    padding-left: $right;
-  }
+  padding-inline: $left $right;
 }
 
 @mixin fd-set-paddings-x-equal($value: 0) {
-  padding-left: $value;
-  padding-right: $value;
+  padding-inline: $value;
 }
 
 @mixin fd-set-paddings-y($top: 0, $bottom: 0) {
-  padding-top: $top;
-  padding-bottom: $bottom;
+  padding-block: $top $bottom;
 }
 
 @mixin fd-set-paddings-y-equal($value: 0) {
-  padding-top: $value;
-  padding-bottom: $value;
+  padding-block: $value;
 }
 
 @mixin fd-set-padding-left($left: 0) {
-  padding-left: $left;
-
-  @include fd-rtl() {
-    padding-right: $left;
-    padding-left: 0;
-  }
+  padding-inline-start: $left;
 }
 
 @mixin fd-set-padding-right($right: 0) {
-  padding-right: $right;
-
-  @include fd-rtl() {
-    padding-right: 0;
-    padding-left: $right;
-  }
+  padding-inline-end: $right;
 }
 
 @mixin fd-set-position-right($right) {

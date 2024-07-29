@@ -21,14 +21,17 @@ $block-product-switcher: #{$fd-namespace}-product-switcher;
   &__body {
     @include fd-reset();
 
-    padding: 20px 10px 0;
     color: initial;
+    padding-block: 1.25rem 0;
+    padding-inline: 0.625rem;
 
     &--list {
       @include fd-reset();
 
-      margin: 0;
-      padding: 0;
+      margin-inline: 0;
+      margin-block: 0;
+      padding-inline: 0;
+      padding-block: 0;
       list-style: none;
       overflow: hidden;
       width: $fd-product-switcher-width;
@@ -40,8 +43,10 @@ $block-product-switcher: #{$fd-namespace}-product-switcher;
       float: left;
       width: $fd-product-switcher-product-width + 10;
       text-align: center;
-      padding: 0 5px;
-      margin: 0 0 30px;
+      padding-block: 0;
+      padding-inline: 0.3125rem;
+      margin-inline:0;
+      margin-block: 0 1.875rem;
 
       @include fd-rtl() {
         float: right;
@@ -55,12 +60,14 @@ $block-product-switcher: #{$fd-namespace}-product-switcher;
 
       display: block;
       height: $fd-product-switcher-product-height;
-      margin: 0 0 10px;
+      margin-block: 0 0.625rem;
+      margin-inline: 0;
 
       > * {
         display: block;
         max-width: $fd-product-switcher-product-width;
-        margin: 0 auto;
+        margin-block: 0;
+        margin-inline: auto;
       }
     }
 

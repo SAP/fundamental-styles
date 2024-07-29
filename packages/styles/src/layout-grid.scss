@@ -18,8 +18,7 @@ $cols: 12;
 
 @mixin fd-row-nested($gutter) {
   .#{$blockRow} {
-    @include fd-set-margins-x-equal(-$gutter);
-
+    margin-inline: -$gutter;
     min-width: calc(100% + #{$gutter} * 2);
   }
 
@@ -48,11 +47,11 @@ $cols: 12;
     }
 
     .#{$classPrefix}--offset-#{$n} {
-      @include fd-set-margin-left(math.div($n, $cols) * 100%);
+      margin-inline-start: math.div($n, $cols) * 100%;
     }
 
     .#{$classPrefix}--offset-after-#{$n} {
-      @include fd-set-margin-right(math.div($n, $cols) * 100%);
+      margin-inline-end: math.div($n, $cols) * 100%;
     }
   }
 }
@@ -70,15 +69,17 @@ $cols: 12;
   flex-wrap: wrap;
   flex: 0 0 100%;
   position: relative;
-  padding: 0 $gutter-small;
+  padding-block: 0;
+  padding-inline: $gutter-small;
+  
 
   &.#{$blockContainer}--no-horizontal-gap,
   &.#{$blockContainer}--no-gap {
     .#{$blockRow} {
-      @include fd-reset-margins-x();
+      margin-inline: 0;
 
       .#{$blockCol} {
-        @include fd-reset-paddings-x();
+        padding-inline: 0;
       }
     }
   }
@@ -126,7 +127,8 @@ $cols: 12;
   .#{$blockContainer} {
     @include fd-row-nested($gutter);
 
-    padding: 0 $gutter;
+    padding-block: 0;
+    padding-inline: $gutter;
   }
 
   .#{$blockCol} {

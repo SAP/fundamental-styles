@@ -62,11 +62,11 @@
         @include fd-set-paddings-y-equal($fd-list-byline-borderless-item-padding-y);
 
         &:first-child {
-          padding-top: $fd-list-byline-item-padding-y;
+          padding-block-start: $fd-list-byline-item-padding-y;
         }
 
         &:last-child {
-          padding-bottom: $fd-list-byline-item-padding-y;
+          padding-block-end: $fd-list-byline-item-padding-y;
         }
       }
 
@@ -76,7 +76,7 @@
           top: 0;
 
           label {
-            padding-top: $fd-list-byline-borderless-item-padding-y;
+            padding-block-start: $fd-list-byline-borderless-item-padding-y;
 
             &::after {
               top: 0.375rem;
@@ -89,11 +89,7 @@
     // SELECTION + SELECT OBJECT ROW
     &.#{$block}--selection-row {
       .#{$block}__item {
-        padding-left: 1rem;
-
-        @include fd-rtl() {
-          padding-right: 1rem;
-        }
+        padding-inline-start: 1rem;
       }
     }
   }

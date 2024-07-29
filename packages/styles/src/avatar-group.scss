@@ -19,11 +19,13 @@ $block-avatar: #{$fd-namespace}-avatar;
   &__overflow-body {
     @include fd-reset();
 
-    padding: 1rem;
+    padding-block: 1rem;
+    padding-inline: 1rem;
     white-space: initial;
 
     &--no-padding {
-      padding: 0;
+      padding-inline: 0;
+      padding-block: 0;
     }
 
     &--no-horizontal-scroll {
@@ -35,7 +37,8 @@ $block-avatar: #{$fd-namespace}-avatar;
     }
 
     & > .#{$fd-namespace}-avatar {
-      margin: 0.25rem;
+      margin-block: 0.25rem;
+      margin-inline: 0.25rem;
     }
   }
 

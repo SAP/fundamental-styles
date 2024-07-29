@@ -3,12 +3,7 @@
 @import "./new-settings";
 @import "./mixins";
 
-$fd-breadcrumb-spacing: 0.25rem;
-$fd-breadcrumb-separator-color: var(--sapContent_LabelColor);
-$fd-breadcrumb-item-color: var(--sapContent_LabelColor);
 $block: #{$fd-namespace}-breadcrumb;
-$fd-breadcrumb-border-top-radius: 0.125rem !default;
-$fd-breadcrumb-overflow-active-color: var(--sapLink_Active_Color);
 
 .#{$block} {
   // BLOCK BASE *******************************************
@@ -23,13 +18,12 @@ $fd-breadcrumb-overflow-active-color: var(--sapLink_Active_Color);
   &__item {
     @include fd-reset();
 
-    color: $fd-breadcrumb-item-color;
+    color: var(--sapContent_LabelColor);
 
     &::after {
       content: "/";
-      color: $fd-breadcrumb-separator-color;
-      margin-right: $fd-breadcrumb-spacing;
-      margin-left: $fd-breadcrumb-spacing;
+      margin-inline: 0.25rem;
+      color: var(--sapContent_LabelColor);
     }
 
     &:last-child::after {
@@ -38,8 +32,8 @@ $fd-breadcrumb-overflow-active-color: var(--sapLink_Active_Color);
 
     .#{$block}__popover-body {
       border: none;
-      border-top-left-radius: $fd-breadcrumb-border-top-radius;
-      border-top-right-radius: $fd-breadcrumb-border-top-radius;
+      border-top-left-radius: 0.125rem;
+      border-top-right-radius: 0.125rem;
     }
   }
 }

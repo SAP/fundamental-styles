@@ -18,25 +18,29 @@ $block: #{$fd-namespace}-page;
   &__content {
     @include fd-reset();
 
-    padding: 0;
+    padding-inline: 0;
+    padding-block: 0;
   }
 
   &__content--s {
     @include fd-reset();
 
-    padding: 0 1rem;
+    padding-block: 0;
+    padding-inline: 1rem;
   }
 
   &__content--m_l {
     @include fd-reset();
 
-    padding: 0 2rem;
+    padding-block: 0;
+    padding-inline: 2rem;
   }
 
   &__content--xl {
     @include fd-reset();
 
-    padding: 0 3rem;
+    padding-block: 0;
+    padding-inline: 3rem;
   }
 
   &--solid {
@@ -55,7 +59,8 @@ $block: #{$fd-namespace}-page;
     &.#{$block}__content--S {
       @include fd-reset();
 
-      padding: 0 0.5rem;
+      padding-block: 0;
+      padding-inline: 0.5rem;
     }
   }
 }

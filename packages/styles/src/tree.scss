@@ -8,8 +8,6 @@
 // VARIABLES
 $block: #{$fd-namespace}-tree;
 $button: #{$fd-namespace}-button;
-$fd-tree-item-padding-right: 1rem !default;
-$fd-tree-item-padding-right-negative: -1rem !default;
 $fd-tree-item-transparent-border-bottom: var(--sapList_BorderWidth) solid transparent !default;
 $fd-tree-item-selected-border-bottom: var(--sapList_BorderWidth) solid var(--sapList_SelectionBorderColor) !default;
 
@@ -72,7 +70,6 @@ $fd-tree-item-selected-border-bottom: var(--sapList_BorderWidth) solid var(--sap
     &-container {
       @include fd-reset();
       @include fd-flex-vertical-center();
-      @include fd-set-padding-right($fd-tree-item-padding-right);
 
       @include fd-selected() {
         background: var(--sapList_SelectionBackgroundColor);
@@ -92,6 +89,7 @@ $fd-tree-item-selected-border-bottom: var(--sapList_BorderWidth) solid var(--sap
       min-height: var(--fdTree_Item_Height);
       background: var(--sapList_AlternatingBackground);
       border-bottom: $fd-tree-item-transparent-border-bottom;
+      padding-inline-end: 1rem;
 
       &--active {
         @include fd-tree-item-states();
@@ -100,7 +98,7 @@ $fd-tree-item-selected-border-bottom: var(--sapList_BorderWidth) solid var(--sap
   }
 
   &__button {
-    @include fd-set-margin-left(var(--fdTree_Button_Spacing));
+    margin-inline-start: var(--fdTree_Button_Spacing);
   }
 
   &__expander {
@@ -187,14 +185,7 @@ $fd-tree-item-selected-border-bottom: var(--sapList_BorderWidth) solid var(--sap
       }
 
       &:last-child {
-        margin-right: $fd-tree-item-padding-right-negative;
-      }
-
-      @include fd-rtl() {
-        &:last-child {
-          margin-right: 0;
-          margin-left: $fd-tree-item-padding-right-negative;
-        }
+        margin-inline-end: -1rem;
       }
     }
   }

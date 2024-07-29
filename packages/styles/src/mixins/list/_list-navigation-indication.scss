@@ -14,7 +14,7 @@ $fd-list-navigation-indicator-width: 2.5rem !default;
     }
 
     #{$block}__item.#{$block}__item--link {
-      @include fd-set-padding-right(0);
+      padding-inline-end: 0;
 
       &::after {
         content: none;
@@ -50,12 +50,14 @@ $fd-list-navigation-indicator-width: 2.5rem !default;
 
     .#{$block}__icon {
       &:last-child {
-        margin: 0;
+        margin-inline: 0;
+        margin-block: 0;
       }
 
       @include fd-rtl() {
         &:last-child {
-          margin: 0;
+          margin-inline: 0;
+          margin-block: 0;
         }
       }
     }

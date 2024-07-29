@@ -15,7 +15,8 @@ $block: #{$fd-namespace}-segmented-button;
   vertical-align: middle;
 
   button {
-    margin: 0;
+    margin-inline: 0;
+    margin-block: 0;
 
     --fdButtonPrioritizedBorderColor: var(--fdButton_Split_Border_Color);
     --fdButtonPrioritizedBackgroundColor: var(--fdButton_Split_Background_Color);
@@ -70,7 +71,7 @@ $block: #{$fd-namespace}-segmented-button;
       &:not(:last-child) {
         @include fd-set-margin-right(0);
 
-        margin-bottom: var(--fdButton_Segmented_Border_Offset);
+        margin-block-end: var(--fdButton_Segmented_Border_Offset);
       }
     }
   }

@@ -40,7 +40,8 @@ $block: #{$fd-namespace}-pagination;
     justify-content: space-between;
   }
 
-  padding: 0 1rem;
+  padding-block: 0;
+  padding-inline: 1rem;
   height: 2.75rem;
   width: 100%;
 
@@ -86,7 +87,8 @@ $block: #{$fd-namespace}-pagination;
     &::-webkit-outer-spin-button,
     &::-webkit-inner-spin-button {
       appearance: none;
-      margin: 0;
+      margin-inline: 0;
+      margin-block: 0;
     }
   }
 
@@ -101,7 +103,8 @@ $block: #{$fd-namespace}-pagination;
   }
 
   .#{$block}__total-label {
-    margin: 0;
+    margin-inline: 0;
+    margin-block: 0;
   }
 
   .#{$block}__link {

@@ -305,7 +305,7 @@ code.docs-code-grey {
 .fddocs-button-container {
   > .fd-button-split,
   > .fd-button {
-    margin-bottom: 5px;
+    margin-block-end: 5px;
   }
 
   display: block;
@@ -342,7 +342,7 @@ code.docs-code-grey {
     height: auto;
 
     &:not(:last-child) {
-      margin-bottom: 2rem;
+      margin-block-end: 2rem;
     }
   }
 }
@@ -497,11 +497,6 @@ body.sb-show-main {
   align-items: center;
   margin: 10px 0;
 
-  > span {
-    margin-right: 10px;
-    min-width: 75px;
-  }
-
   .fddocs-text {
     max-width: 300px;
     padding: 0 15px;
@@ -547,7 +542,7 @@ body.sb-show-main {
     margin: 0;
 
     &:last-of-type {
-      margin-bottom: 0.875rem;
+      margin-block-end: 0.875rem;
     }
   }
 }

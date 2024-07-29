@@ -52,14 +52,15 @@ $block: #{$fd-namespace}-vertical-nav;
   }
 
   &__utility-section {
-    margin-top: auto;
+    margin-block-start: auto;
 
     &::before {
       background-color: var(--sapAccentColor6);
       width: calc(100% - 2rem);
       height: 0.0625rem;
       display: block;
-      margin: 0.25rem auto;
+      margin-block: 0.25rem;
+      margin-inline: auto;
       content: ' ';
     }
   }

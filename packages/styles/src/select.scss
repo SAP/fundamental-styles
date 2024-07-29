@@ -15,7 +15,8 @@ $fd-select-padding-x-compact: 0.5rem;
   @include fd-reset();
 
   text-shadow: var(--fdSelect_Text_Shadow);
-  margin: 0.25rem 0;
+  margin-block: 0.25rem;
+  margin-inline: 0;
 
   &__control {
     @include fd-input-field-base(
@@ -42,8 +43,10 @@ $fd-select-padding-x-compact: 0.5rem;
       pointer-events: none;
     }
 
-    padding: 0;
-    margin: 0;
+    padding-inline: 0;
+    padding-block: 0;
+    margin-block: 0;
+    margin-inline: 0;
     cursor: pointer;
 
     &::after {
@@ -60,9 +63,9 @@ $fd-select-padding-x-compact: 0.5rem;
       cursor: text;
 
       .#{$block}__text-content {
-        @include fd-set-paddings-x-equal($fd-select-padding-x);
-
         --fdSelect_Min_Width: 5rem;
+
+        padding-inline: $fd-select-padding-x;
       }
 
       &[aria-selected='false'] {
@@ -88,7 +91,8 @@ $fd-select-padding-x-compact: 0.5rem;
       .#{$block}__text-content {
         font-style: italic;
         font-weight: normal;
-        padding: 0 0.625rem;
+        padding-block: 0;
+        padding-inline: 0.625rem;
         color: var(--sapField_PlaceholderTextColor);
 
         [class*='sap-icon'] {
@@ -103,31 +107,33 @@ $fd-select-padding-x-compact: 0.5rem;
   &__text-content {
     @include fd-reset();
     @include fd-ellipsis();
-    @include fd-set-padding-left($fd-select-padding-x);
     @include fd-select-set-min-width(2.5rem);
 
     --fdSelect_Min_Width: 2.5rem;
 
+    padding-inline-start: $fd-select-padding-x;
     color: var(--fdSelect_Text_Content_Color, var(--sapTextColor));
     cursor: pointer;
     display: var(--fdSelect_Text_Content_Display, inline-block);
   }
 
   @include fd-compact-or-condensed() {
-    margin: 0.1875rem 0;
+    margin-block: 0.1875rem;
+    margin-inline: 0;
+
     .#{$block}__control {
       height: $fd-form-input-height--compact;
       min-height: $fd-form-input-height--compact;
 
       .#{$block}__text-content {
-        @include fd-set-padding-left($fd-select-padding-x-compact);
-
         --fdSelect_Min_Width: 2.75rem;
+
+        padding-inline-start: $fd-select-padding-x-compact;
       }
 
       @include fd-readonly() {
         .#{$block}__text-content {
-          @include fd-set-paddings-x-equal($fd-select-padding-x-compact);
+          padding-inline: $fd-select-padding-x-compact;
         }
       }
     }

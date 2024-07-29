@@ -168,14 +168,16 @@ $block: #{$fd-namespace}-switch;
     &--off {
       @include fd-icon-selector() {
         color: var(--fdSwitch_Handle_Inactive_Color);
-        margin: var(--fdSwitch_Icon_Error_Margin);
+        margin-block: 0;
+        margin-inline: var(--fdSwitch_Icon_Error_Margin);
       }
     }
 
     &--on {
       @include fd-icon-selector() {
         color: var(--fdSwitch_Handle_Active_Color);
-        margin: var(--fdSwitch_Icon_Success_Margin);
+        margin-block: 0;
+        margin-inline: var(--fdSwitch_Icon_Success_Margin);
         visibility: hidden;
         opacity: $fd-switch-off-opacity;
       }
@@ -300,11 +302,13 @@ $block: #{$fd-namespace}-switch;
   @include fd-rtl() {
     .#{$block}__icon {
       &--on {
-        margin: var(--fdSwitch_Icon_Error_Margin);
+        margin-block: 0;
+        margin-inline: var(--fdSwitch_Icon_Error_Margin);
       }
 
       &--off {
-        margin: var(--fdSwitch_Icon_Success_Margin);
+        margin-block: 0;
+        margin-inline: var(--fdSwitch_Icon_Success_Margin);
       }
     }
 
@@ -341,7 +345,8 @@ $block: #{$fd-namespace}-switch;
       --fdSwitch_Width: var(--fdSwitch_Compact_Semantic_Width);
       --fdSwitch_Height: var(--fdSwitch_Compact_Semantic_Height);
 
-      padding: 0.1875rem 0;
+      padding-block: 0.1875rem;
+      padding-inline: 0;
 
       @include fd-slider-track-position(map.get($fd-switch-handle-offset, "compactSemantic", "ltr", "off"), map.get($fd-switch-handle-offset, "compactSemantic", "ltr", "on"));
     }

@@ -23,7 +23,8 @@ $block: #{$fd-namespace}-navigation-menu;
   --fdNavigationMenu_Item_Has_Link_Indicator_Icon: "\e04c";
   --fdNavigationMenu_Selection_Indicator_Offset_Right: var(--fdNavigationMenu_Item_Spacing);
 
-  padding: 0.5rem;
+  padding-block: 0.5rem;
+  padding-inline: 0.5rem;
   border-radius: 0.5rem;
   list-style-type: none;
   background: var(--sapGroup_ContentBackground);

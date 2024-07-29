@@ -15,8 +15,10 @@ $block: #{$fd-namespace}-tokenizer;
 
   width: 100%;
   display: flex;
-  padding: 0;
-  margin: 0;
+  padding-inline: 0;
+  padding-block: 0;
+  margin-inline: 0;
+  margin-block: 0;
   border: none;
   align-items: center;
 
@@ -39,12 +41,8 @@ $block: #{$fd-namespace}-tokenizer;
   }
 
   .#{$fd-namespace}-token {
-    margin-right: $fd-tokenizer-spacing;
+    margin-inline-end: $fd-tokenizer-spacing;
     max-width: calc(100% - #{$fd-tokenizer-input-width} - #{$fd-tokenizer-spacing});
-
-    @include fd-rtl() {
-      margin: 0 0 0 $fd-tokenizer-spacing;
-    }
   }
 
   &__indicator {
@@ -63,7 +61,8 @@ $block: #{$fd-namespace}-tokenizer;
 
     &.#{$fd-namespace}-input {
       border: none;
-      padding: 0;
+      padding-inline: 0;
+      padding-block: 0;
       min-width: $fd-tokenizer-input-width;
     }
 
@@ -101,16 +100,13 @@ $block: #{$fd-namespace}-tokenizer;
     --fdInput_Field_Compact_Min_Width: #{$fd-tokenizer-input-width-compact};
 
     .#{$block}__input:first-child {
-      padding: 0 $fd-tokenizer-compact-spacing;
+      padding-block: 0;
+      padding-inline: $fd-tokenizer-compact-spacing;
     }
 
     .#{$fd-namespace}-token {
-      margin-right: $fd-tokenizer-compact-spacing;
+      margin-inline-end: $fd-tokenizer-compact-spacing;
       max-width: calc(100% - #{$fd-tokenizer-input-width-compact} - #{$fd-tokenizer-compact-spacing});
-
-      @include fd-rtl() {
-        margin: 0 0 0 $fd-tokenizer-spacing;
-      }
     }
   }
 

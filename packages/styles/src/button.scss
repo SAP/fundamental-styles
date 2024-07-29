@@ -51,7 +51,7 @@ $fd-button-badge-spacing: 0.25rem;
   }
 
   *:not(:first-child):not(.#{$block-button}__badge) {
-    @include fd-set-margin-left(0.375rem);
+    margin-inline-start: 0.375rem;
   }
 
   > [class*='sap-icon'] {
@@ -81,7 +81,8 @@ $fd-button-badge-spacing: 0.25rem;
     z-index: 1;
     height: 1rem;
     position: var(--fdButton_Badge_Position, absolute);
-    padding: 0 0.3125rem;
+    padding-block: 0;
+    padding-inline: 0.3125rem;
     border-radius: 0.5rem;
     top: -$fd-button-badge-spacing;
     font-size: var(--sapFontSmallSize);
@@ -189,7 +190,8 @@ $fd-button-badge-spacing: 0.25rem;
       font-size: var(--fdButton_ToolHeader_Icon_Size);
     }
 
-    padding: var(--fdButton_ToolHeader_Padding);
+    padding-block: var(--fdButton_ToolHeader_Padding);
+    padding-inline: var(--fdButton_ToolHeader_Padding);
     color: var(--fdButton_ToolHeader_Color);
     background: var(--fdButton_ToolHeader_Background);
     border-radius: var(--fdButton_ToolHeader_Border_Radius);
@@ -257,7 +259,8 @@ $fd-button-badge-spacing: 0.25rem;
       background: var(--sapContent_BadgeBackground);
       border: 0.0625rem solid var(--fdButton_ToolHeader_Badge_Border_Color);
       color: var(--sapContent_BadgeBackground);
-      padding: 0;
+      padding-inline: 0;
+      padding-block: 0;
       overflow: hidden;
     }
   }
@@ -285,7 +288,8 @@ $fd-button-badge-spacing: 0.25rem;
       font-size: var(--fdButton_Nested_Icon_Size);
     }
 
-    padding: 0;
+    padding-inline: 0;
+    padding-block: 0;
     color: var(--fdButton_Nested_Color);
     background: var(--fdButton_Nested_Background);
     border-radius: var(--fdButton_Nested_Border_Radius);

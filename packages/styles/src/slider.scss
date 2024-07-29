@@ -247,7 +247,8 @@ $slider-side-padding: calc((var(--fdSlider_Handle_Width) * 0.5) + #{$handle-outl
     transform: translateY(-50%);
     left: 0;
     right: 0;
-    margin: 0 $focus-range-side-margin;
+    margin-block: 0;
+    margin-inline: $focus-range-side-margin;
     border-radius: var(--fdSlider_Range_Track_Border_Radius);
 
     @include fd-focus() {
@@ -386,7 +387,8 @@ $slider-side-padding: calc((var(--fdSlider_Handle_Width) * 0.5) + #{$handle-outl
           transform: translateX(-50%);
           width: $focus-range-size;
           height: auto;
-          margin: $focus-range-side-margin 0;
+          margin-block: $focus-range-side-margin;
+          margin-inline: 0;
         }
       }
     }

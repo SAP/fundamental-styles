@@ -36,14 +36,15 @@ $block: #{$fd-namespace}-radio;
     line-height: 1rem;
     display: flex;
     align-items: center;
-    padding: var(--fdRadio_Outer_Circle_Padding);
     color: var(--sapField_TextColor);
+    padding-block: var(--fdRadio_Outer_Circle_Padding);
+    padding-inline: var(--fdRadio_Outer_Circle_Padding);
 
     &::before {
       @include fd-form-radio-icon-base(var(--fdRadio_Inner_Circle_Diameter));
 
       border-radius: 50%;
-      margin-right: var(--fdRadio_Outer_Circle_Padding);
+      margin-inline-end: var(--fdRadio_Outer_Circle_Padding);
       background-color: var(--fdRadio_Background_Color);
       border: var(--fdRadio_Inner_Border_Width) var(--fdRadio_Inner_Border_Style) var(--fdRadio_Inner_Border_Color);
     }
@@ -71,24 +72,20 @@ $block: #{$fd-namespace}-radio;
     }
 
     @include fd-rtl() {
-      &::before {
-        margin-left: var(--fdRadio_Outer_Circle_Padding);
-        margin-right: 0;
-      }
-
       &::after {
         right: var(--fdRadio_Inner_Content_Padding);
       }
     }
 
     @include fd-empty() {
-      padding: var(--fdRadio_Outer_Circle_Padding);
-      margin: 0;
+      padding-block: var(--fdRadio_Outer_Circle_Padding);
+      padding-inline: var(--fdRadio_Outer_Circle_Padding);
+      margin-block: 0;
+      margin-inline: 0;
 
       &::before,
       &::after {
-        margin-right: 0;
-        margin-left: 0;
+        margin-inline: 0;
       }
     }
 

@@ -96,8 +96,9 @@ $fd-icon-tab-bar-semantic-values: (
 }
 
 @mixin fd-icon-tab-bar-reset-icon() {
-  margin: 0;
   content: none;
+  margin-inline: 0;
+  margin-block: 0;
 }
 
 @mixin fd-icon-tab-bar-process-selection-bar-width($iconSize) {
@@ -124,7 +125,8 @@ $fd-icon-tab-bar-semantic-values: (
 }
 
 %semantic-icon-extended {
-  margin: 0;
+  margin-inline: 0;
+  margin-block: 0;
   bottom: 0;
   width: 0.75rem;
   position: absolute;
@@ -191,7 +193,7 @@ $fd-icon-tab-bar-semantic-values: (
         &::before {
           @extend %semantic-icon-base;
 
-          margin-right: $semantic-icon-margin;
+          margin-inline-end: $semantic-icon-margin;
           content: map.get($set-params, 'icon');
         }
 
@@ -201,7 +203,7 @@ $fd-icon-tab-bar-semantic-values: (
           &::after {
             @extend %semantic-icon-base;
 
-            margin-left: $semantic-icon-margin;
+            margin-inline-end: $semantic-icon-margin;
             content: map.get($set-params, 'icon');
           }
         }
@@ -313,9 +315,10 @@ $fd-icon-tab-bar-semantic-values: (
 
   &__item {
     @include fd-reset();
-    @include fd-set-margin-right(2rem);
     @include fd-icon-tab-bar-semantic-item();
     @include fd-flex-vertical-center();
+
+    margin-inline-end: 2rem;
 
     &--single-click {
       .#{$block}__tab {
@@ -348,7 +351,7 @@ $fd-icon-tab-bar-semantic-values: (
       position: relative;
 
       .#{$block}__tab {
-        @include fd-set-paddings-x(0.188rem, 1.938rem);
+        padding-inline: 0.188rem 1.938rem;
 
         .#{$block}__badge {
           @include fd-set-position-right(1.625rem);
@@ -363,7 +366,7 @@ $fd-icon-tab-bar-semantic-values: (
 
       &.#{$block}__item--closable {
         .#{$block}__tab {
-          @include fd-set-paddings-x(0.188rem, 3.938rem);
+          padding-inline: 0.188rem 3.938rem;
         }
 
         .#{$block}__popover {
@@ -389,7 +392,7 @@ $fd-icon-tab-bar-semantic-values: (
       position: relative;
 
       .#{$block}__tab {
-        @include fd-set-paddings-x(0.188rem, 2.188rem);
+        padding-inline: 0.188rem 2.188rem;
       }
 
       .#{$block}__button-container {
@@ -614,7 +617,8 @@ $fd-icon-tab-bar-semantic-values: (
     min-width: 2rem;
     position: relative;
     text-decoration: none;
-    padding: 0.875rem 0.188rem;
+    padding-block: 0.875rem;
+    padding-inline: 0.188rem;
   }
 
   &__tab-container {
@@ -625,8 +629,8 @@ $fd-icon-tab-bar-semantic-values: (
   &__arrow {
     @include fd-reset();
     @include fd-flex-center();
-    @include fd-set-margins-x(var(--fdIcon_Tab_Bar_Single_Click_Icon_Container_Padding_Left), var(--fdIcon_Tab_Bar_Single_Click_Icon_Container_Padding_Right));
 
+    margin-inline: var(--fdIcon_Tab_Bar_Single_Click_Icon_Container_Padding_Left) var(--fdIcon_Tab_Bar_Single_Click_Icon_Container_Padding_Right);
     height: $fd-icon-tab-bar-single-click-arrow-size;
     width: var(--fdIcon_Tab_Bar_Single_Click_Icon_Container_Width);
 
@@ -653,13 +657,12 @@ $fd-icon-tab-bar-semantic-values: (
   &__counter {
     @extend %fd-icon-tab-bar-text;
 
-    margin-bottom: 0.125rem;
+    margin-block-end: 0.125rem;
   }
 
   &__icon {
     @include fd-reset();
     @include fd-flex-center();
-    @include fd-set-margins-x-equal($fd-icon-tab-bar-icon-spacing);
     @include fd-icon-tab-bar-set-circle-size(var(--fdIconTabBar_Icon_Size));
 
     @include fd-icon-selector() {
@@ -670,6 +673,7 @@ $fd-icon-tab-bar-semantic-values: (
     }
 
     position: relative;
+    margin-inline: $fd-icon-tab-bar-icon-spacing;
     background: var(--fdIconTabBar_Icon_Background);
     border: var(--fdIcon_Tab_Bar_Icon_Border_Weight) solid var(--fdIconTabBar_Icon_Border_Color);
   }
@@ -682,9 +686,8 @@ $fd-icon-tab-bar-semantic-values: (
       justify-content: flex-end;
     }
 
-    @include fd-set-paddings-x(0.125rem, 0.25rem);
-    @include fd-set-paddings-y(0.375rem, 0.25rem);
-
+    padding-inline: 0.125rem 0.25rem;
+    padding-block: 0.375rem 0.25rem;
     max-width: 7.5rem;
     height: $fd-icon-tab-bar-icon-circle-size;
   }
@@ -701,7 +704,8 @@ $fd-icon-tab-bar-semantic-values: (
 
   &__separator {
     @include fd-reset();
-    @include fd-set-paddings-x-equal(0.5rem);
+
+    padding-inline: 0.5rem;
 
     @include fd-icon-selector() {
       font-size: 1rem;
@@ -741,7 +745,8 @@ $fd-icon-tab-bar-semantic-values: (
       $separator-position: -1 * (0.5rem + $fd-icon-tab-bar-border-thickness);
 
       &::after {
-        padding: 0;
+        padding-inline: 0;
+        padding-block: 0;
         content: '';
         position: absolute;
         right: $separator-position;
@@ -768,14 +773,14 @@ $fd-icon-tab-bar-semantic-values: (
   }
 
   &__filter-counter {
-    @include fd-set-margin-right(0.5rem);
-
     font-size: 1.5rem;
+    margin-inline-end: 0.5rem;
   }
 
   &__overflow {
     @include fd-reset();
-    @include fd-set-paddings-x-equal(0.5rem);
+
+    padding-inline: 0.5rem;
 
     @include fd-flex-vertical-center() {
       gap: 0.375rem;
@@ -845,9 +850,8 @@ $fd-icon-tab-bar-semantic-values: (
     position: absolute;
 
     &-body {
-      @include fd-set-margin-right(-0.25rem);
-
-      margin-top: -0.25rem;
+      margin-inline-end: -0.25rem;
+      margin-block-start: -0.25rem;
       z-index: 10;
     }
 
@@ -960,7 +964,8 @@ $fd-icon-tab-bar-semantic-values: (
     }
 
     height: $fd-icon-tab-bar-icon-separator-size;
-    padding: 0 0.5rem;
+    padding-block: 0;
+    padding-inline: 0.5rem;
 
     [class*='sap-icon'] {
       width: $fd-icon-tab-bar-icon-separator-size;
@@ -980,13 +985,12 @@ $fd-icon-tab-bar-semantic-values: (
   &__line-separator {
     @include fd-reset();
 
-    margin-top: 0.25rem;
+    margin-block-start: 0.25rem;
     border-bottom: 0.0625rem solid var(--sapGroup_TitleBorderColor);
 
     &:first-child {
-      margin-top: 0.5rem;
-
-      @include fd-set-margins-x($fd-icon-tab-bar-list-padding-right, $fd-icon-tab-bar-list-padding-right);
+      margin-block-start: 0.5rem;
+      margin-inline: $fd-icon-tab-bar-list-padding-right $fd-icon-tab-bar-list-padding-right;
     }
   }
 
@@ -1003,7 +1007,7 @@ $fd-icon-tab-bar-semantic-values: (
           --fdList_Navigation_Link_Padding_Right: #{$fd-icon-tab-bar-list-padding-right};
 
           & + .#{$block}__line-separator {
-            @include fd-set-margins-x($offsetSeparator, $fd-icon-tab-bar-list-padding-right);
+            margin-inline: $offsetSeparator $fd-icon-tab-bar-list-padding-right;
           }
         }
       }
@@ -1014,10 +1018,10 @@ $fd-icon-tab-bar-semantic-values: (
 
       .#{$block}__badge {
         position: static;
-        margin-bottom: 0.625rem;
+        margin-block-end: 0.625rem;
 
         [class*='sap-icon'] {
-          @include fd-set-margin-right(0);
+          margin-block-end: 0;
         }
       }
 
@@ -1042,9 +1046,9 @@ $fd-icon-tab-bar-semantic-values: (
 
     .#{$block}__list-item-icon-container {
       @include fd-flex-center();
-      @include fd-set-margin-right(0.25rem);
 
       width: 1.25rem;
+      margin-inline-end: 0.25rem;
     }
 
     .#{$block}__list-link {
@@ -1069,26 +1073,22 @@ $fd-icon-tab-bar-semantic-values: (
 
     .#{$block}__list-item-icon [class*='sap-icon'],
     .#{$block}__list-item-icon [class*='sap-icon']:last-child {
-      @include fd-rtl() {
-        margin: 0;
-      }
-
-      margin: 0;
+      margin-inline: 0;
+      margin-block: 0;
       width: auto;
       font-size: 1rem;
     }
 
     .#{$block}__line-separator:first-child {
-      @include fd-set-paddings-x-equal($fd-icon-tab-bar-list-padding-right);
+      padding-inline: $fd-icon-tab-bar-list-padding-right;
 
       &::after {
-        margin-top: 0.75rem;
+        margin-block-start: 0.75rem;
       }
     }
 
     .#{$block}__icon-separator:first-child {
-      @include fd-set-paddings-x-equal($fd-icon-tab-bar-list-padding-right);
-
+      padding-inline: $fd-icon-tab-bar-list-padding-right;
       height: 1.5rem;
     }
 
@@ -1144,31 +1144,29 @@ $fd-icon-tab-bar-semantic-values: (
 
   &--icon-only {
     .#{$block}__tab {
-      @include fd-reset-paddings();
-      @include fd-set-paddings-y-equal(1rem);
-      @include fd-set-margins-x-equal(0.75rem);
-
+      padding-inline: 0;
+      padding-block: 1rem;
       position: relative;
       flex-direction: row;
+      margin-inline: 0.75rem;
     }
 
     .#{$block}__item {
-      @include fd-set-margins-x-equal(0.25rem);
+      margin-inline: 0.25rem;
 
       &:first-child {
-        @include fd-reset-margins();
-        @include fd-set-margin-right(0.25rem);
+        margin-block: 0;
+        margin-inline: 0 0.25rem;
 
         .#{$block}__tab {
-          @include fd-reset-margins-x();
-          @include fd-set-margin-right(0.75rem);
+          margin-inline: 0 0.75rem;
         }
       }
     }
 
     .#{$block}__item--closable {
       .#{$block}__tab {
-        @include fd-set-padding-right(2rem);
+        padding-inline-end: 2rem;
       }
 
       .#{$block}__button-container {
@@ -1223,7 +1221,7 @@ $fd-icon-tab-bar-semantic-values: (
             &::before {
               @extend %semantic-icon-base;
 
-              margin-right: 0.5rem;
+              margin-inline-end: 0.5rem;
               content: map.get($set-params, 'icon');
               color: map.get($set-params, 'iconColor');
             }
@@ -1236,7 +1234,7 @@ $fd-icon-tab-bar-semantic-values: (
               &::after {
                 @extend %semantic-icon-base;
 
-                margin-left: 0.5rem;
+                margin-inline-end: 0.5rem;
                 content: map.get($set-params, 'icon');
                 color: map.get($set-params, 'iconColor');
               }
@@ -1248,7 +1246,7 @@ $fd-icon-tab-bar-semantic-values: (
 
     .#{$block}__item--closable {
       .#{$block}__tab {
-        @include fd-set-padding-right(2rem);
+        padding-inline-end: 2rem;
       }
 
       .#{$block}__button-container {
@@ -1257,27 +1255,26 @@ $fd-icon-tab-bar-semantic-values: (
     }
 
     .#{$block}__tab {
-      @include fd-reset-paddings();
-      @include fd-set-paddings-y-equal(1rem);
       @include fd-icon-tab-bar-process-selection-bar-width($fd-icon-tab-bar-icon-circle-size);
 
+      padding-inline: 0;
+      padding-block: 1rem;
       flex-direction: row;
     }
 
     .#{$block}__counter {
-      margin-bottom: 0;
+      margin-block-end: 0;
       line-height: 0.875rem;
       font-size: var(--sapFontSmallSize);
 
       & + .#{$block}__label {
-        margin-top: 0.375rem;
+        margin-block-start: 0.375rem;
       }
     }
 
     @include fd-compact-or-condensed() {
       .#{$block}__details {
-        @include fd-reset-paddings-y();
-
+        padding-block: 0;
         height: $fd-icon-tab-bar-icon-circle-size-compact;
       }
 
@@ -1287,7 +1284,7 @@ $fd-icon-tab-bar-semantic-values: (
 
       .#{$block}__counter {
         & + .#{$block}__label {
-          margin-top: 0.25rem;
+          margin-block-start: 0.25rem;
         }
       }
     }
@@ -1295,53 +1292,51 @@ $fd-icon-tab-bar-semantic-values: (
 
   &--process {
     .#{$block}__item {
-      @include fd-reset-margins-x();
+      margin-inline: 0;
     }
   }
 
   &--filter {
     .#{$block}__item {
-      @include fd-set-margins-x-equal(0.25rem);
+      margin-inline: 0.25rem;
 
       &:first-child {
-        @include fd-set-margins-x(0, 1.063rem);
+        margin-inline: 0 1.063rem;
 
         .#{$block}__tab {
-          @include fd-set-paddings-y($fd-icon-tab-bar-filter-container-top-offset, 1.875rem);
-
+          padding-block: $fd-icon-tab-bar-filter-container-top-offset 1.875rem;
           position: relative;
         }
       }
 
       &:nth-child(2) {
-        @include fd-reset-margins();
-        @include fd-set-margin-right(0.25rem);
+        margin-block: 0;
+        margin-inline: 0 0.25rem;
       }
     }
 
     .#{$block}__tab {
-      @include fd-reset-margins-x();
-      @include fd-set-paddings-x-equal(0.188rem);
-      @include fd-set-paddings-y(0.875rem, 0.625rem);
-
+      margin-inline: 0;
+      padding-inline: 0.188rem;
+      padding-block: 0.875rem 0.625rem;
       position: relative;
       align-items: center;
     }
 
     .#{$block}__icon {
-      @include fd-reset-margins-x();
+      margin-inline: 0;
     }
 
     .#{$block}__label {
       width: 5rem;
       text-align: center;
-      margin-top: 0.375rem;
+      margin-block-start: 0.375rem;
     }
 
     @include fd-compact-or-condensed() {
       .#{$block}__item:first-child {
         .#{$block}__tab {
-          @include fd-set-paddings-y-equal($fd-icon-tab-bar-filter-container-top-offset-compact);
+          padding-block: $fd-icon-tab-bar-filter-container-top-offset-compact;
         }
       }
 
@@ -1363,11 +1358,10 @@ $fd-icon-tab-bar-semantic-values: (
 
     .#{$block}__tab {
       @include fd-set-navigation-tab-colors(var(--sapShell_Navigation_TextColor)) {
-        @include fd-set-margin-right(0.5rem);
-
         font-size: 1rem;
         height: 1rem;
         line-height: 1;
+        margin-inline-end: 0.5rem;
       }
 
       @include fd-selected() {
@@ -1403,7 +1397,8 @@ $fd-icon-tab-bar-semantic-values: (
 
       .#{$block}__arrow {
         [class*='sap-icon'] {
-          margin: 0;
+          margin-inline: 0;
+          margin-block: 0;
         }
       }
     }
@@ -1487,9 +1482,8 @@ $fd-icon-tab-bar-semantic-values: (
 
     .#{$block}__item {
       &--with-separator {
-        @include fd-set-margin-right(2rem);
-
         position: relative;
+        margin-inline-end: 2rem;
 
         &::after {
           content: '';
@@ -1516,13 +1510,12 @@ $fd-icon-tab-bar-semantic-values: (
     }
 
     .#{$block}__tab {
-      padding-top: 0.75rem;
-      padding-bottom: 1rem;
+      padding-block: 0.75rem 1rem;
 
       @include fd-selected() {
         &::after {
           border-radius: 0.125rem;
-          margin-bottom: 0.188rem;
+          margin-block-end: 0.188rem;
         }
       }
     }
@@ -1531,7 +1524,7 @@ $fd-icon-tab-bar-semantic-values: (
       align-items: normal;
 
       .#{$block}__button {
-        margin-top: 0.5rem;
+        margin-block-start: 0.5rem;
       }
     }
   }
@@ -1546,7 +1539,8 @@ $fd-icon-tab-bar-semantic-values: (
 
   &--responsive-paddings {
     .#{$block}__header {
-      @include fd-reset-paddings-y();
+      padding-block: 0;
+
       @include fd-apply-responsive-paddings();
     }
   }
@@ -1561,19 +1555,19 @@ $fd-icon-tab-bar-semantic-values: (
 .#{$block}--process {
   .#{$block}__item {
     &--overflow {
-      margin: 0;
+      margin-inline: 0;
+      margin-block: 0;
 
       &:last-of-type {
-        @include fd-set-margin-left(auto);
+        margin-inline-start: auto;
       }
 
       .#{$block}__popover {
         position: relative;
 
         &-body {
-          @include fd-set-margin-right(-0.25rem);
-
-          margin-top: 0.375rem;
+          margin-inline-end: -0.25rem;
+          margin-block-start: 0.375rem;
         }
       }
     }

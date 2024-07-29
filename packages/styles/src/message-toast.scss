@@ -23,7 +23,8 @@ $fd-message-toast-text-color: var(--sapList_TextColor);
   box-shadow: $fd-message-toast-box-shadow;
   background-color: $fd-message-toast-background;
   border-radius: $fd-message-toast-border-radius;
-  padding: $fd-message-toast-padding;
+  padding-inline: $fd-message-toast-padding;
+  padding-block: $fd-message-toast-padding;
 
   // TEXT
   font-family: $fd-message-toast-text-font-family;

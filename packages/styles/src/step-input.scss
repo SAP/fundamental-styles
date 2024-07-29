@@ -23,7 +23,8 @@ $block: #{$fd-namespace}-step-input;
   width: auto;
   display: inline-flex;
   align-items: center;
-  padding: 0;
+  padding-inline: 0;
+  padding-block: 0;
 
   &--full-width {
     width: 100%;
@@ -36,7 +37,8 @@ $block: #{$fd-namespace}-step-input;
     &::before,
     &::after {
       font-size: $fd-button-icon-font-size;
-      margin: 0;
+      margin-inline: 0;
+      margin-block: 0;
     }
 
     @include fd-focus() {
@@ -57,7 +59,8 @@ $block: #{$fd-namespace}-step-input;
 
     text-align: right;
     border: none;
-    margin: 0;
+    margin-inline: 0;
+    margin-block: 0;
     background: none;
     box-shadow: none;
     background-color: transparent;

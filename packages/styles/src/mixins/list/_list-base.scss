@@ -15,7 +15,8 @@
     @include fd-reset();
     @include fd-flex-vertical-center();
 
-    padding: 0 $fd-list-item-padding-x;
+    padding-block: 0;
+    padding-inline: $fd-list-item-padding-x;
   }
 
   &__item {
@@ -46,7 +47,8 @@
     }
 
     &--action {
-      padding: 0;
+      padding-inline: 0;
+      padding-block: 0;
       text-align: center;
       font-size: var(--sapFontSize);
       border-bottom: var(--fdList_Item_Action_Border);
@@ -60,7 +62,8 @@
       .#{$block}__title {
         @include fd-list-item-states();
 
-        padding: 0 $fd-list-item-padding-x;
+        padding-block: 0;
+        padding-inline: $fd-list-item-padding-x;
         height: var(--fdList_Item_Action_Button_Size);
         width: 100%;
         background: transparent;
@@ -141,17 +144,16 @@
     }
 
     ~ .#{$block}__icon {
-      @include fd-set-margin-right(-1rem);
+      margin-inline-end: -1rem;
     }
   }
 
   &__secondary {
-    @include fd-set-padding-left(1rem);
-
     max-width: 40%;
     text-align: right;
     font-size: var(--sapFontSize);
     color: var(--fdList_Status_Text_Color);
+    padding-inline-start: 1rem;
 
     &--positive {
       --fdList_Status_Text_Color: var(--sapPositiveTextColor);
@@ -185,7 +187,7 @@
       flex: 0 0 auto;
 
       &:first-child {
-        @include fd-set-margin-left(-1rem);
+        margin-inline-start: -1rem;
       }
     }
   }
@@ -201,7 +203,8 @@
     text-decoration: none;
     width: 100%;
     height: 100%;
-    padding: 0 $fd-list-item-padding-x;
+    padding-block: 0;
+    padding-inline: $fd-list-item-padding-x;
     border-bottom: var(--sapList_BorderWidth) solid var(--fdList_Item_Border_Color);
     background: var(--fdList_Item_Background_Color);
     cursor: pointer;
@@ -246,7 +249,6 @@
   &__message {
     @include fd-reset();
     @include fd-ellipsis();
-    @include fd-set-padding-left(0.5rem);
 
     position: absolute;
     line-height: 2rem;
@@ -254,6 +256,7 @@
     top: 0;
     left: 0;
     height: 2rem;
+    padding-inline-start: 0.5rem;
     font-size: var(--sapFontSmallSize);
     background-color: var(--fdList_Message_Background_Color);
 
@@ -275,8 +278,7 @@
   }
 
   .#{$block}__button {
-    @include fd-set-margin-left(var(--fdList_Button_Spacing));
-
+    margin-inline-start: var(--fdList_Button_Spacing);
     align-self: center;
   }
 
@@ -315,7 +317,7 @@
   }
 
   &--has-message {
-    padding-top: 2rem;
+    padding-block-start: 2rem;
   }
 
   &__infinite-scroll {

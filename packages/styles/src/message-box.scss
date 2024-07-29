@@ -43,8 +43,7 @@ $message-box-states: (
         .#{$block}__header.#{$bar},
         .#{$block}__footer.#{$bar},
         .#{$block}__body {
-          padding-left: map.get($fd-message-box-content-padding-x, $size-label);
-          padding-right: map.get($fd-message-box-content-padding-x, $size-label);
+          padding-inline: map.get($fd-message-box-content-padding-x, $size-label);
         }
       }
     }
@@ -72,7 +71,8 @@ $message-box-states: (
 
     @extend %dialog-body;
 
-    padding: 1rem;
+    padding-inline: 1rem;
+    padding-block: 1rem;
   }
 
   &__title {

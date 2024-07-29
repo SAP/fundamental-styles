@@ -15,7 +15,8 @@ $block: #{$fd-namespace}-fixed-card-layout;
 
   &__card-layout {
     @include fd-reset();
-    @include fd-set-margin-left(-$fd-card-margin);
+
+    margin-inline-start: -$fd-card-margin;
 
     @include fd-flex-justify-content-start() {
       flex-flow: column wrap;
@@ -52,17 +53,16 @@ $block: #{$fd-namespace}-fixed-card-layout;
   }
 
   &__card {
-    @include fd-set-padding-left($fd-card-margin);
-
     order: 1;
-    padding-top: #{$fd-card-margin};
+    padding-block-start: #{$fd-card-margin};
+    padding-inline-start:#{$fd-card-margin};
 
     &--single {
       flex-basis: 100%;
     }
 
     &:empty {
-      padding-top: 0;
+      padding-block-start: 0;
     }
   }
 

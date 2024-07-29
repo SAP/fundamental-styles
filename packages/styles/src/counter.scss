@@ -16,7 +16,8 @@ $block: #{$fd-namespace}-counter;
   line-height: 0.875rem;
   display: inline-block;
   text-align: center;
-  padding: 0 0.3125rem;
+  padding-block: 0;
+  padding-inline: 0.3125rem;
   z-index: 1;
   height: 1rem;
 

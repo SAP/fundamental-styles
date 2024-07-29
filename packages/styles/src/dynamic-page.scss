@@ -13,7 +13,6 @@ $block: #{$fd-namespace}-dynamic-page;
   $fd-dynamic-page-button-group-width: 4rem;
   $fd-dynamic-page-button-group-height: 0.0625rem;
   $fd-dynamic-page-focus-outline-offset: -0.25rem;
-  $fd-dynamic-page-toolbar-space: 1rem;
 
   @mixin fd-background-page($background-color) {
     .#{$block}__content {
@@ -26,7 +25,7 @@ $block: #{$fd-namespace}-dynamic-page;
       @include responsive-page($fd-dynamic-page-padding-top-bottom, $padding-x);
 
       &--collapsed {
-        padding-bottom: 1rem;
+        padding-block-end: 1rem;
       }
     }
 
@@ -45,7 +44,8 @@ $block: #{$fd-namespace}-dynamic-page;
   }
 
   @mixin responsive-page($padding-y: 0, $padding-x: 1rem) {
-    padding: $padding-y $padding-x;
+    padding-block: $padding-y;
+    padding-inline: $padding-x;
   }
 
   @mixin no-shadow() {
@@ -105,7 +105,7 @@ $block: #{$fd-namespace}-dynamic-page;
     }
 
     &--collapsed {
-      padding-bottom: 1rem;
+      padding-block-end: 1rem;
 
       .#{$block}__title {
         font-size: var(--fdDynamicPage_Title_Collapsed_Font_Size);
@@ -135,8 +135,9 @@ $block: #{$fd-namespace}-dynamic-page;
 
   &__breadcrumb {
     @include fd-reset();
-
-    padding: 0.5rem 0 0.25rem;
+    
+    padding-block: 0.5rem 0.25rem;
+    padding-inline: 0;
   }
 
   &__breadcrumb-title-container {
@@ -167,7 +168,8 @@ $block: #{$fd-namespace}-dynamic-page;
     .#{$fd-namespace}-link {
       @include fd-ellipsis();
 
-      padding: 0;
+      padding-inline: 0;
+      padding-block: 0;
       color: var(--sapGroup_TitleTextColor);
       font-size: var(--sapFontHeader3Size);
       max-width: 100%;
@@ -196,12 +198,9 @@ $block: #{$fd-namespace}-dynamic-page;
     @include fd-reset();
     @include fd-ellipsis();
 
-    padding: 0 0 0 1rem;
+    padding-block: 0;
+    padding-inline: 1rem 0;
     vertical-align: baseline;
-
-    @include fd-rtl() {
-      padding: 0 1rem 0 0;
-    }
   }
 
   &__title-subtitle-container {
@@ -214,32 +213,19 @@ $block: #{$fd-namespace}-dynamic-page;
     @include fd-reset();
     @include fd-flex-vertical-center();
 
-    margin-left: auto;
-
-    @include fd-rtl() {
-      margin-right: auto;
-      margin-left: 0;
-    }
+    margin-inline-start: auto;
   }
 
   .#{$block}__toolbar {
     @include fd-reset-spacing();
 
-    padding-left: $fd-dynamic-page-toolbar-space;
+    padding-inline-start: 1rem;
     background: transparent;
-
-    @include fd-rtl() {
-      padding-left: 0;
-      padding-right: $fd-dynamic-page-toolbar-space;
-    }
 
     &--actions,
     &--content {
-      padding: 0;
-
-      @include fd-rtl() {
-        padding: 0;
-      }
+      padding-block: 0;
+      padding-inline: 0;
     }
   }
 
@@ -273,7 +259,8 @@ $block: #{$fd-namespace}-dynamic-page;
 
     color: var(--sapGroup_TitleTextColor);
     font-size: var(--sapFontHeader5Size);
-    padding: 0;
+    padding-inline: 0;
+    padding-block: 0;
     line-height: 2rem;
   }
 
@@ -364,8 +351,10 @@ $block: #{$fd-namespace}-dynamic-page;
 
     --fdButtonBackgroundColor: var(--fdDynamicPage_Button_Pin_Background);
 
-    margin: 0 0.25rem;
-    padding: 0;
+    margin-block: 0;
+    margin-inline: 0.25rem;
+    padding-inline: 0;
+    padding-block: 0;
     width: $fd-dynamic-page-button-width;
     height: $fd-dynamic-page-button-height;
     min-width: $fd-dynamic-page-button-width;
@@ -395,14 +384,16 @@ $block: #{$fd-namespace}-dynamic-page;
     left: 0;
     right: 0;
     bottom: 0;
-    margin: 0 $fd-dynamic-page-padding-top-bottom $fd-dynamic-page-padding-top-bottom;
+    margin-block: 0 $fd-dynamic-page-padding-top-bottom;
+    margin-inline: $fd-dynamic-page-padding-top-bottom;
   }
 
   &--sm {
     @include fd-responsive-page($fd-dynamic-page-header-padding-top-bottom);
 
     .#{$block}__breadcrumb {
-      padding: 0;
+      padding-inline: 0;
+      padding-block: 0;
     }
 
     .#{$block}__title-container {
@@ -410,22 +401,11 @@ $block: #{$fd-namespace}-dynamic-page;
     }
 
     .#{$block}__toolbar {
-      padding-left: $fd-dynamic-page-toolbar-space;
-      margin-left: auto;
-
-      @include fd-rtl() {
-        margin-left: 0;
-        margin-right: auto;
-        padding-left: 0;
-        padding-right: $fd-dynamic-page-toolbar-space;
-      }
+      padding-inline-start: 1rem;
+      margin-inline-start: auto;
 
       &--content {
-        margin-left: 0;
-
-        @include fd-rtl() {
-          margin-right: 0;
-        }
+        margin-inline-start: 0;
       }
     }
   }
@@ -441,7 +421,8 @@ $block: #{$fd-namespace}-dynamic-page;
 
   &--md {
     .#{$block}__toolbar {
-      padding: 0;
+      padding-inline: 0;
+      padding-block: 0;
     }
   }
 

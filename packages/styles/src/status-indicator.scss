@@ -59,23 +59,19 @@ $color-states: (
       &--#{$set-name} {
         font-size: map.get($size-set, 'font-size');
         &.#{$block}__label--top {
-          margin-bottom: map.get($size-set, 'margin');
+          margin-block-end: map.get($size-set, 'margin');
         }
         &.#{$block}__label--right {
-          margin-left: map.get($size-set, 'margin');
+          margin-inline-start: map.get($size-set, 'margin');
 
           @include fd-rtl() {
-            margin-left: 0;
-            margin-right: map.get($size-set, 'margin');
             transform: matrix(1, 0, 0, 1, 22, 1);
           }
         }
         &.#{$block}__label--left {
-          margin-right: map.get($size-set, 'margin');
+          margin-inline-end: map.get($size-set, 'margin');
 
           @include fd-rtl() {
-            margin-right: 0;
-            margin-left: map.get($size-set, 'margin');
             transform: matrix(1, 0, 0, 1, -22, 1);
           }
         }

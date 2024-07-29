@@ -111,7 +111,8 @@ $table-z-index: (
   &__cell {
     text-align: left;
     height: var(--fdTable_Cell_Height);
-    padding: 0 0.5rem;
+    padding-block: 0;
+    padding-inline: 0.5rem;
     color: inherit;
     outline: none;
     border-bottom: var(--sapList_BorderWidth) var(--fdTable_Cell_Horizontal_Border_Style, solid) var(--sapList_BorderColor);
@@ -131,14 +132,16 @@ $table-z-index: (
     }
 
     &--mock {
-      padding: 0;
+      padding-inline: 0;
+      padding-block: 0;
       width: auto;
     }
 
     &--checkbox {
       width: var(--fdTable_Header_Cell_Height);
       vertical-align: baseline;
-      padding: 0;
+      padding-inline: 0;
+      padding-block: 0;
     }
 
     &--fit-content {
@@ -148,12 +151,14 @@ $table-z-index: (
     }
 
     &--no-padding {
-      padding: 0;
+      padding-inline: 0;
+      padding-block: 0;
     }
 
     &--status-indicator {
       width: 0.375rem;
-      padding: 0;
+      padding-inline: 0;
+      padding-block: 0;
     }
 
     &--navigated {
@@ -166,10 +171,6 @@ $table-z-index: (
 
     &:first-child:not(.#{$block}__cell--checkbox, &.#{$block}__cell--status-indicator) {
       @include fd-set-padding-left(1rem);
-
-      @include fd-rtl() {
-        padding-left: 0.5rem;
-      }
     }
   }
 
@@ -292,17 +293,7 @@ $table-z-index: (
     display: flex;
 
     .#{$block}__icon:not(:last-child) {
-      margin-right: 0.25rem;
-    }
-
-    @include fd-rtl() {
-      .#{$block}__icon {
-        margin-right: 0;
-      }
-
-      .#{$block}__icon:not(:last-child) {
-        margin-left: 0.25rem;
-      }
+      margin-inline-end: 0.25rem;
     }
   }
 

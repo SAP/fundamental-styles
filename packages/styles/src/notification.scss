@@ -102,7 +102,7 @@ $block: #{$fd-namespace}-notification;
     font-weight: var(--fdNotification_Item_Title_Font_Weight);
     line-height: var(--fdNotification_Item_Title_Line_Height);
     font-family: var(--fdNotification_Item_Title_Font_Family);
-    margin-bottom: var(--fdNotification_Item_Title_Margin_Bottom);
+    margin-block-end: var(--fdNotification_Item_Title_Margin_Bottom);
     max-height: calc(2 * var(--fdNotification_Item_Title_Line_Height));
 
     &--unread {
@@ -140,7 +140,8 @@ $block: #{$fd-namespace}-notification;
   .#{$block}__separator {
     @include fd-reset();
 
-    margin: 0 0.5rem;
+    margin-block: 0;
+    margin-inline: 0.5rem;
     font-size: var(--sapFontSize);
 
     &::before {
@@ -185,15 +186,16 @@ $block: #{$fd-namespace}-notification;
     &--description {
       @include fd-reset();
 
-      margin: 0.5rem 0 0;
+      margin-block: 0.5rem 0;
+      margin-inline: 0;
       white-space: break-spaces;
     }
   }
 
   &__indicator {
     @include fd-reset();
-    @include fd-set-margin-right(0.5rem);
 
+    margin-inline-end: 0.5rem;
     color: var(--fdNotification_Indicator_Color);
 
     &--error {
@@ -260,37 +262,39 @@ $block: #{$fd-namespace}-notification;
   }
 
   &.#{$block}--padding {
-    padding: 0.75rem;
+    padding-block: 0.75rem;
+    padding-inline: 0.75rem;
   }
 
   &--mobile {
     @include fd-notification-mobile();
 
-    padding: 0;
+    padding-inline: 0;
+    padding-block: 0;
     overflow: hidden;
 
     .#{$block}__indicator {
-      @include fd-set-padding-right(0.25rem);
+      padding-inline-end: 0.25rem;
     }
 
     .#{$block}__group-header {
-      @include fd-set-paddings-y(0.5rem, 0);
-      @include fd-set-paddings-x-equal(0.5rem);
+      padding-block: 0.5rem 0;
+      padding-inline: 0.5rem;
     }
 
     .#{$block}__body {
-      @include fd-set-paddings-y-equal(1rem);
-      @include fd-set-paddings-x(0.75rem, 0.5rem);
+      padding-block: 1rem;
+      padding-inline: 0.75rem 0.5rem;
     }
 
     .#{$block}__content {
-      @include fd-set-margin-left(0.75rem);
+      margin-inline-start: 0.75rem;
     }
   }
 
   &--in-dialog {
     box-shadow: none;
-    margin-bottom: 0;
+    margin-block-end: 0;
     border-bottom: $fd-notification-border;
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
@@ -387,7 +391,7 @@ $block: #{$fd-namespace}-notification;
         cursor: pointer;
         min-width: 20rem;
         max-width: 24rem;
-        margin-bottom: 0.125rem;
+        margin-block-end: 0.125rem;
         color: var(--fdNotification_Group_Item_Color);
         transition: var(--fdNotification_Group_Item_Transition);
         background: var(--fdNotification_Group_Item_Background);
@@ -454,13 +458,13 @@ $block: #{$fd-namespace}-notification;
       }
 
       .#{$block}__body {
-        margin-bottom: 0.125rem;
+        margin-block-end: 0.125rem;
         border: 0.0625rem solid var(--fdNotification_Item_Border_Color);
 
         &:last-of-type {
           border-bottom-left-radius: var(--sapElement_BorderCornerRadius);
           border-bottom-right-radius: var(--sapElement_BorderCornerRadius);
-          margin-bottom: 1.5rem;
+          margin-block-end: 1.5rem;
           border-bottom: 0.0625rem solid var(--fdNotification_Item_Border_Color);
 
           --fdNotification_Item_Border_Radius: var(--sapElement_BorderCornerRadius);

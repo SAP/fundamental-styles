@@ -63,7 +63,8 @@ $split-button-states: (
       height: var(--fdButton_Menu_Transparent_Separator_Height);
       background: $background;
       transform: translate(0, -50%);
-      margin: 0 0.125rem;
+      margin-block: 0;
+      margin-inline: 0.125rem;
       z-index: 10;
     }
 
@@ -91,7 +92,8 @@ $split-button-states: (
   @include fd-split-button-separator(var(--fdButton_Menu_Separator_Display), var(--sapButton_TextColor));
 
   > button {
-    margin: 0;
+    margin-inline: 0;
+    margin-block: 0;
 
     --fdButtonPrioritizedBorderColor: var(--fdButton_Split_Border_Color);
     --fdButtonPrioritizedBackgroundColor: var(--fdButton_Split_Background_Color);
