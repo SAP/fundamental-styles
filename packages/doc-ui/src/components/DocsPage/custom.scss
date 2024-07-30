@@ -311,6 +311,18 @@ code.docs-code-grey {
   display: block;
 }
 
+.fddocs-button-container.fddocs-ai-button-container {
+  > .fd-button-split,
+  > .fd-button {
+    margin-block-end: 0;
+  }
+
+  gap: 2rem;
+  display: inline-flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
 .fd-dialog,
 .fd-message-box {
   z-index: 101;
