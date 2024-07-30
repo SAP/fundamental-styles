@@ -1,0 +1,60 @@
+@use "sass:map";
+
+@import "./new-settings";
+@import "./mixins";
+
+$block: #{$fd-namespace}-prompt-input;
+
+.#{$block} {
+  @include fd-reset();
+  @include fd-flex(column);
+
+  width: 100%;
+
+  &__wrapper {
+    @include fd-reset();
+
+    @include fd-flex() {
+      gap: 0.5rem;
+    };
+  }
+
+  &__inner-wrapper {
+    @include fd-reset();
+
+    @include fd-flex(column) {
+      flex: 1;
+      align-items: flex-end;
+    };
+
+    & + button {
+      margin-block-start: var(--fdPropmtInput_Offset, 0.25rem);
+    }
+
+    &:has(.is-expanded),
+    &:has([aria-expanded="true"]) {
+      gap: var(--fdPropmtInput_Offset, 0.25rem);
+    }
+
+    input:placeholder-shown + span {
+      display: none;
+    }
+  }
+
+  &__counter {
+    @include fd-reset();
+
+    cursor: text;
+    max-width: 100%;
+    font-size: .75rem;
+    color: var(--sapContent_LabelColor);
+  }
+
+  .#{$fd-namespace}-form-input-message-group {
+    width: 100%;
+  }
+
+  @include fd-compact-or-condensed() {
+    --fdPropmtInput_Offset: 0.1875rem;
+  }
+}
