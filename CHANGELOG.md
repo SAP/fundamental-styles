@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.37.5-rc.4](https://github.com/SAP/fundamental-styles/compare/v0.37.5-rc.3...v0.37.5-rc.4) (2024-07-31)
+
+### Features
+
+-   **styles:** introduce Prompt Input [ci visual] ([#5532](https://github.com/SAP/fundamental-styles/issues/5532)) ([7d6ddb4](https://github.com/SAP/fundamental-styles/commit/7d6ddb47ff4993422ffd73bb7f0799418b505b98))
+
 ## [0.37.5-rc.3](https://github.com/SAP/fundamental-styles/compare/v0.37.5-rc.2...v0.37.5-rc.3) (2024-07-30)
 
 **Note:** Version bump only for package fundamental-styles
