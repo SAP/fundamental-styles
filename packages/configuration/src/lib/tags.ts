@@ -59,4 +59,14 @@ export const tags = {
         "title": "Version 1 Component",
         "color": 1
     },
+    "ai": {
+        "name": "ai",
+        "title": "AI",
+        "color": 2
+    },
+    "experimental": {
+        "name": "experimental",
+        "title": "Experimental",
+        "color": 6
+    },
 }
