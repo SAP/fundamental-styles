@@ -836,3 +836,31 @@
     @content;
   }
 }
+
+@mixin fd-ai-text-highlight() {
+  color: inherit;
+  padding-inline: 0.125rem;
+  border-radius: 0.25rem;
+  background-color: var(--sapInformationBackground);
+
+  @include fd-hover() {
+    box-shadow: 0 0 0 0.0625rem var(--sapInformationBorderColor);     
+  }
+
+  @include fd-focus() {
+    box-shadow: 0 0 0 0.0625rem var(--sapInformationBorderColor);     
+  }
+
+  &.is-hidden {
+    background-color: transparent;
+
+    @include fd-hover() {
+      box-shadow: none;     
+    }
+  
+    @include fd-focus() {
+      box-shadow: none;     
+    }
+  }
+}
+

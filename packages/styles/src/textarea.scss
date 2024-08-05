@@ -24,6 +24,7 @@ $block: #{$fd-namespace}-textarea;
   resize: none;
   display: block;
   cursor: text;
+  position: relative;
   line-height: var(--fdTextarea_Line_Height);
 
   &[readonly],
@@ -81,6 +82,14 @@ $block: #{$fd-namespace}-textarea;
     &[readonly],
     &.is-readonly {
       display: none;
+    }
+  }
+
+  &--ai {
+    padding-inline: 1rem;
+
+    mark {
+      @include fd-ai-text-highlight();
     }
   }
 }
