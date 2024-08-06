@@ -33,4 +33,8 @@ $block: #{$fd-namespace}-text;
       cursor: pointer;
     }
   }
+
+  &__ai-highlight {
+    @include fd-ai-text-highlight();
+  }
 }

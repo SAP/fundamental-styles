@@ -13,6 +13,16 @@ $block: #{$fd-namespace}-form-item;
   align-content: center;
   flex-direction: column;
 
+  &__label-container {
+    @include fd-flex() {
+      justify-content: space-between
+    };
+
+    label {
+      align-self: center;
+    }
+  }
+
   &--horizontal {
     flex-direction: row;
     align-items: center;
