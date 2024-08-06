@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.37.5-rc.6](https://github.com/SAP/fundamental-styles/compare/v0.37.5-rc.5...v0.37.5-rc.6) (2024-08-06)
+
+### Features
+
+-   **styles:** add ai text highlight [ci visual] ([#5543](https://github.com/SAP/fundamental-styles/issues/5543)) ([3919885](https://github.com/SAP/fundamental-styles/commit/3919885bd4aa962b7945dde3e2c4b0aa6f85a206))
+
 ## [0.37.5-rc.5](https://github.com/SAP/fundamental-styles/compare/v0.37.5-rc.4...v0.37.5-rc.5) (2024-08-05)
 
 **Note:** Version bump only for package fundamental-styles
