@@ -64,6 +64,13 @@ $fd-input-border-radius: var(--sapField_BorderCornerRadius);
     &:nth-last-child(1) {
       padding-inline-end: $fd-input-padding;
     }
+
+    &:-webkit-autofill,
+    &:-webkit-autofill:hover,
+    &:-webkit-autofill:focus,
+    &:-webkit-autofill:active {
+        background-clip: text;
+    }
   }
 
   &--inline {
