@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.37.5-rc.7](https://github.com/SAP/fundamental-styles/compare/v0.37.5-rc.6...v0.37.5-rc.7) (2024-08-07)
+
+### Bug Fixes
+
+-   **styles:** remove the default background for autofill input [ci visual] ([#5544](https://github.com/SAP/fundamental-styles/issues/5544)) ([e4f52d0](https://github.com/SAP/fundamental-styles/commit/e4f52d035b7b55d7aeada3c92c5851264bb9c8f6))
+
 ## [0.37.5-rc.6](https://github.com/SAP/fundamental-styles/compare/v0.37.5-rc.5...v0.37.5-rc.6) (2024-08-06)
 
 ### Features
