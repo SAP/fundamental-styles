@@ -3645,15 +3645,15 @@ __metadata:
   linkType: hard
 
 "@storybook/addon-controls@npm:^8.2.4":
-  version: 8.2.4
-  resolution: "@storybook/addon-controls@npm:8.2.4"
+  version: 8.2.8
+  resolution: "@storybook/addon-controls@npm:8.2.8"
   dependencies:
     dequal: "npm:^2.0.2"
     lodash: "npm:^4.17.21"
     ts-dedent: "npm:^2.0.0"
   peerDependencies:
-    storybook: ^8.2.4
-  checksum: 10/5f4a670f72bfa6b6d9d5e8e7beab32ede00919f5de64c465b1733305bb405657872c31ed16dccd509e0aaf4790d9532b1744ea29f26ce9b42c7ef8e016b39585
+    storybook: ^8.2.8
+  checksum: 10/c66f5099ccb6ec284ad39149181dd621cbc9f4abdc303b01871dcd2e5279f7deb9a5901d66d13e6b8a8f9ea363bae34950024a6b2de953fb6c9abaf1d660c31b
   languageName: node
   linkType: hard
 
