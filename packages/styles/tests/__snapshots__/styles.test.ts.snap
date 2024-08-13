@@ -1,5 +1,591 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
+exports[`Check stories > AI/Components/Busy Indicator > Story AIBusyIndicator > Should match snapshot 1`] = `
+"<div role=\\"progressbar\\" aria-valuetext=\\"busy\\" aria-labelledby=\\"ai-busy-indicator-text\\" class=\\"fd-ai-busy-indicator\\">
+    <span class=\\"sap-icon sap-icon--ai\\"></span>
+    <span id=\\"ai-busy-indicator-text\\" class=\\"fd-ai-busy-indicator__text\\">Analyzing request...</span>
+</div>"
+`;
+
+exports[`Check stories > AI/Components/Button > Story AIButton > Should match snapshot 1`] = `
+"<h4>AI Button with Menu in one of the states</h4>
+<div class=\\"fddocs-container fddocs-button-container fddocs-ai-button-container\\" style=\\"min-height: 400px;\\">
+    <button class=\\"fd-button\\">
+        <i class=\\"sap-icon--ai\\"></i>
+        <span class=\\"fd-button__text\\">Generate</span>
+    </button>
+
+    <button class=\\"fd-button\\">
+        <i class=\\"sap-icon--stop\\"></i>
+        <span class=\\"fd-button__text\\">Stop Generation</span>
+    </button>
+
+    <button class=\\"fd-button\\">
+        <i class=\\"sap-icon--ai\\"></i>
+        <span class=\\"fd-button__text\\">Revise</span>
+        <i class=\\"sap-icon--slim-arrow-down\\"></i>
+    </button>
+
+    <div class=\\"fd-popover\\">
+        <div class=\\"fd-popover__control\\">
+            <button class=\\"fd-button\\">
+                <i class=\\"sap-icon--ai\\"></i>
+                <span class=\\"fd-button__text\\">Revise</span>
+                <i class=\\"sap-icon--slim-arrow-down\\"></i>
+            </button>
+        </div>
+        <div class=\\"fd-popover__body fd-popover__body--no-arrow\\" aria-hidden=\\"false\\">
+            <nav class=\\"fd-menu\\" style=\\"overflow: visible;\\">
+                <ul class=\\"fd-menu__list\\" role=\\"menu\\">
+                    <li class=\\"fd-menu__item\\" role=\\"presentation\\">
+                        <a class=\\"fd-menu__link\\" href=\\"#\\" role=\\"menuitem\\">
+                            <span class=\\"fd-menu__title\\">Regenerate</span>
+                        </a>
+                    </li>
+                    <li class=\\"fd-menu__item\\" role=\\"presentation\\">
+                        <a class=\\"fd-menu__link\\" href=\\"#\\" role=\\"menuitem\\">
+                            <span class=\\"fd-menu__title\\">Fix Spelling & Grammar</span>
+                        </a>
+                    </li>
+                    <li class=\\"fd-menu__item\\" role=\\"presentation\\">
+                        <span
+                            class=\\"fd-menu__link has-child\\"
+                            aria-controls=\\"EX_AI_1\\"
+                            aria-expanded=\\"false\\"
+                            aria-haspopup=\\"true\\"
+                            role=\\"menuitem\\"
+                            onclick=\\"onPopoverClick('EX_AI_1')\\">
+                                <span class=\\"fd-menu__title\\">Change Tone</span>
+                                <span class=\\"fd-menu__addon-after fd-menu__addon-after--submenu\\"></span>
+                        </span>
+                        <ul class=\\"fd-menu__sublist\\" id=\\"EX_AI_1\\" aria-hidden=\\"true\\" role=\\"menu\\">
+                            <li class=\\"fd-menu__item\\" role=\\"presentation\\">
+                                <a class=\\"fd-menu__link\\" href=\\"#\\" role=\\"menuitem\\">
+                                    <span class=\\"fd-menu__title\\">Option 1</span>
+                                </a>
+                            </li>
+                            <li class=\\"fd-menu__item\\" role=\\"presentation\\">
+                                <a class=\\"fd-menu__link\\" href=\\"#\\" role=\\"menuitem\\">
+                                    <span class=\\"fd-menu__title\\">Option 2</span>
+                                </a>
+                            </li>
+                            <li class=\\"fd-menu__item\\" role=\\"presentation\\">
+                                <a class=\\"fd-menu__link\\" href=\\"#\\" role=\\"menuitem\\">
+                                    <span class=\\"fd-menu__title\\">Option 3</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class=\\"fd-menu__item\\" role=\\"presentation\\">
+                        <span
+                            class=\\"fd-menu__link has-child\\"
+                            aria-controls=\\"EX_AI_2\\"
+                            aria-expanded=\\"false\\"
+                            aria-haspopup=\\"true\\"
+                            role=\\"menuitem\\"
+                            onclick=\\"onPopoverClick('EX_AI_2')\\">
+                                <span class=\\"fd-menu__title\\">Text Length</span>
+                                <span class=\\"fd-menu__addon-after fd-menu__addon-after--submenu\\"></span>
+                        </span>
+                        <ul class=\\"fd-menu__sublist\\" id=\\"EX_AI_2\\" aria-hidden=\\"true\\" role=\\"menu\\">
+                            <li class=\\"fd-menu__item\\" role=\\"presentation\\">
+                                <a class=\\"fd-menu__link\\" href=\\"#\\" role=\\"menuitem\\">
+                                    <span class=\\"fd-menu__title\\">Short</span>
+                                </a>
+                            </li>
+                            <li class=\\"fd-menu__item\\" role=\\"presentation\\">
+                                <a class=\\"fd-menu__link\\" href=\\"#\\" role=\\"menuitem\\">
+                                    <span class=\\"fd-menu__title\\">Medium</span>
+                                </a>
+                            </li>
+                            <li class=\\"fd-menu__item\\" role=\\"presentation\\">
+                                <a class=\\"fd-menu__link\\" href=\\"#\\" role=\\"menuitem\\">
+                                    <span class=\\"fd-menu__title\\">Long</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class=\\"fd-menu__item\\" role=\\"presentation\\">
+                        <a class=\\"fd-menu__link\\" href=\\"#\\" role=\\"menuitem\\">
+                            <span class=\\"fd-menu__title\\">Bulleted List</span>
+                        </a>
+                    </li>
+                    <li class=\\"fd-menu__item\\" role=\\"presentation\\">
+                        <span
+                            class=\\"fd-menu__link has-child\\"
+                            aria-controls=\\"EX_AI_3\\"
+                            aria-expanded=\\"false\\"
+                            aria-haspopup=\\"true\\"
+                            role=\\"menuitem\\"
+                            onclick=\\"onPopoverClick('EX_AI_3')\\">
+                                <span class=\\"fd-menu__title\\">Translate</span>
+                                <span class=\\"fd-menu__addon-after fd-menu__addon-after--submenu\\"></span>
+                        </span>
+                        <ul class=\\"fd-menu__sublist\\" id=\\"EX_AI_3\\" aria-hidden=\\"true\\" role=\\"menu\\">
+                            <li class=\\"fd-menu__item\\" role=\\"presentation\\">
+                                <a class=\\"fd-menu__link\\" href=\\"#\\" role=\\"menuitem\\">
+                                    <span class=\\"fd-menu__title\\">English</span>
+                                </a>
+                            </li>
+                            <li class=\\"fd-menu__item\\" role=\\"presentation\\">
+                                <a class=\\"fd-menu__link\\" href=\\"#\\" role=\\"menuitem\\">
+                                    <span class=\\"fd-menu__title\\">German</span>
+                                </a>
+                            </li>
+                            <li class=\\"fd-menu__item\\" role=\\"presentation\\">
+                                <a class=\\"fd-menu__link\\" href=\\"#\\" role=\\"menuitem\\">
+                                    <span class=\\"fd-menu__title\\">Spanish</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+
+<br><br><br>
+<h4>Icon-only AI Button with Menu in one of the states</h4>
+<div class=\\"fddocs-container fddocs-button-container fddocs-ai-button-container\\" style=\\"min-height: 400px;\\">
+    <button class=\\"fd-button\\" aria-label=\\"Generate\\">
+        <i class=\\"sap-icon--ai\\"></i>
+    </button>
+
+    <button class=\\"fd-button\\" aria-label=\\"Stop Generation\\">
+        <i class=\\"sap-icon--stop\\"></i>
+    </button>
+
+    <button class=\\"fd-button\\" aria-label=\\"Revise\\">
+        <i class=\\"sap-icon--ai\\"></i>
+        <i class=\\"sap-icon--slim-arrow-down\\"></i>
+    </button>
+
+    <div class=\\"fd-popover\\">
+        <div class=\\"fd-popover__control\\">
+            <button class=\\"fd-button\\" aria-label=\\"Revise\\">
+                <i class=\\"sap-icon--ai\\"></i>
+                <i class=\\"sap-icon--slim-arrow-down\\"></i>
+            </button>
+        </div>
+        <div class=\\"fd-popover__body fd-popover__body--no-arrow\\" aria-hidden=\\"false\\">
+            <nav class=\\"fd-menu\\" style=\\"overflow: visible;\\">
+                <ul class=\\"fd-menu__list\\" role=\\"menu\\">
+                    <li class=\\"fd-menu__item\\" role=\\"presentation\\">
+                        <a class=\\"fd-menu__link\\" href=\\"#\\" role=\\"menuitem\\">
+                            <span class=\\"fd-menu__title\\">Regenerate</span>
+                        </a>
+                    </li>
+                    <li class=\\"fd-menu__item\\" role=\\"presentation\\">
+                        <a class=\\"fd-menu__link\\" href=\\"#\\" role=\\"menuitem\\">
+                            <span class=\\"fd-menu__title\\">Fix Spelling & Grammar</span>
+                        </a>
+                    </li>
+                    <li class=\\"fd-menu__item\\" role=\\"presentation\\">
+                        <span
+                            class=\\"fd-menu__link has-child\\"
+                            aria-controls=\\"EX_AI_1a\\"
+                            aria-expanded=\\"false\\"
+                            aria-haspopup=\\"true\\"
+                            role=\\"menuitem\\"
+                            onclick=\\"onPopoverClick('EX_AI_1a')\\">
+                                <span class=\\"fd-menu__title\\">Change Tone</span>
+                                <span class=\\"fd-menu__addon-after fd-menu__addon-after--submenu\\"></span>
+                        </span>
+                        <ul class=\\"fd-menu__sublist\\" id=\\"EX_AI_1a\\" aria-hidden=\\"true\\" role=\\"menu\\">
+                            <li class=\\"fd-menu__item\\" role=\\"presentation\\">
+                                <a class=\\"fd-menu__link\\" href=\\"#\\" role=\\"menuitem\\">
+                                    <span class=\\"fd-menu__title\\">Option 1</span>
+                                </a>
+                            </li>
+                            <li class=\\"fd-menu__item\\" role=\\"presentation\\">
+                                <a class=\\"fd-menu__link\\" href=\\"#\\" role=\\"menuitem\\">
+                                    <span class=\\"fd-menu__title\\">Option 2</span>
+                                </a>
+                            </li>
+                            <li class=\\"fd-menu__item\\" role=\\"presentation\\">
+                                <a class=\\"fd-menu__link\\" href=\\"#\\" role=\\"menuitem\\">
+                                    <span class=\\"fd-menu__title\\">Option 3</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class=\\"fd-menu__item\\" role=\\"presentation\\">
+                        <span
+                            class=\\"fd-menu__link has-child\\"
+                            aria-controls=\\"EX_AI_2a\\"
+                            aria-expanded=\\"false\\"
+                            aria-haspopup=\\"true\\"
+                            role=\\"menuitem\\"
+                            onclick=\\"onPopoverClick('EX_AI_2a')\\">
+                                <span class=\\"fd-menu__title\\">Text Length</span>
+                                <span class=\\"fd-menu__addon-after fd-menu__addon-after--submenu\\"></span>
+                        </span>
+                        <ul class=\\"fd-menu__sublist\\" id=\\"EX_AI_2a\\" aria-hidden=\\"true\\" role=\\"menu\\">
+                            <li class=\\"fd-menu__item\\" role=\\"presentation\\">
+                                <a class=\\"fd-menu__link\\" href=\\"#\\" role=\\"menuitem\\">
+                                    <span class=\\"fd-menu__title\\">Short</span>
+                                </a>
+                            </li>
+                            <li class=\\"fd-menu__item\\" role=\\"presentation\\">
+                                <a class=\\"fd-menu__link\\" href=\\"#\\" role=\\"menuitem\\">
+                                    <span class=\\"fd-menu__title\\">Medium</span>
+                                </a>
+                            </li>
+                            <li class=\\"fd-menu__item\\" role=\\"presentation\\">
+                                <a class=\\"fd-menu__link\\" href=\\"#\\" role=\\"menuitem\\">
+                                    <span class=\\"fd-menu__title\\">Long</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class=\\"fd-menu__item\\" role=\\"presentation\\">
+                        <a class=\\"fd-menu__link\\" href=\\"#\\" role=\\"menuitem\\">
+                            <span class=\\"fd-menu__title\\">Bulleted List</span>
+                        </a>
+                    </li>
+                    <li class=\\"fd-menu__item\\" role=\\"presentation\\">
+                        <span
+                            class=\\"fd-menu__link has-child\\"
+                            aria-controls=\\"EX_AI_3a\\"
+                            aria-expanded=\\"false\\"
+                            aria-haspopup=\\"true\\"
+                            role=\\"menuitem\\"
+                            onclick=\\"onPopoverClick('EX_AI_3a')\\">
+                                <span class=\\"fd-menu__title\\">Translate</span>
+                                <span class=\\"fd-menu__addon-after fd-menu__addon-after--submenu\\"></span>
+                        </span>
+                        <ul class=\\"fd-menu__sublist\\" id=\\"EX_AI_3a\\" aria-hidden=\\"true\\" role=\\"menu\\">
+                            <li class=\\"fd-menu__item\\" role=\\"presentation\\">
+                                <a class=\\"fd-menu__link\\" href=\\"#\\" role=\\"menuitem\\">
+                                    <span class=\\"fd-menu__title\\">English</span>
+                                </a>
+                            </li>
+                            <li class=\\"fd-menu__item\\" role=\\"presentation\\">
+                                <a class=\\"fd-menu__link\\" href=\\"#\\" role=\\"menuitem\\">
+                                    <span class=\\"fd-menu__title\\">German</span>
+                                </a>
+                            </li>
+                            <li class=\\"fd-menu__item\\" role=\\"presentation\\">
+                                <a class=\\"fd-menu__link\\" href=\\"#\\" role=\\"menuitem\\">
+                                    <span class=\\"fd-menu__title\\">Spanish</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</div>"
+`;
+
+exports[`Check stories > AI/Components/Loading Bar > Story AILoadingBar > Should match snapshot 1`] = `"<div role=\\"progressbar\\" aria-valuetext=\\"busy\\" aria-busy=\\"true\\" class=\\"fd-ai-loading-bar\\"></div>"`;
+
+exports[`Check stories > AI/Components/Prompt Input > Story AIPromptInput > Should match snapshot 1`] = `
+"<h4>User prompt with no input</h4>
+<div>
+    <div class=\\"fd-prompt-input\\" style=\\"width: 270px;\\">
+        <label class=\\"fd-form-label\\" for=\\"input-1\\">User prompt:</label>
+        <div class=\\"fd-prompt-input__wrapper\\">
+            <div class=\\"fd-prompt-input__inner-wrapper\\">
+                <div class=\\"fd-input-group\\">
+                    <input class=\\"fd-input fd-input fd-input-group__input\\" type=\\"text\\" placeholder=\\"Ask me anything...\\" id=\\"input-1\\">
+                    <span class=\\"fd-input-group__addon fd-input-group__addon--button\\">
+                        <button class=\\"fd-input-group__button fd-button fd-button--transparent fd-button\\" aria-label=\\"Clear\\">
+                            <i class=\\"sap-icon--decline\\"></i>
+                        </button>
+                    </span>
+                </div>
+                <span class=\\"fd-prompt-input__counter\\">10 characters remaining</span>
+            </div>
+            <button aria-label=\\"Add to cart\\" class=\\"fd-button fd-button--emphasized\\" disabled>
+                <i class=\\"sap-icon--paper-plane\\"></i>
+            </button>
+        </div>
+    </div>
+</div>
+
+<br>
+<h4>User prompt with input</h4>
+<div>
+    <div class=\\"fd-prompt-input\\" style=\\"width: 270px;\\">
+        <label class=\\"fd-form-label\\" for=\\"input-1\\">User prompt:</label>
+        <div class=\\"fd-prompt-input__wrapper\\">
+            <div class=\\"fd-prompt-input__inner-wrapper\\">
+                <div class=\\"fd-input-group\\">
+                    <input class=\\"fd-input fd-input fd-input-group__input\\" type=\\"text\\" placeholder=\\"Ask me anything...\\" value=\\"input\\">
+                    <span class=\\"fd-input-group__addon fd-input-group__addon--button\\">
+                        <button class=\\"fd-input-group__button fd-button fd-button--transparent fd-button\\" aria-label=\\"Clear\\">
+                            <i class=\\"sap-icon--decline\\"></i>
+                        </button>
+                    </span>
+                </div>
+                <span class=\\"fd-prompt-input__counter\\">5 characters remaining</span>
+            </div>
+            <button aria-label=\\"Add to cart\\" class=\\"fd-button fd-button--emphasized\\">
+                <i class=\\"sap-icon--paper-plane\\"></i>
+            </button>
+        </div>
+    </div>
+</div>
+
+<br>
+<h4>User prompt with input and error</h4>
+<div>
+    <div class=\\"fd-prompt-input\\" style=\\"width: 270px;\\">
+        <label class=\\"fd-form-label\\" for=\\"input-1\\">User prompt:</label>
+        <div class=\\"fd-prompt-input__wrapper\\">
+            <div class=\\"fd-prompt-input__inner-wrapper\\">
+                <div class=\\"fd-form-input-message-group fd-popover\\">
+                    <div class=\\"fd-popover__control\\" aria-controls=\\"popoverError\\" aria-expanded=\\"true\\" aria-haspopup=\\"true\\">
+                        <div class=\\"fd-input-group is-error\\">
+                            <input class=\\"fd-input fd-input fd-input-group__input\\" type=\\"text\\" placeholder=\\"Ask me anything...\\" value=\\"exceeding characters\\">
+                            <span class=\\"fd-input-group__addon fd-input-group__addon--button\\">
+                                <button class=\\"fd-input-group__button fd-button fd-button--transparent fd-button\\" aria-label=\\"Clear\\">
+                                    <i class=\\"sap-icon--decline\\"></i>
+                                </button>
+                            </span>
+                        </div>
+                    </div>
+                    <div class=\\"fd-popover__body fd-popover__body--input-message-group fd-popover__body--no-arrow\\" aria-hidden=\\"false\\" id=\\"popoverError\\">
+                        <div class=\\"fd-form-message fd-form-message--error\\" >Error message</div>
+                    </div>
+                </div>
+                <span class=\\"fd-prompt-input__counter\\">10 characters over the limit</span>
+            </div>
+            <button aria-label=\\"Add to cart\\" class=\\"fd-button fd-button--emphasized\\">
+                <i class=\\"sap-icon--paper-plane\\"></i>
+            </button>
+        </div>
+    </div>
+</div>"
+`;
+
+exports[`Check stories > AI/Patterns/Progress Indicator > Story AIProgressIndicator > Should match snapshot 1`] = `
+"<h4>First loading time (while analyzing the request)</h4>
+<div class=\\"fd-form-item\\">
+    <div class=\\"fd-form-item__label-container\\">
+        <button class=\\"fd-button\\">
+            <i class=\\"sap-icon--stop\\"></i>
+            <span class=\\"fd-button__text\\">Stop Generating</span>
+        </button>
+    </div>
+    <div class=\\"fd-popover__control\\" aria-controls=\\"popoverAI1\\" aria-expanded=\\"false\\" aria-haspopup=\\"true\\">
+        <div role=\\"textbox\\" class=\\"fd-textarea fd-textarea--ai is-information\\" id=\\"textarea-ai-1\\" placeholder=\\"Write something here\\" rows=\\"5\\"><div role=\\"progressbar\\" aria-valuetext=\\"busy\\" aria-labelledby=\\"ai-busy-indicator-text\\" class=\\"fd-ai-busy-indicator\\">
+                <span class=\\"sap-icon sap-icon--ai\\"></span>
+                <span id=\\"ai-busy-indicator-text\\" class=\\"fd-ai-busy-indicator__text\\">Analyzing request...</span>
+            </div>
+
+            <div role=\\"progressbar\\" aria-valuetext=\\"busy\\" aria-busy=\\"true\\" class=\\"fd-ai-loading-bar\\"></div>
+        </div>
+    </div>
+</div>
+<br><br>
+<h4>Second loading time (while generating the results)</h4>
+<div class=\\"fd-form-item\\">
+    <div class=\\"fd-form-item__label-container\\">
+        <button class=\\"fd-button\\">
+            <i class=\\"sap-icon--stop\\"></i>
+            <span class=\\"fd-button__text\\">Stop Generating</span>
+        </button>
+    </div>
+    <div class=\\"fd-popover__control\\" aria-controls=\\"popoverAI1\\" aria-expanded=\\"false\\" aria-haspopup=\\"true\\">
+        <div role=\\"textbox\\" class=\\"fd-textarea fd-textarea--ai is-information\\" id=\\"textarea-ai-1\\" placeholder=\\"Write something here\\" rows=\\"5\\"><p class=\\"fd-ai-text fd-ai-text--loading\\">This is a text being generated inside a textarea lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum eligendi quae recusandae rem illum...</p>
+
+            <div role=\\"progressbar\\" aria-valuetext=\\"busy\\" aria-busy=\\"true\\" class=\\"fd-ai-loading-bar\\"></div>
+        </div>
+    </div>
+</div>
+"
+`;
+
+exports[`Check stories > AI/Patterns/Text Highlight > Story AITextHighlight > Should match snapshot 1`] = `
+"<div style=\\"max-width: 80%;\\">
+    <h4>Regular</h4>
+    <div class=\\"fd-form-item\\">
+        <div class=\\"fd-form-item__label-container\\">
+            <label class=\\"fd-form-label\\" for=\\"textarea-ai-1\\">How will you measure this goal? </label>
+            <button class=\\"fd-button\\">
+                <i class=\\"sap-icon--ai\\"></i>
+                <span class=\\"fd-button__text\\">Revise</span>
+                <i class=\\"sap-icon--slim-arrow-down\\"></i>
+            </button>
+        </div>
+        <div class=\\"fd-popover\\">
+            <div class=\\"fd-popover__control\\" aria-controls=\\"popoverAI1\\" aria-expanded=\\"false\\" aria-haspopup=\\"true\\">
+                <div role=\\"textbox\\" contenteditable=\\"true\\" aria-multiline=\\"true\\" class=\\"fd-textarea fd-textarea--ai is-information\\" id=\\"textarea-ai-1\\" placeholder=\\"Write something here\\" rows=\\"5\\"><p class=\\"fd-ai-text\\">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum eligendi quae recusandae rem illum? <mark>Vel minus corrupti in numquam qui eius totam!</mark> Sequi aut molestiae minus inventore. Sapiente, officia possimus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos fugiat quas cum, voluptas consequuntur totam aliquam illum aspernatur corrupti consectetur sint eaque sequi magni alias aliquid saepe quod ab voluptates.</p>
+                </div>
+            </div>
+            <div class=\\"fd-popover__body fd-popover__body--input-message-group fd-popover__body--no-arrow\\" aria-hidden=\\"true\\" id=\\"popoverAI1\\">
+                <div class=\\"fd-form-message fd-form-message--information\\">Information message</div>
+            </div>
+        </div>
+    </div>
+
+    <br><br><br>
+    <h4>Text Area on Hover</h4>
+    <div class=\\"fd-form-item\\">
+        <div class=\\"fd-form-item__label-container\\">
+            <label class=\\"fd-form-label\\" for=\\"textarea-ai-2\\">How will you measure this goal? </label>
+            <button class=\\"fd-button\\">
+                <i class=\\"sap-icon--ai\\"></i>
+                <span class=\\"fd-button__text\\">Revise</span>
+                <i class=\\"sap-icon--slim-arrow-down\\"></i>
+            </button>
+        </div>
+        <div class=\\"fd-popover\\">
+            <div class=\\"fd-popover__control\\" aria-controls=\\"popoverAI2\\" aria-expanded=\\"false\\" aria-haspopup=\\"true\\">
+                <div role=\\"textbox\\" contenteditable=\\"true\\" aria-multiline=\\"true\\" class=\\"fd-textarea fd-textarea--ai is-information is-hover\\" id=\\"textarea-ai-2\\" placeholder=\\"Write something here\\" rows=\\"5\\"><p class=\\"fd-ai-text\\">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum eligendi quae recusandae rem illum? <mark>Vel minus corrupti in numquam qui eius totam!</mark> Sequi aut molestiae minus inventore. Sapiente, officia possimus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos fugiat quas cum, voluptas consequuntur totam aliquam illum aspernatur corrupti consectetur sint eaque sequi magni alias aliquid saepe quod ab voluptates.</p>
+                </div>
+            </div>
+            <div class=\\"fd-popover__body fd-popover__body--input-message-group fd-popover__body--no-arrow\\" aria-hidden=\\"true\\" id=\\"popoverAI2\\">
+                <div class=\\"fd-form-message fd-form-message--information\\">Information message</div>
+            </div>
+        </div>
+    </div>
+
+    <br><br><br>
+    <h4>Hover on AI-Text</h4>
+    <div class=\\"fd-form-item\\">
+        <div class=\\"fd-form-item__label-container\\">
+            <label class=\\"fd-form-label\\" for=\\"textarea-ai-4\\">How will you measure this goal? </label>
+            <div class=\\"fd-popover\\">
+                <div class=\\"fd-popover__control\\">
+                    <button class=\\"fd-button\\">
+                        <i class=\\"sap-icon--ai\\"></i>
+                        <span class=\\"fd-button__text\\">Revise</span>
+                        <i class=\\"sap-icon--slim-arrow-down\\"></i>
+                    </button>
+                </div>
+                <div class=\\"fd-popover__body fd-popover__body--no-arrow\\" aria-hidden=\\"false\\">
+                    <nav class=\\"fd-menu\\" style=\\"overflow: visible;\\">
+                        <ul class=\\"fd-menu__list\\" role=\\"menu\\">
+                            <li class=\\"fd-menu__item\\" role=\\"presentation\\">
+                                <a class=\\"fd-menu__link\\" href=\\"#\\" role=\\"menuitem\\">
+                                    <span class=\\"fd-menu__title\\">Regenerate</span>
+                                </a>
+                            </li>
+                            <li class=\\"fd-menu__item\\" role=\\"presentation\\">
+                                <a class=\\"fd-menu__link\\" href=\\"#\\" role=\\"menuitem\\">
+                                    <span class=\\"fd-menu__title\\">Fix Spelling & Grammar</span>
+                                </a>
+                            </li>
+                            <li class=\\"fd-menu__item\\" role=\\"presentation\\">
+                                <span
+                                    class=\\"fd-menu__link has-child\\"
+                                    aria-controls=\\"EX_AI_1\\"
+                                    aria-expanded=\\"false\\"
+                                    aria-haspopup=\\"true\\"
+                                    role=\\"menuitem\\"
+                                    onclick=\\"onPopoverClick('EX_AI_1')\\">
+                                        <span class=\\"fd-menu__title\\">Change Tone</span>
+                                        <span class=\\"fd-menu__addon-after fd-menu__addon-after--submenu\\"></span>
+                                </span>
+                                <ul class=\\"fd-menu__sublist\\" id=\\"EX_AI_1\\" aria-hidden=\\"true\\" role=\\"menu\\">
+                                    <li class=\\"fd-menu__item\\" role=\\"presentation\\">
+                                        <a class=\\"fd-menu__link\\" href=\\"#\\" role=\\"menuitem\\">
+                                            <span class=\\"fd-menu__title\\">Option 1</span>
+                                        </a>
+                                    </li>
+                                    <li class=\\"fd-menu__item\\" role=\\"presentation\\">
+                                        <a class=\\"fd-menu__link\\" href=\\"#\\" role=\\"menuitem\\">
+                                            <span class=\\"fd-menu__title\\">Option 2</span>
+                                        </a>
+                                    </li>
+                                    <li class=\\"fd-menu__item\\" role=\\"presentation\\">
+                                        <a class=\\"fd-menu__link\\" href=\\"#\\" role=\\"menuitem\\">
+                                            <span class=\\"fd-menu__title\\">Option 3</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class=\\"fd-menu__item\\" role=\\"presentation\\">
+                                <span
+                                    class=\\"fd-menu__link has-child\\"
+                                    aria-controls=\\"EX_AI_2\\"
+                                    aria-expanded=\\"false\\"
+                                    aria-haspopup=\\"true\\"
+                                    role=\\"menuitem\\"
+                                    onclick=\\"onPopoverClick('EX_AI_2')\\">
+                                        <span class=\\"fd-menu__title\\">Text Length</span>
+                                        <span class=\\"fd-menu__addon-after fd-menu__addon-after--submenu\\"></span>
+                                </span>
+                                <ul class=\\"fd-menu__sublist\\" id=\\"EX_AI_2\\" aria-hidden=\\"true\\" role=\\"menu\\">
+                                    <li class=\\"fd-menu__item\\" role=\\"presentation\\">
+                                        <a class=\\"fd-menu__link\\" href=\\"#\\" role=\\"menuitem\\">
+                                            <span class=\\"fd-menu__title\\">Short</span>
+                                        </a>
+                                    </li>
+                                    <li class=\\"fd-menu__item\\" role=\\"presentation\\">
+                                        <a class=\\"fd-menu__link\\" href=\\"#\\" role=\\"menuitem\\">
+                                            <span class=\\"fd-menu__title\\">Medium</span>
+                                        </a>
+                                    </li>
+                                    <li class=\\"fd-menu__item\\" role=\\"presentation\\">
+                                        <a class=\\"fd-menu__link\\" href=\\"#\\" role=\\"menuitem\\">
+                                            <span class=\\"fd-menu__title\\">Long</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class=\\"fd-menu__item\\" role=\\"presentation\\">
+                                <a class=\\"fd-menu__link\\" href=\\"#\\" role=\\"menuitem\\">
+                                    <span class=\\"fd-menu__title\\">Bulleted List</span>
+                                </a>
+                            </li>
+                            <li class=\\"fd-menu__item\\" role=\\"presentation\\">
+                                <span
+                                    class=\\"fd-menu__link has-child\\"
+                                    aria-controls=\\"EX_AI_3\\"
+                                    aria-expanded=\\"false\\"
+                                    aria-haspopup=\\"true\\"
+                                    role=\\"menuitem\\"
+                                    onclick=\\"onPopoverClick('EX_AI_3')\\">
+                                        <span class=\\"fd-menu__title\\">Translate</span>
+                                        <span class=\\"fd-menu__addon-after fd-menu__addon-after--submenu\\"></span>
+                                </span>
+                                <ul class=\\"fd-menu__sublist\\" id=\\"EX_AI_3\\" aria-hidden=\\"true\\" role=\\"menu\\">
+                                    <li class=\\"fd-menu__item\\" role=\\"presentation\\">
+                                        <a class=\\"fd-menu__link\\" href=\\"#\\" role=\\"menuitem\\">
+                                            <span class=\\"fd-menu__title\\">English</span>
+                                        </a>
+                                    </li>
+                                    <li class=\\"fd-menu__item\\" role=\\"presentation\\">
+                                        <a class=\\"fd-menu__link\\" href=\\"#\\" role=\\"menuitem\\">
+                                            <span class=\\"fd-menu__title\\">German</span>
+                                        </a>
+                                    </li>
+                                    <li class=\\"fd-menu__item\\" role=\\"presentation\\">
+                                        <a class=\\"fd-menu__link\\" href=\\"#\\" role=\\"menuitem\\">
+                                            <span class=\\"fd-menu__title\\">Spanish</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <div class=\\"fd-popover\\">
+            <div class=\\"fd-popover__control\\" aria-controls=\\"popoverAI3\\" aria-expanded=\\"false\\" aria-haspopup=\\"true\\">
+                <div role=\\"textbox\\" contenteditable=\\"true\\" aria-multiline=\\"true\\" class=\\"fd-textarea fd-textarea--ai is-information is-hover\\" id=\\"textarea-ai-3\\" placeholder=\\"Write something here\\" rows=\\"5\\"><p class=\\"fd-ai-text\\">Lorem ipsum dolor sit amet. <mark class=\\"is-hover\\">Vel minus corrupti in numquam qui eius totam!</mark> Sequi aut molestiae minus inventore. Sapiente, officia possimus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos fugiat quas cum, voluptas consequuntur totam aliquam illum aspernatur corrupti consectetur sint eaque sequi magni alias aliquid saepe quod ab voluptates.</p>
+                </div>
+            </div>
+            <div class=\\"fd-popover__body fd-popover__body--input-message-group fd-popover__body--no-arrow\\" aria-hidden=\\"true\\" id=\\"popoverAI3\\">
+                <div class=\\"fd-form-message fd-form-message--information\\">Information message</div>
+            </div>
+        </div>
+    </div>
+
+
+    <br><br><br>
+    <div style=\\"min-height: 100px;\\"></div>
+</div>"
+`;
+
 exports[`Check stories > BTP/Avatar > Story AccentColors > Should match snapshot 1`] = `
 "
 <span class=\\"fd-avatar fd-avatar--accent-color-1 fd-avatar--40\\" aria-label=\\"Avatar\\">
@@ -10060,280 +10646,6 @@ exports[`Check stories > Components/Buttons/Button > Story Toggle > Should match
     <button class=\\"fd-button fd-button--negative fd-button--toggled\\" aria-pressed=\\"false\\" disabled>Negative Toggle</button>
     <button class=\\"fd-button fd-button--attention fd-button--toggled\\" aria-pressed=\\"false\\" disabled>Attention Toggle</button>
     <button class=\\"fd-button fd-button--transparent fd-button--toggled\\" aria-pressed=\\"false\\" disabled>Transparent Toggle</button>
-</div>"
-`;
-
-exports[`Check stories > Components/Buttons/Button > Story ai > Should match snapshot 1`] = `
-"<h4>AI Button with Menu in one of the states</h4>
-<div class=\\"fddocs-container fddocs-button-container fddocs-ai-button-container\\" style=\\"min-height: 400px;\\">
-    <button class=\\"fd-button\\">
-        <i class=\\"sap-icon--ai\\"></i>
-        <span class=\\"fd-button__text\\">Generate</span>
-    </button>
-
-    <button class=\\"fd-button\\">
-        <i class=\\"sap-icon--stop\\"></i>
-        <span class=\\"fd-button__text\\">Stop Generation</span>
-    </button>
-
-    <button class=\\"fd-button\\">
-        <i class=\\"sap-icon--ai\\"></i>
-        <span class=\\"fd-button__text\\">Revise</span>
-        <i class=\\"sap-icon--slim-arrow-down\\"></i>
-    </button>
-
-    <div class=\\"fd-popover\\">
-        <div class=\\"fd-popover__control\\">
-            <button class=\\"fd-button\\">
-                <i class=\\"sap-icon--ai\\"></i>
-                <span class=\\"fd-button__text\\">Revise</span>
-                <i class=\\"sap-icon--slim-arrow-down\\"></i>
-            </button>
-        </div>
-        <div class=\\"fd-popover__body fd-popover__body--no-arrow\\" aria-hidden=\\"false\\">
-            <nav class=\\"fd-menu\\" style=\\"overflow: visible;\\">
-                <ul class=\\"fd-menu__list\\" role=\\"menu\\">
-                    <li class=\\"fd-menu__item\\" role=\\"presentation\\">
-                        <a class=\\"fd-menu__link\\" href=\\"#\\" role=\\"menuitem\\">
-                            <span class=\\"fd-menu__title\\">Regenerate</span>
-                        </a>
-                    </li>
-                    <li class=\\"fd-menu__item\\" role=\\"presentation\\">
-                        <a class=\\"fd-menu__link\\" href=\\"#\\" role=\\"menuitem\\">
-                            <span class=\\"fd-menu__title\\">Fix Spelling & Grammar</span>
-                        </a>
-                    </li>
-                    <li class=\\"fd-menu__item\\" role=\\"presentation\\">
-                        <span
-                            class=\\"fd-menu__link has-child\\"
-                            aria-controls=\\"EX_AI_1\\"
-                            aria-expanded=\\"false\\"
-                            aria-haspopup=\\"true\\"
-                            role=\\"menuitem\\"
-                            onclick=\\"onPopoverClick('EX_AI_1')\\">
-                                <span class=\\"fd-menu__title\\">Change Tone</span>
-                                <span class=\\"fd-menu__addon-after fd-menu__addon-after--submenu\\"></span>
-                        </span>
-                        <ul class=\\"fd-menu__sublist\\" id=\\"EX_AI_1\\" aria-hidden=\\"true\\" role=\\"menu\\">
-                            <li class=\\"fd-menu__item\\" role=\\"presentation\\">
-                                <a class=\\"fd-menu__link\\" href=\\"#\\" role=\\"menuitem\\">
-                                    <span class=\\"fd-menu__title\\">Option 1</span>
-                                </a>
-                            </li>
-                            <li class=\\"fd-menu__item\\" role=\\"presentation\\">
-                                <a class=\\"fd-menu__link\\" href=\\"#\\" role=\\"menuitem\\">
-                                    <span class=\\"fd-menu__title\\">Option 2</span>
-                                </a>
-                            </li>
-                            <li class=\\"fd-menu__item\\" role=\\"presentation\\">
-                                <a class=\\"fd-menu__link\\" href=\\"#\\" role=\\"menuitem\\">
-                                    <span class=\\"fd-menu__title\\">Option 3</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class=\\"fd-menu__item\\" role=\\"presentation\\">
-                        <span
-                            class=\\"fd-menu__link has-child\\"
-                            aria-controls=\\"EX_AI_2\\"
-                            aria-expanded=\\"false\\"
-                            aria-haspopup=\\"true\\"
-                            role=\\"menuitem\\"
-                            onclick=\\"onPopoverClick('EX_AI_2')\\">
-                                <span class=\\"fd-menu__title\\">Text Length</span>
-                                <span class=\\"fd-menu__addon-after fd-menu__addon-after--submenu\\"></span>
-                        </span>
-                        <ul class=\\"fd-menu__sublist\\" id=\\"EX_AI_2\\" aria-hidden=\\"true\\" role=\\"menu\\">
-                            <li class=\\"fd-menu__item\\" role=\\"presentation\\">
-                                <a class=\\"fd-menu__link\\" href=\\"#\\" role=\\"menuitem\\">
-                                    <span class=\\"fd-menu__title\\">Short</span>
-                                </a>
-                            </li>
-                            <li class=\\"fd-menu__item\\" role=\\"presentation\\">
-                                <a class=\\"fd-menu__link\\" href=\\"#\\" role=\\"menuitem\\">
-                                    <span class=\\"fd-menu__title\\">Medium</span>
-                                </a>
-                            </li>
-                            <li class=\\"fd-menu__item\\" role=\\"presentation\\">
-                                <a class=\\"fd-menu__link\\" href=\\"#\\" role=\\"menuitem\\">
-                                    <span class=\\"fd-menu__title\\">Long</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class=\\"fd-menu__item\\" role=\\"presentation\\">
-                        <a class=\\"fd-menu__link\\" href=\\"#\\" role=\\"menuitem\\">
-                            <span class=\\"fd-menu__title\\">Bulleted List</span>
-                        </a>
-                    </li>
-                    <li class=\\"fd-menu__item\\" role=\\"presentation\\">
-                        <span
-                            class=\\"fd-menu__link has-child\\"
-                            aria-controls=\\"EX_AI_3\\"
-                            aria-expanded=\\"false\\"
-                            aria-haspopup=\\"true\\"
-                            role=\\"menuitem\\"
-                            onclick=\\"onPopoverClick('EX_AI_3')\\">
-                                <span class=\\"fd-menu__title\\">Translate</span>
-                                <span class=\\"fd-menu__addon-after fd-menu__addon-after--submenu\\"></span>
-                        </span>
-                        <ul class=\\"fd-menu__sublist\\" id=\\"EX_AI_3\\" aria-hidden=\\"true\\" role=\\"menu\\">
-                            <li class=\\"fd-menu__item\\" role=\\"presentation\\">
-                                <a class=\\"fd-menu__link\\" href=\\"#\\" role=\\"menuitem\\">
-                                    <span class=\\"fd-menu__title\\">English</span>
-                                </a>
-                            </li>
-                            <li class=\\"fd-menu__item\\" role=\\"presentation\\">
-                                <a class=\\"fd-menu__link\\" href=\\"#\\" role=\\"menuitem\\">
-                                    <span class=\\"fd-menu__title\\">German</span>
-                                </a>
-                            </li>
-                            <li class=\\"fd-menu__item\\" role=\\"presentation\\">
-                                <a class=\\"fd-menu__link\\" href=\\"#\\" role=\\"menuitem\\">
-                                    <span class=\\"fd-menu__title\\">Spanish</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-            </nav>
-        </div>
-    </div>
-</div>
-
-
-<br><br><br>
-<h4>Icon-only AI Button with Menu in one of the states</h4>
-<div class=\\"fddocs-container fddocs-button-container fddocs-ai-button-container\\" style=\\"min-height: 400px;\\">
-    <button class=\\"fd-button\\" aria-label=\\"Generate\\">
-        <i class=\\"sap-icon--ai\\"></i>
-    </button>
-
-    <button class=\\"fd-button\\" aria-label=\\"Stop Generation\\">
-        <i class=\\"sap-icon--stop\\"></i>
-    </button>
-
-    <button class=\\"fd-button\\" aria-label=\\"Revise\\">
-        <i class=\\"sap-icon--ai\\"></i>
-        <i class=\\"sap-icon--slim-arrow-down\\"></i>
-    </button>
-
-    <div class=\\"fd-popover\\">
-        <div class=\\"fd-popover__control\\">
-            <button class=\\"fd-button\\" aria-label=\\"Revise\\">
-                <i class=\\"sap-icon--ai\\"></i>
-                <i class=\\"sap-icon--slim-arrow-down\\"></i>
-            </button>
-        </div>
-        <div class=\\"fd-popover__body fd-popover__body--no-arrow\\" aria-hidden=\\"false\\">
-            <nav class=\\"fd-menu\\" style=\\"overflow: visible;\\">
-                <ul class=\\"fd-menu__list\\" role=\\"menu\\">
-                    <li class=\\"fd-menu__item\\" role=\\"presentation\\">
-                        <a class=\\"fd-menu__link\\" href=\\"#\\" role=\\"menuitem\\">
-                            <span class=\\"fd-menu__title\\">Regenerate</span>
-                        </a>
-                    </li>
-                    <li class=\\"fd-menu__item\\" role=\\"presentation\\">
-                        <a class=\\"fd-menu__link\\" href=\\"#\\" role=\\"menuitem\\">
-                            <span class=\\"fd-menu__title\\">Fix Spelling & Grammar</span>
-                        </a>
-                    </li>
-                    <li class=\\"fd-menu__item\\" role=\\"presentation\\">
-                        <span
-                            class=\\"fd-menu__link has-child\\"
-                            aria-controls=\\"EX_AI_1a\\"
-                            aria-expanded=\\"false\\"
-                            aria-haspopup=\\"true\\"
-                            role=\\"menuitem\\"
-                            onclick=\\"onPopoverClick('EX_AI_1a')\\">
-                                <span class=\\"fd-menu__title\\">Change Tone</span>
-                                <span class=\\"fd-menu__addon-after fd-menu__addon-after--submenu\\"></span>
-                        </span>
-                        <ul class=\\"fd-menu__sublist\\" id=\\"EX_AI_1a\\" aria-hidden=\\"true\\" role=\\"menu\\">
-                            <li class=\\"fd-menu__item\\" role=\\"presentation\\">
-                                <a class=\\"fd-menu__link\\" href=\\"#\\" role=\\"menuitem\\">
-                                    <span class=\\"fd-menu__title\\">Option 1</span>
-                                </a>
-                            </li>
-                            <li class=\\"fd-menu__item\\" role=\\"presentation\\">
-                                <a class=\\"fd-menu__link\\" href=\\"#\\" role=\\"menuitem\\">
-                                    <span class=\\"fd-menu__title\\">Option 2</span>
-                                </a>
-                            </li>
-                            <li class=\\"fd-menu__item\\" role=\\"presentation\\">
-                                <a class=\\"fd-menu__link\\" href=\\"#\\" role=\\"menuitem\\">
-                                    <span class=\\"fd-menu__title\\">Option 3</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class=\\"fd-menu__item\\" role=\\"presentation\\">
-                        <span
-                            class=\\"fd-menu__link has-child\\"
-                            aria-controls=\\"EX_AI_2a\\"
-                            aria-expanded=\\"false\\"
-                            aria-haspopup=\\"true\\"
-                            role=\\"menuitem\\"
-                            onclick=\\"onPopoverClick('EX_AI_2a')\\">
-                                <span class=\\"fd-menu__title\\">Text Length</span>
-                                <span class=\\"fd-menu__addon-after fd-menu__addon-after--submenu\\"></span>
-                        </span>
-                        <ul class=\\"fd-menu__sublist\\" id=\\"EX_AI_2a\\" aria-hidden=\\"true\\" role=\\"menu\\">
-                            <li class=\\"fd-menu__item\\" role=\\"presentation\\">
-                                <a class=\\"fd-menu__link\\" href=\\"#\\" role=\\"menuitem\\">
-                                    <span class=\\"fd-menu__title\\">Short</span>
-                                </a>
-                            </li>
-                            <li class=\\"fd-menu__item\\" role=\\"presentation\\">
-                                <a class=\\"fd-menu__link\\" href=\\"#\\" role=\\"menuitem\\">
-                                    <span class=\\"fd-menu__title\\">Medium</span>
-                                </a>
-                            </li>
-                            <li class=\\"fd-menu__item\\" role=\\"presentation\\">
-                                <a class=\\"fd-menu__link\\" href=\\"#\\" role=\\"menuitem\\">
-                                    <span class=\\"fd-menu__title\\">Long</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class=\\"fd-menu__item\\" role=\\"presentation\\">
-                        <a class=\\"fd-menu__link\\" href=\\"#\\" role=\\"menuitem\\">
-                            <span class=\\"fd-menu__title\\">Bulleted List</span>
-                        </a>
-                    </li>
-                    <li class=\\"fd-menu__item\\" role=\\"presentation\\">
-                        <span
-                            class=\\"fd-menu__link has-child\\"
-                            aria-controls=\\"EX_AI_3a\\"
-                            aria-expanded=\\"false\\"
-                            aria-haspopup=\\"true\\"
-                            role=\\"menuitem\\"
-                            onclick=\\"onPopoverClick('EX_AI_3a')\\">
-                                <span class=\\"fd-menu__title\\">Translate</span>
-                                <span class=\\"fd-menu__addon-after fd-menu__addon-after--submenu\\"></span>
-                        </span>
-                        <ul class=\\"fd-menu__sublist\\" id=\\"EX_AI_3a\\" aria-hidden=\\"true\\" role=\\"menu\\">
-                            <li class=\\"fd-menu__item\\" role=\\"presentation\\">
-                                <a class=\\"fd-menu__link\\" href=\\"#\\" role=\\"menuitem\\">
-                                    <span class=\\"fd-menu__title\\">English</span>
-                                </a>
-                            </li>
-                            <li class=\\"fd-menu__item\\" role=\\"presentation\\">
-                                <a class=\\"fd-menu__link\\" href=\\"#\\" role=\\"menuitem\\">
-                                    <span class=\\"fd-menu__title\\">German</span>
-                                </a>
-                            </li>
-                            <li class=\\"fd-menu__item\\" role=\\"presentation\\">
-                                <a class=\\"fd-menu__link\\" href=\\"#\\" role=\\"menuitem\\">
-                                    <span class=\\"fd-menu__title\\">Spanish</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-            </nav>
-        </div>
-    </div>
 </div>"
 `;
 
@@ -20872,191 +21184,6 @@ exports[`Check stories > Components/Forms/Radio > Story TextTruncation > Should 
         </div>
     </div>
 </fieldset>"
-`;
-
-exports[`Check stories > Components/Forms/Textarea > Story AI > Should match snapshot 1`] = `
-"<div style=\\"max-width: 80%;\\">
-    <h4>Regular</h4>
-    <div class=\\"fd-form-item\\">
-        <div class=\\"fd-form-item__label-container\\">
-            <label class=\\"fd-form-label\\" for=\\"textarea-ai-1\\">Information text area:</label>
-            <button class=\\"fd-button\\">
-                <i class=\\"sap-icon--ai\\"></i>
-                <span class=\\"fd-button__text\\">Revise</span>
-                <i class=\\"sap-icon--slim-arrow-down\\"></i>
-            </button>
-        </div>
-        <div class=\\"fd-popover\\">
-            <div class=\\"fd-popover__control\\" aria-controls=\\"popoverAI1\\" aria-expanded=\\"false\\" aria-haspopup=\\"true\\">
-                <div role=\\"textbox\\" class=\\"fd-textarea fd-textarea--ai is-information\\" id=\\"textarea-ai-1\\" placeholder=\\"Write something here\\" rows=\\"5\\">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum eligendi quae recusandae rem illum? <mark>Vel minus corrupti in numquam qui eius totam!</mark> Sequi aut molestiae minus inventore. Sapiente, officia possimus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos fugiat quas cum, voluptas consequuntur totam aliquam illum aspernatur corrupti consectetur sint eaque sequi magni alias aliquid saepe quod ab voluptates.
-                </div>
-            </div>
-            <div class=\\"fd-popover__body fd-popover__body--input-message-group fd-popover__body--no-arrow\\" aria-hidden=\\"true\\" id=\\"popoverAI1\\">
-                <div class=\\"fd-form-message fd-form-message--information\\">Information message</div>
-            </div>
-        </div>
-    </div>
-
-    <br><br><br>
-    <h4>Text Area on Hover</h4>
-    <div class=\\"fd-form-item\\">
-        <div class=\\"fd-form-item__label-container\\">
-            <label class=\\"fd-form-label\\" for=\\"textarea-ai-2\\">Information text area:</label>
-            <button class=\\"fd-button\\">
-                <i class=\\"sap-icon--ai\\"></i>
-                <span class=\\"fd-button__text\\">Revise</span>
-                <i class=\\"sap-icon--slim-arrow-down\\"></i>
-            </button>
-        </div>
-        <div class=\\"fd-popover\\">
-            <div class=\\"fd-popover__control\\" aria-controls=\\"popoverAI2\\" aria-expanded=\\"false\\" aria-haspopup=\\"true\\">
-                <div role=\\"textbox\\" class=\\"fd-textarea fd-textarea--ai is-information is-hover\\" id=\\"textarea-ai-2\\" placeholder=\\"Write something here\\" rows=\\"5\\">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum eligendi quae recusandae rem illum? <mark>Vel minus corrupti in numquam qui eius totam!</mark> Sequi aut molestiae minus inventore. Sapiente, officia possimus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos fugiat quas cum, voluptas consequuntur totam aliquam illum aspernatur corrupti consectetur sint eaque sequi magni alias aliquid saepe quod ab voluptates.
-                </div>
-            </div>
-            <div class=\\"fd-popover__body fd-popover__body--input-message-group fd-popover__body--no-arrow\\" aria-hidden=\\"true\\" id=\\"popoverAI2\\">
-                <div class=\\"fd-form-message fd-form-message--information\\">Information message</div>
-            </div>
-        </div>
-    </div>
-
-    <br><br><br>
-    <h4>Hover on AI-Text</h4>
-    <div class=\\"fd-form-item\\">
-        <div class=\\"fd-form-item__label-container\\">
-            <label class=\\"fd-form-label\\" for=\\"textarea-ai-4\\">Information text area:</label>
-            <div class=\\"fd-popover\\">
-                <div class=\\"fd-popover__control\\">
-                    <button class=\\"fd-button\\">
-                        <i class=\\"sap-icon--ai\\"></i>
-                        <span class=\\"fd-button__text\\">Revise</span>
-                        <i class=\\"sap-icon--slim-arrow-down\\"></i>
-                    </button>
-                </div>
-                <div class=\\"fd-popover__body fd-popover__body--no-arrow\\" aria-hidden=\\"false\\">
-                    <nav class=\\"fd-menu\\" style=\\"overflow: visible;\\">
-                        <ul class=\\"fd-menu__list\\" role=\\"menu\\">
-                            <li class=\\"fd-menu__item\\" role=\\"presentation\\">
-                                <a class=\\"fd-menu__link\\" href=\\"#\\" role=\\"menuitem\\">
-                                    <span class=\\"fd-menu__title\\">Regenerate</span>
-                                </a>
-                            </li>
-                            <li class=\\"fd-menu__item\\" role=\\"presentation\\">
-                                <a class=\\"fd-menu__link\\" href=\\"#\\" role=\\"menuitem\\">
-                                    <span class=\\"fd-menu__title\\">Fix Spelling & Grammar</span>
-                                </a>
-                            </li>
-                            <li class=\\"fd-menu__item\\" role=\\"presentation\\">
-                                <span
-                                    class=\\"fd-menu__link has-child\\"
-                                    aria-controls=\\"EX_AI_1\\"
-                                    aria-expanded=\\"false\\"
-                                    aria-haspopup=\\"true\\"
-                                    role=\\"menuitem\\"
-                                    onclick=\\"onPopoverClick('EX_AI_1')\\">
-                                        <span class=\\"fd-menu__title\\">Change Tone</span>
-                                        <span class=\\"fd-menu__addon-after fd-menu__addon-after--submenu\\"></span>
-                                </span>
-                                <ul class=\\"fd-menu__sublist\\" id=\\"EX_AI_1\\" aria-hidden=\\"true\\" role=\\"menu\\">
-                                    <li class=\\"fd-menu__item\\" role=\\"presentation\\">
-                                        <a class=\\"fd-menu__link\\" href=\\"#\\" role=\\"menuitem\\">
-                                            <span class=\\"fd-menu__title\\">Option 1</span>
-                                        </a>
-                                    </li>
-                                    <li class=\\"fd-menu__item\\" role=\\"presentation\\">
-                                        <a class=\\"fd-menu__link\\" href=\\"#\\" role=\\"menuitem\\">
-                                            <span class=\\"fd-menu__title\\">Option 2</span>
-                                        </a>
-                                    </li>
-                                    <li class=\\"fd-menu__item\\" role=\\"presentation\\">
-                                        <a class=\\"fd-menu__link\\" href=\\"#\\" role=\\"menuitem\\">
-                                            <span class=\\"fd-menu__title\\">Option 3</span>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class=\\"fd-menu__item\\" role=\\"presentation\\">
-                                <span
-                                    class=\\"fd-menu__link has-child\\"
-                                    aria-controls=\\"EX_AI_2\\"
-                                    aria-expanded=\\"false\\"
-                                    aria-haspopup=\\"true\\"
-                                    role=\\"menuitem\\"
-                                    onclick=\\"onPopoverClick('EX_AI_2')\\">
-                                        <span class=\\"fd-menu__title\\">Text Length</span>
-                                        <span class=\\"fd-menu__addon-after fd-menu__addon-after--submenu\\"></span>
-                                </span>
-                                <ul class=\\"fd-menu__sublist\\" id=\\"EX_AI_2\\" aria-hidden=\\"true\\" role=\\"menu\\">
-                                    <li class=\\"fd-menu__item\\" role=\\"presentation\\">
-                                        <a class=\\"fd-menu__link\\" href=\\"#\\" role=\\"menuitem\\">
-                                            <span class=\\"fd-menu__title\\">Short</span>
-                                        </a>
-                                    </li>
-                                    <li class=\\"fd-menu__item\\" role=\\"presentation\\">
-                                        <a class=\\"fd-menu__link\\" href=\\"#\\" role=\\"menuitem\\">
-                                            <span class=\\"fd-menu__title\\">Medium</span>
-                                        </a>
-                                    </li>
-                                    <li class=\\"fd-menu__item\\" role=\\"presentation\\">
-                                        <a class=\\"fd-menu__link\\" href=\\"#\\" role=\\"menuitem\\">
-                                            <span class=\\"fd-menu__title\\">Long</span>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class=\\"fd-menu__item\\" role=\\"presentation\\">
-                                <a class=\\"fd-menu__link\\" href=\\"#\\" role=\\"menuitem\\">
-                                    <span class=\\"fd-menu__title\\">Bulleted List</span>
-                                </a>
-                            </li>
-                            <li class=\\"fd-menu__item\\" role=\\"presentation\\">
-                                <span
-                                    class=\\"fd-menu__link has-child\\"
-                                    aria-controls=\\"EX_AI_3\\"
-                                    aria-expanded=\\"false\\"
-                                    aria-haspopup=\\"true\\"
-                                    role=\\"menuitem\\"
-                                    onclick=\\"onPopoverClick('EX_AI_3')\\">
-                                        <span class=\\"fd-menu__title\\">Translate</span>
-                                        <span class=\\"fd-menu__addon-after fd-menu__addon-after--submenu\\"></span>
-                                </span>
-                                <ul class=\\"fd-menu__sublist\\" id=\\"EX_AI_3\\" aria-hidden=\\"true\\" role=\\"menu\\">
-                                    <li class=\\"fd-menu__item\\" role=\\"presentation\\">
-                                        <a class=\\"fd-menu__link\\" href=\\"#\\" role=\\"menuitem\\">
-                                            <span class=\\"fd-menu__title\\">English</span>
-                                        </a>
-                                    </li>
-                                    <li class=\\"fd-menu__item\\" role=\\"presentation\\">
-                                        <a class=\\"fd-menu__link\\" href=\\"#\\" role=\\"menuitem\\">
-                                            <span class=\\"fd-menu__title\\">German</span>
-                                        </a>
-                                    </li>
-                                    <li class=\\"fd-menu__item\\" role=\\"presentation\\">
-                                        <a class=\\"fd-menu__link\\" href=\\"#\\" role=\\"menuitem\\">
-                                            <span class=\\"fd-menu__title\\">Spanish</span>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
-            </div>
-        </div>
-        <div class=\\"fd-popover\\">
-            <div class=\\"fd-popover__control\\" aria-controls=\\"popoverAI3\\" aria-expanded=\\"false\\" aria-haspopup=\\"true\\">
-                <div role=\\"textbox\\" class=\\"fd-textarea fd-textarea--ai is-information is-hover\\" id=\\"textarea-ai-3\\" placeholder=\\"Write something here\\" rows=\\"5\\">Lorem ipsum dolor sit amet. <mark class=\\"is-hover\\">Vel minus corrupti in numquam qui eius totam!</mark> Sequi aut molestiae minus inventore. Sapiente, officia possimus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos fugiat quas cum, voluptas consequuntur totam aliquam illum aspernatur corrupti consectetur sint eaque sequi magni alias aliquid saepe quod ab voluptates.
-                </div>
-            </div>
-            <div class=\\"fd-popover__body fd-popover__body--input-message-group fd-popover__body--no-arrow\\" aria-hidden=\\"true\\" id=\\"popoverAI3\\">
-                <div class=\\"fd-form-message fd-form-message--information\\">Information message</div>
-            </div>
-        </div>
-    </div>
-
-
-    <br><br><br>
-    <div style=\\"min-height: 100px;\\"></div>
-</div>"
 `;
 
 exports[`Check stories > Components/Forms/Textarea > Story Counter > Should match snapshot 1`] = `

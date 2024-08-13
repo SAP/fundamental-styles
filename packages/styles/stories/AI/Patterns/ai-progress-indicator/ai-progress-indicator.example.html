@@ -1,0 +1,34 @@
+<h4>First loading time (while analyzing the request)</h4>
+<div class="fd-form-item">
+    <div class="fd-form-item__label-container">
+        <button class="fd-button">
+            <i class="sap-icon--stop"></i>
+            <span class="fd-button__text">Stop Generating</span>
+        </button>
+    </div>
+    <div class="fd-popover__control" aria-controls="popoverAI1" aria-expanded="false" aria-haspopup="true">
+        <div role="textbox" class="fd-textarea fd-textarea--ai is-information" id="textarea-ai-1" placeholder="Write something here" rows="5"><div role="progressbar" aria-valuetext="busy" aria-labelledby="ai-busy-indicator-text" class="fd-ai-busy-indicator">
+                <span class="sap-icon sap-icon--ai"></span>
+                <span id="ai-busy-indicator-text" class="fd-ai-busy-indicator__text">Analyzing request...</span>
+            </div>
+
+            <div role="progressbar" aria-valuetext="busy" aria-busy="true" class="fd-ai-loading-bar"></div>
+        </div>
+    </div>
+</div>
+<br><br>
+<h4>Second loading time (while generating the results)</h4>
+<div class="fd-form-item">
+    <div class="fd-form-item__label-container">
+        <button class="fd-button">
+            <i class="sap-icon--stop"></i>
+            <span class="fd-button__text">Stop Generating</span>
+        </button>
+    </div>
+    <div class="fd-popover__control" aria-controls="popoverAI1" aria-expanded="false" aria-haspopup="true">
+        <div role="textbox" class="fd-textarea fd-textarea--ai is-information" id="textarea-ai-1" placeholder="Write something here" rows="5"><p class="fd-ai-text fd-ai-text--loading">This is a text being generated inside a textarea lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum eligendi quae recusandae rem illum...</p>
+
+            <div role="progressbar" aria-valuetext="busy" aria-busy="true" class="fd-ai-loading-bar"></div>
+        </div>
+    </div>
+</div>

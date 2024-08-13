@@ -1,0 +1,21 @@
+@use "sass:map";
+
+@import "./new-settings";
+@import "./mixins";
+
+$block: #{$fd-namespace}-ai-text;
+
+
+.#{$block} {
+  @include fd-reset();
+
+  &--loading {
+    background: linear-gradient(to right, var(--sapTextColor) 20%, transparent 80%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  mark {
+    @include fd-ai-text-highlight();
+  }
+}

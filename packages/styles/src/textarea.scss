@@ -86,10 +86,11 @@ $block: #{$fd-namespace}-textarea;
   }
 
   &--ai {
-    padding-inline: 1rem;
+    position: relative;
 
-    mark {
-      @include fd-ai-text-highlight();
+    &:has(.#{$fd-namespace}-ai-busy-indicator) {
+      padding-inline: 0;
+      padding-block: 0;
     }
   }
 }

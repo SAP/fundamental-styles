@@ -1,0 +1,30 @@
+@use "sass:map";
+
+@import "./new-settings";
+@import "./mixins";
+
+$block: #{$fd-namespace}-ai-loading-bar;
+
+
+.#{$block} {
+  @include fd-reset();
+
+  background: repeating-linear-gradient(to right, #0057D2, #9EDDFF 100%, #9EDDFF 0%);
+  width: 100%;
+  background-size: 200% auto;
+  background-position: 0 100%;
+  animation: gradient 2s infinite;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+  height: 0.1875rem;
+  position: absolute;
+  bottom: 0.125rem;
+  left: 0;
+  right: 0;
+  margin-block-start: 0.125rem;
+
+  @keyframes gradient { 
+    0%   { background-position: 0 0; }
+    100% { background-position: -200% 0; }
+  }
+}
