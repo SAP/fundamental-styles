@@ -21,6 +21,10 @@ $block: #{$fd-namespace}-form-item;
     label {
       align-self: center;
     }
+
+    button {
+      margin-inline-start: auto;
+    }
   }
 
   &--horizontal {

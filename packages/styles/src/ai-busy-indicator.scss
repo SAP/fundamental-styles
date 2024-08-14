@@ -1,0 +1,30 @@
+@use "sass:map";
+
+@import "./new-settings";
+@import "./mixins";
+
+$block: #{$fd-namespace}-ai-busy-indicator;
+
+
+.#{$block} {
+  @include fd-reset();
+
+  @include fd-flex-vertical-center() {
+    gap: 0.5rem;
+  };
+
+  width: 100%;
+  padding-block: 0.5rem;
+  padding-inline: 0.5rem;
+
+  [class*="sap-icon"] {
+    font-size: 1rem;
+    color: var(--sapButton_IconColor);
+  }
+
+  &__text {
+    @include fd-reset();
+
+    color: var(--sapContent_LabelColor);
+  }
+}

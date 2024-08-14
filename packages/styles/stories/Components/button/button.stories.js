@@ -5,7 +5,6 @@ import menuButtonExampleHtml from "./menu-button.example.html?raw";
 import badgeOnButtonExampleHtml from "./badge-on-button.example.html?raw";
 import toggleExampleHtml from "./toggle.example.html?raw";
 import stylesExampleHtml from "./styles.example.html?raw";
-import aiExampleHtml from "./ai-button.example.html?raw";
 
 import '../../../src/popover.scss';
 import '../../../src/segmented-button.scss';
@@ -156,17 +155,6 @@ When the state of the button has changed, add \`aria-live=”assertive”\` to p
 Note: For the text to be read out loud by screen readers, a helper text has been added with \`aria-describedby\` matching the \`id\` of the paragraph element with the \`_instructions\` element. The element uses the \`screen-reader-only\` styling so that it is not visible.
 
 `
-    }
-  }
-};
-
-
-export const ai = () => aiExampleHtml;
-ai.storyName = 'AI Button';
-ai.parameters = {
-  docs: {
-    description: {
-      story: `The AI button is a button used in AI-related scenarios. It enables users to trigger actions by clicking or tapping the button, or by pressing the Enter key. The AI button can have one or more states. Each state have a name that identifies it and can have text, icon and end icon defined (in any combination) depending on the state purpose. <br> <b>Note: The component is in an experimental state.</b>`
     }
   }
 };
