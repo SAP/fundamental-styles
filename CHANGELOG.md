@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.37.5-rc.8](https://github.com/SAP/fundamental-styles/compare/v0.37.5-rc.7...v0.37.5-rc.8) (2024-08-14)
+
+### Features
+
+-   **styles:** add components extentions [ci visual] ([#5555](https://github.com/SAP/fundamental-styles/issues/5555)) ([973a973](https://github.com/SAP/fundamental-styles/commit/973a973fc98f8793a66fa8c4414cf80521792137))
+
 ## [0.37.5-rc.7](https://github.com/SAP/fundamental-styles/compare/v0.37.5-rc.6...v0.37.5-rc.7) (2024-08-07)
 
 ### Bug Fixes
