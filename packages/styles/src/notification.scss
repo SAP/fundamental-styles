@@ -195,6 +195,7 @@ $block: #{$fd-namespace}-notification;
   &__indicator {
     @include fd-reset();
 
+    padding-block-start: 0.1875rem;
     margin-inline-end: 0.5rem;
     color: var(--fdNotification_Indicator_Color);
 
