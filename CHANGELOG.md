@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.37.5-rc.9](https://github.com/SAP/fundamental-styles/compare/v0.37.5-rc.8...v0.37.5-rc.9) (2024-08-15)
+
+### Bug Fixes
+
+-   **styles:** align the notification indicator icon [ci visual] ([#5556](https://github.com/SAP/fundamental-styles/issues/5556)) ([2b5c9ea](https://github.com/SAP/fundamental-styles/commit/2b5c9ea8990e34a46200eeedb3a290888cf2f8ef))
+
 ## [0.37.5-rc.8](https://github.com/SAP/fundamental-styles/compare/v0.37.5-rc.7...v0.37.5-rc.8) (2024-08-14)
 
 ### Features
