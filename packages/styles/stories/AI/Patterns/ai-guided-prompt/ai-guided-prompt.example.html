@@ -1,0 +1,192 @@
+
+<div class="fd-popover">
+    <div class="fd-popover__control">
+        <button
+            aria-controls="popoverHSF366"
+            aria-expanded="true"
+            aria-haspopup="dialog"
+            class="fd-button"
+            onclick="onPopoverClick('popoverHSF366');"
+            role="button">
+                Guided Prompt
+        </button>
+    </div>
+    <section
+        aria-hidden="false"
+        class="fd-popover__body"
+        id="popoverHSF366"
+        aria-label="Dialog Data 1"
+        role="dialog">
+        <header class="fd-popover__body-header">
+            <div class="fd-bar">
+                <div class="fd-bar__left">
+                    <div id="popoverHeader" class="fd-bar__element">
+                        <h5 class="fd-title fd-title--h5" aria-label="text">Improve Text</h5>
+                    </div>
+                </div>
+            </div>
+        </header>
+   
+        <div style="padding: 1rem; min-width: 500px;">
+            <div class="fd-form-item">
+                <label class="fd-form-label" id="structureLabel">Structure:</label>
+                <div class="fd-popover">
+                    <div class="fd-popover__control" aria-expanded="true" aria-haspopup="true">
+                        <div class="fd-select">
+                            <button
+                                aria-labelledby="structureLabel"
+                                aria-expanded="true"
+                                aria-haspopup="listbox"
+                                class="fd-select__control"
+                                id="structureSelect"
+                                onclick="
+                                    toggleElAttrs('select001', ['aria-hidden']);
+                                    toggleElAttrs('structureSelect', ['aria-expanded']);
+                                "
+                                tabindex="0">
+                                <span is="formSelectValue" class="fd-select__text-content">Paragraph</span>
+                                <span class="fd-button fd-button--transparent fd-select__button">
+                                    <i class="sap-icon--slim-arrow-down"></i>
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                    <div
+                        aria-hidden="true"
+                        class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--dropdown"
+                        id="select001">
+                        <ul
+                            aria-labelledby="formSelectLabel"
+                            class="fd-list fd-list--dropdown"
+                            role="listbox">
+                            <li
+                                id="asFormItemSelectCombobox-currentlyFocusedItem"
+                                class="fd-list__item is-selected"
+                                role="option"
+                                tabindex="0">
+                                <span class="fd-list__title">
+                                    Paragraph
+                                </span>
+                            </li>
+                            <li class="fd-list__item"
+                                role="option"
+                                tabindex="-1">
+                                <span class="fd-list__title">Paragraph</span>
+                            </li>
+                            <li class="fd-list__item"
+                                role="option"
+                                tabindex="-1">
+                                <span class="fd-list__title">Paragraph</span>
+                            </li>
+                            <li class="fd-list__item"
+                                role="option"
+                                tabindex="-1">
+                                <span class="fd-list__title">Paragraph</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="fd-form-item">
+                <label class="fd-form-label" id="lengthLabel">Length:</label>
+                <div class="fd-slider fd-slider--range">
+                    <div class="fd-slider__inner">
+                        <div class="fd-slider__track">
+                        <div class="fd-slider__track-range" style="width: 40%">
+                            <div class="fd-slider__track-focus-range" tabindex="0"></div>
+                        </div>
+                        </div>
+                        <div class="fd-slider__handle" tabindex="0" role="slider" aria-label="range slider left" aria-valuemin="1" aria-valuemax="80" aria-valuenow="40" style="left: 40%;"></div>
+                        <div class="fd-slider__handle" tabindex="0" role="slider" aria-label="range slider right" aria-valuemin="40" aria-valuemax="100" aria-valuenow="80" style="left: 80%;"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="fd-form-item">
+                <label class="fd-form-label" id="languageLabel">Language:</label>
+                <div class="fd-popover">
+                    <div class="fd-popover__control" aria-expanded="true" aria-haspopup="true">
+                        <div class="fd-select">
+                            <button
+                                aria-labelledby="languageLabel"
+                                aria-expanded="true"
+                                aria-haspopup="listbox"
+                                class="fd-select__control"
+                                id="languageSelect"
+                                onclick="
+                                    toggleElAttrs('select002', ['aria-hidden']);
+                                    toggleElAttrs('languageSelect', ['aria-expanded']);
+                                "
+                                tabindex="0">
+                                <span is="formSelectValue" class="fd-select__text-content">English</span>
+                                <span class="fd-button fd-button--transparent fd-select__button">
+                                    <i class="sap-icon--slim-arrow-down"></i>
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                    <div
+                        aria-hidden="true"
+                        class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--dropdown"
+                        id="select002">
+                        <ul
+                            aria-labelledby="formSelectLabel"
+                            class="fd-list fd-list--dropdown"
+                            role="listbox">
+                            <li
+                                id="asFormItemSelectCombobox-currentlyFocusedItem"
+                                class="fd-list__item is-selected"
+                                role="option"
+                                tabindex="0">
+                                <span class="fd-list__title">
+                                    English
+                                </span>
+                            </li>
+                            <li class="fd-list__item"
+                                role="option"
+                                tabindex="-1">
+                                <span class="fd-list__title">French</span>
+                            </li>
+                            <li class="fd-list__item"
+                                role="option"
+                                tabindex="-1">
+                                <span class="fd-list__title">Spanish</span>
+                            </li>
+                            <li class="fd-list__item"
+                                role="option"
+                                tabindex="-1">
+                                <span class="fd-list__title">Bulgarian</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="fd-form-item">
+                <label class="fd-form-label" id="toneOfVoiceLabel">Tone Of Voice:</label>
+                <div class="fd-segmented-button" role="group" aria-label="Group label">
+                    <button aria-label="Survey" class="fd-button"><span class="fd-button__text">Casual</span></button>
+                    <button aria-label="Chart" class="fd-button fd-button--toggled" aria-pressed="true"><span class="fd-button__text">Neutral</span></button>
+                    <button aria-label="Pool" class="fd-button"><span class="fd-button__text">Formal</span></button>
+                </div>
+            </div>
+        </div>
+
+        <footer class="fd-popover__body-footer">
+            <div class="fd-bar fd-bar--footer">
+                <div class="fd-bar__right">
+                    <div class="fd-bar__element">
+                        <button class="fd-button fd-button--emphasized">
+                            <i class="sap-icon--ai"></i>
+                            <span class="fd-button__text">Apply</span>
+                        </button>
+                    </div>
+                    <div class="fd-bar__element">
+                        <button class="fd-button fd-button--transparent"><span class="fd-button__text">Close</span></button>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </section>
+</div>
+<div style="height: 400px;"></div>
+
+
