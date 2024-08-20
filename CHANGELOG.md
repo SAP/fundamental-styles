@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.37.5-rc.11](https://github.com/SAP/fundamental-styles/compare/v0.37.5-rc.10...v0.37.5-rc.11) (2024-08-20)
+
+### Bug Fixes
+
+-   **styles:** remove the space on hover for the Input group buttons [ci visual] ([#5568](https://github.com/SAP/fundamental-styles/issues/5568)) ([a4b389b](https://github.com/SAP/fundamental-styles/commit/a4b389bcefc630b1e50e52d5ba7f39a97e1cfa2d))
+
 ## [0.37.5-rc.10](https://github.com/SAP/fundamental-styles/compare/v0.37.5-rc.9...v0.37.5-rc.10) (2024-08-16)
 
 **Note:** Version bump only for package fundamental-styles
