@@ -313,13 +313,6 @@ $fd-input-field-height--compact: 1.625rem;
     )
   );
 
-  @include fd-input-group-button(".#{$block}__button:first-child");
-  @include fd-input-group-button(".#{$block}__button:not(:first-child)", false);
-
-  // To support `fd-input-group__addon` and avoid breaking changes
-  @include fd-input-group-button(".#{$block}__addon:first-child .#{$block}__button");
-  @include fd-input-group-button(".#{$block}__addon:not(:first-child) .#{$block}__button", false);
-
   .#{$block}__button {
     @include fd-ellipsis();
 
