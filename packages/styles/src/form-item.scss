@@ -13,6 +13,10 @@ $block: #{$fd-namespace}-form-item;
   align-content: center;
   flex-direction: column;
 
+  & + .#{$block} {
+    margin-block-start: 0.625rem;
+  }
+
   &__label-container {
     @include fd-flex() {
       justify-content: space-between
