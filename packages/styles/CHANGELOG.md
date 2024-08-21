@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.37.5-rc.12](https://github.com/SAP/fundamental-styles/compare/v0.37.5-rc.11...v0.37.5-rc.12) (2024-08-21)
+
+### Bug Fixes
+
+-   **styles:** add Guided Prompt pattern [ci visual] ([#5569](https://github.com/SAP/fundamental-styles/issues/5569)) ([42a1892](https://github.com/SAP/fundamental-styles/commit/42a189212a44c7708ff03aa81a7b8b0d6f48a015))
+
 ## [0.37.5-rc.11](https://github.com/SAP/fundamental-styles/compare/v0.37.5-rc.10...v0.37.5-rc.11) (2024-08-20)
 
 ### Bug Fixes
