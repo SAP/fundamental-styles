@@ -370,9 +370,9 @@
 		"rtl": "flip"
 	},
 	"0xe031": {
-		"names": ["javascript"],
+		"names": ["java"],
 		"groups": ["technical"],
-		"tags": ["javascript", "coffee"],
+		"tags": ["java", "coffee"],
 		"rtl": "flip"
 	},
 	"0xe032": {

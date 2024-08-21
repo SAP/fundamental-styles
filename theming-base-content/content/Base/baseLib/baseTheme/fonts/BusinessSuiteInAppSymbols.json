@@ -2594,6 +2594,23 @@
 		"tags": ["objects", "travel", "things", "transport"],
 		"rtl": "flip"
 	},
+	"0xe14f": {
+		"names": ["icon-collaboration-manager"],
+		"groups": ["callout", "people"],
+		"tags": [
+			"callout",
+			"comment",
+			"bubble",
+			"collaboration",
+			"comment",
+			"discussion",
+			"chat",
+			"team",
+			"group",
+			"people"
+		],
+		"rtl": "flip"
+	},
 	"0xe150": {
 		"names": ["icon-network-header"],
 		"groups": ["objects", "actions", "status"],
@@ -2651,7 +2668,7 @@
 		"rtl": "flip"
 	},
 	"0xe157": {
-		"names": ["icon-unsaved-changes\n"],
+		"names": ["icon-unsaved-changes"],
 		"groups": [],
 		"tags": [],
 		"rtl": "flip"
