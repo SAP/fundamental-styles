@@ -85,6 +85,21 @@ $block: #{$fd-namespace}-textarea;
     }
   }
 
+  &-counter-container {
+    @include fd-reset();
+
+    @include fd-flex() {
+      align-items: center;
+    };
+
+    padding-block: 0.375rem 0.5rem;
+
+    .#{$block}-counter {
+      padding-block: 0;
+      margin-inline-start: auto;
+    }
+  }
+
   &--ai {
     position: relative;
 
