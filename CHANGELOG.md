@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.37.6-rc.2](https://github.com/SAP/fundamental-styles/compare/v0.37.6-rc.1...v0.37.6-rc.2) (2024-08-22)
+
+### Bug Fixes
+
+-   **styles:** add AI Notice [ci visual] ([#5573](https://github.com/SAP/fundamental-styles/issues/5573)) ([c873b14](https://github.com/SAP/fundamental-styles/commit/c873b14bf24572d944cfe1a42c26e7117e415886))
+
 ## [0.37.6-rc.1](https://github.com/SAP/fundamental-styles/compare/v0.37.6-rc.0...v0.37.6-rc.1) (2024-08-22)
 
 **Note:** Version bump only for package fundamental-styles
