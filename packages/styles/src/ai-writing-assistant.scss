@@ -1,0 +1,66 @@
+@use "sass:map";
+
+@import "./new-settings";
+@import "./mixins";
+
+$block: #{$fd-namespace}-ai-writing-assistant;
+
+
+.#{$block} {
+  @include fd-reset();
+
+  position: relative;
+
+  .#{$block}__input-group {
+    &.is-highlight {
+      background: var(--sapField_InformationBackgroundStyle);
+      background-color: var(--sapField_InformationBackground);
+      border: var(--sapField_InformationColor) var(--sapField_InformationBorderWidth) var(--sapField_InformationBorderStyle);
+      box-shadow: var(--sapField_InformationShadow);
+    }
+  }
+
+  .#{$block}__input {
+    &:placeholder-shown {
+      & + .#{$block}__addon-button {
+        display: none;
+      }
+
+      &:is(:focus),
+      &.is-focus {
+        & + .#{$block}__addon-button {
+          display: flex;
+        }
+      }
+    }
+  }
+
+  .#{$fd-namespace}-input-group .#{$fd-namespace}-input-group__button.#{$block}__button {
+    color: var(--sapButton_Lite_TextColor);
+  }
+  
+  &__menu {
+    position: absolute;
+    bottom: calc(100% - var(--fdInput_Field_Margin, 0.25rem));
+    right: 0;
+  }
+
+  &__versioning {
+    @include fd-reset();
+    @include fd-flex-vertical-center();
+  }
+
+  &__version-indicator {
+    @include fd-reset();
+
+    padding-block: 0.5rem;
+    padding-inline: 0.5rem;
+    color: var(--sapList_TextColor);
+  }
+  
+
+  @include fd-compact-or-condensed() {
+    --fdInput_Field_Margin: 0.1875rem;
+  }
+ 
+}
