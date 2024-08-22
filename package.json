@@ -2,10 +2,10 @@
   "name": "fundamental-styles",
   "description": "Fundamental Library Styles is a Design System and HTML/CSS Component Library used to build modern Product User Experiences with SAP Fiori look and feel with any web technology. Learn more about this project at - http://sap.github.io/fundamental-styles/",
   "engines": {
-    "yarn": ">= 4.1.0",
-    "node": ">= 18"
+    "yarn": ">= 4.4.0",
+    "node": ">= 20"
   },
-  "packageManager": "yarn@4.1.0",
+  "packageManager": "yarn@4.4.0",
   "scripts": {
     "transform-stories": "ts-node stories-transformer.ts",
     "build": "npx nx run-many --target=build --all",
@@ -131,7 +131,7 @@
     "standard-version": "9.3.2",
     "start-server-and-test": "1.14.0",
     "storybook": "^8.2.4",
-    "stylelint": "16.2.1",
+    "stylelint": "16.6.1",
     "stylelint-config-standard": "36.0.0",
     "stylelint-config-standard-scss": "^13.0.0",
     "stylelint-scss": "6.1.0",

@@ -28,3 +28,4 @@ introduction.stories.mdx
 
 .nx/cache
 .nx/workspace-data
+.yarn/releases
