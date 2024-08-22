@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.37.6-rc.0](https://github.com/SAP/fundamental-styles/compare/v0.37.5...v0.37.6-rc.0) (2024-08-22)
+
+### Bug Fixes
+
+-   **styles:** add AI Quick Prompt pattern [ci visual] ([#5572](https://github.com/SAP/fundamental-styles/issues/5572)) ([62b2b4b](https://github.com/SAP/fundamental-styles/commit/62b2b4bc72d603e5c721c91abab613c5c89d042f))
+
 ## [0.37.5](https://github.com/SAP/fundamental-styles/compare/v0.37.5-rc.13...v0.37.5) (2024-08-21)
 
 **Note:** Version bump only for package fundamental-styles
