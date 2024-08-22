@@ -128,6 +128,50 @@ exports[`Check stories > AI/Components/Prompt Input > Story AIPromptInput > Shou
 </div>"
 `;
 
+exports[`Check stories > AI/Patterns/Acknowledgment > Story AIAcknowledgment > Should match snapshot 1`] = `
+"<div class=\\"fd-message-box-docs-static fd-message-box fd-message-box--information fd-message-box--active\\">
+    <section class=\\"fd-message-box__content\\">
+        <header class=\\"fd-bar fd-bar--header fd-message-box__header\\">
+            <div class=\\"fd-bar__left\\">
+                <div class=\\"fd-bar__element\\">
+                    <i class=\\"sap-icon--information\\"></i>
+                    <h5 class=\\"fd-title fd-title--h5\\">Information</h5>
+                </div>
+            </div>
+        </header>
+        <div class=\\"fd-message-box__body\\">
+            <br>
+            SAP CX AI Toolkit now provides embedded AI services. For more information, see the <a href=\\"#\\" class=\\"fd-link\\" tabindex=\\"0\\"><span class=\\"fd-link__content\\">SAP Help Portal</span></a>
+            <br><br>
+            <h6 class=\\"fd-title fd-title--h6\\">Disclaimer</h6>
+            <br>
+            Artificial Intelligence (AI) generates results based on multiple sources. Outputs may contain errors and inaccuracies. Consider reviewing all generated results and adjust as necessary.
+            <br><br>
+            <div class=\\"fd-form-group\\">
+                <div class=\\"fd-form-item\\">
+                    <input type=\\"checkbox\\" class=\\"fd-checkbox\\" id=\\"ai-ack\\">
+                    <label class=\\"fd-checkbox__label\\" for=\\"ai-ack\\">
+                        <span class=\\"fd-checkbox__checkmark\\" aria-hidden=\\"true\\"></span>
+                        <div class=\\"fd-checkbox__label-container\\">
+                            <span class=\\"fd-checkbox__text\\">Don't show this message again</span>
+                        </div>
+                    </label>
+                </div>
+            </div>
+        </div>
+        <footer class=\\"fd-bar fd-bar--footer fd-message-box__footer\\">
+            <div class=\\"fd-bar__right\\">
+                <div class=\\"fd-bar__element\\">
+                    <button class=\\"fd-button fd-button--emphasized fd-message-box__decisive-button\\">
+                        OK
+                    </button>
+                </div>
+            </div>
+        </footer>
+    </section>
+</div>"
+`;
+
 exports[`Check stories > AI/Patterns/Guided Prompt > Story AIGuidedPrompt > Should match snapshot 1`] = `
 "
 <div class=\\"fd-popover\\">
