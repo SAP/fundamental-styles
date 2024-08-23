@@ -107,5 +107,12 @@ $block: #{$fd-namespace}-textarea;
       padding-inline: 0;
       padding-block: 0;
     }
+
+    .#{$fd-namespace}-toolbar--ai {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+    }
   }
 }

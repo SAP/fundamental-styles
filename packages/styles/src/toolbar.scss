@@ -15,7 +15,8 @@ $block: #{$fd-namespace}-toolbar;
   --fdToolbar_Separator_Width: 0.0625rem;
   --fdToolbar_Info_Color: var(--sapList_TextColor);
   --fdToolbar_Background: var(--sapToolbar_Background);
-  --fdToolbar_Border: 0.0625rem solid var(--sapGroup_TitleBorderColor);
+  --fdToolbar_Border_Bottom: 0.0625rem solid var(--sapGroup_TitleBorderColor);
+  --fdToolbar_Border_Top: 0.0625rem solid var(--sapPageFooter_BorderColor);
 
   @include fd-reset();
 
@@ -27,7 +28,7 @@ $block: #{$fd-namespace}-toolbar;
   @include fd-set-paddings-x(var(--fdToolbar_Padding_Left), var(--fdToolbar_Padding_Right));
 
   height: var(--fdToolbar_Height);
-  border-bottom: var(--fdToolbar_Border);
+  border-bottom: var(--fdToolbar_Border_Bottom);
   background-color: var(--fdToolbar_Background);
 
   // Blocks
@@ -123,7 +124,20 @@ $block: #{$fd-namespace}-toolbar;
   }
 
   &--clear {
-    --fdToolbar_Border: none;
+    --fdToolbar_Border_Bottom: none;
+  }
+
+  &--ai {
+    --fdToolbar_Border_Bottom: none;
+    --fdToolbar_Background: var(--fdToolbar_Transparent_Background);
+    --fdToolbar_Padding_Left: 0.5rem;
+    --fdToolbar_Padding_Right: 0.25rem;
+
+    &.is-active {
+      --fdToolbar_Background: var(--fdToolbar_Solid_Background);
+
+      border-top: var(--fdToolbar_Border_Top);
+    }
   }
 
   &--title {

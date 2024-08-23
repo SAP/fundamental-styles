@@ -910,6 +910,295 @@ exports[`Check stories > AI/Patterns/Text Highlight > Story AITextHighlight > Sh
 </div>"
 `;
 
+exports[`Check stories > AI/Patterns/Writing Assistant > Story AIWritingAssistantForInputFileds > Should match snapshot 1`] = `
+"<h4>With empty field</h4>
+<div class=\\"fd-form-item\\">
+    <label class=\\"fd-form-label fd-form-label--required\\" aria-required=\\"true\\" for=\\"ai-wa-1\\">Label:</label>
+    <div class=\\"fd-ai-writing-assistant\\">
+        <div class=\\"fd-input-group\\">
+            <input class=\\"fd-input fd-input-group__input\\" type=\\"text\\" placeholder=\\"Placeholder\\" id=\\"ai-wa-1\\" name=\\"\\">
+            <span class=\\"fd-input-group__addon fd-input-group__addon--button\\">
+                <button class=\\"fd-input-group__button fd-button fd-button--icon fd-button--transparent\\" aria-label=\\"Navigation\\">
+                    <i class=\\"sap-icon--ai\\"></i>
+                </button>
+            </span>
+        </div>
+    </div>
+</div>
+
+<div style=\\"margin-block: 2rem 1rem;\\">The AI writing assistant appears when selection focus is on the input field.</div>
+<div class=\\"fd-form-item\\">
+    <label class=\\"fd-form-label fd-form-label--required\\" aria-required=\\"true\\" for=\\"ai-wa-2\\">Label:</label>
+    <div class=\\"fd-ai-writing-assistant\\">
+        <div class=\\"fd-input-group is-focus\\">
+            <input class=\\"fd-input fd-input-group__input is-focus\\" type=\\"text\\" placeholder=\\"Placeholder\\" id=\\"ai-wa-2\\" name=\\"\\">
+            <span class=\\"fd-input-group__addon fd-input-group__addon--button\\">
+                <button class=\\"fd-input-group__button fd-button fd-button--icon fd-button--transparent\\" aria-label=\\"Navigation\\">
+                    <i class=\\"sap-icon--ai\\"></i>
+                </button>
+            </span>
+        </div>
+    </div>
+</div>
+
+<div style=\\"margin-block: 2rem 1rem;\\">For empty input fields the AI writing assistant menu is limited to the ”generate” prompt.</div>
+<div class=\\"fd-form-item\\">
+    <label class=\\"fd-form-label fd-form-label--required\\" aria-required=\\"true\\" for=\\"ai-wa-3\\">Label:</label>
+    <div class=\\"fd-ai-writing-assistant\\">
+        <div class=\\"fd-input-group is-focus\\">
+            <input class=\\"fd-input fd-input-group__input is-focus\\" type=\\"text\\" placeholder=\\"Placeholder\\" id=\\"ai-wa-3\\" name=\\"\\">
+            <span class=\\"fd-input-group__addon fd-input-group__addon--button\\">
+                <button class=\\"fd-input-group__button fd-button fd-button--icon fd-button--transparent\\" aria-label=\\"Navigation\\">
+                    <i class=\\"sap-icon--ai\\"></i>
+                </button>
+            </span>
+        </div>
+        <nav class=\\"fd-menu\\">
+            <ul class=\\"fd-menu__list\\" role=\\"menu\\">
+                <li class=\\"fd-menu__item\\" role=\\"presentation\\">
+                    <a class=\\"fd-menu__link\\" href=\\"#\\" role=\\"menuitem\\">
+                        <span class=\\"fd-menu__title\\">Generate</span>
+                        <span class=\\"fd-menu__shortcut\\">Ctrl + Enter</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</div>
+
+<br><br>
+<h4>With user input</h4>
+<div style=\\"margin-block: 2rem 1rem;\\">AI writing assistant appear on focus on the input field.</div>
+<div class=\\"fd-form-item\\">
+    <label class=\\"fd-form-label fd-form-label--required\\" aria-required=\\"true\\" for=\\"ai-wa-5\\">Label:</label>
+    <div class=\\"fd-ai-writing-assistant\\">
+        <div class=\\"fd-input-group\\">
+            <input class=\\"fd-input fd-input-group__input\\" type=\\"text\\" placeholder=\\"Placeholder\\" id=\\"ai-wa-5\\" name=\\"\\" value=\\"Fellowship\\">
+            <span class=\\"fd-input-group__addon fd-input-group__addon--button\\">
+                <button class=\\"fd-input-group__button fd-button fd-button--icon fd-button--transparent\\" aria-label=\\"Navigation\\">
+                    <i class=\\"sap-icon--ai\\"></i>
+                </button>
+            </span>
+        </div>
+    </div>
+</div>
+
+<br><br>
+<div style=\\"margin-block: 2rem 1rem;\\">The user click on the AI writing assistant button it opens a menu with AI actions configured by the product team to be performed within the input field. If there is no previous AI content on the field the only option is ”Generate”</div>
+<div style=\\"height: 100px;\\"></div>
+
+<div class=\\"fd-form-item\\">
+    <label class=\\"fd-form-label fd-form-label--required\\" aria-required=\\"true\\" for=\\"ai-wa-6\\">Label:</label>
+    <div class=\\"fd-ai-writing-assistant\\">
+        <div class=\\"fd-input-group is-focus\\">
+            <input class=\\"fd-input fd-input-group__input\\" type=\\"text\\" placeholder=\\"Placeholder\\" id=\\"ai-wa-6\\" name=\\"\\" value=\\"Fellowship\\">
+            <span class=\\"fd-input-group__addon fd-input-group__addon--button\\">
+                <button class=\\"fd-input-group__button fd-button fd-button--icon fd-button--transparent is-active\\" aria-label=\\"Navigation\\">
+                    <i class=\\"sap-icon--ai\\"></i>
+                </button>
+            </span>
+        </div>
+        <nav class=\\"fd-menu\\">
+            <ul class=\\"fd-menu__list\\" role=\\"menu\\">
+                <li class=\\"fd-menu__item\\" role=\\"presentation\\">
+                    <a class=\\"fd-menu__link\\" href=\\"#\\" role=\\"menuitem\\">
+                        <span class=\\"fd-menu__title\\">Regenerate</span>
+                        <span class=\\"fd-menu__shortcut\\">Ctrl + Enter</span>
+                    </a>
+                </li>
+                <li class=\\"fd-menu__item\\" role=\\"presentation\\">
+                    <a class=\\"fd-menu__link\\" href=\\"#\\" role=\\"menuitem\\">
+                        <span class=\\"fd-menu__title\\">Fix Spelling and Grammar</span>
+                    </a>
+                </li>
+                <li class=\\"fd-menu__item has-separator\\" role=\\"presentation\\">
+                    <a class=\\"fd-menu__link\\" href=\\"#\\" role=\\"menuitem\\">
+                        <span class=\\"fd-menu__title\\">Translate</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</div>
+
+<br><br>
+<div style=\\"margin-block: 2rem 1rem;\\">One second after the user triggers the content generation AI Progress Indicator appears inside the input in information value state.  The AI writing assistant button transitions to a stop generating button and the menu is not accessible until the generation process ends.</div>
+<div class=\\"fd-form-item\\">
+    <label class=\\"fd-form-label fd-form-label--required\\" aria-required=\\"true\\" for=\\"ai-wa-7\\">Label:</label>
+    <div class=\\"fd-ai-writing-assistant\\">
+        <div class=\\"fd-input-group is-focus is-highlight\\">
+            <input class=\\"fd-input fd-input-group__input\\" type=\\"text\\" placeholder=\\"Placeholder\\" id=\\"ai-wa-7\\" name=\\"\\" value=\\"Analyzing request...\\">
+            <span class=\\"fd-input-group__addon fd-input-group__addon--button\\">
+                <button class=\\"fd-input-group__button fd-button fd-button--icon fd-button--transparent\\" aria-label=\\"Navigation\\">
+                    <i class=\\"sap-icon--stop\\"></i>
+                </button>
+            </span>
+        </div>
+    </div>
+</div>
+
+<br><br>
+<div style=\\"margin-block: 2rem 1rem;\\">Once the generation process is completed or stopped by the user, the AI Progress indicator disappear, the \\"Stop Generating\\" button transitions back into an AI writing assistant icon menu button, the AI text highlight pattern is applied to generated text.</div>
+<div class=\\"fd-form-item\\">
+    <label class=\\"fd-form-label fd-form-label--required\\" aria-required=\\"true\\" for=\\"ai-wa-8\\">Label:</label>
+    <div class=\\"fd-ai-writing-assistant\\">
+        <div class=\\"fd-input-group is-focus is-highlight\\">
+            <input class=\\"fd-input fd-input-group__input\\" type=\\"text\\" placeholder=\\"Placeholder\\" id=\\"ai-wa-8\\" name=\\"\\" value=\\"AI Design Fellowship\\">
+            <span class=\\"fd-input-group__addon fd-input-group__addon--button\\">
+                <button class=\\"fd-input-group__button fd-button fd-button--icon fd-button--transparent\\" aria-label=\\"Navigation\\">
+                    <i class=\\"sap-icon--ai\\"></i>
+                </button>
+            </span>
+        </div>
+    </div>
+</div>
+
+<br><br>
+<div style=\\"margin-block: 2rem 1rem;\\">User can keep fine-tuning the results by selecting actions from the menu and navigate through the different versions of content through the versioning element,</div>
+<div style=\\"height: 100px;\\"></div>
+
+<div class=\\"fd-form-item\\">
+    <label class=\\"fd-form-label fd-form-label--required\\" aria-required=\\"true\\" for=\\"ai-wa-9\\">Label:</label>
+    <div class=\\"fd-ai-writing-assistant\\">
+        <div class=\\"fd-input-group is-focus is-highlight\\">
+            <input class=\\"fd-input fd-input-group__input\\" type=\\"text\\" placeholder=\\"Placeholder\\" id=\\"ai-wa-9\\" name=\\"\\" value=\\"Fellowship\\">
+            <span class=\\"fd-input-group__addon fd-input-group__addon--button\\">
+                <button class=\\"fd-input-group__button fd-button fd-button--icon fd-button--transparent is-active\\" aria-label=\\"Navigation\\">
+                    <i class=\\"sap-icon--ai\\"></i>
+                </button>
+            </span>
+        </div>
+        <nav class=\\"fd-menu\\">
+            <ul class=\\"fd-menu__list\\" role=\\"menu\\">
+                <li class=\\"fd-menu__item\\" role=\\"presentation\\">
+                    <a class=\\"fd-menu__link\\" href=\\"#\\" role=\\"menuitem\\">
+                        <span class=\\"fd-menu__title\\">Regenerate</span>
+                        <span class=\\"fd-menu__shortcut\\">Ctrl + Enter</span>
+                    </a>
+                </li>
+                <li class=\\"fd-menu__item\\" role=\\"presentation\\">
+                    <a class=\\"fd-menu__link\\" href=\\"#\\" role=\\"menuitem\\">
+                        <span class=\\"fd-menu__title\\">Fix Spelling and Grammar</span>
+                    </a>
+                </li>
+                <li class=\\"fd-menu__item has-separator\\" role=\\"presentation\\">
+                    <a class=\\"fd-menu__link\\" href=\\"#\\" role=\\"menuitem\\">
+                        <span class=\\"fd-menu__title\\">Translate</span>
+                    </a>
+                </li>
+                <li class=\\"fd-menu__item has-separator\\" role=\\"presentation\\">
+                    <div class=\\"fd-ai-writing-assistant-versioning\\">
+                        <button aria-label=\\"Previous Version\\" title=\\"Previous Version (Shift+Ctrl+Z)\\" class=\\"fd-button fd-button--transparent\\">
+                            <i class=\\"sap-icon--navigation-left-arrow\\"></i>
+                        </button>
+                        <label class=\\"fd-form-label fd-form-label--stand-alone\\">2 / 2</label>
+                        <button aria-label=\\"Next Version\\" title=\\"Next Version (Shift+Ctrl+Y)\\" class=\\"fd-button fd-button--transparent\\" disabled>
+                            <i class=\\"sap-icon--navigation-right-arrow\\"></i>
+                        </button>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</div>
+
+
+<br><br>
+<div style=\\"margin-block: 2rem 1rem;\\">After generating content wth th AI writing assistant, from a populated field versioning allows to navigate back to the original content. The input field inherits its former value state.</div>
+<div style=\\"height: 100px;\\"></div>
+
+<div class=\\"fd-form-item\\">
+    <label class=\\"fd-form-label fd-form-label--required\\" aria-required=\\"true\\" for=\\"ai-wa-10\\">Label:</label>
+    <div class=\\"fd-ai-writing-assistant\\">
+        <div class=\\"fd-input-group is-focus\\">
+            <input class=\\"fd-input fd-input-group__input\\" type=\\"text\\" placeholder=\\"Placeholder\\" id=\\"ai-wa-10\\" name=\\"\\" value=\\"Fellowship\\">
+            <span class=\\"fd-input-group__addon fd-input-group__addon--button\\">
+                <button class=\\"fd-input-group__button fd-button fd-button--icon fd-button--transparent is-active\\" aria-label=\\"Navigation\\">
+                    <i class=\\"sap-icon--ai\\"></i>
+                </button>
+            </span>
+        </div>
+        <nav class=\\"fd-menu\\">
+            <ul class=\\"fd-menu__list\\" role=\\"menu\\">
+                <li class=\\"fd-menu__item\\" role=\\"presentation\\">
+                    <a class=\\"fd-menu__link\\" href=\\"#\\" role=\\"menuitem\\">
+                        <span class=\\"fd-menu__title\\">Regenerate</span>
+                        <span class=\\"fd-menu__shortcut\\">Ctrl + Enter</span>
+                    </a>
+                </li>
+                <li class=\\"fd-menu__item\\" role=\\"presentation\\">
+                    <a class=\\"fd-menu__link\\" href=\\"#\\" role=\\"menuitem\\">
+                        <span class=\\"fd-menu__title\\">Fix Spelling and Grammar</span>
+                    </a>
+                </li>
+                <li class=\\"fd-menu__item has-separator\\" role=\\"presentation\\">
+                    <a class=\\"fd-menu__link\\" href=\\"#\\" role=\\"menuitem\\">
+                        <span class=\\"fd-menu__title\\">Translate</span>
+                    </a>
+                </li>
+                <li class=\\"fd-menu__item has-separator\\" role=\\"presentation\\">
+                    <div class=\\"fd-ai-writing-assistant-versioning\\">
+                        <button aria-label=\\"Previous Version\\" title=\\"Previous Version (Shift+Ctrl+Z)\\" class=\\"fd-button fd-button--transparent\\" disabled>
+                            <i class=\\"sap-icon--navigation-left-arrow\\"></i>
+                        </button>
+                        <label class=\\"fd-form-label fd-form-label--stand-alone\\">1 / 2</label>
+                        <button aria-label=\\"Next Version\\" title=\\"Next Version (Shift+Ctrl+Y)\\" class=\\"fd-button fd-button--transparent\\">
+                            <i class=\\"sap-icon--navigation-right-arrow\\"></i>
+                        </button>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</div>"
+`;
+
+exports[`Check stories > AI/Patterns/Writing Assistant Toolbar > Story AIWritingAssistantToolbar > Should match snapshot 1`] = `
+"<h4>Default</h4>
+<div class=\\"fd-toolbar fd-toolbar--ai\\" role=\\"toolbar\\" aria-label=\\"AI toolbar\\">
+    <span class=\\"fd-toolbar__spacer\\"></span>
+    <button class=\\"fd-button fd-button--transparent\\" aria-label=\\"AI writing Assistant\\" title=\\"AI writing Assistant (Shift+F4)\\">
+        <i class=\\"sap-icon--ai\\"></i>
+    </button>
+</div>
+<br>
+<h4>Loading</h4>
+<div class=\\"fd-toolbar fd-toolbar--ai is-active\\" role=\\"toolbar\\" aria-label=\\"AI toolbar\\">
+    <label class=\\"fd-form-label fd-form-label--stand-alone\\">Performing AI Prompt</label>
+    <span class=\\"fd-toolbar__spacer\\"></span>
+    <button class=\\"fd-button fd-button--transparent\\" aria-label=\\"AI writing assistant generating\\" title=\\"Stop Generating (Esc)\\">
+        <i class=\\"sap-icon--stop\\"></i>
+    </button>
+</div>
+<br>
+<h4>No versioning</h4>
+<div class=\\"fd-toolbar fd-toolbar--ai is-active\\" role=\\"toolbar\\" aria-label=\\"AI toolbar\\">
+    <label class=\\"fd-form-label fd-form-label--stand-alone\\">Performed AI Prompt</label>
+    <span class=\\"fd-toolbar__spacer\\"></span>
+    <button class=\\"fd-button fd-button--transparent\\" aria-label=\\"AI Writing Assistant\\" title=\\"AI writing Assistant (Shift+F4)\\">
+        <i class=\\"sap-icon--ai\\"></i>
+    </button>
+</div>
+<br>
+<h4>Versioning</h4>
+<div class=\\"fd-toolbar fd-toolbar--ai is-active\\" role=\\"toolbar\\" aria-label=\\"AI toolbar\\">
+    <div class=\\"fd-ai-writing-assistant-versioning\\">
+        <button aria-label=\\"Previous Version\\" title=\\"Previous Version (Shift+Ctrl+Z)\\" class=\\"fd-button fd-button--transparent\\">
+            <i class=\\"sap-icon--navigation-left-arrow\\"></i>
+        </button>
+        <label class=\\"fd-form-label fd-form-label--stand-alone\\">3 / 3</label>
+        <button aria-label=\\"Next Version\\" title=\\"Next Version (Shift+Ctrl+Y)\\" class=\\"fd-button fd-button--transparent\\" disabled>
+            <i class=\\"sap-icon--navigation-right-arrow\\"></i>
+        </button>
+    </div>
+    <label class=\\"fd-form-label fd-form-label--stand-alone\\">Performed AI Prompt</label>
+    <span class=\\"fd-toolbar__spacer\\"></span>
+    <button class=\\"fd-button fd-button--transparent\\" aria-label=\\"AI Writing Assistant\\" title=\\"AI writing Assistant (Shift+F4)\\">
+        <i class=\\"sap-icon--ai\\"></i>
+    </button>
+</div>"
+`;
+
 exports[`Check stories > BTP/Avatar > Story AccentColors > Should match snapshot 1`] = `
 "
 <span class=\\"fd-avatar fd-avatar--accent-color-1 fd-avatar--40\\" aria-label=\\"Avatar\\">

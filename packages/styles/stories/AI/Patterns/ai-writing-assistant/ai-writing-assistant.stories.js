@@ -1,4 +1,4 @@
-import aiWritingAssistantExampleHtml from "./ai-writing-assistant.example.html?raw";
+import aiWritingAssistantInputsExampleHtml from "./ai-writing-assistant-inputs.example.html?raw";
 
 import '../../../../src/textarea.scss';
 import '../../../../src/form-item.scss';
@@ -11,12 +11,13 @@ import '../../../../src/link.scss';
 import '../../../../src/menu.scss';
 import '../../../../src/ai-text.scss';
 import '../../../../src/ai-writing-assistant.scss';
+import '../../../../src/ai-writing-assistant-versioning.scss';
 
 export default {
   title: 'AI/Patterns/Writing Assistant',
   parameters: {
     description: `The AI Writing Assistant simplifies interactions with generative AI, improving task efficiency and creating an intuitive, valuable user experience.
-It integrates with input fields, assisting users in crafting, refining, and enhancing text through Quick Prompts. These prompts, designed by prompt engineers who specialize in quality, guide the AI's output. The AI Writing Assistant Menu offers writing-focused options like "Change Tone," "Adjust Length," "Translate," and "Analyze Text," which can be applied to all or part of the text.
+It integrates with input fields, textareas and riche text editors, assisting users in crafting, refining, and enhancing text through Quick Prompts. These prompts, designed by prompt engineers who specialize in quality, guide the AI's output. The AI Writing Assistant Menu offers writing-focused options like "Change Tone," "Adjust Length," "Translate," and "Analyze Text," which can be applied to all or part of the text.
 
 <b>Use Writing Assistant: </b>
 <ul>
@@ -43,11 +44,4 @@ It integrates with input fields, assisting users in crafting, refining, and enha
     tags: ['ai', 'experimental']
   }
 };
-export const AIWritingAssistantForInputFileds = () => aiWritingAssistantExampleHtml;
-AIWritingAssistantForInputFileds.parameters = {
-  docs: {
-   description: {
-      story: ``
-    }
-  }
-};
+export const AIWritingAssistantForInputFileds = () => aiWritingAssistantInputsExampleHtml;
