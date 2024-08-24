@@ -92,7 +92,7 @@ $gridCol: #{$fd-namespace}-col;
     .#{$gridCol} {
       @include fd-ellipsis();
 
-      padding-block: 0 0;
+      padding-block: 0;
 
       &:not(.#{$formGroup}) {
         align-self: center;

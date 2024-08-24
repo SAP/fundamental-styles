@@ -45,5 +45,5 @@ runs:
 
     - name: Install dependencies
       if: inputs.frozen-lockfile != 'true' || steps.node_modules.outputs.cache-hit != 'true'
-      run: yarn install --immutable-cache
+      run: yarn install --immutable
       shell: bash
