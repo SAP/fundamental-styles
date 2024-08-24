@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.37.6-rc.7](https://github.com/SAP/fundamental-styles/compare/v0.37.6-rc.6...v0.37.6-rc.7) (2024-08-24)
+
+### Features
+
+-   **styles:** introduce AI Writing Assistant ([#5578](https://github.com/SAP/fundamental-styles/issues/5578)) ([feb2707](https://github.com/SAP/fundamental-styles/commit/feb2707989ad2b26b956ffaca498ff7282c4534c))
+
 ## [0.37.6-rc.6](https://github.com/SAP/fundamental-styles/compare/v0.37.6-rc.5...v0.37.6-rc.6) (2024-08-24)
 
 **Note:** Version bump only for package fundamental-styles
