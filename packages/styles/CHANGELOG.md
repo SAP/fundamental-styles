@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.37.6-rc.8](https://github.com/SAP/fundamental-styles/compare/v0.37.6-rc.7...v0.37.6-rc.8) (2024-08-24)
+
+### Bug Fixes
+
+-   **styles:** an attempt to fix the padding issue in FNGX [ci visual] ([#5580](https://github.com/SAP/fundamental-styles/issues/5580)) ([b756904](https://github.com/SAP/fundamental-styles/commit/b7569047e79e7598a5d6e3844c31649a1d465992))
+
 ## [0.37.6-rc.7](https://github.com/SAP/fundamental-styles/compare/v0.37.6-rc.6...v0.37.6-rc.7) (2024-08-24)
 
 ### Features
