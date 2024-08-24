@@ -1,0 +1,14 @@
+@use "sass:map";
+
+@import "./new-settings";
+@import "./mixins";
+
+$block: #{$fd-namespace}-ai-writing-assistant-versioning;
+
+.#{$block} {
+  @include fd-reset();
+
+  @include fd-flex-vertical-center() {
+    gap: 0.5rem;
+  };
+}

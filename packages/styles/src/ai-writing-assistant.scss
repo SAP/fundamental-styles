@@ -1,0 +1,52 @@
+@use "sass:map";
+
+@import "./new-settings";
+@import "./mixins";
+
+$block: #{$fd-namespace}-ai-writing-assistant;
+$menu: #{$fd-namespace}-menu;
+$inputGroup: #{$fd-namespace}-input-group;
+$inputGroupInput: #{$fd-namespace}-input-group__input;
+$inputGroupBtn: #{$fd-namespace}-input-group__button;
+$inputGroupAddonBtn: #{$fd-namespace}-input-group__addon--button;
+
+.#{$block} {
+  @include fd-reset();
+
+  position: relative;
+
+  .#{$inputGroup} {
+    .#{$inputGroupInput}:placeholder-shown {
+      @include fd-focus() {
+        & + .#{$inputGroupAddonBtn} {
+          display: flex;
+        }
+      }
+
+      & + .#{$inputGroupAddonBtn} {
+        display: none;
+      }
+    }
+
+    .#{$inputGroupAddonBtn} .#{$inputGroupBtn} {
+      color: var(--sapButton_Lite_TextColor);
+    }
+
+    &.is-highlight {
+      box-shadow: var(--sapField_InformationShadow);
+      background: var(--sapField_InformationBackgroundStyle);
+      background-color: var(--sapField_InformationBackground);
+      border: var(--sapField_InformationColor) var(--sapField_InformationBorderWidth) var(--sapField_InformationBorderStyle);
+    }
+  }
+
+  .#{$menu} {
+    position: absolute;
+    bottom: calc(100% - var(--fdWriting_Assistant_Menu_Offset, 0.25rem));
+    right: 0;
+  }  
+
+  @include fd-compact-or-condensed() {
+    --fdWriting_Assistant_Menu_Offset: 0.1875rem;
+  }
+}
