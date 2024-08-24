@@ -34,7 +34,7 @@ $fd-button-badge-spacing: 0.25rem;
     position: absolute;
     height: auto;
     width: 100%;
-    inset: calc((var(--fdButton_Clickable_Height) - var(--fdButton_Height)) * -0.5) 0 calc((var(--fdButton_Clickable_Height) - var(--fdButton_Height)) * -0.5) 0;
+    inset: calc((var(--fdButton_Clickable_Height) - var(--fdButton_Height)) * -0.5) 0;
   }
 
   &__text {

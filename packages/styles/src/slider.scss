@@ -207,9 +207,9 @@ $slider-side-padding: calc((var(--fdSlider_Handle_Width) * 0.5) + #{$handle-outl
     }
 
     @include fd-hover() {
+      border: var(--fdSlider_Hover_Handle_Border);
       border-color: var(--fdSlider_Handle_Border_Hover_Color);
       background-color: var(--fdSlider_Hover_Handle_Background);
-      border: var(--fdSlider_Hover_Handle_Border);
 
       @include fd-focus() {
         outline: none;

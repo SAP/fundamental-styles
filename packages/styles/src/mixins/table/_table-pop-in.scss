@@ -40,7 +40,7 @@
 
       &--main {
         .#{$block}__cell {
-          padding-block: 0.25rem 0.25rem;
+          padding-block: 0.25rem;
           border-bottom-color: transparent;
         }
 
@@ -96,7 +96,7 @@
 
       &--secondary {
         .#{$block}__cell {
-          padding-block: 0.5rem 0.5rem;
+          padding-block: 0.5rem;
         }
 
         @include fd-hover() {

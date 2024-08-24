@@ -106,11 +106,11 @@ $menu: #{$fd-namespace}-menu;
     border-radius: $fd-dialog-content-border-radius;
 
     &--no-vertical-padding {
-      padding-block: 0 0;
+      padding-block: 0;
     }
 
     &--no-horizontal-padding {
-      padding-inline: 0 0;
+      padding-inline: 0;
     }
 
     &:not(:first-child) {
