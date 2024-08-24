@@ -181,7 +181,8 @@ $fd-calendar-special-days: (
   @include fd-reset();
 
   width: var(--fdCalendar_Width);
-  padding: var(--fdCalendar_Padding);
+  padding-inline: var(--fdCalendar_Padding);
+  padding-block: var(--fdCalendar_Padding);
   background-color: var(--fdCalendar_Background);
   border-radius: var(--fdCalendar_Border_Radius);
 
@@ -466,6 +467,8 @@ $fd-calendar-special-days: (
   }
 
   &--mobile-portrait {
-    --fdCalendar_Padding: 1rem 0 0 0;
+    --fdCalendar_Padding: 0;
+
+    padding-block-start: 1rem;
   }
 }
