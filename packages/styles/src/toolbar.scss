@@ -61,15 +61,18 @@ $block: #{$fd-namespace}-toolbar;
     --fdToolbar_Separator_Width: auto;
     --fdToolbar_Separator_Height: 0.0625rem;
     --fdToolbar_Separator_Margin: 0.1875rem;
-    --fdToolbar_Overflow_Padding: 0.25rem 0.5rem;
+    --fdToolbar_Overflow_Padding_Block: 0.25rem;
+    --fdToolbar_Overflow_Padding_Inline: 0.5rem;
 
     overflow: auto;
     max-height: 50vh;
-    padding: var(--fdToolbar_Overflow_Padding);
+    padding-block: var(--fdToolbar_Overflow_Padding_Block);
+    padding-inline: var(--fdToolbar_Overflow_Padding_Inline);
     max-width: var(--fdToolbar_Overflow_Max_Width);
 
     @include fd-compact-or-condensed() {
-      --fdToolbar_Overflow_Padding: 0.1875rem 0.375rem;
+      --fdToolbar_Overflow_Padding_Block: 0.1875rem;
+      --fdToolbar_Overflow_Padding_Inline: 0.375rem;
     }
 
     & .#{$block}__overflow-button {

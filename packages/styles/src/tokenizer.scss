@@ -29,7 +29,8 @@ $block: #{$fd-namespace}-tokenizer;
   &__inner {
     @include fd-remove-scrollbar();
 
-    padding: var(--fdTokenizer_Inner_Padding, #{0 $fd-tokenizer-spacing});
+    padding-block: 0;
+    padding-inline: var(--fdTokenizer_Inner_Padding, #{$fd-tokenizer-spacing});
     overflow: hidden;
     float: right;
     white-space: nowrap;
@@ -67,7 +68,8 @@ $block: #{$fd-namespace}-tokenizer;
     }
 
     &:first-child {
-      padding: 0 $fd-tokenizer-spacing;
+      padding-block: 0;
+      padding-inline: $fd-tokenizer-spacing;
     }
 
     &:last-child {
@@ -96,7 +98,7 @@ $block: #{$fd-namespace}-tokenizer;
   @include fd-compact-or-condensed() {
     @include fd-set-min-height($fd-input-field-height--compact);
 
-    --fdTokenizer_Inner_Padding: #{0 $fd-tokenizer-compact-spacing};
+    --fdTokenizer_Inner_Padding: #{$fd-tokenizer-compact-spacing};
     --fdInput_Field_Compact_Min_Width: #{$fd-tokenizer-input-width-compact};
 
     .#{$block}__input:first-child {

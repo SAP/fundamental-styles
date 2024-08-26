@@ -10,20 +10,24 @@ $block: #{$fd-namespace}-action-sheet;
   $fd-action-sheet-overlay-color: var(--sapBlockLayer_Background);
 
   // SPACING
-  --fdActionSheet_Padding: 0.25rem 0.5rem;
-  --fdActionSheet_Item_Padding: 0.25rem 0;
+  --fdActionSheet_Padding_Block: 0.25rem;
+  --fdActionSheet_Padding_Inline: 0.5rem;
+  --fdActionSheet_Item_Padding_Block: 0.25rem;
+  --fdActionSheet_Item_Padding_Inline: 0;
 
   @include fd-reset();
 
   width: 100%;
-  padding: var(--fdActionSheet_Padding);
+  padding-block: var(--fdActionSheet_Padding_Block);
+  padding-inline: var(--fdActionSheet_Padding_Inline);
 
   &__item {
     @include fd-reset();
 
     display: block;
     width: 100%;
-    padding: var(--fdActionSheet_Item_Padding);
+    padding-block: var(--fdActionSheet_Item_Padding_Block);
+    padding-inline: var(--fdActionSheet_Item_Padding_Inline);
   }
 
   &__wrapper {
@@ -64,8 +68,10 @@ $block: #{$fd-namespace}-action-sheet;
   }
 
   @include fd-compact-or-condensed() {
-    --fdActionSheet_Padding: 0.1875rem 0.375rem;
-    --fdActionSheet_Item_Padding: 0.1875rem 0;
+    --fdActionSheet_Padding_Block: 0.1875rem;
+    --fdActionSheet_Padding_Inline: 0.375rem;
+    --fdActionSheet_Item_Padding_Block: 0.1875rem;
+    --fdActionSheet_Item_Padding_Inline: 0;
   }
 
   &--mobile {

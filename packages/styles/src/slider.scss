@@ -30,7 +30,8 @@ $slider-side-padding: calc((var(--fdSlider_Handle_Width) * 0.5) + #{$handle-outl
 
   min-width: 4rem;
   max-width: 100%;
-  padding: 1rem $slider-side-padding;
+  padding-block: 1rem;
+  padding-inline: $slider-side-padding;
   position: relative;
 
   &--lg {

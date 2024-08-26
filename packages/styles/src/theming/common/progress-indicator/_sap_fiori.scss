@@ -14,10 +14,11 @@
   --fdProgress_Icon_Negative: '';
   --fdProgress_Icon_Critical: '';
   --fdProgress_Indicator_Container_Height: 1rem;
-  --fdProgress_Indicator_Container_Margin: 0;
+  --fdProgress_Indicator_Container_Margin_Block: 0;
+  --fdProgress_Indicator_Container_Margin_Inline: 0;
   --fdProgress_Indicator_Container_Overflow: hidden;
   --fdProgress_Indicator_Progress_Bar_Height: 1rem;
-  --fdProgress_Indicator_Progress_Bar_Margin: 0;
+  --fdProgress_Indicator_Progress_Bar_Margin_Block: 0;
   --fdProgress_Indicator_Label_Margin_Start: 0.375rem;
   --fdProgress_Indicator_Label_Margin_End: 0.375rem;
   --fdProgress_Indicator_Label_Color: var(--sapField_TextColor);

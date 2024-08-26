@@ -89,7 +89,8 @@ $block: #{$fd-namespace}-switch;
   display: flex;
   align-items: center;
   cursor: pointer;
-  padding: var(--fdSwitch_Padding);
+  padding-block: var(--fdSwitch_Padding, 0.625rem);
+  padding-inline: 0;
 
   @include fd-disabled() {
     cursor: auto;
@@ -285,7 +286,7 @@ $block: #{$fd-namespace}-switch;
   }
 
   @include fd-compact-or-condensed() {
-    --fdSwitch_Padding: var(--fdSwitch_Compact_Padding);
+    --fdSwitch_Padding: var(--fdSwitch_Compact_Padding_Block);
     --fdSwitch_Handle_Width: var(--fdSwitch_Compact_Handle_Width);
     --fdSwitch_Handle_Height: var(--fdSwitch_Compact_Handle_Height);
     --fdSwitch_Width: var(--fdSwitch_Compact_Width);

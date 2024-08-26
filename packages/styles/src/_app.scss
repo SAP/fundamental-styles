@@ -31,14 +31,17 @@ $block: #{$fd-namespace}-app;
 
     &--horizontal {
       flex: 1 100%;
-      padding: 0 0.5rem;
+      padding-block: 0;
+      padding-inline: 0.5rem;
 
       @include fd-screen(m) {
-        padding: 0 2rem;
+        padding-block: 0;
+        padding-inline: 2rem;
       }
 
       @include fd-screen(xl) {
-        padding: 0 3rem;
+        padding-block: 0;
+        padding-inline: 3rem;
       }
     }
 

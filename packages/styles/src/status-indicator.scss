@@ -22,7 +22,6 @@ $color-states: (
   $fd-status-indicator-default-color-fill: transparent !default;
   $fd-status-indicator-default-color: var(--sapContent_LabelColor) !default;
   $fd-status-indicator-default-font-size: var(--sapFontSmallSize, 0.75rem);
-  $fd-status-indicator-default-margin: 0.375rem !default;
 
   font-family: var(--sapFontFamily);
   border-color: var(--sapContent_ForegroundBorderColor);

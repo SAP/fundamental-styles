@@ -118,7 +118,8 @@ $gridCol: #{$fd-namespace}-col;
     padding-inline: $gutter;
 
     .#{$gridRow} {
-      margin: 0 -#{$gutter};
+      margin-block: 0;
+      margin-inline: -#{$gutter};
       min-width: calc(100% + #{$gutter} * 2);
 
       .#{$gridCol} {

@@ -273,7 +273,8 @@ $block: #{$fd-namespace}-dynamic-page;
     @include fd-reset();
 
     background-color: $fd-dynamic-page-background-color;
-    padding: $fd-dynamic-page-header-padding-top-bottom 0;
+    padding-block: $fd-dynamic-page-header-padding-top-bottom;
+    padding-inline: 0;
 
     &[aria-hidden="true"] {
       display: none;

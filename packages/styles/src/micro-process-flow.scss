@@ -202,7 +202,8 @@ $fd-micro-process-flow-semantic-colors: (
     @include fd-set-padding-left($fd-micro-process-flow-item-padding);
 
     position: relative;
-    margin: calc(var(--sapContent_FocusWidth) + var(--sapContent_FocusWidth)) 0;
+    margin-block: calc(var(--sapContent_FocusWidth) + var(--sapContent_FocusWidth));
+    margin-inline: 0;
     justify-content: flex-start;
 
     .#{$fd-namespace}-status-indicator {

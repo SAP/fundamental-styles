@@ -77,7 +77,8 @@ $color-accents: (
   width: auto;
   color: var(--fdInfoLabel_Color);
   height: var(--fdInfoLabel_Height);
-  padding: 0 var(--fdInfoLabel_Padding);
+  padding-block: 0;
+  padding-inline: var(--fdInfoLabel_Padding);
   border-radius: var(--fdInfoLabel_Border_Radius);
   background-color: var(--fdInfoLabel_Background);
   border: 0.0625rem solid var(--fdInfoLabel_Border_Color);

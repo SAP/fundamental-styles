@@ -10,12 +10,14 @@ $block: #{$fd-namespace}-illustrated-message;
   --illustratedMessageMaxWidth: 30rem;
   --illustrationW: 20rem;
   --illustrationH: 15rem;
-  --illustrationMargin: 2rem 0;
+  --illustrationMarginBlock: 2rem;
+  --illustrationMarginInline: 0;
   --figcaptionMaxWidth: 25rem;
   --titleMarginBottom: 1rem;
   --titleFontSize: var(--sapFontHeader2Size);
   --textMarginBottom: 0.5rem;
-  --actionsMargin: 1rem 0;
+  --actionsMarginBlock: 1rem;
+  --actionsMarginInline: 0;
 
   @include fd-reset();
 
@@ -45,7 +47,8 @@ $block: #{$fd-namespace}-illustrated-message;
 
     width: var(--illustrationW);
     height: var(--illustrationH);
-    margin: var(--illustrationMargin);
+    margin-block: var(--illustrationMarginBlock);
+    margin-inline: var(--illustrationMarginInline);
   }
 
   &__figcaption {
@@ -87,7 +90,8 @@ $block: #{$fd-namespace}-illustrated-message;
     }
 
     width: 100%;
-    margin: var(--actionsMargin);
+    margin-block: var(--actionsMarginBlock);
+    margin-inline: var(--actionsMarginInline);
   }
 
   @media screen and (width <= 599px) {
@@ -100,18 +104,18 @@ $block: #{$fd-namespace}-illustrated-message;
   &--dialog {
     --illustrationW: 10rem;
     --illustrationH: 10rem;
-    --illustrationMargin: 1rem 0;
+    --illustrationMarginBlock: 1rem;
     --titleMarginBottom: 0.5rem;
     --titleFontSize: var(--sapFontHeader3Size);
-    --actionsMargin: 0.5rem 0 1rem 0;
+    --actionsMarginBlock: 0.5rem 1rem;
   }
 
   &--spot {
     --illustratedMessagePadding: 0.5rem;
     --illustrationW: 8rem;
     --illustrationH: 8rem;
-    --illustrationMargin: 0 0 0.5rem 0;
-    --actionsMargin: 0.5rem 0;
+    --illustrationMarginBlock: 0 0.5rem;
+    --actionsMarginBlock: 0.5rem;
     --titleMarginBottom: 0.5rem;
     --titleFontSize: var(--sapFontHeader4Size);
   }
@@ -120,17 +124,17 @@ $block: #{$fd-namespace}-illustrated-message;
     --illustratedMessagePadding: 0.25rem;
     --illustrationW: 2.813rem;
     --illustrationH: 2.813rem;
-    --illustrationMargin: 0;
+    --illustrationMarginBlock: 0;
     --textMarginBottom: 0.313rem;
     --titleMarginBottom: 0.25rem;
     --titleFontSize: var(--sapFontHeader5Size);
-    --actionsMargin: 0.25rem 0;
+    --actionsMarginBlock: 0.25rem;
     --illustrationMarginRight: 0.25rem;
 
     flex-flow: row wrap;
 
     .#{$block}__illustration {
-      @include fd-set-margin-right(var(--illustrationMarginRight));
+      margin-inline-end: var(--illustrationMarginRight);
 
       & + .#{$block}__figcaption {
         width: calc(100% - var(--illustrationW) - var(--illustrationMarginRight));
