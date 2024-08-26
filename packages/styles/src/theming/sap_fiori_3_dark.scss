@@ -1,234 +1,238 @@
-@use "sass:map";
+@use 'sass:map';
 
-@import "./common/switch/sap_fiori";
-@import "./common/button/sap_fiori";
-@import "./common/grid-list/sap_fiori";
-@import "./common/icon-tab-bar/sap_fiori";
-@import "./common/table/sap_fiori";
-@import "./common/dynamic-page-layout/sap_fiori";
-@import "./common/card/sap_fiori";
-@import "./common/scrollbar/sap_fiori";
-@import "./common/slider/sap_fiori";
-@import "./common/splitter/sap_fiori";
-@import "./common/input/sap_fiori";
-@import "./common/input-group/sap_fiori";
-@import "./common/wizard/sap_fiori";
-@import "./common/panel/sap_fiori";
-@import "./common/carousel/sap_fiori";
-@import "./common/feed-list-item/sap_fiori";
-@import "./common/message-box/sap_fiori";
-@import "./common/busy-indicator/sap_fiori";
-@import "./common/menu/sap_fiori";
-@import "./common/checkbox/sap_foiri";
-@import "./common/radio/sap_fiori";
-@import "./common/link/sap_fiori";
-@import "./common/vertical-nav/sap_fiori";
-@import "./common/rating-indicator/sap_fiori";
-@import "./common/select/sap_fiori";
-@import "./common/tile/sap_fiori";
-@import "./common/progress-indicator/sap_fiori";
-@import "./common/form-message/sap_fiori";
-@import "./common/info-label/sap_fiori";
-@import "./common/file-uploader/sap_fiori";
-@import "./common/variant-management/sap_fiori";
-@import "./common/shellbar/sap_fiori";
-@import "./common/user-menu/sap_fiori";
-@import "./common/flexible-column-layout/sap_fiori";
-@import "./common/avatar/sap_fiori";
-@import "./common/avatar-group/sap_fiori";
-@import "./common/message-popover/sap_fiori";
-@import "./common/token/sap_fiori";
-@import "./common/calendar/sap_fiori";
-@import "./common/step-input/sap_fiori";
-@import "./common/object-status/sap_fiori";
-@import "./common/tokenizer/sap_fiori";
-@import "./common/notification/sap_fiori";
-@import "./common/pagination/sap_fiori";
-@import "./common/search-field/sap_fiori";
-@import "./common/navigation/sap_fiori";
-@import "./common/navigation-menu/sap_fiori";
-@import "./common/tool-header/sap_fiori";
-@import "./common/textarea/sap_fiori";
+@import './common/switch/sap_fiori';
+@import './common/button/sap_fiori';
+@import './common/grid-list/sap_fiori';
+@import './common/icon-tab-bar/sap_fiori';
+@import './common/table/sap_fiori';
+@import './common/dynamic-page-layout/sap_fiori';
+@import './common/card/sap_fiori';
+@import './common/scrollbar/sap_fiori';
+@import './common/slider/sap_fiori';
+@import './common/splitter/sap_fiori';
+@import './common/input/sap_fiori';
+@import './common/input-group/sap_fiori';
+@import './common/wizard/sap_fiori';
+@import './common/panel/sap_fiori';
+@import './common/carousel/sap_fiori';
+@import './common/feed-list-item/sap_fiori';
+@import './common/message-box/sap_fiori';
+@import './common/busy-indicator/sap_fiori';
+@import './common/menu/sap_fiori';
+@import './common/checkbox/sap_foiri';
+@import './common/radio/sap_fiori';
+@import './common/link/sap_fiori';
+@import './common/vertical-nav/sap_fiori';
+@import './common/rating-indicator/sap_fiori';
+@import './common/select/sap_fiori';
+@import './common/tile/sap_fiori';
+@import './common/progress-indicator/sap_fiori';
+@import './common/form-message/sap_fiori';
+@import './common/info-label/sap_fiori';
+@import './common/file-uploader/sap_fiori';
+@import './common/variant-management/sap_fiori';
+@import './common/shellbar/sap_fiori';
+@import './common/user-menu/sap_fiori';
+@import './common/flexible-column-layout/sap_fiori';
+@import './common/avatar/sap_fiori';
+@import './common/avatar-group/sap_fiori';
+@import './common/message-popover/sap_fiori';
+@import './common/token/sap_fiori';
+@import './common/calendar/sap_fiori';
+@import './common/step-input/sap_fiori';
+@import './common/object-status/sap_fiori';
+@import './common/tokenizer/sap_fiori';
+@import './common/notification/sap_fiori';
+@import './common/pagination/sap_fiori';
+@import './common/search-field/sap_fiori';
+@import './common/navigation/sap_fiori';
+@import './common/navigation-menu/sap_fiori';
+@import './common/tool-header/sap_fiori';
+@import './common/textarea/sap_fiori';
 
 :root {
-  /* BTP */
-  --sapMenu_Shadow1: 0 0 0.125rem 0 rgb(0 0 0 / 16%), 0 0.5rem 1rem 0 rgb(0 0 0 / 32%);
-  --sapMenu_Shadow2: 0 0 0.125rem 0 rgb(0 0 0 / 48%), 0 1rem 2rem 0 rgb(0 0 0 / 64%);
-  --sapNotifications_Shadow2: 0 0 0.125rem 0 rgb(0 0 0 / 48%), 0 1rem 2rem 0 rgb(0 0 0 / 64%);
-  --sapSearchHover_Shadow: 0 0 0.125rem 0 rgb(0 0 0 / 16%), 0 0.5rem 1rem 0 rgb(0 0 0 / 32%), 0 0 0 0.0625rem rgb(134 150 169 / 16%);
-  --sapMenu_Background: var(--sapList_Background);
-  --sapMenu_Hover_Background: var(--sapList_Hover_Background);
-  --sapMenu_Active_Background: var(--sapList_Active_Background);
-  --sapMenu_Selected_Background: var(--sapList_Hover_SelectionBackground);
-  --fdOverlay_Background_Opacity: 0.6;
-  --sapNavigation_Shadow1: 0 0 0.125rem 0 rgb(0 0 0 / 16%), 0 0.5rem 1rem 0 rgb(0 0 0 / 32%);
-  --sapNavigation_Shadow2: 0 0 0.125rem 0 rgb(0 0 0 / 48%), 0 1rem 2rem 0 rgb(0 0 0 / 64%);
-  --sapNavigation_Background: var(--sapList_Background);
-  --sapNavigation_Hover_Background: var(--sapList_Hover_Background);
-  --sapNavigation_Active_Background: var(--sapList_Active_Background);
-  --sapNavigation_Selected_Background: var(--sapList_Hover_SelectionBackground);
+    /* BTP */
+    --sapMenu_Shadow1: 0 0 0.125rem 0 rgb(0 0 0 / 16%), 0 0.5rem 1rem 0 rgb(0 0 0 / 32%);
+    --sapMenu_Shadow2: 0 0 0.125rem 0 rgb(0 0 0 / 48%), 0 1rem 2rem 0 rgb(0 0 0 / 64%);
+    --sapNotifications_Shadow2: 0 0 0.125rem 0 rgb(0 0 0 / 48%), 0 1rem 2rem 0 rgb(0 0 0 / 64%);
+    --sapSearchHover_Shadow: 0 0 0.125rem 0 rgb(0 0 0 / 16%), 0 0.5rem 1rem 0 rgb(0 0 0 / 32%),
+        0 0 0 0.0625rem rgb(134 150 169 / 16%);
+    --sapMenu_Background: var(--sapList_Background);
+    --sapMenu_Hover_Background: var(--sapList_Hover_Background);
+    --sapMenu_Active_Background: var(--sapList_Active_Background);
+    --sapMenu_Selected_Background: var(--sapList_Hover_SelectionBackground);
+    --fdOverlay_Background_Opacity: 0.6;
+    --sapNavigation_Shadow1: 0 0 0.125rem 0 rgb(0 0 0 / 16%), 0 0.5rem 1rem 0 rgb(0 0 0 / 32%);
+    --sapNavigation_Shadow2: 0 0 0.125rem 0 rgb(0 0 0 / 48%), 0 1rem 2rem 0 rgb(0 0 0 / 64%);
+    --sapNavigation_Background: var(--sapList_Background);
+    --sapNavigation_Hover_Background: var(--sapList_Hover_Background);
+    --sapNavigation_Active_Background: var(--sapList_Active_Background);
+    --sapNavigation_Selected_Background: var(--sapList_Hover_SelectionBackground);
 
-  /* Rating Indicator */
-  --fdRating_Indicator_Selected_Hover_Opacity: 0.8;
+    /* Rating Indicator */
+    --fdRating_Indicator_Selected_Hover_Opacity: 0.8;
 
-  /* Dynamic Page Layout */
-  --fdDynamicPage_Hover_Border_Bottom: none;
-  --fdDynamicPage_Title_Header_Transparent_Background: transparent;
-  --fdDynamicPage_Button_Left_Gradient: linear-gradient(to left, var(--sapHighlightColor), transparent);
-  --fdDynamicPage_Button_Right_Gradient: linear-gradient(to right, var(--sapHighlightColor), transparent);
-  --fdDynamicPage_Button_Group_Background: var(--sapHighlightColor);
-  --fdDynamicPage_Content_List_Background: var(--sapGroup_ContentBackground);
-  --fdDynamicPage_Content_Transparent_Background: transparent;
+    /* Dynamic Page Layout */
+    --fdDynamicPage_Hover_Border_Bottom: none;
+    --fdDynamicPage_Title_Header_Transparent_Background: transparent;
+    --fdDynamicPage_Button_Left_Gradient: linear-gradient(to left, var(--sapHighlightColor), transparent);
+    --fdDynamicPage_Button_Right_Gradient: linear-gradient(to right, var(--sapHighlightColor), transparent);
+    --fdDynamicPage_Button_Group_Background: var(--sapHighlightColor);
+    --fdDynamicPage_Content_List_Background: var(--sapGroup_ContentBackground);
+    --fdDynamicPage_Content_Transparent_Background: transparent;
 
-  /* TODO: DEPRECATED Side-Nav */
-  --fdSideNav_Text_Shadow: none;
+    /* TODO: DEPRECATED Side-Nav */
+    --fdSideNav_Text_Shadow: none;
 
-  /* Vertical-Nav */
-  --fdVerticalNav_Text_Shadow: none;
+    /* Vertical-Nav */
+    --fdVerticalNav_Text_Shadow: none;
 
-  /* Time */
-  --fdTime_Text_Shadow: none;
+    /* Time */
+    --fdTime_Text_Shadow: none;
 
-  /* Select */
-  --fdSelect_Text_Shadow: none;
-  --fdSelect_Button_Interractive_SideBorder: none;
+    /* Select */
+    --fdSelect_Text_Shadow: none;
+    --fdSelect_Button_Interractive_SideBorder: none;
 
-  /* Popover */
-  --fdPopover_Border_Radius: var(--sapElement_BorderCornerRadius);
-  --fdPopover_Border_Width: 0.0625rem;
-  --fdPopover_Border_Color: #8c8f91;
+    /* Popover */
+    --fdPopover_Border_Radius: var(--sapElement_BorderCornerRadius);
+    --fdPopover_Border_Width: 0.0625rem;
+    --fdPopover_Border_Color: #8c8f91;
 
-  /* Product Switch */
-  --fdProductSwitch_Text_Shadow: none;
-  --fdProductSwitch_Shadow: none;
+    /* Product Switch */
+    --fdProductSwitch_Text_Shadow: none;
+    --fdProductSwitch_Shadow: none;
 
-  /* Menu */
-  --fdMenu_Text_Shadow: none;
+    /* Menu */
+    --fdMenu_Text_Shadow: none;
 
-  /* List */
-  --fdList_Button_Spacing: 0.125rem;
-  --fdList_Growing_Font_Weight: normal;
-  --fdList_Active_Outline_Color: var(--sapContent_ContrastFocusColor);
+    /* List */
+    --fdList_Button_Spacing: 0.125rem;
+    --fdList_Growing_Font_Weight: normal;
+    --fdList_Active_Outline_Color: var(--sapContent_ContrastFocusColor);
 
-  /* Input Group */
-  --fdInputGroup_Text_Shadow: none;
-  --fdInputGroup_ControlButton_SideBorder: var(--sapButton_BorderWidth) solid transparent;
-  --fdInputGroup_ControlButton_SideBorder_Active: solid var(--sapButton_BorderWidth) transparent;
+    /* Input Group */
+    --fdInputGroup_Text_Shadow: none;
+    --fdInputGroup_ControlButton_SideBorder: var(--sapButton_BorderWidth) solid transparent;
+    --fdInputGroup_ControlButton_SideBorder_Active: solid var(--sapButton_BorderWidth) transparent;
 
-  /* Input */
-  --fdInput_Text_Shadow: none;
-  --fdInput_State_Text_Style: normal;
-  --fdInput_State_Font_Weight: normal;
-  --fdInput_State_Border_Type: solid;
-  --fdPlaceholder_Font_Style: italic;
-  --fdInput_Outline_Offset: -0.1875rem;
+    /* Input */
+    --fdInput_Text_Shadow: none;
+    --fdInput_State_Text_Style: normal;
+    --fdInput_State_Font_Weight: normal;
+    --fdInput_State_Border_Type: solid;
+    --fdPlaceholder_Font_Style: italic;
+    --fdInput_Outline_Offset: -0.1875rem;
 
-  /* Calendar */
-  --fdCalendar_Text_Shadow: none;
-  --fdCalendar_Active_Item_Border: none;
-  --fdCalendar_Active_Focus_Item_Outline_Color: var(--sapContent_ContrastFocusColor);
-  --fdCalendar_Active_Focus_Item_Outline_Offset: -0.1875rem;
-  --fdCalendar_Item_Current_Border: 0.0625rem solid var(--sapList_Background);
-  --fdCalendar_Border_Radius: var(--sapElement_BorderCornerRadius);
-  --fdCalendar_Item_Active_Background_Hover: var(--sapContent_Selected_Hover_Background);
-  --fdCalendar_Special_Day_Marker_Height: 0.25rem;
-  --fdCalendar_Item_Current_Inner_Border_Color: var(--sapList_Background);
-  --fdCalendar_Item_Current_Active_Special_Day_Width: auto;
-  --fdCalendar_Item_Current_Active_Special_Day_Height: 0.3125rem;
-  --fdCalendar_Item_Current_Active_Special_Day_Bottom: -0.0625rem;
-  --fdCalendar_Item_Current_Active_Special_Day_Left: 0;
-  --fdCalendar_Item_Current_Active_Special_Day_Right: 0;
-  --fdCalendar_Month_Year_Item_Border_Radius: 0;
+    /* Calendar */
+    --fdCalendar_Text_Shadow: none;
+    --fdCalendar_Active_Item_Border: none;
+    --fdCalendar_Active_Focus_Item_Outline_Color: var(--sapContent_ContrastFocusColor);
+    --fdCalendar_Active_Focus_Item_Outline_Offset: -0.1875rem;
+    --fdCalendar_Item_Current_Border: 0.0625rem solid var(--sapList_Background);
+    --fdCalendar_Border_Radius: var(--sapElement_BorderCornerRadius);
+    --fdCalendar_Item_Active_Background_Hover: var(--sapContent_Selected_Hover_Background);
+    --fdCalendar_Special_Day_Marker_Height: 0.25rem;
+    --fdCalendar_Item_Current_Inner_Border_Color: var(--sapList_Background);
+    --fdCalendar_Item_Current_Active_Special_Day_Width: auto;
+    --fdCalendar_Item_Current_Active_Special_Day_Height: 0.3125rem;
+    --fdCalendar_Item_Current_Active_Special_Day_Bottom: -0.0625rem;
+    --fdCalendar_Item_Current_Active_Special_Day_Left: 0;
+    --fdCalendar_Item_Current_Active_Special_Day_Right: 0;
+    --fdCalendar_Month_Year_Item_Border_Radius: 0;
 
-  /* Form Header */
-  --fdFormHeader_Border_Width: var(--sapList_BorderWidth);
+    /* Form Header */
+    --fdFormHeader_Border_Width: var(--sapList_BorderWidth);
 
-  /** Badge on Button */
-  --fdBadgeButton_Border_Color: var(--sapContent_BadgeBackground);
+    /** Badge on Button */
+    --fdBadgeButton_Border_Color: var(--sapContent_BadgeBackground);
 
-  /* Badge */
-  --fdBadge_Border_Color: transparent;
+    /* Badge */
+    --fdBadge_Border_Color: transparent;
 
-  /** Dialog */
-  --fdDialog_Background_Opacity: 0.6;
+    /** Dialog */
+    --fdDialog_Background_Opacity: 0.6;
 
-  /* Message Strip */
-  --fdMessageStrip_Border_Width: 0.0625rem;
-  --fdMessageStrip_Border_Radius: var(--sapElement_BorderCornerRadius);
-  --fdMessageStrip_Border_Color_Success: var(--sapSuccessBorderColor);
-  --fdMessageStrip_Border_Color_Error: var(--sapErrorBorderColor);
-  --fdMessageStrip_Border_Color_Warning: var(--sapWarningBorderColor);
-  --fdMessageStrip_Border_Color_Neutral: var(--sapNeutralBorderColor);
-  --fdMessageStrip_Border_Color_Informative: var(--sapInformationBorderColor);
-  --fdMessageStrip_Icon_Color_Success: var(--sapPositiveElementColor);
-  --fdMessageStrip_Icon_Color_Error: var(--sapNegativeElementColor);
-  --fdMessageStrip_Icon_Color_Warning: var(--sapCriticalElementColor);
-  --fdMessageStrip_Icon_Color_Neutral: var(--sapNeutralElementColor);
-  --fdMessageStrip_Icon_Color_Information: var(--sapInformativeElementColor);
+    /* Message Strip */
+    --fdMessageStrip_Border_Width: 0.0625rem;
+    --fdMessageStrip_Border_Radius: var(--sapElement_BorderCornerRadius);
+    --fdMessageStrip_Border_Color_Success: var(--sapSuccessBorderColor);
+    --fdMessageStrip_Border_Color_Error: var(--sapErrorBorderColor);
+    --fdMessageStrip_Border_Color_Warning: var(--sapWarningBorderColor);
+    --fdMessageStrip_Border_Color_Neutral: var(--sapNeutralBorderColor);
+    --fdMessageStrip_Border_Color_Informative: var(--sapInformationBorderColor);
+    --fdMessageStrip_Icon_Color_Success: var(--sapPositiveElementColor);
+    --fdMessageStrip_Icon_Color_Error: var(--sapNegativeElementColor);
+    --fdMessageStrip_Icon_Color_Warning: var(--sapCriticalElementColor);
+    --fdMessageStrip_Icon_Color_Neutral: var(--sapNeutralElementColor);
+    --fdMessageStrip_Icon_Color_Information: var(--sapInformativeElementColor);
 
-  /* Page */
-  --fdPage_List_Background: var(--sapGroup_ContentBackground);
-  --fdPage_Transparent_Background: transparent;
+    /* Page */
+    --fdPage_List_Background: var(--sapGroup_ContentBackground);
+    --fdPage_Transparent_Background: transparent;
 
-  /* Action List Item */
-  --fdList_Item_Action_Border: var(--sapList_BorderWidth) solid var(--sapList_BorderColor);
-  --fdList_Item_Action_Button_Size: 100%;
-  --fdList_Item_Action_Button_Size_Compact: 100%;
-  --fdList_Item_Action_Button_Spacing: 0;
-  --fdList_Item_Action_Button_Border: none;
-  --fdList_Item_Action_Button_Border_Radius: 0;
+    /* Action List Item */
+    --fdList_Item_Action_Border: var(--sapList_BorderWidth) solid var(--sapList_BorderColor);
+    --fdList_Item_Action_Button_Size: 100%;
+    --fdList_Item_Action_Button_Size_Compact: 100%;
+    --fdList_Item_Action_Button_Spacing: 0;
+    --fdList_Item_Action_Button_Border: none;
+    --fdList_Item_Action_Button_Border_Radius: 0;
 
-  /* Table */
-  --fdTable_Hover_Down_Color: inherit;
+    /* Table */
+    --fdTable_Hover_Down_Color: inherit;
 
-  /* Feed Input */
-  --fdFeed_Input_Placeholder_Font_Style: italic;
+    /* Feed Input */
+    --fdFeed_Input_Placeholder_Font_Style: italic;
 
-  /* Toolbar */
-  --fdToolbar_Auto_Background: inherit;
-  --fdToolbar_Solid_Background: var(--sapBackgroundColor);
-  --fdToolbar_Transparent_Background: var(--sapToolbar_Background);
-  --fdToolbar_Info_Outline_Color: var(--sapContent_ContrastFocusColor);
+    /* Toolbar */
+    --fdToolbar_Auto_Background: inherit;
+    --fdToolbar_Solid_Background: var(--sapBackgroundColor);
+    --fdToolbar_Transparent_Background: var(--sapToolbar_Background);
+    --fdToolbar_Info_Outline_Color: var(--sapContent_ContrastFocusColor);
 
-  /* Micro Process Flow */
-  --fdMicro_Process_Flow_Icon_Color: var(--sapButton_Neutral_Background);
-  --fdMicro_Process_Flow_Active_Icon_Color: var(--sapContent_ContrastIconColor);
+    /* Micro Process Flow */
+    --fdMicro_Process_Flow_Icon_Color: var(--sapButton_Neutral_Background);
+    --fdMicro_Process_Flow_Active_Icon_Color: var(--sapContent_ContrastIconColor);
 
-  /** Illustrated Message */
-  --sapIllus_BrandColorPrimary: var(--sapContent_Illustrative_Color1);
-  --sapIllus_BrandColorSecondary: var(--sapContent_Illustrative_Color2);
-  --sapIllus_AccentColor: var(--sapContent_Illustrative_Color3);
-  --sapIllus_StrokeDetailColor: var(--sapContent_Illustrative_Color4);
-  --sapIllus_Layering1: var(--sapContent_Illustrative_Color5);
-  --sapIllus_Layering2: var(--sapContent_Illustrative_Color6);
-  --sapIllus_BackgroundColor: var(--sapContent_Illustrative_Color7);
-  --sapIllus_ObjectFillColor: var(--sapContent_Illustrative_Color8);
-  --sapIllus_NoColor: none;
-  --sapIllus_PatternShadow: url("#sapIllus_PatternShadow");
-  --sapIllus_PatternHighlight: url("#sapIllus_PatternHighlight");
+    /** Illustrated Message */
+    --sapIllus_BrandColorPrimary: var(--sapContent_Illustrative_Color1);
+    --sapIllus_BrandColorSecondary: var(--sapContent_Illustrative_Color2);
+    --sapIllus_AccentColor: var(--sapContent_Illustrative_Color3);
+    --sapIllus_StrokeDetailColor: var(--sapContent_Illustrative_Color4);
+    --sapIllus_Layering1: var(--sapContent_Illustrative_Color5);
+    --sapIllus_Layering2: var(--sapContent_Illustrative_Color6);
+    --sapIllus_BackgroundColor: var(--sapContent_Illustrative_Color7);
+    --sapIllus_ObjectFillColor: var(--sapContent_Illustrative_Color8);
+    --sapIllus_NoColor: none;
+    --sapIllus_PatternShadow: url('#sapIllus_PatternShadow');
+    --sapIllus_PatternHighlight: url('#sapIllus_PatternHighlight');
 
-  /** Text */
-  --fdText_Selected_Background_Color: var(--sapSelectedColor);
+    /** Text */
+    --fdText_Selected_Background_Color: var(--sapSelectedColor);
 
-  /** Message Page */
-  --fdMessage_Page_Container_Background: transparent;
-  --fdMessage_Page_Container_Corner_Radius: 0;
-  --fdMessage_Page_Title_Margin_Top: 1rem;
-  --fdMessage_Page_Title_Margin_Bottom: 1rem;
+    /** Message Page */
+    --fdMessage_Page_Container_Background: transparent;
+    --fdMessage_Page_Container_Corner_Radius: 0;
+    --fdMessage_Page_Title_Margin_Top: 1rem;
+    --fdMessage_Page_Title_Margin_Bottom: 1rem;
 
-  /** Bar */
-  --fdBar_Left_Area_Padding_Right: 0;
-  --fdBar_Middle_Area_Padding_X: 0.5rem;
-  --fdBar_Right_Area_Padding_Left: 0;
+    /** Bar */
+    --fdBar_Left_Area_Padding_Right: 0;
+    --fdBar_Middle_Area_Padding_X: 0.5rem;
+    --fdBar_Right_Area_Padding_Left: 0;
 
-  /** Object List */
-  --fdObject_List_Title_Font_Size: var(--sapFontHeader4Size);
-  --fdObject_List_Title_Font_Weight: var(--sapFontHeaderWeight);
-  --fdObject_List_Number_Font_Size: 1.375rem;
+    /** Object List */
+    --fdObject_List_Title_Font_Size: var(--sapFontHeader4Size);
+    --fdObject_List_Title_Font_Weight: var(--sapFontHeaderWeight);
+    --fdObject_List_Number_Font_Size: 1.375rem;
 
-  /** Tool Layout */
-  --fdToolLayout_Background: #0a0d10;
+    /** Tool Layout */
+    --fdToolLayout_Background: #0a0d10;
 
-  /** Splitter */
-  --sapSplitPane_Shadow1: 0 0 0.125rem 0 rgb(0 0 0 / 16%), 0 0.5rem 1rem 0 rgb(0 0 0 / 32%);
+    /** Splitter */
+    --sapSplitPane_Shadow1: 0 0 0.125rem 0 rgb(0 0 0 / 16%), 0 0.5rem 1rem 0 rgb(0 0 0 / 32%);
+
+    /** Modal */
+    --fdModal_BackgroundColor: rgb(0 0 0 / 60%);
 }
