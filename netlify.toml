@@ -7,7 +7,10 @@
 
 [build]
   ignore = 'git log -1 --pretty=%B | grep dependabot'
-  environment = { NODE_VERSION = "20.15.1", YARN_FLAGS="--frozen-lockfile" }
   publish = "storybook-static"
   command = "yarn run storybook:static"
 
+[build.environment]
+  NODE_VERSION = "20.15.1"
+  YARN_FLAGS = "--frozen-lockfile"
+  YARN_VERSION = "4.4.1"
