@@ -43598,7 +43598,9 @@ exports[`Check stories > Components/Table > Story Checkbox > Should match snapsh
         <tr class=\\"fd-table__row\\">
             <th class=\\"fd-table__cell fd-table__cell--checkbox\\" scope=\\"col\\">
                 <input aria-label=\\"checkbox\\" type=\\"checkbox\\" class=\\"fd-checkbox fd-table__checkbox\\" id=\\"Ai4ez611\\">
-                <label class=\\"fd-checkbox__label fd-table__checkbox-label\\" for=\\"Ai4ez611\\"></label>
+                <label class=\\"fd-checkbox__label fd-table__checkbox-label\\" for=\\"Ai4ez611\\">
+                    <span class=\\"fd-checkbox__checkmark\\" aria-hidden=\\"true\\"></span>
+                </label>
             </th>
             <th class=\\"fd-table__cell\\" scope=\\"col\\">Column Header</th>
             <th class=\\"fd-table__cell\\" scope=\\"col\\">Column Header</th>
@@ -43610,7 +43612,9 @@ exports[`Check stories > Components/Table > Story Checkbox > Should match snapsh
         <tr class=\\"fd-table__row\\" aria-selected=\\"true\\">
             <td class=\\"fd-table__cell fd-table__cell--checkbox\\">
                 <input aria-label=\\"checkbox\\" type=\\"checkbox\\" checked class=\\"fd-checkbox fd-table__checkbox\\" id=\\"Ai4ez615\\">
-                <label class=\\"fd-checkbox__label fd-table__checkbox-label\\" for=\\"Ai4ez615\\"></label>
+                <label class=\\"fd-checkbox__label fd-table__checkbox-label\\" for=\\"Ai4ez615\\">
+                    <span class=\\"fd-checkbox__checkmark\\" aria-hidden=\\"true\\"></span>
+                </label>
             </td>
             <td class=\\"fd-table__cell\\"><a class=\\"fd-link\\"><span>user.name@email.com</span></a></td>
             <td class=\\"fd-table__cell\\"><span class=\\"fd-table__text\\">First Name</span></td>
@@ -43620,7 +43624,9 @@ exports[`Check stories > Components/Table > Story Checkbox > Should match snapsh
         <tr class=\\"fd-table__row\\">
             <td class=\\"fd-table__cell fd-table__cell--checkbox\\">
                 <input aria-label=\\"checkbox\\" type=\\"checkbox\\" class=\\"fd-checkbox fd-table__checkbox\\" id=\\"Ai4ez617\\">
-                <label class=\\"fd-checkbox__label fd-table__checkbox-label\\" for=\\"Ai4ez617\\"></label>
+                <label class=\\"fd-checkbox__label fd-table__checkbox-label\\" for=\\"Ai4ez617\\">
+                    <span class=\\"fd-checkbox__checkmark\\" aria-hidden=\\"true\\"></span>
+                </label>
             </td>
             <td class=\\"fd-table__cell\\"><a class=\\"fd-link\\"><span>user.name@email.com</span></a></td>
             <td class=\\"fd-table__cell\\">First Name</td>
@@ -43630,7 +43636,9 @@ exports[`Check stories > Components/Table > Story Checkbox > Should match snapsh
         <tr class=\\"fd-table__row\\">
             <td class=\\"fd-table__cell fd-table__cell--checkbox\\">
                 <input aria-label=\\"checkbox\\" type=\\"checkbox\\" class=\\"fd-checkbox fd-table__checkbox\\" id=\\"Gi4ez611\\">
-                <label class=\\"fd-checkbox__label fd-table__checkbox-label\\" for=\\"Gi4ez611\\"></label>
+                <label class=\\"fd-checkbox__label fd-table__checkbox-label\\" for=\\"Gi4ez611\\">
+                    <span class=\\"fd-checkbox__checkmark\\" aria-hidden=\\"true\\"></span>
+                </label>
             </td>
             <td class=\\"fd-table__cell\\"><a class=\\"fd-link\\"><span>user.name@email.com</span></a></td>
             <td class=\\"fd-table__cell\\">First Name</td>
@@ -43652,7 +43660,9 @@ exports[`Check stories > Components/Table > Story CondensedCheckbox > Should mat
         <tr class=\\"fd-table__row\\">
             <th class=\\"fd-table__cell fd-table__cell--checkbox\\" scope=\\"col\\">
                 <input aria-label=\\"checkbox\\" type=\\"checkbox\\" class=\\"fd-checkbox fd-table__checkbox\\" id=\\"Ai4JH2BF87\\">
-                <label class=\\"fd-checkbox__label fd-table__checkbox-label\\" for=\\"Ai4JH2BF87\\"></label>
+                <label class=\\"fd-checkbox__label fd-table__checkbox-label\\" for=\\"Ai4JH2BF87\\">
+                    <span class=\\"fd-checkbox__checkmark\\" aria-hidden=\\"true\\"></span>
+                </label>
             </th>
             <th class=\\"fd-table__cell\\" scope=\\"col\\">Column Header</th>
             <th class=\\"fd-table__cell\\" scope=\\"col\\">Column Header</th>
@@ -43664,7 +43674,9 @@ exports[`Check stories > Components/Table > Story CondensedCheckbox > Should mat
         <tr class=\\"fd-table__row\\" aria-selected=\\"true\\">
             <td class=\\"fd-table__cell fd-table__cell--checkbox\\">
                 <input aria-label=\\"checkbox\\" type=\\"checkbox\\" checked class=\\"fd-checkbox fd-table__checkbox\\" id=\\"Ai4JHf87\\">
-                <label class=\\"fd-checkbox__label fd-table__checkbox-label\\" for=\\"Ai4JHf87\\"></label>
+                <label class=\\"fd-checkbox__label fd-table__checkbox-label\\" for=\\"Ai4JHf87\\">
+                    <span class=\\"fd-checkbox__checkmark\\" aria-hidden=\\"true\\"></span>
+                </label>
             </td>
             <td class=\\"fd-table__cell\\"><a class=\\"fd-link\\"><span>user.name@email.com</span></a></td>
             <td class=\\"fd-table__cell\\"><span class=\\"fd-table__text\\">First Name</span></td>
@@ -43674,7 +43686,9 @@ exports[`Check stories > Components/Table > Story CondensedCheckbox > Should mat
         <tr class=\\"fd-table__row\\">
             <td class=\\"fd-table__cell fd-table__cell--checkbox\\">
                 <input aria-label=\\"checkbox\\" type=\\"checkbox\\" class=\\"fd-checkbox fd-table__checkbox\\" id=\\"Ai4Jj67\\">
-                <label class=\\"fd-checkbox__label fd-table__checkbox-label\\" for=\\"Ai4Jj67\\"></label>
+                <label class=\\"fd-checkbox__label fd-table__checkbox-label\\" for=\\"Ai4Jj67\\">
+                    <span class=\\"fd-checkbox__checkmark\\" aria-hidden=\\"true\\"></span>
+                </label>
             </td>
             <td class=\\"fd-table__cell\\"><a class=\\"fd-link\\"><span>user.name@email.com</span></a></td>
             <td class=\\"fd-table__cell\\">First Name</td>
@@ -43684,7 +43698,9 @@ exports[`Check stories > Components/Table > Story CondensedCheckbox > Should mat
         <tr class=\\"fd-table__row\\">
             <td class=\\"fd-table__cell fd-table__cell--checkbox\\">
                 <input aria-label=\\"checkbox\\" type=\\"checkbox\\" class=\\"fd-checkbox fd-table__checkbox\\" id=\\"AGjtJj67\\">
-                <label class=\\"fd-checkbox__label fd-table__checkbox-label\\" for=\\"AGjtJj67\\"></label>
+                <label class=\\"fd-checkbox__label fd-table__checkbox-label\\" for=\\"AGjtJj67\\">
+                    <span class=\\"fd-checkbox__checkmark\\" aria-hidden=\\"true\\"></span>
+                </label>
             </td>
             <td class=\\"fd-table__cell\\"><a class=\\"fd-link\\"><span>user.name@email.com</span></a></td>
             <td class=\\"fd-table__cell\\">First Name</td>
@@ -44085,7 +44101,7 @@ exports[`Check stories > Components/Table > Story GridTable > Should match snaps
             <div class=\\"fd-form-item\\">
                 <input aria-checked=\\"false\\" aria-label=\\"Select all rows\\" class=\\"fd-checkbox\\" id=\\"fd-gEAc87vXrAR\\"
                        type=\\"checkbox\\" value=\\"\\" tabindex=\\"-1\\" /><label for=\\"fd-gEAc87vXrAR\\"
-                                                                       class=\\"fd-form-label fd-checkbox__label\\"></label>
+                                                                       class=\\"fd-form-label fd-checkbox__label\\"><span class=\\"fd-checkbox__checkmark\\" aria-hidden=\\"true\\"></span></label>
             </div>
         </th>
         <th id=\\"fd-KWRjZC5EqkW\\" class=\\"fd-table__cell fd-table__cell--focusable\\" tabindex=\\"-1\\">
@@ -44123,7 +44139,7 @@ exports[`Check stories > Components/Table > Story GridTable > Should match snaps
             <div class=\\"fd-form-item\\">
                 <input aria-checked=\\"false\\" aria-label=\\"Select row\\" class=\\"fd-checkbox\\" id=\\"fd-7EMZOUrG2eK\\"
                        name=\\"Notebook Basic 15\\" type=\\"checkbox\\" value=\\"\\" tabindex=\\"-1\\" />
-                <label for=\\"fd-7EMZOUrG2eK\\" class=\\"fd-form-label fd-checkbox__label\\"></label>
+                <label for=\\"fd-7EMZOUrG2eK\\" class=\\"fd-form-label fd-checkbox__label\\"><span class=\\"fd-checkbox__checkmark\\" aria-hidden=\\"true\\"></span></label>
             </div>
         </td>
         <td class=\\"fd-table__cell fd-table__cell--focusable\\" tabindex=\\"-1\\">
@@ -44164,7 +44180,7 @@ exports[`Check stories > Components/Table > Story GridTable > Should match snaps
             <div class=\\"fd-form-item\\">
                 <input aria-checked=\\"false\\" aria-label=\\"Heavy Weight\\" class=\\"fd-checkbox\\" id=\\"fd-tF03y4hjeLT\\"
                        type=\\"checkbox\\" value=\\"\\" tabindex=\\"-1\\" /><label for=\\"fd-tF03y4hjeLT\\"
-                                                                       class=\\"fd-form-label fd-checkbox__label\\"></label>
+                                                                       class=\\"fd-form-label fd-checkbox__label\\"><span class=\\"fd-checkbox__checkmark\\" aria-hidden=\\"true\\"></span></label>
             </div>
         </td>
         <td class=\\"fd-table__cell fd-table__cell--focusable\\" tabindex=\\"-1\\">
@@ -44193,7 +44209,7 @@ exports[`Check stories > Components/Table > Story GridTable > Should match snaps
             <div class=\\"fd-form-item\\">
                 <input aria-checked=\\"false\\" aria-label=\\"Select row\\" class=\\"fd-checkbox\\" id=\\"fd-LbUmEre6JKj\\"
                        name=\\"Notebook Basic 17\\" type=\\"checkbox\\" value=\\"\\" tabindex=\\"-1\\" />
-                <label for=\\"fd-LbUmEre6JKj\\" class=\\"fd-form-label fd-checkbox__label\\"></label>
+                <label for=\\"fd-LbUmEre6JKj\\" class=\\"fd-form-label fd-checkbox__label\\"><span class=\\"fd-checkbox__checkmark\\" aria-hidden=\\"true\\"></span></label>
             </div>
         </td>
         <td class=\\"fd-table__cell fd-table__cell--focusable\\" tabindex=\\"-1\\">
@@ -44234,7 +44250,7 @@ exports[`Check stories > Components/Table > Story GridTable > Should match snaps
             <div class=\\"fd-form-item\\">
                 <input aria-checked=\\"false\\" aria-label=\\"Heavy Weight\\" class=\\"fd-checkbox\\" id=\\"fd-9WXDOs3SBLH\\"
                        type=\\"checkbox\\" value=\\"\\" tabindex=\\"-1\\" /><label for=\\"fd-9WXDOs3SBLH\\"
-                                                                       class=\\"fd-form-label fd-checkbox__label\\"></label>
+                                                                       class=\\"fd-form-label fd-checkbox__label\\"><span class=\\"fd-checkbox__checkmark\\" aria-hidden=\\"true\\"></span></label>
             </div>
         </td>
         <td class=\\"fd-table__cell fd-table__cell--focusable\\" tabindex=\\"-1\\">
@@ -44263,7 +44279,7 @@ exports[`Check stories > Components/Table > Story GridTable > Should match snaps
             <div class=\\"fd-form-item\\">
                 <input aria-checked=\\"false\\" aria-label=\\"Select row\\" class=\\"fd-checkbox\\" id=\\"fd-Cmvc_Hc7N3_\\"
                        name=\\"Notebook Basic 18\\" type=\\"checkbox\\" value=\\"\\" tabindex=\\"-1\\" />
-                <label for=\\"fd-Cmvc_Hc7N3_\\" class=\\"fd-form-label fd-checkbox__label\\"></label>
+                <label for=\\"fd-Cmvc_Hc7N3_\\" class=\\"fd-form-label fd-checkbox__label\\"><span class=\\"fd-checkbox__checkmark\\" aria-hidden=\\"true\\"></span></label>
             </div>
         </td>
         <td class=\\"fd-table__cell fd-table__cell--focusable\\" tabindex=\\"-1\\">
@@ -44304,7 +44320,7 @@ exports[`Check stories > Components/Table > Story GridTable > Should match snaps
             <div class=\\"fd-form-item\\">
                 <input aria-checked=\\"false\\" aria-label=\\"Heavy Weight\\" class=\\"fd-checkbox\\" id=\\"fd-Rzaro06MMoH\\"
                        type=\\"checkbox\\" value=\\"\\" tabindex=\\"-1\\" /><label for=\\"fd-Rzaro06MMoH\\"
-                                                                       class=\\"fd-form-label fd-checkbox__label\\"></label>
+                                                                       class=\\"fd-form-label fd-checkbox__label\\"><span class=\\"fd-checkbox__checkmark\\" aria-hidden=\\"true\\"></span></label>
             </div>
         </td>
         <td class=\\"fd-table__cell fd-table__cell--focusable\\" tabindex=\\"-1\\">
@@ -44669,7 +44685,7 @@ exports[`Check stories > Components/Table > Story NavIndicators > Should match s
         <tr class=\\"fd-table__row\\">
             <th class=\\"fd-table__cell fd-table__cell--checkbox\\">
                 <input aria-label=\\"checkbox\\" type=\\"checkbox\\" class=\\"fd-checkbox\\" id=\\"kqqzPI44\\">
-                <label class=\\"fd-checkbox__label\\" for=\\"kqqzPI44\\"></label>
+                <label class=\\"fd-checkbox__label\\" for=\\"kqqzPI44\\"><span class=\\"fd-checkbox__checkmark\\" aria-hidden=\\"true\\"></span></label>
             </th>
             <th class=\\"fd-table__cell\\" scope=\\"col\\">Column Header</th>
             <th class=\\"fd-table__cell\\" scope=\\"col\\">Column Header</th>
@@ -44682,7 +44698,7 @@ exports[`Check stories > Components/Table > Story NavIndicators > Should match s
         <tr class=\\"fd-table__row fd-table__row--activable fd-table__row--hoverable\\" aria-selected=\\"true\\">
             <td class=\\"fd-table__cell fd-table__cell--checkbox\\">
                 <input aria-label=\\"checkbox\\" type=\\"checkbox\\" checked class=\\"fd-checkbox\\" id=\\"EWuzWh33\\">
-                <label class=\\"fd-checkbox__label\\" for=\\"EWuzWh33\\"></label>
+                <label class=\\"fd-checkbox__label\\" for=\\"EWuzWh33\\"><span class=\\"fd-checkbox__checkmark\\" aria-hidden=\\"true\\"></span></label>
             </td>
             <td class=\\"fd-table__cell\\"><a class=\\"fd-link\\"><span>user.name@email.com</span></a></td>
             <td class=\\"fd-table__cell\\"><span class=\\"fd-table__text\\">First Name</span></td>
@@ -44695,7 +44711,7 @@ exports[`Check stories > Components/Table > Story NavIndicators > Should match s
         <tr class=\\"fd-table__row fd-table__row--activable fd-table__row--hoverable\\" aria-selected=\\"true\\">
             <td class=\\"fd-table__cell fd-table__cell--checkbox\\">
                 <input aria-label=\\"checkbox\\" type=\\"checkbox\\" checked class=\\"fd-checkbox\\" id=\\"EWuzWh334\\">
-                <label class=\\"fd-checkbox__label\\" for=\\"EWuzWh334\\"></label>
+                <label class=\\"fd-checkbox__label\\" for=\\"EWuzWh334\\"><span class=\\"fd-checkbox__checkmark\\" aria-hidden=\\"true\\"></span></label>
             </td>
             <td class=\\"fd-table__cell\\"><a class=\\"fd-link\\"><span>user.name@email.com</span></a></td>
             <td class=\\"fd-table__cell\\"><span class=\\"fd-table__text\\">First Name</span></td>
@@ -44708,7 +44724,7 @@ exports[`Check stories > Components/Table > Story NavIndicators > Should match s
         <tr class=\\"fd-table__row fd-table__row--activable fd-table__row--hoverable\\">
             <td class=\\"fd-table__cell fd-table__cell--checkbox\\">
                 <input aria-label=\\"checkbox\\" type=\\"checkbox\\" class=\\"fd-checkbox\\" id=\\"EWuzWh335\\">
-                <label class=\\"fd-checkbox__label\\" for=\\"EWuzWh335\\"></label>
+                <label class=\\"fd-checkbox__label\\" for=\\"EWuzWh335\\"><span class=\\"fd-checkbox__checkmark\\" aria-hidden=\\"true\\"></span></label>
             </td>
             <td class=\\"fd-table__cell\\"><a class=\\"fd-link\\"><span>user.name@email.com</span></a></td>
             <td class=\\"fd-table__cell\\">First Name</td>
@@ -45004,7 +45020,7 @@ exports[`Check stories > Components/Table > Story ResponsiveTable > Should match
         <tr class=\\"fd-table__row\\">
             <th class=\\"fd-table__cell fd-table__cell--checkbox\\">
                 <input aria-label=\\"checkbox\\" type=\\"checkbox\\" class=\\"fd-checkbox\\" id=\\"kqqzPI\\">
-                <label class=\\"fd-checkbox__label\\" for=\\"kqqzPI\\"></label>
+                <label class=\\"fd-checkbox__label\\" for=\\"kqqzPI\\"><span class=\\"fd-checkbox__checkmark\\" aria-hidden=\\"true\\"></span></label>
             </th>
             <th class=\\"fd-table__cell\\" scope=\\"col\\">Name</th>
             <th class=\\"fd-table__cell\\" scope=\\"col\\">Status</th>
@@ -45017,7 +45033,7 @@ exports[`Check stories > Components/Table > Story ResponsiveTable > Should match
         <tr class=\\"fd-table__row fd-table__row--activable fd-table__row--hoverable\\">
             <td class=\\"fd-table__cell fd-table__cell--checkbox\\">
                 <input aria-label=\\"checkbox\\" type=\\"checkbox\\" class=\\"fd-checkbox\\" id=\\"EWuzWh\\">
-                <label class=\\"fd-checkbox__label\\" for=\\"EWuzWh\\"></label>
+                <label class=\\"fd-checkbox__label\\" for=\\"EWuzWh\\"><span class=\\"fd-checkbox__checkmark\\" aria-hidden=\\"true\\"></span></label>
             </td>
             <td class=\\"fd-table__cell\\">Banana</td>
             <td class=\\"fd-table__cell\\">
@@ -45034,7 +45050,7 @@ exports[`Check stories > Components/Table > Story ResponsiveTable > Should match
         <tr class=\\"fd-table__row fd-table__row--activable fd-table__row--hoverable\\">
             <td class=\\"fd-table__cell fd-table__cell--checkbox\\">
                 <input aria-label=\\"checkbox\\" type=\\"checkbox\\" class=\\"fd-checkbox\\" id=\\"19j0Sc\\">
-                <label class=\\"fd-checkbox__label\\" for=\\"19j0Sc\\"></label>
+                <label class=\\"fd-checkbox__label\\" for=\\"19j0Sc\\"><span class=\\"fd-checkbox__checkmark\\" aria-hidden=\\"true\\"></span></label>
             </td>
             <td class=\\"fd-table__cell\\">Pineapple</td>
             <td class=\\"fd-table__cell\\">
@@ -45051,7 +45067,7 @@ exports[`Check stories > Components/Table > Story ResponsiveTable > Should match
         <tr class=\\"fd-table__row fd-table__row--activable fd-table__row--hoverable\\">
             <td class=\\"fd-table__cell fd-table__cell--checkbox\\">
                 <input aria-label=\\"checkbox\\" type=\\"checkbox\\" class=\\"fd-checkbox\\" id=\\"a7SfGX\\">
-                <label class=\\"fd-checkbox__label\\" for=\\"a7SfGX\\"></label>
+                <label class=\\"fd-checkbox__label\\" for=\\"a7SfGX\\"><span class=\\"fd-checkbox__checkmark\\" aria-hidden=\\"true\\"></span></label>
             </td>
             <td class=\\"fd-table__cell\\">Orange</td>
             <td class=\\"fd-table__cell\\">
@@ -45219,7 +45235,7 @@ exports[`Check stories > Components/Table > Story SemanticRows > Should match sn
             <th class=\\"fd-table__cell fd-table__cell--status-indicator\\"></th>
             <th class=\\"fd-table__cell fd-table__cell--checkbox\\" scope=\\"col\\">
                 <input aria-label=\\"checkbox\\" type=\\"checkbox\\" class=\\"fd-checkbox\\" id=\\"Ai9ez611\\">
-                <label class=\\"fd-checkbox__label\\" for=\\"Ai9ez611\\"></label>
+                <label class=\\"fd-checkbox__label\\" for=\\"Ai9ez611\\"><span class=\\"fd-checkbox__checkmark\\" aria-hidden=\\"true\\"></span></label>
             </th>
             <th class=\\"fd-table__cell\\" scope=\\"col\\">Column Header</th>
             <th class=\\"fd-table__cell\\" scope=\\"col\\">Column Header</th>
@@ -45232,7 +45248,7 @@ exports[`Check stories > Components/Table > Story SemanticRows > Should match sn
             <td class=\\"fd-table__cell fd-table__cell--status-indicator\\"></td>
             <td class=\\"fd-table__cell fd-table__cell--checkbox\\">
                 <input aria-label=\\"checkbox\\" type=\\"checkbox\\" class=\\"fd-checkbox\\" id=\\"Ai9ek611\\">
-                <label class=\\"fd-checkbox__label\\" for=\\"Ai9ek611\\"></label>
+                <label class=\\"fd-checkbox__label\\" for=\\"Ai9ek611\\"><span class=\\"fd-checkbox__checkmark\\" aria-hidden=\\"true\\"></span></label>
             </td>
             <td class=\\"fd-table__cell\\"><a class=\\"fd-link\\"><span class=\\"fd-link__content\\">user.name@email.com</span></a></td>
             <td class=\\"fd-table__cell\\"><p class=\\"fd-text\\">First Name</p></td>
@@ -45243,7 +45259,7 @@ exports[`Check stories > Components/Table > Story SemanticRows > Should match sn
             <td class=\\"fd-table__cell fd-table__cell--status-indicator fd-table__cell--status-indicator--valid\\"></td>
             <td class=\\"fd-table__cell fd-table__cell--checkbox\\">
                 <input aria-label=\\"checkbox\\" type=\\"checkbox\\" class=\\"fd-checkbox\\" id=\\"Ai9ek673\\">
-                <label class=\\"fd-checkbox__label\\" for=\\"Ai9ek673\\"></label>
+                <label class=\\"fd-checkbox__label\\" for=\\"Ai9ek673\\"><span class=\\"fd-checkbox__checkmark\\" aria-hidden=\\"true\\"></span></label>
             </td>
             <td class=\\"fd-table__cell\\"><a class=\\"fd-link\\"><span class=\\"fd-link__content\\">user.name@email.com</span></a></td>
             <td class=\\"fd-table__cell\\">First Name</td>
@@ -45254,7 +45270,7 @@ exports[`Check stories > Components/Table > Story SemanticRows > Should match sn
             <td class=\\"fd-table__cell fd-table__cell--status-indicator\\"></td>
             <td class=\\"fd-table__cell fd-table__cell--checkbox\\">
                 <input aria-label=\\"checkbox\\" type=\\"checkbox\\" class=\\"fd-checkbox\\" id=\\"Ai9ek69s\\">
-                <label class=\\"fd-checkbox__label\\" for=\\"Ai9ek69s\\"></label>
+                <label class=\\"fd-checkbox__label\\" for=\\"Ai9ek69s\\"><span class=\\"fd-checkbox__checkmark\\" aria-hidden=\\"true\\"></span></label>
             </td>
             <td class=\\"fd-table__cell\\"><a class=\\"fd-link\\"><span class=\\"fd-link__content\\">user.name@email.com</span></a></td>
             <td class=\\"fd-table__cell\\">First Name</td>
@@ -45265,7 +45281,7 @@ exports[`Check stories > Components/Table > Story SemanticRows > Should match sn
             <td class=\\"fd-table__cell fd-table__cell--status-indicator fd-table__cell--status-indicator--warning\\"></td>
             <td class=\\"fd-table__cell fd-table__cell--checkbox\\">
                 <input aria-label=\\"checkbox\\" type=\\"checkbox\\" class=\\"fd-checkbox\\" id=\\"Ai9ekk69s\\">
-                <label class=\\"fd-checkbox__label\\" for=\\"Ai9ekk69s\\"></label>
+                <label class=\\"fd-checkbox__label\\" for=\\"Ai9ekk69s\\"><span class=\\"fd-checkbox__checkmark\\" aria-hidden=\\"true\\"></span></label>
             </td>
             <td class=\\"fd-table__cell\\"><a class=\\"fd-link\\"><span class=\\"fd-link__content\\">user.name@email.com</span></a></td>
             <td class=\\"fd-table__cell\\">First Name</td>
@@ -45276,7 +45292,7 @@ exports[`Check stories > Components/Table > Story SemanticRows > Should match sn
             <td class=\\"fd-table__cell fd-table__cell--status-indicator\\"></td>
             <td class=\\"fd-table__cell fd-table__cell--checkbox\\">
                 <input aria-label=\\"checkbox\\" type=\\"checkbox\\" class=\\"fd-checkbox\\" id=\\"Ai73k69s\\">
-                <label class=\\"fd-checkbox__label\\" for=\\"Ai73k69s\\"></label>
+                <label class=\\"fd-checkbox__label\\" for=\\"Ai73k69s\\"><span class=\\"fd-checkbox__checkmark\\" aria-hidden=\\"true\\"></span></label>
             </td>
             <td class=\\"fd-table__cell\\"><a class=\\"fd-link\\"><span class=\\"fd-link__content\\">user.name@email.com</span></a></td>
             <td class=\\"fd-table__cell\\">First Name</td>
@@ -45287,7 +45303,7 @@ exports[`Check stories > Components/Table > Story SemanticRows > Should match sn
             <td class=\\"fd-table__cell fd-table__cell--status-indicator fd-table__cell--status-indicator--error\\"></td>
             <td class=\\"fd-table__cell fd-table__cell--checkbox\\">
                 <input aria-label=\\"checkbox\\" type=\\"checkbox\\" class=\\"fd-checkbox\\" id=\\"Ai734F6s\\">
-                <label class=\\"fd-checkbox__label\\" for=\\"Ai734F6s\\"></label>
+                <label class=\\"fd-checkbox__label\\" for=\\"Ai734F6s\\"><span class=\\"fd-checkbox__checkmark\\" aria-hidden=\\"true\\"></span></label>
             </td>
             <td class=\\"fd-table__cell\\"><a class=\\"fd-link\\"><span class=\\"fd-link__content\\">user.name@email.com</span></a></td>
             <td class=\\"fd-table__cell\\">First Name</td>
@@ -45298,7 +45314,7 @@ exports[`Check stories > Components/Table > Story SemanticRows > Should match sn
             <td class=\\"fd-table__cell fd-table__cell--status-indicator\\"></td>
             <td class=\\"fd-table__cell fd-table__cell--checkbox\\">
                 <input aria-label=\\"checkbox\\" type=\\"checkbox\\" class=\\"fd-checkbox\\" id=\\"Ai73HE36s\\">
-                <label class=\\"fd-checkbox__label\\" for=\\"Ai73HE36s\\"></label>
+                <label class=\\"fd-checkbox__label\\" for=\\"Ai73HE36s\\"><span class=\\"fd-checkbox__checkmark\\" aria-hidden=\\"true\\"></span></label>
             </td>
             <td class=\\"fd-table__cell\\"><a class=\\"fd-link\\"><span class=\\"fd-link__content\\">user.name@email.com</span></a></td>
             <td class=\\"fd-table__cell\\">First Name</td>
@@ -45309,7 +45325,7 @@ exports[`Check stories > Components/Table > Story SemanticRows > Should match sn
             <td class=\\"fd-table__cell fd-table__cell--status-indicator fd-table__cell--status-indicator--information\\"></td>
             <td class=\\"fd-table__cell fd-table__cell--checkbox\\">
                 <input aria-label=\\"checkbox\\" type=\\"checkbox\\" class=\\"fd-checkbox\\" id=\\"Ai7JDE36s\\">
-                <label class=\\"fd-checkbox__label\\" for=\\"Ai7JDE36s\\"></label>
+                <label class=\\"fd-checkbox__label\\" for=\\"Ai7JDE36s\\"><span class=\\"fd-checkbox__checkmark\\" aria-hidden=\\"true\\"></span></label>
             </td>
             <td class=\\"fd-table__cell\\"><a class=\\"fd-link\\"><span class=\\"fd-link__content\\">user.name@email.com</span></a></td>
             <td class=\\"fd-table__cell\\">First Name</td>
@@ -45320,7 +45336,7 @@ exports[`Check stories > Components/Table > Story SemanticRows > Should match sn
             <td class=\\"fd-table__cell fd-table__cell--status-indicator\\"></td>
             <td class=\\"fd-table__cell fd-table__cell--checkbox\\">
                 <input aria-label=\\"checkbox\\" type=\\"checkbox\\" class=\\"fd-checkbox\\" id=\\"Ai7JGD6s\\">
-                <label class=\\"fd-checkbox__label\\" for=\\"Ai7JGD6s\\"></label>
+                <label class=\\"fd-checkbox__label\\" for=\\"Ai7JGD6s\\"><span class=\\"fd-checkbox__checkmark\\" aria-hidden=\\"true\\"></span></label>
             </td>
             <td class=\\"fd-table__cell\\"><a class=\\"fd-link\\"><span class=\\"fd-link__content\\">user.name@email.com</span></a></td>
             <td class=\\"fd-table__cell\\">First Name</td>
