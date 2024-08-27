@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.37.7-rc.1](https://github.com/SAP/fundamental-styles/compare/v0.37.7-rc.0...v0.37.7-rc.1) (2024-08-27)
+
+### Bug Fixes
+
+-   **styles:** paddings and margins specificity [ci visual] ([#5594](https://github.com/SAP/fundamental-styles/issues/5594)) ([d65536d](https://github.com/SAP/fundamental-styles/commit/d65536daa95d3d416f37fb85eb025aba1cf55106))
+
 ## [0.37.7-rc.0](https://github.com/SAP/fundamental-styles/compare/v0.37.6...v0.37.7-rc.0) (2024-08-26)
 
 **Note:** Version bump only for package @fundamental-styles/cx
