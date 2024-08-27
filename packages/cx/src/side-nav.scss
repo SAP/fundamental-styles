@@ -10,7 +10,8 @@ $block-nested-list: #{$fd-cx-namespace}-nested-list;
 $fd-side-nav-border-radius: 1rem;
 
 .#{$block} {
-  --fdSideNav_Padding: 0.25rem 0;
+  --fdSideNav_Padding_Block: 0.25rem;
+  --fdSideNav_Padding_Inline: 0;
   --fdSideNav_First_Item_Margin_Top: 0.25rem;
   --fdSideNav_Utility_Margin_Bottom: 1rem;
 
@@ -24,7 +25,8 @@ $fd-side-nav-border-radius: 1rem;
 
   width: 15rem;
   height: 100%;
-  padding: var(--fdSideNav_Padding);
+  padding-block: var(--fdSideNav_Padding_Block);
+  padding-inline: var(--fdSideNav_Padding_Inline);
   box-shadow: var(--sapContent_Shadow0);
   background-color: var(--sapGroup_ContentBackground);
   border-radius: 0 $fd-side-nav-border-radius $fd-side-nav-border-radius 0;
@@ -66,7 +68,8 @@ $fd-side-nav-border-radius: 1rem;
   &__popover-body {
     @include fd-set-width(16rem !important);
 
-    padding: 0.25rem 0 !important;
+    padding-block: 0.25rem !important;
+    padding-inline: 0 !important;
     border-radius: $fd-side-nav-border-radius !important;
 
     .#{$block-nested-list} {
@@ -111,7 +114,7 @@ $fd-side-nav-border-radius: 1rem;
   }
 
   @include fd-compact-or-condensed() {
-    --fdSideNav_Padding: 0.125rem 0;
+    --fdSideNav_Padding_Block: 0.125rem;
     --fdSideNav_First_Item_Margin_Top: 0.125rem;
     --fdSideNav_Utility_Margin_Bottom: 0.75rem;
   }

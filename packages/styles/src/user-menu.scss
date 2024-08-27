@@ -11,10 +11,12 @@ $navigation: #{$fd-namespace}-navigation;
     @include fd-reset();
 
     width: 18rem;
-    padding: var(--fdUserMenu_Body_Padding);
+    padding-block: var(--fdUserMenu_Body_Padding_Block);
+    padding-inline: var(--fdUserMenu_Body_Padding_Inline);
 
     &.#{$block}__body--compact {
-      padding: var(--fdUserMenu_Body_Padding_Compact);
+      padding-block: var(--fdUserMenu_Body_Padding_Compact_Block);
+      padding-inline: var(--fdUserMenu_Body_Padding_Compact_Inline);
 
       .#{$block}__subheader {
         margin-block-end: var(--fdUserMenu_SubHeader_Margin_Bottom_Compact);
@@ -88,7 +90,8 @@ $navigation: #{$fd-namespace}-navigation;
 
   // BTP USER MENU
   &--tool-header {
-    --fdUserMenu_Body_Padding: 0.75rem;
+    --fdUserMenu_Body_Padding_Block: 0.75rem;
+    --fdUserMenu_Body_Padding_Inline: 0.75rem;
 
     .#{$block}__popover-body {
       border: none;

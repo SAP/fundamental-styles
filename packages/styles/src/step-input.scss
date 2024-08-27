@@ -6,11 +6,6 @@
 $block: #{$fd-namespace}-step-input;
 
 .#{$block} {
-  $fd-button-icon-font-size: 0.875rem;
-  $fd-step-input-cozy-height: 2.25rem;
-  $fd-step-input-compact-height: 1.625rem;
-  $fd-step-input-description-padding: 0.5rem;
-
   --fdStepInput_Button_Width: var(--fdStepInput_Button_Width_Cozy);
   --fdStepInput_Bordered_Button_Width: var(--fdStepInput_Button_Width_Semantic_Cozy);
 
@@ -36,7 +31,7 @@ $block: #{$fd-namespace}-step-input;
 
     &::before,
     &::after {
-      font-size: $fd-button-icon-font-size;
+      font-size: 0.875rem;
       margin-inline: 0;
       margin-block: 0;
     }
@@ -55,7 +50,7 @@ $block: #{$fd-namespace}-step-input;
   }
 
   &__input.#{$fd-namespace}-input {
-    --fdInput_Field_Padding: 0 0.25rem;
+    --fdInput_Field_Padding_Inline: 0.25rem;
 
     text-align: right;
     border: none;
@@ -97,23 +92,23 @@ $block: #{$fd-namespace}-step-input;
   @include fd-compact-or-condensed() {
     --fdStepInput_Button_Width: var(--fdStepInput_Button_Width_Compact);
     --fdStepInput_Bordered_Button_Width: var(--fdStepInput_Button_Width_Semantic_Compact);
-    --fdInput_Field_Compact_Padding: 0 0.25rem;
+    --fdInput_Field_Compact_Padding: 0.25rem;
 
-    height: $fd-step-input-compact-height;
-    min-height: $fd-step-input-compact-height;
+    height: 1.625rem;
+    min-height: 1.625rem;
 
     .#{$block}__input.#{$fd-namespace}-input {
       height: 100%;
     }
 
     &.is-readonly {
-      --fdInput_Field_Compact_Padding: 0 0.5rem;
+      --fdInput_Field_Compact_Padding: 0.5rem;
     }
   }
 
   &.is-readonly {
     .#{$block}__input.#{$fd-namespace}-input {
-      --fdInput_Field_Padding: 0 0.625rem;
+      --fdInput_Field_Padding_Inline: 0.625rem;
     }
 
     .#{$block}__button.#{$fd-namespace}-button {

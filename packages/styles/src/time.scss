@@ -17,7 +17,7 @@ $block: #{$fd-namespace}-time;
   $fd-time-item-width: 3rem;
 
   --fdTime_Item_Height: #{$fd-time-item-height};
-  --fdTime_Dropdown_Padding: #{$fd-time-dropdown-padding};
+  --fdTime_Dropdown_Padding: 1rem;
   --fdTime_Wrapper_Height: #{$fd-time-wrapper-height};
   --fdTime_Unit_Line_Height: 2.75rem;
 
@@ -25,7 +25,8 @@ $block: #{$fd-namespace}-time;
     justify-content: center;
   }
 
-  padding: var(--fdTime_Dropdown_Padding);
+  padding-block: var(--fdTime_Dropdown_Padding);
+  padding-inline: var(--fdTime_Dropdown_Padding);
 
   &__col {
     @include fd-reset();

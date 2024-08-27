@@ -446,7 +446,8 @@ $legend-background-colors: (
     @include fd-reset();
     @include fd-flex-vertical-center();
 
-    padding: var(--fdCard_Footer_Padding);
+    padding-block: var(--fdCard_Footer_Padding) 1rem;
+    padding-inline: 1rem;
     background: var(--fdCard_Footer_Background, var(--sapTile_Background));
     border-radius: var(--fdCard_Footer_Border_Radius);
     border-top: var(--fdCard_Footer_Border_Top);
@@ -577,7 +578,8 @@ $legend-background-colors: (
 
   &__badge.#{$object-status} {
     --fdObjectStatus_Inverted_Border_Radius: 0.5rem;
-    --fdObjectStatus_Inverted_Padding: 0 0.25rem;
+    --fdObjectStatus_Inverted_Padding_Block: 0;
+    --fdObjectStatus_Inverted_Padding_Inline: 0.25rem;
     --fdObjectStatus_Inverted_Line_Height: 0.875rem;
 
     span {

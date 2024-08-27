@@ -325,7 +325,8 @@ $fd-wizard-stacked-upcoming-step-offset: 2.375rem !default;
     @include fd-reset();
     @include fd-wizard-responsive-paddings();
 
-    padding: var(--fdWizard_Step_Content_Container_Spacing);
+    padding-block: var(--fdWizard_Step_Content_Container_Spacing);
+    padding-inline: var(--fdWizard_Step_Content_Container_Spacing);
     background-color: var(--fdWizard_Step_Content_Container_Background_Color);
     border-radius: var(--sapElement_BorderCornerRadius);
   }

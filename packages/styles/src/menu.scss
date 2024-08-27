@@ -12,12 +12,8 @@ $block: #{$fd-namespace}-menu;
 .#{$block} {
   $fd-menu-border-radius: var(--fdButton_Menu_Border_Radius) !default;
   $fd-menu-item-color-active: var(--sapList_Active_TextColor) !default;
-  $fd-menu-link-padding-top: 0.25rem !default;
-  $fd-menu-link-padding-left: -0.25rem !default;
 
   --fdMenu_Icon_Width: 2.25rem;
-  --fdMenu_Icon_Before_Margin: 0 0 0 -0.75rem;
-  --fdMenu_Icon_After_Margin: 0 -1rem 0 0;
   --fdMenu_Link_Height: 2.75rem;
   --fdMenu_Item_Spacing_Left: 0.75rem;
   --fdMenu_Item_Spacing_Right: 0.75rem;
@@ -82,13 +78,13 @@ $block: #{$fd-namespace}-menu;
     top: 0;
     left: 100%;
     z-index: 2;
-    margin: $fd-menu-link-padding-top 0 0 $fd-menu-link-padding-left;
+    margin-block: 0.25rem 0;
+    margin-inline: -0.25rem 0;
     min-width: 100%;
 
     @include fd-rtl() {
       right: 100%;
       left: initial;
-      margin: $fd-menu-link-padding-top $fd-menu-link-padding-left 0 0;
     }
 
     &[aria-hidden='true'] {
@@ -345,8 +341,6 @@ $block: #{$fd-namespace}-menu;
     max-width: 100%;
     width: 100%;
 
-    --fdMenu_Icon_Before_Margin: 0 0 0 -1rem;
-    --fdMenu_Icon_After_Margin: 0 -1rem 0 0;
     --fdMenu_Icon_Width: 2.75rem;
     --fdMenu_Item_Spacing_Left: 1rem;
     --fdMenu_Item_Spacing_Right: 1rem;
@@ -358,7 +352,8 @@ $block: #{$fd-namespace}-menu;
       border-radius: 0;
       box-shadow: none;
       position: static;
-      margin: 0;
+      margin-inline: 0;
+      margin-block: 0;
 
       .#{$block}__item {
         border-radius: 0;
@@ -377,8 +372,6 @@ $block: #{$fd-namespace}-menu;
   }
 
   @include fd-compact-or-condensed() {
-    --fdMenu_Icon_Before_Margin: 0 0 0 -0.5rem;
-    --fdMenu_Icon_After_Margin: 0 -0.75rem 0 0;
     --fdMenu_Icon_Width: 2rem;
     --fdMenu_Link_Height: 2rem;
     --fdMenu_Item_Spacing_Left: 0.5rem;

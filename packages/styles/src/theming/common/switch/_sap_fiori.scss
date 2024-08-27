@@ -8,7 +8,7 @@
   --fdSwitch_Compact_Handle_Height: var(--fdSwitch_Compact_Handle_Width);
   --fdSwitch_Compact_Handle_Offset: -0.8125rem;
   --fdSwitch_Compact_Active_Handle_Offset: 0.0625rem;
-  --fdSwitch_Compact_Padding: 0.625rem 0;
+  --fdSwitch_Compact_Padding_Block: 0.625rem;
 
   /* Standard */
   --fdSwitch_Track_Background: var(--sapButton_Track_Background);
@@ -37,7 +37,6 @@
   --fdSwitch_Border_Color: var(--fdSwitch_Handle_Border_Color);
   --fdSwitch_Border: var(--fdSwitch_Border_Width) solid var(--fdSwitch_Border_Color);
   --fdSwitch_Slider_Box_Sizing: content-box;
-  --fdSwitch_Padding: 0.625rem 0;
   --fdSwitch_Focus_Outline_Vertical_Offset: -0.375rem;
   --fdSwitch_Focus_Outline_Horizontal_Offset: 0;
   --fdSwitch_Focus_Outline_Border_Radius: 0;

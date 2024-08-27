@@ -26,19 +26,19 @@ $fd-icon-tab-bar-dnd-separator-circle-size: 0.5rem !default;
 $fd-icon-tab-bar-focus-offset: var(--fdIcon_Tab_Bar_Focus_Offset) !default;
 $fd-icon-tab-bar-responsive-paddings: (
   'sm': (
-    'padding': 0 1rem
+    'padding': 1rem
   ),
   'md': (
-    'padding': 0 2rem
+    'padding': 2rem
   ),
   'lg': (
-    'padding': 0 2rem
+    'padding': 2rem
   ),
   'xl': (
-    'padding': 0 3rem
+    'padding': 3rem
   ),
   'xxl': (
-    'padding': 0 3rem
+    'padding': 3rem
   )
 );
 $fd-icon-tab-bar-semantic-values: (
@@ -1532,7 +1532,8 @@ $fd-icon-tab-bar-semantic-values: (
   @each $set-name, $set-padding in $fd-icon-tab-bar-responsive-paddings {
     &--#{$set-name} {
       .#{$block}__header {
-        padding: map.get($set-padding, 'padding');
+        padding-block: 0;
+        padding-inline: map.get($set-padding, 'padding');
       }
     }
   }

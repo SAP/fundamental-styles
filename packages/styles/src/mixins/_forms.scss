@@ -27,8 +27,10 @@ $fd-input-field-height--compact: 1.625rem;
   width: 100%;
   min-width: #{$overrideMinWidth};
   border-radius: var(--sapField_BorderCornerRadius);
-  padding: var(--fdInput_Field_Padding, 0 0.625rem);
-  margin: var(--fdInput_Field_Margin, 0.25rem 0);
+  padding-block: 0;
+  padding-inline: var(--fdInput_Field_Padding_Inline, 0.625rem);
+  margin-block: var(--fdInput_Field_Margin_Block, 0.25rem);
+  margin-inline: 0;
   box-shadow: var(--sapField_Shadow);
   color: var(--sapField_TextColor);
   text-shadow: var(--fdInput_Text_Shadow);
@@ -88,8 +90,10 @@ $fd-input-field-height--compact: 1.625rem;
   @include fd-set-min-height(var(--fdInput_Compact_Height, var(--sapElement_Compact_Height)));
 
   min-width: var(--fdInput_Field_Compact_Min_Width, 2rem);
-  margin: var(--fdInput_Field_Compact_Margin, 0.1875rem 0);
-  padding: var(--fdInput_Field_Compact_Padding, 0 0.5rem);
+  margin-block: var(--fdInput_Field_Compact_Margin_Block, 0.1875rem);
+  margin-inline: 0;
+  padding-block: 0;
+  padding-inline: var(--fdInput_Field_Compact_Padding, 0.5rem);
   box-sizing: border-box;
 }
 

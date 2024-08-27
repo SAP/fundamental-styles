@@ -7,7 +7,8 @@ $block: #{$fd-namespace}-tool-layout;
 
 .#{$block} {
   --fdToolLayout_Gap: 0.5rem;
-  --fdToolLayout_Padding: 0.5rem 0.5rem 0 0.5rem;
+  --fdToolLayout_Padding_Block: 0.5rem 0;
+  --fdToolLayout_Padding_Inline: 0.5rem;
   --fdToolLayout_Content_Container_Border_Radius: 0.5rem 0.5rem 0 0;
   --fdToolLayout_Content_Container_Background: var(--sapBackgroundColor);
   --fdToolLayout_Content_Container_BoxShadow: var(--sapContainer_Shadow1);
@@ -20,7 +21,8 @@ $block: #{$fd-namespace}-tool-layout;
 
   width: 100%;
   height: 100%;
-  padding: var(--fdToolLayout_Padding);
+  padding-block: var(--fdToolLayout_Padding_Block);
+  padding-inline: var(--fdToolLayout_Padding_Inline);
   background: var(--fdToolLayout_Background);
 
   &__container {
@@ -90,13 +92,15 @@ $block: #{$fd-namespace}-tool-layout;
   }
 
   &--tablet {
-    --fdToolLayout_Padding: 0.5rem;
+    --fdToolLayout_Padding_Block: 0.5rem;
+    --fdToolLayout_Padding_Inline: 0.5rem;
     --fdToolLayout_Content_Container_Border_Radius: 0.5rem;
   }
 
   &--phone {
     --fdToolLayout_Gap: 0.25rem;
-    --fdToolLayout_Padding: 0.25rem;
+    --fdToolLayout_Padding_Block: 0.25rem;
+    --fdToolLayout_Padding_Inline: 0.25rem;
     --fdToolLayout_Content_Container_Border_Radius: 0.25rem;
   }
 

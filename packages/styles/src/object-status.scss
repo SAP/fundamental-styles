@@ -853,7 +853,8 @@ $inverted-color-accents-b: (
     position: relative;
     border-style: solid;
     overflow: hidden;
-    padding: var(--fdObjectStatus_Inverted_Padding);
+    padding-block: var(--fdObjectStatus_Inverted_Padding_Block);
+    padding-inline: var(--fdObjectStatus_Inverted_Padding_Inline);
     min-width: var(--fdObjectStatus_Inverted_Min_Width);
     border-width: var(--fdObjectStatus_Inverted_Border_Width);
     min-height: var(--fdObjectStatus_Inverted_Line_Height);

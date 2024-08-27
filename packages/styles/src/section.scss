@@ -5,14 +5,11 @@
 $block: #{$fd-namespace}-section;
 
 .#{$block} {
-  $fd-section-padding--top: 1rem !default;
-  $fd-section-padding--bottom: 1.5rem !default;
-  $fd-section-header-margin--bottom: 1.5rem !default;
-
   @include fd-reset();
   @include fd-clearfix();
 
-  padding: $fd-section-padding--top 0.5rem $fd-section-padding--bottom 0.5rem;
+  padding-block: 1rem 1.5rem;
+  padding-inline: 0.5rem;
 
   @include fd-screen(m) {
     padding-inline: 2rem;
@@ -56,7 +53,7 @@ $block: #{$fd-namespace}-section;
     min-height: 1.5rem;
     display: flex;
     align-items: center;
-    margin-block-end: $fd-section-header-margin--bottom;
+    margin-block-end: 1.5rem;
   }
 
   &__title {

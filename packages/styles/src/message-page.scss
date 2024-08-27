@@ -29,7 +29,8 @@ $block: #{$fd-namespace}-message-page;
       align-items: center;
     }
 
-    padding: 1rem;
+    padding-block: 1rem;
+    padding-inline: 1rem;
     background: var(--fdMessage_Page_Container_Background);
     border-radius: var(--fdMessage_Page_Container_Corner_Radius);
   }

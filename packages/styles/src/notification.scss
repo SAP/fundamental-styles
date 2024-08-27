@@ -46,7 +46,8 @@ $block: #{$fd-namespace}-notification;
   --fdNotification_Group_Item_Background: var(--sapList_Background);
 
   // Notification Limit
-  --fdNotification_Limit_Padding: 1rem;
+  --fdNotification_Limit_Padding_Block: 1rem;
+  --fdNotification_Limit_Padding_Inline: 1rem;
 
   // Border
   $fd-notification-border: var(--sapList_BorderWidth) solid var(--sapList_BorderColor);
@@ -174,7 +175,8 @@ $block: #{$fd-namespace}-notification;
     @include fd-reset();
 
     text-align: center;
-    padding: var(--fdNotification_Limit_Padding);
+    padding-block: var(--fdNotification_Limit_Padding_Block);
+    padding-inline: var(--fdNotification_Limit_Padding_Inline);
 
     &--title {
       @include fd-reset();
@@ -332,7 +334,8 @@ $block: #{$fd-namespace}-notification;
     --fdNotification_Item_Footer_Font_Size: var(--sapFontSmallSize);
 
     // Notification Limit
-    --fdNotification_Limit_Padding: 1.5rem 0;
+    --fdNotification_Limit_Padding_Block: 1.5rem;
+    --fdNotification_Limit_Padding_Inline: 0;
 
     .#{$block}__body {
       cursor: pointer;
