@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.37.8-rc.1](https://github.com/SAP/fundamental-styles/compare/v0.37.8-rc.0...v0.37.8-rc.1) (2024-08-28)
+
+### Bug Fixes
+
+-   **styles:** update the spacing for XS Avatar Group [ci visual] ([#5601](https://github.com/SAP/fundamental-styles/issues/5601)) ([f412f11](https://github.com/SAP/fundamental-styles/commit/f412f1131c538c0a14498953450fd4b040bd487f))
+
 ## [0.37.8-rc.0](https://github.com/SAP/fundamental-styles/compare/v0.37.7...v0.37.8-rc.0) (2024-08-27)
 
 **Note:** Version bump only for package fundamental-styles
