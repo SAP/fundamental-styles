@@ -200,6 +200,12 @@ ul.fddocs-versions {
   }
 }
 
+@media (width <= 1200px) {
+  ul.fddocs-versions {
+    display: none;
+  }
+}
+
 .fddocs-community,
 .fddocs-versions {
   /* stylelint-disable no-descending-specificity */
