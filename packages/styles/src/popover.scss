@@ -6,12 +6,29 @@
 $block: #{$fd-namespace}-popover;
 $blockBody: #{$fd-namespace}-popover__body;
 
+body.fd-overlay-active::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: var(--fdModal_BackgroundColor);
+  z-index: 999;
+  pointer-events: all;
+}
+
 .#{$block} {
   @include fd-reset();
 
   position: relative;
   display: inline-block;
   max-width: 100%;
+
+  &__modal {
+    position: relative;
+    z-index: 1000;
+  }
 
   &__control {
     @include fd-reset();
