@@ -134,7 +134,7 @@ AccentColors.storyName = 'Color variations';
 AccentColors.parameters = {
   docs: {
     description: {
-      story: 'The Avatar can have different background colors depending on the scenario. To change the accent background color, add the `fd-avatar--accent-color-*` class with the number indicating the desired color. The color options include numbers ranging from 1 to 10, for example: `fd-avatar--accent-color-10`.'
+      story: 'The Avatar can have different background colors depending on the scenario. To change the accent or indication background color, add the `fd-avatar--accent-color-*` or `fd-avatar--indication-color-*` class with the number indicating the desired color. The color options include numbers ranging from 1 to 10, for example: `fd-avatar--accent-color-10` or `fd-avatar--indication-color-7`.'
     }
   }
 };

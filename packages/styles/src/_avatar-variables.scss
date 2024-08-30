@@ -93,6 +93,88 @@ $fd-avatar-accent-colors: (
     "border-color": var(--sapAvatar_10_BorderColor)
   )
 );
+$fd-avatar-indication-colors: (
+  "1": (
+    "background-color": var(--fdAvatar_Indication_Color_1),
+    "background-color-hover": var(--fdAvatar_Indication_Color_Hover_1),
+    "border-color-hover":var(--fdAvatar_Indication_Color_1_Border_Color_Hover),
+    "text-color": var(--fdAvatar_Indication_Color_1_Text),
+    "border": var(--fdAvatar_Indication_Color_1_Border),
+    "border-color": var(--sapAvatar_1_BorderColor)
+  ),
+  "2": (
+    "background-color": var(--fdAvatar_Indication_Color_2),
+    "background-color-hover": var(--fdAvatar_Indication_Color_Hover_2),
+    "border-color-hover":var(--fdAvatar_Indication_Color_2_Border_Color_Hover),
+    "text-color": var(--fdAvatar_Indication_Color_2_Text),
+    "border": var(--fdAvatar_Indication_Color_2_Border),
+    "border-color": var(--sapAvatar_2_BorderColor)
+  ),
+  "3": (
+    "background-color": var(--fdAvatar_Indication_Color_3),
+    "background-color-hover": var(--fdAvatar_Indication_Color_Hover_3),
+    "border-color-hover":var(--fdAvatar_Indication_Color_3_Border_Color_Hover),
+    "text-color": var(--fdAvatar_Indication_Color_3_Text),
+    "border": var(--fdAvatar_Indication_Color_3_Border),
+    "border-color": var(--sapAvatar_3_BorderColor)
+  ),
+  "4": (
+    "background-color": var(--fdAvatar_Indication_Color_4),
+    "background-color-hover": var(--fdAvatar_Indication_Color_Hover_4),
+    "border-color-hover":var(--fdAvatar_Indication_Color_4_Border_Color_Hover),
+    "text-color": var(--fdAvatar_Indication_Color_4_Text),
+    "border": var(--fdAvatar_Indication_Color_4_Border),
+    "border-color": var(--sapAvatar_4_BorderColor)
+  ),
+  "5": (
+    "background-color": var(--fdAvatar_Indication_Color_5),
+    "background-color-hover": var(--fdAvatar_Indication_Color_Hover_5),
+    "border-color-hover":var(--fdAvatar_Indication_Color_5_Border_Color_Hover),
+    "text-color": var(--fdAvatar_Indication_Color_5_Text),
+    "border": var(--fdAvatar_Indication_Color_5_Border),
+    "border-color": var(--sapAvatar_5_BorderColor)
+  ),
+  "6": (
+    "background-color": var(--fdAvatar_Indication_Color_6),
+    "background-color-hover": var(--fdAvatar_Indication_Color_Hover_6),
+    "border-color-hover":var(--fdAvatar_Indication_Color_6_Border_Color_Hover),
+    "text-color": var(--fdAvatar_Indication_Color_6_Text),
+    "border": var(--fdAvatar_Indication_Color_6_Border),
+    "border-color": var(--sapAvatar_6_BorderColor)
+  ),
+  "7": (
+    "background-color": var(--fdAvatar_Indication_Color_7),
+    "background-color-hover": var(--fdAvatar_Indication_Color_Hover_7),
+    "border-color-hover":var(--fdAvatar_Indication_Color_7_Border_Color_Hover),
+    "text-color": var(--fdAvatar_Indication_Color_7_Text),
+    "border": var(--fdAvatar_Indication_Color_7_Border),
+    "border-color": var(--sapAvatar_7_BorderColor)
+  ),
+  "8": (
+    "background-color": var(--fdAvatar_Indication_Color_8),
+    "background-color-hover": var(--fdAvatar_Indication_Color_Hover_8),
+    "border-color-hover":var(--fdAvatar_Indication_Color_8_Border_Color_Hover),
+    "text-color": var(--fdAvatar_Indication_Color_8_Text),
+    "border": var(--fdAvatar_Indication_Color_8_Border),
+    "border-color": var(--sapAvatar_8_BorderColor)
+  ),
+  "9": (
+    "background-color": var(--fdAvatar_Indication_Color_9),
+    "background-color-hover": var(--fdAvatar_Indication_Color_Hover_9),
+    "border-color-hover":var(--fdAvatar_Indication_Color_9_Border_Color_Hover),
+    "text-color": var(--fdAvatar_Indication_Color_9_Text),
+    "border": var(--fdAvatar_Indication_Color_9_Border),
+    "border-color": var(--sapAvatar_9_BorderColor)
+  ),
+  "10": (
+    "background-color": var(--fdAvatar_Indication_Color_10),
+    "background-color-hover": var(--fdAvatar_Indication_Color_Hover_10),
+    "border-color-hover":var(--fdAvatar_Indication_Color_10_Border_Color_Hover),
+    "text-color": var(--fdAvatar_Indication_Color_10_Text),
+    "border": var(--fdAvatar_Indication_Color_10_Border),
+    "border-color": var(--sapAvatar_10_BorderColor)
+  )
+);
 $fd-avatar-sizes: (
   "xs": (
     "ratio": ($fd-avatar-const-ratio * 2),

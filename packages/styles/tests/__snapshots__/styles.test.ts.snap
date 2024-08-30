@@ -8646,6 +8646,38 @@ exports[`Check stories > Components/Avatar > Story AccentColors > Should match s
 <span class=\\"fd-avatar fd-avatar--accent-color-10 fd-avatar--md\\" aria-label=\\"Avatar\\" aria-role=\\"img\\">
     <i class=\\"fd-avatar__icon sap-icon--product\\" role=\\"presentation\\" aria-hidden=\\"true\\" aria-label=\\"Image placeholder\\"></i>
 </span>
+
+<br>
+<span class=\\"fd-avatar fd-avatar--indication-color-1 fd-avatar--md\\" aria-label=\\"Avatar\\" aria-role=\\"img\\">
+    <i class=\\"fd-avatar__icon sap-icon--product\\" role=\\"presentation\\" aria-hidden=\\"true\\" aria-label=\\"Image placeholder\\"></i>
+</span>
+<span class=\\"fd-avatar fd-avatar--indication-color-2 fd-avatar--md\\" aria-label=\\"Avatar\\" aria-role=\\"img\\">
+    <i class=\\"fd-avatar__icon sap-icon--product\\" role=\\"presentation\\" aria-hidden=\\"true\\" aria-label=\\"Image placeholder\\"></i>
+</span>
+<span class=\\"fd-avatar fd-avatar--indication-color-3 fd-avatar--md\\" aria-label=\\"Avatar\\" aria-role=\\"img\\">
+    <i class=\\"fd-avatar__icon sap-icon--product\\" role=\\"presentation\\" aria-hidden=\\"true\\" aria-label=\\"Image placeholder\\"></i>
+</span>
+<span class=\\"fd-avatar fd-avatar--indication-color-4 fd-avatar--md\\" aria-label=\\"Avatar\\" aria-role=\\"img\\">
+    <i class=\\"fd-avatar__icon sap-icon--product\\" role=\\"presentation\\" aria-hidden=\\"true\\" aria-label=\\"Image placeholder\\"></i>
+</span>
+<span class=\\"fd-avatar fd-avatar--indication-color-5 fd-avatar--md\\" aria-label=\\"Avatar\\" aria-role=\\"img\\">
+    <i class=\\"fd-avatar__icon sap-icon--product\\" role=\\"presentation\\" aria-hidden=\\"true\\" aria-label=\\"Image placeholder\\"></i>
+</span>
+<span class=\\"fd-avatar fd-avatar--indication-color-6 fd-avatar--md\\" aria-label=\\"Avatar\\" aria-role=\\"img\\">
+    <i class=\\"fd-avatar__icon sap-icon--product\\" role=\\"presentation\\" aria-hidden=\\"true\\" aria-label=\\"Image placeholder\\"></i>
+</span>
+<span class=\\"fd-avatar fd-avatar--indication-color-7 fd-avatar--md\\" aria-label=\\"Avatar\\" aria-role=\\"img\\">
+    <i class=\\"fd-avatar__icon sap-icon--product\\" role=\\"presentation\\" aria-hidden=\\"true\\" aria-label=\\"Image placeholder\\"></i>
+</span>
+<span class=\\"fd-avatar fd-avatar--indication-color-8 fd-avatar--md\\" aria-label=\\"Avatar\\" aria-role=\\"img\\">
+    <i class=\\"fd-avatar__icon sap-icon--product\\" role=\\"presentation\\" aria-hidden=\\"true\\" aria-label=\\"Image placeholder\\"></i>
+</span>
+<span class=\\"fd-avatar fd-avatar--indication-color-9 fd-avatar--md\\" aria-label=\\"Avatar\\" aria-role=\\"img\\">
+    <i class=\\"fd-avatar__icon sap-icon--product\\" role=\\"presentation\\" aria-hidden=\\"true\\" aria-label=\\"Image placeholder\\"></i>
+</span>
+<span class=\\"fd-avatar fd-avatar--indication-color-10 fd-avatar--md\\" aria-label=\\"Avatar\\" aria-role=\\"img\\">
+    <i class=\\"fd-avatar__icon sap-icon--product\\" role=\\"presentation\\" aria-hidden=\\"true\\" aria-label=\\"Image placeholder\\"></i>
+</span>
 "
 `;
 
@@ -8754,7 +8786,8 @@ exports[`Check stories > Components/Avatar > Story Circle > Should match snapsho
 `;
 
 exports[`Check stories > Components/Avatar > Story Icon > Should match snapshot 1`] = `
-"<span class=\\"fd-avatar fd-avatar--xs\\" role=\\"img\\" aria-label=\\"Avatar\\">
+"
+<span class=\\"fd-avatar fd-avatar--xs\\" role=\\"img\\" aria-label=\\"Avatar\\">
     <i role=\\"presentation\\" aria-hidden=\\"true\\" aria-label=\\"Product placeholder\\" class=\\"fd-avatar__icon sap-icon--product\\"></i>
 </span>
 <span class=\\"fd-avatar fd-avatar--sm\\" role=\\"img\\" aria-label=\\"Avatar\\">
