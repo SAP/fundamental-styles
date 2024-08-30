@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.37.8-rc.3](https://github.com/SAP/fundamental-styles/compare/v0.37.8-rc.2...v0.37.8-rc.3) (2024-08-30)
+
+### Features
+
+-   **styles:** added background styling [ci visual] ([#5595](https://github.com/SAP/fundamental-styles/issues/5595)) ([a2a039d](https://github.com/SAP/fundamental-styles/commit/a2a039dacd01242b92064657ea418bcef65bebe8))
+
 ## [0.37.8-rc.2](https://github.com/SAP/fundamental-styles/compare/v0.37.8-rc.1...v0.37.8-rc.2) (2024-08-29)
 
 **Note:** Version bump only for package fundamental-styles
