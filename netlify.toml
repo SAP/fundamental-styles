@@ -14,3 +14,4 @@
   NODE_VERSION = "20.15.1"
   YARN_FLAGS = "--frozen-lockfile"
   YARN_VERSION = "4.4.1"
+  NPM_CONFIG_PREFIX = ~/.npm-global
