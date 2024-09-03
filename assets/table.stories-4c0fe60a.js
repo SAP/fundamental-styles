@@ -1,4 +1,4 @@
-var $l=Object.defineProperty,le=Object.defineProperties;var ee=Object.getOwnPropertyDescriptors;var E=Object.getOwnPropertySymbols;var ae=Object.prototype.hasOwnProperty,te=Object.prototype.propertyIsEnumerable;var A=(s,a,t)=>a in s?$l(s,a,{enumerable:!0,configurable:!0,writable:!0,value:t}):s[a]=t,l=(s,a)=>{for(var t in a||(a={}))ae.call(a,t)&&A(s,t,a[t]);if(E)for(var t of E(a))te.call(a,t)&&A(s,t,a[t]);return s},e=(s,a)=>le(s,ee(a));/* empty css               *//* empty css                   *//* empty css                 *//* empty css             *//* empty css             *//* empty css                      *//* empty css              *//* empty css                *//* empty css                   *//* empty css                *//* empty css             *//* empty css            *//* empty css               *//* empty css              *//* empty css                    *//* empty css                 *//* empty css               *//* empty css             *//* empty css             *//* empty css                      *//* empty css                      *//* empty css              */const se=`<table class="fd-table fd-table--tree">
+var $e=Object.defineProperty,el=Object.defineProperties;var ll=Object.getOwnPropertyDescriptors;var E=Object.getOwnPropertySymbols;var al=Object.prototype.hasOwnProperty,tl=Object.prototype.propertyIsEnumerable;var A=(s,a,t)=>a in s?$e(s,a,{enumerable:!0,configurable:!0,writable:!0,value:t}):s[a]=t,e=(s,a)=>{for(var t in a||(a={}))al.call(a,t)&&A(s,t,a[t]);if(E)for(var t of E(a))tl.call(a,t)&&A(s,t,a[t]);return s},l=(s,a)=>el(s,ll(a));/* empty css               *//* empty css                   *//* empty css                 *//* empty css             *//* empty css             *//* empty css                      *//* empty css              *//* empty css                *//* empty css                   *//* empty css                *//* empty css             *//* empty css            *//* empty css               *//* empty css              *//* empty css                    *//* empty css                 *//* empty css               *//* empty css             *//* empty css             *//* empty css                      *//* empty css                      *//* empty css              */const sl=`<table class="fd-table fd-table--tree">
         <thead class="fd-table__header">
             <tr class="fd-table__row">
                 <th class="fd-table__cell" scope="col">
@@ -130,7 +130,7 @@ var $l=Object.defineProperty,le=Object.defineProperties;var ee=Object.getOwnProp
             </tr>
         </tbody>
     </table>
-`,de=`<table class="fd-table fd-table--group">
+`,dl=`<table class="fd-table fd-table--group">
         <thead class="fd-table__header">
             <tr class="fd-table__row">
                 <th class="fd-table__cell" scope="col">
@@ -177,7 +177,7 @@ var $l=Object.defineProperty,le=Object.defineProperties;var ee=Object.getOwnProp
             </tr>
         </tbody>
     </table>
-`,ne=`<table class="fd-table">
+`,nl=`<table class="fd-table">
         <thead class="fd-table__header">
         <tr class="fd-table__row">
             <th class="fd-table__cell" scope="col">
@@ -206,7 +206,7 @@ var $l=Object.defineProperty,le=Object.defineProperties;var ee=Object.getOwnProp
         </tr>
         </tbody>
     </table>
-`,ce=`<table class="fd-table" aria-describedby="FU4EwF6st">
+`,cl=`<table class="fd-table" aria-describedby="FU4EwF6st">
     <caption class="fd-table__caption" id="FU4EwF6st" aria-live="polite">
         Inventory Status. Use arrow keys to navigate between cells.
     </caption>
@@ -216,7 +216,7 @@ var $l=Object.defineProperty,le=Object.defineProperties;var ee=Object.getOwnProp
             <div class="fd-form-item">
                 <input aria-checked="false" aria-label="Select all rows" class="fd-checkbox" id="fd-gEAc87vXrAR"
                        type="checkbox" value="" tabindex="-1" /><label for="fd-gEAc87vXrAR"
-                                                                       class="fd-form-label fd-checkbox__label"></label>
+                                                                       class="fd-form-label fd-checkbox__label"><span class="fd-checkbox__checkmark" aria-hidden="true"></span></label>
             </div>
         </th>
         <th id="fd-KWRjZC5EqkW" class="fd-table__cell fd-table__cell--focusable" tabindex="-1">
@@ -254,7 +254,7 @@ var $l=Object.defineProperty,le=Object.defineProperties;var ee=Object.getOwnProp
             <div class="fd-form-item">
                 <input aria-checked="false" aria-label="Select row" class="fd-checkbox" id="fd-7EMZOUrG2eK"
                        name="Notebook Basic 15" type="checkbox" value="" tabindex="-1" />
-                <label for="fd-7EMZOUrG2eK" class="fd-form-label fd-checkbox__label"></label>
+                <label for="fd-7EMZOUrG2eK" class="fd-form-label fd-checkbox__label"><span class="fd-checkbox__checkmark" aria-hidden="true"></span></label>
             </div>
         </td>
         <td class="fd-table__cell fd-table__cell--focusable" tabindex="-1">
@@ -295,7 +295,7 @@ var $l=Object.defineProperty,le=Object.defineProperties;var ee=Object.getOwnProp
             <div class="fd-form-item">
                 <input aria-checked="false" aria-label="Heavy Weight" class="fd-checkbox" id="fd-tF03y4hjeLT"
                        type="checkbox" value="" tabindex="-1" /><label for="fd-tF03y4hjeLT"
-                                                                       class="fd-form-label fd-checkbox__label"></label>
+                                                                       class="fd-form-label fd-checkbox__label"><span class="fd-checkbox__checkmark" aria-hidden="true"></span></label>
             </div>
         </td>
         <td class="fd-table__cell fd-table__cell--focusable" tabindex="-1">
@@ -324,7 +324,7 @@ var $l=Object.defineProperty,le=Object.defineProperties;var ee=Object.getOwnProp
             <div class="fd-form-item">
                 <input aria-checked="false" aria-label="Select row" class="fd-checkbox" id="fd-LbUmEre6JKj"
                        name="Notebook Basic 17" type="checkbox" value="" tabindex="-1" />
-                <label for="fd-LbUmEre6JKj" class="fd-form-label fd-checkbox__label"></label>
+                <label for="fd-LbUmEre6JKj" class="fd-form-label fd-checkbox__label"><span class="fd-checkbox__checkmark" aria-hidden="true"></span></label>
             </div>
         </td>
         <td class="fd-table__cell fd-table__cell--focusable" tabindex="-1">
@@ -365,7 +365,7 @@ var $l=Object.defineProperty,le=Object.defineProperties;var ee=Object.getOwnProp
             <div class="fd-form-item">
                 <input aria-checked="false" aria-label="Heavy Weight" class="fd-checkbox" id="fd-9WXDOs3SBLH"
                        type="checkbox" value="" tabindex="-1" /><label for="fd-9WXDOs3SBLH"
-                                                                       class="fd-form-label fd-checkbox__label"></label>
+                                                                       class="fd-form-label fd-checkbox__label"><span class="fd-checkbox__checkmark" aria-hidden="true"></span></label>
             </div>
         </td>
         <td class="fd-table__cell fd-table__cell--focusable" tabindex="-1">
@@ -394,7 +394,7 @@ var $l=Object.defineProperty,le=Object.defineProperties;var ee=Object.getOwnProp
             <div class="fd-form-item">
                 <input aria-checked="false" aria-label="Select row" class="fd-checkbox" id="fd-Cmvc_Hc7N3_"
                        name="Notebook Basic 18" type="checkbox" value="" tabindex="-1" />
-                <label for="fd-Cmvc_Hc7N3_" class="fd-form-label fd-checkbox__label"></label>
+                <label for="fd-Cmvc_Hc7N3_" class="fd-form-label fd-checkbox__label"><span class="fd-checkbox__checkmark" aria-hidden="true"></span></label>
             </div>
         </td>
         <td class="fd-table__cell fd-table__cell--focusable" tabindex="-1">
@@ -435,7 +435,7 @@ var $l=Object.defineProperty,le=Object.defineProperties;var ee=Object.getOwnProp
             <div class="fd-form-item">
                 <input aria-checked="false" aria-label="Heavy Weight" class="fd-checkbox" id="fd-Rzaro06MMoH"
                        type="checkbox" value="" tabindex="-1" /><label for="fd-Rzaro06MMoH"
-                                                                       class="fd-form-label fd-checkbox__label"></label>
+                                                                       class="fd-form-label fd-checkbox__label"><span class="fd-checkbox__checkmark" aria-hidden="true"></span></label>
             </div>
         </td>
         <td class="fd-table__cell fd-table__cell--focusable" tabindex="-1">
@@ -461,7 +461,7 @@ var $l=Object.defineProperty,le=Object.defineProperties;var ee=Object.getOwnProp
     </tr>
     </tbody>
 </table>
-`,oe=`<div style="max-width: 450px">
+`,ol=`<div style="max-width: 450px">
     <div class="fd-toolbar fd-toolbar--title fd-toolbar-active">
         <h4 class="fd-title fd-title--h4 fd-toolbar__title">Responsive Table - Pop-in mode</h4>
         <span class="fd-toolbar__spacer fd-toolbar__spacer--auto"></span>
@@ -596,7 +596,7 @@ var $l=Object.defineProperty,le=Object.defineProperties;var ee=Object.getOwnProp
         </tbody>
     </table>
 </div>
-`,_e=`<div class="fd-toolbar fd-toolbar--title fd-toolbar-active">
+`,_l=`<div class="fd-toolbar fd-toolbar--title fd-toolbar-active">
     <h4 class="fd-title fd-title--h4 fd-toolbar__title">Responsive Table</h4>
     <span class="fd-toolbar__spacer fd-toolbar__spacer--auto"></span>
 </div>
@@ -605,7 +605,7 @@ var $l=Object.defineProperty,le=Object.defineProperties;var ee=Object.getOwnProp
         <tr class="fd-table__row">
             <th class="fd-table__cell fd-table__cell--checkbox">
                 <input aria-label="checkbox" type="checkbox" class="fd-checkbox" id="kqqzPI">
-                <label class="fd-checkbox__label" for="kqqzPI"></label>
+                <label class="fd-checkbox__label" for="kqqzPI"><span class="fd-checkbox__checkmark" aria-hidden="true"></span></label>
             </th>
             <th class="fd-table__cell" scope="col">Name</th>
             <th class="fd-table__cell" scope="col">Status</th>
@@ -618,7 +618,7 @@ var $l=Object.defineProperty,le=Object.defineProperties;var ee=Object.getOwnProp
         <tr class="fd-table__row fd-table__row--activable fd-table__row--hoverable">
             <td class="fd-table__cell fd-table__cell--checkbox">
                 <input aria-label="checkbox" type="checkbox" class="fd-checkbox" id="EWuzWh">
-                <label class="fd-checkbox__label" for="EWuzWh"></label>
+                <label class="fd-checkbox__label" for="EWuzWh"><span class="fd-checkbox__checkmark" aria-hidden="true"></span></label>
             </td>
             <td class="fd-table__cell">Banana</td>
             <td class="fd-table__cell">
@@ -635,7 +635,7 @@ var $l=Object.defineProperty,le=Object.defineProperties;var ee=Object.getOwnProp
         <tr class="fd-table__row fd-table__row--activable fd-table__row--hoverable">
             <td class="fd-table__cell fd-table__cell--checkbox">
                 <input aria-label="checkbox" type="checkbox" class="fd-checkbox" id="19j0Sc">
-                <label class="fd-checkbox__label" for="19j0Sc"></label>
+                <label class="fd-checkbox__label" for="19j0Sc"><span class="fd-checkbox__checkmark" aria-hidden="true"></span></label>
             </td>
             <td class="fd-table__cell">Pineapple</td>
             <td class="fd-table__cell">
@@ -652,7 +652,7 @@ var $l=Object.defineProperty,le=Object.defineProperties;var ee=Object.getOwnProp
         <tr class="fd-table__row fd-table__row--activable fd-table__row--hoverable">
             <td class="fd-table__cell fd-table__cell--checkbox">
                 <input aria-label="checkbox" type="checkbox" class="fd-checkbox" id="a7SfGX">
-                <label class="fd-checkbox__label" for="a7SfGX"></label>
+                <label class="fd-checkbox__label" for="a7SfGX"><span class="fd-checkbox__checkmark" aria-hidden="true"></span></label>
             </td>
             <td class="fd-table__cell">Orange</td>
             <td class="fd-table__cell">
@@ -667,7 +667,7 @@ var $l=Object.defineProperty,le=Object.defineProperties;var ee=Object.getOwnProp
             </td>
         </tr>
     </tbody>
-</table>`,ie=`<div class="fd-toolbar fd-toolbar--title fd-toolbar-active">
+</table>`,il=`<div class="fd-toolbar fd-toolbar--title fd-toolbar-active">
     <h4 class="fd-title fd-title--h4 fd-toolbar__title">Table with Navigation Indication State</h4>
     <span class="fd-toolbar__spacer fd-toolbar__spacer--auto"></span>
 </div>
@@ -676,7 +676,7 @@ var $l=Object.defineProperty,le=Object.defineProperties;var ee=Object.getOwnProp
         <tr class="fd-table__row">
             <th class="fd-table__cell fd-table__cell--checkbox">
                 <input aria-label="checkbox" type="checkbox" class="fd-checkbox" id="kqqzPI44">
-                <label class="fd-checkbox__label" for="kqqzPI44"></label>
+                <label class="fd-checkbox__label" for="kqqzPI44"><span class="fd-checkbox__checkmark" aria-hidden="true"></span></label>
             </th>
             <th class="fd-table__cell" scope="col">Column Header</th>
             <th class="fd-table__cell" scope="col">Column Header</th>
@@ -689,7 +689,7 @@ var $l=Object.defineProperty,le=Object.defineProperties;var ee=Object.getOwnProp
         <tr class="fd-table__row fd-table__row--activable fd-table__row--hoverable" aria-selected="true">
             <td class="fd-table__cell fd-table__cell--checkbox">
                 <input aria-label="checkbox" type="checkbox" checked class="fd-checkbox" id="EWuzWh33">
-                <label class="fd-checkbox__label" for="EWuzWh33"></label>
+                <label class="fd-checkbox__label" for="EWuzWh33"><span class="fd-checkbox__checkmark" aria-hidden="true"></span></label>
             </td>
             <td class="fd-table__cell"><a class="fd-link"><span>user.name@email.com</span></a></td>
             <td class="fd-table__cell"><span class="fd-table__text">First Name</span></td>
@@ -702,7 +702,7 @@ var $l=Object.defineProperty,le=Object.defineProperties;var ee=Object.getOwnProp
         <tr class="fd-table__row fd-table__row--activable fd-table__row--hoverable" aria-selected="true">
             <td class="fd-table__cell fd-table__cell--checkbox">
                 <input aria-label="checkbox" type="checkbox" checked class="fd-checkbox" id="EWuzWh334">
-                <label class="fd-checkbox__label" for="EWuzWh334"></label>
+                <label class="fd-checkbox__label" for="EWuzWh334"><span class="fd-checkbox__checkmark" aria-hidden="true"></span></label>
             </td>
             <td class="fd-table__cell"><a class="fd-link"><span>user.name@email.com</span></a></td>
             <td class="fd-table__cell"><span class="fd-table__text">First Name</span></td>
@@ -715,7 +715,7 @@ var $l=Object.defineProperty,le=Object.defineProperties;var ee=Object.getOwnProp
         <tr class="fd-table__row fd-table__row--activable fd-table__row--hoverable">
             <td class="fd-table__cell fd-table__cell--checkbox">
                 <input aria-label="checkbox" type="checkbox" class="fd-checkbox" id="EWuzWh335">
-                <label class="fd-checkbox__label" for="EWuzWh335"></label>
+                <label class="fd-checkbox__label" for="EWuzWh335"><span class="fd-checkbox__checkmark" aria-hidden="true"></span></label>
             </td>
             <td class="fd-table__cell"><a class="fd-link"><span>user.name@email.com</span></a></td>
             <td class="fd-table__cell">First Name</td>
@@ -727,7 +727,7 @@ var $l=Object.defineProperty,le=Object.defineProperties;var ee=Object.getOwnProp
         </tr>
     </tbody>
 </table>
-`,be=`<div class="fd-toolbar fd-toolbar--title fd-toolbar-active">
+`,rl=`<div class="fd-toolbar fd-toolbar--title fd-toolbar-active">
     <h4 class="fd-title fd-title--h4 fd-toolbar__title">Responsive Table - row navigation</h4>
     <span class="fd-toolbar__spacer fd-toolbar__spacer--auto"></span>
 </div>
@@ -845,7 +845,7 @@ var $l=Object.defineProperty,le=Object.defineProperties;var ee=Object.getOwnProp
         </tr>
     </tbody>
 </table>
-`,re=`<style>
+`,bl=`<style>
         .fd-table--fixed {
             height: 300px;
         }
@@ -971,7 +971,7 @@ var $l=Object.defineProperty,le=Object.defineProperties;var ee=Object.getOwnProp
         </tfoot>
     </table>
 </div>
-`,fe=`<div class="fd-toolbar fd-toolbar--title fd-toolbar-active">
+`,fl=`<div class="fd-toolbar fd-toolbar--title fd-toolbar-active">
     <h4 class="fd-title fd-title--h4 fd-toolbar__title">Table with Popover in Headers</h4>
     <span class="fd-toolbar__spacer fd-toolbar__spacer--auto"></span>
 </div>
@@ -1057,7 +1057,7 @@ var $l=Object.defineProperty,le=Object.defineProperties;var ee=Object.getOwnProp
         </tr>
     </tbody>
 </table>
-`,pe=`<div style="min-height: 400px">
+`,pl=`<div style="min-height: 400px">
 <div class="fd-toolbar fd-toolbar--title fd-toolbar-active">
     <h4 class="fd-title fd-title--h4 fd-toolbar__title">Table with Contextual Menu</h4>
     <span class="fd-toolbar__spacer fd-toolbar__spacer--auto"></span>
@@ -1146,7 +1146,7 @@ var $l=Object.defineProperty,le=Object.defineProperties;var ee=Object.getOwnProp
     </tbody>
 </table>
 </div>
-`,me=`<div class="fd-dialog" id="filter-dialog-example">
+`,ml=`<div class="fd-dialog" id="filter-dialog-example">
     <section class="fd-dialog__content" role="dialog" aria-modal="true" aria-labelledby="dialog-filter">
         <header class="fd-dialog__header fd-bar">
             <div class="fd-bar__left">
@@ -1325,7 +1325,7 @@ var $l=Object.defineProperty,le=Object.defineProperties;var ee=Object.getOwnProp
         </tr>
     </tbody>
 </table>
-`,he=`<div class="fd-toolbar fd-toolbar--title fd-toolbar-active">
+`,hl=`<div class="fd-toolbar fd-toolbar--title fd-toolbar-active">
     <h4 class="fd-title fd-title--h4 fd-toolbar__title">Table With Pagination at The Bottom</h4>
     <span class="fd-toolbar__spacer fd-toolbar__spacer--auto"></span>
 </div>
@@ -1407,7 +1407,7 @@ var $l=Object.defineProperty,le=Object.defineProperties;var ee=Object.getOwnProp
         <span class='fd-form-label fd-pagination__total-label'>30 Results</span>
     </div>
 </div>
-`,ue=`<div class="fd-toolbar fd-toolbar--title fd-toolbar-active">
+`,ul=`<div class="fd-toolbar fd-toolbar--title fd-toolbar-active">
     <h4 class="fd-title fd-title--h4 fd-toolbar__title">Table With Checkbox Condensed Mode</h4>
     <span class="fd-toolbar__spacer fd-toolbar__spacer--auto"></span>
 </div>
@@ -1416,7 +1416,9 @@ var $l=Object.defineProperty,le=Object.defineProperties;var ee=Object.getOwnProp
         <tr class="fd-table__row">
             <th class="fd-table__cell fd-table__cell--checkbox" scope="col">
                 <input aria-label="checkbox" type="checkbox" class="fd-checkbox fd-table__checkbox" id="Ai4JH2BF87">
-                <label class="fd-checkbox__label fd-table__checkbox-label" for="Ai4JH2BF87"></label>
+                <label class="fd-checkbox__label fd-table__checkbox-label" for="Ai4JH2BF87">
+                    <span class="fd-checkbox__checkmark" aria-hidden="true"></span>
+                </label>
             </th>
             <th class="fd-table__cell" scope="col">Column Header</th>
             <th class="fd-table__cell" scope="col">Column Header</th>
@@ -1428,7 +1430,9 @@ var $l=Object.defineProperty,le=Object.defineProperties;var ee=Object.getOwnProp
         <tr class="fd-table__row" aria-selected="true">
             <td class="fd-table__cell fd-table__cell--checkbox">
                 <input aria-label="checkbox" type="checkbox" checked class="fd-checkbox fd-table__checkbox" id="Ai4JHf87">
-                <label class="fd-checkbox__label fd-table__checkbox-label" for="Ai4JHf87"></label>
+                <label class="fd-checkbox__label fd-table__checkbox-label" for="Ai4JHf87">
+                    <span class="fd-checkbox__checkmark" aria-hidden="true"></span>
+                </label>
             </td>
             <td class="fd-table__cell"><a class="fd-link"><span>user.name@email.com</span></a></td>
             <td class="fd-table__cell"><span class="fd-table__text">First Name</span></td>
@@ -1438,7 +1442,9 @@ var $l=Object.defineProperty,le=Object.defineProperties;var ee=Object.getOwnProp
         <tr class="fd-table__row">
             <td class="fd-table__cell fd-table__cell--checkbox">
                 <input aria-label="checkbox" type="checkbox" class="fd-checkbox fd-table__checkbox" id="Ai4Jj67">
-                <label class="fd-checkbox__label fd-table__checkbox-label" for="Ai4Jj67"></label>
+                <label class="fd-checkbox__label fd-table__checkbox-label" for="Ai4Jj67">
+                    <span class="fd-checkbox__checkmark" aria-hidden="true"></span>
+                </label>
             </td>
             <td class="fd-table__cell"><a class="fd-link"><span>user.name@email.com</span></a></td>
             <td class="fd-table__cell">First Name</td>
@@ -1448,7 +1454,9 @@ var $l=Object.defineProperty,le=Object.defineProperties;var ee=Object.getOwnProp
         <tr class="fd-table__row">
             <td class="fd-table__cell fd-table__cell--checkbox">
                 <input aria-label="checkbox" type="checkbox" class="fd-checkbox fd-table__checkbox" id="AGjtJj67">
-                <label class="fd-checkbox__label fd-table__checkbox-label" for="AGjtJj67"></label>
+                <label class="fd-checkbox__label fd-table__checkbox-label" for="AGjtJj67">
+                    <span class="fd-checkbox__checkmark" aria-hidden="true"></span>
+                </label>
             </td>
             <td class="fd-table__cell"><a class="fd-link"><span>user.name@email.com</span></a></td>
             <td class="fd-table__cell">First Name</td>
@@ -1457,7 +1465,7 @@ var $l=Object.defineProperty,le=Object.defineProperties;var ee=Object.getOwnProp
         </tr>
     </tbody>
 </table>
-`,xe=`<div class="fd-toolbar fd-toolbar--title fd-toolbar-active">
+`,xl=`<div class="fd-toolbar fd-toolbar--title fd-toolbar-active">
     <h4 class="fd-title fd-title--h4 fd-toolbar__title">Table With Checkbox</h4>
     <span class="fd-toolbar__spacer fd-toolbar__spacer--auto"></span>
 </div>
@@ -1466,7 +1474,9 @@ var $l=Object.defineProperty,le=Object.defineProperties;var ee=Object.getOwnProp
         <tr class="fd-table__row">
             <th class="fd-table__cell fd-table__cell--checkbox" scope="col">
                 <input aria-label="checkbox" type="checkbox" class="fd-checkbox fd-table__checkbox" id="Ai4ez611">
-                <label class="fd-checkbox__label fd-table__checkbox-label" for="Ai4ez611"></label>
+                <label class="fd-checkbox__label fd-table__checkbox-label" for="Ai4ez611">
+                    <span class="fd-checkbox__checkmark" aria-hidden="true"></span>
+                </label>
             </th>
             <th class="fd-table__cell" scope="col">Column Header</th>
             <th class="fd-table__cell" scope="col">Column Header</th>
@@ -1478,7 +1488,9 @@ var $l=Object.defineProperty,le=Object.defineProperties;var ee=Object.getOwnProp
         <tr class="fd-table__row" aria-selected="true">
             <td class="fd-table__cell fd-table__cell--checkbox">
                 <input aria-label="checkbox" type="checkbox" checked class="fd-checkbox fd-table__checkbox" id="Ai4ez615">
-                <label class="fd-checkbox__label fd-table__checkbox-label" for="Ai4ez615"></label>
+                <label class="fd-checkbox__label fd-table__checkbox-label" for="Ai4ez615">
+                    <span class="fd-checkbox__checkmark" aria-hidden="true"></span>
+                </label>
             </td>
             <td class="fd-table__cell"><a class="fd-link"><span>user.name@email.com</span></a></td>
             <td class="fd-table__cell"><span class="fd-table__text">First Name</span></td>
@@ -1488,7 +1500,9 @@ var $l=Object.defineProperty,le=Object.defineProperties;var ee=Object.getOwnProp
         <tr class="fd-table__row">
             <td class="fd-table__cell fd-table__cell--checkbox">
                 <input aria-label="checkbox" type="checkbox" class="fd-checkbox fd-table__checkbox" id="Ai4ez617">
-                <label class="fd-checkbox__label fd-table__checkbox-label" for="Ai4ez617"></label>
+                <label class="fd-checkbox__label fd-table__checkbox-label" for="Ai4ez617">
+                    <span class="fd-checkbox__checkmark" aria-hidden="true"></span>
+                </label>
             </td>
             <td class="fd-table__cell"><a class="fd-link"><span>user.name@email.com</span></a></td>
             <td class="fd-table__cell">First Name</td>
@@ -1498,7 +1512,9 @@ var $l=Object.defineProperty,le=Object.defineProperties;var ee=Object.getOwnProp
         <tr class="fd-table__row">
             <td class="fd-table__cell fd-table__cell--checkbox">
                 <input aria-label="checkbox" type="checkbox" class="fd-checkbox fd-table__checkbox" id="Gi4ez611">
-                <label class="fd-checkbox__label fd-table__checkbox-label" for="Gi4ez611"></label>
+                <label class="fd-checkbox__label fd-table__checkbox-label" for="Gi4ez611">
+                    <span class="fd-checkbox__checkmark" aria-hidden="true"></span>
+                </label>
             </td>
             <td class="fd-table__cell"><a class="fd-link"><span>user.name@email.com</span></a></td>
             <td class="fd-table__cell">First Name</td>
@@ -1507,7 +1523,7 @@ var $l=Object.defineProperty,le=Object.defineProperties;var ee=Object.getOwnProp
         </tr>
     </tbody>
 </table>
-`,ve=`<div class="fd-toolbar fd-toolbar--title fd-toolbar-active">
+`,vl=`<div class="fd-toolbar fd-toolbar--title fd-toolbar-active">
     <h4 class="fd-title fd-title--h4 fd-toolbar__title">Table With Focusable Cells</h4>
     <span class="fd-toolbar__spacer fd-toolbar__spacer--auto"></span>
 </div>
@@ -1538,7 +1554,7 @@ var $l=Object.defineProperty,le=Object.defineProperties;var ee=Object.getOwnProp
         </tr>
     </tbody>
 </table>
-`,ge=`<div class="fd-toolbar fd-toolbar--title fd-toolbar-active">
+`,kl=`<div class="fd-toolbar fd-toolbar--title fd-toolbar-active">
     <h4 class="fd-title fd-title--h4 fd-toolbar__title">Table With Focusable Rows</h4>
     <span class="fd-toolbar__spacer fd-toolbar__spacer--auto"></span>
 </div>
@@ -1569,7 +1585,7 @@ var $l=Object.defineProperty,le=Object.defineProperties;var ee=Object.getOwnProp
         </tr>
     </tbody>
 </table>
-`,we=`<div class="fd-toolbar fd-toolbar--title fd-toolbar-active">
+`,gl=`<div class="fd-toolbar fd-toolbar--title fd-toolbar-active">
     <h4 class="fd-title fd-title--h4 fd-toolbar__title">Table with Semantic Rows</h4>
     <span class="fd-toolbar__spacer fd-toolbar__spacer--auto"></span>
 </div>
@@ -1579,7 +1595,7 @@ var $l=Object.defineProperty,le=Object.defineProperties;var ee=Object.getOwnProp
             <th class="fd-table__cell fd-table__cell--status-indicator"></th>
             <th class="fd-table__cell fd-table__cell--checkbox" scope="col">
                 <input aria-label="checkbox" type="checkbox" class="fd-checkbox" id="Ai9ez611">
-                <label class="fd-checkbox__label" for="Ai9ez611"></label>
+                <label class="fd-checkbox__label" for="Ai9ez611"><span class="fd-checkbox__checkmark" aria-hidden="true"></span></label>
             </th>
             <th class="fd-table__cell" scope="col">Column Header</th>
             <th class="fd-table__cell" scope="col">Column Header</th>
@@ -1592,7 +1608,7 @@ var $l=Object.defineProperty,le=Object.defineProperties;var ee=Object.getOwnProp
             <td class="fd-table__cell fd-table__cell--status-indicator"></td>
             <td class="fd-table__cell fd-table__cell--checkbox">
                 <input aria-label="checkbox" type="checkbox" class="fd-checkbox" id="Ai9ek611">
-                <label class="fd-checkbox__label" for="Ai9ek611"></label>
+                <label class="fd-checkbox__label" for="Ai9ek611"><span class="fd-checkbox__checkmark" aria-hidden="true"></span></label>
             </td>
             <td class="fd-table__cell"><a class="fd-link"><span class="fd-link__content">user.name@email.com</span></a></td>
             <td class="fd-table__cell"><p class="fd-text">First Name</p></td>
@@ -1603,7 +1619,7 @@ var $l=Object.defineProperty,le=Object.defineProperties;var ee=Object.getOwnProp
             <td class="fd-table__cell fd-table__cell--status-indicator fd-table__cell--status-indicator--valid"></td>
             <td class="fd-table__cell fd-table__cell--checkbox">
                 <input aria-label="checkbox" type="checkbox" class="fd-checkbox" id="Ai9ek673">
-                <label class="fd-checkbox__label" for="Ai9ek673"></label>
+                <label class="fd-checkbox__label" for="Ai9ek673"><span class="fd-checkbox__checkmark" aria-hidden="true"></span></label>
             </td>
             <td class="fd-table__cell"><a class="fd-link"><span class="fd-link__content">user.name@email.com</span></a></td>
             <td class="fd-table__cell">First Name</td>
@@ -1614,7 +1630,7 @@ var $l=Object.defineProperty,le=Object.defineProperties;var ee=Object.getOwnProp
             <td class="fd-table__cell fd-table__cell--status-indicator"></td>
             <td class="fd-table__cell fd-table__cell--checkbox">
                 <input aria-label="checkbox" type="checkbox" class="fd-checkbox" id="Ai9ek69s">
-                <label class="fd-checkbox__label" for="Ai9ek69s"></label>
+                <label class="fd-checkbox__label" for="Ai9ek69s"><span class="fd-checkbox__checkmark" aria-hidden="true"></span></label>
             </td>
             <td class="fd-table__cell"><a class="fd-link"><span class="fd-link__content">user.name@email.com</span></a></td>
             <td class="fd-table__cell">First Name</td>
@@ -1625,7 +1641,7 @@ var $l=Object.defineProperty,le=Object.defineProperties;var ee=Object.getOwnProp
             <td class="fd-table__cell fd-table__cell--status-indicator fd-table__cell--status-indicator--warning"></td>
             <td class="fd-table__cell fd-table__cell--checkbox">
                 <input aria-label="checkbox" type="checkbox" class="fd-checkbox" id="Ai9ekk69s">
-                <label class="fd-checkbox__label" for="Ai9ekk69s"></label>
+                <label class="fd-checkbox__label" for="Ai9ekk69s"><span class="fd-checkbox__checkmark" aria-hidden="true"></span></label>
             </td>
             <td class="fd-table__cell"><a class="fd-link"><span class="fd-link__content">user.name@email.com</span></a></td>
             <td class="fd-table__cell">First Name</td>
@@ -1636,7 +1652,7 @@ var $l=Object.defineProperty,le=Object.defineProperties;var ee=Object.getOwnProp
             <td class="fd-table__cell fd-table__cell--status-indicator"></td>
             <td class="fd-table__cell fd-table__cell--checkbox">
                 <input aria-label="checkbox" type="checkbox" class="fd-checkbox" id="Ai73k69s">
-                <label class="fd-checkbox__label" for="Ai73k69s"></label>
+                <label class="fd-checkbox__label" for="Ai73k69s"><span class="fd-checkbox__checkmark" aria-hidden="true"></span></label>
             </td>
             <td class="fd-table__cell"><a class="fd-link"><span class="fd-link__content">user.name@email.com</span></a></td>
             <td class="fd-table__cell">First Name</td>
@@ -1647,7 +1663,7 @@ var $l=Object.defineProperty,le=Object.defineProperties;var ee=Object.getOwnProp
             <td class="fd-table__cell fd-table__cell--status-indicator fd-table__cell--status-indicator--error"></td>
             <td class="fd-table__cell fd-table__cell--checkbox">
                 <input aria-label="checkbox" type="checkbox" class="fd-checkbox" id="Ai734F6s">
-                <label class="fd-checkbox__label" for="Ai734F6s"></label>
+                <label class="fd-checkbox__label" for="Ai734F6s"><span class="fd-checkbox__checkmark" aria-hidden="true"></span></label>
             </td>
             <td class="fd-table__cell"><a class="fd-link"><span class="fd-link__content">user.name@email.com</span></a></td>
             <td class="fd-table__cell">First Name</td>
@@ -1658,7 +1674,7 @@ var $l=Object.defineProperty,le=Object.defineProperties;var ee=Object.getOwnProp
             <td class="fd-table__cell fd-table__cell--status-indicator"></td>
             <td class="fd-table__cell fd-table__cell--checkbox">
                 <input aria-label="checkbox" type="checkbox" class="fd-checkbox" id="Ai73HE36s">
-                <label class="fd-checkbox__label" for="Ai73HE36s"></label>
+                <label class="fd-checkbox__label" for="Ai73HE36s"><span class="fd-checkbox__checkmark" aria-hidden="true"></span></label>
             </td>
             <td class="fd-table__cell"><a class="fd-link"><span class="fd-link__content">user.name@email.com</span></a></td>
             <td class="fd-table__cell">First Name</td>
@@ -1669,7 +1685,7 @@ var $l=Object.defineProperty,le=Object.defineProperties;var ee=Object.getOwnProp
             <td class="fd-table__cell fd-table__cell--status-indicator fd-table__cell--status-indicator--information"></td>
             <td class="fd-table__cell fd-table__cell--checkbox">
                 <input aria-label="checkbox" type="checkbox" class="fd-checkbox" id="Ai7JDE36s">
-                <label class="fd-checkbox__label" for="Ai7JDE36s"></label>
+                <label class="fd-checkbox__label" for="Ai7JDE36s"><span class="fd-checkbox__checkmark" aria-hidden="true"></span></label>
             </td>
             <td class="fd-table__cell"><a class="fd-link"><span class="fd-link__content">user.name@email.com</span></a></td>
             <td class="fd-table__cell">First Name</td>
@@ -1680,7 +1696,7 @@ var $l=Object.defineProperty,le=Object.defineProperties;var ee=Object.getOwnProp
             <td class="fd-table__cell fd-table__cell--status-indicator"></td>
             <td class="fd-table__cell fd-table__cell--checkbox">
                 <input aria-label="checkbox" type="checkbox" class="fd-checkbox" id="Ai7JGD6s">
-                <label class="fd-checkbox__label" for="Ai7JGD6s"></label>
+                <label class="fd-checkbox__label" for="Ai7JGD6s"><span class="fd-checkbox__checkmark" aria-hidden="true"></span></label>
             </td>
             <td class="fd-table__cell"><a class="fd-link"><span class="fd-link__content">user.name@email.com</span></a></td>
             <td class="fd-table__cell">First Name</td>
@@ -1689,7 +1705,7 @@ var $l=Object.defineProperty,le=Object.defineProperties;var ee=Object.getOwnProp
         </tr>
     </tbody>
 </table>
-`,ke=`<div class="fd-toolbar fd-toolbar--title fd-toolbar-active">
+`,wl=`<div class="fd-toolbar fd-toolbar--title fd-toolbar-active">
     <h4 class="fd-title fd-title--h4 fd-toolbar__title">Interactive Table With Hoverable and Activable Cells and Rows</h4>
     <span class="fd-toolbar__spacer fd-toolbar__spacer--auto"></span>
 </div>
@@ -1748,7 +1764,7 @@ var $l=Object.defineProperty,le=Object.defineProperties;var ee=Object.getOwnProp
         </tr>
     </tbody>
 </table>
-`,ye=`<div class="fd-toolbar fd-toolbar--title fd-toolbar-active">
+`,yl=`<div class="fd-toolbar fd-toolbar--title fd-toolbar-active">
     <h4 class="fd-title fd-title--h4 fd-toolbar__title">Table With Footer Condensed Mode</h4>
     <span class="fd-toolbar__spacer fd-toolbar__spacer--auto"></span>
 </div>
@@ -1784,7 +1800,7 @@ var $l=Object.defineProperty,le=Object.defineProperties;var ee=Object.getOwnProp
         </tr>
     </tfoot>
 </table>
-`,Ne=`<div class="fd-toolbar fd-toolbar--title fd-toolbar-active">
+`,Nl=`<div class="fd-toolbar fd-toolbar--title fd-toolbar-active">
     <h4 class="fd-title fd-title--h4 fd-toolbar__title">Table With Footer Cozy Mode</h4>
     <span class="fd-toolbar__spacer fd-toolbar__spacer--auto"></span>
 </div>
@@ -1825,7 +1841,7 @@ var $l=Object.defineProperty,le=Object.defineProperties;var ee=Object.getOwnProp
             <td class="fd-table__cell"></td>
         </tr>
     </tfoot>
-</table>`,He=`<div class="fd-toolbar fd-toolbar--title fd-toolbar-active">
+</table>`,Hl=`<div class="fd-toolbar fd-toolbar--title fd-toolbar-active">
     <h4 class="fd-title fd-title--h4 fd-toolbar__title">Table Without Outer Borders</h4>
     <span class="fd-toolbar__spacer fd-toolbar__spacer--auto"></span>
 </div>
@@ -1859,7 +1875,7 @@ var $l=Object.defineProperty,le=Object.defineProperties;var ee=Object.getOwnProp
         </tr>
     </tbody>
 </table>
-`,Te=`<div class="fd-toolbar fd-toolbar--title fd-toolbar-active">
+`,Tl=`<div class="fd-toolbar fd-toolbar--title fd-toolbar-active">
     <h4 class="fd-title fd-title--h4 fd-toolbar__title">Table Without Borders On Body</h4>
     <span class="fd-toolbar__spacer fd-toolbar__spacer--auto"></span>
 </div>
@@ -1887,7 +1903,7 @@ var $l=Object.defineProperty,le=Object.defineProperties;var ee=Object.getOwnProp
         </tr>
     </tbody>
 </table>
-`,Ce=`<div class="fd-toolbar fd-toolbar--title fd-toolbar-active">
+`,Cl=`<div class="fd-toolbar fd-toolbar--title fd-toolbar-active">
     <h4 class="fd-title fd-title--h4 fd-toolbar__title">Table Without Borders</h4>
     <span class="fd-toolbar__spacer fd-toolbar__spacer--auto"></span>
 </div>
@@ -1915,7 +1931,7 @@ var $l=Object.defineProperty,le=Object.defineProperties;var ee=Object.getOwnProp
         </tr>
     </tbody>
 </table>
-`,Fe=`<div class="fd-toolbar fd-toolbar--title fd-toolbar-active">
+`,Fl=`<div class="fd-toolbar fd-toolbar--title fd-toolbar-active">
     <h4 class="fd-title fd-title--h4 fd-toolbar__title">Default Table</h4>
     <span class="fd-toolbar__spacer fd-toolbar__spacer--auto"></span>
 </div>
@@ -2025,7 +2041,7 @@ var $l=Object.defineProperty,le=Object.defineProperties;var ee=Object.getOwnProp
             <td class="fd-table__cell">01/26/17</td>
         </tr>
     </tbody>
-</table>`,Ze={title:"Components/Table",parameters:{description:`
+</table>`,Zl={title:"Components/Table",parameters:{description:`
 A table contains a set of line items and usually comprises rows (with each row showing one line item) and columns. Line items can contain data of any kind, but also interactive elements, for example, for editing the data, navigating, or triggering actions relating to the line item.
 To display large amounts of data in tabular form, several table components are provided. These are divided into two groups, each of which is defined by a consistent feature set:
 
@@ -2059,22 +2075,22 @@ To display large amounts of data in tabular form, several table components are p
 - The main use case involves selecting one of several hierarchical items with only a few details per item.
 
 In these cases, use the **Tree** instead.
-        `,components:["button","form-label","fieldset","icon","link","object-status","table","toolbar","pagination","popover","list","toolbar","bar","dialog","input","input-group","checkbox","select","menu","text","object-number","object-marker"]}},k=()=>Fe;k.parameters={docs:{description:{story:`
+        `,components:["button","form-label","fieldset","icon","link","object-status","table","toolbar","pagination","popover","list","toolbar","bar","dialog","input","input-group","checkbox","select","menu","text","object-number","object-marker"]}},w=()=>Fl;w.parameters={docs:{description:{story:`
 The primary table contains columns with headers, and rows with links. In the first column, links are displayed. To display links within a table, add the \`fd-link\` class within the table data. <br>
 To disable the hover and active states on header cells apply the <code>fd-table__header--non-interactive</code> modifier to <code>fd-table__header</code> base class.
-    `}}};const y=()=>Ce;y.parameters={docs:{description:{story:`
+    `}}};const y=()=>Cl;y.parameters={docs:{description:{story:`
 Table can be displayed without borders that separate the columns, column headers, and rows. To display a borderless table, add the \`fd-table--no-horizontal-borders\` and \`fd-table--no-vertical-borders\` modifier classes to the main element.
 
 **Note:** You can remove borders on individual cells by adding the above-mentioned modifier classes to them only.
 
-    `}}};const d=()=>Te;d.storyName="Borderless (body)";d.parameters={docs:{description:{story:"\nTable can be displayed without borders that separate the columns and rows only, leaving the column headers with borders. To display a borderless table body, add the  `fd-table--no-horizontal-borders` and `fd-table--no-vertical-borders` modifier classes to the body element.\n    "}}};const n=()=>He;n.storyName="No outer Border";n.parameters={docs:{description:{story:"\nTable can be displayed without outer borders, might be needed when used inside some other element. To display a table without outer border, add the `fd-table--no-outer-border` modifier class to the main element.\n    "}}};const N=()=>Ne;N.parameters={docs:{description:{story:"\nTable can be displayed with a footer. To display a table footer, add the `fd-table__footer` class with a `tfoot` element. It must contain the same amount and size of columns as the table head and body containers.\n    "}}};const c=()=>ye;c.storyName="Footer (condensed)";c.parameters={docs:{description:{story:"\nSimilar to the previous example, table can be displayed with a footer in condensed mode (for desktop screens). To display a condensed table, add the `fd-table--condensed` modifier class to the main element.\n    "}}};const H=()=>ke;H.parameters={docs:{description:{story:`
+    `}}};const d=()=>Tl;d.storyName="Borderless (body)";d.parameters={docs:{description:{story:"\nTable can be displayed without borders that separate the columns and rows only, leaving the column headers with borders. To display a borderless table body, add the  `fd-table--no-horizontal-borders` and `fd-table--no-vertical-borders` modifier classes to the body element.\n    "}}};const n=()=>Hl;n.storyName="No outer Border";n.parameters={docs:{description:{story:"\nTable can be displayed without outer borders, might be needed when used inside some other element. To display a table without outer border, add the `fd-table--no-outer-border` modifier class to the main element.\n    "}}};const N=()=>Nl;N.parameters={docs:{description:{story:"\nTable can be displayed with a footer. To display a table footer, add the `fd-table__footer` class with a `tfoot` element. It must contain the same amount and size of columns as the table head and body containers.\n    "}}};const c=()=>yl;c.storyName="Footer (condensed)";c.parameters={docs:{description:{story:"\nSimilar to the previous example, table can be displayed with a footer in condensed mode (for desktop screens). To display a condensed table, add the `fd-table--condensed` modifier class to the main element.\n    "}}};const H=()=>wl;H.parameters={docs:{description:{story:`
 The table component can be interactive with hoverable and activable cells and rows.
 
 Interaction | Modifier class
 :------------- | :------------------
 Activate | \`--activable\`
 Hover | \`--hoverable\`
-    `}}};const o=()=>we;o.storyName="Semantic";o.parameters={docs:{description:{story:"\nThe table component can display highlight indicators to classify certain items with semantic states. To display status indicators in table, add the `fd-table__cell--status-indicator` modifier class to each row.\n\n**To display semantic highlight indicators, add the following modifier classes to `fd-table__cell--status-indicator`:**\n\nSemantic states | Modifier class\n:-------------------- | :-----------------\nValid | `--valid`\nWarning | `--warning`\nError | `--error`\nInformation | `--information`\n    "}}};const _=()=>ge;_.storyName="Focusable rows";_.parameters={docs:{description:{story:"\nTable can display focusable rows by adding the `fd-table__row--focusable` modifier class and a valid `tabindex` to the rows. It is not recommended to use focusable rows simultaneously with focusable cells.\n    "}}};const i=()=>ve;i.storyName="Focusable cells";i.parameters={docs:{description:{story:"\nTable can display focusable cells by adding the `fd-table__cell--focusable` modifier class and a valid `tabindex` to the cells. It is not recommended to use focusable cells simultaneously with focusable rows.\n    "}}};const T=()=>xe;T.parameters={docs:{description:{story:'\nTable can display checkboxes to allow the user to perform bulk actions.\nTo display checkboxes in table, add the `fd-table__cell--checkbox` modifier class to the appropriate cell.\nIt is recommended to add the parameter `aria-selected="true"` to the row that is selected.\nAlso recommended to add class `fd-table__checkbox` to the checkbox (input) and `fd-table__checkbox-label` class to the checkbox label to have appropriate styles.\n    '}}};const b=()=>ue;b.storyName="Checkbox (condensed)";b.parameters={docs:{description:{story:'\nTable can be displayed with checkboxes in condensed mode. To display checkboxes in table, add the `fd-table__cell--checkbox` modifier class to the appropriate cell. It is recommended to add the parameter `aria-selected="true"` to the row that is selected.\n\n\nTo display the table in condensed mode, add the `fd-table--condensed` modifier class to the table element.\n    '}}};const C=()=>he;C.parameters={docs:{description:{story:"\nTable can be displayed with bottom pagination by adding the `fd-pagination` class after the table.\n    "}}};const r=()=>me;r.storyName="Advanced toolbar";r.parameters={docs:{description:{story:"\nThe table component can be displayed with an advanced **Toolbar**, which allows users to customize their table. In this example, buttons trigger **Dialogs**. To display an advanced toolbar, pair `fd-dialog` components with an `fd-toolbar` component.\n    "}}};const f=()=>pe;f.storyName="Contextual menu";f.parameters={docs:{description:{story:"\nTable can display a contextual menu containing actions if there is not enough space in a given row. It is recommended to use a contextual menu if there are more than three actions. To display table with a contextual menu, add the `fd-popover` component to any given cell. See **Popover** for more details.\n    "}}};const p=()=>fe;p.storyName="Menu header";p.parameters={docs:{description:{story:"\nTable can display menu options from a popover within headers. The example below demonstrates headers containing customization actions such as _Ascending_ and _Descending_. To display a menu within a header, add the `fd-table__popover` class to the header cells.\n    "}}};const m=()=>re;m.storyName="Fixed header, footer and columns";m.parameters={docs:{description:{story:`
+    `}}};const o=()=>gl;o.storyName="Semantic";o.parameters={docs:{description:{story:"\nThe table component can display highlight indicators to classify certain items with semantic states. To display status indicators in table, add the `fd-table__cell--status-indicator` modifier class to each row.\n\n**To display semantic highlight indicators, add the following modifier classes to `fd-table__cell--status-indicator`:**\n\nSemantic states | Modifier class\n:-------------------- | :-----------------\nValid | `--valid`\nWarning | `--warning`\nError | `--error`\nInformation | `--information`\n    "}}};const _=()=>kl;_.storyName="Focusable rows";_.parameters={docs:{description:{story:"\nTable can display focusable rows by adding the `fd-table__row--focusable` modifier class and a valid `tabindex` to the rows. It is not recommended to use focusable rows simultaneously with focusable cells.\n    "}}};const i=()=>vl;i.storyName="Focusable cells";i.parameters={docs:{description:{story:"\nTable can display focusable cells by adding the `fd-table__cell--focusable` modifier class and a valid `tabindex` to the cells. It is not recommended to use focusable cells simultaneously with focusable rows.\n    "}}};const T=()=>xl;T.parameters={docs:{description:{story:'\nTable can display checkboxes to allow the user to perform bulk actions.\nTo display checkboxes in table, add the `fd-table__cell--checkbox` modifier class to the appropriate cell.\nIt is recommended to add the parameter `aria-selected="true"` to the row that is selected.\nAlso recommended to add class `fd-table__checkbox` to the checkbox (input) and `fd-table__checkbox-label` class to the checkbox label to have appropriate styles.\n    '}}};const r=()=>ul;r.storyName="Checkbox (condensed)";r.parameters={docs:{description:{story:'\nTable can be displayed with checkboxes in condensed mode. To display checkboxes in table, add the `fd-table__cell--checkbox` modifier class to the appropriate cell. It is recommended to add the parameter `aria-selected="true"` to the row that is selected.\n\n\nTo display the table in condensed mode, add the `fd-table--condensed` modifier class to the table element.\n    '}}};const C=()=>hl;C.parameters={docs:{description:{story:"\nTable can be displayed with bottom pagination by adding the `fd-pagination` class after the table.\n    "}}};const b=()=>ml;b.storyName="Advanced toolbar";b.parameters={docs:{description:{story:"\nThe table component can be displayed with an advanced **Toolbar**, which allows users to customize their table. In this example, buttons trigger **Dialogs**. To display an advanced toolbar, pair `fd-dialog` components with an `fd-toolbar` component.\n    "}}};const f=()=>pl;f.storyName="Contextual menu";f.parameters={docs:{description:{story:"\nTable can display a contextual menu containing actions if there is not enough space in a given row. It is recommended to use a contextual menu if there are more than three actions. To display table with a contextual menu, add the `fd-popover` component to any given cell. See **Popover** for more details.\n    "}}};const p=()=>fl;p.storyName="Menu header";p.parameters={docs:{description:{story:"\nTable can display menu options from a popover within headers. The example below demonstrates headers containing customization actions such as _Ascending_ and _Descending_. To display a menu within a header, add the `fd-table__popover` class to the header cells.\n    "}}};const m=()=>bl;m.storyName="Fixed header, footer and columns";m.parameters={docs:{description:{story:`
 Table can display fixed header, footer and columns (both, on the left and right).
 
 At first, wrap the table in a element with the \`fd-table--fixed\` class.
@@ -2090,24 +2106,24 @@ Then apply \`.fd-table__cell--fixed-end-last\` to every last fixed cell in every
 If you have more than one fixed column on the left or right, you have to set the position left (or right) for the columns starting from 2nd.
 
 It’s important to hardcode the width of the columns, otherwise the cells will be squished.
-    `}}};const h=()=>be;h.storyName="Navigation from table rows";h.parameters={docs:{description:{story:"\nResponsive table allows navigation from a line item. For that purpose you need to add a column with the icon `sap-icon--slim-arrow-right` at the end. The entire line needs to be clickable\n\nYou have an option to add icon button `sap-icon--navigation-right-arrow` as a separate column for non responsive table.\n    "}}};const u=()=>ie;u.storyName="Navigation indicators";u.parameters={docs:{description:{story:`
+    `}}};const h=()=>rl;h.storyName="Navigation from table rows";h.parameters={docs:{description:{story:"\nResponsive table allows navigation from a line item. For that purpose you need to add a column with the icon `sap-icon--slim-arrow-right` at the end. The entire line needs to be clickable\n\nYou have an option to add icon button `sap-icon--navigation-right-arrow` as a separate column for non responsive table.\n    "}}};const u=()=>il;u.storyName="Navigation indicators";u.parameters={docs:{description:{story:`
 
 The table component can display navigation indicators. When multi-selection is used in a master-detail scenario, it is not clear which item was last opened, you can mark it as a “navigated” indicator, as indicated in the second row, to mark an item that is currently open. To display a navigated indicator, add the \`fd-table__cell--navigated\` class to the desired table cell.
-    `}}};const F=()=>_e;F.parameters={docs:{description:{story:"\nThe desktop responsive table should contain `fd-table--responsive` modifier.\n    "}}};const x=()=>oe;x.storyName="Responsive Table (pop-in mode)";x.parameters={docs:{description:{story:`
+    `}}};const F=()=>_l;F.parameters={docs:{description:{story:"\nThe desktop responsive table should contain `fd-table--responsive` modifier.\n    "}}};const x=()=>ol;x.storyName="Responsive Table (pop-in mode)";x.parameters={docs:{description:{story:`
 The responsive table can be displayed in pop-in mode for mobile and tablet screens. To display responsive table in pop-in mode, add the \`fd-table--pop-in\` modifier class to the main element and remove the borders (see borderless example). In pop-in mode, a row actually contains two rows:
 -	\`fd-table__row--main\`
 -	\`fd-table__row--secondary\`
 
 **Note:** cells with titles and text should be wrapped in paragraph tags.
 
-    `}}};const L=()=>ce;L.parameters={docs:{description:{story:`
+    `}}};const L=()=>cl;L.parameters={docs:{description:{story:`
 Grid tables can contain various input elements inside of cells, such as checkboxes, input fields, links and drop-down menus.
 
 ####Accessibility
 Information about the table such as a title, summary, and/or keyboard navigation instructions should be provided in captions for screen readers. To caption table information, use the \`fd-table__caption\` class.
-    `}}};const v=()=>ne;v.storyName="Table without data";v.parameters={docs:{description:{story:`
+    `}}};const v=()=>nl;v.storyName="Table without data";v.parameters={docs:{description:{story:`
 Table can indicate that there is no data to display.
-    `}}};const g=()=>de;g.storyName="Table with group rows";g.parameters={docs:{description:{story:`
+    `}}};const k=()=>dl;k.storyName="Table with group rows";k.parameters={docs:{description:{story:`
 Table can have group rows, to get this do the following:
 
 - Add \`fd-table--group\` class to the table
@@ -2124,7 +2140,7 @@ Group cell intended to have glyph which indicates expand/collapsed state, to get
 Intended to have up to 20 levels deep, not more.
 
 Please consider that you need to implement expanding/collapsing functionality by yourself.
-    `}}};const w=()=>se;w.storyName="Tree Table";w.parameters={docs:{description:{story:`
+    `}}};const g=()=>sl;g.storyName="Tree Table";g.parameters={docs:{description:{story:`
 Table can show tree-like rows, to get this do the following:
 
 - Add \`fd-table--tree\` class to the table
@@ -2139,4 +2155,4 @@ Tree table cells intended to have a glyph which indicates expanded/collapsed sta
 Intended to have up to 20 levels deep, not more.
 
 Please consider that you need to implement expanding/collapsing functionality by yourself.
-    `}}};var R,j,S;k.parameters=e(l({},k.parameters),{docs:e(l({},(R=k.parameters)==null?void 0:R.docs),{source:l({originalSource:"() => primaryExampleHtml"},(S=(j=k.parameters)==null?void 0:j.docs)==null?void 0:S.source)})});var W,I,z;y.parameters=e(l({},y.parameters),{docs:e(l({},(W=y.parameters)==null?void 0:W.docs),{source:l({originalSource:"() => borderlessExampleHtml"},(z=(I=y.parameters)==null?void 0:I.docs)==null?void 0:z.source)})});var M,P,U;d.parameters=e(l({},d.parameters),{docs:e(l({},(M=d.parameters)==null?void 0:M.docs),{source:l({originalSource:"() => borderlessbodyExampleHtml"},(U=(P=d.parameters)==null?void 0:P.docs)==null?void 0:U.source)})});var O,B,D;n.parameters=e(l({},n.parameters),{docs:e(l({},(O=n.parameters)==null?void 0:O.docs),{source:l({originalSource:"() => noOuterBorderExampleHtml"},(D=(B=n.parameters)==null?void 0:B.docs)==null?void 0:D.source)})});var G,V,q;N.parameters=e(l({},N.parameters),{docs:e(l({},(G=N.parameters)==null?void 0:G.docs),{source:l({originalSource:"() => footerExampleHtml"},(q=(V=N.parameters)==null?void 0:V.docs)==null?void 0:q.source)})});var Y,K,J;c.parameters=e(l({},c.parameters),{docs:e(l({},(Y=c.parameters)==null?void 0:Y.docs),{source:l({originalSource:"() => condensedFooterExampleHtml"},(J=(K=c.parameters)==null?void 0:K.docs)==null?void 0:J.source)})});var Q,X,Z;H.parameters=e(l({},H.parameters),{docs:e(l({},(Q=H.parameters)==null?void 0:Q.docs),{source:l({originalSource:"() => interactiveExampleHtml"},(Z=(X=H.parameters)==null?void 0:X.docs)==null?void 0:Z.source)})});var $,ll,el;o.parameters=e(l({},o.parameters),{docs:e(l({},($=o.parameters)==null?void 0:$.docs),{source:l({originalSource:"() => semanticRowsExampleHtml"},(el=(ll=o.parameters)==null?void 0:ll.docs)==null?void 0:el.source)})});var al,tl,sl;_.parameters=e(l({},_.parameters),{docs:e(l({},(al=_.parameters)==null?void 0:al.docs),{source:l({originalSource:"() => focusableRowsExampleHtml"},(sl=(tl=_.parameters)==null?void 0:tl.docs)==null?void 0:sl.source)})});var dl,nl,cl;i.parameters=e(l({},i.parameters),{docs:e(l({},(dl=i.parameters)==null?void 0:dl.docs),{source:l({originalSource:"() => focusableCellsExampleHtml"},(cl=(nl=i.parameters)==null?void 0:nl.docs)==null?void 0:cl.source)})});var ol,_l,il;T.parameters=e(l({},T.parameters),{docs:e(l({},(ol=T.parameters)==null?void 0:ol.docs),{source:l({originalSource:"() => checkboxExampleHtml"},(il=(_l=T.parameters)==null?void 0:_l.docs)==null?void 0:il.source)})});var bl,rl,fl;b.parameters=e(l({},b.parameters),{docs:e(l({},(bl=b.parameters)==null?void 0:bl.docs),{source:l({originalSource:"() => condensedCheckboxExampleHtml"},(fl=(rl=b.parameters)==null?void 0:rl.docs)==null?void 0:fl.source)})});var pl,ml,hl;C.parameters=e(l({},C.parameters),{docs:e(l({},(pl=C.parameters)==null?void 0:pl.docs),{source:l({originalSource:"() => paginationExampleHtml"},(hl=(ml=C.parameters)==null?void 0:ml.docs)==null?void 0:hl.source)})});var ul,xl,vl;r.parameters=e(l({},r.parameters),{docs:e(l({},(ul=r.parameters)==null?void 0:ul.docs),{source:l({originalSource:"() => advancedToolbarExampleHtml"},(vl=(xl=r.parameters)==null?void 0:xl.docs)==null?void 0:vl.source)})});var gl,wl,kl;f.parameters=e(l({},f.parameters),{docs:e(l({},(gl=f.parameters)==null?void 0:gl.docs),{source:l({originalSource:"() => contextualMenuExampleHtml"},(kl=(wl=f.parameters)==null?void 0:wl.docs)==null?void 0:kl.source)})});var yl,Nl,Hl;p.parameters=e(l({},p.parameters),{docs:e(l({},(yl=p.parameters)==null?void 0:yl.docs),{source:l({originalSource:"() => menuHeaderExampleHtml"},(Hl=(Nl=p.parameters)==null?void 0:Nl.docs)==null?void 0:Hl.source)})});var Tl,Cl,Fl;m.parameters=e(l({},m.parameters),{docs:e(l({},(Tl=m.parameters)==null?void 0:Tl.docs),{source:l({originalSource:"() => fixColumnHeaderExampleHtml"},(Fl=(Cl=m.parameters)==null?void 0:Cl.docs)==null?void 0:Fl.source)})});var Ll,El,Al;h.parameters=e(l({},h.parameters),{docs:e(l({},(Ll=h.parameters)==null?void 0:Ll.docs),{source:l({originalSource:"() => navIconExampleHtml"},(Al=(El=h.parameters)==null?void 0:El.docs)==null?void 0:Al.source)})});var Rl,jl,Sl;u.parameters=e(l({},u.parameters),{docs:e(l({},(Rl=u.parameters)==null?void 0:Rl.docs),{source:l({originalSource:"() => navIndicatorsExampleHtml"},(Sl=(jl=u.parameters)==null?void 0:jl.docs)==null?void 0:Sl.source)})});var Wl,Il,zl;F.parameters=e(l({},F.parameters),{docs:e(l({},(Wl=F.parameters)==null?void 0:Wl.docs),{source:l({originalSource:"() => responsiveTableExampleHtml"},(zl=(Il=F.parameters)==null?void 0:Il.docs)==null?void 0:zl.source)})});var Ml,Pl,Ul;x.parameters=e(l({},x.parameters),{docs:e(l({},(Ml=x.parameters)==null?void 0:Ml.docs),{source:l({originalSource:"() => responsiveTablePopInModeExampleHtml"},(Ul=(Pl=x.parameters)==null?void 0:Pl.docs)==null?void 0:Ul.source)})});var Ol,Bl,Dl;L.parameters=e(l({},L.parameters),{docs:e(l({},(Ol=L.parameters)==null?void 0:Ol.docs),{source:l({originalSource:"() => gridTableExampleHtml"},(Dl=(Bl=L.parameters)==null?void 0:Bl.docs)==null?void 0:Dl.source)})});var Gl,Vl,ql;v.parameters=e(l({},v.parameters),{docs:e(l({},(Gl=v.parameters)==null?void 0:Gl.docs),{source:l({originalSource:"() => noDataTableExampleHtml"},(ql=(Vl=v.parameters)==null?void 0:Vl.docs)==null?void 0:ql.source)})});var Yl,Kl,Jl;g.parameters=e(l({},g.parameters),{docs:e(l({},(Yl=g.parameters)==null?void 0:Yl.docs),{source:l({originalSource:"() => groupRowsInTableExampleHtml"},(Jl=(Kl=g.parameters)==null?void 0:Kl.docs)==null?void 0:Jl.source)})});var Ql,Xl,Zl;w.parameters=e(l({},w.parameters),{docs:e(l({},(Ql=w.parameters)==null?void 0:Ql.docs),{source:l({originalSource:"() => treeRowsTableExampleHtml"},(Zl=(Xl=w.parameters)==null?void 0:Xl.docs)==null?void 0:Zl.source)})});const $e=["Primary","Borderless","Borderlessbody","NoOuterBorder","Footer","CondensedFooter","Interactive","SemanticRows","FocusableRows","FocusableCells","Checkbox","CondensedCheckbox","Pagination","AdvancedToolbar","ContextualMenu","MenuHeader","FixColumnHeader","NavIcon","NavIndicators","ResponsiveTable","ResponsiveTablePopInMode","GridTable","NoDataTable","GroupRowsInTable","TreeRowsTable"];export{r as AdvancedToolbar,y as Borderless,d as Borderlessbody,T as Checkbox,b as CondensedCheckbox,c as CondensedFooter,f as ContextualMenu,m as FixColumnHeader,i as FocusableCells,_ as FocusableRows,N as Footer,L as GridTable,g as GroupRowsInTable,H as Interactive,p as MenuHeader,h as NavIcon,u as NavIndicators,v as NoDataTable,n as NoOuterBorder,C as Pagination,k as Primary,F as ResponsiveTable,x as ResponsiveTablePopInMode,o as SemanticRows,w as TreeRowsTable,$e as __namedExportsOrder,Ze as default};
+    `}}};var R,j,S;w.parameters=l(e({},w.parameters),{docs:l(e({},(R=w.parameters)==null?void 0:R.docs),{source:e({originalSource:"() => primaryExampleHtml"},(S=(j=w.parameters)==null?void 0:j.docs)==null?void 0:S.source)})});var W,I,z;y.parameters=l(e({},y.parameters),{docs:l(e({},(W=y.parameters)==null?void 0:W.docs),{source:e({originalSource:"() => borderlessExampleHtml"},(z=(I=y.parameters)==null?void 0:I.docs)==null?void 0:z.source)})});var M,P,U;d.parameters=l(e({},d.parameters),{docs:l(e({},(M=d.parameters)==null?void 0:M.docs),{source:e({originalSource:"() => borderlessbodyExampleHtml"},(U=(P=d.parameters)==null?void 0:P.docs)==null?void 0:U.source)})});var O,B,D;n.parameters=l(e({},n.parameters),{docs:l(e({},(O=n.parameters)==null?void 0:O.docs),{source:e({originalSource:"() => noOuterBorderExampleHtml"},(D=(B=n.parameters)==null?void 0:B.docs)==null?void 0:D.source)})});var G,V,q;N.parameters=l(e({},N.parameters),{docs:l(e({},(G=N.parameters)==null?void 0:G.docs),{source:e({originalSource:"() => footerExampleHtml"},(q=(V=N.parameters)==null?void 0:V.docs)==null?void 0:q.source)})});var Y,K,J;c.parameters=l(e({},c.parameters),{docs:l(e({},(Y=c.parameters)==null?void 0:Y.docs),{source:e({originalSource:"() => condensedFooterExampleHtml"},(J=(K=c.parameters)==null?void 0:K.docs)==null?void 0:J.source)})});var Q,X,Z;H.parameters=l(e({},H.parameters),{docs:l(e({},(Q=H.parameters)==null?void 0:Q.docs),{source:e({originalSource:"() => interactiveExampleHtml"},(Z=(X=H.parameters)==null?void 0:X.docs)==null?void 0:Z.source)})});var $,ee,le;o.parameters=l(e({},o.parameters),{docs:l(e({},($=o.parameters)==null?void 0:$.docs),{source:e({originalSource:"() => semanticRowsExampleHtml"},(le=(ee=o.parameters)==null?void 0:ee.docs)==null?void 0:le.source)})});var ae,te,se;_.parameters=l(e({},_.parameters),{docs:l(e({},(ae=_.parameters)==null?void 0:ae.docs),{source:e({originalSource:"() => focusableRowsExampleHtml"},(se=(te=_.parameters)==null?void 0:te.docs)==null?void 0:se.source)})});var de,ne,ce;i.parameters=l(e({},i.parameters),{docs:l(e({},(de=i.parameters)==null?void 0:de.docs),{source:e({originalSource:"() => focusableCellsExampleHtml"},(ce=(ne=i.parameters)==null?void 0:ne.docs)==null?void 0:ce.source)})});var oe,_e,ie;T.parameters=l(e({},T.parameters),{docs:l(e({},(oe=T.parameters)==null?void 0:oe.docs),{source:e({originalSource:"() => checkboxExampleHtml"},(ie=(_e=T.parameters)==null?void 0:_e.docs)==null?void 0:ie.source)})});var re,be,fe;r.parameters=l(e({},r.parameters),{docs:l(e({},(re=r.parameters)==null?void 0:re.docs),{source:e({originalSource:"() => condensedCheckboxExampleHtml"},(fe=(be=r.parameters)==null?void 0:be.docs)==null?void 0:fe.source)})});var pe,me,he;C.parameters=l(e({},C.parameters),{docs:l(e({},(pe=C.parameters)==null?void 0:pe.docs),{source:e({originalSource:"() => paginationExampleHtml"},(he=(me=C.parameters)==null?void 0:me.docs)==null?void 0:he.source)})});var ue,xe,ve;b.parameters=l(e({},b.parameters),{docs:l(e({},(ue=b.parameters)==null?void 0:ue.docs),{source:e({originalSource:"() => advancedToolbarExampleHtml"},(ve=(xe=b.parameters)==null?void 0:xe.docs)==null?void 0:ve.source)})});var ke,ge,we;f.parameters=l(e({},f.parameters),{docs:l(e({},(ke=f.parameters)==null?void 0:ke.docs),{source:e({originalSource:"() => contextualMenuExampleHtml"},(we=(ge=f.parameters)==null?void 0:ge.docs)==null?void 0:we.source)})});var ye,Ne,He;p.parameters=l(e({},p.parameters),{docs:l(e({},(ye=p.parameters)==null?void 0:ye.docs),{source:e({originalSource:"() => menuHeaderExampleHtml"},(He=(Ne=p.parameters)==null?void 0:Ne.docs)==null?void 0:He.source)})});var Te,Ce,Fe;m.parameters=l(e({},m.parameters),{docs:l(e({},(Te=m.parameters)==null?void 0:Te.docs),{source:e({originalSource:"() => fixColumnHeaderExampleHtml"},(Fe=(Ce=m.parameters)==null?void 0:Ce.docs)==null?void 0:Fe.source)})});var Le,Ee,Ae;h.parameters=l(e({},h.parameters),{docs:l(e({},(Le=h.parameters)==null?void 0:Le.docs),{source:e({originalSource:"() => navIconExampleHtml"},(Ae=(Ee=h.parameters)==null?void 0:Ee.docs)==null?void 0:Ae.source)})});var Re,je,Se;u.parameters=l(e({},u.parameters),{docs:l(e({},(Re=u.parameters)==null?void 0:Re.docs),{source:e({originalSource:"() => navIndicatorsExampleHtml"},(Se=(je=u.parameters)==null?void 0:je.docs)==null?void 0:Se.source)})});var We,Ie,ze;F.parameters=l(e({},F.parameters),{docs:l(e({},(We=F.parameters)==null?void 0:We.docs),{source:e({originalSource:"() => responsiveTableExampleHtml"},(ze=(Ie=F.parameters)==null?void 0:Ie.docs)==null?void 0:ze.source)})});var Me,Pe,Ue;x.parameters=l(e({},x.parameters),{docs:l(e({},(Me=x.parameters)==null?void 0:Me.docs),{source:e({originalSource:"() => responsiveTablePopInModeExampleHtml"},(Ue=(Pe=x.parameters)==null?void 0:Pe.docs)==null?void 0:Ue.source)})});var Oe,Be,De;L.parameters=l(e({},L.parameters),{docs:l(e({},(Oe=L.parameters)==null?void 0:Oe.docs),{source:e({originalSource:"() => gridTableExampleHtml"},(De=(Be=L.parameters)==null?void 0:Be.docs)==null?void 0:De.source)})});var Ge,Ve,qe;v.parameters=l(e({},v.parameters),{docs:l(e({},(Ge=v.parameters)==null?void 0:Ge.docs),{source:e({originalSource:"() => noDataTableExampleHtml"},(qe=(Ve=v.parameters)==null?void 0:Ve.docs)==null?void 0:qe.source)})});var Ye,Ke,Je;k.parameters=l(e({},k.parameters),{docs:l(e({},(Ye=k.parameters)==null?void 0:Ye.docs),{source:e({originalSource:"() => groupRowsInTableExampleHtml"},(Je=(Ke=k.parameters)==null?void 0:Ke.docs)==null?void 0:Je.source)})});var Qe,Xe,Ze;g.parameters=l(e({},g.parameters),{docs:l(e({},(Qe=g.parameters)==null?void 0:Qe.docs),{source:e({originalSource:"() => treeRowsTableExampleHtml"},(Ze=(Xe=g.parameters)==null?void 0:Xe.docs)==null?void 0:Ze.source)})});const $l=["Primary","Borderless","Borderlessbody","NoOuterBorder","Footer","CondensedFooter","Interactive","SemanticRows","FocusableRows","FocusableCells","Checkbox","CondensedCheckbox","Pagination","AdvancedToolbar","ContextualMenu","MenuHeader","FixColumnHeader","NavIcon","NavIndicators","ResponsiveTable","ResponsiveTablePopInMode","GridTable","NoDataTable","GroupRowsInTable","TreeRowsTable"];export{b as AdvancedToolbar,y as Borderless,d as Borderlessbody,T as Checkbox,r as CondensedCheckbox,c as CondensedFooter,f as ContextualMenu,m as FixColumnHeader,i as FocusableCells,_ as FocusableRows,N as Footer,L as GridTable,k as GroupRowsInTable,H as Interactive,p as MenuHeader,h as NavIcon,u as NavIndicators,v as NoDataTable,n as NoOuterBorder,C as Pagination,w as Primary,F as ResponsiveTable,x as ResponsiveTablePopInMode,o as SemanticRows,g as TreeRowsTable,$l as __namedExportsOrder,Zl as default};

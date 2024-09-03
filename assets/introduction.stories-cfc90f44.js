@@ -1,17 +1,16 @@
-var h=Object.defineProperty,u=Object.defineProperties;var f=Object.getOwnPropertyDescriptors;var i=Object.getOwnPropertySymbols;var d=Object.prototype.hasOwnProperty,p=Object.prototype.propertyIsEnumerable;var r=(t,n,e)=>n in t?h(t,n,{enumerable:!0,configurable:!0,writable:!0,value:e}):t[n]=e,s=(t,n)=>{for(var e in n||(n={}))d.call(n,e)&&r(t,e,n[e]);if(i)for(var e of i(n))p.call(n,e)&&r(t,e,n[e]);return t},o=(t,n)=>u(t,f(n));import{ah as g}from"./chunk-HLWAVYOI-fb26ef34.js";import{f as b}from"./IntroductionPage-4649cb1c.js";import{R as y}from"./IntroductionPageWrapper-19cb159a.js";import"./iframe-0903e1e0.js";import"../sb-preview/runtime.js";import"./_commonjsHelpers-187a63f9.js";import"./index-1b441bc2.js";import"./index-2e71baa1.js";import"./index-356e4a49.js";/* empty css                   */import"./toNumber-8e65c836.js";const w=`# Fundamental Library Styles
+var h=Object.defineProperty,u=Object.defineProperties;var d=Object.getOwnPropertyDescriptors;var i=Object.getOwnPropertySymbols;var f=Object.prototype.hasOwnProperty,p=Object.prototype.propertyIsEnumerable;var r=(t,e,n)=>e in t?h(t,e,{enumerable:!0,configurable:!0,writable:!0,value:n}):t[e]=n,s=(t,e)=>{for(var n in e||(e={}))f.call(e,n)&&r(t,n,e[n]);if(i)for(var n of i(e))p.call(e,n)&&r(t,n,e[n]);return t},o=(t,e)=>u(t,d(e));import{f as g}from"./IntroductionPage-4f4728a8.js";import{ah as b}from"./chunk-HLWAVYOI-2556a0bf.js";import{R as y}from"./IntroductionPageWrapper-6e4156d2.js";/* empty css                   */import"./_commonjsHelpers-187a63f9.js";import"./toNumber-b5f284f3.js";import"./iframe-fdcd0e6a.js";import"../sb-preview/runtime.js";import"./index-1b441bc2.js";import"./index-2e71baa1.js";import"./index-356e4a49.js";const w=`# Fundamental Library Styles
 
 <a href="https://badge.fury.io/js/fundamental-styles"><img src="https://badge.fury.io/js/fundamental-styles.svg" alt="NPM Version"/></a>
 <img src="https://github.com/SAP/fundamental-styles/actions/workflows/create-release.yml/badge.svg?branch=main" alt="CI Status"/>
 <img src="https://img.shields.io/npm/dm/fundamental-styles?label=npm%20downloads" alt="NPM Downloads">
 <a href="https://join.slack.com/t/ui-fundamentals/shared_invite/enQtNTIzOTU0Mzc2NTc5LWQzZWI5MWFhYjE5OTc4YzliN2JhOTc1ZjQxZTg1YjZiMWZiYzRkNjMwYzgyMmFkYmNhZDVjMWE5MDIzOWEzMmM">
-    <img src="https://img.shields.io/badge/slack-ui--fundamentals-blue.svg?logo=slack" alt="Slack">
+<img src="https://img.shields.io/badge/slack-ui--fundamentals-blue.svg?logo=slack" alt="Slack">
 </a>
 <a href="https://api.reuse.software/info/github.com/SAP/fundamental-styles">
     <img src="https://api.reuse.software/badge/github.com/SAP/fundamental-styles" alt="REUSE status">
 </a>
-
 <a href="https://storybook.js.org/">
-    <img src="https://raw.githubusercontent.com/storybookjs/brand/main/badge/badge-storybook.svg" alt="StorybookJS" />
+    <img src="https://raw.githubusercontent.com/storybookjs/brand/main/badge/badge-storybook.svg" alt="StorybookJS"/>
 </a>
 
 <a href="https://www.netlify.com">
@@ -20,11 +19,9 @@ var h=Object.defineProperty,u=Object.defineProperties;var f=Object.getOwnPropert
 
 ## What is Fundamental Library Styles?
 
-Fundamental Library Styles is a light-weight presentation layer that can be used with developers' UI framework of
-choice (e.g.Angular, React, Vue, etc.). Developers can build consistent Fiori apps in any web-based technology, by
-combining Fundamental Styles, library of stylesheets and HTML tags.
+Fundamental Library Styles is a lightweight presentation layer that can be used in conjunction with any UI framework, such as Angular, React, Vue, etc. By utilizing the Fundamental Styles library, which includes a collection of stylesheets and HTML tags, developers can create visually consistent and professional-looking Fiori applications in any web-based technology of their choice.
 
-**Learn more at http://sap.github.io/fundamental-styles/**
+
 
 We are also working on [Angular](https://github.com/SAP/fundamental-ngx)
 , [React](https://github.com/SAP/fundamental-react) and [Vue](https://github.com/SAP/fundamental-vue) implementations.
@@ -96,7 +93,7 @@ list of icon class names. See Project Configuration below for instructions to in
 ### Project Configuration
 
 This project does not contain fonts and icons - they must be added to your project separately. Download the @sap-theming
-library. After adding fonts and icons to your project, include the following in your CSS:
+library. After adding fonts and icons to your project, include the following in your CSS(The icon font files have different design for Fiori 3 themes and they can be found in the folder \`@sap-theming/theming-base-content/content/Base/baseLib/baseTheme/fonts/\`):
 
 \`\`\`css
 @font-face {
@@ -228,13 +225,23 @@ The following circumstances will NOT be considered a MAJOR or BREAKING change:
 * Introducing new classnames, CSS variables, color names, color groups, spacing parameters
 * Adding or modifying CSS properties and values of existing classnames.
 
+## Fundamental Library GitHub Repository
+
+The Fundamental Library GitHub Repository is a monorepo package that allows the reusage of other packages while keeping them isolated from one another. The Fundamental Library GitHub Repository consist of:
+
+[Customer Experience Package](https://github.com/SAP/fundamental-styles/tree/main/packages/cx)
+[Fundamental Library Next Package](https://github.com/SAP/fundamental-styles/tree/main/packages/fn)
+[Common Css](https://github.com/SAP/fundamental-styles/tree/main/packages/common-css)
+[Styles Package](https://github.com/SAP/fundamental-styles/tree/main/packages/styles)
+
+
 ## Thanks
 
 <a href="https://www.chromatic.com/"><img src="https://user-images.githubusercontent.com/321738/84662277-e3db4f80-af1b-11ea-88f5-91d67a5e59f6.png" width="153" height="30" alt="Chromatic" /></a>
 
 Thanks to [Chromatic](https://www.chromatic.com/) for providing the visual testing platform that helps us review UI
 changes and catch visual regressions.
-`,j={title:"Introduction",component:()=>null,parameters:{docs:{container:g,page:y(w),theme:b},previewTabs:{canvas:{hidden:!0}},viewMode:"docs",visualDisabled:!0,docsOnly:!0}},a={render:()=>"<div></div>",parameters:{storyshots:{disable:!0},docsOnly:!0}};var l,c,m;a.parameters=o(s({},a.parameters),{docs:o(s({},(l=a.parameters)==null?void 0:l.docs),{source:s({originalSource:`{
+`,R={title:"Docs / Introduction",component:()=>null,parameters:{docs:{container:b,page:y(w),theme:g},previewTabs:{canvas:{hidden:!0}},viewMode:"docs",visualDisabled:!0,docsOnly:!0}},a={render:()=>"<div></div>",parameters:{title:"Overview",storyshots:{disable:!0},viewMode:"docs",docsOnly:!0}};var l,c,m;a.parameters=o(s({},a.parameters),{docs:o(s({},(l=a.parameters)==null?void 0:l.docs),{source:s({originalSource:`{
   render: () => {
     /*
       this will serve as default redirect to the docs page,
@@ -244,9 +251,11 @@ changes and catch visual regressions.
     return '<div></div>';
   },
   parameters: {
+    title: 'Overview',
     storyshots: {
       disable: true
     },
+    viewMode: 'docs',
     docsOnly: true
   }
-}`},(m=(c=a.parameters)==null?void 0:c.docs)==null?void 0:m.source)})});const F=["Styles"];export{a as Styles,F as __namedExportsOrder,j as default};
+}`},(m=(c=a.parameters)==null?void 0:c.docs)==null?void 0:m.source)})});const j=["Overview"];export{a as Overview,j as __namedExportsOrder,R as default};

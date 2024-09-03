@@ -1,4 +1,4 @@
-var T=Object.defineProperty,D=Object.defineProperties;var q=Object.getOwnPropertyDescriptors;var c=Object.getOwnPropertySymbols;var G=Object.prototype.hasOwnProperty,A=Object.prototype.propertyIsEnumerable;var p=(d,n,e)=>n in d?T(d,n,{enumerable:!0,configurable:!0,writable:!0,value:e}):d[n]=e,a=(d,n)=>{for(var e in n||(n={}))G.call(n,e)&&p(d,e,n[e]);if(c)for(var e of c(n))A.call(n,e)&&p(d,e,n[e]);return d},r=(d,n)=>D(d,q(n));/* empty css               *//* empty css             *//* empty css               *//* empty css                *//* empty css            *//* empty css                    *//* empty css              *//* empty css                   *//* empty css             *//* empty css                         *//* empty css                   *//* empty css                  *//* empty css                   *//* empty css              */const L=`<div style="min-height: 300px;">
+var D=Object.defineProperty,L=Object.defineProperties;var T=Object.getOwnPropertyDescriptors;var c=Object.getOwnPropertySymbols;var q=Object.prototype.hasOwnProperty,G=Object.prototype.propertyIsEnumerable;var f=(t,r,e)=>r in t?D(t,r,{enumerable:!0,configurable:!0,writable:!0,value:e}):t[r]=e,a=(t,r)=>{for(var e in r||(r={}))q.call(r,e)&&f(t,e,r[e]);if(c)for(var e of c(r))G.call(r,e)&&f(t,e,r[e]);return t},n=(t,r)=>L(t,T(r));/* empty css               *//* empty css             *//* empty css               *//* empty css                *//* empty css            *//* empty css                    *//* empty css              *//* empty css                   *//* empty css             *//* empty css                         *//* empty css                   *//* empty css                  *//* empty css                   *//* empty css              */const A=`<div style="min-height: 300px;">
     <div class="fd-avatar-group fd-avatar-group--individual-type fd-avatar-group--sm">
         <div class="fd-popover">
             <div class="fd-popover__control">
@@ -223,7 +223,7 @@ var T=Object.defineProperty,D=Object.defineProperties;var q=Object.getOwnPropert
         </div>
     </div>
 </div>
-`,P=`<div style="min-height: 400px;">
+`,z=`<div style="min-height: 400px;">
     <div><b>Regular</b></div><br>
     <div class="fd-popover">
         <div class="fd-popover__control fd-avatar-group__popover-control"
@@ -529,128 +529,389 @@ var T=Object.defineProperty,D=Object.defineProperties;var q=Object.getOwnPropert
             </div>
         </div>
     </div>
-</div>`,z=`<div class="is-cozy"> 
-    
-    <div dir="ltr">
-        <div style="min-height: 400px;">
-        <div class="fd-popover">
-            <div class="fd-popover__control fd-avatar-group__popover-control"
-                role="button"
-                tabindex="0"
-                aria-label="Has popup type dialog Conjoined avatars, 6 avatars displayed, 8 avatars hidden, activate for complete list"
-                aria-haspopup="true"
-                aria-expanded="false"
-                onclick="onPopoverClick('popover_avatar-group_tztuj-v');">
-                <div class="fd-avatar-group fd-avatar-group--group-type fd-avatar-group--lg fd-avatar-group--vertical ">
-                    <span 
-                        class="fd-avatar fd-avatar--lg fd-avatar--circle fd-avatar--border" 
-                        role="img" 
-                        aria-label="Wendy Wallace" 
-                        title="Wendy Wallace">WW
-                    </span>
-                    
-                    <span 
-                        class="fd-avatar fd-avatar--lg fd-avatar--circle fd-avatar--border" 
-                        role="img" 
-                        aria-label="Simon Dane" 
-                        title="Simon Dane">
-                            <i class="fd-avatar__icon sap-icon--person-placeholder" role="presentation" aria-hidden="true"></i>
-                    </span>
-                    
-                    <span 
-                        class="fd-avatar fd-avatar--lg fd-avatar--circle fd-avatar--border fd-avatar--thumbnail" style="background-image: url('/assets/images/portraits/L_80x80_M1.png')" 
-                        role="img" 
-                        alt="Michael Smith" 
-                        title="Michael Smith">
-                    </span>
-                    
-                    <span 
-                        class="fd-avatar fd-avatar--lg fd-avatar--circle fd-avatar--border" 
-                        role="img" 
-                        aria-label="Endy Wallace" 
-                        title="Endy Wallace">EW
-                    </span>
-                    
-                    <span 
-                        class="fd-avatar fd-avatar--lg fd-avatar--circle fd-avatar--border" 
-                        role="img" 
-                        aria-label="Whitney Copper" 
-                        title="Whitney Copper">
-                            <i class="fd-avatar__icon sap-icon--person-placeholder" role="presentation" aria-hidden="true"></i>
-                    </span>
-                    
-                    <span 
-                        class="fd-avatar fd-avatar--lg fd-avatar--circle fd-avatar--border fd-avatar--thumbnail" 
-                        style="background-image: url('/assets/images/portraits/L_80x80_M2.png')" 
-                        role="img" 
-                        alt="James Johnson" 
-                        title="James Johnson">
-                    </span>
-    
-                    <span 
-                        class="fd-avatar fd-avatar--lg fd-avatar--circle fd-avatar--overflow" 
-                        role="button" 
-                        tabindex="-1">+8
-                    </span>
-                </div>
+</div>`,P=`<div style="min-height: 400px;">
+    <div class="fd-popover">
+        <div class="fd-popover__control fd-avatar-group__popover-control"
+            role="button"
+            tabindex="0"
+            aria-label="Has popup type dialog Conjoined avatars, 6 avatars displayed, 8 avatars hidden, activate for complete list"
+            aria-haspopup="true"
+            aria-expanded="false"
+            onclick="onPopoverClick('popover_avatar-group_tztuj-v');">
+            <div class="fd-avatar-group fd-avatar-group--group-type fd-avatar-group--lg fd-avatar-group--vertical ">
+                <span 
+                    class="fd-avatar fd-avatar--lg fd-avatar--circle fd-avatar--border" 
+                    role="img" 
+                    aria-label="Wendy Wallace" 
+                    title="Wendy Wallace">WW
+                </span>
+                
+                <span 
+                    class="fd-avatar fd-avatar--lg fd-avatar--circle fd-avatar--border" 
+                    role="img" 
+                    aria-label="Simon Dane" 
+                    title="Simon Dane">
+                        <i class="fd-avatar__icon sap-icon--person-placeholder" role="presentation" aria-hidden="true"></i>
+                </span>
+                
+                <span 
+                    class="fd-avatar fd-avatar--lg fd-avatar--circle fd-avatar--border fd-avatar--thumbnail" style="background-image: url('/assets/images/portraits/L_80x80_M1.png')" 
+                    role="img" 
+                    alt="Michael Smith" 
+                    title="Michael Smith">
+                </span>
+                
+                <span 
+                    class="fd-avatar fd-avatar--lg fd-avatar--circle fd-avatar--border" 
+                    role="img" 
+                    aria-label="Endy Wallace" 
+                    title="Endy Wallace">EW
+                </span>
+                
+                <span 
+                    class="fd-avatar fd-avatar--lg fd-avatar--circle fd-avatar--border" 
+                    role="img" 
+                    aria-label="Whitney Copper" 
+                    title="Whitney Copper">
+                        <i class="fd-avatar__icon sap-icon--person-placeholder" role="presentation" aria-hidden="true"></i>
+                </span>
+                
+                <span 
+                    class="fd-avatar fd-avatar--lg fd-avatar--circle fd-avatar--border fd-avatar--thumbnail" 
+                    style="background-image: url('/assets/images/portraits/L_80x80_M2.png')" 
+                    role="img" 
+                    alt="James Johnson" 
+                    title="James Johnson">
+                </span>
+
+                <span 
+                    class="fd-avatar fd-avatar--lg fd-avatar--circle fd-avatar--overflow" 
+                    role="button" 
+                    tabindex="-1">+8
+                </span>
             </div>
-    
-            <div class="fd-popover__body fd-popover__body--after fd-popover__body--arrow-left" aria-hidden="true" id="popover_avatar-group_tztuj-v" style="width: 332px;">
-                <div class="fd-popover__wrapper" style="max-height: 200px; overflow-x: hidden">
-                    <div class="fd-popover__body-header">
-                        <div class="fd-bar fd-bar--header">
-                            <div class="fd-bar__middle">
-                                <div class="fd-bar__element">Team Members (14)</div>
-                            </div>
+        </div>
+
+        <div class="fd-popover__body fd-popover__body--after fd-popover__body--arrow-left" aria-hidden="true" id="popover_avatar-group_tztuj-v" style="width: 332px;">
+            <div class="fd-popover__wrapper" style="max-height: 200px; overflow-x: hidden">
+                <div class="fd-popover__body-header">
+                    <div class="fd-bar fd-bar--header">
+                        <div class="fd-bar__middle">
+                            <div class="fd-bar__element">Team Members (14)</div>
                         </div>
                     </div>
-                    <div class="fd-avatar-group__overflow-body">
-                        <span class="fd-avatar fd-avatar--lg fd-avatar--circle fd-avatar--border" role="img" aria-label="Wendy Wallace" title="Wendy Wallace">WW</span>
-                        
-                        <span class="fd-avatar fd-avatar--lg fd-avatar--circle fd-avatar--border" role="img" aria-label="Sarah Smith" title="Sarah Smith">
-                            <i class="fd-avatar__icon sap-icon--person-placeholder" role="presentation"></i>
-                        </span>
-                        
-                        <span class="fd-avatar fd-avatar--lg fd-avatar--circle fd-avatar--border fd-avatar--thumbnail" style="background-image: url('/assets/images/portraits/L_80x80_M1.png')" role="img" alt="William Smith" title="William Smith"></span>
-    
-                        <span class="fd-avatar fd-avatar--lg fd-avatar--circle fd-avatar--border" role="img" aria-label="Endy Wallace" title="Endy Wallace">EW</span>
-    
-                        <span class="fd-avatar fd-avatar--lg fd-avatar--circle fd-avatar--border" role="img" aria-label="Whitney Bow" title="Whitney Bow">
-                            <i class="fd-avatar__icon sap-icon--person-placeholder" role="presentation"></i>
-                        </span>
-    
-                        <span class="fd-avatar fd-avatar--lg fd-avatar--circle fd-avatar--border fd-avatar--thumbnail" style="background-image: url('/assets/images/portraits/L_80x80_M2.png')" role="img" alt="Mitch Walters" title="Mitch Walters"></span>
-    
-                        <span class="fd-avatar fd-avatar--lg fd-avatar--circle fd-avatar--border" role="img" aria-label="Andy Wallace" title="Andy Wallace">AW</span>
-    
-                        <span class="fd-avatar fd-avatar--lg fd-avatar--circle fd-avatar--border" role="img" aria-label="John Carter" title="John Carter">
-                            <i class="fd-avatar__icon sap-icon--person-placeholder" role="presentation"></i>
-                        </span>
-    
-                        <span class="fd-avatar fd-avatar--lg fd-avatar--circle fd-avatar--border fd-avatar--thumbnail" style="background-image: url('/assets/images/portraits/L_80x80_F3.png')" role="img" alt="Melanie Burke" title="Melanie Burke"></span>
-    
-                        <span class="fd-avatar fd-avatar--lg fd-avatar--circle fd-avatar--border" role="img" aria-label="John Moe" title="John Moe">JM</span>
-    
-                        <span class="fd-avatar fd-avatar--lg fd-avatar--circle fd-avatar--border" role="img" aria-label="Ben Bloggs" title="Ben Bloggs">BB</span>
-    
-                        <span class="fd-avatar fd-avatar--lg fd-avatar--circle fd-avatar--border" role="img" aria-label="Simon Swan" title="Simon Swan">
-                            <i class="fd-avatar__icon sap-icon--person-placeholder" role="presentation"></i>
-                        </span>
-    
-                        <span class="fd-avatar fd-avatar--lg fd-avatar--circle fd-avatar--border fd-avatar--thumbnail" style="background-image: url('/assets/images/portraits/L_80x80_F4.png')" role="img" alt="Maria Caffrey" title="Maria Caffrey"></span>
-    
-                        <span class="fd-avatar fd-avatar--lg fd-avatar--circle fd-avatar--border" role="img" aria-label="Fred Bloggs" title="Fred Bloggs">FB</span>
-    
-                        <span class="fd-avatar fd-avatar--lg fd-avatar--circle fd-avatar--border" role="img" aria-label="Jan Alleman" title="Jan Alleman">JA</span>
-                    </div>
+                </div>
+                <div class="fd-avatar-group__overflow-body">
+                    <span class="fd-avatar fd-avatar--lg fd-avatar--circle fd-avatar--border" role="img" aria-label="Wendy Wallace" title="Wendy Wallace">WW</span>
+                    
+                    <span class="fd-avatar fd-avatar--lg fd-avatar--circle fd-avatar--border" role="img" aria-label="Sarah Smith" title="Sarah Smith">
+                        <i class="fd-avatar__icon sap-icon--person-placeholder" role="presentation"></i>
+                    </span>
+                    
+                    <span class="fd-avatar fd-avatar--lg fd-avatar--circle fd-avatar--border fd-avatar--thumbnail" style="background-image: url('/assets/images/portraits/L_80x80_M1.png')" role="img" alt="William Smith" title="William Smith"></span>
+
+                    <span class="fd-avatar fd-avatar--lg fd-avatar--circle fd-avatar--border" role="img" aria-label="Endy Wallace" title="Endy Wallace">EW</span>
+
+                    <span class="fd-avatar fd-avatar--lg fd-avatar--circle fd-avatar--border" role="img" aria-label="Whitney Bow" title="Whitney Bow">
+                        <i class="fd-avatar__icon sap-icon--person-placeholder" role="presentation"></i>
+                    </span>
+
+                    <span class="fd-avatar fd-avatar--lg fd-avatar--circle fd-avatar--border fd-avatar--thumbnail" style="background-image: url('/assets/images/portraits/L_80x80_M2.png')" role="img" alt="Mitch Walters" title="Mitch Walters"></span>
+
+                    <span class="fd-avatar fd-avatar--lg fd-avatar--circle fd-avatar--border" role="img" aria-label="Andy Wallace" title="Andy Wallace">AW</span>
+
+                    <span class="fd-avatar fd-avatar--lg fd-avatar--circle fd-avatar--border" role="img" aria-label="John Carter" title="John Carter">
+                        <i class="fd-avatar__icon sap-icon--person-placeholder" role="presentation"></i>
+                    </span>
+
+                    <span class="fd-avatar fd-avatar--lg fd-avatar--circle fd-avatar--border fd-avatar--thumbnail" style="background-image: url('/assets/images/portraits/L_80x80_F3.png')" role="img" alt="Melanie Burke" title="Melanie Burke"></span>
+
+                    <span class="fd-avatar fd-avatar--lg fd-avatar--circle fd-avatar--border" role="img" aria-label="John Moe" title="John Moe">JM</span>
+
+                    <span class="fd-avatar fd-avatar--lg fd-avatar--circle fd-avatar--border" role="img" aria-label="Ben Bloggs" title="Ben Bloggs">BB</span>
+
+                    <span class="fd-avatar fd-avatar--lg fd-avatar--circle fd-avatar--border" role="img" aria-label="Simon Swan" title="Simon Swan">
+                        <i class="fd-avatar__icon sap-icon--person-placeholder" role="presentation"></i>
+                    </span>
+
+                    <span class="fd-avatar fd-avatar--lg fd-avatar--circle fd-avatar--border fd-avatar--thumbnail" style="background-image: url('/assets/images/portraits/L_80x80_F4.png')" role="img" alt="Maria Caffrey" title="Maria Caffrey"></span>
+
+                    <span class="fd-avatar fd-avatar--lg fd-avatar--circle fd-avatar--border" role="img" aria-label="Fred Bloggs" title="Fred Bloggs">FB</span>
+
+                    <span class="fd-avatar fd-avatar--lg fd-avatar--circle fd-avatar--border" role="img" aria-label="Jan Alleman" title="Jan Alleman">JA</span>
                 </div>
             </div>
         </div>
     </div>
+</div>
+
+<div style="display: flex; gap: 3rem;">
+    <div class="fd-avatar-group fd-avatar-group--group-type fd-avatar-group--xs fd-avatar-group--vertical">
+        <span 
+            class="fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--border" 
+            role="img" 
+            aria-label="Wendy Wallace" 
+            title="Wendy Wallace">WW
+        </span>
+        
+        <span 
+            class="fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--border" 
+            role="img" 
+            aria-label="Simon Dane" 
+            title="Simon Dane">
+                <i class="fd-avatar__icon sap-icon--person-placeholder" role="presentation" aria-hidden="true"></i>
+        </span>
+        
+        <span 
+            class="fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--border fd-avatar--thumbnail" style="background-image: url('/assets/images/portraits/L_80x80_M1.png')" 
+            role="img" 
+            alt="Michael Smith" 
+            title="Michael Smith">
+        </span>
+        
+        <span 
+            class="fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--border" 
+            role="img" 
+            aria-label="Endy Wallace" 
+            title="Endy Wallace">EW
+        </span>
+        
+        <span 
+            class="fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--border" 
+            role="img" 
+            aria-label="Whitney Copper" 
+            title="Whitney Copper">
+                <i class="fd-avatar__icon sap-icon--person-placeholder" role="presentation" aria-hidden="true"></i>
+        </span>
+        
+        <span 
+            class="fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--border fd-avatar--thumbnail" 
+            style="background-image: url('/assets/images/portraits/L_80x80_M2.png')" 
+            role="img" 
+            alt="James Johnson" 
+            title="James Johnson">
+        </span>
     
+        <span 
+            class="fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--overflow" 
+            role="button" 
+            tabindex="-1">+8
+        </span>
     </div>
+
+    <div class="fd-avatar-group fd-avatar-group--group-type fd-avatar-group--sm fd-avatar-group--vertical">
+        <span 
+            class="fd-avatar fd-avatar--sm fd-avatar--circle fd-avatar--border" 
+            role="img" 
+            aria-label="Wendy Wallace" 
+            title="Wendy Wallace">WW
+        </span>
+        
+        <span 
+            class="fd-avatar fd-avatar--sm fd-avatar--circle fd-avatar--border" 
+            role="img" 
+            aria-label="Simon Dane" 
+            title="Simon Dane">
+                <i class="fd-avatar__icon sap-icon--person-placeholder" role="presentation" aria-hidden="true"></i>
+        </span>
+        
+        <span 
+            class="fd-avatar fd-avatar--sm fd-avatar--circle fd-avatar--border fd-avatar--thumbnail" style="background-image: url('/assets/images/portraits/L_80x80_M1.png')" 
+            role="img" 
+            alt="Michael Smith" 
+            title="Michael Smith">
+        </span>
+        
+        <span 
+            class="fd-avatar fd-avatar--sm fd-avatar--circle fd-avatar--border" 
+            role="img" 
+            aria-label="Endy Wallace" 
+            title="Endy Wallace">EW
+        </span>
+        
+        <span 
+            class="fd-avatar fd-avatar--sm fd-avatar--circle fd-avatar--border" 
+            role="img" 
+            aria-label="Whitney Copper" 
+            title="Whitney Copper">
+                <i class="fd-avatar__icon sap-icon--person-placeholder" role="presentation" aria-hidden="true"></i>
+        </span>
+        
+        <span 
+            class="fd-avatar fd-avatar--sm fd-avatar--circle fd-avatar--border fd-avatar--thumbnail" 
+            style="background-image: url('/assets/images/portraits/L_80x80_M2.png')" 
+            role="img" 
+            alt="James Johnson" 
+            title="James Johnson">
+        </span>
+    
+        <span 
+            class="fd-avatar fd-avatar--sm fd-avatar--circle fd-avatar--overflow" 
+            role="button" 
+            tabindex="-1">+8
+        </span>
     </div>
-`,j=`<div style="min-height: 400px;">
+
+    <div class="fd-avatar-group fd-avatar-group--group-type fd-avatar-group--md fd-avatar-group--vertical">
+        <span 
+            class="fd-avatar fd-avatar--md fd-avatar--circle fd-avatar--border" 
+            role="img" 
+            aria-label="Wendy Wallace" 
+            title="Wendy Wallace">WW
+        </span>
+        
+        <span 
+            class="fd-avatar fd-avatar--md fd-avatar--circle fd-avatar--border" 
+            role="img" 
+            aria-label="Simon Dane" 
+            title="Simon Dane">
+                <i class="fd-avatar__icon sap-icon--person-placeholder" role="presentation" aria-hidden="true"></i>
+        </span>
+        
+        <span 
+            class="fd-avatar fd-avatar--md fd-avatar--circle fd-avatar--border fd-avatar--thumbnail" style="background-image: url('/assets/images/portraits/L_80x80_M1.png')" 
+            role="img" 
+            alt="Michael Smith" 
+            title="Michael Smith">
+        </span>
+        
+        <span 
+            class="fd-avatar fd-avatar--md fd-avatar--circle fd-avatar--border" 
+            role="img" 
+            aria-label="Endy Wallace" 
+            title="Endy Wallace">EW
+        </span>
+        
+        <span 
+            class="fd-avatar fd-avatar--md fd-avatar--circle fd-avatar--border" 
+            role="img" 
+            aria-label="Whitney Copper" 
+            title="Whitney Copper">
+                <i class="fd-avatar__icon sap-icon--person-placeholder" role="presentation" aria-hidden="true"></i>
+        </span>
+        
+        <span 
+            class="fd-avatar fd-avatar--md fd-avatar--circle fd-avatar--border fd-avatar--thumbnail" 
+            style="background-image: url('/assets/images/portraits/L_80x80_M2.png')" 
+            role="img" 
+            alt="James Johnson" 
+            title="James Johnson">
+        </span>
+    
+        <span 
+            class="fd-avatar fd-avatar--md fd-avatar--circle fd-avatar--overflow" 
+            role="button" 
+            tabindex="-1">+8
+        </span>
+    </div>
+
+    <div class="fd-avatar-group fd-avatar-group--group-type fd-avatar-group--lg fd-avatar-group--vertical">
+        <span 
+            class="fd-avatar fd-avatar--lg fd-avatar--circle fd-avatar--border" 
+            role="img" 
+            aria-label="Wendy Wallace" 
+            title="Wendy Wallace">WW
+        </span>
+        
+        <span 
+            class="fd-avatar fd-avatar--lg fd-avatar--circle fd-avatar--border" 
+            role="img" 
+            aria-label="Simon Dane" 
+            title="Simon Dane">
+                <i class="fd-avatar__icon sap-icon--person-placeholder" role="presentation" aria-hidden="true"></i>
+        </span>
+        
+        <span 
+            class="fd-avatar fd-avatar--lg fd-avatar--circle fd-avatar--border fd-avatar--thumbnail" style="background-image: url('/assets/images/portraits/L_80x80_M1.png')" 
+            role="img" 
+            alt="Michael Smith" 
+            title="Michael Smith">
+        </span>
+        
+        <span 
+            class="fd-avatar fd-avatar--lg fd-avatar--circle fd-avatar--border" 
+            role="img" 
+            aria-label="Endy Wallace" 
+            title="Endy Wallace">EW
+        </span>
+        
+        <span 
+            class="fd-avatar fd-avatar--lg fd-avatar--circle fd-avatar--border" 
+            role="img" 
+            aria-label="Whitney Copper" 
+            title="Whitney Copper">
+                <i class="fd-avatar__icon sap-icon--person-placeholder" role="presentation" aria-hidden="true"></i>
+        </span>
+        
+        <span 
+            class="fd-avatar fd-avatar--lg fd-avatar--circle fd-avatar--border fd-avatar--thumbnail" 
+            style="background-image: url('/assets/images/portraits/L_80x80_M2.png')" 
+            role="img" 
+            alt="James Johnson" 
+            title="James Johnson">
+        </span>
+    
+        <span 
+            class="fd-avatar fd-avatar--lg fd-avatar--circle fd-avatar--overflow" 
+            role="button" 
+            tabindex="-1">+8
+        </span>
+    </div>
+
+
+    <div class="fd-avatar-group fd-avatar-group--group-type fd-avatar-group--xl fd-avatar-group--vertical">
+        <span 
+            class="fd-avatar fd-avatar--xl fd-avatar--circle fd-avatar--border" 
+            role="img" 
+            aria-label="Wendy Wallace" 
+            title="Wendy Wallace">WW
+        </span>
+        
+        <span 
+            class="fd-avatar fd-avatar--xl fd-avatar--circle fd-avatar--border" 
+            role="img" 
+            aria-label="Simon Dane" 
+            title="Simon Dane">
+                <i class="fd-avatar__icon sap-icon--person-placeholder" role="presentation" aria-hidden="true"></i>
+        </span>
+        
+        <span 
+            class="fd-avatar fd-avatar--xl fd-avatar--circle fd-avatar--border fd-avatar--thumbnail" style="background-image: url('/assets/images/portraits/L_80x80_M1.png')" 
+            role="img" 
+            alt="Michael Smith" 
+            title="Michael Smith">
+        </span>
+        
+        <span 
+            class="fd-avatar fd-avatar--xl fd-avatar--circle fd-avatar--border" 
+            role="img" 
+            aria-label="Endy Wallace" 
+            title="Endy Wallace">EW
+        </span>
+        
+        <span 
+            class="fd-avatar fd-avatar--xl fd-avatar--circle fd-avatar--border" 
+            role="img" 
+            aria-label="Whitney Copper" 
+            title="Whitney Copper">
+                <i class="fd-avatar__icon sap-icon--person-placeholder" role="presentation" aria-hidden="true"></i>
+        </span>
+        
+        <span 
+            class="fd-avatar fd-avatar--xl fd-avatar--circle fd-avatar--border fd-avatar--thumbnail" 
+            style="background-image: url('/assets/images/portraits/L_80x80_M2.png')" 
+            role="img" 
+            alt="James Johnson" 
+            title="James Johnson">
+        </span>
+    
+        <span 
+            class="fd-avatar fd-avatar--xl fd-avatar--circle fd-avatar--overflow" 
+            role="button" 
+            tabindex="-1">+8
+        </span>
+    </div>
+</div>`,j=`<div style="min-height: 400px;">
     <div class="fd-popover">
         <div class="fd-popover__control fd-avatar-group__popover-control"
             role="button"
@@ -765,7 +1026,281 @@ var T=Object.defineProperty,D=Object.defineProperties;var q=Object.getOwnPropert
         </div>
     </div>
 </div>
-`,F=`<div class="is-compact">
+
+<h4>XS size</h4>
+<div class="fd-avatar-group fd-avatar-group--group-type fd-avatar-group--xs">
+    <span 
+        class="fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--border" 
+        role="img" 
+        aria-label="Wendy Wallace" 
+        title="Wendy Wallace">WW
+    </span>
+    
+    <span 
+        class="fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--border" 
+        role="img" 
+        aria-label="Simon Drew" 
+        title="Simon Drew">
+            <i class="fd-avatar__icon sap-icon--person-placeholder" role="presentation" aria-hidden="true"></i>
+    </span>
+    
+    <span 
+        class="fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--border fd-avatar--thumbnail" style="background-image: url('/assets/images/portraits/L_80x80_M1.png')" 
+        role="img" 
+        alt="Brad Coehn" 
+        title="Brad Coehn">
+    </span>
+    
+    <span 
+        class="fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--border" 
+        role="img" 
+        aria-label="Endy Wallace" 
+        title="Endy Wallace">EW
+    </span>
+    
+    <span 
+        class="fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--border" 
+        role="img" 
+        aria-label="Whitney Copper" 
+        title="Whitney Copper">
+            <i class="fd-avatar__icon sap-icon--person-placeholder" role="presentation" aria-hidden="true"></i>
+    </span>
+    
+    <span 
+        class="fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--border fd-avatar--thumbnail" 
+        style="background-image: url('/assets/images/portraits/L_80x80_M2.png')" 
+        role="img" 
+        alt="John Doe" 
+        title="John Doe">
+    </span>
+
+    <span 
+        class="fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--overflow" 
+        role="button" 
+        tabindex="-1">+8
+    </span>
+</div>
+
+<br>
+<h4>SM size</h4>
+<div class="fd-avatar-group fd-avatar-group--group-type fd-avatar-group--sm">
+    <span 
+        class="fd-avatar fd-avatar--sm fd-avatar--circle fd-avatar--border" 
+        role="img" 
+        aria-label="Wendy Wallace" 
+        title="Wendy Wallace">WW
+    </span>
+    
+    <span 
+        class="fd-avatar fd-avatar--sm fd-avatar--circle fd-avatar--border" 
+        role="img" 
+        aria-label="Simon Drew" 
+        title="Simon Drew">
+            <i class="fd-avatar__icon sap-icon--person-placeholder" role="presentation" aria-hidden="true"></i>
+    </span>
+    
+    <span 
+        class="fd-avatar fd-avatar--sm fd-avatar--circle fd-avatar--border fd-avatar--thumbnail" style="background-image: url('/assets/images/portraits/L_80x80_M1.png')" 
+        role="img" 
+        alt="Brad Coehn" 
+        title="Brad Coehn">
+    </span>
+    
+    <span 
+        class="fd-avatar fd-avatar--sm fd-avatar--circle fd-avatar--border" 
+        role="img" 
+        aria-label="Endy Wallace" 
+        title="Endy Wallace">EW
+    </span>
+    
+    <span 
+        class="fd-avatar fd-avatar--sm fd-avatar--circle fd-avatar--border" 
+        role="img" 
+        aria-label="Whitney Copper" 
+        title="Whitney Copper">
+            <i class="fd-avatar__icon sap-icon--person-placeholder" role="presentation" aria-hidden="true"></i>
+    </span>
+    
+    <span 
+        class="fd-avatar fd-avatar--sm fd-avatar--circle fd-avatar--border fd-avatar--thumbnail" 
+        style="background-image: url('/assets/images/portraits/L_80x80_M2.png')" 
+        role="img" 
+        alt="John Doe" 
+        title="John Doe">
+    </span>
+
+    <span 
+        class="fd-avatar fd-avatar--sm fd-avatar--circle fd-avatar--overflow" 
+        role="button" 
+        tabindex="-1">+8
+    </span>
+</div>
+
+<br>
+<h4>MD size</h4>
+<div class="fd-avatar-group fd-avatar-group--group-type fd-avatar-group--md">
+    <span 
+        class="fd-avatar fd-avatar--md fd-avatar--circle fd-avatar--border" 
+        role="img" 
+        aria-label="Wendy Wallace" 
+        title="Wendy Wallace">WW
+    </span>
+    
+    <span 
+        class="fd-avatar fd-avatar--md fd-avatar--circle fd-avatar--border" 
+        role="img" 
+        aria-label="Simon Drew" 
+        title="Simon Drew">
+            <i class="fd-avatar__icon sap-icon--person-placeholder" role="presentation" aria-hidden="true"></i>
+    </span>
+    
+    <span 
+        class="fd-avatar fd-avatar--md fd-avatar--circle fd-avatar--border fd-avatar--thumbnail" style="background-image: url('/assets/images/portraits/L_80x80_M1.png')" 
+        role="img" 
+        alt="Brad Coehn" 
+        title="Brad Coehn">
+    </span>
+    
+    <span 
+        class="fd-avatar fd-avatar--md fd-avatar--circle fd-avatar--border" 
+        role="img" 
+        aria-label="Endy Wallace" 
+        title="Endy Wallace">EW
+    </span>
+    
+    <span 
+        class="fd-avatar fd-avatar--md fd-avatar--circle fd-avatar--border" 
+        role="img" 
+        aria-label="Whitney Copper" 
+        title="Whitney Copper">
+            <i class="fd-avatar__icon sap-icon--person-placeholder" role="presentation" aria-hidden="true"></i>
+    </span>
+    
+    <span 
+        class="fd-avatar fd-avatar--md fd-avatar--circle fd-avatar--border fd-avatar--thumbnail" 
+        style="background-image: url('/assets/images/portraits/L_80x80_M2.png')" 
+        role="img" 
+        alt="John Doe" 
+        title="John Doe">
+    </span>
+
+    <span 
+        class="fd-avatar fd-avatar--md fd-avatar--circle fd-avatar--overflow" 
+        role="button" 
+        tabindex="-1">+8
+    </span>
+</div>
+
+<br>
+<h4>LG size</h4>
+<div class="fd-avatar-group fd-avatar-group--group-type fd-avatar-group--lg">
+    <span 
+        class="fd-avatar fd-avatar--lg fd-avatar--circle fd-avatar--border" 
+        role="img" 
+        aria-label="Wendy Wallace" 
+        title="Wendy Wallace">WW
+    </span>
+    
+    <span 
+        class="fd-avatar fd-avatar--lg fd-avatar--circle fd-avatar--border" 
+        role="img" 
+        aria-label="Simon Drew" 
+        title="Simon Drew">
+            <i class="fd-avatar__icon sap-icon--person-placeholder" role="presentation" aria-hidden="true"></i>
+    </span>
+    
+    <span 
+        class="fd-avatar fd-avatar--lg fd-avatar--circle fd-avatar--border fd-avatar--thumbnail" style="background-image: url('/assets/images/portraits/L_80x80_M1.png')" 
+        role="img" 
+        alt="Brad Coehn" 
+        title="Brad Coehn">
+    </span>
+    
+    <span 
+        class="fd-avatar fd-avatar--lg fd-avatar--circle fd-avatar--border" 
+        role="img" 
+        aria-label="Endy Wallace" 
+        title="Endy Wallace">EW
+    </span>
+    
+    <span 
+        class="fd-avatar fd-avatar--lg fd-avatar--circle fd-avatar--border" 
+        role="img" 
+        aria-label="Whitney Copper" 
+        title="Whitney Copper">
+            <i class="fd-avatar__icon sap-icon--person-placeholder" role="presentation" aria-hidden="true"></i>
+    </span>
+    
+    <span 
+        class="fd-avatar fd-avatar--lg fd-avatar--circle fd-avatar--border fd-avatar--thumbnail" 
+        style="background-image: url('/assets/images/portraits/L_80x80_M2.png')" 
+        role="img" 
+        alt="John Doe" 
+        title="John Doe">
+    </span>
+
+    <span 
+        class="fd-avatar fd-avatar--lg fd-avatar--circle fd-avatar--overflow" 
+        role="button" 
+        tabindex="-1">+8
+    </span>
+</div>
+
+
+<br>
+<h4>XL size</h4>
+<div class="fd-avatar-group fd-avatar-group--group-type fd-avatar-group--xl">
+    <span 
+        class="fd-avatar fd-avatar--xl fd-avatar--circle fd-avatar--border" 
+        role="img" 
+        aria-label="Wendy Wallace" 
+        title="Wendy Wallace">WW
+    </span>
+    
+    <span 
+        class="fd-avatar fd-avatar--xl fd-avatar--circle fd-avatar--border" 
+        role="img" 
+        aria-label="Simon Drew" 
+        title="Simon Drew">
+            <i class="fd-avatar__icon sap-icon--person-placeholder" role="presentation" aria-hidden="true"></i>
+    </span>
+    
+    <span 
+        class="fd-avatar fd-avatar--xl fd-avatar--circle fd-avatar--border fd-avatar--thumbnail" style="background-image: url('/assets/images/portraits/L_80x80_M1.png')" 
+        role="img" 
+        alt="Brad Coehn" 
+        title="Brad Coehn">
+    </span>
+    
+    <span 
+        class="fd-avatar fd-avatar--xl fd-avatar--circle fd-avatar--border" 
+        role="img" 
+        aria-label="Endy Wallace" 
+        title="Endy Wallace">EW
+    </span>
+    
+    <span 
+        class="fd-avatar fd-avatar--xl fd-avatar--circle fd-avatar--border" 
+        role="img" 
+        aria-label="Whitney Copper" 
+        title="Whitney Copper">
+            <i class="fd-avatar__icon sap-icon--person-placeholder" role="presentation" aria-hidden="true"></i>
+    </span>
+    
+    <span 
+        class="fd-avatar fd-avatar--xl fd-avatar--circle fd-avatar--border fd-avatar--thumbnail" 
+        style="background-image: url('/assets/images/portraits/L_80x80_M2.png')" 
+        role="img" 
+        alt="John Doe" 
+        title="John Doe">
+    </span>
+
+    <span 
+        class="fd-avatar fd-avatar--xl fd-avatar--circle fd-avatar--overflow" 
+        role="button" 
+        tabindex="-1">+8
+    </span>
+</div>`,F=`<div class="is-compact">
     
     <div dir="ltr">
         <div style="min-height: 400px; max-width: 3.25rem;">
@@ -1378,4 +1913,4 @@ The **AvatarGroup** is available in two orientations:
 ##Responsiveness
 The avatar group adapts responsively: when there isn't enough space to show all avatars, an overflow button appears, and some avatars move into the overflow popover. A circular overflow button indicates the precise number of avatars that cannot be displayed on the screen. 
 By default, an overview of all "overflowed" avatars is shown directly within a popover. Customize the content within the popover to align with the specific requirements of your application.
-`,docs:{story:{}},tags:["v1"]}},t=()=>H;t.parameters={docs:{story:{},description:{story:"The Avatar Individual Type component features avatars and an overflow shape, each with its own click area, catering to scenarios where users prioritize detailed information about specific group members. Avatars are displayed adjacent to each other without overlap, making it ideal for smaller groups like project teams.<br>\n      For Individual type add the `fd-avatar-group--individual-type` modifier class to the `fd-avatar-group` base class."}}};const l=()=>F;l.parameters={docs:{story:{},description:{story:"For vertical orientation of the Avatar Group add the `fd-avatar-group--vertical` modifier class to the `fd-avatar-group` base class."}}};const i=()=>j;i.parameters={docs:{story:{},description:{story:"The avatar group type is one single click/tap area. This means that the entire control is the click/tap area. <br>For Group type add the `fd-avatar-group--group-type` modifier class to the `fd-avatar-group` base class."}}};const s=()=>z;s.parameters={docs:{story:{},description:{story:"For vertical orientation of the Avatar Group add the `fd-avatar-group--vertical` modifier class to the `fd-avatar-group` base class."}}};const o=()=>P;o.parameters={docs:{story:{},description:{story:""}}};const v=()=>L;v.parameters={docs:{description:{story:'The overflow Avatar inherits the styling of the secondary regular Button control. Applications can also choose to set the background color to a random or specific color from the Avatar. The span element has a `role="button"` and `fd-avatar--overflow` modifier class. '}}};var f,b,m;t.parameters=r(a({},t.parameters),{docs:r(a({},(f=t.parameters)==null?void 0:f.docs),{source:a({originalSource:"() => individualTypeExampleHtml"},(m=(b=t.parameters)==null?void 0:b.docs)==null?void 0:m.source)})});var u,_,h;l.parameters=r(a({},l.parameters),{docs:r(a({},(u=l.parameters)==null?void 0:u.docs),{source:a({originalSource:"() => individualTypeVerticalExampleHtml"},(h=(_=l.parameters)==null?void 0:_.docs)==null?void 0:h.source)})});var g,y,W;i.parameters=r(a({},i.parameters),{docs:r(a({},(g=i.parameters)==null?void 0:g.docs),{source:a({originalSource:"() => groupTypeExampleHtml"},(W=(y=i.parameters)==null?void 0:y.docs)==null?void 0:W.source)})});var w,x,k;s.parameters=r(a({},s.parameters),{docs:r(a({},(w=s.parameters)==null?void 0:w.docs),{source:a({originalSource:"() => groupTypeVerticalExampleHtml"},(k=(x=s.parameters)==null?void 0:x.docs)==null?void 0:k.source)})});var B,S,C;o.parameters=r(a({},o.parameters),{docs:r(a({},(B=o.parameters)==null?void 0:B.docs),{source:a({originalSource:"() => groupTypeInteractionStatesExampleHtml"},(C=(S=o.parameters)==null?void 0:S.docs)==null?void 0:C.source)})});var M,E,J;v.parameters=r(a({},v.parameters),{docs:r(a({},(M=v.parameters)==null?void 0:M.docs),{source:a({originalSource:"() => overflowExampleHtml"},(J=(E=v.parameters)==null?void 0:E.docs)==null?void 0:J.source)})});const da=["IndividualType","IndividualTypeVertical","GroupType","GroupTypeVertical","GroupTypeInteractionStates","Overflow"];export{i as GroupType,o as GroupTypeInteractionStates,s as GroupTypeVertical,t as IndividualType,l as IndividualTypeVertical,v as Overflow,da as __namedExportsOrder,ea as default};
+`,docs:{story:{}},tags:["v1"]}},d=()=>H;d.parameters={docs:{story:{},description:{story:"The Avatar Individual Type component features avatars and an overflow shape, each with its own click area, catering to scenarios where users prioritize detailed information about specific group members. Avatars are displayed adjacent to each other without overlap, making it ideal for smaller groups like project teams.<br>\n      For Individual type add the `fd-avatar-group--individual-type` modifier class to the `fd-avatar-group` base class."}}};const l=()=>F;l.parameters={docs:{story:{},description:{story:"For vertical orientation of the Avatar Group add the `fd-avatar-group--vertical` modifier class to the `fd-avatar-group` base class."}}};const s=()=>j;s.parameters={docs:{story:{},description:{story:"The avatar group type is one single click/tap area. This means that the entire control is the click/tap area. <br>For Group type add the `fd-avatar-group--group-type` modifier class to the `fd-avatar-group` base class."}}};const i=()=>P;i.parameters={docs:{story:{},description:{story:"For vertical orientation of the Avatar Group add the `fd-avatar-group--vertical` modifier class to the `fd-avatar-group` base class."}}};const o=()=>z;o.parameters={docs:{story:{},description:{story:""}}};const v=()=>A;v.parameters={docs:{description:{story:'The overflow Avatar inherits the styling of the secondary regular Button control. Applications can also choose to set the background color to a random or specific color from the Avatar. The span element has a `role="button"` and `fd-avatar--overflow` modifier class. '}}};var p,m,b;d.parameters=n(a({},d.parameters),{docs:n(a({},(p=d.parameters)==null?void 0:p.docs),{source:a({originalSource:"() => individualTypeExampleHtml"},(b=(m=d.parameters)==null?void 0:m.docs)==null?void 0:b.source)})});var u,g,h;l.parameters=n(a({},l.parameters),{docs:n(a({},(u=l.parameters)==null?void 0:u.docs),{source:a({originalSource:"() => individualTypeVerticalExampleHtml"},(h=(g=l.parameters)==null?void 0:g.docs)==null?void 0:h.source)})});var _,y,W;s.parameters=n(a({},s.parameters),{docs:n(a({},(_=s.parameters)==null?void 0:_.docs),{source:a({originalSource:"() => groupTypeExampleHtml"},(W=(y=s.parameters)==null?void 0:y.docs)==null?void 0:W.source)})});var x,w,k;i.parameters=n(a({},i.parameters),{docs:n(a({},(x=i.parameters)==null?void 0:x.docs),{source:a({originalSource:"() => groupTypeVerticalExampleHtml"},(k=(w=i.parameters)==null?void 0:w.docs)==null?void 0:k.source)})});var S,M,C;o.parameters=n(a({},o.parameters),{docs:n(a({},(S=o.parameters)==null?void 0:S.docs),{source:a({originalSource:"() => groupTypeInteractionStatesExampleHtml"},(C=(M=o.parameters)==null?void 0:M.docs)==null?void 0:C.source)})});var E,B,J;v.parameters=n(a({},v.parameters),{docs:n(a({},(E=v.parameters)==null?void 0:E.docs),{source:a({originalSource:"() => overflowExampleHtml"},(J=(B=v.parameters)==null?void 0:B.docs)==null?void 0:J.source)})});const ta=["IndividualType","IndividualTypeVertical","GroupType","GroupTypeVertical","GroupTypeInteractionStates","Overflow"];export{s as GroupType,o as GroupTypeInteractionStates,i as GroupTypeVertical,d as IndividualType,l as IndividualTypeVertical,v as Overflow,ta as __namedExportsOrder,ea as default};
