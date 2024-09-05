@@ -5,145 +5,176 @@
 $block: #{$fd-namespace}-notification;
 
 .#{$block} {
-  // Notification
-  --fdNotification_Max_Width: 40rem;
-  --fdNotification_Border_Radius: 0.25rem;
-  --fdNotification_Background: var(--sapList_Background);
-  --fdNotification_Box_Shadow: var(--sapContent_Shadow0);
+  --fdNotification_Content_Gap: 0.75rem;
+  --fdNotification_Actions_Offset: -0.25rem;
+  --fdNotification_Title_Font_Weight: normal;
+  --fdNotification_Title_Line_Height: 1.25rem;
+  --fdNotification_Title_One_Button_Offset: 2rem;
+  --fdNotification_Title_Two_Buttons_Offset: 4.375rem;
 
-  // Notification Body
-  --fdNotification_Item_Background: var(--sapList_Background);
-  --fdNotification_Item_Box_Shadow: var(--sapContent_Shadow0);
-  --fdNotification_Item_Border_Radius: 0.25rem;
-  --fdNotification_Item_Max_Width: 40rem;
-  --fdNotification_Item_Paddign_Y: 1rem;
-  --fdNotification_Item_Paddign_Left: 1rem;
-  --fdNotification_Item_Paddign_Right: 0.5rem;
-  --fdNotification_Item_Spacing: 1rem;
+  @mixin notification-states() {
+    --fdNotification_Background: var(--sapList_Background);
+    --fdNotification_Title_Color: var(--sapList_TextColor);
+    --fdNotification_Paragraph_Color: var(--sapList_TextColor);
+    --fdNotification_Separator_Color: var(--sapContent_LabelColor);
+    --fdNotification_Footer_Content_Color: var(--sapContent_LabelColor);
+    --fdNotification_Border_Block_End_Color: var(--sapList_BorderColor);
+    --fdNotification_Border_Block_Start_Color: var(--fdNotification_Border_Top_Color);
+    --fdNotification_Border_Inline_Color: var(--fdNotification_Border_Left_Right_Color);
 
-  // Notification Indicator
-  --fdNotification_Indicator_Color: var(--sapErrorColor);
+    cursor: pointer;
+    position: relative;
+    padding-block: 1rem;
+    border-style: solid;
+    padding-inline: 1rem;
+    border-width: var(--sapList_BorderWidth);
+    background: var(--fdNotification_Background);
+    border-radius: var(--fdNotification_Border_Radius);
+    border-inline-color: var(--fdNotification_Border_Inline_Color);
+    border-block-end-color: var(--fdNotification_Border_Block_End_Color);
+    border-block-start-color: var(--fdNotification_Border_Block_Start_Color);
 
-  // Notification Title
-  --fdNotification_Item_Title_Margin_Bottom: 0.25rem;
-  --fdNotification_Item_Title_Line_Height: 1.25rem;
-  --fdNotification_Item_Title_Color: var(--sapTextColor);
-  --fdNotification_Item_Title_Font_Family: var(--sapFontFamily);
-  --fdNotification_Item_Title_Font_Weight: var(--sapFontHeaderWeight);
-
-  // Notification Paragraph
-  --fdNotification_Item_Paragraph_Font_Size: var(--sapFontSize);
-  --fdNotification_Item_Paragraph_Color: var(--sapTextColor);
-
-  // Notification Footer
-  --fdNotification_Item_Footer_Font_Size: var(--sapFontSize);
-  --fdNotification_Item_Footer_Color: var(--sapTextColor);
-
-  // Notification Group
-  --fdNotification_Group_Item_Border_Color: var(--fdNotification_Group_Item_Border_Color_Normal);
-  --fdNotification_Group_Item_Border_Bottom_Color: var(--fdNotification_Group_Item_Border_Bottom_Color_Normal);
-  --fdNotification_Group_Item_Children_Indicator_Display: none;
-  --fdNotification_Group_Item_Background: var(--sapList_Background);
-
-  // Notification Limit
-  --fdNotification_Limit_Padding_Block: 1rem;
-  --fdNotification_Limit_Padding_Inline: 1rem;
-
-  // Border
-  $fd-notification-border: var(--sapList_BorderWidth) solid var(--sapList_BorderColor);
-
-  @mixin fd-notification-mobile() {
-    .#{$block}__body:last-of-type {
-      border-bottom: none;
-      border-bottom-left-radius: 0;
-      border-bottom-right-radius: 0;
+    @include fd-hover() {
+      --fdNotification_Background: var(--fdNotification_Background_Hover);
+    }
+  
+    @include fd-active() {
+      --fdNotification_Background: var(--fdNotification_Background_Active);
+      --fdNotification_Title_Color: var(--fdNotification_Title_Color_Active);
+      --fdNotification_Paragraph_Color: var(--fdNotification_Paragraph_Color_Active);
+      --fdNotification_Footer_Content_Color: var(--fdNotification_Footer_Content_Color_Active);
+      --fdNotification_Separator_Color: var(--fdNotification_Separator_Color_Active);
+      --fdNotification_Border_Inline_Color: var(--fdNotification_Border_Inline_Color_Active);
+      --fdNotification_Border_Block_Start_Color: var(--fdNotification_Border_Block_Start_Color_Active);
+      --fdNotification_Border_Block_End_Color: var(--fdNotification_Border_Block_End_Color_Active);
+    }
+  
+    @include fd-selected() {
+      --fdNotification_Background: var(--fdNotification_Background_Selected);
+      --fdNotification_Border_Inline_Color: var(--fdNotification_Border_Left_Right_Color_Selected);
+      --fdNotification_Border_Block_Start_Color: var(--fdNotification_Border_Top_Color_Selected);
+      --fdNotification_Border_Block_End_Color: var(--fdNotification_Border_Block_End_Color_Selected);
+  
+      @include fd-hover() {
+        --fdNotification_Background: var(--fdNotification_Background_Selected_Hover);
+      }
+    }
+  
+    @include fd-focus() {
+      outline-offset: -0.25rem;
+      outline: var(--sapContent_FocusWidth) var(--sapContent_FocusStyle) var(--sapContent_FocusColor);
     }
   }
 
   @include fd-reset();
+  @include notification-states();
 
-  width: 100%;
-  max-width: var(--fdNotification_Max_Width);
-  background: var(--fdNotification_Background);
-  box-shadow: var(--fdNotification_Box_Shadow);
-  border-radius: var(--fdNotification_Border_Radius);
+  &:has(.#{$block}__actions):has(button) {
+    .#{$block}__title {
+      padding-inline-end: var(--fdNotification_Title_One_Button_Offset);
+    }
+  }
+
+  &:has(.#{$block}__actions):has(button + button) {
+    .#{$block}__title {
+      padding-inline-end: var(--fdNotification_Title_Two_Buttons_Offset);
+    }
+  }
 
   &__body {
     @include fd-reset();
 
     @include fd-flex() {
-      gap: var(--fdNotification_Item_Spacing);
-    }
-
-    @include fd-set-paddings-y-equal(var(--fdNotification_Item_Paddign_Y));
-    @include fd-set-paddings-x(var(--fdNotification_Item_Paddign_Left), var(--fdNotification_Item_Paddign_Right));
-
-    position: relative;
-    background: var(--fdNotification_Item_Background);
-    border-radius: var(--fdNotification_Item_Border_Radius);
+      gap: 0.75rem;
+    };
   }
 
   &__content {
     @include fd-reset();
 
     @include fd-flex(column) {
-      gap: 0.5rem;
-    }
+      align-items: flex-start;
+      gap: var(--fdNotification_Content_Gap);
+    };
 
     width: 100%;
-    overflow: auto;
   }
 
-  .#{$block}__title {
+  &__header {
+    @include fd-reset();
+
+    @include fd-flex() {
+      gap: 0.25rem;
+    };
+
+    width: 100%;
+
+    & > [class*="sap-icon"] {
+      padding-block-start: 0.125rem;
+    }
+  }
+
+  &__actions {
+    @include fd-reset();
+    @include fd-set-position-right(0);
+
+    @include fd-flex() {
+      gap: 0.125rem;
+    };
+
+    top: 0;
+    position: absolute;
+    padding-block: 0.5rem 0;
+    padding-inline: 0.25rem 0.5rem;
+  }
+
+  &__title {
     @include fd-reset();
     @include fd-line-clamp(2);
 
+    flex: 1;
+    color: var(--sapList_TextColor);
     font-size: var(--sapFontHeader6Size);
-    color: var(--fdNotification_Item_Title_Color);
-    font-weight: var(--fdNotification_Item_Title_Font_Weight);
-    line-height: var(--fdNotification_Item_Title_Line_Height);
-    font-family: var(--fdNotification_Item_Title_Font_Family);
-    margin-block-end: var(--fdNotification_Item_Title_Margin_Bottom);
-    max-height: calc(2 * var(--fdNotification_Item_Title_Line_Height));
-
+    line-height: var(--fdNotification_Title_Line_Height);
+    font-weight: var(--fdNotification_Title_Font_Weight);
+    max-height: calc(2 * var(--fdNotification_Title_Line_Height));
+    
+    
     &--unread {
-      --fdNotification_Item_Title_Font_Weight: bold;
+      --fdNotification_Title_Font_Weight: bold;
     }
   }
 
-  .#{$block}__paragraph {
+  &__paragraph {
     @include fd-reset();
     @include fd-line-clamp(2);
 
     max-height: 2.75rem;
-    color: var(--fdNotification_Item_Paragraph_Color);
-    font-size: var(--fdNotification_Item_Paragraph_Font_Size);
+    font-size: var(--sapFontSize);
+    color: var(--sapList_TextColor);
   }
 
-  .#{$block}__footer {
+  &__footer {
     @include fd-reset();
     @include fd-flex();
+  }
 
-    color: var(--fdNotification_Item_Footer_Color);
+  &__footer-content {
+    @include fd-ellipsis();
 
-    &-content {
-      @include fd-ellipsis();
+    max-width: 50%;
+    color: var(--sapContent_LabelColor);
 
-      max-width: 50%;
-      font-size: var(--fdNotification_Item_Footer_Font_Size);
-
-      &:only-child {
-        max-width: 100%;
-      }
+    &:only-child {
+      max-width: 100%;
     }
   }
 
-  .#{$block}__separator {
+  &__separator {
     @include fd-reset();
 
-    margin-block: 0;
     margin-inline: 0.5rem;
-    font-size: var(--sapFontSize);
+    color: var(--sapContent_LabelColor);
 
     &::before {
       content: '\00b7';
@@ -152,328 +183,161 @@ $block: #{$fd-namespace}-notification;
 
   &__message-container {
     @include fd-reset();
-    @include fd-set-paddings-y(1rem, 0);
-    @include fd-set-paddings-x(1rem, 0.5rem);
+
+    margin-block-end: 1rem;
   }
 
-  &__header {
-    @include fd-reset();
-
-    display: flex;
-  }
-
-  &__actions {
-    @include fd-reset();
-
-    @include fd-flex() {
-      gap: 0.5rem;
-      align-items: flex-start;
-    }
-  }
-
-  &__limit {
-    @include fd-reset();
-
-    text-align: center;
-    padding-block: var(--fdNotification_Limit_Padding_Block);
-    padding-inline: var(--fdNotification_Limit_Padding_Inline);
-
-    &--title {
-      @include fd-reset();
-
-      font-size: var(--sapFontHeader5Size);
-      white-space: break-spaces;
-    }
-
-    &--description {
-      @include fd-reset();
-
-      margin-block: 0.5rem 0;
-      margin-inline: 0;
-      white-space: break-spaces;
-    }
-  }
-
-  &__indicator {
-    @include fd-reset();
-
-    padding-block-start: 0.1875rem;
-    margin-inline-end: 0.5rem;
-    color: var(--fdNotification_Indicator_Color);
-
-    &--error {
-      @include fd-icon('message-error');
-
-      --fdNotification_Indicator_Color: var(--sapErrorColor);
-    }
-
-    &--success {
-      @include fd-icon('message-success');
-
-      --fdNotification_Indicator_Color: var(--sapSuccessColor);
-    }
-
-    &--warning {
-      @include fd-icon('message-warning');
-
-      --fdNotification_Indicator_Color: var(--sapWarningColor);
-    }
-
-    &--information {
-      @include fd-icon('message-information');
-
-      --fdNotification_Indicator_Color: var(--sapInformationColor);
-    }
-  }
-
-  &__unread-indicator {
-    @include fd-reset();
-    @include fd-set-square(0.5rem);
-    @include fd-set-position-right(0.5rem);
-    @include fd-absolute-vertical-center();
-
+  // Banner Notification
+  &--banner {
+    @include fd-set-position-right(2rem);
+    
+    top: 2rem;
     position: absolute;
-    border-radius: 100%;
-    background-color: var(--fdNotification_Unread_Indicator_Background);
+    box-shadow: var(--sapContent_Shadow2);
   }
 
-  &.#{$block}--group {
+  .#{$block}__link {
+    margin-inline-start: 1rem;
+  }
+
+  // Message Strip Container
+  &-message-strip {
     @include fd-reset();
-    @include fd-notification-mobile();
-    @include fd-set-paddings-x-equal(0);
-
-    --fdNotification_Item_Border_Radius: 0;
-
-    overflow: hidden;
-    height: 100%;
-
-    .#{$block}__body {
-      border-bottom: $fd-notification-border;
-    }
-
-    .#{$block}__group-header {
+  
+    padding-block: 0.5rem;
+    padding-inline: 0.5rem;
+  }
+  
+  // Notification List
+  &-list {
+    @include fd-reset();
+  
+    list-style: none;
+  }
+  
+  // Notification Group
+  &-group {
+    @include fd-reset();
+  
+    list-style: none;
+  
+    &__wrapper {
       @include fd-reset();
-      @include fd-set-paddings-y(0.75rem, 0.25rem);
-      @include fd-set-paddings-x(1rem, 0.5rem);
-
-      @include fd-flex() {
-        align-items: baseline;
-      }
-
-      border-bottom: $fd-notification-border;
     }
-  }
+  
+    &__header {
+      @include fd-reset();
 
-  &.#{$block}--padding {
-    padding-block: 0.75rem;
-    padding-inline: 0.75rem;
-  }
-
-  &--mobile {
-    @include fd-notification-mobile();
-
-    padding-inline: 0;
-    padding-block: 0;
-    overflow: hidden;
-
-    .#{$block}__indicator {
-      padding-inline-end: 0.25rem;
-    }
-
-    .#{$block}__group-header {
-      padding-block: 0.5rem 0;
-      padding-inline: 0.5rem;
-    }
-
-    .#{$block}__body {
-      padding-block: 1rem;
-      padding-inline: 0.75rem 0.5rem;
-    }
-
-    .#{$block}__content {
-      margin-inline-start: 0.75rem;
-    }
-  }
-
-  &--in-dialog {
-    box-shadow: none;
-    margin-block-end: 0;
-    border-bottom: $fd-notification-border;
-    border-bottom-left-radius: 0;
-    border-bottom-right-radius: 0;
-
-    &:last-of-type {
-      border-bottom: none;
-    }
-  }
-
-  // BTP NOTIFICATION
-  &--btp {
-    // Notification
-    --fdNotification_Box_Shadow: none;
-    --fdNotification_Border_Radius: var(--sapElement_BorderCornerRadius);
-
-    // Notification Body
-    --fdNotification_Item_Box_Shadow: none;
-    --fdNotification_Item_Spacing: 0.75rem;
-    --fdNotification_Item_Paddign_Y: 0.75rem;
-    --fdNotification_Item_Paddign_Left: 1rem;
-    --fdNotification_Item_Paddign_Right: 1.5rem;
-    --fdNotification_Item_Border_Radius: var(--sapElement_BorderCornerRadius);
-
-    // Notification Paragraph
-    --fdNotification_Item_Paragraph_Font_Size: var(--sapFontSmallSize);
-
-    // Notification Title
-    --fdNotification_Item_Title_Margin_Bottom: 0;
-    --fdNotification_Item_Title_Line_Height: 1.25rem;
-    --fdNotification_Item_Title_Color: var(--sapTitleColor);
-    --fdNotification_Item_Title_Font_Family: var(--sapFontSemiboldFamily);
-
-    // Notification Footer
-    --fdNotification_Item_Footer_Font_Size: var(--sapFontSmallSize);
-
-    // Notification Limit
-    --fdNotification_Limit_Padding_Block: 1.5rem;
-    --fdNotification_Limit_Padding_Inline: 0;
-
-    .#{$block}__body {
+      @include fd-flex-vertical-center() {
+        gap: 0.75rem;
+      };
+  
       cursor: pointer;
-      border: 0.0625rem solid var(--fdNotification_Item_Border_Color);
-
-      @include fd-hover() {
-        --fdNotification_Item_Background: var(--sapList_Hover_Background);
-      }
-
-      @include fd-active() {
-        --fdNotification_Item_Background: var(--sapList_Active_Background);
-        --fdNotification_Item_Title_Color: var(--fdNotification_Item_Title_Color_Active);
-        --fdNotification_Item_Paragraph_Color: var(--fdNotification_Item_Paragraph_Color_Active);
-        --fdNotification_Item_Footer_Color: var(--fdNotification_Item_Footer_Color_Active);
-
-        @include fd-focus() {
-          --fdNotification_Item_Background: var(--sapList_Active_Background);
-
-          outline: none;
-        }
-      }
-
+      padding-inline: 0.5rem;
+      height: var(--sapElement_LineHeight);
+      background: var(--sapList_GroupHeaderBackground);
+      margin-block: var(--fdNotification_Group_Header_Margin_Block);
+      border-block-end: var(--sapList_BorderWidth) solid var(--fdNotification_Group_Header_Border_Bottom_Color);
+  
       @include fd-focus() {
-        --fdNotification_Item_Background: var(--sapList_Background);
-
-        outline: var(--sapContent_FocusStyle) var(--sapContent_FocusWidth) var(--sapContent_FocusColor);
+        outline-offset: -0.25rem;
+        outline: var(--sapContent_FocusWidth) var(--sapContent_FocusStyle) var(--sapContent_FocusColor);
       }
     }
+  
+    &__header-arrow {
+      @include fd-reset();
+      @include fd-inline-flex-center();
+  
+      font-size: 1rem;
+      margin-inline: 0.5rem;
 
-    &.#{$block}--group {
-      --fdNotification_Border_Radius: 0;
-      --fdNotification_Background: transparent;
-      --fdNotification_Item_Border_Radius: var(--sapElement_BorderCornerRadius);
+      [class*="sap-icon"] {
+        @include fd-flex-center();
+        @include fd-set-square(1rem);
 
-      overflow: visible;
-
-      .#{$block}__group-header {
-        @include fd-set-paddings-x-equal(0.75rem);
-        @include fd-set-paddings-y-equal(0.5rem);
-
-        @include fd-flex-vertical-center() {
-          gap: 0.4375rem;
-          justify-content: space-between;
-        }
-
-        @include fd-icon-selector() {
-          @include fd-flex-center();
-
-          color: inherit;
-          width: 0.75rem;
-          height: 0.75rem;
-          font-size: 0.75rem;
-          display: var(--fdNotification_Group_Item_Children_Indicator_Display);
-        }
-
-        height: 2rem;
-        cursor: pointer;
-        min-width: 20rem;
-        max-width: 24rem;
-        margin-block-end: 0.125rem;
-        color: var(--fdNotification_Group_Item_Color);
-        transition: var(--fdNotification_Group_Item_Transition);
-        background: var(--fdNotification_Group_Item_Background);
-        border-radius: var(--fdNotification_Group_Item_Border_Radius);
-        border: 0.0625rem solid var(--fdNotification_Group_Item_Border_Color);
-        border-bottom: 0.0625rem solid var(--fdNotification_Group_Item_Border_Bottom_Color);
-
-        @include fd-hover() {
-          --fdNotification_Group_Item_Children_Indicator_Display: inline-flex;
-          --fdNotification_Group_Item_Background: var(--sapList_Hover_Background);
-          --fdNotification_Group_Item_Border_Color: var(--fdNotification_Group_Item_Border_Color_Hover);
-        }
-
-        @include fd-active() {
-          --fdNotification_Group_Item_Children_Indicator_Display: inline-flex;
-          --fdNotification_Group_Item_Background: var(--sapList_Active_Background);
-          --fdNotification_Group_Item_Border_Color: var(--fdNotification_Group_Item_Border_Color_Active);
-          --fdNotification_Group_Item_Color: var(--fdNotification_Group_Item_Color_Active);
-
-          @include fd-focus() {
-            --fdNotification_Group_Item_Children_Indicator_Display: inline-flex;
-            --fdNotification_Group_Item_Background: var(--sapList_Active_Background);
-            --fdNotification_Group_Item_Border_Color: var(--fdNotification_Group_Item_Border_Color_Active);
-            --fdNotification_Group_Item_Border_Bottom_Color: var(--fdNotification_Group_Item_Border_Color_Active);
-
-            outline: none;
-          }
-        }
-
-        @include fd-focus() {
-          --fdNotification_Group_Item_Background: var(--sapList_Background);
-          --fdNotification_Group_Item_Border_Bottom_Color: transparent;
-          --fdNotification_Group_Item_Border_Color: var(--fdNotification_Group_Item_Border_Color_Focused);
-          --fdNotification_Group_Item_Children_Indicator_Display: inline-flex;
-
-          outline: var(--sapContent_FocusStyle) var(--sapContent_FocusWidth) var(--sapContent_FocusColor);
-        }
-
-        &--collapsed,
-        &.is-collapsed,
-        &.collapsed {
-          --fdNotification_Group_Item_Children_Indicator_Display: inline-flex;
-
-          max-height: 2rem;
-
-          @include fd-icon-selector() {
-            transform: rotate(-90deg);
-
-            @include fd-rtl() {
-              transform: rotate(90deg);
-            }
-          }
-        }
-      }
-
-      .#{$block}__group-header-title {
-        @include fd-reset();
-        @include fd-ellipsis();
-
-        width: 100%;
-        color: inherit;
-        font-size: var(--sapFontSmallSize);
-        font-weight: semibold;
-      }
-
-      .#{$block}__body {
-        margin-block-end: 0.125rem;
-        border: 0.0625rem solid var(--fdNotification_Item_Border_Color);
-
-        &:last-of-type {
-          border-bottom-left-radius: var(--sapElement_BorderCornerRadius);
-          border-bottom-right-radius: var(--sapElement_BorderCornerRadius);
-          margin-block-end: 1.5rem;
-          border-bottom: 0.0625rem solid var(--fdNotification_Item_Border_Color);
-
-          --fdNotification_Item_Border_Radius: var(--sapElement_BorderCornerRadius);
-        }
+        color: var(--sapContent_IconColor);
       }
     }
+  
+    &__header-title {
+      @include fd-reset();
+      @include fd-ellipsis();
+  
+      line-height: 2rem;
+      font-family: var(--sapFontHeaderFamily);
+      color: var(--fdNotification_Group_Header_Title_Color); 
+      font-size: var(--fdNotification_Group_Header_Title_Font_Size);
+      font-weight: var(--fdNotification_Group_Header_Title_Font_Weight);
+    }
+  
+    &__list {
+      @include fd-reset();
+
+      @include fd-flex(column) {
+        gap: var(--fdNotification_Group_List_Gap);
+      };
+  
+      list-style: none;
+      margin-block: var(--fdNotification_Group_List_Margin_Block);
+      margin-inline: var(--fdNotification_Group_List_Margin_Inline);
+    }
+  
+    &__growing-item {
+      @include fd-reset();
+      @include notification-states();
+
+      @include fd-flex(column) {
+        gap: 0.5rem;
+        align-items: center;
+        justify-content: center;
+      };
+  
+      padding-block: 1rem;
+      padding-inline: 1rem;
+      margin-inline: var(--fdNotification_Growing_Item_Margin_Inline);
+      margin-block-end: var(--fdNotification_Growing_Item_Margin_Block_End);
+    }
+  
+    &__growing-item-title {
+      @include fd-reset();
+
+      color: var(--fdNotification_Growing_Item_Title_Color);
+      font-size: var(--fdNotification_Growing_Item_Title_Font_Size);
+      font-family: var(--fdNotification_Growing_Item_Title_Font_Family);
+      font-weight: var(--fdNotification_Growing_Item_Title_Font_Weight);
+    }
+
+    &__growing-item-subtitle {
+      @include fd-reset();
+
+      color: var(--sapContent_LabelColor);
+    }
+  }
+  
+  // Notification Popover
+  &-popover {
+    --fdNotification_Popover_Width: 27rem;
+    --fdNotification_Popover_Max_Width: 27rem;
+  
+    @include fd-reset();
+
+    max-height: 40rem;
+    overflow-y: scroll;
+    width: var(--fdNotification_Popover_Width);
+    max-width: var(--fdNotification_Popover_Max_Width);
+  
+    @include fd-media-sm() {
+      --fdNotification_Popover_Width: auto;
+      --fdNotification_Popover_Max_Width: 25rem;
+    }
+  }
+
+  // Compact Mode
+  @include fd-compact-and-condensed() {
+    --fdNotification_Content_Gap: 0.5rem;
+    --fdNotification_Title_Offset: 4rem;
+    --fdNotification_Title_One_Button_Offset: 2.75rem;
+    --fdNotification_Title_Two_Buttons_Offset: 4.875rem;
   }
 }

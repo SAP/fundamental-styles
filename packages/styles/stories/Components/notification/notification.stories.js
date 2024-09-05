@@ -1,31 +1,24 @@
-import inDialogExampleHtml from "./in-dialog.example.html?raw";
-import mobileExampleHtml from "./mobile.example.html?raw";
 import notificationGroupExampleHtml from "./notification-group.example.html?raw";
-import errorExampleHtml from "./error.example.html?raw";
-import warningExampleHtml from "./warning.example.html?raw";
-import informationExampleHtml from "./information.example.html?raw";
-import noAvatarExampleHtml from "./no-avatar.example.html?raw";
 import primaryExampleHtml from "./primary.example.html?raw";
-import notificationItemBtpHtml from "./notification-item-btp.example.html?raw";
-import notificationGroupHeaderBtpHtml from "./notification-group-header-btp.example.html?raw";
-import notificationGroupBtpHtml from "./notification-group-btp.example.html?raw";
+import bannerExampleHtml from "./banner.example.html?raw";
 
 import '../../../src/button.scss';
 import '../../../src/icon.scss';
 import '../../../src/notification.scss';
-import '../../../src/tabs.scss';
+import '../../../src/toolbar.scss';
 import '../../../src/avatar.scss';
 import '../../../src/popover.scss';
 import '../../../src/menu.scss';
 import '../../../src/message-strip.scss';
-import '../../../src/dialog.scss';
 import '../../../src/bar.scss';
 import '../../../src/title.scss';
+import '../../../src/link.scss';
+import '../../../src/object-status.scss';
 import '../../../src/btp/avatar.scss';
 export default {
   title: 'Components/Notifications',
   parameters: {
-    tags: ['f3', 'a11y', 'theme', 'development'],
+    tags: ['development'],
     description: `
 Notifications are used to relay information to the user about a situation or task that requires their input. They can notice and access the notifications by the bell icon in the shell bar on the top-right of the screen. In the notification popover, they take immediate action, navigate to the source of a specific notification or in the case of a notification group, they can sort the list items in various ways.
 
@@ -39,102 +32,41 @@ Notifications are used to relay information to the user about a situation or tas
   }
 };
 export const Primary = () => primaryExampleHtml;
+Primary.storyName = 'Notification Item';
 Primary.parameters = {
   docs: {
     description: {
-      story: `
-Primary notifications display a container with an avatar, content area with text, as well as an open and close button. To display primary notifications, use the \`fd-notification\` class.
+      story: `Notification items display a container with:
+      <ul>
+        <li><b>Avatar</b> (optional): uses Avatar component, size XS</li>
+        <li><b>Title</b> (required): the title wraps up to two lines and then truncates. For unread title (renders with bold font-weight) use <code>fd-notification__title--unread</code> modifier class.</li>
+        <li><b>Description</b> (optional): the description wraps up to two lines and then truncates.</li>
+        <li><b>Meta</b> (optional): items separated by a span element with class <code>fd-notification__separator</code>. Items truncate if there's not enough space. In case Title or Description truncates in an ellipsis, the meta is followed by the text <b>Expansion Trigger</b> ("More" / "Less"). </li>
+        <li><b>Priority Indicator</b> (optional): the priority is displayed using Message and Status Icons.  </li>
+        <li><b>Object Status</b> (optional): uses Inverted ObjectStatus / Tag (Horizon) - Inverted Object Status with icon, indication color: Second Color Set - Indication 2 - Red</li>
+        <li><b>Actions</b> (optional): include a "Close" and "Overflow" button (Transparent Button) actions.</li>
+      </ul>
 `
     }
   }
 };
-export const NoAvatar = () => noAvatarExampleHtml;
-NoAvatar.parameters = {
-  docs: {
-    description: {
-      story: `
-Notifications can be displayed without an avatar by adding the \`fd-notification__content--no-avatar\` modifier class together with the \`fd-notification__content\` class.
-`
-    }
-  }
-};
-export const Information = () => informationExampleHtml;
-Information.parameters = {
-  docs: {
-    description: {
-      story: `
-Notifications can also include alerts, and in this case it is informative. You can display information alerts by adding the \`fd-message-strip fd-message-strip--information fd-message-strip--dismissible\`. To add text to the message, add the \`fd-message-strip__text\` class before the text in paragraph tags.
-`
-    }
-  }
-};
-export const Warning = () => warningExampleHtml;
-Warning.parameters = {
-  docs: {
-    description: {
-      story: `
-Notifications can display warning alerts by adding the \`fd-message-strip fd-message-strip--warning fd-message-strip--dismissible\` class.
-`
-    }
-  }
-};
-export const Error = () => errorExampleHtml;
-Error.parameters = {
-  docs: {
-    description: {
-      story: `
-Notifications can display error alerts by adding the \`fd-message-strip fd-message-strip--error fd-message-strip--dismissible\` class.
-`
-    }
-  }
-};
+
 export const NotificationGroup = () => notificationGroupExampleHtml;
 NotificationGroup.parameters = {
   docs: {
     description: {
-      story: `You can display a group of notifications in a list format, and the user can sort them from the header. To display a notification group, add the \`fd-notification fd-notification__group\` class.
+      story: `You can display a group of notifications in a list format, and the user can sort them from the header. A Message Strip can be places after the group header. To load more notifications, the list can have a Growing Item placed at the bottom of the group. 
     `
     }
   }
 };
-export const Mobile = () => mobileExampleHtml;
-Error.mobile = {
-  docs: {}
-};
-export const InDialog = () => inDialogExampleHtml;
-InDialog.parameters = {
-  docs: {
-    description: {
-      story: `If you want to show the notification in a dialog, you need to add the <code>fd-notification--in-dialog</code> class to the notification.
-            Also, you need to apply \`fd-dialog__body--no-vertical-padding fd-dialog__body--no-horizontal-padding\` classes to the dialog body.`
-    }
-  }
-};
 
-// BTP Examples
-export const NotificationItemBTP = () => notificationItemBtpHtml;
-NotificationItemBTP.parameters = {
+export const NotificationBanner = () => bannerExampleHtml;
+NotificationBanner.storyName = 'Notification Banner';
+NotificationBanner.parameters = {
   docs: {
     description: {
-      story: ``
-    }
-  }
-};
-
-export const NotificationGroupHeaderBTP = () => notificationGroupHeaderBtpHtml;
-NotificationGroupHeaderBTP.parameters = {
-  docs: {
-    description: {
-      story: ``
-    }
-  }
-};
-
-export const NotificationGroupBTP = () => notificationGroupBtpHtml;
-NotificationGroupBTP.parameters = {
-  docs: {
-    description: {
-      story: ``
+      story: `Notifications can be displayed as banners in the top right corner. Apply the modifier class \`fd-notification--banner\` for this option.`
     }
   }
 };

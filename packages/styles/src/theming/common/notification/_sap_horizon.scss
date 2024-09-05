@@ -1,18 +1,44 @@
 @use "sass:map";
 
 :root {
-  --fdNotification_Unread_Indicator_Background: var(--sapHighlightColor);
-  --fdNotification_Item_Border_Color: transparent;
-  --fdNotification_Group_Item_Border_Radius: 0.375rem;
-  --fdNotification_Group_Item_Transition: background-color 0.3s ease-in-out;
-  --fdNotification_Group_Item_Color: var(--sapContent_LabelColor);
-  --fdNotification_Group_Item_Color_Active: var(--sapContent_LabelColor);
-  --fdNotification_Group_Item_Border_Color_Normal: transparent;
-  --fdNotification_Group_Item_Border_Bottom_Color_Normal: transparent;
-  --fdNotification_Group_Item_Border_Color_Hover: transparent;
-  --fdNotification_Group_Item_Border_Color_Active: transparent;
-  --fdNotification_Group_Item_Border_Color_Focused: transparent;
-  --fdNotification_Item_Title_Color_Active: var(--sapTitleColor);
-  --fdNotification_Item_Paragraph_Color_Active: var(--sapTextColor);
-  --fdNotification_Item_Footer_Color_Active: var(--sapTextColor);
+  // Notification Item
+  --fdNotification_Border_Radius: var(--sapTile_BorderCornerRadius);
+  --fdNotification_Border_Left_Right_Color: var(--sapList_BorderColor);
+  --fdNotification_Border_Top_Color: var(--sapList_BorderColor);
+  --fdNotification_Border_Left_Right_Color_Selected: var(--sapList_SelectionBorderColor);
+  --fdNotification_Border_Top_Color_Selected: var(--sapList_SelectionBorderColor);
+  --fdNotification_Border_Block_End_Color_Selected: var(--sapList_SelectionBorderColor);
+
+  // States
+  --fdNotification_Background_Hover: var(--sapList_Hover_Background);
+  --fdNotification_Background_Active: var(--sapList_Active_Background);
+  --fdNotification_Background_Selected: var(--sapList_SelectionBackgroundColor);
+  --fdNotification_Background_Selected_Hover: var(--sapList_Hover_SelectionBackground);
+  --fdNotification_Title_Color_Active: var(--sapList_Active_TextColor);
+  --fdNotification_Paragraph_Color_Active: var(--sapList_Active_TextColor);
+  --fdNotification_Footer_Content_Color_Active: var(--sapList_Active_TextColor);
+  --fdNotification_Separator_Color_Active: var(--sapList_Active_TextColor);
+  --fdNotification_Border_Inline_Color_Active: var(--sapList_Active_Background);
+  --fdNotification_Border_Block_Start_Color_Active: var(--sapList_Active_Background);
+  --fdNotification_Border_Block_End_Color_Active: var(--sapList_Active_Background);
+
+  // Group Header
+  --fdNotification_Group_Header_Border_Bottom_Color: transparent;
+  --fdNotification_Group_Header_Margin_Block: 0.75rem 0.5rem;
+  --fdNotification_Group_Header_Title_Font_Weight: normal;
+  --fdNotification_Group_Header_Title_Font_Size: var(--sapFontHeader5Size);
+  --fdNotification_Group_Header_Title_Color: var(--sapGroup_TitleTextColor);
+
+  // Group List
+  --fdNotification_Group_List_Margin_Block: 0 0.5rem;
+  --fdNotification_Group_List_Margin_Inline: 0.5rem;
+  --fdNotification_Group_List_Gap: 0.5rem;
+
+  // Growing Item
+  --fdNotification_Growing_Item_Margin_Inline: 0.5rem;
+  --fdNotification_Growing_Item_Margin_Block_End: 0.5rem;
+  --fdNotification_Growing_Item_Title_Color: var(--sapButton_TextColor);
+  --fdNotification_Growing_Item_Title_Font_Family: var(--sapFontFamily);
+  --fdNotification_Growing_Item_Title_Font_Size: var(--sapFontSize);
+  --fdNotification_Growing_Item_Title_Font_Weight: bold;
 }
