@@ -19,11 +19,14 @@ body.fd-overlay-active::before {
 }
 
 .#{$block} {
+  --fdPopover_Display: inline-block;
+
+
   @include fd-reset();
 
-  position: relative;
-  display: inline-block;
   max-width: 100%;
+  position: relative;
+  display: var(--fdPopover_Display);
 
   &__modal {
     position: relative;
@@ -534,6 +537,11 @@ body.fd-overlay-active::before {
       color: inherit;
       transform: scaleX(var(--fdPopover_Resize_Handle_Transform_Scale));
     }
+  }
+
+  // Modifier class for Slider Tooltip and Input
+  &--slider {
+    --fdPopover_Display: block;
   }
 
   // @deprecated, fd-popover__body--input-message-group to be used instead
