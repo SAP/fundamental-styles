@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.37.9-rc.0](https://github.com/SAP/fundamental-styles/compare/v0.37.8...v0.37.9-rc.0) (2024-09-06)
+
+### Features
+
+-   **styles:** add avatar indication colors [ci visual] ([#5604](https://github.com/SAP/fundamental-styles/issues/5604)) ([066aa63](https://github.com/SAP/fundamental-styles/commit/066aa63fe701025b465644ca278ab5bed1c5685d))
+
 ## [0.37.8](https://github.com/SAP/fundamental-styles/compare/v0.37.8-rc.4...v0.37.8) (2024-09-03)
 
 **Note:** Version bump only for package fundamental-styles
