@@ -27,6 +27,7 @@ $block: #{$fd-namespace}-avatar;
   border-radius: var(--fdAvatarBorderRadius);
   background-size: var(--fdAvatarBackgroundSize);
   background-color: var(--fdAvatarBackgroundColor);
+  box-shadow: var(--fdAvatarBoxShadow);
 
   &--interactive,
   &[role="button"],
@@ -34,7 +35,8 @@ $block: #{$fd-namespace}-avatar;
     cursor: pointer;
 
     @include fd-hover() {
-      --fdAvatarBorderColor: var(--fdAvatarHoverBorderColor);
+      --fdAvatarBorderColor: none;
+      --fdAvatarBoxShadow: var(--sapContent_Interaction_Shadow);
       --fdAvatarBackgroundColor: var(--fdAvatarHoverBackgroundColor);
     }
 
@@ -204,6 +206,19 @@ $block: #{$fd-namespace}-avatar;
     }
   }
 
+  // indication-colors
+  @each $set-name, $color-set in $fd-avatar-indication-colors {
+    &--indication-color-#{$set-name}.#{$block}--overflow,
+    &--indication-color-#{$set-name} {
+      --fdAvatarBorderColor: #{map.get($color-set, "border")};
+      --fdAvatarColor: #{map.get($color-set, "text-color")};
+      --fdAvatarBackgroundColor: #{map.get($color-set, "background-color")};
+      --fdAvatarHoverBorderColor: #{map.get($color-set, "border-color-hover")};
+      --fdAvatarHoverBackgroundColor: #{map.get($color-set, "background-color-hover")};
+    }
+  }
+
+
   @each $set-name, $size-set in $fd-avatar-sizes {
     &--#{$set-name} {
       --fdAvatarZoomIconOffset: #{map.get($size-set, "offset")};
@@ -228,6 +243,18 @@ $accent-selector: ();
 }
 
 #{$accent-selector} {
+  &.#{$block}--shell {
+    @include fd-set-border(var(--sapShell_InteractiveBorderColor));
+  }
+}
+
+$indication-selector: ();
+
+@each $item in map.keys($fd-avatar-indication-colors) {
+  $indication-selector: $indication-selector, '.#{$block}--indication-color-#{$item}';
+}
+
+#{$indication-selector} {
   &.#{$block}--shell {
     @include fd-set-border(var(--sapShell_InteractiveBorderColor));
   }
