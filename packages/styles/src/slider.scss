@@ -96,6 +96,18 @@ $slider-side-padding: calc((var(--fdSlider_Handle_Width) * 0.5) + #{$handle-outl
     position: relative;
     z-index: 1;
     box-shadow: inset 0 0 0 var(--fdSlider_Track_Border_Width) var(--fdSlider_Track_Border_Color);
+
+    .#{$block}__handle {
+      @include fd-focus() {
+        z-index: 2;
+        -webkit-touch-callout: none; /* iOS Safari */
+        user-select: none; /* Safari */
+      }
+    }
+
+    .#{$fd-namespace}-popover-custom {
+        display: none;
+    }
   }
 
   &__track-range {
@@ -124,6 +136,8 @@ $slider-side-padding: calc((var(--fdSlider_Handle_Width) * 0.5) + #{$handle-outl
     @include fd-flex() {
       justify-content: space-between;
     }
+
+    height: var(--fdSlider_Tick_Height);
   }
 
   &__labels {
@@ -136,6 +150,10 @@ $slider-side-padding: calc((var(--fdSlider_Handle_Width) * 0.5) + #{$handle-outl
     position: relative;
     height: 1rem;
     top: 0.5rem;
+
+    .#{$block}__label {
+      white-space: nowrap;
+    }
   }
 
   &__tick {
@@ -391,6 +409,40 @@ $slider-side-padding: calc((var(--fdSlider_Handle_Width) * 0.5) + #{$handle-outl
           margin-block: $focus-range-side-margin;
           margin-inline: 0;
         }
+      }
+    }
+  }
+
+  &.#{$block}--with-labels {
+    padding-bottom: 2rem;
+  }
+
+  // Overstyle of Popover body, needed for Tooltip and Input inside Tooltip (ngx implementation)
+  &-tooltip-popover {
+    &.#{$fd-namespace}-popover__body {
+      height: 1rem;
+      border: none;
+      padding-block: 0;
+      overflow: hidden;
+      padding-inline: 0.5rem;
+      border-radius: 0.0625rem;
+      top: -0.4375rem !important;
+      background: var(--sapBackgroundColor);
+      box-shadow: var(--sapContent_Shadow1);
+
+      .#{$block}-tooltip {
+          line-height: 1rem;
+          text-align: center;
+          color: var(--sapTextColor);
+          font-family: var(--sapFontFamily);
+          font-size: var(--sapFontSmallSize);
+      }
+
+      &:has(input) {
+          width: auto;
+          height: auto;
+          box-shadow: none;
+          padding-inline: 0;
       }
     }
   }
