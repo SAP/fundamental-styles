@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.37.9-rc.1](https://github.com/SAP/fundamental-styles/compare/v0.37.9-rc.0...v0.37.9-rc.1) (2024-09-07)
+
+### Bug Fixes
+
+-   **styles:** bring Slider tooltip styling from fund-ngx [ci visual] ([#5617](https://github.com/SAP/fundamental-styles/issues/5617)) ([9603557](https://github.com/SAP/fundamental-styles/commit/96035575420d3a0035a7e878c17e6cae2ec5a60e))
+
 ## [0.37.9-rc.0](https://github.com/SAP/fundamental-styles/compare/v0.37.8...v0.37.9-rc.0) (2024-09-06)
 
 ### Features
