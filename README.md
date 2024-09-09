@@ -201,6 +201,7 @@ the [Fundamentals Slack channel](https://join.slack.com/t/ui-fundamentals/shared
 ## Contributing
 
 If you want to contribute, please check
+the [SAP Contribution Guidelines](https://github.com/SAP/.github/blob/main/CONTRIBUTING.md), 
 the [Contribution Guidelines](https://github.com/SAP/fundamental-styles/wiki/Contribution-Guidelines). Also check
 the [Development Guidelines](https://github.com/SAP/fundamental-styles/wiki/Development-Guidelines)
 and [Visual Testing Guide](https://github.com/SAP/fundamental-styles/wiki/Visual-testing-with-Chromatic).
