@@ -1,19 +1,44 @@
 @use "sass:map";
 
 :root {
-  --fdNotification_Unread_Indicator_Background: var(--sapHighlightColor);
-  --fdNotification_Item_Border_Color: transparent;
-  --fdNotification_Group_Item_Border_Radius: 0.375rem;
-  --fdNotification_Group_Item_Transition: background-color 0.3s ease-in-out;
-  --fdNotification_Group_Item_Color: var(--sapContent_LabelColor);
-  --fdNotification_Group_Item_Color_Active: var(--sapContent_ContrastTextColor);
-  --fdNotification_Group_Item_Border_Color_Normal: transparent;
-  --fdNotification_Group_Item_Border_Bottom_Color_Normal: transparent;
-  --fdNotification_Group_Item_Border_Color_Hover: transparent;
-  --fdNotification_Group_Item_Border_Color_Active: transparent;
-  --fdNotification_Group_Item_Border_Color_Focused: transparent;
-  --fdNotification_Item_Title_Color_Active: var(--sapContent_ContrastTextColor);
-  --fdNotification_Item_Paragraph_Color_Active: var(--sapContent_ContrastTextColor);
-  --fdNotification_Item_Footer_Color_Active: var(--sapContent_ContrastTextColor);
-  --fdNotification_Group_Header_Color_Active: var(--sapContent_ContrastTextColor);
+  // Notification Item
+  --fdNotification_Border_Radius: 0;
+  --fdNotification_Border_Left_Right_Color: transparent;
+  --fdNotification_Border_Top_Color: transparent;
+  --fdNotification_Border_Left_Right_Color_Selected: transparent;
+  --fdNotification_Border_Top_Color_Selected: transparent;
+  --fdNotification_Border_Block_End_Color_Selected: var(--sapList_BorderColor);
+
+  // States
+  --fdNotification_Background_Hover: var(--sapList_Background);
+  --fdNotification_Background_Active: var(--sapList_Background);
+  --fdNotification_Background_Selected: var(--sapList_Background);
+  --fdNotification_Background_Selected_Hover: var(--sapList_Background);
+  --fdNotification_Title_Color_Active: var(--sapList_TextColor);
+  --fdNotification_Paragraph_Color_Active: var(--sapList_TextColor);
+  --fdNotification_Footer_Content_Color_Active: var(--sapContent_LabelColor);
+  --fdNotification_Separator_Color_Active: var(--sapContent_LabelColor);
+  --fdNotification_Border_Inline_Color_Active: transparent;
+  --fdNotification_Border_Block_Start_Color_Active: transparent;
+  --fdNotification_Border_Block_End_Color_Active: var(--sapList_BorderColor);
+
+  // Group Header
+  --fdNotification_Group_Header_Border_Bottom_Color: var(--sapList_GroupHeaderBorderColor);
+  --fdNotification_Group_Header_Margin_Block: 0;
+  --fdNotification_Group_Header_Title_Font_Weight: bold;
+  --fdNotification_Group_Header_Title_Font_Size: var(--sapFontHeader6Size);
+  --fdNotification_Group_Header_Title_Color: var(--sapList_TableGroupHeaderTextColor); 
+
+  // Group List
+  --fdNotification_Group_List_Margin_Block: 0;
+  --fdNotification_Group_List_Margin_Inline: 0;
+  --fdNotification_Group_List_Gap: 0;
+
+  // Growing Item
+  --fdNotification_Growing_Item_Margin_Inline: 0;
+  --fdNotification_Growing_Item_Margin_Block_End: 0;
+  --fdNotification_Growing_Item_Title_Color: var(--sapGroup_TitleTextColor);
+  --fdNotification_Growing_Item_Title_Font_Family: var(--sapFontHeaderFamily);
+  --fdNotification_Growing_Item_Title_Font_Size: var(--sapFontHeader5Size);
+  --fdNotification_Growing_Item_Title_Font_Weight: var(--sapFontHeaderWeight);
 }
