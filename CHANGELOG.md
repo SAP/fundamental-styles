@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.38.0-rc.0](https://github.com/SAP/fundamental-styles/compare/v0.37.9-rc.3...v0.38.0-rc.0) (2024-09-09)
+
+### Bug Fixes
+
+-   **styles:** refactor Notifications component ([#5629](https://github.com/SAP/fundamental-styles/issues/5629)) ([6f680f2](https://github.com/SAP/fundamental-styles/commit/6f680f2b281955af5b5f9f40285f4263ae8c46c5))
+
+### BREAKING CHANGES
+
+-   **styles:** refactor Notifications completely
+
 ## [0.37.9-rc.3](https://github.com/SAP/fundamental-styles/compare/v0.37.9-rc.2...v0.37.9-rc.3) (2024-09-09)
 
 ### Bug Fixes
