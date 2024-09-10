@@ -14,18 +14,27 @@ Helps clarify the situation. Must always be paired with a message.
 To set the Illustration you need to provide a svg.
 Generalley, illustration from SAP Fiori Moments library intended to use.
 
-**Message (required)** - \`.fd-illustrated-message__figcaption\`
+**Message (required)** - \`.fd-illustrated-message__figcaption\`<br>
 Consists of:
-* title - \`.fd-illustrated-message__title\` - a single line and explains the state.
-* text - \`.fd-illustrated-message__text\`- adds details and, where appropriate, tells the user what to do next. It's recommended to fit the text in three lines or less.
+<ul>
+    <li>title: \`.fd-illustrated-message__title\`- the headline explains the reason for the empty state, preferably in a single line.</li>
+    <li>text: \`.fd-illustrated-message__text\`- the description adds details and, where appropriate, tells the user what to do next, in three lines or less.</li>
+</ul>
 
 **Call to Action (optional but recommended)** - \`.fd-illustrated-message__actions\`
 Include a call to action (CTA) button if there is a clear next step.
 
 ## Types and sizing
-* Scene (default) - The largest illustration type, mainly used in full-screen situations. For small screens (less than 600px) the max size of the illustration is 15rem (width) and 11.25rem (height). For all other screens the max size of the illustration is 20rem (width) and 15rem (height).
+* Scene (default) - The largest illustration type, mainly used in full-screen situations.
 * Dialog - \`.fd-illustrated-message--dialog\` medium sized illustrations used in a Dialogs or a Message Box. The illustration size is 10rem.
-* Spot - \`.fd-illustrated-message--spot\` the smallest and most simple product illustrations. They can be used in medium-sized cards or UI elements smaller than full screen. The size of the illustration is 8rem.`,
+* Spot - \`.fd-illustrated-message--spot\` the smallest and most simple product illustrations. They can be used in medium-sized cards or UI elements smaller than full screen. The size of the illustration is 8rem.
+* Base - \`.fd-illustrated-message--base\` no illustration.
+
+## Responsiveness and Adaptiveness
+Resizing is neither required nor recommended for S and M illustrations. L illustrations should uniformly scale to 75% of its target size for size S for smartphones, small hybrid devices, and small tablets.
+
+For Scene (Large) Message Illustration only you can apply a container with class <code>.fd-illustrated-message-responsive-container</code> that will handle the responsiveness with inline content query (<code>container-type: inline-size;</code>).
+`,
     tags: ['f3', 'a11y', 'theme']
   }
 };
@@ -45,9 +54,9 @@ const localStyles = `<style>
     }
 </style>
 `;
-export const Scene = () => `<div style="width: 100%; display: flex; justify-content: center">
-    <div class="fd-illustrated-message-container">
+export const Scene = () => `<div class="fd-illustrated-message-responsive-container">
         <figure class="fd-illustrated-message">
+          <div class="fd-illustrated-message__container">
             <svg class="fd-illustrated-message__illustration" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="320" height="240" viewBox="0 0 320 240" id="sapIllus-Scene-NoMail">
                 <path class="sapIllus_BackgroundColor" style="fill:var(--sapIllus_BackgroundColor)" d="M160.9349,25c-63.5127,0-117,45.65-117,111.0215,0,57.985,53.4873,102.9785,117,102.9785s115-45.0093,115-102.9944C275.9349,72.6147,224.4477,25,160.9349,25Z"/>
                 <path class="sapIllus_ObjectFillColor" style="fill:var(--sapIllus_ObjectFillColor)" d="M154.41,88.5248l1.27-.8982c.083-.0588.1743-.0987.2588-.1543l.3369-.2319-.272.1933a8.7808,8.7808,0,0,1,9.8.18l4.4263,3.0712,68.4668,46.5077c9.1367-6.9,15.7255-11.8942,17.143-12.9688a8.2264,8.2264,0,0,0-2.6469-3.1792L165.47,58.5277a8.2316,8.2316,0,0,0-9.5674.0088L68.3763,121.1752a8.2141,8.2141,0,0,0-2.2954,2.5366c1.9439,1.5221,8.5494,6.6905,17.4517,13.62Z"/>
@@ -70,26 +79,27 @@ export const Scene = () => `<div style="width: 100%; display: flex; justify-cont
                 <path class="sapIllus_AccentColor" style="fill:var(--sapIllus_AccentColor)" d="M275.8942,178.3146h0a2.296,2.296,0,0,1,2.296,2.296v6.9763a0,0,0,0,1,0,0h-4.592a0,0,0,0,1,0,0v-6.9763A2.296,2.296,0,0,1,275.8942,178.3146Z" transform="translate(210.1732 -141.5016) rotate(45)"/>
                 <path class="sapIllus_StrokeDetailColor" style="fill:var(--sapIllus_StrokeDetailColor)" d="M274.5954,188.2069c-.459,0-1.2246-.2676-2.39-1.4316-1.7891-1.7891-1.374-2.9473-1.3213-3.0733a.5.5,0,0,1,.9307.3662c-.0118.0489-.1495.753,1.0976,2,1.2051,1.2061,1.7031,1.1319,1.7041,1.1319a.46.46,0,0,1,.6436.2021.5327.5327,0,0,1-.2246.6983A.8706.8706,0,0,1,274.5954,188.2069Z"/>
                 <path class="sapIllus_StrokeDetailColor" style="fill:var(--sapIllus_StrokeDetailColor)" d="M228.1736,229.0389a2.33,2.33,0,0,1-.5024-.7506l-2.6,4.11a1.01,1.01,0,0,0,1.3756,1.3756l4.1136-2.6023a2.3358,2.3358,0,0,1-.7639-.5083Z"/>
-            </svg>
+              </svg>
 
-            <figcaption class="fd-illustrated-message__figcaption">
-                <h2 class="fd-illustrated-message__title">Headline text goes here</h2>
-                <p class="fd-illustrated-message__text">Description provides user with clarity and possible next steps.</p>
-            </figcaption>
+              <figcaption class="fd-illustrated-message__figcaption">
+                  <h2 class="fd-illustrated-message__title">Let's get some results</h2>
+                  <p class="fd-illustrated-message__text">Start by providing your search criteria.</p>
+              </figcaption>
+
+            </div>
 
             <div class="fd-illustrated-message__actions">
-                <button class="fd-button">Action</button>
+                <button class="fd-button">Button</button>
             </div>
         </figure>
     </div>
-</div>
 
 ${localStyles}`;
 Scene.storyName = 'Scene (Large)';
 Scene.parameters = {
   docs: {
     description: {
-      story: `for Large Size (Scene) only, a Container around the Illustration and Text is added. Use a  \`<div>\` element with class  \`.fd-illustrated-message-container\` around the Illustrated Message.
+      story: `Default type, no modifier class is required. Can be optionally wrap in a responsive container <code>.fd-illustrated-message-responsive-container</code>
         `
     }
   },
