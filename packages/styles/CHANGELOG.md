@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.38.0-rc.1](https://github.com/SAP/fundamental-styles/compare/v0.38.0-rc.0...v0.38.0-rc.1) (2024-09-10)
+
+### Bug Fixes
+
+-   **styles:** refactor Illustrated Messages to latest design [ci visual] ([#5630](https://github.com/SAP/fundamental-styles/issues/5630)) ([7bc3457](https://github.com/SAP/fundamental-styles/commit/7bc345773a3c2ff9998de4f95ced77ec80c90b20))
+
+### BREAKING CHANGES
+
+-   **styles:** added a container element around illustration and figcaption, added a responsive container
+
 # [0.38.0-rc.0](https://github.com/SAP/fundamental-styles/compare/v0.37.9-rc.3...v0.38.0-rc.0) (2024-09-09)
 
 **Note:** Version bump only for package fundamental-styles
