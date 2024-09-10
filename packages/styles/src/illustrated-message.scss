@@ -6,18 +6,134 @@
 $block: #{$fd-namespace}-illustrated-message;
 
 .#{$block} {
+  // Block
   --illustratedMessagePadding: 1rem;
-  --illustratedMessageMaxWidth: 30rem;
-  --illustrationW: 20rem;
-  --illustrationH: 15rem;
+  --illustratedMessageMaxWidth: auto;
+
+  // Actions
+  --actionsMarginInline: 0;
+  --actionsMarginBlock: 1rem;
+  --actionsPaddingInlineStart: 0;
+  --actionsPaddingInlineEnd: 0;
+
+  // Illustration
+  --illustrationMinWidth: 15rem;
+  --illustrationMaxWidth: 20rem;
+  --illustrationMinHeight: 11.25rem;
+  --illustrationMaxHeight: 15rem;
   --illustrationMarginBlock: 2rem;
-  --illustrationMarginInline: 0;
-  --figcaptionMaxWidth: 25rem;
+  --illustrationMarginInlineStart: 0;
+  --illustrationMarginInlineEnd: 0;
+  --illustrationDisplay: flex;
+
+  // Container
+  --containerFlexDirection: column;
+
+  // Figcaption
+  --figcaptionMaxWidth: 61.9375rem;
+
+  // Title
+  --titleMinWidth: auto;
   --titleMarginBottom: 1rem;
   --titleFontSize: var(--sapFontHeader2Size);
+
+  // Text
+  --textMinWidth: auto;
   --textMarginBottom: 0.5rem;
-  --actionsMarginBlock: 1rem;
-  --actionsMarginInline: 0;
+
+  @mixin fd-illustarted-messages-dialog() {
+    // Illustration
+    --illustrationMinWidth: 10rem;
+    --illustrationMinHeight: 10rem;
+    --illustrationMaxWidth: 10rem;
+    --illustrationMaxHeight: 10rem;
+    --illustrationMarginBlock: 1rem;
+
+    // Title
+    --titleMarginBottom: 0.5rem;
+    --titleFontSize: var(--sapFontHeader3Size);
+
+    // Figcaption
+    --figcaptionMaxWidth: 40.5625rem;
+
+    // Actions
+    --actionsMarginBlock: 0.5rem 1rem;
+  }
+
+  @mixin fd-illustarted-messages-spot() {
+    // Block
+    --illustratedMessagePadding: 0.5rem;
+
+    // Illustration
+    --illustrationMinWidth: 8rem;
+    --illustrationMinHeight: 8rem;
+    --illustrationMaxWidth: 8rem;
+    --illustrationMaxHeight: 8rem;
+    --illustrationMarginBlock: 0 0.5rem;
+
+    // Title
+    --titleMarginBottom: 0.5rem;
+    --titleFontSize: var(--sapFontHeader4Size);
+
+    // Figcaption
+    --figcaptionMaxWidth: 21.5rem;
+
+    // Actions
+    --actionsMarginBlock: 0.5rem;
+  }
+
+  @mixin fd-illustarted-messages-dot() {
+    // Block
+    --illustratedMessagePadding: 0.25rem;
+    --containerFlexDirection: row;
+
+    // Illustration
+    --illustrationMinWidth: 2.8125rem;
+    --illustrationMaxWidth: 2.8125rem;
+    --illustrationMinHeight: 2.8125rem;
+    --illustrationMaxHeight: 2.8125rem;
+    --illustrationMarginBlock: 0;
+    --illustrationMarginInlineEnd: 0.25rem;
+
+    // Figcaption
+    --figcaptionMaxWidth: 12.6875rem;
+
+    // Title
+    --titleMarginBottom: 0.25rem;
+    --titleFontSize: var(--sapFontHeader5Size);
+
+    // Text
+    --textMarginBottom: 0.313rem;
+
+    // Actions
+    --actionsMarginBlock: 0.25rem;
+    --actionsMarginInline: auto;
+    --actionsPaddingInlineStart: var(--illustrationMaxWidth);
+  }
+
+  @mixin fd-illustarted-messages-base() {
+    // Block
+    --illustratedMessagePadding: 0.25rem;
+    --illustratedMessageMaxWidth: auto;
+    
+    // Illustration
+    --illustrationDisplay: none;
+    
+    // Figcaption
+    --figcaptionMaxWidth: 12.6875rem;
+
+    // Title
+    --titleMarginBottom: 0.25rem;
+    --titleFontSize: var(--sapFontHeader5Size);
+
+    // Text
+    --textMarginBottom: 0.313rem;
+
+    // Actions
+    --actionsMarginBlock: 0.25rem;
+    --actionsMarginInline: auto;
+    --actionsPaddingInlineStart: 0;
+  }
 
   @include fd-reset();
 
@@ -25,30 +141,44 @@ $block: #{$fd-namespace}-illustrated-message;
     align-items: center;
   }
 
-  width: auto;
-  height: auto;
+  width: 100%;
+  min-height: 100%;
   text-align: center;
   max-width: var(--illustratedMessageMaxWidth);
-  padding-inline: var(--illustratedMessagePadding);
   padding-block: var(--illustratedMessagePadding);
+  padding-inline: var(--illustratedMessagePadding);
 
-  &-container {
+  &-responsive-container {
+    @include fd-reset();
+    @include fd-flex-center();
+
+    width: 100%;
+    min-height: 100%;
+    height: 100%;
+    container-type: inline-size;   
+  }
+
+  &__container {
     @include fd-reset();
 
-    width: auto;
-    padding-inline: 1rem;
-    padding-block: 1rem;
-    border-radius: 0.5rem;
-    background: var(--sapGroup_ContentBackground);
+    @include fd-flex() {
+      align-items: center;
+      flex-direction: var(--containerFlexDirection);
+    };
   }
 
   &__illustration {
     @include fd-reset();
 
-    width: var(--illustrationW);
-    height: var(--illustrationH);
+    width: auto;
+    height: auto;
+    display: var(--illustrationDisplay);
+    min-width: var(--illustrationMinWidth);
+    min-height: var(--illustrationMinHeight);
+    max-width: var(--illustrationMaxWidth);
+    max-height: var(--illustrationMaxHeight);
     margin-block: var(--illustrationMarginBlock);
-    margin-inline: var(--illustrationMarginInline);
+    margin-inline: var(--illustrationMarginInlineStart) var(--illustrationMarginInlineEnd);
   }
 
   &__figcaption {
@@ -58,8 +188,8 @@ $block: #{$fd-namespace}-illustrated-message;
       align-items: center;
     }
 
-    width: 100%;
     overflow: hidden;
+    max-width: var(--figcaptionMaxWidth);
   }
 
   &__title {
@@ -68,17 +198,17 @@ $block: #{$fd-namespace}-illustrated-message;
     width: 100%;
     text-align: center;
     font-size: var(--titleFontSize);
-    max-width: var(--figcaptionMaxWidth);
     color: var(--sapGroup_TitleTextColor);
-    margin-block-end: var(--titleMarginBottom);
     font-family: var(--sapFontHeaderFamily);
+    margin-block-end: var(--titleMarginBottom);
   }
 
   &__text {
     @include fd-reset();
 
+    text-wrap: wrap;
     text-align: center;
-    max-width: var(--figcaptionMaxWidth);
+    line-height: 1.5;
     margin-block-end: var(--textMarginBottom);
   }
 
@@ -89,56 +219,40 @@ $block: #{$fd-namespace}-illustrated-message;
       gap: 0.5rem;
     }
 
-    width: 100%;
     margin-block: var(--actionsMarginBlock);
     margin-inline: var(--actionsMarginInline);
-  }
-
-  @media screen and (width <= 599px) {
-    --illustratedMessageMaxWidth: 20rem;
-    --illustrationW: 15rem;
-    --illustrationH: 11.25rem;
-    --figcaptionMaxWidth: 18rem;
+    padding-inline: var(--actionsPaddingInlineStart) var(--actionsPaddingInlineEnd);
   }
 
   &--dialog {
-    --illustrationW: 10rem;
-    --illustrationH: 10rem;
-    --illustrationMarginBlock: 1rem;
-    --titleMarginBottom: 0.5rem;
-    --titleFontSize: var(--sapFontHeader3Size);
-    --actionsMarginBlock: 0.5rem 1rem;
+    @include fd-illustarted-messages-dialog();
   }
 
   &--spot {
-    --illustratedMessagePadding: 0.5rem;
-    --illustrationW: 8rem;
-    --illustrationH: 8rem;
-    --illustrationMarginBlock: 0 0.5rem;
-    --actionsMarginBlock: 0.5rem;
-    --titleMarginBottom: 0.5rem;
-    --titleFontSize: var(--sapFontHeader4Size);
+    @include fd-illustarted-messages-spot();
   }
 
   &--dot {
-    --illustratedMessagePadding: 0.25rem;
-    --illustrationW: 2.813rem;
-    --illustrationH: 2.813rem;
-    --illustrationMarginBlock: 0;
-    --textMarginBottom: 0.313rem;
-    --titleMarginBottom: 0.25rem;
-    --titleFontSize: var(--sapFontHeader5Size);
-    --actionsMarginBlock: 0.25rem;
-    --illustrationMarginRight: 0.25rem;
+    @include fd-illustarted-messages-dot();
+  }
 
-    flex-flow: row wrap;
+  &--base {
+    @include fd-illustarted-messages-base();
+  }
 
-    .#{$block}__illustration {
-      margin-inline-end: var(--illustrationMarginRight);
+  @container (width <= 681px) {
+    @include fd-illustarted-messages-dialog();
+  }
 
-      & + .#{$block}__figcaption {
-        width: calc(100% - var(--illustrationW) - var(--illustrationMarginRight));
-      }
-    }
+  @container (width <= 360px) {
+    @include fd-illustarted-messages-spot();
+  }
+
+  @container (width <= 260px) {
+    @include fd-illustarted-messages-dot();
+  }
+  
+  @container (width <= 160px) {
+    @include fd-illustarted-messages-base();
   }
 }
