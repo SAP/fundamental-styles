@@ -1,17 +1,5 @@
 @use "sass:map";
 
 :root {
-  /* Default mode */
-  --fdRating_Indicator_Selected_Hover_Opacity: 0.9;
-
-  /* Display Only mode */
-  --fdRating_Indicator_Display_Only_Selected_Color: var(--sapTextColor);
-
-  /* Disabled mode */
-  --fdRating_Indicator_Disabled_Selected_Color: var(--sapContent_RatedColor);
-  --fdRating_Indicator_Disabled_Unselected_Color: var(--sapContent_UnratedColor);
-  --fdRating_Indicator_Disabled_Control_Opacity: 0.4;
-  --fdRating_Indicator_View_Mode_Unselected_Icon_Size_Ratio: 0.75;
-  --fdRating_Indicator_Border_Radius: 0.25rem;
-  --fdRating_Indicator_Focus_Outline_Offset: 0.125rem;
+  --fdRatingIndicator_Container_Border_Radius: 0.25rem;
 }
