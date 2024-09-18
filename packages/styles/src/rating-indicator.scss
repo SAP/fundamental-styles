@@ -66,7 +66,7 @@ $block: #{$fd-namespace}-rating-indicator;
 
   &__list {
     @include fd-reset();
-    
+
     @include fd-inline-flex-vertical-center() {
       gap: var(--ratingIndicator_Item_Spacing);
     };
@@ -94,11 +94,11 @@ $block: #{$fd-namespace}-rating-indicator;
     position: absolute;
 
     &:first-child {
-      clip-path: inset(0 50% 0 0);
+      clip-path: inset(0 48% 0 0);
       left: 0;
 
       @include fd-rtl() {
-        clip-path: inset(0 0 0 50%);
+        clip-path: inset(0 0 0 48%);
         left: auto;
         right: 0;
       }
