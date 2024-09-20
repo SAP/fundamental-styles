@@ -23,10 +23,7 @@ $block: #{$fd-namespace}-notification;
     --fdNotification_Border_Inline_Color: var(--fdNotification_Border_Left_Right_Color);
 
     cursor: pointer;
-    position: relative;
-    padding-block: 1rem;
     border-style: solid;
-    padding-inline: 1rem;
     border-width: var(--sapList_BorderWidth);
     background: var(--fdNotification_Background);
     border-radius: var(--fdNotification_Border_Radius);
@@ -67,6 +64,7 @@ $block: #{$fd-namespace}-notification;
   }
 
   @include fd-reset();
+  @include fd-flex(column);
   @include notification-states();
 
   &:has(.#{$block}__actions):has(button) {
@@ -87,6 +85,10 @@ $block: #{$fd-namespace}-notification;
     @include fd-flex() {
       gap: 0.75rem;
     };
+
+    position: relative;
+    padding-block: 1rem;
+    padding-inline: 1rem;
   }
 
   &__content {
@@ -181,10 +183,19 @@ $block: #{$fd-namespace}-notification;
     }
   }
 
-  &__message-container {
-    @include fd-reset();
+  &__message-strip-container {
+    padding-inline: 1rem 0.5rem;
+    padding-block: 1rem 0;
 
-    margin-block-end: 1rem;
+    &:empty {
+      padding-inline: 0;
+      padding-block: 0;
+    }
+
+    &:has(.fd-has-display-none) {
+      padding-inline: 0;
+      padding-block: 0;
+    }
   }
 
   // Banner Notification
