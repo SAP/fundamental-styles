@@ -3765,22 +3765,24 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/core@npm:8.3.0":
-  version: 8.3.0
-  resolution: "@storybook/core@npm:8.3.0"
+"@storybook/core@npm:8.3.4":
+  version: 8.3.4
+  resolution: "@storybook/core@npm:8.3.4"
   dependencies:
     "@storybook/csf": "npm:^0.1.11"
     "@types/express": "npm:^4.17.21"
+    better-opn: "npm:^3.0.2"
     browser-assert: "npm:^1.2.1"
     esbuild: "npm:^0.18.0 || ^0.19.0 || ^0.20.0 || ^0.21.0 || ^0.22.0 || ^0.23.0"
     esbuild-register: "npm:^3.5.0"
     express: "npm:^4.19.2"
+    jsdoc-type-pratt-parser: "npm:^4.0.0"
     process: "npm:^0.11.10"
     recast: "npm:^0.23.5"
     semver: "npm:^7.6.2"
     util: "npm:^0.12.5"
     ws: "npm:^8.2.3"
-  checksum: 10/dd48795350e44b896cfbefd777c553cb6ebddb7c064d2667653c35e93e4e26458f1eb99cf15191cd5f13c530884dddb2019de329e64c13db5830b7abe73e958b
+  checksum: 10/3bb0726b37dca5cb47e412f5e7cd76961a1ce8975c83d6f7f2700910d82924ccab7652d3de0606a88aed6aac91ce6a2d81c458c84fa44f6e6021ea7e20c6d544
   languageName: node
   linkType: hard
 
@@ -5870,6 +5872,15 @@ __metadata:
   version: 2.2.3
   resolution: "before-after-hook@npm:2.2.3"
   checksum: 10/e676f769dbc4abcf4b3317db2fd2badb4a92c0710e0a7da12cf14b59c3482d4febf835ad7de7874499060fd4e13adf0191628e504728b3c5bb4ec7a878c09940
+  languageName: node
+  linkType: hard
+
+"better-opn@npm:^3.0.2":
+  version: 3.0.2
+  resolution: "better-opn@npm:3.0.2"
+  dependencies:
+    open: "npm:^8.0.4"
+  checksum: 10/24668e5a837d0d2c0edf17ad5ebcfeb00a8a5578a5eb09f7a409e1a60617cdfea40b8ebfc95e5f12d9568157930d033e6805788fcf0780413ac982c95d3745d1
   languageName: node
   linkType: hard
 
@@ -11555,6 +11566,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"jsdoc-type-pratt-parser@npm:^4.0.0":
+  version: 4.1.0
+  resolution: "jsdoc-type-pratt-parser@npm:4.1.0"
+  checksum: 10/30d88f95f6cbb4a1aa6d4b0d0ae46eb1096e606235ecaf9bab7a3ed5da860516b5d1cd967182765002f292c627526db918f3e56d34637bcf810e6ef84d403f3f
+  languageName: node
+  linkType: hard
+
 "jsdom@npm:20.0.1":
   version: 20.0.1
   resolution: "jsdom@npm:20.0.1"
@@ -14636,7 +14654,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"open@npm:^8.4.0":
+"open@npm:^8.0.4, open@npm:^8.4.0":
   version: 8.4.2
   resolution: "open@npm:8.4.2"
   dependencies:
@@ -17297,15 +17315,15 @@ __metadata:
   linkType: hard
 
 "storybook@npm:^8.3.0":
-  version: 8.3.0
-  resolution: "storybook@npm:8.3.0"
+  version: 8.3.4
+  resolution: "storybook@npm:8.3.4"
   dependencies:
-    "@storybook/core": "npm:8.3.0"
+    "@storybook/core": "npm:8.3.4"
   bin:
     getstorybook: ./bin/index.cjs
     sb: ./bin/index.cjs
     storybook: ./bin/index.cjs
-  checksum: 10/c908240f112ac0fa4467e7fdba7e4dd0f62869712f0cd30bde0b3966935cd6d98c04e907e49ca998e574027233e656bf1bcab8b88874695a5c3f4f9e340bc36e
+  checksum: 10/eb1c0ade3ba5ad682b6405fef4dd9090fc31c11e0f869271b17104f49fdc60548617f7d065a972b63b480fbb1959bbff5d047d3a70cb41d2afbcb362a13e39a4
   languageName: node
   linkType: hard
 
