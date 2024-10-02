@@ -13,6 +13,11 @@ $block: #{$fd-namespace}-form-group;
       justify-content: flex-start;
       flex-wrap: wrap;
     }
+
+    .#{$block}-form-item + .#{$block}-form-item {
+      -webkit-margin-before: 0;
+      margin-block-start: 0;
+    }
   }
 
   &__header {
