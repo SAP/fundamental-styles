@@ -1,11 +1,9 @@
-import withoutCenterExampleHtml from "./without-center.example.html?raw";
 import responsivePaddingsExampleHtml from "./responsive-paddings.example.html?raw";
-import productSwitchExampleHtml from "./product-switch.example.html?raw";
-import linksWithCollapsibleMenuSSizeExampleHtml from "./links-with-collapsible-menu-ssize.example.html?raw";
-import linksWithCollapsibleMenuMSizeExampleHtml from "./links-with-collapsible-menu-msize.example.html?raw";
-import linksWithCollapsibleMenuXlSizeExampleHtml from "./links-with-collapsible-menu-xl-size.example.html?raw";
-import productMenuAndSearchExampleHtml from "./product-menu-and-search.example.html?raw";
 import primaryExampleHtml from "./primary.example.html?raw";
+import optionalItemsExampleHtml from "./optional-items.example.html?raw";
+import overflowToolbarExampleHtml from "./overflow-toolbar.example.html?raw";
+import responsivenessExampleHtml from "./responsiveness.example.html?raw";
+
 import '../../../src/button.scss';
 import '../../../src/input-group.scss';
 import '../../../src/icon.scss';
@@ -16,12 +14,16 @@ import '../../../src/popover.scss';
 import '../../../src/product-switch.scss';
 import '../../../src/shellbar.scss';
 import '../../../src/select.scss';
+import '../../../src/object-status.scss';
+import '../../../src/object-marker.scss';
+import '../../../src/switch.scss';
+import '../../../src/toolbar.scss';
+
 export default {
   title: 'Components/Shellbar',
   parameters: {
-    tags: ['f3', 'a11y', 'theme'],
-    description: `
-The shellbar offers consistent, responsive navigation across all products and applications. It also includes support for branding, product navigation, search, notifications, and user settings. This is a composite component comprised of mandatory and optional elements. Shellbar should always be placed inside the shell layout container. As mentioned earlier, it is completely responsive by default with margins and padding already built in.
+    tags: ['experimental', 'uxc'],
+    description: `The Shell Bar serves as the topmost section across all SAP products, providing users with a way to orient themselves within the diverse SAP product landscape. It is always visible and offers relevant information about the current context, including product and brand details, while also providing access to specific functions such as search, notifications, user profiles, and more.
 
 **Shellbar has two primary container groups:**
 
@@ -29,109 +31,164 @@ The shellbar offers consistent, responsive navigation across all products and ap
 -	Actions: for search, product links, and user settings.
 
 ##Elements
-The shellbar supports layout functionality and has some built-in elements, but relies on standalone components for most of its content.
+<ul>
+    <li>\`fd-shellbar\`<span>: the main container</span>
+      <ul>
+        <li>\`fd-shellbar--sm\`<span>: adds fixed left and right spacing of 1rem</span></li>
+        <li>\`fd-shellbar--md\`<span>: adds fixed left and right spacing of 2rem</span></li>
+        <li>\`fd-shellbar--lg\`<span>: adds fixed left and right spacing of 2rem</span></li>
+        <li>\`fd-shellbar--xl\`<span>: adds fixed left and right spacing of 3rem</span></li>
+        <li>\`fd-shellbar--side-nav\`<span>: adds fixed left and right spacing of 1rem, should be used in case Side Navigation is displayed</span></li>
+        <li>\`fd-shellbar--responsive-paddings\`<span>: adds responsive left and right spacing based on the screen size.</span></li>
+      </ul>
+    </li>
+    <li>\`fd-shellbar__group\`<span>: groups elements</span>
+      <ul>
+        <li>\`fd-shellbar__group--product\`<span>: defines a container that can hold the Side Navigation Button, Branding, and the Additional Content Area (Context Area)</span></li>
+        <li>\`fd-shellbar__group--actions\`<span>: defines a container for controls like the Search Field, Notifications, User Profile, Product Switch, and more.</span></li>
+        <li>\`fd-shellbar__group--center\`</li>
+        <li>\`fd-shellbar__group--full-width\`<span>: expands the container to take up the full available width.</span></li>
+      </ul>
+    </li>
+    <li>\`fd-shellbar__branding\`<span>: a container for the logo, product name, and solution name</span>
+      <ul>
+        <li>\`fd-shellbar__branding--non-interactive\`<span>: in Lean Shell Bar, the Branding is not clickable. Use this modifier class to remove the ineratctive state from the element.</span></li>
+      </ul>
+    </li>
+    <li>\`fd-shellbar__logo\`
+      <ul>
+        <li>\`fd-shellbar__logo--image-replaced\`</li>
+      </ul>
+    </li>
+    <li>\`fd-shellbar__title\`<span>: the Product name</span></li>
+    <li>\`fd-shellbar__subtitle\`<span>: the Solution name</span></li>
+    <li>\`fd-shellbar__action\`<span>: is a container for controls in the actions group, with modifier classes that control the visibility of the element based on the screen size. </span>
+      <ul>
+        <li>\`fd-shellbar__action--grow\`</li>
+        <li>\`fd-shellbar__action--shrink\`</li>
+        <li>\`fd-shellbar__action--mobile\`</li>
+        <li>\`fd-shellbar__action--desktop\`</li>
+      </ul>
+    </li>
+    <li>\`fd-shellbar__product\`<span>: a container for Product name and Solution name</span></li>
+    <li>\`fd-shellbar__button\`<span>: is an override style of \`fd-button\`, tailored for use within the Shell Bar.</span>
+      <ul>
+        <li>\`fd-shellbar__button--menu\`<span>: is an override style of the Menu Button, tailored for use within the Shell Bar.</span></li>
+      </ul>
+    </li>
+    <li>\`fd-shellbar__context-area\`<span>: an area is intended for containers that hold additional elements defined by the product.</span></li>
+    <li>\`fd-shellbar__separator\`<span>:a span element that visually isolate actions with a vertical line.</span></li>
+    <li>\`fd-shellbar__spacer\`<span>: a span element that can be used to create space between groups of elements in Context Area.</span></li>
+    <li>\`fd-shellbar__search-field\`<span>: an override style of the search input, designed specifically for use within the Shell Bar </span></li>
+</ul>
 
-Elements | Class | Description
-:------------ | :------- | :------------
-Logo (mandatory) | \`fd-shellbar__logo\` | For company branding, add the \`--image-replaced\` modifier class when using CSS to display the logo. The logo can become a link by replacing the "span" tag with an "a" tag.
-Title (mandatory) | \`fd-shellbar__title\` | Displays the current application.
-Subtitle | \`fd-shellbar__subtitle\` | Displays an application context. Subtitles should seldom be used.
-Action button (mandatory) | \`fd-shellbar__action\` | A container for each product action and link.
-Mobile action button (optional) | \`fd-shellbar__action--mobile\` | For product actions only, visible on small shellbar (--s).
-Desktop action button (optional) | \`fd-shellbar__action--desktop\` | For product actions only, visible on desktop screens (--m/l/xl).
-Avatar (mandatory) | \`fd-avatar\` | For user settings and application meta links such as _Sign Out_. Accent colors between 11-15 can be randomly assigned to the background.
-Product Switch (optional) | \`fd-product-switch\` | For navigating between products.
-Notifications (optional) | \`fd-button__badge\` | To display notifications, add this class to the button. See **Button** to find documentation on Badge button.
-<br>
+
+
 `
   }
 };
 export const Primary = () => primaryExampleHtml;
+Primary.storyName = 'Shell Bar with Mandatory Elements';
 Primary.parameters = {
   docs: {
     description: {
-      story: `
-The primary shellbar displays a logo, title, and an avatar where the user settings are found. If the avatar does not contain a thumbnail, then the initials of the user will be displayed.
-    `
-    }
-  }
-};
-export const ProductMenuAndSearch = () => productMenuAndSearchExampleHtml;
-ProductMenuAndSearch.storyName = 'Product menu and search Size XL';
-ProductMenuAndSearch.parameters = {
-  docs: {
-    description: {
-      story: `
-Shellbar can be displayed with a product menu and search box. The product menu is used for navigating to other applications within the product. To display a product menu, add the \`fd-popover\` class after the \`fd-shellbar__logo\` class. The logo can become a link by replacing the "span" tag with an "a" tag.
-    `
-    }
-  }
-};
-export const LinksWithCollapsibleMenuXlSize = () => linksWithCollapsibleMenuXlSizeExampleHtml;
-LinksWithCollapsibleMenuXlSize.storyName = 'Extra large';
-LinksWithCollapsibleMenuXlSize.parameters = {
-  docs: {
-    description: {
-      story: `
-The shellbar can be optimized for extra-large screens. To achieve this style, add the \`fd-shellbar--xl\` modifier class to the main element, which increases the container padding to 3rem.
-        `
-    }
-  }
-};
-export const LinksWithCollapsibleMenuMSize = () => linksWithCollapsibleMenuMSizeExampleHtml;
-LinksWithCollapsibleMenuMSize.storyName = 'Medium-large';
-LinksWithCollapsibleMenuMSize.parameters = {
-  docs: {
-    description: {
-      story: `
-The shellbar can be optimized for medium-large screens. To achieve this style, add the \`fd-shellbar--m\` or \`fd-shellbar--l\`modifier class to the main element, which increases the container padding to 2rem.
-        `
-    }
-  }
-};
-export const LinksWithCollapsibleMenuSSize = () => linksWithCollapsibleMenuSSizeExampleHtml;
-LinksWithCollapsibleMenuSSize.storyName = 'Small';
-LinksWithCollapsibleMenuSSize.parameters = {
-  docs: {
-    description: {
-      story: `
-The shellbar can be optimized for mobile and small tablet screens. To achieve this style, add the \`fd-shellbar--s\` modifier class to the main element. All actions except the user menu should be collapsed, displaying an overflow button.
-        `
-    }
-  }
-};
-export const ProductSwitch = () => productSwitchExampleHtml;
-ProductSwitch.storyName = 'Product switch';
-ProductSwitch.parameters = {
-  docs: {
-    description: {
-      story: `
-Shellbar can be displayed with a product switch component, indicating to the user that they can navigate to other products. See [Product Switch](product-switch.html) for more details. <br>
-The CoPilot is a standard button with <code>.sap-icon--co</code> icon.
+      story: `The Shell Bar has 2 mandatory components: 
+      <ul>
+        <li><b>Branding:</b> Visual branding elements, such as the SAP or company logo (mandatory), the Product Name (mandatory) and Solution Name (optional). Clicking on the Branding navigates users back to the product's home page. Use the official SAP product name and logo by default, allowing customers to customize the logo and sub-brand text if needed, but avoid including "SAP" in the product name. The solution name, optional and limited to 40 characters, should only be used with the product name in exceptional cases and not for app names or navigation. </li>
+        <li><b>User Profile:</b> offers access to user-specific settings and displays either an image or initials.</li>
+      </ul>
 
     `
     }
   }
 };
+export const OptionalItems = () => optionalItemsExampleHtml;
+OptionalItems.storyName = 'Shell Bar with Optional Elements';
+OptionalItems.parameters = {
+  docs: {
+    description: {
+      story: `The following elements of the Shell Bar are optional:: 
+      <ul>
+        <li><b>Side Navigation Button:</b> expands or collapses a vertical navigation panel for local navigation, and is mandatory in the Shell Bar if side navigation is used.</li>
+        <li><b>Additional Context Area:</b> for containers holding product-related elements like system or status information, and should include components relevant to the entire product, not specific applications, while avoiding content meant for other Shell Bar elements.</li>
+        <li><b>Search:</b> the search field in the Shell Bar can be expanded or collapsed based on screen size, and on smaller screens (S), it may be collapsed or moved to the overflow menu if multiple action icons are present.</li>
+        <li><b>Joule:</b> AI Assistant</li>
+        <li><b>Notifications:</b> are optional, but if enabled, the icon will display with a badge indicating the notification count.</li>
+        <li><b>Additional Actions:</b> You can add unlimited custom actions to the Shell Bar, but it's recommended to limit them to seven, ensuring they impact the entire product, use icon-only buttons, and include tooltips. The order is flexible, except for the Support action, which is always placed on the right.</li>
+        <li><b>Help:</b> used to trigger the help functionality within products.</li>
+        <li><b>Feedback:</b> used to trigger the "Leave Feedback" functionality within products.</li>
+        <li><b>Product Switch:</b> used for global navigation, allowing users to switch between different SAP products and services.</li>
+        <li><b>Separator:</b> can be used to isolate actions.</li>
+        <li><b>Spacer:</b> can be used to create space between groups of elements.</li>
+      </ul>`
+    }
+  }
+};
+
 export const ResponsivePaddings = () => responsivePaddingsExampleHtml;
 ResponsivePaddings.parameters = {
   docs: {
     description: {
-      story: `
-The Shellbar paddings can be made responsive. Meaning that based on the current size of the shellbar paddings will be different.
+      story: `When Side Navigation is displayed, the left and right spacing is fixed at 1rem (16px) for alignment with the navigation panel. Without Side Navigation, the Shell Bar follows the Responsive Spacing System: 1rem for Size S, 2rem for Sizes M and L, and 3rem for Sizes XL and XXL (48px). Apply <code>fd-shellbar--responsive-paddings</code> modifier class for responsive paddings, and <code>fd-shellbar--side-nav</code> for fix paddings with Side Navigation.
         `
     }
   }
 };
-export const WithoutCenter = () => withoutCenterExampleHtml;
-WithoutCenter.storyName = 'Shellbar without center group';
-WithoutCenter.parameters = {
+
+export const OverflowToolbar = () => overflowToolbarExampleHtml;
+OverflowToolbar.storyName = 'Actions in Overflow Toolbar';
+OverflowToolbar.parameters = {
   docs: {
     description: {
-      story: `
-The shellbar is optimized to be used with central group for the search. This creates a necessity of centering the groups by giving them equal width.
-If the design suggests that each group can have own width, developers can use \`fd-shellbar__group--shrink\` and \`fd-shellbar__group--basis-auto\` modifiers to allow each group to shrink and grow independently.
+      story: `Controls like Search, Notifications, Joule, Help, and Feedback can be placed inside an Overflow Toolbar(clear type).
         `
+    }
+  }
+};
+
+export const Responsiveness = () => responsivenessExampleHtml;
+Responsiveness.storyName = 'Actions in Overflow Toolbar';
+Responsiveness.parameters = {
+  docs: {
+    description: {
+      story: `Truncation and overflow logic of Shell Bar are based on priorities, such as when a component with a higher priority takes precedence over an element with a lower priority. <br>
+      For all screen sizes the following elements are always displayed:
+      <ul>
+        <li>Side Navigation Button (if used)</li>
+        <li>Avatar (User Menu)</li>
+        <li>Product Switcher (if used)</li>
+      </ul>
+
+<div style="font-weight: bold; font-size: 1.2rem;">XXL (1920=>) / XL (1440 – 1919) / L (1024 - 1439) / M (600 - 1023)</div>
+<br>
+<b>Visible items:</b>
+
+<ul>
+  <li>Hamburger Menu</li>
+  <li>Branding (Logo + Product Name)</li>
+  <li>Additional context area</li>
+  <li>Search positioned right (expanded or collapsed)</li>
+  <li>Shell Actions Buttons (visible or hidden under overflow)</li>
+  <li>User Profile</li>
+  <li>Product Switcher</li>
+</ul>
+
+<div style="font-weight: bold; font-size: 1.2rem;">S (599<=)</div>
+<br>
+<b>Visible items:</b>
+
+<ul>
+  <li>Hamburger Menu</li>
+  <li>Branding (Logo)</li>
+  <li>Additional context area</li>
+  <li>Overflow Button with all Shell Actions including search & notifications (if there are more than 1 action)</li>
+  <li>User Profile</li>
+  <li>Product Switcher</li>
+</ul>
+
+<br>
+<b>Overflow</b>
+The overflow is displayed via a Popover and is used when there is more than one action available; the button should show a toggled state when the Popover is active.`
     }
   }
 };
