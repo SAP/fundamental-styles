@@ -43,7 +43,7 @@ $block: #{$fd-namespace}-form-label;
   }
 
   &--colon {
-    padding-inline-end: 0.125rem;
+    padding-inline-end: 0.25rem;
 
     &::before {
       content: ':';
