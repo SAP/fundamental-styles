@@ -36728,7 +36728,7 @@ exports[`Check stories > Components/Product Switch > Story Shellbar > Should mat
 </style>
 
 <div class=\\"fd-shellbar\\">
-    <div class=\\"fd-shellbar__group fd-shellbar__group--actions\\">
+    <div class=\\"fd-shellbar__group fd-shellbar__group--full-width fd-shellbar__group--actions\\">
         <div class=\\"fd-shellbar__action\\">
             <div class=\\"fd-product-switch\\">
                 <div class=\\"fd-popover fd-popover--right\\">
@@ -40228,277 +40228,95 @@ exports[`Check stories > Components/Select > Story TwoColumnsAndIcons > Should m
 "
 `;
 
-exports[`Check stories > Components/Shellbar > Story LinksWithCollapsibleMenuMSize > Should match snapshot 1`] = `
-"<div style=\\"height:300px; max-width: 1024px;\\">
-    <div class=\\"fd-shellbar fd-shellbar--m\\">
+exports[`Check stories > Components/Shellbar > Story OptionalItems > Should match snapshot 1`] = `
+"<div style=\\"height:150px\\">
+    <div class=\\"fd-shellbar fd-shellbar--side-nav\\" role=\\"banner\\" aria-label=\\"Shell Bar\\">
         <div class=\\"fd-shellbar__group fd-shellbar__group--product\\">
-            <span class=\\"fd-shellbar__logo\\"><img src=\\"//unpkg.com/fundamental-styles/dist/images/sap-logo.png\\"
-                                                 srcset=\\"//unpkg.com/fundamental-styles/dist/images/sap-logo@2x.png 1x, //unpkg.com/fundamental-styles/dist/images/sap-logo@3x.png 2x, //unpkg.com/fundamental-styles/dist/images/sap-logo@4x.png 3x\\"
-                                                 width=\\"48\\" height=\\"24\\" alt=\\"SAP\\"></span>
-            <span class=\\"fd-shellbar__title\\">Corporate Portal</span>
-        </div>
-        <div class=\\"fd-shellbar__group fd-shellbar__group--actions\\">
-            <div class=\\"fd-shellbar__action fd-shellbar__action--desktop\\">
-                <button class=\\"fd-button fd-button--transparent fd-shellbar__button\\" aria-label=\\"Search\\">
-                    <i class=\\"sap-icon--search\\"></i>
-                </button>
-            </div>
-            <div class=\\"fd-shellbar__action fd-shellbar__action--desktop\\">
-                <button
-                    class=\\"fd-button fd-button--transparent fd-shellbar__button\\"
-                    aria-label=\\"Joule DA\\">
-                    <i class=\\"sap-icon--da\\"></i>
-                </button>
-            </div>
-            <div class=\\"fd-shellbar__action fd-shellbar__action--desktop\\">
-                <button class=\\"fd-button fd-button--transparent fd-shellbar__button\\" aria-label=\\"Notifications\\">
-                    <i class=\\"sap-icon--bell\\"></i>
-                    <span class=\\"fd-button__badge\\">251K</span>
-                </button>
-            </div>
-            <div class=\\"fd-shellbar__action fd-shellbar__action--mobile\\">
-                <div class=\\"fd-shellbar-collapse\\">
-                    <div class=\\"fd-popover fd-popover--right\\">
-                        <div class=\\"fd-popover__control\\">
-                            <div class=\\"fd-shellbar-collapse--control\\" onclick=\\"onPopoverClick('CWaGNGD78')\\"
-                                 aria-controls=\\"CWaGNGD78\\" aria-expanded=\\"false\\" aria-haspopup=\\"true\\" role=\\"button\\">
-                                <button class=\\"fd-button fd-button--transparent fd-shellbar__button\\" aria-controls=\\"undefined\\"
-                                        aria-haspopup=\\"true\\" aria-expanded=\\"false\\">
-                                    <i class=\\"sap-icon--overflow\\"></i>
-                                    <span class=\\"fd-button__badge\\">251K</span>
-                                </button>
-                            </div>
-                        </div>
-                        <div class=\\"fd-popover__body fd-popover__body--no-arrow fd-popover__body--right\\"
-                             aria-hidden=\\"true\\" id=\\"CWaGNGD78\\">
-                            <nav class=\\"fd-menu\\">
-                                <ul class=\\"fd-menu__list fd-menu__list--no-shadow\\">
-                                    <li class=\\"fd-menu__item\\">
-                                        <a role=\\"button\\" class=\\"fd-menu__link\\">
-                                            <span class=\\"fd-menu__title\\">Search</span>
-                                        </a>
-                                    </li>
-                                    <li class=\\"fd-menu__item\\">
-                                        <a role=\\"button\\" class=\\"fd-menu__link\\">
-                                            <span class=\\"fd-menu__title\\">Joule</span>
-                                        </a>
-                                    </li>
-                                    <li class=\\"fd-menu__item\\">
-                                        <a role=\\"button\\" class=\\"fd-menu__link\\">
-                                            <span class=\\"fd-menu__title\\">Notifications Out</span>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </nav>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class=\\"fd-shellbar__action\\">
-                <div class=\\"fd-popover fd-popover--right\\">
-                    <div class=\\"fd-popover__control\\">
-                        <div class=\\"fd-button fd-button--transparent fd-shellbar__button fd-user-menu__control\\"
-                             onclick=\\"onPopoverClick('DD35GBK6')\\" aria-controls=\\"DD35GBK6\\" aria-expanded=\\"false\\"
-                             aria-haspopup=\\"true\\" role=\\"button\\" tabindex=\\"0\\">
-                            <span
-                                class=\\"fd-avatar fd-avatar--xs fd-avatar--circle fd-shellbar__avatar--circle\\">WW</span>
-                        </div>
-                    </div>
-                    <div class=\\"fd-popover__body fd-popover__body--no-arrow fd-popover__body--right\\" aria-hidden=\\"true\\"
-                         id=\\"DD35GBK6\\">
-                        <nav class=\\"fd-menu\\">
-                            <ul class=\\"fd-menu__list fd-menu__list--no-shadow\\">
-                                <li class=\\"fd-menu__item\\">
-                                    <a role=\\"button\\" class=\\"fd-menu__link\\">
-                                        <span class=\\"fd-menu__title\\">Settings</span>
-                                    </a>
-                                </li>
-                                <li class=\\"fd-menu__item\\">
-                                    <a role=\\"button\\" class=\\"fd-menu__link\\">
-                                        <span class=\\"fd-menu__title\\">Sign Out</span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </nav>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-"
-`;
+            <button aria-label=\\"Main Navigation\\" aria-expanded=\\"false\\" class=\\"fd-button fd-button--transparent fd-shellbar__button\\">
+                <i class=\\"sap-icon--menu2\\"></i>
+            </button>
+            <div class=\\"fd-shellbar__branding\\" role=\\"link\\" tabindex=\\"0\\" aria-label=\\"SAP Corporate Portal Solution Name Home\\">
+                <span class=\\"fd-shellbar__logo\\"><img src=\\"//unpkg.com/fundamental-styles/dist/images/sap-logo.png\\" srcset=\\"//unpkg.com/fundamental-styles/dist/images/sap-logo@2x.png 1x, //unpkg.com/fundamental-styles/dist/images/sap-logo@3x.png 2x, //unpkg.com/fundamental-styles/dist/images/sap-logo@4x.png 3x\\" width=\\"48\\" height=\\"24\\" alt=\\"SAP\\"></span>
 
-exports[`Check stories > Components/Shellbar > Story LinksWithCollapsibleMenuSSize > Should match snapshot 1`] = `
-"<div style=\\"height:300px; max-width: 600px;\\">
-    <div class=\\"fd-shellbar fd-shellbar--s\\">
-        <div class=\\"fd-shellbar__group fd-shellbar__group--product\\">
-            <span class=\\"fd-shellbar__logo\\"><img src=\\"//unpkg.com/fundamental-styles/dist/images/sap-logo.png\\"
-                                                 srcset=\\"//unpkg.com/fundamental-styles/dist/images/sap-logo@2x.png 1x, //unpkg.com/fundamental-styles/dist/images/sap-logo@3x.png 2x, //unpkg.com/fundamental-styles/dist/images/sap-logo@4x.png 3x\\"
-                                                 width=\\"48\\" height=\\"24\\" alt=\\"SAP\\"></span>
-            <span class=\\"fd-shellbar__title\\">Corporate Portal</span>
-        </div>
-        <div class=\\"fd-shellbar__group fd-shellbar__group--actions\\">
-            <div class=\\"fd-shellbar__action fd-shellbar__action--desktop\\">
-                <div class=\\"fd-popover__control\\">
-                    <div aria-label=\\"Image label\\" aria-controls=\\"UIBFJ688\\" aria-expanded=\\"false\\" aria-haspopup=\\"true\\">
-                        <div class=\\"fd-input-group fd-shellbar__search-field\\">
-                            <input aria-label=\\"search\\" type=\\"text\\"
-                                   class=\\"fd-input fd-input-group__input fd-shellbar__search-field-input\\" id=\\"UIO6J6881\\"
-                                   placeholder=\\"Search\\">
-                            <span
-                                class=\\"fd-input-group__addon fd-shellbar__search-field-addon fd-input-group__addon--button\\">
-                                <button aria-label=\\"navigation-down-arrow-button\\" class=\\"fd-shellbar__button fd-button fd-button--transparent\\">
-                                    <i class=\\"sap-icon--decline\\"></i>
-                                </button>
-                            </span>
-                        </div>
-                    </div>
+                <div class=\\"fd-shellbar__product\\">
+                    <span class=\\"fd-shellbar__title\\">Corporate Portal</span>
+                    <span class=\\"fd-shellbar__subtitle\\">Solution name</span>
                 </div>
             </div>
-            <div class=\\"fd-shellbar__action fd-shellbar__action--desktop\\">
-                <button class=\\"fd-button fd-button--transparent fd-shellbar__button\\" aria-label=\\"Search\\">
-                    <i class=\\"sap-icon--search\\"></i>
-                </button>
-            </div>
-            <div class=\\"fd-shellbar__action fd-shellbar__action--desktop\\">
-                <button class=\\"fd-button fd-button--transparent fd-shellbar__button\\" aria-label=\\"Notifications\\">
-                    <i class=\\"sap-icon--bell\\"></i>
-                    <span class=\\"fd-button__badge\\">251K</span>
-                </button>
-            </div>
-            <div class=\\"fd-shellbar__action fd-shellbar__action--desktop\\">
-                <button class=\\"fd-button fd-button--transparent fd-shellbar__button\\" aria-label=\\"Pool\\">
-                    <i class=\\"sap-icon--pool\\"></i>
-                </button>
-            </div>
-            <div class=\\"fd-shellbar__action fd-shellbar__action--mobile\\">
-                <div class=\\"fd-shellbar-collapse\\">
-                    <div class=\\"fd-popover fd-popover--right\\">
-                        <div class=\\"fd-popover__control\\">
-                            <div class=\\"fd-shellbar-collapse--control\\" onclick=\\"onPopoverClick('CWaGNGD78')\\"
-                                 aria-controls=\\"CWaGNGD78\\" aria-expanded=\\"false\\" aria-haspopup=\\"true\\" role=\\"button\\">
-                                <button class=\\"fd-button fd-button--transparent fd-shellbar__button\\" aria-controls=\\"undefined\\"
-                                        aria-haspopup=\\"true\\" aria-expanded=\\"false\\">
-                                    <i class=\\"sap-icon--overflow\\"></i>
-                                    <span class=\\"fd-button__badge\\">251K</span>
-                                </button>
-                            </div>
-                        </div>
-                        <div class=\\"fd-popover__body fd-popover__body--no-arrow fd-popover__body--right\\"
-                             aria-hidden=\\"true\\" id=\\"CWaGNGD78\\">
-                            <nav class=\\"fd-menu\\">
-                                <ul class=\\"fd-menu__list fd-menu__list--no-shadow\\">
-                                    <li class=\\"fd-menu__item\\">
-                                        <a role=\\"button\\" class=\\"fd-menu__link\\">
-                                            <span class=\\"fd-menu__title\\">Search</span>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </nav>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class=\\"fd-shellbar__action\\">
-                <div class=\\"fd-popover fd-popover--right\\">
+            <span class=\\"fd-shellbar__separator\\"></span>
+            <div class=\\"fd-shellbar__context-area\\" role=\\"group\\" aria-label=\\"Additional info\\">
+                <div class=\\"fd-popover\\">
                     <div class=\\"fd-popover__control\\">
-                        <div class=\\"fd-button fd-button--transparent fd-shellbar__button fd-user-menu__control\\"
-                             onclick=\\"onPopoverClick('DD35GBK6')\\" aria-controls=\\"DD35GBK6\\" aria-expanded=\\"false\\"
-                             aria-haspopup=\\"true\\" role=\\"button\\" tabindex=\\"0\\">
-                            <span
-                                class=\\"fd-avatar fd-avatar--xs fd-avatar--circle fd-shellbar__avatar--circle\\">WW</span>
-                        </div>
-                    </div>
-                    <div class=\\"fd-popover__body fd-popover__body--no-arrow fd-popover__body--right\\" aria-hidden=\\"true\\"
-                         id=\\"DD35GBK6\\">
-                        <nav class=\\"fd-menu\\">
-                            <ul class=\\"fd-menu__list fd-menu__list--no-shadow\\">
-                                <li class=\\"fd-menu__item\\">
-                                    <a role=\\"button\\" class=\\"fd-menu__link\\">
-                                        <span class=\\"fd-menu__title\\">Settings</span>
-                                    </a>
-                                </li>
-                                <li class=\\"fd-menu__item\\">
-                                    <a role=\\"button\\" class=\\"fd-menu__link\\">
-                                        <span class=\\"fd-menu__title\\">Sign Out</span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </nav>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div style=\\"height:300px; max-width: 600px;\\">
-    <div class=\\"fd-shellbar fd-shellbar--s\\">
-        <div class=\\"fd-shellbar__group fd-shellbar__group--product\\">
-            <a class=\\"fd-shellbar__logo\\" href=\\"https://www.sap.com/index.html\\" target=\\"_blank\\">
-                <img src=\\"//unpkg.com/fundamental-styles/dist/images/sap-logo.png\\" srcset=\\"//unpkg.com/fundamental-styles/dist/images/sap-logo@2x.png 1x, //unpkg.com/fundamental-styles/dist/images/sap-logo@3x.png 2x, //unpkg.com/fundamental-styles/dist/images/sap-logo@4x.png 3x\\" width=\\"48\\" height=\\"24\\" alt=\\"SAP\\">
-            </a>
-            <div class=\\"fd-popover\\">
-                <div class=\\"fd-popover__control\\">
-                    <button class=\\"fd-button fd-button--transparent fd-shellbar__button fd-shellbar__button--menu fd-button--menu\\" onclick=\\"onPopoverClick('9GLB26941');\\" aria-controls=\\"9GLB26941\\" aria-haspopup=\\"true\\" aria-expanded=\\"false\\">
-                        <span class=\\"fd-shellbar__title\\">Corporate Portal</span>
+                      <button
+                        class=\\"fd-button fd-button--transparent fd-shellbar__button fd-shellbar__button--menu fd-button--menu\\"
+                        onclick=\\"onPopoverClick('9GLB269412ow2');\\"
+                        aria-controls=\\"9GLB269412ow2\\"
+                        aria-haspopup=\\"true\\"
+                        aria-expanded=\\"false\\"
+                      >
+                        <span class=\\"fd-button__text\\">EMEA</span>
                         <i class=\\"sap-icon--slim-arrow-down\\"></i>
-                    </button>
-                </div>
-                <div class=\\"fd-popover__body fd-popover__body--no-arrow\\" aria-hidden=\\"true\\" id=\\"9GLB26941\\">
-                    <nav class=\\"fd-menu\\">
+                      </button>
+                    </div>
+                    <div
+                      class=\\"fd-popover__body fd-popover__body--no-arrow\\"
+                      aria-hidden=\\"true\\"
+                      id=\\"9GLB269412ow2\\"
+                    >
+                      <nav class=\\"fd-menu\\">
                         <ul class=\\"fd-menu__list fd-menu__list--no-shadow\\">
-                            <li class=\\"fd-menu__item\\">
-                                <a role=\\"button\\" class=\\"fd-menu__link\\">
-                                    <span class=\\"fd-menu__title\\">Application A</span>
-                                </a>
-                            </li>
-                            <li class=\\"fd-menu__item\\">
-                                <a role=\\"button\\" class=\\"fd-menu__link\\">
-                                    <span class=\\"fd-menu__title\\">Application B</span>
-                                </a>
-                            </li>
-                            <li class=\\"fd-menu__item\\">
-                                <a role=\\"button\\" class=\\"fd-menu__link\\">
-                                    <span class=\\"fd-menu__title\\">Application C</span>
-                                </a>
-                            </li>
-                            <li class=\\"fd-menu__item\\">
-                                <a role=\\"button\\" class=\\"fd-menu__link\\">
-                                    <span class=\\"fd-menu__title\\">Application D</span>
-                                </a>
-                            </li>
+                          <li class=\\"fd-menu__item\\">
+                            <a role=\\"button\\" class=\\"fd-menu__link\\">
+                              <span class=\\"fd-menu__title\\">Application A</span>
+                            </a>
+                          </li>
+                          <li class=\\"fd-menu__item\\">
+                            <a role=\\"button\\" class=\\"fd-menu__link\\">
+                              <span class=\\"fd-menu__title\\">Application B</span>
+                            </a>
+                          </li>
+                          <li class=\\"fd-menu__item\\">
+                            <a role=\\"button\\" class=\\"fd-menu__link\\">
+                              <span class=\\"fd-menu__title\\">Application C</span>
+                            </a>
+                          </li>
+                          <li class=\\"fd-menu__item\\">
+                            <a role=\\"button\\" class=\\"fd-menu__link\\">
+                              <span class=\\"fd-menu__title\\">Application D</span>
+                            </a>
+                          </li>
                         </ul>
-                    </nav>
-                </div>
-            </div>
-        <div class=\\"fd-shellbar__subtitle\\">Subtitle</div>
-        </div>
-        <div class=\\"fd-shellbar__group fd-shellbar__group--actions\\">
-            <div class=\\"fd-shellbar__action fd-shellbar__action--desktop\\">
-                <div class=\\"fd-popover__control\\">
-                    <div aria-label=\\"Image label\\" onclick=\\"onPopoverClick('F4GcX348b')\\" aria-controls=\\"F4GcX348b\\" aria-expanded=\\"false\\" aria-haspopup=\\"true\\">
-                        <div class=\\"fd-input-group fd-shellbar__search-field\\">
-                            <input aria-label=\\"search-input\\" type=\\"text\\" class=\\"fd-input fd-input-group__input fd-shellbar__search-field-input\\" id=\\"F4GcX348b1\\" placeholder=\\"Search\\">
-                            <span class=\\"fd-input-group__addon fd-shellbar__search-field-addon fd-input-group__addon--button\\">
-                                <button aria-label=\\"button-decline\\" class=\\"fd-shellbar__button fd-button fd-button--transparent\\">
-                                        <i class=\\"sap-icon--decline\\"></i>
-                                </button>
-                            </span>
-                        </div>
+                      </nav>
                     </div>
                 </div>
+                <span class=\\"fd-object-status fd-object-status--inverted fd-object-status--indication-1b\\">
+                    <span class=\\"fd-object-status__text\\">Environment</span>
+                </span>
             </div>
-            <div class=\\"fd-shellbar__action fd-shellbar__action--desktop\\">
-                <button class=\\"fd-button fd-button--transparent fd-shellbar__button\\" aria-label=\\"Search\\">
-                        <i class=\\"sap-icon--search\\"></i>
-                </button>
+        </div>
+        <div class=\\"fd-shellbar__group fd-shellbar__group--actions\\">
+            <div class=\\"fd-object-marker\\">
+                <span class=\\"fd-object-marker__text\\">New Feature</span>
             </div>
+            <label class=\\"fd-switch\\">
+                <span class=\\"fd-switch__control\\">
+                    <input class=\\"fd-switch__input\\" type=\\"checkbox\\" name=\\"\\" value=\\"\\" aria-labelledby=\\"label1\\" id=\\"y21YO3251\\">
+                    <div class=\\"fd-switch__slider\\">
+                        <div class=\\"fd-switch__track\\">
+                            <i role=\\"presentation\\" class=\\"fd-switch__icon fd-switch__icon--on sap-icon--accept\\"></i>
+                            <span class=\\"fd-switch__handle\\" role=\\"presentation\\"></span>
+                            <i role=\\"presentation\\" class=\\"fd-switch__icon fd-switch__icon--off sap-icon--less\\"></i>
+                        </div>
+                    </div>
+                </span>
+            </label>
+            <span class=\\"fd-shellbar__separator\\"></span>
             <div class=\\"fd-shellbar__action\\">
                 <div class=\\"fd-popover fd-popover--right\\">
                     <div class=\\"fd-popover__control\\">
-                        <div class=\\"fd-button fd-button--transparent fd-shellbar__button fd-user-menu__control\\" aria-controls=\\"ZY3AY276\\" onclick=\\"onPopoverClick('ZY3AY276')\\" aria-expanded=\\"false\\" aria-haspopup=\\"true\\" role=\\"button\\" tabindex=\\"0\\">
+                        <div class=\\"fd-button fd-button--transparent fd-shellbar__button fd-user-menu__control\\"
+                             onclick=\\"onPopoverClick('MKFAY276wed')\\" aria-controls=\\"MKFAY276wed\\" aria-expanded=\\"false\\"
+                             aria-haspopup=\\"dialog\\" role=\\"button\\" tabindex=\\"0\\" aria-label=\\"User Menu\\" title=\\"User Menu\\">
                             <span
                                 class=\\"fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--thumbnail fd-shellbar__avatar--circle\\"
                                 style=\\"background-image: url('assets/images/avatars/1.svg');\\"
@@ -40506,7 +40324,8 @@ exports[`Check stories > Components/Shellbar > Story LinksWithCollapsibleMenuSSi
                             </span>
                         </div>
                     </div>
-                    <div class=\\"fd-popover__body fd-popover__body--no-arrow fd-popover__body--right\\" aria-hidden=\\"false\\" id=\\"ZY3AY276\\">
+                    <div class=\\"fd-popover__body fd-popover__body--no-arrow fd-popover__body--right\\" aria-hidden=\\"true\\"
+                         id=\\"MKFAY276wed\\">
                         <nav class=\\"fd-menu\\">
                             <ul class=\\"fd-menu__list fd-menu__list--no-shadow\\">
                                 <li class=\\"fd-menu__item\\">
@@ -40527,437 +40346,135 @@ exports[`Check stories > Components/Shellbar > Story LinksWithCollapsibleMenuSSi
         </div>
     </div>
 </div>
-"
-`;
 
-exports[`Check stories > Components/Shellbar > Story LinksWithCollapsibleMenuXlSize > Should match snapshot 1`] = `
-"
-<div style=\\"height: 300px\\">
-  <div class=\\"fd-shellbar fd-shellbar--xl\\">
-    <div class=\\"fd-shellbar__group fd-shellbar__group--product\\">
-      <span class=\\"fd-shellbar__logo\\"
-        ><img
-          src=\\"//unpkg.com/fundamental-styles/dist/images/sap-logo.png\\"
-          srcset=\\"
-            //unpkg.com/fundamental-styles/dist/images/sap-logo@2x.png 1x,
-            //unpkg.com/fundamental-styles/dist/images/sap-logo@3x.png 2x,
-            //unpkg.com/fundamental-styles/dist/images/sap-logo@4x.png 3x
-          \\"
-          width=\\"48\\"
-          height=\\"24\\"
-          alt=\\"SAP\\"
-      /></span>
-      <span class=\\"fd-shellbar__title\\">Corporate Portal</span>
-    </div>
-    <div
-      class=\\"fd-shellbar__group fd-shellbar__group--center fd-shellbar__group--mobile-flex\\"
-    >
-      <div class=\\"fd-shellbar__action fd-shellbar__action--grow\\">
-        <div id=\\"JKHhjk7234k\\" class=\\"fd-input-group fd-shellbar__search-field\\">
-          <div
-            class=\\"fd-input-group__addon fd-shellbar__search-field-category fd-input-group__addon--button\\"
-          >
-            <div class=\\"fd-select\\">
-              <button
-                aria-expanded=\\"false\\"
-                aria-haspopup=\\"listbox\\"
-                aria-labelledby=\\"cozySelectLabel cozySelectValue\\"
-                class=\\"fd-select__control fd-shellbar__search-category\\"
-                id=\\"cozySelectCombobox\\"
-                onclick=\\"
-                        toggleElAttrs('h0C6A325', ['aria-hidden']);
-                        toggleElAttrs('cozySelectCombobox', ['aria-expanded']);
-                    \\"
-                value=\\"List Item 1\\"
-                tabindex=\\"0\\"
-              >
-                <span is=\\"cozySelectValue\\" class=\\"fd-select__text-content\\"
-                  >List Item 1</span
-                >
-                <span
-                  class=\\"fd-button fd-button--transparent fd-select__button fd-shellbar__search-dropdown\\"
-                >
-                  <i class=\\"sap-icon--slim-arrow-down\\"></i>
-                </span>
-              </button>
-            </div>
-          </div>
-          <input
-            aria-label=\\"search-input\\"
-            type=\\"text\\"
-            onfocus=\\"addClass('JKHhjk7234k', 'is-focus')\\"
-            onblur=\\"removeClass('JKHhjk7234k', 'is-focus')\\"
-            class=\\"fd-input fd-input-group__input fd-shellbar__search-field-input\\"
-            id=\\"F4GcX348b1\\"
-            placeholder=\\"Search everything\\"
-          />
-          <div
-            class=\\"fd-input-group__addon fd-shellbar__search-field-addon fd-shellbar__search-cancel fd-input-group__addon--button\\"
-          >
-            <button
-              aria-label=\\"button-search\\"
-              class=\\"fd-shellbar__button fd-button fd-button--transparent\\"
-            >
-              <i class=\\"sap-icon--decline\\"></i>
-            </button>
-          </div>
-          <div
-            class=\\"fd-input-group__addon fd-shellbar__search-field-addon fd-shellbar__search-submit fd-input-group__addon--button\\"
-          >
-            <button
-              aria-label=\\"button-search\\"
-              class=\\"fd-shellbar__button fd-button fd-button--transparent\\"
-            >
-              <i class=\\"sap-icon--search\\"></i>
-            </button>
-          </div>
-          <div class=\\"fd-shellbar__search-field-helper\\"></div>
-        </div>
-      </div>
-      <div
-        class=\\"fd-shellbar__action fd-shellbar__action--mobile fd-shellbar__action--shrink\\"
-      >
-        <button class=\\"fd-button fd-button--transparent\\">Cancel</button>
-      </div>
-    </div>
-    <div class=\\"fd-shellbar__group fd-shellbar__group--actions\\">
-      <div class=\\"fd-shellbar__action fd-shellbar__action--desktop\\">
-        <button
-          class=\\"fd-button fd-button--transparent fd-shellbar__button\\"
-          aria-label=\\"Joule Digital Assitant\\"
-        >
-          <i class=\\"sap-icon--da\\"></i>
-        </button>
-      </div>
-      <div class=\\"fd-shellbar__action fd-shellbar__action--desktop\\">
-        <button
-          class=\\"fd-button fd-button--transparent fd-shellbar__button\\"
-          aria-label=\\"Notifications\\"
-        >
-          <i class=\\"sap-icon--bell\\"></i>
-          <span class=\\"fd-button__badge\\">251K</span>
-        </button>
-      </div>
-      <div class=\\"fd-shellbar__action fd-shellbar__action--mobile\\">
-        <div class=\\"fd-shellbar-collapse\\">
-          <div class=\\"fd-popover fd-popover--right\\">
-            <div class=\\"fd-popover__control\\">
-              <div
-                class=\\"fd-shellbar-collapse--control\\"
-                onclick=\\"onPopoverClick('CWaGGD78')\\"
-                aria-controls=\\"CWaGGD78\\"
-                aria-expanded=\\"false\\"
-                aria-haspopup=\\"true\\"
-                role=\\"button\\"
-              >
-                <button
-                  class=\\"fd-button fd-button--transparentfd-shellbar__button\\"
-                  aria-controls=\\"undefined\\"
-                  aria-haspopup=\\"true\\"
-                  aria-expanded=\\"false\\"
-                >
-                  <i class=\\"sap-icon--overflow\\"></i>
-                  <span class=\\"fd-buton__badge\\">251K</span>
-                </button>
-              </div>
-            </div>
-            <div
-              class=\\"fd-popover__body fd-popover__body--no-arrow fd-popover__body--right\\"
-              aria-hidden=\\"true\\"
-              id=\\"CWaGGD78\\"
-            >
-              <nav class=\\"fd-menu\\">
-                <ul class=\\"fd-menu__list fd-menu__list--no-shadow\\">
-                  <li class=\\"fd-menu__item\\">
-                    <a role=\\"button\\" class=\\"fd-menu__link\\">
-                      <span class=\\"fd-menu__title\\">Search</span>
-                    </a>
-                  </li>
-                  <li class=\\"fd-menu__item\\">
-                    <a role=\\"button\\" class=\\"fd-menu__link\\">
-                      <span class=\\"fd-menu__title\\">Notifications Out</span>
-                    </a>
-                  </li>
-                  <li class=\\"fd-menu__item\\">
-                    <a role=\\"button\\" class=\\"fd-menu__link\\">
-                      <span class=\\"fd-menu__title\\">Pool</span>
-                    </a>
-                  </li>
-                </ul>
-              </nav>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class=\\"fd-shellbar__action\\">
-        <div class=\\"fd-popover fd-popover--right\\">
-          <div class=\\"fd-popover__control\\">
-            <div
-              class=\\"fd-button fd-button--transparent fd-shellbar__button fd-user-menu__control\\"
-              onclick=\\"onPopoverClick('DD35G276')\\"
-              aria-controls=\\"DD35G276\\"
-              aria-expanded=\\"false\\"
-              aria-haspopup=\\"true\\"
-              role=\\"button\\"
-              tabindex=\\"0\\"
-            >
-              <span
-                class=\\"fd-avatar fd-avatar--xs fd-avatar--circle fd-shellbar__avatar--circle\\"
-                >WW</span
-              >
-            </div>
-          </div>
-          <div
-            class=\\"fd-popover__body fd-popover__body--no-arrow fd-popover__body--right\\"
-            aria-hidden=\\"true\\"
-            id=\\"DD35G276\\"
-          >
-            <nav class=\\"fd-menu\\">
-              <ul class=\\"fd-menu__list fd-menu__list--no-shadow\\">
-                <li class=\\"fd-menu__item\\">
-                  <a role=\\"button\\" class=\\"fd-menu__link\\">
-                    <span class=\\"fd-menu__title\\">Settings</span>
-                  </a>
-                </li>
-                <li class=\\"fd-menu__item\\">
-                  <a role=\\"button\\" class=\\"fd-menu__link\\">
-                    <span class=\\"fd-menu__title\\">Sign Out</span>
-                  </a>
-                </li>
-              </ul>
-            </nav>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-"
-`;
-
-exports[`Check stories > Components/Shellbar > Story Primary > Should match snapshot 1`] = `
-"<div style=\\"height:150px\\">
-    <div class=\\"fd-shellbar\\">
+<br><br>
+<div style=\\"height:250px\\">
+    <div class=\\"fd-shellbar fd-shellbar--side-nav\\" role=\\"banner\\" aria-label=\\"Shell Bar\\">
         <div class=\\"fd-shellbar__group fd-shellbar__group--product\\">
-            <span class=\\"fd-shellbar__logo\\"><img src=\\"//unpkg.com/fundamental-styles/dist/images/sap-logo.png\\" srcset=\\"//unpkg.com/fundamental-styles/dist/images/sap-logo@2x.png 1x, //unpkg.com/fundamental-styles/dist/images/sap-logo@3x.png 2x, //unpkg.com/fundamental-styles/dist/images/sap-logo@4x.png 3x\\" width=\\"48\\" height=\\"24\\" alt=\\"SAP\\"></span>
-        <span class=\\"fd-shellbar__title\\">Corporate Portal</span>
+            <button aria-label=\\"Main Navigation\\" aria-expanded=\\"false\\" class=\\"fd-button fd-button--transparent fd-shellbar__button\\">
+                <i class=\\"sap-icon--menu2\\"></i>
+            </button>
+            <div class=\\"fd-shellbar__branding\\" role=\\"link\\" tabindex=\\"0\\" aria-label=\\"SAP Corporate Portal Solution Name Home\\">
+                <span class=\\"fd-shellbar__logo\\"><img src=\\"//unpkg.com/fundamental-styles/dist/images/sap-logo.png\\" srcset=\\"//unpkg.com/fundamental-styles/dist/images/sap-logo@2x.png 1x, //unpkg.com/fundamental-styles/dist/images/sap-logo@3x.png 2x, //unpkg.com/fundamental-styles/dist/images/sap-logo@4x.png 3x\\" width=\\"48\\" height=\\"24\\" alt=\\"SAP\\"></span>
+
+                <div class=\\"fd-shellbar__product\\">
+                    <span class=\\"fd-shellbar__title\\">Corporate Portal</span>
+                    <span class=\\"fd-shellbar__subtitle\\">Solution name</span>
+                </div>
+            </div>
+            <span class=\\"fd-shellbar__separator\\"></span>
+            <div class=\\"fd-shellbar__context-area\\" role=\\"group\\" aria-label=\\"Additional info\\">
+                <div class=\\"fd-popover\\">
+                    <div class=\\"fd-popover__control\\">
+                      <button
+                        class=\\"fd-button fd-button--transparent fd-shellbar__button fd-shellbar__button--menu fd-button--menu\\"
+                        onclick=\\"onPopoverClick('9GLB269412874');\\"
+                        aria-controls=\\"9GLB269412874\\"
+                        aria-haspopup=\\"true\\"
+                        aria-expanded=\\"false\\"
+                      >
+                        <span class=\\"fd-button__text\\">EMEA</span>
+                        <i class=\\"sap-icon--slim-arrow-down\\"></i>
+                      </button>
+                    </div>
+                    <div
+                      class=\\"fd-popover__body fd-popover__body--no-arrow\\"
+                      aria-hidden=\\"true\\"
+                      id=\\"9GLB269412874\\"
+                    >
+                      <nav class=\\"fd-menu\\">
+                        <ul class=\\"fd-menu__list fd-menu__list--no-shadow\\">
+                          <li class=\\"fd-menu__item\\">
+                            <a role=\\"button\\" class=\\"fd-menu__link\\">
+                              <span class=\\"fd-menu__title\\">Application A</span>
+                            </a>
+                          </li>
+                          <li class=\\"fd-menu__item\\">
+                            <a role=\\"button\\" class=\\"fd-menu__link\\">
+                              <span class=\\"fd-menu__title\\">Application B</span>
+                            </a>
+                          </li>
+                          <li class=\\"fd-menu__item\\">
+                            <a role=\\"button\\" class=\\"fd-menu__link\\">
+                              <span class=\\"fd-menu__title\\">Application C</span>
+                            </a>
+                          </li>
+                          <li class=\\"fd-menu__item\\">
+                            <a role=\\"button\\" class=\\"fd-menu__link\\">
+                              <span class=\\"fd-menu__title\\">Application D</span>
+                            </a>
+                          </li>
+                        </ul>
+                      </nav>
+                    </div>
+                </div>
+            </div>
         </div>
         <div class=\\"fd-shellbar__group fd-shellbar__group--actions\\">
             <div class=\\"fd-shellbar__action\\">
-                <div class=\\"fd-popover fd-popover--right\\">
-                    <div class=\\"fd-popover__control\\">
-                        <div class=\\"fd-button fd-button--transparent fd-shellbar__button fd-user-menu__control\\" aria-controls=\\"WV3AY276\\" aria-expanded=\\"false\\" aria-haspopup=\\"true\\" role=\\"button\\" tabindex=\\"0\\">
-                            <span class=\\"fd-avatar fd-avatar--xs fd-avatar--circle fd-shellbar__avatar--circle\\">WW</span>
-                        </div>
+                <div id=\\"JKHhjk7234k22\\" class=\\"fd-input-group fd-shellbar__search-field\\">
+                    <input
+                      aria-label=\\"search-input\\"
+                      type=\\"text\\"
+                      onfocus=\\"addClass('JKHhjk7234k22', 'is-focus')\\"
+                      onblur=\\"removeClass('JKHhjk7234k22', 'is-focus')\\"
+                      class=\\"fd-input fd-input-group__input fd-shellbar__search-field-input\\"
+                      id=\\"F4GcX348b1\\"
+                      placeholder=\\"Search everything\\"
+                    />
+                    <div
+                      class=\\"fd-input-group__addon fd-shellbar__search-field-addon fd-shellbar__search-cancel fd-input-group__addon--button\\"
+                    >
+                      <button
+                        aria-label=\\"button-search\\"
+                        class=\\"fd-shellbar__button fd-button fd-button--transparent\\"
+                      >
+                        <i class=\\"sap-icon--decline\\"></i>
+                      </button>
                     </div>
-                    <div class=\\"fd-popover__body fd-popover__body--no-arrow fd-popover__body--right\\" aria-hidden=\\"true\\" id=\\"WV3AY276\\">
-                        <nav class=\\"fd-menu\\">
-                            <ul class=\\"fd-menu__list fd-menu__list--no-shadow\\">
-                                <li class=\\"fd-menu__item\\">
-                                    <a role=\\"button\\" class=\\"fd-menu__link\\">
-                                        <span class=\\"fd-menu__title\\">Settings</span>
-                                    </a>
-                                </li>
-                                <li class=\\"fd-menu__item\\">
-                                    <a role=\\"button\\" class=\\"fd-menu__link\\">
-                                        <span class=\\"fd-menu__title\\">Sign Out</span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </nav>
+                    <div
+                      class=\\"fd-input-group__addon fd-shellbar__search-field-addon fd-shellbar__search-submit fd-input-group__addon--button\\"
+                    >
+                      <button
+                        aria-label=\\"button-search\\"
+                        class=\\"fd-shellbar__button fd-button fd-button--transparent\\"
+                      >
+                        <i class=\\"sap-icon--search\\"></i>
+                      </button>
                     </div>
+                    <div class=\\"fd-shellbar__search-field-helper\\"></div>
                 </div>
             </div>
-        </div>
-    </div>
-</div>
-"
-`;
-
-exports[`Check stories > Components/Shellbar > Story ProductMenuAndSearch > Should match snapshot 1`] = `
-"
-
-<div style=\\"height: 200px\\">
-  <div class=\\"fd-shellbar fd-shellbar--xl\\">
-    <div class=\\"fd-shellbar__group fd-shellbar__group--product\\">
-      <a
-        class=\\"fd-shellbar__logo\\"
-        href=\\"https://www.sap.com/index.html\\"
-        target=\\"_blank\\"
-      >
-        <img
-          src=\\"//unpkg.com/fundamental-styles/dist/images/sap-logo.png\\"
-          srcset=\\"
-            //unpkg.com/fundamental-styles/dist/images/sap-logo@2x.png 1x,
-            //unpkg.com/fundamental-styles/dist/images/sap-logo@3x.png 2x,
-            //unpkg.com/fundamental-styles/dist/images/sap-logo@4x.png 3x
-          \\"
-          width=\\"48\\"
-          height=\\"24\\"
-          alt=\\"SAP\\"
-        />
-      </a>
-      <div class=\\"fd-popover\\">
-        <div class=\\"fd-popover__control\\">
-          <button
-            class=\\"fd-button fd-button--transparent fd-shellbar__button fd-shellbar__button--menu fd-button--menu\\"
-            onclick=\\"onPopoverClick('9GLB269412');\\"
-            aria-controls=\\"9GLB269412\\"
-            aria-haspopup=\\"true\\"
-            aria-expanded=\\"false\\"
-          >
-            <span class=\\"fd-shellbar__title\\">Corporate Portal</span>
-            <i class=\\"sap-icon--slim-arrow-down\\"></i>
-          </button>
-        </div>
-        <div
-          class=\\"fd-popover__body fd-popover__body--no-arrow\\"
-          aria-hidden=\\"true\\"
-          id=\\"9GLB269412\\"
-        >
-          <nav class=\\"fd-menu\\">
-            <ul class=\\"fd-menu__list fd-menu__list--no-shadow\\">
-              <li class=\\"fd-menu__item\\">
-                <a role=\\"button\\" class=\\"fd-menu__link\\">
-                  <span class=\\"fd-menu__title\\">Application A</span>
-                </a>
-              </li>
-              <li class=\\"fd-menu__item\\">
-                <a role=\\"button\\" class=\\"fd-menu__link\\">
-                  <span class=\\"fd-menu__title\\">Application B</span>
-                </a>
-              </li>
-              <li class=\\"fd-menu__item\\">
-                <a role=\\"button\\" class=\\"fd-menu__link\\">
-                  <span class=\\"fd-menu__title\\">Application C</span>
-                </a>
-              </li>
-              <li class=\\"fd-menu__item\\">
-                <a role=\\"button\\" class=\\"fd-menu__link\\">
-                  <span class=\\"fd-menu__title\\">Application D</span>
-                </a>
-              </li>
-            </ul>
-          </nav>
-        </div>
-      </div>
-      <div class=\\"fd-shellbar__subtitle\\">Subtitle</div>
-    </div>
-    <div
-      class=\\"fd-shellbar__group fd-shellbar__group--center fd-shellbar__group--mobile-flex\\"
-    >
-      <div class=\\"fd-shellbar__action fd-shellbar__action--grow\\">
-        <div id=\\"JKHhjk7234k2\\" class=\\"fd-input-group fd-shellbar__search-field\\">
-          <input
-            aria-label=\\"search-input\\"
-            type=\\"text\\"
-            onfocus=\\"addClass('JKHhjk7234k2', 'is-focus')\\"
-            onblur=\\"removeClass('JKHhjk7234k2', 'is-focus')\\"
-            class=\\"fd-input fd-input-group__input fd-shellbar__search-field-input\\"
-            id=\\"F4GcX348b1\\"
-            placeholder=\\"Search everything\\"
-          />
-          <div
-            class=\\"fd-input-group__addon fd-shellbar__search-field-addon fd-shellbar__search-cancel fd-input-group__addon--button\\"
-          >
-            <button
-              aria-label=\\"button-search\\"
-              class=\\"fd-shellbar__button fd-button fd-button--transparent\\"
-            >
-              <i class=\\"sap-icon--decline\\"></i>
-            </button>
-          </div>
-          <div
-            class=\\"fd-input-group__addon fd-shellbar__search-field-addon fd-shellbar__search-submit fd-input-group__addon--button\\"
-          >
-            <button
-              aria-label=\\"button-search\\"
-              class=\\"fd-shellbar__button fd-button fd-button--transparent\\"
-            >
-              <i class=\\"sap-icon--search\\"></i>
-            </button>
-          </div>
-          <div class=\\"fd-shellbar__search-field-helper\\"></div>
-        </div>
-      </div>
-      <div
-        class=\\"fd-shellbar__action fd-shellbar__action--mobile fd-shellbar__action--shrink\\"
-      >
-        <button class=\\"fd-button fd-button--transparent\\">Cancel</button>
-      </div>
-    </div>
-    <div class=\\"fd-shellbar__group fd-shellbar__group--actions\\">
-      <div class=\\"fd-shellbar__action\\">
-        <div class=\\"fd-popover fd-popover--right\\">
-          <div class=\\"fd-popover__control\\">
-            <div
-              class=\\"fd-button fd-button--transparent fd-shellbar__button fd-user-menu__control\\"
-              aria-controls=\\"ZY3AY276\\"
-              onclick=\\"onPopoverClick('ZY3AY276')\\"
-              aria-expanded=\\"false\\"
-              aria-haspopup=\\"true\\"
-              role=\\"button\\"
-              tabindex=\\"0\\"
-            >
-              <span
-                class=\\"fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--thumbnail fd-shellbar__avatar--circle\\"
-                style=\\"background-image: url('assets/images/avatars/1.svg')\\"
-                aria-label=\\"William Wallingham\\"
-              >
-              </span>
-            </div>
-          </div>
-          <div
-            class=\\"fd-popover__body fd-popover__body--no-arrow fd-popover__body--right\\"
-            aria-hidden=\\"false\\"
-            id=\\"ZY3AY276\\"
-          >
-            <nav class=\\"fd-menu\\">
-              <ul class=\\"fd-menu__list fd-menu__list--no-shadow\\">
-                <li class=\\"fd-menu__item\\">
-                  <a role=\\"button\\" class=\\"fd-menu__link\\">
-                    <span class=\\"fd-menu__title\\">Settings</span>
-                  </a>
-                </li>
-                <li class=\\"fd-menu__item\\">
-                  <a role=\\"button\\" class=\\"fd-menu__link\\">
-                    <span class=\\"fd-menu__title\\">Sign Out</span>
-                  </a>
-                </li>
-              </ul>
-            </nav>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-"
-`;
-
-exports[`Check stories > Components/Shellbar > Story ProductSwitch > Should match snapshot 1`] = `
-"<div style=\\"height:600px\\">
-    <div class=\\"fd-shellbar fd-shellbar--responsive-paddings\\">
-        <div class=\\"fd-shellbar__group fd-shellbar__group--product\\">
-        <span class=\\"fd-shellbar__logo\\">
-            <svg style=\\"height: 32px; width: 64px\\" width=\\"286\\" height=\\"143\\" viewBox=\\"0 0 286 143\\"
-                 xmlns=\\"http://www.w3.org/2000/svg\\"><defs><linearGradient x1=\\"-91.234%\\" y1=\\"50%\\" x2=\\"98.574%\\" y2=\\"50%\\"
-                                                                          id=\\"a\\"><stop stop-color=\\"#32B79D\\"
-                                                                                       stop-opacity=\\".59\\" offset=\\"0%\\"/><stop
-                stop-color=\\"#33EAFF\\" stop-opacity=\\".59\\" offset=\\"35.525%\\"/><stop stop-color=\\"#7FCAFF\\" stop-opacity=\\".59\\"
-                                                                                offset=\\"73.603%\\"/><stop
-                stop-color=\\"#84A2FF\\" stop-opacity=\\".59\\" offset=\\"100%\\"/></linearGradient></defs><g
-                transform=\\"translate(-19)\\" fill=\\"url(#a)\\" fill-rule=\\"evenodd\\"><path
-                d=\\"M114.232.963h190.464c0 16.966-13.754 30.72-30.72 30.72H83.512c0-16.966 13.754-30.72 30.72-30.72zM80.44 56.259h116.736c0 16.966-13.754 30.72-30.72 30.72H49.72c0-16.966 13.754-30.72 30.72-30.72zM49.72 111.555h18.432c0 16.966-13.754 30.72-30.72 30.72H19c0-16.966 13.754-30.72 30.72-30.72z\\"/></g></svg>
-        </span>
-            <span class=\\"fd-shellbar__title\\">Corporate Portal</span>
-        </div>
-        <div class=\\"fd-shellbar__group fd-shellbar__group--actions\\">
-            <div class=\\"fd-shellbar__action fd-shellbar__action--desktop\\">
+            <div class=\\"fd-shellbar__action\\">
                 <button
                     class=\\"fd-button fd-button--transparent fd-shellbar__button\\"
-                    aria-label=\\"Joule Digital Assitant\\">
+                    aria-label=\\"Joule Digital Assitant\\" aria-haspopup=\\"dialog\\" aria-expanded=\\"false\\" title=\\"Joule Digital Assitant\\">
                     <i class=\\"sap-icon--da\\"></i>
+                </button>
+            </div>
+            <div class=\\"fd-shellbar__action\\">
+                <button
+                  class=\\"fd-button fd-button--transparent fd-shellbar__button\\"
+                  aria-label=\\"Notifications\\"
+                  title=\\"Notifications\\"
+                  aria-haspopup=\\"dialog\\" aria-expanded=\\"false\\"
+                >
+                  <i class=\\"sap-icon--bell\\"></i>
+                  <span class=\\"fd-button__badge\\">72</span>
+                </button>
+            </div>
+            <div class=\\"fd-shellbar__action\\">
+                <button
+                    class=\\"fd-button fd-button--transparent fd-shellbar__button\\"
+                    aria-label=\\"Feedback\\" aria-haspopup=\\"dialog\\" aria-expanded=\\"false\\" title=\\"Feedback\\">
+                    <i class=\\"sap-icon--feedback\\"></i>
+                </button>
+            </div>
+            <div class=\\"fd-shellbar__action\\">
+                <button
+                    class=\\"fd-button fd-button--transparent fd-shellbar__button\\"
+                    aria-label=\\"Help\\" aria-haspopup=\\"dialog\\" aria-expanded=\\"false\\" title=\\"Help\\">
+                    <i class=\\"sap-icon--sys-help\\"></i>
                 </button>
             </div>
             <div class=\\"fd-shellbar__action\\">
@@ -40965,7 +40482,7 @@ exports[`Check stories > Components/Shellbar > Story ProductSwitch > Should matc
                     <div class=\\"fd-popover__control\\">
                         <div class=\\"fd-button fd-button--transparent fd-shellbar__button fd-user-menu__control\\"
                              onclick=\\"onPopoverClick('MKFAY276')\\" aria-controls=\\"MKFAY276\\" aria-expanded=\\"false\\"
-                             aria-haspopup=\\"true\\" role=\\"button\\" tabindex=\\"0\\">
+                             aria-haspopup=\\"dialog\\" role=\\"button\\" tabindex=\\"0\\" aria-label=\\"User Menu\\" title=\\"User Menu\\">
                             <span
                                 class=\\"fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--thumbnail fd-shellbar__avatar--circle\\"
                                 style=\\"background-image: url('assets/images/avatars/1.svg');\\"
@@ -40992,19 +40509,20 @@ exports[`Check stories > Components/Shellbar > Story ProductSwitch > Should matc
                     </div>
                 </div>
             </div>
-            <div class=\\"fd-shellbar__action fd-shellbar__action--desktop\\">
+            <div class=\\"fd-shellbar__action\\">
                 <div class=\\"fd-product-switch\\">
                     <div class=\\"fd-popover fd-popover--right\\">
                         <button
                             class=\\"fd-button fd-button--transparent fd-shellbar__button fd-popover__control\\"
-                            aria-label=\\"Image label\\"
+                            aria-label=\\"Product Switcher\\"
+                            title=\\"Product Switcher\\"
                             aria-controls=\\"product-switch-body\\"
-                            aria-expanded=\\"true\\"
-                            aria-haspopup=\\"true\\"
+                            aria-expanded=\\"false\\"
+                            aria-haspopup=\\"dialog\\"
                             onclick=\\"onPopoverClick('product-switch-body')\\">
                             <i class=\\"sap-icon--grid\\"></i>
                         </button>
-                        <div class=\\"fd-popover__body fd-popover__body--right\\" aria-hidden=\\"false\\"
+                        <div class=\\"fd-popover__body fd-popover__body--right\\" aria-hidden=\\"true\\"
                              id=\\"product-switch-body\\">
                             <div class=\\"fd-product-switch__body\\">
                                 <ul class=\\"fd-product-switch__list\\">
@@ -41036,71 +40554,6 @@ exports[`Check stories > Components/Shellbar > Story ProductSwitch > Should matc
                                             <div class=\\"fd-product-switch__title\\">Guided Buying</div>
                                         </div>
                                     </li>
-                                    <li class=\\"fd-product-switch__item\\">
-                                        <div class=\\"fd-product-switch__icon sap-icon--cart-3\\"></div>
-                                        <div class=\\"fd-product-switch__text\\">
-                                            <div class=\\"fd-product-switch__title\\">Strategic Procurement</div>
-                                        </div>
-                                    </li>
-                                    <li class=\\"fd-product-switch__item\\">
-                                        <div class=\\"fd-product-switch__icon sap-icon--flight\\"></div>
-                                        <div class=\\"fd-product-switch__text\\">
-                                            <div class=\\"fd-product-switch__title\\">Travel & Expense</div>
-                                            <div class=\\"fd-product-switch__subtitle\\">Concur</div>
-                                        </div>
-                                    </li>
-                                    <li class=\\"fd-product-switch__item\\">
-                                        <div class=\\"fd-product-switch__icon sap-icon--shipping-status\\"></div>
-                                        <div class=\\"fd-product-switch__text\\">
-                                            <div class=\\"fd-product-switch__title\\">Vendor Management</div>
-                                            <div class=\\"fd-product-switch__subtitle\\">Fieldglass</div>
-                                        </div>
-                                    </li>
-                                    <li class=\\"fd-product-switch__item\\">
-                                        <div class=\\"fd-product-switch__icon sap-icon--customer\\"></div>
-                                        <div class=\\"fd-product-switch__text\\">
-                                            <div class=\\"fd-product-switch__title\\">Human Capital Management</div>
-                                        </div>
-                                    </li>
-                                    <li class=\\"fd-product-switch__item\\">
-                                        <div class=\\"fd-product-switch__icon sap-icon--sales-notification\\"></div>
-                                        <div class=\\"fd-product-switch__text\\">
-                                            <div class=\\"fd-product-switch__title\\">Sales Cloud</div>
-                                            <div class=\\"fd-product-switch__subtitle\\">Sales Cloud</div>
-                                        </div>
-                                    </li>
-                                    <li class=\\"fd-product-switch__item\\">
-                                        <div class=\\"fd-product-switch__icon sap-icon--retail-store\\"></div>
-                                        <div class=\\"fd-product-switch__text\\">
-                                            <div class=\\"fd-product-switch__title\\">Commerce Cloud</div>
-                                            <div class=\\"fd-product-switch__subtitle\\">Commerce Cloud</div>
-                                        </div>
-                                    </li>
-                                    <li class=\\"fd-product-switch__item\\">
-                                        <div class=\\"fd-product-switch__icon sap-icon--marketing-campaign\\"></div>
-                                        <div class=\\"fd-product-switch__text\\">
-                                            <div class=\\"fd-product-switch__title\\">Marketing Cloud</div>
-                                            <div class=\\"fd-product-switch__subtitle\\">Marketing Cloud</div>
-                                        </div>
-                                    </li>
-                                    <li class=\\"fd-product-switch__item\\">
-                                        <div class=\\"fd-product-switch__icon sap-icon--family-care\\"></div>
-                                        <div class=\\"fd-product-switch__text\\">
-                                            <div class=\\"fd-product-switch__title\\">Service Cloud</div>
-                                        </div>
-                                    </li>
-                                    <li class=\\"fd-product-switch__item\\">
-                                        <div class=\\"fd-product-switch__icon sap-icon--customer-briefing\\"></div>
-                                        <div class=\\"fd-product-switch__text\\">
-                                            <div class=\\"fd-product-switch__title\\">Customer Data Cloud</div>
-                                        </div>
-                                    </li>
-                                    <li class=\\"fd-product-switch__item\\">
-                                        <div class=\\"fd-product-switch__icon sap-icon--batch-payments\\"></div>
-                                        <div class=\\"fd-product-switch__text\\">
-                                            <div class=\\"fd-product-switch__title\\">S/4HANA</div>
-                                        </div>
-                                    </li>
                                 </ul>
                             </div>
                         </div>
@@ -41113,126 +40566,238 @@ exports[`Check stories > Components/Shellbar > Story ProductSwitch > Should matc
 "
 `;
 
-exports[`Check stories > Components/Shellbar > Story ResponsivePaddings > Should match snapshot 1`] = `
-"<div style=\\"height:300px\\">
-    <div class=\\"fd-shellbar fd-shellbar--responsive-paddings\\">
+exports[`Check stories > Components/Shellbar > Story OverflowToolbar > Should match snapshot 1`] = `
+"<div style=\\"height:250px\\">
+    <div class=\\"fd-shellbar fd-shellbar--side-nav\\" role=\\"banner\\" aria-label=\\"Shell Bar\\">
         <div class=\\"fd-shellbar__group fd-shellbar__group--product\\">
-            <span class=\\"fd-shellbar__logo\\"><img src=\\"//unpkg.com/fundamental-styles/dist/images/sap-logo.png\\"
-                                                 srcset=\\"//unpkg.com/fundamental-styles/dist/images/sap-logo@2x.png 1x, //unpkg.com/fundamental-styles/dist/images/sap-logo@3x.png 2x, //unpkg.com/fundamental-styles/dist/images/sap-logo@4x.png 3x\\"
-                                                 width=\\"48\\" height=\\"24\\" alt=\\"SAP\\"></span>
-            <span class=\\"fd-shellbar__title\\">Corporate Portal</span>
-        </div>
+            <button aria-label=\\"Main Navigation\\" aria-expanded=\\"false\\" class=\\"fd-button fd-button--transparent fd-shellbar__button\\">
+                <i class=\\"sap-icon--menu2\\"></i>
+            </button>
+            <div class=\\"fd-shellbar__branding\\" role=\\"link\\" tabindex=\\"0\\" aria-label=\\"SAP Corporate Portal Solution Name Home\\">
+                <span class=\\"fd-shellbar__logo\\"><img src=\\"//unpkg.com/fundamental-styles/dist/images/sap-logo.png\\" srcset=\\"//unpkg.com/fundamental-styles/dist/images/sap-logo@2x.png 1x, //unpkg.com/fundamental-styles/dist/images/sap-logo@3x.png 2x, //unpkg.com/fundamental-styles/dist/images/sap-logo@4x.png 3x\\" width=\\"48\\" height=\\"24\\" alt=\\"SAP\\"></span>
 
-
-        <div
-        class=\\"fd-shellbar__group fd-shellbar__group--center fd-shellbar__group--mobile-flex\\"
-      >
-        <div class=\\"fd-shellbar__action fd-shellbar__action--grow\\">
-          <div id=\\"JKHhjk7234k2a\\" class=\\"fd-input-group fd-shellbar__search-field\\">
-            <input
-              aria-label=\\"search-input\\"
-              type=\\"text\\"
-              onfocus=\\"addClass('JKHhjk7234k2a', 'is-focus')\\"
-              onblur=\\"removeClass('JKHhjk7234k2a', 'is-focus')\\"
-              class=\\"fd-input fd-input-group__input fd-shellbar__search-field-input\\"
-              id=\\"F4GcX348b1\\"
-              placeholder=\\"Search everything\\"
-              value=\\"Typing...\\"
-            />
-            <div
-              class=\\"fd-input-group__addon fd-shellbar__search-field-addon fd-shellbar__search-cancel fd-input-group__addon--button\\"
-            >
-              <button
-                aria-label=\\"button-search\\"
-                class=\\"fd-shellbar__button fd-button fd-button--transparent\\"
-              >
-                <i class=\\"sap-icon--decline\\"></i>
-              </button>
+                <div class=\\"fd-shellbar__product\\">
+                    <span class=\\"fd-shellbar__title\\">Corporate Portal</span>
+                    <span class=\\"fd-shellbar__subtitle\\">Solution name</span>
+                </div>
             </div>
-            <div
-              class=\\"fd-input-group__addon fd-shellbar__search-field-addon fd-shellbar__search-submit fd-input-group__addon--button\\"
-            >
-              <button
-                aria-label=\\"button-search\\"
-                class=\\"fd-shellbar__button fd-button fd-button--transparent\\"
-              >
-                <i class=\\"sap-icon--search\\"></i>
-              </button>
-            </div>
-            <div class=\\"fd-shellbar__search-field-helper\\"></div>
-          </div>
-        </div>
-        <div
-          class=\\"fd-shellbar__action fd-shellbar__action--mobile fd-shellbar__action--shrink\\"
-        >
-          <button class=\\"fd-button fd-button--transparent\\">Cancel</button>
-        </div>
-      </div>
-
-        <div class=\\"fd-shellbar__group fd-shellbar__group--actions\\">
-            <div class=\\"fd-shellbar__action fd-shellbar__action--desktop\\">
-                <button
-                    class=\\"fd-button fd-button--transparent fd-shellbar__button\\"
-                    aria-label=\\"Joule Digital Assitant\\">
-                    <i class=\\"sap-icon--da\\"></i>
-                </button>
-            </div>
-            <div class=\\"fd-shellbar__action fd-shellbar__action--desktop\\">
-                <button class=\\"fd-button fd-button--transparent fd-shellbar__button\\" aria-label=\\"Notifications\\">
-                    <i class=\\"sap-icon--bell\\"></i>
-                    <span class=\\"fd-button__badge\\">251K</span>
-                </button>
-            </div>
-            <div class=\\"fd-shellbar__action fd-shellbar__action--mobile\\">
-                <div class=\\"fd-shellbar-collapse\\">
-                    <div class=\\"fd-popover fd-popover--right\\">
-                        <div class=\\"fd-popover__control\\">
-                            <div class=\\"fd-shellbar-collapse--control\\" onclick=\\"onPopoverClick('CWaGGD78')\\"
-                                 aria-controls=\\"CWaGGD78\\" aria-expanded=\\"false\\" aria-haspopup=\\"true\\" role=\\"button\\">
-                                <button class=\\"fd-button fd-button--transparentfd-shellbar__button\\" aria-controls=\\"undefined\\"
-                                        aria-haspopup=\\"true\\" aria-expanded=\\"false\\">
-                                    <i class=\\"sap-icon--overflow\\"></i>
-                                    <span class=\\"fd-buton__badge\\">251K</span>
-                                </button>
-                            </div>
-                        </div>
-                        <div class=\\"fd-popover__body fd-popover__body--no-arrow fd-popover__body--right\\"
-                             aria-hidden=\\"true\\" id=\\"CWaGGD78\\">
-                            <nav class=\\"fd-menu\\">
-                                <ul class=\\"fd-menu__list fd-menu__list--no-shadow\\">
-                                    <li class=\\"fd-menu__item\\">
-                                        <a role=\\"button\\" class=\\"fd-menu__link\\">
-                                            <span class=\\"fd-menu__title\\">Search</span>
-                                        </a>
-                                    </li>
-                                    <li class=\\"fd-menu__item\\">
-                                        <a role=\\"button\\" class=\\"fd-menu__link\\">
-                                            <span class=\\"fd-menu__title\\">Joule</span>
-                                        </a>
-                                    </li>
-                                    <li class=\\"fd-menu__item\\">
-                                        <a role=\\"button\\" class=\\"fd-menu__link\\">
-                                            <span class=\\"fd-menu__title\\">Notifications Out</span>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </nav>
-                        </div>
+            <span class=\\"fd-shellbar__separator\\"></span>
+            <div class=\\"fd-shellbar__context-area\\" role=\\"group\\" aria-label=\\"Additional info\\">
+                <div class=\\"fd-popover\\">
+                    <div class=\\"fd-popover__control\\">
+                      <button
+                        class=\\"fd-button fd-button--transparent fd-shellbar__button fd-shellbar__button--menu fd-button--menu\\"
+                        onclick=\\"onPopoverClick('9GLB269412');\\"
+                        aria-controls=\\"9GLB269412\\"
+                        aria-haspopup=\\"true\\"
+                        aria-expanded=\\"false\\"
+                      >
+                        <span class=\\"fd-button__text\\">EMEA</span>
+                        <i class=\\"sap-icon--slim-arrow-down\\"></i>
+                      </button>
+                    </div>
+                    <div
+                      class=\\"fd-popover__body fd-popover__body--no-arrow\\"
+                      aria-hidden=\\"true\\"
+                      id=\\"9GLB269412\\"
+                    >
+                      <nav class=\\"fd-menu\\">
+                        <ul class=\\"fd-menu__list fd-menu__list--no-shadow\\">
+                          <li class=\\"fd-menu__item\\">
+                            <a role=\\"button\\" class=\\"fd-menu__link\\">
+                              <span class=\\"fd-menu__title\\">Application A</span>
+                            </a>
+                          </li>
+                          <li class=\\"fd-menu__item\\">
+                            <a role=\\"button\\" class=\\"fd-menu__link\\">
+                              <span class=\\"fd-menu__title\\">Application B</span>
+                            </a>
+                          </li>
+                          <li class=\\"fd-menu__item\\">
+                            <a role=\\"button\\" class=\\"fd-menu__link\\">
+                              <span class=\\"fd-menu__title\\">Application C</span>
+                            </a>
+                          </li>
+                          <li class=\\"fd-menu__item\\">
+                            <a role=\\"button\\" class=\\"fd-menu__link\\">
+                              <span class=\\"fd-menu__title\\">Application D</span>
+                            </a>
+                          </li>
+                        </ul>
+                      </nav>
                     </div>
                 </div>
             </div>
+        </div>
+        <div class=\\"fd-shellbar__group fd-shellbar__group--actions\\">
+          <div class=\\"fd-toolbar fd-toolbar--clear fd-toolbar--transparent fd-shellbar__toolbar\\" role=\\"toolbar\\" aria-label=\\"Toolbar\\">
+            <div id=\\"YDGFD82347TED\\" class=\\"fd-input-group fd-shellbar__search-field\\">
+              <input
+                aria-label=\\"search-input\\"
+                type=\\"text\\"
+                onfocus=\\"addClass('YDGFD82347TED', 'is-focus')\\"
+                onblur=\\"removeClass('YDGFD82347TED', 'is-focus')\\"
+                class=\\"fd-input fd-input-group__input fd-shellbar__search-field-input\\"
+                id=\\"F4GcX348b1\\"
+                placeholder=\\"Search everything\\"
+              />
+              <div
+                class=\\"fd-input-group__addon fd-shellbar__search-field-addon fd-shellbar__search-cancel fd-input-group__addon--button\\"
+              >
+                <button
+                  aria-label=\\"button-search\\"
+                  class=\\"fd-shellbar__button fd-button fd-button--transparent\\"
+                >
+                  <i class=\\"sap-icon--decline\\"></i>
+                </button>
+              </div>
+              <div
+                class=\\"fd-input-group__addon fd-shellbar__search-field-addon fd-shellbar__search-submit fd-input-group__addon--button\\"
+              >
+                <button
+                  aria-label=\\"button-search\\"
+                  class=\\"fd-shellbar__button fd-button fd-button--transparent\\"
+                >
+                  <i class=\\"sap-icon--search\\"></i>
+                </button>
+              </div>
+              <div class=\\"fd-shellbar__search-field-helper\\"></div>
+            </div>
+            <button
+              class=\\"fd-button fd-button--transparent fd-shellbar__button\\"
+              aria-label=\\"Joule Digital Assitant\\" aria-haspopup=\\"dialog\\" aria-expanded=\\"false\\" title=\\"Joule Digital Assitant\\">
+              <i class=\\"sap-icon--da\\"></i>
+            </button>
+            <button
+              class=\\"fd-button fd-button--transparent fd-shellbar__button\\"
+              aria-label=\\"Notifications\\"
+              title=\\"Notifications\\"
+              aria-haspopup=\\"dialog\\" aria-expanded=\\"false\\"
+            >
+              <i class=\\"sap-icon--bell\\"></i>
+              <span class=\\"fd-button__badge\\">72</span>
+            </button>
+            <button
+              class=\\"fd-button fd-button--transparent fd-shellbar__button\\"
+              aria-label=\\"Feedback\\" aria-haspopup=\\"dialog\\" aria-expanded=\\"false\\" title=\\"Feedback\\">
+              <i class=\\"sap-icon--feedback\\"></i>
+            </button>
+            <button
+                class=\\"fd-button fd-button--transparent fd-shellbar__button\\"
+                aria-label=\\"Help\\" aria-haspopup=\\"dialog\\" aria-expanded=\\"false\\" title=\\"Help\\">
+                <i class=\\"sap-icon--sys-help\\"></i>
+            </button>
+          </div>
+          <div class=\\"fd-shellbar__action\\">
+            <div class=\\"fd-popover fd-popover--right\\">
+                <div class=\\"fd-popover__control\\">
+                    <div class=\\"fd-button fd-button--transparent fd-shellbar__button fd-user-menu__control\\"
+                         onclick=\\"onPopoverClick('MKFAY276YRW')\\" aria-controls=\\"MKFAY276YRW\\" aria-expanded=\\"false\\"
+                         aria-haspopup=\\"dialog\\" role=\\"button\\" tabindex=\\"0\\" aria-label=\\"User Menu\\" title=\\"User Menu\\">
+                        <span
+                            class=\\"fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--thumbnail fd-shellbar__avatar--circle\\"
+                            style=\\"background-image: url('assets/images/avatars/1.svg');\\"
+                            aria-label=\\"William Wallingham\\">
+                        </span>
+                    </div>
+                </div>
+                <div class=\\"fd-popover__body fd-popover__body--no-arrow fd-popover__body--right\\" aria-hidden=\\"true\\"
+                     id=\\"MKFAY276YRW\\">
+                    <nav class=\\"fd-menu\\">
+                        <ul class=\\"fd-menu__list fd-menu__list--no-shadow\\">
+                            <li class=\\"fd-menu__item\\">
+                                <a role=\\"button\\" class=\\"fd-menu__link\\">
+                                    <span class=\\"fd-menu__title\\">Settings</span>
+                                </a>
+                            </li>
+                            <li class=\\"fd-menu__item\\">
+                                <a role=\\"button\\" class=\\"fd-menu__link\\">
+                                    <span class=\\"fd-menu__title\\">Sign Out</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+          </div>
+          <div class=\\"fd-shellbar__action\\">
+              <div class=\\"fd-product-switch\\">
+                  <div class=\\"fd-popover fd-popover--right\\">
+                      <button
+                          class=\\"fd-button fd-button--transparent fd-shellbar__button fd-popover__control\\"
+                          aria-label=\\"Product Switcher\\"
+                          title=\\"Product Switcher\\"
+                          aria-controls=\\"UYYAY276YRW\\"
+                          aria-expanded=\\"false\\"
+                          aria-haspopup=\\"dialog\\"
+                          onclick=\\"onPopoverClick('UYYAY276YRW')\\">
+                          <i class=\\"sap-icon--grid\\"></i>
+                      </button>
+                      <div class=\\"fd-popover__body fd-popover__body--right\\" aria-hidden=\\"true\\"
+                          id=\\"UYYAY276YRW\\">
+                          <div class=\\"fd-product-switch__body\\">
+                              <ul class=\\"fd-product-switch__list\\">
+                                  <li class=\\"fd-product-switch__item\\">
+                                      <div class=\\"fd-product-switch__icon sap-icon--home\\"></div>
+                                      <div class=\\"fd-product-switch__text\\">
+                                          <div class=\\"fd-product-switch__title\\">Home</div>
+                                          <div class=\\"fd-product-switch__subtitle\\">Central Home</div>
+                                      </div>
+                                  </li>
+                                  <li class=\\"fd-product-switch__item selected\\">
+                                      <div
+                                          class=\\"fd-product-switch__icon sap-icon--business-objects-experience\\"></div>
+                                      <div class=\\"fd-product-switch__text\\">
+                                          <div class=\\"fd-product-switch__title\\">Analytics Cloud</div>
+                                          <div class=\\"fd-product-switch__subtitle\\">Analytics Cloud</div>
+                                      </div>
+                                  </li>
+                                  <li class=\\"fd-product-switch__item\\">
+                                      <div class=\\"fd-product-switch__icon sap-icon--contacts\\"></div>
+                                      <div class=\\"fd-product-switch__text\\">
+                                          <div class=\\"fd-product-switch__title\\">Catalog</div>
+                                          <div class=\\"fd-product-switch__subtitle\\">Ariba</div>
+                                      </div>
+                                  </li>
+                                  <li class=\\"fd-product-switch__item\\">
+                                      <div class=\\"fd-product-switch__icon sap-icon--credit-card\\"></div>
+                                      <div class=\\"fd-product-switch__text\\">
+                                          <div class=\\"fd-product-switch__title\\">Guided Buying</div>
+                                      </div>
+                                  </li>
+                              </ul>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+        </div>
+    </div>
+</div>"
+`;
+
+exports[`Check stories > Components/Shellbar > Story Primary > Should match snapshot 1`] = `
+"<div style=\\"height:150px\\">
+    <div class=\\"fd-shellbar\\" role=\\"banner\\" aria-label=\\"Shell Bar\\">
+        <div class=\\"fd-shellbar__group fd-shellbar__group--product\\">
+            <div class=\\"fd-shellbar__branding\\" role=\\"link\\" tabindex=\\"0\\" aria-label=\\"SAP Corporate Portal Home\\">
+                <span class=\\"fd-shellbar__logo\\"><img src=\\"//unpkg.com/fundamental-styles/dist/images/sap-logo.png\\" srcset=\\"//unpkg.com/fundamental-styles/dist/images/sap-logo@2x.png 1x, //unpkg.com/fundamental-styles/dist/images/sap-logo@3x.png 2x, //unpkg.com/fundamental-styles/dist/images/sap-logo@4x.png 3x\\" width=\\"48\\" height=\\"24\\" alt=\\"SAP\\"></span>
+                <span class=\\"fd-shellbar__title\\">Corporate Portal</span>
+            </div>
+        </div>
+        <div class=\\"fd-shellbar__group fd-shellbar__group--actions\\">
             <div class=\\"fd-shellbar__action\\">
                 <div class=\\"fd-popover fd-popover--right\\">
                     <div class=\\"fd-popover__control\\">
-                        <div class=\\"fd-button fd-button--transparent fd-shellbar__button fd-user-menu__control\\"
-                             onclick=\\"onPopoverClick('DD35G276')\\" aria-controls=\\"DD35G276\\" aria-expanded=\\"false\\"
-                             aria-haspopup=\\"true\\" role=\\"button\\" tabindex=\\"0\\">
+                        <div class=\\"fd-button fd-button--transparent fd-shellbar__button fd-user-menu__control\\" aria-controls=\\"WV3AY276bb\\" aria-expanded=\\"false\\" aria-haspopup=\\"true\\" role=\\"button\\" tabindex=\\"0\\">
                             <span
-                                class=\\"fd-avatar fd-avatar--xs fd-avatar--circle fd-shellbar__avatar--circle\\">WW</span>
+                                class=\\"fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--thumbnail fd-shellbar__avatar--circle\\"
+                                style=\\"background-image: url('assets/images/avatars/1.svg');\\"
+                                aria-label=\\"William Wallingham\\">
+                            </span>
                         </div>
                     </div>
-                    <div class=\\"fd-popover__body fd-popover__body--no-arrow fd-popover__body--right\\" aria-hidden=\\"true\\"
-                         id=\\"DD35G276\\">
+                    <div class=\\"fd-popover__body fd-popover__body--no-arrow fd-popover__body--right\\" aria-hidden=\\"true\\" id=\\"WV3AY276bb\\">
                         <nav class=\\"fd-menu\\">
                             <ul class=\\"fd-menu__list fd-menu__list--no-shadow\\">
                                 <li class=\\"fd-menu__item\\">
@@ -41253,67 +40818,40 @@ exports[`Check stories > Components/Shellbar > Story ResponsivePaddings > Should
         </div>
     </div>
 </div>
-"
-`;
 
-exports[`Check stories > Components/Shellbar > Story WithoutCenter > Should match snapshot 1`] = `
-"<div style=\\"height:300px; max-width: 1024px;\\">
-<div class=\\"fd-shellbar fd-shellbar--m\\">
-    <div class=\\"fd-shellbar__group fd-shellbar__group--product fd-shellbar__group--shrink\\">
-        <span class=\\"fd-shellbar__logo\\"><img src=\\"//unpkg.com/fundamental-styles/dist/images/sap-logo.png\\"
-                                             srcset=\\"//unpkg.com/fundamental-styles/dist/images/sap-logo@2x.png 1x, //unpkg.com/fundamental-styles/dist/images/sap-logo@3x.png 2x, //unpkg.com/fundamental-styles/dist/images/sap-logo@4x.png 3x\\"
-                                             width=\\"48\\" height=\\"24\\" alt=\\"SAP\\"></span>
-        <span class=\\"fd-shellbar__title\\">Corporate Portal</span>
-    </div>
-    <div class=\\"fd-shellbar__group fd-shellbar__group--actions fd-shellbar__group--basis-auto\\">
-        <div class=\\"fd-shellbar__action fd-shellbar__action--desktop\\">
-            <button class=\\"fd-button fd-button--transparent fd-shellbar__button\\" aria-label=\\"Search\\">
-                <i class=\\"sap-icon--search\\"></i>
-            </button>
+<br><br>
+
+<div style=\\"height:150px\\">
+    <div class=\\"fd-shellbar\\" aria-label=\\"Shell Bar\\">
+        <div class=\\"fd-shellbar__group fd-shellbar__group--product\\">
+            <div class=\\"fd-shellbar__branding\\" role=\\"link\\" tabindex=\\"0\\" aria-label=\\"SAP Corporate Portal Solution Name Home\\">
+                <span class=\\"fd-shellbar__logo\\"><img src=\\"//unpkg.com/fundamental-styles/dist/images/sap-logo.png\\" srcset=\\"//unpkg.com/fundamental-styles/dist/images/sap-logo@2x.png 1x, //unpkg.com/fundamental-styles/dist/images/sap-logo@3x.png 2x, //unpkg.com/fundamental-styles/dist/images/sap-logo@4x.png 3x\\" width=\\"48\\" height=\\"24\\" alt=\\"SAP\\"></span>
+
+                <div class=\\"fd-shellbar__product\\">
+                    <span class=\\"fd-shellbar__title\\">Corporate Portal</span>
+                    <span class=\\"fd-shellbar__subtitle\\">Solution name</span>
+                </div>
+            </div>
         </div>
-        <div class=\\"fd-shellbar__action fd-shellbar__action--desktop\\">
-            <button
-                class=\\"fd-button fd-button--transparent fd-shellbar__button\\"
-                aria-label=\\"Joule Digital Assitant\\">
-                <i class=\\"sap-icon--da\\"></i>
-            </button>
-        </div>
-        <div class=\\"fd-shellbar__action fd-shellbar__action--desktop\\">
-            <button class=\\"fd-button fd-button--transparent fd-shellbar__button\\" aria-label=\\"Notifications\\">
-                <i class=\\"sap-icon--bell\\"></i>
-                <span class=\\"fd-button__badge\\">251K</span>
-            </button>
-        </div>
-        <div class=\\"fd-shellbar__action fd-shellbar__action--mobile\\">
-            <div class=\\"fd-shellbar-collapse\\">
+        <div class=\\"fd-shellbar__group fd-shellbar__group--actions\\">
+            <div class=\\"fd-shellbar__action\\">
                 <div class=\\"fd-popover fd-popover--right\\">
                     <div class=\\"fd-popover__control\\">
-                        <div class=\\"fd-shellbar-collapse--control\\" onclick=\\"onPopoverClick('CWaGNGD78')\\"
-                             aria-controls=\\"CWaGNGD78\\" aria-expanded=\\"false\\" aria-haspopup=\\"true\\" role=\\"button\\">
-                            <button class=\\"fd-button fd-button--transparent fd-shellbar__button\\" aria-controls=\\"undefined\\"
-                                    aria-haspopup=\\"true\\" aria-expanded=\\"false\\">
-                                <i class=\\"sap-icon--overflow\\"></i>
-                                <span class=\\"fd-button__badge\\">251K</span>
-                            </button>
+                        <div class=\\"fd-button fd-button--transparent fd-shellbar__button fd-user-menu__control\\" aria-controls=\\"WV3AY276\\" aria-expanded=\\"false\\" aria-haspopup=\\"true\\" role=\\"button\\" tabindex=\\"0\\">
+                            <span class=\\"fd-avatar fd-avatar--xs fd-avatar--circle fd-shellbar__avatar--circle\\">SD</span>
                         </div>
                     </div>
-                    <div class=\\"fd-popover__body fd-popover__body--no-arrow fd-popover__body--right\\"
-                         aria-hidden=\\"true\\" id=\\"CWaGNGD78\\">
+                    <div class=\\"fd-popover__body fd-popover__body--no-arrow fd-popover__body--right\\" aria-hidden=\\"true\\" id=\\"WV3AY276\\">
                         <nav class=\\"fd-menu\\">
                             <ul class=\\"fd-menu__list fd-menu__list--no-shadow\\">
                                 <li class=\\"fd-menu__item\\">
                                     <a role=\\"button\\" class=\\"fd-menu__link\\">
-                                        <span class=\\"fd-menu__title\\">Search</span>
+                                        <span class=\\"fd-menu__title\\">Settings</span>
                                     </a>
                                 </li>
                                 <li class=\\"fd-menu__item\\">
                                     <a role=\\"button\\" class=\\"fd-menu__link\\">
-                                        <span class=\\"fd-menu__title\\">Joule</span>
-                                    </a>
-                                </li>
-                                <li class=\\"fd-menu__item\\">
-                                    <a role=\\"button\\" class=\\"fd-menu__link\\">
-                                        <span class=\\"fd-menu__title\\">Notifications Out</span>
+                                        <span class=\\"fd-menu__title\\">Sign Out</span>
                                     </a>
                                 </li>
                             </ul>
@@ -41322,37 +40860,849 @@ exports[`Check stories > Components/Shellbar > Story WithoutCenter > Should matc
                 </div>
             </div>
         </div>
-        <div class=\\"fd-shellbar__action\\">
-            <div class=\\"fd-popover fd-popover--right\\">
-                <div class=\\"fd-popover__control\\">
-                    <div class=\\"fd-button fd-button--transparent fd-shellbar__button fd-user-menu__control\\"
-                         onclick=\\"onPopoverClick('DD35GBK6')\\" aria-controls=\\"DD35GBK6\\" aria-expanded=\\"false\\"
-                         aria-haspopup=\\"true\\" role=\\"button\\" tabindex=\\"0\\">
-                        <span
-                            class=\\"fd-avatar fd-avatar--xs fd-avatar--circle fd-shellbar__avatar--circle\\">WW</span>
+    </div>
+</div>"
+`;
+
+exports[`Check stories > Components/Shellbar > Story ResponsivePaddings > Should match snapshot 1`] = `
+"<div style=\\"height:150px\\">
+    <div class=\\"fd-shellbar fd-shellbar--responsive-paddings\\" role=\\"banner\\" aria-label=\\"Shell Bar\\">
+        <div class=\\"fd-shellbar__group fd-shellbar__group--product\\">
+            <div class=\\"fd-shellbar__branding\\" role=\\"link\\" tabindex=\\"0\\" aria-label=\\"SAP Corporate Portal Solution Name Home\\">
+                <span class=\\"fd-shellbar__logo\\"><img src=\\"//unpkg.com/fundamental-styles/dist/images/sap-logo.png\\" srcset=\\"//unpkg.com/fundamental-styles/dist/images/sap-logo@2x.png 1x, //unpkg.com/fundamental-styles/dist/images/sap-logo@3x.png 2x, //unpkg.com/fundamental-styles/dist/images/sap-logo@4x.png 3x\\" width=\\"48\\" height=\\"24\\" alt=\\"SAP\\"></span>
+
+                <div class=\\"fd-shellbar__product\\">
+                    <span class=\\"fd-shellbar__title\\">Corporate Portal</span>
+                    <span class=\\"fd-shellbar__subtitle\\">Solution name</span>
+                </div>
+            </div>
+        </div>
+        <div class=\\"fd-shellbar__group fd-shellbar__group--actions\\">
+            <div class=\\"fd-shellbar__action\\">
+                <div id=\\"JKHhjk7234k\\" class=\\"fd-input-group fd-shellbar__search-field\\">
+                    <div
+                      class=\\"fd-input-group__addon fd-shellbar__search-field-category fd-input-group__addon--button\\"
+                    >
+                      <div class=\\"fd-select\\">
+                        <button
+                          aria-expanded=\\"false\\"
+                          aria-haspopup=\\"listbox\\"
+                          aria-labelledby=\\"cozySelectLabel cozySelectValue\\"
+                          class=\\"fd-select__control fd-shellbar__search-category\\"
+                          id=\\"cozySelectCombobox\\"
+                          onclick=\\"
+                                  toggleElAttrs('h0C6A325', ['aria-hidden']);
+                                  toggleElAttrs('cozySelectCombobox', ['aria-expanded']);
+                              \\"
+                          value=\\"List Item 1\\"
+                          tabindex=\\"0\\"
+                        >
+                          <span is=\\"cozySelectValue\\" class=\\"fd-select__text-content\\"
+                            >List Item 1</span
+                          >
+                          <span
+                            class=\\"fd-button fd-button--transparent fd-select__button fd-shellbar__search-dropdown\\"
+                          >
+                            <i class=\\"sap-icon--slim-arrow-down\\"></i>
+                          </span>
+                        </button>
+                      </div>
+                    </div>
+                    <input
+                      aria-label=\\"search-input\\"
+                      type=\\"text\\"
+                      onfocus=\\"addClass('JKHhjk7234kwedf', 'is-focus')\\"
+                      onblur=\\"removeClass('JKHhjk7234kwedf', 'is-focus')\\"
+                      class=\\"fd-input fd-input-group__input fd-shellbar__search-field-input\\"
+                      id=\\"F4GcX348b1\\"
+                      placeholder=\\"Search everything\\"
+                    />
+                    <div
+                      class=\\"fd-input-group__addon fd-shellbar__search-field-addon fd-shellbar__search-cancel fd-input-group__addon--button\\"
+                    >
+                      <button
+                        aria-label=\\"button-search\\"
+                        class=\\"fd-shellbar__button fd-button fd-button--transparent\\"
+                      >
+                        <i class=\\"sap-icon--decline\\"></i>
+                      </button>
+                    </div>
+                    <div
+                      class=\\"fd-input-group__addon fd-shellbar__search-field-addon fd-shellbar__search-submit fd-input-group__addon--button\\"
+                    >
+                      <button
+                        aria-label=\\"button-search\\"
+                        class=\\"fd-shellbar__button fd-button fd-button--transparent\\"
+                      >
+                        <i class=\\"sap-icon--search\\"></i>
+                      </button>
+                    </div>
+                    <div class=\\"fd-shellbar__search-field-helper\\"></div>
+                  </div>
+            </div>
+            <div class=\\"fd-shellbar__action\\">
+                <button
+                    class=\\"fd-button fd-button--transparent fd-shellbar__button\\"
+                    aria-label=\\"Joule Digital Assitant\\" aria-haspopup=\\"dialog\\" aria-expanded=\\"false\\" title=\\"Joule Digital Assitant\\">
+                    <i class=\\"sap-icon--da\\"></i>
+                </button>
+            </div>
+            <div class=\\"fd-shellbar__action\\">
+                <button
+                  class=\\"fd-button fd-button--transparent fd-shellbar__button\\"
+                  aria-label=\\"Notifications\\"
+                  title=\\"Notifications\\"
+                  aria-haspopup=\\"dialog\\" aria-expanded=\\"false\\"
+                >
+                  <i class=\\"sap-icon--bell\\"></i>
+                  <span class=\\"fd-button__badge\\">72</span>
+                </button>
+            </div>
+            <div class=\\"fd-shellbar__action\\">
+                <button
+                    class=\\"fd-button fd-button--transparent fd-shellbar__button\\"
+                    aria-label=\\"Feedback\\" aria-haspopup=\\"dialog\\" aria-expanded=\\"false\\" title=\\"Feedback\\">
+                    <i class=\\"sap-icon--feedback\\"></i>
+                </button>
+            </div>
+            <div class=\\"fd-shellbar__action\\">
+                <button
+                    class=\\"fd-button fd-button--transparent fd-shellbar__button\\"
+                    aria-label=\\"Help\\" aria-haspopup=\\"dialog\\" aria-expanded=\\"false\\" title=\\"Help\\">
+                    <i class=\\"sap-icon--sys-help\\"></i>
+                </button>
+            </div>
+            <div class=\\"fd-shellbar__action\\">
+                <div class=\\"fd-popover fd-popover--right\\">
+                    <div class=\\"fd-popover__control\\">
+                        <div class=\\"fd-button fd-button--transparent fd-shellbar__button fd-user-menu__control\\"
+                             onclick=\\"onPopoverClick('HSTTDY276')\\" aria-controls=\\"HSTTDY276\\" aria-expanded=\\"false\\"
+                             aria-haspopup=\\"dialog\\" role=\\"button\\" tabindex=\\"0\\" aria-label=\\"User Menu\\" title=\\"User Menu\\">
+                            <span
+                                class=\\"fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--thumbnail fd-shellbar__avatar--circle\\"
+                                style=\\"background-image: url('assets/images/avatars/1.svg');\\"
+                                aria-label=\\"William Wallingham\\">
+                            </span>
+                        </div>
+                    </div>
+                    <div class=\\"fd-popover__body fd-popover__body--no-arrow fd-popover__body--right\\" aria-hidden=\\"true\\"
+                         id=\\"HSTTDY276\\">
+                        <nav class=\\"fd-menu\\">
+                            <ul class=\\"fd-menu__list fd-menu__list--no-shadow\\">
+                                <li class=\\"fd-menu__item\\">
+                                    <a role=\\"button\\" class=\\"fd-menu__link\\">
+                                        <span class=\\"fd-menu__title\\">Settings</span>
+                                    </a>
+                                </li>
+                                <li class=\\"fd-menu__item\\">
+                                    <a role=\\"button\\" class=\\"fd-menu__link\\">
+                                        <span class=\\"fd-menu__title\\">Sign Out</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
                     </div>
                 </div>
-                <div class=\\"fd-popover__body fd-popover__body--no-arrow fd-popover__body--right\\" aria-hidden=\\"true\\"
-                     id=\\"DD35GBK6\\">
-                    <nav class=\\"fd-menu\\">
-                        <ul class=\\"fd-menu__list fd-menu__list--no-shadow\\">
-                            <li class=\\"fd-menu__item\\">
-                                <a role=\\"button\\" class=\\"fd-menu__link\\">
-                                    <span class=\\"fd-menu__title\\">Settings</span>
-                                </a>
-                            </li>
-                            <li class=\\"fd-menu__item\\">
-                                <a role=\\"button\\" class=\\"fd-menu__link\\">
-                                    <span class=\\"fd-menu__title\\">Sign Out</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </nav>
+            </div>
+            <div class=\\"fd-shellbar__action\\">
+                <div class=\\"fd-product-switch\\">
+                    <div class=\\"fd-popover fd-popover--right\\">
+                        <button
+                            class=\\"fd-button fd-button--transparent fd-shellbar__button fd-popover__control\\"
+                            aria-label=\\"Product Switcher\\"
+                            title=\\"Product Switcher\\"
+                            aria-controls=\\"YSGDGFD82347\\"
+                            aria-expanded=\\"false\\"
+                            aria-haspopup=\\"dialog\\"
+                            onclick=\\"onPopoverClick('YSGDGFD82347')\\">
+                            <i class=\\"sap-icon--grid\\"></i>
+                        </button>
+                        <div class=\\"fd-popover__body fd-popover__body--right\\" aria-hidden=\\"true\\"
+                             id=\\"YSGDGFD82347\\">
+                            <div class=\\"fd-product-switch__body\\">
+                                <ul class=\\"fd-product-switch__list\\">
+                                    <li class=\\"fd-product-switch__item\\">
+                                        <div class=\\"fd-product-switch__icon sap-icon--home\\"></div>
+                                        <div class=\\"fd-product-switch__text\\">
+                                            <div class=\\"fd-product-switch__title\\">Home</div>
+                                            <div class=\\"fd-product-switch__subtitle\\">Central Home</div>
+                                        </div>
+                                    </li>
+                                    <li class=\\"fd-product-switch__item selected\\">
+                                        <div
+                                            class=\\"fd-product-switch__icon sap-icon--business-objects-experience\\"></div>
+                                        <div class=\\"fd-product-switch__text\\">
+                                            <div class=\\"fd-product-switch__title\\">Analytics Cloud</div>
+                                            <div class=\\"fd-product-switch__subtitle\\">Analytics Cloud</div>
+                                        </div>
+                                    </li>
+                                    <li class=\\"fd-product-switch__item\\">
+                                        <div class=\\"fd-product-switch__icon sap-icon--contacts\\"></div>
+                                        <div class=\\"fd-product-switch__text\\">
+                                            <div class=\\"fd-product-switch__title\\">Catalog</div>
+                                            <div class=\\"fd-product-switch__subtitle\\">Ariba</div>
+                                        </div>
+                                    </li>
+                                    <li class=\\"fd-product-switch__item\\">
+                                        <div class=\\"fd-product-switch__icon sap-icon--credit-card\\"></div>
+                                        <div class=\\"fd-product-switch__text\\">
+                                            <div class=\\"fd-product-switch__title\\">Guided Buying</div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 </div>
+<div style=\\"height: 100px;\\"></div>"
+`;
+
+exports[`Check stories > Components/Shellbar > Story Responsiveness > Should match snapshot 1`] = `
+"<div class=\\"fd-shellbar fd-shellbar--side-nav\\" role=\\"banner\\" aria-label=\\"Shell Bar\\">
+  <div class=\\"fd-shellbar__group fd-shellbar__group--product\\">
+      <button aria-label=\\"Main Navigation\\" aria-expanded=\\"false\\" class=\\"fd-button fd-button--transparent fd-shellbar__button\\">
+          <i class=\\"sap-icon--menu2\\"></i>
+      </button>
+      <div class=\\"fd-shellbar__branding\\" role=\\"link\\" tabindex=\\"0\\" aria-label=\\"SAP Corporate Portal Solution Name Home\\">
+          <span class=\\"fd-shellbar__logo\\"><img src=\\"//unpkg.com/fundamental-styles/dist/images/sap-logo.png\\" srcset=\\"//unpkg.com/fundamental-styles/dist/images/sap-logo@2x.png 1x, //unpkg.com/fundamental-styles/dist/images/sap-logo@3x.png 2x, //unpkg.com/fundamental-styles/dist/images/sap-logo@4x.png 3x\\" width=\\"48\\" height=\\"24\\" alt=\\"SAP\\"></span>
+
+          <div class=\\"fd-shellbar__product\\">
+              <span class=\\"fd-shellbar__title\\">Corporate Portal</span>
+          </div>
+      </div>
+  </div>
+  <div class=\\"fd-shellbar__group fd-shellbar__group--actions\\">
+      <div class=\\"fd-shellbar__action\\">
+          <div id=\\"JKHhjk7234k22ierw\\" class=\\"fd-input-group fd-shellbar__search-field\\">
+              <input
+                aria-label=\\"search-input\\"
+                type=\\"text\\"
+                onfocus=\\"addClass('JKHhjk7234k22ierw', 'is-focus')\\"
+                onblur=\\"removeClass('JKHhjk7234k22ierw', 'is-focus')\\"
+                class=\\"fd-input fd-input-group__input fd-shellbar__search-field-input\\"
+                id=\\"F4GcX348b1\\"
+                placeholder=\\"Search everything\\"
+              />
+              <div
+                class=\\"fd-input-group__addon fd-shellbar__search-field-addon fd-shellbar__search-cancel fd-input-group__addon--button\\"
+              >
+                <button
+                  aria-label=\\"button-search\\"
+                  class=\\"fd-shellbar__button fd-button fd-button--transparent\\"
+                >
+                  <i class=\\"sap-icon--decline\\"></i>
+                </button>
+              </div>
+              <div
+                class=\\"fd-input-group__addon fd-shellbar__search-field-addon fd-shellbar__search-submit fd-input-group__addon--button\\"
+              >
+                <button
+                  aria-label=\\"button-search\\"
+                  class=\\"fd-shellbar__button fd-button fd-button--transparent\\"
+                >
+                  <i class=\\"sap-icon--search\\"></i>
+                </button>
+              </div>
+              <div class=\\"fd-shellbar__search-field-helper\\"></div>
+          </div>
+      </div>
+      <div class=\\"fd-shellbar__action\\">
+          <button
+              class=\\"fd-button fd-button--transparent fd-shellbar__button\\"
+              aria-label=\\"Joule Digital Assitant\\" aria-haspopup=\\"dialog\\" aria-expanded=\\"false\\" title=\\"Joule Digital Assitant\\">
+              <i class=\\"sap-icon--da\\"></i>
+          </button>
+      </div>
+      <div class=\\"fd-shellbar__action\\">
+          <button
+            class=\\"fd-button fd-button--transparent fd-shellbar__button\\"
+            aria-label=\\"Notifications\\"
+            title=\\"Notifications\\"
+            aria-haspopup=\\"dialog\\" aria-expanded=\\"false\\"
+          >
+            <i class=\\"sap-icon--bell\\"></i>
+            <span class=\\"fd-button__badge\\">72</span>
+          </button>
+      </div>
+      <div class=\\"fd-shellbar__action\\">
+          <button
+              class=\\"fd-button fd-button--transparent fd-shellbar__button\\"
+              aria-label=\\"Feedback\\" aria-haspopup=\\"dialog\\" aria-expanded=\\"false\\" title=\\"Feedback\\">
+              <i class=\\"sap-icon--feedback\\"></i>
+          </button>
+      </div>
+      <div class=\\"fd-shellbar__action\\">
+          <button
+              class=\\"fd-button fd-button--transparent fd-shellbar__button\\"
+              aria-label=\\"Help\\" aria-haspopup=\\"dialog\\" aria-expanded=\\"false\\" title=\\"Help\\">
+              <i class=\\"sap-icon--sys-help\\"></i>
+          </button>
+      </div>
+      <div class=\\"fd-shellbar__action\\">
+          <div class=\\"fd-popover fd-popover--right\\">
+              <div class=\\"fd-popover__control\\">
+                  <div class=\\"fd-button fd-button--transparent fd-shellbar__button fd-user-menu__control\\"
+                       onclick=\\"onPopoverClick('MKFAY276JAD')\\" aria-controls=\\"MKFAY276JAD\\" aria-expanded=\\"false\\"
+                       aria-haspopup=\\"dialog\\" role=\\"button\\" tabindex=\\"0\\" aria-label=\\"User Menu\\" title=\\"User Menu\\">
+                      <span
+                          class=\\"fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--thumbnail fd-shellbar__avatar--circle\\"
+                          style=\\"background-image: url('assets/images/avatars/1.svg');\\"
+                          aria-label=\\"William Wallingham\\">
+                      </span>
+                  </div>
+              </div>
+              <div class=\\"fd-popover__body fd-popover__body--no-arrow fd-popover__body--right\\" aria-hidden=\\"true\\"
+                   id=\\"MKFAY276JAD\\">
+                  <nav class=\\"fd-menu\\">
+                      <ul class=\\"fd-menu__list fd-menu__list--no-shadow\\">
+                          <li class=\\"fd-menu__item\\">
+                              <a role=\\"button\\" class=\\"fd-menu__link\\">
+                                  <span class=\\"fd-menu__title\\">Settings</span>
+                              </a>
+                          </li>
+                          <li class=\\"fd-menu__item\\">
+                              <a role=\\"button\\" class=\\"fd-menu__link\\">
+                                  <span class=\\"fd-menu__title\\">Sign Out</span>
+                              </a>
+                          </li>
+                      </ul>
+                  </nav>
+              </div>
+          </div>
+      </div>
+      <div class=\\"fd-shellbar__action\\">
+          <div class=\\"fd-product-switch\\">
+              <div class=\\"fd-popover fd-popover--right\\">
+                  <button
+                      class=\\"fd-button fd-button--transparent fd-shellbar__button fd-popover__control\\"
+                      aria-label=\\"Product Switcher\\"
+                      title=\\"Product Switcher\\"
+                      aria-controls=\\"POIYRQW\\"
+                      aria-expanded=\\"false\\"
+                      aria-haspopup=\\"dialog\\"
+                      onclick=\\"onPopoverClick('POIYRQW')\\">
+                      <i class=\\"sap-icon--grid\\"></i>
+                  </button>
+                  <div class=\\"fd-popover__body fd-popover__body--right\\" aria-hidden=\\"true\\"
+                       id=\\"POIYRQW\\">
+                      <div class=\\"fd-product-switch__body\\">
+                          <ul class=\\"fd-product-switch__list\\">
+                              <li class=\\"fd-product-switch__item\\">
+                                  <div class=\\"fd-product-switch__icon sap-icon--home\\"></div>
+                                  <div class=\\"fd-product-switch__text\\">
+                                      <div class=\\"fd-product-switch__title\\">Home</div>
+                                      <div class=\\"fd-product-switch__subtitle\\">Central Home</div>
+                                  </div>
+                              </li>
+                              <li class=\\"fd-product-switch__item selected\\">
+                                  <div
+                                      class=\\"fd-product-switch__icon sap-icon--business-objects-experience\\"></div>
+                                  <div class=\\"fd-product-switch__text\\">
+                                      <div class=\\"fd-product-switch__title\\">Analytics Cloud</div>
+                                      <div class=\\"fd-product-switch__subtitle\\">Analytics Cloud</div>
+                                  </div>
+                              </li>
+                              <li class=\\"fd-product-switch__item\\">
+                                  <div class=\\"fd-product-switch__icon sap-icon--contacts\\"></div>
+                                  <div class=\\"fd-product-switch__text\\">
+                                      <div class=\\"fd-product-switch__title\\">Catalog</div>
+                                      <div class=\\"fd-product-switch__subtitle\\">Ariba</div>
+                                  </div>
+                              </li>
+                              <li class=\\"fd-product-switch__item\\">
+                                  <div class=\\"fd-product-switch__icon sap-icon--credit-card\\"></div>
+                                  <div class=\\"fd-product-switch__text\\">
+                                      <div class=\\"fd-product-switch__title\\">Guided Buying</div>
+                                  </div>
+                              </li>
+                          </ul>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+<br><br>
+
+<div class=\\"fd-shellbar fd-shellbar--side-nav\\" role=\\"banner\\" aria-label=\\"Shell Bar\\" style=\\"max-width: 1024px;\\">
+  <div class=\\"fd-shellbar__group fd-shellbar__group--product\\">
+      <button aria-label=\\"Main Navigation\\" aria-expanded=\\"false\\" class=\\"fd-button fd-button--transparent fd-shellbar__button\\">
+          <i class=\\"sap-icon--menu2\\"></i>
+      </button>
+      <div class=\\"fd-shellbar__branding\\" role=\\"link\\" tabindex=\\"0\\" aria-label=\\"SAP Corporate Portal Solution Name Home\\">
+          <span class=\\"fd-shellbar__logo\\"><img src=\\"//unpkg.com/fundamental-styles/dist/images/sap-logo.png\\" srcset=\\"//unpkg.com/fundamental-styles/dist/images/sap-logo@2x.png 1x, //unpkg.com/fundamental-styles/dist/images/sap-logo@3x.png 2x, //unpkg.com/fundamental-styles/dist/images/sap-logo@4x.png 3x\\" width=\\"48\\" height=\\"24\\" alt=\\"SAP\\"></span>
+
+          <div class=\\"fd-shellbar__product\\">
+              <span class=\\"fd-shellbar__title\\">Corporate Portal</span>
+          </div>
+      </div>
+  </div>
+  <div class=\\"fd-shellbar__group fd-shellbar__group--actions\\">
+      <div class=\\"fd-shellbar__action\\">
+        <button
+          class=\\"fd-button fd-button--transparent fd-shellbar__button\\"
+          aria-label=\\"Search\\" aria-haspopup=\\"dialog\\" aria-expanded=\\"false\\" title=\\"Search\\">
+          <i class=\\"sap-icon--search\\"></i>
+      </button>
+      </div>
+      <div class=\\"fd-shellbar__action\\">
+          <button
+              class=\\"fd-button fd-button--transparent fd-shellbar__button\\"
+              aria-label=\\"Joule Digital Assitant\\" aria-haspopup=\\"dialog\\" aria-expanded=\\"false\\" title=\\"Joule Digital Assitant\\">
+              <i class=\\"sap-icon--da\\"></i>
+          </button>
+      </div>
+      <div class=\\"fd-shellbar__action\\">
+          <button
+            class=\\"fd-button fd-button--transparent fd-shellbar__button\\"
+            aria-label=\\"Notifications\\"
+            title=\\"Notifications\\"
+            aria-haspopup=\\"dialog\\" aria-expanded=\\"false\\"
+          >
+            <i class=\\"sap-icon--bell\\"></i>
+            <span class=\\"fd-button__badge\\">72</span>
+          </button>
+      </div>
+      <div class=\\"fd-shellbar__action\\">
+          <button
+              class=\\"fd-button fd-button--transparent fd-shellbar__button\\"
+              aria-label=\\"Feedback\\" aria-haspopup=\\"dialog\\" aria-expanded=\\"false\\" title=\\"Feedback\\">
+              <i class=\\"sap-icon--feedback\\"></i>
+          </button>
+      </div>
+      <div class=\\"fd-shellbar__action\\">
+          <button
+              class=\\"fd-button fd-button--transparent fd-shellbar__button\\"
+              aria-label=\\"Help\\" aria-haspopup=\\"dialog\\" aria-expanded=\\"false\\" title=\\"Help\\">
+              <i class=\\"sap-icon--sys-help\\"></i>
+          </button>
+      </div>
+      <div class=\\"fd-shellbar__action\\">
+          <div class=\\"fd-popover fd-popover--right\\">
+              <div class=\\"fd-popover__control\\">
+                  <div class=\\"fd-button fd-button--transparent fd-shellbar__button fd-user-menu__control\\"
+                       onclick=\\"onPopoverClick('MKFAY276sdfasdf')\\" aria-controls=\\"MKFAY276sdfasdf\\" aria-expanded=\\"false\\"
+                       aria-haspopup=\\"dialog\\" role=\\"button\\" tabindex=\\"0\\" aria-label=\\"User Menu\\" title=\\"User Menu\\">
+                      <span
+                          class=\\"fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--thumbnail fd-shellbar__avatar--circle\\"
+                          style=\\"background-image: url('assets/images/avatars/1.svg');\\"
+                          aria-label=\\"William Wallingham\\">
+                      </span>
+                  </div>
+              </div>
+              <div class=\\"fd-popover__body fd-popover__body--no-arrow fd-popover__body--right\\" aria-hidden=\\"true\\"
+                   id=\\"MKFAY276sdfasdf\\">
+                  <nav class=\\"fd-menu\\">
+                      <ul class=\\"fd-menu__list fd-menu__list--no-shadow\\">
+                          <li class=\\"fd-menu__item\\">
+                              <a role=\\"button\\" class=\\"fd-menu__link\\">
+                                  <span class=\\"fd-menu__title\\">Settings</span>
+                              </a>
+                          </li>
+                          <li class=\\"fd-menu__item\\">
+                              <a role=\\"button\\" class=\\"fd-menu__link\\">
+                                  <span class=\\"fd-menu__title\\">Sign Out</span>
+                              </a>
+                          </li>
+                      </ul>
+                  </nav>
+              </div>
+          </div>
+      </div>
+      <div class=\\"fd-shellbar__action\\">
+          <div class=\\"fd-product-switch\\">
+              <div class=\\"fd-popover fd-popover--right\\">
+                  <button
+                      class=\\"fd-button fd-button--transparent fd-shellbar__button fd-popover__control\\"
+                      aria-label=\\"Product Switcher\\"
+                      title=\\"Product Switcher\\"
+                      aria-controls=\\"QWERTYI\\"
+                      aria-expanded=\\"false\\"
+                      aria-haspopup=\\"dialog\\"
+                      onclick=\\"onPopoverClick('QWERTYI')\\">
+                      <i class=\\"sap-icon--grid\\"></i>
+                  </button>
+                  <div class=\\"fd-popover__body fd-popover__body--right\\" aria-hidden=\\"true\\"
+                       id=\\"QWERTYI\\">
+                      <div class=\\"fd-product-switch__body\\">
+                          <ul class=\\"fd-product-switch__list\\">
+                              <li class=\\"fd-product-switch__item\\">
+                                  <div class=\\"fd-product-switch__icon sap-icon--home\\"></div>
+                                  <div class=\\"fd-product-switch__text\\">
+                                      <div class=\\"fd-product-switch__title\\">Home</div>
+                                      <div class=\\"fd-product-switch__subtitle\\">Central Home</div>
+                                  </div>
+                              </li>
+                              <li class=\\"fd-product-switch__item selected\\">
+                                  <div
+                                      class=\\"fd-product-switch__icon sap-icon--business-objects-experience\\"></div>
+                                  <div class=\\"fd-product-switch__text\\">
+                                      <div class=\\"fd-product-switch__title\\">Analytics Cloud</div>
+                                      <div class=\\"fd-product-switch__subtitle\\">Analytics Cloud</div>
+                                  </div>
+                              </li>
+                              <li class=\\"fd-product-switch__item\\">
+                                  <div class=\\"fd-product-switch__icon sap-icon--contacts\\"></div>
+                                  <div class=\\"fd-product-switch__text\\">
+                                      <div class=\\"fd-product-switch__title\\">Catalog</div>
+                                      <div class=\\"fd-product-switch__subtitle\\">Ariba</div>
+                                  </div>
+                              </li>
+                              <li class=\\"fd-product-switch__item\\">
+                                  <div class=\\"fd-product-switch__icon sap-icon--credit-card\\"></div>
+                                  <div class=\\"fd-product-switch__text\\">
+                                      <div class=\\"fd-product-switch__title\\">Guided Buying</div>
+                                  </div>
+                              </li>
+                          </ul>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+<br><br>
+
+<div class=\\"fd-shellbar fd-shellbar--md fd-shellbar--side-nav\\" role=\\"banner\\" aria-label=\\"Shell Bar\\" style=\\"max-width: 650px;\\">
+  <div class=\\"fd-shellbar__group fd-shellbar__group--product\\">
+      <button aria-label=\\"Main Navigation\\" aria-expanded=\\"false\\" class=\\"fd-button fd-button--transparent fd-shellbar__button\\">
+          <i class=\\"sap-icon--menu2\\"></i>
+      </button>
+      <div class=\\"fd-shellbar__branding\\" role=\\"link\\" tabindex=\\"0\\" aria-label=\\"SAP Corporate Portal Solution Name Home\\">
+          <span class=\\"fd-shellbar__logo\\"><img src=\\"//unpkg.com/fundamental-styles/dist/images/sap-logo.png\\" srcset=\\"//unpkg.com/fundamental-styles/dist/images/sap-logo@2x.png 1x, //unpkg.com/fundamental-styles/dist/images/sap-logo@3x.png 2x, //unpkg.com/fundamental-styles/dist/images/sap-logo@4x.png 3x\\" width=\\"48\\" height=\\"24\\" alt=\\"SAP\\"></span>
+
+          <div class=\\"fd-shellbar__product\\">
+              <span class=\\"fd-shellbar__title\\">Corporate Portal</span>
+          </div>
+      </div>
+  </div>
+  <div class=\\"fd-shellbar__group fd-shellbar__group--actions\\">
+      <div class=\\"fd-shellbar__action\\">
+        <button
+          class=\\"fd-button fd-button--transparent fd-shellbar__button\\"
+          aria-label=\\"Search\\" aria-haspopup=\\"dialog\\" aria-expanded=\\"false\\" title=\\"Search\\">
+          <i class=\\"sap-icon--search\\"></i>
+      </button>
+      </div>
+      <div class=\\"fd-shellbar__action\\">
+        <div class=\\"fd-popover fd-popover--right\\">
+          <div class=\\"fd-popover__control\\">
+              <div class=\\"fd-button fd-button--transparent fd-shellbar__button is-toggled\\"
+                   onclick=\\"onPopoverClick('QWTEFREQR')\\" aria-controls=\\"QWTEFREQR\\" aria-expanded=\\"true\\"
+                   aria-haspopup=\\"dialog\\" role=\\"button\\" tabindex=\\"0\\" aria-label=\\"Overflow\\" title=\\"Overflow\\">
+                   <i class=\\"sap-icon--overflow\\"></i>
+                   <span class=\\"fd-button__badge\\">72</span>
+              </div>
+          </div>
+          <div class=\\"fd-popover__body fd-popover__body--right\\" aria-hidden=\\"false\\"
+               id=\\"QWTEFREQR\\">
+              <nav class=\\"fd-menu fd-menu--icons\\">
+                  <ul class=\\"fd-menu__list fd-menu__list--no-shadow\\">
+                      <li class=\\"fd-menu__item\\">
+                          <a role=\\"button\\" class=\\"fd-menu__link\\">
+                              <span class=\\"fd-menu__addon-before\\"><i class=\\"sap-icon--bell\\" role=\\"presentation\\"></i></span>
+                              <span class=\\"fd-menu__title\\">Notifications</span>
+                          </a>
+                      </li>
+                      <li class=\\"fd-menu__item\\">
+                          <a role=\\"button\\" class=\\"fd-menu__link\\">
+                              <span class=\\"fd-menu__addon-before\\"><i class=\\"sap-icon--feedback\\" role=\\"presentation\\"></i></span>
+                              <span class=\\"fd-menu__title\\">Feedback</span>
+                          </a>
+                      </li>
+                      <li class=\\"fd-menu__item\\">
+                        <a role=\\"button\\" class=\\"fd-menu__link\\">
+                            <span class=\\"fd-menu__addon-before\\"><i class=\\"sap-icon--sys-help\\" role=\\"presentation\\"></i></span>
+                            <span class=\\"fd-menu__title\\">Help</span>
+                        </a>
+                    </li>
+                  </ul>
+              </nav>
+          </div>
+      </div>
+      </div>
+      <div class=\\"fd-shellbar__action\\">
+          <div class=\\"fd-popover fd-popover--right\\">
+              <div class=\\"fd-popover__control\\">
+                  <div class=\\"fd-button fd-button--transparent fd-shellbar__button fd-user-menu__control\\"
+                       onclick=\\"onPopoverClick('YUTTYAY276')\\" aria-controls=\\"YUTTYAY276\\" aria-expanded=\\"false\\"
+                       aria-haspopup=\\"dialog\\" role=\\"button\\" tabindex=\\"0\\" aria-label=\\"User Menu\\" title=\\"User Menu\\">
+                      <span
+                          class=\\"fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--thumbnail fd-shellbar__avatar--circle\\"
+                          style=\\"background-image: url('assets/images/avatars/1.svg');\\"
+                          aria-label=\\"William Wallingham\\">
+                      </span>
+                  </div>
+              </div>
+              <div class=\\"fd-popover__body fd-popover__body--no-arrow fd-popover__body--right\\" aria-hidden=\\"true\\"
+                   id=\\"YUTTYAY276\\">
+                  <nav class=\\"fd-menu\\">
+                      <ul class=\\"fd-menu__list fd-menu__list--no-shadow\\">
+                          <li class=\\"fd-menu__item\\">
+                              <a role=\\"button\\" class=\\"fd-menu__link\\">
+                                  <span class=\\"fd-menu__title\\">Settings</span>
+                              </a>
+                          </li>
+                          <li class=\\"fd-menu__item\\">
+                              <a role=\\"button\\" class=\\"fd-menu__link\\">
+                                  <span class=\\"fd-menu__title\\">Sign Out</span>
+                              </a>
+                          </li>
+                      </ul>
+                  </nav>
+              </div>
+          </div>
+      </div>
+      <div class=\\"fd-shellbar__action\\">
+          <div class=\\"fd-product-switch\\">
+              <div class=\\"fd-popover fd-popover--right\\">
+                  <button
+                      class=\\"fd-button fd-button--transparent fd-shellbar__button fd-popover__control\\"
+                      aria-label=\\"Product Switcher\\"
+                      title=\\"Product Switcher\\"
+                      aria-controls=\\"NHYUJM,KI\\"
+                      aria-expanded=\\"false\\"
+                      aria-haspopup=\\"dialog\\"
+                      onclick=\\"onPopoverClick('NHYUJM,KI')\\">
+                      <i class=\\"sap-icon--grid\\"></i>
+                  </button>
+                  <div class=\\"fd-popover__body fd-popover__body--right\\" aria-hidden=\\"true\\"
+                       id=\\"NHYUJM,KI\\">
+                      <div class=\\"fd-product-switch__body\\">
+                          <ul class=\\"fd-product-switch__list\\">
+                              <li class=\\"fd-product-switch__item\\">
+                                  <div class=\\"fd-product-switch__icon sap-icon--home\\"></div>
+                                  <div class=\\"fd-product-switch__text\\">
+                                      <div class=\\"fd-product-switch__title\\">Home</div>
+                                      <div class=\\"fd-product-switch__subtitle\\">Central Home</div>
+                                  </div>
+                              </li>
+                              <li class=\\"fd-product-switch__item selected\\">
+                                  <div
+                                      class=\\"fd-product-switch__icon sap-icon--business-objects-experience\\"></div>
+                                  <div class=\\"fd-product-switch__text\\">
+                                      <div class=\\"fd-product-switch__title\\">Analytics Cloud</div>
+                                      <div class=\\"fd-product-switch__subtitle\\">Analytics Cloud</div>
+                                  </div>
+                              </li>
+                              <li class=\\"fd-product-switch__item\\">
+                                  <div class=\\"fd-product-switch__icon sap-icon--contacts\\"></div>
+                                  <div class=\\"fd-product-switch__text\\">
+                                      <div class=\\"fd-product-switch__title\\">Catalog</div>
+                                      <div class=\\"fd-product-switch__subtitle\\">Ariba</div>
+                                  </div>
+                              </li>
+                              <li class=\\"fd-product-switch__item\\">
+                                  <div class=\\"fd-product-switch__icon sap-icon--credit-card\\"></div>
+                                  <div class=\\"fd-product-switch__text\\">
+                                      <div class=\\"fd-product-switch__title\\">Guided Buying</div>
+                                  </div>
+                              </li>
+                          </ul>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+<div style=\\"height: 250px;\\"></div>
+
+<div class=\\"fd-shellbar fd-shellbar--sm fd-shellbar--side-nav\\" role=\\"banner\\" aria-label=\\"Shell Bar\\" style=\\"max-width: 550px;\\">
+  <div class=\\"fd-shellbar__group fd-shellbar__group--product\\">
+      <button aria-label=\\"Main Navigation\\" aria-expanded=\\"false\\" class=\\"fd-button fd-button--transparent fd-shellbar__button\\">
+          <i class=\\"sap-icon--menu2\\"></i>
+      </button>
+      <div class=\\"fd-shellbar__branding\\" role=\\"link\\" tabindex=\\"0\\" aria-label=\\"SAP Corporate Portal Solution Name Home\\">
+          <span class=\\"fd-shellbar__logo\\"><img src=\\"//unpkg.com/fundamental-styles/dist/images/sap-logo.png\\" srcset=\\"//unpkg.com/fundamental-styles/dist/images/sap-logo@2x.png 1x, //unpkg.com/fundamental-styles/dist/images/sap-logo@3x.png 2x, //unpkg.com/fundamental-styles/dist/images/sap-logo@4x.png 3x\\" width=\\"48\\" height=\\"24\\" alt=\\"SAP\\"></span>
+
+          <div class=\\"fd-shellbar__product\\">
+              <span class=\\"fd-shellbar__title\\">Corporate Portal</span>
+          </div>
+      </div>
+  </div>
+  <div class=\\"fd-shellbar__group fd-shellbar__group--actions\\">
+      <div class=\\"fd-shellbar__action\\">
+        <div class=\\"fd-popover fd-popover--right\\">
+          <div class=\\"fd-popover__control\\">
+              <div class=\\"fd-button fd-button--transparent fd-shellbar__button is-toggled\\"
+                   onclick=\\"onPopoverClick('POWERRT')\\" aria-controls=\\"POWERRT\\" aria-expanded=\\"true\\"
+                   aria-haspopup=\\"dialog\\" role=\\"button\\" tabindex=\\"0\\" aria-label=\\"Overflow\\" title=\\"Overflow\\">
+                   <i class=\\"sap-icon--overflow\\"></i>
+                   <span class=\\"fd-button__badge\\">72</span>
+              </div>
+          </div>
+          <div class=\\"fd-popover__body fd-popover__body--right\\" aria-hidden=\\"false\\"
+               id=\\"POWERRT\\">
+              <nav class=\\"fd-menu fd-menu--icons\\">
+                  <ul class=\\"fd-menu__list fd-menu__list--no-shadow\\">
+                      <li class=\\"fd-menu__item\\">
+                          <a role=\\"button\\" class=\\"fd-menu__link\\">
+                              <span class=\\"fd-menu__addon-before\\"><i class=\\"sap-icon--search\\" role=\\"presentation\\"></i></span>
+                              <span class=\\"fd-menu__title\\">Search</span>
+                          </a>
+                      </li>
+                      <li class=\\"fd-menu__item\\">
+                        <a role=\\"button\\" class=\\"fd-menu__link\\">
+                            <span class=\\"fd-menu__addon-before\\"><i class=\\"sap-icon--bell\\" role=\\"presentation\\"></i></span>
+                            <span class=\\"fd-menu__title\\">Notifications</span>
+                        </a>
+                    </li>
+                      <li class=\\"fd-menu__item\\">
+                          <a role=\\"button\\" class=\\"fd-menu__link\\">
+                              <span class=\\"fd-menu__addon-before\\"><i class=\\"sap-icon--feedback\\" role=\\"presentation\\"></i></span>
+                              <span class=\\"fd-menu__title\\">Feedback</span>
+                          </a>
+                      </li>
+                      <li class=\\"fd-menu__item\\">
+                        <a role=\\"button\\" class=\\"fd-menu__link\\">
+                            <span class=\\"fd-menu__addon-before\\"><i class=\\"sap-icon--sys-help\\" role=\\"presentation\\"></i></span>
+                            <span class=\\"fd-menu__title\\">Help</span>
+                        </a>
+                    </li>
+                  </ul>
+              </nav>
+          </div>
+      </div>
+      </div>
+      <div class=\\"fd-shellbar__action\\">
+          <div class=\\"fd-popover fd-popover--right\\">
+              <div class=\\"fd-popover__control\\">
+                  <div class=\\"fd-button fd-button--transparent fd-shellbar__button fd-user-menu__control\\"
+                       onclick=\\"onPopoverClick('YWURFYWER')\\" aria-controls=\\"YWURFYWER\\" aria-expanded=\\"false\\"
+                       aria-haspopup=\\"dialog\\" role=\\"button\\" tabindex=\\"0\\" aria-label=\\"User Menu\\" title=\\"User Menu\\">
+                      <span
+                          class=\\"fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--thumbnail fd-shellbar__avatar--circle\\"
+                          style=\\"background-image: url('assets/images/avatars/1.svg');\\"
+                          aria-label=\\"William Wallingham\\">
+                      </span>
+                  </div>
+              </div>
+              <div class=\\"fd-popover__body fd-popover__body--no-arrow fd-popover__body--right\\" aria-hidden=\\"true\\"
+                   id=\\"YWURFYWER\\">
+                  <nav class=\\"fd-menu\\">
+                      <ul class=\\"fd-menu__list fd-menu__list--no-shadow\\">
+                          <li class=\\"fd-menu__item\\">
+                              <a role=\\"button\\" class=\\"fd-menu__link\\">
+                                  <span class=\\"fd-menu__title\\">Settings</span>
+                              </a>
+                          </li>
+                          <li class=\\"fd-menu__item\\">
+                              <a role=\\"button\\" class=\\"fd-menu__link\\">
+                                  <span class=\\"fd-menu__title\\">Sign Out</span>
+                              </a>
+                          </li>
+                      </ul>
+                  </nav>
+              </div>
+          </div>
+      </div>
+      <div class=\\"fd-shellbar__action\\">
+          <div class=\\"fd-product-switch\\">
+              <div class=\\"fd-popover fd-popover--right\\">
+                  <button
+                      class=\\"fd-button fd-button--transparent fd-shellbar__button fd-popover__control\\"
+                      aria-label=\\"Product Switcher\\"
+                      title=\\"Product Switcher\\"
+                      aria-controls=\\"CVSNZCVSDCUY\\"
+                      aria-expanded=\\"false\\"
+                      aria-haspopup=\\"dialog\\"
+                      onclick=\\"onPopoverClick('CVSNZCVSDCUY')\\">
+                      <i class=\\"sap-icon--grid\\"></i>
+                  </button>
+                  <div class=\\"fd-popover__body fd-popover__body--right\\" aria-hidden=\\"true\\"
+                       id=\\"CVSNZCVSDCUY\\">
+                      <div class=\\"fd-product-switch__body\\">
+                          <ul class=\\"fd-product-switch__list\\">
+                              <li class=\\"fd-product-switch__item\\">
+                                  <div class=\\"fd-product-switch__icon sap-icon--home\\"></div>
+                                  <div class=\\"fd-product-switch__text\\">
+                                      <div class=\\"fd-product-switch__title\\">Home</div>
+                                      <div class=\\"fd-product-switch__subtitle\\">Central Home</div>
+                                  </div>
+                              </li>
+                              <li class=\\"fd-product-switch__item selected\\">
+                                  <div
+                                      class=\\"fd-product-switch__icon sap-icon--business-objects-experience\\"></div>
+                                  <div class=\\"fd-product-switch__text\\">
+                                      <div class=\\"fd-product-switch__title\\">Analytics Cloud</div>
+                                      <div class=\\"fd-product-switch__subtitle\\">Analytics Cloud</div>
+                                  </div>
+                              </li>
+                              <li class=\\"fd-product-switch__item\\">
+                                  <div class=\\"fd-product-switch__icon sap-icon--contacts\\"></div>
+                                  <div class=\\"fd-product-switch__text\\">
+                                      <div class=\\"fd-product-switch__title\\">Catalog</div>
+                                      <div class=\\"fd-product-switch__subtitle\\">Ariba</div>
+                                  </div>
+                              </li>
+                              <li class=\\"fd-product-switch__item\\">
+                                  <div class=\\"fd-product-switch__icon sap-icon--credit-card\\"></div>
+                                  <div class=\\"fd-product-switch__text\\">
+                                      <div class=\\"fd-product-switch__title\\">Guided Buying</div>
+                                  </div>
+                              </li>
+                          </ul>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+<div style=\\"height: 250px;\\"></div>
+<div class=\\"fd-shellbar fd-shellbar--sm fd-shellbar--side-nav\\" role=\\"banner\\" aria-label=\\"Shell Bar\\" style=\\"max-width: 550px;\\">
+  <div class=\\"fd-shellbar__group fd-shellbar__group--actions fd-shellbar__group--full-width\\">
+      <div class=\\"fd-shellbar__action\\">
+        <div id=\\"JKHhjk7234k22\\" class=\\"fd-input-group fd-shellbar__search-field\\">
+          <input
+            aria-label=\\"search-input\\"
+            type=\\"text\\"
+            onfocus=\\"addClass('JKHhjk7234k22', 'is-focus')\\"
+            onblur=\\"removeClass('JKHhjk7234k22', 'is-focus')\\"
+            class=\\"fd-input fd-input-group__input fd-shellbar__search-field-input\\"
+            id=\\"F4GcX348b1hbd\\"
+            placeholder=\\"Search everything\\"
+          />
+          <div
+            class=\\"fd-input-group__addon fd-shellbar__search-field-addon fd-shellbar__search-cancel fd-input-group__addon--button\\"
+          >
+            <button
+              aria-label=\\"button-search\\"
+              class=\\"fd-shellbar__button fd-button fd-button--transparent\\"
+            >
+              <i class=\\"sap-icon--decline\\"></i>
+            </button>
+          </div>
+          <div
+            class=\\"fd-input-group__addon fd-shellbar__search-field-addon fd-shellbar__search-submit fd-input-group__addon--button\\"
+          >
+            <button
+              aria-label=\\"button-search\\"
+              class=\\"fd-shellbar__button fd-button fd-button--transparent\\"
+            >
+              <i class=\\"sap-icon--search\\"></i>
+            </button>
+          </div>
+          <div class=\\"fd-shellbar__search-field-helper\\"></div>
+      </div>
+      </div>
+      <div class=\\"fd-shellbar__action\\">
+        <button class=\\"fd-button fd-button--transparent fd-shellbar__button\\">
+          <span class=\\"fd-button__text\\">Cancel</span>
+        </button>
+      </div>
+  </div>
 </div>
 "
 `;
@@ -49256,111 +49606,111 @@ exports[`Check stories > Components/User Menu > Story Shellbar > Should match sn
             <span class=\\"fd-shellbar__logo\\">
                 <img src=\\"//unpkg.com/fundamental-styles/dist/images/sap-logo.png\\" srcset=\\"//unpkg.com/fundamental-styles/dist/images/sap-logo@2x.png 1x, //unpkg.com/fundamental-styles/dist/images/sap-logo@3x.png 2x, //unpkg.com/fundamental-styles/dist/images/sap-logo@4x.png 3x\\" width=\\"48\\" height=\\"24\\" alt=\\"SAP\\">
             </span>
-            <div class=\\"fd-shellbar__group fd-shellbar__group--actions\\">
-                <div class=\\"fd-shellbar__action\\">
-                    <div class=\\"fd-popover fd-popover--right fd-user-menu\\">
-                        <div class=\\"fd-popover__control\\">
-                            <span
-                                class=\\"fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--thumbnail\\"
-                                aria-controls=\\"popoverA1\\"
-                                aria-expanded=\\"true\\"
-                                aria-haspopup=\\"true\\"
-                                aria-label=\\"Avatar\\"
-                                style=\\"background-image: url('assets/images/avatars/3.svg');\\"
-                                onclick=\\"onPopoverClick('popoverA1');\\"
-                                role=\\"button\\"
-                                tabindex=\\"0\\"></span>
-                        </div>
+        </div>
+        <div class=\\"fd-shellbar__group fd-shellbar__group--full-width fd-shellbar__group--actions\\">
+            <div class=\\"fd-shellbar__action\\">
+                <div class=\\"fd-popover fd-popover--right fd-user-menu\\">
+                    <div class=\\"fd-popover__control\\">
+                        <span
+                            class=\\"fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--thumbnail\\"
+                            aria-controls=\\"popoverA1\\"
+                            aria-expanded=\\"true\\"
+                            aria-haspopup=\\"true\\"
+                            aria-label=\\"Avatar\\"
+                            style=\\"background-image: url('assets/images/avatars/3.svg');\\"
+                            onclick=\\"onPopoverClick('popoverA1');\\"
+                            role=\\"button\\"
+                            tabindex=\\"0\\"></span>
+                    </div>
 
-                        <div class=\\"fd-popover__body fd-popover__body--right\\" aria-hidden=\\"false\\" id=\\"popoverA1\\">
-                            <div class=\\"fd-user-menu__body\\">
-                                <div class=\\"fd-user-menu__header\\">
-                                    <span
-                                        class=\\"fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--thumbnail\\"
-                                        aria-label=\\"Avatar\\"
-                                        style=\\"background-image: url('assets/images/avatars/1.svg');\\"></span>
+                    <div class=\\"fd-popover__body fd-popover__body--right\\" aria-hidden=\\"false\\" id=\\"popoverA1\\">
+                        <div class=\\"fd-user-menu__body\\">
+                            <div class=\\"fd-user-menu__header\\">
+                                <span
+                                    class=\\"fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--thumbnail\\"
+                                    aria-label=\\"Avatar\\"
+                                    style=\\"background-image: url('assets/images/avatars/1.svg');\\"></span>
 
-                                    <span
-                                        class=\\"fd-avatar fd-avatar--xl fd-avatar--circle fd-avatar--thumbnail fd-user-menu__avatar\\"
-                                        aria-label=\\"Avatar\\"
-                                        style=\\"background-image: url('assets/images/avatars/3.svg');\\"></span>
+                                <span
+                                    class=\\"fd-avatar fd-avatar--xl fd-avatar--circle fd-avatar--thumbnail fd-user-menu__avatar\\"
+                                    aria-label=\\"Avatar\\"
+                                    style=\\"background-image: url('assets/images/avatars/3.svg');\\"></span>
 
-                                    <button class=\\"fd-button fd-button--transparent\\" aria-label=\\"Product\\"><i class=\\"sap-icon--grid\\"></i></button>
-                                </div>
-
-                                <div class=\\"fd-user-menu__subheader\\">
-                                    <div class=\\"fd-user-menu__user-name\\">John Miller</div>
-                                    <div class=\\"fd-user-menu__user-role\\">User Experience Designer</div>
-                                </div>
-
-                                <ul class=\\"fd-list fd-list--navigation fd-list--navigation-indication fd-list--no-border\\" role=\\"list\\">
-                                    <li tabindex=\\"-1\\" role=\\"listitem\\" class=\\"fd-list__item fd-list__item--link\\">
-                                        <a tabindex=\\"0\\" class=\\"fd-list__link\\">
-                                            <i role=\\"presentation\\" class=\\"fd-list__icon sap-icon--time-account\\"></i>
-                                            <span class=\\"fd-list__title\\">Recent Activity</span>
-                                        </a>
-                                    </li>
-                                    <li tabindex=\\"-1\\" role=\\"listitem\\" class=\\"fd-list__item fd-list__item--link\\">
-                                        <a tabindex=\\"0\\" class=\\"fd-list__link\\">
-                                            <i role=\\"presentation\\" class=\\"fd-list__icon sap-icon--activity-individual\\"></i>
-                                            <span class=\\"fd-list__title\\">Frequently Used</span>
-                                        </a>
-                                    </li>
-                                    <li tabindex=\\"-1\\" role=\\"listitem\\" class=\\"fd-list__item fd-list__item--link\\">
-                                        <a tabindex=\\"0\\" class=\\"fd-list__link\\">
-                                            <i role=\\"presentation\\" class=\\"fd-list__icon sap-icon--detail-view\\"></i>
-                                            <span class=\\"fd-list__title\\">Content Finder</span>
-                                        </a>
-                                    </li>
-                                    <li tabindex=\\"-1\\" role=\\"listitem\\" class=\\"fd-list__item fd-list__item--link\\">
-                                        <a tabindex=\\"0\\" class=\\"fd-list__link fd-list__link--navigation-indicator is-selected\\">
-                                            <i role=\\"presentation\\" class=\\"fd-list__icon sap-icon--employee-lookup\\"></i>
-                                            <span class=\\"fd-list__title\\">Proxy User</span>
-                                        </a>
-                                    </li>
-                                    <li tabindex=\\"-1\\" role=\\"listitem\\" class=\\"fd-list__item fd-list__item--link\\">
-                                        <a tabindex=\\"0\\" class=\\"fd-list__link fd-list__link--navigation-indicator\\">
-                                            <i role=\\"presentation\\" class=\\"fd-list__icon sap-icon--role\\"></i>
-                                            <span class=\\"fd-list__title\\">Proxy Role</span>
-                                        </a>
-                                    </li>
-                                    <li tabindex=\\"-1\\" role=\\"listitem\\" class=\\"fd-list__item fd-list__item--link\\">
-                                        <a tabindex=\\"0\\" class=\\"fd-list__link fd-list__link--navigation-indicator\\">
-                                            <i role=\\"presentation\\" class=\\"fd-list__icon sap-icon--history\\"></i>
-                                            <span class=\\"fd-list__title\\">Delegate</span>
-
-                                            <span class=\\"fd-list__item-counter\\">
-                                                <span class=\\"fd-badge fd-badge--static\\" aria-label=\\"Selected items\\">3</span>
-                                            </span>
-                                        </a>
-                                    </li>
-                                    <li tabindex=\\"-1\\" role=\\"listitem\\" class=\\"fd-list__item fd-list__item--link\\">
-                                        <a tabindex=\\"0\\" class=\\"fd-list__link\\">
-                                            <i role=\\"presentation\\" class=\\"fd-list__icon sap-icon--sys-help\\"></i>
-                                            <span class=\\"fd-list__title\\">Help</span>
-                                        </a>
-                                    </li>
-                                    <li tabindex=\\"-1\\" role=\\"listitem\\" class=\\"fd-list__item fd-list__item--link\\">
-                                        <a tabindex=\\"0\\" class=\\"fd-list__link\\">
-                                            <i role=\\"presentation\\" class=\\"fd-list__icon sap-icon--action-settings\\"></i>
-                                            <span class=\\"fd-list__title\\">Settings</span>
-                                        </a>
-                                    </li>
-                                    <li tabindex=\\"-1\\" role=\\"listitem\\" class=\\"fd-list__item fd-list__item--link\\">
-                                        <a tabindex=\\"0\\" class=\\"fd-list__link\\">
-                                            <i role=\\"presentation\\" class=\\"fd-list__icon sap-icon--marketing-campaign\\"></i>
-                                            <span class=\\"fd-list__title\\">Give Feedback</span>
-                                        </a>
-                                    </li>
-                                </ul>
+                                <button class=\\"fd-button fd-button--transparent\\" aria-label=\\"Product\\"><i class=\\"sap-icon--grid\\"></i></button>
                             </div>
 
-                            <div class=\\"fd-popover__body-footer\\">
-                                <div class=\\"fd-bar fd-bar--footer\\">
-                                    <div class=\\"fd-bar__right\\">
-                                        <div class=\\"fd-bar__element\\">
-                                            <button class=\\"fd-button fd-button--transparent\\">Sign Out</button>
-                                        </div>
+                            <div class=\\"fd-user-menu__subheader\\">
+                                <div class=\\"fd-user-menu__user-name\\">John Miller</div>
+                                <div class=\\"fd-user-menu__user-role\\">User Experience Designer</div>
+                            </div>
+
+                            <ul class=\\"fd-list fd-list--navigation fd-list--navigation-indication fd-list--no-border\\" role=\\"list\\">
+                                <li tabindex=\\"-1\\" role=\\"listitem\\" class=\\"fd-list__item fd-list__item--link\\">
+                                    <a tabindex=\\"0\\" class=\\"fd-list__link\\">
+                                        <i role=\\"presentation\\" class=\\"fd-list__icon sap-icon--time-account\\"></i>
+                                        <span class=\\"fd-list__title\\">Recent Activity</span>
+                                    </a>
+                                </li>
+                                <li tabindex=\\"-1\\" role=\\"listitem\\" class=\\"fd-list__item fd-list__item--link\\">
+                                    <a tabindex=\\"0\\" class=\\"fd-list__link\\">
+                                        <i role=\\"presentation\\" class=\\"fd-list__icon sap-icon--activity-individual\\"></i>
+                                        <span class=\\"fd-list__title\\">Frequently Used</span>
+                                    </a>
+                                </li>
+                                <li tabindex=\\"-1\\" role=\\"listitem\\" class=\\"fd-list__item fd-list__item--link\\">
+                                    <a tabindex=\\"0\\" class=\\"fd-list__link\\">
+                                        <i role=\\"presentation\\" class=\\"fd-list__icon sap-icon--detail-view\\"></i>
+                                        <span class=\\"fd-list__title\\">Content Finder</span>
+                                    </a>
+                                </li>
+                                <li tabindex=\\"-1\\" role=\\"listitem\\" class=\\"fd-list__item fd-list__item--link\\">
+                                    <a tabindex=\\"0\\" class=\\"fd-list__link fd-list__link--navigation-indicator is-selected\\">
+                                        <i role=\\"presentation\\" class=\\"fd-list__icon sap-icon--employee-lookup\\"></i>
+                                        <span class=\\"fd-list__title\\">Proxy User</span>
+                                    </a>
+                                </li>
+                                <li tabindex=\\"-1\\" role=\\"listitem\\" class=\\"fd-list__item fd-list__item--link\\">
+                                    <a tabindex=\\"0\\" class=\\"fd-list__link fd-list__link--navigation-indicator\\">
+                                        <i role=\\"presentation\\" class=\\"fd-list__icon sap-icon--role\\"></i>
+                                        <span class=\\"fd-list__title\\">Proxy Role</span>
+                                    </a>
+                                </li>
+                                <li tabindex=\\"-1\\" role=\\"listitem\\" class=\\"fd-list__item fd-list__item--link\\">
+                                    <a tabindex=\\"0\\" class=\\"fd-list__link fd-list__link--navigation-indicator\\">
+                                        <i role=\\"presentation\\" class=\\"fd-list__icon sap-icon--history\\"></i>
+                                        <span class=\\"fd-list__title\\">Delegate</span>
+
+                                        <span class=\\"fd-list__item-counter\\">
+                                            <span class=\\"fd-badge fd-badge--static\\" aria-label=\\"Selected items\\">3</span>
+                                        </span>
+                                    </a>
+                                </li>
+                                <li tabindex=\\"-1\\" role=\\"listitem\\" class=\\"fd-list__item fd-list__item--link\\">
+                                    <a tabindex=\\"0\\" class=\\"fd-list__link\\">
+                                        <i role=\\"presentation\\" class=\\"fd-list__icon sap-icon--sys-help\\"></i>
+                                        <span class=\\"fd-list__title\\">Help</span>
+                                    </a>
+                                </li>
+                                <li tabindex=\\"-1\\" role=\\"listitem\\" class=\\"fd-list__item fd-list__item--link\\">
+                                    <a tabindex=\\"0\\" class=\\"fd-list__link\\">
+                                        <i role=\\"presentation\\" class=\\"fd-list__icon sap-icon--action-settings\\"></i>
+                                        <span class=\\"fd-list__title\\">Settings</span>
+                                    </a>
+                                </li>
+                                <li tabindex=\\"-1\\" role=\\"listitem\\" class=\\"fd-list__item fd-list__item--link\\">
+                                    <a tabindex=\\"0\\" class=\\"fd-list__link\\">
+                                        <i role=\\"presentation\\" class=\\"fd-list__icon sap-icon--marketing-campaign\\"></i>
+                                        <span class=\\"fd-list__title\\">Give Feedback</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class=\\"fd-popover__body-footer\\">
+                            <div class=\\"fd-bar fd-bar--footer\\">
+                                <div class=\\"fd-bar__right\\">
+                                    <div class=\\"fd-bar__element\\">
+                                        <button class=\\"fd-button fd-button--transparent\\">Sign Out</button>
                                     </div>
                                 </div>
                             </div>
