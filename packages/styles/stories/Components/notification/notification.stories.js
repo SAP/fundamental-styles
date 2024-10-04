@@ -62,7 +62,6 @@ NotificationGroup.parameters = {
 };
 
 export const NotificationBanner = () => bannerExampleHtml;
-NotificationBanner.storyName = 'Notification Banner';
 NotificationBanner.parameters = {
   docs: {
     description: {
