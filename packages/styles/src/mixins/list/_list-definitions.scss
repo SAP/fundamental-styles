@@ -141,6 +141,8 @@ $semantic-color: (
 }
 
 @mixin fd-list-item-states() {
+  cursor: pointer;
+
   @include fd-hover() {
     @include fd-list-item-hover-state();
   }
