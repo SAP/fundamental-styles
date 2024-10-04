@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.39.0-rc.2](https://github.com/SAP/fundamental-styles/compare/v0.39.0-rc.1...v0.39.0-rc.2) (2024-10-04)
+
+### Bug Fixes
+
+-   **styles:** add more spacing between text and colon [ci visual] ([#5677](https://github.com/SAP/fundamental-styles/issues/5677)) ([97238e6](https://github.com/SAP/fundamental-styles/commit/97238e638f96ff78f3af68a8dbff235dc4c9369f))
+
 # [0.39.0-rc.1](https://github.com/SAP/fundamental-styles/compare/v0.39.0-rc.0...v0.39.0-rc.1) (2024-10-04)
 
 ### Bug Fixes
