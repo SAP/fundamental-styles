@@ -1,4 +1,4 @@
-@use "sass:map";
+@use 'sass:map';
 
 @import './new-settings';
 @import './mixins';
@@ -7,510 +7,527 @@ $block: #{$fd-namespace}-calendar;
 
 // Special Days
 $fd-calendar-special-days: (
-  '1': var(--sapLegendColor1),
-  '2': var(--sapLegendColor2),
-  '3': var(--sapLegendColor3),
-  '4': var(--sapLegendColor4),
-  '5': var(--sapLegendColor5),
-  '6': var(--sapLegendColor6),
-  '7': var(--sapLegendColor7),
-  '8': var(--sapLegendColor8),
-  '9': var(--sapLegendColor9),
-  '10': var(--sapLegendColor10),
-  '11': var(--sapLegendColor11),
-  '12': var(--sapLegendColor12),
-  '13': var(--sapLegendColor13),
-  '14': var(--sapLegendColor14),
-  '15': var(--sapLegendColor15),
-  '16': var(--sapLegendColor16),
-  '17': var(--sapLegendColor17),
-  '18': var(--sapLegendColor18),
-  '19': var(--sapLegendColor19),
-  '20': var(--sapLegendColor20)
+    '1': var(--sapLegendColor1),
+    '2': var(--sapLegendColor2),
+    '3': var(--sapLegendColor3),
+    '4': var(--sapLegendColor4),
+    '5': var(--sapLegendColor5),
+    '6': var(--sapLegendColor6),
+    '7': var(--sapLegendColor7),
+    '8': var(--sapLegendColor8),
+    '9': var(--sapLegendColor9),
+    '10': var(--sapLegendColor10),
+    '11': var(--sapLegendColor11),
+    '12': var(--sapLegendColor12),
+    '13': var(--sapLegendColor13),
+    '14': var(--sapLegendColor14),
+    '15': var(--sapLegendColor15),
+    '16': var(--sapLegendColor16),
+    '17': var(--sapLegendColor17),
+    '18': var(--sapLegendColor18),
+    '19': var(--sapLegendColor19),
+    '20': var(--sapLegendColor20)
 );
 
+@mixin legendTextBase() {
+    color: var(--sapContent_LabelColor);
+    font-family: var(--sapFontFamily);
+    font-size: var(--sapFontSmallSize);
+    font-weight: normal;
+    padding: 0.3125rem;
+    background: var(--sapList_Background);
+    column-gap: 0.5rem;
+    cursor: default;
+}
+
+
 @mixin fd-legend-days($nameColorMap) {
-  [class*='#{$block}__item--legend-']:not(.#{$block}__item--today) {
-    .#{$block}__text-wrapper::after {
-      content: '';
-      position: absolute;
-      width: 100%;
-      height: 0.3125rem;
-      bottom: 0;
-      right: 0;
-      left: 0;
-      border-bottom: none;
-      border-top: var(--fdCalendar_Item_Legend_Top_Border);
-    }
-
-    @include fd-focus() {
-      .#{$block}__text-wrapper::after {
-        z-index: var(--fdCalendar_Text_Wrapper_After_Z);
-      }
-    }
-  }
-
-  .#{$block}__item--today[class*='#{$block}__item--legend-'] {
-    @include fd-focus() {
-      .#{$block}__text-wrapper::after {
-        border-bottom: none;
-      }
-      .#{$block}__text::after {
-        content: '';
-        position: absolute;
-        width: 100%;
-        height: 0.1875rem;
-        bottom: 0;
-        right: 0;
-        left: 0;
-      }
-    }
-
-    .#{$block}__text-wrapper::after {
-      content: '';
-      position: absolute;
-      width: calc(100% - 0.125rem);
-      height: 0.5rem;
-      bottom: 0.0625rem;
-      right: 0;
-      left: 0.0625rem;
-      border-radius: 0.3125rem;
-    }
-
-    @include fd-rtl() {
-      .#{$block}__text-wrapper::after {
-        left: 0;
-        right: 0.0625rem;
-      }
-    }
-  }
-
-  @each $name, $color in $nameColorMap {
-    .#{$block}__item--legend-#{$name}:not(.#{$block}__item--today) {
-      .#{$block}__text-wrapper::after {
-        box-shadow: inset 0 calc(var(--fdCalendar_Special_Day_Marker_Height) * -1) 0 #{$color};
-      }
-    }
-
-    .#{$block}__item--legend-#{$name}:not(.#{$block}__item--today).#{$block}__item--selected,
-    .#{$block}__item--legend-#{$name}:not(.#{$block}__item--today).#{$block}__item--range {
-      .#{$block}__text-wrapper::after {
-        height: var(--fdCalendar_Item_Selected_Legend_Height);
-      }
-    }
-
-    .#{$block}__item--today.#{$block}__item--legend-#{$name} {
-      @include fd-focus() {
-        .#{$block}__text::after {
-          box-shadow: inset 0 calc(var(--fdCalendar_Special_Day_Marker_Height) * -1) 0 #{$color};
-        }
-      }
-
-      .#{$block}__text-wrapper::after {
-        content: '';
-        position: absolute;
-        width: calc(100% - 0.125rem);
-        height: var(--fdCalendar_Item_Text_Wrapper_Height);
-        bottom: 0.0625rem;
-        right: 0;
-        left: 0.0625rem;
-        border-bottom: 0.25rem solid $color;
-        border-radius: 0 0 var(--fdCalendar_Item_Legend_Bottom_Border_Radius) var(--fdCalendar_Item_Legend_Bottom_Border_Radius);
-        border-top: var(--fdCalendar_Item_Legend_Top_Border);
-      }
-
-      @include fd-rtl() {
+    [class*='#{$block}__item--legend-']:not(.#{$block}__item--today) {
         .#{$block}__text-wrapper::after {
-          left: 0;
-          right: 0.0625rem;
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 0.3125rem;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            border-bottom: none;
+            border-top: var(--fdCalendar_Item_Legend_Top_Border);
         }
-      }
+
+        @include fd-focus() {
+            .#{$block}__text-wrapper::after {
+                z-index: var(--fdCalendar_Text_Wrapper_After_Z);
+            }
+        }
     }
-  }
+
+    .#{$block}__item--today[class*='#{$block}__item--legend-'] {
+        @include fd-focus() {
+            .#{$block}__text-wrapper::after {
+                border-bottom: none;
+            }
+            .#{$block}__text::after {
+                content: '';
+                position: absolute;
+                width: 100%;
+                height: 0.1875rem;
+                bottom: 0;
+                right: 0;
+                left: 0;
+            }
+        }
+
+        .#{$block}__text-wrapper::after {
+            content: '';
+            position: absolute;
+            width: calc(100% - 0.125rem);
+            height: 0.5rem;
+            bottom: 0.0625rem;
+            right: 0;
+            left: 0.0625rem;
+            border-radius: 0.3125rem;
+        }
+
+        @include fd-rtl() {
+            .#{$block}__text-wrapper::after {
+                left: 0;
+                right: 0.0625rem;
+            }
+        }
+    }
+
+    @each $name, $color in $nameColorMap {
+        .#{$block}__item--legend-#{$name}:not(.#{$block}__item--today) {
+            .#{$block}__text-wrapper::after {
+                box-shadow: inset 0 calc(var(--fdCalendar_Special_Day_Marker_Height) * -1) 0 #{$color};
+            }
+        }
+
+        .#{$block}__item--legend-#{$name}:not(.#{$block}__item--today).#{$block}__item--selected,
+        .#{$block}__item--legend-#{$name}:not(.#{$block}__item--today).#{$block}__item--range {
+            .#{$block}__text-wrapper::after {
+                height: var(--fdCalendar_Item_Selected_Legend_Height);
+            }
+        }
+
+        .#{$block}__item--today.#{$block}__item--legend-#{$name} {
+            @include fd-focus() {
+                .#{$block}__text::after {
+                    box-shadow: inset 0 calc(var(--fdCalendar_Special_Day_Marker_Height) * -1) 0 #{$color};
+                }
+            }
+
+            .#{$block}__text-wrapper::after {
+                content: '';
+                position: absolute;
+                width: calc(100% - 0.125rem);
+                height: var(--fdCalendar_Item_Text_Wrapper_Height);
+                bottom: 0.0625rem;
+                right: 0;
+                left: 0.0625rem;
+                border-bottom: 0.25rem solid $color;
+                border-radius: 0
+                    0
+                    var(--fdCalendar_Item_Legend_Bottom_Border_Radius)
+                    var(--fdCalendar_Item_Legend_Bottom_Border_Radius);
+                border-top: var(--fdCalendar_Item_Legend_Top_Border);
+            }
+
+            @include fd-rtl() {
+                .#{$block}__text-wrapper::after {
+                    left: 0;
+                    right: 0.0625rem;
+                }
+            }
+        }
+    }
 }
 
 @mixin fd-today_after() {
-  content: '';
-  position: absolute;
-  width: calc(100% - 0.125rem);
-  height: calc(100% - 0.125rem);
-  top: 0.0625rem;
-  bottom: 0.0625rem;
-  left: 0.0625rem;
+    content: '';
+    position: absolute;
+    width: calc(100% - 0.125rem);
+    height: calc(100% - 0.125rem);
+    top: 0.0625rem;
+    bottom: 0.0625rem;
+    left: 0.0625rem;
 }
 
 %fd-calendar-item {
-  @include fd-reset();
+    @include fd-reset();
 
-  overflow: hidden;
-  position: relative;
-  margin-inline: var(--fdCalendar_Item_Spacing);
-  margin-block: var(--fdCalendar_Item_Spacing);
-  min-width: var(--fdCalendar_Item_Width);
-  border-radius: var(--fdCalendar_Border_Radius);
-  background-color: var(--fdCalendar_Item_Background);
-  flex: 1 1 calc(var(--fdCalendar_Item_Current_Border_Width) * 2 + var(--fdCalendar_Item_Spacing) * 2);
-  cursor: pointer;
-  display: inline-block;
-  border: var(--fdCalendar_Item_Border);
+    overflow: hidden;
+    position: relative;
+    margin-inline: var(--fdCalendar_Item_Spacing);
+    margin-block: var(--fdCalendar_Item_Spacing);
+    min-width: var(--fdCalendar_Item_Width);
+    border-radius: var(--fdCalendar_Border_Radius);
+    background-color: var(--fdCalendar_Item_Background);
+    flex: 1 1 calc(var(--fdCalendar_Item_Current_Border_Width) * 2 + var(--fdCalendar_Item_Spacing) * 2);
+    cursor: pointer;
+    display: inline-block;
+    border: var(--fdCalendar_Item_Border);
 }
 
 @include fd-legend-days($fd-calendar-special-days);
 
 .#{$block} {
-  --fdCalendar_Item_Width: 2rem;
-  --fdCalendar_Item_Height: 2.75rem;
-  --fdCalendar_Padding: 0.5rem;
-  --fdCalendar_Background: var(--sapList_Background);
-  --fdCalendar_Width:
-    calc(
-      var(--fdCalendar_Item_Width) * 8 + 2 * var(--fdCalendar_Padding) + var(--fdCalendar_Item_Spacing) * 16
+    --fdCalendar_Item_Width: 2rem;
+    --fdCalendar_Item_Height: 2.75rem;
+    --fdCalendar_Padding: 0.5rem;
+    --fdCalendar_Background: var(--sapList_Background);
+    --fdCalendar_Width: calc(
+        var(--fdCalendar_Item_Width) * 8 + 2 * var(--fdCalendar_Padding) + var(--fdCalendar_Item_Spacing) * 16
     );
-  --fdCalendar_Action_Padding: 0.25rem;
-  --fdCalendar_Action_Width: auto;
-  --fdCalendar_Button_Horizontal_Space: 0.25rem;
-  --fdCalendar_Item_Spacing: 0.0625rem;
-  --fdCalendar_Item_Background: var(--sapLegend_WorkingBackground);
-  --fdCalendar_Item_Helper_Height: 1.875rem;
-  --fdCalendar_Item_Font_Size: var(--sapFontSize);
-  --fdCalendar_Item_Border: 0;
-  --fdCalendar_Item_Current_Border_Width: 0.125rem;
-  --fdCalendar_Item_Text_Color: var(--sapTextColor);
-  --fdCalendar_Item_Text_Height: 2.125rem;
+    --fdCalendar_Action_Padding: 0.25rem;
+    --fdCalendar_Action_Width: auto;
+    --fdCalendar_Button_Horizontal_Space: 0.25rem;
+    --fdCalendar_Item_Spacing: 0.0625rem;
+    --fdCalendar_Item_Background: var(--sapLegend_WorkingBackground);
+    --fdCalendar_Item_Helper_Height: 1.875rem;
+    --fdCalendar_Item_Font_Size: var(--sapFontSize);
+    --fdCalendar_Item_Border: 0;
+    --fdCalendar_Item_Current_Border_Width: 0.125rem;
+    --fdCalendar_Item_Text_Color: var(--sapTextColor);
+    --fdCalendar_Item_Text_Height: 2.125rem;
 
-  @include fd-reset();
-
-  width: var(--fdCalendar_Width);
-  padding-inline: var(--fdCalendar_Padding);
-  padding-block: var(--fdCalendar_Padding);
-  background-color: var(--fdCalendar_Background);
-  border-radius: var(--fdCalendar_Border_Radius);
-
-  // CALENDAR HEADER
-  &__navigation {
-    @include fd-reset();
-    @include fd-set-paddings-y-equal(var(--fdCalendar_Button_Horizontal_Space));
-
-    position: relative;
-    display: flex;
-    width: 100%;
-    justify-content: center;
-  }
-
-  &__action {
     @include fd-reset();
 
-    flex-grow: 1;
+    width: var(--fdCalendar_Width);
+    padding-inline: var(--fdCalendar_Padding);
+    padding-block: var(--fdCalendar_Padding);
+    background-color: var(--fdCalendar_Background);
+    border-radius: var(--fdCalendar_Border_Radius);
 
-    &:not(:last-child, :first-child) {
-      margin-inline: var(--fdCalendar_Action_Padding);
+    // CALENDAR HEADER
+    &__navigation {
+        @include fd-reset();
+        @include fd-set-paddings-y-equal(var(--fdCalendar_Button_Horizontal_Space));
+
+        position: relative;
+        display: flex;
+        width: 100%;
+        justify-content: center;
     }
 
-    &:first-child {
-      margin-inline-end: var(--fdCalendar_Action_Padding);
-    }
+    &__action {
+        @include fd-reset();
 
-    &:last-child {
-      margin-inline-start: var(--fdCalendar_Action_Padding);
-    }
+        flex-grow: 1;
 
-    > [type='button'] {
-      width: 100%;
-    }
-
-    &--arrow-left,
-    &--arrow-right {
-      flex-grow: 0;
-      width: var(--fdCalendar_Action_Width);
-    }
-
-    // Years range selection mode
-    &--arrow-left + &--arrow-right {
-      margin-inline-start: auto;
-    }
-
-    [class*='sap-icon'] {
-      @include fd-rtl() {
-        transform: scaleX(-1);
-      }
-    }
-  }
-
-  &__text-wrapper {
-    @include fd-reset();
-    @include fd-flex-center();
-
-    height: 100%;
-  }
-
-  &__item {
-    @extend %fd-calendar-item;
-
-    height: var(--fdCalendar_Item_Height);
-
-    @include fd-hover() {
-      --fdCalendar_Item_Background: var(--sapList_Hover_Background);
-    }
-
-    @include fd-disabled() {
-      pointer-events: none;
-      opacity: 0.4;
-    }
-
-    &--weekend {
-      --fdCalendar_Item_Background: var(--sapLegend_NonWorkingBackground);
-
-      @include fd-hover() {
-        --fdCalendar_Item_Background: var(--sapList_Hover_Background);
-
-        filter: brightness(1.05);
-      }
-    }
-
-    &--other {
-      --fdCalendar_Item_Background: var(--fdCalendar_Background);
-
-      @include fd-hover() {
-        --fdCalendar_Item_Background: var(--sapList_Hover_Background);
-      }
-
-      .#{$block}__text {
-        --fdCalendar_Item_Text_Color: var(--sapContent_LabelColor);
-      }
-    }
-
-    &--selected {
-      --fdCalendar_Item_Background: var(--sapContent_Selected_Background);
-      --fdCalendar_Item_Border: var(--fdCalendar_Active_Item_Border);
-
-      @include fd-hover() {
-        --fdCalendar_Item_Background: var(--fdCalendar_Item_Active_Background_Hover);
-      }
-
-      .#{$block}__text {
-        --fdCalendar_Item_Text_Color: var(--sapContent_Selected_TextColor);
-
-        font-family: var(--fdCalendar_Active_Item_Font_Weight);
-      }
-    }
-
-    &--range {
-      --fdCalendar_Item_Border: var(--fdCalendar_Active_Item_Border);
-      --fdCalendar_Item_Background: var(--sapList_SelectionBackgroundColor);
-
-      @include fd-hover() {
-        --fdCalendar_Item_Background: var(--sapList_Hover_SelectionBackground);
-      }
-    }
-
-    &--today.#{$block}__item--selected::after,
-    &--today.#{$block}__item--range::after {
-      @include fd-today_after();
-
-      border: solid 0.0625rem var(--sapList_SelectionBorderColor);
-      border-radius: var(--fdCalendar_Item_Today_Selected_Bottom_Radius);
-    }
-
-    &--today {
-      --fdCalendar_Item_Border: solid 0.125rem var(--sapLegend_CurrentDateTime);
-
-      box-shadow: 0 0 0 0.0625rem var(--sapList_Background) inset;
-      position: relative;
-
-      &::after {
-        @include fd-today_after();
-
-        border-radius: 0.3125rem;
-      }
-    }
-
-    &.#{$block}__item--selected {
-      @include fd-focus() {
-        .#{$block}__text-wrapper {
-          border: var(--fdCalendar_Item_Text_Active_Focus);
+        &:not(:last-child, :first-child) {
+            margin-inline: var(--fdCalendar_Action_Padding);
         }
-      }
+
+        &:first-child {
+            margin-inline-end: var(--fdCalendar_Action_Padding);
+        }
+
+        &:last-child {
+            margin-inline-start: var(--fdCalendar_Action_Padding);
+        }
+
+        > [type='button'] {
+            width: 100%;
+        }
+
+        &--arrow-left,
+        &--arrow-right {
+            flex-grow: 0;
+            width: var(--fdCalendar_Action_Width);
+        }
+
+        // Years range selection mode
+        &--arrow-left + &--arrow-right {
+            margin-inline-start: auto;
+        }
+
+        [class*='sap-icon'] {
+            @include fd-rtl() {
+                transform: scaleX(-1);
+            }
+        }
     }
 
-    // Fixes the issue on ngx side.
-    &:focus-visible {
-      outline: none;
+    &__text-wrapper {
+        @include fd-reset();
+        @include fd-flex-center();
+
+        height: 100%;
     }
 
-    @include fd-focus() {
-      .#{$block}__text-wrapper {
-        border: var(--fdCalendar_Text_Wrapper_Border);
-        box-sizing: var(--fdCalendar_Text_Wrapper_Box_Sizing);
-        margin-inline: var(--fdCalendar_Text_Wrapper_Margin);
-        margin-block: var(--fdCalendar_Text_Wrapper_Margin);
-        height: var(--fdCalendar_Text_Wrapper_Height);
-      }
+    &__item {
+        @extend %fd-calendar-item;
 
-      .#{$block}__text {
-        border: var(--fdCalendar_Text_Border_Focus);
-      }
+        height: var(--fdCalendar_Item_Height);
+
+        @include fd-hover() {
+            --fdCalendar_Item_Background: var(--sapList_Hover_Background);
+        }
+
+        @include fd-disabled() {
+            pointer-events: none;
+            opacity: 0.4;
+        }
+
+        &--weekend {
+            --fdCalendar_Item_Background: var(--sapLegend_NonWorkingBackground);
+
+            @include fd-hover() {
+                --fdCalendar_Item_Background: var(--sapList_Hover_Background);
+
+                filter: brightness(1.05);
+            }
+        }
+
+        &--other {
+            --fdCalendar_Item_Background: var(--fdCalendar_Background);
+
+            @include fd-hover() {
+                --fdCalendar_Item_Background: var(--sapList_Hover_Background);
+            }
+
+            .#{$block}__text {
+                --fdCalendar_Item_Text_Color: var(--sapContent_LabelColor);
+            }
+        }
+
+        &--selected {
+            --fdCalendar_Item_Background: var(--sapContent_Selected_Background);
+            --fdCalendar_Item_Border: var(--fdCalendar_Active_Item_Border);
+
+            @include fd-hover() {
+                --fdCalendar_Item_Background: var(--fdCalendar_Item_Active_Background_Hover);
+            }
+
+            .#{$block}__text {
+                --fdCalendar_Item_Text_Color: var(--sapContent_Selected_TextColor);
+
+                font-family: var(--fdCalendar_Active_Item_Font_Weight);
+            }
+        }
+
+        &--range {
+            --fdCalendar_Item_Border: var(--fdCalendar_Active_Item_Border);
+            --fdCalendar_Item_Background: var(--sapList_SelectionBackgroundColor);
+
+            @include fd-hover() {
+                --fdCalendar_Item_Background: var(--sapList_Hover_SelectionBackground);
+            }
+        }
+
+        &--today.#{$block}__item--selected::after,
+        &--today.#{$block}__item--range::after {
+            @include fd-today_after();
+
+            border: solid 0.0625rem var(--sapList_SelectionBorderColor);
+            border-radius: var(--fdCalendar_Item_Today_Selected_Bottom_Radius);
+        }
+
+        &--today {
+            --fdCalendar_Item_Border: solid 0.125rem var(--sapLegend_CurrentDateTime);
+
+            box-shadow: 0 0 0 0.0625rem var(--sapList_Background) inset;
+            position: relative;
+
+            &::after {
+                @include fd-today_after();
+
+                border-radius: 0.3125rem;
+            }
+        }
+
+        &.#{$block}__item--selected {
+            @include fd-focus() {
+                .#{$block}__text-wrapper {
+                    border: var(--fdCalendar_Item_Text_Active_Focus);
+                }
+            }
+        }
+
+        // Fixes the issue on ngx side.
+        &:focus-visible {
+            outline: none;
+        }
+
+        @include fd-focus() {
+            .#{$block}__text-wrapper {
+                border: var(--fdCalendar_Text_Wrapper_Border);
+                box-sizing: var(--fdCalendar_Text_Wrapper_Box_Sizing);
+                margin-inline: var(--fdCalendar_Text_Wrapper_Margin);
+                margin-block: var(--fdCalendar_Text_Wrapper_Margin);
+                height: var(--fdCalendar_Text_Wrapper_Height);
+            }
+
+            .#{$block}__text {
+                border: var(--fdCalendar_Text_Border_Focus);
+            }
+        }
+
+        &--side-helper {
+            align-self: center;
+            pointer-events: none;
+
+            --fdCalendar_Item_Height: var(--fdCalendar_Item_Side_Helper, var(--fdCalendar_Item_Helper_Height));
+            --fdCalendar_Item_Background: var(--sapList_Background);
+
+            .#{$block}__text {
+                --fdCalendar_Item_Text_Color: var(--sapContent_LabelColor);
+                --fdCalendar_Item_Font_Size: var(--sapFontSmallSize);
+            }
+        }
     }
 
-    &--side-helper {
-      align-self: center;
-      pointer-events: none;
+    .#{$block}__my-item {
+        @extend %fd-calendar-item;
 
-      --fdCalendar_Item_Height: var(--fdCalendar_Item_Side_Helper, var(--fdCalendar_Item_Helper_Height));
-      --fdCalendar_Item_Background: var(--sapList_Background);
+        max-height: var(--fdCalendar_Item_Height);
 
-      .#{$block}__text {
-        --fdCalendar_Item_Text_Color: var(--sapContent_LabelColor);
-        --fdCalendar_Item_Font_Size: var(--sapFontSmallSize);
-      }
-    }
-  }
+        &-button {
+            min-width: 100%;
+            padding-inline: 0;
+            padding-block: 0;
+        }
 
-  .#{$block}__my-item {
-    @extend %fd-calendar-item;
-
-    max-height: var(--fdCalendar_Item_Height);
-
-    &-button {
-      min-width: 100%;
-      padding-inline: 0;
-      padding-block: 0;
+        .#{$block}__text {
+            color: inherit;
+        }
     }
 
-    .#{$block}__text {
-      color: inherit;
-    }
-  }
+    // CALENDAR CONTENT
+    &__content {
+        @include fd-reset();
 
-  // CALENDAR CONTENT
-  &__content {
-    @include fd-reset();
+        width: 100%;
+        display: table;
+        border-spacing: 0;
 
-    width: 100%;
-    display: table;
-    border-spacing: 0;
+        &--years,
+        &--months {
+            padding-block-start: var(--fdCalendar_Item_Helper_Height);
 
-    &--years,
-    &--months {
-      padding-block-start: var(--fdCalendar_Item_Helper_Height);
+            --fdCalendar_Item_Background: transparent;
+        }
 
-      --fdCalendar_Item_Background: transparent;
-    }
-
-    &--screen-reader-only {
-      @include fd-screen-reader-only();
-    }
-  }
-
-  &__group {
-    @include fd-reset();
-
-    display: table-row-group;
-  }
-
-  &__row {
-    @include fd-reset();
-
-    display: flex;
-  }
-
-  &--legend {
-
-    margin: 0.125rem 0.5rem 0.25rem 0.25rem;
-    width: 1rem;
-    height: 1rem;
-
-    &__circle {
-      height: 1rem;
-      width: 1rem;
-      border: 0.0625rem solid var(--sapLegendColor5);  // var(--sapContent_ForegroundBorderColor);
-      border-radius: 0.563rem;
-      // background-color: var(--sapLegendColor5);
+        &--screen-reader-only {
+            @include fd-screen-reader-only();
+        }
     }
 
-    &__square {
-      height: 0.875rem;
-      width: 0.875rem;
-      border: 0.0625rem solid var(--sapContent_ForegroundBorderColor);
-      border-radius: 0.125rem;
-      background-color: bisque;
+    &__group {
+        @include fd-reset();
+
+        display: table-row-group;
+    }
+
+    &__row {
+        @include fd-reset();
+
+        display: flex;
+
+        &--legend {
+            display: flex;
+            justify-content: space-around;
+        }
+    }
+
+    &--legend {
+        display: flex;
+
+        &__circle {
+            display: inline-block;
+            height: 1rem;
+            width: 1rem;
+            border: 0.0625rem solid var(--sapContent_ForegroundBorderColor); // var(--sapLegendColor5)
+            border-radius: 0.563rem;
+            margin: auto;
+            background-color: none;
+        }
+
+        &__square {
+            height: 0.875rem;
+            width: 0.875rem;
+            border: 0.0625rem solid var(--sapContent_ForegroundBorderColor);
+            border-radius: 0.125rem;
+            background-color: none; // var(--sapLegendColor7)
+            margin: auto;
+        }
+
+        &__text {
+            @include legendTextBase();
+
+            &_description {
+                @include legendTextBase();
+                vertical-align: middle;
+                white-space: pre-line;
+                text-overflow: ellipsis;
+                overflow: hidden;
+            }
+        }
+
+        &:hover {
+            padding: 0.125rem;
+            border-radius: 0.25rem;
+            border: var(--sapContent_FocusWidth) solid var(--sapContent_FocusColor);
+        }
     }
 
     &__text {
-      color: var(--sapContent_LabelColor);
-      font-family: var(--sapFontFamily);
-      font-size: var(--sapFontSmallSize);
-      font-weight: normal;
-      padding: 0.3125rem;
-      background: var(--sapList_Background);
-      column-gap: 0.5rem;
+        @include fd-reset();
+        @include fd-flex-center();
+
+        height: var(--fdCalendar_Item_Text_Height);
+        min-width: 1.375rem;
+        color: var(--fdCalendar_Item_Text_Color);
+        font-size: var(--fdCalendar_Item_Font_Size);
+        text-shadow: var(--fdCalendar_Text_Shadow);
+        border-radius: 0.1875rem;
+        flex-grow: 1;
+
+        // Compensate inner borders.
+        max-width: calc(100% - 0.7rem);
+        position: relative;
+
+        @include fd-focus() {
+            border: var(--sapContent_FocusColor) var(--sapContent_FocusStyle) var(--sapContent_FocusWidth);
+        }
     }
 
-    &__description {
-      vertical-align: middle;
-      white-space: pre-line;
-      text-overflow: ellipsis;
-      overflow: hidden;
-      cursor: default;
+    // CALENDAR COMPACT
+    @include fd-compact-or-condensed() {
+        --fdCalendar_Width: calc(
+            var(--fdCalendar_Action_Width) * 8 + 2 * var(--fdCalendar_Padding) + var(--fdCalendar_Item_Spacing) * 16
+        );
+        --fdCalendar_Padding: 0.5rem;
+        --fdCalendar_Item_Text_Height: 1.375rem;
+        --fdCalendar_Item_Height: 2rem;
+        --fdCalendar_Button_Horizontal_Space: 0.1875rem; // This value is used to create additional vertical space on the button which should be created by currently not implemented "Touchable Area" of the button.
+        --fdCalendar_Action_Width: 2rem;
+        --fdCalendar_Item_Width: var(--fdCalendar_Action_Width);
     }
-  }
 
-
-  &__text {
-    @include fd-reset();
-    @include fd-flex-center();
-
-    height: var(--fdCalendar_Item_Text_Height);
-    min-width: 1.375rem;
-    color: var(--fdCalendar_Item_Text_Color);
-    font-size: var(--fdCalendar_Item_Font_Size);
-    text-shadow: var(--fdCalendar_Text_Shadow);
-    border-radius: 0.1875rem;
-    flex-grow: 1;
-
-    // Compensate inner borders.
-    max-width: calc(100% - 0.7rem);
-    position: relative;
-
-    @include fd-focus() {
-      border: var(--sapContent_FocusColor) var(--sapContent_FocusStyle) var(--sapContent_FocusWidth);
+    // CALENDAR MOBILE
+    &--mobile-landscape,
+    &--mobile-portrait {
+        width: 100%;
+        height: 100%;
     }
-  }
 
-  // CALENDAR COMPACT
-  @include fd-compact-or-condensed() {
-    --fdCalendar_Width:
-      calc(
-        var(--fdCalendar_Action_Width) * 8 + 2 * var(--fdCalendar_Padding) + var(--fdCalendar_Item_Spacing) * 16
-      );
-    --fdCalendar_Padding: 0.5rem;
-    --fdCalendar_Item_Text_Height: 1.375rem;
-    --fdCalendar_Item_Height: 2rem;
-    --fdCalendar_Button_Horizontal_Space: 0.1875rem; // This value is used to create additional vertical space on the button which should be created by currently not implemented "Touchable Area" of the button.
-    --fdCalendar_Action_Width: 2rem;
-    --fdCalendar_Item_Width: var(--fdCalendar_Action_Width);
-  }
+    &--mobile-landscape {
+        --fdCalendar_Padding: 0;
+        --fdCalendar_Item_Side_Helper: 1.625rem;
 
-  // CALENDAR MOBILE
-  &--mobile-landscape,
-  &--mobile-portrait {
-    width: 100%;
-    height: 100%;
-  }
-
-  &--mobile-landscape {
-    --fdCalendar_Padding: 0;
-    --fdCalendar_Item_Side_Helper: 1.625rem;
-
-    .#{$block} {
-      &__navigation--main {
-        max-width: 20rem;
-      }
+        .#{$block} {
+            &__navigation--main {
+                max-width: 20rem;
+            }
+        }
     }
-  }
 
-  &--mobile-portrait {
-    --fdCalendar_Padding: 0;
+    &--mobile-portrait {
+        --fdCalendar_Padding: 0;
 
-    padding-block-start: 1rem;
-  }
+        padding-block-start: 1rem;
+    }
 }
