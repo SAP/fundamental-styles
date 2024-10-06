@@ -5383,6 +5383,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"arg@npm:^5.0.2":
+  version: 5.0.2
+  resolution: "arg@npm:5.0.2"
+  checksum: 10/92fe7de222054a060fd2329e92e867410b3ea260328147ee3fb7855f78efae005f4087e698d4e688a856893c56bb09951588c40f2c901cf6996cd8cd7bcfef2c
+  languageName: node
+  linkType: hard
+
 "argparse@npm:^1.0.7":
   version: 1.0.10
   resolution: "argparse@npm:1.0.10"
@@ -5670,16 +5677,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"axios@npm:^0.21.1":
-  version: 0.21.4
-  resolution: "axios@npm:0.21.4"
-  dependencies:
-    follow-redirects: "npm:^1.14.0"
-  checksum: 10/da644592cb6f8f9f8c64fdabd7e1396d6769d7a4c1ea5f8ae8beb5c2eb90a823e3a574352b0b934ac62edc762c0f52647753dc54f7d07279127a7e5c4cd20272
-  languageName: node
-  linkType: hard
-
-"axios@npm:^1.6.0, axios@npm:^1.6.2":
+"axios@npm:^1.6.0, axios@npm:^1.6.2, axios@npm:^1.7.7":
   version: 1.7.7
   resolution: "axios@npm:1.7.7"
   dependencies:
@@ -7693,7 +7691,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"debug@npm:4, debug@npm:^4.0.0, debug@npm:^4.1.0, debug@npm:^4.1.1, debug@npm:^4.3.1, debug@npm:^4.3.2, debug@npm:^4.3.3, debug@npm:^4.3.4, debug@npm:^4.3.6":
+"debug@npm:4, debug@npm:4.3.7, debug@npm:^4.0.0, debug@npm:^4.1.0, debug@npm:^4.1.1, debug@npm:^4.3.1, debug@npm:^4.3.2, debug@npm:^4.3.3, debug@npm:^4.3.4, debug@npm:^4.3.6":
   version: 4.3.7
   resolution: "debug@npm:4.3.7"
   dependencies:
@@ -7702,18 +7700,6 @@ __metadata:
     supports-color:
       optional: true
   checksum: 10/71168908b9a78227ab29d5d25fe03c5867750e31ce24bf2c44a86efc5af041758bb56569b0a3d48a9b5344c00a24a777e6f4100ed6dfd9534a42c1dde285125a
-  languageName: node
-  linkType: hard
-
-"debug@npm:4.3.2":
-  version: 4.3.2
-  resolution: "debug@npm:4.3.2"
-  dependencies:
-    ms: "npm:2.1.2"
-  peerDependenciesMeta:
-    supports-color:
-      optional: true
-  checksum: 10/6a2980374e16f1bd2be7a19adb4ebaae76bdb059b7c35e5f2a94c638a858518193c7be51991f87bc38e544acd4067bb6852ac8e8d02be5105a01601eb3f92f2a
   languageName: node
   linkType: hard
 
@@ -9292,7 +9278,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"follow-redirects@npm:^1.0.0, follow-redirects@npm:^1.14.0, follow-redirects@npm:^1.15.0, follow-redirects@npm:^1.15.6":
+"follow-redirects@npm:^1.0.0, follow-redirects@npm:^1.15.0, follow-redirects@npm:^1.15.6":
   version: 1.15.9
   resolution: "follow-redirects@npm:1.15.9"
   peerDependenciesMeta:
@@ -9571,7 +9557,7 @@ __metadata:
     sass: "npm:1.52.1"
     semver: "npm:7.5.4"
     standard-version: "npm:9.3.2"
-    start-server-and-test: "npm:1.14.0"
+    start-server-and-test: "npm:2.0.8"
     storybook: "npm:^8.3.4"
     stylelint: "npm:16.8.2"
     stylelint-config-standard: "npm:36.0.1"
@@ -11523,7 +11509,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"joi@npm:^17.4.0":
+"joi@npm:^17.13.3":
   version: 17.13.3
   resolution: "joi@npm:17.13.3"
   dependencies:
@@ -13682,7 +13668,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"minimist@npm:^1.2.0, minimist@npm:^1.2.3, minimist@npm:^1.2.5, minimist@npm:^1.2.6":
+"minimist@npm:^1.2.0, minimist@npm:^1.2.3, minimist@npm:^1.2.5, minimist@npm:^1.2.6, minimist@npm:^1.2.8":
   version: 1.2.8
   resolution: "minimist@npm:1.2.8"
   checksum: 10/908491b6cc15a6c440ba5b22780a0ba89b9810e1aea684e253e43c4e3b8d56ec1dcdd7ea96dde119c29df59c936cde16062159eae4225c691e19c70b432b6e6f
@@ -13856,13 +13842,6 @@ __metadata:
   version: 2.0.0
   resolution: "ms@npm:2.0.0"
   checksum: 10/0e6a22b8b746d2e0b65a430519934fefd41b6db0682e3477c10f60c76e947c4c0ad06f63ffdf1d78d335f83edee8c0aa928aa66a36c7cd95b69b26f468d527f4
-  languageName: node
-  linkType: hard
-
-"ms@npm:2.1.2":
-  version: 2.1.2
-  resolution: "ms@npm:2.1.2"
-  checksum: 10/673cdb2c3133eb050c745908d8ce632ed2c02d85640e2edb3ace856a2266a813b30c613569bf3354fdf4ea7d1a1494add3bfa95e2713baa27d0c2c71fc44f58f
   languageName: node
   linkType: hard
 
@@ -16618,7 +16597,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"rxjs@npm:^7.1.0, rxjs@npm:^7.5.5":
+"rxjs@npm:^7.5.5, rxjs@npm:^7.8.1":
   version: 7.8.1
   resolution: "rxjs@npm:7.8.1"
   dependencies:
@@ -17265,22 +17244,23 @@ __metadata:
   languageName: node
   linkType: hard
 
-"start-server-and-test@npm:1.14.0":
-  version: 1.14.0
-  resolution: "start-server-and-test@npm:1.14.0"
+"start-server-and-test@npm:2.0.8":
+  version: 2.0.8
+  resolution: "start-server-and-test@npm:2.0.8"
   dependencies:
+    arg: "npm:^5.0.2"
     bluebird: "npm:3.7.2"
     check-more-types: "npm:2.24.0"
-    debug: "npm:4.3.2"
+    debug: "npm:4.3.7"
     execa: "npm:5.1.1"
     lazy-ass: "npm:1.6.0"
     ps-tree: "npm:1.2.0"
-    wait-on: "npm:6.0.0"
+    wait-on: "npm:8.0.1"
   bin:
     server-test: src/bin/start.js
     start-server-and-test: src/bin/start.js
     start-test: src/bin/start.js
-  checksum: 10/499ac45a1c94b40dd54f299a0f55925e246eb576404d2d49ff61a4eec982f2762950f53cd275bd9ae4e43f8c4cb22789fbbe0e5ac6107eaef666a8151b66afba
+  checksum: 10/4067c3dd120e1e515e4d087f2a60faebaae512517374dc30d14b29492a6761e2ab72f82c8bcb72f0eefc060fd7345674821e1255bb58a6ceaa5a1fac4257790a
   languageName: node
   linkType: hard
 
@@ -19140,18 +19120,18 @@ __metadata:
   languageName: node
   linkType: hard
 
-"wait-on@npm:6.0.0":
-  version: 6.0.0
-  resolution: "wait-on@npm:6.0.0"
+"wait-on@npm:8.0.1":
+  version: 8.0.1
+  resolution: "wait-on@npm:8.0.1"
   dependencies:
-    axios: "npm:^0.21.1"
-    joi: "npm:^17.4.0"
+    axios: "npm:^1.7.7"
+    joi: "npm:^17.13.3"
     lodash: "npm:^4.17.21"
-    minimist: "npm:^1.2.5"
-    rxjs: "npm:^7.1.0"
+    minimist: "npm:^1.2.8"
+    rxjs: "npm:^7.8.1"
   bin:
     wait-on: bin/wait-on
-  checksum: 10/a11c972ff400bd2b73137d85c72b1f7b5620aa12c3fbb102ae8ca76455c09a58afb2bff78e0ce6a3349c5e42351aceabd10a1caec40eaf9adce515b258a9f547
+  checksum: 10/41f933031b994718dfb50af35bb843f7f7017d601ef22927e92c211736fadd21808fdbf7ae367e998bcaf995cb9c05cf6160552dc655db9082aeecc346bc926d
   languageName: node
   linkType: hard
 
