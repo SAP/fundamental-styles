@@ -9546,7 +9546,7 @@ __metadata:
     fs-extra: "npm:11.2.0"
     git-semver-tags: "npm:4.1.1"
     glob: "npm:8.0.3"
-    husky: "npm:7.0.4"
+    husky: "npm:9.1.6"
     jsdom: "npm:20.0.1"
     jsonc-eslint-parser: "npm:2.1.0"
     lerna: "npm:8.1.2"
@@ -10397,12 +10397,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"husky@npm:7.0.4":
-  version: 7.0.4
-  resolution: "husky@npm:7.0.4"
+"husky@npm:9.1.6":
+  version: 9.1.6
+  resolution: "husky@npm:9.1.6"
   bin:
-    husky: lib/bin.js
-  checksum: 10/8fecb619ab924bd99b2c9ce494bff88e45369c1125e07a603dfacb4bd60ef86840e08c689794c476189183e6223f0ea93aadebf78e3508479453c219358ca787
+    husky: bin.js
+  checksum: 10/421ccd8850378231aaefd70dbe9e4f1549b84ffe3a6897f93a202242bbc04e48bd498169aef43849411105d9fcf7c192b757d42661e28d06b934a609a4eb8771
   languageName: node
   linkType: hard
 
