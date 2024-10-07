@@ -15,7 +15,6 @@ $block: #{$fd-namespace}-form-group;
     }
 
     .#{$block}-form-item + .#{$block}-form-item {
-      -webkit-margin-before: 0;
       margin-block-start: 0;
     }
   }
