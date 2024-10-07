@@ -58,7 +58,7 @@
     "@nx/plugin": "19.4.2",
     "@nx/react": "19.4.2",
     "@nx/web": "19.4.2",
-    "@sap-theming/theming-base-content": "11.18.0",
+    "@sap-theming/theming-base-content": "11.18.2",
     "@storybook/addon-a11y": "^8.3.4",
     "@storybook/addon-actions": "^8.3.4",
     "@storybook/addon-controls": "^8.3.4",
