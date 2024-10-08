@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.39.0-rc.5](https://github.com/SAP/fundamental-styles/compare/v0.39.0-rc.4...v0.39.0-rc.5) (2024-10-08)
+
+### Bug Fixes
+
+-   **styles:** remove redundant spacing between form items [ci visual] ([#5690](https://github.com/SAP/fundamental-styles/issues/5690)) ([91b1d8a](https://github.com/SAP/fundamental-styles/commit/91b1d8ae6991b15dcbe30dae2e070e9e65d79dd8))
+
 # [0.39.0-rc.4](https://github.com/SAP/fundamental-styles/compare/v0.39.0-rc.3...v0.39.0-rc.4) (2024-10-07)
 
 **Note:** Version bump only for package fundamental-styles
