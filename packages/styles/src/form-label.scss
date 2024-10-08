@@ -25,7 +25,7 @@ $block: #{$fd-namespace}-form-label;
     padding-inline-end: 0.5rem;
 
     &::after {
-      content: '*';
+      content: '*' / '';
       font-size: var(--sapFontLargeSize);
       font-weight: bold;
       color: var(--sapField_RequiredColor);
