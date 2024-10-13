@@ -3564,14 +3564,14 @@ __metadata:
   linkType: hard
 
 "@storybook/addon-a11y@npm:^8.3.4":
-  version: 8.3.4
-  resolution: "@storybook/addon-a11y@npm:8.3.4"
+  version: 8.3.5
+  resolution: "@storybook/addon-a11y@npm:8.3.5"
   dependencies:
-    "@storybook/addon-highlight": "npm:8.3.4"
+    "@storybook/addon-highlight": "npm:8.3.5"
     axe-core: "npm:^4.2.0"
   peerDependencies:
-    storybook: ^8.3.4
-  checksum: 10/fadbb98defa7c32075cbae05109e9492ea1a86883644c7f1eef29aea438364b162d2718e26c8b7f8916a35dfe1cbc3d6ef9a6213ff726a1f62d6bbe3b999d65e
+    storybook: ^8.3.5
+  checksum: 10/331fd13048a4781039f4a25de3a38967499495a4144bd72c2cf9058a37fbfc476d6f351d123066025778cd490ef3136ced8646553ccc0a717e7b3ad3b2010e7e
   languageName: node
   linkType: hard
 
@@ -3626,14 +3626,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/addon-highlight@npm:8.3.4":
-  version: 8.3.4
-  resolution: "@storybook/addon-highlight@npm:8.3.4"
+"@storybook/addon-highlight@npm:8.3.5":
+  version: 8.3.5
+  resolution: "@storybook/addon-highlight@npm:8.3.5"
   dependencies:
     "@storybook/global": "npm:^5.0.0"
   peerDependencies:
-    storybook: ^8.3.4
-  checksum: 10/771d878a00eecd1bcc3950116d48bce3aaac47e754f0895c69c6a546f0fa3ce1d29704c9b3b736af330c50181e5be0056316a8222fa2689679401eca9d9a6bec
+    storybook: ^8.3.5
+  checksum: 10/243b6cd5183c47b7401655b556bf74bf71441c7dfd89798879df0d8a05c26681f4457d92157bb480b9d3368933226c967dab3da26aae807e62bdfa4930a00490
   languageName: node
   linkType: hard
 
