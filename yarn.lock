@@ -3798,11 +3798,11 @@ __metadata:
   linkType: hard
 
 "@storybook/csf-tools@npm:^8.3.4":
-  version: 8.3.4
-  resolution: "@storybook/csf-tools@npm:8.3.4"
+  version: 8.3.5
+  resolution: "@storybook/csf-tools@npm:8.3.5"
   peerDependencies:
-    storybook: ^8.3.4
-  checksum: 10/09ddff55cb5ee3d321d7f8a5c8dd076f12b35432b0fb542b6a7d874d5cce159712c9a82a3b376eedb1d3612d151847d7709fc592bf944f1472f58d73b24e8018
+    storybook: ^8.3.5
+  checksum: 10/b1e0e8dc94a514ac93a40cb49923cc9557ab13a07b27c190e3b3c7c8a8e23e24a3edb3a55b0aacc3896fe143354c398875c8e30b0dd71de1ca59e35ca950b173
   languageName: node
   linkType: hard
 
