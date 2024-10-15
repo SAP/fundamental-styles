@@ -1,122 +1,125 @@
-<div style="height:300px">
-    <div class="fd-shellbar fd-shellbar--responsive-paddings">
+<div style="height:150px">
+    <div class="fd-shellbar fd-shellbar--responsive-paddings" role="banner" aria-label="Shell Bar">
         <div class="fd-shellbar__group fd-shellbar__group--product">
-            <span class="fd-shellbar__logo"><img src="//unpkg.com/fundamental-styles/dist/images/sap-logo.png"
-                                                 srcset="//unpkg.com/fundamental-styles/dist/images/sap-logo@2x.png 1x, //unpkg.com/fundamental-styles/dist/images/sap-logo@3x.png 2x, //unpkg.com/fundamental-styles/dist/images/sap-logo@4x.png 3x"
-                                                 width="48" height="24" alt="SAP"></span>
-            <span class="fd-shellbar__title">Corporate Portal</span>
-        </div>
+            <div class="fd-shellbar__branding" role="link" tabindex="0" aria-label="SAP Corporate Portal Solution Name Home">
+                <span class="fd-shellbar__logo"><img src="//unpkg.com/fundamental-styles/dist/images/sap-logo.png" srcset="//unpkg.com/fundamental-styles/dist/images/sap-logo@2x.png 1x, //unpkg.com/fundamental-styles/dist/images/sap-logo@3x.png 2x, //unpkg.com/fundamental-styles/dist/images/sap-logo@4x.png 3x" width="48" height="24" alt="SAP"></span>
 
-
-        <div
-        class="fd-shellbar__group fd-shellbar__group--center fd-shellbar__group--mobile-flex"
-      >
-        <div class="fd-shellbar__action fd-shellbar__action--grow">
-          <div id="JKHhjk7234k2a" class="fd-input-group fd-shellbar__search-field">
-            <input
-              aria-label="search-input"
-              type="text"
-              onfocus="addClass('JKHhjk7234k2a', 'is-focus')"
-              onblur="removeClass('JKHhjk7234k2a', 'is-focus')"
-              class="fd-input fd-input-group__input fd-shellbar__search-field-input"
-              id="F4GcX348b1"
-              placeholder="Search everything"
-              value="Typing..."
-            />
-            <div
-              class="fd-input-group__addon fd-shellbar__search-field-addon fd-shellbar__search-cancel fd-input-group__addon--button"
-            >
-              <button
-                aria-label="button-search"
-                class="fd-shellbar__button fd-button fd-button--transparent"
-              >
-                <i class="sap-icon--decline"></i>
-              </button>
+                <div class="fd-shellbar__product">
+                    <span class="fd-shellbar__title">Corporate Portal</span>
+                    <span class="fd-shellbar__subtitle">Solution name</span>
+                </div>
             </div>
-            <div
-              class="fd-input-group__addon fd-shellbar__search-field-addon fd-shellbar__search-submit fd-input-group__addon--button"
-            >
-              <button
-                aria-label="button-search"
-                class="fd-shellbar__button fd-button fd-button--transparent"
-              >
-                <i class="sap-icon--search"></i>
-              </button>
-            </div>
-            <div class="fd-shellbar__search-field-helper"></div>
-          </div>
         </div>
-        <div
-          class="fd-shellbar__action fd-shellbar__action--mobile fd-shellbar__action--shrink"
-        >
-          <button class="fd-button fd-button--transparent">Cancel</button>
-        </div>
-      </div>
-
         <div class="fd-shellbar__group fd-shellbar__group--actions">
-            <div class="fd-shellbar__action fd-shellbar__action--desktop">
+            <div class="fd-shellbar__action">
+                <div id="JKHhjk7234k" class="fd-input-group fd-shellbar__search-field">
+                    <div
+                      class="fd-input-group__addon fd-shellbar__search-field-category fd-input-group__addon--button"
+                    >
+                      <div class="fd-select">
+                        <button
+                          aria-expanded="false"
+                          aria-haspopup="listbox"
+                          aria-labelledby="cozySelectLabel cozySelectValue"
+                          class="fd-select__control fd-shellbar__search-category"
+                          id="cozySelectCombobox"
+                          onclick="
+                                  toggleElAttrs('h0C6A325', ['aria-hidden']);
+                                  toggleElAttrs('cozySelectCombobox', ['aria-expanded']);
+                              "
+                          value="List Item 1"
+                          tabindex="0"
+                        >
+                          <span is="cozySelectValue" class="fd-select__text-content"
+                            >List Item 1</span
+                          >
+                          <span
+                            class="fd-button fd-button--transparent fd-select__button fd-shellbar__search-dropdown"
+                          >
+                            <i class="sap-icon--slim-arrow-down"></i>
+                          </span>
+                        </button>
+                      </div>
+                    </div>
+                    <input
+                      aria-label="search-input"
+                      type="text"
+                      onfocus="addClass('JKHhjk7234kwedf', 'is-focus')"
+                      onblur="removeClass('JKHhjk7234kwedf', 'is-focus')"
+                      class="fd-input fd-input-group__input fd-shellbar__search-field-input"
+                      id="F4GcX348b1"
+                      placeholder="Search everything"
+                    />
+                    <div
+                      class="fd-input-group__addon fd-shellbar__search-field-addon fd-shellbar__search-cancel fd-input-group__addon--button"
+                    >
+                      <button
+                        aria-label="button-search"
+                        class="fd-shellbar__button fd-button fd-button--transparent"
+                      >
+                        <i class="sap-icon--decline"></i>
+                      </button>
+                    </div>
+                    <div
+                      class="fd-input-group__addon fd-shellbar__search-field-addon fd-shellbar__search-submit fd-input-group__addon--button"
+                    >
+                      <button
+                        aria-label="button-search"
+                        class="fd-shellbar__button fd-button fd-button--transparent"
+                      >
+                        <i class="sap-icon--search"></i>
+                      </button>
+                    </div>
+                    <div class="fd-shellbar__search-field-helper"></div>
+                  </div>
+            </div>
+            <div class="fd-shellbar__action">
                 <button
                     class="fd-button fd-button--transparent fd-shellbar__button"
-                    aria-label="Joule Digital Assitant">
+                    aria-label="Joule Digital Assitant" aria-haspopup="dialog" aria-expanded="false" title="Joule Digital Assitant">
                     <i class="sap-icon--da"></i>
                 </button>
             </div>
-            <div class="fd-shellbar__action fd-shellbar__action--desktop">
-                <button class="fd-button fd-button--transparent fd-shellbar__button" aria-label="Notifications">
-                    <i class="sap-icon--bell"></i>
-                    <span class="fd-button__badge">251K</span>
+            <div class="fd-shellbar__action">
+                <button
+                  class="fd-button fd-button--transparent fd-shellbar__button"
+                  aria-label="Notifications"
+                  title="Notifications"
+                  aria-haspopup="dialog" aria-expanded="false"
+                >
+                  <i class="sap-icon--bell"></i>
+                  <span class="fd-button__badge">72</span>
                 </button>
             </div>
-            <div class="fd-shellbar__action fd-shellbar__action--mobile">
-                <div class="fd-shellbar-collapse">
-                    <div class="fd-popover fd-popover--right">
-                        <div class="fd-popover__control">
-                            <div class="fd-shellbar-collapse--control" onclick="onPopoverClick('CWaGGD78')"
-                                 aria-controls="CWaGGD78" aria-expanded="false" aria-haspopup="true" role="button">
-                                <button class="fd-button fd-button--transparentfd-shellbar__button" aria-controls="undefined"
-                                        aria-haspopup="true" aria-expanded="false">
-                                    <i class="sap-icon--overflow"></i>
-                                    <span class="fd-buton__badge">251K</span>
-                                </button>
-                            </div>
-                        </div>
-                        <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--right"
-                             aria-hidden="true" id="CWaGGD78">
-                            <nav class="fd-menu">
-                                <ul class="fd-menu__list fd-menu__list--no-shadow">
-                                    <li class="fd-menu__item">
-                                        <a role="button" class="fd-menu__link">
-                                            <span class="fd-menu__title">Search</span>
-                                        </a>
-                                    </li>
-                                    <li class="fd-menu__item">
-                                        <a role="button" class="fd-menu__link">
-                                            <span class="fd-menu__title">Joule</span>
-                                        </a>
-                                    </li>
-                                    <li class="fd-menu__item">
-                                        <a role="button" class="fd-menu__link">
-                                            <span class="fd-menu__title">Notifications Out</span>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </nav>
-                        </div>
-                    </div>
-                </div>
+            <div class="fd-shellbar__action">
+                <button
+                    class="fd-button fd-button--transparent fd-shellbar__button"
+                    aria-label="Feedback" aria-haspopup="dialog" aria-expanded="false" title="Feedback">
+                    <i class="sap-icon--feedback"></i>
+                </button>
+            </div>
+            <div class="fd-shellbar__action">
+                <button
+                    class="fd-button fd-button--transparent fd-shellbar__button"
+                    aria-label="Help" aria-haspopup="dialog" aria-expanded="false" title="Help">
+                    <i class="sap-icon--sys-help"></i>
+                </button>
             </div>
             <div class="fd-shellbar__action">
                 <div class="fd-popover fd-popover--right">
                     <div class="fd-popover__control">
                         <div class="fd-button fd-button--transparent fd-shellbar__button fd-user-menu__control"
-                             onclick="onPopoverClick('DD35G276')" aria-controls="DD35G276" aria-expanded="false"
-                             aria-haspopup="true" role="button" tabindex="0">
+                             onclick="onPopoverClick('HSTTDY276')" aria-controls="HSTTDY276" aria-expanded="false"
+                             aria-haspopup="dialog" role="button" tabindex="0" aria-label="User Menu" title="User Menu">
                             <span
-                                class="fd-avatar fd-avatar--xs fd-avatar--circle fd-shellbar__avatar--circle">WW</span>
+                                class="fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--thumbnail fd-shellbar__avatar--circle"
+                                style="background-image: url('assets/images/avatars/1.svg');"
+                                aria-label="William Wallingham">
+                            </span>
                         </div>
                     </div>
                     <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--right" aria-hidden="true"
-                         id="DD35G276">
+                         id="HSTTDY276">
                         <nav class="fd-menu">
                             <ul class="fd-menu__list fd-menu__list--no-shadow">
                                 <li class="fd-menu__item">
@@ -134,6 +137,58 @@
                     </div>
                 </div>
             </div>
+            <div class="fd-shellbar__action">
+                <div class="fd-product-switch">
+                    <div class="fd-popover fd-popover--right">
+                        <button
+                            class="fd-button fd-button--transparent fd-shellbar__button fd-popover__control"
+                            aria-label="Product Switcher"
+                            title="Product Switcher"
+                            aria-controls="YSGDGFD82347"
+                            aria-expanded="false"
+                            aria-haspopup="dialog"
+                            onclick="onPopoverClick('YSGDGFD82347')">
+                            <i class="sap-icon--grid"></i>
+                        </button>
+                        <div class="fd-popover__body fd-popover__body--right" aria-hidden="true"
+                             id="YSGDGFD82347">
+                            <div class="fd-product-switch__body">
+                                <ul class="fd-product-switch__list">
+                                    <li class="fd-product-switch__item">
+                                        <div class="fd-product-switch__icon sap-icon--home"></div>
+                                        <div class="fd-product-switch__text">
+                                            <div class="fd-product-switch__title">Home</div>
+                                            <div class="fd-product-switch__subtitle">Central Home</div>
+                                        </div>
+                                    </li>
+                                    <li class="fd-product-switch__item selected">
+                                        <div
+                                            class="fd-product-switch__icon sap-icon--business-objects-experience"></div>
+                                        <div class="fd-product-switch__text">
+                                            <div class="fd-product-switch__title">Analytics Cloud</div>
+                                            <div class="fd-product-switch__subtitle">Analytics Cloud</div>
+                                        </div>
+                                    </li>
+                                    <li class="fd-product-switch__item">
+                                        <div class="fd-product-switch__icon sap-icon--contacts"></div>
+                                        <div class="fd-product-switch__text">
+                                            <div class="fd-product-switch__title">Catalog</div>
+                                            <div class="fd-product-switch__subtitle">Ariba</div>
+                                        </div>
+                                    </li>
+                                    <li class="fd-product-switch__item">
+                                        <div class="fd-product-switch__icon sap-icon--credit-card"></div>
+                                        <div class="fd-product-switch__text">
+                                            <div class="fd-product-switch__title">Guided Buying</div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </div>
+<div style="height: 100px;"></div>

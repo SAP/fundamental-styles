@@ -4,111 +4,111 @@
             <span class="fd-shellbar__logo">
                 <img src="//unpkg.com/fundamental-styles/dist/images/sap-logo.png" srcset="//unpkg.com/fundamental-styles/dist/images/sap-logo@2x.png 1x, //unpkg.com/fundamental-styles/dist/images/sap-logo@3x.png 2x, //unpkg.com/fundamental-styles/dist/images/sap-logo@4x.png 3x" width="48" height="24" alt="SAP">
             </span>
-            <div class="fd-shellbar__group fd-shellbar__group--actions">
-                <div class="fd-shellbar__action">
-                    <div class="fd-popover fd-popover--right fd-user-menu">
-                        <div class="fd-popover__control">
-                            <span
-                                class="fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--thumbnail"
-                                aria-controls="popoverA1"
-                                aria-expanded="true"
-                                aria-haspopup="true"
-                                aria-label="Avatar"
-                                style="background-image: url('assets/images/avatars/3.svg');"
-                                onclick="onPopoverClick('popoverA1');"
-                                role="button"
-                                tabindex="0"></span>
-                        </div>
+        </div>
+        <div class="fd-shellbar__group fd-shellbar__group--full-width fd-shellbar__group--actions">
+            <div class="fd-shellbar__action">
+                <div class="fd-popover fd-popover--right fd-user-menu">
+                    <div class="fd-popover__control">
+                        <span
+                            class="fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--thumbnail"
+                            aria-controls="popoverA1"
+                            aria-expanded="true"
+                            aria-haspopup="true"
+                            aria-label="Avatar"
+                            style="background-image: url('assets/images/avatars/3.svg');"
+                            onclick="onPopoverClick('popoverA1');"
+                            role="button"
+                            tabindex="0"></span>
+                    </div>
 
-                        <div class="fd-popover__body fd-popover__body--right" aria-hidden="false" id="popoverA1">
-                            <div class="fd-user-menu__body">
-                                <div class="fd-user-menu__header">
-                                    <span
-                                        class="fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--thumbnail"
-                                        aria-label="Avatar"
-                                        style="background-image: url('assets/images/avatars/1.svg');"></span>
+                    <div class="fd-popover__body fd-popover__body--right" aria-hidden="false" id="popoverA1">
+                        <div class="fd-user-menu__body">
+                            <div class="fd-user-menu__header">
+                                <span
+                                    class="fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--thumbnail"
+                                    aria-label="Avatar"
+                                    style="background-image: url('assets/images/avatars/1.svg');"></span>
 
-                                    <span
-                                        class="fd-avatar fd-avatar--xl fd-avatar--circle fd-avatar--thumbnail fd-user-menu__avatar"
-                                        aria-label="Avatar"
-                                        style="background-image: url('assets/images/avatars/3.svg');"></span>
+                                <span
+                                    class="fd-avatar fd-avatar--xl fd-avatar--circle fd-avatar--thumbnail fd-user-menu__avatar"
+                                    aria-label="Avatar"
+                                    style="background-image: url('assets/images/avatars/3.svg');"></span>
 
-                                    <button class="fd-button fd-button--transparent" aria-label="Product"><i class="sap-icon--grid"></i></button>
-                                </div>
-
-                                <div class="fd-user-menu__subheader">
-                                    <div class="fd-user-menu__user-name">John Miller</div>
-                                    <div class="fd-user-menu__user-role">User Experience Designer</div>
-                                </div>
-
-                                <ul class="fd-list fd-list--navigation fd-list--navigation-indication fd-list--no-border" role="list">
-                                    <li tabindex="-1" role="listitem" class="fd-list__item fd-list__item--link">
-                                        <a tabindex="0" class="fd-list__link">
-                                            <i role="presentation" class="fd-list__icon sap-icon--time-account"></i>
-                                            <span class="fd-list__title">Recent Activity</span>
-                                        </a>
-                                    </li>
-                                    <li tabindex="-1" role="listitem" class="fd-list__item fd-list__item--link">
-                                        <a tabindex="0" class="fd-list__link">
-                                            <i role="presentation" class="fd-list__icon sap-icon--activity-individual"></i>
-                                            <span class="fd-list__title">Frequently Used</span>
-                                        </a>
-                                    </li>
-                                    <li tabindex="-1" role="listitem" class="fd-list__item fd-list__item--link">
-                                        <a tabindex="0" class="fd-list__link">
-                                            <i role="presentation" class="fd-list__icon sap-icon--detail-view"></i>
-                                            <span class="fd-list__title">Content Finder</span>
-                                        </a>
-                                    </li>
-                                    <li tabindex="-1" role="listitem" class="fd-list__item fd-list__item--link">
-                                        <a tabindex="0" class="fd-list__link fd-list__link--navigation-indicator is-selected">
-                                            <i role="presentation" class="fd-list__icon sap-icon--employee-lookup"></i>
-                                            <span class="fd-list__title">Proxy User</span>
-                                        </a>
-                                    </li>
-                                    <li tabindex="-1" role="listitem" class="fd-list__item fd-list__item--link">
-                                        <a tabindex="0" class="fd-list__link fd-list__link--navigation-indicator">
-                                            <i role="presentation" class="fd-list__icon sap-icon--role"></i>
-                                            <span class="fd-list__title">Proxy Role</span>
-                                        </a>
-                                    </li>
-                                    <li tabindex="-1" role="listitem" class="fd-list__item fd-list__item--link">
-                                        <a tabindex="0" class="fd-list__link fd-list__link--navigation-indicator">
-                                            <i role="presentation" class="fd-list__icon sap-icon--history"></i>
-                                            <span class="fd-list__title">Delegate</span>
-
-                                            <span class="fd-list__item-counter">
-                                                <span class="fd-badge fd-badge--static" aria-label="Selected items">3</span>
-                                            </span>
-                                        </a>
-                                    </li>
-                                    <li tabindex="-1" role="listitem" class="fd-list__item fd-list__item--link">
-                                        <a tabindex="0" class="fd-list__link">
-                                            <i role="presentation" class="fd-list__icon sap-icon--sys-help"></i>
-                                            <span class="fd-list__title">Help</span>
-                                        </a>
-                                    </li>
-                                    <li tabindex="-1" role="listitem" class="fd-list__item fd-list__item--link">
-                                        <a tabindex="0" class="fd-list__link">
-                                            <i role="presentation" class="fd-list__icon sap-icon--action-settings"></i>
-                                            <span class="fd-list__title">Settings</span>
-                                        </a>
-                                    </li>
-                                    <li tabindex="-1" role="listitem" class="fd-list__item fd-list__item--link">
-                                        <a tabindex="0" class="fd-list__link">
-                                            <i role="presentation" class="fd-list__icon sap-icon--marketing-campaign"></i>
-                                            <span class="fd-list__title">Give Feedback</span>
-                                        </a>
-                                    </li>
-                                </ul>
+                                <button class="fd-button fd-button--transparent" aria-label="Product"><i class="sap-icon--grid"></i></button>
                             </div>
 
-                            <div class="fd-popover__body-footer">
-                                <div class="fd-bar fd-bar--footer">
-                                    <div class="fd-bar__right">
-                                        <div class="fd-bar__element">
-                                            <button class="fd-button fd-button--transparent">Sign Out</button>
-                                        </div>
+                            <div class="fd-user-menu__subheader">
+                                <div class="fd-user-menu__user-name">John Miller</div>
+                                <div class="fd-user-menu__user-role">User Experience Designer</div>
+                            </div>
+
+                            <ul class="fd-list fd-list--navigation fd-list--navigation-indication fd-list--no-border" role="list">
+                                <li tabindex="-1" role="listitem" class="fd-list__item fd-list__item--link">
+                                    <a tabindex="0" class="fd-list__link">
+                                        <i role="presentation" class="fd-list__icon sap-icon--time-account"></i>
+                                        <span class="fd-list__title">Recent Activity</span>
+                                    </a>
+                                </li>
+                                <li tabindex="-1" role="listitem" class="fd-list__item fd-list__item--link">
+                                    <a tabindex="0" class="fd-list__link">
+                                        <i role="presentation" class="fd-list__icon sap-icon--activity-individual"></i>
+                                        <span class="fd-list__title">Frequently Used</span>
+                                    </a>
+                                </li>
+                                <li tabindex="-1" role="listitem" class="fd-list__item fd-list__item--link">
+                                    <a tabindex="0" class="fd-list__link">
+                                        <i role="presentation" class="fd-list__icon sap-icon--detail-view"></i>
+                                        <span class="fd-list__title">Content Finder</span>
+                                    </a>
+                                </li>
+                                <li tabindex="-1" role="listitem" class="fd-list__item fd-list__item--link">
+                                    <a tabindex="0" class="fd-list__link fd-list__link--navigation-indicator is-selected">
+                                        <i role="presentation" class="fd-list__icon sap-icon--employee-lookup"></i>
+                                        <span class="fd-list__title">Proxy User</span>
+                                    </a>
+                                </li>
+                                <li tabindex="-1" role="listitem" class="fd-list__item fd-list__item--link">
+                                    <a tabindex="0" class="fd-list__link fd-list__link--navigation-indicator">
+                                        <i role="presentation" class="fd-list__icon sap-icon--role"></i>
+                                        <span class="fd-list__title">Proxy Role</span>
+                                    </a>
+                                </li>
+                                <li tabindex="-1" role="listitem" class="fd-list__item fd-list__item--link">
+                                    <a tabindex="0" class="fd-list__link fd-list__link--navigation-indicator">
+                                        <i role="presentation" class="fd-list__icon sap-icon--history"></i>
+                                        <span class="fd-list__title">Delegate</span>
+
+                                        <span class="fd-list__item-counter">
+                                            <span class="fd-badge fd-badge--static" aria-label="Selected items">3</span>
+                                        </span>
+                                    </a>
+                                </li>
+                                <li tabindex="-1" role="listitem" class="fd-list__item fd-list__item--link">
+                                    <a tabindex="0" class="fd-list__link">
+                                        <i role="presentation" class="fd-list__icon sap-icon--sys-help"></i>
+                                        <span class="fd-list__title">Help</span>
+                                    </a>
+                                </li>
+                                <li tabindex="-1" role="listitem" class="fd-list__item fd-list__item--link">
+                                    <a tabindex="0" class="fd-list__link">
+                                        <i role="presentation" class="fd-list__icon sap-icon--action-settings"></i>
+                                        <span class="fd-list__title">Settings</span>
+                                    </a>
+                                </li>
+                                <li tabindex="-1" role="listitem" class="fd-list__item fd-list__item--link">
+                                    <a tabindex="0" class="fd-list__link">
+                                        <i role="presentation" class="fd-list__icon sap-icon--marketing-campaign"></i>
+                                        <span class="fd-list__title">Give Feedback</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="fd-popover__body-footer">
+                            <div class="fd-bar fd-bar--footer">
+                                <div class="fd-bar__right">
+                                    <div class="fd-bar__element">
+                                        <button class="fd-button fd-button--transparent">Sign Out</button>
                                     </div>
                                 </div>
                             </div>

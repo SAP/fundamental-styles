@@ -36,7 +36,7 @@ const localStyles = `
 `;
 export const Shellbar = () => `${localStyles}
 <div class="fd-shellbar">
-    <div class="fd-shellbar__group fd-shellbar__group--actions">
+    <div class="fd-shellbar__group fd-shellbar__group--full-width fd-shellbar__group--actions">
         <div class="fd-shellbar__action">
             <div class="fd-product-switch">
                 <div class="fd-popover fd-popover--right">

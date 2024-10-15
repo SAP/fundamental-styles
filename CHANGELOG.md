@@ -3,6 +3,42 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.39.0-rc.5](https://github.com/SAP/fundamental-styles/compare/v0.39.0-rc.4...v0.39.0-rc.5) (2024-10-08)
+
+### Bug Fixes
+
+-   **styles:** remove redundant spacing between form items [ci visual] ([#5690](https://github.com/SAP/fundamental-styles/issues/5690)) ([91b1d8a](https://github.com/SAP/fundamental-styles/commit/91b1d8ae6991b15dcbe30dae2e070e9e65d79dd8))
+
+# [0.39.0-rc.4](https://github.com/SAP/fundamental-styles/compare/v0.39.0-rc.3...v0.39.0-rc.4) (2024-10-07)
+
+**Note:** Version bump only for package fundamental-styles
+
+# [0.39.0-rc.3](https://github.com/SAP/fundamental-styles/compare/v0.39.0-rc.2...v0.39.0-rc.3) (2024-10-04)
+
+**Note:** Version bump only for package fundamental-styles
+
+# [0.39.0-rc.2](https://github.com/SAP/fundamental-styles/compare/v0.39.0-rc.1...v0.39.0-rc.2) (2024-10-04)
+
+### Bug Fixes
+
+-   **styles:** add more spacing between text and colon [ci visual] ([#5677](https://github.com/SAP/fundamental-styles/issues/5677)) ([97238e6](https://github.com/SAP/fundamental-styles/commit/97238e638f96ff78f3af68a8dbff235dc4c9369f))
+
+# [0.39.0-rc.1](https://github.com/SAP/fundamental-styles/compare/v0.39.0-rc.0...v0.39.0-rc.1) (2024-10-04)
+
+### Bug Fixes
+
+-   **styles:** change cursor to pointer for interactive List Items [ci visual] ([#5678](https://github.com/SAP/fundamental-styles/issues/5678)) ([c68a7ce](https://github.com/SAP/fundamental-styles/commit/c68a7ce29a9aea6663bf0cb4a32d15af106be77f))
+
+# [0.39.0-rc.0](https://github.com/SAP/fundamental-styles/compare/v0.38.0...v0.39.0-rc.0) (2024-10-03)
+
+### Bug Fixes
+
+-   **styles:** update Shell Bar to latest design [ci visual] ([#5675](https://github.com/SAP/fundamental-styles/issues/5675)) ([065f5eb](https://github.com/SAP/fundamental-styles/commit/065f5eb19408d90d7cd8e0778f4a114f6cba1734))
+
+### BREAKING CHANGES
+
+-   **styles:** refactor the Shellbar with the new design
+
 # [0.38.0](https://github.com/SAP/fundamental-styles/compare/v0.38.0-rc.7...v0.38.0) (2024-10-02)
 
 **Note:** Version bump only for package fundamental-styles

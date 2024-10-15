@@ -8,14 +8,11 @@ $block: #{$fd-namespace}-form-item;
 .#{$block} {
   @include fd-reset();
 
-  position: relative;
-  display: flex;
-  align-content: center;
-  flex-direction: column;
-
-  & + .#{$block} {
-    margin-block-start: 0.625rem;
+  @include fd-flex(column) {
+    flex: 1;
   }
+
+  position: relative;
 
   &__label-container {
     @include fd-flex() {
@@ -48,5 +45,9 @@ $block: #{$fd-namespace}-form-item;
 
   .#{$fd-namespace}-form-message:not(:first-child) {
     margin-top: -0.25rem;
+  }
+
+  &.#{$fd-namespace}-list__form-item {
+    flex: initial;
   }
 }

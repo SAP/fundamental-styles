@@ -5,7 +5,6 @@
   --fdShellbar_Shadow: inset 0 -0.0625rem 0 0 var(--sapShell_BorderColor);
   --fdShellbar_Button_Hover_Border_Color: transparent;
   --fdShellbar_Button_Active_Border_Color: transparent;
-  --fdShellbar_Button_Outline_Color: var(--sapContent_ContrastFocusColor);
   --fdShellbar_Search_Border: none;
   --fdShellbar_Search_Category_Border: var(--fdShellbar_Input_Border);
   --fdShellbar_Search_Category_Border_width: 0.0625rem;
@@ -42,6 +41,12 @@
   --fdShellbar_Helper_Display: none;
   --fdShellbar_Helper_Bottom_Shadow: none;
   --fdShellbar_Hover_Helper_Bottom_Shadow: none;
-  --fdShellbar_Button_Color: var(--sapShell_InteractiveTextColor);
   --fdShellbar_Search_Input_X_Padding: 0.625rem;
+  --fdShellbar_Title_Color: var(--sapShell_TextColor);
+  --fdShellbar_Subtitle_Color: var(--sapShell_TextColor);
+  --fdShellbar_Branding_Hover_Background: var(--sapShell_Hover_Background);
+  --fdShellbar_Branding_Active_Background: transparent;
+  --fdShellbar_Branding_Hover_Border_Color: transparent;
+  --fdShellbar_Branding_Active_Border_Color: transparent;
+  --fdShellbar_Button_Outline_Color: var(--sapContent_ContrastFocusColor);
 }
