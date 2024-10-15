@@ -45151,6 +45151,63 @@ exports[`Check stories > Components/Table > Story Primary > Should match snapsho
 </table>
 
 <br><br>
+<h4>Individual non-interactive header cells</h4>
+<div class=\\"fd-toolbar fd-toolbar--title fd-toolbar-active\\">
+    <h4 class=\\"fd-title fd-title--h4 fd-toolbar__title\\">Default Table</h4>
+    <span class=\\"fd-toolbar__spacer fd-toolbar__spacer--auto\\"></span>
+</div>
+<table class=\\"fd-table\\">
+    <thead class=\\"fd-table__header\\">
+        <tr class=\\"fd-table__row\\">
+            <th class=\\"fd-table__cell fd-table__cell--non-interactive\\" scope=\\"col\\">Non-interactive Column Header</th>
+            <th class=\\"fd-table__cell\\" scope=\\"col\\">Column Header</th>
+            <th class=\\"fd-table__cell\\" scope=\\"col\\">Column Header</th>
+            <th class=\\"fd-table__cell\\" scope=\\"col\\">Column Header</th>
+            <th class=\\"fd-table__cell fd-table__cell--non-interactive\\" scope=\\"col\\">Non-interactive Column Header</th>
+        </tr>
+    </thead>
+    <tbody class=\\"fd-table__body\\">
+        <tr class=\\"fd-table__row\\">
+            <td class=\\"fd-table__cell\\"><a class=\\"fd-link\\"><span class=\\"fd-link__content\\">user.name@email.com</span></a></td>
+            <td class=\\"fd-table__cell\\">
+                <div class=\\"fd-table__text fd-table__text--no-wrap\\" style=\\"max-width: 250px\\">
+                    Very long Text Not Wrapped, limited by max-width
+                    Very long Text Not Wrapped, limited by max-width
+                    Very long Text Not Wrapped, limited by max-width
+                    Very long Text Not Wrapped, limited by max-width
+                    Very long Text Not Wrapped, limited by max-width
+                    Very long Text Not Wrapped, limited by max-width
+                </div>
+            </td>
+            <td class=\\"fd-table__cell\\">Middle Name</td>
+            <td class=\\"fd-table__cell\\">Last Name</td>
+            <td class=\\"fd-table__cell\\">01/26/17</td>
+        </tr>
+        <tr class=\\"fd-table__row\\">
+            <td class=\\"fd-table__cell\\"><a class=\\"fd-link\\"><span class=\\"fd-link__content\\">user.name@email.com</span></a></td>
+            <td class=\\"fd-table__cell\\">
+                <div class=\\"fd-table__text\\" style=\\"max-width: 250px\\">
+                    Very long Text Wrapped, limited by max-width
+                    Very long Text Wrapped, limited by max-width
+                    Very long Text Wrapped, limited by max-width
+                    Very long Text Wrapped, limited by max-width
+                </div>
+            </td>
+            <td class=\\"fd-table__cell\\">Middle Name</td>
+            <td class=\\"fd-table__cell\\">Last Name</td>
+            <td class=\\"fd-table__cell\\">01/26/17</td>
+        </tr>
+        <tr class=\\"fd-table__row\\">
+            <td class=\\"fd-table__cell\\"><a class=\\"fd-link\\"><span class=\\"fd-link__content\\">user.name@email.com</span></a></td>
+            <td class=\\"fd-table__cell\\">First Name</td>
+            <td class=\\"fd-table__cell\\">Middle Name</td>
+            <td class=\\"fd-table__cell\\">Last Name</td>
+            <td class=\\"fd-table__cell\\">01/26/17</td>
+        </tr>
+    </tbody>
+</table>
+
+<br><br>
 <h4>Non-interactive header cells</h4>
 <div class=\\"fd-toolbar fd-toolbar--title fd-toolbar-active\\">
     <h4 class=\\"fd-title fd-title--h4 fd-toolbar__title\\">Default Table</h4>
