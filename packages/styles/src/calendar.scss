@@ -427,13 +427,15 @@ $fd-calendar-special-days: (
         display: flex;
 
         &--legend {
-            display: flex;
-            justify-content: space-around;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(7.5rem, 1fr));
+            grid-gap: 0.5rem;
         }
     }
 
     &--legend {
         display: flex;
+        align-items: center;
 
         &__circle {
             display: inline-block;
@@ -441,7 +443,7 @@ $fd-calendar-special-days: (
             width: 1rem;
             border: 0.0625rem solid var(--sapContent_ForegroundBorderColor); // var(--sapLegendColor5)
             border-radius: 0.563rem;
-            margin: auto;
+            margin: 0;
             background-color: none;
         }
 
@@ -451,7 +453,7 @@ $fd-calendar-special-days: (
             border: 0.0625rem solid var(--sapContent_ForegroundBorderColor);
             border-radius: 0.125rem;
             background-color: none; // var(--sapLegendColor7)
-            margin: auto;
+            margin: 0;
         }
 
         &__text {
@@ -466,7 +468,7 @@ $fd-calendar-special-days: (
             }
         }
 
-        &:hover {
+        @include fd-focus(); @include fd-hover() {
             padding: 0.125rem;
             border-radius: 0.25rem;
             border: var(--sapContent_FocusWidth) solid var(--sapContent_FocusColor);
