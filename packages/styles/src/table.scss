@@ -81,6 +81,18 @@ $table-z-index: (
         background-color: var(--fdTable_Header_Cell_Active_Background);
         color: var(--fdTable_Header_Cell_Hover_Active_Color);
       }
+
+      &.#{$block}__cell--non-interactive {
+        @include fd-hover() {
+          background-color: var(--sapList_HeaderBackground);
+          color: var(--sapList_HeaderTextColor);
+        }
+  
+        @include fd-active() {
+          background-color: var(--sapList_HeaderBackground);
+          color: var(--sapList_HeaderTextColor);
+        }
+      }
     }
 
     &--non-interactive {
