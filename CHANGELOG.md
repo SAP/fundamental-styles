@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.39.0-rc.6](https://github.com/SAP/fundamental-styles/compare/v0.39.0-rc.5...v0.39.0-rc.6) (2024-10-15)
+
+### Bug Fixes
+
+-   **styles:** add option to make individual Table cells non-interactive [ci visual] ([#5703](https://github.com/SAP/fundamental-styles/issues/5703)) ([2d1e628](https://github.com/SAP/fundamental-styles/commit/2d1e628500f69b757506a0a566c51e2a6919e044))
+
 # [0.39.0-rc.5](https://github.com/SAP/fundamental-styles/compare/v0.39.0-rc.4...v0.39.0-rc.5) (2024-10-08)
 
 ### Bug Fixes
