@@ -456,7 +456,7 @@ $fd-input-field-height--compact: 1.625rem;
   padding-inline-end: 0.5rem;
 
   &::after {
-    content: '*';
+    content: '*' / '';
     font-size: var(--sapFontSize);
     font-weight: bold;
     color: var(--sapField_RequiredColor);
