@@ -430,6 +430,7 @@ $fd-calendar-special-days: (
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(7.5rem, 1fr));
             grid-gap: 0.5rem;
+            margin-top: 0.5rem;
         }
     }
 
@@ -439,21 +440,20 @@ $fd-calendar-special-days: (
         align-items: center;
 
         &--circle {
+            @include fd-square(1rem);
+
             display: inline-block;
-            height: 1rem;
-            width: 1rem;
-            border: 0.0625rem solid var(--sapContent_ForegroundBorderColor); // var(--sapLegendColor5)
+            border: 0.0625rem solid var(--sapContent_ForegroundBorderColor);
             border-radius: 0.563rem;
-            margin: 0;
             background-color: none;
         }
 
         &--square {
-            height: 0.875rem;
-            width: 0.875rem;
-            border: 0.0625rem solid var(--sapContent_ForegroundBorderColor);
+            @include fd-square(0.875rem);
+
+            border: 0.0625rem solid var(--sapContent_ForegroundBorderColor); // 0.125rem if not ForegroundBorderColor
             border-radius: 0.125rem;
-            background-color: none; // var(--sapLegendColor7)
+            background-color: none;
             margin: 0;
         }
 
@@ -463,10 +463,12 @@ $fd-calendar-special-days: (
             &-description {
                 @include legendTextBase();
 
+                position: absolute;
                 vertical-align: middle;
                 white-space: pre-line;
                 text-overflow: ellipsis;
                 overflow: hidden;
+                padding-top: 0;
             }
         }
 
