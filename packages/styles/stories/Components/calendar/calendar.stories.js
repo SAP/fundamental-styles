@@ -96,6 +96,19 @@ These modifier classes are used to style various states of calendar grid element
 | \`is-hover\` | Style hovered calendar elements
 | \`is-disabled\` | Style disabled calendar elements
 
+### Legend
+
+These modifier classes are used to style calendar grid elements with colors.\n
+
+| Modifier class | Use to... |
+| -------------:| :-------------- |
+| \`fd-calendar__row--legend\` | Create a row space for legend items 
+| \`fd-calendar--legend__item\` | Create a legend container 
+| \` fd-calendar--legend__item--circle\` | Makes the legend item representation a circle
+| \` fd-calendar--legend__item--square\` | Makes the legend item representation a square
+| \` fd-calendar--legend__item--text\` | Adds a descriptive title to the legend item
+| \` fd-calendar--legend__item--text-description\` | Adds any additional information to the legend item
+
 ### Special days
 The classes \`fd-calendar__item--legend-1\` ... \`fd-calendar__item--legend-20\` are used to style calendar grid elements with colors, which are identified by numeric modifier classes.\n
 `,
