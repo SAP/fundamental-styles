@@ -29,6 +29,17 @@ $fd-calendar-special-days: (
   '20': var(--sapLegendColor20)
 );
 
+@mixin legendTextBase() {
+  color: var(--sapContent_LabelColor);
+  font-family: var(--sapFontFamily);
+  font-size: var(--sapFontSmallSize);
+  font-weight: normal;
+  padding: 0.3125rem;
+  background: var(--sapList_Background);
+  column-gap: 0.5rem;
+  cursor: default;
+}
+
 @mixin fd-legend-days($nameColorMap) {
   [class*='#{$block}__item--legend-']:not(.#{$block}__item--today) {
     .#{$block}__text-wrapper::after {
@@ -411,7 +422,59 @@ $fd-calendar-special-days: (
     @include fd-reset();
 
     display: flex;
+
+    &--legend {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(7.5rem, 1fr));
+      grid-gap: 0.5rem;
+      margin-top: 0.5rem;
+    }
   }
+
+  &--legend__item {
+    @include fd-flex();
+
+    align-items: center;
+
+    &--circle {
+        @include fd-square(1rem);
+
+        display: inline-block;
+        border: 0.0625rem solid var(--sapContent_ForegroundBorderColor);
+        border-radius: 0.563rem;
+        background-color: none;
+    }
+
+    &--square {
+        @include fd-square(0.875rem);
+
+        border: 0.0625rem solid var(--sapContent_ForegroundBorderColor); // 0.125rem if not ForegroundBorderColor
+        border-radius: 0.125rem;
+        background-color: none;
+        margin: 0;
+    }
+
+    &--text {
+        @include legendTextBase();
+
+        &-description {
+            @include legendTextBase();
+
+            position: absolute;
+            vertical-align: middle;
+            white-space: pre-line;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            padding-top: 0;
+        }
+    }
+
+    @include fd-focus(){
+        padding: 0.125rem;
+        border-radius: 0.25rem;
+        outline: var(--sapContent_FocusWidth) solid var(--sapContent_FocusColor);
+    }
+}
 
   &__text {
     @include fd-reset();
