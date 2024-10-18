@@ -29,13 +29,15 @@ $fd-calendar-special-days: (
   '20': var(--sapLegendColor20)
 );
 
-@mixin legendTextBase() {
+@mixin fd-legend-text-base() {
   color: var(--sapContent_LabelColor);
   font-family: var(--sapFontFamily);
   font-size: var(--sapFontSmallSize);
   font-weight: normal;
   padding: 0.3125rem;
-  background: var(--sapList_Background);
+  padding-inline: 0.3125rem;
+  padding-block: 0.3125rem;
+  // background: var(--sapList_Background);
   column-gap: 0.5rem;
   cursor: default;
 }
@@ -422,59 +424,79 @@ $fd-calendar-special-days: (
     @include fd-reset();
 
     display: flex;
-
-    &--legend {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(7.5rem, 1fr));
-      grid-gap: 0.5rem;
-      margin-top: 0.5rem;
-    }
   }
 
-  &--legend__item {
+  // LEGEND SECTION
+  &__legend {
     @include fd-flex();
 
-    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    max-width: 18rem;
+  
+    &--col {
+      @include fd-flex(column);
 
-    &--circle {
-        @include fd-square(1rem);
-
-        display: inline-block;
-        border: 0.0625rem solid var(--sapContent_ForegroundBorderColor);
-        border-radius: 0.563rem;
-        background-color: none;
+      align-items: flex-start;
+      max-width: 7.5rem;
     }
+    
 
-    &--square {
-        @include fd-square(0.875rem);
+    &-item {
+      @include fd-inline-flex-center();
 
-        border: 0.0625rem solid var(--sapContent_ForegroundBorderColor); // 0.125rem if not ForegroundBorderColor
-        border-radius: 0.125rem;
-        background-color: none;
-        margin: 0;
-    }
-
-    &--text {
-        @include legendTextBase();
-
-        &-description {
-            @include legendTextBase();
-
-            position: absolute;
-            vertical-align: middle;
-            white-space: pre-line;
-            text-overflow: ellipsis;
-            overflow: hidden;
-            padding-top: 0;
-        }
-    }
-
-    @include fd-focus(){
+      padding: var(--sapContent_FocusWidth);
+  
+      @include fd-focus() {
         padding: 0.125rem;
         border-radius: 0.25rem;
         outline: var(--sapContent_FocusWidth) solid var(--sapContent_FocusColor);
+      }
+
+      margin-block: 0.25rem;
+      margin-inline-start: 0.25rem;
+      margin-inline-end: 0.5rem;
     }
-}
+
+    &-marker{
+      @include fd-square(0.875rem);
+
+      border: 0.0625rem solid var(--sapContent_ForegroundBorderColor); // 0.125rem if not ForegroundBorderColor
+      border-radius: 0.125rem;
+      background-color: none;
+      margin-inline: 0;
+      margin-block: 0;
+
+        &--circle {
+          @include fd-square(1rem);
+
+          display: inline-block;
+          border-radius: 0.563rem;
+        }
+      }
+
+    &-text {
+      @include fd-legend-text-base();
+    }
+
+    &-description {
+      @include fd-legend-text-base();
+
+      @mixin fd-ellipsis { 
+        white-space: nowrap; 
+        overflow: hidden; 
+        text-overflow: ellipsis; 
+      }
+
+      vertical-align: middle;
+      white-space: pre-line;
+      padding-top: 0;
+    }
+
+    &-text-and-description {
+      @include fd-flex(column);
+    }
+  }
 
   &__text {
     @include fd-reset();

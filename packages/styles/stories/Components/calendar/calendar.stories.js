@@ -2,6 +2,7 @@ import calExampleHtml from "./cal.html?raw";
 import yearsExampleHtml from "./years.example.html?raw";
 import monthsExampleHtml from "./months.example.html?raw";
 import daysExampleHtml from "./days.example.html?raw";
+import legendExampleHtml from "./legend.example.html?raw";
 import '../../../src/bar.scss';
 import '../../../src/dialog.scss';
 import '../../../src/tile.scss';
@@ -96,17 +97,15 @@ These modifier classes are used to style various states of calendar grid element
 | \`is-hover\` | Style hovered calendar elements
 | \`is-disabled\` | Style disabled calendar elements
 
-
 ### Legend
 These modifier classes are used to style calendar grid elements with colors.\n
 | Modifier class | Use to... |
 | -------------:| :-------------- |
-| \`fd-calendar__row--legend\` | Create a row space for legend items 
-| \`fd-calendar--legend__item\` | Create a legend container 
-| \` fd-calendar--legend__item--circle\` | Makes the legend item representation a circle
-| \` fd-calendar--legend__item--square\` | Makes the legend item representation a square
-| \` fd-calendar--legend__item--text\` | Adds a descriptive title to the legend item
-| \` fd-calendar--legend__item--text-description\` | Adds any additional information to the legend item
+| \`fd-calendar__legend-item\` | Create a legend container
+| \`fd-calendar__legend-marker\` | Create a legend marker (square by default)
+| \` fd-calendar__legend-marker--circle\` | Modify the legend marker to a circle
+| \` fd-calendar__legend-text\` | Create a legend title text
+| \` fd-calendar__legend-description\` | Create a legend description text
 
 ### Special days
 The classes \`fd-calendar__item--legend-1\` ... \`fd-calendar__item--legend-20\` are used to style calendar grid elements with colors, which are identified by numeric modifier classes.\n
@@ -142,6 +141,15 @@ Years.parameters = {
   docs: {
    description: {
       story: 'The calendar component can display a range of years in various ways: short-term, long-term, year ranges etc. Add the `fd-calendar__content--years` class to the container element, and adjust the number of columns, rows, and content to fit your use case.'
+    }
+  }
+};
+
+export const Legend = () => legendExampleHtml;
+Legend.parameters = {
+  docs: {
+   description: {
+      story: 'The calendar component can display a customizable legend to help users understand the meaning of different colors or styles used in the calendar. Add the `fd-calendar__legend` class to a child container and then add the `fd-calendar__legend-item` class to each legend item.'
     }
   }
 };
