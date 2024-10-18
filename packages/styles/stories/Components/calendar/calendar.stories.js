@@ -2,6 +2,7 @@ import calExampleHtml from "./cal.html?raw";
 import yearsExampleHtml from "./years.example.html?raw";
 import monthsExampleHtml from "./months.example.html?raw";
 import daysExampleHtml from "./days.example.html?raw";
+import legendExampleHtml from "./legend.example.html?raw";
 import '../../../src/bar.scss';
 import '../../../src/dialog.scss';
 import '../../../src/tile.scss';
@@ -142,6 +143,15 @@ Years.parameters = {
   docs: {
    description: {
       story: 'The calendar component can display a range of years in various ways: short-term, long-term, year ranges etc. Add the `fd-calendar__content--years` class to the container element, and adjust the number of columns, rows, and content to fit your use case.'
+    }
+  }
+};
+
+export const Legend = () => legendExampleHtml;
+Legend.parameters = {
+  docs: {
+   description: {
+      story: 'The calendar component can display a customizable legend to help users understand the meaning of different colors or styles used in the calendar. Add the `fd-calendar__row--legend` class to the table body and then add the `fd-calendar--legend__item` class to each legend item.'
     }
   }
 };
