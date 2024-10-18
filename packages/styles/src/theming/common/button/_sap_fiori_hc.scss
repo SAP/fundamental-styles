@@ -6,7 +6,7 @@
   --fdButton_Height: 2.25rem;
   --fdButton_Compact_Height: 1.625rem;
   --fdButton_Outline_Offset: var(--sapButton_BorderWidth);
-  --fdButton_Emphasized_Border_Width: 0.125rem;
+  --fdButton_Emphasized_Border_Width: var(--sapButton_Emphasized_BorderWidth);
 
   /** Badge */
   --fdButton_Badge_Border_Color: var(--sapGroup_ContentBorderColor);

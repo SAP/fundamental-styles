@@ -233,6 +233,14 @@ $button-types-config: (
   @include _fd-button-type($default-button-config);
 
   @each $type, $props in $button-types-config {
+
+    &--#{$type},
+    &--#{$type} &__text {
+      @if $type == "emphasized" {
+        --fdButton_Font_Family: var(--sapButton_Emphasized_FontFamily);
+      } 
+    }
+
     &--#{$type} {
       @include _fd-button-type($props);
 

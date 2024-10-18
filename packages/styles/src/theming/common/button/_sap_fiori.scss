@@ -3,12 +3,12 @@
 :root {
   --fdButton_Height: 2.25rem;
   --fdButton_Compact_Height: 1.625rem;
-  --fdButton_Emphasized_Border_Width: var(--sapButton_BorderWidth);
+  --fdButton_Emphasized_Border_Width: var(--sapButton_Emphasized_BorderWidth);
   --fdButton_Emphasized_Active_Outline: var(--sapContent_ContrastFocusColor);
   --fdButton_Ghost_Background: var(--sapButton_Lite_Background);
   --fdButton_Outline_Contrast: var(--sapContent_ContrastFocusColor);
   --fdButton_Outline_Offset: var(--sapButton_BorderWidth);
-  --fdButton_Font_Family: var(--sapFontFamily);
+  --fdButton_Font_Family: var(--sapButton_FontFamily);
   --fdButton_Focus_Border_Radius: calc(var(--sapButton_BorderCornerRadius) - var(--sapContent_FocusWidth));
 
   /** Shadows */

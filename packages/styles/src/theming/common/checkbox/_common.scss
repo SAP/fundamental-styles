@@ -12,7 +12,7 @@
   --fdCheckbox_Background_Color: var(--sapField_Background);
   --fdCheckbox_Hover_Background_Color: var(--sapContent_Selected_Hover_Background);
   --fdCheckbox_Inner_Border_Width: var(--sapField_BorderWidth);
-  --fdCheckbox_Inner_Border_Style: solid;
+  --fdCheckbox_Inner_Border_Style: var(--sapField_Selector_BorderStyle);
   --fdCheckbox_Inner_Border_Color: var(--sapField_BorderColor);
   --fdCheckbox_Check_Mark_Color: var(--sapContent_Selected_ForegroundColor);
 }

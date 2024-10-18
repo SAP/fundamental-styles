@@ -15,21 +15,21 @@
   /* Default */
   --fdRadio_Background_Color_Default: var(--sapField_Background);
   --fdRadio_Inner_Border_Width_Default: var(--sapField_BorderWidth);
-  --fdRadio_Inner_Border_Style_Default: solid;
+  --fdRadio_Inner_Border_Style_Default: var(-sapField_Selector_BorderStyle);
   --fdRadio_Inner_Border_Color_Default: var(--sapField_BorderColor);
   --fdRadio_Active_Dot_Color_Default: var(--sapSelectedColor);
 
   /* Hover */
   --fdRadio_Background_Color_Default_Hover: var(--sapField_Hover_Background);
   --fdRadio_Inner_Border_Width_Default_Hover: var(--sapField_BorderWidth);
-  --fdRadio_Inner_Border_Style_Default_Hover: solid;
+  --fdRadio_Inner_Border_Style_Default_Hover: var(--sapField_Selector_BorderStyle);
   --fdRadio_Inner_Border_Color_Default_Hover: var(--sapField_Hover_BorderColor);
   --fdRadio_Active_Dot_Color_Default_Hover: var(--sapSelectedColor);
 
   /* ReadOnly */
   --fdRadio_Background_Color_ReadOnly: var(--sapField_ReadOnly_Background);
   --fdRadio_Inner_Border_Width_ReadOnly: var(--sapField_BorderWidth);
-  --fdRadio_Inner_Border_Style_ReadOnly: solid;
+  --fdRadio_Inner_Border_Style_ReadOnly: var(--sapField_Selector_ReadOnly_BorderStyle);
   --fdRadio_Inner_Border_Color_ReadOnly: var(--sapField_ReadOnly_BorderColor);
   --fdRadio_Active_Dot_Color_ReadOnly: var(--sapContent_NonInteractiveIconColor);
 
