@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.39.0-rc.7](https://github.com/SAP/fundamental-styles/compare/v0.39.0-rc.6...v0.39.0-rc.7) (2024-10-21)
+
+### Bug Fixes
+
+-   **styles:** make screenreader not announce asterisk on required fields [ci visual] ([#5691](https://github.com/SAP/fundamental-styles/issues/5691)) ([840fe75](https://github.com/SAP/fundamental-styles/commit/840fe75604c59c46d3ab658d426bee8844fc7041))
+
 # [0.39.0-rc.6](https://github.com/SAP/fundamental-styles/compare/v0.39.0-rc.5...v0.39.0-rc.6) (2024-10-15)
 
 ### Bug Fixes
