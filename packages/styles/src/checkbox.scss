@@ -100,7 +100,7 @@ $blockCheckmark: #{$fd-namespace}-checkbox__checkmark;
     @include fd-ellipsis();
 
     height: 1rem;
-    pointer-events: none;
+    pointer-events: auto;
     max-width: inherit;
   }
 
