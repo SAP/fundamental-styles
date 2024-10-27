@@ -53,7 +53,7 @@
     "@jsdevtools/npm-publish": "3.0.1",
     "@nx/devkit": "19.4.2",
     "@nx/eslint": "19.4.2",
-    "@nx/eslint-plugin": "19.4.2",
+    "@nx/eslint-plugin": "20.0.6",
     "@nx/js": "19.4.2",
     "@nx/plugin": "19.4.2",
     "@nx/react": "19.4.2",
