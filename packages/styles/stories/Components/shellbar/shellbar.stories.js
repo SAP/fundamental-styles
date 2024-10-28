@@ -38,6 +38,7 @@ export default {
         <li>\`fd-shellbar--md\`<span>: adds fixed left and right spacing of 2rem</span></li>
         <li>\`fd-shellbar--lg\`<span>: adds fixed left and right spacing of 2rem</span></li>
         <li>\`fd-shellbar--xl\`<span>: adds fixed left and right spacing of 3rem</span></li>
+        <li>\`fd-shellbar--xxl\`<span>: adds fixed left and right spacing of 3rem</span></li>
         <li>\`fd-shellbar--side-nav\`<span>: adds fixed left and right spacing of 1rem, should be used in case Side Navigation is displayed</span></li>
         <li>\`fd-shellbar--responsive-paddings\`<span>: adds responsive left and right spacing based on the screen size.</span></li>
       </ul>

@@ -690,7 +690,8 @@ $block: #{$fd-namespace}-shellbar;
     @include fd-shellbar-md-lg-xl-screens();
   }
 
-  &--xl {
+  &--xl,
+  &--xxl {
     padding-block: 0;
     padding-inline: 3rem;
   }
@@ -725,5 +726,18 @@ $block: #{$fd-namespace}-shellbar;
     @include fd-media-xl() {
       @include fd-shellbar-md-lg-xl-screens();
     }
+  }
+
+  &-overlay {
+    @include fd-reset();
+
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.3;
+    position: absolute;
+    background: var(--sapBlockLayer_Background);
   }
 }
