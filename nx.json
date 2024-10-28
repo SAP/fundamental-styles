@@ -54,5 +54,6 @@
     "defaultProject": "theming-preview",
     "nxCloudAccessToken": "MzM5YTVjNjAtNDlkMC00OTg0LWFkM2UtZWM5NDcyYTYzZDcyfHJlYWQ=",
     "parallel": 5,
-    "defaultBase": "main"
+    "defaultBase": "main",
+    "useLegacyCache": true
 }
