@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.39.0-rc.13](https://github.com/SAP/fundamental-styles/compare/v0.39.0-rc.12...v0.39.0-rc.13) (2024-10-31)
+
+### Bug Fixes
+
+-   **styles:** updates for context area in ShellBar [ci visual] ([#5746](https://github.com/SAP/fundamental-styles/issues/5746)) ([b275aba](https://github.com/SAP/fundamental-styles/commit/b275aba0893d5c5c52c46aaa60740cd71580f217))
+
 # [0.39.0-rc.12](https://github.com/SAP/fundamental-styles/compare/v0.39.0-rc.11...v0.39.0-rc.12) (2024-10-31)
 
 **Note:** Version bump only for package fundamental-styles
