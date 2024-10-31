@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.39.0-rc.11](https://github.com/SAP/fundamental-styles/compare/v0.39.0-rc.10...v0.39.0-rc.11) (2024-10-31)
+
+### Bug Fixes
+
+-   **styles:** checkbox link in label is not clickable [ci visual] ([#5744](https://github.com/SAP/fundamental-styles/issues/5744)) ([19ad216](https://github.com/SAP/fundamental-styles/commit/19ad216b0f77bb07578c8c50492aa83d838f4437)), closes [#12577](https://github.com/SAP/fundamental-styles/issues/12577)
+
 # [0.39.0-rc.10](https://github.com/SAP/fundamental-styles/compare/v0.39.0-rc.9...v0.39.0-rc.10) (2024-10-28)
 
 **Note:** Version bump only for package fundamental-styles
