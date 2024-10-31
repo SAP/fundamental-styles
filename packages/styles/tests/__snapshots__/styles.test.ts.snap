@@ -40243,60 +40243,61 @@ exports[`Check stories > Components/Shellbar > Story OptionalItems > Should matc
                     <span class=\\"fd-shellbar__subtitle\\">Solution name</span>
                 </div>
             </div>
-            <span class=\\"fd-shellbar__separator\\"></span>
-            <div class=\\"fd-shellbar__context-area\\" role=\\"group\\" aria-label=\\"Additional info\\">
-                <div class=\\"fd-popover\\">
-                    <div class=\\"fd-popover__control\\">
-                      <button
-                        class=\\"fd-button fd-button--transparent fd-shellbar__button fd-shellbar__button--menu fd-button--menu\\"
-                        onclick=\\"onPopoverClick('9GLB269412ow2');\\"
-                        aria-controls=\\"9GLB269412ow2\\"
-                        aria-haspopup=\\"true\\"
-                        aria-expanded=\\"false\\"
-                      >
-                        <span class=\\"fd-button__text\\">EMEA</span>
-                        <i class=\\"sap-icon--slim-arrow-down\\"></i>
-                      </button>
-                    </div>
-                    <div
-                      class=\\"fd-popover__body fd-popover__body--no-arrow\\"
-                      aria-hidden=\\"true\\"
-                      id=\\"9GLB269412ow2\\"
-                    >
-                      <nav class=\\"fd-menu\\">
-                        <ul class=\\"fd-menu__list fd-menu__list--no-shadow\\">
-                          <li class=\\"fd-menu__item\\">
-                            <a role=\\"button\\" class=\\"fd-menu__link\\">
-                              <span class=\\"fd-menu__title\\">Application A</span>
-                            </a>
-                          </li>
-                          <li class=\\"fd-menu__item\\">
-                            <a role=\\"button\\" class=\\"fd-menu__link\\">
-                              <span class=\\"fd-menu__title\\">Application B</span>
-                            </a>
-                          </li>
-                          <li class=\\"fd-menu__item\\">
-                            <a role=\\"button\\" class=\\"fd-menu__link\\">
-                              <span class=\\"fd-menu__title\\">Application C</span>
-                            </a>
-                          </li>
-                          <li class=\\"fd-menu__item\\">
-                            <a role=\\"button\\" class=\\"fd-menu__link\\">
-                              <span class=\\"fd-menu__title\\">Application D</span>
-                            </a>
-                          </li>
-                        </ul>
-                      </nav>
-                    </div>
-                </div>
-                <span class=\\"fd-object-status fd-object-status--inverted fd-object-status--indication-1b\\">
-                    <span class=\\"fd-object-status__text\\">Environment</span>
-                </span>
-            </div>
         </div>
-        <div class=\\"fd-shellbar__group fd-shellbar__group--actions\\">
+        <div class=\\"fd-shellbar__group fd-shellbar__group--context-area\\" role=\\"group\\" aria-label=\\"Additional info\\">
+            <span class=\\"fd-shellbar__separator\\"></span>
+            <div class=\\"fd-popover\\">
+                <div class=\\"fd-popover__control\\">
+                  <button
+                    class=\\"fd-button fd-button--transparent fd-shellbar__button fd-shellbar__button--menu fd-button--menu\\"
+                    onclick=\\"onPopoverClick('9GLB269412ow2');\\"
+                    aria-controls=\\"9GLB269412ow2\\"
+                    aria-haspopup=\\"true\\"
+                    aria-expanded=\\"false\\"
+                  >
+                    <span class=\\"fd-button__text\\">EMEA</span>
+                    <i class=\\"sap-icon--slim-arrow-down\\"></i>
+                  </button>
+                </div>
+                <div
+                  class=\\"fd-popover__body fd-popover__body--no-arrow\\"
+                  aria-hidden=\\"true\\"
+                  id=\\"9GLB269412ow2\\"
+                >
+                  <nav class=\\"fd-menu\\">
+                    <ul class=\\"fd-menu__list fd-menu__list--no-shadow\\">
+                      <li class=\\"fd-menu__item\\">
+                        <a role=\\"button\\" class=\\"fd-menu__link\\">
+                          <span class=\\"fd-menu__title\\">Application A</span>
+                        </a>
+                      </li>
+                      <li class=\\"fd-menu__item\\">
+                        <a role=\\"button\\" class=\\"fd-menu__link\\">
+                          <span class=\\"fd-menu__title\\">Application B</span>
+                        </a>
+                      </li>
+                      <li class=\\"fd-menu__item\\">
+                        <a role=\\"button\\" class=\\"fd-menu__link\\">
+                          <span class=\\"fd-menu__title\\">Application C</span>
+                        </a>
+                      </li>
+                      <li class=\\"fd-menu__item\\">
+                        <a role=\\"button\\" class=\\"fd-menu__link\\">
+                          <span class=\\"fd-menu__title\\">Application D</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </nav>
+                </div>
+            </div>
+            <span class=\\"fd-shellbar__separator\\"></span>
+            <span class=\\"sap-icon sap-icon--globe sap-icon--color-information\\"></span>
+            <span class=\\"fd-object-status fd-object-status--inverted fd-object-status--indication-5\\">
+                <span class=\\"fd-object-status__text\\">Environment</span>
+            </span>
+            <span class=\\"fd-shellbar__spacer\\"></span>
             <div class=\\"fd-object-marker\\">
-                <span class=\\"fd-object-marker__text\\">New Feature</span>
+              <span class=\\"fd-object-marker__text\\">New Feature</span>
             </div>
             <label class=\\"fd-switch\\">
                 <span class=\\"fd-switch__control\\">
@@ -40311,6 +40312,8 @@ exports[`Check stories > Components/Shellbar > Story OptionalItems > Should matc
                 </span>
             </label>
             <span class=\\"fd-shellbar__separator\\"></span>
+        </div>
+        <div class=\\"fd-shellbar__group fd-shellbar__group--actions\\">
             <div class=\\"fd-shellbar__action\\">
                 <div class=\\"fd-popover fd-popover--right\\">
                     <div class=\\"fd-popover__control\\">
@@ -40362,53 +40365,53 @@ exports[`Check stories > Components/Shellbar > Story OptionalItems > Should matc
                     <span class=\\"fd-shellbar__subtitle\\">Solution name</span>
                 </div>
             </div>
-            <span class=\\"fd-shellbar__separator\\"></span>
-            <div class=\\"fd-shellbar__context-area\\" role=\\"group\\" aria-label=\\"Additional info\\">
-                <div class=\\"fd-popover\\">
-                    <div class=\\"fd-popover__control\\">
-                      <button
-                        class=\\"fd-button fd-button--transparent fd-shellbar__button fd-shellbar__button--menu fd-button--menu\\"
-                        onclick=\\"onPopoverClick('9GLB269412874');\\"
-                        aria-controls=\\"9GLB269412874\\"
-                        aria-haspopup=\\"true\\"
-                        aria-expanded=\\"false\\"
-                      >
-                        <span class=\\"fd-button__text\\">EMEA</span>
-                        <i class=\\"sap-icon--slim-arrow-down\\"></i>
-                      </button>
-                    </div>
-                    <div
-                      class=\\"fd-popover__body fd-popover__body--no-arrow\\"
-                      aria-hidden=\\"true\\"
-                      id=\\"9GLB269412874\\"
-                    >
-                      <nav class=\\"fd-menu\\">
-                        <ul class=\\"fd-menu__list fd-menu__list--no-shadow\\">
-                          <li class=\\"fd-menu__item\\">
-                            <a role=\\"button\\" class=\\"fd-menu__link\\">
-                              <span class=\\"fd-menu__title\\">Application A</span>
-                            </a>
-                          </li>
-                          <li class=\\"fd-menu__item\\">
-                            <a role=\\"button\\" class=\\"fd-menu__link\\">
-                              <span class=\\"fd-menu__title\\">Application B</span>
-                            </a>
-                          </li>
-                          <li class=\\"fd-menu__item\\">
-                            <a role=\\"button\\" class=\\"fd-menu__link\\">
-                              <span class=\\"fd-menu__title\\">Application C</span>
-                            </a>
-                          </li>
-                          <li class=\\"fd-menu__item\\">
-                            <a role=\\"button\\" class=\\"fd-menu__link\\">
-                              <span class=\\"fd-menu__title\\">Application D</span>
-                            </a>
-                          </li>
-                        </ul>
-                      </nav>
-                    </div>
-                </div>
-            </div>
+        </div>
+        <div class=\\"fd-shellbar__group fd-shellbar__group--context-area\\" role=\\"group\\" aria-label=\\"Additional info\\">
+          <span class=\\"fd-shellbar__separator\\"></span>
+          <div class=\\"fd-popover\\">
+              <div class=\\"fd-popover__control\\">
+                <button
+                  class=\\"fd-button fd-button--transparent fd-shellbar__button fd-shellbar__button--menu fd-button--menu\\"
+                  onclick=\\"onPopoverClick('9GLB269412874');\\"
+                  aria-controls=\\"9GLB269412874\\"
+                  aria-haspopup=\\"true\\"
+                  aria-expanded=\\"false\\"
+                >
+                  <span class=\\"fd-button__text\\">EMEA</span>
+                  <i class=\\"sap-icon--slim-arrow-down\\"></i>
+                </button>
+              </div>
+              <div
+                class=\\"fd-popover__body fd-popover__body--no-arrow\\"
+                aria-hidden=\\"true\\"
+                id=\\"9GLB269412874\\"
+              >
+                <nav class=\\"fd-menu\\">
+                  <ul class=\\"fd-menu__list fd-menu__list--no-shadow\\">
+                    <li class=\\"fd-menu__item\\">
+                      <a role=\\"button\\" class=\\"fd-menu__link\\">
+                        <span class=\\"fd-menu__title\\">Application A</span>
+                      </a>
+                    </li>
+                    <li class=\\"fd-menu__item\\">
+                      <a role=\\"button\\" class=\\"fd-menu__link\\">
+                        <span class=\\"fd-menu__title\\">Application B</span>
+                      </a>
+                    </li>
+                    <li class=\\"fd-menu__item\\">
+                      <a role=\\"button\\" class=\\"fd-menu__link\\">
+                        <span class=\\"fd-menu__title\\">Application C</span>
+                      </a>
+                    </li>
+                    <li class=\\"fd-menu__item\\">
+                      <a role=\\"button\\" class=\\"fd-menu__link\\">
+                        <span class=\\"fd-menu__title\\">Application D</span>
+                      </a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+          </div>
         </div>
         <div class=\\"fd-shellbar__group fd-shellbar__group--actions\\">
             <div class=\\"fd-shellbar__action\\">
@@ -40581,53 +40584,53 @@ exports[`Check stories > Components/Shellbar > Story OverflowToolbar > Should ma
                     <span class=\\"fd-shellbar__subtitle\\">Solution name</span>
                 </div>
             </div>
-            <span class=\\"fd-shellbar__separator\\"></span>
-            <div class=\\"fd-shellbar__context-area\\" role=\\"group\\" aria-label=\\"Additional info\\">
-                <div class=\\"fd-popover\\">
-                    <div class=\\"fd-popover__control\\">
-                      <button
-                        class=\\"fd-button fd-button--transparent fd-shellbar__button fd-shellbar__button--menu fd-button--menu\\"
-                        onclick=\\"onPopoverClick('9GLB269412');\\"
-                        aria-controls=\\"9GLB269412\\"
-                        aria-haspopup=\\"true\\"
-                        aria-expanded=\\"false\\"
-                      >
-                        <span class=\\"fd-button__text\\">EMEA</span>
-                        <i class=\\"sap-icon--slim-arrow-down\\"></i>
-                      </button>
-                    </div>
-                    <div
-                      class=\\"fd-popover__body fd-popover__body--no-arrow\\"
-                      aria-hidden=\\"true\\"
-                      id=\\"9GLB269412\\"
-                    >
-                      <nav class=\\"fd-menu\\">
-                        <ul class=\\"fd-menu__list fd-menu__list--no-shadow\\">
-                          <li class=\\"fd-menu__item\\">
-                            <a role=\\"button\\" class=\\"fd-menu__link\\">
-                              <span class=\\"fd-menu__title\\">Application A</span>
-                            </a>
-                          </li>
-                          <li class=\\"fd-menu__item\\">
-                            <a role=\\"button\\" class=\\"fd-menu__link\\">
-                              <span class=\\"fd-menu__title\\">Application B</span>
-                            </a>
-                          </li>
-                          <li class=\\"fd-menu__item\\">
-                            <a role=\\"button\\" class=\\"fd-menu__link\\">
-                              <span class=\\"fd-menu__title\\">Application C</span>
-                            </a>
-                          </li>
-                          <li class=\\"fd-menu__item\\">
-                            <a role=\\"button\\" class=\\"fd-menu__link\\">
-                              <span class=\\"fd-menu__title\\">Application D</span>
-                            </a>
-                          </li>
-                        </ul>
-                      </nav>
-                    </div>
-                </div>
-            </div>
+        </div>
+        <div class=\\"fd-shellbar__group fd-shellbar__group--context-area\\" role=\\"group\\" aria-label=\\"Additional info\\">
+          <span class=\\"fd-shellbar__separator\\"></span>
+          <div class=\\"fd-popover\\">
+              <div class=\\"fd-popover__control\\">
+                <button
+                  class=\\"fd-button fd-button--transparent fd-shellbar__button fd-shellbar__button--menu fd-button--menu\\"
+                  onclick=\\"onPopoverClick('9GLB269412874');\\"
+                  aria-controls=\\"9GLB269412874\\"
+                  aria-haspopup=\\"true\\"
+                  aria-expanded=\\"false\\"
+                >
+                  <span class=\\"fd-button__text\\">EMEA</span>
+                  <i class=\\"sap-icon--slim-arrow-down\\"></i>
+                </button>
+              </div>
+              <div
+                class=\\"fd-popover__body fd-popover__body--no-arrow\\"
+                aria-hidden=\\"true\\"
+                id=\\"9GLB269412874\\"
+              >
+                <nav class=\\"fd-menu\\">
+                  <ul class=\\"fd-menu__list fd-menu__list--no-shadow\\">
+                    <li class=\\"fd-menu__item\\">
+                      <a role=\\"button\\" class=\\"fd-menu__link\\">
+                        <span class=\\"fd-menu__title\\">Application A</span>
+                      </a>
+                    </li>
+                    <li class=\\"fd-menu__item\\">
+                      <a role=\\"button\\" class=\\"fd-menu__link\\">
+                        <span class=\\"fd-menu__title\\">Application B</span>
+                      </a>
+                    </li>
+                    <li class=\\"fd-menu__item\\">
+                      <a role=\\"button\\" class=\\"fd-menu__link\\">
+                        <span class=\\"fd-menu__title\\">Application C</span>
+                      </a>
+                    </li>
+                    <li class=\\"fd-menu__item\\">
+                      <a role=\\"button\\" class=\\"fd-menu__link\\">
+                        <span class=\\"fd-menu__title\\">Application D</span>
+                      </a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+          </div>
         </div>
         <div class=\\"fd-shellbar__group fd-shellbar__group--actions\\">
           <div class=\\"fd-toolbar fd-toolbar--clear fd-toolbar--transparent fd-shellbar__toolbar\\" role=\\"toolbar\\" aria-label=\\"Toolbar\\">

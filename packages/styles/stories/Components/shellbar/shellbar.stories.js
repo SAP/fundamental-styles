@@ -47,7 +47,7 @@ export default {
       <ul>
         <li>\`fd-shellbar__group--product\`<span>: defines a container that can hold the Side Navigation Button, Branding, and the Additional Content Area (Context Area)</span></li>
         <li>\`fd-shellbar__group--actions\`<span>: defines a container for controls like the Search Field, Notifications, User Profile, Product Switch, and more.</span></li>
-        <li>\`fd-shellbar__group--center\`</li>
+        <li>\`fd-shellbar__group--context-area\`<span>: defines a container for components that are related to whole product rather than specific application.</span></li>
         <li>\`fd-shellbar__group--full-width\`<span>: expands the container to take up the full available width.</span></li>
       </ul>
     </li>
@@ -77,14 +77,11 @@ export default {
         <li>\`fd-shellbar__button--menu\`<span>: is an override style of the Menu Button, tailored for use within the Shell Bar.</span></li>
       </ul>
     </li>
-    <li>\`fd-shellbar__context-area\`<span>: an area is intended for containers that hold additional elements defined by the product.</span></li>
-    <li>\`fd-shellbar__separator\`<span>:a span element that visually isolate actions with a vertical line.</span></li>
-    <li>\`fd-shellbar__spacer\`<span>: a span element that can be used to create space between groups of elements in Context Area.</span></li>
+    <li>\`fd-shellbar__separator\`<span>: a span element that creates a small distance between elements in additional context area. The separator should, by default, isolate the left area (hamburger menu, branding) and the right area (actions, avatar, product switcher) from the additional context area, with optional placement between elements in the additional context area for visual grouping.</span>
+    </li>
+    <li>\`fd-shellbar__spacer\`<span>: a span element that can be used to create space between groups of elements in context area. Visually separates the context area into left and right group.</span></li>
     <li>\`fd-shellbar__search-field\`<span>: an override style of the search input, designed specifically for use within the Shell Bar </span></li>
 </ul>
-
-
-
 `
   }
 };
@@ -119,8 +116,8 @@ OptionalItems.parameters = {
         <li><b>Help:</b> used to trigger the help functionality within products.</li>
         <li><b>Feedback:</b> used to trigger the "Leave Feedback" functionality within products.</li>
         <li><b>Product Switch:</b> used for global navigation, allowing users to switch between different SAP products and services.</li>
-        <li><b>Separator:</b> can be used to isolate actions.</li>
-        <li><b>Spacer:</b> can be used to create space between groups of elements.</li>
+        <li><b>Separator:</b> creates a small distance between elements in additional context area.</li>
+        <li><b>Spacer:</b> creates space between groups of elements in context area. Visually separates the context area into left and right group.</li>
       </ul>`
     }
   }
