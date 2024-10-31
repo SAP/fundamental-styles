@@ -197,16 +197,6 @@ $block: #{$fd-namespace}-shellbar;
     }
   }
 
-  &__context-area {
-    @include fd-reset();
-
-    @include fd-flex-vertical-center () {
-      gap: 1rem;
-    }
-
-    width: 100%;
-  }
-
   &__separator {
     @include fd-reset();
 
@@ -649,6 +639,12 @@ $block: #{$fd-namespace}-shellbar;
       }
     }
 
+    &--context-area {
+      flex: 1;
+      order: 2;
+      gap: 1rem;
+    }
+
     &--actions {
       justify-content: flex-end;
       order: 3;
@@ -657,11 +653,6 @@ $block: #{$fd-namespace}-shellbar;
 
     &--full-width {
       width: 100%;
-    }
-
-    & + .#{$block}__group {
-      gap: 0.5rem;
-      justify-content: flex-end;
     }
   }
 
