@@ -7,172 +7,151 @@ $block: #{$fd-namespace}-user-menu;
 $navigation: #{$fd-namespace}-navigation;
 
 .#{$block} {
+  background: var(--sapGroup_ContentBackground);
+
+  .#{$block}__title-bar {
+    --fdBar_Shadow: none;
+
+    position: relative;
+
+    &--center-title {
+      .#{$fd-namespace}-title {
+        position: absolute
+      }
+    }
+  }
+
+  .#{$block}__title {
+    &--center {
+      @include fd-set-position-left(50%);
+
+      position: absolute;
+      transform: translate(-50%, 0);
+
+      @include fd-rtl() {
+        transform: translate(50%, 0);
+      }
+    }
+  }
+
   &__body {
     @include fd-reset();
 
-    width: 18rem;
-    padding-block: var(--fdUserMenu_Body_Padding_Block);
-    padding-inline: var(--fdUserMenu_Body_Padding_Inline);
-
-    &.#{$block}__body--compact {
-      padding-block: var(--fdUserMenu_Body_Padding_Compact_Block);
-      padding-inline: var(--fdUserMenu_Body_Padding_Compact_Inline);
-
-      .#{$block}__subheader {
-        margin-block-end: var(--fdUserMenu_SubHeader_Margin_Bottom_Compact);
-      }
-    }
-
-    &.#{$block}__body--no-padding {
-      padding-inline: 0;
-      padding-block: 0;
-    }
-
-    &.#{$block}__body--default {
-      width: var(--fdUserMenu_Body_Width);
-    }
-
-    ul:last-child li:last-child::before,
-    ul li:last-child::before,
-    ul li:last-child a::before,
-    ul:first-child li:first-child::before,
-    ul li:first-child::before,
-    ul li:first-child a::before {
-      border-radius: 0 !important;
-    }
+    min-width: 18rem;
+    padding-block: 1rem 0.5rem;
+    padding-inline: 0.5rem;
   }
 
   &__header {
     @include fd-reset();
+    @include fd-flex-center();
 
-    @include fd-flex() {
-      align-items: flex-start;
-      justify-content: space-between;
-    }
-
-    padding-block: 0;
-    padding-inline: 1rem;
     margin-block-end: 0.5rem;
   }
 
   &__subheader {
     @include fd-reset();
 
-    width: 100%;
-    padding-block: 0;
-    padding-inline: 1rem;
-    margin-block-end: var(--fdUserMenu_SubHeader_Margin_Bottom);
+    @include fd-flex(column) {
+      gap: 0.25rem;
+      align-items: center;
+    }
+
+    margin-block-end: 1rem;
   }
 
   &__user-name {
     @include fd-reset();
 
-    font-size: var(--fdUserMenu_User_Name_Font_Size);
-    text-align: center;
-    font-weight: var(--fdUserMenu_User_Name_Font_Weight);
+    color: var(--sapTextColor);
+    font-family: var(--fdUserMenu_User_Name_Font_Family);
+    font-size: var(--sapFontLargeSize);
   }
 
   &__user-role {
     @include fd-reset();
 
-    font-size: var(--sapFontSmallSize);
     color: var(--sapContent_LabelColor);
-    text-align: center;
   }
 
-  // This is applied only on the "big" Avatar
-  // and will ensure that it's always centered
-  // even when it's the only child of the header
-  .#{$block}__avatar {
-    margin-inline: auto;
-    margin-block: auto;
+  // Mobile
+  &--mobile {
+    @include fd-flex(column);
+
+    height: 100%;
+    padding-block-start: 1rem;
+
+    .#{$block}__body {
+      flex: 1;
+    }
   }
 
   // BTP USER MENU
   &--tool-header {
-    --fdUserMenu_Body_Padding_Block: 0.75rem;
-    --fdUserMenu_Body_Padding_Inline: 0.75rem;
+    .#{$block} {
+      &__user-name {
+        font-family: var(--sapFontBlackFamily);
+        font-size: 1.25rem;
+        line-height: 1.3;
+        color: var(-–sapTitleColor);
+      }
 
-    .#{$block}__popover-body {
-      border: none;
-      padding-block: 0.75rem;
-      padding-inline: 0;
-      border-radius: 0.75rem;
-      box-shadow: var(--sapMenu_Shadow2);
-      background: var(--sapGroup_ContentBackground);
-    }
+      &__navigation-submenu {
+        top: -0.5rem;
+        border: none;
+        padding-block: 0.5rem;
+        padding-inline: 0.5rem;
+        border-radius: 0.5rem;
+        margin-inline-end: 0.3875rem;
+        box-shadow: var(--sapMenu_Shadow1);
+        background: var(--sapGroup_ContentBackground);
+      }
+  
+      &__navigation-submenu-wrapper {
+        overflow: visible;
+      }
+  
+      &__user-role {
+        font-family: var(--sapFontFamily);
+        font-size: var(--sapFontSize);
+        line-height: var(--sapContent_LineHeight);
+        color: var(–sapContent_LabelColor);
+      }
+  
+      &__body {
+        overflow: visible;
 
-    .#{$block}__header {
-      width: 100%;
-      height: auto;
-      margin-inline: 0;
-      margin-block: 0;
-      padding-inline: 0.75rem;
-      padding-block: 0.75rem;
-      background: transparent;
-    }
+        &:has(.#{$block}__navigation-menu:first-child) {
+          padding-block: 0;
+        }
+      }
 
-    .#{$block}__subheader {
-      margin-block-end: 0;
-      padding-block: 0 0.75rem;
-      padding-inline: 0.75rem;
-    }
+      &__popover-body {
+        border: none;
+        padding-block: .75rem;
+        padding-inline: 0;
+        border-radius: .75rem;
+        box-shadow: var(--sapMenu_Shadow2);
+        background: var(--sapGroup_ContentBackground);
+      }
 
-    .#{$block}__navigation-menu {
-      padding-block: 0.75rem;
-      padding-inline: 0.75rem;
+      &__footer {
+        @include fd-reset();
+        
+        @include fd-flex() {
+          align-items: center;
+          justify-content: flex-end;
+        };
 
-      .#{$navigation}__item--title {
-        --fdNavigation_Item_Title_Display: flex;
-
-        margin-block-end: 1rem;
+        padding-block: 0.75rem;
+        padding-inline: 1.125rem;
       }
     }
 
-    .#{$block}__navigation-submenu {
-      top: -0.5rem;
-      border: none;
-      padding-block: 0.5rem;
-      padding-inline: 0.5rem;
-      border-radius: 0.5rem;
-      margin-inline-end: 0.3875rem;
-      box-shadow: var(--sapMenu_Shadow1);
-      background: var(--sapGroup_ContentBackground);
-    }
-
-    .#{$block}__navigation-submenu-wrapper {
-      overflow: visible;
-    }
-
-    .#{$block}__user-name {
-      font-family: var(--sapFontBlackFamily);
-      font-size: 1.25rem;
-      line-height: 1.3;
-      color: var(–sapTitleColor);
-    }
-
-    .#{$block}__user-role {
-      font-family: var(--sapFontFamily);
-      font-size: var(--sapFontSize);
-      line-height: var(--sapContent_LineHeight);
-      color: var(–sapContent_LabelColor);
-    }
-
-    .#{$block}__body {
-      padding-inline: 0;
-      padding-block: 0;
-      overflow: visible;
-    }
-
-    .#{$block}__footer {
-      @include fd-reset();
-
-      @include fd-flex-vertical-center () {
-        justify-content: flex-end;
-      }
-
-      padding-block: 0.375rem;
-      padding-inline: 1.125rem;
+    .#{$fd-namespace}-navigation__item.#{$fd-namespace}-navigation__item--title {
+      --fdNavigation_Item_Title_Display: flex;
+      
+      margin-block-end: 1rem;
     }
   }
 }

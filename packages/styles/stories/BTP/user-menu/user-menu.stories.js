@@ -10,6 +10,7 @@ import '../../../src/popover.scss';
 import '../../../src/button.scss';
 import '../../../src/navigation.scss';
 import '../../../src/user-menu.scss';
+import '../../../src/bar.scss';
 
 export default {
   title: 'BTP/User Menu',
