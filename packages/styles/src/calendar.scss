@@ -37,7 +37,6 @@ $fd-calendar-special-days: (
   padding: 0.3125rem;
   padding-inline: 0.3125rem;
   padding-block: 0.3125rem;
-  // background: var(--sapList_Background);
   column-gap: 0.5rem;
   cursor: default;
 }
@@ -454,8 +453,7 @@ $fd-calendar-special-days: (
       }
 
       margin-block: 0.25rem;
-      margin-inline-start: 0.25rem;
-      margin-inline-end: 0.5rem;
+      margin-inline: 0.25rem 0.5rem;
     }
 
     &-marker{
