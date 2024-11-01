@@ -1,69 +1,144 @@
 <div class="fddocs-container" style="margin-bottom: 550px">
     <div class="fd-popover fd-popover--right fd-user-menu">
-        <div class="fd-popover__control">
-            <span
-                class="fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--thumbnail"
-                aria-controls="popoverA7"
-                aria-expanded="true"
-                aria-haspopup="true"
-                aria-label="Avatar"
-                style="background-image: url('assets/images/avatars/3.svg');"
-                onclick="onPopoverClick('popoverA7');"
-                role="button"
-                tabindex="0"></span>
-        </div>
-
-        <div class="fd-popover__body fd-popover__body--right" aria-hidden="false" id="popoverA7">
-            <div class="fd-user-menu__body fd-user-menu__body--default">
-                <div class="fd-user-menu__subheader">
-                    <h5 class="fd-user-menu__user-name">John Miller</h5>
+        <div class="fd-popover__body fd-popover__body--right" aria-hidden="false" id="userMenu1">
+            <div class="fd-user-menu__body">
+                <div class="fd-user-menu__header">
+                    <span
+                        class="fd-avatar fd-avatar--lg fd-avatar--circle fd-avatar--thumbnail"
+                        aria-label="Avatar"
+                        style="background-image: url('/assets/images/portraits/L_80x80_F3.png');">
+                        <i class="fd-avatar__zoom-icon sap-icon--edit" aria-label="Edit" role="presentation" aria-hidden="true"></i>
+                    </span>
                 </div>
-
-                <ul class="fd-list fd-list--navigation fd-list--navigation-indication fd-list--no-border" role="list">
-                    <li tabindex="-1" role="listitem" class="fd-list__item fd-list__item--link">
-                        <a tabindex="0" class="fd-list__link">
-                            <i role="presentation" class="fd-list__icon sap-icon--time-account"></i>
-                            <span class="fd-list__title">Recent Activity</span>
-                        </a>
+                <div class="fd-user-menu__subheader">
+                    <div class="fd-user-menu__user-name">Lisa Miller</div>
+                    <div class="fd-user-menu__user-role">User Experience Designer</div>
+                </div>
+                <ul class="fd-navigation-list" role="list">
+                    <li class="fd-navigation-list__item" role="listitem" tabindex="-1">
+                        <div class="fd-navigation-list__content" tabindex="0">
+                            <div class="fd-navigation-list__content-container">
+                                <span class="fd-navigation-list__icon">
+                                    <i class=" sap-icon--user-settings" role="presentation"></i>
+                                </span>
+                                <span class="fd-navigation-list__text">Manage Account</span>
+                            </div>
+                        </div>
                     </li>
-                    <li tabindex="-1" role="listitem" class="fd-list__item fd-list__item--link">
-                        <a tabindex="0" class="fd-list__link">
-                            <i role="presentation" class="fd-list__icon sap-icon--activity-individual"></i>
-                            <span class="fd-list__title">Frequently Used</span>
-                        </a>
+                    <li class="fd-navigation-list__item" role="listitem" tabindex="-1">
+                        <div class="fd-navigation-list__content" tabindex="0">
+                            <div class="fd-navigation-list__content-container">
+                                <span class="fd-navigation-list__icon">
+                                    <i class=" sap-icon--action-settings" role="presentation"></i>
+                                </span>
+                                <span class="fd-navigation-list__text">Settings</span>
+                            </div>
+                        </div>
                     </li>
-                    <li tabindex="-1" role="listitem" class="fd-list__item fd-list__item--link">
-                        <a tabindex="0" class="fd-list__link">
-                            <i role="presentation" class="fd-list__icon sap-icon--detail-view"></i>
-                            <span class="fd-list__title">Content Finder</span>
-                        </a>
+                    <li class="fd-navigation-list__item" role="listitem" tabindex="-1">
+                        <div class="fd-navigation-list__content" tabindex="0">
+                            <div class="fd-navigation-list__content-container">
+                                <span class="fd-navigation-list__icon">
+                                    <i class=" sap-icon--official-service" role="presentation"></i>
+                                </span>
+                                <span class="fd-navigation-list__text">Legal Information</span>
+                            </div>
+                        </div>
                     </li>
-                    <li tabindex="-1" role="listitem" class="fd-list__item fd-list__item--link">
-                        <a tabindex="0" class="fd-list__link">
-                            <i role="presentation" class="fd-list__icon sap-icon--employee-lookup"></i>
-                            <span class="fd-list__title">Proxy User</span>
-                        </a>
-                    </li>
-                    <li tabindex="-1" role="listitem" class="fd-list__item fd-list__item--link">
-                        <a tabindex="0" class="fd-list__link">
-                            <i role="presentation" class="fd-list__icon sap-icon--role"></i>
-                            <span class="fd-list__title">Proxy Role</span>
-                        </a>
-                    </li>
-                    <li tabindex="-1" role="listitem" class="fd-list__item fd-list__item--link">
-                        <a tabindex="0" class="fd-list__link">
-                            <i role="presentation" class="fd-list__icon sap-icon--action-settings"></i>
-                            <span class="fd-list__title">Settings</span>
-                        </a>
-                    </li>
-                    <li tabindex="-1" role="listitem" class="fd-list__item fd-list__item--link">
-                        <a tabindex="0" class="fd-list__link">
-                            <i role="presentation" class="fd-list__icon sap-icon--marketing-campaign"></i>
-                            <span class="fd-list__title">Sign Out</span>
-                        </a>
+                    <li class="fd-navigation-list__item" role="listitem" tabindex="-1">
+                        <div class="fd-navigation-list__content" tabindex="0">
+                            <div class="fd-navigation-list__content-container">
+                                <span class="fd-navigation-list__icon">
+                                    <i class=" sap-icon--message-information" role="presentation"></i>
+                                </span>
+                                <span class="fd-navigation-list__text">About</span>
+                            </div>
+                        </div>
                     </li>
                 </ul>
             </div>
+            <div class="fd-bar fd-bar--footer">
+                <div class="fd-bar__right">
+                    <div class="fd-bar__element">
+                        <button aria-label="button" class="fd-button fd-button--transparent fd-button--compact">Sign Out</button>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
+
+    <!-- Navigation List -->
+    <!-- <div style="width: 300px">
+        <ul class="fd-navigation-list level-1">
+            <li class="fd-navigation-list__item">
+                <div class="fd-navigation-list__content is-focus">
+                    <div class="fd-navigation-list__content-container">
+                        <span class="fd-navigation-list__icon">
+                            <i class=" sap-icon--calendar" role="presentation"></i>
+                        </span>
+                        <span class="fd-navigation-list__text">Nav Item Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae perferendis, explicabo iusto animi vitae doloremque dolor cumque mollitia ipsum, in amet enim dicta doloribus? Distinctio magnam aperiam assumenda nemo ad.</span>
+                    </div>
+                    <div class="fd-navigation-list__expander">
+                        <i class="sap-icon--navigation-down-arrow" role="presentation"></i>
+                    </div>
+                </div>
+            </li>
+            <li class="fd-navigation-list__item">
+                <div class="fd-navigation-list__content">
+                    <div class="fd-navigation-list__content-container">
+                        <span class="fd-navigation-list__icon">
+                            <i class=" sap-icon--calendar" role="presentation"></i>
+                        </span>
+                        <span class="fd-navigation-list__text">Nav Item</span>
+                    </div>
+                    <div class="fd-navigation-list__expander">
+                        <i class="sap-icon--navigation-down-arrow" role="presentation"></i>
+                    </div>
+                </div>
+                <ul class="fd-navigation-list level-2">
+                    <li class="fd-navigation-list__item">
+                        <div class="fd-navigation-list__content">
+                            <div class="fd-navigation-list__content-container">
+                                <span class="fd-navigation-list__text">Child Item</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="fd-navigation-list__item">
+                        <div class="fd-navigation-list__content is-selected">
+                            <div class="fd-navigation-list__content-container">
+                                <span class="fd-navigation-list__text">Child Item</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="fd-navigation-list__item">
+                        <div class="fd-navigation-list__content">
+                            <div class="fd-navigation-list__content-container">
+                                <span class="fd-navigation-list__text">Child Item</span>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </li>
+            <li class="fd-navigation-list__item">
+                <div class="fd-navigation-list__content is-selected is-focus">
+                    <div class="fd-navigation-list__content-container">
+                        <span class="fd-navigation-list__icon">
+                            <i class=" sap-icon--calendar" role="presentation"></i>
+                        </span>
+                        <span class="fd-navigation-list__text">Nav Item</span>
+                    </div>
+                </div>
+            </li>
+            <li class="fd-navigation-list__item">
+                <div class="fd-navigation-list__content">
+                    <div class="fd-navigation-list__content-container">
+                        <span class="fd-navigation-list__icon">
+                            <i class=" sap-icon--calendar" role="presentation"></i>
+                        </span>
+                        <span class="fd-navigation-list__text">Nav Item</span>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div> -->
 </div>

@@ -1,0 +1,166 @@
+@use "sass:map";
+
+@import "./new-settings";
+@import "./mixins";
+
+$block: #{$fd-namespace}-navigation-list;
+
+.#{$block} {
+  // Content
+  --fdNavigationList_Content_Height: var(--sapElement_LineHeight);
+  --fdNavigationList_Content_Background: var(--sapList_Background);
+  --fdNavigationList_Content_Selection_Indicator_Color: transparent;
+
+  // Text
+  --fdNavigationList_Text_Shadow: none;
+  --fdNavigationList_Text_Offset: 1rem;
+  --fdNavigationList_Text_Color: var(--sapList_TextColor);
+  --fdNavigationList_Text_Font_Size: var(--sapFontSize);
+  --fdNavigationList_Text_Font_Family: var(--sapFontBoldFamily);
+
+  // Icon
+  --fdNavigationList_Icon_Width: 2.5rem;
+  --fdNavigationList_Icon_Font_Size: 1.125rem;
+
+  // Expander
+  --fdNavigationList_Expander_Width: 2.5rem;
+  --fdNavigationList_Expander_Font_Size: 1rem;
+
+  @include fd-reset();
+
+  @include fd-flex(column) {
+    gap: 0.25rem;
+  };
+
+  width: 100%;
+  list-style-type: none;
+
+  &.level-2 {
+    --fdNavigationList_Text_Offset: 2.5rem;
+    --fdNavigationList_Text_Font_Size: var(--sapFontSize);
+    --fdNavigationList_Text_Font_Family: var(--sapFontFamily);
+  }
+
+  &.level-3 {
+    --fdNavigationList_Text_Offset: 3.5rem;
+    --fdNavigationList_Text_Font_Size: var(--sapFontSize);
+    --fdNavigationList_Text_Font_Family: var(--sapFontFamily);
+  }
+
+  &__item {
+    @include fd-reset();
+  }
+
+  &__content {
+    @include fd-reset();
+    @include fd-flex-vertical-center();
+
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    border-radius: var(--sapButton_BorderCornerRadius);
+    height: var(--fdNavigationList_Content_Height);
+    background: var(--fdNavigationList_Content_Background);
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 0.188rem;
+      height: 100%;
+      background: var(--fdNavigationList_Content_Selection_Indicator_Color);
+    }
+
+    @include fd-rtl() {
+      &::before {
+        left: auto;
+        right: 0;
+      }
+    }
+
+    & + .#{$block} {
+      margin-block-start: 0.25rem;
+    }
+
+    @include fd-hover() {
+      --fdNavigationList_Content_Background: var(--sapList_Hover_Background);
+    }
+
+    @include fd-active() {
+      --fdNavigationList_Text_Color: var(--sapList_Active_TextColor);
+      --fdNavigationList_Content_Background: var(--sapList_Active_Background);
+    }
+
+    @include fd-selected() {
+      --fdNavigationList_Text_Shadow: var(--sapContent_TextShadow);
+      --fdNavigationList_Content_Background: var(--sapList_SelectionBackgroundColor);
+      --fdNavigationList_Content_Selection_Indicator_Color: var(--sapList_SelectionBorderColor);
+
+      @include fd-hover() {
+        --fdNavigationList_Text_Shadow: var(--sapContent_TextShadow);
+        --fdNavigationList_Content_Background: var(--sapList_Hover_SelectionBackground);
+        --fdNavigationList_Content_Selection_Indicator_Color: var(--sapList_SelectionBorderColor);
+      }
+    }
+
+    @include fd-focus() {
+      outline: var(--sapContent_FocusStyle) var(--sapContent_FocusWidth) var(--sapContent_FocusColor);
+    }
+  }
+
+  &__content-container {
+    @include fd-reset();
+    @include fd-flex-vertical-center();
+
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+
+  &__icon {
+    @include fd-reset();
+    @include fd-flex-center();
+    @include fd-set-width(var(--fdNavigationList_Icon_Width));
+    
+    height: 100%;
+
+    [class*="sap-icon"] {
+      font-size: var(--fdNavigationList_Icon_Font_Size);
+    }
+
+    & + .#{$block}__text {
+      --fdNavigationList_Text_Offset: 0;
+    }
+  }
+
+  &__text {
+    @include fd-reset();
+    @include fd-ellipsis();
+
+    width: 100%;
+    color: var(--fdNavigationList_Text_Color);
+    text-shadow: var(--fdNavigationList_Text_Shadow);
+    font-size: var(--fdNavigationList_Text_Font_Size);
+    font-family: var(--fdNavigationList_Text_Font_Family);
+    padding-inline-start: var(--fdNavigationList_Text_Offset);
+  }
+
+  &__expander {
+    @include fd-reset();
+    @include fd-flex-center();
+    @include fd-set-width(var(--fdNavigationList_Expander_Width));
+
+    height: 100%;
+
+    [class*="sap-icon"] {
+      font-size: var(--fdNavigationList_Expander_Font_Size);
+    }
+  }
+
+  @include fd-compact-or-condensed() {
+    --fdNavigationList_Icon_Font_Size: 1rem;
+    --fdNavigationList_Text_Font_Size: var(--sapFontSize);
+    --fdNavigationList_Content_Height: var(--sapElement_Compact_LineHeight);
+  }
+}

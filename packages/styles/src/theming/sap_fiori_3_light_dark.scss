@@ -31,7 +31,6 @@
 @import "./common/info-label/sap_fiori";
 @import "./common/file-uploader/sap_fiori";
 @import "./common/variant-management/sap_fiori";
-@import "./common/user-menu/sap_fiori";
 @import "./common/flexible-column-layout/sap_fiori";
 @import "./common/avatar/sap_fiori";
 @import "./common/avatar-group/sap_fiori";
@@ -255,4 +254,7 @@
 
   /** Modal */
   --fdModal_BackgroundColor: rgb(0 0 0 / 60%);
+
+  /** User Menu */
+  --fdUserMenu_User_Name_Font_Family: var(--sapFontBoldFamily);
 }

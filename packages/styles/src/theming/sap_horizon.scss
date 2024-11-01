@@ -33,7 +33,6 @@
 @import "./common/file-uploader/sap_horizon";
 @import "./common/variant-management/sap_horizon";
 @import "./common/shellbar/sap_horizon";
-@import "./common/user-menu/sap_horizon";
 @import "./common/generic-tag/sap_horizon";
 @import "./common/flexible-column-layout/sap_horizon";
 @import "./common/avatar/sap_horizon";
@@ -243,4 +242,7 @@
 
   /** Modal */
   --fdModal_BackgroundColor: rgb(0 0 0 / 20%);
+
+  /** User Menu */
+  --fdUserMenu_User_Name_Font_Family: var(--sapFontBoldFamily);
 }
