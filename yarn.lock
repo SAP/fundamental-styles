@@ -3489,10 +3489,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@sap-theming/theming-base-content@npm:11.19.0":
-  version: 11.19.0
-  resolution: "@sap-theming/theming-base-content@npm:11.19.0"
-  checksum: 10/bda9e327106cb061a8ed7a1b9133ca3968746cd4cee8ffe6fc9761c38860e780d2c53e46b9bf668e6df879ae51e5f249db799600fc23b2b780d4d783af6ceedd
+"@sap-theming/theming-base-content@npm:11.20.0":
+  version: 11.20.0
+  resolution: "@sap-theming/theming-base-content@npm:11.20.0"
+  checksum: 10/3a6fbdc3af82cde669005bd0fc8a8030e3032c76d9908e82ded90306fd0dbbf15f6bfc026a2ebf170da58f95717bc887d62039ba4eb2939aa29a2a7f208deaa7
   languageName: node
   linkType: hard
 
@@ -9677,7 +9677,7 @@ __metadata:
     "@nx/plugin": "npm:20.0.6"
     "@nx/react": "npm:20.0.6"
     "@nx/web": "npm:20.0.6"
-    "@sap-theming/theming-base-content": "npm:11.19.0"
+    "@sap-theming/theming-base-content": "npm:11.20.0"
     "@storybook/addon-a11y": "npm:^8.3.6"
     "@storybook/addon-actions": "npm:^8.3.6"
     "@storybook/addon-controls": "npm:^8.3.6"
