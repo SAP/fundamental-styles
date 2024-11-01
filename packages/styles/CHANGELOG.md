@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.39.0-rc.14](https://github.com/SAP/fundamental-styles/compare/v0.39.0-rc.13...v0.39.0-rc.14) (2024-11-01)
+
+### Bug Fixes
+
+-   **styles:** update Product Menu to UXC [ci visual] ([#5747](https://github.com/SAP/fundamental-styles/issues/5747)) ([7e3fe7c](https://github.com/SAP/fundamental-styles/commit/7e3fe7c1c93f4dba51942fe22ee2be63434f01c5))
+
 # [0.39.0-rc.13](https://github.com/SAP/fundamental-styles/compare/v0.39.0-rc.12...v0.39.0-rc.13) (2024-10-31)
 
 ### Bug Fixes
