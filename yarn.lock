@@ -2962,7 +2962,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@nx/devkit@npm:18.3.5, @nx/devkit@npm:>=17.1.2 < 19, @nx/devkit@npm:^17.0.0 || ^18.0.0":
+"@nx/devkit@npm:18.3.5, @nx/devkit@npm:>=17.1.2 < 19":
   version: 18.3.5
   resolution: "@nx/devkit@npm:18.3.5"
   dependencies:
@@ -2995,6 +2995,24 @@ __metadata:
   peerDependencies:
     nx: ">= 19 <= 21"
   checksum: 10/d7771cfceba0378a4ddff1216f4a3269847d282a19d03a441bddeef8b22b4fdeeb30495bb426730c87f77b51f4a0322c0826abc8a3ec4f03c0d2f58e362e8525
+  languageName: node
+  linkType: hard
+
+"@nx/devkit@npm:>=19.0.0":
+  version: 20.0.7
+  resolution: "@nx/devkit@npm:20.0.7"
+  dependencies:
+    ejs: "npm:^3.1.7"
+    enquirer: "npm:~2.3.6"
+    ignore: "npm:^5.0.4"
+    minimatch: "npm:9.0.3"
+    semver: "npm:^7.5.3"
+    tmp: "npm:~0.2.1"
+    tslib: "npm:^2.3.0"
+    yargs-parser: "npm:21.1.1"
+  peerDependencies:
+    nx: ">= 19 <= 21"
+  checksum: 10/d2c52773c27f50b24e8a6ddb2e27c91a53d1ed327f0a7921475e985151115abc57f57175dabbcab26f94b0935321da3d660d35f5f7cecee79dd5a88e1d599241
   languageName: node
   linkType: hard
 
@@ -9548,7 +9566,7 @@ __metadata:
     normalize.css: "npm:8.0.1"
     npm-run-all: "npm:4.1.5"
     nx: "npm:20.0.6"
-    nx-stylelint: "npm:17.1.4"
+    nx-stylelint: "npm:18.0.0"
     postcss: "npm:8.4.38"
     postcss-banner: "npm:4.0.1"
     postcss-cli: "npm:9.1.0"
@@ -14518,22 +14536,23 @@ __metadata:
   languageName: node
   linkType: hard
 
-"nx-stylelint@npm:17.1.4":
-  version: 17.1.4
-  resolution: "nx-stylelint@npm:17.1.4"
+"nx-stylelint@npm:18.0.0":
+  version: 18.0.0
+  resolution: "nx-stylelint@npm:18.0.0"
   dependencies:
-    "@nx/devkit": "npm:^17.0.0 || ^18.0.0"
-    tslib: "npm:^2.6.2"
+    "@nx/devkit": "npm:>=19.0.0"
+    cosmiconfig: "npm:^9.0.0"
+    tslib: "npm:^2.8.0"
   peerDependencies:
-    stylelint: ^15.0.0 || ^16.0.0
-    stylelint-config-standard: ">=30.0.0"
-    stylelint-config-standard-scss: ">=7.0.0"
+    stylelint: ^16.0.0
+    stylelint-config-standard: ">=35.0.0"
+    stylelint-config-standard-scss: ">=12.0.0"
   peerDependenciesMeta:
     stylelint-config-standard:
       optional: true
     stylelint-config-standard-scss:
       optional: true
-  checksum: 10/20a5c96903fc180a0cfe9de4f1a0edfa7b7a2849942abb4ca09807faaefc494d6567850dbb14d24b7d92fc453df966aa5d9b9d7215e610e87b6e88752a6f0dff
+  checksum: 10/6cc65748fc062be0a86649949feb4a474f4f3124a4149afee38b125715c7e126c3f88514c35523633b1b5eb5edd0c24ad85446cfdf34510524a8fcb6474ef731
   languageName: node
   linkType: hard
 
@@ -18394,7 +18413,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"tslib@npm:^2.0.1, tslib@npm:^2.0.3, tslib@npm:^2.1.0, tslib@npm:^2.3.0, tslib@npm:^2.4.0, tslib@npm:^2.6.2":
+"tslib@npm:^2.0.1, tslib@npm:^2.0.3, tslib@npm:^2.1.0, tslib@npm:^2.3.0, tslib@npm:^2.4.0, tslib@npm:^2.8.0":
   version: 2.8.1
   resolution: "tslib@npm:2.8.1"
   checksum: 10/3e2e043d5c2316461cb54e5c7fe02c30ef6dccb3384717ca22ae5c6b5bc95232a6241df19c622d9c73b809bea33b187f6dbc73030963e29950c2141bc32a79f7
