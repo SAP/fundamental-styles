@@ -235,4 +235,10 @@
 
   /** User Menu */
   --fdUserMenu_User_Name_Font_Family: var(--sapFontFamily);
+
+  /** 
+    Message Toast
+    TO DO: remove when the theming variable is added
+  */
+  --sapContent_Lite_Shadow: var(--sapContent_Shadow1);
 }
