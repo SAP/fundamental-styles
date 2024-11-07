@@ -22,7 +22,7 @@ export const tags = {
     "development": {
         "name": "in development",
         "title": "The component is under development, breaking changes may occur",
-        "color": 5
+        "color": 2
     },
     "non-f3": {
         "name": "non-sap-design",
