@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.39.0-rc.19](https://github.com/SAP/fundamental-styles/compare/v0.39.0-rc.18...v0.39.0-rc.19) (2024-11-08)
+
+### Bug Fixes
+
+-   **styles:** remove local theming var for Message Toast [ci visual] ([#5762](https://github.com/SAP/fundamental-styles/issues/5762)) ([acaedca](https://github.com/SAP/fundamental-styles/commit/acaedca1eef58413179884d97902b9fb2589f7b5))
+
 # [0.39.0-rc.18](https://github.com/SAP/fundamental-styles/compare/v0.39.0-rc.17...v0.39.0-rc.18) (2024-11-08)
 
 **Note:** Version bump only for package fundamental-styles
