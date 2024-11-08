@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.39.0-rc.17](https://github.com/SAP/fundamental-styles/compare/v0.39.0-rc.16...v0.39.0-rc.17) (2024-11-08)
+
+### Bug Fixes
+
+-   **styles:** update Message toast to latest design UXC [ci visual] ([#5760](https://github.com/SAP/fundamental-styles/issues/5760)) ([db13dd4](https://github.com/SAP/fundamental-styles/commit/db13dd40b0b2c5204acb6a3dae7481f6fecea0ad))
+
 # [0.39.0-rc.16](https://github.com/SAP/fundamental-styles/compare/v0.39.0-rc.15...v0.39.0-rc.16) (2024-11-03)
 
 **Note:** Version bump only for package fundamental-styles
