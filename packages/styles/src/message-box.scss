@@ -7,20 +7,14 @@
 $block: #{$fd-namespace}-message-box;
 $bar: #{$fd-namespace}-bar;
 $button: #{$fd-namespace}-button;
-$fd-message-box-title-icon-text-size: 1rem;
-$fd-message-box-footer-button-min-width: 4rem;
 $fd-message-box-content-padding-x: (s: 1rem, m: 2rem, l: 2rem, xl: 3rem);
-$defaultBoxShadow: var(--sapContent_HeaderShadow);
-$errorBoxShadow: var(--fdMessage_Box_Error_Box_Shadow);
-$successBoxShadow: var(--fdMessage_Box_Success_Box_Shadow);
-$warningBoxShadow: var(--fdMessage_Box_Warning_Box_Shadow);
-$informationBoxShadow: var(--fdMessage_Box_Information_Box_Shadow);
+
 $message-box-states: (
   "confirmation": ("iconColor": var(--sapNeutralElementColor), "boxShadow": var(--sapContent_HeaderShadow)),
-  "error": ("iconColor": var(--sapNegativeElementColor), "boxShadow": $errorBoxShadow),
-  "success": ("iconColor": var(--sapPositiveElementColor), "boxShadow": $successBoxShadow),
-  "warning": ("iconColor": var(--sapCriticalElementColor), "boxShadow": $warningBoxShadow),
-  "information": ("iconColor": var(--sapInformativeElementColor), "boxShadow": $informationBoxShadow)
+  "error": ("iconColor": var(--sapNegativeElementColor), "boxShadow": var(--sapContent_Error_HeaderShadow)),
+  "success": ("iconColor": var(--sapPositiveElementColor), "boxShadow": var(--sapContent_Success_HeaderShadow)),
+  "warning": ("iconColor": var(--sapCriticalElementColor), "boxShadow": var(--sapContent_Warning_HeaderShadow)),
+  "information": ("iconColor": var(--sapInformativeElementColor), "boxShadow": var(--sapContent_Information_HeaderShadow))
 );
 
 .#{$block} {
@@ -40,10 +34,11 @@ $message-box-states: (
 
     @each $size-label, $size in $fd-message-box-content-padding-x {
       &--#{$size-label} {
-        .#{$block}__header.#{$bar},
-        .#{$block}__footer.#{$bar},
+        .#{$block}__header,
+        .#{$block}__footer,
         .#{$block}__body {
-          padding-inline: map.get($fd-message-box-content-padding-x, $size-label);
+          --fdBar_Padding_X: #{map.get($fd-message-box-content-padding-x, $size-label)};
+          --fdMessageBox_Body_Inline_Padding: #{map.get($fd-message-box-content-padding-x, $size-label)};
         }
       }
     }
@@ -53,16 +48,9 @@ $message-box-states: (
     }
   }
 
-  &__header,
   &__footer {
-    &.#{$bar} {
-      @extend %dialog-paddings;
-    }
-  }
-
-  &__footer {
-    .#{$block}__decisive-button.#{$button} {
-      min-width: $fd-message-box-footer-button-min-width;
+    .#{$block}__decisive-button {
+      --fdButton_Min_Width: 4rem;
     }
   }
 
@@ -71,8 +59,9 @@ $message-box-states: (
 
     @extend %dialog-body;
 
-    padding-inline: 1rem;
+    padding-inline: var(--fdMessageBox_Body_Inline_Padding, 1rem);
     padding-block: 1rem;
+
   }
 
   &__title {
@@ -84,7 +73,7 @@ $message-box-states: (
   &__more {
     @include fd-reset();
 
-    margin-top: 1rem;
+    margin-block-start: 1rem;
   }
 
   // MODIFIERS
@@ -94,15 +83,22 @@ $message-box-states: (
 
   @each $set-name, $state-set in $message-box-states {
     &--#{$set-name} {
-      .#{$block}__header.#{$bar} {
-        box-shadow: map.get($state-set, "boxShadow");
+      .#{$block}__header {
+        --fdBar_Shadow: #{map.get($state-set, "boxShadow")};
 
         :not(button) > [class*="sap-icon"] {
-          font-size: 1rem;
+          --fdIcon_Font_Size: 1rem;
+          --fdIcon_Color: #{map.get($state-set, "iconColor")};
+
           margin-inline-end: 0.5rem;
-          color: map.get($state-set, "iconColor");
         }
       }
+    }
+  }
+
+  @include fd-compact-or-condensed() {
+    .#{$block}__decisive-button {
+      --fdButton_Min_Width: 4rem;
     }
   }
 }
