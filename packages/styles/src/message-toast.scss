@@ -4,31 +4,23 @@
 @import "./mixins";
 
 $block: #{$fd-namespace}-message-toast;
-$fd-message-toast-max-width: 15rem;
-$fd-message-toast-padding: 1rem;
-$fd-message-toast-border-radius: var(--sapElement_BorderCornerRadius);
-$fd-message-toast-background: var(--sapList_Background);
-$fd-message-toast-box-shadow: var(--sapContent_Shadow2);
-$fd-message-toast-text-font-family: var(--sapFontFamily);
-$fd-message-toast-text-font-size: var(--sapFontSize);
-$fd-message-toast-text-color: var(--sapList_TextColor);
 
 .#{$block} {
   @include fd-reset();
 
   // CONTAINER
-  display: inline-flex;
   width: auto;
-  max-width: $fd-message-toast-max-width;
-  box-shadow: $fd-message-toast-box-shadow;
-  background-color: $fd-message-toast-background;
-  border-radius: $fd-message-toast-border-radius;
-  padding-inline: $fd-message-toast-padding;
-  padding-block: $fd-message-toast-padding;
+  max-width: 15rem;
+  padding-block: 1rem;
+  display: inline-flex;
+  padding-inline: 1rem;
+  box-shadow: var(--sapContent_Lite_Shadow);
+  border-radius: var(--sapElement_BorderCornerRadius);
+  background-color: var(--sapIndicationColor_9_Background);
 
   // TEXT
-  font-family: $fd-message-toast-text-font-family;
-  font-size: var(--sapFontSize);
-  color: $fd-message-toast-text-color;
   text-align: center;
+  font-size: var(--sapFontSize);
+  font-family: var(--sapFontFamily);
+  color: var(--sapContent_ContrastTextColor);
 }
