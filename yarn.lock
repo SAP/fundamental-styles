@@ -3841,11 +3841,11 @@ __metadata:
   linkType: hard
 
 "@storybook/csf-tools@npm:^8.4.1":
-  version: 8.4.1
-  resolution: "@storybook/csf-tools@npm:8.4.1"
+  version: 8.4.2
+  resolution: "@storybook/csf-tools@npm:8.4.2"
   peerDependencies:
     storybook: ^8.2.0 || ^8.3.0-0 || ^8.4.0-0 || ^8.5.0-0 || ^8.6.0-0
-  checksum: 10/70c32d3650df462c8bd2913308b4561d88f6e75d6fbb2655efad2074e34a2e6c1b62e7bbecb28cb12a2424dedb5aeba6962fc9216b3c1ffdabfae388481e3331
+  checksum: 10/687dffb0931ebc8af6d4b97a1b30f05afd124475d04b354c295f628aad4a90c1390074ab1859d6ec1981739105875ffa5d5c8a2d84932342024eb8e774c9e933
   languageName: node
   linkType: hard
 
