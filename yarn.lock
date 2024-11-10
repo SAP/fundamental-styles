@@ -3734,11 +3734,11 @@ __metadata:
   linkType: hard
 
 "@storybook/addon-toolbars@npm:^8.4.1":
-  version: 8.4.1
-  resolution: "@storybook/addon-toolbars@npm:8.4.1"
+  version: 8.4.2
+  resolution: "@storybook/addon-toolbars@npm:8.4.2"
   peerDependencies:
-    storybook: ^8.4.1
-  checksum: 10/44542a99986b9d0d8a44bbdb34bc3fb63c3a3199d29a25f5e7e3b84a4d0379737e7539547ee75690bf3b2a7463a55429a540b8540973b1a22434d9f8b5376841
+    storybook: ^8.4.2
+  checksum: 10/294019d0081874ff15fc846768f3743e11278f6a1d211f413bfcdbc5ca9415a80ac478523cae51fcfe1c77277a32bad9745362c8a0a1bd053570e07df615af95
   languageName: node
   linkType: hard
 
