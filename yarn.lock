@@ -3805,9 +3805,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/core@npm:8.4.1":
-  version: 8.4.1
-  resolution: "@storybook/core@npm:8.4.1"
+"@storybook/core@npm:8.4.2":
+  version: 8.4.2
+  resolution: "@storybook/core@npm:8.4.2"
   dependencies:
     "@storybook/csf": "npm:^0.1.11"
     better-opn: "npm:^3.0.2"
@@ -3825,7 +3825,7 @@ __metadata:
   peerDependenciesMeta:
     prettier:
       optional: true
-  checksum: 10/9782c8991e37771a67b5615ee0bac478fdcc4ee323d229a4bb29822783b8d8c7a52ec50926213c88688775a24f12786173fa49453cece5aaabf8796f67bd49a2
+  checksum: 10/f7e1b1b50fbe038c5553695086775eca34de4ebee3dabc28b9163f37e348565a50a937231d0eed45291f9d52478c63bdf2065a99ad4826816fcd81e1652c3382
   languageName: node
   linkType: hard
 
@@ -17451,10 +17451,10 @@ __metadata:
   linkType: hard
 
 "storybook@npm:^8.4.1":
-  version: 8.4.1
-  resolution: "storybook@npm:8.4.1"
+  version: 8.4.2
+  resolution: "storybook@npm:8.4.2"
   dependencies:
-    "@storybook/core": "npm:8.4.1"
+    "@storybook/core": "npm:8.4.2"
   peerDependencies:
     prettier: ^2 || ^3
   peerDependenciesMeta:
@@ -17464,7 +17464,7 @@ __metadata:
     getstorybook: ./bin/index.cjs
     sb: ./bin/index.cjs
     storybook: ./bin/index.cjs
-  checksum: 10/10072ec75e3876916555bcb1c6e14fc987e25ade4579783a2f0eb2780cc45b6f04bbed115e01a97d549d819867113ec04b4ac2515545fee4d245bb309c8d8d61
+  checksum: 10/e3f1e32371a6f70639fa4fbc24e703aeb99bdb417b7c4acca6d331bf777b7c9343195175c6c088e162b8feb50f267ea70db9dd23f3ab07f110e1a76e3c7618ca
   languageName: node
   linkType: hard
 
