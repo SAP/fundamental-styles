@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.39.0-rc.21](https://github.com/SAP/fundamental-styles/compare/v0.39.0-rc.20...v0.39.0-rc.21) (2024-11-12)
+
+### Bug Fixes
+
+-   **styles:** updates for Message Box [ci visual] ([#5764](https://github.com/SAP/fundamental-styles/issues/5764)) ([b3e2205](https://github.com/SAP/fundamental-styles/commit/b3e2205d5cf40d988ebf47ba656cb7aea82c3b99))
+
 # [0.39.0-rc.20](https://github.com/SAP/fundamental-styles/compare/v0.39.0-rc.19...v0.39.0-rc.20) (2024-11-11)
 
 **Note:** Version bump only for package fundamental-styles

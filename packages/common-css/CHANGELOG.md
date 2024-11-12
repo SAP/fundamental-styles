@@ -3,6 +3,10 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.39.0-rc.21](https://github.com/SAP/fundamental-styles/compare/v0.39.0-rc.20...v0.39.0-rc.21) (2024-11-12)
+
+**Note:** Version bump only for package @sap-ui/common-css
+
 # [0.39.0-rc.20](https://github.com/SAP/fundamental-styles/compare/v0.39.0-rc.19...v0.39.0-rc.20) (2024-11-11)
 
 **Note:** Version bump only for package @sap-ui/common-css
