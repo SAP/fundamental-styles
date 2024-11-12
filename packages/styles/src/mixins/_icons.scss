@@ -105,12 +105,10 @@
   @each $enumeration-name, $enumeration-value in $fd-icon-control-enumerations {
     &.#{$block} {
       &--color-#{$enumeration-name} {
-        color: map.get($enumeration-value, "color");
+        --fdIcon_Color: #{map.get($enumeration-value, "color")};
       }
       &--background-#{$enumeration-name} {
-        &::#{$position} {
-          background-color: map.get($enumeration-value, "background-color");
-        }
+        --fdIcon_Background_Color: #{map.get($enumeration-value, "background-color")};
       }
     }
   }

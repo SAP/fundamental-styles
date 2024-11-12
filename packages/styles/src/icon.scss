@@ -12,9 +12,11 @@ $blockTNT: sap-icon-TNT;
   @include fd-icon-control-enumeration($block);
 
   line-height: 1;
-  font-size: 1rem;
+  font-size: var(--fdIcon_Font_Size, 1rem);
   font-style: normal;
   display: inline-flex;
+  color: var(--fdIcon_Color, inherit);
+  background-color: var(--fdIcon_Background_Color, transparent);
 
   @include fd-fiori-focus(0);
 }
