@@ -17,6 +17,8 @@
 $block: #{$fd-namespace}-list;
 $objectListBlock: #{$fd-namespace}-object-list;
 $messageViewList: #{$block}--message-view;
+$avatar: #{$fd-namespace}-avatar;
+
 $fd-list-item-padding-x: 0.9375rem !default;
 $fd-list-large-font-size: var(--sapFontLargeSize) !default;
 $fd-list-normal-font-size: var(--sapFontSize) !default;

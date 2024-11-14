@@ -35,6 +35,10 @@ $block: #{$fd-namespace}-panel;
     border-bottom: solid 0.0625rem var(--sapGroup_TitleBorderColor);
 
     @include fd-flex-vertical-center();
+
+    &:has(> .#{$fd-namespace}-toolbar) {
+      padding-inline-end: 0;
+    }
   }
 
   &__title {
@@ -55,6 +59,11 @@ $block: #{$fd-namespace}-panel;
 
     &[aria-hidden="true"] {
       display: none;
+    }
+
+    &--no-padding {
+      padding-block: 0;
+      padding-inline: 0;
     }
   }
 
