@@ -97,16 +97,6 @@ These modifier classes are used to style various states of calendar grid element
 | \`is-hover\` | Style hovered calendar elements
 | \`is-disabled\` | Style disabled calendar elements
 
-### Legend
-These modifier classes are used to style calendar grid elements with colors.\n
-| Modifier class | Use to... |
-| -------------:| :-------------- |
-| \`fd-calendar__legend-item\` | Create a legend container
-| \`fd-calendar__legend-marker\` | Create a legend marker (square by default)
-| \` fd-calendar__legend-marker--circle\` | Modify the legend marker to a circle
-| \` fd-calendar__legend-text\` | Create a legend title text
-| \` fd-calendar__legend-description\` | Create a legend description text
-
 ### Special days
 The classes \`fd-calendar__item--legend-1\` ... \`fd-calendar__item--legend-20\` are used to style calendar grid elements with colors, which are identified by numeric modifier classes.\n
 `,
@@ -149,7 +139,7 @@ export const Legend = () => legendExampleHtml;
 Legend.parameters = {
   docs: {
    description: {
-      story: 'The calendar component can display a customizable legend to help users understand the meaning of different colors or styles used in the calendar. Add the `fd-calendar__legend` class to a child container and then add the `fd-calendar__legend-item` class to each legend item.'
+      story: 'The Calendar component can display a customizable legend to help users interpret the meaning of various colors and styles used within the calendar. <br>The legend includes 20 predefined color <b>placeholders</b> (<code>fd-calendar-legend__item--placeholder-1</code>, <code>fd-calendar-legend__item--placeholder-20</code>, etc.), as well as generic colors for <b>selection</b> (<code>fd-calendar-legend__item--selected</code>), <b>today</b> (<code>fd-calendar-legend__item--today</code>), <b>normal (work) days</b> (<code>fd-calendar-legend__item--work</code>), and <b>non-working days</b> (<code>fd-calendar-legend__item--non-work</code>).<br> The number of flexible columns should be configurable to prevent label truncation, though labels can also wrap to accommodate longer text. Use <code>fd-calendar-legend--auto-column</code> for auto column width.<br> Appointments are represented by circles (<code>fd-calendar-legend__item--appointment</code>), while special calendar days are depicted as squares (default).'
     }
   }
 };
