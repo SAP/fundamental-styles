@@ -39,17 +39,10 @@ $block: #{$fd-namespace}-panel;
     padding-inline: var(--fdPanel_Header_Padding_Inline_Start, 0) var(--fdPanel_Header_Padding_Inline_End, 0.5rem);
     border-radius: var(--fdPanel_Header_Border_Top_Left_Radius, var(--fdPanel_Border_Radius)) var(--fdPanel_Header_Border_Top_Right_Radius, var(--fdPanel_Border_Radius)) var(--fdPanel_Header_Border_Bottom_Right_Radius, 0) var(--fdPanel_Header_Border_Bottom_Left_Radius, 0);
 
-    &:has(.#{$block}__button[aria-expanded="false"]) {
-      --fdPanel_Header_Border_Bottom_Left_Radius: var(--fdPanel_Border_Radius);
-      --fdPanel_Header_Border_Bottom_Right_Radius: var(--fdPanel_Border_Radius);
-    }
-    
-    &:has(.#{$fd-namespace}-toolbar) {
-      --fdPanel_Header_Padding_Inline_End: 0;
-    }
+    @include fd-flex-vertical-center();
 
-    &:not(:has(.#{$block}__button)) {
-      --fdPanel_Header_Padding_Inline_Start: 1rem;
+    &:has(> .#{$fd-namespace}-toolbar) {
+      padding-inline-end: 0;
     }
   }
 
@@ -72,6 +65,11 @@ $block: #{$fd-namespace}-panel;
 
     &[aria-hidden="true"] {
       display: none;
+    }
+
+    &--no-padding {
+      padding-block: 0;
+      padding-inline: 0;
     }
   }
 

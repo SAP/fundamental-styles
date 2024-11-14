@@ -29,6 +29,20 @@
     background: var(--fdList_Item_Background_Color);
     position: relative;
 
+    .#{$avatar} {
+      &:first-child {
+        margin-inline-end: 0.75rem;
+      }
+    }
+
+    &:last-child {
+      border-bottom-color: transparent;
+
+      @include fd-selected() {
+        border-bottom-color: var(--sapList_SelectionBorderColor);
+      }
+    }
+
     &--unread {
       .#{$block}__title {
         font-weight: bold;
