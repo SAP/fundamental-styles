@@ -472,3 +472,93 @@ $fd-calendar-special-days: (
     padding-block-start: 1rem;
   }
 }
+
+.#{$block}-legend {
+  @include fd-reset();
+
+  padding-block: 0.5rem;
+  padding-inline: 0.5rem;
+  background: var(--sapList_Background);
+  column-width: var(--fdCalendar_Legend_Column_Width, 7.5rem);
+
+  &--auto-column {
+    --fdCalendar_Legend_Column_Width: auto;
+  }
+
+  &__item {
+    @include fd-reset();
+
+    @include fd-flex() {
+      gap: 0.5rem;
+    };
+
+    min-width:  7.5rem;
+    border-radius: 0.25rem;
+    padding-block: var(--fdCalendar_Legend_Item_Padding, 0.25rem);
+    padding-inline: var(--fdCalendar_Legend_Item_Padding, 0.25rem);
+
+    @include fd-focus() {
+      box-shadow: 0 0 0 var(--sapContent_FocusWidth) var(--sapContent_FocusColor) inset;
+    }
+
+    @include fd-active() {
+      box-shadow: 0 0 0 var(--sapContent_FocusWidth) var(--sapContent_FocusColor) inset;
+    }
+
+    &--appointment {
+      --fdCalendar_Legend_Marker_Border_Radius: 1rem;
+    }
+
+    &--today {
+      --fdCalendar_Legend_Marker_Border_Width: 0.125rem;
+      --fdCalendar_Legend_Marker_Background: var(--sapList_Background);
+      --fdCalendar_Legend_Marker_Border_Color: var(--sapLegend_CurrentDateTime);
+    }
+
+    &--selected {
+      --fdCalendar_Legend_Marker_Background: var(--sapSelectedColor);
+    }
+
+    &--work {
+      --fdCalendar_Legend_Marker_Background: var(--sapLegend_WorkingBackground);
+    }
+
+    &--non-work {
+      --fdCalendar_Legend_Marker_Background: var(--sapLegend_NonWorkingBackground);
+    }
+
+    @each $name, $color in $fd-calendar-special-days {
+      &--placeholder-#{$name} {
+        --fdCalendar_Legend_Marker_Background: #{$color};
+      }
+    }
+    
+  }
+
+  &__marker {
+    @include fd-reset();
+    @include fd-set-square(1rem);
+
+    border-style: solid;
+    border-radius: var(--fdCalendar_Legend_Marker_Border_Radius, 0);
+    border-width: var(--fdCalendar_Legend_Marker_Border_Width, 0.0625rem);
+    background: var(--fdCalendar_Legend_Marker_Background, var(--sapList_Background));
+    border-color: var(--fdCalendar_Legend_Marker_Border_Color, var(--sapContent_ForegroundBorderColor));
+  }
+
+  &__text {
+    @include fd-reset();
+
+    overflow: hidden;
+    line-height: 1rem;
+    white-space: pre-line;
+    vertical-align: middle;
+    text-overflow: ellipsis;
+    font-size: var(--sapFontSmallSize);
+    color: var(--sapContent_LabelColor);
+  }
+
+  @include fd-compact-or-condensed() {
+    --fdCalendar_Legend_Item_Padding: 0.125rem;
+  }
+}
