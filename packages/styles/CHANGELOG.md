@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.39.0-rc.22](https://github.com/SAP/fundamental-styles/compare/v0.39.0-rc.21...v0.39.0-rc.22) (2024-11-15)
+
+### Features
+
+-   **styles:** added an optional Calendar legend section [ci visual] ([#5707](https://github.com/SAP/fundamental-styles/issues/5707)) ([2d6941b](https://github.com/SAP/fundamental-styles/commit/2d6941bb7985815104d10f7a7f5882b10b1706ca))
+
 # [0.39.0-rc.21](https://github.com/SAP/fundamental-styles/compare/v0.39.0-rc.20...v0.39.0-rc.21) (2024-11-12)
 
 ### Bug Fixes
