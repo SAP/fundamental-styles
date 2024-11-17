@@ -3806,11 +3806,11 @@ __metadata:
   linkType: hard
 
 "@storybook/addon-toolbars@npm:^8.4.1":
-  version: 8.4.1
-  resolution: "@storybook/addon-toolbars@npm:8.4.1"
+  version: 8.4.4
+  resolution: "@storybook/addon-toolbars@npm:8.4.4"
   peerDependencies:
-    storybook: ^8.4.1
-  checksum: 10/44542a99986b9d0d8a44bbdb34bc3fb63c3a3199d29a25f5e7e3b84a4d0379737e7539547ee75690bf3b2a7463a55429a540b8540973b1a22434d9f8b5376841
+    storybook: ^8.4.4
+  checksum: 10/efd3cbf3e63f103aacd2471a319ea46ca666f1b6be65c9fe7518322eaf149ea18aefc1146ec2abca2231edb7c2b55f430306d77e041ff10493e79b6b353b9b04
   languageName: node
   linkType: hard
 
