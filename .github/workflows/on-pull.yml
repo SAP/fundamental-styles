@@ -15,17 +15,17 @@ jobs:
     runs-on: ubuntu-latest
     name: Lint commit message
     steps:
-      - uses: actions/checkout@v4.1.7
+      - uses: actions/checkout@v4.2.2
         with:
           fetch-depth: 0
-      - uses: wagoid/commitlint-github-action@v3
+      - uses: wagoid/commitlint-github-action@v6
 
   install-lint-build:
     runs-on: ubuntu-latest
     name: Install, Lint, Build
     steps:
-      - uses: actions/checkout@v4.1.7
-      - uses: actions/cache@v4.0.2
+      - uses: actions/checkout@v4.2.2
+      - uses: actions/cache@v4.1.2
         with:
           path: ~/.npm
           key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
