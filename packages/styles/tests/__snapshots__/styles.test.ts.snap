@@ -35369,7 +35369,7 @@ exports[`Check stories > Components/Panel > Story Expandable > Should match snap
 `;
 
 exports[`Check stories > Components/Panel > Story Fixed > Should match snapshot 1`] = `
-"<div class=\\"fd-panel fd-panel--fixed\\" aria-labelledby=\\"__panel-title-6\\" role=\\"form\\">
+"<div class=\\"fd-panel\\" aria-labelledby=\\"__panel-title-6\\" role=\\"form\\">
     <div class=\\"fd-panel__header\\">
         <h4 class=\\"fd-panel__title\\" id=\\"__panel-title-6\\">Panel header</h4>
         <div class=\\"fd-toolbar fd-toolbar--clear fd-toolbar--transparent\\">
@@ -35395,18 +35395,119 @@ exports[`Check stories > Components/Panel > Story Fixed > Should match snapshot 
 `;
 
 exports[`Check stories > Components/Panel > Story FixedHeightContent > Should match snapshot 1`] = `
-"<div class=\\"fd-panel fd-panel--fixed\\" aria-labelledby=\\"__panel-title-10\\" role=\\"form\\">
+"<div class=\\"fd-panel\\" aria-labelledby=\\"__panel-title-fixed\\" role=\\"form\\">
     <div class=\\"fd-panel__header\\">
-        <h4 class=\\"fd-panel__title\\" id=\\"__panel-title-10\\">Panel header</h4>
-        <div class=\\"fd-toolbar fd-toolbar--clear fd-toolbar--transparent\\">
-            <span class=\\"fd-toolbar__spacer fd-toolbar__spacer--auto\\"> </span>
-            <div class=\\"fd-segmented-button\\" role=\\"group\\" aria-label=\\"Group label\\">
-              <button class=\\"fd-button fd-button--toggled\\" aria-pressed=\\"true\\">Left</button>
-              <button class=\\"fd-button\\" aria-pressed=\\"false\\">Middle</button>
-              <button class=\\"fd-button\\" aria-pressed=\\"false\\">Right</button>
-            </div>
+        <div class=\\"fd-panel__expand\\">
+            <button class=\\"fd-button fd-button--transparent fd-panel__button\\" aria-expanded=\\"true\\" onclick=\\"toggleExpandedButton(event)\\"
+                aria-haspopup=\\"true\\" aria-label=\\"expand/collapse panel\\" aria-controls=\\"__panel-fixed\\">
+                <i class=\\"sap-icon--slim-arrow-down\\"></i>
+            </button>
         </div>
+        <h4 class=\\"fd-panel__title\\" id=\\"__panel-title-fixed\\">Panel header expanded</h4>
     </div>
+    <div role=\\"region\\" aria-labelledby=\\"__panel-title-fixed\\" class=\\"fd-panel__content\\" aria-hidden=\\"false\\" id=\\"__panel-fixed\\" style=\\"height: 150px;\\">
+        <span>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ut laoreet lorem. Vestibulum ante ipsum primis in faucibus orci luctus
+            et ultrices posuere cubilia curae; Aenean sagittis aliquam justo et suscipit.
+            Nam molestie, magna at elementum pulvinar, nisi enim venenatis ante, id convallis mi neque nec risus. Cras blandit sagittis augue at facilisis.
+            Mauris egestas nunc nec diam mollis auctor. Vestibulum sed euismod elit, eget accumsan quam. Donec eleifend porttitor viverra.
+            Nunc porttitor dictum erat at molestie. Sed quis velit dolor. Vestibulum et turpis eget enim gravida gravida vitae at massa.
+            Suspendisse facilisis elit ut dolor posuere consectetur. Morbi ac nibh sit amet dolor lobortis tincidunt in ornare erat.
+            Vestibulum tristique euismod enim, ac volutpat odio cursus sit amet. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed temporibus dolorum cupiditate recusandae quaerat aperiam facilis provident nemo nostrum porro corporis nesciunt ducimus, ad molestias adipisci soluta iure quam repellat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi placeat temporibus, eveniet modi nobis inventore debitis explicabo consectetur, sunt fugit suscipit dolore ab et ullam natus, in molestiae deserunt. Aperiam. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum eveniet consequatur quis dolores, voluptatem et! Odit laboriosam, ducimus accusantium autem minus maxime excepturi, voluptatibus delectus sint animi soluta incidunt officia? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam blanditiis fuga aspernatur dolore numquam culpa quos perspiciatis nobis ipsum soluta nostrum, consequatur ab, asperiores minus eum labore inventore maxime tempore! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima, deserunt nisi veritatis omnis corrupti id esse minus. Repellat cum maxime, ipsam quia voluptate doloremque similique esse rerum animi provident quos? Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta nemo non perferendis odit necessitatibus eius dolorum nam dolor neque sed. Dolores obcaecati facilis voluptate temporibus eaque saepe reprehenderit, voluptatum repellendus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae temporibus repellendus nulla aliquam eos officiis molestias doloribus magnam, ullam sunt, explicabo similique delectus voluptatum laudantium doloremque at cum non esse! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius iusto odit saepe. Delectus optio reiciendis quia unde est excepturi blanditiis, nisi sed voluptatem obcaecati commodi illum dolorem architecto in officia! Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ut laoreet lorem. Vestibulum ante ipsum primis in faucibus orci luctus
+            et ultrices posuere cubilia curae; Aenean sagittis aliquam justo et suscipit.
+            Nam molestie, magna at elementum pulvinar, nisi enim venenatis ante, id convallis mi neque nec risus. Cras blandit sagittis augue at facilisis.
+            Mauris egestas nunc nec diam mollis auctor. Vestibulum sed euismod elit, eget accumsan quam. Donec eleifend porttitor viverra.
+            Nunc porttitor dictum erat at molestie. Sed quis velit dolor. Vestibulum et turpis eget enim gravida gravida vitae at massa.
+            Suspendisse facilisis elit ut dolor posuere consectetur. Morbi ac nibh sit amet dolor lobortis tincidunt in ornare erat.
+            Vestibulum tristique euismod enim, ac volutpat odio cursus sit amet. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed temporibus dolorum cupiditate recusandae quaerat aperiam facilis provident nemo nostrum porro corporis nesciunt ducimus, ad molestias adipisci soluta iure quam repellat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi placeat temporibus, eveniet modi nobis inventore debitis explicabo consectetur, sunt fugit suscipit dolore ab et ullam natus, in molestiae deserunt. Aperiam. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum eveniet consequatur quis dolores, voluptatem et! Odit laboriosam, ducimus accusantium autem minus maxime excepturi, voluptatibus delectus sint animi soluta incidunt officia? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam blanditiis fuga aspernatur dolore numquam culpa quos perspiciatis nobis ipsum soluta nostrum, consequatur ab, asperiores minus eum labore inventore maxime tempore! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima, deserunt nisi veritatis omnis corrupti id esse minus. Repellat cum maxime, ipsam quia voluptate doloremque similique esse rerum animi provident quos? Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta nemo non perferendis odit necessitatibus eius dolorum nam dolor neque sed. Dolores obcaecati facilis voluptate temporibus eaque saepe reprehenderit, voluptatum repellendus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae temporibus repellendus nulla aliquam eos officiis molestias doloribus magnam, ullam sunt, explicabo similique delectus voluptatum laudantium doloremque at cum non esse! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius iusto odit saepe. Delectus optio reiciendis quia unde est excepturi blanditiis, nisi sed voluptatem obcaecati commodi illum dolorem architecto in officia!
+        </span>
+    </div>
+</div>
+"
+`;
+
+exports[`Check stories > Components/Panel > Story StickyHeader > Should match snapshot 1`] = `
+"<div style=\\"height: 200px; position: relative; overflow: scroll;\\">
+    <div class=\\"fd-panel fd-panel--sticky\\" aria-labelledby=\\"__panel-title-sticky\\" role=\\"form\\">
+        <div class=\\"fd-panel__header\\">
+            <div class=\\"fd-panel__expand\\">
+                <button class=\\"fd-button fd-button--transparent fd-panel__button\\" aria-expanded=\\"true\\" onclick=\\"toggleExpandedButton(event)\\"
+                    aria-haspopup=\\"true\\" aria-label=\\"expand/collapse panel\\" aria-controls=\\"__panel-sticky\\">
+                    <i class=\\"sap-icon--slim-arrow-down\\"></i>
+                </button>
+            </div>
+            <h4 class=\\"fd-panel__title\\" id=\\"__panel-title-sticky\\">Panel sticky header</h4>
+        </div>
+        <div role=\\"region\\" aria-labelledby=\\"__panel-title-sticky\\" class=\\"fd-panel__content\\" aria-hidden=\\"false\\" id=\\"__panel-sticky\\">
+            <span>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ut laoreet lorem. Vestibulum ante ipsum primis in faucibus orci luctus
+                et ultrices posuere cubilia curae; Aenean sagittis aliquam justo et suscipit.
+                Nam molestie, magna at elementum pulvinar, nisi enim venenatis ante, id convallis mi neque nec risus. Cras blandit sagittis augue at facilisis.
+                Mauris egestas nunc nec diam mollis auctor. Vestibulum sed euismod elit, eget accumsan quam. Donec eleifend porttitor viverra.
+                
+                Nunc porttitor dictum erat at molestie. Sed quis velit dolor. Vestibulum et turpis eget enim gravida gravida vitae at massa. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ut laoreet lorem. Vestibulum ante ipsum primis in faucibus orci luctus
+                et ultrices posuere cubilia curae; Aenean sagittis aliquam justo et suscipit.
+                Nam molestie, magna at elementum pulvinar, nisi enim venenatis ante, id convallis mi neque nec risus. Cras blandit sagittis augue at facilisis.
+                Mauris egestas nunc nec diam mollis auctor. Vestibulum sed euismod elit, eget accumsan quam. Donec eleifend porttitor viverra.
+                
+                Nunc porttitor dictum erat at molestie. Sed quis velit dolor. Vestibulum et turpis eget enim gravida gravida vitae at massa. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ut laoreet lorem. Vestibulum ante ipsum primis in faucibus orci luctus
+                et ultrices posuere cubilia curae; Aenean sagittis aliquam justo et suscipit.
+                Nam molestie, magna at elementum pulvinar, nisi enim venenatis ante, id convallis mi neque nec risus. Cras blandit sagittis augue at facilisis.
+                Mauris egestas nunc nec diam mollis auctor. Vestibulum sed euismod elit, eget accumsan quam. Donec eleifend porttitor viverra.
+                
+                Nunc porttitor dictum erat at molestie. Sed quis velit dolor. Vestibulum et turpis eget enim gravida gravida vitae at massa. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ut laoreet lorem. Vestibulum ante ipsum primis in faucibus orci luctus
+                et ultrices posuere cubilia curae; Aenean sagittis aliquam justo et suscipit.
+                Nam molestie, magna at elementum pulvinar, nisi enim venenatis ante, id convallis mi neque nec risus. Cras blandit sagittis augue at facilisis.
+                Mauris egestas nunc nec diam mollis auctor. Vestibulum sed euismod elit, eget accumsan quam. Donec eleifend porttitor viverra.
+               
+                Nunc porttitor dictum erat at molestie. Sed quis velit dolor. Vestibulum et turpis eget enim gravida gravida vitae at massa. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ut laoreet lorem. Vestibulum ante ipsum primis in faucibus orci luctus
+                et ultrices posuere cubilia curae; Aenean sagittis aliquam justo et suscipit.
+                Nam molestie, magna at elementum pulvinar, nisi enim venenatis ante, id convallis mi neque nec risus. Cras blandit sagittis augue at facilisis.
+                Mauris egestas nunc nec diam mollis auctor. Vestibulum sed euismod elit, eget accumsan quam. Donec eleifend porttitor viverra.
+                
+                Nunc porttitor dictum erat at molestie. Sed quis velit dolor. Vestibulum et turpis eget enim gravida gravida vitae at massa. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ut laoreet lorem. Vestibulum ante ipsum primis in faucibus orci luctus
+                et ultrices posuere cubilia curae; Aenean sagittis aliquam justo et suscipit.
+                Nam molestie, magna at elementum pulvinar, nisi enim venenatis ante, id convallis mi neque nec risus. Cras blandit sagittis augue at facilisis.
+                Mauris egestas nunc nec diam mollis auctor. Vestibulum sed euismod elit, eget accumsan quam. Donec eleifend porttitor viverra.
+               
+                Nunc porttitor dictum erat at molestie. Sed quis velit dolor. Vestibulum et turpis eget enim gravida gravida vitae at massa. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ut laoreet lorem. Vestibulum ante ipsum primis in faucibus orci luctus
+                et ultrices posuere cubilia curae; Aenean sagittis aliquam justo et suscipit.
+                Nam molestie, magna at elementum pulvinar, nisi enim venenatis ante, id convallis mi neque nec risus. Cras blandit sagittis augue at facilisis.
+                Mauris egestas nunc nec diam mollis auctor. Vestibulum sed euismod elit, eget accumsan quam. Donec eleifend porttitor viverra.
+                Nunc porttitor dictum erat at molestie. Sed quis velit dolor. Vestibulum et turpis eget enim gravida gravida vitae at massa.
+                
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ut laoreet lorem. Vestibulum ante ipsum primis in faucibus orci luctus
+                et ultrices posuere cubilia curae; Aenean sagittis aliquam justo et suscipit.
+                Nam molestie, magna at elementum pulvinar, nisi enim venenatis ante, id convallis mi neque nec risus. Cras blandit sagittis augue at facilisis.
+                Mauris egestas nunc nec diam mollis auctor. Vestibulum sed euismod elit, eget accumsan quam. Donec eleifend porttitor viverra.
+                Nunc porttitor dictum erat at molestie. Sed quis velit dolor. Vestibulum et turpis eget enim gravida gravida vitae at massa.
+                
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ut laoreet lorem. Vestibulum ante ipsum primis in faucibus orci luctus
+                et ultrices posuere cubilia curae; Aenean sagittis aliquam justo et suscipit.
+                Nam molestie, magna at elementum pulvinar, nisi enim venenatis ante, id convallis mi neque nec risus. Cras blandit sagittis augue at facilisis.
+                Mauris egestas nunc nec diam mollis auctor. Vestibulum sed euismod elit, eget accumsan quam. Donec eleifend porttitor viverra.
+                Nunc porttitor dictum erat at molestie. Sed quis velit dolor. Vestibulum et turpis eget enim gravida gravida vitae at massa.
+
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ut laoreet lorem. Vestibulum ante ipsum primis in faucibus orci luctus
+                et ultrices posuere cubilia curae; Aenean sagittis aliquam justo et suscipit.
+                Nam molestie, magna at elementum pulvinar, nisi enim venenatis ante, id convallis mi neque nec risus. Cras blandit sagittis augue at facilisis.
+                Mauris egestas nunc nec diam mollis auctor. Vestibulum sed euismod elit, eget accumsan quam. Donec eleifend porttitor viverra.
+                Nunc porttitor dictum erat at molestie. Sed quis velit dolor. Vestibulum et turpis eget enim gravida gravida vitae at massa.
+                
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ut laoreet lorem. Vestibulum ante ipsum primis in faucibus orci luctus
+                et ultrices posuere cubilia curae; Aenean sagittis aliquam justo et suscipit.
+                Nam molestie, magna at elementum pulvinar, nisi enim venenatis ante, id convallis mi neque nec risus. Cras blandit sagittis augue at facilisis.
+                Mauris egestas nunc nec diam mollis auctor. Vestibulum sed euismod elit, eget accumsan quam. Donec eleifend porttitor viverra.
+                Nunc porttitor dictum erat at molestie. Sed quis velit dolor. Vestibulum et turpis eget enim gravida gravida vitae at massa.
+
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ut laoreet lorem. Vestibulum ante ipsum primis in faucibus orci luctus
+                et ultrices posuere cubilia curae; Aenean sagittis aliquam justo et suscipit.
+                Nam molestie, magna at elementum pulvinar, nisi enim venenatis ante, id convallis mi neque nec risus. Cras blandit sagittis augue at facilisis.
+                Mauris egestas nunc nec diam mollis auctor. Vestibulum sed euismod elit, eget accumsan quam. Donec eleifend porttitor viverra.
+                Nunc porttitor dictum erat at molestie. Sed quis velit dolor. Vestibulum et turpis eget enim gravida gravida vitae at massa.
+            </span>
+        </div>
+    </div>    
 </div>
 "
 `;
@@ -35437,7 +35538,7 @@ exports[`Check stories > Components/Panel > Story Transparent > Should match sna
 
 <br><br>
 
-<div class=\\"fd-panel fd-panel--fixed fd-panel--transparent\\" aria-labelledby=\\"__panel-title-5\\" role=\\"form\\">
+<div class=\\"fd-panel fd-panel--transparent\\" aria-labelledby=\\"__panel-title-5\\" role=\\"form\\">
     <div class=\\"fd-panel__header\\">
         <h4 class=\\"fd-panel__title\\" id=\\"__panel-title-5\\">Panel header</h4>
         <div class=\\"fd-toolbar fd-toolbar--clear fd-toolbar--transparent\\">
