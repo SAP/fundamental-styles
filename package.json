@@ -105,7 +105,7 @@
     "fs-extra": "11.2.0",
     "git-semver-tags": "4.1.1",
     "glob": "8.0.3",
-    "husky": "7.0.4",
+    "husky": "9.1.7",
     "jsonc-eslint-parser": "2.1.0",
     "lerna": "8.1.9",
     "lint-staged": "12.4.2",
