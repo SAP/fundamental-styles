@@ -138,7 +138,7 @@
     "through2": "4.0.2",
     "tocbot": "4.12.3",
     "ts-node": "10.9.2",
-    "tslib": "2.3.0",
+    "tslib": "2.8.1",
     "typescript": "5.5.4",
     "vite": "4.5.5",
     "vite-tsconfig-paths": "4.2.0",
