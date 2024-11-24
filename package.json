@@ -52,7 +52,7 @@
     "@commitlint/config-conventional": "18.6.0",
     "@jsdevtools/npm-publish": "3.0.1",
     "@nx/devkit": "20.0.6",
-    "@nx/eslint": "20.0.6",
+    "@nx/eslint": "20.1.3",
     "@nx/eslint-plugin": "20.0.6",
     "@nx/js": "20.0.6",
     "@nx/plugin": "20.0.6",
