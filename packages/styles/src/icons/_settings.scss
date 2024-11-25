@@ -700,14 +700,27 @@ $fd-icons: (
 );
 
 $fd-icon-control-enumerations: (
-  "default": ("color": var(--sapContent_IconColor), "background-color": transparent),
-  "contrast": ("color": var(--sapContent_ContrastIconColor), "background-color": var(--sapContent_IconColor)),
-  "non-interactive": ("color": var(--sapContent_NonInteractiveIconColor), "background-color": var(--sapContent_NonInteractiveIconColor)),
-  "tile": ("color": var(--sapTile_IconColor), "background-color": var(--sapTile_IconColor)),
-  "marker": ("color": var(--sapContent_MarkerIconColor), "background-color": var(--sapContent_MarkerIconColor)),
-  "critical": ("color": var(--sapCriticalElementColor), "background-color": var(--sapCriticalElementColor)),
-  "negative": ("color": var(--sapNegativeElementColor), "background-color": var(--sapNegativeElementColor)),
-  "neutral": ("color": var(--sapNeutralElementColor), "background-color": var(--sapNeutralElementColor)),
-  "positive": ("color": var(--sapPositiveElementColor), "background-color": var(--sapPositiveElementColor)),
-  "information": ("color": var(--sapInformativeElementColor), "background-color": var(--sapInformativeElementColor))
+  "default": ("color": var(--sapContent_IconColor)),
+  "contrast": ("color": var(--sapContent_ContrastIconColor)),
+  "non-interactive": ("color": var(--sapContent_NonInteractiveIconColor)),
+  "tile": ("color": var(--sapTile_IconColor)),
+  "marker": ("color": var(--sapContent_MarkerIconColor)),
+  "critical": ("color": var(--sapCriticalElementColor)),
+  "negative": ("color": var(--sapNegativeElementColor)),
+  "neutral": ("color": var(--sapNeutralElementColor)),
+  "positive": ("color": var(--sapPositiveElementColor)),
+  "information": ("color": var(--sapInformativeElementColor))
+);
+
+$fd-icon-control-enumerations-background: (
+  "default": ("color": var(--sapGroup_ContentBackground), "background-color": var(--sapContent_IconColor)),
+  "contrast": ("color": var(--sapContent_IconColor), "background-color": var(--sapGroup_ContentBackground)),
+  "non-interactive": ("color": var(--sapGroup_ContentBackground), "background-color": var(--sapContent_NonInteractiveIconColor)),
+  "tile": ("color": var(--sapGroup_ContentBackground), "background-color": var(--sapTile_IconColor)),
+  "marker": ("color": var(--sapGroup_ContentBackground), "background-color": var(--sapContent_MarkerIconColor)),
+  "critical": ("color": var(--sapGroup_ContentBackground), "background-color": var(--sapCriticalElementColor)),
+  "negative": ("color": var(--sapGroup_ContentBackground), "background-color": var(--sapNegativeElementColor)),
+  "neutral": ("color": var(--sapGroup_ContentBackground), "background-color": var(--sapNeutralElementColor)),
+  "positive": ("color": var(--sapGroup_ContentBackground), "background-color": var(--sapPositiveElementColor)),
+  "information": ("color": var(--sapGroup_ContentBackground), "background-color": var(--sapInformativeElementColor))
 );
