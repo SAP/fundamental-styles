@@ -6,10 +6,9 @@
 $block: #{$fd-namespace}-panel;
 
 .#{$block} {
+  --fdPanel_Header_Width: 100%;
   --fdPanel_Header_Height: 2.75rem;
-
-  $fd-panel-header-right-padding: 0.5rem;
-  $fd-panel-header-fixed-left-padding: 1rem;
+  --fdPanel_Flex_Direction: column;
 
   &,
   &__content,
@@ -19,39 +18,57 @@ $block: #{$fd-namespace}-panel;
     @include fd-reset();
   }
 
-  border-radius: var(--fdPanel_Border_Radius);
-  overflow: hidden;
+  @include fd-flex(var(--fdPanel_Flex_Direction));
 
   &:not(:last-child) {
     margin-block-end: var(--fdPanel_Margin_Bottom);
   }
 
   &__header {
+    @include fd-flex-vertical-center();
+
     overflow: hidden;
+    border-bottom: var(--sapGroup_TitleBorderWidth) solid var(--fdPanel_Header_Border_Color, var(--sapGroup_TitleBorderColor));
+    width: var(--fdPanel_Header_Width);
+    min-width: var(--fdPanel_Header_Width);
     height: var(--fdPanel_Header_Height);
     min-height: var(--fdPanel_Header_Height);
-    padding-inline-end: $fd-panel-header-right-padding;
+    top: var(--fdPanel_Header_Position_Top, unset);
     background-color: var(--sapGroup_TitleBackground);
-    border-bottom: solid 0.0625rem var(--sapGroup_TitleBorderColor);
+    position: var(--fdPanel_Header_Position, relative);
+    padding-inline: var(--fdPanel_Header_Padding_Inline_Start, 0) var(--fdPanel_Header_Padding_Inline_End, 0.5rem);
+    border-radius: var(--fdPanel_Header_Border_Top_Left_Radius, var(--fdPanel_Border_Radius)) var(--fdPanel_Header_Border_Top_Right_Radius, var(--fdPanel_Border_Radius)) var(--fdPanel_Header_Border_Bottom_Right_Radius, 0) var(--fdPanel_Header_Border_Bottom_Left_Radius, 0);
 
-    @include fd-flex-vertical-center();
+    &:has(.#{$block}__button[aria-expanded="false"]) {
+      --fdPanel_Header_Border_Bottom_Left_Radius: var(--fdPanel_Border_Radius);
+      --fdPanel_Header_Border_Bottom_Right_Radius: var(--fdPanel_Border_Radius);
+    }
+    
+    &:has(.#{$fd-namespace}-toolbar) {
+      --fdPanel_Header_Padding_Inline_End: 0;
+    }
+
+    &:not(:has(.#{$block}__button)) {
+      --fdPanel_Header_Padding_Inline_Start: 1rem;
+    }
   }
 
   &__title {
-    @include fd-typography(var(--sapFontHeader4Size));
+    @include fd-typography(var(--sapGroup_Title_FontSize));
 
-    font-size: var(--fdPanel_Title_Font_Size);
     flex: 1;
+    font-size: var(--fdPanel_Title_Font_Size);
   }
 
   &__content {
     @include fd-scrollbar(var(--fdScrollbar_Border_Radius));
 
-    padding-block: 0.625rem;
-    padding-inline: 1rem;
     overflow: auto;
-    border-bottom: solid 0.0625rem var(--fdPanel_Content_Border_Bottom_Color);
+    padding-inline: 1rem;
+    padding-block: 0.625rem;
     background: var(--fdPanel_Content_Background_Color);
+    border-bottom: solid 0.0625rem var(--fdPanel_Content_Border_Bottom_Color);
+    border-radius: var(--fdPanel_Content_Border_Top_Left_Radius, 0) var(--fdPanel_Content_Border_Top_Right_Radius, 0) var(--fdPanel_Content_Border_Bottom_Right_Radius, var(--fdPanel_Border_Radius)) var(--fdPanel_Content_Border_Bottom_Left_Radius, var(--fdPanel_Border_Radius));
 
     &[aria-hidden="true"] {
       display: none;
@@ -59,11 +76,11 @@ $block: #{$fd-namespace}-panel;
   }
 
   &__expand {
+    @include fd-flex-center();
+
     width: 2.75rem;
     height: var(--fdPanel_Header_Height);
     min-height: var(--fdPanel_Header_Height);
-
-    @include fd-flex-center();
   }
 
   &__button {
@@ -77,21 +94,20 @@ $block: #{$fd-namespace}-panel;
   }
 
   &--fixed {
-    .#{$block}__header {
-      padding-inline-start: $fd-panel-header-fixed-left-padding;
-    }
+    --fdPanel_Header_Padding_Inline_Start: 1rem;
+  }
+
+  &--sticky {
+    --fdPanel_Header_Position: sticky;
+    --fdPanel_Header_Position_Top: 0;
   }
 
   &--borderless {
-    .#{$block}__header {
-      border-bottom: none;
-    }
+    --fdPanel_Header_Border_Color: transparent;
   }
 
   &--transparent {
-    .#{$block}__content {
-      background: transparent;
-    }
+    --fdPanel_Content_Background_Color: transparent;
   }
 
   @include fd-compact-or-condensed() {
