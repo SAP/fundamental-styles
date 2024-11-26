@@ -5,7 +5,7 @@ inputs:
   node-version:
     description: Node.js version
     required: false
-    default: 20.x
+    default: 22.x
 
 runs:
   using: composite
@@ -14,9 +14,6 @@ runs:
       uses: actions/setup-node@v4.1.0
       with:
         node-version: ${{ inputs.node-version }}
-
-    - name: Checkout repository
-      uses: actions/checkout@v4
 
     - name: Install Corepack
       run: |
