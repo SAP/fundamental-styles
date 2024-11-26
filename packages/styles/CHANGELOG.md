@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.39.0-rc.27](https://github.com/SAP/fundamental-styles/compare/v0.39.0-rc.26...v0.39.0-rc.27) (2024-11-26)
+
+### Bug Fixes
+
+-   **styles:** icon updates [ci visual] ([#5801](https://github.com/SAP/fundamental-styles/issues/5801)) ([f7ee45a](https://github.com/SAP/fundamental-styles/commit/f7ee45a3f4ae1c3607d551506cbef15cb5d97496))
+
 # [0.39.0-rc.26](https://github.com/SAP/fundamental-styles/compare/v0.39.0-rc.25...v0.39.0-rc.26) (2024-11-25)
 
 ### Bug Fixes
