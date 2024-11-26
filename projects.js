@@ -42,6 +42,10 @@ const stylesThemes = {
             title: 'Horizon High Contrast White'
         },
         {
+            value: 'sap_horizon_set',
+            title: 'Horizon Set'
+        },
+        {
             value: 'sap_fiori_3',
             title: 'Quartz Light'
         },
@@ -60,6 +64,10 @@ const stylesThemes = {
         {
             value: 'sap_fiori_3_hcb',
             title: 'Quartz High Contrast Black'
+        },
+        {
+            value: 'sap_fiori_3_set',
+            title: 'Quartz Set'
         },
         {
             value: 'sap_belize',

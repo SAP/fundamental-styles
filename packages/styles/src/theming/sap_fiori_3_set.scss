@@ -1,0 +1,17 @@
+@use "sass:map";
+
+@container style(--sapSapThemeId: sap_fiori_3) {
+  @import './sap_fiori_3';
+}
+
+@container style(--sapSapThemeId: sap_fiori_3_dark) {
+  @import './sap_fiori_3_dark';
+}
+
+@container style(--sapSapThemeId: sap_fiori_3_hcb) {
+  @import './sap_fiori_3_hcb';
+}
+
+@container style(--sapSapThemeId: sap_fiori_3_hcw) {
+  @import './sap_fiori_3_hcw';
+}
