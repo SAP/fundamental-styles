@@ -1,0 +1,19 @@
+@use "sass:map";
+
+@import '@sap-theming/theming-base-content/content/Base/baseLib/sap_fiori_3_set/css_variables.css';
+
+@container style(--sapSapThemeId: sap_fiori_3) {
+    @import '../src/theming/sap_fiori_3';
+}
+
+@container style(--sapSapThemeId: sap_fiori_3_dark) {
+    @import '../src/theming/sap_fiori_3_dark';
+}
+
+@container style(--sapSapThemeId: sap_fiori_3_hcb) {
+    @import '../src/theming/sap_fiori_3_hcb';
+}
+
+@container style(--sapSapThemeId: sap_fiori_3_hcw) {
+    @import '../src/theming/sap_fiori_3_hcw';
+}

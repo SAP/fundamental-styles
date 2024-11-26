@@ -1,0 +1,19 @@
+@use "sass:map";
+
+@import '@sap-theming/theming-base-content/content/Base/baseLib/sap_horizon_set/css_variables.css';
+
+@container style(--sapSapThemeId: sap_horizon) {
+    @import '../src/theming/sap_horizon';
+}
+
+@container style(--sapSapThemeId: sap_horizon_dark) {
+    @import '../src/theming/sap_horizon_dark';
+}
+
+@container style(--sapSapThemeId: sap_horizon_hcb) {
+    @import '../src/theming/sap_horizon_hcb';
+}
+
+@container style(--sapSapThemeId: sap_horizon_hcw) {
+    @import '../src/theming/sap_horizon_hcw';
+}
