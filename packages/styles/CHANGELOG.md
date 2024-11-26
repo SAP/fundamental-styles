@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.39.0-rc.30](https://github.com/SAP/fundamental-styles/compare/v0.39.0-rc.29...v0.39.0-rc.30) (2024-11-26)
+
+### Features
+
+-   **styles:** add separator styles and a11y updates for Breadcrumb [ci visual] ([#5804](https://github.com/SAP/fundamental-styles/issues/5804)) ([429320e](https://github.com/SAP/fundamental-styles/commit/429320e413af156d3222018ba423020e33a4a263))
+
 # [0.39.0-rc.29](https://github.com/SAP/fundamental-styles/compare/v0.39.0-rc.28...v0.39.0-rc.29) (2024-11-26)
 
 ### Features
