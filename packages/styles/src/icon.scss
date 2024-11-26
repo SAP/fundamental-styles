@@ -10,6 +10,7 @@ $blockTNT: sap-icon-TNT;
   @include fd-reset();
   @include fd-icon-base();
   @include fd-icon-control-enumeration($block);
+  @include fd-icon-control-enumeration-background($block);
 
   line-height: 1;
   font-size: var(--fdIcon_Font_Size, 1rem);
@@ -18,7 +19,14 @@ $blockTNT: sap-icon-TNT;
   color: var(--fdIcon_Color, inherit);
   background-color: var(--fdIcon_Background_Color, transparent);
 
-  @include fd-fiori-focus(0);
+  &[tabindex="0"] {
+    cursor: pointer;
+
+    @include fd-focus() {
+      border-radius: 0.25rem;
+      outline: var(--sapContent_FocusWidth) var(--sapContent_FocusStyle) var(--sapContent_FocusColor);
+    }
+  }
 }
 
 [class*='#{$blockBusiness}'] {

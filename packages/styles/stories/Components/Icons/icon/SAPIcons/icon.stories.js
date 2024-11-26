@@ -1,4 +1,5 @@
 import colorsExampleHtml from "./colors.example.html?raw";
+import backgroundsExampleHtml from "./backgrounds.example.html?raw";
 import sizesExampleHtml from "./sizes.example.html?raw";
 import '../../../../../src/button.scss';
 import '../../../../../src/button-split.scss';
@@ -35,22 +36,45 @@ Sizes.parameters = {
 export const Colors = () => colorsExampleHtml;
 Colors.parameters = {
   docs: {
-    storyDescription: `
-  There are different semantic statuses that can be applied to the icon by adding a modifier class.
- 
-  | **Status**      | **Modifier class**               |
-  | --------------: | :------------------------------- |
-  | Default         | \`sap-icon--color-default\`        |
-  | Contrast        | \`sap-icon--color-contrast\`       |
-  | Non-interactive | \`sap-icon--color-non-interactive\`|
-  | Tile            | \`sap-icon--color-tile\`           |
-  | Marker          | \`sap-icon--color-marker\`         |
-  | Critical        | \`sap-icon--color-critical\`       |
-  | Negative        | \`sap-icon--color-negative\`       |
-  | Neutral         | \`sap-icon--color-neutral\`        |
-  | Positive        | \`sap-icon--color-positive\`       |`
+    description: {
+      story: `There are different semantic statuses that can be applied to the icon by adding a modifier class.<br><br>
+
+| **Status**      | **Modifier class**               |
+| --------------: | :------------------------------- |
+| Default         | \`sap-icon--color-default\`        |
+| Contrast        | \`sap-icon--color-contrast\`       |
+| Non-interactive | \`sap-icon--color-non-interactive\`|
+| Tile            | \`sap-icon--color-tile\`           |
+| Marker          | \`sap-icon--color-marker\`         |
+| Critical        | \`sap-icon--color-critical\`       |
+| Negative        | \`sap-icon--color-negative\`       |
+| Neutral         | \`sap-icon--color-neutral\`        |
+| Positive        | \`sap-icon--color-positive\`       |`
+    }
   }
 };
+
+export const Backgrounds = () => backgroundsExampleHtml;
+Backgrounds.parameters = {
+  docs: {
+    description: {
+      story: `There are different semantic statuses that can be applied to the icon background by adding a modifier class.<br><br>
+
+| **Status**      | **Modifier class**               |
+| --------------: | :------------------------------- |
+| Default         | \`sap-icon--background-default\`        |
+| Contrast        | \`sap-icon--background-contrast\`       |
+| Non-interactive | \`sap-icon--background-non-interactive\`|
+| Tile            | \`sap-icon--background-tile\`           |
+| Marker          | \`sap-icon--background-marker\`         |
+| Critical        | \`sap-icon--background-critical\`       |
+| Negative        | \`sap-icon--background-negative\`       |
+| Neutral         | \`sap-icon--background-neutral\`        |
+| Positive        | \`sap-icon--background-positive\`       |`
+    }
+  }
+};
+
 export const AvailableIcons = () => {
   const div = document.createElement('div');
   div.className = 'fddocs-container';

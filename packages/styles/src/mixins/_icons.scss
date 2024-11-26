@@ -113,3 +113,14 @@
     }
   }
 }
+
+@mixin fd-icon-control-enumeration-background($block, $position: 'before') {
+  @each $enumeration-name, $enumeration-value in $fd-icon-control-enumerations-background {
+    &.#{$block} {
+      &--background-#{$enumeration-name} {
+        --fdIcon_Color: #{map.get($enumeration-value, "color")};
+        --fdIcon_Background_Color: #{map.get($enumeration-value, "background-color")};
+      }
+    }
+  }
+}
