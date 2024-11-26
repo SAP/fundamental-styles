@@ -15,21 +15,32 @@ runs:
       with:
         node-version: ${{ inputs.node-version }}
 
+    - name: Checkout repository
+      uses: actions/checkout@v4
+
     - name: Install Corepack
-      shell: bash
-      run: npm install -g corepack
-
-    - name: Enable Corepack for Yarn 4.5.1
-      shell: bash
       run: |
-        corepack enable yarn && yarn
-
-    - name: Install Yarn 4.5.1 (if not available)
+          echo "Installing Corepack..."
+          npm install -g corepack || { echo 'Corepack installation failed'; exit 1; }
+          echo "Corepack installed successfully."
+          corepack --version
       shell: bash
+
+    - name: Enable Corepack
       run: |
-        if ! yarn --version | grep -q "4.5.1"; then
-          npm install -g yarn@4.5.1
-        fi
+          echo "Enabling Corepack..."
+          corepack enable || { echo 'Corepack enable failed'; exit 1; }
+          echo "Corepack enabled successfully."
+          corepack --version
+      shell: bash
+
+    - name: Activate Yarn 4.5.1 and Show Version
+      run: |
+          echo "Preparing and Activating Yarn 4.5.1..."
+          corepack prepare yarn@4.5.1 --activate || { echo 'Yarn activation failed'; exit 1; }
+          echo "Yarn activated successfully."
+          yarn --version
+      shell: bash
 
     - name: Get yarn cache directory path
       id: yarn-cache-dir-path
@@ -53,11 +64,16 @@ runs:
         restore-keys: |
           ${{ runner.os }}-${{ inputs.node-version }}-node-modules-
 
-    - shell: bash
+    - name: Capture environment details before installation
       run: |
-        echo "Show environment Node.js, yarn ..."
-        node -v
-        yarn -v
+          echo "Environment Details:"
+          node --version
+          npm --version
+          corepack --version
+          yarn --version
+          echo "Directory Details (sanitized):"
+          ls -la
+      shell: bash
 
     - name: Install dependencies
       if: inputs.frozen-lockfile != 'true' || steps.node_modules.outputs.cache-hit != 'true'
