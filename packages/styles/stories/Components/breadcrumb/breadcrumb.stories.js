@@ -1,5 +1,8 @@
 import overflowExampleHtml from "./overflow.example.html?raw";
 import standardExampleHtml from "./standard.example.html?raw";
+import stylesExampleHtml from "./styles.example.html?raw";
+import currentItemExampleHtml from "./current-item.example.html?raw";
+
 import '../../../src/popover.scss';
 import '../../../src/list.scss';
 import '../../../src/breadcrumb.scss';
@@ -37,6 +40,31 @@ Standard.parameters = {
   docs: {
     description: {
       story: 'The standard breadcrumb component displays several pages in text format separated by dividers, indicating a navigation path. Each page can be specifically selected to navigate to its corresponding page. It can be displayed by using the `fd-breadcrumb` class.'
+    }
+  }
+};
+export const Styles = () => stylesExampleHtml;
+Styles.parameters = {
+  docs: {
+    description: {
+      story: `Separator between the links can be configured with modifier classes added to the main \`fd-breadcrumb\` class. For example: \`fd-breadcrumb--backslash\` or \`fd-breadcrumb--double-greater-than\`.
+
+| **Separator style**      | **Modifier class**                 |
+| :------------------ | :-------------------------------------- |
+| Slash               | default (no modiier class)              |
+| Backslash           | \`fd-breadcrumb--backslash\`            |
+| Double slash        | \`fd-breadcrumb--double-slash\`         |
+| Double backslash	  | \`fd-breadcrumb--double-backslash\`     |
+| Greater than        | \`fd-breadcrumb--greater-than\`         |
+| Double greater than	| \`fd-breadcrumb--double-greater-than\`  |`
+    }
+  }
+};
+export const CurrentItem = () => currentItemExampleHtml;
+CurrentItem.parameters = {
+  docs: {
+    description: {
+      story: 'The Breadcrumbs component offers two visual styles for the last item: as a "current page" (non-interactive and without a separator) or as a regular link with a following separator.'
     }
   }
 };

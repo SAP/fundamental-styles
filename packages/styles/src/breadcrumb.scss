@@ -9,9 +9,12 @@ $block: #{$fd-namespace}-breadcrumb;
   // BLOCK BASE *******************************************
   @include fd-reset();
 
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
+  @include fd-flex-vertical-center() {
+    flex-wrap: wrap;
+  }
+
+  --fdLink_Line_Height: 1.5rem;
+
   list-style: none;
 
   // ELEMENTS *******************************************
@@ -21,13 +24,13 @@ $block: #{$fd-namespace}-breadcrumb;
     color: var(--sapContent_LabelColor);
 
     &::after {
-      content: "/";
       margin-inline: 0.25rem;
       color: var(--sapContent_LabelColor);
+      content: var(--fdBreadcrumb_Separator, "/");
     }
 
-    &:last-child::after {
-      content: none;
+    &:last-child:not(:has(a)) {
+      --fdBreadcrumb_Separator: none;
     }
 
     .#{$block}__popover-body {
@@ -35,5 +38,25 @@ $block: #{$fd-namespace}-breadcrumb;
       border-top-left-radius: 0.125rem;
       border-top-right-radius: 0.125rem;
     }
+  }
+
+  &--backslash {
+    --fdBreadcrumb_Separator: "\\";
+  }
+
+  &--double-slash {
+    --fdBreadcrumb_Separator: "//";
+  }
+
+  &--double-backslash {
+    --fdBreadcrumb_Separator: "\\\\";
+  }
+
+  &--greater-than {
+    --fdBreadcrumb_Separator: ">";
+  }
+
+  &--double-greater-than {
+    --fdBreadcrumb_Separator: ">>";
   }
 }
