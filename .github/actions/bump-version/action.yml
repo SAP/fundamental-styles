@@ -17,5 +17,5 @@ outputs:
     description: Is prerelease version
 
 runs:
-  using: node22
+  using: node20
   main: ./index.js
