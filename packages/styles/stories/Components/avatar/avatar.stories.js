@@ -10,8 +10,12 @@ import backgroundImageExampleHtml from "./background-image.example.html?raw";
 import circleExampleHtml from "./circle.example.html?raw";
 import initialsExampleHtml from "./initials.example.html?raw";
 import iconExampleHtml from "./icon.example.html?raw";
+import interactiveExampleHtml from "./interactive.example.html?raw";
+import indicationColorsBadgeExampleHtml from "./indication-colors-badge.example.html?raw";
+
 import '../../../src/avatar.scss';
 import '../../../src/icon.scss';
+
 export default {
   title: 'Components/Avatar',
   parameters: {
@@ -113,6 +117,7 @@ Transparent.parameters = {
     }
   }
 };
+
 export const PlaceholderBackground = () => placeholderBackgroundExampleHtml;
 PlaceholderBackground.parameters = {
   docs: {
@@ -121,6 +126,7 @@ PlaceholderBackground.parameters = {
     }
   }
 };
+
 export const TileIconBackground = () => tileIconBackgroundExampleHtml;
 TileIconBackground.parameters = {
   docs: {
@@ -129,6 +135,7 @@ TileIconBackground.parameters = {
     }
   }
 };
+
 export const AccentColors = () => accentColorsExampleHtml;
 AccentColors.storyName = 'Color variations';
 AccentColors.parameters = {
@@ -138,6 +145,7 @@ AccentColors.parameters = {
     }
   }
 };
+
 export const AccentColorsShellHeaderContext = () => accentColorsShellHeaderContextExampleHtml;
 AccentColorsShellHeaderContext.storyName = 'Color variations in Shell header context';
 AccentColorsShellHeaderContext.parameters = {
@@ -147,6 +155,7 @@ AccentColorsShellHeaderContext.parameters = {
     }
   }
 };
+
 export const ZoomIcon = () => zoomIconExampleHtml;
 ZoomIcon.parameters = {
   docs: {
@@ -156,6 +165,7 @@ ZoomIcon.parameters = {
     }
   }
 };
+
 export const ValueStates = () => valueStatesExampleHtml;
 ValueStates.parameters = {
   docs: {
@@ -164,6 +174,16 @@ ValueStates.parameters = {
     }
   }
 };
+
+export const BadgeIndicationColors = () => indicationColorsBadgeExampleHtml;
+BadgeIndicationColors.parameters = {
+  docs: {
+    description: {
+      story: `The avatar's badge color is extended with the first set of  indication color palette. Use modifier classes \`fd-avatar__zoom-icon--indication-*\` to apply the desired color. Valid values are from 1 to 10.`
+    }
+  }
+};
+
 export const Borders = () => bordersExampleHtml;
 Borders.parameters = {
   docs: {
@@ -172,259 +192,8 @@ Borders.parameters = {
     }
   }
 };
-export const Interactive = () => `${localStyles}
-<h3>Regular State</h3>
-<span class="fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--accent-color-1" tabindex="0" role="button" aria-label="Avatar">
-    <i class="fd-avatar__icon sap-icon--person-placeholder" role="presentation" aria-hidden="true" aria-label="Image placeholder"></i>
-</span>
-<span class="fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--accent-color-2" tabindex="0" role="button" aria-label="Avatar">
-    <i class="fd-avatar__icon sap-icon--person-placeholder" role="presentation" aria-hidden="true" aria-label="Image placeholder"></i>
-</span>
-<span class="fd-avatar fd-avatar--m fd-avatar--circle fd-avatar--accent-color-3" tabindex="0" role="button" aria-label="Avatar">
-    <i class="fd-avatar__icon sap-icon--person-placeholder" role="presentation" aria-hidden="true" aria-label="Image placeholder"></i>
-</span>
-<span class="fd-avatar fd-avatar--l fd-avatar--circle fd-avatar--accent-color-4" tabindex="0" role="button" aria-label="Avatar">
-    <i class="fd-avatar__icon sap-icon--person-placeholder" role="presentation" aria-hidden="true" aria-label="Image placeholder"></i>
-</span>
-<span class="fd-avatar fd-avatar--xl fd-avatar--circle fd-avatar--accent-color-5" tabindex="0" role="button" aria-label="Avatar">
-    <i class="fd-avatar__icon sap-icon--person-placeholder" role="presentation" aria-hidden="true" aria-label="Image placeholder"></i>
-</span>
-<span class="fd-avatar fd-avatar--accent-color-6 fd-avatar--xs" tabindex="0" role="button" aria-label="Wendy Wallace">WW
-</span>
-<span class="fd-avatar fd-avatar--accent-color-7 fd-avatar--s" tabindex="0" role="button" aria-label="Wendy Wallace">WW
-</span>
-<span class="fd-avatar fd-avatar--accent-color-8 fd-avatar--m" tabindex="0" role="button" aria-label="Wendy Wallace">WW
-</span>
-<span class="fd-avatar fd-avatar--accent-color-9 fd-avatar--l" tabindex="0" role="button" aria-label="Wendy Wallace">WW
-</span>
-<span class="fd-avatar fd-avatar--accent-color-10 fd-avatar--xl" tabindex="0" role="button" aria-label="Wendy Wallace">WW
-</span>
-<span class="fd-avatar fd-avatar--xl fd-avatar--circle fd-avatar--placeholder" tabindex="0" role="button" aria-label="Avatar">
-    <i class="fd-avatar__icon sap-icon--person-placeholder" role="presentation" aria-hidden="true" aria-label="Image placeholder"></i>
-</span>
-<span class="fd-avatar fd-avatar--xl fd-avatar--circle fd-avatar--tile" tabindex="0" role="button" aria-label="Avatar">
-    <i class="fd-avatar__icon sap-icon--person-placeholder" role="presentation" aria-hidden="true" aria-label="Image placeholder"></i>
-</span>
-<span class="fd-avatar fd-avatar--xl fd-avatar--circle fd-avatar--thumbnail" tabindex="0" role="button" style="background-image: url('/assets/images/portraits/L_80x80_M1.png')" role="img" aria-label="John Doe"></span>
-<span class="fd-avatar fd-avatar--xl fd-avatar--circle fd-avatar--transparent" tabindex="0" role="button" aria-label="Wendy Wallace">WW</span>
-<span class="fd-avatar fd-avatar--xl fd-avatar--transparent fd-avatar--border" tabindex="0" role="button" aria-label="Avatar">
-    <i class="fd-avatar__icon sap-icon--person-placeholder" role="presentation" aria-hidden="true" aria-label="Image placeholder"></i>
-</span>
-<span class="fd-avatar fd-avatar--xl fd-avatar--circle fd-avatar--transparent fd-avatar--border" tabindex="0" role="button" aria-label="Wendy Wallace">WW
-</span>
 
-<br><br>
-<h3>Hover State</h3>
-
-<span class="fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--accent-color-1 is-hover" tabindex="0" role="button" aria-label="Avatar">
-    <i class="fd-avatar__icon sap-icon--person-placeholder" role="presentation" aria-hidden="true" aria-label="Image placeholder"></i>
-</span>
-<span class="fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--accent-color-2 is-hover" tabindex="0" role="button" aria-label="Avatar">
-    <i class="fd-avatar__icon sap-icon--person-placeholder" role="presentation" aria-hidden="true" aria-label="Image placeholder"></i>
-</span>
-<span class="fd-avatar fd-avatar--m fd-avatar--circle fd-avatar--accent-color-3 is-hover" tabindex="0" role="button" aria-label="Avatar">
-    <i class="fd-avatar__icon sap-icon--person-placeholder" role="presentation" aria-hidden="true" aria-label="Image placeholder"></i>
-</span>
-<span class="fd-avatar fd-avatar--l fd-avatar--circle fd-avatar--accent-color-4 is-hover" tabindex="0" role="button" aria-label="Avatar">
-    <i class="fd-avatar__icon sap-icon--person-placeholder" role="presentation" aria-hidden="true" aria-label="Image placeholder"></i>
-</span>
-<span class="fd-avatar fd-avatar--xl fd-avatar--circle fd-avatar--accent-color-5 is-hover" tabindex="0" role="button" aria-label="Avatar">
-    <i class="fd-avatar__icon sap-icon--person-placeholder" role="presentation" aria-hidden="true" aria-label="Image placeholder"></i>
-</span>
-<span class="fd-avatar fd-avatar--accent-color-6 fd-avatar--xs is-hover" tabindex="0" role="button" aria-label="Wendy Wallace">WW
-</span>
-<span class="fd-avatar fd-avatar--accent-color-7 fd-avatar--s is-hover" tabindex="0" role="button" aria-label="Wendy Wallace">WW
-</span>
-<span class="fd-avatar fd-avatar--accent-color-8 fd-avatar--m is-hover" tabindex="0" role="button" aria-label="Wendy Wallace">WW
-</span>
-<span class="fd-avatar fd-avatar--accent-color-9 fd-avatar--l is-hover" tabindex="0" role="button" aria-label="Wendy Wallace">WW
-</span>
-<span class="fd-avatar fd-avatar--accent-color-10 fd-avatar--xl is-hover" tabindex="0" role="button" aria-label="Wendy Wallace">WW
-</span>
-<span class="fd-avatar fd-avatar--xl fd-avatar--circle fd-avatar--placeholder is-hover" tabindex="0" role="button" aria-label="Avatar">
-    <i class="fd-avatar__icon sap-icon--person-placeholder" role="presentation" aria-hidden="true" aria-label="Image placeholder"></i>
-</span>
-<span class="fd-avatar fd-avatar--xl fd-avatar--circle fd-avatar--tile is-hover" tabindex="0" role="button" aria-label="Avatar">
-    <i class="fd-avatar__icon sap-icon--person-placeholder" role="presentation" aria-hidden="true" aria-label="Image placeholder"></i>
-</span>
-<span class="fd-avatar fd-avatar--xl fd-avatar--circle fd-avatar--thumbnail is-hover" tabindex="0" role="button" style="background-image: url('/assets/images/portraits/L_80x80_M1.png')" role="img" aria-label="John Doe"></span>
-<span class="fd-avatar fd-avatar--xl fd-avatar--circle fd-avatar--transparent is-hover" tabindex="0" role="button" aria-label="Wendy Wallace">WW</span>
-<span class="fd-avatar fd-avatar--xl fd-avatar--transparent fd-avatar--border is-hover" tabindex="0" role="button" aria-label="Avatar">
-    <i class="fd-avatar__icon sap-icon--person-placeholder" role="presentation" aria-hidden="true" aria-label="Image placeholder"></i>
-</span>
-<span class="fd-avatar fd-avatar--xl fd-avatar--circle fd-avatar--transparent fd-avatar--border is-hover" tabindex="0" role="button" aria-label="Wendy Wallace">WW
-</span>
-
-
-<br><br>
-<h3>Active/Toggled State</h3>
-
-<span class="fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--accent-color-1 is-active" tabindex="0" role="button" aria-label="Avatar">
-    <i class="fd-avatar__icon sap-icon--person-placeholder" role="presentation" aria-hidden="true" aria-label="Image placeholder"></i>
-</span>
-<span class="fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--accent-color-2 is-active" tabindex="0" role="button" aria-label="Avatar">
-    <i class="fd-avatar__icon sap-icon--person-placeholder" role="presentation" aria-hidden="true" aria-label="Image placeholder"></i>
-</span>
-<span class="fd-avatar fd-avatar--m fd-avatar--circle fd-avatar--accent-color-3 is-active" tabindex="0" role="button" aria-label="Avatar">
-    <i class="fd-avatar__icon sap-icon--person-placeholder" role="presentation" aria-hidden="true" aria-label="Image placeholder"></i>
-</span>
-<span class="fd-avatar fd-avatar--l fd-avatar--circle fd-avatar--accent-color-4 is-active" tabindex="0" role="button" aria-label="Avatar">
-    <i class="fd-avatar__icon sap-icon--person-placeholder" role="presentation" aria-hidden="true" aria-label="Image placeholder"></i>
-</span>
-<span class="fd-avatar fd-avatar--xl fd-avatar--circle fd-avatar--accent-color-5 is-active" tabindex="0" role="button" aria-label="Avatar">
-    <i class="fd-avatar__icon sap-icon--person-placeholder" role="presentation" aria-hidden="true" aria-label="Image placeholder"></i>
-</span>
-<span class="fd-avatar fd-avatar--accent-color-6 fd-avatar--xs is-active" tabindex="0" role="button" aria-label="Wendy Wallace">WW
-</span>
-<span class="fd-avatar fd-avatar--accent-color-7 fd-avatar--s is-active" tabindex="0" role="button" aria-label="Wendy Wallace">WW
-</span>
-<span class="fd-avatar fd-avatar--accent-color-8 fd-avatar--m is-active" tabindex="0" role="button" aria-label="Wendy Wallace">WW
-</span>
-<span class="fd-avatar fd-avatar--accent-color-9 fd-avatar--l is-active" tabindex="0" role="button" aria-label="Wendy Wallace">WW
-</span>
-<span class="fd-avatar fd-avatar--accent-color-10 fd-avatar--xl is-active" tabindex="0" role="button" aria-label="Wendy Wallace">WW
-</span>
-<span class="fd-avatar fd-avatar--xl fd-avatar--circle fd-avatar--placeholder is-active" tabindex="0" role="button" aria-label="Avatar">
-    <i class="fd-avatar__icon sap-icon--person-placeholder" role="presentation" aria-hidden="true" aria-label="Image placeholder"></i>
-</span>
-<span class="fd-avatar fd-avatar--xl fd-avatar--circle fd-avatar--tile is-active" tabindex="0" role="button" aria-label="Avatar">
-    <i class="fd-avatar__icon sap-icon--person-placeholder" role="presentation" aria-hidden="true" aria-label="Image placeholder"></i>
-</span>
-<span class="fd-avatar fd-avatar--xl fd-avatar--circle fd-avatar--thumbnail is-active" tabindex="0" role="button" style="background-image: url('/assets/images/portraits/L_80x80_M1.png')" role="img" aria-label="John Doe"></span>
-<span class="fd-avatar fd-avatar--xl fd-avatar--circle fd-avatar--transparent is-active" tabindex="0" role="button" aria-label="Wendy Wallace">WW</span>
-<span class="fd-avatar fd-avatar--xl fd-avatar--transparent fd-avatar--border is-active" tabindex="0" role="button" aria-label="Avatar">
-    <i class="fd-avatar__icon sap-icon--person-placeholder" role="presentation" aria-hidden="true" aria-label="Image placeholder"></i>
-</span>
-<span class="fd-avatar fd-avatar--xl fd-avatar--circle fd-avatar--transparent fd-avatar--border is-active" tabindex="0" role="button" aria-label="Wendy Wallace">WW
-</span>
-
-<br><br>
-<h3>Toggled Hover State</h3>
-
-<span class="fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--accent-color-1 is-toggled is-hover" tabindex="0" role="button" aria-label="Avatar">
-    <i class="fd-avatar__icon sap-icon--person-placeholder" role="presentation" aria-hidden="true" aria-label="Image placeholder"></i>
-</span>
-<span class="fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--accent-color-2 is-toggled is-hover" tabindex="0" role="button" aria-label="Avatar">
-    <i class="fd-avatar__icon sap-icon--person-placeholder" role="presentation" aria-hidden="true" aria-label="Image placeholder"></i>
-</span>
-<span class="fd-avatar fd-avatar--m fd-avatar--circle fd-avatar--accent-color-3 is-toggled is-hover" tabindex="0" role="button" aria-label="Avatar">
-    <i class="fd-avatar__icon sap-icon--person-placeholder" role="presentation" aria-hidden="true" aria-label="Image placeholder"></i>
-</span>
-<span class="fd-avatar fd-avatar--l fd-avatar--circle fd-avatar--accent-color-4 is-toggled is-hover" tabindex="0" role="button" aria-label="Avatar">
-    <i class="fd-avatar__icon sap-icon--person-placeholder" role="presentation" aria-hidden="true" aria-label="Image placeholder"></i>
-</span>
-<span class="fd-avatar fd-avatar--xl fd-avatar--circle fd-avatar--accent-color-5 is-toggled is-hover" tabindex="0" role="button" aria-label="Avatar">
-    <i class="fd-avatar__icon sap-icon--person-placeholder" role="presentation" aria-hidden="true" aria-label="Image placeholder"></i>
-</span>
-<span class="fd-avatar fd-avatar--accent-color-6 fd-avatar--xs is-toggled is-hover" tabindex="0" role="button" aria-label="Wendy Wallace">WW
-</span>
-<span class="fd-avatar fd-avatar--accent-color-7 fd-avatar--s is-toggled is-hover" tabindex="0" role="button" aria-label="Wendy Wallace">WW
-</span>
-<span class="fd-avatar fd-avatar--accent-color-8 fd-avatar--m is-toggled is-hover" tabindex="0" role="button" aria-label="Wendy Wallace">WW
-</span>
-<span class="fd-avatar fd-avatar--accent-color-9 fd-avatar--l is-toggled is-hover" tabindex="0" role="button" aria-label="Wendy Wallace">WW
-</span>
-<span class="fd-avatar fd-avatar--accent-color-10 fd-avatar--xl is-toggled is-hover" tabindex="0" role="button" aria-label="Wendy Wallace">WW
-</span>
-<span class="fd-avatar fd-avatar--xl fd-avatar--circle fd-avatar--placeholder is-toggled is-hover" tabindex="0" role="button" aria-label="Avatar">
-    <i class="fd-avatar__icon sap-icon--person-placeholder" role="presentation" aria-hidden="true" aria-label="Image placeholder"></i>
-</span>
-<span class="fd-avatar fd-avatar--xl fd-avatar--circle fd-avatar--tile is-toggled is-hover" tabindex="0" role="button" aria-label="Avatar">
-    <i class="fd-avatar__icon sap-icon--person-placeholder" role="presentation" aria-hidden="true" aria-label="Image placeholder"></i>
-</span>
-<span class="fd-avatar fd-avatar--xl fd-avatar--circle fd-avatar--thumbnail is-toggled is-hover" tabindex="0" role="button" style="background-image: url('/assets/images/portraits/L_80x80_M1.png')" role="img" aria-label="John Doe"></span>
-<span class="fd-avatar fd-avatar--xl fd-avatar--circle fd-avatar--transparent is-toggled is-hover"  tabindex="0" role="button"aria-label="Wendy Wallace">WW</span>
-<span class="fd-avatar fd-avatar--xl fd-avatar--transparent fd-avatar--border is-toggled is-hover"  tabindex="0" role="button"aria-label="Avatar">
-    <i class="fd-avatar__icon sap-icon--person-placeholder" role="presentation" aria-hidden="true" aria-label="Image placeholder"></i>
-</span>
-<span class="fd-avatar fd-avatar--xl fd-avatar--circle fd-avatar--transparent fd-avatar--border is-toggled is-hover" tabindex="0" role="button" aria-label="Wendy Wallace">WW
-</span>
-
-<br><br>
-<h3>Disabled State</h3>
-
-<span class="fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--accent-color-1 is-disabled" role="button" aria-label="Avatar">
-    <i class="fd-avatar__icon sap-icon--person-placeholder" role="presentation" aria-hidden="true" aria-label="Image placeholder"></i>
-</span>
-<span class="fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--accent-color-2 is-disabled" role="button" aria-label="Avatar">
-    <i class="fd-avatar__icon sap-icon--person-placeholder" role="presentation" aria-hidden="true" aria-label="Image placeholder"></i>
-</span>
-<span class="fd-avatar fd-avatar--m fd-avatar--circle fd-avatar--accent-color-3 is-disabled" role="button" aria-label="Avatar">
-    <i class="fd-avatar__icon sap-icon--person-placeholder" role="presentation" aria-hidden="true" aria-label="Image placeholder"></i>
-</span>
-<span class="fd-avatar fd-avatar--l fd-avatar--circle fd-avatar--accent-color-4 is-disabled" role="button" aria-label="Avatar">
-    <i class="fd-avatar__icon sap-icon--person-placeholder" role="presentation" aria-hidden="true" aria-label="Image placeholder"></i>
-</span>
-<span class="fd-avatar fd-avatar--xl fd-avatar--circle fd-avatar--accent-color-5 is-disabled" role="button" aria-label="Avatar">
-    <i class="fd-avatar__icon sap-icon--person-placeholder" role="presentation" aria-hidden="true" aria-label="Image placeholder"></i>
-</span>
-<span class="fd-avatar fd-avatar--accent-color-6 fd-avatar--xs is-disabled" role="button" aria-label="Wendy Wallace">WW
-</span>
-<span class="fd-avatar fd-avatar--accent-color-7 fd-avatar--s is-disabled" role="button" aria-label="Wendy Wallace">WW
-</span>
-<span class="fd-avatar fd-avatar--accent-color-8 fd-avatar--m is-disabled" role="button" aria-label="Wendy Wallace">WW
-</span>
-<span class="fd-avatar fd-avatar--accent-color-9 fd-avatar--l is-disabled" role="button" aria-label="Wendy Wallace">WW
-</span>
-<span class="fd-avatar fd-avatar--accent-color-10 fd-avatar--xl is-disabled" role="button" aria-label="Wendy Wallace">WW
-</span>
-<span class="fd-avatar fd-avatar--xl fd-avatar--circle fd-avatar--placeholder is-disabled" role="button" aria-label="Avatar">
-    <i class="fd-avatar__icon sap-icon--person-placeholder" role="presentation" aria-hidden="true" aria-label="Image placeholder"></i>
-</span>
-<span class="fd-avatar fd-avatar--xl fd-avatar--circle fd-avatar--tile is-disabled" role="button" aria-label="Avatar">
-    <i class="fd-avatar__icon sap-icon--person-placeholder" role="presentation" aria-hidden="true" aria-label="Image placeholder"></i>
-</span>
-<span class="fd-avatar fd-avatar--xl fd-avatar--circle fd-avatar--thumbnail is-disabled" role="button" style="background-image: url('/assets/images/portraits/L_80x80_M1.png')" role="img" aria-label="John Doe"></span>
-<span class="fd-avatar fd-avatar--xl fd-avatar--circle fd-avatar--transparent is-disabled" role="button" aria-label="Wendy Wallace">WW</span>
-<span class="fd-avatar fd-avatar--xl fd-avatar--transparent fd-avatar--border is-disabled"  role="button" aria-label="Avatar">
-    <i class="fd-avatar__icon sap-icon--person-placeholder" role="presentation" aria-hidden="true" aria-label="Image placeholder"></i>
-</span>
-<span class="fd-avatar fd-avatar--xl fd-avatar--circle fd-avatar--transparent fd-avatar--border is-disabled" role="button" aria-label="Wendy Wallace">WW
-</span>
-
-
-<br><br>
-<h3>Focus State</h3>
-
-<span class="fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--accent-color-1 is-focus" tabindex="0" role="button" aria-label="Avatar">
-    <i class="fd-avatar__icon sap-icon--person-placeholder" role="presentation" aria-hidden="true" aria-label="Image placeholder"></i>
-</span>
-<span class="fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--accent-color-2 is-focus" tabindex="0" role="button" aria-label="Avatar">
-    <i class="fd-avatar__icon sap-icon--person-placeholder" role="presentation" aria-hidden="true" aria-label="Image placeholder"></i>
-</span>
-<span class="fd-avatar fd-avatar--m fd-avatar--circle fd-avatar--accent-color-3 is-focus" tabindex="0" role="button" aria-label="Avatar">
-    <i class="fd-avatar__icon sap-icon--person-placeholder" role="presentation" aria-hidden="true" aria-label="Image placeholder"></i>
-</span>
-<span class="fd-avatar fd-avatar--l fd-avatar--circle fd-avatar--accent-color-4 is-focus" tabindex="0" role="button" aria-label="Avatar">
-    <i class="fd-avatar__icon sap-icon--person-placeholder" role="presentation" aria-hidden="true" aria-label="Image placeholder"></i>
-</span>
-<span class="fd-avatar fd-avatar--xl fd-avatar--circle fd-avatar--accent-color-5 is-focus" tabindex="0" role="button" aria-label="Avatar">
-    <i class="fd-avatar__icon sap-icon--person-placeholder" role="presentation" aria-hidden="true" aria-label="Image placeholder"></i>
-</span>
-<span class="fd-avatar fd-avatar--accent-color-6 fd-avatar--xs is-focus" tabindex="0" role="button" aria-label="Wendy Wallace">WW
-</span>
-<span class="fd-avatar fd-avatar--accent-color-7 fd-avatar--s is-focus" tabindex="0" role="button" aria-label="Wendy Wallace">WW
-</span>
-<span class="fd-avatar fd-avatar--accent-color-8 fd-avatar--m is-focus" tabindex="0" role="button" aria-label="Wendy Wallace">WW
-</span>
-<span class="fd-avatar fd-avatar--accent-color-9 fd-avatar--l is-focus" tabindex="0" role="button" aria-label="Wendy Wallace">WW
-</span>
-<span class="fd-avatar fd-avatar--accent-color-10 fd-avatar--xl is-focus" tabindex="0" role="button" aria-label="Wendy Wallace">WW
-</span>
-<span class="fd-avatar fd-avatar--xl fd-avatar--circle fd-avatar--placeholder is-focus" tabindex="0" role="button" aria-label="Avatar">
-    <i class="fd-avatar__icon sap-icon--person-placeholder" role="presentation" aria-hidden="true" aria-label="Image placeholder"></i>
-</span>
-<span class="fd-avatar fd-avatar--xl fd-avatar--circle fd-avatar--tile is-focus" tabindex="0" role="button" aria-label="Avatar">
-    <i class="fd-avatar__icon sap-icon--person-placeholder" role="presentation" aria-hidden="true" aria-label="Image placeholder"></i>
-</span>
-<span class="fd-avatar fd-avatar--xl fd-avatar--circle fd-avatar--thumbnail is-focus" tabindex="0" role="button" style="background-image: url('/assets/images/portraits/L_80x80_M1.png')" role="img" aria-label="John Doe"></span>
-<span class="fd-avatar fd-avatar--xl fd-avatar--circle fd-avatar--transparent is-focus" tabindex="0" role="button" aria-label="Wendy Wallace">WW</span>
-<span class="fd-avatar fd-avatar--xl fd-avatar--transparent fd-avatar--border is-focus" tabindex="0" role="button" aria-label="Avatar">
-    <i class="fd-avatar__icon sap-icon--person-placeholder" role="presentation" aria-hidden="true" aria-label="Image placeholder"></i>
-</span>
-<span class="fd-avatar fd-avatar--xl fd-avatar--circle fd-avatar--transparent fd-avatar--border is-focus" tabindex="0" role="button" aria-label="Wendy Wallace">WW
-</span>
-`;
+export const Interactive = () => interactiveExampleHtml;
 Interactive.parameters = {
   docs: {
     description: {

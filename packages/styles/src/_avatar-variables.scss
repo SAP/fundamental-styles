@@ -13,166 +13,166 @@ $fd-avatar-font-stretched-condensed: condensed;
 $fd-avatar-font-stretched-normal: normal;
 $fd-avatar-accent-colors: (
   "1": (
-    "background-color": var(--fdAvatar_Accent_Color_1),
-    "background-color-hover": var(--fdAvatar_Accent_Color_Hover_1),
-    "border-color-hover":var(--fdAvatar_Accent_Color_1_Border_Color_Hover),
-    "text-color": var(--fdAvatar_Accent_Color_1_Text),
-    "border": var(--fdAvatar_Accent_Color_1_Border),
-    "border-color": var(--sapAvatar_1_BorderColor)
+    "background-color": var(--sapAvatar_1_Background),
+    "border-color": var(--sapAvatar_1_BorderColor),
+    "text-color": var(--sapAvatar_1_TextColor),
+    "background-color-hover": var(--sapAvatar_1_Hover_Background),
+    "border-color-hover":var(--sapAvatar_Hover_BorderColor)
   ),
   "2": (
-    "background-color": var(--fdAvatar_Accent_Color_2),
-    "background-color-hover": var(--fdAvatar_Accent_Color_Hover_2),
-    "border-color-hover":var(--fdAvatar_Accent_Color_2_Border_Color_Hover),
-    "text-color": var(--fdAvatar_Accent_Color_2_Text),
-    "border": var(--fdAvatar_Accent_Color_2_Border),
-    "border-color": var(--sapAvatar_2_BorderColor)
+    "background-color": var(--sapAvatar_2_Background),
+    "border-color": var(--sapAvatar_2_BorderColor),
+    "text-color": var(--sapAvatar_2_TextColor),
+    "background-color-hover": var(--sapAvatar_2_Hover_Background),
+    "border-color-hover":var(--sapAvatar_Hover_BorderColor)
   ),
   "3": (
-    "background-color": var(--fdAvatar_Accent_Color_3),
-    "background-color-hover": var(--fdAvatar_Accent_Color_Hover_3),
-    "border-color-hover":var(--fdAvatar_Accent_Color_3_Border_Color_Hover),
-    "text-color": var(--fdAvatar_Accent_Color_3_Text),
-    "border": var(--fdAvatar_Accent_Color_3_Border),
-    "border-color": var(--sapAvatar_3_BorderColor)
+    "background-color": var(--sapAvatar_3_Background),
+    "border-color": var(--sapAvatar_3_BorderColor),
+    "text-color": var(--sapAvatar_3_TextColor),
+    "background-color-hover": var(--sapAvatar_3_Hover_Background),
+    "border-color-hover":var(--sapAvatar_Hover_BorderColor)
   ),
   "4": (
-    "background-color": var(--fdAvatar_Accent_Color_4),
-    "background-color-hover": var(--fdAvatar_Accent_Color_Hover_4),
-    "border-color-hover":var(--fdAvatar_Accent_Color_4_Border_Color_Hover),
-    "text-color": var(--fdAvatar_Accent_Color_4_Text),
-    "border": var(--fdAvatar_Accent_Color_4_Border),
-    "border-color": var(--sapAvatar_4_BorderColor)
+    "background-color": var(--sapAvatar_4_Background),
+    "border-color": var(--sapAvatar_4_BorderColor),
+    "text-color": var(--sapAvatar_4_TextColor),
+    "background-color-hover": var(--sapAvatar_4_Hover_Background),
+    "border-color-hover":var(--sapAvatar_Hover_BorderColor)
   ),
   "5": (
-    "background-color": var(--fdAvatar_Accent_Color_5),
-    "background-color-hover": var(--fdAvatar_Accent_Color_Hover_5),
-    "border-color-hover":var(--fdAvatar_Accent_Color_5_Border_Color_Hover),
-    "text-color": var(--fdAvatar_Accent_Color_5_Text),
-    "border": var(--fdAvatar_Accent_Color_5_Border),
-    "border-color": var(--sapAvatar_5_BorderColor)
+    "background-color": var(--sapAvatar_5_Background),
+    "border-color": var(--sapAvatar_5_BorderColor),
+    "text-color": var(--sapAvatar_5_TextColor),
+    "background-color-hover": var(--sapAvatar_5_Hover_Background),
+    "border-color-hover":var(--sapAvatar_Hover_BorderColor)
   ),
   "6": (
-    "background-color": var(--fdAvatar_Accent_Color_6),
-    "background-color-hover": var(--fdAvatar_Accent_Color_Hover_6),
-    "border-color-hover":var(--fdAvatar_Accent_Color_6_Border_Color_Hover),
-    "text-color": var(--fdAvatar_Accent_Color_6_Text),
-    "border": var(--fdAvatar_Accent_Color_6_Border),
-    "border-color": var(--sapAvatar_6_BorderColor)
+    "background-color": var(--sapAvatar_6_Background),
+    "border-color": var(--sapAvatar_6_BorderColor),
+    "text-color": var(--sapAvatar_6_TextColor),
+    "background-color-hover": var(--sapAvatar_6_Hover_Background),
+    "border-color-hover":var(--sapAvatar_Hover_BorderColor)
   ),
   "7": (
-    "background-color": var(--fdAvatar_Accent_Color_7),
-    "background-color-hover": var(--fdAvatar_Accent_Color_Hover_7),
-    "border-color-hover":var(--fdAvatar_Accent_Color_7_Border_Color_Hover),
-    "text-color": var(--fdAvatar_Accent_Color_7_Text),
-    "border": var(--fdAvatar_Accent_Color_7_Border),
-    "border-color": var(--sapAvatar_7_BorderColor)
+    "background-color": var(--sapAvatar_7_Background),
+    "border-color": var(--sapAvatar_7_BorderColor),
+    "text-color": var(--sapAvatar_7_TextColor),
+    "background-color-hover": var(--sapAvatar_7_Hover_Background),
+    "border-color-hover":var(--sapAvatar_Hover_BorderColor)
   ),
   "8": (
-    "background-color": var(--fdAvatar_Accent_Color_8),
-    "background-color-hover": var(--fdAvatar_Accent_Color_Hover_8),
-    "border-color-hover":var(--fdAvatar_Accent_Color_8_Border_Color_Hover),
-    "text-color": var(--fdAvatar_Accent_Color_8_Text),
-    "border": var(--fdAvatar_Accent_Color_8_Border),
-    "border-color": var(--sapAvatar_8_BorderColor)
+    "background-color": var(--sapAvatar_8_Background),
+    "border-color": var(--sapAvatar_8_BorderColor),
+    "text-color": var(--sapAvatar_8_TextColor),
+    "background-color-hover": var(--sapAvatar_8_Hover_Background),
+    "border-color-hover":var(--sapAvatar_Hover_BorderColor)
   ),
   "9": (
-    "background-color": var(--fdAvatar_Accent_Color_9),
-    "background-color-hover": var(--fdAvatar_Accent_Color_Hover_9),
-    "border-color-hover":var(--fdAvatar_Accent_Color_9_Border_Color_Hover),
-    "text-color": var(--fdAvatar_Accent_Color_9_Text),
-    "border": var(--fdAvatar_Accent_Color_9_Border),
-    "border-color": var(--sapAvatar_9_BorderColor)
+    "background-color": var(--sapAvatar_9_Background),
+    "border-color": var(--sapAvatar_9_BorderColor),
+    "text-color": var(--sapAvatar_9_TextColor),
+    "background-color-hover": var(--sapAvatar_9_Hover_Background),
+    "border-color-hover":var(--sapAvatar_Hover_BorderColor)
   ),
   "10": (
-    "background-color": var(--fdAvatar_Accent_Color_10),
-    "background-color-hover": var(--fdAvatar_Accent_Color_Hover_10),
-    "border-color-hover":var(--fdAvatar_Accent_Color_10_Border_Color_Hover),
-    "text-color": var(--fdAvatar_Accent_Color_10_Text),
-    "border": var(--fdAvatar_Accent_Color_10_Border),
-    "border-color": var(--sapAvatar_10_BorderColor)
+    "background-color": var(--sapAvatar_10_Background),
+    "border-color": var(--sapAvatar_10_BorderColor),
+    "text-color": var(--sapAvatar_10_TextColor),
+    "background-color-hover": var(--sapAvatar_10_Hover_Background),
+    "border-color-hover":var(--sapAvatar_Hover_BorderColor)
   )
 );
 $fd-avatar-indication-colors: (
   "1": (
-    "background-color": var(--fdAvatar_Indication_Color_1),
-    "background-color-hover": var(--fdAvatar_Indication_Color_Hover_1),
-    "border-color-hover":var(--fdAvatar_Indication_Color_1_Border_Color_Hover),
-    "text-color": var(--fdAvatar_Indication_Color_1_Text),
-    "border": var(--fdAvatar_Indication_Color_1_Border),
-    "border-color": var(--sapAvatar_1_BorderColor)
+    "background-color": var(--sapIndicationColor_1_Background),
+    "border": var(--sapIndicationColor_1_BorderColor),
+    "text-color": var(--sapIndicationColor_1_TextColor),
+    "background-color-hover": var(--sapIndicationColor_1_Hover_Background),
+    "background-color-active": var(--sapIndicationColor_1_Active_Background),
+    "border-color-active": var(--sapIndicationColor_1_Active_BorderColor),
+    "text-color-active": var(--sapIndicationColor_1_Active_TextColor)
   ),
   "2": (
-    "background-color": var(--fdAvatar_Indication_Color_2),
-    "background-color-hover": var(--fdAvatar_Indication_Color_Hover_2),
-    "border-color-hover":var(--fdAvatar_Indication_Color_2_Border_Color_Hover),
-    "text-color": var(--fdAvatar_Indication_Color_2_Text),
-    "border": var(--fdAvatar_Indication_Color_2_Border),
-    "border-color": var(--sapAvatar_2_BorderColor)
+    "background-color": var(--sapIndicationColor_2_Background),
+    "border": var(--sapIndicationColor_2_BorderColor),
+    "text-color": var(--sapIndicationColor_2_TextColor),
+    "background-color-hover": var(--sapIndicationColor_2_Hover_Background),
+    "background-color-active": var(--sapIndicationColor_2_Active_Background),
+    "border-color-active": var(--sapIndicationColor_2_Active_BorderColor),
+    "text-color-active": var(--sapIndicationColor_2_Active_TextColor)
   ),
   "3": (
-    "background-color": var(--fdAvatar_Indication_Color_3),
-    "background-color-hover": var(--fdAvatar_Indication_Color_Hover_3),
-    "border-color-hover":var(--fdAvatar_Indication_Color_3_Border_Color_Hover),
-    "text-color": var(--fdAvatar_Indication_Color_3_Text),
-    "border": var(--fdAvatar_Indication_Color_3_Border),
-    "border-color": var(--sapAvatar_3_BorderColor)
+    "background-color": var(--sapIndicationColor_3_Background),
+    "border": var(--sapIndicationColor_3_BorderColor),
+    "text-color": var(--sapIndicationColor_3_TextColor),
+    "background-color-hover": var(--sapIndicationColor_3_Hover_Background),
+    "background-color-active": var(--sapIndicationColor_3_Active_Background),
+    "border-color-active": var(--sapIndicationColor_3_Active_BorderColor),
+    "text-color-active": var(--sapIndicationColor_3_Active_TextColor)
   ),
   "4": (
-    "background-color": var(--fdAvatar_Indication_Color_4),
-    "background-color-hover": var(--fdAvatar_Indication_Color_Hover_4),
-    "border-color-hover":var(--fdAvatar_Indication_Color_4_Border_Color_Hover),
-    "text-color": var(--fdAvatar_Indication_Color_4_Text),
-    "border": var(--fdAvatar_Indication_Color_4_Border),
-    "border-color": var(--sapAvatar_4_BorderColor)
+    "background-color": var(--sapIndicationColor_4_Background),
+    "border": var(--sapIndicationColor_4_BorderColor),
+    "text-color": var(--sapIndicationColor_4_TextColor),
+    "background-color-hover": var(--sapIndicationColor_4_Hover_Background),
+    "background-color-active": var(--sapIndicationColor_4_Active_Background),
+    "border-color-active": var(--sapIndicationColor_4_Active_BorderColor),
+    "text-color-active": var(--sapIndicationColor_4_Active_TextColor)
   ),
   "5": (
-    "background-color": var(--fdAvatar_Indication_Color_5),
-    "background-color-hover": var(--fdAvatar_Indication_Color_Hover_5),
-    "border-color-hover":var(--fdAvatar_Indication_Color_5_Border_Color_Hover),
-    "text-color": var(--fdAvatar_Indication_Color_5_Text),
-    "border": var(--fdAvatar_Indication_Color_5_Border),
-    "border-color": var(--sapAvatar_5_BorderColor)
+    "background-color": var(--sapIndicationColor_5_Background),
+    "border": var(--sapIndicationColor_5_BorderColor),
+    "text-color": var(--sapIndicationColor_5_TextColor),
+    "background-color-hover": var(--sapIndicationColor_5_Hover_Background),
+    "background-color-active": var(--sapIndicationColor_5_Active_Background),
+    "border-color-active": var(--sapIndicationColor_5_Active_BorderColor),
+    "text-color-active": var(--sapIndicationColor_5_Active_TextColor)
   ),
   "6": (
-    "background-color": var(--fdAvatar_Indication_Color_6),
-    "background-color-hover": var(--fdAvatar_Indication_Color_Hover_6),
-    "border-color-hover":var(--fdAvatar_Indication_Color_6_Border_Color_Hover),
-    "text-color": var(--fdAvatar_Indication_Color_6_Text),
-    "border": var(--fdAvatar_Indication_Color_6_Border),
-    "border-color": var(--sapAvatar_6_BorderColor)
+    "background-color": var(--sapIndicationColor_6_Background),
+    "border": var(--sapIndicationColor_6_BorderColor),
+    "text-color": var(--sapIndicationColor_6_TextColor),
+    "background-color-hover": var(--sapIndicationColor_6_Hover_Background),
+    "background-color-active": var(--sapIndicationColor_6_Active_Background),
+    "border-color-active": var(--sapIndicationColor_6_Active_BorderColor),
+    "text-color-active": var(--sapIndicationColor_6_Active_TextColor)
   ),
   "7": (
-    "background-color": var(--fdAvatar_Indication_Color_7),
-    "background-color-hover": var(--fdAvatar_Indication_Color_Hover_7),
-    "border-color-hover":var(--fdAvatar_Indication_Color_7_Border_Color_Hover),
-    "text-color": var(--fdAvatar_Indication_Color_7_Text),
-    "border": var(--fdAvatar_Indication_Color_7_Border),
-    "border-color": var(--sapAvatar_7_BorderColor)
+    "background-color": var(--sapIndicationColor_7_Background),
+    "border": var(--sapIndicationColor_7_BorderColor),
+    "text-color": var(--sapIndicationColor_7_TextColor),
+    "background-color-hover": var(--sapIndicationColor_7_Hover_Background),
+    "background-color-active": var(--sapIndicationColor_7_Active_Background),
+    "border-color-active": var(--sapIndicationColor_7_Active_BorderColor),
+    "text-color-active": var(--sapIndicationColor_7_Active_TextColor)
   ),
   "8": (
-    "background-color": var(--fdAvatar_Indication_Color_8),
-    "background-color-hover": var(--fdAvatar_Indication_Color_Hover_8),
-    "border-color-hover":var(--fdAvatar_Indication_Color_8_Border_Color_Hover),
-    "text-color": var(--fdAvatar_Indication_Color_8_Text),
-    "border": var(--fdAvatar_Indication_Color_8_Border),
-    "border-color": var(--sapAvatar_8_BorderColor)
+    "background-color": var(--sapIndicationColor_8_Background),
+    "border": var(--sapIndicationColor_8_BorderColor),
+    "text-color": var(--sapIndicationColor_8_TextColor),
+    "background-color-hover": var(--sapIndicationColor_8_Hover_Background),
+    "background-color-active": var(--sapIndicationColor_8_Active_Background),
+    "border-color-active": var(--sapIndicationColor_8_Active_BorderColor),
+    "text-color-active": var(--sapIndicationColor_8_Active_TextColor)
   ),
   "9": (
-    "background-color": var(--fdAvatar_Indication_Color_9),
-    "background-color-hover": var(--fdAvatar_Indication_Color_Hover_9),
-    "border-color-hover":var(--fdAvatar_Indication_Color_9_Border_Color_Hover),
-    "text-color": var(--fdAvatar_Indication_Color_9_Text),
-    "border": var(--fdAvatar_Indication_Color_9_Border),
-    "border-color": var(--sapAvatar_9_BorderColor)
+    "background-color": var(--sapIndicationColor_9_Background),
+    "border": var(--sapIndicationColor_9_BorderColor),
+    "text-color": var(--sapIndicationColor_9_TextColor),
+    "background-color-hover": var(--sapIndicationColor_9_Hover_Background),
+    "background-color-active": var(--sapIndicationColor_9_Active_Background),
+    "border-color-active": var(--sapIndicationColor_9_Active_BorderColor),
+    "text-color-active": var(--sapIndicationColor_9_Active_TextColor)
   ),
   "10": (
-    "background-color": var(--fdAvatar_Indication_Color_10),
-    "background-color-hover": var(--fdAvatar_Indication_Color_Hover_10),
-    "border-color-hover":var(--fdAvatar_Indication_Color_10_Border_Color_Hover),
-    "text-color": var(--fdAvatar_Indication_Color_10_Text),
-    "border": var(--fdAvatar_Indication_Color_10_Border),
-    "border-color": var(--sapAvatar_10_BorderColor)
+    "background-color": var(--sapIndicationColor_10_Background),
+    "border": var(--sapIndicationColor_10_BorderColor),
+    "text-color": var(--sapIndicationColor_10_TextColor),
+    "background-color-hover": var(--sapIndicationColor_10_Hover_Background),
+    "background-color-active": var(--sapIndicationColor_10_Active_Background),
+    "border-color-active": var(--sapIndicationColor_10_Active_BorderColor),
+    "text-color-active": var(--sapIndicationColor_10_Active_TextColor)
   )
 );
 $fd-avatar-sizes: (
@@ -297,6 +297,59 @@ $fd-avatar-value-states: (
     "background": var(--sapInformationBackground),
     "borderColor": var(--sapInformationBorderColor),
     "color": var(--sapInformativeTextColor)
+  )
+);
+
+$fd-avatar-badge-indication-colors: (
+  "1": (
+    "background": var(--sapIndicationColor_1_Background),
+    "borderColor": var(--sapIndicationColor_1_BorderColor),
+    "color": var(--sapIndicationColor_1_TextColor),
+  ),
+  "2": (
+    "background": var(--sapIndicationColor_2_Background),
+    "borderColor": var(--sapIndicationColor_2_BorderColor),
+    "color": var(--sapIndicationColor_2_TextColor),
+  ),
+  "3": (
+    "background": var(--sapIndicationColor_3_Background),
+    "borderColor": var(--sapIndicationColor_3_BorderColor),
+    "color": var(--sapIndicationColor_3_TextColor),
+  ),
+  "4": (
+    "background": var(--sapIndicationColor_4_Background),
+    "borderColor": var(--sapIndicationColor_4_BorderColor),
+    "color": var(--sapIndicationColor_4_TextColor),
+  ),
+  "5": (
+    "background": var(--sapIndicationColor_5_Background),
+    "borderColor": var(--sapIndicationColor_5_BorderColor),
+    "color": var(--sapIndicationColor_5_TextColor),
+  ),
+  "6": (
+    "background": var(--sapIndicationColor_6_Background),
+    "borderColor": var(--sapIndicationColor_6_BorderColor),
+    "color": var(--sapIndicationColor_6_TextColor),
+  ),
+  "7": (
+    "background": var(--sapIndicationColor_7_Background),
+    "borderColor": var(--sapIndicationColor_7_BorderColor),
+    "color": var(--sapIndicationColor_7_TextColor),
+  ),
+  "8": (
+    "background": var(--sapIndicationColor_8_Background),
+    "borderColor": var(--sapIndicationColor_8_BorderColor),
+    "color": var(--sapIndicationColor_8_TextColor),
+  ),
+  "9": (
+    "background": var(--sapIndicationColor_9_Background),
+    "borderColor": var(--sapIndicationColor_9_BorderColor),
+    "color": var(--sapIndicationColor_9_TextColor),
+  ),
+  "10": (
+    "background": var(--sapIndicationColor_10_Background),
+    "borderColor": var(--sapIndicationColor_10_BorderColor),
+    "color": var(--sapIndicationColor_10_TextColor),
   )
 );
 
