@@ -12,11 +12,19 @@ $fd-button-badge-spacing: 0.25rem;
   --fdButton_Clickable_Height: 2.75rem;
   --fdButton_Padding_X: 0.625rem;
   --fdButton_Min_Width: 2.25rem;
+  --fdButton_Badge_Offset: -0.3125rem;
+  --fdButton_Badge_Margin: 0.25rem;
+  --fdButton_Badge_Margin_Inline_Start: 0;
+  --fdButton_Badge_Width: auto;
+  --fdButton_Badge_Height: 1rem;
+  --fdButton_Badge_Position: absolute;
+  --fdButton_Badge_Position_Attention: absolute;
+  --fdButton_Badge_Padding_Inline: 0.3125rem;
+  --fdButton_Badge_Size_Attention: 0.75rem;
 
   @include fd-reset();
   @include fd-button-reset();
   @include fd-inline-flex-center();
-  @include fd-set-paddings-x-equal(calc(var(--fdButton_Padding_X) - var(--sapButton_BorderWidth)));
 
   height: var(--fdButton_Height);
   max-height: var(--fdButton_Height);
@@ -26,6 +34,7 @@ $fd-button-badge-spacing: 0.25rem;
   text-shadow: var(--fdButton_Text_Shadow);
   border-style: solid;
   border-width: var(--sapButton_BorderWidth);
+  padding-inline: calc(var(--fdButton_Padding_X) - var(--sapButton_BorderWidth));
 
   /* Extended touchable area */
   &::before {
@@ -76,30 +85,43 @@ $fd-button-badge-spacing: 0.25rem;
   &__badge {
     @include fd-reset();
     @include fd-inline-flex-center();
-    @include fd-set-position-right(-$fd-button-badge-spacing);
+    @include fd-set-position-right(var(--fdButton_Badge_Offset));
 
     z-index: 1;
-    height: 1rem;
-    position: var(--fdButton_Badge_Position, absolute);
     padding-block: 0;
-    padding-inline: 0.3125rem;
     border-radius: 0.5rem;
-    top: -$fd-button-badge-spacing;
+    top: var(--fdButton_Badge_Offset);
     font-size: var(--sapFontSmallSize);
+    width: var(--fdButton_Badge_Width);
+    height: var(--fdButton_Badge_Height);
     color: var(--sapContent_BadgeTextColor);
-    border: 0.0625rem solid var(--fdButton_Badge_Border_Color);
+    position: var(--fdButton_Badge_Position);
     background-color: var(--sapContent_BadgeBackground);
+    padding-inline: var(--fdButton_Badge_Padding_Inline);
+    border: 0.0625rem solid var(--sapContent_BadgeBorderColor);
+    margin-inline-start: var(--fdButton_Badge_Margin_Inline_Start);
 
-    @include fd-set-margin-left(var(--fdButton_Badge_Margin_Left, 0));
+    &--attention {
+      --fdButton_Badge_Padding_Inline: 0;
+      --fdButton_Badge_Offset: -0.1875rem;
+      --fdButton_Badge_Width: var(--fdButton_Badge_Size_Attention);
+      --fdButton_Badge_Height: var(--fdButton_Badge_Size_Attention);
+      --fdButton_Badge_Position: var(--fdButton_Badge_Position_Attention);
+    }
   }
 
   @include fd-compact-or-condensed() {
+    &:not(.#{$block-button}--tool-header):has(.#{$block-button}__badge) {
+      padding-inline: calc(0.5rem - var(--sapButton_BorderWidth)) calc(0.25rem - var(--sapButton_BorderWidth));
+    }
+
     --fdButton_Height: var(--fdButton_Compact_Height);
     --fdButton_Clickable_Height: 2rem;
     --fdButton_Padding_X: 0.5rem;
     --fdButton_Min_Width: 2rem;
     --fdButton_Badge_Position: static;
-    --fdButton_Badge_Margin_Left: #{$fd-button-badge-spacing};
+    --fdButton_Badge_Margin_Inline_Start: 0.25rem;
+    --fdButton_Badge_Size_Attention: 0.625rem;
   }
 
   &--menu {
