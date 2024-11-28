@@ -56,7 +56,7 @@ $fd-button-badge-spacing: 0.25rem;
 
   &,
   &__text {
-    font-family: var(--fdButton_Font_Family);
+    font-family: var(--fdButton_Font_Family, var(--sapButton_FontFamily));
   }
 
   *:not(:first-child):not(.#{$block-button}__badge) {
