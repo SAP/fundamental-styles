@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.39.0-rc.31](https://github.com/SAP/fundamental-styles/compare/v0.39.0-rc.30...v0.39.0-rc.31) (2024-11-28)
+
+### Bug Fixes
+
+-   **styles:** add latest design updates for Avatar [ci visual] ([#5806](https://github.com/SAP/fundamental-styles/issues/5806)) ([8828b0b](https://github.com/SAP/fundamental-styles/commit/8828b0b052e868e6e6a7442693e681920f0e353a))
+
 # [0.39.0-rc.30](https://github.com/SAP/fundamental-styles/compare/v0.39.0-rc.29...v0.39.0-rc.30) (2024-11-26)
 
 ### Features
