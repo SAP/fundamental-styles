@@ -6,13 +6,12 @@
   --fdButton_Height: 2.25rem;
   --fdButton_Compact_Height: 1.625rem;
   --fdButton_Outline_Offset: var(--sapButton_BorderWidth);
-  --fdButton_Emphasized_Border_Width: var(--sapButton_Emphasized_BorderWidth);
 
   /** Badge */
   --fdButton_Menu_Transparent_Separator_Display: none;
 
   /** Menu */
-  --fdButton_Menu_Emphasized_Margin: calc(var(--fdButton_Emphasized_Border_Width) * -1);
+  --fdButton_Menu_Emphasized_Margin: calc(var(--sapButton_Emphasized_BorderWidth) * -1);
 
   /** Tool Header */
   --fdButton_ToolHeader_Border_Color_Normal: var(--sapButton_BorderColor);

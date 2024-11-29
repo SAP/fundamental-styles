@@ -10,7 +10,7 @@ export default {
     description: `The segmented button displays a group of options. Only one option can be active at a time, while the others remain or become inactive when the initial option is selected.
 This button type was previously known as "button group" and is comparable to a radio button group.
 It can be displayed by using the container with \`fd-segmented-button\` class with \`role="group"\` and the \`aria-label="Group label"\` attribute.
-Active button should have \`aria-pressed="true"\` and \`fd-button--toggled\` class and inactive buttons should have \`aria-pressed="false"\`.
+Active button should have \`aria-pressed="true"\` and \`fd-button--toggled\` class and inactive buttons should have \`aria-pressed="false"\` \n\n**New Feature:** Multiple items can be selected at a time.
     `,
     tags: ['f3', 'a11y', 'theme']
   }

@@ -5,13 +5,11 @@
 :root {
   --fdButton_Height: var(--sapElement_Height);
   --fdButton_Compact_Height: var(--sapElement_Compact_Height);
-  --fdButton_Emphasized_Border_Width: var(--sapButton_Emphasized_BorderWidth);
-  --fdButton_Font_Family: var(--sapButton_FontFamily);
 
   /** Menu */
   --fdButton_Menu_Separator_Display: none;
   --fdButton_Menu_Offset: calc(var(--sapButton_BorderWidth) * -1);
-  --fdButton_Menu_Emphasized_Margin: calc(var(--fdButton_Emphasized_Border_Width) * -1);
+  --fdButton_Menu_Emphasized_Margin: calc(var(--sapButton_Emphasized_BorderWidth) * -1);
   --fdButton_Menu_Transparent_Separator_Display: none;
   --fdButton_Menu_Transparent_Border_Color: var(--sapButton_BorderColor);
   --fdButton_Split_Border_Color: var(--fdButtonBorderColor);
@@ -33,7 +31,6 @@
   --fdButton_Border_Radius_Outline_Left_RTL:
     0 var(--sapButton_BorderCornerRadius) var(--sapButton_BorderCornerRadius)
     0;
-  --fdButton_Segmented_Middle_Border_Radius: 0 0 0 0;
   --fdButton_Border_Radius_Outline_Right: 0 var(--sapButton_BorderCornerRadius) var(--sapButton_BorderCornerRadius) 0;
   --fdButton_Border_Radius_Outline_Right_RTL:
     var(--sapButton_BorderCornerRadius) 0 0
