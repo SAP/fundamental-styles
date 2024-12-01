@@ -133,7 +133,7 @@
         "storybook": "^8.4.4",
         "stylelint": "16.8.2",
         "stylelint-config-standard": "36.0.1",
-        "stylelint-config-standard-scss": "^13.1.0",
+        "stylelint-config-standard-scss": "^14.0.0",
         "stylelint-scss": "6.1.0",
         "through2": "4.0.2",
         "tocbot": "4.12.3",
