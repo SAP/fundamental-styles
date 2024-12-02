@@ -35,14 +35,6 @@
       }
     }
 
-    &:last-child {
-      border-bottom-color: transparent;
-
-      @include fd-selected() {
-        border-bottom-color: var(--sapList_SelectionBorderColor);
-      }
-    }
-
     &--unread {
       .#{$block}__title {
         font-weight: bold;

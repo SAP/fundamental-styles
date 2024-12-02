@@ -59,10 +59,7 @@ $block: #{$fd-namespace}-object-list;
 
   &__header {
     @include fd-reset();
-
-    @include fd-flex() {
-      gap: 0.75rem;
-    }
+    @include fd-flex();
   }
 
   &__header-left {
@@ -76,8 +73,8 @@ $block: #{$fd-namespace}-object-list;
     @include fd-reset();
     @include fd-object-list-text-align(right);
 
-    width: 40%;
-    margin-inline-start: 0.25rem;
+    width: calc(40% - 1rem);
+    margin-inline-start: 1rem;
   }
 
   &__row {

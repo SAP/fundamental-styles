@@ -177,18 +177,6 @@ body.fd-overlay-active::before {
 
     .#{$menu} {
       width: 100%;
-
-      &__item:first-child, 
-      &__item:first-child 
-      &__link::after {
-        border-radius: 0;
-      }
-
-      &__item:last-child, 
-      &__item:last-child 
-      &__link::after {
-        border-radius: 0;
-      }
     }
 
     @include fd-compact-or-condensed() {

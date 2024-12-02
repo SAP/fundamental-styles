@@ -22,6 +22,7 @@ $panel: #{$fd-namespace}-panel;
 
   &__body {
     @include fd-reset();
+
     @include fd-flex(column) {
       gap: 0.5rem; 
     };
@@ -35,6 +36,7 @@ $panel: #{$fd-namespace}-panel;
 
   &__header {
     @include fd-reset();
+    
     @include fd-flex(column) {
       gap: 0.5rem;
       align-items: center;    
