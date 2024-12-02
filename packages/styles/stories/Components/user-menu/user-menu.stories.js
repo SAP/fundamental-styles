@@ -59,8 +59,8 @@ Represents the current user and includes:
     <li>Popover: Contains the entire User Menu content.</li>
     <li>Avatar: A key visual element displaying the user's profile picture. If no profile picture is available, it shows the user's initials. If the user is not signed in, an icon is displayed.</li>
     <li>Title: A required UI element showing the user's First and Last names.</li>
-    <li>Subtitle 1: An optional secondary identifier, such as user ID or email.</li>
-    <li>Subtitle 2: An optional tertiary identifier, such as role, position, organization, or unit.</li>
+    <li>Subtitle 1 (subline): An optional secondary identifier, such as user ID or email.</li>
+    <li>Subtitle 2 (subline): An optional tertiary identifier, such as role, position, organization, or unit.</li>
     <li>Manage Account Button: Links to account settings.</li>
 </ul>
 
@@ -82,16 +82,7 @@ Holds user account and menu items:
       <li>Hosts mandatory menu items (e.g., Settings, Legal Information, About, Sign In/Out) and custom items.</li>
     </ul>
   </li>
-  <li>Separator: Divides menu sections.</li>
 </ul>
-
-<b>Submenu (Optional)</b><br>
-Groups related items:
-
-<ul>
-    <li>Menu: Contains grouped Menu List Items for better organization.</li>
-</ul>
-
     `,
     tags: ['uxc']
   }

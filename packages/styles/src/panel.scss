@@ -39,10 +39,17 @@ $block: #{$fd-namespace}-panel;
     padding-inline: var(--fdPanel_Header_Padding_Inline_Start, 0) var(--fdPanel_Header_Padding_Inline_End, 0.5rem);
     border-radius: var(--fdPanel_Header_Border_Top_Left_Radius, var(--fdPanel_Border_Radius)) var(--fdPanel_Header_Border_Top_Right_Radius, var(--fdPanel_Border_Radius)) var(--fdPanel_Header_Border_Bottom_Right_Radius, 0) var(--fdPanel_Header_Border_Bottom_Left_Radius, 0);
 
-    @include fd-flex-vertical-center();
+    &:has(.#{$block}__button[aria-expanded="false"]) {
+      --fdPanel_Header_Border_Bottom_Left_Radius: var(--fdPanel_Border_Radius);
+      --fdPanel_Header_Border_Bottom_Right_Radius: var(--fdPanel_Border_Radius);
+    }
+    
+    &:has(.#{$fd-namespace}-toolbar) {
+      --fdPanel_Header_Padding_Inline_End: 0;
+    }
 
-    &:has(> .#{$fd-namespace}-toolbar) {
-      padding-inline-end: 0;
+    &:not(:has(.#{$block}__button)) {
+      --fdPanel_Header_Padding_Inline_Start: 1rem;
     }
   }
 
@@ -57,8 +64,8 @@ $block: #{$fd-namespace}-panel;
     @include fd-scrollbar(var(--fdScrollbar_Border_Radius));
 
     overflow: auto;
-    padding-inline: 1rem;
-    padding-block: 0.625rem;
+    padding-inline: var(--fdPanel_Content_Padding_Inline, 1rem);
+    padding-block: var(--fdPanel_Content_Padding_Block, 0.625rem);
     background: var(--fdPanel_Content_Background_Color);
     border-bottom: solid 0.0625rem var(--fdPanel_Content_Border_Bottom_Color);
     border-radius: var(--fdPanel_Content_Border_Top_Left_Radius, 0) var(--fdPanel_Content_Border_Top_Right_Radius, 0) var(--fdPanel_Content_Border_Bottom_Right_Radius, var(--fdPanel_Border_Radius)) var(--fdPanel_Content_Border_Bottom_Left_Radius, var(--fdPanel_Border_Radius));
@@ -68,8 +75,8 @@ $block: #{$fd-namespace}-panel;
     }
 
     &--no-padding {
-      padding-block: 0;
-      padding-inline: 0;
+      --fdPanel_Content_Padding_Inline: 0;
+      --fdPanel_Content_Padding_Block: 0;
     }
   }
 

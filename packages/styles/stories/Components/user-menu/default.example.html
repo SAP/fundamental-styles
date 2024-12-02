@@ -14,12 +14,78 @@
                         <div class="fd-user-menu__user-info">lisa.miller@test.com</div>
                         <div class="fd-user-menu__user-role">User Experience Designer</div>
                     </div>
-                    <button aria-label="Add to cart" class="fd-button">
+                </div>
+                <div class="fd-user-menu__content-container">
+                    <ul class="fd-navigation-list" role="list">
+                        <li class="fd-navigation-list__item" role="listitem" tabindex="-1">
+                            <div class="fd-navigation-list__content" tabindex="0">
+                                <div class="fd-navigation-list__content-container">
+                                    <span class="fd-navigation-list__icon">
+                                        <i class=" sap-icon--action-settings" role="presentation"></i>
+                                    </span>
+                                    <span class="fd-navigation-list__text">Settings</span>
+                                </div>
+                                <div class="fd-navigation-list__expander">
+                                    <i class="sap-icon--navigation-right-arrow" role="presentation"></i>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="fd-navigation-list__item" role="listitem" tabindex="-1">
+                            <div class="fd-navigation-list__content" tabindex="0">
+                                <div class="fd-navigation-list__content-container">
+                                    <span class="fd-navigation-list__icon">
+                                        <i class=" sap-icon--official-service" role="presentation"></i>
+                                    </span>
+                                    <span class="fd-navigation-list__text">Legal Information</span>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="fd-navigation-list__item" role="listitem" tabindex="-1">
+                            <div class="fd-navigation-list__content" tabindex="0">
+                                <div class="fd-navigation-list__content-container">
+                                    <span class="fd-navigation-list__icon">
+                                        <i class=" sap-icon--message-information" role="presentation"></i>
+                                    </span>
+                                    <span class="fd-navigation-list__text">About</span>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="fd-bar fd-bar--footer">
+                <div class="fd-bar__right">
+                    <div class="fd-bar__element">
+                        <button aria-label="button" class="fd-button fd-button--transparent">
+                            <i class="sap-icon--log"></i>
+                            <span class="fd-button__text"> Sign Out</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="fd-popover fd-popover--right fd-user-menu">
+        <div class="fd-popover__body fd-popover__body--right" aria-hidden="false" id="userMenu1">
+            <div class="fd-user-menu__body">
+                <div class="fd-user-menu__header">
+                    <span
+                        class="fd-avatar fd-avatar--lg fd-avatar--circle fd-avatar--thumbnail"
+                        aria-label="Avatar"
+                        style="background-image: url('/assets/images/portraits/L_80x80_F3.png');">
+                        <i class="fd-avatar__zoom-icon fd-avatar__zoom-icon--indication-8 sap-icon--edit" aria-label="Edit" role="presentation" aria-hidden="true"></i>
+                    </span>
+                    <div class="fd-user-menu__subheader">
+                        <div class="fd-user-menu__user-name">Lisa Miller</div>
+                        <div class="fd-user-menu__subline">lisa.miller@test.com</div>
+                        <div class="fd-user-menu__subline">User Experience Designer</div>
+                    </div>
+                    <button aria-label="Manage Accounts" class="fd-button">
                         <i class="sap-icon--user-settings"></i>
-                        <span class="fd-button__text">Manage Account</span>
+                        <span class="fd-button__text">Manage Accounts</span>
                     </button>
                 </div>
-
                 <div class="fd-user-menu__content-container">
                     <div class="fd-panel fd-user-menu__panel" aria-labelledby="__panel-title-8" role="form">
                         <div class="fd-panel__header">
@@ -69,6 +135,9 @@
                                     </span>
                                     <span class="fd-navigation-list__text">Settings</span>
                                 </div>
+                                <div class="fd-navigation-list__expander">
+                                    <i class="sap-icon--navigation-right-arrow" role="presentation"></i>
+                                </div>
                             </div>
                         </li>
                         <li class="fd-navigation-list__item" role="listitem" tabindex="-1">
@@ -91,24 +160,24 @@
                                 </div>
                             </div>
                         </li>
-                        <li class="fd-navigation-list__item fd-navigation-list__item--separator" tabindex="-1" aria-disabled="true"></li>
-                        <li class="fd-navigation-list__item" role="listitem" tabindex="-1">
-                            <div class="fd-navigation-list__content" tabindex="0">
-                                <div class="fd-navigation-list__content-container">
-                                    <span class="fd-navigation-list__icon">
-                                        <i class=" sap-icon--log" role="presentation"></i>
-                                    </span>
-                                    <span class="fd-navigation-list__text">Sign Out</span>
-                                </div>
-                            </div>
-                        </li>
                     </ul>
+                </div>
+            </div>
+            <div class="fd-bar fd-bar--footer">
+                <div class="fd-bar__right">
+                    <div class="fd-bar__element">
+                        <button aria-label="button" class="fd-button fd-button--transparent">
+                            <i class="sap-icon--log"></i>
+                            <span class="fd-button__text"> Sign Out</span>
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 
     <!-- Navigation List -->
+    <!-- Have to keep it for now, until the Side Nav is ready -->
     <!-- <div style="width: 300px">
         <ul class="fd-navigation-list level-1">
             <li class="fd-navigation-list__item">
