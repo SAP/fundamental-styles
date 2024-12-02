@@ -79,8 +79,16 @@ $gridCol: #{$fd-namespace}-col;
         margin-inline-end: 0;
         white-space: initial;
 
+        &--colon {
+          padding-inline-end: 0.25rem;
+        }
+
         &--required {
           padding-inline-end: 0.5rem;
+          
+          &.#{$fd-namespace}-form-label--colon{
+            padding-inline-end: 0.75rem;
+          }
         }
       }
     }
