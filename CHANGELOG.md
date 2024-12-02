@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.39.0-rc.34](https://github.com/SAP/fundamental-styles/compare/v0.39.0-rc.33...v0.39.0-rc.34) (2024-12-02)
+
+### Bug Fixes
+
+-   **styles:** update form label spacing for colon and required [ci visual] ([#5819](https://github.com/SAP/fundamental-styles/issues/5819)) ([fe71f7a](https://github.com/SAP/fundamental-styles/commit/fe71f7aed750744bc19dc09bc3605b2711c1930b))
+
 # [0.39.0-rc.33](https://github.com/SAP/fundamental-styles/compare/v0.39.0-rc.32...v0.39.0-rc.33) (2024-11-29)
 
 ### Bug Fixes
