@@ -29,6 +29,12 @@
     background: var(--fdList_Item_Background_Color);
     position: relative;
 
+    .#{$avatar} {
+      &:first-child {
+        margin-inline-end: 0.75rem;
+      }
+    }
+
     &--unread {
       .#{$block}__title {
         font-weight: bold;

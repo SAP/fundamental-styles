@@ -64,14 +64,19 @@ $block: #{$fd-namespace}-panel;
     @include fd-scrollbar(var(--fdScrollbar_Border_Radius));
 
     overflow: auto;
-    padding-inline: 1rem;
-    padding-block: 0.625rem;
+    padding-inline: var(--fdPanel_Content_Padding_Inline, 1rem);
+    padding-block: var(--fdPanel_Content_Padding_Block, 0.625rem);
     background: var(--fdPanel_Content_Background_Color);
     border-bottom: solid 0.0625rem var(--fdPanel_Content_Border_Bottom_Color);
     border-radius: var(--fdPanel_Content_Border_Top_Left_Radius, 0) var(--fdPanel_Content_Border_Top_Right_Radius, 0) var(--fdPanel_Content_Border_Bottom_Right_Radius, var(--fdPanel_Border_Radius)) var(--fdPanel_Content_Border_Bottom_Left_Radius, var(--fdPanel_Border_Radius));
 
     &[aria-hidden="true"] {
       display: none;
+    }
+
+    &--no-padding {
+      --fdPanel_Content_Padding_Inline: 0;
+      --fdPanel_Content_Padding_Block: 0;
     }
   }
 

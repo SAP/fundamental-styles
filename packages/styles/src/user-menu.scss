@@ -5,48 +5,42 @@
 
 $block: #{$fd-namespace}-user-menu;
 $navigation: #{$fd-namespace}-navigation;
+$panel: #{$fd-namespace}-panel;
 
 .#{$block} {
   background: var(--sapGroup_ContentBackground);
 
   .#{$block}__title-bar {
     --fdBar_Shadow: none;
-
-    position: relative;
-
-    &--center-title {
-      .#{$fd-namespace}-title {
-        position: absolute
-      }
-    }
   }
 
-  .#{$block}__title {
-    &--center {
-      @include fd-set-position-left(50%);
-
-      position: absolute;
-      transform: translate(-50%, 0);
-
-      @include fd-rtl() {
-        transform: translate(50%, 0);
-      }
-    }
+  // Panel Radius Overwrite
+  .#{$panel}__header:has(.#{$panel}__button[aria-expanded=false]) {
+    --fdPanel_Header_Border_Bottom_Left_Radius: 0;
+    --fdPanel_Header_Border_Bottom_Right_Radius: 0;
   }
 
   &__body {
     @include fd-reset();
 
+    @include fd-flex(column) {
+      gap: 0.5rem; 
+    };
+
+    overflow: scroll;
     min-width: 18rem;
+    max-width: 20rem;
     padding-block: 1rem 0.5rem;
     padding-inline: 0.5rem;
   }
 
   &__header {
     @include fd-reset();
-    @include fd-flex-center();
-
-    margin-block-end: 0.5rem;
+    
+    @include fd-flex(column) {
+      gap: 0.5rem;
+      align-items: center;    
+    };
   }
 
   &__subheader {
@@ -57,7 +51,7 @@ $navigation: #{$fd-namespace}-navigation;
       align-items: center;
     }
 
-    margin-block-end: 1rem;
+    margin-block-end: 0.5rem;
   }
 
   &__user-name {
@@ -68,10 +62,18 @@ $navigation: #{$fd-namespace}-navigation;
     font-size: var(--sapFontLargeSize);
   }
 
-  &__user-role {
+  &__user-info,
+  &__user-role,
+  &__subline {
     @include fd-reset();
 
     color: var(--sapContent_LabelColor);
+  }
+
+  &__content-container {
+    @include fd-reset();
+
+    --fdPanel_Margin_Bottom: 0.25rem;
   }
 
   // Mobile
