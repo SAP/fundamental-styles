@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.39.0-rc.35](https://github.com/SAP/fundamental-styles/compare/v0.39.0-rc.34...v0.39.0-rc.35) (2024-12-03)
+
+### Bug Fixes
+
+-   **styles:** update User Menu to latest design ([#5820](https://github.com/SAP/fundamental-styles/issues/5820)) ([8c5210a](https://github.com/SAP/fundamental-styles/commit/8c5210acdafeca9d56aef18b770dea39e245060f))
+
 # [0.39.0-rc.34](https://github.com/SAP/fundamental-styles/compare/v0.39.0-rc.33...v0.39.0-rc.34) (2024-12-02)
 
 ### Bug Fixes
