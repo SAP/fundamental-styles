@@ -3,6 +3,10 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.39.0-rc.41](https://github.com/SAP/fundamental-styles/compare/v0.39.0-rc.40...v0.39.0-rc.41) (2024-12-17)
+
+**Note:** Version bump only for package @fundamental-styles/cx
+
 # [0.39.0-rc.40](https://github.com/SAP/fundamental-styles/compare/v0.39.0-rc.39...v0.39.0-rc.40) (2024-12-17)
 
 **Note:** Version bump only for package @fundamental-styles/cx
@@ -251,7 +255,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 ### Bug Fixes
 
--   **styles:** paddings and margins specificity [ci visual] ([#5594](https://github.com/SAP/fundamental-styles/issues/5594)) ([d65536d](https://github.com/SAP/fundamental-styles/commit/d65536daa95d3d416f37fb85eb025aba1cf55106))
+- **styles:** paddings and margins specificity [ci visual] ([#5594](https://github.com/SAP/fundamental-styles/issues/5594)) ([d65536d](https://github.com/SAP/fundamental-styles/commit/d65536daa95d3d416f37fb85eb025aba1cf55106))
 
 ## [0.37.7-rc.0](https://github.com/SAP/fundamental-styles/compare/v0.37.6...v0.37.7-rc.0) (2024-08-26)
 
@@ -349,7 +353,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 ### Bug Fixes
 
--   **styles:** add margin and padding code optimization [ci visual] ([#5491](https://github.com/SAP/fundamental-styles/issues/5491)) ([5c80286](https://github.com/SAP/fundamental-styles/commit/5c802866779ce481263c76bc1133c60dc680f776))
+- **styles:** add margin and padding code optimization [ci visual] ([#5491](https://github.com/SAP/fundamental-styles/issues/5491)) ([5c80286](https://github.com/SAP/fundamental-styles/commit/5c802866779ce481263c76bc1133c60dc680f776))
 
 ## [0.37.5-rc.1](https://github.com/SAP/fundamental-styles/compare/v0.37.5-rc.0...v0.37.5-rc.1) (2024-07-20)
 
@@ -563,7 +567,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 ### Bug Fixes
 
--   **styles:** change the font-size of Side Nav icon [ci visual] ([#5309](https://github.com/SAP/fundamental-styles/issues/5309)) ([73e3c19](https://github.com/SAP/fundamental-styles/commit/73e3c19d5b28b7157ae961374fff6281c61d0fc5))
+- **styles:** change the font-size of Side Nav icon [ci visual] ([#5309](https://github.com/SAP/fundamental-styles/issues/5309)) ([73e3c19](https://github.com/SAP/fundamental-styles/commit/73e3c19d5b28b7157ae961374fff6281c61d0fc5))
 
 # [0.35.0-rc.10](https://github.com/SAP/fundamental-styles/compare/v0.35.0-rc.9...v0.35.0-rc.10) (2024-04-17)
 
@@ -685,7 +689,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 ### Features
 
--   **styles:** cx nav update [ci visual] ([#5206](https://github.com/SAP/fundamental-styles/issues/5206)) ([0a36eb6](https://github.com/SAP/fundamental-styles/commit/0a36eb63a899fb5db713a8df3a95e93664e91415))
+- **styles:** cx nav update [ci visual] ([#5206](https://github.com/SAP/fundamental-styles/issues/5206)) ([0a36eb6](https://github.com/SAP/fundamental-styles/commit/0a36eb63a899fb5db713a8df3a95e93664e91415))
 
 ## [0.33.3-rc.18](https://github.com/SAP/fundamental-styles/compare/v0.33.3-rc.17...v0.33.3-rc.18) (2024-02-26)
 

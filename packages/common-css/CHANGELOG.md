@@ -3,6 +3,10 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.39.0-rc.41](https://github.com/SAP/fundamental-styles/compare/v0.39.0-rc.40...v0.39.0-rc.41) (2024-12-17)
+
+**Note:** Version bump only for package @sap-ui/common-css
+
 # [0.39.0-rc.40](https://github.com/SAP/fundamental-styles/compare/v0.39.0-rc.39...v0.39.0-rc.40) (2024-12-17)
 
 **Note:** Version bump only for package @sap-ui/common-css
@@ -251,7 +255,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 ### Bug Fixes
 
--   **styles:** paddings and margins specificity [ci visual] ([#5594](https://github.com/SAP/fundamental-styles/issues/5594)) ([d65536d](https://github.com/SAP/fundamental-styles/commit/d65536daa95d3d416f37fb85eb025aba1cf55106))
+- **styles:** paddings and margins specificity [ci visual] ([#5594](https://github.com/SAP/fundamental-styles/issues/5594)) ([d65536d](https://github.com/SAP/fundamental-styles/commit/d65536daa95d3d416f37fb85eb025aba1cf55106))
 
 ## [0.37.7-rc.0](https://github.com/SAP/fundamental-styles/compare/v0.37.6...v0.37.7-rc.0) (2024-08-26)
 
@@ -349,7 +353,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 ### Bug Fixes
 
--   **styles:** add margin and padding code optimization [ci visual] ([#5491](https://github.com/SAP/fundamental-styles/issues/5491)) ([5c80286](https://github.com/SAP/fundamental-styles/commit/5c802866779ce481263c76bc1133c60dc680f776))
+- **styles:** add margin and padding code optimization [ci visual] ([#5491](https://github.com/SAP/fundamental-styles/issues/5491)) ([5c80286](https://github.com/SAP/fundamental-styles/commit/5c802866779ce481263c76bc1133c60dc680f776))
 
 ## [0.37.5-rc.1](https://github.com/SAP/fundamental-styles/compare/v0.37.5-rc.0...v0.37.5-rc.1) (2024-07-20)
 
@@ -395,7 +399,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 ### Bug Fixes
 
--   **common-css:** optimize paddings and margins usage [ci visual] ([#5490](https://github.com/SAP/fundamental-styles/issues/5490)) ([33804e2](https://github.com/SAP/fundamental-styles/commit/33804e21934507744f2837d219e1038f1d82bfba))
+- **common-css:** optimize paddings and margins usage [ci visual] ([#5490](https://github.com/SAP/fundamental-styles/issues/5490)) ([33804e2](https://github.com/SAP/fundamental-styles/commit/33804e21934507744f2837d219e1038f1d82bfba))
 
 ## [0.37.1](https://github.com/SAP/fundamental-styles/compare/v0.37.1-rc.5...v0.37.1) (2024-07-11)
 
@@ -409,13 +413,13 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 ### Features
 
--   **common-css:** add data attribute to common css Text [ci visual] ([#5478](https://github.com/SAP/fundamental-styles/issues/5478)) ([1762d00](https://github.com/SAP/fundamental-styles/commit/1762d007ecbfa9b26e3bdfc26c51ffb5573f7d70))
+- **common-css:** add data attribute to common css Text [ci visual] ([#5478](https://github.com/SAP/fundamental-styles/issues/5478)) ([1762d00](https://github.com/SAP/fundamental-styles/commit/1762d007ecbfa9b26e3bdfc26c51ffb5573f7d70))
 
 ## [0.37.1-rc.3](https://github.com/SAP/fundamental-styles/compare/v0.37.1-rc.2...v0.37.1-rc.3) (2024-07-05)
 
 ### Features
 
--   **common-css:** add Titles to Common CSS package [ci visual] ([#5455](https://github.com/SAP/fundamental-styles/issues/5455)) ([1c532e9](https://github.com/SAP/fundamental-styles/commit/1c532e93b45b7c6352eb9734e64adc2e613dd290))
+- **common-css:** add Titles to Common CSS package [ci visual] ([#5455](https://github.com/SAP/fundamental-styles/issues/5455)) ([1c532e9](https://github.com/SAP/fundamental-styles/commit/1c532e93b45b7c6352eb9734e64adc2e613dd290))
 
 ## [0.37.1-rc.2](https://github.com/SAP/fundamental-styles/compare/v0.37.1-rc.1...v0.37.1-rc.2) (2024-07-04)
 
@@ -509,7 +513,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 ### Bug Fixes
 
--   **styles,common-css:** replace global scss functions [ci visual] ([#5391](https://github.com/SAP/fundamental-styles/issues/5391)) ([58a1601](https://github.com/SAP/fundamental-styles/commit/58a16018b10c5572327390551a76abd8a7a817f1))
+- **styles,common-css:** replace global scss functions [ci visual] ([#5391](https://github.com/SAP/fundamental-styles/issues/5391)) ([58a1601](https://github.com/SAP/fundamental-styles/commit/58a16018b10c5572327390551a76abd8a7a817f1))
 
 ## [0.36.1-rc.0](https://github.com/SAP/fundamental-styles/compare/v0.36.0...v0.36.1-rc.0) (2024-05-21)
 
