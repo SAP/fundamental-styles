@@ -54,16 +54,6 @@ The avatar control is adaptive and has five predefined sizes. These are the same
   tags: ['v1']
   }
 };
-const localStyles = `
-<style>
-
-    .fd-avatar {
-        margin: 0.5rem;
-    }
-
-
-</style>
-`;
 
 export const BackgroundImage = () => backgroundImageExampleHtml;
 BackgroundImage.storyName = 'Image, Person';
