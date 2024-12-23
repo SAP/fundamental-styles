@@ -3,6 +3,10 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.39.0-rc.45](https://github.com/SAP/fundamental-styles/compare/v0.39.0-rc.44...v0.39.0-rc.45) (2024-12-23)
+
+**Note:** Version bump only for package @fundamental-styles/theming-preview
+
 # [0.39.0-rc.44](https://github.com/SAP/fundamental-styles/compare/v0.39.0-rc.43...v0.39.0-rc.44) (2024-12-17)
 
 **Note:** Version bump only for package @fundamental-styles/theming-preview
