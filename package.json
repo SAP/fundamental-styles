@@ -95,7 +95,7 @@
         "core-js": "3.35.1",
         "cross-env": "7.0.3",
         "cssnano": "7.0.5",
-        "eslint": "8.57.0",
+        "eslint": "9.17.0",
         "eslint-plugin-import": "2.31.0",
         "eslint-plugin-jsx-a11y": "6.10.1",
         "eslint-plugin-react": "7.31.11",
