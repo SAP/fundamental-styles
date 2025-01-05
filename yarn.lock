@@ -4838,13 +4838,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/prop-types@npm:*":
-  version: 15.7.14
-  resolution: "@types/prop-types@npm:15.7.14"
-  checksum: 10/d0c5407b9ccc3dd5fae0ccf9b1007e7622ba5e6f1c18399b4f24dff33619d469da4b9fa918a374f19dc0d9fe6a013362aab0b844b606cfc10676efba3f5f736d
-  languageName: node
-  linkType: hard
-
 "@types/react-dom@npm:18.3.0":
   version: 18.3.0
   resolution: "@types/react-dom@npm:18.3.0"
@@ -4863,22 +4856,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react@npm:*":
+"@types/react@npm:*, @types/react@npm:19.0.2":
   version: 19.0.2
   resolution: "@types/react@npm:19.0.2"
   dependencies:
     csstype: "npm:^3.0.2"
   checksum: 10/b355cfa22814e934b381c4f6de67c66652255377c3ddc6a757ea195ccbd0e7095aadfe1a28713d8ab1221222b8f2ec237903f4ec0e54eaf656ac832782d25dd2
-  languageName: node
-  linkType: hard
-
-"@types/react@npm:18.3.1":
-  version: 18.3.1
-  resolution: "@types/react@npm:18.3.1"
-  dependencies:
-    "@types/prop-types": "npm:*"
-    csstype: "npm:^3.0.2"
-  checksum: 10/baa6b8a75c471c89ebf3477b4feab57102ced25f0c1e553dd04ef6a1f0def28d5e0172fa626a631f22e223f840b5aaa2403b2d4bb671c83c5a9d6c7ae39c7a05
   languageName: node
   linkType: hard
 
@@ -9995,7 +9978,7 @@ __metadata:
     "@testing-library/react": "npm:15.0.6"
     "@types/fs-extra": "npm:11.0.4"
     "@types/node": "npm:18.19.14"
-    "@types/react": "npm:18.3.1"
+    "@types/react": "npm:19.0.2"
     "@types/react-dom": "npm:18.3.0"
     "@typescript-eslint/eslint-plugin": "npm:7.18.0"
     "@typescript-eslint/parser": "npm:7.18.0"
@@ -10042,7 +10025,7 @@ __metadata:
     postcss-normalize-charset: "npm:4.0.1"
     postcss-scss: "npm:4.0.9"
     prettier: "npm:^3.2.5"
-    react: "npm:18.3.1"
+    react: "npm:19.0.0"
     react-dom: "npm:18.3.1"
     react-is: "npm:18.3.1"
     remark-gfm: "npm:3.0.1"
@@ -16757,7 +16740,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react@npm:18.3.1, react@npm:^16.8.0 || ^17.0.0 || ^18.0.0":
+"react@npm:19.0.0":
+  version: 19.0.0
+  resolution: "react@npm:19.0.0"
+  checksum: 10/2490969c503f644703c88990d20e4011fa6119ddeca451e9de48f6d7ab058d670d2852a5fcd3aa3cd90a923ab2815d532637bd4a814add402ae5c0d4f129ee71
+  languageName: node
+  linkType: hard
+
+"react@npm:^16.8.0 || ^17.0.0 || ^18.0.0":
   version: 18.3.1
   resolution: "react@npm:18.3.1"
   dependencies:
