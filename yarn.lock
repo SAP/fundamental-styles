@@ -7656,10 +7656,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"core-js@npm:3.35.1":
-  version: 3.35.1
-  resolution: "core-js@npm:3.35.1"
-  checksum: 10/5d31f22eb05cf66bd1a2088a04b7106faa5d0b91c1ffa5d72c5203e4974c31bd7e11969297f540a806c00c74c23991eaad5639592df8b5dbe4412fff3c075cd5
+"core-js@npm:3.40.0":
+  version: 3.40.0
+  resolution: "core-js@npm:3.40.0"
+  checksum: 10/9c7e7d2839db6c3c7b72725a3ce5edf6dd61fc771e1551e08b5622ca7da330f2f5d3c7dcd6a6e7889baa8d4cc5a909ba75b4add0d1f3da940a2a60a3e0603be5
   languageName: node
   linkType: hard
 
@@ -10010,7 +10010,7 @@ __metadata:
     conventional-changelog-angular: "npm:7.0.0"
     conventional-changelog-cli: "npm:4.1.0"
     conventional-recommended-bump: "npm:9.0.0"
-    core-js: "npm:3.35.1"
+    core-js: "npm:3.40.0"
     cross-env: "npm:7.0.3"
     cssnano: "npm:7.0.5"
     eslint: "npm:8.57.0"
