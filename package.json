@@ -57,7 +57,7 @@
         "@nx/js": "20.3.0",
         "@nx/plugin": "20.3.0",
         "@nx/react": "20.3.0",
-        "@nx/web": "20.3.0",
+        "@nx/web": "20.3.1",
         "@sap-theming/theming-base-content": "11.24.0",
         "@storybook/addon-a11y": "^8.4.7",
         "@storybook/addon-actions": "^8.4.7",
