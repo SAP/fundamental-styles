@@ -158,7 +158,7 @@ $block: #{$fd-namespace}-notification;
 
   &__footer {
     @include fd-reset();
-    @include fd-flex();
+    @include fd-flex-vertical-center();
   }
 
   &__footer-content {
@@ -196,15 +196,6 @@ $block: #{$fd-namespace}-notification;
       padding-inline: 0;
       padding-block: 0;
     }
-  }
-
-  // Banner Notification
-  &--banner {
-    @include fd-set-position-right(2rem);
-    
-    top: 2rem;
-    position: absolute;
-    box-shadow: var(--sapContent_Shadow2);
   }
 
   .#{$block}__link {
@@ -341,6 +332,32 @@ $block: #{$fd-namespace}-notification;
     @include fd-media-sm() {
       --fdNotification_Popover_Width: auto;
       --fdNotification_Popover_Max_Width: 25rem;
+    }
+  }
+
+  // Banner
+  &-banner {
+    @include fd-reset();
+    @include fd-set-position-right(0);
+
+    @include fd-flex(column) {
+      gap: 0.5rem;
+    };
+  
+    top: 0;
+    align-items: flex-end;
+    position: absolute;
+    margin-inline-end: 2rem;
+    margin-block-start: 2rem;
+    max-width: var(--fdNotification_Popover_Max_Width, 26rem);
+
+    .#{$block} {
+      width: 100%;
+      box-shadow: var(--sapContent_Shadow2);
+
+      @include fd-media-sm() {
+        --fdNotification_Popover_Max_Width: 24rem;
+      }
     }
   }
 

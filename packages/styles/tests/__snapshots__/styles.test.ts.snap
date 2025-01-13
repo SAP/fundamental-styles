@@ -32709,31 +32709,62 @@ exports[`Check stories > Components/Micro Process Flow > Story OverflowMicroProc
 `;
 
 exports[`Check stories > Components/Notifications > Story NotificationBanner > Should match snapshot 1`] = `
-"<div style=\\"position: relative; width: 100%; min-height: 300px; border: 2px solid #a5a2a2\\">
-    <div class=\\"fd-notification fd-notification--banner\\" tabindex=\\"0\\"  style=\\"max-width: 500px;\\">
-        <div class=\\"fd-notification__body\\">
-            <span class=\\"fd-avatar fd-avatar--accent-color-10 fd-avatar--xs\\" role=\\"img\\" aria-label=\\"Avatar\\">
-                <i role=\\"presentation\\" aria-hidden=\\"true\\" aria-label=\\"Product placeholder\\" class=\\"fd-avatar__icon sap-icon--product\\"></i>
-            </span>
-            <div class=\\"fd-notification__content\\">
-                <div class=\\"fd-notification__header\\">
-                    <span class=\\"sap-icon sap-icon--error sap-icon--color-negative\\"></span>
-                    <h4 class=\\"fd-notification__title fd-notification__title--unread\\">Notification Title (unread)</h4>
+"<div style=\\"position: relative; width: 100%; min-height: 600px; border: 2px solid #a5a2a2\\">
+    <div class=\\"fd-notification-banner\\">
+        <div class=\\"fd-notification\\" tabindex=\\"0\\">
+            <div class=\\"fd-notification__body\\">
+                <span class=\\"fd-avatar fd-avatar--accent-color-10 fd-avatar--xs\\" role=\\"img\\" aria-label=\\"Avatar\\">
+                    <i role=\\"presentation\\" aria-hidden=\\"true\\" aria-label=\\"Product placeholder\\" class=\\"fd-avatar__icon sap-icon--product\\"></i>
+                </span>
+                <div class=\\"fd-notification__content\\">
+                    <div class=\\"fd-notification__header\\">
+                        <h4 class=\\"fd-notification__title fd-notification__title--unread\\">Sales Order #65665 for Lorem Inc is about to expire</h4>
+                    </div>
+                    <p class=\\"fd-notification__paragraph\\">Sales order expires in 1 day</p>
+                    <div class=\\"fd-notification__footer\\">
+                        <span class=\\"fd-notification__footer-content\\">Lorem</span>
+                        <span class=\\"fd-notification__separator\\"></span>
+                        <span class=\\"fd-notification__footer-content\\">Sales</span>
+                        <span class=\\"fd-notification__separator\\"></span>
+                        <span class=\\"fd-notification__footer-content\\">11:11 AM</span>
+                    </div>
                 </div>
-                <p class=\\"fd-notification__paragraph\\">Description of notification topic lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-                <div class=\\"fd-notification__footer\\">
-                    <span class=\\"fd-notification__footer-content\\">Product Name</span>
-                    <span class=\\"fd-notification__separator\\"></span>
-                    <span class=\\"fd-notification__footer-content\\">Feature Name</span>
-                    <span class=\\"fd-notification__separator\\"></span>
-                    <span class=\\"fd-notification__footer-content\\">11:11</span>
-                    <a href=\\"#\\" class=\\"fd-link fd-notification__link\\" tabindex=\\"0\\"><span class=\\"fd-link__content\\">More</span></a>
+                <div class=\\"fd-notification__actions\\">
+                    <button class=\\"fd-button fd-button--transparent\\" aria-label=\\"More\\">
+                        <i class=\\"sap-icon--overflow\\"></i>
+                    </button>
+                    <button class=\\"fd-button fd-button--transparent \\" aria-label=\\"Close\\">
+                        <i class=\\"sap-icon--decline\\"></i>
+                    </button>
                 </div>
             </div>
-            <div class=\\"fd-notification__actions\\">
-                <button class=\\"fd-button fd-button--transparent \\" aria-label=\\"Close\\">
-                    <i class=\\"sap-icon--decline\\"></i>
-                </button>
+        </div>
+        <div class=\\"fd-notification\\" tabindex=\\"0\\">
+            <div class=\\"fd-notification__body\\">
+                <span class=\\"fd-avatar fd-avatar--accent-color-10 fd-avatar--xs\\" role=\\"img\\" aria-label=\\"Avatar\\">
+                    <i role=\\"presentation\\" aria-hidden=\\"true\\" aria-label=\\"Product placeholder\\" class=\\"fd-avatar__icon sap-icon--product\\"></i>
+                </span>
+                <div class=\\"fd-notification__content\\">
+                    <div class=\\"fd-notification__header\\">
+                        <h4 class=\\"fd-notification__title fd-notification__title--unread\\">Notification Title Lorem Ipsum</h4>
+                    </div>
+                    <p class=\\"fd-notification__paragraph\\">Description of notification topic</p>
+                    <div class=\\"fd-notification__footer\\">
+                        <span class=\\"fd-notification__footer-content\\">Product Name</span>
+                        <span class=\\"fd-notification__separator\\"></span>
+                        <span class=\\"fd-notification__footer-content\\">Feature Name</span>
+                        <span class=\\"fd-notification__separator\\"></span>
+                        <span class=\\"fd-notification__footer-content\\">11:12 AM</span>
+                    </div>
+                </div>
+                <div class=\\"fd-notification__actions\\">
+                    <button class=\\"fd-button fd-button--transparent\\" aria-label=\\"More\\">
+                        <i class=\\"sap-icon--overflow\\"></i>
+                    </button>
+                    <button class=\\"fd-button fd-button--transparent \\" aria-label=\\"Close\\">
+                        <i class=\\"sap-icon--decline\\"></i>
+                    </button>
+                </div>
             </div>
         </div>
     </div>
@@ -32753,6 +32784,7 @@ exports[`Check stories > Components/Notifications > Story NotificationGroup > Sh
                 onclick=\\"onPopoverClick('popoverNotificationsGroup');\\"
                 role=\\"button\\">
                 <i class=\\"sap-icon--bell\\" role=\\"presentation\\"></i>
+                <span class=\\"fd-button__badge\\">30</span>
             </button>
         </div>
         <div class=\\"fd-popover__body\\" aria-hidden=\\"false\\" id=\\"popoverNotificationsGroup\\">
@@ -32766,7 +32798,7 @@ exports[`Check stories > Components/Notifications > Story NotificationGroup > Sh
                             <i class=\\"sap-icon--sort\\"></i>
                         </button>
                         <button aria-label=\\"Add to cart\\" class=\\"fd-button fd-button--transparent\\">
-                            <i class=\\"sap-icon--settings\\"></i>
+                            <i class=\\"sap-icon--action-settings\\"></i>
                         </button>
                     </div>
     
@@ -33009,7 +33041,7 @@ exports[`Check stories > Components/Notifications > Story Primary > Should match
         <div class=\\"fd-notification__content\\">
             <div class=\\"fd-notification__header\\">
                 <span class=\\"sap-icon sap-icon--sys-enter-2 sap-icon--color-positive\\"></span>
-                <h4 class=\\"fd-notification__title\\">Notification Title Notification Title (unread) Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla pariatur quisquam suscipit odio. Nesciunt, assumenda. Quo dolores aperiam, repellendus animi dolorem rerum cumque fugiat corrupti pariatur, adipisci soluta odio voluptate? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni architecto aut nobis facere, eius ea accusantium dolores quae, alias molestiae repudiandae doloremque repellat quisquam voluptatum fugiat id magnam, vitae sed. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione modi quas pariatur at eveniet inventore dolorum fugiat, cum animi ullam quisquam reiciendis aperiam quibusdam sapiente nobis atque omnis quae.</h4>
+                <h4 class=\\"fd-notification__title\\">Notification Title Notification Title (read) Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla pariatur quisquam suscipit odio. Nesciunt, assumenda. Quo dolores aperiam, repellendus animi dolorem rerum cumque fugiat corrupti pariatur, adipisci soluta odio voluptate? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni architecto aut nobis facere, eius ea accusantium dolores quae, alias molestiae repudiandae doloremque repellat quisquam voluptatum fugiat id magnam, vitae sed. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione modi quas pariatur at eveniet inventore dolorum fugiat, cum animi ullam quisquam reiciendis aperiam quibusdam sapiente nobis atque omnis quae.</h4>
             </div>
             <p class=\\"fd-notification__paragraph\\">Description of notification topic lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla pariatur quisquam suscipit odio. Nesciunt, assumenda. Quo dolores aperiam, repellendus animi dolorem rerum cumque fugiat corrupti pariatur, adipisci soluta odio voluptate? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni architecto aut nobis facere, eius ea accusantium dolores quae, alias molestiae repudiandae doloremque repellat quisquam voluptatum fugiat id magnam, vitae sed. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione modi quas pariatur at eveniet inventore dolorum fugiat, cum animi ullam quisquam reiciendis aperiam quibusdam sapiente nobis atque omnis quae.</p>
             <div class=\\"fd-notification__footer\\">
@@ -33065,12 +33097,12 @@ exports[`Check stories > Components/Notifications > Story Primary > Should match
 
 <div class=\\"fd-notification\\" tabindex=\\"0\\">
     <div class=\\"fd-notification__body\\">
-        <span class=\\"fd-avatar fd-avatar--accent-color-10 fd-avatar--xs\\" role=\\"img\\" aria-label=\\"Avatar\\">
+        <span class=\\"fd-avatar fd-avatar--circle fd-avatar--accent-color-10 fd-avatar--xs\\" role=\\"img\\" aria-label=\\"Avatar\\">
             <i role=\\"presentation\\" aria-hidden=\\"true\\" aria-label=\\"Product placeholder\\" class=\\"fd-avatar__icon sap-icon--product\\"></i>
         </span>
         <div class=\\"fd-notification__content\\">
             <div class=\\"fd-notification__header\\">
-                <h4 class=\\"fd-notification__title fd-notification__title--unread\\">Notification Title</h4>
+                <h4 class=\\"fd-notification__title fd-notification__title--unread\\">Notification Title (unread)</h4>
             </div>
             <p class=\\"fd-notification__paragraph\\">Description of notification topic</p>
             <div class=\\"fd-notification__footer\\">
