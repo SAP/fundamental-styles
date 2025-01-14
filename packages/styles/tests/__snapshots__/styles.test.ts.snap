@@ -49990,16 +49990,16 @@ exports[`Check stories > Components/User Menu > Story Default > Should match sna
                         style=\\"background-image: url('/assets/images/portraits/L_80x80_F3.png');\\">
                         <i class=\\"fd-avatar__zoom-icon sap-icon--edit\\" aria-label=\\"Edit\\" role=\\"presentation\\" aria-hidden=\\"true\\"></i>
                     </span>
-                    <div class=\\"fd-user-menu__subheader\\">
+                    <div class=\\"fd-user-menu__header-container\\">
                         <div class=\\"fd-user-menu__user-name\\">Lisa Miller</div>
-                        <div class=\\"fd-user-menu__user-info\\">lisa.miller@test.com</div>
-                        <div class=\\"fd-user-menu__user-role\\">User Experience Designer</div>
+                        <div class=\\"fd-user-menu__subline\\">lisa.miller@test.com</div>
+                        <div class=\\"fd-user-menu__subline\\">User Experience Designer</div>
                     </div>
                 </div>
                 <div class=\\"fd-user-menu__content-container\\">
                     <ul class=\\"fd-navigation-list\\" role=\\"list\\">
-                        <li class=\\"fd-navigation-list__item\\" role=\\"listitem\\" tabindex=\\"-1\\">
-                            <div class=\\"fd-navigation-list__content\\" tabindex=\\"0\\">
+                        <li class=\\"fd-navigation-list__item\\" role=\\"none\\">
+                            <a class=\\"fd-navigation-list__content\\" role=\\"listitem\\" tabindex=\\"0\\">
                                 <div class=\\"fd-navigation-list__content-container\\">
                                     <span class=\\"fd-navigation-list__icon\\">
                                         <i class=\\" sap-icon--action-settings\\" role=\\"presentation\\"></i>
@@ -50009,27 +50009,27 @@ exports[`Check stories > Components/User Menu > Story Default > Should match sna
                                 <div class=\\"fd-navigation-list__expander\\">
                                     <i class=\\"sap-icon--navigation-right-arrow\\" role=\\"presentation\\"></i>
                                 </div>
-                            </div>
+                            </a>
                         </li>
-                        <li class=\\"fd-navigation-list__item\\" role=\\"listitem\\" tabindex=\\"-1\\">
-                            <div class=\\"fd-navigation-list__content\\" tabindex=\\"0\\">
+                        <li class=\\"fd-navigation-list__item\\" role=\\"none\\">
+                            <a class=\\"fd-navigation-list__content\\" role=\\"listitem\\" tabindex=\\"0\\">
                                 <div class=\\"fd-navigation-list__content-container\\">
                                     <span class=\\"fd-navigation-list__icon\\">
                                         <i class=\\" sap-icon--official-service\\" role=\\"presentation\\"></i>
                                     </span>
                                     <span class=\\"fd-navigation-list__text\\">Legal Information</span>
                                 </div>
-                            </div>
+                            </a>
                         </li>
-                        <li class=\\"fd-navigation-list__item\\" role=\\"listitem\\" tabindex=\\"-1\\">
-                            <div class=\\"fd-navigation-list__content\\" tabindex=\\"0\\">
+                        <li class=\\"fd-navigation-list__item\\" role=\\"none\\">
+                            <a class=\\"fd-navigation-list__content\\" role=\\"listitem\\" tabindex=\\"0\\">
                                 <div class=\\"fd-navigation-list__content-container\\">
                                     <span class=\\"fd-navigation-list__icon\\">
                                         <i class=\\" sap-icon--message-information\\" role=\\"presentation\\"></i>
                                     </span>
                                     <span class=\\"fd-navigation-list__text\\">About</span>
                                 </div>
-                            </div>
+                            </a>
                         </li>
                     </ul>
                 </div>
@@ -50057,7 +50057,7 @@ exports[`Check stories > Components/User Menu > Story Default > Should match sna
                         style=\\"background-image: url('/assets/images/portraits/L_80x80_F3.png');\\">
                         <i class=\\"fd-avatar__zoom-icon fd-avatar__zoom-icon--indication-8 sap-icon--edit\\" aria-label=\\"Edit\\" role=\\"presentation\\" aria-hidden=\\"true\\"></i>
                     </span>
-                    <div class=\\"fd-user-menu__subheader\\">
+                    <div class=\\"fd-user-menu__header-container\\">
                         <div class=\\"fd-user-menu__user-name\\">Lisa Miller</div>
                         <div class=\\"fd-user-menu__subline\\">lisa.miller@test.com</div>
                         <div class=\\"fd-user-menu__subline\\">User Experience Designer</div>
@@ -50086,14 +50086,14 @@ exports[`Check stories > Components/User Menu > Story Default > Should match sna
                         </div>
                         <div role=\\"region\\" aria-labelledby=\\"__panel-title-8\\" class=\\"fd-panel__content fd-panel__content--no-padding\\" aria-hidden=\\"false\\" id=\\"__panel-8\\">
                             <ul class=\\"fd-list fd-list--byline\\" role=\\"list\\">
-                                <li role=\\"listitem\\" tabindex=\\"0\\" class=\\"fd-list__item\\">
+                                <li role=\\"listitem\\" tabindex=\\"0\\" class=\\"fd-list__item fd-list__item--interractive\\">
                                     <span class=\\"fd-avatar fd-avatar--sm fd-avatar--circle\\" aria-role=\\"img\\" aria-label=\\"Lisa Miller\\">LM</span>
                                     <div class=\\"fd-list__content\\">
                                         <div class=\\"fd-list__title\\">Lisa Miller</div>
                                         <div class=\\"fd-list__byline\\">test.lisa.miller@test.com</div>
                                     </div>
                                 </li>
-                                <li role=\\"listitem\\" tabindex=\\"0\\" class=\\"fd-list__item\\">
+                                <li role=\\"listitem\\" tabindex=\\"0\\" class=\\"fd-list__item fd-list__item--interractive\\">
                                     <span
                                         class=\\"fd-avatar fd-avatar--sm fd-avatar--circle fd-avatar--thumbnail\\"
                                         aria-label=\\"Avatar\\"
@@ -50108,8 +50108,8 @@ exports[`Check stories > Components/User Menu > Story Default > Should match sna
                         </div>
                     </div>
                     <ul class=\\"fd-navigation-list\\" role=\\"list\\">
-                        <li class=\\"fd-navigation-list__item\\" role=\\"listitem\\" tabindex=\\"-1\\">
-                            <div class=\\"fd-navigation-list__content\\" tabindex=\\"0\\">
+                        <li class=\\"fd-navigation-list__item\\" role=\\"none\\">
+                            <a class=\\"fd-navigation-list__content\\" role=\\"listitem\\" tabindex=\\"0\\">
                                 <div class=\\"fd-navigation-list__content-container\\">
                                     <span class=\\"fd-navigation-list__icon\\">
                                         <i class=\\" sap-icon--action-settings\\" role=\\"presentation\\"></i>
@@ -50119,27 +50119,27 @@ exports[`Check stories > Components/User Menu > Story Default > Should match sna
                                 <div class=\\"fd-navigation-list__expander\\">
                                     <i class=\\"sap-icon--navigation-right-arrow\\" role=\\"presentation\\"></i>
                                 </div>
-                            </div>
+                            </a>
                         </li>
-                        <li class=\\"fd-navigation-list__item\\" role=\\"listitem\\" tabindex=\\"-1\\">
-                            <div class=\\"fd-navigation-list__content\\" tabindex=\\"0\\">
+                        <li class=\\"fd-navigation-list__item\\" role=\\"none\\">
+                            <a class=\\"fd-navigation-list__content\\" role=\\"listitem\\" tabindex=\\"0\\">
                                 <div class=\\"fd-navigation-list__content-container\\">
                                     <span class=\\"fd-navigation-list__icon\\">
                                         <i class=\\" sap-icon--official-service\\" role=\\"presentation\\"></i>
                                     </span>
                                     <span class=\\"fd-navigation-list__text\\">Legal Information</span>
                                 </div>
-                            </div>
+                            </a>
                         </li>
-                        <li class=\\"fd-navigation-list__item\\" role=\\"listitem\\" tabindex=\\"-1\\">
-                            <div class=\\"fd-navigation-list__content\\" tabindex=\\"0\\">
+                        <li class=\\"fd-navigation-list__item\\" role=\\"none\\">
+                            <a class=\\"fd-navigation-list__content\\" role=\\"listitem\\" tabindex=\\"0\\">
                                 <div class=\\"fd-navigation-list__content-container\\">
                                     <span class=\\"fd-navigation-list__icon\\">
                                         <i class=\\" sap-icon--message-information\\" role=\\"presentation\\"></i>
                                     </span>
                                     <span class=\\"fd-navigation-list__text\\">About</span>
                                 </div>
-                            </div>
+                            </a>
                         </li>
                     </ul>
                 </div>
@@ -50156,13 +50156,16 @@ exports[`Check stories > Components/User Menu > Story Default > Should match sna
             </div>
         </div>
     </div>
+</div>
 
-    <!-- Navigation List -->
-    <!-- Have to keep it for now, until the Side Nav is ready -->
-    <!-- <div style=\\"width: 300px\\">
-        <ul class=\\"fd-navigation-list level-1\\">
-            <li class=\\"fd-navigation-list__item\\">
-                <div class=\\"fd-navigation-list__content is-focus\\">
+
+<!-- Navigation List -->
+<!-- Have to keep it for now, until the Side Nav is ready -->
+<!-- <div class=\\"fddocs-container\\">
+    <div style=\\"width: 300px\\">
+        <ul class=\\"fd-navigation-list level-1\\" role=\\"tree\\" aria-roledescription=\\"Navigation List Tree\\">
+            <li class=\\"fd-navigation-list__item\\" role=\\"none\\">
+                <a class=\\"fd-navigation-list__content is-focus\\" role=\\"treeitem\\" tabindex=\\"0\\">
                     <div class=\\"fd-navigation-list__content-container\\">
                         <span class=\\"fd-navigation-list__icon\\">
                             <i class=\\" sap-icon--calendar\\" role=\\"presentation\\"></i>
@@ -50172,10 +50175,10 @@ exports[`Check stories > Components/User Menu > Story Default > Should match sna
                     <div class=\\"fd-navigation-list__expander\\">
                         <i class=\\"sap-icon--navigation-down-arrow\\" role=\\"presentation\\"></i>
                     </div>
-                </div>
+                </a>
             </li>
-            <li class=\\"fd-navigation-list__item\\">
-                <div class=\\"fd-navigation-list__content\\">
+            <li class=\\"fd-navigation-list__item\\" role=\\"none\\">
+                <a class=\\"fd-navigation-list__content\\" role=\\"treeitem\\" tabindex=\\"0\\">
                     <div class=\\"fd-navigation-list__content-container\\">
                         <span class=\\"fd-navigation-list__icon\\">
                             <i class=\\" sap-icon--calendar\\" role=\\"presentation\\"></i>
@@ -50185,65 +50188,231 @@ exports[`Check stories > Components/User Menu > Story Default > Should match sna
                     <div class=\\"fd-navigation-list__expander\\">
                         <i class=\\"sap-icon--navigation-down-arrow\\" role=\\"presentation\\"></i>
                     </div>
-                </div>
-                <ul class=\\"fd-navigation-list level-2\\">
-                    <li class=\\"fd-navigation-list__item\\">
-                        <div class=\\"fd-navigation-list__content\\">
+                </a>
+                <ul class=\\"fd-navigation-list level-2\\" role=\\"group\\">
+                    <li class=\\"fd-navigation-list__item\\" role=\\"none\\">
+                        <a class=\\"fd-navigation-list__content\\" role=\\"treeitem\\" tabindex=\\"0\\">
                             <div class=\\"fd-navigation-list__content-container\\">
                                 <span class=\\"fd-navigation-list__text\\">Child Item</span>
                             </div>
-                        </div>
+                        </a>
                     </li>
-                    <li class=\\"fd-navigation-list__item\\">
-                        <div class=\\"fd-navigation-list__content is-selected\\">
+                    <li class=\\"fd-navigation-list__item\\" role=\\"none\\">
+                        <a class=\\"fd-navigation-list__content is-selected\\" role=\\"treeitem\\" tabindex=\\"0\\">
                             <div class=\\"fd-navigation-list__content-container\\">
                                 <span class=\\"fd-navigation-list__text\\">Child Item</span>
                             </div>
-                        </div>
+                        </a>
                     </li>
-                    <li class=\\"fd-navigation-list__item\\">
-                        <div class=\\"fd-navigation-list__content\\">
+                    <li class=\\"fd-navigation-list__item\\" role=\\"none\\">
+                        <a class=\\"fd-navigation-list__content\\" role=\\"treeitem\\" tabindex=\\"0\\">
                             <div class=\\"fd-navigation-list__content-container\\">
                                 <span class=\\"fd-navigation-list__text\\">Child Item</span>
                             </div>
-                        </div>
+                        </a>
                     </li>
                 </ul>
             </li>
-            <li class=\\"fd-navigation-list__item\\">
-                <div class=\\"fd-navigation-list__content is-selected is-focus\\">
+            <li class=\\"fd-navigation-list__item\\" role=\\"none\\">
+                <a class=\\"fd-navigation-list__content is-selected is-focus\\" role=\\"treeitem\\" tabindex=\\"0\\">
                     <div class=\\"fd-navigation-list__content-container\\">
                         <span class=\\"fd-navigation-list__icon\\">
                             <i class=\\" sap-icon--calendar\\" role=\\"presentation\\"></i>
                         </span>
                         <span class=\\"fd-navigation-list__text\\">Nav Item</span>
                     </div>
-                </div>
+                </a>
             </li>
-            <li class=\\"fd-navigation-list__item\\">
-                <div class=\\"fd-navigation-list__content\\">
+            <li class=\\"fd-navigation-list__item\\" role=\\"none\\">
+                <a class=\\"fd-navigation-list__content\\" role=\\"treeitem\\" tabindex=\\"0\\">
                     <div class=\\"fd-navigation-list__content-container\\">
                         <span class=\\"fd-navigation-list__icon\\">
                             <i class=\\" sap-icon--calendar\\" role=\\"presentation\\"></i>
                         </span>
                         <span class=\\"fd-navigation-list__text\\">Nav Item</span>
                     </div>
-                </div>
+                </a>
             </li>
             <li class=\\"fd-navigation-list__item fd-navigation-list__item--separator\\" tabindex=\\"-1\\" aria-disabled=\\"true\\"></li>
-            <li class=\\"fd-navigation-list__item\\">
-                <div class=\\"fd-navigation-list__content\\">
+            <li class=\\"fd-navigation-list__item\\" role=\\"none\\">
+                <a class=\\"fd-navigation-list__content\\" role=\\"treeitem\\" tabindex=\\"0\\">
                     <div class=\\"fd-navigation-list__content-container\\">
                         <span class=\\"fd-navigation-list__icon\\">
                             <i class=\\" sap-icon--calendar\\" role=\\"presentation\\"></i>
                         </span>
                         <span class=\\"fd-navigation-list__text\\">Nav Item</span>
                     </div>
-                </div>
+                </a>
             </li>
         </ul>
-    </div>  -->
+    </div>
 </div>
+
+<div class=\\"fddocs-container\\" style=\\"margin-block: 5rem;\\">
+    <div style=\\"width: 300px\\">
+        <ul class=\\"fd-navigation-list level-1\\" role=\\"tree\\" aria-roledescription=\\"Navigation List Tree\\">
+            <li class=\\"fd-navigation-list__item\\" role=\\"none\\">
+                <a class=\\"fd-navigation-list__content\\" role=\\"treeitem\\" tabindex=\\"0\\">
+                    <div class=\\"fd-navigation-list__content-container\\">
+                        <span class=\\"fd-navigation-list__icon\\">
+                            <i class=\\" sap-icon--calendar\\" role=\\"presentation\\"></i>
+                        </span>
+                        <span class=\\"fd-navigation-list__text\\">Regular</span>
+                    </div>
+                    <div class=\\"fd-navigation-list__expander\\">
+                        <i class=\\"sap-icon--navigation-down-arrow\\" role=\\"presentation\\"></i>
+                    </div>
+                </a>
+            </li>
+            <li class=\\"fd-navigation-list__item\\" role=\\"none\\">
+                <a class=\\"fd-navigation-list__content is-hover\\" role=\\"treeitem\\" tabindex=\\"0\\">
+                    <div class=\\"fd-navigation-list__content-container\\">
+                        <span class=\\"fd-navigation-list__icon\\">
+                            <i class=\\" sap-icon--calendar\\" role=\\"presentation\\"></i>
+                        </span>
+                        <span class=\\"fd-navigation-list__text\\">Hover</span>
+                    </div>
+                    <div class=\\"fd-navigation-list__expander\\">
+                        <i class=\\"sap-icon--navigation-down-arrow\\" role=\\"presentation\\"></i>
+                    </div>
+                </a>
+            </li>
+            <li class=\\"fd-navigation-list__item\\" role=\\"none\\">
+                <a class=\\"fd-navigation-list__content is-active\\" role=\\"treeitem\\" tabindex=\\"0\\">
+                    <div class=\\"fd-navigation-list__content-container\\">
+                        <span class=\\"fd-navigation-list__icon\\">
+                            <i class=\\" sap-icon--calendar\\" role=\\"presentation\\"></i>
+                        </span>
+                        <span class=\\"fd-navigation-list__text\\">Active</span>
+                    </div>
+                    <div class=\\"fd-navigation-list__expander\\">
+                        <i class=\\"sap-icon--navigation-down-arrow\\" role=\\"presentation\\"></i>
+                    </div>
+                </a>
+            </li>
+            <li class=\\"fd-navigation-list__item\\" role=\\"none\\">
+                <a class=\\"fd-navigation-list__content is-focus\\" role=\\"treeitem\\" tabindex=\\"0\\">
+                    <div class=\\"fd-navigation-list__content-container\\">
+                        <span class=\\"fd-navigation-list__icon\\">
+                            <i class=\\" sap-icon--calendar\\" role=\\"presentation\\"></i>
+                        </span>
+                        <span class=\\"fd-navigation-list__text\\">Focus</span>
+                    </div>
+                    <div class=\\"fd-navigation-list__expander\\">
+                        <i class=\\"sap-icon--navigation-down-arrow\\" role=\\"presentation\\"></i>
+                    </div>
+                </a>
+            </li>
+            <li class=\\"fd-navigation-list__item\\" role=\\"none\\">
+                <a class=\\"fd-navigation-list__content is-selected\\" role=\\"treeitem\\" tabindex=\\"0\\">
+                    <div class=\\"fd-navigation-list__content-container\\">
+                        <span class=\\"fd-navigation-list__icon\\">
+                            <i class=\\" sap-icon--calendar\\" role=\\"presentation\\"></i>
+                        </span>
+                        <span class=\\"fd-navigation-list__text\\">Selected</span>
+                    </div>
+                    <div class=\\"fd-navigation-list__expander\\">
+                        <i class=\\"sap-icon--navigation-down-arrow\\" role=\\"presentation\\"></i>
+                    </div>
+                </a>
+            </li>
+            <li class=\\"fd-navigation-list__item\\" role=\\"none\\">
+                <a class=\\"fd-navigation-list__content is-selected is-hover\\" role=\\"treeitem\\" tabindex=\\"0\\">
+                    <div class=\\"fd-navigation-list__content-container\\">
+                        <span class=\\"fd-navigation-list__icon\\">
+                            <i class=\\" sap-icon--calendar\\" role=\\"presentation\\"></i>
+                        </span>
+                        <span class=\\"fd-navigation-list__text\\">Selected Hover</span>
+                    </div>
+                    <div class=\\"fd-navigation-list__expander\\">
+                        <i class=\\"sap-icon--navigation-down-arrow\\" role=\\"presentation\\"></i>
+                    </div>
+                </a>
+            </li>
+            <li class=\\"fd-navigation-list__item\\" role=\\"none\\">
+                <a class=\\"fd-navigation-list__content is-disabled\\" role=\\"treeitem\\" tabindex=\\"-1\\">
+                    <div class=\\"fd-navigation-list__content-container\\">
+                        <span class=\\"fd-navigation-list__icon\\">
+                            <i class=\\" sap-icon--calendar\\" role=\\"presentation\\"></i>
+                        </span>
+                        <span class=\\"fd-navigation-list__text\\">Disabled</span>
+                    </div>
+                    <div class=\\"fd-navigation-list__expander\\">
+                        <i class=\\"sap-icon--navigation-down-arrow\\" role=\\"presentation\\"></i>
+                    </div>
+                </a>
+            </li>
+
+            <li class=\\"fd-navigation-list__item\\" role=\\"none\\">
+                <a class=\\"fd-navigation-list__content\\" role=\\"treeitem\\" tabindex=\\"0\\">
+                    <div class=\\"fd-navigation-list__content-container\\">
+                        <span class=\\"fd-navigation-list__icon\\">
+                            <i class=\\" sap-icon--calendar\\" role=\\"presentation\\"></i>
+                        </span>
+                        <span class=\\"fd-navigation-list__text\\">Nav Item</span>
+                    </div>
+                    <div class=\\"fd-navigation-list__expander\\">
+                        <i class=\\"sap-icon--navigation-down-arrow\\" role=\\"presentation\\"></i>
+                    </div>
+                </a>
+                <ul class=\\"fd-navigation-list level-2\\" role=\\"group\\">
+                    <li class=\\"fd-navigation-list__item\\" role=\\"none\\">
+                        <a class=\\"fd-navigation-list__content\\" role=\\"treeitem\\" tabindex=\\"0\\">
+                            <div class=\\"fd-navigation-list__content-container\\">
+                                <span class=\\"fd-navigation-list__text\\">Child Item</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class=\\"fd-navigation-list__item\\" role=\\"none\\">
+                        <a class=\\"fd-navigation-list__content is-selected\\" role=\\"treeitem\\" tabindex=\\"0\\">
+                            <div class=\\"fd-navigation-list__content-container\\">
+                                <span class=\\"fd-navigation-list__text\\">Child Item</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class=\\"fd-navigation-list__item\\" role=\\"none\\">
+                        <a class=\\"fd-navigation-list__content\\" role=\\"treeitem\\" tabindex=\\"0\\">
+                            <div class=\\"fd-navigation-list__content-container\\">
+                                <span class=\\"fd-navigation-list__text\\">Child Item</span>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li class=\\"fd-navigation-list__item\\" role=\\"none\\">
+                <a class=\\"fd-navigation-list__content is-selected is-focus\\" role=\\"treeitem\\" tabindex=\\"0\\">
+                    <div class=\\"fd-navigation-list__content-container\\">
+                        <span class=\\"fd-navigation-list__icon\\">
+                            <i class=\\" sap-icon--calendar\\" role=\\"presentation\\"></i>
+                        </span>
+                        <span class=\\"fd-navigation-list__text\\">Nav Item</span>
+                    </div>
+                </a>
+            </li>
+            <li class=\\"fd-navigation-list__item\\" role=\\"none\\">
+                <a class=\\"fd-navigation-list__content\\" role=\\"treeitem\\" tabindex=\\"0\\">
+                    <div class=\\"fd-navigation-list__content-container\\">
+                        <span class=\\"fd-navigation-list__icon\\">
+                            <i class=\\" sap-icon--calendar\\" role=\\"presentation\\"></i>
+                        </span>
+                        <span class=\\"fd-navigation-list__text\\">Nav Item</span>
+                    </div>
+                </a>
+            </li>
+            <li class=\\"fd-navigation-list__item fd-navigation-list__item--separator\\" tabindex=\\"-1\\" aria-disabled=\\"true\\"></li>
+            <li class=\\"fd-navigation-list__item\\" role=\\"none\\">
+                <a class=\\"fd-navigation-list__content\\" role=\\"treeitem\\" tabindex=\\"0\\">
+                    <div class=\\"fd-navigation-list__content-container\\">
+                        <span class=\\"fd-navigation-list__icon\\">
+                            <i class=\\" sap-icon--calendar\\" role=\\"presentation\\"></i>
+                        </span>
+                        <span class=\\"fd-navigation-list__text\\">Nav Item</span>
+                    </div>
+                </a>
+            </li>
+        </ul>
+    </div>
+</div> -->
 "
 `;
 
@@ -50274,7 +50443,7 @@ exports[`Check stories > Components/User Menu > Story Mobile > Should match snap
                         style=\\"background-image: url('/assets/images/portraits/L_80x80_F3.png');\\">
                         <i class=\\"fd-avatar__zoom-icon fd-avatar__zoom-icon--indication-8 sap-icon--edit\\" aria-label=\\"Edit\\" role=\\"presentation\\" aria-hidden=\\"true\\"></i>
                     </span>
-                    <div class=\\"fd-user-menu__subheader\\">
+                    <div class=\\"fd-user-menu__header-container\\">
                         <div class=\\"fd-user-menu__user-name\\">Lisa Miller</div>
                         <div class=\\"fd-user-menu__subline\\">lisa.miller@test.com</div>
                         <div class=\\"fd-user-menu__subline\\">User Experience Designer</div>

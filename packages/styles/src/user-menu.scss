@@ -43,6 +43,7 @@ $panel: #{$fd-namespace}-panel;
     };
   }
 
+  &__header-container,
   &__subheader {
     @include fd-reset();
 
