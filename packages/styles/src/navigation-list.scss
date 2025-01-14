@@ -59,6 +59,7 @@ $block: #{$fd-namespace}-navigation-list;
 
   &__content {
     @include fd-reset();
+
     @include fd-flex-vertical-center() {
       gap: 0.5rem;
     };
@@ -72,10 +73,7 @@ $block: #{$fd-namespace}-navigation-list;
     background: var(--fdNavigationList_Content_Background);
     border-width: var(--sapList_BorderWidth);
     border-style: solid;
-    border-top-color: var(--fdNavigationList_Content_Border_Top_Color, transparent);
-    border-bottom-color: var(--fdNavigationList_Content_Border_Bottom_Color, var(--fdNavigationList_Content_Border_Color));
-    border-left-color: var(--fdNavigationList_Content_Border_Left_Color, transparent);
-    border-right-color: var(--fdNavigationList_Content_Border_Right_Color, transparent);
+    border-color: var(--fdNavigationList_Content_Border_Top_Color, transparent) var(--fdNavigationList_Content_Border_Right_Color, transparent) var(--fdNavigationList_Content_Border_Bottom_Color, var(--fdNavigationList_Content_Border_Color)) var(--fdNavigationList_Content_Border_Left_Color, transparent);
 
 
     &::before {
