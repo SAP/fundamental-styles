@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.39.0-rc.47](https://github.com/SAP/fundamental-styles/compare/v0.39.0-rc.46...v0.39.0-rc.47) (2025-01-16)
+
+### Bug Fixes
+
+- **styles:** update Notifications for VEGA [ci visual] ([#5892](https://github.com/SAP/fundamental-styles/issues/5892)) ([669e7e1](https://github.com/SAP/fundamental-styles/commit/669e7e179ccc507dd58554ceca648b2e80c1cd85))
+
 # [0.39.0-rc.46](https://github.com/SAP/fundamental-styles/compare/v0.39.0-rc.45...v0.39.0-rc.46) (2024-12-23)
 
 **Note:** Version bump only for package fundamental-styles
