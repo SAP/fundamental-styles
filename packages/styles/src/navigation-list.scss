@@ -12,18 +12,17 @@ $block: #{$fd-namespace}-navigation-list;
   --fdNavigationList_Content_Selection_Indicator_Color: transparent;
 
   // Text
-  --fdNavigationList_Text_Shadow: none;
   --fdNavigationList_Text_Offset: 1rem;
   --fdNavigationList_Text_Color: var(--sapList_TextColor);
   --fdNavigationList_Text_Font_Size: var(--sapFontSize);
   --fdNavigationList_Text_Font_Family: var(--sapFontBoldFamily);
 
   // Icon
-  --fdNavigationList_Icon_Width: 2.5rem;
-  --fdNavigationList_Icon_Font_Size: 1.125rem;
+  --fdNavigationList_Icon_Font_Size: 1rem;
+
 
   // Expander
-  --fdNavigationList_Expander_Width: 2.5rem;
+  --fdNavigationList_Expander_Width: 2.25rem;
   --fdNavigationList_Expander_Font_Size: 1rem;
 
   @include fd-reset();
@@ -60,14 +59,22 @@ $block: #{$fd-namespace}-navigation-list;
 
   &__content {
     @include fd-reset();
-    @include fd-flex-vertical-center();
+
+    @include fd-flex-vertical-center() {
+      gap: 0.5rem;
+    };
 
     cursor: pointer;
     position: relative;
     overflow: hidden;
-    border-radius: var(--sapButton_BorderCornerRadius);
+    padding-inline-end: 0.375rem;
+    border-radius: var(--fdNavigationList_Content_Border_Radius);
     height: var(--fdNavigationList_Content_Height);
     background: var(--fdNavigationList_Content_Background);
+    border-width: var(--sapList_BorderWidth);
+    border-style: solid;
+    border-color: var(--fdNavigationList_Content_Border_Top_Color, transparent) var(--fdNavigationList_Content_Border_Right_Color, transparent) var(--fdNavigationList_Content_Border_Bottom_Color, var(--fdNavigationList_Content_Border_Color)) var(--fdNavigationList_Content_Border_Left_Color, transparent);
+
 
     &::before {
       content: "";
@@ -92,27 +99,47 @@ $block: #{$fd-namespace}-navigation-list;
 
     @include fd-hover() {
       --fdNavigationList_Content_Background: var(--sapList_Hover_Background);
+      --fdNavigationList_Content_Border_Top_Color: var(--fdNavigationList_Content_Border_Color);
+      --fdNavigationList_Content_Border_Left_Color: var(--fdNavigationList_Content_Border_Color);
+      --fdNavigationList_Content_Border_Right_Color: var(--fdNavigationList_Content_Border_Color);
     }
 
     @include fd-active() {
       --fdNavigationList_Text_Color: var(--sapList_Active_TextColor);
       --fdNavigationList_Content_Background: var(--sapList_Active_Background);
+      --fdNavigationList_Content_Border_Top_Color: var(--fdNavigationList_Content_Border_Color);
+      --fdNavigationList_Content_Border_Left_Color: var(--fdNavigationList_Content_Border_Color);
+      --fdNavigationList_Content_Border_Right_Color: var(--fdNavigationList_Content_Border_Color);
     }
 
     @include fd-selected() {
-      --fdNavigationList_Text_Shadow: var(--sapContent_TextShadow);
       --fdNavigationList_Content_Background: var(--sapList_SelectionBackgroundColor);
       --fdNavigationList_Content_Selection_Indicator_Color: var(--sapList_SelectionBorderColor);
+      --fdNavigationList_Content_Border_Top_Color: var(--fdNavigationList_Content_Border_Color);
+      --fdNavigationList_Content_Border_Left_Color: var(--fdNavigationList_Content_Border_Color);
+      --fdNavigationList_Content_Border_Right_Color: var(--fdNavigationList_Content_Border_Color);
 
       @include fd-hover() {
-        --fdNavigationList_Text_Shadow: var(--sapContent_TextShadow);
         --fdNavigationList_Content_Background: var(--sapList_Hover_SelectionBackground);
         --fdNavigationList_Content_Selection_Indicator_Color: var(--sapList_SelectionBorderColor);
+        --fdNavigationList_Content_Border_Top_Color: var(--fdNavigationList_Content_Border_Color);
+        --fdNavigationList_Content_Border_Left_Color: var(--fdNavigationList_Content_Border_Color);
+        --fdNavigationList_Content_Border_Right_Color: var(--fdNavigationList_Content_Border_Color);
       }
     }
 
     @include fd-focus() {
+      --fdNavigationList_Content_Border_Top_Color: var(--fdNavigationList_Content_Border_Color);
+      --fdNavigationList_Content_Border_Left_Color: var(--fdNavigationList_Content_Border_Color);
+      --fdNavigationList_Content_Border_Right_Color: var(--fdNavigationList_Content_Border_Color);
+      
       outline: var(--sapContent_FocusStyle) var(--sapContent_FocusWidth) var(--sapContent_FocusColor);
+      outline-offset: var(--fdNavigationList_Content_Outline_Offset);
+    }
+
+    @include fd-disabled() {
+      pointer-events: none;
+      opacity: var(--sapContent_DisabledOpacity);
     }
   }
 
@@ -127,10 +154,11 @@ $block: #{$fd-namespace}-navigation-list;
 
   &__icon {
     @include fd-reset();
-    @include fd-flex-center();
-    @include fd-set-width(var(--fdNavigationList_Icon_Width));
-    
+    @include fd-flex-vertical-center();
+
     height: 100%;
+    padding-inline: 1rem 0.5rem;
+    color: var(--fdNavigationList_Text_Color);
 
     [class*="sap-icon"] {
       font-size: var(--fdNavigationList_Icon_Font_Size);
@@ -147,7 +175,6 @@ $block: #{$fd-namespace}-navigation-list;
 
     width: 100%;
     color: var(--fdNavigationList_Text_Color);
-    text-shadow: var(--fdNavigationList_Text_Shadow);
     font-size: var(--fdNavigationList_Text_Font_Size);
     font-family: var(--fdNavigationList_Text_Font_Family);
     padding-inline-start: var(--fdNavigationList_Text_Offset);
@@ -159,6 +186,7 @@ $block: #{$fd-namespace}-navigation-list;
     @include fd-set-width(var(--fdNavigationList_Expander_Width));
 
     height: 100%;
+    color: var(--fdNavigationList_Text_Color);
 
     [class*="sap-icon"] {
       font-size: var(--fdNavigationList_Expander_Font_Size);
