@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.39.0-rc.48](https://github.com/SAP/fundamental-styles/compare/v0.39.0-rc.47...v0.39.0-rc.48) (2025-01-16)
+
+### Bug Fixes
+
+- **styles:** update User menu for VEGA ([#5893](https://github.com/SAP/fundamental-styles/issues/5893)) ([53463ae](https://github.com/SAP/fundamental-styles/commit/53463aeab023d92a5f332be1151be7d63296762b))
+
 # [0.39.0-rc.47](https://github.com/SAP/fundamental-styles/compare/v0.39.0-rc.46...v0.39.0-rc.47) (2025-01-16)
 
 ### Bug Fixes
