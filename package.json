@@ -102,7 +102,7 @@
         "eslint-plugin-react-hooks": "5.0.0",
         "eslint-plugin-storybook": "^0.11.0",
         "fast-glob": "3.3.2",
-        "fs-extra": "11.2.0",
+        "fs-extra": "11.3.0",
         "git-semver-tags": "4.1.1",
         "glob": "8.0.3",
         "husky": "7.0.4",
