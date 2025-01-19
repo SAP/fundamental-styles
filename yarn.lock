@@ -4041,11 +4041,11 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/core@npm:8.4.7":
-  version: 8.4.7
-  resolution: "@storybook/core@npm:8.4.7"
+"@storybook/core@npm:8.5.0":
+  version: 8.5.0
+  resolution: "@storybook/core@npm:8.5.0"
   dependencies:
-    "@storybook/csf": "npm:^0.1.11"
+    "@storybook/csf": "npm:0.1.12"
     better-opn: "npm:^3.0.2"
     browser-assert: "npm:^1.2.1"
     esbuild: "npm:^0.18.0 || ^0.19.0 || ^0.20.0 || ^0.21.0 || ^0.22.0 || ^0.23.0 || ^0.24.0"
@@ -4061,7 +4061,7 @@ __metadata:
   peerDependenciesMeta:
     prettier:
       optional: true
-  checksum: 10/a0bc9e1ea05ae69a914e508966f27208815de7aa2a4bed010c2c194bbdf397742f83e19ffa2efd98d2c04f08854c9b0b327632f6b0a3a90d2d3dd4c5002f14c5
+  checksum: 10/847fe2a647238a9acc60cb4ea803a7153fff2bb959892999be63ada12ff2bc9af2bb522d38b16f0c5c34ea78ae5d964078a797ee7b6d479252b3882061372e83
   languageName: node
   linkType: hard
 
@@ -4085,7 +4085,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/csf@npm:^0.1.11":
+"@storybook/csf@npm:0.1.12, @storybook/csf@npm:^0.1.11":
   version: 0.1.12
   resolution: "@storybook/csf@npm:0.1.12"
   dependencies:
@@ -18046,10 +18046,10 @@ __metadata:
   linkType: hard
 
 "storybook@npm:^8.4.7":
-  version: 8.4.7
-  resolution: "storybook@npm:8.4.7"
+  version: 8.5.0
+  resolution: "storybook@npm:8.5.0"
   dependencies:
-    "@storybook/core": "npm:8.4.7"
+    "@storybook/core": "npm:8.5.0"
   peerDependencies:
     prettier: ^2 || ^3
   peerDependenciesMeta:
@@ -18059,7 +18059,7 @@ __metadata:
     getstorybook: ./bin/index.cjs
     sb: ./bin/index.cjs
     storybook: ./bin/index.cjs
-  checksum: 10/827979504f98b69397bf91c395d0eea030d5702d0d28ccea4919a5037f628038129b287113aec9d8ecd1062e40b8b22423a300a32381c2d0b340b6960e3b42ea
+  checksum: 10/7d0de8d739e600ffc45f4f0ab6bf698876a3aa4f63ad9d2b64bdada3816b77a19d01aee672d0c13d94a21072648b3c852b94a43eda4bd67af15437465c69244d
   languageName: node
   linkType: hard
 
