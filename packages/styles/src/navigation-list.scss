@@ -23,7 +23,9 @@ $block: #{$fd-namespace}-navigation-list;
 
   // Expander
   --fdNavigationList_Expander_Width: 2.25rem;
+  --fdNavigationList_Expander_Height: 2.25rem;
   --fdNavigationList_Expander_Font_Size: 1rem;
+  --fdNavigationList_Expander_Color: var(--sapList_TextColor);
 
   @include fd-reset();
 
@@ -55,26 +57,92 @@ $block: #{$fd-namespace}-navigation-list;
       margin-block: 0.5rem;
       background: var(--sapToolbar_SeparatorColor);
     }
+
+    &--group {
+      --fdNavigationList_Text_Color: var(--sapContent_LabelColor);
+      --fdNavigationList_Text_Font_Size: var(--sapFontSize);
+      --fdNavigationList_Text_Font_Family: var(--sapFontFamily);
+
+      margin-block-start: var(--fdNavigationList_Group_Item_Margin_Top, 0.5rem);
+    }
+
+    &--quick-create {
+      --fdNavigationList_Text_Color: var(--sapButton_TextColor);
+      
+      .#{$block}__content {
+        --fdNavigationList_Content_Border_Top_Color: var(--sapButton_BorderColor);
+        --fdNavigationList_Content_Border_Bottom_Color: var(--sapButton_BorderColor);
+        --fdNavigationList_Content_Border_Right_Color: var(--sapButton_BorderColor);
+        --fdNavigationList_Content_Border_Left_Color: var(--sapButton_BorderColor);
+
+        @include fd-hover() {
+          --fdNavigationList_Content_Border_Top_Color: var(--sapButton_Hover_BorderColor);
+          --fdNavigationList_Content_Border_Bottom_Color: var(--sapButton_Hover_BorderColor);
+          --fdNavigationList_Content_Border_Right_Color: var(--sapButton_Hover_BorderColor);
+          --fdNavigationList_Content_Border_Left_Color: var(--sapButton_Hover_BorderColor);
+        }
+
+        @include fd-active() {
+          --fdNavigationList_Content_Border_Top_Color: var(--sapButton_Active_BorderColor);
+          --fdNavigationList_Content_Border_Bottom_Color: var(--sapButton_Active_BorderColor);
+          --fdNavigationList_Content_Border_Right_Color: var(--sapButton_Active_BorderColor);
+          --fdNavigationList_Content_Border_Left_Color: var(--sapButton_Active_BorderColor);
+        }
+
+        @include fd-focus() {
+          --fdNavigationList_Content_Border_Top_Color: var(--sapButton_BorderColor);
+          --fdNavigationList_Content_Border_Bottom_Color: var(--sapButton_BorderColor);
+          --fdNavigationList_Content_Border_Right_Color: var(--sapButton_BorderColor);
+          --fdNavigationList_Content_Border_Left_Color: var(--sapButton_BorderColor);
+        }
+      }
+    }
+
+    &--two-click {
+      .#{$block}__navigation-indicator {
+        position: relative;
+
+        &::before {
+          left: -0.25rem;
+          position: absolute;
+          content: "";
+          width: 0.0625rem;
+          height: var(--sapElement_Compact_Height);
+          background: var(--sapToolbar_SeparatorColor);
+        }
+
+        @include fd-rtl() {
+          &::before {
+            left: auto;
+            right: -0.25rem;
+          }
+        }
+      }
+    }
   }
 
   &__content {
     @include fd-reset();
 
     @include fd-flex-vertical-center() {
-      gap: 0.5rem;
+      gap: var(--fdNavigationList_Content_Gap, 0.5rem);
     };
 
     cursor: pointer;
     position: relative;
     overflow: hidden;
-    padding-inline-end: 0.375rem;
+    padding-inline-end: var(--fdNavigationList_Content_Padding_Inline_End, 1rem);
     border-radius: var(--fdNavigationList_Content_Border_Radius);
     height: var(--fdNavigationList_Content_Height);
+    min-width: var(--fdNavigationList_Content_Width, 100%);
     background: var(--fdNavigationList_Content_Background);
     border-width: var(--sapList_BorderWidth);
     border-style: solid;
     border-color: var(--fdNavigationList_Content_Border_Top_Color, transparent) var(--fdNavigationList_Content_Border_Right_Color, transparent) var(--fdNavigationList_Content_Border_Bottom_Color, var(--fdNavigationList_Content_Border_Color)) var(--fdNavigationList_Content_Border_Left_Color, transparent);
 
+    &:has(.#{$block}__navigation-indicator, .#{$block}__indication-arrow) {
+      --fdNavigationList_Content_Padding_Inline_End: 0.375rem;
+    }
 
     &::before {
       content: "";
@@ -106,6 +174,7 @@ $block: #{$fd-namespace}-navigation-list;
 
     @include fd-active() {
       --fdNavigationList_Text_Color: var(--sapList_Active_TextColor);
+      --fdNavigationList_Expander_Color: var(--sapList_Active_TextColor);
       --fdNavigationList_Content_Background: var(--sapList_Active_Background);
       --fdNavigationList_Content_Border_Top_Color: var(--fdNavigationList_Content_Border_Color);
       --fdNavigationList_Content_Border_Left_Color: var(--fdNavigationList_Content_Border_Color);
@@ -161,6 +230,9 @@ $block: #{$fd-namespace}-navigation-list;
     color: var(--fdNavigationList_Text_Color);
 
     [class*="sap-icon"] {
+      @include fd-flex-center();
+
+      width: 1rem;
       font-size: var(--fdNavigationList_Icon_Font_Size);
     }
 
@@ -178,24 +250,138 @@ $block: #{$fd-namespace}-navigation-list;
     font-size: var(--fdNavigationList_Text_Font_Size);
     font-family: var(--fdNavigationList_Text_Font_Family);
     padding-inline-start: var(--fdNavigationList_Text_Offset);
+    display: var(--fdNavigationList_Text_Display, inline-block);
   }
 
-  &__expander {
+  &__navigation-indicator {
     @include fd-reset();
     @include fd-flex-center();
     @include fd-set-width(var(--fdNavigationList_Expander_Width));
+    @include fd-set-height(var(--fdNavigationList_Expander_Height));
 
     height: 100%;
-    color: var(--fdNavigationList_Text_Color);
+    color: var(--fdNavigationList_Expander_Color);
+    display: var(--fdNavigationList_Expander_Display, inline-flex);
+    border-radius: var(--sapButton_BorderCornerRadius);
 
     [class*="sap-icon"] {
       font-size: var(--fdNavigationList_Expander_Font_Size);
     }
   }
 
-  @include fd-compact-or-condensed() {
+  &__indication-arrow {
+    @include fd-reset();
+    @include fd-flex-center();
+    @include fd-set-width(var(--fdNavigationList_Expander_Width));
+
+    height: 100%;
+    color: var(--fdNavigationList_Expander_Color);
+    display: var(--fdNavigationList_Indicator_Display, inline-flex);
+
+    [class*="sap-icon"] {
+      font-size: var(--fdNavigationList_Expander_Font_Size);
+    }
+  }
+
+  .#{$block}__popover-body {
+    padding-block: 0.5rem;
+    padding-inline: 0.5rem;
+  }
+
+  @include fd-compact() {
     --fdNavigationList_Icon_Font_Size: 1rem;
     --fdNavigationList_Text_Font_Size: var(--sapFontSize);
     --fdNavigationList_Content_Height: var(--sapElement_Compact_LineHeight);
+    --fdNavigationList_Expander_Height: 1.5625rem;
+    --fdNavigationList_Expander_Width: 2rem;
+    
+  }
+
+  @include fd-collapsed() {
+    --fdNavigationList_Content_Width: 3rem;
+    --fdNavigationList_Text_Display:  none;
+    --fdNavigationList_Content_Padding_Inline_End: 0;
+    --fdNavigationList_Indicator_Display: none;
+    --fdNavigationList_Group_Item_Margin_Top: 0.25rem;
+
+    .#{$block}__content {
+      --fdNavigationList_Expander_Width: 0.75rem;
+      --fdNavigationList_Expander_Font_Size: 0.875rem;
+
+      &:has(.#{$block}__navigation-indicator, .#{$block}__indication-arrow) {
+        --fdNavigationList_Content_Padding_Inline_End: 0;
+        --fdNavigationList_Content_Gap: 0.125rem;
+      }
+
+      &:not([aria-expanded="true"]) {
+        @include fd-hover() {
+          --fdNavigationList_Content_Width: fit-content;
+          --fdNavigationList_Text_Display: inline-block;
+          --fdNavigationList_Expander_Display: inline-flex;
+          --fdNavigationList_Indicator_Display: inline-flex;
+          --fdNavigationList_Content_Padding_Inline_End: 1rem;
+          --fdNavigationList_Expander_Width: 2.25rem;
+          --fdNavigationList_Expander_Font_Size: 1rem;
+
+          &:has(.#{$block}__navigation-indicator, .#{$block}__indication-arrow) {
+            --fdNavigationList_Content_Padding_Inline_End: 0.375rem;
+            --fdNavigationList_Content_Gap: 0.5rem;
+          }
+        }
+
+        @include fd-active() {
+          --fdNavigationList_Content_Width: fit-content;
+          --fdNavigationList_Text_Display: inline-block;
+          --fdNavigationList_Expander_Display: inline-flex;
+          --fdNavigationList_Indicator_Display: inline-flex;
+          --fdNavigationList_Content_Padding_Inline_End: 1rem;
+          --fdNavigationList_Expander_Width: 2.25rem;
+          --fdNavigationList_Expander_Font_Size: 1rem;
+  
+          &:has(.#{$block}__navigation-indicator, .#{$block}__indication-arrow) {
+            --fdNavigationList_Content_Padding_Inline_End: 0.375rem;
+            --fdNavigationList_Content_Gap: 0.5rem;
+          }
+        }
+  
+        @include fd-focus() {
+          --fdNavigationList_Content_Width: fit-content;
+          --fdNavigationList_Text_Display: inline-block;
+          --fdNavigationList_Expander_Display: inline-flex;
+          --fdNavigationList_Indicator_Display: inline-flex;
+          --fdNavigationList_Content_Padding_Inline_End: 1rem;
+          --fdNavigationList_Expander_Width: 2.25rem;
+          --fdNavigationList_Expander_Font_Size: 1rem;
+  
+          &:has(.#{$block}__navigation-indicator, .#{$block}__indication-arrow) {
+            --fdNavigationList_Content_Padding_Inline_End: 0.375rem;
+            --fdNavigationList_Content_Gap: 0.5rem;
+          }
+        }
+      }
+    }
+
+    .#{$block}__popover-body .#{$block}__content {
+      --fdNavigationList_Content_Width: fit-content;
+      --fdNavigationList_Text_Display: inline-block;
+      --fdNavigationList_Expander_Display: inline-flex;
+      --fdNavigationList_Indicator_Display: inline-flex;
+      --fdNavigationList_Content_Padding_Inline_End: 1rem;
+      --fdNavigationList_Expander_Width: 2.25rem;
+      --fdNavigationList_Expander_Font_Size: 1rem;
+
+      &:has(.#{$block}__navigation-indicator, .#{$block}__indication-arrow) {
+        --fdNavigationList_Content_Padding_Inline_End: 0.375rem;
+        --fdNavigationList_Content_Gap: 0.5rem;
+      }
+
+      .#{$block}.level-2 {
+        overflow: visible;
+      }
+    }
+
+    .fd-navigation-list__item--group > .fd-navigation-list__content{
+      display: none;
+    }
   }
 }

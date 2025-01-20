@@ -42362,6 +42362,955 @@ exports[`Check stories > Components/Shellbar > Story Responsiveness > Should mat
 "
 `;
 
+exports[`Check stories > Components/Side Navigation > Story Collapsed > Should match snapshot 1`] = `
+"<div style=\\"height: 50rem;\\">
+    <div style=\\"height: 35rem;\\">
+        <nav class=\\"fd-side-nav is-collapsed\\" aria-roledescription=\\"Main Navigation\\" id=\\"fd-side-nav\\">
+            <div class=\\"fd-side-nav__container fd-side-nav__container--top\\">
+                <ul class=\\"fd-navigation-list level-1\\" role=\\"menubar\\" aria-roledescription=\\"Navigation List Tree\\">
+                    <li class=\\"fd-navigation-list__item\\" role=\\"none\\">
+                        <a class=\\"fd-navigation-list__content\\" role=\\"menuitemradio\\" aria-label=\\"Nav Item\\" aria-checked=\\"false\\" tabindex=\\"0\\">
+                            <div class=\\"fd-navigation-list__content-container\\">
+                                <span class=\\"fd-navigation-list__icon\\">
+                                    <i class=\\" sap-icon--home\\" role=\\"presentation\\"></i>
+                                </span>
+                                <span class=\\"fd-navigation-list__text\\">Nav Item</span>
+                            </div>
+                        </a>
+                    </li>
+    
+                    <li class=\\"fd-navigation-list__item\\" role=\\"none\\">
+                        <a class=\\"fd-navigation-list__content\\" role=\\"menuitemradio\\" aria-label=\\"Nav Item\\" aria-checked=\\"false\\" tabindex=\\"0\\">
+                            <div class=\\"fd-navigation-list__content-container\\">
+                                <span class=\\"fd-navigation-list__icon\\">
+                                    <i class=\\" sap-icon--favorite-list\\" role=\\"presentation\\"></i>
+                                </span>
+                                <span class=\\"fd-navigation-list__text\\">Nav Item</span>
+                            </div>
+                        </a>
+                    </li>
+    
+                    <li class=\\"fd-navigation-list__item\\" role=\\"none\\">
+                        <a class=\\"fd-navigation-list__content\\" role=\\"menuitemradio\\" aria-label=\\"Nav Item\\" aria-checked=\\"false\\" tabindex=\\"0\\">
+                            <div class=\\"fd-navigation-list__content-container\\">
+                                <span class=\\"fd-navigation-list__icon\\">
+                                    <i class=\\" sap-icon--time-account\\" role=\\"presentation\\"></i>
+                                </span>
+                                <span class=\\"fd-navigation-list__text\\">Nav Item</span>
+                            </div>
+                        </a>
+                    </li>
+    
+                    <li class=\\"fd-navigation-list__item fd-navigation-list__item--group\\" role=\\"none\\">
+                        <a class=\\"fd-navigation-list__content\\" role=\\"menuitemradio\\" aria-label=\\"Nav Item\\" aria-checked=\\"false\\" tabindex=\\"0\\" aria-expanded=\\"false\\">
+                            <div class=\\"fd-navigation-list__content-container\\">
+                                <span class=\\"fd-navigation-list__text\\">Navigation Group</span>
+                            </div>
+                            <div class=\\"fd-navigation-list__navigation-indicator\\" role=\\"presentation\\" aria-hidden=\\"true\\">
+                                <i class=\\"sap-icon--navigation-right-arrow\\" role=\\"presentation\\"></i>
+                            </div>
+                        </a>
+                        <ul class=\\"fd-navigation-list level-1\\" role=\\"group\\">
+                            <li class=\\"fd-navigation-list__item fd-popover\\" role=\\"none\\">
+                                <a class=\\"fd-navigation-list__content fd-popover__control\\" role=\\"menuitemradio\\" aria-label=\\"Nav Item\\" aria-checked=\\"false\\" tabindex=\\"0\\" aria-expanded=\\"true\\" aria-controls=\\"sideNavPopover1\\" aria-haspopup=\\"menu\\" onclick=\\"onPopoverClick('sideNavPopover1');\\">
+                                    <div class=\\"fd-navigation-list__content-container\\">
+                                        <span class=\\"fd-navigation-list__icon\\">
+                                            <i class=\\" sap-icon--shield\\" role=\\"presentation\\"></i>
+                                        </span>
+                                        <span class=\\"fd-navigation-list__text\\">Nav Item</span>
+                                    </div>
+                                    <div class=\\"fd-navigation-list__navigation-indicator\\" role=\\"presentation\\" aria-hidden=\\"true\\">
+                                        <i class=\\"sap-icon--navigation-right-arrow\\" role=\\"presentation\\"></i>
+                                    </div>
+                                </a>
+                                <div id=\\"sideNavPopover1\\" class=\\"fd-navigation-list__popover-body fd-popover__body fd-popover__body--after fd-popover__body--arrow-left\\" role=\\"dialog\\">
+                                   <div class=\\"fd-popover__wrapper\\">
+                                        <div class=\\"fd-navigation-list__item\\">
+                                        <a class=\\"fd-navigation-list__content\\" role=\\"heading\\" id=\\"side-nav-item-1\\" tabindex=\\"0\\">
+                                            <div class=\\"fd-navigation-list__content-container\\">
+                                                <span class=\\"fd-navigation-list__icon\\">
+                                                    <i class=\\" sap-icon--shield\\" role=\\"presentation\\"></i>
+                                                </span>
+                                                <span class=\\"fd-navigation-list__text\\">Nav Item</span>
+                                            </div>
+                                        </a>
+    
+                                        <ul class=\\"fd-navigation-list level-2\\" role=\\"menu\\" aria-labelledby=\\"side-nav-item-1\\">
+                                            <li class=\\"fd-navigation-list__item\\" role=\\"none\\">
+                                                <a class=\\"fd-navigation-list__content\\" role=\\"menuitemradio\\" aria-label=\\"Nav Item\\" aria-checked=\\"false\\" tabindex=\\"0\\">
+                                                    <div class=\\"fd-navigation-list__content-container\\">
+                                                        <span class=\\"fd-navigation-list__text\\">Child Item</span>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li class=\\"fd-navigation-list__item\\" role=\\"none\\">
+                                                <a class=\\"fd-navigation-list__content\\" role=\\"menuitemradio\\" aria-label=\\"Nav Item\\" aria-checked=\\"false\\" tabindex=\\"0\\">
+                                                    <div class=\\"fd-navigation-list__content-container\\">
+                                                        <span class=\\"fd-navigation-list__text\\">Child Item</span>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li class=\\"fd-navigation-list__item\\" role=\\"none\\">
+                                                <a class=\\"fd-navigation-list__content\\" role=\\"menuitemradio\\" aria-label=\\"Nav Item\\" aria-checked=\\"false\\" tabindex=\\"0\\">
+                                                    <div class=\\"fd-navigation-list__content-container\\">
+                                                        <span class=\\"fd-navigation-list__text\\">Child Item</span>
+                                                    </div>
+                                                    <div class=\\"fd-navigation-list__indication-arrow\\" role=\\"presentation\\" aria-hidden=\\"true\\">
+                                                        <i class=\\"sap-icon--arrow-right\\" role=\\"presentation\\"></i>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                        </div>
+                                   </div>
+                                </div>
+                            </li>
+                            <li class=\\"fd-navigation-list__item\\" role=\\"none\\">
+                                <a class=\\"fd-navigation-list__content\\" role=\\"menuitemradio\\" aria-label=\\"Nav Item\\" aria-checked=\\"false\\" tabindex=\\"0\\">
+                                    <div class=\\"fd-navigation-list__content-container\\">
+                                        <span class=\\"fd-navigation-list__icon\\">
+                                            <i class=\\" sap-icon--official-service\\" role=\\"presentation\\"></i>
+                                        </span>
+                                        <span class=\\"fd-navigation-list__text\\">Nav Item</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class=\\"fd-navigation-list__item\\" role=\\"none\\">
+                                <a class=\\"fd-navigation-list__content\\" role=\\"menuitemradio\\" aria-label=\\"Nav Item\\" aria-checked=\\"false\\" tabindex=\\"0\\">
+                                    <div class=\\"fd-navigation-list__content-container\\">
+                                        <span class=\\"fd-navigation-list__icon\\">
+                                            <i class=\\" sap-icon--sys-help\\" role=\\"presentation\\"></i>
+                                        </span>
+                                        <span class=\\"fd-navigation-list__text\\">Nav Item</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class=\\"fd-navigation-list__item\\" role=\\"none\\">
+                                <a class=\\"fd-navigation-list__content\\" role=\\"menuitemradio\\" aria-label=\\"Nav Item\\" aria-checked=\\"false\\" tabindex=\\"0\\" aria-expanded=\\"false\\">
+                                    <div class=\\"fd-navigation-list__content-container\\">
+                                        <span class=\\"fd-navigation-list__icon\\">
+                                            <i class=\\" sap-icon--travel-expense\\" role=\\"presentation\\"></i>
+                                        </span>
+                                        <span class=\\"fd-navigation-list__text\\">Nav Item</span>
+                                    </div>
+                                    <div class=\\"fd-navigation-list__navigation-indicator\\" role=\\"presentation\\" aria-hidden=\\"true\\">
+                                        <i class=\\"sap-icon--navigation-right-arrow\\" role=\\"presentation\\"></i>
+                                    </div>
+                                </a>
+                                <ul class=\\"fd-navigation-list level-2\\" role=\\"group\\" style=\\"display: none;\\">
+                                    <li class=\\"fd-navigation-list__item\\" role=\\"none\\">
+                                        <a class=\\"fd-navigation-list__content\\" role=\\"menuitemradio\\" aria-label=\\"Nav Item\\" aria-checked=\\"false\\" tabindex=\\"0\\">
+                                            <div class=\\"fd-navigation-list__content-container\\">
+                                                <span class=\\"fd-navigation-list__text\\">Child Item</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class=\\"fd-navigation-list__item\\" role=\\"none\\">
+                                        <a class=\\"fd-navigation-list__content is-selected\\" role=\\"menuitemradio\\" aria-label=\\"Nav Item\\" aria-checked=\\"true\\" tabindex=\\"0\\">
+                                            <div class=\\"fd-navigation-list__content-container\\">
+                                                <span class=\\"fd-navigation-list__text\\">Child Item</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class=\\"fd-navigation-list__item\\" role=\\"none\\">
+                                        <a class=\\"fd-navigation-list__content\\" role=\\"menuitemradio\\" aria-label=\\"Nav Item\\" aria-checked=\\"false\\" tabindex=\\"0\\">
+                                            <div class=\\"fd-navigation-list__content-container\\">
+                                                <span class=\\"fd-navigation-list__text\\">Child Item</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class=\\"fd-navigation-list__item\\" role=\\"none\\">
+                                <a class=\\"fd-navigation-list__content\\" role=\\"menuitemradio\\" aria-label=\\"Nav Item\\" aria-checked=\\"false\\" tabindex=\\"0\\">
+                                    <div class=\\"fd-navigation-list__content-container\\">
+                                        <span class=\\"fd-navigation-list__icon\\">
+                                            <i class=\\" sap-icon--commission-check\\" role=\\"presentation\\"></i>
+                                        </span>
+                                        <span class=\\"fd-navigation-list__text\\">Nav Item</span>
+                                    </div>
+                                    <div class=\\"fd-navigation-list__indication-arrow\\" role=\\"presentation\\" aria-hidden=\\"true\\">
+                                        <i class=\\"sap-icon--arrow-right\\" role=\\"presentation\\"></i>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+    
+                    <li class=\\"fd-navigation-list__item fd-navigation-list__item--group\\" role=\\"none\\">
+                        <a class=\\"fd-navigation-list__content\\" role=\\"menuitemradio\\" aria-label=\\"Nav Item\\" aria-checked=\\"false\\" tabindex=\\"0\\" aria-expanded=\\"false\\">
+                            <div class=\\"fd-navigation-list__content-container\\">
+                                <span class=\\"fd-navigation-list__text\\">Navigation Group</span>
+                            </div>
+                            <div class=\\"fd-navigation-list__navigation-indicator\\" role=\\"presentation\\" aria-hidden=\\"true\\">
+                                <i class=\\"sap-icon--navigation-right-arrow\\" role=\\"presentation\\"></i>
+                            </div>
+                        </a>
+                        <ul class=\\"fd-navigation-list level-1\\" role=\\"group\\" style=\\"display: none;\\">
+                            <li class=\\"fd-navigation-list__item\\" role=\\"none\\">
+                                <a class=\\"fd-navigation-list__content\\" role=\\"menuitemradio\\" aria-label=\\"Nav Item\\" aria-checked=\\"false\\" tabindex=\\"0\\" aria-expanded=\\"false\\">
+                                    <div class=\\"fd-navigation-list__content-container\\">
+                                        <span class=\\"fd-navigation-list__icon\\">
+                                            <i class=\\" sap-icon--palette\\" role=\\"presentation\\"></i>
+                                        </span>
+                                        <span class=\\"fd-navigation-list__text\\">Nav Item</span>
+                                    </div>
+                                    <div class=\\"fd-navigation-list__navigation-indicator\\" role=\\"presentation\\" aria-hidden=\\"true\\">
+                                        <i class=\\"sap-icon--navigation-right-arrow\\" role=\\"presentation\\"></i>
+                                    </div>
+                                </a>
+                                <ul class=\\"fd-navigation-list level-2\\" role=\\"group\\">
+                                    <li class=\\"fd-navigation-list__item\\" role=\\"none\\">
+                                        <a class=\\"fd-navigation-list__content\\" role=\\"menuitemradio\\" aria-label=\\"Nav Item\\" aria-checked=\\"false\\" tabindex=\\"0\\">
+                                            <div class=\\"fd-navigation-list__content-container\\">
+                                                <span class=\\"fd-navigation-list__text\\">Child Item</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class=\\"fd-navigation-list__item\\" role=\\"none\\">
+                                        <a class=\\"fd-navigation-list__content is-selected\\" role=\\"menuitemradio\\" aria-label=\\"Nav Item\\" aria-checked=\\"true\\" tabindex=\\"0\\">
+                                            <div class=\\"fd-navigation-list__content-container\\">
+                                                <span class=\\"fd-navigation-list__text\\">Child Item</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class=\\"fd-navigation-list__item\\" role=\\"none\\">
+                                        <a class=\\"fd-navigation-list__content\\" role=\\"menuitemradio\\" aria-label=\\"Nav Item\\" aria-checked=\\"false\\" tabindex=\\"0\\">
+                                            <div class=\\"fd-navigation-list__content-container\\">
+                                                <span class=\\"fd-navigation-list__text\\">Child Item</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class=\\"fd-navigation-list__item\\" role=\\"none\\">
+                                <a class=\\"fd-navigation-list__content\\" role=\\"menuitemradio\\" aria-label=\\"Nav Item\\" aria-checked=\\"false\\" tabindex=\\"0\\">
+                                    <div class=\\"fd-navigation-list__content-container\\">
+                                        <span class=\\"fd-navigation-list__icon\\">
+                                            <i class=\\" sap-icon--sales-notification\\" role=\\"presentation\\"></i>
+                                        </span>
+                                        <span class=\\"fd-navigation-list__text\\">Nav Item</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class=\\"fd-navigation-list__item\\" role=\\"none\\">
+                                <a class=\\"fd-navigation-list__content\\" role=\\"menuitemradio\\" aria-label=\\"Nav Item\\" aria-checked=\\"false\\" tabindex=\\"0\\">
+                                    <div class=\\"fd-navigation-list__content-container\\">
+                                        <span class=\\"fd-navigation-list__icon\\">
+                                            <i class=\\" sap-icon--nurse\\" role=\\"presentation\\"></i>
+                                        </span>
+                                        <span class=\\"fd-navigation-list__text\\">Nav Item</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class=\\"fd-navigation-list__item\\" role=\\"none\\">
+                                <a class=\\"fd-navigation-list__content\\" role=\\"menuitemradio\\" aria-label=\\"Nav Item\\" aria-checked=\\"false\\" tabindex=\\"0\\">
+                                    <div class=\\"fd-navigation-list__content-container\\">
+                                        <span class=\\"fd-navigation-list__icon\\">
+                                            <i class=\\" sap-icon--travel-request\\" role=\\"presentation\\"></i>
+                                        </span>
+                                        <span class=\\"fd-navigation-list__text\\">Nav Item</span>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>  
+                    
+                    <li class=\\"fd-navigation-list__item fd-popover\\" role=\\"none\\">
+                        <a class=\\"fd-navigation-list__content is-selected fd-popover__control\\" role=\\"menuitemradio\\" aria-label=\\"Nav Item\\" aria-checked=\\"true\\" tabindex=\\"0\\" aria-expanded=\\"true\\" aria-controls=\\"sideNavPopover2\\" aria-haspopup=\\"menu\\" onclick=\\"onPopoverClick('sideNavPopover2');\\">
+                            <div class=\\"fd-navigation-list__content-container\\">
+                                <span class=\\"fd-navigation-list__icon\\">
+                                    <i class=\\" sap-icon--overflow\\" role=\\"presentation\\"></i>
+                                </span>
+                            </div>
+                        </a>
+                        <div id=\\"sideNavPopover2\\" class=\\"fd-navigation-list__popover-body fd-popover__body fd-popover__body--after fd-popover__body--arrow-left\\" role=\\"dialog\\">
+                           <ul class=\\"fd-popover__wrapper fd-navigation-list level-1\\" role=\\"menu\\">
+                                <li class=\\"fd-navigation-list__item\\">
+                                    <a class=\\"fd-navigation-list__content\\" role=\\"menuitemradio\\" id=\\"side-nav-item-4\\" tabindex=\\"0\\">
+                                        <div class=\\"fd-navigation-list__content-container\\">
+                                            <span class=\\"fd-navigation-list__icon\\">
+                                                <i class=\\" sap-icon--picture\\" role=\\"presentation\\"></i>
+                                            </span>
+                                            <span class=\\"fd-navigation-list__text\\">Nav Item</span>
+                                        </div>
+                                        <div class=\\"fd-navigation-list__navigation-indicator\\" role=\\"presentation\\" aria-hidden=\\"true\\">
+                                            <i class=\\"sap-icon--navigation-down-arrow\\" role=\\"presentation\\"></i>
+                                        </div>
+                                    </a>
+
+                                    <ul class=\\"fd-navigation-list level-2\\" role=\\"menu\\" aria-labelledby=\\"side-nav-item-4\\">
+                                        <li class=\\"fd-navigation-list__item\\" role=\\"none\\">
+                                            <a class=\\"fd-navigation-list__content\\" role=\\"menuitemradio\\" aria-label=\\"Nav Item\\" aria-checked=\\"false\\" tabindex=\\"0\\">
+                                                <div class=\\"fd-navigation-list__content-container\\">
+                                                    <span class=\\"fd-navigation-list__text\\">Child Item</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class=\\"fd-navigation-list__item\\" role=\\"none\\">
+                                            <a class=\\"fd-navigation-list__content is-selected\\" role=\\"menuitemradio\\" aria-label=\\"Nav Item\\" aria-checked=\\"true\\" tabindex=\\"0\\">
+                                                <div class=\\"fd-navigation-list__content-container\\">
+                                                    <span class=\\"fd-navigation-list__text\\">Child Item</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class=\\"fd-navigation-list__item\\">
+                                    <a class=\\"fd-navigation-list__content\\" role=\\"menuitemradio\\" tabindex=\\"0\\">
+                                        <div class=\\"fd-navigation-list__content-container\\">
+                                            <span class=\\"fd-navigation-list__icon\\">
+                                                <i class=\\" sap-icon--pie-chart\\" role=\\"presentation\\"></i>
+                                            </span>
+                                            <span class=\\"fd-navigation-list__text\\">Nav Item</span>
+                                        </div>
+                                    </a>
+                                </li>
+
+                                <li class=\\"fd-navigation-list__item\\">
+                                    <a class=\\"fd-navigation-list__content\\" role=\\"menuitemradio\\" tabindex=\\"0\\">
+                                        <div class=\\"fd-navigation-list__content-container\\">
+                                            <span class=\\"fd-navigation-list__icon\\">
+                                                <i class=\\" sap-icon--survey\\" role=\\"presentation\\"></i>
+                                            </span>
+                                            <span class=\\"fd-navigation-list__text\\">Nav Item</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class=\\"fd-navigation-list__item\\">
+                                    <a class=\\"fd-navigation-list__content\\" role=\\"menuitemradio\\" tabindex=\\"0\\">
+                                        <div class=\\"fd-navigation-list__content-container\\">
+                                            <span class=\\"fd-navigation-list__icon\\">
+                                                <i class=\\" sap-icon--task\\" role=\\"presentation\\"></i>
+                                            </span>
+                                            <span class=\\"fd-navigation-list__text\\">Nav Item</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class=\\"fd-navigation-list__item\\">
+                                    <a class=\\"fd-navigation-list__content\\" role=\\"menuitemradio\\" tabindex=\\"0\\">
+                                        <div class=\\"fd-navigation-list__content-container\\">
+                                            <span class=\\"fd-navigation-list__icon\\">
+                                                <i class=\\" sap-icon--account\\" role=\\"presentation\\"></i>
+                                            </span>
+                                            <span class=\\"fd-navigation-list__text\\">Nav Item</span>
+                                        </div>
+                                    </a>
+                                </li>
+                           </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+    
+            <div class=\\"fd-side-nav__separator\\" role=\\"separator\\" aria-orientation=\\"horizontal\\" aria-roledescription=\\"Side Navigation Separator\\"></div>
+    
+            <div  class=\\"fd-side-nav__container fd-side-nav__container--bottom\\">
+                <ul class=\\"fd-navigation-list level-1\\" role=\\"menubar\\" aria-roledescription=\\"Navigation List Tree\\" tabindex=\\"-1\\">
+                    <li class=\\"fd-navigation-list__item fd-navigation-list__item--quick-create\\" role=\\"none\\">
+                        <a class=\\"fd-navigation-list__content\\" role=\\"treeitem\\" tabindex=\\"0\\">
+                            <div class=\\"fd-navigation-list__content-container\\">
+                                <span class=\\"fd-navigation-list__icon\\">
+                                    <i class=\\" sap-icon--write-new\\" role=\\"presentation\\"></i>
+                                </span>
+                                <span class=\\"fd-navigation-list__text\\">Quick Create</span>
+                            </div>
+                        </a>
+                    </li>
+        
+                    <li class=\\"fd-navigation-list__item\\" role=\\"none\\">
+                        <a class=\\"fd-navigation-list__content\\" role=\\"menuitemradio\\" aria-label=\\"Nav Item\\" aria-checked=\\"false\\" tabindex=\\"0\\">
+                            <div class=\\"fd-navigation-list__content-container\\">
+                                <span class=\\"fd-navigation-list__icon\\">
+                                    <i class=\\" sap-icon--journey-change\\" role=\\"presentation\\"></i>
+                                </span>
+                                <span class=\\"fd-navigation-list__text\\">Nav Item</span>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+</div>
+
+
+
+"
+`;
+
+exports[`Check stories > Components/Side Navigation > Story Expanded > Should match snapshot 1`] = `
+"<div style=\\"height: 50rem;\\">
+    <nav class=\\"fd-side-nav\\" aria-roledescription=\\"Main Navigation\\" id=\\"fd-side-nav\\" style=\\"width: 18rem;\\">
+        <div class=\\"fd-side-nav__container fd-side-nav__container--top\\">
+            <ul class=\\"fd-navigation-list level-1\\" role=\\"tree\\" aria-roledescription=\\"Navigation List Tree\\">
+                <li class=\\"fd-navigation-list__item\\" role=\\"none\\">
+                    <a class=\\"fd-navigation-list__content\\" role=\\"treeitem\\" tabindex=\\"0\\">
+                        <div class=\\"fd-navigation-list__content-container\\">
+                            <span class=\\"fd-navigation-list__icon\\">
+                                <i class=\\" sap-icon--home\\" role=\\"presentation\\"></i>
+                            </span>
+                            <span class=\\"fd-navigation-list__text\\">Nav Item</span>
+                        </div>
+                    </a>
+                </li>
+                <li class=\\"fd-navigation-list__item\\" role=\\"none\\">
+                    <a class=\\"fd-navigation-list__content\\" role=\\"treeitem\\" tabindex=\\"0\\">
+                        <div class=\\"fd-navigation-list__content-container\\">
+                            <span class=\\"fd-navigation-list__icon\\">
+                                <i class=\\" sap-icon--favorite-list\\" role=\\"presentation\\"></i>
+                            </span>
+                            <span class=\\"fd-navigation-list__text\\">Nav Item</span>
+                        </div>
+                    </a>
+                </li>
+                <li class=\\"fd-navigation-list__item\\" role=\\"none\\">
+                    <a class=\\"fd-navigation-list__content\\" role=\\"treeitem\\" tabindex=\\"0\\">
+                        <div class=\\"fd-navigation-list__content-container\\">
+                            <span class=\\"fd-navigation-list__icon\\">
+                                <i class=\\" sap-icon--time-account\\" role=\\"presentation\\"></i>
+                            </span>
+                            <span class=\\"fd-navigation-list__text\\">Nav Item</span>
+                        </div>
+                    </a>
+                </li>
+
+                <li class=\\"fd-navigation-list__item fd-navigation-list__item--group\\" role=\\"none\\">
+                    <a class=\\"fd-navigation-list__content\\" role=\\"treeitem\\" tabindex=\\"0\\" aria-expanded=\\"true\\">
+                        <div class=\\"fd-navigation-list__content-container\\">
+                            <span class=\\"fd-navigation-list__text\\">Navigation Group</span>
+                        </div>
+                        <div class=\\"fd-navigation-list__navigation-indicator\\" role=\\"presentation\\" aria-hidden=\\"true\\">
+                            <i class=\\"sap-icon--navigation-down-arrow\\" role=\\"presentation\\"></i>
+                        </div>
+                    </a>
+                    <ul class=\\"fd-navigation-list level-1\\" role=\\"group\\">
+                        <li class=\\"fd-navigation-list__item\\" role=\\"none\\">
+                            <a class=\\"fd-navigation-list__content\\" role=\\"treeitem\\" tabindex=\\"0\\" aria-expanded=\\"true\\">
+                                <div class=\\"fd-navigation-list__content-container\\">
+                                    <span class=\\"fd-navigation-list__icon\\">
+                                        <i class=\\" sap-icon--shield\\" role=\\"presentation\\"></i>
+                                    </span>
+                                    <span class=\\"fd-navigation-list__text\\">Nav Item</span>
+                                </div>
+                                <div class=\\"fd-navigation-list__navigation-indicator\\" role=\\"presentation\\" aria-hidden=\\"true\\">
+                                    <i class=\\"sap-icon--navigation-down-arrow\\" role=\\"presentation\\"></i>
+                                </div>
+                            </a>
+                            <ul class=\\"fd-navigation-list level-2\\" role=\\"group\\">
+                                <li class=\\"fd-navigation-list__item\\" role=\\"none\\">
+                                    <a class=\\"fd-navigation-list__content\\" role=\\"treeitem\\" tabindex=\\"0\\">
+                                        <div class=\\"fd-navigation-list__content-container\\">
+                                            <span class=\\"fd-navigation-list__text\\">Child Item</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class=\\"fd-navigation-list__item\\" role=\\"none\\">
+                                    <a class=\\"fd-navigation-list__content is-selected\\" role=\\"treeitem\\" tabindex=\\"0\\">
+                                        <div class=\\"fd-navigation-list__content-container\\">
+                                            <span class=\\"fd-navigation-list__text\\">Child Item</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class=\\"fd-navigation-list__item\\" role=\\"none\\">
+                                    <a class=\\"fd-navigation-list__content\\" role=\\"treeitem\\" tabindex=\\"0\\">
+                                        <div class=\\"fd-navigation-list__content-container\\">
+                                            <span class=\\"fd-navigation-list__text\\">Child Item</span>
+                                        </div>
+                                        <div class=\\"fd-navigation-list__indication-arrow\\" role=\\"presentation\\" aria-hidden=\\"true\\">
+                                            <i class=\\"sap-icon--arrow-right\\" role=\\"presentation\\"></i>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class=\\"fd-navigation-list__item\\" role=\\"none\\">
+                            <a class=\\"fd-navigation-list__content\\" role=\\"treeitem\\" tabindex=\\"0\\">
+                                <div class=\\"fd-navigation-list__content-container\\">
+                                    <span class=\\"fd-navigation-list__icon\\">
+                                        <i class=\\" sap-icon--official-service\\" role=\\"presentation\\"></i>
+                                    </span>
+                                    <span class=\\"fd-navigation-list__text\\">Nav Item</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class=\\"fd-navigation-list__item\\" role=\\"none\\">
+                            <a class=\\"fd-navigation-list__content\\" role=\\"treeitem\\" tabindex=\\"0\\">
+                                <div class=\\"fd-navigation-list__content-container\\">
+                                    <span class=\\"fd-navigation-list__icon\\">
+                                        <i class=\\" sap-icon--sys-help\\" role=\\"presentation\\"></i>
+                                    </span>
+                                    <span class=\\"fd-navigation-list__text\\">Nav Item</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class=\\"fd-navigation-list__item fd-navigation-list__item--two-click\\" role=\\"none\\">
+                            <a class=\\"fd-navigation-list__content\\" role=\\"treeitem\\" tabindex=\\"0\\" aria-expanded=\\"false\\">
+                                <div class=\\"fd-navigation-list__content-container\\">
+                                    <span class=\\"fd-navigation-list__icon\\">
+                                        <i class=\\" sap-icon--travel-expense\\" role=\\"presentation\\"></i>
+                                    </span>
+                                    <span class=\\"fd-navigation-list__text\\">Two-Click Nav Item</span>
+                                </div>
+                                <div class=\\"fd-navigation-list__navigation-indicator\\" role=\\"presentation\\" aria-hidden=\\"true\\">
+                                    <i class=\\"sap-icon--navigation-right-arrow\\" role=\\"presentation\\"></i>
+                                </div>
+                            </a>
+                            <ul class=\\"fd-navigation-list level-2\\" role=\\"group\\" style=\\"display: none;\\">
+                                <li class=\\"fd-navigation-list__item\\" role=\\"none\\">
+                                    <a class=\\"fd-navigation-list__content\\" role=\\"treeitem\\" tabindex=\\"0\\">
+                                        <div class=\\"fd-navigation-list__content-container\\">
+                                            <span class=\\"fd-navigation-list__text\\">Child Item</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class=\\"fd-navigation-list__item\\" role=\\"none\\">
+                                    <a class=\\"fd-navigation-list__content is-selected\\" role=\\"treeitem\\" tabindex=\\"0\\">
+                                        <div class=\\"fd-navigation-list__content-container\\">
+                                            <span class=\\"fd-navigation-list__text\\">Child Item</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class=\\"fd-navigation-list__item\\" role=\\"none\\">
+                                    <a class=\\"fd-navigation-list__content\\" role=\\"treeitem\\" tabindex=\\"0\\">
+                                        <div class=\\"fd-navigation-list__content-container\\">
+                                            <span class=\\"fd-navigation-list__text\\">Child Item</span>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class=\\"fd-navigation-list__item\\" role=\\"none\\">
+                            <a class=\\"fd-navigation-list__content\\" role=\\"treeitem\\" tabindex=\\"0\\">
+                                <div class=\\"fd-navigation-list__content-container\\">
+                                    <span class=\\"fd-navigation-list__icon\\">
+                                        <i class=\\" sap-icon--commission-check\\" role=\\"presentation\\"></i>
+                                    </span>
+                                    <span class=\\"fd-navigation-list__text\\">Nav Item</span>
+                                </div>
+                                <div class=\\"fd-navigation-list__indication-arrow\\" role=\\"presentation\\" aria-hidden=\\"true\\">
+                                    <i class=\\"sap-icon--arrow-right\\" role=\\"presentation\\"></i>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class=\\"fd-navigation-list__item fd-navigation-list__item--group\\" role=\\"none\\">
+                    <a class=\\"fd-navigation-list__content\\" role=\\"treeitem\\" tabindex=\\"0\\" aria-expanded=\\"false\\">
+                        <div class=\\"fd-navigation-list__content-container\\">
+                            <span class=\\"fd-navigation-list__text\\">Navigation Group</span>
+                        </div>
+                        <div class=\\"fd-navigation-list__navigation-indicator\\" role=\\"presentation\\" aria-hidden=\\"true\\">
+                            <i class=\\"sap-icon--navigation-right-arrow\\" role=\\"presentation\\"></i>
+                        </div>
+                    </a>
+                    <ul class=\\"fd-navigation-list level-1\\" role=\\"group\\" style=\\"display: none;\\">
+                        <li class=\\"fd-navigation-list__item\\" role=\\"none\\">
+                            <a class=\\"fd-navigation-list__content\\" role=\\"treeitem\\" tabindex=\\"0\\" aria-expanded=\\"true\\">
+                                <div class=\\"fd-navigation-list__content-container\\">
+                                    <span class=\\"fd-navigation-list__icon\\">
+                                        <i class=\\" sap-icon--palette\\" role=\\"presentation\\"></i>
+                                    </span>
+                                    <span class=\\"fd-navigation-list__text\\">Nav Item</span>
+                                </div>
+                                <div class=\\"fd-navigation-list__navigation-indicator\\" role=\\"presentation\\" aria-hidden=\\"true\\">
+                                    <i class=\\"sap-icon--navigation-down-arrow\\" role=\\"presentation\\"></i>
+                                </div>
+                            </a>
+                            <ul class=\\"fd-navigation-list level-2\\" role=\\"group\\">
+                                <li class=\\"fd-navigation-list__item\\" role=\\"none\\">
+                                    <a class=\\"fd-navigation-list__content\\" role=\\"treeitem\\" tabindex=\\"0\\">
+                                        <div class=\\"fd-navigation-list__content-container\\">
+                                            <span class=\\"fd-navigation-list__text\\">Child Item</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class=\\"fd-navigation-list__item\\" role=\\"none\\">
+                                    <a class=\\"fd-navigation-list__content is-selected\\" role=\\"treeitem\\" tabindex=\\"0\\">
+                                        <div class=\\"fd-navigation-list__content-container\\">
+                                            <span class=\\"fd-navigation-list__text\\">Child Item</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class=\\"fd-navigation-list__item\\" role=\\"none\\">
+                                    <a class=\\"fd-navigation-list__content\\" role=\\"treeitem\\" tabindex=\\"0\\">
+                                        <div class=\\"fd-navigation-list__content-container\\">
+                                            <span class=\\"fd-navigation-list__text\\">Child Item</span>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class=\\"fd-navigation-list__item\\" role=\\"none\\">
+                            <a class=\\"fd-navigation-list__content\\" role=\\"treeitem\\" tabindex=\\"0\\">
+                                <div class=\\"fd-navigation-list__content-container\\">
+                                    <span class=\\"fd-navigation-list__icon\\">
+                                        <i class=\\" sap-icon--sales-notification\\" role=\\"presentation\\"></i>
+                                    </span>
+                                    <span class=\\"fd-navigation-list__text\\">Nav Item</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class=\\"fd-navigation-list__item\\" role=\\"none\\">
+                            <a class=\\"fd-navigation-list__content\\" role=\\"treeitem\\" tabindex=\\"0\\">
+                                <div class=\\"fd-navigation-list__content-container\\">
+                                    <span class=\\"fd-navigation-list__icon\\">
+                                        <i class=\\" sap-icon--nurse\\" role=\\"presentation\\"></i>
+                                    </span>
+                                    <span class=\\"fd-navigation-list__text\\">Nav Item</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class=\\"fd-navigation-list__item\\" role=\\"none\\">
+                            <a class=\\"fd-navigation-list__content\\" role=\\"treeitem\\" tabindex=\\"0\\">
+                                <div class=\\"fd-navigation-list__content-container\\">
+                                    <span class=\\"fd-navigation-list__icon\\">
+                                        <i class=\\" sap-icon--travel-request\\" role=\\"presentation\\"></i>
+                                    </span>
+                                    <span class=\\"fd-navigation-list__text\\">Nav Item</span>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </li>                  
+            </ul>
+        </div>
+
+        <div class=\\"fd-side-nav__separator\\" role=\\"separator\\" aria-orientation=\\"horizontal\\" aria-roledescription=\\"Side Navigation Separator\\"></div>
+
+        <div  class=\\"fd-side-nav__container fd-side-nav__container--bottom\\">
+            <ul class=\\"fd-navigation-list level-1\\" role=\\"tree\\" tabindex=\\"-1\\" aria-roledescription=\\"Navigation List Tree\\">
+                <li class=\\"fd-navigation-list__item fd-navigation-list__item--quick-create\\" role=\\"none\\">
+                    <a class=\\"fd-navigation-list__content\\" role=\\"treeitem\\" tabindex=\\"0\\">
+                        <div class=\\"fd-navigation-list__content-container\\">
+                            <span class=\\"fd-navigation-list__icon\\">
+                                <i class=\\" sap-icon--write-new\\" role=\\"presentation\\"></i>
+                            </span>
+                            <span class=\\"fd-navigation-list__text\\">Quick Create</span>
+                        </div>
+                    </a>
+                </li>
+    
+                <li class=\\"fd-navigation-list__item\\" role=\\"none\\">
+                    <a class=\\"fd-navigation-list__content\\" role=\\"treeitem\\" tabindex=\\"0\\">
+                        <div class=\\"fd-navigation-list__content-container\\">
+                            <span class=\\"fd-navigation-list__icon\\">
+                                <i class=\\" sap-icon--journey-change\\" role=\\"presentation\\"></i>
+                            </span>
+                            <span class=\\"fd-navigation-list__text\\">Nav Item</span>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</div>
+
+
+
+"
+`;
+
+exports[`Check stories > Components/Side Navigation > Story Floating > Should match snapshot 1`] = `
+"<div style=\\"height: 50rem;\\">
+    <div class=\\"fd-popover\\">
+        <div class=\\"fd-popover__control\\">
+            <button
+                class=\\"fd-button\\"
+                aria-label=\\"Cart\\"
+                aria-controls=\\"sideNavFloating\\"
+                aria-expanded=\\"true\\"
+                aria-haspopup=\\"true\\"
+                onclick=\\"onPopoverClick('sideNavFloating');\\"
+                role=\\"button\\">
+                <i class=\\"sap-icon--menu2\\" role=\\"presentation\\"></i>
+            </button>
+        </div>
+        <div class=\\"fd-popover__body\\" aria-hidden=\\"false\\" id=\\"sideNavFloating\\">
+            <nav class=\\"fd-side-nav\\" aria-roledescription=\\"Main Navigation\\" id=\\"fd-side-nav\\" style=\\"width: 18rem;\\">
+                <div class=\\"fd-side-nav__container fd-side-nav__container--top\\">
+                    <ul class=\\"fd-navigation-list level-1\\" role=\\"tree\\" aria-roledescription=\\"Navigation List Tree\\">
+                        <li class=\\"fd-navigation-list__item\\" role=\\"none\\">
+                            <a class=\\"fd-navigation-list__content\\" role=\\"treeitem\\" tabindex=\\"0\\">
+                                <div class=\\"fd-navigation-list__content-container\\">
+                                    <span class=\\"fd-navigation-list__icon\\">
+                                        <i class=\\" sap-icon--home\\" role=\\"presentation\\"></i>
+                                    </span>
+                                    <span class=\\"fd-navigation-list__text\\">Nav Item</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class=\\"fd-navigation-list__item\\" role=\\"none\\">
+                            <a class=\\"fd-navigation-list__content\\" role=\\"treeitem\\" tabindex=\\"0\\">
+                                <div class=\\"fd-navigation-list__content-container\\">
+                                    <span class=\\"fd-navigation-list__icon\\">
+                                        <i class=\\" sap-icon--favorite-list\\" role=\\"presentation\\"></i>
+                                    </span>
+                                    <span class=\\"fd-navigation-list__text\\">Nav Item</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class=\\"fd-navigation-list__item\\" role=\\"none\\">
+                            <a class=\\"fd-navigation-list__content\\" role=\\"treeitem\\" tabindex=\\"0\\">
+                                <div class=\\"fd-navigation-list__content-container\\">
+                                    <span class=\\"fd-navigation-list__icon\\">
+                                        <i class=\\" sap-icon--time-account\\" role=\\"presentation\\"></i>
+                                    </span>
+                                    <span class=\\"fd-navigation-list__text\\">Nav Item</span>
+                                </div>
+                            </a>
+                        </li>
+        
+                        <li class=\\"fd-navigation-list__item fd-navigation-list__item--group\\" role=\\"none\\">
+                            <a class=\\"fd-navigation-list__content\\" role=\\"treeitem\\" tabindex=\\"0\\" aria-expanded=\\"true\\">
+                                <div class=\\"fd-navigation-list__content-container\\">
+                                    <span class=\\"fd-navigation-list__text\\">Navigation Group</span>
+                                </div>
+                                <div class=\\"fd-navigation-list__navigation-indicator\\" role=\\"presentation\\" aria-hidden=\\"true\\">
+                                    <i class=\\"sap-icon--navigation-down-arrow\\" role=\\"presentation\\"></i>
+                                </div>
+                            </a>
+                            <ul class=\\"fd-navigation-list level-1\\" role=\\"group\\">
+                                <li class=\\"fd-navigation-list__item\\" role=\\"none\\">
+                                    <a class=\\"fd-navigation-list__content\\" role=\\"treeitem\\" tabindex=\\"0\\" aria-expanded=\\"true\\">
+                                        <div class=\\"fd-navigation-list__content-container\\">
+                                            <span class=\\"fd-navigation-list__icon\\">
+                                                <i class=\\" sap-icon--shield\\" role=\\"presentation\\"></i>
+                                            </span>
+                                            <span class=\\"fd-navigation-list__text\\">Nav Item</span>
+                                        </div>
+                                        <div class=\\"fd-navigation-list__navigation-indicator\\" role=\\"presentation\\" aria-hidden=\\"true\\">
+                                            <i class=\\"sap-icon--navigation-down-arrow\\" role=\\"presentation\\"></i>
+                                        </div>
+                                    </a>
+                                    <ul class=\\"fd-navigation-list level-2\\" role=\\"group\\">
+                                        <li class=\\"fd-navigation-list__item\\" role=\\"none\\">
+                                            <a class=\\"fd-navigation-list__content\\" role=\\"treeitem\\" tabindex=\\"0\\">
+                                                <div class=\\"fd-navigation-list__content-container\\">
+                                                    <span class=\\"fd-navigation-list__text\\">Child Item</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class=\\"fd-navigation-list__item\\" role=\\"none\\">
+                                            <a class=\\"fd-navigation-list__content is-selected\\" role=\\"treeitem\\" tabindex=\\"0\\">
+                                                <div class=\\"fd-navigation-list__content-container\\">
+                                                    <span class=\\"fd-navigation-list__text\\">Child Item</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class=\\"fd-navigation-list__item\\" role=\\"none\\">
+                                            <a class=\\"fd-navigation-list__content\\" role=\\"treeitem\\" tabindex=\\"0\\">
+                                                <div class=\\"fd-navigation-list__content-container\\">
+                                                    <span class=\\"fd-navigation-list__text\\">Child Item</span>
+                                                </div>
+                                                <div class=\\"fd-navigation-list__indication-arrow\\" role=\\"presentation\\" aria-hidden=\\"true\\">
+                                                    <i class=\\"sap-icon--arrow-right\\" role=\\"presentation\\"></i>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class=\\"fd-navigation-list__item\\" role=\\"none\\">
+                                    <a class=\\"fd-navigation-list__content\\" role=\\"treeitem\\" tabindex=\\"0\\">
+                                        <div class=\\"fd-navigation-list__content-container\\">
+                                            <span class=\\"fd-navigation-list__icon\\">
+                                                <i class=\\" sap-icon--official-service\\" role=\\"presentation\\"></i>
+                                            </span>
+                                            <span class=\\"fd-navigation-list__text\\">Nav Item</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class=\\"fd-navigation-list__item\\" role=\\"none\\">
+                                    <a class=\\"fd-navigation-list__content\\" role=\\"treeitem\\" tabindex=\\"0\\">
+                                        <div class=\\"fd-navigation-list__content-container\\">
+                                            <span class=\\"fd-navigation-list__icon\\">
+                                                <i class=\\" sap-icon--sys-help\\" role=\\"presentation\\"></i>
+                                            </span>
+                                            <span class=\\"fd-navigation-list__text\\">Nav Item</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class=\\"fd-navigation-list__item fd-navigation-list__item--two-click\\" role=\\"none\\">
+                                    <a class=\\"fd-navigation-list__content\\" role=\\"treeitem\\" tabindex=\\"0\\" aria-expanded=\\"false\\">
+                                        <div class=\\"fd-navigation-list__content-container\\">
+                                            <span class=\\"fd-navigation-list__icon\\">
+                                                <i class=\\" sap-icon--travel-expense\\" role=\\"presentation\\"></i>
+                                            </span>
+                                            <span class=\\"fd-navigation-list__text\\">Two-Click Nav Item</span>
+                                        </div>
+                                        <div class=\\"fd-navigation-list__navigation-indicator\\" role=\\"presentation\\" aria-hidden=\\"true\\">
+                                            <i class=\\"sap-icon--navigation-right-arrow\\" role=\\"presentation\\"></i>
+                                        </div>
+                                    </a>
+                                    <ul class=\\"fd-navigation-list level-2\\" role=\\"group\\" style=\\"display: none;\\">
+                                        <li class=\\"fd-navigation-list__item\\" role=\\"none\\">
+                                            <a class=\\"fd-navigation-list__content\\" role=\\"treeitem\\" tabindex=\\"0\\">
+                                                <div class=\\"fd-navigation-list__content-container\\">
+                                                    <span class=\\"fd-navigation-list__text\\">Child Item</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class=\\"fd-navigation-list__item\\" role=\\"none\\">
+                                            <a class=\\"fd-navigation-list__content is-selected\\" role=\\"treeitem\\" tabindex=\\"0\\">
+                                                <div class=\\"fd-navigation-list__content-container\\">
+                                                    <span class=\\"fd-navigation-list__text\\">Child Item</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class=\\"fd-navigation-list__item\\" role=\\"none\\">
+                                            <a class=\\"fd-navigation-list__content\\" role=\\"treeitem\\" tabindex=\\"0\\">
+                                                <div class=\\"fd-navigation-list__content-container\\">
+                                                    <span class=\\"fd-navigation-list__text\\">Child Item</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class=\\"fd-navigation-list__item\\" role=\\"none\\">
+                                    <a class=\\"fd-navigation-list__content\\" role=\\"treeitem\\" tabindex=\\"0\\">
+                                        <div class=\\"fd-navigation-list__content-container\\">
+                                            <span class=\\"fd-navigation-list__icon\\">
+                                                <i class=\\" sap-icon--commission-check\\" role=\\"presentation\\"></i>
+                                            </span>
+                                            <span class=\\"fd-navigation-list__text\\">Nav Item</span>
+                                        </div>
+                                        <div class=\\"fd-navigation-list__indication-arrow\\" role=\\"presentation\\" aria-hidden=\\"true\\">
+                                            <i class=\\"sap-icon--arrow-right\\" role=\\"presentation\\"></i>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+        
+                        <li class=\\"fd-navigation-list__item fd-navigation-list__item--group\\" role=\\"none\\">
+                            <a class=\\"fd-navigation-list__content\\" role=\\"treeitem\\" tabindex=\\"0\\" aria-expanded=\\"false\\">
+                                <div class=\\"fd-navigation-list__content-container\\">
+                                    <span class=\\"fd-navigation-list__text\\">Navigation Group</span>
+                                </div>
+                                <div class=\\"fd-navigation-list__navigation-indicator\\" role=\\"presentation\\" aria-hidden=\\"true\\">
+                                    <i class=\\"sap-icon--navigation-right-arrow\\" role=\\"presentation\\"></i>
+                                </div>
+                            </a>
+                            <ul class=\\"fd-navigation-list level-1\\" role=\\"group\\" style=\\"display: none;\\">
+                                <li class=\\"fd-navigation-list__item\\" role=\\"none\\">
+                                    <a class=\\"fd-navigation-list__content\\" role=\\"treeitem\\" tabindex=\\"0\\" aria-expanded=\\"true\\">
+                                        <div class=\\"fd-navigation-list__content-container\\">
+                                            <span class=\\"fd-navigation-list__icon\\">
+                                                <i class=\\" sap-icon--palette\\" role=\\"presentation\\"></i>
+                                            </span>
+                                            <span class=\\"fd-navigation-list__text\\">Nav Item</span>
+                                        </div>
+                                        <div class=\\"fd-navigation-list__navigation-indicator\\" role=\\"presentation\\" aria-hidden=\\"true\\">
+                                            <i class=\\"sap-icon--navigation-down-arrow\\" role=\\"presentation\\"></i>
+                                        </div>
+                                    </a>
+                                    <ul class=\\"fd-navigation-list level-2\\" role=\\"group\\">
+                                        <li class=\\"fd-navigation-list__item\\" role=\\"none\\">
+                                            <a class=\\"fd-navigation-list__content\\" role=\\"treeitem\\" tabindex=\\"0\\">
+                                                <div class=\\"fd-navigation-list__content-container\\">
+                                                    <span class=\\"fd-navigation-list__text\\">Child Item</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class=\\"fd-navigation-list__item\\" role=\\"none\\">
+                                            <a class=\\"fd-navigation-list__content is-selected\\" role=\\"treeitem\\" tabindex=\\"0\\">
+                                                <div class=\\"fd-navigation-list__content-container\\">
+                                                    <span class=\\"fd-navigation-list__text\\">Child Item</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class=\\"fd-navigation-list__item\\" role=\\"none\\">
+                                            <a class=\\"fd-navigation-list__content\\" role=\\"treeitem\\" tabindex=\\"0\\">
+                                                <div class=\\"fd-navigation-list__content-container\\">
+                                                    <span class=\\"fd-navigation-list__text\\">Child Item</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class=\\"fd-navigation-list__item\\" role=\\"none\\">
+                                    <a class=\\"fd-navigation-list__content\\" role=\\"treeitem\\" tabindex=\\"0\\">
+                                        <div class=\\"fd-navigation-list__content-container\\">
+                                            <span class=\\"fd-navigation-list__icon\\">
+                                                <i class=\\" sap-icon--sales-notification\\" role=\\"presentation\\"></i>
+                                            </span>
+                                            <span class=\\"fd-navigation-list__text\\">Nav Item</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class=\\"fd-navigation-list__item\\" role=\\"none\\">
+                                    <a class=\\"fd-navigation-list__content\\" role=\\"treeitem\\" tabindex=\\"0\\">
+                                        <div class=\\"fd-navigation-list__content-container\\">
+                                            <span class=\\"fd-navigation-list__icon\\">
+                                                <i class=\\" sap-icon--nurse\\" role=\\"presentation\\"></i>
+                                            </span>
+                                            <span class=\\"fd-navigation-list__text\\">Nav Item</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class=\\"fd-navigation-list__item\\" role=\\"none\\">
+                                    <a class=\\"fd-navigation-list__content\\" role=\\"treeitem\\" tabindex=\\"0\\">
+                                        <div class=\\"fd-navigation-list__content-container\\">
+                                            <span class=\\"fd-navigation-list__icon\\">
+                                                <i class=\\" sap-icon--travel-request\\" role=\\"presentation\\"></i>
+                                            </span>
+                                            <span class=\\"fd-navigation-list__text\\">Nav Item</span>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>                  
+                    </ul>
+                </div>
+        
+                <div class=\\"fd-side-nav__separator\\" role=\\"separator\\" aria-orientation=\\"horizontal\\" aria-roledescription=\\"Side Navigation Separator\\"></div>
+        
+                <div  class=\\"fd-side-nav__container fd-side-nav__container--bottom\\">
+                    <ul class=\\"fd-navigation-list level-1\\" role=\\"tree\\" tabindex=\\"-1\\" aria-roledescription=\\"Navigation List Tree\\">
+                        <li class=\\"fd-navigation-list__item fd-navigation-list__item--quick-create\\" role=\\"none\\">
+                            <a class=\\"fd-navigation-list__content\\" role=\\"treeitem\\" tabindex=\\"0\\">
+                                <div class=\\"fd-navigation-list__content-container\\">
+                                    <span class=\\"fd-navigation-list__icon\\">
+                                        <i class=\\" sap-icon--write-new\\" role=\\"presentation\\"></i>
+                                    </span>
+                                    <span class=\\"fd-navigation-list__text\\">Quick Create</span>
+                                </div>
+                            </a>
+                        </li>
+            
+                        <li class=\\"fd-navigation-list__item\\" role=\\"none\\">
+                            <a class=\\"fd-navigation-list__content\\" role=\\"treeitem\\" tabindex=\\"0\\">
+                                <div class=\\"fd-navigation-list__content-container\\">
+                                    <span class=\\"fd-navigation-list__icon\\">
+                                        <i class=\\" sap-icon--journey-change\\" role=\\"presentation\\"></i>
+                                    </span>
+                                    <span class=\\"fd-navigation-list__text\\">Nav Item</span>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+    
+</div>
+
+
+
+"
+`;
+
 exports[`Check stories > Components/Skeleton > Story Circle > Should match snapshot 1`] = `
 "<div class=\\"fd-skeleton\\" style=\\"width: 50px; height: 50px;\\">
     <svg width=\\"100%\\" height=\\"100%\\" class=\\"fd-skeleton__canvas\\">
@@ -50189,262 +51138,6 @@ exports[`Check stories > Components/User Menu > Story Default > Should match sna
         </div>
     </div>
 </div>
-
-
-<!-- Navigation List -->
-<!-- Have to keep it for now, until the Side Nav is ready -->
-<!-- <div class=\\"fddocs-container\\">
-    <div style=\\"width: 300px\\">
-        <ul class=\\"fd-navigation-list level-1\\" role=\\"tree\\" aria-roledescription=\\"Navigation List Tree\\">
-            <li class=\\"fd-navigation-list__item\\" role=\\"none\\">
-                <a class=\\"fd-navigation-list__content is-focus\\" role=\\"treeitem\\" tabindex=\\"0\\">
-                    <div class=\\"fd-navigation-list__content-container\\">
-                        <span class=\\"fd-navigation-list__icon\\">
-                            <i class=\\" sap-icon--calendar\\" role=\\"presentation\\"></i>
-                        </span>
-                        <span class=\\"fd-navigation-list__text\\">Nav Item Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae perferendis, explicabo iusto animi vitae doloremque dolor cumque mollitia ipsum, in amet enim dicta doloribus? Distinctio magnam aperiam assumenda nemo ad.</span>
-                    </div>
-                    <div class=\\"fd-navigation-list__expander\\">
-                        <i class=\\"sap-icon--navigation-down-arrow\\" role=\\"presentation\\"></i>
-                    </div>
-                </a>
-            </li>
-            <li class=\\"fd-navigation-list__item\\" role=\\"none\\">
-                <a class=\\"fd-navigation-list__content\\" role=\\"treeitem\\" tabindex=\\"0\\">
-                    <div class=\\"fd-navigation-list__content-container\\">
-                        <span class=\\"fd-navigation-list__icon\\">
-                            <i class=\\" sap-icon--calendar\\" role=\\"presentation\\"></i>
-                        </span>
-                        <span class=\\"fd-navigation-list__text\\">Nav Item</span>
-                    </div>
-                    <div class=\\"fd-navigation-list__expander\\">
-                        <i class=\\"sap-icon--navigation-down-arrow\\" role=\\"presentation\\"></i>
-                    </div>
-                </a>
-                <ul class=\\"fd-navigation-list level-2\\" role=\\"group\\">
-                    <li class=\\"fd-navigation-list__item\\" role=\\"none\\">
-                        <a class=\\"fd-navigation-list__content\\" role=\\"treeitem\\" tabindex=\\"0\\">
-                            <div class=\\"fd-navigation-list__content-container\\">
-                                <span class=\\"fd-navigation-list__text\\">Child Item</span>
-                            </div>
-                        </a>
-                    </li>
-                    <li class=\\"fd-navigation-list__item\\" role=\\"none\\">
-                        <a class=\\"fd-navigation-list__content is-selected\\" role=\\"treeitem\\" tabindex=\\"0\\">
-                            <div class=\\"fd-navigation-list__content-container\\">
-                                <span class=\\"fd-navigation-list__text\\">Child Item</span>
-                            </div>
-                        </a>
-                    </li>
-                    <li class=\\"fd-navigation-list__item\\" role=\\"none\\">
-                        <a class=\\"fd-navigation-list__content\\" role=\\"treeitem\\" tabindex=\\"0\\">
-                            <div class=\\"fd-navigation-list__content-container\\">
-                                <span class=\\"fd-navigation-list__text\\">Child Item</span>
-                            </div>
-                        </a>
-                    </li>
-                </ul>
-            </li>
-            <li class=\\"fd-navigation-list__item\\" role=\\"none\\">
-                <a class=\\"fd-navigation-list__content is-selected is-focus\\" role=\\"treeitem\\" tabindex=\\"0\\">
-                    <div class=\\"fd-navigation-list__content-container\\">
-                        <span class=\\"fd-navigation-list__icon\\">
-                            <i class=\\" sap-icon--calendar\\" role=\\"presentation\\"></i>
-                        </span>
-                        <span class=\\"fd-navigation-list__text\\">Nav Item</span>
-                    </div>
-                </a>
-            </li>
-            <li class=\\"fd-navigation-list__item\\" role=\\"none\\">
-                <a class=\\"fd-navigation-list__content\\" role=\\"treeitem\\" tabindex=\\"0\\">
-                    <div class=\\"fd-navigation-list__content-container\\">
-                        <span class=\\"fd-navigation-list__icon\\">
-                            <i class=\\" sap-icon--calendar\\" role=\\"presentation\\"></i>
-                        </span>
-                        <span class=\\"fd-navigation-list__text\\">Nav Item</span>
-                    </div>
-                </a>
-            </li>
-            <li class=\\"fd-navigation-list__item fd-navigation-list__item--separator\\" tabindex=\\"-1\\" aria-disabled=\\"true\\"></li>
-            <li class=\\"fd-navigation-list__item\\" role=\\"none\\">
-                <a class=\\"fd-navigation-list__content\\" role=\\"treeitem\\" tabindex=\\"0\\">
-                    <div class=\\"fd-navigation-list__content-container\\">
-                        <span class=\\"fd-navigation-list__icon\\">
-                            <i class=\\" sap-icon--calendar\\" role=\\"presentation\\"></i>
-                        </span>
-                        <span class=\\"fd-navigation-list__text\\">Nav Item</span>
-                    </div>
-                </a>
-            </li>
-        </ul>
-    </div>
-</div>
-
-<div class=\\"fddocs-container\\" style=\\"margin-block: 5rem;\\">
-    <div style=\\"width: 300px\\">
-        <ul class=\\"fd-navigation-list level-1\\" role=\\"tree\\" aria-roledescription=\\"Navigation List Tree\\">
-            <li class=\\"fd-navigation-list__item\\" role=\\"none\\">
-                <a class=\\"fd-navigation-list__content\\" role=\\"treeitem\\" tabindex=\\"0\\">
-                    <div class=\\"fd-navigation-list__content-container\\">
-                        <span class=\\"fd-navigation-list__icon\\">
-                            <i class=\\" sap-icon--calendar\\" role=\\"presentation\\"></i>
-                        </span>
-                        <span class=\\"fd-navigation-list__text\\">Regular</span>
-                    </div>
-                    <div class=\\"fd-navigation-list__expander\\">
-                        <i class=\\"sap-icon--navigation-down-arrow\\" role=\\"presentation\\"></i>
-                    </div>
-                </a>
-            </li>
-            <li class=\\"fd-navigation-list__item\\" role=\\"none\\">
-                <a class=\\"fd-navigation-list__content is-hover\\" role=\\"treeitem\\" tabindex=\\"0\\">
-                    <div class=\\"fd-navigation-list__content-container\\">
-                        <span class=\\"fd-navigation-list__icon\\">
-                            <i class=\\" sap-icon--calendar\\" role=\\"presentation\\"></i>
-                        </span>
-                        <span class=\\"fd-navigation-list__text\\">Hover</span>
-                    </div>
-                    <div class=\\"fd-navigation-list__expander\\">
-                        <i class=\\"sap-icon--navigation-down-arrow\\" role=\\"presentation\\"></i>
-                    </div>
-                </a>
-            </li>
-            <li class=\\"fd-navigation-list__item\\" role=\\"none\\">
-                <a class=\\"fd-navigation-list__content is-active\\" role=\\"treeitem\\" tabindex=\\"0\\">
-                    <div class=\\"fd-navigation-list__content-container\\">
-                        <span class=\\"fd-navigation-list__icon\\">
-                            <i class=\\" sap-icon--calendar\\" role=\\"presentation\\"></i>
-                        </span>
-                        <span class=\\"fd-navigation-list__text\\">Active</span>
-                    </div>
-                    <div class=\\"fd-navigation-list__expander\\">
-                        <i class=\\"sap-icon--navigation-down-arrow\\" role=\\"presentation\\"></i>
-                    </div>
-                </a>
-            </li>
-            <li class=\\"fd-navigation-list__item\\" role=\\"none\\">
-                <a class=\\"fd-navigation-list__content is-focus\\" role=\\"treeitem\\" tabindex=\\"0\\">
-                    <div class=\\"fd-navigation-list__content-container\\">
-                        <span class=\\"fd-navigation-list__icon\\">
-                            <i class=\\" sap-icon--calendar\\" role=\\"presentation\\"></i>
-                        </span>
-                        <span class=\\"fd-navigation-list__text\\">Focus</span>
-                    </div>
-                    <div class=\\"fd-navigation-list__expander\\">
-                        <i class=\\"sap-icon--navigation-down-arrow\\" role=\\"presentation\\"></i>
-                    </div>
-                </a>
-            </li>
-            <li class=\\"fd-navigation-list__item\\" role=\\"none\\">
-                <a class=\\"fd-navigation-list__content is-selected\\" role=\\"treeitem\\" tabindex=\\"0\\">
-                    <div class=\\"fd-navigation-list__content-container\\">
-                        <span class=\\"fd-navigation-list__icon\\">
-                            <i class=\\" sap-icon--calendar\\" role=\\"presentation\\"></i>
-                        </span>
-                        <span class=\\"fd-navigation-list__text\\">Selected</span>
-                    </div>
-                    <div class=\\"fd-navigation-list__expander\\">
-                        <i class=\\"sap-icon--navigation-down-arrow\\" role=\\"presentation\\"></i>
-                    </div>
-                </a>
-            </li>
-            <li class=\\"fd-navigation-list__item\\" role=\\"none\\">
-                <a class=\\"fd-navigation-list__content is-selected is-hover\\" role=\\"treeitem\\" tabindex=\\"0\\">
-                    <div class=\\"fd-navigation-list__content-container\\">
-                        <span class=\\"fd-navigation-list__icon\\">
-                            <i class=\\" sap-icon--calendar\\" role=\\"presentation\\"></i>
-                        </span>
-                        <span class=\\"fd-navigation-list__text\\">Selected Hover</span>
-                    </div>
-                    <div class=\\"fd-navigation-list__expander\\">
-                        <i class=\\"sap-icon--navigation-down-arrow\\" role=\\"presentation\\"></i>
-                    </div>
-                </a>
-            </li>
-            <li class=\\"fd-navigation-list__item\\" role=\\"none\\">
-                <a class=\\"fd-navigation-list__content is-disabled\\" role=\\"treeitem\\" tabindex=\\"-1\\">
-                    <div class=\\"fd-navigation-list__content-container\\">
-                        <span class=\\"fd-navigation-list__icon\\">
-                            <i class=\\" sap-icon--calendar\\" role=\\"presentation\\"></i>
-                        </span>
-                        <span class=\\"fd-navigation-list__text\\">Disabled</span>
-                    </div>
-                    <div class=\\"fd-navigation-list__expander\\">
-                        <i class=\\"sap-icon--navigation-down-arrow\\" role=\\"presentation\\"></i>
-                    </div>
-                </a>
-            </li>
-
-            <li class=\\"fd-navigation-list__item\\" role=\\"none\\">
-                <a class=\\"fd-navigation-list__content\\" role=\\"treeitem\\" tabindex=\\"0\\">
-                    <div class=\\"fd-navigation-list__content-container\\">
-                        <span class=\\"fd-navigation-list__icon\\">
-                            <i class=\\" sap-icon--calendar\\" role=\\"presentation\\"></i>
-                        </span>
-                        <span class=\\"fd-navigation-list__text\\">Nav Item</span>
-                    </div>
-                    <div class=\\"fd-navigation-list__expander\\">
-                        <i class=\\"sap-icon--navigation-down-arrow\\" role=\\"presentation\\"></i>
-                    </div>
-                </a>
-                <ul class=\\"fd-navigation-list level-2\\" role=\\"group\\">
-                    <li class=\\"fd-navigation-list__item\\" role=\\"none\\">
-                        <a class=\\"fd-navigation-list__content\\" role=\\"treeitem\\" tabindex=\\"0\\">
-                            <div class=\\"fd-navigation-list__content-container\\">
-                                <span class=\\"fd-navigation-list__text\\">Child Item</span>
-                            </div>
-                        </a>
-                    </li>
-                    <li class=\\"fd-navigation-list__item\\" role=\\"none\\">
-                        <a class=\\"fd-navigation-list__content is-selected\\" role=\\"treeitem\\" tabindex=\\"0\\">
-                            <div class=\\"fd-navigation-list__content-container\\">
-                                <span class=\\"fd-navigation-list__text\\">Child Item</span>
-                            </div>
-                        </a>
-                    </li>
-                    <li class=\\"fd-navigation-list__item\\" role=\\"none\\">
-                        <a class=\\"fd-navigation-list__content\\" role=\\"treeitem\\" tabindex=\\"0\\">
-                            <div class=\\"fd-navigation-list__content-container\\">
-                                <span class=\\"fd-navigation-list__text\\">Child Item</span>
-                            </div>
-                        </a>
-                    </li>
-                </ul>
-            </li>
-            <li class=\\"fd-navigation-list__item\\" role=\\"none\\">
-                <a class=\\"fd-navigation-list__content is-selected is-focus\\" role=\\"treeitem\\" tabindex=\\"0\\">
-                    <div class=\\"fd-navigation-list__content-container\\">
-                        <span class=\\"fd-navigation-list__icon\\">
-                            <i class=\\" sap-icon--calendar\\" role=\\"presentation\\"></i>
-                        </span>
-                        <span class=\\"fd-navigation-list__text\\">Nav Item</span>
-                    </div>
-                </a>
-            </li>
-            <li class=\\"fd-navigation-list__item\\" role=\\"none\\">
-                <a class=\\"fd-navigation-list__content\\" role=\\"treeitem\\" tabindex=\\"0\\">
-                    <div class=\\"fd-navigation-list__content-container\\">
-                        <span class=\\"fd-navigation-list__icon\\">
-                            <i class=\\" sap-icon--calendar\\" role=\\"presentation\\"></i>
-                        </span>
-                        <span class=\\"fd-navigation-list__text\\">Nav Item</span>
-                    </div>
-                </a>
-            </li>
-            <li class=\\"fd-navigation-list__item fd-navigation-list__item--separator\\" tabindex=\\"-1\\" aria-disabled=\\"true\\"></li>
-            <li class=\\"fd-navigation-list__item\\" role=\\"none\\">
-                <a class=\\"fd-navigation-list__content\\" role=\\"treeitem\\" tabindex=\\"0\\">
-                    <div class=\\"fd-navigation-list__content-container\\">
-                        <span class=\\"fd-navigation-list__icon\\">
-                            <i class=\\" sap-icon--calendar\\" role=\\"presentation\\"></i>
-                        </span>
-                        <span class=\\"fd-navigation-list__text\\">Nav Item</span>
-                    </div>
-                </a>
-            </li>
-        </ul>
-    </div>
-</div> -->
 "
 `;
 
@@ -52421,936 +53114,6 @@ exports[`Check stories > Components/Wizard > Story RevertedSteps > Should match 
         </div>
     </footer>
 </section>
-"
-`;
-
-exports[`Check stories > Deprecated/Components/Side Navigation > Story ComplexCozySideNav > Should match snapshot 1`] = `
-"<div class=\\"fd-side-nav\\">
-    <a class=\\"fd-side-nav__skip-link\\" href=\\"#content\\">Skip navigation</a>
-    <div class=\\"fd-side-nav__group-header\\" id=\\"EX400H1\\">
-        Group Header 1
-    </div>
-    <nav class=\\"fd-side-nav__main-navigation\\" aria-label=\\"Main Menu\\">
-        <ul class=\\"fd-nested-list \\" aria-labelledby=\\"EX400H1\\">
-            <li class=\\"fd-nested-list__item\\">
-                <a class=\\"fd-nested-list__link\\" href=\\"#\\">
-                    <i role=\\"presentation\\" class=\\"fd-nested-list__icon sap-icon--home\\"></i>
-                    <span class=\\"fd-nested-list__title\\">Level 1 Item</span>
-                </a>
-            </li>
-            <li class=\\"fd-nested-list__item\\">
-                <a class=\\"fd-nested-list__link\\" href=\\"#\\">
-                    <i role=\\"presentation\\" class=\\"fd-nested-list__icon sap-icon--calendar\\"></i>
-                    <span class=\\"fd-nested-list__title\\">Level 1 Item</span>
-                </a>
-            </li>
-            <li class=\\"fd-nested-list__item\\">
-                <div class=\\"fd-nested-list__content is-selected has-child\\">
-                    <a class=\\"fd-nested-list__link\\" href=\\"#\\">
-                        <i role=\\"presentation\\" class=\\"fd-nested-list__icon sap-icon--employee\\"></i>
-                        <span class=\\"fd-nested-list__title\\">Level 1 Item</span>
-                    </a>
-                    <button
-                        class=\\"fd-button fd-nested-list__button\\"
-                        aria-controls=\\"EX400L2\\"
-                        aria-haspopup=\\"true\\"
-                        aria-expanded=\\"false\\"
-                        aria-label=\\"Expand submenu\\"
-                        onclick=\\"toggleExpandedButton(event)\\">
-                        <i class=\\"sap-icon--navigation-right-arrow\\" role=\\"presentation\\"></i>
-                    </button>
-                </div>
-                <ul class=\\"fd-nested-list fd-nested-list--text-only level-2\\" id=\\"EX400L2\\" aria-hidden=\\"true\\">
-                    <li class=\\"fd-nested-list__item\\">
-                        <a class=\\"fd-nested-list__link\\" href=\\"#\\">
-                            <span class=\\"fd-nested-list__title\\">Level 2 Item</span>
-                        </a>
-                    </li>
-                    <li class=\\"fd-nested-list__item\\">
-                        <a class=\\"fd-nested-list__link is-selected\\" href=\\"#\\">
-                            <span class=\\"fd-nested-list__title\\">Level 2 Item</span>
-                        </a>
-                    </li>
-                    <li class=\\"fd-nested-list__item\\">
-                        <a class=\\"fd-nested-list__link\\" href=\\"#\\">
-                            <span class=\\"fd-nested-list__title\\">Level 2 Item</span>
-                        </a>
-                    </li>
-                </ul>
-            </li>
-            <li class=\\"fd-nested-list__item\\">
-                <a class=\\"fd-nested-list__link\\" href=\\"#\\">
-                    <i role=\\"presentation\\" class=\\"fd-nested-list__icon sap-icon--activities\\"></i>
-                    <span class=\\"fd-nested-list__title\\">Level 1 Item</span>
-                </a>
-            </li>
-        </ul>
-        <div class=\\"fd-side-nav__group-header\\" id=\\"EX400H2\\">
-            Group Header 2
-        </div>
-        <ul class=\\"fd-nested-list\\" aria-labelledby=\\"EX400H2\\">
-            <li class=\\"fd-nested-list__item\\">
-                <a class=\\"fd-nested-list__link\\" href=\\"#\\">
-                    <i role=\\"presentation\\" class=\\"fd-nested-list__icon sap-icon--bar-chart\\"></i>
-                    <span class=\\"fd-nested-list__title\\">Level 1 Item</span>
-                </a>
-            </li>
-            <li class=\\"fd-nested-list__item\\">
-                <a class=\\"fd-nested-list__link\\" href=\\"#\\">
-                    <span class=\\"fd-nested-list__title\\">Level 1 Item</span>
-                </a>
-            </li>
-        </ul>
-    </nav>
-    <nav class=\\"fd-side-nav__utility\\" aria-label=\\"Utility Menu\\">
-        <ul class=\\"fd-nested-list\\" aria-label=\\"Utility Menu\\">
-            <li class=\\"fd-nested-list__item\\">
-                <a class=\\"fd-nested-list__link\\" href=\\"#\\">
-                    <i role=\\"presentation\\" class=\\"fd-nested-list__icon sap-icon--compare\\"></i>
-                    <span class=\\"fd-nested-list__title\\">Level 1 Item</span>
-                </a>
-            </li>
-            <li class=\\"fd-nested-list__item\\">
-                <a class=\\"fd-nested-list__link\\" href=\\"#\\">
-                    <i role=\\"presentation\\" class=\\"fd-nested-list__icon sap-icon--chain-link\\"></i>
-                    <span class=\\"fd-nested-list__title\\">Level 1 Item</span>
-                </a>
-            </li>
-        </ul>
-    </nav>
-</div>
-"
-`;
-
-exports[`Check stories > Deprecated/Components/Side Navigation > Story CondensedStateCozy > Should match snapshot 1`] = `
-"<nav class=\\"fd-side-nav fd-side-nav--condensed\\">
-    <a class=\\"fd-side-nav__skip-link\\" href=\\"#content\\">Skip navigation</a>
-    <div class=\\"fd-side-nav__main-navigation\\">
-        <ul class=\\"fd-nested-list\\">
-            <li class=\\"fd-nested-list__item\\">
-                <a class=\\"fd-nested-list__link\\" href=\\"#\\">
-                    <i aria-label=\\"Level 1 Item\\" class=\\"fd-nested-list__icon sap-icon--home\\"></i>
-                    <span class=\\"fd-nested-list__title\\">Level 1 Item</span>
-                </a>
-            </li>
-            <li class=\\"fd-nested-list__item\\">
-                <a class=\\"fd-nested-list__link\\" href=\\"#\\">
-                    <i aria-label=\\"Level 1 Item\\" class=\\"fd-nested-list__icon sap-icon--calendar\\"></i>
-                    <span class=\\"fd-nested-list__title\\">Level 1 Item</span>
-                </a>
-            </li>
-            <li class=\\"fd-nested-list__item\\">
-                <div class=\\"fd-nested-list__content is-selected has-child\\">
-                    <button class=\\"fd-nested-list__link\\" aria-controls=\\"EX500L2\\" aria-haspopup=\\"true\\" aria-expanded=\\"false\\" aria-label=\\"Expand submenu\\">
-                        <i role=\\"presentation\\" class=\\"fd-nested-list__icon sap-icon--employee\\"></i>
-                        <span class=\\"fd-nested-list__title\\">Level 1 Item</span>
-                    </button>
-                </div>
-            </li>
-            <li class=\\"fd-nested-list__item\\">
-                <a class=\\"fd-nested-list__link\\" href=\\"#\\">
-                    <i aria-label=\\"Level 1 Item\\" class=\\"fd-nested-list__icon sap-icon--activities\\"></i>
-                    <span class=\\"fd-nested-list__title\\">Level 1 Item</span>
-                </a>
-            </li>
-            <li class=\\"fd-nested-list__item\\">
-                <a class=\\"fd-nested-list__link\\" href=\\"#\\">
-                    <i aria-label=\\"Level 1 Item\\" class=\\"fd-nested-list__icon sap-icon--bar-chart\\"></i>
-                    <span class=\\"fd-nested-list__title\\">Level 1 Item</span>
-                </a>
-            </li>
-        </ul>
-    </div>
-    <div class=\\"fd-side-nav__utility\\" aria-label=\\"Utility Menu\\">
-        <ul class=\\"fd-nested-list\\">
-            <li class=\\"fd-nested-list__item\\">
-                <a class=\\"fd-nested-list__link\\" href=\\"#\\">
-                    <i aria-label=\\"Level 1 Item\\" class=\\"fd-nested-list__icon sap-icon--compare\\"></i>
-                    <span class=\\"fd-nested-list__title\\">Level 1 Item</span>
-                </a>
-            </li>
-            <li class=\\"fd-nested-list__item\\">
-                <a class=\\"fd-nested-list__link\\" href=\\"#\\">
-                    <i aria-label=\\"Level 1 Item\\" class=\\"fd-nested-list__icon sap-icon--chain-link\\"></i>
-                    <span class=\\"fd-nested-list__title\\">Level 1 Item</span>
-                </a>
-            </li>
-        </ul>
-    </div>
-</nav>
-"
-`;
-
-exports[`Check stories > Deprecated/Components/Side Navigation > Story Cozy > Should match snapshot 1`] = `
-"<div class=\\"fd-side-nav\\">
-    <a class=\\"fd-side-nav__skip-link\\" href=\\"#content\\">Skip navigation</a>
-    <nav class=\\"fd-side-nav__main-navigation\\" aria-label=\\"Main Menu\\">
-        <ul class=\\"fd-nested-list fd-nested-list--text-only\\" aria-label=\\"Main Menu\\">
-            <li class=\\"fd-nested-list__item\\">
-                <a class=\\"fd-nested-list__link\\">
-                    <span class=\\"fd-nested-list__title\\">Level 1 Item</span>
-                </a>
-            </li>
-            <li class=\\"fd-nested-list__item\\">
-                <a class=\\"fd-nested-list__link is-selected\\">
-                    <span class=\\"fd-nested-list__title\\">Level 1 Item</span>
-                </a>
-            </li>
-            <li class=\\"fd-nested-list__item\\">
-                <a class=\\"fd-nested-list__link\\">
-                    <span class=\\"fd-nested-list__title\\">Level 1 Item</span>
-                </a>
-            </li>
-            <li class=\\"fd-nested-list__item\\">
-                <a class=\\"fd-nested-list__link\\">
-                    <span class=\\"fd-nested-list__title\\">Level 1 Item</span>
-                </a>
-            </li>
-        </ul>
-    </nav>
-    <nav class=\\"fd-side-nav__utility\\" aria-label=\\"Utility Menu\\">
-        <ul class=\\"fd-nested-list fd-nested-list--text-only\\" aria-label=\\"Utility Menu\\">
-            <li class=\\"fd-nested-list__item\\">
-                <a class=\\"fd-nested-list__link\\">
-                    <span class=\\"fd-nested-list__title\\">Level 1 Item</span>
-                </a>
-            </li>
-            <li class=\\"fd-nested-list__item\\">
-                <a class=\\"fd-nested-list__link\\">
-                    <span class=\\"fd-nested-list__title\\">Level 1 Item</span>
-                </a>
-            </li>
-        </ul>
-    </nav>
-</div>
-"
-`;
-
-exports[`Check stories > Deprecated/Components/Side Navigation > Story CozyGrouping > Should match snapshot 1`] = `
-"<div class=\\"fd-side-nav\\">
-    <a class=\\"fd-side-nav__skip-link\\" href=\\"#content\\">Skip navigation</a>
-    <nav class=\\"fd-side-nav__main-navigation\\" aria-label=\\"Main Menu\\">
-        <ul class=\\"fd-nested-list fd-nested-list--text-only\\">
-            <li class=\\"fd-nested-list__item\\">
-                <a class=\\"fd-nested-list__link\\" href=\\"#\\">
-                    <span class=\\"fd-nested-list__title\\">Level 1 Item</span>
-                </a>
-            </li>
-            <li class=\\"fd-nested-list__item\\">
-                <a class=\\"fd-nested-list__link is-selected\\" href=\\"#\\">
-                    <span class=\\"fd-nested-list__title\\">Level 1 Item</span>
-                </a>
-            </li>
-            <li class=\\"fd-nested-list__item\\">
-                <div class=\\"fd-nested-list__content has-child\\">
-                    <a class=\\"fd-nested-list__link\\" href=\\"#\\">
-                        <span class=\\"fd-nested-list__title\\">Level 1 Item</span>
-                    </a>
-                    <button class=\\"fd-button fd-nested-list__button\\"
-                        aria-controls=\\"EX100L2\\"
-                        aria-haspopup=\\"true\\"
-                        aria-expanded=\\"false\\"
-                        aria-label=\\"Expand submenu\\"
-                        onclick=\\"toggleExpandedButton(event)\\"
-                        >
-                        <i class=\\"sap-icon--navigation-right-arrow\\" role=\\"presentation\\"></i>
-                    </button>
-                </div>
-                <ul class=\\"fd-nested-list level-2\\" id=\\"EX100L2\\" aria-hidden=\\"true\\">
-                    <li class=\\"fd-nested-list__item\\">
-                        <a class=\\"fd-nested-list__link\\" href=\\"#\\">
-                            <span class=\\"fd-nested-list__title\\">Level 2 Item</span>
-                        </a>
-                    </li>
-                    <li class=\\"fd-nested-list__item\\">
-                        <a class=\\"fd-nested-list__link\\" href=\\"#\\">
-                            <span class=\\"fd-nested-list__title\\">Level 2 Item</span>
-                        </a>
-                    </li>
-                    <li class=\\"fd-nested-list__item\\">
-                        <a class=\\"fd-nested-list__link\\" href=\\"#\\">
-                            <span class=\\"fd-nested-list__title\\">Level 2 Item</span>
-                        </a>
-                    </li>
-                </ul>
-            </li>
-            <li class=\\"fd-nested-list__item\\">
-                <a class=\\"fd-nested-list__link\\" href=\\"#\\">
-                    <span class=\\"fd-nested-list__title\\">Level 1 Item</span>
-                </a>
-            </li>
-            <li class=\\"fd-nested-list__item\\">
-                <a class=\\"fd-nested-list__link\\" href=\\"#\\">
-                    <span class=\\"fd-nested-list__title\\">Level 1 Item</span>
-                </a>
-            </li>
-        </ul>
-    </nav>
-    <nav class=\\"fd-side-nav__utility\\" aria-label=\\"Utility Menu\\">
-        <ul class=\\"fd-nested-list fd-nested-list--text-only\\" aria-label=\\"Utility Menu\\">
-            <li class=\\"fd-nested-list__item\\">
-                <a class=\\"fd-nested-list__link\\" href=\\"#\\">
-                    <span class=\\"fd-nested-list__title\\">Level 1 Item</span>
-                </a>
-            </li>
-            <li class=\\"fd-nested-list__item\\">
-                <a class=\\"fd-nested-list__link\\" href=\\"#\\">
-                    <span class=\\"fd-nested-list__title\\">Level 1 Item</span>
-                </a>
-            </li>
-        </ul>
-    </nav>
-</div>
-"
-`;
-
-exports[`Check stories > Deprecated/Components/Side Navigation > Story CozyIcons > Should match snapshot 1`] = `
-"<div class=\\"fd-side-nav\\">
-    <a class=\\"fd-side-nav__skip-link\\" href=\\"#content\\">Skip navigation</a>
-    <nav class=\\"fd-side-nav__main-navigation\\" aria-label=\\"Main Menu\\">
-        <ul class=\\"fd-nested-list\\">
-            <li class=\\"fd-nested-list__item\\">
-                <a class=\\"fd-nested-list__link\\" href=\\"#\\">
-                    <i role=\\"presentation\\" class=\\"fd-nested-list__icon sap-icon--home\\"></i>
-                    <span class=\\"fd-nested-list__title\\">Level 1 Item</span>
-                </a>
-            </li>
-            <li class=\\"fd-nested-list__item\\">
-                <a class=\\"fd-nested-list__link is-selected\\" href=\\"#\\">
-                    <i role=\\"presentation\\" class=\\"fd-nested-list__icon sap-icon--calendar\\"></i>
-                    <span class=\\"fd-nested-list__title\\">Level 1 Item</span>
-                </a>
-            </li>
-            <li class=\\"fd-nested-list__item\\">
-                <a class=\\"fd-nested-list__link\\" href=\\"#\\">
-                    <i role=\\"presentation\\" class=\\"fd-nested-list__icon sap-icon--employee\\"></i>
-                    <span class=\\"fd-nested-list__title\\">Level 1 Item</span>
-                </a>
-            </li>
-            <li class=\\"fd-nested-list__item\\">
-                <a class=\\"fd-nested-list__link\\" href=\\"#\\">
-                    <i role=\\"presentation\\" class=\\"fd-nested-list__icon sap-icon--activities\\"></i>
-                    <span class=\\"fd-nested-list__title\\">Level 1 Item</span>
-                </a>
-            </li>
-        </ul>
-    </nav>
-    <nav class=\\"fd-side-nav__utility\\" aria-label=\\"Utility Menu\\">
-        <ul class=\\"fd-nested-list\\">
-            <li class=\\"fd-nested-list__item\\">
-                <a class=\\"fd-nested-list__link\\" href=\\"#\\">
-                    <i role=\\"presentation\\" class=\\"fd-nested-list__icon sap-icon--compare\\"></i>
-                    <span class=\\"fd-nested-list__title\\">Level 1 Item</span>
-                </a>
-            </li>
-            <li class=\\"fd-nested-list__item\\">
-                <a class=\\"fd-nested-list__link\\" href=\\"#\\">
-                    <i role=\\"presentation\\" class=\\"fd-nested-list__icon sap-icon--chain-link\\"></i>
-                    <span class=\\"fd-nested-list__title\\">Level 1 Item</span>
-                </a>
-            </li>
-        </ul>
-    </nav>
-</div>
-"
-`;
-
-exports[`Check stories > Deprecated/Components/Side Navigation > Story NestedListPopover > Should match snapshot 1`] = `
-"<div class=\\"fddocs-container\\" style=\\"margin-bottom: 200px;\\">
-    <div class=\\"fd-popover fd-popover--right\\">
-        <div class=\\"fd-popover__control\\">
-            <ul class=\\"fd-nested-list\\">
-                <li class=\\"fd-nested-list__item\\">
-                    <a class=\\"fd-nested-list__link\\" href=\\"#/\\">
-                        <i role=\\"presentation\\" class=\\"fd-nested-list__icon sap-icon--home\\"></i>
-                    </a>
-                </li>
-            </ul>
-        </div>
-        <div class=\\"fd-popover__body fd-popover__body--no-arrow\\" aria-hidden=\\"false\\" id=\\"popoverA11\\">
-            <ul class=\\"fd-nested-list fd-nested-list--popover\\">
-                <li class=\\"fd-nested-list__group-header\\">
-                    Group Header 1
-                </li>
-                <li class=\\"fd-nested-list__item\\">
-                    <a class=\\"fd-nested-list__link\\" href=\\"#/\\">
-                        <i role=\\"presentation\\" class=\\"fd-nested-list__icon sap-icon--home\\"></i>
-                        <span class=\\"fd-nested-list__title\\">Level 1 Item</span>
-                    </a>
-                </li>
-                <li class=\\"fd-nested-list__item\\">
-                    <a class=\\"fd-nested-list__link is-selected\\" href=\\"#/\\">
-                        <i role=\\"presentation\\" class=\\"fd-nested-list__icon sap-icon--calendar\\"></i>
-                        <span class=\\"fd-nested-list__title\\">Level 1 Item</span>
-                    </a>
-                </li>
-                <li class=\\"fd-nested-list__item\\">
-                    <a class=\\"fd-nested-list__link\\" href=\\"#/\\">
-                        <i role=\\"presentation\\" class=\\"fd-nested-list__icon sap-icon--activities\\"></i>
-                        <span class=\\"fd-nested-list__title\\">Level 1 Item</span>
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </div>
-    <div class=\\"fd-popover fd-popover--right\\">
-        <div class=\\"fd-popover__control\\">
-            <ul class=\\"fd-nested-list\\">
-                <li class=\\"fd-nested-list__item\\">
-                    <a class=\\"fd-nested-list__link\\" href=\\"#/\\">
-                        <i role=\\"presentation\\" class=\\"fd-nested-list__icon sap-icon--home\\"></i>
-                    </a>
-                </li>
-            </ul>
-        </div>
-        <div class=\\"fd-popover__body fd-popover__body--no-arrow\\" aria-hidden=\\"false\\" id=\\"popoverA12\\">
-            <ul class=\\"fd-nested-list fd-nested-list--popover\\">
-                <li class=\\"fd-nested-list__item fd-nested-list__item--popover\\">
-                    <a class=\\"fd-nested-list__link\\" href=\\"#/\\">
-                        <i role=\\"presentation\\" class=\\"fd-nested-list__icon sap-icon--home\\"></i>
-                        <span class=\\"fd-nested-list__title\\">Level 1 Item</span>
-                    </a>
-                </li>
-                <li class=\\"fd-nested-list__item fd-nested-list__item--popover\\">
-                    <a class=\\"fd-nested-list__link is-selected\\" href=\\"#/\\">
-                        <i role=\\"presentation\\" class=\\"fd-nested-list__icon sap-icon--calendar\\"></i>
-                        <span class=\\"fd-nested-list__title\\">Level 1 Item</span>
-                    </a>
-                </li>
-                <li class=\\"fd-nested-list__item fd-nested-list__item--popover\\">
-                    <a class=\\"fd-nested-list__link\\" href=\\"#/\\">
-                        <i role=\\"presentation\\" class=\\"fd-nested-list__icon sap-icon--activities\\"></i>
-                        <span class=\\"fd-nested-list__title\\">Level 1 Item</span>
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </div>
-</div>
-"
-`;
-
-exports[`Check stories > Deprecated/Components/Side Navigation > Story NestedListWithGroupHeaders > Should match snapshot 1`] = `
-"<ul class=\\"fd-nested-list\\">
-    <li class=\\"fd-nested-list__group-header\\">
-        Group Header 1
-    </li>
-    <li class=\\"fd-nested-list__item\\">
-        <a class=\\"fd-nested-list__link\\"href=\\"#/\\">
-            <i role=\\"presentation\\" class=\\"fd-nested-list__icon sap-icon--home\\"></i>
-            <span class=\\"fd-nested-list__title\\">Level 1 Item</span>
-        </a>
-    </li>
-    <li class=\\"fd-nested-list__item\\">
-        <a class=\\"fd-nested-list__link is-selected\\"href=\\"#/\\">
-            <i role=\\"presentation\\" class=\\"fd-nested-list__icon sap-icon--calendar\\"></i>
-            <span class=\\"fd-nested-list__title\\">Level 1 Item</span>
-        </a>
-    </li>
-    <li class=\\"fd-nested-list__item\\">
-	   <div class=\\"fd-nested-list__content has-child\\" tabindex=\\"0\\">
-			<a class=\\"fd-nested-list__link\\" href=\\"#\\" tabindex=\\"-1\\">
-				<i role=\\"presentation\\" class=\\"fd-nested-list__icon sap-icon--employee\\"></i>
-				<span class=\\"fd-nested-list__title\\">Level 1 Item</span>
-			</a>
-            <button class=\\"fd-button fd-nested-list__button\\"
-                aria-controls=\\"EX400L222\\"
-                aria-haspopup=\\"true\\"
-                aria-expanded=\\"true\\"
-                aria-label=\\"Expand submenu\\">
-                <i class=\\"sap-icon--navigation-right-arrow\\" role=\\"presentation\\"></i>
-            </button>
-		</div>
-        <ul class=\\"fd-nested-list fd-nested-list--text-only level-2\\" id=\\"EX400L222\\" aria-hidden=\\"false\\">
-            <li class=\\"fd-nested-list__item\\">
-                <a class=\\"fd-nested-list__link\\"href=\\"#/\\">
-                    <span class=\\"fd-nested-list__title\\">Level 2 Item</span>
-                </a>
-            </li>
-            <li class=\\"fd-nested-list__item\\">
-			   <div class=\\"fd-nested-list__content has-child\\" tabindex=\\"0\\">
-					<a class=\\"fd-nested-list__link\\" href=\\"#\\" tabindex=\\"-1\\">
-						<span class=\\"fd-nested-list__title\\">Level 2 Item</span>
-					</a>
-                    <button class=\\"fd-button fd-nested-list__button\\"
-                        aria-controls=\\"EX400L3\\"
-                        aria-haspopup=\\"true\\"
-                        aria-expanded=\\"true\\"
-                        aria-label=\\"Expand submenu\\">
-                        <i class=\\"sap-icon--navigation-right-arrow\\" role=\\"presentation\\"></i>
-                    </button>
-				</div>
-                <ul class=\\"fd-nested-list fd-nested-list--text-only level-3\\" id=\\"EX400L3\\" aria-hidden=\\"false\\">
-                    <li class=\\"fd-nested-list__item\\">
-                        <a class=\\"fd-nested-list__link\\"href=\\"#/\\">
-                            <span class=\\"fd-nested-list__title\\">Level 3 Item</span>
-                        </a>
-                    </li>
-                    <li class=\\"fd-nested-list__item\\">
-					   <div class=\\"fd-nested-list__content has-child\\" tabindex=\\"0\\">
-							<a class=\\"fd-nested-list__link\\" href=\\"#\\" tabindex=\\"-1\\">
-								<span class=\\"fd-nested-list__title\\">Level 3 Item</span>
-							</a>
-                            <button class=\\"fd-button fd-nested-list__button\\"
-                                aria-controls=\\"EX400L4\\"
-                                aria-haspopup=\\"true\\"
-                                aria-expanded=\\"true\\"
-                                aria-label=\\"Expand submenu\\">
-                                <i class=\\"sap-icon--navigation-right-arrow\\" role=\\"presentation\\"></i>
-                            </button>
-						</div>
-                        <ul class=\\"fd-nested-list fd-nested-list--text-only level-4\\" id=\\"EX400L4\\" aria-hidden=\\"false\\">
-                            <li class=\\"fd-nested-list__item\\">
-                                <a class=\\"fd-nested-list__link\\"href=\\"#/\\">
-                                    <span class=\\"fd-nested-list__title\\">Level 4 Item</span>
-                                </a>
-                            </li>
-                            <li class=\\"fd-nested-list__item\\">
-                                <a class=\\"fd-nested-list__link\\"href=\\"#/\\" >
-                                    <span class=\\"fd-nested-list__title\\">Level 4 Item</span>
-                                </a>
-                            </li>
-                            <li class=\\"fd-nested-list__item\\">
-                                <a class=\\"fd-nested-list__link\\"href=\\"#/\\">
-                                    <span class=\\"fd-nested-list__title\\">Level 4 Item</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class=\\"fd-nested-list__item\\">
-                        <a class=\\"fd-nested-list__link\\"href=\\"#/\\">
-                            <span class=\\"fd-nested-list__title\\">Level 3 Item</span>
-                        </a>
-                    </li>
-                </ul>
-            </li>
-            <li class=\\"fd-nested-list__item\\">
-                <a class=\\"fd-nested-list__link\\"href=\\"#/\\">
-                    <span class=\\"fd-nested-list__title\\">Level 2 Item</span>
-                </a>
-            </li>
-        </ul>
-    </li>
-    <li class=\\"fd-nested-list__item\\">
-        <a class=\\"fd-nested-list__link\\"href=\\"#/\\">
-            <i role=\\"presentation\\" class=\\"fd-nested-list__icon sap-icon--activities\\"></i>
-            <span class=\\"fd-nested-list__title\\">Level 1 Item</span>
-        </a>
-    </li>
-    <li class=\\"fd-nested-list__group-header\\">
-        Group Header 2
-    </li>
-    <li class=\\"fd-nested-list__item\\">
-        <a class=\\"fd-nested-list__link\\"href=\\"#/\\">
-            <i role=\\"presentation\\" class=\\"fd-nested-list__icon sap-icon--bar-chart\\"></i>
-            <span class=\\"fd-nested-list__title\\">Level 1 Item</span>
-        </a>
-    </li>
-    <li class=\\"fd-nested-list__item\\">
-        <a class=\\"fd-nested-list__link\\"href=\\"#/\\">
-            <span class=\\"fd-nested-list__title\\">Level 1 Item</span>
-        </a>
-    </li>
-</ul>
-"
-`;
-
-exports[`Check stories > Deprecated/Components/Side Navigation > Story NestedListWithIconsOnlyInFirstLevel > Should match snapshot 1`] = `
-"<ul class=\\"fd-nested-list\\">
-    <li class=\\"fd-nested-list__item\\">
-        <a class=\\"fd-nested-list__link\\"href=\\"#/\\">
-            <i role=\\"presentation\\" class=\\"fd-nested-list__icon sap-icon--home\\"></i>
-            <span class=\\"fd-nested-list__title\\">Level 1 Item</span>
-        </a>
-    </li>
-    <li class=\\"fd-nested-list__item\\">
-        <a class=\\"fd-nested-list__link is-selected\\"href=\\"#/\\">
-            <i role=\\"presentation\\" class=\\"fd-nested-list__icon sap-icon--calendar\\"></i>
-            <span class=\\"fd-nested-list__title\\">Level 1 Item</span>
-        </a>
-    </li>
-    <li class=\\"fd-nested-list__item\\">
-	   <div class=\\"fd-nested-list__content has-child is-expanded\\" tabindex=\\"0\\">
-			<a class=\\"fd-nested-list__link\\" href=\\"#\\" tabindex=\\"-1\\">
-				<i role=\\"presentation\\" class=\\"fd-nested-list__icon sap-icon--employee\\"></i>
-				<span class=\\"fd-nested-list__title\\">Level 1 Item</span>
-			</a>
-            <button class=\\"fd-button fd-nested-list__button\\"
-                aria-controls=\\"EX300L2\\"
-                aria-haspopup=\\"true\\"
-                aria-expanded=\\"true\\"
-                aria-label=\\"Expand submenu\\">
-                <i class=\\"sap-icon--navigation-right-arrow\\" role=\\"presentation\\"></i>
-            </button>
-		</div>
-        <ul class=\\"fd-nested-list fd-nested-list--text-only level-2\\" id=\\"EX300L2\\" aria-hidden=\\"false\\">
-            <li class=\\"fd-nested-list__item\\">
-                <a class=\\"fd-nested-list__link\\"href=\\"#/\\">
-                    <span class=\\"fd-nested-list__title\\">Level 2 Item</span>
-                </a>
-            </li>
-            <li class=\\"fd-nested-list__item\\">
-			   <div class=\\"fd-nested-list__content has-child\\" tabindex=\\"0\\">
-					<a class=\\"fd-nested-list__link\\" href=\\"#\\" tabindex=\\"-1\\">
-						<span class=\\"fd-nested-list__title\\">Level 2 Item</span>
-					</a>
-                    <button class=\\"fd-button fd-nested-list__button\\"
-                        aria-controls=\\"EX300L3\\"
-                        aria-haspopup=\\"true\\"
-                        aria-expanded=\\"true\\"
-                        aria-label=\\"Expand submenu\\">
-                        <i class=\\"sap-icon--navigation-right-arrow\\" role=\\"presentation\\"></i>
-                    </button>
-				</div>
-                <ul class=\\"fd-nested-list fd-nested-list--text-only level-3\\" id=\\"EX300L3\\" aria-hidden=\\"false\\">
-                    <li class=\\"fd-nested-list__item\\">
-                        <a class=\\"fd-nested-list__link\\"href=\\"#/\\">
-                            <span class=\\"fd-nested-list__title\\">Level 3 Item</span>
-                        </a>
-                    </li>
-                    <li class=\\"fd-nested-list__item\\">
-					   <div class=\\"fd-nested-list__content has-child\\" tabindex=\\"0\\">
-							<a class=\\"fd-nested-list__link\\" href=\\"#\\" tabindex=\\"-1\\">
-								<span class=\\"fd-nested-list__title\\">Level 3 Item</span>
-							</a>
-                            <button class=\\"fd-button fd-nested-list__button\\"
-                                aria-controls=\\"EX300L4\\"
-                                aria-haspopup=\\"true\\"
-                                aria-expanded=\\"true\\"
-                                aria-label=\\"Expand submenu\\">
-                                <i class=\\"sap-icon--navigation-right-arrow\\" role=\\"presentation\\"></i>
-                            </button>
-						</div>
-                        <ul class=\\"fd-nested-list fd-nested-list--text-only level-4\\" id=\\"EX300L4\\" aria-hidden=\\"false\\">
-                            <li class=\\"fd-nested-list__item\\">
-                                <a class=\\"fd-nested-list__link\\"href=\\"#/\\">
-                                    <span class=\\"fd-nested-list__title\\">Level 4 Item</span>
-                                </a>
-                            </li>
-                            <li class=\\"fd-nested-list__item\\">
-                                <a class=\\"fd-nested-list__link\\"href=\\"#/\\" >
-                                    <span class=\\"fd-nested-list__title\\">Level 4 Item</span>
-                                </a>
-                            </li>
-                            <li class=\\"fd-nested-list__item\\">
-                                <a class=\\"fd-nested-list__link\\"href=\\"#/\\">
-                                    <span class=\\"fd-nested-list__title\\">Level 4 Item</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class=\\"fd-nested-list__item\\">
-                        <a class=\\"fd-nested-list__link\\"href=\\"#/\\">
-                            <span class=\\"fd-nested-list__title\\">Level 3 Item</span>
-                        </a>
-                    </li>
-                </ul>
-            </li>
-            <li class=\\"fd-nested-list__item\\">
-                <a class=\\"fd-nested-list__link\\"href=\\"#/\\">
-                    <span class=\\"fd-nested-list__title\\">Level 2 Item</span>
-                </a>
-            </li>
-        </ul>
-    </li>
-    <li class=\\"fd-nested-list__item\\">
-        <a class=\\"fd-nested-list__link\\"href=\\"#/\\">
-            <i role=\\"presentation\\" class=\\"fd-nested-list__icon sap-icon--activities\\"></i>
-            <span class=\\"fd-nested-list__title\\">Level 1 Item</span>
-        </a>
-    </li>
-    <li class=\\"fd-nested-list__item\\">
-        <a class=\\"fd-nested-list__link\\"href=\\"#/\\">
-            <i role=\\"presentation\\" class=\\"fd-nested-list__icon sap-icon--bar-chart\\"></i>
-            <span class=\\"fd-nested-list__title\\">Level 1 Item</span>
-        </a>
-    </li>
-    <li class=\\"fd-nested-list__item\\">
-        <a class=\\"fd-nested-list__link\\"href=\\"#/\\">
-            <span class=\\"fd-nested-list__title\\">Level 1 Item</span>
-        </a>
-    </li>
-</ul>
-"
-`;
-
-exports[`Check stories > Deprecated/Components/Side Navigation > Story NestedListWithoutIcons > Should match snapshot 1`] = `
-"<ul class=\\"fd-nested-list fd-nested-list--text-only\\">
-    <li class=\\"fd-nested-list__item\\">
-        <a class=\\"fd-nested-list__link\\"href=\\"#/\\">
-            <span class=\\"fd-nested-list__title\\">Level 1 Item</span>
-        </a>
-    </li>
-    <li class=\\"fd-nested-list__item\\">
-        <a class=\\"fd-nested-list__link is-selected\\"href=\\"#/\\">
-            <span class=\\"fd-nested-list__title\\">Level 1 Item</span>
-        </a>
-    </li>
-    <li class=\\"fd-nested-list__item\\">
-	    <div class=\\"fd-nested-list__content has-child is-expanded\\">
-			<a class=\\"fd-nested-list__link\\" href=\\"#\\" >
-				<span class=\\"fd-nested-list__title\\">Level 1 Item</span>
-            </a>
-            <button class=\\"fd-button fd-nested-list__button\\"
-                    aria-controls=\\"EX100L25\\"
-                    aria-haspopup=\\"true\\"
-                    aria-expanded=\\"true\\"
-                    aria-label=\\"Expand submenu\\">
-                    <i class=\\"sap-icon--navigation-right-arrow\\" role=\\"presentation\\"></i>
-            </button>
-		</div>
-        <ul class=\\"fd-nested-list level-2\\" id=\\"EX100L25\\" aria-hidden=\\"false\\">
-            <li class=\\"fd-nested-list__item\\">
-                <a class=\\"fd-nested-list__link\\"href=\\"#/\\">
-                    <span class=\\"fd-nested-list__title\\">Level 2 Item</span>
-                </a>
-            </li>
-            <li class=\\"fd-nested-list__item\\">
-			   <div class=\\"fd-nested-list__content has-child\\" tabindex=\\"0\\">
-					<a class=\\"fd-nested-list__link\\" href=\\"#\\" tabindex=\\"-1\\">
-						<span class=\\"fd-nested-list__title\\">Level 2 Item</span>
-                    </a>
-                    <button class=\\"fd-button fd-nested-list__button\\"
-                        aria-controls=\\"EX100L35\\"
-                        aria-haspopup=\\"true\\"
-                        aria-expanded=\\"true\\"
-                        aria-label=\\"Expand submenu\\">
-                        <i class=\\"sap-icon--navigation-right-arrow\\" role=\\"presentation\\"></i>
-                    </button>
-				</div>
-                <ul class=\\"fd-nested-list level-3\\" id=\\"EX100L35\\" aria-hidden=\\"false\\">
-                    <li class=\\"fd-nested-list__item\\">
-                        <a class=\\"fd-nested-list__link\\"href=\\"#/\\">
-                            <span class=\\"fd-nested-list__title\\">Level 3 Item</span>
-                        </a>
-                    </li>
-                    <li class=\\"fd-nested-list__item\\">
-					   <div class=\\"fd-nested-list__content has-child\\" tabindex=\\"0\\">
-							<a class=\\"fd-nested-list__link\\" href=\\"#\\" tabindex=\\"-1\\">
-								<span class=\\"fd-nested-list__title\\">Level 3 Item</span>
-							</a>
-                            <button class=\\"fd-button fd-nested-list__button\\"
-                                aria-controls=\\"EX100L45\\"
-                                aria-haspopup=\\"true\\"
-                                aria-expanded=\\"true\\"
-                                aria-label=\\"Expand submenu\\">
-                                <i class=\\"sap-icon--navigation-right-arrow\\" role=\\"presentation\\"></i>
-                            </button>
-						</div>
-                        <ul class=\\"fd-nested-list level-4\\" id=\\"EX100L45\\" aria-hidden=\\"false\\">
-                            <li class=\\"fd-nested-list__item\\">
-                                <a class=\\"fd-nested-list__link\\"href=\\"#/\\">
-                                    <span class=\\"fd-nested-list__title\\">Level 4 Item</span>
-                                </a>
-                            </li>
-                            <li class=\\"fd-nested-list__item\\">
-							   <div class=\\"fd-nested-list__content has-child\\" tabindex=\\"0\\">
-									<a class=\\"fd-nested-list__link\\" href=\\"#\\" tabindex=\\"-1\\">
-										<span class=\\"fd-nested-list__title\\">Level 4 Item</span>
-									</a>
-                                    <button class=\\"fd-button fd-nested-list__button\\"
-                                        aria-controls=\\"EX100L55\\"
-                                        aria-haspopup=\\"true\\"
-                                        aria-expanded=\\"true\\"
-                                        aria-label=\\"Expand submenu\\">
-                                        <i class=\\"sap-icon--navigation-right-arrow\\" role=\\"presentation\\"></i>
-                                    </button>
-								</div>
-                                <ul class=\\"fd-nested-list level-5\\" id=\\"EX100L55\\" aria-hidden=\\"false\\">
-                                    <li class=\\"fd-nested-list__item\\">
-                                        <a class=\\"fd-nested-list__link\\"href=\\"#/\\">
-                                            <span class=\\"fd-nested-list__title\\">Level 5 Item</span>
-                                        </a>
-                                    </li>
-                                    <li class=\\"fd-nested-list__item\\">
-									   <div class=\\"fd-nested-list__content has-child\\" tabindex=\\"0\\">
-											<a class=\\"fd-nested-list__link\\" href=\\"#\\" tabindex=\\"-1\\">
-												<span class=\\"fd-nested-list__title\\">Level 5 Item</span>
-											</a>
-                                            <button class=\\"fd-button fd-nested-list__button\\"
-                                                aria-controls=\\"EX100L65\\"
-                                                aria-haspopup=\\"true\\"
-                                                aria-expanded=\\"true\\"
-                                                aria-label=\\"Expand submenu\\">
-                                                <i class=\\"sap-icon--navigation-right-arrow\\" role=\\"presentation\\"></i>
-                                            </button>
-										</div>
-                                        <ul class=\\"fd-nested-list level-6\\" id=\\"EX100L65\\" aria-hidden=\\"false\\">
-                                            <li class=\\"fd-nested-list__item\\">
-                                                <a class=\\"fd-nested-list__link\\"href=\\"#/\\">
-                                                    <span class=\\"fd-nested-list__title\\">Level 6 Item</span>
-                                                </a>
-                                            </li>
-                                            <li class=\\"fd-nested-list__item\\">
-                                                <a class=\\"fd-nested-list__link\\"href=\\"#/\\" >
-                                                    <span class=\\"fd-nested-list__title\\">Level 6 Item</span>
-                                                </a>
-                                            </li>
-                                            <li class=\\"fd-nested-list__item\\">
-                                                <a class=\\"fd-nested-list__link\\"href=\\"#/\\">
-                                                    <span class=\\"fd-nested-list__title\\">Level 6 Item</span>
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li class=\\"fd-nested-list__item\\">
-                                        <a class=\\"fd-nested-list__link\\"href=\\"#/\\">
-                                            <span class=\\"fd-nested-list__title\\">Level 5 Item</span>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class=\\"fd-nested-list__item\\">
-                                <a class=\\"fd-nested-list__link\\"href=\\"#/\\">
-                                    <span class=\\"fd-nested-list__title\\">Level 4 Item</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class=\\"fd-nested-list__item\\">
-                        <a class=\\"fd-nested-list__link\\"href=\\"#/\\">
-                            <span class=\\"fd-nested-list__title\\">Level 3 Item</span>
-                        </a>
-                    </li>
-                </ul>
-            </li>
-            <li class=\\"fd-nested-list__item\\">
-                <a class=\\"fd-nested-list__link\\"href=\\"#/\\">
-                    <span class=\\"fd-nested-list__title\\">Level 2 Item</span>
-                </a>
-            </li>
-        </ul>
-    </li>
-    <li class=\\"fd-nested-list__item\\">
-        <a class=\\"fd-nested-list__link\\"href=\\"#/\\">
-            <span class=\\"fd-nested-list__title\\">Level 1 Item</span>
-        </a>
-    </li>
-    <li class=\\"fd-nested-list__item\\">
-        <a class=\\"fd-nested-list__link\\"href=\\"#/\\">
-            <span class=\\"fd-nested-list__title\\">Level 1 Item</span>
-        </a>
-    </li>
-</ul>
-"
-`;
-
-exports[`Check stories > Deprecated/Components/Side Navigation > Story NestedListWithoutLinks > Should match snapshot 1`] = `
-"<ul class=\\"fd-nested-list\\">
-    <li class=\\"fd-nested-list__group-header\\">
-        Group Header 1
-    </li>
-    <li class=\\"fd-nested-list__item\\">
-        <div class=\\"fd-nested-list__content\\">
-            <i role=\\"presentation\\" class=\\"fd-nested-list__icon sap-icon--home\\"></i>
-            <span class=\\"fd-nested-list__title\\">Level 1 Item</span>
-        </div>
-    </li>
-    <li class=\\"fd-nested-list__item\\">
-        <div class=\\"fd-nested-list__content is-selected\\">
-            <i role=\\"presentation\\" class=\\"fd-nested-list__icon sap-icon--calendar\\"></i>
-            <span class=\\"fd-nested-list__title\\">Level 1 Item</span>
-        </div>
-    </li>
-    <li class=\\"fd-nested-list__item\\">
-	   <div class=\\"fd-nested-list__content has-child\\" tabindex=\\"0\\">
-            <i role=\\"presentation\\" class=\\"fd-nested-list__icon sap-icon--employee\\"></i>
-			<span class=\\"fd-nested-list__title\\">Level 1 Item</span>
-            <button class=\\"fd-button fd-nested-list__button\\"
-                aria-controls=\\"EX600L2\\"
-                aria-haspopup=\\"true\\"
-                aria-expanded=\\"true\\"
-                aria-label=\\"Expand submenu\\">
-                <i class=\\"sap-icon--navigation-right-arrow\\" role=\\"presentation\\"></i>
-            </button>
-		</div>
-        <ul class=\\"fd-nested-list fd-nested-list--text-only level-2\\" id=\\"EX600L2\\" aria-hidden=\\"false\\">
-            <li class=\\"fd-nested-list__item\\">
-                <div class=\\"fd-nested-list__content\\">
-                    <span class=\\"fd-nested-list__title\\">Level 2 Item</span>
-                </div>
-            </li>
-            <li class=\\"fd-nested-list__item\\">
-			   <div class=\\"fd-nested-list__content has-child\\" tabindex=\\"0\\">
-					<span class=\\"fd-nested-list__title\\">Level 2 Item</span>
-                    <button class=\\"fd-button fd-nested-list__button\\"
-                        aria-controls=\\"EX600L3\\"
-                        aria-haspopup=\\"true\\"
-                        aria-expanded=\\"true\\"
-                        aria-label=\\"Expand submenu\\">
-                        <i class=\\"sap-icon--navigation-right-arrow\\" role=\\"presentation\\"></i>
-                    </button>
-				</div>
-                <ul class=\\"fd-nested-list fd-nested-list--text-only level-3\\" id=\\"EX600L3\\" aria-hidden=\\"false\\">
-                    <li class=\\"fd-nested-list__item\\">
-                        <div class=\\"fd-nested-list__content\\">
-                            <span class=\\"fd-nested-list__title\\">Level 3 Item</span>
-                        </div>
-                    </li>
-                    <li class=\\"fd-nested-list__item\\">
-					   <div class=\\"fd-nested-list__content has-child\\" tabindex=\\"0\\">
-							<span class=\\"fd-nested-list__title\\">Level 3 Item</span>
-                            <button class=\\"fd-button fd-nested-list__button\\"
-                                aria-controls=\\"EX600L4\\"
-                                aria-haspopup=\\"true\\"
-                                aria-expanded=\\"true\\"
-                                aria-label=\\"Expand submenu\\">
-                                <i class=\\"sap-icon--navigation-right-arrow\\" role=\\"presentation\\"></i>
-                            </button>
-						</div>
-                        <ul class=\\"fd-nested-list fd-nested-list--text-only level-4\\" id=\\"EX600L4\\" aria-hidden=\\"false\\">
-                            <li class=\\"fd-nested-list__item\\">
-                                <div class=\\"fd-nested-list__content\\">
-                                    <span class=\\"fd-nested-list__title\\">Level 4 Item</span>
-                                </div>
-                            </li>
-                            <li class=\\"fd-nested-list__item\\">
-                                <div class=\\"fd-nested-list__content\\" >
-                                    <span class=\\"fd-nested-list__title\\">Level 4 Item</span>
-                                </div>
-                            </li>
-                            <li class=\\"fd-nested-list__item\\">
-                                <div class=\\"fd-nested-list__content\\">
-                                    <span class=\\"fd-nested-list__title\\">Level 4 Item</span>
-                                </div>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class=\\"fd-nested-list__item\\">
-                        <div class=\\"fd-nested-list__content\\">
-                            <span class=\\"fd-nested-list__title\\">Level 3 Item</span>
-                        </div>
-                    </li>
-                </ul>
-            </li>
-            <li class=\\"fd-nested-list__item\\">
-                <div class=\\"fd-nested-list__content\\">
-                    <span class=\\"fd-nested-list__title\\">Level 2 Item</span>
-                </div>
-            </li>
-        </ul>
-    </li>
-    <li class=\\"fd-nested-list__item\\">
-        <div class=\\"fd-nested-list__content\\">
-            <i role=\\"presentation\\" class=\\"fd-nested-list__icon sap-icon--activities\\"></i>
-            <span class=\\"fd-nested-list__title\\">Level 1 Item</span>
-        </div>
-    </li>
-    <li class=\\"fd-nested-list__group-header\\">
-        Group Header 2
-    </li>
-    <li class=\\"fd-nested-list__item\\">
-        <div class=\\"fd-nested-list__content\\">
-            <i role=\\"presentation\\" class=\\"fd-nested-list__icon sap-icon--bar-chart\\"></i>
-            <span class=\\"fd-nested-list__title\\">Level 1 Item</span>
-        </div>
-    </li>
-    <li class=\\"fd-nested-list__item\\">
-        <div class=\\"fd-nested-list__content\\">
-            <span class=\\"fd-nested-list__title\\">Level 1 Item</span>
-        </div>
-    </li>
-</ul>
 "
 `;
 
