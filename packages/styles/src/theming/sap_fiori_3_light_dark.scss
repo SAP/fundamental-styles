@@ -227,7 +227,9 @@
   --fdShellbar_Input_Placeholder_Color: var(--sapShell_InteractiveTextColor);
   --fdShellbar_Input_Border_Radius: var(--sapField_BorderCornerRadius);
   --fdShellbar_Input_Hover_Border_Color: var(--sapShell_InteractiveBorderColor);
-  --fdShellbar_Input_Addon_Dimension: 2.25rem;
+  --fdShellbar_Input_Addon_Width: 2.25rem;
+  --fdShellbar_Input_Addon_Height: 2.25rem;
+  --fdShellbar_Input_Addon_Margin_Inline: 0 0.25rem;
   --fdShellbar_Input_Addon_Border_Width: 0;
 
   /** Message Page */

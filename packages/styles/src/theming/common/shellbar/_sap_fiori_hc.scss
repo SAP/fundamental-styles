@@ -3,6 +3,16 @@
 @import "./sap_fiori";
 
 :root {
+  // Search Field Input
+  --fdShellbar_SearchField_Input_Border_Radius: 0;
+  --fdShellbar_SearchField_Input_Outline_Offset: -0.25rem;
+
+  // Search Field Button
+  --fdShellbar_SearchField_Button_Border_Radius: var(--sapButton_BorderCornerRadius);
+  --fdShellbar_SearchField_Submit_Button_Border_Color: var(--sapButton_Lite_BorderColor);
+  --fdShellbar_SearchField_Submit_Button_Border_Color_Hover: var(--sapButton_Lite_BorderColor);
+  
+  // Search Field Submit Button
   --fdShellbar_Button_Hover_Border_Color: var(--sapButton_Lite_BorderColor);
   --fdShellbar_Button_Active_Border_Color: var(--sapButton_Lite_Active_BorderColor);
   --fdShellbar_Button_Outline_Color: var(--sapContent_FocusColor);
@@ -11,4 +21,19 @@
   --fdShellbar_Search_Active_Button_Background: transparent;
   --fdShellbar_Search_Separator_Display: none;
   --fdShellbar_Input_Placeholder_Style: normal;
+  
+  // Search Field Category
+  --fdShell_Search_Field_Category_Divider_Display: none;
+  --fdShell_Search_Field_Category_Margin_End: 0.25rem;
+
+  // Search Field Category Dropdown
+  --fdShell_Search_Dropdown_Height: 2.25rem;
+  --fdShell_Search_Dropdown_Border_Radius: 0;
+  --fdShell_Search_Dropdown_Button_Radius: 0;
+  --fdShell_Search_Dropdown_Box_Shadow_Hover: -0.0625rem 0 0 0 var(--sapContent_ShadowColor);
+  --fdShell_Search_Dropdown_Active_Background: transparent;
+  --fdShell_Search_Dropdown_Hover_Background: transparent;
+  
+  // Search Category
+  --fdShell_Search_Category_Border: var(--sapField_BorderWidth) var(--sapField_BorderStyle) var(--sapShell_InteractiveBorderColor);
 }

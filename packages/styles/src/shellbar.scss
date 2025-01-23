@@ -5,6 +5,7 @@
 @import "./mixins/button/button-helper";
 
 $block: #{$fd-namespace}-shellbar;
+$select: #{$fd-namespace}-select;
 
 .#{$block} {
   // Brand
@@ -310,290 +311,221 @@ $block: #{$fd-namespace}-shellbar;
   }
 
   .#{$block}__search-field {
-    --fdSelect_Text_Content_Color: var(--fdShellbar_Select_Content_Color);
-    --fdInputGroup_Input_Border: var(--fdShellbar_Input_Border);
-    --fdInputGroup_Input_Color: var(--fdShellbar_Input_Color);
-    --fdInputGroup_Input_Placeholder_Color: var(--fdShellbar_Input_Placeholder_Color);
-    --fdInputGroup_Input_Placeholder_Style: var(--fdShellbar_Input_Placeholder_Style);
-    --fdInputGroup_Background: none;
-    --fdInputGroup_Background_Color: var(--fdShellbar_Input_Background);
-    --fdInputGroup_Hover_Background: none;
-    --fdInput_Group_Button_Box_Shadow: none;
-    --fdInput_Box_Shadow_Hover: none;
+    border: none;
+    min-width: 20rem;
+    max-width: 36rem;
+    border-radius: var(--fdShellbar_SearchField_Border_Radius);
+    box-shadow: var(--fdShellbar_SearchField_Box_Shadow, var(--fdShellbar_SearchField_Shadow));
+    background-color: var(--fdShellbar_SearchField_Background_Color, var(--sapShell_InteractiveBackground));
 
-    box-shadow: none;
-    width: 25rem;
-    border: var(--fdShellbar_Search_Border);
-    border-radius: var(--fdShellbar_Input_Border_Radius);
-    position: relative;
-    cursor: text;
-
-    &-helper {
-      display: var(--fdShellbar_Helper_Display);
-
-      &::before,
-      &::after {
-        position: absolute;
-        content: "";
-        z-index: 20;
-        pointer-events: none;
-        box-shadow: var(--sapField_Shadow);
-        border-radius: var(--fdShellbar_Input_Border_Radius);
-
-        @include fd-set-equal-positions(0);
-      }
-
-      &::after {
-        box-shadow: var(--fdShellbar_Helper_Bottom_Shadow);
-        border-radius: 0;
-      }
+    @include fd-hover() {
+      --fdShellbar_SearchField_Box_Shadow: var(--sapField_Hover_Shadow);
+      --fdShellbar_SearchField_Background_Color: var(--fdShellbar_SearchField_Background_Color_Hover);
     }
 
-    &-input {
-      position: relative;
+    @include fd-focus() {
+      --fdShellbar_SearchField_Background_Color: var(--fdShellbar_SearchField_Background_Color_Active);
 
-      @include fd-set-paddings-x-equal(var(--fdShellbar_Search_Input_X_Padding));
+      outline: none;
+    }
 
-      @include fd-hover() {
-        --fdInputGroup_Hover_Input_Background: var(--fdShellbar_Input_Hover_Background);
-        --fdInputGroup_Addon_Background: var(--fdShellbar_Search_Container_Hover_Background);
-        & ~ .#{$block}__search-field-addon {
-          --fdInputGroup_Addon_Background: var(--fdShellbar_Search_Container_Hover_Background);
-        }
+    @include fd-active() {
+      --fdShellbar_SearchField_Background_Color: var(--fdShellbar_SearchField_Background_Color_Active);
+    }
 
-        & ~ .#{$block}__search-field-helper {
-          &::after {
-            box-shadow: inset 0 -0.0625rem 0 var(--sapField_Hover_BorderColor);
-          }
-        }
-      }
+    &:has(input:focus) {
+      --fdShellbar_SearchField_Background_Color: var(--fdShellbar_SearchField_Background_Color_Active);
+      
+      background: none;
+      box-shadow: var(--fdShellbar_Active_Shadow);
+    }
 
-      @include fd-focus() {
-        --fdInputGroup_Input_Color: var(--fdShellbar_Input_Focus_Color);
-        --fdInputGroup_Input_Background: var(--fdShellbar_Input_Focus_Background);
-      }
+    &:has(button:hover) {
+      --fdShellbar_SearchField_Background_Color: var(--sapShell_InteractiveBackground);
+    }
 
+    .#{$block}__search-field-input {
+      width: 15rem;
+      padding-inline: var(--fdInputGroup_Input_Padding, 0.875rem 0.25rem);
+      border-radius: var(--fdShellbar_SearchField_Input_Border_Radius);
+      
       &:placeholder-shown {
         & ~ .#{$block}__search-cancel {
           display: none;
         }
       }
 
-      &:not(:placeholder-shown) {
-        & ~ .#{$block}__search-submit {
-          > * {
-            --fdButtonBackgroundColor: var(--fdShellbar_Search_Active_Button_Background);
-            --fdButtonColor: var(--fdShellbar_Search_Active_Button_Color);
-            --fdButtonIconColor: var(--fdShellbar_Search_Active_Button_Color);
-            --fdShellbar_Button_Active_Background: var(--fdButtonBackgroundColor);
-            --fdShellbar_Button_Active_Color: var(--fdShellbar_Search_Active_Button_Color);
+      &::placeholder {
+        color: var(--fdShellbar_SearchField_Input_Placeholder_TextColor);
+      }
 
-            &:hover {
-              --fdButtonBackgroundColor: var(--fdShellbar_Search_Active_Button_Hover_Background);
+      --fdInputGroup_Input_Color: var(--fdShellbar_SearchField_Input_Text_Color);
+      --fdInputGroup_Input_Border: var(--fdShellbar_SearchField_Input_Border);
+      --fdInputGroup_Input_Background: var(--fdShellbar_SearchField_Input_Background_Regular);
+
+      @include fd-hover() {
+        --fdInputGroup_Hover_Input_Background: var(--fdShellbar_SearchField_Input_Background_Hover);
+        --fdInputGroup_Input_Border: var(--fdShellbar_SearchField_Input_Border_Hover);
+
+        border: var(--fdInputGroup_Input_Border);
+      }
+
+      @include fd-active() {
+        --fdInputGroup_Input_Background: var(--fdShellbar_SearchField_Input_Background_Active);
+        --fdInputGroup_Input_Border: var(--fdShellbar_SearchField_Input_Border_Active);
+        --fdInputGroup_Input_Padding: var(--fdShellbar_SearchField_Input_Padding_Inline);
+      }
+
+      @include fd-focus() {
+        --fdInputGroup_Input_Background: var(--fdShellbar_SearchField_Input_Background_Focus);
+        --fdInputGroup_Input_Border: var(--fdShellbar_SearchField_Input_Border_Active);
+        --fdInputGroup_Input_Padding: var(--fdShellbar_SearchField_Input_Padding_Inline);
+
+
+        outline: var(--fdShellbar_SearchField_Input_Outline);
+        outline-offset: var(--fdShellbar_SearchField_Input_Outline_Offset);
+ 
+        &:not(:placeholder-shown) {
+          & ~ .#{$block}__search-submit {
+            > * {
+              --fdButtonColor: var(--fdShellbar_SearchField_Submit_Button_Color);
+              --fdButtonIconColor: var(--fdShellbar_SearchField_Submit_Button_Color);
+              --fdButtonBorderColor: var(--fdShellbar_SearchField_Submit_Button_Border_Color);
+              --fdButtonBackgroundColor: var(--fdShellbar_SearchField_Submit_Button_Background_Color);
+  
+              @include fd-hover() {
+                --fdButtonColor: var(--sapButton_Emphasized_Hover_TextColor);
+                --fdButtonIconColor: var(--sapButton_Emphasized_Hover_TextColor);
+                --fdButtonBorderColor: var(--fdShellbar_SearchField_Submit_Button_Border_Color_Hover);
+                --fdButtonBackgroundColor: var(--fdShellbar_SearchField_Submit_Button_Background_Color_Hover);
+              }
             }
           }
         }
       }
-
-      &--select {
-        @include fd-flex-vertical-center();
-
-        font-style: normal;
-        height: 100%;
-        flex: 0 1;
-      }
     }
 
-    &-addon {
-      @include fd-flex-vertical-center() {
-        height: 100%;
-        flex: 0 1;
-      }
+    .#{$block}__search-field-addon {
+      @include fd-set-width(var(--fdShellbar_SearchField_Button_Width));
+
+      margin-inline: var(--fdShellbar_SearchField_Addon_Margin_Inline);
 
       .#{$block}__button {
-        --fdButton_Outline_Offset: 0;
-        --fdButton_Focus_Border_Radius: var(--fdShellbar_Input_Border_Radius);
+        @include fd-set-width(var(--fdShellbar_SearchField_Button_Width));
+        @include fd-set-height(var(--fdShellbar_SearchField_Button_Height));
 
-        padding-inline: 0;
-        height: var(--fdShellbar_Input_Addon_Dimension);
-        min-width: var(--fdShellbar_Input_Addon_Dimension);
-        border-radius: var(--fdShellbar_Input_Border_Radius);
-        border-width: var(--fdShellbar_Input_Addon_Border_Width);
+        --fdButton_Focus_Border_Radius: var(--fdShellbar_SearchField_Button_Border_Radius);
+        
+        border-radius: var(--fdShellbar_SearchField_Button_Border_Radius);
 
-        @include fd-hover () {
-          @include fd-set-border-left(var(--fdShellbar_Button_Left_Border));
-
-          --fdButtonBackgroundColor: var(--fdShellbar_Search_Button_Hover_Background);
-        }
-
-        @include fd-active() {
-          border-color: var(--fdShellbar_Button_Active_Border_Color);
+        @include fd-focus() {
+          &::after {
+            inset: var(--fdShellbar_SearchField_Button_Focus_Inset);
+          }
         }
       }
     }
 
     .#{$block}__search-field-category {
-      flex-shrink: 0;
-
-      @include fd-hover() {
-        --fdInputGroup_Addon_Background: var(--fdShellbar_Input_Background);
-        & ~ .#{$block}__search-field-input,
-        & ~ .#{$block}__search-field-addon {
-          --fdInputGroup_Addon_Background: var(--fdShellbar_Input_Background);
-          --fdInputGroup_Input_Background: var(--fdShellbar_Input_Background);
-        }
-
-        .#{$block}__search-category {
-          box-shadow: var(--sapContent_Interaction_Shadow);
-          background-color: var(--fdShellbar_Search_Category_Button_Hover_Background);
-        }
-
-        .#{$block}__search-dropdown {
-          background-color: transparent;
-        }
+      position: relative;
+      margin-inline-end: var(--fdShell_Search_Field_Category_Margin_End);
+      
+      &::after {
+        content: "";
+        right: -0.5rem;
+        height: 1.5rem;
+        width: 0.0625rem;
+        position: absolute;
+        background-color: var(--sapShell_InteractiveBorderColor);
+        display: var(--fdShell_Search_Field_Category_Divider_Display);
       }
 
-      > * {
-        @include fd-set-margin-right(var(--fdShellbar_Search_Category_Offset_Right));
-        @include fd-set-margins-y-equal();
-      }
-      .#{$block}__search-dropdown {
-        background-color: var(--fdShellbar_Input_Background);
-        outline: none;
-        position: static;
-
-        --fdInput_Group_Button_Background: transparent;
-        --fdInput_Group_Button_Text_Color: var(--sapShell_InteractiveTextColor);
-
-        @include fd-focus() {
-          &::after {
-            display: none;
-          }
-        }
-      }
-      .#{$block}__search-category {
-        --fdSelect_Background: transparent;
-        --fdSelect_Hover_Background: transparent;
-        --fdSelect_Focus_Background: transparent;
-        --fdSelect_Background_Color: var(--fdShellbar_Input_Background);
-        --fdSelect_Hover_Background_Color: var(--fdShellbar_Input_Background);
-
-        border: var(--fdShellbar_Search_Category_Border);
-        border-width: var(--fdShellbar_Search_Category_Border_width);
-        border-radius: 0;
-        min-height: var(--fdShellbar_Input_Addon_Dimension);
-        height: var(--fdShellbar_Input_Addon_Dimension);
-        margin-inline: 0;
-        margin-block: 0;
-        position: relative;
-        margin-inline-start: var(--fdShellbar_Search_Category_Offset_Left);
-
+      @include fd-rtl() {
         &::after {
-          box-shadow: none;
+          left: -0.5rem;
+          right: auto;
         }
+      }
+    
+      .#{$select} {
+        margin-inline-start: 0.375rem;
 
-        &::before {
-          content: "";
-          position: absolute;
-          top: 0;
-          right: 0;
-          bottom: 0;
-          background: var(--sapShell_InteractiveBorderColor);
-          width: 0.0625rem;
-          display: var(--fdShellbar_Search_Separator_Display);
-        }
+        .#{$select}__control {
+          &::after {
+            box-shadow: none;
+          }
 
-        @include fd-rtl() {
-          &::before {
-            left: 0;
-            right: auto;
+          @include fd-focus() {
+            outline: none;
           }
         }
 
-        @include fd-focus() {
-          --fdSelect_Text_Content_Color: var(--sapButton_Active_TextColor);
-          --fdShellbar_Input_Background: var(--fdShellbar_Search_Category_Button_Hover_Background);
-          --fdSelect_Focus_Background: var(--fdShellbar_Search_Container_Hover_Background);
+        .#{$select}__text-content {
+          color: var(--sapShell_InteractiveTextColor);
+        }
+      }
 
-          border-radius: var(--fdShellbar_Input_Border_Radius);
-          outline-color: var(--sapButton_Lite_Active_BorderColor);
-          outline-width: 0.0625rem;
-          outline-offset: -0.0625rem;
+      .#{$block}__search-dropdown {
+        @include fd-set-width(2.125rem);
+
+        height: var(--fdShell_Search_Dropdown_Height);
+        border-radius: var(--fdShell_Search_Dropdown_Button_Radius);
+        color: var(--sapShell_InteractiveTextColor);
+
+        & > [class*="sap-icon"] {
+          @include fd-set-width(1rem);
+        }
+
+        @include fd-hover() {
+          background-color: var(--sapShell_Hover_Background);
+          color: var(--sapShell_InteractiveTextColor);
+          box-shadow: var(--fdShell_Search_Dropdown_Box_Shadow_Hover);
+        } 
+
+        @include fd-active() {
+          color: var(--sapShell_Active_TextColor);
+        }
+      }
+
+      .#{$block}__search-category {
+        gap: 0.25rem;
+        background: none;
+        max-width: 18rem;
+        margin-inline: 0;
+        height: var(--fdShell_Search_Dropdown_Height);
+        border-radius: var(--fdShell_Search_Dropdown_Border_Radius);
+        border: var(--fdShell_Search_Category_Border);
+
+        @include fd-hover() {
+          background-color: var(--fdShell_Search_Dropdown_Hover_Background);
+          box-shadow: var(--sapField_Hover_Shadow);
+          border: var(--fdShell_Search_Category_Border);
+        }
+
+        @include fd-active() {
+          background-color: var(--fdShell_Search_Dropdown_Active_Background);
 
           .#{$block}__search-dropdown {
-            --fdInput_Group_Button_Text_Color: var(--sapButton_Active_TextColor);
+            color: var(--sapShell_Active_TextColor);
+            box-shadow: var(--fdShell_Search_Dropdown_Box_Shadow_Hover);
           }
+        }
 
-          &::before {
+        @include fd-expanded() {
+          background-color: var(--fdShell_Search_Dropdown_Active_Background);
+          box-shadow: var(--sapField_Hover_Shadow);
+
+          .#{$block}__search-dropdown {
+            color: var(--sapShell_Active_TextColor);
+            box-shadow: var(--fdShell_Search_Dropdown_Box_Shadow_Hover);
+            background-color: var(--sapShell_Active_Background);
+          }
+        }
+
+        &--collapsed {
+          .#{$select}__text-content {
             display: none;
           }
-        }
-      }
-    }
-
-    @include fd-hover() {
-      --fdInputGroup_Hover_Background_Color: var(--fdShellbar_Search_Container_Hover_Background);
-
-      .#{$block}__search-field-helper {
-        &::before {
-          box-shadow: var(--sapField_Hover_Shadow);
-        }
-
-        &::after {
-          box-shadow: var(--fdShellbar_Hover_Helper_Bottom_Shadow);
-        }
-      }
-
-      .#{$block}__search-field {
-        &-category .#{$block}__search-category {
-          --fdSelect_Background_Color: var(--fdShellbar_Search_Container_Hover_Background);
-          --fdSelect_Hover_Background_Color: var(--fdShellbar_Search_Container_Hover_Background);
-
-          @include fd-hover() {
-            border-radius: var(--fdShellbar_Input_Border_Radius);
-
-            &::before {
-              display: none;
-            }
-          }
-        }
-      }
-
-      .#{$block}__search-field-category:not(:hover) {
-        .#{$block}__search-dropdown {
-          background-color: var(--fdShellbar_Search_Container_Hover_Background);
-        }
-      }
-    }
-
-    @include fd-focus() {
-      outline: none;
-      box-shadow: var(--fdShellbar_Active_Shadow);
-      background-color: var(--fdShellbar_Active_Background);
-
-      .#{$block}__search-field-helper {
-        &::before {
-          outline: var(--fdShellbar_Search_Active_Outline);
-          outline-offset: -0.125rem;
-        }
-
-        &::after,
-        &::before {
-          box-shadow: none;
-        }
-      }
-
-      .#{$block}__search-field-addon {
-        --fdInputGroup_Addon_Background: var(--fdShellbar_Search_Hover_Background);
-      }
-
-      .#{$block}__search-category {
-        background-color: var(--fdShellbar_Search_Hover_Background);
-      }
-
-      .#{$block}__search-field-category {
-        .#{$block}__search-dropdown {
-          background-color: var(--fdShellbar_Search_Hover_Category_Button_Background);
         }
       }
     }
