@@ -1,0 +1,143 @@
+@use "sass:map";
+
+@import "./new-settings";
+@import "./mixins";
+
+$block: #{$fd-namespace}-settings;
+
+
+.#{$block} {
+  &__dialog-content {
+    min-width: var(--fdSettings_Dialog_Content_Min_Width, 60rem);
+    min-height: var(--fdSettings_Dialog_Content_Min_Height, 42.5rem);
+    max-width: var(--fdSettings_Dialog_Content_Max_Width, 60rem);
+    max-height: var(--fdSettings_Dialog_Content_Max_Height, 42.5rem);
+  }
+
+  &__dialog-body {
+    @include fd-flex();
+
+    padding-block: 0;
+    padding-inline: 0;
+  }
+
+  &__list-area {
+    @include fd-reset();
+    @include fd-flex(column);
+    @include fd-set-width(var(--fdSettings_List_Area_Width, 20rem));
+    
+
+    height: 100%;
+    border-inline-end: var(--fdSettings_List_Area_Border, 0.0625rem solid var(--sapList_BorderColor));
+  }
+
+  &__list-container {
+    @include fd-reset();
+
+    @include fd-flex(column) {
+      justify-content: space-between;
+    };
+
+    height: 100%; 
+    overflow: hidden;  
+    position: relative;
+  }
+
+  .#{$block}__list {
+    &:is(:first-child) {
+      overflow-y: auto;
+    }
+
+    a::after {
+      content: var(--fdSettings_List_Nav_Indicator_Content, none);
+    }
+
+    &--footer {
+      border-top: 0.0625rem solid var(--sapList_BorderColor);
+    }
+  }
+
+  &__detail-area {
+    @include fd-reset();
+    @include fd-flex(column);
+
+    width: 100%;
+    height: 100%;
+
+    &:has(.#{$block}__tab-bar) {
+      .#{$block}__header {
+        --fdBar_Shadow: none;
+      }
+    }
+  }
+
+  &__header {
+    margin-block-start: var(--fdSettings_Header_Margin_Top, 1rem);
+  }
+
+  &__tab-bar {
+    height: 100%; 
+    overflow-y: hidden;
+  }
+
+  &__content {
+    @include fd-reset();
+
+    width: 100%;
+    height: 100%;
+    padding-inline: 1rem;
+    padding-block: 1rem;
+    overflow-y: auto;
+
+    &--no-padding {
+      padding-inline: 0;
+      padding-block: 0;
+    }
+
+    &--no-background {
+      background: transparent;
+    }
+  }
+
+  &--sm {
+    --fdSettings_List_Area_Width: 100%;
+    --fdSettings_Header_Margin_Top: 0;
+    --fdSettings_List_Nav_Indicator_Content: "\e1ed";
+    --fdSettings_Dialog_Content_Min_Width: 100%;
+    --fdSettings_Dialog_Content_Min_Height: 100%;
+    --fdSettings_Dialog_Content_Max_Width: 100%;
+    --fdSettings_Dialog_Content_Max_Height: 100%;
+    --fdSettings_List_Area_Border: none;
+
+    .#{$block}__dialog-content {
+      box-shadow: none;
+      border-radius: 0;
+    }
+
+    .#{$block}__dialog-body {
+      border-radius: 0;
+    }
+  }
+
+  &--md {
+    --fdSettings_List_Area_Width: 100%;
+    --fdSettings_Header_Margin_Top: 0;
+    --fdSettings_List_Nav_Indicator_Content: "\e1ed";
+    --fdSettings_Dialog_Content_Min_Width: 80%;
+    --fdSettings_Dialog_Content_Min_Height: 88%;
+    --fdSettings_Dialog_Content_Max_Width: 40rem;
+    --fdSettings_Dialog_Content_Max_Height: 42.5rem;
+    --fdSettings_List_Area_Border: none;
+  }
+
+  &--lg,
+  &--xl {
+    --fdSettings_List_Area_Width: 20rem;
+    --fdSettings_Header_Margin_Top: 1rem;
+    --fdSettings_List_Nav_Indicator_Content: none;
+    --fdSettings_Dialog_Content_Min_Width: 60rem;
+    --fdSettings_Dialog_Content_Min_Height: 42.5rem;
+    --fdSettings_Dialog_Content_Max_Width: 60rem;
+    --fdSettings_Dialog_Content_Max_Height: 42.5rem;
+  }
+}

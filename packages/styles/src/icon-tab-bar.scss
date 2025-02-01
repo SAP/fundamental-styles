@@ -293,6 +293,7 @@ $fd-icon-tab-bar-semantic-values: (
   --fdIcon_Tab_Bar_Container_Badge_Size: 0.5rem;
 
   @include fd-reset();
+  @include fd-flex(column);
 
   &__header {
     @include fd-reset();
