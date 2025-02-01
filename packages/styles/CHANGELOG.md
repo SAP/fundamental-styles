@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.39.0-rc.49](https://github.com/SAP/fundamental-styles/compare/v0.39.0-rc.48...v0.39.0-rc.49) (2025-02-01)
+
+### Bug Fixes
+
+- **styles:** update Side Navigation to Vega design [ci visual] ([#5904](https://github.com/SAP/fundamental-styles/issues/5904)) ([837df6a](https://github.com/SAP/fundamental-styles/commit/837df6aa580a1207d42381ce92450f6d9d4c04a2))
+
+### BREAKING CHANGES
+
+- **styles:** new structure and classes
+  uses Navigation List internally
+
 # [0.39.0-rc.48](https://github.com/SAP/fundamental-styles/compare/v0.39.0-rc.47...v0.39.0-rc.48) (2025-01-16)
 
 ### Bug Fixes
