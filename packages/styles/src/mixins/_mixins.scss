@@ -814,6 +814,15 @@
   }
 }
 
+@mixin fd-collapsed() {
+  @at-root {
+    [class*="-collapsed"],
+    &[class*="-collapsed"] {
+      @content;
+    }
+  }
+}
+
 @mixin fd-last-child() {
   &:last-child,
   &.is-last-child {
