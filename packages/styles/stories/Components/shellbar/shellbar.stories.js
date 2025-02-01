@@ -107,7 +107,8 @@ OptionalItems.parameters = {
     description: {
       story: `The following elements of the Shell Bar are optional:: 
       <ul>
-        <li><b>Side Navigation Button:</b> expands or collapses a vertical navigation panel for local navigation, and is mandatory in the Shell Bar if side navigation is used.</li>
+        <li><b>Side Navigation Button:</b> expands or collapses a vertical navigation panel for local navigation, and is mandatory in the Shell Bar if side navigation is used. In this case, the left spacing is fixed to 0.875rem to ensure alignment with the navigation panel. Right spacing is fixed to 1rem. </li>
+        <li><b>Back Button: </b> back navigation</li>
         <li><b>Additional Context Area:</b> for containers holding product-related elements like system or status information, and should include components relevant to the entire product, not specific applications, while avoiding content meant for other Shell Bar elements.</li>
         <li><b>Search:</b> the search field in the Shell Bar can be expanded or collapsed based on screen size, and on smaller screens (S), it may be collapsed or moved to the overflow menu if multiple action icons are present.</li>
         <li><b>Joule:</b> AI Assistant</li>

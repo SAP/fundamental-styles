@@ -46,9 +46,61 @@
   --fdShellbar_Search_Input_X_Padding: 0.9rem;
   --fdShellbar_Title_Color: var(--sapShell_SubBrand_TextColor);
   --fdShellbar_Subtitle_Color: var(--sapObjectHeader_Subtitle_TextColor);
-  --fdShellbar_Branding_Hover_Background: var(--sapButton_Lite_Hover_Background);
+  --fdShellbar_Branding_Hover_Background: var(--sapShell_Hover_Background);
   --fdShellbar_Branding_Active_Background: var(--sapButton_Lite_Active_Background);
   --fdShellbar_Branding_Hover_Border_Color: var(--sapButton_Lite_Hover_BorderColor);
   --fdShellbar_Branding_Active_Border_Color: var(--sapButton_Lite_Active_BorderColor);
   --fdShellbar_Button_Outline_Color: var(--sapContent_FocusColor);
+
+  // Search Field
+  --fdShellbar_SearchField_Shadow: var(--sapField_Shadow);
+  --fdShellbar_SearchField_Border_Radius: 1.125rem;
+  --fdShellbar_SearchField_Background_Color_Hover: var(--sapShell_Hover_Background);
+  --fdShellbar_SearchField_Background_Color_Active: var(--sapShell_Active_Background);
+
+  // Search Field Input
+  --fdShellbar_SearchField_Input_Border: none;
+  --fdShellbar_SearchField_Input_Border_Hover: none;
+  --fdShellbar_SearchField_Input_Border_Active: none;
+  --fdShellbar_SearchField_Input_Background_Regular: transparent;
+  --fdShellbar_SearchField_Input_Background_Hover: transparent;
+  --fdShellbar_SearchField_Input_Background_Active: transparent;
+  --fdShellbar_SearchField_Input_Background_Focus: transparent;
+  --fdShellbar_SearchField_Input_Outline: none;
+  --fdShellbar_SearchField_Input_Border_Radius: 0;
+  --fdShellbar_SearchField_Input_Outline_Offset: 0;
+  --fdShellbar_SearchField_Input_Padding_Inline: 0.875rem 0.25rem;
+  --fdShellbar_SearchField_Input_Text_Color: var(--sapField_TextColor);
+  --fdShellbar_SearchField_Input_Placeholder_TextColor: var(--sapField_PlaceholderTextColor);
+
+  // Search Field Addon
+  --fdShellbar_SearchField_Addon_Margin_Inline: 0 0.25rem;
+
+  // Search Field Button
+  --fdShellbar_SearchField_Button_Width: 1.75rem;
+  --fdShellbar_SearchField_Button_Height: 1.625rem;
+  --fdShellbar_SearchField_Button_Border_Radius: 1.063rem;
+  --fdShellbar_SearchField_Button_Focus_Inset: -0.0625rem; 
+
+  // Search Field Submit Button
+  --fdShellbar_SearchField_Submit_Button_Color: var(--sapButton_Emphasized_TextColor);
+  --fdShellbar_SearchField_Submit_Button_Background_Color: var(--sapButton_Emphasized_Background);
+  --fdShellbar_SearchField_Submit_Button_Background_Color_Hover: var(--sapButton_Emphasized_Hover_Background);
+  --fdShellbar_SearchField_Submit_Button_Border_Color: var(--sapButton_Emphasized_BorderColor);
+  --fdShellbar_SearchField_Submit_Button_Border_Color_Hover: var(--sapButton_Emphasized_Hover_BorderColor);
+
+  // Search Field Category
+  --fdShell_Search_Field_Category_Divider_Display: block;
+  --fdShell_Search_Field_Category_Margin_End: 0;
+
+  // Search Field Category Dropdown
+  --fdShell_Search_Dropdown_Height: 1.75rem;
+  --fdShell_Search_Dropdown_Border_Radius: 1.125rem;
+  --fdShell_Search_Dropdown_Button_Radius: 1.125rem;
+  --fdShell_Search_Dropdown_Box_Shadow_Hover: var(--sapField_Hover_Shadow);
+  --fdShell_Search_Dropdown_Active_Background: var(--sapShell_Active_Background);
+  --fdShell_Search_Dropdown_Hover_Background: var(--sapShell_Hover_Background);
+  
+  // Search Category
+  --fdShell_Search_Category_Border: var(--sapField_BorderWidth) var(--sapField_BorderStyle) var(--sapField_BorderColor);
 }

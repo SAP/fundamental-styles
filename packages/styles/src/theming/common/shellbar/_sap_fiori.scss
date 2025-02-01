@@ -49,4 +49,52 @@
   --fdShellbar_Branding_Hover_Border_Color: transparent;
   --fdShellbar_Branding_Active_Border_Color: transparent;
   --fdShellbar_Button_Outline_Color: var(--sapContent_ContrastFocusColor);
+
+  // Search Field
+  --fdShellbar_SearchField_Background_Color_Hover: transparent;
+  --fdShellbar_SearchField_Background_Color_Active: transparent;
+
+  // Search Field Input
+  --fdShellbar_SearchField_Input_Background_Hover: var(--sapShell_Hover_Background);
+  --fdShellbar_SearchField_Input_Background_Active: var(--sapShellColor);
+  --fdShellbar_SearchField_Input_Background_Focus: var(--sapShellColor);
+  --fdShellbar_SearchField_Input_Border: var(--sapField_BorderWidth) solid var(--sapShell_InteractiveBorderColor);
+  --fdShellbar_SearchField_Input_Border_Hover: var(--sapField_BorderWidth) solid var(--sapShell_InteractiveBorderColor);
+  --fdShellbar_SearchField_Input_Border_Active: var(--sapField_BorderWidth) solid var(--sapShell_InteractiveBorderColor);
+  --fdShellbar_SearchField_Input_Border_Radius: var(--sapField_BorderCornerRadius);
+  --fdShellbar_SearchField_Input_Placeholder_TextColor: var(--sapShell_InteractiveTextColor);
+  --fdShellbar_SearchField_Input_Text_Color: var(--sapShell_TextColor);
+  --fdShellbar_SearchField_Input_Outline: var(--sapContent_FocusWidth) var(--sapContent_FocusStyle) var(--sapShell_TextColor);
+  --fdShellbar_SearchField_Input_Outline_Offset: -0.1875rem;
+
+  // Search Field Addon
+  --fdShellbar_SearchField_Addon_Margin_Inline: 0.25rem 0;
+
+  // Search Field Button
+  --fdShellbar_SearchField_Button_Width: 2.25rem;
+  --fdShellbar_SearchField_Button_Height: 2.25rem;
+  --fdShellbar_SearchField_Button_Border_Radius: var(--sapField_BorderCornerRadius);
+  --fdShellbar_SearchField_Button_Focus_Inset: 0.0625rem;
+  
+  // Search Field Submit Button
+  --fdShellbar_SearchField_Submit_Button_Color: var(--sapButton_Emphasized_TextColor);
+  --fdShellbar_SearchField_Submit_Button_Background_Color: var(--sapShell_Active_Background);
+  --fdShellbar_SearchField_Submit_Button_Background_Color_Hover: var(--sapShell_Hover_Background);
+  --fdShellbar_SearchField_Submit_Button_Border_Color: var(--sapShell_Active_Background);
+  --fdShellbar_SearchField_Submit_Button_Border_Color_Hover: var(--sapShell_Hover_Background);
+
+  // Search Field Category
+  --fdShell_Search_Field_Category_Divider_Display: none;
+  --fdShell_Search_Field_Category_Margin_End: 0.25rem;
+
+  // Search Field Category Dropdown
+  --fdShell_Search_Dropdown_Height: 2.25rem;
+  --fdShell_Search_Dropdown_Border_Radius: var(--sapField_BorderCornerRadius);
+  --fdShell_Search_Dropdown_Button_Radius: var(--sapField_BorderCornerRadius);
+  --fdShell_Search_Dropdown_Box_Shadow_Hover: var(--sapField_Hover_Shadow);
+  --fdShell_Search_Dropdown_Active_Background: transparent;
+  --fdShell_Search_Dropdown_Hover_Background: transparent;
+  
+  // Search Category
+  --fdShell_Search_Category_Border: var(--sapField_BorderWidth) var(--sapField_BorderStyle) var(--sapShell_InteractiveBorderColor);
 }
