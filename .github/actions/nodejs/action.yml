@@ -31,10 +31,10 @@ runs:
           corepack --version
       shell: bash
 
-    - name: Activate Yarn 4.5.1 and Show Version
+    - name: Activate Yarn 4.6 and Show Version
       run: |
-          echo "Preparing and Activating Yarn 4.5.1..."
-          corepack prepare yarn@4.5.1 --activate || { echo 'Yarn activation failed'; exit 1; }
+          echo "Preparing and Activating Yarn 4.6..."
+          corepack prepare yarn@4.6 --activate || { echo 'Yarn activation failed'; exit 1; }
           echo "Yarn activated successfully."
           yarn --version
       shell: bash
