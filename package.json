@@ -5,7 +5,7 @@
     "yarn": ">= 4.5.1",
     "node": ">= 18"
   },
-  "packageManager": "yarn@4.5.1",
+  "packageManager": "yarn@4.6.0",
   "scripts": {
     "transform-stories": "ts-node stories-transformer.ts",
     "build": "npx nx run-many --target=build --all",
