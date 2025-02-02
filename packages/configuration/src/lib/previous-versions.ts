@@ -9,4 +9,5 @@ export const previousVersions = [
     {url: 'https://docs-0-35--fundamental-styles.netlify.app/', version: '0.35'},
     {url: 'https://docs-0-36--fundamental-styles.netlify.app/', version: '0.36'},
     {url: 'https://docs-0-37--fundamental-styles.netlify.app/', version: '0.37'},
+    {url: 'https://docs-0-38--fundamental-styles.netlify.app/', version: '0.38'},
 ]
