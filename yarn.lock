@@ -10052,7 +10052,7 @@ __metadata:
     start-server-and-test: "npm:1.14.0"
     storybook: "npm:^8.4.7"
     stylelint: "npm:16.8.2"
-    stylelint-config-standard: "npm:36.0.1"
+    stylelint-config-standard: "npm:37.0.0"
     stylelint-config-standard-scss: "npm:^13.1.0"
     stylelint-scss: "npm:6.1.0"
     through2: "npm:4.0.2"
@@ -18371,6 +18371,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"stylelint-config-recommended@npm:^15.0.0":
+  version: 15.0.0
+  resolution: "stylelint-config-recommended@npm:15.0.0"
+  peerDependencies:
+    stylelint: ^16.13.0
+  checksum: 10/11f35fb433c9ea1cb68d3140c116bbd20fafafc01d6a90d8dafb9820d7697df51c3e28ff5d5c98a576282179168d11b65b50cbbbc6d20fa35f5ef9dff6e2c8e1
+  languageName: node
+  linkType: hard
+
 "stylelint-config-standard-scss@npm:^13.1.0":
   version: 13.1.0
   resolution: "stylelint-config-standard-scss@npm:13.1.0"
@@ -18387,7 +18396,18 @@ __metadata:
   languageName: node
   linkType: hard
 
-"stylelint-config-standard@npm:36.0.1, stylelint-config-standard@npm:^36.0.0":
+"stylelint-config-standard@npm:37.0.0":
+  version: 37.0.0
+  resolution: "stylelint-config-standard@npm:37.0.0"
+  dependencies:
+    stylelint-config-recommended: "npm:^15.0.0"
+  peerDependencies:
+    stylelint: ^16.13.0
+  checksum: 10/2fe112448a82a59d39d66f7365a55af4092dc9fef9c31503156c8f281c7e62bd1413029b816d0e516df84316018ea69eee84d0b300f6e6e5f4c2cd083717e6c9
+  languageName: node
+  linkType: hard
+
+"stylelint-config-standard@npm:^36.0.0":
   version: 36.0.1
   resolution: "stylelint-config-standard@npm:36.0.1"
   dependencies:
