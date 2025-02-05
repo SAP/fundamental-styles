@@ -7,18 +7,41 @@ $block: #{$fd-namespace}-settings;
 
 
 .#{$block} {
-  &__dialog-content {
+  .#{$block}__dialog-content {
     min-width: var(--fdSettings_Dialog_Content_Min_Width, 60rem);
     min-height: var(--fdSettings_Dialog_Content_Min_Height, 42.5rem);
     max-width: var(--fdSettings_Dialog_Content_Max_Width, 60rem);
     max-height: var(--fdSettings_Dialog_Content_Max_Height, 42.5rem);
   }
 
-  &__dialog-body {
+  .#{$block}__dialog-body {
     @include fd-flex();
 
     padding-block: 0;
     padding-inline: 0;
+  }
+
+  .#{$block}__list {
+    &:is(:first-child) {
+      overflow-y: auto;
+    }
+
+    a::after {
+      content: var(--fdSettings_List_Nav_Indicator_Content, none);
+    }
+
+    &--footer {
+      border-top: 0.0625rem solid var(--sapList_BorderColor);
+    }
+  }
+
+  .#{$block}__tab-bar {
+    height: 100%; 
+    overflow-y: hidden;
+  }
+
+  .#{$block}__header {
+    margin-block-start: var(--fdSettings_Header_Margin_Top, 1rem);
   }
 
   &__list-area {
@@ -43,20 +66,6 @@ $block: #{$fd-namespace}-settings;
     position: relative;
   }
 
-  .#{$block}__list {
-    &:is(:first-child) {
-      overflow-y: auto;
-    }
-
-    a::after {
-      content: var(--fdSettings_List_Nav_Indicator_Content, none);
-    }
-
-    &--footer {
-      border-top: 0.0625rem solid var(--sapList_BorderColor);
-    }
-  }
-
   &__detail-area {
     @include fd-reset();
     @include fd-flex(column);
@@ -69,15 +78,6 @@ $block: #{$fd-namespace}-settings;
         --fdBar_Shadow: none;
       }
     }
-  }
-
-  &__header {
-    margin-block-start: var(--fdSettings_Header_Margin_Top, 1rem);
-  }
-
-  &__tab-bar {
-    height: 100%; 
-    overflow-y: hidden;
   }
 
   &__content {
