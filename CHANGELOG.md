@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.39.0-rc.57](https://github.com/SAP/fundamental-styles/compare/v0.39.0-rc.56...v0.39.0-rc.57) (2025-02-05)
+
+### Bug Fixes
+
+- **styles:** add specificity for Settings overwrite classes [ci visual] ([#5932](https://github.com/SAP/fundamental-styles/issues/5932)) ([5b1efba](https://github.com/SAP/fundamental-styles/commit/5b1efba5d6cf15d8e98eea4b9ecc4c02b5f6e6f5))
+
 # [0.39.0-rc.56](https://github.com/SAP/fundamental-styles/compare/v0.39.0-rc.55...v0.39.0-rc.56) (2025-02-02)
 
 **Note:** Version bump only for package fundamental-styles
@@ -5692,9 +5698,9 @@ Co-authored-by: droshev <mladen.droshev@sap.com>
 
 - added a new modifier class to fd-row to achieve even alignment of its elements:fd-row--top in a form.
   Before:
-    <div class="fd-row">
-    After:
-    <div class="fd-row fd-row--top">
+      <div class="fd-row">
+      After:
+      <div class="fd-row fd-row--top">
 
 ### Bug Fixes
 
