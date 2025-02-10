@@ -10413,7 +10413,7 @@ __metadata:
     markdown-to-jsx: "npm:7.1.2"
     normalize.css: "npm:8.0.1"
     npm-run-all: "npm:4.1.5"
-    nx: "npm:20.4.0"
+    nx: "npm:20.4.2"
     nx-stylelint: "npm:17.1.4"
     postcss: "npm:8.4.38"
     postcss-banner: "npm:4.0.1"
@@ -15569,7 +15569,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"nx@npm:>=17.1.2 < 21":
+"nx@npm:20.4.2, nx@npm:>=17.1.2 < 21":
   version: 20.4.2
   resolution: "nx@npm:20.4.2"
   dependencies:
