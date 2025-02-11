@@ -62,7 +62,6 @@ export default {
       </ul>
     </li>
     <li>\`fd-shellbar__title\`<span>: the Product name</span></li>
-    <li>\`fd-shellbar__subtitle\`<span>: the Solution name</span></li>
     <li>\`fd-shellbar__action\`<span>: is a container for controls in the actions group, with modifier classes that control the visibility of the element based on the screen size. </span>
       <ul>
         <li>\`fd-shellbar__action--grow\`</li>
