@@ -70,7 +70,6 @@ export default {
         <li>\`fd-shellbar__action--desktop\`</li>
       </ul>
     </li>
-    <li>\`fd-shellbar__product\`<span>: a container for Product name and Solution name</span></li>
     <li>\`fd-shellbar__button\`<span>: is an override style of \`fd-button\`, tailored for use within the Shell Bar.</span>
       <ul>
         <li>\`fd-shellbar__button--menu\`<span>: is an override style of the Menu Button, tailored for use within the Shell Bar.</span></li>
