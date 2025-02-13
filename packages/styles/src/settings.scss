@@ -12,6 +12,7 @@ $block: #{$fd-namespace}-settings;
     min-height: var(--fdSettings_Dialog_Content_Min_Height, 42.5rem);
     max-width: var(--fdSettings_Dialog_Content_Max_Width, 60rem);
     max-height: var(--fdSettings_Dialog_Content_Max_Height, 42.5rem);
+    height: var(--fdSettings_Dialog_Content_Height, 42.5rem);
   }
 
   .#{$block}__dialog-body {
@@ -99,10 +100,18 @@ $block: #{$fd-namespace}-settings;
     }
   }
 
-  &--sm {
+  &__container {
+    @include fd-reset();
+    @include fd-flex();
+
+    width: 100%;
+    height: 100%;
+  }
+
+  &:has(.#{$block}__container--sm) {
     --fdSettings_List_Area_Width: 100%;
     --fdSettings_Header_Margin_Top: 0;
-    --fdSettings_List_Nav_Indicator_Content: "\e1ed";
+    --fdSettings_List_Nav_Indicator_Content: '\e1ed';
     --fdSettings_Dialog_Content_Min_Width: 100%;
     --fdSettings_Dialog_Content_Min_Height: 100%;
     --fdSettings_Dialog_Content_Max_Width: 100%;
@@ -110,34 +119,34 @@ $block: #{$fd-namespace}-settings;
     --fdSettings_List_Area_Border: none;
 
     .#{$block}__dialog-content {
-      box-shadow: none;
-      border-radius: 0;
+        box-shadow: none;
+        border-radius: 0;
     }
 
     .#{$block}__dialog-body {
-      border-radius: 0;
+        border-radius: 0;
     }
   }
 
-  &--md {
-    --fdSettings_List_Area_Width: 100%;
-    --fdSettings_Header_Margin_Top: 0;
-    --fdSettings_List_Nav_Indicator_Content: "\e1ed";
-    --fdSettings_Dialog_Content_Min_Width: 80%;
-    --fdSettings_Dialog_Content_Min_Height: 88%;
-    --fdSettings_Dialog_Content_Max_Width: 40rem;
-    --fdSettings_Dialog_Content_Max_Height: 42.5rem;
-    --fdSettings_List_Area_Border: none;
+  &:has(.#{$block}__container--md) {
+      --fdSettings_List_Area_Width: 100%;
+      --fdSettings_Header_Margin_Top: 0;
+      --fdSettings_List_Nav_Indicator_Content: '\e1ed';
+      --fdSettings_Dialog_Content_Min_Width: 80%;
+      --fdSettings_Dialog_Content_Min_Height: 88%;
+      --fdSettings_Dialog_Content_Max_Width: 40rem;
+      --fdSettings_Dialog_Content_Max_Height: 42.5rem;
+      --fdSettings_List_Area_Border: none;
   }
 
-  &--lg,
-  &--xl {
-    --fdSettings_List_Area_Width: 20rem;
-    --fdSettings_Header_Margin_Top: 1rem;
-    --fdSettings_List_Nav_Indicator_Content: none;
-    --fdSettings_Dialog_Content_Min_Width: 60rem;
-    --fdSettings_Dialog_Content_Min_Height: 42.5rem;
-    --fdSettings_Dialog_Content_Max_Width: 60rem;
-    --fdSettings_Dialog_Content_Max_Height: 42.5rem;
+  &:has(.#{$block}__container--lg),
+  &:has(.#{$block}__container--xl) {
+      --fdSettings_List_Area_Width: 20rem;
+      --fdSettings_Header_Margin_Top: 1rem;
+      --fdSettings_List_Nav_Indicator_Content: none;
+      --fdSettings_Dialog_Content_Min_Width: 60rem;
+      --fdSettings_Dialog_Content_Min_Height: 42.5rem;
+      --fdSettings_Dialog_Content_Max_Width: 60rem;
+      --fdSettings_Dialog_Content_Max_Height: 42.5rem;
   }
 }
