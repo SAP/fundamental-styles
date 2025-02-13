@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.39.0-rc.59](https://github.com/SAP/fundamental-styles/compare/v0.39.0-rc.58...v0.39.0-rc.59) (2025-02-13)
+
+### Bug Fixes
+
+- **styles:** settings updates after ngx implementation [ci visual] ([#5946](https://github.com/SAP/fundamental-styles/issues/5946)) ([dc288d4](https://github.com/SAP/fundamental-styles/commit/dc288d4e14edad0ad25b4553bce8619b610158cc))
+
 # [0.39.0-rc.58](https://github.com/SAP/fundamental-styles/compare/v0.39.0-rc.57...v0.39.0-rc.58) (2025-02-10)
 
 **Note:** Version bump only for package fundamental-styles
