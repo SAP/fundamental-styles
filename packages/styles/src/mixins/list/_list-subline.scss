@@ -1,0 +1,65 @@
+@use "sass:map";
+
+@import "./list-definitions";
+
+.#{$block} {
+  &--subline {
+    .#{$block}__item {
+      @include fd-flex() {
+        gap: 0.75rem;
+        align-items: center;
+      };
+
+      min-height: 4.5rem;
+      padding-block: 0.5rem;
+      padding-inline: 1rem;
+    }
+
+    .#{$block}__content {
+      @include fd-reset();
+      
+      @include fd-flex(column) {
+        flex: 1;
+        gap: 0.25rem;
+        align-self: stretch;
+        justify-content: center;
+        align-items: flex-start;
+      };
+
+      overflow: hidden;
+    }
+
+    .#{$block}__title {
+      @include fd-ellipsis();
+
+      width: 100%;
+      max-width: 100%;
+      font-style: normal;
+      line-height: normal;
+      font-size: var(--sapFontSize);
+      color: var(--sapList_TextColor);
+      font-family: var(--sapFontBoldFamily);
+    }
+
+    .#{$block}__subline {
+      @include fd-reset();
+      @include fd-ellipsis();
+
+      width: 100%;
+      max-width: 100%;
+      font-style: normal;
+      line-height: normal;
+      font-size: var(--sapFontSize);
+      font-family: var(--sapFontFamily);
+      color: var(--sapContent_LabelColor);
+    }
+
+    .#{$block}__active-indicator {
+      color: var(--sapContent_NonInteractiveIconColor);
+    }
+
+    .#{$fd-namespace}-avatar:first-child {
+      margin-inline: 0;
+    }
+  }
+}
