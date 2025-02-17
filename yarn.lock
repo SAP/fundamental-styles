@@ -3917,7 +3917,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/addon-a11y@npm:^8.5.3":
+"@storybook/addon-a11y@npm:^8.5.6":
   version: 8.5.6
   resolution: "@storybook/addon-a11y@npm:8.5.6"
   dependencies:
@@ -3930,7 +3930,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/addon-actions@npm:^8.5.3":
+"@storybook/addon-actions@npm:^8.5.6":
   version: 8.5.6
   resolution: "@storybook/addon-actions@npm:8.5.6"
   dependencies:
@@ -3945,7 +3945,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/addon-controls@npm:^8.5.3":
+"@storybook/addon-controls@npm:^8.5.6":
   version: 8.5.6
   resolution: "@storybook/addon-controls@npm:8.5.6"
   dependencies:
@@ -3958,7 +3958,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/addon-docs@npm:^8.5.3":
+"@storybook/addon-docs@npm:^8.5.6":
   version: 8.5.6
   resolution: "@storybook/addon-docs@npm:8.5.6"
   dependencies:
@@ -3986,7 +3986,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/addon-links@npm:^8.5.3":
+"@storybook/addon-links@npm:^8.5.6":
   version: 8.5.6
   resolution: "@storybook/addon-links@npm:8.5.6"
   dependencies:
@@ -4003,7 +4003,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/addon-mdx-gfm@npm:^8.5.3":
+"@storybook/addon-mdx-gfm@npm:^8.5.6":
   version: 8.5.6
   resolution: "@storybook/addon-mdx-gfm@npm:8.5.6"
   dependencies:
@@ -4015,7 +4015,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/addon-toolbars@npm:^8.5.3":
+"@storybook/addon-toolbars@npm:^8.5.6":
   version: 8.5.6
   resolution: "@storybook/addon-toolbars@npm:8.5.6"
   peerDependencies:
@@ -4024,7 +4024,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/addon-viewport@npm:^8.5.3":
+"@storybook/addon-viewport@npm:^8.5.6":
   version: 8.5.6
   resolution: "@storybook/addon-viewport@npm:8.5.6"
   dependencies:
@@ -4035,7 +4035,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/blocks@npm:8.5.6, @storybook/blocks@npm:^8.5.3":
+"@storybook/blocks@npm:8.5.6, @storybook/blocks@npm:^8.5.6":
   version: 8.5.6
   resolution: "@storybook/blocks@npm:8.5.6"
   dependencies:
@@ -4069,7 +4069,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/components@npm:8.5.6, @storybook/components@npm:^8.5.3":
+"@storybook/components@npm:8.5.6, @storybook/components@npm:^8.5.6":
   version: 8.5.6
   resolution: "@storybook/components@npm:8.5.6"
   peerDependencies:
@@ -4078,7 +4078,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/core-events@npm:^8.5.3":
+"@storybook/core-events@npm:^8.5.6":
   version: 8.5.6
   resolution: "@storybook/core-events@npm:8.5.6"
   peerDependencies:
@@ -4122,7 +4122,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/csf-tools@npm:^8.5.3":
+"@storybook/csf-tools@npm:^8.5.6":
   version: 8.5.6
   resolution: "@storybook/csf-tools@npm:8.5.6"
   peerDependencies:
@@ -4156,7 +4156,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/html-vite@npm:^8.5.3":
+"@storybook/html-vite@npm:^8.5.6":
   version: 8.5.6
   resolution: "@storybook/html-vite@npm:8.5.6"
   dependencies:
@@ -4169,7 +4169,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/html@npm:8.5.6, @storybook/html@npm:^8.5.3":
+"@storybook/html@npm:8.5.6, @storybook/html@npm:^8.5.6":
   version: 8.5.6
   resolution: "@storybook/html@npm:8.5.6"
   dependencies:
@@ -4207,7 +4207,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/manager-api@npm:8.5.6, @storybook/manager-api@npm:^8.5.3":
+"@storybook/manager-api@npm:8.5.6, @storybook/manager-api@npm:^8.5.6":
   version: 8.5.6
   resolution: "@storybook/manager-api@npm:8.5.6"
   peerDependencies:
@@ -4216,7 +4216,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/preview-api@npm:8.5.6, @storybook/preview-api@npm:^8.5.3":
+"@storybook/preview-api@npm:8.5.6, @storybook/preview-api@npm:^8.5.6":
   version: 8.5.6
   resolution: "@storybook/preview-api@npm:8.5.6"
   peerDependencies:
@@ -4254,7 +4254,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/theming@npm:8.5.6, @storybook/theming@npm:^8.5.3":
+"@storybook/theming@npm:8.5.6, @storybook/theming@npm:^8.5.6":
   version: 8.5.6
   resolution: "@storybook/theming@npm:8.5.6"
   peerDependencies:
@@ -6949,7 +6949,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"chromatic@npm:^11.15.0, chromatic@npm:^11.20.2":
+"chromatic@npm:^11.15.0, chromatic@npm:^11.25.2":
   version: 11.25.2
   resolution: "chromatic@npm:11.25.2"
   peerDependencies:
@@ -10247,24 +10247,24 @@ __metadata:
     "@nx/react": "npm:20.4.4"
     "@nx/web": "npm:20.4.4"
     "@sap-theming/theming-base-content": "npm:11.25.1"
-    "@storybook/addon-a11y": "npm:^8.5.3"
-    "@storybook/addon-actions": "npm:^8.5.3"
-    "@storybook/addon-controls": "npm:^8.5.3"
-    "@storybook/addon-docs": "npm:^8.5.3"
-    "@storybook/addon-links": "npm:^8.5.3"
-    "@storybook/addon-mdx-gfm": "npm:^8.5.3"
-    "@storybook/addon-toolbars": "npm:^8.5.3"
-    "@storybook/addon-viewport": "npm:^8.5.3"
-    "@storybook/blocks": "npm:^8.5.3"
-    "@storybook/components": "npm:^8.5.3"
-    "@storybook/core-events": "npm:^8.5.3"
-    "@storybook/csf-tools": "npm:^8.5.3"
-    "@storybook/html": "npm:^8.5.3"
-    "@storybook/html-vite": "npm:^8.5.3"
+    "@storybook/addon-a11y": "npm:^8.5.6"
+    "@storybook/addon-actions": "npm:^8.5.6"
+    "@storybook/addon-controls": "npm:^8.5.6"
+    "@storybook/addon-docs": "npm:^8.5.6"
+    "@storybook/addon-links": "npm:^8.5.6"
+    "@storybook/addon-mdx-gfm": "npm:^8.5.6"
+    "@storybook/addon-toolbars": "npm:^8.5.6"
+    "@storybook/addon-viewport": "npm:^8.5.6"
+    "@storybook/blocks": "npm:^8.5.6"
+    "@storybook/components": "npm:^8.5.6"
+    "@storybook/core-events": "npm:^8.5.6"
+    "@storybook/csf-tools": "npm:^8.5.6"
+    "@storybook/html": "npm:^8.5.6"
+    "@storybook/html-vite": "npm:^8.5.6"
     "@storybook/icons": "npm:^1.3.2"
-    "@storybook/manager-api": "npm:^8.5.3"
-    "@storybook/preview-api": "npm:^8.5.3"
-    "@storybook/theming": "npm:^8.5.3"
+    "@storybook/manager-api": "npm:^8.5.6"
+    "@storybook/preview-api": "npm:^8.5.6"
+    "@storybook/theming": "npm:^8.5.6"
     "@swc/core": "npm:1.5.7"
     "@testing-library/react": "npm:15.0.6"
     "@types/fs-extra": "npm:11.0.4"
@@ -10276,7 +10276,7 @@ __metadata:
     "@vitejs/plugin-react": "npm:3.1.0"
     autoprefixer: "npm:10.4.20"
     bundlesize: "npm:0.18.2"
-    chromatic: "npm:^11.20.2"
+    chromatic: "npm:^11.25.2"
     clean-css: "npm:5.3.3"
     clean-css-cli: "npm:5.4.1"
     colors: "npm:1.4.0"
@@ -10324,7 +10324,7 @@ __metadata:
     semver: "npm:7.5.4"
     standard-version: "npm:9.3.2"
     start-server-and-test: "npm:1.14.0"
-    storybook: "npm:^8.5.3"
+    storybook: "npm:^8.5.6"
     stylelint: "npm:16.8.2"
     stylelint-config-standard: "npm:36.0.1"
     stylelint-config-standard-scss: "npm:^13.1.0"
@@ -18432,7 +18432,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"storybook@npm:^8.5.3":
+"storybook@npm:^8.5.6":
   version: 8.5.6
   resolution: "storybook@npm:8.5.6"
   dependencies:
