@@ -30,7 +30,7 @@ export default defineConfig({
     },
     css: {},
     build: {
-        target: 'es2015',
+        target: 'es2020',
         minify: 'terser',
         reportCompressedSize: true,
         sourcemap: false
