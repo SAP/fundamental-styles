@@ -20,6 +20,10 @@ $panel: #{$fd-namespace}-panel;
     --fdPanel_Header_Border_Bottom_Right_Radius: 0;
   }
 
+  .#{$block}__popover-wrapper {
+    overflow: visible;
+  }
+
   &__body {
     @include fd-reset();
 
@@ -27,11 +31,11 @@ $panel: #{$fd-namespace}-panel;
       gap: 0.5rem; 
     };
 
-    overflow: scroll;
+    overflow: visible;
     min-width: 18rem;
     max-width: 20rem;
-    padding-block: 1rem 0.5rem;
     padding-inline: 0.5rem;
+    padding-block: 2.5rem 0.5rem;
   }
 
   &__header {
@@ -71,6 +75,25 @@ $panel: #{$fd-namespace}-panel;
     color: var(--sapContent_LabelColor);
   }
 
+  .#{$block}__menu {
+    width: 100%;
+  }
+
+  .#{$block}__menu-list {
+    box-shadow: none;
+    border-radius: 0;
+
+    & > *:first-child, & > *:last-child {
+      border-radius: 0;
+    }
+  }
+
+  .#{$block}__panel {
+    & > div {
+      border-radius: 0;
+    }
+  }
+
   &__content-container {
     @include fd-reset();
 
@@ -82,10 +105,11 @@ $panel: #{$fd-namespace}-panel;
     @include fd-flex(column);
 
     height: 100%;
-    padding-block-start: 1rem;
+    padding-block-start: 0;
 
     .#{$block}__body {
       flex: 1;
+      padding-block-start: 1rem;
     }
   }
 

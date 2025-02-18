@@ -331,6 +331,44 @@ $block: #{$fd-namespace}-menu;
       }
     }
 
+    .#{$block}__sublist {
+      --fdMenu_Item_Spacing_Left: 1rem;
+      --fdMenu_Item_Spacing_Right: 1rem;
+
+      .#{$block}__title {
+        &:first-child {
+          margin-inline-start: 0;
+        }
+  
+        &:last-child {
+          margin-inline-end: 0;
+        }
+  
+        &:only-child {
+          margin-inline: 0;
+        }
+      }
+
+      &.#{$block}__sublist--icons {
+        --fdMenu_Item_Spacing_Left: 0;
+        --fdMenu_Item_Spacing_Right: 0;
+    
+        .#{$block}__title {
+          &:first-child {
+            margin-inline-start: var(--fdMenu_Icon_Width);
+          }
+    
+          &:last-child {
+            margin-inline-end: var(--fdMenu_Text_Spacing_Right);
+          }
+    
+          &:only-child {
+            margin-inline: var(--fdMenu_Icon_Width) var(--fdMenu_Text_Spacing_Right);
+          }
+        }
+      }
+    }
+
     input,
     .#{$block}__input {
       @include fd-set-margins-x(var(--fdMenu_Text_Spacing_Right), var(--fdMenu_Text_Spacing_Right));
@@ -386,6 +424,16 @@ $block: #{$fd-namespace}-menu;
       input,
       .#{$block}__input {
         margin-inline: 0.5rem;
+      }
+
+      .#{$block}__sublist {
+        --fdMenu_Item_Spacing_Left: 0.5rem;
+        --fdMenu_Item_Spacing_Right: 0.5rem;
+
+        &.#{$block}__sublist--icons {
+          --fdMenu_Item_Spacing_Left: 0;
+          --fdMenu_Item_Spacing_Right: 0;
+        }
       }
     }
   }

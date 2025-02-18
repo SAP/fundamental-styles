@@ -2,12 +2,6 @@
     <div style="height: 700px;">
         <div class="fd-user-menu fd-user-menu--mobile">
             <div class="fd-bar fd-bar--header fd-user-menu__title-bar">
-                <div class="fd-bar__left" aria-hidden="true"></div>
-                <div class="fd-bar__middle">
-                    <div class="fd-bar__element">
-                        <h5 class="fd-title fd-title--h5 fd-user-menu__title" aria-label="text">Profile</h5>
-                    </div>
-                </div>
                 <div class="fd-bar__right">
                     <div class="fd-bar__element">
                         <button aria-label="button" class="fd-button fd-button--transparent">
@@ -74,41 +68,38 @@
                             </ul>
                         </div>
                     </div>
-                    <ul class="fd-navigation-list" role="list">
-                        <li class="fd-navigation-list__item" role="listitem" tabindex="-1">
-                            <div class="fd-navigation-list__content" tabindex="0">
-                                <div class="fd-navigation-list__content-container">
-                                    <span class="fd-navigation-list__icon">
-                                        <i class=" sap-icon--action-settings" role="presentation"></i>
+                    <nav class="fd-menu fd-menu--icons fd-user-menu__menu">
+                        <ul class="fd-menu__list fd-user-menu__menu-list" role="menu">
+                            <li class="fd-menu__item" role="presentation">
+                                <a class="fd-menu__link" href="#" role="menuitem">
+                                    <span class="fd-menu__addon-before">
+                                        <i class="sap-icon--action-settings" role="presentation"></i>
                                     </span>
-                                    <span class="fd-navigation-list__text">Settings</span>
-                                </div>
-                                <div class="fd-navigation-list__expander">
-                                    <i class="sap-icon--navigation-right-arrow" role="presentation"></i>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="fd-navigation-list__item" role="listitem" tabindex="-1">
-                            <div class="fd-navigation-list__content" tabindex="0">
-                                <div class="fd-navigation-list__content-container">
-                                    <span class="fd-navigation-list__icon">
-                                        <i class=" sap-icon--official-service" role="presentation"></i>
+                                    <span class="fd-menu__title">Settings</span>
+                                </a>
+                            </li>
+
+                            <li class="fd-menu__item" role="presentation">
+                                <div class="fd-menu__link is-selected" href="#" role="menuitem">
+                                    <span class="fd-menu__addon-before">
+                                        <i class="sap-icon--official-service" role="presentation"></i>
                                     </span>
-                                    <span class="fd-navigation-list__text">Legal Information</span>
+                                    <span class="fd-menu__title">Legal Information</span>
+                                    <span class="fd-menu__addon-after fd-menu__addon-after--submenu"></span>
                                 </div>
-                            </div>
-                        </li>
-                        <li class="fd-navigation-list__item" role="listitem" tabindex="-1">
-                            <div class="fd-navigation-list__content" tabindex="0">
-                                <div class="fd-navigation-list__content-container">
-                                    <span class="fd-navigation-list__icon">
-                                        <i class=" sap-icon--message-information" role="presentation"></i>
+                            </li>
+
+                            <li class="fd-menu__item" role="presentation">
+                                <a class="fd-menu__link" href="#" role="menuitem">
+                                    <span class="fd-menu__addon-before">
+                                        <i class="sap-icon--message-information" role="presentation"></i>
                                     </span>
-                                    <span class="fd-navigation-list__text">About</span>
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
+                                    <span class="fd-menu__title">About</span>
+                                </a>
+                            </li>
+                            
+                        </ul>
+                    </nav>  
                 </div>
             </div>
             <div class="fd-bar fd-bar--footer fd-user-menu__footer">
@@ -134,93 +125,26 @@
                         </button>
                     </div>
                     <div class="fd-bar__element">
-                        <h5 class="fd-title fd-title--h5" aria-label="text">Settings</h5>
+                        <h5 class="fd-title fd-title--h5" aria-label="text">Legal Information</h5>
                     </div>
                 </div>
             </div>
             <div class="fd-user-menu__body">
-                <ul class="fd-navigation-list" role="list">
-                    <li class="fd-navigation-list__item" role="listitem" tabindex="-1">
-                        <div class="fd-navigation-list__content" tabindex="0">
-                            <div class="fd-navigation-list__content-container">
-                                <span class="fd-navigation-list__icon">
-                                    <i class=" sap-icon--action-settings" role="presentation"></i>
-                                </span>
-                                <span class="fd-navigation-list__text">Settings Item</span>
+                <nav class="fd-menu fd-user-menu__menu">
+                    <ul class="fd-menu__list fd-user-menu__menu-list" role="menu">
+                        <li class="fd-menu__item" role="presentation">
+                            <a class="fd-menu__link" href="#" role="menuitem">
+                                <span class="fd-menu__title">Privacy Policy</span>
+                            </a>
+                        </li>
+
+                        <li class="fd-menu__item" role="presentation">
+                            <div class="fd-menu__link" href="#" role="menuitem">
+                                <span class="fd-menu__title">Terms of Service</span>
                             </div>
-                        </div>
-                    </li>
-                    <li class="fd-navigation-list__item" role="listitem" tabindex="-1">
-                        <div class="fd-navigation-list__content" tabindex="0">
-                            <div class="fd-navigation-list__content-container">
-                                <span class="fd-navigation-list__icon">
-                                    <i class=" sap-icon--action-settings" role="presentation"></i>
-                                </span>
-                                <span class="fd-navigation-list__text">Settings Item</span>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="fd-navigation-list__item" role="listitem" tabindex="-1">
-                        <div class="fd-navigation-list__content" tabindex="0">
-                            <div class="fd-navigation-list__content-container">
-                                <span class="fd-navigation-list__icon">
-                                    <i class=" sap-icon--action-settings" role="presentation"></i>
-                                </span>
-                                <span class="fd-navigation-list__text">Settings Item</span>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="fd-navigation-list__item" role="listitem" tabindex="-1">
-                        <div class="fd-navigation-list__content" tabindex="0">
-                            <div class="fd-navigation-list__content-container">
-                                <span class="fd-navigation-list__icon">
-                                    <i class=" sap-icon--action-settings" role="presentation"></i>
-                                </span>
-                                <span class="fd-navigation-list__text">Settings Item</span>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="fd-navigation-list__item" role="listitem" tabindex="-1">
-                        <div class="fd-navigation-list__content" tabindex="0">
-                            <div class="fd-navigation-list__content-container">
-                                <span class="fd-navigation-list__icon">
-                                    <i class=" sap-icon--action-settings" role="presentation"></i>
-                                </span>
-                                <span class="fd-navigation-list__text">Settings Item</span>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="fd-navigation-list__item" role="listitem" tabindex="-1">
-                        <div class="fd-navigation-list__content" tabindex="0">
-                            <div class="fd-navigation-list__content-container">
-                                <span class="fd-navigation-list__icon">
-                                    <i class=" sap-icon--action-settings" role="presentation"></i>
-                                </span>
-                                <span class="fd-navigation-list__text">Settings Item</span>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="fd-navigation-list__item" role="listitem" tabindex="-1">
-                        <div class="fd-navigation-list__content" tabindex="0">
-                            <div class="fd-navigation-list__content-container">
-                                <span class="fd-navigation-list__icon">
-                                    <i class=" sap-icon--action-settings" role="presentation"></i>
-                                </span>
-                                <span class="fd-navigation-list__text">Settings Item</span>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="fd-navigation-list__item" role="listitem" tabindex="-1">
-                        <div class="fd-navigation-list__content" tabindex="0">
-                            <div class="fd-navigation-list__content-container">
-                                <span class="fd-navigation-list__icon">
-                                    <i class=" sap-icon--action-settings" role="presentation"></i>
-                                </span>
-                                <span class="fd-navigation-list__text">Settings Item</span>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
+                        </li>
+                    </ul>
+                </nav>  
             </div>
             <div class="fd-bar fd-bar--footer fd-user-menu__footer">
                 <div class="fd-bar__right">

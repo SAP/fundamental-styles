@@ -19,6 +19,7 @@ import '../../../src/navigation-list.scss';
 import '../../../src/input-group.scss';
 import '../../../src/panel.scss';
 import '../../../src/toolbar.scss';
+import '../../../src/menu.scss';
 
 export default {
   title: 'Components/User Menu',
