@@ -1,4 +1,5 @@
-const conventionalChangelog = require('conventional-changelog');
+import conventionalChangelog from 'conventional-changelog';
+
 const core = require('@actions/core');
 const through = require('through2');
 const closestVersion = require('./closest-version');
