@@ -1,9 +1,4 @@
-let conventionalChangelog;
-(async () => {
-    const module = await import('conventional-changelog');
-    conventionalChangelog = module.default;
-})();
-
+const conventionalChangelog = require('conventional-changelog');
 const core = require('@actions/core');
 const through = require('through2');
 const closestVersion = require('./closest-version');
@@ -30,11 +25,7 @@ const generateChangelog = (fromVersion) => {
     });
 }
 
-const run = async () => {
-    while (!conventionalChangelog) {
-        await new Promise(resolve => setTimeout(resolve, 100));
-    }
-
+const run = async() => {
     const { closest, tagsTillClosest } = await closestVersion();
     deleteTags(tagsTillClosest);
     const generatedReleaseNotes = await generateChangelog(closest);
