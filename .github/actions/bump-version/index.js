@@ -1,5 +1,4 @@
-import recommendedVersion from 'conventional-recommended-bump';
-
+const recommendedVersion = require('conventional-recommended-bump');
 const semver = require('semver');
 const fs = require('fs');
 const core = require('@actions/core');
