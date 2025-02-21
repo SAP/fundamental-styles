@@ -1,4 +1,7 @@
-const conventionalChangelog = require('conventional-changelog');
+let conventionalChangelog;
+(async () => {
+    conventionalChangelog = (await import('conventional-recommended')).default;
+})();
 const core = require('@actions/core');
 const through = require('through2');
 const closestVersion = require('./closest-version');
