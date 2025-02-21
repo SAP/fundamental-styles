@@ -1,6 +1,7 @@
 let conventionalChangelog;
 (async () => {
-    conventionalChangelog = (await import('conventional-recommended')).default;
+    const module = await import('conventional-recommended');
+    conventionalChangelog = module.default;
 })();
 const core = require('@actions/core');
 const through = require('through2');

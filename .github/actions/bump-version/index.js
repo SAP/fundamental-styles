@@ -1,6 +1,7 @@
 let recommendedVersion;
 (async () => {
-  recommendedVersion = (await import('conventional-recommended-bump')).default;
+  const module = await import('conventional-recommended-bump');
+  recommendedVersion = module.default;
 })();
 const semver = require('semver');
 const fs = require('fs');
