@@ -1,9 +1,4 @@
-let recommendedVersion;
-(async () => {
-    const module = await import('conventional-recommended-bump');
-    recommendedVersion = module.recommendedVersion || module.default;
-})();
-
+const recommendedVersion = require('conventional-recommended-bump');
 const semver = require('semver');
 const fs = require('fs');
 const core = require('@actions/core');
@@ -30,6 +25,7 @@ const TypeList = ['major', 'minor', 'patch'].reverse();
  */
 const getCurrentActiveType = version => TypeList.find(type => semver[type](version));
 
+
 /**
  * calculate the priority of release type,
  * major - 2, minor - 1, patch - 0
@@ -40,10 +36,6 @@ const getCurrentActiveType = version => TypeList.find(type => semver[type](versi
 const getTypePriority = type => TypeList.indexOf(type);
 
 const bumpedVersionType = async () => {
-    if (!recommendedVersion) {
-        throw new Error('recommendedVersion is not available');
-    }
-
     const release = await recommendedVersion({
         preset: {
             name: require.resolve('conventional-changelog-conventionalcommits'),
@@ -71,11 +63,7 @@ const getNewVersion = (release, currentVersion, prereleaseRequested) => {
     return semver.valid(release.releaseType) || semver.inc(currentVersion, release.releaseType, prereleaseRequested, 'rc');
 };
 
-const run = async () => {
-    while (!recommendedVersion) {
-        await new Promise(resolve => setTimeout(resolve, 100)); 
-    }
-
+const run = async() => {
     const release = await bumpedVersionType();
     core.info(`${release.reason}, therefore release type should be ${release.releaseType}`);
 
