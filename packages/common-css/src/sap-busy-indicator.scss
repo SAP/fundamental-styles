@@ -1,9 +1,8 @@
 @use "sass:map";
+@use "common-settings" as commonsettings;
+@use "common-mixins" as commonmixins;
 
-@import 'common-settings';
-@import 'common-mixins';
-
-$block: #{$sap-namespace}-busy-indicator;
+$block: #{commonsettings.$sap-namespace}-busy-indicator;
 
 .#{$block} {
   --Dot_Color: var(--sapContent_BusyColor);
@@ -21,7 +20,7 @@ $block: #{$sap-namespace}-busy-indicator;
     --Dot_Size: 2rem;
   }
 
-  @include sap-reset();
+  @include commonmixins.sap-reset();
 
   position: relative;
   display: block;
@@ -32,9 +31,9 @@ $block: #{$sap-namespace}-busy-indicator;
   &-extended {
     $extendedSelector: &;
 
-    @include sap-reset();
+    @include commonmixins.sap-reset();
 
-    @include sap-flex-center() {
+    @include commonmixins.sap-flex-center() {
       gap: 1rem;
       flex-direction: column;
     }
@@ -48,7 +47,7 @@ $block: #{$sap-namespace}-busy-indicator;
     }
 
     &__label {
-      @include sap-reset();
+      @include commonmixins.sap-reset();
 
       display: block;
       color: var(--sapPageFooter_TextColor);
@@ -57,7 +56,7 @@ $block: #{$sap-namespace}-busy-indicator;
   }
 
   &__circle {
-    @include sap-reset();
+    @include commonmixins.sap-reset();
 
     color: var(--Dot_Color);
     position: relative;
@@ -78,9 +77,9 @@ $block: #{$sap-namespace}-busy-indicator;
   }
 
   &-dialog {
-    @include sap-reset();
+    @include commonmixins.sap-reset();
 
-    @include sap-flex-center() {
+    @include commonmixins.sap-flex-center() {
       gap: 1rem;
       flex-direction: column;
     }

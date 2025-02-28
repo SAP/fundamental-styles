@@ -1,9 +1,8 @@
 @use "sass:map";
+@use "common-settings" as commonsettings;
+@use "common-mixins" as commonmixins;
 
-@import 'common-settings';
-@import 'common-mixins';
-
-$block: #{$sap-namespace}-tool-layout;
+$block: #{commonsettings.$sap-namespace}-tool-layout;
 
 .#{$block} {
   --fdToolLayout_Gap: 0.5rem;
@@ -13,9 +12,9 @@ $block: #{$sap-namespace}-tool-layout;
   --fdToolLayout_Content_Container_Background: var(--sapBackgroundColor);
   --fdToolLayout_Content_Container_BoxShadow: var(--sapContainer_Shadow1);
 
-  @include sap-reset();
+  @include commonmixins.sap-reset();
 
-  @include sap-flex(column) {
+  @include commonmixins.sap-flex(column) {
     gap: var(--fdToolLayout_Gap);
   }
 
@@ -26,9 +25,9 @@ $block: #{$sap-namespace}-tool-layout;
   background: var(--fdToolLayout_Background);
 
   &__container {
-    @include sap-reset();
+    @include commonmixins.sap-reset();
 
-    @include sap-flex() {
+    @include commonmixins.sap-flex() {
       flex-wrap: wrap;
     }
 
@@ -38,13 +37,13 @@ $block: #{$sap-namespace}-tool-layout;
   }
 
   &__header-container {
-    @include sap-reset();
+    @include commonmixins.sap-reset();
 
     width: 100%;
   }
 
   &__navigation-container {
-    @include sap-reset();
+    @include commonmixins.sap-reset();
 
     &--horizontal {
       flex: 1;
@@ -57,7 +56,7 @@ $block: #{$sap-namespace}-tool-layout;
   }
 
   &__content-container {
-    @include sap-reset();
+    @include commonmixins.sap-reset();
 
     flex: 1;
     width: 100%;
@@ -105,7 +104,7 @@ $block: #{$sap-namespace}-tool-layout;
   }
 
   &--sticky {
-    @include sap-set-equal-positions(0);
+    @include commonmixins.sap-set-equal-positions(0);
 
     position: absolute;
 

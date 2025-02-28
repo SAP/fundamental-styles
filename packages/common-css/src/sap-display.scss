@@ -1,10 +1,10 @@
 @use "sass:map";
+@use "common-settings" as commonsettings;
+@use "common-mixins" as commonmixins;
+@use "common-variables" as commonvars;
 
-@import 'common-settings';
-@import 'common-mixins';
-
-@each $type in $sap-display-types {
-  .#{$sap-namespace}-display-#{$type} {
-    @include sap-display(#{$type});
+@each $type in commonvars.$sap-display-types {
+  .#{commonsettings.$sap-namespace}-display-#{$type} {
+    @include commonmixins.sap-display(#{$type});
   }
 }

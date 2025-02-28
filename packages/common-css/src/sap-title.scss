@@ -1,10 +1,9 @@
 @use "sass:map";
-
-@import 'common-settings';
-@import 'common-mixins';
+@use "common-settings" as commonsettings;
+@use "common-mixins" as commonmixins;
 
 @mixin sap-title-shared() {
-  @include sap-reset();
+  @include commonmixins.sap-reset();
 
   width: 100%;
   height: auto;
