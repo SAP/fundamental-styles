@@ -4212,14 +4212,14 @@ __metadata:
   linkType: hard
 
 "@storybook/addon-mdx-gfm@npm:^8.6.0":
-  version: 8.6.0
-  resolution: "@storybook/addon-mdx-gfm@npm:8.6.0"
+  version: 8.6.3
+  resolution: "@storybook/addon-mdx-gfm@npm:8.6.3"
   dependencies:
     remark-gfm: "npm:^4.0.0"
     ts-dedent: "npm:^2.0.0"
   peerDependencies:
-    storybook: ^8.6.0
-  checksum: 10/1c91e18263337e003e81fc3b8ff320981af0d6987e6f71fb422e4c56c57266d376d2685c098aee07e63afed11858f5f0463b914c59a939fb52be89089d207c7d
+    storybook: ^8.6.3
+  checksum: 10/db5a4a742f7e72adc4c270480f4bc784973d7a481fe101cbf54f577a84d03a439dd14efb36db6d7e0210a9cbbd2d905f9b53b2a5fab8397ee5eb3defc71d1533
   languageName: node
   linkType: hard
 
