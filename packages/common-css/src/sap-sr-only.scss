@@ -1,8 +1,7 @@
 @use "sass:map";
+@use "common-settings" as commonsettings;
+@use "common-mixins" as commonmixins;
 
-@import 'common-settings';
-@import 'common-mixins';
-
-.#{$sap-namespace}-sr-only {
-  @include sap-sr-only();
+.#{commonsettings.$sap-namespace}-sr-only {
+  @include commonmixins.sap-sr-only();
 }

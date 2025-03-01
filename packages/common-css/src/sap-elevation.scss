@@ -1,26 +1,25 @@
 @use "sass:map";
+@use "common-settings" as commonsettings;
+@use "common-mixins" as commonmixins;
 
-@import 'common-settings';
-@import 'common-mixins';
-
-$block: #{$sap-namespace}-elevation;
+$block: #{commonsettings.$sap-namespace}-elevation;
 
 .#{$block} {
   @for $i from 0 through 50 {
     &-#{$i} {
-      @include sap-elevation(#{$i});
+      @include commonmixins.sap-elevation(#{$i});
     }
   }
 
   &-auto {
-    @include sap-elevation(auto);
+    @include commonmixins.sap-elevation(auto);
   }
 
   &-initial {
-    @include sap-elevation(initial);
+    @include commonmixins.sap-elevation(initial);
   }
 
   &-inherit {
-    @include sap-elevation(inherit);
+    @include commonmixins.sap-elevation(inherit);
   }
 }
