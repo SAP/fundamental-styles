@@ -107,7 +107,7 @@
         "glob": "8.0.3",
         "husky": "7.0.4",
         "jsonc-eslint-parser": "2.1.0",
-        "lerna": "8.1.9",
+        "lerna": "8.2.0",
         "lint-staged": "12.4.2",
         "lodash": "4.17.21",
         "markdown-to-jsx": "7.1.2",
