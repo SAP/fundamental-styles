@@ -4330,11 +4330,11 @@ __metadata:
   linkType: hard
 
 "@storybook/csf-tools@npm:^8.6.0":
-  version: 8.6.0
-  resolution: "@storybook/csf-tools@npm:8.6.0"
+  version: 8.6.3
+  resolution: "@storybook/csf-tools@npm:8.6.3"
   peerDependencies:
     storybook: ^8.2.0 || ^8.3.0-0 || ^8.4.0-0 || ^8.5.0-0 || ^8.6.0-0
-  checksum: 10/e3ad9df024bbc83499720fd09f53dbd0ef7dbef19757f1c6975feccf83e9a5e39d99a05f4e7020075c2d85ec195adb16d3b5ddf8cd6ee9b3b2068c7e624557dd
+  checksum: 10/2f2969b7292ac0312c838995de4c1509d04cfa057970db6e496a31c778d670852f16dc117b62b4e8c5434ce69b75b5d27d6efe37ea3457cf0ec6d4f32cd4bce9
   languageName: node
   linkType: hard
 
