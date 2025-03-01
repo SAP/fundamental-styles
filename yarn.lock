@@ -4294,11 +4294,11 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/core@npm:8.6.0":
-  version: 8.6.0
-  resolution: "@storybook/core@npm:8.6.0"
+"@storybook/core@npm:8.6.3":
+  version: 8.6.3
+  resolution: "@storybook/core@npm:8.6.3"
   dependencies:
-    "@storybook/theming": "npm:8.6.0"
+    "@storybook/theming": "npm:8.6.3"
     better-opn: "npm:^3.0.2"
     browser-assert: "npm:^1.2.1"
     esbuild: "npm:^0.18.0 || ^0.19.0 || ^0.20.0 || ^0.21.0 || ^0.22.0 || ^0.23.0 || ^0.24.0 || ^0.25.0"
@@ -4314,7 +4314,7 @@ __metadata:
   peerDependenciesMeta:
     prettier:
       optional: true
-  checksum: 10/a9f0293ae80947b30115ac4552428bb6e096dcc016ae78552f0cfadf9d95573fe2ed7577c374aeda978a2ce1b2699874531b95f505011c647ad0b4334983e781
+  checksum: 10/510e9ddc525145d6d6e338d118f0329a24341dcf35cf0637d9e0ebb95ffe417bffa6820c16f10b4f03c112380c805c9c54cee34288e36196efcd6961278c3391
   languageName: node
   linkType: hard
 
@@ -4457,6 +4457,15 @@ __metadata:
   peerDependencies:
     storybook: ^8.2.0 || ^8.3.0-0 || ^8.4.0-0 || ^8.5.0-0 || ^8.6.0-0
   checksum: 10/f3b1c1db9c5cdd95206feb73be0859ac2f14bfbd2a2ce2e2443307b33f106998c4a3c3c7b433be5fa3898e7a85f71805d94a8b8fd838f3f75f8a054b2cabfe93
+  languageName: node
+  linkType: hard
+
+"@storybook/theming@npm:8.6.3":
+  version: 8.6.3
+  resolution: "@storybook/theming@npm:8.6.3"
+  peerDependencies:
+    storybook: ^8.2.0 || ^8.3.0-0 || ^8.4.0-0 || ^8.5.0-0 || ^8.6.0-0
+  checksum: 10/f10baa759c589f202510f10339cc43d375a9a94e582f8b27bfa0190e887d53109eef31c0f4c9395298a4f18882d2462408cd2bcbe1161b2c1312196ab557661a
   languageName: node
   linkType: hard
 
@@ -18132,10 +18141,10 @@ __metadata:
   linkType: hard
 
 "storybook@npm:^8.6.0":
-  version: 8.6.0
-  resolution: "storybook@npm:8.6.0"
+  version: 8.6.3
+  resolution: "storybook@npm:8.6.3"
   dependencies:
-    "@storybook/core": "npm:8.6.0"
+    "@storybook/core": "npm:8.6.3"
   peerDependencies:
     prettier: ^2 || ^3
   peerDependenciesMeta:
@@ -18145,7 +18154,7 @@ __metadata:
     getstorybook: ./bin/index.cjs
     sb: ./bin/index.cjs
     storybook: ./bin/index.cjs
-  checksum: 10/8456ac61b8a77c3ab0c4741acf30cf03178ea81d9c6f53b7da4f019fcb6b60b83474c9f80515cb34c0a7515f3b40f3bf94584c72290ca2f58afde6d44baeeae8
+  checksum: 10/ecad80a836c4a50935ed198e8be3b6fe945be5b24bb9381914509042d31f4a9b712e16fe982759f13aee7c33c0d6bb0ef909951f2c86cf524fac4e6692dba520
   languageName: node
   linkType: hard
 
