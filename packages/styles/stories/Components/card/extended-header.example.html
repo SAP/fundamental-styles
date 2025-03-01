@@ -186,28 +186,45 @@
                 <div class="fd-card__header-extended" role="group" aria-roledescription="Extended content">
                     <div class="fd-card__header-column fd-card__header-column--right-aligned">
                         <div class="fd-card__header-row">
-                            <div class="fd-rating-indicator fd-rating-indicator--sm">
-                                <div class="fd-rating-indicator__container" aria-label="Star Rating (out of 5)">
-                                    <input aria-label="0 star" type="radio" class="fd-rating-indicator__input fd-rating-indicator__input--zero-rating" id="rating-s-0" name="rating-s" value="0">
-                                    <label class="fd-rating-indicator__label fd-rating-indicator__label--zero-rating" for="rating-s-0" aria-hidden="true"></label>
-                    
-                                    <input aria-label="1 star" type="radio" class="fd-rating-indicator__input" id="rating-s-1" name="rating-s" value="1">
-                                    <label class="fd-rating-indicator__label" for="rating-s-1"></label>
-                    
-                                    <input aria-label="2 star" type="radio" class="fd-rating-indicator__input" id="rating-s-2" name="rating-s" value="2" checked>
-                                    <label class="fd-rating-indicator__label" for="rating-s-2"></label>
-                    
-                                    <input aria-label="3 star" type="radio" class="fd-rating-indicator__input" id="rating-s-3" name="rating-s" value="3">
-                                    <label class="fd-rating-indicator__label" for="rating-s-3"></label>
-                    
-                                    <input aria-label="4 star" type="radio" class="fd-rating-indicator__input" id="rating-s-4" name="rating-s" value="4">
-                                    <label class="fd-rating-indicator__label" for="rating-s-4"></label>
-                    
-                                    <input aria-label="5 star" type="radio" class="fd-rating-indicator__input" id="rating-s-5" name="rating-s" value="5">
-                                    <label class="fd-rating-indicator__label" for="rating-s-5"></label>
+                            <div class="fd-rating-indicator">
+                                <div 
+                                    class="fd-rating-indicator__container"
+                                    title="Rating"
+                                    tabindex="0"
+                                    role="slider"
+                                    aria-orientation="horizontal"
+                                    aria-roledescription="Rating Indicator"
+                                    aria-valuemin="0"
+                                    aria-valuenow="2.5"
+                                    aria-valuemax="5"
+                                    aria-valuetext="2.5 of 5"
+                                    >
+                                    <ul class="fd-rating-indicator__list" aria-hidden="true">
+                                        <li class="fd-rating-indicator__item">
+                                            <span class="sap-icon sap-icon--favorite fd-rating-indicator__icon fd-rating-indicator__icon--selected"></span>
+                                            <span class="sap-icon sap-icon--favorite fd-rating-indicator__icon fd-rating-indicator__icon--selected"></span>
+                                        </li>
+                                        <li class="fd-rating-indicator__item">
+                                            <span class="sap-icon sap-icon--favorite fd-rating-indicator__icon fd-rating-indicator__icon--selected"></span>
+                                            <span class="sap-icon sap-icon--favorite fd-rating-indicator__icon fd-rating-indicator__icon--selected"></span>
+                                        </li>
+                                        <li class="fd-rating-indicator__item">
+                                            <span class="sap-icon sap-icon--favorite fd-rating-indicator__icon fd-rating-indicator__icon--selected"></span>
+                                            <span class="sap-icon sap-icon--unfavorite fd-rating-indicator__icon fd-rating-indicator__icon--unselected"></span>
+                                        </li>
+                                        <li class="fd-rating-indicator__item">
+                                            <span class="sap-icon sap-icon--unfavorite fd-rating-indicator__icon fd-rating-indicator__icon--unselected"></span>
+                                            <span class="sap-icon sap-icon--unfavorite fd-rating-indicator__icon fd-rating-indicator__icon--unselected"></span>
+                                        </li>
+                                        <li class="fd-rating-indicator__item">
+                                            <span class="sap-icon sap-icon--unfavorite fd-rating-indicator__icon fd-rating-indicator__icon--unselected"></span>
+                                            <span class="sap-icon sap-icon--unfavorite fd-rating-indicator__icon fd-rating-indicator__icon--unselected"></span>
+                                        </li>
+                                    </ul>
                                 </div>
-                                <span class="fd-rating-indicator__dynamic-text">(205)</span>
+                                <span class="fd-rating-indicator__dynamic-text">(2.5 of 5)</span>
                             </div>
+                            
                         </div>
                     </div>
                 </div>
