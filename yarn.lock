@@ -4224,11 +4224,11 @@ __metadata:
   linkType: hard
 
 "@storybook/addon-toolbars@npm:^8.6.0":
-  version: 8.6.0
-  resolution: "@storybook/addon-toolbars@npm:8.6.0"
+  version: 8.6.3
+  resolution: "@storybook/addon-toolbars@npm:8.6.3"
   peerDependencies:
-    storybook: ^8.6.0
-  checksum: 10/b64f744f2c9e483b9921bff83dbd4420ce27a4ed51e03b0a76ae541ed7dde6d5d4b5b286816ff38a2fa2d5128107a04b96a0ecc30de2a750b25cff1f3a77ad98
+    storybook: ^8.6.3
+  checksum: 10/c6c95db69b2e2128d449c10f63dbe7169d1d8a6a38db14d5bdf3f11f750d17c2fd28a024af43386c24bb6855f6e527b0af2aa8b93e8afbdf6e644eb995ebdcd7
   languageName: node
   linkType: hard
 
