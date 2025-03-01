@@ -110,7 +110,7 @@ $fd-line-tile-badge-horizontal-spacing: 0.375rem !default;
   @include fd-set-height($fd-tile-height);
   @include fd-set-width($fd-tile-width);
 
-  --fdGenericTileLineTileHeight: 2.25rem;
+  --fdGenericTileLineTileHeight: 2rem;
   --fdGenericTileLineTileMaxHeight: 3.25rem;
   --fdGenericTileLineHeight: 1.625rem;
   --fdGenericTileTitleHorizontalSpacing: 0.625rem;
@@ -143,8 +143,6 @@ $fd-line-tile-badge-horizontal-spacing: 0.375rem !default;
     border: var(--fdTile_Hover_Border);
     box-shadow: var(--fdTile_Hover_Box_Shadow);
   }
-
-  @include fake-tile-outline();
 
   // ELEMENTS
   &__header,
@@ -756,8 +754,8 @@ $fd-line-tile-badge-horizontal-spacing: 0.375rem !default;
       justify-content: space-between;
     }
 
-    @include fd-set-margin-right($fd-line-tile-horizontal-spacing);
-    @include fd-set-margins-y-equal($fd-line-tile-vertical-spacing);
+    @include fd-set-margins-y-equal(0.25rem);
+    @include fd-set-margin-right(0.5rem);
 
     min-height: var(--fdGenericTileLineTileHeight);
     max-height: var(--fdGenericTileLineTileHeight);
@@ -767,15 +765,30 @@ $fd-line-tile-badge-horizontal-spacing: 0.375rem !default;
     width: auto;
     padding-block: 0;
     padding-inline: $fd-line-tile-horizontal-padding;
-    box-shadow: none;
-    background: transparent;
+    box-shadow: var(--fdTile_Box_Shadow, var(--sapContent_Shadow0));
+    background: var(--fdTile_Background, var(--sapTile_Background)); 
+    border: 0.0625rem solid var(--fdTile_Border, var(--sapTile_BorderColor));
+    border-radius: var(--sapTile_BorderCornerRadius);
+
+    @include fd-flex() {
+      gap: 0.5rem;
+    }
 
     @include fd-hover() {
-      box-shadow: none;
+      border-radius: var(--sapTile_BorderCornerRadius);
+
+      --fdTile_Box_Shadow: var(--sapContent_Shadow2);
+      --fdTile_Background: var(--sapTile_Hover_Background);
     }
 
     @include fd-active() {
-      box-shadow: none;
+      --fdTile_Background: var(--sapTile_Active_Background);
+    }
+
+    
+    @include fd-focus() {
+      outline: 0.125rem solid var(--sapContent_FocusColor);
+      outline-offset: -0.125rem;
     }
 
     @include fd-disabled() {
@@ -806,17 +819,23 @@ $fd-line-tile-badge-horizontal-spacing: 0.375rem !default;
     .#{$block}__title,
     .#{$block}__subtitle {
       font-size: var(--sapFontSize);
+      font-family: var(--sapFontFamily);
       text-shadow: var(--sapContent_TextShadow);
-      color: var(--sapTile_TextColor);
+      color: var(--sapTile_TitleTextColor);
       line-height: var(--fdGenericTileLineHeight);
       min-width: $fd-line-tile-min-width;
+    }
+
+    .#{$block}__subtitle {
+      color: var(--sapTile_TextColor);
+      font-size: 0.875rem;
     }
 
     .#{$block}__title {
       @include fd-ellipsis();
       @include fd-set-margin-right(var(--fdGenericTileTitleHorizontalSpacing));
 
-      color: var(--sapButton_TextColor);
+      color: var(--sapTile_TitleTextColor);
       display: inline;
       -webkit-line-clamp: initial;
     }
@@ -831,25 +850,48 @@ $fd-line-tile-badge-horizontal-spacing: 0.375rem !default;
       }
 
       .#{$block}__action-close {
-        @include fd-set-height(1.625rem);
-        @include reset-position-absolute();
+        @include fd-square(1.375rem);
         @include fd-flex-center();
 
+        position: relative;
         padding-block: 0;
         padding-inline: 0.25rem;
+        font-size: 0.75rem;
+        border-radius: 50%;
+        background: var(--sapButton_Background);
+        border: var(--sapButton_BorderColor);
+        cursor: pointer;
+        top: -0.625rem;
+
+        &::after {
+          border-radius: 50%;
+        }
       }
 
       .#{$block}__action-indicator {
+        @include fd-set-square(1.625rem);
+
+        min-width: auto;
         margin-inline: 0;
         margin-block: 0;
-      }
+        position: relative;
+        line-height: 1.625rem;
 
-      .#{$block}__action-indicator,
-      .#{$block}__action-close {
-        @include reset-position-absolute();
+        &::after {
+          @include fd-set-square(2rem);
+          
+          @include fd-rtl() {
+            right: 50%;
+            left: auto;
+            transform: translate(50%, -50%);
+          }
 
-        @include fd-focus() {
-          @include fd-button-focus(0);
+          content: '';
+          position: absolute;
+          left: 60%;
+          top: 50%;
+          transform: translate(-50%, -50%);
+           
         }
       }
     }
