@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.39.0-rc.74](https://github.com/SAP/fundamental-styles/compare/v0.39.0-rc.73...v0.39.0-rc.74) (2025-03-06)
+
+### Bug Fixes
+
+- remove shellbar subtitle from examples ([#5944](https://github.com/SAP/fundamental-styles/issues/5944)) ([4ba9f79](https://github.com/SAP/fundamental-styles/commit/4ba9f7950c57b88d5f8c9cf4840e05a81040ca0b))
+
 # [0.39.0-rc.73](https://github.com/SAP/fundamental-styles/compare/v0.39.0-rc.72...v0.39.0-rc.73) (2025-03-06)
 
 **Note:** Version bump only for package fundamental-styles
