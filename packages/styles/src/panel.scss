@@ -55,8 +55,11 @@ $block: #{$fd-namespace}-panel;
 
   &__title {
     @include fd-typography(var(--sapGroup_Title_FontSize));
+    @include fd-ellipsis();
 
     flex: 1;
+    width: 100%;
+    max-width: 100%;
     font-size: var(--fdPanel_Title_Font_Size);
   }
 

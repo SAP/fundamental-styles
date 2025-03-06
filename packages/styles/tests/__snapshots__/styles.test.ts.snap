@@ -51823,12 +51823,12 @@ exports[`Check stories > Components/User Menu > Story Default > Should match sna
                             class=\\"fd-avatar fd-avatar--lg fd-avatar--circle fd-avatar--thumbnail\\"
                             aria-label=\\"Avatar\\"
                             style=\\"background-image: url('/assets/images/portraits/L_80x80_F3.png');\\">
-                            <i class=\\"fd-avatar__zoom-icon fd-avatar__zoom-icon--indication-8 sap-icon--edit\\" aria-label=\\"Edit\\" role=\\"presentation\\" aria-hidden=\\"true\\"></i>
+                            <i class=\\"fd-avatar__zoom-icon sap-icon--edit\\" aria-label=\\"Edit\\" role=\\"presentation\\" aria-hidden=\\"true\\"></i>
                         </span>
                         <div class=\\"fd-user-menu__header-container\\">
-                            <div class=\\"fd-user-menu__user-name\\">Lisa Miller</div>
-                            <div class=\\"fd-user-menu__subline\\">lisa.miller@test.com</div>
-                            <div class=\\"fd-user-menu__subline\\">User Experience Designer</div>
+                            <div class=\\"fd-user-menu__user-name\\">Lisa Miller Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa consequuntur cum voluptate iure tenetur, odio quae eos libero, officiis, voluptates molestias ad. Consequatur iure sapiente, eos atque molestiae alias laudantium!</div>
+                            <div class=\\"fd-user-menu__subline\\">lisa.miller@test.com Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem quod accusamus quis magnam, reprehenderit animi dolorem libero beatae? Doloribus laboriosam tenetur ea voluptatem nobis. Culpa voluptatem dolorum adipisci dolor sequi!</div>
+                            <div class=\\"fd-user-menu__subline\\">User Experience Designer Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla molestias quis vitae, recusandae ut ipsam eos dolorum ratione, qui voluptatum accusamus ipsum quae perferendis laudantium dolores harum dolore asperiores veritatis!</div>
                         </div>
                         <button aria-label=\\"Manage Accounts\\" class=\\"fd-button\\">
                             <i class=\\"sap-icon--user-settings\\"></i>
@@ -51844,7 +51844,7 @@ exports[`Check stories > Components/User Menu > Story Default > Should match sna
                                         <i class=\\"sap-icon--slim-arrow-down\\"></i>
                                     </button>
                                 </div>
-                                <h4 class=\\"fd-panel__title\\" id=\\"__panel-title-8\\">Other Accounts (2)</h4>
+                                <h4 class=\\"fd-panel__title\\" id=\\"__panel-title-8\\">Other Accounts (2) Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate vero culpa magnam blanditiis ad nihil excepturi eveniet! Rerum facilis aperiam pariatur, ducimus cupiditate officiis eius temporibus, rem, repellendus suscipit animi.</h4>
                                 <div class=\\"fd-toolbar fd-toolbar--clear fd-toolbar--transparent\\">
                                     <span class=\\"fd-toolbar__spacer fd-toolbar__spacer--auto\\"> </span>
                                     <button class=\\"fd-button fd-button--transparent\\" aria-label=\\"Add Account\\" title=\\"Add Account\\">
@@ -51857,9 +51857,9 @@ exports[`Check stories > Components/User Menu > Story Default > Should match sna
                                     <li role=\\"listitem\\" tabindex=\\"0\\" class=\\"fd-list__item fd-list__item--interractive\\">
                                         <span class=\\"fd-avatar fd-avatar--sm fd-avatar--circle fd-avatar--thumbnail\\" style=\\"background-image: url('/assets/images/portraits/L_80x80_F3.png')\\" role=\\"img\\" aria-label=\\"Jane Doe\\"></span>
                                         <div class=\\"fd-list__content\\">
-                                            <div class=\\"fd-list__title\\">Lisa Miller</div>
-                                            <div class=\\"fd-list__subline\\">lisa.miller@test.com</div>
-                                            <div class=\\"fd-list__subline\\">Delivery Manager</div>
+                                            <div class=\\"fd-list__title\\">Lisa Miller Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem minima ex distinctio dolores vitae! Doloribus veritatis ipsa pariatur consequuntur quia beatae, magnam error itaque, non saepe accusamus ab obcaecati sunt?</div>
+                                            <div class=\\"fd-list__subline\\">lisa.miller@test.com Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius repellat magnam tempora quisquam expedita reprehenderit inventore nulla porro consectetur maxime accusantium similique, alias quae corporis iste, beatae totam quos culpa!</div>
+                                            <div class=\\"fd-list__subline\\">Delivery Manager Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur perspiciatis possimus recusandae ab eum quo reprehenderit. Fugiat sunt est, quidem, tempore adipisci debitis exercitationem, reprehenderit similique quia ipsum dolorem dignissimos?</div>
                                         </div>
                                         <span class=\\"fd-list__active-indicator sap-icon--sys-enter-2\\"></span>
                                     </li>
@@ -52083,6 +52083,13 @@ exports[`Check stories > Components/User Menu > Story Mobile > Should match snap
                     </div>
                     <div class=\\"fd-bar__element\\">
                         <h5 class=\\"fd-title fd-title--h5\\" aria-label=\\"text\\">Legal Information</h5>
+                    </div>
+                </div>
+                <div class=\\"fd-bar__right\\">
+                    <div class=\\"fd-bar__element\\">
+                        <button aria-label=\\"button\\" class=\\"fd-button fd-button--transparent\\">
+                            <i class=\\"sap-icon--decline\\"></i>
+                        </button>
                     </div>
                 </div>
             </div>
