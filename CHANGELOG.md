@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.39.0-rc.72](https://github.com/SAP/fundamental-styles/compare/v0.39.0-rc.71...v0.39.0-rc.72) (2025-03-06)
+
+### Bug Fixes
+
+- **styles:** updates related to User Menu implementation [ci visual] ([#5990](https://github.com/SAP/fundamental-styles/issues/5990)) ([ad5119f](https://github.com/SAP/fundamental-styles/commit/ad5119fbbdc5f01935c7e27c90d0ee591fb6d404))
+
 # [0.39.0-rc.71](https://github.com/SAP/fundamental-styles/compare/v0.39.0-rc.70...v0.39.0-rc.71) (2025-03-06)
 
 ### Bug Fixes
@@ -5760,9 +5766,9 @@ Co-authored-by: droshev <mladen.droshev@sap.com>
 
 - added a new modifier class to fd-row to achieve even alignment of its elements:fd-row--top in a form.
   Before:
-    <div class="fd-row">
-    After:
-    <div class="fd-row fd-row--top">
+      <div class="fd-row">
+      After:
+      <div class="fd-row fd-row--top">
 
 ### Bug Fixes
 
