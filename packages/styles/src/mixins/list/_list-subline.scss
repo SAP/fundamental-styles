@@ -21,7 +21,6 @@
       @include fd-flex(column) {
         flex: 1;
         gap: 0.25rem;
-        align-self: stretch;
         justify-content: center;
         align-items: flex-start;
       };

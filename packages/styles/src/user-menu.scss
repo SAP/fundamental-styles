@@ -34,8 +34,13 @@ $panel: #{$fd-namespace}-panel;
     overflow: visible;
     min-width: 18rem;
     max-width: 20rem;
+    position: relative;
     padding-inline: 0.5rem;
     padding-block: 2.5rem 0.5rem;
+
+    &:has(.#{$block}__details-view) {
+      padding: 0;
+    }
   }
 
   &__header {
@@ -56,22 +61,31 @@ $panel: #{$fd-namespace}-panel;
       align-items: center;
     }
 
+    max-width: 100%;
+    text-align: center;
     margin-block-end: 0.5rem;
   }
 
   &__user-name {
     @include fd-reset();
+    @include fd-line-clamp(2);
 
+    max-width: 100%;
+    max-height: 2.8rem;
+    line-height: 1.4rem;
     color: var(--sapTextColor);
-    font-family: var(--fdUserMenu_User_Name_Font_Family);
     font-size: var(--sapFontLargeSize);
-  }
+    font-family: var(--fdUserMenu_User_Name_Font_Family);
+  }  
 
   &__user-info,
   &__user-role,
   &__subline {
     @include fd-reset();
+    @include fd-ellipsis();
 
+    width: 100%;
+    max-width: 100%;
     color: var(--sapContent_LabelColor);
   }
 
@@ -85,6 +99,16 @@ $panel: #{$fd-namespace}-panel;
 
     & > *:first-child, & > *:last-child {
       border-radius: 0;
+    }
+
+    &.#{$block}__menu-list {
+      box-shadow: none;
+      border-radius: 0;
+  
+      & > *:first-child,
+      & > *:last-child {
+          border-radius: 0;
+      }
     }
   }
 
