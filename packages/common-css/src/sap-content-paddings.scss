@@ -1,27 +1,27 @@
 @use "sass:map";
+@use "common-settings" as commonsettings;
+@use "common-mixins" as commonmixins;
+@use "common-variables" as commonvars;
 
-@import 'common-settings';
-@import 'common-mixins';
-
-$block: #{$sap-namespace}-content-paddings;
+$block: #{commonsettings.$sap-namespace}-content-paddings;
 
 .#{$block} {
   &-home {
-    @include sap-content-paddings(home);
+    @include commonmixins.sap-content-paddings(home);
 
-    @each $size, $value in $sap-content-paddings-home {
+    @each $size, $value in commonvars.$sap-content-paddings-home {
       &-#{$size} {
-        @include sap-content-paddings(home, #{$size});
+        @include commonmixins.sap-content-paddings(home, #{$size});
       }
     }
   }
 
   &-container {
-    @include sap-content-paddings(container);
+    @include commonmixins.sap-content-paddings(container);
 
-    @each $size, $value in $sap-content-paddings-container {
+    @each $size, $value in commonvars.$sap-content-paddings-container {
       &-#{$size} {
-        @include sap-content-paddings(container, #{$size});
+        @include commonmixins.sap-content-paddings(container, #{$size});
       }
     }
   }

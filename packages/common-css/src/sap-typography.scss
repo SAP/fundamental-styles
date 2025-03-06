@@ -1,52 +1,52 @@
 @use "sass:map";
+@use "common-settings" as commonsettings;
+@use "common-mixins" as commonmixins;
+@use "common-variables" as commonvars;
 
-@import 'common-settings';
-@import 'common-mixins';
-
-$block: #{$sap-namespace}-font;
+$block: #{commonsettings.$sap-namespace}-font;
 
 .#{$block} {
-  @each $type, $value in $sap-font-types {
+  @each $type, $value in commonvars.$sap-font-types {
     &-family-#{$type} {
       font-family: $value;
     }
   }
 
-  @each $type, $value in $sap-font-sizes {
+  @each $type, $value in commonvars.$sap-font-sizes {
     &-size-#{$type} {
       font-size: $value;
     }
   }
 
   &-line-height {
-    @include sap-font-line-height();
+    @include commonmixins.sap-font-line-height();
   }
 
   &-line-height-long {
-    @include sap-font-line-height(1.4);
+    @include commonmixins.sap-font-line-height(1.4);
   }
 
   &-header-3 {
-    @include sap-font('header-3');
+    @include commonmixins.sap-font('header-3');
   }
 
   &-standard-text {
-    @include sap-font('standard-text');
+    @include commonmixins.sap-font('standard-text');
   }
 
   &-small-detail-text {
-    @include sap-font('small-detail-text');
+    @include commonmixins.sap-font('small-detail-text');
   }
 
   &-standard-field-text {
-    @include sap-font('standard-field-text');
+    @include commonmixins.sap-font('standard-field-text');
   }
 
   &-label {
-    @include sap-font('label');
+    @include commonmixins.sap-font('label');
   }
 
   &-description {
-    @include sap-font('description');
+    @include commonmixins.sap-font('description');
   }
 }

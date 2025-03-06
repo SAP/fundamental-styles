@@ -1,39 +1,39 @@
 @use "sass:map";
+@use "common-settings" as commonsettings;
+@use "common-mixins" as commonmixins;
+@use "common-variables" as commonvars;
 
-@import 'common-settings';
-@import 'common-mixins';
-
-$block: #{$sap-namespace}-margin;
+$block: #{commonsettings.$sap-namespace}-margin;
 
 .#{$block} {
-  @each $type, $value in $sap-margins {
+  @each $type, $value in commonvars.$sap-margins {
     &-#{$type} {
-      @include sap-margin(#{$type});
+      @include commonmixins.sap-margin(#{$type});
     }
 
-    @each $side, $dim in $sap-container-sides {
+    @each $side, $dim in commonvars.$sap-container-sides {
       &-#{$side}-#{$type} {
-        @include sap-margin(#{$type}, #{$side});
+        @include commonmixins.sap-margin(#{$type}, #{$side});
       }
     }
   }
 
   &-responsive {
-    @include sap-margin-responsive();
+    @include commonmixins.sap-margin-responsive();
   }
 
-  @each $side, $dim in $sap-container-sides {
+  @each $side, $dim in commonvars.$sap-container-sides {
     &-#{$side}-none {
-      @include sap-margin(0, #{$side});
+      @include commonmixins.sap-margin(0, #{$side});
     }
   }
 
-  @each $type, $value in $sap-margins {
+  @each $type, $value in commonvars.$sap-margins {
     &-#{$type}-negative {
       $_value: $value * -1;
 
-      @include sap-set-margin-x-equal($_value);
-      @include sap-set-margin-y-equal(0);
+      @include commonmixins.sap-set-margin-x-equal($_value);
+      @include commonmixins.sap-set-margin-y-equal(0);
     }
   }
 }

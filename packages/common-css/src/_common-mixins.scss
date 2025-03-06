@@ -1,7 +1,6 @@
 @use "sass:map";
 @use "sass:string";
-
-@import "common-variables";
+@use "common-variables" as commonvars;
 
 @mixin sap-reset {
   font-family: "72", "72full", Arial, Helvetica, sans-serif;
@@ -326,8 +325,8 @@
 @mixin sap-set-border-radius($value...) {
   $_value: $value;
 
-  @if  map.has-key($sap-corner-border-radius, #{$value}) {
-    $_value: map.get($sap-corner-border-radius, #{$value});
+  @if  map.has-key(commonvars.$sap-corner-border-radius, #{$value}) {
+    $_value: map.get(commonvars.$sap-corner-border-radius, #{$value});
   }
 
   border-radius: $_value;
@@ -358,13 +357,13 @@
   $_value: "";
 
   @if $value == "tiny" {
-    $_value: map.get($sap-flex-spacings, "tiny");
+    $_value: map.get(commonvars.$sap-flex-spacings, "tiny");
   } @else if $value == "small" {
-    $_value: map.get($sap-flex-spacings, "small");
+    $_value: map.get(commonvars.$sap-flex-spacings, "small");
   } @else if $value == "medium" {
-    $_value: map.get($sap-flex-spacings, "medium");
+    $_value: map.get(commonvars.$sap-flex-spacings, "medium");
   } @else if $value == large {
-    $_value: map.get($sap-flex-spacings, "large");
+    $_value: map.get(commonvars.$sap-flex-spacings, "large");
   } @else {
     $_value: $value;
   }
@@ -473,8 +472,8 @@
 @mixin sap-margin($value, $side: '') {
   $_value: $value;
 
-  @if  map.has-key($sap-margins, #{$value}) {
-    $_value: map.get($sap-margins, #{$value});
+  @if  map.has-key(commonvars.$sap-margins, #{$value}) {
+    $_value: map.get(commonvars.$sap-margins, #{$value});
   }
 
   @if  $side != '' {
@@ -520,25 +519,25 @@
 
 /* Media queries */
 @mixin sap-media-sm() {
-  @media (max-width: #{$small - $offset}) {
+  @media (max-width: #{commonvars.$small - commonvars.$offset}) {
     @content;
   }
 }
 
 @mixin sap-media-md() {
-  @media (min-width: #{$small}) and (max-width: #{$medium - $offset}) {
+  @media (min-width: #{commonvars.$small}) and (max-width: #{commonvars.$medium - commonvars.$offset}) {
     @content;
   }
 }
 
 @mixin sap-media-lg() {
-  @media (min-width: #{$medium}) and (max-width: #{$large - $offset}) {
+  @media (min-width: #{commonvars.$medium}) and (max-width: #{commonvars.$large - commonvars.$offset}) {
     @content;
   }
 }
 
 @mixin sap-media-xl() {
-  @media (min-width: #{$large}) {
+  @media (min-width: #{commonvars.$large}) {
     @content;
   }
 }
@@ -668,8 +667,8 @@
 @mixin sap-padding($value: 1rem, $side: '') {
   $_value: $value;
 
-  @if  map.has-key($sap-paddings, #{$value}) {
-    $_value: map.get($sap-paddings, #{$value});
+  @if  map.has-key(commonvars.$sap-paddings, #{$value}) {
+    $_value: map.get(commonvars.$sap-paddings, #{$value});
   }
 
   @if  $side != '' {
@@ -738,14 +737,14 @@
 /* Content paddings */
 @mixin sap-set-content-paddings($type, $value) {
   @if  $type == 'home' {
-    padding-left: map.get($sap-content-paddings-home, $value);
-    padding-right: map.get($sap-content-paddings-home, $value);
+    padding-left: map.get(commonvars.$sap-content-paddings-home, $value);
+    padding-right: map.get(commonvars.$sap-content-paddings-home, $value);
   } @else if $type == 'container' {
-    padding-left: map.get($sap-content-paddings-container, $value);
-    padding-right: map.get($sap-content-paddings-container, $value);
+    padding-left: map.get(commonvars.$sap-content-paddings-container, $value);
+    padding-right: map.get(commonvars.$sap-content-paddings-container, $value);
   } @else {
-    padding-left: map.get($sap-content-paddings-nav, $value);
-    padding-right: map.get($sap-content-paddings-nav, $value);
+    padding-left: map.get(commonvars.$sap-content-paddings-nav, $value);
+    padding-right: map.get(commonvars.$sap-content-paddings-nav, $value);
   }
 }
 
@@ -785,10 +784,10 @@
 }
 
 @mixin sap-shadow($type) {
-  @if  map.has-key($sap-box-shadow-types , #{$type} ) {
-    @include sap-set-box-shadow(map.get($sap-box-shadow-types, #{$type}));
-  } @else if map.has-key($sap-text-shadow-types , #{$type} ) {
-    @include sap-set-text-shadow(map.get($sap-text-shadow-types, #{$type}));
+  @if  map.has-key(commonvars.$sap-box-shadow-types , #{$type} ) {
+    @include sap-set-box-shadow(map.get(commonvars.$sap-box-shadow-types, #{$type}));
+  } @else if map.has-key(commonvars.$sap-text-shadow-types , #{$type} ) {
+    @include sap-set-text-shadow(map.get(commonvars.$sap-text-shadow-types, #{$type}));
   } @else {
     @warn "Unknown type of shadow";
   }
@@ -811,23 +810,23 @@
 /* Font-family */
 @mixin sap-font-family($type) {
   @if  $type == "regular" {
-    font-family: map.get($sap-font-types, "regular");
+    font-family: map.get(commonvars.$sap-font-types, "regular");
   } @else if $type == "light" {
-    font-family: map.get($sap-font-types, "light");
+    font-family: map.get(commonvars.$sap-font-types, "light");
   } @else if $type == "bold" {
-    font-family: map.get($sap-font-types, "bold");
+    font-family: map.get(commonvars.$sap-font-types, "bold");
   } @else if $type == "semibold" {
-    font-family: map.get($sap-font-types, "semibold");
+    font-family: map.get(commonvars.$sap-font-types, "semibold");
   } @else if $type == "semibold-duplex" {
-    font-family: map.get($sap-font-types, "semibold-duplex");
+    font-family: map.get(commonvars.$sap-font-types, "semibold-duplex");
   } @else if $type == "monospaced-regular" {
-    font-family: map.get($sap-font-types, "monospaced-regular");
+    font-family: map.get(commonvars.$sap-font-types, "monospaced-regular");
   } @else if $type == "monospaced-bold" {
-    font-family: map.get($sap-font-types, "monospaced-bold");
+    font-family: map.get(commonvars.$sap-font-types, "monospaced-bold");
   } @else if $type == "black" {
-    font-family: map.get($sap-font-types, "black");
+    font-family: map.get(commonvars.$sap-font-types, "black");
   } @else if $type == "header" {
-    font-family: map.get($sap-font-types, "header");
+    font-family: map.get(commonvars.$sap-font-types, "header");
   } @else {
     font-family: $type;
   }
@@ -836,23 +835,23 @@
 /* Font-size */
 @mixin sap-font-size($size) {
   @if  $size == "header-6" {
-    font-size: map.get($sap-font-sizes, "header-6");
+    font-size: map.get(commonvars.$sap-font-sizes, "header-6");
   } @else if $size == "header-5" {
-    font-size: map.get($sap-font-sizes, "header-5");
+    font-size: map.get(commonvars.$sap-font-sizes, "header-5");
   } @else if $size == "header-4" {
-    font-size: map.get($sap-font-sizes, "header-4");
+    font-size: map.get(commonvars.$sap-font-sizes, "header-4");
   } @else if $size == "header-3" {
-    font-size: map.get($sap-font-sizes, "header-3");
+    font-size: map.get(commonvars.$sap-font-sizes, "header-3");
   } @else if $size == "header-2" {
-    font-size: map.get($sap-font-sizes, "header-2");
+    font-size: map.get(commonvars.$sap-font-sizes, "header-2");
   } @else if $size == "header-1" {
-    font-size: map.get($sap-font-sizes, "header-1");
+    font-size: map.get(commonvars.$sap-font-sizes, "header-1");
   } @else if $size == "small" {
-    font-size: map.get($sap-font-sizes, "small");
+    font-size: map.get(commonvars.$sap-font-sizes, "small");
   } @else if $size == "medium" {
-    font-size: map.get($sap-font-sizes, "medium");
+    font-size: map.get(commonvars.$sap-font-sizes, "medium");
   } @else if $size == "large" {
-    font-size: map.get($sap-font-sizes, "large");
+    font-size: map.get(commonvars.$sap-font-sizes, "large");
   } @else {
     font-size: $size;
   }
@@ -1190,27 +1189,27 @@
 }
 
 @mixin sap-heading($size) {
-  @if $size == $sap-heading-h1 {
+  @if $size == commonvars.$sap-heading-h1 {
     @include sap-heading-base();
 
     --sapHeading_Font_Size: var(--sapFontHeader1Size);
-  } @else if $size == $sap-heading-h2 {
+  } @else if $size == commonvars.$sap-heading-h2 {
     @include sap-heading-base();
 
     --sapHeading_Font_Size: var(--sapFontHeader2Size);
-  } @else if $size == $sap-heading-h3 {
+  } @else if $size == commonvars.$sap-heading-h3 {
     @include sap-heading-base();
 
     --sapHeading_Font_Size: var(--sapFontHeader3Size);
-  } @else if $size == $sap-heading-h4 {
+  } @else if $size == commonvars.$sap-heading-h4 {
     @include sap-heading-base();
 
     --sapHeading_Font_Size: var(--sapFontHeader4Size);
-  } @else if $size == $sap-heading-h5 {
+  } @else if $size == commonvars.$sap-heading-h5 {
     @include sap-heading-base();
 
     --sapHeading_Font_Size: var(--sapFontHeader5Size);
-  } @else if $size == $sap-heading-h6 {
+  } @else if $size == commonvars.$sap-heading-h6 {
     @include sap-heading-base();
 
     --sapHeading_Font_Size: var(--sapFontHeader6Size);
