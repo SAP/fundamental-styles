@@ -1,9 +1,540 @@
 {
+  "Internal": {
+    "sapBreakpoint_XL_Min": {
+      "value": "1440px",
+      "type": "sizing",
+      "description": "Minimal width of extra large devices."
+    },
+    "sapBreakpoint_L_Min": {
+      "value": "1024px",
+      "type": "sizing",
+      "description": "Minimal width of large devices."
+    },
+    "sapBreakpoint_M_Min": {
+      "value": "600px",
+      "type": "sizing",
+      "description": "Minimal width of medium devices."
+    },
+    "sapBreakpoint_S_Min": {
+      "value": "0",
+      "type": "sizing",
+      "description": "Minimal width of small devices."
+    },
+    "sapSapThemeId": {
+      "value": "sap_horizon",
+      "type": "string",
+      "description": "Technical identifier of the SAP-provided theme or of the SAP-provided theme a custom theme is based on."
+    },
+    "sapSvgLib_SAPWeb-icons": {
+      "value": "url(./svg/libs/SAPWeb-icons.svg)",
+      "type": "file"
+    },
+    "sapSvgLib_SAPGUI-icons": {
+      "value": "url(./svg/libs/SAPGUI-icons.svg)",
+      "type": "file"
+    },
+    "sapSvgLib_SAP-icons": {
+      "value": "none",
+      "type": "asset"
+    },
+    "sapFontUrl_72Mono_Bold_full_woff": {
+      "value": "url(./../baseTheme/fonts/72Mono-Bold-full.woff)",
+      "type": "file"
+    },
+    "sapFontUrl_72Mono_Bold_full_woff2": {
+      "value": "url(./../baseTheme/fonts/72Mono-Bold-full.woff2)",
+      "type": "file"
+    },
+    "sapFontUrl_72Mono_Bold_woff": {
+      "value": "url(./../baseTheme/fonts/72Mono-Bold.woff)",
+      "type": "file"
+    },
+    "sapFontUrl_72Mono_Bold_woff2": {
+      "value": "url(./../baseTheme/fonts/72Mono-Bold.woff2)",
+      "type": "file"
+    },
+    "sapFontUrl_72Mono_Regular_full_woff": {
+      "value": "url(./../baseTheme/fonts/72Mono-Regular-full.woff)",
+      "type": "file"
+    },
+    "sapFontUrl_72Mono_Regular_full_woff2": {
+      "value": "url(./../baseTheme/fonts/72Mono-Regular-full.woff2)",
+      "type": "file"
+    },
+    "sapFontUrl_72Mono_Regular_woff": {
+      "value": "url(./../baseTheme/fonts/72Mono-Regular.woff)",
+      "type": "file"
+    },
+    "sapFontUrl_72Mono_Regular_woff2": {
+      "value": "url(./../baseTheme/fonts/72Mono-Regular.woff2)",
+      "type": "file"
+    },
+    "sapFontUrl_72_Italic_full_woff": {
+      "value": "url(./../baseTheme/fonts/72-Italic-full.woff)",
+      "type": "file"
+    },
+    "sapFontUrl_72_Italic_full_woff2": {
+      "value": "url(./../baseTheme/fonts/72-Italic-full.woff2)",
+      "type": "file"
+    },
+    "sapFontUrl_72_Italic_woff": {
+      "value": "url(./../baseTheme/fonts/72-Italic.woff)",
+      "type": "file"
+    },
+    "sapFontUrl_72_Italic_woff2": {
+      "value": "url(./../baseTheme/fonts/72-Italic.woff2)",
+      "type": "file"
+    },
+    "sapFontUrl_72_CondensedBold_full_woff": {
+      "value": "url(./../baseTheme/fonts/72-CondensedBold-full.woff)",
+      "type": "file"
+    },
+    "sapFontUrl_72_CondensedBold_full_woff2": {
+      "value": "url(./../baseTheme/fonts/72-CondensedBold-full.woff2)",
+      "type": "file"
+    },
+    "sapFontUrl_72_CondensedBold_woff": {
+      "value": "url(./../baseTheme/fonts/72-CondensedBold.woff)",
+      "type": "file"
+    },
+    "sapFontUrl_72_CondensedBold_woff2": {
+      "value": "url(./../baseTheme/fonts/72-CondensedBold.woff2)",
+      "type": "file"
+    },
+    "sapFontUrl_72_Condensed_full_woff": {
+      "value": "url(./../baseTheme/fonts/72-Condensed-full.woff)",
+      "type": "file"
+    },
+    "sapFontUrl_72_Condensed_full_woff2": {
+      "value": "url(./../baseTheme/fonts/72-Condensed-full.woff2)",
+      "type": "file"
+    },
+    "sapFontUrl_72_Condensed_woff": {
+      "value": "url(./../baseTheme/fonts/72-Condensed.woff)",
+      "type": "file"
+    },
+    "sapFontUrl_72_Condensed_woff2": {
+      "value": "url(./../baseTheme/fonts/72-Condensed.woff2)",
+      "type": "file"
+    },
+    "sapFontUrl_72_BoldItalic_full_woff": {
+      "value": "url(./../baseTheme/fonts/72-BoldItalic-full.woff)",
+      "type": "file"
+    },
+    "sapFontUrl_72_BoldItalic_full_woff2": {
+      "value": "url(./../baseTheme/fonts/72-BoldItalic-full.woff2)",
+      "type": "file"
+    },
+    "sapFontUrl_72_BoldItalic_woff": {
+      "value": "url(./../baseTheme/fonts/72-BoldItalic.woff)",
+      "type": "file"
+    },
+    "sapFontUrl_72_BoldItalic_woff2": {
+      "value": "url(./../baseTheme/fonts/72-BoldItalic.woff2)",
+      "type": "file"
+    },
+    "sapFontUrl_72_Black_full_woff": {
+      "value": "url(./../baseTheme/fonts/72-Black-full.woff)",
+      "type": "file"
+    },
+    "sapFontUrl_72_Black_full_woff2": {
+      "value": "url(./../baseTheme/fonts/72-Black-full.woff2)",
+      "type": "file"
+    },
+    "sapFontUrl_72_Black_woff": {
+      "value": "url(./../baseTheme/fonts/72-Black.woff)",
+      "type": "file"
+    },
+    "sapFontUrl_72_Black_woff2": {
+      "value": "url(./../baseTheme/fonts/72-Black.woff2)",
+      "type": "file"
+    },
+    "sapFontUrl_72_Light_full_woff": {
+      "value": "url(./../baseTheme/fonts/72-Light-full.woff)",
+      "type": "file"
+    },
+    "sapFontUrl_72_Light_full_woff2": {
+      "value": "url(./../baseTheme/fonts/72-Light-full.woff2)",
+      "type": "file"
+    },
+    "sapFontUrl_72_Light_woff": {
+      "value": "url(./../baseTheme/fonts/72-Light.woff)",
+      "type": "file"
+    },
+    "sapFontUrl_72_Light_woff2": {
+      "value": "url(./../baseTheme/fonts/72-Light.woff2)",
+      "type": "file"
+    },
+    "sapFontUrl_72_SemiboldDuplex_full_woff": {
+      "value": "url(./../baseTheme/fonts/72-SemiboldDuplex-full.woff)",
+      "type": "file"
+    },
+    "sapFontUrl_72_SemiboldDuplex_full_woff2": {
+      "value": "url(./../baseTheme/fonts/72-SemiboldDuplex-full.woff2)",
+      "type": "file"
+    },
+    "sapFontUrl_72_SemiboldDuplex_woff": {
+      "value": "url(./../baseTheme/fonts/72-SemiboldDuplex.woff)",
+      "type": "file"
+    },
+    "sapFontUrl_72_SemiboldDuplex_woff2": {
+      "value": "url(./../baseTheme/fonts/72-SemiboldDuplex.woff2)",
+      "type": "file"
+    },
+    "sapFontUrl_72_Semibold_full_woff": {
+      "value": "url(./../baseTheme/fonts/72-Semibold-full.woff)",
+      "type": "file"
+    },
+    "sapFontUrl_72_Semibold_full_woff2": {
+      "value": "url(./../baseTheme/fonts/72-Semibold-full.woff2)",
+      "type": "file"
+    },
+    "sapFontUrl_72_Semibold_woff": {
+      "value": "url(./../baseTheme/fonts/72-Semibold.woff)",
+      "type": "file"
+    },
+    "sapFontUrl_72_Semibold_woff2": {
+      "value": "url(./../baseTheme/fonts/72-Semibold.woff2)",
+      "type": "file"
+    },
+    "sapFontUrl_72_Bold_full_woff": {
+      "value": "url(./../baseTheme/fonts/72-Bold-full.woff)",
+      "type": "file"
+    },
+    "sapFontUrl_72_Bold_full_woff2": {
+      "value": "url(./../baseTheme/fonts/72-Bold-full.woff2)",
+      "type": "file"
+    },
+    "sapFontUrl_72_Bold_woff": {
+      "value": "url(./../baseTheme/fonts/72-Bold.woff)",
+      "type": "file"
+    },
+    "sapFontUrl_72_Bold_woff2": {
+      "value": "url(./../baseTheme/fonts/72-Bold.woff2)",
+      "type": "file"
+    },
+    "sapFontUrl_72_Regular_full_woff": {
+      "value": "url(./../baseTheme/fonts/72-Regular-full.woff)",
+      "type": "file"
+    },
+    "sapFontUrl_72_Regular_full_woff2": {
+      "value": "url(./../baseTheme/fonts/72-Regular-full.woff2)",
+      "type": "file"
+    },
+    "sapFontUrl_72_Regular_woff": {
+      "value": "url(./../baseTheme/fonts/72-Regular.woff)",
+      "type": "file"
+    },
+    "sapFontUrl_72_Regular_woff2": {
+      "value": "url(./../baseTheme/fonts/72-Regular.woff2)",
+      "type": "file"
+    },
+    "sapFontUrl_SAP-icons-Business-Suite_woff2": {
+      "value": "url(./../sap_horizon/fonts/BusinessSuiteInAppSymbols.woff2)",
+      "type": "file"
+    },
+    "sapFontUrl_SAP-icons-Business-Suite_woff": {
+      "value": "url(./../sap_horizon/fonts/BusinessSuiteInAppSymbols.woff)",
+      "type": "file"
+    },
+    "sapFontUrl_SAP-icons-Business-Suite_ttf": {
+      "value": "url(./../sap_horizon/fonts/BusinessSuiteInAppSymbols.ttf)",
+      "type": "file"
+    },
+    "sapFontUrl_SAP-icons-TNT_woff2": {
+      "value": "url(./../sap_horizon/fonts/SAP-icons-TNT.woff2)",
+      "type": "file"
+    },
+    "sapFontUrl_SAP-icons-TNT_woff": {
+      "value": "url(./../sap_horizon/fonts/SAP-icons-TNT.woff)",
+      "type": "file"
+    },
+    "sapFontUrl_SAP-icons-TNT_ttf": {
+      "value": "url(./../sap_horizon/fonts/SAP-icons-TNT.ttf)",
+      "type": "file"
+    },
+    "sapFontUrl_SAP-icons_woff2": {
+      "value": "url(./../sap_horizon/fonts/SAP-icons.woff2)",
+      "type": "file"
+    },
+    "sapFontUrl_SAP-icons_woff": {
+      "value": "url(./../sap_horizon/fonts/SAP-icons.woff)",
+      "type": "file"
+    },
+    "sapFontUrl_SAP-icons_ttf": {
+      "value": "url(./../sap_horizon/fonts/SAP-icons.ttf)",
+      "type": "file"
+    },
+    "sapContent_Gap": {
+      "value": "1rem",
+      "type": "sizing",
+      "description": "The value of the gap between content."
+    },
+    "sapContent_Padding_M": {
+      "value": "2rem",
+      "type": "sizing",
+      "description": "The value of padding used on medium devices."
+    },
+    "sapContent_Margin_Large": {
+      "value": "1rem",
+      "type": "sizing",
+      "description": "The large value of the four-sided margin used for content."
+    },
+    "sapContent_Margin_Medium": {
+      "value": "1rem 2rem",
+      "type": "sizing",
+      "description": "The medium value of the four-sided margin used for content."
+    },
+    "sapContent_Margin_Small": {
+      "value": "1rem",
+      "type": "sizing",
+      "description": "The small value of the four-sided margin used for content."
+    },
+    "sapContent_Margin_Tiny": {
+      "value": "0 0 1rem",
+      "type": "sizing",
+      "description": "The tiny value of the four-sided margin used for content."
+    },
+    "sapContent_Space_Large": {
+      "value": "3rem",
+      "type": "sizing",
+      "description": "The large value of space used for content."
+    },
+    "sapContent_Space_Medium": {
+      "value": "2rem",
+      "type": "sizing",
+      "description": "The medium value of space used for content."
+    },
+    "sapContent_Space_Small": {
+      "value": "1rem",
+      "type": "sizing",
+      "description": "The small value of space used for content."
+    },
+    "sapContent_Space_Tiny": {
+      "value": "2rem",
+      "type": "sizing",
+      "description": "The tiny value of space used for content."
+    },
+    "sapContent_Space_M": {
+      "value": "2rem",
+      "type": "sizing",
+      "description": "The responsive content container space on medium devices."
+    },
+    "sapContent_DisabledOpacity": {
+      "value": "0.4",
+      "type": "opacity",
+      "description": "The opacity value of disabled screen elements in the content area."
+    },
+    "sapContent_IconHeight": {
+      "value": "{Internal.sapContent_GridSize}",
+      "type": "sizing",
+      "description": "The height of inline icons in the content area."
+    },
+    "sapContent_LineHeight": {
+      "value": "1.5",
+      "type": "lineHeight",
+      "description": "The height of lines in the content area (in em). Basically this is used as the CSS line-height property."
+    },
+    "sapElement_Condensed_Height": {
+      "value": "1.375 * {Internal.sapContent_GridSize}",
+      "type": "sizing",
+      "description": "The condensed height of inline elements in the content area."
+    },
+    "sapElement_Condensed_LineHeight": {
+      "value": "1.5 * {Internal.sapContent_GridSize}",
+      "type": "sizing",
+      "description": "The condensed height of the line box surrounding the inline elements in the content area."
+    },
+    "sapElement_Compact_Height": {
+      "value": "1.625 * {Internal.sapContent_GridSize}",
+      "type": "sizing",
+      "description": "The compact height of inline elements in the content area."
+    },
+    "sapElement_Compact_LineHeight": {
+      "value": "2 * {Internal.sapContent_GridSize}",
+      "type": "sizing",
+      "description": "The compact height of the line box surrounding the inline elements in the content area."
+    },
+    "sapElement_BorderWidth": {
+      "value": "0.0625 * {Internal.sapContent_GridSize}",
+      "type": "borderWidth",
+      "description": "The standard thickness of element borders."
+    },
+    "sapElement_Height": {
+      "value": "2.25 * {Internal.sapContent_GridSize}",
+      "type": "sizing",
+      "description": "The height of inline elements in the content area."
+    },
+    "sapElement_LineHeight": {
+      "value": "2.75 * {Internal.sapContent_GridSize}",
+      "type": "sizing",
+      "description": "The height of the line box surrounding the inline elements in the content area."
+    },
+    "_sapPrimary7H": {
+      "value": "210.66666666666663",
+      "type": "internal"
+    },
+    "_sapPrimary7S": {
+      "value": "20.930232558139537%",
+      "type": "internal"
+    },
+    "_sapPrimary7L": {
+      "value": "42.15686274509803%",
+      "type": "internal"
+    },
+    "_sapPrimary7A": {
+      "value": "1",
+      "type": "internal"
+    },
+    "sapPrimary7": {
+      "value": "hsla({Internal._sapPrimary7H}, {Internal._sapPrimary7S}, {Internal._sapPrimary7L}, {Internal._sapPrimary7A})",
+      "type": "color"
+    },
+    "_sapPrimary6H": {
+      "value": "210.90909090909088",
+      "type": "internal"
+    },
+    "_sapPrimary6S": {
+      "value": "36.26373626373625%",
+      "type": "internal"
+    },
+    "_sapPrimary6L": {
+      "value": "17.84313725490196%",
+      "type": "internal"
+    },
+    "_sapPrimary6A": {
+      "value": "1",
+      "type": "internal"
+    },
+    "sapPrimary6": {
+      "value": "hsla({Internal._sapPrimary6H}, {Internal._sapPrimary6S}, {Internal._sapPrimary6L}, {Internal._sapPrimary6A})",
+      "type": "color"
+    },
+    "_sapPrimary5H": {
+      "value": "210.63829787234044",
+      "type": "internal"
+    },
+    "_sapPrimary5S": {
+      "value": "20.524017467248918%",
+      "type": "internal"
+    },
+    "_sapPrimary5L": {
+      "value": "55.09803921568628%",
+      "type": "internal"
+    },
+    "_sapPrimary5A": {
+      "value": "1",
+      "type": "internal"
+    },
+    "sapPrimary5": {
+      "value": "hsla({Internal._sapPrimary5H}, {Internal._sapPrimary5S}, {Internal._sapPrimary5L}, {Internal._sapPrimary5A})",
+      "type": "color"
+    },
+    "_sapPrimary4H": {
+      "value": "210",
+      "type": "internal"
+    },
+    "_sapPrimary4S": {
+      "value": "11.111111111111075%",
+      "type": "internal"
+    },
+    "_sapPrimary4L": {
+      "value": "96.47058823529412%",
+      "type": "internal"
+    },
+    "_sapPrimary4A": {
+      "value": "1",
+      "type": "internal"
+    },
+    "sapPrimary4": {
+      "value": "hsla({Internal._sapPrimary4H}, {Internal._sapPrimary4S}, {Internal._sapPrimary4L}, {Internal._sapPrimary4A})",
+      "type": "color"
+    },
+    "_sapPrimary3H": {
+      "value": "0",
+      "type": "internal"
+    },
+    "_sapPrimary3S": {
+      "value": "0%",
+      "type": "internal"
+    },
+    "_sapPrimary3L": {
+      "value": "100%",
+      "type": "internal"
+    },
+    "_sapPrimary3A": {
+      "value": "1",
+      "type": "internal"
+    },
+    "sapPrimary3": {
+      "value": "hsla({Internal._sapPrimary3H}, {Internal._sapPrimary3S}, {Internal._sapPrimary3L}, {Internal._sapPrimary3A})",
+      "type": "color"
+    },
+    "_sapPrimary2H": {
+      "value": "212.23140495867767",
+      "type": "internal"
+    },
+    "_sapPrimary2S": {
+      "value": "100%",
+      "type": "internal"
+    },
+    "_sapPrimary2L": {
+      "value": "47.45098039215686%",
+      "type": "internal"
+    },
+    "_sapPrimary2A": {
+      "value": "1",
+      "type": "internal"
+    },
+    "sapPrimary2": {
+      "value": "hsla({Internal._sapPrimary2H}, {Internal._sapPrimary2S}, {Internal._sapPrimary2L}, {Internal._sapPrimary2A})",
+      "type": "color"
+    },
+    "_sapPrimary1H": {
+      "value": "201",
+      "type": "internal"
+    },
+    "_sapPrimary1S": {
+      "value": "99.99999999999986%",
+      "type": "internal"
+    },
+    "_sapPrimary1L": {
+      "value": "96.078431372549%",
+      "type": "internal"
+    },
+    "_sapPrimary1A": {
+      "value": "1",
+      "type": "internal"
+    },
+    "sapPrimary1": {
+      "value": "hsla({Internal._sapPrimary1H}, {Internal._sapPrimary1S}, {Internal._sapPrimary1L}, {Internal._sapPrimary1A})",
+      "type": "color"
+    },
+    "sapContent_GridSize": {
+      "value": "1rem",
+      "type": "dimension"
+    }
+  },
   "Shell": {
     "sapShell_BackgroundGradient": {
       "value": "linear-gradient(to bottom, {Shell.sapShell_Background}, {Shell.sapShell_Background})",
       "type": "linear-gradient",
       "description": "deprecated - Linked to @sapShell_BackgroundImage for compatibility reasons."
+    },
+    "sapShell_GroupGap_M": {
+      "value": "3rem",
+      "type": "sizing",
+      "description": "The gap between shell groups on medium devices."
+    },
+    "sapShell_Gap_M": {
+      "value": "1rem",
+      "type": "sizing",
+      "description": "The value of the small gap in a medium container."
+    },
+    "sapShell_Space_M": {
+      "value": "2rem",
+      "type": "sizing",
+      "description": "The value of the medium shell container space."
     },
     "Category": {
       "sapShell_Category_16_TextShadow": {
@@ -1239,6 +1770,27 @@
         "type": "internal"
       }
     },
+    "_sapShell_SubBrand_TextColorH": {
+      "value": "{Main._sapBrandColorH}",
+      "type": "internal"
+    },
+    "_sapShell_SubBrand_TextColorS": {
+      "value": "{Main._sapBrandColorS}",
+      "type": "internal"
+    },
+    "_sapShell_SubBrand_TextColorL": {
+      "value": "{Main._sapBrandColorL} - 21%",
+      "type": "internal"
+    },
+    "_sapShell_SubBrand_TextColorA": {
+      "value": "{Main._sapBrandColorA}",
+      "type": "internal"
+    },
+    "sapShell_SubBrand_TextColor": {
+      "value": "hsla({Shell._sapShell_SubBrand_TextColorH}, {Shell._sapShell_SubBrand_TextColorS}, {Shell._sapShell_SubBrand_TextColorL}, {Shell._sapShell_SubBrand_TextColorA})",
+      "type": "color",
+      "description": "The text color of brand text (such as a product name) in the Shell."
+    },
     "_sapShell_Assistant_ForegroundColorH": {
       "value": "{Assistant._sapAssistant_Color1H}",
       "type": "internal"
@@ -1856,6 +2408,16 @@
       "type": "color",
       "description": "The color of highlighted elements in lists (deprecated: not used anymore since Belize theme)."
     },
+    "sapList_TableFixedRowBorderWidth": {
+      "value": "0.125 * {Internal.sapContent_GridSize}",
+      "type": "borderWidth",
+      "description": "The border thickness for fixed border rows."
+    },
+    "sapList_TableFixedColumnBorderWidth": {
+      "value": "{Internal.sapElement_BorderWidth}",
+      "type": "borderWidth",
+      "description": "The thickness of the vertical border of fixed columns."
+    },
     "_sapList_TableFixedBorderColorH": {
       "value": "{List._sapList_BorderColorH}",
       "type": "internal"
@@ -2455,442 +3017,6 @@
       "value": "hsla({Resource._sapShell_BackgroundPatternColorH}, {Resource._sapShell_BackgroundPatternColorS}, {Resource._sapShell_BackgroundPatternColorL}, {Resource._sapShell_BackgroundPatternColorA})",
       "type": "color",
       "description": "The background pattern color of the shell. To turn off the pattern set the value to 'transparent'."
-    }
-  },
-  "Internal": {
-    "sapSvgLib_SAPWeb-icons": {
-      "value": "url(./svg/libs/SAPWeb-icons.svg)",
-      "type": "file"
-    },
-    "sapSvgLib_SAPGUI-icons": {
-      "value": "url(./svg/libs/SAPGUI-icons.svg)",
-      "type": "file"
-    },
-    "sapSvgLib_SAP-icons": {
-      "value": "none",
-      "type": "asset"
-    },
-    "sapFontUrl_72Mono_Bold_full_woff": {
-      "value": "url(./../baseTheme/fonts/72Mono-Bold-full.woff)",
-      "type": "file"
-    },
-    "sapFontUrl_72Mono_Bold_full_woff2": {
-      "value": "url(./../baseTheme/fonts/72Mono-Bold-full.woff2)",
-      "type": "file"
-    },
-    "sapFontUrl_72Mono_Bold_woff": {
-      "value": "url(./../baseTheme/fonts/72Mono-Bold.woff)",
-      "type": "file"
-    },
-    "sapFontUrl_72Mono_Bold_woff2": {
-      "value": "url(./../baseTheme/fonts/72Mono-Bold.woff2)",
-      "type": "file"
-    },
-    "sapFontUrl_72Mono_Regular_full_woff": {
-      "value": "url(./../baseTheme/fonts/72Mono-Regular-full.woff)",
-      "type": "file"
-    },
-    "sapFontUrl_72Mono_Regular_full_woff2": {
-      "value": "url(./../baseTheme/fonts/72Mono-Regular-full.woff2)",
-      "type": "file"
-    },
-    "sapFontUrl_72Mono_Regular_woff": {
-      "value": "url(./../baseTheme/fonts/72Mono-Regular.woff)",
-      "type": "file"
-    },
-    "sapFontUrl_72Mono_Regular_woff2": {
-      "value": "url(./../baseTheme/fonts/72Mono-Regular.woff2)",
-      "type": "file"
-    },
-    "sapFontUrl_72_Italic_full_woff": {
-      "value": "url(./../baseTheme/fonts/72-Italic-full.woff)",
-      "type": "file"
-    },
-    "sapFontUrl_72_Italic_full_woff2": {
-      "value": "url(./../baseTheme/fonts/72-Italic-full.woff2)",
-      "type": "file"
-    },
-    "sapFontUrl_72_Italic_woff": {
-      "value": "url(./../baseTheme/fonts/72-Italic.woff)",
-      "type": "file"
-    },
-    "sapFontUrl_72_Italic_woff2": {
-      "value": "url(./../baseTheme/fonts/72-Italic.woff2)",
-      "type": "file"
-    },
-    "sapFontUrl_72_CondensedBold_full_woff": {
-      "value": "url(./../baseTheme/fonts/72-CondensedBold-full.woff)",
-      "type": "file"
-    },
-    "sapFontUrl_72_CondensedBold_full_woff2": {
-      "value": "url(./../baseTheme/fonts/72-CondensedBold-full.woff2)",
-      "type": "file"
-    },
-    "sapFontUrl_72_CondensedBold_woff": {
-      "value": "url(./../baseTheme/fonts/72-CondensedBold.woff)",
-      "type": "file"
-    },
-    "sapFontUrl_72_CondensedBold_woff2": {
-      "value": "url(./../baseTheme/fonts/72-CondensedBold.woff2)",
-      "type": "file"
-    },
-    "sapFontUrl_72_Condensed_full_woff": {
-      "value": "url(./../baseTheme/fonts/72-Condensed-full.woff)",
-      "type": "file"
-    },
-    "sapFontUrl_72_Condensed_full_woff2": {
-      "value": "url(./../baseTheme/fonts/72-Condensed-full.woff2)",
-      "type": "file"
-    },
-    "sapFontUrl_72_Condensed_woff": {
-      "value": "url(./../baseTheme/fonts/72-Condensed.woff)",
-      "type": "file"
-    },
-    "sapFontUrl_72_Condensed_woff2": {
-      "value": "url(./../baseTheme/fonts/72-Condensed.woff2)",
-      "type": "file"
-    },
-    "sapFontUrl_72_BoldItalic_full_woff": {
-      "value": "url(./../baseTheme/fonts/72-BoldItalic-full.woff)",
-      "type": "file"
-    },
-    "sapFontUrl_72_BoldItalic_full_woff2": {
-      "value": "url(./../baseTheme/fonts/72-BoldItalic-full.woff2)",
-      "type": "file"
-    },
-    "sapFontUrl_72_BoldItalic_woff": {
-      "value": "url(./../baseTheme/fonts/72-BoldItalic.woff)",
-      "type": "file"
-    },
-    "sapFontUrl_72_BoldItalic_woff2": {
-      "value": "url(./../baseTheme/fonts/72-BoldItalic.woff2)",
-      "type": "file"
-    },
-    "sapFontUrl_72_Black_full_woff": {
-      "value": "url(./../baseTheme/fonts/72-Black-full.woff)",
-      "type": "file"
-    },
-    "sapFontUrl_72_Black_full_woff2": {
-      "value": "url(./../baseTheme/fonts/72-Black-full.woff2)",
-      "type": "file"
-    },
-    "sapFontUrl_72_Black_woff": {
-      "value": "url(./../baseTheme/fonts/72-Black.woff)",
-      "type": "file"
-    },
-    "sapFontUrl_72_Black_woff2": {
-      "value": "url(./../baseTheme/fonts/72-Black.woff2)",
-      "type": "file"
-    },
-    "sapFontUrl_72_Light_full_woff": {
-      "value": "url(./../baseTheme/fonts/72-Light-full.woff)",
-      "type": "file"
-    },
-    "sapFontUrl_72_Light_full_woff2": {
-      "value": "url(./../baseTheme/fonts/72-Light-full.woff2)",
-      "type": "file"
-    },
-    "sapFontUrl_72_Light_woff": {
-      "value": "url(./../baseTheme/fonts/72-Light.woff)",
-      "type": "file"
-    },
-    "sapFontUrl_72_Light_woff2": {
-      "value": "url(./../baseTheme/fonts/72-Light.woff2)",
-      "type": "file"
-    },
-    "sapFontUrl_72_SemiboldDuplex_full_woff": {
-      "value": "url(./../baseTheme/fonts/72-SemiboldDuplex-full.woff)",
-      "type": "file"
-    },
-    "sapFontUrl_72_SemiboldDuplex_full_woff2": {
-      "value": "url(./../baseTheme/fonts/72-SemiboldDuplex-full.woff2)",
-      "type": "file"
-    },
-    "sapFontUrl_72_SemiboldDuplex_woff": {
-      "value": "url(./../baseTheme/fonts/72-SemiboldDuplex.woff)",
-      "type": "file"
-    },
-    "sapFontUrl_72_SemiboldDuplex_woff2": {
-      "value": "url(./../baseTheme/fonts/72-SemiboldDuplex.woff2)",
-      "type": "file"
-    },
-    "sapFontUrl_72_Semibold_full_woff": {
-      "value": "url(./../baseTheme/fonts/72-Semibold-full.woff)",
-      "type": "file"
-    },
-    "sapFontUrl_72_Semibold_full_woff2": {
-      "value": "url(./../baseTheme/fonts/72-Semibold-full.woff2)",
-      "type": "file"
-    },
-    "sapFontUrl_72_Semibold_woff": {
-      "value": "url(./../baseTheme/fonts/72-Semibold.woff)",
-      "type": "file"
-    },
-    "sapFontUrl_72_Semibold_woff2": {
-      "value": "url(./../baseTheme/fonts/72-Semibold.woff2)",
-      "type": "file"
-    },
-    "sapFontUrl_72_Bold_full_woff": {
-      "value": "url(./../baseTheme/fonts/72-Bold-full.woff)",
-      "type": "file"
-    },
-    "sapFontUrl_72_Bold_full_woff2": {
-      "value": "url(./../baseTheme/fonts/72-Bold-full.woff2)",
-      "type": "file"
-    },
-    "sapFontUrl_72_Bold_woff": {
-      "value": "url(./../baseTheme/fonts/72-Bold.woff)",
-      "type": "file"
-    },
-    "sapFontUrl_72_Bold_woff2": {
-      "value": "url(./../baseTheme/fonts/72-Bold.woff2)",
-      "type": "file"
-    },
-    "sapFontUrl_72_Regular_full_woff": {
-      "value": "url(./../baseTheme/fonts/72-Regular-full.woff)",
-      "type": "file"
-    },
-    "sapFontUrl_72_Regular_full_woff2": {
-      "value": "url(./../baseTheme/fonts/72-Regular-full.woff2)",
-      "type": "file"
-    },
-    "sapFontUrl_72_Regular_woff": {
-      "value": "url(./../baseTheme/fonts/72-Regular.woff)",
-      "type": "file"
-    },
-    "sapFontUrl_72_Regular_woff2": {
-      "value": "url(./../baseTheme/fonts/72-Regular.woff2)",
-      "type": "file"
-    },
-    "sapFontUrl_SAP-icons-Business-Suite_woff2": {
-      "value": "url(./../sap_horizon/fonts/BusinessSuiteInAppSymbols.woff2)",
-      "type": "file"
-    },
-    "sapFontUrl_SAP-icons-Business-Suite_woff": {
-      "value": "url(./../sap_horizon/fonts/BusinessSuiteInAppSymbols.woff)",
-      "type": "file"
-    },
-    "sapFontUrl_SAP-icons-Business-Suite_ttf": {
-      "value": "url(./../sap_horizon/fonts/BusinessSuiteInAppSymbols.ttf)",
-      "type": "file"
-    },
-    "sapFontUrl_SAP-icons-TNT_woff2": {
-      "value": "url(./../sap_horizon/fonts/SAP-icons-TNT.woff2)",
-      "type": "file"
-    },
-    "sapFontUrl_SAP-icons-TNT_woff": {
-      "value": "url(./../sap_horizon/fonts/SAP-icons-TNT.woff)",
-      "type": "file"
-    },
-    "sapFontUrl_SAP-icons-TNT_ttf": {
-      "value": "url(./../sap_horizon/fonts/SAP-icons-TNT.ttf)",
-      "type": "file"
-    },
-    "sapFontUrl_SAP-icons_woff2": {
-      "value": "url(./../sap_horizon/fonts/SAP-icons.woff2)",
-      "type": "file"
-    },
-    "sapFontUrl_SAP-icons_woff": {
-      "value": "url(./../sap_horizon/fonts/SAP-icons.woff)",
-      "type": "file"
-    },
-    "sapFontUrl_SAP-icons_ttf": {
-      "value": "url(./../sap_horizon/fonts/SAP-icons.ttf)",
-      "type": "file"
-    },
-    "sapContent_DisabledOpacity": {
-      "value": "0.4",
-      "type": "opacity",
-      "description": "The opacity value of disabled screen elements in the content area."
-    },
-    "sapContent_IconHeight": {
-      "value": "{Internal.sapContent_GridSize}",
-      "type": "sizing",
-      "description": "The height of inline icons in the content area."
-    },
-    "sapContent_LineHeight": {
-      "value": "1.5",
-      "type": "lineHeight",
-      "description": "The height of lines in the content area (in em). Basically this is used as the CSS line-height property."
-    },
-    "sapElement_Condensed_Height": {
-      "value": "1.375 * {Internal.sapContent_GridSize}",
-      "type": "sizing",
-      "description": "The condensed height of inline elements in the content area."
-    },
-    "sapElement_Condensed_LineHeight": {
-      "value": "1.5 * {Internal.sapContent_GridSize}",
-      "type": "sizing",
-      "description": "The condensed height of the line box surrounding the inline elements in the content area."
-    },
-    "sapElement_Compact_Height": {
-      "value": "1.625 * {Internal.sapContent_GridSize}",
-      "type": "sizing",
-      "description": "The compact height of inline elements in the content area."
-    },
-    "sapElement_Compact_LineHeight": {
-      "value": "2 * {Internal.sapContent_GridSize}",
-      "type": "sizing",
-      "description": "The compact height of the line box surrounding the inline elements in the content area."
-    },
-    "sapElement_BorderWidth": {
-      "value": "0.0625 * {Internal.sapContent_GridSize}",
-      "type": "borderWidth",
-      "description": "The standard thickness of element borders."
-    },
-    "sapElement_Height": {
-      "value": "2.25 * {Internal.sapContent_GridSize}",
-      "type": "sizing",
-      "description": "The height of inline elements in the content area."
-    },
-    "sapElement_LineHeight": {
-      "value": "2.75 * {Internal.sapContent_GridSize}",
-      "type": "sizing",
-      "description": "The height of the line box surrounding the inline elements in the content area."
-    },
-    "_sapPrimary7H": {
-      "value": "210.66666666666663",
-      "type": "internal"
-    },
-    "_sapPrimary7S": {
-      "value": "20.930232558139537%",
-      "type": "internal"
-    },
-    "_sapPrimary7L": {
-      "value": "42.15686274509803%",
-      "type": "internal"
-    },
-    "_sapPrimary7A": {
-      "value": "1",
-      "type": "internal"
-    },
-    "sapPrimary7": {
-      "value": "hsla({Internal._sapPrimary7H}, {Internal._sapPrimary7S}, {Internal._sapPrimary7L}, {Internal._sapPrimary7A})",
-      "type": "color"
-    },
-    "_sapPrimary6H": {
-      "value": "210.90909090909088",
-      "type": "internal"
-    },
-    "_sapPrimary6S": {
-      "value": "36.26373626373625%",
-      "type": "internal"
-    },
-    "_sapPrimary6L": {
-      "value": "17.84313725490196%",
-      "type": "internal"
-    },
-    "_sapPrimary6A": {
-      "value": "1",
-      "type": "internal"
-    },
-    "sapPrimary6": {
-      "value": "hsla({Internal._sapPrimary6H}, {Internal._sapPrimary6S}, {Internal._sapPrimary6L}, {Internal._sapPrimary6A})",
-      "type": "color"
-    },
-    "_sapPrimary5H": {
-      "value": "210.63829787234044",
-      "type": "internal"
-    },
-    "_sapPrimary5S": {
-      "value": "20.524017467248918%",
-      "type": "internal"
-    },
-    "_sapPrimary5L": {
-      "value": "55.09803921568628%",
-      "type": "internal"
-    },
-    "_sapPrimary5A": {
-      "value": "1",
-      "type": "internal"
-    },
-    "sapPrimary5": {
-      "value": "hsla({Internal._sapPrimary5H}, {Internal._sapPrimary5S}, {Internal._sapPrimary5L}, {Internal._sapPrimary5A})",
-      "type": "color"
-    },
-    "_sapPrimary4H": {
-      "value": "210",
-      "type": "internal"
-    },
-    "_sapPrimary4S": {
-      "value": "11.111111111111075%",
-      "type": "internal"
-    },
-    "_sapPrimary4L": {
-      "value": "96.47058823529412%",
-      "type": "internal"
-    },
-    "_sapPrimary4A": {
-      "value": "1",
-      "type": "internal"
-    },
-    "sapPrimary4": {
-      "value": "hsla({Internal._sapPrimary4H}, {Internal._sapPrimary4S}, {Internal._sapPrimary4L}, {Internal._sapPrimary4A})",
-      "type": "color"
-    },
-    "_sapPrimary3H": {
-      "value": "0",
-      "type": "internal"
-    },
-    "_sapPrimary3S": {
-      "value": "0%",
-      "type": "internal"
-    },
-    "_sapPrimary3L": {
-      "value": "100%",
-      "type": "internal"
-    },
-    "_sapPrimary3A": {
-      "value": "1",
-      "type": "internal"
-    },
-    "sapPrimary3": {
-      "value": "hsla({Internal._sapPrimary3H}, {Internal._sapPrimary3S}, {Internal._sapPrimary3L}, {Internal._sapPrimary3A})",
-      "type": "color"
-    },
-    "_sapPrimary2H": {
-      "value": "212.23140495867767",
-      "type": "internal"
-    },
-    "_sapPrimary2S": {
-      "value": "100%",
-      "type": "internal"
-    },
-    "_sapPrimary2L": {
-      "value": "47.45098039215686%",
-      "type": "internal"
-    },
-    "_sapPrimary2A": {
-      "value": "1",
-      "type": "internal"
-    },
-    "sapPrimary2": {
-      "value": "hsla({Internal._sapPrimary2H}, {Internal._sapPrimary2S}, {Internal._sapPrimary2L}, {Internal._sapPrimary2A})",
-      "type": "color"
-    },
-    "_sapPrimary1H": {
-      "value": "201",
-      "type": "internal"
-    },
-    "_sapPrimary1S": {
-      "value": "99.99999999999986%",
-      "type": "internal"
-    },
-    "_sapPrimary1L": {
-      "value": "96.078431372549%",
-      "type": "internal"
-    },
-    "_sapPrimary1A": {
-      "value": "1",
-      "type": "internal"
-    },
-    "sapPrimary1": {
-      "value": "hsla({Internal._sapPrimary1H}, {Internal._sapPrimary1S}, {Internal._sapPrimary1L}, {Internal._sapPrimary1A})",
-      "type": "color"
-    },
-    "sapContent_GridSize": {
-      "value": "1rem",
-      "type": "dimension"
     }
   },
   "Chart": {
@@ -10632,25 +10758,25 @@
             "y": "0",
             "blur": ".125rem",
             "spread": "0",
-            "color": "hsla({Shadow._sapContent_ShadowColorH}, {Shadow._sapContent_ShadowColorS}, {Shadow._sapContent_ShadowColorL}, {Shadow._sapContent_ShadowColorA})"
+            "color": "hsla({Chart._sapChart_ContrastShadowColorH}, {Chart._sapChart_ContrastShadowColorS}, {Chart._sapChart_ContrastShadowColorL}, {Chart._sapChart_ContrastShadowColorA})"
           }
         ],
         "description": "This text shadow matches the base chart color of the sequence 1."
       },
       "_sapChart_Sequence_1_TextColorH": {
-        "value": "{Chart.Data._sapChart_Data_ContrastTextColorH}",
+        "value": "{Chart.Data._sapChart_Data_TextColorH}",
         "type": "internal"
       },
       "_sapChart_Sequence_1_TextColorS": {
-        "value": "{Chart.Data._sapChart_Data_ContrastTextColorS}",
+        "value": "{Chart.Data._sapChart_Data_TextColorS}",
         "type": "internal"
       },
       "_sapChart_Sequence_1_TextColorL": {
-        "value": "{Chart.Data._sapChart_Data_ContrastTextColorL}",
+        "value": "{Chart.Data._sapChart_Data_TextColorL}",
         "type": "internal"
       },
       "_sapChart_Sequence_1_TextColorA": {
-        "value": "{Chart.Data._sapChart_Data_ContrastTextColorA}",
+        "value": "{Chart.Data._sapChart_Data_TextColorA}",
         "type": "internal"
       },
       "sapChart_Sequence_1_TextColor": {
@@ -11615,15 +11741,15 @@
         "description": "This color is used as an ordered color of a sequence of 12 chart colors. It has a defined contrast to its predecessor and successor."
       },
       "_sapChart_OrderedColor_1H": {
-        "value": "210",
+        "value": "209.098712446352",
         "type": "internal"
       },
       "_sapChart_OrderedColor_1S": {
-        "value": "58.333333333333336%",
+        "value": "100.00000000000003%",
         "type": "internal"
       },
       "_sapChart_OrderedColor_1L": {
-        "value": "47.05882352941176%",
+        "value": "54.31372549019608%",
         "type": "internal"
       },
       "_sapChart_OrderedColor_1A": {
@@ -12853,6 +12979,32 @@
       "type": "color",
       "description": "The border color for elements showing a less prominent shade of indication 10."
     },
+    "sapIndicationColor_10b_Background": {
+      "value": "hsla({Indication._sapIndicationColor_10b_BackgroundH}, {Indication._sapIndicationColor_10b_BackgroundS}, {Indication._sapIndicationColor_10b_BackgroundL}, {Indication._sapIndicationColor_10b_BackgroundA})",
+      "type": "color",
+      "description": "The background color for elements showing a less prominent shade of indication 10."
+    },
+    "_sapIndicationColor_10b_TextColorH": {
+      "value": "{Indication._sapIndicationColor_10bH}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_10b_TextColorS": {
+      "value": "{Indication._sapIndicationColor_10bS} - 8%",
+      "type": "internal"
+    },
+    "_sapIndicationColor_10b_TextColorL": {
+      "value": "{Indication._sapIndicationColor_10bL} - 65%",
+      "type": "internal"
+    },
+    "_sapIndicationColor_10b_TextColorA": {
+      "value": "{Indication._sapIndicationColor_10bA}",
+      "type": "internal"
+    },
+    "sapIndicationColor_10b_TextColor": {
+      "value": "hsla({Indication._sapIndicationColor_10b_TextColorH}, {Indication._sapIndicationColor_10b_TextColorS}, {Indication._sapIndicationColor_10b_TextColorL}, {Indication._sapIndicationColor_10b_TextColorA})",
+      "type": "color",
+      "description": "The text color for elements showing a less prominent shade of indication 10."
+    },
     "_sapIndicationColor_10bH": {
       "value": "209.99999999999977",
       "type": "internal"
@@ -13051,6 +13203,32 @@
       "type": "color",
       "description": "The border color for elements showing a less prominent shade of indication 9."
     },
+    "sapIndicationColor_9b_Background": {
+      "value": "hsla({Indication._sapIndicationColor_9b_BackgroundH}, {Indication._sapIndicationColor_9b_BackgroundS}, {Indication._sapIndicationColor_9b_BackgroundL}, {Indication._sapIndicationColor_9b_BackgroundA})",
+      "type": "color",
+      "description": "The background color for elements showing a less prominent shade of indication 9."
+    },
+    "_sapIndicationColor_9b_TextColorH": {
+      "value": "{Indication._sapIndicationColor_9bH}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_9b_TextColorS": {
+      "value": "{Indication._sapIndicationColor_9bS}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_9b_TextColorL": {
+      "value": "{Indication._sapIndicationColor_9bL} - 82%",
+      "type": "internal"
+    },
+    "_sapIndicationColor_9b_TextColorA": {
+      "value": "{Indication._sapIndicationColor_9bA}",
+      "type": "internal"
+    },
+    "sapIndicationColor_9b_TextColor": {
+      "value": "hsla({Indication._sapIndicationColor_9b_TextColorH}, {Indication._sapIndicationColor_9b_TextColorS}, {Indication._sapIndicationColor_9b_TextColorL}, {Indication._sapIndicationColor_9b_TextColorA})",
+      "type": "color",
+      "description": "The text color for elements showing a less prominent shade of indication 9."
+    },
     "_sapIndicationColor_9bH": {
       "value": "0",
       "type": "internal"
@@ -13216,6 +13394,32 @@
       "value": "hsla({Indication._sapIndicationColor_8b_BorderColorH}, {Indication._sapIndicationColor_8b_BorderColorS}, {Indication._sapIndicationColor_8b_BorderColorL}, {Indication._sapIndicationColor_8b_BorderColorA})",
       "type": "color",
       "description": "The border color for elements showing a less prominent shade of indication 8."
+    },
+    "sapIndicationColor_8b_Background": {
+      "value": "hsla({Indication._sapIndicationColor_8b_BackgroundH}, {Indication._sapIndicationColor_8b_BackgroundS}, {Indication._sapIndicationColor_8b_BackgroundL}, {Indication._sapIndicationColor_8b_BackgroundA})",
+      "type": "color",
+      "description": "The background color for elements showing a less prominent shade of indication 8."
+    },
+    "_sapIndicationColor_8b_TextColorH": {
+      "value": "{Indication._sapIndicationColor_8bH}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_8b_TextColorS": {
+      "value": "{Indication._sapIndicationColor_8bS}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_8b_TextColorL": {
+      "value": "{Indication._sapIndicationColor_8bL} - 54%",
+      "type": "internal"
+    },
+    "_sapIndicationColor_8b_TextColorA": {
+      "value": "{Indication._sapIndicationColor_8bA}",
+      "type": "internal"
+    },
+    "sapIndicationColor_8b_TextColor": {
+      "value": "hsla({Indication._sapIndicationColor_8b_TextColorH}, {Indication._sapIndicationColor_8b_TextColorS}, {Indication._sapIndicationColor_8b_TextColorL}, {Indication._sapIndicationColor_8b_TextColorA})",
+      "type": "color",
+      "description": "The text color for elements showing a less prominent shade of indication 8."
     },
     "_sapIndicationColor_8bH": {
       "value": "289.7560975609756",
@@ -13383,6 +13587,32 @@
       "type": "color",
       "description": "The border color for elements showing a less prominent shade of indication 7."
     },
+    "sapIndicationColor_7b_Background": {
+      "value": "hsla({Indication._sapIndicationColor_7b_BackgroundH}, {Indication._sapIndicationColor_7b_BackgroundS}, {Indication._sapIndicationColor_7b_BackgroundL}, {Indication._sapIndicationColor_7b_BackgroundA})",
+      "type": "color",
+      "description": "The background color for elements showing a less prominent shade of indication 7."
+    },
+    "_sapIndicationColor_7b_TextColorH": {
+      "value": "{Indication._sapIndicationColor_7bH}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_7b_TextColorS": {
+      "value": "{Indication._sapIndicationColor_7bS}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_7b_TextColorL": {
+      "value": "{Indication._sapIndicationColor_7bL} - 32%",
+      "type": "internal"
+    },
+    "_sapIndicationColor_7b_TextColorA": {
+      "value": "{Indication._sapIndicationColor_7bA}",
+      "type": "internal"
+    },
+    "sapIndicationColor_7b_TextColor": {
+      "value": "hsla({Indication._sapIndicationColor_7b_TextColorH}, {Indication._sapIndicationColor_7b_TextColorS}, {Indication._sapIndicationColor_7b_TextColorL}, {Indication._sapIndicationColor_7b_TextColorA})",
+      "type": "color",
+      "description": "The text color for elements showing a less prominent shade of indication 7."
+    },
     "_sapIndicationColor_7bH": {
       "value": "251.66666666666674",
       "type": "internal"
@@ -13548,6 +13778,32 @@
       "value": "hsla({Indication._sapIndicationColor_6b_BorderColorH}, {Indication._sapIndicationColor_6b_BorderColorS}, {Indication._sapIndicationColor_6b_BorderColorL}, {Indication._sapIndicationColor_6b_BorderColorA})",
       "type": "color",
       "description": "The border color for elements showing a less prominent shade of indication 6."
+    },
+    "sapIndicationColor_6b_Background": {
+      "value": "hsla({Indication._sapIndicationColor_6b_BackgroundH}, {Indication._sapIndicationColor_6b_BackgroundS}, {Indication._sapIndicationColor_6b_BackgroundL}, {Indication._sapIndicationColor_6b_BackgroundA})",
+      "type": "color",
+      "description": "The background color for elements showing a less prominent shade of indication 6."
+    },
+    "_sapIndicationColor_6b_TextColorH": {
+      "value": "{Indication._sapIndicationColor_6bH}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_6b_TextColorS": {
+      "value": "{Indication._sapIndicationColor_6bS}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_6b_TextColorL": {
+      "value": "{Indication._sapIndicationColor_6bL} - 63%",
+      "type": "internal"
+    },
+    "_sapIndicationColor_6b_TextColorA": {
+      "value": "{Indication._sapIndicationColor_6bA}",
+      "type": "internal"
+    },
+    "sapIndicationColor_6b_TextColor": {
+      "value": "hsla({Indication._sapIndicationColor_6b_TextColorH}, {Indication._sapIndicationColor_6b_TextColorS}, {Indication._sapIndicationColor_6b_TextColorL}, {Indication._sapIndicationColor_6b_TextColorA})",
+      "type": "color",
+      "description": "The text color for elements showing a less prominent shade of indication 6."
     },
     "_sapIndicationColor_6bH": {
       "value": "166.5",
@@ -13715,16 +13971,42 @@
       "type": "color",
       "description": "The border color for elements showing a less prominent shade of indication 5."
     },
+    "sapIndicationColor_5b_Background": {
+      "value": "hsla({Indication._sapIndicationColor_5b_BackgroundH}, {Indication._sapIndicationColor_5b_BackgroundS}, {Indication._sapIndicationColor_5b_BackgroundL}, {Indication._sapIndicationColor_5b_BackgroundA})",
+      "type": "color",
+      "description": "The background color for elements showing a less prominent shade of indication 5."
+    },
+    "_sapIndicationColor_5b_TextColorH": {
+      "value": "{Indication._sapIndicationColor_5bH}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_5b_TextColorS": {
+      "value": "{Indication._sapIndicationColor_5bS}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_5b_TextColorL": {
+      "value": "{Indication._sapIndicationColor_5bL} - 50%",
+      "type": "internal"
+    },
+    "_sapIndicationColor_5b_TextColorA": {
+      "value": "{Indication._sapIndicationColor_5bA}",
+      "type": "internal"
+    },
+    "sapIndicationColor_5b_TextColor": {
+      "value": "hsla({Indication._sapIndicationColor_5b_TextColorH}, {Indication._sapIndicationColor_5b_TextColorS}, {Indication._sapIndicationColor_5b_TextColorL}, {Indication._sapIndicationColor_5b_TextColorA})",
+      "type": "color",
+      "description": "The text color for elements showing a less prominent shade of indication 5."
+    },
     "_sapIndicationColor_5bH": {
-      "value": "200",
+      "value": "211.57894736842104",
       "type": "internal"
     },
     "_sapIndicationColor_5bS": {
-      "value": "91.30434782608698%",
+      "value": "100.00000000000007%",
       "type": "internal"
     },
     "_sapIndicationColor_5bL": {
-      "value": "90.98039215686275%",
+      "value": "92.54901960784314%",
       "type": "internal"
     },
     "_sapIndicationColor_5bA": {
@@ -13880,6 +14162,32 @@
       "value": "hsla({Indication._sapIndicationColor_4b_BorderColorH}, {Indication._sapIndicationColor_4b_BorderColorS}, {Indication._sapIndicationColor_4b_BorderColorL}, {Indication._sapIndicationColor_4b_BorderColorA})",
       "type": "color",
       "description": "The border color for elements showing a less prominent shade of indication 4."
+    },
+    "sapIndicationColor_4b_Background": {
+      "value": "hsla({Indication._sapIndicationColor_4b_BackgroundH}, {Indication._sapIndicationColor_4b_BackgroundS}, {Indication._sapIndicationColor_4b_BackgroundL}, {Indication._sapIndicationColor_4b_BackgroundA})",
+      "type": "color",
+      "description": "The background color for elements showing a less prominent shade of indication 4."
+    },
+    "_sapIndicationColor_4b_TextColorH": {
+      "value": "{Indication._sapIndicationColor_4bH}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_4b_TextColorS": {
+      "value": "{Indication._sapIndicationColor_4bS}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_4b_TextColorL": {
+      "value": "{Indication._sapIndicationColor_4bL} - 53%",
+      "type": "internal"
+    },
+    "_sapIndicationColor_4b_TextColorA": {
+      "value": "{Indication._sapIndicationColor_4bA}",
+      "type": "internal"
+    },
+    "sapIndicationColor_4b_TextColor": {
+      "value": "hsla({Indication._sapIndicationColor_4b_TextColorH}, {Indication._sapIndicationColor_4b_TextColorS}, {Indication._sapIndicationColor_4b_TextColorL}, {Indication._sapIndicationColor_4b_TextColorA})",
+      "type": "color",
+      "description": "The text color for elements showing a less prominent shade of indication 4."
     },
     "_sapIndicationColor_4bH": {
       "value": "122.60869565217394",
@@ -14047,8 +14355,34 @@
       "type": "color",
       "description": "The border color for elements showing a less prominent shade of indication 3."
     },
+    "sapIndicationColor_3b_Background": {
+      "value": "hsla({Indication._sapIndicationColor_3b_BackgroundH}, {Indication._sapIndicationColor_3b_BackgroundS}, {Indication._sapIndicationColor_3b_BackgroundL}, {Indication._sapIndicationColor_3b_BackgroundA})",
+      "type": "color",
+      "description": "The background color for elements showing a less prominent shade of indication 3."
+    },
+    "_sapIndicationColor_3b_TextColorH": {
+      "value": "{Indication._sapIndicationColor_3bH}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_3b_TextColorS": {
+      "value": "{Indication._sapIndicationColor_3bS}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_3b_TextColorL": {
+      "value": "{Indication._sapIndicationColor_3bL} - 56%",
+      "type": "internal"
+    },
+    "_sapIndicationColor_3b_TextColorA": {
+      "value": "{Indication._sapIndicationColor_3bA}",
+      "type": "internal"
+    },
+    "sapIndicationColor_3b_TextColor": {
+      "value": "hsla({Indication._sapIndicationColor_3b_TextColorH}, {Indication._sapIndicationColor_3b_TextColorS}, {Indication._sapIndicationColor_3b_TextColorL}, {Indication._sapIndicationColor_3b_TextColorA})",
+      "type": "color",
+      "description": "The text color for elements showing a less prominent shade of indication 3."
+    },
     "_sapIndicationColor_3bH": {
-      "value": "47.61904761904759",
+      "value": "28",
       "type": "internal"
     },
     "_sapIndicationColor_3bS": {
@@ -14056,7 +14390,7 @@
       "type": "internal"
     },
     "_sapIndicationColor_3bL": {
-      "value": "87.6470588235294%",
+      "value": "88.23529411764706%",
       "type": "internal"
     },
     "_sapIndicationColor_3bA": {
@@ -14229,6 +14563,32 @@
       "type": "color",
       "description": "The border color for elements showing a less prominent shade of indication 2."
     },
+    "sapIndicationColor_2b_Background": {
+      "value": "hsla({Indication._sapIndicationColor_2b_BackgroundH}, {Indication._sapIndicationColor_2b_BackgroundS}, {Indication._sapIndicationColor_2b_BackgroundL}, {Indication._sapIndicationColor_2b_BackgroundA})",
+      "type": "color",
+      "description": "The background color for elements showing a less prominent shade of indication 2."
+    },
+    "_sapIndicationColor_2b_TextColorH": {
+      "value": "{Indication._sapIndicationColor_2bH}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_2b_TextColorS": {
+      "value": "{Indication._sapIndicationColor_2bS} + 1%",
+      "type": "internal"
+    },
+    "_sapIndicationColor_2b_TextColorL": {
+      "value": "{Indication._sapIndicationColor_2bL} - 53%",
+      "type": "internal"
+    },
+    "_sapIndicationColor_2b_TextColorA": {
+      "value": "{Indication._sapIndicationColor_2bA}",
+      "type": "internal"
+    },
+    "sapIndicationColor_2b_TextColor": {
+      "value": "hsla({Indication._sapIndicationColor_2b_TextColorH}, {Indication._sapIndicationColor_2b_TextColorS}, {Indication._sapIndicationColor_2b_TextColorL}, {Indication._sapIndicationColor_2b_TextColorA})",
+      "type": "color",
+      "description": "The text color for elements showing a less prominent shade of indication 2."
+    },
     "_sapIndicationColor_2bH": {
       "value": "0",
       "type": "internal"
@@ -14395,6 +14755,32 @@
       "type": "color",
       "description": "The border color for elements showing a less prominent shade of indication 1."
     },
+    "sapIndicationColor_1b_Background": {
+      "value": "hsla({Indication._sapIndicationColor_1b_BackgroundH}, {Indication._sapIndicationColor_1b_BackgroundS}, {Indication._sapIndicationColor_1b_BackgroundL}, {Indication._sapIndicationColor_1b_BackgroundA})",
+      "type": "color",
+      "description": "The background color for elements showing a less prominent shade of indication 1."
+    },
+    "_sapIndicationColor_1b_TextColorH": {
+      "value": "{Indication._sapIndicationColor_1bH}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_1b_TextColorS": {
+      "value": "{Indication._sapIndicationColor_1bS} - 1%",
+      "type": "internal"
+    },
+    "_sapIndicationColor_1b_TextColorL": {
+      "value": "{Indication._sapIndicationColor_1bL} - 53%",
+      "type": "internal"
+    },
+    "_sapIndicationColor_1b_TextColorA": {
+      "value": "{Indication._sapIndicationColor_1bA}",
+      "type": "internal"
+    },
+    "sapIndicationColor_1b_TextColor": {
+      "value": "hsla({Indication._sapIndicationColor_1b_TextColorH}, {Indication._sapIndicationColor_1b_TextColorS}, {Indication._sapIndicationColor_1b_TextColorL}, {Indication._sapIndicationColor_1b_TextColorA})",
+      "type": "color",
+      "description": "The text color for elements showing a less prominent shade of indication 1."
+    },
     "_sapIndicationColor_1bH": {
       "value": "0",
       "type": "internal"
@@ -14551,6 +14937,22 @@
       "value": "{Indication._sapIndicationColor_10bA}",
       "type": "internal"
     },
+    "_sapIndicationColor_10b_BackgroundH": {
+      "value": "{Indication._sapIndicationColor_10bH}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_10b_BackgroundS": {
+      "value": "{Indication._sapIndicationColor_10bS}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_10b_BackgroundL": {
+      "value": "{Indication._sapIndicationColor_10bL}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_10b_BackgroundA": {
+      "value": "{Indication._sapIndicationColor_10bA}",
+      "type": "internal"
+    },
     "_sapIndicationColor_10_Selected_TextColorH": {
       "value": "{Indication._sapIndicationColor_10_Active_TextColorH}",
       "type": "internal"
@@ -14645,6 +15047,22 @@
     },
     "_sapIndicationColor_10_BorderColorA": {
       "value": "{Indication._sapIndicationColor_10_BackgroundA}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_9b_BackgroundH": {
+      "value": "{Indication._sapIndicationColor_9bH}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_9b_BackgroundS": {
+      "value": "{Indication._sapIndicationColor_9bS}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_9b_BackgroundL": {
+      "value": "{Indication._sapIndicationColor_9bL}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_9b_BackgroundA": {
+      "value": "{Indication._sapIndicationColor_9bA}",
       "type": "internal"
     },
     "_sapIndicationColor_9_Selected_TextColorH": {
@@ -14772,6 +15190,22 @@
       "type": "internal"
     },
     "_sapIndicationColor_8b_BorderColorA": {
+      "value": "{Indication._sapIndicationColor_8bA}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_8b_BackgroundH": {
+      "value": "{Indication._sapIndicationColor_8bH}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_8b_BackgroundS": {
+      "value": "{Indication._sapIndicationColor_8bS}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_8b_BackgroundL": {
+      "value": "{Indication._sapIndicationColor_8bL}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_8b_BackgroundA": {
       "value": "{Indication._sapIndicationColor_8bA}",
       "type": "internal"
     },
@@ -14903,6 +15337,22 @@
       "value": "{Indication._sapIndicationColor_7bA}",
       "type": "internal"
     },
+    "_sapIndicationColor_7b_BackgroundH": {
+      "value": "{Indication._sapIndicationColor_7bH}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_7b_BackgroundS": {
+      "value": "{Indication._sapIndicationColor_7bS}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_7b_BackgroundL": {
+      "value": "{Indication._sapIndicationColor_7bL}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_7b_BackgroundA": {
+      "value": "{Indication._sapIndicationColor_7bA}",
+      "type": "internal"
+    },
     "_sapIndicationColor_7_Selected_TextColorH": {
       "value": "{Indication._sapIndicationColor_7_Active_TextColorH}",
       "type": "internal"
@@ -15028,6 +15478,22 @@
       "type": "internal"
     },
     "_sapIndicationColor_6b_BorderColorA": {
+      "value": "{Indication._sapIndicationColor_6bA}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_6b_BackgroundH": {
+      "value": "{Indication._sapIndicationColor_6bH}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_6b_BackgroundS": {
+      "value": "{Indication._sapIndicationColor_6bS}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_6b_BackgroundL": {
+      "value": "{Indication._sapIndicationColor_6bL}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_6b_BackgroundA": {
       "value": "{Indication._sapIndicationColor_6bA}",
       "type": "internal"
     },
@@ -15159,6 +15625,22 @@
       "value": "{Indication._sapIndicationColor_5bA}",
       "type": "internal"
     },
+    "_sapIndicationColor_5b_BackgroundH": {
+      "value": "{Indication._sapIndicationColor_5bH}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_5b_BackgroundS": {
+      "value": "{Indication._sapIndicationColor_5bS}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_5b_BackgroundL": {
+      "value": "{Indication._sapIndicationColor_5bL}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_5b_BackgroundA": {
+      "value": "{Indication._sapIndicationColor_5bA}",
+      "type": "internal"
+    },
     "_sapIndicationColor_5_Selected_TextColorH": {
       "value": "{Indication._sapIndicationColor_5_Active_TextColorH}",
       "type": "internal"
@@ -15284,6 +15766,22 @@
       "type": "internal"
     },
     "_sapIndicationColor_4b_BorderColorA": {
+      "value": "{Indication._sapIndicationColor_4bA}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_4b_BackgroundH": {
+      "value": "{Indication._sapIndicationColor_4bH}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_4b_BackgroundS": {
+      "value": "{Indication._sapIndicationColor_4bS}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_4b_BackgroundL": {
+      "value": "{Indication._sapIndicationColor_4bL}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_4b_BackgroundA": {
       "value": "{Indication._sapIndicationColor_4bA}",
       "type": "internal"
     },
@@ -15415,6 +15913,22 @@
       "value": "{Indication._sapIndicationColor_3bA}",
       "type": "internal"
     },
+    "_sapIndicationColor_3b_BackgroundH": {
+      "value": "{Indication._sapIndicationColor_3bH}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_3b_BackgroundS": {
+      "value": "{Indication._sapIndicationColor_3bS}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_3b_BackgroundL": {
+      "value": "{Indication._sapIndicationColor_3bL}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_3b_BackgroundA": {
+      "value": "{Indication._sapIndicationColor_3bA}",
+      "type": "internal"
+    },
     "_sapIndicationColor_3_Selected_TextColorH": {
       "value": "{Indication._sapIndicationColor_3_Active_TextColorH}",
       "type": "internal"
@@ -15524,6 +16038,22 @@
       "type": "internal"
     },
     "_sapIndicationColor_2b_BorderColorA": {
+      "value": "{Indication._sapIndicationColor_2bA}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_2b_BackgroundH": {
+      "value": "{Indication._sapIndicationColor_2bH}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_2b_BackgroundS": {
+      "value": "{Indication._sapIndicationColor_2bS}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_2b_BackgroundL": {
+      "value": "{Indication._sapIndicationColor_2bL}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_2b_BackgroundA": {
       "value": "{Indication._sapIndicationColor_2bA}",
       "type": "internal"
     },
@@ -15652,6 +16182,22 @@
       "type": "internal"
     },
     "_sapIndicationColor_1b_BorderColorA": {
+      "value": "{Indication._sapIndicationColor_1bA}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_1b_BackgroundH": {
+      "value": "{Indication._sapIndicationColor_1bH}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_1b_BackgroundS": {
+      "value": "{Indication._sapIndicationColor_1bS}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_1b_BackgroundL": {
+      "value": "{Indication._sapIndicationColor_1bL}",
+      "type": "internal"
+    },
+    "_sapIndicationColor_1b_BackgroundA": {
       "value": "{Indication._sapIndicationColor_1bA}",
       "type": "internal"
     },
@@ -16191,6 +16737,16 @@
     }
   },
   "Tile": {
+    "sapTile_Active_ContentBackground": {
+      "value": "hsla({Tile._sapTile_Active_ContentBackgroundH}, {Tile._sapTile_Active_ContentBackgroundS}, {Tile._sapTile_Active_ContentBackgroundL}, {Tile._sapTile_Active_ContentBackgroundA})",
+      "type": "color",
+      "description": "The active background color of the content on tiles and cards."
+    },
+    "sapTile_Hover_ContentBackground": {
+      "value": "hsla({Tile._sapTile_Hover_ContentBackgroundH}, {Tile._sapTile_Hover_ContentBackgroundS}, {Tile._sapTile_Hover_ContentBackgroundL}, {Tile._sapTile_Hover_ContentBackgroundA})",
+      "type": "color",
+      "description": "The hover background color of the content on tiles and cards."
+    },
     "_sapTile_OverlayForegroundColorH": {
       "value": "{Text._sapTitleColorH}",
       "type": "internal"
@@ -16363,6 +16919,38 @@
       "type": "color",
       "description": "The background color of tiles and cards."
     },
+    "_sapTile_Active_ContentBackgroundH": {
+      "value": "{Tile._sapTile_BackgroundH}",
+      "type": "internal"
+    },
+    "_sapTile_Active_ContentBackgroundS": {
+      "value": "{Tile._sapTile_BackgroundS}",
+      "type": "internal"
+    },
+    "_sapTile_Active_ContentBackgroundL": {
+      "value": "{Tile._sapTile_BackgroundL}",
+      "type": "internal"
+    },
+    "_sapTile_Active_ContentBackgroundA": {
+      "value": "{Tile._sapTile_BackgroundA}",
+      "type": "internal"
+    },
+    "_sapTile_Hover_ContentBackgroundH": {
+      "value": "{Tile._sapTile_BackgroundH}",
+      "type": "internal"
+    },
+    "_sapTile_Hover_ContentBackgroundS": {
+      "value": "{Tile._sapTile_BackgroundS}",
+      "type": "internal"
+    },
+    "_sapTile_Hover_ContentBackgroundL": {
+      "value": "{Tile._sapTile_BackgroundL}",
+      "type": "internal"
+    },
+    "_sapTile_Hover_ContentBackgroundA": {
+      "value": "{Tile._sapTile_BackgroundA}",
+      "type": "internal"
+    },
     "_sapTile_OverlayBackgroundH": {
       "value": "{Tile._sapTile_BackgroundH}",
       "type": "internal"
@@ -16428,7 +17016,678 @@
       "type": "internal"
     }
   },
+  "Tab": {
+    "Neutral": {
+      "sapTab_Neutral_Selected_Background": {
+        "value": "hsla({Tab.Neutral._sapTab_Neutral_Selected_BackgroundH}, {Tab.Neutral._sapTab_Neutral_Selected_BackgroundS}, {Tab.Neutral._sapTab_Neutral_Selected_BackgroundL}, {Tab.Neutral._sapTab_Neutral_Selected_BackgroundA})",
+        "type": "color",
+        "description": "The background color of selected tabs indicating a neutral state."
+      },
+      "_sapTab_Neutral_Selected_IconColorH": {
+        "value": "{Icon._sapContent_ContrastIconColorH}",
+        "type": "internal"
+      },
+      "_sapTab_Neutral_Selected_IconColorS": {
+        "value": "{Icon._sapContent_ContrastIconColorS}",
+        "type": "internal"
+      },
+      "_sapTab_Neutral_Selected_IconColorL": {
+        "value": "{Icon._sapContent_ContrastIconColorL}",
+        "type": "internal"
+      },
+      "_sapTab_Neutral_Selected_IconColorA": {
+        "value": "{Icon._sapContent_ContrastIconColorA}",
+        "type": "internal"
+      },
+      "sapTab_Neutral_Selected_IconColor": {
+        "value": "hsla({Tab.Neutral._sapTab_Neutral_Selected_IconColorH}, {Tab.Neutral._sapTab_Neutral_Selected_IconColorS}, {Tab.Neutral._sapTab_Neutral_Selected_IconColorL}, {Tab.Neutral._sapTab_Neutral_Selected_IconColorA})",
+        "type": "color",
+        "description": "The icon color of selected tabs indicating a neutral state."
+      },
+      "sapTab_Neutral_Selected_TextColor": {
+        "value": "hsla({Tab.Neutral._sapTab_Neutral_Selected_TextColorH}, {Tab.Neutral._sapTab_Neutral_Selected_TextColorS}, {Tab.Neutral._sapTab_Neutral_Selected_TextColorL}, {Tab.Neutral._sapTab_Neutral_Selected_TextColorA})",
+        "type": "color",
+        "description": "The text color of selected tabs indicating a neutral state."
+      },
+      "_sapTab_Neutral_IconColorH": {
+        "value": "{Semantic.Element._sapNeutralElementColorH}",
+        "type": "internal"
+      },
+      "_sapTab_Neutral_IconColorS": {
+        "value": "{Semantic.Element._sapNeutralElementColorS}",
+        "type": "internal"
+      },
+      "_sapTab_Neutral_IconColorL": {
+        "value": "{Semantic.Element._sapNeutralElementColorL}",
+        "type": "internal"
+      },
+      "_sapTab_Neutral_IconColorA": {
+        "value": "{Semantic.Element._sapNeutralElementColorA}",
+        "type": "internal"
+      },
+      "sapTab_Neutral_IconColor": {
+        "value": "hsla({Tab.Neutral._sapTab_Neutral_IconColorH}, {Tab.Neutral._sapTab_Neutral_IconColorS}, {Tab.Neutral._sapTab_Neutral_IconColorL}, {Tab.Neutral._sapTab_Neutral_IconColorA})",
+        "type": "color",
+        "description": "The icon color of tabs indicating a neutral state."
+      },
+      "sapTab_Neutral_ForegroundColor": {
+        "value": "hsla({Tab.Neutral._sapTab_Neutral_ForegroundColorH}, {Tab.Neutral._sapTab_Neutral_ForegroundColorS}, {Tab.Neutral._sapTab_Neutral_ForegroundColorL}, {Tab.Neutral._sapTab_Neutral_ForegroundColorA})",
+        "type": "color",
+        "description": "The color of foreground elements of tabs indicating a neutral state, e.g. buttons or selection bars."
+      },
+      "sapTab_Neutral_TextColor": {
+        "value": "hsla({Tab.Neutral._sapTab_Neutral_TextColorH}, {Tab.Neutral._sapTab_Neutral_TextColorS}, {Tab.Neutral._sapTab_Neutral_TextColorL}, {Tab.Neutral._sapTab_Neutral_TextColorA})",
+        "type": "color",
+        "description": "The text color of tabs indicating a neutral state."
+      },
+      "_sapTab_Neutral_Selected_BackgroundH": {
+        "value": "{Semantic.Element._sapNeutralElementColorH}",
+        "type": "internal"
+      },
+      "_sapTab_Neutral_Selected_BackgroundS": {
+        "value": "{Semantic.Element._sapNeutralElementColorS}",
+        "type": "internal"
+      },
+      "_sapTab_Neutral_Selected_BackgroundL": {
+        "value": "{Semantic.Element._sapNeutralElementColorL}",
+        "type": "internal"
+      },
+      "_sapTab_Neutral_Selected_BackgroundA": {
+        "value": "{Semantic.Element._sapNeutralElementColorA}",
+        "type": "internal"
+      },
+      "_sapTab_Neutral_Selected_TextColorH": {
+        "value": "{Semantic.Text._sapNeutralTextColorH}",
+        "type": "internal"
+      },
+      "_sapTab_Neutral_Selected_TextColorS": {
+        "value": "{Semantic.Text._sapNeutralTextColorS}",
+        "type": "internal"
+      },
+      "_sapTab_Neutral_Selected_TextColorL": {
+        "value": "{Semantic.Text._sapNeutralTextColorL}",
+        "type": "internal"
+      },
+      "_sapTab_Neutral_Selected_TextColorA": {
+        "value": "{Semantic.Text._sapNeutralTextColorA}",
+        "type": "internal"
+      },
+      "_sapTab_Neutral_ForegroundColorH": {
+        "value": "{Semantic.Element._sapNeutralElementColorH}",
+        "type": "internal"
+      },
+      "_sapTab_Neutral_ForegroundColorS": {
+        "value": "{Semantic.Element._sapNeutralElementColorS}",
+        "type": "internal"
+      },
+      "_sapTab_Neutral_ForegroundColorL": {
+        "value": "{Semantic.Element._sapNeutralElementColorL}",
+        "type": "internal"
+      },
+      "_sapTab_Neutral_ForegroundColorA": {
+        "value": "{Semantic.Element._sapNeutralElementColorA}",
+        "type": "internal"
+      },
+      "_sapTab_Neutral_TextColorH": {
+        "value": "{Semantic.Text._sapNeutralTextColorH}",
+        "type": "internal"
+      },
+      "_sapTab_Neutral_TextColorS": {
+        "value": "{Semantic.Text._sapNeutralTextColorS}",
+        "type": "internal"
+      },
+      "_sapTab_Neutral_TextColorL": {
+        "value": "{Semantic.Text._sapNeutralTextColorL}",
+        "type": "internal"
+      },
+      "_sapTab_Neutral_TextColorA": {
+        "value": "{Semantic.Text._sapNeutralTextColorA}",
+        "type": "internal"
+      }
+    },
+    "Critical": {
+      "sapTab_Critical_Selected_Background": {
+        "value": "hsla({Tab.Critical._sapTab_Critical_Selected_BackgroundH}, {Tab.Critical._sapTab_Critical_Selected_BackgroundS}, {Tab.Critical._sapTab_Critical_Selected_BackgroundL}, {Tab.Critical._sapTab_Critical_Selected_BackgroundA})",
+        "type": "color",
+        "description": "The background color of selected tabs indicating a critical state."
+      },
+      "_sapTab_Critical_Selected_IconColorH": {
+        "value": "{Icon._sapContent_ContrastIconColorH}",
+        "type": "internal"
+      },
+      "_sapTab_Critical_Selected_IconColorS": {
+        "value": "{Icon._sapContent_ContrastIconColorS}",
+        "type": "internal"
+      },
+      "_sapTab_Critical_Selected_IconColorL": {
+        "value": "{Icon._sapContent_ContrastIconColorL}",
+        "type": "internal"
+      },
+      "_sapTab_Critical_Selected_IconColorA": {
+        "value": "{Icon._sapContent_ContrastIconColorA}",
+        "type": "internal"
+      },
+      "sapTab_Critical_Selected_IconColor": {
+        "value": "hsla({Tab.Critical._sapTab_Critical_Selected_IconColorH}, {Tab.Critical._sapTab_Critical_Selected_IconColorS}, {Tab.Critical._sapTab_Critical_Selected_IconColorL}, {Tab.Critical._sapTab_Critical_Selected_IconColorA})",
+        "type": "color",
+        "description": "The icon color of selected tabs indicating a critical state."
+      },
+      "sapTab_Critical_Selected_TextColor": {
+        "value": "hsla({Tab.Critical._sapTab_Critical_Selected_TextColorH}, {Tab.Critical._sapTab_Critical_Selected_TextColorS}, {Tab.Critical._sapTab_Critical_Selected_TextColorL}, {Tab.Critical._sapTab_Critical_Selected_TextColorA})",
+        "type": "color",
+        "description": "The text color of selected tabs indicating a critical state."
+      },
+      "_sapTab_Critical_IconColorH": {
+        "value": "{Semantic.Element._sapCriticalElementColorH}",
+        "type": "internal"
+      },
+      "_sapTab_Critical_IconColorS": {
+        "value": "{Semantic.Element._sapCriticalElementColorS}",
+        "type": "internal"
+      },
+      "_sapTab_Critical_IconColorL": {
+        "value": "{Semantic.Element._sapCriticalElementColorL}",
+        "type": "internal"
+      },
+      "_sapTab_Critical_IconColorA": {
+        "value": "{Semantic.Element._sapCriticalElementColorA}",
+        "type": "internal"
+      },
+      "sapTab_Critical_IconColor": {
+        "value": "hsla({Tab.Critical._sapTab_Critical_IconColorH}, {Tab.Critical._sapTab_Critical_IconColorS}, {Tab.Critical._sapTab_Critical_IconColorL}, {Tab.Critical._sapTab_Critical_IconColorA})",
+        "type": "color",
+        "description": "The icon color of tabs indicating a critical state."
+      },
+      "sapTab_Critical_ForegroundColor": {
+        "value": "hsla({Tab.Critical._sapTab_Critical_ForegroundColorH}, {Tab.Critical._sapTab_Critical_ForegroundColorS}, {Tab.Critical._sapTab_Critical_ForegroundColorL}, {Tab.Critical._sapTab_Critical_ForegroundColorA})",
+        "type": "color",
+        "description": "The color of foreground elements of tabs indicating a critical state, e.g. buttons or selection bars."
+      },
+      "sapTab_Critical_TextColor": {
+        "value": "hsla({Tab.Critical._sapTab_Critical_TextColorH}, {Tab.Critical._sapTab_Critical_TextColorS}, {Tab.Critical._sapTab_Critical_TextColorL}, {Tab.Critical._sapTab_Critical_TextColorA})",
+        "type": "color",
+        "description": "The text color of tabs indicating a critical state."
+      },
+      "_sapTab_Critical_Selected_BackgroundH": {
+        "value": "{Semantic.Element._sapCriticalElementColorH}",
+        "type": "internal"
+      },
+      "_sapTab_Critical_Selected_BackgroundS": {
+        "value": "{Semantic.Element._sapCriticalElementColorS}",
+        "type": "internal"
+      },
+      "_sapTab_Critical_Selected_BackgroundL": {
+        "value": "{Semantic.Element._sapCriticalElementColorL}",
+        "type": "internal"
+      },
+      "_sapTab_Critical_Selected_BackgroundA": {
+        "value": "{Semantic.Element._sapCriticalElementColorA}",
+        "type": "internal"
+      },
+      "_sapTab_Critical_Selected_TextColorH": {
+        "value": "{Semantic.Text._sapCriticalTextColorH}",
+        "type": "internal"
+      },
+      "_sapTab_Critical_Selected_TextColorS": {
+        "value": "{Semantic.Text._sapCriticalTextColorS}",
+        "type": "internal"
+      },
+      "_sapTab_Critical_Selected_TextColorL": {
+        "value": "{Semantic.Text._sapCriticalTextColorL}",
+        "type": "internal"
+      },
+      "_sapTab_Critical_Selected_TextColorA": {
+        "value": "{Semantic.Text._sapCriticalTextColorA}",
+        "type": "internal"
+      },
+      "_sapTab_Critical_ForegroundColorH": {
+        "value": "{Semantic.Element._sapCriticalElementColorH}",
+        "type": "internal"
+      },
+      "_sapTab_Critical_ForegroundColorS": {
+        "value": "{Semantic.Element._sapCriticalElementColorS}",
+        "type": "internal"
+      },
+      "_sapTab_Critical_ForegroundColorL": {
+        "value": "{Semantic.Element._sapCriticalElementColorL}",
+        "type": "internal"
+      },
+      "_sapTab_Critical_ForegroundColorA": {
+        "value": "{Semantic.Element._sapCriticalElementColorA}",
+        "type": "internal"
+      },
+      "_sapTab_Critical_TextColorH": {
+        "value": "{Semantic.Text._sapCriticalTextColorH}",
+        "type": "internal"
+      },
+      "_sapTab_Critical_TextColorS": {
+        "value": "{Semantic.Text._sapCriticalTextColorS}",
+        "type": "internal"
+      },
+      "_sapTab_Critical_TextColorL": {
+        "value": "{Semantic.Text._sapCriticalTextColorL}",
+        "type": "internal"
+      },
+      "_sapTab_Critical_TextColorA": {
+        "value": "{Semantic.Text._sapCriticalTextColorA}",
+        "type": "internal"
+      }
+    },
+    "Negative": {
+      "sapTab_Negative_Selected_Background": {
+        "value": "hsla({Tab.Negative._sapTab_Negative_Selected_BackgroundH}, {Tab.Negative._sapTab_Negative_Selected_BackgroundS}, {Tab.Negative._sapTab_Negative_Selected_BackgroundL}, {Tab.Negative._sapTab_Negative_Selected_BackgroundA})",
+        "type": "color",
+        "description": "The background color of selected tabs indicating a negative state."
+      },
+      "_sapTab_Negative_Selected_IconColorH": {
+        "value": "{Icon._sapContent_ContrastIconColorH}",
+        "type": "internal"
+      },
+      "_sapTab_Negative_Selected_IconColorS": {
+        "value": "{Icon._sapContent_ContrastIconColorS}",
+        "type": "internal"
+      },
+      "_sapTab_Negative_Selected_IconColorL": {
+        "value": "{Icon._sapContent_ContrastIconColorL}",
+        "type": "internal"
+      },
+      "_sapTab_Negative_Selected_IconColorA": {
+        "value": "{Icon._sapContent_ContrastIconColorA}",
+        "type": "internal"
+      },
+      "sapTab_Negative_Selected_IconColor": {
+        "value": "hsla({Tab.Negative._sapTab_Negative_Selected_IconColorH}, {Tab.Negative._sapTab_Negative_Selected_IconColorS}, {Tab.Negative._sapTab_Negative_Selected_IconColorL}, {Tab.Negative._sapTab_Negative_Selected_IconColorA})",
+        "type": "color",
+        "description": "The icon color of selected tabs indicating a negative state."
+      },
+      "sapTab_Negative_Selected_TextColor": {
+        "value": "hsla({Tab.Negative._sapTab_Negative_Selected_TextColorH}, {Tab.Negative._sapTab_Negative_Selected_TextColorS}, {Tab.Negative._sapTab_Negative_Selected_TextColorL}, {Tab.Negative._sapTab_Negative_Selected_TextColorA})",
+        "type": "color",
+        "description": "The text color of selected tabs indicating a negative state."
+      },
+      "_sapTab_Negative_IconColorH": {
+        "value": "{Semantic.Element._sapNegativeElementColorH}",
+        "type": "internal"
+      },
+      "_sapTab_Negative_IconColorS": {
+        "value": "{Semantic.Element._sapNegativeElementColorS}",
+        "type": "internal"
+      },
+      "_sapTab_Negative_IconColorL": {
+        "value": "{Semantic.Element._sapNegativeElementColorL}",
+        "type": "internal"
+      },
+      "_sapTab_Negative_IconColorA": {
+        "value": "{Semantic.Element._sapNegativeElementColorA}",
+        "type": "internal"
+      },
+      "sapTab_Negative_IconColor": {
+        "value": "hsla({Tab.Negative._sapTab_Negative_IconColorH}, {Tab.Negative._sapTab_Negative_IconColorS}, {Tab.Negative._sapTab_Negative_IconColorL}, {Tab.Negative._sapTab_Negative_IconColorA})",
+        "type": "color",
+        "description": "The icon color of tabs indicating a negative state."
+      },
+      "sapTab_Negative_ForegroundColor": {
+        "value": "hsla({Tab.Negative._sapTab_Negative_ForegroundColorH}, {Tab.Negative._sapTab_Negative_ForegroundColorS}, {Tab.Negative._sapTab_Negative_ForegroundColorL}, {Tab.Negative._sapTab_Negative_ForegroundColorA})",
+        "type": "color",
+        "description": "The color of foreground elements of tabs indicating a negative state, e.g. buttons or selection bars."
+      },
+      "sapTab_Negative_TextColor": {
+        "value": "hsla({Tab.Negative._sapTab_Negative_TextColorH}, {Tab.Negative._sapTab_Negative_TextColorS}, {Tab.Negative._sapTab_Negative_TextColorL}, {Tab.Negative._sapTab_Negative_TextColorA})",
+        "type": "color",
+        "description": "The text color of tabs indicating a negative state."
+      },
+      "_sapTab_Negative_Selected_BackgroundH": {
+        "value": "{Semantic.Element._sapNegativeElementColorH}",
+        "type": "internal"
+      },
+      "_sapTab_Negative_Selected_BackgroundS": {
+        "value": "{Semantic.Element._sapNegativeElementColorS}",
+        "type": "internal"
+      },
+      "_sapTab_Negative_Selected_BackgroundL": {
+        "value": "{Semantic.Element._sapNegativeElementColorL}",
+        "type": "internal"
+      },
+      "_sapTab_Negative_Selected_BackgroundA": {
+        "value": "{Semantic.Element._sapNegativeElementColorA}",
+        "type": "internal"
+      },
+      "_sapTab_Negative_Selected_TextColorH": {
+        "value": "{Semantic.Text._sapNegativeTextColorH}",
+        "type": "internal"
+      },
+      "_sapTab_Negative_Selected_TextColorS": {
+        "value": "{Semantic.Text._sapNegativeTextColorS}",
+        "type": "internal"
+      },
+      "_sapTab_Negative_Selected_TextColorL": {
+        "value": "{Semantic.Text._sapNegativeTextColorL}",
+        "type": "internal"
+      },
+      "_sapTab_Negative_Selected_TextColorA": {
+        "value": "{Semantic.Text._sapNegativeTextColorA}",
+        "type": "internal"
+      },
+      "_sapTab_Negative_ForegroundColorH": {
+        "value": "{Semantic.Element._sapNegativeElementColorH}",
+        "type": "internal"
+      },
+      "_sapTab_Negative_ForegroundColorS": {
+        "value": "{Semantic.Element._sapNegativeElementColorS}",
+        "type": "internal"
+      },
+      "_sapTab_Negative_ForegroundColorL": {
+        "value": "{Semantic.Element._sapNegativeElementColorL}",
+        "type": "internal"
+      },
+      "_sapTab_Negative_ForegroundColorA": {
+        "value": "{Semantic.Element._sapNegativeElementColorA}",
+        "type": "internal"
+      },
+      "_sapTab_Negative_TextColorH": {
+        "value": "{Semantic.Text._sapNegativeTextColorH}",
+        "type": "internal"
+      },
+      "_sapTab_Negative_TextColorS": {
+        "value": "{Semantic.Text._sapNegativeTextColorS}",
+        "type": "internal"
+      },
+      "_sapTab_Negative_TextColorL": {
+        "value": "{Semantic.Text._sapNegativeTextColorL}",
+        "type": "internal"
+      },
+      "_sapTab_Negative_TextColorA": {
+        "value": "{Semantic.Text._sapNegativeTextColorA}",
+        "type": "internal"
+      }
+    },
+    "Positive": {
+      "sapTab_Positive_Selected_Background": {
+        "value": "hsla({Tab.Positive._sapTab_Positive_Selected_BackgroundH}, {Tab.Positive._sapTab_Positive_Selected_BackgroundS}, {Tab.Positive._sapTab_Positive_Selected_BackgroundL}, {Tab.Positive._sapTab_Positive_Selected_BackgroundA})",
+        "type": "color",
+        "description": "The background color of selected tabs indicating a positive state."
+      },
+      "_sapTab_Positive_Selected_IconColorH": {
+        "value": "{Icon._sapContent_ContrastIconColorH}",
+        "type": "internal"
+      },
+      "_sapTab_Positive_Selected_IconColorS": {
+        "value": "{Icon._sapContent_ContrastIconColorS}",
+        "type": "internal"
+      },
+      "_sapTab_Positive_Selected_IconColorL": {
+        "value": "{Icon._sapContent_ContrastIconColorL}",
+        "type": "internal"
+      },
+      "_sapTab_Positive_Selected_IconColorA": {
+        "value": "{Icon._sapContent_ContrastIconColorA}",
+        "type": "internal"
+      },
+      "sapTab_Positive_Selected_IconColor": {
+        "value": "hsla({Tab.Positive._sapTab_Positive_Selected_IconColorH}, {Tab.Positive._sapTab_Positive_Selected_IconColorS}, {Tab.Positive._sapTab_Positive_Selected_IconColorL}, {Tab.Positive._sapTab_Positive_Selected_IconColorA})",
+        "type": "color",
+        "description": "The icon color of selected tabs indicating a positive state."
+      },
+      "sapTab_Positive_Selected_TextColor": {
+        "value": "hsla({Tab.Positive._sapTab_Positive_Selected_TextColorH}, {Tab.Positive._sapTab_Positive_Selected_TextColorS}, {Tab.Positive._sapTab_Positive_Selected_TextColorL}, {Tab.Positive._sapTab_Positive_Selected_TextColorA})",
+        "type": "color",
+        "description": "The text color of selected tabs indicating a positive state."
+      },
+      "_sapTab_Positive_IconColorH": {
+        "value": "{Semantic.Element._sapPositiveElementColorH}",
+        "type": "internal"
+      },
+      "_sapTab_Positive_IconColorS": {
+        "value": "{Semantic.Element._sapPositiveElementColorS}",
+        "type": "internal"
+      },
+      "_sapTab_Positive_IconColorL": {
+        "value": "{Semantic.Element._sapPositiveElementColorL}",
+        "type": "internal"
+      },
+      "_sapTab_Positive_IconColorA": {
+        "value": "{Semantic.Element._sapPositiveElementColorA}",
+        "type": "internal"
+      },
+      "sapTab_Positive_IconColor": {
+        "value": "hsla({Tab.Positive._sapTab_Positive_IconColorH}, {Tab.Positive._sapTab_Positive_IconColorS}, {Tab.Positive._sapTab_Positive_IconColorL}, {Tab.Positive._sapTab_Positive_IconColorA})",
+        "type": "color",
+        "description": "The icon color of tabs indicating a positive state."
+      },
+      "sapTab_Positive_ForegroundColor": {
+        "value": "hsla({Tab.Positive._sapTab_Positive_ForegroundColorH}, {Tab.Positive._sapTab_Positive_ForegroundColorS}, {Tab.Positive._sapTab_Positive_ForegroundColorL}, {Tab.Positive._sapTab_Positive_ForegroundColorA})",
+        "type": "color",
+        "description": "The color of foreground elements of tabs indicating a positive state, e.g. buttons or selection bars."
+      },
+      "sapTab_Positive_TextColor": {
+        "value": "hsla({Tab.Positive._sapTab_Positive_TextColorH}, {Tab.Positive._sapTab_Positive_TextColorS}, {Tab.Positive._sapTab_Positive_TextColorL}, {Tab.Positive._sapTab_Positive_TextColorA})",
+        "type": "color",
+        "description": "The text color of tabs indicating a positive state."
+      },
+      "_sapTab_Positive_Selected_BackgroundH": {
+        "value": "{Semantic.Element._sapPositiveElementColorH}",
+        "type": "internal"
+      },
+      "_sapTab_Positive_Selected_BackgroundS": {
+        "value": "{Semantic.Element._sapPositiveElementColorS}",
+        "type": "internal"
+      },
+      "_sapTab_Positive_Selected_BackgroundL": {
+        "value": "{Semantic.Element._sapPositiveElementColorL}",
+        "type": "internal"
+      },
+      "_sapTab_Positive_Selected_BackgroundA": {
+        "value": "{Semantic.Element._sapPositiveElementColorA}",
+        "type": "internal"
+      },
+      "_sapTab_Positive_Selected_TextColorH": {
+        "value": "{Semantic.Text._sapPositiveTextColorH}",
+        "type": "internal"
+      },
+      "_sapTab_Positive_Selected_TextColorS": {
+        "value": "{Semantic.Text._sapPositiveTextColorS}",
+        "type": "internal"
+      },
+      "_sapTab_Positive_Selected_TextColorL": {
+        "value": "{Semantic.Text._sapPositiveTextColorL}",
+        "type": "internal"
+      },
+      "_sapTab_Positive_Selected_TextColorA": {
+        "value": "{Semantic.Text._sapPositiveTextColorA}",
+        "type": "internal"
+      },
+      "_sapTab_Positive_ForegroundColorH": {
+        "value": "{Semantic.Element._sapPositiveElementColorH}",
+        "type": "internal"
+      },
+      "_sapTab_Positive_ForegroundColorS": {
+        "value": "{Semantic.Element._sapPositiveElementColorS}",
+        "type": "internal"
+      },
+      "_sapTab_Positive_ForegroundColorL": {
+        "value": "{Semantic.Element._sapPositiveElementColorL}",
+        "type": "internal"
+      },
+      "_sapTab_Positive_ForegroundColorA": {
+        "value": "{Semantic.Element._sapPositiveElementColorA}",
+        "type": "internal"
+      },
+      "_sapTab_Positive_TextColorH": {
+        "value": "{Semantic.Text._sapPositiveTextColorH}",
+        "type": "internal"
+      },
+      "_sapTab_Positive_TextColorS": {
+        "value": "{Semantic.Text._sapPositiveTextColorS}",
+        "type": "internal"
+      },
+      "_sapTab_Positive_TextColorL": {
+        "value": "{Semantic.Text._sapPositiveTextColorL}",
+        "type": "internal"
+      },
+      "_sapTab_Positive_TextColorA": {
+        "value": "{Semantic.Text._sapPositiveTextColorA}",
+        "type": "internal"
+      }
+    },
+    "sapTab_Selected_Indicator_Dimension": {
+      "value": "0.1875 * {Internal.sapContent_GridSize}",
+      "type": "dimension",
+      "description": "The width, or in the case of vertical tabs the height, of indicators, e.g. bars, of selected tabs."
+    },
+    "sapTab_Selected_Background": {
+      "value": "hsla({Tab._sapTab_Selected_BackgroundH}, {Tab._sapTab_Selected_BackgroundS}, {Tab._sapTab_Selected_BackgroundL}, {Tab._sapTab_Selected_BackgroundA})",
+      "type": "color",
+      "description": "The background color of selected tabs."
+    },
+    "_sapTab_Selected_IconColorH": {
+      "value": "{Icon._sapContent_ContrastIconColorH}",
+      "type": "internal"
+    },
+    "_sapTab_Selected_IconColorS": {
+      "value": "{Icon._sapContent_ContrastIconColorS}",
+      "type": "internal"
+    },
+    "_sapTab_Selected_IconColorL": {
+      "value": "{Icon._sapContent_ContrastIconColorL}",
+      "type": "internal"
+    },
+    "_sapTab_Selected_IconColorA": {
+      "value": "{Icon._sapContent_ContrastIconColorA}",
+      "type": "internal"
+    },
+    "sapTab_Selected_IconColor": {
+      "value": "hsla({Tab._sapTab_Selected_IconColorH}, {Tab._sapTab_Selected_IconColorS}, {Tab._sapTab_Selected_IconColorL}, {Tab._sapTab_Selected_IconColorA})",
+      "type": "color",
+      "description": "The icon color of selected tabs."
+    },
+    "sapTab_Selected_TextColor": {
+      "value": "hsla({Tab._sapTab_Selected_TextColorH}, {Tab._sapTab_Selected_TextColorS}, {Tab._sapTab_Selected_TextColorL}, {Tab._sapTab_Selected_TextColorA})",
+      "type": "color",
+      "description": "The text color of selected tabs."
+    },
+    "sapTab_Background": {
+      "value": "hsla({Tab._sapTab_BackgroundH}, {Tab._sapTab_BackgroundS}, {Tab._sapTab_BackgroundL}, {Tab._sapTab_BackgroundA})",
+      "type": "color",
+      "description": "The background color of tabs."
+    },
+    "_sapTab_IconColorH": {
+      "value": "{Main._sapHighlightColorH}",
+      "type": "internal"
+    },
+    "_sapTab_IconColorS": {
+      "value": "{Main._sapHighlightColorS}",
+      "type": "internal"
+    },
+    "_sapTab_IconColorL": {
+      "value": "{Main._sapHighlightColorL}",
+      "type": "internal"
+    },
+    "_sapTab_IconColorA": {
+      "value": "{Main._sapHighlightColorA}",
+      "type": "internal"
+    },
+    "sapTab_IconColor": {
+      "value": "hsla({Tab._sapTab_IconColorH}, {Tab._sapTab_IconColorS}, {Tab._sapTab_IconColorL}, {Tab._sapTab_IconColorA})",
+      "type": "color",
+      "description": "The icon color of tabs."
+    },
+    "sapTab_ForegroundColor": {
+      "value": "hsla({Tab._sapTab_ForegroundColorH}, {Tab._sapTab_ForegroundColorS}, {Tab._sapTab_ForegroundColorL}, {Tab._sapTab_ForegroundColorA})",
+      "type": "color",
+      "description": "The color of foreground elements of tabs, e.g. buttons or selection bars."
+    },
+    "sapTab_TextColor": {
+      "value": "hsla({Tab._sapTab_TextColorH}, {Tab._sapTab_TextColorS}, {Tab._sapTab_TextColorL}, {Tab._sapTab_TextColorA})",
+      "type": "color",
+      "description": "The text color of tabs."
+    },
+    "_sapTab_Selected_BackgroundH": {
+      "value": "{Interaction._sapSelectedColorH}",
+      "type": "internal"
+    },
+    "_sapTab_Selected_BackgroundS": {
+      "value": "{Interaction._sapSelectedColorS}",
+      "type": "internal"
+    },
+    "_sapTab_Selected_BackgroundL": {
+      "value": "{Interaction._sapSelectedColorL}",
+      "type": "internal"
+    },
+    "_sapTab_Selected_BackgroundA": {
+      "value": "{Interaction._sapSelectedColorA}",
+      "type": "internal"
+    },
+    "_sapTab_Selected_TextColorH": {
+      "value": "{Interaction._sapContent_Selected_ForegroundColorH}",
+      "type": "internal"
+    },
+    "_sapTab_Selected_TextColorS": {
+      "value": "{Interaction._sapContent_Selected_ForegroundColorS}",
+      "type": "internal"
+    },
+    "_sapTab_Selected_TextColorL": {
+      "value": "{Interaction._sapContent_Selected_ForegroundColorL}",
+      "type": "internal"
+    },
+    "_sapTab_Selected_TextColorA": {
+      "value": "{Interaction._sapContent_Selected_ForegroundColorA}",
+      "type": "internal"
+    },
+    "_sapTab_BackgroundH": {
+      "value": "{ObjectHeader._sapObjectHeader_BackgroundH}",
+      "type": "internal"
+    },
+    "_sapTab_BackgroundS": {
+      "value": "{ObjectHeader._sapObjectHeader_BackgroundS}",
+      "type": "internal"
+    },
+    "_sapTab_BackgroundL": {
+      "value": "{ObjectHeader._sapObjectHeader_BackgroundL}",
+      "type": "internal"
+    },
+    "_sapTab_BackgroundA": {
+      "value": "{ObjectHeader._sapObjectHeader_BackgroundA}",
+      "type": "internal"
+    },
+    "_sapTab_ForegroundColorH": {
+      "value": "{Main._sapHighlightColorH}",
+      "type": "internal"
+    },
+    "_sapTab_ForegroundColorS": {
+      "value": "{Main._sapHighlightColorS}",
+      "type": "internal"
+    },
+    "_sapTab_ForegroundColorL": {
+      "value": "{Main._sapHighlightColorL}",
+      "type": "internal"
+    },
+    "_sapTab_ForegroundColorA": {
+      "value": "{Main._sapHighlightColorA}",
+      "type": "internal"
+    },
+    "_sapTab_TextColorH": {
+      "value": "{Text._sapTextColorH}",
+      "type": "internal"
+    },
+    "_sapTab_TextColorS": {
+      "value": "{Text._sapTextColorS}",
+      "type": "internal"
+    },
+    "_sapTab_TextColorL": {
+      "value": "{Text._sapTextColorL}",
+      "type": "internal"
+    },
+    "_sapTab_TextColorA": {
+      "value": "{Text._sapTextColorA}",
+      "type": "internal"
+    }
+  },
   "Container": {
+    "sapBlockLayer_Opacity": {
+      "value": "0.2",
+      "type": "opacity",
+      "description": "The opacity of a block layer background which is e.g. in the back of a dialog."
+    },
     "_sapBlockLayer_BackgroundH": {
       "value": "0",
       "type": "internal"
@@ -16456,7 +17715,7 @@
       "description": "The border radius of popovers."
     },
     "sapGroup_BorderCornerRadius": {
-      "value": "0.5 * {Internal.sapContent_GridSize}",
+      "value": "0.75 * {Internal.sapContent_GridSize}",
       "type": "borderRadius",
       "description": "Defines whether a group has rounded corners."
     },
@@ -16558,6 +17817,11 @@
       "value": "hsla({Container._sapGroup_TitleBackgroundH}, {Container._sapGroup_TitleBackgroundS}, {Container._sapGroup_TitleBackgroundL}, {Container._sapGroup_TitleBackgroundA})",
       "type": "color",
       "description": "The background color of the group header area."
+    },
+    "sapGroup_TitleBorderWidth": {
+      "value": "{Internal.sapElement_BorderWidth}",
+      "type": "borderWidth",
+      "description": "The thickness of the bottom border of the group header area."
     },
     "sapContent_HeaderShadow": {
       "type": "boxShadow",
@@ -18099,6 +19363,34 @@
       }
     }
   },
+  "Message": {
+    "_sapMessage_Button_Hover_BackgroundH": {
+      "value": "{Button.Lite._sapButton_Lite_Hover_BackgroundH}",
+      "type": "internal"
+    },
+    "_sapMessage_Button_Hover_BackgroundS": {
+      "value": "{Button.Lite._sapButton_Lite_Hover_BackgroundS}",
+      "type": "internal"
+    },
+    "_sapMessage_Button_Hover_BackgroundL": {
+      "value": "{Button.Lite._sapButton_Lite_Hover_BackgroundL}",
+      "type": "internal"
+    },
+    "_sapMessage_Button_Hover_BackgroundA": {
+      "value": "(20) / 100",
+      "type": "internal"
+    },
+    "sapMessage_Button_Hover_Background": {
+      "value": "hsla({Message._sapMessage_Button_Hover_BackgroundH}, {Message._sapMessage_Button_Hover_BackgroundS}, {Message._sapMessage_Button_Hover_BackgroundL}, {Message._sapMessage_Button_Hover_BackgroundA})",
+      "type": "color",
+      "description": "The background of hovered buttons in message controls."
+    },
+    "sapMessage_BorderWidth": {
+      "value": "{Internal.sapElement_BorderWidth}",
+      "type": "color",
+      "description": "The border width of message controls."
+    }
+  },
   "Semantic": {
     "Message": {
       "_sapMessage_InformationBorderColorH": {
@@ -18878,6 +20170,16 @@
   },
   "Input": {
     "Information": {
+      "sapField_Selector_InformationBorderStyle": {
+        "value": "solid",
+        "type": "borderStyle",
+        "description": "The border style of selector fields (e.g. Checkboxes) indicating an information status."
+      },
+      "sapField_Selector_Hover_InformationBackground": {
+        "value": "hsla({Input.Information._sapField_Selector_Hover_InformationBackgroundH}, {Input.Information._sapField_Selector_Hover_InformationBackgroundS}, {Input.Information._sapField_Selector_Hover_InformationBackgroundL}, {Input.Information._sapField_Selector_Hover_InformationBackgroundA})",
+        "type": "color",
+        "description": "The background color of selector fields (e.g. Checkboxes) with an information value on hover."
+      },
       "sapField_InformationShadow": {
         "type": "boxShadow",
         "value": [
@@ -18922,6 +20224,22 @@
         "type": "boxShadow",
         "description": "The shadow of an input field indicating an information status on hover."
       },
+      "_sapField_Selector_Hover_InformationBackgroundH": {
+        "value": "{Input.Standard._sapField_Hover_BackgroundH}",
+        "type": "internal"
+      },
+      "_sapField_Selector_Hover_InformationBackgroundS": {
+        "value": "{Input.Standard._sapField_Hover_BackgroundS}",
+        "type": "internal"
+      },
+      "_sapField_Selector_Hover_InformationBackgroundL": {
+        "value": "{Input.Standard._sapField_Hover_BackgroundL}",
+        "type": "internal"
+      },
+      "_sapField_Selector_Hover_InformationBackgroundA": {
+        "value": "{Input.Standard._sapField_Hover_BackgroundA}",
+        "type": "internal"
+      },
       "_sapField_InformationBackgroundH": {
         "value": "{Semantic.Background._sapInformationBackgroundH}",
         "type": "internal"
@@ -18956,6 +20274,16 @@
       }
     },
     "Success": {
+      "sapField_Selector_SuccessBorderStyle": {
+        "value": "solid",
+        "type": "borderStyle",
+        "description": "The border style of selector fields (e.g. Checkboxes) indicating a successful user action."
+      },
+      "sapField_Selector_Hover_SuccessBackground": {
+        "value": "hsla({Input.Success._sapField_Selector_Hover_SuccessBackgroundH}, {Input.Success._sapField_Selector_Hover_SuccessBackgroundS}, {Input.Success._sapField_Selector_Hover_SuccessBackgroundL}, {Input.Success._sapField_Selector_Hover_SuccessBackgroundA})",
+        "type": "color",
+        "description": "The background color of selector fields (e.g. Checkboxes) with an success value on hover."
+      },
       "sapField_SuccessShadow": {
         "type": "boxShadow",
         "value": [
@@ -19000,6 +20328,22 @@
         "type": "boxShadow",
         "description": "The shadow of an input field indicating a successful user action on hover."
       },
+      "_sapField_Selector_Hover_SuccessBackgroundH": {
+        "value": "{Input.Standard._sapField_Hover_BackgroundH}",
+        "type": "internal"
+      },
+      "_sapField_Selector_Hover_SuccessBackgroundS": {
+        "value": "{Input.Standard._sapField_Hover_BackgroundS}",
+        "type": "internal"
+      },
+      "_sapField_Selector_Hover_SuccessBackgroundL": {
+        "value": "{Input.Standard._sapField_Hover_BackgroundL}",
+        "type": "internal"
+      },
+      "_sapField_Selector_Hover_SuccessBackgroundA": {
+        "value": "{Input.Standard._sapField_Hover_BackgroundA}",
+        "type": "internal"
+      },
       "_sapField_SuccessBackgroundH": {
         "value": "{Semantic.Background._sapSuccessBackgroundH}",
         "type": "internal"
@@ -19034,6 +20378,16 @@
       }
     },
     "Warning": {
+      "sapField_Selector_WarningBorderStyle": {
+        "value": "solid",
+        "type": "borderStyle",
+        "description": "The border style of selector fields (e.g. Checkboxes) indicating a warning."
+      },
+      "sapField_Selector_Hover_WarningBackground": {
+        "value": "hsla({Input.Warning._sapField_Selector_Hover_WarningBackgroundH}, {Input.Warning._sapField_Selector_Hover_WarningBackgroundS}, {Input.Warning._sapField_Selector_Hover_WarningBackgroundL}, {Input.Warning._sapField_Selector_Hover_WarningBackgroundA})",
+        "type": "color",
+        "description": "The background color of selector fields (e.g. Checkboxes) with an warning value on hover."
+      },
       "sapField_WarningShadow": {
         "type": "boxShadow",
         "value": [
@@ -19078,6 +20432,22 @@
         "type": "boxShadow",
         "description": "The shadow of an input field indicating a warning on hover."
       },
+      "_sapField_Selector_Hover_WarningBackgroundH": {
+        "value": "{Input.Standard._sapField_Hover_BackgroundH}",
+        "type": "internal"
+      },
+      "_sapField_Selector_Hover_WarningBackgroundS": {
+        "value": "{Input.Standard._sapField_Hover_BackgroundS}",
+        "type": "internal"
+      },
+      "_sapField_Selector_Hover_WarningBackgroundL": {
+        "value": "{Input.Standard._sapField_Hover_BackgroundL}",
+        "type": "internal"
+      },
+      "_sapField_Selector_Hover_WarningBackgroundA": {
+        "value": "{Input.Standard._sapField_Hover_BackgroundA}",
+        "type": "internal"
+      },
       "_sapField_WarningBackgroundH": {
         "value": "{Semantic.Background._sapWarningBackgroundH}",
         "type": "internal"
@@ -19112,6 +20482,16 @@
       }
     },
     "Invalid": {
+      "sapField_Selector_InvalidBorderStyle": {
+        "value": "solid",
+        "type": "borderStyle",
+        "description": "The border style of selector fields (e.g. Checkboxes) with an invalid value."
+      },
+      "sapField_Selector_Hover_InvalidBackground": {
+        "value": "hsla({Input.Invalid._sapField_Selector_Hover_InvalidBackgroundH}, {Input.Invalid._sapField_Selector_Hover_InvalidBackgroundS}, {Input.Invalid._sapField_Selector_Hover_InvalidBackgroundL}, {Input.Invalid._sapField_Selector_Hover_InvalidBackgroundA})",
+        "type": "color",
+        "description": "The background color of selector fields (e.g. Checkboxes) with an invalid value on hover."
+      },
       "sapField_InvalidShadow": {
         "type": "boxShadow",
         "value": [
@@ -19156,6 +20536,22 @@
         "type": "boxShadow",
         "description": "The shadow of an input field with invalid value on hover."
       },
+      "_sapField_Selector_Hover_InvalidBackgroundH": {
+        "value": "{Input.Standard._sapField_Hover_BackgroundH}",
+        "type": "internal"
+      },
+      "_sapField_Selector_Hover_InvalidBackgroundS": {
+        "value": "{Input.Standard._sapField_Hover_BackgroundS}",
+        "type": "internal"
+      },
+      "_sapField_Selector_Hover_InvalidBackgroundL": {
+        "value": "{Input.Standard._sapField_Hover_BackgroundL}",
+        "type": "internal"
+      },
+      "_sapField_Selector_Hover_InvalidBackgroundA": {
+        "value": "{Input.Standard._sapField_Hover_BackgroundA}",
+        "type": "internal"
+      },
       "_sapField_InvalidBackgroundH": {
         "value": "{Semantic.Background._sapErrorBackgroundH}",
         "type": "internal"
@@ -19189,7 +20585,107 @@
         "type": "internal"
       }
     },
+    "Readonly": {
+      "sapField_Selector_ReadOnly_BorderStyle": {
+        "value": "dashed",
+        "type": "borderStyle",
+        "description": "The border style of read-only selector fields (e.g. Checkboxes)."
+      },
+      "sapField_ReadOnly_HelpBackground": {
+        "value": "hsla({Input.Readonly._sapField_ReadOnly_HelpBackgroundH}, {Input.Readonly._sapField_ReadOnly_HelpBackgroundS}, {Input.Readonly._sapField_ReadOnly_HelpBackgroundL}, {Input.Readonly._sapField_ReadOnly_HelpBackgroundA})",
+        "type": "color",
+        "description": "The background color of a read-only input field's value help icon."
+      },
+      "sapField_ReadOnly_BorderStyle": {
+        "value": "{Input.Standard.sapField_BorderStyle}",
+        "type": "borderStyle",
+        "description": "The border style of read-only input fields."
+      },
+      "sapField_ReadOnly_BorderColor": {
+        "value": "hsla({Input.Readonly._sapField_ReadOnly_BorderColorH}, {Input.Readonly._sapField_ReadOnly_BorderColorS}, {Input.Readonly._sapField_ReadOnly_BorderColorL}, {Input.Readonly._sapField_ReadOnly_BorderColorA})",
+        "type": "color",
+        "description": "The color of a read-only input field's borders."
+      },
+      "sapField_ReadOnly_BackgroundStyle": {
+        "value": "0 100% / 0.375rem {Input.Standard.sapField_BorderWidth} repeat-x linear-gradient(90deg, {Input.Readonly.sapField_ReadOnly_BorderColor} 0, {Input.Readonly.sapField_ReadOnly_BorderColor} 0.25rem, transparent 0.25rem) border-box",
+        "type": "asset",
+        "description": "The background style of read-only input fields."
+      },
+      "_sapField_ReadOnly_BackgroundH": {
+        "value": "{Internal._sapPrimary4H}",
+        "type": "internal"
+      },
+      "_sapField_ReadOnly_BackgroundS": {
+        "value": "{Internal._sapPrimary4S}",
+        "type": "internal"
+      },
+      "_sapField_ReadOnly_BackgroundL": {
+        "value": "{Internal._sapPrimary4L} - 4%",
+        "type": "internal"
+      },
+      "_sapField_ReadOnly_BackgroundA": {
+        "value": "{Internal._sapPrimary4A}",
+        "type": "internal"
+      },
+      "sapField_ReadOnly_Background": {
+        "value": "hsla({Input.Readonly._sapField_ReadOnly_BackgroundH}, {Input.Readonly._sapField_ReadOnly_BackgroundS}, {Input.Readonly._sapField_ReadOnly_BackgroundL}, {Input.Readonly._sapField_ReadOnly_BackgroundA})",
+        "type": "color",
+        "description": "The background color of a read-only input field."
+      },
+      "_sapField_ReadOnly_HelpBackgroundH": {
+        "value": "{Input.Readonly._sapField_ReadOnly_BackgroundH}",
+        "type": "internal"
+      },
+      "_sapField_ReadOnly_HelpBackgroundS": {
+        "value": "{Input.Readonly._sapField_ReadOnly_BackgroundS}",
+        "type": "internal"
+      },
+      "_sapField_ReadOnly_HelpBackgroundL": {
+        "value": "{Input.Readonly._sapField_ReadOnly_BackgroundL}",
+        "type": "internal"
+      },
+      "_sapField_ReadOnly_HelpBackgroundA": {
+        "value": "{Input.Readonly._sapField_ReadOnly_BackgroundA}",
+        "type": "internal"
+      },
+      "_sapField_ReadOnly_BorderColorH": {
+        "value": "{Input.Standard._sapField_BorderColorH}",
+        "type": "internal"
+      },
+      "_sapField_ReadOnly_BorderColorS": {
+        "value": "{Input.Standard._sapField_BorderColorS}",
+        "type": "internal"
+      },
+      "_sapField_ReadOnly_BorderColorL": {
+        "value": "{Input.Standard._sapField_BorderColorL}",
+        "type": "internal"
+      },
+      "_sapField_ReadOnly_BorderColorA": {
+        "value": "{Input.Standard._sapField_BorderColorA}",
+        "type": "internal"
+      }
+    },
     "Standard": {
+      "sapField_Selector_BorderStyle": {
+        "value": "solid",
+        "type": "borderStyle",
+        "description": "The border style of selector fields (e.g. Checkboxes)."
+      },
+      "sapField_Picker_BorderWidth": {
+        "value": "0.0625 * {Internal.sapContent_GridSize}",
+        "type": "borderWidth",
+        "description": "The border thickness of content pickers."
+      },
+      "sapField_Picker_BorderColor": {
+        "value": "hsla({Input.Standard._sapField_Picker_BorderColorH}, {Input.Standard._sapField_Picker_BorderColorS}, {Input.Standard._sapField_Picker_BorderColorL}, {Input.Standard._sapField_Picker_BorderColorA})",
+        "type": "color",
+        "description": "The border color of content pickers."
+      },
+      "sapField_Selector_Hover_Background": {
+        "value": "hsla({Input.Standard._sapField_Selector_Hover_BackgroundH}, {Input.Standard._sapField_Selector_Hover_BackgroundS}, {Input.Standard._sapField_Selector_Hover_BackgroundL}, {Input.Standard._sapField_Selector_Hover_BackgroundA})",
+        "type": "color",
+        "description": "The hover background color of selector fields (e.g. Checkboxes and Radio Buttons)."
+      },
       "_sapField_RequiredColorH": {
         "value": "{Accent._sapAccentColor3H}",
         "type": "internal"
@@ -19372,6 +20868,38 @@
         "type": "color",
         "description": "The background color of input fields."
       },
+      "_sapField_Picker_BorderColorH": {
+        "value": "{Input.Standard._sapField_BorderColorH}",
+        "type": "internal"
+      },
+      "_sapField_Picker_BorderColorS": {
+        "value": "{Input.Standard._sapField_BorderColorS}",
+        "type": "internal"
+      },
+      "_sapField_Picker_BorderColorL": {
+        "value": "{Input.Standard._sapField_BorderColorL}",
+        "type": "internal"
+      },
+      "_sapField_Picker_BorderColorA": {
+        "value": "{Input.Standard._sapField_BorderColorA}",
+        "type": "internal"
+      },
+      "_sapField_Selector_Hover_BackgroundH": {
+        "value": "{Interaction._sapContent_Selected_Hover_BackgroundH}",
+        "type": "internal"
+      },
+      "_sapField_Selector_Hover_BackgroundS": {
+        "value": "{Interaction._sapContent_Selected_Hover_BackgroundS}",
+        "type": "internal"
+      },
+      "_sapField_Selector_Hover_BackgroundL": {
+        "value": "{Interaction._sapContent_Selected_Hover_BackgroundL}",
+        "type": "internal"
+      },
+      "_sapField_Selector_Hover_BackgroundA": {
+        "value": "{Interaction._sapContent_Selected_Hover_BackgroundA}",
+        "type": "internal"
+      },
       "_sapField_Focus_HelpBackgroundH": {
         "value": "{Input.Standard._sapField_Focus_BackgroundH}",
         "type": "internal"
@@ -19516,85 +21044,362 @@
         "value": "{Text._sapContent_LabelColorA}",
         "type": "internal"
       }
-    },
-    "Readonly": {
-      "sapField_ReadOnly_HelpBackground": {
-        "value": "hsla({Input.Readonly._sapField_ReadOnly_HelpBackgroundH}, {Input.Readonly._sapField_ReadOnly_HelpBackgroundS}, {Input.Readonly._sapField_ReadOnly_HelpBackgroundL}, {Input.Readonly._sapField_ReadOnly_HelpBackgroundA})",
-        "type": "color",
-        "description": "The background color of a read-only input field's value help icon."
-      },
-      "sapField_ReadOnly_BorderStyle": {
-        "value": "{Input.Standard.sapField_BorderStyle}",
-        "type": "borderStyle",
-        "description": "The border style of read-only input fields."
-      },
-      "sapField_ReadOnly_BorderColor": {
-        "value": "hsla({Input.Readonly._sapField_ReadOnly_BorderColorH}, {Input.Readonly._sapField_ReadOnly_BorderColorS}, {Input.Readonly._sapField_ReadOnly_BorderColorL}, {Input.Readonly._sapField_ReadOnly_BorderColorA})",
-        "type": "color",
-        "description": "The color of a read-only input field's borders."
-      },
-      "sapField_ReadOnly_BackgroundStyle": {
-        "value": "0 100% / 0.375rem {Input.Standard.sapField_BorderWidth} repeat-x linear-gradient(90deg, {Input.Readonly.sapField_ReadOnly_BorderColor} 0, {Input.Readonly.sapField_ReadOnly_BorderColor} 0.25rem, transparent 0.25rem) border-box",
-        "type": "asset",
-        "description": "The background style of read-only input fields."
-      },
-      "_sapField_ReadOnly_BackgroundH": {
-        "value": "{Internal._sapPrimary4H}",
-        "type": "internal"
-      },
-      "_sapField_ReadOnly_BackgroundS": {
-        "value": "{Internal._sapPrimary4S}",
-        "type": "internal"
-      },
-      "_sapField_ReadOnly_BackgroundL": {
-        "value": "{Internal._sapPrimary4L} - 4%",
-        "type": "internal"
-      },
-      "_sapField_ReadOnly_BackgroundA": {
-        "value": "{Internal._sapPrimary4A}",
-        "type": "internal"
-      },
-      "sapField_ReadOnly_Background": {
-        "value": "hsla({Input.Readonly._sapField_ReadOnly_BackgroundH}, {Input.Readonly._sapField_ReadOnly_BackgroundS}, {Input.Readonly._sapField_ReadOnly_BackgroundL}, {Input.Readonly._sapField_ReadOnly_BackgroundA})",
-        "type": "color",
-        "description": "The background color of a read-only input field."
-      },
-      "_sapField_ReadOnly_HelpBackgroundH": {
-        "value": "{Input.Readonly._sapField_ReadOnly_BackgroundH}",
-        "type": "internal"
-      },
-      "_sapField_ReadOnly_HelpBackgroundS": {
-        "value": "{Input.Readonly._sapField_ReadOnly_BackgroundS}",
-        "type": "internal"
-      },
-      "_sapField_ReadOnly_HelpBackgroundL": {
-        "value": "{Input.Readonly._sapField_ReadOnly_BackgroundL}",
-        "type": "internal"
-      },
-      "_sapField_ReadOnly_HelpBackgroundA": {
-        "value": "{Input.Readonly._sapField_ReadOnly_BackgroundA}",
-        "type": "internal"
-      },
-      "_sapField_ReadOnly_BorderColorH": {
-        "value": "{Input.Standard._sapField_BorderColorH}",
-        "type": "internal"
-      },
-      "_sapField_ReadOnly_BorderColorS": {
-        "value": "{Input.Standard._sapField_BorderColorS}",
-        "type": "internal"
-      },
-      "_sapField_ReadOnly_BorderColorL": {
-        "value": "{Input.Standard._sapField_BorderColorL}",
-        "type": "internal"
-      },
-      "_sapField_ReadOnly_BorderColorA": {
-        "value": "{Input.Standard._sapField_BorderColorA}",
-        "type": "internal"
-      }
     }
   },
   "Button": {
+    "Standard": {
+      "sapButton_Segment_BorderCornerRadius": {
+        "value": "{Button.Standard.sapButton_BorderCornerRadius}",
+        "type": "borderRadius",
+        "description": "The border corner radius inside a group of buttons."
+      },
+      "sapButton_Selected_Hover_BorderColor": {
+        "value": "hsla({Button.Standard._sapButton_Selected_Hover_BorderColorH}, {Button.Standard._sapButton_Selected_Hover_BorderColorS}, {Button.Standard._sapButton_Selected_Hover_BorderColorL}, {Button.Standard._sapButton_Selected_Hover_BorderColorA})",
+        "type": "color",
+        "description": "The hover state border color of selected (toggled) buttons."
+      },
+      "_sapButton_Selected_Hover_BackgroundH": {
+        "value": "{Button.Standard._sapButton_Selected_BackgroundH}",
+        "type": "internal"
+      },
+      "_sapButton_Selected_Hover_BackgroundS": {
+        "value": "{Button.Standard._sapButton_Selected_BackgroundS}",
+        "type": "internal"
+      },
+      "_sapButton_Selected_Hover_BackgroundL": {
+        "value": "{Button.Standard._sapButton_Selected_BackgroundL} - 4%",
+        "type": "internal"
+      },
+      "_sapButton_Selected_Hover_BackgroundA": {
+        "value": "{Button.Standard._sapButton_Selected_BackgroundA}",
+        "type": "internal"
+      },
+      "sapButton_Selected_Hover_Background": {
+        "value": "hsla({Button.Standard._sapButton_Selected_Hover_BackgroundH}, {Button.Standard._sapButton_Selected_Hover_BackgroundS}, {Button.Standard._sapButton_Selected_Hover_BackgroundL}, {Button.Standard._sapButton_Selected_Hover_BackgroundA})",
+        "type": "color",
+        "description": "The hover state background color of selected (toggled) buttons."
+      },
+      "_sapButton_Selected_TextColorH": {
+        "value": "{Interaction._sapSelectedColorH}",
+        "type": "internal"
+      },
+      "_sapButton_Selected_TextColorS": {
+        "value": "{Interaction._sapSelectedColorS}",
+        "type": "internal"
+      },
+      "_sapButton_Selected_TextColorL": {
+        "value": "{Interaction._sapSelectedColorL}",
+        "type": "internal"
+      },
+      "_sapButton_Selected_TextColorA": {
+        "value": "{Interaction._sapSelectedColorA}",
+        "type": "internal"
+      },
+      "sapButton_Selected_TextColor": {
+        "value": "hsla({Button.Standard._sapButton_Selected_TextColorH}, {Button.Standard._sapButton_Selected_TextColorS}, {Button.Standard._sapButton_Selected_TextColorL}, {Button.Standard._sapButton_Selected_TextColorA})",
+        "type": "color",
+        "description": "The selected (toggled) state text and icon color of buttons."
+      },
+      "sapButton_Selected_BorderColor": {
+        "value": "hsla({Button.Standard._sapButton_Selected_BorderColorH}, {Button.Standard._sapButton_Selected_BorderColorS}, {Button.Standard._sapButton_Selected_BorderColorL}, {Button.Standard._sapButton_Selected_BorderColorA})",
+        "type": "color",
+        "description": "The selected (toggled) state border color of buttons."
+      },
+      "_sapButton_Selected_BackgroundH": {
+        "value": "{Interaction._sapSelectedColorH}",
+        "type": "internal"
+      },
+      "_sapButton_Selected_BackgroundS": {
+        "value": "{Interaction._sapSelectedColorS}",
+        "type": "internal"
+      },
+      "_sapButton_Selected_BackgroundL": {
+        "value": "{Interaction._sapSelectedColorL} + 54%",
+        "type": "internal"
+      },
+      "_sapButton_Selected_BackgroundA": {
+        "value": "{Interaction._sapSelectedColorA}",
+        "type": "internal"
+      },
+      "sapButton_Selected_Background": {
+        "value": "hsla({Button.Standard._sapButton_Selected_BackgroundH}, {Button.Standard._sapButton_Selected_BackgroundS}, {Button.Standard._sapButton_Selected_BackgroundL}, {Button.Standard._sapButton_Selected_BackgroundA})",
+        "type": "color",
+        "description": "The selected (toggled) state background color of buttons."
+      },
+      "_sapButton_Active_TextColorH": {
+        "value": "{Main._sapHighlightColorH}",
+        "type": "internal"
+      },
+      "_sapButton_Active_TextColorS": {
+        "value": "{Main._sapHighlightColorS}",
+        "type": "internal"
+      },
+      "_sapButton_Active_TextColorL": {
+        "value": "{Main._sapHighlightColorL}",
+        "type": "internal"
+      },
+      "_sapButton_Active_TextColorA": {
+        "value": "{Main._sapHighlightColorA}",
+        "type": "internal"
+      },
+      "sapButton_Active_TextColor": {
+        "value": "hsla({Button.Standard._sapButton_Active_TextColorH}, {Button.Standard._sapButton_Active_TextColorS}, {Button.Standard._sapButton_Active_TextColorL}, {Button.Standard._sapButton_Active_TextColorA})",
+        "type": "color",
+        "description": "The active (down) state text and icon color of buttons."
+      },
+      "sapButton_Active_BorderColor": {
+        "value": "hsla({Button.Standard._sapButton_Active_BorderColorH}, {Button.Standard._sapButton_Active_BorderColorS}, {Button.Standard._sapButton_Active_BorderColorL}, {Button.Standard._sapButton_Active_BorderColorA})",
+        "type": "color",
+        "description": "The active (down) state border color of buttons."
+      },
+      "_sapButton_Active_BackgroundH": {
+        "value": "{Interaction._sapActiveColorH}",
+        "type": "internal"
+      },
+      "_sapButton_Active_BackgroundS": {
+        "value": "{Interaction._sapActiveColorS}",
+        "type": "internal"
+      },
+      "_sapButton_Active_BackgroundL": {
+        "value": "{Interaction._sapActiveColorL} + 11.5%",
+        "type": "internal"
+      },
+      "_sapButton_Active_BackgroundA": {
+        "value": "{Interaction._sapActiveColorA}",
+        "type": "internal"
+      },
+      "sapButton_Active_Background": {
+        "value": "hsla({Button.Standard._sapButton_Active_BackgroundH}, {Button.Standard._sapButton_Active_BackgroundS}, {Button.Standard._sapButton_Active_BackgroundL}, {Button.Standard._sapButton_Active_BackgroundA})",
+        "type": "color",
+        "description": "The active (down) state background color of buttons."
+      },
+      "sapButton_IconColor": {
+        "value": "hsla({Button.Standard._sapButton_IconColorH}, {Button.Standard._sapButton_IconColorS}, {Button.Standard._sapButton_IconColorL}, {Button.Standard._sapButton_IconColorA})",
+        "type": "color",
+        "description": "The color of icons on buttons."
+      },
+      "_sapButton_Hover_TextColorH": {
+        "value": "{Main._sapHighlightColorH}",
+        "type": "internal"
+      },
+      "_sapButton_Hover_TextColorS": {
+        "value": "{Main._sapHighlightColorS}",
+        "type": "internal"
+      },
+      "_sapButton_Hover_TextColorL": {
+        "value": "{Main._sapHighlightColorL}",
+        "type": "internal"
+      },
+      "_sapButton_Hover_TextColorA": {
+        "value": "{Main._sapHighlightColorA}",
+        "type": "internal"
+      },
+      "sapButton_Hover_TextColor": {
+        "value": "hsla({Button.Standard._sapButton_Hover_TextColorH}, {Button.Standard._sapButton_Hover_TextColorS}, {Button.Standard._sapButton_Hover_TextColorL}, {Button.Standard._sapButton_Hover_TextColorA})",
+        "type": "color",
+        "description": "The color of texts and icons on buttons on hover."
+      },
+      "sapButton_Hover_BorderColor": {
+        "value": "hsla({Button.Standard._sapButton_Hover_BorderColorH}, {Button.Standard._sapButton_Hover_BorderColorS}, {Button.Standard._sapButton_Hover_BorderColorL}, {Button.Standard._sapButton_Hover_BorderColorA})",
+        "type": "color",
+        "description": "The color of a button's borders on hover."
+      },
+      "sapButton_Hover_Background": {
+        "value": "hsla({Button.Standard._sapButton_Hover_BackgroundH}, {Button.Standard._sapButton_Hover_BackgroundS}, {Button.Standard._sapButton_Hover_BackgroundL}, {Button.Standard._sapButton_Hover_BackgroundA})",
+        "type": "color",
+        "description": "The background color of buttons on hover."
+      },
+      "sapButton_FontFamily": {
+        "value": "{Text.sapFontSemiboldDuplexFamily}",
+        "type": "fontFamilies",
+        "description": "The font family of buttons."
+      },
+      "_sapButton_TextColorH": {
+        "value": "{Main._sapHighlightColorH}",
+        "type": "internal"
+      },
+      "_sapButton_TextColorS": {
+        "value": "{Main._sapHighlightColorS}",
+        "type": "internal"
+      },
+      "_sapButton_TextColorL": {
+        "value": "{Main._sapHighlightColorL}",
+        "type": "internal"
+      },
+      "_sapButton_TextColorA": {
+        "value": "{Main._sapHighlightColorA}",
+        "type": "internal"
+      },
+      "sapButton_TextColor": {
+        "value": "hsla({Button.Standard._sapButton_TextColorH}, {Button.Standard._sapButton_TextColorS}, {Button.Standard._sapButton_TextColorL}, {Button.Standard._sapButton_TextColorA})",
+        "type": "color",
+        "description": "The color of texts on buttons."
+      },
+      "sapButton_BorderCornerRadius": {
+        "value": "0.5 * {Internal.sapContent_GridSize}",
+        "type": "borderRadius",
+        "description": "Defines whether a button has rounded corners."
+      },
+      "sapButton_BorderWidth": {
+        "value": "{Internal.sapElement_BorderWidth}",
+        "type": "borderWidth",
+        "description": "The thickness of button borders."
+      },
+      "_sapButton_BorderColorH": {
+        "value": "{Application._sapBackgroundColorH}",
+        "type": "internal"
+      },
+      "_sapButton_BorderColorS": {
+        "value": "{Application._sapBackgroundColorS}",
+        "type": "internal"
+      },
+      "_sapButton_BorderColorL": {
+        "value": "{Application._sapBackgroundColorL} - 20%",
+        "type": "internal"
+      },
+      "_sapButton_BorderColorA": {
+        "value": "{Application._sapBackgroundColorA}",
+        "type": "internal"
+      },
+      "sapButton_BorderColor": {
+        "value": "hsla({Button.Standard._sapButton_BorderColorH}, {Button.Standard._sapButton_BorderColorS}, {Button.Standard._sapButton_BorderColorL}, {Button.Standard._sapButton_BorderColorA})",
+        "type": "color",
+        "description": "The color of a button's borders."
+      },
+      "_sapButton_BackgroundH": {
+        "value": "{Application._sapBackgroundColorH}",
+        "type": "internal"
+      },
+      "_sapButton_BackgroundS": {
+        "value": "{Application._sapBackgroundColorS}",
+        "type": "internal"
+      },
+      "_sapButton_BackgroundL": {
+        "value": "{Application._sapBackgroundColorL} + 4%",
+        "type": "internal"
+      },
+      "_sapButton_BackgroundA": {
+        "value": "{Application._sapBackgroundColorA}",
+        "type": "internal"
+      },
+      "sapButton_Background": {
+        "value": "hsla({Button.Standard._sapButton_BackgroundH}, {Button.Standard._sapButton_BackgroundS}, {Button.Standard._sapButton_BackgroundL}, {Button.Standard._sapButton_BackgroundA})",
+        "type": "color",
+        "description": "The background color of buttons."
+      },
+      "_sapButton_Selected_Hover_BorderColorH": {
+        "value": "{Button.Standard._sapButton_Selected_BorderColorH}",
+        "type": "internal"
+      },
+      "_sapButton_Selected_Hover_BorderColorS": {
+        "value": "{Button.Standard._sapButton_Selected_BorderColorS}",
+        "type": "internal"
+      },
+      "_sapButton_Selected_Hover_BorderColorL": {
+        "value": "{Button.Standard._sapButton_Selected_BorderColorL}",
+        "type": "internal"
+      },
+      "_sapButton_Selected_Hover_BorderColorA": {
+        "value": "{Button.Standard._sapButton_Selected_BorderColorA}",
+        "type": "internal"
+      },
+      "_sapButton_Selected_BorderColorH": {
+        "value": "{Interaction._sapSelectedColorH}",
+        "type": "internal"
+      },
+      "_sapButton_Selected_BorderColorS": {
+        "value": "{Interaction._sapSelectedColorS}",
+        "type": "internal"
+      },
+      "_sapButton_Selected_BorderColorL": {
+        "value": "{Interaction._sapSelectedColorL}",
+        "type": "internal"
+      },
+      "_sapButton_Selected_BorderColorA": {
+        "value": "{Interaction._sapSelectedColorA}",
+        "type": "internal"
+      },
+      "_sapButton_Active_BorderColorH": {
+        "value": "{Main._sapHighlightColorH}",
+        "type": "internal"
+      },
+      "_sapButton_Active_BorderColorS": {
+        "value": "{Main._sapHighlightColorS}",
+        "type": "internal"
+      },
+      "_sapButton_Active_BorderColorL": {
+        "value": "{Main._sapHighlightColorL}",
+        "type": "internal"
+      },
+      "_sapButton_Active_BorderColorA": {
+        "value": "{Main._sapHighlightColorA}",
+        "type": "internal"
+      },
+      "_sapButton_IconColorH": {
+        "value": "{Button.Standard._sapButton_TextColorH}",
+        "type": "internal"
+      },
+      "_sapButton_IconColorS": {
+        "value": "{Button.Standard._sapButton_TextColorS}",
+        "type": "internal"
+      },
+      "_sapButton_IconColorL": {
+        "value": "{Button.Standard._sapButton_TextColorL}",
+        "type": "internal"
+      },
+      "_sapButton_IconColorA": {
+        "value": "{Button.Standard._sapButton_TextColorA}",
+        "type": "internal"
+      },
+      "_sapButton_Hover_BorderColorH": {
+        "value": "{Button.Standard._sapButton_BorderColorH}",
+        "type": "internal"
+      },
+      "_sapButton_Hover_BorderColorS": {
+        "value": "{Button.Standard._sapButton_BorderColorS}",
+        "type": "internal"
+      },
+      "_sapButton_Hover_BorderColorL": {
+        "value": "{Button.Standard._sapButton_BorderColorL}",
+        "type": "internal"
+      },
+      "_sapButton_Hover_BorderColorA": {
+        "value": "{Button.Standard._sapButton_BorderColorA}",
+        "type": "internal"
+      },
+      "_sapButton_Hover_BackgroundH": {
+        "value": "{Interaction._sapHoverColorH}",
+        "type": "internal"
+      },
+      "_sapButton_Hover_BackgroundS": {
+        "value": "{Interaction._sapHoverColorS}",
+        "type": "internal"
+      },
+      "_sapButton_Hover_BackgroundL": {
+        "value": "{Interaction._sapHoverColorL}",
+        "type": "internal"
+      },
+      "_sapButton_Hover_BackgroundA": {
+        "value": "{Interaction._sapHoverColorA}",
+        "type": "internal"
+      }
+    },
     "Token": {
+      "sapButton_ReadOnly_TokenBackground": {
+        "value": "hsla({Button.Token._sapButton_ReadOnly_TokenBackgroundH}, {Button.Token._sapButton_ReadOnly_TokenBackgroundS}, {Button.Token._sapButton_ReadOnly_TokenBackgroundL}, {Button.Token._sapButton_ReadOnly_TokenBackgroundA})",
+        "type": "color",
+        "description": "Defines the background color of a readonly a token."
+      },
+      "sapButton_Selected_TokenBorderWidth": {
+        "value": "0.125 * {Internal.sapContent_GridSize}",
+        "type": "borderWidth",
+        "description": "Defines the thickness of the border of a token."
+      },
+      "sapButton_TokenBorderCornerRadius": {
+        "value": "0.375 * {Internal.sapContent_GridSize}",
+        "type": "borderRadius",
+        "description": "Defines the corner radius of a token."
+      },
       "sapButton_TokenBorderColor": {
         "value": "hsla({Button.Token._sapButton_TokenBorderColorH}, {Button.Token._sapButton_TokenBorderColorS}, {Button.Token._sapButton_TokenBorderColorL}, {Button.Token._sapButton_TokenBorderColorA})",
         "type": "color",
@@ -19604,6 +21409,22 @@
         "value": "hsla({Button.Token._sapButton_TokenBackgroundH}, {Button.Token._sapButton_TokenBackgroundS}, {Button.Token._sapButton_TokenBackgroundL}, {Button.Token._sapButton_TokenBackgroundA})",
         "type": "color",
         "description": "The background color of token buttons."
+      },
+      "_sapButton_ReadOnly_TokenBackgroundH": {
+        "value": "{Button.Token._sapButton_TokenBackgroundH}",
+        "type": "internal"
+      },
+      "_sapButton_ReadOnly_TokenBackgroundS": {
+        "value": "{Button.Token._sapButton_TokenBackgroundS}",
+        "type": "internal"
+      },
+      "_sapButton_ReadOnly_TokenBackgroundL": {
+        "value": "{Button.Token._sapButton_TokenBackgroundL}",
+        "type": "internal"
+      },
+      "_sapButton_ReadOnly_TokenBackgroundA": {
+        "value": "{Button.Token._sapButton_TokenBackgroundA}",
+        "type": "internal"
       },
       "_sapButton_TokenBorderColorH": {
         "value": "{Button.Standard._sapButton_BorderColorH}",
@@ -21731,333 +23552,6 @@
         "type": "internal"
       }
     },
-    "Standard": {
-      "sapButton_Selected_Hover_BorderColor": {
-        "value": "hsla({Button.Standard._sapButton_Selected_Hover_BorderColorH}, {Button.Standard._sapButton_Selected_Hover_BorderColorS}, {Button.Standard._sapButton_Selected_Hover_BorderColorL}, {Button.Standard._sapButton_Selected_Hover_BorderColorA})",
-        "type": "color",
-        "description": "The hover state border color of selected (toggled) buttons."
-      },
-      "_sapButton_Selected_Hover_BackgroundH": {
-        "value": "{Button.Standard._sapButton_Selected_BackgroundH}",
-        "type": "internal"
-      },
-      "_sapButton_Selected_Hover_BackgroundS": {
-        "value": "{Button.Standard._sapButton_Selected_BackgroundS}",
-        "type": "internal"
-      },
-      "_sapButton_Selected_Hover_BackgroundL": {
-        "value": "{Button.Standard._sapButton_Selected_BackgroundL} - 4%",
-        "type": "internal"
-      },
-      "_sapButton_Selected_Hover_BackgroundA": {
-        "value": "{Button.Standard._sapButton_Selected_BackgroundA}",
-        "type": "internal"
-      },
-      "sapButton_Selected_Hover_Background": {
-        "value": "hsla({Button.Standard._sapButton_Selected_Hover_BackgroundH}, {Button.Standard._sapButton_Selected_Hover_BackgroundS}, {Button.Standard._sapButton_Selected_Hover_BackgroundL}, {Button.Standard._sapButton_Selected_Hover_BackgroundA})",
-        "type": "color",
-        "description": "The hover state background color of selected (toggled) buttons."
-      },
-      "_sapButton_Selected_TextColorH": {
-        "value": "{Interaction._sapSelectedColorH}",
-        "type": "internal"
-      },
-      "_sapButton_Selected_TextColorS": {
-        "value": "{Interaction._sapSelectedColorS}",
-        "type": "internal"
-      },
-      "_sapButton_Selected_TextColorL": {
-        "value": "{Interaction._sapSelectedColorL}",
-        "type": "internal"
-      },
-      "_sapButton_Selected_TextColorA": {
-        "value": "{Interaction._sapSelectedColorA}",
-        "type": "internal"
-      },
-      "sapButton_Selected_TextColor": {
-        "value": "hsla({Button.Standard._sapButton_Selected_TextColorH}, {Button.Standard._sapButton_Selected_TextColorS}, {Button.Standard._sapButton_Selected_TextColorL}, {Button.Standard._sapButton_Selected_TextColorA})",
-        "type": "color",
-        "description": "The selected (toggled) state text and icon color of buttons."
-      },
-      "sapButton_Selected_BorderColor": {
-        "value": "hsla({Button.Standard._sapButton_Selected_BorderColorH}, {Button.Standard._sapButton_Selected_BorderColorS}, {Button.Standard._sapButton_Selected_BorderColorL}, {Button.Standard._sapButton_Selected_BorderColorA})",
-        "type": "color",
-        "description": "The selected (toggled) state border color of buttons."
-      },
-      "_sapButton_Selected_BackgroundH": {
-        "value": "{Interaction._sapSelectedColorH}",
-        "type": "internal"
-      },
-      "_sapButton_Selected_BackgroundS": {
-        "value": "{Interaction._sapSelectedColorS}",
-        "type": "internal"
-      },
-      "_sapButton_Selected_BackgroundL": {
-        "value": "{Interaction._sapSelectedColorL} + 54%",
-        "type": "internal"
-      },
-      "_sapButton_Selected_BackgroundA": {
-        "value": "{Interaction._sapSelectedColorA}",
-        "type": "internal"
-      },
-      "sapButton_Selected_Background": {
-        "value": "hsla({Button.Standard._sapButton_Selected_BackgroundH}, {Button.Standard._sapButton_Selected_BackgroundS}, {Button.Standard._sapButton_Selected_BackgroundL}, {Button.Standard._sapButton_Selected_BackgroundA})",
-        "type": "color",
-        "description": "The selected (toggled) state background color of buttons."
-      },
-      "_sapButton_Active_TextColorH": {
-        "value": "{Main._sapHighlightColorH}",
-        "type": "internal"
-      },
-      "_sapButton_Active_TextColorS": {
-        "value": "{Main._sapHighlightColorS}",
-        "type": "internal"
-      },
-      "_sapButton_Active_TextColorL": {
-        "value": "{Main._sapHighlightColorL}",
-        "type": "internal"
-      },
-      "_sapButton_Active_TextColorA": {
-        "value": "{Main._sapHighlightColorA}",
-        "type": "internal"
-      },
-      "sapButton_Active_TextColor": {
-        "value": "hsla({Button.Standard._sapButton_Active_TextColorH}, {Button.Standard._sapButton_Active_TextColorS}, {Button.Standard._sapButton_Active_TextColorL}, {Button.Standard._sapButton_Active_TextColorA})",
-        "type": "color",
-        "description": "The active (down) state text and icon color of buttons."
-      },
-      "sapButton_Active_BorderColor": {
-        "value": "hsla({Button.Standard._sapButton_Active_BorderColorH}, {Button.Standard._sapButton_Active_BorderColorS}, {Button.Standard._sapButton_Active_BorderColorL}, {Button.Standard._sapButton_Active_BorderColorA})",
-        "type": "color",
-        "description": "The active (down) state border color of buttons."
-      },
-      "_sapButton_Active_BackgroundH": {
-        "value": "{Interaction._sapActiveColorH}",
-        "type": "internal"
-      },
-      "_sapButton_Active_BackgroundS": {
-        "value": "{Interaction._sapActiveColorS}",
-        "type": "internal"
-      },
-      "_sapButton_Active_BackgroundL": {
-        "value": "{Interaction._sapActiveColorL} + 11.5%",
-        "type": "internal"
-      },
-      "_sapButton_Active_BackgroundA": {
-        "value": "{Interaction._sapActiveColorA}",
-        "type": "internal"
-      },
-      "sapButton_Active_Background": {
-        "value": "hsla({Button.Standard._sapButton_Active_BackgroundH}, {Button.Standard._sapButton_Active_BackgroundS}, {Button.Standard._sapButton_Active_BackgroundL}, {Button.Standard._sapButton_Active_BackgroundA})",
-        "type": "color",
-        "description": "The active (down) state background color of buttons."
-      },
-      "sapButton_IconColor": {
-        "value": "hsla({Button.Standard._sapButton_IconColorH}, {Button.Standard._sapButton_IconColorS}, {Button.Standard._sapButton_IconColorL}, {Button.Standard._sapButton_IconColorA})",
-        "type": "color",
-        "description": "The color of icons on buttons."
-      },
-      "_sapButton_Hover_TextColorH": {
-        "value": "{Main._sapHighlightColorH}",
-        "type": "internal"
-      },
-      "_sapButton_Hover_TextColorS": {
-        "value": "{Main._sapHighlightColorS}",
-        "type": "internal"
-      },
-      "_sapButton_Hover_TextColorL": {
-        "value": "{Main._sapHighlightColorL}",
-        "type": "internal"
-      },
-      "_sapButton_Hover_TextColorA": {
-        "value": "{Main._sapHighlightColorA}",
-        "type": "internal"
-      },
-      "sapButton_Hover_TextColor": {
-        "value": "hsla({Button.Standard._sapButton_Hover_TextColorH}, {Button.Standard._sapButton_Hover_TextColorS}, {Button.Standard._sapButton_Hover_TextColorL}, {Button.Standard._sapButton_Hover_TextColorA})",
-        "type": "color",
-        "description": "The color of texts and icons on buttons on hover."
-      },
-      "sapButton_Hover_BorderColor": {
-        "value": "hsla({Button.Standard._sapButton_Hover_BorderColorH}, {Button.Standard._sapButton_Hover_BorderColorS}, {Button.Standard._sapButton_Hover_BorderColorL}, {Button.Standard._sapButton_Hover_BorderColorA})",
-        "type": "color",
-        "description": "The color of a button's borders on hover."
-      },
-      "sapButton_Hover_Background": {
-        "value": "hsla({Button.Standard._sapButton_Hover_BackgroundH}, {Button.Standard._sapButton_Hover_BackgroundS}, {Button.Standard._sapButton_Hover_BackgroundL}, {Button.Standard._sapButton_Hover_BackgroundA})",
-        "type": "color",
-        "description": "The background color of buttons on hover."
-      },
-      "_sapButton_TextColorH": {
-        "value": "{Main._sapHighlightColorH}",
-        "type": "internal"
-      },
-      "_sapButton_TextColorS": {
-        "value": "{Main._sapHighlightColorS}",
-        "type": "internal"
-      },
-      "_sapButton_TextColorL": {
-        "value": "{Main._sapHighlightColorL}",
-        "type": "internal"
-      },
-      "_sapButton_TextColorA": {
-        "value": "{Main._sapHighlightColorA}",
-        "type": "internal"
-      },
-      "sapButton_TextColor": {
-        "value": "hsla({Button.Standard._sapButton_TextColorH}, {Button.Standard._sapButton_TextColorS}, {Button.Standard._sapButton_TextColorL}, {Button.Standard._sapButton_TextColorA})",
-        "type": "color",
-        "description": "The color of texts on buttons."
-      },
-      "sapButton_BorderCornerRadius": {
-        "value": "0.5 * {Internal.sapContent_GridSize}",
-        "type": "borderRadius",
-        "description": "Defines whether a button has rounded corners."
-      },
-      "sapButton_BorderWidth": {
-        "value": "{Internal.sapElement_BorderWidth}",
-        "type": "borderWidth",
-        "description": "The thickness of button borders."
-      },
-      "_sapButton_BorderColorH": {
-        "value": "{Application._sapBackgroundColorH}",
-        "type": "internal"
-      },
-      "_sapButton_BorderColorS": {
-        "value": "{Application._sapBackgroundColorS}",
-        "type": "internal"
-      },
-      "_sapButton_BorderColorL": {
-        "value": "{Application._sapBackgroundColorL} - 20%",
-        "type": "internal"
-      },
-      "_sapButton_BorderColorA": {
-        "value": "{Application._sapBackgroundColorA}",
-        "type": "internal"
-      },
-      "sapButton_BorderColor": {
-        "value": "hsla({Button.Standard._sapButton_BorderColorH}, {Button.Standard._sapButton_BorderColorS}, {Button.Standard._sapButton_BorderColorL}, {Button.Standard._sapButton_BorderColorA})",
-        "type": "color",
-        "description": "The color of a button's borders."
-      },
-      "_sapButton_BackgroundH": {
-        "value": "{Application._sapBackgroundColorH}",
-        "type": "internal"
-      },
-      "_sapButton_BackgroundS": {
-        "value": "{Application._sapBackgroundColorS}",
-        "type": "internal"
-      },
-      "_sapButton_BackgroundL": {
-        "value": "{Application._sapBackgroundColorL} + 4%",
-        "type": "internal"
-      },
-      "_sapButton_BackgroundA": {
-        "value": "{Application._sapBackgroundColorA}",
-        "type": "internal"
-      },
-      "sapButton_Background": {
-        "value": "hsla({Button.Standard._sapButton_BackgroundH}, {Button.Standard._sapButton_BackgroundS}, {Button.Standard._sapButton_BackgroundL}, {Button.Standard._sapButton_BackgroundA})",
-        "type": "color",
-        "description": "The background color of buttons."
-      },
-      "_sapButton_Selected_Hover_BorderColorH": {
-        "value": "{Button.Standard._sapButton_Selected_BorderColorH}",
-        "type": "internal"
-      },
-      "_sapButton_Selected_Hover_BorderColorS": {
-        "value": "{Button.Standard._sapButton_Selected_BorderColorS}",
-        "type": "internal"
-      },
-      "_sapButton_Selected_Hover_BorderColorL": {
-        "value": "{Button.Standard._sapButton_Selected_BorderColorL}",
-        "type": "internal"
-      },
-      "_sapButton_Selected_Hover_BorderColorA": {
-        "value": "{Button.Standard._sapButton_Selected_BorderColorA}",
-        "type": "internal"
-      },
-      "_sapButton_Selected_BorderColorH": {
-        "value": "{Interaction._sapSelectedColorH}",
-        "type": "internal"
-      },
-      "_sapButton_Selected_BorderColorS": {
-        "value": "{Interaction._sapSelectedColorS}",
-        "type": "internal"
-      },
-      "_sapButton_Selected_BorderColorL": {
-        "value": "{Interaction._sapSelectedColorL}",
-        "type": "internal"
-      },
-      "_sapButton_Selected_BorderColorA": {
-        "value": "{Interaction._sapSelectedColorA}",
-        "type": "internal"
-      },
-      "_sapButton_Active_BorderColorH": {
-        "value": "{Main._sapHighlightColorH}",
-        "type": "internal"
-      },
-      "_sapButton_Active_BorderColorS": {
-        "value": "{Main._sapHighlightColorS}",
-        "type": "internal"
-      },
-      "_sapButton_Active_BorderColorL": {
-        "value": "{Main._sapHighlightColorL}",
-        "type": "internal"
-      },
-      "_sapButton_Active_BorderColorA": {
-        "value": "{Main._sapHighlightColorA}",
-        "type": "internal"
-      },
-      "_sapButton_IconColorH": {
-        "value": "{Button.Standard._sapButton_TextColorH}",
-        "type": "internal"
-      },
-      "_sapButton_IconColorS": {
-        "value": "{Button.Standard._sapButton_TextColorS}",
-        "type": "internal"
-      },
-      "_sapButton_IconColorL": {
-        "value": "{Button.Standard._sapButton_TextColorL}",
-        "type": "internal"
-      },
-      "_sapButton_IconColorA": {
-        "value": "{Button.Standard._sapButton_TextColorA}",
-        "type": "internal"
-      },
-      "_sapButton_Hover_BorderColorH": {
-        "value": "{Button.Standard._sapButton_BorderColorH}",
-        "type": "internal"
-      },
-      "_sapButton_Hover_BorderColorS": {
-        "value": "{Button.Standard._sapButton_BorderColorS}",
-        "type": "internal"
-      },
-      "_sapButton_Hover_BorderColorL": {
-        "value": "{Button.Standard._sapButton_BorderColorL}",
-        "type": "internal"
-      },
-      "_sapButton_Hover_BorderColorA": {
-        "value": "{Button.Standard._sapButton_BorderColorA}",
-        "type": "internal"
-      },
-      "_sapButton_Hover_BackgroundH": {
-        "value": "{Interaction._sapHoverColorH}",
-        "type": "internal"
-      },
-      "_sapButton_Hover_BackgroundS": {
-        "value": "{Interaction._sapHoverColorS}",
-        "type": "internal"
-      },
-      "_sapButton_Hover_BackgroundL": {
-        "value": "{Interaction._sapHoverColorL}",
-        "type": "internal"
-      },
-      "_sapButton_Hover_BackgroundA": {
-        "value": "{Interaction._sapHoverColorA}",
-        "type": "internal"
-      }
-    },
     "Lite": {
       "sapButton_Lite_Active_BorderColor": {
         "value": "hsla({Button.Lite._sapButton_Lite_Active_BorderColorH}, {Button.Lite._sapButton_Lite_Active_BorderColorS}, {Button.Lite._sapButton_Lite_Active_BorderColorL}, {Button.Lite._sapButton_Lite_Active_BorderColorA})",
@@ -22941,6 +24435,11 @@
         "type": "color",
         "description": "The hover state background color of emphasized buttons."
       },
+      "sapButton_Emphasized_FontFamily": {
+        "value": "{Text.sapFontBoldFamily}",
+        "type": "fontFamilies",
+        "description": "The font family of emphasized buttons."
+      },
       "_sapButton_Emphasized_TextColorH": {
         "value": "{Text._sapContent_ContrastTextColorH}",
         "type": "internal"
@@ -22961,6 +24460,11 @@
         "value": "hsla({Button.Emphasized._sapButton_Emphasized_TextColorH}, {Button.Emphasized._sapButton_Emphasized_TextColorS}, {Button.Emphasized._sapButton_Emphasized_TextColorL}, {Button.Emphasized._sapButton_Emphasized_TextColorA})",
         "type": "color",
         "description": "The color of texts and icons on emphasized buttons."
+      },
+      "sapButton_Emphasized_BorderWidth": {
+        "value": "{Internal.sapElement_BorderWidth}",
+        "type": "borderWidth",
+        "description": "The border width of emphasized buttons."
       },
       "sapButton_Emphasized_BorderColor": {
         "value": "hsla({Button.Emphasized._sapButton_Emphasized_BorderColorH}, {Button.Emphasized._sapButton_Emphasized_BorderColorS}, {Button.Emphasized._sapButton_Emphasized_BorderColorL}, {Button.Emphasized._sapButton_Emphasized_BorderColorA})",
@@ -23039,6 +24543,74 @@
     }
   },
   "Avatar": {
+    "_sapAvatar_Hover_BorderColorH": {
+      "value": "{Input.Standard._sapField_BorderColorH}",
+      "type": "internal"
+    },
+    "_sapAvatar_Hover_BorderColorS": {
+      "value": "{Input.Standard._sapField_BorderColorS}",
+      "type": "internal"
+    },
+    "_sapAvatar_Hover_BorderColorL": {
+      "value": "{Input.Standard._sapField_BorderColorL}",
+      "type": "internal"
+    },
+    "_sapAvatar_Hover_BorderColorA": {
+      "value": "(25) / 100",
+      "type": "internal"
+    },
+    "sapAvatar_Hover_BorderColor": {
+      "value": "hsla({Avatar._sapAvatar_Hover_BorderColorH}, {Avatar._sapAvatar_Hover_BorderColorS}, {Avatar._sapAvatar_Hover_BorderColorL}, {Avatar._sapAvatar_Hover_BorderColorA})",
+      "type": "color",
+      "description": "The hover border color of the avatar."
+    },
+    "_sapAvatar_Lite_BackgroundH": {
+      "value": "0",
+      "type": "internal"
+    },
+    "_sapAvatar_Lite_BackgroundS": {
+      "value": "0%",
+      "type": "internal"
+    },
+    "_sapAvatar_Lite_BackgroundL": {
+      "value": "0%",
+      "type": "internal"
+    },
+    "_sapAvatar_Lite_BackgroundA": {
+      "value": "0",
+      "type": "internal"
+    },
+    "sapAvatar_Lite_Background": {
+      "value": "hsla({Avatar._sapAvatar_Lite_BackgroundH}, {Avatar._sapAvatar_Lite_BackgroundS}, {Avatar._sapAvatar_Lite_BackgroundL}, {Avatar._sapAvatar_Lite_BackgroundA})",
+      "type": "color",
+      "description": "The background color of transparent (lite) avatars."
+    },
+    "_sapAvatar_Lite_BorderColorH": {
+      "value": "0",
+      "type": "internal"
+    },
+    "_sapAvatar_Lite_BorderColorS": {
+      "value": "0%",
+      "type": "internal"
+    },
+    "_sapAvatar_Lite_BorderColorL": {
+      "value": "0%",
+      "type": "internal"
+    },
+    "_sapAvatar_Lite_BorderColorA": {
+      "value": "0",
+      "type": "internal"
+    },
+    "sapAvatar_Lite_BorderColor": {
+      "value": "hsla({Avatar._sapAvatar_Lite_BorderColorH}, {Avatar._sapAvatar_Lite_BorderColorS}, {Avatar._sapAvatar_Lite_BorderColorL}, {Avatar._sapAvatar_Lite_BorderColorA})",
+      "type": "color",
+      "description": "The border color of transparent (lite) avatars."
+    },
+    "sapAvatar_10_Hover_Background": {
+      "value": "hsla({Avatar._sapAvatar_10_Hover_BackgroundH}, {Avatar._sapAvatar_10_Hover_BackgroundS}, {Avatar._sapAvatar_10_Hover_BackgroundL}, {Avatar._sapAvatar_10_Hover_BackgroundA})",
+      "type": "color",
+      "description": "The background color of hovered type-10 avatars."
+    },
     "_sapAvatar_10_TextColorH": {
       "value": "{Accent._sapAccentColor10H}",
       "type": "internal"
@@ -23085,6 +24657,11 @@
       "value": "hsla({Avatar._sapAvatar_10_BackgroundH}, {Avatar._sapAvatar_10_BackgroundS}, {Avatar._sapAvatar_10_BackgroundL}, {Avatar._sapAvatar_10_BackgroundA})",
       "type": "color",
       "description": "The background color of type-10 avatars."
+    },
+    "sapAvatar_9_Hover_Background": {
+      "value": "hsla({Avatar._sapAvatar_9_Hover_BackgroundH}, {Avatar._sapAvatar_9_Hover_BackgroundS}, {Avatar._sapAvatar_9_Hover_BackgroundL}, {Avatar._sapAvatar_9_Hover_BackgroundA})",
+      "type": "color",
+      "description": "The background color of hovered type-9 avatars."
     },
     "_sapAvatar_9_TextColorH": {
       "value": "{Accent._sapAccentColor9H}",
@@ -23133,6 +24710,11 @@
       "type": "color",
       "description": "The background color of type-9 avatars."
     },
+    "sapAvatar_8_Hover_Background": {
+      "value": "hsla({Avatar._sapAvatar_8_Hover_BackgroundH}, {Avatar._sapAvatar_8_Hover_BackgroundS}, {Avatar._sapAvatar_8_Hover_BackgroundL}, {Avatar._sapAvatar_8_Hover_BackgroundA})",
+      "type": "color",
+      "description": "The background color of hovered type-8 avatars."
+    },
     "_sapAvatar_8_TextColorH": {
       "value": "{Accent._sapAccentColor8H}",
       "type": "internal"
@@ -23179,6 +24761,11 @@
       "value": "hsla({Avatar._sapAvatar_8_BackgroundH}, {Avatar._sapAvatar_8_BackgroundS}, {Avatar._sapAvatar_8_BackgroundL}, {Avatar._sapAvatar_8_BackgroundA})",
       "type": "color",
       "description": "The background color of type-8 avatars."
+    },
+    "sapAvatar_7_Hover_Background": {
+      "value": "hsla({Avatar._sapAvatar_7_Hover_BackgroundH}, {Avatar._sapAvatar_7_Hover_BackgroundS}, {Avatar._sapAvatar_7_Hover_BackgroundL}, {Avatar._sapAvatar_7_Hover_BackgroundA})",
+      "type": "color",
+      "description": "The background color of hovered type-7 avatars."
     },
     "_sapAvatar_7_TextColorH": {
       "value": "{Accent._sapAccentColor7H}",
@@ -23227,6 +24814,11 @@
       "type": "color",
       "description": "The background color of type-7 avatars."
     },
+    "sapAvatar_6_Hover_Background": {
+      "value": "hsla({Avatar._sapAvatar_6_Hover_BackgroundH}, {Avatar._sapAvatar_6_Hover_BackgroundS}, {Avatar._sapAvatar_6_Hover_BackgroundL}, {Avatar._sapAvatar_6_Hover_BackgroundA})",
+      "type": "color",
+      "description": "The background color of hovered type-6 avatars."
+    },
     "_sapAvatar_6_TextColorH": {
       "value": "{Accent._sapAccentColor6H}",
       "type": "internal"
@@ -23273,6 +24865,11 @@
       "value": "hsla({Avatar._sapAvatar_6_BackgroundH}, {Avatar._sapAvatar_6_BackgroundS}, {Avatar._sapAvatar_6_BackgroundL}, {Avatar._sapAvatar_6_BackgroundA})",
       "type": "color",
       "description": "The background color of type-6 avatars."
+    },
+    "sapAvatar_5_Hover_Background": {
+      "value": "hsla({Avatar._sapAvatar_5_Hover_BackgroundH}, {Avatar._sapAvatar_5_Hover_BackgroundS}, {Avatar._sapAvatar_5_Hover_BackgroundL}, {Avatar._sapAvatar_5_Hover_BackgroundA})",
+      "type": "color",
+      "description": "The background color of hovered type-5 avatars."
     },
     "_sapAvatar_5_TextColorH": {
       "value": "{Accent._sapAccentColor5H}",
@@ -23321,6 +24918,11 @@
       "type": "color",
       "description": "The background color of type-5 avatars."
     },
+    "sapAvatar_4_Hover_Background": {
+      "value": "hsla({Avatar._sapAvatar_4_Hover_BackgroundH}, {Avatar._sapAvatar_4_Hover_BackgroundS}, {Avatar._sapAvatar_4_Hover_BackgroundL}, {Avatar._sapAvatar_4_Hover_BackgroundA})",
+      "type": "color",
+      "description": "The background color of hovered type-4 avatars."
+    },
     "_sapAvatar_4_TextColorH": {
       "value": "{Accent._sapAccentColor4H}",
       "type": "internal"
@@ -23367,6 +24969,11 @@
       "value": "hsla({Avatar._sapAvatar_4_BackgroundH}, {Avatar._sapAvatar_4_BackgroundS}, {Avatar._sapAvatar_4_BackgroundL}, {Avatar._sapAvatar_4_BackgroundA})",
       "type": "color",
       "description": "The background color of type-4 avatars."
+    },
+    "sapAvatar_3_Hover_Background": {
+      "value": "hsla({Avatar._sapAvatar_3_Hover_BackgroundH}, {Avatar._sapAvatar_3_Hover_BackgroundS}, {Avatar._sapAvatar_3_Hover_BackgroundL}, {Avatar._sapAvatar_3_Hover_BackgroundA})",
+      "type": "color",
+      "description": "The background color of hovered type-3 avatars."
     },
     "_sapAvatar_3_TextColorH": {
       "value": "{Accent._sapAccentColor3H}",
@@ -23415,6 +25022,11 @@
       "type": "color",
       "description": "The background color of type-3 avatars."
     },
+    "sapAvatar_2_Hover_Background": {
+      "value": "hsla({Avatar._sapAvatar_2_Hover_BackgroundH}, {Avatar._sapAvatar_2_Hover_BackgroundS}, {Avatar._sapAvatar_2_Hover_BackgroundL}, {Avatar._sapAvatar_2_Hover_BackgroundA})",
+      "type": "color",
+      "description": "The background color of hovered type-2 avatars."
+    },
     "_sapAvatar_2_TextColorH": {
       "value": "{Accent._sapAccentColor2H}",
       "type": "internal"
@@ -23461,6 +25073,11 @@
       "value": "hsla({Avatar._sapAvatar_2_BackgroundH}, {Avatar._sapAvatar_2_BackgroundS}, {Avatar._sapAvatar_2_BackgroundL}, {Avatar._sapAvatar_2_BackgroundA})",
       "type": "color",
       "description": "The background color of type-2 avatars."
+    },
+    "sapAvatar_1_Hover_Background": {
+      "value": "hsla({Avatar._sapAvatar_1_Hover_BackgroundH}, {Avatar._sapAvatar_1_Hover_BackgroundS}, {Avatar._sapAvatar_1_Hover_BackgroundL}, {Avatar._sapAvatar_1_Hover_BackgroundA})",
+      "type": "color",
+      "description": "The background color of hovered type-1 avatars."
     },
     "_sapAvatar_1_TextColorH": {
       "value": "{Accent._sapAccentColor1H}",
@@ -23509,6 +25126,22 @@
       "type": "color",
       "description": "The background color of type-1 avatars."
     },
+    "_sapAvatar_10_Hover_BackgroundH": {
+      "value": "{Avatar._sapAvatar_10_BackgroundH}",
+      "type": "internal"
+    },
+    "_sapAvatar_10_Hover_BackgroundS": {
+      "value": "{Avatar._sapAvatar_10_BackgroundS}",
+      "type": "internal"
+    },
+    "_sapAvatar_10_Hover_BackgroundL": {
+      "value": "{Avatar._sapAvatar_10_BackgroundL}",
+      "type": "internal"
+    },
+    "_sapAvatar_10_Hover_BackgroundA": {
+      "value": "{Avatar._sapAvatar_10_BackgroundA}",
+      "type": "internal"
+    },
     "_sapAvatar_10_BorderColorH": {
       "value": "{Avatar._sapAvatar_10_BackgroundH}",
       "type": "internal"
@@ -23523,6 +25156,22 @@
     },
     "_sapAvatar_10_BorderColorA": {
       "value": "{Avatar._sapAvatar_10_BackgroundA}",
+      "type": "internal"
+    },
+    "_sapAvatar_9_Hover_BackgroundH": {
+      "value": "{Avatar._sapAvatar_9_BackgroundH}",
+      "type": "internal"
+    },
+    "_sapAvatar_9_Hover_BackgroundS": {
+      "value": "{Avatar._sapAvatar_9_BackgroundS}",
+      "type": "internal"
+    },
+    "_sapAvatar_9_Hover_BackgroundL": {
+      "value": "{Avatar._sapAvatar_9_BackgroundL}",
+      "type": "internal"
+    },
+    "_sapAvatar_9_Hover_BackgroundA": {
+      "value": "{Avatar._sapAvatar_9_BackgroundA}",
       "type": "internal"
     },
     "_sapAvatar_9_BorderColorH": {
@@ -23541,6 +25190,22 @@
       "value": "{Avatar._sapAvatar_9_BackgroundA}",
       "type": "internal"
     },
+    "_sapAvatar_8_Hover_BackgroundH": {
+      "value": "{Avatar._sapAvatar_8_BackgroundH}",
+      "type": "internal"
+    },
+    "_sapAvatar_8_Hover_BackgroundS": {
+      "value": "{Avatar._sapAvatar_8_BackgroundS}",
+      "type": "internal"
+    },
+    "_sapAvatar_8_Hover_BackgroundL": {
+      "value": "{Avatar._sapAvatar_8_BackgroundL}",
+      "type": "internal"
+    },
+    "_sapAvatar_8_Hover_BackgroundA": {
+      "value": "{Avatar._sapAvatar_8_BackgroundA}",
+      "type": "internal"
+    },
     "_sapAvatar_8_BorderColorH": {
       "value": "{Avatar._sapAvatar_8_BackgroundH}",
       "type": "internal"
@@ -23555,6 +25220,22 @@
     },
     "_sapAvatar_8_BorderColorA": {
       "value": "{Avatar._sapAvatar_8_BackgroundA}",
+      "type": "internal"
+    },
+    "_sapAvatar_7_Hover_BackgroundH": {
+      "value": "{Avatar._sapAvatar_7_BackgroundH}",
+      "type": "internal"
+    },
+    "_sapAvatar_7_Hover_BackgroundS": {
+      "value": "{Avatar._sapAvatar_7_BackgroundS}",
+      "type": "internal"
+    },
+    "_sapAvatar_7_Hover_BackgroundL": {
+      "value": "{Avatar._sapAvatar_7_BackgroundL}",
+      "type": "internal"
+    },
+    "_sapAvatar_7_Hover_BackgroundA": {
+      "value": "{Avatar._sapAvatar_7_BackgroundA}",
       "type": "internal"
     },
     "_sapAvatar_7_BorderColorH": {
@@ -23573,6 +25254,22 @@
       "value": "{Avatar._sapAvatar_7_BackgroundA}",
       "type": "internal"
     },
+    "_sapAvatar_6_Hover_BackgroundH": {
+      "value": "{Avatar._sapAvatar_6_BackgroundH}",
+      "type": "internal"
+    },
+    "_sapAvatar_6_Hover_BackgroundS": {
+      "value": "{Avatar._sapAvatar_6_BackgroundS}",
+      "type": "internal"
+    },
+    "_sapAvatar_6_Hover_BackgroundL": {
+      "value": "{Avatar._sapAvatar_6_BackgroundL}",
+      "type": "internal"
+    },
+    "_sapAvatar_6_Hover_BackgroundA": {
+      "value": "{Avatar._sapAvatar_6_BackgroundA}",
+      "type": "internal"
+    },
     "_sapAvatar_6_BorderColorH": {
       "value": "{Avatar._sapAvatar_6_BackgroundH}",
       "type": "internal"
@@ -23587,6 +25284,22 @@
     },
     "_sapAvatar_6_BorderColorA": {
       "value": "{Avatar._sapAvatar_6_BackgroundA}",
+      "type": "internal"
+    },
+    "_sapAvatar_5_Hover_BackgroundH": {
+      "value": "{Avatar._sapAvatar_5_BackgroundH}",
+      "type": "internal"
+    },
+    "_sapAvatar_5_Hover_BackgroundS": {
+      "value": "{Avatar._sapAvatar_5_BackgroundS}",
+      "type": "internal"
+    },
+    "_sapAvatar_5_Hover_BackgroundL": {
+      "value": "{Avatar._sapAvatar_5_BackgroundL}",
+      "type": "internal"
+    },
+    "_sapAvatar_5_Hover_BackgroundA": {
+      "value": "{Avatar._sapAvatar_5_BackgroundA}",
       "type": "internal"
     },
     "_sapAvatar_5_BorderColorH": {
@@ -23605,6 +25318,22 @@
       "value": "{Avatar._sapAvatar_5_BackgroundA}",
       "type": "internal"
     },
+    "_sapAvatar_4_Hover_BackgroundH": {
+      "value": "{Avatar._sapAvatar_4_BackgroundH}",
+      "type": "internal"
+    },
+    "_sapAvatar_4_Hover_BackgroundS": {
+      "value": "{Avatar._sapAvatar_4_BackgroundS}",
+      "type": "internal"
+    },
+    "_sapAvatar_4_Hover_BackgroundL": {
+      "value": "{Avatar._sapAvatar_4_BackgroundL}",
+      "type": "internal"
+    },
+    "_sapAvatar_4_Hover_BackgroundA": {
+      "value": "{Avatar._sapAvatar_4_BackgroundA}",
+      "type": "internal"
+    },
     "_sapAvatar_4_BorderColorH": {
       "value": "{Avatar._sapAvatar_4_BackgroundH}",
       "type": "internal"
@@ -23619,6 +25348,22 @@
     },
     "_sapAvatar_4_BorderColorA": {
       "value": "{Avatar._sapAvatar_4_BackgroundA}",
+      "type": "internal"
+    },
+    "_sapAvatar_3_Hover_BackgroundH": {
+      "value": "{Avatar._sapAvatar_3_BackgroundH}",
+      "type": "internal"
+    },
+    "_sapAvatar_3_Hover_BackgroundS": {
+      "value": "{Avatar._sapAvatar_3_BackgroundS}",
+      "type": "internal"
+    },
+    "_sapAvatar_3_Hover_BackgroundL": {
+      "value": "{Avatar._sapAvatar_3_BackgroundL}",
+      "type": "internal"
+    },
+    "_sapAvatar_3_Hover_BackgroundA": {
+      "value": "{Avatar._sapAvatar_3_BackgroundA}",
       "type": "internal"
     },
     "_sapAvatar_3_BorderColorH": {
@@ -23637,6 +25382,22 @@
       "value": "{Avatar._sapAvatar_3_BackgroundA}",
       "type": "internal"
     },
+    "_sapAvatar_2_Hover_BackgroundH": {
+      "value": "{Avatar._sapAvatar_2_BackgroundH}",
+      "type": "internal"
+    },
+    "_sapAvatar_2_Hover_BackgroundS": {
+      "value": "{Avatar._sapAvatar_2_BackgroundS}",
+      "type": "internal"
+    },
+    "_sapAvatar_2_Hover_BackgroundL": {
+      "value": "{Avatar._sapAvatar_2_BackgroundL}",
+      "type": "internal"
+    },
+    "_sapAvatar_2_Hover_BackgroundA": {
+      "value": "{Avatar._sapAvatar_2_BackgroundA}",
+      "type": "internal"
+    },
     "_sapAvatar_2_BorderColorH": {
       "value": "{Avatar._sapAvatar_2_BackgroundH}",
       "type": "internal"
@@ -23651,6 +25412,22 @@
     },
     "_sapAvatar_2_BorderColorA": {
       "value": "{Avatar._sapAvatar_2_BackgroundA}",
+      "type": "internal"
+    },
+    "_sapAvatar_1_Hover_BackgroundH": {
+      "value": "{Avatar._sapAvatar_1_BackgroundH}",
+      "type": "internal"
+    },
+    "_sapAvatar_1_Hover_BackgroundS": {
+      "value": "{Avatar._sapAvatar_1_BackgroundS}",
+      "type": "internal"
+    },
+    "_sapAvatar_1_Hover_BackgroundL": {
+      "value": "{Avatar._sapAvatar_1_BackgroundL}",
+      "type": "internal"
+    },
+    "_sapAvatar_1_Hover_BackgroundA": {
+      "value": "{Avatar._sapAvatar_1_BackgroundA}",
       "type": "internal"
     },
     "_sapAvatar_1_BorderColorH": {
@@ -24033,6 +25810,51 @@
       "value": "{Assistant._sapAssistant_Color1A}",
       "type": "internal"
     }
+  },
+  "sapShell_GroupGap_XL": {
+    "value": "3rem",
+    "type": "internal",
+    "description": "The gap between shell groups on extra large devices."
+  },
+  "sapShell_GroupGap_L": {
+    "value": "3rem",
+    "type": "internal",
+    "description": "The gap between shell groups on large devices."
+  },
+  "sapShell_GroupGap_S": {
+    "value": "2rem",
+    "type": "internal",
+    "description": "The gap between shell groups on small devices."
+  },
+  "sapShell_Gap_XL": {
+    "value": "1rem",
+    "type": "internal",
+    "description": "The value of the small gap in a extra large container."
+  },
+  "sapShell_Gap_L": {
+    "value": "1rem",
+    "type": "internal",
+    "description": "The value of the small gap in a large container."
+  },
+  "sapShell_Gap_S": {
+    "value": "0.5rem",
+    "type": "internal",
+    "description": "The value of the small gap in a small container."
+  },
+  "sapShell_Space_XL": {
+    "value": "3rem",
+    "type": "internal",
+    "description": "The value of the extra large shell container space."
+  },
+  "sapShell_Space_L": {
+    "value": "2rem",
+    "type": "internal",
+    "description": "The value of the large shell container space."
+  },
+  "sapShell_Space_S": {
+    "value": "0.5rem",
+    "type": "internal",
+    "description": "The value of the small shell container space."
   },
   "Image": {
     "sapShell_Favicon": {
@@ -24481,17 +26303,503 @@
       "type": "internal"
     }
   },
-  "Illustrative": {
-    "_sapContent_Illustrative_Color20H": {
-      "value": "201.03092783505156",
+  "Shadow": {
+    "sapContent_Information_HeaderShadow": {
+      "type": "boxShadow",
+      "value": [
+        {
+          "type": "dropShadow",
+          "x": "0",
+          "y": "0.125rem",
+          "blur": "0.125rem",
+          "spread": "0",
+          "color": "hsla({Shadow._sapContent_ShadowColorH}, {Shadow._sapContent_ShadowColorS}, {Shadow._sapContent_ShadowColorL}, 0.05)"
+        },
+        {
+          "type": "innerShadow",
+          "x": "0",
+          "y": "-0.0625rem",
+          "blur": "0",
+          "spread": "0",
+          "color": "{Semantic.Border.sapInformationBorderColor}"
+        }
+      ],
+      "description": "The information header shadow styling."
+    },
+    "sapContent_Error_HeaderShadow": {
+      "type": "boxShadow",
+      "value": [
+        {
+          "type": "dropShadow",
+          "x": "0",
+          "y": "0.125rem",
+          "blur": "0.125rem",
+          "spread": "0",
+          "color": "hsla({Shadow._sapContent_ShadowColorH}, {Shadow._sapContent_ShadowColorS}, {Shadow._sapContent_ShadowColorL}, 0.05)"
+        },
+        {
+          "type": "innerShadow",
+          "x": "0",
+          "y": "-0.0625rem",
+          "blur": "0",
+          "spread": "0",
+          "color": "{Semantic.Border.sapErrorBorderColor}"
+        }
+      ],
+      "description": "The error header shadow styling."
+    },
+    "sapContent_Warning_HeaderShadow": {
+      "type": "boxShadow",
+      "value": [
+        {
+          "type": "dropShadow",
+          "x": "0",
+          "y": "0.125rem",
+          "blur": "0.125rem",
+          "spread": "0",
+          "color": "hsla({Shadow._sapContent_ShadowColorH}, {Shadow._sapContent_ShadowColorS}, {Shadow._sapContent_ShadowColorL}, 0.05)"
+        },
+        {
+          "type": "innerShadow",
+          "x": "0",
+          "y": "-0.0625rem",
+          "blur": "0",
+          "spread": "0",
+          "color": "{Semantic.Border.sapWarningBorderColor}"
+        }
+      ],
+      "description": "The warning header shadow styling."
+    },
+    "sapContent_Success_HeaderShadow": {
+      "type": "boxShadow",
+      "value": [
+        {
+          "type": "dropShadow",
+          "x": "0",
+          "y": "0.125rem",
+          "blur": "0.125rem",
+          "spread": "0",
+          "color": "hsla({Shadow._sapContent_ShadowColorH}, {Shadow._sapContent_ShadowColorS}, {Shadow._sapContent_ShadowColorL}, 0.05)"
+        },
+        {
+          "type": "innerShadow",
+          "x": "0",
+          "y": "-0.0625rem",
+          "blur": "0",
+          "spread": "0",
+          "color": "{Semantic.Border.sapSuccessBorderColor}"
+        }
+      ],
+      "description": "The success header shadow styling."
+    },
+    "sapContent_Lite_Shadow": {
+      "value": "None",
+      "type": "boxShadow",
+      "description": "The value of lite shadows. (With no shadows in standard themes and a visible shadow in high contrast)"
+    },
+    "sapContent_Shadow3": {
+      "type": "boxShadow",
+      "value": [
+        {
+          "type": "dropShadow",
+          "x": "0",
+          "y": "0",
+          "blur": "0",
+          "spread": "0.0625rem",
+          "color": "hsla({Shadow._sapContent_ShadowColorH}, {Shadow._sapContent_ShadowColorS}, {Shadow._sapContent_ShadowColorL}, 0.48)"
+        },
+        {
+          "type": "dropShadow",
+          "x": "0",
+          "y": "1.25rem",
+          "blur": "5rem",
+          "spread": "0",
+          "color": "hsla({Shadow._sapContent_ShadowColorH}, {Shadow._sapContent_ShadowColorS}, {Shadow._sapContent_ShadowColorL}, 0.25)"
+        }
+      ],
+      "description": "Shadow for dialogs."
+    },
+    "sapContent_Shadow2": {
+      "type": "boxShadow",
+      "value": [
+        {
+          "type": "dropShadow",
+          "x": "0",
+          "y": "0",
+          "blur": "0",
+          "spread": "0.0625rem",
+          "color": "hsla({Shadow._sapContent_ShadowColorH}, {Shadow._sapContent_ShadowColorS}, {Shadow._sapContent_ShadowColorL}, 0.48)"
+        },
+        {
+          "type": "dropShadow",
+          "x": "0",
+          "y": "0.625rem",
+          "blur": "1.875rem",
+          "spread": "0",
+          "color": "hsla({Shadow._sapContent_ShadowColorH}, {Shadow._sapContent_ShadowColorS}, {Shadow._sapContent_ShadowColorL}, 0.25)"
+        }
+      ],
+      "description": "Shadow for Popovers and MessageToasts."
+    },
+    "sapContent_Shadow1": {
+      "type": "boxShadow",
+      "value": [
+        {
+          "type": "dropShadow",
+          "x": "0",
+          "y": "0",
+          "blur": "0",
+          "spread": "0.0625rem",
+          "color": "hsla({Shadow._sapContent_ShadowColorH}, {Shadow._sapContent_ShadowColorS}, {Shadow._sapContent_ShadowColorL}, 0.48)"
+        },
+        {
+          "type": "dropShadow",
+          "x": "0",
+          "y": "0.125rem",
+          "blur": "0.5rem",
+          "spread": "0",
+          "color": "hsla({Shadow._sapContent_ShadowColorH}, {Shadow._sapContent_ShadowColorS}, {Shadow._sapContent_ShadowColorL}, 0.3)"
+        }
+      ],
+      "description": "Shadow for Dropdowns/Floating/Footer/Menu type controls."
+    },
+    "sapContent_Shadow0": {
+      "type": "boxShadow",
+      "value": [
+        {
+          "type": "dropShadow",
+          "x": "0",
+          "y": "0",
+          "blur": "0.125rem",
+          "spread": "0",
+          "color": "hsla({Shadow._sapContent_ShadowColorH}, {Shadow._sapContent_ShadowColorS}, {Shadow._sapContent_ShadowColorL}, 0.2)"
+        },
+        {
+          "type": "dropShadow",
+          "x": "0",
+          "y": "0.125rem",
+          "blur": "0.25rem",
+          "spread": "0",
+          "color": "hsla({Shadow._sapContent_ShadowColorH}, {Shadow._sapContent_ShadowColorS}, {Shadow._sapContent_ShadowColorL}, 0.2)"
+        }
+      ],
+      "description": "Shadow for Card/Tile type controls."
+    },
+    "_sapContent_ContrastShadowColorH": {
+      "value": "0",
       "type": "internal"
     },
-    "_sapContent_Illustrative_Color20S": {
+    "_sapContent_ContrastShadowColorS": {
+      "value": "0%",
+      "type": "internal"
+    },
+    "_sapContent_ContrastShadowColorL": {
       "value": "100%",
       "type": "internal"
     },
+    "_sapContent_ContrastShadowColorA": {
+      "value": "1",
+      "type": "internal"
+    },
+    "sapContent_ContrastShadowColor": {
+      "value": "hsla({Shadow._sapContent_ContrastShadowColorH}, {Shadow._sapContent_ContrastShadowColorS}, {Shadow._sapContent_ContrastShadowColorL}, {Shadow._sapContent_ContrastShadowColorA})",
+      "type": "color",
+      "description": "The alternative shadow color."
+    },
+    "_sapContent_ShadowColorH": {
+      "value": "210",
+      "type": "internal"
+    },
+    "_sapContent_ShadowColorS": {
+      "value": "35.84905660377359%",
+      "type": "internal"
+    },
+    "_sapContent_ShadowColorL": {
+      "value": "20.784313725490193%",
+      "type": "internal"
+    },
+    "_sapContent_ShadowColorA": {
+      "value": "1",
+      "type": "internal"
+    },
+    "sapContent_ShadowColor": {
+      "value": "hsla({Shadow._sapContent_ShadowColorH}, {Shadow._sapContent_ShadowColorS}, {Shadow._sapContent_ShadowColorL}, {Shadow._sapContent_ShadowColorA})",
+      "type": "color",
+      "description": "The shadow color."
+    }
+  },
+  "sapContent_Padding_XL": {
+    "value": "3rem",
+    "type": "internal",
+    "description": "The value of padding used on extra large devices."
+  },
+  "sapContent_Padding_L": {
+    "value": "2rem",
+    "type": "internal",
+    "description": "The value of padding used on large devices."
+  },
+  "sapContent_Padding_S": {
+    "value": "0rem",
+    "type": "internal",
+    "description": "The value of padding used on small devices."
+  },
+  "sapContent_Space_XL": {
+    "value": "3rem",
+    "type": "internal",
+    "description": "The responsive content container space on extra large devices."
+  },
+  "sapContent_Space_L": {
+    "value": "2rem",
+    "type": "internal",
+    "description": "The responsive content container space on large devices."
+  },
+  "sapContent_Space_S": {
+    "value": "1rem",
+    "type": "internal",
+    "description": "The responsive content container space on small devices."
+  },
+  "Illustrative": {
+    "_sapContent_Illustrative_Color31H": {
+      "value": "13.76146788990826",
+      "type": "internal"
+    },
+    "_sapContent_Illustrative_Color31S": {
+      "value": "100%",
+      "type": "internal"
+    },
+    "_sapContent_Illustrative_Color31L": {
+      "value": "78.62745098039215%",
+      "type": "internal"
+    },
+    "_sapContent_Illustrative_Color31A": {
+      "value": "1",
+      "type": "internal"
+    },
+    "sapContent_Illustrative_Color31": {
+      "value": "hsla({Illustrative._sapContent_Illustrative_Color31H}, {Illustrative._sapContent_Illustrative_Color31S}, {Illustrative._sapContent_Illustrative_Color31L}, {Illustrative._sapContent_Illustrative_Color31A})",
+      "type": "color",
+      "description": "The color of illustrated content."
+    },
+    "_sapContent_Illustrative_Color30H": {
+      "value": "9.230769230769226",
+      "type": "internal"
+    },
+    "_sapContent_Illustrative_Color30S": {
+      "value": "100.00000000000003%",
+      "type": "internal"
+    },
+    "_sapContent_Illustrative_Color30L": {
+      "value": "10.196078431372548%",
+      "type": "internal"
+    },
+    "_sapContent_Illustrative_Color30A": {
+      "value": "1",
+      "type": "internal"
+    },
+    "sapContent_Illustrative_Color30": {
+      "value": "hsla({Illustrative._sapContent_Illustrative_Color30H}, {Illustrative._sapContent_Illustrative_Color30S}, {Illustrative._sapContent_Illustrative_Color30L}, {Illustrative._sapContent_Illustrative_Color30A})",
+      "type": "color",
+      "description": "The color of illustrated content."
+    },
+    "_sapContent_Illustrative_Color29H": {
+      "value": "9.565217391304373",
+      "type": "internal"
+    },
+    "_sapContent_Illustrative_Color29S": {
+      "value": "100.00000000000003%",
+      "type": "internal"
+    },
+    "_sapContent_Illustrative_Color29L": {
+      "value": "13.529411764705882%",
+      "type": "internal"
+    },
+    "_sapContent_Illustrative_Color29A": {
+      "value": "1",
+      "type": "internal"
+    },
+    "sapContent_Illustrative_Color29": {
+      "value": "hsla({Illustrative._sapContent_Illustrative_Color29H}, {Illustrative._sapContent_Illustrative_Color29S}, {Illustrative._sapContent_Illustrative_Color29L}, {Illustrative._sapContent_Illustrative_Color29A})",
+      "type": "color",
+      "description": "The color of illustrated content."
+    },
+    "_sapContent_Illustrative_Color28H": {
+      "value": "22.011834319526656",
+      "type": "internal"
+    },
+    "_sapContent_Illustrative_Color28S": {
+      "value": "100%",
+      "type": "internal"
+    },
+    "_sapContent_Illustrative_Color28L": {
+      "value": "33.13725490196078%",
+      "type": "internal"
+    },
+    "_sapContent_Illustrative_Color28A": {
+      "value": "1",
+      "type": "internal"
+    },
+    "sapContent_Illustrative_Color28": {
+      "value": "hsla({Illustrative._sapContent_Illustrative_Color28H}, {Illustrative._sapContent_Illustrative_Color28S}, {Illustrative._sapContent_Illustrative_Color28L}, {Illustrative._sapContent_Illustrative_Color28A})",
+      "type": "color",
+      "description": "The color of illustrated content."
+    },
+    "_sapContent_Illustrative_Color27H": {
+      "value": "49.756097560975604",
+      "type": "internal"
+    },
+    "_sapContent_Illustrative_Color27S": {
+      "value": "100.00000000000007%",
+      "type": "internal"
+    },
+    "_sapContent_Illustrative_Color27L": {
+      "value": "91.9607843137255%",
+      "type": "internal"
+    },
+    "_sapContent_Illustrative_Color27A": {
+      "value": "1",
+      "type": "internal"
+    },
+    "sapContent_Illustrative_Color27": {
+      "value": "hsla({Illustrative._sapContent_Illustrative_Color27H}, {Illustrative._sapContent_Illustrative_Color27S}, {Illustrative._sapContent_Illustrative_Color27L}, {Illustrative._sapContent_Illustrative_Color27A})",
+      "type": "color",
+      "description": "The color of illustrated content."
+    },
+    "_sapContent_Illustrative_Color26H": {
+      "value": "46.38297872340422",
+      "type": "internal"
+    },
+    "_sapContent_Illustrative_Color26S": {
+      "value": "100%",
+      "type": "internal"
+    },
+    "_sapContent_Illustrative_Color26L": {
+      "value": "72.35294117647058%",
+      "type": "internal"
+    },
+    "_sapContent_Illustrative_Color26A": {
+      "value": "1",
+      "type": "internal"
+    },
+    "sapContent_Illustrative_Color26": {
+      "value": "hsla({Illustrative._sapContent_Illustrative_Color26H}, {Illustrative._sapContent_Illustrative_Color26S}, {Illustrative._sapContent_Illustrative_Color26L}, {Illustrative._sapContent_Illustrative_Color26A})",
+      "type": "color",
+      "description": "The color of illustrated content."
+    },
+    "_sapContent_Illustrative_Color25H": {
+      "value": "331.4285714285714",
+      "type": "internal"
+    },
+    "_sapContent_Illustrative_Color25S": {
+      "value": "99.99999999999987%",
+      "type": "internal"
+    },
+    "_sapContent_Illustrative_Color25L": {
+      "value": "95.88235294117646%",
+      "type": "internal"
+    },
+    "_sapContent_Illustrative_Color25A": {
+      "value": "1",
+      "type": "internal"
+    },
+    "sapContent_Illustrative_Color25": {
+      "value": "hsla({Illustrative._sapContent_Illustrative_Color25H}, {Illustrative._sapContent_Illustrative_Color25S}, {Illustrative._sapContent_Illustrative_Color25L}, {Illustrative._sapContent_Illustrative_Color25A})",
+      "type": "color",
+      "description": "The color of illustrated content."
+    },
+    "_sapContent_Illustrative_Color24H": {
+      "value": "335.06493506493507",
+      "type": "internal"
+    },
+    "_sapContent_Illustrative_Color24S": {
+      "value": "100%",
+      "type": "internal"
+    },
+    "_sapContent_Illustrative_Color24L": {
+      "value": "84.90196078431373%",
+      "type": "internal"
+    },
+    "_sapContent_Illustrative_Color24A": {
+      "value": "1",
+      "type": "internal"
+    },
+    "sapContent_Illustrative_Color24": {
+      "value": "hsla({Illustrative._sapContent_Illustrative_Color24H}, {Illustrative._sapContent_Illustrative_Color24S}, {Illustrative._sapContent_Illustrative_Color24L}, {Illustrative._sapContent_Illustrative_Color24A})",
+      "type": "color",
+      "description": "The color of illustrated content."
+    },
+    "_sapContent_Illustrative_Color23H": {
+      "value": "0",
+      "type": "internal"
+    },
+    "_sapContent_Illustrative_Color23S": {
+      "value": "90.90909090909092%",
+      "type": "internal"
+    },
+    "_sapContent_Illustrative_Color23L": {
+      "value": "43.13725490196078%",
+      "type": "internal"
+    },
+    "_sapContent_Illustrative_Color23A": {
+      "value": "1",
+      "type": "internal"
+    },
+    "sapContent_Illustrative_Color23": {
+      "value": "hsla({Illustrative._sapContent_Illustrative_Color23H}, {Illustrative._sapContent_Illustrative_Color23S}, {Illustrative._sapContent_Illustrative_Color23L}, {Illustrative._sapContent_Illustrative_Color23A})",
+      "type": "color",
+      "description": "The color of illustrated content."
+    },
+    "_sapContent_Illustrative_Color22H": {
+      "value": "223.78378378378375",
+      "type": "internal"
+    },
+    "_sapContent_Illustrative_Color22S": {
+      "value": "99.99999999999997%",
+      "type": "internal"
+    },
+    "_sapContent_Illustrative_Color22L": {
+      "value": "14.50980392156863%",
+      "type": "internal"
+    },
+    "_sapContent_Illustrative_Color22A": {
+      "value": "1",
+      "type": "internal"
+    },
+    "sapContent_Illustrative_Color22": {
+      "value": "hsla({Illustrative._sapContent_Illustrative_Color22H}, {Illustrative._sapContent_Illustrative_Color22S}, {Illustrative._sapContent_Illustrative_Color22L}, {Illustrative._sapContent_Illustrative_Color22A})",
+      "type": "color",
+      "description": "The color of illustrated content."
+    },
+    "_sapContent_Illustrative_Color21H": {
+      "value": "209.21052631578948",
+      "type": "internal"
+    },
+    "_sapContent_Illustrative_Color21S": {
+      "value": "100.00000000000003%",
+      "type": "internal"
+    },
+    "_sapContent_Illustrative_Color21L": {
+      "value": "55.294117647058826%",
+      "type": "internal"
+    },
+    "_sapContent_Illustrative_Color21A": {
+      "value": "1",
+      "type": "internal"
+    },
+    "sapContent_Illustrative_Color21": {
+      "value": "hsla({Illustrative._sapContent_Illustrative_Color21H}, {Illustrative._sapContent_Illustrative_Color21S}, {Illustrative._sapContent_Illustrative_Color21L}, {Illustrative._sapContent_Illustrative_Color21A})",
+      "type": "color",
+      "description": "The color of illustrated content."
+    },
+    "_sapContent_Illustrative_Color20H": {
+      "value": "203.38983050847457",
+      "type": "internal"
+    },
+    "_sapContent_Illustrative_Color20S": {
+      "value": "99.99999999999997%",
+      "type": "internal"
+    },
     "_sapContent_Illustrative_Color20L": {
-      "value": "80.98039215686275%",
+      "value": "76.86274509803921%",
       "type": "internal"
     },
     "_sapContent_Illustrative_Color20A": {
@@ -24504,19 +26812,19 @@
       "description": "The color of illustrated content."
     },
     "_sapContent_Illustrative_Color19H": {
-      "value": "201.12676056338023",
+      "value": "{Illustrative._sapContent_Illustrative_Color20H}",
       "type": "internal"
     },
     "_sapContent_Illustrative_Color19S": {
-      "value": "100.00000000000004%",
+      "value": "{Illustrative._sapContent_Illustrative_Color20S}",
       "type": "internal"
     },
     "_sapContent_Illustrative_Color19L": {
-      "value": "86.07843137254902%",
+      "value": "{Illustrative._sapContent_Illustrative_Color20L} + 5%",
       "type": "internal"
     },
     "_sapContent_Illustrative_Color19A": {
-      "value": "1",
+      "value": "{Illustrative._sapContent_Illustrative_Color20A}",
       "type": "internal"
     },
     "sapContent_Illustrative_Color19": {
@@ -24525,19 +26833,19 @@
       "description": "The color of illustrated content."
     },
     "_sapContent_Illustrative_Color18H": {
-      "value": "200.86956521739125",
+      "value": "{Illustrative._sapContent_Illustrative_Color20H}",
       "type": "internal"
     },
     "_sapContent_Illustrative_Color18S": {
-      "value": "100%",
+      "value": "{Illustrative._sapContent_Illustrative_Color20S}",
       "type": "internal"
     },
     "_sapContent_Illustrative_Color18L": {
-      "value": "90.98039215686275%",
+      "value": "{Illustrative._sapContent_Illustrative_Color20L} + 10%",
       "type": "internal"
     },
     "_sapContent_Illustrative_Color18A": {
-      "value": "1",
+      "value": "{Illustrative._sapContent_Illustrative_Color20A}",
       "type": "internal"
     },
     "sapContent_Illustrative_Color18": {
@@ -24546,15 +26854,15 @@
       "description": "The color of illustrated content."
     },
     "_sapContent_Illustrative_Color17H": {
-      "value": "170.18181818181824",
+      "value": "188",
       "type": "internal"
     },
     "_sapContent_Illustrative_Color17S": {
-      "value": "100%",
+      "value": "93.75%",
       "type": "internal"
     },
     "_sapContent_Illustrative_Color17L": {
-      "value": "32.35294117647059%",
+      "value": "25.098039215686274%",
       "type": "internal"
     },
     "_sapContent_Illustrative_Color17A": {
@@ -24567,15 +26875,15 @@
       "description": "The color of illustrated content."
     },
     "_sapContent_Illustrative_Color16H": {
-      "value": "255.63829787234044",
+      "value": "17.87234042553189",
       "type": "internal"
     },
     "_sapContent_Illustrative_Color16S": {
-      "value": "90.3846153846154%",
+      "value": "100%",
       "type": "internal"
     },
     "_sapContent_Illustrative_Color16L": {
-      "value": "40.78431372549019%",
+      "value": "27.647058823529413%",
       "type": "internal"
     },
     "_sapContent_Illustrative_Color16A": {
@@ -24588,7 +26896,7 @@
       "description": "The color of illustrated content."
     },
     "_sapContent_Illustrative_Color15H": {
-      "value": "34.117647058823536",
+      "value": "26.153846153846132",
       "type": "internal"
     },
     "_sapContent_Illustrative_Color15S": {
@@ -24596,7 +26904,7 @@
       "type": "internal"
     },
     "_sapContent_Illustrative_Color15L": {
-      "value": "40%",
+      "value": "38.23529411764706%",
       "type": "internal"
     },
     "_sapContent_Illustrative_Color15A": {
@@ -24609,7 +26917,7 @@
       "description": "The color of illustrated content."
     },
     "_sapContent_Illustrative_Color14H": {
-      "value": "212",
+      "value": "218.18181818181824",
       "type": "internal"
     },
     "_sapContent_Illustrative_Color14S": {
@@ -24617,7 +26925,7 @@
       "type": "internal"
     },
     "_sapContent_Illustrative_Color14L": {
-      "value": "32.35294117647059%",
+      "value": "34.509803921568626%",
       "type": "internal"
     },
     "_sapContent_Illustrative_Color14A": {
@@ -24630,7 +26938,7 @@
       "description": "The color of illustrated content."
     },
     "_sapContent_Illustrative_Color13H": {
-      "value": "212.2388059701492",
+      "value": "212.23140495867767",
       "type": "internal"
     },
     "_sapContent_Illustrative_Color13S": {
@@ -24638,7 +26946,7 @@
       "type": "internal"
     },
     "_sapContent_Illustrative_Color13L": {
-      "value": "39.411764705882355%",
+      "value": "47.45098039215686%",
       "type": "internal"
     },
     "_sapContent_Illustrative_Color13A": {
@@ -24672,15 +26980,15 @@
       "description": "The color of illustrated content."
     },
     "_sapContent_Illustrative_Color11H": {
-      "value": "301.68224299065423",
+      "value": "330.1463414634146",
       "type": "internal"
     },
     "_sapContent_Illustrative_Color11S": {
-      "value": "89.91596638655462%",
+      "value": "85.06224066390043%",
       "type": "internal"
     },
     "_sapContent_Illustrative_Color11L": {
-      "value": "53.333333333333336%",
+      "value": "47.25490196078431%",
       "type": "internal"
     },
     "_sapContent_Illustrative_Color11A": {
@@ -24693,19 +27001,19 @@
       "description": "The color of illustrated content."
     },
     "_sapContent_Illustrative_Color10H": {
-      "value": "201",
+      "value": "{Illustrative._sapContent_Illustrative_Color20H}",
       "type": "internal"
     },
     "_sapContent_Illustrative_Color10S": {
-      "value": "99.99999999999986%",
+      "value": "{Illustrative._sapContent_Illustrative_Color20S}",
       "type": "internal"
     },
     "_sapContent_Illustrative_Color10L": {
-      "value": "96.078431372549%",
+      "value": "{Illustrative._sapContent_Illustrative_Color20L} + 16%",
       "type": "internal"
     },
     "_sapContent_Illustrative_Color10A": {
-      "value": "1",
+      "value": "{Illustrative._sapContent_Illustrative_Color20A}",
       "type": "internal"
     },
     "sapContent_Illustrative_Color10": {
@@ -24714,15 +27022,15 @@
       "description": "The color of illustrated content."
     },
     "_sapContent_Illustrative_Color9H": {
-      "value": "168.1751824817518",
+      "value": "185.2830188679245",
       "type": "internal"
     },
     "_sapContent_Illustrative_Color9S": {
-      "value": "79.19075144508672%",
+      "value": "90.85714285714286%",
       "type": "internal"
     },
     "_sapContent_Illustrative_Color9L": {
-      "value": "66.07843137254902%",
+      "value": "34.31372549019608%",
       "type": "internal"
     },
     "_sapContent_Illustrative_Color9A": {
@@ -24756,19 +27064,19 @@
       "description": "The color of illustrated content."
     },
     "_sapContent_Illustrative_Color7H": {
-      "value": "201",
+      "value": "{Illustrative._sapContent_Illustrative_Color20H}",
       "type": "internal"
     },
     "_sapContent_Illustrative_Color7S": {
-      "value": "99.99999999999986%",
+      "value": "{Illustrative._sapContent_Illustrative_Color20S}",
       "type": "internal"
     },
     "_sapContent_Illustrative_Color7L": {
-      "value": "96.078431372549%",
+      "value": "{Illustrative._sapContent_Illustrative_Color20L} + 16%",
       "type": "internal"
     },
     "_sapContent_Illustrative_Color7A": {
-      "value": "1",
+      "value": "{Illustrative._sapContent_Illustrative_Color20A}",
       "type": "internal"
     },
     "sapContent_Illustrative_Color7": {
@@ -24840,7 +27148,7 @@
       "description": "The color of illustrated content."
     },
     "_sapContent_Illustrative_Color3H": {
-      "value": "34.0408163265306",
+      "value": "17.094972067039123",
       "type": "internal"
     },
     "_sapContent_Illustrative_Color3S": {
@@ -24848,7 +27156,7 @@
       "type": "internal"
     },
     "_sapContent_Illustrative_Color3L": {
-      "value": "48.03921568627451%",
+      "value": "64.90196078431373%",
       "type": "internal"
     },
     "_sapContent_Illustrative_Color3A": {
@@ -24861,15 +27169,15 @@
       "description": "The color of illustrated content."
     },
     "_sapContent_Illustrative_Color2H": {
-      "value": "212.23140495867767",
+      "value": "203.43195266272187",
       "type": "internal"
     },
     "_sapContent_Illustrative_Color2S": {
-      "value": "100%",
+      "value": "100.00000000000003%",
       "type": "internal"
     },
     "_sapContent_Illustrative_Color2L": {
-      "value": "47.45098039215686%",
+      "value": "66.86274509803923%",
       "type": "internal"
     },
     "_sapContent_Illustrative_Color2A": {
@@ -24882,15 +27190,15 @@
       "description": "The color of illustrated content."
     },
     "_sapContent_Illustrative_Color1H": {
-      "value": "251.64179104477614",
+      "value": "324.15584415584414",
       "type": "internal"
     },
     "_sapContent_Illustrative_Color1S": {
-      "value": "100.00000000000003%",
+      "value": "98.71794871794873%",
       "type": "internal"
     },
     "_sapContent_Illustrative_Color1L": {
-      "value": "60.588235294117645%",
+      "value": "30.588235294117645%",
       "type": "internal"
     },
     "_sapContent_Illustrative_Color1A": {
@@ -25144,6 +27452,11 @@
     }
   },
   "Badge": {
+    "sapContent_BadgeBorderColor": {
+      "value": "hsla({Badge._sapContent_BadgeBorderColorH}, {Badge._sapContent_BadgeBorderColorS}, {Badge._sapContent_BadgeBorderColorL}, {Badge._sapContent_BadgeBorderColorA})",
+      "type": "color",
+      "description": "The border color of badges (e.g. Shell Notifications)."
+    },
     "_sapContent_BadgeTextColorH": {
       "value": "{Text._sapContent_ContrastTextColorH}",
       "type": "internal"
@@ -25185,6 +27498,22 @@
       "value": "hsla({Badge._sapContent_BadgeBackgroundH}, {Badge._sapContent_BadgeBackgroundS}, {Badge._sapContent_BadgeBackgroundL}, {Badge._sapContent_BadgeBackgroundA})",
       "type": "color",
       "description": "The background color of badges."
+    },
+    "_sapContent_BadgeBorderColorH": {
+      "value": "{Main._sapBaseColorH}",
+      "type": "internal"
+    },
+    "_sapContent_BadgeBorderColorS": {
+      "value": "{Main._sapBaseColorS}",
+      "type": "internal"
+    },
+    "_sapContent_BadgeBorderColorL": {
+      "value": "{Main._sapBaseColorL}",
+      "type": "internal"
+    },
+    "_sapContent_BadgeBorderColorA": {
+      "value": "{Main._sapBaseColorA}",
+      "type": "internal"
     }
   },
   "Foreground": {
@@ -25404,138 +27733,6 @@
     "_sapContent_IconColorA": {
       "value": "{Text._sapTextColorA}",
       "type": "internal"
-    }
-  },
-  "Shadow": {
-    "sapContent_Shadow3": {
-      "type": "boxShadow",
-      "value": [
-        {
-          "type": "dropShadow",
-          "x": "0",
-          "y": "0",
-          "blur": "0",
-          "spread": "0.0625rem",
-          "color": "hsla({Shadow._sapContent_ShadowColorH}, {Shadow._sapContent_ShadowColorS}, {Shadow._sapContent_ShadowColorL}, 0.48)"
-        },
-        {
-          "type": "dropShadow",
-          "x": "0",
-          "y": "1.25rem",
-          "blur": "5rem",
-          "spread": "0",
-          "color": "hsla({Shadow._sapContent_ShadowColorH}, {Shadow._sapContent_ShadowColorS}, {Shadow._sapContent_ShadowColorL}, 0.25)"
-        }
-      ],
-      "description": "Shadow for dialogs."
-    },
-    "sapContent_Shadow2": {
-      "type": "boxShadow",
-      "value": [
-        {
-          "type": "dropShadow",
-          "x": "0",
-          "y": "0",
-          "blur": "0",
-          "spread": "0.0625rem",
-          "color": "hsla({Shadow._sapContent_ShadowColorH}, {Shadow._sapContent_ShadowColorS}, {Shadow._sapContent_ShadowColorL}, 0.48)"
-        },
-        {
-          "type": "dropShadow",
-          "x": "0",
-          "y": "0.625rem",
-          "blur": "1.875rem",
-          "spread": "0",
-          "color": "hsla({Shadow._sapContent_ShadowColorH}, {Shadow._sapContent_ShadowColorS}, {Shadow._sapContent_ShadowColorL}, 0.25)"
-        }
-      ],
-      "description": "Shadow for Popovers and MessageToasts."
-    },
-    "sapContent_Shadow1": {
-      "type": "boxShadow",
-      "value": [
-        {
-          "type": "dropShadow",
-          "x": "0",
-          "y": "0",
-          "blur": "0",
-          "spread": "0.0625rem",
-          "color": "hsla({Shadow._sapContent_ShadowColorH}, {Shadow._sapContent_ShadowColorS}, {Shadow._sapContent_ShadowColorL}, 0.48)"
-        },
-        {
-          "type": "dropShadow",
-          "x": "0",
-          "y": "0.125rem",
-          "blur": "0.5rem",
-          "spread": "0",
-          "color": "hsla({Shadow._sapContent_ShadowColorH}, {Shadow._sapContent_ShadowColorS}, {Shadow._sapContent_ShadowColorL}, 0.3)"
-        }
-      ],
-      "description": "Shadow for Dropdowns/Floating/Footer/Menu type controls."
-    },
-    "sapContent_Shadow0": {
-      "type": "boxShadow",
-      "value": [
-        {
-          "type": "dropShadow",
-          "x": "0",
-          "y": "0",
-          "blur": "0.125rem",
-          "spread": "0",
-          "color": "hsla({Shadow._sapContent_ShadowColorH}, {Shadow._sapContent_ShadowColorS}, {Shadow._sapContent_ShadowColorL}, 0.2)"
-        },
-        {
-          "type": "dropShadow",
-          "x": "0",
-          "y": "0.125rem",
-          "blur": "0.25rem",
-          "spread": "0",
-          "color": "hsla({Shadow._sapContent_ShadowColorH}, {Shadow._sapContent_ShadowColorS}, {Shadow._sapContent_ShadowColorL}, 0.2)"
-        }
-      ],
-      "description": "Shadow for Card/Tile type controls."
-    },
-    "_sapContent_ContrastShadowColorH": {
-      "value": "0",
-      "type": "internal"
-    },
-    "_sapContent_ContrastShadowColorS": {
-      "value": "0%",
-      "type": "internal"
-    },
-    "_sapContent_ContrastShadowColorL": {
-      "value": "100%",
-      "type": "internal"
-    },
-    "_sapContent_ContrastShadowColorA": {
-      "value": "1",
-      "type": "internal"
-    },
-    "sapContent_ContrastShadowColor": {
-      "value": "hsla({Shadow._sapContent_ContrastShadowColorH}, {Shadow._sapContent_ContrastShadowColorS}, {Shadow._sapContent_ContrastShadowColorL}, {Shadow._sapContent_ContrastShadowColorA})",
-      "type": "color",
-      "description": "The alternative shadow color."
-    },
-    "_sapContent_ShadowColorH": {
-      "value": "210",
-      "type": "internal"
-    },
-    "_sapContent_ShadowColorS": {
-      "value": "35.84905660377359%",
-      "type": "internal"
-    },
-    "_sapContent_ShadowColorL": {
-      "value": "20.784313725490193%",
-      "type": "internal"
-    },
-    "_sapContent_ShadowColorA": {
-      "value": "1",
-      "type": "internal"
-    },
-    "sapContent_ShadowColor": {
-      "value": "hsla({Shadow._sapContent_ShadowColorH}, {Shadow._sapContent_ShadowColorS}, {Shadow._sapContent_ShadowColorL}, {Shadow._sapContent_ShadowColorA})",
-      "type": "color",
-      "description": "The shadow color."
     }
   },
   "Focus": {

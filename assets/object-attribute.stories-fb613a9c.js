@@ -1,0 +1,7 @@
+const s=`<div style="width: 120px;">
+<span id="truncated" class="fd-object-attribute" title="Truncate Very long Object Attribute Text">Truncate Very long Object Attribute Text</span>
+</div>
+`,i=`<a id="disabledlink" class="fd-object-attribute fd-object-attribute--link" aria-disabled="true">Disabled Object Attribute linked Text</a>
+`,c=`<a id="textwithlink" href="#" class="fd-object-attribute--link" tabindex="0">Text With Link</a>
+`,d=`<div class="fd-object-attribute" id="standardtext">Standard Object Attribute Text</div>
+`,o={title:"Dev/Object Attribute"},t=()=>d;t.parameters={docs:{disable:!0}};const e=()=>c;e.parameters={docs:{disable:!0}};const a=()=>i;a.parameters={docs:{disable:!0}};const r=()=>s;r.parameters={docs:{disable:!0}};t.parameters={...t.parameters,docs:{...t.parameters?.docs,source:{originalSource:"() => textExampleHtml",...t.parameters?.docs?.source}}};e.parameters={...e.parameters,docs:{...e.parameters?.docs,source:{originalSource:"() => textWithLinkExampleHtml",...e.parameters?.docs?.source}}};a.parameters={...a.parameters,docs:{...a.parameters?.docs,source:{originalSource:"() => disabledLinkExampleHtml",...a.parameters?.docs?.source}}};r.parameters={...r.parameters,docs:{...r.parameters?.docs,source:{originalSource:"() => truncatedTextExampleHtml",...r.parameters?.docs?.source}}};const n=["Text","TextWithLink","DisabledLink","TruncatedText"];export{a as DisabledLink,t as Text,e as TextWithLink,r as TruncatedText,n as __namedExportsOrder,o as default};

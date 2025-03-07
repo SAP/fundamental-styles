@@ -1,0 +1,37 @@
+/* empty css               *//* empty css             *//* empty css             *//* empty css                 *//* empty css             *//* empty css               *//* empty css                   */const t=`<ul class="fd-list fd-list--subline" role="list">
+    <li role="listitem" tabindex="0" class="fd-list__item fd-list__item--interractive">
+        <span class="fd-avatar fd-avatar--sm fd-avatar--circle fd-avatar--thumbnail" style="background-image: url('/assets/images/portraits/L_80x80_F3.png')" role="img" aria-label="Jane Doe"></span>
+        <div class="fd-list__content">
+            <div class="fd-list__title">List Item Title</div>
+            <div class="fd-list__subline">List Item Subline</div>
+            <div class="fd-list__subline">List Item Subline</div>
+        </div>
+    </li>
+    <li role="listitem" tabindex="0" class="fd-list__item fd-list__item--interractive">
+        <span class="fd-avatar fd-avatar--sm fd-avatar--circle fd-avatar--thumbnail" style="background-image: url('/assets/images/portraits/L_80x80_M1.png')" role="img" aria-label="John Doe"></span>
+        <div class="fd-list__content">
+            <div class="fd-list__title">List Item Title</div>
+            <div class="fd-list__subline">List Item Subline</div>
+            <div class="fd-list__subline">List Item Subline</div>
+        </div>
+        <span class="fd-list__active-indicator sap-icon--sys-enter-2"></span>
+    </li>
+    <li role="listitem" tabindex="0" class="fd-list__item fd-list__item--interractive">
+        <span class="fd-avatar fd-avatar--sm fd-avatar--circle fd-avatar--accent-color-10" aria-role="img" aria-label="John Doe">JD</span>
+        <div class="fd-list__content">
+            <div class="fd-list__title">List Item Title Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt, quod deleniti optio earum voluptatem in, nam et ratione aliquam error facilis expedita magnam repudiandae rerum sint blanditiis rem quo? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt, quod deleniti optio earum voluptatem in, nam et ratione aliquam error facilis expedita magnam repudiandae rerum sint blanditiis rem quo!</div>
+            <div class="fd-list__subline">List Item Subline Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia saepe doloribus nulla aliquid soluta aperiam, amet iste sint? Explicabo dicta doloremque amet minima perferendis. Necessitatibus reiciendis voluptatum id nesciunt earum! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt, quod deleniti optio earum voluptatem in, nam et ratione aliquam error facilis expedita magnam repudiandae rerum sint blanditiis rem quo.</div>
+            <div class="fd-list__subline">List Item Subline Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque asperiores id deleniti quae? Amet officia cum assumenda. Ab, dolores ea dignissimos, aliquid beatae magnam commodi, tenetur facere harum ex nemo? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt, quod deleniti optio earum voluptatem in, nam et ratione aliquam error facilis expedita magnam repudiandae rerum sint blanditiis rem quo.</div>
+        </div>
+    </li>
+    <li role="listitem" tabindex="0" class="fd-list__item fd-list__item--interractive">
+        <span class="fd-avatar fd-avatar--sm fd-avatar--thumbnail" style="background-image: url('/assets/images/landscape/L1.jpg')" role="img" aria-label="John Doe"></span>
+        <div class="fd-list__content">
+            <div class="fd-list__title">List Item Title</div>
+            <div class="fd-list__subline">List Item Subline</div>
+            <div class="fd-list__subline">List Item Subline</div>
+        </div>
+    </li>
+</ul>
+`,m={title:"Components/List/Subline"},i=()=>t;i.storyName="Custom List Item with Subline";i.parameters={docs:{description:{story:`This is structure of the custom list item is being used to display the accounts in USer Menu. 
+    `}}};i.parameters={...i.parameters,docs:{...i.parameters?.docs,source:{originalSource:"() => standardExampleHtml",...i.parameters?.docs?.source}}};const o=["Standard"];export{i as Standard,o as __namedExportsOrder,m as default};

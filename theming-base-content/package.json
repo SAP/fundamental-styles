@@ -1,6 +1,6 @@
 {
   "name": "@sap-theming/theming-base-content",
-  "version": "11.18.0",
+  "version": "11.26.0",
   "description": "Theming Base Content",
   "author": "SAP SE (https://www.sap.com)",
   "main": "index.cjs",
@@ -14,5 +14,14 @@
     "type": "git",
     "url": "https://github.com/SAP/theming-base-content"
   },
-  "dependencies": {}
+  "dependencies": {},
+  "files": [
+    "content/**/.theming",
+    "content/Base/baseLib/**/*.{less,css,scss,info,properties,woff2,woff,ttf,png,gif,html}",
+    "content/Base/baseLib/*/*.{json,svg}",
+    "content/Base/baseLib/*/fonts/*.json",
+    "CHANGELOG.md",
+    "index.cjs",
+    "index.mjs"
+  ]
 }

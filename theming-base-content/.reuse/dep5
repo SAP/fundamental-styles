@@ -1,8 +1,0 @@
-Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
-Upstream-Name: Theming Base Content
-Upstream-Contact: Dominik Schreiber <dominik.schreiber@sap.com>
-Source: https://github.com/SAP/theming-base-content
-
-Files: *
-Copyright: 2012-2022 SAP SE or an SAP affiliate company and Theming Base Content contributors
-License: Apache-2.0
