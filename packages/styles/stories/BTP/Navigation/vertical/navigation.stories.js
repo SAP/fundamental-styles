@@ -1,9 +1,6 @@
 import navigationExampleHtml from "./navigation.example.html?raw";
 import navigationSnappedExampleHtml from "./navigation-snapped.example.html?raw";
 import navigationPopupExampleHtml from "./navigation-popup.example.html?raw";
-import navigationPopupTabletExampleHtml from "./navigation-popup-tablet.example.html?raw";
-import navigationSnappedTabletExampleHtml from "./navigation-snapped-tablet.example.html?raw";
-import navigationPopupPhoneExampleHtml from "./navigation-popup-phone.example.html?raw";
 import navigationLegacyExampleHtml from "./navigation-legacy.example.html?raw";
 
 import '../../../../src/navigation.scss';
@@ -90,37 +87,6 @@ NavigationPopup.parameters = {
     description: {
       story: `An alternative to the expanded/snapped variant, which places the navigation items in a popup.
 `
-    }
-  }
-};
-
-export const NavigationPopupTablet = () => navigationPopupTabletExampleHtml;
-NavigationPopupTablet.storyName = 'Vertical Navigation - Popup, Tablet';
-NavigationPopupTablet.parameters = {
-  docs: {
-    description: {
-      story: `There are no changes to the popup variant behavior on tablets.`
-    }
-  }
-};
-
-export const NavigationSnappedTablet = () => navigationSnappedTabletExampleHtml;
-NavigationSnappedTablet.storyName = 'Vertical Navigation - Snapped, Tablet';
-NavigationSnappedTablet.parameters = {
-  docs: {
-    description: {
-      story: `The expanded variant automatically snaps to free space for the content on tablets. The snapped variant is unchanged.
-      `
-    }
-  }
-};
-
-export const NavigationPopupPhone = () => navigationPopupPhoneExampleHtml;
-NavigationPopupPhone.storyName = 'Vertical Navigation - Popup, Phone';
-NavigationPopupPhone.parameters = {
-  docs: {
-    description: {
-      story: `On phones, the navigation uses only the popup variant. Additionally, the structure and behavior of the content adapt depending on the variant type used on desktops and tablets.`
     }
   }
 };
