@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.39.1-rc.2](https://github.com/SAP/fundamental-styles/compare/v0.39.1-rc.1...v0.39.1-rc.2) (2025-03-14)
+
+### Bug Fixes
+
+- **styles:** make BTP vert nav looks like UXC side nav [ci visual] ([#5993](https://github.com/SAP/fundamental-styles/issues/5993)) ([55fadb4](https://github.com/SAP/fundamental-styles/commit/55fadb4c7176e6e0d11a59e4b493e9d28b4b7f11))
+
 ## [0.39.1-rc.1](https://github.com/SAP/fundamental-styles/compare/v0.39.1-rc.0...v0.39.1-rc.1) (2025-03-07)
 
 **Note:** Version bump only for package fundamental-styles
@@ -5788,9 +5794,9 @@ Co-authored-by: droshev <mladen.droshev@sap.com>
 
 - added a new modifier class to fd-row to achieve even alignment of its elements:fd-row--top in a form.
   Before:
-    <div class="fd-row">
-    After:
-    <div class="fd-row fd-row--top">
+      <div class="fd-row">
+      After:
+      <div class="fd-row fd-row--top">
 
 ### Bug Fixes
 
