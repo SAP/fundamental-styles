@@ -14,6 +14,7 @@ $fd-side-nav-border-radius: 1rem;
   --fdSideNav_Padding_Inline: 0;
   --fdSideNav_First_Item_Margin_Top: 0.25rem;
   --fdSideNav_Utility_Margin_Bottom: 1rem;
+  --fdNestedList_Item_Height: var(--sapElement_LineHeigh);
 
   transition: width ease-out 0.2s;
 
@@ -25,15 +26,9 @@ $fd-side-nav-border-radius: 1rem;
 
   width: 15rem;
   height: 100%;
-  padding-block: var(--fdSideNav_Padding_Block);
-  padding-inline: var(--fdSideNav_Padding_Inline);
   box-shadow: var(--sapContent_Shadow0);
   background-color: var(--sapGroup_ContentBackground);
-  border-radius: 0 $fd-side-nav-border-radius $fd-side-nav-border-radius 0;
-
-  @include fd-rtl() {
-    border-radius: $fd-side-nav-border-radius 0 0 $fd-side-nav-border-radius;
-  }
+  border-radius: 0;
 
   &__main-navigation {
     @include fd-reset();
@@ -43,51 +38,54 @@ $fd-side-nav-border-radius: 1rem;
     }
 
     overflow: hidden scroll;
+    padding-inline: 0.5rem;
+    padding-block: 0.5rem 0.25rem;
 
-    .#{$block-nested-list}.level-1 {
-      & > .#{$block-nested-list}__item:first-child {
-        .#{$block-nested-list}__link {
-          margin-top: var(--fdSideNav_First_Item_Margin_Top);
-        }
-      }
+    &.#{$fd-namespace}-scrollbar {
+      padding-inline: 0.5rem;
+      padding-block: 0.5rem 0.25rem;
     }
+
   }
 
   &__utility {
     @include fd-reset();
 
+    padding-inline: 0.5rem;
+    padding-block-end: 0.5rem;
+
+
     &::before {
-      content: " ";
+      content: "";
       display: block;
-      margin-block: 0.25rem var(--fdSideNav_Utility_Margin_Bottom);
+      width: auto;
+      height: 0.0625rem;
+      background: var(--sapToolbar_SeparatorColor);
+      margin-block-end: 0.25rem;
       margin-inline: 0.5rem;
-      border-top: 0.0625rem solid var(--sapList_HeaderBorderColor);
     }
   }
 
   &__popover-body {
     @include fd-set-width(16rem !important);
 
-    padding-block: 0.25rem !important;
+    margin-block: 0.25rem !important;
     padding-inline: 0 !important;
     border-radius: $fd-side-nav-border-radius !important;
 
     .#{$block-nested-list} {
       &.level-2 {
-        & > .#{$block-nested-list}__item {
-          @include fd-set-margins-x-equal(0.5rem);
+        padding-inline: 0.5rem;
+        padding-block: 0.5rem;
 
-          .#{$block-nested-list}__title {
-            @include fd-set-paddings-x-equal(1rem);
-          }
+        .#{$block-nested-list}__title {
+          font-family: var(--sapFontFamily);
         }
       }
 
       &.level-3 {
-        & > .#{$block-nested-list}__item {
-          .#{$block-nested-list}__title {
-            @include fd-set-paddings-x(3rem, 1rem);
-          }
+        .#{$block-nested-list}__link-container {
+          --fdNestedList_Start_Offset: 3rem;
         }
       }
     }
@@ -127,6 +125,7 @@ $fd-side-nav-border-radius: 1rem;
   &--narrow-animated-items {
     .#{$fd-cx-namespace}-nested-list {
       &__title,
+      &__button,
       &__arrow[class*="sap-icon"] {
         visibility: hidden;
         opacity: 0;
@@ -139,9 +138,14 @@ $fd-side-nav-border-radius: 1rem;
   &--narrow {
     width: 4rem;
 
+    .#{$block-nested-list}__link {
+      @include fd-set-height(var(--fdNestedList_Item_Height));
+    }
+
     &:not(.#{$block}--narrow-animated-items) {
-      .#{$fd-cx-namespace}-nested-list {
+      .#{$block-nested-list} {
         &__title,
+        &__button,
         &__arrow[class*="sap-icon"] {
           display: none;
           height: var(--fdNestedList_Item_Height);
@@ -149,9 +153,10 @@ $fd-side-nav-border-radius: 1rem;
       }
     }
 
-    .#{$fd-cx-namespace}-nested-list {
+    .#{$block-nested-list} {
       // Child Level Indicator
-      button.#{$fd-cx-namespace}-nested-list__link {
+      div.#{$block-nested-list}__link,
+      button.#{$block-nested-list}__link {
         position: relative;
 
         &::before {
@@ -164,7 +169,6 @@ $fd-side-nav-border-radius: 1rem;
           position: absolute;
           padding-inline-end: 0.25rem;
           font-family: SAP-icons;
-          font-size: var(--sapFontSmallSize);
         }
 
         @include fd-rtl() {
@@ -173,8 +177,38 @@ $fd-side-nav-border-radius: 1rem;
 
             left: 0;
             right: auto;
+            padding-inline: 0.25rem 0;
             transform: rotateY(180deg) translateY(-50%);
           }
+        }
+      }
+    }
+  }
+
+  &.#{$block}--narrow,
+  &.#{$block}--narrow.#{$block}--narrow-animated-items {
+    .#{$block}__main-navigation {
+      overflow: visible;
+    }
+
+
+    .#{$block-nested-list}__link {
+      @include fd-hover() {
+        width: fit-content;
+
+        &::before {
+          display: none;
+        }
+
+        .#{$block-nested-list}__button,
+        .#{$block-nested-list}__arrow[class*=sap-icon],
+        .#{$block-nested-list}__title {
+          opacity: 1;
+          height: auto;
+          display: flex;
+          overflow: visible;
+          visibility: visible;
+          white-space: nowrap;
         }
       }
     }
@@ -204,5 +238,9 @@ $fd-side-nav-border-radius: 1rem;
         @include fd-ellipsis();
       }
     }
+  }
+
+  @include fd-compact-or-condensed() {
+    --fdNestedList_Item_Height: var(--sapElement_Compact_LineHeight);
   }
 }
