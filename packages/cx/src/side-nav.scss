@@ -185,35 +185,6 @@ $fd-side-nav-border-radius: 1rem;
     }
   }
 
-  &.#{$block}--narrow,
-  &.#{$block}--narrow.#{$block}--narrow-animated-items {
-    .#{$block}__main-navigation {
-      overflow: visible;
-    }
-
-
-    .#{$block-nested-list}__link {
-      @include fd-hover() {
-        width: fit-content;
-
-        &::before {
-          display: none;
-        }
-
-        .#{$block-nested-list}__button,
-        .#{$block-nested-list}__arrow[class*=sap-icon],
-        .#{$block-nested-list}__title {
-          opacity: 1;
-          height: auto;
-          display: flex;
-          overflow: visible;
-          visibility: visible;
-          white-space: nowrap;
-        }
-      }
-    }
-  }
-
   &--dynamic-width {
     min-width: 15rem;
     max-width: 100%;
