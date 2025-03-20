@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.39.1-rc.6](https://github.com/SAP/fundamental-styles/compare/v0.39.1-rc.5...v0.39.1-rc.6) (2025-03-20)
+
+### Bug Fixes
+
+- **styles:** remove the hover effect on narrow state for CX side nav ([#5998](https://github.com/SAP/fundamental-styles/issues/5998)) ([fec429a](https://github.com/SAP/fundamental-styles/commit/fec429a22cc7609fc3ac46d65f2ca247df9cc3fd))
+
 ## [0.39.1-rc.5](https://github.com/SAP/fundamental-styles/compare/v0.39.1-rc.4...v0.39.1-rc.5) (2025-03-19)
 
 **Note:** Version bump only for package fundamental-styles
@@ -5808,9 +5814,9 @@ Co-authored-by: droshev <mladen.droshev@sap.com>
 
 - added a new modifier class to fd-row to achieve even alignment of its elements:fd-row--top in a form.
   Before:
-      <div class="fd-row">
-      After:
-      <div class="fd-row fd-row--top">
+  <div class="fd-row">
+  After:
+  <div class="fd-row fd-row--top">
 
 ### Bug Fixes
 
