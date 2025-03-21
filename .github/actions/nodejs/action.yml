@@ -11,32 +11,17 @@ runs:
   using: composite
   steps:
     - name: Use Node.js ${{ inputs.node-version }}
-      uses: actions/setup-node@v4.1.0
+      uses: actions/setup-node@v4.3.0
       with:
         node-version: ${{ inputs.node-version }}
 
-    - name: Install Corepack
+    - name: Install Corepack and Enable Yarn
       run: |
           echo "Installing Corepack..."
           npm install -g corepack || { echo 'Corepack installation failed'; exit 1; }
           echo "Corepack installed successfully."
           corepack --version
-      shell: bash
-
-    - name: Enable Corepack
-      run: |
-          echo "Enabling Corepack..."
-          corepack enable || { echo 'Corepack enable failed'; exit 1; }
-          echo "Corepack enabled successfully."
-          corepack --version
-      shell: bash
-
-    - name: Activate Yarn 4.7 and Show Version
-      run: |
-          echo "Preparing and Activating Yarn 4.7..."
-          corepack prepare yarn@4.7 --activate || { echo 'Yarn activation failed'; exit 1; }
-          echo "Yarn activated successfully."
-          yarn --version
+          corepack enable yarn
       shell: bash
 
     - name: Get yarn cache directory path
@@ -45,14 +30,14 @@ runs:
       shell: bash
 
     - name: Use the global Yarn cache if available
-      uses: actions/cache@v4.2.0
+      uses: actions/cache@v4.2.3
       with:
           path: ${{ steps.yarn-cache-dir-path.outputs.dir }}
           key: ${{ runner.os }}-node-${{ inputs.node_version }}-yarn-${{ hashFiles('**/yarn.lock') }}
           restore-keys: |
               ${{ runner.os }}-node-${{ inputs.node_version }}-yarn-
 
-    - uses: actions/cache@v4.2.0
+    - uses: actions/cache@v4.2.3
       id: node-modules-cache
       name: Use project node_modules cache if available
       with:
@@ -60,17 +45,6 @@ runs:
         key: ${{ runner.os }}-${{ inputs.node-version }}-node-modules-${{ hashFiles('**/yarn.lock') }}
         restore-keys: |
           ${{ runner.os }}-${{ inputs.node-version }}-node-modules-
-
-    - name: Capture environment details before installation
-      run: |
-          echo "Environment Details:"
-          node --version
-          npm --version
-          corepack --version
-          yarn --version
-          echo "Directory Details (sanitized):"
-          ls -la
-      shell: bash
 
     - name: Install dependencies
       if: inputs.frozen-lockfile != 'true' || steps.node_modules.outputs.cache-hit != 'true'

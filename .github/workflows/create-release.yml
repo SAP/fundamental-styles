@@ -79,7 +79,7 @@ jobs:
               uses: ./.github/actions/generate-conventional-release-notes
 
             - name: Create Release
-              uses: ncipollo/release-action@v1.14.0
+              uses: ncipollo/release-action@v1.16.0
               with:
                   prerelease: ${{ steps.bumpVersion.outputs.isPrerelease }}
                   tag: v${{ steps.bumpVersion.outputs.newVersion }}
@@ -119,7 +119,7 @@ jobs:
               run: npx cross-env STORYBOOK_BASE_HREF=fundamental-styles yarn run storybook:static
 
             - name: Publish to gh-pages
-              uses: JamesIves/github-pages-deploy-action@v4.7.2
+              uses: JamesIves/github-pages-deploy-action@v4.7.3
               with:
                   folder: storybook-static
                   token: ${{ secrets.GHACTIONS }}
