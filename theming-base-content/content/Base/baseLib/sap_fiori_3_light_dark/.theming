@@ -4,20 +4,23 @@
 	"sLabel": "SAP Quartz Light/Dark",
 	"sHelpLink": "https://experience.sap.com/fiori-design-web/quartz-light-colors/",
 	"sVendor": "SAP",
-	"sType": "SET",
-	"sReleaseStage": "DEVELOPMENT",
-	"sThemability": "PRIVATE",
-	"sFallbackThemeId": "sap_fiori_3",
 	"aBuildFiles": [],
 	"aFiles": [],
-	"aTags": ["Fiori_3"],
+	"sFallbackThemeId": "sap_fiori_3",
+	"sType": "SET",
+	"sThemability": "PRIVATE",
+	"aTags": [
+		"Fiori_3"
+	],
+	"sReleaseStage": "DEVELOPMENT",
 	"mSet": {
 		"aThemes": [
 			{
 				"sId": "sap_fiori_3",
 				"sColorScheme": "LIGHT",
 				"bDefault": true
-			}, {
+			},
+			{
 				"sId": "sap_fiori_3_dark",
 				"sColorScheme": "DARK"
 			}

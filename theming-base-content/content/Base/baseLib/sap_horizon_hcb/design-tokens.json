@@ -28996,6 +28996,11 @@
       "type": "image",
       "description": "The gradient or the URI to the image which is shown as background."
     },
+    "sapFavicon": {
+      "value": "{Image.sapShell_Favicon}",
+      "type": "image",
+      "description": "The URI to the favorite or shortcut icon displayed."
+    },
     "sapCompanyLogo": {
       "value": "none",
       "type": "image",

@@ -1,4 +1,4 @@
-/* Copyright (c) 2012-2024 SAP SE or an SAP affiliate company and Theming Base Content contributors. Licensed under the Apache License, Version 2.0 - see LICENSE.txt..  Theming Engine 14.2.25 */
+/* Copyright (c) 2012-2025 SAP SE or an SAP affiliate company and Theming Base Content contributors. Licensed under the Apache License, Version 2.0 - see LICENSE.txt..  Theming Engine 14.2.35 */
 $sapBrandColor: #0070f2;
 $sapHighlightColor: #4db1ff;
 $sapBaseColor: #1d232a;
@@ -9,6 +9,7 @@ $sapFontSize: .875rem;
 $sapTextColor: #eaecee;
 $sapLinkColor: #4db1ff;
 $sapCompanyLogo: none;
+$sapFavicon: none;
 $sapBackgroundImage: none;
 $sapBackgroundImageOpacity: 1.0;
 $sapBackgroundImageRepeat: false;
@@ -112,7 +113,7 @@ $sapContent_Selected_Background: #1d232a;
 $sapContent_Selected_Hover_Background: #002b4d;
 $sapContent_Selected_ForegroundColor: #4db1ff;
 $sapContent_ForcedColorAdjust: none;
-$sapContent_Lite_Shadow: 0 0 0 0.0625rem rgba(255,255,255,0.35), 0 0.125rem 0.5rem 0 rgba(0,0,0,0.6);
+$sapContent_Lite_Shadow: none;
 $sapContent_Illustrative_Color1: #9b015d;
 $sapContent_Illustrative_Color2: #4d82b8;
 $sapContent_Illustrative_Color3: #ff7f4c;

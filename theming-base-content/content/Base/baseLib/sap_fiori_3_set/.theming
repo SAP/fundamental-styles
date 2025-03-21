@@ -3,12 +3,12 @@
 	"sId": "sap_fiori_3_set",
 	"sLabel": "SAP Quartz (Set)",
 	"sVendor": "SAP",
-	"sType": "SET",
-	"sReleaseStage": "GENERAL_AVAILABILITY",
-	"sReleaseDate": "20220419T00:00:00Z",
-	"sThemability": "PRIVATE",
 	"aBuildFiles": [],
 	"aFiles": [],
+	"sType": "SET",
+	"sThemability": "PRIVATE",
+	"sReleaseStage": "GENERAL_AVAILABILITY",
+	"sReleaseDate": "20220419T00:00:00Z",
 	"mSet": {
 		"aThemes": [
 			{

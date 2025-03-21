@@ -1,16 +1,17 @@
-import{f as n}from"./IntroductionPage-a748c529.js";import{R as t}from"./IntroductionPageWrapper-5b629e48.js";import{aq as s}from"./chunk-NUUEMKO5-ea6b46f4.js";/* empty css                   */import"./_commonjsHelpers-725317a4.js";import"./chunk-PRSJUHPQ-431c1fc2.js";import"./iframe-5622f1f8.js";import"./index-350215a2.js";import"./index-356e4a49.js";const a=`# Fundamental Library Styles
+import{f as e}from"./IntroductionPage-0f72a9d6.js";import{R as t}from"./IntroductionPageWrapper-6fc28e30.js";import{aq as s}from"./chunk-NUUEMKO5-ad06eeec.js";/* empty css                   */import"./_commonjsHelpers-725317a4.js";import"./chunk-PRSJUHPQ-82af3cbc.js";import"./iframe-bf89e96a.js";import"./index-350215a2.js";import"./index-356e4a49.js";const a=`# Fundamental Library Styles
 
 <a href="https://badge.fury.io/js/fundamental-styles"><img src="https://badge.fury.io/js/fundamental-styles.svg" alt="NPM Version"/></a>
 <img src="https://github.com/SAP/fundamental-styles/actions/workflows/create-release.yml/badge.svg?branch=main" alt="CI Status"/>
 <img src="https://img.shields.io/npm/dm/fundamental-styles?label=npm%20downloads" alt="NPM Downloads">
 <a href="https://join.slack.com/t/ui-fundamentals/shared_invite/enQtNTIzOTU0Mzc2NTc5LWQzZWI5MWFhYjE5OTc4YzliN2JhOTc1ZjQxZTg1YjZiMWZiYzRkNjMwYzgyMmFkYmNhZDVjMWE5MDIzOWEzMmM">
-<img src="https://img.shields.io/badge/slack-ui--fundamentals-blue.svg?logo=slack" alt="Slack">
+    <img src="https://img.shields.io/badge/slack-ui--fundamentals-blue.svg?logo=slack" alt="Slack">
 </a>
 <a href="https://api.reuse.software/info/github.com/SAP/fundamental-styles">
     <img src="https://api.reuse.software/badge/github.com/SAP/fundamental-styles" alt="REUSE status">
 </a>
+
 <a href="https://storybook.js.org/">
-    <img src="https://raw.githubusercontent.com/storybookjs/brand/main/badge/badge-storybook.svg" alt="StorybookJS"/>
+    <img src="https://raw.githubusercontent.com/storybookjs/brand/main/badge/badge-storybook.svg" alt="StorybookJS" />
 </a>
 
 <a href="https://www.netlify.com">
@@ -19,9 +20,11 @@ import{f as n}from"./IntroductionPage-a748c529.js";import{R as t}from"./Introduc
 
 ## What is Fundamental Library Styles?
 
-Fundamental Library Styles is a lightweight presentation layer that can be used in conjunction with any UI framework, such as Angular, React, Vue, etc. By utilizing the Fundamental Styles library, which includes a collection of stylesheets and HTML tags, developers can create visually consistent and professional-looking Fiori applications in any web-based technology of their choice.
+Fundamental Library Styles is a light-weight presentation layer that can be used with developers' UI framework of
+choice (e.g.Angular, React, Vue, etc.). Developers can build consistent Fiori apps in any web-based technology, by
+combining Fundamental Styles, library of stylesheets and HTML tags.
 
-
+**Learn more at http://sap.github.io/fundamental-styles/**
 
 We are also working on [Angular](https://github.com/SAP/fundamental-ngx)
 , [React](https://github.com/SAP/fundamental-react) and [Vue](https://github.com/SAP/fundamental-vue) implementations.
@@ -95,7 +98,7 @@ list of icon class names. See Project Configuration below for instructions to in
 ### Project Configuration
 
 This project does not contain fonts and icons - they must be added to your project separately. Download the @sap-theming
-library. After adding fonts and icons to your project, include the following in your CSS(The icon font files have different design for Fiori 3 themes and they can be found in the folder \`@sap-theming/theming-base-content/content/Base/baseLib/baseTheme/fonts/\`):
+library. After adding fonts and icons to your project, include the following in your CSS:
 
 \`\`\`css
 @font-face {
@@ -203,7 +206,6 @@ the [Fundamentals Slack channel](https://join.slack.com/t/ui-fundamentals/shared
 ## Contributing
 
 If you want to contribute, please check
-the [SAP Contribution Guidelines](https://github.com/SAP/.github/blob/main/CONTRIBUTING.md), 
 the [Contribution Guidelines](https://github.com/SAP/fundamental-styles/wiki/Contribution-Guidelines). Also check
 the [Development Guidelines](https://github.com/SAP/fundamental-styles/wiki/Development-Guidelines)
 and [Visual Testing Guide](https://github.com/SAP/fundamental-styles/wiki/Visual-testing-with-Chromatic).
@@ -228,23 +230,13 @@ The following circumstances will NOT be considered a MAJOR or BREAKING change:
 * Introducing new classnames, CSS variables, color names, color groups, spacing parameters
 * Adding or modifying CSS properties and values of existing classnames.
 
-## Fundamental Library GitHub Repository
-
-The Fundamental Library GitHub Repository is a monorepo package that allows the reusage of other packages while keeping them isolated from one another. The Fundamental Library GitHub Repository consist of:
-
-[Customer Experience Package](https://github.com/SAP/fundamental-styles/tree/main/packages/cx)
-[Fundamental Library Next Package](https://github.com/SAP/fundamental-styles/tree/main/packages/fn)
-[Common Css](https://github.com/SAP/fundamental-styles/tree/main/packages/common-css)
-[Styles Package](https://github.com/SAP/fundamental-styles/tree/main/packages/styles)
-
-
 ## Thanks
 
 <a href="https://www.chromatic.com/"><img src="https://user-images.githubusercontent.com/321738/84662277-e3db4f80-af1b-11ea-88f5-91d67a5e59f6.png" width="153" height="30" alt="Chromatic" /></a>
 
 Thanks to [Chromatic](https://www.chromatic.com/) for providing the visual testing platform that helps us review UI
 changes and catch visual regressions.
-`,f={title:"Docs / Introduction",component:()=>null,parameters:{docs:{container:s,page:t(a),theme:n},previewTabs:{canvas:{hidden:!0}},viewMode:"docs",visualDisabled:!0,docsOnly:!0}},e={render:()=>"<div></div>",parameters:{title:"Overview",storyshots:{disable:!0},viewMode:"docs",docsOnly:!0}};e.parameters={...e.parameters,docs:{...e.parameters?.docs,source:{originalSource:`{
+`,d={title:"Introduction",component:()=>null,parameters:{docs:{container:s,page:t(a),theme:e},previewTabs:{canvas:{hidden:!0}},viewMode:"docs",visualDisabled:!0,docsOnly:!0}},n={render:()=>"<div></div>",parameters:{storyshots:{disable:!0},docsOnly:!0}};n.parameters={...n.parameters,docs:{...n.parameters?.docs,source:{originalSource:`{
   render: () => {
     /*
       this will serve as default redirect to the docs page,
@@ -254,11 +246,9 @@ changes and catch visual regressions.
     return '<div></div>';
   },
   parameters: {
-    title: 'Overview',
     storyshots: {
       disable: true
     },
-    viewMode: 'docs',
     docsOnly: true
   }
-}`,...e.parameters?.docs?.source}}};const p=["Overview"];export{e as Overview,p as __namedExportsOrder,f as default};
+}`,...n.parameters?.docs?.source}}};const p=["Styles"];export{n as Styles,p as __namedExportsOrder,d as default};

@@ -10,6 +10,7 @@
 		"sapTextColor": "#fff",
 		"sapLinkColor": "#fff",
 		"sapCompanyLogo": "none",
+		"sapFavicon": "none",
 		"sapBackgroundImage": "none",
 		"sapBackgroundImageOpacity": "1.0",
 		"sapBackgroundImageRepeat": "false",

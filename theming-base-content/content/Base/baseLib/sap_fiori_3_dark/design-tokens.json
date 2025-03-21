@@ -25653,6 +25653,11 @@
       "type": "image",
       "description": "The gradient or the URI to the image which is shown as background."
     },
+    "sapFavicon": {
+      "value": "{Image.sapShell_Favicon}",
+      "type": "image",
+      "description": "The URI to the favorite or shortcut icon displayed."
+    },
     "sapCompanyLogo": {
       "value": "none",
       "type": "image",
@@ -26150,7 +26155,7 @@
       "description": "The success header shadow styling."
     },
     "sapContent_Lite_Shadow": {
-      "value": "{Shadow.sapContent_Shadow1}",
+      "value": "none",
       "type": "boxShadow",
       "description": "The value of lite shadows. (With no shadows in standard themes and a visible shadow in high contrast)"
     },

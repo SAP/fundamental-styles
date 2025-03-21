@@ -1,4 +1,4 @@
-import{f as t}from"./IntroductionPage-a748c529.js";import{R as n}from"./IntroductionPageWrapper-5b629e48.js";import{aq as r}from"./chunk-NUUEMKO5-ea6b46f4.js";/* empty css                   */import"./_commonjsHelpers-725317a4.js";import"./chunk-PRSJUHPQ-431c1fc2.js";import"./iframe-5622f1f8.js";import"./index-350215a2.js";import"./index-356e4a49.js";const o=`# CX - Customer Experience 
+import{f as t}from"./IntroductionPage-0f72a9d6.js";import{R as n}from"./IntroductionPageWrapper-6fc28e30.js";import{aq as r}from"./chunk-NUUEMKO5-ad06eeec.js";/* empty css                   */import"./_commonjsHelpers-725317a4.js";import"./chunk-PRSJUHPQ-82af3cbc.js";import"./iframe-bf89e96a.js";import"./index-350215a2.js";import"./index-356e4a49.js";const o=`# CX - Customer Experience 
 
 The Customer Experience (CX) package offers components built following the CX style guidelines. The CX team owns the design and the components presented in this package. 
 
