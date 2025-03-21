@@ -1,6 +1,6 @@
 {
     "name": "@sap-ui/common-css",
-    "version": "0.39.1-rc.8",
+    "version": "0.39.1",
     "license": "Apache-2.0",
     "homepage": "https://sap.github.io/fundamental-styles/",
     "description": "SAP UI Common CSS",
