@@ -29,6 +29,14 @@ $fd-input-border-radius: var(--sapField_BorderCornerRadius);
   --fdInput_Height: 100%;
   --fdInput_Compact_Height: 100%;
 
+  &:has(input:is(:focus)),
+  &:has(button:is(:focus)) {
+    background: var(--sapField_Focus_Background);
+    outline: var(--fdInput_Outline_Color) var(--sapContent_FocusStyle) var(--sapContent_FocusWidth);
+    outline-offset: var(--fdInput_Outline_Offset);
+    box-shadow: none;
+  }
+
   .#{$block}__input {
     @include fd-reset-child-spacing();
 
@@ -105,6 +113,14 @@ $fd-input-border-radius: var(--sapField_BorderCornerRadius);
       padding-block: 0;
       padding-inline: 0;
       overflow: visible;
+
+      button {
+        @include fd-focus() {
+          &::after {
+            border: none;
+          }
+        }
+      }
     }
   }
 
