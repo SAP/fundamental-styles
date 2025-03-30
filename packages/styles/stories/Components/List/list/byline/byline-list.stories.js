@@ -10,6 +10,7 @@ import buttonsExampleHtml from "./buttons.example.html?raw";
 import navigationExampleHtml from "./navigation.example.html?raw";
 import attachmentExampleHtml from "./attachment.example.html?raw";
 import standardExampleHtml from "./standard.example.html?raw";
+import groupHeaderExampleHtml from "./group-header.example.html?raw";
 import '../../../../../src/list.scss';
 import '../../../../../src/icon.scss';
 import '../../../../../src/checkbox.scss';
@@ -159,6 +160,9 @@ When more than 100 characters for small screens or 300 characters for medium to 
     }
   }
 };
+export const GroupHeader = () => groupHeaderExampleHtml;
+GroupHeader.storyName = 'With Group Header';
+
 export const UnreadNotification = () => unreadNotificationExampleHtml;
 UnreadNotification.parameters = {
   docs: {

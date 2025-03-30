@@ -8,6 +8,7 @@
   position: relative;
   list-style: none;
   width: 100%;
+  max-width: 100% !important;
 
   &__item,
   &__group-header,

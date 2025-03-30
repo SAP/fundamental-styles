@@ -171,6 +171,10 @@ $fd-list-byline-section-text-color: var(--sapContent_LabelColor) !default;
       }
     }
 
+    .#{$block}__group-header {
+      @include fd-set-height(var(--sapElement_LineHeight));
+    }
+
     &.#{$block}--unread-indicator {
       .#{$block}__item {
         @include fd-set-paddings-x($fd-list-unread-indicator-spacing, $fd-list-byline-item-padding-x);
