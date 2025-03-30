@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.39.2-rc.4](https://github.com/SAP/fundamental-styles/compare/v0.39.2-rc.3...v0.39.2-rc.4) (2025-03-30)
+
+### Bug Fixes
+
+- **styles:** bring CSS for byline list from fund-ngx [ci visual] ([#6007](https://github.com/SAP/fundamental-styles/issues/6007)) ([d4bb084](https://github.com/SAP/fundamental-styles/commit/d4bb0840d54d80416c2e82786b6d43f12077f141))
+- **styles:** style properly the title of facets [ci visual] ([#6006](https://github.com/SAP/fundamental-styles/issues/6006)) ([95b613b](https://github.com/SAP/fundamental-styles/commit/95b613b1684c7f45fd90ad0176997a138bc89040))
+
 ## [0.39.2-rc.3](https://github.com/SAP/fundamental-styles/compare/v0.39.2-rc.2...v0.39.2-rc.3) (2025-03-25)
 
 **Note:** Version bump only for package fundamental-styles
