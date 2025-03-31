@@ -20424,7 +20424,7 @@
         "type": "internal"
       },
       "_sapField_ReadOnly_BackgroundA": {
-        "value": "(50) / 100",
+        "value": "{Input.Standard._sapField_BackgroundA}",
         "type": "internal"
       },
       "sapField_ReadOnly_Background": {
@@ -20651,19 +20651,19 @@
         "type": "internal"
       },
       "_sapField_Focus_BorderColorH": {
-        "value": "{Input.Standard._sapField_BorderColorH}",
+        "value": "{Focus._sapContent_FocusColorH}",
         "type": "internal"
       },
       "_sapField_Focus_BorderColorS": {
-        "value": "{Input.Standard._sapField_BorderColorS}",
+        "value": "{Focus._sapContent_FocusColorS}",
         "type": "internal"
       },
       "_sapField_Focus_BorderColorL": {
-        "value": "{Input.Standard._sapField_BorderColorL}",
+        "value": "{Focus._sapContent_FocusColorL}",
         "type": "internal"
       },
       "_sapField_Focus_BorderColorA": {
-        "value": "{Input.Standard._sapField_BorderColorA}",
+        "value": "{Focus._sapContent_FocusColorA}",
         "type": "internal"
       },
       "_sapField_Focus_BackgroundH": {
@@ -25691,11 +25691,11 @@
       "type": "internal"
     },
     "_sapLink_InvertedColorS": {
-      "value": "{Link._sapLinkColorS}",
+      "value": "{Link._sapLinkColorS} + 6%",
       "type": "internal"
     },
     "_sapLink_InvertedColorL": {
-      "value": "{Link._sapLinkColorL} + 14%",
+      "value": "{Link._sapLinkColorL} + 36%",
       "type": "internal"
     },
     "_sapLink_InvertedColorA": {
@@ -25753,6 +25753,22 @@
       "type": "textDecoration",
       "description": "The text decoration of links."
     },
+    "_sapLinkColorH": {
+      "value": "{Internal._sapPrimary2H}",
+      "type": "internal"
+    },
+    "_sapLinkColorS": {
+      "value": "{Internal._sapPrimary2S}",
+      "type": "internal"
+    },
+    "_sapLinkColorL": {
+      "value": "{Internal._sapPrimary2L} - 22%",
+      "type": "internal"
+    },
+    "_sapLinkColorA": {
+      "value": "{Internal._sapPrimary2A}",
+      "type": "internal"
+    },
     "sapLinkColor": {
       "value": "hsla({Link._sapLinkColorH}, {Link._sapLinkColorS}, {Link._sapLinkColorL}, {Link._sapLinkColorA})",
       "type": "color",
@@ -25788,22 +25804,6 @@
     },
     "_sapLink_Active_ColorA": {
       "value": "{Link._sapLinkColorA}",
-      "type": "internal"
-    },
-    "_sapLinkColorH": {
-      "value": "{Internal._sapPrimary2H}",
-      "type": "internal"
-    },
-    "_sapLinkColorS": {
-      "value": "{Internal._sapPrimary2S}",
-      "type": "internal"
-    },
-    "_sapLinkColorL": {
-      "value": "{Internal._sapPrimary2L}",
-      "type": "internal"
-    },
-    "_sapLinkColorA": {
-      "value": "{Internal._sapPrimary2A}",
       "type": "internal"
     }
   },

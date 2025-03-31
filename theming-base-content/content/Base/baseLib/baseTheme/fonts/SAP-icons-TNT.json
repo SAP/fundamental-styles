@@ -1402,5 +1402,55 @@
 		"groups": ["status"],
 		"tags": ["accelerator", "business-content", "business-accelerator"],
 		"rtl": "flip"
+	},
+	"0xe113": {
+		"names": ["ai-feature-estimator"],
+		"groups": ["objects"],
+		"tags": [
+			"calculate-ai", 
+			"calculate", 
+			"estimate-ai", 
+			"ai-cost", 
+			"ai-savings", 
+			"savings"
+		],
+		"rtl": "flip"
+	},
+		"0xe114": {
+		"names": ["service-estimator"],
+		"groups": ["objects"],
+		"tags": [
+			"calculate",  
+			"estimate", 
+			"service", 
+			"cost", 
+			"rough-estimate", 
+			"commercial-model"
+		],
+		"rtl": "flip"
+	},
+		"0xe115": {
+		"names": ["add-project"],
+		"groups": ["status"],
+		"tags": [
+			"project", 
+			"plan", 
+			"project-plan", 
+			"manage", 
+			"add"
+		],
+		"rtl": "flip"
+	},
+		"0xe116": {
+		"names": ["add-issue"],
+		"groups": ["status"],
+		"tags": [
+			"issue", 
+			"alert", 
+			"critical", 
+			"warning", 
+			"add"
+		],
+		"rtl": "flip"
 	}
 }

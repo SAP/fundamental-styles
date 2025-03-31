@@ -71,7 +71,7 @@
 		},
 		{
 			"Id": "sapLinkColor",
-			"CssValue": "#91c8f6",
+			"CssValue": "#2994ee",
 			"Label": "Link Color",
 			"Tags": "Quick,Base,Content,Color,Font,Link"
 		},

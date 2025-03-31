@@ -49,7 +49,7 @@
 		},
 		{
 			"Id": "sapTextColor",
-			"CssValue": "#1d2d3e",
+			"CssValue": "#131e29",
 			"Label": "Text Color",
 			"Tags": "Quick,Base,Content,Color,Font,Mobile"
 		},
@@ -91,19 +91,19 @@
 		},
 		{
 			"Id": "sapShell_TextColor",
-			"CssValue": "#1d2d3e",
+			"CssValue": "#131e29",
 			"Label": "Shell Text Color",
 			"Tags": "Base,Shell,Color,Font,Mobile"
 		},
 		{
 			"Id": "sapShell_InteractiveTextColor",
-			"CssValue": "#1d2d3e",
+			"CssValue": "#131e29",
 			"Label": "Shell Interactive Text Color",
 			"Tags": "Base,Shell,Color,Font"
 		},
 		{
 			"Id": "sapShell_GroupTitleTextColor",
-			"CssValue": "#1d2d3e",
+			"CssValue": "#131e29",
 			"Label": "Shell Group Title Text Color",
 			"Tags": "Base,Shell,Color,Font"
 		},
@@ -121,7 +121,7 @@
 		},
 		{
 			"Id": "sapShell_Navigation_TextColor",
-			"CssValue": "#1d2d3e",
+			"CssValue": "#131e29",
 			"Label": "Shell Navigation Text Color",
 			"Tags": "Base,Shell,Color,Font"
 		},
@@ -151,7 +151,7 @@
 		},
 		{
 			"Id": "sapTile_TitleTextColor",
-			"CssValue": "#1d2d3e",
+			"CssValue": "#131e29",
 			"Label": "Tile Title Text Color",
 			"Tags": "Base,Tile,Color,Font"
 		}

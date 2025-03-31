@@ -391,15 +391,15 @@
       "type": "color"
     },
     "_sapPrimary6H": {
-      "value": "209.99999999999977",
+      "value": "210",
       "type": "internal"
     },
     "_sapPrimary6S": {
-      "value": "10.526315789473728%",
+      "value": "11.111111111111075%",
       "type": "internal"
     },
     "_sapPrimary6L": {
-      "value": "92.54901960784314%",
+      "value": "96.47058823529412%",
       "type": "internal"
     },
     "_sapPrimary6A": {
@@ -11659,7 +11659,7 @@
         "type": "internal"
       },
       "_sapChart_Data_TextColorL": {
-        "value": "{Text._sapTextColorL} + 8%",
+        "value": "{Text._sapTextColorL} + 4%",
         "type": "internal"
       },
       "_sapChart_Data_TextColorA": {
@@ -20679,7 +20679,7 @@
         "type": "internal"
       },
       "_sapField_TextColorL": {
-        "value": "{Text._sapTextColorL} + 8%",
+        "value": "{Text._sapTextColorL} + 4%",
         "type": "internal"
       },
       "_sapField_TextColorA": {
@@ -25778,7 +25778,7 @@
       "type": "internal"
     },
     "_sapLink_InvertedColorL": {
-      "value": "{Link._sapLinkColorL} + 22%",
+      "value": "{Link._sapLinkColorL} + 37%",
       "type": "internal"
     },
     "_sapLink_InvertedColorA": {
@@ -25819,6 +25819,22 @@
       "value": "none",
       "type": "textDecoration",
       "description": "The text decoration of links."
+    },
+    "_sapLinkColorH": {
+      "value": "{Main._sapHighlightColorH}",
+      "type": "internal"
+    },
+    "_sapLinkColorS": {
+      "value": "{Main._sapHighlightColorS}",
+      "type": "internal"
+    },
+    "_sapLinkColorL": {
+      "value": "{Main._sapHighlightColorL} - 15%",
+      "type": "internal"
+    },
+    "_sapLinkColorA": {
+      "value": "{Main._sapHighlightColorA}",
+      "type": "internal"
     },
     "sapLinkColor": {
       "value": "hsla({Link._sapLinkColorH}, {Link._sapLinkColorS}, {Link._sapLinkColorL}, {Link._sapLinkColorA})",
@@ -25887,22 +25903,6 @@
     },
     "_sapLink_Hover_ColorA": {
       "value": "{Link._sapLinkColorA}",
-      "type": "internal"
-    },
-    "_sapLinkColorH": {
-      "value": "{Main._sapHighlightColorH}",
-      "type": "internal"
-    },
-    "_sapLinkColorS": {
-      "value": "{Main._sapHighlightColorS}",
-      "type": "internal"
-    },
-    "_sapLinkColorL": {
-      "value": "{Main._sapHighlightColorL}",
-      "type": "internal"
-    },
-    "_sapLinkColorA": {
-      "value": "{Main._sapHighlightColorA}",
       "type": "internal"
     }
   },

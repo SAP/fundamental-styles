@@ -395,11 +395,11 @@
       "type": "internal"
     },
     "_sapPrimary6S": {
-      "value": "7.4074074074074066%",
+      "value": "7.894736842105261%",
       "type": "internal"
     },
     "_sapPrimary6L": {
-      "value": "21.176470588235293%",
+      "value": "14.901960784313728%",
       "type": "internal"
     },
     "_sapPrimary6A": {
@@ -11803,7 +11803,7 @@
         "type": "internal"
       },
       "_sapChart_Data_TextColorL": {
-        "value": "{Text._sapTextColorL} - 20%",
+        "value": "{Text._sapTextColorL} - 15%",
         "type": "internal"
       },
       "_sapChart_Data_TextColorA": {
@@ -20539,11 +20539,11 @@
         "type": "internal"
       },
       "_sapField_ReadOnly_BackgroundL": {
-        "value": "{Input.Standard._sapField_BackgroundL} - 5%",
+        "value": "{Input.Standard._sapField_BackgroundL} - 2.8%",
         "type": "internal"
       },
       "_sapField_ReadOnly_BackgroundA": {
-        "value": "(50) / 100",
+        "value": "{Input.Standard._sapField_BackgroundA}",
         "type": "internal"
       },
       "sapField_ReadOnly_Background": {
@@ -20786,19 +20786,19 @@
         "type": "internal"
       },
       "_sapField_Focus_BorderColorH": {
-        "value": "{Input.Standard._sapField_BorderColorH}",
+        "value": "{Focus._sapContent_FocusColorH}",
         "type": "internal"
       },
       "_sapField_Focus_BorderColorS": {
-        "value": "{Input.Standard._sapField_BorderColorS}",
+        "value": "{Focus._sapContent_FocusColorS}",
         "type": "internal"
       },
       "_sapField_Focus_BorderColorL": {
-        "value": "{Input.Standard._sapField_BorderColorL}",
+        "value": "{Focus._sapContent_FocusColorL}",
         "type": "internal"
       },
       "_sapField_Focus_BorderColorA": {
-        "value": "{Input.Standard._sapField_BorderColorA}",
+        "value": "{Focus._sapContent_FocusColorA}",
         "type": "internal"
       },
       "_sapField_Focus_BackgroundH": {

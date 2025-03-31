@@ -391,15 +391,15 @@
       "type": "color"
     },
     "_sapPrimary6H": {
-      "value": "210.90909090909088",
+      "value": "210",
       "type": "internal"
     },
     "_sapPrimary6S": {
-      "value": "36.26373626373625%",
+      "value": "36.666666666666664%",
       "type": "internal"
     },
     "_sapPrimary6L": {
-      "value": "17.84313725490196%",
+      "value": "11.76470588235294%",
       "type": "internal"
     },
     "_sapPrimary6A": {
@@ -11787,7 +11787,7 @@
         "type": "internal"
       },
       "_sapChart_Data_TextColorL": {
-        "value": "{Text._sapTextColorL} - 20%",
+        "value": "{Text._sapTextColorL} - 14%",
         "type": "internal"
       },
       "_sapChart_Data_TextColorA": {
@@ -20821,22 +20821,6 @@
         "type": "color",
         "description": "The text color of prompt text (placeholder) within input controls."
       },
-      "_sapField_TextColorH": {
-        "value": "{Text._sapTextColorH}",
-        "type": "internal"
-      },
-      "_sapField_TextColorS": {
-        "value": "{Text._sapTextColorS}",
-        "type": "internal"
-      },
-      "_sapField_TextColorL": {
-        "value": "{Text._sapTextColorL} - 6%",
-        "type": "internal"
-      },
-      "_sapField_TextColorA": {
-        "value": "{Text._sapTextColorA}",
-        "type": "internal"
-      },
       "sapField_TextColor": {
         "value": "hsla({Input.Standard._sapField_TextColorH}, {Input.Standard._sapField_TextColorS}, {Input.Standard._sapField_TextColorL}, {Input.Standard._sapField_TextColorA})",
         "type": "color",
@@ -21042,6 +21026,22 @@
       },
       "_sapField_PlaceholderTextColorA": {
         "value": "{Text._sapContent_LabelColorA}",
+        "type": "internal"
+      },
+      "_sapField_TextColorH": {
+        "value": "{Text._sapTextColorH}",
+        "type": "internal"
+      },
+      "_sapField_TextColorS": {
+        "value": "{Text._sapTextColorS}",
+        "type": "internal"
+      },
+      "_sapField_TextColorL": {
+        "value": "{Text._sapTextColorL}",
+        "type": "internal"
+      },
+      "_sapField_TextColorA": {
+        "value": "{Text._sapTextColorA}",
         "type": "internal"
       }
     }

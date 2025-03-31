@@ -65,7 +65,7 @@
 		},
 		{
 			"Id": "sapTextColor",
-			"CssValue": "#32363a",
+			"CssValue": "#232629",
 			"Label": "Text Color",
 			"Tags": "Quick,Base,Content,Color,Font,Mobile"
 		},
@@ -119,7 +119,7 @@
 		},
 		{
 			"Id": "sapShell_GroupTitleTextColor",
-			"CssValue": "#32363a",
+			"CssValue": "#232629",
 			"Label": "Shell Group Title Text Color",
 			"Tags": "Base,Shell,Color,Font"
 		},
@@ -167,7 +167,7 @@
 		},
 		{
 			"Id": "sapTile_TitleTextColor",
-			"CssValue": "#32363a",
+			"CssValue": "#232629",
 			"Label": "Tile Title Text Color",
 			"Tags": "Base,Tile,Color,Font"
 		}
