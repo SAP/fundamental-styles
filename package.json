@@ -127,7 +127,7 @@
         "react-is": "18.3.1",
         "remark-gfm": "4.0.1",
         "sass": "1.52.1",
-        "semver": "7.5.4",
+        "semver": "7.7.1",
         "standard-version": "9.3.2",
         "start-server-and-test": "1.14.0",
         "storybook": "^8.6.11",
