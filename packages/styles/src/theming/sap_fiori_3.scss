@@ -16,7 +16,6 @@
 @import "./common/panel/sap_fiori";
 @import "./common/carousel/sap_fiori";
 @import "./common/feed-list-item/sap_fiori";
-@import "./common/message-box/sap_fiori";
 @import "./common/busy-indicator/sap_fiori";
 @import "./common/menu/sap_fiori";
 @import "./common/checkbox/sap_foiri";
@@ -32,7 +31,6 @@
 @import "./common/file-uploader/sap_fiori";
 @import "./common/variant-management/sap_fiori";
 @import "./common/shellbar/sap_fiori";
-@import "./common/user-menu/sap_fiori";
 @import "./common/flexible-column-layout/sap_fiori";
 @import "./common/avatar/sap_fiori";
 @import "./common/avatar-group/sap_fiori";
@@ -47,6 +45,7 @@
 @import "./common/search-field/sap_fiori";
 @import "./common/navigation/sap_fiori";
 @import "./common/navigation-menu/sap_fiori";
+@import "./common/navigation-list/sap_fiori";
 @import "./common/tool-header/sap_fiori";
 @import "./common/textarea/sap_fiori";
 
@@ -233,4 +232,7 @@
 
   /** Modal */
   --fdModal_BackgroundColor: rgb(0 0 0 / 60%);
+
+  /** User Menu */
+  --fdUserMenu_User_Name_Font_Family: var(--sapFontBoldFamily);
 }

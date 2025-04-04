@@ -9,6 +9,9 @@ $block: #{$fd-namespace}-link;
   @include fd-reset();
   @include fd-link();
 
+  text-underline-offset: 0.125rem;
+  line-height: var(--fdLink_Line_Height, 1.125rem);
+
   @include fd-icon-selector() {
     color: var(--sapLinkColor);
     line-height: 1;

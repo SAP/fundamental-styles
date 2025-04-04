@@ -9,18 +9,14 @@ $block: #{$fd-cx-namespace}-nested-list;
 $button: #{$fd-cx-namespace}-button;
 
 .#{$block} {
-  $fd-nested-list-item-height: 2.75rem;
-  $fd-nested-list-item-height-compact: 1.5rem;
-  $fd-nested-list-item-border-radius: 0.5rem;
+  $fd-nested-list-item-border-radius: var(--sapButton_BorderCornerRadius);
 
-  --fdNestedList_Item_Height: 2.75rem;
+  --fdNestedList_Item_Height: var(--sapElement_LineHeight);
   --fdNestedList_Item_Spacing: 0.25rem;
   --fdNestedList_Item_Spacing_Compact: 0.125rem;
-  --fdNestedList_Item_Margin: 0.5rem;
-  --fdNestedList_Item_Header_Margin_Top: 0.25rem;
-  --fdNestedList_Focus_Offset: 0.125rem;
+  --fdNestedList_Item_Margin: 0.25rem;
+  --fdNestedList_Focus_Offset: 0;
   --fdNestedList_Focus_Offset_Width: var(--sapContent_FocusWidth);
-  --fdNestedList_Button_Margin_Left: 0.5rem;
 
   $fd-nested-list-item-spacing: 0.25rem;
   $fd-nested-list-item-spacing-compact: 0.125rem;
@@ -41,38 +37,13 @@ $button: #{$fd-cx-namespace}-button;
 
   @include fd-reset();
 
+  @include fd-flex(column) {
+    gap: 0.25rem;
+  };
+
   width: 100%;
   list-style: none;
 
-  &.level-1 {
-    & > .#{$block}__item {
-      @include fd-set-margins-x-equal(0.5rem);
-
-      &:first-child {
-        margin-block-start: var(--fdNestedList_Item_Spacing);
-      }
-
-      &:last-child {
-        margin-block-end: var(--fdNestedList_Item_Spacing);
-      }
-    }
-
-    .#{$block}__title {
-      @include fd-set-paddings-x(0, 1rem);
-    }
-  }
-
-  .#{$block}.level-2 {
-    .#{$block}__title {
-      @include fd-set-paddings-x(3rem, 1rem);
-    }
-  }
-
-  .#{$block}.level-3 {
-    .#{$block}__title {
-      @include fd-set-paddings-x(5rem, 1rem);
-    }
-  }
 
   &[aria-hidden="true"] {
     display: none;
@@ -84,11 +55,8 @@ $button: #{$fd-cx-namespace}-button;
 
     display: block;
     margin-inline: 0;
-    margin-block: var(--fdNestedList_Item_Margin);
 
     &--header {
-      margin-top: var(--fdNestedList_Item_Header_Margin_Top);
-
       h1,
       h2,
       h3,
@@ -118,14 +86,19 @@ $button: #{$fd-cx-namespace}-button;
     }
 
     &--group {
-      padding-inline-start: 1rem;
-      border-bottom: 0.0625rem solid var(--sapList_GroupHeaderBorderColor);
-      .#{$block}__title {
-        @include fd-set-paddings-x-equal(1rem);
+      @include fd-inline-flex-vertical-center();
 
-        color: var(--sapList_GroupHeaderTextColor);
-        font-weight: 700;
-        font-size: 0.875rem;
+      height: var(--fdNestedList_Item_Height);
+      padding-inline: 1rem;
+      
+      .#{$block}__title {
+        font-family: var(--sapFontFamily);
+        font-size: var(--sapFontSize);
+        color: var(--sapContent_LabelColor);
+      }
+
+      &:not(:first-child) {
+        margin-block-start: 0.625rem;
       }
     }
   }
@@ -199,6 +172,7 @@ $button: #{$fd-cx-namespace}-button;
     @include fd-nested-list-focus();
 
     @include fd-flex() {
+      gap: 0.5rem;
       align-items: center;
     }
 
@@ -206,17 +180,21 @@ $button: #{$fd-cx-namespace}-button;
     overflow: hidden;
     position: relative;
     text-decoration: none;
+    padding-block: 0.5rem;
+    padding-inline: var(--fdNestedList_Start_Offset, 1rem) var(--fdNestedList_End_Offset, 1rem);
     border-radius: $fd-nested-list-item-border-radius;
+
+    &:has(.#{$block}__arrow) {
+      --fdNestedList_End_Offset: 0.375rem;
+    }
   }
 
   &__icon {
     @include fd-icon-element-base() {
-      @include fd-flex-center();
-      @include fd-set-width(3rem);
-      @include fd-set-height(100%);
+      @include fd-set-width(1rem);
 
-      color: currentColor;
-      font-size: var(--sapContent_IconHeight);
+      color: var(--sapList_TextColor);
+      font-size: 1rem;
     }
   }
 
@@ -224,31 +202,20 @@ $button: #{$fd-cx-namespace}-button;
     @include fd-reset();
 
     width: 100%;
-    text-align: left;
-    color: currentColor;
+    text-align: start;
+    line-height: normal;
     display: inline-block;
     font-size: var(--sapFontSize);
+    color: var(--sapList_TextColor);
+    font-family: var(--fdNestedList_Title_Font_Family, var(--sapFontBoldFamily));
     transition: opacity 0.1s ease-out, visibility 0.1s ease-out;
-
-    @include fd-set-paddings-y-equal(0.75rem);
-
-    line-height: normal;
-
-    @include fd-rtl() {
-      text-align: right;
-    }
-
-    @include fd-compact () {
-      @include fd-set-paddings-y-equal(0);
-    }
   }
 
   &__arrow[class*="sap-icon"] {
     @include fd-reset();
     @include fd-flex-center();
-    @include fd-set-width(1rem);
+    @include fd-set-width(2.25rem);
     @include fd-set-height(1rem);
-    @include fd-set-margin-right(1rem);
 
     line-height: 1;
 
@@ -263,11 +230,28 @@ $button: #{$fd-cx-namespace}-button;
     @include fd-nested-list-focus();
     @include fd-set-width(2.75rem);
 
-    margin-inline-start: var(--fdNestedList_Button_Margin_Left);
+    margin-inline-start: 1.3125rem;
     height: var(--fdNestedList_Item_Height);
     cursor: pointer;
+    position: relative;
     background: transparent;
     border-radius: $fd-nested-list-item-border-radius;
+
+    &::before {
+      content: "";
+      width: 0.0625rem;
+      position: absolute;
+      left: -0.25rem;
+      background: var(--sapTextColor);
+      height: var(--sapElement_Condensed_Height);
+    }
+
+    @include fd-rtl() {
+      &::before {
+        left: auto;
+        right: -0.25rem;
+      }
+    }
 
     [class*="sap-icon"] {
       @include fd-flex-center();
@@ -282,20 +266,35 @@ $button: #{$fd-cx-namespace}-button;
     }
   }
 
-  /* MODIFIERS */
+  .#{$block}.level-2 {
+    --fdNestedList_Start_Offset: 2.5rem;
+    --fdNestedList_Title_Font_Family: var(--sapFontFamily);
+    
+    margin-block-start: 0.25rem;
+  }
+
+  .#{$block}.level-3 {
+    --fdNestedList_Start_Offset: 5rem;
+    --fdNestedList_Title_Font_Family: var(--sapFontFamily);
+
+    margin-block-start: 0.25rem;
+  }
+
   &--text-only {
-    .#{$block}__title:first-child {
-      padding-inline-start: 1rem;
+    .#{$block}.level-2 {
+      --fdNestedList_Start_Offset: 3rem;
+    }
+  
+    .#{$block}.level-3 {
+      --fdNestedList_Start_Offset: 5rem;
     }
   }
 
   @include fd-compact-or-condensed() {
     --fdNestedList_Item_Margin: 0.25rem;
     --fdNestedList_Item_Spacing: 0.125rem;
-    --fdNestedList_Item_Header_Margin_Top: 0.125rem;
     --fdNestedList_Focus_Offset: 0.0625rem;
     --fdNestedList_Focus_Offset_Width: 0.0625rem;
-    --fdNestedList_Item_Height: 1.5rem;
-    --fdNestedList_Button_Margin_Left: 0.25rem;
+    --fdNestedList_Item_Height: var(--sapElement_Compact_LineHeight);
   }
 }

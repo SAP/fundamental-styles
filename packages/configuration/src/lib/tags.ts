@@ -69,4 +69,9 @@ export const tags = {
         "title": "Experimental",
         "color": 6
     },
+    "uxc": {
+        "name": "UXC",
+        "title": "uxc",
+        "color": 5
+    },
 }

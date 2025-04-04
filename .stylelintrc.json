@@ -7,6 +7,7 @@
     "property-no-unknown": null,
     "custom-property-pattern": null,
     "import-notation": "string",
+    "no-invalid-position-at-import-rule": null,
     "selector-id-pattern": null,
     "selector-class-pattern": null,
     "function-no-unknown": null,

@@ -74,39 +74,39 @@ $block-avatar: #{$fd-namespace}-avatar;
 
     @include fd-hover() {
       .#{$block-avatar} {
-        --fdAvatarBorderColor: var(--fdAvatarHoverBorderColor);
-        --fdAvatarBackgroundColor: var(--fdAvatarHoverBackgroundColor);
+        --fdAvatarBorderColor: var(--fdAvatarBorderHoverColor, var(--sapAvatar_Hover_BorderColor));
+        --fdAvatarBackgroundColor: var(--fdAvatarHoverBackgroundColor, var(--sapAvatar_6_Hover_Background));
       }
     }
 
     @include fd-active() {
       .#{$block-avatar} {
-        --fdAvatarBorderColor: var(--sapButton_Active_BorderColor);
-        --fdAvatarBackgroundColor: var(--sapButton_Active_Background);
-        --fdAvatarColor: var(--sapButton_Active_TextColor);
+        --fdAvatarBorderColor: var(--fdAvatarBorderActiveColor, var(--sapButton_Active_BorderColor));
+        --fdAvatarBackgroundColor: var(--fdAvatarBackgroundActiveColor, var(--sapButton_Active_Background));
+        --fdAvatarColor: var(--fdAvatarActiveColor, var(--sapButton_Active_TextColor));
       }
 
       @include fd-hover() {
         .#{$block-avatar} {
-          --fdAvatarBorderColor: var(--sapButton_Selected_Hover_BorderColor);
-          --fdAvatarBackgroundColor: var(--sapButton_Selected_Hover_Background);
-          --fdAvatarColor: var(--sapButton_Selected_TextColor);
+          --fdAvatarBorderColor: var(--fdAvatarBorderActiveHoverColor, var(--sapButton_Selected_Hover_BorderColor));
+          --fdAvatarBackgroundColor: var(--fdAvatarBackgroundActiveHoverColor, var(--sapButton_Selected_Hover_Background));
+          --fdAvatarColor: var(--fdAvatarActiveHoverColor, var(--sapButton_Selected_TextColor));
         }
       }
     }
 
     @include fd-toggled() {
       .#{$block-avatar} {
-        --fdAvatarBorderColor: var(--sapButton_Active_BorderColor);
-        --fdAvatarBackgroundColor: var(--sapButton_Active_Background);
-        --fdAvatarColor: var(--sapButton_Active_TextColor);
+        --fdAvatarBorderColor: var(--fdAvatarBorderActiveColor, var(--sapButton_Active_BorderColor));
+        --fdAvatarBackgroundColor: var(--fdAvatarBackgroundActiveColor, var(--sapButton_Active_Background));
+        --fdAvatarColor: var(--fdAvatarActiveColor, var(--sapButton_Active_TextColor));
       }
 
       @include fd-hover() {
         .#{$block-avatar} {
-          --fdAvatarBorderColor: var(--sapButton_Selected_Hover_BorderColor);
-          --fdAvatarBackgroundColor: var(--sapButton_Selected_Hover_Background);
-          --fdAvatarColor: var(--sapButton_Selected_TextColor);
+          --fdAvatarBorderColor: var(--fdAvatarBorderActiveHoverColor, var(--sapButton_Selected_Hover_BorderColor));
+          --fdAvatarBackgroundColor: var(--fdAvatarBackgroundActiveHoverColor, var(--sapButton_Selected_Hover_Background));
+          --fdAvatarColor: var(--fdAvatarActiveHoverColor, var(--sapButton_Selected_TextColor));
         }
       }
     }

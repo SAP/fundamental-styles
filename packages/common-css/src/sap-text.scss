@@ -1,20 +1,19 @@
 @use "sass:map";
+@use "common-settings" as commonsettings;
+@use "common-mixins" as commonmixins;
 
-@import 'common-settings';
-@import 'common-mixins';
-
-.#{$sap-namespace}-text {
-  @include sap-text();
+.#{commonsettings.$sap-namespace}-text {
+  @include commonmixins.sap-text();
 }
 
-.#{$sap-namespace}-text-max-lines {
-  @include sap-text('max-lines');
+.#{commonsettings.$sap-namespace}-text-max-lines {
+  @include commonmixins.sap-text('max-lines');
 }
 
-.#{$sap-namespace}-text-pre-wrap {
-  @include sap-text('pre-wrap');
+.#{commonsettings.$sap-namespace}-text-pre-wrap {
+  @include commonmixins.sap-text('pre-wrap');
 }
 
-.#{$sap-namespace}-text-hyphenation {
-  @include sap-text('hyphenation');
+.#{commonsettings.$sap-namespace}-text-hyphenation {
+  @include commonmixins.sap-text('hyphenation');
 }

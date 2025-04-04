@@ -1,9 +1,7 @@
 @use "sass:map";
+@use "common-settings" as commonsettings;
 
-@import 'common-settings';
-@import 'common-mixins';
-
-$block: #{$sap-namespace}-overflow;
+$block: #{commonsettings.$sap-namespace}-overflow;
 
 .#{$block} {
   &-visible {

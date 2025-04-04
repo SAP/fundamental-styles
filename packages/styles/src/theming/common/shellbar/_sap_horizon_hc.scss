@@ -26,4 +26,49 @@
   --fdShellbar_Button_Left_Border: solid 0.0625rem var(--fdShellbar_Search_Active_Button_Color);
   --fdShellbar_Helper_Bottom_Shadow: none;
   --fdShellbar_Hover_Helper_Bottom_Shadow: none;
+
+  // Search Field
+  --fdShellbar_SearchField_Border_Radius: 0;
+  --fdShellbar_SearchField_Shadow: var(--sapField_Shadow);
+  --fdShellbar_SearchField_Background_Color_Hover: transparent;
+
+  // Search Field Input
+  --fdShellbar_SearchField_Input_Border: var(--sapElement_BorderWidth) solid var(--sapShell_InteractiveBorderColor);
+  --fdShellbar_SearchField_Input_Border_Hover: var(--sapElement_BorderWidth) solid var(--sapShell_InteractiveBorderColor);
+  --fdShellbar_SearchField_Input_Border_Active: var(--sapContent_FocusWidth) var(--sapContent_FocusStyle) var(--sapShell_InteractiveBorderColor);
+  --fdShellbar_SearchField_Input_Background_Regular: var(--sapShell_InteractiveBackground);
+  --fdShellbar_SearchField_Input_Background_Hover: var(--sapShell_Hover_Background);
+  --fdShellbar_SearchField_Input_Background_Active: var(--sapShell_Active_Background);
+  --fdShellbar_SearchField_Input_Background_Focus: var(--sapShell_Active_Background);
+  --fdShellbar_SearchField_Input_Padding_Inline: 0.8125rem 0.25rem;
+  --fdShellbar_SearchField_Input_Border_Radius: 0;
+  --fdShellbar_SearchField_Input_Outline: none;
+  --fdShellbar_SearchField_Input_Outline_Offset: 0;
+
+  // Search Field Addon
+  --fdShellbar_SearchField_Addon_Margin_Inline: 0.25rem 0;
+
+  // Search Field Button
+  --fdShellbar_SearchField_Button_Width: 2.25rem;
+  --fdShellbar_SearchField_Button_Height: 2.25rem;
+  --fdShellbar_SearchField_Button_Border_Radius: var(--sapButton_BorderCornerRadius);
+  --fdShellbar_SearchField_Button_Focus_Inset: 0.0625rem; 
+  
+  // Search Field Submit Button
+  --fdShellbar_SearchField_Submit_Button_Background_Color: var(--sapShell_Active_Background);
+  --fdShell_Search_Field_Category_Margin_End: 0.25rem;
+
+  // Search Field Category
+  --fdShell_Search_Field_Category_Divider_Display: none;
+
+  // Search Field Category Dropdown
+  --fdShell_Search_Dropdown_Height: 2.25rem;
+  --fdShell_Search_Dropdown_Border_Radius: 0;
+  --fdShell_Search_Dropdown_Button_Radius: 0;
+  --fdShell_Search_Dropdown_Box_Shadow_Hover: -0.0625rem 0 0 0 var(--sapContent_ShadowColor);
+  --fdShell_Search_Dropdown_Active_Background: transparent;
+  --fdShell_Search_Dropdown_Hover_Background: transparent;
+  
+  // Search Category
+  --fdShell_Search_Category_Border: var(--sapElement_BorderWidth) var(--sapField_BorderStyle) var(--sapField_BorderColor);
 }

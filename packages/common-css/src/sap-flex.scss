@@ -1,9 +1,9 @@
 @use "sass:map";
+@use "common-settings" as commonsettings;
+@use "common-mixins" as commonmixins;
+@use "common-variables" as commonvars;
 
-@import 'common-settings';
-@import 'common-mixins';
-
-$block: #{$sap-namespace}-flex;
+$block: #{commonsettings.$sap-namespace}-flex;
 
 .#{$block} {
   // Properties for the Parent (flex container)
@@ -13,7 +13,7 @@ $block: #{$sap-namespace}-flex;
 
   @each $type in $optionsAlignContent {
     &--align-content-#{$type} {
-      @include sap-flex-align-content(#{$type});
+      @include commonmixins.sap-flex-align-content(#{$type});
     }
   }
 
@@ -21,7 +21,7 @@ $block: #{$sap-namespace}-flex;
 
   @each $type in $optionsAlignItems {
     &--align-items-#{$type} {
-      @include sap-flex-align-items(#{$type});
+      @include commonmixins.sap-flex-align-items(#{$type});
     }
   }
 
@@ -29,25 +29,25 @@ $block: #{$sap-namespace}-flex;
 
   @each $type in $optionsDirection {
     &--#{$type} {
-      @include sap-flex(#{$type});
+      @include commonmixins.sap-flex(#{$type});
     }
   }
 
-  @each $type, $value in $sap-flex-spacings {
+  @each $type, $value in commonvars.$sap-flex-spacings {
     &--gap-#{$type} {
       gap: $value;
       display: flex;
     }
   }
 
-  @each $type, $value in $sap-flex-spacings {
+  @each $type, $value in commonvars.$sap-flex-spacings {
     &--row-gap-#{$type} {
       display: flex;
       row-gap: $value;
     }
   }
 
-  @each $type, $value in $sap-flex-spacings {
+  @each $type, $value in commonvars.$sap-flex-spacings {
     &--column-gap-#{$type} {
       display: flex;
       column-gap: $value;
@@ -58,7 +58,7 @@ $block: #{$sap-namespace}-flex;
 
   @each $type in $optionsJustify {
     &--justify-#{$type} {
-      @include sap-flex-justify(#{$type});
+      @include commonmixins.sap-flex-justify(#{$type});
     }
   }
 
@@ -66,15 +66,15 @@ $block: #{$sap-namespace}-flex;
 
   @each $type in $optionsWrap {
     &--#{$type} {
-      @include sap-flex-wrap(#{$type});
+      @include commonmixins.sap-flex-wrap(#{$type});
     }
   }
 
   &--center {
-    @include sap-flex-center();
+    @include commonmixins.sap-flex-center();
 
     &-column {
-      @include sap-flex-center() {
+      @include commonmixins.sap-flex-center() {
         flex-direction: column;
       }
     }
@@ -83,19 +83,19 @@ $block: #{$sap-namespace}-flex;
   // Properties for the Children (flex items)
   @for $i from 0 through 20 {
     &-order-#{$i} {
-      @include sap-flex-order(#{$i});
+      @include commonmixins.sap-flex-order(#{$i});
     }
   }
 
   @for $i from 1 through 20 {
     &-grow-#{$i} {
-      @include sap-flex-grow(#{$i});
+      @include commonmixins.sap-flex-grow(#{$i});
     }
   }
 
   @for $i from 1 through 20 {
     &-shrink-#{$i} {
-      @include sap-flex-shrink(#{$i});
+      @include commonmixins.sap-flex-shrink(#{$i});
     }
   }
 
@@ -103,7 +103,7 @@ $block: #{$sap-namespace}-flex;
 
   @each $type in $optionsAlignSelf {
     &-align-self-#{$type} {
-      @include sap-flex-align-self(#{$type});
+      @include commonmixins.sap-flex-align-self(#{$type});
     }
   }
 }

@@ -10,7 +10,7 @@ import '../../../src/tool-header.scss';
 export default {
     title: 'BTP/Tool Header',
     parameters: {
-        description: `The Tool Header exists on all BTP tools. It is the uppermost section of the tool. It is always visible to give users access to various functions.
+        description: `The Tool Header exists on all BTP tools. It is the uppermost section of the tool. It is always visible to give users access to various functions. <br><b>This component is deprecated. Please use the <a href="../?path=/docs/sap-fiori-components-shellbar--docs" target="_blank">SHELLBAR</a> component instead.</b>
 
 ## Structure
 - <code>fd-tool-header</code> -&nbsp;<b>(required)</b> Tool Header Container element. Holds all Tool Header UI elements

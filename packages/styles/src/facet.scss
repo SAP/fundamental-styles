@@ -70,4 +70,9 @@ $block: #{$fd-namespace}-facet;
     font-weight: normal;
     color: var(--sapGroup_TitleTextColor);
   }
+
+  .#{$fd-namespace}-title {
+    font-family: var(--sapFontFamily);
+    font-size: var(--sapFontLargeSize);
+  }
 }

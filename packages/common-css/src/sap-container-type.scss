@@ -1,22 +1,21 @@
 @use "sass:map";
+@use "common-settings" as commonsettings;
+@use "common-mixins" as commonmixins;
 
-@import 'common-settings';
-@import 'common-mixins';
-
-$block: #{$sap-namespace}-container-type;
+$block: #{commonsettings.$sap-namespace}-container-type;
 
 .#{$block} {
-  @include sap-container-type(normal);
+  @include commonmixins.sap-container-type(normal);
 
   &-normal {
-    @include sap-container-type(normal);
+    @include commonmixins.sap-container-type(normal);
   }
 
   &-size {
-    @include sap-container-type(size);
+    @include commonmixins.sap-container-type(size);
   }
 
   &-inline-size {
-    @include sap-container-type(inline-size);
+    @include commonmixins.sap-container-type(inline-size);
   }
 }

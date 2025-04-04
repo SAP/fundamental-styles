@@ -1,20 +1,20 @@
 @use "sass:map";
+@use "common-variables" as commonvars;
+@use "common-mixins" as commonmixins;
+@use "common-settings" as commonsettings;
 
-@import 'common-settings';
-@import 'common-mixins';
-
-$block: #{$sap-namespace}-border-radius;
+$block: #{commonsettings.$sap-namespace}-border-radius;
 
 .#{$block} {
   // Properties for the Parent (flex container)
 
-  @each $type, $value in $sap-corner-border-radius {
+  @each $type, $value in commonvars.$sap-corner-border-radius {
     &-#{$type} {
-      @include sap-set-border-radius($value);
+      @include commonmixins.sap-set-border-radius($value);
     }
   }
 
   &-none {
-    @include sap-set-border-radius(0 !important);
+    @include commonmixins.sap-set-border-radius(0 !important);
   }
 }

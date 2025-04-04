@@ -7,12 +7,15 @@ $block: #{$fd-namespace}-form-group;
 
 .#{$block} {
   @include fd-reset();
+  @include fd-flex(column);
 
   &--inline {
-    @include fd-flex() {
-      justify-content: flex-start;
-      flex-wrap: wrap;
-    }
+    flex-flow: row wrap;
+    justify-content: flex-start;
+  }
+
+  &--with-spacing {
+    gap: 0.625rem;
   }
 
   &__header {

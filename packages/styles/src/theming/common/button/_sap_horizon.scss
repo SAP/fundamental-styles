@@ -3,20 +3,15 @@
 :root {
   --fdButton_Height: var(--sapElement_Height);
   --fdButton_Compact_Height: var(--sapElement_Compact_Height);
-  --fdButton_Emphasized_Border_Width: var(--sapButton_BorderWidth);
   --fdButton_Emphasized_Active_Outline: var(--sapContent_FocusColor);
   --fdButton_Ghost_Background: var(--sapButton_Background);
   --fdButton_Outline_Contrast: var(--sapContent_FocusColor);
   --fdButton_Outline_Offset: var(--sapButton_BorderWidth);
-  --fdButton_Font_Family: var(--sapFontSemiboldDuplexFamily);
   --fdButton_Focus_Border_Radius: calc(var(--sapButton_BorderCornerRadius) - var(--sapContent_FocusWidth));
 
   /** Shadows */
   --fdButton_Text_Shadow: none;
   --fdButton_Hover_Shadow: none;
-
-  /** Badge */
-  --fdButton_Badge_Border_Color: var(--sapContent_BadgeBackground);
 
   /** Segmented & Menu */
   --fdButton_Border_Radius_Left: var(--sapButton_BorderCornerRadius);
@@ -36,7 +31,6 @@
   /** Segmented */
   --fdButton_Segmented_Pad_Display: block;
   --fdButton_Segmented_Border_Offset: 0;
-  --fdButton_Segmented_Middle_Border_Radius: var(--sapButton_BorderCornerRadius);
 
   /** Menu */
   --fdButton_Menu_Offset: 0;

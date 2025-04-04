@@ -7,7 +7,7 @@
   --fdRadio_Compact_Outer_Circle_Padding: 0.5rem;
   --fdRadio_Background_Color: var(--sapField_Background);
   --fdRadio_Inner_Border_Width: var(--sapField_BorderWidth);
-  --fdRadio_Inner_Border_Style: solid;
+  --fdRadio_Inner_Border_Style: var(--sapField_Selector_BorderStyle);
   --fdRadio_Inner_Border_Color: var(--sapField_BorderColor);
   --fdRadio_Active_Dot_Color: var(--sapContent_Selected_ForegroundColor);
   --fdRadio_Hover_Background_Color: var(--sapContent_Selected_Hover_Background);

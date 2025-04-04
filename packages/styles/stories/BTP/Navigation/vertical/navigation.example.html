@@ -80,7 +80,7 @@
                             title="Basket"
                             aria-roledescription="Navigation List Tree Item - Parent"
                             aria-expanded="true" 
-                            aria-selected="false"
+                            aria-selected="true"
                         >
                             <a class="fd-navigation__link" role="button" tabindex="-1"  onclick="toggleNavigationSubmenu(event)">
                                 <span class="fd-navigation__icon sap-icon--basket" role="presentation" aria-hidden="true"></span>
@@ -462,6 +462,25 @@
             role="tree" 
             aria-roledescription="Navigation List Tree" 
             tabindex="-1">
+
+            <li class="fd-navigation__list-item" aria-hidden="true">
+                <div 
+                    class="fd-navigation__item fd-navigation__item--create" 
+                    aria-level="1" 
+                    role="treeitem" 
+                    title="Quick Create"
+                    aria-roledescription="Navigation List Tree Item"
+                    aria-selected="false"
+                    aria-expanded="false"
+                >
+                    <button class="fd-navigation__link">
+                        <span class="fd-navigation__icon sap-icon--write-new" role="presentation" aria-hidden="true"></span>
+                        <span class="fd-navigation__text">Quick Create</span>
+                        <span class="fd-navigation__selection-indicator" aria-label="selection indicator"></span>
+                    </button>
+                </div>
+            </li>
+            
             <li class="fd-navigation__list-item" aria-hidden="true">
                 <div 
                     class="fd-navigation__item" 

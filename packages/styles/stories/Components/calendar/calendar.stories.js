@@ -2,6 +2,7 @@ import calExampleHtml from "./cal.html?raw";
 import yearsExampleHtml from "./years.example.html?raw";
 import monthsExampleHtml from "./months.example.html?raw";
 import daysExampleHtml from "./days.example.html?raw";
+import legendExampleHtml from "./legend.example.html?raw";
 import '../../../src/bar.scss';
 import '../../../src/dialog.scss';
 import '../../../src/tile.scss';
@@ -130,6 +131,15 @@ Years.parameters = {
   docs: {
    description: {
       story: 'The calendar component can display a range of years in various ways: short-term, long-term, year ranges etc. Add the `fd-calendar__content--years` class to the container element, and adjust the number of columns, rows, and content to fit your use case.'
+    }
+  }
+};
+
+export const Legend = () => legendExampleHtml;
+Legend.parameters = {
+  docs: {
+   description: {
+      story: 'The Calendar component can display a customizable legend to help users interpret the meaning of various colors and styles used within the calendar. <br>The legend includes 20 predefined color <b>placeholders</b> (<code>fd-calendar-legend__item--placeholder-1</code>, <code>fd-calendar-legend__item--placeholder-20</code>, etc.), as well as generic colors for <b>selection</b> (<code>fd-calendar-legend__item--selected</code>), <b>today</b> (<code>fd-calendar-legend__item--today</code>), <b>normal (work) days</b> (<code>fd-calendar-legend__item--work</code>), and <b>non-working days</b> (<code>fd-calendar-legend__item--non-work</code>).<br> The number of flexible columns should be configurable to prevent label truncation, though labels can also wrap to accommodate longer text. Use <code>fd-calendar-legend--auto-column</code> for auto column width.<br> Appointments are represented by circles (<code>fd-calendar-legend__item--appointment</code>), while special calendar days are depicted as squares (default).'
     }
   }
 };

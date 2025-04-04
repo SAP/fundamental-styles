@@ -85,7 +85,8 @@ BadgeOnButton.parameters = {
     description: {
       story: `Button gets a badge in cases of collecting a number of items from various pages in order to trigger an action.
 Currently the Emphasized, Standard, Ghost and Transparent type of buttons are recommended to be used with Badge.
-\n**Badges cannot contain more than 4 characters**.`
+\n**Counter Badges cannot contain more than 4 characters**.
+\nFor **Attention Badge** use the <code>fd-button__badge--attention</code> modifier class with <code>fd-button__badge</code> base class. `
     }
   }
 };

@@ -1,5 +1,4 @@
 import navigationHorizontalExampleHtml from './navigation-horizontal.example.html?raw';
-import navigationHorizontalTabletExampleHtml from './navigation-horizontal-tablet.example.html?raw';
 import navigationHorizontalWithExpanderExampleHtml from './navigation-horizontal-expander.example.html?raw';
 
 import '../../../../src/navigation.scss';
@@ -51,17 +50,6 @@ NavigationHorizontal.parameters = {
     docs: {
         description: {
             story: `Horizontal Navigation is an optional alternative to the Vertical Navigation variant.
-`
-        }
-    }
-};
-
-export const NavigationHorizontalTablet = () => navigationHorizontalTabletExampleHtml;
-NavigationHorizontalTablet.storyName = 'Horizontal Navigation - Tablet';
-NavigationHorizontalTablet.parameters = {
-    docs: {
-        description: {
-            story: `
 `
         }
     }

@@ -1,34 +1,34 @@
 @use "sass:map";
+@use "common-settings" as commonsettings;
+@use "common-mixins" as commonmixins;
+@use "common-variables" as commonvars;
 
-@import 'common-settings';
-@import 'common-mixins';
-
-$block: #{$sap-namespace}-heading;
+$block: #{commonsettings.$sap-namespace}-heading;
 
 .#{$block} {
   --sapHeading_Font_Size: 1rem;
 
   &-1 {
-    @include sap-heading($sap-heading-h1);
+    @include commonmixins.sap-heading(commonvars.$sap-heading-h1);
   }
 
   &-2 {
-    @include sap-heading($sap-heading-h2);
+    @include commonmixins.sap-heading(commonvars.$sap-heading-h2);
   }
 
   &-3 {
-    @include sap-heading($sap-heading-h3);
+    @include commonmixins.sap-heading(commonvars.$sap-heading-h3);
   }
 
   &-4 {
-    @include sap-heading($sap-heading-h4);
+    @include commonmixins.sap-heading(commonvars.$sap-heading-h4);
   }
 
   &-5 {
-    @include sap-heading($sap-heading-h5);
+    @include commonmixins.sap-heading(commonvars.$sap-heading-h5);
   }
 
   &-6 {
-    @include sap-heading($sap-heading-h6);
+    @include commonmixins.sap-heading(commonvars.$sap-heading-h6);
   }
 }

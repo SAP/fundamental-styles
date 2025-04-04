@@ -1,0 +1,9 @@
+@use "sass:map";
+
+@import "./sap_horizon";
+
+:root {
+  --fdNavigationList_Content_Border_Radius: 0;
+  --fdNavigationList_Content_Border_Color: var(--sapList_BorderColor);
+  --fdNavigationList_Content_Outline_Offset: -0.1875rem;
+}

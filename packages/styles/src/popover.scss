@@ -5,6 +5,7 @@
 
 $block: #{$fd-namespace}-popover;
 $blockBody: #{$fd-namespace}-popover__body;
+$menu: #{$fd-namespace}-menu;
 
 body.fd-overlay-active::before {
   content: '';
@@ -163,23 +164,19 @@ body.fd-overlay-active::before {
     }
 
     > *:first-child,
-    &-header > *:first-child,
-    ul:first-child li:first-child::before,
-    ol:first-child li:first-child::before,
-    ul:first-child li:first-child a::before,
-    ol:first-child li:first-child a::before {
+    &-header > *:first-child {
       border-top-right-radius: $fd-popover-border-radius;
       border-top-left-radius: $fd-popover-border-radius;
     }
 
     > *:last-child,
-    &-footer > *:last-child,
-    ul:last-child li:last-child::before,
-    ol:last-child li:last-child::before,
-    ul:last-child li:last-child a::before,
-    ol:last-child li:last-child a::before {
+    &-footer > *:last-child {
       border-bottom-right-radius: $fd-popover-border-radius;
       border-bottom-left-radius: $fd-popover-border-radius;
+    }
+
+    .#{$menu} {
+      width: 100%;
     }
 
     @include fd-compact-or-condensed() {

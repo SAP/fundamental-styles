@@ -36,7 +36,7 @@ $button-types-config: (
       map.get($default-button-config, "default"),
       (
         "fontWeight": var(--sapButton_Emphasized_FontWeight),
-        "borderWidth": var(--fdButton_Emphasized_Border_Width),
+        "borderWidth": var(--sapButton_Emphasized_BorderWidth),
         "borderColor": var(--sapButton_Emphasized_BorderColor),
         "color": var(--sapButton_Emphasized_TextColor),
         "background": var(--sapButton_Emphasized_Background),
@@ -233,12 +233,20 @@ $button-types-config: (
   @include _fd-button-type($default-button-config);
 
   @each $type, $props in $button-types-config {
+
+    &--#{$type},
+    &--#{$type} &__text {
+      @if $type == "emphasized" {
+        --fdButton_Font_Family: var(--sapButton_Emphasized_FontFamily);
+      } 
+    }
+
     &--#{$type} {
       @include _fd-button-type($props);
 
       @if $type == "emphasized" {
         font-weight: var(--sapButton_Emphasized_FontWeight);
-        border-width: var(--fdButton_Emphasized_Border_Width);
+        border-width: var(--sapButton_Emphasized_BorderWidth);
 
         @include fd-focus() {
           &::after {

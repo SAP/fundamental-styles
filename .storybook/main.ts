@@ -25,7 +25,6 @@ const storybookAddons = [
     '@storybook/addon-actions',
     '@storybook/addon-links',
     '@storybook/addon-a11y',
-    '@storybook/addon-viewport/register',
     {
         name: '@storybook/addon-docs',
         options: {
@@ -80,6 +79,8 @@ const config: StorybookConfig = {
         name: '@storybook/html-vite',
         options: {}
     },
-    docs: {}
+    docs: {
+        autodocs: true
+    }
 };
 export default config;

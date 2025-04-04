@@ -68,6 +68,7 @@
                                 <span class="fd-navigation__icon sap-icon--create-entry-time" role="presentation" aria-hidden="true"></span>
                                 <span class="fd-navigation__text">Time</span>
                                 <span class="fd-navigation__selection-indicator" role="presentation" aria-hidden="true" aria-label="selection indicator"></span>
+                                <span class="fd-navigation__external-link-indicator" role="presentation" aria-hidden="true" aria-label="external link indicator"></span>
                             </a>
                         </div>
                     </li>
@@ -79,7 +80,7 @@
                             role="treeitem" 
                             title="Basket"
                             aria-roledescription="Navigation List Tree Item - Parent"
-                            aria-expanded="true" 
+                            aria-expanded="true"
                             aria-selected="true"
                         >
                             <a class="fd-navigation__link" href="#">
@@ -87,9 +88,8 @@
                                 <span class="fd-navigation__text">Basket</span>
                                 <span class="fd-navigation__selection-indicator" role="presentation" aria-hidden="true" aria-label="selection indicator"></span>
                             </a>
-                            <button class="fd-button fd-button--nested fd-navigation__expander" aria-label="Expand/Collapse">
-                                <i class="sap-icon--slim-arrow-down" role="presentation"></i>
-                            </button>
+                            <span class="fd-navigation__has-children-indicator" role="button" aria-label="expand/collapse children"></span>
+                            
                         </div>
                         <div class="fd-navigation__list-container" aria-hidden="true">
                             <div class="fd-navigation__list-wrapper" aria-hidden="true">
@@ -123,7 +123,7 @@
                                             title="Current Orders"
                                             aria-roledescription="Navigation List Tree Item - Child"
                                             aria-expanded="false" 
-                                            aria-selected="false"
+                                            aria-selected="true"
                                         >
                                             <a class="fd-navigation__link" role="link" href="#">
                                                 <span class="fd-navigation__text">Current Orders (selected)</span>
@@ -261,6 +261,23 @@
             role="tree" 
             aria-roledescription="Navigation List Tree" 
             tabindex="-1">
+            <li class="fd-navigation__list-item" aria-hidden="true">
+                <div 
+                    class="fd-navigation__item fd-navigation__item--create" 
+                    aria-level="1" 
+                    role="treeitem" 
+                    title="Quick Create"
+                    aria-roledescription="Navigation List Tree Item"
+                    aria-selected="false"
+                    aria-expanded="false"
+                >
+                    <button class="fd-navigation__link">
+                        <span class="fd-navigation__icon sap-icon--write-new" role="presentation" aria-hidden="true"></span>
+                        <span class="fd-navigation__text">Quick Create</span>
+                        <span class="fd-navigation__selection-indicator" aria-label="selection indicator"></span>
+                    </button>
+                </div>
+            </li>
             <li class="fd-navigation__list-item" aria-hidden="true">
                 <div 
                     class="fd-navigation__item" 

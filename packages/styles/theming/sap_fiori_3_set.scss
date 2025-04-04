@@ -1,0 +1,7 @@
+@use "sass:map";
+
+@import '@sap-theming/theming-base-content/content/Base/baseLib/sap_fiori_3_set/css_variables.css';
+@import '../src/theming/sap_fiori_3.scss' only screen and (prefers-color-scheme: light) and (prefers-contrast: no-preference), screen and (prefers-color-scheme: light) and (prefers-contrast: less);
+@import '../src/theming/sap_fiori_3_dark.scss' only screen and (prefers-color-scheme: dark) and (prefers-contrast: no-preference), screen and (prefers-color-scheme: dark) and (prefers-contrast: less);
+@import '../src/theming/sap_fiori_3_hcb.scss' only screen and (prefers-color-scheme: dark) and (prefers-contrast: custom), screen and (prefers-color-scheme: dark) and (prefers-contrast: more);
+@import '../src/theming/sap_fiori_3_hcw.scss' only screen and (prefers-color-scheme: light) and (prefers-contrast: custom), screen and (prefers-color-scheme: light) and (prefers-contrast: more);

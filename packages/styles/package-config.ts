@@ -5,6 +5,8 @@ import {PackageConfigInterface} from "fundamental-styles/storybook";
 // @ts-ignore
 import sap_horizon from './theming/sap_horizon.scss?inline';
 // @ts-ignore
+import sap_horizon_set from './theming/sap_horizon_set.scss?inline';
+// @ts-ignore
 import sap_horizon_dark from './theming/sap_horizon_dark.scss?inline';
 // @ts-ignore
 import sap_horizon_hcb from './theming/sap_horizon_hcb.scss?inline';
@@ -12,6 +14,8 @@ import sap_horizon_hcb from './theming/sap_horizon_hcb.scss?inline';
 import sap_horizon_hcw from './theming/sap_horizon_hcw.scss?inline';
 // @ts-ignore
 import sap_fiori_3 from './theming/sap_fiori_3.scss?inline';
+// @ts-ignore
+import sap_fiori_3_set from './theming/sap_fiori_3_set.scss?inline';
 // @ts-ignore
 import sap_belize from './theming/sap_belize.scss?inline';
 // @ts-ignore
@@ -33,10 +37,12 @@ import {projects} from '../../projects';
 
 const themesVariables = {
     sap_horizon,
+    sap_horizon_set,
     sap_horizon_dark,
     sap_horizon_hcb,
     sap_horizon_hcw,
     sap_fiori_3,
+    sap_fiori_3_set,
     sap_fiori_3_dark,
     sap_fiori_3_light_dark,
     sap_fiori_3_hcw,

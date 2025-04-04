@@ -293,6 +293,7 @@ $fd-icon-tab-bar-semantic-values: (
   --fdIcon_Tab_Bar_Container_Badge_Size: 0.5rem;
 
   @include fd-reset();
+  @include fd-flex(column);
 
   &__header {
     @include fd-reset();
@@ -727,7 +728,7 @@ $fd-icon-tab-bar-semantic-values: (
       @include fd-set-position-right($fd-icon-tab-bar-icon-spacing);
 
       top: 0;
-      border: 0.125rem solid var(--sapObjectHeader_Background);
+      border: 0.125rem solid var(--sapContent_BadgeBorderColor);
     }
 
     .#{$block}__counter {

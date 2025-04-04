@@ -3,6 +3,8 @@ import borderlessExampleHtml from "./borderless.example.html?raw";
 import fixedHeightContentExampleHtml from "./fixed-height-content.example.html?raw";
 import expandableExampleHtml from "./expandable.example.html?raw";
 import fixedExampleHtml from "./fixed.example.html?raw";
+import stickyHeaderExampleHtml from "./sticky-header.example.html?raw";
+
 import '../../../src/button.scss';
 import '../../../src/icon.scss';
 import '../../../src/panel.scss';
@@ -37,7 +39,7 @@ export const Fixed = () => fixedExampleHtml;
 Fixed.parameters = {
   docs: {
     description: {
-      story: `When the height of the panel's content is set to a fixed size, the content area becomes scrollable.
+      story: `
         `
     }
   }
@@ -76,6 +78,14 @@ Transparent.parameters = {
     description: {
       story: `The background of the content can be set to transparent by applying the \`.fd-panel--transparent \` modifier class.
         `
+    }
+  }
+};
+export const StickyHeader = () => stickyHeaderExampleHtml;
+StickyHeader.parameters = {
+  docs: {
+    description: {
+      story: `Sticky header can be achieved by applying the \`.fd-panel--sticky \` modifier class to the panel. The container should have a fixed height, position relative and overflow-y set to scroll.`
     }
   }
 };

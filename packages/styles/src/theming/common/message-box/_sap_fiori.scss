@@ -1,9 +1,0 @@
-@use "sass:map";
-
-:root {
-  --fdMessage_Box_Box_Shadow: inset 0 -0.0625rem;
-  --fdMessage_Box_Error_Box_Shadow: var(--fdMessage_Box_Box_Shadow) var(--sapErrorBorderColor), var(--sapContent_HeaderShadow);
-  --fdMessage_Box_Success_Box_Shadow: var(--fdMessage_Box_Box_Shadow) var(--sapSuccessBorderColor), var(--sapContent_HeaderShadow);
-  --fdMessage_Box_Warning_Box_Shadow: var(--fdMessage_Box_Box_Shadow) var(--sapWarningBorderColor), var(--sapContent_HeaderShadow);
-  --fdMessage_Box_Information_Box_Shadow: var(--fdMessage_Box_Box_Shadow) var(--sapInformationBorderColor), var(--sapContent_HeaderShadow);
-}

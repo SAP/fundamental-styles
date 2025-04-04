@@ -8,6 +8,7 @@
   position: relative;
   list-style: none;
   width: 100%;
+  max-width: 100% !important;
 
   &__item,
   &__group-header,
@@ -28,6 +29,12 @@
     border-bottom: var(--sapList_BorderWidth) solid var(--fdList_Item_Border_Color);
     background: var(--fdList_Item_Background_Color);
     position: relative;
+
+    .#{$avatar} {
+      &:first-child {
+        margin-inline-end: 0.75rem;
+      }
+    }
 
     &--unread {
       .#{$block}__title {
