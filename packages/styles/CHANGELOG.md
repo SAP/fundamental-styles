@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.39.3-rc.0](https://github.com/SAP/fundamental-styles/compare/v0.39.2...v0.39.3-rc.0) (2025-04-09)
+
+### Bug Fixes
+
+- **styles:** redesign line/link Tiles in both static and edit mode ([#5676](https://github.com/SAP/fundamental-styles/issues/5676)) ([706085e](https://github.com/SAP/fundamental-styles/commit/706085ea6656e3fcea8c12b4326498fcc56700fa))
+
 ## [0.39.2](https://github.com/SAP/fundamental-styles/compare/v0.39.2-rc.6...v0.39.2) (2025-03-31)
 
 **Note:** Version bump only for package fundamental-styles
