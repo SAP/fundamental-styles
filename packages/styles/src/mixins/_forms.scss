@@ -100,7 +100,6 @@ $fd-input-field-height--compact: 1.625rem;
 @mixin fd-input-readonly() {
   --fdInput_Outline_Offset: -0.25rem;
 
-  z-index: -1;
   box-shadow: none;
   border-color: var(--sapField_ReadOnly_BorderColor);
   background: var(--sapField_ReadOnly_BackgroundStyle);
