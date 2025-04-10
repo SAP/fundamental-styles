@@ -73,6 +73,9 @@ $floating-footer: #{$fd-namespace}-bar--floating-footer;
 
     max-width: 100%;
     max-height: 100%;
+    color: var(--fdBar_Element_Text_Color, var(--sapTextColor));
+    font-family: var(--fdBar_Element_Text_Font_Family, var(--sapFontFamily));
+    font-size: var(--fdBar_Element_Text_Font_Size, var(--sapFontSize));
   }
 
   &__element--full-width {
@@ -90,6 +93,13 @@ $floating-footer: #{$fd-namespace}-bar--floating-footer;
   &--header {
     --fdBar_Shadow: var(--sapContent_HeaderShadow);
     --fdBar_Background: var(--sapPageHeader_Background);
+    --fdBar_Element_Text_Color: var(sapPageHeader_TextColor);
+    --fdBar_Element_Text_Font_Family: var(--sapFontHeaderFamily);
+    --fdBar_Element_Text_Font_Size: var(--sapFontHeader5Size);
+
+    &:has(+ .#{$block}--subheader) {
+      --fdBar_Shadow: none;
+    }
   }
 
   &--subheader {
@@ -110,14 +120,16 @@ $floating-footer: #{$fd-namespace}-bar--floating-footer;
   &--footer {
     --fdBar_Shadow: none;
     --fdBar_Background: var(--sapPageFooter_Background);
-
-    border-top: 0.0625rem solid var(--sapPageFooter_BorderColor);
+    --fdBar_Element_Text_Color: var(--sapPageFooter_TextColor);
+    
+    border-top: var(--sapGroup_TitleBorderWidth) solid var(--sapPageFooter_BorderColor);
   }
 
   &--floating-footer {
     --fdBar_Shadow: var(--sapContent_Shadow1);
     --fdBar_Z_Index: map.get($fd-z-index-levels, "top");
     --fdBar_Background: var(--sapPageFooter_Background);
+    --fdBar_Element_Text_Color: var(--sapPageFooter_TextColor);
     --fdBar_Border_Radius: var(--sapElement_BorderCornerRadius);
 
     opacity: 1;

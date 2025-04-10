@@ -9453,7 +9453,7 @@ exports[`Check stories > Components/Avatar Group > Story Overflow > Should match
 `;
 
 exports[`Check stories > Components/Bar > Story Default > Should match snapshot 1`] = `
-"<div class=\\"fd-bar\\">
+"<div class=\\"fd-bar\\" role=\\"toolbar\\" aria-label=\\"Bar\\">
     <div class=\\"fd-bar__left\\">
         <div class=\\"fd-bar__element\\">
             <h5 class=\\"fd-title fd-title--h5\\" aria-label=\\"text\\">TEXT</h5>
@@ -9491,7 +9491,7 @@ exports[`Check stories > Components/Bar > Story Default > Should match snapshot 
 
 <br><br>
 
-<div class=\\"fd-bar\\">
+<div class=\\"fd-bar\\" role=\\"toolbar\\" aria-label=\\"Bar\\">
     <div class=\\"fd-bar__left\\">
         <div class=\\"fd-bar__element\\">
             <button aria-label=\\"button\\" class=\\"fd-button fd-button--transparent\\">
@@ -9546,7 +9546,7 @@ exports[`Check stories > Components/Bar > Story FloatingFooter > Should match sn
 <div style=\\"margin-bottom: 2rem;\\"></div>
 <br>
 <div style=\\"position: relative;background: darkgray; height: 400px; width: 70%; margin-inline: auto;\\">
-    <div class=\\"fd-bar fd-bar--floating-footer fd-bar--home-page-xl\\">
+    <div class=\\"fd-bar fd-bar--floating-footer fd-bar--home-page-xl\\" role=\\"toolbar\\" aria-label=\\"Floating Footer\\">
         <div class=\\"fd-bar__right\\">
             <div class=\\"fd-bar__element\\">
                 <button aria-label=\\"button\\" class=\\"fd-button fd-button--emphasized fd-button--compact\\">Save</button>
@@ -9561,7 +9561,12 @@ exports[`Check stories > Components/Bar > Story FloatingFooter > Should match sn
 
 exports[`Check stories > Components/Bar > Story Footer > Should match snapshot 1`] = `
 "
-<div class=\\"fd-bar fd-bar--footer\\">
+<div class=\\"fd-bar fd-bar--footer\\" role=\\"toolbar\\" aria-label=\\"Footer\\">
+    <div class=\\"fd-bar__left\\">
+        <div class=\\"fd-bar__element\\">
+            Footer Text
+        </div>
+    </div>
     <div class=\\"fd-bar__right\\">
         <div class=\\"fd-bar__element\\">
             <button aria-label=\\"button\\" class=\\"fd-button fd-button--emphasized fd-button--compact\\">Save</button>
@@ -9574,34 +9579,32 @@ exports[`Check stories > Components/Bar > Story Footer > Should match snapshot 1
 `;
 
 exports[`Check stories > Components/Bar > Story Header > Should match snapshot 1`] = `
-"<div class=\\"fd-bar fd-bar--header\\">
+"<div class=\\"fd-bar fd-bar--header\\" role=\\"toolbar\\" aria-label=\\"Header\\">
     <div class=\\"fd-bar__left\\">
         <div class=\\"fd-bar__element\\">
-            <button aria-label=\\"button\\" class=\\"fd-button fd-button--transparent fd-button--compact\\">
+            <button aria-label=\\"button\\" class=\\"fd-button fd-button--transparent\\">
                 <i class=\\"sap-icon--navigation-left-arrow\\"></i>
             </button>
         </div>
         <div class=\\"fd-bar__element\\">
-            <button aria-label=\\"button\\" class=\\"fd-button fd-button--transparent fd-button--compact\\">
+            <button aria-label=\\"button\\" class=\\"fd-button fd-button--transparent\\">
                 <i class=\\"sap-icon--home\\"></i>
             </button>
         </div>
         <div class=\\"fd-bar__element\\">
-            <button aria-label=\\"button\\" class=\\"fd-button fd-button--transparent fd-button--compact\\">
-                <i class=\\"sap-icon--account\\"></i>
-            </button>
+            Header Text
         </div>
     </div>
     <div class=\\"fd-bar__middle\\">
         <div class=\\"fd-bar__element\\">
             <div class=\\"fd-segmented-button\\" role=\\"group\\" aria-label=\\"Group label\\">
-                <button aria-label=\\"button\\" class=\\"fd-button fd-button--compact fd-button--toggled\\" aria-pressed=\\"true\\">
+                <button aria-label=\\"button\\" class=\\"fd-button fd-button--toggled\\" aria-pressed=\\"true\\">
                     <i class=\\"sap-icon--email\\"></i>
                 </button>
-                <button aria-label=\\"button\\" class=\\"fd-button fd-button--compact\\" aria-pressed=\\"false\\">
+                <button aria-label=\\"button\\" class=\\"fd-button\\" aria-pressed=\\"false\\">
                     <i class=\\"sap-icon--iphone\\"></i>
                 </button>
-                <button aria-label=\\"button\\" class=\\"fd-button fd-button--compact\\" aria-pressed=\\"false\\">
+                <button aria-label=\\"button\\" class=\\"fd-button\\" aria-pressed=\\"false\\">
                     <i class=\\"sap-icon--notification-2\\"></i>
                 </button>
             </div>
@@ -9615,7 +9618,7 @@ exports[`Check stories > Components/Bar > Story Header > Should match snapshot 1
                 role=\\"img\\" aria-label=\\"John Doe\\"></span>
         </div>
         <div class=\\"fd-bar__element\\">
-            <button aria-label=\\"button\\" class=\\"fd-button fd-button--transparent fd-button--compact\\">
+            <button aria-label=\\"button\\" class=\\"fd-button fd-button--transparent\\">
                 <i class=\\"sap-icon--grid\\"></i>
             </button>
         </div>
@@ -9625,7 +9628,7 @@ exports[`Check stories > Components/Bar > Story Header > Should match snapshot 1
 
 exports[`Check stories > Components/Bar > Story HeaderWithSubheader > Should match snapshot 1`] = `
 "
-<div class=\\"fd-bar fd-bar--header-with-subheader\\">
+<div class=\\"fd-bar fd-bar--header-with-subheader\\" role=\\"toolbar\\" aria-label=\\"Header\\">
     <div class=\\"fd-bar__left\\">
         <div class=\\"fd-bar__element\\">
             <button aria-label=\\"button\\" class=\\"fd-button fd-button--transparent fd-button--compact\\">
@@ -9672,7 +9675,7 @@ exports[`Check stories > Components/Bar > Story HeaderWithSubheader > Should mat
         </div>
     </div>
 </div>
-<div class=\\"fd-bar fd-bar--subheader\\">
+<div class=\\"fd-bar fd-bar--subheader\\" role=\\"toolbar\\" aria-label=\\"Subheader\\">
     <div class=\\"fd-bar__middle\\">
         <div class=\\"fd-bar__element fd-bar__element--full-width\\">
             <input class=\\"fd-input fd-input--compact fd-input-group__input\\" type=\\"text\\" id=\\"\\" name=\\"\\" value=\\"1234568910 \\" aria-label=\\"input\\">
@@ -9683,7 +9686,7 @@ exports[`Check stories > Components/Bar > Story HeaderWithSubheader > Should mat
 `;
 
 exports[`Check stories > Components/Bar > Story Responsive > Should match snapshot 1`] = `
-"<div class=\\"fd-bar fd-bar--responsive-paddings\\">
+"<div class=\\"fd-bar fd-bar--responsive-paddings\\" role=\\"toolbar\\" aria-label=\\"Responsive Bar\\">
     <div class=\\"fd-bar__left\\">
         <div class=\\"fd-bar__element\\">
             <button aria-label=\\"button\\" class=\\"fd-button fd-button--transparent\\">
@@ -9734,7 +9737,7 @@ exports[`Check stories > Components/Bar > Story Responsive > Should match snapsh
 `;
 
 exports[`Check stories > Components/Bar > Story Subheader > Should match snapshot 1`] = `
-"<div class=\\"fd-bar fd-bar--subheader\\">
+"<div class=\\"fd-bar fd-bar--subheader\\" role=\\"toolbar\\" aria-label=\\"Subheader\\">
     <div class=\\"fd-bar__left\\">
         <div class=\\"fd-bar__element\\">
             <button aria-label=\\"button\\" class=\\"fd-button fd-button--transparent fd-button--compact\\">
@@ -9765,7 +9768,7 @@ exports[`Check stories > Components/Bar > Story Subheader > Should match snapsho
 <br><br>
 <div><b>Full width element</b></div>
 <br>
-<div class=\\"fd-bar fd-bar--subheader\\">
+<div class=\\"fd-bar fd-bar--subheader\\" role=\\"toolbar\\" aria-label=\\"Subheader\\">
     <div class=\\"fd-bar__middle\\">
         <div class=\\"fd-bar__element fd-bar__element--full-width\\">
             <input class=\\"fd-input fd-input--compact fd-input-group__input\\" type=\\"text\\" id=\\"\\" name=\\"\\" value=\\"1234568910\\" aria-label=\\"input\\">

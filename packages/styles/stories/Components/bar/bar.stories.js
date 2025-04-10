@@ -15,11 +15,11 @@ import '../../../src/title.scss';
 export default {
   title: 'Components/Bar',
   parameters: {
-    description: `The bar component is a container that holds titles, buttons and input controls. Its contents are distributed into three areas: left, middle and right. This component’s primary function is to display page **headers** and **footers**. It is mainly used to construct a **Page**, and acts as a building block for other components like **Dialog**, **Popover** etc. A bar can be designed as an Header, Subheader, Fixed Footer or Floating Footer. <br><br>
+    description: `The Bar is a container primarily used for displaying titles, buttons, and input controls. It serves as the foundational design and functionality for page headers, footers, dialogs, and popovers that require a header and/or footer. A header can consist of just a title or a title with a navigation button (back or home) at the front. A subheader can also be included in the header design. Footers can be either fixed or floating. The buttons in the footer are intended for finalizing actions, following a primary-to-tertiary hierarchy, and should be positioned in the right area. <br><br>
 
 **The bar component has two modes:**
 
-- Compact
+- Compact (default, desktop)
 - Cozy (tablet and mobile)
 
 ## Usage
@@ -51,16 +51,16 @@ export default {
 
 Modifier classes are available to adjust the paddings of the bar when it is being used in the \`fd-page\`. Alternatively the \`--responsive-paddings\` modifier may be used to apply this styles automatically.
 
-| **Padding** | &nbsp;&nbsp; **Amount** | **Modifier class** |
-| :--------- | ----------: | :----------------------- | ---------------: |
-| S / SM      | &nbsp;&nbsp; 1rem | \`fd-bar--page-s\` **or** \`fd-bar--page-sm\` |
-| S / SM      | &nbsp;&nbsp; 1rem | \`fd-bar--home-page-s\` **or** \`fd-bar--home-page-sm\` |
-| M_L / MD_LG | &nbsp;&nbsp; 2rem | \`fd-bar--page-m_l\` **or** \`fd-bar--page-md_lg\` |
-| M_L / MD_LG | &nbsp;&nbsp; 2rem | \`fd-bar--home-page-m_l\` **or** \`fd-bar--home-page-md_lg\` |
-| XL          | &nbsp;&nbsp; 3rem | \`fd-bar--page-xl\` |
-| XL          | &nbsp;&nbsp; 3rem | \`fd-bar--home-page-xl\` |
+| **Padding**     | &nbsp;&nbsp; **Amount** | **Modifier class** |
+| :-------------- | ----------------: | :----------------------- | ---------------: |
+| \`s / sm\`      | &nbsp;&nbsp; 1rem | \`fd-bar--page-s\` **or** \`fd-bar--page-sm\` |
+| \`s / sm\`      | &nbsp;&nbsp; 1rem | \`fd-bar--home-page-s\` **or** \`fd-bar--home-page-sm\` |
+| \`m_l / md_lg\` | &nbsp;&nbsp; 2rem | \`fd-bar--page-m_l\` **or** \`fd-bar--page-md_lg\` |
+| \`m_l / md_lg\` | &nbsp;&nbsp; 2rem | \`fd-bar--home-page-m_l\` **or** \`fd-bar--home-page-md_lg\` |
+| \`xl \`         | &nbsp;&nbsp; 3rem | \`fd-bar--page-xl\` |
+| \`xl\`          | &nbsp;&nbsp; 3rem | \`fd-bar--home-page-xl\` |
         `,
-    tags: ['v1']
+    tags: []
   }
 };
 export const Default = () => defaultExampleHtml;
