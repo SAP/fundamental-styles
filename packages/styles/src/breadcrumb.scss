@@ -6,7 +6,6 @@
 $block: #{$fd-namespace}-breadcrumb;
 
 .#{$block} {
-  // BLOCK BASE *******************************************
   @include fd-reset();
 
   @include fd-flex-vertical-center() {
@@ -16,16 +15,17 @@ $block: #{$fd-namespace}-breadcrumb;
   --fdLink_Line_Height: 1.5rem;
 
   list-style: none;
+  margin-block-end: 0.5rem;
 
-  // ELEMENTS *******************************************
   &__item {
     @include fd-reset();
 
+    padding-block: 0.0625rem;
     color: var(--sapContent_LabelColor);
 
     &::after {
       margin-inline: 0.25rem;
-      color: var(--sapContent_LabelColor);
+      color: var(--sapTextColor);
       content: var(--fdBreadcrumb_Separator, "/");
     }
 
