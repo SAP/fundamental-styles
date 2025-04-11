@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.39.3-rc.6](https://github.com/SAP/fundamental-styles/compare/v0.39.3-rc.5...v0.39.3-rc.6) (2025-04-11)
+
+### Bug Fixes
+
+- **styles:** design and a11y updates for Bar [ci visual] ([#6025](https://github.com/SAP/fundamental-styles/issues/6025)) ([5420a9c](https://github.com/SAP/fundamental-styles/commit/5420a9c3af4615a9aecaa95637b9f86c32eea7c4))
+
 ## [0.39.3-rc.5](https://github.com/SAP/fundamental-styles/compare/v0.39.3-rc.4...v0.39.3-rc.5) (2025-04-10)
 
 ### Bug Fixes
@@ -5896,9 +5902,9 @@ Co-authored-by: droshev <mladen.droshev@sap.com>
 
 - added a new modifier class to fd-row to achieve even alignment of its elements:fd-row--top in a form.
   Before:
-      <div class="fd-row">
-      After:
-      <div class="fd-row fd-row--top">
+  <div class="fd-row">
+  After:
+  <div class="fd-row fd-row--top">
 
 ### Bug Fixes
 
