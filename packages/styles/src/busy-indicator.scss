@@ -8,6 +8,7 @@ $block: #{$fd-namespace}-busy-indicator;
 .#{$block} {
   --Dot_Color: var(--fdBusy_Indicator_Dot_Color);
   --Dot_Size: 0.5rem;
+  --Dot_Spacing: 0.0625rem;
 
   &--contrast {
     --Dot_Color: var(--fdBusy_Indicator_Dot_Contrast_Color);
@@ -15,10 +16,12 @@ $block: #{$fd-namespace}-busy-indicator;
 
   &--m {
     --Dot_Size: 1rem;
+    --Dot_Spacing: 0.1875rem;
   }
 
   &--l {
     --Dot_Size: 2rem;
+    --Dot_Spacing: 0.25rem;
   }
 
   @include fd-reset();
@@ -66,14 +69,17 @@ $block: #{$fd-namespace}-busy-indicator;
     display: inline-block;
     border-radius: 50%;
     background-color: currentColor;
+    margin-inline-end: var(--Dot_Spacing);
     animation: grow 1.6s infinite cubic-bezier(0.32, 0.06, 0.85, 1.11);
 
     &:nth-child(2) {
       animation-delay: 0.2s;
+      margin-inline-end: var(--Dot_Spacing);
     }
 
     &:nth-child(3) {
       animation-delay: 0.4s;
+      margin-inline-end: 0;
     }
   }
 
