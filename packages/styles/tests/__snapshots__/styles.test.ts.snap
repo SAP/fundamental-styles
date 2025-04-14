@@ -6647,7 +6647,14 @@ exports[`Check stories > Components/Action Sheet > Story ActionSheetMobile > Sho
         <i class=\\"sap-icon--settings\\"></i>
     </button>
     <div class=\\"fd-action-sheet__wrapper fd-action-sheet__wrapper--active\\" id=\\"actionSheetPhone\\">
-        <h6 class=\\"fd-action-sheet__title\\">Press cancel to hide action sheet</h6>
+        <div class=\\"fd-bar fd-action-sheet__bar\\" role=\\"toolbar\\" aria-label=\\"Bar\\">
+            <div class=\\"fd-bar__left\\">
+                <div class=\\"fd-bar__element\\">
+                    <h6 class=\\"fd-action-sheet__title\\">Control Title</h6>
+                </div>
+            </div>
+        </div>
+        
         <ul class=\\"fd-action-sheet fd-action-sheet--mobile\\" role=\\"list\\" aria-label=\\"List of contextual options\\">
             <li class=\\"fd-action-sheet__item\\" role=\\"listitem\\">
                 <button class=\\"fd-button fd-button--full-width fd-button--transparent fd-button--text-alignment-left\\">

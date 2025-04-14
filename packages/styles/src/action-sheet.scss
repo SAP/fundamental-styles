@@ -4,6 +4,7 @@
 @import "./mixins";
 
 $block: #{$fd-namespace}-action-sheet;
+$bar: #{$fd-namespace}-bar;
 
 .#{$block} {
   // OVERLAY
@@ -41,7 +42,7 @@ $block: #{$fd-namespace}-action-sheet;
     @include fd-popover-border-radius();
 
     @include fd-pseudo-expand() {
-      opacity: var(--fdOverlay_Background_Opacity);
+      opacity: var(--sapBlockLayer_Opacity);
       background-color: $fd-action-sheet-overlay-color;
 
       @include fd-popover-border-radius();
@@ -50,21 +51,29 @@ $block: #{$fd-namespace}-action-sheet;
     &--active {
       @include fd-flex(column) {
         justify-content: flex-end;
-        align-items: flex-start;
+      }
+    }
+
+    .#{$block}__bar.#{$bar} {
+      border-radius: var(--sapPopover_BorderCornerRadius) var(--sapPopover_BorderCornerRadius) 0 0;
+      box-shadow: var(--sapContent_Shadow2);
+      width: calc(100% - var(--sapGroup_BorderWidth) * 2);
+      margin-inline-start: 0.0625rem;
+
+      & + .#{$block} {
+        border-radius: 0 0 var(--sapPopover_BorderCornerRadius) var(--sapPopover_BorderCornerRadius);
       }
     }
   }
 
   &__title {
     @include fd-reset();
-    @include fd-typography(var(--sapFontHeader6Size));
     @include fd-ellipsis();
+    @include fd-typography(var(--sapFontHeader5Size));
 
-    max-width: 100%;
     z-index: 1;
-    padding-block: 0 0.5rem;
-    padding-inline: 1rem;
-    color: var(--sapContent_ContrastTextColor);
+    font-family: var(--sapFontHeaderFamily);
+    color: var(--sapPageHeader_TextColor);
   }
 
   @include fd-compact-or-condensed() {
