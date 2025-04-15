@@ -95,9 +95,15 @@ MenuButton.storyName = 'Menu button';
 MenuButton.parameters = {
   docs: {
     description: {
-      story: `The menu button displays a dropdown menu upon click and is considered the default menu button.
-There are two different type of menu buttons: the default menu button and split menu button.
-\n**Maximum width is 12rem**.
+      story: `The Menu Button is the default trigger for the Menu (Horizon) component and is tightly coupled with it—it cannot be used independently. While the Menu component can function on its own, the Menu Button relies on it to provide a dropdown.
+<br>
+As a type of button, the Menu Button inherits all standard button types and their respective styles and states.
+
+There are two types of Menu Buttons:
+- Default Menu Button-Triggers the dropdown menu on click.
+- Split Menu Button-Offers separate actions: one for a primary action and one for the dropdown.
+
+If a fixed width is applied to the Menu Button, the dropdown arrow icon should be right-aligned. The recommended maximum width is 12rem..
             `
     }
   }

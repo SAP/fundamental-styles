@@ -368,7 +368,9 @@ $button-types-config: (
       $toggledBackground,
       --fdButtonToggledPrioritizedBorderColor,
       --fdButtonToggledPrioritizedBackgroundColor,
-    );
+    ) {
+      --fdButtonPrioritizedBackgroundColor: #{$toggledBackground};
+    };
 
     @include fd-hover() {
       @include _fd-button-apply-colors(
@@ -377,7 +379,9 @@ $button-types-config: (
         $toggledActiveBackground,
         --fdButtonToggledActivePrioritizedBorderColor,
         --fdButtonToggledActivePrioritizedBackgroundColor,
-      );
+      ) {
+        --fdButtonPrioritizedBackgroundColor: #{$toggledActiveBackground};
+      };
     }
 
     // @deprecated selected state
@@ -411,4 +415,6 @@ $button-types-config: (
     --fdElementTextColor: #{$color};
     --fdElementIconColor: #{$color};
   }
+
+  @content;
 }

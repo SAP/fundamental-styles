@@ -1,9 +1,63 @@
 <div class="fddocs-button-container">
-    <div class="fd-segmented-button" role="group" aria-label="Group label">
-        <button aria-label="Survey" class="fd-button"><i class="sap-icon--survey" aria-pressed="false"></i></button>
-        <button aria-label="Chart" class="fd-button fd-button--toggled" aria-pressed="true"><i class="sap-icon--pie-chart"></i></button>
-        <button aria-label="Basket" class="fd-button"><i class="sap-icon--basket" aria-pressed="false"></i></button>
-        <button aria-label="Joule" class="fd-button fd-button--toggled" aria-pressed="true"><i class="sap-icon--da"></i></button>
-        <button aria-label="Pool" class="fd-button"><i class="sap-icon--pool" aria-pressed="false"></i></button>
+    <div class="fd-segmented-button" role="listbox" tabindex="-1" aria-multiselectable="true" aria-roledescription="Segmented button group" aria-orientation="horizontal">
+        <button 
+            role="option" 
+            aria-label="Survey" 
+            aria-roledescription="Segmented button" 
+            aria-setsize="5" 
+            aria-posinset="1" 
+            aria-selected="false" 
+            title="Survey" 
+            class="fd-button">
+            <i class="sap-icon--survey" role="presentation" aria-hidden="true"></i>
+        </button> 
+
+        <button 
+            role="option" 
+            aria-label="Chart" 
+            aria-roledescription="Segmented button" 
+            aria-setsize="5" 
+            aria-posinset="2" 
+            aria-selected="true" 
+            title="Chart" 
+            class="fd-button fd-button--toggled">
+            <i class="sap-icon--pie-chart" role="presentation" aria-hidden="true"></i>
+        </button>
+
+        <button 
+            role="option" 
+            aria-label="Basket" 
+            aria-roledescription="Segmented button" 
+            aria-setsize="5" 
+            aria-posinset="3" 
+            aria-selected="false" 
+            title="Basket" 
+            class="fd-button">
+            <i class="sap-icon--basket" role="presentation" aria-hidden="true"></i>
+        </button>
+
+        <button 
+            role="option" 
+            aria-label="Joule" 
+            aria-roledescription="Segmented button" 
+            aria-setsize="5" 
+            aria-posinset="4" 
+            aria-selected="true" 
+            title="Joule" 
+            class="fd-button fd-button--toggled">
+            <i class="sap-icon--da" role="presentation" aria-hidden="true"></i>
+        </button>
+
+        <button 
+            role="option" 
+            aria-label="Pool" 
+            aria-roledescription="Segmented button" 
+            aria-setsize="5" 
+            aria-posinset="5" 
+            aria-selected="false" 
+            title="Pool" 
+            class="fd-button">
+            <i class="sap-icon--pool" role="presentation" aria-hidden="true"></i>
+        </button>
     </div>
 </div>
