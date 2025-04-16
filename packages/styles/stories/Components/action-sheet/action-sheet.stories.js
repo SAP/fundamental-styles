@@ -5,6 +5,7 @@ import '../../../src/icon.scss';
 import '../../../src/action-sheet.scss';
 import '../../../src/popover.scss';
 import '../../../src/button.scss';
+import '../../../src/bar.scss';
 export default {
   title: 'Components/Action Sheet',
   parameters: {
