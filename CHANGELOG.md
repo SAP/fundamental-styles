@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.39.3-rc.7](https://github.com/SAP/fundamental-styles/compare/v0.39.3-rc.6...v0.39.3-rc.7) (2025-04-16)
+
+### Bug Fixes
+
+- **styles:** add design and a11y updates for Breadcrumb [ci visual] ([#6026](https://github.com/SAP/fundamental-styles/issues/6026)) ([f3bb9f8](https://github.com/SAP/fundamental-styles/commit/f3bb9f8d6a3d8459452f413c2d87e60b43c71bdc))
+
 ## [0.39.3-rc.6](https://github.com/SAP/fundamental-styles/compare/v0.39.3-rc.5...v0.39.3-rc.6) (2025-04-11)
 
 ### Bug Fixes
@@ -5902,9 +5908,9 @@ Co-authored-by: droshev <mladen.droshev@sap.com>
 
 - added a new modifier class to fd-row to achieve even alignment of its elements:fd-row--top in a form.
   Before:
-  <div class="fd-row">
-  After:
-  <div class="fd-row fd-row--top">
+    <div class="fd-row">
+    After:
+    <div class="fd-row fd-row--top">
 
 ### Bug Fixes
 
