@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.39.3-rc.9](https://github.com/SAP/fundamental-styles/compare/v0.39.3-rc.8...v0.39.3-rc.9) (2025-04-16)
+
+### Bug Fixes
+
+- **styles:** deaign and a11y updates for Busy Indicator [ci visual] ([#6027](https://github.com/SAP/fundamental-styles/issues/6027)) ([57df9c5](https://github.com/SAP/fundamental-styles/commit/57df9c5532d234fc15bf73945f76c9cc9cc55039))
+
 ## [0.39.3-rc.8](https://github.com/SAP/fundamental-styles/compare/v0.39.3-rc.7...v0.39.3-rc.8) (2025-04-16)
 
 ### Bug Fixes
