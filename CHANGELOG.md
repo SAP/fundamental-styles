@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.40.0-rc.0](https://github.com/SAP/fundamental-styles/compare/v0.39.3-rc.11...v0.40.0-rc.0) (2025-04-16)
+
+### Features
+
+- **styles:** accessibility improvements on breadcrumb, action sheet, busy indicator ([#6032](https://github.com/SAP/fundamental-styles/issues/6032)) ([62ab848](https://github.com/SAP/fundamental-styles/commit/62ab848d2abede2a1295aceb6128942f7d75c6a7))
+
+### BREAKING CHANGES
+
+- **styles:** a11y updates on breadcrumb, action sheet, busy indicator
+
 ## [0.39.3-rc.11](https://github.com/SAP/fundamental-styles/compare/v0.39.3-rc.10...v0.39.3-rc.11) (2025-04-16)
 
 **Note:** Version bump only for package fundamental-styles
@@ -5928,9 +5938,9 @@ Co-authored-by: droshev <mladen.droshev@sap.com>
 
 - added a new modifier class to fd-row to achieve even alignment of its elements:fd-row--top in a form.
   Before:
-      <div class="fd-row">
-      After:
-      <div class="fd-row fd-row--top">
+  <div class="fd-row">
+  After:
+  <div class="fd-row fd-row--top">
 
 ### Bug Fixes
 
