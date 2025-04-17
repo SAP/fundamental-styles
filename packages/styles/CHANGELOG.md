@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.40.0-rc.1](https://github.com/SAP/fundamental-styles/compare/v0.40.0-rc.0...v0.40.0-rc.1) (2025-04-17)
+
+### Bug Fixes
+
+- **styles:** add design and a11y updates for Button controls [ci visual] ([#6029](https://github.com/SAP/fundamental-styles/issues/6029)) ([7c9ad29](https://github.com/SAP/fundamental-styles/commit/7c9ad29af82c494a45f40ba7fb663ea288b97f8f))
+
+### BREAKING CHANGES
+
+- **styles:** Segmented button has different role and attributes
+
 # [0.40.0-rc.0](https://github.com/SAP/fundamental-styles/compare/v0.39.3-rc.11...v0.40.0-rc.0) (2025-04-16)
 
 **Note:** Version bump only for package fundamental-styles
