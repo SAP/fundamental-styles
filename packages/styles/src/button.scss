@@ -135,6 +135,8 @@ $fd-button-badge-spacing: 0.25rem;
 
     .#{$block-button}__text {
       line-height: 1rem;
+      flex: 1;
+      text-align: start;
     }
   }
 
