@@ -110,7 +110,7 @@ Error.storyName = 'Items loading error';
 Error.parameters = {
   docs: {
     description: {
-      story: 'Error message can be displayed when items could not be loaded. Error message can be composed using Message page component.'
+      story: `Error message can be displayed when items could not be loaded. Error message can be composed using Message page component. For mixed data use <code>sapIllus-Scene-ReloadScreen</code> illustration, and for images in Carousel use <code>sapIllus-Dialog-UnableToLoadImage</code> illustration.`
     }
   }
 };
