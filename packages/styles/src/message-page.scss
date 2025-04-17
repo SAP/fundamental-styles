@@ -79,6 +79,10 @@ $block: #{$fd-namespace}-message-page;
     margin-block-end: 2rem;
     font-size: var(--sapFontHeader5Size);
     color: var(--sapContent_LabelColor);
+
+    &--center {
+      text-align: center;
+    }
   }
 
   &__actions {

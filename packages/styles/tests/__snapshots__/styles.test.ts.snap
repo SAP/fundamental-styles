@@ -14620,10 +14620,23 @@ exports[`Check stories > Components/Carousel > Story CarouselBackgrounds > Shoul
 "<div style=\\"display: flex; flex-direction: column; align-items: center\\">
     <h4>Transparent Carousel Content</h4>
 
-    <div class=\\"fd-carousel\\" data-ride=\\"carousel\\" style=\\"margin-bottom: 3rem; max-width: 20rem; max-height: 15.5rem\\">
+    <section 
+        class=\\"fd-carousel\\" 
+        role=\\"listbox\\"
+        aria-roledescription=\\"Carousel\\"
+        aria-activedescendant=\\"carousel-item-1\\"
+        style=\\"margin-bottom: 3rem; max-width: 20rem; max-height: 15.5rem\\">
+        
         <div class=\\"fd-carousel__content fd-carousel__content--transparent\\">
             <div class=\\"fd-carousel__slides\\">
-                <div class=\\"fd-carousel__item fd-carousel__item--active\\">
+                <div 
+                    role=\\"option\\"
+                    aria-setsize=\\"1\\"
+                    aria-posinset=\\"1\\"
+                    aria-selected=\\"true\\"
+                    aria-hidden=\\"false\\"
+                    id=\\"carousel-item-1\\"
+                    class=\\"fd-carousel__item fd-carousel__item--active\\">
                     <span style=\\"width: 300px; height: 200px; display: flex;\\"></span>
                 </div>
             </div>
@@ -14631,42 +14644,51 @@ exports[`Check stories > Components/Carousel > Story CarouselBackgrounds > Shoul
 
         <div class=\\"fd-carousel__page-indicator-container\\">
             <button
+                role=\\"button\\"
                 class=\\"fd-button fd-carousel__button fd-carousel__button--left\\"
-                data-slide=\\"prev\\"
-                aria-label=\\"Go to previous item\\"
+                title=\\"Previous Page\\"
             >
-                <i class=\\"sap-icon--slim-arrow-left\\"></i>
+                <i class=\\"sap-icon--slim-arrow-left\\" role=\\"presentation\\" aria-hidden=\\"true\\"></i>
             </button>
 
-            <ol class=\\"fd-carousel__page-indicators\\">
-                <li data-slide-to=\\"1\\" class=\\"fd-carousel__page-indicator\\"></li>
-                <li data-slide-to=\\"2\\" class=\\"fd-carousel__page-indicator\\"></li>
-                <li data-slide-to=\\"3\\" class=\\"fd-carousel__page-indicator\\"></li>
-                <li data-slide-to=\\"4\\" class=\\"fd-carousel__page-indicator\\"></li>
-                <li
-                    data-slide-to=\\"5\\"
-                    aria-label=\\"Displaying item 5 of 7\\"
-                    class=\\"fd-carousel__page-indicator fd-carousel__page-indicator--active\\"
-                ></li>
-                <li data-slide-to=\\"6\\" class=\\"fd-carousel__page-indicator\\"></li>
-                <li data-slide-to=\\"7\\" class=\\"fd-carousel__page-indicator\\"></li>
-            </ol>
+            <div class=\\"fd-carousel__page-indicators\\">
+                <span role=\\"img\\" aria-label=\\"Item 1 of 7 displayed\\" class=\\"fd-carousel__page-indicator\\"></span>
+                <span role=\\"img\\" aria-label=\\"Item 2 of 7 displayed\\" class=\\"fd-carousel__page-indicator\\"></span>
+                <span role=\\"img\\" aria-label=\\"Item 3 of 7 displayed\\" class=\\"fd-carousel__page-indicator\\"></span>
+                <span role=\\"img\\" aria-label=\\"Item 4 of 7 displayed\\" class=\\"fd-carousel__page-indicator\\"></span>
+                <span role=\\"img\\" aria-label=\\"Item 5 of 7 displayed\\" class=\\"fd-carousel__page-indicator fd-carousel__page-indicator--active\\"></span>
+                <span role=\\"img\\" aria-label=\\"Item 6 of 7 displayed\\" class=\\"fd-carousel__page-indicator\\"></span>
+                <span role=\\"img\\" aria-label=\\"Item 7 of 7 displayed\\" class=\\"fd-carousel__page-indicator\\"></span>
+            </div>
 
             <button
+                role=\\"button\\"
                 class=\\"fd-button fd-carousel__button fd-carousel__button--right\\"
-                data-slide=\\"next\\"
-                aria-label=\\"Go to next item\\"
+                title=\\"Next Page\\"
             >
-                <i class=\\"sap-icon--slim-arrow-right\\"></i>
+                <i class=\\"sap-icon--slim-arrow-right\\" role=\\"presentation\\" aria-hidden=\\"true\\"></i>
             </button>
         </div>
-    </div>
+    </section>
 
     <h4>Solid Carousel Content</h4>
-    <div class=\\"fd-carousel\\" data-ride=\\"carousel\\" style=\\"margin-bottom: 3rem; max-width: 20rem; max-height: 15.5rem\\">
+    <section 
+        class=\\"fd-carousel\\" 
+        role=\\"listbox\\"
+        aria-roledescription=\\"Carousel\\"
+        aria-activedescendant=\\"carousel-item-2\\"
+        style=\\"margin-bottom: 3rem; max-width: 20rem; max-height: 15.5rem\\">
+        
         <div class=\\"fd-carousel__content fd-carousel__content--solid\\">
             <div class=\\"fd-carousel__slides\\">
-                <div class=\\"fd-carousel__item fd-carousel__item--active\\">
+                <div 
+                    role=\\"option\\"
+                    aria-setsize=\\"1\\"
+                    aria-posinset=\\"1\\"
+                    aria-selected=\\"true\\"
+                    aria-hidden=\\"false\\"
+                    id=\\"carousel-item-2\\"
+                    class=\\"fd-carousel__item fd-carousel__item--active\\">
                     <span style=\\"width: 300px; height: 200px; display: flex;\\"></span>
                 </div>
             </div>
@@ -14674,124 +14696,159 @@ exports[`Check stories > Components/Carousel > Story CarouselBackgrounds > Shoul
 
         <div class=\\"fd-carousel__page-indicator-container\\">
             <button
+                role=\\"button\\"
                 class=\\"fd-button fd-carousel__button fd-carousel__button--left\\"
-                data-slide=\\"prev\\"
-                aria-label=\\"Go to previous item\\"
+                title=\\"Previous Page\\"
             >
-                <i class=\\"sap-icon--slim-arrow-up\\"></i>
+                <i class=\\"sap-icon--slim-arrow-up\\" role=\\"presentation\\" aria-hidden=\\"true\\"></i>
             </button>
 
-            <ol class=\\"fd-carousel__page-indicators\\">
-                <li data-slide-to=\\"1\\" class=\\"fd-carousel__page-indicator\\"></li>
-                <li data-slide-to=\\"2\\" class=\\"fd-carousel__page-indicator\\"></li>
-                <li data-slide-to=\\"3\\" class=\\"fd-carousel__page-indicator\\"></li>
-                <li data-slide-to=\\"4\\" class=\\"fd-carousel__page-indicator\\"></li>
-                <li
-                    data-slide-to=\\"5\\"
-                    aria-label=\\"Displaying item 5 of 7\\"
-                    class=\\"fd-carousel__page-indicator fd-carousel__page-indicator--active\\"
-                ></li>
-                <li data-slide-to=\\"6\\" class=\\"fd-carousel__page-indicator\\"></li>
-                <li data-slide-to=\\"7\\" class=\\"fd-carousel__page-indicator\\"></li>
-            </ol>
+            <div class=\\"fd-carousel__page-indicators\\">
+                <span role=\\"img\\" aria-label=\\"Item 1 of 7 displayed\\" class=\\"fd-carousel__page-indicator\\"></span>
+                <span role=\\"img\\" aria-label=\\"Item 2 of 7 displayed\\" class=\\"fd-carousel__page-indicator\\"></span>
+                <span role=\\"img\\" aria-label=\\"Item 3 of 7 displayed\\" class=\\"fd-carousel__page-indicator\\"></span>
+                <span role=\\"img\\" aria-label=\\"Item 4 of 7 displayed\\" class=\\"fd-carousel__page-indicator\\"></span>
+                <span role=\\"img\\" aria-label=\\"Item 5 of 7 displayed\\" class=\\"fd-carousel__page-indicator fd-carousel__page-indicator--active\\"></span>
+                <span role=\\"img\\" aria-label=\\"Item 6 of 7 displayed\\" class=\\"fd-carousel__page-indicator\\"></span>
+                <span role=\\"img\\" aria-label=\\"Item 7 of 7 displayed\\" class=\\"fd-carousel__page-indicator\\"></span>
+            </div>
 
             <button
+                role=\\"button\\"
                 class=\\"fd-button fd-carousel__button fd-carousel__button--right\\"
-                data-slide=\\"next\\"
-                aria-label=\\"Go to next item\\"
+                title=\\"Next Page\\"
             >
-                <i class=\\"sap-icon--slim-arrow-down\\"></i>
+                <i class=\\"sap-icon--slim-arrow-down\\" role=\\"presentation\\" aria-hidden=\\"true\\"></i>
             </button>
         </div>
-    </div>
+    </section>
 
     <div style=\\"display: none\\" role=\\"region\\" id=\\"carousel-1\\" aria-live=\\"polite\\">Displaying item 1 of 4</div>
 
     <h4>Transparent Page Indicator Container</h4>
 
-    <div class=\\"fd-carousel\\" data-ride=\\"carousel\\" style=\\"margin-bottom: 3rem; max-width: 20rem; max-height: 15.5rem\\">
+    <section 
+        class=\\"fd-carousel\\" 
+        role=\\"listbox\\"
+        aria-roledescription=\\"Carousel\\"
+        aria-activedescendant=\\"carousel-item-3\\"
+        style=\\"margin-bottom: 3rem; max-width: 20rem; max-height: 15.5rem\\">
+       
         <div class=\\"fd-carousel__content\\">
             <button
+                role=\\"button\\"
                 class=\\"fd-button fd-carousel__button fd-carousel__button--left\\"
-                data-slide=\\"prev\\"
-                aria-label=\\"Go to previous item\\"
+                title=\\"Previous Page\\"
             >
-                <i class=\\"sap-icon--slim-arrow-left\\"></i>
+                <i class=\\"sap-icon--slim-arrow-left\\" role=\\"presentation\\" aria-hidden=\\"true\\"></i>
             </button>
 
             <div class=\\"fd-carousel__slides\\">
-                <div class=\\"fd-carousel__item fd-carousel__item--active\\">
-                    <img src=\\"https://placehold.co/320x200\\" alt=\\"first image\\" />
+                <div 
+                    role=\\"option\\"
+                    aria-setsize=\\"1\\"
+                    aria-posinset=\\"1\\"
+                    aria-selected=\\"true\\"
+                    aria-hidden=\\"false\\"
+                    id=\\"carousel-item-3\\"
+                    class=\\"fd-carousel__item fd-carousel__item--active\\">
+                    <img src=\\"https://placehold.co/320x200\\" alt=\\"Example picture\\" aria-label=\\"Example picture\\" />
                 </div>
             </div>
 
             <button
+                role=\\"button\\"
                 class=\\"fd-button fd-carousel__button fd-carousel__button--right\\"
-                data-slide=\\"next\\"
-                aria-label=\\"Go to next item\\"
+                title=\\"Next Page\\"
             >
-                <i class=\\"sap-icon--slim-arrow-right\\"></i>
+                <i class=\\"sap-icon--slim-arrow-right\\" role=\\"presentation\\" aria-hidden=\\"true\\"></i>
             </button>
         </div>
 
         <div class=\\"fd-carousel__page-indicator-container fd-carousel__page-indicator-container--transparent\\">
-            <ol class=\\"fd-carousel__page-indicators\\">
-                <li data-slide-to=\\"1\\" class=\\"fd-carousel__page-indicator\\"></li>
-                <li data-slide-to=\\"2\\" class=\\"fd-carousel__page-indicator\\"></li>
-                <li data-slide-to=\\"3\\" class=\\"fd-carousel__page-indicator\\"></li>
-                <li data-slide-to=\\"4\\" class=\\"fd-carousel__page-indicator\\"></li>
-                <li data-slide-to=\\"5\\" class=\\"fd-carousel__page-indicator fd-carousel__page-indicator--active\\"></li>
-                <li data-slide-to=\\"6\\" class=\\"fd-carousel__page-indicator\\"></li>
-                <li data-slide-to=\\"7\\" class=\\"fd-carousel__page-indicator\\"></li>
-            </ol>
+            <div class=\\"fd-carousel__page-indicators\\">
+                <span role=\\"img\\" aria-label=\\"Item 1 of 7 displayed\\" class=\\"fd-carousel__page-indicator\\"></span>
+                <span role=\\"img\\" aria-label=\\"Item 2 of 7 displayed\\" class=\\"fd-carousel__page-indicator\\"></span>
+                <span role=\\"img\\" aria-label=\\"Item 3 of 7 displayed\\" class=\\"fd-carousel__page-indicator\\"></span>
+                <span role=\\"img\\" aria-label=\\"Item 4 of 7 displayed\\" class=\\"fd-carousel__page-indicator\\"></span>
+                <span role=\\"img\\" aria-label=\\"Item 5 of 7 displayed\\" class=\\"fd-carousel__page-indicator fd-carousel__page-indicator--active\\"></span>
+                <span role=\\"img\\" aria-label=\\"Item 6 of 7 displayed\\" class=\\"fd-carousel__page-indicator\\"></span>
+                <span role=\\"img\\" aria-label=\\"Item 7 of 7 displayed\\" class=\\"fd-carousel__page-indicator\\"></span>
+            </div>
         </div>
-    </div>
+    </section>
 
     <h4>Translucent Page Indicator Container</h4>
-    <div class=\\"fd-carousel\\" data-ride=\\"carousel\\" style=\\"margin-bottom: 3rem; max-width: 20rem; max-height: 15.5rem\\">
+    <section 
+        class=\\"fd-carousel\\" 
+        role=\\"listbox\\"
+        aria-roledescription=\\"Carousel\\"
+        aria-activedescendant=\\"carousel-item-4\\"
+        style=\\"margin-bottom: 3rem; max-width: 20rem; max-height: 15.5rem\\">
+        
         <div class=\\"fd-carousel__content\\">
             <button
+                role=\\"button\\"
                 class=\\"fd-button fd-carousel__button fd-carousel__button--up\\"
-                data-slide=\\"prev\\"
-                aria-label=\\"Go to previous item\\"
+                title=\\"Previous Page\\"
             >
-                <i class=\\"sap-icon--slim-arrow-up\\"></i>
+                <i class=\\"sap-icon--slim-arrow-up\\" role=\\"presentation\\" aria-hidden=\\"true\\"></i>
             </button>
 
             <div class=\\"fd-carousel__slides\\">
-                <div class=\\"fd-carousel__item fd-carousel__item--active\\">
-                    <img src=\\"https://placehold.co/320x200\\" alt=\\"first image\\" />
+                <div 
+                    role=\\"option\\"
+                    aria-setsize=\\"1\\"
+                    aria-posinset=\\"1\\"
+                    aria-selected=\\"true\\"
+                    aria-hidden=\\"false\\"
+                    id=\\"carousel-item-4\\"
+                    class=\\"fd-carousel__item fd-carousel__item--active\\">
+                    <img src=\\"https://placehold.co/320x200\\" alt=\\"Example picture\\" aria-label=\\"Example picture\\" />
                 </div>
             </div>
 
             <button
+                role=\\"button\\"
                 class=\\"fd-button fd-carousel__button fd-carousel__button--down\\"
-                data-slide=\\"next\\"
-                aria-label=\\"Go to next item\\"
+                title=\\"Next Page\\"
             >
-                <i class=\\"sap-icon--slim-arrow-down\\"></i>
+                <i class=\\"sap-icon--slim-arrow-down\\" role=\\"presentation\\" aria-hidden=\\"true\\"></i>
             </button>
         </div>
 
         <div class=\\"fd-carousel__page-indicator-container fd-carousel__page-indicator-container--translucent\\">
-            <ol class=\\"fd-carousel__page-indicators\\">
-                <li data-slide-to=\\"1\\" class=\\"fd-carousel__page-indicator\\"></li>
-                <li data-slide-to=\\"2\\" class=\\"fd-carousel__page-indicator\\"></li>
-                <li data-slide-to=\\"3\\" class=\\"fd-carousel__page-indicator\\"></li>
-                <li data-slide-to=\\"4\\" class=\\"fd-carousel__page-indicator\\"></li>
-                <li data-slide-to=\\"5\\" class=\\"fd-carousel__page-indicator fd-carousel__page-indicator--active\\"></li>
-                <li data-slide-to=\\"6\\" class=\\"fd-carousel__page-indicator\\"></li>
-                <li data-slide-to=\\"7\\" class=\\"fd-carousel__page-indicator\\"></li>
-            </ol>
+            <div class=\\"fd-carousel__page-indicators\\">
+                <span role=\\"img\\" aria-label=\\"Item 1 of 7 displayed\\" class=\\"fd-carousel__page-indicator\\"></span>
+                <span role=\\"img\\" aria-label=\\"Item 2 of 7 displayed\\" class=\\"fd-carousel__page-indicator\\"></span>
+                <span role=\\"img\\" aria-label=\\"Item 3 of 7 displayed\\" class=\\"fd-carousel__page-indicator\\"></span>
+                <span role=\\"img\\" aria-label=\\"Item 4 of 7 displayed\\" class=\\"fd-carousel__page-indicator\\"></span>
+                <span role=\\"img\\" aria-label=\\"Item 5 of 7 displayed\\" class=\\"fd-carousel__page-indicator fd-carousel__page-indicator--active\\"></span>
+                <span role=\\"img\\" aria-label=\\"Item 6 of 7 displayed\\" class=\\"fd-carousel__page-indicator\\"></span>
+                <span role=\\"img\\" aria-label=\\"Item 7 of 7 displayed\\" class=\\"fd-carousel__page-indicator\\"></span>
+            </div>
         </div>
-    </div>
+    </section>
 
     <h4>Page Indicator Container with no border</h4>
 
-    <div class=\\"fd-carousel\\" data-ride=\\"carousel\\" style=\\"margin-bottom: 3rem; max-width: 20rem; max-height: 15.5rem\\">
+    <section 
+        class=\\"fd-carousel\\" 
+        role=\\"listbox\\"
+        aria-roledescription=\\"Carousel\\"
+        aria-activedescendant=\\"carousel-item-5\\"
+        style=\\"margin-bottom: 3rem; max-width: 20rem; max-height: 15.5rem\\">
+        
         <div class=\\"fd-carousel__content fd-carousel__content--solid\\">
             <div class=\\"fd-carousel__slides\\">
-                <div class=\\"fd-carousel__item fd-carousel__item--active\\">
+                <div 
+                    role=\\"option\\"
+                    aria-setsize=\\"1\\"
+                    aria-posinset=\\"1\\"
+                    aria-selected=\\"true\\"
+                    aria-hidden=\\"false\\"
+                    id=\\"carousel-item-5\\"
+                    class=\\"fd-carousel__item fd-carousel__item--active\\">
                     <span style=\\"width: 300px; height: 200px; display: flex;\\"></span>
                 </div>
             </div>
@@ -14799,36 +14856,32 @@ exports[`Check stories > Components/Carousel > Story CarouselBackgrounds > Shoul
 
         <div class=\\"fd-carousel__page-indicator-container fd-carousel__page-indicator-container--no-border\\">
             <button
+                role=\\"button\\"
                 class=\\"fd-button fd-carousel__button fd-carousel__button--left\\"
-                data-slide=\\"prev\\"
-                aria-label=\\"Go to previous item\\"
+                title=\\"Previous Page\\"
             >
-                <i class=\\"sap-icon--slim-arrow-left\\"></i>
+                <i class=\\"sap-icon--slim-arrow-left\\" role=\\"presentation\\" aria-hidden=\\"true\\"></i>
             </button>
 
-            <ol class=\\"fd-carousel__page-indicators\\">
-                <li data-slide-to=\\"1\\" class=\\"fd-carousel__page-indicator\\"></li>
-                <li data-slide-to=\\"2\\" class=\\"fd-carousel__page-indicator\\"></li>
-                <li data-slide-to=\\"3\\" class=\\"fd-carousel__page-indicator\\"></li>
-                <li data-slide-to=\\"4\\" class=\\"fd-carousel__page-indicator\\"></li>
-                <li
-                    data-slide-to=\\"5\\"
-                    aria-label=\\"Displaying item 5 of 7\\"
-                    class=\\"fd-carousel__page-indicator fd-carousel__page-indicator--active\\"
-                ></li>
-                <li data-slide-to=\\"6\\" class=\\"fd-carousel__page-indicator\\"></li>
-                <li data-slide-to=\\"7\\" class=\\"fd-carousel__page-indicator\\"></li>
-            </ol>
+            <div class=\\"fd-carousel__page-indicators\\">
+                <span role=\\"img\\" aria-label=\\"Item 1 of 7 displayed\\" class=\\"fd-carousel__page-indicator\\"></span>
+                <span role=\\"img\\" aria-label=\\"Item 2 of 7 displayed\\" class=\\"fd-carousel__page-indicator\\"></span>
+                <span role=\\"img\\" aria-label=\\"Item 3 of 7 displayed\\" class=\\"fd-carousel__page-indicator\\"></span>
+                <span role=\\"img\\" aria-label=\\"Item 4 of 7 displayed\\" class=\\"fd-carousel__page-indicator\\"></span>
+                <span role=\\"img\\" aria-label=\\"Item 5 of 7 displayed\\" class=\\"fd-carousel__page-indicator fd-carousel__page-indicator--active\\"></span>
+                <span role=\\"img\\" aria-label=\\"Item 6 of 7 displayed\\" class=\\"fd-carousel__page-indicator\\"></span>
+                <span role=\\"img\\" aria-label=\\"Item 7 of 7 displayed\\" class=\\"fd-carousel__page-indicator\\"></span>
+            </div>
 
             <button
+                role=\\"button\\"
                 class=\\"fd-button fd-carousel__button fd-carousel__button--right\\"
-                data-slide=\\"next\\"
-                aria-label=\\"Go to next item\\"
+                title=\\"Next Page\\"
             >
-                <i class=\\"sap-icon--slim-arrow-right\\"></i>
+                <i class=\\"sap-icon--slim-arrow-right\\" role=\\"presentation\\" aria-hidden=\\"true\\"></i>
             </button>
         </div>
-    </div>
+    </section>
 
     <div style=\\"display: none\\" role=\\"region\\" id=\\"carousel-2\\" aria-live=\\"polite\\">Displaying item 1 of 4</div>
 </div>
@@ -14839,65 +14892,85 @@ exports[`Check stories > Components/Carousel > Story CarouselBottom > Should mat
 "<div style=\\"display: flex; flex-direction: column; align-items: center\\">
     <h4>Navigation buttons in page indicator (focussed)</h4>
 
-    <div class=\\"fd-carousel is-focus\\" data-ride=\\"carousel\\" style=\\"margin-bottom: 3rem; max-width: 20rem; max-height: 15.5rem\\">
+    <section 
+        class=\\"fd-carousel is-focus\\" 
+        role=\\"listbox\\"
+        aria-roledescription=\\"Carousel\\"
+        aria-activedescendant=\\"carousel-item-1\\"
+        style=\\"margin-bottom: 3rem; max-width: 20rem; max-height: 15.5rem\\">
         <div class=\\"fd-carousel__content\\">
             <div class=\\"fd-carousel__slides\\">
-                <div class=\\"fd-carousel__item fd-carousel__item--active\\">
-                    <img src=\\"https://placehold.co/320x200\\" alt=\\"first image\\" />
+                <div 
+                    role=\\"option\\"
+                    aria-setsize=\\"1\\"
+                    aria-posinset=\\"1\\"
+                    aria-selected=\\"true\\"
+                    aria-hidden=\\"false\\"
+                    id=\\"carousel-item-1\\"
+                    class=\\"fd-carousel__item fd-carousel__item--active\\">
+                    <img src=\\"https://placehold.co/320x200\\" alt=\\"Example picture\\" aria-label=\\"Example picture\\" />
                 </div>
             </div>
         </div>
 
         <div class=\\"fd-carousel__page-indicator-container\\">
             <button
+                role=\\"button\\"
                 class=\\"fd-button fd-carousel__button fd-carousel__button--left\\"
-                data-slide=\\"prev\\"
-                aria-label=\\"Go to previous item\\"
+                title=\\"Previous Page\\"
             >
-                <i class=\\"sap-icon--slim-arrow-left\\"></i>
+                <i class=\\"sap-icon--slim-arrow-left\\" role=\\"presentation\\" aria-hidden=\\"true\\"></i>
             </button>
 
-            <ol class=\\"fd-carousel__page-indicators\\">
-                <li data-slide-to=\\"1\\" class=\\"fd-carousel__page-indicator\\"></li>
-                <li data-slide-to=\\"2\\" class=\\"fd-carousel__page-indicator\\"></li>
-                <li data-slide-to=\\"3\\" class=\\"fd-carousel__page-indicator\\"></li>
-                <li data-slide-to=\\"4\\" class=\\"fd-carousel__page-indicator\\"></li>
-                <li
-                    data-slide-to=\\"5\\"
-                    aria-label=\\"Displaying item 5 of 7\\"
-                    class=\\"fd-carousel__page-indicator fd-carousel__page-indicator--active\\"
-                ></li>
-                <li data-slide-to=\\"6\\" class=\\"fd-carousel__page-indicator\\"></li>
-                <li data-slide-to=\\"7\\" class=\\"fd-carousel__page-indicator\\"></li>
-            </ol>
+            <div class=\\"fd-carousel__page-indicators\\">
+                <span role=\\"img\\" aria-label=\\"Item 1 of 7 displayed\\" class=\\"fd-carousel__page-indicator\\"></span>
+                <span role=\\"img\\" aria-label=\\"Item 2 of 7 displayed\\" class=\\"fd-carousel__page-indicator\\"></span>
+                <span role=\\"img\\" aria-label=\\"Item 3 of 7 displayed\\" class=\\"fd-carousel__page-indicator\\"></span>
+                <span role=\\"img\\" aria-label=\\"Item 4 of 7 displayed\\" class=\\"fd-carousel__page-indicator\\"></span>
+                <span role=\\"img\\" aria-label=\\"Item 5 of 7 displayed\\" class=\\"fd-carousel__page-indicator fd-carousel__page-indicator--active\\"></span>
+                <span role=\\"img\\" aria-label=\\"Item 6 of 7 displayed\\" class=\\"fd-carousel__page-indicator\\"></span>
+                <span role=\\"img\\" aria-label=\\"Item 7 of 7 displayed\\" class=\\"fd-carousel__page-indicator\\"></span>
+            </div>
 
             <button
+                role=\\"button\\"
                 class=\\"fd-button fd-carousel__button fd-carousel__button--right\\"
-                data-slide=\\"next\\"
-                aria-label=\\"Go to next item\\"
+                title=\\"Next Page\\"
             >
-                <i class=\\"sap-icon--slim-arrow-right\\"></i>
+                <i class=\\"sap-icon--slim-arrow-right\\" role=\\"presentation\\" aria-hidden=\\"true\\"></i>
             </button>
         </div>
-    </div>
+    </section>
 
     <h4>Navigation buttons in page indicator (vertical)</h4>
-    <div class=\\"fd-carousel\\" data-ride=\\"carousel\\" style=\\"margin-bottom: 3rem; max-width: 20rem; max-height: 15.5rem\\">
+    <section 
+        class=\\"fd-carousel\\" 
+        role=\\"listbox\\"
+        aria-roledescription=\\"Carousel\\"
+        aria-activedescendant=\\"carousel-item-2\\"
+        style=\\"margin-bottom: 3rem; max-width: 20rem; max-height: 15.5rem\\">
         <div class=\\"fd-carousel__content\\">
             <div class=\\"fd-carousel__slides\\">
-                <div class=\\"fd-carousel__item fd-carousel__item--active\\">
-                    <img src=\\"https://placehold.co/320x200\\" alt=\\"first image\\" />
+                <div 
+                    role=\\"option\\"
+                    aria-setsize=\\"1\\"
+                    aria-posinset=\\"1\\"
+                    aria-selected=\\"true\\"
+                    aria-hidden=\\"false\\"
+                    id=\\"carousel-item-2\\"
+                    class=\\"fd-carousel__item fd-carousel__item--active\\">
+                    <img src=\\"https://placehold.co/320x200\\" alt=\\"Example picture\\" aria-label=\\"Example picture\\" />
                 </div>
             </div>
         </div>
 
         <div class=\\"fd-carousel__page-indicator-container\\">
             <button
+                role=\\"button\\"
                 class=\\"fd-button fd-carousel__button fd-carousel__button--left\\"
-                data-slide=\\"prev\\"
-                aria-label=\\"Go to previous item\\"
+                title=\\"Previous Page\\"
             >
-                <i class=\\"sap-icon--slim-arrow-up\\"></i>
+                <i class=\\"sap-icon--slim-arrow-up\\" role=\\"presentation\\" aria-hidden=\\"true\\"></i>
             </button>
 
             <ol class=\\"fd-carousel__page-indicators\\">
@@ -14915,116 +14988,152 @@ exports[`Check stories > Components/Carousel > Story CarouselBottom > Should mat
             </ol>
 
             <button
+                role=\\"button\\"
                 class=\\"fd-button fd-carousel__button fd-carousel__button--right\\"
-                data-slide=\\"next\\"
-                aria-label=\\"Go to next item\\"
+                title=\\"Next Page\\"
             >
-                <i class=\\"sap-icon--slim-arrow-down\\"></i>
+                <i class=\\"sap-icon--slim-arrow-down\\" role=\\"presentation\\" aria-hidden=\\"true\\"></i>
             </button>
         </div>
-    </div>
+    </section>
 
-    <div style=\\"display: none\\" role=\\"region\\" id=\\"carousel-1\\" aria-live=\\"polite\\">Displaying item 1 of 4</div>
+    <div style=\\"display: none\\" role=\\"region\\" id=\\"carousel-1\\" aria-live=\\"polite\\">Displaying item 1 of 7</div>
 
     <h4>Content navigation buttons</h4>
 
-    <div class=\\"fd-carousel\\" data-ride=\\"carousel\\" style=\\"margin-bottom: 3rem; max-width: 20rem; max-height: 15.5rem\\">
+    <section 
+        class=\\"fd-carousel\\" 
+        role=\\"listbox\\"
+        aria-roledescription=\\"Carousel\\"
+        aria-activedescendant=\\"carousel-item-3\\"
+        style=\\"margin-bottom: 3rem; max-width: 20rem; max-height: 15.5rem\\">
         <div class=\\"fd-carousel__content\\">
             <button
+                role=\\"button\\"
                 class=\\"fd-button fd-carousel__button fd-carousel__button--left\\"
-                data-slide=\\"prev\\"
-                aria-label=\\"Go to previous item\\"
+                title=\\"Previous Page\\"
             >
-                <i class=\\"sap-icon--slim-arrow-left\\"></i>
+                <i class=\\"sap-icon--slim-arrow-left\\" role=\\"presentation\\" aria-hidden=\\"true\\"></i>
             </button>
 
             <div class=\\"fd-carousel__slides\\">
-                <div class=\\"fd-carousel__item fd-carousel__item--active\\">
-                    <img src=\\"https://placehold.co/320x200\\" alt=\\"first image\\" />
+                <div 
+                    role=\\"option\\"
+                    aria-setsize=\\"1\\"
+                    aria-posinset=\\"1\\"
+                    aria-selected=\\"true\\"
+                    aria-hidden=\\"false\\"
+                    id=\\"carousel-item-3\\"
+                    class=\\"fd-carousel__item fd-carousel__item--active\\">
+                    <img src=\\"https://placehold.co/320x200\\" alt=\\"Example picture\\" aria-label=\\"Example picture\\" />
                 </div>
             </div>
 
             <button
+                role=\\"button\\"
                 class=\\"fd-button fd-carousel__button fd-carousel__button--right\\"
-                data-slide=\\"next\\"
-                aria-label=\\"Go to next item\\"
+                title=\\"Next Page\\"
             >
-                <i class=\\"sap-icon--slim-arrow-right\\"></i>
+                <i class=\\"sap-icon--slim-arrow-right\\" role=\\"presentation\\" aria-hidden=\\"true\\"></i>
             </button>
         </div>
 
         <div class=\\"fd-carousel__page-indicator-container\\">
-            <ol class=\\"fd-carousel__page-indicators\\">
-                <li data-slide-to=\\"1\\" class=\\"fd-carousel__page-indicator\\"></li>
-                <li data-slide-to=\\"2\\" class=\\"fd-carousel__page-indicator\\"></li>
-                <li data-slide-to=\\"3\\" class=\\"fd-carousel__page-indicator\\"></li>
-                <li data-slide-to=\\"4\\" class=\\"fd-carousel__page-indicator\\"></li>
-                <li data-slide-to=\\"5\\" class=\\"fd-carousel__page-indicator fd-carousel__page-indicator--active\\"></li>
-                <li data-slide-to=\\"6\\" class=\\"fd-carousel__page-indicator\\"></li>
-                <li data-slide-to=\\"7\\" class=\\"fd-carousel__page-indicator\\"></li>
-            </ol>
+            <div class=\\"fd-carousel__page-indicators\\">
+                <span role=\\"img\\" aria-label=\\"Item 1 of 7 displayed\\" class=\\"fd-carousel__page-indicator\\"></span>
+                <span role=\\"img\\" aria-label=\\"Item 2 of 7 displayed\\" class=\\"fd-carousel__page-indicator\\"></span>
+                <span role=\\"img\\" aria-label=\\"Item 3 of 7 displayed\\" class=\\"fd-carousel__page-indicator\\"></span>
+                <span role=\\"img\\" aria-label=\\"Item 4 of 7 displayed\\" class=\\"fd-carousel__page-indicator\\"></span>
+                <span role=\\"img\\" aria-label=\\"Item 5 of 7 displayed\\" class=\\"fd-carousel__page-indicator fd-carousel__page-indicator--active\\"></span>
+                <span role=\\"img\\" aria-label=\\"Item 6 of 7 displayed\\" class=\\"fd-carousel__page-indicator\\"></span>
+                <span role=\\"img\\" aria-label=\\"Item 7 of 7 displayed\\" class=\\"fd-carousel__page-indicator\\"></span>
+            </div>
         </div>
-    </div>
+    </section>
 
     <h4>Content navigation buttons (vertical)</h4>
-    <div class=\\"fd-carousel\\" data-ride=\\"carousel\\" style=\\"margin-bottom: 3rem; max-width: 20rem; max-height: 15.5rem\\">
+    <section 
+        role=\\"listbox\\"
+        aria-roledescription=\\"Carousel\\"
+        aria-activedescendant=\\"carousel-item-4\\"
+        class=\\"fd-carousel\\" 
+        style=\\"margin-bottom: 3rem; max-width: 20rem; max-height: 15.5rem\\">
         <div class=\\"fd-carousel__content\\">
             <button
+                role=\\"button\\"
                 class=\\"fd-button fd-carousel__button fd-carousel__button--up\\"
-                data-slide=\\"prev\\"
-                aria-label=\\"Go to previous item\\"
+                title=\\"Previous Page\\"
             >
-                <i class=\\"sap-icon--slim-arrow-up\\"></i>
+                <i class=\\"sap-icon--slim-arrow-up\\" role=\\"presentation\\" aria-hidden=\\"true\\"></i>
             </button>
 
             <div class=\\"fd-carousel__slides\\">
-                <div class=\\"fd-carousel__item fd-carousel__item--active\\">
-                    <img src=\\"https://placehold.co/320x200\\" alt=\\"first image\\" />
+                <div 
+                    role=\\"option\\"
+                    aria-setsize=\\"1\\"
+                    aria-posinset=\\"1\\"
+                    aria-selected=\\"true\\"
+                    aria-hidden=\\"false\\"
+                    id=\\"carousel-item-4\\"
+                    class=\\"fd-carousel__item fd-carousel__item--active\\">
+                    <img src=\\"https://placehold.co/320x200\\" alt=\\"Example picture\\" aria-label=\\"Example picture\\" />
                 </div>
             </div>
 
             <button
+                role=\\"button\\"
                 class=\\"fd-button fd-carousel__button fd-carousel__button--down\\"
-                data-slide=\\"next\\"
-                aria-label=\\"Go to next item\\"
+                title=\\"Next Page\\"
             >
-                <i class=\\"sap-icon--slim-arrow-down\\"></i>
+                <i class=\\"sap-icon--slim-arrow-down\\" role=\\"presentation\\" aria-hidden=\\"true\\"></i>
             </button>
         </div>
 
         <div class=\\"fd-carousel__page-indicator-container\\">
-            <ol class=\\"fd-carousel__page-indicators\\">
-                <li data-slide-to=\\"1\\" class=\\"fd-carousel__page-indicator\\"></li>
-                <li data-slide-to=\\"2\\" class=\\"fd-carousel__page-indicator\\"></li>
-                <li data-slide-to=\\"3\\" class=\\"fd-carousel__page-indicator\\"></li>
-                <li data-slide-to=\\"4\\" class=\\"fd-carousel__page-indicator\\"></li>
-                <li data-slide-to=\\"5\\" class=\\"fd-carousel__page-indicator fd-carousel__page-indicator--active\\"></li>
-                <li data-slide-to=\\"6\\" class=\\"fd-carousel__page-indicator\\"></li>
-                <li data-slide-to=\\"7\\" class=\\"fd-carousel__page-indicator\\"></li>
-            </ol>
+            <div class=\\"fd-carousel__page-indicators\\">
+                <span role=\\"img\\" aria-label=\\"Item 1 of 7 displayed\\" class=\\"fd-carousel__page-indicator\\"></span>
+                <span role=\\"img\\" aria-label=\\"Item 2 of 7 displayed\\" class=\\"fd-carousel__page-indicator\\"></span>
+                <span role=\\"img\\" aria-label=\\"Item 3 of 7 displayed\\" class=\\"fd-carousel__page-indicator\\"></span>
+                <span role=\\"img\\" aria-label=\\"Item 4 of 7 displayed\\" class=\\"fd-carousel__page-indicator\\"></span>
+                <span role=\\"img\\" aria-label=\\"Item 5 of 7 displayed\\" class=\\"fd-carousel__page-indicator fd-carousel__page-indicator--active\\"></span>
+                <span role=\\"img\\" aria-label=\\"Item 6 of 7 displayed\\" class=\\"fd-carousel__page-indicator\\"></span>
+                <span role=\\"img\\" aria-label=\\"Item 7 of 7 displayed\\" class=\\"fd-carousel__page-indicator\\"></span>
+            </div>
         </div>
-    </div>
+    </section>
 
-    <div style=\\"display: none\\" role=\\"region\\" id=\\"carousel-2\\" aria-live=\\"polite\\">Displaying item 1 of 4</div>
+    <div style=\\"display: none\\" role=\\"region\\" id=\\"carousel-2\\" aria-live=\\"polite\\">Displaying item 1 of 7</div>
 
     <h4>Numeric page indicator</h4>
 
-    <div class=\\"fd-carousel\\" data-ride=\\"carousel\\" style=\\"margin-bottom: 3rem; max-width: 20rem; max-height: 15.5rem\\">
+    <section 
+        role=\\"listbox\\"
+        aria-roledescription=\\"Carousel\\"
+        aria-activedescendant=\\"carousel-item-5\\"
+        class=\\"fd-carousel\\" 
+        style=\\"margin-bottom: 3rem; max-width: 20rem; max-height: 15.5rem\\">
         <div class=\\"fd-carousel__content\\">
             <div class=\\"fd-carousel__slides\\">
-                <div class=\\"fd-carousel__item fd-carousel__item--active\\">
-                    <img src=\\"https://placehold.co/320x200\\" alt=\\"first image\\" />
+                <div 
+                    role=\\"option\\"
+                    aria-setsize=\\"1\\"
+                    aria-posinset=\\"1\\"
+                    aria-selected=\\"true\\"
+                    aria-hidden=\\"false\\"
+                    id=\\"carousel-item-5\\"
+                    class=\\"fd-carousel__item fd-carousel__item--active\\">
+                    <img src=\\"https://placehold.co/320x200\\" alt=\\"Example picture\\" aria-label=\\"Example picture\\" />
                 </div>
             </div>
         </div>
 
         <div class=\\"fd-carousel__page-indicator-container\\">
             <button
+                role=\\"button\\"
                 class=\\"fd-button fd-carousel__button fd-carousel__button--left\\"
-                data-slide=\\"prev\\"
-                aria-label=\\"Go to previous item\\"
+                title=\\"Previous Page\\"
             >
-                <i class=\\"sap-icon--slim-arrow-left\\"></i>
+                <i class=\\"sap-icon--slim-arrow-left\\" role=\\"presentation\\" aria-hidden=\\"true\\"></i>
             </button>
 
             <div class=\\"fd-carousel__page-indicators\\">
@@ -15032,46 +15141,58 @@ exports[`Check stories > Components/Carousel > Story CarouselBottom > Should mat
             </div>
 
             <button
+                role=\\"button\\"
                 class=\\"fd-button fd-carousel__button fd-carousel__button--right\\"
-                data-slide=\\"next\\"
-                aria-label=\\"Go to next item\\"
+                title=\\"Next Page\\"
             >
-                <i class=\\"sap-icon--slim-arrow-right\\"></i>
+                <i class=\\"sap-icon--slim-arrow-right\\" role=\\"presentation\\" aria-hidden=\\"true\\"></i>
             </button>
         </div>
-    </div>
+    </section>
 
-    <div style=\\"display: none\\" role=\\"region\\" id=\\"carousel-3\\" aria-live=\\"polite\\">Displaying item 1 of 4</div>
+    <div style=\\"display: none\\" role=\\"region\\" id=\\"carousel-3\\" aria-live=\\"polite\\">Displaying item 1 of 7</div>
 
     <h4>No page indicator</h4>
 
-    <div class=\\"fd-carousel\\" data-ride=\\"carousel\\" style=\\"margin-bottom: 3rem; max-width: 20rem; max-height: 15.5rem\\">
+    <section 
+        role=\\"listbox\\"
+        aria-roledescription=\\"Carousel\\"
+        aria-activedescendant=\\"carousel-item-6\\"
+        class=\\"fd-carousel\\" 
+        style=\\"margin-bottom: 3rem; max-width: 20rem; max-height: 15.5rem\\">
         <div class=\\"fd-carousel__content\\">
             <button
+                role=\\"button\\"
                 class=\\"fd-button fd-carousel__button fd-carousel__button--left\\"
-                data-slide=\\"prev\\"
-                aria-label=\\"Go to previous item\\"
+                title=\\"Previous Page\\"
             >
-                <i class=\\"sap-icon--slim-arrow-left\\"></i>
+                <i class=\\"sap-icon--slim-arrow-left\\" role=\\"presentation\\" aria-hidden=\\"true\\"></i>
             </button>
 
             <div class=\\"fd-carousel__slides\\">
-                <div class=\\"fd-carousel__item fd-carousel__item--active\\">
-                    <img src=\\"https://placehold.co/320x200\\" alt=\\"first image\\" />
+                <div 
+                    role=\\"option\\"
+                    aria-setsize=\\"1\\"
+                    aria-posinset=\\"1\\"
+                    aria-selected=\\"true\\"
+                    aria-hidden=\\"false\\"
+                    id=\\"carousel-item-6\\"
+                    class=\\"fd-carousel__item fd-carousel__item--active\\">
+                    <img src=\\"https://placehold.co/320x200\\" alt=\\"Example picture\\" aria-label=\\"Example picture\\" />
                 </div>
             </div>
 
             <button
+                role=\\"button\\"
                 class=\\"fd-button fd-carousel__button fd-carousel__button--right\\"
-                data-slide=\\"next\\"
-                aria-label=\\"Go to next item\\"
+                title=\\"Next Page\\"
             >
-                <i class=\\"sap-icon--slim-arrow-right\\"></i>
+                <i class=\\"sap-icon--slim-arrow-right\\" role=\\"presentation\\" aria-hidden=\\"true\\"></i>
             </button>
         </div>
-    </div>
+    </section>
 
-    <div style=\\"display: none\\" role=\\"region\\" id=\\"carousel-4\\" aria-live=\\"polite\\">Displaying item 1 of 4</div>
+    <div style=\\"display: none\\" role=\\"region\\" id=\\"carousel-4\\" aria-live=\\"polite\\">Displaying item 1 of 7</div>
 </div>
 "
 `;
@@ -15080,15 +15201,24 @@ exports[`Check stories > Components/Carousel > Story CarouselNoNavigation > Shou
 "<div style=\\"display: flex; flex-direction: column; align-items: center;\\">
     <h4>Hiding navigation buttons in page indicator</h4>
 
-    <div
+    <section
+        role=\\"listbox\\"
+        aria-roledescription=\\"Carousel\\"
+        aria-activedescendant=\\"carousel-item-1\\"
         class=\\"fd-carousel fd-carousel--no-navigation\\"
-        data-ride=\\"carousel\\"
         style=\\"margin-bottom: 3rem; max-width: 20rem;\\"
     >
         <div class=\\"fd-carousel__content\\">
             <div class=\\"fd-carousel__slides\\">
-                <div class=\\"fd-carousel__item fd-carousel__item--active\\">
-                    <img src=\\"https://placehold.co/320x200\\" alt=\\"first image\\">
+                <div 
+                    role=\\"option\\"
+                    aria-setsize=\\"1\\"
+                    aria-posinset=\\"1\\"
+                    aria-selected=\\"true\\"
+                    aria-hidden=\\"false\\"
+                    id=\\"carousel-item-1\\"
+                    class=\\"fd-carousel__item fd-carousel__item--active\\">
+                    <img src=\\"https://placehold.co/320x200\\" alt=\\"Example picture\\" aria-label=\\"Example picture\\">
                 </div>
             </div>
         </div>
@@ -15096,107 +15226,83 @@ exports[`Check stories > Components/Carousel > Story CarouselNoNavigation > Shou
         <div class=\\"fd-carousel__page-indicator-container\\">
             <button
                 class=\\"fd-button fd-carousel__button fd-carousel__button--left\\"
-                data-slide=\\"prev\\"
-                aria-label=\\"Go to previous item\\">
-                <i class=\\"sap-icon--slim-arrow-left\\"></i>
+                title=\\"Previous Page\\">
+                <i class=\\"sap-icon--slim-arrow-left\\" role=\\"presentation\\" aria-hidden=\\"true\\"></i>
             </button>
 
-            <ol class=\\"fd-carousel__page-indicators\\">
-                <li
-                    data-slide-to=\\"1\\"
-                    class=\\"fd-carousel__page-indicator\\"></li>
-                <li
-                    data-slide-to=\\"2\\"
-                    class=\\"fd-carousel__page-indicator\\"></li>
-                <li
-                    data-slide-to=\\"3\\"
-                    class=\\"fd-carousel__page-indicator\\"></li>
-                <li
-                    data-slide-to=\\"4\\"
-                    class=\\"fd-carousel__page-indicator\\"></li>
-                <li
-                    data-slide-to=\\"5\\"
-                    aria-label=\\"Displaying item 5 of 7\\"
-                    class=\\"fd-carousel__page-indicator fd-carousel__page-indicator--active\\"></li>
-                <li
-                    data-slide-to=\\"6\\"
-                    class=\\"fd-carousel__page-indicator\\"></li>
-                <li
-                    data-slide-to=\\"7\\"
-                    class=\\"fd-carousel__page-indicator\\"></li>
-            </ol>
+            <div class=\\"fd-carousel__page-indicators\\">
+                <span role=\\"img\\" aria-label=\\"Item 1 of 7 displayed\\" class=\\"fd-carousel__page-indicator\\"></span>
+                <span role=\\"img\\" aria-label=\\"Item 2 of 7 displayed\\" class=\\"fd-carousel__page-indicator\\"></span>
+                <span role=\\"img\\" aria-label=\\"Item 3 of 7 displayed\\" class=\\"fd-carousel__page-indicator\\"></span>
+                <span role=\\"img\\" aria-label=\\"Item 4 of 7 displayed\\" class=\\"fd-carousel__page-indicator\\"></span>
+                <span role=\\"img\\" aria-label=\\"Item 5 of 7 displayed\\" class=\\"fd-carousel__page-indicator fd-carousel__page-indicator--active\\"></span>
+                <span role=\\"img\\" aria-label=\\"Item 6 of 7 displayed\\" class=\\"fd-carousel__page-indicator\\"></span>
+                <span role=\\"img\\" aria-label=\\"Item 7 of 7 displayed\\" class=\\"fd-carousel__page-indicator\\"></span>
+            </div>
 
             <button
                 class=\\"fd-button fd-carousel__button fd-carousel__button--right\\"
-                data-slide=\\"next\\"
-                aria-label=\\"Go to next item\\">
-                <i class=\\"sap-icon--slim-arrow-right\\"></i>
+                title=\\"Next Page\\">
+                <i class=\\"sap-icon--slim-arrow-right\\" role=\\"presentation\\" aria-hidden=\\"true\\"></i>
             </button>
         </div>
-    </div>
+    </section>
 
     <div style=\\"display: none;\\" role=\\"region\\" id=\\"carousel-9\\" aria-live=\\"polite\\">
-        Displaying item 1 of 4
+        Displaying item 1 of 7
     </div>
 
     <h4>Hiding navigation buttons in the content</h4>
 
-    <div
+    <section
+        role=\\"listbox\\"
+        aria-roledescription=\\"Carousel\\"
+        aria-activedescendant=\\"carousel-item-2\\"
         class=\\"fd-carousel fd-carousel--no-navigation\\"
-        data-ride=\\"carousel\\"
         style=\\"margin-bottom: 3rem; max-width: 20rem; max-height: 15.5rem;\\"
     >
         <div class=\\"fd-carousel__page-indicator-container\\">
-            <ol class=\\"fd-carousel__page-indicators\\">
-                <li
-                    data-slide-to=\\"1\\"
-                    class=\\"fd-carousel__page-indicator\\"></li>
-                <li
-                    data-slide-to=\\"2\\"
-                    class=\\"fd-carousel__page-indicator\\"></li>
-                <li
-                    data-slide-to=\\"3\\"
-                    class=\\"fd-carousel__page-indicator\\"></li>
-                <li
-                    data-slide-to=\\"4\\"
-                    class=\\"fd-carousel__page-indicator\\"></li>
-                <li
-                    data-slide-to=\\"5\\"
-                    class=\\"fd-carousel__page-indicator fd-carousel__page-indicator--active\\"></li>
-                <li
-                    data-slide-to=\\"6\\"
-                    class=\\"fd-carousel__page-indicator\\"></li>
-                <li
-                    data-slide-to=\\"7\\"
-                    class=\\"fd-carousel__page-indicator\\"></li>
-            </ol>
+            <div class=\\"fd-carousel__page-indicators\\">
+                <span role=\\"img\\" aria-label=\\"Item 1 of 7 displayed\\" class=\\"fd-carousel__page-indicator\\"></span>
+                <span role=\\"img\\" aria-label=\\"Item 2 of 7 displayed\\" class=\\"fd-carousel__page-indicator\\"></span>
+                <span role=\\"img\\" aria-label=\\"Item 3 of 7 displayed\\" class=\\"fd-carousel__page-indicator\\"></span>
+                <span role=\\"img\\" aria-label=\\"Item 4 of 7 displayed\\" class=\\"fd-carousel__page-indicator\\"></span>
+                <span role=\\"img\\" aria-label=\\"Item 5 of 7 displayed\\" class=\\"fd-carousel__page-indicator fd-carousel__page-indicator--active\\"></span>
+                <span role=\\"img\\" aria-label=\\"Item 6 of 7 displayed\\" class=\\"fd-carousel__page-indicator\\"></span>
+                <span role=\\"img\\" aria-label=\\"Item 7 of 7 displayed\\" class=\\"fd-carousel__page-indicator\\"></span>
+            </div>
         </div>
 
         <div class=\\"fd-carousel__content\\">
             <button
                 class=\\"fd-button fd-carousel__button fd-carousel__button--left\\"
-                data-slide=\\"prev\\"
-                aria-label=\\"Go to previous item\\">
-                <i class=\\"sap-icon--slim-arrow-left\\"></i>
+                title=\\"Previous Page\\">
+                <i class=\\"sap-icon--slim-arrow-left\\" role=\\"presentation\\" aria-hidden=\\"true\\"></i>
             </button>
 
             <div class=\\"fd-carousel__slides\\">
-                <div class=\\"fd-carousel__item fd-carousel__item--active\\">
-                    <img src=\\"https://placehold.co/320x200\\" alt=\\"first image\\">
+                <div 
+                    role=\\"option\\"
+                    aria-setsize=\\"1\\"
+                    aria-posinset=\\"1\\"
+                    aria-selected=\\"true\\"
+                    aria-hidden=\\"false\\"
+                    id=\\"carousel-item-2\\"
+                    class=\\"fd-carousel__item fd-carousel__item--active\\">
+                    <img src=\\"https://placehold.co/320x200\\" alt=\\"Example picture\\" aria-label=\\"Example picture\\">
                 </div>
             </div>
 
             <button
                 class=\\"fd-button fd-carousel__button fd-carousel__button--right\\"
-                data-slide=\\"next\\"
-                aria-label=\\"Go to next item\\">
-                <i class=\\"sap-icon--slim-arrow-right\\"></i>
+                title=\\"Next Page\\">
+                <i class=\\"sap-icon--slim-arrow-right\\" role=\\"presentation\\" aria-hidden=\\"true\\"></i>
             </button>
         </div>
-    </div>
+    </section>
 
     <div style=\\"display: none;\\" role=\\"region\\" id=\\"carousel-10\\" aria-live=\\"polite\\">
-        Displaying item 1 of 4
+        Displaying item 1 of 7
     </div>
 </div>
 "
@@ -15206,129 +15312,121 @@ exports[`Check stories > Components/Carousel > Story CarouselTop > Should match 
 "<div style=\\"display: flex; flex-direction: column; align-items: center;\\">
     <h4>Navigation buttons in page indicator</h4>
 
-    <div
+    <section
         class=\\"fd-carousel\\"
-        data-ride=\\"carousel\\"
+        role=\\"listbox\\"
+        aria-roledescription=\\"Carousel\\"
+        aria-activedescendant=\\"carousel-item-1\\"
         style=\\"margin-bottom: 3rem; max-width: 20rem; max-height: 15.5rem;\\"
     >
         <div class=\\"fd-carousel__page-indicator-container\\">
             <button
+                role=\\"button\\"
                 class=\\"fd-button fd-carousel__button fd-carousel__button--left\\"
-                data-slide=\\"prev\\"
-                aria-label=\\"Go to previous item\\">
-                <i class=\\"sap-icon--slim-arrow-left\\"></i>
+                title=\\"Previous Page\\">
+                <i class=\\"sap-icon--slim-arrow-left\\" role=\\"presentation\\" aria-hidden=\\"true\\"></i>
             </button>
 
-            <ol class=\\"fd-carousel__page-indicators\\">
-                <li
-                    data-slide-to=\\"1\\"
-                    class=\\"fd-carousel__page-indicator\\"></li>
-                <li
-                    data-slide-to=\\"2\\"
-                    class=\\"fd-carousel__page-indicator\\"></li>
-                <li
-                    data-slide-to=\\"3\\"
-                    class=\\"fd-carousel__page-indicator\\"></li>
-                <li
-                    data-slide-to=\\"4\\"
-                    class=\\"fd-carousel__page-indicator\\"></li>
-                <li
-                    data-slide-to=\\"5\\"
-                    class=\\"fd-carousel__page-indicator fd-carousel__page-indicator--active\\"></li>
-                <li
-                    data-slide-to=\\"6\\"
-                    class=\\"fd-carousel__page-indicator\\"></li>
-                <li
-                    data-slide-to=\\"7\\"
-                    class=\\"fd-carousel__page-indicator\\"></li>
-            </ol>
+            <div class=\\"fd-carousel__page-indicators\\">
+                <span role=\\"img\\" aria-label=\\"Item 1 of 7 displayed\\" class=\\"fd-carousel__page-indicator\\"></span>
+                <span role=\\"img\\" aria-label=\\"Item 2 of 7 displayed\\" class=\\"fd-carousel__page-indicator\\"></span>
+                <span role=\\"img\\" aria-label=\\"Item 3 of 7 displayed\\" class=\\"fd-carousel__page-indicator\\"></span>
+                <span role=\\"img\\" aria-label=\\"Item 4 of 7 displayed\\" class=\\"fd-carousel__page-indicator\\"></span>
+                <span role=\\"img\\" aria-label=\\"Item 5 of 7 displayed\\" class=\\"fd-carousel__page-indicator fd-carousel__page-indicator--active\\"></span>
+                <span role=\\"img\\" aria-label=\\"Item 6 of 7 displayed\\" class=\\"fd-carousel__page-indicator\\"></span>
+                <span role=\\"img\\" aria-label=\\"Item 7 of 7 displayed\\" class=\\"fd-carousel__page-indicator\\"></span>
+            </div>
 
             <button
+                role=\\"button\\"
                 class=\\"fd-button fd-carousel__button fd-carousel__button--right\\"
-                data-slide=\\"next\\"
-                aria-label=\\"Go to next item\\">
-                <i class=\\"sap-icon--slim-arrow-right\\"></i>
+                title=\\"Next Page\\">
+                <i class=\\"sap-icon--slim-arrow-right\\" role=\\"presentation\\" aria-hidden=\\"true\\"></i>
             </button>
         </div>
 
         <div class=\\"fd-carousel__content\\">
             <div class=\\"fd-carousel__slides\\">
-                <div class=\\"fd-carousel__item fd-carousel__item--active\\">
-                    <img src=\\"https://placehold.co/320x200\\" alt=\\"first image\\">
+                <div 
+                    role=\\"option\\"
+                    aria-setsize=\\"1\\"
+                    aria-posinset=\\"1\\"
+                    aria-selected=\\"true\\"
+                    aria-hidden=\\"false\\"
+                    id=\\"carousel-item-1\\"
+                    class=\\"fd-carousel__item fd-carousel__item--active\\">
+                    <img src=\\"https://placehold.co/320x200\\" alt=\\"Example picture\\" aria-label=\\"Example picture\\">
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
     <div style=\\"display: none;\\" role=\\"region\\" id=\\"carousel-5\\" aria-live=\\"polite\\">
-        Displaying item 1 of 4
+        Displaying item 1 of 7
     </div>
 
     <h4>Navigation buttons in content</h4>
 
-    <div
+    <section
         class=\\"fd-carousel\\"
-        data-ride=\\"carousel\\"
+        role=\\"listbox\\"
+        aria-roledescription=\\"Carousel\\"
+        aria-activedescendant=\\"carousel-item-2\\"
         style=\\"margin-bottom: 3rem; max-width: 20rem; max-height: 15.5rem;\\"
     >
         <div class=\\"fd-carousel__page-indicator-container\\">
-            <ol class=\\"fd-carousel__page-indicators\\">
-                <li
-                    data-slide-to=\\"1\\"
-                    class=\\"fd-carousel__page-indicator\\"></li>
-                <li
-                    data-slide-to=\\"2\\"
-                    class=\\"fd-carousel__page-indicator\\"></li>
-                <li
-                    data-slide-to=\\"3\\"
-                    class=\\"fd-carousel__page-indicator\\"></li>
-                <li
-                    data-slide-to=\\"4\\"
-                    class=\\"fd-carousel__page-indicator\\"></li>
-                <li
-                    data-slide-to=\\"5\\"
-                    class=\\"fd-carousel__page-indicator fd-carousel__page-indicator--active\\"></li>
-                <li
-                    data-slide-to=\\"6\\"
-                    class=\\"fd-carousel__page-indicator\\"></li>
-                <li
-                    data-slide-to=\\"7\\"
-                    class=\\"fd-carousel__page-indicator\\"></li>
-            </ol>
+            <div class=\\"fd-carousel__page-indicators\\">
+                <span role=\\"img\\" aria-label=\\"Item 1 of 7 displayed\\" class=\\"fd-carousel__page-indicator\\"></span>
+                <span role=\\"img\\" aria-label=\\"Item 2 of 7 displayed\\" class=\\"fd-carousel__page-indicator\\"></span>
+                <span role=\\"img\\" aria-label=\\"Item 3 of 7 displayed\\" class=\\"fd-carousel__page-indicator\\"></span>
+                <span role=\\"img\\" aria-label=\\"Item 4 of 7 displayed\\" class=\\"fd-carousel__page-indicator\\"></span>
+                <span role=\\"img\\" aria-label=\\"Item 5 of 7 displayed\\" class=\\"fd-carousel__page-indicator fd-carousel__page-indicator--active\\"></span>
+                <span role=\\"img\\" aria-label=\\"Item 6 of 7 displayed\\" class=\\"fd-carousel__page-indicator\\"></span>
+                <span role=\\"img\\" aria-label=\\"Item 7 of 7 displayed\\" class=\\"fd-carousel__page-indicator\\"></span>
+            </div>
         </div>
 
         <div class=\\"fd-carousel__content\\">
             <button
+                role=\\"button\\"
                 class=\\"fd-button fd-carousel__button fd-carousel__button--left\\"
-                data-slide=\\"prev\\"
-                aria-label=\\"Go to previous item\\">
-                <i class=\\"sap-icon--slim-arrow-left\\"></i>
+                title=\\"Previous Page\\">
+                <i class=\\"sap-icon--slim-arrow-left\\" role=\\"presentation\\" aria-hidden=\\"true\\"></i>
             </button>
 
             <div class=\\"fd-carousel__slides\\">
-                <div class=\\"fd-carousel__item fd-carousel__item--active\\">
-                    <img src=\\"https://placehold.co/320x200\\" alt=\\"first image\\">
+                <div 
+                    role=\\"option\\"
+                    aria-setsize=\\"1\\"
+                    aria-posinset=\\"1\\"
+                    aria-selected=\\"true\\"
+                    aria-hidden=\\"false\\"
+                    id=\\"carousel-item-2\\"
+                    class=\\"fd-carousel__item fd-carousel__item--active\\">
+                    <img src=\\"https://placehold.co/320x200\\" alt=\\"Example picture\\" aria-label=\\"Example picture\\">
                 </div>
             </div>
 
             <button
+                role=\\"button\\"
                 class=\\"fd-button fd-carousel__button fd-carousel__button--right\\"
-                data-slide=\\"next\\"
-                aria-label=\\"Go to next item\\">
-                <i class=\\"sap-icon--slim-arrow-right\\"></i>
+                title=\\"Next Page\\">
+                <i class=\\"sap-icon--slim-arrow-right\\" role=\\"presentation\\" aria-hidden=\\"true\\"></i>
             </button>
         </div>
-    </div>
+    </section>
 
     <div style=\\"display: none;\\" role=\\"region\\" id=\\"carousel-6\\" aria-live=\\"polite\\">
-        Displaying item 1 of 4
+        Displaying item 1 of 7
     </div>
 
     <h4>Numeral format for page indicator</h4>
 
-    <div
+    <section
         class=\\"fd-carousel\\"
-        data-ride=\\"carousel\\"
+        role=\\"listbox\\"
+        aria-roledescription=\\"Carousel\\"
+        aria-activedescendant=\\"carousel-item-3\\"
         style=\\"margin-bottom: 3rem; max-width: 20rem; max-height: 15.5rem;\\"
     >
         <div class=\\"fd-carousel__page-indicator-container\\">
@@ -15339,67 +15437,81 @@ exports[`Check stories > Components/Carousel > Story CarouselTop > Should match 
 
         <div class=\\"fd-carousel__content\\">
             <button
+                role=\\"button\\"
                 class=\\"fd-button fd-carousel__button fd-carousel__button--left\\"
-                data-slide=\\"prev\\"
-                aria-label=\\"Go to previous item\\">
-                <i class=\\"sap-icon--slim-arrow-left\\"></i>
+                title=\\"Previous Page\\">
+                <i class=\\"sap-icon--slim-arrow-left\\" role=\\"presentation\\" aria-hidden=\\"true\\"></i>
             </button>
 
             <div class=\\"fd-carousel__slides\\">
-                <div class=\\"fd-carousel__item fd-carousel__item--active\\">
-                    <img src=\\"https://placehold.co/320x200\\" alt=\\"first image\\">
+                <div 
+                    role=\\"option\\"
+                    aria-setsize=\\"1\\"
+                    aria-posinset=\\"1\\"
+                    aria-selected=\\"true\\"
+                    aria-hidden=\\"false\\"
+                    id=\\"carousel-item-3\\"
+                    class=\\"fd-carousel__item fd-carousel__item--active\\">
+                    <img src=\\"https://placehold.co/320x200\\" alt=\\"Example picture\\" aria-label=\\"Example picture\\">
                 </div>
             </div>
 
             <button
+                role=\\"button\\"
                 class=\\"fd-button fd-carousel__button fd-carousel__button--right\\"
-                data-slide=\\"next\\"
-                aria-label=\\"Go to next item\\">
-                <i class=\\"sap-icon--slim-arrow-right\\"></i>
+                title=\\"Next Page\\">
+                <i class=\\"sap-icon--slim-arrow-right\\" role=\\"presentation\\" aria-hidden=\\"true\\"></i>
             </button>
         </div>
-    </div>
+    </section>
 
     <div style=\\"display: none;\\" role=\\"region\\" id=\\"carousel-7\\" aria-live=\\"polite\\">
-        Displaying item 1 of 4
+        Displaying item 1 of 7
     </div>
 
     <h4>No page indicators</h4>
 
-    <div
+    <section
         class=\\"fd-carousel\\"
-        data-ride=\\"carousel\\"
+        role=\\"listbox\\"
+        aria-roledescription=\\"Carousel\\"
+        aria-activedescendant=\\"carousel-item-4\\"
         style=\\"margin-bottom: 3rem; max-width: 20rem; max-height: 15.5rem;\\"
     >
         <div class=\\"fd-carousel__page-indicator-container\\">
             <button
+                role=\\"button\\"
                 class=\\"fd-button fd-carousel__button fd-carousel__button--left\\"
-                data-slide=\\"prev\\"
-                aria-label=\\"Go to previous item\\">
-                <i class=\\"sap-icon--slim-arrow-left\\"></i>
+                title=\\"Previous Page\\">
+                <i class=\\"sap-icon--slim-arrow-left\\" role=\\"presentation\\" aria-hidden=\\"true\\"></i>
             </button>
 
-            <ol class=\\"fd-carousel__page-indicators\\"></ol>
-
             <button
+                role=\\"button\\"
                 class=\\"fd-button fd-carousel__button fd-carousel__button--right\\"
-                data-slide=\\"next\\"
-                aria-label=\\"Go to next item\\">
-                <i class=\\"sap-icon--slim-arrow-right\\"></i>
+                title=\\"Next Page\\">
+                <i class=\\"sap-icon--slim-arrow-right\\" role=\\"presentation\\" aria-hidden=\\"true\\"></i>
             </button>
         </div>
 
         <div class=\\"fd-carousel__content\\">
             <div class=\\"fd-carousel__slides\\">
-                <div class=\\"fd-carousel__item fd-carousel__item--active\\">
-                    <img src=\\"https://placehold.co/320x200\\" alt=\\"first image\\">
+                <div 
+                    role=\\"option\\"
+                    aria-setsize=\\"1\\"
+                    aria-posinset=\\"1\\"
+                    aria-selected=\\"true\\"
+                    aria-hidden=\\"false\\"
+                    id=\\"carousel-item-4\\"
+                    class=\\"fd-carousel__item fd-carousel__item--active\\">
+                    <img src=\\"https://placehold.co/320x200\\" alt=\\"Example picture\\" aria-label=\\"Example picture\\">
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
     <div style=\\"display: none;\\" role=\\"region\\" id=\\"carousel-8\\" aria-live=\\"polite\\">
-        Displaying item 1 of 4
+        Displaying item 1 of 7
     </div>
 </div>
 "
@@ -15407,12 +15519,13 @@ exports[`Check stories > Components/Carousel > Story CarouselTop > Should match 
 
 exports[`Check stories > Components/Carousel > Story Error > Should match snapshot 1`] = `
 "<div style=\\"display: flex; flex-direction: column; align-items: center;\\">
-    <h4>Error in loading items</h4>
-
-    <div
+    <h4>Mixed Data in Carousel</h4>
+    <section
         class=\\"fd-carousel fd-carousel--no-navigation\\"
-        style=\\"max-width: 20rem; max-height: 20rem;\\"
-        data-ride=\\"carousel\\"
+        role=\\"listbox\\"
+        aria-roledescription=\\"Carousel\\"
+        aria-activedescendant=\\"carousel-item-1\\"
+        style=\\"margin-block-end: 4rem;\\"
     >
         <div class=\\"fd-carousel__content\\">
             <div class=\\"fd-message-page\\">
@@ -15425,6 +15538,54 @@ exports[`Check stories > Components/Carousel > Story Error > Should match snapsh
                         <div class=\\"fd-message-page__title\\">
                             Items could not be loaded
                         </div>
+                        <div class=\\"fd-message-page__subtitle fd-message-page__subtitle--center\\">
+                            Check your internet connection. 
+                            And if that's not it, try reloading. If that still doesn't help, check with your administrator.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div style=\\"display: none;\\" role=\\"region\\" id=\\"carousel-12\\" aria-live=\\"polite\\">
+        Error in loading items
+    </div>
+
+    <h4>Images in Carousel	
+    </h4>
+    <section 
+        class=\\"fd-carousel\\" 
+        role=\\"listbox\\"
+        aria-roledescription=\\"Carousel\\"
+        aria-activedescendant=\\"carousel-item-1\\"
+        style=\\"max-width: 30rem;\\">
+        <div class=\\"fd-carousel__content\\">
+            <div class=\\"fd-carousel__slides\\">
+                <div 
+                    role=\\"option\\"
+                    aria-setsize=\\"1\\"
+                    aria-posinset=\\"1\\"
+                    aria-selected=\\"true\\"
+                    aria-hidden=\\"false\\"
+                    id=\\"carousel-item-1\\"
+                    class=\\"fd-carousel__item fd-carousel__item--active\\">
+                    <div class=\\"fd-message-page\\">
+                        <div class=\\"fd-message-page__container\\">
+                            <div class=\\"fd-message-page__icon-container\\">
+                                <i role=\\"presentation\\" class=\\"sap-icon--document fd-message-page__icon\\"></i>
+                            </div>
+        
+                            <div role=\\"status\\" aria-live=\\"polite\\" class=\\"fd-message-page__content\\">
+                                <div class=\\"fd-message-page__title\\">
+                                    Unable to load data
+                                </div>
+                                <div class=\\"fd-message-page__subtitle fd-message-page__subtitle--center\\">
+                                    Check your internet connection. 
+                                    And if that's not it, try reloading. If that still doesn't help, check with your administrator.
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -15432,26 +15593,32 @@ exports[`Check stories > Components/Carousel > Story Error > Should match snapsh
 
         <div class=\\"fd-carousel__page-indicator-container\\">
             <button
+                role=\\"button\\"
                 class=\\"fd-button fd-carousel__button fd-carousel__button--left\\"
-                data-slide=\\"prev\\"
-                aria-label=\\"Go to previous item\\">
-                <i class=\\"sap-icon--slim-arrow-left\\"></i>
+                title=\\"Previous Page\\"
+            >
+                <i class=\\"sap-icon--slim-arrow-left\\" role=\\"presentation\\" aria-hidden=\\"true\\"></i>
             </button>
 
-            <ol class=\\"fd-carousel__page-indicators\\"></ol>
+            <div class=\\"fd-carousel__page-indicators\\">
+                <span role=\\"img\\" aria-label=\\"Item 1 of 7 displayed\\" class=\\"fd-carousel__page-indicator\\"></span>
+                <span role=\\"img\\" aria-label=\\"Item 2 of 7 displayed\\" class=\\"fd-carousel__page-indicator\\"></span>
+                <span role=\\"img\\" aria-label=\\"Item 3 of 7 displayed\\" class=\\"fd-carousel__page-indicator\\"></span>
+                <span role=\\"img\\" aria-label=\\"Item 4 of 7 displayed\\" class=\\"fd-carousel__page-indicator\\"></span>
+                <span role=\\"img\\" aria-label=\\"Item 5 of 7 displayed\\" class=\\"fd-carousel__page-indicator fd-carousel__page-indicator--active\\"></span>
+                <span role=\\"img\\" aria-label=\\"Item 6 of 7 displayed\\" class=\\"fd-carousel__page-indicator\\"></span>
+                <span role=\\"img\\" aria-label=\\"Item 7 of 7 displayed\\" class=\\"fd-carousel__page-indicator\\"></span>
+            </div>
 
             <button
+                role=\\"button\\"
                 class=\\"fd-button fd-carousel__button fd-carousel__button--right\\"
-                data-slide=\\"next\\"
-                aria-label=\\"Go to next item\\">
-                <i class=\\"sap-icon--slim-arrow-right\\"></i>
+                title=\\"Next Page\\"
+            >
+                <i class=\\"sap-icon--slim-arrow-right\\" role=\\"presentation\\" aria-hidden=\\"true\\"></i>
             </button>
         </div>
-    </div>
-
-    <div style=\\"display: none;\\" role=\\"region\\" id=\\"carousel-12\\" aria-live=\\"polite\\">
-        Error in loading items
-    </div>
+    </section>
 </div>
 "
 `;
@@ -15460,48 +15627,52 @@ exports[`Check stories > Components/Carousel > Story HorizontalCarousel > Should
 "<div style=\\"display: flex; flex-direction: column; align-items: center;\\">
     <h4>Items in horizontal direction</h4>
 
-    <div
+    <section
         class=\\"fd-carousel\\"
+        role=\\"listbox\\"
+        aria-roledescription=\\"Carousel\\"
+        aria-activedescendant=\\"carousel-item-1\\"
         style=\\"max-width: 20rem; max-height: 15.5rem;\\"
-        data-ride=\\"carousel\\"
     >
         <div class=\\"fd-carousel__content fd-carousel__content--horizontal\\">
             <div class=\\"fd-carousel__slides\\">
-                <div class=\\"fd-carousel__item fd-carousel__item--active\\">
-                    <img src=\\"https://placehold.co/320x200\\" alt=\\"first image\\">
+                <div 
+                    role=\\"option\\"
+                    aria-setsize=\\"1\\"
+                    aria-posinset=\\"1\\"
+                    aria-selected=\\"true\\"
+                    aria-hidden=\\"false\\"
+                    id=\\"carousel-item-1\\"
+                    class=\\"fd-carousel__item fd-carousel__item--active\\">
+                    <img src=\\"https://placehold.co/320x200\\" alt=\\"Example picture\\" aria-label=\\"Example picture\\" />
                 </div>
             </div>
         </div>
 
         <div class=\\"fd-carousel__page-indicator-container\\">
             <button
+                role=\\"button\\"
                 class=\\"fd-button fd-carousel__button fd-carousel__button--left\\"
-                data-slide=\\"prev\\"
-                aria-label=\\"Go to previous item\\">
-                <i class=\\"sap-icon--slim-arrow-left\\"></i>
+                title=\\"Previous Page\\">
+                <i class=\\"sap-icon--slim-arrow-left\\" role=\\"presentation\\" aria-hidden=\\"true\\"></i>
             </button>
 
-            <ol class=\\"fd-carousel__page-indicators\\">
-                <li
-                    data-slide-to=\\"1\\"
-                    class=\\"fd-carousel__page-indicator\\"></li>
-                <li
-                    data-slide-to=\\"2\\"
-                    aria-label=\\"Displaying item 2 of 3\\"
-                    class=\\"fd-carousel__page-indicator fd-carousel__page-indicator--active\\"></li>
-                <li
-                    data-slide-to=\\"3\\"
-                    class=\\"fd-carousel__page-indicator\\"></li>
-            </ol>
+            <div class=\\"fd-carousel__page-indicators\\">
+                <div class=\\"fd-carousel__page-indicators\\">
+                    <span role=\\"img\\" aria-label=\\"Item 1 of 3 displayed\\" class=\\"fd-carousel__page-indicator\\"></span>
+                    <span role=\\"img\\" aria-label=\\"Item 2 of 3 displayed\\" class=\\"fd-carousel__page-indicator fd-carousel__page-indicator--active\\"></span>
+                    <span role=\\"img\\" aria-label=\\"Item 3 of 3 displayed\\" class=\\"fd-carousel__page-indicator\\"></span>
+                </div>
+            </div>
 
             <button
+                role=\\"button\\"
                 class=\\"fd-button fd-carousel__button fd-carousel__button--right\\"
-                data-slide=\\"next\\"
-                aria-label=\\"Go to next item\\">
-                <i class=\\"sap-icon--slim-arrow-right\\"></i>
+                title=\\"Next Page\\">
+                <i class=\\"sap-icon--slim-arrow-right\\" role=\\"presentation\\" aria-hidden=\\"true\\"></i>
             </button>
         </div>
-    </div>
+    </section>
 
     <div style=\\"display: none;\\" role=\\"region\\" id=\\"carousel-11\\" aria-live=\\"polite\\">
         Displaying item 2 of 3

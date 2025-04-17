@@ -1,10 +1,11 @@
 <div style="display: flex; flex-direction: column; align-items: center;">
-    <h4>Error in loading items</h4>
-
-    <div
+    <h4>Mixed Data in Carousel</h4>
+    <section
         class="fd-carousel fd-carousel--no-navigation"
-        style="max-width: 20rem; max-height: 20rem;"
-        data-ride="carousel"
+        role="listbox"
+        aria-roledescription="Carousel"
+        aria-activedescendant="carousel-item-1"
+        style="margin-block-end: 4rem;"
     >
         <div class="fd-carousel__content">
             <div class="fd-message-page">
@@ -17,6 +18,54 @@
                         <div class="fd-message-page__title">
                             Items could not be loaded
                         </div>
+                        <div class="fd-message-page__subtitle fd-message-page__subtitle--center">
+                            Check your internet connection. 
+                            And if that's not it, try reloading. If that still doesn't help, check with your administrator.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div style="display: none;" role="region" id="carousel-12" aria-live="polite">
+        Error in loading items
+    </div>
+
+    <h4>Images in Carousel	
+    </h4>
+    <section 
+        class="fd-carousel" 
+        role="listbox"
+        aria-roledescription="Carousel"
+        aria-activedescendant="carousel-item-1"
+        style="max-width: 30rem;">
+        <div class="fd-carousel__content">
+            <div class="fd-carousel__slides">
+                <div 
+                    role="option"
+                    aria-setsize="1"
+                    aria-posinset="1"
+                    aria-selected="true"
+                    aria-hidden="false"
+                    id="carousel-item-1"
+                    class="fd-carousel__item fd-carousel__item--active">
+                    <div class="fd-message-page">
+                        <div class="fd-message-page__container">
+                            <div class="fd-message-page__icon-container">
+                                <i role="presentation" class="sap-icon--document fd-message-page__icon"></i>
+                            </div>
+        
+                            <div role="status" aria-live="polite" class="fd-message-page__content">
+                                <div class="fd-message-page__title">
+                                    Unable to load data
+                                </div>
+                                <div class="fd-message-page__subtitle fd-message-page__subtitle--center">
+                                    Check your internet connection. 
+                                    And if that's not it, try reloading. If that still doesn't help, check with your administrator.
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -24,24 +73,30 @@
 
         <div class="fd-carousel__page-indicator-container">
             <button
+                role="button"
                 class="fd-button fd-carousel__button fd-carousel__button--left"
-                data-slide="prev"
-                aria-label="Go to previous item">
-                <i class="sap-icon--slim-arrow-left"></i>
+                title="Previous Page"
+            >
+                <i class="sap-icon--slim-arrow-left" role="presentation" aria-hidden="true"></i>
             </button>
 
-            <ol class="fd-carousel__page-indicators"></ol>
+            <div class="fd-carousel__page-indicators">
+                <span role="img" aria-label="Item 1 of 7 displayed" class="fd-carousel__page-indicator"></span>
+                <span role="img" aria-label="Item 2 of 7 displayed" class="fd-carousel__page-indicator"></span>
+                <span role="img" aria-label="Item 3 of 7 displayed" class="fd-carousel__page-indicator"></span>
+                <span role="img" aria-label="Item 4 of 7 displayed" class="fd-carousel__page-indicator"></span>
+                <span role="img" aria-label="Item 5 of 7 displayed" class="fd-carousel__page-indicator fd-carousel__page-indicator--active"></span>
+                <span role="img" aria-label="Item 6 of 7 displayed" class="fd-carousel__page-indicator"></span>
+                <span role="img" aria-label="Item 7 of 7 displayed" class="fd-carousel__page-indicator"></span>
+            </div>
 
             <button
+                role="button"
                 class="fd-button fd-carousel__button fd-carousel__button--right"
-                data-slide="next"
-                aria-label="Go to next item">
-                <i class="sap-icon--slim-arrow-right"></i>
+                title="Next Page"
+            >
+                <i class="sap-icon--slim-arrow-right" role="presentation" aria-hidden="true"></i>
             </button>
         </div>
-    </div>
-
-    <div style="display: none;" role="region" id="carousel-12" aria-live="polite">
-        Error in loading items
-    </div>
+    </section>
 </div>

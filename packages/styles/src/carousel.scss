@@ -39,6 +39,10 @@ $fd-carousel-button-content-offset: 0.5rem !default;
   height: 100%;
   max-width: 100%;
 
+  .#{$block}__button + .#{$block}__button {
+    margin-inline-start: 0.5rem;
+  }
+
   &__content {
     @include fd-reset();
 
@@ -53,7 +57,7 @@ $fd-carousel-button-content-offset: 0.5rem !default;
       margin-inline: 0;
       margin-block: 0;
       position: absolute;
-      box-shadow: var(--sapContent_Shadow1);
+      box-shadow: var(--sapContent_Shadow0);
 
       &--left,
       &--right {
@@ -129,6 +133,8 @@ $fd-carousel-button-content-offset: 0.5rem !default;
     user-select: none;
     -webkit-user-drag: none;
     -webkit-tap-highlight-color: rgb(0 0 0 / 0%);
+
+    --fdMessage_Page_Container_Corner_Radius: 0;
   }
 
   &__item {
