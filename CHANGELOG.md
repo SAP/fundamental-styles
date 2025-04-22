@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.40.0-rc.2](https://github.com/SAP/fundamental-styles/compare/v0.40.0-rc.1...v0.40.0-rc.2) (2025-04-22)
+
+### Bug Fixes
+
+- **styles:** a11y and design updates for Carousel [ci visual] ([#6033](https://github.com/SAP/fundamental-styles/issues/6033)) ([8e50614](https://github.com/SAP/fundamental-styles/commit/8e50614536ca568a378f4cb9ea8328279984679c))
+
+### BREAKING CHANGES
+
+- **styles:** updated markup with proper roles and aria-attributes, page indicator is no longer an ordered list
+
 # [0.40.0-rc.1](https://github.com/SAP/fundamental-styles/compare/v0.40.0-rc.0...v0.40.0-rc.1) (2025-04-17)
 
 ### Bug Fixes
@@ -5948,9 +5958,9 @@ Co-authored-by: droshev <mladen.droshev@sap.com>
 
 - added a new modifier class to fd-row to achieve even alignment of its elements:fd-row--top in a form.
   Before:
-    <div class="fd-row">
-    After:
-    <div class="fd-row fd-row--top">
+      <div class="fd-row">
+      After:
+      <div class="fd-row fd-row--top">
 
 ### Bug Fixes
 
