@@ -1,17 +1,6 @@
 @use "sass:map";
 
-@container style(--sapSapThemeId: sap_fiori_3) {
-  @import './sap_fiori_3';
-}
-
-@container style(--sapSapThemeId: sap_fiori_3_dark) {
-  @import './sap_fiori_3_dark';
-}
-
-@container style(--sapSapThemeId: sap_fiori_3_hcb) {
-  @import './sap_fiori_3_hcb';
-}
-
-@container style(--sapSapThemeId: sap_fiori_3_hcw) {
-  @import './sap_fiori_3_hcw';
-}
+@import "sap_fiori_3" only screen and (prefers-color-scheme: light) and (prefers-contrast: no-preference), screen and (prefers-color-scheme: light) and (prefers-contrast: less);
+@import "sap_fiori_3_dark" only screen and (prefers-color-scheme: dark) and (prefers-contrast: no-preference), screen and (prefers-color-scheme: dark) and (prefers-contrast: less);
+@import "sap_fiori_3_hcw" only screen and (prefers-color-scheme: light) and (prefers-contrast: custom), screen and (prefers-color-scheme: light) and (prefers-contrast: more);
+@import "sap_fiori_3_hcb" only screen and (prefers-color-scheme: dark) and (prefers-contrast: custom), screen and (prefers-color-scheme: dark) and (prefers-contrast: more);

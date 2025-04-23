@@ -59,20 +59,9 @@ class ThemeManager {
         styleSheet.href = this.cssVariablesUrl;
         document.head.appendChild(styleSheet);
     }
-
-    addFonts() {
-        let styleBlock = document.createElement('style');
-        let fontContent = `@font-face { font-family: "72"; src: url("${this.themeRoot}/Base/baseLib/baseTheme/fonts/72-Regular-full.woff") format("woff"); font-weight: normal; font-style: normal; }
-        @font-face { font-family: "72"; src: url("${this.themeRoot}/Base/baseLib/baseTheme/fonts/72-Bold-full.woff") format("woff"); font-weight: 700; font-style: normal; }
-        @font-face { font-family: "72"; src: url("${this.themeRoot}/Base/baseLib/baseTheme/fonts/72-Light-full.woff") format("woff"); font-weight: 300; font-style: normal; }
-        @font-face { font-family: "SAP-icons"; src: url("${this.themeRoot}/Base/baseLib/sap_horizon/fonts/SAP-icons.woff") format("woff"); font-weight: normal; font-style: normal; }`;
-        styleBlock.innerHTML = fontContent;
-        document.head.appendChild(styleBlock);
-    }
 }
 
 (function() {
     let themeManager = new ThemeManager();
     themeManager.addCssVariables();
-    themeManager.addFonts();
 })();
