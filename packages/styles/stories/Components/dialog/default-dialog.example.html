@@ -1,6 +1,11 @@
 
-<section class="fd-dialog-docs-static fd-dialog fd-dialog--active">
-    <div class="fd-dialog__content fd-dialog__content--s" role="dialog" aria-modal="true" aria-labelledby="dialog-title-1">
+<div class="fd-dialog-docs-static fd-dialog fd-dialog--active">
+    <div 
+        class="fd-dialog__content fd-dialog__content--s" 
+        role="dialog" 
+        aria-modal="true" 
+        aria-labelledby="dialog-title-1"
+        aria-describedby="dialog-description-1">
         <span class="fd-dialog__resize-handle"></span>
         <header class="fd-dialog__header fd-bar">
             <div class="fd-bar__left">
@@ -11,8 +16,10 @@
                 </div>
             </div>
         </header>
-        <div class="fd-dialog__body">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat...
+        <section class="fd-dialog__body">
+            <span id="dialog-description-1">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat...
+            </span>
             <div class="fd-dialog__loader">
                 <div class="fd-busy-indicator fd-busy-indicator--m" aria-hidden="false" aria-label="Loading">
                     <div class="fd-busy-indicator__circle"></div>
@@ -20,7 +27,7 @@
                     <div class="fd-busy-indicator__circle"></div>
                 </div><br /><br />
             </div>
-        </div>
+        </section>
         <footer class="fd-dialog__footer fd-bar fd-bar--footer">
             <div class="fd-bar__right">
                 <div class="fd-bar__element">
@@ -36,4 +43,4 @@
             </div>
         </footer>
     </div>
-</section>
+</div>

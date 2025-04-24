@@ -1,6 +1,11 @@
 
-<section class="fd-dialog-docs-static fd-dialog fd-dialog--active" id="select-dialog-example">
-    <div class="fd-dialog__content" role="dialog" aria-modal="true" aria-labelledby="dialog-title-8">
+<div class="fd-dialog-docs-static fd-dialog fd-dialog--active" id="select-dialog-example">
+    <div 
+        class="fd-dialog__content" 
+        role="dialog" 
+        aria-modal="true" 
+        aria-labelledby="dialog-title-8"
+    >
         <header class="fd-dialog__header fd-bar fd-bar--header-with-subheader">
             <div class="fd-bar__left">
                 <div class="fd-bar__element">
@@ -15,7 +20,8 @@
                 </div>
             </div>
         </header>
-        <div class="fd-dialog__subheader fd-bar fd-bar--subheader">
+
+        <section class="fd-dialog__subheader fd-bar fd-bar--subheader">
             <div class="fd-bar__middle">
                 <div class="fd-input-group">
                     <input class="fd-input fd-input-group__input" type="text" aria-label="search" placeholder="Search...">
@@ -26,8 +32,9 @@
                     </span>
                 </div>
             </div>
-        </div>
-        <div class="fd-dialog__body fd-dialog__body--no-vertical-padding">
+        </section>
+
+        <section class="fd-dialog__body fd-dialog__body--no-vertical-padding">
             <ul class="fd-list fd-list--selection fd-list--no-border" aria-label="selection list" role="listbox">
                 <li role="option" tabindex="0" class="fd-list__item">
                     <div class="fd-form-item fd-list__form-item">
@@ -87,7 +94,8 @@
             <span class="fd-list__footer">
                 2 items selected
             </span>
-        </div>
+        </section>
+
         <footer class="fd-dialog__footer fd-bar fd-bar--footer">
             <div class="fd-bar__right">
                 <div class="fd-bar__element">
@@ -99,4 +107,4 @@
             </div>
         </footer>
     </div>
-</section>
+</div>
