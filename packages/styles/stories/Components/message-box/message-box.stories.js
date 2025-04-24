@@ -75,7 +75,7 @@ Types.parameters = {
       story: `
 The message box can be displayed with various semantic colors and icons, indicating the type of message being relayed.
 
-Semantic type | Modifier class | Description
+|Semantic type | Modifier class | Description
 :------------------ | :------------------- | :---------------
 Confirmation | \`fd-message-box--confirmation\` | Confirmation messages prompt users to confirm an action that they have triggered. The title of the message box already includes the action that has to be confirmed, such as an intended deletion or an approval.
 Error&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | \`fd-message-box--error\` | Error messages can be triggered after the user has entered incorrect data or a system error has occurred. They should interrupt the user by displaying a dialog. A final action such as _Submit_ cannot be carried out until the user has rectified the error.
@@ -96,7 +96,7 @@ The message box has 1rem padding all around the body, and the header and footer 
 
 **To display responsive padding, add the following modifier classes to the content container:**
 
-Modifier class | rem | Screen width
+|Modifier class | rem | Screen width
 ------------------ | ---- | ---------------------
 \`fd-message-box__content--s\` | 1rem | <= 599px
 \`fd-message-box__content--m\` | 2rem | 600px - 1023px
