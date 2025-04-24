@@ -3,6 +3,10 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.39.3](https://github.com/SAP/fundamental-styles/compare/v0.39.2...v0.39.3) (2025-04-24)
+
+**Note:** Version bump only for package workspace-plugins
+
 ## [0.39.2](https://github.com/SAP/fundamental-styles/compare/v0.39.2-rc.6...v0.39.2) (2025-03-31)
 
 **Note:** Version bump only for package workspace-plugins
