@@ -150,7 +150,7 @@
 		"sapContent_Space_M": "2rem",
 		"sapContent_Space_L": "2rem",
 		"sapContent_Space_XL": "3rem",
-		"sapContent_Space_Tiny": "2rem",
+		"sapContent_Space_Tiny": "0.5rem",
 		"sapContent_Space_Small": "1rem",
 		"sapContent_Space_Medium": "2rem",
 		"sapContent_Space_Large": "3rem",

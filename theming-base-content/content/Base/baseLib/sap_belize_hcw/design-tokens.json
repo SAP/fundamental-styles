@@ -321,7 +321,7 @@
       "description": "The small value of space used for content."
     },
     "sapContent_Space_Tiny": {
-      "value": "2rem",
+      "value": "0.5rem",
       "type": "sizing",
       "description": "The tiny value of space used for content."
     },
