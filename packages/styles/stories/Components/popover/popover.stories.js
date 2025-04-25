@@ -45,7 +45,7 @@ Variants.parameters = {
     description: {
       story: `There are several variants of the popover body that can be displayed depending on the use case.
 
-Variant | Modifier class | Description
+| Variant | Modifier class | Description
 :------ | :------------- | :---------------
 Header | \`fd-popover__body-header\` | To display a header.
 Footer | \`fd-popover__body-footer\` | To display a footer with actions.
@@ -55,6 +55,7 @@ You can also have subheader by using **Bar** component with subheader.
     }
   }
 };
+
 export const ControlExamples = () => controlExamplesExampleHtml;
 ControlExamples.storyName = 'Control variants';
 ControlExamples.parameters = {

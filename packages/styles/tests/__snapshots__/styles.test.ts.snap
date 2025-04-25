@@ -15928,7 +15928,7 @@ exports[`Check stories > Components/Dialog > Story DefaultDialog > Should match 
         aria-modal=\\"true\\" 
         aria-labelledby=\\"dialog-title-1\\"
         aria-describedby=\\"dialog-description-1\\">
-        <span class=\\"fd-dialog__resize-handle\\"></span>
+        <span class=\\"fd-dialog__resize-handle\\" role=\\"presentation\\" aria-hidden=\\"true\\"></span>
         <header class=\\"fd-dialog__header fd-bar\\">
             <div class=\\"fd-bar__left\\">
                 <div class=\\"fd-bar__element\\">
@@ -35444,8 +35444,9 @@ exports[`Check stories > Components/Popover > Story Resizable > Should match sna
                         </li>
                     </ul>
                 </nav>
-                <span class=\\"fd-popover__resize-handle\\"></span>
+                
             </div>
+            <span class=\\"fd-popover__resize-handle\\" role=\\"presentation\\" aria-hidden=\\"true\\"></span>
         </div>
     </div>
 
@@ -35478,8 +35479,8 @@ exports[`Check stories > Components/Popover > Story Resizable > Should match sna
                         </li>
                     </ul>
                 </nav>
-                <span class=\\"fd-popover__resize-handle\\"></span>
             </div>
+            <span class=\\"fd-popover__resize-handle\\" role=\\"presentation\\" aria-hidden=\\"true\\"></span>
         </div>
     </div>
 
@@ -35512,8 +35513,8 @@ exports[`Check stories > Components/Popover > Story Resizable > Should match sna
                         </li>
                     </ul>
                 </nav>
-                <span class=\\"fd-popover__resize-handle\\"></span>
             </div>
+            <span class=\\"fd-popover__resize-handle\\" role=\\"presentation\\" aria-hidden=\\"true\\"></span>
         </div>
     </div>
 </div>
@@ -35548,8 +35549,8 @@ exports[`Check stories > Components/Popover > Story Resizable > Should match sna
                         </li>
                     </ul>
                 </nav>
-                <span class=\\"fd-popover__resize-handle\\"></span>
             </div>
+            <span class=\\"fd-popover__resize-handle\\" role=\\"presentation\\" aria-hidden=\\"true\\"></span>
         </div>
     </div>
 
@@ -35582,8 +35583,8 @@ exports[`Check stories > Components/Popover > Story Resizable > Should match sna
                         </li>
                     </ul>
                 </nav>
-                <span class=\\"fd-popover__resize-handle\\"></span>
             </div>
+            <span class=\\"fd-popover__resize-handle\\" role=\\"presentation\\" aria-hidden=\\"true\\"></span>
         </div>
     </div>
 </div>
@@ -35618,8 +35619,8 @@ exports[`Check stories > Components/Popover > Story Resizable > Should match sna
                         </li>
                     </ul>
                 </nav>
-                <span class=\\"fd-popover__resize-handle\\"></span>
             </div>
+            <span class=\\"fd-popover__resize-handle\\" role=\\"presentation\\" aria-hidden=\\"true\\"></span>
         </div>
     </div>
 
@@ -35652,8 +35653,8 @@ exports[`Check stories > Components/Popover > Story Resizable > Should match sna
                         </li>
                     </ul>
                 </nav>
-                <span class=\\"fd-popover__resize-handle\\"></span>
             </div>
+            <span class=\\"fd-popover__resize-handle\\" role=\\"presentation\\" aria-hidden=\\"true\\"></span>
         </div>
     </div>
 </div>
@@ -35688,8 +35689,8 @@ exports[`Check stories > Components/Popover > Story Resizable > Should match sna
                         </li>
                     </ul>
                 </nav>
-                <span class=\\"fd-popover__resize-handle\\"></span>
             </div>
+            <span class=\\"fd-popover__resize-handle\\" role=\\"presentation\\" aria-hidden=\\"true\\"></span>
         </div>
     </div>
 
@@ -35722,8 +35723,8 @@ exports[`Check stories > Components/Popover > Story Resizable > Should match sna
                         </li>
                     </ul>
                 </nav>
-                <span class=\\"fd-popover__resize-handle\\"></span>
             </div>
+            <span class=\\"fd-popover__resize-handle\\" role=\\"presentation\\" aria-hidden=\\"true\\"></span>
         </div>
     </div>
 </div>
@@ -35758,8 +35759,8 @@ exports[`Check stories > Components/Popover > Story Resizable > Should match sna
                         </li>
                     </ul>
                 </nav>
-                <span class=\\"fd-popover__resize-handle\\"></span>
             </div>
+            <span class=\\"fd-popover__resize-handle\\" role=\\"presentation\\" aria-hidden=\\"true\\"></span>
         </div>
     </div>
 
@@ -35792,8 +35793,8 @@ exports[`Check stories > Components/Popover > Story Resizable > Should match sna
                         </li>
                     </ul>
                 </nav>
-                <span class=\\"fd-popover__resize-handle\\"></span>
             </div>
+            <span class=\\"fd-popover__resize-handle\\" role=\\"presentation\\" aria-hidden=\\"true\\"></span>
         </div>
     </div>
 
@@ -35826,8 +35827,8 @@ exports[`Check stories > Components/Popover > Story Resizable > Should match sna
                         </li>
                     </ul>
                 </nav>
-                <span class=\\"fd-popover__resize-handle\\"></span>
             </div>
+            <span class=\\"fd-popover__resize-handle\\" role=\\"presentation\\" aria-hidden=\\"true\\"></span>
         </div>
     </div>
 </div>
@@ -57866,7 +57867,7 @@ exports[`Check stories > Layouts/Resizable Card Layout > Story ResizeCardHorizon
                         </ul>
                     </div>
                 </div>
-                <div class=\\"fd-resizable-card-layout__icon-wrapper\\">
+                <div class=\\"fd-resizable-card-layout__icon-wrapper\\" aria-hidden=\\"true\\" role=\\"presentation\\">
                     <div class=\\"fd-resizable-card-layout__icon fd-resizable-card-layout__icon--horizontal\\"></div>
                 </div>
             </div>
@@ -57920,7 +57921,7 @@ exports[`Check stories > Layouts/Resizable Card Layout > Story ResizeCardHorizon
                         </ul>
                     </div>
                 </div>
-                <div class=\\"fd-resizable-card-layout__icon-wrapper\\">
+                <div class=\\"fd-resizable-card-layout__icon-wrapper\\" role=\\"presentation\\" aria-hidden=\\"true\\">
                     <div class=\\"fd-resizable-card-layout__icon\\"></div>
                 </div>
             </div>
@@ -57971,7 +57972,7 @@ exports[`Check stories > Layouts/Resizable Card Layout > Story ResizeCardLayout 
                         </ul>
                     </div>
                 </div>
-                <div class=\\"fd-resizable-card-layout__icon-wrapper\\">
+                <div class=\\"fd-resizable-card-layout__icon-wrapper\\" role=\\"presentation\\" aria-hidden=\\"true\\">
                     <div class=\\"fd-resizable-card-layout__icon\\"></div>
                 </div>
             </div>
@@ -58006,7 +58007,7 @@ exports[`Check stories > Layouts/Resizable Card Layout > Story ResizeCardLayout 
                         </div>
                     </div>
                 </div>
-                <div class=\\"fd-resizable-card-layout__icon-wrapper\\">
+                <div class=\\"fd-resizable-card-layout__icon-wrapper\\" role=\\"presentation\\" aria-hidden=\\"true\\">
                     <div class=\\"fd-resizable-card-layout__icon\\"></div>
                 </div>
             </div>
@@ -58056,7 +58057,7 @@ exports[`Check stories > Layouts/Resizable Card Layout > Story ResizeCardLayout 
                         </ul>
                     </div>
                 </div>
-                <div class=\\"fd-resizable-card-layout__icon-wrapper\\">
+                <div class=\\"fd-resizable-card-layout__icon-wrapper\\" role=\\"presentation\\" aria-hidden=\\"true\\">
                     <div class=\\"fd-resizable-card-layout__icon\\"></div>
                 </div>
             </div>
@@ -58102,7 +58103,7 @@ exports[`Check stories > Layouts/Resizable Card Layout > Story ResizeCardLayout 
                         </ul>
                     </div>
                 </div>
-                <div class=\\"fd-resizable-card-layout__icon-wrapper\\">
+                <div class=\\"fd-resizable-card-layout__icon-wrapper\\" role=\\"presentation\\" aria-hidden=\\"true\\">
                     <div class=\\"fd-resizable-card-layout__icon\\"></div>
                 </div>
             </div>
@@ -58179,7 +58180,7 @@ exports[`Check stories > Layouts/Resizable Card Layout > Story ResizeCardLayout 
                         </div>
                     </div>
                 </div>
-                <div class=\\"fd-resizable-card-layout__icon-wrapper\\">
+                <div class=\\"fd-resizable-card-layout__icon-wrapper\\" role=\\"presentation\\" aria-hidden=\\"true\\">
                     <div class=\\"fd-resizable-card-layout__icon\\"></div>
                 </div>
             </div>
@@ -58259,7 +58260,7 @@ exports[`Check stories > Layouts/Resizable Card Layout > Story ResizeCardLayout 
                         </table>
                     </div>
                 </div>
-                <div class=\\"fd-resizable-card-layout__icon-wrapper\\">
+                <div class=\\"fd-resizable-card-layout__icon-wrapper\\" role=\\"presentation\\" aria-hidden=\\"true\\">
                     <div class=\\"fd-resizable-card-layout__icon\\"></div>
                 </div>
             </div>
@@ -58313,7 +58314,7 @@ exports[`Check stories > Layouts/Resizable Card Layout > Story ResizeCardVertica
                         </ul>
                     </div>
                 </div>
-                <div class=\\"fd-resizable-card-layout__icon-wrapper\\">
+                <div class=\\"fd-resizable-card-layout__icon-wrapper\\" role=\\"presentation\\" aria-hidden=\\"true\\">
                     <div class=\\"fd-resizable-card-layout__icon fd-resizable-card-layout__icon--vertical\\"></div>
                 </div>
             </div>
