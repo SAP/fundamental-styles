@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.40.0-rc.4](https://github.com/SAP/fundamental-styles/compare/v0.40.0-rc.3...v0.40.0-rc.4) (2025-04-25)
+
+### Bug Fixes
+
+- **styles:** a11y update for Message box [ci visual] ([#6038](https://github.com/SAP/fundamental-styles/issues/6038)) ([ac1059c](https://github.com/SAP/fundamental-styles/commit/ac1059c09826bd21bbdc53588380cef2abb75717))
+
+### BREAKING CHANGES
+
+- **styles:** markup and aria-describedby
+
 # [0.40.0-rc.3](https://github.com/SAP/fundamental-styles/compare/v0.40.0-rc.2...v0.40.0-rc.3) (2025-04-24)
 
 **Note:** Version bump only for package fundamental-styles
@@ -5962,9 +5972,9 @@ Co-authored-by: droshev <mladen.droshev@sap.com>
 
 - added a new modifier class to fd-row to achieve even alignment of its elements:fd-row--top in a form.
   Before:
-  <div class="fd-row">
-  After:
-  <div class="fd-row fd-row--top">
+    <div class="fd-row">
+    After:
+    <div class="fd-row fd-row--top">
 
 ### Bug Fixes
 
