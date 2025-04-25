@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.40.0-rc.6](https://github.com/SAP/fundamental-styles/compare/v0.40.0-rc.5...v0.40.0-rc.6) (2025-04-25)
+
+### Bug Fixes
+
+- **styles:** adopt fonts from theming-base [ci visual] ([#6035](https://github.com/SAP/fundamental-styles/issues/6035)) ([2530c4e](https://github.com/SAP/fundamental-styles/commit/2530c4ed0abfccaff04921a0b797ff457b95cfdc))
+
+### BREAKING CHANGES
+
+- **styles:** remove our local copy of font-faces and adopt this from theming-base-content
+
 # [0.40.0-rc.5](https://github.com/SAP/fundamental-styles/compare/v0.40.0-rc.4...v0.40.0-rc.5) (2025-04-25)
 
 ### Bug Fixes
