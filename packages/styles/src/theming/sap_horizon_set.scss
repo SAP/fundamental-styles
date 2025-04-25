@@ -1,17 +1,6 @@
 @use "sass:map";
 
-@container style(--sapSapThemeId: sap_horizon) {
-    @import 'sap_horizon';
-}
-
-@container style(--sapSapThemeId: sap_horizon_dark) {
-    @import 'sap_horizon_dark';
-}
-
-@container style(--sapSapThemeId: sap_horizon_hcb) {
-    @import 'sap_horizon_hcb';
-}
-
-@container style(--sapSapThemeId: sap_horizon_hcw) {
-    @import 'sap_horizon_hcw';
-}
+@import "sap_horizon" only screen and (prefers-color-scheme: light) and (prefers-contrast: no-preference), screen and (prefers-color-scheme: light) and (prefers-contrast: less);
+@import "sap_horizon_dark" only screen and (prefers-color-scheme: dark) and (prefers-contrast: no-preference), screen and (prefers-color-scheme: dark) and (prefers-contrast: less);
+@import "sap_horizon_hcw" only screen and (prefers-color-scheme: light) and (prefers-contrast: custom), screen and (prefers-color-scheme: light) and (prefers-contrast: more);
+@import "sap_horizon_hcb" only screen and (prefers-color-scheme: dark) and (prefers-contrast: custom), screen and (prefers-color-scheme: dark) and (prefers-contrast: more);

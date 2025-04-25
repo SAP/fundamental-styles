@@ -94,53 +94,10 @@ list of icon class names. See Project Configuration below for instructions to in
 
 ### Project Configuration
 
-This project does not contain fonts and icons - they must be added to your project separately. Download the @sap-theming
-library. After adding fonts and icons to your project, include the following in your CSS(The icon font files have different design for Fiori 3 themes and they can be found in the folder `@sap-theming/theming-base-content/content/Base/baseLib/baseTheme/fonts/`):
+This project does not contain fonts and icons - they must be added to your project separately. Download the @sap-theming/theming-base-content library. After adding fonts and icons to your project, include the following in your CSS
+(The icon font files have different design for Fiori 3 themes and they can be found in the folder `@sap-theming/theming-base-content/content/Base/baseLib/baseTheme/fonts/`) as opposed to Horizon where the icons are stored in the subfolder fonts `@sap-theming/theming-base-content/content/Base/sap_horizon/baseTheme/fonts/`. It would require to include everything from `@sap-theming/theming-base-content/content/Base/baseLib/`.
 
-```css
-@font-face {
-    font-family: "72";
-    src: url("~@sap-theming/theming-base-content/content/Base/baseLib/baseTheme/fonts/72-Regular-full.woff") format("woff");
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: "72";
-    src: url("~@sap-theming/theming-base-content/content/Base/baseLib/baseTheme/fonts/72-Bold-full.woff") format("woff");
-    font-weight: 700;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: "72";
-    src: url("~@sap-theming/theming-base-content/content/Base/baseLib/baseTheme/fonts/72-Light-full.woff") format("woff");
-    font-weight: 300;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: "SAP-icons";
-    src: url("~@sap-theming/theming-base-content/content/Base/baseLib/sap_horizon/fonts/SAP-icons.woff") format("woff");
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'BusinessSuiteInAppSymbols';
-    src: url('~@sap-theming/theming-base-content/content/Base/baseLib/sap_horizon/fonts/BusinessSuiteInAppSymbols.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'SAP-icons-TNT';
-    src: url('~@sap-theming/theming-base-content/content/Base/baseLib/sap_horizon/fonts/SAP-icons-TNT.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
-html {
+```html {
     font-size: 16px;
 }
 ```
