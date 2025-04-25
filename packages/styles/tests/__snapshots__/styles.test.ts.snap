@@ -15921,8 +15921,13 @@ exports[`Check stories > Components/Counter > Story Tabs > Should match snapshot
 
 exports[`Check stories > Components/Dialog > Story DefaultDialog > Should match snapshot 1`] = `
 "
-<section class=\\"fd-dialog-docs-static fd-dialog fd-dialog--active\\">
-    <div class=\\"fd-dialog__content fd-dialog__content--s\\" role=\\"dialog\\" aria-modal=\\"true\\" aria-labelledby=\\"dialog-title-1\\">
+<div class=\\"fd-dialog-docs-static fd-dialog fd-dialog--active\\">
+    <div 
+        class=\\"fd-dialog__content fd-dialog__content--s\\" 
+        role=\\"dialog\\" 
+        aria-modal=\\"true\\" 
+        aria-labelledby=\\"dialog-title-1\\"
+        aria-describedby=\\"dialog-description-1\\">
         <span class=\\"fd-dialog__resize-handle\\"></span>
         <header class=\\"fd-dialog__header fd-bar\\">
             <div class=\\"fd-bar__left\\">
@@ -15933,8 +15938,10 @@ exports[`Check stories > Components/Dialog > Story DefaultDialog > Should match 
                 </div>
             </div>
         </header>
-        <div class=\\"fd-dialog__body\\">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat...
+        <section class=\\"fd-dialog__body\\">
+            <span id=\\"dialog-description-1\\">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat...
+            </span>
             <div class=\\"fd-dialog__loader\\">
                 <div class=\\"fd-busy-indicator fd-busy-indicator--m\\" aria-hidden=\\"false\\" aria-label=\\"Loading\\">
                     <div class=\\"fd-busy-indicator__circle\\"></div>
@@ -15942,7 +15949,7 @@ exports[`Check stories > Components/Dialog > Story DefaultDialog > Should match 
                     <div class=\\"fd-busy-indicator__circle\\"></div>
                 </div><br /><br />
             </div>
-        </div>
+        </section>
         <footer class=\\"fd-dialog__footer fd-bar fd-bar--footer\\">
             <div class=\\"fd-bar__right\\">
                 <div class=\\"fd-bar__element\\">
@@ -15958,14 +15965,20 @@ exports[`Check stories > Components/Dialog > Story DefaultDialog > Should match 
             </div>
         </footer>
     </div>
-</section>
+</div>
 "
 `;
 
 exports[`Check stories > Components/Dialog > Story Draggable > Should match snapshot 1`] = `
 "
-<section class=\\"fd-dialog-docs-static fd-dialog fd-dialog--active\\">
-    <div class=\\"fd-dialog__content fd-dialog__content--draggable-grab fd-dialog__content--s\\" role=\\"dialog\\" aria-modal=\\"true\\" aria-labelledby=\\"dialog-title-7\\">
+<div class=\\"fd-dialog-docs-static fd-dialog fd-dialog--active\\">
+    <div 
+        class=\\"fd-dialog__content fd-dialog__content--draggable-grab fd-dialog__content--s\\" 
+        role=\\"dialog\\" 
+        aria-modal=\\"true\\" 
+        aria-labelledby=\\"dialog-title-7\\"
+        aria-describedby=\\"dialog-description-7\\"
+    >
         <header class=\\"fd-dialog__header fd-bar fd-bar--header\\">
             <div class=\\"fd-bar__left\\">
                 <div class=\\"fd-bar__element\\">
@@ -15975,9 +15988,11 @@ exports[`Check stories > Components/Dialog > Story Draggable > Should match snap
                 </div>
             </div>
         </header>
-        <div class=\\"fd-dialog__body\\">
+
+        <section class=\\"fd-dialog__body\\" id=\\"dialog-description-7\\">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-        </div>
+        </section>
+        
         <footer class=\\"fd-dialog__footer fd-bar fd-bar--footer\\">
             <div class=\\"fd-bar__right\\">
                 <div class=\\"fd-bar__element\\">
@@ -15989,14 +16004,20 @@ exports[`Check stories > Components/Dialog > Story Draggable > Should match snap
             </div>
         </footer>
     </div>
-</section>
+</div>
 "
 `;
 
 exports[`Check stories > Components/Dialog > Story HorizontalForm > Should match snapshot 1`] = `
 "
-<section class=\\"fd-dialog-docs-static fd-dialog fd-dialog--active\\">
-    <div class=\\"fd-dialog__content fd-dialog__content--s\\" role=\\"dialog\\" aria-modal=\\"true\\" aria-labelledby=\\"dialog-title-2\\">
+<div class=\\"fd-dialog-docs-static fd-dialog fd-dialog--active\\">
+    <div 
+        class=\\"fd-dialog__content fd-dialog__content--s\\" 
+        role=\\"dialog\\" 
+        aria-modal=\\"true\\" 
+        aria-labelledby=\\"dialog-title-2\\"
+    >
+        
         <header class=\\"fd-dialog__header fd-bar fd-bar--header\\">
             <div class=\\"fd-bar__left\\">
             <div class=\\"fd-bar__element\\">
@@ -16006,7 +16027,8 @@ exports[`Check stories > Components/Dialog > Story HorizontalForm > Should match
             </div>
             </div>
         </header>
-        <div class=\\"fd-dialog__body\\">
+        
+        <section class=\\"fd-dialog__body\\">
             <div class=\\"fd-container fd-form-layout-grid-container fd-form-group\\">
                 <div class=\\"fd-row fd-form-item\\">
                     <div class=\\"fd-col fd-col-md--2 fd-col-lg--4\\">
@@ -16077,7 +16099,8 @@ exports[`Check stories > Components/Dialog > Story HorizontalForm > Should match
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
+        
         <footer class=\\"fd-dialog__footer fd-bar fd-bar--footer\\">
             <div class=\\"fd-bar__right\\">
                 <div class=\\"fd-bar__element\\">
@@ -16089,14 +16112,21 @@ exports[`Check stories > Components/Dialog > Story HorizontalForm > Should match
             </div>
         </footer>
     </div>
-</section>
+</div>
 "
 `;
 
 exports[`Check stories > Components/Dialog > Story Loading > Should match snapshot 1`] = `
 "
-<section class=\\"fd-dialog-docs-static fd-dialog fd-dialog--active\\" id=\\"loading-dialog-example\\">
-    <div class=\\"fd-dialog__content fd-dialog__content--s\\" role=\\"dialog\\" aria-modal=\\"true\\" aria-labelledby=\\"dialog-title-9\\">
+<div class=\\"fd-dialog-docs-static fd-dialog fd-dialog--active\\" id=\\"loading-dialog-example\\">
+    <div 
+        class=\\"fd-dialog__content fd-dialog__content--s\\" 
+        role=\\"dialog\\" 
+        aria-modal=\\"true\\" 
+        aria-labelledby=\\"dialog-title-9\\"
+        aria-describedby=\\"dialog-description-9\\"
+    >
+        
         <header class=\\"fd-dialog__header fd-bar fd-bar--header\\">
             <div class=\\"fd-bar__left\\">
                 <div class=\\"fd-bar__element\\">
@@ -16106,14 +16136,16 @@ exports[`Check stories > Components/Dialog > Story Loading > Should match snapsh
                 </div>
             </div>
         </header>
-        <div class=\\"fd-dialog__body\\">
+
+        <section class=\\"fd-dialog__body\\" id=\\"dialog-description-8\\">
             <strong>Status:</strong> Connecting 127.0.0.1
             <div class=\\"fd-dialog__loader fd-busy-indicator--l\\" aria-hidden=\\"false\\" aria-label=\\"Loading\\">
                 <div class=\\"fd-busy-indicator--circle-0\\"></div>
                 <div class=\\"fd-busy-indicator--circle-1\\"></div>
                 <div class=\\"fd-busy-indicator--circle-2\\"></div>
             </div>
-        </div>
+        </section>
+
         <footer class=\\"fd-dialog__footer fd-bar fd-bar--footer\\">
             <div class=\\"fd-bar__right\\">
                 <div class=\\"fd-bar__element\\">
@@ -16122,14 +16154,21 @@ exports[`Check stories > Components/Dialog > Story Loading > Should match snapsh
             </div>
         </footer>
     </div>
-</section>"
+</div>"
 `;
 
 exports[`Check stories > Components/Dialog > Story Resizable > Should match snapshot 1`] = `
 "
-<section class=\\"fd-dialog-docs-static fd-dialog fd-dialog--active\\">
-    <div class=\\"fd-dialog__content fd-dialog__content--s\\" role=\\"dialog\\" aria-modal=\\"true\\" aria-labelledby=\\"dialog-title-6\\">
-        <span class=\\"fd-dialog__resize-handle\\"></span>
+<div class=\\"fd-dialog-docs-static fd-dialog fd-dialog--active\\">
+    <div 
+        class=\\"fd-dialog__content fd-dialog__content--s\\" 
+        role=\\"dialog\\" 
+        aria-modal=\\"true\\" 
+        aria-labelledby=\\"dialog-title-6\\"
+        aria-describedby=\\"dialog-description-6\\"
+    >
+        <span class=\\"fd-dialog__resize-handle\\" role=\\"presentation\\" aria-hidden=\\"true\\"></span>
+        
         <header class=\\"fd-dialog__header fd-bar fd-bar--header\\">
             <div class=\\"fd-bar__left\\">
                 <div class=\\"fd-bar__element\\">
@@ -16139,9 +16178,11 @@ exports[`Check stories > Components/Dialog > Story Resizable > Should match snap
                 </div>
             </div>
         </header>
-        <div class=\\"fd-dialog__body\\">
+        
+        <section class=\\"fd-dialog__body\\" id=\\"dialog-description-6\\">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-        </div>
+        </section>
+        
         <footer class=\\"fd-dialog__footer fd-bar fd-bar--footer\\">
             <div class=\\"fd-bar__right\\">
                 <div class=\\"fd-bar__element\\">
@@ -16153,14 +16194,19 @@ exports[`Check stories > Components/Dialog > Story Resizable > Should match snap
             </div>
         </footer>
     </div>
-</section>
+</div>
 "
 `;
 
 exports[`Check stories > Components/Dialog > Story Selectable > Should match snapshot 1`] = `
 "
-<section class=\\"fd-dialog-docs-static fd-dialog fd-dialog--active\\" id=\\"select-dialog-example\\">
-    <div class=\\"fd-dialog__content\\" role=\\"dialog\\" aria-modal=\\"true\\" aria-labelledby=\\"dialog-title-8\\">
+<div class=\\"fd-dialog-docs-static fd-dialog fd-dialog--active\\" id=\\"select-dialog-example\\">
+    <div 
+        class=\\"fd-dialog__content\\" 
+        role=\\"dialog\\" 
+        aria-modal=\\"true\\" 
+        aria-labelledby=\\"dialog-title-8\\"
+    >
         <header class=\\"fd-dialog__header fd-bar fd-bar--header-with-subheader\\">
             <div class=\\"fd-bar__left\\">
                 <div class=\\"fd-bar__element\\">
@@ -16175,7 +16221,8 @@ exports[`Check stories > Components/Dialog > Story Selectable > Should match sna
                 </div>
             </div>
         </header>
-        <div class=\\"fd-dialog__subheader fd-bar fd-bar--subheader\\">
+
+        <section class=\\"fd-dialog__subheader fd-bar fd-bar--subheader\\">
             <div class=\\"fd-bar__middle\\">
                 <div class=\\"fd-input-group\\">
                     <input class=\\"fd-input fd-input-group__input\\" type=\\"text\\" aria-label=\\"search\\" placeholder=\\"Search...\\">
@@ -16186,8 +16233,9 @@ exports[`Check stories > Components/Dialog > Story Selectable > Should match sna
                     </span>
                 </div>
             </div>
-        </div>
-        <div class=\\"fd-dialog__body fd-dialog__body--no-vertical-padding\\">
+        </section>
+
+        <section class=\\"fd-dialog__body fd-dialog__body--no-vertical-padding\\">
             <ul class=\\"fd-list fd-list--selection fd-list--no-border\\" aria-label=\\"selection list\\" role=\\"listbox\\">
                 <li role=\\"option\\" tabindex=\\"0\\" class=\\"fd-list__item\\">
                     <div class=\\"fd-form-item fd-list__form-item\\">
@@ -16247,7 +16295,8 @@ exports[`Check stories > Components/Dialog > Story Selectable > Should match sna
             <span class=\\"fd-list__footer\\">
                 2 items selected
             </span>
-        </div>
+        </section>
+
         <footer class=\\"fd-dialog__footer fd-bar fd-bar--footer\\">
             <div class=\\"fd-bar__right\\">
                 <div class=\\"fd-bar__element\\">
@@ -16259,13 +16308,20 @@ exports[`Check stories > Components/Dialog > Story Selectable > Should match sna
             </div>
         </footer>
     </div>
-</section>"
+</div>"
 `;
 
 exports[`Check stories > Components/Dialog > Story Sizes > Should match snapshot 1`] = `
 "
-<section class=\\"fd-dialog-docs-static fd-dialog fd-dialog--active\\">
-    <div class=\\"fd-dialog__content fd-dialog__content--s\\" role=\\"dialog\\" aria-modal=\\"true\\" aria-labelledby=\\"dialog-title-2\\">
+<div class=\\"fd-dialog-docs-static fd-dialog fd-dialog--active\\">
+    <div 
+        class=\\"fd-dialog__content fd-dialog__content--s\\" 
+        role=\\"dialog\\" 
+        aria-modal=\\"true\\" 
+        aria-labelledby=\\"dialog-title-2\\"
+        aria-describedby=\\"dialog-description-2\\"
+    >
+        
         <header class=\\"fd-dialog__header fd-bar fd-bar--header\\">
             <div class=\\"fd-bar__left\\">
                 <div class=\\"fd-bar__element\\">
@@ -16275,9 +16331,11 @@ exports[`Check stories > Components/Dialog > Story Sizes > Should match snapshot
                 </div>
             </div>
         </header>
-        <div class=\\"fd-dialog__body\\">
+        
+        <section class=\\"fd-dialog__body\\" id=\\"dialog-description-2\\">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-        </div>
+        </section>
+        
         <footer class=\\"fd-dialog__footer fd-bar fd-bar--footer\\">
             <div class=\\"fd-bar__right\\">
                 <div class=\\"fd-bar__element\\">
@@ -16289,10 +16347,17 @@ exports[`Check stories > Components/Dialog > Story Sizes > Should match snapshot
             </div>
         </footer>
     </div>
-</section>
+</div>
 <br />
-<section class=\\"fd-dialog-docs-static fd-dialog fd-dialog--active\\">
-    <div class=\\"fd-dialog__content fd-dialog__content--m\\" role=\\"dialog\\" aria-modal=\\"true\\" aria-labelledby=\\"dialog-title-3\\">
+<div class=\\"fd-dialog-docs-static fd-dialog fd-dialog--active\\">
+    <div 
+        class=\\"fd-dialog__content fd-dialog__content--m\\" 
+        role=\\"dialog\\" 
+        aria-modal=\\"true\\" 
+        aria-labelledby=\\"dialog-title-3\\" 
+        aria-describedby=\\"dialog-description-3\\"
+    >
+        
         <header class=\\"fd-dialog__header fd-bar fd-bar--header\\">
             <div class=\\"fd-bar__left\\">
                 <div class=\\"fd-bar__element\\">
@@ -16302,9 +16367,11 @@ exports[`Check stories > Components/Dialog > Story Sizes > Should match snapshot
                 </div>
             </div>
         </header>
-        <div class=\\"fd-dialog__body\\">
+        
+        <section class=\\"fd-dialog__body\\" id=\\"dialog-description-3\\">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-        </div>
+        </section>
+        
         <footer class=\\"fd-dialog__footer fd-bar fd-bar--footer\\">
             <div class=\\"fd-bar__right\\">
                 <div class=\\"fd-bar__element\\">
@@ -16316,10 +16383,17 @@ exports[`Check stories > Components/Dialog > Story Sizes > Should match snapshot
             </div>
         </footer>
     </div>
-</section>
+</div>
 <br />
-<section class=\\"fd-dialog-docs-static fd-dialog fd-dialog--active\\">
-    <div class=\\"fd-dialog__content fd-dialog__content--l\\" role=\\"dialog\\" aria-modal=\\"true\\" aria-labelledby=\\"dialog-title-4\\">
+<div class=\\"fd-dialog-docs-static fd-dialog fd-dialog--active\\">
+    <div 
+        class=\\"fd-dialog__content fd-dialog__content--l\\" 
+        role=\\"dialog\\" 
+        aria-modal=\\"true\\" 
+        aria-labelledby=\\"dialog-title-4\\"
+        aria-describedby=\\"dialog-description-4\\"
+    >
+        
         <header class=\\"fd-dialog__header fd-bar fd-bar--header\\">
             <div class=\\"fd-bar__left\\">
                 <div class=\\"fd-bar__element\\">
@@ -16329,9 +16403,11 @@ exports[`Check stories > Components/Dialog > Story Sizes > Should match snapshot
                 </div>
             </div>
         </header>
-        <div class=\\"fd-dialog__body\\">
+        
+        <section class=\\"fd-dialog__body\\" id=\\"dialog-description-4\\">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-        </div>
+        </section>
+        
         <footer class=\\"fd-dialog__footer fd-bar fd-bar--footer\\">
             <div class=\\"fd-bar__right\\">
                 <div class=\\"fd-bar__element\\">
@@ -16343,10 +16419,19 @@ exports[`Check stories > Components/Dialog > Story Sizes > Should match snapshot
             </div>
         </footer>
     </div>
-</section>
+</div>
+
 <br />
-<section class=\\"fd-dialog-docs-static fd-dialog fd-dialog--active\\">
-    <div class=\\"fd-dialog__content fd-dialog__content--xl\\" role=\\"dialog\\" aria-modal=\\"true\\" aria-labelledby=\\"dialog-title-5\\">
+
+<div class=\\"fd-dialog-docs-static fd-dialog fd-dialog--active\\">
+    <div 
+        class=\\"fd-dialog__content fd-dialog__content--xl\\" 
+        role=\\"dialog\\" 
+        aria-modal=\\"true\\" 
+        aria-labelledby=\\"dialog-title-5\\"
+        aria-describedby=\\"dialog-description-5\\"
+    >
+        
         <header class=\\"fd-dialog__header fd-bar fd-bar--header\\">
             <div class=\\"fd-bar__left\\">
                 <div class=\\"fd-bar__element\\">
@@ -16356,9 +16441,11 @@ exports[`Check stories > Components/Dialog > Story Sizes > Should match snapshot
                 </div>
             </div>
         </header>
-        <div class=\\"fd-dialog__body\\">
+        
+        <section class=\\"fd-dialog__body\\" id=\\"dialog-description-5\\">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-        </div>
+        </section>
+        
         <footer class=\\"fd-dialog__footer fd-bar fd-bar--footer\\">
             <div class=\\"fd-bar__right\\">
                 <div class=\\"fd-bar__element\\">
@@ -16370,7 +16457,7 @@ exports[`Check stories > Components/Dialog > Story Sizes > Should match snapshot
             </div>
         </footer>
     </div>
-</section>
+</div>
 "
 `;
 
@@ -16380,12 +16467,19 @@ exports[`Check stories > Components/Dialog > Story TabletAndHybridDeviceSpecific
 <div>Full Screen Button: visible (<code>sap-icon--full-screen</code>)</div>
 <div>Resize Handle: not visible</div>
 <br>
-<section class=\\"fd-dialog-docs-static fd-dialog fd-dialog--active\\">
-    <div class=\\"fd-dialog__content fd-dialog__content--s\\" role=\\"dialog\\" aria-modal=\\"true\\" aria-labelledby=\\"dialog-title-6\\">
+<div class=\\"fd-dialog-docs-static fd-dialog fd-dialog--active\\">
+    <div 
+        class=\\"fd-dialog__content fd-dialog__content--s\\" 
+        role=\\"dialog\\" 
+        aria-modal=\\"true\\" 
+        aria-labelledby=\\"dialog-title-12\\"
+        aria-describedby=\\"dialog-description-12\\"
+    >
+        
         <header class=\\"fd-dialog__header fd-bar fd-bar--header\\">
             <div class=\\"fd-bar__left\\">
                 <div class=\\"fd-bar__element\\">
-                    <h2 class=\\"fd-title fd-title--h5\\" id=\\"dialog-title-6\\">
+                    <h2 class=\\"fd-title fd-title--h5\\" id=\\"dialog-title-12\\">
                         Lorem ipsum
                     </h2>
                 </div>
@@ -16398,9 +16492,11 @@ exports[`Check stories > Components/Dialog > Story TabletAndHybridDeviceSpecific
                 </div>
             </div>
         </header>
-        <div class=\\"fd-dialog__body\\">
+
+        <section class=\\"fd-dialog__body\\" id=\\"dialog-description-12\\">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-        </div>
+        </section>
+
         <footer class=\\"fd-dialog__footer fd-bar fd-bar--footer\\">
             <div class=\\"fd-bar__right\\">
                 <div class=\\"fd-bar__element\\">
@@ -16412,7 +16508,7 @@ exports[`Check stories > Components/Dialog > Story TabletAndHybridDeviceSpecific
             </div>
         </footer>
     </div>
-</section>  
+</div>  
 
 <br><br>
 <h3>Tablet with mouse attached</h3>
@@ -16535,8 +16631,13 @@ exports[`Check stories > Components/Dialog > Story TabletAndHybridDeviceSpecific
 `;
 
 exports[`Check stories > Components/Dialog > Story VerticalForm > Should match snapshot 1`] = `
-"<section class=\\"fd-dialog-docs-static fd-dialog fd-dialog--active\\">
-    <div class=\\"fd-dialog__content fd-dialog__content--s\\" role=\\"dialog\\" aria-modal=\\"true\\" aria-labelledby=\\"dialog-title-2\\">
+"<div class=\\"fd-dialog-docs-static fd-dialog fd-dialog--active\\">
+    <div 
+        class=\\"fd-dialog__content fd-dialog__content--s\\" 
+        role=\\"dialog\\" 
+        aria-modal=\\"true\\" 
+        aria-labelledby=\\"dialog-title-2\\">
+        
         <header class=\\"fd-dialog__header fd-bar fd-bar--header\\">
             <div class=\\"fd-bar__left\\">
             <div class=\\"fd-bar__element\\">
@@ -16546,7 +16647,8 @@ exports[`Check stories > Components/Dialog > Story VerticalForm > Should match s
             </div>
             </div>
         </header>
-        <div class=\\"fd-dialog__body\\">
+
+        <section class=\\"fd-dialog__body\\">
             <div class=\\"fd-container fd-form-layout-grid-container fd-form-layout-grid-container--vertical fd-form-group\\">
                 <div class=\\"fd-row fd-form-item\\">
                     <div class=\\"fd-col\\">
@@ -16617,7 +16719,8 @@ exports[`Check stories > Components/Dialog > Story VerticalForm > Should match s
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
+        
         <footer class=\\"fd-dialog__footer fd-bar fd-bar--footer\\">
             <div class=\\"fd-bar__right\\">
                 <div class=\\"fd-bar__element\\">
@@ -16629,7 +16732,7 @@ exports[`Check stories > Components/Dialog > Story VerticalForm > Should match s
             </div>
         </footer>
     </div>
-</section>
+</div>
 "
 `;
 

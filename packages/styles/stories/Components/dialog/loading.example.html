@@ -1,6 +1,13 @@
 
-<section class="fd-dialog-docs-static fd-dialog fd-dialog--active" id="loading-dialog-example">
-    <div class="fd-dialog__content fd-dialog__content--s" role="dialog" aria-modal="true" aria-labelledby="dialog-title-9">
+<div class="fd-dialog-docs-static fd-dialog fd-dialog--active" id="loading-dialog-example">
+    <div 
+        class="fd-dialog__content fd-dialog__content--s" 
+        role="dialog" 
+        aria-modal="true" 
+        aria-labelledby="dialog-title-9"
+        aria-describedby="dialog-description-9"
+    >
+        
         <header class="fd-dialog__header fd-bar fd-bar--header">
             <div class="fd-bar__left">
                 <div class="fd-bar__element">
@@ -10,14 +17,16 @@
                 </div>
             </div>
         </header>
-        <div class="fd-dialog__body">
+
+        <section class="fd-dialog__body" id="dialog-description-8">
             <strong>Status:</strong> Connecting 127.0.0.1
             <div class="fd-dialog__loader fd-busy-indicator--l" aria-hidden="false" aria-label="Loading">
                 <div class="fd-busy-indicator--circle-0"></div>
                 <div class="fd-busy-indicator--circle-1"></div>
                 <div class="fd-busy-indicator--circle-2"></div>
             </div>
-        </div>
+        </section>
+
         <footer class="fd-dialog__footer fd-bar fd-bar--footer">
             <div class="fd-bar__right">
                 <div class="fd-bar__element">
@@ -26,4 +35,4 @@
             </div>
         </footer>
     </div>
-</section>
+</div>
