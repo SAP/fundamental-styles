@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.40.0-rc.8](https://github.com/SAP/fundamental-styles/compare/v0.40.0-rc.7...v0.40.0-rc.8) (2025-04-28)
+
+### Bug Fixes
+
+- **styles:** update Feed Input component [ci visual] ([#6040](https://github.com/SAP/fundamental-styles/issues/6040)) ([0b54407](https://github.com/SAP/fundamental-styles/commit/0b544077d7f1f9584f633ee619d6c7f23723199c))
+
+### BREAKING CHANGES
+
+- **styles:** an additional div element with class fd-feed-input\_\_container is added, aria attributes and roles are updated.
+
 # [0.40.0-rc.7](https://github.com/SAP/fundamental-styles/compare/v0.40.0-rc.6...v0.40.0-rc.7) (2025-04-28)
 
 ### Bug Fixes
@@ -6002,9 +6012,9 @@ Co-authored-by: droshev <mladen.droshev@sap.com>
 
 - added a new modifier class to fd-row to achieve even alignment of its elements:fd-row--top in a form.
   Before:
-    <div class="fd-row">
-    After:
-    <div class="fd-row fd-row--top">
+      <div class="fd-row">
+      After:
+      <div class="fd-row fd-row--top">
 
 ### Bug Fixes
 
