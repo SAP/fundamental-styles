@@ -1,21 +1,25 @@
-    <div class="fd-feed-input"
-         role="region"
-         aria-label="Feed input with one row text">
+<div class="fd-feed-input"
+    role="group"
+    aria-label="Feed input with one row text">
+    <div class="fd-feed-input__container">
         <div class="fd-avatar fd-avatar--s fd-avatar--thumbnail fd-feed-input__thumb"
-             style="background-image: url('assets/images/avatars/4.svg')"
-             role="img"
-             aria-label="John Doe"
-             title="John Doe"></div>
+            style="background-image: url('assets/images/avatars/4.svg')"
+            role="img"
+            aria-label="John Doe">
+        </div>
         <textarea class="fd-textarea fd-feed-input__textarea"
-                  placeholder="Post something here"
-                  aria-label="Feed message"
-                  required
-                  rows="1">"When there is text, the submit button becomes active.</textarea>
-        <button class="fd-button
-                fd-feed-input__submit-button"
-                aria-label="Send"
-                aria-disabled="false"
-                title="Send">
-            <i role="presentation" class="sap-icon--feeder-arrow"></i>
+            placeholder="Post something here"
+            required
+            rows="1">When there is text, the submit button becomes active.
+        </textarea>
+        <button 
+            class="fd-button fd-feed-input__submit-button"
+            aria-label="Submit"
+            aria-disabled="false"
+            title="Submit"
+            role="button"
+        >
+            <i role="presentation" aria-hidden="true" class="sap-icon--feeder-arrow"></i>
         </button>
     </div>
+</div>

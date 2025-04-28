@@ -1,14 +1,17 @@
-    <div class="fd-feed-input"
-         role="region"
-         aria-label="Feed input empty example">
+<div class="fd-feed-input"
+    role="group"
+    aria-label="Feed input empty example">
+    <div class="fd-feed-input__container">
         <textarea class="fd-textarea fd-feed-input__textarea"
-                  placeholder="Post something here"
-                  aria-label="Feed message"
-                  required
-                  rows="1">Without user image</textarea>
+            placeholder="Post something here"
+            required
+            rows="1">Without user image
+        </textarea>
         <button class="fd-button fd-feed-input__submit-button"
-                aria-label="Send"
-                title="Send">
-            <i role="presentation" class="sap-icon--feeder-arrow"></i>
+            role="button"
+            aria-label="Submit"
+            title="Submit">
+            <i role="presentation" aria-hidden="true" class="sap-icon--feeder-arrow"></i>
         </button>
     </div>
+</div>
