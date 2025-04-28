@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.40.0-rc.7](https://github.com/SAP/fundamental-styles/compare/v0.40.0-rc.6...v0.40.0-rc.7) (2025-04-28)
+
+### Bug Fixes
+
+- **styles:** update resize handle per wcag compliance [ci visual] ([#6039](https://github.com/SAP/fundamental-styles/issues/6039)) ([cda4dce](https://github.com/SAP/fundamental-styles/commit/cda4dce7eaafdd306588312c17681c88b9a01f77))
+
+### BREAKING CHANGES
+
+- **styles:** In Popover component the resize handle is outside of the wrapping container.
+
 # [0.40.0-rc.6](https://github.com/SAP/fundamental-styles/compare/v0.40.0-rc.5...v0.40.0-rc.6) (2025-04-25)
 
 ### Bug Fixes
@@ -5992,9 +6002,9 @@ Co-authored-by: droshev <mladen.droshev@sap.com>
 
 - added a new modifier class to fd-row to achieve even alignment of its elements:fd-row--top in a form.
   Before:
-  <div class="fd-row">
-  After:
-  <div class="fd-row fd-row--top">
+    <div class="fd-row">
+    After:
+    <div class="fd-row fd-row--top">
 
 ### Bug Fixes
 
