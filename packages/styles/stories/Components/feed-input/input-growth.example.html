@@ -1,25 +1,26 @@
     <div class="fd-feed-input"
-         role="region"
-         aria-label="Feed input height growth">
-        <div class="fd-avatar fd-avatar--s fd-avatar--thumbnail fd-feed-input__thumb"
-             style="background-image: url('assets/images/avatars/4.svg')"
-             role="img"
-             aria-label="John Doe"
-             title="John Doe"></div>
-        <textarea class="fd-textarea fd-feed-input__textarea"
-                  placeholder="Post something here"
-                  aria-label="Feed"
-                  required
-                  rows="4">
-With every line
+        role="group"
+        aria-label="Feed input height growth">
+        <div class="fd-feed-input__container">
+            <div class="fd-avatar fd-avatar--s fd-avatar--thumbnail fd-feed-input__thumb"
+                style="background-image: url('assets/images/avatars/4.svg')"
+                role="img"
+                aria-label="John Doe">
+            </div>
+            <textarea class="fd-textarea fd-feed-input__textarea"
+                placeholder="Post something here"
+                required
+                rows="4">With every line
 "textarea" grows upward
 until it reaches
 the max height
-        </textarea>
-        <button class="fd-button fd-feed-input__submit-button"
-                aria-label="Send"
+            </textarea>
+            <button class="fd-button fd-feed-input__submit-button"
+                role="button"
                 aria-disabled="false"
-                title="Send">
-            <i role="presentation" class="sap-icon--feeder-arrow"></i>
-        </button>
+                aria-label="Submit"
+                title="Submit">
+                <i role="presentation" aria-hidden="true" class="sap-icon--feeder-arrow"></i>
+            </button>
+         </div>
     </div>

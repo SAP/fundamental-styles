@@ -26,8 +26,8 @@ $fd-button-badge-spacing: 0.25rem;
   @include fd-button-reset();
   @include fd-inline-flex-center();
 
-  height: var(--fdButton_Height);
-  max-height: var(--fdButton_Height);
+  height: var(--fdButton_Height, var(--sapElement_Height));
+  max-height: var(--fdButton_Height, var(--sapElement_Height));
   min-width: var(--fdButton_Min_Width);
   position: relative;
   text-align: center;
@@ -43,7 +43,7 @@ $fd-button-badge-spacing: 0.25rem;
     position: absolute;
     height: auto;
     width: 100%;
-    inset: calc((var(--fdButton_Clickable_Height) - var(--fdButton_Height)) * -0.5) 0;
+    inset: calc((var(--fdButton_Clickable_Height) - var(--fdButton_Height, var(--sapElement_Height))) * -0.5) 0;
   }
 
   &__text {
@@ -115,7 +115,7 @@ $fd-button-badge-spacing: 0.25rem;
       padding-inline: calc(0.5rem - var(--sapButton_BorderWidth)) calc(0.25rem - var(--sapButton_BorderWidth));
     }
 
-    --fdButton_Height: var(--fdButton_Compact_Height);
+    --fdButton_Height: var(--fdButton_Compact_Height, var(--sapElement_Compact_Height));
     --fdButton_Clickable_Height: 2rem;
     --fdButton_Padding_X: 0.5rem;
     --fdButton_Min_Width: 2rem;

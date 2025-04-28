@@ -3,9 +3,6 @@
 @import './sap_horizon';
 
 :root {
-  --fdButton_Height: var(--sapElement_Height);
-  --fdButton_Compact_Height: var(--sapElement_Compact_Height);
-
   /** Menu */
   --fdButton_Menu_Separator_Display: none;
   --fdButton_Menu_Offset: calc(var(--sapButton_BorderWidth) * -1);

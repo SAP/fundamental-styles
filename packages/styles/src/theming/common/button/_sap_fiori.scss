@@ -1,8 +1,6 @@
 @use "sass:map";
 
 :root {
-  --fdButton_Height: 2.25rem;
-  --fdButton_Compact_Height: 1.625rem;
   --fdButton_Emphasized_Active_Outline: var(--sapContent_ContrastFocusColor);
   --fdButton_Ghost_Background: var(--sapButton_Lite_Background);
   --fdButton_Outline_Contrast: var(--sapContent_ContrastFocusColor);

@@ -6,16 +6,17 @@
 $block: #{$fd-namespace}-feed-input;
 
 .#{$block} {
-  $fd-feed-input-min-height: 3rem;
-  $fd-feed-input-max-height: 20rem;
-
   @include fd-reset();
 
-  display: flex;
-  flex-direction: row;
-  padding-block: 1rem;
-  padding-inline: 1rem 0.5rem;
-  background-color: var(--sapField_Background);
+  height: 100%;
+  container-name: feed-input;
+  container-type: inline-size;
+
+  
+
+
+
+
 
   @include fd-disabled() {
     cursor: not-allowed;
@@ -30,37 +31,55 @@ $block: #{$fd-namespace}-feed-input;
     }
   }
 
-  .#{$block}__thumb {
-    display: none;
-    flex: 1 0 auto;
-    margin-inline: 0 0.5rem;
+  .#{$block}__container {
+    @include fd-reset();
+    @include fd-flex() {
+      gap: 0.5rem;
+    };
+
+    margin-block: 1rem;
+    padding-block: 1rem;
+    padding-inline: 1rem 0.5rem;
+    background-color: var(--sapGroup_ContentBackground);
   }
 
   .#{$block}__textarea {
-    min-height: $fd-feed-input-min-height;
-    max-height: $fd-feed-input-max-height;
+    min-height: 3rem;
+    max-height: 20rem;
     margin-inline: 0;
     margin-block: 0;
-    padding-block: 0.3125rem;
+    padding-block: 0.375rem;
     padding-inline: 0.5rem;
   }
 
   // It's needed to have stronger selector to override fd-button styles
   .#{$block}__submit-button {
-    margin-block: auto 0.375rem;
-    margin-inline: 0.5rem 0;
+    margin-block: 0.375rem;
+    align-self: flex-end;
 
     @include fd-rtl() {
       transform: rotate(180deg);
     }
+
+    @include fd-compact-or-condensed() {
+      --fdButton_Compact_Height: var(--sapElement_Height);
+      --fdButton_Clickable_Height: 2.75rem;
+      --fdButton_Padding_X: 0.625rem;
+      --fdButton_Min_Width: 2.25rem;
+      --fdButton_Badge_Margin_Inline_Start: 0;
+      --fdButton_Badge_Size_Attention: 0.75rem;
+    }
   }
 
-  @media (width >= 25rem) {
-    margin-top: 1rem;
-    margin-block-end: 1rem;
-
+  @container feed-input (max-width: 20rem) {
+    .#{$block}__container {
+      margin-block: 0;
+    }
+    
+  
     .#{$block}__thumb {
-      display: inline-flex;
+      display: none;
     }
   }
 }
+

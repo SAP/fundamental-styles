@@ -16738,99 +16738,106 @@ exports[`Check stories > Components/Dialog > Story VerticalForm > Should match s
 
 exports[`Check stories > Components/Feed Input > Story Disabled > Should match snapshot 1`] = `
 "    <div class=\\"fd-feed-input is-disabled\\"
-         role=\\"region\\"
-         aria-label=\\"Feed input disabled example\\">
-        <div class=\\"fd-avatar fd-avatar--s fd-avatar--thumbnail fd-feed-input__thumb\\"
-             style=\\"background-image: url('assets/images/avatars/4.svg')\\"
-             role=\\"img\\"
-             aria-label=\\"John Doe\\"
-             title=\\"John Doe\\"></div>
-        <textarea class=\\"fd-textarea fd-feed-input__textarea\\"
-                  placeholder=\\"Post something here\\"
-                  aria-label=\\"Feed message\\"
-                  required
-                  rows=\\"1\\"
-                  aria-disabled=\\"true\\"
-                  disabled>Disabled</textarea>
-        <button class=\\"fd-button fd-feed-input__submit-button\\"
-                aria-label=\\"Send\\"
+        role=\\"group\\"
+        aria-label=\\"Feed input disabled example\\">
+        <div class=\\"fd-feed-input__container\\">
+            <div class=\\"fd-avatar fd-avatar--s fd-avatar--thumbnail fd-feed-input__thumb\\"
+                style=\\"background-image: url('assets/images/avatars/4.svg')\\"
+                role=\\"img\\"
+                aria-label=\\"John Doe\\"></div>
+            <textarea class=\\"fd-textarea fd-feed-input__textarea\\"
+                placeholder=\\"Post something here\\"
+                required
+                rows=\\"1\\"
                 aria-disabled=\\"true\\"
+                disabled>Disabled</textarea>
+            <button class=\\"fd-button fd-feed-input__submit-button\\"
                 disabled
-                title=\\"Send\\">
-            <i role=\\"presentation\\" class=\\"sap-icon--feeder-arrow\\"></i>
-        </button>
+                role=\\"button\\"
+                aria-label=\\"Submit\\"
+                aria-disabled=\\"true\\"
+                title=\\"Submit\\">
+                <i role=\\"presentation\\" aria-hidden=\\"true\\" class=\\"sap-icon--feeder-arrow\\"></i>
+            </button>
+        </div>
     </div>
 "
 `;
 
 exports[`Check stories > Components/Feed Input > Story InputGrowth > Should match snapshot 1`] = `
 "    <div class=\\"fd-feed-input\\"
-         role=\\"region\\"
-         aria-label=\\"Feed input height growth\\">
-        <div class=\\"fd-avatar fd-avatar--s fd-avatar--thumbnail fd-feed-input__thumb\\"
-             style=\\"background-image: url('assets/images/avatars/4.svg')\\"
-             role=\\"img\\"
-             aria-label=\\"John Doe\\"
-             title=\\"John Doe\\"></div>
-        <textarea class=\\"fd-textarea fd-feed-input__textarea\\"
-                  placeholder=\\"Post something here\\"
-                  aria-label=\\"Feed\\"
-                  required
-                  rows=\\"4\\">
-With every line
+        role=\\"group\\"
+        aria-label=\\"Feed input height growth\\">
+        <div class=\\"fd-feed-input__container\\">
+            <div class=\\"fd-avatar fd-avatar--s fd-avatar--thumbnail fd-feed-input__thumb\\"
+                style=\\"background-image: url('assets/images/avatars/4.svg')\\"
+                role=\\"img\\"
+                aria-label=\\"John Doe\\">
+            </div>
+            <textarea class=\\"fd-textarea fd-feed-input__textarea\\"
+                placeholder=\\"Post something here\\"
+                required
+                rows=\\"4\\">With every line
 \\"textarea\\" grows upward
 until it reaches
 the max height
-        </textarea>
-        <button class=\\"fd-button fd-feed-input__submit-button\\"
-                aria-label=\\"Send\\"
+            </textarea>
+            <button class=\\"fd-button fd-feed-input__submit-button\\"
+                role=\\"button\\"
                 aria-disabled=\\"false\\"
-                title=\\"Send\\">
-            <i role=\\"presentation\\" class=\\"sap-icon--feeder-arrow\\"></i>
-        </button>
+                aria-label=\\"Submit\\"
+                title=\\"Submit\\">
+                <i role=\\"presentation\\" aria-hidden=\\"true\\" class=\\"sap-icon--feeder-arrow\\"></i>
+            </button>
+         </div>
     </div>
 "
 `;
 
 exports[`Check stories > Components/Feed Input > Story NotEmpty > Should match snapshot 1`] = `
-"    <div class=\\"fd-feed-input\\"
-         role=\\"region\\"
-         aria-label=\\"Feed input with one row text\\">
+"<div class=\\"fd-feed-input\\"
+    role=\\"group\\"
+    aria-label=\\"Feed input with one row text\\">
+    <div class=\\"fd-feed-input__container\\">
         <div class=\\"fd-avatar fd-avatar--s fd-avatar--thumbnail fd-feed-input__thumb\\"
-             style=\\"background-image: url('assets/images/avatars/4.svg')\\"
-             role=\\"img\\"
-             aria-label=\\"John Doe\\"
-             title=\\"John Doe\\"></div>
+            style=\\"background-image: url('assets/images/avatars/4.svg')\\"
+            role=\\"img\\"
+            aria-label=\\"John Doe\\">
+        </div>
         <textarea class=\\"fd-textarea fd-feed-input__textarea\\"
-                  placeholder=\\"Post something here\\"
-                  aria-label=\\"Feed message\\"
-                  required
-                  rows=\\"1\\">\\"When there is text, the submit button becomes active.</textarea>
-        <button class=\\"fd-button
-                fd-feed-input__submit-button\\"
-                aria-label=\\"Send\\"
-                aria-disabled=\\"false\\"
-                title=\\"Send\\">
-            <i role=\\"presentation\\" class=\\"sap-icon--feeder-arrow\\"></i>
+            placeholder=\\"Post something here\\"
+            required
+            rows=\\"1\\">When there is text, the submit button becomes active.
+        </textarea>
+        <button 
+            class=\\"fd-button fd-feed-input__submit-button\\"
+            aria-label=\\"Submit\\"
+            aria-disabled=\\"false\\"
+            title=\\"Submit\\"
+            role=\\"button\\"
+        >
+            <i role=\\"presentation\\" aria-hidden=\\"true\\" class=\\"sap-icon--feeder-arrow\\"></i>
         </button>
     </div>
+</div>
 "
 `;
 
 exports[`Check stories > Components/Feed Input > Story OverMaxHeight > Should match snapshot 1`] = `
-"    <div class=\\"fd-feed-input\\"
-         role=\\"region\\"
-         aria-label=\\"Feed input over max height\\">
-        <div class=\\"fd-avatar fd-avatar--s fd-avatar--thumbnail fd-feed-input__thumb\\"
-             style=\\"background-image: url('assets/images/avatars/4.svg')\\"
-             role=\\"img\\"
-             aria-label=\\"John Doe\\"
-             title=\\"John Doe\\"></div>
-        <textarea class=\\"fd-textarea fd-feed-input__textarea\\"
-                  placeholder=\\"Post something here\\"
-                  aria-label=\\"Feed message\\"
-                  required
-                  rows=\\"18\\">X
+"<div class=\\"fd-feed-input\\"
+    role=\\"group\\"
+    aria-label=\\"Feed input over max height\\">
+    <div class=\\"fd-feed-input__container\\">
+        <div 
+            class=\\"fd-avatar fd-avatar--s fd-avatar--thumbnail fd-feed-input__thumb\\"
+            style=\\"background-image: url('assets/images/avatars/4.svg')\\"
+            role=\\"img\\"
+            aria-label=\\"John Doe\\"></div>
+        <textarea 
+            class=\\"fd-textarea fd-feed-input__textarea\\"
+            placeholder=\\"Post something here\\"
+            required
+            rows=\\"18\\">X
 X
 X
 X
@@ -16849,81 +16856,91 @@ X
 X
 X
 X
-X</textarea>
+X
+        </textarea>
         <button class=\\"fd-button fd-feed-input__submit-button\\"
-                aria-label=\\"Send\\"
-                aria-disabled=\\"false\\"
-                title=\\"Send\\">
-            <i role=\\"presentation\\" class=\\"sap-icon--feeder-arrow\\"></i>
+            role=\\"button\\"
+            aria-disabled=\\"false\\"
+            aria-label=\\"Submit\\"
+            title=\\"Submit\\">
+            <i role=\\"presentation\\" aria-hidden=\\"true\\" class=\\"sap-icon--feeder-arrow\\"></i>
         </button>
     </div>
+</div>
 "
 `;
 
 exports[`Check stories > Components/Feed Input > Story PlaceholderImage > Should match snapshot 1`] = `
 "    <div class=\\"fd-feed-input\\"
-         role=\\"region\\"
-         aria-label=\\"Feed input empty example\\">
-        <div class=\\"fd-avatar fd-avatar--s fd-avatar--placeholder fd-feed-input__thumb\\"
-             role=\\"img\\"
-             aria-label=\\"John Doe\\"
-             title=\\"John Doe\\">
-             <i class=\\"fd-avatar__icon sap-icon--person-placeholder\\" role=\\"presentation\\" aria-hidden=\\"true\\" aria-label=\\"Image placeholder\\"></i>
+        role=\\"group\\"
+        aria-label=\\"Feed input empty example\\">
+        <div class=\\"fd-feed-input__container\\">
+            <div class=\\"fd-avatar fd-avatar--s fd-avatar--placeholder fd-feed-input__thumb\\"
+                role=\\"img\\"
+                aria-label=\\"John Doe\\">
+                <i class=\\"fd-avatar__icon sap-icon--person-placeholder\\" role=\\"presentation\\" aria-hidden=\\"true\\"></i>
+            </div>
+            <textarea class=\\"fd-textarea fd-feed-input__textarea\\"
+                placeholder=\\"Post something here\\"
+                required
+                rows=\\"1\\">With generic user image
+            </textarea>
+            <button 
+                class=\\"fd-button fd-feed-input__submit-button\\"
+                role=\\"button\\"
+                aria-label=\\"Submit\\"
+                title=\\"Submit\\">
+                <i role=\\"presentation\\" aria-hidden=\\"true\\" class=\\"sap-icon--feeder-arrow\\"></i>
+            </button>
         </div>
-        <textarea class=\\"fd-textarea fd-feed-input__textarea\\"
-                  placeholder=\\"Post something here\\"
-                  aria-label=\\"Feed message\\"
-                  required
-                  rows=\\"1\\">With generic user image</textarea>
-        <button class=\\"fd-button fd-feed-input__submit-button\\"
-                aria-label=\\"Send\\"
-                title=\\"Send\\">
-            <i role=\\"presentation\\" class=\\"sap-icon--feeder-arrow\\"></i>
-        </button>
     </div>
 "
 `;
 
 exports[`Check stories > Components/Feed Input > Story Standard > Should match snapshot 1`] = `
 "<div class=\\"fd-feed-input\\"
-         role=\\"region\\"
+         role=\\"group\\"
          aria-label=\\"Feed input empty example\\">
-        <div class=\\"fd-avatar fd-avatar--s fd-avatar--thumbnail fd-feed-input__thumb\\"
-             style=\\"background-image: url('assets/images/avatars/4.svg')\\"
-             role=\\"img\\"
-             aria-label=\\"John Doe\\"
-             title=\\"John Doe\\"></div>
-        <textarea class=\\"fd-textarea fd-feed-input__textarea\\"
-                  placeholder=\\"Post something here\\"
-                  aria-label=\\"Feed message\\"
-                  required
-                  rows=\\"1\\"></textarea>
-        <button class=\\"fd-button fd-feed-input__submit-button\\"
-                aria-label=\\"Send\\"
-                aria-disabled=\\"true\\"
+        <div class=\\"fd-feed-input__container\\">
+            <div class=\\"fd-avatar fd-avatar--s fd-avatar--thumbnail fd-feed-input__thumb\\"
+                style=\\"background-image: url('assets/images/avatars/4.svg')\\"
+                role=\\"img\\"
+                aria-label=\\"John Doe\\"></div>
+            <textarea class=\\"fd-textarea fd-feed-input__textarea\\"
+                placeholder=\\"Post something here\\"
+                required
+                rows=\\"1\\"></textarea>
+            <button class=\\"fd-button fd-feed-input__submit-button\\"
                 disabled
-                title=\\"Send\\">
-            <i role=\\"presentation\\" class=\\"sap-icon--feeder-arrow\\"></i>
-        </button>
+                role=\\"button\\"
+                aria-disabled=\\"true\\"
+                aria-label=\\"Submit\\"
+                title=\\"Submit\\">
+                <i role=\\"presentation\\" aria-hidden=\\"true\\" class=\\"sap-icon--paper-plane\\"></i>
+            </button>
+        </div>
     </div>
 "
 `;
 
 exports[`Check stories > Components/Feed Input > Story WithoutUserImage > Should match snapshot 1`] = `
-"    <div class=\\"fd-feed-input\\"
-         role=\\"region\\"
-         aria-label=\\"Feed input empty example\\">
+"<div class=\\"fd-feed-input\\"
+    role=\\"group\\"
+    aria-label=\\"Feed input empty example\\">
+    <div class=\\"fd-feed-input__container\\">
         <textarea class=\\"fd-textarea fd-feed-input__textarea\\"
-                  placeholder=\\"Post something here\\"
-                  aria-label=\\"Feed message\\"
-                  required
-                  rows=\\"1\\">Without user image</textarea>
+            placeholder=\\"Post something here\\"
+            required
+            rows=\\"1\\">Without user image
+        </textarea>
         <button class=\\"fd-button fd-feed-input__submit-button\\"
-                aria-label=\\"Send\\"
-                title=\\"Send\\">
-            <i role=\\"presentation\\" class=\\"sap-icon--feeder-arrow\\"></i>
+            role=\\"button\\"
+            aria-label=\\"Submit\\"
+            title=\\"Submit\\">
+            <i role=\\"presentation\\" aria-hidden=\\"true\\" class=\\"sap-icon--feeder-arrow\\"></i>
         </button>
     </div>
+</div>
 "
 `;
 

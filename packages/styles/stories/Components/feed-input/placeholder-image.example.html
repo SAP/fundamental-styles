@@ -1,20 +1,23 @@
     <div class="fd-feed-input"
-         role="region"
-         aria-label="Feed input empty example">
-        <div class="fd-avatar fd-avatar--s fd-avatar--placeholder fd-feed-input__thumb"
-             role="img"
-             aria-label="John Doe"
-             title="John Doe">
-             <i class="fd-avatar__icon sap-icon--person-placeholder" role="presentation" aria-hidden="true" aria-label="Image placeholder"></i>
+        role="group"
+        aria-label="Feed input empty example">
+        <div class="fd-feed-input__container">
+            <div class="fd-avatar fd-avatar--s fd-avatar--placeholder fd-feed-input__thumb"
+                role="img"
+                aria-label="John Doe">
+                <i class="fd-avatar__icon sap-icon--person-placeholder" role="presentation" aria-hidden="true"></i>
+            </div>
+            <textarea class="fd-textarea fd-feed-input__textarea"
+                placeholder="Post something here"
+                required
+                rows="1">With generic user image
+            </textarea>
+            <button 
+                class="fd-button fd-feed-input__submit-button"
+                role="button"
+                aria-label="Submit"
+                title="Submit">
+                <i role="presentation" aria-hidden="true" class="sap-icon--feeder-arrow"></i>
+            </button>
         </div>
-        <textarea class="fd-textarea fd-feed-input__textarea"
-                  placeholder="Post something here"
-                  aria-label="Feed message"
-                  required
-                  rows="1">With generic user image</textarea>
-        <button class="fd-button fd-feed-input__submit-button"
-                aria-label="Send"
-                title="Send">
-            <i role="presentation" class="sap-icon--feeder-arrow"></i>
-        </button>
     </div>
