@@ -1,5 +1,10 @@
-/* empty css               *//* empty css                    *//* empty css             *//* empty css            *//* empty css               *//* empty css              *//* empty css             *//* empty css                 *//* empty css                       *//* empty css                   *//* empty css                         *//* empty css                    *//* empty css              *//* empty css                *//* empty css               *//* empty css                 */const r=`<section class="fd-dialog-docs-static fd-dialog fd-dialog--active">
-    <div class="fd-dialog__content fd-dialog__content--s" role="dialog" aria-modal="true" aria-labelledby="dialog-title-2">
+/* empty css               *//* empty css                    *//* empty css             *//* empty css            *//* empty css               *//* empty css              *//* empty css             *//* empty css                 *//* empty css                       *//* empty css                   *//* empty css                         *//* empty css                    *//* empty css              *//* empty css                *//* empty css               *//* empty css                 */const r=`<div class="fd-dialog-docs-static fd-dialog fd-dialog--active">
+    <div 
+        class="fd-dialog__content fd-dialog__content--s" 
+        role="dialog" 
+        aria-modal="true" 
+        aria-labelledby="dialog-title-2">
+        
         <header class="fd-dialog__header fd-bar fd-bar--header">
             <div class="fd-bar__left">
             <div class="fd-bar__element">
@@ -9,7 +14,8 @@
             </div>
             </div>
         </header>
-        <div class="fd-dialog__body">
+
+        <section class="fd-dialog__body">
             <div class="fd-container fd-form-layout-grid-container fd-form-layout-grid-container--vertical fd-form-group">
                 <div class="fd-row fd-form-item">
                     <div class="fd-col">
@@ -80,7 +86,8 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
+        
         <footer class="fd-dialog__footer fd-bar fd-bar--footer">
             <div class="fd-bar__right">
                 <div class="fd-bar__element">
@@ -92,10 +99,16 @@
             </div>
         </footer>
     </div>
-</section>
+</div>
 `,c=`
-<section class="fd-dialog-docs-static fd-dialog fd-dialog--active">
-    <div class="fd-dialog__content fd-dialog__content--s" role="dialog" aria-modal="true" aria-labelledby="dialog-title-2">
+<div class="fd-dialog-docs-static fd-dialog fd-dialog--active">
+    <div 
+        class="fd-dialog__content fd-dialog__content--s" 
+        role="dialog" 
+        aria-modal="true" 
+        aria-labelledby="dialog-title-2"
+    >
+        
         <header class="fd-dialog__header fd-bar fd-bar--header">
             <div class="fd-bar__left">
             <div class="fd-bar__element">
@@ -105,7 +118,8 @@
             </div>
             </div>
         </header>
-        <div class="fd-dialog__body">
+        
+        <section class="fd-dialog__body">
             <div class="fd-container fd-form-layout-grid-container fd-form-group">
                 <div class="fd-row fd-form-item">
                     <div class="fd-col fd-col-md--2 fd-col-lg--4">
@@ -176,7 +190,8 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
+        
         <footer class="fd-dialog__footer fd-bar fd-bar--footer">
             <div class="fd-bar__right">
                 <div class="fd-bar__element">
@@ -188,10 +203,17 @@
             </div>
         </footer>
     </div>
-</section>
+</div>
 `,f=`
-<section class="fd-dialog-docs-static fd-dialog fd-dialog--active" id="loading-dialog-example">
-    <div class="fd-dialog__content fd-dialog__content--s" role="dialog" aria-modal="true" aria-labelledby="dialog-title-9">
+<div class="fd-dialog-docs-static fd-dialog fd-dialog--active" id="loading-dialog-example">
+    <div 
+        class="fd-dialog__content fd-dialog__content--s" 
+        role="dialog" 
+        aria-modal="true" 
+        aria-labelledby="dialog-title-9"
+        aria-describedby="dialog-description-9"
+    >
+        
         <header class="fd-dialog__header fd-bar fd-bar--header">
             <div class="fd-bar__left">
                 <div class="fd-bar__element">
@@ -201,14 +223,16 @@
                 </div>
             </div>
         </header>
-        <div class="fd-dialog__body">
+
+        <section class="fd-dialog__body" id="dialog-description-8">
             <strong>Status:</strong> Connecting 127.0.0.1
             <div class="fd-dialog__loader fd-busy-indicator--l" aria-hidden="false" aria-label="Loading">
                 <div class="fd-busy-indicator--circle-0"></div>
                 <div class="fd-busy-indicator--circle-1"></div>
                 <div class="fd-busy-indicator--circle-2"></div>
             </div>
-        </div>
+        </section>
+
         <footer class="fd-dialog__footer fd-bar fd-bar--footer">
             <div class="fd-bar__right">
                 <div class="fd-bar__element">
@@ -217,9 +241,14 @@
             </div>
         </footer>
     </div>
-</section>`,b=`
-<section class="fd-dialog-docs-static fd-dialog fd-dialog--active" id="select-dialog-example">
-    <div class="fd-dialog__content" role="dialog" aria-modal="true" aria-labelledby="dialog-title-8">
+</div>`,b=`
+<div class="fd-dialog-docs-static fd-dialog fd-dialog--active" id="select-dialog-example">
+    <div 
+        class="fd-dialog__content" 
+        role="dialog" 
+        aria-modal="true" 
+        aria-labelledby="dialog-title-8"
+    >
         <header class="fd-dialog__header fd-bar fd-bar--header-with-subheader">
             <div class="fd-bar__left">
                 <div class="fd-bar__element">
@@ -234,7 +263,8 @@
                 </div>
             </div>
         </header>
-        <div class="fd-dialog__subheader fd-bar fd-bar--subheader">
+
+        <section class="fd-dialog__subheader fd-bar fd-bar--subheader">
             <div class="fd-bar__middle">
                 <div class="fd-input-group">
                     <input class="fd-input fd-input-group__input" type="text" aria-label="search" placeholder="Search...">
@@ -245,8 +275,9 @@
                     </span>
                 </div>
             </div>
-        </div>
-        <div class="fd-dialog__body fd-dialog__body--no-vertical-padding">
+        </section>
+
+        <section class="fd-dialog__body fd-dialog__body--no-vertical-padding">
             <ul class="fd-list fd-list--selection fd-list--no-border" aria-label="selection list" role="listbox">
                 <li role="option" tabindex="0" class="fd-list__item">
                     <div class="fd-form-item fd-list__form-item">
@@ -306,7 +337,8 @@
             <span class="fd-list__footer">
                 2 items selected
             </span>
-        </div>
+        </section>
+
         <footer class="fd-dialog__footer fd-bar fd-bar--footer">
             <div class="fd-bar__right">
                 <div class="fd-bar__element">
@@ -318,9 +350,15 @@
             </div>
         </footer>
     </div>
-</section>`,_=`
-<section class="fd-dialog-docs-static fd-dialog fd-dialog--active">
-    <div class="fd-dialog__content fd-dialog__content--draggable-grab fd-dialog__content--s" role="dialog" aria-modal="true" aria-labelledby="dialog-title-7">
+</div>`,_=`
+<div class="fd-dialog-docs-static fd-dialog fd-dialog--active">
+    <div 
+        class="fd-dialog__content fd-dialog__content--draggable-grab fd-dialog__content--s" 
+        role="dialog" 
+        aria-modal="true" 
+        aria-labelledby="dialog-title-7"
+        aria-describedby="dialog-description-7"
+    >
         <header class="fd-dialog__header fd-bar fd-bar--header">
             <div class="fd-bar__left">
                 <div class="fd-bar__element">
@@ -330,9 +368,11 @@
                 </div>
             </div>
         </header>
-        <div class="fd-dialog__body">
+
+        <section class="fd-dialog__body" id="dialog-description-7">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-        </div>
+        </section>
+        
         <footer class="fd-dialog__footer fd-bar fd-bar--footer">
             <div class="fd-bar__right">
                 <div class="fd-bar__element">
@@ -344,11 +384,18 @@
             </div>
         </footer>
     </div>
-</section>
+</div>
 `,u=`
-<section class="fd-dialog-docs-static fd-dialog fd-dialog--active">
-    <div class="fd-dialog__content fd-dialog__content--s" role="dialog" aria-modal="true" aria-labelledby="dialog-title-6">
-        <span class="fd-dialog__resize-handle"></span>
+<div class="fd-dialog-docs-static fd-dialog fd-dialog--active">
+    <div 
+        class="fd-dialog__content fd-dialog__content--s" 
+        role="dialog" 
+        aria-modal="true" 
+        aria-labelledby="dialog-title-6"
+        aria-describedby="dialog-description-6"
+    >
+        <span class="fd-dialog__resize-handle" role="presentation" aria-hidden="true"></span>
+        
         <header class="fd-dialog__header fd-bar fd-bar--header">
             <div class="fd-bar__left">
                 <div class="fd-bar__element">
@@ -358,9 +405,11 @@
                 </div>
             </div>
         </header>
-        <div class="fd-dialog__body">
+        
+        <section class="fd-dialog__body" id="dialog-description-6">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-        </div>
+        </section>
+        
         <footer class="fd-dialog__footer fd-bar fd-bar--footer">
             <div class="fd-bar__right">
                 <div class="fd-bar__element">
@@ -372,10 +421,17 @@
             </div>
         </footer>
     </div>
-</section>
+</div>
 `,v=`
-<section class="fd-dialog-docs-static fd-dialog fd-dialog--active">
-    <div class="fd-dialog__content fd-dialog__content--s" role="dialog" aria-modal="true" aria-labelledby="dialog-title-2">
+<div class="fd-dialog-docs-static fd-dialog fd-dialog--active">
+    <div 
+        class="fd-dialog__content fd-dialog__content--s" 
+        role="dialog" 
+        aria-modal="true" 
+        aria-labelledby="dialog-title-2"
+        aria-describedby="dialog-description-2"
+    >
+        
         <header class="fd-dialog__header fd-bar fd-bar--header">
             <div class="fd-bar__left">
                 <div class="fd-bar__element">
@@ -385,9 +441,11 @@
                 </div>
             </div>
         </header>
-        <div class="fd-dialog__body">
+        
+        <section class="fd-dialog__body" id="dialog-description-2">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-        </div>
+        </section>
+        
         <footer class="fd-dialog__footer fd-bar fd-bar--footer">
             <div class="fd-bar__right">
                 <div class="fd-bar__element">
@@ -399,10 +457,17 @@
             </div>
         </footer>
     </div>
-</section>
+</div>
 <br />
-<section class="fd-dialog-docs-static fd-dialog fd-dialog--active">
-    <div class="fd-dialog__content fd-dialog__content--m" role="dialog" aria-modal="true" aria-labelledby="dialog-title-3">
+<div class="fd-dialog-docs-static fd-dialog fd-dialog--active">
+    <div 
+        class="fd-dialog__content fd-dialog__content--m" 
+        role="dialog" 
+        aria-modal="true" 
+        aria-labelledby="dialog-title-3" 
+        aria-describedby="dialog-description-3"
+    >
+        
         <header class="fd-dialog__header fd-bar fd-bar--header">
             <div class="fd-bar__left">
                 <div class="fd-bar__element">
@@ -412,9 +477,11 @@
                 </div>
             </div>
         </header>
-        <div class="fd-dialog__body">
+        
+        <section class="fd-dialog__body" id="dialog-description-3">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-        </div>
+        </section>
+        
         <footer class="fd-dialog__footer fd-bar fd-bar--footer">
             <div class="fd-bar__right">
                 <div class="fd-bar__element">
@@ -426,10 +493,17 @@
             </div>
         </footer>
     </div>
-</section>
+</div>
 <br />
-<section class="fd-dialog-docs-static fd-dialog fd-dialog--active">
-    <div class="fd-dialog__content fd-dialog__content--l" role="dialog" aria-modal="true" aria-labelledby="dialog-title-4">
+<div class="fd-dialog-docs-static fd-dialog fd-dialog--active">
+    <div 
+        class="fd-dialog__content fd-dialog__content--l" 
+        role="dialog" 
+        aria-modal="true" 
+        aria-labelledby="dialog-title-4"
+        aria-describedby="dialog-description-4"
+    >
+        
         <header class="fd-dialog__header fd-bar fd-bar--header">
             <div class="fd-bar__left">
                 <div class="fd-bar__element">
@@ -439,9 +513,11 @@
                 </div>
             </div>
         </header>
-        <div class="fd-dialog__body">
+        
+        <section class="fd-dialog__body" id="dialog-description-4">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-        </div>
+        </section>
+        
         <footer class="fd-dialog__footer fd-bar fd-bar--footer">
             <div class="fd-bar__right">
                 <div class="fd-bar__element">
@@ -453,10 +529,19 @@
             </div>
         </footer>
     </div>
-</section>
+</div>
+
 <br />
-<section class="fd-dialog-docs-static fd-dialog fd-dialog--active">
-    <div class="fd-dialog__content fd-dialog__content--xl" role="dialog" aria-modal="true" aria-labelledby="dialog-title-5">
+
+<div class="fd-dialog-docs-static fd-dialog fd-dialog--active">
+    <div 
+        class="fd-dialog__content fd-dialog__content--xl" 
+        role="dialog" 
+        aria-modal="true" 
+        aria-labelledby="dialog-title-5"
+        aria-describedby="dialog-description-5"
+    >
+        
         <header class="fd-dialog__header fd-bar fd-bar--header">
             <div class="fd-bar__left">
                 <div class="fd-bar__element">
@@ -466,9 +551,11 @@
                 </div>
             </div>
         </header>
-        <div class="fd-dialog__body">
+        
+        <section class="fd-dialog__body" id="dialog-description-5">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-        </div>
+        </section>
+        
         <footer class="fd-dialog__footer fd-bar fd-bar--footer">
             <div class="fd-bar__right">
                 <div class="fd-bar__element">
@@ -480,11 +567,16 @@
             </div>
         </footer>
     </div>
-</section>
+</div>
 `,m=`
-<section class="fd-dialog-docs-static fd-dialog fd-dialog--active">
-    <div class="fd-dialog__content fd-dialog__content--s" role="dialog" aria-modal="true" aria-labelledby="dialog-title-1">
-        <span class="fd-dialog__resize-handle"></span>
+<div class="fd-dialog-docs-static fd-dialog fd-dialog--active">
+    <div 
+        class="fd-dialog__content fd-dialog__content--s" 
+        role="dialog" 
+        aria-modal="true" 
+        aria-labelledby="dialog-title-1"
+        aria-describedby="dialog-description-1">
+        <span class="fd-dialog__resize-handle" role="presentation" aria-hidden="true"></span>
         <header class="fd-dialog__header fd-bar">
             <div class="fd-bar__left">
                 <div class="fd-bar__element">
@@ -494,8 +586,10 @@
                 </div>
             </div>
         </header>
-        <div class="fd-dialog__body">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat...
+        <section class="fd-dialog__body">
+            <span id="dialog-description-1">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat...
+            </span>
             <div class="fd-dialog__loader">
                 <div class="fd-busy-indicator fd-busy-indicator--m" aria-hidden="false" aria-label="Loading">
                     <div class="fd-busy-indicator__circle"></div>
@@ -503,7 +597,7 @@
                     <div class="fd-busy-indicator__circle"></div>
                 </div><br /><br />
             </div>
-        </div>
+        </section>
         <footer class="fd-dialog__footer fd-bar fd-bar--footer">
             <div class="fd-bar__right">
                 <div class="fd-bar__element">
@@ -519,18 +613,25 @@
             </div>
         </footer>
     </div>
-</section>
+</div>
 `,g=`
 <h3>Tablet without mouse attached</h3>
 <div>Full Screen Button: visible (<code>sap-icon--full-screen</code>)</div>
 <div>Resize Handle: not visible</div>
 <br>
-<section class="fd-dialog-docs-static fd-dialog fd-dialog--active">
-    <div class="fd-dialog__content fd-dialog__content--s" role="dialog" aria-modal="true" aria-labelledby="dialog-title-6">
+<div class="fd-dialog-docs-static fd-dialog fd-dialog--active">
+    <div 
+        class="fd-dialog__content fd-dialog__content--s" 
+        role="dialog" 
+        aria-modal="true" 
+        aria-labelledby="dialog-title-12"
+        aria-describedby="dialog-description-12"
+    >
+        
         <header class="fd-dialog__header fd-bar fd-bar--header">
             <div class="fd-bar__left">
                 <div class="fd-bar__element">
-                    <h2 class="fd-title fd-title--h5" id="dialog-title-6">
+                    <h2 class="fd-title fd-title--h5" id="dialog-title-12">
                         Lorem ipsum
                     </h2>
                 </div>
@@ -543,9 +644,11 @@
                 </div>
             </div>
         </header>
-        <div class="fd-dialog__body">
+
+        <section class="fd-dialog__body" id="dialog-description-12">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-        </div>
+        </section>
+
         <footer class="fd-dialog__footer fd-bar fd-bar--footer">
             <div class="fd-bar__right">
                 <div class="fd-bar__element">
@@ -557,7 +660,7 @@
             </div>
         </footer>
     </div>
-</section>  
+</div>  
 
 <br><br>
 <h3>Tablet with mouse attached</h3>
@@ -752,4 +855,4 @@ Dialog can be draggable, enabling the user to drag the container around with the
 | ----------------: | :------------ |
 | \`fd-dialog__content--draggable-grab\` | Modifies the element to be draggable |
 | \`fd-dialog__content--draggable-grabbing\` | Visualizes the grabbing cursor |
-`}}};const t=()=>b;t.parameters={docs:{description:{story:"The selectable dialog displays list items in the content area that can be selected. Users can search items from the list, select one or more items, and finalize their choice by selecting the _Select_ button. To display the selectable dialog, include the `fd-list is-compact` class to the body's container element.\n        "}}};const n=()=>f;n.parameters={docs:{description:{story:"Dialog can display a busy indicator that signals to the user that data is loading. To display a busy indicator in the content area, add the `fd-busy-indicator--l` to the `fd-dialog__loader` container element. Although the busy indicator is large in this example, you can choose a smaller size. See **Busy Indicator** for more sizes."}}};const o=()=>c;o.parameters={docs:{description:{story:"Horizontal Form displays all the components aligned horizontally. It is created by positioning the `fd-form-label` class and the `fd-input` class in the same row."}}};const l=()=>r;l.parameters={docs:{description:{story:"Verical Form displays all the components aligned vertically. It is created by positioning the `fd-form-label` class above the `fd-input` class in seperate rows."}}};const s=()=>g;s.parameters={docs:{description:{story:"To properly support resizing for all input methods, the optional resize handle is context-dependent. Depending on the device, a full screen button is also shown for touch interaction."}}};e.parameters={...e.parameters,docs:{...e.parameters?.docs,source:{originalSource:"() => defaultDialogExampleHtml",...e.parameters?.docs?.source}}};d.parameters={...d.parameters,docs:{...d.parameters?.docs,source:{originalSource:"() => sizesExampleHtml",...d.parameters?.docs?.source}}};a.parameters={...a.parameters,docs:{...a.parameters?.docs,source:{originalSource:"() => resizableExampleHtml",...a.parameters?.docs?.source}}};i.parameters={...i.parameters,docs:{...i.parameters?.docs,source:{originalSource:"() => draggableExampleHtml",...i.parameters?.docs?.source}}};t.parameters={...t.parameters,docs:{...t.parameters?.docs,source:{originalSource:"() => selectableExampleHtml",...t.parameters?.docs?.source}}};n.parameters={...n.parameters,docs:{...n.parameters?.docs,source:{originalSource:"() => loadingExampleHtml",...n.parameters?.docs?.source}}};o.parameters={...o.parameters,docs:{...o.parameters?.docs,source:{originalSource:"() => horizontalFormInDialogExampleHtml",...o.parameters?.docs?.source}}};l.parameters={...l.parameters,docs:{...l.parameters?.docs,source:{originalSource:"() => verticalFormInDialogExampleHtml",...l.parameters?.docs?.source}}};s.parameters={...s.parameters,docs:{...s.parameters?.docs,source:{originalSource:"() => deviceSpecificationsExampleHtml",...s.parameters?.docs?.source}}};const M=["DefaultDialog","Sizes","Resizable","Draggable","Selectable","Loading","HorizontalForm","VerticalForm","TabletAndHybridDeviceSpecification"];export{e as DefaultDialog,i as Draggable,o as HorizontalForm,n as Loading,a as Resizable,t as Selectable,d as Sizes,s as TabletAndHybridDeviceSpecification,l as VerticalForm,M as __namedExportsOrder,I as default};
+`}}};const n=()=>b;n.parameters={docs:{description:{story:"The selectable dialog displays list items in the content area that can be selected. Users can search items from the list, select one or more items, and finalize their choice by selecting the _Select_ button. To display the selectable dialog, include the `fd-list is-compact` class to the body's container element.\n        "}}};const t=()=>f;t.parameters={docs:{description:{story:"Dialog can display a busy indicator that signals to the user that data is loading. To display a busy indicator in the content area, add the `fd-busy-indicator--l` to the `fd-dialog__loader` container element. Although the busy indicator is large in this example, you can choose a smaller size. See **Busy Indicator** for more sizes."}}};const o=()=>c;o.parameters={docs:{description:{story:"Horizontal Form displays all the components aligned horizontally. It is created by positioning the `fd-form-label` class and the `fd-input` class in the same row."}}};const l=()=>r;l.parameters={docs:{description:{story:"Verical Form displays all the components aligned vertically. It is created by positioning the `fd-form-label` class above the `fd-input` class in seperate rows."}}};const s=()=>g;s.parameters={docs:{description:{story:"To properly support resizing for all input methods, the optional resize handle is context-dependent. Depending on the device, a full screen button is also shown for touch interaction."}}};e.parameters={...e.parameters,docs:{...e.parameters?.docs,source:{originalSource:"() => defaultDialogExampleHtml",...e.parameters?.docs?.source}}};d.parameters={...d.parameters,docs:{...d.parameters?.docs,source:{originalSource:"() => sizesExampleHtml",...d.parameters?.docs?.source}}};a.parameters={...a.parameters,docs:{...a.parameters?.docs,source:{originalSource:"() => resizableExampleHtml",...a.parameters?.docs?.source}}};i.parameters={...i.parameters,docs:{...i.parameters?.docs,source:{originalSource:"() => draggableExampleHtml",...i.parameters?.docs?.source}}};n.parameters={...n.parameters,docs:{...n.parameters?.docs,source:{originalSource:"() => selectableExampleHtml",...n.parameters?.docs?.source}}};t.parameters={...t.parameters,docs:{...t.parameters?.docs,source:{originalSource:"() => loadingExampleHtml",...t.parameters?.docs?.source}}};o.parameters={...o.parameters,docs:{...o.parameters?.docs,source:{originalSource:"() => horizontalFormInDialogExampleHtml",...o.parameters?.docs?.source}}};l.parameters={...l.parameters,docs:{...l.parameters?.docs,source:{originalSource:"() => verticalFormInDialogExampleHtml",...l.parameters?.docs?.source}}};s.parameters={...s.parameters,docs:{...s.parameters?.docs,source:{originalSource:"() => deviceSpecificationsExampleHtml",...s.parameters?.docs?.source}}};const M=["DefaultDialog","Sizes","Resizable","Draggable","Selectable","Loading","HorizontalForm","VerticalForm","TabletAndHybridDeviceSpecification"];export{e as DefaultDialog,i as Draggable,o as HorizontalForm,t as Loading,a as Resizable,n as Selectable,d as Sizes,s as TabletAndHybridDeviceSpecification,l as VerticalForm,M as __namedExportsOrder,I as default};

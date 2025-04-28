@@ -1,20 +1,27 @@
 /**
 * Copyright (c) 2012-2025 SAP SE or an SAP affiliate company and Theming Base Content contributors. Licensed under the Apache License, Version 2.0 - see LICENSE.txt.
 *
-* Theming Engine 15.0.5
-* data:{"Path": "Base.baseLib.sap_fiori_3_hcb.css_variables", "PathPattern": "/%frameworkId%/%libId%/%themeId%/%fileId%.css", "Extends": ["sap_fiori_3","sap_base_fiori","baseTheme"], "Tags": ["Fiori_3","HighContrast","DarkColorScheme"], "FallbackThemeId": "sap_fiori_3", "Engine": {"Name": "theming-engine", "Version": "15.0.5"}, "Version": { "Build": "11.29.0.20250403061034", "Source": "11.29.0"}}
+* Theming Engine 15.0.8
+* data:{"Path": "Base.baseLib.sap_fiori_3_hcb.css_variables", "PathPattern": "/%frameworkId%/%libId%/%themeId%/%fileId%.css", "Extends": ["sap_fiori_3","sap_base_fiori","baseTheme"], "Tags": ["Fiori_3","HighContrast","DarkColorScheme"], "FallbackThemeId": "sap_belize_hcb", "Engine": {"Name": "theming-engine", "Version": "15.0.8"}, "Version": { "Build": "11.29.3.20250417070835", "Source": "11.29.3"}}
 */
 
-.sapThemeMetaData-Base-baseLib{background-image: url('data:text/plain;utf-8,{"Path": "Base.baseLib.sap_fiori_3_hcb.css_variables", "PathPattern": "/%frameworkId%/%libId%/%themeId%/%fileId%.css", "Extends": ["sap_fiori_3","sap_base_fiori","baseTheme"], "Tags": ["Fiori_3","HighContrast","DarkColorScheme"], "FallbackThemeId": "sap_fiori_3", "Engine": {"Name": "theming-engine", "Version": "15.0.5"}, "Version": { "Build": "11.29.0.20250403061034", "Source": "11.29.0"}}');}
-:root{--sapThemeMetaData-Base-baseLib:{"Path": "Base.baseLib.sap_fiori_3_hcb.css_variables", "PathPattern": "/%frameworkId%/%libId%/%themeId%/%fileId%.css", "Extends": ["sap_fiori_3","sap_base_fiori","baseTheme"], "Tags": ["Fiori_3","HighContrast","DarkColorScheme"], "FallbackThemeId": "sap_fiori_3", "Engine": {"Name": "theming-engine", "Version": "15.0.5"}, "Version": { "Build": "11.29.0.20250403061034", "Source": "11.29.0"}};}
-
-/**
-* Base.baseLib.baseTheme.base (Version 11.29.0)
-*/
-
+.sapThemeMetaData-Base-baseLib{background-image: url('data:text/plain;utf-8,{"Path": "Base.baseLib.sap_fiori_3_hcb.css_variables", "PathPattern": "/%frameworkId%/%libId%/%themeId%/%fileId%.css", "Extends": ["sap_fiori_3","sap_base_fiori","baseTheme"], "Tags": ["Fiori_3","HighContrast","DarkColorScheme"], "FallbackThemeId": "sap_belize_hcb", "Engine": {"Name": "theming-engine", "Version": "15.0.8"}, "Version": { "Build": "11.29.3.20250417070835", "Source": "11.29.3"}}');}
+:root{--sapThemeMetaData-Base-baseLib:{"Path": "Base.baseLib.sap_fiori_3_hcb.css_variables", "PathPattern": "/%frameworkId%/%libId%/%themeId%/%fileId%.css", "Extends": ["sap_fiori_3","sap_base_fiori","baseTheme"], "Tags": ["Fiori_3","HighContrast","DarkColorScheme"], "FallbackThemeId": "sap_belize_hcb", "Engine": {"Name": "theming-engine", "Version": "15.0.8"}, "Version": { "Build": "11.29.3.20250417070835", "Source": "11.29.3"}};}
 @font-face {
   font-family: 'SAP-icons';
   src: url(../baseTheme/fonts/SAP-icons.woff2) format('woff2'), url(../baseTheme/fonts/SAP-icons.woff) format('woff'), url(../baseTheme/fonts/SAP-icons.ttf) format('truetype'), local('SAP-icons');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'SAP-icons-TNT';
+  src: url(../baseTheme/fonts/SAP-icons-TNT.woff2) format('woff2'), url(../baseTheme/fonts/SAP-icons-TNT.woff) format('woff'), url(../baseTheme/fonts/SAP-icons-TNT.ttf) format('truetype'), local('SAP-icons-TNT');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'SAP-icons-Business-Suite';
+  src: url(../baseTheme/fonts/BusinessSuiteInAppSymbols.woff2) format('woff2'), url(../baseTheme/fonts/BusinessSuiteInAppSymbols.woff) format('woff'), url(../baseTheme/fonts/BusinessSuiteInAppSymbols.ttf) format('truetype'), local('SAP-icons-Business-Suite_woff2');
   font-weight: normal;
   font-style: normal;
 }
@@ -223,11 +230,6 @@
   font-family: '72Mono-Boldfull';
   src: url(../baseTheme/fonts/72Mono-Bold-full.woff2) format('woff2'), url(../baseTheme/fonts/72Mono-Bold-full.woff) format('woff');
 }
-
-/**
-* Base.baseLib.baseTheme.skeleton (Version 11.29.0)
-*/
-
 :root {
   --sapBrandColor: #795100;
   --sapHighlightColor: #795100;
@@ -1762,38 +1764,3 @@
 .background-image--sapShell_BackgroundImage {
   background-image: var(--sapShell_BackgroundImage);
 }
-
-/**
-* Base.baseLib.baseTheme.css_variables (Version 11.29.0)
-*/
-
-
-/**
-* Base.baseLib.sap_base_fiori.base (Version 11.29.0)
-*/
-
-
-/**
-* Base.baseLib.sap_base_fiori.css_variables (Version 11.29.0)
-*/
-
-
-/**
-* Base.baseLib.sap_fiori_3.base (Version 11.29.0)
-*/
-
-
-/**
-* Base.baseLib.sap_fiori_3.css_variables (Version 11.29.0)
-*/
-
-
-/**
-* Base.baseLib.sap_fiori_3_hcb.base (Version 11.29.0)
-*/
-
-
-/**
-* Base.baseLib.sap_fiori_3_hcb.css_variables (Version 11.29.0)
-*/
-

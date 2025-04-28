@@ -1,4 +1,4 @@
-import{f as e}from"./IntroductionPage-f4c12c9f.js";import{R as t}from"./IntroductionPageWrapper-56d28a04.js";import{aq as s}from"./chunk-NUUEMKO5-d257fb74.js";/* empty css                   */import"./_commonjsHelpers-725317a4.js";import"./chunk-PRSJUHPQ-3cd6d9a8.js";import"./iframe-1bb49ffc.js";import"./index-350215a2.js";import"./index-356e4a49.js";const a=`# Fundamental Library Styles
+import{f as n}from"./IntroductionPage-3dcd3fe4.js";import{R as t}from"./IntroductionPageWrapper-0ed30de9.js";import{aq as s}from"./chunk-NUUEMKO5-710fafcc.js";/* empty css                   */import"./_commonjsHelpers-725317a4.js";import"./chunk-PRSJUHPQ-60592383.js";import"./iframe-28bbc892.js";import"./index-350215a2.js";import"./index-356e4a49.js";const a=`# Fundamental Library Styles
 
 <a href="https://badge.fury.io/js/fundamental-styles"><img src="https://badge.fury.io/js/fundamental-styles.svg" alt="NPM Version"/></a>
 <img src="https://github.com/SAP/fundamental-styles/actions/workflows/create-release.yml/badge.svg?branch=main" alt="CI Status"/>
@@ -97,53 +97,10 @@ list of icon class names. See Project Configuration below for instructions to in
 
 ### Project Configuration
 
-This project does not contain fonts and icons - they must be added to your project separately. Download the @sap-theming
-library. After adding fonts and icons to your project, include the following in your CSS:
+This project does not contain fonts and icons - they must be added to your project separately. Download the @sap-theming/theming-base-content library. After adding fonts and icons to your project, include the following in your CSS
+(The icon font files have different design for Fiori 3 themes and they can be found in the folder \`@sap-theming/theming-base-content/content/Base/baseLib/baseTheme/fonts/\`) as opposed to Horizon where the icons are stored in the subfolder fonts \`@sap-theming/theming-base-content/content/Base/sap_horizon/baseTheme/fonts/\`. It would require to include everything from \`@sap-theming/theming-base-content/content/Base/baseLib/\`.
 
-\`\`\`css
-@font-face {
-    font-family: "72";
-    src: url("~@sap-theming/theming-base-content/content/Base/baseLib/baseTheme/fonts/72-Regular-full.woff") format("woff");
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: "72";
-    src: url("~@sap-theming/theming-base-content/content/Base/baseLib/baseTheme/fonts/72-Bold-full.woff") format("woff");
-    font-weight: 700;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: "72";
-    src: url("~@sap-theming/theming-base-content/content/Base/baseLib/baseTheme/fonts/72-Light-full.woff") format("woff");
-    font-weight: 300;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: "SAP-icons";
-    src: url("~@sap-theming/theming-base-content/content/Base/baseLib/sap_horizon/fonts/SAP-icons.woff") format("woff");
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'BusinessSuiteInAppSymbols';
-    src: url('~@sap-theming/theming-base-content/content/Base/baseLib/sap_horizon/fonts/BusinessSuiteInAppSymbols.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'SAP-icons-TNT';
-    src: url('~@sap-theming/theming-base-content/content/Base/baseLib/sap_horizon/fonts/SAP-icons-TNT.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
-html {
+\`\`\`html {
     font-size: 16px;
 }
 \`\`\`
@@ -236,7 +193,7 @@ The following circumstances will NOT be considered a MAJOR or BREAKING change:
 
 Thanks to [Chromatic](https://www.chromatic.com/) for providing the visual testing platform that helps us review UI
 changes and catch visual regressions.
-`,d={title:"Introduction",component:()=>null,parameters:{docs:{container:s,page:t(a),theme:e},previewTabs:{canvas:{hidden:!0}},viewMode:"docs",visualDisabled:!0,docsOnly:!0}},n={render:()=>"<div></div>",parameters:{storyshots:{disable:!0},docsOnly:!0}};n.parameters={...n.parameters,docs:{...n.parameters?.docs,source:{originalSource:`{
+`,p={title:"Introduction",component:()=>null,parameters:{docs:{container:s,page:t(a),theme:n},previewTabs:{canvas:{hidden:!0}},viewMode:"docs",visualDisabled:!0,docsOnly:!0}},e={render:()=>"<div></div>",parameters:{storyshots:{disable:!0},docsOnly:!0}};e.parameters={...e.parameters,docs:{...e.parameters?.docs,source:{originalSource:`{
   render: () => {
     /*
       this will serve as default redirect to the docs page,
@@ -251,4 +208,4 @@ changes and catch visual regressions.
     },
     docsOnly: true
   }
-}`,...n.parameters?.docs?.source}}};const p=["Styles"];export{n as Styles,p as __namedExportsOrder,d as default};
+}`,...e.parameters?.docs?.source}}};const g=["Styles"];export{e as Styles,g as __namedExportsOrder,p as default};

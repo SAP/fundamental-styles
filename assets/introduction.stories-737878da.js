@@ -1,4 +1,4 @@
-import{f as n}from"./IntroductionPage-f4c12c9f.js";import{R as t}from"./IntroductionPageWrapper-56d28a04.js";import{aq as o}from"./chunk-NUUEMKO5-d257fb74.js";/* empty css                   */import"./_commonjsHelpers-725317a4.js";import"./chunk-PRSJUHPQ-3cd6d9a8.js";import"./iframe-1bb49ffc.js";import"./index-350215a2.js";import"./index-356e4a49.js";const a=`SAP UI Common CSS Package
+import{f as n}from"./IntroductionPage-3dcd3fe4.js";import{R as t}from"./IntroductionPageWrapper-0ed30de9.js";import{aq as o}from"./chunk-NUUEMKO5-710fafcc.js";/* empty css                   */import"./_commonjsHelpers-725317a4.js";import"./chunk-PRSJUHPQ-60592383.js";import"./iframe-28bbc892.js";import"./index-350215a2.js";import"./index-356e4a49.js";const a=`SAP UI Common CSS Package
 
 ## What is SAP UI Common CSS?
 

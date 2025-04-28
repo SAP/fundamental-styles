@@ -41,14 +41,14 @@
                         </ul>
                     </div>
                 </div>
-                <div class="fd-resizable-card-layout__icon-wrapper">
+                <div class="fd-resizable-card-layout__icon-wrapper" role="presentation" aria-hidden="true">
                     <div class="fd-resizable-card-layout__icon fd-resizable-card-layout__icon--vertical"></div>
                 </div>
             </div>
             <div class="fd-resizable-card-layout__resize--horizontal"></div>
         </div>
     </div>
-`,l=`<div id="grid1" class="fd-resizable-card-layout">
+`,t=`<div id="grid1" class="fd-resizable-card-layout">
         <div id="eight" class="fd-resizable-card-layout__item">
             <div class="fd-resizable-card-layout__resize--vertical"></div>
             <div class="fd-resizable-card-layout__card">
@@ -92,13 +92,13 @@
                         </ul>
                     </div>
                 </div>
-                <div class="fd-resizable-card-layout__icon-wrapper">
+                <div class="fd-resizable-card-layout__icon-wrapper" aria-hidden="true" role="presentation">
                     <div class="fd-resizable-card-layout__icon fd-resizable-card-layout__icon--horizontal"></div>
                 </div>
             </div>
         </div>
     </div>
-`,t=`<div id="grid1" class="fd-resizable-card-layout">
+`,n=`<div id="grid1" class="fd-resizable-card-layout">
         <div id="seven" class="fd-resizable-card-layout__item fd-resizable-card-layout__indication-border">
             <div class="fd-resizable-card-layout__resize--vertical"></div>
             <div class="fd-resizable-card-layout__card">
@@ -142,14 +142,14 @@
                         </ul>
                     </div>
                 </div>
-                <div class="fd-resizable-card-layout__icon-wrapper">
+                <div class="fd-resizable-card-layout__icon-wrapper" role="presentation" aria-hidden="true">
                     <div class="fd-resizable-card-layout__icon"></div>
                 </div>
             </div>
             <div class="fd-resizable-card-layout__resize--horizontal"></div>
         </div>
     </div>
-`,n=`<div id="layout1" class="fd-resizable-card-layout fd-resizable-card-layout--md fd-custom-resizable-card-layout-flex">
+`,l=`<div id="layout1" class="fd-resizable-card-layout fd-resizable-card-layout--md fd-custom-resizable-card-layout-flex">
         <div id="one" class="fd-resizable-card-layout__item card-one-dimensions">
             <div class="fd-resizable-card-layout__resize--vertical"></div>
             <div class="fd-resizable-card-layout__card">
@@ -189,7 +189,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="fd-resizable-card-layout__icon-wrapper">
+                <div class="fd-resizable-card-layout__icon-wrapper" role="presentation" aria-hidden="true">
                     <div class="fd-resizable-card-layout__icon"></div>
                 </div>
             </div>
@@ -224,7 +224,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="fd-resizable-card-layout__icon-wrapper">
+                <div class="fd-resizable-card-layout__icon-wrapper" role="presentation" aria-hidden="true">
                     <div class="fd-resizable-card-layout__icon"></div>
                 </div>
             </div>
@@ -274,7 +274,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="fd-resizable-card-layout__icon-wrapper">
+                <div class="fd-resizable-card-layout__icon-wrapper" role="presentation" aria-hidden="true">
                     <div class="fd-resizable-card-layout__icon"></div>
                 </div>
             </div>
@@ -320,7 +320,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="fd-resizable-card-layout__icon-wrapper">
+                <div class="fd-resizable-card-layout__icon-wrapper" role="presentation" aria-hidden="true">
                     <div class="fd-resizable-card-layout__icon"></div>
                 </div>
             </div>
@@ -397,7 +397,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="fd-resizable-card-layout__icon-wrapper">
+                <div class="fd-resizable-card-layout__icon-wrapper" role="presentation" aria-hidden="true">
                     <div class="fd-resizable-card-layout__icon"></div>
                 </div>
             </div>
@@ -477,7 +477,7 @@
                         </table>
                     </div>
                 </div>
-                <div class="fd-resizable-card-layout__icon-wrapper">
+                <div class="fd-resizable-card-layout__icon-wrapper" role="presentation" aria-hidden="true">
                     <div class="fd-resizable-card-layout__icon"></div>
                 </div>
             </div>
@@ -489,8 +489,8 @@
 This layout gives users much greater flexibility in tailoring the overview page to their specific business needs. And it allows app teams to offer varying levels of detail for any given card. Whenever the size of a card changes, the content adapts automatically to show the most relevant information in the available space.
 
 Cards can be resized vertically in rows of 1 rem and horizontally in steps of 20 rem (minimum width).
-        `,tags:["f3","theme","development"],components:["resizable-card-layout","button","avatar","badge","card","object-status","numeric-content","table","checkbox","list","link","icon"]}},a=()=>n;a.storyName="Resizable card layout";a.parameters={docs:{description:{story:`Resizable card layout with multiple cards.
-        `}}};const i=()=>t;i.storyName="Card resize in horizontal and vertical directions";i.parameters={docs:{description:{story:`Cards can be resized in horizontal direction as well as vertical direction. Resize handle will expand on right border for horizontal resize and bottom border for vertical resize.
-        `}}};const e=()=>l;e.storyName="Card resize in horizontal directions";e.parameters={docs:{description:{story:`Cards can also be resized in horizontal direction only. Resize handle will expand on right border.
+        `,tags:["f3","theme","development"],components:["resizable-card-layout","button","avatar","badge","card","object-status","numeric-content","table","checkbox","list","link","icon"]}},a=()=>l;a.storyName="Resizable card layout";a.parameters={docs:{description:{story:`Resizable card layout with multiple cards.
+        `}}};const i=()=>n;i.storyName="Card resize in horizontal and vertical directions";i.parameters={docs:{description:{story:`Cards can be resized in horizontal direction as well as vertical direction. Resize handle will expand on right border for horizontal resize and bottom border for vertical resize.
+        `}}};const e=()=>t;e.storyName="Card resize in horizontal directions";e.parameters={docs:{description:{story:`Cards can also be resized in horizontal direction only. Resize handle will expand on right border.
         `}}};const s=()=>d;s.storyName="Card resize in vertical directions";s.parameters={docs:{description:{story:`Cards can be resized in vertical direction only. Resize handle will expand on bottom border.
         `}}};a.parameters={...a.parameters,docs:{...a.parameters?.docs,source:{originalSource:"() => resizeCardLayoutExampleHtml",...a.parameters?.docs?.source}}};i.parameters={...i.parameters,docs:{...i.parameters?.docs,source:{originalSource:"() => resizeCardHorizontalVerticalDirectionExampleHtml",...i.parameters?.docs?.source}}};e.parameters={...e.parameters,docs:{...e.parameters?.docs,source:{originalSource:"() => resizeCardHorizontalDirectionExampleHtml",...e.parameters?.docs?.source}}};s.parameters={...s.parameters,docs:{...s.parameters?.docs,source:{originalSource:"() => resizeCardVerticalDirectionExampleHtml",...s.parameters?.docs?.source}}};const y=["ResizeCardLayout","ResizeCardHorizontalVerticalDirection","ResizeCardHorizontalDirection","ResizeCardVerticalDirection"];export{e as ResizeCardHorizontalDirection,i as ResizeCardHorizontalVerticalDirection,a as ResizeCardLayout,s as ResizeCardVerticalDirection,y as __namedExportsOrder,h as default};

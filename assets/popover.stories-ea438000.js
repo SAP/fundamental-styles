@@ -28,8 +28,9 @@
                         </li>
                     </ul>
                 </nav>
-                <span class="fd-popover__resize-handle"></span>
+                
             </div>
+            <span class="fd-popover__resize-handle" role="presentation" aria-hidden="true"></span>
         </div>
     </div>
 
@@ -62,8 +63,8 @@
                         </li>
                     </ul>
                 </nav>
-                <span class="fd-popover__resize-handle"></span>
             </div>
+            <span class="fd-popover__resize-handle" role="presentation" aria-hidden="true"></span>
         </div>
     </div>
 
@@ -96,8 +97,8 @@
                         </li>
                     </ul>
                 </nav>
-                <span class="fd-popover__resize-handle"></span>
             </div>
+            <span class="fd-popover__resize-handle" role="presentation" aria-hidden="true"></span>
         </div>
     </div>
 </div>
@@ -132,8 +133,8 @@
                         </li>
                     </ul>
                 </nav>
-                <span class="fd-popover__resize-handle"></span>
             </div>
+            <span class="fd-popover__resize-handle" role="presentation" aria-hidden="true"></span>
         </div>
     </div>
 
@@ -166,8 +167,8 @@
                         </li>
                     </ul>
                 </nav>
-                <span class="fd-popover__resize-handle"></span>
             </div>
+            <span class="fd-popover__resize-handle" role="presentation" aria-hidden="true"></span>
         </div>
     </div>
 </div>
@@ -202,8 +203,8 @@
                         </li>
                     </ul>
                 </nav>
-                <span class="fd-popover__resize-handle"></span>
             </div>
+            <span class="fd-popover__resize-handle" role="presentation" aria-hidden="true"></span>
         </div>
     </div>
 
@@ -236,8 +237,8 @@
                         </li>
                     </ul>
                 </nav>
-                <span class="fd-popover__resize-handle"></span>
             </div>
+            <span class="fd-popover__resize-handle" role="presentation" aria-hidden="true"></span>
         </div>
     </div>
 </div>
@@ -272,8 +273,8 @@
                         </li>
                     </ul>
                 </nav>
-                <span class="fd-popover__resize-handle"></span>
             </div>
+            <span class="fd-popover__resize-handle" role="presentation" aria-hidden="true"></span>
         </div>
     </div>
 
@@ -306,8 +307,8 @@
                         </li>
                     </ul>
                 </nav>
-                <span class="fd-popover__resize-handle"></span>
             </div>
+            <span class="fd-popover__resize-handle" role="presentation" aria-hidden="true"></span>
         </div>
     </div>
 </div>
@@ -342,8 +343,8 @@
                         </li>
                     </ul>
                 </nav>
-                <span class="fd-popover__resize-handle"></span>
             </div>
+            <span class="fd-popover__resize-handle" role="presentation" aria-hidden="true"></span>
         </div>
     </div>
 
@@ -376,8 +377,8 @@
                         </li>
                     </ul>
                 </nav>
-                <span class="fd-popover__resize-handle"></span>
             </div>
+            <span class="fd-popover__resize-handle" role="presentation" aria-hidden="true"></span>
         </div>
     </div>
 
@@ -410,8 +411,8 @@
                         </li>
                     </ul>
                 </nav>
-                <span class="fd-popover__resize-handle"></span>
             </div>
+            <span class="fd-popover__resize-handle" role="presentation" aria-hidden="true"></span>
         </div>
     </div>
 </div>
@@ -1263,7 +1264,7 @@
 
 `,tags:["f3","a11y","theme"]}},n=()=>c;n.storyName="Body variants";n.parameters={docs:{description:{story:`There are several variants of the popover body that can be displayed depending on the use case.
 
-Variant | Modifier class | Description
+| Variant | Modifier class | Description
 :------ | :------------- | :---------------
 Header | \`fd-popover__body-header\` | To display a header.
 Footer | \`fd-popover__body-footer\` | To display a footer with actions.

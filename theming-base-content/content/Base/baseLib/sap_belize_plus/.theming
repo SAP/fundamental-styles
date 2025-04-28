@@ -10,7 +10,8 @@
 		"sap_belize"
 	],
 	"sTextDirections": "LTR,RTL",
-	"sFallbackThemeId": "sap_bluecrystal",
+	"sFallbackThemeId": "sap_belize",
+	"sFlavorFallbackThemeId": "sap_horizon_dark",
 	"sType": "STANDARD",
 	"sThemability": "PRIVATE",
 	"mCssScopes": {

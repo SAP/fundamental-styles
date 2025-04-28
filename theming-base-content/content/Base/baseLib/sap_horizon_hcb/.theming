@@ -7,7 +7,8 @@
 	"sVendor": "SAP",
 	"oExtends": "Base.baseLib.sap_horizon",
 	"sTextDirections": "LTR,RTL",
-	"sFallbackThemeId": "sap_horizon",
+	"sFallbackThemeId": "sap_fiori_3_hcb",
+	"sFlavorFallbackThemeId": "sap_horizon_hcb",
 	"sType": "STANDARD",
 	"sThemability": "PUBLIC",
 	"aTags": [

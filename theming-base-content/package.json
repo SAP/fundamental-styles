@@ -1,6 +1,6 @@
 {
   "name": "@sap-theming/theming-base-content",
-  "version": "11.29.0",
+  "version": "11.29.3",
   "description": "Theming Base Content",
   "author": "SAP SE (https://www.sap.com)",
   "main": "index.cjs",

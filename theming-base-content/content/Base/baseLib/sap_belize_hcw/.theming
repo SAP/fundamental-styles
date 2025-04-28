@@ -7,7 +7,8 @@
 	"sVendor": "SAP",
 	"oExtends": "Base.baseLib.sap_belize_hcb",
 	"sTextDirections": "LTR,RTL",
-	"sFallbackThemeId": "sap_belize",
+	"sFallbackThemeId": "sap_hcb",
+	"sFlavorFallbackThemeId": "sap_horizon_hcw",
 	"sType": "STANDARD",
 	"sThemability": "PUBLIC",
 	"aTags": [
