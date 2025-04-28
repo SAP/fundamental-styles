@@ -47,42 +47,36 @@ $block: #{$fd-namespace}-resizable-card-layout;
 
   &__icon-wrapper {
     @include fd-reset();
+    @include fd-square(1.5rem);
+    @include fd-set-position-right(-0.35rem);
 
-    width: 1rem;
-    height: 1rem;
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    z-index: $fd-resize-handle-index;
-    padding-block: 0 $fd-resize-icon-padding;
-    padding-inline: 0 $fd-resize-icon-padding;
-
-    @include fd-rtl() {
-      right: auto;
-      left: 0;
+    @include fd-flex() {
+      align-items: flex-start;
+      justify-content: flex-start;
     }
+
+    bottom: -0.35rem;
+    position: absolute;
+    z-index: $fd-resize-handle-index;
   }
 
   &__icon {
     @include fd-reset();
+    @include fd-square(1rem);
     @include fd-icon("resize-corner");
+    @include fd-flex-center();
 
     font-family: SAP-icons;
     font-size: 1rem;
     line-height: 1rem;
     cursor: nwse-resize;
     position: absolute;
-    bottom: 0;
-    right: $fd-resize-icon-padding;
-    color: var(--sapButton_IconColor);
+    color: var(--sapButton_Lite_TextColor);
     z-index: $fd-resize-handle-index;
 
     @include fd-rtl() {
       transform: rotate(90deg);
-      position: relative;
       cursor: nesw-resize;
-      padding-block: 0 $fd-resize-icon-padding;
-      padding-inline: $fd-resize-icon-padding 0.5rem;
     }
 
     &--vertical {

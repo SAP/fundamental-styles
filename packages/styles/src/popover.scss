@@ -80,13 +80,14 @@ body.fd-overlay-active::before {
     --fdPopover_Body_Box_Shadow_No_Arrow: var(--sapContent_Shadow1);
     --fdIcon_Button_Height: 2.25rem;
     --fdIcon_Button_Width: 2.25rem;
+    --fdPopover_Resize_Handle_Offset: -0.5rem;
     --fdPopover_Resize_Handle_Position_Top: auto;
-    --fdPopover_Resize_Handle_Position_Right: 0;
-    --fdPopover_Resize_Handle_Position_Bottom: 0;
+    --fdPopover_Resize_Handle_Position_Right: var(--fdPopover_Resize_Handle_Offset);
+    --fdPopover_Resize_Handle_Position_Bottom: var(--fdPopover_Resize_Handle_Offset);
     --fdPopover_Resize_Handle_Position_Left: auto;
     --fdPopover_Resize_Handle_Rotate_Angle: 0;
     --fdPopover_Resize_Handle_Cursor: se-resize;
-    --fdPopover_Resize_Handle_Justify: flex-end;
+    --fdPopover_Resize_Handle_Justify: center;
     --fdPopover_Resize_Handle_Transform_Scale: 1;
 
     $fd-popover-z-index: map.get($fd-z-index-levels, 'top') !default;
@@ -169,7 +170,7 @@ body.fd-overlay-active::before {
       border-top-left-radius: $fd-popover-border-radius;
     }
 
-    > *:last-child,
+    > *:last-child:not(.#{$block}__resize-handle),
     &-footer > *:last-child {
       border-bottom-right-radius: $fd-popover-border-radius;
       border-bottom-left-radius: $fd-popover-border-radius;
@@ -410,20 +411,20 @@ body.fd-overlay-active::before {
     &.#{$blockBody}--resizable {
       @include fd-rtl() {
         --fdPopover_Resize_Handle_Position_Right: auto;
-        --fdPopover_Resize_Handle_Position_Left: 0;
+        --fdPopover_Resize_Handle_Position_Left: var(--fdPopover_Resize_Handle_Offset);
         --fdPopover_Resize_Handle_Cursor: sw-resize;
         --fdPopover_Resize_Handle_Transform_Scale: -1;
-        --fdPopover_Resize_Handle_Justify: flex-start;
       }
 
       &.#{$blockBody}--right {
-        --fdPopover_Resize_Handle_Position_Left: 0;
+        --fdPopover_Resize_Handle_Position_Left: var(--fdPopover_Resize_Handle_Offset);
         --fdPopover_Resize_Handle_Position_Right: auto;
         --fdPopover_Resize_Handle_Cursor: sw-resize;
         --fdPopover_Resize_Handle_Transform_Scale: -1;
+        --fdPopover_Resize_Handle_Container_Justify: flex-end;
 
         @include fd-rtl() {
-          --fdPopover_Resize_Handle_Position_Right: 0;
+          --fdPopover_Resize_Handle_Position_Right: var(--fdPopover_Resize_Handle_Offset);
           --fdPopover_Resize_Handle_Position_Left: auto;
           --fdPopover_Resize_Handle_Cursor: se-resize;
           --fdPopover_Resize_Handle_Transform_Scale: 1;
@@ -431,9 +432,9 @@ body.fd-overlay-active::before {
       }
 
       &.#{$blockBody}--above {
-        --fdPopover_Resize_Handle_Position_Top: 0;
+        --fdPopover_Resize_Handle_Position_Top: var(--fdPopover_Resize_Handle_Offset);
         --fdPopover_Resize_Handle_Position_Bottom: auto;
-        --fdPopover_Resize_Handle_Position_Right: 0;
+        --fdPopover_Resize_Handle_Position_Right: -0.5rem;
         --fdPopover_Resize_Handle_Position_Left: auto;
         --fdPopover_Resize_Handle_Cursor: ne-resize;
         --fdPopover_Resize_Handle_Rotate_Angle: -90deg;
@@ -441,32 +442,35 @@ body.fd-overlay-active::before {
 
         @include fd-rtl() {
           --fdPopover_Resize_Handle_Position_Right: auto;
-          --fdPopover_Resize_Handle_Position_Left: 0;
+          --fdPopover_Resize_Handle_Position_Left: var(--fdPopover_Resize_Handle_Offset);
           --fdPopover_Resize_Handle_Cursor: nw-resize;
           --fdPopover_Resize_Handle_Transform_Scale: 1;
           --fdPopover_Resize_Handle_Rotate_Angle: 180deg;
+          --fdPopover_Resize_Handle_Container_Justify: flex-end;
         }
 
         &.#{$blockBody}--right {
           --fdPopover_Resize_Handle_Position_Right: auto;
-          --fdPopover_Resize_Handle_Position_Left: 0;
+          --fdPopover_Resize_Handle_Position_Left: var(--fdPopover_Resize_Handle_Offset);
           --fdPopover_Resize_Handle_Rotate_Angle: 180deg;
           --fdPopover_Resize_Handle_Cursor: nw-resize;
           --fdPopover_Resize_Handle_Transform_Scale: 1;
+          --fdPopover_Resize_Handle_Container_Justify: flex-start;
 
           @include fd-rtl() {
-            --fdPopover_Resize_Handle_Position_Right: 0;
+            --fdPopover_Resize_Handle_Position_Right: var(--fdPopover_Resize_Handle_Offset);
             --fdPopover_Resize_Handle_Position_Left: auto;
             --fdPopover_Resize_Handle_Rotate_Angle: -90deg;
             --fdPopover_Resize_Handle_Cursor: ne-resize;
+            --fdPopover_Resize_Handle_Container_Justify: flex-end;
           }
         }
       }
 
       &.#{$blockBody}--after {
         --fdPopover_Resize_Handle_Position_Top: auto;
-        --fdPopover_Resize_Handle_Position_Bottom: 0;
-        --fdPopover_Resize_Handle_Position_Right: 0;
+        --fdPopover_Resize_Handle_Position_Bottom: var(--fdPopover_Resize_Handle_Offset);
+        --fdPopover_Resize_Handle_Position_Right: var(--fdPopover_Resize_Handle_Offset);
         --fdPopover_Resize_Handle_Position_Left: auto;
         --fdPopover_Resize_Handle_Cursor: se-resize;
 
@@ -475,28 +479,37 @@ body.fd-overlay-active::before {
         }
 
         &.#{$blockBody}--bottom {
-          --fdPopover_Resize_Handle_Position_Top: 0;
+          --fdPopover_Resize_Handle_Position_Top: var(--fdPopover_Resize_Handle_Offset);
           --fdPopover_Resize_Handle_Position_Bottom: auto;
-          --fdPopover_Resize_Handle_Position_Right: 0;
+          --fdPopover_Resize_Handle_Position_Right: var(--fdPopover_Resize_Handle_Offset);
           --fdPopover_Resize_Handle_Position_Left: auto;
           --fdPopover_Resize_Handle_Cursor: ne-resize;
           --fdPopover_Resize_Handle_Rotate_Angle: -90deg;
           --fdPopover_Resize_Handle_Transform_Scale: 1;
+
+          @include fd-rtl() {
+            --fdPopover_Resize_Handle_Container_Justify: flex-end;;
+          }
         }
       }
 
       &.#{$blockBody}--before {
         --fdPopover_Resize_Handle_Position_Top: auto;
-        --fdPopover_Resize_Handle_Position_Bottom: 0;
+        --fdPopover_Resize_Handle_Position_Bottom: var(--fdPopover_Resize_Handle_Offset);
         --fdPopover_Resize_Handle_Position_Right: auto;
-        --fdPopover_Resize_Handle_Position_Left: 0;
+        --fdPopover_Resize_Handle_Position_Left: var(--fdPopover_Resize_Handle_Offset);
         --fdPopover_Resize_Handle_Cursor: sw-resize;
         --fdPopover_Resize_Handle_Rotate_Angle: 0;
         --fdPopover_Resize_Handle_Transform_Scale: -1;
+        --fdPopover_Resize_Handle_Container_Justify: flex-end;
+
+        @include fd-rtl() {
+          --fdPopover_Resize_Handle_Container_Justify: flex-start;;
+        }
 
         &.#{$blockBody}--middle,
         &.#{$blockBody}--bottom {
-          --fdPopover_Resize_Handle_Position_Top: 0;
+          --fdPopover_Resize_Handle_Position_Top: var(--fdPopover_Resize_Handle_Offset);
           --fdPopover_Resize_Handle_Position_Bottom: auto;
           --fdPopover_Resize_Handle_Rotate_Angle: 90deg;
           --fdPopover_Resize_Handle_Cursor: nw-resize;
@@ -507,25 +520,24 @@ body.fd-overlay-active::before {
 
   &__resize-handle {
     @include fd-reset();
+    @include fd-square(1.5rem);
 
     @include fd-flex() {
-      justify-content: flex-end;
+      align-items: flex-start;
+      justify-content: var(--fdPopover_Resize_Handle_Container_Justify, flex-start);
     }
 
     font-size: 1rem;
     overflow: hidden;
     line-height: 1rem;
     position: absolute;
-    padding-block: 0.125rem;
-    padding-inline: 0.125rem;
     color: var(--sapButton_Lite_TextColor);
     cursor: var(--fdPopover_Resize_Handle_Cursor);
     inset: var(--fdPopover_Resize_Handle_Position_Top) var(--fdPopover_Resize_Handle_Position_Right) var(--fdPopover_Resize_Handle_Position_Bottom) var(--fdPopover_Resize_Handle_Position_Left);
     transform: rotate(var(--fdPopover_Resize_Handle_Rotate_Angle));
 
     @include fd-icon('resize-corner', 'after') {
-      @include fd-set-width(1rem);
-      @include fd-set-height(1rem);
+      @include fd-square(1rem);
 
       @include fd-flex() {
         justify-content: var(--fdPopover_Resize_Handle_Justify);
