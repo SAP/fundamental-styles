@@ -4958,7 +4958,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@testing-library/dom@npm:10.4.0, @testing-library/dom@npm:^10.0.0":
+"@testing-library/dom@npm:10.4.0":
   version: 10.4.0
   resolution: "@testing-library/dom@npm:10.4.0"
   dependencies:
@@ -4989,21 +4989,23 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@testing-library/react@npm:15.0.6":
-  version: 15.0.6
-  resolution: "@testing-library/react@npm:15.0.6"
+"@testing-library/react@npm:16.3.0":
+  version: 16.3.0
+  resolution: "@testing-library/react@npm:16.3.0"
   dependencies:
     "@babel/runtime": "npm:^7.12.5"
-    "@testing-library/dom": "npm:^10.0.0"
-    "@types/react-dom": "npm:^18.0.0"
   peerDependencies:
-    "@types/react": ^18.0.0
-    react: ^18.0.0
-    react-dom: ^18.0.0
+    "@testing-library/dom": ^10.0.0
+    "@types/react": ^18.0.0 || ^19.0.0
+    "@types/react-dom": ^18.0.0 || ^19.0.0
+    react: ^18.0.0 || ^19.0.0
+    react-dom: ^18.0.0 || ^19.0.0
   peerDependenciesMeta:
     "@types/react":
       optional: true
-  checksum: 10/04f63fc8e1d32ca9ce387df87abbdbe1d1e8bd7343d305a3d4662e60133453a4a39f5b0e1653efbfe9516750ca559c27a9ace4740f4c3e24a49270acaf93084d
+    "@types/react-dom":
+      optional: true
+  checksum: 10/0ee9e31dd0d2396a924682d0e61a4ecc6bfab8eaff23dbf8a72c3c2ce22c116fa578148baeb4de75b968ef99d22e6e6aa0a00dba40286f71184918bb6bb5b06a
   languageName: node
   linkType: hard
 
@@ -5342,15 +5344,6 @@ __metadata:
   dependencies:
     "@types/react": "npm:*"
   checksum: 10/6ff53f5a7b7fba952a68e114d3b542ebdc1e87a794234785ebab0bcd9bde7fb4885f21ebaf93d26dc0a1b5b93287f42cad68b78ae04dddf6b20da7aceff0beaf
-  languageName: node
-  linkType: hard
-
-"@types/react-dom@npm:^18.0.0":
-  version: 18.3.6
-  resolution: "@types/react-dom@npm:18.3.6"
-  peerDependencies:
-    "@types/react": ^18.0.0
-  checksum: 10/ae179355401c64423d39946eda22c5f7f74c94ce61c21505024d4d82c33853ec40bc9b370f75e4a7750b0524aba4d95a43fcc328d8d14684dc2abb41ba529de8
   languageName: node
   linkType: hard
 
@@ -10713,7 +10706,7 @@ __metadata:
     "@storybook/preview-api": "npm:^8.6.12"
     "@storybook/theming": "npm:^8.6.12"
     "@swc/core": "npm:1.5.7"
-    "@testing-library/react": "npm:15.0.6"
+    "@testing-library/react": "npm:16.3.0"
     "@types/fs-extra": "npm:11.0.4"
     "@types/node": "npm:18.19.14"
     "@types/react": "npm:18.3.1"
