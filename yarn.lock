@@ -3667,6 +3667,24 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@nx/devkit@npm:20.8.1":
+  version: 20.8.1
+  resolution: "@nx/devkit@npm:20.8.1"
+  dependencies:
+    ejs: "npm:^3.1.7"
+    enquirer: "npm:~2.3.6"
+    ignore: "npm:^5.0.4"
+    minimatch: "npm:9.0.3"
+    semver: "npm:^7.5.3"
+    tmp: "npm:~0.2.1"
+    tslib: "npm:^2.3.0"
+    yargs-parser: "npm:21.1.1"
+  peerDependencies:
+    nx: ">= 19 <= 21"
+  checksum: 10/44afeb472f68da8da6624bbbb37277201ef3ef65932fe8dacfb27492f41381bd0df2d18fa582edbaa1be4ac57cae14d17e046072c53ef718237e4c1e5689e640
+  languageName: node
+  linkType: hard
+
 "@nx/eslint-plugin@npm:20.8.0":
   version: 20.8.0
   resolution: "@nx/eslint-plugin@npm:20.8.0"
@@ -3772,6 +3790,48 @@ __metadata:
     verdaccio:
       optional: true
   checksum: 10/fd13819e13ce746ba5ea5612b275372ff44f034d0515052486ae271ad63f1ab4d774f1279aef021437f73e97c2d68b4992cb5e7a62d7a607c1f28fd3007a08b9
+  languageName: node
+  linkType: hard
+
+"@nx/js@npm:20.8.1":
+  version: 20.8.1
+  resolution: "@nx/js@npm:20.8.1"
+  dependencies:
+    "@babel/core": "npm:^7.23.2"
+    "@babel/plugin-proposal-decorators": "npm:^7.22.7"
+    "@babel/plugin-transform-class-properties": "npm:^7.22.5"
+    "@babel/plugin-transform-runtime": "npm:^7.23.2"
+    "@babel/preset-env": "npm:^7.23.2"
+    "@babel/preset-typescript": "npm:^7.22.5"
+    "@babel/runtime": "npm:^7.22.6"
+    "@nx/devkit": "npm:20.8.1"
+    "@nx/workspace": "npm:20.8.1"
+    "@zkochan/js-yaml": "npm:0.0.7"
+    babel-plugin-const-enum: "npm:^1.0.1"
+    babel-plugin-macros: "npm:^3.1.0"
+    babel-plugin-transform-typescript-metadata: "npm:^0.3.1"
+    chalk: "npm:^4.1.0"
+    columnify: "npm:^1.6.0"
+    detect-port: "npm:^1.5.1"
+    enquirer: "npm:~2.3.6"
+    ignore: "npm:^5.0.4"
+    js-tokens: "npm:^4.0.0"
+    jsonc-parser: "npm:3.2.0"
+    npm-package-arg: "npm:11.0.1"
+    npm-run-path: "npm:^4.0.1"
+    ora: "npm:5.3.0"
+    picocolors: "npm:^1.1.0"
+    picomatch: "npm:4.0.2"
+    semver: "npm:^7.5.3"
+    source-map-support: "npm:0.5.19"
+    tinyglobby: "npm:^0.2.12"
+    tslib: "npm:^2.3.0"
+  peerDependencies:
+    verdaccio: ^6.0.5
+  peerDependenciesMeta:
+    verdaccio:
+      optional: true
+  checksum: 10/6d8b950f83cb5a43ca1b3586a32842a239f938a35c5e4f0c8086f53c4e5f94874361c8702be58407a28d8a7a6625acc1977affce701e911035880c380dae2d8e
   languageName: node
   linkType: hard
 
@@ -3927,6 +3987,22 @@ __metadata:
     tslib: "npm:^2.3.0"
     yargs-parser: "npm:21.1.1"
   checksum: 10/529c1616790e49f566f2bd70ad8398010d74b3c614f98f1cb901c4bb6cfeed871c0bfb7e8c2e1d27bcc03edf8997ac08f39e87183de3b2e69575edd231fcf94d
+  languageName: node
+  linkType: hard
+
+"@nx/workspace@npm:20.8.1":
+  version: 20.8.1
+  resolution: "@nx/workspace@npm:20.8.1"
+  dependencies:
+    "@nx/devkit": "npm:20.8.1"
+    "@zkochan/js-yaml": "npm:0.0.7"
+    chalk: "npm:^4.1.0"
+    enquirer: "npm:~2.3.6"
+    nx: "npm:20.8.1"
+    picomatch: "npm:4.0.2"
+    tslib: "npm:^2.3.0"
+    yargs-parser: "npm:21.1.1"
+  checksum: 10/e5ea060c5821480d4c805d9d870aef9937660eb1811abc77095bbb357a86e9f20e24dfbe55c82460e4fddadbffea7c1175db5f52436cbd55b91b1525d118f478
   languageName: node
   linkType: hard
 
@@ -10689,7 +10765,7 @@ __metadata:
     "@nx/devkit": "npm:20.8.0"
     "@nx/eslint": "npm:20.8.0"
     "@nx/eslint-plugin": "npm:20.8.0"
-    "@nx/js": "npm:20.8.0"
+    "@nx/js": "npm:20.8.1"
     "@nx/plugin": "npm:20.8.0"
     "@nx/react": "npm:20.8.0"
     "@nx/web": "npm:20.8.0"

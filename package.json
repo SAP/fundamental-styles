@@ -53,7 +53,7 @@
         "@nx/devkit": "20.8.0",
         "@nx/eslint": "20.8.0",
         "@nx/eslint-plugin": "20.8.0",
-        "@nx/js": "20.8.0",
+        "@nx/js": "20.8.1",
         "@nx/plugin": "20.8.0",
         "@nx/react": "20.8.0",
         "@nx/web": "20.8.0",
