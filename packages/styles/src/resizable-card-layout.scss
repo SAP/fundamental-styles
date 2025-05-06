@@ -48,16 +48,22 @@ $block: #{$fd-namespace}-resizable-card-layout;
   &__icon-wrapper {
     @include fd-reset();
     @include fd-square(1.5rem);
-    @include fd-set-position-right(-0.35rem);
 
     @include fd-flex() {
       align-items: flex-start;
       justify-content: flex-start;
     }
 
+    right: 0;
     bottom: -0.35rem;
     position: absolute;
     z-index: $fd-resize-handle-index;
+
+    @include fd-rtl() {
+      bottom: -0.125rem;
+      right: auto;
+      left: -0.25rem;
+    }
   }
 
   &__icon {
@@ -66,6 +72,8 @@ $block: #{$fd-namespace}-resizable-card-layout;
     @include fd-icon("resize-corner");
     @include fd-flex-center();
 
+    width: 100%;
+    height: 100%;
     font-family: SAP-icons;
     font-size: 1rem;
     line-height: 1rem;
@@ -73,6 +81,11 @@ $block: #{$fd-namespace}-resizable-card-layout;
     position: absolute;
     color: var(--sapButton_Lite_TextColor);
     z-index: $fd-resize-handle-index;
+
+    &::before {
+      width: 100%;
+      height: 100%;
+    }
 
     @include fd-rtl() {
       transform: rotate(90deg);
