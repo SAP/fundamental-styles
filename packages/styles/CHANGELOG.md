@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.40.1-rc.1](https://github.com/SAP/fundamental-styles/compare/v0.40.1-rc.0...v0.40.1-rc.1) (2025-05-06)
+
+### Bug Fixes
+
+- **styles:** minor update for the resize handle in Card Layout [ci visual] ([#6051](https://github.com/SAP/fundamental-styles/issues/6051)) ([c5ce1d7](https://github.com/SAP/fundamental-styles/commit/c5ce1d739c2167946085c63cdc32785f4c13ed8c))
+
 ## [0.40.1-rc.0](https://github.com/SAP/fundamental-styles/compare/v0.40.0...v0.40.1-rc.0) (2025-05-06)
 
 **Note:** Version bump only for package fundamental-styles
