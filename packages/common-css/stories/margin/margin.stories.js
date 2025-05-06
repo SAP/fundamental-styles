@@ -1,5 +1,4 @@
 import '../../src/sap-margin.scss';
-import description from './margin.story.description.html?raw';
 import allRoundMarginExampleHtml from './all-round-margin.example.html?raw';
 import topMarginExampleHtml from './top-margin.example.html?raw';
 import bottomMarginExampleHtml from './bottom-margin.example.html?raw';
@@ -13,7 +12,74 @@ import negativeMarginExampleHtml from './negative-margin.example.html?raw';
 export default {
   title: 'Margins',
   parameters: {
-    description
+    description: `The CSS margin properties are used to create space around elements, outside of any defined borders. <br><br>
+<h2>Helper mixins: </h2>
+
+<table style="width: 100%; border-collapse: collapse; margin-top: 1rem;">
+    <thead>
+
+    <tr>
+        <th style="padding: 0.25rem 0.75rem;">Mixin</th>
+        <th style="padding: 0.25rem 0.75rem;">Resultant CSS</th>
+        <th style="padding: 0.25rem 0.75rem;">$value</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td style="padding: 0.25rem 0.75rem;">@include sap-set-margin-all($value)</td>
+        <td style="padding: 0.25rem 0.75rem;">margin: $value;</td>
+        <td style="padding: 0.25rem 0.75rem;">defined by the user</td>
+    </tr>
+    <tr>
+        <td style="padding: 0.25rem 0.75rem;">@include sap-set-margin-top($value)</td>
+        <td style="padding: 0.25rem 0.75rem;">margin-top: $value;</td>
+        <td style="padding: 0.25rem 0.75rem;">defined by the user</td>
+    </tr>
+    <tr>
+        <td style="padding: 0.25rem 0.75rem;">@include sap-set-margin-bottom($value)</td>
+        <td style="padding: 0.25rem 0.75rem;">margin-bottom: $value;</td>
+        <td style="padding: 0.25rem 0.75rem;">defined by the user</td>
+    </tr>
+    <tr>
+        <td style="padding: 0.25rem 0.75rem;">@include sap-set-margin-begin($value)</td>
+        <td style="padding: 0.25rem 0.75rem;">margin-left: $value;</td>
+        <td style="padding: 0.25rem 0.75rem;">defined by the user</td>
+    </tr>
+    <tr>
+        <td style="padding: 0.25rem 0.75rem;">@include sap-set-margin-end($value)</td>
+        <td style="padding: 0.25rem 0.75rem;">margin-right: $value;</td>
+        <td style="padding: 0.25rem 0.75rem;">defined by the user</td>
+    </tr>
+    <tr>
+        <td style="padding: 0.25rem 0.75rem;">@include sap-set-margin-x-equal($value)</td>
+        <td style="padding: 0.25rem 0.75rem;">margin-right: $value; <br>margin-left: $value;</td>
+        <td style="padding: 0.25rem 0.75rem;">defined by the user</td>
+    </tr>
+    <tr>
+        <td style="padding: 0.25rem 0.75rem;">@include sap-set-margin-y-equal($value)</td>
+        <td style="padding: 0.25rem 0.75rem;">margin-top: $value; <br>margin-bottom: $value;</td>
+        <td style="padding: 0.25rem 0.75rem;">defined by the user</td>
+    </tr>
+    <tr>
+        <td style="padding: 0.25rem 0.75rem;">@include sap-set-margin-x($valueLeft, $valueRight)</td>
+        <td style="padding: 0.25rem 0.75rem;">margin-left: $valueLeft;<br>margin-right: $valueRight;</td>
+        <td style="padding: 0.25rem 0.75rem;">defined by the user</td>
+    </tr>
+    <tr>
+        <td style="padding: 0.25rem 0.75rem;">@include sap-set-margin-y($valueTop, $valueBottom)</td>
+        <td style="padding: 0.25rem 0.75rem;">margin-top: $valueTop;<br>margin-bottom: $valueBottom;</td>
+        <td style="padding: 0.25rem 0.75rem;">defined by the user</td>
+    </tr>
+    <tr>
+        <td style="padding: 0.25rem 0.75rem;">@include sap-margin($value, $side)</td>
+        <td style="padding: 0.25rem 0.75rem;">based on parameters</td>
+        <td style="padding: 0.25rem 0.75rem;">$value:tiny,small,<br> medium,large<br> or defined by the user <br> $side:
+            top, bottom, begin, end, x, y
+        </td>
+    </tr>
+    </tbody>
+</table>
+`
   }
 };
 const localStyles = `
@@ -35,35 +101,36 @@ AllRoundMargin.storyName = 'All-Round Margins';
 AllRoundMargin.parameters = {
   docs: {
     description: {
-      story: `All-round margins appear on all sides of the element they are applied to.
-            <table style="width: 100%; border-collapse: collapse; margin-top: 1rem;">
-                <tr>
-                    <th style="padding: 0.25rem;">Type</th>
-                    <th style="padding: 0.25rem;">Class</th>
-                    <th style="padding: 0.25rem;">Mixin</th>
-                </tr>
-                <tr>
-                    <td style="padding: 0.25rem;">Tiny (0.5rem)</td>
-                    <td style="padding: 0.25rem;">.sap-margin-tiny</td>
-                    <td style="padding: 0.25rem;">@include sap-margin(tiny)</td>
-                </tr>
-                <tr>
-                    <td style="padding: 0.25rem;">Small (1rem)</td>
-                    <td style="padding: 0.25rem;">.sap-margin-small</td>
-                    <td style="padding: 0.25rem;">@include sap-margin(small)</td>
-                </tr>
-                <tr>
-                    <td style="padding: 0.25rem;">Medium (2rem)</td>
-                    <td style="padding: 0.25rem;">.sap-margin-medium</td>
-                    <td style="padding: 0.25rem;">@include sap-margin(medium)</td>
-                </tr>
-                <tr>
-                    <td style="padding: 0.25rem;">Large (3rem)</td>
-                    <td style="padding: 0.25rem;">.sap-margin-large</td>
-                    <td style="padding: 0.25rem;">@include sap-margin(large)</td>
-                </tr>
-                
-            </table>`
+      story: `All-round margins appear on all sides of the element they are applied to. 
+
+<table style="width: 100%; border-collapse: collapse; margin-top: 1rem;">
+    <tr>
+        <th style="padding: 0.25rem;">Type</th>
+        <th style="padding: 0.25rem;">Class</th>
+        <th style="padding: 0.25rem;">Mixin</th>
+    </tr>
+    <tr>
+        <td style="padding: 0.25rem;">Tiny (0.5rem)</td>
+        <td style="padding: 0.25rem;">.sap-margin-tiny</td>
+        <td style="padding: 0.25rem;">@include sap-margin(tiny)</td>
+    </tr>
+    <tr>
+        <td style="padding: 0.25rem;">Small (1rem)</td>
+        <td style="padding: 0.25rem;">.sap-margin-small</td>
+        <td style="padding: 0.25rem;">@include sap-margin(small)</td>
+    </tr>
+    <tr>
+        <td style="padding: 0.25rem;">Medium (2rem)</td>
+        <td style="padding: 0.25rem;">.sap-margin-medium</td>
+        <td style="padding: 0.25rem;">@include sap-margin(medium)</td>
+    </tr>
+    <tr>
+        <td style="padding: 0.25rem;">Large (3rem)</td>
+        <td style="padding: 0.25rem;">.sap-margin-large</td>
+        <td style="padding: 0.25rem;">@include sap-margin(large)</td>
+    </tr>
+    
+</table>`
     }
   }
 };
