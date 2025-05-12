@@ -1,4 +1,4 @@
-import{f as n}from"./IntroductionPage-3dcd3fe4.js";import{R as t}from"./IntroductionPageWrapper-0ed30de9.js";import{aq as s}from"./chunk-NUUEMKO5-710fafcc.js";/* empty css                   */import"./_commonjsHelpers-725317a4.js";import"./chunk-PRSJUHPQ-60592383.js";import"./iframe-28bbc892.js";import"./index-350215a2.js";import"./index-356e4a49.js";const a=`# Fundamental Library Styles
+import{f as n}from"./IntroductionPage-ef32e032.js";import{R as t}from"./IntroductionPageWrapper-531eac8c.js";import{aq as s}from"./chunk-NUUEMKO5-acb60f50.js";/* empty css                   */import"./_commonjsHelpers-725317a4.js";import"./chunk-PRSJUHPQ-2b7ff689.js";import"./iframe-7f8d04d3.js";import"./index-350215a2.js";import"./index-356e4a49.js";const a=`# Fundamental Library Styles
 
 <a href="https://badge.fury.io/js/fundamental-styles"><img src="https://badge.fury.io/js/fundamental-styles.svg" alt="NPM Version"/></a>
 <img src="https://github.com/SAP/fundamental-styles/actions/workflows/create-release.yml/badge.svg?branch=main" alt="CI Status"/>
