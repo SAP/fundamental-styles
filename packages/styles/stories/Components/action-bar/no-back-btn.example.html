@@ -1,12 +1,12 @@
-<div class="fd-action-bar">
+<div class="fd-action-bar" role="banner" aria-labelledby="action-bar-title-2" aria-describedby="action-bar-desc-2">
     <div class="fd-action-bar__header">
         <div class="fd-action-bar__title">
-            <h1 class="fd-title fd-title--h3">Page Title</h1>
+            <h1 id="action-bar-title-2" class="fd-title fd-title--h3">Page Title</h1>
         </div>
-        <div class="fd-action-bar__actions">
-            <button aria-label="button"class="fd-button">Button</button>
-            <button aria-label="button"class="fd-button fd-button--emphasized">Button</button>
+        <div class="fd-action-bar__actions" role="group" aria-label="Page actions">
+            <button type="button" aria-label="Save" class="fd-button">Save</button>
+            <button type="button" aria-label="Submit" class="fd-button fd-button--emphasized">Submit</button>
         </div>
     </div>
-    <p class="fd-action-bar__description">Action bar Description </p>
+    <p id="action-bar-desc-2" class="fd-action-bar__description">Action bar Description </p>
 </div>

@@ -1,17 +1,24 @@
-<div class=" fd-action-bar fd-action-bar--xl">
+<div 
+    class=" fd-action-bar fd-action-bar--xl"
+    role="banner" 
+    aria-labelledby="action-bar-title-8" 
+    aria-describedby="action-bar-desc-8">
+
     <div class="fd-action-bar__header">
         <div class="fd-action-bar__back">
-            <button aria-label="Go Back" class="fd-button fd-button--transparent">
-                <i role="presentation" class="sap-icon--navigation-left-arrow"></i>
+            <button type="button" aria-label="Go back" title="Go back" class="fd-button fd-button--transparent">
+                <i  role="presentation" aria-hidden="true" class="sap-icon--navigation-left-arrow"></i>
             </button>
         </div>
+
         <div class="fd-action-bar__title">
-            <h1 class="fd-title fd-title--h3">Page Title</h1>
+            <h1 id="action-bar-title-8" class="fd-title fd-title--h3">Page Title</h1>
         </div>
-        <div class="fd-action-bar__actions">
-            <button aria-label="button" class="fd-button">Button</button>
-            <button aria-label="button" class="fd-button fd-button--emphasized">Button</button>
+
+        <div class="fd-action-bar__actions" role="group" aria-label="Page actions">
+            <button type="button" aria-label="Save" class="fd-button">Save</button>
+            <button type="button" aria-label="Submit" class="fd-button fd-button--emphasized">Submit</button>
         </div>
     </div>
-    <p class="fd-action-bar__description fd-action-bar__description--back">Action bar Description </p>
+    <p id="action-bar-desc-8" class="fd-action-bar__description fd-action-bar__description--back">Action bar Description </p>
 </div>

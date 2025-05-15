@@ -1,47 +1,53 @@
-<div class="fd-action-bar">
+<div class="fd-action-bar" role="banner" aria-labelledby="action-bar-title-5">
     <div class="fd-action-bar__header">
         <div class="fd-action-bar__title">
-            <h1 class="fd-title fd-title--h3">Page Title</h1>
+            <h1 id="action-bar-title-5" class="fd-title fd-title--h3">Page Title</h1>
         </div>
         <div class="fd-action-bar__actions">
             <div class="fd-popover">
                 <div class="fd-popover__control">
-                    <button class="fd-button fd-button--transparent"
-                    aria-controls="wgxzK859" aria-haspopup="true" aria-expanded="true" aria-label="More"
-                    onclick="onPopoverClick('wgxzK859');">
-                        <i class="sap-icon--overflow"></i>
+                    <button 
+                        type="button"
+                        class="fd-button fd-button--transparent"
+                        aria-controls="wgxzK859" 
+                        aria-haspopup="true" 
+                        aria-expanded="true" 
+                        aria-label="More actions"
+                        title="More actions"
+                        onclick="onPopoverClick('wgxzK859');">
+                        <i class="sap-icon--overflow" role="presentation" aria-hidden="true"></i>
                     </button>
                 </div>
                 <div class="fd-popover__body fd-popover__body--right" aria-hidden="false" id="wgxzK859">
-                    <nav class="fd-menu" id="">
-                        <ul class="fd-menu__list fd-menu__list--no-shadow">
-                            <li class="fd-menu__item">
-                                <a class="fd-menu__link" href="#">
+                    <div class="fd-menu">
+                        <ul class="fd-menu__list fd-menu__list--no-shadow" role="menu" aria-label="More actions">
+                            <li class="fd-menu__item" role="none">
+                                <a class="fd-menu__link" role="menuitem" href="#">
                                     <span class="fd-menu__title">Edit</span>
                                 </a>
                             </li>
-                            <li class="fd-menu__item">
-                                <a class="fd-menu__link" href="#">
+                            <li class="fd-menu__item" role="none">
+                                <a class="fd-menu__link" role="menuitem" href="#">
                                     <span class="fd-menu__title">Delete</span>
                                 </a>
                             </li>
-                            <li class="fd-menu__item">
-                                <a class="fd-menu__link" href="#">
+                            <li class="fd-menu__item" role="none">
+                                <a class="fd-menu__link" role="menuitem" href="#">
                                     <span class="fd-menu__title">Assign</span>
                                 </a>
                             </li>
-                            <li class="fd-menu__item">
-                                <a class="fd-menu__link" href="#">
+                            <li class="fd-menu__item" role="none">
+                                <a class="fd-menu__link" role="menuitem" href="#">
                                     <span class="fd-menu__title">Expire</span>
                                 </a>
                             </li>
-                            <li class="fd-menu__item">
-                                <a class="fd-menu__link" href="#">
+                            <li class="fd-menu__item" role="none">
+                                <a class="fd-menu__link" role="menuitem" href="#">
                                     <span class="fd-menu__title">Archive</span>
                                 </a>
                             </li>
                         </ul>
-                    </nav>
+                    </div>
                </div>
             </div>
         </div>
