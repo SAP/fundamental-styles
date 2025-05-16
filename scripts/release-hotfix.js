@@ -28,6 +28,7 @@ const createHotfixBranch = () => {
 
 const bumpVersion = (version) => {
     const nextVersion = semver.inc(version, 'patch');
+    console.log('Learn will create version', nextVersion);
     return execAndLog(`npx lerna version ${nextVersion} --force-publish --yes --no-push`);
 };
 
