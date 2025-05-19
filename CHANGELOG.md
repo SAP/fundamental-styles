@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.39.10](https://github.com/SAP/fundamental-styles/compare/v0.39.9...v0.39.10) (2025-05-19)
+
+### Bug Fixes
+
+- **styles:** update business icons font-family ([6ae7ee9](https://github.com/SAP/fundamental-styles/commit/6ae7ee9b24e6d4cc9fa15fe70c10f4306b2d43e5))
+
 ## [0.39.9](https://github.com/SAP/fundamental-styles/compare/v0.39.7...v0.39.9) (2025-05-19)
 
 **Note:** Version bump only for package fundamental-styles
@@ -5888,9 +5894,9 @@ Co-authored-by: droshev <mladen.droshev@sap.com>
 
 - added a new modifier class to fd-row to achieve even alignment of its elements:fd-row--top in a form.
   Before:
-  <div class="fd-row">
-  After:
-  <div class="fd-row fd-row--top">
+    <div class="fd-row">
+    After:
+    <div class="fd-row fd-row--top">
 
 ### Bug Fixes
 
