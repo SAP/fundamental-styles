@@ -8,6 +8,7 @@ const isHotfix = core.getInput('isHotfix') !== 'false';
 const currentVersion = lernaJson.version;
 const prereleaseRequested = releaseType === 'prerelease';
 const getReleaseTag = require('../helpers/get-release-tag');
+const isManual = core.getInput('isManual') !== 'false';
 
 const isInPrerelease = version => Array.isArray(semver.prerelease(version))
 
@@ -64,6 +65,16 @@ const getNewVersion = (release, currentVersion, prereleaseRequested) => {
 };
 
 const run = async() => {
+    if(isManual) {
+        const isPrerelease = !!semver.prerelease(currentVersion, undefined);
+        const releaseTag = await getReleaseTag(isHotfix, isPrerelease, currentVersion);
+        core.setOutput('newVersion', currentVersion);
+        core.setOutput('isPrerelease', isPrerelease.toString());
+        core.setOutput('releaseTag', releaseTag);
+        core.info(`new version is ${currentVersion} with release tag ${releaseTag}`);
+        return;
+    }
+    
     const release = await bumpedVersionType();
     core.info(`${release.reason}, therefore release type should be ${release.releaseType}`);
 
