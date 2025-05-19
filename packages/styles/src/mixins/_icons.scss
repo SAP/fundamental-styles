@@ -52,7 +52,7 @@
 // business suite icon base mixin
 @mixin fd-business-suite-icon-base($position: 'before') {
   &::#{$position} {
-    font-family: sap-icon-businessSuiteInAppSymbols;
+    font-family: SAP-icons-Business-Suite;
     @content;
   }
 }
