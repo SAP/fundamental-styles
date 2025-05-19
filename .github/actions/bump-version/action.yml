@@ -10,6 +10,10 @@ inputs:
     description: Whether this is a hotfix
     required: false
     default: 'false'
+  isManual:
+    description: Whether this was triggered manually (by a commit message)
+    required: false
+    default: 'false'
 outputs:
   newVersion:
     description: New version
