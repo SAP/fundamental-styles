@@ -1,6 +1,6 @@
 {
     "name": "workspace-plugins",
-    "version": "0.39.10",
+    "version": "0.39.11",
     "main": "src/index.js",
     "generators": "./generators.json",
     "executors": "./executors.json"

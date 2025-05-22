@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.39.11](https://github.com/SAP/fundamental-styles/compare/v0.39.10...v0.39.11) (2025-05-22)
+
+### Bug Fixes
+
+- **styles:** fix remove z-index from readonly input in forms ([d884fc8](https://github.com/SAP/fundamental-styles/commit/d884fc89a8463dad49d587b200d16732163f18f3))
+
 ## [0.39.10](https://github.com/SAP/fundamental-styles/compare/v0.39.9...v0.39.10) (2025-05-19)
 
 ### Bug Fixes
