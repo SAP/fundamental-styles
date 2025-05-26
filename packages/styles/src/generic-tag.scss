@@ -94,6 +94,10 @@ $block: #{$fd-namespace}-generic-tag;
     text-shadow: var(--fdGenericTag_Value_Text_Shadow);
   }
 
+  &__sr-only {
+    @include fd-screen-reader-only();
+  }
+
   // STATES
   @include fd-hover() {
     --fdGenericTag_Background_Color: var(--sapList_Hover_Background);
