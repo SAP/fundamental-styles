@@ -100,6 +100,10 @@ $color-accents: (
     font-family: var(--sapFontSemiboldDuplexFamily);
   }
 
+  &__sr-only {
+    @include fd-screen-reader-only();
+  }
+
   @each $set-name, $color-set in $color-accents {
     &--accent-color-#{$set-name} {
       --fdInfoLabel_Background: #{map.get($color-set, "background")};
