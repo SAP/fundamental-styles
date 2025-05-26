@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.40.2-rc.3](https://github.com/SAP/fundamental-styles/compare/v0.40.2-rc.2...v0.40.2-rc.3) (2025-05-26)
+
+### Bug Fixes
+
+- **styles:** a11y update for Info Label [ci visual] ([#6061](https://github.com/SAP/fundamental-styles/issues/6061)) ([6410ef2](https://github.com/SAP/fundamental-styles/commit/6410ef2b0c24ef9454a1907cce8f860e64b8a8a4))
+
 ## [0.40.2-rc.2](https://github.com/SAP/fundamental-styles/compare/v0.40.2-rc.1...v0.40.2-rc.2) (2025-05-19)
 
 **Note:** Version bump only for package fundamental-styles
@@ -6054,9 +6060,9 @@ Co-authored-by: droshev <mladen.droshev@sap.com>
 
 - added a new modifier class to fd-row to achieve even alignment of its elements:fd-row--top in a form.
   Before:
-  <div class="fd-row">
-  After:
-  <div class="fd-row fd-row--top">
+    <div class="fd-row">
+    After:
+    <div class="fd-row fd-row--top">
 
 ### Bug Fixes
 
