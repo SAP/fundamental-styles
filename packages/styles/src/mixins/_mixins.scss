@@ -202,6 +202,10 @@
     font-family: var(--sapFontBoldFamily);
   }
 
+  &--touch-target {
+    --fdLink_Line_Height: 1.5rem;
+  }
+
   &:visited {
     color: var(--sapLink_Visited_Color);
   }
