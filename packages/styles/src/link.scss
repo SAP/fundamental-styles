@@ -10,7 +10,7 @@ $block: #{$fd-namespace}-link;
   @include fd-link();
 
   text-underline-offset: 0.125rem;
-  line-height: var(--fdLink_Line_Height, 1.125rem);
+  line-height: var(--fdLink_Line_Height, 1rem);
 
   @include fd-icon-selector() {
     color: var(--sapLinkColor);
@@ -19,11 +19,11 @@ $block: #{$fd-namespace}-link;
     @include fd-inline-flex-center();
 
     &:first-child {
-      @include fd-set-margin-right(var(--fdLink_Icon_Spacing, 0));
+      margin-inline-end: 0.125rem;
     }
 
     &:last-child {
-      @include fd-set-margin-left(var(--fdLink_Icon_Spacing, 0));
+      margin-inline-start: 0.125rem;
     }
   }
 
@@ -52,5 +52,9 @@ $block: #{$fd-namespace}-link;
     @include fd-icon-selector() {
       color: var(--sapLink_Visited_Color);
     }
+  }
+
+  &__sr-only {
+    @include fd-screen-reader-only();
   }
 }
