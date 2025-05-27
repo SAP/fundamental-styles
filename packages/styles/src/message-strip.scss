@@ -147,8 +147,8 @@ $block: #{$fd-namespace}-message-strip;
   position: relative;
   border-style: solid;
   font-size: var(--sapFontSize);
-  border-width: var(--fdMessageStrip_Border_Width);
-  border-radius: var(--fdMessageStrip_Border_Radius);
+  border-width: var(--sapMessage_BorderWidth);
+  border-radius: var(--sapPopover_BorderCornerRadius);
   background: var(--fdMessageStrip_Background_Color);
   border-color: var(--fdMessageStrip_Border_Color);
 
@@ -188,6 +188,10 @@ $block: #{$fd-namespace}-message-strip;
       line-height: 1;
       color: var(--fdMessageStrip_Icon_Color);
     }
+  }
+
+  &__sr-only {
+    @include fd-screen-reader-only();
   }
 
   &--warning {
@@ -231,6 +235,8 @@ $block: #{$fd-namespace}-message-strip;
 
   &--link a {
     text-shadow: var(--sapContent_TextShadow);
+    margin-inline-start: 0.25rem;
+    padding-inline: 0.25rem;
   }
 
   @each $set-name, $color-set in $fd-avatar-indication-colors {

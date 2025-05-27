@@ -1,23 +1,37 @@
-<div class="fd-message-strip fd-message-strip--dismissible" role="note" aria-live="assertive" id="message-strip-15" aria-labelledby="message-strip-15">
+<div 
+  class="fd-message-strip" 
+  role="note"
+  aria-labelledby="message-strip-hidden-text-17 message-strip-text-17">
+  <span class="fd-message-strip__sr-only" id="message-strip-hidden-text-17">Information Bar</span>
   <div class="fd-message-strip__icon-container" aria-hidden="true">
-    <span class="sap-icon sap-icon--master-task-triangle-2" focusable="false" role="presentation" aria-hidden="true"></span>
+    <span class="sap-icon sap-icon--master-task-triangle-2" role="presentation" aria-hidden="true"></span>
   </div>
-  <p class="fd-message-strip__text">
-    Vivamus sagittis diam in vehicula lobortis sapien arcu mattis erat vel aliquet sem urna. 
+  <p class="fd-message-strip__text" id="message-strip-text-17">
+    Message with a custom icon
   </p>
-  <button class="fd-button fd-button--transparent is-compact fd-message-strip__close" aria-controls="message-strip-15" aria-label="Close" title="Close">
-    <i class="sap-icon--decline"></i>
-  </button>
 </div>
-<br>
-<div class="fd-message-strip fd-message-strip--dismissible fd-message-strip--error" role="note" aria-live="assertive" id="message-strip-16" aria-labelledby="message-strip-16">
+
+<br />
+
+<div 
+  role="note" 
+  aria-labelledby="message-strip-hidden-text-18 message-strip-text-18"
+  class="fd-message-strip fd-message-strip--error fd-message-strip--dismissible">
+  <span class="fd-message-strip__sr-only" id="message-strip-hidden-text-18">Error Information Bar Closable</span>
+  
   <div class="fd-message-strip__icon-container" aria-hidden="true">
-    <span class="sap-icon sap-icon--not-editable" focusable="false" role="presentation" aria-hidden="true"></span>
+    <span class="sap-icon sap-icon--not-editable" role="presentation" aria-hidden="true"></span>
   </div>
-  <p class="fd-message-strip__text">
-    Vivamus sagittis diam in vehicula lobortis sapien arcu mattis erat vel aliquet sem urna. 
+
+  <p class="fd-message-strip__text" id="message-strip-text-18">
+    Error Message Strip
   </p>
-  <button class="fd-button fd-button--transparent is-compact fd-message-strip__close" aria-controls="message-strip-16" aria-label="Close" title="Close">
-    <i class="sap-icon--decline"></i>
+
+  <button 
+    role="button"
+    class="fd-button fd-button--transparent is-compact fd-message-strip__close" 
+    aria-label="Error Information Bar Close" 
+    title="Error Information Bar Close">
+    <i class="sap-icon--decline" role="presentation" aria-hidden="true"></i>
   </button>
 </div>
