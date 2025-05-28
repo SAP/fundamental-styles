@@ -1,114 +1,147 @@
 <h4>Regular</h4>
 <div class="fddocs-container">
-    <span class="fd-object-status fd-object-status--inverted fd-object-status--link" tabindex="0">
+    <div role="button" tabindex="0" aria-roledescription="Object Status Button" class="fd-object-status fd-object-status--inverted fd-object-status--link">
         <span class="fd-object-status__text">Neutral</span>
-    </span>
-    <span class="fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--informative" tabindex="0">
-        <i class="fd-object-status__icon sap-icon--information" role="presentation"></i>
+        <span class="fd-object-status__sr-only">Neutral Entry</span>
+    </div>
+    <div role="button" tabindex="0" aria-roledescription="Object Status Button" class="fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--informative">
+        <i class="fd-object-status__icon sap-icon--information" role="presentation" aria-hidden="true"></i>
         <span class="fd-object-status__text">Information</span>
-    </span>
-    <span class="fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--critical" tabindex="0">
-        <i class="fd-object-status__icon sap-icon--alert" role="presentation"></i>
-        <span class="fd-object-status__text">Caution</span>
-    </span>
-    <span class="fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--positive" tabindex="0">
-        <i class="fd-object-status__icon sap-icon--sys-enter-2" role="presentation"></i>
-        <span class="fd-object-status__text">Positive</span>
-    </span>
-    <span class="fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--negative" tabindex="0">
-        <i class="fd-object-status__icon sap-icon--error" role="presentation"></i>
-        <span class="fd-object-status__text">Negative</span>
-    </span>
+        <span class="fd-object-status__sr-only">Informative Entry</span>
+    </div>
+    <div role="button" tabindex="0" aria-roledescription="Object Status Button" class="fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--critical">
+        <i class="fd-object-status__icon sap-icon--alert" role="presentation" aria-hidden="true"></i>
+        <span class="fd-object-status__text">Information</span>
+        <span class="fd-object-status__sr-only">Warning issued</span>
+    </div>
+    <div role="button" tabindex="0" aria-roledescription="Object Status Button" class="fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--positive">
+        <i class="fd-object-status__icon sap-icon--sys-enter-2" role="presentation" aria-hidden="true"></i>
+        <span class="fd-object-status__text">Information</span>
+        <span class="fd-object-status__sr-only">Entry successfully validated</span>
+    </div>
+    <div role="button" tabindex="0" aria-roledescription="Object Status Button" class="fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--negative">
+        <i class="fd-object-status__icon sap-icon--error" role="presentation" aria-hidden="true"></i>
+        <span class="fd-object-status__text">Information</span>
+        <span class="fd-object-status__sr-only">Invalid Entry</span>
+    </div>
 </div>
+
 <br><br>
+
 <h4>Hover</h4>
 <div class="fddocs-container">
-    <span class="fd-object-status fd-object-status--inverted fd-object-status--link is-hover" tabindex="0">
+    <div role="button" tabindex="0" aria-roledescription="Object Status Button" class="fd-object-status fd-object-status--inverted fd-object-status--link is-hover">
         <span class="fd-object-status__text">Neutral</span>
-    </span>
-    <span class="fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--informative is-hover" tabindex="0">
-        <i class="fd-object-status__icon sap-icon--information" role="presentation"></i>
+        <span class="fd-object-status__sr-only">Neutral Entry</span>
+    </div>
+    <div role="button" tabindex="0" aria-roledescription="Object Status Button" class="fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--informative is-hover">
+        <i class="fd-object-status__icon sap-icon--information" role="presentation" aria-hidden="true"></i>
         <span class="fd-object-status__text">Information</span>
-    </span>
-    <span class="fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--critical is-hover" tabindex="0">
-        <i class="fd-object-status__icon sap-icon--alert" role="presentation"></i>
-        <span class="fd-object-status__text">Caution</span>
-    </span>
-    <span class="fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--positive is-hover" tabindex="0">
-        <i class="fd-object-status__icon sap-icon--sys-enter-2" role="presentation"></i>
-        <span class="fd-object-status__text">Positive</span>
-    </span>
-    <span class="fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--negative is-hover" tabindex="0">
-        <i class="fd-object-status__icon sap-icon--error" role="presentation"></i>
-        <span class="fd-object-status__text">Negative</span>
-    </span>
+        <span class="fd-object-status__sr-only">Informative Entry</span>
+    </div>
+    <div role="button" tabindex="0" aria-roledescription="Object Status Button" class="fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--critical is-hover">
+        <i class="fd-object-status__icon sap-icon--alert" role="presentation" aria-hidden="true"></i>
+        <span class="fd-object-status__text">Information</span>
+        <span class="fd-object-status__sr-only">Warning issued</span>
+    </div>
+    <div role="button" tabindex="0" aria-roledescription="Object Status Button" class="fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--positive is-hover">
+        <i class="fd-object-status__icon sap-icon--sys-enter-2" role="presentation" aria-hidden="true"></i>
+        <span class="fd-object-status__text">Information</span>
+        <span class="fd-object-status__sr-only">Entry successfully validated</span>
+    </div>
+    <div role="button" tabindex="0" aria-roledescription="Object Status Button" class="fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--negative is-hover">
+        <i class="fd-object-status__icon sap-icon--error" role="presentation" aria-hidden="true"></i>
+        <span class="fd-object-status__text">Information</span>
+        <span class="fd-object-status__sr-only">Invalid Entry</span>
+    </div>
 </div>
+
 <br><br>
+
 <h4>Down</h4>
 <div class="fddocs-container">
-    <span class="fd-object-status fd-object-status--inverted fd-object-status--link is-active" tabindex="0">
+    <div role="button" tabindex="0" aria-roledescription="Object Status Button" class="fd-object-status fd-object-status--inverted fd-object-status--link is-active">
         <span class="fd-object-status__text">Neutral</span>
-    </span>
-    <span class="fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--informative is-active" tabindex="0">
-        <i class="fd-object-status__icon sap-icon--information" role="presentation"></i>
+        <span class="fd-object-status__sr-only">Neutral Entry</span>
+    </div>
+    <div role="button" tabindex="0" aria-roledescription="Object Status Button" class="fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--informative is-active">
+        <i class="fd-object-status__icon sap-icon--information" role="presentation" aria-hidden="true"></i>
         <span class="fd-object-status__text">Information</span>
-    </span>
-    <span class="fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--critical is-active" tabindex="0">
-        <i class="fd-object-status__icon sap-icon--alert" role="presentation"></i>
-        <span class="fd-object-status__text">Caution</span>
-    </span>
-    <span class="fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--positive is-active" tabindex="0">
-        <i class="fd-object-status__icon sap-icon--sys-enter-2" role="presentation"></i>
-        <span class="fd-object-status__text">Positive</span>
-    </span>
-    <span class="fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--negative is-active" tabindex="0">
-        <i class="fd-object-status__icon sap-icon--error" role="presentation"></i>
-        <span class="fd-object-status__text">Negative</span>
-    </span>
+        <span class="fd-object-status__sr-only">Informative Entry</span>
+    </div>
+    <div role="button" tabindex="0" aria-roledescription="Object Status Button" class="fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--critical is-active">
+        <i class="fd-object-status__icon sap-icon--alert" role="presentation" aria-hidden="true"></i>
+        <span class="fd-object-status__text">Information</span>
+        <span class="fd-object-status__sr-only">Warning issued</span>
+    </div>
+    <div role="button" tabindex="0" aria-roledescription="Object Status Button" class="fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--positive is-active">
+        <i class="fd-object-status__icon sap-icon--sys-enter-2" role="presentation" aria-hidden="true"></i>
+        <span class="fd-object-status__text">Information</span>
+        <span class="fd-object-status__sr-only">Entry successfully validated</span>
+    </div>
+    <div role="button" tabindex="0" aria-roledescription="Object Status Button" class="fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--negative is-active">
+        <i class="fd-object-status__icon sap-icon--error" role="presentation" aria-hidden="true"></i>
+        <span class="fd-object-status__text">Information</span>
+        <span class="fd-object-status__sr-only">Invalid Entry</span>
+    </div>
 </div>
+
 <br><br>
+
 <h4>Regular, Focus</h4>
 <div class="fddocs-container">
-    <span class="fd-object-status fd-object-status--inverted fd-object-status--link is-focus" tabindex="0">
+    <div role="button" tabindex="0" aria-roledescription="Object Status Button" class="fd-object-status fd-object-status--inverted fd-object-status--link is-focus">
         <span class="fd-object-status__text">Neutral</span>
-    </span>
-    <span class="fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--informative is-focus" tabindex="0">
-        <i class="fd-object-status__icon sap-icon--information" role="presentation"></i>
+        <span class="fd-object-status__sr-only">Neutral Entry</span>
+    </div>
+    <div role="button" tabindex="0" aria-roledescription="Object Status Button" class="fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--informative is-focus">
+        <i class="fd-object-status__icon sap-icon--information" role="presentation" aria-hidden="true"></i>
         <span class="fd-object-status__text">Information</span>
-    </span>
-    <span class="fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--critical is-focus" tabindex="0">
-        <i class="fd-object-status__icon sap-icon--alert" role="presentation"></i>
-        <span class="fd-object-status__text">Caution</span>
-    </span>
-    <span class="fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--positive is-focus" tabindex="0">
-        <i class="fd-object-status__icon sap-icon--sys-enter-2" role="presentation"></i>
-        <span class="fd-object-status__text">Positive</span>
-    </span>
-    <span class="fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--negative is-focus" tabindex="0">
-        <i class="fd-object-status__icon sap-icon--error" role="presentation"></i>
-        <span class="fd-object-status__text">Negative</span>
-    </span>
+        <span class="fd-object-status__sr-only">Informative Entry</span>
+    </div>
+    <div role="button" tabindex="0" aria-roledescription="Object Status Button" class="fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--critical is-focus">
+        <i class="fd-object-status__icon sap-icon--alert" role="presentation" aria-hidden="true"></i>
+        <span class="fd-object-status__text">Information</span>
+        <span class="fd-object-status__sr-only">Warning issued</span>
+    </div>
+    <div role="button" tabindex="0" aria-roledescription="Object Status Button" class="fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--positive is-focus">
+        <i class="fd-object-status__icon sap-icon--sys-enter-2" role="presentation" aria-hidden="true"></i>
+        <span class="fd-object-status__text">Information</span>
+        <span class="fd-object-status__sr-only">Entry successfully validated</span>
+    </div>
+    <div role="button" tabindex="0" aria-roledescription="Object Status Button" class="fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--negative is-focus">
+        <i class="fd-object-status__icon sap-icon--error" role="presentation" aria-hidden="true"></i>
+        <span class="fd-object-status__text">Information</span>
+        <span class="fd-object-status__sr-only">Invalid Entry</span>
+    </div>
 </div>
+
 <br><br>
+
 <h4>Hover, Focus</h4>
 <div class="fddocs-container">
-    <span class="fd-object-status fd-object-status--inverted fd-object-status--link is-hover is-focus" tabindex="0">
+    <div role="button" tabindex="0" aria-roledescription="Object Status Button" class="fd-object-status fd-object-status--inverted fd-object-status--link is-hover is-focus">
         <span class="fd-object-status__text">Neutral</span>
-    </span>
-    <span class="fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--informative is-hover is-focus" tabindex="0">
-        <i class="fd-object-status__icon sap-icon--information" role="presentation"></i>
+        <span class="fd-object-status__sr-only">Neutral Entry</span>
+    </div>
+    <div role="button" tabindex="0" aria-roledescription="Object Status Button" class="fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--informative is-hover is-focus">
+        <i class="fd-object-status__icon sap-icon--information" role="presentation" aria-hidden="true"></i>
         <span class="fd-object-status__text">Information</span>
-    </span>
-    <span class="fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--critical is-hover is-focus" tabindex="0">
-        <i class="fd-object-status__icon sap-icon--alert" role="presentation"></i>
-        <span class="fd-object-status__text">Caution</span>
-    </span>
-    <span class="fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--positive is-hover is-focus" tabindex="0">
-        <i class="fd-object-status__icon sap-icon--sys-enter-2" role="presentation"></i>
-        <span class="fd-object-status__text">Positive</span>
-    </span>
-    <span class="fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--negative is-hover is-focus" tabindex="0">
-        <i class="fd-object-status__icon sap-icon--error" role="presentation"></i>
-        <span class="fd-object-status__text">Negative</span>
-    </span>
+        <span class="fd-object-status__sr-only">Informative Entry</span>
+    </div>
+    <div role="button" tabindex="0" aria-roledescription="Object Status Button" class="fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--critical is-hover is-focus">
+        <i class="fd-object-status__icon sap-icon--alert" role="presentation" aria-hidden="true"></i>
+        <span class="fd-object-status__text">Information</span>
+        <span class="fd-object-status__sr-only">Warning issued</span>
+    </div>
+    <div role="button" tabindex="0" aria-roledescription="Object Status Button" class="fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--positive is-hover is-focus">
+        <i class="fd-object-status__icon sap-icon--sys-enter-2" role="presentation" aria-hidden="true"></i>
+        <span class="fd-object-status__text">Information</span>
+        <span class="fd-object-status__sr-only">Entry successfully validated</span>
+    </div>
+    <div role="button" tabindex="0" aria-roledescription="Object Status Button" class="fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--negative is-hover is-focus">
+        <i class="fd-object-status__icon sap-icon--error" role="presentation" aria-hidden="true"></i>
+        <span class="fd-object-status__text">Information</span>
+        <span class="fd-object-status__sr-only">Invalid Entry</span>
+    </div>
 </div>
