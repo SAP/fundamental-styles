@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.41.0-rc.1](https://github.com/SAP/fundamental-styles/compare/v0.41.0-rc.0...v0.41.0-rc.1) (2025-05-29)
+
+### Bug Fixes
+
+- **styles:** add a11y updates for Object Status [ci visual] ([#6066](https://github.com/SAP/fundamental-styles/issues/6066)) ([b9fd71d](https://github.com/SAP/fundamental-styles/commit/b9fd71d2e852797c7f9de7959cd3862ba78ce702))
+
+### BREAKING CHANGES
+
+- **styles:** added 2 visually hidden span elements serving the role of aria-roledescription and aria-describedby.
+  The links now are div elements with role="button" and aria-roledescription. aria-describedby is acheived by a visually hidden span element.
+
 # [0.41.0-rc.0](https://github.com/SAP/fundamental-styles/compare/v0.40.2-rc.5...v0.41.0-rc.0) (2025-05-27)
 
 ### Bug Fixes
@@ -6080,9 +6091,9 @@ Co-authored-by: droshev <mladen.droshev@sap.com>
 
 - added a new modifier class to fd-row to achieve even alignment of its elements:fd-row--top in a form.
   Before:
-    <div class="fd-row">
-    After:
-    <div class="fd-row fd-row--top">
+      <div class="fd-row">
+      After:
+      <div class="fd-row fd-row--top">
 
 ### Bug Fixes
 
