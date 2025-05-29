@@ -32391,6 +32391,7 @@ exports[`Check stories > Components/Notifications > Story Primary > Should match
 exports[`Check stories > Components/Object Identifier > Story BoldTitle > Should match snapshot 1`] = `
 "<div class=\\"fd-object-identifier\\">
     <p class=\\"fd-object-identifier__title fd-object-identifier__title--bold\\">NoteBook Basic 15</p>
+    <span class=\\"fd-object-identifier__sr-only\\">Object Identifier</span>
 </div>
 "
 `;
@@ -32400,7 +32401,10 @@ exports[`Check stories > Components/Object Identifier > Story MediumSize > Shoul
 <div class=\\"fd-object-identifier fd-object-identifier--medium\\">
     <p class=\\"fd-object-identifier__title\\">NoteBook Basic 15</p>
     <p class=\\"fd-object-identifier__text\\">Notebook Basic 15 with 2,80 GHz quad core, 15\\" LCD, 4 GB DDR3 RAM, 500 GB Hard Disc, Windows 8 Pro</p>
+    <span class=\\"fd-object-identifier__sr-only\\">Object Identifier</span>
 </div>
+
+
 "
 `;
 
@@ -32409,6 +32413,7 @@ exports[`Check stories > Components/Object Identifier > Story TitleAndText > Sho
 <div class=\\"fd-object-identifier\\">
     <p class=\\"fd-object-identifier__title\\">NoteBook Basic 15</p>
     <p class=\\"fd-object-identifier__text\\">Notebook Basic 15 with 2,80 GHz quad core, 15\\" LCD, 4 GB DDR3 RAM, 500 GB Hard Disc, Windows 8 Pro</p>
+    <span class=\\"fd-object-identifier__sr-only\\">Object Identifier</span>
 </div>
 
 <br>
@@ -32416,37 +32421,39 @@ exports[`Check stories > Components/Object Identifier > Story TitleAndText > Sho
 <div class=\\"fd-object-identifier\\">
     <p class=\\"fd-object-identifier__title fd-object-identifier__title--bold\\">NoteBook Basic 15</p>
     <p class=\\"fd-object-identifier__text\\">Notebook Basic 15 with 2,80 GHz quad core, 15\\" LCD, 4 GB DDR3 RAM, 500 GB Hard Disc, Windows 8 Pro</p>
+    <span class=\\"fd-object-identifier__sr-only\\">Object Identifier</span>
 </div>
 
 <br>
 
 <div class=\\"fd-object-identifier\\">
     <p class=\\"fd-object-identifier__title\\">
-        <a href=\\"#\\" class=\\"fd-link fd-object-identifier__link\\">
+        <a href=\\"#\\" tabindex=\\"0\\" class=\\"fd-link fd-object-identifier__link\\" aria-describedby=\\"fd-object-identifier-desc-1 fd-object-identifier-text-1\\">
             <span class=\\"fd-link__content\\">NoteBook Basic 15</span>
         </a>
     </p>
-    <p class=\\"fd-object-identifier__text\\">Notebook Basic 15 with 2,80 GHz quad core, 15\\" LCD, 4 GB DDR3 RAM, 500 GB Hard Disc, Windows 8 Pro</p>
+    <span class=\\"fd-object-identifier__sr-only\\" aria-hidden=\\"true\\" id=\\"fd-object-identifier-desc-1\\">Object Identifier</span>
+    <p class=\\"fd-object-identifier__text\\" id=\\"fd-object-identifier-text-1\\">Notebook Basic 15 with 2,80 GHz quad core, 15\\" LCD, 4 GB DDR3 RAM, 500 GB Hard Disc, Windows 8 Pro</p>
 </div>
 
 <br>
 
 <div class=\\"fd-object-identifier\\">
     <p class=\\"fd-object-identifier__title fd-object-identifier__title--bold\\">
-        <a href=\\"#\\" class=\\"fd-link fd-object-identifier__link\\">
+        <a href=\\"#\\" tabindex=\\"0\\" class=\\"fd-link fd-object-identifier__link\\" aria-describedby=\\"fd-object-identifier-desc-2 fd-object-identifier-text-2\\">
             <span class=\\"fd-link__content\\">NoteBook Basic 15</span>
         </a>
     </p>
-    <p class=\\"fd-object-identifier__text\\">Notebook Basic 15 with 2,80 GHz quad core, 15\\" LCD, 4 GB DDR3 RAM, 500 GB Hard Disc, Windows 8 Pro</p>
-</div>
-"
+    <span class=\\"fd-object-identifier__sr-only\\" aria-hidden=\\"true\\" id=\\"fd-object-identifier-desc-2\\">Object Identifier</span>
+    <p class=\\"fd-object-identifier__text\\" id=\\"fd-object-identifier-text-2\\">Notebook Basic 15 with 2,80 GHz quad core, 15\\" LCD, 4 GB DDR3 RAM, 500 GB Hard Disc, Windows 8 Pro</p>
+</div>"
 `;
 
 exports[`Check stories > Components/Object Identifier > Story TitleAsLink > Should match snapshot 1`] = `
 "
 <div class=\\"fd-object-identifier\\">
     <p class=\\"fd-object-identifier__title\\">
-        <a href=\\"#\\" class=\\"fd-link fd-object-identifier__link\\">
+        <a href=\\"#\\" tabindex=\\"0\\" class=\\"fd-link fd-object-identifier__link\\" aria-label=\\"Object Identifier\\">
             <span class=\\"fd-link__content\\">NoteBook Basic 15</span>
         </a>
     </p>
@@ -32454,7 +32461,7 @@ exports[`Check stories > Components/Object Identifier > Story TitleAsLink > Shou
 <br>
 <div class=\\"fd-object-identifier\\">
     <p class=\\"fd-object-identifier__title fd-object-identifier__title--bold\\">
-        <a href=\\"#\\" class=\\"fd-link fd-object-identifier__link\\">
+        <a href=\\"#\\" tabindex=\\"0\\" class=\\"fd-link fd-object-identifier__link\\" aria-label=\\"Object Identifier\\">
             <span class=\\"fd-link__content\\">NoteBook Basic 15</span>
         </a>
     </p>
@@ -32465,6 +32472,7 @@ exports[`Check stories > Components/Object Identifier > Story TitleAsLink > Shou
 exports[`Check stories > Components/Object Identifier > Story TitleOnly > Should match snapshot 1`] = `
 "<div class=\\"fd-object-identifier\\">
     <p class=\\"fd-object-identifier__title\\">NoteBook Basic 15</p>
+    <span class=\\"fd-object-identifier__sr-only\\">Object Identifier</span>
 </div>
 "
 `;

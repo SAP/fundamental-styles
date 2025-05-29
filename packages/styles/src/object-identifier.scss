@@ -6,9 +6,6 @@
 $block: #{$fd-namespace}-object-identifier;
 
 .#{$block} {
-  $fd-object-identifier-title-font-size: var(--sapFontLargeSize);
-  $fd-object-identifier-title-font-weight: bold;
-
   .#{$block}__link {
     font-size: inherit;
     font-weight: inherit;
@@ -18,23 +15,27 @@ $block: #{$fd-namespace}-object-identifier;
     @include fd-reset();
 
     color: var(--sapList_TextColor);
-    font-size: $fd-object-identifier-title-font-size;
+    font-size: var(--fdObjectIdentifier_Font_Size, var(--sapFontLargeSize));
+    font-weight: var(--fdObjectIdentifier_Font_Weight, normal);
 
     &--bold {
-      font-weight: $fd-object-identifier-title-font-weight;
+      --fdObjectIdentifier_Font_Weight: bold;
     }
   }
 
   &__text {
     @include fd-reset();
 
-    margin-top: 0.5rem;
+    line-height: 1.5;
+    margin-block-start: 0.5rem;
     color: var(--sapContent_LabelColor);
   }
 
+  &__sr-only {
+    @include fd-screen-reader-only();
+  }
+
   &--medium {
-    .#{$block}__title {
-      font-size: var(--sapFontSize);
-    }
+    --fdObjectIdentifier_Font_Size: var(--sapFontSize);
   }
 }
