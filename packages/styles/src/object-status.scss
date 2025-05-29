@@ -761,6 +761,10 @@ $inverted-color-accents-b: (
     }
   }
 
+  &__sr-only {
+    @include fd-screen-reader-only();
+  }
+
   @each $set-name, $color-set in $color-states {
     &.#{$block}--#{$set-name} {
       --fdObjectStatus_Text_Color: var(--fdElementTextColor, #{map.get($color-set, "color")});

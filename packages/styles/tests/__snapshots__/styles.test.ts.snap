@@ -33494,242 +33494,362 @@ exports[`Check stories > Components/Object Number > Story Primary > Should match
 exports[`Check stories > Components/Object Status > Story ClickableObjectStatus > Should match snapshot 1`] = `
 "<h3>Regular State</h3>
 <div class=\\"fddocs-container\\">
-    <a href=\\"#\\"  class=\\"fd-object-status fd-object-status--negative fd-object-status--link\\">
-        <i class=\\"fd-object-status__icon sap-icon--error\\" role=\\"presentation\\"></i>
+    <div role=\\"button\\" tabindex=\\"0\\" aria-roledescription=\\"Object Status Button\\" class=\\"fd-object-status fd-object-status--negative fd-object-status--link\\">
+        <i class=\\"fd-object-status__icon sap-icon--error\\" role=\\"presentation\\" aria-hidden=\\"true\\"></i>
         <span class=\\"fd-object-status__text\\">Negative</span>
-    </a>
-    <a href=\\"#\\"  class=\\"fd-object-status fd-object-status--critical fd-object-status--link\\">
-        <i class=\\"fd-object-status__icon sap-icon--alert\\" role=\\"presentation\\"></i>
-        <span class=\\"fd-object-status__text\\">Critical</span>
-    </a>
-    <a href=\\"#\\"class=\\"fd-object-status fd-object-status--positive fd-object-status--link\\">
-        <i class=\\"fd-object-status__icon sap-icon--sys-enter-2\\" role=\\"presentation\\"></i>
-        <span class=\\"fd-object-status__text\\">Positive</span>
-    </a>
-    <span role=\\"button\\" class=\\"fd-object-status fd-object-status--informative fd-object-status--link\\" tabindex=\\"0\\">
-        <i class=\\"fd-object-status__icon sap-icon--information\\" role=\\"presentation\\"></i>
-        <span class=\\"fd-object-status__text\\">Info</span>
-    </span>
-    <span role=\\"button\\" class=\\"fd-object-status fd-object-status--link\\" tabindex=\\"0\\">
-        <span class=\\"fd-object-status__text\\">Neutral</span>
-    </span>
+        <span class=\\"fd-object-status__sr-only\\">Invalid Entry</span>
+    </div>
 
-    <a href=\\"#\\"  class=\\"fd-object-status fd-object-status--link fd-object-status--indication-1\\">
+    <div role=\\"button\\" tabindex=\\"0\\" aria-roledescription=\\"Object Status Button\\" class=\\"fd-object-status fd-object-status--critical fd-object-status--link\\">
+        <i class=\\"fd-object-status__icon sap-icon--alert\\" role=\\"presentation\\" aria-hidden=\\"true\\"></i>
+        <span class=\\"fd-object-status__text\\">Critical</span>
+        <span class=\\"fd-object-status__sr-only\\">Warning issued</span>
+    </div>
+
+    <div role=\\"button\\" tabindex=\\"0\\" aria-roledescription=\\"Object Status Button\\" class=\\"fd-object-status fd-object-status--positive fd-object-status--link\\">
+        <i class=\\"fd-object-status__icon sap-icon--sys-enter-2\\" role=\\"presentation\\" aria-hidden=\\"true\\"></i>
+        <span class=\\"fd-object-status__text\\">Positive</span>
+        <span class=\\"fd-object-status__sr-only\\">Entry successfully validated</span>
+    </div>
+
+    <div role=\\"button\\" tabindex=\\"0\\" aria-roledescription=\\"Object Status Button\\" class=\\"fd-object-status fd-object-status--informative fd-object-status--link\\" tabindex=\\"0\\">
+        <i class=\\"fd-object-status__icon sap-icon--information\\" role=\\"presentation\\" aria-hidden=\\"true\\"></i>
+        <span class=\\"fd-object-status__text\\">Info</span>
+        <span class=\\"fd-object-status__sr-only\\">Informative entry</span>
+    </div>
+
+    <div role=\\"button\\" tabindex=\\"0\\" aria-roledescription=\\"Object Status Button\\" class=\\"fd-object-status fd-object-status--link\\" tabindex=\\"0\\">
+        <span class=\\"fd-object-status__text\\">Neutral</span>
+        <span class=\\"fd-object-status__sr-only\\">Neutral entry</span>
+    </div>
+
+    <div role=\\"button\\" tabindex=\\"0\\" aria-roledescription=\\"Object Status Button\\" class=\\"fd-object-status fd-object-status--link fd-object-status--indication-1\\">
         <span class=\\"fd-object-status__text\\">Dark Red</span>
-    </a>
-    <a href=\\"#\\"  class=\\"fd-object-status fd-object-status--link fd-object-status--indication-2\\">
+        <span class=\\"fd-object-status__sr-only\\">Indication Color 1</span>
+    </div>
+
+    <div role=\\"button\\" tabindex=\\"0\\" aria-roledescription=\\"Object Status Button\\" class=\\"fd-object-status fd-object-status--link fd-object-status--indication-2\\">
         <span class=\\"fd-object-status__text\\">Red</span>
-    </a>
-    <a href=\\"#\\"  class=\\"fd-object-status fd-object-status--link fd-object-status--indication-3\\">
+        <span class=\\"fd-object-status__sr-only\\">Indication Color 2</span>
+    </div>
+
+    <div role=\\"button\\" tabindex=\\"0\\" aria-roledescription=\\"Object Status Button\\" class=\\"fd-object-status fd-object-status--link fd-object-status--indication-3\\">
         <span class=\\"fd-object-status__text\\">Yellow</span>
-    </a>
-    <a href=\\"#\\"  class=\\"fd-object-status fd-object-status--link fd-object-status--indication-4\\">
+        <span class=\\"fd-object-status__sr-only\\">Indication Color 3</span>
+    </div>
+
+    <div role=\\"button\\" tabindex=\\"0\\" aria-roledescription=\\"Object Status Button\\" class=\\"fd-object-status fd-object-status--link fd-object-status--indication-4\\">
         <span class=\\"fd-object-status__text\\">Green</span>
-    </a>
-    <a href=\\"#\\"  class=\\"fd-object-status fd-object-status--link fd-object-status--indication-5\\">
+        <span class=\\"fd-object-status__sr-only\\">Indication Color 4</span>
+    </div>
+
+    <div role=\\"button\\" tabindex=\\"0\\" aria-roledescription=\\"Object Status Button\\" class=\\"fd-object-status fd-object-status--link fd-object-status--indication-5\\">
         <span class=\\"fd-object-status__text\\">Blue</span>
-    </a>
-    <span role=\\"button\\" class=\\"fd-object-status fd-object-status--link fd-object-status--indication-6\\" tabindex=\\"0\\">
+        <span class=\\"fd-object-status__sr-only\\">Indication Color 5</span>
+    </div>
+
+    <div role=\\"button\\" tabindex=\\"0\\" aria-roledescription=\\"Object Status Button\\" class=\\"fd-object-status fd-object-status--link fd-object-status--indication-6\\" tabindex=\\"0\\">
         <span class=\\"fd-object-status__text\\">Teal</span>
-    </span>
-    <span role=\\"button\\" class=\\"fd-object-status fd-object-status--link fd-object-status--indication-7\\" tabindex=\\"0\\">
+        <span class=\\"fd-object-status__sr-only\\">Indication Color 6</span>
+    </div>
+
+    <div role=\\"button\\" tabindex=\\"0\\" aria-roledescription=\\"Object Status Button\\" class=\\"fd-object-status fd-object-status--link fd-object-status--indication-7\\" tabindex=\\"0\\">
         <span class=\\"fd-object-status__text\\">Purple</span>
-    </span>
-    <span role=\\"button\\" class=\\"fd-object-status fd-object-status--link fd-object-status--indication-8\\" tabindex=\\"0\\">
+        <span class=\\"fd-object-status__sr-only\\">Indication Color 7</span>
+    </div>
+
+    <div role=\\"button\\" tabindex=\\"0\\" aria-roledescription=\\"Object Status Button\\" class=\\"fd-object-status fd-object-status--link fd-object-status--indication-8\\" tabindex=\\"0\\">
         <span class=\\"fd-object-status__text\\">Pink</span>
-    </span>
+        <span class=\\"fd-object-status__sr-only\\">Indication Color 8</span>
+    </div>
 </div>
 <br><br>
 <h3>Hover State</h3>
 <div class=\\"fddocs-container\\">
-    <a href=\\"#\\"  class=\\"fd-object-status fd-object-status--negative fd-object-status--link is-hover\\">
-        <i class=\\"fd-object-status__icon sap-icon--error\\" role=\\"presentation\\"></i>
+    <div role=\\"button\\" tabindex=\\"0\\" aria-roledescription=\\"Object Status Button\\" class=\\"fd-object-status fd-object-status--negative fd-object-status--link is-hover\\">
+        <i class=\\"fd-object-status__icon sap-icon--error\\" role=\\"presentation\\" aria-hidden=\\"true\\"></i>
         <span class=\\"fd-object-status__text\\">Negative</span>
-    </a>
-    <a href=\\"#\\"  class=\\"fd-object-status fd-object-status--critical fd-object-status--link is-hover\\">
-        <i class=\\"fd-object-status__icon sap-icon--alert\\" role=\\"presentation\\"></i>
-        <span class=\\"fd-object-status__text\\">Critical</span>
-    </a>
-    <a href=\\"#\\"class=\\"fd-object-status fd-object-status--positive fd-object-status--link is-hover\\">
-        <i class=\\"fd-object-status__icon sap-icon--sys-enter-2\\" role=\\"presentation\\"></i>
-        <span class=\\"fd-object-status__text\\">Positive</span>
-    </a>
-    <span role=\\"button\\" class=\\"fd-object-status fd-object-status--informative fd-object-status--link is-hover\\" tabindex=\\"0\\">
-        <i class=\\"fd-object-status__icon sap-icon--information\\" role=\\"presentation\\"></i>
-        <span class=\\"fd-object-status__text\\">Info</span>
-    </span>
-    <span role=\\"button\\" class=\\"fd-object-status fd-object-status--link is-hover\\" tabindex=\\"0\\">
-        <span class=\\"fd-object-status__text\\">Neutral</span>
-    </span>
+        <span class=\\"fd-object-status__sr-only\\">Invalid Entry</span>
+    </div>
 
-    <a href=\\"#\\"  class=\\"fd-object-status fd-object-status--link fd-object-status--indication-1 is-hover\\">
+    <div role=\\"button\\" tabindex=\\"0\\" aria-roledescription=\\"Object Status Button\\" class=\\"fd-object-status fd-object-status--critical fd-object-status--link is-hover\\">
+        <i class=\\"fd-object-status__icon sap-icon--alert\\" role=\\"presentation\\" aria-hidden=\\"true\\"></i>
+        <span class=\\"fd-object-status__text\\">Critical</span>
+        <span class=\\"fd-object-status__sr-only\\">Warning issued</span>
+    </div>
+
+    <div role=\\"button\\" tabindex=\\"0\\" aria-roledescription=\\"Object Status Button\\" class=\\"fd-object-status fd-object-status--positive fd-object-status--link is-hover\\">
+        <i class=\\"fd-object-status__icon sap-icon--sys-enter-2\\" role=\\"presentation\\" aria-hidden=\\"true\\"></i>
+        <span class=\\"fd-object-status__text\\">Positive</span>
+        <span class=\\"fd-object-status__sr-only\\">Entry successfully validated</span>
+    </div>
+
+    <div role=\\"button\\" tabindex=\\"0\\" aria-roledescription=\\"Object Status Button\\" class=\\"fd-object-status fd-object-status--informative fd-object-status--link is-hover\\" tabindex=\\"0\\">
+        <i class=\\"fd-object-status__icon sap-icon--information\\" role=\\"presentation\\" aria-hidden=\\"true\\"></i>
+        <span class=\\"fd-object-status__text\\">Info</span>
+        <span class=\\"fd-object-status__sr-only\\">Informative entry</span>
+    </div>
+
+    <div role=\\"button\\" tabindex=\\"0\\" aria-roledescription=\\"Object Status Button\\" class=\\"fd-object-status fd-object-status--link is-hover\\" tabindex=\\"0\\">
+        <span class=\\"fd-object-status__text\\">Neutral</span>
+        <span class=\\"fd-object-status__sr-only\\">Neutral entry</span>
+    </div>
+
+    <div role=\\"button\\" tabindex=\\"0\\" aria-roledescription=\\"Object Status Button\\" class=\\"fd-object-status fd-object-status--link fd-object-status--indication-1 is-hover\\">
         <span class=\\"fd-object-status__text\\">Dark Red</span>
-    </a>
-    <a href=\\"#\\"  class=\\"fd-object-status fd-object-status--link fd-object-status--indication-2 is-hover\\">
+        <span class=\\"fd-object-status__sr-only\\">Indication Color 1</span>
+    </div>
+
+    <div role=\\"button\\" tabindex=\\"0\\" aria-roledescription=\\"Object Status Button\\" class=\\"fd-object-status fd-object-status--link fd-object-status--indication-2 is-hover\\">
         <span class=\\"fd-object-status__text\\">Red</span>
-    </a>
-    <a href=\\"#\\"  class=\\"fd-object-status fd-object-status--link fd-object-status--indication-3 is-hover\\">
+        <span class=\\"fd-object-status__sr-only\\">Indication Color 2</span>
+    </div>
+
+    <div role=\\"button\\" tabindex=\\"0\\" aria-roledescription=\\"Object Status Button\\" class=\\"fd-object-status fd-object-status--link fd-object-status--indication-3 is-hover\\">
         <span class=\\"fd-object-status__text\\">Yellow</span>
-    </a>
-    <a href=\\"#\\"  class=\\"fd-object-status fd-object-status--link fd-object-status--indication-4 is-hover\\">
+        <span class=\\"fd-object-status__sr-only\\">Indication Color 3</span>
+    </div>
+
+    <div role=\\"button\\" tabindex=\\"0\\" aria-roledescription=\\"Object Status Button\\" class=\\"fd-object-status fd-object-status--link fd-object-status--indication-4 is-hover\\">
         <span class=\\"fd-object-status__text\\">Green</span>
-    </a>
-    <a href=\\"#\\"  class=\\"fd-object-status fd-object-status--link fd-object-status--indication-5 is-hover\\">
+        <span class=\\"fd-object-status__sr-only\\">Indication Color 4</span>
+    </div>
+
+    <div role=\\"button\\" tabindex=\\"0\\" aria-roledescription=\\"Object Status Button\\" class=\\"fd-object-status fd-object-status--link fd-object-status--indication-5 is-hover\\">
         <span class=\\"fd-object-status__text\\">Blue</span>
-    </a>
-    <span role=\\"button\\" class=\\"fd-object-status fd-object-status--link fd-object-status--indication-6 is-hover\\" tabindex=\\"0\\">
+        <span class=\\"fd-object-status__sr-only\\">Indication Color 5</span>
+    </div>
+
+    <div role=\\"button\\" tabindex=\\"0\\" aria-roledescription=\\"Object Status Button\\" class=\\"fd-object-status fd-object-status--link fd-object-status--indication-6 is-hover\\" tabindex=\\"0\\">
         <span class=\\"fd-object-status__text\\">Teal</span>
-    </span>
-    <span role=\\"button\\" class=\\"fd-object-status fd-object-status--link fd-object-status--indication-7 is-hover\\" tabindex=\\"0\\">
+        <span class=\\"fd-object-status__sr-only\\">Indication Color 6</span>
+    </div>
+
+    <div role=\\"button\\" tabindex=\\"0\\" aria-roledescription=\\"Object Status Button\\" class=\\"fd-object-status fd-object-status--link fd-object-status--indication-7 is-hover\\" tabindex=\\"0\\">
         <span class=\\"fd-object-status__text\\">Purple</span>
-    </span>
-    <span role=\\"button\\" class=\\"fd-object-status fd-object-status--link fd-object-status--indication-8 is-hover\\" tabindex=\\"0\\">
+        <span class=\\"fd-object-status__sr-only\\">Indication Color 7</span>
+    </div>
+
+    <div role=\\"button\\" tabindex=\\"0\\" aria-roledescription=\\"Object Status Button\\" class=\\"fd-object-status fd-object-status--link fd-object-status--indication-8 is-hover\\" tabindex=\\"0\\">
         <span class=\\"fd-object-status__text\\">Pink</span>
-    </span>
+        <span class=\\"fd-object-status__sr-only\\">Indication Color 8</span>
+    </div>
 </div>
 <br><br>
 <h3>Down State</h3>
 <div class=\\"fddocs-container\\">
-    <a href=\\"#\\"  class=\\"fd-object-status fd-object-status--negative fd-object-status--link is-active\\">
-        <i class=\\"fd-object-status__icon sap-icon--error\\" role=\\"presentation\\"></i>
+    <div role=\\"button\\" tabindex=\\"0\\" aria-roledescription=\\"Object Status Button\\" class=\\"fd-object-status fd-object-status--negative fd-object-status--link is-active\\">
+        <i class=\\"fd-object-status__icon sap-icon--error\\" role=\\"presentation\\" aria-hidden=\\"true\\"></i>
         <span class=\\"fd-object-status__text\\">Negative</span>
-    </a>
-    <a href=\\"#\\"  class=\\"fd-object-status fd-object-status--critical fd-object-status--link is-active\\">
-        <i class=\\"fd-object-status__icon sap-icon--alert\\" role=\\"presentation\\"></i>
-        <span class=\\"fd-object-status__text\\">Critical</span>
-    </a>
-    <a href=\\"#\\"class=\\"fd-object-status fd-object-status--positive fd-object-status--link is-active\\">
-        <i class=\\"fd-object-status__icon sap-icon--sys-enter-2\\" role=\\"presentation\\"></i>
-        <span class=\\"fd-object-status__text\\">Positive</span>
-    </a>
-    <span role=\\"button\\" class=\\"fd-object-status fd-object-status--informative fd-object-status--link is-active\\" tabindex=\\"0\\">
-        <i class=\\"fd-object-status__icon sap-icon--information\\" role=\\"presentation\\"></i>
-        <span class=\\"fd-object-status__text\\">Info</span>
-    </span>
-    <span role=\\"button\\" class=\\"fd-object-status fd-object-status--link is-active\\" tabindex=\\"0\\">
-        <span class=\\"fd-object-status__text\\">Neutral</span>
-    </span>
+        <span class=\\"fd-object-status__sr-only\\">Invalid Entry</span>
+    </div>
 
-    <a href=\\"#\\"  class=\\"fd-object-status fd-object-status--link fd-object-status--indication-1 is-active\\">
+    <div role=\\"button\\" tabindex=\\"0\\" aria-roledescription=\\"Object Status Button\\" class=\\"fd-object-status fd-object-status--critical fd-object-status--link is-active\\">
+        <i class=\\"fd-object-status__icon sap-icon--alert\\" role=\\"presentation\\" aria-hidden=\\"true\\"></i>
+        <span class=\\"fd-object-status__text\\">Critical</span>
+        <span class=\\"fd-object-status__sr-only\\">Warning issued</span>
+    </div>
+
+    <div role=\\"button\\" tabindex=\\"0\\" aria-roledescription=\\"Object Status Button\\" class=\\"fd-object-status fd-object-status--positive fd-object-status--link is-active\\">
+        <i class=\\"fd-object-status__icon sap-icon--sys-enter-2\\" role=\\"presentation\\" aria-hidden=\\"true\\"></i>
+        <span class=\\"fd-object-status__text\\">Positive</span>
+        <span class=\\"fd-object-status__sr-only\\">Entry successfully validated</span>
+    </div>
+
+    <div role=\\"button\\" tabindex=\\"0\\" aria-roledescription=\\"Object Status Button\\" class=\\"fd-object-status fd-object-status--informative fd-object-status--link is-active\\" tabindex=\\"0\\">
+        <i class=\\"fd-object-status__icon sap-icon--information\\" role=\\"presentation\\" aria-hidden=\\"true\\"></i>
+        <span class=\\"fd-object-status__text\\">Info</span>
+        <span class=\\"fd-object-status__sr-only\\">Informative entry</span>
+    </div>
+
+    <div role=\\"button\\" tabindex=\\"0\\" aria-roledescription=\\"Object Status Button\\" class=\\"fd-object-status fd-object-status--link is-active\\" tabindex=\\"0\\">
+        <span class=\\"fd-object-status__text\\">Neutral</span>
+        <span class=\\"fd-object-status__sr-only\\">Neutral entry</span>
+    </div>
+
+    <div role=\\"button\\" tabindex=\\"0\\" aria-roledescription=\\"Object Status Button\\" class=\\"fd-object-status fd-object-status--link fd-object-status--indication-1 is-active\\">
         <span class=\\"fd-object-status__text\\">Dark Red</span>
-    </a>
-    <a href=\\"#\\"  class=\\"fd-object-status fd-object-status--link fd-object-status--indication-2 is-active\\">
+        <span class=\\"fd-object-status__sr-only\\">Indication Color 1</span>
+    </div>
+
+    <div role=\\"button\\" tabindex=\\"0\\" aria-roledescription=\\"Object Status Button\\" class=\\"fd-object-status fd-object-status--link fd-object-status--indication-2 is-active\\">
         <span class=\\"fd-object-status__text\\">Red</span>
-    </a>
-    <a href=\\"#\\"  class=\\"fd-object-status fd-object-status--link fd-object-status--indication-3 is-active\\">
+        <span class=\\"fd-object-status__sr-only\\">Indication Color 2</span>
+    </div>
+
+    <div role=\\"button\\" tabindex=\\"0\\" aria-roledescription=\\"Object Status Button\\" class=\\"fd-object-status fd-object-status--link fd-object-status--indication-3 is-active\\">
         <span class=\\"fd-object-status__text\\">Yellow</span>
-    </a>
-    <a href=\\"#\\"  class=\\"fd-object-status fd-object-status--link fd-object-status--indication-4 is-active\\">
+        <span class=\\"fd-object-status__sr-only\\">Indication Color 3</span>
+    </div>
+
+    <div role=\\"button\\" tabindex=\\"0\\" aria-roledescription=\\"Object Status Button\\" class=\\"fd-object-status fd-object-status--link fd-object-status--indication-4 is-active\\">
         <span class=\\"fd-object-status__text\\">Green</span>
-    </a>
-    <a href=\\"#\\"  class=\\"fd-object-status fd-object-status--link fd-object-status--indication-5 is-active\\">
+        <span class=\\"fd-object-status__sr-only\\">Indication Color 4</span>
+    </div>
+
+    <div role=\\"button\\" tabindex=\\"0\\" aria-roledescription=\\"Object Status Button\\" class=\\"fd-object-status fd-object-status--link fd-object-status--indication-5 is-active\\">
         <span class=\\"fd-object-status__text\\">Blue</span>
-    </a>
-    <span role=\\"button\\" class=\\"fd-object-status fd-object-status--link fd-object-status--indication-6 is-active\\" tabindex=\\"0\\">
+        <span class=\\"fd-object-status__sr-only\\">Indication Color 5</span>
+    </div>
+
+    <div role=\\"button\\" tabindex=\\"0\\" aria-roledescription=\\"Object Status Button\\" class=\\"fd-object-status fd-object-status--link fd-object-status--indication-6 is-active\\" tabindex=\\"0\\">
         <span class=\\"fd-object-status__text\\">Teal</span>
-    </span>
-    <span role=\\"button\\" class=\\"fd-object-status fd-object-status--link fd-object-status--indication-7 is-active\\" tabindex=\\"0\\">
+        <span class=\\"fd-object-status__sr-only\\">Indication Color 6</span>
+    </div>
+
+    <div role=\\"button\\" tabindex=\\"0\\" aria-roledescription=\\"Object Status Button\\" class=\\"fd-object-status fd-object-status--link fd-object-status--indication-7 is-active\\" tabindex=\\"0\\">
         <span class=\\"fd-object-status__text\\">Purple</span>
-    </span>
-    <span role=\\"button\\" class=\\"fd-object-status fd-object-status--link fd-object-status--indication-8 is-active\\" tabindex=\\"0\\">
+        <span class=\\"fd-object-status__sr-only\\">Indication Color 7</span>
+    </div>
+
+    <div role=\\"button\\" tabindex=\\"0\\" aria-roledescription=\\"Object Status Button\\" class=\\"fd-object-status fd-object-status--link fd-object-status--indication-8 is-active\\" tabindex=\\"0\\">
         <span class=\\"fd-object-status__text\\">Pink</span>
-    </span>
+        <span class=\\"fd-object-status__sr-only\\">Indication Color 8</span>
+    </div>
 </div>
 <br><br>
 <h3>Visited State</h3>
 <div class=\\"fddocs-container\\">
-    <a href=\\"#\\"  class=\\"fd-object-status fd-object-status--negative fd-object-status--link is-visited\\">
-        <i class=\\"fd-object-status__icon sap-icon--error\\" role=\\"presentation\\"></i>
+    <div role=\\"button\\" tabindex=\\"0\\" aria-roledescription=\\"Object Status Button\\" class=\\"fd-object-status fd-object-status--negative fd-object-status--link is-visited\\">
+        <i class=\\"fd-object-status__icon sap-icon--error\\" role=\\"presentation\\" aria-hidden=\\"true\\"></i>
         <span class=\\"fd-object-status__text\\">Negative</span>
-    </a>
-    <a href=\\"#\\"  class=\\"fd-object-status fd-object-status--critical fd-object-status--link is-visited\\">
-        <i class=\\"fd-object-status__icon sap-icon--alert\\" role=\\"presentation\\"></i>
-        <span class=\\"fd-object-status__text\\">Critical</span>
-    </a>
-    <a href=\\"#\\"class=\\"fd-object-status fd-object-status--positive fd-object-status--link is-visited\\">
-        <i class=\\"fd-object-status__icon sap-icon--sys-enter-2\\" role=\\"presentation\\"></i>
-        <span class=\\"fd-object-status__text\\">Positive</span>
-    </a>
-    <span role=\\"button\\" class=\\"fd-object-status fd-object-status--informative fd-object-status--link is-visited\\" tabindex=\\"0\\">
-        <i class=\\"fd-object-status__icon sap-icon--information\\" role=\\"presentation\\"></i>
-        <span class=\\"fd-object-status__text\\">Info</span>
-    </span>
-    <span role=\\"button\\" class=\\"fd-object-status fd-object-status--link is-visited\\" tabindex=\\"0\\">
-        <span class=\\"fd-object-status__text\\">Neutral</span>
-    </span>
+        <span class=\\"fd-object-status__sr-only\\">Invalid Entry</span>
+    </div>
 
-    <a href=\\"#\\"  class=\\"fd-object-status fd-object-status--link fd-object-status--indication-1 is-visited\\">
+    <div role=\\"button\\" tabindex=\\"0\\" aria-roledescription=\\"Object Status Button\\" class=\\"fd-object-status fd-object-status--critical fd-object-status--link is-visited\\">
+        <i class=\\"fd-object-status__icon sap-icon--alert\\" role=\\"presentation\\" aria-hidden=\\"true\\"></i>
+        <span class=\\"fd-object-status__text\\">Critical</span>
+        <span class=\\"fd-object-status__sr-only\\">Warning issued</span>
+    </div>
+
+    <div role=\\"button\\" tabindex=\\"0\\" aria-roledescription=\\"Object Status Button\\" class=\\"fd-object-status fd-object-status--positive fd-object-status--link is-visited\\">
+        <i class=\\"fd-object-status__icon sap-icon--sys-enter-2\\" role=\\"presentation\\" aria-hidden=\\"true\\"></i>
+        <span class=\\"fd-object-status__text\\">Positive</span>
+        <span class=\\"fd-object-status__sr-only\\">Entry successfully validated</span>
+    </div>
+
+    <div role=\\"button\\" tabindex=\\"0\\" aria-roledescription=\\"Object Status Button\\" class=\\"fd-object-status fd-object-status--informative fd-object-status--link is-visited\\" tabindex=\\"0\\">
+        <i class=\\"fd-object-status__icon sap-icon--information\\" role=\\"presentation\\" aria-hidden=\\"true\\"></i>
+        <span class=\\"fd-object-status__text\\">Info</span>
+        <span class=\\"fd-object-status__sr-only\\">Informative entry</span>
+    </div>
+
+    <div role=\\"button\\" tabindex=\\"0\\" aria-roledescription=\\"Object Status Button\\" class=\\"fd-object-status fd-object-status--link is-visited\\" tabindex=\\"0\\">
+        <span class=\\"fd-object-status__text\\">Neutral</span>
+        <span class=\\"fd-object-status__sr-only\\">Neutral entry</span>
+    </div>
+
+    <div role=\\"button\\" tabindex=\\"0\\" aria-roledescription=\\"Object Status Button\\" class=\\"fd-object-status fd-object-status--link fd-object-status--indication-1 is-visited\\">
         <span class=\\"fd-object-status__text\\">Dark Red</span>
-    </a>
-    <a href=\\"#\\"  class=\\"fd-object-status fd-object-status--link fd-object-status--indication-2 is-visited\\">
+        <span class=\\"fd-object-status__sr-only\\">Indication Color 1</span>
+    </div>
+
+    <div role=\\"button\\" tabindex=\\"0\\" aria-roledescription=\\"Object Status Button\\" class=\\"fd-object-status fd-object-status--link fd-object-status--indication-2 is-visited\\">
         <span class=\\"fd-object-status__text\\">Red</span>
-    </a>
-    <a href=\\"#\\"  class=\\"fd-object-status fd-object-status--link fd-object-status--indication-3 is-visited\\">
+        <span class=\\"fd-object-status__sr-only\\">Indication Color 2</span>
+    </div>
+
+    <div role=\\"button\\" tabindex=\\"0\\" aria-roledescription=\\"Object Status Button\\" class=\\"fd-object-status fd-object-status--link fd-object-status--indication-3 is-visited\\">
         <span class=\\"fd-object-status__text\\">Yellow</span>
-    </a>
-    <a href=\\"#\\"  class=\\"fd-object-status fd-object-status--link fd-object-status--indication-4 is-visited\\">
+        <span class=\\"fd-object-status__sr-only\\">Indication Color 3</span>
+    </div>
+
+    <div role=\\"button\\" tabindex=\\"0\\" aria-roledescription=\\"Object Status Button\\" class=\\"fd-object-status fd-object-status--link fd-object-status--indication-4 is-visited\\">
         <span class=\\"fd-object-status__text\\">Green</span>
-    </a>
-    <a href=\\"#\\"  class=\\"fd-object-status fd-object-status--link fd-object-status--indication-5 is-visited\\">
+        <span class=\\"fd-object-status__sr-only\\">Indication Color 4</span>
+    </div>
+
+    <div role=\\"button\\" tabindex=\\"0\\" aria-roledescription=\\"Object Status Button\\" class=\\"fd-object-status fd-object-status--link fd-object-status--indication-5 is-visited\\">
         <span class=\\"fd-object-status__text\\">Blue</span>
-    </a>
-    <span role=\\"button\\" class=\\"fd-object-status fd-object-status--link fd-object-status--indication-6 is-visited\\" tabindex=\\"0\\">
+        <span class=\\"fd-object-status__sr-only\\">Indication Color 5</span>
+    </div>
+
+    <div role=\\"button\\" tabindex=\\"0\\" aria-roledescription=\\"Object Status Button\\" class=\\"fd-object-status fd-object-status--link fd-object-status--indication-6 is-visited\\" tabindex=\\"0\\">
         <span class=\\"fd-object-status__text\\">Teal</span>
-    </span>
-    <span role=\\"button\\" class=\\"fd-object-status fd-object-status--link fd-object-status--indication-7 is-visited\\" tabindex=\\"0\\">
+        <span class=\\"fd-object-status__sr-only\\">Indication Color 6</span>
+    </div>
+
+    <div role=\\"button\\" tabindex=\\"0\\" aria-roledescription=\\"Object Status Button\\" class=\\"fd-object-status fd-object-status--link fd-object-status--indication-7 is-visited\\" tabindex=\\"0\\">
         <span class=\\"fd-object-status__text\\">Purple</span>
-    </span>
-    <span role=\\"button\\" class=\\"fd-object-status fd-object-status--link fd-object-status--indication-8 is-visited\\" tabindex=\\"0\\">
+        <span class=\\"fd-object-status__sr-only\\">Indication Color 7</span>
+    </div>
+
+    <div role=\\"button\\" tabindex=\\"0\\" aria-roledescription=\\"Object Status Button\\" class=\\"fd-object-status fd-object-status--link fd-object-status--indication-8 is-visited\\" tabindex=\\"0\\">
         <span class=\\"fd-object-status__text\\">Pink</span>
-    </span>
+        <span class=\\"fd-object-status__sr-only\\">Indication Color 8</span>
+    </div>
 </div>
 <br><br>
 <h3>Focus State</h3>
 <div class=\\"fddocs-container\\">
-    <a href=\\"#\\"  class=\\"fd-object-status fd-object-status--negative fd-object-status--link is-focus\\">
-        <i class=\\"fd-object-status__icon sap-icon--error\\" role=\\"presentation\\"></i>
+    <div role=\\"button\\" tabindex=\\"0\\" aria-roledescription=\\"Object Status Button\\" class=\\"fd-object-status fd-object-status--negative fd-object-status--link is-focus\\">
+        <i class=\\"fd-object-status__icon sap-icon--error\\" role=\\"presentation\\" aria-hidden=\\"true\\"></i>
         <span class=\\"fd-object-status__text\\">Negative</span>
-    </a>
-    <a href=\\"#\\"  class=\\"fd-object-status fd-object-status--critical fd-object-status--link is-focus\\">
-        <i class=\\"fd-object-status__icon sap-icon--alert\\" role=\\"presentation\\"></i>
-        <span class=\\"fd-object-status__text\\">Critical</span>
-    </a>
-    <a href=\\"#\\"class=\\"fd-object-status fd-object-status--positive fd-object-status--link is-focus\\">
-        <i class=\\"fd-object-status__icon sap-icon--sys-enter-2\\" role=\\"presentation\\"></i>
-        <span class=\\"fd-object-status__text\\">Positive</span>
-    </a>
-    <span role=\\"button\\" class=\\"fd-object-status fd-object-status--informative fd-object-status--link is-focus\\" tabindex=\\"0\\">
-        <i class=\\"fd-object-status__icon sap-icon--information\\" role=\\"presentation\\"></i>
-        <span class=\\"fd-object-status__text\\">Info</span>
-    </span>
-    <span role=\\"button\\" class=\\"fd-object-status fd-object-status--link is-focus\\" tabindex=\\"0\\">
-        <span class=\\"fd-object-status__text\\">Neutral</span>
-    </span>
+        <span class=\\"fd-object-status__sr-only\\">Invalid Entry</span>
+    </div>
 
-    <a href=\\"#\\"  class=\\"fd-object-status fd-object-status--link fd-object-status--indication-1 is-focus\\">
+    <div role=\\"button\\" tabindex=\\"0\\" aria-roledescription=\\"Object Status Button\\" class=\\"fd-object-status fd-object-status--critical fd-object-status--link is-focus\\">
+        <i class=\\"fd-object-status__icon sap-icon--alert\\" role=\\"presentation\\" aria-hidden=\\"true\\"></i>
+        <span class=\\"fd-object-status__text\\">Critical</span>
+        <span class=\\"fd-object-status__sr-only\\">Warning issued</span>
+    </div>
+
+    <div role=\\"button\\" tabindex=\\"0\\" aria-roledescription=\\"Object Status Button\\" class=\\"fd-object-status fd-object-status--positive fd-object-status--link is-focus\\">
+        <i class=\\"fd-object-status__icon sap-icon--sys-enter-2\\" role=\\"presentation\\" aria-hidden=\\"true\\"></i>
+        <span class=\\"fd-object-status__text\\">Positive</span>
+        <span class=\\"fd-object-status__sr-only\\">Entry successfully validated</span>
+    </div>
+
+    <div role=\\"button\\" tabindex=\\"0\\" aria-roledescription=\\"Object Status Button\\" class=\\"fd-object-status fd-object-status--informative fd-object-status--link is-focus\\" tabindex=\\"0\\">
+        <i class=\\"fd-object-status__icon sap-icon--information\\" role=\\"presentation\\" aria-hidden=\\"true\\"></i>
+        <span class=\\"fd-object-status__text\\">Info</span>
+        <span class=\\"fd-object-status__sr-only\\">Informative entry</span>
+    </div>
+
+    <div role=\\"button\\" tabindex=\\"0\\" aria-roledescription=\\"Object Status Button\\" class=\\"fd-object-status fd-object-status--link is-focus\\" tabindex=\\"0\\">
+        <span class=\\"fd-object-status__text\\">Neutral</span>
+        <span class=\\"fd-object-status__sr-only\\">Neutral entry</span>
+    </div>
+
+    <div role=\\"button\\" tabindex=\\"0\\" aria-roledescription=\\"Object Status Button\\" class=\\"fd-object-status fd-object-status--link fd-object-status--indication-1 is-focus\\">
         <span class=\\"fd-object-status__text\\">Dark Red</span>
-    </a>
-    <a href=\\"#\\"  class=\\"fd-object-status fd-object-status--link fd-object-status--indication-2 is-focus\\">
+        <span class=\\"fd-object-status__sr-only\\">Indication Color 1</span>
+    </div>
+
+    <div role=\\"button\\" tabindex=\\"0\\" aria-roledescription=\\"Object Status Button\\" class=\\"fd-object-status fd-object-status--link fd-object-status--indication-2 is-focus\\">
         <span class=\\"fd-object-status__text\\">Red</span>
-    </a>
-    <a href=\\"#\\"  class=\\"fd-object-status fd-object-status--link fd-object-status--indication-3 is-focus\\">
+        <span class=\\"fd-object-status__sr-only\\">Indication Color 2</span>
+    </div>
+
+    <div role=\\"button\\" tabindex=\\"0\\" aria-roledescription=\\"Object Status Button\\" class=\\"fd-object-status fd-object-status--link fd-object-status--indication-3 is-focus\\">
         <span class=\\"fd-object-status__text\\">Yellow</span>
-    </a>
-    <a href=\\"#\\"  class=\\"fd-object-status fd-object-status--link fd-object-status--indication-4 is-focus\\">
+        <span class=\\"fd-object-status__sr-only\\">Indication Color 3</span>
+    </div>
+
+    <div role=\\"button\\" tabindex=\\"0\\" aria-roledescription=\\"Object Status Button\\" class=\\"fd-object-status fd-object-status--link fd-object-status--indication-4 is-focus\\">
         <span class=\\"fd-object-status__text\\">Green</span>
-    </a>
-    <a href=\\"#\\"  class=\\"fd-object-status fd-object-status--link fd-object-status--indication-5 is-focus\\">
+        <span class=\\"fd-object-status__sr-only\\">Indication Color 4</span>
+    </div>
+
+    <div role=\\"button\\" tabindex=\\"0\\" aria-roledescription=\\"Object Status Button\\" class=\\"fd-object-status fd-object-status--link fd-object-status--indication-5 is-focus\\">
         <span class=\\"fd-object-status__text\\">Blue</span>
-    </a>
-    <span role=\\"button\\" class=\\"fd-object-status fd-object-status--link fd-object-status--indication-6 is-focus\\" tabindex=\\"0\\">
+        <span class=\\"fd-object-status__sr-only\\">Indication Color 5</span>
+    </div>
+
+    <div role=\\"button\\" tabindex=\\"0\\" aria-roledescription=\\"Object Status Button\\" class=\\"fd-object-status fd-object-status--link fd-object-status--indication-6 is-focus\\" tabindex=\\"0\\">
         <span class=\\"fd-object-status__text\\">Teal</span>
-    </span>
-    <span role=\\"button\\" class=\\"fd-object-status fd-object-status--link fd-object-status--indication-7 is-focus\\" tabindex=\\"0\\">
+        <span class=\\"fd-object-status__sr-only\\">Indication Color 6</span>
+    </div>
+
+    <div role=\\"button\\" tabindex=\\"0\\" aria-roledescription=\\"Object Status Button\\" class=\\"fd-object-status fd-object-status--link fd-object-status--indication-7 is-focus\\" tabindex=\\"0\\">
         <span class=\\"fd-object-status__text\\">Purple</span>
-    </span>
-    <span role=\\"button\\" class=\\"fd-object-status fd-object-status--link fd-object-status--indication-8 is-focus\\" tabindex=\\"0\\">
+        <span class=\\"fd-object-status__sr-only\\">Indication Color 7</span>
+    </div>
+
+    <div role=\\"button\\" tabindex=\\"0\\" aria-roledescription=\\"Object Status Button\\" class=\\"fd-object-status fd-object-status--link fd-object-status--indication-8 is-focus\\" tabindex=\\"0\\">
         <span class=\\"fd-object-status__text\\">Pink</span>
-    </span>
+        <span class=\\"fd-object-status__sr-only\\">Indication Color 8</span>
+    </div>
 </div>
 "
 `;
@@ -33738,27 +33858,43 @@ exports[`Check stories > Components/Object Status > Story GenericIndicationColor
 "<div class=\\"fddocs-container\\">
     <span class=\\"fd-object-status fd-object-status--indication-1\\">
         <span class=\\"fd-object-status__text\\">Dark Red</span>
+        <span class=\\"fd-object-status__sr-only\\">Object Status</span>
+        <span class=\\"fd-object-status__sr-only\\">Indication Color 1</span>
     </span>
     <span class=\\"fd-object-status fd-object-status--indication-2\\">
         <span class=\\"fd-object-status__text\\">Red</span>
+        <span class=\\"fd-object-status__sr-only\\">Object Status</span>
+        <span class=\\"fd-object-status__sr-only\\">Indication Color 2</span>
     </span>
     <span class=\\"fd-object-status fd-object-status--indication-3\\">
         <span class=\\"fd-object-status__text\\">Yellow</span>
+        <span class=\\"fd-object-status__sr-only\\">Object Status</span>
+        <span class=\\"fd-object-status__sr-only\\">Indication Color 3</span>
     </span>
     <span class=\\"fd-object-status fd-object-status--indication-4\\">
         <span class=\\"fd-object-status__text\\">Green</span>
+        <span class=\\"fd-object-status__sr-only\\">Object Status</span>
+        <span class=\\"fd-object-status__sr-only\\">Indication Color 4</span>
     </span>
     <span class=\\"fd-object-status fd-object-status--indication-5\\">
         <span class=\\"fd-object-status__text\\">Blue</span>
+        <span class=\\"fd-object-status__sr-only\\">Object Status</span>
+        <span class=\\"fd-object-status__sr-only\\">Indication Color 5</span>
     </span>
     <span class=\\"fd-object-status fd-object-status--indication-6\\">
         <span class=\\"fd-object-status__text\\">Teal</span>
+        <span class=\\"fd-object-status__sr-only\\">Object Status</span>
+        <span class=\\"fd-object-status__sr-only\\">Indication Color 6</span>
     </span>
     <span class=\\"fd-object-status fd-object-status--indication-7\\">
         <span class=\\"fd-object-status__text\\">Purple</span>
+        <span class=\\"fd-object-status__sr-only\\">Object Status</span>
+        <span class=\\"fd-object-status__sr-only\\">Indication Color 7</span>
     </span>
     <span class=\\"fd-object-status fd-object-status--indication-8\\">
         <span class=\\"fd-object-status__text\\">Pink</span>
+        <span class=\\"fd-object-status__sr-only\\">Object Status</span>
+        <span class=\\"fd-object-status__sr-only\\">Indication Color 8</span>
     </span>
 </div>
 "
@@ -33767,16 +33903,24 @@ exports[`Check stories > Components/Object Status > Story GenericIndicationColor
 exports[`Check stories > Components/Object Status > Story Icon > Should match snapshot 1`] = `
 "<div class=\\"fddocs-container\\">
     <span class=\\"fd-object-status fd-object-status--negative\\">
-        <i class=\\"fd-object-status__icon sap-icon--error\\" aria-label=\\"Negative\\"></i>
+        <i class=\\"fd-object-status__icon sap-icon--error\\" role=\\"presentation\\" aria-hidden=\\"true\\"></i>
+        <span class=\\"fd-object-status__sr-only\\">Object Status</span>
+        <span class=\\"fd-object-status__sr-only\\">Invalid Entry</span>
     </span>
     <span class=\\"fd-object-status fd-object-status--critical\\">
-        <i class=\\"fd-object-status__icon sap-icon--alert\\" aria-label=\\"Warning\\"></i>
+        <i class=\\"fd-object-status__icon sap-icon--alert\\" role=\\"presentation\\" aria-hidden=\\"true\\"></i>
+        <span class=\\"fd-object-status__sr-only\\">Object Status</span>
+        <span class=\\"fd-object-status__sr-only\\">Warning issued</span>
     </span>
     <span class=\\"fd-object-status fd-object-status--positive\\">
-        <i class=\\"fd-object-status__icon sap-icon--sys-enter-2\\" aria-label=\\"Correct\\"></i>
+        <i class=\\"fd-object-status__icon sap-icon--sys-enter-2\\" role=\\"presentation\\" aria-hidden=\\"true\\"></i>
+        <span class=\\"fd-object-status__sr-only\\">Object Status</span>
+        <span class=\\"fd-object-status__sr-only\\">Entry successfully validated</span>
     </span>
     <span class=\\"fd-object-status fd-object-status--informative\\">
-        <i class=\\"fd-object-status__icon sap-icon--information\\" aria-label=\\"More information\\"></i>
+        <i class=\\"fd-object-status__icon sap-icon--information\\" role=\\"presentation\\" aria-hidden=\\"true\\"></i>
+        <span class=\\"fd-object-status__sr-only\\">Object Status</span>
+        <span class=\\"fd-object-status__sr-only\\">Informative entry</span>
     </span>
 </div>
 "
@@ -33785,24 +33929,33 @@ exports[`Check stories > Components/Object Status > Story Icon > Should match sn
 exports[`Check stories > Components/Object Status > Story IconAndText > Should match snapshot 1`] = `
 "<div class=\\"fddocs-container\\">
     <span class=\\"fd-object-status fd-object-status--negative\\">
-        <i class=\\"fd-object-status__icon sap-icon--error\\" role=\\"presentation\\"></i>
+        <i class=\\"fd-object-status__icon sap-icon--error\\" role=\\"presentation\\" aria-hidden=\\"true\\"></i>
         <span class=\\"fd-object-status__text\\">Negative</span>
+        <span class=\\"fd-object-status__sr-only\\">Object Status</span>
+        <span class=\\"fd-object-status__sr-only\\">Invalid Entry</span>
     </span>
     <span class=\\"fd-object-status fd-object-status--critical\\">
-        <i class=\\"fd-object-status__icon sap-icon--alert\\" role=\\"presentation\\"></i>
+        <i class=\\"fd-object-status__icon sap-icon--alert\\" role=\\"presentation\\" aria-hidden=\\"true\\"></i>
         <span class=\\"fd-object-status__text\\">Critical</span>
+        <span class=\\"fd-object-status__sr-only\\">Object Status</span>
+        <span class=\\"fd-object-status__sr-only\\">Warning issued</span>
     </span>
     <span class=\\"fd-object-status fd-object-status--positive\\">
-        <i class=\\"fd-object-status__icon sap-icon--sys-enter-2\\" role=\\"presentation\\"></i>
+        <i class=\\"fd-object-status__icon sap-icon--sys-enter-2\\" role=\\"presentation\\" aria-hidden=\\"true\\"></i>
         <span class=\\"fd-object-status__text\\">Positive</span>
+        <span class=\\"fd-object-status__sr-only\\">Object Status</span>
+        <span class=\\"fd-object-status__sr-only\\">Entry successfully validated</span>
     </span>
     <span class=\\"fd-object-status fd-object-status--informative\\">
-        <i class=\\"fd-object-status__icon sap-icon--information\\" role=\\"presentation\\"></i>
+        <i class=\\"fd-object-status__icon sap-icon--information\\" role=\\"presentation\\" aria-hidden=\\"true\\"></i>
         <span class=\\"fd-object-status__text\\">Info</span>
+        <span class=\\"fd-object-status__sr-only\\">Object Status</span>
+        <span class=\\"fd-object-status__sr-only\\">Informative entry</span>
     </span>
     <span class=\\"fd-object-status fd-object-status--neutral\\">
-        <i class=\\"fd-object-status__icon sap-icon--circle-task-2\\" role=\\"presentation\\"></i>
+        <i class=\\"fd-object-status__icon sap-icon--circle-task-2\\" role=\\"presentation\\" aria-hidden=\\"true\\"></i>
         <span class=\\"fd-object-status__text\\">Neutral</span>
+        <span class=\\"fd-object-status__sr-only\\">Object Status</span>
     </span>
 </div>
 "
@@ -33812,40 +33965,58 @@ exports[`Check stories > Components/Object Status > Story Inverted > Should matc
 "<div class=\\"fddocs-container\\">
     <span class=\\"fd-object-status fd-object-status--negative fd-object-status--inverted\\">
         <span class=\\"fd-object-status__text\\">Inverted Negative</span>
+        <span class=\\"fd-object-status__sr-only\\">Object Status</span>
+        <span class=\\"fd-object-status__sr-only\\">Invalid Entry</span>
     </span>
     <span class=\\"fd-object-status fd-object-status--critical fd-object-status--inverted\\">
         <span class=\\"fd-object-status__text\\">Inverted Warning</span>
+        <span class=\\"fd-object-status__sr-only\\">Object Status</span>
+        <span class=\\"fd-object-status__sr-only\\">Warning issued</span>
     </span>
     <span class=\\"fd-object-status fd-object-status--positive fd-object-status--inverted\\">
         <span class=\\"fd-object-status__text\\">Inverted Success</span>
+        <span class=\\"fd-object-status__sr-only\\">Object Status</span>
+        <span class=\\"fd-object-status__sr-only\\">Entry successfully validated</span>
     </span>
     <span class=\\"fd-object-status fd-object-status--informative fd-object-status--inverted\\">
         <span class=\\"fd-object-status__text\\">Inverted informative</span>
+        <span class=\\"fd-object-status__sr-only\\">Object Status</span>
+        <span class=\\"fd-object-status__sr-only\\">Informative entry</span>
     </span>
     <span class=\\"fd-object-status fd-object-status--inverted\\">
         <span class=\\"fd-object-status__text\\">Inverted Neutral</span>
+        <span class=\\"fd-object-status__sr-only\\">Object Status</span>
     </span>
     <span class=\\"fd-object-status fd-object-status--inverted fd-object-status--negative\\">
-        <i class=\\"fd-object-status__icon sap-icon--error\\" role=\\"presentation\\"></i>
+        <i class=\\"fd-object-status__icon sap-icon--error\\" role=\\"presentation\\" aria-hidden=\\"true\\"></i>
     </span>
     <span class=\\"fd-object-status fd-object-status--inverted fd-object-status--negative\\">
-        <i class=\\"fd-object-status__icon sap-icon--error\\" role=\\"presentation\\"></i>
+        <i class=\\"fd-object-status__icon sap-icon--error\\" role=\\"presentation\\" aria-hidden=\\"true\\"></i>
         <span class=\\"fd-object-status__text\\">Negative</span>
+        <span class=\\"fd-object-status__sr-only\\">Object Status</span>
+        <span class=\\"fd-object-status__sr-only\\">Invalid Entry</span>
     </span>
     <span class=\\"fd-object-status fd-object-status--inverted fd-object-status--critical\\">
-        <i class=\\"fd-object-status__icon sap-icon--alert\\" role=\\"presentation\\"></i>
+        <i class=\\"fd-object-status__icon sap-icon--alert\\" role=\\"presentation\\" aria-hidden=\\"true\\"></i>
         <span class=\\"fd-object-status__text\\">Critical</span>
+        <span class=\\"fd-object-status__sr-only\\">Object Status</span>
+        <span class=\\"fd-object-status__sr-only\\">Warning issued</span>
     </span>
     <span class=\\"fd-object-status fd-object-status--inverted fd-object-status--positive\\">
-        <i class=\\"fd-object-status__icon sap-icon--sys-enter-2\\" role=\\"presentation\\"></i>
+        <i class=\\"fd-object-status__icon sap-icon--sys-enter-2\\" role=\\"presentation\\" aria-hidden=\\"true\\"></i>
         <span class=\\"fd-object-status__text\\">Positive</span>
+        <span class=\\"fd-object-status__sr-only\\">Object Status</span>
+        <span class=\\"fd-object-status__sr-only\\">Entry successfully validated</span>
     </span>
     <span class=\\"fd-object-status fd-object-status--inverted fd-object-status--informative\\">
-        <i class=\\"fd-object-status__icon sap-icon--information\\" role=\\"presentation\\"></i>
+        <i class=\\"fd-object-status__icon sap-icon--information\\" role=\\"presentation\\" aria-hidden=\\"true\\"></i>
         <span class=\\"fd-object-status__text\\">Informative</span>
+        <span class=\\"fd-object-status__sr-only\\">Object Status</span>
+        <span class=\\"fd-object-status__sr-only\\">Informative entry</span>
     </span>
     <span class=\\"fd-object-status fd-object-status--inverted\\">
         <span class=\\"fd-object-status__text\\">Neutral</span>
+        <span class=\\"fd-object-status__sr-only\\">Object Status</span>
     </span>
 </div>
 
@@ -33854,40 +34025,58 @@ exports[`Check stories > Components/Object Status > Story Inverted > Should matc
 <div class=\\"fddocs-container\\" style=\\"align-items: baseline; gap: 1rem;\\">
     <span class=\\"fd-object-status fd-object-status--negative fd-object-status--inverted fd-object-status--large\\">
         <span class=\\"fd-object-status__text\\">Inverted Negative</span>
+        <span class=\\"fd-object-status__sr-only\\">Object Status</span>
+        <span class=\\"fd-object-status__sr-only\\">Invalid Entry</span>
     </span>
     <span class=\\"fd-object-status fd-object-status--critical fd-object-status--inverted fd-object-status--large\\">
         <span class=\\"fd-object-status__text\\">Inverted Warning</span>
+        <span class=\\"fd-object-status__sr-only\\">Object Status</span>
+        <span class=\\"fd-object-status__sr-only\\">Warning issued</span>
     </span>
     <span class=\\"fd-object-status fd-object-status--positive fd-object-status--inverted fd-object-status--large\\">
         <span class=\\"fd-object-status__text\\">Inverted Success</span>
+        <span class=\\"fd-object-status__sr-only\\">Object Status</span>
+        <span class=\\"fd-object-status__sr-only\\">Entry successfully validated</span>
     </span>
     <span class=\\"fd-object-status fd-object-status--informative fd-object-status--inverted fd-object-status--large\\">
         <span class=\\"fd-object-status__text\\">Inverted informative</span>
+        <span class=\\"fd-object-status__sr-only\\">Object Status</span>
+        <span class=\\"fd-object-status__sr-only\\">Informative entry</span>
     </span>
     <span class=\\"fd-object-status fd-object-status--inverted fd-object-status--large\\">
         <span class=\\"fd-object-status__text\\">Inverted Neutral</span>
+        <span class=\\"fd-object-status__sr-only\\">Object Status</span>
     </span>
     <span class=\\"fd-object-status fd-object-status--inverted fd-object-status--negative fd-object-status--large fd-object-status--icon-only\\">
-        <i class=\\"fd-object-status__icon sap-icon--error\\" role=\\"presentation\\"></i>
+        <i class=\\"fd-object-status__icon sap-icon--error\\" role=\\"presentation\\" aria-hidden=\\"true\\"></i>
     </span>
     <span class=\\"fd-object-status fd-object-status--inverted fd-object-status--negative fd-object-status--large\\">
-        <i class=\\"fd-object-status__icon sap-icon--error\\" role=\\"presentation\\"></i>
+        <i class=\\"fd-object-status__icon sap-icon--error\\" role=\\"presentation\\" aria-hidden=\\"true\\"></i>
         <span class=\\"fd-object-status__text\\">Negative</span>
+        <span class=\\"fd-object-status__sr-only\\">Object Status</span>
+        <span class=\\"fd-object-status__sr-only\\">Invalid Entry</span>
     </span>
     <span class=\\"fd-object-status fd-object-status--inverted fd-object-status--critical fd-object-status--large\\">
-        <i class=\\"fd-object-status__icon sap-icon--alert\\" role=\\"presentation\\"></i>
+        <i class=\\"fd-object-status__icon sap-icon--alert\\" role=\\"presentation\\" aria-hidden=\\"true\\"></i>
         <span class=\\"fd-object-status__text\\">Critical</span>
+        <span class=\\"fd-object-status__sr-only\\">Object Status</span>
+        <span class=\\"fd-object-status__sr-only\\">Warning issued</span>
     </span>
     <span class=\\"fd-object-status fd-object-status--inverted fd-object-status--positive fd-object-status--large\\">
-        <i class=\\"fd-object-status__icon sap-icon--sys-enter-2\\" role=\\"presentation\\"></i>
+        <i class=\\"fd-object-status__icon sap-icon--sys-enter-2\\" role=\\"presentation\\" aria-hidden=\\"true\\"></i>
         <span class=\\"fd-object-status__text\\">Positive</span>
+        <span class=\\"fd-object-status__sr-only\\">Object Status</span>
+        <span class=\\"fd-object-status__sr-only\\">Entry successfully validated</span>
     </span>
     <span class=\\"fd-object-status fd-object-status--inverted fd-object-status--informative fd-object-status--large\\">
-        <i class=\\"fd-object-status__icon sap-icon--information\\" role=\\"presentation\\"></i>
+        <i class=\\"fd-object-status__icon sap-icon--information\\" role=\\"presentation\\" aria-hidden=\\"true\\"></i>
         <span class=\\"fd-object-status__text\\">Informative</span>
+        <span class=\\"fd-object-status__sr-only\\">Object Status</span>
+        <span class=\\"fd-object-status__sr-only\\">Informative entry</span>
     </span>
     <span class=\\"fd-object-status fd-object-status--inverted fd-object-status--large\\">
         <span class=\\"fd-object-status__text\\">Neutral</span>
+        <span class=\\"fd-object-status__sr-only\\">Object Status</span>
     </span>
 </div>
 "
@@ -33897,173 +34086,278 @@ exports[`Check stories > Components/Object Status > Story InvertedIndication > S
 "<div class=\\"fddocs-container\\">
     <span class=\\"fd-object-status fd-object-status--inverted fd-object-status--indication-1\\">
         <span class=\\"fd-object-status__text\\">Indication1</span>
+        <span class=\\"fd-object-status__sr-only\\">Object Status</span>
+        <span class=\\"fd-object-status__sr-only\\">Indication Color 1</span>
     </span>
+
     <span class=\\"fd-object-status fd-object-status--inverted fd-object-status--indication-2\\">
         <span class=\\"fd-object-status__text\\">Indication2</span>
+        <span class=\\"fd-object-status__sr-only\\">Object Status</span>
+        <span class=\\"fd-object-status__sr-only\\">Indication Color 2</span>
     </span>
+
     <span class=\\"fd-object-status fd-object-status--inverted fd-object-status--indication-3\\">
         <span class=\\"fd-object-status__text\\">Indication3</span>
+        <span class=\\"fd-object-status__sr-only\\">Object Status</span>
+        <span class=\\"fd-object-status__sr-only\\">Indication Color 3</span>
     </span>
+
     <span class=\\"fd-object-status fd-object-status--inverted fd-object-status--indication-4\\">
         <span class=\\"fd-object-status__text\\">Indication4</span>
+        <span class=\\"fd-object-status__sr-only\\">Object Status</span>
+        <span class=\\"fd-object-status__sr-only\\">Indication Color 4</span>
     </span>
+
     <span class=\\"fd-object-status fd-object-status--inverted fd-object-status--indication-5\\">
         <span class=\\"fd-object-status__text\\">Indication5</span>
+        <span class=\\"fd-object-status__sr-only\\">Object Status</span>
+        <span class=\\"fd-object-status__sr-only\\">Indication Color 5</span>
     </span>
+
     <span class=\\"fd-object-status fd-object-status--inverted fd-object-status--indication-6\\">
         <span class=\\"fd-object-status__text\\">Indication6</span>
+        <span class=\\"fd-object-status__sr-only\\">Object Status</span>
+        <span class=\\"fd-object-status__sr-only\\">Indication Color 6</span>
     </span>
+
     <span class=\\"fd-object-status fd-object-status--inverted fd-object-status--indication-7\\">
         <span class=\\"fd-object-status__text\\">Indication7</span>
+        <span class=\\"fd-object-status__sr-only\\">Object Status</span>
+        <span class=\\"fd-object-status__sr-only\\">Indication Color 7</span>
     </span>
+
     <span class=\\"fd-object-status fd-object-status--inverted fd-object-status--indication-8\\">
         <span class=\\"fd-object-status__text\\">Indication8</span>
+        <span class=\\"fd-object-status__sr-only\\">Object Status</span>
+        <span class=\\"fd-object-status__sr-only\\">Indication Color 8</span>
     </span>
+
     <span class=\\"fd-object-status fd-object-status--inverted fd-object-status--indication-9\\">
         <span class=\\"fd-object-status__text\\">Indication9</span>
+        <span class=\\"fd-object-status__sr-only\\">Object Status</span>
+        <span class=\\"fd-object-status__sr-only\\">Indication Color 9</span>
     </span>
+
     <span class=\\"fd-object-status fd-object-status--inverted fd-object-status--indication-10\\">
         <span class=\\"fd-object-status__text\\">Indication10</span>
+        <span class=\\"fd-object-status__sr-only\\">Object Status</span>
+        <span class=\\"fd-object-status__sr-only\\">Indication Color 10</span>
     </span>
 </div>
 <br><br>
 <h4>Clickable Inverted Object Status (Regular)</h4>
 <div class=\\"fddocs-container\\">
-    <span class=\\"fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--indication-1\\" tabindex=\\"0\\">
+    <div role=\\"button\\" tabindex=\\"0\\" aria-roledescription=\\"Object Status Button\\" class=\\"fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--indication-1\\" >
         <span class=\\"fd-object-status__text\\">Indication1</span>
-    </span>
-    <span class=\\"fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--indication-2\\" tabindex=\\"0\\">
+        <span class=\\"fd-object-status__sr-only\\">Indication Color 1</span>
+    </div>
+
+    <div role=\\"button\\" tabindex=\\"0\\" aria-roledescription=\\"Object Status Button\\" class=\\"fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--indication-2\\" >
         <span class=\\"fd-object-status__text\\">Indication2</span>
-    </span>
-    <span class=\\"fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--indication-3\\" tabindex=\\"0\\">
+        <span class=\\"fd-object-status__sr-only\\">Indication Color 2</span>
+    </div>
+
+    <div role=\\"button\\" tabindex=\\"0\\" aria-roledescription=\\"Object Status Button\\" class=\\"fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--indication-3\\" >
         <span class=\\"fd-object-status__text\\">Indication3</span>
-    </span>
-    <span class=\\"fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--indication-4\\" tabindex=\\"0\\">
+        <span class=\\"fd-object-status__sr-only\\">Indication Color 3</span>
+    </div>
+
+    <div role=\\"button\\" tabindex=\\"0\\" aria-roledescription=\\"Object Status Button\\" class=\\"fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--indication-4\\" >
         <span class=\\"fd-object-status__text\\">Indication4</span>
-    </span>
-    <span class=\\"fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--indication-5\\" tabindex=\\"0\\">
+        <span class=\\"fd-object-status__sr-only\\">Indication Color 4</span>
+    </div>
+
+    <div role=\\"button\\" tabindex=\\"0\\" aria-roledescription=\\"Object Status Button\\" class=\\"fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--indication-5\\" >
         <span class=\\"fd-object-status__text\\">Indication5</span>
-    </span>
-    <span class=\\"fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--indication-6\\" tabindex=\\"0\\">
+        <span class=\\"fd-object-status__sr-only\\">Indication Color 5</span>
+    </div>
+
+    <div role=\\"button\\" tabindex=\\"0\\" aria-roledescription=\\"Object Status Button\\" class=\\"fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--indication-6\\" >
         <span class=\\"fd-object-status__text\\">Indication6</span>
-    </span>
-    <span class=\\"fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--indication-7\\" tabindex=\\"0\\">
+        <span class=\\"fd-object-status__sr-only\\">Indication Color 6</span>
+    </div>
+
+    <div role=\\"button\\" tabindex=\\"0\\" aria-roledescription=\\"Object Status Button\\" class=\\"fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--indication-7\\" >
         <span class=\\"fd-object-status__text\\">Indication7</span>
-    </span>
-    <span class=\\"fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--indication-8\\" tabindex=\\"0\\">
+        <span class=\\"fd-object-status__sr-only\\">Indication Color 7</span>
+    </div>
+
+    <div role=\\"button\\" tabindex=\\"0\\" aria-roledescription=\\"Object Status Button\\" class=\\"fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--indication-8\\" >
         <span class=\\"fd-object-status__text\\">Indication8</span>
-    </span>
-    <span class=\\"fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--indication-9\\" tabindex=\\"0\\">
+        <span class=\\"fd-object-status__sr-only\\">Indication Color 8</span>
+    </div>
+
+    <div role=\\"button\\" tabindex=\\"0\\" aria-roledescription=\\"Object Status Button\\" class=\\"fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--indication-9\\" >
         <span class=\\"fd-object-status__text\\">Indication9</span>
-    </span>
-    <span class=\\"fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--indication-10\\" tabindex=\\"0\\">
+        <span class=\\"fd-object-status__sr-only\\">Indication Color 9</span>
+    </div>
+
+    <div role=\\"button\\" tabindex=\\"0\\" aria-roledescription=\\"Object Status Button\\" class=\\"fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--indication-10\\" >
         <span class=\\"fd-object-status__text\\">Indication10</span>
-    </span>
+        <span class=\\"fd-object-status__sr-only\\">Indication Color 10</span>
+    </div>
 </div>
 
 <br><br>
 <h4>Clickable Inverted Object Status (Hover)</h4>
 <div class=\\"fddocs-container\\">
-    <span class=\\"fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--indication-1 is-hover\\" tabindex=\\"0\\">
+    <div role=\\"button\\" tabindex=\\"0\\" aria-roledescription=\\"Object Status Button\\" class=\\"fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--indication-1 is-hover\\" >
         <span class=\\"fd-object-status__text\\">Indication1</span>
-    </span>
-    <span class=\\"fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--indication-2 is-hover\\" tabindex=\\"0\\">
+        <span class=\\"fd-object-status__sr-only\\">Indication Color 1</span>
+    </div>
+
+    <div role=\\"button\\" tabindex=\\"0\\" aria-roledescription=\\"Object Status Button\\" class=\\"fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--indication-2 is-hover\\" >
         <span class=\\"fd-object-status__text\\">Indication2</span>
-    </span>
-    <span class=\\"fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--indication-3 is-hover\\" tabindex=\\"0\\">
+        <span class=\\"fd-object-status__sr-only\\">Indication Color 2</span>
+    </div>
+
+    <div role=\\"button\\" tabindex=\\"0\\" aria-roledescription=\\"Object Status Button\\" class=\\"fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--indication-3 is-hover\\" >
         <span class=\\"fd-object-status__text\\">Indication3</span>
-    </span>
-    <span class=\\"fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--indication-4 is-hover\\" tabindex=\\"0\\">
+        <span class=\\"fd-object-status__sr-only\\">Indication Color 3</span>
+    </div>
+
+    <div role=\\"button\\" tabindex=\\"0\\" aria-roledescription=\\"Object Status Button\\" class=\\"fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--indication-4 is-hover\\" >
         <span class=\\"fd-object-status__text\\">Indication4</span>
-    </span>
-    <span class=\\"fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--indication-5 is-hover\\" tabindex=\\"0\\">
+        <span class=\\"fd-object-status__sr-only\\">Indication Color 4</span>
+    </div>
+
+    <div role=\\"button\\" tabindex=\\"0\\" aria-roledescription=\\"Object Status Button\\" class=\\"fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--indication-5 is-hover\\" >
         <span class=\\"fd-object-status__text\\">Indication5</span>
-    </span>
-    <span class=\\"fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--indication-6 is-hover\\" tabindex=\\"0\\">
+        <span class=\\"fd-object-status__sr-only\\">Indication Color 5</span>
+    </div>
+
+    <div role=\\"button\\" tabindex=\\"0\\" aria-roledescription=\\"Object Status Button\\" class=\\"fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--indication-6 is-hover\\" >
         <span class=\\"fd-object-status__text\\">Indication6</span>
-    </span>
-    <span class=\\"fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--indication-7 is-hover\\" tabindex=\\"0\\">
+        <span class=\\"fd-object-status__sr-only\\">Indication Color 6</span>
+    </div>
+
+    <div role=\\"button\\" tabindex=\\"0\\" aria-roledescription=\\"Object Status Button\\" class=\\"fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--indication-7 is-hover\\" >
         <span class=\\"fd-object-status__text\\">Indication7</span>
-    </span>
-    <span class=\\"fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--indication-8 is-hover\\" tabindex=\\"0\\">
+        <span class=\\"fd-object-status__sr-only\\">Indication Color 7</span>
+    </div>
+
+    <div role=\\"button\\" tabindex=\\"0\\" aria-roledescription=\\"Object Status Button\\" class=\\"fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--indication-8 is-hover\\" >
         <span class=\\"fd-object-status__text\\">Indication8</span>
-    </span>
-    <span class=\\"fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--indication-9 is-hover\\" tabindex=\\"0\\">
+        <span class=\\"fd-object-status__sr-only\\">Indication Color 8</span>
+    </div>
+
+    <div role=\\"button\\" tabindex=\\"0\\" aria-roledescription=\\"Object Status Button\\" class=\\"fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--indication-9 is-hover\\" >
         <span class=\\"fd-object-status__text\\">Indication9</span>
-    </span>
-    <span class=\\"fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--indication-10 is-hover\\" tabindex=\\"0\\">
+        <span class=\\"fd-object-status__sr-only\\">Indication Color 9</span>
+    </div>
+
+    <div role=\\"button\\" tabindex=\\"0\\" aria-roledescription=\\"Object Status Button\\" class=\\"fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--indication-10 is-hover\\" >
         <span class=\\"fd-object-status__text\\">Indication10</span>
-    </span>
+        <span class=\\"fd-object-status__sr-only\\">Indication Color 10</span>
+    </div>
 </div>
 
 <br><br>
 <h4>Clickable Inverted Object Status (Active/Down)</h4>
 <div class=\\"fddocs-container\\">
-    <span class=\\"fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--indication-1 is-active\\" tabindex=\\"0\\">
+    <div role=\\"button\\" tabindex=\\"0\\" aria-roledescription=\\"Object Status Button\\" class=\\"fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--indication-1 is-active\\" >
         <span class=\\"fd-object-status__text\\">Indication1</span>
-    </span>
-    <span class=\\"fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--indication-2 is-active\\" tabindex=\\"0\\">
+        <span class=\\"fd-object-status__sr-only\\">Indication Color 1</span>
+    </div>
+
+    <div role=\\"button\\" tabindex=\\"0\\" aria-roledescription=\\"Object Status Button\\" class=\\"fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--indication-2 is-active\\" >
         <span class=\\"fd-object-status__text\\">Indication2</span>
-    </span>
-    <span class=\\"fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--indication-3 is-active\\" tabindex=\\"0\\">
+        <span class=\\"fd-object-status__sr-only\\">Indication Color 2</span>
+    </div>
+
+    <div role=\\"button\\" tabindex=\\"0\\" aria-roledescription=\\"Object Status Button\\" class=\\"fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--indication-3 is-active\\" >
         <span class=\\"fd-object-status__text\\">Indication3</span>
-    </span>
-    <span class=\\"fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--indication-4 is-active\\" tabindex=\\"0\\">
+        <span class=\\"fd-object-status__sr-only\\">Indication Color 3</span>
+    </div>
+
+    <div role=\\"button\\" tabindex=\\"0\\" aria-roledescription=\\"Object Status Button\\" class=\\"fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--indication-4 is-active\\" >
         <span class=\\"fd-object-status__text\\">Indication4</span>
-    </span>
-    <span class=\\"fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--indication-5 is-active\\" tabindex=\\"0\\">
+        <span class=\\"fd-object-status__sr-only\\">Indication Color 4</span>
+    </div>
+
+    <div role=\\"button\\" tabindex=\\"0\\" aria-roledescription=\\"Object Status Button\\" class=\\"fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--indication-5 is-active\\" >
         <span class=\\"fd-object-status__text\\">Indication5</span>
-    </span>
-    <span class=\\"fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--indication-6 is-active\\" tabindex=\\"0\\">
+        <span class=\\"fd-object-status__sr-only\\">Indication Color 5</span>
+    </div>
+
+    <div role=\\"button\\" tabindex=\\"0\\" aria-roledescription=\\"Object Status Button\\" class=\\"fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--indication-6 is-active\\" >
         <span class=\\"fd-object-status__text\\">Indication6</span>
-    </span>
-    <span class=\\"fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--indication-7 is-active\\" tabindex=\\"0\\">
+        <span class=\\"fd-object-status__sr-only\\">Indication Color 6</span>
+    </div>
+
+    <div role=\\"button\\" tabindex=\\"0\\" aria-roledescription=\\"Object Status Button\\" class=\\"fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--indication-7 is-active\\" >
         <span class=\\"fd-object-status__text\\">Indication7</span>
-    </span>
-    <span class=\\"fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--indication-8 is-active\\" tabindex=\\"0\\">
+        <span class=\\"fd-object-status__sr-only\\">Indication Color 7</span>
+    </div>
+
+    <div role=\\"button\\" tabindex=\\"0\\" aria-roledescription=\\"Object Status Button\\" class=\\"fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--indication-8 is-active\\" >
         <span class=\\"fd-object-status__text\\">Indication8</span>
-    </span>
-    <span class=\\"fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--indication-9 is-active\\" tabindex=\\"0\\">
+        <span class=\\"fd-object-status__sr-only\\">Indication Color 8</span>
+    </div>
+
+    <div role=\\"button\\" tabindex=\\"0\\" aria-roledescription=\\"Object Status Button\\" class=\\"fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--indication-9 is-active\\" >
         <span class=\\"fd-object-status__text\\">Indication9</span>
-    </span>
-    <span class=\\"fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--indication-10 is-active\\" tabindex=\\"0\\">
+        <span class=\\"fd-object-status__sr-only\\">Indication Color 9</span>
+    </div>
+
+    <div role=\\"button\\" tabindex=\\"0\\" aria-roledescription=\\"Object Status Button\\" class=\\"fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--indication-10 is-active\\" >
         <span class=\\"fd-object-status__text\\">Indication10</span>
-    </span>
+        <span class=\\"fd-object-status__sr-only\\">Indication Color 10</span>
+    </div>
 </div>
 
 <br><br>
 <h4>Clickable Inverted Object Status (Focus)</h4>
 <div class=\\"fddocs-container\\">
-    <span class=\\"fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--indication-1 is-focus\\" tabindex=\\"0\\">
+    <div role=\\"button\\" tabindex=\\"0\\" aria-roledescription=\\"Object Status Button\\" class=\\"fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--indication-1 is-focus\\" >
         <span class=\\"fd-object-status__text\\">Indication1</span>
-    </span>
-    <span class=\\"fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--indication-2 is-focus\\" tabindex=\\"0\\">
+        <span class=\\"fd-object-status__sr-only\\">Indication Color 1</span>
+    </div>
+
+    <div role=\\"button\\" tabindex=\\"0\\" aria-roledescription=\\"Object Status Button\\" class=\\"fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--indication-2 is-focus\\" >
         <span class=\\"fd-object-status__text\\">Indication2</span>
-    </span>
-    <span class=\\"fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--indication-3 is-focus\\" tabindex=\\"0\\">
+        <span class=\\"fd-object-status__sr-only\\">Indication Color 2</span>
+    </div>
+
+    <div role=\\"button\\" tabindex=\\"0\\" aria-roledescription=\\"Object Status Button\\" class=\\"fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--indication-3 is-focus\\" >
         <span class=\\"fd-object-status__text\\">Indication3</span>
-    </span>
-    <span class=\\"fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--indication-4 is-focus\\" tabindex=\\"0\\">
+        <span class=\\"fd-object-status__sr-only\\">Indication Color 3</span>
+    </div>
+
+    <div role=\\"button\\" tabindex=\\"0\\" aria-roledescription=\\"Object Status Button\\" class=\\"fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--indication-4 is-focus\\" >
         <span class=\\"fd-object-status__text\\">Indication4</span>
-    </span>
-    <span class=\\"fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--indication-5 is-focus\\" tabindex=\\"0\\">
+        <span class=\\"fd-object-status__sr-only\\">Indication Color 4</span>
+    </div>
+
+    <div role=\\"button\\" tabindex=\\"0\\" aria-roledescription=\\"Object Status Button\\" class=\\"fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--indication-5 is-focus\\" >
         <span class=\\"fd-object-status__text\\">Indication5</span>
-    </span>
-    <span class=\\"fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--indication-6 is-focus\\" tabindex=\\"0\\">
+        <span class=\\"fd-object-status__sr-only\\">Indication Color 5</span>
+    </div>
+
+    <div role=\\"button\\" tabindex=\\"0\\" aria-roledescription=\\"Object Status Button\\" class=\\"fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--indication-6 is-focus\\" >
         <span class=\\"fd-object-status__text\\">Indication6</span>
-    </span>
-    <span class=\\"fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--indication-7 is-focus\\" tabindex=\\"0\\">
+        <span class=\\"fd-object-status__sr-only\\">Indication Color 6</span>
+    </div>
+
+    <div role=\\"button\\" tabindex=\\"0\\" aria-roledescription=\\"Object Status Button\\" class=\\"fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--indication-7 is-focus\\" >
         <span class=\\"fd-object-status__text\\">Indication7</span>
-    </span>
-    <span class=\\"fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--indication-8 is-focus\\" tabindex=\\"0\\">
+        <span class=\\"fd-object-status__sr-only\\">Indication Color 7</span>
+    </div>
+
+    <div role=\\"button\\" tabindex=\\"0\\" aria-roledescription=\\"Object Status Button\\" class=\\"fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--indication-8 is-focus\\" >
         <span class=\\"fd-object-status__text\\">Indication8</span>
-    </span>
-    <span class=\\"fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--indication-9 is-focus\\" tabindex=\\"0\\">
+        <span class=\\"fd-object-status__sr-only\\">Indication Color 8</span>
+    </div>
+
+    <div role=\\"button\\" tabindex=\\"0\\" aria-roledescription=\\"Object Status Button\\" class=\\"fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--indication-9 is-focus\\" >
         <span class=\\"fd-object-status__text\\">Indication9</span>
-    </span>
-    <span class=\\"fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--indication-10 is-focus\\" tabindex=\\"0\\">
+        <span class=\\"fd-object-status__sr-only\\">Indication Color 9</span>
+    </div>
+
+    <div role=\\"button\\" tabindex=\\"0\\" aria-roledescription=\\"Object Status Button\\" class=\\"fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--indication-10 is-focus\\" >
         <span class=\\"fd-object-status__text\\">Indication10</span>
-    </span>
+        <span class=\\"fd-object-status__sr-only\\">Indication Color 10</span>
+    </div>
 </div>
 "
 `;
@@ -34071,174 +34365,279 @@ exports[`Check stories > Components/Object Status > Story InvertedIndication > S
 exports[`Check stories > Components/Object Status > Story InvertedIndicationSecondary > Should match snapshot 1`] = `
 "<div class=\\"fddocs-container\\">
     <span class=\\"fd-object-status fd-object-status--inverted fd-object-status--indication-1b\\">
-        <span class=\\"fd-object-status__text\\">Indication1</span>
+        <span class=\\"fd-object-status__text\\">Indication1b</span>
+        <span class=\\"fd-object-status__sr-only\\">Object Status</span>
+        <span class=\\"fd-object-status__sr-only\\">Indication Color 1b</span>
     </span>
+
     <span class=\\"fd-object-status fd-object-status--inverted fd-object-status--indication-2b\\">
-        <span class=\\"fd-object-status__text\\">Indication2</span>
+        <span class=\\"fd-object-status__text\\">Indication2b</span>
+        <span class=\\"fd-object-status__sr-only\\">Object Status</span>
+        <span class=\\"fd-object-status__sr-only\\">Indication Color 2b</span>
     </span>
+
     <span class=\\"fd-object-status fd-object-status--inverted fd-object-status--indication-3b\\">
-        <span class=\\"fd-object-status__text\\">Indication3</span>
+        <span class=\\"fd-object-status__text\\">Indication3b</span>
+        <span class=\\"fd-object-status__sr-only\\">Object Status</span>
+        <span class=\\"fd-object-status__sr-only\\">Indication Color 3b</span>
     </span>
+
     <span class=\\"fd-object-status fd-object-status--inverted fd-object-status--indication-4b\\">
-        <span class=\\"fd-object-status__text\\">Indication4</span>
+        <span class=\\"fd-object-status__text\\">Indication4b</span>
+        <span class=\\"fd-object-status__sr-only\\">Object Status</span>
+        <span class=\\"fd-object-status__sr-only\\">Indication Color 4b</span>
     </span>
+
     <span class=\\"fd-object-status fd-object-status--inverted fd-object-status--indication-5b\\">
-        <span class=\\"fd-object-status__text\\">Indication5</span>
+        <span class=\\"fd-object-status__text\\">Indication5b</span>
+        <span class=\\"fd-object-status__sr-only\\">Object Status</span>
+        <span class=\\"fd-object-status__sr-only\\">Indication Color 5b</span>
     </span>
+
     <span class=\\"fd-object-status fd-object-status--inverted fd-object-status--indication-6b\\">
-        <span class=\\"fd-object-status__text\\">Indication6</span>
+        <span class=\\"fd-object-status__text\\">Indication6b</span>
+        <span class=\\"fd-object-status__sr-only\\">Object Status</span>
+        <span class=\\"fd-object-status__sr-only\\">Indication Color 6b</span>
     </span>
+
     <span class=\\"fd-object-status fd-object-status--inverted fd-object-status--indication-7b\\">
-        <span class=\\"fd-object-status__text\\">Indication7</span>
+        <span class=\\"fd-object-status__text\\">Indication7b</span>
+        <span class=\\"fd-object-status__sr-only\\">Object Status</span>
+        <span class=\\"fd-object-status__sr-only\\">Indication Color 7b</span>
     </span>
+
     <span class=\\"fd-object-status fd-object-status--inverted fd-object-status--indication-8b\\">
-        <span class=\\"fd-object-status__text\\">Indication8</span>
+        <span class=\\"fd-object-status__text\\">Indication8b</span>
+        <span class=\\"fd-object-status__sr-only\\">Object Status</span>
+        <span class=\\"fd-object-status__sr-only\\">Indication Color 8b</span>
     </span>
+
     <span class=\\"fd-object-status fd-object-status--inverted fd-object-status--indication-9b\\">
-        <span class=\\"fd-object-status__text\\">Indication9</span>
+        <span class=\\"fd-object-status__text\\">Indication9b</span>
+        <span class=\\"fd-object-status__sr-only\\">Object Status</span>
+        <span class=\\"fd-object-status__sr-only\\">Indication Color 9b</span>
     </span>
-    <span class=\\"fd-object-status fd-object-status--inverted fd-object-status--indication-10b\\">
-        <span class=\\"fd-object-status__text\\">Indication10</span>
+
+    <span class=\\"fd-object-status fd-object-status--inverted fd-object-status--indication-1b0\\">
+        <span class=\\"fd-object-status__text\\">Indication10b</span>
+        <span class=\\"fd-object-status__sr-only\\">Object Status</span>
+        <span class=\\"fd-object-status__sr-only\\">Indication Color 10b</span>
     </span>
 </div>
 <br><br>
 <h4>Clickable Inverted Object Status (Regular)</h4>
 <div class=\\"fddocs-container\\">
-    <span class=\\"fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--indication-1b\\" tabindex=\\"0\\">
-        <span class=\\"fd-object-status__text\\">Indication1</span>
-    </span>
-    <span class=\\"fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--indication-2b\\" tabindex=\\"0\\">
-        <span class=\\"fd-object-status__text\\">Indication2</span>
-    </span>
-    <span class=\\"fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--indication-3b\\" tabindex=\\"0\\">
-        <span class=\\"fd-object-status__text\\">Indication3</span>
-    </span>
-    <span class=\\"fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--indication-4b\\" tabindex=\\"0\\">
-        <span class=\\"fd-object-status__text\\">Indication4</span>
-    </span>
-    <span class=\\"fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--indication-5b\\" tabindex=\\"0\\">
-        <span class=\\"fd-object-status__text\\">Indication5</span>
-    </span>
-    <span class=\\"fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--indication-6b\\" tabindex=\\"0\\">
-        <span class=\\"fd-object-status__text\\">Indication6</span>
-    </span>
-    <span class=\\"fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--indication-7b\\" tabindex=\\"0\\">
-        <span class=\\"fd-object-status__text\\">Indication7</span>
-    </span>
-    <span class=\\"fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--indication-8b\\" tabindex=\\"0\\">
-        <span class=\\"fd-object-status__text\\">Indication8</span>
-    </span>
-    <span class=\\"fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--indication-9b\\" tabindex=\\"0\\">
-        <span class=\\"fd-object-status__text\\">Indication9</span>
-    </span>
-    <span class=\\"fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--indication-10b\\" tabindex=\\"0\\">
-        <span class=\\"fd-object-status__text\\">Indication10</span>
-    </span>
+    <div role=\\"button\\" tabindex=\\"0\\" aria-roledescription=\\"Object Status Button\\" class=\\"fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--indication-1b\\" >
+        <span class=\\"fd-object-status__text\\">Indication1b</span>
+        <span class=\\"fd-object-status__sr-only\\">Indication Color 1b</span>
+    </div>
+
+    <div role=\\"button\\" tabindex=\\"0\\" aria-roledescription=\\"Object Status Button\\" class=\\"fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--indication-2b\\" >
+        <span class=\\"fd-object-status__text\\">Indication2b</span>
+        <span class=\\"fd-object-status__sr-only\\">Indication Color 2b</span>
+    </div>
+
+    <div role=\\"button\\" tabindex=\\"0\\" aria-roledescription=\\"Object Status Button\\" class=\\"fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--indication-3b\\" >
+        <span class=\\"fd-object-status__text\\">Indication3b</span>
+        <span class=\\"fd-object-status__sr-only\\">Indication Color 3b</span>
+    </div>
+
+    <div role=\\"button\\" tabindex=\\"0\\" aria-roledescription=\\"Object Status Button\\" class=\\"fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--indication-4b\\" >
+        <span class=\\"fd-object-status__text\\">Indication4b</span>
+        <span class=\\"fd-object-status__sr-only\\">Indication Color 4b</span>
+    </div>
+
+    <div role=\\"button\\" tabindex=\\"0\\" aria-roledescription=\\"Object Status Button\\" class=\\"fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--indication-5b\\" >
+        <span class=\\"fd-object-status__text\\">Indication5b</span>
+        <span class=\\"fd-object-status__sr-only\\">Indication Color 5b</span>
+    </div>
+
+    <div role=\\"button\\" tabindex=\\"0\\" aria-roledescription=\\"Object Status Button\\" class=\\"fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--indication-6b\\" >
+        <span class=\\"fd-object-status__text\\">Indication6b</span>
+        <span class=\\"fd-object-status__sr-only\\">Indication Color 6b</span>
+    </div>
+
+    <div role=\\"button\\" tabindex=\\"0\\" aria-roledescription=\\"Object Status Button\\" class=\\"fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--indication-7b\\" >
+        <span class=\\"fd-object-status__text\\">Indication7b</span>
+        <span class=\\"fd-object-status__sr-only\\">Indication Color 7b</span>
+    </div>
+
+    <div role=\\"button\\" tabindex=\\"0\\" aria-roledescription=\\"Object Status Button\\" class=\\"fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--indication-8b\\" >
+        <span class=\\"fd-object-status__text\\">Indication8b</span>
+        <span class=\\"fd-object-status__sr-only\\">Indication Color 8b</span>
+    </div>
+
+    <div role=\\"button\\" tabindex=\\"0\\" aria-roledescription=\\"Object Status Button\\" class=\\"fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--indication-9b\\" >
+        <span class=\\"fd-object-status__text\\">Indication9b</span>
+        <span class=\\"fd-object-status__sr-only\\">Indication Color 9b</span>
+    </div>
+
+    <div role=\\"button\\" tabindex=\\"0\\" aria-roledescription=\\"Object Status Button\\" class=\\"fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--indication-1b0\\" >
+        <span class=\\"fd-object-status__text\\">Indication10b</span>
+        <span class=\\"fd-object-status__sr-only\\">Indication Color 10b</span>
+    </div>
 </div>
 
 <br><br>
 <h4>Clickable Inverted Object Status (Hover)</h4>
 <div class=\\"fddocs-container\\">
-    <span class=\\"fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--indication-1b is-hover\\" tabindex=\\"0\\">
-        <span class=\\"fd-object-status__text\\">Indication1</span>
-    </span>
-    <span class=\\"fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--indication-2b is-hover\\" tabindex=\\"0\\">
-        <span class=\\"fd-object-status__text\\">Indication2</span>
-    </span>
-    <span class=\\"fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--indication-3b is-hover\\" tabindex=\\"0\\">
-        <span class=\\"fd-object-status__text\\">Indication3</span>
-    </span>
-    <span class=\\"fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--indication-4b is-hover\\" tabindex=\\"0\\">
-        <span class=\\"fd-object-status__text\\">Indication4</span>
-    </span>
-    <span class=\\"fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--indication-5b is-hover\\" tabindex=\\"0\\">
-        <span class=\\"fd-object-status__text\\">Indication5</span>
-    </span>
-    <span class=\\"fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--indication-6b is-hover\\" tabindex=\\"0\\">
-        <span class=\\"fd-object-status__text\\">Indication6</span>
-    </span>
-    <span class=\\"fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--indication-7b is-hover\\" tabindex=\\"0\\">
-        <span class=\\"fd-object-status__text\\">Indication7</span>
-    </span>
-    <span class=\\"fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--indication-8b is-hover\\" tabindex=\\"0\\">
-        <span class=\\"fd-object-status__text\\">Indication8</span>
-    </span>
-    <span class=\\"fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--indication-9b is-hover\\" tabindex=\\"0\\">
-        <span class=\\"fd-object-status__text\\">Indication9</span>
-    </span>
-    <span class=\\"fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--indication-10b is-hover\\" tabindex=\\"0\\">
-        <span class=\\"fd-object-status__text\\">Indication10</span>
-    </span>
+    <div role=\\"button\\" tabindex=\\"0\\" aria-roledescription=\\"Object Status Button\\" class=\\"fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--indication-1b is-hover\\" >
+        <span class=\\"fd-object-status__text\\">Indication1b</span>
+        <span class=\\"fd-object-status__sr-only\\">Indication Color 1b</span>
+    </div>
+
+    <div role=\\"button\\" tabindex=\\"0\\" aria-roledescription=\\"Object Status Button\\" class=\\"fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--indication-2b is-hover\\" >
+        <span class=\\"fd-object-status__text\\">Indication2b</span>
+        <span class=\\"fd-object-status__sr-only\\">Indication Color 2b</span>
+    </div>
+
+    <div role=\\"button\\" tabindex=\\"0\\" aria-roledescription=\\"Object Status Button\\" class=\\"fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--indication-3b is-hover\\" >
+        <span class=\\"fd-object-status__text\\">Indication3b</span>
+        <span class=\\"fd-object-status__sr-only\\">Indication Color 3b</span>
+    </div>
+
+    <div role=\\"button\\" tabindex=\\"0\\" aria-roledescription=\\"Object Status Button\\" class=\\"fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--indication-4b is-hover\\" >
+        <span class=\\"fd-object-status__text\\">Indication4b</span>
+        <span class=\\"fd-object-status__sr-only\\">Indication Color 4b</span>
+    </div>
+
+    <div role=\\"button\\" tabindex=\\"0\\" aria-roledescription=\\"Object Status Button\\" class=\\"fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--indication-5b is-hover\\" >
+        <span class=\\"fd-object-status__text\\">Indication5b</span>
+        <span class=\\"fd-object-status__sr-only\\">Indication Color 5b</span>
+    </div>
+
+    <div role=\\"button\\" tabindex=\\"0\\" aria-roledescription=\\"Object Status Button\\" class=\\"fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--indication-6b is-hover\\" >
+        <span class=\\"fd-object-status__text\\">Indication6b</span>
+        <span class=\\"fd-object-status__sr-only\\">Indication Color 6b</span>
+    </div>
+
+    <div role=\\"button\\" tabindex=\\"0\\" aria-roledescription=\\"Object Status Button\\" class=\\"fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--indication-7b is-hover\\" >
+        <span class=\\"fd-object-status__text\\">Indication7b</span>
+        <span class=\\"fd-object-status__sr-only\\">Indication Color 7b</span>
+    </div>
+
+    <div role=\\"button\\" tabindex=\\"0\\" aria-roledescription=\\"Object Status Button\\" class=\\"fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--indication-8b is-hover\\" >
+        <span class=\\"fd-object-status__text\\">Indication8b</span>
+        <span class=\\"fd-object-status__sr-only\\">Indication Color 8b</span>
+    </div>
+
+    <div role=\\"button\\" tabindex=\\"0\\" aria-roledescription=\\"Object Status Button\\" class=\\"fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--indication-9b is-hover\\" >
+        <span class=\\"fd-object-status__text\\">Indication9b</span>
+        <span class=\\"fd-object-status__sr-only\\">Indication Color 9b</span>
+    </div>
+
+    <div role=\\"button\\" tabindex=\\"0\\" aria-roledescription=\\"Object Status Button\\" class=\\"fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--indication-1b0 is-hover\\" >
+        <span class=\\"fd-object-status__text\\">Indication10b</span>
+        <span class=\\"fd-object-status__sr-only\\">Indication Color 10b</span>
+    </div>
 </div>
 
 <br><br>
 <h4>Clickable Inverted Object Status (Active/Down)</h4>
 <div class=\\"fddocs-container\\">
-    <span class=\\"fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--indication-1b is-active\\" tabindex=\\"0\\">
-        <span class=\\"fd-object-status__text\\">Indication1</span>
-    </span>
-    <span class=\\"fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--indication-2b is-active\\" tabindex=\\"0\\">
-        <span class=\\"fd-object-status__text\\">Indication2</span>
-    </span>
-    <span class=\\"fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--indication-3b is-active\\" tabindex=\\"0\\">
-        <span class=\\"fd-object-status__text\\">Indication3</span>
-    </span>
-    <span class=\\"fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--indication-4b is-active\\" tabindex=\\"0\\">
-        <span class=\\"fd-object-status__text\\">Indication4</span>
-    </span>
-    <span class=\\"fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--indication-5b is-active\\" tabindex=\\"0\\">
-        <span class=\\"fd-object-status__text\\">Indication5</span>
-    </span>
-    <span class=\\"fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--indication-6b is-active\\" tabindex=\\"0\\">
-        <span class=\\"fd-object-status__text\\">Indication6</span>
-    </span>
-    <span class=\\"fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--indication-7b is-active\\" tabindex=\\"0\\">
-        <span class=\\"fd-object-status__text\\">Indication7</span>
-    </span>
-    <span class=\\"fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--indication-8b is-active\\" tabindex=\\"0\\">
-        <span class=\\"fd-object-status__text\\">Indication8</span>
-    </span>
-    <span class=\\"fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--indication-9b is-active\\" tabindex=\\"0\\">
-        <span class=\\"fd-object-status__text\\">Indication9</span>
-    </span>
-    <span class=\\"fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--indication-10b is-active\\" tabindex=\\"0\\">
-        <span class=\\"fd-object-status__text\\">Indication10</span>
-    </span>
+    <div role=\\"button\\" tabindex=\\"0\\" aria-roledescription=\\"Object Status Button\\" class=\\"fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--indication-1b is-active\\" >
+        <span class=\\"fd-object-status__text\\">Indication1b</span>
+        <span class=\\"fd-object-status__sr-only\\">Indication Color 1b</span>
+    </div>
+
+    <div role=\\"button\\" tabindex=\\"0\\" aria-roledescription=\\"Object Status Button\\" class=\\"fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--indication-2b is-active\\" >
+        <span class=\\"fd-object-status__text\\">Indication2b</span>
+        <span class=\\"fd-object-status__sr-only\\">Indication Color 2b</span>
+    </div>
+
+    <div role=\\"button\\" tabindex=\\"0\\" aria-roledescription=\\"Object Status Button\\" class=\\"fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--indication-3b is-active\\" >
+        <span class=\\"fd-object-status__text\\">Indication3b</span>
+        <span class=\\"fd-object-status__sr-only\\">Indication Color 3b</span>
+    </div>
+
+    <div role=\\"button\\" tabindex=\\"0\\" aria-roledescription=\\"Object Status Button\\" class=\\"fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--indication-4b is-active\\" >
+        <span class=\\"fd-object-status__text\\">Indication4b</span>
+        <span class=\\"fd-object-status__sr-only\\">Indication Color 4b</span>
+    </div>
+
+    <div role=\\"button\\" tabindex=\\"0\\" aria-roledescription=\\"Object Status Button\\" class=\\"fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--indication-5b is-active\\" >
+        <span class=\\"fd-object-status__text\\">Indication5b</span>
+        <span class=\\"fd-object-status__sr-only\\">Indication Color 5b</span>
+    </div>
+
+    <div role=\\"button\\" tabindex=\\"0\\" aria-roledescription=\\"Object Status Button\\" class=\\"fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--indication-6b is-active\\" >
+        <span class=\\"fd-object-status__text\\">Indication6b</span>
+        <span class=\\"fd-object-status__sr-only\\">Indication Color 6b</span>
+    </div>
+
+    <div role=\\"button\\" tabindex=\\"0\\" aria-roledescription=\\"Object Status Button\\" class=\\"fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--indication-7b is-active\\" >
+        <span class=\\"fd-object-status__text\\">Indication7b</span>
+        <span class=\\"fd-object-status__sr-only\\">Indication Color 7b</span>
+    </div>
+
+    <div role=\\"button\\" tabindex=\\"0\\" aria-roledescription=\\"Object Status Button\\" class=\\"fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--indication-8b is-active\\" >
+        <span class=\\"fd-object-status__text\\">Indication8b</span>
+        <span class=\\"fd-object-status__sr-only\\">Indication Color 8b</span>
+    </div>
+
+    <div role=\\"button\\" tabindex=\\"0\\" aria-roledescription=\\"Object Status Button\\" class=\\"fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--indication-9b is-active\\" >
+        <span class=\\"fd-object-status__text\\">Indication9b</span>
+        <span class=\\"fd-object-status__sr-only\\">Indication Color 9b</span>
+    </div>
+
+    <div role=\\"button\\" tabindex=\\"0\\" aria-roledescription=\\"Object Status Button\\" class=\\"fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--indication-1b0 is-active\\" >
+        <span class=\\"fd-object-status__text\\">Indication10b</span>
+        <span class=\\"fd-object-status__sr-only\\">Indication Color 10b</span>
+    </div>
 </div>
 
 <br><br>
 <h4>Clickable Inverted Object Status (Focus)</h4>
 <div class=\\"fddocs-container\\">
-    <span class=\\"fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--indication-1b is-focus\\" tabindex=\\"0\\">
-        <span class=\\"fd-object-status__text\\">Indication1</span>
-    </span>
-    <span class=\\"fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--indication-2b is-focus\\" tabindex=\\"0\\">
-        <span class=\\"fd-object-status__text\\">Indication2</span>
-    </span>
-    <span class=\\"fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--indication-3b is-focus\\" tabindex=\\"0\\">
-        <span class=\\"fd-object-status__text\\">Indication3</span>
-    </span>
-    <span class=\\"fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--indication-4b is-focus\\" tabindex=\\"0\\">
-        <span class=\\"fd-object-status__text\\">Indication4</span>
-    </span>
-    <span class=\\"fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--indication-5b is-focus\\" tabindex=\\"0\\">
-        <span class=\\"fd-object-status__text\\">Indication5</span>
-    </span>
-    <span class=\\"fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--indication-6b is-focus\\" tabindex=\\"0\\">
-        <span class=\\"fd-object-status__text\\">Indication6</span>
-    </span>
-    <span class=\\"fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--indication-7b is-focus\\" tabindex=\\"0\\">
-        <span class=\\"fd-object-status__text\\">Indication7</span>
-    </span>
-    <span class=\\"fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--indication-8b is-focus\\" tabindex=\\"0\\">
-        <span class=\\"fd-object-status__text\\">Indication8</span>
-    </span>
-    <span class=\\"fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--indication-9b is-focus\\" tabindex=\\"0\\">
-        <span class=\\"fd-object-status__text\\">Indication9</span>
-    </span>
-    <span class=\\"fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--indication-10b is-focus\\" tabindex=\\"0\\">
-        <span class=\\"fd-object-status__text\\">Indication10</span>
-    </span>
+    <div role=\\"button\\" tabindex=\\"0\\" aria-roledescription=\\"Object Status Button\\" class=\\"fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--indication-1b is-focus\\" >
+        <span class=\\"fd-object-status__text\\">Indication1b</span>
+        <span class=\\"fd-object-status__sr-only\\">Indication Color 1b</span>
+    </div>
+
+    <div role=\\"button\\" tabindex=\\"0\\" aria-roledescription=\\"Object Status Button\\" class=\\"fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--indication-2b is-focus\\" >
+        <span class=\\"fd-object-status__text\\">Indication2b</span>
+        <span class=\\"fd-object-status__sr-only\\">Indication Color 2b</span>
+    </div>
+
+    <div role=\\"button\\" tabindex=\\"0\\" aria-roledescription=\\"Object Status Button\\" class=\\"fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--indication-3b is-focus\\" >
+        <span class=\\"fd-object-status__text\\">Indication3b</span>
+        <span class=\\"fd-object-status__sr-only\\">Indication Color 3b</span>
+    </div>
+
+    <div role=\\"button\\" tabindex=\\"0\\" aria-roledescription=\\"Object Status Button\\" class=\\"fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--indication-4b is-focus\\" >
+        <span class=\\"fd-object-status__text\\">Indication4b</span>
+        <span class=\\"fd-object-status__sr-only\\">Indication Color 4b</span>
+    </div>
+
+    <div role=\\"button\\" tabindex=\\"0\\" aria-roledescription=\\"Object Status Button\\" class=\\"fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--indication-5b is-focus\\" >
+        <span class=\\"fd-object-status__text\\">Indication5b</span>
+        <span class=\\"fd-object-status__sr-only\\">Indication Color 5b</span>
+    </div>
+
+    <div role=\\"button\\" tabindex=\\"0\\" aria-roledescription=\\"Object Status Button\\" class=\\"fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--indication-6b is-focus\\" >
+        <span class=\\"fd-object-status__text\\">Indication6b</span>
+        <span class=\\"fd-object-status__sr-only\\">Indication Color 6b</span>
+    </div>
+
+    <div role=\\"button\\" tabindex=\\"0\\" aria-roledescription=\\"Object Status Button\\" class=\\"fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--indication-7b is-focus\\" >
+        <span class=\\"fd-object-status__text\\">Indication7b</span>
+        <span class=\\"fd-object-status__sr-only\\">Indication Color 7b</span>
+    </div>
+
+    <div role=\\"button\\" tabindex=\\"0\\" aria-roledescription=\\"Object Status Button\\" class=\\"fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--indication-8b is-focus\\" >
+        <span class=\\"fd-object-status__text\\">Indication8b</span>
+        <span class=\\"fd-object-status__sr-only\\">Indication Color 8b</span>
+    </div>
+
+    <div role=\\"button\\" tabindex=\\"0\\" aria-roledescription=\\"Object Status Button\\" class=\\"fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--indication-9b is-focus\\" >
+        <span class=\\"fd-object-status__text\\">Indication9b</span>
+        <span class=\\"fd-object-status__sr-only\\">Indication Color 9b</span>
+    </div>
+
+    <div role=\\"button\\" tabindex=\\"0\\" aria-roledescription=\\"Object Status Button\\" class=\\"fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--indication-1b0 is-focus\\" >
+        <span class=\\"fd-object-status__text\\">Indication10b</span>
+        <span class=\\"fd-object-status__sr-only\\">Indication Color 10b</span>
+    </div>
 </div>
 "
 `;
@@ -34246,117 +34645,150 @@ exports[`Check stories > Components/Object Status > Story InvertedIndicationSeco
 exports[`Check stories > Components/Object Status > Story InvertedStates > Should match snapshot 1`] = `
 "<h4>Regular</h4>
 <div class=\\"fddocs-container\\">
-    <span class=\\"fd-object-status fd-object-status--inverted fd-object-status--link\\" tabindex=\\"0\\">
+    <div role=\\"button\\" tabindex=\\"0\\" aria-roledescription=\\"Object Status Button\\" class=\\"fd-object-status fd-object-status--inverted fd-object-status--link\\">
         <span class=\\"fd-object-status__text\\">Neutral</span>
-    </span>
-    <span class=\\"fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--informative\\" tabindex=\\"0\\">
-        <i class=\\"fd-object-status__icon sap-icon--information\\" role=\\"presentation\\"></i>
+        <span class=\\"fd-object-status__sr-only\\">Neutral Entry</span>
+    </div>
+    <div role=\\"button\\" tabindex=\\"0\\" aria-roledescription=\\"Object Status Button\\" class=\\"fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--informative\\">
+        <i class=\\"fd-object-status__icon sap-icon--information\\" role=\\"presentation\\" aria-hidden=\\"true\\"></i>
         <span class=\\"fd-object-status__text\\">Information</span>
-    </span>
-    <span class=\\"fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--critical\\" tabindex=\\"0\\">
-        <i class=\\"fd-object-status__icon sap-icon--alert\\" role=\\"presentation\\"></i>
-        <span class=\\"fd-object-status__text\\">Caution</span>
-    </span>
-    <span class=\\"fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--positive\\" tabindex=\\"0\\">
-        <i class=\\"fd-object-status__icon sap-icon--sys-enter-2\\" role=\\"presentation\\"></i>
-        <span class=\\"fd-object-status__text\\">Positive</span>
-    </span>
-    <span class=\\"fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--negative\\" tabindex=\\"0\\">
-        <i class=\\"fd-object-status__icon sap-icon--error\\" role=\\"presentation\\"></i>
-        <span class=\\"fd-object-status__text\\">Negative</span>
-    </span>
+        <span class=\\"fd-object-status__sr-only\\">Informative Entry</span>
+    </div>
+    <div role=\\"button\\" tabindex=\\"0\\" aria-roledescription=\\"Object Status Button\\" class=\\"fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--critical\\">
+        <i class=\\"fd-object-status__icon sap-icon--alert\\" role=\\"presentation\\" aria-hidden=\\"true\\"></i>
+        <span class=\\"fd-object-status__text\\">Information</span>
+        <span class=\\"fd-object-status__sr-only\\">Warning issued</span>
+    </div>
+    <div role=\\"button\\" tabindex=\\"0\\" aria-roledescription=\\"Object Status Button\\" class=\\"fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--positive\\">
+        <i class=\\"fd-object-status__icon sap-icon--sys-enter-2\\" role=\\"presentation\\" aria-hidden=\\"true\\"></i>
+        <span class=\\"fd-object-status__text\\">Information</span>
+        <span class=\\"fd-object-status__sr-only\\">Entry successfully validated</span>
+    </div>
+    <div role=\\"button\\" tabindex=\\"0\\" aria-roledescription=\\"Object Status Button\\" class=\\"fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--negative\\">
+        <i class=\\"fd-object-status__icon sap-icon--error\\" role=\\"presentation\\" aria-hidden=\\"true\\"></i>
+        <span class=\\"fd-object-status__text\\">Information</span>
+        <span class=\\"fd-object-status__sr-only\\">Invalid Entry</span>
+    </div>
 </div>
+
 <br><br>
+
 <h4>Hover</h4>
 <div class=\\"fddocs-container\\">
-    <span class=\\"fd-object-status fd-object-status--inverted fd-object-status--link is-hover\\" tabindex=\\"0\\">
+    <div role=\\"button\\" tabindex=\\"0\\" aria-roledescription=\\"Object Status Button\\" class=\\"fd-object-status fd-object-status--inverted fd-object-status--link is-hover\\">
         <span class=\\"fd-object-status__text\\">Neutral</span>
-    </span>
-    <span class=\\"fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--informative is-hover\\" tabindex=\\"0\\">
-        <i class=\\"fd-object-status__icon sap-icon--information\\" role=\\"presentation\\"></i>
+        <span class=\\"fd-object-status__sr-only\\">Neutral Entry</span>
+    </div>
+    <div role=\\"button\\" tabindex=\\"0\\" aria-roledescription=\\"Object Status Button\\" class=\\"fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--informative is-hover\\">
+        <i class=\\"fd-object-status__icon sap-icon--information\\" role=\\"presentation\\" aria-hidden=\\"true\\"></i>
         <span class=\\"fd-object-status__text\\">Information</span>
-    </span>
-    <span class=\\"fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--critical is-hover\\" tabindex=\\"0\\">
-        <i class=\\"fd-object-status__icon sap-icon--alert\\" role=\\"presentation\\"></i>
-        <span class=\\"fd-object-status__text\\">Caution</span>
-    </span>
-    <span class=\\"fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--positive is-hover\\" tabindex=\\"0\\">
-        <i class=\\"fd-object-status__icon sap-icon--sys-enter-2\\" role=\\"presentation\\"></i>
-        <span class=\\"fd-object-status__text\\">Positive</span>
-    </span>
-    <span class=\\"fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--negative is-hover\\" tabindex=\\"0\\">
-        <i class=\\"fd-object-status__icon sap-icon--error\\" role=\\"presentation\\"></i>
-        <span class=\\"fd-object-status__text\\">Negative</span>
-    </span>
+        <span class=\\"fd-object-status__sr-only\\">Informative Entry</span>
+    </div>
+    <div role=\\"button\\" tabindex=\\"0\\" aria-roledescription=\\"Object Status Button\\" class=\\"fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--critical is-hover\\">
+        <i class=\\"fd-object-status__icon sap-icon--alert\\" role=\\"presentation\\" aria-hidden=\\"true\\"></i>
+        <span class=\\"fd-object-status__text\\">Information</span>
+        <span class=\\"fd-object-status__sr-only\\">Warning issued</span>
+    </div>
+    <div role=\\"button\\" tabindex=\\"0\\" aria-roledescription=\\"Object Status Button\\" class=\\"fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--positive is-hover\\">
+        <i class=\\"fd-object-status__icon sap-icon--sys-enter-2\\" role=\\"presentation\\" aria-hidden=\\"true\\"></i>
+        <span class=\\"fd-object-status__text\\">Information</span>
+        <span class=\\"fd-object-status__sr-only\\">Entry successfully validated</span>
+    </div>
+    <div role=\\"button\\" tabindex=\\"0\\" aria-roledescription=\\"Object Status Button\\" class=\\"fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--negative is-hover\\">
+        <i class=\\"fd-object-status__icon sap-icon--error\\" role=\\"presentation\\" aria-hidden=\\"true\\"></i>
+        <span class=\\"fd-object-status__text\\">Information</span>
+        <span class=\\"fd-object-status__sr-only\\">Invalid Entry</span>
+    </div>
 </div>
+
 <br><br>
+
 <h4>Down</h4>
 <div class=\\"fddocs-container\\">
-    <span class=\\"fd-object-status fd-object-status--inverted fd-object-status--link is-active\\" tabindex=\\"0\\">
+    <div role=\\"button\\" tabindex=\\"0\\" aria-roledescription=\\"Object Status Button\\" class=\\"fd-object-status fd-object-status--inverted fd-object-status--link is-active\\">
         <span class=\\"fd-object-status__text\\">Neutral</span>
-    </span>
-    <span class=\\"fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--informative is-active\\" tabindex=\\"0\\">
-        <i class=\\"fd-object-status__icon sap-icon--information\\" role=\\"presentation\\"></i>
+        <span class=\\"fd-object-status__sr-only\\">Neutral Entry</span>
+    </div>
+    <div role=\\"button\\" tabindex=\\"0\\" aria-roledescription=\\"Object Status Button\\" class=\\"fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--informative is-active\\">
+        <i class=\\"fd-object-status__icon sap-icon--information\\" role=\\"presentation\\" aria-hidden=\\"true\\"></i>
         <span class=\\"fd-object-status__text\\">Information</span>
-    </span>
-    <span class=\\"fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--critical is-active\\" tabindex=\\"0\\">
-        <i class=\\"fd-object-status__icon sap-icon--alert\\" role=\\"presentation\\"></i>
-        <span class=\\"fd-object-status__text\\">Caution</span>
-    </span>
-    <span class=\\"fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--positive is-active\\" tabindex=\\"0\\">
-        <i class=\\"fd-object-status__icon sap-icon--sys-enter-2\\" role=\\"presentation\\"></i>
-        <span class=\\"fd-object-status__text\\">Positive</span>
-    </span>
-    <span class=\\"fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--negative is-active\\" tabindex=\\"0\\">
-        <i class=\\"fd-object-status__icon sap-icon--error\\" role=\\"presentation\\"></i>
-        <span class=\\"fd-object-status__text\\">Negative</span>
-    </span>
+        <span class=\\"fd-object-status__sr-only\\">Informative Entry</span>
+    </div>
+    <div role=\\"button\\" tabindex=\\"0\\" aria-roledescription=\\"Object Status Button\\" class=\\"fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--critical is-active\\">
+        <i class=\\"fd-object-status__icon sap-icon--alert\\" role=\\"presentation\\" aria-hidden=\\"true\\"></i>
+        <span class=\\"fd-object-status__text\\">Information</span>
+        <span class=\\"fd-object-status__sr-only\\">Warning issued</span>
+    </div>
+    <div role=\\"button\\" tabindex=\\"0\\" aria-roledescription=\\"Object Status Button\\" class=\\"fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--positive is-active\\">
+        <i class=\\"fd-object-status__icon sap-icon--sys-enter-2\\" role=\\"presentation\\" aria-hidden=\\"true\\"></i>
+        <span class=\\"fd-object-status__text\\">Information</span>
+        <span class=\\"fd-object-status__sr-only\\">Entry successfully validated</span>
+    </div>
+    <div role=\\"button\\" tabindex=\\"0\\" aria-roledescription=\\"Object Status Button\\" class=\\"fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--negative is-active\\">
+        <i class=\\"fd-object-status__icon sap-icon--error\\" role=\\"presentation\\" aria-hidden=\\"true\\"></i>
+        <span class=\\"fd-object-status__text\\">Information</span>
+        <span class=\\"fd-object-status__sr-only\\">Invalid Entry</span>
+    </div>
 </div>
+
 <br><br>
+
 <h4>Regular, Focus</h4>
 <div class=\\"fddocs-container\\">
-    <span class=\\"fd-object-status fd-object-status--inverted fd-object-status--link is-focus\\" tabindex=\\"0\\">
+    <div role=\\"button\\" tabindex=\\"0\\" aria-roledescription=\\"Object Status Button\\" class=\\"fd-object-status fd-object-status--inverted fd-object-status--link is-focus\\">
         <span class=\\"fd-object-status__text\\">Neutral</span>
-    </span>
-    <span class=\\"fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--informative is-focus\\" tabindex=\\"0\\">
-        <i class=\\"fd-object-status__icon sap-icon--information\\" role=\\"presentation\\"></i>
+        <span class=\\"fd-object-status__sr-only\\">Neutral Entry</span>
+    </div>
+    <div role=\\"button\\" tabindex=\\"0\\" aria-roledescription=\\"Object Status Button\\" class=\\"fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--informative is-focus\\">
+        <i class=\\"fd-object-status__icon sap-icon--information\\" role=\\"presentation\\" aria-hidden=\\"true\\"></i>
         <span class=\\"fd-object-status__text\\">Information</span>
-    </span>
-    <span class=\\"fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--critical is-focus\\" tabindex=\\"0\\">
-        <i class=\\"fd-object-status__icon sap-icon--alert\\" role=\\"presentation\\"></i>
-        <span class=\\"fd-object-status__text\\">Caution</span>
-    </span>
-    <span class=\\"fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--positive is-focus\\" tabindex=\\"0\\">
-        <i class=\\"fd-object-status__icon sap-icon--sys-enter-2\\" role=\\"presentation\\"></i>
-        <span class=\\"fd-object-status__text\\">Positive</span>
-    </span>
-    <span class=\\"fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--negative is-focus\\" tabindex=\\"0\\">
-        <i class=\\"fd-object-status__icon sap-icon--error\\" role=\\"presentation\\"></i>
-        <span class=\\"fd-object-status__text\\">Negative</span>
-    </span>
+        <span class=\\"fd-object-status__sr-only\\">Informative Entry</span>
+    </div>
+    <div role=\\"button\\" tabindex=\\"0\\" aria-roledescription=\\"Object Status Button\\" class=\\"fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--critical is-focus\\">
+        <i class=\\"fd-object-status__icon sap-icon--alert\\" role=\\"presentation\\" aria-hidden=\\"true\\"></i>
+        <span class=\\"fd-object-status__text\\">Information</span>
+        <span class=\\"fd-object-status__sr-only\\">Warning issued</span>
+    </div>
+    <div role=\\"button\\" tabindex=\\"0\\" aria-roledescription=\\"Object Status Button\\" class=\\"fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--positive is-focus\\">
+        <i class=\\"fd-object-status__icon sap-icon--sys-enter-2\\" role=\\"presentation\\" aria-hidden=\\"true\\"></i>
+        <span class=\\"fd-object-status__text\\">Information</span>
+        <span class=\\"fd-object-status__sr-only\\">Entry successfully validated</span>
+    </div>
+    <div role=\\"button\\" tabindex=\\"0\\" aria-roledescription=\\"Object Status Button\\" class=\\"fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--negative is-focus\\">
+        <i class=\\"fd-object-status__icon sap-icon--error\\" role=\\"presentation\\" aria-hidden=\\"true\\"></i>
+        <span class=\\"fd-object-status__text\\">Information</span>
+        <span class=\\"fd-object-status__sr-only\\">Invalid Entry</span>
+    </div>
 </div>
+
 <br><br>
+
 <h4>Hover, Focus</h4>
 <div class=\\"fddocs-container\\">
-    <span class=\\"fd-object-status fd-object-status--inverted fd-object-status--link is-hover is-focus\\" tabindex=\\"0\\">
+    <div role=\\"button\\" tabindex=\\"0\\" aria-roledescription=\\"Object Status Button\\" class=\\"fd-object-status fd-object-status--inverted fd-object-status--link is-hover is-focus\\">
         <span class=\\"fd-object-status__text\\">Neutral</span>
-    </span>
-    <span class=\\"fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--informative is-hover is-focus\\" tabindex=\\"0\\">
-        <i class=\\"fd-object-status__icon sap-icon--information\\" role=\\"presentation\\"></i>
+        <span class=\\"fd-object-status__sr-only\\">Neutral Entry</span>
+    </div>
+    <div role=\\"button\\" tabindex=\\"0\\" aria-roledescription=\\"Object Status Button\\" class=\\"fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--informative is-hover is-focus\\">
+        <i class=\\"fd-object-status__icon sap-icon--information\\" role=\\"presentation\\" aria-hidden=\\"true\\"></i>
         <span class=\\"fd-object-status__text\\">Information</span>
-    </span>
-    <span class=\\"fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--critical is-hover is-focus\\" tabindex=\\"0\\">
-        <i class=\\"fd-object-status__icon sap-icon--alert\\" role=\\"presentation\\"></i>
-        <span class=\\"fd-object-status__text\\">Caution</span>
-    </span>
-    <span class=\\"fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--positive is-hover is-focus\\" tabindex=\\"0\\">
-        <i class=\\"fd-object-status__icon sap-icon--sys-enter-2\\" role=\\"presentation\\"></i>
-        <span class=\\"fd-object-status__text\\">Positive</span>
-    </span>
-    <span class=\\"fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--negative is-hover is-focus\\" tabindex=\\"0\\">
-        <i class=\\"fd-object-status__icon sap-icon--error\\" role=\\"presentation\\"></i>
-        <span class=\\"fd-object-status__text\\">Negative</span>
-    </span>
+        <span class=\\"fd-object-status__sr-only\\">Informative Entry</span>
+    </div>
+    <div role=\\"button\\" tabindex=\\"0\\" aria-roledescription=\\"Object Status Button\\" class=\\"fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--critical is-hover is-focus\\">
+        <i class=\\"fd-object-status__icon sap-icon--alert\\" role=\\"presentation\\" aria-hidden=\\"true\\"></i>
+        <span class=\\"fd-object-status__text\\">Information</span>
+        <span class=\\"fd-object-status__sr-only\\">Warning issued</span>
+    </div>
+    <div role=\\"button\\" tabindex=\\"0\\" aria-roledescription=\\"Object Status Button\\" class=\\"fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--positive is-hover is-focus\\">
+        <i class=\\"fd-object-status__icon sap-icon--sys-enter-2\\" role=\\"presentation\\" aria-hidden=\\"true\\"></i>
+        <span class=\\"fd-object-status__text\\">Information</span>
+        <span class=\\"fd-object-status__sr-only\\">Entry successfully validated</span>
+    </div>
+    <div role=\\"button\\" tabindex=\\"0\\" aria-roledescription=\\"Object Status Button\\" class=\\"fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--negative is-hover is-focus\\">
+        <i class=\\"fd-object-status__icon sap-icon--error\\" role=\\"presentation\\" aria-hidden=\\"true\\"></i>
+        <span class=\\"fd-object-status__text\\">Information</span>
+        <span class=\\"fd-object-status__sr-only\\">Invalid Entry</span>
+    </div>
 </div>
 "
 `;
@@ -34364,23 +34796,32 @@ exports[`Check stories > Components/Object Status > Story InvertedStates > Shoul
 exports[`Check stories > Components/Object Status > Story LargeObjectStatus > Should match snapshot 1`] = `
 "<div class=\\"fddocs-container\\">
     <span class=\\"fd-object-status fd-object-status--large fd-object-status--negative\\">
-        <i class=\\"fd-object-status__icon sap-icon--error\\" role=\\"presentation\\"></i>
+        <i class=\\"fd-object-status__icon sap-icon--error\\" role=\\"presentation\\" aria-hidden=\\"true\\"></i>
         <span class=\\"fd-object-status__text\\">Negative</span>
+        <span class=\\"fd-object-status__sr-only\\">Object Status</span>
+        <span class=\\"fd-object-status__sr-only\\">Invalid Entry</span>
     </span>
     <span class=\\"fd-object-status fd-object-status--large fd-object-status--critical\\">
-        <i class=\\"fd-object-status__icon sap-icon--alert\\" role=\\"presentation\\"></i>
+        <i class=\\"fd-object-status__icon sap-icon--alert\\" role=\\"presentation\\" aria-hidden=\\"true\\"></i>
         <span class=\\"fd-object-status__text\\">Critical</span>
+        <span class=\\"fd-object-status__sr-only\\">Object Status</span>
+        <span class=\\"fd-object-status__sr-only\\">Warning issued</span>
     </span>
     <span class=\\"fd-object-status fd-object-status--large fd-object-status--positive\\">
-        <i class=\\"fd-object-status__icon sap-icon--sys-enter-2\\" role=\\"presentation\\"></i>
+        <i class=\\"fd-object-status__icon sap-icon--sys-enter-2\\" role=\\"presentation\\" aria-hidden=\\"true\\"></i>
         <span class=\\"fd-object-status__text\\">Positive</span>
+        <span class=\\"fd-object-status__sr-only\\">Object Status</span>
+        <span class=\\"fd-object-status__sr-only\\">Entry successfully validated</span>
     </span>
     <span class=\\"fd-object-status fd-object-status--large fd-object-status--informative\\">
-        <i class=\\"fd-object-status__icon sap-icon--information\\" role=\\"presentation\\"></i>
+        <i class=\\"fd-object-status__icon sap-icon--information\\" role=\\"presentation\\" aria-hidden=\\"true\\"></i>
         <span class=\\"fd-object-status__text\\">Info</span>
+        <span class=\\"fd-object-status__sr-only\\">Object Status</span>
+        <span class=\\"fd-object-status__sr-only\\">Informative Entry</span>
     </span>
     <span class=\\"fd-object-status fd-object-status--large\\">
         <span class=\\"fd-object-status__text\\">Neutral</span>
+        <span class=\\"fd-object-status__sr-only\\">Object Status</span>
     </span>
 </div>
 "
@@ -34389,20 +34830,28 @@ exports[`Check stories > Components/Object Status > Story LargeObjectStatus > Sh
 exports[`Check stories > Components/Object Status > Story Primary > Should match snapshot 1`] = `
 "<div class=\\"fddocs-container\\">
     <span class=\\"fd-object-status fd-object-status--negative\\">
-        <i class=\\"fd-object-status__icon sap-icon--error\\" role=\\"presentation\\"></i>
+        <i class=\\"fd-object-status__icon sap-icon--error\\" role=\\"presentation\\" aria-hidden=\\"true\\"></i>
         <span class=\\"fd-object-status__text\\">Negative</span>
+        <span class=\\"fd-object-status__sr-only\\">Object Status</span>
+        <span class=\\"fd-object-status__sr-only\\">Invalid Entry</span>
     </span>
     <span class=\\"fd-object-status fd-object-status--critical\\">
-        <i class=\\"fd-object-status__icon sap-icon--alert\\" role=\\"presentation\\"></i>
+        <i class=\\"fd-object-status__icon sap-icon--alert\\" role=\\"presentation\\" aria-hidden=\\"true\\"></i>
         <span class=\\"fd-object-status__text\\">Critical</span>
+        <span class=\\"fd-object-status__sr-only\\">Object Status</span>
+        <span class=\\"fd-object-status__sr-only\\">Warning issued</span>
     </span>
     <span class=\\"fd-object-status fd-object-status--positive\\">
-        <i class=\\"fd-object-status__icon sap-icon--sys-enter-2\\" role=\\"presentation\\"></i>
+        <i class=\\"fd-object-status__icon sap-icon--sys-enter-2\\" role=\\"presentation\\" aria-hidden=\\"true\\"></i>
         <span class=\\"fd-object-status__text\\">Positive</span>
+        <span class=\\"fd-object-status__sr-only\\">Object Status</span>
+        <span class=\\"fd-object-status__sr-only\\">Entry successfully validated</span>
     </span>
     <span class=\\"fd-object-status fd-object-status--informative\\">
-        <i class=\\"fd-object-status__icon sap-icon--information\\" role=\\"presentation\\"></i>
+        <i class=\\"fd-object-status__icon sap-icon--information\\" role=\\"presentation\\" aria-hidden=\\"true\\"></i>
         <span class=\\"fd-object-status__text\\">Info</span>
+        <span class=\\"fd-object-status__sr-only\\">Object Status</span>
+        <span class=\\"fd-object-status__sr-only\\">Informative entry</span>
     </span>
 </div>
 "
@@ -34412,18 +34861,27 @@ exports[`Check stories > Components/Object Status > Story Text > Should match sn
 "<div class=\\"fddocs-container\\">
     <span class=\\"fd-object-status fd-object-status--negative\\">
         <span class=\\"fd-object-status__text\\">Negative</span>
+        <span class=\\"fd-object-status__sr-only\\">Object Status</span>
+        <span class=\\"fd-object-status__sr-only\\">Invalid Entry</span>
     </span>
     <span class=\\"fd-object-status fd-object-status--critical\\">
         <span class=\\"fd-object-status__text\\">Critical</span>
+        <span class=\\"fd-object-status__sr-only\\">Object Status</span>
+        <span class=\\"fd-object-status__sr-only\\">Warning issued</span>
     </span>
     <span class=\\"fd-object-status fd-object-status--positive\\">
         <span class=\\"fd-object-status__text\\">Positive</span>
+        <span class=\\"fd-object-status__sr-only\\">Object Status</span>
+        <span class=\\"fd-object-status__sr-only\\">Entry successfully validated</span>
     </span>
     <span class=\\"fd-object-status fd-object-status--informative\\">
         <span class=\\"fd-object-status__text\\">Info</span>
+        <span class=\\"fd-object-status__sr-only\\">Object Status</span>
+        <span class=\\"fd-object-status__sr-only\\">Informative entry</span>
     </span>
     <span class=\\"fd-object-status\\">
         <span class=\\"fd-object-status__text\\">Neutral</span>
+        <span class=\\"fd-object-status__sr-only\\">Object Status</span>
     </span>
 </div>
 "
@@ -34431,23 +34889,37 @@ exports[`Check stories > Components/Object Status > Story Text > Should match sn
 
 exports[`Check stories > Components/Object Status > Story TruncateExample > Should match snapshot 1`] = `
 "<div class=\\"fddocs-container\\">
-    <span class=\\"fd-object-status fd-object-status--negative fd-object-status--truncate\\" style=\\"max-width: 15rem;\\">
-        <i class=\\"fd-object-status__icon sap-icon--error\\" role=\\"presentation\\"></i>
+    <span class=\\"fd-object-status fd-object-status--negative\\" style=\\"max-width: 15rem;\\">
+        <i class=\\"fd-object-status__icon sap-icon--error\\" role=\\"presentation\\" aria-hidden=\\"true\\"></i>
         <span class=\\"fd-object-status__text\\">Default behaviour of Object Status with very long text. The text goes on multiple lines.</span>
+        <span class=\\"fd-object-status__sr-only\\">Object Status</span>
+        <span class=\\"fd-object-status__sr-only\\">Invalid Entry</span>
     </span>
+
     <span class=\\"fd-object-status fd-object-status--critical fd-object-status--truncate\\" style=\\"max-width: 15rem;\\">
-        <i class=\\"fd-object-status__icon sap-icon--alert\\" role=\\"presentation\\"></i>
+        <i class=\\"fd-object-status__icon sap-icon--alert\\" role=\\"presentation\\" aria-hidden=\\"true\\"></i>
         <span class=\\"fd-object-status__text\\">Object Status with text truncation with ellipsis</span>
+        <span class=\\"fd-object-status__sr-only\\">Object Status</span>
+        <span class=\\"fd-object-status__sr-only\\">Warning issued</span>
     </span>
+
     <span class=\\"fd-object-status fd-object-status--negative fd-object-status--inverted fd-object-status--truncate\\" style=\\"max-width: 15rem;\\">
         <span class=\\"fd-object-status__text\\">Inverted Negative with very, very long text which truncates</span>
+        <span class=\\"fd-object-status__sr-only\\">Object Status</span>
+        <span class=\\"fd-object-status__sr-only\\">Invalid Entry</span>
     </span>
+
     <span class=\\"fd-object-status fd-object-status--large fd-object-status--positive fd-object-status--truncate\\" style=\\"max-width: 15rem;\\">
-        <i class=\\"fd-object-status__icon sap-icon--sys-enter-2\\" role=\\"presentation\\"></i>
+        <i class=\\"fd-object-status__icon sap-icon--sys-enter-2\\" role=\\"presentation\\" aria-hidden=\\"true\\"></i>
         <span class=\\"fd-object-status__text\\">Positive with very, very long text which truncates</span>
+        <span class=\\"fd-object-status__sr-only\\">Object Status</span>
+        <span class=\\"fd-object-status__sr-only\\">Entry successfully validated</span>
     </span>
+
     <span class=\\"fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--indication-8 fd-object-status--truncate\\" tabindex=\\"0\\" style=\\"max-width: 15rem;\\">
         <span class=\\"fd-object-status__text\\">Indication8 with very, very long text which truncates</span>
+        <span class=\\"fd-object-status__sr-only\\">Object Status</span>
+        <span class=\\"fd-object-status__sr-only\\">Indication Color 8</span>
     </span>
 </div>
 "

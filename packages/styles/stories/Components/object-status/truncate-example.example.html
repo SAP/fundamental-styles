@@ -1,20 +1,34 @@
 <div class="fddocs-container">
-    <span class="fd-object-status fd-object-status--negative fd-object-status--truncate" style="max-width: 15rem;">
-        <i class="fd-object-status__icon sap-icon--error" role="presentation"></i>
+    <span class="fd-object-status fd-object-status--negative" style="max-width: 15rem;">
+        <i class="fd-object-status__icon sap-icon--error" role="presentation" aria-hidden="true"></i>
         <span class="fd-object-status__text">Default behaviour of Object Status with very long text. The text goes on multiple lines.</span>
+        <span class="fd-object-status__sr-only">Object Status</span>
+        <span class="fd-object-status__sr-only">Invalid Entry</span>
     </span>
+
     <span class="fd-object-status fd-object-status--critical fd-object-status--truncate" style="max-width: 15rem;">
-        <i class="fd-object-status__icon sap-icon--alert" role="presentation"></i>
+        <i class="fd-object-status__icon sap-icon--alert" role="presentation" aria-hidden="true"></i>
         <span class="fd-object-status__text">Object Status with text truncation with ellipsis</span>
+        <span class="fd-object-status__sr-only">Object Status</span>
+        <span class="fd-object-status__sr-only">Warning issued</span>
     </span>
+
     <span class="fd-object-status fd-object-status--negative fd-object-status--inverted fd-object-status--truncate" style="max-width: 15rem;">
         <span class="fd-object-status__text">Inverted Negative with very, very long text which truncates</span>
+        <span class="fd-object-status__sr-only">Object Status</span>
+        <span class="fd-object-status__sr-only">Invalid Entry</span>
     </span>
+
     <span class="fd-object-status fd-object-status--large fd-object-status--positive fd-object-status--truncate" style="max-width: 15rem;">
-        <i class="fd-object-status__icon sap-icon--sys-enter-2" role="presentation"></i>
+        <i class="fd-object-status__icon sap-icon--sys-enter-2" role="presentation" aria-hidden="true"></i>
         <span class="fd-object-status__text">Positive with very, very long text which truncates</span>
+        <span class="fd-object-status__sr-only">Object Status</span>
+        <span class="fd-object-status__sr-only">Entry successfully validated</span>
     </span>
+
     <span class="fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--indication-8 fd-object-status--truncate" tabindex="0" style="max-width: 15rem;">
         <span class="fd-object-status__text">Indication8 with very, very long text which truncates</span>
+        <span class="fd-object-status__sr-only">Object Status</span>
+        <span class="fd-object-status__sr-only">Indication Color 8</span>
     </span>
 </div>
