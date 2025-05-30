@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.41.0-rc.2](https://github.com/SAP/fundamental-styles/compare/v0.41.0-rc.1...v0.41.0-rc.2) (2025-05-30)
+
+### Bug Fixes
+
+- **styles:** a11y updates for Object Marker [ci visual] ([#6068](https://github.com/SAP/fundamental-styles/issues/6068)) ([5243a9e](https://github.com/SAP/fundamental-styles/commit/5243a9e9a548cb15207bd3910638fd48ee784450))
+
+### BREAKING CHANGES
+
+- **styles:** added a visually hidden element for aria-labelledby, new role for icon only obj marker
+
 # [0.41.0-rc.1](https://github.com/SAP/fundamental-styles/compare/v0.41.0-rc.0...v0.41.0-rc.1) (2025-05-29)
 
 ### Bug Fixes
@@ -6091,9 +6101,9 @@ Co-authored-by: droshev <mladen.droshev@sap.com>
 
 - added a new modifier class to fd-row to achieve even alignment of its elements:fd-row--top in a form.
   Before:
-      <div class="fd-row">
-      After:
-      <div class="fd-row fd-row--top">
+  <div class="fd-row">
+  After:
+  <div class="fd-row fd-row--top">
 
 ### Bug Fixes
 
