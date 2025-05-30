@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.41.0-rc.3](https://github.com/SAP/fundamental-styles/compare/v0.41.0-rc.2...v0.41.0-rc.3) (2025-05-30)
+
+### Bug Fixes
+
+- **styles:** add a11y updates for Object Identifier [ci visual] ([#6067](https://github.com/SAP/fundamental-styles/issues/6067)) ([9741815](https://github.com/SAP/fundamental-styles/commit/9741815c63df6536e2de440e309cc16a92e7e3c4))
+
+### BREAKING CHANGES
+
+- **styles:** markup update to announce the role of the element
+
 # [0.41.0-rc.2](https://github.com/SAP/fundamental-styles/compare/v0.41.0-rc.1...v0.41.0-rc.2) (2025-05-30)
 
 ### Bug Fixes
@@ -6101,9 +6111,9 @@ Co-authored-by: droshev <mladen.droshev@sap.com>
 
 - added a new modifier class to fd-row to achieve even alignment of its elements:fd-row--top in a form.
   Before:
-  <div class="fd-row">
-  After:
-  <div class="fd-row fd-row--top">
+    <div class="fd-row">
+    After:
+    <div class="fd-row fd-row--top">
 
 ### Bug Fixes
 
