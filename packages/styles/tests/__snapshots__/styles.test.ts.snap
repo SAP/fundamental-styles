@@ -33360,69 +33360,78 @@ exports[`Check stories > Components/Object List > Story Standard > Should match 
 `;
 
 exports[`Check stories > Components/Object Marker > Story ClickableObjectMarker > Should match snapshot 1`] = `
-"
-<a href=\\"#\\" class=\\"fd-object-marker fd-object-marker--link\\">
-    <i class=\\"fd-object-marker__icon sap-icon--private\\" role=\\"presentation\\"></i>
-    <span class=\\"fd-object-marker__text\\">Locked</span>
+"<span class=\\"fd-object-marker__sr-only\\" id=\\"fd-object-marker-status\\" aria-hidden=\\"true\\">Status(active)</span>
+
+<a href=\\"#\\" tabindex=\\"0\\" aria-labelledby=\\"fd-object-marker-status fd-object-marker-text-1\\" class=\\"fd-object-marker fd-object-marker--link\\">
+    <i class=\\"fd-object-marker__icon sap-icon--private\\" role=\\"presentation\\" aria-hidden=\\"true\\"></i>
+    <span class=\\"fd-object-marker__text\\" id=\\"fd-object-marker-text-1\\">Locked</span>
 </a>
-<a href=\\"#\\" class=\\"fd-object-marker fd-object-marker--link\\">
-    <i class=\\"fd-object-marker__icon sap-icon--user-edit\\" role=\\"presentation\\"></i>
-    <span class=\\"fd-object-marker__text\\">Unsaved Changes</span>
+<a href=\\"#\\" tabindex=\\"0\\" aria-labelledby=\\"fd-object-marker-status fd-object-marker-text-2\\" class=\\"fd-object-marker fd-object-marker--link\\">
+    <i class=\\"fd-object-marker__icon sap-icon--user-edit\\" role=\\"presentation\\" aria-hidden=\\"true\\"></i>
+    <span class=\\"fd-object-marker__text\\" id=\\"fd-object-marker-text-2\\">Unsaved Changes</span>
 </a>
 "
 `;
 
 exports[`Check stories > Components/Object Marker > Story IconAndText > Should match snapshot 1`] = `
-"
-<div class=\\"fd-object-marker\\">
-    <i class=\\"fd-object-marker__icon sap-icon--request\\" role=\\"presentation\\"></i>
+"<span class=\\"fd-object-marker__sr-only\\" id=\\"status\\" aria-hidden=\\"true\\">Status</span>
+
+<div class=\\"fd-object-marker\\" aria-labelledby=\\"status\\">
+    <i class=\\"fd-object-marker__icon sap-icon--request\\" role=\\"presentation\\" aria-hidden=\\"true\\"></i>
     <span class=\\"fd-object-marker__text\\">Request</span>
 </div>
-<div class=\\"fd-object-marker\\">
-    <i class=\\"fd-object-marker__icon sap-icon--favorite\\" role=\\"presentation\\"></i>
+<div class=\\"fd-object-marker\\" aria-labelledby=\\"status\\">
+    <i class=\\"fd-object-marker__icon sap-icon--favorite\\" role=\\"presentation\\" aria-hidden=\\"true\\"></i>
     <span class=\\"fd-object-marker__text\\">Favourite</span>
 </div>
-<div class=\\"fd-object-marker\\">
-    <i class=\\"fd-object-marker__icon sap-icon--flag\\" role=\\"presentation\\"></i>
+<div class=\\"fd-object-marker\\" aria-labelledby=\\"status\\">
+    <i class=\\"fd-object-marker__icon sap-icon--flag\\" role=\\"presentation\\" aria-hidden=\\"true\\"></i>
     <span class=\\"fd-object-marker__text\\">Flag</span>
 </div>
-<div class=\\"fd-object-marker\\">
-    <i class=\\"fd-object-marker__icon sap-icon--user-edit\\" role=\\"presentation\\"></i>
+<div class=\\"fd-object-marker\\" aria-labelledby=\\"status\\">
+    <i class=\\"fd-object-marker__icon sap-icon--user-edit\\" role=\\"presentation\\" aria-hidden=\\"true\\"></i>
     <span class=\\"fd-object-marker__text\\">Draft</span>
 </div>
-<div class=\\"fd-object-marker\\">
-    <i class=\\"fd-object-marker__icon sap-icon--private\\" role=\\"presentation\\"></i>
+<div class=\\"fd-object-marker\\" aria-labelledby=\\"status\\">
+    <i class=\\"fd-object-marker__icon sap-icon--private\\" role=\\"presentation\\" aria-hidden=\\"true\\"></i>
     <span class=\\"fd-object-marker__text\\">Locked</span>
 </div>
 "
 `;
 
 exports[`Check stories > Components/Object Marker > Story IconOnly > Should match snapshot 1`] = `
-"
-<div class=\\"fd-object-marker\\">
-    <i class=\\"fd-object-marker__icon sap-icon--request\\" aria-label=\\"icon for request\\"></i>
+"<span class=\\"fd-object-marker__sr-only\\" id=\\"status\\" aria-hidden=\\"true\\">Status</span>
+
+<div class=\\"fd-object-marker\\" role=\\"img\\" aria-labelledby=\\"status fd-object-marker__desc-1\\">
+    <i class=\\"fd-object-marker__icon sap-icon--request\\" title=\\"Request\\" aria-hidden=\\"true\\"></i>
+    <span class=\\"fd-object-marker__sr-only\\" id=\\"fd-object-marker__desc-1\\" aria-hidden=\\"true\\">Request</span>
 </div>
-<div class=\\"fd-object-marker\\">
-    <i class=\\"fd-object-marker__icon sap-icon--favorite\\" aria-label=\\"icon for favourite\\"></i>
+<div class=\\"fd-object-marker\\" role=\\"img\\" aria-labelledby=\\"status fd-object-marker__desc-2\\">
+    <i class=\\"fd-object-marker__icon sap-icon--favorite\\" title=\\"Favourite\\" aria-hidden=\\"true\\"></i>
+    <span class=\\"fd-object-marker__sr-only\\" id=\\"fd-object-marker__desc-2\\" aria-hidden=\\"true\\">Favourite</span>
 </div>
-<div class=\\"fd-object-marker\\">
-    <i class=\\"fd-object-marker__icon sap-icon--flag\\" aria-label=\\"icon for flag\\"></i>
+<div class=\\"fd-object-marker\\" role=\\"img\\" aria-labelledby=\\"status fd-object-marker__desc-3\\">
+    <i class=\\"fd-object-marker__icon sap-icon--flag\\" title=\\"Flag\\" aria-hidden=\\"true\\"></i>
+    <span class=\\"fd-object-marker__sr-only\\" id=\\"fd-object-marker__desc-3\\" aria-hidden=\\"true\\">Flag</span>
 </div>
-<div class=\\"fd-object-marker\\">
-    <i class=\\"fd-object-marker__icon sap-icon--user-edit\\" aria-label=\\"icon for user edit\\"></i>
+<div class=\\"fd-object-marker\\" role=\\"img\\" aria-labelledby=\\"status fd-object-marker__desc-4\\">
+    <i class=\\"fd-object-marker__icon sap-icon--user-edit\\" title=\\"Edit\\" aria-hidden=\\"true\\"></i>
+    <span class=\\"fd-object-marker__sr-only\\" id=\\"fd-object-marker__desc-4\\" aria-hidden=\\"true\\">Edit</span>
 </div>
-<div class=\\"fd-object-marker\\">
-    <i class=\\"fd-object-marker__icon sap-icon--private\\" aria-label=\\"icon for private\\"></i>
+<div class=\\"fd-object-marker\\" role=\\"img\\" aria-labelledby=\\"status fd-object-marker__desc-5\\">
+    <i class=\\"fd-object-marker__icon sap-icon--private\\" title=\\"Private\\" aria-hidden=\\"true\\"></i>
+    <span class=\\"fd-object-marker__sr-only\\" id=\\"fd-object-marker__desc-5\\" aria-hidden=\\"true\\">Private</span>
 </div>
 "
 `;
 
 exports[`Check stories > Components/Object Marker > Story MarkerText > Should match snapshot 1`] = `
-"
-<div class=\\"fd-object-marker\\">
+"<span class=\\"fd-object-marker__sr-only\\" id=\\"status\\" aria-hidden=\\"true\\">Status</span>
+
+<div class=\\"fd-object-marker\\" aria-labelledby=\\"status\\">
     <span class=\\"fd-object-marker__text\\">Draft</span>
 </div>
-<div class=\\"fd-object-marker\\">
+<div class=\\"fd-object-marker\\" aria-labelledby=\\"status\\">
     <span class=\\"fd-object-marker__text\\">Locked</span>
 </div>
 "

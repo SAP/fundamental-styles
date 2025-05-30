@@ -34,6 +34,10 @@ $block: #{$fd-namespace}-object-marker;
     }
   }
 
+  &__sr-only {
+    @include fd-screen-reader-only();
+  }
+
   &:not(.#{$block}--link) {
     .#{$block}__text {
       @include fd-reset();
