@@ -1,6 +1,6 @@
 import lernaJson from '../../../../lerna.json';
-import { IconButton } from '@storybook/components';
-import { styled } from '@storybook/theming';
+import { IconButton } from 'storybook/internal/components';
+import { styled } from 'storybook/theming';
 import { GithubIcon } from '@storybook/icons';
 
 const StyledSpan = styled.span(({ theme }) => ({

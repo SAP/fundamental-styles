@@ -1,7 +1,7 @@
 import { getOwner } from '../../../utilities/get-owner';
 import IconButtonLabel from './IconButtonLabel';
 import React, { useState, useEffect } from 'react';
-import { WithTooltip, TooltipLinkList, IconButton } from '@storybook/components';
+import { WithTooltip, TooltipLinkList, IconButton } from 'storybook/internal/components';
 import { PaintBrushIcon } from '@storybook/icons';
 
 const Selector = ({ api }) => {

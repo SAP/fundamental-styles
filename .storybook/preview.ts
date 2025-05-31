@@ -7,7 +7,7 @@ import {
 } from 'fundamental-styles/storybook';
 import { MainDocPage } from './MainDocPage';
 import { contentDensities, directionalities } from 'fundamental-styles/configuration';
-import { Preview } from '@storybook/html';
+import { Preview } from '@storybook/html-vite';
 
 export default {
     parameters: {

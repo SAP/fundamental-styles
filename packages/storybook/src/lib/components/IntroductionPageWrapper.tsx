@@ -1,5 +1,5 @@
 import { IntroductionPage, SAPContainer } from 'fundamental-styles/doc-ui';
-import { Markdown } from "@storybook/blocks"
+import { Markdown } from "@storybook/addon-docs/blocks"
 
 function IntroductionPageWrapper({ children }) {
     return <SAPContainer>

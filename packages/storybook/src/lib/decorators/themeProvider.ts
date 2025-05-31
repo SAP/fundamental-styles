@@ -1,4 +1,4 @@
-import { makeDecorator } from '@storybook/preview-api';
+import { makeDecorator } from 'storybook/preview-api';
 import { packageValueToPackageThemesMapMap } from 'fundamental-styles/configuration';
 import { getPackage } from 'fundamental-styles/utils';
 

@@ -1,5 +1,5 @@
 import capitalize from 'lodash/capitalize';
-import { StoryFn } from '@storybook/html';
+import { StoryFn } from '@storybook/html-vite';
 
 const wrappedStory = (storyName: string, storyFn, direction: 'ltr' | 'rtl', compact = false) => `
 <h2> ${storyName} </h2>
