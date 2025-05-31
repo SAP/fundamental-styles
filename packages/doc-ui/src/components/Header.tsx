@@ -6,7 +6,7 @@ import { IfBlock } from './IfBlock';
 import { useContext } from 'react';
 import { SAPContext } from '../contexts/SAPContext';
 import ContentDensitySelect from './ContentDensitySelect';
-import { styled } from '@storybook/theming';
+import { styled } from 'storybook/theming';
 
 const spacing = 10;
 

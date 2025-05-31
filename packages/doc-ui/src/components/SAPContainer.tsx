@@ -1,6 +1,6 @@
 import { DocsContext } from '@storybook/addon-docs';
-import { addons } from '@storybook/preview-api';
-import { UPDATE_GLOBALS } from '@storybook/core-events';
+import { addons } from 'storybook/preview-api';
+import { UPDATE_GLOBALS } from 'storybook/internal/core-events';
 import { useContext, useEffect, useMemo, useState } from 'react';
 import { SAPContext } from '../contexts/SAPContext';
 import { contentDensities, directionalities } from 'fundamental-styles/configuration';

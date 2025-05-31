@@ -1,4 +1,4 @@
-import { addons } from '@storybook/manager-api';
+import { addons } from 'storybook/manager-api';
 import fundamentalTheme from '../packages/storybook/src/lib/fundamentals';
 
 addons.setConfig({

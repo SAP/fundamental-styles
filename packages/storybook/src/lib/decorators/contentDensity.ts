@@ -1,4 +1,4 @@
-import { makeDecorator } from '@storybook/preview-api';
+import { makeDecorator } from 'storybook/preview-api';
 
 export const withContentDensity = makeDecorator({
     name: 'directionalityProvider',
