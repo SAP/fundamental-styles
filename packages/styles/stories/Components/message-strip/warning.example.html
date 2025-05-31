@@ -1,11 +1,22 @@
-<div class="fd-message-strip fd-message-strip--warning fd-message-strip--dismissible" role="note" aria-live="assertive" id="message-strip-4" aria-labelledby="message-strip-4">
+<div 
+  role="note" 
+  aria-labelledby="message-strip-hidden-text-4 message-strip-text-4"
+  class="fd-message-strip fd-message-strip--warning fd-message-strip--dismissible">
+  <span class="fd-message-strip__sr-only" id="message-strip-hidden-text-4">Warning Information Bar Closable</span>
+  
   <div class="fd-message-strip__icon-container" aria-hidden="true">
-    <span class="sap-icon sap-icon--message-warning" focusable="false" role="presentation" aria-hidden="true"></span>
+    <span class="sap-icon sap-icon--message-warning" role="presentation" aria-hidden="true"></span>
   </div>
-  <p class="fd-message-strip__text">
-    Vivamus sagittis diam in vehicula lobortis sapien arcu mattis erat vel aliquet sem urna et.
+
+  <p class="fd-message-strip__text" id="message-strip-text-4">
+    Warning Message Strip
   </p>
-  <button class="fd-button fd-button--transparent is-compact fd-message-strip__close" aria-controls="message-strip-4" aria-label="Close" title="Close">
-    <i class="sap-icon--decline"></i>
+
+  <button 
+    role="button"
+    class="fd-button fd-button--transparent is-compact fd-message-strip__close" 
+    aria-label="Warning Information Bar Close" 
+    title="Warning Information Bar Close">
+    <i class="sap-icon--decline" role="presentation" aria-hidden="true"></i>
   </button>
 </div>

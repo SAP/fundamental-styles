@@ -35,8 +35,7 @@ export default {
       - <b>Text with Link </b>- add the \`.fd-message-strip--link\` modifier class if the text message contains a link element.
 - <b>Close button (optional) </b>- each message can have a Close button so it can be removed from the UI, if needed. Add the \`.fd-message-strip--dismissible\` modifier class for a dismissible message strip.
 
-        `,
-    tags: ['f3', 'theme']
+        `
   }
 };
 
@@ -105,7 +104,14 @@ MessageStripWithLink.storyName = 'Text with link';
 MessageStripWithLink.parameters = {
   docs: {
     description: {
-      story: 'The Link inside Message Strip has additional styling. Add the `fd-message-strip--link` modifier class if the message contains a link element.'
+      story: `The Link inside Message Strip has additional styling. Add the <code>fd-message-strip--link</code> modifier class if the message contains a link element. <br>
+      The MessageStrip can include multiple links—not just one. This allows applications to provide additional context or actions related to the message, such as links to:
+      <ul>
+        <li>Other apps where the issue originated</li>
+        <li>Apps where the issue can be resolved</li>
+        <li>Related objects or specific sections</li>
+        <li>Help documentation</li>
+      </ul>`
     }
   }
 };
