@@ -93,7 +93,7 @@
         "fast-glob": "3.3.2",
         "fs-extra": "11.2.0",
         "git-semver-tags": "4.1.1",
-        "glob": "8.0.3",
+        "glob": "11.0.2",
         "husky": "7.0.4",
         "jsonc-eslint-parser": "2.1.0",
         "lerna": "8.2.1",
