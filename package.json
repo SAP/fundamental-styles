@@ -77,7 +77,7 @@
         "clean-css": "5.3.3",
         "clean-css-cli": "5.4.1",
         "colors": "1.4.0",
-        "conventional-changelog": "5.1.0",
+        "conventional-changelog": "7.0.2",
         "conventional-changelog-angular": "7.0.0",
         "conventional-changelog-cli": "4.1.0",
         "conventional-recommended-bump": "9.0.0",
