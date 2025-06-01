@@ -4460,16 +4460,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/builder-vite@npm:9.0.2":
-  version: 9.0.2
-  resolution: "@storybook/builder-vite@npm:9.0.2"
+"@storybook/builder-vite@npm:9.0.3":
+  version: 9.0.3
+  resolution: "@storybook/builder-vite@npm:9.0.3"
   dependencies:
-    "@storybook/csf-plugin": "npm:9.0.2"
+    "@storybook/csf-plugin": "npm:9.0.3"
     ts-dedent: "npm:^2.0.0"
   peerDependencies:
-    storybook: ^9.0.2
+    storybook: ^9.0.3
     vite: ^5.0.0 || ^6.0.0
-  checksum: 10/fc5067aa57f0664f571f02048f4f1e1dd1165435163cbbe48879b34e18741d86e365d631b56b70bde1e912ec627f843b4652a1f2bbde136547b1126f01afc36e
+  checksum: 10/99fcce5b91b5491cebec382c987de82f90e671faffb142ee5b08f90f902442013070790d00fd7fbedfa88295ad221b148a78cde967175dbbc7912cd424fb2189
   languageName: node
   linkType: hard
 
@@ -4484,6 +4484,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@storybook/csf-plugin@npm:9.0.3":
+  version: 9.0.3
+  resolution: "@storybook/csf-plugin@npm:9.0.3"
+  dependencies:
+    unplugin: "npm:^1.3.1"
+  peerDependencies:
+    storybook: ^9.0.3
+  checksum: 10/6d400e17f0b8d0880d6678b6135b40ec8b1ae21b524ffd9db9c77fe46e8a4a681da8171a6df258813584277f48b3ec3412a7ec2baea3178012655070eead31eb
+  languageName: node
+  linkType: hard
+
 "@storybook/global@npm:^5.0.0":
   version: 5.0.0
   resolution: "@storybook/global@npm:5.0.0"
@@ -4492,26 +4503,26 @@ __metadata:
   linkType: hard
 
 "@storybook/html-vite@npm:^9.0.2":
-  version: 9.0.2
-  resolution: "@storybook/html-vite@npm:9.0.2"
+  version: 9.0.3
+  resolution: "@storybook/html-vite@npm:9.0.3"
   dependencies:
-    "@storybook/builder-vite": "npm:9.0.2"
-    "@storybook/html": "npm:9.0.2"
+    "@storybook/builder-vite": "npm:9.0.3"
+    "@storybook/html": "npm:9.0.3"
   peerDependencies:
-    storybook: ^9.0.2
-  checksum: 10/b67c27b83994970c596ac5b93d65252a9375cdd11328558111b02208161ef5224c623faa7278473e97bc843fdec1741438c69761c2fe3af5a9b74f544b5eb6c1
+    storybook: ^9.0.3
+  checksum: 10/45b4741e08f1cf0b9d71814dc21db690d98168f0b310762aba7d5925ea79385e240a7b7e329a1bea4e0cda5e29e6699d12a79355b787eecc95b07ba9783018b5
   languageName: node
   linkType: hard
 
-"@storybook/html@npm:9.0.2":
-  version: 9.0.2
-  resolution: "@storybook/html@npm:9.0.2"
+"@storybook/html@npm:9.0.3":
+  version: 9.0.3
+  resolution: "@storybook/html@npm:9.0.3"
   dependencies:
     "@storybook/global": "npm:^5.0.0"
     ts-dedent: "npm:^2.0.0"
   peerDependencies:
-    storybook: ^9.0.2
-  checksum: 10/c1caaf044e1a487655b56eb71312044d5a1ed419e25848f0116aa0d83ef88ae982eecc368ea4f7d6f3dbb204405d62e52418d4af2a388e9943b789b2201cc032
+    storybook: ^9.0.3
+  checksum: 10/d93469c5c758f797253abf9827f998d51bccba3e683515fe1c3dfdb3b469599322ea208b6996d819145e4f7f2ece687c2e9fc27cb3a7b7c98fbe2ca085145765
   languageName: node
   linkType: hard
 
