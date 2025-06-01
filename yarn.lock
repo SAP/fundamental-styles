@@ -7174,25 +7174,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"chromatic@npm:^11.25.2":
-  version: 11.29.0
-  resolution: "chromatic@npm:11.29.0"
-  peerDependencies:
-    "@chromatic-com/cypress": ^0.*.* || ^1.0.0
-    "@chromatic-com/playwright": ^0.*.* || ^1.0.0
-  peerDependenciesMeta:
-    "@chromatic-com/cypress":
-      optional: true
-    "@chromatic-com/playwright":
-      optional: true
-  bin:
-    chroma: dist/bin.js
-    chromatic: dist/bin.js
-    chromatic-cli: dist/bin.js
-  checksum: 10/8416acc2f5d61bbbaffb232906244c1a84b6068b2801ae166b76c880a45bc42282bc79ea36c58811a9e6d9e9ea142de5610165940fac2c7bf1d4fc1ba6bc091c
-  languageName: node
-  linkType: hard
-
 "chromatic@npm:^12.0.0":
   version: 12.0.0
   resolution: "chromatic@npm:12.0.0"
@@ -10604,7 +10585,7 @@ __metadata:
     "@vitejs/plugin-react": "npm:4.5.0"
     autoprefixer: "npm:10.4.21"
     bundlesize: "npm:0.18.2"
-    chromatic: "npm:^11.25.2"
+    chromatic: "npm:^12.0.0"
     clean-css: "npm:5.3.3"
     clean-css-cli: "npm:5.4.1"
     colors: "npm:1.4.0"
