@@ -106,7 +106,6 @@ $inverted-color-states: (
     @include fd-ellipsis();
 
     color: inherit;
-    line-height: 1;
     max-width: 100%;
     font-size: inherit;
     min-height: inherit;
@@ -185,26 +184,26 @@ $inverted-color-states: (
     }
 
     @each $set-name, $color-set in $inverted-color-states {
-      $regular: map-get($color-set, "regular");
-      $hover: map-get($color-set, "hover");
-      $active: map-get($color-set, "active");
+      $regular: map.get($color-set, "regular");
+      $hover: map.get($color-set, "hover");
+      $active: map.get($color-set, "active");
 
       &.#{$block}--#{$set-name} {
-        --fdObjectNumber_Color: #{map-get($regular, "color")};
-        --fdObjectNumber_Background: #{map-get($regular, "background")};
-        --fdObjectNumber_Border_Color: #{map-get($regular, "borderColor")};
+        --fdObjectNumber_Color: #{map.get($regular, "color")};
+        --fdObjectNumber_Background: #{map.get($regular, "background")};
+        --fdObjectNumber_Border_Color: #{map.get($regular, "borderColor")};
 
         &.#{$block}--interactive {
           @include fd-hover() {
-            --fdObjectNumber_Color: #{map-get($hover, "color")};
-            --fdObjectNumber_Background: #{map-get($hover, "background")};
-            --fdObjectNumber_Border_Color: #{map-get($hover, "borderColor")};
+            --fdObjectNumber_Color: #{map.get($hover, "color")};
+            --fdObjectNumber_Background: #{map.get($hover, "background")};
+            --fdObjectNumber_Border_Color: #{map.get($hover, "borderColor")};
           }
       
           @include fd-active() {
-            --fdObjectNumber_Color: #{map-get($active, "color")};
-            --fdObjectNumber_Background: #{map-get($active, "background")};
-            --fdObjectNumber_Border_Color: #{map-get($active, "borderColor")};
+            --fdObjectNumber_Color: #{map.get($active, "color")};
+            --fdObjectNumber_Background: #{map.get($active, "background")};
+            --fdObjectNumber_Border_Color: #{map.get($active, "borderColor")};
           }
         }
       }
