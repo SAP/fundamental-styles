@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.41.0-rc.7](https://github.com/SAP/fundamental-styles/compare/v0.41.0-rc.6...v0.41.0-rc.7) (2025-06-04)
+
+### Bug Fixes
+
+- **styles:** checkbox documentation fixes [ci visual] ([#6056](https://github.com/SAP/fundamental-styles/issues/6056)) ([84d0a1f](https://github.com/SAP/fundamental-styles/commit/84d0a1fdbd942c8ba6a053bd1bf51d41541c2f71))
+
 # [0.41.0-rc.6](https://github.com/SAP/fundamental-styles/compare/v0.41.0-rc.5...v0.41.0-rc.6) (2025-05-31)
 
 **Note:** Version bump only for package fundamental-styles
@@ -6123,9 +6129,9 @@ Co-authored-by: droshev <mladen.droshev@sap.com>
 
 - added a new modifier class to fd-row to achieve even alignment of its elements:fd-row--top in a form.
   Before:
-    <div class="fd-row">
-    After:
-    <div class="fd-row fd-row--top">
+      <div class="fd-row">
+      After:
+      <div class="fd-row fd-row--top">
 
 ### Bug Fixes
 
