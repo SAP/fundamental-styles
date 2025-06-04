@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.41.0-rc.8](https://github.com/SAP/fundamental-styles/compare/v0.41.0-rc.7...v0.41.0-rc.8) (2025-06-04)
+
+### Bug Fixes
+
+- **styles:** add design and a11y updates for Object Number [ci visual] ([#6082](https://github.com/SAP/fundamental-styles/issues/6082)) ([bf0b433](https://github.com/SAP/fundamental-styles/commit/bf0b433fd850cd553fd15b03f49afe0401e92a45))
+
+### BREAKING CHANGES
+
+- **styles:** new modifier classes, new class to visually hide the additional context
+
 # [0.41.0-rc.7](https://github.com/SAP/fundamental-styles/compare/v0.41.0-rc.6...v0.41.0-rc.7) (2025-06-04)
 
 ### Bug Fixes
@@ -6129,9 +6139,9 @@ Co-authored-by: droshev <mladen.droshev@sap.com>
 
 - added a new modifier class to fd-row to achieve even alignment of its elements:fd-row--top in a form.
   Before:
-      <div class="fd-row">
-      After:
-      <div class="fd-row fd-row--top">
+  <div class="fd-row">
+  After:
+  <div class="fd-row fd-row--top">
 
 ### Bug Fixes
 
