@@ -47431,6 +47431,13 @@ exports[`Check stories > Components/Table > Story ResponsiveTablePopInMode > Sho
         <span class=\\"fd-toolbar__spacer fd-toolbar__spacer--auto\\"></span>
     </div>
     <table class=\\"fd-table fd-table--responsive fd-table--no-horizontal-borders fd-table--no-vertical-borders fd-table--pop-in\\">
+        <thead class=\\"fd-table__header\\">
+            <tr class=\\"fd-table__row\\">
+                <th class=\\"fd-table__cell\\" scope=\\"col\\">Name</th>
+                <th class=\\"fd-table__cell\\" scope=\\"col\\">Price</th>
+                <th class=\\"fd-table__cell\\" scope=\\"col\\"></th>
+            </tr>
+        </thead>
         <tbody class=\\"fd-table__body\\">
             <tr class=\\"fd-table__row fd-table__row--main fd-table__row--activable fd-table__row--hoverable\\">
                 <td class=\\"fd-table__cell\\">
@@ -47494,11 +47501,24 @@ exports[`Check stories > Components/Table > Story ResponsiveTablePopInMode > Sho
         <span class=\\"fd-toolbar__spacer fd-toolbar__spacer--auto\\"></span>
     </div>
     <table class=\\"fd-table fd-table--responsive fd-table--no-horizontal-borders fd-table--no-vertical-borders fd-table--pop-in\\">
+        <thead class=\\"fd-table__header\\">
+            <tr class=\\"fd-table__row\\">
+                <th class=\\"fd-table__cell fd-table__cell--checkbox\\" scope=\\"col\\">
+                    <input aria-label=\\"checkbox\\" type=\\"checkbox\\" class=\\"fd-checkbox fd-table__checkbox\\" id=\\"Ai4ez611b\\">
+                    <label class=\\"fd-checkbox__label fd-table__checkbox-label\\" for=\\"Ai4ez611b\\">
+                        <span class=\\"fd-checkbox__checkmark\\" aria-hidden=\\"true\\"></span>
+                    </label>
+                </th>
+                <th class=\\"fd-table__cell\\" scope=\\"col\\">Name</th>
+                <th class=\\"fd-table__cell\\" scope=\\"col\\">Price</th>
+                <th class=\\"fd-table__cell\\" scope=\\"col\\"></th>
+            </tr>
+        </thead>
         <tbody class=\\"fd-table__body\\">
             <tr class=\\"fd-table__row fd-table__row--main\\">
                 <td class=\\"fd-table__cell fd-table__cell--checkbox\\">
-                    <input aria-label=\\"checkbox\\" type=\\"checkbox\\" class=\\"fd-checkbox\\" id=\\"CWkhTG\\">
-                    <label class=\\"fd-checkbox__label\\" for=\\"CWkhTG\\"></label>
+                    <input aria-label=\\"checkbox\\" type=\\"checkbox\\" class=\\"fd-checkbox\\" id=\\"EWuzWh\\">
+                    <label class=\\"fd-checkbox__label\\" for=\\"EWuzWh\\"><span class=\\"fd-checkbox__checkmark\\" aria-hidden=\\"true\\"></span></label>
                 </td>
                 <td class=\\"fd-table__cell\\">
                     <p class=\\"fd-table__text fd-table__text--title\\">Banana</p>
@@ -47529,7 +47549,7 @@ exports[`Check stories > Components/Table > Story ResponsiveTablePopInMode > Sho
             <tr class=\\"fd-table__row fd-table__row--main\\">
                 <td class=\\"fd-table__cell fd-table__cell--checkbox\\">
                     <input aria-label=\\"checkbox\\" type=\\"checkbox\\" class=\\"fd-checkbox\\" id=\\"Yeas6w\\">
-                    <label class=\\"fd-checkbox__label\\" for=\\"Yeas6w\\"></label>
+                    <label class=\\"fd-checkbox__label\\" for=\\"Yeas6w\\"><span class=\\"fd-checkbox__checkmark\\" aria-hidden=\\"true\\"></span></label>
                 </td>
                 <td class=\\"fd-table__cell\\">
                     <p class=\\"fd-table__text fd-table__text--title\\">Very long name for orange, which no one expected, forces text wrapping into another line.</p>
