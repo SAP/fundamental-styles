@@ -10,36 +10,122 @@ $color-states: (
   "negative": ("color": var(--sapNegativeTextColor)),
   "informative": ("color": var(--sapInformativeTextColor))
 );
+$inverted-color-states: (
+  "positive": (
+    "regular": (
+      "color": var(--sapButton_Success_TextColor),
+      "background": var(--sapButton_Success_Background),
+      "borderColor": var(--sapButton_Success_BorderColor)
+    ),
+    "hover": (
+      "color": var(--sapButton_Success_Hover_TextColor),
+      "background": var(--sapButton_Success_Hover_Background),
+      "borderColor": var(--sapButton_Success_Hover_BorderColor)
+    ),
+    "active": (
+      "color": var(--sapButton_Accept_Selected_TextColor),
+      "background": var(--sapButton_Success_Active_Background),
+      "borderColor": var(--sapButton_Success_Active_BorderColor)
+    )
+  ),
+  "critical": (
+    "regular": (
+      "color": var(--sapButton_Critical_TextColor),
+      "background": var(--sapButton_Critical_Background),
+      "borderColor": var(--sapButton_Critical_BorderColor)
+    ),
+    "hover": (
+      "color": var(--sapButton_Critical_Hover_TextColor),
+      "background": var(--sapButton_Critical_Hover_Background),
+      "borderColor": var(--sapButton_Critical_Hover_BorderColor)
+    ),
+    "active": (
+      "color": var(--sapButton_Attention_Selected_TextColor),
+      "background": var(--sapButton_Critical_Active_Background),
+      "borderColor": var(--sapButton_Critical_Active_BorderColor)
+    )
+  ),
+  "negative": (
+    "regular": (
+      "color": var(--sapButton_Negative_TextColor),
+      "background": var(--sapButton_Negative_Background),
+      "borderColor": var(--sapButton_Negative_BorderColor)
+    ),
+    "hover": (
+      "color": var(--sapButton_Negative_Hover_TextColor),
+      "background": var(--sapButton_Negative_Hover_Background),
+      "borderColor": var(--sapButton_Negative_Hover_BorderColor)
+    ),
+    "active": (
+      "color": var(--sapButton_Reject_Selected_TextColor),
+      "background": var(--sapButton_Negative_Active_Background),
+      "borderColor": var(--sapButton_Negative_Active_BorderColor)
+    )
+  ),
+  "informative": (
+    "regular": (
+      "color": var(--sapButton_Information_TextColor),
+      "background": var(--sapButton_Information_Background),
+      "borderColor": var(--sapButton_Information_BorderColor)
+    ),
+    "hover": (
+      "color": var(--sapButton_Information_Hover_TextColor),
+      "background": var(--sapButton_Information_Hover_Background),
+      "borderColor": var(--sapButton_Information_Hover_BorderColor)
+    ),
+    "active": (
+      "color": var(--sapButton_Selected_TextColor),
+      "iconColor": var(--sapButton_Selected_TextColor),
+      "background": var(--sapButton_Information_Active_Background),
+      "borderColor": var(--sapButton_Information_Active_BorderColor)
+    )
+  ),
+);
 
 .#{$block} {
-  // LARGE DESIGN VARIABLES
-  $fd-object-number-font-size-large: 1.5rem;
-
   @include fd-reset();
 
-  color: var(--sapNeutralTextColor);
   max-width: 100%;
+  position: relative;
   display: inline-block;
-  text-shadow: var(--sapContent_TextShadow);
+  vertical-align: middle;
+  padding: var(--fdObjectNumber_Padding, 0);
+  border: var(--fdObjectNumber_Border, none);
+  cursor: var(--fdObjectNumber_Cursor, auto);
+  min-height: var(--fdObjectNumber_Min_Height, 1rem);
+  background: var(--fdObjectNumber_Background, none);
+  line-height: var(--fdObjectNumber_Line_Height, 1rem);
+  border-radius: var(--fdObjectNumber_Border_Radius, 0);
+  color: var(--fdObjectNumber_Color, var(--sapNeutralTextColor));
+  font-size: var(--fdObjectNumber_Font_Size, var(--sapFontSize));
+  font-family: var(--fdObjectNumber_Font_Family, var(--sapFontFamily));
 
   &__text,
   &__unit {
     @include fd-reset();
     @include fd-ellipsis();
 
+    color: inherit;
     max-width: 100%;
+    font-size: inherit;
+    min-height: inherit;
+    line-height: inherit;
+    font-family: inherit;
     display: inline-block;
     vertical-align: middle;
-    line-height: 1;
+    text-decoration: var(--fdObjectNumber_Text_Decoration, none);
+    text-shadow: var(--fdObjectNumber_Text_Shadow, var(--sapContent_TextShadow));
   }
 
   &__text {
+    font-weight: var(--fdObjectNumber_Text_Font_Weight, normal);
+
     &::after {
-      content: '\00a0 ';
+      content: '\00a0';
     }
 
     &--bold {
-      font-weight: bold;
+      --fdObjectNumber_Text_Font_Weight: bold;
     }
   }
 
@@ -47,19 +133,95 @@ $color-states: (
     font-family: var(--sapFontLightFamily);
   }
 
+  &__sr-only {
+    @include fd-screen-reader-only();
+  }
+
   @each $set-name, $color-set in $color-states {
-    &--#{$set-name} &__text,
-    &--#{$set-name} &__unit {
-      color: map.get($color-set, "color");
+    &--#{$set-name} {
+      --fdObjectNumber_Color: #{map.get($color-set, "color")};
     }
   }
 
-  // LARGE DESIGN
   &--large {
-    .#{$block}__text,
-    .#{$block}__unit {
-      font-family: var(--sapFontLightFamily);
-      font-size: $fd-object-number-font-size-large;
+    --fdObjectNumber_Min_Height: 2rem;
+    --fdObjectNumber_Line_Height: 2rem;
+    --fdObjectNumber_Font_Size: 1.5rem;
+    --fdObjectNumber_Font_Family: var(--sapFontLightFamily);
+  }
+
+  &--inverted {
+    --fdObjectNumber_Text_Shadow: none;
+    --fdObjectNumber_Line_Height: 1rem;
+    --fdObjectNumber_Padding: 0.1875rem 0.25rem;
+    --fdObjectNumber_Color: var(--sapTextColor);
+    --fdObjectNumber_Font_Size: var(--sapFontSmallSize);
+    --fdObjectNumber_Font_Family: var(--sapFontBoldFamily);
+    --fdObjectNumber_Background: var(--sapNeutralBackground);
+    --fdObjectNumber_Border_Radius: var(--sapButton_BorderCornerRadius);
+    --fdObjectNumber_Border: 0.0625rem solid var(--fdObjectNumber_Border_Color, var(--sapNeutralBorderColor));
+
+    &.#{$block}--interactive {
+      --fdObjectNumber_Text_Decoration: none;
+
+      @include fd-hover() {
+        --fdObjectNumber_Color: var(--sapButton_Neutral_Hover_TextColor);
+        --fdObjectNumber_Background: var(--sapButton_Neutral_Hover_Background);
+        --fdObjectNumber_Border_Color: var(--sapButton_Neutral_Hover_BorderColor);
+      }
+  
+      @include fd-active() {
+        --fdObjectNumber_Color: var(--sapButton_Active_TextColor);
+        --fdObjectNumber_Background: var(--sapButton_Neutral_Active_Background);
+        --fdObjectNumber_Border_Color: var(--sapButton_Neutral_Active_BorderColor);
+      }
+
+      @include fd-focus() {
+        outline: none;
+  
+        @include  fd-fake-fiori-focus(-0.125rem, var(--sapButton_BorderCornerRadius));
+      }
+    }
+
+    @each $set-name, $color-set in $inverted-color-states {
+      $regular: map.get($color-set, "regular");
+      $hover: map.get($color-set, "hover");
+      $active: map.get($color-set, "active");
+
+      &.#{$block}--#{$set-name} {
+        --fdObjectNumber_Color: #{map.get($regular, "color")};
+        --fdObjectNumber_Background: #{map.get($regular, "background")};
+        --fdObjectNumber_Border_Color: #{map.get($regular, "borderColor")};
+
+        &.#{$block}--interactive {
+          @include fd-hover() {
+            --fdObjectNumber_Color: #{map.get($hover, "color")};
+            --fdObjectNumber_Background: #{map.get($hover, "background")};
+            --fdObjectNumber_Border_Color: #{map.get($hover, "borderColor")};
+          }
+      
+          @include fd-active() {
+            --fdObjectNumber_Color: #{map.get($active, "color")};
+            --fdObjectNumber_Background: #{map.get($active, "background")};
+            --fdObjectNumber_Border_Color: #{map.get($active, "borderColor")};
+          }
+        }
+      }
+    }
+  }
+
+  &--interactive {
+    --fdObjectNumber_Cursor: pointer;
+    --fdObjectNumber_Text_Decoration: underline;
+
+    @include fd-hover() {
+      --fdObjectNumber_Text_Decoration: none;
+    }
+
+    @include fd-focus() {
+      outline: none;
+
+      @include  fd-fake-fiori-focus(-0.1875rem, 0.25rem);
     }
   }
 }
