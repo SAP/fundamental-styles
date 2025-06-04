@@ -17,14 +17,6 @@
       }
     }
 
-    .#{$block}__cell {
-      &--checkbox {
-        + .#{$block}__cell {
-          padding-inline-start: 0;
-        }
-      }
-    }
-
     .#{$block}__body {
       .#{$block}__cell {
         height: auto;
