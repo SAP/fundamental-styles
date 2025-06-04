@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.41.0-rc.9](https://github.com/SAP/fundamental-styles/compare/v0.41.0-rc.8...v0.41.0-rc.9) (2025-06-04)
+
+### Bug Fixes
+
+- **styles:** a11y update for Message Strip [ci visual] ([#6065](https://github.com/SAP/fundamental-styles/issues/6065)) ([4e75959](https://github.com/SAP/fundamental-styles/commit/4e759598611cd2cb3c9fb5373367e6e6cae02deb))
+
+### BREAKING CHANGES
+
+- **styles:** added a visually hidden span to add description to the message strip
+
 # [0.41.0-rc.8](https://github.com/SAP/fundamental-styles/compare/v0.41.0-rc.7...v0.41.0-rc.8) (2025-06-04)
 
 ### Bug Fixes
@@ -6139,9 +6149,9 @@ Co-authored-by: droshev <mladen.droshev@sap.com>
 
 - added a new modifier class to fd-row to achieve even alignment of its elements:fd-row--top in a form.
   Before:
-  <div class="fd-row">
-  After:
-  <div class="fd-row fd-row--top">
+    <div class="fd-row">
+    After:
+    <div class="fd-row fd-row--top">
 
 ### Bug Fixes
 
