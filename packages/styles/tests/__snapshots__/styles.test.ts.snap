@@ -6779,66 +6779,66 @@ exports[`Check stories > Components/Action Sheet > Story Default > Should match 
 
 exports[`Check stories > Components/Avatar > Story AccentColors > Should match snapshot 1`] = `
 "<div style=\\"display: flex; gap: 1.4rem; flex-wrap: wrap; align-items: center;\\">
-    <span class=\\"fd-avatar fd-avatar--accent-color-1 fd-avatar--md\\" aria-label=\\"Avatar\\" aria-role=\\"img\\">
+    <span class=\\"fd-avatar fd-avatar--accent-color-1 fd-avatar--md\\" aria-label=\\"Avatar\\" role=\\"img\\">
         <i class=\\"fd-avatar__icon sap-icon--product\\" role=\\"presentation\\" aria-hidden=\\"true\\" aria-label=\\"Image placeholder\\"></i>
     </span>
-    <span class=\\"fd-avatar fd-avatar--accent-color-2 fd-avatar--md\\" aria-label=\\"Avatar\\" aria-role=\\"img\\">
+    <span class=\\"fd-avatar fd-avatar--accent-color-2 fd-avatar--md\\" aria-label=\\"Avatar\\" role=\\"img\\">
         <i class=\\"fd-avatar__icon sap-icon--product\\" role=\\"presentation\\" aria-hidden=\\"true\\" aria-label=\\"Image placeholder\\"></i>
     </span>
-    <span class=\\"fd-avatar fd-avatar--accent-color-3 fd-avatar--md\\" aria-label=\\"Avatar\\" aria-role=\\"img\\">
+    <span class=\\"fd-avatar fd-avatar--accent-color-3 fd-avatar--md\\" aria-label=\\"Avatar\\" role=\\"img\\">
         <i class=\\"fd-avatar__icon sap-icon--product\\" role=\\"presentation\\" aria-hidden=\\"true\\" aria-label=\\"Image placeholder\\"></i>
     </span>
-    <span class=\\"fd-avatar fd-avatar--accent-color-4 fd-avatar--md\\" aria-label=\\"Avatar\\" aria-role=\\"img\\">
+    <span class=\\"fd-avatar fd-avatar--accent-color-4 fd-avatar--md\\" aria-label=\\"Avatar\\" role=\\"img\\">
         <i class=\\"fd-avatar__icon sap-icon--product\\" role=\\"presentation\\" aria-hidden=\\"true\\" aria-label=\\"Image placeholder\\"></i>
     </span>
-    <span class=\\"fd-avatar fd-avatar--accent-color-5 fd-avatar--md\\" aria-label=\\"Avatar\\" aria-role=\\"img\\">
+    <span class=\\"fd-avatar fd-avatar--accent-color-5 fd-avatar--md\\" aria-label=\\"Avatar\\" role=\\"img\\">
         <i class=\\"fd-avatar__icon sap-icon--product\\" role=\\"presentation\\" aria-hidden=\\"true\\" aria-label=\\"Image placeholder\\"></i>
     </span>
-    <span class=\\"fd-avatar fd-avatar--accent-color-6 fd-avatar--md\\" aria-label=\\"Avatar\\" aria-role=\\"img\\">
+    <span class=\\"fd-avatar fd-avatar--accent-color-6 fd-avatar--md\\" aria-label=\\"Avatar\\" role=\\"img\\">
         <i class=\\"fd-avatar__icon sap-icon--product\\" role=\\"presentation\\" aria-hidden=\\"true\\" aria-label=\\"Image placeholder\\"></i>
     </span>
-    <span class=\\"fd-avatar fd-avatar--accent-color-7 fd-avatar--md\\" aria-label=\\"Avatar\\" aria-role=\\"img\\">
+    <span class=\\"fd-avatar fd-avatar--accent-color-7 fd-avatar--md\\" aria-label=\\"Avatar\\" role=\\"img\\">
         <i class=\\"fd-avatar__icon sap-icon--product\\" role=\\"presentation\\" aria-hidden=\\"true\\" aria-label=\\"Image placeholder\\"></i>
     </span>
-    <span class=\\"fd-avatar fd-avatar--accent-color-8 fd-avatar--md\\" aria-label=\\"Avatar\\" aria-role=\\"img\\">
+    <span class=\\"fd-avatar fd-avatar--accent-color-8 fd-avatar--md\\" aria-label=\\"Avatar\\" role=\\"img\\">
         <i class=\\"fd-avatar__icon sap-icon--product\\" role=\\"presentation\\" aria-hidden=\\"true\\" aria-label=\\"Image placeholder\\"></i>
     </span>
-    <span class=\\"fd-avatar fd-avatar--accent-color-9 fd-avatar--md\\" aria-label=\\"Avatar\\" aria-role=\\"img\\">
+    <span class=\\"fd-avatar fd-avatar--accent-color-9 fd-avatar--md\\" aria-label=\\"Avatar\\" role=\\"img\\">
         <i class=\\"fd-avatar__icon sap-icon--product\\" role=\\"presentation\\" aria-hidden=\\"true\\" aria-label=\\"Image placeholder\\"></i>
     </span>
-    <span class=\\"fd-avatar fd-avatar--accent-color-10 fd-avatar--md\\" aria-label=\\"Avatar\\" aria-role=\\"img\\">
+    <span class=\\"fd-avatar fd-avatar--accent-color-10 fd-avatar--md\\" aria-label=\\"Avatar\\" role=\\"img\\">
         <i class=\\"fd-avatar__icon sap-icon--product\\" role=\\"presentation\\" aria-hidden=\\"true\\" aria-label=\\"Image placeholder\\"></i>
     </span>
 </div>
 <div style=\\"display: flex; gap: 1.4rem; flex-wrap: wrap; align-items: center; margin-block-start: 2rem;\\">
-    <span class=\\"fd-avatar fd-avatar--indication-color-1 fd-avatar--md\\" aria-label=\\"Avatar\\" aria-role=\\"img\\">
+    <span class=\\"fd-avatar fd-avatar--indication-color-1 fd-avatar--md\\" aria-label=\\"Avatar\\" role=\\"img\\">
         <i class=\\"fd-avatar__icon sap-icon--product\\" role=\\"presentation\\" aria-hidden=\\"true\\" aria-label=\\"Image placeholder\\"></i>
     </span>
-    <span class=\\"fd-avatar fd-avatar--indication-color-2 fd-avatar--md\\" aria-label=\\"Avatar\\" aria-role=\\"img\\">
+    <span class=\\"fd-avatar fd-avatar--indication-color-2 fd-avatar--md\\" aria-label=\\"Avatar\\" role=\\"img\\">
         <i class=\\"fd-avatar__icon sap-icon--product\\" role=\\"presentation\\" aria-hidden=\\"true\\" aria-label=\\"Image placeholder\\"></i>
     </span>
-    <span class=\\"fd-avatar fd-avatar--indication-color-3 fd-avatar--md\\" aria-label=\\"Avatar\\" aria-role=\\"img\\">
+    <span class=\\"fd-avatar fd-avatar--indication-color-3 fd-avatar--md\\" aria-label=\\"Avatar\\" role=\\"img\\">
         <i class=\\"fd-avatar__icon sap-icon--product\\" role=\\"presentation\\" aria-hidden=\\"true\\" aria-label=\\"Image placeholder\\"></i>
     </span>
-    <span class=\\"fd-avatar fd-avatar--indication-color-4 fd-avatar--md\\" aria-label=\\"Avatar\\" aria-role=\\"img\\">
+    <span class=\\"fd-avatar fd-avatar--indication-color-4 fd-avatar--md\\" aria-label=\\"Avatar\\" role=\\"img\\">
         <i class=\\"fd-avatar__icon sap-icon--product\\" role=\\"presentation\\" aria-hidden=\\"true\\" aria-label=\\"Image placeholder\\"></i>
     </span>
-    <span class=\\"fd-avatar fd-avatar--indication-color-5 fd-avatar--md\\" aria-label=\\"Avatar\\" aria-role=\\"img\\">
+    <span class=\\"fd-avatar fd-avatar--indication-color-5 fd-avatar--md\\" aria-label=\\"Avatar\\" role=\\"img\\">
         <i class=\\"fd-avatar__icon sap-icon--product\\" role=\\"presentation\\" aria-hidden=\\"true\\" aria-label=\\"Image placeholder\\"></i>
     </span>
-    <span class=\\"fd-avatar fd-avatar--indication-color-6 fd-avatar--md\\" aria-label=\\"Avatar\\" aria-role=\\"img\\">
+    <span class=\\"fd-avatar fd-avatar--indication-color-6 fd-avatar--md\\" aria-label=\\"Avatar\\" role=\\"img\\">
         <i class=\\"fd-avatar__icon sap-icon--product\\" role=\\"presentation\\" aria-hidden=\\"true\\" aria-label=\\"Image placeholder\\"></i>
     </span>
-    <span class=\\"fd-avatar fd-avatar--indication-color-7 fd-avatar--md\\" aria-label=\\"Avatar\\" aria-role=\\"img\\">
+    <span class=\\"fd-avatar fd-avatar--indication-color-7 fd-avatar--md\\" aria-label=\\"Avatar\\" role=\\"img\\">
         <i class=\\"fd-avatar__icon sap-icon--product\\" role=\\"presentation\\" aria-hidden=\\"true\\" aria-label=\\"Image placeholder\\"></i>
     </span>
-    <span class=\\"fd-avatar fd-avatar--indication-color-8 fd-avatar--md\\" aria-label=\\"Avatar\\" aria-role=\\"img\\">
+    <span class=\\"fd-avatar fd-avatar--indication-color-8 fd-avatar--md\\" aria-label=\\"Avatar\\" role=\\"img\\">
         <i class=\\"fd-avatar__icon sap-icon--product\\" role=\\"presentation\\" aria-hidden=\\"true\\" aria-label=\\"Image placeholder\\"></i>
     </span>
-    <span class=\\"fd-avatar fd-avatar--indication-color-9 fd-avatar--md\\" aria-label=\\"Avatar\\" aria-role=\\"img\\">
+    <span class=\\"fd-avatar fd-avatar--indication-color-9 fd-avatar--md\\" aria-label=\\"Avatar\\" role=\\"img\\">
         <i class=\\"fd-avatar__icon sap-icon--product\\" role=\\"presentation\\" aria-hidden=\\"true\\" aria-label=\\"Image placeholder\\"></i>
     </span>
-    <span class=\\"fd-avatar fd-avatar--indication-color-10 fd-avatar--md\\" aria-label=\\"Avatar\\" aria-role=\\"img\\">
+    <span class=\\"fd-avatar fd-avatar--indication-color-10 fd-avatar--md\\" aria-label=\\"Avatar\\" role=\\"img\\">
         <i class=\\"fd-avatar__icon sap-icon--product\\" role=\\"presentation\\" aria-hidden=\\"true\\" aria-label=\\"Image placeholder\\"></i>
     </span>
 </div>"
@@ -6846,34 +6846,34 @@ exports[`Check stories > Components/Avatar > Story AccentColors > Should match s
 
 exports[`Check stories > Components/Avatar > Story AccentColorsShellHeaderContext > Should match snapshot 1`] = `
 "<div style=\\"background-color: var(--sapShellColor); padding: 1rem; display: flex; gap: 1.4rem; flex-wrap: wrap; align-items: center;\\">
-    <span class=\\"fd-avatar fd-avatar--shell fd-avatar--accent-color-1 fd-avatar--md\\" aria-label=\\"Avatar\\" aria-role=\\"img\\">
+    <span class=\\"fd-avatar fd-avatar--shell fd-avatar--accent-color-1 fd-avatar--md\\" aria-label=\\"Avatar\\" role=\\"img\\">
         <i class=\\"fd-avatar__icon sap-icon--product\\" role=\\"presentation\\" aria-hidden=\\"true\\" aria-label=\\"Image placeholder\\"></i>
     </span>
-    <span class=\\"fd-avatar fd-avatar--shell fd-avatar--accent-color-2 fd-avatar--md\\" aria-label=\\"Avatar\\" aria-role=\\"img\\">
+    <span class=\\"fd-avatar fd-avatar--shell fd-avatar--accent-color-2 fd-avatar--md\\" aria-label=\\"Avatar\\" role=\\"img\\">
         <i class=\\"fd-avatar__icon sap-icon--product\\" role=\\"presentation\\" aria-hidden=\\"true\\" aria-label=\\"Image placeholder\\"></i>
     </span>
-    <span class=\\"fd-avatar fd-avatar--shell fd-avatar--accent-color-3 fd-avatar--md\\" aria-label=\\"Avatar\\" aria-role=\\"img\\">
+    <span class=\\"fd-avatar fd-avatar--shell fd-avatar--accent-color-3 fd-avatar--md\\" aria-label=\\"Avatar\\" role=\\"img\\">
         <i class=\\"fd-avatar__icon sap-icon--product\\" role=\\"presentation\\" aria-hidden=\\"true\\" aria-label=\\"Image placeholder\\"></i>
     </span>
-    <span class=\\"fd-avatar fd-avatar--shell fd-avatar--accent-color-4 fd-avatar--md\\" aria-label=\\"Avatar\\" aria-role=\\"img\\">
+    <span class=\\"fd-avatar fd-avatar--shell fd-avatar--accent-color-4 fd-avatar--md\\" aria-label=\\"Avatar\\" role=\\"img\\">
         <i class=\\"fd-avatar__icon sap-icon--product\\" role=\\"presentation\\" aria-hidden=\\"true\\" aria-label=\\"Image placeholder\\"></i>
     </span>
-    <span class=\\"fd-avatar fd-avatar--shell fd-avatar--accent-color-5 fd-avatar--md\\" aria-label=\\"Avatar\\" aria-role=\\"img\\">
+    <span class=\\"fd-avatar fd-avatar--shell fd-avatar--accent-color-5 fd-avatar--md\\" aria-label=\\"Avatar\\" role=\\"img\\">
         <i class=\\"fd-avatar__icon sap-icon--product\\" role=\\"presentation\\" aria-hidden=\\"true\\" aria-label=\\"Image placeholder\\"></i>
     </span>
-    <span class=\\"fd-avatar fd-avatar--shell fd-avatar--accent-color-6 fd-avatar--md\\" aria-label=\\"Avatar\\" aria-role=\\"img\\">
+    <span class=\\"fd-avatar fd-avatar--shell fd-avatar--accent-color-6 fd-avatar--md\\" aria-label=\\"Avatar\\" role=\\"img\\">
         <i class=\\"fd-avatar__icon sap-icon--product\\" role=\\"presentation\\" aria-hidden=\\"true\\" aria-label=\\"Image placeholder\\"></i>
     </span>
-    <span class=\\"fd-avatar fd-avatar--shell fd-avatar--accent-color-7 fd-avatar--md\\" aria-label=\\"Avatar\\" aria-role=\\"img\\">
+    <span class=\\"fd-avatar fd-avatar--shell fd-avatar--accent-color-7 fd-avatar--md\\" aria-label=\\"Avatar\\" role=\\"img\\">
         <i class=\\"fd-avatar__icon sap-icon--product\\" role=\\"presentation\\" aria-hidden=\\"true\\" aria-label=\\"Image placeholder\\"></i>
     </span>
-    <span class=\\"fd-avatar fd-avatar--shell fd-avatar--accent-color-8 fd-avatar--md\\" aria-label=\\"Avatar\\" aria-role=\\"img\\">
+    <span class=\\"fd-avatar fd-avatar--shell fd-avatar--accent-color-8 fd-avatar--md\\" aria-label=\\"Avatar\\" role=\\"img\\">
         <i class=\\"fd-avatar__icon sap-icon--product\\" role=\\"presentation\\" aria-hidden=\\"true\\" aria-label=\\"Image placeholder\\"></i>
     </span>
-    <span class=\\"fd-avatar fd-avatar--shell fd-avatar--accent-color-9 fd-avatar--md\\" aria-label=\\"Avatar\\" aria-role=\\"img\\">
+    <span class=\\"fd-avatar fd-avatar--shell fd-avatar--accent-color-9 fd-avatar--md\\" aria-label=\\"Avatar\\" role=\\"img\\">
         <i class=\\"fd-avatar__icon sap-icon--product\\" role=\\"presentation\\" aria-hidden=\\"true\\" aria-label=\\"Image placeholder\\"></i>
     </span>
-    <span class=\\"fd-avatar fd-avatar--shell fd-avatar--accent-color-10 fd-avatar--md\\" aria-label=\\"Avatar\\" aria-role=\\"img\\">
+    <span class=\\"fd-avatar fd-avatar--shell fd-avatar--accent-color-10 fd-avatar--md\\" aria-label=\\"Avatar\\" role=\\"img\\">
         <i class=\\"fd-avatar__icon sap-icon--product\\" role=\\"presentation\\" aria-hidden=\\"true\\" aria-label=\\"Image placeholder\\"></i>
     </span>
 </div>
@@ -6882,13 +6882,13 @@ exports[`Check stories > Components/Avatar > Story AccentColorsShellHeaderContex
 
 exports[`Check stories > Components/Avatar > Story BackgroundImage > Should match snapshot 1`] = `
 "
-<span class=\\"fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--thumbnail\\" style=\\"background-image: url('/assets/images/portraits/L_80x80_M1.png')\\" role=\\"img\\" aria-label=\\"John Doe\\"></span>
-<span class=\\"fd-avatar fd-avatar--sm fd-avatar--circle fd-avatar--thumbnail\\" style=\\"background-image: url('/assets/images/portraits/L_80x80_M2.png')\\" role=\\"img\\" aria-label=\\"John Doe\\"></span>
-<span class=\\"fd-avatar fd-avatar--md fd-avatar--circle fd-avatar--thumbnail\\" style=\\"background-image: url('/assets/images/portraits/L_80x80_F3.png')\\" role=\\"img\\" aria-label=\\"John Doe\\"></span>
-<span class=\\"fd-avatar fd-avatar--lg fd-avatar--circle fd-avatar--thumbnail\\" style=\\"background-image: url('/assets/images/portraits/L_80x80_F4.png')\\" role=\\"img\\" aria-label=\\"John Doe\\"></span>
-<span class=\\"fd-avatar fd-avatar--xl fd-avatar--circle fd-avatar--thumbnail\\" style=\\"background-image: url('/assets/images/portraits/L_80x80_M1.png')\\" role=\\"img\\" aria-label=\\"John Doe\\"></span>
-<span class=\\"fd-avatar fd-avatar--xl fd-avatar--thumbnail\\" style=\\"background-image: url('/assets/images/landscape/L1.jpg')\\" role=\\"img\\" aria-label=\\"John Doe\\"></span>
-<span class=\\"fd-avatar fd-avatar--xl fd-avatar--thumbnail fd-avatar--background-contain\\" style=\\"background-image: url('/assets/images/landscape/L2.jpg')\\" role=\\"img\\" aria-label=\\"John Doe\\"></span>
+<span class=\\"fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--thumbnail\\" style=\\"background-image: url('/assets/images/portraits/L_80x80_M1.png')\\" role=\\"img\\" aria-label=\\"Avatar John Doe\\"></span>
+<span class=\\"fd-avatar fd-avatar--sm fd-avatar--circle fd-avatar--thumbnail\\" style=\\"background-image: url('/assets/images/portraits/L_80x80_M2.png')\\" role=\\"img\\" aria-label=\\"Avatar John Doe\\"></span>
+<span class=\\"fd-avatar fd-avatar--md fd-avatar--circle fd-avatar--thumbnail\\" style=\\"background-image: url('/assets/images/portraits/L_80x80_F3.png')\\" role=\\"img\\" aria-label=\\"Avatar John Doe\\"></span>
+<span class=\\"fd-avatar fd-avatar--lg fd-avatar--circle fd-avatar--thumbnail\\" style=\\"background-image: url('/assets/images/portraits/L_80x80_F4.png')\\" role=\\"img\\" aria-label=\\"Avatar John Doe\\"></span>
+<span class=\\"fd-avatar fd-avatar--xl fd-avatar--circle fd-avatar--thumbnail\\" style=\\"background-image: url('/assets/images/portraits/L_80x80_M1.png')\\" role=\\"img\\" aria-label=\\"Avatar John Doe\\"></span>
+<span class=\\"fd-avatar fd-avatar--xl fd-avatar--thumbnail\\" style=\\"background-image: url('/assets/images/landscape/L1.jpg')\\" role=\\"img\\" aria-label=\\"Avatar John Doe\\"></span>
+<span class=\\"fd-avatar fd-avatar--xl fd-avatar--thumbnail fd-avatar--background-contain\\" style=\\"background-image: url('/assets/images/landscape/L2.jpg')\\" role=\\"img\\" aria-label=\\"Avatar John Doe\\"></span>
 "
 `;
 
@@ -6942,56 +6942,56 @@ exports[`Check stories > Components/Avatar > Story BadgeIndicationColors > Shoul
 
 exports[`Check stories > Components/Avatar > Story Borders > Should match snapshot 1`] = `
 "<div style=\\"display: flex; gap: 1.4rem; flex-wrap: wrap; align-items: center;\\">
-    <span class=\\"fd-avatar fd-avatar--xs fd-avatar--transparent fd-avatar--border\\" aria-label=\\"Avatar\\" aria-role=\\"img\\">
+    <span class=\\"fd-avatar fd-avatar--xs fd-avatar--transparent fd-avatar--border\\" aria-label=\\"Avatar\\" role=\\"img\\">
         <i class=\\"fd-avatar__icon sap-icon--product\\" role=\\"presentation\\" aria-hidden=\\"true\\" aria-label=\\"Image placeholder\\"></i>
     </span>
-    <span class=\\"fd-avatar fd-avatar--sm fd-avatar--transparent fd-avatar--border\\" aria-label=\\"Avatar\\" aria-role=\\"img\\">
+    <span class=\\"fd-avatar fd-avatar--sm fd-avatar--transparent fd-avatar--border\\" aria-label=\\"Avatar\\" role=\\"img\\">
         <i class=\\"fd-avatar__icon sap-icon--product\\" role=\\"presentation\\" aria-hidden=\\"true\\" aria-label=\\"Image placeholder\\"></i>
     </span>
-    <span class=\\"fd-avatar fd-avatar--md fd-avatar--transparent fd-avatar--border\\" aria-label=\\"Avatar\\" aria-role=\\"img\\">
+    <span class=\\"fd-avatar fd-avatar--md fd-avatar--transparent fd-avatar--border\\" aria-label=\\"Avatar\\" role=\\"img\\">
         <i class=\\"fd-avatar__icon sap-icon--product\\" role=\\"presentation\\" aria-hidden=\\"true\\" aria-label=\\"Image placeholder\\"></i>
     </span>
-    <span class=\\"fd-avatar fd-avatar--lg fd-avatar--transparent fd-avatar--border\\" aria-label=\\"Avatar\\" aria-role=\\"img\\">
+    <span class=\\"fd-avatar fd-avatar--lg fd-avatar--transparent fd-avatar--border\\" aria-label=\\"Avatar\\" role=\\"img\\">
         <i class=\\"fd-avatar__icon sap-icon--product\\" role=\\"presentation\\" aria-hidden=\\"true\\" aria-label=\\"Image placeholder\\"></i>
     </span>
-    <span class=\\"fd-avatar fd-avatar--xl fd-avatar--transparent fd-avatar--border\\" aria-label=\\"Avatar\\" aria-role=\\"img\\">
+    <span class=\\"fd-avatar fd-avatar--xl fd-avatar--transparent fd-avatar--border\\" aria-label=\\"Avatar\\" role=\\"img\\">
         <i class=\\"fd-avatar__icon sap-icon--product\\" role=\\"presentation\\" aria-hidden=\\"true\\" aria-label=\\"Image placeholder\\"></i>
     </span>
-    <span class=\\"fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--transparent fd-avatar--border\\" aria-label=\\"Wendy Wallace\\" aria-role=\\"img\\">WW
+    <span class=\\"fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--transparent fd-avatar--border\\" aria-label=\\"Avatar Wendy Wallace\\" role=\\"img\\">WW
     </span>
-    <span class=\\"fd-avatar fd-avatar--sm fd-avatar--circle fd-avatar--transparent fd-avatar--border\\" aria-label=\\"Wendy Wallace\\" aria-role=\\"img\\">WW
+    <span class=\\"fd-avatar fd-avatar--sm fd-avatar--circle fd-avatar--transparent fd-avatar--border\\" aria-label=\\"Avatar Wendy Wallace\\" role=\\"img\\">WW
     </span>
-    <span class=\\"fd-avatar fd-avatar--md fd-avatar--circle fd-avatar--transparent fd-avatar--border\\" aria-label=\\"Wendy Wallace\\" aria-role=\\"img\\">WW
+    <span class=\\"fd-avatar fd-avatar--md fd-avatar--circle fd-avatar--transparent fd-avatar--border\\" aria-label=\\"Avatar Wendy Wallace\\" role=\\"img\\">WW
     </span>
-    <span class=\\"fd-avatar fd-avatar--lg fd-avatar--circle fd-avatar--transparent fd-avatar--border\\" aria-label=\\"Wendy Wallace\\" aria-role=\\"img\\">WW
+    <span class=\\"fd-avatar fd-avatar--lg fd-avatar--circle fd-avatar--transparent fd-avatar--border\\" aria-label=\\"Avatar Wendy Wallace\\" role=\\"img\\">WW
     </span>
-    <span class=\\"fd-avatar fd-avatar--xl fd-avatar--circle fd-avatar--transparent fd-avatar--border\\" aria-label=\\"Wendy Wallace\\" aria-role=\\"img\\">WW
+    <span class=\\"fd-avatar fd-avatar--xl fd-avatar--circle fd-avatar--transparent fd-avatar--border\\" aria-label=\\"Avatar Wendy Wallace\\" role=\\"img\\">WW
     </span>
 </div>"
 `;
 
 exports[`Check stories > Components/Avatar > Story Circle > Should match snapshot 1`] = `
 "
-<span class=\\"fd-avatar fd-avatar--xs fd-avatar--circle\\" aria-role=\\"img\\" aria-label=\\"Avatar\\">
+<span class=\\"fd-avatar fd-avatar--xs fd-avatar--circle\\" role=\\"img\\" aria-label=\\"Avatar\\">
     <i class=\\"fd-avatar__icon sap-icon--person-placeholder\\" role=\\"presentation\\" aria-hidden=\\"true\\" aria-label=\\"Image placeholder\\"></i>
 </span>
-<span class=\\"fd-avatar fd-avatar--sm fd-avatar--circle\\" aria-role=\\"img\\" aria-label=\\"Avatar\\">
+<span class=\\"fd-avatar fd-avatar--sm fd-avatar--circle\\" role=\\"img\\" aria-label=\\"Avatar\\">
     <i class=\\"fd-avatar__icon sap-icon--person-placeholder\\" role=\\"presentation\\" aria-hidden=\\"true\\" aria-label=\\"Image placeholder\\"></i>
 </span>
-<span class=\\"fd-avatar fd-avatar--md fd-avatar--circle\\" aria-role=\\"img\\" aria-label=\\"Avatar\\">
+<span class=\\"fd-avatar fd-avatar--md fd-avatar--circle\\" role=\\"img\\" aria-label=\\"Avatar\\">
     <i class=\\"fd-avatar__icon sap-icon--person-placeholder\\" role=\\"presentation\\" aria-hidden=\\"true\\" aria-label=\\"Image placeholder\\"></i>
 </span>
-<span class=\\"fd-avatar fd-avatar--lg fd-avatar--circle\\" aria-role=\\"img\\" aria-label=\\"Avatar\\">
+<span class=\\"fd-avatar fd-avatar--lg fd-avatar--circle\\" role=\\"img\\" aria-label=\\"Avatar\\">
     <i class=\\"fd-avatar__icon sap-icon--person-placeholder\\" role=\\"presentation\\" aria-hidden=\\"true\\" aria-label=\\"Image placeholder\\"></i>
 </span>
-<span class=\\"fd-avatar fd-avatar--xl fd-avatar--circle\\" aria-role=\\"img\\" aria-label=\\"Avatar\\">
+<span class=\\"fd-avatar fd-avatar--xl fd-avatar--circle\\" role=\\"img\\" aria-label=\\"Avatar\\">
     <i class=\\"fd-avatar__icon sap-icon--person-placeholder\\" role=\\"presentation\\" aria-hidden=\\"true\\" aria-label=\\"Image placeholder\\"></i>
 </span>
-<span class=\\"fd-avatar fd-avatar--xs fd-avatar--circle\\" aria-role=\\"img\\" aria-label=\\"Wendy Wallace\\">WW</span>
-<span class=\\"fd-avatar fd-avatar--sm fd-avatar--circle\\" aria-role=\\"img\\" aria-label=\\"Wendy Wallace\\">WW</span>
-<span class=\\"fd-avatar fd-avatar--md fd-avatar--circle\\" aria-role=\\"img\\" aria-label=\\"Wendy Wallace\\">WW</span>
-<span class=\\"fd-avatar fd-avatar--lg fd-avatar--circle\\" aria-role=\\"img\\" aria-label=\\"Wendy Wallace\\">WW</span>
-<span class=\\"fd-avatar fd-avatar--xl fd-avatar--circle\\" aria-role=\\"img\\" aria-label=\\"Wendy Wallace\\">WW</span>
+<span class=\\"fd-avatar fd-avatar--xs fd-avatar--circle\\" role=\\"img\\" aria-label=\\"Avatar Wendy Wallace\\">WW</span>
+<span class=\\"fd-avatar fd-avatar--sm fd-avatar--circle\\" role=\\"img\\" aria-label=\\"Avatar Wendy Wallace\\">WW</span>
+<span class=\\"fd-avatar fd-avatar--md fd-avatar--circle\\" role=\\"img\\" aria-label=\\"Avatar Wendy Wallace\\">WW</span>
+<span class=\\"fd-avatar fd-avatar--lg fd-avatar--circle\\" role=\\"img\\" aria-label=\\"Avatar Wendy Wallace\\">WW</span>
+<span class=\\"fd-avatar fd-avatar--xl fd-avatar--circle\\" role=\\"img\\" aria-label=\\"Avatar Wendy Wallace\\">WW</span>
 "
 `;
 
@@ -7033,11 +7033,11 @@ exports[`Check stories > Components/Avatar > Story Icon > Should match snapshot 
 
 exports[`Check stories > Components/Avatar > Story Initials > Should match snapshot 1`] = `
 "
-<span class=\\"fd-avatar fd-avatar--xs\\" aria-role=\\"img\\" aria-label=\\"Wendy Wallace\\">WW</span>
-<span class=\\"fd-avatar fd-avatar--sm\\" aria-role=\\"img\\" aria-label=\\"Wendy Wallace\\">WW</span>
-<span class=\\"fd-avatar fd-avatar--md\\" aria-role=\\"img\\" aria-label=\\"Wendy Wallace\\">WW</span>
-<span class=\\"fd-avatar fd-avatar--lg\\" aria-role=\\"img\\" aria-label=\\"Wendy Wallace\\">WW</span>
-<span class=\\"fd-avatar fd-avatar--xl\\" aria-role=\\"img\\" aria-label=\\"Wendy Wallace\\">WW</span>
+<span class=\\"fd-avatar fd-avatar--xs\\" role=\\"img\\" aria-label=\\"Avatar Wendy Wallace\\">WW</span>
+<span class=\\"fd-avatar fd-avatar--sm\\" role=\\"img\\" aria-label=\\"Avatar Wendy Wallace\\">WW</span>
+<span class=\\"fd-avatar fd-avatar--md\\" role=\\"img\\" aria-label=\\"Avatar Wendy Wallace\\">WW</span>
+<span class=\\"fd-avatar fd-avatar--lg\\" role=\\"img\\" aria-label=\\"Avatar Wendy Wallace\\">WW</span>
+<span class=\\"fd-avatar fd-avatar--xl\\" role=\\"img\\" aria-label=\\"Avatar Wendy Wallace\\">WW</span>
 "
 `;
 
@@ -7059,15 +7059,15 @@ exports[`Check stories > Components/Avatar > Story Interactive > Should match sn
     <span class=\\"fd-avatar fd-avatar--xl fd-avatar--circle fd-avatar--accent-color-5\\" tabindex=\\"0\\" role=\\"button\\" aria-label=\\"Avatar\\">
         <i class=\\"fd-avatar__icon sap-icon--person-placeholder\\" role=\\"presentation\\" aria-hidden=\\"true\\" aria-label=\\"Image placeholder\\"></i>
     </span>
-    <span class=\\"fd-avatar fd-avatar--accent-color-6 fd-avatar--xs\\" tabindex=\\"0\\" role=\\"button\\" aria-label=\\"Wendy Wallace\\">WW
+    <span class=\\"fd-avatar fd-avatar--accent-color-6 fd-avatar--xs\\" tabindex=\\"0\\" role=\\"button\\" aria-label=\\"Avatar Wendy Wallace\\">WW
     </span>
-    <span class=\\"fd-avatar fd-avatar--accent-color-7 fd-avatar--s\\" tabindex=\\"0\\" role=\\"button\\" aria-label=\\"Wendy Wallace\\">WW
+    <span class=\\"fd-avatar fd-avatar--accent-color-7 fd-avatar--s\\" tabindex=\\"0\\" role=\\"button\\" aria-label=\\"Avatar Wendy Wallace\\">WW
     </span>
-    <span class=\\"fd-avatar fd-avatar--accent-color-8 fd-avatar--m\\" tabindex=\\"0\\" role=\\"button\\" aria-label=\\"Wendy Wallace\\">WW
+    <span class=\\"fd-avatar fd-avatar--accent-color-8 fd-avatar--m\\" tabindex=\\"0\\" role=\\"button\\" aria-label=\\"Avatar Wendy Wallace\\">WW
     </span>
-    <span class=\\"fd-avatar fd-avatar--accent-color-9 fd-avatar--l\\" tabindex=\\"0\\" role=\\"button\\" aria-label=\\"Wendy Wallace\\">WW
+    <span class=\\"fd-avatar fd-avatar--accent-color-9 fd-avatar--l\\" tabindex=\\"0\\" role=\\"button\\" aria-label=\\"Avatar Wendy Wallace\\">WW
     </span>
-    <span class=\\"fd-avatar fd-avatar--accent-color-10 fd-avatar--xl\\" tabindex=\\"0\\" role=\\"button\\" aria-label=\\"Wendy Wallace\\">WW
+    <span class=\\"fd-avatar fd-avatar--accent-color-10 fd-avatar--xl\\" tabindex=\\"0\\" role=\\"button\\" aria-label=\\"Avatar Wendy Wallace\\">WW
     </span>
     <span class=\\"fd-avatar fd-avatar--xl fd-avatar--circle fd-avatar--placeholder\\" tabindex=\\"0\\" role=\\"button\\" aria-label=\\"Avatar\\">
         <i class=\\"fd-avatar__icon sap-icon--person-placeholder\\" role=\\"presentation\\" aria-hidden=\\"true\\" aria-label=\\"Image placeholder\\"></i>
@@ -7076,11 +7076,11 @@ exports[`Check stories > Components/Avatar > Story Interactive > Should match sn
         <i class=\\"fd-avatar__icon sap-icon--person-placeholder\\" role=\\"presentation\\" aria-hidden=\\"true\\" aria-label=\\"Image placeholder\\"></i>
     </span>
     <span class=\\"fd-avatar fd-avatar--xl fd-avatar--circle fd-avatar--thumbnail\\" tabindex=\\"0\\" role=\\"button\\" style=\\"background-image: url('/assets/images/portraits/L_80x80_M1.png')\\" role=\\"img\\" aria-label=\\"John Doe\\"></span>
-    <span class=\\"fd-avatar fd-avatar--xl fd-avatar--circle fd-avatar--transparent\\" tabindex=\\"0\\" role=\\"button\\" aria-label=\\"Wendy Wallace\\">WW</span>
+    <span class=\\"fd-avatar fd-avatar--xl fd-avatar--circle fd-avatar--transparent\\" tabindex=\\"0\\" role=\\"button\\" aria-label=\\"Avatar Wendy Wallace\\">WW</span>
     <span class=\\"fd-avatar fd-avatar--xl fd-avatar--transparent fd-avatar--border\\" tabindex=\\"0\\" role=\\"button\\" aria-label=\\"Avatar\\">
         <i class=\\"fd-avatar__icon sap-icon--person-placeholder\\" role=\\"presentation\\" aria-hidden=\\"true\\" aria-label=\\"Image placeholder\\"></i>
     </span>
-    <span class=\\"fd-avatar fd-avatar--xl fd-avatar--circle fd-avatar--transparent fd-avatar--border\\" tabindex=\\"0\\" role=\\"button\\" aria-label=\\"Wendy Wallace\\">WW
+    <span class=\\"fd-avatar fd-avatar--xl fd-avatar--circle fd-avatar--transparent fd-avatar--border\\" tabindex=\\"0\\" role=\\"button\\" aria-label=\\"Avatar Wendy Wallace\\">WW
     </span>
     
     <span class=\\"fd-avatar fd-avatar--circle fd-avatar--indication-color-1 fd-avatar--xs\\" aria-label=\\"Avatar\\" tabindex=\\"0\\" role=\\"button\\">
@@ -7133,15 +7133,15 @@ exports[`Check stories > Components/Avatar > Story Interactive > Should match sn
     <span class=\\"fd-avatar fd-avatar--xl fd-avatar--circle fd-avatar--accent-color-5 is-hover\\" tabindex=\\"0\\" role=\\"button\\" aria-label=\\"Avatar\\">
         <i class=\\"fd-avatar__icon sap-icon--person-placeholder\\" role=\\"presentation\\" aria-hidden=\\"true\\" aria-label=\\"Image placeholder\\"></i>
     </span>
-    <span class=\\"fd-avatar fd-avatar--accent-color-6 fd-avatar--xs is-hover\\" tabindex=\\"0\\" role=\\"button\\" aria-label=\\"Wendy Wallace\\">WW
+    <span class=\\"fd-avatar fd-avatar--accent-color-6 fd-avatar--xs is-hover\\" tabindex=\\"0\\" role=\\"button\\" aria-label=\\"Avatar Wendy Wallace\\">WW
     </span>
-    <span class=\\"fd-avatar fd-avatar--accent-color-7 fd-avatar--s is-hover\\" tabindex=\\"0\\" role=\\"button\\" aria-label=\\"Wendy Wallace\\">WW
+    <span class=\\"fd-avatar fd-avatar--accent-color-7 fd-avatar--s is-hover\\" tabindex=\\"0\\" role=\\"button\\" aria-label=\\"Avatar Wendy Wallace\\">WW
     </span>
-    <span class=\\"fd-avatar fd-avatar--accent-color-8 fd-avatar--m is-hover\\" tabindex=\\"0\\" role=\\"button\\" aria-label=\\"Wendy Wallace\\">WW
+    <span class=\\"fd-avatar fd-avatar--accent-color-8 fd-avatar--m is-hover\\" tabindex=\\"0\\" role=\\"button\\" aria-label=\\"Avatar Wendy Wallace\\">WW
     </span>
-    <span class=\\"fd-avatar fd-avatar--accent-color-9 fd-avatar--l is-hover\\" tabindex=\\"0\\" role=\\"button\\" aria-label=\\"Wendy Wallace\\">WW
+    <span class=\\"fd-avatar fd-avatar--accent-color-9 fd-avatar--l is-hover\\" tabindex=\\"0\\" role=\\"button\\" aria-label=\\"Avatar Wendy Wallace\\">WW
     </span>
-    <span class=\\"fd-avatar fd-avatar--accent-color-10 fd-avatar--xl is-hover\\" tabindex=\\"0\\" role=\\"button\\" aria-label=\\"Wendy Wallace\\">WW
+    <span class=\\"fd-avatar fd-avatar--accent-color-10 fd-avatar--xl is-hover\\" tabindex=\\"0\\" role=\\"button\\" aria-label=\\"Avatar Wendy Wallace\\">WW
     </span>
     <span class=\\"fd-avatar fd-avatar--xl fd-avatar--circle fd-avatar--placeholder is-hover\\" tabindex=\\"0\\" role=\\"button\\" aria-label=\\"Avatar\\">
         <i class=\\"fd-avatar__icon sap-icon--person-placeholder\\" role=\\"presentation\\" aria-hidden=\\"true\\" aria-label=\\"Image placeholder\\"></i>
@@ -7150,11 +7150,11 @@ exports[`Check stories > Components/Avatar > Story Interactive > Should match sn
         <i class=\\"fd-avatar__icon sap-icon--person-placeholder\\" role=\\"presentation\\" aria-hidden=\\"true\\" aria-label=\\"Image placeholder\\"></i>
     </span>
     <span class=\\"fd-avatar fd-avatar--xl fd-avatar--circle fd-avatar--thumbnail is-hover\\" tabindex=\\"0\\" role=\\"button\\" style=\\"background-image: url('/assets/images/portraits/L_80x80_M1.png')\\" role=\\"img\\" aria-label=\\"John Doe\\"></span>
-    <span class=\\"fd-avatar fd-avatar--xl fd-avatar--circle fd-avatar--transparent is-hover\\" tabindex=\\"0\\" role=\\"button\\" aria-label=\\"Wendy Wallace\\">WW</span>
+    <span class=\\"fd-avatar fd-avatar--xl fd-avatar--circle fd-avatar--transparent is-hover\\" tabindex=\\"0\\" role=\\"button\\" aria-label=\\"Avatar Wendy Wallace\\">WW</span>
     <span class=\\"fd-avatar fd-avatar--xl fd-avatar--transparent fd-avatar--border is-hover\\" tabindex=\\"0\\" role=\\"button\\" aria-label=\\"Avatar\\">
         <i class=\\"fd-avatar__icon sap-icon--person-placeholder\\" role=\\"presentation\\" aria-hidden=\\"true\\" aria-label=\\"Image placeholder\\"></i>
     </span>
-    <span class=\\"fd-avatar fd-avatar--xl fd-avatar--circle fd-avatar--transparent fd-avatar--border is-hover\\" tabindex=\\"0\\" role=\\"button\\" aria-label=\\"Wendy Wallace\\">WW
+    <span class=\\"fd-avatar fd-avatar--xl fd-avatar--circle fd-avatar--transparent fd-avatar--border is-hover\\" tabindex=\\"0\\" role=\\"button\\" aria-label=\\"Avatar Wendy Wallace\\">WW
     </span>
 
     <span class=\\"fd-avatar fd-avatar--circle fd-avatar--indication-color-1 fd-avatar--xs is-hover\\" aria-label=\\"Avatar\\" tabindex=\\"0\\" role=\\"button\\">
@@ -7207,15 +7207,15 @@ exports[`Check stories > Components/Avatar > Story Interactive > Should match sn
     <span class=\\"fd-avatar fd-avatar--xl fd-avatar--circle fd-avatar--accent-color-5 is-active\\" tabindex=\\"0\\" role=\\"button\\" aria-label=\\"Avatar\\">
         <i class=\\"fd-avatar__icon sap-icon--person-placeholder\\" role=\\"presentation\\" aria-hidden=\\"true\\" aria-label=\\"Image placeholder\\"></i>
     </span>
-    <span class=\\"fd-avatar fd-avatar--accent-color-6 fd-avatar--xs is-active\\" tabindex=\\"0\\" role=\\"button\\" aria-label=\\"Wendy Wallace\\">WW
+    <span class=\\"fd-avatar fd-avatar--accent-color-6 fd-avatar--xs is-active\\" tabindex=\\"0\\" role=\\"button\\" aria-label=\\"Avatar Wendy Wallace\\">WW
     </span>
-    <span class=\\"fd-avatar fd-avatar--accent-color-7 fd-avatar--s is-active\\" tabindex=\\"0\\" role=\\"button\\" aria-label=\\"Wendy Wallace\\">WW
+    <span class=\\"fd-avatar fd-avatar--accent-color-7 fd-avatar--s is-active\\" tabindex=\\"0\\" role=\\"button\\" aria-label=\\"Avatar Wendy Wallace\\">WW
     </span>
-    <span class=\\"fd-avatar fd-avatar--accent-color-8 fd-avatar--m is-active\\" tabindex=\\"0\\" role=\\"button\\" aria-label=\\"Wendy Wallace\\">WW
+    <span class=\\"fd-avatar fd-avatar--accent-color-8 fd-avatar--m is-active\\" tabindex=\\"0\\" role=\\"button\\" aria-label=\\"Avatar Wendy Wallace\\">WW
     </span>
-    <span class=\\"fd-avatar fd-avatar--accent-color-9 fd-avatar--l is-active\\" tabindex=\\"0\\" role=\\"button\\" aria-label=\\"Wendy Wallace\\">WW
+    <span class=\\"fd-avatar fd-avatar--accent-color-9 fd-avatar--l is-active\\" tabindex=\\"0\\" role=\\"button\\" aria-label=\\"Avatar Wendy Wallace\\">WW
     </span>
-    <span class=\\"fd-avatar fd-avatar--accent-color-10 fd-avatar--xl is-active\\" tabindex=\\"0\\" role=\\"button\\" aria-label=\\"Wendy Wallace\\">WW
+    <span class=\\"fd-avatar fd-avatar--accent-color-10 fd-avatar--xl is-active\\" tabindex=\\"0\\" role=\\"button\\" aria-label=\\"Avatar Wendy Wallace\\">WW
     </span>
     <span class=\\"fd-avatar fd-avatar--xl fd-avatar--circle fd-avatar--placeholder is-active\\" tabindex=\\"0\\" role=\\"button\\" aria-label=\\"Avatar\\">
         <i class=\\"fd-avatar__icon sap-icon--person-placeholder\\" role=\\"presentation\\" aria-hidden=\\"true\\" aria-label=\\"Image placeholder\\"></i>
@@ -7224,11 +7224,11 @@ exports[`Check stories > Components/Avatar > Story Interactive > Should match sn
         <i class=\\"fd-avatar__icon sap-icon--person-placeholder\\" role=\\"presentation\\" aria-hidden=\\"true\\" aria-label=\\"Image placeholder\\"></i>
     </span>
     <span class=\\"fd-avatar fd-avatar--xl fd-avatar--circle fd-avatar--thumbnail is-active\\" tabindex=\\"0\\" role=\\"button\\" style=\\"background-image: url('/assets/images/portraits/L_80x80_M1.png')\\" role=\\"img\\" aria-label=\\"John Doe\\"></span>
-    <span class=\\"fd-avatar fd-avatar--xl fd-avatar--circle fd-avatar--transparent is-active\\" tabindex=\\"0\\" role=\\"button\\" aria-label=\\"Wendy Wallace\\">WW</span>
+    <span class=\\"fd-avatar fd-avatar--xl fd-avatar--circle fd-avatar--transparent is-active\\" tabindex=\\"0\\" role=\\"button\\" aria-label=\\"Avatar Wendy Wallace\\">WW</span>
     <span class=\\"fd-avatar fd-avatar--xl fd-avatar--transparent fd-avatar--border is-active\\" tabindex=\\"0\\" role=\\"button\\" aria-label=\\"Avatar\\">
         <i class=\\"fd-avatar__icon sap-icon--person-placeholder\\" role=\\"presentation\\" aria-hidden=\\"true\\" aria-label=\\"Image placeholder\\"></i>
     </span>
-    <span class=\\"fd-avatar fd-avatar--xl fd-avatar--circle fd-avatar--transparent fd-avatar--border is-active\\" tabindex=\\"0\\" role=\\"button\\" aria-label=\\"Wendy Wallace\\">WW
+    <span class=\\"fd-avatar fd-avatar--xl fd-avatar--circle fd-avatar--transparent fd-avatar--border is-active\\" tabindex=\\"0\\" role=\\"button\\" aria-label=\\"Avatar Wendy Wallace\\">WW
     </span>
 
     <span class=\\"fd-avatar fd-avatar--circle fd-avatar--indication-color-1 fd-avatar--xs is-active\\" aria-label=\\"Avatar\\" tabindex=\\"0\\" role=\\"button\\">
@@ -7281,15 +7281,15 @@ exports[`Check stories > Components/Avatar > Story Interactive > Should match sn
     <span class=\\"fd-avatar fd-avatar--xl fd-avatar--circle fd-avatar--accent-color-5 is-toggled is-hover\\" tabindex=\\"0\\" role=\\"button\\" aria-label=\\"Avatar\\">
         <i class=\\"fd-avatar__icon sap-icon--person-placeholder\\" role=\\"presentation\\" aria-hidden=\\"true\\" aria-label=\\"Image placeholder\\"></i>
     </span>
-    <span class=\\"fd-avatar fd-avatar--accent-color-6 fd-avatar--xs is-toggled is-hover\\" tabindex=\\"0\\" role=\\"button\\" aria-label=\\"Wendy Wallace\\">WW
+    <span class=\\"fd-avatar fd-avatar--accent-color-6 fd-avatar--xs is-toggled is-hover\\" tabindex=\\"0\\" role=\\"button\\" aria-label=\\"Avatar Wendy Wallace\\">WW
     </span>
-    <span class=\\"fd-avatar fd-avatar--accent-color-7 fd-avatar--s is-toggled is-hover\\" tabindex=\\"0\\" role=\\"button\\" aria-label=\\"Wendy Wallace\\">WW
+    <span class=\\"fd-avatar fd-avatar--accent-color-7 fd-avatar--s is-toggled is-hover\\" tabindex=\\"0\\" role=\\"button\\" aria-label=\\"Avatar Wendy Wallace\\">WW
     </span>
-    <span class=\\"fd-avatar fd-avatar--accent-color-8 fd-avatar--m is-toggled is-hover\\" tabindex=\\"0\\" role=\\"button\\" aria-label=\\"Wendy Wallace\\">WW
+    <span class=\\"fd-avatar fd-avatar--accent-color-8 fd-avatar--m is-toggled is-hover\\" tabindex=\\"0\\" role=\\"button\\" aria-label=\\"Avatar Wendy Wallace\\">WW
     </span>
-    <span class=\\"fd-avatar fd-avatar--accent-color-9 fd-avatar--l is-toggled is-hover\\" tabindex=\\"0\\" role=\\"button\\" aria-label=\\"Wendy Wallace\\">WW
+    <span class=\\"fd-avatar fd-avatar--accent-color-9 fd-avatar--l is-toggled is-hover\\" tabindex=\\"0\\" role=\\"button\\" aria-label=\\"Avatar Wendy Wallace\\">WW
     </span>
-    <span class=\\"fd-avatar fd-avatar--accent-color-10 fd-avatar--xl is-toggled is-hover\\" tabindex=\\"0\\" role=\\"button\\" aria-label=\\"Wendy Wallace\\">WW
+    <span class=\\"fd-avatar fd-avatar--accent-color-10 fd-avatar--xl is-toggled is-hover\\" tabindex=\\"0\\" role=\\"button\\" aria-label=\\"Avatar Wendy Wallace\\">WW
     </span>
     <span class=\\"fd-avatar fd-avatar--xl fd-avatar--circle fd-avatar--placeholder is-toggled is-hover\\" tabindex=\\"0\\" role=\\"button\\" aria-label=\\"Avatar\\">
         <i class=\\"fd-avatar__icon sap-icon--person-placeholder\\" role=\\"presentation\\" aria-hidden=\\"true\\" aria-label=\\"Image placeholder\\"></i>
@@ -7298,11 +7298,11 @@ exports[`Check stories > Components/Avatar > Story Interactive > Should match sn
         <i class=\\"fd-avatar__icon sap-icon--person-placeholder\\" role=\\"presentation\\" aria-hidden=\\"true\\" aria-label=\\"Image placeholder\\"></i>
     </span>
     <span class=\\"fd-avatar fd-avatar--xl fd-avatar--circle fd-avatar--thumbnail is-toggled is-hover\\" tabindex=\\"0\\" role=\\"button\\" style=\\"background-image: url('/assets/images/portraits/L_80x80_M1.png')\\" role=\\"img\\" aria-label=\\"John Doe\\"></span>
-    <span class=\\"fd-avatar fd-avatar--xl fd-avatar--circle fd-avatar--transparent is-toggled is-hover\\"  tabindex=\\"0\\" role=\\"button\\"aria-label=\\"Wendy Wallace\\">WW</span>
+    <span class=\\"fd-avatar fd-avatar--xl fd-avatar--circle fd-avatar--transparent is-toggled is-hover\\"  tabindex=\\"0\\" role=\\"button\\"aria-label=\\"Avatar Wendy Wallace\\">WW</span>
     <span class=\\"fd-avatar fd-avatar--xl fd-avatar--transparent fd-avatar--border is-toggled is-hover\\"  tabindex=\\"0\\" role=\\"button\\"aria-label=\\"Avatar\\">
         <i class=\\"fd-avatar__icon sap-icon--person-placeholder\\" role=\\"presentation\\" aria-hidden=\\"true\\" aria-label=\\"Image placeholder\\"></i>
     </span>
-    <span class=\\"fd-avatar fd-avatar--xl fd-avatar--circle fd-avatar--transparent fd-avatar--border is-toggled is-hover\\" tabindex=\\"0\\" role=\\"button\\" aria-label=\\"Wendy Wallace\\">WW
+    <span class=\\"fd-avatar fd-avatar--xl fd-avatar--circle fd-avatar--transparent fd-avatar--border is-toggled is-hover\\" tabindex=\\"0\\" role=\\"button\\" aria-label=\\"Avatar Wendy Wallace\\">WW
     </span>
 
     <span class=\\"fd-avatar fd-avatar--circle fd-avatar--indication-color-1 fd-avatar--xs is-hover is-active\\" aria-label=\\"Avatar\\" tabindex=\\"0\\" role=\\"button\\">
@@ -7355,15 +7355,15 @@ exports[`Check stories > Components/Avatar > Story Interactive > Should match sn
     <span class=\\"fd-avatar fd-avatar--xl fd-avatar--circle fd-avatar--accent-color-5 is-disabled\\" role=\\"button\\" aria-label=\\"Avatar\\">
         <i class=\\"fd-avatar__icon sap-icon--person-placeholder\\" role=\\"presentation\\" aria-hidden=\\"true\\" aria-label=\\"Image placeholder\\"></i>
     </span>
-    <span class=\\"fd-avatar fd-avatar--accent-color-6 fd-avatar--xs is-disabled\\" role=\\"button\\" aria-label=\\"Wendy Wallace\\">WW
+    <span class=\\"fd-avatar fd-avatar--accent-color-6 fd-avatar--xs is-disabled\\" role=\\"button\\" aria-label=\\"Avatar Wendy Wallace\\">WW
     </span>
-    <span class=\\"fd-avatar fd-avatar--accent-color-7 fd-avatar--s is-disabled\\" role=\\"button\\" aria-label=\\"Wendy Wallace\\">WW
+    <span class=\\"fd-avatar fd-avatar--accent-color-7 fd-avatar--s is-disabled\\" role=\\"button\\" aria-label=\\"Avatar Wendy Wallace\\">WW
     </span>
-    <span class=\\"fd-avatar fd-avatar--accent-color-8 fd-avatar--m is-disabled\\" role=\\"button\\" aria-label=\\"Wendy Wallace\\">WW
+    <span class=\\"fd-avatar fd-avatar--accent-color-8 fd-avatar--m is-disabled\\" role=\\"button\\" aria-label=\\"Avatar Wendy Wallace\\">WW
     </span>
-    <span class=\\"fd-avatar fd-avatar--accent-color-9 fd-avatar--l is-disabled\\" role=\\"button\\" aria-label=\\"Wendy Wallace\\">WW
+    <span class=\\"fd-avatar fd-avatar--accent-color-9 fd-avatar--l is-disabled\\" role=\\"button\\" aria-label=\\"Avatar Wendy Wallace\\">WW
     </span>
-    <span class=\\"fd-avatar fd-avatar--accent-color-10 fd-avatar--xl is-disabled\\" role=\\"button\\" aria-label=\\"Wendy Wallace\\">WW
+    <span class=\\"fd-avatar fd-avatar--accent-color-10 fd-avatar--xl is-disabled\\" role=\\"button\\" aria-label=\\"Avatar Wendy Wallace\\">WW
     </span>
     <span class=\\"fd-avatar fd-avatar--xl fd-avatar--circle fd-avatar--placeholder is-disabled\\" role=\\"button\\" aria-label=\\"Avatar\\">
         <i class=\\"fd-avatar__icon sap-icon--person-placeholder\\" role=\\"presentation\\" aria-hidden=\\"true\\" aria-label=\\"Image placeholder\\"></i>
@@ -7372,11 +7372,11 @@ exports[`Check stories > Components/Avatar > Story Interactive > Should match sn
         <i class=\\"fd-avatar__icon sap-icon--person-placeholder\\" role=\\"presentation\\" aria-hidden=\\"true\\" aria-label=\\"Image placeholder\\"></i>
     </span>
     <span class=\\"fd-avatar fd-avatar--xl fd-avatar--circle fd-avatar--thumbnail is-disabled\\" role=\\"button\\" style=\\"background-image: url('/assets/images/portraits/L_80x80_M1.png')\\" role=\\"img\\" aria-label=\\"John Doe\\"></span>
-    <span class=\\"fd-avatar fd-avatar--xl fd-avatar--circle fd-avatar--transparent is-disabled\\" role=\\"button\\" aria-label=\\"Wendy Wallace\\">WW</span>
+    <span class=\\"fd-avatar fd-avatar--xl fd-avatar--circle fd-avatar--transparent is-disabled\\" role=\\"button\\" aria-label=\\"Avatar Wendy Wallace\\">WW</span>
     <span class=\\"fd-avatar fd-avatar--xl fd-avatar--transparent fd-avatar--border is-disabled\\"  role=\\"button\\" aria-label=\\"Avatar\\">
         <i class=\\"fd-avatar__icon sap-icon--person-placeholder\\" role=\\"presentation\\" aria-hidden=\\"true\\" aria-label=\\"Image placeholder\\"></i>
     </span>
-    <span class=\\"fd-avatar fd-avatar--xl fd-avatar--circle fd-avatar--transparent fd-avatar--border is-disabled\\" role=\\"button\\" aria-label=\\"Wendy Wallace\\">WW
+    <span class=\\"fd-avatar fd-avatar--xl fd-avatar--circle fd-avatar--transparent fd-avatar--border is-disabled\\" role=\\"button\\" aria-label=\\"Avatar Wendy Wallace\\">WW
     </span>
 </div>
 
@@ -7398,15 +7398,15 @@ exports[`Check stories > Components/Avatar > Story Interactive > Should match sn
     <span class=\\"fd-avatar fd-avatar--xl fd-avatar--circle fd-avatar--accent-color-5 is-focus\\" tabindex=\\"0\\" role=\\"button\\" aria-label=\\"Avatar\\">
         <i class=\\"fd-avatar__icon sap-icon--person-placeholder\\" role=\\"presentation\\" aria-hidden=\\"true\\" aria-label=\\"Image placeholder\\"></i>
     </span>
-    <span class=\\"fd-avatar fd-avatar--accent-color-6 fd-avatar--xs is-focus\\" tabindex=\\"0\\" role=\\"button\\" aria-label=\\"Wendy Wallace\\">WW
+    <span class=\\"fd-avatar fd-avatar--accent-color-6 fd-avatar--xs is-focus\\" tabindex=\\"0\\" role=\\"button\\" aria-label=\\"Avatar Wendy Wallace\\">WW
     </span>
-    <span class=\\"fd-avatar fd-avatar--accent-color-7 fd-avatar--s is-focus\\" tabindex=\\"0\\" role=\\"button\\" aria-label=\\"Wendy Wallace\\">WW
+    <span class=\\"fd-avatar fd-avatar--accent-color-7 fd-avatar--s is-focus\\" tabindex=\\"0\\" role=\\"button\\" aria-label=\\"Avatar Wendy Wallace\\">WW
     </span>
-    <span class=\\"fd-avatar fd-avatar--accent-color-8 fd-avatar--m is-focus\\" tabindex=\\"0\\" role=\\"button\\" aria-label=\\"Wendy Wallace\\">WW
+    <span class=\\"fd-avatar fd-avatar--accent-color-8 fd-avatar--m is-focus\\" tabindex=\\"0\\" role=\\"button\\" aria-label=\\"Avatar Wendy Wallace\\">WW
     </span>
-    <span class=\\"fd-avatar fd-avatar--accent-color-9 fd-avatar--l is-focus\\" tabindex=\\"0\\" role=\\"button\\" aria-label=\\"Wendy Wallace\\">WW
+    <span class=\\"fd-avatar fd-avatar--accent-color-9 fd-avatar--l is-focus\\" tabindex=\\"0\\" role=\\"button\\" aria-label=\\"Avatar Wendy Wallace\\">WW
     </span>
-    <span class=\\"fd-avatar fd-avatar--accent-color-10 fd-avatar--xl is-focus\\" tabindex=\\"0\\" role=\\"button\\" aria-label=\\"Wendy Wallace\\">WW
+    <span class=\\"fd-avatar fd-avatar--accent-color-10 fd-avatar--xl is-focus\\" tabindex=\\"0\\" role=\\"button\\" aria-label=\\"Avatar Wendy Wallace\\">WW
     </span>
     <span class=\\"fd-avatar fd-avatar--xl fd-avatar--circle fd-avatar--placeholder is-focus\\" tabindex=\\"0\\" role=\\"button\\" aria-label=\\"Avatar\\">
         <i class=\\"fd-avatar__icon sap-icon--person-placeholder\\" role=\\"presentation\\" aria-hidden=\\"true\\" aria-label=\\"Image placeholder\\"></i>
@@ -7415,11 +7415,11 @@ exports[`Check stories > Components/Avatar > Story Interactive > Should match sn
         <i class=\\"fd-avatar__icon sap-icon--person-placeholder\\" role=\\"presentation\\" aria-hidden=\\"true\\" aria-label=\\"Image placeholder\\"></i>
     </span>
     <span class=\\"fd-avatar fd-avatar--xl fd-avatar--circle fd-avatar--thumbnail is-focus\\" tabindex=\\"0\\" role=\\"button\\" style=\\"background-image: url('/assets/images/portraits/L_80x80_M1.png')\\" role=\\"img\\" aria-label=\\"John Doe\\"></span>
-    <span class=\\"fd-avatar fd-avatar--xl fd-avatar--circle fd-avatar--transparent is-focus\\" tabindex=\\"0\\" role=\\"button\\" aria-label=\\"Wendy Wallace\\">WW</span>
+    <span class=\\"fd-avatar fd-avatar--xl fd-avatar--circle fd-avatar--transparent is-focus\\" tabindex=\\"0\\" role=\\"button\\" aria-label=\\"Avatar Wendy Wallace\\">WW</span>
     <span class=\\"fd-avatar fd-avatar--xl fd-avatar--transparent fd-avatar--border is-focus\\" tabindex=\\"0\\" role=\\"button\\" aria-label=\\"Avatar\\">
         <i class=\\"fd-avatar__icon sap-icon--person-placeholder\\" role=\\"presentation\\" aria-hidden=\\"true\\" aria-label=\\"Image placeholder\\"></i>
     </span>
-    <span class=\\"fd-avatar fd-avatar--xl fd-avatar--circle fd-avatar--transparent fd-avatar--border is-focus\\" tabindex=\\"0\\" role=\\"button\\" aria-label=\\"Wendy Wallace\\">WW
+    <span class=\\"fd-avatar fd-avatar--xl fd-avatar--circle fd-avatar--transparent fd-avatar--border is-focus\\" tabindex=\\"0\\" role=\\"button\\" aria-label=\\"Avatar Wendy Wallace\\">WW
     </span>
 
     <span class=\\"fd-avatar fd-avatar--circle fd-avatar--indication-color-1 fd-avatar--xs is-focus\\" aria-label=\\"Avatar\\" tabindex=\\"0\\" role=\\"button\\">
@@ -7457,19 +7457,19 @@ exports[`Check stories > Components/Avatar > Story Interactive > Should match sn
 
 exports[`Check stories > Components/Avatar > Story PlaceholderBackground > Should match snapshot 1`] = `
 "
-<span class=\\"fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--placeholder\\" aria-label=\\"Avatar\\" aria-role=\\"img\\">
+<span class=\\"fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--placeholder\\" aria-label=\\"Avatar\\" role=\\"img\\">
     <i class=\\"fd-avatar__icon sap-icon--person-placeholder\\" role=\\"presentation\\" aria-hidden=\\"true\\" aria-label=\\"Image placeholder\\"></i>
 </span>
-<span class=\\"fd-avatar fd-avatar--sm fd-avatar--circle fd-avatar--placeholder\\" aria-label=\\"Avatar\\" aria-role=\\"img\\">
+<span class=\\"fd-avatar fd-avatar--sm fd-avatar--circle fd-avatar--placeholder\\" aria-label=\\"Avatar\\" role=\\"img\\">
     <i class=\\"fd-avatar__icon sap-icon--person-placeholder\\" role=\\"presentation\\" aria-hidden=\\"true\\" aria-label=\\"Image placeholder\\"></i>
 </span>
-<span class=\\"fd-avatar fd-avatar--md fd-avatar--circle fd-avatar--placeholder\\" aria-label=\\"Avatar\\" aria-role=\\"img\\">
+<span class=\\"fd-avatar fd-avatar--md fd-avatar--circle fd-avatar--placeholder\\" aria-label=\\"Avatar\\" role=\\"img\\">
     <i class=\\"fd-avatar__icon sap-icon--person-placeholder\\" role=\\"presentation\\" aria-hidden=\\"true\\" aria-label=\\"Image placeholder\\"></i>
 </span>
-<span class=\\"fd-avatar fd-avatar--lg fd-avatar--circle fd-avatar--placeholder\\" aria-label=\\"Avatar\\" aria-role=\\"img\\">
+<span class=\\"fd-avatar fd-avatar--lg fd-avatar--circle fd-avatar--placeholder\\" aria-label=\\"Avatar\\" role=\\"img\\">
     <i class=\\"fd-avatar__icon sap-icon--person-placeholder\\" role=\\"presentation\\" aria-hidden=\\"true\\" aria-label=\\"Image placeholder\\"></i>
 </span>
-<span class=\\"fd-avatar fd-avatar--xl fd-avatar--circle fd-avatar--placeholder\\" aria-label=\\"Avatar\\" aria-role=\\"img\\">
+<span class=\\"fd-avatar fd-avatar--xl fd-avatar--circle fd-avatar--placeholder\\" aria-label=\\"Avatar\\" role=\\"img\\">
     <i class=\\"fd-avatar__icon sap-icon--person-placeholder\\" role=\\"presentation\\" aria-hidden=\\"true\\" aria-label=\\"Image placeholder\\"></i>
 </span>
 "
@@ -7477,19 +7477,19 @@ exports[`Check stories > Components/Avatar > Story PlaceholderBackground > Shoul
 
 exports[`Check stories > Components/Avatar > Story TileIconBackground > Should match snapshot 1`] = `
 "
-<span class=\\"fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--tile\\" aria-label=\\"Avatar\\" aria-role=\\"img\\">
+<span class=\\"fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--tile\\" aria-label=\\"Avatar\\" role=\\"img\\">
     <i class=\\"fd-avatar__icon sap-icon--person-placeholder\\" role=\\"presentation\\" aria-hidden=\\"true\\" aria-label=\\"Image placeholder\\"></i>
 </span>
-<span class=\\"fd-avatar fd-avatar--sm fd-avatar--circle fd-avatar--tile\\" aria-label=\\"Avatar\\" aria-role=\\"img\\">
+<span class=\\"fd-avatar fd-avatar--sm fd-avatar--circle fd-avatar--tile\\" aria-label=\\"Avatar\\" role=\\"img\\">
     <i class=\\"fd-avatar__icon sap-icon--person-placeholder\\" role=\\"presentation\\" aria-hidden=\\"true\\" aria-label=\\"Image placeholder\\"></i>
 </span>
-<span class=\\"fd-avatar fd-avatar--md fd-avatar--circle fd-avatar--tile\\" aria-label=\\"Avatar\\" aria-role=\\"img\\">
+<span class=\\"fd-avatar fd-avatar--md fd-avatar--circle fd-avatar--tile\\" aria-label=\\"Avatar\\" role=\\"img\\">
     <i class=\\"fd-avatar__icon sap-icon--person-placeholder\\" role=\\"presentation\\" aria-hidden=\\"true\\" aria-label=\\"Image placeholder\\"></i>
 </span>
-<span class=\\"fd-avatar fd-avatar--lg fd-avatar--circle fd-avatar--tile\\" aria-label=\\"Avatar\\" aria-role=\\"img\\">
+<span class=\\"fd-avatar fd-avatar--lg fd-avatar--circle fd-avatar--tile\\" aria-label=\\"Avatar\\" role=\\"img\\">
     <i class=\\"fd-avatar__icon sap-icon--person-placeholder\\" role=\\"presentation\\" aria-hidden=\\"true\\" aria-label=\\"Image placeholder\\"></i>
 </span>
-<span class=\\"fd-avatar fd-avatar--xl fd-avatar--circle fd-avatar--tile\\" aria-label=\\"Avatar\\" aria-role=\\"img\\">
+<span class=\\"fd-avatar fd-avatar--xl fd-avatar--circle fd-avatar--tile\\" aria-label=\\"Avatar\\" role=\\"img\\">
     <i class=\\"fd-avatar__icon sap-icon--person-placeholder\\" role=\\"presentation\\" aria-hidden=\\"true\\" aria-label=\\"Image placeholder\\"></i>
 </span>
 "
@@ -7497,26 +7497,26 @@ exports[`Check stories > Components/Avatar > Story TileIconBackground > Should m
 
 exports[`Check stories > Components/Avatar > Story Transparent > Should match snapshot 1`] = `
 "
-<span class=\\"fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--transparent\\" aria-label=\\"Avatar\\" aria-role=\\"img\\">
+<span class=\\"fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--transparent\\" aria-label=\\"Avatar\\" role=\\"img\\">
     <i class=\\"fd-avatar__icon sap-icon--person-placeholder\\" role=\\"presentation\\" aria-hidden=\\"true\\" aria-label=\\"Image placeholder\\"></i>
 </span>
-<span class=\\"fd-avatar fd-avatar--sm fd-avatar--circle fd-avatar--transparent\\" aria-label=\\"Avatar\\" aria-role=\\"img\\">
+<span class=\\"fd-avatar fd-avatar--sm fd-avatar--circle fd-avatar--transparent\\" aria-label=\\"Avatar\\" role=\\"img\\">
     <i class=\\"fd-avatar__icon sap-icon--person-placeholder\\" role=\\"presentation\\" aria-hidden=\\"true\\" aria-label=\\"Image placeholder\\"></i>
 </span>
-<span class=\\"fd-avatar fd-avatar--md fd-avatar--circle fd-avatar--transparent\\" aria-label=\\"Avatar\\" aria-role=\\"img\\">
+<span class=\\"fd-avatar fd-avatar--md fd-avatar--circle fd-avatar--transparent\\" aria-label=\\"Avatar\\" role=\\"img\\">
     <i class=\\"fd-avatar__icon sap-icon--person-placeholder\\" role=\\"presentation\\" aria-hidden=\\"true\\" aria-label=\\"Image placeholder\\"></i>
 </span>
-<span class=\\"fd-avatar fd-avatar--lg fd-avatar--circle fd-avatar--transparent\\" aria-label=\\"Avatar\\" aria-role=\\"img\\">
+<span class=\\"fd-avatar fd-avatar--lg fd-avatar--circle fd-avatar--transparent\\" aria-label=\\"Avatar\\" role=\\"img\\">
     <i class=\\"fd-avatar__icon sap-icon--person-placeholder\\" role=\\"presentation\\" aria-hidden=\\"true\\" aria-label=\\"Image placeholder\\"></i>
 </span>
-<span class=\\"fd-avatar fd-avatar--xl fd-avatar--circle fd-avatar--transparent\\" aria-label=\\"Avatar\\" aria-role=\\"img\\">
+<span class=\\"fd-avatar fd-avatar--xl fd-avatar--circle fd-avatar--transparent\\" aria-label=\\"Avatar\\" role=\\"img\\">
     <i class=\\"fd-avatar__icon sap-icon--person-placeholder\\" role=\\"presentation\\" aria-hidden=\\"true\\" aria-label=\\"Image placeholder\\"></i>
 </span>
-<span class=\\"fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--transparent\\" aria-label=\\"Wendy Wallace\\" role=\\"img\\">WW</span>
-<span class=\\"fd-avatar fd-avatar--sm fd-avatar--circle fd-avatar--transparent\\" aria-label=\\"Wendy Wallace\\" role=\\"img\\">WW</span>
-<span class=\\"fd-avatar fd-avatar--md fd-avatar--circle fd-avatar--transparent\\" aria-label=\\"Wendy Wallace\\" role=\\"img\\">WW</span>
-<span class=\\"fd-avatar fd-avatar--lg fd-avatar--circle fd-avatar--transparent\\" aria-label=\\"Wendy Wallace\\" role=\\"img\\">WW</span>
-<span class=\\"fd-avatar fd-avatar--xl fd-avatar--circle fd-avatar--transparent\\" aria-label=\\"Wendy Wallace\\" role=\\"img\\">WW</span>
+<span class=\\"fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--transparent\\" aria-label=\\"Avatar Wendy Wallace\\" role=\\"img\\">WW</span>
+<span class=\\"fd-avatar fd-avatar--sm fd-avatar--circle fd-avatar--transparent\\" aria-label=\\"Avatar Wendy Wallace\\" role=\\"img\\">WW</span>
+<span class=\\"fd-avatar fd-avatar--md fd-avatar--circle fd-avatar--transparent\\" aria-label=\\"Avatar Wendy Wallace\\" role=\\"img\\">WW</span>
+<span class=\\"fd-avatar fd-avatar--lg fd-avatar--circle fd-avatar--transparent\\" aria-label=\\"Avatar Wendy Wallace\\" role=\\"img\\">WW</span>
+<span class=\\"fd-avatar fd-avatar--xl fd-avatar--circle fd-avatar--transparent\\" aria-label=\\"Avatar Wendy Wallace\\" role=\\"img\\">WW</span>
 "
 `;
 

@@ -19,8 +19,7 @@ import '../../../src/icon.scss';
 export default {
   title: 'Components/Avatar',
   parameters: {
-    description: `The avatar control is used for presenting various images, including user profiles, user initials, placeholder images, icons, or business-related images like product pictures.<br>
-    For detailed information check Fiori Design Guidelines for <a target="_blank" href="https://experience.sap.com/fiori-design-web/avatar/">Avatar</a> component. 
+    description: `The avatar control is used for presenting various images, including user profiles, user initials, placeholder images, icons, or business-related images like product pictures.
 
 
 ## Usage
@@ -51,7 +50,7 @@ The avatar control is adaptive and has five predefined sizes. These are the same
 
 <br><br><br>
 `,
-  tags: ['v1']
+  tags: []
   }
 };
 
@@ -150,8 +149,7 @@ export const ZoomIcon = () => zoomIconExampleHtml;
 ZoomIcon.parameters = {
   docs: {
     description: {
-      story: `If an avatar is clickable, you can show an optional badge and icon. 
-            The badge indicates that the avatar is interactive and the icon indicates the action triggered by clicking the avatar. This feature gives users visual affordance of the available action, and is particularly useful for images.`
+      story: `If an avatar is clickable, you can show an optional badge and icon. The badge indicates that the avatar is interactive and the icon indicates the action triggered by clicking the avatar. This feature gives users visual affordance of the available action, and is particularly useful for images.`
     }
   }
 };
