@@ -1,0 +1,49 @@
+name: Component Request
+description: Request a new component or variant for Fundamental Library Styles.
+title: '[Component Request]: '
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for suggesting improvements!  
+        Before submitting, please:
+        - [Search existing/closed issues for duplicates](https://github.com/SAP/fundamental-styles/issues?q=is%3Aissue)
+        - Review our [Contribution Guidelines](https://github.com/SAP/fundamental-styles/wiki/Contribution-Guidelines)
+
+        Please provide as much detail as possible to help us understand your request.  
+        Supporting links, screenshots, or code examples are encouraged.
+
+  - type: input
+    id: component-name
+    attributes:
+      label: Component name
+      description: Suggest a name for the new component or variant.
+      placeholder: e.g. Timeline, Notification Banner
+    validations:
+      required: true
+
+  - type: textarea
+    id: detailed-description
+    attributes:
+      label: Detailed description
+      description: >
+        Describe your request in detail.  
+        Include what product/project you work on and any important ship/release dates.
+      placeholder: Please describe what you need and why it’s important.
+    validations:
+      required: true
+
+  - type: textarea
+    id: visual-style
+    attributes:
+      label: Visual style requirements and expected behavior and available states
+      description: |
+        Describe any specific needs related to color, typography, icons, borders, spacing, size, and other visual details.  
+        - How multiple instances should be arranged/aligned  
+        - How it should respond to different contexts or breakpoints (touch, RTL, small screens)  
+        - Expected interactive states (e.g., disabled, expanded, pressed)
+        - Describe how the component should handle events, outcomes, and transitions.
+        What states should it support? (For reference: [Nine States of Design](https://medium.com/swlh/the-nine-states-of-design-5bfe9b3d6d85))
+    validations:
+      required: false

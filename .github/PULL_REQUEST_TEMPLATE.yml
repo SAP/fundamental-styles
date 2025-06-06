@@ -1,0 +1,42 @@
+name: Pull Request
+description: Submit a change to fundamental-styles for review.
+title: '[PR] <title>'
+body:
+  - type: input
+    id: related-issue
+    attributes:
+      label: Related Issue
+      description: >
+        Reference the issue this PR addresses (e.g., 'Closes SAP/fundamental-styles#1234').
+    validations:
+      required: false
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: Briefly describe your changes.
+      placeholder: Short summary of your changes.
+    validations:
+      required: true
+
+  - type: markdown
+    attributes:
+      value: |
+        ## Screenshots
+
+  - type: textarea
+    id: screenshots-before
+    attributes:
+      label: Before
+      description: Screenshot of the state *before* your changes (if visual).
+    validations:
+      required: false
+
+  - type: textarea
+    id: screenshots-after
+    attributes:
+      label: After
+      description: Screenshot of the state *after* your changes (if visual).
+    validations:
+      required: false
