@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.41.0-rc.12](https://github.com/SAP/fundamental-styles/compare/v0.41.0-rc.11...v0.41.0-rc.12) (2025-06-06)
+
+### Bug Fixes
+
+- **styles:** a11y and focus improvements for Avatar Group [ci visual] ([#6086](https://github.com/SAP/fundamental-styles/issues/6086)) ([63d0d49](https://github.com/SAP/fundamental-styles/commit/63d0d4916b15ed27dd8d9d1c528468ac2ba03365))
+
 # [0.41.0-rc.11](https://github.com/SAP/fundamental-styles/compare/v0.41.0-rc.10...v0.41.0-rc.11) (2025-06-06)
 
 **Note:** Version bump only for package fundamental-styles
@@ -6157,9 +6163,9 @@ Co-authored-by: droshev <mladen.droshev@sap.com>
 
 - added a new modifier class to fd-row to achieve even alignment of its elements:fd-row--top in a form.
   Before:
-  <div class="fd-row">
-  After:
-  <div class="fd-row fd-row--top">
+    <div class="fd-row">
+    After:
+    <div class="fd-row fd-row--top">
 
 ### Bug Fixes
 
