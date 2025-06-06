@@ -42,7 +42,16 @@ $block-avatar: #{$fd-namespace}-avatar;
     }
   }
 
+  &__popover-control {
+    position: relative;
+
+    @include fd-focus() {
+      @include fd-fake-fiori-focus(var(--fdAvatarGroup_Focus_Outline_Offset), var(--fdAvatarGroup_Focus_Outline_Radius));
+    }
+  }
+
   &--vertical {
+    height: 100%;
     flex-direction: column;
   }
 
@@ -57,6 +66,8 @@ $block-avatar: #{$fd-namespace}-avatar;
   }
 
   &--group-type {
+    position: relative;
+
     .#{$fd-namespace}-avatar {
       pointer-events: none;
     }
