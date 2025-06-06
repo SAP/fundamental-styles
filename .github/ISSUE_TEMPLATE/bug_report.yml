@@ -1,0 +1,46 @@
+name: Bug Report
+description: Report a bug to help us improve Fundamental Library Styles.
+title: '[Bug]: '
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for contributing!  
+        Before submitting, please:
+        - [Search existing or closed issues to avoid duplicates](https://github.com/SAP/fundamental-styles/issues?q=is%3Aissue)
+        - Review our [Contribution Guidelines](https://github.com/SAP/fundamental-styles/wiki/Contribution-Guidelines)
+        - **IMPORTANT:** Please refrain from providing any internal or sensitive information like: internal urls, login credentials, screenshots of applications or features in development, as this project is open-source, and its contents are accessible to anyone.
+
+  - type: textarea
+    id: bug-description
+    attributes:
+      label: Describe the bug
+      description: >
+        Provide a clear and concise description of the bug and steps to reproduce the desired behavior. Please be as detailed as possible (screenshots or live demos are helpful!).
+        Example:
+          1. Go to '...'
+          2. Click on '...'
+          3. Scroll to '...'
+          4. See error
+    validations:
+      required: true
+
+  - type: input
+    id: version
+    attributes:
+      label: Fundamental Library Styles Version
+      description: >
+        Which version are you using?
+      placeholder: e.g. 0.24.0
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: confirmation
+    attributes:
+        label: Declaration
+        description: By submitting this issue, I confirm to follow the recommendation not to disclose any internal or sensitive information.
+        options:
+            - label: I’m not disclosing any internal or sensitive information.
+              required: true
