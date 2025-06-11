@@ -1,88 +1,167 @@
 <div style="display: flex; justify-content: space-around;">
-    <section class="fd-calendar">
+    <section class="fd-calendar" role="group" aria-roledescription="Calendar">
         <header class="fd-calendar__navigation">
             <div class="fd-calendar__action fd-calendar__action--arrow-left">
-                <button type="button" class="fd-button fd-button--transparent" aria-label="Previous">
-                    <i class="sap-icon--slim-arrow-left"></i>
+                <button type="button" class="fd-button fd-button--transparent" aria-label="Previous" title="Previous">
+                    <i class="sap-icon--slim-arrow-left" role="presentation" aria-hidden="true"></i>
                 </button>
             </div>
             <div class="fd-calendar__action">
-                <button type="button" class="fd-button fd-button--transparent">2018</button>
+                <button type="button" id="calendar-year" class="fd-button fd-button--transparent">2018</button>
             </div>
             <div class="fd-calendar__action fd-calendar__action--arrow-right">
-                <button type="button" class="fd-button fd-button--transparent" aria-label="Next">
-                    <i class="sap-icon--slim-arrow-right"></i>
+                <button type="button" class="fd-button fd-button--transparent" aria-label="Next" title="Next">
+                    <i class="sap-icon--slim-arrow-right" role="presentation" aria-hidden="true"></i>
                 </button>
             </div>
         </header>
-        <table class="fd-calendar__content fd-calendar__content--months" id="1jjVw927" role="grid">
-            <tbody class="fd-calendar__group">
-                <tr class="fd-calendar__row">
-                    <td role="gridcell" class="fd-calendar__my-item">
-                        <button class="fd-button fd-button--transparent fd-calendar__my-item-button" type="button">
+        <table 
+            role="grid"
+            aria-readonly="false"
+            aria-multiselectable="false"
+            aria-roledescription="Month Picker"
+            aria-labelledby="calendar-year"
+            class="fd-calendar__content fd-calendar__content--months" 
+            id="1jjVw927">
+            <tbody class="fd-calendar__group" role="rowgroup">
+                <tr role="row" class="fd-calendar__row">
+                    <td 
+                        role="gridcell"
+                        aria-selected="false"
+                        aria-disabled="false" 
+                        aria-label="Select January 2018"
+                        tabindex="-1"
+                        class="fd-calendar__my-item">
+                        <span class="fd-button fd-button--transparent fd-calendar__my-item-button">
                             <span class="fd-calendar__text">January</span>
-                        </button>
+                        </span>
                     </td>
-                    <td role="gridcell" class="fd-calendar__my-item">
-                        <button class="fd-button fd-button--transparent fd-calendar__my-item-button" type="button">
+                    <td 
+                        role="gridcell"
+                        aria-selected="false"
+                        aria-disabled="false" 
+                        aria-label="Select February 2018"
+                        tabindex="-1"
+                        class="fd-calendar__my-item">
+                        <span class="fd-button fd-button--transparent fd-calendar__my-item-button">
                             <span class="fd-calendar__text">February</span>
-                        </button>
+                        </span>
                     </td>
-                    <td aria-selected="true" role="gridcell" class="fd-calendar__my-item">
-                        <button class="fd-button fd-button--transparent fd-button--toggled fd-calendar__my-item-button" type="button">
+                    <td
+                        role="gridcell"
+                        aria-selected="true"
+                        aria-disabled="false"  
+                        aria-label="Select March 2018"
+                        tabindex="-1"
+                        class="fd-calendar__my-item">
+                        <span class="fd-button fd-button--transparent fd-button--toggled fd-calendar__my-item-button">
                             <span class="fd-calendar__text">March</span>
-                        </button>
+                        </span>
                     </td>
                 </tr>
-                <tr class="fd-calendar__row">
-                    <td role="gridcell" class="fd-calendar__my-item">
-                        <button class="fd-button fd-button--transparent fd-calendar__my-item-button" type="button">
+                <tr role="row" class="fd-calendar__row">
+                    <td 
+                        role="gridcell"
+                        aria-selected="false"
+                        aria-disabled="false" 
+                        aria-label="Select April 2018"
+                        tabindex="-1"
+                        class="fd-calendar__my-item">
+                        <span class="fd-button fd-button--transparent fd-calendar__my-item-button">
                             <span class="fd-calendar__text">April</span>
-                        </button>
+                        </span>
                     </td>
-                    <td role="gridcell" class="fd-calendar__my-item">
-                        <button class="fd-button fd-button--transparent fd-calendar__my-item-button" type="button">
+                    <td 
+                        role="gridcell"
+                        aria-selected="false"
+                        aria-disabled="false" 
+                        aria-label="Select May 2018"
+                        tabindex="-1"
+                        class="fd-calendar__my-item">
+                        <span class="fd-button fd-button--transparent fd-calendar__my-item-button">
                             <span class="fd-calendar__text">May</span>
-                        </button>
+                        </span>
                     </td>
-                    <td role="gridcell" class="fd-calendar__my-item">
-                        <button class="fd-button fd-button--transparent fd-calendar__my-item-button" type="button">
+                    <td 
+                        role="gridcell"
+                        aria-selected="false"
+                        aria-disabled="false" 
+                        aria-label="Select June 2018"
+                        tabindex="-1"
+                        class="fd-calendar__my-item">
+                        <span class="fd-button fd-button--transparent fd-calendar__my-item-button">
                             <span class="fd-calendar__text">June</span>
-                        </button>
+                        </span>
                     </td>
                 </tr>
-                <tr class="fd-calendar__row">
-                    <td role="gridcell" class="fd-calendar__my-item">
-                        <button class="fd-button fd-button--transparent fd-calendar__my-item-button" type="button">
+                <tr role="row" class="fd-calendar__row">
+                    <td 
+                        role="gridcell"
+                        aria-selected="false"
+                        aria-disabled="false" 
+                        aria-label="Select July 2018"
+                        tabindex="-1"
+                        class="fd-calendar__my-item">
+                        <span class="fd-button fd-button--transparent fd-calendar__my-item-button">
                             <span class="fd-calendar__text">July</span>
-                        </button>
+                        </span>
                     </td>
-                    <td role="gridcell" class="fd-calendar__my-item">
-                        <button class="fd-button fd-button--transparent fd-calendar__my-item-button" type="button">
+                    <td 
+                        role="gridcell"
+                        aria-selected="false"
+                        aria-disabled="false" 
+                        aria-label="Select August 2018"
+                        tabindex="-1"
+                        class="fd-calendar__my-item">
+                        <span class="fd-button fd-button--transparent fd-calendar__my-item-button">
                             <span class="fd-calendar__text">August</span>
-                        </button>
+                        </span>
                     </td>
-                    <td role="gridcell" class="fd-calendar__my-item">
-                        <button class="fd-button fd-button--transparent fd-calendar__my-item-button" type="button">
+                    <td 
+                        role="gridcell"
+                        aria-selected="false"
+                        aria-disabled="false" 
+                        aria-label="Select September 2018"
+                        tabindex="-1"
+                        class="fd-calendar__my-item">
+                        <span class="fd-button fd-button--transparent fd-calendar__my-item-button">
                             <span class="fd-calendar__text">September</span>
-                        </button>
+                        </span>
                     </td>
                 </tr>
-                <tr class="fd-calendar__row">
-                    <td role="gridcell" class="fd-calendar__my-item">
-                        <button class="fd-button fd-button--transparent fd-calendar__my-item-button" type="button">
+                <tr role="row" class="fd-calendar__row">
+                    <td 
+                        role="gridcell"
+                        aria-selected="false"
+                        aria-disabled="false" 
+                        aria-label="Select October 2018"
+                        tabindex="-1"
+                        class="fd-calendar__my-item">
+                        <span class="fd-button fd-button--transparent fd-calendar__my-item-button">
                             <span class="fd-calendar__text">October</span>
-                        </button>
+                        </span>
                     </td>
-                    <td role="gridcell" class="fd-calendar__my-item">
-                        <button class="fd-button fd-button--transparent fd-calendar__my-item-button" type="button">
+                    <td 
+                        role="gridcell"
+                        aria-selected="false"
+                        aria-disabled="false" 
+                        aria-label="Select November 2018"
+                        tabindex="-1"
+                        class="fd-calendar__my-item">
+                        <span class="fd-button fd-button--transparent fd-calendar__my-item-button">
                             <span class="fd-calendar__text">November</span>
-                        </button>
+                        </span>
                     </td>
-                    <td role="gridcell" class="fd-calendar__my-item">
-                        <button class="fd-button fd-button--transparent fd-calendar__my-item-button" type="button">
+                    <td 
+                        role="gridcell"
+                        aria-selected="false"
+                        aria-disabled="false" 
+                        aria-label="Select December 2018"
+                        tabindex="-1"
+                        class="fd-calendar__my-item">
+                        <span class="fd-button fd-button--transparent fd-calendar__my-item-button">
                             <span class="fd-calendar__text">December</span>
-                        </button>
+                        </span>
                     </td>
                 </tr>
             </tbody>

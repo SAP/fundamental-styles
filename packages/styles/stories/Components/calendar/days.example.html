@@ -1,274 +1,478 @@
 <div style="display: flex; justify-content: space-around;">
-    <section class="fd-calendar">
+    <section class="fd-calendar" role="group" aria-roledescription="Calendar">
         <header class="fd-calendar__navigation">
             <div class="fd-calendar__action fd-calendar__action--arrow-left">
-                <button type="button" class="fd-button fd-button--transparent" aria-label="Previous">
-                    <i class="sap-icon--slim-arrow-left"></i>
+                <button type="button" class="fd-button fd-button--transparent" aria-label="Previous" title="Previous">
+                    <i class="sap-icon--slim-arrow-left" role="presentation" aria-hidden="true"></i>
                 </button>
             </div>
             <div class="fd-calendar__action">
-                <button type="button" class="fd-button fd-button--transparent">February</button>
+                <button type="button" class="fd-button fd-button--transparent" aria-label="February">February</button>
             </div>
             <div class="fd-calendar__action">
                 <button type="button" class="fd-button fd-button--transparent">2018</button>
             </div>
             <div class="fd-calendar__action fd-calendar__action--arrow-right">
-                <button type="button" class="fd-button fd-button--transparent" aria-label="Next">
-                    <i class="sap-icon--slim-arrow-right"></i>
+                <button type="button" class="fd-button fd-button--transparent" aria-label="Next" title="Next">
+                    <i class="sap-icon--slim-arrow-right" role="presentation" aria-hidden="true"></i>
                 </button>
             </div>
         </header>
-        <table class="fd-calendar__content" id="IO0cp341" role="grid">
-            <thead class="fd-calendar__group">
-                <tr class="fd-calendar__row">
-                    <th class="fd-calendar__item fd-calendar__item--side-helper"></th>
-                    <th class="fd-calendar__item fd-calendar__item--side-helper">
+        <table class="fd-calendar__content" id="IO0cp341" role="grid" aria-readonly="false" aria-multiselectable="true" aria-roledescription="Gregorian calendar">
+            <thead class="fd-calendar__group" role="rowgroup">
+                <tr class="fd-calendar__row" role="row">
+                    <th role="columnheader" class="fd-calendar__item fd-calendar__item--side-helper"></th>
+                    <th role="columnheader" aria-label="Sunday" class="fd-calendar__item fd-calendar__item--side-helper">
                         <div class="fd-calendar__text-wrapper">
                             <span class="fd-calendar__text">Sun</span>
                         </div>
                     </th>
-                    <th class="fd-calendar__item fd-calendar__item--side-helper">
+                    <th role="columnheader" aria-label="Monday" class="fd-calendar__item fd-calendar__item--side-helper">
                         <div class="fd-calendar__text-wrapper">
                             <span class="fd-calendar__text">Mon</span>
                         </div>
                     </th>
-                    <th class="fd-calendar__item fd-calendar__item--side-helper">
+                    <th role="columnheader" aria-label="Tuesday" class="fd-calendar__item fd-calendar__item--side-helper">
                         <div class="fd-calendar__text-wrapper">
                             <span class="fd-calendar__text">Tue</span>
                         </div>
                     </th>
-                    <th class="fd-calendar__item fd-calendar__item--side-helper">
+                    <th role="columnheader" aria-label="Wednesday" class="fd-calendar__item fd-calendar__item--side-helper">
                         <div class="fd-calendar__text-wrapper">
                             <span class="fd-calendar__text">Wed</span>
                         </div>
                     </th>
-                    <th class="fd-calendar__item fd-calendar__item--side-helper">
+                    <th role="columnheader" aria-label="Thursday" class="fd-calendar__item fd-calendar__item--side-helper">
                         <div class="fd-calendar__text-wrapper">
                             <span class="fd-calendar__text">Thu</span>
                         </div>
                     </th>
-                    <th class="fd-calendar__item fd-calendar__item--side-helper">
+                    <th role="columnheader" aria-label="Friday" class="fd-calendar__item fd-calendar__item--side-helper">
                         <div class="fd-calendar__text-wrapper">
                             <span class="fd-calendar__text">Fri</span>
                         </div>
                     </th>
-                    <th class="fd-calendar__item fd-calendar__item--side-helper">
+                    <th role="columnheader" aria-label="Saturday" class="fd-calendar__item fd-calendar__item--side-helper">
                         <div class="fd-calendar__text-wrapper">
                             <span class="fd-calendar__text">Sat</span>
                         </div>
                     </th>
                 </tr>
             </thead>
-            <tbody class="fd-calendar__group">
-                <tr class="fd-calendar__row">
-                    <td class="fd-calendar__item fd-calendar__item--side-helper">
+            <tbody class="fd-calendar__group" role="rowgroup">
+                <tr role="row" class="fd-calendar__row">
+                    <th 
+                        scope="row" 
+                        role="rowheader" 
+                        aria-label="Calendar Week 5" 
+                        class="fd-calendar__item fd-calendar__item--side-helper">
+                        <div class="fd-calendar__text-wrapper">
+                            <span class="fd-calendar__text">5</span>
+                        </div>
+                    </th>
+                    <td 
+                        role="gridcell"
+                        aria-selected="false"
+                        aria-disabled="false"
+                        aria-label="January 30, 2018" 
+                        class="fd-calendar__item fd-calendar__item--other">
+                        <div class="fd-calendar__text-wrapper">
+                            <span class="fd-calendar__text">30</span>
+                        </div>
+                    </td>
+                    <td 
+                        role="gridcell"
+                        aria-selected="false"
+                        aria-disabled="false"
+                        aria-label="January 31, 2018" 
+                        class="fd-calendar__item fd-calendar__item--other">
+                        <div class="fd-calendar__text-wrapper">
+                            <span class="fd-calendar__text">31</span>
+                        </div>
+                    </td>
+                    <td 
+                        role="gridcell"
+                        aria-selected="false"
+                        aria-disabled="false"
+                        aria-label="February 1, 2018" 
+                        class="fd-calendar__item">
+                        <div class="fd-calendar__text-wrapper">
+                            <span class="fd-calendar__text">1</span>
+                        </div>
+                    </td>
+                    <td 
+                        role="gridcell"
+                        aria-selected="false"
+                        aria-disabled="false"
+                        aria-label="February 2, 2018" 
+                        class="fd-calendar__item">
+                        <div class="fd-calendar__text-wrapper">
+                            <span class="fd-calendar__text">2</span>
+                        </div>
+                    </td>
+                    <td 
+                        role="gridcell"
+                        aria-selected="false"
+                        aria-disabled="false"
+                        aria-label="February 3, 2018" 
+                        class="fd-calendar__item">
+                        <div class="fd-calendar__text-wrapper">
+                            <span class="fd-calendar__text">3</span>
+                        </div>
+                    </td>
+                    <td 
+                        role="gridcell"
+                        aria-selected="false"
+                        aria-disabled="false"
+                        aria-label="February 4, 2018; Non-Working Day" 
+                        title="Non-Working Day"
+                        class="fd-calendar__item fd-calendar__item--weekend">
+                        <div class="fd-calendar__text-wrapper">
+                            <span class="fd-calendar__text">4</span>
+                        </div>
+                    </td>
+                    <td 
+                        role="gridcell"
+                        aria-selected="false"
+                        aria-disabled="false"
+                        aria-label="February 5, 2018; Non-Working Day" 
+                        title="Non-Working Day"
+                        class="fd-calendar__item fd-calendar__item--weekend">
                         <div class="fd-calendar__text-wrapper">
                             <span class="fd-calendar__text">5</span>
                         </div>
                     </td>
-                    <td role="gridcell" class="fd-calendar__item fd-calendar__item--other">
-                        <div class="fd-calendar__text-wrapper">
-                            <span class="fd-calendar__text" role="button">30</span>
-                        </div>
-                    </td>
-                    <td role="gridcell" class="fd-calendar__item fd-calendar__item--other">
-                        <div class="fd-calendar__text-wrapper">
-                            <span class="fd-calendar__text" role="button">31</span>
-                        </div>
-                    </td>
-                    <td role="gridcell" class="fd-calendar__item">
-                        <div class="fd-calendar__text-wrapper">
-                            <span class="fd-calendar__text" role="button">1</span>
-                        </div>
-                    </td>
-                    <td role="gridcell" class="fd-calendar__item">
-                        <div class="fd-calendar__text-wrapper">
-                            <span class="fd-calendar__text" role="button">2</span>
-                        </div>
-                    </td>
-                    <td role="gridcell" class="fd-calendar__item">
-                        <div class="fd-calendar__text-wrapper">
-                            <span class="fd-calendar__text" role="button">3</span>
-                        </div>
-                    </td>
-                    <td role="gridcell" class="fd-calendar__item fd-calendar__item--weekend">
-                        <div class="fd-calendar__text-wrapper">
-                            <span class="fd-calendar__text" role="button">4</span>
-                        </div>
-                    </td>
-                    <td role="gridcell" class="fd-calendar__item fd-calendar__item--weekend">
-                        <div class="fd-calendar__text-wrapper">
-                            <span class="fd-calendar__text" role="button">5</span>
-                        </div>
-                    </td>
                 </tr>
-                <tr class="fd-calendar__row">
-                    <td class="fd-calendar__item fd-calendar__item--side-helper">
+                <tr role="row" class="fd-calendar__row">
+                    <th 
+                        scope="row" 
+                        role="rowheader" 
+                        aria-label="Calendar Week 6" 
+                        class="fd-calendar__item fd-calendar__item--side-helper">
+                        <div class="fd-calendar__text-wrapper">
+                            <span class="fd-calendar__text">6</span>
+                        </div>
+                    </th>
+                    <td 
+                        role="gridcell"
+                        aria-selected="false"
+                        aria-disabled="false"
+                        aria-label="February 6, 2018"  
+                        class="fd-calendar__item">
                         <div class="fd-calendar__text-wrapper">
                             <span class="fd-calendar__text">6</span>
                         </div>
                     </td>
-                    <td role="gridcell" class="fd-calendar__item">
-                        <div class="fd-calendar__text-wrapper">
-                            <span class="fd-calendar__text" role="button">6</span>
-                        </div>
-                    </td>
-                    <td role="gridcell" class="fd-calendar__item">
-                        <div class="fd-calendar__text-wrapper">
-                            <span class="fd-calendar__text" role="button">7</span>
-                        </div>
-                    </td>
-                    <td role="gridcell" class="fd-calendar__item">
-                        <div class="fd-calendar__text-wrapper">
-                            <span class="fd-calendar__text" role="button">8</span>
-                        </div>
-                    </td>
-                    <td role="gridcell" class="fd-calendar__item">
-                        <div class="fd-calendar__text-wrapper">
-                            <span class="fd-calendar__text" role="button">9</span>
-                        </div>
-                    </td>
-                    <td role="gridcell" class="fd-calendar__item">
-                        <div class="fd-calendar__text-wrapper">
-                            <span class="fd-calendar__text" role="button">10</span>
-                        </div>
-                    </td>
-                    <td role="gridcell" class="fd-calendar__item fd-calendar__item--weekend">
-                        <div class="fd-calendar__text-wrapper">
-                            <span class="fd-calendar__text" role="button">11</span>
-                        </div>
-                    </td>
-                    <td role="gridcell" class="fd-calendar__item fd-calendar__item--weekend">
-                        <div class="fd-calendar__text-wrapper">
-                            <span class="fd-calendar__text" role="button">12</span>
-                        </div>
-                    </td>
-                </tr>
-                <tr class="fd-calendar__row">
-                    <td class="fd-calendar__item fd-calendar__item--side-helper">
+                    <td 
+                        role="gridcell"
+                        aria-selected="false"
+                        aria-disabled="false"
+                        aria-label="February 7, 2018"  
+                        class="fd-calendar__item">
                         <div class="fd-calendar__text-wrapper">
                             <span class="fd-calendar__text">7</span>
                         </div>
                     </td>
-                    <td aria-selected="true" role="gridcell" class="fd-calendar__item fd-calendar__item--selected">
-                        <div class="fd-calendar__text-wrapper">
-                            <span class="fd-calendar__text" role="button">13</span>
-                        </div>
-                    </td>
-                    <td role="gridcell" class="fd-calendar__item fd-calendar__item--range">
-                        <div class="fd-calendar__text-wrapper">
-                            <span class="fd-calendar__text" role="button">14</span>
-                        </div>
-                    </td>
-                    <td role="gridcell" class="fd-calendar__item fd-calendar__item--range">
-                        <div class="fd-calendar__text-wrapper">
-                            <span class="fd-calendar__text" role="button">15</span>
-                        </div>
-                    </td>
-                    <td role="gridcell" class="fd-calendar__item fd-calendar__item--range">
-                        <div class="fd-calendar__text-wrapper">
-                            <span class="fd-calendar__text" role="button">16</span>
-                        </div>
-                    </td>
-                    <td role="gridcell" class="fd-calendar__item fd-calendar__item--range  fd-calendar__item--legend-7">
-                        <div class="fd-calendar__text-wrapper">
-                            <span class="fd-calendar__text" role="button">17</span>
-                        </div>
-                    </td>
-                    <td aria-selected="true" role="gridcell"
-                        class="fd-calendar__item fd-calendar__item--weekend
-                            fd-calendar__item--selected fd-calendar__item--legend-1">
-                            <div class="fd-calendar__text-wrapper">
-                                <span class="fd-calendar__text" role="button">18</span>
-                            </div>
-                    </td>
-                    <td role="gridcell" class="fd-calendar__item fd-calendar__item--weekend fd-calendar__item--legend-5">
-                        <div class="fd-calendar__text-wrapper">
-                            <span class="fd-calendar__text" role="button">19</span>
-                        </div>
-                    </td>
-                </tr>
-                <tr class="fd-calendar__row">
-                    <td class="fd-calendar__item fd-calendar__item--side-helper">
+                    <td 
+                        role="gridcell"
+                        aria-selected="false"
+                        aria-disabled="false"
+                        aria-label="February 8, 2018"  
+                        class="fd-calendar__item">
                         <div class="fd-calendar__text-wrapper">
                             <span class="fd-calendar__text">8</span>
                         </div>
                     </td>
-                    <td role="gridcell" class="fd-calendar__item">
-                        <div class="fd-calendar__text-wrapper">
-                            <span class="fd-calendar__text" role="button">20</span>
-                        </div>
-                    </td>
-                    <td role="gridcell" class="fd-calendar__item">
-                        <div class="fd-calendar__text-wrapper">
-                            <span class="fd-calendar__text" role="button">21</span>
-                        </div>
-                    </td>
-                    <td role="gridcell" class="fd-calendar__item">
-                        <div class="fd-calendar__text-wrapper">
-                            <span class="fd-calendar__text" role="button">22</span>
-                        </div>
-                    </td>
-                    <td role="gridcell" class="fd-calendar__item">
-                        <div class="fd-calendar__text-wrapper">
-                            <span class="fd-calendar__text" role="button">23</span>
-                        </div>
-                    </td>
-                    <td role="gridcell" class="fd-calendar__item fd-calendar__item--legend-3">
-                        <div class="fd-calendar__text-wrapper">
-                            <span class="fd-calendar__text" role="button">24</span>
-                        </div>
-                    </td>
-                    <td role="gridcell" class="fd-calendar__item fd-calendar__item--weekend fd-calendar__item--legend-9">
-                        <div class="fd-calendar__text-wrapper">
-                            <span class="fd-calendar__text" role="button">25</span>
-                        </div>
-                    </td>
-                    <td role="gridcell" class="fd-calendar__item fd-calendar__item--weekend">
-                        <div class="fd-calendar__text-wrapper">
-                            <span class="fd-calendar__text" role="button">26</span>
-                        </div>
-                    </td>
-                </tr>
-                <tr class="fd-calendar__row">
-                    <td class="fd-calendar__item fd-calendar__item--side-helper">
+                    <td 
+                        role="gridcell"
+                        aria-selected="false"
+                        aria-disabled="false"
+                        aria-label="February 9, 2018"  
+                        class="fd-calendar__item">
                         <div class="fd-calendar__text-wrapper">
                             <span class="fd-calendar__text">9</span>
                         </div>
                     </td>
-                    <td role="gridcell" class="fd-calendar__item">
+                    <td 
+                        role="gridcell"
+                        aria-selected="false"
+                        aria-disabled="false"
+                        aria-label="February 10, 2018"  
+                        class="fd-calendar__item">
                         <div class="fd-calendar__text-wrapper">
-                            <span class="fd-calendar__text" role="button">27</span>
+                            <span class="fd-calendar__text">10</span>
                         </div>
                     </td>
-                    <td role="gridcell" class="fd-calendar__item">
+                    <td 
+                        role="gridcell"
+                        aria-selected="false"
+                        aria-disabled="false"
+                        title="Non-Working Day"
+                        aria-label="February 11, 2018; Non-Working Day"  
+                        class="fd-calendar__item fd-calendar__item--weekend">
                         <div class="fd-calendar__text-wrapper">
-                            <span class="fd-calendar__text" role="button">28</span>
+                            <span class="fd-calendar__text">11</span>
                         </div>
                     </td>
-                    <td role="gridcell" class="fd-calendar__item fd-calendar__item--other">
+                    <td 
+                        role="gridcell"
+                        aria-selected="false"
+                        aria-disabled="false"
+                        title="Non-Working Day"
+                        aria-label="February 12, 2018; Non-Working Day"  
+                        class="fd-calendar__item fd-calendar__item--weekend">
                         <div class="fd-calendar__text-wrapper">
-                            <span class="fd-calendar__text" role="button">1</span>
+                            <span class="fd-calendar__text">12</span>
                         </div>
                     </td>
-                    <td role="gridcell" class="fd-calendar__item fd-calendar__item--other">
+                </tr>
+                <tr role="row" class="fd-calendar__row">
+                    <th 
+                        scope="row" 
+                        role="rowheader" 
+                        aria-label="Calendar Week 7" 
+                        class="fd-calendar__item fd-calendar__item--side-helper">
                         <div class="fd-calendar__text-wrapper">
-                            <span class="fd-calendar__text" role="button">2</span>
+                            <span class="fd-calendar__text">7</span>
+                        </div>
+                    </th>
+                    <td 
+                        role="gridcell"
+                        aria-selected="true"
+                        aria-disabled="false"
+                        aria-label="February 13, 2018"  
+                        class="fd-calendar__item fd-calendar__item--selected">
+                        <div class="fd-calendar__text-wrapper">
+                            <span class="fd-calendar__text">13</span>
                         </div>
                     </td>
-                    <td role="gridcell" class="fd-calendar__item fd-calendar__item--other">
+                    <td 
+                        role="gridcell"
+                        aria-selected="true"
+                        aria-disabled="false"
+                        aria-label="February 14, 2018"   
+                        class="fd-calendar__item fd-calendar__item--range">
                         <div class="fd-calendar__text-wrapper">
-                            <span class="fd-calendar__text" role="button">3</span>
+                            <span class="fd-calendar__text">14</span>
                         </div>
                     </td>
-                    <td role="gridcell" class="fd-calendar__item fd-calendar__item--other">
+                    <td 
+                        role="gridcell"
+                        aria-selected="true"
+                        aria-disabled="false"
+                        aria-label="February 15, 2018"   
+                        class="fd-calendar__item fd-calendar__item--range">
                         <div class="fd-calendar__text-wrapper">
-                            <span class="fd-calendar__text" role="button">4</span>
+                            <span class="fd-calendar__text">15</span>
                         </div>
                     </td>
-                    <td role="gridcell" class="fd-calendar__item fd-calendar__item--other">
+                    <td 
+                        role="gridcell"
+                        aria-selected="true"
+                        aria-disabled="false"
+                        aria-label="February 16, 2018"   
+                        class="fd-calendar__item fd-calendar__item--range">
                         <div class="fd-calendar__text-wrapper">
-                            <span class="fd-calendar__text" role="button">5</span>
+                            <span class="fd-calendar__text">16</span>
+                        </div>
+                    </td>
+                    <td 
+                        role="gridcell"
+                        aria-selected="true"
+                        aria-disabled="false"
+                        aria-label="February 17, 2018; Special Day Type 7"  
+                        title="Special Day Type 7"   
+                        class="fd-calendar__item fd-calendar__item--range  fd-calendar__item--legend-7">
+                        <div class="fd-calendar__text-wrapper">
+                            <span class="fd-calendar__text">17</span>
+                        </div>
+                    </td>
+                    <td 
+                        role="gridcell"
+                        aria-selected="true"
+                        aria-disabled="false"
+                        aria-label="February 18, 2018; Non-Working Day, Special Day Type 1"  
+                        title="Non-Working Day, Special Day Type 1"
+                        class="fd-calendar__item fd-calendar__item--weekend
+                            fd-calendar__item--selected fd-calendar__item--legend-1">
+                            <div class="fd-calendar__text-wrapper">
+                                <span class="fd-calendar__text">18</span>
+                            </div>
+                    </td>
+                    <td 
+                        role="gridcell"
+                        aria-selected="false"
+                        aria-disabled="false"
+                        aria-label="February 19, 2018; Non-Working Day, Special Day Type 5" 
+                        title="Non-Working Day, Special Day Type 5"  
+                        class="fd-calendar__item fd-calendar__item--weekend fd-calendar__item--legend-5">
+                        <div class="fd-calendar__text-wrapper">
+                            <span class="fd-calendar__text">19</span>
+                        </div>
+                    </td>
+                </tr>
+                <tr role="row" class="fd-calendar__row">
+                    <th
+                        scope="row" 
+                        role="rowheader" 
+                        aria-label="Calendar Week 8" 
+                        class="fd-calendar__item fd-calendar__item--side-helper">
+                        <div class="fd-calendar__text-wrapper">
+                            <span class="fd-calendar__text">8</span>
+                        </div>
+                    </th>
+                    <td 
+                        role="gridcell"
+                        aria-selected="false"
+                        aria-disabled="false"
+                        aria-label="February 20, 2018"   
+                        class="fd-calendar__item">
+                        <div class="fd-calendar__text-wrapper">
+                            <span class="fd-calendar__text">20</span>
+                        </div>
+                    </td>
+                    <td 
+                        role="gridcell"
+                        aria-selected="false"
+                        aria-disabled="false"
+                        aria-label="February 21, 2018"   
+                        class="fd-calendar__item">
+                        <div class="fd-calendar__text-wrapper">
+                            <span class="fd-calendar__text">21</span>
+                        </div>
+                    </td>
+                    <td 
+                        role="gridcell"
+                        aria-selected="false"
+                        aria-disabled="false"
+                        aria-label="February 22, 2018"   
+                        class="fd-calendar__item">
+                        <div class="fd-calendar__text-wrapper">
+                            <span class="fd-calendar__text">22</span>
+                        </div>
+                    </td>
+                    <td 
+                        role="gridcell"
+                        aria-selected="false"
+                        aria-disabled="false"
+                        aria-label="February 23, 2018"   
+                        class="fd-calendar__item">
+                        <div class="fd-calendar__text-wrapper">
+                            <span class="fd-calendar__text">23</span>
+                        </div>
+                    </td>
+                    <td 
+                        role="gridcell"
+                        aria-selected="false"
+                        aria-disabled="false"
+                        aria-label="February 24, 2018"  
+                        title="Special Day Type 3" 
+                        class="fd-calendar__item fd-calendar__item--legend-3">
+                        <div class="fd-calendar__text-wrapper">
+                            <span class="fd-calendar__text">24</span>
+                        </div>
+                    </td>
+                    <td 
+                        role="gridcell"
+                        aria-selected="false"
+                        aria-disabled="false"
+                        aria-label="February 25, 2018" 
+                        title="Non-Working Day, Special Day Type 9"  
+                        class="fd-calendar__item fd-calendar__item--weekend fd-calendar__item--legend-9">
+                        <div class="fd-calendar__text-wrapper">
+                            <span class="fd-calendar__text">25</span>
+                        </div>
+                    </td>
+                    <td 
+                        role="gridcell"
+                        aria-selected="false"
+                        aria-disabled="false"
+                        aria-label="February 26, 2018; Non-Working Day"   
+                        title="Non-Working Day"
+                        class="fd-calendar__item fd-calendar__item--weekend">
+                        <div class="fd-calendar__text-wrapper">
+                            <span class="fd-calendar__text">26</span>
+                        </div>
+                    </td>
+                </tr>
+                <tr role="row" class="fd-calendar__row">
+                    <th
+                        scope="row" 
+                        role="rowheader" 
+                        aria-label="Calendar Week 9" 
+                        class="fd-calendar__item fd-calendar__item--side-helper">
+                        <div class="fd-calendar__text-wrapper">
+                            <span class="fd-calendar__text">9</span>
+                        </div>
+                    </th>
+                    <td 
+                        role="gridcell"
+                        aria-selected="false"
+                        aria-disabled="false"
+                        aria-label="February 27, 2018" 
+                        class="fd-calendar__item">
+                        <div class="fd-calendar__text-wrapper">
+                            <span class="fd-calendar__text">27</span>
+                        </div>
+                    </td>
+                    <td 
+                        role="gridcell"
+                        aria-selected="false"
+                        aria-disabled="false"
+                        aria-label="February 28, 2018" 
+                        class="fd-calendar__item">
+                        <div class="fd-calendar__text-wrapper">
+                            <span class="fd-calendar__text">28</span>
+                        </div>
+                    </td>
+                    <td 
+                        role="gridcell"
+                        aria-selected="false"
+                        aria-disabled="false"
+                        aria-label="March 1, 2018" 
+                        class="fd-calendar__item fd-calendar__item--other">
+                        <div class="fd-calendar__text-wrapper">
+                            <span class="fd-calendar__text">1</span>
+                        </div>
+                    </td>
+                    <td 
+                        role="gridcell"
+                        aria-selected="false"
+                        aria-disabled="false"
+                        aria-label="March 2, 2018" 
+                        class="fd-calendar__item fd-calendar__item--other">
+                        <div class="fd-calendar__text-wrapper">
+                            <span class="fd-calendar__text">2</span>
+                        </div>
+                    </td>
+                    <td 
+                        role="gridcell"
+                        aria-selected="false"
+                        aria-disabled="false"
+                        aria-label="March 3, 2018" 
+                        class="fd-calendar__item fd-calendar__item--other">
+                        <div class="fd-calendar__text-wrapper">
+                            <span class="fd-calendar__text">3</span>
+                        </div>
+                    </td>
+                    <td 
+                        role="gridcell"
+                        aria-selected="false"
+                        aria-disabled="false"
+                        aria-label="March 4, 2018" 
+                        class="fd-calendar__item fd-calendar__item--other">
+                        <div class="fd-calendar__text-wrapper">
+                            <span class="fd-calendar__text">4</span>
+                        </div>
+                    </td>
+                    <td 
+                        role="gridcell"
+                        aria-selected="false"
+                        aria-disabled="false"
+                        aria-label="March 5, 2018" 
+                        class="fd-calendar__item fd-calendar__item--other">
+                        <div class="fd-calendar__text-wrapper">
+                            <span class="fd-calendar__text">5</span>
                         </div>
                     </td>
                 </tr>
@@ -276,250 +480,435 @@
         </table>
         <div aria-live="polite" class="fd-calendar__content fd-calendar__content--screen-reader-only">Use arrow keys to navigate dates</div>
     </section>
-    <section class="fd-calendar">
+
+    <section class="fd-calendar" role="group" aria-roledescription="Calendar">
         <header class="fd-calendar__navigation">
             <div class="fd-calendar__action fd-calendar__action--arrow-left">
-                <button type="button" class="fd-button fd-button--transparent" aria-label="Previous">
-                    <i class="sap-icon--slim-arrow-left"></i>
+                <button type="button" class="fd-button fd-button--transparent" aria-label="Previous" title="Previous">
+                    <i class="sap-icon--slim-arrow-left" role="presentation" aria-hidden="true"></i>
                 </button>
             </div>
             <div class="fd-calendar__action">
-                <button type="button" class="fd-button fd-button--transparent">February</button>
+                <button type="button" class="fd-button fd-button--transparent" aria-label="February">February</button>
             </div>
             <div class="fd-calendar__action">
                 <button type="button" class="fd-button fd-button--transparent">2018</button>
             </div>
             <div class="fd-calendar__action fd-calendar__action--arrow-right">
-                <button type="button" class="fd-button fd-button--transparent" aria-label="Next">
-                    <i class="sap-icon--slim-arrow-right"></i>
+                <button type="button" class="fd-button fd-button--transparent" aria-label="Next" title="Next">
+                    <i class="sap-icon--slim-arrow-right" role="presentation" aria-hidden="true"></i>
                 </button>
             </div>
         </header>
-        <table class="fd-calendar__content" id="IO0cp341" role="grid">
-            <thead class="fd-calendar__group">
-                <tr class="fd-calendar__row">
-                    <th class="fd-calendar__item fd-calendar__item--side-helper">
+        <table class="fd-calendar__content" id="IO0cp342" role="grid" aria-readonly="false" aria-multiselectable="true" aria-roledescription="Gregorian calendar">
+            <thead class="fd-calendar__group" role="rowgroup">
+                <tr class="fd-calendar__row" role="row">
+                    <th role="columnheader" aria-label="Sunday" class="fd-calendar__item fd-calendar__item--side-helper">
                         <div class="fd-calendar__text-wrapper">
                             <span class="fd-calendar__text">Sun</span>
                         </div>
                     </th>
-                    <th class="fd-calendar__item fd-calendar__item--side-helper">
+                    <th role="columnheader" aria-label="Monday" class="fd-calendar__item fd-calendar__item--side-helper">
                         <div class="fd-calendar__text-wrapper">
                             <span class="fd-calendar__text">Mon</span>
                         </div>
                     </th>
-                    <th class="fd-calendar__item fd-calendar__item--side-helper">
+                    <th role="columnheader" aria-label="Tuesday" class="fd-calendar__item fd-calendar__item--side-helper">
                         <div class="fd-calendar__text-wrapper">
                             <span class="fd-calendar__text">Tue</span>
                         </div>
                     </th>
-                    <th class="fd-calendar__item fd-calendar__item--side-helper">
+                    <th role="columnheader" aria-label="Wednesday" class="fd-calendar__item fd-calendar__item--side-helper">
                         <div class="fd-calendar__text-wrapper">
                             <span class="fd-calendar__text">Wed</span>
                         </div>
                     </th>
-                    <th class="fd-calendar__item fd-calendar__item--side-helper">
+                    <th role="columnheader" aria-label="Thursday" class="fd-calendar__item fd-calendar__item--side-helper">
                         <div class="fd-calendar__text-wrapper">
                             <span class="fd-calendar__text">Thu</span>
                         </div>
                     </th>
-                    <th class="fd-calendar__item fd-calendar__item--side-helper">
+                    <th role="columnheader" aria-label="Friday" class="fd-calendar__item fd-calendar__item--side-helper">
                         <div class="fd-calendar__text-wrapper">
                             <span class="fd-calendar__text">Fri</span>
                         </div>
                     </th>
-                    <th class="fd-calendar__item fd-calendar__item--side-helper">
+                    <th role="columnheader" aria-label="Saturday" class="fd-calendar__item fd-calendar__item--side-helper">
                         <div class="fd-calendar__text-wrapper">
                             <span class="fd-calendar__text">Sat</span>
                         </div>
                     </th>
                 </tr>
             </thead>
-            <tbody class="fd-calendar__group">
-                <tr class="fd-calendar__row">
-                    <td role="gridcell" class="fd-calendar__item fd-calendar__item--other">
+            <tbody class="fd-calendar__group" role="rowgroup">
+                <tr role="row" class="fd-calendar__row">
+                    <td 
+                        role="gridcell"
+                        aria-selected="false"
+                        aria-disabled="false"
+                        aria-label="January 30, 2018" 
+                        class="fd-calendar__item fd-calendar__item--other">
                         <div class="fd-calendar__text-wrapper">
-                            <span class="fd-calendar__text" role="button">30</span>
+                            <span class="fd-calendar__text">30</span>
                         </div>
                     </td>
-                    <td role="gridcell" class="fd-calendar__item fd-calendar__item--other">
+                    <td 
+                        role="gridcell"
+                        aria-selected="false"
+                        aria-disabled="false"
+                        aria-label="January 31, 2018" 
+                        class="fd-calendar__item fd-calendar__item--other">
                         <div class="fd-calendar__text-wrapper">
-                            <span class="fd-calendar__text" role="button">31</span>
+                            <span class="fd-calendar__text">31</span>
                         </div>
                     </td>
-                    <td role="gridcell" class="fd-calendar__item">
+                    <td 
+                        role="gridcell"
+                        aria-selected="false"
+                        aria-disabled="false"
+                        aria-label="February 1, 2018" 
+                        class="fd-calendar__item">
                         <div class="fd-calendar__text-wrapper">
-                            <span class="fd-calendar__text" role="button">1</span>
+                            <span class="fd-calendar__text">1</span>
                         </div>
                     </td>
-                    <td role="gridcell" class="fd-calendar__item">
+                    <td 
+                        role="gridcell"
+                        aria-selected="false"
+                        aria-disabled="false"
+                        aria-label="February 2, 2018" 
+                        class="fd-calendar__item">
                         <div class="fd-calendar__text-wrapper">
-                            <span class="fd-calendar__text" role="button">2</span>
+                            <span class="fd-calendar__text">2</span>
                         </div>
                     </td>
-                    <td role="gridcell" class="fd-calendar__item">
+                    <td 
+                        role="gridcell"
+                        aria-selected="false"
+                        aria-disabled="false"
+                        aria-label="February 3, 2018" 
+                        class="fd-calendar__item">
                         <div class="fd-calendar__text-wrapper">
-                            <span class="fd-calendar__text" role="button">3</span>
+                            <span class="fd-calendar__text">3</span>
                         </div>
                     </td>
-                    <td role="gridcell" class="fd-calendar__item fd-calendar__item--weekend">
+                    <td 
+                        role="gridcell"
+                        aria-selected="false"
+                        aria-disabled="false"
+                        aria-label="February 4, 2018; Non-Working Day" 
+                        title="Non-Working Day"
+                        class="fd-calendar__item fd-calendar__item--weekend">
                         <div class="fd-calendar__text-wrapper">
-                            <span class="fd-calendar__text" role="button">4</span>
+                            <span class="fd-calendar__text">4</span>
                         </div>
                     </td>
-                    <td role="gridcell" class="fd-calendar__item fd-calendar__item--weekend">
+                    <td 
+                        role="gridcell"
+                        aria-selected="false"
+                        aria-disabled="false"
+                        aria-label="February 5, 2018; Non-Working Day" 
+                        title="Non-Working Day"
+                        class="fd-calendar__item fd-calendar__item--weekend">
                         <div class="fd-calendar__text-wrapper">
-                            <span class="fd-calendar__text" role="button">5</span>
+                            <span class="fd-calendar__text">5</span>
                         </div>
                     </td>
                 </tr>
-                <tr class="fd-calendar__row">
-                    <td role="gridcell" class="fd-calendar__item">
+                <tr role="row" class="fd-calendar__row">
+                    <td 
+                        role="gridcell"
+                        aria-selected="false"
+                        aria-disabled="false"
+                        aria-label="February 6, 2018"  
+                        class="fd-calendar__item">
                         <div class="fd-calendar__text-wrapper">
-                            <span class="fd-calendar__text" role="button">6</span>
+                            <span class="fd-calendar__text">6</span>
                         </div>
                     </td>
-                    <td role="gridcell" class="fd-calendar__item">
+                    <td 
+                        role="gridcell"
+                        aria-selected="false"
+                        aria-disabled="false"
+                        aria-label="February 7, 2018"  
+                        class="fd-calendar__item">
                         <div class="fd-calendar__text-wrapper">
-                            <span class="fd-calendar__text" role="button">7</span>
+                            <span class="fd-calendar__text">7</span>
                         </div>
                     </td>
-                    <td role="gridcell" class="fd-calendar__item">
+                    <td 
+                        role="gridcell"
+                        aria-selected="false"
+                        aria-disabled="false"
+                        aria-label="February 8, 2018"  
+                        class="fd-calendar__item">
                         <div class="fd-calendar__text-wrapper">
-                            <span class="fd-calendar__text" role="button">8</span>
+                            <span class="fd-calendar__text">8</span>
                         </div>
                     </td>
-                    <td role="gridcell" class="fd-calendar__item">
+                    <td 
+                        role="gridcell"
+                        aria-selected="false"
+                        aria-disabled="false"
+                        aria-label="February 9, 2018"  
+                        class="fd-calendar__item">
                         <div class="fd-calendar__text-wrapper">
-                            <span class="fd-calendar__text" role="button">9</span>
+                            <span class="fd-calendar__text">9</span>
                         </div>
                     </td>
-                    <td role="gridcell" class="fd-calendar__item">
+                    <td 
+                        role="gridcell"
+                        aria-selected="false"
+                        aria-disabled="false"
+                        aria-label="February 10, 2018"  
+                        class="fd-calendar__item">
                         <div class="fd-calendar__text-wrapper">
-                            <span class="fd-calendar__text" role="button">10</span>
+                            <span class="fd-calendar__text">10</span>
                         </div>
                     </td>
-                    <td role="gridcell" class="fd-calendar__item fd-calendar__item--weekend">
+                    <td 
+                        role="gridcell"
+                        aria-selected="false"
+                        aria-disabled="false"
+                        title="Non-Working Day"
+                        aria-label="February 11, 2018; Non-Working Day"  
+                        class="fd-calendar__item fd-calendar__item--weekend">
                         <div class="fd-calendar__text-wrapper">
-                            <span class="fd-calendar__text" role="button">11</span>
+                            <span class="fd-calendar__text">11</span>
                         </div>
                     </td>
-                    <td role="gridcell" class="fd-calendar__item fd-calendar__item--weekend">
+                    <td 
+                        role="gridcell"
+                        aria-selected="false"
+                        aria-disabled="false"
+                        title="Non-Working Day"
+                        aria-label="February 12, 2018; Non-Working Day"  
+                        class="fd-calendar__item fd-calendar__item--weekend">
                         <div class="fd-calendar__text-wrapper">
-                            <span class="fd-calendar__text" role="button">12</span>
+                            <span class="fd-calendar__text">12</span>
                         </div>
                     </td>
                 </tr>
-                <tr class="fd-calendar__row">
-                    <td aria-selected="true" role="gridcell" class="fd-calendar__item fd-calendar__item--selected">
+                <tr role="row" class="fd-calendar__row">
+                    <td 
+                        role="gridcell"
+                        aria-selected="true"
+                        aria-disabled="false"
+                        aria-label="February 13, 2018"  
+                        class="fd-calendar__item fd-calendar__item--selected">
                         <div class="fd-calendar__text-wrapper">
-                            <span class="fd-calendar__text" role="button">13</span>
+                            <span class="fd-calendar__text">13</span>
                         </div>
                     </td>
-                    <td role="gridcell" class="fd-calendar__item fd-calendar__item--range">
+                    <td 
+                        role="gridcell"
+                        aria-selected="true"
+                        aria-disabled="false"
+                        aria-label="February 14, 2018"   
+                        class="fd-calendar__item fd-calendar__item--range">
                         <div class="fd-calendar__text-wrapper">
-                            <span class="fd-calendar__text" role="button">14</span>
+                            <span class="fd-calendar__text">14</span>
                         </div>
                     </td>
-                    <td role="gridcell" class="fd-calendar__item fd-calendar__item--range">
+                    <td 
+                        role="gridcell"
+                        aria-selected="true"
+                        aria-disabled="false"
+                        aria-label="February 15, 2018"   
+                        class="fd-calendar__item fd-calendar__item--range">
                         <div class="fd-calendar__text-wrapper">
-                            <span class="fd-calendar__text" role="button">15</span>
+                            <span class="fd-calendar__text">15</span>
                         </div>
                     </td>
-                    <td role="gridcell" class="fd-calendar__item fd-calendar__item--range">
+                    <td 
+                        role="gridcell"
+                        aria-selected="true"
+                        aria-disabled="false"
+                        aria-label="February 16, 2018"   
+                        class="fd-calendar__item fd-calendar__item--range">
                         <div class="fd-calendar__text-wrapper">
-                            <span class="fd-calendar__text" role="button">16</span>
+                            <span class="fd-calendar__text">16</span>
                         </div>
                     </td>
-                    <td role="gridcell" class="fd-calendar__item fd-calendar__item--range  fd-calendar__item--legend-7">
+                    <td 
+                        role="gridcell"
+                        aria-selected="true"
+                        aria-disabled="false"
+                        aria-label="February 17, 2018; Special Day Type 7"  
+                        title="Special Day Type 7"   
+                        class="fd-calendar__item fd-calendar__item--range  fd-calendar__item--legend-7">
                         <div class="fd-calendar__text-wrapper">
-                            <span class="fd-calendar__text" role="button">17</span>
+                            <span class="fd-calendar__text">17</span>
                         </div>
                     </td>
-                    <td aria-selected="true" role="gridcell"
+                    <td 
+                        role="gridcell"
+                        aria-selected="true"
+                        aria-disabled="false"
+                        aria-label="February 18, 2018; Non-Working Day, Special Day Type 1"  
+                        title="Non-Working Day, Special Day Type 1"
                         class="fd-calendar__item fd-calendar__item--weekend
                             fd-calendar__item--selected fd-calendar__item--legend-1">
                             <div class="fd-calendar__text-wrapper">
-                                <span class="fd-calendar__text" role="button">18</span>
+                                <span class="fd-calendar__text">18</span>
                             </div>
                     </td>
-                    <td role="gridcell" class="fd-calendar__item fd-calendar__item--weekend fd-calendar__item--legend-5">
+                    <td 
+                        role="gridcell"
+                        aria-selected="false"
+                        aria-disabled="false"
+                        aria-label="February 19, 2018; Non-Working Day, Special Day Type 5" 
+                        title="Non-Working Day, Special Day Type 5"  
+                        class="fd-calendar__item fd-calendar__item--weekend fd-calendar__item--legend-5">
                         <div class="fd-calendar__text-wrapper">
-                            <span class="fd-calendar__text" role="button">19</span>
+                            <span class="fd-calendar__text">19</span>
                         </div>
                     </td>
                 </tr>
-                <tr class="fd-calendar__row">
-                    <td role="gridcell" class="fd-calendar__item">
+                <tr role="row" class="fd-calendar__row">
+                    <td 
+                        role="gridcell"
+                        aria-selected="false"
+                        aria-disabled="false"
+                        aria-label="February 20, 2018"   
+                        class="fd-calendar__item">
                         <div class="fd-calendar__text-wrapper">
-                            <span class="fd-calendar__text" role="button">20</span>
+                            <span class="fd-calendar__text">20</span>
                         </div>
                     </td>
-                    <td role="gridcell" class="fd-calendar__item">
+                    <td 
+                        role="gridcell"
+                        aria-selected="false"
+                        aria-disabled="false"
+                        aria-label="February 21, 2018"   
+                        class="fd-calendar__item">
                         <div class="fd-calendar__text-wrapper">
-                            <span class="fd-calendar__text" role="button">21</span>
+                            <span class="fd-calendar__text">21</span>
                         </div>
                     </td>
-                    <td role="gridcell" class="fd-calendar__item">
+                    <td 
+                        role="gridcell"
+                        aria-selected="false"
+                        aria-disabled="false"
+                        aria-label="February 22, 2018"   
+                        class="fd-calendar__item">
                         <div class="fd-calendar__text-wrapper">
-                            <span class="fd-calendar__text" role="button">22</span>
+                            <span class="fd-calendar__text">22</span>
                         </div>
                     </td>
-                    <td role="gridcell" class="fd-calendar__item">
+                    <td 
+                        role="gridcell"
+                        aria-selected="false"
+                        aria-disabled="false"
+                        aria-label="February 23, 2018"   
+                        class="fd-calendar__item">
                         <div class="fd-calendar__text-wrapper">
-                            <span class="fd-calendar__text" role="button">23</span>
+                            <span class="fd-calendar__text">23</span>
                         </div>
                     </td>
-                    <td role="gridcell" class="fd-calendar__item fd-calendar__item--legend-3">
+                    <td 
+                        role="gridcell"
+                        aria-selected="false"
+                        aria-disabled="false"
+                        aria-label="February 24, 2018"  
+                        title="Special Day Type 3" 
+                        class="fd-calendar__item fd-calendar__item--legend-3">
                         <div class="fd-calendar__text-wrapper">
-                            <span class="fd-calendar__text" role="button">24</span>
+                            <span class="fd-calendar__text">24</span>
                         </div>
                     </td>
-                    <td role="gridcell" class="fd-calendar__item fd-calendar__item--weekend fd-calendar__item--legend-9">
+                    <td 
+                        role="gridcell"
+                        aria-selected="false"
+                        aria-disabled="false"
+                        aria-label="February 25, 2018" 
+                        title="Non-Working Day, Special Day Type 9"  
+                        class="fd-calendar__item fd-calendar__item--weekend fd-calendar__item--legend-9">
                         <div class="fd-calendar__text-wrapper">
-                            <span class="fd-calendar__text" role="button">25</span>
+                            <span class="fd-calendar__text">25</span>
                         </div>
                     </td>
-                    <td role="gridcell" class="fd-calendar__item fd-calendar__item--weekend">
+                    <td 
+                        role="gridcell"
+                        aria-selected="false"
+                        aria-disabled="false"
+                        aria-label="February 26, 2018; Non-Working Day"   
+                        title="Non-Working Day"
+                        class="fd-calendar__item fd-calendar__item--weekend">
                         <div class="fd-calendar__text-wrapper">
-                            <span class="fd-calendar__text" role="button">26</span>
+                            <span class="fd-calendar__text">26</span>
                         </div>
                     </td>
                 </tr>
-                <tr class="fd-calendar__row">
-                    <td role="gridcell" class="fd-calendar__item">
+                <tr role="row" class="fd-calendar__row">
+                    <td 
+                        role="gridcell"
+                        aria-selected="false"
+                        aria-disabled="false"
+                        aria-label="February 27, 2018" 
+                        class="fd-calendar__item">
                         <div class="fd-calendar__text-wrapper">
-                            <span class="fd-calendar__text" role="button">27</span>
+                            <span class="fd-calendar__text">27</span>
                         </div>
                     </td>
-                    <td role="gridcell" class="fd-calendar__item">
+                    <td 
+                        role="gridcell"
+                        aria-selected="false"
+                        aria-disabled="false"
+                        aria-label="February 28, 2018" 
+                        class="fd-calendar__item">
                         <div class="fd-calendar__text-wrapper">
-                            <span class="fd-calendar__text" role="button">28</span>
+                            <span class="fd-calendar__text">28</span>
                         </div>
                     </td>
-                    <td role="gridcell" class="fd-calendar__item fd-calendar__item--other">
+                    <td 
+                        role="gridcell"
+                        aria-selected="false"
+                        aria-disabled="false"
+                        aria-label="March 1, 2018" 
+                        class="fd-calendar__item fd-calendar__item--other">
                         <div class="fd-calendar__text-wrapper">
-                            <span class="fd-calendar__text" role="button">1</span>
+                            <span class="fd-calendar__text">1</span>
                         </div>
                     </td>
-                    <td role="gridcell" class="fd-calendar__item fd-calendar__item--other">
+                    <td 
+                        role="gridcell"
+                        aria-selected="false"
+                        aria-disabled="false"
+                        aria-label="March 2, 2018" 
+                        class="fd-calendar__item fd-calendar__item--other">
                         <div class="fd-calendar__text-wrapper">
-                            <span class="fd-calendar__text" role="button">2</span>
+                            <span class="fd-calendar__text">2</span>
                         </div>
                     </td>
-                    <td role="gridcell" class="fd-calendar__item fd-calendar__item--other">
+                    <td 
+                        role="gridcell"
+                        aria-selected="false"
+                        aria-disabled="false"
+                        aria-label="March 3, 2018" 
+                        class="fd-calendar__item fd-calendar__item--other">
                         <div class="fd-calendar__text-wrapper">
-                            <span class="fd-calendar__text" role="button">3</span>
+                            <span class="fd-calendar__text">3</span>
                         </div>
                     </td>
-                    <td role="gridcell" class="fd-calendar__item fd-calendar__item--other">
+                    <td 
+                        role="gridcell"
+                        aria-selected="false"
+                        aria-disabled="false"
+                        aria-label="March 4, 2018" 
+                        class="fd-calendar__item fd-calendar__item--other">
                         <div class="fd-calendar__text-wrapper">
-                            <span class="fd-calendar__text" role="button">4</span>
+                            <span class="fd-calendar__text">4</span>
                         </div>
                     </td>
-                    <td role="gridcell" class="fd-calendar__item fd-calendar__item--other">
+                    <td 
+                        role="gridcell"
+                        aria-selected="false"
+                        aria-disabled="false"
+                        aria-label="March 5, 2018" 
+                        class="fd-calendar__item fd-calendar__item--other">
                         <div class="fd-calendar__text-wrapper">
-                            <span class="fd-calendar__text" role="button">5</span>
+                            <span class="fd-calendar__text">5</span>
                         </div>
                     </td>
                 </tr>

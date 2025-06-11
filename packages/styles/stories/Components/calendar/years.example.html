@@ -1,215 +1,421 @@
 <div style="display: flex; justify-content: space-around; margin-bottom: 1rem; flex-wrap: wrap;">
-    <section class="fd-calendar" style="margin-bottom: 1rem;">
+    <section class="fd-calendar" role="group" aria-roledescription="Calendar" style="margin-bottom: 1rem;">
         <header class="fd-calendar__navigation">
             <div class="fd-calendar__action fd-calendar__action--arrow-left">
-                <button type="button" class="fd-button fd-button--transparent" aria-label="Previous">
-                    <i class="sap-icon--slim-arrow-left"></i>
+                <button type="button" class="fd-button fd-button--transparent" aria-label="Previous"  title="Previous">
+                    <i class="sap-icon--slim-arrow-left" role="presentation" aria-hidden="true"></i>
                 </button>
             </div>
             <div class="fd-calendar__action">
-                <button type="button" class="fd-button fd-button--transparent">2018 - 2037</button>
+                <button id="calendar-year-range" type="button" class="fd-button fd-button--transparent">2018 - 2037</button>
             </div>
             <div class="fd-calendar__action fd-calendar__action--arrow-right">
-                <button type="button" class="fd-button fd-button--transparent" aria-label="Next">
-                    <i class="sap-icon--slim-arrow-right"></i>
+                <button type="button" class="fd-button fd-button--transparent" aria-label="Next" title="Next">
+                    <i class="sap-icon--slim-arrow-right" role="presentation" aria-hidden="true"></i>
                 </button>
             </div>
         </header>
-        <table class="fd-calendar__content fd-calendar__content--years " id="57YUZ521" role="grid">
-            <tbody class="fd-calendar__group">
-                <tr class="fd-calendar__row">
-                    <td role="gridcell" class="fd-calendar__my-item">
-                        <button class="fd-button fd-button--transparent fd-calendar__my-item-button" type="button">
+        <table 
+            role="grid"
+            aria-readonly="false"
+            aria-multiselectable="false"
+            aria-roledescription="Year Picker"
+            aria-labelledby="calendar-year-range"
+            class="fd-calendar__content fd-calendar__content--years" 
+            id="57YUZ521">
+            <tbody class="fd-calendar__group" role="rowgroup">
+                <tr role="row" class="fd-calendar__row">
+                    <td 
+                        role="gridcell"
+                        aria-selected="false"
+                        aria-disabled="false" 
+                        aria-label="Select Year 2018"
+                        tabindex="-1" 
+                        class="fd-calendar__my-item">
+                        <span class="fd-button fd-button--transparent fd-calendar__my-item-button">
                             <span class="fd-calendar__text">2018</span>
-                        </button>
+                        </span>
                     </td>
-                    <td role="gridcell" class="fd-calendar__my-item">
-                        <button class="fd-button fd-button--transparent fd-calendar__my-item-button" type="button">
+                    <td 
+                        role="gridcell"
+                        aria-selected="false"
+                        aria-disabled="false" 
+                        aria-label="Select Year 2019"
+                        tabindex="-1" 
+                        class="fd-calendar__my-item">
+                        <span class="fd-button fd-button--transparent fd-calendar__my-item-button">
                             <span class="fd-calendar__text">2019</span>
-                        </button>
+                        </span>
                     </td>
-                    <td role="gridcell" class="fd-calendar__my-item">
-                        <button class="fd-button fd-button--transparent fd-calendar__my-item-button" type="button">
+                    <td 
+                        role="gridcell"
+                        aria-selected="false"
+                        aria-disabled="false" 
+                        aria-label="Select Year 2020"
+                        tabindex="-1" 
+                        class="fd-calendar__my-item">
+                        <span class="fd-button fd-button--transparent fd-calendar__my-item-button">
                             <span class="fd-calendar__text">2020</span>
-                        </button>
+                        </span>
                     </td>
-                    <td role="gridcell" class="fd-calendar__my-item">
-                        <button class="fd-button fd-button--transparent fd-calendar__my-item-button" type="button">
+                    <td 
+                        role="gridcell"
+                        aria-selected="false"
+                        aria-disabled="false" 
+                        aria-label="Select Year 2021"
+                        tabindex="-1"  
+                        class="fd-calendar__my-item">
+                        <span class="fd-button fd-button--transparent fd-calendar__my-item-button">
                             <span class="fd-calendar__text">2021</span>
-                        </button>
+                        </span>
                     </td>
-                    <td role="gridcell" class="fd-calendar__my-item">
-                        <button class="fd-button fd-button--transparent fd-calendar__my-item-button" type="button">
+                    <td 
+                        role="gridcell"
+                        aria-selected="false"
+                        aria-disabled="false" 
+                        aria-label="Select Year 2022"
+                        tabindex="-1" 
+                        class="fd-calendar__my-item">
+                        <span class="fd-button fd-button--transparent fd-calendar__my-item-button">
                             <span class="fd-calendar__text">2022</span>
-                        </button>
+                        </span>
                     </td>
                 </tr>
-                <tr class="fd-calendar__row">
-                    <td role="gridcell" class="fd-calendar__my-item">
-                        <button class="fd-button fd-button--transparent fd-calendar__my-item-button" type="button">
+                <tr role="row" class="fd-calendar__row">
+                    <td 
+                        role="gridcell"
+                        aria-selected="false"
+                        aria-disabled="false" 
+                        aria-label="Select Year 2023"
+                        tabindex="-1"  
+                        class="fd-calendar__my-item">
+                        <span class="fd-button fd-button--transparent fd-calendar__my-item-button">
                             <span class="fd-calendar__text">2023</span>
-                        </button>
+                        </span>
                     </td>
-                    <td role="gridcell" class="fd-calendar__my-item">
-                        <button class="fd-button fd-button--transparent fd-calendar__my-item-button" type="button">
+                    <td 
+                        role="gridcell"
+                        aria-selected="false"
+                        aria-disabled="false" 
+                        aria-label="Select Year 2024"
+                        tabindex="-1"  
+                        class="fd-calendar__my-item">
+                        <span class="fd-button fd-button--transparent fd-calendar__my-item-button">
                             <span class="fd-calendar__text">2024</span>
-                        </button>
+                        </span>
                     </td>
-                    <td role="gridcell" class="fd-calendar__my-item">
-                        <button class="fd-button fd-button--transparent fd-calendar__my-item-button" type="button">
+                    <td 
+                        role="gridcell"
+                        aria-selected="false"
+                        aria-disabled="false" 
+                        aria-label="Select Year 2025"
+                        tabindex="-1"  
+                        class="fd-calendar__my-item">
+                        <span class="fd-button fd-button--transparent fd-calendar__my-item-button">
                             <span class="fd-calendar__text">2025</span>
-                        </button>
+                        </span>
                     </td>
-                    <td role="gridcell" class="fd-calendar__my-item">
-                        <button class="fd-button fd-button--transparent fd-calendar__my-item-button" type="button">
+                    <td 
+                        role="gridcell"
+                        aria-selected="false"
+                        aria-disabled="false" 
+                        aria-label="Select Year 2026"
+                        tabindex="-1"  
+                        class="fd-calendar__my-item">
+                        <span class="fd-button fd-button--transparent fd-calendar__my-item-button">
                             <span class="fd-calendar__text">2026</span>
-                        </button>
+                        </span>
                     </td>
-                    <td role="gridcell" class="fd-calendar__my-item">
-                        <button class="fd-button fd-button--transparent fd-calendar__my-item-button is-active" type="button">
+                    <td 
+                        role="gridcell"
+                        aria-selected="true"
+                        aria-disabled="false" 
+                        aria-label="Select Year 2027"
+                        tabindex="-1"  
+                        class="fd-calendar__my-item">
+                        <span class="fd-button fd-button--transparent fd-calendar__my-item-button is-active">
                             <span class="fd-calendar__text">2027</span>
-                        </button>
+                        </span>
                     </td>
                 </tr>
-                <tr class="fd-calendar__row">
-                    <td role="gridcell" class="fd-calendar__my-item">
-                        <button class="fd-button fd-button--transparent fd-calendar__my-item-button" type="button">
+                <tr role="row" class="fd-calendar__row">
+                    <td 
+                        role="gridcell"
+                        aria-selected="false"
+                        aria-disabled="false" 
+                        aria-label="Select Year 2028"
+                        tabindex="-1" 
+                        class="fd-calendar__my-item">
+                        <span class="fd-button fd-button--transparent fd-calendar__my-item-button">
                             <span class="fd-calendar__text">2028</span>
-                        </button>
+                        </span>
                     </td>
-                    <td role="gridcell" class="fd-calendar__my-item">
-                        <button class="fd-button fd-button--transparent fd-calendar__my-item-button" type="button">
+                    <td 
+                        role="gridcell"
+                        aria-selected="false"
+                        aria-disabled="false" 
+                        aria-label="Select Year 2029"
+                        tabindex="-1" 
+                        class="fd-calendar__my-item">
+                        <span class="fd-button fd-button--transparent fd-calendar__my-item-button">
                             <span class="fd-calendar__text">2029</span>
-                        </button>
+                        </span>
                     </td>
-                    <td role="gridcell" class="fd-calendar__my-item">
-                        <button class="fd-button fd-button--transparent fd-calendar__my-item-button" type="button">
+                    <td 
+                        role="gridcell"
+                        aria-selected="false"
+                        aria-disabled="false" 
+                        aria-label="Select Year 2030"
+                        tabindex="-1" 
+                        class="fd-calendar__my-item">
+                        <span class="fd-button fd-button--transparent fd-calendar__my-item-button">
                             <span class="fd-calendar__text">2030</span>
-                        </button>
+                        </span>
                     </td>
-                    <td role="gridcell" class="fd-calendar__my-item">
-                        <button class="fd-button fd-button--transparent fd-calendar__my-item-button" type="button">
+                    <td 
+                        role="gridcell"
+                        aria-selected="false"
+                        aria-disabled="false" 
+                        aria-label="Select Year 2031"
+                        tabindex="-1" 
+                        class="fd-calendar__my-item">
+                        <span class="fd-button fd-button--transparent fd-calendar__my-item-button">
                             <span class="fd-calendar__text">2031</span>
-                        </button>
+                        </span>
                     </td>
-                    <td role="gridcell" class="fd-calendar__my-item">
-                        <button class="fd-button fd-button--transparent fd-calendar__my-item-button" type="button">
+                    <td 
+                        role="gridcell"
+                        aria-selected="false"
+                        aria-disabled="false" 
+                        aria-label="Select Year 2032"
+                        tabindex="-1" 
+                        class="fd-calendar__my-item">
+                        <span class="fd-button fd-button--transparent fd-calendar__my-item-button">
                             <span class="fd-calendar__text">2032</span>
-                        </button>
+                        </span>
                     </td>
                 </tr>
-                <tr class="fd-calendar__row">
-                    <td role="gridcell" class="fd-calendar__my-item">
-                        <button class="fd-button fd-button--transparent fd-calendar__my-item-button" type="button">
+                <tr role="row" class="fd-calendar__row">
+                    <td 
+                        role="gridcell"
+                        aria-selected="false"
+                        aria-disabled="false" 
+                        aria-label="Select Year 2033"
+                        tabindex="-1"
+                        class="fd-calendar__my-item">
+                        <span class="fd-button fd-button--transparent fd-calendar__my-item-button">
                             <span class="fd-calendar__text">2033</span>
-                        </button>
+                        </span>
                     </td>
-                    <td role="gridcell" class="fd-calendar__my-item">
-                        <button class="fd-button fd-button--transparent fd-calendar__my-item-button" type="button">
+                    <td 
+                        role="gridcell"
+                        aria-selected="false"
+                        aria-disabled="false" 
+                        aria-label="Select Year 2034"
+                        tabindex="-1"
+                        class="fd-calendar__my-item">
+                        <span class="fd-button fd-button--transparent fd-calendar__my-item-button">
                             <span class="fd-calendar__text">2034</span>
-                        </button>
+                        </span>
                     </td>
-                    <td role="gridcell" class="fd-calendar__my-item">
-                        <button class="fd-button fd-button--transparent fd-calendar__my-item-button" type="button">
+                    <td 
+                        role="gridcell"
+                        aria-selected="false"
+                        aria-disabled="false" 
+                        aria-label="Select Year 2035"
+                        tabindex="-1"
+                        class="fd-calendar__my-item">
+                        <span class="fd-button fd-button--transparent fd-calendar__my-item-button">
                             <span class="fd-calendar__text">2035</span>
-                        </button>
+                        </span>
                     </td>
-                    <td role="gridcell" class="fd-calendar__my-item">
-                        <button class="fd-button fd-button--transparent fd-calendar__my-item-button" type="button">
+                    <td 
+                        role="gridcell"
+                        aria-selected="false"
+                        aria-disabled="false" 
+                        aria-label="Select Year 2036"
+                        tabindex="-1"
+                        class="fd-calendar__my-item">
+                        <span class="fd-button fd-button--transparent fd-calendar__my-item-button">
                             <span class="fd-calendar__text">2036</span>
-                        </button>
+                        </span>
                     </td>
-                    <td role="gridcell" class="fd-calendar__my-item">
-                        <button class="fd-button fd-button--transparent fd-calendar__my-item-button" type="button">
+                    <td 
+                        role="gridcell"
+                        aria-selected="false"
+                        aria-disabled="false" 
+                        aria-label="Select Year 2037"
+                        tabindex="-1"
+                        class="fd-calendar__my-item">
+                        <span class="fd-button fd-button--transparent fd-calendar__my-item-button">
                             <span class="fd-calendar__text">2037</span>
-                        </button>
+                        </span>
                     </td>
                 </tr>
             </tbody>
         </table>
         <div aria-live="polite" class="fd-calendar__content fd-calendar__content--screen-reader-only">Use arrow keys to navigate dates</div>
     </section>
-    <section class="fd-calendar" style="margin-bottom: 1rem;">
+
+    <section class="fd-calendar" role="group" aria-roledescription="Calendar" style="margin-bottom: 1rem;">
         <header class="fd-calendar__navigation">
             <div class="fd-calendar__action fd-calendar__action--arrow-left">
-                <button type="button" class="fd-button fd-button--transparent" aria-label="Previous">
-                    <i class="sap-icon--slim-arrow-left"></i>
+                <button type="button" class="fd-button fd-button--transparent" aria-label="Previous" title="Previous">
+                    <i class="sap-icon--slim-arrow-left" role="presentation" aria-hidden="true"></i>
                 </button>
             </div>
             <div class="fd-calendar__action fd-calendar__action--arrow-right">
-                <button type="button" class="fd-button fd-button--transparent" aria-label="Next">
-                    <i class="sap-icon--slim-arrow-right"></i>
+                <button type="button" class="fd-button fd-button--transparent" aria-label="Next" title="Next">
+                    <i class="sap-icon--slim-arrow-right" role="presentation" aria-hidden="true"></i>
                 </button>
             </div>
         </header>
-        <table class="fd-calendar__content fd-calendar__content--years" id="57YUZ522" role="grid">
-            <tbody class="fd-calendar__group">
-                <tr class="fd-calendar__row">
-                    <td role="gridcell" class="fd-calendar__my-item">
-                        <button class="fd-button fd-button--transparent fd-calendar__my-item-button" type="button">
+        <table 
+            role="grid"
+            aria-readonly="false"
+            aria-multiselectable="false"
+            aria-roledescription="Year Picker"
+            class="fd-calendar__content fd-calendar__content--years" 
+            id="57YUZ522">
+            <tbody class="fd-calendar__group" role="rowgroup">
+                <tr role="row" class="fd-calendar__row">
+                    <td 
+                        role="gridcell" 
+                        aria-selected="false"
+                        aria-disabled="false" 
+                        aria-label="Select Year Range 2010 - 2020"
+                        tabindex="-1"
+                        class="fd-calendar__my-item">
+                        <span class="fd-button fd-button--transparent fd-calendar__my-item-button">
                             <span class="fd-calendar__text">2010 - 2020</span>
-                        </button>
+                        </span>
                     </td>
-                    <td role="gridcell" class="fd-calendar__my-item">
-                        <button class="fd-button fd-button--transparent fd-calendar__my-item-button" type="button">
+                    <td 
+                        role="gridcell"
+                        aria-selected="false"
+                        aria-disabled="false" 
+                        aria-label="Select Year Range 2021 - 2031"
+                        tabindex="-1" 
+                        class="fd-calendar__my-item">
+                        <span class="fd-button fd-button--transparent fd-calendar__my-item-button">
                             <span class="fd-calendar__text">2021 - 2031</span>
-                        </button>
+                        </span>
                     </td>
-                    <td role="gridcell" class="fd-calendar__my-item">
-                        <button class="fd-button fd-button--transparent fd-calendar__my-item-button" type="button">
+                    <td 
+                        role="gridcell"
+                        aria-selected="false"
+                        aria-disabled="false" 
+                        aria-label="Select Year Range 2032 - 2042"
+                        tabindex="-1" 
+                        class="fd-calendar__my-item">
+                        <span class="fd-button fd-button--transparent fd-calendar__my-item-button">
                             <span class="fd-calendar__text">2032 - 2042</span>
-                        </button>
+                        </span>
                     </td>
                 </tr>
-                <tr class="fd-calendar__row">
-                    <td role="gridcell" class="fd-calendar__my-item">
-                        <button class="fd-button fd-button--transparent fd-calendar__my-item-button" type="button">
+                <tr role="row" class="fd-calendar__row">
+                    <td 
+                        role="gridcell"
+                        aria-selected="false"
+                        aria-disabled="false" 
+                        aria-label="Select Year Range 2043 - 2053"
+                        tabindex="-1" 
+                        class="fd-calendar__my-item">
+                        <span class="fd-button fd-button--transparent fd-calendar__my-item-button">
                             <span class="fd-calendar__text">2043 - 2053</span>
-                        </button>
+                        </span>
                     </td>
-                    <td role="gridcell" class="fd-calendar__my-item">
-                        <button class="fd-button fd-button--transparent fd-calendar__my-item-button" type="button">
+                    <td 
+                        role="gridcell"
+                        aria-selected="false"
+                        aria-disabled="false" 
+                        aria-label="Select Year Range 2054 - 2064"
+                        tabindex="-1" 
+                        class="fd-calendar__my-item">
+                        <span class="fd-button fd-button--transparent fd-calendar__my-item-button">
                             <span class="fd-calendar__text">2054 - 2064</span>
-                        </button>
+                        </span>
                     </td>
-                    <td role="gridcell" class="fd-calendar__my-item">
-                        <button class="fd-button fd-button--transparent fd-calendar__my-item-button" type="button">
+                    <td 
+                        role="gridcell"
+                        aria-selected="false"
+                        aria-disabled="false" 
+                        aria-label="Select Year Range 2065- 2075"
+                        tabindex="-1" 
+                        class="fd-calendar__my-item">
+                        <span class="fd-button fd-button--transparent fd-calendar__my-item-button">
                             <span class="fd-calendar__text">2065- 2075</span>
-                        </button>
+                        </span>
                     </td>
                 </tr>
-                <tr class="fd-calendar__row">
-                    <td role="gridcell" class="fd-calendar__my-item">
-                        <button class="fd-button fd-button--transparent fd-calendar__my-item-button" type="button">
+                <tr role="row" class="fd-calendar__row">
+                    <td 
+                        role="gridcell"
+                        aria-selected="false"
+                        aria-disabled="false" 
+                        aria-label="Select Year Range 2076 - 2086"
+                        tabindex="-1" 
+                        class="fd-calendar__my-item">
+                        <span class="fd-button fd-button--transparent fd-calendar__my-item-button">
                             <span class="fd-calendar__text">2076 - 2086</span>
-                        </button>
+                        </span>
                     </td>
-                    <td role="gridcell" class="fd-calendar__my-item">
-                        <button class="fd-button fd-button--transparent fd-calendar__my-item-button" type="button">
+                    <td 
+                        role="gridcell"
+                        aria-selected="false"
+                        aria-disabled="false" 
+                        aria-label="Select Year Range 2087 - 2097"
+                        tabindex="-1" 
+                        class="fd-calendar__my-item">
+                        <span class="fd-button fd-button--transparent fd-calendar__my-item-button">
                             <span class="fd-calendar__text">2087 - 2097</span>
-                        </button>
+                        </span>
                     </td>
-                    <td role="gridcell" class="fd-calendar__my-item">
-                        <button class="fd-button fd-button--transparent fd-calendar__my-item-button" type="button">
+                    <td 
+                        role="gridcell"
+                        aria-selected="false"
+                        aria-disabled="false" 
+                        aria-label="Select Year Range 2098 - 2108"
+                        tabindex="-1" 
+                        class="fd-calendar__my-item">
+                        <span class="fd-button fd-button--transparent fd-calendar__my-item-button">
                             <span class="fd-calendar__text">2098 - 2108</span>
-                        </button>
+                        </span>
                     </td>
                 </tr>
-                <tr class="fd-calendar__row">
-                    <td role="gridcell" class="fd-calendar__my-item">
-                        <button class="fd-button fd-button--transparent fd-calendar__my-item-button" type="button">
+                <tr role="row" class="fd-calendar__row">
+                    <td 
+                        role="gridcell"
+                        aria-selected="false"
+                        aria-disabled="false" 
+                        aria-label="Select Year Range 2109 - 2119"
+                        tabindex="-1" 
+                        class="fd-calendar__my-item">
+                        <span class="fd-button fd-button--transparent fd-calendar__my-item-button">
                             <span class="fd-calendar__text">2109 - 2119</span>
-                        </button>
+                        </span>
                     </td>
-                    <td role="gridcell" class="fd-calendar__my-item">
-                        <button class="fd-button fd-button--transparent fd-calendar__my-item-button" type="button">
+                    <td 
+                        role="gridcell"
+                        aria-selected="false"
+                        aria-disabled="false" 
+                        aria-label="Select Year Range 2120 - 2130"
+                        tabindex="-1" 
+                        class="fd-calendar__my-item">
+                        <span class="fd-button fd-button--transparent fd-calendar__my-item-button">
                             <span class="fd-calendar__text">2120 - 2130</span>
-                        </button>
+                        </span>
                     </td>
-                    <td role="gridcell" class="fd-calendar__my-item">
-                        <button class="fd-button fd-button--transparent fd-calendar__my-item-button is-active" type="button">
+                    <td 
+                        role="gridcell"
+                        aria-selected="true"
+                        aria-disabled="false" 
+                        aria-label="Select Year Range 2131 - 2141"
+                        tabindex="-1" 
+                        class="fd-calendar__my-item">
+                        <span class="fd-button fd-button--transparent fd-calendar__my-item-button is-active">
                             <span class="fd-calendar__text">2131 - 2141</span>
-                        </button>
+                        </span>
                     </td>
                 </tr>
             </tbody>
@@ -219,120 +425,207 @@
 </div>
 
 <div style="display: flex; justify-content: space-around; flex-wrap: wrap;">
-    <section class="fd-calendar" style="margin-bottom: 1rem;">
+    <section class="fd-calendar" role="group" aria-roledescription="Calendar" style="margin-bottom: 1rem;">
         <header class="fd-calendar__navigation">
             <div class="fd-calendar__action fd-calendar__action--arrow-left">
-                <button type="button" class="fd-button fd-button--transparent" aria-label="Previous">
-                    <i class="sap-icon--slim-arrow-left"></i>
+                <button type="button" class="fd-button fd-button--transparent" aria-label="Previous" title="Previous">
+                    <i class="sap-icon--slim-arrow-left" role="presentation" aria-hidden="true"></i>
                 </button>
             </div>
             <div class="fd-calendar__action">
-                <button type="button" class="fd-button fd-button--transparent">2010 - 2097</button>
+                <button id="calendar-year-range-3" type="button" class="fd-button fd-button--transparent">2010 - 2097</button>
             </div>
             <div class="fd-calendar__action fd-calendar__action--arrow-right">
-                <button type="button" class="fd-button fd-button--transparent" aria-label="Next">
-                    <i class="sap-icon--slim-arrow-right"></i>
+                <button type="button" class="fd-button fd-button--transparent" aria-label="Next" title="Next">
+                    <i class="sap-icon--slim-arrow-right" role="presentation" aria-hidden="true"></i>
                 </button>
             </div>
         </header>
-        <table class="fd-calendar__content fd-calendar__content--years" id="57YUZ523" role="grid">
-            <tbody class="fd-calendar__group">
-                <tr class="fd-calendar__row">
-                    <td role="gridcell" class="fd-calendar__my-item">
-                        <button class="fd-button fd-button--transparent fd-calendar__my-item-button" type="button">
+        <table 
+            role="grid"
+            aria-readonly="false"
+            aria-multiselectable="false"
+            aria-roledescription="Year Picker"
+            aria-labelledby="calendar-year-range-3"
+            class="fd-calendar__content fd-calendar__content--years" 
+            id="57YUZ523">
+            <tbody class="fd-calendar__group" role="rowgroup">
+                <tr role="row" class="fd-calendar__row">
+                    <td 
+                        role="gridcell"
+                        aria-selected="false"
+                        aria-disabled="false" 
+                        aria-label="Select Year Range 2010 BC - 2020 BC"
+                        tabindex="-1"  
+                        class="fd-calendar__my-item">
+                        <span class="fd-button fd-button--transparent fd-calendar__my-item-button">
                             <span class="fd-calendar__text">2010 BC - 2020 BC</span>
-                        </button>
+                        </span>
                     </td>
-                    <td role="gridcell" class="fd-calendar__my-item">
-                        <button class="fd-button fd-button--transparent fd-calendar__my-item-button" type="button">
+                    <td 
+                        role="gridcell"
+                        aria-selected="false"
+                        aria-disabled="false" 
+                        aria-label="Select Year Range 2021 BC - 2031 BC"
+                        tabindex="-1"  
+                        class="fd-calendar__my-item">
+                        <span class="fd-button fd-button--transparent fd-calendar__my-item-button">
                             <span class="fd-calendar__text">2021 BC - 2031 BC</span>
-                        </button>
+                        </span>
                     </td>
                 </tr>
-                <tr class="fd-calendar__row">
-                    <td role="gridcell" class="fd-calendar__my-item">
-                        <button class="fd-button fd-button--transparent fd-calendar__my-item-button is-active" type="button">
+                <tr role="row" class="fd-calendar__row">
+                    <td 
+                        role="gridcell"
+                        aria-selected="true"
+                        aria-disabled="false" 
+                        aria-label="Select Year Range 2032 BC - 2042 BC"
+                        tabindex="-1"  
+                        class="fd-calendar__my-item">
+                        <span class="fd-button fd-button--transparent fd-calendar__my-item-button is-active">
                             <span class="fd-calendar__text">2032 BC - 2042 BC</span>
-                        </button>
+                        </span>
                     </td>
-                    <td role="gridcell" class="fd-calendar__my-item">
-                        <button class="fd-button fd-button--transparent fd-calendar__my-item-button" type="button">
+                    <td 
+                        role="gridcell"
+                        aria-selected="false"
+                        aria-disabled="false" 
+                        aria-label="Select Year Range 2043 BC - 2053 BC"
+                        tabindex="-1"  
+                        class="fd-calendar__my-item">
+                        <span class="fd-button fd-button--transparent fd-calendar__my-item-button">
                             <span class="fd-calendar__text">2043 BC - 2053 BC</span>
-                        </button>
+                        </span>
                     </td>
                 </tr>
-                <tr class="fd-calendar__row">
-                    <td role="gridcell" class="fd-calendar__my-item">
-                        <button class="fd-button fd-button--transparent fd-calendar__my-item-button" type="button">
+                <tr role="row" class="fd-calendar__row">
+                    <td 
+                        role="gridcell"
+                        aria-selected="false"
+                        aria-disabled="false" 
+                        aria-label="Select Year Range 2054 BC - 2064 BC"
+                        tabindex="-1"  
+                        class="fd-calendar__my-item">
+                        <span class="fd-button fd-button--transparent fd-calendar__my-item-button">
                             <span class="fd-calendar__text">2054 BC - 2064 BC</span>
-                        </button>
+                        </span>
                     </td>
-                    <td role="gridcell" class="fd-calendar__my-item">
-                        <button class="fd-button fd-button--transparent fd-calendar__my-item-button" type="button">
+                    <td 
+                        role="gridcell"
+                        aria-selected="false"
+                        aria-disabled="false" 
+                        aria-label="Select Year Range 2065 BC - 2075 BC"
+                        tabindex="-1"  
+                        class="fd-calendar__my-item">
+                        <span class="fd-button fd-button--transparent fd-calendar__my-item-button">
                             <span class="fd-calendar__text">2065 BC - 2075 BC</span>
-                        </button>
+                        </span>
                     </td>
                 </tr>
-                <tr class="fd-calendar__row">
-                    <td role="gridcell" class="fd-calendar__my-item">
-                        <button class="fd-button fd-button--transparent fd-calendar__my-item-button" type="button">
+                <tr role="row" class="fd-calendar__row">
+                    <td 
+                        role="gridcell"
+                        aria-selected="false"
+                        aria-disabled="false" 
+                        aria-label="Select Year Range 2076 BC - 2086 BC"
+                        tabindex="-1"  
+                        class="fd-calendar__my-item">
+                        <span class="fd-button fd-button--transparent fd-calendar__my-item-button">
                             <span class="fd-calendar__text">2076 BC - 2086 BC</span>
-                        </button>
+                        </span>
                     </td>
-                    <td role="gridcell" class="fd-calendar__my-item">
-                        <button class="fd-button fd-button--transparent fd-calendar__my-item-button" type="button">
+                    <td 
+                        role="gridcell"
+                        aria-selected="false"
+                        aria-disabled="false" 
+                        aria-label="Select Year Range 2087 BC - 2097 BC"
+                        tabindex="-1"  
+                        class="fd-calendar__my-item">
+                        <span class="fd-button fd-button--transparent fd-calendar__my-item-button">
                             <span class="fd-calendar__text">2087 BC - 2097 BC</span>
-                        </button>
+                        </span>
                     </td>
                 </tr>
             </tbody>
         </table>
         <div aria-live="polite" class="fd-calendar__content fd-calendar__content--screen-reader-only">Use arrow keys to navigate dates</div>
     </section>
-    <section class="fd-calendar" style="margin-bottom: 1rem;">
+
+    <section class="fd-calendar" role="group" aria-roledescription="Calendar" style="margin-bottom: 1rem;">
         <header class="fd-calendar__navigation">
             <div class="fd-calendar__action fd-calendar__action--arrow-left">
-                <button type="button" class="fd-button fd-button--transparent" aria-label="Previous">
-                    <i class="sap-icon--slim-arrow-left"></i>
+                <button type="button" class="fd-button fd-button--transparent" aria-label="Previous" title="Previous">
+                    <i class="sap-icon--slim-arrow-left" role="presentation" aria-hidden="true"></i>
                 </button>
             </div>
             <div class="fd-calendar__action">
-                <button type="button" class="fd-button fd-button--transparent">2010 - 2053</button>
+                <button id="calendar-year-range-4" type="button" class="fd-button fd-button--transparent">2010 - 2053</button>
             </div>
             <div class="fd-calendar__action fd-calendar__action--arrow-right">
-                <button type="button" class="fd-button fd-button--transparent" aria-label="Next">
-                    <i class="sap-icon--slim-arrow-right"></i>
+                <button type="button" class="fd-button fd-button--transparent" aria-label="Next" title="Next">
+                    <i class="sap-icon--slim-arrow-right" role="presentation" aria-hidden="true"></i>
                 </button>
             </div>
         </header>
-        <table class="fd-calendar__content fd-calendar__content--years " id="57YUZ524" role="grid">
-            <tbody class="fd-calendar__group">
-                <tr class="fd-calendar__row">
-                    <td role="gridcell" class="fd-calendar__my-item">
-                        <button class="fd-button fd-button--transparent fd-calendar__my-item-button" type="button">
+        <table 
+            role="grid"
+            aria-readonly="false"
+            aria-multiselectable="false"
+            aria-roledescription="Year Picker"
+            aria-labelledby="calendar-year-range-4"
+            class="fd-calendar__content fd-calendar__content--years" 
+            id="57YUZ524">
+            <tbody class="fd-calendar__group"role="rowgroup">
+                <tr role="row" class="fd-calendar__row">
+                    <td 
+                        role="gridcell"
+                        aria-selected="false"
+                        aria-disabled="false" 
+                        aria-label="Select Year Range 2010 Showa - 2020 Showa"
+                        tabindex="-1"  
+                        class="fd-calendar__my-item">
+                        <span class="fd-button fd-button--transparent fd-calendar__my-item-button">
                             <span class="fd-calendar__text">2010 Showa - 2020 Showa</span>
-                        </button>
+                        </span>
                     </td>
                 </tr>
-                <tr class="fd-calendar__row">
-                    <td role="gridcell" class="fd-calendar__my-item">
-                        <button class="fd-button fd-button--transparent fd-calendar__my-item-button is-active" type="button">
+                <tr role="row" class="fd-calendar__row">
+                    <td 
+                        role="gridcell"
+                        aria-selected="true"
+                        aria-disabled="false" 
+                        aria-label="Select Year Range 2021 Showa - 2031 Showa"
+                        tabindex="-1"  
+                        class="fd-calendar__my-item">
+                        <span class="fd-button fd-button--transparent fd-calendar__my-item-button is-active">
                             <span class="fd-calendar__text">2021 Showa - 2031 Showa</span>
-                        </button>
+                        </span>
                     </td>
                 </tr>
-                <tr class="fd-calendar__row is-active">
-                    <td role="gridcell" class="fd-calendar__my-item">
-                        <button class="fd-button fd-button--transparent fd-calendar__my-item-button" type="button">
+                <tr role="row" class="fd-calendar__row is-active">
+                    <td 
+                        role="gridcell"
+                        aria-selected="false"
+                        aria-disabled="false" 
+                        aria-label="Select Year Range 2032 Showa - 2042 Showa"
+                        tabindex="-1"  
+                        class="fd-calendar__my-item">
+                        <span class="fd-button fd-button--transparent fd-calendar__my-item-button">
                             <span class="fd-calendar__text">2032 Showa - 2042 Showa</span>
-                        </button>
+                        </span>
                     </td>
                 </tr>
-                <tr class="fd-calendar__row">
-                    <td role="gridcell" class="fd-calendar__my-item">
-                        <button class="fd-button fd-button--transparent fd-calendar__my-item-button" type="button">
+                <tr role="row" class="fd-calendar__row">
+                    <td 
+                        role="gridcell"
+                        aria-selected="false"
+                        aria-disabled="false" 
+                        aria-label="Select Year Range 2043 Showa - 2053 Showa"
+                        tabindex="-1"  
+                        class="fd-calendar__my-item">
+                        <span class="fd-button fd-button--transparent fd-calendar__my-item-button">
                             <span class="fd-calendar__text">2043 Showa - 2053 Showa</span>
-                        </button>
+                        </span>
                     </td>
                 </tr>
             </tbody>
