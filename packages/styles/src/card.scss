@@ -314,6 +314,10 @@ $legend-background-colors: (
         @include fake-card-outline();
       }
     }
+
+    &--with-border {
+      box-shadow: var(--sapContent_HeaderShadow);
+    }
   }
 
   &__header-main {
@@ -331,6 +335,10 @@ $legend-background-colors: (
     border-radius: var(--fdCard_Main_Header_Border_Radius);
     border-bottom: var(--fdCard_Main_Header_Border_Bottom);
     border-top: var(--fdCard_Main_Header_Border_Top);
+
+    &--with-border {
+      box-shadow: var(--sapContent_HeaderShadow);
+    }
   }
 
   &__header-main-container {
@@ -344,6 +352,7 @@ $legend-background-colors: (
 
     width: 100%;
     height: fit-content;
+    min-height: 3rem;
   }
 
   &__header-main-actions {
@@ -798,7 +807,6 @@ $legend-background-colors: (
     border-radius: var(--fdCard_Media_Border_Radius);
     overflow: hidden;
     position: relative;
-    height: 100%;
 
     &.#{$block}__media--with-padding {
       --fdCard_Media_Image_Radius: 0.5rem;

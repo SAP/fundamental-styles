@@ -54,6 +54,34 @@ Card sizes vary depending on the layout, and they are not editable. A card can f
     
 - <b>footer</b> (optional): the footer displays a list of actions that can be performed on the card. When link is too long, or there is no more place for actions, overflow button should appear.
 
+##Accessibility
+Use the <code>listitem</code> role for cards when nested interactivity is needed—such as when a card is clickable and contains interactive elements like buttons or links inside. <br>
+The <code>listitem</code> role supports all card types:
+
+<ol>
+    <li>No interactivity</li>
+    <li>Non-interactive card with interactive elements inside</li>
+    <li>
+      <ul>
+        <li>Interactive card</li>
+        <li>Interactive card with interactive elements</li>
+      </ul>
+    </li>
+</ol>
+
+Note: Cards with the listitem role must be inside a parent element with <code>role="list"</code> — even if there's only one card.<br>
+
+<b>Important:</b>The product where the card is hosted decides on the role assignment of the card container and card. To assure all 4 interactive variants are supported, the container must be of <code>role="list"</code>, and the card of <code>role="listitem"</code>.
+
+Use <code>aria-description</code> or <code>aria-describedby</code> to provide key details about the card for screen reader users:
+
+<ul>
+    <li>Card Type: Describe what the card represents (e.g., list, calendar, to-do).</li>
+    <li>Interactivity: State if the card is interactive or active.</li>
+    <li>How to Interact: Include instructions like 'Press Enter to activate.'</li>
+    <li>Badges and Indicators: Explain any labels or icons (e.g., “New item added”) to improve clarity and accessibility.</li>
+</ul>
+
 `,
     tags: ['development']
   }
@@ -64,10 +92,7 @@ CardNonInteractive.storyName = 'Non-interactive card';
 CardNonInteractive.parameters = {
   docs: {
    description: {
-      story: `Non-interactive cards have <code>role="region"</code>. In this case the card can be placed in any container. This role covers the interactive variants:
-- no interactivity
-- no interactivity with interactive elements inside (including interactive header).
-`
+      story: `A non-interactive card can have either a non-interactive or interactive header. A non-interactive header may still contain interactive elements, such as buttons.`
     }
   }
 };
