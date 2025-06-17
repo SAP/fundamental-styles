@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.41.0-rc.16](https://github.com/SAP/fundamental-styles/compare/v0.41.0-rc.15...v0.41.0-rc.16) (2025-06-17)
+
+### Bug Fixes
+
+- **styles:** add new modifer classes for Illustrated messages [ci visual] ([#6093](https://github.com/SAP/fundamental-styles/issues/6093)) ([802d362](https://github.com/SAP/fundamental-styles/commit/802d36205f226c0d85d2940159ce3802aa95066e))
+
 # [0.41.0-rc.15](https://github.com/SAP/fundamental-styles/compare/v0.41.0-rc.14...v0.41.0-rc.15) (2025-06-17)
 
 ### Bug Fixes
