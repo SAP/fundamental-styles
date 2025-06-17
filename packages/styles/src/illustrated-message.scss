@@ -41,7 +41,7 @@ $block: #{$fd-namespace}-illustrated-message;
   --textMinWidth: auto;
   --textMarginBottom: 0.5rem;
 
-  @mixin fd-illustarted-messages-dialog() {
+  @mixin fd-illustarted-messages-medium() {
     // Illustration
     --illustrationMinWidth: 10rem;
     --illustrationMinHeight: 10rem;
@@ -60,7 +60,7 @@ $block: #{$fd-namespace}-illustrated-message;
     --actionsMarginBlock: 0.5rem 1rem;
   }
 
-  @mixin fd-illustarted-messages-spot() {
+  @mixin fd-illustarted-messages-small() {
     // Block
     --illustratedMessagePadding: 0.5rem;
 
@@ -82,10 +82,11 @@ $block: #{$fd-namespace}-illustrated-message;
     --actionsMarginBlock: 0.5rem;
   }
 
-  @mixin fd-illustarted-messages-dot() {
+  @mixin fd-illustarted-messages-xsmall() {
     // Block
     --illustratedMessagePadding: 0.25rem;
     --containerFlexDirection: row;
+    --containerFlexAlignment: flex-start;
 
     // Illustration
     --illustrationMinWidth: 2.8125rem;
@@ -142,7 +143,6 @@ $block: #{$fd-namespace}-illustrated-message;
   }
 
   width: 100%;
-  min-height: 100%;
   text-align: center;
   max-width: var(--illustratedMessageMaxWidth);
   padding-block: var(--illustratedMessagePadding);
@@ -162,7 +162,7 @@ $block: #{$fd-namespace}-illustrated-message;
     @include fd-reset();
 
     @include fd-flex() {
-      align-items: center;
+      align-items: var(--containerFlexAlignment, center);
       flex-direction: var(--containerFlexDirection);
     };
   }
@@ -224,16 +224,19 @@ $block: #{$fd-namespace}-illustrated-message;
     padding-inline: var(--actionsPaddingInlineStart) var(--actionsPaddingInlineEnd);
   }
 
-  &--dialog {
-    @include fd-illustarted-messages-dialog();
+  &--dialog,
+  &--medium {
+    @include fd-illustarted-messages-medium();
   }
 
-  &--spot {
-    @include fd-illustarted-messages-spot();
+  &--spot,
+  &--small {
+    @include fd-illustarted-messages-small();
   }
 
-  &--dot {
-    @include fd-illustarted-messages-dot();
+  &--dot,
+  &--xsmall {
+    @include fd-illustarted-messages-xsmall();
   }
 
   &--base {
@@ -241,15 +244,15 @@ $block: #{$fd-namespace}-illustrated-message;
   }
 
   @container (width <= 681px) {
-    @include fd-illustarted-messages-dialog();
+    @include fd-illustarted-messages-medium();
   }
 
   @container (width <= 360px) {
-    @include fd-illustarted-messages-spot();
+    @include fd-illustarted-messages-small();
   }
 
   @container (width <= 260px) {
-    @include fd-illustarted-messages-dot();
+    @include fd-illustarted-messages-xsmall();
   }
   
   @container (width <= 160px) {
