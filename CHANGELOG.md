@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.41.0-rc.15](https://github.com/SAP/fundamental-styles/compare/v0.41.0-rc.14...v0.41.0-rc.15) (2025-06-17)
+
+### Bug Fixes
+
+- **styles:** add fix for missing btn focus in input group [ci visual] ([#6092](https://github.com/SAP/fundamental-styles/issues/6092)) ([e7b19ce](https://github.com/SAP/fundamental-styles/commit/e7b19ce95ba203891075e44bd49597644e24c002))
+
 # [0.41.0-rc.14](https://github.com/SAP/fundamental-styles/compare/v0.41.0-rc.13...v0.41.0-rc.14) (2025-06-10)
 
 ### Bug Fixes
@@ -6173,9 +6179,9 @@ Co-authored-by: droshev <mladen.droshev@sap.com>
 
 - added a new modifier class to fd-row to achieve even alignment of its elements:fd-row--top in a form.
   Before:
-  <div class="fd-row">
-  After:
-  <div class="fd-row fd-row--top">
+    <div class="fd-row">
+    After:
+    <div class="fd-row fd-row--top">
 
 ### Bug Fixes
 
