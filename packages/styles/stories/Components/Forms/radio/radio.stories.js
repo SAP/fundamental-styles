@@ -12,18 +12,18 @@ export default {
     description: `
 Radio buttons provide users with a set of mutually exclusive options. They allow a user to select only one option from two or more choices. Each option is represented by a radio button. Consequently, radio buttons only work in groups.
 
-Use the radio button if:
+<b>Use the radio button if:</b>
 
 - You need to help users choose quickly between at least two clearly different choices.
 
-Do not use the radio button if:
+<b>Do not use the radio button if:</b>
 
 - You need to offer the user the option of multiple selection. In this case, use checkboxes instead because radio buttons are for single-selection contexts only.
 - You need to present more than 8 options. Use a dropdown box or list view.
-In special cases, there are only two mutually exclusive options. Combine them into a single checkbox or switch. For example, use a checkbox for “I agree” (for example, to terms and conditions) instead of two radio buttons for “I agree” and “I don’t agree”.
+In special cases, there are only two mutually exclusive options. Combine them into a single checkbox or switch. For example, use a checkbox for “I agree” (for example, to terms and conditions) instead of two radio buttons for “I agree” and “I don't agree”.
 - The options are numbers with fixed steps. Use a slider control.
 `,
-    tags: ['f3', 'a11y', 'theme']
+    tags: []
   }
 };
 export const Primary = () => primaryExampleHtml;
