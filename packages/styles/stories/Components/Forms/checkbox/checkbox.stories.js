@@ -57,63 +57,63 @@ ${localStyles}
             <input type="checkbox" class="fd-checkbox" id="Ai4ez611">
             <label class="fd-checkbox__label" for="Ai4ez611">
                 <span class="fd-checkbox__checkmark" aria-hidden="true"></span>
-                <div class="fd-checkbox__label-container">
+                <span class="fd-checkbox__label-container">
                     <span class="fd-checkbox__text">Normal State</span>
-                </div>
+                </span>
             </label>
         </div>
         <div class="fd-form-item">
             <input type="checkbox" class="fd-checkbox" id="Ai4ez611hov">
             <label class="fd-checkbox__label is-hover" for="Ai4ez611hov">
                 <span class="fd-checkbox__checkmark" aria-hidden="true"></span>
-                <div class="fd-checkbox__label-container">
+                <span class="fd-checkbox__label-container">
                     <span class="fd-checkbox__text">Hover State</span>
-                </div>
+                </span>
             </label>
         </div>
         <div class="fd-form-item">
             <input type="checkbox" class="fd-checkbox" id="Ai4ez612" checked>
             <label class="fd-checkbox__label" for="Ai4ez612">
                 <span class="fd-checkbox__checkmark" aria-hidden="true"></span>
-                <div class="fd-checkbox__label-container">
+                <span class="fd-checkbox__label-container">
                     <span class="fd-checkbox__text">Selected/Checked State</span>
-                </div>
+                </span>
             </label>
         </div>
         <div class="fd-form-item">
-            <input type="checkbox" class="fd-checkbox" id="Ai4ez622" disabled>
+            <input type="checkbox" class="fd-checkbox" id="Ai4ez622" disabled aria-disabled="true">
             <label class="fd-checkbox__label" for="Ai4ez622">
                 <span class="fd-checkbox__checkmark" aria-hidden="true"></span>
-                <div class="fd-checkbox__label-container">
+                <span class="fd-checkbox__label-container">
                     <span class="fd-checkbox__text">Disabled State</span>
-                </div>
+                </span>
             </label>
         </div>
         <div class="fd-form-item">
-            <input type="checkbox" class="fd-checkbox" id="Ai4ez632" checked disabled>
+            <input type="checkbox" class="fd-checkbox" id="Ai4ez632" checked disabled aria-disabled="true">
             <label class="fd-checkbox__label" for="Ai4ez632">
                 <span class="fd-checkbox__checkmark" aria-hidden="true"></span>
-                <div class="fd-checkbox__label-container">
+                <span class="fd-checkbox__label-container">
                     <span class="fd-checkbox__text">Selected/Checked Disabled State</span>
-                </div>
+                </span>
             </label>
         </div>
         <div class="fd-form-item">
             <input type="checkbox" class="fd-checkbox" id="Ai4ez613">
             <label class="fd-checkbox__label" for="Ai4ez613">
                 <span class="fd-checkbox__checkmark" aria-hidden="true"></span>
-                <div class="fd-checkbox__label-container">
+                <span class="fd-checkbox__label-container">
                     <span class="fd-checkbox__text">Tri-State</span>
-                </div>
+                </span>
             </label>
         </div>
         <div class="fd-form-item">
-            <input type="checkbox" class="fd-checkbox" id="Ai4ez643" disabled>
+            <input type="checkbox" class="fd-checkbox" id="Ai4ez643" disabled aria-disabled="true">
             <label class="fd-checkbox__label" for="Ai4ez643">
                 <span class="fd-checkbox__checkmark" aria-hidden="true"></span>
-                <div class="fd-checkbox__label-container">
+                <span class="fd-checkbox__label-container">
                     <span class="fd-checkbox__text">Tri-State Disabled</span>
-                </div>
+                </span>
             </label>
         </div>
     </div>
@@ -140,36 +140,36 @@ ${localStyles}
                 <input type="checkbox" class="fd-checkbox is-error" id="Ai4ez6119">
                 <label class="fd-checkbox__label" for="Ai4ez6119">
                     <span class="fd-checkbox__checkmark" aria-hidden="true"></span>
-                    <div class="fd-checkbox__label-container">
+                    <span class="fd-checkbox__label-container">
                         <span class="fd-checkbox__text">Error Regular Stat</span>
-                    </div>
+                    </span>
                 </label>
             </div>
             <div class="fd-form-item">
                 <input type="checkbox" class="fd-checkbox is-error" id="Ai4ez6119hov">
                 <label class="fd-checkbox__label is-hover" for="Ai4ez6119hov">
                     <span class="fd-checkbox__checkmark" aria-hidden="true"></span>
-                    <div class="fd-checkbox__label-container">
+                    <span class="fd-checkbox__label-container">
                         <span class="fd-checkbox__text">Error Hover Stat</span>
-                    </div>
+                    </span>
                 </label>
             </div>
             <div class="fd-form-item">
                 <input type="checkbox" class="fd-checkbox is-error" id="Ai4ez6129" checked>
                 <label class="fd-checkbox__label" for="Ai4ez6129">
                     <span class="fd-checkbox__checkmark" aria-hidden="true"></span>
-                    <div class="fd-checkbox__label-container">
+                    <span class="fd-checkbox__label-container">
                         <span class="fd-checkbox__text">Error Selected State</span>
-                    </div>
+                    </span>
                 </label>
             </div>
             <div class="fd-form-item">
                 <input type="checkbox" class="fd-checkbox is-error" id="Ai4ez613i1">
                 <label class="fd-checkbox__label" for="Ai4ez613i1">
                     <span class="fd-checkbox__checkmark" aria-hidden="true"></span>
-                    <div class="fd-checkbox__label-container">
+                    <span class="fd-checkbox__label-container">
                         <span class="fd-checkbox__text">Error Tri-State</span>
-                    </div>
+                    </span>
                 </label>
             </div>
         </div>
@@ -182,36 +182,36 @@ ${localStyles}
                 <input type="checkbox" class="fd-checkbox is-success" id="Ai4ez61192">
                 <label class="fd-checkbox__label" for="Ai4ez61192">
                     <span class="fd-checkbox__checkmark" aria-hidden="true"></span>
-                    <div class="fd-checkbox__label-container">
+                    <span class="fd-checkbox__label-container">
                         <span class="fd-checkbox__text">Success Regular State</span>
-                    </div>
+                    </span>
                 </label>
             </div>
             <div class="fd-form-item">
                 <input type="checkbox" class="fd-checkbox is-success" id="Ai4ez61192hov">
                 <label class="fd-checkbox__label is-hover" for="Ai4ez61192hov">
                     <span class="fd-checkbox__checkmark" aria-hidden="true"></span>
-                    <div class="fd-checkbox__label-container">
+                    <span class="fd-checkbox__label-container">
                         <span class="fd-checkbox__text">Success Hover State</span>
-                    </div>
+                    </span>
                 </label>
             </div>
             <div class="fd-form-item">
                 <input type="checkbox" class="fd-checkbox is-success" id="Ai4ez61292" checked>
                 <label class="fd-checkbox__label" for="Ai4ez61292">
                     <span class="fd-checkbox__checkmark" aria-hidden="true"></span>
-                    <div class="fd-checkbox__label-container">
+                    <span class="fd-checkbox__label-container">
                         <span class="fd-checkbox__text">Success Selected State</span>
-                    </div>
+                    </span>
                 </label>
             </div>
             <div class="fd-form-item">
                 <input type="checkbox" class="fd-checkbox is-success" id="Ai4ez613i2">
                 <label class="fd-checkbox__label" for="Ai4ez613i2">
                     <span class="fd-checkbox__checkmark" aria-hidden="true"></span>
-                    <div class="fd-checkbox__label-container">
+                    <span class="fd-checkbox__label-container">
                         <span class="fd-checkbox__text">Success Tri-State</span>
-                    </div>
+                    </span>
                 </label>
             </div>
         </div>
@@ -224,36 +224,36 @@ ${localStyles}
                 <input type="checkbox" class="fd-checkbox is-warning" id="Ai4ez61193">
                 <label class="fd-checkbox__label" for="Ai4ez61193">
                     <span class="fd-checkbox__checkmark" aria-hidden="true"></span>
-                    <div class="fd-checkbox__label-container">
+                    <span class="fd-checkbox__label-container">
                         <span class="fd-checkbox__text">Warning Regular State</span>
-                    </div>
+                    </span>
                 </label>
             </div>
             <div class="fd-form-item">
                 <input type="checkbox" class="fd-checkbox is-warning" id="Ai4ez61193hov">
                 <label class="fd-checkbox__label is-hover" for="Ai4ez61193hov">
                     <span class="fd-checkbox__checkmark" aria-hidden="true"></span>
-                    <div class="fd-checkbox__label-container">
+                    <span class="fd-checkbox__label-container">
                         <span class="fd-checkbox__text">Warning Hover State</span>
-                    </div>
+                    </span>
                 </label>
             </div>
             <div class="fd-form-item">
                 <input type="checkbox" class="fd-checkbox is-warning" id="Ai4ez61293" checked>
                 <label class="fd-checkbox__label" for="Ai4ez61293">
                     <span class="fd-checkbox__checkmark" aria-hidden="true"></span>
-                    <div class="fd-checkbox__label-container">
+                    <span class="fd-checkbox__label-container">
                         <span class="fd-checkbox__text">Warning Selected State</span>
-                    </div>
+                    </span>
                 </label>
             </div>
             <div class="fd-form-item">
                 <input type="checkbox" class="fd-checkbox is-warning" id="Ai4ez613i3">
                 <label class="fd-checkbox__label" for="Ai4ez613i3">
                     <span class="fd-checkbox__checkmark" aria-hidden="true"></span>
-                    <div class="fd-checkbox__label-container">
+                    <span class="fd-checkbox__label-container">
                         <span class="fd-checkbox__text">Warning Tri-State</span>
-                    </div>
+                    </span>
                 </label>
             </div>
         </div>
@@ -266,36 +266,36 @@ ${localStyles}
                 <input type="checkbox" class="fd-checkbox is-information" id="Ai4ez61194">
                 <label class="fd-checkbox__label" for="Ai4ez61194">
                     <span class="fd-checkbox__checkmark" aria-hidden="true"></span>
-                    <div class="fd-checkbox__label-container">
+                    <span class="fd-checkbox__label-container">
                         <span class="fd-checkbox__text">Information Regular State</span>
-                    </div>
+                    </span>
                 </label>
             </div>
             <div class="fd-form-item">
                 <input type="checkbox" class="fd-checkbox is-information" id="Ai4ez61194hov">
                 <label class="fd-checkbox__label is-hover" for="Ai4ez61194hov">
                     <span class="fd-checkbox__checkmark" aria-hidden="true"></span>
-                    <div class="fd-checkbox__label-container">
+                    <span class="fd-checkbox__label-container">
                         <span class="fd-checkbox__text">Information Hover State</span>
-                    </div>
+                    </span>
                 </label>
             </div>
             <div class="fd-form-item">
                 <input type="checkbox" class="fd-checkbox is-information" id="Ai4ez61294" checked>
                 <label class="fd-checkbox__label" for="Ai4ez61294">
                     <span class="fd-checkbox__checkmark" aria-hidden="true"></span>
-                    <div class="fd-checkbox__label-container">
+                    <span class="fd-checkbox__label-container">
                         <span class="fd-checkbox__text">Information Checked State</span>
-                    </div>
+                    </span>
                 </label>
             </div>
             <div class="fd-form-item">
                 <input type="checkbox" class="fd-checkbox is-information" id="Ai4ez613i4">
                 <label class="fd-checkbox__label" for="Ai4ez613i4">
                     <span class="fd-checkbox__checkmark" aria-hidden="true"></span>
-                    <div class="fd-checkbox__label-container">
+                    <span class="fd-checkbox__label-container">
                         <span class="fd-checkbox__text">Information Tri-State</span>
-                    </div>
+                    </span>
                 </label>
             </div>
         </div>
@@ -305,30 +305,30 @@ ${localStyles}
         <legend class="fd-fieldset__legend">Disabled checkboxes</legend>
         <div class="fd-form-group">
             <div class="fd-form-item">
-                <input type="checkbox" class="fd-checkbox" id="Ai4ez61196" disabled>
+                <input type="checkbox" class="fd-checkbox" id="Ai4ez61196" disabled aria-disabled="true">
                 <label class="fd-checkbox__label" for="Ai4ez61196">
                     <span class="fd-checkbox__checkmark" aria-hidden="true"></span>
-                    <div class="fd-checkbox__label-container">
+                    <span class="fd-checkbox__label-container">
                         <span class="fd-checkbox__text">Text Option</span>
-                    </div>
+                    </span>
                 </label>
             </div>
             <div class="fd-form-item">
-                <input type="checkbox" class="fd-checkbox" id="Ai4ez61296" checked disabled>
+                <input type="checkbox" class="fd-checkbox" id="Ai4ez61296" checked disabled aria-disabled="true">
                 <label class="fd-checkbox__label" for="Ai4ez61296">
                     <span class="fd-checkbox__checkmark" aria-hidden="true"></span>
-                    <div class="fd-checkbox__label-container">
+                    <span class="fd-checkbox__label-container">
                         <span class="fd-checkbox__text">Selected State</span>
-                    </div>
+                    </span>
                 </label>
             </div>
             <div class="fd-form-item">
-                <input type="checkbox" class="fd-checkbox" id="Ai4ez613i6" disabled>
+                <input type="checkbox" class="fd-checkbox" id="Ai4ez613i6" disabled aria-disabled="true">
                 <label class="fd-checkbox__label" for="Ai4ez613i6">
                     <span class="fd-checkbox__checkmark" aria-hidden="true"></span>
-                    <div class="fd-checkbox__label-container">
+                    <span class="fd-checkbox__label-container">
                         <span class="fd-checkbox__text">TriState Text</span>
-                    </div>
+                    </span>
                 </label>
             </div>
         </div>
@@ -338,39 +338,39 @@ ${localStyles}
         <legend class="fd-fieldset__legend">Readonly checkboxes</legend>
         <div class="fd-form-group">
             <div class="fd-form-item">
-                <input type="checkbox" class="fd-checkbox" id="Ai4ez611967" readonly>
+                <input type="checkbox" class="fd-checkbox is-readonly" id="Ai4ez611967" aria-readonly="true" aria-description="This checkbox is read-only and cannot be changed." onclick="return false;">
                 <label class="fd-checkbox__label" for="Ai4ez611967">
                     <span class="fd-checkbox__checkmark" aria-hidden="true"></span>
-                    <div class="fd-checkbox__label-container">
+                    <span class="fd-checkbox__label-container">
                         <span class="fd-checkbox__text">Read Only Regular State</span>
-                    </div>
+                    </span>
                 </label>
             </div>
             <div class="fd-form-item">
-                <input type="checkbox" class="fd-checkbox" id="Ai4ez611967hov" readonly>
+                <input type="checkbox" class="fd-checkbox is-readonly" id="Ai4ez611967hov" aria-readonly="true" aria-description="This checkbox is read-only and cannot be changed." onclick="return false;">
                 <label class="fd-checkbox__label is-hover" for="Ai4ez611967hov">
                     <span class="fd-checkbox__checkmark" aria-hidden="true"></span>
-                    <div class="fd-checkbox__label-container">
+                    <span class="fd-checkbox__label-container">
                         <span class="fd-checkbox__text">Read Only Hover State</span>
-                    </div>
+                    </span>
                 </label>
             </div>
             <div class="fd-form-item">
-                <input type="checkbox" class="fd-checkbox" id="Ai4ez61296cc" checked readonly>
+                <input type="checkbox" class="fd-checkbox is-readonly" id="Ai4ez61296cc" checked aria-readonly="true" aria-description="This checkbox is read-only and cannot be changed." onclick="return false;">
                 <label class="fd-checkbox__label" for="Ai4ez61296cc">
                     <span class="fd-checkbox__checkmark" aria-hidden="true"></span>
-                    <div class="fd-checkbox__label-container">
+                    <span class="fd-checkbox__label-container">
                         <span class="fd-checkbox__text">Read Only Checked State</span>
-                    </div>
+                    </span>
                 </label>
             </div>
             <div class="fd-form-item">
-                <input type="checkbox" class="fd-checkbox" id="Ai4ez613i6cc" readonly>
+                <input type="checkbox" class="fd-checkbox is-readonly" id="Ai4ez613i6cc" aria-readonly="true" aria-description="This checkbox is read-only and cannot be changed." onclick="return false;">
                 <label class="fd-checkbox__label" for="Ai4ez613i6cc">
                     <span class="fd-checkbox__checkmark" aria-hidden="true"></span>
-                    <div class="fd-checkbox__label-container">
+                    <span class="fd-checkbox__label-container">
                         <span class="fd-checkbox__text">Read Only Tri-State</span>
-                    </div>
+                    </span>
                 </label>
             </div>
         </div>
@@ -402,27 +402,27 @@ ${localStyles}
             <input type="checkbox" class="fd-checkbox" id="Ai4ez611lw">
             <label class="fd-checkbox__label" for="Ai4ez611lw" style="max-width: 400px;">
                 <span class="fd-checkbox__checkmark" aria-hidden="true"></span>
-                <div class="fd-checkbox__label-container">
+                <span class="fd-checkbox__label-container">
                     <span class="fd-checkbox__text">Apple ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </span>
-                </div>
+                </span>
             </label>
         </div>
         <div class="fd-form-item">
             <input type="checkbox" class="fd-checkbox" id="Ai4ez612lw" checked>
             <label class="fd-checkbox__label fd-checkbox__label--wrap" for="Ai4ez612lw" style="max-width: 400px;">
                 <span class="fd-checkbox__checkmark" aria-hidden="true"></span>
-                <div class="fd-checkbox__label-container">
+                <span class="fd-checkbox__label-container">
                     <span class="fd-checkbox__text">Banana ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</span>
-                </div>
+                </span>
             </label>
         </div>
         <div class="fd-form-item">
             <input type="checkbox" class="fd-checkbox" id="Ai4ez612lwtop" checked>
             <label class="fd-checkbox__label fd-checkbox__label--wrap-top-aligned" for="Ai4ez612lwtop" style="max-width: 400px;">
                 <span class="fd-checkbox__checkmark" aria-hidden="true"></span>
-                <div class="fd-checkbox__label-container">
+                <span class="fd-checkbox__label-container">
                     <span class="fd-checkbox__text">Banana ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</span>
-                </div>
+                </span>
             </label>
         </div>
     </div>
@@ -443,30 +443,30 @@ ${localStyles}
     <legend class="fd-fieldset__legend">Display Only</legend>
     <div class="fd-form-group">
         <div class="fd-form-item">
-            <input type="checkbox" class="fd-checkbox is-display" id="Ai4ez611lwdo">
+            <input type="checkbox" class="fd-checkbox is-display" id="Ai4ez611lwdo" aria-description="This checkbox is in display only mode.">
             <label class="fd-checkbox__label" for="Ai4ez611lwdo" style="max-width: 400px;">
                 <span class="fd-checkbox__checkmark" aria-hidden="true"></span>
-                <div class="fd-checkbox__label-container">
+                <span class="fd-checkbox__label-container">
                     <span class="fd-checkbox__text">Unchecked Icon</span>
-                </div>
+                </span>
             </label>
         </div>
         <div class="fd-form-item">
-            <input type="checkbox" class="fd-checkbox is-display" id="Ai4ez612lwdo" checked>
+            <input type="checkbox" class="fd-checkbox is-display" id="Ai4ez612lwdo" checked aria-description="This checkbox is in display only mode.">
             <label class="fd-checkbox__label" for="Ai4ez612lwdo" style="max-width: 400px;">
                 <span class="fd-checkbox__checkmark" aria-hidden="true"></span>
-                <div class="fd-checkbox__label-container">
+                <span class="fd-checkbox__label-container">
                     <span class="fd-checkbox__text">Checked Icon</span>
-                </div>
+                </span>
             </label>
         </div>
         <div class="fd-form-item">
-            <input type="checkbox" class="fd-checkbox is-display" id="Ai4ez614ldo">
+            <input type="checkbox" class="fd-checkbox is-display" id="Ai4ez614ldo" aria-description="This checkbox is in display only mode.">
             <label class="fd-checkbox__label" for="Ai4ez614ldo" style="max-width: 400px;">
                 <span class="fd-checkbox__checkmark" aria-hidden="true"></span>
-                <div class="fd-checkbox__label-container">
+                <span class="fd-checkbox__label-container">
                     <span class="fd-checkbox__text">Tri-state</span>
-                </div>
+                </span>
             </label>
         </div>
     </div>
