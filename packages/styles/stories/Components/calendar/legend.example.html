@@ -1,149 +1,375 @@
 <div style="display: flex; justify-content: space-around;">
     <div style="display: flex; gap: 3rem; align-items: flex-start;">
-        <div class="fd-calendar-legend" style="min-width: 420px;">
-            <div class="fd-calendar-legend__item fd-calendar-legend__item--today">
+        <div 
+            role="list"
+            aria-label="Calendar Legend"
+            aria-owns="item-1 item-2 item-3 item-4 item-5 item-6 item-7"
+            class="fd-calendar-legend" style="min-width: 420px;">
+            <div 
+                id="item-1"
+                role="listitem"
+                aria-posinset="1"
+                aria-setsize="7"
+                tabindex="-1"
+                class="fd-calendar-legend__item fd-calendar-legend__item--today">
                 <div class="fd-calendar-legend__marker"></div>
                 <div class="fd-calendar-legend__text">Today</div>
             </div>
-            <div class="fd-calendar-legend__item fd-calendar-legend__item--selected">
+            <div 
+                id="item-2"
+                role="listitem"
+                aria-posinset="2"
+                aria-setsize="7"
+                tabindex="-1"
+                class="fd-calendar-legend__item fd-calendar-legend__item--selected">
                 <div class="fd-calendar-legend__marker"></div>
                 <div class="fd-calendar-legend__text">Selected</div>
             </div>
-            <div class="fd-calendar-legend__item fd-calendar-legend__item--work">
+            <div 
+                id="item-3"
+                role="listitem"
+                aria-posinset="3"
+                aria-setsize="7"
+                tabindex="-1"
+                class="fd-calendar-legend__item fd-calendar-legend__item--work">
                 <div class="fd-calendar-legend__marker"></div>
                 <div class="fd-calendar-legend__text">Work Day</div>
             </div>
-            <div class="fd-calendar-legend__item fd-calendar-legend__item--non-work">
+            <div 
+                id="item-4"
+                role="listitem"
+                aria-posinset="4"
+                aria-setsize="7"
+                tabindex="-1"
+                class="fd-calendar-legend__item fd-calendar-legend__item--non-work">
                 <div class="fd-calendar-legend__marker"></div>
                 <div class="fd-calendar-legend__text">Non-Work Day</div>
             </div>
-            <div class="fd-calendar-legend__item fd-calendar-legend__item--placeholder-1">
+            <div    
+                id="item-5"
+                role="listitem"
+                aria-posinset="5"
+                aria-setsize="7"
+                tabindex="-1"
+                class="fd-calendar-legend__item fd-calendar-legend__item--placeholder-1">
                 <div class="fd-calendar-legend__marker"></div>
                 <div class="fd-calendar-legend__text">Holiday</div>
             </div>
-            <div class="fd-calendar-legend__item fd-calendar-legend__item--placeholder-2">
+            <div 
+                id="item-6"
+                role="listitem"
+                aria-posinset="6"
+                aria-setsize="7"
+                tabindex="-1"
+                class="fd-calendar-legend__item fd-calendar-legend__item--placeholder-2">
                 <div class="fd-calendar-legend__marker"></div>
                 <div class="fd-calendar-legend__text">School Vacation</div>
             </div>
-            <div class="fd-calendar-legend__item fd-calendar-legend__item--placeholder-3 is-focus">
+            <div 
+                id="item-7"
+                role="listitem"
+                aria-posinset="7"
+                aria-setsize="7"
+                tabindex="-1"
+                class="fd-calendar-legend__item fd-calendar-legend__item--placeholder-3 is-focus">
                 <div class="fd-calendar-legend__marker"></div>
                 <div class="fd-calendar-legend__text">Wedding</div>
             </div>
         </div>
 
-        <div class="fd-calendar-legend fd-calendar-legend--auto-column" style="max-width: 320px;">
-            <div class="fd-calendar-legend__item fd-calendar-legend__item--today">
+        <div 
+            role="list"
+            aria-label="Calendar Legend"
+            aria-owns="item-1a item-2a item-3a item-4a item-5a item-6a item-7a 
+            item-8a item-9a item-10a item-11a item-12a item-13a item-14a"
+            class="fd-calendar-legend fd-calendar-legend--auto-column" 
+            style="max-width: 320px;">
+            <div 
+                id="item-1a"
+                role="listitem"
+                aria-posinset="1"
+                aria-setsize="14"
+                tabindex="-1"
+                class="fd-calendar-legend__item fd-calendar-legend__item--today">
                 <div class="fd-calendar-legend__marker"></div>
                 <div class="fd-calendar-legend__text">Today Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum officiis eligendi qui aliquid eius omnis dolorem obcaecati libero magnam.</div>
             </div>
-            <div class="fd-calendar-legend__item fd-calendar-legend__item--selected">
+            <div 
+                id="item-2a"
+                role="listitem"
+                aria-posinset="2"
+                aria-setsize="14"
+                tabindex="-1"
+                class="fd-calendar-legend__item fd-calendar-legend__item--selected">
                 <div class="fd-calendar-legend__marker"></div>
                 <div class="fd-calendar-legend__text">Selected</div>
             </div>
-            <div class="fd-calendar-legend__item fd-calendar-legend__item--work">
+            <div 
+                id="item-3a"
+                role="listitem"
+                aria-posinset="3"
+                aria-setsize="14"
+                tabindex="-1"
+                class="fd-calendar-legend__item fd-calendar-legend__item--work">
                 <div class="fd-calendar-legend__marker"></div>
                 <div class="fd-calendar-legend__text">Work Day</div>
             </div>
-            <div class="fd-calendar-legend__item fd-calendar-legend__item--non-work">
+            <div 
+                id="item-4a"
+                role="listitem"
+                aria-posinset="4"
+                aria-setsize="14"
+                tabindex="-1"
+                class="fd-calendar-legend__item fd-calendar-legend__item--non-work">
                 <div class="fd-calendar-legend__marker"></div>
                 <div class="fd-calendar-legend__text">Non-Work Day</div>
             </div>
-            <div class="fd-calendar-legend__item fd-calendar-legend__item--placeholder-1">
+            <div 
+                id="item-5a"
+                role="listitem"
+                aria-posinset="5"
+                aria-setsize="14"
+                tabindex="-1"
+                class="fd-calendar-legend__item fd-calendar-legend__item--placeholder-1">
                 <div class="fd-calendar-legend__marker"></div>
                 <div class="fd-calendar-legend__text">Special Day Placeholder 1</div>
             </div>
-            <div class="fd-calendar-legend__item fd-calendar-legend__item--placeholder-2">
+            <div 
+                id="item-6a"
+                role="listitem"
+                aria-posinset="6"
+                aria-setsize="14"
+                tabindex="-1"
+                class="fd-calendar-legend__item fd-calendar-legend__item--placeholder-2">
                 <div class="fd-calendar-legend__marker"></div>
                 <div class="fd-calendar-legend__text">Special Day Placeholder 2</div>
             </div>
-            <div class="fd-calendar-legend__item fd-calendar-legend__item--placeholder-3 is-focus">
+            <div 
+                id="item-7a"
+                role="listitem"
+                aria-posinset="7"
+                aria-setsize="14"
+                tabindex="-1"
+                class="fd-calendar-legend__item fd-calendar-legend__item--placeholder-3 is-focus">
                 <div class="fd-calendar-legend__marker"></div>
                 <div class="fd-calendar-legend__text">Special Day Placeholder 3</div>
             </div>
-            <div class="fd-calendar-legend__item fd-calendar-legend__item--placeholder-4">
+            <div 
+                id="item-8a"
+                role="listitem"
+                aria-posinset="8"
+                aria-setsize="14"
+                tabindex="-1"
+                class="fd-calendar-legend__item fd-calendar-legend__item--placeholder-4">
                 <div class="fd-calendar-legend__marker"></div>
                 <div class="fd-calendar-legend__text">Special Day Placeholder 4</div>
             </div>
-            <div class="fd-calendar-legend__item fd-calendar-legend__item--placeholder-5">
+            <div 
+                id="item-9a"
+                role="listitem"
+                aria-posinset="9"
+                aria-setsize="14"
+                tabindex="-1"
+                class="fd-calendar-legend__item fd-calendar-legend__item--placeholder-5">
                 <div class="fd-calendar-legend__marker"></div>
                 <div class="fd-calendar-legend__text">Special Day Placeholder 5</div>
             </div>
-            <div class="fd-calendar-legend__item fd-calendar-legend__item--placeholder-6">
+            <div 
+                id="item-10a"
+                role="listitem"
+                aria-posinset="10"
+                aria-setsize="14"
+                tabindex="-1"
+                class="fd-calendar-legend__item fd-calendar-legend__item--placeholder-6">
                 <div class="fd-calendar-legend__marker"></div>
                 <div class="fd-calendar-legend__text">Special Day Placeholder 6</div>
             </div>
-            <div class="fd-calendar-legend__item fd-calendar-legend__item--placeholder-7">
+            <div 
+                id="item-11a"
+                role="listitem"
+                aria-posinset="11"
+                aria-setsize="14"
+                tabindex="-1"
+                class="fd-calendar-legend__item fd-calendar-legend__item--placeholder-7">
                 <div class="fd-calendar-legend__marker"></div>
                 <div class="fd-calendar-legend__text">Special Day Placeholder 7</div>
             </div>
-            <div class="fd-calendar-legend__item fd-calendar-legend__item--placeholder-8">
+            <div 
+                id="item-12a"
+                role="listitem"
+                aria-posinset="12"
+                aria-setsize="14"
+                tabindex="-1"
+                class="fd-calendar-legend__item fd-calendar-legend__item--placeholder-8">
                 <div class="fd-calendar-legend__marker"></div>
                 <div class="fd-calendar-legend__text">Special Day Placeholder 8</div>
             </div>
-            <div class="fd-calendar-legend__item fd-calendar-legend__item--placeholder-9">
+            <div 
+                id="item-13a"
+                role="listitem"
+                aria-posinset="13"
+                aria-setsize="14"
+                tabindex="-1"
+                class="fd-calendar-legend__item fd-calendar-legend__item--placeholder-9">
                 <div class="fd-calendar-legend__marker"></div>
                 <div class="fd-calendar-legend__text">Special Day Placeholder 9</div>
             </div>
-            <div class="fd-calendar-legend__item fd-calendar-legend__item--placeholder-10">
+            <div    
+                id="item-14a"
+                role="listitem"
+                aria-posinset="14"
+                aria-setsize="14"
+                tabindex="-1"
+                class="fd-calendar-legend__item fd-calendar-legend__item--placeholder-10">
                 <div class="fd-calendar-legend__marker"></div>
                 <div class="fd-calendar-legend__text">Special Day Placeholder 10</div>
             </div>
         </div>
 
-        <div class="fd-calendar-legend fd-calendar-legend--auto-column" style="max-width: 320px;">
-            <div class="fd-calendar-legend__item fd-calendar-legend__item--appointment fd-calendar-legend__item--today is-focus">
+        <div 
+            role="list"
+            aria-label="Calendar Legend"
+            aria-owns="item-1b item-2b item-3b item-4b item-5b item-6b item-7b 
+            item-8b item-9b item-10b item-11b item-12b item-13b item-14b"
+            class="fd-calendar-legend fd-calendar-legend--auto-column" 
+            style="max-width: 320px;">
+            <div 
+                id="item-1b"
+                role="listitem"
+                aria-posinset="1"
+                aria-setsize="14"
+                tabindex="-1"
+                class="fd-calendar-legend__item fd-calendar-legend__item--appointment fd-calendar-legend__item--today is-focus">
                 <div class="fd-calendar-legend__marker"></div>
                 <div class="fd-calendar-legend__text">Today Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum officiis eligendi qui aliquid eius omnis dolorem obcaecati libero magnam.</div>
             </div>
-            <div class="fd-calendar-legend__item fd-calendar-legend__item--appointment fd-calendar-legend__item--selected">
+            <div 
+                id="item-2b"
+                role="listitem"
+                aria-posinset="2"
+                aria-setsize="14"
+                tabindex="-1"
+                class="fd-calendar-legend__item fd-calendar-legend__item--appointment fd-calendar-legend__item--selected">
                 <div class="fd-calendar-legend__marker"></div>
                 <div class="fd-calendar-legend__text">Selected</div>
             </div>
-            <div class="fd-calendar-legend__item fd-calendar-legend__item--appointment fd-calendar-legend__item--work">
+            <div 
+                id="item-3b"
+                role="listitem"
+                aria-posinset="3"
+                aria-setsize="14"
+                tabindex="-1"
+                class="fd-calendar-legend__item fd-calendar-legend__item--appointment fd-calendar-legend__item--work">
                 <div class="fd-calendar-legend__marker"></div>
                 <div class="fd-calendar-legend__text">Work Day</div>
             </div>
-            <div class="fd-calendar-legend__item fd-calendar-legend__item--appointment fd-calendar-legend__item--non-work">
+            <div 
+                id="item-4b"
+                role="listitem"
+                aria-posinset="4"
+                aria-setsize="14"
+                tabindex="-1"
+                class="fd-calendar-legend__item fd-calendar-legend__item--appointment fd-calendar-legend__item--non-work">
                 <div class="fd-calendar-legend__marker"></div>
                 <div class="fd-calendar-legend__text">Non-Work Day</div>
             </div>
-            <div class="fd-calendar-legend__item fd-calendar-legend__item--appointment fd-calendar-legend__item--placeholder-11">
+            <div 
+                id="item-5b"
+                role="listitem"
+                aria-posinset="5"
+                aria-setsize="14"
+                tabindex="-1"
+                class="fd-calendar-legend__item fd-calendar-legend__item--appointment fd-calendar-legend__item--placeholder-11">
                 <div class="fd-calendar-legend__marker"></div>
                 <div class="fd-calendar-legend__text">Special Day Placeholder 11</div>
             </div>
-            <div class="fd-calendar-legend__item fd-calendar-legend__item--appointment fd-calendar-legend__item--placeholder-12">
+            <div 
+                id="item-6b"
+                role="listitem"
+                aria-posinset="6"
+                aria-setsize="14"
+                tabindex="-1"
+                class="fd-calendar-legend__item fd-calendar-legend__item--appointment fd-calendar-legend__item--placeholder-12">
                 <div class="fd-calendar-legend__marker"></div>
                 <div class="fd-calendar-legend__text">Special Day Placeholder 12</div>
             </div>
-            <div class="fd-calendar-legend__item fd-calendar-legend__item--appointment fd-calendar-legend__item--placeholder-13">
+            <div 
+                id="item-7b"
+                role="listitem"
+                aria-posinset="7"
+                aria-setsize="14"
+                tabindex="-1"
+                class="fd-calendar-legend__item fd-calendar-legend__item--appointment fd-calendar-legend__item--placeholder-13">
                 <div class="fd-calendar-legend__marker"></div>
                 <div class="fd-calendar-legend__text">Special Day Placeholder 13</div>
             </div>
-            <div class="fd-calendar-legend__item fd-calendar-legend__item--appointment fd-calendar-legend__item--placeholder-14">
+            <div 
+                id="item-8b"
+                role="listitem"
+                aria-posinset="8"
+                aria-setsize="14"
+                tabindex="-1"
+                class="fd-calendar-legend__item fd-calendar-legend__item--appointment fd-calendar-legend__item--placeholder-14">
                 <div class="fd-calendar-legend__marker"></div>
                 <div class="fd-calendar-legend__text">Special Day Placeholder 14</div>
             </div>
-            <div class="fd-calendar-legend__item fd-calendar-legend__item--appointment fd-calendar-legend__item--placeholder-15">
+            <div 
+                id="item-9b"
+                role="listitem"
+                aria-posinset="9"
+                aria-setsize="14"
+                tabindex="-1"
+                class="fd-calendar-legend__item fd-calendar-legend__item--appointment fd-calendar-legend__item--placeholder-15">
                 <div class="fd-calendar-legend__marker"></div>
                 <div class="fd-calendar-legend__text">Special Day Placeholder 15</div>
             </div>
-            <div class="fd-calendar-legend__item fd-calendar-legend__item--appointment fd-calendar-legend__item--placeholder-16">
+            <div 
+                id="item-10b"
+                role="listitem"
+                aria-posinset="10"
+                aria-setsize="14"
+                tabindex="-1"
+                class="fd-calendar-legend__item fd-calendar-legend__item--appointment fd-calendar-legend__item--placeholder-16">
                 <div class="fd-calendar-legend__marker"></div>
                 <div class="fd-calendar-legend__text">Special Day Placeholder 16</div>
             </div>
-            <div class="fd-calendar-legend__item fd-calendar-legend__item--appointment fd-calendar-legend__item--placeholder-17">
+            <div 
+                id="item-11b"
+                role="listitem"
+                aria-posinset="11"
+                aria-setsize="14"
+                tabindex="-1"
+                class="fd-calendar-legend__item fd-calendar-legend__item--appointment fd-calendar-legend__item--placeholder-17">
                 <div class="fd-calendar-legend__marker"></div>
                 <div class="fd-calendar-legend__text">Special Day Placeholder 17</div>
             </div>
-            <div class="fd-calendar-legend__item fd-calendar-legend__item--appointment fd-calendar-legend__item--placeholder-18">
+            <div 
+                id="item-12b"
+                role="listitem"
+                aria-posinset="12"
+                aria-setsize="14"
+                tabindex="-1"
+                class="fd-calendar-legend__item fd-calendar-legend__item--appointment fd-calendar-legend__item--placeholder-18">
                 <div class="fd-calendar-legend__marker"></div>
                 <div class="fd-calendar-legend__text">Special Day Placeholder 18</div>
             </div>
-            <div class="fd-calendar-legend__item fd-calendar-legend__item--appointment fd-calendar-legend__item--placeholder-19">
+            <div 
+                id="item-13b"
+                role="listitem"
+                aria-posinset="13"
+                aria-setsize="14"
+                tabindex="-1"
+                class="fd-calendar-legend__item fd-calendar-legend__item--appointment fd-calendar-legend__item--placeholder-19">
                 <div class="fd-calendar-legend__marker"></div>
                 <div class="fd-calendar-legend__text">Special Day Placeholder 19</div>
             </div>
-            <div class="fd-calendar-legend__item fd-calendar-legend__item--appointment fd-calendar-legend__item--placeholder-20">
+            <div 
+                id="item-14b"
+                role="listitem"
+                aria-posinset="14"
+                aria-setsize="14"
+                tabindex="-1"
+                class="fd-calendar-legend__item fd-calendar-legend__item--appointment fd-calendar-legend__item--placeholder-20">
                 <div class="fd-calendar-legend__marker"></div>
                 <div class="fd-calendar-legend__text">Special Day Placeholder 20</div>
             </div>

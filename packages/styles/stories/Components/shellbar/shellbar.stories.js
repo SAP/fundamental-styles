@@ -103,21 +103,21 @@ OptionalItems.storyName = 'Shell Bar with Optional Elements';
 OptionalItems.parameters = {
   docs: {
     description: {
-      story: `The following elements of the Shell Bar are optional:: 
-      <ul>
-        <li><b>Side Navigation Button:</b> expands or collapses a vertical navigation panel for local navigation, and is mandatory in the Shell Bar if side navigation is used. In this case, the left spacing is fixed to 0.875rem to ensure alignment with the navigation panel. Right spacing is fixed to 1rem. </li>
-        <li><b>Back Button: </b> back navigation</li>
-        <li><b>Additional Context Area:</b> for containers holding product-related elements like system or status information, and should include components relevant to the entire product, not specific applications, while avoiding content meant for other Shell Bar elements.</li>
-        <li><b>Search:</b> the search field in the Shell Bar can be expanded or collapsed based on screen size, and on smaller screens (S), it may be collapsed or moved to the overflow menu if multiple action icons are present.</li>
-        <li><b>Joule:</b> AI Assistant</li>
-        <li><b>Notifications:</b> are optional, but if enabled, the icon will display with a badge indicating the notification count.</li>
-        <li><b>Additional Actions:</b> You can add unlimited custom actions to the Shell Bar, but it's recommended to limit them to seven, ensuring they impact the entire product, use icon-only buttons, and include tooltips. The order is flexible, except for the Support action, which is always placed on the right.</li>
-        <li><b>Help:</b> used to trigger the help functionality within products.</li>
-        <li><b>Feedback:</b> used to trigger the "Leave Feedback" functionality within products.</li>
-        <li><b>Product Switch:</b> used for global navigation, allowing users to switch between different SAP products and services.</li>
-        <li><b>Separator:</b> creates a small distance between elements in additional context area.</li>
-        <li><b>Spacer:</b> creates space between groups of elements in context area. Visually separates the context area into left and right group.</li>
-      </ul>`
+      story: `The following elements of the Shell Bar are optional:
+<ul>
+  <li><b>Side Navigation Button:</b> expands or collapses a vertical navigation panel for local navigation, and is mandatory in the Shell Bar if side navigation is used. In this case, the left spacing is fixed to 0.875rem to ensure alignment with the navigation panel. Right spacing is fixed to 1rem. </li>
+  <li><b>Back Button: </b> back navigation</li>
+  <li><b>Additional Context Area:</b> for containers holding product-related elements like system or status information, and should include components relevant to the entire product, not specific applications, while avoiding content meant for other Shell Bar elements.</li>
+  <li><b>Search:</b> the search field in the Shell Bar can be expanded or collapsed based on screen size, and on smaller screens (S), it may be collapsed or moved to the overflow menu if multiple action icons are present.</li>
+  <li><b>Joule:</b> AI Assistant</li>
+  <li><b>Notifications:</b> are optional, but if enabled, the icon will display with a badge indicating the notification count.</li>
+  <li><b>Additional Actions:</b> You can add unlimited custom actions to the Shell Bar, but it's recommended to limit them to seven, ensuring they impact the entire product, use icon-only buttons, and include tooltips. The order is flexible, except for the Support action, which is always placed on the right.</li>
+  <li><b>Help:</b> used to trigger the help functionality within products.</li>
+  <li><b>Feedback:</b> used to trigger the "Leave Feedback" functionality within products.</li>
+  <li><b>Product Switch:</b> used for global navigation, allowing users to switch between different SAP products and services.</li>
+  <li><b>Separator:</b> creates a small distance between elements in additional context area.</li>
+  <li><b>Spacer:</b> creates space between groups of elements in context area. Visually separates the context area into left and right group.</li>
+</ul>`
     }
   }
 };
@@ -150,11 +150,11 @@ Responsiveness.parameters = {
     description: {
       story: `Truncation and overflow logic of Shell Bar are based on priorities, such as when a component with a higher priority takes precedence over an element with a lower priority. <br>
       For all screen sizes the following elements are always displayed:
-      <ul>
-        <li>Side Navigation Button (if used)</li>
-        <li>Avatar (User Menu)</li>
-        <li>Product Switcher (if used)</li>
-      </ul>
+<ul>
+  <li>Side Navigation Button (if used)</li>
+  <li>Avatar (User Menu)</li>
+  <li>Product Switcher (if used)</li>
+</ul>
 
 <div style="font-weight: bold; font-size: 1.2rem;">XXL (1920=>) / XL (1440 – 1919) / L (1024 - 1439) / M (600 - 1023)</div>
 <br>
