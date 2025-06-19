@@ -10,17 +10,17 @@ $block: #{$fd-namespace}-form-header;
   @include fd-flex-vertical-center();
 
   width: 100%;
-  height: 2.75rem;
-  background-color: var(--sapGroup_TitleBackground);
   padding-inline: 1rem;
+  height: var(--sapElement_LineHeight);
+  background-color: var(--sapGroup_TitleBackground);
   box-shadow: 0 var(--fdFormHeader_Border_Width) 0 var(--sapGroup_TitleBorderColor);
 
   &__text {
     @include fd-reset();
     @include fd-ellipsis();
 
-    font-family: var(--sapFontHeaderFamily);
-    font-size: var(--sapFontHeader4Size);
     color: var(--sapGroup_TitleTextColor);
+    font-family: var(--sapFontHeaderFamily);
+    font-size: var(--sapGroup_Title_FontSize);
   }
 }

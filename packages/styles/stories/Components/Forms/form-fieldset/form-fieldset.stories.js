@@ -10,7 +10,7 @@ export default {
   parameters: {
     description: `A fieldset is used to give semantic meaning to a group of elements inside a form (e.g. Billing or Shipping Address).
 Grouping fields together into a fieldset also provides styling and accessibility benefits.`,
-    tags: ['f3', 'a11y', 'theme']
+    tags: []
   }
 };
 export const CheckboxGroups = () => checkboxGroupsExampleHtml;

@@ -31,7 +31,7 @@ We highly recommend changing the default of the label-field-ratio according to y
 When working with form groups, it's always best to use the recommended number of columns to make the most of your screen space. That way, users aren't prompted to scroll down because of unused white space, and the form is visually balanced between the left and right side of the screen.
 <br><br>
 `,
-    tags: ['f3', 'a11y']
+    tags: []
   }
 };
 const docsStyles = `
@@ -105,17 +105,17 @@ SSize.storyName = 'Small';
 SSize.parameters = {
   docs: {
    description: {
-      story: `
-The small form grid uses a single-column layout and is best used for mobile screens and dialogs. The form groups are positioned below each other in a single column and the labels are positioned above the fields to avoid the labels from truncating.
+      story: `The small form grid uses a single-column layout and is best used for mobile screens and dialogs. The form groups are positioned below each other in a single column and the labels are positioned above the fields to avoid the labels from truncating.
 
-####Label-field ratio
+#### Label-field ratio
 The small form grid is organized into a **12:12:0** label-field ratio.
 
-Components | Grid columns | Description
-:------ | :--------: | :----------------------
-Label | 12 | A label handles the space of a whole row.
-Fields | 12 | A field handles the space of a whole row.
-Empty grid columns | 0 | There are no empty spaces on the right of the fields.
+| Components | Grid columns | Description
+| :------ | :--------: | :----------------------
+| Label | 12 | A label handles the space of a whole row.
+| Fields | 12 | A field handles the space of a whole row.
+| Empty grid columns | 0 | There are no empty spaces on the right of the fields.
+
 `
     }
   }
@@ -200,11 +200,11 @@ The default medium form grid uses a single-column layout. The labels are positio
 ####Label-field ratio
 The default medium form grid is organized into a **2:10:0** label-field ratio.
 
-Components | Grid columns | Description
-:------ | :--------: | :----------------------
-Label | 2 | Only two grid columns of the responsive grid layout are used by the labels.
-Fields | 10 | The rest of the grid columns of the responsive grid layout are used by the fields.
-Empty grid columns | 0 | There are no empty spaces on the right of the fields.
+| Components | Grid columns | Description
+| :------ | :--------: | :----------------------
+| Label | 2 | Only two grid columns of the responsive grid layout are used by the labels.
+| Fields | 10 | The rest of the grid columns of the responsive grid layout are used by the fields.
+| Empty grid columns | 0 | There are no empty spaces on the right of the fields.
 
 `
     }
@@ -285,16 +285,16 @@ MSizeSplitScreen.parameters = {
   docs: {
    description: {
       story: `
-When the form is positioned in the details part of a split screen, the medium form grid should use a label-field ratio of 4:7:1.
+When the form is positioned in the details part of a split screen, the medium form grid should use a label-field ratio of **4:7:1**.
 
 ####Label-field ratio
 The medium form grid is organized into a **4:7:1** label-field ratio for split-screen views.
 
-Components | Grid columns | Description
-:------ | :--------: | :----------------------
-Label | 4 | Only four grid columns of the responsive grid layout are used by the labels.
-Fields | 7 | Seven grid columns of the responsive grid layout are used by the fields.
-Empty grid columns | 1 | There is one empty space on the right of the field.
+| Components | Grid columns | Description
+| :------ | :--------: | :----------------------
+| Label | 4 | Only four grid columns of the responsive grid layout are used by the labels.
+| Fields | 7 | Seven grid columns of the responsive grid layout are used by the fields.
+| Empty grid columns | 1 | There is one empty space on the right of the field.
 
 `
     }
@@ -379,11 +379,11 @@ If the form is being viewed in a full-screen app, the medium form grid should us
 ####Label-field ratio
 The medium form grid is organized into a **3:5:4** label-field ratio for full-screen views.
 
-Components | Grid columns | Description
-:------ | :--------: | :----------------------
-Label | 3 | Only three grid columns of the responsive grid layout are used by the labels.
-Fields | 5 | Five grid columns of the responsive grid layout are used by the fields.
-Empty grid columns | 4 | There are four empty spaces on the right of the field.
+| Components | Grid columns | Description
+| :------ | :--------: | :----------------------
+| Label | 3 | Only three grid columns of the responsive grid layout are used by the labels.
+| Fields | 5 | Five grid columns of the responsive grid layout are used by the fields.
+| Empty grid columns | 4 | There are four empty spaces on the right of the field.
 
 `
     }
@@ -469,11 +469,11 @@ The medium form width can go down to 601 px, providing insufficient space for lo
 
 The medium form grid is organized into a **3:5:4** label-field ratio to accommodate long labels and fields.
 
-Components | Grid columns | Description
-:------ | :--------: | :----------------------
-Label | 4 | Only four grid columns of the responsive grid layout are used by the labels.
-Fields | 8 | Eight grid columns of the responsive grid layout are used by the fields.
-Empty grid columns | 0 | There is no empty space on the right of the field.
+| Components | Grid columns | Description
+| :------ | :--------: | :----------------------
+| Label | 4 | Only four grid columns of the responsive grid layout are used by the labels.
+| Fields | 8 | Eight grid columns of the responsive grid layout are used by the fields.
+| Empty grid columns | 0 | There is no empty space on the right of the field.
 
 `
     }
@@ -559,11 +559,11 @@ The default large form grid uses a two-column layout. The form groups are placed
 
 The default large form grid is organized into a **4:8:0** label-field ratio.
 
-Components | Grid columns | Description
-:------ | :--------: | :----------------------
-Label | 4 | Only four grid columns of the responsive grid layout are used by the labels.
-Fields | 8 | The rest of the grid columns of the responsive grid layout are used by the fields.
-Empty grid columns | 0 | There is no empty space on the right of the field.
+| Components | Grid columns | Description
+| :------ | :--------: | :----------------------
+| Label | 4 | Only four grid columns of the responsive grid layout are used by the labels.
+| Fields | 8 | The rest of the grid columns of the responsive grid layout are used by the fields.
+| Empty grid columns | 0 | There is no empty space on the right of the field.
 
 `
     }
@@ -650,11 +650,11 @@ If the form contains a single form group, you can use a single-column layout.
 ####Label-field ratio
 The large form grid is organized into a **3:5:4** label-field ratio for single form groups.
 
-Components | Grid columns | Description
-:------ | :--------: | :----------------------
-Label | 3 | Only three grid columns of the responsive grid layout are used by the labels.
-Fields | 5 | Five of the grid columns of the responsive grid layout are used by the fields.
-Empty grid columns | 4 | There are four empty spaces on the right of the field.
+| Components | Grid columns | Description
+| :------ | :--------: | :----------------------
+| Label | 3 | Only three grid columns of the responsive grid layout are used by the labels.
+| Fields | 5 | Five of the grid columns of the responsive grid layout are used by the fields.
+| Empty grid columns | 4 | There are four empty spaces on the right of the field.
         `
     }
   }
@@ -811,11 +811,11 @@ If the form contains multiple form groups, you can use a two-column layout.
 ####Label-field ratio
 The large form grid is organized into a **12:12:0** label-field ratio for multiple form groups.
 
-Components | Grid columns | Description
-:------ | :--------: | :----------------------
-Label | 12 | A label handles the space of a whole row.
-Fields | 12 | A field handles the space of a whole row.
-Empty grid columns | 0 | There are no empty spaces on the right of the fields.
+| Components | Grid columns | Description
+| :------ | :--------: | :----------------------
+| Label | 12 | A label handles the space of a whole row.
+| Fields | 12 | A field handles the space of a whole row.
+| Empty grid columns | 0 | There are no empty spaces on the right of the fields.
 
 **Note:** As explained in the main description, large goes down to 1025 px. Therefore, long labels that are put next to fields might not fit on smaller large-sized screens (especially in split-view apps). For this reason, labels are put above fields.
 
@@ -903,11 +903,11 @@ The default extra-large form grid uses a two-column layout. The form groups are 
 
 The default extra-large form grid is organized into a **4:8:0** label-field ratio. Technically, the value is set to -1 and inherits the value of size large, see also the development hint below.
 
-Components | Grid columns | Description
-:------ | :--------: | :----------------------
-Label | 4 | Only four grid columns of the responsive grid layout are used by the labels.
-Fields | 8 | The rest of the grid columns of the responsive grid layout are used by the fields.
-Empty grid columns | 0 | There are no empty spaces on the right of the fields.
+| Components | Grid columns | Description
+| :------ | :--------: | :----------------------
+| Label | 4 | Only four grid columns of the responsive grid layout are used by the labels.
+| Fields | 8 | The rest of the grid columns of the responsive grid layout are used by the fields.
+| Empty grid columns | 0 | There are no empty spaces on the right of the fields.
 
 `
     }
@@ -993,11 +993,11 @@ If the form contains a single form group, you can use a single-column layout.
 ####Label-field ratio
 The extra-large form grid is organized into a **3:5:4** label-field ratio for single form groups.
 
-Components | Grid columns | Description
-:------ | :--------: | :----------------------
-Label | 3 | Only three grid columns of the responsive grid layout are used by the labels.
-Fields | 5 | Five of the grid columns of the responsive grid layout are used by the fields.
-Empty grid columns | 4 | There are four empty spaces on the right of the fields.
+| Components | Grid columns | Description
+| :------ | :--------: | :----------------------
+| Label | 3 | Only three grid columns of the responsive grid layout are used by the labels.
+| Fields | 5 | Five of the grid columns of the responsive grid layout are used by the fields.
+| Empty grid columns | 4 | There are four empty spaces on the right of the fields.
 
 **Note:** If the form is put into a full-screen app and it contains multiple form groups, you can also use a three-column layout with a label-field ratio of **12:12:0**.
 
@@ -1159,11 +1159,11 @@ If the form contains multiple form groups, you can use a two-column layout.
 ####Label-field ratio
 The extra-large form grid is organized into a **4:8:0** label-field ratio for double form groups.
 
-Components | Grid columns | Description
-:------ | :--------: | :----------------------
-Label | 4 | Only four grid columns of the responsive grid layout are used by the labels.
-Fields | 8 | The rest of the grid columns of the responsive grid layout are used by the fields.
-Empty grid columns | 0 | There are no empty spaces on the right of the fields.
+| Components | Grid columns | Description
+| :------ | :--------: | :----------------------
+| Label | 4 | Only four grid columns of the responsive grid layout are used by the labels.
+| Fields | 8 | The rest of the grid columns of the responsive grid layout are used by the fields.
+| Empty grid columns | 0 | There are no empty spaces on the right of the fields.
 
 `
     }
@@ -1382,11 +1382,11 @@ XlMultipleFormGroup.parameters = {
 ####Label-field ratio
 The extra-large form grid is organized into a **12:12:0** label-field ratio for multiple form groups.
 
-Components | Grid columns | Description
-:------ | :--------: | :----------------------
-Label | 12 | A label handles the space of a whole row.
-Fields | 12 | A field handles the space of a whole row.
-Empty grid columns | 0 | There is no empty space on the right of the field.
+| Components | Grid columns | Description
+| :------ | :--------: | :----------------------
+| Label | 12 | A label handles the space of a whole row.
+| Fields | 12 | A field handles the space of a whole row.
+| Empty grid columns | 0 | There is no empty space on the right of the field.
 
 `
     }
@@ -1483,30 +1483,30 @@ These are the recommended layouts that display the ideal amount of columns for e
 
 ####Layout 1
 
-Screen size | Columns
-:----------: | :---------------:
-XL | 2
-L | 2
-M | 2
-S | 1
+| Screen size | Columns
+| :----------: | :---------------:
+| XL | 2
+| L | 2
+| M | 2
+| S | 1
 
 ####Layout 2
 
-Screen size | Columns
-:----------: | :---------------:
-XL | 2
-L | 2
-M | 1
-S | 1
+| Screen size | Columns
+| :----------: | :---------------:
+| XL | 2
+| L | 2
+| M | 1
+| S | 1
 
 ####Layout 3
 
-Screen size | Columns
-:----------: | :---------------:
-XL | 2
-L | 1
-M | 1
-S | 1
+| Screen size | Columns
+| :----------: | :---------------:
+| XL | 2
+| L | 1
+| M | 1
+| S | 1
 
 `
     }
@@ -1586,22 +1586,22 @@ Although not the best solutions, these layouts are also possible.
 
 ####Layout 4
 
-Screen size | Columns
-:----------: | :---------------:
-XL | 3
-L | 1
-M | 1
-S | 1
+| Screen size | Columns
+| :----------: | :---------------:
+| XL | 3
+| L | 1
+| M | 1
+| S | 1
 
 
 ####Layout 5
 
-Screen size | Columns
-:----------: | :---------------:
-XL | 1
-L | 1
-M | 1
-S | 1
+| Screen size | Columns
+| :----------: | :---------------:
+| XL | 1
+| L | 1
+| M | 1
+| S | 1
 
 `
     }
@@ -1649,7 +1649,7 @@ ColumnNotRecommended.parameters = {
   docs: {
    description: {
       story: `
-The layout that is not recommended for a form group are XL3-L2-M2-S1
+The layout that is not recommended for a form group are **XL3-L2-M2-S1**
 `
     }
   }
@@ -1718,13 +1718,13 @@ When the form displayed in vertical layout there should be a gap after each form
 All forms are displayed in vertical layout under S breakpoint.
 To display form in vertical layout under different breakpoints apply modifier classes from the following table.
 
-Modifier | Breakpoint
-:------ | :--------:
-(no modifier class) | **S** |
-\`.fd-form-layout-grid-container--vertical\` | All
-\`.fd-form-layout-grid-container--md-vertical\` | **MD**
-\`.fd-form-layout-grid-container--lg-vertical\` | **LG**
-\`.fd-form-layout-grid-container--xl-vertical\` | **XL**
+| Modifier | Breakpoint
+| :------ | :--------:
+| (no modifier class) | **S** |
+| \`.fd-form-layout-grid-container--vertical\` | **All**
+| \`.fd-form-layout-grid-container--md-vertical\` | **MD**
+| \`.fd-form-layout-grid-container--lg-vertical\` | **LG**
+| \`.fd-form-layout-grid-container--xl-vertical\` | **XL**
         `
     }
   }

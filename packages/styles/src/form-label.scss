@@ -8,8 +8,11 @@ $block: #{$fd-namespace}-form-label;
 .#{$block} {
   @include fd-form-label();
 
-  &.is-disabled {
+  &.is-disabled,
+  &[aria-disabled="true"],
+  &--disabled {
     opacity: 0.4;
+    pointer-events: none;
   }
 
   &--unit-description {

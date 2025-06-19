@@ -11,7 +11,7 @@ export default {
     description: `
 Form labels are used to identify form elements such as input fields, checkboxes and radio buttons. This component is best used as a child element of the **Form Item** component.
         `,
-    tags: ['f3', 'a11y', 'theme']
+    tags: []
   }
 };
 export const Primary = () => primaryExampleHtml;
@@ -19,9 +19,7 @@ Primary.storyName = 'Default';
 Primary.parameters = {
   docs: {
     description: {
-      story: `
-The default form label is displayed in grey text above an input field. To display a form label, add the \`fd-form-label\` class as a child element of the \`fd-form-item\` element.
-        `
+      story: `Use the default form label when the field is optional and does not require special styling or behavior.`
     }
   }
 };
@@ -29,9 +27,7 @@ export const Required = () => requiredExampleHtml;
 Required.parameters = {
   docs: {
     description: {
-      story: `
-To indicate to the user that it’s required to fill out an input field, add the \`--required\` modifier class to the \`fd-form-label\` element.
-        `
+      story: `To visually and programmatically indicate a required field, add the <code>fd-form-label--required</code> modifier to the label and use the <code>required</code> and <code>aria-required="true"</code> attributes on the input.`
     }
   }
 };
@@ -39,9 +35,7 @@ export const Colon = () => colonExampleHtml;
 Colon.parameters = {
   docs: {
     description: {
-      story: `
-A form label can be displayed with a colon that does not disappear when truncated. To achieve this, add the \`--colon\` modifier class to the \`fd-form-label\` element.
-        `
+      story: `To display a label with a colon, add the <code>fd-form-label--colon</code> modifier.`
     }
   }
 };
@@ -49,8 +43,10 @@ export const Disabled = () => disabledExampleHtml;
 Disabled.parameters = {
   docs: {
     description: {
-      story: `
-A form label can be displayed as disabled to indicate to the users that it cannot be interacted with. To display a disabled form label, add the \`is-disabled\` class to the \`fd-input\` element.
+      story: `There are 3 ways to visually show that a label is disabled:
+1. Add <code>aria-disabled="true"</code>. This communicates to assistive technologies (like screen readers) that the label is representing a disabled UI element.
+2. Add <code>is-disabled</code> class to <code>fd-form-label</code> class.
+3. Add <code>fd-form-label--disabled</code> modifier class to <code>fd-form-label</code> class.
         `
     }
   }

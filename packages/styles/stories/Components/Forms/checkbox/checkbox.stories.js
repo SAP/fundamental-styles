@@ -29,7 +29,7 @@ Note: With checkboxes, all options are visible, and the user can make one or mor
 - The user needs to perform instantaneous actions that do not need reviewing or confirming. Consider using a **Switch** instead.
 - There is not enough space available on the screen. Use a **Combo Box** instead.
         `,
-    tags: ['f3', 'a11y', 'theme']
+    tags: []
   }
 };
 const localStyles = `

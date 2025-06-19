@@ -6,10 +6,8 @@ import '../../../../src/input.scss';
 export default {
   title: 'Components/Forms/Form Item',
   parameters: {
-    description: `
-A form item is essentially a label positioned above an input field. When the user places their cursor in the input field, the field is highlighted in blue to indicate that it’s active.
-        `,
-    tags: ['f3', 'a11y', 'theme']
+    description: `A form item is a combination of a label and an input field. The label clearly describes the expected input, and is associated with the input for accessibility.`,
+    tags: []
   }
 };
 export const Primary = () => primaryExampleHtml;
@@ -17,7 +15,7 @@ Primary.storyName = 'Default';
 Primary.parameters = {
   docs: {
     description: {
-      story: `The default form item displays a label placed above an empty input field with placeholder text that can be replaced with regular text.
+      story: `Use the default form item when the input is optional and does not require additional validation or indication.
         `
     }
   }
@@ -26,7 +24,7 @@ export const Required = () => requiredExampleHtml;
 Required.parameters = {
   docs: {
     description: {
-      story: `To indicate to the user that it’s required to fill out an input field, add the \`--required\` modifier class to the \`fd-form-label\` element.
+      story: `To mark an input as required, use the <code>fd-form-label--required</code> modifier. Also set <code>aria-required="true"</code> on the input to ensure screen readers announce the requirement.
         `
     }
   }

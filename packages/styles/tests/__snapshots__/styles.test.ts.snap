@@ -8926,8 +8926,8 @@ exports[`Check stories > Components/Avatar Group > Story IndividualTypeVertical 
                                 </div>
                             </div>
                             <div class=\\"fd-form-group\\" role=\\"group\\">
-                                <div class=\\"fd-form-group__header\\" aria-labelledby=\\"contactDetails_5z28edb-v\\">
-                                    <p id=\\"contactDetails_5z28edb-v\\">Contact Details</p>
+                                <div class=\\"fd-form-group__header fd-form-group__header--no-border fd-form-group__header--no-padding\\" aria-labelledby=\\"contactDetails_5z28edb-v\\">
+                                    <h4 id=\\"contactDetails_5z28edb-v\\">Contact Details</h4>
                                 </div>
                                 <div class=\\"fd-form-item\\">
                                     <label class=\\"fd-form-label\\">Mobile</label>
@@ -8981,8 +8981,8 @@ exports[`Check stories > Components/Avatar Group > Story IndividualTypeVertical 
                                 </div>
                             </div>
                             <div class=\\"fd-form-group\\" role=\\"group\\">
-                                <div class=\\"fd-form-group__header\\" aria-labelledby=\\"contactDetails_spbw4q-v\\">
-                                    <p class=\\"fd-form-group__header-text\\" id=\\"contactDetails_spbw4q-v\\">Contact Details</p>
+                                <div class=\\"fd-form-group__header fd-form-group__header--no-border fd-form-group__header--no-padding\\" aria-labelledby=\\"contactDetails_spbw4q-v\\">
+                                    <h4 class=\\"fd-form-group__header-text\\" id=\\"contactDetails_spbw4q-v\\">Contact Details</h4>
                                 </div>
                                 <div class=\\"fd-form-item\\">
                                     <label class=\\"fd-form-label\\">Mobile</label>
@@ -9036,8 +9036,8 @@ exports[`Check stories > Components/Avatar Group > Story IndividualTypeVertical 
                                 </div>
                             </div>
                             <div class=\\"fd-form-group\\" role=\\"group\\">
-                                <div class=\\"fd-form-group__header\\" aria-labelledby=\\"contactDetails_4ahzcg-v\\">
-                                    <p id=\\"contactDetails_4ahzcg-v\\">Contact Details</p>
+                                <div class=\\"fd-form-group__header fd-form-group__header--no-border fd-form-group__header--no-padding\\" aria-labelledby=\\"contactDetails_4ahzcg-v\\">
+                                    <h4 id=\\"contactDetails_4ahzcg-v\\">Contact Details</h4>
                                 </div>
                                 <div class=\\"fd-form-item\\">
                                     <label class=\\"fd-form-label\\">Mobile</label>
@@ -9090,8 +9090,8 @@ exports[`Check stories > Components/Avatar Group > Story IndividualTypeVertical 
                                 </div>
                             </div>
                             <div class=\\"fd-form-group\\" role=\\"group\\">
-                                <div class=\\"fd-form-group__header\\" aria-labelledby=\\"contactDetails_qc1f1jf-v\\">
-                                    <p id=\\"contactDetails_qc1f1jf-v\\">Contact Details</p>
+                                <div class=\\"fd-form-group__header fd-form-group__header--no-border fd-form-group__header--no-padding\\" aria-labelledby=\\"contactDetails_qc1f1jf-v\\">
+                                    <h4 id=\\"contactDetails_qc1f1jf-v\\">Contact Details</h4>
                                 </div>
                                 <div class=\\"fd-form-item\\">
                                     <label class=\\"fd-form-label\\">Mobile</label>
@@ -20721,109 +20721,144 @@ exports[`Check stories > Components/Forms/Form Grid > Story XlSingleFormGroup > 
 
 exports[`Check stories > Components/Forms/Form Group > Story GroupHeader > Should match snapshot 1`] = `
 "<div class=\\"fd-form-group\\" role=\\"group\\" aria-labelledby=\\"basicGroupHeader\\">
-        <div class=\\"fd-form-group__header\\">
-            <h1 class=\\"fd-form-group__header-text\\" id=\\"basicGroupHeader\\">Group Header</h1>
-        </div>
-        <div class=\\"fd-form-item\\">
-            <label class=\\"fd-form-label fd-form-label--required\\" for=\\"input-1d\\">Group Header Input:</label>
-            <input class=\\"fd-input\\" type=\\"text\\" id=\\"input-1d\\" placeholder=\\"Field placeholder text\\">
-        </div>
+    <div class=\\"fd-form-group__header\\">
+        <h4 class=\\"fd-form-group__header-text\\" id=\\"basicGroupHeader\\">Group Header</h4>
     </div>
+</div>
+
+<br><br>
+
+<div class=\\"fd-form-group\\" role=\\"group\\" aria-labelledby=\\"noPaddingGroupHeader\\">
+    <div class=\\"fd-form-group__header fd-form-group__header--no-padding\\">
+        <h4 class=\\"fd-form-group__header-text\\" id=\\"noPaddingGroupHeader\\">Group Header without inline padding</h4>
+    </div>
+</div>
+
+<br><br>
+
+<div class=\\"fd-form-group\\" role=\\"group\\" aria-labelledby=\\"noBorderGroupHeader\\">
+    <div class=\\"fd-form-group__header fd-form-group__header--no-border\\">
+        <h4 class=\\"fd-form-group__header-text\\" id=\\"noBorderGroupHeader\\">Group Header without border</h4>
+    </div>
+</div>
+
+<br><br>
+
+<div class=\\"fd-form-group\\" role=\\"group\\" aria-labelledby=\\"noBorderNoPaddingGroupHeader\\">
+    <div class=\\"fd-form-group__header fd-form-group__header--no-border fd-form-group__header--no-padding\\">
+        <h4 class=\\"fd-form-group__header-text\\" id=\\"noBorderNoPaddingGroupHeader\\">Group Header without border and padding</h4>
+    </div>
+</div>
 "
 `;
 
 exports[`Check stories > Components/Forms/Form Group > Story GroupHeaderInFormGrid > Should match snapshot 1`] = `
-"<div class=\\"fd-container fd-form-layout-grid-container\\">
-        <div class=\\"fd-row\\">
-            <div class=\\"fd-form-group fd-form-group--with-spacing fd-col fd-col-md--6  fd-col-lg--6 fd-col-xl--6 fd-col--wrap\\" role=\\"group\\" aria-labelledby=\\"grid1GroupHeader\\">
-                <div class=\\"fd-form-group__header\\"  id=\\"grid1GroupHeader\\">
-                    <h1 class=\\"fd-form-group__header-text\\">Group Header 1</h1>
+"<form class=\\"fd-container fd-form-layout-grid-container\\">
+    <div class=\\"fd-row\\">
+        <!-- Group 1 -->
+        <div class=\\"fd-form-group fd-form-group--with-spacing fd-col fd-col-md--6 fd-col-lg--6 fd-col-xl--6 fd-col--wrap\\" role=\\"group\\" aria-labelledby=\\"grid1GroupHeader\\">
+            <div class=\\"fd-form-group__header\\" id=\\"grid1GroupHeader\\">
+                <h4 class=\\"fd-form-group__header-text\\">Personal Information</h4>
+            </div>
+
+            <div class=\\"fd-form-item fd-row\\">
+                <div class=\\"fd-col fd-col-md--2 fd-col-lg--4 fd-col-xl--12\\">
+                    <label class=\\"fd-form-label\\" for=\\"input-14-name\\">Full Name:</label>
                 </div>
-                <div class=\\"fd-form-item fd-row\\">
-                    <div class=\\"fd-col fd-col-md--2 fd-col-lg--4 fd-col-xl--12\\">
-                        <label class=\\"fd-form-label\\" for=\\"input-14-name\\">Name:</label>
-                    </div>
-                    <div class=\\"fd-col fd-col-md--10 fd-col-lg--8 fd-col-xl--12\\">
-                        <input class=\\"fd-input\\" type=\\"text\\" id=\\"input-14-name\\" placeholder=\\"Enter First and Last Name\\" value=\\"Amelia Perry\\">
-                    </div>
-                </div>
-                <div class=\\"fd-form-item fd-row\\">
-                    <div class=\\"fd-col fd-col-md--2 fd-col-lg--4 fd-col-xl--12\\">
-                        <label class=\\"fd-form-label\\" for=\\"input-14x-name\\">Name:</label>
-                    </div>
-                    <div class=\\"fd-col fd-col-md--10 fd-col-lg--8 fd-col-xl--12\\">
-                        <input class=\\"fd-input\\" type=\\"text\\" id=\\"input-14x-name\\" placeholder=\\"Enter First and Last Name\\" value=\\"Amelia Perry\\">
-                    </div>
-                </div>
-                <div class=\\"fd-form-item fd-row\\">
-                    <div class=\\"fd-col fd-col-md--2 fd-col-lg--4 fd-col-xl--12\\">
-                        <label class=\\"fd-form-label\\" for=\\"input-14y-name\\">Name:</label>
-                    </div>
-                    <div class=\\"fd-col fd-col-md--10 fd-col-lg--8 fd-col-xl--12\\">
-                        <input class=\\"fd-input\\" type=\\"text\\" id=\\"input-14y-name\\" placeholder=\\"Enter First and Last Name\\" value=\\"Amelia Perry\\">
-                    </div>
+                <div class=\\"fd-col fd-col-md--10 fd-col-lg--8 fd-col-xl--12\\">
+                    <input class=\\"fd-input\\" type=\\"text\\" id=\\"input-14-name\\" placeholder=\\"e.g., Amelia Perry\\" value=\\"Amelia Perry\\">
                 </div>
             </div>
-            <div class=\\"fd-form-group fd-form-group--with-spacing fd-col fd-col-md--6 fd-col-lg--6 fd-col-xl--6 fd-col--wrap\\" role=\\"group\\" aria-labelledby=\\"grid2GroupHeader\\">
-                <div class=\\"fd-form-group__header\\">
-                    <h1 class=\\"fd-form-group__header-text\\" id=\\"grid2GroupHeader\\">Group Header 2</h1>
+
+            <div class=\\"fd-form-item fd-row\\">
+                <div class=\\"fd-col fd-col-md--2 fd-col-lg--4 fd-col-xl--12\\">
+                    <label class=\\"fd-form-label\\" for=\\"input-14x-name\\">City of Residence:</label>
                 </div>
-                <div class=\\"fd-form-item fd-row\\">
-                    <div class=\\"fd-col fd-col-md--2 fd-col-lg--4 fd-col-xl--12\\">
-                        <label class=\\"fd-form-label\\" for=\\"input-14a-name\\">Name:</label>
-                    </div>
-                    <div class=\\"fd-col fd-col-md--10 fd-col-lg--8 fd-col-xl--12\\">
-                        <input class=\\"fd-input\\" type=\\"text\\" id=\\"input-14a-name\\" placeholder=\\"Enter First and Last Name\\" value=\\"Amelia Perry\\">
-                    </div>
-                </div>
-                <div class=\\"fd-form-item fd-row\\">
-                    <div class=\\"fd-col fd-col-md--2 fd-col-lg--4 fd-col-xl--12\\">
-                        <label class=\\"fd-form-label\\" for=\\"input-14b-name\\">Name:</label>
-                    </div>
-                    <div class=\\"fd-col fd-col-md--10 fd-col-lg--8 fd-col-xl--12\\">
-                        <input class=\\"fd-input\\" type=\\"text\\" id=\\"input-14b-name\\" placeholder=\\"Enter First and Last Name\\" value=\\"Amelia Perry\\">
-                    </div>
-                </div>
-                <div class=\\"fd-form-item fd-row\\">
-                    <div class=\\"fd-col fd-col-md--2 fd-col-lg--4 fd-col-xl--12\\">
-                        <label class=\\"fd-form-label\\" for=\\"input-14c-name\\">Name:</label>
-                    </div>
-                    <div class=\\"fd-col fd-col-md--10 fd-col-lg--8 fd-col-xl--12\\">
-                        <input class=\\"fd-input\\" type=\\"text\\" id=\\"input-14c-name\\" placeholder=\\"Enter First and Last Name\\" value=\\"Amelia Perry\\">
-                    </div>
+                <div class=\\"fd-col fd-col-md--10 fd-col-lg--8 fd-col-xl--12\\">
+                    <input class=\\"fd-input\\" type=\\"text\\" id=\\"input-14x-name\\" placeholder=\\"e.g., New York\\" value=\\"New York\\">
                 </div>
             </div>
-            <div class=\\"fd-form-group fd-form-group--with-spacing fd-col fd-col-md--6 fd-col-lg--6 fd-col-xl--6 fd-col--wrap\\" role=\\"group\\" aria-labelledby=\\"grid3GroupHeader\\">
-                <div class=\\"fd-form-group__header\\">
-                    <h1 class=\\"fd-form-group__header-text\\" id=\\"grid3GroupHeader\\">Group Header 3</h1>
+
+            <div class=\\"fd-form-item fd-row\\">
+                <div class=\\"fd-col fd-col-md--2 fd-col-lg--4 fd-col-xl--12\\">
+                    <label class=\\"fd-form-label\\" for=\\"input-14y-name\\">Job Title:</label>
                 </div>
-                <div class=\\"fd-form-item fd-row\\">
-                    <div class=\\"fd-col fd-col-md--2 fd-col-lg--4 fd-col-xl--12\\">
-                        <label class=\\"fd-form-label\\" for=\\"input-14j-name\\">Name:</label>
-                    </div>
-                    <div class=\\"fd-col fd-col-md--10 fd-col-lg--8 fd-col-xl--12\\">
-                        <input class=\\"fd-input\\" type=\\"text\\" id=\\"input-14j-name\\" placeholder=\\"Enter First and Last Name\\" value=\\"Amelia Perry\\">
-                    </div>
-                </div>
-                <div class=\\"fd-form-item fd-row\\">
-                    <div class=\\"fd-col fd-col-md--2 fd-col-lg--4 fd-col-xl--12\\">
-                        <label class=\\"fd-form-label\\" for=\\"input-14h-name\\">Name:</label>
-                    </div>
-                    <div class=\\"fd-col fd-col-md--10 fd-col-lg--8 fd-col-xl--12\\">
-                        <input class=\\"fd-input\\" type=\\"text\\" id=\\"input-14h-name\\" placeholder=\\"Enter First and Last Name\\" value=\\"Amelia Perry\\">
-                    </div>
-                </div>
-                <div class=\\"fd-form-item fd-row\\">
-                    <div class=\\"fd-col fd-col-md--2 fd-col-lg--4 fd-col-xl--12\\">
-                        <label class=\\"fd-form-label\\" for=\\"input-14k-name\\">Name:</label>
-                    </div>
-                    <div class=\\"fd-col fd-col-md--10 fd-col-lg--8 fd-col-xl--12\\">
-                        <input class=\\"fd-input\\" type=\\"text\\" id=\\"input-14k-name\\" placeholder=\\"Enter First and Last Name\\" value=\\"Amelia Perry\\">
-                    </div>
+                <div class=\\"fd-col fd-col-md--10 fd-col-lg--8 fd-col-xl--12\\">
+                    <input class=\\"fd-input\\" type=\\"text\\" id=\\"input-14y-name\\" placeholder=\\"e.g., Product Designer\\" value=\\"Product Designer\\">
                 </div>
             </div>
         </div>
+
+        <!-- Group 2 -->
+        <div class=\\"fd-form-group fd-form-group--with-spacing fd-col fd-col-md--6 fd-col-lg--6 fd-col-xl--6 fd-col--wrap\\" role=\\"group\\" aria-labelledby=\\"grid2GroupHeader\\">
+            <div class=\\"fd-form-group__header\\">
+                <h4 class=\\"fd-form-group__header-text\\" id=\\"grid2GroupHeader\\">Contact Details</h4>
+            </div>
+
+            <div class=\\"fd-form-item fd-row\\">
+                <div class=\\"fd-col fd-col-md--2 fd-col-lg--4 fd-col-xl--12\\">
+                    <label class=\\"fd-form-label\\" for=\\"input-14a-name\\">Email Address:</label>
+                </div>
+                <div class=\\"fd-col fd-col-md--10 fd-col-lg--8 fd-col-xl--12\\">
+                    <input class=\\"fd-input\\" type=\\"email\\" id=\\"input-14a-name\\" placeholder=\\"e.g., amelia.perry@example.com\\" value=\\"amelia.perry@example.com\\">
+                </div>
+            </div>
+
+            <div class=\\"fd-form-item fd-row\\">
+                <div class=\\"fd-col fd-col-md--2 fd-col-lg--4 fd-col-xl--12\\">
+                    <label class=\\"fd-form-label\\" for=\\"input-14b-name\\">Phone Number:</label>
+                </div>
+                <div class=\\"fd-col fd-col-md--10 fd-col-lg--8 fd-col-xl--12\\">
+                    <input class=\\"fd-input\\" type=\\"tel\\" id=\\"input-14b-name\\" placeholder=\\"e.g., +1 555 123 4567\\" value=\\"+1 555 123 4567\\">
+                </div>
+            </div>
+
+            <div class=\\"fd-form-item fd-row\\">
+                <div class=\\"fd-col fd-col-md--2 fd-col-lg--4 fd-col-xl--12\\">
+                    <label class=\\"fd-form-label\\" for=\\"input-14c-name\\">LinkedIn Profile:</label>
+                </div>
+                <div class=\\"fd-col fd-col-md--10 fd-col-lg--8 fd-col-xl--12\\">
+                    <input class=\\"fd-input\\" type=\\"url\\" id=\\"input-14c-name\\" placeholder=\\"e.g., linkedin.com/in/amelia-perry\\" value=\\"linkedin.com/in/amelia-perry\\">
+                </div>
+            </div>
+        </div>
+
+        <!-- Group 3 -->
+        <div class=\\"fd-form-group fd-form-group--with-spacing fd-col fd-col-md--6 fd-col-lg--6 fd-col-xl--6 fd-col--wrap\\" role=\\"group\\" aria-labelledby=\\"grid3GroupHeader\\">
+            <div class=\\"fd-form-group__header\\">
+                <h class=\\"fd-form-group__header-text\\" id=\\"grid3GroupHeader\\">Security Questions</h>
+            </div>
+
+            <div class=\\"fd-form-item fd-row\\">
+                <div class=\\"fd-col fd-col-md--2 fd-col-lg--4 fd-col-xl--12\\">
+                    <label class=\\"fd-form-label\\" for=\\"input-14j-name\\">What was your childhood nickname?</label>
+                </div>
+                <div class=\\"fd-col fd-col-md--10 fd-col-lg--8 fd-col-xl--12\\">
+                    <input class=\\"fd-input\\" type=\\"text\\" id=\\"input-14j-name\\" placeholder=\\"e.g., Mimi\\" value=\\"Mimi\\">
+                </div>
+            </div>
+
+            <div class=\\"fd-form-item fd-row\\">
+                <div class=\\"fd-col fd-col-md--2 fd-col-lg--4 fd-col-xl--12\\">
+                    <label class=\\"fd-form-label\\" for=\\"input-14h-name\\">What was the name of your first pet?</label>
+                </div>
+                <div class=\\"fd-col fd-col-md--10 fd-col-lg--8 fd-col-xl--12\\">
+                    <input class=\\"fd-input\\" type=\\"text\\" id=\\"input-14h-name\\" placeholder=\\"e.g., Charlie\\" value=\\"Charlie\\">
+                </div>
+            </div>
+
+            <div class=\\"fd-form-item fd-row\\">
+                <div class=\\"fd-col fd-col-md--2 fd-col-lg--4 fd-col-xl--12\\">
+                    <label class=\\"fd-form-label\\" for=\\"input-14k-name\\">What city were you born in?</label>
+                </div>
+                <div class=\\"fd-col fd-col-md--10 fd-col-lg--8 fd-col-xl--12\\">
+                    <input class=\\"fd-input\\" type=\\"text\\" id=\\"input-14k-name\\" placeholder=\\"e.g., Boston\\" value=\\"Boston\\">
+                </div>
+            </div>
+        </div>
+
     </div>
+</form>
 "
 `;
 
@@ -20849,57 +20884,90 @@ exports[`Check stories > Components/Forms/Form Group > Story Required > Should m
 
 exports[`Check stories > Components/Forms/Form Header > Story Primary > Should match snapshot 1`] = `
 "<div class=\\"fd-form-header\\">
-        <span class=\\"fd-form-header__text\\">Form Header</span>
-    </div>
+    <h4 class=\\"fd-form-header__text\\">Form Header</h4>
+</div>
 "
 `;
 
 exports[`Check stories > Components/Forms/Form Item > Story Primary > Should match snapshot 1`] = `
 "<div class=\\"fd-form-item\\">
-        <label class=\\"fd-form-label\\" for=\\"input-1\\">Default input:</label>
-        <input class=\\"fd-input\\" type=\\"text\\" id=\\"input-1\\" placeholder=\\"Field placeholder text\\">
-    </div>
-"
+    <label class=\\"fd-form-label\\" for=\\"default-input\\">Full Name:</label>
+    <input 
+        class=\\"fd-input\\" 
+        type=\\"text\\" 
+        id=\\"default-input\\" 
+        name=\\"full-name\\"
+        placeholder=\\"e.g., Jane Doe\\" 
+        autocomplete=\\"name\\">
+</div>"
 `;
 
 exports[`Check stories > Components/Forms/Form Item > Story Required > Should match snapshot 1`] = `
 "<div class=\\"fd-form-item\\">
-        <label class=\\"fd-form-label fd-form-label--required\\" for=\\"input-1c\\">Required Input:</label>
-        <input class=\\"fd-input\\" type=\\"text\\" id=\\"input-1c\\" placeholder=\\"Field placeholder text\\">
-    </div>
-"
+    <label class=\\"fd-form-label fd-form-label--required\\" for=\\"required-email\\">Email Address:</label>
+    <input 
+        class=\\"fd-input\\" 
+        type=\\"email\\" 
+        id=\\"required-email\\" 
+        name=\\"email\\"
+        placeholder=\\"e.g., user@example.com\\" 
+        autocomplete=\\"email\\" 
+        required 
+        aria-required=\\"true\\">
+</div>"
 `;
 
 exports[`Check stories > Components/Forms/Form Label > Story Colon > Should match snapshot 1`] = `
 "<div class=\\"fd-form-item\\">
-        <label class=\\"fd-form-label fd-form-label--colon\\" for=\\"input-1d\\">Input With Colon</label>
-        <input class=\\"fd-input\\" type=\\"text\\" id=\\"input-1d\\" placeholder=\\"Field placeholder text\\">
-    </div>
-"
+    <label class=\\"fd-form-label fd-form-label--colon\\" for=\\"input-with-colon\\">Job Title</label>
+    <input 
+        class=\\"fd-input\\" 
+        type=\\"text\\" 
+        id=\\"input-with-colon\\" 
+        name=\\"job-title\\"
+        placeholder=\\"e.g., Software Engineer\\">
+</div>"
 `;
 
 exports[`Check stories > Components/Forms/Form Label > Story Disabled > Should match snapshot 1`] = `
 "<div class=\\"fd-form-item\\">
-        <label class=\\"fd-form-label\\" for=\\"input-05\\">Disabled Input</label>
-        <input class=\\"fd-input\\" type=\\"text\\" id=\\"input-05\\" disabled placeholder=\\"Field placeholder text\\">
-    </div>
-"
+    <label class=\\"fd-form-label\\" for=\\"disabled-input\\" aria-disabled=\\"true\\">Organization</label>
+    <input 
+        class=\\"fd-input\\" 
+        type=\\"text\\" 
+        id=\\"disabled-input\\" 
+        name=\\"organization\\"
+        value=\\"SAP\\"
+        disabled>
+</div>"
 `;
 
 exports[`Check stories > Components/Forms/Form Label > Story Primary > Should match snapshot 1`] = `
 "<div class=\\"fd-form-item\\">
-        <label class=\\"fd-form-label\\" for=\\"input-1\\">Default input</label>
-        <input class=\\"fd-input\\" type=\\"text\\" id=\\"input-1\\" placeholder=\\"Field placeholder text\\">
-    </div>
-"
+    <label class=\\"fd-form-label\\" for=\\"default-input\\">Full Name</label>
+    <input 
+        class=\\"fd-input\\" 
+        type=\\"text\\" 
+        id=\\"default-input\\" 
+        name=\\"full-name\\"
+        placeholder=\\"e.g., Jane Doe\\" 
+        autocomplete=\\"name\\">
+</div>"
 `;
 
 exports[`Check stories > Components/Forms/Form Label > Story Required > Should match snapshot 1`] = `
 "<div class=\\"fd-form-item\\">
-        <label class=\\"fd-form-label fd-form-label--colon fd-form-label--required\\" for=\\"input-1c\\">Required Input</label>
-        <input class=\\"fd-input\\" type=\\"text\\" id=\\"input-1c\\" placeholder=\\"Field placeholder text\\">
-    </div>
-"
+    <label class=\\"fd-form-label fd-form-label--required\\" for=\\"required-email\\">Email Address</label>
+    <input 
+        class=\\"fd-input\\" 
+        type=\\"email\\" 
+        id=\\"required-email\\" 
+        name=\\"email\\"
+        placeholder=\\"e.g., user@example.com\\" 
+        autocomplete=\\"email\\" 
+        required 
+        aria-required=\\"true\\">
+</div>"
 `;
 
 exports[`Check stories > Components/Forms/Form Message > Story Error > Should match snapshot 1`] = `
@@ -39150,8 +39218,8 @@ exports[`Check stories > Components/Quick View > Story Popover > Should match sn
     
     
                     <div class=\\"fd-form-group\\" role=\\"group\\">
-                        <div class=\\"fd-form-group__header\\" aria-labelledby=\\"contactDetails\\">
-                            <h1 class=\\"fd-form-group__header-text\\" id=\\"contactDetails\\">Contact Details</h1>
+                        <div class=\\"fd-form-group__header fd-form-group__header--no-border fd-form-group__header--no-padding\\" aria-labelledby=\\"contactDetails\\">
+                            <h4 class=\\"fd-form-group__header-text\\" id=\\"contactDetails\\">Contact Details</h4>
                         </div>
                         <div class=\\"fd-form-item\\">
                             <label class=\\"fd-form-label\\">Phone</label>
@@ -39167,8 +39235,8 @@ exports[`Check stories > Components/Quick View > Story Popover > Should match sn
                     </div>
     
                     <div class=\\"fd-form-group\\" role=\\"group\\">
-                        <div class=\\"fd-form-group__header\\" aria-labelledby=\\"mainContact\\">
-                            <h1 class=\\"fd-form-group__header-text\\" id=\\"mainContact\\">Main Contact</h1>
+                        <div class=\\"fd-form-group__header fd-form-group__header--no-border fd-form-group__header--no-padding\\" aria-labelledby=\\"mainContact\\">
+                            <h4 class=\\"fd-form-group__header-text\\" id=\\"mainContact\\">Main Contact</h4>
                         </div>
                         <div class=\\"fd-form-item\\">
                             <label class=\\"fd-form-label\\">Name</label>
