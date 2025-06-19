@@ -36,5 +36,9 @@ $block: #{$fd-namespace}-input;
     text-align: right;
   }
 
+  &__sr-only {
+    @include fd-screen-reader-only();
+  }
+
   @include fd-input-field-states();
 }
