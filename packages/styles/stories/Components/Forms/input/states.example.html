@@ -1,75 +1,133 @@
-
+<!-- Default Input -->
 <div class="fd-form-item">
-    <label class="fd-form-label" for="input-1aa">Normal input:</label>
-    <input class="fd-input" type="text" id="input-1aa" placeholder="Field placeholder text" aria-label="Image label">
-</div>
-
-<br /><br />
-
-<div class="fd-form-item">
-    <label class="fd-form-label" for="input-1bb">Success input:</label>
+    <label class="fd-form-label" for="input-default-field">Full Name</label>
+    <input
+      class="fd-input"
+      type="text"
+      id="input-default-field"
+      placeholder="e.g., Jane Doe"
+      autocomplete="off"
+    >
+  </div>
+  
+  <br><br>
+  
+  <!-- Success Input with Message -->
+  <div class="fd-form-item">
+    <label class="fd-form-label" for="input-success-field">Email Address</label>
     <div class="fd-popover">
-        <div class="fd-popover__control" aria-controls="popoverB2" aria-expanded="true" aria-haspopup="true">
-            <input class="fd-input is-success" type="text" id="input-1bb" placeholder="Field placeholder text" aria-label="Image label">
-        </div>
-        <div class="fd-popover__body fd-popover__body--input-message-group fd-popover__body--no-arrow" aria-hidden="false" id="popoverB2">
-            <div class="fd-form-message fd-form-message--success">Success message</div>
-        </div>
+      <div class="fd-popover__control" aria-controls="success-message" aria-expanded="true" aria-haspopup="true">
+        <input
+          class="fd-input is-success"
+          type="email"
+          id="input-success-field"
+          placeholder="e.g., user@example.com"
+          autocomplete="off"
+          aria-describedby="success-message"
+        >
+      </div>
+      <div class="fd-popover__body fd-popover__body--input-message-group fd-popover__body--no-arrow" id="success-message">
+        <div class="fd-form-message fd-form-message--success">Email address looks good.</div>
+      </div>
     </div>
-</div>
-
-<br /><br />
-
-<div class="fd-form-item">
-    <label class="fd-form-label" for="input-1cc">Error input:</label>
+  </div>
+  
+  <br><br><br><br>
+  
+  <!-- Error Input with Message -->
+  <div class="fd-form-item">
+    <label class="fd-form-label" for="input-error-field">Username</label>
     <div class="fd-popover">
-        <div class="fd-popover__control" aria-controls="popoverB3" aria-expanded="true" aria-haspopup="true">
-            <input class="fd-input is-error" type="text" id="input-1cc" placeholder="Field placeholder text" aria-label="Image label">
-        </div>
-        <div class="fd-popover__body fd-popover__body--input-message-group fd-popover__body--no-arrow" aria-hidden="false" id="popoverB3">
-            <div class="fd-form-message fd-form-message--error">Error message</div>
-        </div>
+      <div class="fd-popover__control" aria-controls="wrong-message" aria-expanded="true" aria-haspopup="true">
+        <input
+          class="fd-input is-error"
+          type="text"
+          id="input-error-field"
+          placeholder="e.g., johndoe123"
+          autocomplete="off"
+          aria-describedby="wrong-message"
+          aria-invalid="true"
+        >
+      </div>
+      <div class="fd-popover__body fd-popover__body--input-message-group fd-popover__body--no-arrow" id="wrong-message">
+        <div class="fd-form-message fd-form-message--error">Username must be at least 6 characters.</div>
+      </div>
     </div>
-</div>
-
-<br /><br />
-
-<div class="fd-form-item">
-    <label class="fd-form-label" for="input-1dd">Warning input:</label>
+  </div>
+  
+  <br><br><br><br>
+  
+  <!-- Warning Input with Message -->
+  <div class="fd-form-item">
+    <label class="fd-form-label" for="input-warning-field">Security Answer</label>
     <div class="fd-popover">
-        <div class="fd-popover__control" aria-controls="popoverB4" aria-expanded="true" aria-haspopup="true">
-            <input class="fd-input is-warning" type="text" id="input-1dd" placeholder="Field placeholder text" aria-label="Image label">
-        </div>
-        <div class="fd-popover__body fd-popover__body--input-message-group fd-popover__body--no-arrow" aria-hidden="false" id="popoverB4">
-            <div class="fd-form-message fd-form-message--warning">Warning message</div>
-        </div>
+      <div class="fd-popover__control" aria-controls="warning-message" aria-expanded="true" aria-haspopup="true">
+        <input
+          class="fd-input is-warning"
+          type="text"
+          id="input-warning-field"
+          placeholder="e.g., Your first pet's name"
+          autocomplete="off"
+          aria-describedby="warning-message"
+        >
+      </div>
+      <div class="fd-popover__body fd-popover__body--input-message-group fd-popover__body--no-arrow" id="warning-message">
+        <div class="fd-form-message fd-form-message--warning">Make sure this is easy for you to remember.</div>
+      </div>
     </div>
-</div>
-
-<br /><br />
-
-<div class="fd-form-item">
-    <label class="fd-form-label" for="input-1ee">Information input:</label>
+  </div>
+  
+  <br><br><br><br>
+  
+  <!-- Information Input with Message -->
+  <div class="fd-form-item">
+    <label class="fd-form-label" for="input-info-field">Additional Notes</label>
     <div class="fd-popover">
-        <div class="fd-popover__control" aria-controls="popoverB5" aria-expanded="true" aria-haspopup="true">
-            <input class="fd-input is-information" type="text" id="input-1ee" placeholder="Field placeholder text" aria-label="Image label">
-        </div>
-        <div class="fd-popover__body fd-popover__body--input-message-group fd-popover__body--no-arrow" aria-hidden="false" id="popoverB5">
-            <div class="fd-form-message fd-form-message--information">Information message</div>
-        </div>
+      <div class="fd-popover__control" aria-controls="info-message" aria-expanded="true" aria-haspopup="true">
+        <input
+          class="fd-input is-information"
+          type="text"
+          id="input-info-field"
+          placeholder="Optional"
+          autocomplete="off"
+          aria-describedby="info-message"
+        >
+      </div>
+      <div class="fd-popover__body fd-popover__body--input-message-group fd-popover__body--no-arrow" id="info-message">
+        <div class="fd-form-message fd-form-message--information">You can leave this blank if not applicable.</div>
+      </div>
     </div>
-</div>
-
-<br /><br />
-
-<div class="fd-form-item">
-    <label class="fd-form-label" for="input-1ff">Disabled Input:</label>
-    <input class="fd-input" placeholder="Disabled field" type="text" id="input-1ff" value="Non editable data" disabled>
-</div>
-
-<br /><br />
-
-<div class="fd-form-item">
-    <label class="fd-form-label" for="input-1gg">Read Only Input:</label>
-    <input class="fd-input" type="text" id="input-1gg" value="Read only data" readonly>
-</div>
+  </div>
+  
+  <br><br><br><br>
+  
+  <!-- Disabled Input -->
+  <div class="fd-form-item">
+    <label class="fd-form-label fd-form-label--disabled" for="input-disabled-field" aria-disabled="true">Organization</label>
+    <input
+      class="fd-input"
+      type="text"
+      id="input-disabled-field"
+      value="SAP"
+      placeholder="Organization"
+      autocomplete="off"
+      disabled
+    >
+  </div>
+  
+  <br><br>
+  
+  <!-- Read-Only Input -->
+  <div class="fd-form-item">
+    <label class="fd-form-label" for="input-readonly-field">Country</label>
+    <input
+      class="fd-input"
+      type="text"
+      id="input-readonly-field"
+      value="Canada"
+      placeholder="Country"
+      autocomplete="off"
+      readonly
+    >
+  </div>
+  
