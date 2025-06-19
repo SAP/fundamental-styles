@@ -23,12 +23,18 @@ $block: #{$fd-namespace}-form-group;
     @include fd-flex-vertical-center();
 
     width: 100%;
-    height: 2.75rem;
+    padding-inline: var(--fdFormGroupPaddingInline, 1rem);
     box-sizing: border-box;
+    height: var(--sapElement_LineHeight);
     background-color: var(--sapGroup_TitleBackground);
+    border-bottom: var(--sapGroup_TitleBorderWidth) solid var(--sapGroup_TitleBorderColor);
 
-    @include fd-compact-or-condensed() {
-      height: 2rem;
+    &--no-padding {
+      --fdFormGroupPaddingInline: 0;
+    }
+
+    &--no-border {
+      border-bottom: none;
     }
   }
 
@@ -37,7 +43,7 @@ $block: #{$fd-namespace}-form-group;
     @include fd-ellipsis();
 
     font-family: var(--sapFontHeaderFamily);
-    font-size: var(--sapFontHeader6Size);
+    font-size: var(--sapGroup_Title_FontSize);
     font-weight: bold;
     color: var(--sapGroup_TitleTextColor);
   }
