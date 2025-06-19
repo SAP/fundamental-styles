@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.41.0-rc.21](https://github.com/SAP/fundamental-styles/compare/v0.41.0-rc.20...v0.41.0-rc.21) (2025-06-19)
+
+### Bug Fixes
+
+- **styles:** add improvements for Field Set, Form Grid, Group, Header, Item and Label [ci visual] ([#6098](https://github.com/SAP/fundamental-styles/issues/6098)) ([769bc67](https://github.com/SAP/fundamental-styles/commit/769bc6703ec1c7e63935494683631e25d67e5936))
+
 # [0.41.0-rc.20](https://github.com/SAP/fundamental-styles/compare/v0.41.0-rc.19...v0.41.0-rc.20) (2025-06-19)
 
 **Note:** Version bump only for package fundamental-styles
@@ -6207,9 +6213,9 @@ Co-authored-by: droshev <mladen.droshev@sap.com>
 
 - added a new modifier class to fd-row to achieve even alignment of its elements:fd-row--top in a form.
   Before:
-  <div class="fd-row">
-  After:
-  <div class="fd-row fd-row--top">
+    <div class="fd-row">
+    After:
+    <div class="fd-row fd-row--top">
 
 ### Bug Fixes
 
