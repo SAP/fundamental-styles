@@ -26,7 +26,7 @@ Do not use the text area if
 - You only want them to enter a single line of text, use the input component instead.
 - Users need to enter formatted text. Use the rich text editor instead.
 `,
-    tags: ['f3', 'a11y', 'theme']
+    tags: []
   }
 };
 export const Primary = () => primaryExampleHtml;
@@ -50,7 +50,6 @@ DisabledAndReadOnly.parameters = {
   }
 };
 export const States = () => statesExampleHtml;
-States.storyName = 'Responsiveness';
 States.parameters = {
   docs: {
     description: {
