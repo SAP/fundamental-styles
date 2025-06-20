@@ -20971,65 +20971,93 @@ exports[`Check stories > Components/Forms/Form Label > Story Required > Should m
 `;
 
 exports[`Check stories > Components/Forms/Form Message > Story Error > Should match snapshot 1`] = `
-"<div class=\\"fd-form-item\\" style=\\"min-height: 100px;\\">
-        <label class=\\"fd-form-label\\" for=\\"input-1cc\\">Error input:</label>
-        <div class=\\"fd-form-input-message-group fd-popover\\">
-            <div class=\\"fd-popover__control\\" aria-controls=\\"popoverB3\\" aria-expanded=\\"true\\" aria-haspopup=\\"true\\">
-                <input class=\\"fd-input is-error\\" type=\\"text\\" id=\\"input-1cc\\" placeholder=\\"Field placeholder text\\" aria-label=\\"Image label\\">
-            </div>
-            <div class=\\"fd-popover__body fd-popover__body--input-message-group fd-popover__body--no-arrow\\" aria-hidden=\\"false\\" id=\\"popoverB3\\">
-                <div class=\\"fd-form-message fd-form-message--error\\" >Error message</div>
-            </div>
-        </div>
+"<div class=\\"fd-form-item\\">
+    <label class=\\"fd-form-label\\" for=\\"input-error-field\\">Username</label>
+    <div class=\\"fd-popover\\">
+      <div class=\\"fd-popover__control\\" aria-controls=\\"error-message\\" aria-expanded=\\"true\\" aria-haspopup=\\"true\\">
+        <input
+          class=\\"fd-input is-error\\"
+          type=\\"text\\"
+          id=\\"input-error-field\\"
+          placeholder=\\"e.g., johndoe123\\"
+          autocomplete=\\"off\\"
+          aria-describedby=\\"input-error-message error-message\\"
+          aria-invalid=\\"true\\"
+        >
+        <div class=\\"fd-input__sr-only\\" id=\\"input-error-message\\">Value State Error</div>
+      </div>
+      <div class=\\"fd-popover__body fd-popover__body--input-message-group fd-popover__body--no-arrow\\" id=\\"error-message\\">
+        <div class=\\"fd-form-message fd-form-message--error\\">Username must be at least 6 characters.</div>
+      </div>
     </div>
+ </div>
 "
 `;
 
 exports[`Check stories > Components/Forms/Form Message > Story Information > Should match snapshot 1`] = `
-"<div class=\\"fd-form-item\\" style=\\"min-height: 100px;\\">
-    <label class=\\"fd-form-label\\" for=\\"input-1ee\\">Information input:</label>
-    <div class=\\"fd-form-input-message-group fd-popover\\">
-        <div class=\\"fd-popover__control\\" aria-controls=\\"popoverB5\\" aria-expanded=\\"true\\" aria-haspopup=\\"true\\">
-            <input class=\\"fd-input is-information\\" type=\\"text\\" id=\\"input-1ee\\"
-                   placeholder=\\"Field placeholder text\\" aria-label=\\"Image label\\">
-        </div>
-        <div class=\\"fd-popover__body fd-popover__body--input-message-group fd-popover__body--no-arrow\\"
-             aria-hidden=\\"false\\" id=\\"popoverB5\\">
-            <div class=\\"fd-form-message fd-form-message--information\\">Information message</div>
-        </div>
+"<div class=\\"fd-form-item\\">
+    <label class=\\"fd-form-label\\" for=\\"input-info-field\\">Additional Notes</label>
+    <div class=\\"fd-popover\\">
+      <div class=\\"fd-popover__control\\" aria-controls=\\"info-message\\" aria-expanded=\\"true\\" aria-haspopup=\\"true\\">
+        <input
+          class=\\"fd-input is-information\\"
+          type=\\"text\\"
+          id=\\"input-info-field\\"
+          placeholder=\\"Optional\\"
+          autocomplete=\\"off\\"
+          aria-describedby=\\"input-info-message info-message\\"
+        >
+        <div class=\\"fd-input__sr-only\\" id=\\"input-info-message\\">Value State Information</div>
+      </div>
+      <div class=\\"fd-popover__body fd-popover__body--input-message-group fd-popover__body--no-arrow\\" id=\\"info-message\\">
+        <div class=\\"fd-form-message fd-form-message--information\\">You can leave this blank if not applicable.</div>
+      </div>
     </div>
-</div>
-"
+</div>"
 `;
 
 exports[`Check stories > Components/Forms/Form Message > Story Success > Should match snapshot 1`] = `
-"<div class=\\"fd-form-item\\" style=\\"min-height: 100px;\\">
-        <label class=\\"fd-form-label\\" for=\\"input-1bb\\">Success input:</label>
-        <div class=\\"fd-form-input-message-group fd-popover\\">
-            <div class=\\"fd-popover__control\\" aria-controls=\\"popoverB2\\" aria-expanded=\\"true\\" aria-haspopup=\\"true\\">
-                <input class=\\"fd-input is-success\\" type=\\"text\\" id=\\"input-1bb\\" placeholder=\\"Field placeholder text\\" aria-label=\\"Image label\\">
-            </div>
-            <div class=\\"fd-popover__body fd-popover__body--input-message-group fd-popover__body--no-arrow\\" aria-hidden=\\"false\\" id=\\"popoverB2\\">
-                <div class=\\"fd-form-message fd-form-message--success\\">Success message</div>
-            </div>
-        </div>
+"<div class=\\"fd-form-item\\">
+    <label class=\\"fd-form-label\\" for=\\"input-success-field\\">Email Address</label>
+    <div class=\\"fd-popover\\">
+      <div class=\\"fd-popover__control\\" aria-controls=\\"success-message\\" aria-expanded=\\"true\\" aria-haspopup=\\"true\\">
+        <input
+          class=\\"fd-input is-success\\"
+          type=\\"email\\"
+          id=\\"input-success-field\\"
+          placeholder=\\"e.g., user@example.com\\"
+          autocomplete=\\"off\\"
+          aria-describedby=\\"input-success-message success-message\\"
+        >
+        <div class=\\"fd-input__sr-only\\" id=\\"input-success-message\\">Value State Success</div>
+      </div>
+      <div class=\\"fd-popover__body fd-popover__body--input-message-group fd-popover__body--no-arrow\\" id=\\"success-message\\">
+        <div class=\\"fd-form-message fd-form-message--success\\">Email address looks good.</div>
+      </div>
     </div>
-"
+</div>"
 `;
 
 exports[`Check stories > Components/Forms/Form Message > Story Warning > Should match snapshot 1`] = `
-"<div class=\\"fd-form-item\\" style=\\"min-height: 100px;\\">
-        <label class=\\"fd-form-label\\" for=\\"input-1cc\\">Warning input:</label>
-        <div class=\\"fd-form-input-message-group fd-popover\\">
-            <div class=\\"fd-popover__control\\" aria-controls=\\"popoverB4\\" aria-expanded=\\"true\\" aria-haspopup=\\"true\\">
-                <input class=\\"fd-input is-warning\\" type=\\"text\\" id=\\"input-1cc\\" placeholder=\\"Field placeholder text\\" aria-label=\\"Image label\\">
-            </div>
-            <div class=\\"fd-popover__body fd-popover__body--input-message-group fd-popover__body--no-arrow\\" aria-hidden=\\"false\\" id=\\"popoverB4\\">
-                <div class=\\"fd-form-message fd-form-message--warning\\" >Warning message</div>
-            </div>
-        </div>
+"<div class=\\"fd-form-item\\">
+    <label class=\\"fd-form-label\\" for=\\"input-warning-field\\">Security Answer</label>
+    <div class=\\"fd-popover\\">
+      <div class=\\"fd-popover__control\\" aria-controls=\\"warn-message\\" aria-expanded=\\"true\\" aria-haspopup=\\"true\\">
+        <input
+          class=\\"fd-input is-warning\\"
+          type=\\"text\\"
+          id=\\"input-warning-field\\"
+          placeholder=\\"e.g., Your first pet's name\\"
+          autocomplete=\\"off\\"
+          aria-describedby=\\"input-warn-message warn-message\\"
+        >
+        <div class=\\"fd-input__sr-only\\" id=\\"input-warn-message\\">Value State Warning</div>
+      </div>
+      <div class=\\"fd-popover__body fd-popover__body--input-message-group fd-popover__body--no-arrow\\" id=\\"warn-message\\">
+        <div class=\\"fd-form-message fd-form-message--warning\\">Make sure this is easy for you to remember.</div>
+      </div>
     </div>
-"
+</div>"
 `;
 
 exports[`Check stories > Components/Forms/Input > Story Primary > Should match snapshot 1`] = `
@@ -21218,8 +21246,9 @@ exports[`Check stories > Components/Forms/Input > Story States > Should match sn
           id=\\"input-success-field\\"
           placeholder=\\"e.g., user@example.com\\"
           autocomplete=\\"off\\"
-          aria-describedby=\\"success-message\\"
+          aria-describedby=\\"success-message-input success-message\\"
         >
+        <div class=\\"fd-input__sr-only\\" id=\\"success-message-input\\">Value State Success</div>
       </div>
       <div class=\\"fd-popover__body fd-popover__body--input-message-group fd-popover__body--no-arrow\\" id=\\"success-message\\">
         <div class=\\"fd-form-message fd-form-message--success\\">Email address looks good.</div>
@@ -21233,22 +21262,24 @@ exports[`Check stories > Components/Forms/Input > Story States > Should match sn
   <div class=\\"fd-form-item\\">
     <label class=\\"fd-form-label\\" for=\\"input-error-field\\">Username</label>
     <div class=\\"fd-popover\\">
-      <div class=\\"fd-popover__control\\" aria-controls=\\"wrong-message\\" aria-expanded=\\"true\\" aria-haspopup=\\"true\\">
+      <div class=\\"fd-popover__control\\" aria-controls=\\"error-message-state\\" aria-expanded=\\"true\\" aria-haspopup=\\"true\\">
         <input
           class=\\"fd-input is-error\\"
           type=\\"text\\"
           id=\\"input-error-field\\"
           placeholder=\\"e.g., johndoe123\\"
           autocomplete=\\"off\\"
-          aria-describedby=\\"wrong-message\\"
+          aria-describedby=\\"error-message-input error-message-state\\"
           aria-invalid=\\"true\\"
         >
+        <div class=\\"fd-input__sr-only\\" id=\\"error-message-input\\">Value State Error</div>
       </div>
-      <div class=\\"fd-popover__body fd-popover__body--input-message-group fd-popover__body--no-arrow\\" id=\\"wrong-message\\">
+      <div class=\\"fd-popover__body fd-popover__body--input-message-group fd-popover__body--no-arrow\\" id=\\"error-message-state\\">
         <div class=\\"fd-form-message fd-form-message--error\\">Username must be at least 6 characters.</div>
       </div>
     </div>
   </div>
+
   
   <br><br><br><br>
   
@@ -21256,22 +21287,22 @@ exports[`Check stories > Components/Forms/Input > Story States > Should match sn
   <div class=\\"fd-form-item\\">
     <label class=\\"fd-form-label\\" for=\\"input-warning-field\\">Security Answer</label>
     <div class=\\"fd-popover\\">
-      <div class=\\"fd-popover__control\\" aria-controls=\\"warning-message\\" aria-expanded=\\"true\\" aria-haspopup=\\"true\\">
+      <div class=\\"fd-popover__control\\" aria-controls=\\"warn-message\\" aria-expanded=\\"true\\" aria-haspopup=\\"true\\">
         <input
           class=\\"fd-input is-warning\\"
           type=\\"text\\"
           id=\\"input-warning-field\\"
           placeholder=\\"e.g., Your first pet's name\\"
           autocomplete=\\"off\\"
-          aria-describedby=\\"warning-message\\"
+          aria-describedby=\\"warn-message-input warn-message\\"
         >
+        <div class=\\"fd-input__sr-only\\" id=\\"warn-message-input\\">Value State Warning</div>
       </div>
-      <div class=\\"fd-popover__body fd-popover__body--input-message-group fd-popover__body--no-arrow\\" id=\\"warning-message\\">
+      <div class=\\"fd-popover__body fd-popover__body--input-message-group fd-popover__body--no-arrow\\" id=\\"warn-message\\">
         <div class=\\"fd-form-message fd-form-message--warning\\">Make sure this is easy for you to remember.</div>
       </div>
     </div>
   </div>
-  
   <br><br><br><br>
   
   <!-- Information Input with Message -->
@@ -21285,8 +21316,9 @@ exports[`Check stories > Components/Forms/Input > Story States > Should match sn
           id=\\"input-info-field\\"
           placeholder=\\"Optional\\"
           autocomplete=\\"off\\"
-          aria-describedby=\\"info-message\\"
+          aria-describedby=\\"info-message-input info-message\\"
         >
+        <div class=\\"fd-input__sr-only\\" id=\\"info-message-input\\">Value State Information</div>
       </div>
       <div class=\\"fd-popover__body fd-popover__body--input-message-group fd-popover__body--no-arrow\\" id=\\"info-message\\">
         <div class=\\"fd-form-message fd-form-message--information\\">You can leave this blank if not applicable.</div>

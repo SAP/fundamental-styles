@@ -1,11 +1,19 @@
-<div class="fd-form-item" style="min-height: 100px;">
-        <label class="fd-form-label" for="input-1bb">Success input:</label>
-        <div class="fd-form-input-message-group fd-popover">
-            <div class="fd-popover__control" aria-controls="popoverB2" aria-expanded="true" aria-haspopup="true">
-                <input class="fd-input is-success" type="text" id="input-1bb" placeholder="Field placeholder text" aria-label="Image label">
-            </div>
-            <div class="fd-popover__body fd-popover__body--input-message-group fd-popover__body--no-arrow" aria-hidden="false" id="popoverB2">
-                <div class="fd-form-message fd-form-message--success">Success message</div>
-            </div>
-        </div>
+<div class="fd-form-item">
+    <label class="fd-form-label" for="input-success-field">Email Address</label>
+    <div class="fd-popover">
+      <div class="fd-popover__control" aria-controls="success-message" aria-expanded="true" aria-haspopup="true">
+        <input
+          class="fd-input is-success"
+          type="email"
+          id="input-success-field"
+          placeholder="e.g., user@example.com"
+          autocomplete="off"
+          aria-describedby="input-success-message success-message"
+        >
+        <div class="fd-input__sr-only" id="input-success-message">Value State Success</div>
+      </div>
+      <div class="fd-popover__body fd-popover__body--input-message-group fd-popover__body--no-arrow" id="success-message">
+        <div class="fd-form-message fd-form-message--success">Email address looks good.</div>
+      </div>
     </div>
+</div>
