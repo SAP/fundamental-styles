@@ -49,6 +49,10 @@ $block: #{$fd-namespace}-textarea;
     border-radius: 0 var(--sapField_BorderCornerRadius) var(--sapField_BorderCornerRadius) 0 !important;
   }
 
+  &__sr-only {
+    @include fd-screen-reader-only();
+  }
+
   &[aria-expanded="false"] {
     z-index: 0;
   }
