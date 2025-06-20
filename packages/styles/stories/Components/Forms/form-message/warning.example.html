@@ -1,11 +1,19 @@
-<div class="fd-form-item" style="min-height: 100px;">
-        <label class="fd-form-label" for="input-1cc">Warning input:</label>
-        <div class="fd-form-input-message-group fd-popover">
-            <div class="fd-popover__control" aria-controls="popoverB4" aria-expanded="true" aria-haspopup="true">
-                <input class="fd-input is-warning" type="text" id="input-1cc" placeholder="Field placeholder text" aria-label="Image label">
-            </div>
-            <div class="fd-popover__body fd-popover__body--input-message-group fd-popover__body--no-arrow" aria-hidden="false" id="popoverB4">
-                <div class="fd-form-message fd-form-message--warning" >Warning message</div>
-            </div>
-        </div>
+<div class="fd-form-item">
+    <label class="fd-form-label" for="input-warning-field">Security Answer</label>
+    <div class="fd-popover">
+      <div class="fd-popover__control" aria-controls="warn-message" aria-expanded="true" aria-haspopup="true">
+        <input
+          class="fd-input is-warning"
+          type="text"
+          id="input-warning-field"
+          placeholder="e.g., Your first pet's name"
+          autocomplete="off"
+          aria-describedby="input-warn-message warn-message"
+        >
+        <div class="fd-input__sr-only" id="input-warn-message">Value State Warning</div>
+      </div>
+      <div class="fd-popover__body fd-popover__body--input-message-group fd-popover__body--no-arrow" id="warn-message">
+        <div class="fd-form-message fd-form-message--warning">Make sure this is easy for you to remember.</div>
+      </div>
     </div>
+</div>

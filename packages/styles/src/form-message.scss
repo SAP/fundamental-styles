@@ -7,22 +7,22 @@ $block: #{$fd-namespace}-form-message;
 $form-message-states: (
   "error": (
     "color": var(--sapErrorBackground),
-    "icon": "\e0b1",
+    "icon": "\e1ec",
     "iconColor": var(--sapNegativeElementColor)
   ),
   "warning": (
     "color": var(--sapWarningBackground),
-    "icon": "\e201",
+    "icon": "\e053",
     "iconColor": var(--sapCriticalElementColor)
   ),
   "success": (
     "color": var(--sapSuccessBackground),
-    "icon": "\e203",
+    "icon": "\e1c1",
     "iconColor": var(--sapPositiveElementColor)
   ),
   "information": (
     "color": var(--sapInformationBackground),
-    "icon": "\e202",
+    "icon": "\e289",
     "iconColor": var(--sapInformativeElementColor)
   ),
 );
@@ -39,7 +39,7 @@ $form-message-states: (
   width: 100%;
   font-size: var(--sapFontSmallSize);
   font-weight: normal;
-  line-height: normal;
+  line-height: 1.125rem;;
   color: var(--sapTextColor);
   white-space: pre-line !important;
   box-shadow: var(--fdMessage_Box_Shadow);

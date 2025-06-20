@@ -1,13 +1,19 @@
-<div class="fd-form-item" style="min-height: 100px;">
-    <label class="fd-form-label" for="input-1ee">Information input:</label>
-    <div class="fd-form-input-message-group fd-popover">
-        <div class="fd-popover__control" aria-controls="popoverB5" aria-expanded="true" aria-haspopup="true">
-            <input class="fd-input is-information" type="text" id="input-1ee"
-                   placeholder="Field placeholder text" aria-label="Image label">
-        </div>
-        <div class="fd-popover__body fd-popover__body--input-message-group fd-popover__body--no-arrow"
-             aria-hidden="false" id="popoverB5">
-            <div class="fd-form-message fd-form-message--information">Information message</div>
-        </div>
+<div class="fd-form-item">
+    <label class="fd-form-label" for="input-info-field">Additional Notes</label>
+    <div class="fd-popover">
+      <div class="fd-popover__control" aria-controls="info-message" aria-expanded="true" aria-haspopup="true">
+        <input
+          class="fd-input is-information"
+          type="text"
+          id="input-info-field"
+          placeholder="Optional"
+          autocomplete="off"
+          aria-describedby="input-info-message info-message"
+        >
+        <div class="fd-input__sr-only" id="input-info-message">Value State Information</div>
+      </div>
+      <div class="fd-popover__body fd-popover__body--input-message-group fd-popover__body--no-arrow" id="info-message">
+        <div class="fd-form-message fd-form-message--information">You can leave this blank if not applicable.</div>
+      </div>
     </div>
 </div>

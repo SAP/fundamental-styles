@@ -1,11 +1,20 @@
-<div class="fd-form-item" style="min-height: 100px;">
-        <label class="fd-form-label" for="input-1cc">Error input:</label>
-        <div class="fd-form-input-message-group fd-popover">
-            <div class="fd-popover__control" aria-controls="popoverB3" aria-expanded="true" aria-haspopup="true">
-                <input class="fd-input is-error" type="text" id="input-1cc" placeholder="Field placeholder text" aria-label="Image label">
-            </div>
-            <div class="fd-popover__body fd-popover__body--input-message-group fd-popover__body--no-arrow" aria-hidden="false" id="popoverB3">
-                <div class="fd-form-message fd-form-message--error" >Error message</div>
-            </div>
-        </div>
+<div class="fd-form-item">
+    <label class="fd-form-label" for="input-error-field">Username</label>
+    <div class="fd-popover">
+      <div class="fd-popover__control" aria-controls="error-message" aria-expanded="true" aria-haspopup="true">
+        <input
+          class="fd-input is-error"
+          type="text"
+          id="input-error-field"
+          placeholder="e.g., johndoe123"
+          autocomplete="off"
+          aria-describedby="input-error-message error-message"
+          aria-invalid="true"
+        >
+        <div class="fd-input__sr-only" id="input-error-message">Value State Error</div>
+      </div>
+      <div class="fd-popover__body fd-popover__body--input-message-group fd-popover__body--no-arrow" id="error-message">
+        <div class="fd-form-message fd-form-message--error">Username must be at least 6 characters.</div>
+      </div>
     </div>
+ </div>
