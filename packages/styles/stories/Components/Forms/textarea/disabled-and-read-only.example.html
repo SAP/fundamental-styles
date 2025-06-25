@@ -1,12 +1,42 @@
 <div class="fd-form-item">
-    <label class="fd-form-label" for="textarea-7">Text area:</label>
-    <textarea class="fd-textarea" id="textarea-7" disabled>Disabled textarea</textarea>
+    <label class="fd-form-label" for="textarea-7" aria-disabled="true">Message (Disabled)</label>
+    <textarea
+      class="fd-textarea"
+      rows="2"
+      id="textarea-7"
+      name="message-disabled"
+      aria-required="false"
+      disabled
+      aria-disabled="true">Disabled textarea
+    </textarea>
 </div>
+
+<br><br>
+
 <div class="fd-form-item">
-    <label class="fd-form-label" for="textarea-8">Text area:</label>
-    <textarea class="fd-textarea" id="textarea-8" readonly>Read Only textarea</textarea>
+    <label class="fd-form-label" for="textarea-8">Message (Read-Only)</label>
+    <textarea
+      class="fd-textarea"
+      rows="2"
+      id="textarea-8"
+      name="message-readonly"
+      aria-required="false"
+      readonly
+      aria-readonly="true">Read Only textarea
+    </textarea>
 </div>
+
+<br><br>
+
 <div class="fd-form-item">
-    <label class="fd-form-label" for="textarea-9">Text area:</label>
-    <textarea class="fd-textarea is-focus" id="textarea-9" readonly>Focussed Read Only textarea</textarea>
-</div>
+    <label class="fd-form-label" for="textarea-9">Message (Read-Only & Focused)</label>
+    <textarea
+      class="fd-textarea is-focus"
+      rows="2"
+      id="textarea-9"
+      name="message-readonly-focus"
+      aria-required="false"
+      readonly
+      aria-readonly="true"
+    >Focused Read Only textarea</textarea>
+  </div>
