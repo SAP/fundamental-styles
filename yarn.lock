@@ -10640,7 +10640,7 @@ __metadata:
     postcss: "npm:8.4.38"
     postcss-banner: "npm:4.0.1"
     postcss-cli: "npm:9.1.0"
-    postcss-import: "npm:14.1.0"
+    postcss-import: "npm:16.1.1"
     postcss-normalize-charset: "npm:4.0.1"
     postcss-scss: "npm:4.0.9"
     prettier: "npm:^3.2.5"
@@ -16129,16 +16129,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"postcss-import@npm:14.1.0":
-  version: 14.1.0
-  resolution: "postcss-import@npm:14.1.0"
+"postcss-import@npm:16.1.1":
+  version: 16.1.1
+  resolution: "postcss-import@npm:16.1.1"
   dependencies:
     postcss-value-parser: "npm:^4.0.0"
     read-cache: "npm:^1.0.0"
     resolve: "npm:^1.1.7"
   peerDependencies:
     postcss: ^8.0.0
-  checksum: 10/434ab43145ad6beeb3cd7405596cb29920061e9d55091196e0264daf0a4e543a8cf1568c233e5a4466786749f904c03a9d51d406685055af2a14a8337d8773d5
+  checksum: 10/2afac2b6e25f263f45ac2168c5f5e4b2e49e3d44c620338138fe89cf81bd83e6056784a26d54c58611d05dda18bc56069212484ec750bbf6d2e29b623460a7f9
   languageName: node
   linkType: hard
 
