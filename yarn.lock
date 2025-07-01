@@ -8349,7 +8349,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"cssnano-preset-default@npm:^7.0.5":
+"cssnano-preset-default@npm:^7.0.7":
   version: 7.0.7
   resolution: "cssnano-preset-default@npm:7.0.7"
   dependencies:
@@ -8398,15 +8398,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"cssnano@npm:7.0.5":
-  version: 7.0.5
-  resolution: "cssnano@npm:7.0.5"
+"cssnano@npm:7.0.7":
+  version: 7.0.7
+  resolution: "cssnano@npm:7.0.7"
   dependencies:
-    cssnano-preset-default: "npm:^7.0.5"
-    lilconfig: "npm:^3.1.2"
+    cssnano-preset-default: "npm:^7.0.7"
+    lilconfig: "npm:^3.1.3"
   peerDependencies:
-    postcss: ^8.4.31
-  checksum: 10/730095a9c1f149aa36d3f72c600756f974bd20f22e02fae560854f1cddb149579d20152355859f358bcda5da6811ee5b6b1db546d56795dce41a6ac433d56b9f
+    postcss: ^8.4.32
+  checksum: 10/c5b3123757834537f818e0f3eb6b20da51a194fefed599632f7ddd600c9e25d38abe38a22582a579660a49368a146c294e2096b2837cbeeda51ddfc85b108601
   languageName: node
   linkType: hard
 
@@ -10614,7 +10614,7 @@ __metadata:
     conventional-recommended-bump: "npm:9.0.0"
     core-js: "npm:3.35.1"
     cross-env: "npm:7.0.3"
-    cssnano: "npm:7.0.5"
+    cssnano: "npm:7.0.7"
     eslint: "npm:8.57.0"
     eslint-plugin-import: "npm:2.31.0"
     eslint-plugin-jsx-a11y: "npm:6.10.1"
@@ -13260,7 +13260,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"lilconfig@npm:^3.1.2":
+"lilconfig@npm:^3.1.3":
   version: 3.1.3
   resolution: "lilconfig@npm:3.1.3"
   checksum: 10/b932ce1af94985f0efbe8896e57b1f814a48c8dbd7fc0ef8469785c6303ed29d0090af3ccad7e36b626bfca3a4dc56cc262697e9a8dd867623cf09a39d54e4c3
