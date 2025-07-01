@@ -97,7 +97,7 @@
         "husky": "7.0.4",
         "jsonc-eslint-parser": "2.1.0",
         "lerna": "8.2.1",
-        "lint-staged": "12.4.2",
+        "lint-staged": "16.1.2",
         "lodash": "4.17.21",
         "markdown-to-jsx": "7.1.2",
         "normalize.css": "8.0.1",
