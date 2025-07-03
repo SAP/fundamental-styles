@@ -1,30 +1,66 @@
+<!-- Input with icon on the left -->
+<div class="fd-form-item">
+    <label class="fd-form-label" for="input-icon-left">Input with icon on the left</label>
+    <div class="fd-input-group">
+        <span class="fd-input-group__addon">
+            <span class="sap-icon--employee" role="presentation" aria-hidden="true"></span>
+        </span>
+        <input 
+            class="fd-input fd-input-group__input" 
+            type="text" 
+            id="input-icon-left" 
+            name="employee-name" 
+            placeholder="Name" 
+            autocomplete="off"
+            aria-describedby="input-icon-left-note">
+        <div class="fd-input-group__sr-only" id="input-icon-left-note">
+            Employee name
+        </div>
+    </div>
+</div>
 
+<br />
+
+<!-- Input with icon on the right -->
 <div class="fd-form-item">
-    <label class="fd-form-label" for="aqwsde117">Input with icon on the left</label>
+    <label class="fd-form-label" for="input-icon-right">Input with icon on the right</label>
     <div class="fd-input-group">
+        <input 
+            class="fd-input fd-input-group__input" 
+            type="text" 
+            id="input-icon-right" 
+            name="visibility-toggle" 
+            placeholder="Enter content" 
+            autocomplete="off"
+            aria-describedby="input-icon-right-note">
         <span class="fd-input-group__addon">
-            <span class="sap-icon--employee" role="presentation"></span>
+            <span class="sap-icon--hide" role="presentation" aria-hidden="true"></span>
         </span>
-        <input class="fd-input fd-input-group__input" type="text" placeholder="Placeholder" id="aqwsde117" name="" value="1000000">
+        <div class="fd-input-group__sr-only" id="input-icon-right-note">
+            Enter content to toggle visibility
+        </div>
     </div>
 </div>
+
 <br />
+
+<!-- Input with icon on the right and right-aligned text -->
 <div class="fd-form-item">
-    <label class="fd-form-label" for="aqwsde118">Input with icon on the right</label>
+    <label class="fd-form-label" for="input-icon-right-align">Input with icon on the right and right aligned input text</label>
     <div class="fd-input-group">
-        <input class="fd-input fd-input-group__input" type="text" placeholder="Placeholder" id="aqwsde118" name="" value="1000000">
+        <input 
+            class="fd-input fd-input-group__input right-align" 
+            type="text" 
+            id="input-icon-right-align" 
+            name="secure-entry" 
+            placeholder="Enter content"
+            autocomplete="off" 
+            aria-describedby="input-icon-right-align-note">
         <span class="fd-input-group__addon">
-            <span class="sap-icon--hide" role="presentation"></span>
+            <span class="sap-icon--hide" role="presentation" aria-hidden="true"></span>
         </span>
-    </div>
-</div>
-<br />
-<div class="fd-form-item">
-    <label class="fd-form-label" for="aqwsde119">Input with icon on the right and right aligned input text</label>
-    <div class="fd-input-group">
-        <input class="fd-input fd-input-group__input right-align" type="text" id="aqwsde119" name="" value="1000000">
-        <span class="fd-input-group__addon">
-            <span class="sap-icon--hide" role="presentation"></span>
-        </span>
+        <div class="fd-input-group__sr-only" id="input-icon-right-align-note">
+            Right-aligned input for secure entry
+        </div>
     </div>
 </div>
