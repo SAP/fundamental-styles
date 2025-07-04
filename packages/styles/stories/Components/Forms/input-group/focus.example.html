@@ -1,38 +1,116 @@
-
+<!-- Default -->
 <div class="fd-form-item">
-    <label class="fd-form-label" for="aqwsde133">Default</label>
+    <label class="fd-form-label" for="input-default">Default</label>
     <div class="fd-input-group is-focus">
-        <span class="fd-input-group__addon">$</span>
-        <input class="fd-input fd-input-group__input" type="text" placeholder="Placeholder" id="aqwsde133" name="" value="1234568910">
+      <span class="fd-input-group__addon" aria-hidden="true">$</span>
+      <input
+        class="fd-input fd-input-group__input"
+        type="text"
+        id="input-default"
+        name="defaultStateFocus"
+        value="100"
+        placeholder="Placeholder"
+        autocomplete="off"
+        aria-describedby="input-default-note">
+      <div class="fd-input-group__sr-only" id="input-default-note">
+        Enter an amount in USD
+      </div>
     </div>
-</div>
-<br />
-<div class="fd-form-item">
-    <label class="fd-form-label" for="aqwsde134">Error State</label>
+  </div>
+  
+  <br />
+  
+  <!-- Error -->
+  <div class="fd-form-item">
+    <label class="fd-form-label" for="input-error">Error State</label>
     <div class="fd-input-group is-error is-focus">
-        <input class="fd-input fd-input-group__input" type="text" placeholder="Placeholder" id="aqwsde134" name="" value="1000000">
-        <span class="fd-input-group__addon">
-            <span class="sap-icon--hide" role="presentation"></span>
-        </span>
+      <input
+        class="fd-input fd-input-group__input"
+        type="text"
+        id="input-error"
+        name="errorStateFocus"
+        value="100"
+        placeholder="Placeholder"
+        autocomplete="off"
+        aria-describedby="input-error-note">
+      <span class="fd-input-group__addon">
+        <span class="sap-icon--hide" role="presentation" aria-hidden="true"></span>
+      </span>
+      <div class="fd-input-group__sr-only" id="input-error-note">
+        Value State Error: The entered value is invalid.
+      </div>
     </div>
-</div>
-<br />
-<div class="fd-form-item">
-    <label class="fd-form-label" for="aqwsde134ff">Success State</label>
+  </div>
+  
+  <br />
+  
+  <!-- Success -->
+  <div class="fd-form-item">
+    <label class="fd-form-label" for="input-success">Success State</label>
     <div class="fd-input-group is-success is-focus">
-        <input class="fd-input fd-input-group__input" type="text" placeholder="Placeholder" id="aqwsde134ff" name="" value="1000000">
-        <span class="fd-input-group__addon">
-            <span class="sap-icon--hide" role="presentation"></span>
-        </span>
+      <input
+        class="fd-input fd-input-group__input"
+        type="text"
+        id="input-success"
+        name="successStateFocus"
+        value="100"
+        placeholder="Placeholder"
+        autocomplete="off"
+        aria-describedby="input-success-note">
+      <span class="fd-input-group__addon">
+        <span class="sap-icon--hide" role="presentation" aria-hidden="true"></span>
+      </span>
+      <div class="fd-input-group__sr-only" id="input-success-note">
+        Value State Success: The value entered is valid.
+      </div>
     </div>
-</div>
-<br />
-<div class="fd-form-item">
-    <label class="fd-form-label" for="aqwsde134ss">Warning State</label>
+  </div>
+  
+  <br />
+  
+  <!-- Warning -->
+  <div class="fd-form-item">
+    <label class="fd-form-label" for="input-warning">Warning State</label>
     <div class="fd-input-group is-warning is-focus">
-        <input class="fd-input fd-input-group__input" type="text" placeholder="Placeholder" id="aqwsde134ss" name="" value="1000000">
-        <span class="fd-input-group__addon">
-            <span class="sap-icon--hide" role="presentation"></span>
-        </span>
+      <input
+        class="fd-input fd-input-group__input"
+        type="text"
+        id="input-warning"
+        name="warningStateFocus"
+        value="100"
+        placeholder="Placeholder"
+        autocomplete="off"
+        aria-describedby="input-warning-note">
+      <span class="fd-input-group__addon">
+        <span class="sap-icon--hide" role="presentation" aria-hidden="true"></span>
+      </span>
+      <div class="fd-input-group__sr-only" id="input-warning-note">
+        Value State Warning: Please double-check this value.
+      </div>
     </div>
-</div>
+  </div>
+  
+  <br />
+  
+  <!-- Information -->
+  <div class="fd-form-item">
+    <label class="fd-form-label" for="input-info">Information State</label>
+    <div class="fd-input-group is-information is-focus">
+      <input
+        class="fd-input fd-input-group__input"
+        type="text"
+        id="input-info"
+        name="infoStateFocus"
+        value="100"
+        placeholder="Placeholder"
+        autocomplete="off"
+        aria-describedby="input-info-note">
+      <span class="fd-input-group__addon">
+        <span class="sap-icon--hide" role="presentation" aria-hidden="true"></span>
+      </span>
+      <div class="fd-input-group__sr-only" id="input-info-note">
+        Value State Information: The input is optional.
+      </div>
+    </div>
+  </div>
+  

@@ -1,33 +1,85 @@
+<!-- Left Aligned Text Add-on -->
+<div class="fd-form-item">
+    <label class="fd-form-label" for="amount-usd-left">Left Aligned Text Add-on</label>
+    <div class="fd-input-group">
+        <span class="fd-input-group__addon" aria-hidden="true">$</span>
+        <input 
+            class="fd-input fd-input-group__input" 
+            type="text" 
+            id="amount-usd-left" 
+            name="amount-usd-left" 
+            placeholder="Placeholder" 
+            value="100"
+            autocomplete="off"
+            aria-describedby="amount-usd-left-note">
+        <div class="fd-input-group__sr-only" id="amount-usd-left-note">
+            Enter amount in US dollars
+        </div>
+    </div>
+</div>
 
+<br />
+
+<!-- Right Aligned Text Add-on -->
 <div class="fd-form-item">
-    <label class="fd-form-label" for="aqwsde113">Left Aligned Text Add-on</label>
+    <label class="fd-form-label" for="amount-euro-right">Right Aligned Text Add-on</label>
     <div class="fd-input-group">
-        <span class="fd-input-group__addon">$</span>
-        <input class="fd-input fd-input-group__input" type="text" placeholder="Placeholder" id="aqwsde113" name="" value="1234568910 ">
+        <input 
+            class="fd-input fd-input-group__input" 
+            type="text" 
+            id="amount-euro-right" 
+            name="amount-euro-right" 
+            placeholder="Placeholder" 
+            value="100"
+            autocomplete="off"
+            aria-describedby="amount-euro-right-note">
+        <span class="fd-input-group__addon" aria-hidden="true">€</span>
+        <div class="fd-input-group__sr-only" id="amount-euro-right-note">
+            Enter amount in euro
+        </div>
     </div>
 </div>
+
 <br />
+
+<!-- Right Aligned Text Add-on With Right Aligned Input Text -->
 <div class="fd-form-item">
-    <label class="fd-form-label" for="aqwsde114">Right Aligned Text Add-on</label>
+    <label class="fd-form-label" for="amount-euro-right-align">Right Aligned Text Add-on With Right Aligned Input Text</label>
     <div class="fd-input-group">
-        <input class="fd-input fd-input-group__input" type="text" placeholder="Placeholder" id="aqwsde114" name="" value="1234568910 ">
-        <span class="fd-input-group__addon">€</span>
+        <input 
+            class="fd-input fd-input-group__input right-align" 
+            type="text" 
+            id="amount-euro-right-align" 
+            name="amount-euro-right-align" 
+            value="100"
+            autocomplete="off"
+            aria-describedby="amount-euro-right-align-note">
+        <span class="fd-input-group__addon" aria-hidden="true">€</span>
+        <div class="fd-input-group__sr-only" id="amount-euro-right-align-note">
+            Enter amount in euro
+        </div>
     </div>
 </div>
+
 <br />
+
+<!-- Left and Right Aligned Text Add-ons -->
 <div class="fd-form-item">
-    <label class="fd-form-label" for="aqwsde115">Right Aligned Text Add-on With Right Aligned Input Text</label>
+    <label class="fd-form-label" for="amount-usd-both">Left and Right Aligned Text Add-ons</label>
     <div class="fd-input-group">
-        <input class="fd-input fd-input-group__input right-align" type="text" id="aqwsde115" name="" value="1234568910 ">
-        <span class="fd-input-group__addon">€</span>
-    </div>
-</div>
-<br />
-<div class="fd-form-item">
-    <label class="fd-form-label" for="aqwsde116">Left and Right Aligned Text Add-ons</label>
-    <div class="fd-input-group">
-        <span class="fd-input-group__addon">$</span>
-        <input class="fd-input fd-input-group__input" type="text" placeholder="Placeholder" id="aqwsde116" name="" value="This is a test">
-        <span class="fd-input-group__addon">.00</span>
+        <span class="fd-input-group__addon" aria-hidden="true">$</span>
+        <input 
+            class="fd-input fd-input-group__input" 
+            type="text" 
+            id="amount-usd-both" 
+            name="amount-usd-both" 
+            placeholder="Placeholder" 
+            value="65"
+            autocomplete="off"
+            aria-describedby="amount-usd-both-note">
+        <span class="fd-input-group__addon" aria-hidden="true">.00</span>
+        <div class="fd-input-group__sr-only" id="amount-usd-both-note">
+            Enter amount in US dollars
+        </div>
     </div>
 </div>

@@ -1,7 +1,17 @@
 <div class="fd-form-item">
-    <label class="fd-form-label" for="aqwsde111">Default</label>
+    <label class="fd-form-label" for="aqwsde111">Amount</label>
     <div class="fd-input-group">
-        <span class="fd-input-group__addon">$</span>
-        <input class="fd-input fd-input-group__input" type="text" placeholder="Placeholder" id="aqwsde111" name="" value="1234568910 ">
+        <span class="fd-input-group__addon" aria-hidden="true">$</span>
+        <input 
+            class="fd-input fd-input-group__input" 
+            type="text" 
+            placeholder="Placeholder" 
+            id="aqwsde111" 
+            name="amount" 
+            value="100.00"
+            autocomplete="off"
+            aria-describedby="input-group-note"
+        >
+        <div class="fd-input-group__sr-only" id="input-group-note">Enter amount in US dollars</div>
     </div>
 </div>

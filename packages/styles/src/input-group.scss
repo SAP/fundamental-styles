@@ -115,6 +115,10 @@ $fd-input-border-radius: var(--sapField_BorderCornerRadius);
     }
   }
 
+  &__sr-only {
+    @include fd-screen-reader-only();
+  }
+
   &--control {
     &[aria-expanded="true"] {
       margin-block-end: 0;

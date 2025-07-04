@@ -1,348 +1,80 @@
-
-<div class="fd-form-item">
-    <label class="fd-form-label" for="aqwsde124">Success</label>
+  <div class="fd-form-item">
+    <label class="fd-form-label" for="input-success-1">Success</label>
     <div class="fd-input-group is-success">
-        <span class="fd-input-group__addon">$</span>
-        <input class="fd-input fd-input-group__input" type="text" placeholder="Placeholder" id="aqwsde124" name="" value="1234568910">
+      <span class="fd-input-group__addon" aria-hidden="true">$</span>
+      <input class="fd-input fd-input-group__input" type="text" id="input-success-1" name="amountSuccess"
+        value="100" placeholder="Enter amount" autocomplete="off" aria-describedby="input-success-1-note" />
+      <div class="fd-input-group__sr-only" id="input-success-1-note">Value State Success</div>
     </div>
-</div>
-<br />
-<div class="fd-form-item">
-    <label class="fd-form-label" for="aqwsde125">Error</label>
-    <div class="fd-input-group is-error">
-        <input class="fd-input fd-input-group__input" type="text" placeholder="Placeholder" id="aqwsde125" name="" value="1000000">
-        <span class="fd-input-group__addon">
-            <span class="sap-icon--hide" role="presentation"></span>
-        </span>
-    </div>
-</div>
-<br />
-<div class="fd-form-item">
-    <label class="fd-form-label" for="aqwsde126">Warning (Alert)</label>
-    <div class="fd-input-group is-warning">
-        <span class="fd-input-group__addon">$</span>
-        <input class="fd-input fd-input-group__input" type="text" placeholder="Placeholder" id="aqwsde126" name="" value="1234568910">
-    </div>
-</div>
-<br />
-<div class="fd-form-item">
-    <label class="fd-form-label" for="aqwsde127">Information</label>
-    <div class="fd-input-group is-information">
-        <input class="fd-input fd-input fd-input-group__input" type="text" placeholder="Placeholder" id="aqwsde127" name="" value="1000000">
-        <span class="fd-input-group__addon fd-input-group__addon--button">
-            <button class="fd-input-group__button fd-button fd-button--transparent fd-button">
-                Button
-            </button>
-        </span>
-    </div>
-</div>
+  </div>
 
-<br />
-<div class="fd-form-item">
-    <label class="fd-form-label" for="aqwsde128">Disabled</label>
+  <br />
+
+  <div class="fd-form-item">
+    <label class="fd-form-label" for="input-error-1">Error</label>
+    <div class="fd-input-group is-error">
+      <input class="fd-input fd-input-group__input" type="text" id="input-error-1" name="amountError" value="100"
+        placeholder="Enter value" autocomplete="off" aria-describedby="input-error-1-note" />
+      <span class="fd-input-group__addon" aria-hidden="true">
+        <span class="sap-icon--hide" role="presentation" aria-hidden="true"></span>
+      </span>
+      <div class="fd-input-group__sr-only" id="input-error-1-note">Value State Error</div>
+    </div>
+  </div>
+
+  <br />
+
+  <div class="fd-form-item">
+    <label class="fd-form-label" for="input-warning-1">Warning</label>
+    <div class="fd-input-group is-warning">
+      <span class="fd-input-group__addon" aria-hidden="true">$</span>
+      <input class="fd-input fd-input-group__input" type="text" id="input-warning-1" name="amountWarning" value="100"
+        placeholder="Enter value" autocomplete="off" aria-describedby="input-warning-1-note" />
+      <div class="fd-input-group__sr-only" id="input-warning-1-note">Value State Warning</div>
+    </div>
+  </div>
+
+  <br />
+
+  <div class="fd-form-item">
+    <label class="fd-form-label" for="input-info-1">Information</label>
+    <div class="fd-input-group is-information">
+      <input class="fd-input fd-input-group__input" type="text" id="input-info-1" name="infoInput" value="100"
+        placeholder="Enter info" autocomplete="off" aria-describedby="input-info-1-note" />
+      <span class="fd-input-group__addon fd-input-group__addon--button">
+        <button class="fd-input-group__button fd-button fd-button--transparent" aria-label="Submit information input">
+          Button
+        </button>
+      </span>
+      <div class="fd-input-group__sr-only" id="input-info-1-note">Value State Information</div>
+    </div>
+  </div>
+
+  <br />
+
+  <div class="fd-form-item">
+    <label class="fd-form-label" for="input-disabled-1">Disabled</label>
     <div class="fd-input-group is-disabled">
-        <span class="fd-input-group__addon">$</span>
-        <input class="fd-input fd-input-group__input" disabled type="text" id="aqwsde128" name="" placeholder="Enter a value">
+      <span class="fd-input-group__addon" aria-hidden="true">$</span>
+      <input class="fd-input fd-input-group__input" disabled type="text" id="input-disabled-1" name="disabledAmount"
+        value="100" placeholder="Disabled input" autocomplete="off" aria-describedby="input-disabled-1-note" />
+      <div class="fd-input-group__sr-only" id="input-disabled-1-note">This field cannot be edited</div>
     </div>
-</div>
-<br />
-<div class="fd-form-item">
-    <label class="fd-form-label" for="aqwsde129">Disabled Success</label>
-    <div class="fd-input-group is-success is-disabled">
-        <span class="fd-input-group__addon">$</span>
-        <input class="fd-input fd-input-group__input" disabled type="text" id="aqwsde129" name="" value="1234568910">
-    </div>
-</div>
-<br />
-<div class="fd-form-item">
-    <label class="fd-form-label" for="aqwsde130">Disabled Error</label>
-    <div class="fd-input-group is-error is-disabled">
-        <input class="fd-input fd-input-group__input" disabled type="text" id="aqwsde130" name="" value="1000000">
-        <span class="fd-input-group__addon">
-            <span class="sap-icon--hide" role="presentation"></span>
-        </span>
-    </div>
-</div>
-<br />
-<div class="fd-form-item">
-    <label class="fd-form-label" for="aqwsde131">Disabled Warning (Alert)</label>
-    <div class="fd-input-group is-warning is-disabled">
-        <span class="fd-input-group__addon">$</span>
-        <input class="fd-input fd-input-group__input" disabled type="text" id="aqwsde131" name="" value="1234568910">
-    </div>
-</div>
-<br />
-<div class="fd-form-item">
-    <label class="fd-form-label" for="aqwsde132">Disabled Information</label>
-    <div class="fd-input-group is-information is-disabled">
-        <input class="fd-input fd-input-group__input" disabled type="text" id="aqwsde132" name="" value="1000000">
-        <span class="fd-input-group__addon fd-input-group__addon--button">
-            <button class="fd-input-group__button fd-button fd-button--transparent" disabled>
-                Button
-            </button>
-        </span>
-    </div>
-</div>
-<br />
-<div class="fd-form-item">
-    <label class="fd-form-label" for="aqwsde132">Read-Only</label>
+  </div>
+
+  <br />
+
+  <div class="fd-form-item">
+    <label class="fd-form-label" for="input-readonly-1">Read-Only</label>
     <div class="fd-input-group is-readonly">
-        <input class="fd-input fd-input fd-input-group__input" readonly type="text" id="aqwsde132" name="" value="1000000">
-        <span class="fd-input-group__addon fd-input-group__addon fd-input-group__addon--button">
-            <button class="fd-input-group__button fd-button fd-button--transparent fd-button">
-                Button
-            </button>
-        </span>
+      <input class="fd-input fd-input-group__input" readonly type="text" id="input-readonly-1" name="readonlyAmount"
+        value="100" placeholder="Read-only value" autocomplete="off" aria-describedby="input-readonly-1-note" />
+      <span class="fd-input-group__addon fd-input-group__addon--button">
+        <button class="fd-input-group__button fd-button fd-button--transparent" aria-label="Submit (read-only)">
+          Button
+        </button>
+      </span>
+      <div class="fd-input-group__sr-only" id="input-readonly-1-note">Value cannot be changed</div>
     </div>
-</div>
+  </div>
 
-<h3>Input Field with Buttons (States)</h3>
-<!-- Regular -->
-<br />
-<div class="fd-form-item">
-    <label class="fd-form-label" for="regular">Error, Normal State</label>
-    <div class="fd-input-group">
-        <input class="fd-input fd-input fd-input-group__input" type="text" placeholder="Placeholder" id="regular" name="" value="1000000">
-        <span class="fd-input-group__addon fd-input-group__addon--button">
-            <button class="fd-input-group__button fd-button fd-button--transparent fd-button">
-                Button
-            </button>
-        </span>
-    </div>
-</div>
-<br />
-<div class="fd-form-item">
-    <label class="fd-form-label" for="regular-hover">Error, Hover State</label>
-    <div class="fd-input-group is-hover">
-        <input class="fd-input fd-input fd-input-group__input" type="text" placeholder="Placeholder" id="regular-hover" name="" value="1000000">
-        <span class="fd-input-group__addon fd-input-group__addon--button">
-            <button class="fd-input-group__button fd-button fd-button--transparent fd-button">
-                Button
-            </button>
-        </span>
-    </div>
-</div>
-<br />
-<div class="fd-form-item">
-    <label class="fd-form-label" for="regular-hover-btn">Error, Hover State on Button</label>
-    <div class="fd-input-group is-hover">
-        <input class="fd-input fd-input fd-input-group__input" type="text" placeholder="Placeholder" id="regular-hover-btn" name="" value="1000000">
-        <span class="fd-input-group__addon fd-input-group__addon--button">
-            <button class="fd-input-group__button fd-button fd-button--transparent fd-button is-hover">
-                Button
-            </button>
-        </span>
-    </div>
-</div>
-<br />
-<div class="fd-form-item">
-    <label class="fd-form-label" for="regular-focus">Error, Focus State</label>
-    <div class="fd-input-group is-focus">
-        <input class="fd-input fd-input fd-input-group__input" type="text" placeholder="Placeholder" id="regular-focus" name="" value="1000000">
-        <span class="fd-input-group__addon fd-input-group__addon--button">
-            <button class="fd-input-group__button fd-button fd-button--transparent fd-button">
-                Button
-            </button>
-        </span>
-    </div>
-</div>
-
-<!-- Error States -->
-<br />
-<div class="fd-form-item">
-    <label class="fd-form-label" for="error">Error, Normal State</label>
-    <div class="fd-input-group is-error">
-        <input class="fd-input fd-input fd-input-group__input" type="text" placeholder="Placeholder" id="error" name="" value="1000000">
-        <span class="fd-input-group__addon fd-input-group__addon--button">
-            <button class="fd-input-group__button fd-button fd-button--transparent fd-button">
-                Button
-            </button>
-        </span>
-    </div>
-</div>
-<br />
-<div class="fd-form-item">
-    <label class="fd-form-label" for="error-hover">Error, Hover State</label>
-    <div class="fd-input-group is-error is-hover">
-        <input class="fd-input fd-input fd-input-group__input" type="text" placeholder="Placeholder" id="error-hover" name="" value="1000000">
-        <span class="fd-input-group__addon fd-input-group__addon--button">
-            <button class="fd-input-group__button fd-button fd-button--transparent fd-button">
-                Button
-            </button>
-        </span>
-    </div>
-</div>
-<br />
-<div class="fd-form-item">
-    <label class="fd-form-label" for="error-hover-btn">Error, Hover State on Button</label>
-    <div class="fd-input-group is-error is-hover">
-        <input class="fd-input fd-input fd-input-group__input" type="text" placeholder="Placeholder" id="error-hover-btn" name="" value="1000000">
-        <span class="fd-input-group__addon fd-input-group__addon--button">
-            <button class="fd-input-group__button fd-button fd-button--transparent fd-button is-hover">
-                Button
-            </button>
-        </span>
-    </div>
-</div>
-<br />
-<div class="fd-form-item">
-    <label class="fd-form-label" for="error-focus">Error, Focus State</label>
-    <div class="fd-input-group is-error is-focus">
-        <input class="fd-input fd-input fd-input-group__input" type="text" placeholder="Placeholder" id="error-focus" name="" value="1000000">
-        <span class="fd-input-group__addon fd-input-group__addon--button">
-            <button class="fd-input-group__button fd-button fd-button--transparent fd-button">
-                Button
-            </button>
-        </span>
-    </div>
-</div>
-
-<!-- Warning States -->
-<br />
-<div class="fd-form-item">
-    <label class="fd-form-label" for="warning">Warning, Normal State</label>
-    <div class="fd-input-group is-warning">
-        <input class="fd-input fd-input fd-input-group__input" type="text" placeholder="Placeholder" id="warning" name="" value="1000000">
-        <span class="fd-input-group__addon fd-input-group__addon--button">
-            <button class="fd-input-group__button fd-button fd-button--transparent fd-button">
-                Button
-            </button>
-        </span>
-    </div>
-</div>
-<br />
-<div class="fd-form-item">
-    <label class="fd-form-label" for="warning-hover">Warning, Hover State</label>
-    <div class="fd-input-group is-warning is-hover">
-        <input class="fd-input fd-input fd-input-group__input" type="text" placeholder="Placeholder" id="warning-hover" name="" value="1000000">
-        <span class="fd-input-group__addon fd-input-group__addon--button">
-            <button class="fd-input-group__button fd-button fd-button--transparent fd-button">
-                Button
-            </button>
-        </span>
-    </div>
-</div>
-<br />
-<div class="fd-form-item">
-    <label class="fd-form-label" for="warning-hover-btn">Warning, Hover State on Button</label>
-    <div class="fd-input-group is-warning is-hover">
-        <input class="fd-input fd-input fd-input-group__input" type="text" placeholder="Placeholder" id="warning-hover-btn" name="" value="1000000">
-        <span class="fd-input-group__addon fd-input-group__addon--button">
-            <button class="fd-input-group__button fd-button fd-button--transparent fd-button is-hover">
-                Button
-            </button>
-        </span>
-    </div>
-</div>
-<br />
-<div class="fd-form-item">
-    <label class="fd-form-label" for="warning-focus">Warning, Focus State</label>
-    <div class="fd-input-group is-warning is-focus">
-        <input class="fd-input fd-input fd-input-group__input" type="text" placeholder="Placeholder" id="warning-focus" name="" value="1000000">
-        <span class="fd-input-group__addon fd-input-group__addon--button">
-            <button class="fd-input-group__button fd-button fd-button--transparent fd-button">
-                Button
-            </button>
-        </span>
-    </div>
-</div>
-
-<!-- Success States -->
-<br />
-<div class="fd-form-item">
-    <label class="fd-form-label" for="success">Success, Normal State</label>
-    <div class="fd-input-group is-success">
-        <input class="fd-input fd-input fd-input-group__input" type="text" placeholder="Placeholder" id="success" name="" value="1000000">
-        <span class="fd-input-group__addon fd-input-group__addon--button">
-            <button class="fd-input-group__button fd-button fd-button--transparent fd-button">
-                Button
-            </button>
-        </span>
-    </div>
-</div>
-<br />
-<div class="fd-form-item">
-    <label class="fd-form-label" for="success-hover">Success, Hover State</label>
-    <div class="fd-input-group is-success is-hover">
-        <input class="fd-input fd-input fd-input-group__input" type="text" placeholder="Placeholder" id="success-hover" name="" value="1000000">
-        <span class="fd-input-group__addon fd-input-group__addon--button">
-            <button class="fd-input-group__button fd-button fd-button--transparent fd-button">
-                Button
-            </button>
-        </span>
-    </div>
-</div>
-<br />
-<div class="fd-form-item">
-    <label class="fd-form-label" for="success-hover-btn">Success, Hover State on Button</label>
-    <div class="fd-input-group is-success is-hover">
-        <input class="fd-input fd-input fd-input-group__input" type="text" placeholder="Placeholder" id="success-hover-btn" name="" value="1000000">
-        <span class="fd-input-group__addon fd-input-group__addon--button">
-            <button class="fd-input-group__button fd-button fd-button--transparent fd-button is-hover">
-                Button
-            </button>
-        </span>
-    </div>
-</div>
-<br />
-<div class="fd-form-item">
-    <label class="fd-form-label" for="success-focus">Success, Focus State</label>
-    <div class="fd-input-group is-success is-focus">
-        <input class="fd-input fd-input fd-input-group__input" type="text" placeholder="Placeholder" id="success-focus" name="" value="1000000">
-        <span class="fd-input-group__addon fd-input-group__addon--button">
-            <button class="fd-input-group__button fd-button fd-button--transparent fd-button">
-                Button
-            </button>
-        </span>
-    </div>
-</div>
-
-<!-- Information States -->
-<br />
-<div class="fd-form-item">
-    <label class="fd-form-label" for="info">Information, Normal State</label>
-    <div class="fd-input-group is-information">
-        <input class="fd-input fd-input fd-input-group__input" type="text" placeholder="Placeholder" id="info" name="" value="1000000">
-        <span class="fd-input-group__addon fd-input-group__addon--button">
-            <button class="fd-input-group__button fd-button fd-button--transparent fd-button">
-                Button
-            </button>
-        </span>
-    </div>
-</div>
-<br />
-<div class="fd-form-item">
-    <label class="fd-form-label" for="info-hover">Information, Hover State</label>
-    <div class="fd-input-group is-information is-hover">
-        <input class="fd-input fd-input fd-input-group__input" type="text" placeholder="Placeholder" id="info-hover" name="" value="1000000">
-        <span class="fd-input-group__addon fd-input-group__addon--button">
-            <button class="fd-input-group__button fd-button fd-button--transparent fd-button">
-                Button
-            </button>
-        </span>
-    </div>
-</div>
-<br />
-<div class="fd-form-item">
-    <label class="fd-form-label" for="info-hover-btn">Information, Hover State on Button</label>
-    <div class="fd-input-group is-information is-hover">
-        <input class="fd-input fd-input fd-input-group__input" type="text" placeholder="Placeholder" id="info-hover-btn" name="" value="1000000">
-        <span class="fd-input-group__addon fd-input-group__addon--button">
-            <button class="fd-input-group__button fd-button fd-button--transparent fd-button is-hover">
-                Button
-            </button>
-        </span>
-    </div>
-</div>
-<br />
-<div class="fd-form-item">
-    <label class="fd-form-label" for="info-focus">Information, Focus State</label>
-    <div class="fd-input-group is-information is-focus">
-        <input class="fd-input fd-input fd-input-group__input" type="text" placeholder="Placeholder" id="info-focus" name="" value="1000000">
-        <span class="fd-input-group__addon fd-input-group__addon--button">
-            <button class="fd-input-group__button fd-button fd-button--transparent fd-button">
-                Button
-            </button>
-        </span>
-    </div>
-</div>
