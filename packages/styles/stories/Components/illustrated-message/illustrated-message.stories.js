@@ -58,8 +58,6 @@ Include a call to action (CTA) button if there is a clear next step.
 * Base - \`.fd-illustrated-message--base\` no illustration.
 
 ## Responsiveness and Adaptiveness
-Resizing is neither required nor recommended for S and M illustrations. L illustrations should uniformly scale to 75% of its target size for size S for smartphones, small hybrid devices, and small tablets.
-
 For Scene (Large) Message Illustration only you can apply a container with class <code>.fd-illustrated-message-responsive-container</code> that will handle the responsiveness with inline content query (<code>container-type: inline-size;</code>).
 
 ## Illustrations Disclaimer
@@ -79,7 +77,7 @@ For Scene (Large) Message Illustration only you can apply a container with class
 </div>
 
 `,
-    tags: ['f3', 'a11y', 'theme']
+    tags: []
   }
 };
 const localStyles = `<style>
@@ -144,7 +142,7 @@ Large.storyName = 'Large';
 Large.parameters = {
   docs: {
     description: {
-      story: `Default type, no modifier class is required. Can be optionally wrap in a responsive container <code>.fd-illustrated-message-responsive-container</code>
+      story: `This is the default size of the Illustrated Message. No modifier class is required. It can optionally be wrapped in a responsive container using <code>.fd-illustrated-message-responsive-container</code> for layout adjustments on smaller viewports.
         `
     }
   },
@@ -166,7 +164,9 @@ export const Medium = () => mediumExampleHtml;
 Medium.parameters = {
   docs: {
     description: {
-      story: `Add \`.fd-illustrated-message--medium\` class
+      story: `Apply the <code>.fd-illustrated-message--medium</code> modifier to the <code>.fd-illustrated-message</code> base class to display a medium-sized illustration and message.
+
+
         `
     }
   }
@@ -175,8 +175,7 @@ export const Small = () => smallExampleHtml;
 Small.parameters = {
   docs: {
     description: {
-      story: `Add \`.fd-illustrated-message--small\` class
-        `
+      story: `Use the <code>.fd-illustrated-message--small</code> modifier with the <code>.fd-illustrated-message</code> class to render a small-sized variant.`
     }
   }
 };
@@ -185,8 +184,7 @@ XSmall.storyName = 'Extra Small';
 XSmall.parameters = {
   docs: {
     description: {
-      story: `Add \`.fd-illustrated-message--xsmall\` class
-        `
+      story: `Apply the <code>.fd-illustrated-message--xsmall</code> modifier to create the most compact version of the component, ideal for inline or minimal UI contexts.`
     }
   }
 };
