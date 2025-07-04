@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.41.0-rc.25](https://github.com/SAP/fundamental-styles/compare/v0.41.0-rc.24...v0.41.0-rc.25) (2025-07-04)
+
+### Bug Fixes
+
+- **styles:** a11y updates for Input Group [ci visual] ([#6113](https://github.com/SAP/fundamental-styles/issues/6113)) ([e14ef7d](https://github.com/SAP/fundamental-styles/commit/e14ef7d3a789b550808f2bb79a387e194b7da722))
+
 # [0.41.0-rc.24](https://github.com/SAP/fundamental-styles/compare/v0.41.0-rc.23...v0.41.0-rc.24) (2025-06-25)
 
 ### Bug Fixes
@@ -6231,9 +6237,9 @@ Co-authored-by: droshev <mladen.droshev@sap.com>
 
 - added a new modifier class to fd-row to achieve even alignment of its elements:fd-row--top in a form.
   Before:
-    <div class="fd-row">
-    After:
-    <div class="fd-row fd-row--top">
+      <div class="fd-row">
+      After:
+      <div class="fd-row fd-row--top">
 
 ### Bug Fixes
 
