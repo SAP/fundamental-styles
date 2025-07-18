@@ -1,4 +1,4 @@
-import { DocsContainer as container } from '@storybook/addon-docs';
+import { DocsContainer } from '@storybook/addon-docs/blocks';
 import { fundamentalTheme as theme, RenderPackageIntroduction } from 'fundamental-styles/storybook';
 import Readme from '../README.md?raw';
 
@@ -9,7 +9,7 @@ export default {
     },
     parameters: {
         docs: {
-            container,
+            DocsContainer,
             page: RenderPackageIntroduction(Readme),
             theme
         },

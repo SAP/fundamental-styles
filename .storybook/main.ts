@@ -1,11 +1,14 @@
+import { createRequire } from "node:module";
 import { StorybookConfig } from '@storybook/html-vite';
 import { readFileSync } from 'fs';
 import { mergeConfig } from 'vite';
 import { loadCsf } from 'storybook/internal/csf-tools';
 import { getOwner } from './custom/addons/utilities/get-owner';
-import { relative } from 'path';
+import { relative, dirname, join } from 'path';
 import remarkGfm from 'remark-gfm';
 import { storybookPackages } from '../projects';
+
+const require = createRequire(import.meta.url);
 
 const storiesToInclude = () => {
     const mode = process.env.STORYBOOK_ENV;
@@ -21,8 +24,8 @@ const storiesToInclude = () => {
 const includedStories = storiesToInclude();
 const includedPackages = `(${storybookPackages})`;
 const staticDirs = ['static/', '../node_modules/@sap-theming'];
-const storybookAddons = ['@storybook/addon-links', '@storybook/addon-a11y', {
-    name: '@storybook/addon-docs',
+const storybookAddons = [getAbsolutePath("@storybook/addon-links"), getAbsolutePath("@storybook/addon-a11y"), {
+    name: getAbsolutePath("@storybook/addon-docs"),
     options: {
         transcludeMarkdown: true,
         mdxPluginOptions: {
@@ -31,7 +34,7 @@ const storybookAddons = ['@storybook/addon-links', '@storybook/addon-a11y', {
             },
         },
     }
-}, './custom/addons/theme-switcher/register', '@chromatic-com/storybook'];
+}, getAbsolutePath("./custom/addons/theme-switcher/register"), getAbsolutePath("@chromatic-com/storybook")];
 const config: StorybookConfig = {
     stories: ['../stories/docs/introduction.stories.ts', '../stories/docs/compact-docs.stories.ts', `../packages/@${includedPackages}/**/*.@${includedStories}.@(ts|tsx|js|jsx)`, `../stories/**/*.@${includedStories}.@(ts|tsx|js|jsx)`],
     staticDirs: staticDirs,
@@ -72,8 +75,12 @@ const config: StorybookConfig = {
     },
 
     framework: {
-        name: '@storybook/html-vite',
+        name: getAbsolutePath("@storybook/html-vite"),
         options: {}
     }
 };
 export default config;
+
+function getAbsolutePath(value: string): any {
+    return dirname(require.resolve(join(value, "package.json")));
+}
