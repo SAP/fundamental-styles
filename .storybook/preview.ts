@@ -1,4 +1,4 @@
-import { DocsContainer } from '@storybook/addon-docs';
+import { DocsContainer } from '@storybook/addon-docs/blocks';
 import {
     fundamentalTheme,
     withContentDensity,

@@ -1,7 +1,7 @@
 import { fundamentalTheme as theme, RenderPackageIntroduction } from 'fundamental-styles/storybook';
 import type { Meta } from '@storybook/html-vite';
 import Readme from './content-density.md?raw';
-import { DocsContainer as container } from '@storybook/addon-docs';
+import { DocsContainer as container } from '@storybook/addon-docs/blocks';
 
 export default {
     title: 'Docs / Content Density',

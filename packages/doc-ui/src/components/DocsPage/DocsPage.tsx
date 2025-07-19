@@ -1,4 +1,4 @@
-import {Subtitle, Title, Stories} from '@storybook/addon-docs';
+import {Subtitle, Title, Stories} from '@storybook/addon-docs/blocks';
 import {useContext} from 'react';
 import './DocsPage.scss';
 import {useThemedStoryContainers} from '../../hooks/useThemedStoryContainers';

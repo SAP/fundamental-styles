@@ -1,4 +1,4 @@
-import { DocsContext } from '@storybook/addon-docs';
+import { DocsContext } from '@storybook/addon-docs/blocks';
 import { addons } from 'storybook/preview-api';
 import { UPDATE_GLOBALS } from 'storybook/internal/core-events';
 import { useContext, useEffect, useMemo, useState } from 'react';
