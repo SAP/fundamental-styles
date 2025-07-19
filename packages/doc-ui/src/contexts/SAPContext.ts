@@ -1,6 +1,6 @@
 import {createContext} from 'react';
 import {PackageConfigInterface} from "fundamental-styles/storybook";
-import {DocsContextProps} from "@storybook/addon-docs";
+import {DocsContextProps} from "@storybook/addon-docs/blocks";
 
 export interface SAPContextType {
     storyContext: ReturnType<DocsContextProps['getStoryContext']>
