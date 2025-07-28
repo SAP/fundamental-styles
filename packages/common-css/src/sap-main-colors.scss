@@ -1,0 +1,16 @@
+@use "sass:map";
+@use "common-settings" as commonsettings;
+@use "common-mixins" as commonmixins;
+@use "common-variables" as commonvars;
+
+@each $color in commonvars.$sap-main-colors {
+  .#{commonsettings.$sap-namespace}-color-#{$color} {
+    @include commonmixins.sap-color($color);
+  }
+}
+
+@each $color in commonvars.$sap-main-colors {
+  .#{commonsettings.$sap-namespace}-bg-color-#{$color} {
+    @include commonmixins.sap-bg-color($color);
+  }
+}

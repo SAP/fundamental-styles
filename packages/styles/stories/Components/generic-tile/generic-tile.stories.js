@@ -69,7 +69,7 @@ Critical | \`fd-numeric-content__scale--critical\`
 Informative | \`fd-numeric-content__scale—-informative\`
 <br>
       `,
-    tags: ['f3', 'a11y', 'theme']
+    tags: []
   }
 };
 export const GenericTileSizes = () => genericTileSizesExampleHtml;
@@ -100,13 +100,13 @@ The layout of the generic tile is fixed with designated areas for the header, co
 
 **The common elements displayed in generic tiles are:**
 
-Element | Class | Description
-:------ | :------------- | :-----------
-Header (mandatory) | \`fd-tile__header\` | The tile displays a title and an optional subtitle.
-Title (mandatory) | \`fd-tile__title\` | The title can display up to two lines of text before it truncates (or three lines if there is no subtitle).
-Subtitle (optional) | \`fd-tile__subtitle\` | The subtitle can display one line of text before it truncates.
-Content (optional) | \`fd-tile__content\` | Generic tile can display content if necessary.
-Footer (optional) | \`fd-tile__footer\` | The footer can contain a refresh icon \`sap-icon--refresh\` and/or status.
+| Element | Class | Description |
+| :------ | :------------- | :----------- |
+| Header (mandatory) | \`fd-tile__header\` | The tile displays a title and an optional subtitle.
+| Title (mandatory) | \`fd-tile__title\` | The title can display up to two lines of text before it truncates (or three lines if there is no subtitle).
+| Subtitle (optional) | \`fd-tile__subtitle\` | The subtitle can display one line of text before it truncates.
+| Content (optional) | \`fd-tile__content\` | Generic tile can display content if necessary.
+| Footer (optional) | \`fd-tile__footer\` | The footer can contain a refresh icon \`sap-icon--refresh\` and/or status.
 
 **Note:** In the example below, the background color (and class names) illustrate the placement of elements within tiles.
         `
@@ -145,11 +145,11 @@ LaunchTile.parameters = {
 
 **Note:** Because the examples are displaying numeric content, it is important to note how many characters a tile can support depending on its size. For instance, when a large tile displays numeric content, the text size is 2.25rem (36px). Due to the large text, the tile can only support a maximum of 4 characters.
 
-Tile size | Maximum...
---------: | :---------------
-S | 8 characters can be displayed within numeric content.
-M | 6 characters can be displayed within numeric content.
-L | 4 characters can be displayed within numeric content.
+| Tile size | Maximum...
+| :--------: | :---------------
+| S | 8 characters can be displayed within numeric content.
+| M | 6 characters can be displayed within numeric content.
+| L | 4 characters can be displayed within numeric content.
         `
     }
   }
@@ -209,10 +209,10 @@ LinkTile.parameters = {
 ####Sizes
 Link tiles are displayed in two modes depending on the screen width.
 
-&nbsp;&nbsp;&nbsp; Size &nbsp; | Screen width | Modifier class | Behaviour
-:----- | :----------------- | :------------------ | :----------
-M-XL | >= 450px | Default | Floating: If there is insufficient space, the content wraps into two rows. (This behaviour is not provided by Fundamental Styles and requires JavaScript).
-S | < 450px | \`fd-tile-container--list\` | List: The tile grows vertically and the text wraps into two rows, placing the title in the first row and the subtitle in the second.
+|  Size &nbsp; | Screen width | Modifier class | Behaviour
+| :----- | :----------------- | :------------------ | :----------
+| M-XL | >= 450px | Default | Floating: If there is insufficient space, the content wraps into two rows. (This behaviour is not provided by Fundamental Styles and requires JavaScript).
+| S | < 450px | \`fd-tile-container--list\` | List: The tile grows vertically and the text wraps into two rows, placing the title in the first row and the subtitle in the second.
 
 The link tile can be displayed in cozy (default) and compact mode. To display link tile in compact mode, add the \`is-compact\` to the main element.
 
