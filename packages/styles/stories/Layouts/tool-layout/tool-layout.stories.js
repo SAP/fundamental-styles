@@ -6,9 +6,9 @@ import mobileExampleHtml from './mobile.example.html?raw';
 import '../../../src/tool-layout.scss';
 
 export default {
-    title: 'BTP/Tool Layout',
+    title: 'Layouts/Tool Layout',
     parameters: {
-        description: `The Tool Layout is an essential part of most BTP tools. The layout combines the Tool Header and the Navigation components in one consistent structure. In addition, it provides necessary interaction between the two components out of the box.
+        description: `
 ## Anatomy
 - <b>Tool Header </b>- always present and is a top-aligned UI element that contains global actions and controls navigation
 - <b>Navigation </b>- side navigation in all of its variants (expanded, snapped)
@@ -20,15 +20,15 @@ export default {
   - <code>.fd-tool-layout--phone</code>&nbsp; - modifier class for phones
   - <code>.fd-tool-layout--sticky</code>&nbsp; - modifier class for positioning the header on the top
   - <code>.fd-tool-layout--horizontal-navigation</code>&nbsp; - modifier class for layout with Horizontal Navigation
-- <code>.fd-tool-layout__container</code>
-- <code>.fd-tool-layout__header-container</code>&nbsp; - wraping element around the Tool Header
-- <code>.fd-tool-layout__navigation-container</code>&nbsp; - wraping element around the Navigation (all its variants)
-  - <code>.fd-tool-layout__navigation-container--horizontal</code>&nbsp; - modifier class for when the navigation is horizontal
-- <code>.fd-tool-layout__content-container</code>&nbsp; - wraping element around the page content. By default, the background of the content area is <code>var(--sapBackgroundColor)</code>
-  - <code>.fd-tool-layout__content-container--transparent</code>&nbsp; - modifier class to apply transparent background to the content area.
-  - <code>.fd-tool-layout__content-container--list</code>&nbsp; - modifier class to apply list <code>var(--sapGroup_ContentBackground)</code> background to the content area.
+- <code>.fd-tool-layout\\_\\_container</code>
+- <code>.fd-tool-layout\\_\\_header-container</code>&nbsp; - wraping element around the Tool Header
+- <code>.fd-tool-layout\\_\\_navigation-container</code>&nbsp; - wraping element around the Navigation (all its variants)
+  - <code>.fd-tool-layout\\_\\_navigation-container--horizontal</code>&nbsp; - modifier class for when the navigation is horizontal
+- <code>.fd-tool-layout\\_\\_content-container</code>&nbsp; - wraping element around the page content. By default, the background of the content area is <code>var(--sapBackgroundColor)</code>
+  - <code>.fd-tool-layout\\_\\_content-container--transparent</code>&nbsp; - modifier class to apply transparent background to the content area.
+  - <code>.fd-tool-layout\\_\\_content-container--list</code>&nbsp; - modifier class to apply list <code>var(--sapGroup_ContentBackground)</code> background to the content area.
 `,
-        tags: ['btp', 'development', 'horizon-only']
+        tags: []
     }
 };
 
