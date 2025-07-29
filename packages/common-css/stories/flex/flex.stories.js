@@ -45,10 +45,7 @@ Flex.storyName = 'Flex Container';
 Flex.parameters = {
   docs: {
     description: {
-      story: `To turn a parent element into a flex container apply the <code>.sap-flex</code> class to this element. <br>
-            <b>SCSS Mixin:</b> 
-            <code>@include  sap-flex()</code>
-            `
+      story: `To turn a parent element into a flex container apply the <code>.sap-flex</code> class to this element. <br><b>SCSS Mixin:</b><code>@include  sap-flex()</code>`
     }
   }
 };
@@ -102,8 +99,7 @@ FlexAlignContent.parameters = {
     </tbody>
 </table><br>
 <b>SCSS Mixin:</b> 
-<code>@include sap-flex-align-content(type)</code>;<br>
-where <code>type</code> can be one of the following: <code>flex-start | flex-end | center | space-between | space-around | space-evenly | stretch | start | end | baseline</code>`
+<code>@include sap-flex-align-content(type)</code><br>where <code>type</code> can be one of the following: <code>flex-start | flex-end | center | space-between | space-around | space-evenly | stretch | start | end | baseline</code>`
     }
   }
 };
@@ -144,8 +140,7 @@ FlexAlignItems.parameters = {
     </tbody>
 </table><br>
 <b>SCSS Mixin:</b> 
-<code>@include sap-flex-align-items(type)</code>;<br>
-where <code>type</code> can be one of the following: <code>flex-start | start | self-start | flex-end | end | self-end | center | baseline | stretch </code>`
+<code>@include sap-flex-align-items(type)</code><br>where <code>type</code> can be one of the following: <code>flex-start | start | self-start | flex-end | end | self-end | center | baseline | stretch </code>`
     }
   }
 };
@@ -157,8 +152,7 @@ FlexCenter.parameters = {
       story: `
 
 <b>SCSS Mixin:</b> 
-<code>@include sap-flex-center(direction)</code>;<br>
-where <code>direction</code> can be one of the following: <code>row (default) | row-reverse | column | column-reverse</code>`
+<code>@include sap-flex-center(direction)</code><br>where <code>direction</code> can be one of the following: <code>row (default) | row-reverse | column | column-reverse</code>`
     }
   }
 };
@@ -167,36 +161,37 @@ FlexDirection.storyName = 'Flex Direction (Flex Container)';
 FlexDirection.parameters = {
   docs: {
     description: {
-      story: `To specify the direction of the items placed in the flex container use one of the following modifier classes: <br><br>
-            <table>
-                <thead>
-                <tr>
-                    <th>Modifier Class</th>
-                    <th>Description</th>
-                </tr>
-                </thead>
-                <tbody>
-                <tr>
-                    <td><code>.sap-flex--row</code></td>
-                    <td>(default) left to right in LTR; right to left in RTL</td>
-                </tr>
-                <tr>
-                    <td><code>.sap-flex--row-reverse</code></td>
-                    <td>right to left in LTR; left to right in RTL</td>
-                </tr>
-                <tr>
-                    <td><code>.sap-flex--column</code></td>
-                    <td>top to bottom</td>
-                </tr>
-                <tr>
-                    <td><code>.sap-flex--column-reverse</code></td>
-                    <td>bottom to top</td>
-                </tr>
-                </tbody>
-            </table>
-            <b>SCSS Mixin:</b> <code>@include sap-flex(direction)</code>; <br>
-            where <code>direction</code> can be one of the following values: <code>row (default) | row-reverse | column | column-reverse</code>
-            `
+      story: `
+<table>
+    <thead>
+    <tr>
+        <th>Modifier Class</th>
+        <th>Description</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td><code>.sap-flex--row</code></td>
+        <td>(default) left to right in LTR; right to left in RTL</td>
+    </tr>
+    <tr>
+        <td><code>.sap-flex--row-reverse</code></td>
+        <td>right to left in LTR; left to right in RTL</td>
+    </tr>
+    <tr>
+        <td><code>.sap-flex--column</code></td>
+        <td>top to bottom</td>
+    </tr>
+    <tr>
+        <td><code>.sap-flex--column-reverse</code></td>
+        <td>bottom to top</td>
+    </tr>
+    </tbody>
+</table>
+
+<b>SCSS Mixin:</b> <code>@include sap-flex(direction)</code><br>
+where <code>direction</code> can be one of the following values: <code>row (default) | row-reverse | column | column-reverse</code>
+`
     }
   }
 };
@@ -265,8 +260,9 @@ FlexGap.parameters = {
     </tbody>
 </table><br>
 <b>SCSS Mixin:</b> 
-<code>@include sap-flex-gap(value, type)</code>;<br>
+<code>@include sap-flex-gap(value, type)</code><br>
 where <code>type</code> is an optional parameter and can be one of the two: <code>row | column </code>. <br> The <code>value</code> can be <code>tiny | small | medium | large</code> or any custom value specified by the user. <br>
+
 <table>
     <tbody>
     <tr>
@@ -339,7 +335,7 @@ FlexJustify.parameters = {
     </tbody>
 </table><br>
 <b>SCSS Mixin:</b> 
-<code>@include sap-flex-justify(type)</code>;<br>
+<code>@include sap-flex-justify(type)</code><br>
 where <code>type</code> can be one of the following: <code>flex-start(default) | flex-end | center | space-between | space-around | space-evenly | start | end | left | right</code>`
     }
   }
@@ -373,7 +369,7 @@ FlexWrap.parameters = {
     </tbody>
 </table><br>
 <b>SCSS Mixin:</b> 
-<code>@include sap-flex-wrap(type)</code>;<br>
+<code>@include sap-flex-wrap(type)</code><br>
 where <code>type</code> can be one of the following: <code>nowrap(default) | wrap | wrap-reverse</code>`
     }
   }
@@ -384,10 +380,10 @@ FlexOrder.parameters = {
   docs: {
     description: {
       story: `
-To change the order in which the flex items appear in the flex container use the <code>.sap-flex-order-*</code> class, where <b>*</b> can be a number from 0 to 20.<br>
+To change the order in which the flex items appear in the flex container use the <code>.sap-flex-order-*</code> class, where <b>*</b> can be a number from 0 to 10.<br>
 
 <b>SCSS Mixin:</b> 
-<code>@include sap-flex-order(value)</code>;<br>
+<code>@include sap-flex-order(value)</code><br>
 where <code>value</code> is an integer.`
     }
   }
@@ -398,10 +394,10 @@ FlexShrink.parameters = {
   docs: {
     description: {
       story: `
-Flex shrink defines the ability for a flex item to shrink if necessary. The class to specify it is: <code>.sap-flex-shrink-*</code>, where <b>*</b> can be a number from 0 to 20. Negative numbers are invalid.<br>
+Flex shrink defines the ability for a flex item to shrink if necessary. The class to specify it is: <code>.sap-flex-shrink-*</code>, where <b>*</b> can be a number from 0 to 10. Negative numbers are invalid.<br>
 
 <b>SCSS Mixin:</b> 
-<code>@include sap-flex-shrink(value)</code>;<br>
+<code>@include sap-flex-shrink(value)</code><br>
 where <code>value</code> is a positive integer.`
     }
   }
@@ -412,10 +408,10 @@ FlexGrow.parameters = {
   docs: {
     description: {
       story: `
-Flex grow defines the ability for a flex item to grow if necessary. The class to specify it is: <code>.sap-flex-grow-*</code>, where <b>*</b> can be a number from 0 to 20. Negative numbers are invalid.<br>
+Flex grow defines the ability for a flex item to grow if necessary. The class to specify it is: <code>.sap-flex-grow-*</code>, where <b>*</b> can be a number from 0 to 10. Negative numbers are invalid.<br>
 
 <b>SCSS Mixin:</b> 
-<code>@include sap-flex-grow(value)</code>;<br>
+<code>@include sap-flex-grow(value)</code><br>
 where <code>value</code> is a positive integer.`
     }
   }
@@ -427,18 +423,11 @@ FlexAlignSelf.parameters = {
     description: {
       story: `
 Align-self allows the default alignment (or the one specified by align-items) to be overridden for individual flex items. <br>
-
-<code>sap-flex-align-self-auto</code>|
-<code>sap-flex-align-self-flex-start</code>|
-<code>sap-flex-align-self-flex-end</code>|
-<code>sap-flex-align-self-center</code>|
-<code>sap-flex-align-self-baseline</code>|
-<code>sap-flex-align-self-stretch</code>
-
-<br><br>
+<code>sap-flex-align-self-auto</code>|<code>sap-flex-align-self-flex-start</code>|<code>sap-flex-align-self-flex-end</code>|<code>sap-flex-align-self-center</code>|<code>sap-flex-align-self-baseline</code>|<code>sap-flex-align-self-stretch</code>
+<br>
 <b>SCSS Mixin:</b> 
-<code>@include sap-flex-align-self(value)</code>;<br>
-where <code>value</code> can be one of the following <code>auto | flex-start | flex-end | center | baseline | stretch;</code>.`
+<code>@include sap-flex-align-self(value)</code><br>
+where <code>value</code> can be one of the following <code>auto | flex-start | flex-end | center | baseline | stretch</code>.`
     }
   }
 };
