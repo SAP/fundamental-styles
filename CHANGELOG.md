@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.41.0-rc.33](https://github.com/SAP/fundamental-styles/compare/v0.41.0-rc.32...v0.41.0-rc.33) (2025-07-29)
+
+### Bug Fixes
+
+- **common-css:** remove Tool Layout from common-css, move BTP Tool Layout to Layouts [ci visual] ([#6123](https://github.com/SAP/fundamental-styles/issues/6123)) ([07ee201](https://github.com/SAP/fundamental-styles/commit/07ee2014da31952c5ff521b8a14d00cf92e49a02))
+
 # [0.41.0-rc.32](https://github.com/SAP/fundamental-styles/compare/v0.41.0-rc.31...v0.41.0-rc.32) (2025-07-29)
 
 ### Features
@@ -6267,9 +6273,9 @@ Co-authored-by: droshev <mladen.droshev@sap.com>
 
 - added a new modifier class to fd-row to achieve even alignment of its elements:fd-row--top in a form.
   Before:
-  <div class="fd-row">
-  After:
-  <div class="fd-row fd-row--top">
+    <div class="fd-row">
+    After:
+    <div class="fd-row fd-row--top">
 
 ### Bug Fixes
 
