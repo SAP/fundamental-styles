@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.41.0-rc.32](https://github.com/SAP/fundamental-styles/compare/v0.41.0-rc.31...v0.41.0-rc.32) (2025-07-29)
+
+### Features
+
+- **common-css:** add main colors in addition to all colors [ci visual] ([#6122](https://github.com/SAP/fundamental-styles/issues/6122)) ([bd7f03f](https://github.com/SAP/fundamental-styles/commit/bd7f03fc82b1c8bbe05b1aba0c38b05682298d26))
+
 # [0.41.0-rc.31](https://github.com/SAP/fundamental-styles/compare/v0.41.0-rc.30...v0.41.0-rc.31) (2025-07-20)
 
 **Note:** Version bump only for package fundamental-styles
@@ -6261,9 +6267,9 @@ Co-authored-by: droshev <mladen.droshev@sap.com>
 
 - added a new modifier class to fd-row to achieve even alignment of its elements:fd-row--top in a form.
   Before:
-      <div class="fd-row">
-      After:
-      <div class="fd-row fd-row--top">
+  <div class="fd-row">
+  After:
+  <div class="fd-row fd-row--top">
 
 ### Bug Fixes
 
