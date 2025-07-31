@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.41.0-rc.35](https://github.com/SAP/fundamental-styles/compare/v0.41.0-rc.34...v0.41.0-rc.35) (2025-07-31)
+
+### Bug Fixes
+
+- **styles:** update Panel spacings to accommodate Title focus [ci visual] ([#6134](https://github.com/SAP/fundamental-styles/issues/6134)) ([209a55d](https://github.com/SAP/fundamental-styles/commit/209a55d5d6cd8f2b5b142896224fd81a9372de39))
+
 # [0.41.0-rc.34](https://github.com/SAP/fundamental-styles/compare/v0.41.0-rc.33...v0.41.0-rc.34) (2025-07-31)
 
 **Note:** Version bump only for package fundamental-styles
