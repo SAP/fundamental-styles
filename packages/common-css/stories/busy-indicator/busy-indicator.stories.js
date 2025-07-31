@@ -21,8 +21,8 @@ export default {
 | **Size** | &nbsp;&nbsp; **rem** &nbsp;&nbsp; | **Modifier class** |
 | :------- | :-------------------------------- | -----------------: |
 | Default  | &nbsp;&nbsp; 0.5 rem                | none               |
-| M        | &nbsp;&nbsp; 1 rem                | \`--m\`   |
-| L        | &nbsp;&nbsp; 2 rem                | \`--l\`   |
+| M        | &nbsp;&nbsp; 1 rem                | \`sap-busy-indicator--m\`   |
+| L        | &nbsp;&nbsp; 2 rem                | \`sap-busy-indicator--l\`   |
 
 ##Usage
 **Use the busy indicator if:**
@@ -38,7 +38,6 @@ The ongoing operation only covers part of a screen that has multiple controls, a
 - The operation takes less than one second.
 - You need to block the screen because the user is not supposed to start another operation. In this case, use the **Busy Dialog** component.
         `,
-    tags: ['f3', 'a11y', 'theme']
   }
 };
 export const Standard = () => standardExampleHtml;

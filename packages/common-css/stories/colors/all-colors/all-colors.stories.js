@@ -10,7 +10,7 @@ export default {
 };
 const localStyles = `
 <style>
-    div.demo {
+    .demo div {
         display: flex;
         height: 4rem;
         width: 8rem;

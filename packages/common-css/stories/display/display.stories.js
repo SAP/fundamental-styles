@@ -46,9 +46,7 @@ ScreenReaderOnly.storyName = 'Screen-reader-only elements';
 ScreenReaderOnly.parameters = {
   docs: {
     description: {
-      story: `The <code>.sap-sr-only</code> class will hide the element visually without hiding it from screen readers. <br><br>
-            <b>SCSS Mixin: </b>
-            <code>@include sap-sr-only();</code>
+      story: `The <code>.sap-sr-only</code> class will hide the element visually without hiding it from screen readers. <br><br><b>SCSS Mixin: </b><code>@include sap-sr-only();</code>
         `
     }
   }

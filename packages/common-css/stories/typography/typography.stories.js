@@ -15,6 +15,7 @@ FontFamily.parameters = {
   docs: {
     description: {
       story: `To set the <b>font-family</b> of an element use the <code>.sap-font-family-<i style="color: red;">type</i></code>class or the <code>@include sap-font-family(<i style="color: red;">type</i>)</code> mixin with <i style="color: red;">type</i> being one of the following:<br> regular | light | bold | semibold | semibold-duplex | monospaced-regular | monospaced-bold | black | header 
+
 <table style="width: 100%; border-collapse: collapse; margin-top: 1rem;">
     <tr>
         <th style="padding: 0.25rem;">Type</th>
@@ -85,6 +86,7 @@ FontSize.parameters = {
   docs: {
     description: {
       story: `To set the <b>font-size</b> of an element use the <code>.sap-font-size-<i style="color: red;">value</i></code>class or the <code>@include sap-font-size(<i style="color: red;">value</i>)</code> mixin with <i style="color: red;">value</i> being one of the following:<br> header-6 | header-5 | header-4 | header-3 | header-2 | header-1 | small | medium | large 
+
 <table style="width: 100%; border-collapse: collapse; margin-top: 1rem;">
     <tr>
         <th style="padding: 0.25rem;">Type</th>

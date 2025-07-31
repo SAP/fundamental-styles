@@ -28,8 +28,7 @@ DefaultExample.storyName = 'Default';
 DefaultExample.parameters = {
   docs: {
     description: {
-      story: `The default text component can display lines of text that wrap to the next line
-        once they reach the end of the content container width.`
+      story: `The default text component can display lines of text that wrap to the next line once they reach the end of the content container width.`
     }
   }
 };
@@ -37,9 +36,7 @@ export const Whitespace = () => whitespaceExampleHtml;
 Whitespace.parameters = {
   docs: {
     description: {
-      story: `The text component has a property that allows browsers to render specified indents and
-        whitespace. To display indents and/or whitespace, use the
-        \`.fd-text-pre-wrap\` class or \`data-wrap\` attribute to \`.fd-text\` class.`
+      story: `The text component has a property that allows browsers to render specified indents and whitespace. To display indents and/or whitespace, use the \`.fd-text-pre-wrap\` class or \`data-wrap\` attribute to \`.fd-text\` class.`
     }
   }
 };
