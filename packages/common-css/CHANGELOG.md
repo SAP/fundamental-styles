@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.41.0-rc.34](https://github.com/SAP/fundamental-styles/compare/v0.41.0-rc.33...v0.41.0-rc.34) (2025-07-31)
+
+### Bug Fixes
+
+- **common-css:** optimizations for common-css flex [ci visual] ([#6124](https://github.com/SAP/fundamental-styles/issues/6124)) ([29d3bd3](https://github.com/SAP/fundamental-styles/commit/29d3bd361a3ade683c937d7f1212a191aee20ad6))
+
 # [0.41.0-rc.33](https://github.com/SAP/fundamental-styles/compare/v0.41.0-rc.32...v0.41.0-rc.33) (2025-07-29)
 
 ### Bug Fixes
