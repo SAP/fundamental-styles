@@ -49,7 +49,7 @@ $block: #{$fd-namespace}-panel;
     }
 
     &:not(:has(.#{$block}__button)) {
-      --fdPanel_Header_Padding_Inline_Start: 1rem;
+      --fdPanel_Header_Padding_Inline_Start: 0.75rem;
     }
   }
 
@@ -61,6 +61,7 @@ $block: #{$fd-namespace}-panel;
     width: 100%;
     max-width: 100%;
     font-size: var(--fdPanel_Title_Font_Size);
+    padding-inline-start: 0.25rem;
   }
 
   &__content {

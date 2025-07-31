@@ -76,7 +76,7 @@ export const Transparent = () => transparentExampleHtml;
 Transparent.parameters = {
   docs: {
     description: {
-      story: `The background of the content can be set to transparent by applying the \`.fd-panel--transparent \` modifier class.
+      story: `The background of the content can be set to transparent by applying the \`.fd-panel--transparent \` modifier class. <br> The padding of the content can be removed with the \`.fd-panel__content--no-padding \` modifier class added to \`.fd-panel__content \` base class.
         `
     }
   }
