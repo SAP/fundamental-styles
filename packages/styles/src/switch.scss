@@ -91,6 +91,7 @@ $block: #{$fd-namespace}-switch;
   cursor: pointer;
   padding-block: var(--fdSwitch_Padding, 0.625rem);
   padding-inline: 0;
+  margin-inline: 0;
 
   @include fd-disabled() {
     cursor: auto;
