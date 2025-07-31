@@ -3,6 +3,8 @@ import yearsExampleHtml from "./years.example.html?raw";
 import monthsExampleHtml from "./months.example.html?raw";
 import daysExampleHtml from "./days.example.html?raw";
 import legendExampleHtml from "./legend.example.html?raw";
+import twoMonthViewExampleHtml from "./two-month-view.example.html?raw";
+
 import '../../../src/bar.scss';
 import '../../../src/dialog.scss';
 import '../../../src/tile.scss';
@@ -149,6 +151,16 @@ The legend includes:
 
 The number of flexible columns should be configurable to prevent label truncation, though labels can also wrap to accommodate longer text. Use <code>fd-calendar-legend--auto-column</code> for auto column width.<br><br>
 Appointments are represented by circles <code>fd-calendar-legend__item--appointment</code>, while special calendar days are depicted as squares (default).`
+    }
+  }
+};
+
+export const TwoMonthView = () => twoMonthViewExampleHtml;
+TwoMonthView.storyName = 'Two-Month Calendar';
+TwoMonthView.parameters = {
+  docs: {
+   description: {
+      story: `For date range selection use cases the calendar can provide 2-month view. The adjacent month days and the inner buttons are hidden. <br><br>In cases where the width of the screen is not enough the 2-month calendar is turning into a vertical structure. Use the modifier class <code>.fd-calendar-container--vertical</code> for vertical layout. <br><br>On phone the Calendar popover turns into full screen dialog with only one month and taking back the adjacent month days.`
     }
   }
 };
