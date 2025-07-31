@@ -81,19 +81,19 @@ $block: #{commonsettings.$sap-namespace}-flex;
   }
 
   // Properties for the Children (flex items)
-  @for $i from 0 through 20 {
+  @for $i from 0 through 10 {
     &-order-#{$i} {
       @include commonmixins.sap-flex-order(#{$i});
     }
   }
 
-  @for $i from 1 through 20 {
+  @for $i from 1 through 10 {
     &-grow-#{$i} {
       @include commonmixins.sap-flex-grow(#{$i});
     }
   }
 
-  @for $i from 1 through 20 {
+  @for $i from 1 through 10 {
     &-shrink-#{$i} {
       @include commonmixins.sap-flex-shrink(#{$i});
     }
