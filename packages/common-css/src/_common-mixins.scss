@@ -893,29 +893,17 @@
   $_border: $width $style $color;
 
   @if  $pos == "top" {
-    border-top: $_border;
+    border-block-start: $_border;
   } @else if $pos == "bottom" {
-    border-bottom: $_border;
+    border-block-end: $_border;
   } @else if $pos == "left" {
-    border-left: $_border;
-
-    @include sap-rtl() {
-      border-left: none;
-      border-right: $_border;
-    }
+    border-inline-start: $_border;
   } @else if $pos == "right" {
-    border-right: $_border;
-
-    @include sap-rtl() {
-      border-left: $_border;
-      border-right: none;
-    }
+    border-inline-end: $_border;
   } @else if $pos == "x" {
-    border-left: $_border;
-    border-right: $_border;
+    border-inline: $_border;
   } @else if $pos == "y" {
-    border-top: $_border;
-    border-bottom: $_border;
+    border-block: $_border;
   } @else if $pos == "all" {
     border: $_border;
   } @else {

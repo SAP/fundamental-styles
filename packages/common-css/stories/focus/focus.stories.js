@@ -32,8 +32,7 @@ FakeFioriFocus.storyName = 'Mixin sap-fake-fiori-focus';
 FakeFioriFocus.parameters = {
   docs: {
     description: {
-      story: `Most modern browsers do not support outline radius. An alternative apporach, using <code>sap-fake-fiori-focus</code> mixin, can be applied to solve this problem. 
-            The parameters this mixin accepts are: $offset, $radius and $alternative.`
+      story: `Most modern browsers do not support outline radius. An alternative apporach, using <code>sap-fake-fiori-focus</code> mixin, can be applied to solve this problem. The parameters this mixin accepts are: $offset, $radius and $alternative.`
     }
   }
 };
