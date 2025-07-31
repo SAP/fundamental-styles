@@ -434,6 +434,12 @@ $fd-calendar-special-days: (
     }
   }
 
+  // To hide buttons in Two-Month View
+  &__hidden {
+    opacity: 0;
+    pointer-events: none;
+  }
+
   // CALENDAR COMPACT
   @include fd-compact-or-condensed() {
     --fdCalendar_Width:
@@ -470,6 +476,12 @@ $fd-calendar-special-days: (
     --fdCalendar_Padding: 0;
 
     padding-block-start: 1rem;
+  }
+
+  &--mobile {
+    --fdCalendar_Padding: 0;
+
+    padding-block-start: 0.5rem;
   }
 }
 
@@ -561,4 +573,33 @@ $fd-calendar-special-days: (
   @include fd-compact-or-condensed() {
     --fdCalendar_Legend_Item_Padding: 0.125rem;
   }
+}
+
+.#{$block}-container {
+  @include fd-reset();
+
+  width: fit-content;
+  padding-block: 0.5rem;
+  padding-inline: 0.5rem;
+  box-shadow: var(--sapContent_Shadow2);
+  background: var(--sapGroup_ContentBackground);
+  border-radius: var(--sapPopover_BorderCornerRadius);
+
+  &--vertical {
+    --fdCalendarContainerGap: 0.5rem;
+    --fdCalendarContainerFlexDirection: column;
+  }
+
+  .#{$block}__item--other {
+    opacity: 0;
+    pointer-events: none;
+  }
+}
+
+.#{$block}-container-inner {
+  @include fd-flex($direction: var(--fdCalendarContainerFlexDirection, row)) {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: var(--fdCalendarContainerGap, 1rem);
+  };
 }
