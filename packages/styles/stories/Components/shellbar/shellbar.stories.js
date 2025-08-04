@@ -89,12 +89,10 @@ Primary.parameters = {
   docs: {
     description: {
       story: `The Shell Bar has 2 mandatory components: 
-      <ul>
-        <li><b>Branding:</b> Visual branding elements, such as the SAP or company logo (mandatory), the Product Name (mandatory) and Solution Name (optional). Clicking on the Branding navigates users back to the product's home page. Use the official SAP product name and logo by default, allowing customers to customize the logo and sub-brand text if needed, but avoid including "SAP" in the product name. The solution name, optional and limited to 40 characters, should only be used with the product name in exceptional cases and not for app names or navigation. </li>
-        <li><b>User Profile:</b> offers access to user-specific settings and displays either an image or initials.</li>
-      </ul>
-
-    `
+  <ul>
+  <li><b>Branding:</b> Visual branding elements, such as the SAP or company logo (mandatory), the Product Name (mandatory) and Solution Name (optional). Clicking on the Branding navigates users back to the product's home page. Use the official SAP product name and logo by default, allowing customers to customize the logo and sub-brand text if needed, but avoid including "SAP" in the product name. The solution name, optional and limited to 40 characters, should only be used with the product name in exceptional cases and not for app names or navigation. </li>
+  <li><b>User Profile:</b> offers access to user-specific settings and displays either an image or initials.</li>
+  </ul>`
     }
   }
 };
