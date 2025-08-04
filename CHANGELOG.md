@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.41.0-rc.41](https://github.com/SAP/fundamental-styles/compare/v0.41.0-rc.40...v0.41.0-rc.41) (2025-08-04)
+
+### Bug Fixes
+
+- **styles:** update Illustrated messages examples for a11y [ci visual] ([#6140](https://github.com/SAP/fundamental-styles/issues/6140)) ([2f15c2f](https://github.com/SAP/fundamental-styles/commit/2f15c2fd7d940ff40456f4e1cb30a65376cd3437))
+
 # [0.41.0-rc.40](https://github.com/SAP/fundamental-styles/compare/v0.41.0-rc.39...v0.41.0-rc.40) (2025-08-04)
 
 **Note:** Version bump only for package fundamental-styles
@@ -6311,9 +6317,9 @@ Co-authored-by: droshev <mladen.droshev@sap.com>
 
 - added a new modifier class to fd-row to achieve even alignment of its elements:fd-row--top in a form.
   Before:
-      <div class="fd-row">
-      After:
-      <div class="fd-row fd-row--top">
+  <div class="fd-row">
+  After:
+  <div class="fd-row fd-row--top">
 
 ### Bug Fixes
 
