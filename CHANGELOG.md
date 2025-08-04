@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.41.0-rc.42](https://github.com/SAP/fundamental-styles/compare/v0.41.0-rc.41...v0.41.0-rc.42) (2025-08-04)
+
+### Bug Fixes
+
+- **styles:** update IconTabBar overflow button [ci visual] ([#6141](https://github.com/SAP/fundamental-styles/issues/6141)) ([1f2ecbd](https://github.com/SAP/fundamental-styles/commit/1f2ecbd0d4b17a81b74879e42500b2099712edea))
+
 # [0.41.0-rc.41](https://github.com/SAP/fundamental-styles/compare/v0.41.0-rc.40...v0.41.0-rc.41) (2025-08-04)
 
 ### Bug Fixes
@@ -6317,9 +6323,9 @@ Co-authored-by: droshev <mladen.droshev@sap.com>
 
 - added a new modifier class to fd-row to achieve even alignment of its elements:fd-row--top in a form.
   Before:
-  <div class="fd-row">
-  After:
-  <div class="fd-row fd-row--top">
+    <div class="fd-row">
+    After:
+    <div class="fd-row fd-row--top">
 
 ### Bug Fixes
 
