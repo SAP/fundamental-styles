@@ -15,8 +15,6 @@ $fd-icon-tab-bar-icon-circle-size-compact: 2rem !default;
 $fd-icon-tab-bar-multi-click-button-size: 1.5rem !default;
 $fd-icon-tab-bar-tablist-border: var(--sapContent_HeaderShadow);
 $fd-icon-tab-bar-filter-container-top-offset: 1.625rem !default;
-$fd-icon-tab-bar-overflow-button-border-radius: var(--fdIcon_Tab_Bar_Overflow_Button_Border_Radius) !default;
-$fd-icon-tab-bar-overflow-button-focus-offset: var(--fdIcon_Tab_Bar_Overflow_Button_Focus_Offset) !default;
 $fd-icon-tab-bar-filter-container-top-offset-compact: 1.375rem !default;
 $fd-icon-tab-bar-dnd-separator-bar-horizontal-offset: -0.5rem !default;
 $fd-icon-tab-bar-dnd-separator-bar-vertical-offset: 0.125rem !default;
@@ -796,7 +794,7 @@ $fd-icon-tab-bar-semantic-values: (
     height: 1.5rem;
     cursor: pointer;
     position: relative;
-    border-radius: $fd-icon-tab-bar-overflow-button-border-radius;
+    border-radius: var(--sapButton_BorderCornerRadius);
     background: var(--fdIconTabBar_Overflow_Button_Background);
     border: $fd-icon-tab-bar-border-thickness solid var(--fdIconTabBar_Overflow_Button_Border_Color);
 
@@ -829,8 +827,8 @@ $fd-icon-tab-bar-semantic-values: (
         content: '';
         display: block;
         position: absolute;
-        inset: $fd-icon-tab-bar-overflow-button-focus-offset $fd-icon-tab-bar-overflow-button-focus-offset $fd-icon-tab-bar-overflow-button-focus-offset $fd-icon-tab-bar-overflow-button-focus-offset;
-        border-radius: $fd-icon-tab-bar-overflow-button-border-radius;
+        inset: 0.0625rem;
+        border-radius: var(--fdIcon_Tab_Bar_Overflow_Button_Focus_Border_Radius);
         border: var(--sapContent_FocusWidth) var(--sapContent_FocusStyle) var(--sapContent_FocusColor);
       }
 
@@ -1406,7 +1404,6 @@ $fd-icon-tab-bar-semantic-values: (
 
     .#{$block}__overflow {
       --fdIconTabBar_Overflow_Button_Background: var(--fdIconTabBar_Overflow_Button_Shell_Background);
-      --fdIconTabBar_Overflow_Button_Border_Color: var(--fdIconTabBar_Overflow_Button_Shell_Border_Color);
       --fdIconTabBar_Overflow_Button_Text_Color: var(--fdIconTabBar_Overflow_Button_Shell_Text_Color);
       --fdIconTabBar_Overflow_Button_Icon_Color: var(--fdIconTabBar_Overflow_Button_Shell_Icon_Color);
 

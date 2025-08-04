@@ -22,8 +22,7 @@
   --fdIcon_Tab_Bar_Semantic_Badge_Color_Critical: var(--sapCriticalElementColor);
   --fdIcon_Tab_Bar_Semantic_Badge_Color_Informative: var(--sapInformativeElementColor);
   --fdIcon_Tab_Bar_Overflow_Button_Hover_Box_Shadow: none;
-  --fdIcon_Tab_Bar_Overflow_Button_Focus_Offset: 0.0625rem;
-  --fdIcon_Tab_Bar_Overflow_Button_Border_Radius: 0.75rem;
+  --fdIcon_Tab_Bar_Overflow_Button_Focus_Border_Radius: var(--sapButton_BorderCornerRadius);
   --fdIcon_Tab_Bar_Overflow_Button_Font_Family: var(--sapFontFamily);
   --fdIcon_Tab_Bar_Overflow_Button_Text_Color: var(--sapButton_TextColor);
   --fdIcon_Tab_Bar_Overflow_Button_Icon_Color: var(--sapButton_IconColor);
