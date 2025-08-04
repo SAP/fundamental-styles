@@ -73,7 +73,7 @@ By default, the background for the Icon Tab Bar header and content is set to "so
 
 <br><br><br>
       `,
-    tags: ['f3', 'theme', 'development']
+    tags: ['f3', 'development']
   }
 };
 export const TextOnly = () => textOnlyExampleHtml;
@@ -134,8 +134,7 @@ export const Overflow = () => overflowExampleHtml;
 Overflow.parameters = {
   docs: {
     description: {
-      story: `Tabs can have an overflow to either sides of the control. Depending on if the order is fixed (process steps) or can be rearranged (tabs).
-        For processes with a fixed order, an overflow to both sides is used. For tabs that can be rearranged, only one overflow will be displayed on the right side.`
+      story: `Tabs can have an overflow to either sides of the control. Depending on if the order is fixed (process steps) or can be rearranged (tabs). For processes with a fixed order, an overflow to both sides is used. For tabs that can be rearranged, only one overflow will be displayed on the right side.`
     }
   }
 };
@@ -144,9 +143,7 @@ SingleClick.storyName = 'Universal Icon Tab Bar Single Click Area';
 SingleClick.parameters = {
   docs: {
     description: {
-      story: `When there is only one click area per tab (also including tabs with sub-items), regular tabs get selected immediately after the click is released. Tabs with sub-items trigger the expansion of a menu (Popover) showing its sub-items. The parent tab title remains displayed when its child is select.
-        <br>
-        You need to apply the \`fd-icon-tab-bar__item--single-click\` modifier class to \`fd-icon-tab-bar__item\` element. The List component inside the Popover has an additional modifier class \`fd-icon-tab-bar__list\` to achieve the nesting (indentation) of the elements. The list menu can be borderless, with line separators (\`fd-icon-tab-bar__line-separator\`) or icon separators (\`fd-icon-tab-bar__icon-separator\`) `
+      story: `When there is only one click area per tab (also including tabs with sub-items), regular tabs get selected immediately after the click is released. Tabs with sub-items trigger the expansion of a menu (Popover) showing its sub-items. The parent tab title remains displayed when its child is select.<br>You need to apply the \`fd-icon-tab-bar__item--single-click\` modifier class to \`fd-icon-tab-bar__item\` element. The List component inside the Popover has an additional modifier class \`fd-icon-tab-bar__list\` to achieve the nesting (indentation) of the elements. The list menu can be borderless, with line separators (\`fd-icon-tab-bar__line-separator\`) or icon separators (\`fd-icon-tab-bar__icon-separator\`) `
     }
   }
 };
@@ -164,8 +161,7 @@ Badge.storyName = 'Badges';
 Badge.parameters = {
   docs: {
     description: {
-      story: `The Tab attention badge is applied as a visual eye-catcher to indicate a change within a Tab. <br>
-        The badge is a span element with \`fd-icon-tab-bar__badge\` class. It can be animated by adding an additional \` fd-icon-tab-bar__badge--animated\` modifier class. In this case the badge appears for a few milliseconds and then disappears.`
+      story: `The Tab attention badge is applied as a visual eye-catcher to indicate a change within a Tab. <br>The badge is a span element with \`fd-icon-tab-bar__badge\` class. It can be animated by adding an additional \` fd-icon-tab-bar__badge--animated\` modifier class. In this case the badge appears for a few milliseconds and then disappears.`
     }
   }
 };
@@ -192,9 +188,7 @@ Navigation.storyName = 'Navigation Icon Tab Bar (Shell Navigation)';
 Navigation.parameters = {
   docs: {
     description: {
-      story: `The Navigation Tab Bar is the main/default navigation displayed on the SAP Fiori launchpad home page. It offers the user an easy access to multiple pages per space. The background color of the Shell Navigation is connected the Home/Shell Header to properly differentiate the global shell navigation versus any application specific navigation. The Navigation Bar snaps to top and remains visible while scrolling. It is not visible in App view. <br>
-        The implementation is based on UniversalIconTabBar with some different color parameters that are specific to Shell Bar. <br>
-        If there are more Tabs than the screen can accommodate, the remaining Tabs move into an Overflow.`
+      story: `The Navigation Tab Bar is the main/default navigation displayed on the SAP Fiori launchpad home page. It offers the user an easy access to multiple pages per space. The background color of the Shell Navigation is connected the Home/Shell Header to properly differentiate the global shell navigation versus any application specific navigation. The Navigation Bar snaps to top and remains visible while scrolling. It is not visible in App view. <br>The implementation is based on UniversalIconTabBar with some different color parameters that are specific to Shell Bar. <br>If there are more Tabs than the screen can accommodate, the remaining Tabs move into an Overflow.`
     }
   }
 };
@@ -203,10 +197,7 @@ NavigationFlat.storyName = 'Flat Navigation';
 NavigationFlat.parameters = {
   docs: {
     description: {
-      story: `The Flat Navigation offers the user an easy access to multiple pages per space.
-        As the ShellNavigation (Fiori 3), the Flat Navigation is the main/default navigation displayed on the SAP Fiori launchpad home page. It snaps to top and remains visible while scrolling and is not visible in App view.
-        The Flat Navigation Concept allows putting all entities of a single space directly into the first level of the Top Level Navigation Bar for direct access.
-        Add the \`.fd-icon-tab-bar--navigation-flat\` modifier class to \`.fd-icon-tab-bar.fd-icon-tab-bar--navigation\` to achieve the flat navigation look and feel. The items that have separators need to receive the \`.fd-icon-tab-bar__item--with-separator\` modifier class to \`.fd-icon-tab-bar__item\` class. This will append a vertical separator line on the right hand side of the item with an 1rem offset.
+      story: `The Flat Navigation offers the user an easy access to multiple pages per space. As the ShellNavigation (Fiori 3), the Flat Navigation is the main/default navigation displayed on the SAP Fiori launchpad home page. It snaps to top and remains visible while scrolling and is not visible in App view. <br>The Flat Navigation Concept allows putting all entities of a single space directly into the first level of the Top Level Navigation Bar for direct access. <br>Add the \`.fd-icon-tab-bar--navigation-flat\` modifier class to \`.fd-icon-tab-bar.fd-icon-tab-bar--navigation\` to achieve the flat navigation look and feel. <br>The items that have separators need to receive the \`.fd-icon-tab-bar__item--with-separator\` modifier class to \`.fd-icon-tab-bar__item\` class. This will append a vertical separator line on the right hand side of the item with an 1rem offset.
         `
     }
   }
@@ -216,17 +207,11 @@ DragAndDrop.storyName = 'Tabs drag and drop';
 DragAndDrop.parameters = {
   docs: {
     description: {
-      story: `You can allow users to rearrange the tab order.
-        If this feature is enabled, users can drag and drop tabs to reorder them, either directly on the tab bar or inside the overflow menu.
-        It is also possible to drag and drop tabs from the tab bar to the overflow menu and vice versa.
-        There're 4 classes for drag and drop:
-        use \`fd-icon-tab-bar__item--dnd-preview\` to indicate the element that is being dragged;
-        use \`fd-icon-tab-bar__item--dnd-hovered\` when dragging over an item. This class indicates that tab, htat is being dragged, can be inserted into the current one;
-        \`fd-icon-tab-bar__item--dnd-separator\` adds a visual indicator before the tab, to which is applied, when element that is being dragged can be insterted before particular one.
-        When used with the subtab, separator will be vertical;
-        \`fd-icon-tab-bar__item--dnd-separator-end\` - same as above. Being applied after the tab, to which is applied
-
-        `
+      story: `You can allow users to rearrange the tab order. If this feature is enabled, users can drag and drop tabs to reorder them, either directly on the tab bar or inside the overflow menu. It is also possible to drag and drop tabs from the tab bar to the overflow menu and vice versa. <br>There're 4 classes for drag and drop: 
+<br>use \`fd-icon-tab-bar__item--dnd-preview\` to indicate the element that is being dragged;
+<br>use \`fd-icon-tab-bar__item--dnd-hovered\` when dragging over an item. This class indicates that tab, that is being dragged, can be inserted into the current one;
+<br>\`fd-icon-tab-bar__item--dnd-separator\` adds a visual indicator before the tab, to which is applied, when element that is being dragged can be insterted before particular one. When used with the subtab, separator will be vertical;<br>
+\`fd-icon-tab-bar__item--dnd-separator-end\` - same as above. Being applied after the tab, to which is applied.`
     }
   }
 };
