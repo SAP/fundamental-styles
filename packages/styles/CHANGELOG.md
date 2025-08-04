@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.41.0-rc.39](https://github.com/SAP/fundamental-styles/compare/v0.41.0-rc.38...v0.41.0-rc.39) (2025-08-04)
+
+### Features
+
+- **styles:** add two-month view for Calendar [ci visual] ([#6137](https://github.com/SAP/fundamental-styles/issues/6137)) ([01520e9](https://github.com/SAP/fundamental-styles/commit/01520e97c1ae193b0139a39b2621519858998371))
+
 # [0.41.0-rc.38](https://github.com/SAP/fundamental-styles/compare/v0.41.0-rc.37...v0.41.0-rc.38) (2025-07-31)
 
 ### Bug Fixes
