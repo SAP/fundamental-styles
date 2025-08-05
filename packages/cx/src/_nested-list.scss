@@ -103,6 +103,36 @@ $button: #{$fd-cx-namespace}-button;
     }
   }
 
+  &__item--quick-create {
+    --fdNestedList_Icon_Color: var(--sapButton_TextColor);
+    --fdNestedList_Title_Color: var(--sapButton_TextColor);
+    --fdNestedList_Title_Font_Family: var(--sapFontSemiboldDuplexFamily);
+   
+    .#{$block}__link {
+      box-shadow: var(--fdNestedList_QuickAction_BoxShadow, 0 0 0 var(--sapButton_BorderWidth) var(--sapButton_BorderColor));
+      background: var(--fdNestedList_QuickAction_Background, var(--sapButton_Background));
+
+      @include fd-hover() {
+        --fdNestedList_QuickAction_Background: var(--sapButton_Hover_Background);
+        --fdNestedList_QuickAction_BoxShadow: 0 0 0 var(--sapButton_BorderWidth) var(--sapButton_Hover_BorderColor);
+      }
+  
+      @include fd-active() {
+        --fdNestedList_QuickAction_Background: var(--sapButton_Active_Background);
+        --fdNestedList_QuickAction_BoxShadow: 0 0 0 var(--sapButton_BorderWidth) var(--sapButton_Active_BorderColor);
+
+        .#{$block}__icon, .#{$block}__title {
+          color: var(--sapButton_TextColor);
+        }
+        
+        @include fd-hover() {
+          --fdNestedList_QuickAction_Background: var(--sapButton_Active_Background);
+          --fdNestedList_QuickAction_BoxShadow: 0 0 0 var(--sapButton_BorderWidth) var(--sapButton_Active_BorderColor);
+        }
+      }
+    }
+  }
+
   &__link {
     @include fd-reset();
 
@@ -193,7 +223,7 @@ $button: #{$fd-cx-namespace}-button;
     @include fd-icon-element-base() {
       @include fd-set-width(1rem);
 
-      color: var(--sapList_TextColor);
+      color: var(--fdNestedList_Icon_Color, var(--sapList_TextColor));
       font-size: 1rem;
     }
   }
@@ -206,7 +236,7 @@ $button: #{$fd-cx-namespace}-button;
     line-height: normal;
     display: inline-block;
     font-size: var(--sapFontSize);
-    color: var(--sapList_TextColor);
+    color: var(--fdNestedList_Title_Color, var(--sapList_TextColor));
     font-family: var(--fdNestedList_Title_Font_Family, var(--sapFontBoldFamily));
     transition: opacity 0.1s ease-out, visibility 0.1s ease-out;
   }
