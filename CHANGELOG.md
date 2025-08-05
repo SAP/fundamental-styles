@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.41.0-rc.43](https://github.com/SAP/fundamental-styles/compare/v0.41.0-rc.42...v0.41.0-rc.43) (2025-08-05)
+
+### Bug Fixes
+
+- **styles:** remove font-weight for Emphasized btn [ci visual] ([#6143](https://github.com/SAP/fundamental-styles/issues/6143)) ([e0a6ed5](https://github.com/SAP/fundamental-styles/commit/e0a6ed563349233adc0e7eb79a26e99752e491e4))
+
 # [0.41.0-rc.42](https://github.com/SAP/fundamental-styles/compare/v0.41.0-rc.41...v0.41.0-rc.42) (2025-08-04)
 
 ### Bug Fixes
@@ -6323,9 +6329,9 @@ Co-authored-by: droshev <mladen.droshev@sap.com>
 
 - added a new modifier class to fd-row to achieve even alignment of its elements:fd-row--top in a form.
   Before:
-    <div class="fd-row">
-    After:
-    <div class="fd-row fd-row--top">
+      <div class="fd-row">
+      After:
+      <div class="fd-row fd-row--top">
 
 ### Bug Fixes
 
