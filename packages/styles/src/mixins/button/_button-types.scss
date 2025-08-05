@@ -35,7 +35,6 @@ $button-types-config: (
     "default": map.merge(
       map.get($default-button-config, "default"),
       (
-        "fontWeight": var(--sapButton_Emphasized_FontWeight),
         "borderWidth": var(--sapButton_Emphasized_BorderWidth),
         "borderColor": var(--sapButton_Emphasized_BorderColor),
         "color": var(--sapButton_Emphasized_TextColor),
@@ -245,7 +244,6 @@ $button-types-config: (
       @include _fd-button-type($props);
 
       @if $type == "emphasized" {
-        font-weight: var(--sapButton_Emphasized_FontWeight);
         border-width: var(--sapButton_Emphasized_BorderWidth);
 
         @include fd-focus() {
