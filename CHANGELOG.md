@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.41.0-rc.45](https://github.com/SAP/fundamental-styles/compare/v0.41.0-rc.44...v0.41.0-rc.45) (2025-08-06)
+
+### Bug Fixes
+
+- **styles:** add alternative icon for Cards [ci visual] ([#6144](https://github.com/SAP/fundamental-styles/issues/6144)) ([7277394](https://github.com/SAP/fundamental-styles/commit/7277394c391e63da69ccc380d7e5c7c7b055c13a))
+
 # [0.41.0-rc.44](https://github.com/SAP/fundamental-styles/compare/v0.41.0-rc.43...v0.41.0-rc.44) (2025-08-06)
 
 ### Bug Fixes
@@ -6335,9 +6341,9 @@ Co-authored-by: droshev <mladen.droshev@sap.com>
 
 - added a new modifier class to fd-row to achieve even alignment of its elements:fd-row--top in a form.
   Before:
-  <div class="fd-row">
-  After:
-  <div class="fd-row fd-row--top">
+    <div class="fd-row">
+    After:
+    <div class="fd-row fd-row--top">
 
 ### Bug Fixes
 
