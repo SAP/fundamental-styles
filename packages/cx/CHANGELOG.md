@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.41.0-rc.44](https://github.com/SAP/fundamental-styles/compare/v0.41.0-rc.43...v0.41.0-rc.44) (2025-08-06)
+
+### Bug Fixes
+
+- **styles:** update Side Navigation examples [ci visual] ([#6142](https://github.com/SAP/fundamental-styles/issues/6142)) ([8cdd00f](https://github.com/SAP/fundamental-styles/commit/8cdd00f791a9ac92335cbfccde7880f35fccda3d))
+
 # [0.41.0-rc.43](https://github.com/SAP/fundamental-styles/compare/v0.41.0-rc.42...v0.41.0-rc.43) (2025-08-05)
 
 **Note:** Version bump only for package @fundamental-styles/cx
