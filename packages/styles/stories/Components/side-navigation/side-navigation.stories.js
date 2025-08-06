@@ -1,6 +1,7 @@
 
 import collapsedExampleHtml from "./collapsed.example.html?raw";
 import expandedExampleHtml from "./expanded.example.html?raw";
+import expandedAddExampleHtml from "./expanded-add.example.html?raw";
 import floatingExampleHtml from "./floating.example.html?raw";
 import '../../../src/side-nav.scss';
 import '../../../src/navigation-list.scss';
@@ -47,9 +48,20 @@ The List structure is based on **Navigation List**
     tags: []
   }
 };
+
 export const Expanded = () => expandedExampleHtml;
 Expanded.storyName = 'Expanded State, Defaut (fixed) Style';
 Expanded.parameters = {
+  docs: {
+    description: {
+      story: ``
+    }
+  }
+};
+
+export const ExpandedAdd = () => expandedAddExampleHtml;
+ExpandedAdd.storyName = 'Expanded State, Defaut (fixed) Style with Additional Features (Grouping, Two-click items, External Navigation)';
+ExpandedAdd.parameters = {
   docs: {
     description: {
       story: ``
