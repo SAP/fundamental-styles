@@ -10,6 +10,7 @@ import cardNonInteractiveExampleHtml from "./card-non-interactive.example.html?r
 import cardNonInteractiveHeaderExampleHtml from "./card-non-interactive-header.example.html?raw";
 import cardInteractiveButtonExampleHtml from "./card-button-interactive.example.html?raw";
 import cardInteractiveListitemExampleHtml from "./card-listitem-interactive.example.html?raw";
+import cardStatusIconExampleHtml from "./card-status-icon.example.html?raw";
 
 import '../../../src/button.scss';
 import '../../../src/avatar.scss';
@@ -45,7 +46,7 @@ Card sizes vary depending on the layout, and they are not editable. A card can f
 ##Card anatomy
 
 - <b>header</b> (optional): the card header is a flexible combination of 3 block areas: main header, numeric header and extended header. The header displays a mandatory title, indicating what the card is about and functions as a navigation control that directs the user to the parent app.
-  - <b>main header</b>: the main card header block shows the basic information of the card. It can contain <b>avatar</b> (optional), <b>title</b>, <b>subtitle</b> (optional), <b>counter</b> (optional) and/or <b>button</b> (optional).
+  - <b>main header</b>: the main card header block shows the basic information of the card. It can contain <b>avatar</b> (optional), <b>title</b>, <b>subtitle</b> (optional), <b>counter</b> (optional), <b>button</b> (optional), timestamp (optional). If an additional action is part of the header, the timestamp is placed underneath. The timestamp doesn't wrap or truncate. 
   - <b>extended header</b>: the extended header is a flexible block to hold various other components, like time stamp, rating, tags, label/value, long text, numeric values, etc. The components can be arranged in left column or right column, each column is suggested to have maximum 3 lines for placing the components.
   - <b>numeric header</b>: the numeric header block is designed for displaying numeric information. It consumes Numeric Content (Horizon) and can show additional qualifying information and side indicators, if required. 
 
@@ -149,6 +150,92 @@ NumericHeader.parameters = {
   docs: {
    description: {
       story: `The numeric header block is designed for displaying numeric information.
+`
+    }
+  }
+};
+
+export const StatusIcon = () => cardStatusIconExampleHtml;
+StatusIcon.storyName = 'Alternative Icon on Card Header';
+StatusIcon.parameters = {
+  docs: {
+   description: {
+      story: `Alternatively to an Avatar a Message Icon can be displayed within the Main Header. This will be available in three different sizes (this is only applicable for Message Icons not Avatar component on Card Header). The Message Icons are non-interactive.
+      
+<br><b>Icon Sizes</b>
+
+<table>
+  <thead>
+    <tr>
+        <th>Size</th>
+        <th>font-size</th>
+        <th>Icon Modifier Class</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+        <td>S</td>
+        <td>1rem</td>
+        <td><code>.sap-icon--sm</code></td>
+    </tr>
+    <tr>
+        <td>M</td>
+        <td>2rem</td>
+        <td><code>.sap-icon--md</code></td>
+    </tr>
+    <tr>
+        <td>L</td>
+        <td>3rem</td>
+        <td><code>.sap-icon--lg</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<br><br>
+<b>Semantic Notification / Message Icons</b>
+
+<table>
+  <thead>
+    <tr>
+        <th>Description</th>
+        <th>Icon Name</th>
+        <th>Icon Modifier Class</th>
+        <th>Color Modifier Class</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+        <td>Negative Notification</td>
+        <td>error</td>
+        <td><code>.sap-icon--error</code></td>
+        <td><code>.sap-icon--color-negative</code></td>
+    </tr>
+    <tr>
+        <td>Critical Notification</td>
+        <td>alert</td>
+        <td><code>.sap-icon--alert</code></td>
+        <td><code>.sap-icon--color-critical</code></td>
+    </tr>
+    <tr>
+        <td>Positive Notification</td>
+        <td>sys-enter-2</td>
+        <td><code>.sap-icon--sys-enter-2</code></td>
+        <td><code>.sap-icon--color-positive</code></td>
+    </tr>
+    <tr>
+        <td>Information Notification</td>
+        <td>information</td>
+        <td><code>.sap-icon--information</code></td>
+        <td><code>.sap-icon--color-information</code></td>
+    </tr>
+    <tr>
+        <td>Neutral Notification</td>
+        <td>sys-help-2</td>
+        <td><code>.sap-icon--sys-help-2</code></td>
+        <td><code>.sap-icon--color-neutral</code></td>
+    </tr>
+  </tbody>
+</table>
 `
     }
   }

@@ -164,6 +164,8 @@ $legend-background-colors: (
 );
 
 .#{$block} {
+  --fdCard_Border: 0.0625rem solid var(--sapTile_BorderColor);
+  --fdCard_Border_Corner_Radius: var(--sapTile_BorderCornerRadius);
   --fdCard_Header_Text_Spacing: 0.25rem;
   --fdCard_Box_Shadow: var(--fdCard_Box_Shadow_Regular);
   --fdCard_Header_Border_Radius: var(--fdCard_Border_Corner_Radius) var(--fdCard_Border_Corner_Radius) 0 0;
@@ -204,7 +206,7 @@ $legend-background-colors: (
   border: var(--fdCard_Border);
   box-shadow: var(--fdCard_Box_Shadow);
   background: var(--fdCard_Background, var(--sapTile_Background));
-  border-radius: var(--fdCard_Border_Radius, var(--fdCard_Border_Corner_Radius));
+  border-radius: var(--fdCard_Border_Corner_Radius);
 
   &--interactive {
     @include fake-card-outline();
@@ -441,6 +443,17 @@ $legend-background-colors: (
     color: var(--sapTile_TitleTextColor); 
     font-size: var(--sapFontSmallSize);
   } 
+
+  &__timestamp {
+    @include fd-reset();
+
+    @include fd-flex() {
+      gap: 0.125rem;
+      align-items: center;
+    };
+
+    font-size: var(--sapFontSmallSize);
+  }
 
   &__footer {
     @include fd-reset();
