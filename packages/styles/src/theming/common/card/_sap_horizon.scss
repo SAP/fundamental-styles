@@ -3,10 +3,8 @@
 :root {
   --fdCard_Box_Shadow_Regular: var(--sapContent_Shadow0);
   --fdCard_Box_Shadow_Hover: var(--sapContent_Shadow2);
-  --fdCard_Border_Corner_Radius: var(--sapTile_BorderCornerRadius);
   --fdCard_Header_Border_Bottom: 0.0625rem solid transparent;
   --fdCard_Footer_Border_Top: 0.0625rem solid transparent;
-  --fdCard_Border: 0.0625rem solid var(--sapTile_BorderColor);
   --fdCard_Counter_Margin: 0.125rem;
   --fdCard_Footer_Padding: 0.75rem;
   --fdCard_Footer_Actions_Item_Spacing: 0.5rem;

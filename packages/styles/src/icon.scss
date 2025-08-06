@@ -9,6 +9,7 @@ $blockTNT: sap-icon-TNT;
 [class*="#{$block}"] {
   @include fd-reset();
   @include fd-icon-base();
+  @include fd-icon-sizes();
   @include fd-icon-control-enumeration($block);
   @include fd-icon-control-enumeration-background($block);
 
