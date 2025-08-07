@@ -1,57 +1,156 @@
-<table style="width: 100%; border-collapse: collapse; margin-top: 1rem;">
+<br><br>
+
+<h4>Content Shadows</h4>
+<table style="width: 100%; border-collapse: collapse; margin-top: 1rem; text-align: left;">
     <tr>
-        <th style="padding: 0.25rem;">Type</th>
-        <th style="padding: 0.25rem;">Class</th>
-        <th style="padding: 0.25rem;">Mixin</th>
+        <th style="padding: 0.5rem 1rem;">Type</th>
+        <th style="padding: 0.5rem 1rem;">Class</th>
+        <th style="padding: 0.5rem 1rem;">Mixin</th>
+        <th style="padding: 0.5rem 1rem;">sap-theming variable</th>
     </tr>
     <tr>
-        <th style="padding: 0.25rem;">Level 0</th>
-        <th style="padding: 0.25rem;">.sap-has-shadow-level-0</th>
-        <th style="padding: 0.25rem;">@include sap-shadow(level-0)</th>
+        <td style="padding: 0.5rem 1rem;">Level 0</td>
+        <td style="padding: 0.5rem 1rem;">.sap-has-shadow-level-0</td>
+        <td style="padding: 0.5rem 1rem;">@include sap-shadow(level-0)</td>
+        <td style="padding: 0.5rem 1rem;">--sapContent_Shadow0</td>
     </tr>
     <tr>
-        <th style="padding: 0.25rem;">Level 1</th>
-        <th style="padding: 0.25rem;">.sap-has-shadow-level-1</th>
-        <th style="padding: 0.25rem;">@include sap-shadow(level-1)</th>
+        <td style="padding: 0.5rem 1rem;">Level 1</td>
+        <td style="padding: 0.5rem 1rem;">.sap-has-shadow-level-1</td>
+        <td style="padding: 0.5rem 1rem;">@include sap-shadow(level-1)</td>
+        <td style="padding: 0.5rem 1rem;">--sapContent_Shadow1</td>
     </tr>
     <tr>
-        <th style="padding: 0.25rem;">Level 2</th>
-        <th style="padding: 0.25rem;">.sap-has-shadow-level-3</th>
-        <th style="padding: 0.25rem;">@include sap-shadow(level-3)</th>
+        <td style="padding: 0.5rem 1rem;">Level 2</td>
+        <td style="padding: 0.5rem 1rem;">.sap-has-shadow-level-2</td>
+        <td style="padding: 0.5rem 1rem;">@include sap-shadow(level-2)</td>
+        <td style="padding: 0.5rem 1rem;">--sapContent_Shadow2</td>
     </tr>
     <tr>
-        <th style="padding: 0.25rem;">Level 3</th>
-        <th style="padding: 0.25rem;">.sap-has-shadow-level-3</th>
-        <th style="padding: 0.25rem;">@include sap-shadow(level-3)</th>
+        <td style="padding: 0.5rem 1rem;">Level 3</td>
+        <td style="padding: 0.5rem 1rem;">.sap-has-shadow-level-3</td>
+        <td style="padding: 0.5rem 1rem;">@include sap-shadow(level-3)</td>
+        <td style="padding: 0.5rem 1rem;">--sapContent_Shadow3</td>
     </tr>
     <tr>
-        <th style="padding: 0.25rem;">Header</th>
-        <th style="padding: 0.25rem;">.sap-has-shadow-header</th>
-        <th style="padding: 0.25rem;">@include sap-shadow(header)</th>
+        <td style="padding: 0.5rem 1rem;">None</td>
+        <td style="padding: 0.5rem 1rem;">.sap-has-shadow-none</td>
+        <td style="padding: 0.5rem 1rem;">@include sap-shadow(none)</td>
+        <td style="padding: 0.5rem 1rem;">none</td>
+    </tr>
+</table>
+
+<br><br>
+
+<h4>Header Shadows</h4>
+<table style="width: 100%; border-collapse: collapse; margin-top: 1rem; text-align: left;">
+    <tr>
+        <th style="padding: 0.5rem 1rem;">Type</th>
+        <th style="padding: 0.5rem 1rem;">Class</th>
+        <th style="padding: 0.5rem 1rem;">Mixin</th>
+        <th style="padding: 0.5rem 1rem;">sap-theming variable</th>
     </tr>
     <tr>
-        <th style="padding: 0.25rem;">Shell</th>
-        <th style="padding: 0.25rem;">.sap-has-shadow-shell</th>
-        <th style="padding: 0.25rem;">@include sap-shadow(shell)</th>
+        <td style="padding: 0.5rem 1rem;">Header</td>
+        <td style="padding: 0.5rem 1rem;">.sap-has-shadow-header</td>
+        <td style="padding: 0.5rem 1rem;">@include sap-shadow(header)</td>
+        <td style="padding: 0.5rem 1rem;">--sapContent_HeaderShadow</td>
     </tr>
     <tr>
-        <th style="padding: 0.25rem;">None</th>
-        <th style="padding: 0.25rem;">.sap-has-shadow-none</th>
-        <th style="padding: 0.25rem;">@include sap-shadow(none)</th>
+        <td style="padding: 0.5rem 1rem;">Shell</td>
+        <td style="padding: 0.5rem 1rem;">.sap-has-shadow-shell</td>
+        <td style="padding: 0.5rem 1rem;">@include sap-shadow(shell)</td>
+        <td style="padding: 0.5rem 1rem;">--sapShell_Shadow</td>
+    </tr>
+</table>
+
+
+<br><br>
+
+<h4>Interaction Shadows</h4>
+<table style="width: 100%; border-collapse: collapse; margin-top: 1rem; text-align: left;">
+    <tr>
+        <th style="padding: 0.5rem 1rem;">Type</th>
+        <th style="padding: 0.5rem 1rem;">Class</th>
+        <th style="padding: 0.5rem 1rem;">Mixin</th>
+        <th style="padding: 0.5rem 1rem;">sap-theming variable</th>
     </tr>
     <tr>
-        <th style="padding: 0.25rem;">Contrast Text</th>
-        <th style="padding: 0.25rem;">.sap-has-shadow-contrast-text</th>
-        <th style="padding: 0.25rem;">@include sap-shadow(contrast-text)</th>
+        <td style="padding: 0.5rem 1rem;">Interaction</td>
+        <td style="padding: 0.5rem 1rem;">.sap-has-shadow-interaction</td>
+        <td style="padding: 0.5rem 1rem;">@include sap-shadow(interaction)</td>
+        <td style="padding: 0.5rem 1rem;">--sapContent\_Interaction\_Shadow</td>
     </tr>
     <tr>
-        <th style="padding: 0.25rem;">Group Title Text</th>
-        <th style="padding: 0.25rem;">.sap-has-shadow-group-title-text</th>
-        <th style="padding: 0.25rem;">@include sap-shadow(group-title-text)</th>
+        <td style="padding: 0.5rem 1rem;">Selected</td>
+        <td style="padding: 0.5rem 1rem;">.sap-has-shadow-selected</td>
+        <td style="padding: 0.5rem 1rem;">@include sap-shadow(selected)</td>
+        <td style="padding: 0.5rem 1rem;">--sapContent\_Selected\_Shadow</td>
     </tr>
     <tr>
-        <th style="padding: 0.25rem;">Emphasized Text</th>
-        <th style="padding: 0.25rem;">.sap-has-shadow-emphasized-text</th>
-        <th style="padding: 0.25rem;">@include sap-shadow(emphasized-text)</th>
+        <td style="padding: 0.5rem 1rem;">Negative</td>
+        <td style="padding: 0.5rem 1rem;">.sap-has-shadow-negative</td>
+        <td style="padding: 0.5rem 1rem;">@include sap-shadow(negative)</td>
+        <td style="padding: 0.5rem 1rem;">--sapContent\_Negative\_Shadow</td>
+    </tr>
+    <tr>
+        <td style="padding: 0.5rem 1rem;">Critical</td>
+        <td style="padding: 0.5rem 1rem;">.sap-has-shadow-critical</td>
+        <td style="padding: 0.5rem 1rem;">@include sap-shadow(critical)</td>
+        <td style="padding: 0.5rem 1rem;">--sapContent\_Critical\_Shadow</td>
+    </tr>
+    <tr>
+        <td style="padding: 0.5rem 1rem;">Positive</td>
+        <td style="padding: 0.5rem 1rem;">.sap-has-shadow-positive</td>
+        <td style="padding: 0.5rem 1rem;">@include sap-shadow(positive)</td>
+        <td style="padding: 0.5rem 1rem;">--sapContent\_Positive\_Shadow</td>
+    </tr>
+    <tr>
+        <td style="padding: 0.5rem 1rem;">Informative</td>
+        <td style="padding: 0.5rem 1rem;">.sap-has-shadow-informative</td>
+        <td style="padding: 0.5rem 1rem;">@include sap-shadow(informative)</td>
+        <td style="padding: 0.5rem 1rem;">--sapContent\_Informative\_Shadow</td>
+    </tr>
+    <tr>
+        <td style="padding: 0.5rem 1rem;">Neutral</td>
+        <td style="padding: 0.5rem 1rem;">.sap-has-shadow-neutral</td>
+        <td style="padding: 0.5rem 1rem;">@include sap-shadow(neutral)</td>
+        <td style="padding: 0.5rem 1rem;">--sapContent\_Neutral\_Shadow</td>
+    </tr>
+</table>
+
+<br><br>
+
+<h4>Text Shadows</h4>
+<table style="width: 100%; border-collapse: collapse; margin-top: 1rem; text-align: left;">
+    <tr>
+        <th style="padding: 0.5rem 1rem;">Type</th>
+        <th style="padding: 0.5rem 1rem;">Class</th>
+        <th style="padding: 0.5rem 1rem;">Mixin</th>
+        <th style="padding: 0.5rem 1rem;">sap-theming variable</th>
+    </tr>
+    <tr>
+        <td style="padding: 0.5rem 1rem;">Text</td>
+        <td style="padding: 0.5rem 1rem;">.sap-has-shadow-text</td>
+        <td style="padding: 0.5rem 1rem;">@include sap-shadow(text)</td>
+        <td style="padding: 0.5rem 1rem;">--sapContent_TextShadow</td>
+    </tr>
+    <tr>
+        <td style="padding: 0.5rem 1rem;">Contrast Text</td>
+        <td style="padding: 0.5rem 1rem;">.sap-has-shadow-contrast-text</td>
+        <td style="padding: 0.5rem 1rem;">@include sap-shadow(contrast-text)</td>
+        <td style="padding: 0.5rem 1rem;">--sapContent_ContrastTextShadow</td>
+    </tr>
+    <tr>
+        <td style="padding: 0.5rem 1rem;">Group Title Text</td>
+        <td style="padding: 0.5rem 1rem;">.sap-has-shadow-group-title-text</td>
+        <td style="padding: 0.5rem 1rem;">@include sap-shadow(group-title-text)</td>
+        <td style="padding: 0.5rem 1rem;">--sapShell_GroupTitleTextShadow</td>
+    </tr>
+    <tr>
+        <td style="padding: 0.5rem 1rem;">Emphasized Text</td>
+        <td style="padding: 0.5rem 1rem;">.sap-has-shadow-emphasized-text</td>
+        <td style="padding: 0.5rem 1rem;">@include sap-shadow(emphasized-text)</td>
+        <td style="padding: 0.5rem 1rem;">--sapButton\_Emphasized\_TextShadow</td>
     </tr>
 </table>

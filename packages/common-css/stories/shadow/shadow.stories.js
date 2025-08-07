@@ -13,14 +13,14 @@ export default {
         </ul><br>
         <code><b>$value</b></code> can be a css variable or any value specified by the user. For example:
 <code>@include sap-set-box-shadow(var(--sapContent_Shadow0))</code><br><br>
-<code><b>$type</b></code> can be one of the following: <code>level-0 | level-1 | level-2 | level-3 | text | contrast-text | group-title-text | emphasized-text | header | shell | none</code>
+<code><b>$type</b></code> can be one of the following: <code>level-0 | level-1 | level-2 | level-3 | text | contrast-text | group-title-text | emphasized-text | header | shell | interaction | selected | negative | critical | positive | informative | neutral | none</code>
 
       `
   }
 };
 const localStyles = `
 <style>
-    div.demo {
+    .demo > div {
         height: 10rem;
         width: 10rem;
         border-radius: 1rem;

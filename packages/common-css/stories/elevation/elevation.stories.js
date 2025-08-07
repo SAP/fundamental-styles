@@ -11,7 +11,7 @@ export default {
         <b>SCSS Mixin: </b>
         <code>@include sap-elevation(<i style="color: red;">index</i>, <i style="color: red;">position</i>);</code><br><br>
         where: <br><br>
-        <code style="color: red;">-index</code>: is an integer from 0 to 50 <br><br>
+        <code style="color: red;">-index</code>: is an integer from 0 to 20 <br><br>
         <code style="color: red;">-position</code>: (optional) is one of the following : relative, absolute, fixed, sticky. If the property is omitted, the default value (relative) is applied.<br>
       `
   }
