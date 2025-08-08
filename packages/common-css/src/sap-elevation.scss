@@ -5,7 +5,7 @@
 $block: #{commonsettings.$sap-namespace}-elevation;
 
 .#{$block} {
-  @for $i from 0 through 50 {
+  @for $i from 0 through 20 {
     &-#{$i} {
       @include commonmixins.sap-elevation(#{$i});
     }

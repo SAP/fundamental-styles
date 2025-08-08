@@ -149,6 +149,15 @@ $sap-box-shadow-types: (
   "header": var(--sapContent_HeaderShadow),
   "shell": var(--sapShell_Shadow),
   "none": none,
+  "interaction": var(--sapContent_Interaction_Shadow),
+  "selected": var(--sapContent_Selected_Shadow),
+  "negative": var(--sapContent_Negative_Shadow),
+  "critical": var(--sapContent_Critical_Shadow),
+  "positive": var(--sapContent_Positive_Shadow),
+  "informative": var(--sapContent_Informative_Shadow),
+  "neutral": var(--sapContent_Neutral_Shadow),
+  "color": var(--sapContent_ShadowColor),
+  "inverted-color": var(--sapContent_ContrastShadowColor),
 );
 
 $sap-text-shadow-types: (
