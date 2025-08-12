@@ -892,17 +892,17 @@
 @mixin sap-border($width, $style, $color, $pos: all) {
   $_border: $width $style $color;
 
-  @if  $pos == "top" {
+  @if $pos == "top" or $pos == "block-start" {
     border-block-start: $_border;
-  } @else if $pos == "bottom" {
+  } @else if $pos == "bottom" or $pos == "block-end" {
     border-block-end: $_border;
-  } @else if $pos == "left" {
+  } @else if $pos == "left" or $pos == "inline-start" {
     border-inline-start: $_border;
-  } @else if $pos == "right" {
+  } @else if $pos == "right" or $pos == "inline-end" {
     border-inline-end: $_border;
-  } @else if $pos == "x" {
+  } @else if $pos == "x" or $pos == "inline" {
     border-inline: $_border;
-  } @else if $pos == "y" {
+  } @else if $pos == "y" or $pos == "block" {
     border-block: $_border;
   } @else if $pos == "all" {
     border: $_border;

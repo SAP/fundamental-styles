@@ -1,0 +1,53 @@
+@use "sass:map";
+@use "common-variables" as commonvars;
+@use "common-mixins" as commonmixins;
+@use "common-settings" as commonsettings;
+
+$block: #{commonsettings.$sap-namespace}-border;
+
+.#{$block} {
+  @each $type, $value in commonvars.$sap-border-style {
+    &-style-#{$type} {
+      border-style: $value;
+    }
+  }
+
+  @each $type, $value in commonvars.$sap-border-width {
+    &-width-#{$type} {
+      border-width: $value;
+    }
+  }
+
+  @each $type, $value in commonvars.$sap-border-color {
+    &-color-#{$type} {
+      border-color: $value;
+    }
+  }
+
+  $border-directions: inline, block, block-start, block-end, inline-start, inline-end;
+
+  @each $dir in $border-directions {
+    &-#{$dir} {
+      border-#{$dir}: 1px solid; // default style — overridden by width/style/color classes
+    }
+
+    @each $type, $value in commonvars.$sap-border-style {
+      &-#{$dir}-style-#{$type} {
+        border-#{$dir}-style: #{$value};
+      }
+    }
+
+    @each $type, $value in commonvars.$sap-border-width {
+      &-#{$dir}-width-#{$type} {
+        border-#{$dir}-width: #{$value};
+      }
+    }
+
+    @each $type, $value in commonvars.$sap-border-color {
+      &-#{$dir}-color-#{$type} {
+        border-#{$dir}-color: #{$value};
+      }
+    }
+  }
+  
+}
