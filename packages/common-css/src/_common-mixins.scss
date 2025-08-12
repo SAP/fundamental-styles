@@ -477,17 +477,17 @@
   }
 
   @if  $side != '' {
-    @if  $side == top {
+    @if  $side == top or $side == block-start {
       @include sap-set-margin-top($_value);
-    } @else if $side == bottom {
+    } @else if $side == bottom or $side == block-end {
       @include sap-set-margin-bottom($_value);
-    } @else if $side == begin {
+    } @else if $side == begin or $side == inline-start {
       @include sap-set-margin-begin($_value);
-    } @else if $side == end {
+    } @else if $side == end or $side == inline-end {
       @include sap-set-margin-end($_value);
-    } @else if $side == x {
+    } @else if $side == x or $side == inline {
       @include sap-set-margin-x-equal($_value);
-    } @else if $side == y {
+    } @else if $side == y or $side == block {
       @include sap-set-margin-y-equal($_value);
     }
   } @else {
@@ -497,23 +497,19 @@
 
 @mixin sap-margin-responsive() {
   @include sap-media-sm() {
-    margin-inline: 0;
-    margin-block: 0 1rem;
+    margin: var(--sapContent_Margin_S);
   }
 
   @include sap-media-md() {
-    margin-inline: 1rem;
-    margin-block: 1rem;
+    margin: var(--sapContent_Margin_M);
   }
 
   @include sap-media-lg() {
-    margin-inline: 2rem;
-    margin-block: 1rem;
+    margin: var(--sapContent_Margin_L);
   }
 
   @include sap-media-xl() {
-    margin-inline: 3rem;
-    margin-block: 1rem;
+    margin: var(--sapContent_Margin_XL);
   }
 }
 
@@ -671,18 +667,18 @@
     $_value: map.get(commonvars.$sap-paddings, #{$value});
   }
 
-  @if  $side != '' {
-    @if  $side == top {
+  @if $side != '' {
+    @if $side == top {
       @include sap-set-padding-top($_value);
     } @else if $side == bottom {
       @include sap-set-padding-bottom($_value);
-    } @else if $side == begin {
+    } @else if $side == begin or $side == start {
       @include sap-set-padding-begin($_value);
     } @else if $side == end {
       @include sap-set-padding-end($_value);
-    } @else if $side == x {
+    } @else if $side == x or $side == inline {
       @include sap-set-padding-x-equal($_value);
-    } @else if $side == y {
+    } @else if $side == y or $side == block {
       @include sap-set-padding-y-equal($_value);
     }
   } @else {
@@ -714,22 +710,22 @@
 
 @mixin sap-padding-container-responsive() {
   @include sap-container-query-sm() {
-    @include sap-padding(small, x);
+    @include sap-padding(var(--sapContent_Space_S), x);
     @include sap-padding(0, y);
   }
 
   @include sap-container-query-md() {
-    @include sap-padding(medium, x);
+    @include sap-padding(var(--sapContent_Space_M), x);
     @include sap-padding(0, y);
   }
 
   @include sap-container-query-lg() {
-    @include sap-padding(medium, x);
+    @include sap-padding(var(--sapContent_Space_L), x);
     @include sap-padding(0, y);
   }
 
   @include sap-container-query-xl() {
-    @include sap-padding(large, x);
+    @include sap-padding(var(--sapContent_Space_XL), x);
     @include sap-padding(0, y);
   }
 }

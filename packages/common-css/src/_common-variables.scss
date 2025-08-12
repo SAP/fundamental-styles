@@ -110,27 +110,33 @@ $sap-content-paddings-nav: (
 
 // Margins
 $sap-margins: (
-  "tiny": 0.5rem,
-  "small": 1rem,
-  "medium": 2rem,
-  "large": 3rem
+  "tiny": var(--sapContent_Space_Tiny),
+  "small": var(--sapContent_Space_Small),
+  "medium": var(--sapContent_Space_Medium),
+  "large": var(--sapContent_Space_Large)
 );
 
 $sap-container-sides: (
   "top": top,
+  "block-start": top,
   "bottom": bottom,
+  "block-end": bottom,
   "begin": left,
+  "inline-start": left,
   "end": right,
+  "inline-end": right,
   "x": horizontal,
-  "y": vertical
+  "inline": horizontal,
+  "y": vertical,
+  "block": vertical
 );
 
 // Paddings
 $sap-paddings: (
-  "tiny": 0.5rem,
-  "small": 1rem,
-  "medium": 2rem,
-  "large": 3rem
+  "tiny": var(--sapContent_Space_Tiny),
+  "small": var(--sapContent_Space_Small),
+  "medium": var(--sapContent_Space_Medium),
+  "large": var(--sapContent_Space_Large)
 );
 
 // Position mixins

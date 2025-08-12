@@ -30,7 +30,7 @@ $block: #{commonsettings.$sap-namespace}-margin;
 
   @each $type, $value in commonvars.$sap-margins {
     &-#{$type}-negative {
-      $_value: $value * -1;
+      $_value: calc(-1 * $value);
 
       @include commonmixins.sap-set-margin-x-equal($_value);
       @include commonmixins.sap-set-margin-y-equal(0);
