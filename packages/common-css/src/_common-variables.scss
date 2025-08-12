@@ -21,6 +21,48 @@ $sap-corner-border-radius-group: 'group';
 $sap-corner-border-radius-popover: 'popover';
 $sap-corner-border-radius-tile: 'tile';
 
+$sap-border-style-solid: 'solid';
+$sap-border-style-dashed: 'dashed';
+$sap-border-style-dotted: 'dotted';
+$sap-border-style-double: 'double';
+$sap-border-style-hidden: 'hidden';
+$sap-border-style-none: 'none';
+
+$sap-border-width-1: 0.0625rem;
+$sap-border-width-2: 0.125rem;
+$sap-border-width-3: 0.1875rem;
+$sap-border-width-4: 0.25rem;
+$sap-border-width-element: var(--sapElement_BorderWidth);
+$sap-border-width-group: var(--sapGroup_BorderWidth);
+$sap-border-width-content-focus: var(--sapContent_FocusWidth);
+$sap-border-width-list: var(--sapList_BorderWidth);
+$sap-border-width-button: var(--sapButton_BorderWidth);
+$sap-border-width-message: var(--sapMessage_BorderWidth);
+$sap-border-width-field: var(--sapField_BorderWidth);
+$sap-border-width-field-invalid: var(--sapField_InvalidBorderWidth);
+$sap-border-width-field-warning: var(--sapField_WarningBorderWidth);
+$sap-border-width-field-success: var(--sapField_SuccessBorderWidth);
+$sap-border-width-field-information: var(--sapField_InformationBorderWidth);
+
+$sap-border-color-error: var(--sapErrorBorderColor);
+$sap-border-color-warning: var(--sapWarningBorderColor);
+$sap-border-color-success: var(--sapSuccessBorderColor);
+$sap-border-color-information: var(--sapInformationBorderColor);
+$sap-border-color-neutral: var(--sapNeutralBorderColor);
+$sap-border-color-content-badge: var(--sapContent_BadgeBorderColor);
+$sap-border-color-content-foreground: var(--sapContent_ForegroundBorderColor);
+$sap-border-color-shell: var(--sapShell_BorderColor);
+$sap-border-color-shell-interactive: var(--sapShell_InteractiveBorderColor);
+$sap-border-color-assistant: var(--sapAssistant_BorderColor);
+$sap-border-color-button: var(--sapButton_BorderColor);
+$sap-border-color-field: var(--sapField_BorderColor);
+$sap-border-color-list: var(--sapList_BorderColor);
+$sap-border-color-tile: var(--sapTile_BorderColor);
+$sap-border-color-message-error: var(--sapMessage_ErrorBorderColor);
+$sap-border-color-message-warning: var(--sapMessage_WarningBorderColor);
+$sap-border-color-message-success: var(--sapMessage_SuccessBorderColor);
+$sap-border-color-message-information: var(--sapMessage_InformationBorderColor);
+
 $sap-container-side-top: 'top';
 $sap-container-side-bottom: 'bottom';
 $sap-container-side-begin: 'begin';
@@ -76,6 +118,57 @@ $sap-corner-border-radius: (
   "group": var(--sapGroup_BorderCornerRadius),
   "popover": var(--sapPopover_BorderCornerRadius),
   "tile": var(--sapTile_BorderCornerRadius)
+);
+
+// Border-style
+$sap-border-style: (
+  "solid": solid,
+  "dashed": dashed,
+  "dotted": dotted,
+  "double": double,
+  "hidden": hidden,
+  "none": none
+);
+
+// Border-width
+$sap-border-width: (
+  "1": 0.0625rem,
+  "2": 0.125rem,
+  "3": 0.1875rem,
+  "4": 0.25rem,
+  "element": var(--sapElement_BorderWidth),
+  "group": var(--sapGroup_BorderWidth),
+  "content-focus": var(--sapContent_FocusWidth),
+  "list": var(--sapList_BorderWidth),
+  "button": var(--sapButton_BorderWidth),
+  "message": var(--sapMessage_BorderWidth),
+  "field": var(--sapField_BorderWidth),
+  "field-invalid": var(--sapField_InvalidBorderWidth),
+  "field-warning": var(--sapField_WarningBorderWidth),
+  "field-success": var(--sapField_SuccessBorderWidth),
+  "field-information": var(--sapField_InformationBorderWidth)
+);
+
+// Border-color
+$sap-border-color: (
+  "error": var(--sapErrorBorderColor),
+  "warning": var(--sapWarningBorderColor),
+  "success": var(--sapSuccessBorderColor),
+  "information": var(--sapInformationBorderColor),
+  "neutral": var(--sapNeutralBorderColor),
+  "content-badge": var(--sapContent_BadgeBorderColor),
+  "content-foreground": var(--sapContent_ForegroundBorderColor),
+  "shell": var(--sapShell_BorderColor),
+  "shell-interactive": var(--sapShell_InteractiveBorderColor),
+  "assistant": var(--sapAssistant_BorderColor),
+  "button": var(--sapButton_BorderColor),
+  "field": var(--sapField_BorderColor),
+  "list": var(--sapList_BorderColor),
+  "tile": var(--sapTile_BorderColor),
+  "message-error": var(--sapMessage_ErrorBorderColor),
+  "message-warning": var(--sapMessage_WarningBorderColor),
+  "message-success": var(--sapMessage_SuccessBorderColor),
+  "message-information": var(--sapMessage_InformationBorderColor),
 );
 
 // Flex

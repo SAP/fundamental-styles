@@ -1,31 +1,34 @@
-<div>
-1. All
+<style>
+    .demo {
+        gap: 2rem;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    .demo div {
+        display: flex;
+        height: 4rem;
+        width: 8rem;
+        background: #fff;
+    }
+</style>
 
-<pre>@include sap-border(0.125rem, solid, #000);</pre>
-<br>
+<div class="demo">
+    <div class="sap-border-style-solid sap-border-width-1 sap-border-color-error"></div>
+    <div class="sap-border-style-dashed sap-border-width-2 sap-border-color-warning"></div>
+    <div class="sap-border-style-dotted sap-border-width-3 sap-border-color-success"></div>
+    <div class="sap-border-style-double sap-border-width-4 sap-border-color-information"></div>
+    <div class="sap-border-style-solid sap-border-width-4 sap-border-color-button"></div>
+    <div class="sap-border-style-dashed sap-border-width-4 sap-border-color-assistant"></div>
+</div>
 
-2. Top Border
-<pre>@include sap-border(0.125rem, solid, #000, top);</pre>
-<br>
+<br><br>
 
-3. Bottom Border
-<pre>@include sap-border(0.125rem, solid, #000, bottom);</pre>
-<br>
-
-4. Left Border
-<pre>@include sap-border(0.125rem, solid, #000, left);</pre>
-<br>
-
-6. Right Border
-<pre>@include sap-border(0.125rem, solid, #000, right);</pre>
-<br>
-
-7. Top and Bottom Border (y)
-<pre>@include sap-border(0.125rem, solid, #000, y);</pre>
-<br>
-
-8. Left and Right Border (x)
-<pre>@include sap-border(0.125rem, solid, #000, x);</pre>
-<br>
-
+<div class="demo">
+    <div class="sap-border-inline-style-solid sap-border-inline-width-4 sap-border-inline-color-error"></div>
+    <div class="sap-border-block-style-dashed sap-border-block-width-4 sap-border-block-color-warning"></div>
+    <div class="sap-border-inline-start-style-dotted sap-border-inline-start-width-4 sap-border-inline-start-color-success"></div>
+    <div class="sap-border-inline-end-style-double sap-border-inline-end-width-4 sap-border-inline-end-color-information"></div>
+    <div class="sap-border-block-start-style-solid sap-border-block-start-width-4 sap-border-block-start-color-button"></div>
+    <div class="sap-border-block-end-style-dashed sap-border-block-end-width-4 sap-border-block-end-color-assistant"></div>
 </div>
