@@ -4,15 +4,15 @@ import extendedBusyIndicatorExampleHtml from "./extended-busy-indicator.example.
 import contrastModeExampleHtml from "./contrast-mode.example.html?raw";
 import standardExampleHtml from "./standard.example.html?raw";
 
-import '../../src/sap-busy-indicator.scss';
-import '../../../styles/src/message-toast.scss';
-import '../../../styles/src/dialog.scss';
-import '../../../styles/src/text.scss';
-import '../../../styles/src/bar.scss';
-import '../../../styles/src/button.scss';
-import '../../../styles/src/title.scss';
+import '../../../src/sap-busy-indicator.scss';
+import '../../../../styles/src/message-toast.scss';
+import '../../../../styles/src/dialog.scss';
+import '../../../../styles/src/text.scss';
+import '../../../../styles/src/bar.scss';
+import '../../../../styles/src/button.scss';
+import '../../../../styles/src/title.scss';
 export default {
-  title: 'Busy Indicator',
+  title: 'Patterns/Busy Indicator',
   parameters: {
     description: `The busy indicator component informs the user about an ongoing operation. Only one busy indicator should be shown at a time.
 
