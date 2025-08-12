@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.41.0-rc.47](https://github.com/SAP/fundamental-styles/compare/v0.41.0-rc.46...v0.41.0-rc.47) (2025-08-12)
+
+### Features
+
+- **common-css:** add additional features to Border [ci visual] ([#6147](https://github.com/SAP/fundamental-styles/issues/6147)) ([4e5dac0](https://github.com/SAP/fundamental-styles/commit/4e5dac0d2f5073359ceb9163cfb78b59b950b4c8))
+
 # [0.41.0-rc.46](https://github.com/SAP/fundamental-styles/compare/v0.41.0-rc.45...v0.41.0-rc.46) (2025-08-08)
 
 ### Bug Fixes
@@ -6347,9 +6353,9 @@ Co-authored-by: droshev <mladen.droshev@sap.com>
 
 - added a new modifier class to fd-row to achieve even alignment of its elements:fd-row--top in a form.
   Before:
-      <div class="fd-row">
-      After:
-      <div class="fd-row fd-row--top">
+  <div class="fd-row">
+  After:
+  <div class="fd-row fd-row--top">
 
 ### Bug Fixes
 
