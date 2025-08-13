@@ -17,3 +17,7 @@
 .#{commonsettings.$sap-namespace}-label-colon-required {
   @include commonmixins.sap-label($required: true, $colon: true);
 }
+
+.#{commonsettings.$sap-namespace}-label-colon-required-test {
+  @include commonmixins.sap-label($required: true, $colon: true);
+}
