@@ -1,7 +1,7 @@
 import defaultExampleExampleHtml from "./default-example.example.html?raw";
-import '../../src/sap-label.scss';
+import '../../../src/sap-label.scss';
 export default {
-  title: 'Label',
+  title: 'Patterns/Label',
   parameters: {
     description: `The following classes and mixin provide a way to style your labels per SAP design. 
 <br><br>
