@@ -12,6 +12,10 @@ $block: #{commonsettings.$sap-namespace}-padding;
     &-x-#{$type} {
       @include commonmixins.sap-padding(#{$type}, x);
     }
+
+    &-inline-#{$type} {
+      @include commonmixins.sap-padding(#{$type}, x);
+    }
   }
 
   &-responsive {
