@@ -2,6 +2,7 @@
 @use "sass:string";
 @use "common-variables" as commonvars;
 
+/* Reset */
 @mixin sap-reset {
   font-family: "72", "72full", Arial, Helvetica, sans-serif;
   font-size: var(--sapFontSize);

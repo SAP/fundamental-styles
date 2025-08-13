@@ -40,8 +40,7 @@
             "options": {
                 "entry": "{projectRoot}/src/common-css.scss",
                 "include": [
-                    "{projectRoot}/src/*.scss",
-                    "packages/styles/src/layout-grid.scss"
+                    "{projectRoot}/src/*.scss"
                 ],
                 "exclude": [
                     "{options.entry}",
