@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.41.0-rc.50](https://github.com/SAP/fundamental-styles/compare/v0.41.0-rc.49...v0.41.0-rc.50) (2025-08-14)
+
+### Bug Fixes
+
+- **common-css:** remove Layout Grid from common-css package [ci visual] ([#6150](https://github.com/SAP/fundamental-styles/issues/6150)) ([7ff87bf](https://github.com/SAP/fundamental-styles/commit/7ff87bfad14feb99c74279bca00668be902eee9c))
+
 # [0.41.0-rc.49](https://github.com/SAP/fundamental-styles/compare/v0.41.0-rc.48...v0.41.0-rc.49) (2025-08-13)
 
 ### Bug Fixes
