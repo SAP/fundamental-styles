@@ -36,6 +36,7 @@ $block: #{$fd-namespace}-product-switch;
     @include fd-reset();
 
     @include fd-flex(column) {
+      gap: 0.5rem;
       align-items: center;
       text-align: center;
     }
@@ -148,7 +149,6 @@ $block: #{$fd-namespace}-product-switch;
   &__icon {
     @include fd-icon-element-base() {
       font-size: 1.5rem;
-      margin-block-end: 0.5rem;
       color: var(--sapContent_IconColor);
       min-width: 3rem;
       min-height: 3rem;
@@ -239,7 +239,10 @@ $block: #{$fd-namespace}-product-switch;
 
     .#{$block}__item {
       @include fd-reset();
-      @include fd-flex();
+     
+      @include fd-flex() {
+        gap: 0.75rem;
+      };
 
       max-width: 100%;
       max-height: 5rem;
@@ -305,12 +308,6 @@ $block: #{$fd-namespace}-product-switch;
       height: 100%;
     }
 
-    .#{$block}__icon {
-      @include fd-icon-selector() {
-        margin-block-end: 0;
-        margin-inline-end: 0.75rem;
-      }
-    }
 
     @include fd-rtl() {
       .#{$block}__text {
