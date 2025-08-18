@@ -6,6 +6,7 @@ import '../../../src/popover.scss';
 import '../../../src/button.scss';
 import '../../../src/icon.scss';
 import '../../../src/shellbar.scss';
+import '../../../src/avatar.scss';
 export default {
   title: 'Components/Product Switch',
   parameters: {
@@ -65,14 +66,16 @@ export const Shellbar = () => `${localStyles}
                                     </div>
                                 </li>
                                 <li class="fd-product-switch__item" tabindex="0">
-                                    <i role="presentation" class="fd-product-switch__icon sap-icon--contacts"></i>
+                                    <span class="fd-avatar fd-avatar--indication-color-3 fd-avatar--sm" role="img" aria-label="Avatar">
+                                        <i role="presentation" aria-hidden="true" aria-label="contacts" class="fd-avatar__icon sap-icon--contacts"></i>
+                                    </span>
                                     <div class="fd-product-switch__text">
                                         <div class="fd-product-switch__title">Catalog</div>
                                         <div class="fd-product-switch__subtitle">Ariba</div>
                                     </div>
                                 </li>
                                 <li class="fd-product-switch__item" tabindex="0">
-                                    <i role="presentation" class="fd-product-switch__icon sap-icon--credit-card"></i>
+                                    <span class="fd-avatar fd-avatar--sm fd-avatar--thumbnail" style="background-image: url('/assets/images/landscape/demo-avatar.png')" role="img" aria-label="Product logo"></span>
                                     <div class="fd-product-switch__text">
                                         <div class="fd-product-switch__title">Guided Buying</div>
                                     </div>
@@ -155,7 +158,7 @@ export const Shellbar = () => `${localStyles}
 Shellbar.parameters = {
   docs: {
     description: {
-      story: `The product switch button is typically displayed within a **Shellbar** on the far-right side.
+      story: `The product switch button is typically displayed within a **Shellbar** on the far-right side. <br> <b>Note: </b>Products are represented by application icons, implemented using either SAP Icon Fonts or the Avatar component in size S (48x48 px). The Avatar component supports PNG, JPG, and SVG formats. To maintain visual consistency, all icons must be rendered within a 48x48 px bounding box.
         `
     }
   }
