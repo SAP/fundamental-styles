@@ -23,7 +23,7 @@ $block: #{commonsettings.$sap-namespace}-font;
   }
 
   &-line-height-long {
-    @include commonmixins.sap-font-line-height(1.4);
+    @include commonmixins.sap-font-line-height(var(--sapContent_LineHeight));
   }
 
   &-header-3 {

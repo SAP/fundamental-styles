@@ -7,20 +7,25 @@ import '../../src/sap-text.scss';
 export default {
   title: 'Text',
   parameters: {
-    description: `The text component displays text inside a form, table, or any other content area.
-        It is generally used throughout the entire application and is responsive to all screen sizes.
+    description: `The text component displays text inside a form, table, or any other content area. It is generally used throughout the entire application and is responsive to all screen sizes.
 <br>
-<b>CSS Classes: </b><br>
-<code>.sap-text</code><br>
-<code>.sap-text-max-lines</code><br>
-<code>.sap-text-pre-wrap</code><br>
-<code>.sap-text-hyphenation</code><br><br>
+
+<b>CSS Classes: </b>
+<ul>
+    <li><code>.sap-text</code></li>
+    <li><code>.sap-text-max-lines</code></li>
+    <li><code>.sap-text-pre-wrap</code></li>
+    <li><code>.sap-text-hyphenation</code></li>
+</ul>
+<br>
 <b>SCSS Mixin: </b>
 <code>@include sap-text(<i style="color: red;">$modifier</i>)</code><br>
 where <i style="color: red;">$modifier</i> is optional and can be:
-- <code>"max-lines"</code>: to display text with a maximum line count<br>
-- <code>"pre-wrap"</code>: to display indents and/or whitespace<br>
-- <code>"hyphenation"</code>: to display hyphens<br>`
+<ul>
+    <li><code>max-lines</code>: to display text with a maximum line count</li>
+    <li><code>pre-wrap</code>: to display indents and/or whitespace</li>
+    <li><code>hyphenation</code>: to display hyphens</li>
+</ul>`
   }
 };
 export const DefaultExample = () => defaultExampleExampleHtml;

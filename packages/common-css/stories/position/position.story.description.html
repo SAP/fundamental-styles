@@ -1,31 +1,32 @@
-<b>CSS Classes: </b><br><br>
-<code>.sap-position-<i style="color: red;">type</i></code> &nbsp;&nbsp; <i>(type can be static, fixed, absolute, relative, sticky, inherit)</i><br><br>
-<code>.sap-position-absolute-center</code>&nbsp;&nbsp; <i>center an element horizontally and vertically *</i><br><br>
-<code>.sap-position-absolute-center-x</code>&nbsp;&nbsp; <i>center an element horizontally *</i><br><br>
-<code>.sap-position-absolute-center-y</code>&nbsp;&nbsp; <i>center an element vertically *</i><br><br>
+<p>Utilities and mixins for controlling element positioning.
+Provides CSS classes for common position types and quick alignment helpers, as well as SCSS mixins to apply position properties with optional offset values.</p>
 
-<code>.sap-position-top-0</code><br><br>
-<code>.sap-position-right-0</code><br><br>
-<code>.sap-position-bottom-0</code><br><br>
-<code>.sap-position-left-0</code><br><br>
+<b>CSS Classes: </b><br><br>
+<code>.sap-position-<i style="color: red;">type</i></code> &nbsp;&nbsp; <i>(type can be static, fixed, absolute, relative, sticky, inherit)</i>
+<ul>
+    <li><code>.sap-position-absolute-center</code>: center an element horizontally and vertically *</li>
+    <li><code>.sap-position-absolute-center-x</code>: center an element horizontally *</li>
+    <li><code>.sap-position-absolute-center-y</code>: center an element vertically *</li>
+    <li><code>.sap-position-top-0</code></li>
+    <li><code>.sap-position-right-0</code></li>
+    <li><code>.sap-position-bottom-0</code></li>
+    <li><code>.sap-position-left-0</code></li>
+</ul>
 
 *for this class to work, the parent element must have <code>position: relative</code>
 
-<br><br><b>SCSS Mixins: </b><br><br>
-<code>@include sap-position(<i style="color: red;">type, $args</i>);</code><br>
+<br><br><b>SCSS Mixins: </b>
+<ul>
+    <li><code>@include sap-position(<i style="color: red;">type, $args</i>);</code></li>
+    <li><code>@include sap-position-absolute(<i style="color: red;">$args...</i>);</code></li>
+    <li><code>@include sap-position-fixed(<i style="color: red;">$args...</i>);</code><br></li>
+    <li><code>@include sap-position-sticky(<i style="color: red;">$args...</i>);</code></li>
+    <li><code>@include sap-position-relative(<i style="color: red;">$args...</i>);</code></li>
+</ul>
 
-<br><br>
-<code>@include sap-position-absolute(<i style="color: red;">$args...</i>);</code><br>
 
-<br><br>
-<code>@include sap-position-relative(<i style="color: red;">$args...</i>);</code><br>
-
-<br><br>
-<code>@include sap-position-fixed(<i style="color: red;">$args...</i>);</code><br>
-
-<br><br>
-<code>@include sap-position-sticky(<i style="color: red;">$args...</i>);</code><br><br>
-
-where <br>
-- <code style="color: red;">type</code> can be one of the following:  static, fixed, absolute, relative, sticky, inherit<br>
-- <code style="color: red;">args</code> are the offset values for top, right, bottom, left (optional)
+where 
+<ul>
+    <li><code style="color: red;">type</code> can be one of the following:  static, fixed, absolute, relative, sticky, inherit</li>
+    <li><code style="color: red;">args</code> are the offset values for top, right, bottom, left (optional)</li>
+</ul>
