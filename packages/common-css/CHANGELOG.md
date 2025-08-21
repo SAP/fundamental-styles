@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.41.0-rc.52](https://github.com/SAP/fundamental-styles/compare/v0.41.0-rc.51...v0.41.0-rc.52) (2025-08-21)
+
+### Bug Fixes
+
+- **common-css:** add docs improvements and some css updates to common css [ci visual] ([#6155](https://github.com/SAP/fundamental-styles/issues/6155)) ([6bc695b](https://github.com/SAP/fundamental-styles/commit/6bc695b7c8d04510be31908571729d8cf43b071c))
+
 # [0.41.0-rc.51](https://github.com/SAP/fundamental-styles/compare/v0.41.0-rc.50...v0.41.0-rc.51) (2025-08-18)
 
 **Note:** Version bump only for package @sap-ui/common-css
