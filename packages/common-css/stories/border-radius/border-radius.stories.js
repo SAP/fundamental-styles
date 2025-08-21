@@ -3,7 +3,8 @@ import borderRadiusExampleHtml from './border-radius.example.html?raw'
 export default {
   title: 'Border Radius',
   parameters: {
-    description: `
+    description: `Provides CSS classes and SCSS mixins for controlling the corner rounding of elements. Classes apply predefined theme-based border-radius values, while the sap-border-radius mixin lets you define custom values for one or multiple corners.
+
 <table style="width: 100%; border-collapse: collapse; margin-top: 1rem;">
     <thead>
         <tr>

@@ -58,28 +58,28 @@ HorizontalPadding.parameters = {
   </tr>
   <tr>
       <td style="padding: 0.25rem;">Tiny</td>
-      <td style="padding: 0.25rem;"><code>.sap-padding-x-tiny</code><br> <code>.sap-padding-inline-tiny</code></td>
+      <td style="padding: 0.25rem;"><code>.sap-padding-x-tiny</code> or <br><code>.sap-padding-inline-tiny</code></td>
       <td style="padding: 0.25rem;"><code>padding-inline: var(--sapContent\\_Space\\_Tiny)</code></td>
       <td style="padding: 0.25rem;"><code>padding-inline: 0.5rem;</code></td>
       <td style="padding: 0.25rem;">@include sap-padding(tiny, x)</td>
   </tr>
   <tr>
       <td style="padding: 0.25rem;">Small</td>
-      <td style="padding: 0.25rem;"><code>.sap-padding-x-small</code><br><code>.sap-padding-inline-small</code></td>
+      <td style="padding: 0.25rem;"><code>.sap-padding-x-small</code> or <br><code>.sap-padding-inline-small</code></td>
       <td style="padding: 0.25rem;"><code>padding-inline: var(--sapContent\\_Space\\_Small)</code></td>
       <td style="padding: 0.25rem;"><code>padding-inline: 1rem;</code></td>
       <td style="padding: 0.25rem;">@include sap-padding(small, x)</td>
   </tr>
   <tr>
       <td style="padding: 0.25rem;">Medium</td>
-      <td style="padding: 0.25rem;"><code>.sap-padding-x-medium</code><br><code>.sap-padding-inline-medium</code></td>
+      <td style="padding: 0.25rem;"><code>.sap-padding-x-medium</code> or <br><code>.sap-padding-inline-medium</code></td>
       <td style="padding: 0.25rem;"><code>padding-inline: var(--sapContent\\_Space\\_Medium)</code></td>
       <td style="padding: 0.25rem;"><code>padding-inline: 2rem;</code></td>
       <td style="padding: 0.25rem;">@include sap-padding(medium, x)</td>
   </tr>
   <tr>
       <td style="padding: 0.25rem;">Large</td>
-      <td style="padding: 0.25rem;"><code>.sap-padding-x-large</code><br><code>.sap-padding-inline-large</code></td>
+      <td style="padding: 0.25rem;"><code>.sap-padding-x-large</code> or <br><code>.sap-padding-inline-large</code></td>
       <td style="padding: 0.25rem;"><code>padding-inline: var(--sapContent\\_Space\\_Large)</code></td>
       <td style="padding: 0.25rem;"><code>padding-inline: 3rem;</code></td>
       <td style="padding: 0.25rem;">@include sap-padding(large, x)</td>

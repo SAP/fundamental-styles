@@ -4,15 +4,17 @@ export default {
   title: 'Heading',
   parameters: {
     description: `
-The following classes and mixin provide a way to style your headings per SAP design. 
+Provides CSS classes and an SCSS mixin to style headings according to SAP design guidelines. Classes target specific heading levels, while the sap-heading mixin applies styles for <code>h1</code> through <code>h6</code>.
 <br><br>
 <b>CSS Class: </b>
-<code>.sap-heading-<i style="color: red;">number</i></code><br><br>
+<code>.sap-heading-<i style="color: red;">number</i></code><br>
 <b>SCSS Mixin: </b>
 <code>@include sap-heading(<i style="color: red;">level</i>)</code><br><br>
-where: <br><br>
-<code style="color: red;">-number</code>: is the heading level, an integer from 1 to 6 <br>
-<code style="color: red;">-level</code>: is the heading level -> h1, h2, h3, h4, h5, h6`
+where:
+<ul>
+<li><code style="color: red;">number</code>: is the heading level, an integer from 1 to 6</li>
+<li><code style="color: red;">level</code>: is the heading level -> h1, h2, h3, h4, h5, h6</li>
+</ul>`
   }
 };
 export const Levels = () => levelsExampleHtml;

@@ -96,28 +96,28 @@ TopMargin.parameters = {
     </tr>
     <tr>
         <td style="padding: 0.25rem;">Tiny</td>
-        <td style="padding: 0.25rem;"><code>.sap-margin-top-tiny</code><br><code>.sap-margin-block-start-tiny</code></td>
+        <td style="padding: 0.25rem;"><code>.sap-margin-top-tiny</code> or <br><code>.sap-margin-block-start-tiny</code></td>
         <td style="padding: 0.25rem;"><code>margin-block-start: var(--sapContent\\_Space\\_Tiny);</code></td>
         <td style="padding: 0.25rem;"><code>margin-block-start: 0.5rem;</code></td>
         <td style="padding: 0.25rem;">@include sap-margin(tiny, top);</td>
     </tr>
     <tr>
         <td style="padding: 0.25rem;">Small</td>
-        <td style="padding: 0.25rem;"><code>.sap-margin-top-small</code><br><code>.sap-margin-block-start-small</code></td>
+        <td style="padding: 0.25rem;"><code>.sap-margin-top-small</code> or <br><code>.sap-margin-block-start-small</code></td>
         <td style="padding: 0.25rem;"><code>margin-block-start: var(--sapContent\\_Space\\_Small);</code></td>
         <td style="padding: 0.25rem;"><code>margin-block-start: 1rem;</code></td>
         <td style="padding: 0.25rem;">@include sap-margin(small, top);</td>
     </tr>
     <tr>
         <td style="padding: 0.25rem;">Medium</td>
-        <td style="padding: 0.25rem;"><code>.sap-margin-top-medium</code><br><code>.sap-margin-block-start-medium</code></td>
+        <td style="padding: 0.25rem;"><code>.sap-margin-top-medium</code> or <br><code>.sap-margin-block-start-medium</code></td>
         <td style="padding: 0.25rem;"><code>margin-block-start: var(--sapContent\\_Space\\_Medium);</code></td>
         <td style="padding: 0.25rem;"><code>margin-block-start: 2rem;</code></td>
         <td style="padding: 0.25rem;">@include sap-margin(medium, top);</td>
     </tr>
     <tr>
         <td style="padding: 0.25rem;">Large</td>
-        <td style="padding: 0.25rem;"><code>.sap-margin-top-large</code><br><code>.sap-margin-block-start-large</code></td>
+        <td style="padding: 0.25rem;"><code>.sap-margin-top-large</code> or <br><code>.sap-margin-block-start-large</code></td>
         <td style="padding: 0.25rem;"><code>margin-block-start: var(--sapContent\\_Space\\_Large);</code></td>
         <td style="padding: 0.25rem;"><code>margin-block-start: 3rem;</code></td>
         <td style="padding: 0.25rem;">@include sap-margin(large, top);</td>
@@ -143,28 +143,28 @@ BottomMargin.parameters = {
     </tr>
     <tr>
         <td style="padding: 0.25rem;">Tiny</td>
-        <td style="padding: 0.25rem;"><code>.sap-margin-bottom-tiny</code><br><code>.sap-margin-block-end-tiny</code></td>
+        <td style="padding: 0.25rem;"><code>.sap-margin-bottom-tiny</code> or <br><code>.sap-margin-block-end-tiny</code></td>
         <td style="padding: 0.25rem;"><code>margin-block-end: var(--sapContent\\_Space\\_Tiny);</code></td>
         <td style="padding: 0.25rem;"><code>margin-block-end: 0.5rem;</code></td>
         <td style="padding: 0.25rem;">@include sap-margin(tiny, bottom);</td>
     </tr>
     <tr>
         <td style="padding: 0.25rem;">Small</td>
-        <td style="padding: 0.25rem;"><code>.sap-margin-bottom-small</code><br><code>.sap-margin-block-end-small</code></td>
+        <td style="padding: 0.25rem;"><code>.sap-margin-bottom-small</code> or <br><code>.sap-margin-block-end-small</code></td>
         <td style="padding: 0.25rem;"><code>margin-block-end: var(--sapContent\\_Space\\_Small);</code></td>
         <td style="padding: 0.25rem;"><code>margin-block-end: 1rem;</code></td>
         <td style="padding: 0.25rem;">@include sap-margin(small, bottom);</td>
     </tr>
     <tr>
         <td style="padding: 0.25rem;">Medium</td>
-        <td style="padding: 0.25rem;"><code>.sap-margin-bottom-medium</code><br><code>.sap-margin-block-end-medium</code></td>
+        <td style="padding: 0.25rem;"><code>.sap-margin-bottom-medium</code> or <br><code>.sap-margin-block-end-medium</code></td>
         <td style="padding: 0.25rem;"><code>margin-block-end: var(--sapContent\\_Space\\_Medium);</code></td>
         <td style="padding: 0.25rem;"><code>margin-block-end: 2rem;</code></td>
         <td style="padding: 0.25rem;">@include sap-margin(medium, bottom);</td>
     </tr>
     <tr>
         <td style="padding: 0.25rem;">Large</td>
-        <td style="padding: 0.25rem;"><code>.sap-margin-bottom-large</code><br><code>.sap-margin-block-end-large</code></td>
+        <td style="padding: 0.25rem;"><code>.sap-margin-bottom-large</code> or <br><code>.sap-margin-block-end-large</code></td>
         <td style="padding: 0.25rem;"><code>margin-block-end: var(--sapContent\\_Space\\_Large);</code></td>
         <td style="padding: 0.25rem;"><code>margin-block-end: 3rem;</code></td>
         <td style="padding: 0.25rem;">@include sap-margin(large, bottom);</td>
@@ -190,28 +190,28 @@ BeginMargin.parameters = {
     </tr>
     <tr>
         <td style="padding: 0.25rem;">Tiny</td>
-        <td style="padding: 0.25rem;"><code>.sap-margin-begin-tiny</code><br><code>.sap-margin-inline-start-tiny</code></td>
+        <td style="padding: 0.25rem;"><code>.sap-margin-begin-tiny</code> or <br><code>.sap-margin-inline-start-tiny</code></td>
         <td style="padding: 0.25rem;"><code>margin-inline-start: var(--sapContent\\_Space\\_Tiny);</code></td>
         <td style="padding: 0.25rem;"><code>margin-inline-start: 0.5rem;</code></td>
         <td style="padding: 0.25rem;">@include sap-margin(tiny, begin);</td>
     </tr>
     <tr>
         <td style="padding: 0.25rem;">Small</td>
-        <td style="padding: 0.25rem;"><code>.sap-margin-begin-small</code><br><code>.sap-margin-inline-start-small</code></td>
+        <td style="padding: 0.25rem;"><code>.sap-margin-begin-small</code> or <br><code>.sap-margin-inline-start-small</code></td>
         <td style="padding: 0.25rem;"><code>margin-inline-start: var(--sapContent\\_Space\\_Small);</code></td>
         <td style="padding: 0.25rem;"><code>margin-inline-start: 1rem;</code></td>
         <td style="padding: 0.25rem;">@include sap-margin(small, begin);</td>
     </tr>
     <tr>
         <td style="padding: 0.25rem;">Medium</td>
-        <td style="padding: 0.25rem;"><code>.sap-margin-begin-medium</code><br><code>.sap-margin-inline-start-medium</code></td>
+        <td style="padding: 0.25rem;"><code>.sap-margin-begin-medium</code> or <br><code>.sap-margin-inline-start-medium</code></td>
         <td style="padding: 0.25rem;"><code>margin-inline-start: var(--sapContent\\_Space\\_Medium);</code></td>
         <td style="padding: 0.25rem;"><code>margin-inline-start: 2rem;</code></td>
         <td style="padding: 0.25rem;">@include sap-margin(medium, begin);</td>
     </tr>
     <tr>
         <td style="padding: 0.25rem;">Large</td>
-        <td style="padding: 0.25rem;"><code>.sap-margin-begin-large</code><br><code>.sap-margin-inline-start-large</code></td>
+        <td style="padding: 0.25rem;"><code>.sap-margin-begin-large</code> or <br><code>.sap-margin-inline-start-large</code></td>
         <td style="padding: 0.25rem;"><code>margin-inline-start: var(--sapContent\\_Space\\_Large);</code></td>
         <td style="padding: 0.25rem;"><code>margin-inline-start: 3rem;</code></td>
         <td style="padding: 0.25rem;">@include sap-margin(large, begin);</td>
@@ -237,28 +237,28 @@ EndMargin.parameters = {
     </tr>
     <tr>
         <td style="padding: 0.25rem;">Tiny</td>
-        <td style="padding: 0.25rem;"><code>.sap-margin-end-tiny</code><br><code>.sap-margin-inline-end-tiny</code></td>
+        <td style="padding: 0.25rem;"><code>.sap-margin-end-tiny</code> or <br><code>.sap-margin-inline-end-tiny</code></td>
         <td style="padding: 0.25rem;"><code>margin-inline-end: var(--sapContent\\_Space\\_Tiny);</code></td>
         <td style="padding: 0.25rem;"><code>margin-inline-end: 0.5rem;</code></td>
         <td style="padding: 0.25rem;">@include sap-margin(tiny, end);</td>
     </tr>
     <tr>
         <td style="padding: 0.25rem;">Small</td>
-        <td style="padding: 0.25rem;"><code>.sap-margin-end-small</code><br><code>.sap-margin-inline-end-small</code></td>
+        <td style="padding: 0.25rem;"><code>.sap-margin-end-small</code> or <br><code>.sap-margin-inline-end-small</code></td>
         <td style="padding: 0.25rem;"><code>margin-inline-end: var(--sapContent\\_Space\\_Small);</code></td>
         <td style="padding: 0.25rem;"><code>margin-inline-end: 1rem;</code></td>
         <td style="padding: 0.25rem;">@include sap-margin(small, end);</td>
     </tr>
     <tr>
         <td style="padding: 0.25rem;">Medium</td>
-        <td style="padding: 0.25rem;"><code>.sap-margin-end-medium</code><br><code>.sap-margin-inline-end-medium</code></td>
+        <td style="padding: 0.25rem;"><code>.sap-margin-end-medium</code> or <br><code>.sap-margin-inline-end-medium</code></td>
         <td style="padding: 0.25rem;"><code>margin-inline-end: var(--sapContent\\_Space\\_Medium);</code></td>
         <td style="padding: 0.25rem;"><code>margin-inline-end: 2rem;</code></td>
         <td style="padding: 0.25rem;">@include sap-margin(medium, end);</td>
     </tr>
     <tr>
         <td style="padding: 0.25rem;">Large</td>
-        <td style="padding: 0.25rem;"><code>.sap-margin-end-large</code><br><code>.sap-margin-inline-end-large</code></td>
+        <td style="padding: 0.25rem;"><code>.sap-margin-end-large</code> or <br><code>.sap-margin-inline-end-large</code></td>
         <td style="padding: 0.25rem;"><code>margin-inline-end: var(--sapContent\\_Space\\_Large);</code></td>
         <td style="padding: 0.25rem;"><code>margin-inline-end: 3rem;</code></td>
         <td style="padding: 0.25rem;">@include sap-margin(large, end);</td>
@@ -284,28 +284,28 @@ HorizontalMargin.parameters = {
     </tr>
     <tr>
         <td style="padding: 0.25rem;">Tiny</td>
-        <td style="padding: 0.25rem;"><code>.sap-margin-x-tiny</code><br><code>.sap-margin-inline-tiny</code></td>
+        <td style="padding: 0.25rem;"><code>.sap-margin-x-tiny</code> or <br><code>.sap-margin-inline-tiny</code></td>
         <td style="padding: 0.25rem;"><code>margin-inline: var(--sapContent\\_Space\\_Tiny);</code></td>
         <td style="padding: 0.25rem;"><code>margin-inline: 0.5rem;</code></td>
         <td style="padding: 0.25rem;">@include sap-margin(tiny, x);</td>
     </tr>
     <tr>
         <td style="padding: 0.25rem;">Small</td>
-        <td style="padding: 0.25rem;"><code>.sap-margin-x-small</code><br><code>.sap-margin-inline-small</code></td>
+        <td style="padding: 0.25rem;"><code>.sap-margin-x-small</code> or <br><code>.sap-margin-inline-small</code></td>
         <td style="padding: 0.25rem;"><code>margin-inline: var(--sapContent\\_Space\\_Small);</code></td>
         <td style="padding: 0.25rem;"><code>margin-inline: 1rem;</code></td>
         <td style="padding: 0.25rem;">@include sap-margin(small, x);</td>
     </tr>
     <tr>
         <td style="padding: 0.25rem;">Medium</td>
-        <td style="padding: 0.25rem;"><code>.sap-margin-x-medium</code><br><code>.sap-margin-inline-medium</code></td>
+        <td style="padding: 0.25rem;"><code>.sap-margin-x-medium</code> or <br><code>.sap-margin-inline-medium</code></td>
         <td style="padding: 0.25rem;"><code>margin-inline: var(--sapContent\\_Space\\_Medium);</code></td>
         <td style="padding: 0.25rem;"><code>margin-inline: 2rem;</code></td>
         <td style="padding: 0.25rem;">@include sap-margin(medium, x);</td>
     </tr>
     <tr>
         <td style="padding: 0.25rem;">Large</td>
-        <td style="padding: 0.25rem;"><code>.sap-margin-x-large</code><br><code>.sap-margin-inline-large</code></td>
+        <td style="padding: 0.25rem;"><code>.sap-margin-x-large</code> or <br><code>.sap-margin-inline-large</code></td>
         <td style="padding: 0.25rem;"><code>margin-inline: var(--sapContent\\_Space\\_Large);</code></td>
         <td style="padding: 0.25rem;"><code>margin-inline: 3rem;</code></td>
         <td style="padding: 0.25rem;">@include sap-margin(large, x);</td>
@@ -331,28 +331,28 @@ VerticalMargin.parameters = {
     </tr>
     <tr>
         <td style="padding: 0.25rem;">Tiny</td>
-        <td style="padding: 0.25rem;"><code>.sap-margin-y-tiny</code><br><code>.sap-margin-block-tiny</code></td>
+        <td style="padding: 0.25rem;"><code>.sap-margin-y-tiny</code> or <br><code>.sap-margin-block-tiny</code></td>
         <td style="padding: 0.25rem;"><code>margin-block: var(--sapContent\\_Space\\_Tiny);</code></td>
         <td style="padding: 0.25rem;"><code>margin-block: 0.5rem;</code></td>
         <td style="padding: 0.25rem;">@include sap-margin(tiny, y);</td>
     </tr>
     <tr>
         <td style="padding: 0.25rem;">Small</td>
-        <td style="padding: 0.25rem;"><code>.sap-margin-y-small</code><br><code>.sap-margin-block-small</code></td>
+        <td style="padding: 0.25rem;"><code>.sap-margin-y-small</code> or <br><code>.sap-margin-block-small</code></td>
         <td style="padding: 0.25rem;"><code>margin-block: var(--sapContent\\_Space\\_Small);</code></td>
         <td style="padding: 0.25rem;"><code>margin-block: 1rem;</code></td>
         <td style="padding: 0.25rem;">@include sap-margin(small, y);</td>
     </tr>
     <tr>
         <td style="padding: 0.25rem;">Medium</td>
-        <td style="padding: 0.25rem;"><code>.sap-margin-y-medium</code><br><code>.sap-margin-block-medium</code></td>
+        <td style="padding: 0.25rem;"><code>.sap-margin-y-medium</code> or <br><code>.sap-margin-block-medium</code></td>
         <td style="padding: 0.25rem;"><code>margin-block: var(--sapContent\\_Space\\_Medium);</code></td>
         <td style="padding: 0.25rem;"><code>margin-block: 2rem;</code></td>
         <td style="padding: 0.25rem;">@include sap-margin(medium, y);</td>
     </tr>
     <tr>
         <td style="padding: 0.25rem;">Large</td>
-        <td style="padding: 0.25rem;"><code>.sap-margin-y-large</code><br><code>.sap-margin-block-large</code></td>
+        <td style="padding: 0.25rem;"><code>.sap-margin-y-large</code> or <br><code>.sap-margin-block-large</code></td>
         <td style="padding: 0.25rem;"><code>margin-block: var(--sapContent\\_Space\\_Large);</code></td>
         <td style="padding: 0.25rem;"><code>margin-block: 3rem;</code></td>
         <td style="padding: 0.25rem;">@include sap-margin(large, y);</td>
