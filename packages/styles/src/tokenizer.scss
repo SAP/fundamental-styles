@@ -130,6 +130,19 @@ $block: #{$fd-namespace}-tokenizer;
     }
   }
 
+  &--display {
+    overflow: visible;
+
+    .#{$block}__inner {
+      overflow: visible;
+    }
+
+    .fd-token--display:not(:last-of-type)::after {
+      content: '\00B7';
+      padding-left: 1rem;
+    }
+  }
+
   &--scrollable {
     .#{$block}__inner {
       justify-content: initial;

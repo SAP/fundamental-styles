@@ -150,6 +150,11 @@ $fd-input-border-radius: var(--sapField_BorderCornerRadius);
     overflow: visible;
   }
 
+  &[display],
+  &.is-display {
+    overflow: visible;
+  }
+
   .#{$fd-namespace}-tokenizer {
     @include fd-input-field-nested-reset();
 

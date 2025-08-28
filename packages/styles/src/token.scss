@@ -9,8 +9,7 @@ $block: #{$fd-namespace}-token;
   --fdToken_Text_Color: var(--sapContent_LabelColor);
   --fdToken_Padding_Inline: var(--fdToken_ReadOnly_Padding_Inline);
   --fdToken_Border: var(--sapButton_BorderWidth) solid var(--fdToken_Border_Color_Read_Only);
-
-  background-color: var(--fdToken_Background_Color_Read_Only);
+  --fdToken_Background_Color: var(--fdToken_Background_Color_Read_Only);
 
   @include fd-compact-or-condensed() {
     --fdToken_Padding_Inline: 0.25rem;
@@ -19,8 +18,24 @@ $block: #{$fd-namespace}-token;
   @include fd-hover() {
     --fdToken_Text_Color: var(--sapContent_LabelColor);
     --fdToken_Border: var(--sapButton_BorderWidth) solid var(--fdToken_Border_Color_Read_Only);
+    --fdToken_Background_Color: var(--fdToken_Background_Color_Read_Only);
+  }
+}
 
-    background-color: var(--fdToken_Background_Color_Read_Only);
+@mixin fd-display-token {
+  --fdToken_Text_Color: var(--sapTextColor);
+  --fdToken_Padding_Inline: var(--fdToken_ReadOnly_Padding_Inline);
+  --fdToken_Border: none;
+  --fdToken_Background_Color: var(--sapField_Focus_Background);
+
+  @include fd-compact-or-condensed() {
+    --fdToken_Padding_Inline: 0.25rem;
+  }
+
+  @include fd-hover() {
+    --fdToken_Text_Color: var(--sapTextColor);
+    --fdToken_Border: none;
+    --fdToken_Background_Color: var(--sapField_Focus_Background);
   }
 }
 
@@ -126,6 +141,10 @@ $block: #{$fd-namespace}-token;
 
   &--readonly {
     @include fd-readonly-token();
+  }
+
+  &--display {
+    @include fd-display-token();
   }
 
   &--selected {
