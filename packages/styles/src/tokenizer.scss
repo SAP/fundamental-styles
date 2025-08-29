@@ -130,6 +130,64 @@ $block: #{$fd-namespace}-tokenizer;
     }
   }
 
+  &--display {
+    border: none;
+    box-shadow: none;
+    overflow: visible;
+    pointer-events: none;
+    background: transparent;
+
+    .#{$block}__inner {
+      justify-content: flex-start;
+    }
+
+    .#{$block}__indicator {
+      .#{$fd-namespace}-popover {
+        &__control {
+          cursor: pointer;
+          pointer-events: all;
+        }
+    
+        &__body {
+          pointer-events: none;
+        }
+      }
+    }
+
+    .#{$block}__input {
+      display: none;
+    }
+
+    .#{$block}__inner {
+      overflow: visible;
+    }
+
+    .#{$fd-namespace}-token {
+      margin-inline-end: 0;
+
+      &--display {
+        &::after {
+          content: '\00B7';
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          min-width: 1rem;
+        }
+
+        &:has(+ .#{$block}__input) {
+          &::after {
+            content: '';
+            min-width: 0;
+          }
+        }
+      }
+    }
+
+    & + .#{$fd-namespace}-input-group__addon.#{$fd-namespace}-input-group__addon--button {
+      display: none;
+    }
+  }
+
   &--scrollable {
     .#{$block}__inner {
       justify-content: initial;

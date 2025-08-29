@@ -1,5 +1,6 @@
 import scrollableTokenizerExampleHtml from "./scrollable-tokenizer.example.html?raw";
 import cozyTokenizerExampleHtml from "./cozy-tokenizer.example.html?raw";
+import tokenizerModesHtml from "./tokenizer-modes.html?raw";
 import '../../../src/input.scss';
 import '../../../src/token.scss';
 import '../../../src/tokenizer.scss';
@@ -17,6 +18,9 @@ export default {
 
 export const CozyTokenizer = () => cozyTokenizerExampleHtml;
 CozyTokenizer.storyName = 'Tokenizer';
+
+export const ReadonlyAndDisplayOnlyModes = () => tokenizerModesHtml;
+ReadonlyAndDisplayOnlyModes.storyName = 'Readonly and Display-only Modes';
 
 export const ScrollableTokenizer = () => scrollableTokenizerExampleHtml;
 ScrollableTokenizer.storyName = 'Scrollable tokenizer';

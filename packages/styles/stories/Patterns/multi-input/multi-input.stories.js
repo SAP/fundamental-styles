@@ -1,7 +1,7 @@
 import filteringExampleHtml from "./filtering.example.html?raw";
 import mobileModeExampleHtml from "./mobile-mode.example.html?raw";
 import semanticExampleHtml from "./semantic.example.html?raw";
-import readOnlyAndDisabledExampleHtml from "./read-only-and-disabled.example.html?raw";
+import multiInputModesExampleHtml from "./multi-input-modes.example.html?raw";
 import matchPopoverBodySizeExampleHtml from "./match-popover-body-size.example.html?raw";
 import groupingExampleHtml from "./grouping.example.html?raw";
 import asFormItemExampleHtml from "./as-form-item.example.html?raw";
@@ -77,16 +77,20 @@ In the example you can see how the \`Multi Input\` component looks without the \
     }
   }
 };
-export const ReadOnlyAndDisabled = () => readOnlyAndDisabledExampleHtml;
-ReadOnlyAndDisabled.parameters = {
+export const MultiInputModes = () => multiInputModesExampleHtml;
+MultiInputModes.parameters = {
   docs: {
     description: {
       story: `
-To make the \`Multi Input\` component read-only, the readonly attribute needs to be added to the \`fd-nput-group\` element.
-This can also be done by using the \`.is-readonly\` class or \`aria-readonly="true"\` attribute.
-
-To disable a \`Multi Input\` component, the disabled attribute needs to be added to the \`fd-popover__control\` and the \`fd-input__control\` elements.
+To disable a \`Multi Input\` component, the \`disabled\` attribute needs to be added to the \`fd-popover__control\` and the \`fd-input-group\` elements.
 The disabled state can also be achieved by adding the \`.is-disabled\` class or the \`aria-disabled="true"\` attribute.
+
+To make the \`Multi Input\` component read-only, the \`readonly\` attribute needs to be added to the \`fd-input-group\` element.
+This can also be done by using the \`.is-readonly\` class or \`aria-readonly="true"\` attribute. Also, the \`fd-tokenizer--readonly\` class needs to be added to the \`fd-tokenizer\` element and the \`fd-token--readonly\` class to each \`fd-token\` element.
+
+To make the \`Multi Input\` component display-only, the \`display\` attribute needs to be added to the \`fd-input-group\` element.
+This can also be done by using the \`.is-display\` class. Also, the \`fd-tokenizer--display\` class needs to be added to the \`fd-tokenizer\` element and the \`fd-token--display\` class to each \`fd-token\` element.
+In order to have the label and the \`Multi Input\` component in one line, the \`fd-form-item\` and \`fd-form-item--horizontal\` classes need to be added to the parent container.
 `
     }
   }

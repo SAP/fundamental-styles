@@ -22,7 +22,6 @@ body.fd-overlay-active::before {
 .#{$block} {
   --fdPopover_Display: inline-block;
 
-
   @include fd-reset();
 
   max-width: 100%;
@@ -42,6 +41,10 @@ body.fd-overlay-active::before {
 
     &:focus-visible {
       outline: var(--sapContent_FocusWidth) var(--sapContent_FocusStyle) var(--sapContent_FocusColor);
+    }
+
+    &:has(.#{$fd-namespace}-tokenizer--display) {
+      cursor: auto;
     }
 
     @include fd-expanded() {
