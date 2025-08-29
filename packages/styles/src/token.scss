@@ -61,7 +61,6 @@ $block: #{$fd-namespace}-token;
   max-width: 100%;
   text-overflow: clip;
   line-height: 1.5rem;
-  display: inline-block; //changed directly here the display to not cause any problems in NGX
 
   &__text {
     overflow: hidden;
@@ -85,7 +84,7 @@ $block: #{$fd-namespace}-token;
     background-color: transparent;
     line-height: 1.25rem;
     cursor: pointer;
-    display: inline-flex; // same as bullet, if this is only flex will go on a new line because of display-block on the parent element
+    display: inline-flex;
     align-items: center;
     justify-content: center;
 

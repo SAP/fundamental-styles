@@ -395,7 +395,7 @@ $fd-input-field-height--compact: 1.625rem;
 @mixin fd-input-field-nested-reset($background-color: transparent) {
   box-shadow: none;
   background: none;
-  background-color: var($background-color, transparent);
+  background-color: $background-color;
 }
 
 @mixin fd-form-base($hasFocusWithin: false, $supportsText: true) {
