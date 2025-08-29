@@ -22,6 +22,10 @@ body.fd-overlay-active::before {
 .#{$block} {
   --fdPopover_Display: inline-block;
 
+  &__control:has(.fd-tokenizer--display) {
+    cursor: auto;
+    pointer-events: all;
+  }
 
   @include fd-reset();
 

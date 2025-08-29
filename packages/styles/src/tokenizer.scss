@@ -134,6 +134,14 @@ $block: #{$fd-namespace}-tokenizer;
     overflow: visible;
     pointer-events: none;
 
+    .fd-tokenizer__indicator .fd-popover__control {
+      cursor: pointer;
+    }
+
+    .fd-tokenizer__indicator .fd-popover__body {
+      pointer-events: none;
+    }
+
     .#{$fd-namespace}-token {
       margin-inline-end: 0;
     }
