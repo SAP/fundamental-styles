@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.41.0-rc.56](https://github.com/SAP/fundamental-styles/compare/v0.41.0-rc.55...v0.41.0-rc.56) (2025-08-29)
+
+### Features
+
+- **styles:** add display-only mode for token, tokenizer and multi input ([#6157](https://github.com/SAP/fundamental-styles/issues/6157)) ([e2a592f](https://github.com/SAP/fundamental-styles/commit/e2a592feb40d236f6a121f9fec5fd1722af12226))
+
 # [0.41.0-rc.55](https://github.com/SAP/fundamental-styles/compare/v0.41.0-rc.54...v0.41.0-rc.55) (2025-08-28)
 
 **Note:** Version bump only for package fundamental-styles
