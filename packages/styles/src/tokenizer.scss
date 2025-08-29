@@ -132,14 +132,22 @@ $block: #{$fd-namespace}-tokenizer;
 
   &--display {
     overflow: visible;
+    pointer-events: none;
+
+    .#{$fd-namespace}-token {
+      margin-inline-end: 0;
+    }
 
     .#{$block}__inner {
       overflow: visible;
     }
 
-    .fd-token--display:not(:last-of-type)::after {
+    .#{$fd-namespace}-token--display:not(:last-of-type)::after {
       content: '\00B7';
-      padding-left: 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-width: 1rem;
     }
   }
 

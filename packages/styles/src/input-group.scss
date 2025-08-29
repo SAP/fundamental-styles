@@ -153,6 +153,9 @@ $fd-input-border-radius: var(--sapField_BorderCornerRadius);
   &[display],
   &.is-display {
     overflow: visible;
+    box-shadow: none;
+    background: transparent;
+    pointer-events: none;
   }
 
   .#{$fd-namespace}-tokenizer {

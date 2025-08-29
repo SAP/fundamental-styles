@@ -22,23 +22,6 @@ $block: #{$fd-namespace}-token;
   }
 }
 
-@mixin fd-display-token {
-  --fdToken_Text_Color: var(--sapTextColor);
-  --fdToken_Padding_Inline: var(--fdToken_ReadOnly_Padding_Inline);
-  --fdToken_Border: none;
-  --fdToken_Background_Color: var(--sapField_Focus_Background);
-
-  @include fd-compact-or-condensed() {
-    --fdToken_Padding_Inline: 0.25rem;
-  }
-
-  @include fd-hover() {
-    --fdToken_Text_Color: var(--sapTextColor);
-    --fdToken_Border: none;
-    --fdToken_Background_Color: var(--sapField_Focus_Background);
-  }
-}
-
 .#{$block} {
   --fdToken_Background_Color: var(--sapButton_TokenBackground);
   --fdToken_Border: var(--sapButton_BorderWidth) solid var(--sapButton_TokenBorderColor);
@@ -144,7 +127,13 @@ $block: #{$fd-namespace}-token;
   }
 
   &--display {
-    @include fd-display-token();
+    --fdToken_Text_Color: var(--sapTextColor);
+    --fdToken_Border: none;
+    --fdToken_Background_Color: transparent;
+    
+    margin-inline: 0;
+    padding-inline: 0;
+    pointer-events: none;
   }
 
   &--selected {
