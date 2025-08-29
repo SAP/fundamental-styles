@@ -132,30 +132,51 @@ $block: #{$fd-namespace}-tokenizer;
 
   &--display {
     overflow: visible;
-    pointer-events: none;
 
-    .fd-tokenizer__indicator .fd-popover__control {
-      cursor: pointer;
+    .#{$block}__indicator {
+      .#{$fd-namespace}-popover {
+        &__control {
+          cursor: pointer;
+          pointer-events: all; // we enable here the pointer-events so we can click on the popover control
+        }
+    
+        &__body {
+          pointer-events: none; // we disable the events on the popover body so we don't select a token
+        }
+      }
     }
 
-    .fd-tokenizer__indicator .fd-popover__body {
-      pointer-events: none;
-    }
-
-    .#{$fd-namespace}-token {
-      margin-inline-end: 0;
+    .#{$block}__input {
+      display: none; // we don't need this input on display mode and it adds width to the entire control
     }
 
     .#{$block}__inner {
       overflow: visible;
     }
 
-    .#{$fd-namespace}-token--display:not(:last-of-type)::after {
-      content: '\00B7';
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      min-width: 1rem;
+    .#{$fd-namespace}-token {
+      margin-inline-end: 0;
+
+      &--display {
+        &::after {
+          content: '\00B7';
+          display: inline-flex; // this will prevent the bullet going into a new line
+          align-items: center;
+          justify-content: center;
+          min-width: 1rem;
+        }
+
+        &:has(+ .#{$block}__input) { //hide the bullet when we don't have an overflow
+          &::after {
+            content: '';
+            min-width: 0;
+          }
+        }
+      }
+    }
+
+    & + .#{$fd-namespace}-input-group__addon.#{$fd-namespace}-input-group__addon--button {
+      display: none; // we need to hide the button in display mode
     }
   }
 
