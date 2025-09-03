@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.41.0-rc.58](https://github.com/SAP/fundamental-styles/compare/v0.41.0-rc.57...v0.41.0-rc.58) (2025-09-03)
+
+### Bug Fixes
+
+- **styles:** add bigger outline offset for Link focus [ci visual] ([#6163](https://github.com/SAP/fundamental-styles/issues/6163)) ([b6b1bcb](https://github.com/SAP/fundamental-styles/commit/b6b1bcbe0eabfcb50b9ea7dcb7b2aedeeac28261))
+
 # [0.41.0-rc.57](https://github.com/SAP/fundamental-styles/compare/v0.41.0-rc.56...v0.41.0-rc.57) (2025-09-02)
 
 **Note:** Version bump only for package fundamental-styles
