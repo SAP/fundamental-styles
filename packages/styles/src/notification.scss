@@ -198,6 +198,10 @@ $block: #{$fd-namespace}-notification;
     }
   }
 
+  &__sr-only {
+    @include fd-screen-reader-only();
+  }
+
   .#{$block}__link {
     margin-inline-start: 1rem;
   }
@@ -215,6 +219,9 @@ $block: #{$fd-namespace}-notification;
     @include fd-reset();
   
     list-style: none;
+    overflow: auto;
+    height: 100%;
+    width: 100%;
   }
   
   // Notification Group
@@ -226,15 +233,19 @@ $block: #{$fd-namespace}-notification;
     &__wrapper {
       @include fd-reset();
     }
-  
+
+
     &__header {
       @include fd-reset();
 
       @include fd-flex-vertical-center() {
         gap: 0.75rem;
       };
-  
+
+      position: sticky;
+      top: 0;
       cursor: pointer;
+      z-index: 10;
       padding-inline: 0.5rem;
       height: var(--sapElement_LineHeight);
       background: var(--sapList_GroupHeaderBackground);
@@ -323,9 +334,9 @@ $block: #{$fd-namespace}-notification;
     --fdNotification_Popover_Max_Width: 27rem;
   
     @include fd-reset();
+    @include fd-flex(column);
 
     max-height: 40rem;
-    overflow-y: scroll;
     width: var(--fdNotification_Popover_Width);
     max-width: var(--fdNotification_Popover_Max_Width);
   

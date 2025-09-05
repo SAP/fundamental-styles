@@ -1,30 +1,77 @@
-<div class="fd-notification" tabindex="0">
+<div 
+    class="fd-notification" 
+    tabindex="0"
+    aria-labelledby="
+        fd-object-status-1
+        fd-notification-status-1
+        fd-notification-title-1
+        fd-notification-title-status-1
+        fd-notification-paragraph-1
+        fd-notification-footnotes-1
+    ">
+    
     <div class="fd-notification__body">
-        <span class="fd-avatar fd-avatar--accent-color-10 fd-avatar--xs" role="img" aria-label="Avatar">
+        <span class="fd-avatar fd-avatar--accent-color-10 fd-avatar--xs" role="img" aria-label="Avatar" aria-hidden="true">
             <i role="presentation" aria-hidden="true" aria-label="Product placeholder" class="fd-avatar__icon sap-icon--product"></i>
         </span>
         <div class="fd-notification__content">
             <div class="fd-notification__header">
-                <span class="sap-icon sap-icon--error sap-icon--color-negative"></span>
-                <h4 class="fd-notification__title fd-notification__title--unread">Notification Title (unread) Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla pariatur quisquam suscipit odio. Nesciunt, assumenda. Quo dolores aperiam, repellendus animi dolorem rerum cumque fugiat corrupti pariatur, adipiscisolutavolup? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni architecto aut nobis facere, eius ea accusantium dolores quae, alias molestiae repudiandae doloremque repellat quisquam voluptatum fugiat id magnam, vitae sed. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione modi quas pariatur at eveniet inventore dolorum fugiat, cum animi ullam quisquam reiciendis aperiam quibusdam sapiente nobis atque omnis quae.</h4>
+                <span 
+                    id="fd-notification-status-1"
+                    class="sap-icon sap-icon--error sap-icon--color-negative" 
+                    aria-label="Status Negative"
+                    title="Status Icon Negative">
+                </span>
+
+                <h4 
+                    id="fd-notification-title-1" 
+                    class="fd-notification__title fd-notification__title--unread">
+                    Notification Title
+                </h4>
+                
+                <span 
+                    id="fd-notification-title-status-1" 
+                    class="fd-notification__sr-only">
+                    Unread
+                </span>
             </div>
-            <p class="fd-notification__paragraph">Description of notification topic Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla pariatur quisquam suscipit odio. Nesciunt, assumenda. Quo dolores aperiam, repellendus animi dolorem rerum cumque fugiat corrupti pariatur, adipisci soluta odio voluptate? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni architecto aut nobis facere, eius ea accusantium dolores quae, alias molestiae repudiandae doloremque repellat quisquam voluptatum fugiat id magnam, vitae sed. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione modi quas pariatur at eveniet inventore dolorum fugiat, cum animi ullam quisquam reiciendis aperiam quibusdam sapiente nobis atque omnis quae. Non?</p>
-            <div class="fd-notification__footer">
+            <p 
+                id="fd-notification-paragraph-1" 
+                class="fd-notification__paragraph">
+                Description of notification topic
+            </p>
+
+            <div class="fd-notification__footer" id="fd-notification-footnotes-1">
                 <span class="fd-notification__footer-content">Product Name</span>
-                <span class="fd-notification__separator"></span>
+                <span class="fd-notification__separator" role="presentation" aria-hidden="true"></span>
                 <span class="fd-notification__footer-content">Feature Name</span>
-                <span class="fd-notification__separator"></span>
+                <span class="fd-notification__separator" role="presentation" aria-hidden="true"></span>
                 <span class="fd-notification__footer-content">11:11</span>
-                <a href="#" class="fd-link fd-notification__link" tabindex="0"><span class="fd-link__content">More</span></a>
+                <a 
+                    href="#" 
+                    role="button" 
+                    tabindex="0" 
+                    aria-expanded="false" 
+                    aria-disabled="false" 
+                    class="fd-link fd-notification__link" 
+                    aria-label="More button. Show the full texts."
+                    title="More button. Show the full texts.">
+                    <span class="fd-link__content">More</span>
+                </a>
             </div>
-            <span class="fd-object-status fd-object-status--inverted fd-object-status--indication-2b">
-                <i class="fd-object-status__icon sap-icon--high-priority" role="presentation"></i>
+
+            <span 
+                id="fd-object-status-1"
+                class="fd-object-status fd-object-status--inverted fd-object-status--indication-2b">
+                <i class="fd-object-status__icon sap-icon--high-priority" role="presentation" aria-hidden="true"></i>
                 <span class="fd-object-status__text">Important</span>
+                <span class="fd-object-status__sr-only">Tag</span>
             </span>
         </div>
+
         <div class="fd-notification__actions">
-            <button class="fd-button fd-button--transparent " aria-label="Close">
-                <i class="sap-icon--decline"></i>
+            <button class="fd-button fd-button--transparent" aria-label="Close" title="Close" tabindex="0">
+                <i class="sap-icon--decline" role="presentation" aria-hidden="true"></i>
             </button>
         </div>
     </div>
@@ -32,32 +79,73 @@
 
 <br>
 
-<div class="fd-notification" tabindex="0">
+<div 
+    class="fd-notification" 
+    tabindex="0"
+    aria-labelledby="
+        fd-notification-status-2
+        fd-notification-title-2
+        fd-notification-title-status-2
+        fd-notification-paragraph-2
+        fd-notification-footnotes-2
+    ">
     <div class="fd-notification__body">
-        <span class="fd-avatar fd-avatar--accent-color-10 fd-avatar--xs" role="img" aria-label="Avatar">
+        <span class="fd-avatar fd-avatar--accent-color-10 fd-avatar--xs" role="img" aria-label="Avatar" aria-hidden="true">
             <i role="presentation" aria-hidden="true" aria-label="Product placeholder" class="fd-avatar__icon sap-icon--product"></i>
         </span>
         <div class="fd-notification__content">
             <div class="fd-notification__header">
-                <span class="sap-icon sap-icon--sys-enter-2 sap-icon--color-positive"></span>
-                <h4 class="fd-notification__title">Notification Title Notification Title (read) Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla pariatur quisquam suscipit odio. Nesciunt, assumenda. Quo dolores aperiam, repellendus animi dolorem rerum cumque fugiat corrupti pariatur, adipisci soluta odio voluptate? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni architecto aut nobis facere, eius ea accusantium dolores quae, alias molestiae repudiandae doloremque repellat quisquam voluptatum fugiat id magnam, vitae sed. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione modi quas pariatur at eveniet inventore dolorum fugiat, cum animi ullam quisquam reiciendis aperiam quibusdam sapiente nobis atque omnis quae.</h4>
+                <span 
+                    id="fd-notification-status-2"
+                    class="sap-icon sap-icon--sys-enter-2 sap-icon--color-positive" 
+                    aria-label="Status Positive"
+                    title="Status Icon Positive">
+                </span>
+
+                <h4 
+                    id="fd-notification-title-2" 
+                    class="fd-notification__title">
+                    Notification Title lorem ipsum dolor sit amet, consectetur adipisicing elit. Et expedita quis adipisci libero culpa inventore sequi blanditiis nobis doloremque amet optio atque officia facilis reprehenderit ex nesciunt, dicta, beatae molestias. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis sequi corporis eius voluptatem praesentium, et sapiente enim facere. Ratione totam fuga laudantium quibusdam ducimus iste. Delectus eligendi debitis labore quam!
+                </h4>
+                
+                <span 
+                    id="fd-notification-title-status-2" 
+                    class="fd-notification__sr-only">
+                    Read
+                </span>
             </div>
-            <p class="fd-notification__paragraph">Description of notification topic lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla pariatur quisquam suscipit odio. Nesciunt, assumenda. Quo dolores aperiam, repellendus animi dolorem rerum cumque fugiat corrupti pariatur, adipisci soluta odio voluptate? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni architecto aut nobis facere, eius ea accusantium dolores quae, alias molestiae repudiandae doloremque repellat quisquam voluptatum fugiat id magnam, vitae sed. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione modi quas pariatur at eveniet inventore dolorum fugiat, cum animi ullam quisquam reiciendis aperiam quibusdam sapiente nobis atque omnis quae.</p>
-            <div class="fd-notification__footer">
+            <p 
+                id="fd-notification-paragraph-2" 
+                class="fd-notification__paragraph">
+                Description of notification topic lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis, impedit fuga sit eligendi cumque laborum quae id. Dolor nesciunt voluptatum, dolorem reprehenderit animi expedita harum fugit blanditiis quaerat vitae aliquid. Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur minima libero suscipit quidem sequi dolores? Natus necessitatibus, reprehenderit, repudiandae incidunt ipsam, unde molestiae doloremque distinctio ad placeat dolorem labore quasi!
+            </p>
+
+            <div class="fd-notification__footer" id="fd-notification-footnotes-2">
                 <span class="fd-notification__footer-content">Product Name</span>
-                <span class="fd-notification__separator"></span>
+                <span class="fd-notification__separator" role="presentation" aria-hidden="true"></span>
                 <span class="fd-notification__footer-content">Feature Name</span>
-                <span class="fd-notification__separator"></span>
+                <span class="fd-notification__separator" role="presentation" aria-hidden="true"></span>
                 <span class="fd-notification__footer-content">11:11</span>
-                <a href="#" class="fd-link fd-notification__link" tabindex="0"><span class="fd-link__content">More</span></a>
+                <a 
+                    href="#" 
+                    role="button" 
+                    tabindex="0" 
+                    aria-expanded="false" 
+                    aria-disabled="false" 
+                    class="fd-link fd-notification__link" 
+                    aria-label="More button. Show the full texts."
+                    title="More button. Show the full texts.">
+                    <span class="fd-link__content">More</span>
+                </a>
             </div>
         </div>
+
         <div class="fd-notification__actions">
-            <button class="fd-button fd-button--transparent" aria-label="More">
-                <i class="sap-icon--overflow"></i>
+            <button class="fd-button fd-button--transparent" aria-label="More Actions" title="More Actions" tabindex="0">
+                <i class="sap-icon--overflow" role="presentation" aria-hidden="true"></i>
             </button>
-            <button class="fd-button fd-button--transparent " aria-label="Close">
-                <i class="sap-icon--decline"></i>
+            <button class="fd-button fd-button--transparent" aria-label="Close" title="Close" tabindex="0">
+                <i class="sap-icon--decline" role="presentation" aria-hidden="true"></i>
             </button>
         </div>
     </div>
@@ -65,28 +153,59 @@
 
 <br>
 
-<div class="fd-notification" tabindex="0">
+<div 
+    class="fd-notification" 
+    tabindex="0"
+    aria-labelledby="
+        fd-notification-status-3
+        fd-notification-title-3
+        fd-notification-title-status-3
+        fd-notification-paragraph-3
+        fd-notification-footnotes-3
+    ">
     <div class="fd-notification__body">
         <div class="fd-notification__content">
             <div class="fd-notification__header">
-                <span class="sap-icon sap-icon--information sap-icon--color-information"></span>
-                <h4 class="fd-notification__title">Notification Title</h4>
+                <span 
+                    id="fd-notification-status-3"
+                    class="sap-icon sap-icon--information sap-icon--color-information" 
+                    aria-label="Status Negative"
+                    title="Status Icon Information">
+                </span>
+
+                <h4 
+                    id="fd-notification-title-3" 
+                    class="fd-notification__title">
+                    Notification Title
+                </h4>
+                
+                <span 
+                    id="fd-notification-title-status-3" 
+                    class="fd-notification__sr-only">
+                    Read
+                </span>
             </div>
-            <p class="fd-notification__paragraph">Description of notification topic</p>
-            <div class="fd-notification__footer">
+            <p 
+                id="fd-notification-paragraph-3" 
+                class="fd-notification__paragraph">
+                Description of notification
+            </p>
+
+            <div class="fd-notification__footer" id="fd-notification-footnotes-3">
                 <span class="fd-notification__footer-content">Product Name</span>
-                <span class="fd-notification__separator"></span>
+                <span class="fd-notification__separator" role="presentation" aria-hidden="true"></span>
                 <span class="fd-notification__footer-content">Feature Name</span>
-                <span class="fd-notification__separator"></span>
-                <span class="fd-notification__footer-content">11:11</span>
+                <span class="fd-notification__separator" role="presentation" aria-hidden="true"></span>
+                <span class="fd-notification__footer-content">10:20</span>
             </div>
         </div>
+
         <div class="fd-notification__actions">
-            <button class="fd-button fd-button--transparent" aria-label="More">
-                <i class="sap-icon--overflow"></i>
+            <button class="fd-button fd-button--transparent" aria-label="More Actions" title="More Actions" tabindex="0">
+                <i class="sap-icon--overflow" role="presentation" aria-hidden="true"></i>
             </button>
-            <button class="fd-button fd-button--transparent " aria-label="Close">
-                <i class="sap-icon--decline"></i>
+            <button class="fd-button fd-button--transparent" aria-label="Close" title="Close" tabindex="0">
+                <i class="sap-icon--decline" role="presentation" aria-hidden="true"></i>
             </button>
         </div>
     </div>
@@ -94,30 +213,52 @@
 
 <br>
 
-<div class="fd-notification" tabindex="0">
+<div 
+    class="fd-notification" 
+    tabindex="0"
+    aria-labelledby="
+        fd-notification-title-4
+        fd-notification-title-status-4
+        fd-notification-paragraph-4
+        fd-notification-footnotes-4
+    ">
     <div class="fd-notification__body">
-        <span class="fd-avatar fd-avatar--circle fd-avatar--accent-color-10 fd-avatar--xs" role="img" aria-label="Avatar">
+        <span class="fd-avatar fd-avatar--accent-color-10 fd-avatar--xs" role="img" aria-label="Avatar" aria-hidden="true">
             <i role="presentation" aria-hidden="true" aria-label="Product placeholder" class="fd-avatar__icon sap-icon--product"></i>
         </span>
         <div class="fd-notification__content">
             <div class="fd-notification__header">
-                <h4 class="fd-notification__title fd-notification__title--unread">Notification Title (unread)</h4>
+ 
+                <h4 
+                    id="fd-notification-title-4" 
+                    class="fd-notification__title fd-notification__title--unread">
+                    Notification Title
+                </h4>
+                
+                <span 
+                    id="fd-notification-title-status-4" 
+                    class="fd-notification__sr-only">
+                    Unread
+                </span>
             </div>
-            <p class="fd-notification__paragraph">Description of notification topic</p>
-            <div class="fd-notification__footer">
+            <p 
+                id="fd-notification-paragraph-4" 
+                class="fd-notification__paragraph">
+                Description of notification topic
+            </p>
+
+            <div class="fd-notification__footer" id="fd-notification-footnotes-4">
                 <span class="fd-notification__footer-content">Product Name</span>
-                <span class="fd-notification__separator"></span>
+                <span class="fd-notification__separator" role="presentation" aria-hidden="true"></span>
                 <span class="fd-notification__footer-content">Feature Name</span>
-                <span class="fd-notification__separator"></span>
+                <span class="fd-notification__separator" role="presentation" aria-hidden="true"></span>
                 <span class="fd-notification__footer-content">11:11</span>
             </div>
         </div>
+
         <div class="fd-notification__actions">
-            <button class="fd-button fd-button--transparent" aria-label="More">
-                <i class="sap-icon--overflow"></i>
-            </button>
-            <button class="fd-button fd-button--transparent " aria-label="Close">
-                <i class="sap-icon--decline"></i>
+            <button class="fd-button fd-button--transparent" aria-label="Close" title="Close" tabindex="0">
+                <i class="sap-icon--decline" role="presentation" aria-hidden="true"></i>
             </button>
         </div>
     </div>
