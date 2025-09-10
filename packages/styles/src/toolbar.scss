@@ -28,6 +28,7 @@ $block: #{$fd-namespace}-toolbar;
   @include fd-set-paddings-x(var(--fdToolbar_Padding_Left), var(--fdToolbar_Padding_Right));
 
   height: var(--fdToolbar_Height);
+  min-height: var(--fdToolbar_Height);
   border-bottom: var(--fdToolbar_Border_Bottom);
   background-color: var(--fdToolbar_Background);
 
