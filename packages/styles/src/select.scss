@@ -60,9 +60,14 @@ $block: #{$fd-namespace}-select;
       --fdSelect_Button_Opacity: 0;
       --fdSelect_Button_Cursor: text;
       --fdSelect_Control_Cursor: text;
+      --fdSelect_Text_Padding_Inline_End: 0.625rem;
 
       &.is-placeholder {
         --fdSelect_Text_Content_Visibility: hidden;
+      }
+
+      .#{$block}__button {
+        display: none;
       }
     }
 
@@ -92,15 +97,22 @@ $block: #{$fd-namespace}-select;
     @include fd-reset();
     @include fd-ellipsis();
 
+    min-width: var(--fdSelect_Min_Width);
     display: var(--fdSelect_Text_Content_Display, inline-block);
     visibility: var(--fdSelect_Text_Content_Visibility, visible);
     color: var(--fdSelect_Text_Content_Color, var(--sapTextColor));
-    padding-inline-start: var(--fdSelect_Text_Padding_Inline_Start, 0.625rem);
+    padding-inline: var(--fdSelect_Text_Padding_Inline_Start, 0.625rem) var(--fdSelect_Text_Padding_Inline_End, 0);
   }
 
   .#{$block}__button {
     opacity: var(--fdSelect_Button_Opacity, 1);
     cursor: var(--fdSelect_Button_Cursor, pointer);
+
+    @include fd-focus() {
+      &::after {
+        border: none;
+      }
+    }
   }
 
   @include fd-compact-or-condensed() {

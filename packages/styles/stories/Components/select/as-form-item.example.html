@@ -4,59 +4,95 @@
         <div class="fd-popover">
             <div class="fd-popover__control" aria-expanded="true" aria-haspopup="true">
                 <div class="fd-select">
-                    <button
-                        aria-labelledby="formSelectLabel formSelectValue"
-                        aria-expanded="true"
+                    <div
+                        role="combobox"
+                        aria-roledescription="Contains item list for selection"
                         aria-haspopup="listbox"
+                        aria-expanded="true"
+                        aria-controls="formList"
+                        aria-activedescendant="formListItem2"
+                        aria-labelledby="formSelectLabel"
                         class="fd-select__control"
-                        id="asFormItemSelectCombobox"
+                        value="Notebook Basic 2"
+                        tabindex="0"
+                        id="formSelectCombobox"
                         onclick="
-                            toggleElAttrs('h0C6B625', ['aria-hidden']);
-                            toggleElAttrs('asFormItemSelectCombobox', ['aria-expanded']);
-                        "
-                        tabindex="0">
-                        <span is="formSelectValue" class="fd-select__text-content">Select</span>
-                        <span class="fd-button fd-button--transparent fd-select__button">
-                            <i class="sap-icon--slim-arrow-down"></i>
+                            toggleElAttrs('formSelectPopoverBody', ['aria-hidden']);
+                            toggleElAttrs('formSelectCombobox', ['aria-expanded']);
+                        ">
+                        <span class="fd-select__text-content">Notebook Basic 2</span>
+                        
+                        <span 
+                            role="button"
+                            tabindex="-1"
+                            aria-label="Selection options"
+                            title="Selection options"
+                            class="fd-button fd-button--transparent fd-select__button">
+                            <i class="sap-icon--slim-arrow-down" role="presentation" aria-hidden="true"></i>
                         </span>
-                    </button>
+                    </div>
                 </div>
             </div>
             <div
                 aria-hidden="false"
                 class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--dropdown"
-                id="h0C6B625">
+                id="formSelectPopoverBody">
                 <ul
-                    aria-activedescendant="asFormItemSelectCombobox-currentlyFocusedItem"
+                    id="formList"
+                    role="listbox"
+                    aria-roledescription="Contains all available items"
                     aria-labelledby="formSelectLabel"
                     class="fd-list fd-list--dropdown"
-                    role="listbox">
+                    >
                     <li
-                        id="asFormItemSelectCombobox-currentlyFocusedItem"
+                        id="formListItem1"
+                        role="option"
+                        tabindex="0"
+                        aria-selected="false"
+                        aria-setsize="5"
+                        aria-posinset="1"
+                        class="fd-list__item">
+                        <span class="fd-list__title">Notebook Basic 1 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat, dolorum aspernatur. Nisi necessitatibus distinctio quidem quos numquam ipsum.</span>
+                    </li>
+                    <li
+                        id="formListItem2"
+                        role="option"
+                        tabindex="0"
                         aria-selected="true"
-                        class="fd-list__item is-selected"
-                        role="option"
-                        tabindex="0">
-                    <span class="fd-list__title">
-                        List item 1 List item 1 List item 1 List item 1 List item 1 List item 1
-                        List item 1 List item 1 List item 1 List item 1 List item 1 List item 1
-                        List item 1 List item 1 List item 1 List item 1
-                    </span>
+                        aria-setsize="5"
+                        aria-posinset="2"
+                        class="fd-list__item">
+                        <span class="fd-list__title">Notebook Basic 2</span>
                     </li>
-                    <li class="fd-list__item"
+                    <li
+                        id="formListItem3"
                         role="option"
-                        tabindex="-1">
-                    <span class="fd-list__title">List item 2</span>
-                </li>
-                    <li class="fd-list__item"
-                        role="option"
-                        tabindex="-1">
-                    <span class="fd-list__title">List item 3</span>
+                        tabindex="0"
+                        aria-selected="false"
+                        aria-setsize="5"
+                        aria-posinset="3"
+                        class="fd-list__item">
+                        <span class="fd-list__title">Notebook Basic 3</span>
                     </li>
-                    <li class="fd-list__item"
+                    <li
+                        id="formListItem4"
                         role="option"
-                        tabindex="-1">
-                    <span class="fd-list__title">List item 4</span>
+                        tabindex="0"
+                        aria-selected="false"
+                        aria-setsize="5"
+                        aria-posinset="4"
+                        class="fd-list__item">
+                        <span class="fd-list__title">Notebook Basic 4</span>
+                    </li>
+                    <li
+                        id="formListItem5"
+                        role="option"
+                        tabindex="0"
+                        aria-selected="false"
+                        aria-setsize="5"
+                        aria-posinset="5"
+                        class="fd-list__item">
+                        <span class="fd-list__title">Notebook Basic 5</span>
                     </li>
                 </ul>
             </div>

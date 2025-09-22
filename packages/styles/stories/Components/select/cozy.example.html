@@ -4,6 +4,7 @@
         <div class="fd-popover__control" aria-expanded="false" aria-haspopup="true">
             <div class="fd-select">
                 <div
+                    role="combobox"
                     aria-roledescription="Contains item list for selection"
                     aria-haspopup="listbox"
                     aria-expanded="false"
@@ -11,7 +12,7 @@
                     class="fd-select__control is-placeholder"
                     value="Select an option"
                     tabindex="0">
-                    <span id="cozySelectValue" class="fd-select__text-content">Select an option</span>
+                    <span class="fd-select__text-content">Select an option</span>
                     
                     <span 
                         role="button"
@@ -19,7 +20,7 @@
                         aria-label="Selection options"
                         title="Selection options"
                         class="fd-button fd-button--transparent fd-select__button">
-                        <i class="sap-icon--slim-arrow-down"></i>
+                        <i class="sap-icon--slim-arrow-down" role="presentation" aria-hidden="true"></i>
                     </span>
                 </div>
             </div>
@@ -28,275 +29,284 @@
 </div>
 
 <div style="height: 100px">
-    <label class="fd-form-label" id="cozySelectLabel">Hover on Input Field, Placeholder text</label><br />
+    <label class="fd-form-label" id="cozySelectLabelHover">Hover on Input Field, Placeholder text</label><br />
     <div class="fd-popover">
         <div class="fd-popover__control" aria-expanded="false" aria-haspopup="true">
             <div class="fd-select">
-                <button
-                    aria-expanded="false"
-                    aria-selected="false"
+                <div
+                    role="combobox"
+                    aria-roledescription="Contains item list for selection"
                     aria-haspopup="listbox"
-                    aria-labelledby="cozySelectLabel"
+                    aria-expanded="false"
+                    aria-labelledby="cozySelectLabelHover"
                     class="fd-select__control is-placeholder is-hover"
                     value="Select an option"
                     tabindex="0">
-                    <span id="cozySelectValue" class="fd-select__text-content">Select an option</span>
-                    <span class="fd-button fd-button--transparent fd-select__button">
-                        <i class="sap-icon--slim-arrow-down"></i>
+                    <span class="fd-select__text-content">Select an option</span>
+                    
+                    <span 
+                        role="button"
+                        tabindex="-1"
+                        aria-label="Selection options"
+                        title="Selection options"
+                        class="fd-button fd-button--transparent fd-select__button">
+                        <i class="sap-icon--slim-arrow-down" role="presentation" aria-hidden="true"></i>
                     </span>
-                </button>
+                </div>
             </div>
         </div>
     </div>
 </div>
 
 <div style="height: 100px">
-    <label class="fd-form-label" id="cozySelectLabel">Hover on Button, Placeholder text</label><br />
+    <label class="fd-form-label" id="cozySelectLabelHoverBtn">Hover on Button, Placeholder text</label><br />
     <div class="fd-popover">
         <div class="fd-popover__control" aria-expanded="false" aria-haspopup="true">
             <div class="fd-select">
-                <button
-                    aria-expanded="false"
-                    aria-selected="false"
+                <div
+                    role="combobox"
+                    aria-roledescription="Contains item list for selection"
                     aria-haspopup="listbox"
-                    aria-labelledby="cozySelectLabel"
+                    aria-expanded="false"
+                    aria-labelledby="cozySelectLabelHoverBtn"
                     class="fd-select__control is-placeholder is-hover"
                     value="Select an option"
                     tabindex="0">
-                    <span id="cozySelectValue" class="fd-select__text-content">Select an option</span>
-                    <span class="fd-button fd-button--transparent fd-select__button is-hover">
-                        <i class="sap-icon--slim-arrow-down"></i>
+                    <span class="fd-select__text-content">Select an option</span>
+                    
+                    <span 
+                        role="button"
+                        tabindex="-1"
+                        aria-label="Selection options"
+                        title="Selection options"
+                        class="fd-button fd-button--transparent fd-select__button is-hover">
+                        <i class="sap-icon--slim-arrow-down" role="presentation" aria-hidden="true"></i>
                     </span>
-                </button>
+                </div>
             </div>
         </div>
     </div>
 </div>
 
 <div style="height: 100px">
-    <label class="fd-form-label" id="cozySelectLabel">Focus, Placeholder text</label><br />
+    <label class="fd-form-label" id="cozySelectLabelFocus">Focus, Placeholder text</label><br />
     <div class="fd-popover">
         <div class="fd-popover__control" aria-expanded="false" aria-haspopup="true">
             <div class="fd-select">
-                <button
-                    aria-expanded="false"
-                    aria-selected="false"
+                <div
+                    role="combobox"
+                    aria-roledescription="Contains item list for selection"
                     aria-haspopup="listbox"
-                    aria-labelledby="cozySelectLabel"
+                    aria-expanded="false"
+                    aria-labelledby="cozySelectLabelFocus"
                     class="fd-select__control is-placeholder is-focus"
                     value="Select an option"
                     tabindex="0">
-                    <span id="cozySelectValue" class="fd-select__text-content">Select an option</span>
-                    <span class="fd-button fd-button--transparent fd-select__button">
-                        <i class="sap-icon--slim-arrow-down"></i>
+                    <span class="fd-select__text-content">Select an option</span>
+                    
+                    <span 
+                        role="button"
+                        tabindex="-1"
+                        aria-label="Selection options"
+                        title="Selection options"
+                        class="fd-button fd-button--transparent fd-select__button">
+                        <i class="sap-icon--slim-arrow-down" role="presentation" aria-hidden="true"></i>
                     </span>
-                </button>
+                </div>
             </div>
         </div>
     </div>
 </div>
 
 <div style="height: 100px">
-    <label class="fd-form-label" id="cozySelectLabel">Expanded, Placeholder text</label><br />
+    <label class="fd-form-label" id="cozySelectLabelExpanded">Expanded, Placeholder text</label><br />
     <div class="fd-popover">
         <div class="fd-popover__control" aria-expanded="false" aria-haspopup="true">
             <div class="fd-select">
-                <button
-                    aria-expanded="false"
-                    aria-selected="false"
+                <div
+                    role="combobox"
+                    aria-roledescription="Contains item list for selection"
                     aria-haspopup="listbox"
-                    aria-labelledby="cozySelectLabel"
+                    aria-expanded="true"
+                    aria-labelledby="cozySelectLabelExpanded"
                     class="fd-select__control is-placeholder is-expanded"
                     value="Select an option"
                     tabindex="0">
-                    <span id="cozySelectValue" class="fd-select__text-content">Select an option</span>
-                    <span class="fd-button fd-button--transparent fd-select__button">
-                        <i class="sap-icon--slim-arrow-down"></i>
+                    <span class="fd-select__text-content">Select an option</span>
+                    
+                    <span 
+                        role="button"
+                        tabindex="-1"
+                        aria-label="Selection options"
+                        title="Selection options"
+                        class="fd-button fd-button--transparent fd-select__button">
+                        <i class="sap-icon--slim-arrow-down" role="presentation" aria-hidden="true"></i>
                     </span>
-                </button>
+                </div>
             </div>
         </div>
     </div>
 </div>
 
 <div style="height: 100px">
-    <label class="fd-form-label" id="cozySelectLabel">In disabled state placeholder should not be visible</label><br />
+    <label class="fd-form-label" id="cozySelectLabelDisabled">In disabled state placeholder should not be visible</label><br />
     <div class="fd-popover">
         <div class="fd-popover__control" aria-expanded="false" aria-haspopup="true">
             <div class="fd-select">
-                <button
-                    aria-expanded="false"
-                    aria-selected="false"
+                <div
+                    role="combobox"
+                    aria-roledescription="Contains item list for selection"
                     aria-haspopup="listbox"
-                    aria-labelledby="cozySelectLabel"
+                    aria-expanded="false"
+                    aria-disabled="true"
+                    aria-labelledby="cozySelectLabelDisabled"
                     class="fd-select__control is-placeholder is-disabled"
                     value="Select an option"
                     tabindex="0">
-                    <span id="cozySelectValue" class="fd-select__text-content">Select an option</span>
-                    <span class="fd-button fd-button--transparent fd-select__button">
-                        <i class="sap-icon--slim-arrow-down"></i>
+                    <span class="fd-select__text-content">Select an option</span>
+                    
+                    <span 
+                        role="button"
+                        tabindex="-1"
+                        aria-label="Selection options"
+                        title="Selection options"
+                        class="fd-button fd-button--transparent fd-select__button">
+                        <i class="sap-icon--slim-arrow-down" role="presentation" aria-hidden="true"></i>
                     </span>
-                </button>
+                </div>
             </div>
         </div>
     </div>
 </div>
 
 <div style="height: 100px">
-    <label class="fd-form-label" id="cozySelectLabel">In read-only state placeholder should not be visible</label><br />
+    <label class="fd-form-label" id="cozySelectLabelReadonly">In read-only state placeholder should not be visible</label><br />
     <div class="fd-popover">
         <div class="fd-popover__control" aria-expanded="false" aria-haspopup="true">
             <div class="fd-select">
-                <button
-                    aria-expanded="false"
-                    aria-selected="false"
+                <div
+                    role="combobox"
+                    aria-roledescription="Contains item list for selection"
                     aria-haspopup="listbox"
-                    aria-labelledby="cozySelectLabel"
+                    aria-expanded="false"
+                    aria-readonly="true"
+                    aria-labelledby="cozySelectLabelReadonly"
                     class="fd-select__control is-placeholder is-readonly"
                     value="Select an option"
                     tabindex="0">
-                    <span id="cozySelectValue" class="fd-select__text-content">Select an option</span>
-                    <span class="fd-button fd-button--transparent fd-select__button">
-                        <i class="sap-icon--slim-arrow-down"></i>
+                    <span class="fd-select__text-content">Select an option</span>
+                    
+                    <span 
+                        role="button"
+                        tabindex="-1"
+                        aria-label="Selection options"
+                        title="Selection options"
+                        class="fd-button fd-button--transparent fd-select__button">
+                        <i class="sap-icon--slim-arrow-down" role="presentation" aria-hidden="true"></i>
                     </span>
-                </button>
+                </div>
             </div>
         </div>
     </div>
 </div>
 
-
-
 <div style="height: 300px">
-    <label class="fd-form-label" id="cozySelectLabel">Active, Selected Item</label><br />
+    <label class="fd-form-label" id="cozySelectLabelActiveSelected">Active, Selected Item</label><br />
     <div class="fd-popover">
         <div class="fd-popover__control" aria-expanded="true" aria-haspopup="true">
             <div class="fd-select">
-                <button
-                    aria-expanded="true"
+                <div
+                    role="combobox"
+                    aria-roledescription="Contains item list for selection"
                     aria-haspopup="listbox"
-                    aria-labelledby="cozySelectLabel cozySelectValue"
+                    aria-expanded="true"
+                    aria-controls="cozyList"
+                    aria-activedescendant="cozyListItem2"
+                    aria-labelledby="cozySelectLabelActiveSelected"
                     class="fd-select__control"
-                    id="cozySelectCombobox"
+                    value="List Item 1"
+                    tabindex="0"
+                    id="cozySelectActiveSelected"
                     onclick="
                         toggleElAttrs('h0C6A325', ['aria-hidden']);
-                        toggleElAttrs('cozySelectCombobox', ['aria-expanded']);
-                    "
-                    value="List Item 1"
-                    tabindex="0">
-                    <span is="cozySelectValue" class="fd-select__text-content">List Item 1</span>
-                    <span class="fd-button fd-button--transparent fd-select__button">
-                        <i class="sap-icon--slim-arrow-down"></i>
+                        toggleElAttrs('cozySelectActiveSelected', ['aria-expanded']);
+                    ">
+                    <span class="fd-select__text-content">List item 2</span>
+                    
+                    <span 
+                        role="button"
+                        tabindex="-1"
+                        aria-label="Selection options"
+                        title="Selection options"
+                        class="fd-button fd-button--transparent fd-select__button">
+                        <i class="sap-icon--slim-arrow-down" role="presentation" aria-hidden="true"></i>
                     </span>
-                </button>
+                </div>
             </div>
         </div>
         <div
             aria-hidden="false"
             class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--dropdown"
-            id="h0C6A325">
+            id="h0C6A325"
+        >
             <ul
-                aria-activedescendant="cozySelectCombobox-currentlyFocusedItem"
-                aria-labelledby="cozySelectLabel"
+                id="cozyList"
+                role="listbox"
+                aria-roledescription="Contains all available items"
+                aria-labelledby="cozySelectLabelActiveSelected"
                 class="fd-list fd-list--dropdown"
-                role="listbox">
+                >
                 <li
-                    id="cozySelectCombobox-currentlyFocusedItem"
-                    class="fd-list__item"
+                    id="cozyListItem1"
                     role="option"
-                    tabindex="0">
-                <span class="fd-list__title">Select</span>
+                    tabindex="0"
+                    aria-selected="false"
+                    aria-setsize="5"
+                    aria-posinset="1"
+                    class="fd-list__item">
+                    <span class="fd-list__title">List item 1</span>
                 </li>
-                <li aria-selected="true"
-                    class="fd-list__item is-selected"
+                <li
+                    id="cozyListItem2"
                     role="option"
-                    tabindex="0">
-                <span class="fd-list__title">List item 1</span>
+                    tabindex="0"
+                    aria-selected="true"
+                    aria-setsize="5"
+                    aria-posinset="2"
+                    class="fd-list__item">
+                    <span class="fd-list__title">List item 2</span>
                 </li>
-                <li class="fd-list__item"
+                <li
+                    id="cozyListItem3"
                     role="option"
-                    tabindex="0">
-                <span class="fd-list__title">List item 2</span>
-            </li>
-                <li class="fd-list__item"
-                    role="option"
-                    tabindex="0">
-                <span class="fd-list__title">List item 3</span>
+                    tabindex="0"
+                    aria-selected="false"
+                    aria-setsize="5"
+                    aria-posinset="3"
+                    class="fd-list__item">
+                    <span class="fd-list__title">List item 3</span>
                 </li>
-                <li class="fd-list__item"
+                <li
+                    id="cozyListItem4"
                     role="option"
-                    tabindex="0">
-                <span class="fd-list__title">List item 4</span>
+                    tabindex="0"
+                    aria-selected="false"
+                    aria-setsize="5"
+                    aria-posinset="4"
+                    class="fd-list__item">
+                    <span class="fd-list__title">List item 4</span>
+                </li>
+                <li
+                    id="cozyListItem5"
+                    role="option"
+                    tabindex="0"
+                    aria-selected="false"
+                    aria-setsize="5"
+                    aria-posinset="5"
+                    class="fd-list__item">
+                    <span class="fd-list__title">List item 5</span>
                 </li>
             </ul>
         </div>
     </div>
 </div>
-
-<div style="height: 300px">
-    <label class="fd-form-label" id="cozySelectLabel">Active and Focus, Selected Item</label><br />
-    <div class="fd-popover">
-        <div class="fd-popover__control" aria-expanded="true" aria-haspopup="true">
-            <div class="fd-select">
-                <button
-                    aria-expanded="true"
-                    aria-haspopup="listbox"
-                    aria-labelledby="cozySelectLabel cozySelectValue"
-                    class="fd-select__control is-focus"
-                    id="defaultSelectCombobox"
-                    onclick="
-                        toggleElAttrs('h0C6A325b', ['aria-hidden']);
-                        toggleElAttrs('defaultSelectCombobox', ['aria-expanded']);
-                    "
-                    value="List Item 1"
-                    tabindex="0">
-                    <span is="cozySelectValue" class="fd-select__text-content">List Item 1</span>
-                    <span class="fd-button fd-button--transparent fd-select__button">
-                        <i class="sap-icon--slim-arrow-down"></i>
-                    </span>
-                </button>
-            </div>
-        </div>
-        <div
-            aria-hidden="false"
-            class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--dropdown"
-            id="h0C6A325b">
-            <ul
-                aria-activedescendant="defaultSelectCombobox-currentlyFocusedItem"
-                aria-labelledby="cozySelectLabel"
-                class="fd-list fd-list--dropdown"
-                role="listbox">
-                <li
-                    id="defaultSelectCombobox-currentlyFocusedItem"
-                    class="fd-list__item"
-                    role="option"
-                    tabindex="0">
-                <span class="fd-list__title">Select</span>
-                </li>
-                <li aria-selected="true"
-                    class="fd-list__item is-selected"
-                    role="option"
-                    tabindex="0">
-                <span class="fd-list__title">List item 1</span>
-                </li>
-                <li class="fd-list__item"
-                    role="option"
-                    tabindex="0">
-                <span class="fd-list__title">List item 2</span>
-            </li>
-                <li class="fd-list__item"
-                    role="option"
-                    tabindex="0">
-                <span class="fd-list__title">List item 3</span>
-                </li>
-                <li class="fd-list__item"
-                    role="option"
-                    tabindex="0">
-                <span class="fd-list__title">List item 4</span>
-                </li>
-            </ul>
-        </div>
-    </div>
-</div>
-
-

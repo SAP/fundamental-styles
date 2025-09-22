@@ -1,108 +1,104 @@
-<div style="height: 250px">
-<div class="fd-container">
-  <div class="fd-row">
-        <div class="fd-col fd-col--6">
-            <label class="fd-form-label" id="h45336F3">
-                Choose an option
-            </label>
-            <br>
-            <div class="fd-popover">
-                <div class="fd-popover__control" aria-expanded="true" aria-haspopup="true">
-                    <div class="fd-select">
-                        <button
-                            id="acqw4q3r3d"
-                            onclick="
-                                toggleElAttrs('d2qrdad2', ['aria-hidden']);
-                                toggleElAttrs('acqw4q3r3d', ['aria-expanded']);
-                            "
-                            class="fd-select__control"
-                            tabindex="0"
-                            aria-labelledby="h45336F3 h45336F3Value"
-                            aria-expanded="true"
-                            aria-haspopup="listbox">
-                            <span id="h45336F3Value" class="fd-select__text-content"></span>
-                            <span class="fd-button fd-button--transparent fd-select__button">
-                                <i class="sap-icon--slim-arrow-down"></i>
-                            </span>
-                        </button>
-                    </div>
-                </div>
+<div style="height:350px">
+    <label class="fd-form-label" id="blankSelectLabel">Choose an option</label>
+    <div class="fd-popover">
+        <div class="fd-popover__control" aria-expanded="true" aria-haspopup="true">
+            <div class="fd-select">
                 <div
-                    class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--dropdown"
-                    aria-hidden="false"
-                    id="d2qrdad2">
-                    <ul
-                        aria-activedescendant="blankSelectCombobox-currentlyFocusedItem"
-                        aria-labelledby="h45336F3" class="fd-list fd-list--dropdown" role="listbox">
-                        <li
-                            id="blankSelectCombobox-currentlyFocusedItem"
-                            class="fd-list__item is-selected" aria-label="None selected" aria-selected="true" role="option" tabIndex="0">
-                            <span class="fd-list__title" />
-                        </li>
-                        <li class="fd-list__item" role="option" tabindex="-1">
-                            <span class="fd-list__title">List item 1</span>
-                        </li>
-                        <li class="fd-list__item" role="option" tabindex="-1">
-                            <span class="fd-list__title">List item 2</span>
-                        </li>
-                        <li class="fd-list__item" role="option" tabindex="-1">
-                            <span class="fd-list__title">List item 3</span>
-                        </li>
-                        <li class="fd-list__item" role="option" tabindex="-1">
-                            <span class="fd-list__title">List item 4</span>
-                        </li>
-                    </ul>
+                    role="combobox"
+                    aria-roledescription="Contains item list for selection"
+                    aria-haspopup="listbox"
+                    aria-expanded="true"
+                    aria-controls="formList"
+                    aria-labelledby="blankSelectLabel"
+                    class="fd-select__control"
+                    value=""
+                    tabindex="0"
+                    id="blankSelectCombobox"
+                    onclick="
+                        toggleElAttrs('blankSelectPopoverBody', ['aria-hidden']);
+                        toggleElAttrs('blankSelectCombobox', ['aria-expanded']);
+                    ">
+                    <span class="fd-select__text-content"></span>
+                    
+                    <span 
+                        role="button"
+                        tabindex="-1"
+                        aria-label="Selection options"
+                        title="Selection options"
+                        class="fd-button fd-button--transparent fd-select__button">
+                        <i class="sap-icon--slim-arrow-down" role="presentation" aria-hidden="true"></i>
+                    </span>
                 </div>
             </div>
         </div>
-        <div class="fd-col fd-col--6">
-            <label class="fd-form-label" id="h45336F4">
-                Choose an option
-            </label>
-            <br>
-            <div class="fd-popover">
-                <div class="fd-popover__control" aria-expanded="true" aria-haspopup="true">
-                    <div class="fd-select">
-                        <button
-                            id="oj89qyeuawbd"
-                            onclick="
-                                toggleElAttrs('oj89qyeuawbd', ['aria-expanded']);
-                                toggleElAttrs('m8ae7ahrb', ['aria-hidden']);
-                            "
-                            class="fd-select__control"
-                            tabindex="0"
-                            aria-labelledby="h45336F4 h45336F4Value"
-                            aria-expanded="true"
-                            aria-haspopup="listbox">
-                            <span id="h45336F4Value" class="fd-select__text-content"></span>
-                            <span class="fd-button fd-button--transparent fd-select__button">
-                                <i class="sap-icon--slim-arrow-down"></i>
-                            </span>
-                        </button>
-                    </div>
-                </div>
-                <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--dropdown" aria-hidden="false" id="m8ae7ahrb">
-                    <ul
-                        aria-activedescendant="blankSelectComboboxComp-currentlyFocusedItem"
-                        aria-labelledby="h45336F4" class="fd-list fd-list--dropdown" role="listbox">
-                        <li
-                            id="blankSelectComboboxComp-currentlyFocusedItem"
-                            class="fd-list__item is-selected" aria-selected="true" role="option" tabindex="0" aria-label="item">
-                            <span class="fd-list__title"/>
-                        </li>
-                        <li class="fd-list__item" role="option" tabindex="-1">
-                            <span class="fd-list__title">List item 2</span>
-                        </li>
-                        <li class="fd-list__item" role="option" tabindex="-1">
-                            <span class="fd-list__title">List item 3</span>
-                        </li>
-                        <li class="fd-list__item" role="option" tabindex="-1">
-                            <span class="fd-list__title">List item 4</span>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+        <div
+            aria-hidden="false"
+            class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--dropdown"
+            id="blankSelectPopoverBody">
+            <ul
+                id="blankList"
+                role="listbox"
+                aria-roledescription="Contains all available items"
+                aria-labelledby="blankSelectLabel"
+                class="fd-list fd-list--dropdown"
+                >
+                <li
+                    id="blankListItem1"
+                    role="option"
+                    tabindex="0"
+                    aria-selected="false"
+                    aria-setsize="5"
+                    aria-posinset="1"
+                    class="fd-list__item">
+                    <span class="fd-list__title"></span>
+                    <span class="fd-list__secondary"></span>
+                </li>
+                <li
+                    id="blankListItem2"
+                    role="option"
+                    tabindex="0"
+                    aria-selected="false"
+                    aria-setsize="5"
+                    aria-posinset="2"
+                    class="fd-list__item">
+                    <span class="fd-list__title">Notebook Basic 2</span>
+                    <span class="fd-list__secondary">1400 EUR</span>
+                </li>
+                <li
+                    id="blankListItem3"
+                    role="option"
+                    tabindex="0"
+                    aria-selected="false"
+                    aria-setsize="5"
+                    aria-posinset="3"
+                    class="fd-list__item">
+                    <span class="fd-list__title">Notebook Basic 3</span>
+                    <span class="fd-list__secondary">700 EUR</span>
+                </li>
+                <li
+                    id="blankListItem4"
+                    role="option"
+                    tabindex="0"
+                    aria-selected="false"
+                    aria-setsize="5"
+                    aria-posinset="4"
+                    class="fd-list__item">
+                    <span class="fd-list__title">Notebook Basic 4</span>
+                    <span class="fd-list__secondary">12000 EUR</span>
+                </li>
+                <li
+                    id="blankListItem5"
+                    role="option"
+                    tabindex="0"
+                    aria-selected="false"
+                    aria-setsize="5"
+                    aria-posinset="5"
+                    class="fd-list__item">
+                    <span class="fd-list__title">Notebook Basic 5</span>
+                    <span class="fd-list__secondary">40 EUR</span>
+                </li>
+            </ul>
         </div>
     </div>
-</div>
-</div>
+  </div>
+  

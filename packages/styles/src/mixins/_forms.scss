@@ -1,4 +1,6 @@
 @use "sass:map";
+@use "sass:meta";
+@use "sass:string";
 
 // Form Mixins
 @import "./mixins";
@@ -23,9 +25,14 @@ $fd-input-field-height--compact: 1.625rem;
     @include fd-set-min-height(var(--fdInput_Height, var(--sapElement_Height)));
   }
 
+  @if meta.type-of($overrideMinWidth) == string and string.index($overrideMinWidth, "--") {
+    min-width: var(#{$overrideMinWidth});
+  } @else {
+    min-width: $overrideMinWidth;
+  }
+
   z-index: 1;
   width: 100%;
-  min-width: var(#{$overrideMinWidth});
   border-radius: var(--sapField_BorderCornerRadius);
   padding-block: 0;
   padding-inline: var(--fdInput_Field_Padding_Inline, 0.625rem);

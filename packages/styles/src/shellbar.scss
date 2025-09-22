@@ -500,7 +500,9 @@ $select: #{$fd-namespace}-select;
         background: none;
         max-width: 18rem;
         margin-inline: 0;
+        min-width: auto;
         height: var(--fdShell_Search_Dropdown_Height);
+        min-height: var(--fdShell_Search_Dropdown_Height);
         border-radius: var(--fdShell_Search_Dropdown_Border_Radius);
         border: var(--fdShell_Search_Category_Border);
 
@@ -672,5 +674,10 @@ $select: #{$fd-namespace}-select;
     opacity: 0.3;
     position: absolute;
     background: var(--sapBlockLayer_Background);
+  }
+
+  @include fd-compact-or-condensed() {
+    --fdShell_Search_Dropdown_Height: var(--sapElement_Compact_Height);
+    --fdShellbar_SearchField_Button_Height: var(--sapElement_Compact_Height);
   }
 }

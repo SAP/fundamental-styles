@@ -1,16 +1,102 @@
-<label class="fd-form-label" id="readonlyLabel">Chosen option</label><br />
-<div class="fd-popover">
-    <div class="fd-popover__control" aria-expanded="true" aria-haspopup="true">
-        <div class="fd-select">
-            <span
-                class="fd-select__control is-readonly"
-                aria-labelledby="readonlyLabel readonlyValue"
-                readonly
-                aria-expanded="false"
-                aria-haspopup="false"
-                tabindex="0">
-              <span id="readonlyValue" class="fd-select__text-content">Selected Item 2</span>
-            </span>
+<div style="height:200px">
+    <label class="fd-form-label" id="readonlySelectLabel">Choose an option</label>
+    <div class="fd-popover">
+        <div class="fd-popover__control" aria-expanded="true" aria-haspopup="true">
+            <div class="fd-select">
+                <div
+                    role="combobox"
+                    aria-roledescription="Contains item list for selection"
+                    aria-haspopup="listbox"
+                    aria-expanded="true"
+                    aria-controls="formList"
+                    aria-readonly="true"
+                    aria-activedescendant="formListItem2"
+                    aria-labelledby="readonlySelectLabel"
+                    class="fd-select__control is-readonly"
+                    value="Notebook Basic 2"
+                    tabindex="0"
+                    id="readonlySelectCombobox">
+                    <span class="fd-select__text-content">Notebook Basic 2</span>
+                    
+                    <span 
+                        role="button"
+                        tabindex="-1"
+                        aria-label="Selection options"
+                        title="Selection options"
+                        class="fd-button fd-button--transparent fd-select__button">
+                        <i class="sap-icon--slim-arrow-down" role="presentation" aria-hidden="true"></i>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div
+            aria-hidden="true"
+            class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--dropdown"
+            id="readonlySelectPopoverBody">
+            <ul
+                id="readonlyList"
+                role="listbox"
+                aria-roledescription="Contains all available items"
+                aria-labelledby="readonlySelectLabel"
+                class="fd-list fd-list--dropdown"
+                >
+                <li
+                    id="readonlyListItem1"
+                    role="option"
+                    tabindex="0"
+                    aria-selected="false"
+                    aria-setsize="5"
+                    aria-posinset="1"
+                    class="fd-list__item">
+                    <span class="fd-list__title">Notebook Basic 1</span>
+                    <span class="fd-list__secondary">1000 EUR</span>
+                </li>
+                <li
+                    id="readonlyListItem2"
+                    role="option"
+                    tabindex="0"
+                    aria-selected="true"
+                    aria-setsize="5"
+                    aria-posinset="2"
+                    class="fd-list__item">
+                    <span class="fd-list__title">Notebook Basic 2</span>
+                    <span class="fd-list__secondary">1400 EUR</span>
+                </li>
+                <li
+                    id="readonlyListItem3"
+                    role="option"
+                    tabindex="0"
+                    aria-selected="false"
+                    aria-setsize="5"
+                    aria-posinset="3"
+                    class="fd-list__item">
+                    <span class="fd-list__title">Notebook Basic 3</span>
+                    <span class="fd-list__secondary">700 EUR</span>
+                </li>
+                <li
+                    id="readonlyListItem4"
+                    role="option"
+                    tabindex="0"
+                    aria-selected="false"
+                    aria-setsize="5"
+                    aria-posinset="4"
+                    class="fd-list__item">
+                    <span class="fd-list__title">Notebook Basic 4</span>
+                    <span class="fd-list__secondary">12000 EUR</span>
+                </li>
+                <li
+                    id="readonlyListItem5"
+                    role="option"
+                    tabindex="0"
+                    aria-selected="false"
+                    aria-setsize="5"
+                    aria-posinset="5"
+                    class="fd-list__item">
+                    <span class="fd-list__title">Notebook Basic 5</span>
+                    <span class="fd-list__secondary">40 EUR</span>
+                </li>
+            </ul>
         </div>
     </div>
-</div>
+  </div>
+  

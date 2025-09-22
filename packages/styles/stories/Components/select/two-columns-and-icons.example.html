@@ -1,55 +1,109 @@
-<div style="height: 200px">
-    <label class="fd-form-label" id="twoColumnsAndIconsLabel">Choose an option</label><br />
+<div style="height:220px">
+    <label class="fd-form-label" id="twoColSelectLabel">Choose an option</label>
     <div class="fd-popover">
-    <div class="fd-popover__control" aria-expanded="true" aria-haspopup="true">
-        <div class="fd-select">
-            <button
-                class="fd-select__control"
-                aria-labelledby="twoColumnsAndIconsLabel twoColumnsAndIconsValue"
-                tabindex="0"
-                id="twoColumnsAndIconSelectCombobox"
-                onclick="
-                    toggleElAttrs('h090G325', ['aria-hidden']);
-                    toggleElAttrs('twoColumnsAndIconSelectCombobox', ['aria-expanded']);
-                "
-                aria-expanded="true"
-                aria-haspopup="listbox">
-                <span is="twoColumnsAndIconsValue"class="fd-select__text-content">Select Product</span>
-                <span class="fd-button fd-button--transparent fd-select__button">
-                    <i class="sap-icon--slim-arrow-down"></i>
-                </span>
-            </button>
+        <div class="fd-popover__control" aria-expanded="true" aria-haspopup="true">
+            <div class="fd-select">
+                <div
+                    role="combobox"
+                    aria-roledescription="Contains item list for selection"
+                    aria-haspopup="listbox"
+                    aria-expanded="true"
+                    aria-controls="formList"
+                    aria-activedescendant="formListItem2"
+                    aria-labelledby="twoColSelectLabel"
+                    class="fd-select__control"
+                    value="Notebook Basic 2"
+                    tabindex="0"
+                    id="twoColSelectCombobox"
+                    onclick="
+                        toggleElAttrs('twoColSelectPopoverBody', ['aria-hidden']);
+                        toggleElAttrs('twoColSelectCombobox', ['aria-expanded']);
+                    ">
+                    <span class="fd-select__text-content">Notebook Basic 2</span>
+                    
+                    <span 
+                        role="button"
+                        tabindex="-1"
+                        aria-label="Selection options"
+                        title="Selection options"
+                        class="fd-button fd-button--transparent fd-select__button">
+                        <i class="sap-icon--slim-arrow-down" role="presentation" aria-hidden="true"></i>
+                    </span>
+                </div>
+            </div>
         </div>
-    </div>
-    <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--dropdown" aria-hidden="false" id="h090G325">
-        <ul
-            aria-activedescendant="twoColumnsAndIconSelectCombobox-currentlyFocusedItem"
-            aria-labelledby="twoColumnsAndIconsLabel"
-            class="fd-list fd-list--dropdown"
-            role="listbox">
-            <li
-                id="twoColumnsAndIconSelectCombobox-currentlyFocusedItem"
-                class="fd-list__item is-selected" aria-selected="true" role="option" tabindex="0">
-                <i role="presentation" class="fd-list__icon sap-icon--marketing-campaign"></i>
-                <span class="fd-list__title">Marketing</span>
-                <span class="fd-list__secondary">1000 EUR</span>
-            </li>
-            <li class="fd-list__item" role="option" tabindex="-1">
-                <i role="presentation" class="fd-list__icon sap-icon--save"></i>
-                <span class="fd-list__title">Backups</span>
-                <span class="fd-list__secondary">500 EUR</span>
-            </li>
-            <li class="fd-list__item" role="option" tabindex="-1">
-                <i role="presentation" class="fd-list__icon sap-icon--shipping-status"></i>
-                <span class="fd-list__title">Shipping</span>
-                <span class="fd-list__secondary">125 EUR</span>
-            </li>
-            <li class="fd-list__item" role="option" tabindex="-1">
-                <i role="presentation" class="fd-list__icon sap-icon--headset"></i>
-                <span class="fd-list__title">Consulting</span>
-                <span class="fd-list__secondary">200 EUR</span>
-            </li>
-        </ul>
-    </div>
+        <div
+            aria-hidden="false"
+            class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--dropdown"
+            id="twoColSelectPopoverBody">
+            <ul
+                id="twoColList"
+                role="listbox"
+                aria-roledescription="Contains all available items"
+                aria-labelledby="twoColSelectLabel"
+                class="fd-list fd-list--dropdown"
+                >
+                <li
+                    id="twoColListItem1"
+                    role="option"
+                    tabindex="0"
+                    aria-selected="false"
+                    aria-setsize="5"
+                    aria-posinset="1"
+                    class="fd-list__item">
+                    <i role="presentation" aria-hidden="true" class="fd-list__icon sap-icon--laptop"></i>
+                    <span class="fd-list__title">Notebook Basic 1</span>
+                    <span class="fd-list__secondary">1000 EUR</span>
+                </li>
+                <li
+                    id="twoColListItem2"
+                    role="option"
+                    tabindex="0"
+                    aria-selected="true"
+                    aria-setsize="5"
+                    aria-posinset="2"
+                    class="fd-list__item">
+                    <i role="presentation" aria-hidden="true" class="fd-list__icon sap-icon--save"></i>
+                    <span class="fd-list__title">Notebook Basic 2</span>
+                    <span class="fd-list__secondary">1400 EUR</span>
+                </li>
+                <li
+                    id="twoColListItem3"
+                    role="option"
+                    tabindex="0"
+                    aria-selected="false"
+                    aria-setsize="5"
+                    aria-posinset="3"
+                    class="fd-list__item">
+                    <i role="presentation" aria-hidden="true" class="fd-list__icon sap-icon--desktop-mobile"></i>
+                    <span class="fd-list__title">Notebook Basic 3</span>
+                    <span class="fd-list__secondary">700 EUR</span>
+                </li>
+                <li
+                    id="twoColListItem4"
+                    role="option"
+                    tabindex="0"
+                    aria-selected="false"
+                    aria-setsize="5"
+                    aria-posinset="4"
+                    class="fd-list__item">
+                    <i role="presentation" aria-hidden="true" class="fd-list__icon sap-icon--touch"></i>
+                    <span class="fd-list__title">Notebook Basic 4</span>
+                    <span class="fd-list__secondary">12000 EUR</span>
+                </li>
+                <li
+                    id="twoColListItem5"
+                    role="option"
+                    tabindex="0"
+                    aria-selected="false"
+                    aria-setsize="5"
+                    aria-posinset="5"
+                    class="fd-list__item">
+                    <i role="presentation" aria-hidden="true" class="fd-list__icon sap-icon--sap-box"></i>
+                    <span class="fd-list__title">Notebook Basic 5</span>
+                    <span class="fd-list__secondary">40 EUR</span>
+                </li>
+            </ul>
+        </div>
     </div>
 </div>

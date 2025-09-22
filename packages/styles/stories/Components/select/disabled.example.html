@@ -1,16 +1,106 @@
-<label class="fd-form-label" id="disabledLabel">Choose an option</label><br />
-<div class="fd-popover">
-    <div class="fd-popover__control" aria-disabled="true">
-        <div class="fd-select">
-            <button
-                aria-labelledby="disabledLabel disabledValue"
-                class="fd-select__control"
-                aria-disabled="true">
-                <span id="disabledValue" class="fd-select__text-content">Mango</span>
-                <span class="fd-button fd-button--transparent fd-select__button">
-                    <i class="sap-icon--slim-arrow-down"></i>
-                </span>
-            </button>
+<div style="height:200px">
+    <label class="fd-form-label" id="disabledSelectLabel">Choose an option</label>
+    <div class="fd-popover">
+        <div class="fd-popover__control" aria-expanded="true" aria-haspopup="true">
+            <div class="fd-select">
+                <div
+                    role="combobox"
+                    aria-roledescription="Contains item list for selection"
+                    aria-haspopup="listbox"
+                    aria-expanded="true"
+                    aria-controls="formList"
+                    aria-disabled="true"
+                    aria-activedescendant="formListItem2"
+                    aria-labelledby="disabledSelectLabel"
+                    class="fd-select__control is-disabled"
+                    value="Notebook Basic 2"
+                    tabindex="0"
+                    id="disabledSelectCombobox"
+                    onclick="
+                        toggleElAttrs('disabledSelectPopoverBody', ['aria-hidden']);
+                        toggleElAttrs('disabledSelectCombobox', ['aria-expanded']);
+                    ">
+                    <span class="fd-select__text-content">Notebook Basic 2</span>
+                    
+                    <span 
+                        role="button"
+                        tabindex="-1"
+                        aria-label="Selection options"
+                        title="Selection options"
+                        class="fd-button fd-button--transparent fd-select__button">
+                        <i class="sap-icon--slim-arrow-down" role="presentation" aria-hidden="true"></i>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div
+            aria-hidden="true"
+            class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--dropdown"
+            id="disabledSelectPopoverBody">
+            <ul
+                id="disabledList"
+                role="listbox"
+                aria-roledescription="Contains all available items"
+                aria-labelledby="disabledSelectLabel"
+                class="fd-list fd-list--dropdown"
+                >
+                <li
+                    id="disabledListItem1"
+                    role="option"
+                    tabindex="0"
+                    aria-selected="false"
+                    aria-setsize="5"
+                    aria-posinset="1"
+                    class="fd-list__item">
+                    <span class="fd-list__title">Notebook Basic 1</span>
+                    <span class="fd-list__secondary">1000 EUR</span>
+                </li>
+                <li
+                    id="disabledListItem2"
+                    role="option"
+                    tabindex="0"
+                    aria-selected="true"
+                    aria-setsize="5"
+                    aria-posinset="2"
+                    class="fd-list__item">
+                    <span class="fd-list__title">Notebook Basic 2</span>
+                    <span class="fd-list__secondary">1400 EUR</span>
+                </li>
+                <li
+                    id="disabledListItem3"
+                    role="option"
+                    tabindex="0"
+                    aria-selected="false"
+                    aria-setsize="5"
+                    aria-posinset="3"
+                    class="fd-list__item">
+                    <span class="fd-list__title">Notebook Basic 3</span>
+                    <span class="fd-list__secondary">700 EUR</span>
+                </li>
+                <li
+                    id="disabledListItem4"
+                    role="option"
+                    tabindex="0"
+                    aria-selected="false"
+                    aria-setsize="5"
+                    aria-posinset="4"
+                    class="fd-list__item">
+                    <span class="fd-list__title">Notebook Basic 4</span>
+                    <span class="fd-list__secondary">12000 EUR</span>
+                </li>
+                <li
+                    id="disabledListItem5"
+                    role="option"
+                    tabindex="0"
+                    aria-selected="false"
+                    aria-setsize="5"
+                    aria-posinset="5"
+                    class="fd-list__item">
+                    <span class="fd-list__title">Notebook Basic 5</span>
+                    <span class="fd-list__secondary">40 EUR</span>
+                </li>
+            </ul>
         </div>
     </div>
-</div>
+  </div>
+  
