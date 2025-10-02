@@ -1,54 +1,100 @@
-<div style="height: 250px">
-    <label class="fd-form-label" id="matchSelectPopoverBodySizeLabel">Choose an option</label><br />
+<div style="height:220px">
+    <label class="fd-form-label" id="popSelectLabel">Choose an option</label>
     <div class="fd-popover">
-    <div class="fd-popover__control" aria-expanded="true" aria-haspopup="true">
-        <div class="fd-select">
-            <button
-                aria-labelledby="matchSelectPopoverBodySizeLabel matchSelectPopoverBodySizeValue"
-                class="fd-select__control"
-                tabindex="0"
-                id="matchSelectPopoverBodySizeSelectCombobox"
-                onclick="
-                    toggleElAttrs('h0GTKE325', ['aria-hidden']);
-                    toggleElAttrs('matchSelectPopoverBodySizeSelectCombobox', ['aria-expanded']);
-                "
-                aria-expanded="true"
-                aria-haspopup="listbox">
-                <span id="matchSelectPopoverBodySizeValue" class="fd-select__text-content">Much Longer than Usual</span>
-                <span class="fd-button fd-button--transparent fd-select__button">
-                    <i class="sap-icon--slim-arrow-down"></i>
-                </span>
-            </button>
+        <div class="fd-popover__control" aria-expanded="true" aria-haspopup="true">
+            <div class="fd-select">
+                <div
+                    role="combobox"
+                    aria-roledescription="Contains item list for selection"
+                    aria-haspopup="listbox"
+                    aria-expanded="true"
+                    aria-controls="formList"
+                    aria-activedescendant="formListItem2"
+                    aria-labelledby="popSelectLabel"
+                    class="fd-select__control"
+                    value="Notebook Basic Model A2"
+                    tabindex="0"
+                    id="popSelectCombobox"
+                    onclick="
+                        toggleElAttrs('popSelectPopoverBody', ['aria-hidden']);
+                        toggleElAttrs('popSelectCombobox', ['aria-expanded']);
+                    ">
+                    <span class="fd-select__text-content">Notebook Basic Model A2</span>
+                    
+                    <span 
+                        role="button"
+                        tabindex="-1"
+                        aria-label="Selection options"
+                        title="Selection options"
+                        class="fd-button fd-button--transparent fd-select__button">
+                        <i class="sap-icon--slim-arrow-down" role="presentation" aria-hidden="true"></i>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div
+            aria-hidden="false"
+            class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--dropdown  fd-popover__body--dropdown-fill"
+            id="popSelectPopoverBody">
+            <ul
+                id="popList"
+                role="listbox"
+                aria-roledescription="Contains all available items"
+                aria-labelledby="popSelectLabel"
+                class="fd-list fd-list--dropdown"
+                >
+                <li
+                    id="popListItem1"
+                    role="option"
+                    tabindex="0"
+                    aria-selected="false"
+                    aria-setsize="5"
+                    aria-posinset="1"
+                    class="fd-list__item">
+                    <span class="fd-list__title">Notebook Basic Model A1</span>
+                </li>
+                <li
+                    id="popListItem2"
+                    role="option"
+                    tabindex="0"
+                    aria-selected="true"
+                    aria-setsize="5"
+                    aria-posinset="2"
+                    class="fd-list__item">
+                    <span class="fd-list__title">Notebook Basic Model A2</span>
+                </li>
+                <li
+                    id="popListItem3"
+                    role="option"
+                    tabindex="0"
+                    aria-selected="false"
+                    aria-setsize="5"
+                    aria-posinset="3"
+                    class="fd-list__item">
+                    <span class="fd-list__title">Notebook Basic Model A3</span>
+                </li>
+                <li
+                    id="popListItem4"
+                    role="option"
+                    tabindex="0"
+                    aria-selected="false"
+                    aria-setsize="5"
+                    aria-posinset="4"
+                    class="fd-list__item">
+                    <span class="fd-list__title">Notebook Basic Model A4</span>
+                </li>
+                <li
+                    id="popListItem5"
+                    role="option"
+                    tabindex="0"
+                    aria-selected="false"
+                    aria-setsize="5"
+                    aria-posinset="5"
+                    class="fd-list__item">
+                    <span class="fd-list__title">Notebook Basic Model A5</span>
+                </li>
+            </ul>
         </div>
     </div>
-    <div
-        class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--dropdown fd-popover__body--dropdown-fill"
-        aria-hidden="false"
-        id="h0GTKE325">
-        <ul
-            aria-activedescendant="matchSelectPopoverBodySizeSelectCombobox-currentlyFocusedItem"
-            aria-labelledby="matchSelectPopoverBodySizeLabel"
-            class="fd-list fd-list--dropdown"
-            role="listbox">
-            <li
-                id="matchSelectPopoverBodySizeSelectCombobox-currentlyFocusedItem"
-                class="fd-list__item is-selected" aria-selected="true" role="option" tabindex="0">
-                <span class="fd-list__title">List item 1</span>
-                <span class="fd-list__secondary">A1</span>
-            </li>
-            <li class="fd-list__item" role="option" tabindex="-1">
-                <span class="fd-list__title">List item 2</span>
-                <span class="fd-list__secondary">A2</span>
-            </li>
-            <li class="fd-list__item" role="option" tabindex="-1">
-                <span class="fd-list__title">List item 3</span>
-                <span class="fd-list__secondary">A3</span>
-            </li>
-            <li class="fd-list__item" role="option" tabindex="-1">
-                <span class="fd-list__title">List item 4</span>
-                <span class="fd-list__secondary">A4</span>
-            </li>
-        </ul>
-    </div>
-    </div>
-</div>
+  </div>
+  

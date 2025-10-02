@@ -47,6 +47,11 @@ body.fd-overlay-active::before {
       cursor: auto;
     }
 
+    &:has(.#{$fd-namespace}-select__control.is-disabled) {
+      pointer-events: none;
+      cursor: not-allowed;
+    }
+
     @include fd-expanded() {
       > * {
         margin-block-end: 0;

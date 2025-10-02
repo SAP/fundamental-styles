@@ -8,18 +8,26 @@
                 <div class="fd-popover">
                     <div class="fd-popover__control">
                         <div class="fd-select">
-                            <button
-                                aria-labelledby="successLabel"
-                                class="fd-select__control is-success"
-                                tabindex="0"
+                            <div
+                                role="combobox"
+                                aria-roledescription="Contains item list for selection"
+                                aria-haspopup="listbox"
                                 aria-expanded="false"
-                                aria-selected="false"
-                                aria-haspopup="listbox">
-                                <span class="fd-select__text-content">Required Selection</span>
-                                <span class="fd-button fd-button--transparent fd-select__button">
-                                    <i class="sap-icon--slim-arrow-down"></i>
+                                aria-labelledby="successLabel"
+                                class="fd-select__control is-success is-placeholder"
+                                value="Select an option"
+                                tabindex="0">
+                                <span class="fd-select__text-content">Select an option</span>
+                                
+                                <span 
+                                    role="button"
+                                    tabindex="-1"
+                                    aria-label="Selection options"
+                                    title="Selection options"
+                                    class="fd-button fd-button--transparent fd-select__button">
+                                    <i class="sap-icon--slim-arrow-down" role="presentation" aria-hidden="true"></i>
                                 </span>
-                            </button>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -31,19 +39,28 @@
                 <div class="fd-popover">
                     <div class="fd-popover__control">
                         <div class="fd-select">
-                            <button
-                                aria-labelledby="errorLabel"
-                                class="fd-select__control is-error"
-                                tabindex="0"
+                            <div
+                                role="combobox"
+                                aria-roledescription="Contains item list for selection"
+                                aria-haspopup="listbox"
                                 aria-expanded="false"
-                                aria-selected="false"
-                                aria-haspopup="listbox">
-                                <span class="fd-select__text-content">Required Selection</span>
-                                <span class="fd-button fd-button--transparent fd-select__button">
-                                    <i class="sap-icon--slim-arrow-down"></i>
+                                aria-labelledby="errorLabel"
+                                class="fd-select__control is-error is-placeholder"
+                                value="Select an option"
+                                tabindex="0">
+                                <span class="fd-select__text-content">Select an option</span>
+                                
+                                <span 
+                                    role="button"
+                                    tabindex="-1"
+                                    aria-label="Selection options"
+                                    title="Selection options"
+                                    class="fd-button fd-button--transparent fd-select__button">
+                                    <i class="sap-icon--slim-arrow-down" role="presentation" aria-hidden="true"></i>
                                 </span>
-                            </button>
+                            </div>
                         </div>
+                        
                     </div>
                 </div>
             </div>
@@ -54,19 +71,28 @@
                 <div class="fd-popover">
                     <div class="fd-popover__control">
                         <div class="fd-select">
-                            <button
-                                aria-labelledby="warningLabel"
-                                class="fd-select__control is-warning"
-                                tabindex="0"
+                            <div
+                                role="combobox"
+                                aria-roledescription="Contains item list for selection"
+                                aria-haspopup="listbox"
                                 aria-expanded="false"
-                                aria-selected="false"
-                                aria-haspopup="listbox">
-                                <span class="fd-select__text-content">Required Selection</span>
-                                <span class="fd-button fd-button--transparent fd-select__button">
-                                    <i class="sap-icon--slim-arrow-down"></i>
+                                aria-labelledby="warningLabel"
+                                class="fd-select__control is-warning is-placeholder"
+                                value="Select an option"
+                                tabindex="0">
+                                <span class="fd-select__text-content">Select an option</span>
+                                
+                                <span 
+                                    role="button"
+                                    tabindex="-1"
+                                    aria-label="Selection options"
+                                    title="Selection options"
+                                    class="fd-button fd-button--transparent fd-select__button">
+                                    <i class="sap-icon--slim-arrow-down" role="presentation" aria-hidden="true"></i>
                                 </span>
-                            </button>
+                            </div>
                         </div>
+                       
                     </div>
                 </div>
             </div>
@@ -77,18 +103,26 @@
                 <div class="fd-popover">
                     <div class="fd-popover__control">
                         <div class="fd-select">
-                            <button
-                                aria-labelledby="infoLabel"
-                                class="fd-select__control is-information"
-                                tabindex="0"
+                            <div
+                                role="combobox"
+                                aria-roledescription="Contains item list for selection"
+                                aria-haspopup="listbox"
                                 aria-expanded="false"
-                                aria-selected="false"
-                                aria-haspopup="listbox">
-                                <span class="fd-select__text-content">Required Selection</span>
-                                <span class="fd-button fd-button--transparent fd-select__button">
-                                    <i class="sap-icon--slim-arrow-down"></i>
+                                aria-labelledby="infoLabel"
+                                class="fd-select__control is-information is-placeholder"
+                                value="Select an option"
+                                tabindex="0">
+                                <span class="fd-select__text-content">Select an option</span>
+                                
+                                <span 
+                                    role="button"
+                                    tabindex="-1"
+                                    aria-label="Selection options"
+                                    title="Selection options"
+                                    class="fd-button fd-button--transparent fd-select__button">
+                                    <i class="sap-icon--slim-arrow-down" role="presentation" aria-hidden="true"></i>
                                 </span>
-                            </button>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -102,92 +136,126 @@
         <div class="fd-row">
             <div class="fd-col fd-col--3">
                 <label class="fd-form-label" id="successLabelH">
-                    Succes, Input Hover State, Placeholder
+                    Succes, Hover State, Placeholder
                 </label><br>
                 <div class="fd-popover">
                     <div class="fd-popover__control">
                         <div class="fd-select">
-                            <button
-                                aria-labelledby="successLabelH"
-                                class="fd-select__control is-success is-hover"
-                                tabindex="0"
+                            <div
+                                role="combobox"
+                                aria-roledescription="Contains item list for selection"
+                                aria-haspopup="listbox"
                                 aria-expanded="false"
-                                aria-selected="false"
-                                aria-haspopup="listbox">
-                                <span class="fd-select__text-content">Required Selection</span>
-                                <span class="fd-button fd-button--transparent fd-select__button">
-                                    <i class="sap-icon--slim-arrow-down"></i>
+                                aria-labelledby="successLabelH"
+                                class="fd-select__control is-success is-hover is-placeholder"
+                                value="Select an option"
+                                tabindex="0">
+                                <span class="fd-select__text-content">Select an option</span>
+                                
+                                <span 
+                                    role="button"
+                                    tabindex="-1"
+                                    aria-label="Selection options"
+                                    title="Selection options"
+                                    class="fd-button fd-button--transparent fd-select__button">
+                                    <i class="sap-icon--slim-arrow-down" role="presentation" aria-hidden="true"></i>
                                 </span>
-                            </button>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="fd-col fd-col--3">
                 <label class="fd-form-label" id="errorLabelH">
-                    Error, Input Hover State, Placeholder
+                    Error, Hover State, Placeholder
                 </label><br>
                 <div class="fd-popover">
                     <div class="fd-popover__control">
                         <div class="fd-select">
-                            <button
-                                aria-labelledby="errorLabelH"
-                                class="fd-select__control is-error is-hover"
-                                tabindex="0"
+                            <div
+                                role="combobox"
+                                aria-roledescription="Contains item list for selection"
+                                aria-haspopup="listbox"
                                 aria-expanded="false"
-                                aria-selected="false"
-                                aria-haspopup="listbox">
-                                <span class="fd-select__text-content">Required Selection</span>
-                                <span class="fd-button fd-button--transparent fd-select__button">
-                                    <i class="sap-icon--slim-arrow-down"></i>
+                                aria-labelledby="errorLabelH"
+                                class="fd-select__control is-error is-hover is-placeholder"
+                                value="Select an option"
+                                tabindex="0">
+                                <span class="fd-select__text-content">Select an option</span>
+                                
+                                <span 
+                                    role="button"
+                                    tabindex="-1"
+                                    aria-label="Selection options"
+                                    title="Selection options"
+                                    class="fd-button fd-button--transparent fd-select__button">
+                                    <i class="sap-icon--slim-arrow-down" role="presentation" aria-hidden="true"></i>
                                 </span>
-                            </button>
+                            </div>
                         </div>
+                        
                     </div>
                 </div>
             </div>
             <div class="fd-col fd-col--3">
                 <label class="fd-form-label" id="warningLabelH">
-                    Warning, Input Hover State, Placeholder
+                    Warning, Hover State, Placeholder
                 </label><br>
                 <div class="fd-popover">
                     <div class="fd-popover__control">
                         <div class="fd-select">
-                            <button
-                                aria-labelledby="warningLabelH"
-                                class="fd-select__control is-warning is-hover"
-                                tabindex="0"
+                            <div
+                                role="combobox"
+                                aria-roledescription="Contains item list for selection"
+                                aria-haspopup="listbox"
                                 aria-expanded="false"
-                                aria-selected="false"
-                                aria-haspopup="listbox">
-                                <span class="fd-select__text-content">Required Selection</span>
-                                <span class="fd-button fd-button--transparent fd-select__button">
-                                    <i class="sap-icon--slim-arrow-down"></i>
+                                aria-labelledby="warningLabelH"
+                                class="fd-select__control is-warning is-hover is-placeholder"
+                                value="Select an option"
+                                tabindex="0">
+                                <span class="fd-select__text-content">Select an option</span>
+                                
+                                <span 
+                                    role="button"
+                                    tabindex="-1"
+                                    aria-label="Selection options"
+                                    title="Selection options"
+                                    class="fd-button fd-button--transparent fd-select__button">
+                                    <i class="sap-icon--slim-arrow-down" role="presentation" aria-hidden="true"></i>
                                 </span>
-                            </button>
+                            </div>
                         </div>
+                       
                     </div>
                 </div>
             </div>
             <div class="fd-col fd-col--3">
                 <label class="fd-form-label" id="infoLabelH">
-                    Information, Input Hover State, Placeholder
+                    Information, Hover State, Placeholder
                 </label><br>
                 <div class="fd-popover">
                     <div class="fd-popover__control">
                         <div class="fd-select">
-                            <button
-                                aria-labelledby="infoLabelH"
-                                class="fd-select__control is-information is-hover"
-                                tabindex="0"
+                            <div
+                                role="combobox"
+                                aria-roledescription="Contains item list for selection"
+                                aria-haspopup="listbox"
                                 aria-expanded="false"
-                                aria-selected="false"
-                                aria-haspopup="listbox">
-                                <span class="fd-select__text-content">Required Selection</span>
-                                <span class="fd-button fd-button--transparent fd-select__button">
-                                    <i class="sap-icon--slim-arrow-down"></i>
+                                aria-labelledby="infoLabelH"
+                                class="fd-select__control is-information is-hover is-placeholder"
+                                value="Select an option"
+                                tabindex="0">
+                                <span class="fd-select__text-content">Select an option</span>
+                                
+                                <span 
+                                    role="button"
+                                    tabindex="-1"
+                                    aria-label="Selection options"
+                                    title="Selection options"
+                                    class="fd-button fd-button--transparent fd-select__button">
+                                    <i class="sap-icon--slim-arrow-down" role="presentation" aria-hidden="true"></i>
                                 </span>
-                            </button>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -200,93 +268,127 @@
     <div class="fd-container">
         <div class="fd-row">
             <div class="fd-col fd-col--3">
-                <label class="fd-form-label" id="successLabelBH">
+                <label class="fd-form-label" id="successLabelHB">
                     Succes, Button Hover State, Placeholder
                 </label><br>
                 <div class="fd-popover">
                     <div class="fd-popover__control">
                         <div class="fd-select">
-                            <button
-                                aria-labelledby="successLabelBH"
-                                class="fd-select__control is-success is-hover"
-                                tabindex="0"
+                            <div
+                                role="combobox"
+                                aria-roledescription="Contains item list for selection"
+                                aria-haspopup="listbox"
                                 aria-expanded="false"
-                                aria-selected="false"
-                                aria-haspopup="listbox">
-                                <span class="fd-select__text-content">Required Selection</span>
-                                <span class="fd-button fd-button--transparent fd-select__button is-hover">
-                                    <i class="sap-icon--slim-arrow-down"></i>
+                                aria-labelledby="successLabelHB"
+                                class="fd-select__control is-success is-hover is-placeholder"
+                                value="Select an option"
+                                tabindex="0">
+                                <span class="fd-select__text-content">Select an option</span>
+                                
+                                <span 
+                                    role="button"
+                                    tabindex="-1"
+                                    aria-label="Selection options"
+                                    title="Selection options"
+                                    class="fd-button fd-button--transparent fd-select__button is-hover">
+                                    <i class="sap-icon--slim-arrow-down" role="presentation" aria-hidden="true"></i>
                                 </span>
-                            </button>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="fd-col fd-col--3">
-                <label class="fd-form-label" id="errorLabelBH">
+                <label class="fd-form-label" id="errorLabelHB">
                     Error, Button Hover State, Placeholder
                 </label><br>
                 <div class="fd-popover">
                     <div class="fd-popover__control">
                         <div class="fd-select">
-                            <button
-                                aria-labelledby="errorLabelBH"
-                                class="fd-select__control is-error is-hover"
-                                tabindex="0"
+                            <div
+                                role="combobox"
+                                aria-roledescription="Contains item list for selection"
+                                aria-haspopup="listbox"
                                 aria-expanded="false"
-                                aria-selected="false"
-                                aria-haspopup="listbox">
-                                <span class="fd-select__text-content">Required Selection</span>
-                                <span class="fd-button fd-button--transparent fd-select__button is-hover">
-                                    <i class="sap-icon--slim-arrow-down"></i>
+                                aria-labelledby="errorLabelHB"
+                                class="fd-select__control is-error is-hover is-placeholder"
+                                value="Select an option"
+                                tabindex="0">
+                                <span class="fd-select__text-content">Select an option</span>
+                                
+                                <span 
+                                    role="button"
+                                    tabindex="-1"
+                                    aria-label="Selection options"
+                                    title="Selection options"
+                                    class="fd-button fd-button--transparent fd-select__button is-hover">
+                                    <i class="sap-icon--slim-arrow-down" role="presentation" aria-hidden="true"></i>
                                 </span>
-                            </button>
+                            </div>
                         </div>
+                        
                     </div>
                 </div>
             </div>
             <div class="fd-col fd-col--3">
-                <label class="fd-form-label" id="warningLabelBH">
+                <label class="fd-form-label" id="warningLabelHB">
                     Warning, Button Hover State, Placeholder
                 </label><br>
                 <div class="fd-popover">
                     <div class="fd-popover__control">
                         <div class="fd-select">
-                            <button
-                                aria-labelledby="warningLabelBH"
-                                class="fd-select__control is-warning is-hover"
-                                tabindex="0"
+                            <div
+                                role="combobox"
+                                aria-roledescription="Contains item list for selection"
+                                aria-haspopup="listbox"
                                 aria-expanded="false"
-                                aria-selected="false"
-                                aria-haspopup="listbox">
-                                <span class="fd-select__text-content">Required Selection</span>
-                                <span class="fd-button fd-button--transparent fd-select__button is-hover">
-                                    <i class="sap-icon--slim-arrow-down"></i>
+                                aria-labelledby="warningLabelHB"
+                                class="fd-select__control is-warning is-hover is-placeholder"
+                                value="Select an option"
+                                tabindex="0">
+                                <span class="fd-select__text-content">Select an option</span>
+                                
+                                <span 
+                                    role="button"
+                                    tabindex="-1"
+                                    aria-label="Selection options"
+                                    title="Selection options"
+                                    class="fd-button fd-button--transparent fd-select__button is-hover">
+                                    <i class="sap-icon--slim-arrow-down" role="presentation" aria-hidden="true"></i>
                                 </span>
-                            </button>
+                            </div>
                         </div>
+                       
                     </div>
                 </div>
             </div>
             <div class="fd-col fd-col--3">
-                <label class="fd-form-label" id="infoLabelBH">
+                <label class="fd-form-label" id="infoLabelHB">
                     Information, Button Hover State, Placeholder
                 </label><br>
                 <div class="fd-popover">
                     <div class="fd-popover__control">
                         <div class="fd-select">
-                            <button
-                                aria-labelledby="infoLabelBH"
-                                class="fd-select__control is-information is-hover"
-                                tabindex="0"
+                            <div
+                                role="combobox"
+                                aria-roledescription="Contains item list for selection"
+                                aria-haspopup="listbox"
                                 aria-expanded="false"
-                                aria-selected="false"
-                                aria-haspopup="listbox">
-                                <span class="fd-select__text-content">Required Selection</span>
-                                <span class="fd-button fd-button--transparent fd-select__button is-hover">
-                                    <i class="sap-icon--slim-arrow-down"></i>
+                                aria-labelledby="infoLabelHB"
+                                class="fd-select__control is-information is-hover is-placeholder"
+                                value="Select an option"
+                                tabindex="0">
+                                <span class="fd-select__text-content">Select an option</span>
+                                
+                                <span 
+                                    role="button"
+                                    tabindex="-1"
+                                    aria-label="Selection options"
+                                    title="Selection options"
+                                    class="fd-button fd-button--transparent fd-select__button is-hover">
+                                    <i class="sap-icon--slim-arrow-down" role="presentation" aria-hidden="true"></i>
                                 </span>
-                            </button>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -305,18 +407,26 @@
                 <div class="fd-popover">
                     <div class="fd-popover__control">
                         <div class="fd-select">
-                            <button
-                                aria-labelledby="successLabelF"
-                                class="fd-select__control is-success is-focus"
-                                tabindex="0"
+                            <div
+                                role="combobox"
+                                aria-roledescription="Contains item list for selection"
+                                aria-haspopup="listbox"
                                 aria-expanded="false"
-                                aria-selected="false"
-                                aria-haspopup="listbox">
-                                <span class="fd-select__text-content">Required Selection</span>
-                                <span class="fd-button fd-button--transparent fd-select__button">
-                                    <i class="sap-icon--slim-arrow-down"></i>
+                                aria-labelledby="successLabelF"
+                                class="fd-select__control is-success is-focus is-placeholder"
+                                value="Select an option"
+                                tabindex="0">
+                                <span class="fd-select__text-content">Select an option</span>
+                                
+                                <span 
+                                    role="button"
+                                    tabindex="-1"
+                                    aria-label="Selection options"
+                                    title="Selection options"
+                                    class="fd-button fd-button--transparent fd-select__button">
+                                    <i class="sap-icon--slim-arrow-down" role="presentation" aria-hidden="true"></i>
                                 </span>
-                            </button>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -328,19 +438,28 @@
                 <div class="fd-popover">
                     <div class="fd-popover__control">
                         <div class="fd-select">
-                            <button
-                                aria-labelledby="errorLabelF"
-                                class="fd-select__control is-error is-focus"
-                                tabindex="0"
+                            <div
+                                role="combobox"
+                                aria-roledescription="Contains item list for selection"
+                                aria-haspopup="listbox"
                                 aria-expanded="false"
-                                aria-selected="false"
-                                aria-haspopup="listbox">
-                                <span class="fd-select__text-content">Required Selection</span>
-                                <span class="fd-button fd-button--transparent fd-select__button">
-                                    <i class="sap-icon--slim-arrow-down"></i>
+                                aria-labelledby="errorLabelF"
+                                class="fd-select__control is-error is-focus is-placeholder"
+                                value="Select an option"
+                                tabindex="0">
+                                <span class="fd-select__text-content">Select an option</span>
+                                
+                                <span 
+                                    role="button"
+                                    tabindex="-1"
+                                    aria-label="Selection options"
+                                    title="Selection options"
+                                    class="fd-button fd-button--transparent fd-select__button">
+                                    <i class="sap-icon--slim-arrow-down" role="presentation" aria-hidden="true"></i>
                                 </span>
-                            </button>
+                            </div>
                         </div>
+                        
                     </div>
                 </div>
             </div>
@@ -351,19 +470,28 @@
                 <div class="fd-popover">
                     <div class="fd-popover__control">
                         <div class="fd-select">
-                            <button
-                                aria-labelledby="warningLabelF"
-                                class="fd-select__control is-warning is-focus"
-                                tabindex="0"
+                            <div
+                                role="combobox"
+                                aria-roledescription="Contains item list for selection"
+                                aria-haspopup="listbox"
                                 aria-expanded="false"
-                                aria-selected="false"
-                                aria-haspopup="listbox">
-                                <span class="fd-select__text-content">Required Selection</span>
-                                <span class="fd-button fd-button--transparent fd-select__button">
-                                    <i class="sap-icon--slim-arrow-down"></i>
+                                aria-labelledby="warningLabelF"
+                                class="fd-select__control is-warning is-focus is-placeholder"
+                                value="Select an option"
+                                tabindex="0">
+                                <span class="fd-select__text-content">Select an option</span>
+                                
+                                <span 
+                                    role="button"
+                                    tabindex="-1"
+                                    aria-label="Selection options"
+                                    title="Selection options"
+                                    class="fd-button fd-button--transparent fd-select__button">
+                                    <i class="sap-icon--slim-arrow-down" role="presentation" aria-hidden="true"></i>
                                 </span>
-                            </button>
+                            </div>
                         </div>
+                       
                     </div>
                 </div>
             </div>
@@ -374,18 +502,26 @@
                 <div class="fd-popover">
                     <div class="fd-popover__control">
                         <div class="fd-select">
-                            <button
-                                aria-labelledby="infoLabelF"
-                                class="fd-select__control is-information is-focus"
-                                tabindex="0"
+                            <div
+                                role="combobox"
+                                aria-roledescription="Contains item list for selection"
+                                aria-haspopup="listbox"
                                 aria-expanded="false"
-                                aria-selected="false"
-                                aria-haspopup="listbox">
-                                <span class="fd-select__text-content">Required Selection</span>
-                                <span class="fd-button fd-button--transparent fd-select__button">
-                                    <i class="sap-icon--slim-arrow-down"></i>
+                                aria-labelledby="infoLabelF"
+                                class="fd-select__control is-information is-focus is-placeholder"
+                                value="Select an option"
+                                tabindex="0">
+                                <span class="fd-select__text-content">Select an option</span>
+                                
+                                <span 
+                                    role="button"
+                                    tabindex="-1"
+                                    aria-label="Selection options"
+                                    title="Selection options"
+                                    class="fd-button fd-button--transparent fd-select__button">
+                                    <i class="sap-icon--slim-arrow-down" role="presentation" aria-hidden="true"></i>
                                 </span>
-                            </button>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -394,367 +530,429 @@
     </div>
 </div>
 
-<div style="height: 150px">
+<div style="height: 350px">
     <div class="fd-container">
         <div class="fd-row">
             <div class="fd-col fd-col--3">
-                <label class="fd-form-label" id="successLabelA">
-                    Succes, Expanded State, Placeholder
-                </label><br>
-                <div class="fd-popover">
-                    <div class="fd-popover__control">
-                        <div class="fd-select">
-                            <button
-                                aria-labelledby="successLabelA"
-                                class="fd-select__control is-success"
-                                tabindex="0"
-                                aria-expanded="true"
-                                aria-selected="false"
-                                aria-haspopup="listbox">
-                                <span class="fd-select__text-content">Required Selection</span>
-                                <span class="fd-button fd-button--transparent fd-select__button">
-                                    <i class="sap-icon--slim-arrow-down"></i>
-                                </span>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="fd-col fd-col--3">
-                <label class="fd-form-label" id="errorLabelA">
-                    Error, Expanded State, Placeholder
-                </label><br>
-                <div class="fd-popover">
-                    <div class="fd-popover__control">
-                        <div class="fd-select">
-                            <button
-                                aria-labelledby="errorLabelA"
-                                class="fd-select__control is-error"
-                                tabindex="0"
-                                aria-expanded="true"
-                                aria-selected="false"
-                                aria-haspopup="listbox">
-                                <span class="fd-select__text-content">Required Selection</span>
-                                <span class="fd-button fd-button--transparent fd-select__button">
-                                    <i class="sap-icon--slim-arrow-down"></i>
-                                </span>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="fd-col fd-col--3">
-                <label class="fd-form-label" id="warningLabelA">
-                    Warning, Expanded State, Placeholder
-                </label><br>
-                <div class="fd-popover">
-                    <div class="fd-popover__control">
-                        <div class="fd-select">
-                            <button
-                                aria-labelledby="warningLabelA"
-                                class="fd-select__control is-warning"
-                                tabindex="0"
-                                aria-expanded="true"
-                                aria-selected="false"
-                                aria-haspopup="listbox">
-                                <span class="fd-select__text-content">Required Selection</span>
-                                <span class="fd-button fd-button--transparent fd-select__button">
-                                    <i class="sap-icon--slim-arrow-down"></i>
-                                </span>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="fd-col fd-col--3">
-                <label class="fd-form-label" id="infoLabelA">
-                    Information, Expanded State, Placeholder
-                </label><br>
-                <div class="fd-popover">
-                    <div class="fd-popover__control">
-                        <div class="fd-select">
-                            <button
-                                aria-labelledby="infoLabelA"
-                                class="fd-select__control is-information"
-                                tabindex="0"
-                                aria-expanded="true"
-                                aria-selected="false"
-                                aria-haspopup="listbox">
-                                <span class="fd-select__text-content">Required Selection</span>
-                                <span class="fd-button fd-button--transparent fd-select__button">
-                                    <i class="sap-icon--slim-arrow-down"></i>
-                                </span>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div style="height: 250px">
-    <div class="fd-container">
-        <div class="fd-row">
-            <div class="fd-col fd-col--3">
-                <label class="fd-form-label" id="a4546C40">
-                    Choose an option
+                <label class="fd-form-label" id="successLabelDropdown">
+                    Select an option
                 </label><br>
                 <div class="fd-popover">
                     <div class="fd-popover__control" aria-expanded="true" aria-haspopup="true">
                         <div class="fd-select">
-                            <button
-                                aria-labelledby="a4546C40 a4546C40Value"
+                            <div
+                                role="combobox"
+                                aria-roledescription="Contains item list for selection"
+                                aria-haspopup="listbox"
+                                aria-expanded="true"
+                                aria-controls="successList"
+                                aria-activedescendant="successListItem2"
+                                aria-labelledby="successLabelDropdown"
                                 class="fd-select__control is-success"
                                 tabindex="0"
-                                id="semanticStatesSuccessSelectCombobox"
+                                id="successSelectCombobox"
                                 onclick="
-                                    toggleElAttrs('h07jjhYH', ['aria-hidden']);
-                                    toggleElAttrs('semanticStatesSuccessSelectCombobox', ['aria-expanded']);
+                                    toggleElAttrs('successPopoverDropdown', ['aria-hidden']);
+                                    toggleElAttrs('successSelectCombobox', ['aria-expanded']);
                                     toggleElAttrs('successFormMessage', ['aria-hidden']);
-                                "
-                                aria-expanded="true"
-                                aria-selected="false"
-                                aria-haspopup="listbox">
-                                <span id="a4546C40Value" class="fd-select__text-content">Success</span>
-                                <span class="fd-button fd-button--transparent fd-select__button">
-                                    <i class="sap-icon--slim-arrow-down"></i>
+                                ">
+                                <span class="fd-select__text-content">Notebook Basic 2</span>
+                                <span 
+                                    role="button"
+                                    tabindex="-1"
+                                    aria-label="Selection options"
+                                    title="Selection options"
+                                    class="fd-button fd-button--transparent fd-select__button">
+                                    <i class="sap-icon--slim-arrow-down" role="presentation" aria-hidden="true"></i>
                                 </span>
-                            </button>
+                            </div>
                         </div>
                     </div>
                     <div
                         class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--dropdown"
                         aria-hidden="false"
-                        id="h07jjhYH">
-                        <div aria-live="assertive" class="fd-list__message fd-list__message--success" role="alert">Success message</div>
+                        id="successPopoverDropdown">
+                        <div class="fd-list__message fd-list__message--success" id="successNote">success message</div>
                         <ul
-                            aria-activedescendant="semanticStatesSuccessSelectCombobox-currentlyFocusedItem"
-                            aria-labelledby="a4546C40"
+                            id="successList"
+                            role="listbox"
+                            aria-roledescription="Contains all available items"
+                            aria-labelledby="successLabelDropdown successNote"
                             class="fd-list fd-list--has-message fd-list--dropdown"
-                            role="listbox">
+                            >
                             <li
-                                id="semanticStatesSuccessSelectCombobox-currentlyFocusedItem"
-                                class="fd-list__item is-selected" aria-selected="true" role="option" tabindex="0">
-                                <span class="fd-list__title">
-                                    List Item 1
-                                </span>
-                                <span class="fd-list__secondary">A1</span>
+                                id="successListItem1"
+                                role="option"
+                                tabindex="0"
+                                aria-selected="false"
+                                aria-setsize="5"
+                                aria-posinset="1"
+                                class="fd-list__item">
+                                <span class="fd-list__title">Notebook Basic 1</span>
                             </li>
-                            <li class="fd-list__item" role="option" tabindex="-1">
-                                <span class="fd-list__title">List item 2</span>
-                                <span class="fd-list__secondary">A2</span>
+                            <li
+                                id="successListItem2"
+                                role="option"
+                                tabindex="0"
+                                aria-selected="true"
+                                aria-setsize="5"
+                                aria-posinset="2"
+                                class="fd-list__item">
+                                <span class="fd-list__title">Notebook Basic 2</span>
                             </li>
-                            <li class="fd-list__item" role="option" tabindex="-1">
-                                <span class="fd-list__title">List item 3</span>
-                                <span class="fd-list__secondary">A3</span>
+                            <li
+                                id="successListItem3"
+                                role="option"
+                                tabindex="0"
+                                aria-selected="false"
+                                aria-setsize="5"
+                                aria-posinset="3"
+                                class="fd-list__item">
+                                <span class="fd-list__title">Notebook Basic 3</span>
                             </li>
-                            <li class="fd-list__item" role="option" tabindex="-1">
-                                <span class="fd-list__title">List item 4</span>
-                                <span class="fd-list__secondary">A4</span>
+                            <li
+                                id="successListItem4"
+                                role="option"
+                                tabindex="0"
+                                aria-selected="false"
+                                aria-setsize="5"
+                                aria-posinset="4"
+                                class="fd-list__item">
+                                <span class="fd-list__title">Notebook Basic 4</span>
+                            </li>
+                            <li
+                                id="successListItem5"
+                                role="option"
+                                tabindex="0"
+                                aria-selected="false"
+                                aria-setsize="5"
+                                aria-posinset="5"
+                                class="fd-list__item">
+                                <span class="fd-list__title">Notebook Basic 5</span>
                             </li>
                         </ul>
                     </div>
                     <div id="successFormMessage" class="fd-popover__body fd-popover__body--input-message-group fd-popover__body--no-arrow" aria-hidden="true">
-                        <span class="fd-form-message fd-form-message--success">Success message</span>
+                        <span class="fd-form-message fd-form-message--success">success message</span>
                     </div>
                 </div>
             </div>
+
             <div class="fd-col fd-col--3">
-                <label class="fd-form-label" id="b4546C40">
-                    Choose an option
-                </label>
-                <br>
+                <label class="fd-form-label" id="errorLabelDropdown">
+                    Select an option
+                </label><br>
                 <div class="fd-popover">
                     <div class="fd-popover__control" aria-expanded="true" aria-haspopup="true">
                         <div class="fd-select">
-                            <button
-                                aria-labelledby="b4546C40 b4546C40Value"
+                            <div
+                                role="combobox"
+                                aria-roledescription="Contains item list for selection"
+                                aria-haspopup="listbox"
+                                aria-expanded="true"
+                                aria-controls="errorList"
+                                aria-activedescendant="errorListItem2"
+                                aria-labelledby="errorLabelDropdown"
                                 class="fd-select__control is-error"
                                 tabindex="0"
-                                id="semanticStatesErrorSelectCombobox"
+                                id="errorSelectCombobox"
                                 onclick="
-                                    toggleElAttrs('semanticStatesErrorSelectCombobox', ['aria-expanded']);
-                                    toggleElAttrs('h07j9978H', ['aria-hidden']);
+                                    toggleElAttrs('errorPopoverDropdown', ['aria-hidden']);
+                                    toggleElAttrs('errorSelectCombobox', ['aria-expanded']);
                                     toggleElAttrs('errorFormMessage', ['aria-hidden']);
-                                "
-                                aria-expanded="false"
-                                aria-selected="false"
-                                aria-haspopup="listbox">
-                                <span id="b4546C40Value" class="fd-select__text-content">Error</span>
-                                <span class="fd-button fd-button--transparent fd-select__button">
-                                    <i class="sap-icon--slim-arrow-down"></i>
+                                ">
+                                <span class="fd-select__text-content">Notebook Basic 2</span>
+                                <span 
+                                    role="button"
+                                    tabindex="-1"
+                                    aria-label="Selection options"
+                                    title="Selection options"
+                                    class="fd-button fd-button--transparent fd-select__button">
+                                    <i class="sap-icon--slim-arrow-down" role="presentation" aria-hidden="true"></i>
                                 </span>
-                            </button>
-                        </div>
-                    </div>
-                    <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--dropdown"
-                        aria-hidden="true"
-                        id="h07j9978H">
-                        <div aria-live="assertive" class="fd-list__message fd-list__message--error" role="alert">Error message</div>
-                        <ul
-                            aria-activedescendant="semanticStatesErrorSelectCombobox-currentlyFocusedItem"
-                            tabIndex="-1"
-                            aria-labelledby="b4546C40"
-                            class="fd-list fd-list--has-message fd-list--dropdown"
-                            role="listbox">
-                            <li
-                                id="semanticStatesErrorSelectCombobox-currentlyFocusedItem"
-                                class="fd-list__item" role="option" tabindex="-1">
-                                <span class="fd-list__title">
-                                    List Item 1
-                                </span>
-                                <span class="fd-list__secondary">A1</span>
-                            </li>
-                            <li class="fd-list__item" role="option" tabindex="-1">
-                                <span class="fd-list__title">List item 2</span>
-                                <span class="fd-list__secondary">A2</span>
-                            </li>
-                            <li class="fd-list__item" role="option" tabindex="-1">
-                                <span class="fd-list__title">List item 3</span>
-                                <span class="fd-list__secondary">A3</span>
-                            </li>
-                            <li class="fd-list__item" role="option" tabindex="-1">
-                                <span class="fd-list__title">List item 4</span>
-                                <span class="fd-list__secondary">A4</span>
-                            </li>
-                        </ul>
-                    </div>
-                    <div id="errorFormMessage" class="fd-popover__body fd-popover__body--input-message-group fd-popover__body--no-arrow" aria-hidden="false">
-                        <span class="fd-form-message fd-form-message--error">Error message</span>
-                    </div>
-                </div>
-            </div>
-            <div class="fd-col fd-col--3">
-                <label class="fd-form-label" id="b45336C4">
-                    Choose an option
-                </label>
-                <br />
-                <div class="fd-popover">
-                    <div class="fd-popover__control" aria-expanded="true" aria-haspopup="true">
-                        <div class="fd-select">
-                            <button
-                                aria-labelledby="b45336C4 b45336C4Value"
-                                class="fd-select__control is-warning"
-                                tabindex="0"
-                                id="semanticStatesWarningSelectCombobox"
-                                onclick="
-                                    toggleElAttrs('semanticStatesWarningSelectCombobox', ['aria-expanded']);
-                                    toggleElAttrs('h07j998hhH', ['aria-hidden']);
-                                    toggleElAttrs('warningFormMessage', ['aria-hidden']);
-                                "
-                                aria-expanded="true"
-                                aria-selected="false"
-                                aria-haspopup="listbox">
-                                <span is="b45336C4Value" class="fd-select__text-content">Warning</span>
-                                <span class="fd-button fd-button--transparent fd-select__button">
-                                    <i class="sap-icon--slim-arrow-down"></i>
-                                </span>
-                            </button>
+                            </div>
                         </div>
                     </div>
                     <div
                         class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--dropdown"
                         aria-hidden="false"
-                        id="h07j998hhH">
-                        <div aria-live="assertive" class="fd-list__message fd-list__message--warning" role="alert">Warning message</div>
+                        id="errorPopoverDropdown">
+                        <div class="fd-list__message fd-list__message--error" id="errorNote">error message</div>
                         <ul
-                            aria-activedescendant="semanticStatesWarningSelectCombobox-currentlyFocusedItem"
-                            aria-labelledby="b45336C4"
+                            id="errorList"
+                            role="listbox"
+                            aria-roledescription="Contains all available items"
+                            aria-labelledby="errorLabelDropdown errorNote"
                             class="fd-list fd-list--has-message fd-list--dropdown"
-                            role="listbox">
+                            >
                             <li
-                                id="semanticStatesWarningSelectCombobox-currentlyFocusedItem"
-                                class="fd-list__item is-selected" aria-selected="true" role="option" tabindex="0">
-                                <span class="fd-list__title">
-                                    List Item 1
-                                </span>
-                                <span class="fd-list__secondary">A1</span>
+                                id="errorListItem1"
+                                role="option"
+                                tabindex="0"
+                                aria-selected="false"
+                                aria-setsize="5"
+                                aria-posinset="1"
+                                class="fd-list__item">
+                                <span class="fd-list__title">Notebook Basic 1</span>
                             </li>
-                            <li class="fd-list__item" role="option" tabindex="-1">
-                                <span class="fd-list__title">List item 2</span>
-                                <span class="fd-list__secondary">A2</span>
+                            <li
+                                id="errorListItem2"
+                                role="option"
+                                tabindex="0"
+                                aria-selected="true"
+                                aria-setsize="5"
+                                aria-posinset="2"
+                                class="fd-list__item">
+                                <span class="fd-list__title">Notebook Basic 2</span>
                             </li>
-                            <li class="fd-list__item" role="option" tabindex="-1">
-                                <span class="fd-list__title">List item 3</span>
-                                <span class="fd-list__secondary">A3</span>
+                            <li
+                                id="errorListItem3"
+                                role="option"
+                                tabindex="0"
+                                aria-selected="false"
+                                aria-setsize="5"
+                                aria-posinset="3"
+                                class="fd-list__item">
+                                <span class="fd-list__title">Notebook Basic 3</span>
                             </li>
-                            <li class="fd-list__item" role="option" tabindex="-1">
-                                <span class="fd-list__title">List item 4</span>
-                                <span class="fd-list__secondary">A4</span>
+                            <li
+                                id="errorListItem4"
+                                role="option"
+                                tabindex="0"
+                                aria-selected="false"
+                                aria-setsize="5"
+                                aria-posinset="4"
+                                class="fd-list__item">
+                                <span class="fd-list__title">Notebook Basic 4</span>
+                            </li>
+                            <li
+                                id="errorListItem5"
+                                role="option"
+                                tabindex="0"
+                                aria-selected="false"
+                                aria-setsize="5"
+                                aria-posinset="5"
+                                class="fd-list__item">
+                                <span class="fd-list__title">Notebook Basic 5</span>
                             </li>
                         </ul>
                     </div>
-                    <div id="warningFormMessage" class="fd-popover__body fd-popover__body--input-message-group fd-popover__body--no-arrow" aria-hidden="true">
-                        <span class="fd-form-message fd-form-message--warning">Warning message</span>
+                    <div id="errorFormMessage" class="fd-popover__body fd-popover__body--input-message-group fd-popover__body--no-arrow" aria-hidden="true">
+                        <span class="fd-form-message fd-form-message--error">error message</span>
                     </div>
                 </div>
             </div>
+
             <div class="fd-col fd-col--3">
-                <label class="fd-form-label" id="h45336C4">
-                    Choose an option
-                </label>
-                <br />
+                <label class="fd-form-label" id="warningLabelDropdown">
+                    Select an option
+                </label><br>
                 <div class="fd-popover">
                     <div class="fd-popover__control" aria-expanded="true" aria-haspopup="true">
                         <div class="fd-select">
-                            <button
-                                aria-labelledby="h45336C4 h45336C4Value"
-                                class="fd-select__control is-information"
+                            <div
+                                role="combobox"
+                                aria-roledescription="Contains item list for selection"
+                                aria-haspopup="listbox"
+                                aria-expanded="true"
+                                aria-controls="warningList"
+                                aria-activedescendant="warningListItem2"
+                                aria-labelledby="warningLabelDropdown"
+                                class="fd-select__control is-warning"
                                 tabindex="0"
-                                id="semanticStatesInformationSelectCombobox"
+                                id="warningSelectCombobox"
                                 onclick="
-                                    toggleElAttrs('semanticStatesInformationSelectCombobox', ['aria-expanded']);
-                                    toggleElAttrs('hkhh998hhH', ['aria-hidden']);
-                                    toggleElAttrs('informationFormMessage', ['aria-hidden']);
-                                "
-                                aria-expanded="false"
-                                aria-selected="false"
-                                aria-haspopup="listbox">
-                                <span id="h45336C4Value" class="fd-select__text-content">Information</span>
-                                    <span class="fd-button fd-button--transparent fd-select__button">
-                                        <i class="sap-icon--slim-arrow-down"></i>
-                                    </span>
-                            </button>
+                                    toggleElAttrs('warningPopoverDropdown', ['aria-hidden']);
+                                    toggleElAttrs('warningSelectCombobox', ['aria-expanded']);
+                                    toggleElAttrs('warningFormMessage', ['aria-hidden']);
+                                ">
+                                <span class="fd-select__text-content">Notebook Basic 2</span>
+                                <span 
+                                    role="button"
+                                    tabindex="-1"
+                                    aria-label="Selection options"
+                                    title="Selection options"
+                                    class="fd-button fd-button--transparent fd-select__button">
+                                    <i class="sap-icon--slim-arrow-down" role="presentation" aria-hidden="true"></i>
+                                </span>
+                            </div>
                         </div>
                     </div>
                     <div
                         class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--dropdown"
-                        aria-hidden="true"
-                        id="hkhh998hhH">
-                        <div aria-live="assertive" class="fd-list__message fd-list__message--information" role="alert">Information message</div>
+                        aria-hidden="false"
+                        id="warningPopoverDropdown">
+                        <div class="fd-list__message fd-list__message--warning" id="warningNote">warning message</div>
                         <ul
-                            aria-activedescendant="semanticStatesInformationSelectCombobox-currentlyFocusedItem"
-                            aria-labelledby="h45336C4"
+                            id="warningList"
+                            role="listbox"
+                            aria-roledescription="Contains all available items"
+                            aria-labelledby="warningLabelDropdown warningNote"
                             class="fd-list fd-list--has-message fd-list--dropdown"
-                            role="listbox">
+                            >
                             <li
-                                id="semanticStatesInformationSelectCombobox-currentlyFocusedItem"
-                                class="fd-list__item" role="option" tabindex="-1">
-                                <span class="fd-list__title">
-                                    List Item 1
-                                </span>
-                                <span class="fd-list__secondary">A1</span>
+                                id="warningListItem1"
+                                role="option"
+                                tabindex="0"
+                                aria-selected="false"
+                                aria-setsize="5"
+                                aria-posinset="1"
+                                class="fd-list__item">
+                                <span class="fd-list__title">Notebook Basic 1</span>
                             </li>
-                            <li class="fd-list__item" role="option" tabindex="-1">
-                                <span class="fd-list__title">List item 2</span>
-                                <span class="fd-list__secondary">A2</span>
+                            <li
+                                id="warningListItem2"
+                                role="option"
+                                tabindex="0"
+                                aria-selected="true"
+                                aria-setsize="5"
+                                aria-posinset="2"
+                                class="fd-list__item">
+                                <span class="fd-list__title">Notebook Basic 2</span>
                             </li>
-                            <li class="fd-list__item" role="option" tabindex="-1">
-                                <span class="fd-list__title">List item 3</span>
-                                <span class="fd-list__secondary">A3</span>
+                            <li
+                                id="warningListItem3"
+                                role="option"
+                                tabindex="0"
+                                aria-selected="false"
+                                aria-setsize="5"
+                                aria-posinset="3"
+                                class="fd-list__item">
+                                <span class="fd-list__title">Notebook Basic 3</span>
                             </li>
-                            <li class="fd-list__item" role="option" tabindex="-1">
-                                <span class="fd-list__title">List item 4</span>
-                                <span class="fd-list__secondary">A4</span>
+                            <li
+                                id="warningListItem4"
+                                role="option"
+                                tabindex="0"
+                                aria-selected="false"
+                                aria-setsize="5"
+                                aria-posinset="4"
+                                class="fd-list__item">
+                                <span class="fd-list__title">Notebook Basic 4</span>
+                            </li>
+                            <li
+                                id="warningListItem5"
+                                role="option"
+                                tabindex="0"
+                                aria-selected="false"
+                                aria-setsize="5"
+                                aria-posinset="5"
+                                class="fd-list__item">
+                                <span class="fd-list__title">Notebook Basic 5</span>
                             </li>
                         </ul>
                     </div>
-                    <div id="informationFormMessage" class="fd-popover__body fd-popover__body--input-message-group fd-popover__body--no-arrow" aria-hidden="false">
-                        <span class="fd-form-message fd-form-message--information">Information message</span>
+                    <div id="warningFormMessage" class="fd-popover__body fd-popover__body--input-message-group fd-popover__body--no-arrow" aria-hidden="true">
+                        <span class="fd-form-message fd-form-message--warning">warning message</span>
                     </div>
                 </div>
             </div>
+
+            <div class="fd-col fd-col--3">
+                <label class="fd-form-label" id="informationLabelDropdown">
+                    Select an option
+                </label><br>
+                <div class="fd-popover">
+                    <div class="fd-popover__control" aria-expanded="true" aria-haspopup="true">
+                        <div class="fd-select">
+                            <div
+                                role="combobox"
+                                aria-roledescription="Contains item list for selection"
+                                aria-haspopup="listbox"
+                                aria-expanded="true"
+                                aria-controls="informationList"
+                                aria-activedescendant="informationListItem2"
+                                aria-labelledby="informationLabelDropdown"
+                                class="fd-select__control is-information"
+                                tabindex="0"
+                                id="informationSelectCombobox"
+                                onclick="
+                                    toggleElAttrs('informationPopoverDropdown', ['aria-hidden']);
+                                    toggleElAttrs('informationSelectCombobox', ['aria-expanded']);
+                                    toggleElAttrs('informationFormMessage', ['aria-hidden']);
+                                ">
+                                <span class="fd-select__text-content">Notebook Basic 2</span>
+                                <span 
+                                    role="button"
+                                    tabindex="-1"
+                                    aria-label="Selection options"
+                                    title="Selection options"
+                                    class="fd-button fd-button--transparent fd-select__button">
+                                    <i class="sap-icon--slim-arrow-down" role="presentation" aria-hidden="true"></i>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--dropdown"
+                        aria-hidden="false"
+                        id="informationPopoverDropdown">
+                        <div class="fd-list__message fd-list__message--information" id="informationNote">information message</div>
+                        <ul
+                            id="informationList"
+                            role="listbox"
+                            aria-roledescription="Contains all available items"
+                            aria-labelledby="informationLabelDropdown informationNote"
+                            class="fd-list fd-list--has-message fd-list--dropdown"
+                            >
+                            <li
+                                id="informationListItem1"
+                                role="option"
+                                tabindex="0"
+                                aria-selected="false"
+                                aria-setsize="5"
+                                aria-posinset="1"
+                                class="fd-list__item">
+                                <span class="fd-list__title">Notebook Basic 1</span>
+                            </li>
+                            <li
+                                id="informationListItem2"
+                                role="option"
+                                tabindex="0"
+                                aria-selected="true"
+                                aria-setsize="5"
+                                aria-posinset="2"
+                                class="fd-list__item">
+                                <span class="fd-list__title">Notebook Basic 2</span>
+                            </li>
+                            <li
+                                id="informationListItem3"
+                                role="option"
+                                tabindex="0"
+                                aria-selected="false"
+                                aria-setsize="5"
+                                aria-posinset="3"
+                                class="fd-list__item">
+                                <span class="fd-list__title">Notebook Basic 3</span>
+                            </li>
+                            <li
+                                id="informationListItem4"
+                                role="option"
+                                tabindex="0"
+                                aria-selected="false"
+                                aria-setsize="5"
+                                aria-posinset="4"
+                                class="fd-list__item">
+                                <span class="fd-list__title">Notebook Basic 4</span>
+                            </li>
+                            <li
+                                id="informationListItem5"
+                                role="option"
+                                tabindex="0"
+                                aria-selected="false"
+                                aria-setsize="5"
+                                aria-posinset="5"
+                                class="fd-list__item">
+                                <span class="fd-list__title">Notebook Basic 5</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="informationFormMessage" class="fd-popover__body fd-popover__body--input-message-group fd-popover__body--no-arrow" aria-hidden="true">
+                        <span class="fd-form-message fd-form-message--information">information message</span>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </div>
 </div>

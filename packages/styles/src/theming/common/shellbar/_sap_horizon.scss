@@ -78,7 +78,7 @@
 
   // Search Field Button
   --fdShellbar_SearchField_Button_Width: 1.75rem;
-  --fdShellbar_SearchField_Button_Height: 1.625rem;
+  --fdShellbar_SearchField_Button_Height: var(--sapElement_Compact_Height);
   --fdShellbar_SearchField_Button_Border_Radius: 1.063rem;
   --fdShellbar_SearchField_Button_Focus_Inset: -0.0625rem; 
 
@@ -94,7 +94,7 @@
   --fdShell_Search_Field_Category_Margin_End: 0;
 
   // Search Field Category Dropdown
-  --fdShell_Search_Dropdown_Height: 1.75rem;
+  --fdShell_Search_Dropdown_Height: var(--sapElement_Compact_Height);
   --fdShell_Search_Dropdown_Border_Radius: 1.125rem;
   --fdShell_Search_Dropdown_Button_Radius: 1.125rem;
   --fdShell_Search_Dropdown_Box_Shadow_Hover: var(--sapField_Hover_Shadow);

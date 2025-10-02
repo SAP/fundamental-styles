@@ -74,7 +74,7 @@ SemanticStates.parameters = {
       story: `
 Select can be displayed in semantic states to communicate *Success*, *Error*, *Warning* or *Information* to the users. They can be displayed as either messages within the dropdown list, or by itself as a static message. To display select in various semantic states, add the class (shown below) to the \`fd-select__control\` element.
 
-Semantic state | Class
+| Semantic state | Class
 :------------------- | :-------
 Success | \`is-success\`
 Error | \`is-error\`

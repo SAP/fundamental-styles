@@ -4,19 +4,15 @@
 @import "./mixins";
 
 $block: #{$fd-namespace}-select;
-$fd-select-padding-x: 0.625rem;
-$fd-select-padding-x-compact: 0.5rem;
-
-@mixin fd-select-set-min-width($width) {
-  min-width: calc(var(--fdSelect_Min_Width) - var(--sapField_BorderWidth) * 2);
-}
 
 .#{$block} {
   @include fd-reset();
 
-  text-shadow: var(--fdSelect_Text_Shadow);
-  margin-block: 0.25rem;
+  --fdSelect_Min_Width: 2.75rem;
+
   margin-inline: 0;
+  text-shadow: var(--fdSelect_Text_Shadow);
+  margin-block: var(--fdSelect_Margin_Block, 0.25rem);
 
   &__control {
     @include fd-input-field-base(
@@ -32,8 +28,6 @@ $fd-select-padding-x-compact: 0.5rem;
     @include fd-input-field-states();
     @include fd-input-group-button-overwrite();
 
-    box-shadow: none;
-
     @include fd-flex-center() {
       gap: 0.25rem;
       justify-content: space-between;
@@ -43,11 +37,14 @@ $fd-select-padding-x-compact: 0.5rem;
       pointer-events: none;
     }
 
+    box-shadow: none;
     padding-inline: 0;
     padding-block: 0;
     margin-block: 0;
     margin-inline: 0;
-    cursor: pointer;
+    cursor: var(--fdSelect_Control_Cursor, pointer);
+    height: var(--fdSelect_Control_Height, var(--sapElement_Height));
+    min-height: var(--fdSelect_Control_Height, var(--sapElement_Height));
 
     &::after {
       content: "";
@@ -60,39 +57,31 @@ $fd-select-padding-x-compact: 0.5rem;
     }
 
     @include fd-readonly() {
-      cursor: text;
+      --fdSelect_Button_Opacity: 0;
+      --fdSelect_Button_Cursor: text;
+      --fdSelect_Control_Cursor: text;
+      --fdSelect_Text_Padding_Inline_End: 0.625rem;
 
-      .#{$block}__text-content {
-        --fdSelect_Min_Width: 5rem;
-
-        padding-inline: $fd-select-padding-x;
-      }
-
-      &[aria-selected='false'] {
-        .#{$block}__text-content {
-          visibility: hidden;
-        }
+      &.is-placeholder {
+        --fdSelect_Text_Content_Visibility: hidden;
       }
 
       .#{$block}__button {
-        opacity: 0;
+        display: none;
       }
     }
 
     @include fd-disabled() {
-      &[aria-selected='false'] {
-        .#{$block}__text-content {
-          visibility: hidden;
-        }
+      &.is-placeholder {
+        --fdSelect_Text_Content_Visibility: hidden;
       }
     }
 
-    &[aria-selected='false'] {
+    &.is-placeholder {
       .#{$block}__text-content {
         font-style: italic;
         font-weight: normal;
         padding-block: 0;
-        padding-inline: 0.625rem;
         color: var(--sapField_PlaceholderTextColor);
 
         [class*='sap-icon'] {
@@ -107,35 +96,29 @@ $fd-select-padding-x-compact: 0.5rem;
   &__text-content {
     @include fd-reset();
     @include fd-ellipsis();
-    @include fd-select-set-min-width(2.5rem);
 
-    --fdSelect_Min_Width: 2.5rem;
-
-    padding-inline-start: $fd-select-padding-x;
-    color: var(--fdSelect_Text_Content_Color, var(--sapTextColor));
-    cursor: pointer;
+    min-width: var(--fdSelect_Min_Width);
     display: var(--fdSelect_Text_Content_Display, inline-block);
+    visibility: var(--fdSelect_Text_Content_Visibility, visible);
+    color: var(--fdSelect_Text_Content_Color, var(--sapTextColor));
+    padding-inline: var(--fdSelect_Text_Padding_Inline_Start, 0.625rem) var(--fdSelect_Text_Padding_Inline_End, 0);
+  }
+
+  .#{$block}__button {
+    opacity: var(--fdSelect_Button_Opacity, 1);
+    cursor: var(--fdSelect_Button_Cursor, pointer);
+
+    @include fd-focus() {
+      &::after {
+        border: none;
+      }
+    }
   }
 
   @include fd-compact-or-condensed() {
-    margin-block: 0.1875rem;
-    margin-inline: 0;
-
-    .#{$block}__control {
-      height: $fd-form-input-height--compact;
-      min-height: $fd-form-input-height--compact;
-
-      .#{$block}__text-content {
-        --fdSelect_Min_Width: 2.75rem;
-
-        padding-inline-start: $fd-select-padding-x-compact;
-      }
-
-      @include fd-readonly() {
-        .#{$block}__text-content {
-          padding-inline: $fd-select-padding-x-compact;
-        }
-      }
-    }
+    --fdSelect_Min_Width: 2rem;
+    --fdSelect_Margin_Block: 0.1875rem;
+    --fdSelect_Text_Padding_Inline_Start: 0.5rem;
+    --fdSelect_Control_Height: var(--sapElement_Compact_Height);
   }
 }

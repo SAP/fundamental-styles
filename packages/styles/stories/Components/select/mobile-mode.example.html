@@ -1,37 +1,93 @@
-<div class="fd-dialog fd-dialog-docs-static fd-select-docs-max-height fd-dialog--active" id="select-dialog-example">
+<div class="fd-dialog fd-dialog-docs-static fd-select-docs-max-height fd-dialog--active" id="select-dialog-example"  aria-labelledby="mobileHeader mobileNote">
     <div class="fd-dialog__content fd-dialog__content--mobile">
         <header class="fd-dialog__header fd-toolbar fd-toolbar--clear">
-            <span class="fd-select__text-content">Select Ingredient</span>
+            <span class="fd-select__text-content" id="mobileHeader">Select Ingredient</span>
             <span class="fd-toolbar__spacer"></span>
             <button tabindex="-1" class="fd-button fd-button--transparent" aria-label="close">
                 <i class="sap-icon--decline"></i>
             </button>
         </header>
         <div class="fd-dialog__body fd-dialog__body--no-vertical-padding">
-            <div aria-live="assertive" class="fd-list__message fd-list__message--information" role="alert">Choose one item</div>
-            <ul aria-labelledby="mobileHeader" class="fd-list fd-list--has-message fd-list--dropdown fd-list--mobile" role="listbox">
-                <li role="option" tabindex="0" class="fd-list__item is-selected" aria-selected="true">
-                   <span class="fd-list__title">Apple</span>
-               </li>
-               <li role="option" tabindex="0" class="fd-list__item">
-                   <span class="fd-list__title">Orange</span>
-               </li>
-               <li role="option" tabindex="0" class="fd-list__item">
-                   <span class="fd-list__title">Banana</span>
-               </li>
-                <li role="option" tabindex="0" class="fd-list__item">
-                   <span class="fd-list__title">Kiwi</span>
+            <div class="fd-list__message fd-list__message--information" role="note" id="mobileNote">Choose one item</div>
+            <ul class="fd-list fd-list--has-message fd-list--dropdown fd-list--mobile" role="listbox" aria-roledescription="Contains all available items">
+                <li
+                    id="twoColListItem1"
+                    role="option"
+                    tabindex="0"
+                    aria-selected="false"
+                    aria-setsize="8"
+                    aria-posinset="1"
+                    class="fd-list__item">
+                    <span class="fd-list__title">Apple</span>
                 </li>
-                <li role="option" tabindex="0" class="fd-list__item">
+                <li
+                    id="twoColListItem2"
+                    role="option"
+                    tabindex="0"
+                    aria-selected="true"
+                    aria-setsize="8"
+                    aria-posinset="2"
+                    class="fd-list__item">
+                    <span class="fd-list__title">Orange</span>
+                </li>
+                <li
+                    id="twoColListItem3"
+                    role="option"
+                    tabindex="0"
+                    aria-selected="false"
+                    aria-setsize="8"
+                    aria-posinset="3"
+                    class="fd-list__item">
+                    <span class="fd-list__title">Banana</span>
+                </li>
+                <li
+                    id="twoColListItem4"
+                    role="option"
+                    tabindex="0"
+                    aria-selected="false"
+                    aria-setsize="8"
+                    aria-posinset="4"
+                    class="fd-list__item">
+                    <span class="fd-list__title">Kiwi</span>
+                </li>
+                <li
+                    id="twoColListItem5"
+                    role="option"
+                    tabindex="0"
+                    aria-selected="false"
+                    aria-setsize="8"
+                    aria-posinset="5"
+                    class="fd-list__item">
                     <span class="fd-list__title">Tomato</span>
                 </li>
-                <li role="option" tabindex="0" class="fd-list__item">
+                <li
+                    id="twoColListItem5"
+                    role="option"
+                    tabindex="0"
+                    aria-selected="false"
+                    aria-setsize="8"
+                    aria-posinset="6"
+                    class="fd-list__item">
                     <span class="fd-list__title">Onion</span>
                 </li>
-                <li role="option" tabindex="0" class="fd-list__item">
+                <li
+                    id="twoColListItem5"
+                    role="option"
+                    tabindex="0"
+                    aria-selected="false"
+                    aria-setsize="8"
+                    aria-posinset="7"
+                    class="fd-list__item">
                     <span class="fd-list__title">Spinach</span>
                 </li>
-                <li role="option" tabindex="0" class="fd-list__item">
+                <li
+                    id="twoColListItem5"
+                    role="option"
+                    tabindex="0"
+                    aria-selected="false"
+                    aria-setsize="8"
+                    aria-posinset="8"
+                    class="fd-list__item">
                     <span class="fd-list__title">Potato</span>
                 </li>
             </ul>
