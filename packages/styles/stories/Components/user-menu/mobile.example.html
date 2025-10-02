@@ -16,16 +16,17 @@
                         class="fd-avatar fd-avatar--lg fd-avatar--circle fd-avatar--thumbnail"
                         aria-label="Avatar"
                         style="background-image: url('/assets/images/portraits/L_80x80_F3.png');">
-                        <i class="fd-avatar__zoom-icon fd-avatar__zoom-icon--indication-8 sap-icon--edit" aria-label="Edit" role="presentation" aria-hidden="true"></i>
+                        <i class="fd-avatar__zoom-icon sap-icon--edit" aria-label="Edit" role="presentation" aria-hidden="true"></i>
                     </span>
                     <div class="fd-user-menu__header-container">
                         <div class="fd-user-menu__user-name">Lisa Miller</div>
                         <div class="fd-user-menu__subline">lisa.miller@test.com</div>
                         <div class="fd-user-menu__subline">User Experience Designer</div>
+                        <div class="fd-user-menu__subline">Primary Employment</div>
                     </div>
                     <button aria-label="Manage Accounts" class="fd-button">
                         <i class="sap-icon--user-settings"></i>
-                        <span class="fd-button__text">Manage Accounts</span>
+                        <span class="fd-button__text">Manage Account</span>
                     </button>
                 </div>
                 <div class="fd-user-menu__content-container">
@@ -37,11 +38,11 @@
                                     <i class="sap-icon--slim-arrow-right"></i>
                                 </button>
                             </div>
-                            <h4 class="fd-panel__title" id="__panel-title-10">Other Accounts (2)</h4>
+                            <h4 class="fd-panel__title" id="__panel-title-10">Accounts (2)</h4>
                             <div class="fd-toolbar fd-toolbar--clear fd-toolbar--transparent">
                                 <span class="fd-toolbar__spacer fd-toolbar__spacer--auto"> </span>
                                 <button class="fd-button fd-button--transparent" aria-label="Add Account" title="Add Account">
-                                    <i class="sap-icon--add-employee"></i>
+                                    <i class="sap-icon--user-edit"></i>
                                 </button>
                             </div>
                         </div>
@@ -80,13 +81,22 @@
                             </li>
 
                             <li class="fd-menu__item" role="presentation">
-                                <div class="fd-menu__link is-selected" href="#" role="menuitem">
+                                <a class="fd-menu__link" href="#" role="menuitem">
+                                    <span class="fd-menu__addon-before">
+                                        <i class="sap-icon--card" role="presentation"></i>
+                                    </span>
+                                    <span class="fd-menu__title">Menu Item</span>
+                                    <span class="fd-menu__addon-after fd-menu__addon-after--submenu"></span>
+                                </a>
+                            </li>
+
+                            <li class="fd-menu__item" role="presentation">
+                                <a class="fd-menu__link" href="#" role="menuitem">
                                     <span class="fd-menu__addon-before">
                                         <i class="sap-icon--official-service" role="presentation"></i>
                                     </span>
                                     <span class="fd-menu__title">Legal Information</span>
-                                    <span class="fd-menu__addon-after fd-menu__addon-after--submenu"></span>
-                                </div>
+                                </a>
                             </li>
 
                             <li class="fd-menu__item" role="presentation">
@@ -117,7 +127,7 @@
 
     <div style="height: 700px;">
         <div class="fd-user-menu fd-user-menu--mobile">
-            <div class="fd-bar fd-bar--header fd-user-menu__title-bar">
+            <div class="fd-bar fd-bar--header">
                 <div class="fd-bar__left">
                     <div class="fd-bar__element">
                         <button aria-label="button" class="fd-button fd-button--transparent">
@@ -125,7 +135,7 @@
                         </button>
                     </div>
                     <div class="fd-bar__element">
-                        <h5 class="fd-title fd-title--h5" aria-label="text">Legal Information</h5>
+                        <h5 class="fd-title fd-title--h5" aria-label="text">Menu Item</h5>
                     </div>
                 </div>
                 <div class="fd-bar__right">
@@ -137,30 +147,22 @@
                 </div>
             </div>
             <div class="fd-user-menu__body">
-                <nav class="fd-menu fd-user-menu__menu">
+                <nav class="fd-menu fd-menu--icons fd-user-menu__menu">
                     <ul class="fd-menu__list fd-user-menu__menu-list" role="menu">
                         <li class="fd-menu__item" role="presentation">
                             <a class="fd-menu__link" href="#" role="menuitem">
-                                <span class="fd-menu__title">Privacy Policy</span>
+                                <span class="fd-menu__addon-before"><i class="sap-icon--card" role="presentation"></i></span>
+                                <span class="fd-menu__title">Sub-menu Item</span>
                             </a>
                         </li>
 
                         <li class="fd-menu__item" role="presentation">
                             <div class="fd-menu__link" href="#" role="menuitem">
-                                <span class="fd-menu__title">Terms of Service</span>
+                                <span class="fd-menu__title">Sub-menu Item</span>
                             </div>
                         </li>
                     </ul>
                 </nav>  
-            </div>
-            <div class="fd-bar fd-bar--footer fd-user-menu__footer">
-                <div class="fd-bar__right">
-                    <div class="fd-bar__element">
-                        <button aria-label="button" class="fd-button fd-button--transparent">
-                            <span class="fd-button__text">Close</span>
-                        </button>
-                    </div>
-                </div>
             </div>
         </div>
     </div>
