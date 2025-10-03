@@ -6,6 +6,7 @@
 $block: #{$fd-namespace}-user-menu;
 $navigation: #{$fd-namespace}-navigation;
 $panel: #{$fd-namespace}-panel;
+$menu: #{$fd-namespace}-menu;
 
 .#{$block} {
   background: var(--sapGroup_ContentBackground);
@@ -68,25 +69,34 @@ $panel: #{$fd-namespace}-panel;
 
   &__user-name {
     @include fd-reset();
-    @include fd-line-clamp(2);
-
+   
     max-width: 100%;
-    max-height: 2.8rem;
     line-height: 1.4rem;
+    white-space: normal;
     color: var(--sapTextColor);
     font-size: var(--sapFontLargeSize);
     font-family: var(--fdUserMenu_User_Name_Font_Family);
+
+    &--truncate {
+      @include fd-line-clamp(2);
+
+      max-height: 2.8rem;
+    }
   }  
 
   &__user-info,
   &__user-role,
   &__subline {
     @include fd-reset();
-    @include fd-ellipsis();
-
+    
     width: 100%;
     max-width: 100%;
+    white-space: normal;
     color: var(--sapContent_LabelColor);
+
+    &--truncate {
+      @include fd-ellipsis();
+    }
   }
 
   .#{$block}__menu {
@@ -122,6 +132,15 @@ $panel: #{$fd-namespace}-panel;
     @include fd-reset();
 
     --fdPanel_Margin_Bottom: 0.25rem;
+  }
+
+  .#{$menu} {
+    @include fd-compact-or-condensed() {
+      --fdMenu_Icon_Width: 2.5rem;
+      --fdMenu_Link_Height: 2.5rem;
+      --fdMenu_Item_Spacing_Left: 0.75rem;
+      --fdMenu_Item_Spacing_Right: 0.75rem;
+    }
   }
 
   // Mobile

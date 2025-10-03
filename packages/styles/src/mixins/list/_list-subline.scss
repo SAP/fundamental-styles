@@ -10,6 +10,7 @@
         align-items: center;
       };
 
+      height: auto;
       min-height: 4.5rem;
       padding-block: 0.5rem;
       padding-inline: 1rem;
@@ -29,28 +30,35 @@
     }
 
     .#{$block}__title {
-      @include fd-ellipsis();
-
       width: 100%;
       max-width: 100%;
       font-style: normal;
       line-height: normal;
+      white-space: normal;
       font-size: var(--sapFontSize);
       color: var(--sapList_TextColor);
-      font-family: var(--sapFontBoldFamily);
+      font-family: var(--sapFontSemiboldDuplexFamily);
+
+      &--truncate {
+        @include fd-ellipsis();
+      }
     }
 
     .#{$block}__subline {
       @include fd-reset();
-      @include fd-ellipsis();
 
       width: 100%;
       max-width: 100%;
       font-style: normal;
       line-height: normal;
+      white-space: normal;
       font-size: var(--sapFontSize);
       font-family: var(--sapFontFamily);
       color: var(--sapContent_LabelColor);
+
+      &--truncate {
+        @include fd-ellipsis();
+      }
     }
 
     .#{$block}__active-indicator {

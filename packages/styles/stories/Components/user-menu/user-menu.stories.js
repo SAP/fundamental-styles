@@ -59,9 +59,10 @@ Represents the current user and includes:
 <ul>
     <li>Popover: Contains the entire User Menu content.</li>
     <li>Avatar: A key visual element displaying the user's profile picture. If no profile picture is available, it shows the user's initials. If the user is not signed in, an icon is displayed.</li>
-    <li>Title: A required UI element showing the user's First and Last names.</li>
+    <li>Title: A required UI element showing the user's First and Last names. To truncate long titles use the <code>.fd-user-menu\\_\\_user-name--truncate</code> modifier class.</li>
     <li>Subtitle 1 (subline): An optional secondary identifier, such as user ID or email.</li>
-    <li>Subtitle 2 (subline): An optional tertiary identifier, such as role, position, organization, or unit.</li>
+    <li>Subtitle 2 (subline): An optional identifier, such as role, position, organization, or unit.</li>
+    <li>Subtitle 3 (subline): An optional identifier, such as role, position, organization, or unit. To truncate long subtitles use the <code>.fd-user-menu\\_\\_subline--truncate</code> modifier class.</li>
     <li>Manage Account Button: Links to account settings.</li>
 </ul>
 
