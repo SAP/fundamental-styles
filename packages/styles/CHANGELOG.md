@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.41.0-rc.63](https://github.com/SAP/fundamental-styles/compare/v0.41.0-rc.62...v0.41.0-rc.63) (2025-10-03)
+
+### Bug Fixes
+
+- **styles:** update User Menu after design review [ci visual] ([#6172](https://github.com/SAP/fundamental-styles/issues/6172)) ([cc50474](https://github.com/SAP/fundamental-styles/commit/cc504749487b804035760806d4bbad29f22493e3))
+
 # [0.41.0-rc.62](https://github.com/SAP/fundamental-styles/compare/v0.41.0-rc.61...v0.41.0-rc.62) (2025-10-02)
 
 ### Bug Fixes
