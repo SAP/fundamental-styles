@@ -23,6 +23,8 @@ $menu: #{$fd-namespace}-menu;
 
   .#{$block}__popover-wrapper {
     overflow: visible;
+    width: 20rem;
+    min-width: 20rem;
   }
 
   &__body {
