@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.41.0-rc.64](https://github.com/SAP/fundamental-styles/compare/v0.41.0-rc.63...v0.41.0-rc.64) (2025-10-08)
+
+### Bug Fixes
+
+- syntax errors in CSS ([#6175](https://github.com/SAP/fundamental-styles/issues/6175)) ([1848440](https://github.com/SAP/fundamental-styles/commit/1848440053f21f698c76031f448bf5998dd69266))
+
 # [0.41.0-rc.63](https://github.com/SAP/fundamental-styles/compare/v0.41.0-rc.62...v0.41.0-rc.63) (2025-10-03)
 
 ### Bug Fixes
