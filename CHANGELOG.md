@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.41.0-rc.65](https://github.com/SAP/fundamental-styles/compare/v0.41.0-rc.64...v0.41.0-rc.65) (2025-10-08)
+
+### Bug Fixes
+
+- **styles:** set min width for User Menu body, doc example update [ci visual] ([#6176](https://github.com/SAP/fundamental-styles/issues/6176)) ([e180cdf](https://github.com/SAP/fundamental-styles/commit/e180cdfa787f09aac1a64b109ca8cab1f3007266))
+
 # [0.41.0-rc.64](https://github.com/SAP/fundamental-styles/compare/v0.41.0-rc.63...v0.41.0-rc.64) (2025-10-08)
 
 ### Bug Fixes
@@ -6441,9 +6447,9 @@ Co-authored-by: droshev <mladen.droshev@sap.com>
 
 - added a new modifier class to fd-row to achieve even alignment of its elements:fd-row--top in a form.
   Before:
-      <div class="fd-row">
-      After:
-      <div class="fd-row fd-row--top">
+  <div class="fd-row">
+  After:
+  <div class="fd-row fd-row--top">
 
 ### Bug Fixes
 
