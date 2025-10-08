@@ -249,7 +249,7 @@ $select: #{$fd-namespace}-select;
     @include fd-active() {
       --fdButtonBackgroundColor: var(--sapShell_Active_Background);
       --fdButtonBorderColor: var(--fdShellbar_Button_Active_Border_Color);
-      --fdButtonColor: var(--sapShell_Active_TextColor;);
+      --fdButtonColor: var(--sapShell_Active_TextColor);
 
       & > [class*="sap-icon"] {
         color: var(--fdButtonIconColor, var(--sapShell_Active_TextColor));
@@ -259,7 +259,7 @@ $select: #{$fd-namespace}-select;
     @include fd-toggled() {
       --fdButtonBackgroundColor: var(--sapShell_Selected_Background);
       --fdButtonBorderColor: var(--fdShellbar_Button_Active_Border_Color);
-      --fdButtonColor: var(--sapShell_Selected_TextColor;);
+      --fdButtonColor: var(--sapShell_Selected_TextColor);
 
       & > [class*="sap-icon"] {
         color: var(--fdButtonIconColor, var(--sapShell_Selected_TextColor));

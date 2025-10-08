@@ -15,7 +15,7 @@
   /* Default */
   --fdRadio_Background_Color_Default: var(--sapField_Background);
   --fdRadio_Inner_Border_Width_Default: var(--sapField_BorderWidth);
-  --fdRadio_Inner_Border_Style_Default: var(-sapField_Selector_BorderStyle);
+  --fdRadio_Inner_Border_Style_Default: var(--sapField_Selector_BorderStyle);
   --fdRadio_Inner_Border_Color_Default: var(--sapField_BorderColor);
   --fdRadio_Active_Dot_Color_Default: var(--sapContent_IconColor);
 
