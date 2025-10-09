@@ -105,13 +105,13 @@ MessageStripWithLink.parameters = {
   docs: {
     description: {
       story: `The Link inside Message Strip has additional styling. Add the <code>fd-message-strip--link</code> modifier class if the message contains a link element. <br>
-      The MessageStrip can include multiple links—not just one. This allows applications to provide additional context or actions related to the message, such as links to:
-      <ul>
-        <li>Other apps where the issue originated</li>
-        <li>Apps where the issue can be resolved</li>
-        <li>Related objects or specific sections</li>
-        <li>Help documentation</li>
-      </ul>`
+The MessageStrip can include multiple links—not just one. This allows applications to provide additional context or actions related to the message, such as links to:
+<ul>
+  <li>Other apps where the issue originated</li>
+  <li>Apps where the issue can be resolved</li>
+  <li>Related objects or specific sections</li>
+  <li>Help documentation</li>
+</ul>`
     }
   }
 };
@@ -129,11 +129,7 @@ MessageStripWithAccentColors.storyName = 'Custom Message Strip';
 MessageStripWithAccentColors.parameters = {
   docs: {
     description: {
-      story: `If the application needs a custom Message Strip, other than the semantic variations, then the colours from Inverted Object Status/Tag control should be used. Use the modifier classes \`.fd-message-strip--indication-color-*\`, where \`*\` is a number from 1 to 10 for the first set, and 1b to 10b for the second set. <br />
-      <b>Disclaimer</b> <br />
-Please note that accessibility features, including contrast ratios, are verified only for centrally defined standard values in Light, Dark, HCB, and HCW themes. Customization of components – whether internal or external – may impact compliance, and accessibility cannot be guaranteed.
-
-`
+      story: `If the application needs a custom Message Strip, other than the semantic variations, then the colours from Inverted Object Status/Tag control should be used. Use the modifier classes \`.fd-message-strip--indication-color-*\`, where \`*\` is a number from 1 to 10 for the first set, and 1b to 10b for the second set. <br /><b>Disclaimer:</b> <br />Please note that accessibility features, including contrast ratios, are verified only for centrally defined standard values in Light, Dark, HCB, and HCW themes. Customization of components – whether internal or external – may impact compliance, and accessibility cannot be guaranteed.`
     }
   }
 };
