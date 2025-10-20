@@ -180,11 +180,13 @@ $select: #{$fd-namespace}-select;
   &__logo {
     @include fd-reset();
 
+    height: 2rem;
     max-height: 2rem;
     position: relative;
     display: inline-block;
     vertical-align: middle;
     margin-inline: 0.25rem;
+    margin-block: 0.0625rem;
     background-size: contain;
     background-repeat: no-repeat;
 
@@ -206,7 +208,7 @@ $select: #{$fd-namespace}-select;
     @include fd-reset();
 
     width: 0.0625rem;
-    height: 1rem;
+    height: 2rem;
     margin-inline: 0;
     margin-block: 0;
     background-color: var(--sapToolbar_SeparatorColor);
