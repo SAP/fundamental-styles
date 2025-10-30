@@ -1,0 +1,54 @@
+@use "sass:map";
+
+@import "../mixins";
+@import "./list-definitions";
+
+.#{$block}--search-results {
+  .#{$block}__item {
+    .#{$block}__title, .#{$block}__subline {
+      @include fd-line-clamp(2);
+      
+      font-size: var(--sapFontSize);
+    }
+
+    &--initial-suggestion {
+      .#{$block}__subline {
+        font-size: var(--sapFontSmallSize);
+      }
+    }
+
+    &--initial-suggestion, &--byline {
+      height: auto;
+      padding-block: 0.5rem;
+
+      .#{$block}__title {
+        font-size: var(--sapFontSize);
+        font-family: var(--sapFontSemiboldDuplexFamily);
+        font-weight: 700;
+      }
+      .#{$block}__subline {
+        color: var(--sapContent_LabelColor);
+        margin-top: 0.25rem;
+      }
+      .#{$block}__content {
+        overflow: hidden;
+      }
+    }
+
+    &--suggestion {
+      .#{$block}__info-label {
+        margin-inline-end: 0.5rem;
+      }
+      .#{$block}__icon [class*=sap-icon]:first-child, .#{$block}__icon[class*=sap-icon]:first-child {
+        margin-inline-start: -0.5rem;
+      }
+      .#{$block}__title--scope {
+        color: var(--sapContent_LabelColor);
+      }
+    }
+
+    &--suggestion, &--byline {
+      border-bottom: transparent; // TODO: replace with variable 
+    }
+  }
+}
