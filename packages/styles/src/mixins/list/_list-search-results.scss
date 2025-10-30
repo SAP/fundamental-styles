@@ -11,13 +11,7 @@
       font-size: var(--sapFontSize);
     }
 
-    &--initial-suggestion {
-      .#{$block}__subline {
-        font-size: var(--sapFontSmallSize);
-      }
-    }
-
-    &--initial-suggestion, &--byline {
+    &--byline {
       height: auto;
       padding-block: 0.5rem;
 

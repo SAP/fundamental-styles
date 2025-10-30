@@ -37,4 +37,11 @@ $block: #{$fd-namespace}-text;
   &__ai-highlight {
     @include fd-ai-text-highlight();
   }
+
+  &__subline {
+    @include fd-line-clamp(2);
+
+    font-size: var(--sapFontSmallSize);
+    color: var(--sapContent_LabelColor);
+  }
 }

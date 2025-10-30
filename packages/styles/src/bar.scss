@@ -46,6 +46,19 @@ $floating-footer: #{$fd-namespace}-bar--floating-footer;
     color: var(--sapPageHeader_TextColor);
   }
 
+  &--initial-suggestion-title, &--initial-suggestion-subline {
+    height: auto;
+  }
+
+  &--initial-suggestion-title {
+    padding-top: 0.5rem;
+  }
+
+  &--initial-suggestion-subline {
+    padding-top: 0.25rem;
+    padding-bottom: 0.5rem !important;
+  }
+
   &__left,
   &__middle,
   &__right {
@@ -57,6 +70,10 @@ $floating-footer: #{$fd-namespace}-bar--floating-footer;
 
     width: 100%;
     max-width: 100%;
+
+    &--stack-contents-vertically {
+      flex-direction: column;
+    }
   }
 
   &__middle {

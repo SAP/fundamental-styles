@@ -20,7 +20,11 @@ import '../../../../../src/icon.scss';
 import '../../../../../src/checkbox.scss';
 import '../../../../../src/button.scss';
 import '../../../../../src/busy-indicator.scss';
-import '../../../../../src/avatar.scss'
+import '../../../../../src/avatar.scss';
+import '../../../../../src/popover.scss';
+import '../../../../../src/text.scss';
+import '../../../../../src/bar.scss';
+import '../../../../../src/title.scss';
 export default {
   title: 'Components/List/Standard',
   parameters: {
