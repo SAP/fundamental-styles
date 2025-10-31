@@ -47,4 +47,8 @@ $block: #{$fd-namespace}-title;
     white-space: normal;
     text-overflow: initial;
   }
+
+  &--two-line-clamp {
+    @include fd-line-clamp(2);
+  }
 }
