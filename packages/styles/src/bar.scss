@@ -57,6 +57,10 @@ $floating-footer: #{$fd-namespace}-bar--floating-footer;
 
     width: 100%;
     max-width: 100%;
+
+    &--stack-contents-vertically {
+      flex-direction: column;
+    }
   }
 
   &__middle {
@@ -188,6 +192,20 @@ $floating-footer: #{$fd-namespace}-bar--floating-footer;
     @include fd-bar-floating-footer-offsets(3rem);
 
     --fdBar_Padding_X: 3rem;
+  }
+
+  &--initial-suggestion-title, &--initial-suggestion-subline {
+    height: auto;
+  }
+
+  &--initial-suggestion-title {
+    padding-block-start: 0.5rem;
+  }
+
+  &--initial-suggestion-subline {
+    --fdBar_Padding_Bottom: 0.5rem;
+    
+    padding-block-start: 0.25rem;
   }
 
   @include fd-compact-or-condensed() {

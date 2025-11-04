@@ -14,11 +14,17 @@ import navigationExampleHtml from "./navigation.example.html?raw";
 import interactiveExampleHtml from "./interactive.example.html?raw";
 import unreadExampleHtml from "./unread.example.html?raw";
 import standardExampleHtml from "./standard.example.html?raw";
+import searchResultsExampleHtml from "./search-results.example.html?raw";
 import '../../../../../src/list.scss';
 import '../../../../../src/icon.scss';
 import '../../../../../src/checkbox.scss';
 import '../../../../../src/button.scss';
 import '../../../../../src/busy-indicator.scss';
+import '../../../../../src/avatar.scss';
+import '../../../../../src/popover.scss';
+import '../../../../../src/text.scss';
+import '../../../../../src/bar.scss';
+import '../../../../../src/title.scss';
 export default {
   title: 'Components/List/Standard',
   parameters: {
@@ -204,6 +210,14 @@ Scroll.parameters = {
     description: {
       story: `If height for list is fixed and there are more list otem to show, then we should be able to scroll to next list items.
 `
+    }
+  }
+};
+export const SearchResults = () => searchResultsExampleHtml;
+SearchResults.parameters = {
+  docs: {
+    description: {
+      story: `To be used in a popover containing sophisticated search results.`
     }
   }
 };
