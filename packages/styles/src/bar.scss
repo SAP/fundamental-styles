@@ -46,19 +46,6 @@ $floating-footer: #{$fd-namespace}-bar--floating-footer;
     color: var(--sapPageHeader_TextColor);
   }
 
-  &--initial-suggestion-title, &--initial-suggestion-subline {
-    height: auto;
-  }
-
-  &--initial-suggestion-title {
-    padding-top: 0.5rem;
-  }
-
-  &--initial-suggestion-subline {
-    padding-top: 0.25rem;
-    padding-bottom: 0.5rem !important;
-  }
-
   &__left,
   &__middle,
   &__right {
@@ -205,6 +192,20 @@ $floating-footer: #{$fd-namespace}-bar--floating-footer;
     @include fd-bar-floating-footer-offsets(3rem);
 
     --fdBar_Padding_X: 3rem;
+  }
+
+  &--initial-suggestion-title, &--initial-suggestion-subline {
+    height: auto;
+  }
+
+  &--initial-suggestion-title {
+    padding-block-start: 0.5rem;
+  }
+
+  &--initial-suggestion-subline {
+    --fdBar_Padding_Bottom: 0.5rem;
+    
+    padding-block-start: 0.25rem;
   }
 
   @include fd-compact-or-condensed() {

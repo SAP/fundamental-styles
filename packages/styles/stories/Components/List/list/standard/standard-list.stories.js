@@ -214,7 +214,6 @@ Scroll.parameters = {
   }
 };
 export const SearchResults = () => searchResultsExampleHtml;
-SearchResults.storyName = 'Search Results';
 SearchResults.parameters = {
   docs: {
     description: {
