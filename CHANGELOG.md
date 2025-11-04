@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.41.0-rc.68](https://github.com/SAP/fundamental-styles/compare/v0.41.0-rc.67...v0.41.0-rc.68) (2025-11-04)
+
+### Features
+
+- **styles:** add search results classes to fd-list [ci visual] ([#6180](https://github.com/SAP/fundamental-styles/issues/6180)) ([9858d34](https://github.com/SAP/fundamental-styles/commit/9858d343e323de5b50ed7e7fc5bdae1f1d6d8289))
+
 # [0.41.0-rc.67](https://github.com/SAP/fundamental-styles/compare/v0.41.0-rc.66...v0.41.0-rc.67) (2025-10-27)
 
 **Note:** Version bump only for package fundamental-styles
@@ -6457,9 +6463,9 @@ Co-authored-by: droshev <mladen.droshev@sap.com>
 
 - added a new modifier class to fd-row to achieve even alignment of its elements:fd-row--top in a form.
   Before:
-      <div class="fd-row">
-      After:
-      <div class="fd-row fd-row--top">
+  <div class="fd-row">
+  After:
+  <div class="fd-row fd-row--top">
 
 ### Bug Fixes
 
