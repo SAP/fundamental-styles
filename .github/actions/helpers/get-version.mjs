@@ -1,4 +1,4 @@
-const getFileContents = require('./get-file-contents.cjs');
+import getFileContents from './get-file-contents.mjs';
 
 const getVersionFromJson = (jsonContent) => {
     return jsonContent.version;
@@ -18,7 +18,7 @@ const getVersionFromFile = (fileName, branch) => {
  * @param branch
  * @returns {string}
  */
-module.exports = (branch = null) => {
+export default (branch = null) => {
     const version = getVersionFromFile('lerna.json', branch) || getVersionFromFile('package.json', branch);
     return version;
 };

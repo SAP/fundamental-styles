@@ -1,9 +1,9 @@
-const semver = require('semver');
-const fs = require('fs');
-const gitSemverTags = require('git-semver-tags');
+import semver from 'semver';
+import { readFileSync } from 'fs';
+import gitSemverTags from 'git-semver-tags';
 
 const readLernaJson = () => {
-    return JSON.parse(fs.readFileSync('./lerna.json', 'utf8'));
+    return JSON.parse(readFileSync('./lerna.json', 'utf8'));
 }
 
 const semverTags = (maxVersion) => {
@@ -27,7 +27,7 @@ const findClosestVersionIndex = (isPrerelease, availableVersions) => {
     return closestIndex;
 }
 
-module.exports = async() => {
+export default async () => {
     const packageJson = readLernaJson();
     const isPrerelease = !!semver.prerelease(packageJson.version);
     const availableVersions = await semverTags(packageJson.version);

@@ -1,11 +1,11 @@
-const conventionalChangelog = require('conventional-changelog');
-const core = require('@actions/core');
-const through = require('through2');
-const closestVersion = require('./closest-version.cjs');
-const childProcess = require('child_process');
+import conventionalChangelog from 'conventional-changelog';
+import * as core from '@actions/core';
+import through from 'through2';
+import closestVersion from './closest-version.mjs';
+import { execSync } from 'child_process';
 
 const deleteTags = (tags) => {
-    childProcess.execSync(`git tag -d ${tags.join(' ')}`);
+    execSync(`git tag -d ${tags.join(' ')}`);
 }
 
 const generateChangelog = (fromVersion) => {

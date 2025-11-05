@@ -1,5 +1,6 @@
-const semver = require('semver');
-const getVersion = require('./get-version.cjs');
+import semver from 'semver';
+import getVersion from './get-version.mjs';
+
 /**
  * Get the release tag for the current release
  * @param isHotfix {boolean}
@@ -7,7 +8,7 @@ const getVersion = require('./get-version.cjs');
  * @param currentVersion {string}
  * @returns {Promise<'latest' | 'hotfix' | 'prerelease'>}
  */
-module.exports = async (isHotfix, isPrerelease, currentVersion) => {
+export default async (isHotfix, isPrerelease, currentVersion) => {
     const getTag = (isHotfixCheck, prereleaseCheck) => 
         isHotfix && isHotfixCheck(currentVersion)
         ? 'hotfix'
