@@ -18,7 +18,7 @@
         "lint": "yarn run sync-entries && yarn run lint:style && yarn run lint:js",
         "lint:fix": "yarn run sync-entries fix && yarn run lint:style --fix && yarn run lint:js --fix",
         "lint:pre-commit": "echo running pre-commit lint... && yarn run lint && echo done!\n",
-        "hotfix-release": "node scripts/release-hotfix.js",
+        "hotfix-release": "node scripts/release-hotfix.mjs",
         "size": "bundlesize --config config/bundlesize.json",
         "start": "npx nx build workspace-plugins && yarn run build:visual-stories && yarn run storybook:serve",
         "start:prod": "yarn run storybook:serve:prod",

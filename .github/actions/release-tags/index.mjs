@@ -1,7 +1,7 @@
-const { getInput, setOutput, info } = require('@actions/core');
-const getVersion = require('../helpers/get-version.cjs');
-const gitSemverTags = require('../helpers/git-semver-tags.cjs');
-const semver = require('semver');
+import { getInput, setOutput, info } from '@actions/core';
+import getVersion from '../helpers/get-version.mjs';
+import gitSemverTags from '../helpers/git-semver-tags.mjs';
+import semver from 'semver';
 
 const createTagObject = (ghTag, npmTag, mainNeedsSync) => ({
     gh: ghTag,
@@ -19,7 +19,7 @@ const getTags = async (bumpTag, bumpedVersion) => {
     const mainVersion = getVersion('origin/main');
     const mainIsPrerelease = !!semver.prerelease(mainVersion, undefined);
     const bumpedIsGreaterThanMain = semver.gt(bumpedVersion, mainVersion);
-    const semverTags = await gitSemverTags(null, true);
+    const semverTags = gitSemverTags(null, true);
     const latestStableVersion = semverTags[0].replace('v', '');
     const bumpedIsGreaterThanLatestStable = semver.gt(bumpedVersion, latestStableVersion);
     const ghTag = bumpTag === 'prerelease' ? 'prerelease' : 'release';
@@ -35,7 +35,7 @@ const getTags = async (bumpTag, bumpedVersion) => {
     return createTagObject(ghTag, bumpTag, bumpTag === 'prerelease' || bumpedIsGreaterThanMain);
 };
 
-module.exports.getTags = getTags;
+export { getTags };
 
 const run = async () => {
     const bumpedVersion = getInput('bumpedVersion');

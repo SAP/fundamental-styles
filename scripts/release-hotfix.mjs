@@ -1,6 +1,7 @@
-const currentVersion = require('../.github/actions/helpers/current-version');
-const { execSync } = require('child_process');
-const semver = require('semver');
+import getVersion from '../.github/actions/helpers/get-version.mjs';
+const currentVersion = getVersion();
+import { execSync } from 'child_process';
+import semver from 'semver';
 const hotfixBranchName = 'tmp_hotfix_branch';
 
 const execAndLog = (command) => {
