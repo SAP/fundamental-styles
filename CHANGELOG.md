@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.41.0-rc.72](https://github.com/SAP/fundamental-styles/compare/v0.41.0-rc.71...v0.41.0-rc.72) (2025-11-05)
+
+### Bug Fixes
+
+- **ci:** convert GitHub Actions scripts to .cjs for ESM compatibility ([#6185](https://github.com/SAP/fundamental-styles/issues/6185)) ([7b002f9](https://github.com/SAP/fundamental-styles/commit/7b002f940129a07faf2f229b158d3e1f5d9a2dca))
+
 # [0.41.0-rc.71](https://github.com/SAP/fundamental-styles/compare/v0.41.0-rc.70...v0.41.0-rc.71) (2025-11-05)
 
 **Note:** Version bump only for package fundamental-styles
@@ -6475,9 +6481,9 @@ Co-authored-by: droshev <mladen.droshev@sap.com>
 
 - added a new modifier class to fd-row to achieve even alignment of its elements:fd-row--top in a form.
   Before:
-  <div class="fd-row">
-  After:
-  <div class="fd-row fd-row--top">
+    <div class="fd-row">
+    After:
+    <div class="fd-row fd-row--top">
 
 ### Bug Fixes
 
