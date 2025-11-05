@@ -4,7 +4,7 @@
   "type": "module",
   "engines": {
     "yarn": ">= 4.10.3",
-    "node": ">= 18"
+    "node": ">= 22"
   },
   "packageManager": "yarn@4.10.3",
   "scripts": {
@@ -20,7 +20,7 @@
     "lint:pre-commit": "echo running pre-commit lint... && yarn run lint && echo done!\n",
     "hotfix-release": "node scripts/release-hotfix.js",
     "size": "bundlesize --config config/bundlesize.json",
-    "start": "yarn run build:visual-stories && yarn run storybook:serve",
+    "start": "npx nx build workspace-plugins && yarn run build:visual-stories && yarn run storybook:serve",
     "start:prod": "yarn run storybook:serve:prod",
     "test": "npx vitest --run",
     "test:accessibility": "vitest accessibility --run",
@@ -29,7 +29,7 @@
     "storybook:serve": "storybook dev -p 6006",
     "storybook:serve:prod": "cross-env NODE_ENV=production yarn run storybook:prep && cross-env NODE_ENV=production yarn run start",
     "storybook:ci": "yarn run storybook --ci --quiet",
-    "storybook:prep": "yarn run build:visual-stories",
+    "storybook:prep": "npx nx build workspace-plugins && yarn run build:visual-stories",
     "storybook:static": "yarn run storybook:prep && cross-env STORYBOOK_ENV=docs storybook build -c .storybook -o storybook-static --docs",
     "storybook:chromatic": "yarn run storybook:prep && cross-env STORYBOOK_ENV=chromatic storybook build -c .storybook -o storybook-chromatic",
     "prepare": "husky install",
