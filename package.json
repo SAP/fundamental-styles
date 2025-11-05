@@ -33,8 +33,8 @@
     "storybook:static": "yarn run storybook:prep && cross-env STORYBOOK_ENV=docs storybook build -c .storybook -o storybook-static --docs",
     "storybook:chromatic": "yarn run storybook:prep && cross-env STORYBOOK_ENV=chromatic storybook build -c .storybook -o storybook-chromatic",
     "prepare": "husky install",
-    "sync-fiori-components": "npx nx run styles:sync-entry",
-    "sync-entries": "npx nx run-many --target sync-entry --all",
+    "sync-fiori-components": "npx nx build workspace-plugins && npx nx run styles:sync-entry",
+    "sync-entries": "npx nx build workspace-plugins && npx nx run-many --target sync-entry --all",
     "pre-commit": "lint-staged && yarn run lint:pre-commit"
   },
   "repository": {
