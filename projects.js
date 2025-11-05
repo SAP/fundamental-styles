@@ -1,5 +1,3 @@
-import { snakeCase } from 'lodash/string';
-
 /**
  * The map of project name and project path
  */
@@ -17,6 +15,9 @@ const projectNames = {
     ['common-css']: 'Common CSS',
     cx: 'CX'
 };
+
+/** Simple utility to convert text to snake_case */
+const snakeCase = (text) => text ? text.replace(/([A-Z])/g, '_$1').toLowerCase().replace(/^_/, '') : '';
 
 /** Small utility to convert text to dash-case */
 const dashCase = (text) => (text ? snakeCase(text).replace(/_/g, '-') : undefined);

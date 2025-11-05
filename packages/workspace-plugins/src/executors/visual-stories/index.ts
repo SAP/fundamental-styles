@@ -1,13 +1,15 @@
 import { ExecutorContext, logger, names, workspaceRoot } from '@nx/devkit';
 import { VisualStoriesSchema } from './schema';
 import { sync as fastGlobSync } from 'fast-glob';
-import { themes as projectsThemes } from '../../../../../projects';
 import path, { parse as parsePath, relative } from 'path';
 import { outputFileSync } from 'fs-extra';
 import { format } from 'prettier';
 import { parseStoriesFile } from './parse-stories-file';
 
 export default async function(schema: VisualStoriesSchema, context: ExecutorContext): Promise<{ success: boolean }> {
+    // Use CommonJS version for executor compatibility
+    const projectsPath = path.resolve(workspaceRoot, 'projects.cjs');
+    const { themes: projectsThemes } = require(projectsPath);
     const projectName = <string>context.projectName;
     logger.info(`Creating Visual stories for ${projectName} 👀`);
     const projectRoot = context.projectGraph?.nodes[projectName].data.root;
@@ -55,14 +57,14 @@ export default async function(schema: VisualStoriesSchema, context: ExecutorCont
         import { visualStory, withThemeProvider } from 'fundamental-styles/storybook';
         
         export default {
-            title: ${JSON.stringify('Visuals/' + fullTitle + '/' + theme.title)},
+            title: ${JSON.stringify('Visuals/' + fullTitle + '/' + theme.value)},
             parameters: {
                 theme: ${JSON.stringify(theme.value)},
                 packageId: ${JSON.stringify(projectName)},
             },
             decorators: [withThemeProvider]
         };
-        export const ${className}Visuals = visualStory(stories as any);
+        export const ${className}${names(theme.value).className}Visuals = visualStory(stories as any);
         `,
                 { parser: 'typescript' }
             );

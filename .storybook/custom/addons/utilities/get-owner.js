@@ -1,4 +1,4 @@
-import { sortedProjects } from './projects';
+import { sortedProjects } from './projects.js';
 
 const ownersCache = new Map();
 

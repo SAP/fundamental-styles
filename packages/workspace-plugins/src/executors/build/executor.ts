@@ -8,13 +8,15 @@ import { processWithPostCss } from '../shared/postcss';
 import { mkdirpSync } from 'fs-extra';
 import { parse } from 'path';
 import { parse as semverParse } from 'semver';
+import path from 'path';
+import { workspaceRoot } from '@nx/devkit';
 
 const aboveMinorVersion = (version: string) => {
     const parsed = semverParse(version);
     return `^${parsed!.major}.${parsed!.minor}.0`;
 };
-const lernaJson = JSON.parse(readFileSync('lerna.json', 'utf-8'));
-const packageJson = JSON.parse(readFileSync('package.json', 'utf-8'));
+const lernaJson = JSON.parse(readFileSync(path.resolve(workspaceRoot, 'lerna.json'), 'utf-8'));
+const packageJson = JSON.parse(readFileSync(path.resolve(workspaceRoot, 'package.json'), 'utf-8'));
 const versions = {
     VERSION_PLACEHOLDER: lernaJson.version,
     SAP_THEMING_VERSION: aboveMinorVersion(packageJson.devDependencies['@sap-theming/theming-base-content'])

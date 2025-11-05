@@ -2,11 +2,12 @@ import { BuildThemingPreviewExecutorSchema } from './schema';
 import fs from 'fs-extra';
 import { execSync } from 'child_process';
 import { processWithPostCss } from '../shared/postcss';
-import { ExecutorContext, logger, readJsonFile, writeJsonFile } from '@nx/devkit';
+import { ExecutorContext, logger, readJsonFile, writeJsonFile, workspaceRoot } from '@nx/devkit';
 
 import { readFileSync } from 'fs';
+import path from 'path';
 
-const lernaJson = JSON.parse(readFileSync('lerna.json', 'utf-8'));
+const lernaJson = JSON.parse(readFileSync(path.resolve(workspaceRoot, 'lerna.json'), 'utf-8'));
 const { copySync } = fs;
 
 export default async function runExecutor(options: BuildThemingPreviewExecutorSchema, context: Required<ExecutorContext>) {
