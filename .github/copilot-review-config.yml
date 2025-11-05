@@ -1,0 +1,61 @@
+# GitHub Copilot PR Review Configuration
+# This file configures how Copilot reviews PRs in the fundamental-styles repository
+
+# Repository context
+repository:
+  type: "design-system"
+  language: "scss"
+  framework: "sass"
+  description: "SAP Fundamental Styles - A design system providing styling for SAP applications"
+
+# Review focus areas
+focus_areas:
+  - "SCSS/CSS code quality"
+  - "Design system consistency" 
+  - "Accessibility compliance"
+  - "Performance optimization"
+  - "Breaking changes detection"
+  - "Cross-browser compatibility"
+
+# Coding standards to check
+standards:
+  scss:
+    - "BEM naming convention for CSS classes"
+    - "Consistent use of design tokens and variables"
+    - "Proper nesting depth (max 3-4 levels)"
+    - "Consistent spacing and formatting"
+    - "Use of mixins for reusable patterns"
+  
+  accessibility:
+    - "Color contrast ratios meet WCAG guidelines"
+    - "Focus indicators are visible and accessible"
+    - "Semantic HTML structure support"
+    - "Screen reader compatibility"
+  
+  performance:
+    - "CSS selector efficiency"
+    - "Bundle size impact"
+    - "Critical path CSS considerations"
+    - "Unused CSS detection"
+
+# Files to prioritize in reviews
+priority_patterns:
+  - "packages/*/src/**/*.scss"
+  - "packages/common-css/src/**/*.scss"
+  - "packages/styles/src/**/*.scss"
+
+# Files to exclude from detailed review
+exclude_patterns:
+  - "**/*.stories.ts"
+  - "**/*.stories.js"
+  - "**/CHANGELOG.md"
+  - "node_modules/**"
+  - "dist/**"
+  - ".nx/**"
+
+# Custom review prompts
+custom_prompts:
+  breaking_changes: "Analyze if these changes introduce breaking changes to the public API or existing component styles"
+  accessibility: "Review the accessibility impact of these styling changes, particularly for screen readers and keyboard navigation"
+  performance: "Evaluate the performance impact of these CSS changes on bundle size and rendering performance"
+  consistency: "Check if these changes maintain consistency with the existing design system patterns and conventions"
