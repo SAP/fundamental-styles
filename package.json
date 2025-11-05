@@ -9,7 +9,7 @@
   "packageManager": "yarn@4.10.3",
   "scripts": {
     "transform-stories": "ts-node stories-transformer.ts",
-    "build": "npx nx run-many --target=build --all",
+    "build": "npx nx build workspace-plugins && npx nx run-many --target=build --all",
     "build:prod": "yarn run build --configuration=production --skip-nx-cache",
     "build:theming-preview": "npx nx run theming-preview:build",
     "build:visual-stories": "nx run-many --target=build-visual --all",

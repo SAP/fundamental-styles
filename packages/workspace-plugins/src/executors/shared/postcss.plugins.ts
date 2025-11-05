@@ -1,11 +1,13 @@
 import postcssCleaner from './postcss-cleaner';
 import postcssRemoveFonts from './postcss-remove-fonts';
+import path from 'path';
+import { workspaceRoot } from '@nx/devkit';
 
 const autoprefixer = require('autoprefixer');
 const postcssBanner = require('postcss-banner');
 const postcssNormalizeCharset = require('postcss-normalize-charset');
 const postcssImport = require('postcss-import');
-const packageVersion = require('../../../../../lerna.json').version;
+const packageVersion = require(path.resolve(workspaceRoot, 'lerna.json')).version;
 const year = new Date().getFullYear();
 const cssnano = require('cssnano');
 
