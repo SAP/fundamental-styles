@@ -5,7 +5,7 @@ import {
     withDirectionality,
     withThemeProvider
 } from 'fundamental-styles/storybook';
-import { MainDocPage } from './MainDocPage';
+import { MainDocPage } from './MainDocPage.tsx';
 import { contentDensities, directionalities } from 'fundamental-styles/configuration';
 import { Preview } from '@storybook/html-vite';
 

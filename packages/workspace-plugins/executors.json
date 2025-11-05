@@ -2,22 +2,22 @@
   "$schema": "http://json-schema.org/schema",
   "executors": {
     "build": {
-      "implementation": "./src/executors/build/executor",
+      "implementation": "../../dist/packages/workspace-plugins/src/executors/build/executor.js",
       "schema": "./src/executors/build/schema.json",
       "description": "build executor"
     },
     "visual-stories": {
-      "implementation": "./src/executors/visual-stories/index",
+      "implementation": "../../dist/packages/workspace-plugins/src/executors/visual-stories/index.js",
       "schema": "./src/executors/visual-stories/schema.json",
       "description": "Creates visual stories"
     },
     "build-theming-preview": {
-      "implementation": "./src/executors/build-theming-preview/executor",
+      "implementation": "../../dist/packages/workspace-plugins/src/executors/build-theming-preview/executor.js",
       "schema": "./src/executors/build-theming-preview/schema.json",
       "description": "Builds theming preview project"
     },
     "sync-components": {
-      "implementation": "./src/executors/sync-components/index",
+      "implementation": "../../dist/packages/workspace-plugins/src/executors/sync-components/index.js",
       "schema": "./src/executors/sync-components/schema.json",
       "description": "Syncs exported components"
     }

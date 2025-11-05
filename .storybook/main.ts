@@ -1,14 +1,18 @@
+// This file has been automatically migrated to valid ESM format by Storybook.
 import { createRequire } from "node:module";
 import { StorybookConfig } from '@storybook/html-vite';
 import { readFileSync } from 'fs';
 import { mergeConfig } from 'vite';
 import { loadCsf } from 'storybook/internal/csf-tools';
-import { getOwner } from './custom/addons/utilities/get-owner';
+import { getOwner } from './custom/addons/utilities/get-owner.js';
 import { relative, dirname, join } from 'path';
 import remarkGfm from 'remark-gfm';
-import { storybookPackages } from '../projects';
+import { storybookPackages } from '../projects.js';
 import { resolve } from 'path';
+import { fileURLToPath } from 'url';
 
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
 const require = createRequire(import.meta.url);
 
 const storiesToInclude = () => {

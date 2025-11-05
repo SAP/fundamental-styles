@@ -4,6 +4,16 @@
     "sourceRoot": "packages/workspace-plugins/src",
     "projectType": "library",
     "targets": {
+        "build": {
+            "executor": "@nx/js:tsc",
+            "outputs": ["{options.outputPath}"],
+            "options": {
+                "outputPath": "dist/packages/workspace-plugins",
+                "tsConfig": "packages/workspace-plugins/tsconfig.lib.json",
+                "packageJson": "packages/workspace-plugins/package.json",
+                "main": "packages/workspace-plugins/src/index.ts"
+            }
+        },
         "lint": {
             "executor": "@nx/eslint:lint",
             "outputs": ["{options.outputFile}"]
