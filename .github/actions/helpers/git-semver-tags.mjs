@@ -1,5 +1,5 @@
-const semver = require('semver');
-const { execSync } = require('child_process');
+import semver from 'semver';
+import { execSync } from 'child_process';
 
 const getTags = () => {
     return execSync('git tag -l', { maxBuffer: Infinity })
@@ -25,7 +25,7 @@ const isLessThanOrEqualToMaxVersion = (tag, maxVersion) => {
  * @param skipUnstable
  * @returns {Promise<string[]>}
  */
-module.exports = (maxVersion = null, skipUnstable = false) => {
+export default (maxVersion = null, skipUnstable = false) => {
     return getTags()
         .filter((tag) => isValid(tag) && (!skipUnstable || isStable(tag)) && isLessThanOrEqualToMaxVersion(tag, maxVersion))
         .sort(semver.rcompare);
