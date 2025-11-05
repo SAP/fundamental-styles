@@ -38,14 +38,9 @@ const getCurrentActiveType = version => TypeList.find(type => semver[type](versi
 const getTypePriority = type => TypeList.indexOf(type);
 
 const bumpedVersionType = async () => {
-    const bumper = new Bumper(process.cwd())
-        .loadPreset({
-            name: 'conventional-changelog-conventionalcommits',
-            preMajor: semver.lt(currentVersion, '1.0.0')
-        })
-        .tag('v');
-    
-    const release = await bumper.bump();
+  const bumper = new Bumper()
+    .loadPreset('angular')
+    .tag({ prefix: 'v' });    const release = await bumper.bump();
 
     if (prereleaseRequested) {
         if (isInPrerelease(currentVersion)) {
