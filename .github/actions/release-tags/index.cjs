@@ -1,6 +1,6 @@
 const { getInput, setOutput, info } = require('@actions/core');
-const getVersion = require('../helpers/get-version');
-const gitSemverTags = require('../helpers/git-semver-tags');
+const getVersion = require('../helpers/get-version.cjs');
+const gitSemverTags = require('../helpers/git-semver-tags.cjs');
 const semver = require('semver');
 
 const createTagObject = (ghTag, npmTag, mainNeedsSync) => ({

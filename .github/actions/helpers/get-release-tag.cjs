@@ -1,5 +1,5 @@
 const semver = require('semver');
-const getVersion = require('./get-version');
+const getVersion = require('./get-version.cjs');
 /**
  * Get the release tag for the current release
  * @param isHotfix {boolean}

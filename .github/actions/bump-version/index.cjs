@@ -7,7 +7,7 @@ const releaseType = core.getInput('isPrerelease') !== 'false'  ? 'prerelease' : 
 const isHotfix = core.getInput('isHotfix') !== 'false';
 const currentVersion = lernaJson.version;
 const prereleaseRequested = releaseType === 'prerelease';
-const getReleaseTag = require('../helpers/get-release-tag');
+const getReleaseTag = require('../helpers/get-release-tag.cjs');
 const isManual = core.getInput('isManual') !== 'false';
 
 const isInPrerelease = version => Array.isArray(semver.prerelease(version))

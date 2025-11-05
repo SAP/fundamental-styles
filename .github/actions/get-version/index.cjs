@@ -1,6 +1,6 @@
 const semver = require('semver');
 const { info, setOutput } = require('@actions/core');
-const currentVersion = require('../helpers/current-version');
+const currentVersion = require('../helpers/current-version.cjs');
 
 const isPrerelease = (version) => !!semver.prerelease(version, undefined);
 
