@@ -1,6 +1,6 @@
-const { execSync } = require('child_process');
-const fs = require('fs');
-const path = require('path');
+import { execSync } from 'child_process';
+import { readFileSync } from 'fs';
+import path from 'path';
 
 const BRANCH = 'origin/main';
 const ENCODING = 'utf8';
@@ -23,7 +23,7 @@ const getFileContentFromGit = (filePath, branch) => {
 };
 
 const getFileContentLocally = filePath => {
-    const data = fs.readFileSync(path.join(process.cwd(), filePath), ENCODING);
+    const data = readFileSync(path.join(process.cwd(), filePath), ENCODING);
     return resolveFileContent(filePath, data);
 };
 
@@ -35,7 +35,7 @@ const getFileContentLocally = filePath => {
  * @param branch {string|null}
  * @returns {string | object}
  */
-module.exports = (filePath, branch = BRANCH) => {
+export default (filePath, branch = BRANCH) => {
     return branch
         ? getFileContentFromGit(filePath, branch)
         : getFileContentLocally(filePath);

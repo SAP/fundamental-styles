@@ -1,14 +1,15 @@
-const recommendedVersion = require('conventional-recommended-bump');
-const semver = require('semver');
-const fs = require('fs');
-const core = require('@actions/core');
-const lernaJson = JSON.parse(fs.readFileSync('./lerna.json', 'utf8'));
-const releaseType = core.getInput('isPrerelease') !== 'false'  ? 'prerelease' : 'release';
-const isHotfix = core.getInput('isHotfix') !== 'false';
+import { Bumper } from 'conventional-recommended-bump';
+import semver from 'semver';
+import { readFileSync } from 'fs';
+import * as core from '@actions/core';
+import getReleaseTag from '../helpers/get-release-tag.mjs';
+
+const lernaJson = JSON.parse(readFileSync('./lerna.json', 'utf8'));
+const releaseType = core.getInput('isPrerelease') === 'true'  ? 'prerelease' : 'release';
+const isHotfix = core.getInput('isHotfix') === 'true';
 const currentVersion = lernaJson.version;
 const prereleaseRequested = releaseType === 'prerelease';
-const getReleaseTag = require('../helpers/get-release-tag.cjs');
-const isManual = core.getInput('isManual') !== 'false';
+const isManual = core.getInput('isManual') === 'true';
 
 const isInPrerelease = version => Array.isArray(semver.prerelease(version))
 
@@ -37,13 +38,14 @@ const getCurrentActiveType = version => TypeList.find(type => semver[type](versi
 const getTypePriority = type => TypeList.indexOf(type);
 
 const bumpedVersionType = async () => {
-    const release = await recommendedVersion({
-        preset: {
-            name: require.resolve('conventional-changelog-conventionalcommits'),
+    const bumper = new Bumper(process.cwd())
+        .loadPreset({
+            name: 'conventional-changelog-conventionalcommits',
             preMajor: semver.lt(currentVersion, '1.0.0')
-        },
-        tagPrefix: 'v'
-    });
+        })
+        .tag('v');
+    
+    const release = await bumper.bump();
 
     if (prereleaseRequested) {
         if (isInPrerelease(currentVersion)) {
