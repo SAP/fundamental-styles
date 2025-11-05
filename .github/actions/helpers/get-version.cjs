@@ -1,4 +1,4 @@
-const getFileContents = require('./get-file-contents');
+const getFileContents = require('./get-file-contents.cjs');
 
 const getVersionFromJson = (jsonContent) => {
     return jsonContent.version;

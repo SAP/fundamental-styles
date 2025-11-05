@@ -1,7 +1,7 @@
 const conventionalChangelog = require('conventional-changelog');
 const core = require('@actions/core');
 const through = require('through2');
-const closestVersion = require('./closest-version');
+const closestVersion = require('./closest-version.cjs');
 const childProcess = require('child_process');
 
 const deleteTags = (tags) => {
