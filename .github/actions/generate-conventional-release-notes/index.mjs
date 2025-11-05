@@ -1,4 +1,4 @@
-import conventionalChangelog from 'conventional-changelog';
+import { ConventionalChangelog } from 'conventional-changelog';
 import * as core from '@actions/core';
 import through from 'through2';
 import closestVersion from './closest-version.mjs';
@@ -11,10 +11,13 @@ const deleteTags = (tags) => {
 const generateChangelog = (fromVersion) => {
     return new Promise((resolve, reject) => {
         let generatedReleaseNotes = '';
-        conventionalChangelog({
-            preset: 'angular',
-            releaseCount: 1
-        }, null, { from: fromVersion }, null, { headerPartial: '' })
+        const changelog = new ConventionalChangelog()
+            .loadPreset('angular')
+            .options({ releaseCount: 1 })
+            .context({ from: fromVersion })
+            .writer({ headerPartial: '' });
+            
+        changelog.writeStream()
             .pipe(through(function(chunk, _enc, callback) {
                 this.push(chunk);
                 generatedReleaseNotes += chunk.toString();
