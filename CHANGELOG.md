@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.41.0-rc.75](https://github.com/SAP/fundamental-styles/compare/v0.41.0-rc.74...v0.41.0-rc.75) (2025-11-05)
+
+### Bug Fixes
+
+- correct Bumper API configuration for tag prefix and preset loading [ci visual] ([#6189](https://github.com/SAP/fundamental-styles/issues/6189)) ([2f9f3f0](https://github.com/SAP/fundamental-styles/commit/2f9f3f0b1cc0e09506d91431a1550af0c018ff3e))
+
 # [0.41.0-rc.74](https://github.com/SAP/fundamental-styles/compare/v0.41.0-rc.73...v0.41.0-rc.74) (2025-11-05)
 
 **Note:** Version bump only for package fundamental-styles
@@ -6489,9 +6495,9 @@ Co-authored-by: droshev <mladen.droshev@sap.com>
 
 - added a new modifier class to fd-row to achieve even alignment of its elements:fd-row--top in a form.
   Before:
-  <div class="fd-row">
-  After:
-  <div class="fd-row fd-row--top">
+    <div class="fd-row">
+    After:
+    <div class="fd-row fd-row--top">
 
 ### Bug Fixes
 
