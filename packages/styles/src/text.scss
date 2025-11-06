@@ -38,7 +38,7 @@ $block: #{$fd-namespace}-text;
     @include fd-ai-text-highlight();
   }
 
-  &__subline {
+  &--subline {
     @include fd-line-clamp(2);
 
     font-size: var(--sapFontSmallSize);
