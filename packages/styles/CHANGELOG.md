@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.41.0-rc.78](https://github.com/SAP/fundamental-styles/compare/v0.41.0-rc.77...v0.41.0-rc.78) (2025-11-06)
+
+### Bug Fixes
+
+- **styles:** subline styles for fd-text should be modifier [ci visual] ([#6193](https://github.com/SAP/fundamental-styles/issues/6193)) ([e41b520](https://github.com/SAP/fundamental-styles/commit/e41b5209907f96939b32729732809e7f405a6f18))
+
 # [0.41.0-rc.77](https://github.com/SAP/fundamental-styles/compare/v0.41.0-rc.76...v0.41.0-rc.77) (2025-11-06)
 
 **Note:** Version bump only for package fundamental-styles
