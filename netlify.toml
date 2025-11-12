@@ -11,6 +11,6 @@
   command = "yarn run storybook:static"
 
 [build.environment]
-  NODE_VERSION = "22.21.1"
+  NODE_VERSION = "24.11.1"
   YARN_FLAGS = "--frozen-lockfile"
   YARN_VERSION = "4.10"

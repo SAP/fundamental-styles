@@ -18,6 +18,8 @@ jobs:
     create_release:
         name: Run release
         runs-on: ubuntu-latest
+        permissions:
+          id-token: write
         outputs:
             npmTag: ${{ steps.releaseTags.outputs.npm }}
             ghTag: ${{ steps.releaseTags.outputs.gh }}
@@ -66,7 +68,6 @@ jobs:
               with:
                   packagePaths: 'dist/packages/styles,dist/packages/common-css,dist/packages/theming-preview,dist/packages/cx'
                   isPrerelease: ${{ steps.bumpVersion.outputs.isPrerelease }}
-                  token: ${{ secrets.NPM_TOKEN }}
             
             # This step is for pushing into the main repo if version has been updated by the CI.
             # Commit is created by the lerna version command
