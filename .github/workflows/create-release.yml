@@ -42,7 +42,14 @@ jobs:
               uses: actions/setup-node@v4
               with:
                   node-version: '22.x'
-                  registry-url: 'https://registry.npmjs.org'
+                  # Don't set registry-url to avoid automatic NODE_AUTH_TOKEN setup
+                  
+            - name: Configure npm for trusted publishing
+              run: |
+                  # Configure npm registry without authentication token
+                  npm config set registry https://registry.npmjs.org/
+                  # Ensure no auth token is configured
+                  npm config delete //registry.npmjs.org/:_authToken || true
 
             - name: Install Corepack and Enable Yarn
               run: |
@@ -110,6 +117,13 @@ jobs:
                   echo "Actor: ${{ github.actor }}"
                   echo "Ref: ${{ github.ref }}"
                   echo "Event: ${{ github.event_name }}"
+                  echo ""
+                  echo "=== Environment Check ==="
+                  echo "NODE_AUTH_TOKEN: ${NODE_AUTH_TOKEN:-'(not set - good for trusted publishing)'}"
+                  echo "NPM_TOKEN: ${NPM_TOKEN:-'(not set - good for trusted publishing)'}"
+                  echo ""
+                  echo "=== NPM Config ==="
+                  npm config list
                   echo ""
                   
             - name: Publish packages to NPM
