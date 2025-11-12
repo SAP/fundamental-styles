@@ -50,7 +50,7 @@
         "@chromatic-com/storybook": "^4.1.2",
         "@commitlint/cli": "20.0.0",
         "@commitlint/config-conventional": "20.0.0",
-        "@jsdevtools/npm-publish": "3.0.1",
+        "@jsdevtools/npm-publish": "4.1.1",
         "@nx/devkit": "22.0.2",
         "@nx/eslint": "22.0.2",
         "@nx/eslint-plugin": "22.0.2",

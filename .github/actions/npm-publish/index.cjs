@@ -4,7 +4,6 @@ const { npmPublish } = require('@jsdevtools/npm-publish');
 const packagePaths = core.getInput('packagePaths').split(',').map(path => `./${path}/package.json`);
 const isPrerelease = core.getInput('isPrerelease') !== 'false';
 const isHotfix = core.getInput('isHotfix') !== 'false';
-const npmToken = core.getInput('token');
 const fs = require('fs');
 
 const getNpmTag = () => {
@@ -13,11 +12,10 @@ const getNpmTag = () => {
     return 'latest';
 };
 
-const publish = async ({ currentTryNumber = 1, packageJsonPath, tag, token, access, retryCount }) => {
+const publish = async ({ currentTryNumber = 1, packageJsonPath, tag, access, retryCount }) => {
     try {
         const result = await npmPublish({
             package: packageJsonPath,
-            token,
             tag,
             access
         });
@@ -28,7 +26,6 @@ const publish = async ({ currentTryNumber = 1, packageJsonPath, tag, token, acce
                 currentTryNumber: currentTryNumber + 1,
                 packageJsonPath,
                 tag,
-                token,
                 access
             });
         } else {
@@ -44,7 +41,6 @@ const run = async () => {
         await publish({
             packageJsonPath,
             tag,
-            token: npmToken,
             access: 'public',
             retryCount: 3
         });
