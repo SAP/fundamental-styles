@@ -100,23 +100,6 @@ jobs:
             - run: yarn run lint
             - run: yarn run build:prod
 
-            - name: Debug OIDC and npm setup
-              run: |
-                  echo "=== GitHub Context ==="
-                  echo "Repository: ${{ github.repository }}"
-                  echo "Workflow: ${{ github.workflow }}"
-                  echo "Job: ${{ github.job }}"
-                  echo "Ref: ${{ github.ref }}"
-                  echo "Actor: ${{ github.actor }}"
-                  echo "Event name: ${{ github.event_name }}"
-                  echo ""
-                  echo "=== NPM Configuration ==="
-                  npm config list
-                  echo ""
-                  echo "=== Testing OIDC Token ==="
-                  curl -H "Authorization: bearer $ACTIONS_ID_TOKEN_REQUEST_TOKEN" \
-                       "$ACTIONS_ID_TOKEN_REQUEST_URL&audience=npm" | jq .value || echo "Token request failed"
-
             - name: Publish packages to NPM
               run: |
                   if [ "${{ env.IS_PRERELEASE }}" = "true" ]; then
@@ -130,11 +113,9 @@ jobs:
                   
                   for package_path in dist/packages/styles dist/packages/common-css dist/packages/theming-preview dist/packages/cx; do
                     if [ -f "$package_path/package.json" ]; then
-                      echo "Publishing $package_path with tag $tag"
+                      package_name=$(node -p "require('./$package_path/package.json').name")
+                      echo "Publishing $package_name from $package_path with tag $tag"
                       cd "$package_path"
-                      echo "Running dry-run first..."
-                      npm publish --access public --tag "$tag" --provenance --dry-run
-                      echo "Dry run completed, now attempting real publish..."
                       npm publish --access public --tag "$tag" --provenance
                       cd - > /dev/null
                     fi
