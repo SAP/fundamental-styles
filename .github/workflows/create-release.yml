@@ -109,7 +109,7 @@ jobs:
 
             - name: Debug trusted publishing setup
               run: |
-                  echo "=== Trusted Publishing Debug Info ==="
+                  echo "=== CRITICAL: Trusted Publishing Debug Info ==="
                   echo "Repository: ${{ github.repository }}"
                   echo "Workflow file: ${{ github.workflow_ref }}"
                   echo "Workflow name: ${{ github.workflow }}"
@@ -124,6 +124,11 @@ jobs:
                   echo ""
                   echo "=== NPM Config ==="
                   npm config list
+                  echo ""
+                  echo "=== OIDC Token Test ==="
+                  curl -H "Authorization: bearer $ACTIONS_ID_TOKEN_REQUEST_TOKEN" \
+                       "$ACTIONS_ID_TOKEN_REQUEST_URL&audience=npm" 2>/dev/null | jq -r '.value' | \
+                       python3 -c "import sys, jwt, json; token=sys.stdin.read().strip(); print(json.dumps(jwt.decode(token, options={'verify_signature': False}), indent=2))" 2>/dev/null || echo "Failed to decode OIDC token"
                   echo ""
                   
             - name: Publish packages to NPM
