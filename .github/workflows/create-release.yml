@@ -19,6 +19,7 @@ jobs:
         name: Run release
         runs-on: ubuntu-latest
         permissions:
+          contents: write
           id-token: write
         outputs:
             npmTag: ${{ steps.releaseTags.outputs.npm }}
@@ -39,6 +40,10 @@ jobs:
 
             - name: Setup Node.js and Cache
               uses: ./.github/actions/nodejs
+
+            - name: Configure npm for trusted publishing
+              run: |
+                  npm config set registry https://registry.npmjs.org/
 
             - name: Bump Version
               id: bumpVersion
@@ -64,10 +69,23 @@ jobs:
             - run: yarn run build:prod
 
             - name: Publish packages to NPM
-              uses: ./.github/actions/npm-publish
-              with:
-                  packagePaths: 'dist/packages/styles,dist/packages/common-css,dist/packages/theming-preview,dist/packages/cx'
-                  isPrerelease: ${{ steps.bumpVersion.outputs.isPrerelease }}
+              run: |
+                  if [ "${{ env.IS_PRERELEASE }}" = "true" ]; then
+                    tag="prerelease"
+                  elif [ "${{ env.IS_HOTFIX }}" = "true" ]; then
+                    tag="archive"
+                  else
+                    tag="latest"
+                  fi
+                  echo "Using npm tag: $tag"
+                  for package_path in dist/packages/styles dist/packages/common-css dist/packages/theming-preview dist/packages/cx; do
+                    if [ -f "$package_path/package.json" ]; then
+                      echo "Publishing $package_path with tag $tag"
+                      cd "$package_path"
+                      npm publish --access public --tag "$tag" --provenance
+                      cd - > /dev/null
+                    fi
+                  done
             
             # This step is for pushing into the main repo if version has been updated by the CI.
             # Commit is created by the lerna version command
