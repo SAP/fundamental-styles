@@ -38,12 +38,44 @@ jobs:
                   name: ${{ secrets.GH_NAME }}
                   email: ${{ secrets.GH_EMAIL }}
 
-            - name: Setup Node.js and Cache
-              uses: ./.github/actions/nodejs
+            - name: Setup Node.js for trusted publishing
+              uses: actions/setup-node@v4
+              with:
+                  node-version: '22.x'
+                  registry-url: 'https://registry.npmjs.org'
 
-            - name: Configure npm for trusted publishing
+            - name: Install Corepack and Enable Yarn
               run: |
-                  npm config set registry https://registry.npmjs.org/
+                  echo "Installing Corepack..."
+                  npm install -g corepack || { echo 'Corepack installation failed'; exit 1; }
+                  echo "Corepack installed successfully."
+                  corepack --version
+                  corepack enable yarn
+
+            - name: Get yarn cache directory path
+              id: yarn-cache-dir-path
+              run: echo "dir=$(yarn config get cacheFolder)" >> $GITHUB_OUTPUT
+
+            - name: Use the global Yarn cache if available
+              uses: actions/cache@v4
+              with:
+                  path: ${{ steps.yarn-cache-dir-path.outputs.dir }}
+                  key: ${{ runner.os }}-node-22.x-yarn-${{ hashFiles('**/yarn.lock') }}
+                  restore-keys: |
+                      ${{ runner.os }}-node-22.x-yarn-
+
+            - uses: actions/cache@v4
+              id: node-modules-cache
+              name: Use project node_modules cache if available
+              with:
+                path: '**/node_modules/'
+                key: ${{ runner.os }}-22.x-node-modules-${{ hashFiles('**/yarn.lock') }}
+                restore-keys: |
+                  ${{ runner.os }}-22.x-node-modules-
+
+            - name: Install dependencies
+              if: steps.node-modules-cache.outputs.cache-hit != 'true'
+              run: yarn install --immutable
 
             - name: Bump Version
               id: bumpVersion
@@ -68,6 +100,23 @@ jobs:
             - run: yarn run lint
             - run: yarn run build:prod
 
+            - name: Debug OIDC and npm setup
+              run: |
+                  echo "=== GitHub Context ==="
+                  echo "Repository: ${{ github.repository }}"
+                  echo "Workflow: ${{ github.workflow }}"
+                  echo "Job: ${{ github.job }}"
+                  echo "Ref: ${{ github.ref }}"
+                  echo "Actor: ${{ github.actor }}"
+                  echo "Event name: ${{ github.event_name }}"
+                  echo ""
+                  echo "=== NPM Configuration ==="
+                  npm config list
+                  echo ""
+                  echo "=== Testing OIDC Token ==="
+                  curl -H "Authorization: bearer $ACTIONS_ID_TOKEN_REQUEST_TOKEN" \
+                       "$ACTIONS_ID_TOKEN_REQUEST_URL&audience=npm" | jq .value || echo "Token request failed"
+
             - name: Publish packages to NPM
               run: |
                   if [ "${{ env.IS_PRERELEASE }}" = "true" ]; then
@@ -78,10 +127,14 @@ jobs:
                     tag="latest"
                   fi
                   echo "Using npm tag: $tag"
+                  
                   for package_path in dist/packages/styles dist/packages/common-css dist/packages/theming-preview dist/packages/cx; do
                     if [ -f "$package_path/package.json" ]; then
                       echo "Publishing $package_path with tag $tag"
                       cd "$package_path"
+                      echo "Running dry-run first..."
+                      npm publish --access public --tag "$tag" --provenance --dry-run
+                      echo "Dry run completed, now attempting real publish..."
                       npm publish --access public --tag "$tag" --provenance
                       cd - > /dev/null
                     fi
