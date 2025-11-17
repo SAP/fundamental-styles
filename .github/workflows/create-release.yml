@@ -44,6 +44,9 @@ jobs:
                   node-version: '22.x'
                   # Don't set registry-url to avoid automatic NODE_AUTH_TOKEN setup
                   
+            - name: Update npm for trusted publishing
+              run: npm install -g npm@latest
+
             - name: Configure npm for trusted publishing
               run: |
                   # Configure npm registry without authentication token
