@@ -8,7 +8,7 @@ on:
             - tmp_hotfix_branch
 
 permissions:
-  contents: read
+  contents: write
   id-token: write
 env:
     IS_HOTFIX: ${{ github.ref == 'refs/heads/tmp_hotfix_branch' }}
@@ -30,7 +30,7 @@ jobs:
               with:
                   ref: ${{ fromJSON('["tmp_hotfix_branch", "main"]')[env.IS_HOTFIX] }}
                   fetch-depth: 0
-                  token: ${{ secrets.GITHUB_TOKEN }}
+                  token: ${{ secrets.GHACTIONS }}
 
             - uses: ./.github/actions/set-up-git
               name: Set up git user
@@ -180,7 +180,7 @@ jobs:
                   prerelease: ${{ steps.bumpVersion.outputs.isPrerelease }}
                   tag: v${{ steps.bumpVersion.outputs.newVersion }}
                   body: ${{ steps.generate_body.outputs.generatedReleaseNotes }}
-                  token: ${{ secrets.GITHUB_TOKEN }}
+                  token: ${{ secrets.GHACTIONS }}
             # This step is for pushing into the main only the version change, without anything else.
             # This is useful when user created a Hotfix, and we need to sync the version on main
             # if hotfix version is higher than latest stable and RC versions.
@@ -207,7 +207,7 @@ jobs:
               uses: actions/checkout@v4.2.2
               with:
                   ref: main # always fetch from main branch
-                  token: ${{ secrets.GITHUB_TOKEN }}
+                  token: ${{ secrets.GHACTIONS }}
 
             - name: Setup Node.js and Cache
               uses: ./.github/actions/nodejs
