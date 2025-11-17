@@ -30,7 +30,7 @@ jobs:
               with:
                   ref: ${{ fromJSON('["tmp_hotfix_branch", "main"]')[env.IS_HOTFIX] }}
                   fetch-depth: 0
-                  token: ${{ secrets.GHACTIONS }}
+                  token: ${{ secrets.GITHUB_TOKEN }}
 
             - uses: ./.github/actions/set-up-git
               name: Set up git user
@@ -180,6 +180,7 @@ jobs:
                   prerelease: ${{ steps.bumpVersion.outputs.isPrerelease }}
                   tag: v${{ steps.bumpVersion.outputs.newVersion }}
                   body: ${{ steps.generate_body.outputs.generatedReleaseNotes }}
+                  token: ${{ secrets.GITHUB_TOKEN }}
             # This step is for pushing into the main only the version change, without anything else.
             # This is useful when user created a Hotfix, and we need to sync the version on main
             # if hotfix version is higher than latest stable and RC versions.
@@ -206,7 +207,7 @@ jobs:
               uses: actions/checkout@v4.2.2
               with:
                   ref: main # always fetch from main branch
-                  token: ${{ secrets.GHACTIONS }}
+                  token: ${{ secrets.GITHUB_TOKEN }}
 
             - name: Setup Node.js and Cache
               uses: ./.github/actions/nodejs
@@ -218,5 +219,5 @@ jobs:
               uses: JamesIves/github-pages-deploy-action@v4.7.3
               with:
                   folder: storybook-static
-                  token: ${{ secrets.GHACTIONS }}
+                  token: ${{ secrets.GITHUB_TOKEN }}
                   repository-name: ${{ github.repository }}
