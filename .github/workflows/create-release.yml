@@ -49,9 +49,7 @@ jobs:
 
             - name: Configure npm for trusted publishing
               run: |
-                  # Configure npm registry without authentication token
                   npm config set registry https://registry.npmjs.org/
-                  # Ensure no auth token is configured
                   npm config delete //registry.npmjs.org/:_authToken || true
 
             - name: Install Corepack and Enable Yarn
@@ -110,30 +108,6 @@ jobs:
             - run: yarn run lint
             - run: yarn run build:prod
 
-            - name: Debug trusted publishing setup
-              run: |
-                  echo "=== CRITICAL: Trusted Publishing Debug Info ==="
-                  echo "Repository: ${{ github.repository }}"
-                  echo "Workflow file: ${{ github.workflow_ref }}"
-                  echo "Workflow name: ${{ github.workflow }}"
-                  echo "Job: ${{ github.job }}"
-                  echo "Actor: ${{ github.actor }}"
-                  echo "Ref: ${{ github.ref }}"
-                  echo "Event: ${{ github.event_name }}"
-                  echo ""
-                  echo "=== Environment Check ==="
-                  echo "NODE_AUTH_TOKEN: ${NODE_AUTH_TOKEN:-'(not set - good for trusted publishing)'}"
-                  echo "NPM_TOKEN: ${NPM_TOKEN:-'(not set - good for trusted publishing)'}"
-                  echo ""
-                  echo "=== NPM Config ==="
-                  npm config list
-                  echo ""
-                  echo "=== OIDC Token Test ==="
-                  curl -H "Authorization: bearer $ACTIONS_ID_TOKEN_REQUEST_TOKEN" \
-                       "$ACTIONS_ID_TOKEN_REQUEST_URL&audience=npm" 2>/dev/null | jq -r '.value' | \
-                       python3 -c "import sys, jwt, json; token=sys.stdin.read().strip(); print(json.dumps(jwt.decode(token, options={'verify_signature': False}), indent=2))" 2>/dev/null || echo "Failed to decode OIDC token"
-                  echo ""
-                  
             - name: Publish packages to NPM
               run: |
                   if [ "${{ env.IS_PRERELEASE }}" = "true" ]; then
@@ -150,15 +124,7 @@ jobs:
                       package_name=$(node -p "require('./$package_path/package.json').name")
                       echo "Publishing $package_name from $package_path with tag $tag"
                       cd "$package_path"
-                      
-                      # Try a more verbose npm publish to get better error info
-                      echo "Attempting to publish with full debug info..."
-                      npm publish --tag "$tag" --provenance --verbose || {
-                        echo "Publish failed. Checking npm whoami and config..."
-                        npm whoami 2>&1 || echo "npm whoami failed (expected for trusted publishing)"
-                        npm config list
-                        exit 1
-                      }
+                      npm publish --tag "$tag" --provenance
                       cd - > /dev/null
                     fi
                   done
