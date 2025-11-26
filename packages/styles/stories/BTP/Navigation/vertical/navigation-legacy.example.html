@@ -56,7 +56,7 @@
                 >
                     <li class="fd-navigation__list-item" aria-hidden="true">
                         <div 
-                            class="fd-navigation__item" 
+                            class="fd-navigation__item fd-navigation__item--with-expander" 
                             aria-level="2" 
                             role="treeitem" 
                             title="Basket"
@@ -64,11 +64,12 @@
                             aria-expanded="true" 
                             aria-selected="false"
                         >
-                            <a class="fd-navigation__link" role="button" tabindex="-1"  onclick="toggleNavigationSubmenu(event)">
+                            <a class="fd-navigation__link" role="button" tabindex="-1">
                                 <span class="fd-navigation__icon sap-icon--unfavorite" role="presentation" aria-hidden="true"></span>
                                 <span class="fd-navigation__text">Favorites</span>
                                 <span class="fd-navigation__has-children-indicator" role="presentation" aria-hidden="true" aria-label="has children indicator, expanded"></span>
                             </a>
+                            <span class="fd-navigation__has-children-indicator" role="button" aria-label="expand/collapse children"></span>
                         </div>
                         <div class="fd-navigation__list-container" aria-hidden="true">
                             <div class="fd-navigation__list-wrapper" aria-hidden="true">
@@ -127,7 +128,7 @@
                         >
                             <a class="fd-navigation__link" href="#">
                                 <span class="fd-navigation__icon sap-icon--account" role="presentation" aria-hidden="true"></span>
-                                <span class="fd-navigation__text">Customer Management</span>
+                                <span class="fd-navigation__text">Customer Management Reports</span>
                                 <span class="fd-navigation__selection-indicator" role="presentation" aria-hidden="true" aria-label="selection indicator"></span>
                             </a>
                             <span class="fd-navigation__has-children-indicator" role="button" aria-label="expand/collapse children"></span>

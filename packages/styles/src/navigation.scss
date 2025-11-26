@@ -63,7 +63,7 @@ $navExternalLinkIndicator: #{$block}__external-link-indicator;
   --fdNavigation_Link_Icon_Size: 1rem;
   --fdNavigation_Link_Icon_Color: var(--sapList_TextColor);
   --fdNavigation_Link_Min_Height: var(--sapElement_LineHeight);
-  --fdNavigation_Link_Font_Family: var(--sapFontBoldFamily);
+  --fdNavigation_Link_Font_Family: var(--sapFontSemiboldDuplexFamily);
   --fdNavigation_Link_Spacing: 0.5rem;
   --fdNavigation_Link_Text_Color: inherit;
   --fdNavigation_Link_Shift_Left: 1rem;
@@ -167,7 +167,7 @@ $navExternalLinkIndicator: #{$block}__external-link-indicator;
       @include fd-set-paddings-x-equal(var(--fdNavigation_Padding_X));
 
       height: 100%;
-      overflow: scroll;
+      overflow-y: scroll;
       position: relative;
       padding-block-end: 0.25rem;
     }
@@ -402,15 +402,57 @@ $navExternalLinkIndicator: #{$block}__external-link-indicator;
     &--with-expander {
       .#{$navLink} {
         --fdNavigation_Link_Padding_Right: calc(var(--fdNavigation_Controls_Width) + 1.3125rem);
+        --fdNavigation_Link_Area_Background_Offset: 0.0625rem;
+
+         @include fd-hover() {
+          --fdNavigation_Link_Background: var(--sapList_Background);
+
+          &::after {
+            top: var(--fdNavigation_Link_Area_Background_Offset);
+            left: var(--fdNavigation_Link_Area_Background_Offset);
+            bottom: var(--fdNavigation_Link_Area_Background_Offset);
+            content: "";
+            z-index: 6;
+            height: calc(100% - 2 * var(--fdNavigation_Link_Area_Background_Offset));
+            position: absolute;
+            background: var(--fdNavigation_Link_Area_Background, var(--sapList_Hover_Background));
+            border-radius: var(--fdNavigation_Link_Border_Radius);
+            width: calc(100% - var(--fdNavigation_Controls_Width) - 1.3125rem);
+          }
+
+          @include fd-rtl() {
+            &::after {
+              right: 0;
+              left: auto;
+            }
+          }
+         }
+
+         @include fd-focus() {
+          @include fd-hover() {
+            --fdNavigation_Link_Background: var(--sapList_Background);
+            --fdNavigation_Link_Area_Background_Offset: 0.125rem;
+         }
+        }
       }
 
       .#{$navChildrenIndicator} {
         --fdNavigation_Link_Has_Child_Indicator_Display: flex;
 
-        z-index: 20;
-        position: absolute;
-        right: var(--fdNavigation_Link_Has_Child_Indicator_Pos_Right, 0.375rem);
+        z-index: 7;
         cursor: pointer;
+        position: absolute;
+        border-radius: var(--sapButton_BorderCornerRadius);
+        right: var(--fdNavigation_Link_Has_Child_Indicator_Pos_Right, 0.375rem);
+
+        @include fd-rtl() {
+          right: auto;
+          left: var(--fdNavigation_Link_Has_Child_Indicator_Pos_Right, 0.375rem);
+        }
+
+        @include fd-hover() {
+          background: var(--fdNavigation_Children_Indicator_Background, var(--sapList_Hover_Background));
+        }
 
         &::after {
           content: "";
@@ -421,11 +463,18 @@ $navExternalLinkIndicator: #{$block}__external-link-indicator;
           position: absolute;
           display: var(--fdNavigation_Link_Has_Child_Indicator_Div_Display, inline-block)
         }
+
+        @include fd-rtl() {
+          &::after {
+            left: auto;
+            right: -0.25rem;
+          }
+        }
       }
 
       @include fd-hover() {
         .#{$navLink} {
-          --fdNavigation_Link_Background: var(--sapList_Hover_Background);
+          --fdNavigation_Link_Background: var(--sapList_Background);
           --fdNavigation_Link_Border_Color: var(--fdNavigation_Link_Border_Color_Hover);
           --fdNavigation_Link_Border_Bottom_Color: var(--fdNavigation_Link_Border_Color_Hover);
         }
@@ -433,16 +482,33 @@ $navExternalLinkIndicator: #{$block}__external-link-indicator;
 
       @include fd-active() {
         .#{$navLink} {
-          --fdNavigation_Link_Background: var(--sapList_Active_Background);
+          --fdNavigation_Link_Area_Background: var(--sapList_Active_Background);
+          --fdNavigation_Link_Background: var(--sapList_Background);
           --fdNavigation_Link_Border_Color: var(--fdNavigation_Link_Border_Color_Active);
           --fdNavigation_Link_Border_Bottom_Color: var(--fdNavigation_Link_Border_Color_Active);
+          
+        }
+
+        .#{$navChildrenIndicator} {
+          --fdNavigation_Children_Indicator_Background: var(--sapList_Active_Background);
         }
       }
 
       @include fd-selected() {
+        .#{$navLink} {
+          --fdNavigation_Link_Background: var(--sapList_SelectionBackgroundColor);
+        }
+
         @include fd-hover() {
           .#{$navLink} {
-            --fdNavigation_Link_Background: var(--sapList_Hover_SelectionBackground);
+            --fdNavigation_Link_Background: var(--sapList_SelectionBackgroundColor);
+            --fdNavigation_Link_Area_Background: var(--sapList_Hover_SelectionBackground);
+          }
+        }
+
+        .#{$navChildrenIndicator} {
+          @include fd-hover() {
+            --fdNavigation_Children_Indicator_Background: var(--sapList_Hover_SelectionBackground);
           }
         }
       }
@@ -458,6 +524,10 @@ $navExternalLinkIndicator: #{$block}__external-link-indicator;
         }
       }
 
+      .#{$navText} {
+        @include fd-ellipsis();
+      }
+
       --fdNavigation_Link_Text_Color: var(--sapButton_TextColor);
       --fdNavigation_Link_Icon_Color: var(--sapButton_TextColor);
 
@@ -471,6 +541,7 @@ $navExternalLinkIndicator: #{$block}__external-link-indicator;
     @include fd-icon-selector() {
       @include fd-flex-center();
 
+      z-index: 7;
       color: var(--fdNavigation_Link_Icon_Color);
       font-family: var(--sapFontBoldFamily);
       font-size: var(--fdNavigation_Link_Icon_Size);
@@ -479,15 +550,17 @@ $navExternalLinkIndicator: #{$block}__external-link-indicator;
 
   &__text {
     @include fd-reset();
-    @include fd-ellipsis();
 
     width: 100%;
+    z-index: 7;
     line-height: 1rem;
+    word-break: break-word;
     vertical-align: baseline;
     color: var(--fdNavigation_Link_Text_Color);
     font-size: var(--fdNavigation_Link_Font_Size);
     display: var(--fdNavigation_Item_Text_Display);
     font-family: var(--fdNavigation_Link_Font_Family);
+    margin-block: var(--fdNavigation_Text_Vertical_Margin, 0.875rem);
   }
 
   &__selection-indicator {
@@ -499,6 +572,7 @@ $navExternalLinkIndicator: #{$block}__external-link-indicator;
     top: 0;
     width: 0.188rem;
     height: 100%;
+    z-index: 7;
     background: var(--sapList_SelectionBorderColor);
     display: var(--fdNavigation_Link_Selection_Indicator_Display);
   }
@@ -589,6 +663,7 @@ $navExternalLinkIndicator: #{$block}__external-link-indicator;
         position: absolute;
         padding-block: 0.5rem;
         padding-inline: 0.5rem;
+        min-width: 10rem;
 
         .#{$navListWrapper} {
           padding-inline: 0;
@@ -1080,5 +1155,6 @@ $navExternalLinkIndicator: #{$block}__external-link-indicator;
     --fdNavigation_Link_Min_Height: 2rem;
     --fdNavigation_Controls_Width: 2rem;
     --fdNavigation_Controls_Height: 1.5625rem;
+    --fdNavigation_Text_Vertical_Margin: 0.5rem;
   }
 }
