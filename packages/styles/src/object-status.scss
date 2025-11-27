@@ -735,10 +735,10 @@ $inverted-color-accents-b: (
 
   max-width: 100%;
   position: relative;
+  height: fit-content;
   word-break: break-word;
-  height: var(--fdObjectStatus_Height);
   color: var(--fdObjectStatus_Text_Color);
-  max-height: var(--fdObjectStatus_Height);
+  min-height: var(--fdObjectStatus_Height);
   line-height: var(--fdObjectStatus_Height);
   text-shadow: var(--fdObjectStatus_Text_Shadow);
   font-size: var(--fdObjectStatus_Text_Font_Size);
