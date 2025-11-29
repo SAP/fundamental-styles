@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.41.0-rc.83](https://github.com/SAP/fundamental-styles/compare/v0.41.0-rc.82...v0.41.0-rc.83) (2025-11-29)
+
+### Bug Fixes
+
+- **styles:** remove max-height from Object status [ci visual] ([#6210](https://github.com/SAP/fundamental-styles/issues/6210)) ([eb0f7a2](https://github.com/SAP/fundamental-styles/commit/eb0f7a286951731720def799f1906c4b06eb0c4f))
+
 # [0.41.0-rc.82](https://github.com/SAP/fundamental-styles/compare/v0.41.0-rc.81...v0.41.0-rc.82) (2025-11-17)
 
 **Note:** Version bump only for package fundamental-styles
@@ -6523,9 +6529,9 @@ Co-authored-by: droshev <mladen.droshev@sap.com>
 
 - added a new modifier class to fd-row to achieve even alignment of its elements:fd-row--top in a form.
   Before:
-    <div class="fd-row">
-    After:
-    <div class="fd-row fd-row--top">
+      <div class="fd-row">
+      After:
+      <div class="fd-row fd-row--top">
 
 ### Bug Fixes
 
