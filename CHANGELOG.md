@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.41.0-rc.84](https://github.com/SAP/fundamental-styles/compare/v0.41.0-rc.83...v0.41.0-rc.84) (2025-12-01)
+
+### Bug Fixes
+
+- **styles:** add correct font-family and font-weight for Table header text [ci visual] ([#6208](https://github.com/SAP/fundamental-styles/issues/6208)) ([9c90fc8](https://github.com/SAP/fundamental-styles/commit/9c90fc8af18cd853234512e7b6b25b67c33f58a8))
+
 # [0.41.0-rc.83](https://github.com/SAP/fundamental-styles/compare/v0.41.0-rc.82...v0.41.0-rc.83) (2025-11-29)
 
 ### Bug Fixes
@@ -6529,9 +6535,9 @@ Co-authored-by: droshev <mladen.droshev@sap.com>
 
 - added a new modifier class to fd-row to achieve even alignment of its elements:fd-row--top in a form.
   Before:
-      <div class="fd-row">
-      After:
-      <div class="fd-row fd-row--top">
+  <div class="fd-row">
+  After:
+  <div class="fd-row fd-row--top">
 
 ### Bug Fixes
 
