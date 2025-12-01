@@ -68,7 +68,7 @@ $table-z-index: (
       height: var(--fdTable_Header_Cell_Height);
       background-color: var(--sapList_HeaderBackground);
       color: var(--sapList_HeaderTextColor);
-      font-weight: var(--fdTable_Header_Cell_Font_Weight);
+      font-family: var(--sapFontSemiboldDuplexFamily);
       border-top: var(--fdTable_Header_Horizontal_Border);
       border-bottom: var(--fdTable_Header_Horizontal_Border);
 
