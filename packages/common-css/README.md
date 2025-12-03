@@ -25,7 +25,7 @@ Learn more at [http://sap.github.io/fundamental-styles/](http://sap.github.io/fu
 SAP UI Common CSS Package can stand on its own. To install the package:
 
 ```bash
-npm i @sap-ui/common-css
+npm i @fundamental-styles/common-css
 ```
 
 ## Theming Prerequisites
@@ -50,14 +50,14 @@ Links:
 Include the compiled CSS file from the dist folder.
 Full build:
 ```bash
-<link rel="stylesheet" href="node_modules/@sap-ui/common-css/dist/common-css.css" />
+<link rel="stylesheet" href="node_modules/@fundamental-styles/common-css/dist/common-css.css" />
 ```
 
 Modular imports (e.g., only colors or borders):
 
 ```bash
-<link rel="stylesheet" href="node_modules/@sap-ui/common-css/dist/sap-colors.css" />
-<link rel="stylesheet" href="node_modules/@sap-ui/common-css/dist/sap-border.css" />
+<link rel="stylesheet" href="node_modules/@fundamental-styles/common-css/dist/sap-colors.css" />
+<link rel="stylesheet" href="node_modules/@fundamental-styles/common-css/dist/sap-border.css" />
 
 ```
 
@@ -66,11 +66,11 @@ If you are using a build tool like Webpack, Vite, or Parcel, you can import the 
 
 ```bash
 // Import the full build
-@import "~@sap-ui/common-css/dist/common-css.css";
+@import "~@fundamental-styles/common-css/dist/common-css.css";
 
 // Or import specific modules
-@import "~@sap-ui/common-css/dist/sap-colors.css";
-@import "~@sap-ui/common-css/dist/sap-border.css";
+@import "~@fundamental-styles/common-css/dist/sap-colors.css";
+@import "~@fundamental-styles/common-css/dist/sap-border.css";
 
 ```
 
@@ -83,8 +83,8 @@ The sass folder includes:
 - _common-settings.scss
 
 ```bash
-@import "~@sap-ui/common-css/sass/_common-variables.scss";
-@import "~@sap-ui/common-css/sass/_common-mixins.scss";
+@import "~@fundamental-styles/common-css/sass/_common-variables.scss";
+@import "~@fundamental-styles/common-css/sass/_common-mixins.scss";
 
 .my-element {
   @include sap-padding(1rem);
@@ -99,7 +99,7 @@ The sass folder includes:
 ## Folder Structure
 
 ```bash
-@sap-ui/common-css/
+@fundamental-styles/common-css/
 │
 ├── dist/
 │   ├── common-css.css          // Full build
