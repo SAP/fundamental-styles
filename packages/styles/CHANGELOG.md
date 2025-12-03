@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.41.0-rc.90](https://github.com/SAP/fundamental-styles/compare/v0.41.0-rc.89...v0.41.0-rc.90) (2025-12-03)
+
+### Bug Fixes
+
+- **styles:** visual changes to Side Nav after design review [ci visual] ([#6217](https://github.com/SAP/fundamental-styles/issues/6217)) ([f6655ba](https://github.com/SAP/fundamental-styles/commit/f6655ba7a85a8f681addf56e0b12f6a078d16e62))
+
 # [0.41.0-rc.89](https://github.com/SAP/fundamental-styles/compare/v0.41.0-rc.88...v0.41.0-rc.89) (2025-12-03)
 
 **Note:** Version bump only for package fundamental-styles
