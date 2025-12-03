@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.0.0-rc.0](https://github.com/SAP/fundamental-styles/compare/v0.41.0-rc.85...v1.0.0-rc.0) (2025-12-03)
+
+### Bug Fixes
+
+- **common-css:** change common-css npm package ([#6213](https://github.com/SAP/fundamental-styles/issues/6213)) ([f7b80cd](https://github.com/SAP/fundamental-styles/commit/f7b80cd25d9c6a3b74d1f1912ad5aa50fd9ae420))
+
+### BREAKING CHANGES
+
+- **common-css:** move common-css package from @sap-ui/common-css to @fundamental-styles/common-css
+
 # [0.41.0-rc.85](https://github.com/SAP/fundamental-styles/compare/v0.41.0-rc.84...v0.41.0-rc.85) (2025-12-03)
 
 **Note:** Version bump only for package @sap-ui/common-css
