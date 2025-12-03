@@ -14,6 +14,6 @@
     "homepage": "https://sap.github.io/fundamental-styles/",
     "peerDependencies": {
         "@sap-theming/theming-base-content": "SAP_THEMING_VERSION",
-        "@sap-ui/common-css": "VERSION_PLACEHOLDER"
+        "@fundamental-styles/common-css": "VERSION_PLACEHOLDER"
     }
 }
