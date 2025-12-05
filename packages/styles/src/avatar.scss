@@ -23,7 +23,6 @@ $block: #{$fd-namespace}-avatar;
   font-size: var(--fdAvatarFontSize);
   box-shadow: var(--fdAvatarBoxShadow);
   text-shadow: var(--fdAvatarTextShadow);
-  font-stretch: var(--fdAvatarFontStretch);
   border-radius: var(--fdAvatarBorderRadius);
   background-size: var(--fdAvatarBackgroundSize);
   background-color: var(--fdAvatarBackgroundColor);
@@ -229,7 +228,6 @@ $block: #{$fd-namespace}-avatar;
       --fdAvatarZoomIconOffset: #{map.get($size-set, "offset")};
       --fdAvatarRatio: #{map.get($size-set, "ratio")};
       --fdAvatarFontSize: #{map.get($size-set, "font-size")};
-      --fdAvatarFontStretch: #{map.get($size-set, "fontStretch")};
 
       .#{$block}__zoom-icon {
         @include fd-icon-selector() {
