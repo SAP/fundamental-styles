@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.41.0-rc.91](https://github.com/SAP/fundamental-styles/compare/v0.41.0-rc.90...v0.41.0-rc.91) (2025-12-05)
+
+### Bug Fixes
+
+- **styles:** remove font-stretch for Avatar [ci visual] ([#6219](https://github.com/SAP/fundamental-styles/issues/6219)) ([94a54fb](https://github.com/SAP/fundamental-styles/commit/94a54fbfdedeea10d7a30c963bf660c795b08ab3))
+
 # [0.41.0-rc.90](https://github.com/SAP/fundamental-styles/compare/v0.41.0-rc.89...v0.41.0-rc.90) (2025-12-03)
 
 ### Bug Fixes
@@ -6563,9 +6569,9 @@ Co-authored-by: droshev <mladen.droshev@sap.com>
 
 - added a new modifier class to fd-row to achieve even alignment of its elements:fd-row--top in a form.
   Before:
-  <div class="fd-row">
-  After:
-  <div class="fd-row fd-row--top">
+    <div class="fd-row">
+    After:
+    <div class="fd-row fd-row--top">
 
 ### Bug Fixes
 
