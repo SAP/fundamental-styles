@@ -165,7 +165,7 @@ $menu: #{$fd-namespace}-menu;
         font-family: var(--sapFontBlackFamily);
         font-size: 1.25rem;
         line-height: 1.3;
-        color: var(-–sapTitleColor);
+        color: var(--sapTitleColor);
       }
 
       &__navigation-submenu {
@@ -187,7 +187,7 @@ $menu: #{$fd-namespace}-menu;
         font-family: var(--sapFontFamily);
         font-size: var(--sapFontSize);
         line-height: var(--sapContent_LineHeight);
-        color: var(–sapContent_LabelColor);
+        color: var(--sapContent_LabelColor);
       }
   
       &__body {
