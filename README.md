@@ -80,11 +80,75 @@ Available values for `themeName` are
 The compiled CSS for the full library and modules, e.g., core, layout, etc., are distributed
 via [NPM](https://www.npmjs.com/package/fundamental-styles).
 
+#### Installation
+
 ````
 npm install fundamental-styles --save
 ````
 
+Or with yarn:
+
+````
+yarn add fundamental-styles
+````
+
 > NOTE: We only distribute compiled CSS for each component, not the full project or HTML for specific components.
+
+#### Usage
+
+After installation, you can import the styles into your project in several ways:
+
+**Option 1: Import in JavaScript/TypeScript**
+
+If you're using a bundler like Webpack, Vite, or Rollup, you can import the CSS directly in your JavaScript/TypeScript files:
+
+```javascript
+// Import all styles
+import 'fundamental-styles/dist/fundamental-styles.css';
+```
+
+**Option 2: Import in SCSS/CSS files**
+
+You can also import in your main stylesheet:
+
+```scss
+/* Import all styles */
+@import 'fundamental-styles/dist/fundamental-styles.css';
+```
+
+**Option 3: Import specific components**
+
+To reduce bundle size, you can import only the components you need:
+
+```javascript
+// Import specific component styles
+import 'fundamental-styles/dist/icon.css';
+import 'fundamental-styles/dist/button.css';
+import 'fundamental-styles/dist/input.css';
+```
+
+#### Theming with NPM
+
+When using the NPM package, you'll also need to install the theming base content:
+
+```bash
+npm install @sap-theming/theming-base-content --save
+```
+
+Then import the theme CSS files:
+
+```javascript
+// Import theme base variables
+import '@sap-theming/theming-base-content/content/Base/baseLib/sap_horizon/css_variables.css';
+
+// Import fundamental-styles theme customizations
+import 'fundamental-styles/dist/theming/sap_horizon.css';
+
+// Import fundamental-styles components
+import 'fundamental-styles/dist/fundamental-styles.css';
+```
+
+Available theme names: `sap_horizon`, `sap_horizon_dark`, `sap_horizon_hcb`, `sap_horizon_hcw`, `sap_horizon_set`, `sap_fiori_3`, `sap_fiori_3_dark`, `sap_fiori_3_hcb`, `sap_fiori_3_hcw`, `sap_fiori_3_set`, `sap_fiori_3_light_dark`
 
 
 ### Icons
