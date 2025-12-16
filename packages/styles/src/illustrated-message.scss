@@ -85,16 +85,14 @@ $block: #{$fd-namespace}-illustrated-message;
   @mixin fd-illustarted-messages-xsmall() {
     // Block
     --illustratedMessagePadding: 0.25rem;
-    --containerFlexDirection: row;
-    --containerFlexAlignment: flex-start;
 
     // Illustration
     --illustrationMinWidth: 2.8125rem;
     --illustrationMaxWidth: 2.8125rem;
     --illustrationMinHeight: 2.8125rem;
     --illustrationMaxHeight: 2.8125rem;
-    --illustrationMarginBlock: 0;
-    --illustrationMarginInlineEnd: 0.25rem;
+    --illustrationMarginBlock: 0 0.25rem;
+    --illustrationMarginInlineEnd: 0;
 
     // Figcaption
     --figcaptionMaxWidth: 12.6875rem;
@@ -109,7 +107,6 @@ $block: #{$fd-namespace}-illustrated-message;
     // Actions
     --actionsMarginBlock: 0.25rem;
     --actionsMarginInline: auto;
-    --actionsPaddingInlineStart: var(--illustrationMaxWidth);
   }
 
   @mixin fd-illustarted-messages-base() {
