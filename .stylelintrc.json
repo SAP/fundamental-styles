@@ -45,7 +45,7 @@
     "scss/dollar-variable-pattern": null,
     "scss/dollar-variable-colon-space-after": "always",
     "scss/dollar-variable-colon-space-before": "never",
-    "scss/dollar-variable-no-missing-interpolation": true,
+    "scss/dollar-variable-no-missing-interpolation": null,
     "scss/double-slash-comment-whitespace-inside": "always",
     "scss/operator-no-newline-before": true,
     "value-keyword-case": null
