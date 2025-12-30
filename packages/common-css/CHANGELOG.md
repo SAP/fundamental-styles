@@ -3,6 +3,10 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.41.0-rc.97](https://github.com/SAP/fundamental-styles/compare/v0.41.0-rc.96...v0.41.0-rc.97) (2025-12-30)
+
+**Note:** Version bump only for package @fundamental-styles/common-css
+
 # [0.41.0-rc.96](https://github.com/SAP/fundamental-styles/compare/v0.41.0-rc.95...v0.41.0-rc.96) (2025-12-25)
 
 **Note:** Version bump only for package @fundamental-styles/common-css
