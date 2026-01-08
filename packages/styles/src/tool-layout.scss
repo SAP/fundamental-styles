@@ -11,7 +11,7 @@ $block: #{$fd-namespace}-tool-layout;
   --fdToolLayout_Padding_Inline: 0.5rem;
   --fdToolLayout_Content_Container_Border_Radius: 0.5rem 0.5rem 0 0;
   --fdToolLayout_Content_Container_Background: var(--sapBackgroundColor);
-  --fdToolLayout_Content_Container_BoxShadow: var(--sapContainer_Shadow1);
+  --fdToolLayout_Content_Container_BoxShadow: var(--sapContent_Shadow0);
 
   @include fd-reset();
 
