@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.41.0-rc.99](https://github.com/SAP/fundamental-styles/compare/v0.41.0-rc.98...v0.41.0-rc.99) (2026-01-08)
+
+### Bug Fixes
+
+- **styles:** update the value of the Tool Layout content container box-shadow [ci visual] ([#6229](https://github.com/SAP/fundamental-styles/issues/6229)) ([cf36afa](https://github.com/SAP/fundamental-styles/commit/cf36afab3b51f3fac6c0368e17f8bcd874279ae7))
+
 # [0.41.0-rc.98](https://github.com/SAP/fundamental-styles/compare/v0.41.0-rc.97...v0.41.0-rc.98) (2026-01-02)
 
 **Note:** Version bump only for package fundamental-styles
