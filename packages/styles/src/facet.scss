@@ -12,6 +12,7 @@ $block: #{$fd-namespace}-facet;
     @include fd-reset();
 
     @include fd-flex() {
+      gap: 2rem;
       flex-wrap: wrap;
       align-items: flex-start;
     }
