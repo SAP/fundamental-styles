@@ -5,215 +5,118 @@
 
 $block: #{$fd-namespace}-rating-indicator;
 
-@mixin fd-rating-indicator-with-half-star($icon-font-size, $spacing-between-icons) {
-  .#{$block} {
-    &__input {
-      width: calc(#{$icon-font-size} * 0.5);
-      height: $icon-font-size;
-    }
-
-    &__label {
-      margin-inline-end: 0;
-
-      &:nth-child(4n + 6) {
-        margin-inline-end: $spacing-between-icons;
-        flex-direction: row-reverse;
-      }
-
-      &:last-child {
-        margin-inline-end: 0;
-      }
-
-      overflow: hidden;
-      width: calc(#{$icon-font-size} * 0.5);
-    }
-
-    &--icon {
-      .#{$block}__label {
-        width: calc(#{$icon-font-size} * 0.5);
-      }
-    }
-
-    @include fd-rating-indicator-labels-after-checked() {
-      width: calc((var(--fontSize) * var(--fdRating_Indicator_View_Mode_Unselected_Icon_Size_Ratio)) * 0.5);
-    }
-  }
-
-  &.#{$block}--display-mode,
-  &.#{$block}--non-interactive,
-  // Cannot use disabled mixin due to additional classes.
-  &[aria-disabled="true"],
-  &.is-disabled,
-  &:disabled {
-    @include fd-rating-indicator-first-half-label-after-checked() {
-      width: calc(var(--fontSize) * 0.5);
-
-      &::before {
-        font-size: var(--fontSize);
-      }
-      .#{$block}__label {
-        &-unrated {
-          &::before {
-            font-size: var(--fontSize);
-          }
-        }
-      }
-    }
-
-    @include fd-rating-indicator-labels-after-checked() {
-      width: calc((var(--fontSize) * var(--fdRating_Indicator_View_Mode_Unselected_Icon_Size_Ratio)) * 0.5);
-      .#{$block}__label {
-        &-unrated {
-          &::before {
-            font-size:
-              calc(
-                var(--fontSize) * var(--fdRating_Indicator_View_Mode_Unselected_Icon_Size_Ratio)
-              );
-          }
-        }
-      }
-    }
-  }
-}
-
-@mixin fd-rating-indicator-first-half-label-after-checked() {
-  .#{$block}__input:nth-child(4n + 3):checked + .#{$block}__label + .#{$block}__input + .#{$block}__label {
-    @content;
-  }
-}
-
-@mixin fd-rating-indicator-labels-after-checked() {
-  .#{$block}__input:checked ~ .#{$block}__input + .#{$block}__label {
-    @content;
-  }
-}
-
 .#{$block} {
-  $fd-rating-indicator-sizes: (
-    'cozy': (
-      'fontSize': 1.5rem,
-      'spacingBetweenIcons': 0.1875rem,
-      'controlMargin': 0.8125rem
-    ),
-    'compact': (
-      'fontSize': 1rem,
-      'spacingBetweenIcons': 0.125rem,
-      'controlMargin': 0.5rem
-    ),
-    'condensed': (
-      'fontSize': 1rem,
-      'spacingBetweenIcons': 0.125rem
-    ),
-    'xs': (
-      'fontSize': 0.75rem,
-      'spacingBetweenIcons': 1px
-    ),
-    'sm': (
-      'fontSize': 1rem,
-      'spacingBetweenIcons': 0.125rem
-    ),
-    'md': (
-      'fontSize': 1.375rem,
-      'spacingBetweenIcons': 0.1875rem
-    ),
-    'lg': (
-      'fontSize': 2rem,
-      'spacingBetweenIcons': 0.25rem
-    )
-  );
-  $fd-rating-indicator-default-size: map.get($fd-rating-indicator-sizes, 'md');
+  --ratingIndicator_Opacity: 1;
+  --ratingIndicator_Opacity_Hover: 0.9;
+  --ratingIndicator_Cursor: pointer;
+  --ratingIndicator_Font_Size: 1.5rem;
+  --ratingIndicator_Inline_Spacing: 0;
+  --ratingIndicator_Item_Spacing: 0.1875rem;
+  --ratingIndicator_Margin_Block: 0.8125rem;
+  --ratingIndicator_Margin_Block_Compact: 0.8125rem;
+  --ratingIndicator_Color: var(--sapContent_UnratedColor);
+  --ratingIndicator_Container_Outline: var(--sapContent_FocusWidth) var(--sapContent_FocusStyle) var(--sapContent_FocusColor);
 
-  --fontSize: #{map.get($fd-rating-indicator-default-size, 'fontSize')};
-  --spacingBetweenIcons: #{map.get($fd-rating-indicator-default-size, 'spacingBetweenIcons')};
+  @mixin rating-indicator-unselected-items-readonly-disabled($font-size, $spacing) {
+    @include fd-readonly() {
+      .fd-rating-indicator__item {
+        &:has(.fd-rating-indicator__icon--unselected + .fd-rating-indicator__icon--unselected) {
+          --ratingIndicator_Font_Size: #{$font-size};
+          --ratingIndicator_Inline_Spacing: #{$spacing};
+        }
+      }
+    }
 
-  $fd-rating-indicator-dynamic-text-space: 0.5rem;
+    @include fd-disabled() {
+      .fd-rating-indicator__item {
+        &:has(.fd-rating-indicator__icon--unselected + .fd-rating-indicator__icon--unselected) {
+          --ratingIndicator_Font_Size: #{$font-size};
+          --ratingIndicator_Inline_Spacing: #{$spacing};
+        }
+      }
+    }
+  }
 
   @include fd-reset();
-  @include fd-flex-center();
-  @include fd-reset-spacing();
 
-  @each $set-name, $size-set in $fd-rating-indicator-sizes {
-    &--#{$set-name} {
-      --fontSize: #{map.get($size-set, 'fontSize')};
-      --spacingBetweenIcons: #{map.get($size-set, 'spacingBetweenIcons')};
+  @include fd-inline-flex-vertical-center() {
+    gap: 0.5rem;
+  };
 
-      $control-margin: map.get($size-set, 'controlMargin');
+  margin-inline: 0;
+  margin-block: var(--ratingIndicator_Margin_Block);
+  opacity: var(--ratingIndicator_Opacity);
+  cursor: var(--ratingIndicator_Cursor);
 
-      @if $control-margin {
-        margin-block: $control-margin;
-        margin-inline: 0;
-      }
-    }
+  @include fd-compact-or-condensed() {
+    margin-block: var(--ratingIndicator_Margin_Block_Compact);
   }
-
-  position: relative;
 
   &__container {
-    border-radius: var(--fdRating_Indicator_Border_Radius);
-
     @include fd-reset();
+    @include fd-inline-flex-vertical-center();
 
-    @include fd-fiori-focus-within(var(--fdRating_Indicator_Focus_Outline_Offset, 0)) {
-      // do not show outline for each rating item
-      // keeping it this way in order to preserve fallback behavior for IE
-      .#{$block}__label,
-      .#{$block}__input {
-        outline: none !important;
-      }
+    border-radius: var(--fdRatingIndicator_Container_Border_Radius);
+    
+    @include fd-focus() {
+      outline-offset: 0.1875rem;
+      outline: var(--ratingIndicator_Container_Outline);
     }
   }
 
-  &__input {
+  &__list {
     @include fd-reset();
 
+    @include fd-inline-flex-vertical-center() {
+      gap: var(--ratingIndicator_Item_Spacing);
+    };
+
+    list-style-type: none;
+  }
+
+  &__item {
+    @include fd-reset();
+    @include fd-inline-flex-center();
+
+    position: relative;
+    width: var(--ratingIndicator_Font_Size);
+    height: var(--ratingIndicator_Font_Size);
+    margin-inline: var(--ratingIndicator_Inline_Spacing);
+  }
+
+  &__icon {
+    &[class*="sap-icon"] {
+      color: var(--ratingIndicator_Color);
+      font-size: var(--ratingIndicator_Font_Size, 1.5rem);
+      box-shadow: var(--sapContent_TextShadow);
+    }
+    
     position: absolute;
-    opacity: 0.0001;
-    z-index: -1;
-    top: 0;
-    width: var(--fontSize);
-    height: var(--fontSize);
 
-    &:checked {
-      // focus for each individual star
-      // will be applied only in IE
-      @include fd-fiori-focus(0) {
-        + .#{$block}__label {
-          outline-offset: 0;
-          outline: var(--sapContent_FocusColor) var(--sapContent_FocusStyle) var(--sapContent_FocusWidth);
-        }
+    &:first-child {
+      clip-path: inset(0 48% 0 0);
+      left: 0;
+
+      @include fd-rtl() {
+        clip-path: inset(0 0 0 48%);
+        left: auto;
+        right: 0;
       }
     }
-  }
-
-  &__label {
-    @include fd-reset();
-    @include fd-action-cursor();
-    @include fd-flex-vertical-center();
-
-    @include fd-icon-glyph('favorite') {
-      font-family: SAP-icons;
-      color: var(--sapContent_RatedColor);
-      font-size: var(--fontSize);
-    }
-
-    float: left;
-    opacity: 1;
-    height: var(--fontSize);
-    margin-inline-end: var(--spacingBetweenIcons);
 
     &:last-child {
-      margin-inline-end: 0;
+      clip-path: inset(0 0 0 50%);
+      left: 0;
+
+      @include fd-rtl() {
+        clip-path: inset(0 50% 0 0);
+        left: auto;
+        right: 0;
+      }
     }
 
-    &:hover::before {
-      opacity: var(--fdRating_Indicator_Selected_Hover_Opacity);
-      transition: opacity $fd-animation-speed ease-in;
-    }
-  }
-
-  @include fd-rating-indicator-labels-after-checked() {
-    @include fd-icon-glyph('unfavorite') {
-      color: var(--sapContent_UnratedColor);
+    &--selected {
+      --ratingIndicator_Color: var(--sapContent_RatedColor);
     }
   }
 
@@ -223,116 +126,61 @@ $block: #{$fd-namespace}-rating-indicator;
 
     font-size: var(--sapFontSmallSize);
     color: var(--sapContent_LabelColor);
-    margin-inline-start: $fd-rating-indicator-dynamic-text-space;
   }
 
-  &--hide-dynamic-text {
-    > .#{$block}__dynamic-text {
-      display: none;
-    }
+  // States
+  @include fd-hover() {
+    opacity: var(--ratingIndicator_Opacity_Hover);
   }
 
-  @include fd-rtl() {
-    .#{$block}__label {
-      float: right;
-    }
+  @include fd-readonly() {
+    --ratingIndicator_Cursor: auto;
+    --ratingIndicator_Opacity_Hover: 1;
   }
 
   @include fd-disabled() {
-    pointer-events: none;
-    opacity: var(--fdRating_Indicator_Disabled_Control_Opacity);
-
-    .#{$block}__input {
-      @include fd-icon-glyph('favorite') {
-        color: var(--fdRating_Indicator_Disabled_Selected_Color);
-      }
-    }
-
-    @include fd-rating-indicator-labels-after-checked() {
-      @include fd-icon-glyph('favorite') {
-        color: var(--fdRating_Indicator_Disabled_Unselected_Color);
-        font-size: calc(var(--fontSize) * var(--fdRating_Indicator_View_Mode_Unselected_Icon_Size_Ratio));
-      }
-    }
+    --ratingIndicator_Cursor: auto;
+    --ratingIndicator_Container_Outline: none;
+    --ratingIndicator_Opacity: var(--sapContent_DisabledOpacity);
+    --ratingIndicator_Opacity_Hover: var(--sapContent_DisabledOpacity);
   }
 
-  &--display-mode {
-    --fontSize: 1rem;
+  @include rating-indicator-unselected-items-readonly-disabled(1.125rem, 0.1875rem);
 
-    .#{$block}__label {
-      margin-inline-end: 0.125rem;
+  // Sizes
+  &--lg {
+    @include rating-indicator-unselected-items-readonly-disabled(2rem, 0);
 
-      @include fd-icon-glyph('favorite') {
-        font-size: var(--fontSize);
-        color: var(--fdRating_Indicator_Display_Only_Selected_Color);
-      }
-    }
+    --ratingIndicator_Margin_Block: 0.75rem;
+    --ratingIndicator_Margin_Block_Compact: 0.5rem;
+    --ratingIndicator_Font_Size: 2rem;
+    --ratingIndicator_Item_Spacing: 0.25rem;
   }
 
-  &--non-interactive,
-  &--display-mode {
-    pointer-events: none;
+  &--md {
+    @include rating-indicator-unselected-items-readonly-disabled(1.5rem, 0);
 
-    @include fd-rating-indicator-labels-after-checked() {
-      @include fd-icon-glyph('favorite') {
-        color: var(--sapContent_UnratedColor);
-        font-size: calc(var(--fontSize) * var(--fdRating_Indicator_View_Mode_Unselected_Icon_Size_Ratio));
-      }
-    }
+    --ratingIndicator_Margin_Block: 0.75rem;
+    --ratingIndicator_Margin_Block_Compact: 0.5rem;
+    --ratingIndicator_Font_Size: 1.5rem;
+    --ratingIndicator_Item_Spacing: 0.1875rem;
   }
 
-  &--icon {
-    .#{$block}__label {
-      &::after,
-      &::before {
-        content: none !important;
-      }
+  &--sm {
+    @include rating-indicator-unselected-items-readonly-disabled(1.375rem, 0);
 
-      width: var(--fontSize);
-      height: var(--fontSize);
-
-      &-rated,
-      &-unrated {
-        font-size: var(--fontSize);
-        height: 100%;
-        line-height: 1;
-      }
-
-      &-unrated {
-        display: none;
-      }
-    }
-
-    @include fd-rating-indicator-labels-after-checked() {
-      .#{$block}__label {
-        &-rated {
-          display: none;
-        }
-
-        &-unrated {
-          display: block;
-        }
-      }
-    }
+    --ratingIndicator_Margin_Block: 0.75rem;
+    --ratingIndicator_Margin_Block_Compact: 0.5rem;
+    --ratingIndicator_Font_Size: 1.375rem;
+    --ratingIndicator_Item_Spacing: 0.1875rem;
   }
 
-  // ************ BLOCK MODIFIERS ************
-  &--half-star {
-    @include fd-rating-indicator-with-half-star(var(--fontSize), var(--spacingBetweenIcons));
-  }
+  &--xs {
+    @include rating-indicator-unselected-items-readonly-disabled(0.75rem, 0);
 
-  &[class*='#{$block}--'] &__input,
-  &[class*='#{$block}--'] &__label,
-  &__input,
-  &__label {
-    &--zero-rating {
-      padding-inline: 0;
-      padding-block: 0;
-      margin-inline: 0;
-      margin-block: 0;
-      width: 0;
-      overflow: hidden;
-      opacity: 0.0001;
-    }
+    --ratingIndicator_Margin_Block: 0.75rem;
+    --ratingIndicator_Margin_Block_Compact: 0.5rem;
+    --ratingIndicator_Font_Size: 0.75rem;
+    --ratingIndicator_Item_Spacing: 0.0625rem;
   }
 }

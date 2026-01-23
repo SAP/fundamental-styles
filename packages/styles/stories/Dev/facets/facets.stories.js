@@ -1,7 +1,6 @@
 import objectPageMobileExampleHtml from "./object-page-mobile.example.html?raw";
 import objectPageExampleHtml from "./object-page.example.html?raw";
 import imageFacetExampleHtml from "./image-facet.example.html?raw";
-import ratingIndicatorExampleHtml from "./rating-indicator.example.html?raw";
 import formFacetLinkExampleHtml from "./form-facet-link.example.html?raw";
 import formFacetExampleHtml from "./form-facet.example.html?raw";
 import keyValueExampleHtml from "./key-value.example.html?raw";
@@ -68,16 +67,6 @@ FormFacetLink.parameters = {
   docs: {
     description: {
       story: 'Text in a form facet can also hold a link by using the Link component.'
-    }
-  }
-};
-export const RatingIndicator = () => ratingIndicatorExampleHtml;
-RatingIndicator.storyName = 'Rating Indicator Facet';
-RatingIndicator.parameters = {
-  docs: {
-    description: {
-      story: `The Rating Indicator Facet displays a **Rating Indicator**. It consists of a mandatory title, optional supplementary texts
-        like a subtitle or a dynamic text, and the rating indicator.`
     }
   }
 };
