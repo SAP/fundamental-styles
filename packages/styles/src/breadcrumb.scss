@@ -20,14 +20,10 @@ $block: #{$fd-namespace}-breadcrumb;
   &__item {
     @include fd-reset();
 
+    display: inline-flex;
+    align-items: center;
     padding-block: 0.0625rem;
     color: var(--sapContent_LabelColor);
-
-    &::after {
-      margin-inline: 0.25rem;
-      color: var(--sapTextColor);
-      content: var(--fdBreadcrumb_Separator, "/");
-    }
 
     &:last-child:not(:has(a)) {
       --fdBreadcrumb_Separator: none;
@@ -37,6 +33,16 @@ $block: #{$fd-namespace}-breadcrumb;
       border: none;
       border-top-left-radius: 0.125rem;
       border-top-right-radius: 0.125rem;
+    }
+  }
+
+  &__separator {
+    @include fd-reset();
+
+    &::after {
+      margin-inline: 0.25rem;
+      color: var(--sapTextColor);
+      content: var(--fdBreadcrumb_Separator, "/");
     }
   }
 

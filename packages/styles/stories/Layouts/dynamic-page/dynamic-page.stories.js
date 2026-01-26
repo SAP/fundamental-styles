@@ -143,8 +143,7 @@ SummaryLine.storyName = 'Summary Line (mobile)';
 SummaryLine.parameters = {
   docs: {
     description: {
-      story: `It is recommended to add a summary line insead of the expand/collapse header feature so users can better focus on the page content. To display a summary line,
-        add \`fd-dynamic-page__summarized-title\` in the \`fd-dynamic-page__summarized-title-area\` element.`
+      story: `It is recommended to add a summary line insead of the expand/collapse header feature so users can better focus on the page content. To display a summary line, add \`fd-dynamic-page__summarized-title\` in the \`fd-dynamic-page__summarized-title-area\` element.`
     }
   }
 };
@@ -153,8 +152,7 @@ Expandable.storyName = 'Expanded Header';
 Expandable.parameters = {
   docs: {
     description: {
-      story: `As demonstrated earlier, the dynamic page header can be either displayed or hidden with the expand/collapse buttons. Users can select the pin button to keep the header displayed (enabling the sticky feature).
-        To collapse the dynamic page, add the \`--collapsed\` modifier class to the title area and title elements.`
+      story: `As demonstrated earlier, the dynamic page header can be either displayed or hidden with the expand/collapse buttons. Users can select the pin button to keep the header displayed (enabling the sticky feature). To collapse the dynamic page, add the \`--collapsed\` modifier class to the title area and title elements.`
     }
   }
 };
@@ -180,11 +178,7 @@ WithFacets.storyName = 'With header facets';
 WithFacets.parameters = {
   docs: {
     description: {
-      story: `To have the image from the image facet appear next to the title, add the class
-        \`fd-facet\` and apply the modifiers \`fd-facet--image\` and \`fd-facet--image-header-title\` to the
-        \`fd-dynamic-page__title-container\` class.
-        Note that the dynamic page title and subtitle should be placed in the \`fd-dynamic-page__title-subtitle-container\` class
-        for proper alignment with the image.
+      story: `To have the image from the image facet appear next to the title, add the class \`fd-facet\` and apply the modifiers \`fd-facet--image\` and \`fd-facet--image-header-title\` to the \`fd-dynamic-page__title-container\` class. Note that the dynamic page title and subtitle should be placed in the \`fd-dynamic-page__title-subtitle-container\` class for proper alignment with the image.
 `
     }
   }

@@ -31,8 +31,7 @@ The breadcrumb component is a type of navigation that indicates the position of 
 - Other floorplans, such as overview pages and list reports
 - Cross-application navigation to other object pages
 - Independent object pages, such as fact sheets
-`,
-    tags: ['f3', 'a11y', 'theme']
+`
   }
 };
 export const Standard = () => standardExampleHtml;
