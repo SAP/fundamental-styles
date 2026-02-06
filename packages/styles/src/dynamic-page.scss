@@ -199,7 +199,7 @@ $block: #{$fd-namespace}-dynamic-page;
     @include fd-ellipsis();
 
     padding-block: 0;
-    padding-inline: 1rem 0;
+    padding-inline: 1rem .2rem;
     vertical-align: baseline;
   }
 
