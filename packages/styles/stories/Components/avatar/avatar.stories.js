@@ -145,11 +145,11 @@ AccentColorsShellHeaderContext.parameters = {
   }
 };
 
-export const ZoomIcon = () => zoomIconExampleHtml;
-ZoomIcon.parameters = {
+export const Badge = () => zoomIconExampleHtml;
+Badge.parameters = {
   docs: {
     description: {
-      story: `If an avatar is clickable, you can show an optional badge and icon. The badge indicates that the avatar is interactive and the icon indicates the action triggered by clicking the avatar. This feature gives users visual affordance of the available action, and is particularly useful for images.`
+      story: `Each interactive avatar type can have an optional badge and icon assigned. A badge is used to indicate that the avatar is interactive. An icon is used to indicate the action triggered by clicking the avatar (e.g. edit images, take a picture, zoom in).`
     }
   }
 };
