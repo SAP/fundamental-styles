@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.41.0-rc.104](https://github.com/SAP/fundamental-styles/compare/v0.41.0-rc.103...v0.41.0-rc.104) (2026-02-11)
+
+### Bug Fixes
+
+- **styles:** add a small right padding to fd-dynamic-page\_\_title-content ([#6235](https://github.com/SAP/fundamental-styles/issues/6235)) ([76ab431](https://github.com/SAP/fundamental-styles/commit/76ab43142795c227c065c61c69dc4511f44fd21a))
+- **styles:** update a11y and documentation for Avatar [ci visual] ([#6236](https://github.com/SAP/fundamental-styles/issues/6236)) ([fd79671](https://github.com/SAP/fundamental-styles/commit/fd796719fe98d6ddab7674e3bb96126a80942481))
+
+### BREAKING CHANGES
+
+- **styles:** updated aria attributes for interactive Avatars
+
 # [0.41.0-rc.103](https://github.com/SAP/fundamental-styles/compare/v0.41.0-rc.102...v0.41.0-rc.103) (2026-02-04)
 
 **Note:** Version bump only for package fundamental-styles
