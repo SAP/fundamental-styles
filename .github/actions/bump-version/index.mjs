@@ -3,6 +3,7 @@ import semver from 'semver';
 import { readFileSync } from 'fs';
 import * as core from '@actions/core';
 import getReleaseTag from '../helpers/get-release-tag.mjs';
+import { loadPreset } from 'conventional-changelog-preset-loader';
 
 const lernaJson = JSON.parse(readFileSync('./lerna.json', 'utf8'));
 const releaseType = core.getInput('isPrerelease') === 'true'  ? 'prerelease' : 'release';
@@ -38,9 +39,16 @@ const getCurrentActiveType = version => TypeList.find(type => semver[type](versi
 const getTypePriority = type => TypeList.indexOf(type);
 
 const bumpedVersionType = async () => {
-  const bumper = new Bumper()
-    .loadPreset('angular')
-    .tag({ prefix: 'v' });    const release = await bumper.bump();
+    const config = await loadPreset({
+        name: 'conventionalcommits',
+        preMajor: semver.lt(currentVersion, '1.0.0')
+    });
+
+    const bumper = new Bumper()
+        .commits({}, config.recommendedBumpOpts.parserOpts)
+        .tag({ prefix: 'v' });
+
+    const release = await bumper.bump(config.recommendedBumpOpts.whatBump);
 
     if (prereleaseRequested) {
         if (isInPrerelease(currentVersion)) {
