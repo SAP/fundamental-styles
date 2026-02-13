@@ -1,0 +1,111 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://sap.github.io/fundamental-styles/schemas/popover.json",
+  "title": "Popover Component",
+  "description": "Contextual popup for displaying supplementary information",
+  "type": "object",
+  "properties": {
+    "baseClass": {
+      "const": "fd-popover",
+      "description": "Required base class"
+    },
+    "modifiers": {
+      "type": "array",
+      "items": {
+        "enum": [
+          "fd-popover--visible",
+          "fd-popover--no-arrow",
+          "fd-popover--left",
+          "fd-popover--center",
+          "fd-popover--right",
+          "fd-popover--before",
+          "fd-popover--after",
+          "fd-popover--middle",
+          "fd-popover--bottom",
+          "fd-popover--above",
+          "fd-popover--arrow",
+          "fd-popover--dropdown",
+          "fd-popover--static",
+          "fd-popover--input-message-group",
+          "fd-popover--inline-help",
+          "fd-popover--slider",
+          "fd-popover--full-width",
+          "fd-popover--btp",
+          "fd-popover--padding"
+        ]
+      },
+      "description": "Optional modifier classes"
+    },
+    "elements": {
+      "type": "object",
+      "description": "Optional element classes with their available modifiers",
+      "properties": {
+        "fd-popover__modal": {
+          "type": "object",
+          "description": "modal element",
+          "properties": {
+            "class": {
+              "const": "fd-popover__modal",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-popover__control": {
+          "type": "object",
+          "description": "control element",
+          "properties": {
+            "class": {
+              "const": "fd-popover__control",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-popover__wrapper": {
+          "type": "object",
+          "description": "wrapper element",
+          "properties": {
+            "class": {
+              "const": "fd-popover__wrapper",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-popover__body": {
+          "type": "object",
+          "description": "body element",
+          "properties": {
+            "class": {
+              "const": "fd-popover__body",
+              "description": "Element class name"
+            },
+            "modifiers": {
+              "type": "array",
+              "items": {
+                "enum": [
+                  "fd-popover__body--input-message-group",
+                  "fd-popover__body--hidden",
+                  "fd-popover__body--no-arrow"
+                ]
+              },
+              "description": "Available modifiers for this element"
+            }
+          }
+        },
+        "fd-popover__resize-handle": {
+          "type": "object",
+          "description": "resize-handle element",
+          "properties": {
+            "class": {
+              "const": "fd-popover__resize-handle",
+              "description": "Element class name"
+            }
+          }
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "required": [
+    "baseClass"
+  ]
+}

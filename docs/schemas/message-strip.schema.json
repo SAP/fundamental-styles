@@ -1,0 +1,69 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://sap.github.io/fundamental-styles/schemas/message-strip.json",
+  "title": "Message Strip Component",
+  "description": "Inline informational message for contextual feedback",
+  "type": "object",
+  "properties": {
+    "baseClass": {
+      "const": "fd-message-strip",
+      "description": "Required base class"
+    },
+    "modifiers": {
+      "type": "array",
+      "items": {
+        "enum": [
+          "fd-message-strip--warning",
+          "fd-message-strip--error",
+          "fd-message-strip--success",
+          "fd-message-strip--information",
+          "fd-message-strip--no-icon",
+          "fd-message-strip--dismissible",
+          "fd-message-strip--link",
+          "fd-message-strip--indication-color-"
+        ]
+      },
+      "description": "Optional modifier classes"
+    },
+    "elements": {
+      "type": "object",
+      "description": "Optional element classes with their available modifiers",
+      "properties": {
+        "fd-message-strip__text": {
+          "type": "object",
+          "description": "text element",
+          "properties": {
+            "class": {
+              "const": "fd-message-strip__text",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-message-strip__icon-container": {
+          "type": "object",
+          "description": "icon-container element",
+          "properties": {
+            "class": {
+              "const": "fd-message-strip__icon-container",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-message-strip__sr-only": {
+          "type": "object",
+          "description": "sr-only element",
+          "properties": {
+            "class": {
+              "const": "fd-message-strip__sr-only",
+              "description": "Element class name"
+            }
+          }
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "required": [
+    "baseClass"
+  ]
+}

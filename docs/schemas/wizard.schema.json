@@ -1,0 +1,199 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://sap.github.io/fundamental-styles/schemas/wizard.json",
+  "title": "Wizard Component",
+  "description": "Wizard component",
+  "type": "object",
+  "properties": {
+    "baseClass": {
+      "const": "fd-wizard",
+      "description": "Required base class"
+    },
+    "modifiers": {
+      "type": "array",
+      "items": {
+        "enum": [
+          "fd-wizard--sm",
+          "fd-wizard--md",
+          "fd-wizard--lg",
+          "fd-wizard--xl",
+          "fd-wizard--completed",
+          "fd-wizard--current",
+          "fd-wizard--upcoming",
+          "fd-wizard--no-label",
+          "fd-wizard--stacked-top",
+          "fd-wizard--stacked",
+          "fd-wizard--active",
+          "fd-wizard--optional",
+          "fd-wizard--branching",
+          "fd-wizard--solid",
+          "fd-wizard--list",
+          "fd-wizard--transparent",
+          "fd-wizard--floating"
+        ]
+      },
+      "description": "Optional modifier classes"
+    },
+    "elements": {
+      "type": "object",
+      "description": "Optional element classes with their available modifiers",
+      "properties": {
+        "fd-wizard__navigation": {
+          "type": "object",
+          "description": "navigation element",
+          "properties": {
+            "class": {
+              "const": "fd-wizard__navigation",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-wizard__progress-bar": {
+          "type": "object",
+          "description": "progress-bar element",
+          "properties": {
+            "class": {
+              "const": "fd-wizard__progress-bar",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-wizard__step-wrapper": {
+          "type": "object",
+          "description": "step-wrapper element",
+          "properties": {
+            "class": {
+              "const": "fd-wizard__step-wrapper",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-wizard__step": {
+          "type": "object",
+          "description": "step element",
+          "properties": {
+            "class": {
+              "const": "fd-wizard__step",
+              "description": "Element class name"
+            },
+            "modifiers": {
+              "type": "array",
+              "items": {
+                "enum": [
+                  "fd-wizard__step--completed",
+                  "fd-wizard__step--stacked",
+                  "fd-wizard__step--upcoming"
+                ]
+              },
+              "description": "Available modifiers for this element"
+            }
+          }
+        },
+        "fd-wizard__step-container": {
+          "type": "object",
+          "description": "step-container element",
+          "properties": {
+            "class": {
+              "const": "fd-wizard__step-container",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-wizard__step-indicator": {
+          "type": "object",
+          "description": "step-indicator element",
+          "properties": {
+            "class": {
+              "const": "fd-wizard__step-indicator",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-wizard__icon": {
+          "type": "object",
+          "description": "icon element",
+          "properties": {
+            "class": {
+              "const": "fd-wizard__icon",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-wizard__label-container": {
+          "type": "object",
+          "description": "label-container element",
+          "properties": {
+            "class": {
+              "const": "fd-wizard__label-container",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-wizard__label": {
+          "type": "object",
+          "description": "label element",
+          "properties": {
+            "class": {
+              "const": "fd-wizard__label",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-wizard__optional-text": {
+          "type": "object",
+          "description": "optional-text element",
+          "properties": {
+            "class": {
+              "const": "fd-wizard__optional-text",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-wizard__connector": {
+          "type": "object",
+          "description": "connector element",
+          "properties": {
+            "class": {
+              "const": "fd-wizard__connector",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-wizard__content": {
+          "type": "object",
+          "description": "content element",
+          "properties": {
+            "class": {
+              "const": "fd-wizard__content",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-wizard__step-content-container": {
+          "type": "object",
+          "description": "step-content-container element",
+          "properties": {
+            "class": {
+              "const": "fd-wizard__step-content-container",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-wizard__next-step": {
+          "type": "object",
+          "description": "next-step element",
+          "properties": {
+            "class": {
+              "const": "fd-wizard__next-step",
+              "description": "Element class name"
+            }
+          }
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "required": [
+    "baseClass"
+  ]
+}

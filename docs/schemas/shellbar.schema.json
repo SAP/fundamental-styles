@@ -1,0 +1,165 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://sap.github.io/fundamental-styles/schemas/shellbar.json",
+  "title": "Shellbar Component",
+  "description": "Application header bar with branding, navigation, and actions",
+  "type": "object",
+  "properties": {
+    "baseClass": {
+      "const": "fd-shellbar",
+      "description": "Required base class"
+    },
+    "modifiers": {
+      "type": "array",
+      "items": {
+        "enum": [
+          "fd-shellbar--mobile-flex",
+          "fd-shellbar--mobile",
+          "fd-shellbar--desktop",
+          "fd-shellbar--non-interactive",
+          "fd-shellbar--image-replaced",
+          "fd-shellbar--menu",
+          "fd-shellbar--grow",
+          "fd-shellbar--shrink",
+          "fd-shellbar--collapsed",
+          "fd-shellbar--basis-auto",
+          "fd-shellbar--product",
+          "fd-shellbar--copilot",
+          "fd-shellbar--center",
+          "fd-shellbar--context-area",
+          "fd-shellbar--actions",
+          "fd-shellbar--full-width",
+          "fd-shellbar--s",
+          "fd-shellbar--sm",
+          "fd-shellbar--m",
+          "fd-shellbar--l",
+          "fd-shellbar--md",
+          "fd-shellbar--lg",
+          "fd-shellbar--xl",
+          "fd-shellbar--xxl",
+          "fd-shellbar--side-nav",
+          "fd-shellbar--responsive-paddings"
+        ]
+      },
+      "description": "Optional modifier classes"
+    },
+    "elements": {
+      "type": "object",
+      "description": "Optional element classes with their available modifiers",
+      "properties": {
+        "fd-shellbar__branding": {
+          "type": "object",
+          "description": "branding element",
+          "properties": {
+            "class": {
+              "const": "fd-shellbar__branding",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-shellbar__title": {
+          "type": "object",
+          "description": "title element",
+          "properties": {
+            "class": {
+              "const": "fd-shellbar__title",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-shellbar__subtitle": {
+          "type": "object",
+          "description": "subtitle element",
+          "properties": {
+            "class": {
+              "const": "fd-shellbar__subtitle",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-shellbar__product": {
+          "type": "object",
+          "description": "product element",
+          "properties": {
+            "class": {
+              "const": "fd-shellbar__product",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-shellbar__logo": {
+          "type": "object",
+          "description": "logo element",
+          "properties": {
+            "class": {
+              "const": "fd-shellbar__logo",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-shellbar__separator": {
+          "type": "object",
+          "description": "separator element",
+          "properties": {
+            "class": {
+              "const": "fd-shellbar__separator",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-shellbar__spacer": {
+          "type": "object",
+          "description": "spacer element",
+          "properties": {
+            "class": {
+              "const": "fd-shellbar__spacer",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-shellbar__button": {
+          "type": "object",
+          "description": "button element",
+          "properties": {
+            "class": {
+              "const": "fd-shellbar__button",
+              "description": "Element class name"
+            },
+            "modifiers": {
+              "type": "array",
+              "items": {
+                "enum": [
+                  "fd-shellbar__button--menu"
+                ]
+              },
+              "description": "Available modifiers for this element"
+            }
+          }
+        },
+        "fd-shellbar__avatar": {
+          "type": "object",
+          "description": "avatar element",
+          "properties": {
+            "class": {
+              "const": "fd-shellbar__avatar",
+              "description": "Element class name"
+            },
+            "modifiers": {
+              "type": "array",
+              "items": {
+                "enum": [
+                  "fd-shellbar__avatar--circle"
+                ]
+              },
+              "description": "Available modifiers for this element"
+            }
+          }
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "required": [
+    "baseClass"
+  ]
+}

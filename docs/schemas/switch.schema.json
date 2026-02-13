@@ -1,0 +1,105 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://sap.github.io/fundamental-styles/schemas/switch.json",
+  "title": "Switch Component",
+  "description": "The switch mimics a physical switch, allowing users to set individual features (such as personalization or display settings) to either active or inactive. What the switch controls should be clarified with an inline label, while the state it’s currently in should be displayed on the switch itself.",
+  "type": "object",
+  "properties": {
+    "baseClass": {
+      "const": "fd-switch",
+      "description": "Required base class"
+    },
+    "modifiers": {
+      "type": "array",
+      "items": {
+        "enum": [
+          "fd-switch--off",
+          "fd-switch--on",
+          "fd-switch--semantic",
+          "fd-switch--text"
+        ]
+      },
+      "description": "Optional modifier classes"
+    },
+    "elements": {
+      "type": "object",
+      "description": "Optional element classes with their available modifiers",
+      "properties": {
+        "fd-switch__control": {
+          "type": "object",
+          "description": "control element",
+          "properties": {
+            "class": {
+              "const": "fd-switch__control",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-switch__slider": {
+          "type": "object",
+          "description": "slider element",
+          "properties": {
+            "class": {
+              "const": "fd-switch__slider",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-switch__track": {
+          "type": "object",
+          "description": "track element",
+          "properties": {
+            "class": {
+              "const": "fd-switch__track",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-switch__text": {
+          "type": "object",
+          "description": "text element",
+          "properties": {
+            "class": {
+              "const": "fd-switch__text",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-switch__icon": {
+          "type": "object",
+          "description": "icon element",
+          "properties": {
+            "class": {
+              "const": "fd-switch__icon",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-switch__handle": {
+          "type": "object",
+          "description": "handle element",
+          "properties": {
+            "class": {
+              "const": "fd-switch__handle",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-switch__input": {
+          "type": "object",
+          "description": "input element",
+          "properties": {
+            "class": {
+              "const": "fd-switch__input",
+              "description": "Element class name"
+            }
+          }
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "required": [
+    "baseClass"
+  ]
+}

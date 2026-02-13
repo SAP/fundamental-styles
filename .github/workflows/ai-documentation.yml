@@ -1,0 +1,85 @@
+name: AI Documentation
+
+on:
+  pull_request:
+    paths:
+      - 'packages/styles/src/**/*.scss'
+      - 'packages/styles/stories/**/*.stories.js'
+      - 'packages/styles/stories/**/*.example.html'
+      - 'docs/component-catalog.json'
+  push:
+    branches:
+      - main
+    paths:
+      - 'packages/styles/src/**/*.scss'
+      - 'packages/styles/stories/**/*.stories.js'
+      - 'packages/styles/stories/**/*.example.html'
+
+env:
+  NX_CLOUD_ACCESS_TOKEN: ${{ secrets.NX_CLOUD_AUTH_TOKEN }}
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.event.number || github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  validate-ai-docs:
+    runs-on: ubuntu-latest
+    name: Validate AI Documentation
+    steps:
+      - uses: actions/checkout@v4.2.2
+        with:
+          fetch-depth: 0
+
+      - uses: ./.github/actions/nodejs
+        name: Install dependencies
+
+      - name: Generate AI Metadata
+        run: yarn generate:ai-metadata
+
+      - name: Generate Component Relationships
+        run: yarn generate:relationships
+
+      - name: Run AI Documentation Tests
+        run: yarn test:ai-docs
+
+      - name: Check for documentation changes
+        id: check-changes
+        run: |
+          git add -N docs/
+          if git diff --exit-code docs/component-catalog.json docs/component-relationships.json docs/schemas/; then
+            echo "status=up-to-date" >> $GITHUB_OUTPUT
+            echo "::notice::AI documentation is up to date"
+          else
+            echo "status=outdated" >> $GITHUB_OUTPUT
+            echo "::warning::AI documentation needs updating"
+          fi
+
+      - name: Show documentation diff
+        if: steps.check-changes.outputs.status == 'outdated'
+        run: |
+          echo "## AI Documentation Changes" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "The following AI documentation files need updating:" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          git diff --stat docs/component-catalog.json docs/component-relationships.json docs/schemas/ >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "### Component Catalog Changes" >> $GITHUB_STEP_SUMMARY
+          echo '```diff' >> $GITHUB_STEP_SUMMARY
+          git diff docs/component-catalog.json | head -100 >> $GITHUB_STEP_SUMMARY
+          echo '```' >> $GITHUB_STEP_SUMMARY
+
+      - name: Fail if documentation is outdated (PR only)
+        if: github.event_name == 'pull_request' && steps.check-changes.outputs.status == 'outdated'
+        run: |
+          echo "::error::AI documentation is outdated. Please run 'yarn generate:ai-metadata && yarn generate:relationships' and commit the changes."
+          exit 1
+
+      - name: Commit documentation updates (main branch only)
+        if: github.event_name == 'push' && github.ref == 'refs/heads/main' && steps.check-changes.outputs.status == 'outdated'
+        run: |
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+          git add docs/component-catalog.json docs/component-relationships.json docs/schemas/
+          git commit -m "chore(docs): update AI documentation [ci skip]"
+          git push

@@ -1,0 +1,25 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://sap.github.io/fundamental-styles/schemas/code.json",
+  "title": "Code Component",
+  "description": "The code component helps with formating and styling code snippets. It differantiates the code lines from the normal text.",
+  "type": "object",
+  "properties": {
+    "baseClass": {
+      "const": "fd-code",
+      "description": "Required base class"
+    },
+    "modifiers": {
+      "type": "array",
+      "items": {
+        "enum": [
+          "fd-code--inline"
+        ]
+      },
+      "description": "Optional modifier classes"
+    }
+  },
+  "required": [
+    "baseClass"
+  ]
+}

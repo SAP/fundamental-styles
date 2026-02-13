@@ -1,0 +1,69 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://sap.github.io/fundamental-styles/schemas/button.json",
+  "title": "Button Component",
+  "description": "Action trigger with multiple styles for different semantic meanings",
+  "type": "object",
+  "properties": {
+    "baseClass": {
+      "const": "fd-button",
+      "description": "Required base class"
+    },
+    "modifiers": {
+      "type": "array",
+      "items": {
+        "enum": [
+          "fd-button--attention",
+          "fd-button--menu",
+          "fd-button--full-width",
+          "fd-button--text-alignment",
+          "fd-button--decisive",
+          "fd-button--tool-header",
+          "fd-button--nested",
+          "fd-button--nested-square"
+        ]
+      },
+      "description": "Optional modifier classes"
+    },
+    "elements": {
+      "type": "object",
+      "description": "Optional element classes with their available modifiers",
+      "properties": {
+        "fd-button__text": {
+          "type": "object",
+          "description": "text element",
+          "properties": {
+            "class": {
+              "const": "fd-button__text",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-button__badge": {
+          "type": "object",
+          "description": "badge element",
+          "properties": {
+            "class": {
+              "const": "fd-button__badge",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-button__instructions": {
+          "type": "object",
+          "description": "instructions element",
+          "properties": {
+            "class": {
+              "const": "fd-button__instructions",
+              "description": "Element class name"
+            }
+          }
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "required": [
+    "baseClass"
+  ]
+}

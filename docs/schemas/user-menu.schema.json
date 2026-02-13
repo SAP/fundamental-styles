@@ -1,0 +1,164 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://sap.github.io/fundamental-styles/schemas/user-menu.json",
+  "title": "User Menu Component",
+  "description": "The User Menu is an integral part of the Shell Bar, accessible by clicking the avatar located at its far-right end. It provides user-specific options and remains available across all screens. In addition to standard options, the User Menu can include product-specific functionality.",
+  "type": "object",
+  "properties": {
+    "baseClass": {
+      "const": "fd-user-menu",
+      "description": "Required base class"
+    },
+    "modifiers": {
+      "type": "array",
+      "items": {
+        "enum": [
+          "fd-user-menu--truncate",
+          "fd-user-menu--mobile",
+          "fd-user-menu--tool-header"
+        ]
+      },
+      "description": "Optional modifier classes"
+    },
+    "elements": {
+      "type": "object",
+      "description": "Optional element classes with their available modifiers",
+      "properties": {
+        "fd-user-menu__body": {
+          "type": "object",
+          "description": "body element",
+          "properties": {
+            "class": {
+              "const": "fd-user-menu__body",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-user-menu__header": {
+          "type": "object",
+          "description": "header element",
+          "properties": {
+            "class": {
+              "const": "fd-user-menu__header",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-user-menu__header-container": {
+          "type": "object",
+          "description": "header-container element",
+          "properties": {
+            "class": {
+              "const": "fd-user-menu__header-container",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-user-menu__subheader": {
+          "type": "object",
+          "description": "subheader element",
+          "properties": {
+            "class": {
+              "const": "fd-user-menu__subheader",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-user-menu__user-name": {
+          "type": "object",
+          "description": "user-name element",
+          "properties": {
+            "class": {
+              "const": "fd-user-menu__user-name",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-user-menu__user-info": {
+          "type": "object",
+          "description": "user-info element",
+          "properties": {
+            "class": {
+              "const": "fd-user-menu__user-info",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-user-menu__user-role": {
+          "type": "object",
+          "description": "user-role element",
+          "properties": {
+            "class": {
+              "const": "fd-user-menu__user-role",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-user-menu__subline": {
+          "type": "object",
+          "description": "subline element",
+          "properties": {
+            "class": {
+              "const": "fd-user-menu__subline",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-user-menu__content-container": {
+          "type": "object",
+          "description": "content-container element",
+          "properties": {
+            "class": {
+              "const": "fd-user-menu__content-container",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-user-menu__navigation-submenu": {
+          "type": "object",
+          "description": "navigation-submenu element",
+          "properties": {
+            "class": {
+              "const": "fd-user-menu__navigation-submenu",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-user-menu__navigation-submenu-wrapper": {
+          "type": "object",
+          "description": "navigation-submenu-wrapper element",
+          "properties": {
+            "class": {
+              "const": "fd-user-menu__navigation-submenu-wrapper",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-user-menu__popover-body": {
+          "type": "object",
+          "description": "popover-body element",
+          "properties": {
+            "class": {
+              "const": "fd-user-menu__popover-body",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-user-menu__footer": {
+          "type": "object",
+          "description": "footer element",
+          "properties": {
+            "class": {
+              "const": "fd-user-menu__footer",
+              "description": "Element class name"
+            }
+          }
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "required": [
+    "baseClass"
+  ]
+}

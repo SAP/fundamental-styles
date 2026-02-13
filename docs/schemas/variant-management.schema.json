@@ -1,0 +1,86 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://sap.github.io/fundamental-styles/schemas/variant-management.json",
+  "title": "Variant Management Component",
+  "description": "Variants store filter settings which have been defined, for example, within the filter bar.",
+  "type": "object",
+  "properties": {
+    "baseClass": {
+      "const": "fd-variant-management",
+      "description": "Required base class"
+    },
+    "modifiers": {
+      "type": "array",
+      "items": {
+        "enum": [
+          "fd-variant-management--object-header",
+          "fd-variant-management--snapped-object-header",
+          "fd-variant-management--table",
+          "fd-variant-management--custom",
+          "fd-variant-management--active"
+        ]
+      },
+      "description": "Optional modifier classes"
+    },
+    "elements": {
+      "type": "object",
+      "description": "Optional element classes with their available modifiers",
+      "properties": {
+        "fd-variant-management__header": {
+          "type": "object",
+          "description": "header element",
+          "properties": {
+            "class": {
+              "const": "fd-variant-management__header",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-variant-management__title": {
+          "type": "object",
+          "description": "title element",
+          "properties": {
+            "class": {
+              "const": "fd-variant-management__title",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-variant-management__dirty-indicator": {
+          "type": "object",
+          "description": "dirty-indicator element",
+          "properties": {
+            "class": {
+              "const": "fd-variant-management__dirty-indicator",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-variant-management__favourite-state": {
+          "type": "object",
+          "description": "favourite-state element",
+          "properties": {
+            "class": {
+              "const": "fd-variant-management__favourite-state",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-variant-management__centered-checkbox": {
+          "type": "object",
+          "description": "centered-checkbox element",
+          "properties": {
+            "class": {
+              "const": "fd-variant-management__centered-checkbox",
+              "description": "Element class name"
+            }
+          }
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "required": [
+    "baseClass"
+  ]
+}

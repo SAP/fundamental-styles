@@ -1,0 +1,53 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://sap.github.io/fundamental-styles/schemas/page-footer.json",
+  "title": "Page Footer Component",
+  "description": "Page Footer component",
+  "type": "object",
+  "properties": {
+    "baseClass": {
+      "const": "fd-page-footer",
+      "description": "Required base class"
+    },
+    "elements": {
+      "type": "object",
+      "description": "Optional element classes with their available modifiers",
+      "properties": {
+        "fd-page-footer__logo": {
+          "type": "object",
+          "description": "logo element",
+          "properties": {
+            "class": {
+              "const": "fd-page-footer__logo",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-page-footer__row": {
+          "type": "object",
+          "description": "row element",
+          "properties": {
+            "class": {
+              "const": "fd-page-footer__row",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-page-footer__text": {
+          "type": "object",
+          "description": "text element",
+          "properties": {
+            "class": {
+              "const": "fd-page-footer__text",
+              "description": "Element class name"
+            }
+          }
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "required": [
+    "baseClass"
+  ]
+}

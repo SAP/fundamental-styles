@@ -1,0 +1,63 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://sap.github.io/fundamental-styles/schemas/generic-tag.json",
+  "title": "Generic Tag Component",
+  "description": "The generic tag control displays complementary information related to the current page, such as key performance indicators (KPI) and situations.",
+  "type": "object",
+  "properties": {
+    "baseClass": {
+      "const": "fd-generic-tag",
+      "description": "Required base class"
+    },
+    "elements": {
+      "type": "object",
+      "description": "Optional element classes with their available modifiers",
+      "properties": {
+        "fd-generic-tag__icon": {
+          "type": "object",
+          "description": "icon element",
+          "properties": {
+            "class": {
+              "const": "fd-generic-tag__icon",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-generic-tag__name": {
+          "type": "object",
+          "description": "name element",
+          "properties": {
+            "class": {
+              "const": "fd-generic-tag__name",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-generic-tag__value": {
+          "type": "object",
+          "description": "value element",
+          "properties": {
+            "class": {
+              "const": "fd-generic-tag__value",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-generic-tag__sr-only": {
+          "type": "object",
+          "description": "sr-only element",
+          "properties": {
+            "class": {
+              "const": "fd-generic-tag__sr-only",
+              "description": "Element class name"
+            }
+          }
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "required": [
+    "baseClass"
+  ]
+}

@@ -1,0 +1,83 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://sap.github.io/fundamental-styles/schemas/message-box.json",
+  "title": "Message Box Component",
+  "description": "The message box displays a dialog with a simple message to the user. Contrary to the **Popover**, message box can relay messages unrelated to the UI, such as technical errors. This component inherits the look and behavior of the **Dialog** (excluding dragging/resizing).",
+  "type": "object",
+  "properties": {
+    "baseClass": {
+      "const": "fd-message-box",
+      "description": "Required base class"
+    },
+    "modifiers": {
+      "type": "array",
+      "items": {
+        "enum": [
+          "fd-message-box--mobile",
+          "fd-message-box--active"
+        ]
+      },
+      "description": "Optional modifier classes"
+    },
+    "elements": {
+      "type": "object",
+      "description": "Optional element classes with their available modifiers",
+      "properties": {
+        "fd-message-box__content": {
+          "type": "object",
+          "description": "content element",
+          "properties": {
+            "class": {
+              "const": "fd-message-box__content",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-message-box__footer": {
+          "type": "object",
+          "description": "footer element",
+          "properties": {
+            "class": {
+              "const": "fd-message-box__footer",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-message-box__body": {
+          "type": "object",
+          "description": "body element",
+          "properties": {
+            "class": {
+              "const": "fd-message-box__body",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-message-box__title": {
+          "type": "object",
+          "description": "title element",
+          "properties": {
+            "class": {
+              "const": "fd-message-box__title",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-message-box__more": {
+          "type": "object",
+          "description": "more element",
+          "properties": {
+            "class": {
+              "const": "fd-message-box__more",
+              "description": "Element class name"
+            }
+          }
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "required": [
+    "baseClass"
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://sap.github.io/fundamental-styles/schemas/text.json",
+  "title": "Text Component",
+  "description": "The text component displays text inside a form, table, or any other content area.",
+  "type": "object",
+  "properties": {
+    "baseClass": {
+      "const": "fd-text",
+      "description": "Required base class"
+    },
+    "modifiers": {
+      "type": "array",
+      "items": {
+        "enum": [
+          "fd-text--max-lines",
+          "fd-text--pre-wrap",
+          "fd-text--hyphenation",
+          "fd-text--more",
+          "fd-text--subline"
+        ]
+      },
+      "description": "Optional modifier classes"
+    },
+    "elements": {
+      "type": "object",
+      "description": "Optional element classes with their available modifiers",
+      "properties": {
+        "fd-text__link": {
+          "type": "object",
+          "description": "link element",
+          "properties": {
+            "class": {
+              "const": "fd-text__link",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-text__ai-highlight": {
+          "type": "object",
+          "description": "ai-highlight element",
+          "properties": {
+            "class": {
+              "const": "fd-text__ai-highlight",
+              "description": "Element class name"
+            }
+          }
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "required": [
+    "baseClass"
+  ]
+}

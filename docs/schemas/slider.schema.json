@@ -1,0 +1,135 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://sap.github.io/fundamental-styles/schemas/slider.json",
+  "title": "Slider Component",
+  "description": "There are two types of sliders, <a href=\"https://experience.sap.com/internal/fiori-design-web/slider/\">Standard Slider</a> and  <a href=\"https://experience.sap.com/internal/fiori-design-web/range-slider/\">Range Slider</a>. The standard slider is a control that enables the user to adjust single values within a specified numerical range. The range slider enables the user to select a value range within a predefined numerical interval.",
+  "type": "object",
+  "properties": {
+    "baseClass": {
+      "const": "fd-slider",
+      "description": "Required base class"
+    },
+    "modifiers": {
+      "type": "array",
+      "items": {
+        "enum": [
+          "fd-slider--lg",
+          "fd-slider--vertical",
+          "fd-slider--range",
+          "fd-slider--in-range"
+        ]
+      },
+      "description": "Optional modifier classes"
+    },
+    "elements": {
+      "type": "object",
+      "description": "Optional element classes with their available modifiers",
+      "properties": {
+        "fd-slider__inner": {
+          "type": "object",
+          "description": "inner element",
+          "properties": {
+            "class": {
+              "const": "fd-slider__inner",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-slider__track": {
+          "type": "object",
+          "description": "track element",
+          "properties": {
+            "class": {
+              "const": "fd-slider__track",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-slider__track-range": {
+          "type": "object",
+          "description": "track-range element",
+          "properties": {
+            "class": {
+              "const": "fd-slider__track-range",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-slider__tick-wrapper": {
+          "type": "object",
+          "description": "tick-wrapper element",
+          "properties": {
+            "class": {
+              "const": "fd-slider__tick-wrapper",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-slider__ticks": {
+          "type": "object",
+          "description": "ticks element",
+          "properties": {
+            "class": {
+              "const": "fd-slider__ticks",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-slider__labels": {
+          "type": "object",
+          "description": "labels element",
+          "properties": {
+            "class": {
+              "const": "fd-slider__labels",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-slider__tick": {
+          "type": "object",
+          "description": "tick element",
+          "properties": {
+            "class": {
+              "const": "fd-slider__tick",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-slider__label": {
+          "type": "object",
+          "description": "label element",
+          "properties": {
+            "class": {
+              "const": "fd-slider__label",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-slider__handle": {
+          "type": "object",
+          "description": "handle element",
+          "properties": {
+            "class": {
+              "const": "fd-slider__handle",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-slider__track-focus-range": {
+          "type": "object",
+          "description": "track-focus-range element",
+          "properties": {
+            "class": {
+              "const": "fd-slider__track-focus-range",
+              "description": "Element class name"
+            }
+          }
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "required": [
+    "baseClass"
+  ]
+}

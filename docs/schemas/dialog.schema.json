@@ -1,0 +1,108 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://sap.github.io/fundamental-styles/schemas/dialog.json",
+  "title": "Dialog Component",
+  "description": "Modal dialog window for displaying important information or forms",
+  "type": "object",
+  "properties": {
+    "baseClass": {
+      "const": "fd-dialog",
+      "description": "Required base class"
+    },
+    "modifiers": {
+      "type": "array",
+      "items": {
+        "enum": [
+          "fd-dialog--active",
+          "fd-dialog--mobile",
+          "fd-dialog--no-mobile-stretch",
+          "fd-dialog--draggable",
+          "fd-dialog--no-vertical-padding",
+          "fd-dialog--no-horizontal-padding",
+          "fd-dialog--no-backdrop"
+        ]
+      },
+      "description": "Optional modifier classes"
+    },
+    "elements": {
+      "type": "object",
+      "description": "Optional element classes with their available modifiers",
+      "properties": {
+        "fd-dialog__content": {
+          "type": "object",
+          "description": "content element",
+          "properties": {
+            "class": {
+              "const": "fd-dialog__content",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-dialog__header": {
+          "type": "object",
+          "description": "header element",
+          "properties": {
+            "class": {
+              "const": "fd-dialog__header",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-dialog__footer": {
+          "type": "object",
+          "description": "footer element",
+          "properties": {
+            "class": {
+              "const": "fd-dialog__footer",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-dialog__subheader": {
+          "type": "object",
+          "description": "subheader element",
+          "properties": {
+            "class": {
+              "const": "fd-dialog__subheader",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-dialog__body": {
+          "type": "object",
+          "description": "body element",
+          "properties": {
+            "class": {
+              "const": "fd-dialog__body",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-dialog__loader": {
+          "type": "object",
+          "description": "loader element",
+          "properties": {
+            "class": {
+              "const": "fd-dialog__loader",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-dialog__resize-handle": {
+          "type": "object",
+          "description": "resize-handle element",
+          "properties": {
+            "class": {
+              "const": "fd-dialog__resize-handle",
+              "description": "Element class name"
+            }
+          }
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "required": [
+    "baseClass"
+  ]
+}

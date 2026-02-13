@@ -1,0 +1,104 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://sap.github.io/fundamental-styles/schemas/micro-process-flow.json",
+  "title": "Micro Process Flow Component",
+  "description": "The micro process flow control enables you to visualize the state of individual items in a linear workflow. You can embed it into a list or a table.",
+  "type": "object",
+  "properties": {
+    "baseClass": {
+      "const": "fd-micro-process-flow",
+      "description": "Required base class"
+    },
+    "modifiers": {
+      "type": "array",
+      "items": {
+        "enum": [
+          "fd-micro-process-flow--information",
+          "fd-micro-process-flow--independent-steps",
+          "fd-micro-process-flow--intermediate"
+        ]
+      },
+      "description": "Optional modifier classes"
+    },
+    "elements": {
+      "type": "object",
+      "description": "Optional element classes with their available modifiers",
+      "properties": {
+        "fd-micro-process-flow__wrapper": {
+          "type": "object",
+          "description": "wrapper element",
+          "properties": {
+            "class": {
+              "const": "fd-micro-process-flow__wrapper",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-micro-process-flow__overflow-container": {
+          "type": "object",
+          "description": "overflow-container element",
+          "properties": {
+            "class": {
+              "const": "fd-micro-process-flow__overflow-container",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-micro-process-flow__link-previous": {
+          "type": "object",
+          "description": "link-previous element",
+          "properties": {
+            "class": {
+              "const": "fd-micro-process-flow__link-previous",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-micro-process-flow__link-next": {
+          "type": "object",
+          "description": "link-next element",
+          "properties": {
+            "class": {
+              "const": "fd-micro-process-flow__link-next",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-micro-process-flow__focusable-item": {
+          "type": "object",
+          "description": "focusable-item element",
+          "properties": {
+            "class": {
+              "const": "fd-micro-process-flow__focusable-item",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-micro-process-flow__content": {
+          "type": "object",
+          "description": "content element",
+          "properties": {
+            "class": {
+              "const": "fd-micro-process-flow__content",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-micro-process-flow__connector": {
+          "type": "object",
+          "description": "connector element",
+          "properties": {
+            "class": {
+              "const": "fd-micro-process-flow__connector",
+              "description": "Element class name"
+            }
+          }
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "required": [
+    "baseClass"
+  ]
+}

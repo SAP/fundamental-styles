@@ -1,0 +1,83 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://sap.github.io/fundamental-styles/schemas/toolbar.json",
+  "title": "Toolbar Component",
+  "description": "The toolbar enables the user to change the UI or trigger an action. For example, the user can change views, manipulate data or objects, navigate to another page, perform generic actions, and so on. This component is usually paired with buttons, which are always right-aligned.",
+  "type": "object",
+  "properties": {
+    "baseClass": {
+      "const": "fd-toolbar",
+      "description": "Required base class"
+    },
+    "modifiers": {
+      "type": "array",
+      "items": {
+        "enum": [
+          "fd-toolbar--fixed",
+          "fd-toolbar--menu",
+          "fd-toolbar--auto",
+          "fd-toolbar--solid",
+          "fd-toolbar--transparent",
+          "fd-toolbar--clear",
+          "fd-toolbar--ai",
+          "fd-toolbar--title",
+          "fd-toolbar--info",
+          "fd-toolbar--active",
+          "fd-toolbar--fade-in",
+          "fd-toolbar--fade-out"
+        ]
+      },
+      "description": "Optional modifier classes"
+    },
+    "elements": {
+      "type": "object",
+      "description": "Optional element classes with their available modifiers",
+      "properties": {
+        "fd-toolbar__spacer": {
+          "type": "object",
+          "description": "spacer element",
+          "properties": {
+            "class": {
+              "const": "fd-toolbar__spacer",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-toolbar__separator": {
+          "type": "object",
+          "description": "separator element",
+          "properties": {
+            "class": {
+              "const": "fd-toolbar__separator",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-toolbar__overflow": {
+          "type": "object",
+          "description": "overflow element",
+          "properties": {
+            "class": {
+              "const": "fd-toolbar__overflow",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-toolbar__title": {
+          "type": "object",
+          "description": "title element",
+          "properties": {
+            "class": {
+              "const": "fd-toolbar__title",
+              "description": "Element class name"
+            }
+          }
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "required": [
+    "baseClass"
+  ]
+}

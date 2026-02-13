@@ -1,0 +1,493 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://sap.github.io/fundamental-styles/schemas/card.json",
+  "title": "Card Component",
+  "description": "Content card container for grouping related information",
+  "type": "object",
+  "properties": {
+    "baseClass": {
+      "const": "fd-card",
+      "description": "Required base class"
+    },
+    "modifiers": {
+      "type": "array",
+      "items": {
+        "enum": [
+          "fd-card--interactive",
+          "fd-card--top-aligned",
+          "fd-card--bottom-aligned",
+          "fd-card--right-aligned",
+          "fd-card--with-spacing",
+          "fd-card--horizontal",
+          "fd-card--analytical",
+          "fd-card--table",
+          "fd-card--object",
+          "fd-card--banner"
+        ]
+      },
+      "description": "Optional modifier classes"
+    },
+    "elements": {
+      "type": "object",
+      "description": "Optional element classes with their available modifiers",
+      "properties": {
+        "fd-card__header": {
+          "type": "object",
+          "description": "header element",
+          "properties": {
+            "class": {
+              "const": "fd-card__header",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-card__header-main": {
+          "type": "object",
+          "description": "header-main element",
+          "properties": {
+            "class": {
+              "const": "fd-card__header-main",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-card__header-main-container": {
+          "type": "object",
+          "description": "header-main-container element",
+          "properties": {
+            "class": {
+              "const": "fd-card__header-main-container",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-card__header-main-actions": {
+          "type": "object",
+          "description": "header-main-actions element",
+          "properties": {
+            "class": {
+              "const": "fd-card__header-main-actions",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-card__header-extended": {
+          "type": "object",
+          "description": "header-extended element",
+          "properties": {
+            "class": {
+              "const": "fd-card__header-extended",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-card__header-column": {
+          "type": "object",
+          "description": "header-column element",
+          "properties": {
+            "class": {
+              "const": "fd-card__header-column",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-card__header-row": {
+          "type": "object",
+          "description": "header-row element",
+          "properties": {
+            "class": {
+              "const": "fd-card__header-row",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-card__header-numeric": {
+          "type": "object",
+          "description": "header-numeric element",
+          "properties": {
+            "class": {
+              "const": "fd-card__header-numeric",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-card__indicator": {
+          "type": "object",
+          "description": "indicator element",
+          "properties": {
+            "class": {
+              "const": "fd-card__indicator",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-card__numeric-container": {
+          "type": "object",
+          "description": "numeric-container element",
+          "properties": {
+            "class": {
+              "const": "fd-card__numeric-container",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-card__indicator-title": {
+          "type": "object",
+          "description": "indicator-title element",
+          "properties": {
+            "class": {
+              "const": "fd-card__indicator-title",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-card__indicator-value": {
+          "type": "object",
+          "description": "indicator-value element",
+          "properties": {
+            "class": {
+              "const": "fd-card__indicator-value",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-card__timestamp": {
+          "type": "object",
+          "description": "timestamp element",
+          "properties": {
+            "class": {
+              "const": "fd-card__timestamp",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-card__footer": {
+          "type": "object",
+          "description": "footer element",
+          "properties": {
+            "class": {
+              "const": "fd-card__footer",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-card__header-text": {
+          "type": "object",
+          "description": "header-text element",
+          "properties": {
+            "class": {
+              "const": "fd-card__header-text",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-card__title-area": {
+          "type": "object",
+          "description": "title-area element",
+          "properties": {
+            "class": {
+              "const": "fd-card__title-area",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-card__title": {
+          "type": "object",
+          "description": "title element",
+          "properties": {
+            "class": {
+              "const": "fd-card__title",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-card__subtitle-area": {
+          "type": "object",
+          "description": "subtitle-area element",
+          "properties": {
+            "class": {
+              "const": "fd-card__subtitle-area",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-card__subtitle": {
+          "type": "object",
+          "description": "subtitle element",
+          "properties": {
+            "class": {
+              "const": "fd-card__subtitle",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-card__counter": {
+          "type": "object",
+          "description": "counter element",
+          "properties": {
+            "class": {
+              "const": "fd-card__counter",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-card__badge-container": {
+          "type": "object",
+          "description": "badge-container element",
+          "properties": {
+            "class": {
+              "const": "fd-card__badge-container",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-card__badge": {
+          "type": "object",
+          "description": "badge element",
+          "properties": {
+            "class": {
+              "const": "fd-card__badge",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-card__currency": {
+          "type": "object",
+          "description": "currency element",
+          "properties": {
+            "class": {
+              "const": "fd-card__currency",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-card__analytics-area": {
+          "type": "object",
+          "description": "analytics-area element",
+          "properties": {
+            "class": {
+              "const": "fd-card__analytics-area",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-card__analytics-container": {
+          "type": "object",
+          "description": "analytics-container element",
+          "properties": {
+            "class": {
+              "const": "fd-card__analytics-container",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-card__analytics": {
+          "type": "object",
+          "description": "analytics element",
+          "properties": {
+            "class": {
+              "const": "fd-card__analytics",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-card__analytics-text": {
+          "type": "object",
+          "description": "analytics-text element",
+          "properties": {
+            "class": {
+              "const": "fd-card__analytics-text",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-card__analytics-content": {
+          "type": "object",
+          "description": "analytics-content element",
+          "properties": {
+            "class": {
+              "const": "fd-card__analytics-content",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-card__second-subtitle": {
+          "type": "object",
+          "description": "second-subtitle element",
+          "properties": {
+            "class": {
+              "const": "fd-card__second-subtitle",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-card__numeric-content": {
+          "type": "object",
+          "description": "numeric-content element",
+          "properties": {
+            "class": {
+              "const": "fd-card__numeric-content",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-card__content": {
+          "type": "object",
+          "description": "content element",
+          "properties": {
+            "class": {
+              "const": "fd-card__content",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-card__content-container": {
+          "type": "object",
+          "description": "content-container element",
+          "properties": {
+            "class": {
+              "const": "fd-card__content-container",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-card__content-section": {
+          "type": "object",
+          "description": "content-section element",
+          "properties": {
+            "class": {
+              "const": "fd-card__content-section",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-card__content-title-container": {
+          "type": "object",
+          "description": "content-title-container element",
+          "properties": {
+            "class": {
+              "const": "fd-card__content-title-container",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-card__content-group": {
+          "type": "object",
+          "description": "content-group element",
+          "properties": {
+            "class": {
+              "const": "fd-card__content-group",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-card__content-group-text": {
+          "type": "object",
+          "description": "content-group-text element",
+          "properties": {
+            "class": {
+              "const": "fd-card__content-group-text",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-card__loader": {
+          "type": "object",
+          "description": "loader element",
+          "properties": {
+            "class": {
+              "const": "fd-card__loader",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-card__media": {
+          "type": "object",
+          "description": "media element",
+          "properties": {
+            "class": {
+              "const": "fd-card__media",
+              "description": "Element class name"
+            },
+            "modifiers": {
+              "type": "array",
+              "items": {
+                "enum": [
+                  "fd-card__media--with-padding",
+                  "fd-card__media--bg-shell-",
+                  "fd-card__media--bg-legend-"
+                ]
+              },
+              "description": "Available modifiers for this element"
+            }
+          }
+        },
+        "fd-card__media-content-container": {
+          "type": "object",
+          "description": "media-content-container element",
+          "properties": {
+            "class": {
+              "const": "fd-card__media-content-container",
+              "description": "Element class name"
+            },
+            "modifiers": {
+              "type": "array",
+              "items": {
+                "enum": [
+                  "fd-card__media-content-container--bg-shell-",
+                  "fd-card__media-content-container--bg-legend-",
+                  "fd-card__media-content-container--overlay"
+                ]
+              },
+              "description": "Available modifiers for this element"
+            }
+          }
+        },
+        "fd-card__media-image-container": {
+          "type": "object",
+          "description": "media-image-container element",
+          "properties": {
+            "class": {
+              "const": "fd-card__media-image-container",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-card__media-image": {
+          "type": "object",
+          "description": "media-image element",
+          "properties": {
+            "class": {
+              "const": "fd-card__media-image",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-card__media-heading": {
+          "type": "object",
+          "description": "media-heading element",
+          "properties": {
+            "class": {
+              "const": "fd-card__media-heading",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-card__media-text": {
+          "type": "object",
+          "description": "media-text element",
+          "properties": {
+            "class": {
+              "const": "fd-card__media-text",
+              "description": "Element class name"
+            }
+          }
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "required": [
+    "baseClass"
+  ]
+}

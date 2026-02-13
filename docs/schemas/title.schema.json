@@ -1,0 +1,32 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://sap.github.io/fundamental-styles/schemas/title.json",
+  "title": "Title Component",
+  "description": "A title component whose semantic level and visual appearance can be set separately, providing flexibility in design while adhering to accessibility best practices.",
+  "type": "object",
+  "properties": {
+    "baseClass": {
+      "const": "fd-title",
+      "description": "Required base class"
+    },
+    "modifiers": {
+      "type": "array",
+      "items": {
+        "enum": [
+          "fd-title--h1",
+          "fd-title--h2",
+          "fd-title--h3",
+          "fd-title--h4",
+          "fd-title--h5",
+          "fd-title--h6",
+          "fd-title--wrap",
+          "fd-title--two-line-clamp"
+        ]
+      },
+      "description": "Optional modifier classes"
+    }
+  },
+  "required": [
+    "baseClass"
+  ]
+}

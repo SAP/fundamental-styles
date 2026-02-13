@@ -1,0 +1,93 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://sap.github.io/fundamental-styles/schemas/resizable-card-layout.json",
+  "title": "Resizable Card Layout Component",
+  "description": "Resizable Card Layout component",
+  "type": "object",
+  "properties": {
+    "baseClass": {
+      "const": "fd-resizable-card-layout",
+      "description": "Required base class"
+    },
+    "modifiers": {
+      "type": "array",
+      "items": {
+        "enum": [
+          "fd-resizable-card-layout--vertical",
+          "fd-resizable-card-layout--horizontal"
+        ]
+      },
+      "description": "Optional modifier classes"
+    },
+    "elements": {
+      "type": "object",
+      "description": "Optional element classes with their available modifiers",
+      "properties": {
+        "fd-resizable-card-layout__item": {
+          "type": "object",
+          "description": "item element",
+          "properties": {
+            "class": {
+              "const": "fd-resizable-card-layout__item",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-resizable-card-layout__card": {
+          "type": "object",
+          "description": "card element",
+          "properties": {
+            "class": {
+              "const": "fd-resizable-card-layout__card",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-resizable-card-layout__icon-wrapper": {
+          "type": "object",
+          "description": "icon-wrapper element",
+          "properties": {
+            "class": {
+              "const": "fd-resizable-card-layout__icon-wrapper",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-resizable-card-layout__icon": {
+          "type": "object",
+          "description": "icon element",
+          "properties": {
+            "class": {
+              "const": "fd-resizable-card-layout__icon",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-resizable-card-layout__resize": {
+          "type": "object",
+          "description": "resize element",
+          "properties": {
+            "class": {
+              "const": "fd-resizable-card-layout__resize",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-resizable-card-layout__indication-border": {
+          "type": "object",
+          "description": "indication-border element",
+          "properties": {
+            "class": {
+              "const": "fd-resizable-card-layout__indication-border",
+              "description": "Element class name"
+            }
+          }
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "required": [
+    "baseClass"
+  ]
+}

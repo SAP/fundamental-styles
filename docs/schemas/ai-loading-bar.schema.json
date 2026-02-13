@@ -1,0 +1,16 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://sap.github.io/fundamental-styles/schemas/ai-loading-bar.json",
+  "title": "Ai Loading Bar Component",
+  "description": "Ai Loading Bar component",
+  "type": "object",
+  "properties": {
+    "baseClass": {
+      "const": "fd-ai-loading-bar",
+      "description": "Required base class"
+    }
+  },
+  "required": [
+    "baseClass"
+  ]
+}

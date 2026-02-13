@@ -1,0 +1,88 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://sap.github.io/fundamental-styles/schemas/action-bar.json",
+  "title": "Action Bar Component",
+  "description": "The action bar displays at the top of the page, and includes the page’s title, description, back button and action buttons.",
+  "type": "object",
+  "properties": {
+    "baseClass": {
+      "const": "fd-action-bar",
+      "description": "Required base class"
+    },
+    "modifiers": {
+      "type": "array",
+      "items": {
+        "enum": [
+          "fd-action-bar--back",
+          "fd-action-bar--sm",
+          "fd-action-bar--s",
+          "fd-action-bar--md",
+          "fd-action-bar--lg",
+          "fd-action-bar--m",
+          "fd-action-bar--xl"
+        ]
+      },
+      "description": "Optional modifier classes"
+    },
+    "elements": {
+      "type": "object",
+      "description": "Optional element classes with their available modifiers",
+      "properties": {
+        "fd-action-bar__header": {
+          "type": "object",
+          "description": "header element",
+          "properties": {
+            "class": {
+              "const": "fd-action-bar__header",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-action-bar__back": {
+          "type": "object",
+          "description": "back element",
+          "properties": {
+            "class": {
+              "const": "fd-action-bar__back",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-action-bar__title": {
+          "type": "object",
+          "description": "title element",
+          "properties": {
+            "class": {
+              "const": "fd-action-bar__title",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-action-bar__description": {
+          "type": "object",
+          "description": "description element",
+          "properties": {
+            "class": {
+              "const": "fd-action-bar__description",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-action-bar__actions": {
+          "type": "object",
+          "description": "actions element",
+          "properties": {
+            "class": {
+              "const": "fd-action-bar__actions",
+              "description": "Element class name"
+            }
+          }
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "required": [
+    "baseClass"
+  ]
+}

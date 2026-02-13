@@ -1,0 +1,16 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://sap.github.io/fundamental-styles/schemas/list.json",
+  "title": "List Component",
+  "description": "Vertical list of items for simple or complex data display",
+  "type": "object",
+  "properties": {
+    "baseClass": {
+      "const": "fd-list",
+      "description": "Required base class"
+    }
+  },
+  "required": [
+    "baseClass"
+  ]
+}

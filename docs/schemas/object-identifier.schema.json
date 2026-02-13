@@ -1,0 +1,63 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://sap.github.io/fundamental-styles/schemas/object-identifier.json",
+  "title": "Object Identifier Component",
+  "description": "The object identifier is a short text that represents the key identifier of an object, and can be displayed in various types of containers, tables, panels, popovers and more. The text wraps if there is insufficient horizontal space.",
+  "type": "object",
+  "properties": {
+    "baseClass": {
+      "const": "fd-object-identifier",
+      "description": "Required base class"
+    },
+    "modifiers": {
+      "type": "array",
+      "items": {
+        "enum": [
+          "fd-object-identifier--bold",
+          "fd-object-identifier--medium"
+        ]
+      },
+      "description": "Optional modifier classes"
+    },
+    "elements": {
+      "type": "object",
+      "description": "Optional element classes with their available modifiers",
+      "properties": {
+        "fd-object-identifier__title": {
+          "type": "object",
+          "description": "title element",
+          "properties": {
+            "class": {
+              "const": "fd-object-identifier__title",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-object-identifier__text": {
+          "type": "object",
+          "description": "text element",
+          "properties": {
+            "class": {
+              "const": "fd-object-identifier__text",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-object-identifier__sr-only": {
+          "type": "object",
+          "description": "sr-only element",
+          "properties": {
+            "class": {
+              "const": "fd-object-identifier__sr-only",
+              "description": "Element class name"
+            }
+          }
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "required": [
+    "baseClass"
+  ]
+}

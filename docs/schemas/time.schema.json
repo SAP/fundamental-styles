@@ -1,0 +1,118 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://sap.github.io/fundamental-styles/schemas/time.json",
+  "title": "Time Component",
+  "description": "The time component is used to select a time value. It can be used to choose hours, minutes, seconds and/or a given period of the day. This component is rarely used alone and will likely be paired with the **Time Picker** pattern.",
+  "type": "object",
+  "properties": {
+    "baseClass": {
+      "const": "fd-time",
+      "description": "Required base class"
+    },
+    "modifiers": {
+      "type": "array",
+      "items": {
+        "enum": [
+          "fd-time--active",
+          "fd-time--meridian",
+          "fd-time--current",
+          "fd-time--collapsed",
+          "fd-time--hidden",
+          "fd-time--tablet",
+          "fd-time--scrollable"
+        ]
+      },
+      "description": "Optional modifier classes"
+    },
+    "elements": {
+      "type": "object",
+      "description": "Optional element classes with their available modifiers",
+      "properties": {
+        "fd-time__col": {
+          "type": "object",
+          "description": "col element",
+          "properties": {
+            "class": {
+              "const": "fd-time__col",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-time__current-indicator": {
+          "type": "object",
+          "description": "current-indicator element",
+          "properties": {
+            "class": {
+              "const": "fd-time__current-indicator",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-time__wrapper": {
+          "type": "object",
+          "description": "wrapper element",
+          "properties": {
+            "class": {
+              "const": "fd-time__wrapper",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-time__item": {
+          "type": "object",
+          "description": "item element",
+          "properties": {
+            "class": {
+              "const": "fd-time__item",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-time__unit": {
+          "type": "object",
+          "description": "unit element",
+          "properties": {
+            "class": {
+              "const": "fd-time__unit",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-time__list": {
+          "type": "object",
+          "description": "list element",
+          "properties": {
+            "class": {
+              "const": "fd-time__list",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-time__slider-label": {
+          "type": "object",
+          "description": "slider-label element",
+          "properties": {
+            "class": {
+              "const": "fd-time__slider-label",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-time__control": {
+          "type": "object",
+          "description": "control element",
+          "properties": {
+            "class": {
+              "const": "fd-time__control",
+              "description": "Element class name"
+            }
+          }
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "required": [
+    "baseClass"
+  ]
+}

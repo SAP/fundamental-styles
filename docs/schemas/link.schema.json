@@ -1,0 +1,33 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://sap.github.io/fundamental-styles/schemas/link.json",
+  "title": "Link Component",
+  "description": "Navigation link for moving to different pages or sections",
+  "type": "object",
+  "properties": {
+    "baseClass": {
+      "const": "fd-link",
+      "description": "Required base class"
+    },
+    "elements": {
+      "type": "object",
+      "description": "Optional element classes with their available modifiers",
+      "properties": {
+        "fd-link__sr-only": {
+          "type": "object",
+          "description": "sr-only element",
+          "properties": {
+            "class": {
+              "const": "fd-link__sr-only",
+              "description": "Element class name"
+            }
+          }
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "required": [
+    "baseClass"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://sap.github.io/fundamental-styles/schemas/helpers.json",
+  "title": "Helpers Component",
+  "description": "Helpers component",
+  "type": "object",
+  "properties": {
+    "baseClass": {
+      "const": "fd-helpers",
+      "description": "Required base class"
+    }
+  },
+  "required": [
+    "baseClass"
+  ]
+}

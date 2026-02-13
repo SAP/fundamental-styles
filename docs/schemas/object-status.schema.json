@@ -1,0 +1,65 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://sap.github.io/fundamental-styles/schemas/object-status.json",
+  "title": "Object Status Component",
+  "description": "Object Status is a short text that represents the semantic status of an object. It has a semantic",
+  "type": "object",
+  "properties": {
+    "baseClass": {
+      "const": "fd-object-status",
+      "description": "Required base class"
+    },
+    "modifiers": {
+      "type": "array",
+      "items": {
+        "enum": [
+          "fd-object-status--link",
+          "fd-object-status--large",
+          "fd-object-status--inverted",
+          "fd-object-status--truncate"
+        ]
+      },
+      "description": "Optional modifier classes"
+    },
+    "elements": {
+      "type": "object",
+      "description": "Optional element classes with their available modifiers",
+      "properties": {
+        "fd-object-status__text": {
+          "type": "object",
+          "description": "text element",
+          "properties": {
+            "class": {
+              "const": "fd-object-status__text",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-object-status__icon": {
+          "type": "object",
+          "description": "icon element",
+          "properties": {
+            "class": {
+              "const": "fd-object-status__icon",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-object-status__sr-only": {
+          "type": "object",
+          "description": "sr-only element",
+          "properties": {
+            "class": {
+              "const": "fd-object-status__sr-only",
+              "description": "Element class name"
+            }
+          }
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "required": [
+    "baseClass"
+  ]
+}

@@ -1,0 +1,143 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://sap.github.io/fundamental-styles/schemas/object-list.json",
+  "title": "Object List Component",
+  "description": "An object list is a type of list that consists of object list items, where each item provides a quick",
+  "type": "object",
+  "properties": {
+    "baseClass": {
+      "const": "fd-object-list",
+      "description": "Required base class"
+    },
+    "elements": {
+      "type": "object",
+      "description": "Optional element classes with their available modifiers",
+      "properties": {
+        "fd-object-list__intro": {
+          "type": "object",
+          "description": "intro element",
+          "properties": {
+            "class": {
+              "const": "fd-object-list__intro",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-object-list__container": {
+          "type": "object",
+          "description": "container element",
+          "properties": {
+            "class": {
+              "const": "fd-object-list__container",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-object-list__header": {
+          "type": "object",
+          "description": "header element",
+          "properties": {
+            "class": {
+              "const": "fd-object-list__header",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-object-list__header-left": {
+          "type": "object",
+          "description": "header-left element",
+          "properties": {
+            "class": {
+              "const": "fd-object-list__header-left",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-object-list__header-right": {
+          "type": "object",
+          "description": "header-right element",
+          "properties": {
+            "class": {
+              "const": "fd-object-list__header-right",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-object-list__row": {
+          "type": "object",
+          "description": "row element",
+          "properties": {
+            "class": {
+              "const": "fd-object-list__row",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-object-list__row-left": {
+          "type": "object",
+          "description": "row-left element",
+          "properties": {
+            "class": {
+              "const": "fd-object-list__row-left",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-object-list__row-right": {
+          "type": "object",
+          "description": "row-right element",
+          "properties": {
+            "class": {
+              "const": "fd-object-list__row-right",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-object-list__content": {
+          "type": "object",
+          "description": "content element",
+          "properties": {
+            "class": {
+              "const": "fd-object-list__content",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-object-list__object-number": {
+          "type": "object",
+          "description": "object-number element",
+          "properties": {
+            "class": {
+              "const": "fd-object-list__object-number",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-object-list__object-identifier": {
+          "type": "object",
+          "description": "object-identifier element",
+          "properties": {
+            "class": {
+              "const": "fd-object-list__object-identifier",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-object-list__object-attribute": {
+          "type": "object",
+          "description": "object-attribute element",
+          "properties": {
+            "class": {
+              "const": "fd-object-list__object-attribute",
+              "description": "Element class name"
+            }
+          }
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "required": [
+    "baseClass"
+  ]
+}

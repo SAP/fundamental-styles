@@ -1,0 +1,33 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://sap.github.io/fundamental-styles/schemas/ai-busy-indicator.json",
+  "title": "Ai Busy Indicator Component",
+  "description": "Ai Busy Indicator component",
+  "type": "object",
+  "properties": {
+    "baseClass": {
+      "const": "fd-ai-busy-indicator",
+      "description": "Required base class"
+    },
+    "elements": {
+      "type": "object",
+      "description": "Optional element classes with their available modifiers",
+      "properties": {
+        "fd-ai-busy-indicator__text": {
+          "type": "object",
+          "description": "text element",
+          "properties": {
+            "class": {
+              "const": "fd-ai-busy-indicator__text",
+              "description": "Element class name"
+            }
+          }
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "required": [
+    "baseClass"
+  ]
+}
