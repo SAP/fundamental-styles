@@ -39,6 +39,17 @@
             "class": {
               "const": "fd-carousel__content",
               "description": "Element class name"
+            },
+            "modifiers": {
+              "type": "array",
+              "items": {
+                "enum": [
+                  "fd-carousel__content--transparent",
+                  "fd-carousel__content--solid",
+                  "fd-carousel__content--horizontal"
+                ]
+              },
+              "description": "Available modifiers for this element"
             }
           }
         },
@@ -59,6 +70,15 @@
             "class": {
               "const": "fd-carousel__item",
               "description": "Element class name"
+            },
+            "modifiers": {
+              "type": "array",
+              "items": {
+                "enum": [
+                  "fd-carousel__item--active"
+                ]
+              },
+              "description": "Available modifiers for this element"
             }
           }
         },
@@ -69,6 +89,17 @@
             "class": {
               "const": "fd-carousel__page-indicator-container",
               "description": "Element class name"
+            },
+            "modifiers": {
+              "type": "array",
+              "items": {
+                "enum": [
+                  "fd-carousel__page-indicator-container--transparent",
+                  "fd-carousel__page-indicator-container--translucent",
+                  "fd-carousel__page-indicator-container--no-border"
+                ]
+              },
+              "description": "Available modifiers for this element"
             }
           }
         },
@@ -89,6 +120,15 @@
             "class": {
               "const": "fd-carousel__page-indicator",
               "description": "Element class name"
+            },
+            "modifiers": {
+              "type": "array",
+              "items": {
+                "enum": [
+                  "fd-carousel__page-indicator--active"
+                ]
+              },
+              "description": "Available modifiers for this element"
             }
           }
         },
@@ -99,6 +139,28 @@
             "class": {
               "const": "fd-carousel__text",
               "description": "Element class name"
+            }
+          }
+        },
+        "fd-carousel__button": {
+          "type": "object",
+          "description": "button element",
+          "properties": {
+            "class": {
+              "const": "fd-carousel__button",
+              "description": "Element class name"
+            },
+            "modifiers": {
+              "type": "array",
+              "items": {
+                "enum": [
+                  "fd-carousel__button--left",
+                  "fd-carousel__button--right",
+                  "fd-carousel__button--up",
+                  "fd-carousel__button--down"
+                ]
+              },
+              "description": "Available modifiers for this element"
             }
           }
         }

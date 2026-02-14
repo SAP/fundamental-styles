@@ -68,6 +68,28 @@
             "class": {
               "const": "fd-avatar__zoom-icon",
               "description": "Element class name"
+            },
+            "modifiers": {
+              "type": "array",
+              "items": {
+                "enum": [
+                  "fd-avatar__zoom-icon--indication-1",
+                  "fd-avatar__zoom-icon--indication-2",
+                  "fd-avatar__zoom-icon--indication-3",
+                  "fd-avatar__zoom-icon--indication-4",
+                  "fd-avatar__zoom-icon--indication-5",
+                  "fd-avatar__zoom-icon--indication-6",
+                  "fd-avatar__zoom-icon--indication-7",
+                  "fd-avatar__zoom-icon--indication-8",
+                  "fd-avatar__zoom-icon--indication-9",
+                  "fd-avatar__zoom-icon--indication-10",
+                  "fd-avatar__zoom-icon--negative",
+                  "fd-avatar__zoom-icon--caution",
+                  "fd-avatar__zoom-icon--positive",
+                  "fd-avatar__zoom-icon--information"
+                ]
+              },
+              "description": "Available modifiers for this element"
             }
           }
         },

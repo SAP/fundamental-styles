@@ -100,10 +100,10 @@ CSS component library for SAP Design System. Framework-agnostic, works with any 
 ### Select/Dropdown
 ```html
 <div class="fd-select">
-  <div class="fd-select__control">
+  <div class="fd-select__control" role="combobox" aria-expanded="false" aria-haspopup="listbox" tabindex="0">
     <span class="fd-select__text-content">Select an option</span>
-    <span class="fd-select__button">
-      <span class="sap-icon--slim-arrow-down"></span>
+    <span class="fd-button fd-button--transparent fd-select__button">
+      <i class="sap-icon--slim-arrow-down" role="presentation"></i>
     </span>
   </div>
 </div>
@@ -112,16 +112,19 @@ CSS component library for SAP Design System. Framework-agnostic, works with any 
 ### Checkbox & Radio
 ```html
 <!-- Checkbox -->
-<div class="fd-checkbox">
-  <input type="checkbox" class="fd-checkbox__input" id="cb1">
-  <label class="fd-checkbox__label" for="cb1">Option</label>
-</div>
+<input type="checkbox" class="fd-checkbox" id="cb1">
+<label class="fd-checkbox__label" for="cb1">
+  <span class="fd-checkbox__checkmark" aria-hidden="true"></span>
+  <span class="fd-checkbox__label-container">
+    <span class="fd-checkbox__text">Option</span>
+  </span>
+</label>
 
 <!-- Radio -->
-<div class="fd-radio">
-  <input type="radio" class="fd-radio__input" id="r1" name="group">
-  <label class="fd-radio__label" for="r1">Option</label>
-</div>
+<input type="radio" class="fd-radio" id="r1" name="group">
+<label class="fd-radio__label" for="r1">
+  <span class="fd-radio__text">Option</span>
+</label>
 ```
 
 ### Table
@@ -304,4 +307,8 @@ Available in `fundamental-styles/dist/theming/`:
 - **Full component list**: [docs/ai-component-index.md](docs/ai-component-index.md)
 - **Component schemas**: [docs/schemas/*.json](docs/schemas/)
 - **Utility classes**: [docs/utility-classes.json](docs/utility-classes.json)
+- **Complete HTML patterns**: [docs/html-examples.json](docs/html-examples.json) (table, forms, dialogs, navigation)
+- **Modifier combinations**: [docs/modifier-rules.json](docs/modifier-rules.json) (which modifiers conflict)
+- **Accessibility patterns**: [docs/accessibility.json](docs/accessibility.json) (ARIA for 72 components)
+- **Design tokens**: [docs/design-tokens.json](docs/design-tokens.json) (1,522 CSS variables)
 - **Visual examples**: https://sap.github.io/fundamental-styles/

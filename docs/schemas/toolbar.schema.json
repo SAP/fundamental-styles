@@ -41,6 +41,15 @@
             "class": {
               "const": "fd-toolbar__spacer",
               "description": "Element class name"
+            },
+            "modifiers": {
+              "type": "array",
+              "items": {
+                "enum": [
+                  "fd-toolbar__spacer--fixed"
+                ]
+              },
+              "description": "Available modifiers for this element"
             }
           }
         },

@@ -67,7 +67,23 @@
                   "fd-table__cell--non-interactive",
                   "fd-table__cell--checkbox",
                   "fd-table__cell--status-indicator",
-                  "fd-table__cell--group"
+                  "fd-table__cell--group",
+                  "fd-table__cell--fit-content",
+                  "fd-table__cell--fixed",
+                  "fd-table__cell--fixed-last",
+                  "fd-table__cell--fixed-end",
+                  "fd-table__cell--fixed-end-last",
+                  "fd-table__cell--focusable",
+                  "fd-table__cell--expand",
+                  "fd-table__cell--activable",
+                  "fd-table__cell--hoverable",
+                  "fd-table__cell--no-padding",
+                  "fd-table__cell--navigated",
+                  "fd-table__cell--no-data",
+                  "fd-table__cell--valid",
+                  "fd-table__cell--warning",
+                  "fd-table__cell--error",
+                  "fd-table__cell--information"
                 ]
               },
               "description": "Available modifiers for this element"
@@ -88,7 +104,9 @@
                 "enum": [
                   "fd-table__row--hoverable",
                   "fd-table__row--secondary",
-                  "fd-table__row--activable"
+                  "fd-table__row--activable",
+                  "fd-table__row--focusable",
+                  "fd-table__row--main"
                 ]
               },
               "description": "Available modifiers for this element"
@@ -102,6 +120,15 @@
             "class": {
               "const": "fd-table__header",
               "description": "Element class name"
+            },
+            "modifiers": {
+              "type": "array",
+              "items": {
+                "enum": [
+                  "fd-table__header--non-interactive"
+                ]
+              },
+              "description": "Available modifiers for this element"
             }
           }
         },
@@ -112,6 +139,16 @@
             "class": {
               "const": "fd-table__body",
               "description": "Element class name"
+            },
+            "modifiers": {
+              "type": "array",
+              "items": {
+                "enum": [
+                  "fd-table__body--no-horizontal-borders",
+                  "fd-table__body--no-vertical-borders"
+                ]
+              },
+              "description": "Available modifiers for this element"
             }
           }
         },
@@ -132,6 +169,16 @@
             "class": {
               "const": "fd-table__text",
               "description": "Element class name"
+            },
+            "modifiers": {
+              "type": "array",
+              "items": {
+                "enum": [
+                  "fd-table__text--no-wrap",
+                  "fd-table__text--title"
+                ]
+              },
+              "description": "Available modifiers for this element"
             }
           }
         },
@@ -142,6 +189,15 @@
             "class": {
               "const": "fd-table__icon",
               "description": "Element class name"
+            },
+            "modifiers": {
+              "type": "array",
+              "items": {
+                "enum": [
+                  "fd-table__icon--navigation"
+                ]
+              },
+              "description": "Available modifiers for this element"
             }
           }
         },
@@ -227,6 +283,28 @@
               "items": {
                 "enum": [
                   "fd-table__expand--open"
+                ]
+              },
+              "description": "Available modifiers for this element"
+            }
+          }
+        },
+        "fd-table__cell--status-indicator": {
+          "type": "object",
+          "description": "cell--status-indicator element",
+          "properties": {
+            "class": {
+              "const": "fd-table__cell--status-indicator",
+              "description": "Element class name"
+            },
+            "modifiers": {
+              "type": "array",
+              "items": {
+                "enum": [
+                  "fd-table__cell--status-indicator--valid",
+                  "fd-table__cell--status-indicator--warning",
+                  "fd-table__cell--status-indicator--error",
+                  "fd-table__cell--status-indicator--information"
                 ]
               },
               "description": "Available modifiers for this element"

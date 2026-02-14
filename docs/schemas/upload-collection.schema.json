@@ -106,6 +106,25 @@
               "description": "Element class name"
             }
           }
+        },
+        "fd-upload-collection__item": {
+          "type": "object",
+          "description": "item element",
+          "properties": {
+            "class": {
+              "const": "fd-upload-collection__item",
+              "description": "Element class name"
+            },
+            "modifiers": {
+              "type": "array",
+              "items": {
+                "enum": [
+                  "fd-upload-collection__item--interactive"
+                ]
+              },
+              "description": "Available modifiers for this element"
+            }
+          }
         }
       },
       "additionalProperties": false

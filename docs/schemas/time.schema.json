@@ -35,6 +35,15 @@
             "class": {
               "const": "fd-time__col",
               "description": "Element class name"
+            },
+            "modifiers": {
+              "type": "array",
+              "items": {
+                "enum": [
+                  "fd-time__col--period"
+                ]
+              },
+              "description": "Available modifiers for this element"
             }
           }
         },
@@ -55,6 +64,16 @@
             "class": {
               "const": "fd-time__wrapper",
               "description": "Element class name"
+            },
+            "modifiers": {
+              "type": "array",
+              "items": {
+                "enum": [
+                  "fd-time__wrapper--active",
+                  "fd-time__wrapper--meridian"
+                ]
+              },
+              "description": "Available modifiers for this element"
             }
           }
         },
@@ -65,6 +84,15 @@
             "class": {
               "const": "fd-time__item",
               "description": "Element class name"
+            },
+            "modifiers": {
+              "type": "array",
+              "items": {
+                "enum": [
+                  "fd-time__item--collapsed"
+                ]
+              },
+              "description": "Available modifiers for this element"
             }
           }
         },

@@ -84,7 +84,24 @@
                 "enum": [
                   "fd-popover__body--input-message-group",
                   "fd-popover__body--hidden",
-                  "fd-popover__body--no-arrow"
+                  "fd-popover__body--no-arrow",
+                  "fd-popover__body--padding",
+                  "fd-popover__body--left",
+                  "fd-popover__body--above",
+                  "fd-popover__body--arrow-bottom",
+                  "fd-popover__body--center",
+                  "fd-popover__body--arrow-x-center",
+                  "fd-popover__body--right",
+                  "fd-popover__body--arrow-x-end",
+                  "fd-popover__body--before",
+                  "fd-popover__body--arrow-right",
+                  "fd-popover__body--after",
+                  "fd-popover__body--arrow-left",
+                  "fd-popover__body--middle",
+                  "fd-popover__body--arrow-y-center",
+                  "fd-popover__body--bottom",
+                  "fd-popover__body--arrow-y-bottom",
+                  "fd-popover__body--resizable"
                 ]
               },
               "description": "Available modifiers for this element"
@@ -98,6 +115,25 @@
             "class": {
               "const": "fd-popover__resize-handle",
               "description": "Element class name"
+            }
+          }
+        },
+        "fd-popover__body-footer": {
+          "type": "object",
+          "description": "body-footer element",
+          "properties": {
+            "class": {
+              "const": "fd-popover__body-footer",
+              "description": "Element class name"
+            },
+            "modifiers": {
+              "type": "array",
+              "items": {
+                "enum": [
+                  "fd-popover__body-footer--center"
+                ]
+              },
+              "description": "Available modifiers for this element"
             }
           }
         }

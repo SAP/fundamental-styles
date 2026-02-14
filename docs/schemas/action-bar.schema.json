@@ -65,6 +65,15 @@
             "class": {
               "const": "fd-action-bar__description",
               "description": "Element class name"
+            },
+            "modifiers": {
+              "type": "array",
+              "items": {
+                "enum": [
+                  "fd-action-bar__description--back"
+                ]
+              },
+              "description": "Available modifiers for this element"
             }
           }
         },

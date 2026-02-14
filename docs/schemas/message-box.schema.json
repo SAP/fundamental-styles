@@ -35,6 +35,18 @@
             "class": {
               "const": "fd-message-box__content",
               "description": "Element class name"
+            },
+            "modifiers": {
+              "type": "array",
+              "items": {
+                "enum": [
+                  "fd-message-box__content--s",
+                  "fd-message-box__content--m",
+                  "fd-message-box__content--l",
+                  "fd-message-box__content--xl"
+                ]
+              },
+              "description": "Available modifiers for this element"
             }
           }
         },

@@ -1,9 +1,17 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "version": "0.41.0",
-  "lastUpdated": "2026-02-14",
   "description": "Machine-readable catalog of Fundamental Library Styles components",
   "generatedBy": "scripts/generate-ai-metadata.js",
+  "relatedFiles": {
+    "accessibility": "docs/accessibility.json",
+    "designTokens": "docs/design-tokens.json",
+    "htmlExamples": "docs/html-examples.json",
+    "modifierRules": "docs/modifier-rules.json",
+    "utilityClasses": "docs/utility-classes.json",
+    "relationships": "docs/component-relationships.json",
+    "schemas": "docs/schemas/{component}.schema.json"
+  },
   "packages": {
     "fundamental-styles": {
       "name": "fundamental-styles",
@@ -68,7 +76,12 @@
             {
               "class": "fd-action-bar__description",
               "description": "description element",
-              "modifiers": []
+              "modifiers": [
+                {
+                  "class": "fd-action-bar__description--back",
+                  "description": "back variant of description"
+                }
+              ]
             },
             {
               "class": "fd-action-bar__actions",
@@ -96,13 +109,26 @@
           ],
           "category": "toolbars",
           "subcategory": null,
-          "useCases": [],
-          "avoidWhen": [],
+          "useCases": [
+            "Page-level toolbar at top of content area",
+            "Display page title with back navigation",
+            "Container for page-level action buttons",
+            "Show contextual actions for the current view"
+          ],
+          "avoidWhen": [
+            "App-level navigation (use shellbar)",
+            "Table/list row actions (use toolbar)",
+            "Form actions (use bar with footer mode)"
+          ],
           "accessibility": {
             "role": null,
             "ariaAttributes": []
           },
-          "relatedComponents": [],
+          "relatedComponents": [
+            "bar",
+            "toolbar",
+            "shellbar"
+          ],
           "dependencies": []
         },
         {
@@ -131,7 +157,12 @@
             {
               "class": "fd-action-sheet__wrapper",
               "description": "wrapper element",
-              "modifiers": []
+              "modifiers": [
+                {
+                  "class": "fd-action-sheet__wrapper--active",
+                  "description": "active variant of wrapper"
+                }
+              ]
             },
             {
               "class": "fd-action-sheet__title",
@@ -157,13 +188,26 @@
           ],
           "category": "toolbars",
           "subcategory": null,
-          "useCases": [],
-          "avoidWhen": [],
+          "useCases": [
+            "Mobile-optimized action menu",
+            "Bottom sheet with action options",
+            "Touch-friendly action selection",
+            "Overflow menu on mobile devices"
+          ],
+          "avoidWhen": [
+            "Desktop applications (use menu or popover)",
+            "Complex forms (use dialog)",
+            "Navigation (use menu)"
+          ],
           "accessibility": {
             "role": null,
             "ariaAttributes": []
           },
-          "relatedComponents": [],
+          "relatedComponents": [
+            "menu",
+            "popover",
+            "dialog"
+          ],
           "dependencies": []
         },
         {
@@ -186,13 +230,25 @@
           "examples": [],
           "category": "ai-components",
           "subcategory": null,
-          "useCases": [],
-          "avoidWhen": [],
+          "useCases": [
+            "AI processing indicator",
+            "LLM response loading",
+            "AI feature loading state",
+            "Generative AI operations"
+          ],
+          "avoidWhen": [
+            "Non-AI loading (use busy-indicator)",
+            "Known progress (use progress-indicator)",
+            "Page loading (use skeleton)"
+          ],
           "accessibility": {
             "role": null,
             "ariaAttributes": []
           },
-          "relatedComponents": [],
+          "relatedComponents": [
+            "busy-indicator",
+            "ai-loading-bar"
+          ],
           "dependencies": []
         },
         {
@@ -209,13 +265,25 @@
           "examples": [],
           "category": "ai-components",
           "subcategory": null,
-          "useCases": [],
-          "avoidWhen": [],
+          "useCases": [
+            "AI content generation progress",
+            "LLM streaming response",
+            "AI processing with progress",
+            "Generative AI loading bar"
+          ],
+          "avoidWhen": [
+            "Non-AI progress (use progress-indicator)",
+            "Indeterminate loading (use ai-busy-indicator)",
+            "Quick operations (use busy-indicator)"
+          ],
           "accessibility": {
             "role": null,
             "ariaAttributes": []
           },
-          "relatedComponents": [],
+          "relatedComponents": [
+            "ai-busy-indicator",
+            "progress-indicator"
+          ],
           "dependencies": []
         },
         {
@@ -237,13 +305,25 @@
           "examples": [],
           "category": "ai-components",
           "subcategory": null,
-          "useCases": [],
-          "avoidWhen": [],
+          "useCases": [
+            "AI-generated text display",
+            "LLM response formatting",
+            "Streaming text output",
+            "AI content presentation"
+          ],
+          "avoidWhen": [
+            "Regular text (use text)",
+            "User input (use textarea)",
+            "Code display (use code)"
+          ],
           "accessibility": {
             "role": null,
             "ariaAttributes": []
           },
-          "relatedComponents": [],
+          "relatedComponents": [
+            "text",
+            "ai-writing-assistant"
+          ],
           "dependencies": []
         },
         {
@@ -285,13 +365,26 @@
           "examples": [],
           "category": "ai-components",
           "subcategory": null,
-          "useCases": [],
-          "avoidWhen": [],
+          "useCases": [
+            "AI writing suggestions",
+            "Content assistance UI",
+            "AI-powered text editor",
+            "Writing enhancement tools"
+          ],
+          "avoidWhen": [
+            "Simple text input (use textarea)",
+            "AI status only (use ai-text)",
+            "Non-writing AI features"
+          ],
           "accessibility": {
             "role": null,
             "ariaAttributes": []
           },
-          "relatedComponents": [],
+          "relatedComponents": [
+            "ai-text",
+            "prompt-input",
+            "textarea"
+          ],
           "dependencies": []
         },
         {
@@ -530,13 +623,25 @@
           ],
           "category": "visual",
           "subcategory": null,
-          "useCases": [],
-          "avoidWhen": [],
+          "useCases": [
+            "Multiple user avatars",
+            "Team member display",
+            "Participant list preview",
+            "Collaborative users indicator"
+          ],
+          "avoidWhen": [
+            "Single user (use avatar)",
+            "Full user list (use list)",
+            "User selection (use tokenizer)"
+          ],
           "accessibility": {
             "role": null,
             "ariaAttributes": []
           },
-          "relatedComponents": [],
+          "relatedComponents": [
+            "avatar",
+            "list"
+          ],
           "dependencies": []
         },
         {
@@ -733,7 +838,64 @@
             {
               "class": "fd-avatar__zoom-icon",
               "description": "zoom-icon element",
-              "modifiers": []
+              "modifiers": [
+                {
+                  "class": "fd-avatar__zoom-icon--indication-1",
+                  "description": "indication-1 variant of zoom-icon"
+                },
+                {
+                  "class": "fd-avatar__zoom-icon--indication-2",
+                  "description": "indication-2 variant of zoom-icon"
+                },
+                {
+                  "class": "fd-avatar__zoom-icon--indication-3",
+                  "description": "indication-3 variant of zoom-icon"
+                },
+                {
+                  "class": "fd-avatar__zoom-icon--indication-4",
+                  "description": "indication-4 variant of zoom-icon"
+                },
+                {
+                  "class": "fd-avatar__zoom-icon--indication-5",
+                  "description": "indication-5 variant of zoom-icon"
+                },
+                {
+                  "class": "fd-avatar__zoom-icon--indication-6",
+                  "description": "indication-6 variant of zoom-icon"
+                },
+                {
+                  "class": "fd-avatar__zoom-icon--indication-7",
+                  "description": "indication-7 variant of zoom-icon"
+                },
+                {
+                  "class": "fd-avatar__zoom-icon--indication-8",
+                  "description": "indication-8 variant of zoom-icon"
+                },
+                {
+                  "class": "fd-avatar__zoom-icon--indication-9",
+                  "description": "indication-9 variant of zoom-icon"
+                },
+                {
+                  "class": "fd-avatar__zoom-icon--indication-10",
+                  "description": "indication-10 variant of zoom-icon"
+                },
+                {
+                  "class": "fd-avatar__zoom-icon--negative",
+                  "description": "negative variant of zoom-icon"
+                },
+                {
+                  "class": "fd-avatar__zoom-icon--caution",
+                  "description": "caution variant of zoom-icon"
+                },
+                {
+                  "class": "fd-avatar__zoom-icon--positive",
+                  "description": "positive variant of zoom-icon"
+                },
+                {
+                  "class": "fd-avatar__zoom-icon--information",
+                  "description": "information variant of zoom-icon"
+                }
+              ]
             },
             {
               "class": "fd-avatar__icon",
@@ -813,13 +975,26 @@
           "examples": [],
           "category": "visual",
           "subcategory": null,
-          "useCases": [],
-          "avoidWhen": [],
+          "useCases": [
+            "Notification count",
+            "Status indicator",
+            "New item marker",
+            "Unread count display"
+          ],
+          "avoidWhen": [
+            "Semantic status (use object-status)",
+            "Colored labels (use info-label)",
+            "Large numbers (use counter)"
+          ],
           "accessibility": {
             "role": null,
             "ariaAttributes": []
           },
-          "relatedComponents": [],
+          "relatedComponents": [
+            "counter",
+            "info-label",
+            "object-status"
+          ],
           "dependencies": []
         },
         {
@@ -978,13 +1153,26 @@
           ],
           "category": "toolbars",
           "subcategory": null,
-          "useCases": [],
-          "avoidWhen": [],
+          "useCases": [
+            "Header bar for dialogs and pages",
+            "Footer bar with action buttons",
+            "Subheader for additional context",
+            "Container for title and actions"
+          ],
+          "avoidWhen": [
+            "Main app navigation (use shellbar)",
+            "Page-level actions outside dialog (use action-bar)",
+            "Toolbar within content (use toolbar)"
+          ],
           "accessibility": {
             "role": null,
             "ariaAttributes": []
           },
-          "relatedComponents": [],
+          "relatedComponents": [
+            "action-bar",
+            "toolbar",
+            "shellbar"
+          ],
           "dependencies": []
         },
         {
@@ -1041,13 +1229,25 @@
           ],
           "category": "navigation",
           "subcategory": "hierarchical",
-          "useCases": [],
-          "avoidWhen": [],
+          "useCases": [
+            "Show current location in hierarchy",
+            "Enable navigation to parent pages",
+            "Display path in multi-level apps",
+            "Provide context in deep navigation"
+          ],
+          "avoidWhen": [
+            "Single-level apps (not needed)",
+            "Primary navigation (use side-nav)",
+            "Tab-based navigation (use tabs)"
+          ],
           "accessibility": {
             "role": null,
             "ariaAttributes": []
           },
-          "relatedComponents": [],
+          "relatedComponents": [
+            "side-nav",
+            "shellbar"
+          ],
           "dependencies": []
         },
         {
@@ -1101,13 +1301,26 @@
           ],
           "category": "feedback",
           "subcategory": "loading",
-          "useCases": [],
-          "avoidWhen": [],
+          "useCases": [
+            "Show loading state for async operations",
+            "Indicate content is being fetched",
+            "Block interaction during processing",
+            "Display indeterminate progress"
+          ],
+          "avoidWhen": [
+            "Known progress percentage (use progress-indicator)",
+            "Page-level loading (use skeleton)",
+            "Background operations (no indicator needed)"
+          ],
           "accessibility": {
             "role": null,
             "ariaAttributes": []
           },
-          "relatedComponents": [],
+          "relatedComponents": [
+            "progress-indicator",
+            "skeleton",
+            "ai-busy-indicator"
+          ],
           "dependencies": []
         },
         {
@@ -1182,13 +1395,26 @@
           ],
           "category": "buttons",
           "subcategory": "action",
-          "useCases": [],
-          "avoidWhen": [],
+          "useCases": [
+            "Primary action with additional options",
+            "Save with save-as dropdown",
+            "Send with send options",
+            "Default action plus alternatives"
+          ],
+          "avoidWhen": [
+            "All actions equal priority (use segmented-button)",
+            "Simple single action (use button)",
+            "Menu trigger only (use menu button)"
+          ],
           "accessibility": {
             "role": null,
             "ariaAttributes": []
           },
-          "relatedComponents": [],
+          "relatedComponents": [
+            "button",
+            "segmented-button",
+            "menu"
+          ],
           "dependencies": []
         },
         {
@@ -1280,7 +1506,12 @@
             {
               "class": "fd-button__badge",
               "description": "badge element",
-              "modifiers": []
+              "modifiers": [
+                {
+                  "class": "fd-button__badge--attention",
+                  "description": "attention variant of badge"
+                }
+              ]
             },
             {
               "class": "fd-button__instructions",
@@ -1497,7 +1728,16 @@
             {
               "class": "fd-calendar__action",
               "description": "action element",
-              "modifiers": []
+              "modifiers": [
+                {
+                  "class": "fd-calendar__action--arrow-left",
+                  "description": "arrow-left variant of action"
+                },
+                {
+                  "class": "fd-calendar__action--arrow-right",
+                  "description": "arrow-right variant of action"
+                }
+              ]
             },
             {
               "class": "fd-calendar__text-wrapper",
@@ -1527,13 +1767,70 @@
                 {
                   "class": "fd-calendar__item--other",
                   "description": "other variant of item"
+                },
+                {
+                  "class": "fd-calendar__item--legend-1",
+                  "description": "legend-1 variant of item"
+                },
+                {
+                  "class": "fd-calendar__item--weekend",
+                  "description": "weekend variant of item"
+                },
+                {
+                  "class": "fd-calendar__item--legend-5",
+                  "description": "legend-5 variant of item"
+                },
+                {
+                  "class": "fd-calendar__item--legend-9",
+                  "description": "legend-9 variant of item"
+                },
+                {
+                  "class": "fd-calendar__item--legend-12",
+                  "description": "legend-12 variant of item"
+                },
+                {
+                  "class": "fd-calendar__item--legend-16",
+                  "description": "legend-16 variant of item"
+                },
+                {
+                  "class": "fd-calendar__item--legend-13",
+                  "description": "legend-13 variant of item"
+                },
+                {
+                  "class": "fd-calendar__item--side-helper",
+                  "description": "side-helper variant of item"
+                },
+                {
+                  "class": "fd-calendar__item--legend-7",
+                  "description": "legend-7 variant of item"
+                },
+                {
+                  "class": "fd-calendar__item--legend-3",
+                  "description": "legend-3 variant of item"
                 }
               ]
             },
             {
               "class": "fd-calendar__content",
               "description": "content element",
-              "modifiers": []
+              "modifiers": [
+                {
+                  "class": "fd-calendar__content--dates",
+                  "description": "dates variant of content"
+                },
+                {
+                  "class": "fd-calendar__content--screen-reader-only",
+                  "description": "screen-reader-only variant of content"
+                },
+                {
+                  "class": "fd-calendar__content--months",
+                  "description": "months variant of content"
+                },
+                {
+                  "class": "fd-calendar__content--years",
+                  "description": "years variant of content"
+                }
+              ]
             },
             {
               "class": "fd-calendar__group",
@@ -1621,13 +1918,25 @@
           ],
           "category": "date-time",
           "subcategory": null,
-          "useCases": [],
-          "avoidWhen": [],
+          "useCases": [
+            "Date picker component",
+            "Date range selection",
+            "Schedule/event display",
+            "Inline date selection"
+          ],
+          "avoidWhen": [
+            "Time-only selection (use time)",
+            "Simple date input (use input with type=date)",
+            "Date and time together (use combined picker)"
+          ],
           "accessibility": {
             "role": null,
             "ariaAttributes": []
           },
-          "relatedComponents": [],
+          "relatedComponents": [
+            "time",
+            "timepicker"
+          ],
           "dependencies": []
         },
         {
@@ -1649,7 +1958,12 @@
             {
               "class": "fd-card__header",
               "description": "header element",
-              "modifiers": []
+              "modifiers": [
+                {
+                  "class": "fd-card__header--interactive",
+                  "description": "interactive variant of header"
+                }
+              ]
             },
             {
               "class": "fd-card__header-main",
@@ -1669,12 +1983,22 @@
             {
               "class": "fd-card__header-extended",
               "description": "header-extended element",
-              "modifiers": []
+              "modifiers": [
+                {
+                  "class": "fd-card__header-extended--bottom-aligned",
+                  "description": "bottom-aligned variant of header-extended"
+                }
+              ]
             },
             {
               "class": "fd-card__header-column",
               "description": "header-column element",
-              "modifiers": []
+              "modifiers": [
+                {
+                  "class": "fd-card__header-column--right-aligned",
+                  "description": "right-aligned variant of header-column"
+                }
+              ]
             },
             {
               "class": "fd-card__header-row",
@@ -1804,7 +2128,12 @@
             {
               "class": "fd-card__content-container",
               "description": "content-container element",
-              "modifiers": []
+              "modifiers": [
+                {
+                  "class": "fd-card__content-container--horizontal",
+                  "description": "horizontal variant of content-container"
+                }
+              ]
             },
             {
               "class": "fd-card__content-section",
@@ -2076,7 +2405,20 @@
             {
               "class": "fd-carousel__content",
               "description": "content element",
-              "modifiers": []
+              "modifiers": [
+                {
+                  "class": "fd-carousel__content--transparent",
+                  "description": "transparent variant of content"
+                },
+                {
+                  "class": "fd-carousel__content--solid",
+                  "description": "solid variant of content"
+                },
+                {
+                  "class": "fd-carousel__content--horizontal",
+                  "description": "horizontal variant of content"
+                }
+              ]
             },
             {
               "class": "fd-carousel__slides",
@@ -2086,12 +2428,30 @@
             {
               "class": "fd-carousel__item",
               "description": "item element",
-              "modifiers": []
+              "modifiers": [
+                {
+                  "class": "fd-carousel__item--active",
+                  "description": "active variant of item"
+                }
+              ]
             },
             {
               "class": "fd-carousel__page-indicator-container",
               "description": "page-indicator-container element",
-              "modifiers": []
+              "modifiers": [
+                {
+                  "class": "fd-carousel__page-indicator-container--transparent",
+                  "description": "transparent variant of page-indicator-container"
+                },
+                {
+                  "class": "fd-carousel__page-indicator-container--translucent",
+                  "description": "translucent variant of page-indicator-container"
+                },
+                {
+                  "class": "fd-carousel__page-indicator-container--no-border",
+                  "description": "no-border variant of page-indicator-container"
+                }
+              ]
             },
             {
               "class": "fd-carousel__page-indicators",
@@ -2101,12 +2461,39 @@
             {
               "class": "fd-carousel__page-indicator",
               "description": "page-indicator element",
-              "modifiers": []
+              "modifiers": [
+                {
+                  "class": "fd-carousel__page-indicator--active",
+                  "description": "active variant of page-indicator"
+                }
+              ]
             },
             {
               "class": "fd-carousel__text",
               "description": "text element",
               "modifiers": []
+            },
+            {
+              "class": "fd-carousel__button",
+              "description": "button element",
+              "modifiers": [
+                {
+                  "class": "fd-carousel__button--left",
+                  "description": "left variant of button"
+                },
+                {
+                  "class": "fd-carousel__button--right",
+                  "description": "right variant of button"
+                },
+                {
+                  "class": "fd-carousel__button--up",
+                  "description": "up variant of button"
+                },
+                {
+                  "class": "fd-carousel__button--down",
+                  "description": "down variant of button"
+                }
+              ]
             }
           ],
           "variables": [
@@ -2143,13 +2530,25 @@
           ],
           "category": "specialized",
           "subcategory": null,
-          "useCases": [],
-          "avoidWhen": [],
+          "useCases": [
+            "Image gallery with navigation",
+            "Product image slideshow",
+            "Feature showcase",
+            "Content rotation"
+          ],
+          "avoidWhen": [
+            "Critical information (users may miss slides)",
+            "Forms or interactive content",
+            "Small number of items (use static layout)"
+          ],
           "accessibility": {
             "role": null,
             "ariaAttributes": []
           },
-          "relatedComponents": [],
+          "relatedComponents": [
+            "card",
+            "tile"
+          ],
           "dependencies": []
         },
         {
@@ -2299,13 +2698,24 @@
           ],
           "category": "typography",
           "subcategory": null,
-          "useCases": [],
-          "avoidWhen": [],
+          "useCases": [
+            "Code snippet display",
+            "Inline code formatting",
+            "Technical values",
+            "Monospace text"
+          ],
+          "avoidWhen": [
+            "Regular text (use text)",
+            "Editable code (use textarea)",
+            "Long code blocks (use external code editor)"
+          ],
           "accessibility": {
             "role": null,
             "ariaAttributes": []
           },
-          "relatedComponents": [],
+          "relatedComponents": [
+            "text"
+          ],
           "dependencies": []
         },
         {
@@ -2338,13 +2748,26 @@
           ],
           "category": "visual",
           "subcategory": null,
-          "useCases": [],
-          "avoidWhen": [],
+          "useCases": [
+            "Show count of items",
+            "Badge with number",
+            "Notification count indicator",
+            "Quantity display"
+          ],
+          "avoidWhen": [
+            "Status indication (use badge or object-status)",
+            "Large numbers with units (use object-number)",
+            "Interactive counters (use step-input)"
+          ],
           "accessibility": {
             "role": null,
             "ariaAttributes": []
           },
-          "relatedComponents": [],
+          "relatedComponents": [
+            "badge",
+            "object-number",
+            "step-input"
+          ],
           "dependencies": []
         },
         {
@@ -2400,7 +2823,32 @@
             {
               "class": "fd-dialog__content",
               "description": "content element",
-              "modifiers": []
+              "modifiers": [
+                {
+                  "class": "fd-dialog__content--s",
+                  "description": "s variant of content"
+                },
+                {
+                  "class": "fd-dialog__content--mobile",
+                  "description": "mobile variant of content"
+                },
+                {
+                  "class": "fd-dialog__content--draggable-grab",
+                  "description": "draggable-grab variant of content"
+                },
+                {
+                  "class": "fd-dialog__content--m",
+                  "description": "m variant of content"
+                },
+                {
+                  "class": "fd-dialog__content--l",
+                  "description": "l variant of content"
+                },
+                {
+                  "class": "fd-dialog__content--xl",
+                  "description": "xl variant of content"
+                }
+              ]
             },
             {
               "class": "fd-dialog__header",
@@ -2420,7 +2868,12 @@
             {
               "class": "fd-dialog__body",
               "description": "body element",
-              "modifiers": []
+              "modifiers": [
+                {
+                  "class": "fd-dialog__body--no-vertical-padding",
+                  "description": "no-vertical-padding variant of body"
+                }
+              ]
             },
             {
               "class": "fd-dialog__loader",
@@ -2688,13 +3141,26 @@
           "examples": [],
           "category": "specialized",
           "subcategory": null,
-          "useCases": [],
-          "avoidWhen": [],
+          "useCases": [
+            "Object detail pages",
+            "Collapsible header with content",
+            "Pages with hero section",
+            "Master-detail layouts"
+          ],
+          "avoidWhen": [
+            "Simple pages (use page)",
+            "List views (use list or table)",
+            "Dashboard layouts (use layout-grid)"
+          ],
           "accessibility": {
             "role": null,
             "ariaAttributes": []
           },
-          "relatedComponents": [],
+          "relatedComponents": [
+            "page",
+            "panel",
+            "section"
+          ],
           "dependencies": []
         },
         {
@@ -2732,13 +3198,25 @@
           "examples": [],
           "category": "layout",
           "subcategory": null,
-          "useCases": [],
-          "avoidWhen": [],
+          "useCases": [
+            "Responsive side panel",
+            "Context-sensitive sidebar",
+            "Collapsible side content",
+            "Main content with side panel"
+          ],
+          "avoidWhen": [
+            "Navigation sidebar (use side-nav)",
+            "Fixed layouts (use splitter)",
+            "Multi-column (use flexible-column-layout)"
+          ],
           "accessibility": {
             "role": null,
             "ariaAttributes": []
           },
-          "relatedComponents": [],
+          "relatedComponents": [
+            "splitter",
+            "flexible-column-layout"
+          ],
           "dependencies": []
         },
         {
@@ -2783,13 +3261,26 @@
           "examples": [],
           "category": "containers",
           "subcategory": null,
-          "useCases": [],
-          "avoidWhen": [],
+          "useCases": [
+            "Object page header sections",
+            "Key-value facet display",
+            "Metadata grouping",
+            "Object attributes container"
+          ],
+          "avoidWhen": [
+            "Form sections (use form-group)",
+            "Collapsible content (use panel)",
+            "Simple sections (use section)"
+          ],
           "accessibility": {
             "role": null,
             "ariaAttributes": []
           },
-          "relatedComponents": [],
+          "relatedComponents": [
+            "section",
+            "object-attribute",
+            "dynamic-page"
+          ],
           "dependencies": []
         },
         {
@@ -2826,13 +3317,25 @@
           ],
           "category": "social",
           "subcategory": null,
-          "useCases": [],
-          "avoidWhen": [],
+          "useCases": [
+            "Comment input field",
+            "Chat message input",
+            "Social post creation",
+            "Threaded discussion input"
+          ],
+          "avoidWhen": [
+            "Simple text input (use textarea)",
+            "Form fields (use input)",
+            "Rich text editing (use external editor)"
+          ],
           "accessibility": {
             "role": null,
             "ariaAttributes": []
           },
-          "relatedComponents": [],
+          "relatedComponents": [
+            "feed-list",
+            "textarea"
+          ],
           "dependencies": []
         },
         {
@@ -2881,7 +3384,12 @@
             {
               "class": "fd-feed-list__link",
               "description": "link element",
-              "modifiers": []
+              "modifiers": [
+                {
+                  "class": "fd-feed-list__link--more",
+                  "description": "more variant of link"
+                }
+              ]
             },
             {
               "class": "fd-feed-list__actions",
@@ -2901,7 +3409,22 @@
             {
               "class": "fd-feed-list__footer",
               "description": "footer element",
-              "modifiers": []
+              "modifiers": [
+                {
+                  "class": "fd-feed-list__footer--byline",
+                  "description": "byline variant of footer"
+                }
+              ]
+            },
+            {
+              "class": "fd-feed-list__wrapper",
+              "description": "wrapper element",
+              "modifiers": [
+                {
+                  "class": "fd-feed-list__wrapper--header",
+                  "description": "header variant of wrapper"
+                }
+              ]
             }
           ],
           "variables": [
@@ -2928,13 +3451,26 @@
           ],
           "category": "social",
           "subcategory": null,
-          "useCases": [],
-          "avoidWhen": [],
+          "useCases": [
+            "Activity feed display",
+            "Comment threads",
+            "Timeline of events",
+            "Social updates list"
+          ],
+          "avoidWhen": [
+            "Structured data (use table or list)",
+            "Simple lists (use list)",
+            "Navigation items (use navigation-list)"
+          ],
           "accessibility": {
             "role": null,
             "ariaAttributes": []
           },
-          "relatedComponents": [],
+          "relatedComponents": [
+            "feed-input",
+            "list",
+            "notification"
+          ],
           "dependencies": []
         },
         {
@@ -2957,13 +3493,25 @@
           "examples": [],
           "category": "form-layout",
           "subcategory": null,
-          "useCases": [],
-          "avoidWhen": [],
+          "useCases": [
+            "Form field grouping",
+            "Semantic form sections",
+            "Related fields container",
+            "Accessible form groups"
+          ],
+          "avoidWhen": [
+            "Visual grouping only (use form-group)",
+            "Layout sections (use section)",
+            "Complex forms (use form-layout-grid)"
+          ],
           "accessibility": {
             "role": null,
             "ariaAttributes": []
           },
-          "relatedComponents": [],
+          "relatedComponents": [
+            "form-group",
+            "form-layout-grid"
+          ],
           "dependencies": []
         },
         {
@@ -3027,13 +3575,25 @@
           ],
           "category": "form-inputs",
           "subcategory": "file",
-          "useCases": [],
-          "avoidWhen": [],
+          "useCases": [
+            "Single or multiple file upload",
+            "Document attachment",
+            "Image upload",
+            "Drag and drop file input"
+          ],
+          "avoidWhen": [
+            "File management (use upload-collection)",
+            "Simple text input (use input)",
+            "URL input (use input with validation)"
+          ],
           "accessibility": {
             "role": null,
             "ariaAttributes": []
           },
-          "relatedComponents": [],
+          "relatedComponents": [
+            "upload-collection",
+            "input"
+          ],
           "dependencies": []
         },
         {
@@ -3086,13 +3646,26 @@
           "examples": [],
           "category": "layout",
           "subcategory": null,
-          "useCases": [],
-          "avoidWhen": [],
+          "useCases": [
+            "Fixed-size card grid",
+            "Dashboard with fixed cards",
+            "Non-resizable card layout",
+            "Static card arrangement"
+          ],
+          "avoidWhen": [
+            "Resizable cards (use resizable-card-layout)",
+            "Responsive grids (use layout-grid)",
+            "Lists (use grid-list)"
+          ],
           "accessibility": {
             "role": null,
             "ariaAttributes": []
           },
-          "relatedComponents": [],
+          "relatedComponents": [
+            "resizable-card-layout",
+            "layout-grid",
+            "card"
+          ],
           "dependencies": []
         },
         {
@@ -3140,13 +3713,26 @@
           "examples": [],
           "category": "layout",
           "subcategory": null,
-          "useCases": [],
-          "avoidWhen": [],
+          "useCases": [
+            "Master-detail-detail views",
+            "Responsive multi-column layout",
+            "Progressive disclosure patterns",
+            "List to detail navigation"
+          ],
+          "avoidWhen": [
+            "Simple two-column (use splitter)",
+            "Dashboard grids (use layout-grid)",
+            "Single page content (use page)"
+          ],
           "accessibility": {
             "role": null,
             "ariaAttributes": []
           },
-          "relatedComponents": [],
+          "relatedComponents": [
+            "splitter",
+            "layout-grid",
+            "dynamic-side-content"
+          ],
           "dependencies": []
         },
         {
@@ -3193,13 +3779,26 @@
           "examples": [],
           "category": "form-layout",
           "subcategory": null,
-          "useCases": [],
-          "avoidWhen": [],
+          "useCases": [
+            "Group related form fields",
+            "Form section with header",
+            "Visual form organization",
+            "Field container"
+          ],
+          "avoidWhen": [
+            "Semantic grouping (use fieldset)",
+            "Grid layouts (use form-layout-grid)",
+            "Page sections (use section)"
+          ],
           "accessibility": {
             "role": null,
             "ariaAttributes": []
           },
-          "relatedComponents": [],
+          "relatedComponents": [
+            "fieldset",
+            "form-layout-grid",
+            "section"
+          ],
           "dependencies": []
         },
         {
@@ -3224,13 +3823,25 @@
           "examples": [],
           "category": "form-layout",
           "subcategory": null,
-          "useCases": [],
-          "avoidWhen": [],
+          "useCases": [
+            "Form section title",
+            "Form group header",
+            "Section heading in forms",
+            "Form area label"
+          ],
+          "avoidWhen": [
+            "Page titles (use title)",
+            "Panel headers (use panel)",
+            "Section titles outside forms (use section)"
+          ],
           "accessibility": {
             "role": null,
             "ariaAttributes": []
           },
-          "relatedComponents": [],
+          "relatedComponents": [
+            "form-group",
+            "title"
+          ],
           "dependencies": []
         },
         {
@@ -3356,13 +3967,25 @@
           "examples": [],
           "category": "form-layout",
           "subcategory": null,
-          "useCases": [],
-          "avoidWhen": [],
+          "useCases": [
+            "Responsive form layouts",
+            "Multi-column forms",
+            "Complex form structures",
+            "Form field grid"
+          ],
+          "avoidWhen": [
+            "Simple forms (use form-group)",
+            "Single column (use form-item)",
+            "Page layouts (use layout-grid)"
+          ],
           "accessibility": {
             "role": null,
             "ariaAttributes": []
           },
-          "relatedComponents": [],
+          "relatedComponents": [
+            "form-group",
+            "layout-grid"
+          ],
           "dependencies": []
         },
         {
@@ -3393,13 +4016,25 @@
           "examples": [],
           "category": "form-layout",
           "subcategory": null,
-          "useCases": [],
-          "avoidWhen": [],
+          "useCases": [
+            "Field validation message",
+            "Input error message",
+            "Field help text",
+            "Inline field feedback"
+          ],
+          "avoidWhen": [
+            "Multiple errors (use message-popover)",
+            "Page messages (use message-strip)",
+            "Success feedback (use message-toast)"
+          ],
           "accessibility": {
             "role": null,
             "ariaAttributes": []
           },
-          "relatedComponents": [],
+          "relatedComponents": [
+            "message-popover",
+            "message-strip"
+          ],
           "dependencies": []
         },
         {
@@ -3480,13 +4115,26 @@
           ],
           "category": "tags",
           "subcategory": null,
-          "useCases": [],
-          "avoidWhen": [],
+          "useCases": [
+            "Custom tag display",
+            "Label with optional actions",
+            "Categorization tag",
+            "Filterable tag"
+          ],
+          "avoidWhen": [
+            "Status (use object-status)",
+            "Removable tags (use token)",
+            "Simple labels (use info-label)"
+          ],
           "accessibility": {
             "role": null,
             "ariaAttributes": []
           },
-          "relatedComponents": [],
+          "relatedComponents": [
+            "token",
+            "info-label",
+            "object-status"
+          ],
           "dependencies": []
         },
         {
@@ -3559,13 +4207,26 @@
           "examples": [],
           "category": "data-display",
           "subcategory": "grid",
-          "useCases": [],
-          "avoidWhen": [],
+          "useCases": [
+            "Card grid layout",
+            "Product catalog display",
+            "Media gallery",
+            "Tile-based content"
+          ],
+          "avoidWhen": [
+            "Tabular data (use table)",
+            "Simple lists (use list)",
+            "Single column (use list)"
+          ],
           "accessibility": {
             "role": null,
             "ariaAttributes": []
           },
-          "relatedComponents": [],
+          "relatedComponents": [
+            "list",
+            "table",
+            "card"
+          ],
           "dependencies": []
         },
         {
@@ -3605,13 +4266,26 @@
           "examples": [],
           "category": "navigation",
           "subcategory": null,
-          "useCases": [],
-          "avoidWhen": [],
+          "useCases": [
+            "Secondary navigation below shellbar",
+            "Category navigation",
+            "Horizontal menu bar",
+            "Application areas navigation"
+          ],
+          "avoidWhen": [
+            "Primary navigation (use shellbar)",
+            "Side navigation (use side-nav)",
+            "In-page sections (use tabs)"
+          ],
           "accessibility": {
             "role": null,
             "ariaAttributes": []
           },
-          "relatedComponents": [],
+          "relatedComponents": [
+            "shellbar",
+            "tabs",
+            "navigation-menu"
+          ],
           "dependencies": []
         },
         {
@@ -3926,13 +4600,26 @@
           ],
           "category": "navigation",
           "subcategory": "tabs",
-          "useCases": [],
-          "avoidWhen": [],
+          "useCases": [
+            "Tabs with icons and counts",
+            "Filter bar with visual indicators",
+            "Status-based filtering",
+            "Category switching with badges"
+          ],
+          "avoidWhen": [
+            "Simple text tabs (use tabs)",
+            "Navigation between pages (use side-nav)",
+            "Icon-only actions (use toolbar)"
+          ],
           "accessibility": {
             "role": null,
             "ariaAttributes": []
           },
-          "relatedComponents": [],
+          "relatedComponents": [
+            "tabs",
+            "toolbar",
+            "segmented-button"
+          ],
           "dependencies": []
         },
         {
@@ -4119,13 +4806,25 @@
           ],
           "category": "feedback",
           "subcategory": null,
-          "useCases": [],
-          "avoidWhen": [],
+          "useCases": [
+            "Empty state with illustration",
+            "Error page with visual",
+            "No results found",
+            "First-time user guidance"
+          ],
+          "avoidWhen": [
+            "Inline errors (use message-strip)",
+            "Simple text messages (use text)",
+            "Temporary feedback (use message-toast)"
+          ],
           "accessibility": {
             "role": null,
             "ariaAttributes": []
           },
-          "relatedComponents": [],
+          "relatedComponents": [
+            "message-page",
+            "message-strip"
+          ],
           "dependencies": []
         },
         {
@@ -4260,13 +4959,26 @@
           ],
           "category": "visual",
           "subcategory": null,
-          "useCases": [],
-          "avoidWhen": [],
+          "useCases": [
+            "Colored status labels",
+            "Category tags",
+            "Priority indicators",
+            "Classification badges"
+          ],
+          "avoidWhen": [
+            "Counts (use counter or badge)",
+            "Object status (use object-status)",
+            "Removable tags (use token)"
+          ],
           "accessibility": {
             "role": null,
             "ariaAttributes": []
           },
-          "relatedComponents": [],
+          "relatedComponents": [
+            "badge",
+            "object-status",
+            "token"
+          ],
           "dependencies": []
         },
         {
@@ -4339,13 +5051,26 @@
           "examples": [],
           "category": "form-inputs",
           "subcategory": "composite",
-          "useCases": [],
-          "avoidWhen": [],
+          "useCases": [
+            "Input with prefix/suffix",
+            "Input with button addon",
+            "Input with icon",
+            "Combined input controls"
+          ],
+          "avoidWhen": [
+            "Simple inputs (use input)",
+            "Dropdown selection (use select)",
+            "Search functionality (use search-field)"
+          ],
           "accessibility": {
             "role": null,
             "ariaAttributes": []
           },
-          "relatedComponents": [],
+          "relatedComponents": [
+            "input",
+            "search-field",
+            "select"
+          ],
           "dependencies": []
         },
         {
@@ -4423,13 +5148,25 @@
           "examples": [],
           "category": "layout",
           "subcategory": null,
-          "useCases": [],
-          "avoidWhen": [],
+          "useCases": [
+            "Responsive grid layouts",
+            "Dashboard card arrangements",
+            "Form column layouts",
+            "Content grid organization"
+          ],
+          "avoidWhen": [
+            "Simple flexbox needs (use sap-flex utilities)",
+            "Master-detail (use flexible-column-layout)",
+            "List layouts (use list)"
+          ],
           "accessibility": {
             "role": null,
             "ariaAttributes": []
           },
-          "relatedComponents": [],
+          "relatedComponents": [
+            "flexible-column-layout",
+            "fixed-card-layout"
+          ],
           "dependencies": []
         },
         {
@@ -4503,13 +5240,26 @@
           "examples": [],
           "category": "layout",
           "subcategory": null,
-          "useCases": [],
-          "avoidWhen": [],
+          "useCases": [
+            "Standalone content panel",
+            "Dashboard panel",
+            "Content container with header",
+            "Bordered content area"
+          ],
+          "avoidWhen": [
+            "Collapsible panels (use panel)",
+            "Cards with actions (use card)",
+            "Form sections (use form-group)"
+          ],
           "accessibility": {
             "role": null,
             "ariaAttributes": []
           },
-          "relatedComponents": [],
+          "relatedComponents": [
+            "panel",
+            "card",
+            "section"
+          ],
           "dependencies": []
         },
         {
@@ -4526,13 +5276,25 @@
           "examples": [],
           "category": "layout",
           "subcategory": null,
-          "useCases": [],
-          "avoidWhen": [],
+          "useCases": [
+            "Basic page structure",
+            "Container element",
+            "Content wrapper",
+            "Layout foundation"
+          ],
+          "avoidWhen": [
+            "Complex layouts (use layout-grid)",
+            "Multi-column (use flexible-column-layout)",
+            "Pages (use page component)"
+          ],
           "accessibility": {
             "role": null,
             "ariaAttributes": []
           },
-          "relatedComponents": [],
+          "relatedComponents": [
+            "page",
+            "layout-grid"
+          ],
           "dependencies": []
         },
         {
@@ -4762,6 +5524,26 @@
                 {
                   "class": "fd-list__item--link",
                   "description": "link variant of item"
+                },
+                {
+                  "class": "fd-list__item--interractive",
+                  "description": "interractive variant of item"
+                },
+                {
+                  "class": "fd-list__item--unread",
+                  "description": "unread variant of item"
+                },
+                {
+                  "class": "fd-list__item--inactive",
+                  "description": "inactive variant of item"
+                },
+                {
+                  "class": "fd-list__item--suggestion",
+                  "description": "suggestion variant of item"
+                },
+                {
+                  "class": "fd-list__item--byline",
+                  "description": "byline variant of item"
                 }
               ]
             },
@@ -4782,13 +5564,38 @@
                 {
                   "class": "fd-list__title--scope",
                   "description": "scope variant of title"
+                },
+                {
+                  "class": "fd-list__title--wrap",
+                  "description": "wrap variant of title"
+                },
+                {
+                  "class": "fd-list__title--truncate",
+                  "description": "truncate variant of title"
                 }
               ]
             },
             {
               "class": "fd-list__secondary",
               "description": "secondary element",
-              "modifiers": []
+              "modifiers": [
+                {
+                  "class": "fd-list__secondary--positive",
+                  "description": "positive variant of secondary"
+                },
+                {
+                  "class": "fd-list__secondary--critical",
+                  "description": "critical variant of secondary"
+                },
+                {
+                  "class": "fd-list__secondary--negative",
+                  "description": "negative variant of secondary"
+                },
+                {
+                  "class": "fd-list__secondary--informative",
+                  "description": "informative variant of secondary"
+                }
+              ]
             },
             {
               "class": "fd-list__icon",
@@ -4802,6 +5609,10 @@
                 {
                   "class": "fd-list__link--navigation-indicator",
                   "description": "navigation-indicator variant of link"
+                },
+                {
+                  "class": "fd-list__link--more",
+                  "description": "more variant of link"
                 }
               ]
             },
@@ -4824,6 +5635,44 @@
               "class": "fd-list__item-counter",
               "description": "item-counter element",
               "modifiers": []
+            },
+            {
+              "class": "fd-list__byline",
+              "description": "byline element",
+              "modifiers": [
+                {
+                  "class": "fd-list__byline--2-col",
+                  "description": "2-col variant of byline"
+                },
+                {
+                  "class": "fd-list__byline--wrap",
+                  "description": "wrap variant of byline"
+                }
+              ]
+            },
+            {
+              "class": "fd-list__byline-right",
+              "description": "byline-right element",
+              "modifiers": [
+                {
+                  "class": "fd-list__byline-right--positive",
+                  "description": "positive variant of byline-right"
+                },
+                {
+                  "class": "fd-list__byline-right--informative",
+                  "description": "informative variant of byline-right"
+                }
+              ]
+            },
+            {
+              "class": "fd-list__subline",
+              "description": "subline element",
+              "modifiers": [
+                {
+                  "class": "fd-list__subline--truncate",
+                  "description": "truncate variant of subline"
+                }
+              ]
             }
           ],
           "accessibility": {
@@ -4965,6 +5814,10 @@
                 {
                   "class": "fd-menu__list--overflow",
                   "description": "overflow variant of list"
+                },
+                {
+                  "class": "fd-menu__list--no-shadow",
+                  "description": "no-shadow variant of list"
                 }
               ]
             },
@@ -5011,7 +5864,12 @@
             {
               "class": "fd-menu__addon-after",
               "description": "addon-after element",
-              "modifiers": []
+              "modifiers": [
+                {
+                  "class": "fd-menu__addon-after--submenu",
+                  "description": "submenu variant of addon-after"
+                }
+              ]
             },
             {
               "class": "fd-menu__active-dot",
@@ -5130,7 +5988,24 @@
             {
               "class": "fd-message-box__content",
               "description": "content element",
-              "modifiers": []
+              "modifiers": [
+                {
+                  "class": "fd-message-box__content--s",
+                  "description": "s variant of content"
+                },
+                {
+                  "class": "fd-message-box__content--m",
+                  "description": "m variant of content"
+                },
+                {
+                  "class": "fd-message-box__content--l",
+                  "description": "l variant of content"
+                },
+                {
+                  "class": "fd-message-box__content--xl",
+                  "description": "xl variant of content"
+                }
+              ]
             },
             {
               "class": "fd-message-box__footer",
@@ -5173,13 +6048,26 @@
           ],
           "category": "dialogs",
           "subcategory": "confirmation",
-          "useCases": [],
-          "avoidWhen": [],
+          "useCases": [
+            "Confirmation dialogs",
+            "Error dialogs requiring acknowledgment",
+            "Warning with user decision",
+            "Information requiring OK"
+          ],
+          "avoidWhen": [
+            "Complex forms (use dialog)",
+            "Non-blocking messages (use message-toast)",
+            "Inline feedback (use message-strip)"
+          ],
           "accessibility": {
             "role": null,
             "ariaAttributes": []
           },
-          "relatedComponents": [],
+          "relatedComponents": [
+            "dialog",
+            "message-strip",
+            "message-toast"
+          ],
           "dependencies": []
         },
         {
@@ -5263,13 +6151,25 @@
           ],
           "category": "feedback",
           "subcategory": null,
-          "useCases": [],
-          "avoidWhen": [],
+          "useCases": [
+            "Full page error states",
+            "404 not found pages",
+            "Access denied pages",
+            "Maintenance mode display"
+          ],
+          "avoidWhen": [
+            "Inline errors (use message-strip)",
+            "Empty states within page (use illustrated-message)",
+            "Temporary messages (use message-toast)"
+          ],
           "accessibility": {
             "role": null,
             "ariaAttributes": []
           },
-          "relatedComponents": [],
+          "relatedComponents": [
+            "illustrated-message",
+            "message-strip"
+          ],
           "dependencies": []
         },
         {
@@ -5284,7 +6184,24 @@
             {
               "class": "fd-message-popover__trigger",
               "description": "trigger element",
-              "modifiers": []
+              "modifiers": [
+                {
+                  "class": "fd-message-popover__trigger--negative",
+                  "description": "negative variant of trigger"
+                },
+                {
+                  "class": "fd-message-popover__trigger--information",
+                  "description": "information variant of trigger"
+                },
+                {
+                  "class": "fd-message-popover__trigger--critical",
+                  "description": "critical variant of trigger"
+                },
+                {
+                  "class": "fd-message-popover__trigger--success",
+                  "description": "success variant of trigger"
+                }
+              ]
             }
           ],
           "variables": [
@@ -5329,13 +6246,26 @@
           ],
           "category": "dialogs",
           "subcategory": null,
-          "useCases": [],
-          "avoidWhen": [],
+          "useCases": [
+            "Form validation summary",
+            "Multiple error messages",
+            "Warning collection display",
+            "Message center popover"
+          ],
+          "avoidWhen": [
+            "Single inline error (use form-message)",
+            "Page-level message (use message-strip)",
+            "Confirmation needed (use message-box)"
+          ],
           "accessibility": {
             "role": null,
             "ariaAttributes": []
           },
-          "relatedComponents": [],
+          "relatedComponents": [
+            "form-message",
+            "message-strip",
+            "popover"
+          ],
           "dependencies": []
         },
         {
@@ -5552,13 +6482,26 @@
           ],
           "category": "feedback",
           "subcategory": null,
-          "useCases": [],
-          "avoidWhen": [],
+          "useCases": [
+            "Success confirmations",
+            "Auto-dismissing notifications",
+            "Non-critical updates",
+            "Action completion feedback"
+          ],
+          "avoidWhen": [
+            "Errors requiring action (use message-strip or message-box)",
+            "Persistent messages (use message-strip)",
+            "Messages with actions (use notification)"
+          ],
           "accessibility": {
             "role": null,
             "ariaAttributes": []
           },
-          "relatedComponents": [],
+          "relatedComponents": [
+            "message-strip",
+            "notification",
+            "message-box"
+          ],
           "dependencies": []
         },
         {
@@ -5616,7 +6559,34 @@
             {
               "class": "fd-micro-process-flow__connector",
               "description": "connector element",
-              "modifiers": []
+              "modifiers": [
+                {
+                  "class": "fd-micro-process-flow__connector--intermediate",
+                  "description": "intermediate variant of connector"
+                }
+              ]
+            },
+            {
+              "class": "fd-micro-process-flow__item",
+              "description": "item element",
+              "modifiers": [
+                {
+                  "class": "fd-micro-process-flow__item--positive",
+                  "description": "positive variant of item"
+                },
+                {
+                  "class": "fd-micro-process-flow__item--information",
+                  "description": "information variant of item"
+                },
+                {
+                  "class": "fd-micro-process-flow__item--negative",
+                  "description": "negative variant of item"
+                },
+                {
+                  "class": "fd-micro-process-flow__item--critical",
+                  "description": "critical variant of item"
+                }
+              ]
             }
           ],
           "variables": [
@@ -5655,13 +6625,25 @@
           ],
           "category": "specialized",
           "subcategory": null,
-          "useCases": [],
-          "avoidWhen": [],
+          "useCases": [
+            "Compact process visualization",
+            "Inline process status",
+            "Small workflow indicator",
+            "Status flow in limited space"
+          ],
+          "avoidWhen": [
+            "Full wizard (use wizard)",
+            "Detailed process (use progress-indicator)",
+            "Navigation steps (use tabs)"
+          ],
           "accessibility": {
             "role": null,
             "ariaAttributes": []
           },
-          "relatedComponents": [],
+          "relatedComponents": [
+            "wizard",
+            "progress-indicator"
+          ],
           "dependencies": []
         },
         {
@@ -5758,13 +6740,26 @@
           "examples": [],
           "category": "navigation",
           "subcategory": "list",
-          "useCases": [],
-          "avoidWhen": [],
+          "useCases": [
+            "Navigation item list",
+            "Menu-style navigation",
+            "Expandable navigation groups",
+            "Nested navigation structure"
+          ],
+          "avoidWhen": [
+            "Full side navigation (use side-nav)",
+            "Simple list (use list)",
+            "Action menu (use menu)"
+          ],
           "accessibility": {
             "role": null,
             "ariaAttributes": []
           },
-          "relatedComponents": [],
+          "relatedComponents": [
+            "side-nav",
+            "list",
+            "menu"
+          ],
           "dependencies": []
         },
         {
@@ -5856,13 +6851,26 @@
           "examples": [],
           "category": "navigation",
           "subcategory": null,
-          "useCases": [],
-          "avoidWhen": [],
+          "useCases": [
+            "Dropdown navigation menu",
+            "Mega menu structures",
+            "Category navigation dropdown",
+            "Multi-level navigation"
+          ],
+          "avoidWhen": [
+            "Action menu (use menu)",
+            "Side navigation (use side-nav)",
+            "Simple tabs (use tabs)"
+          ],
           "accessibility": {
             "role": null,
             "ariaAttributes": []
           },
-          "relatedComponents": [],
+          "relatedComponents": [
+            "menu",
+            "horizontal-navigation",
+            "shellbar"
+          ],
           "dependencies": []
         },
         {
@@ -6072,13 +7080,26 @@
           "examples": [],
           "category": "navigation",
           "subcategory": null,
-          "useCases": [],
-          "avoidWhen": [],
+          "useCases": [
+            "Generic navigation container",
+            "Custom navigation structures",
+            "Nested navigation items",
+            "Navigation with groups"
+          ],
+          "avoidWhen": [
+            "Standard side nav (use side-nav)",
+            "Vertical menu (use vertical-nav)",
+            "Tab navigation (use tabs)"
+          ],
           "accessibility": {
             "role": null,
             "ariaAttributes": []
           },
-          "relatedComponents": [],
+          "relatedComponents": [
+            "side-nav",
+            "vertical-nav",
+            "navigation-list"
+          ],
           "dependencies": []
         },
         {
@@ -6118,7 +7139,12 @@
             {
               "class": "fd-notification__title",
               "description": "title element",
-              "modifiers": []
+              "modifiers": [
+                {
+                  "class": "fd-notification__title--unread",
+                  "description": "unread variant of title"
+                }
+              ]
             },
             {
               "class": "fd-notification__paragraph",
@@ -6246,13 +7272,26 @@
           ],
           "category": "feedback",
           "subcategory": "toast",
-          "useCases": [],
-          "avoidWhen": [],
+          "useCases": [
+            "Actionable notifications",
+            "System alerts with actions",
+            "Update notifications",
+            "Messages requiring response"
+          ],
+          "avoidWhen": [
+            "Simple confirmations (use message-toast)",
+            "Inline feedback (use message-strip)",
+            "Blocking messages (use message-box)"
+          ],
           "accessibility": {
             "role": null,
             "ariaAttributes": []
           },
-          "relatedComponents": [],
+          "relatedComponents": [
+            "message-toast",
+            "message-strip",
+            "alert"
+          ],
           "dependencies": []
         },
         {
@@ -6329,13 +7368,26 @@
           "examples": [],
           "category": "business-objects",
           "subcategory": null,
-          "useCases": [],
-          "avoidWhen": [],
+          "useCases": [
+            "KPI display",
+            "Dashboard metrics",
+            "Large number display",
+            "Tile numeric content"
+          ],
+          "avoidWhen": [
+            "Simple numbers (use object-number)",
+            "Counts (use counter)",
+            "Progress values (use progress-indicator)"
+          ],
           "accessibility": {
             "role": null,
             "ariaAttributes": []
           },
-          "relatedComponents": [],
+          "relatedComponents": [
+            "object-number",
+            "tile",
+            "counter"
+          ],
           "dependencies": []
         },
         {
@@ -6357,13 +7409,26 @@
           "examples": [],
           "category": "business-objects",
           "subcategory": null,
-          "useCases": [],
-          "avoidWhen": [],
+          "useCases": [
+            "Label-value pairs",
+            "Object property display",
+            "Metadata display",
+            "Key-value information"
+          ],
+          "avoidWhen": [
+            "Status display (use object-status)",
+            "Numbers with units (use object-number)",
+            "Form fields (use form-item)"
+          ],
           "accessibility": {
             "role": null,
             "ariaAttributes": []
           },
-          "relatedComponents": [],
+          "relatedComponents": [
+            "object-status",
+            "object-number",
+            "object-identifier"
+          ],
           "dependencies": []
         },
         {
@@ -6387,7 +7452,12 @@
             {
               "class": "fd-object-identifier__title",
               "description": "title element",
-              "modifiers": []
+              "modifiers": [
+                {
+                  "class": "fd-object-identifier__title--bold",
+                  "description": "bold variant of title"
+                }
+              ]
             },
             {
               "class": "fd-object-identifier__text",
@@ -6416,13 +7486,26 @@
           ],
           "category": "visual",
           "subcategory": null,
-          "useCases": [],
-          "avoidWhen": [],
+          "useCases": [
+            "Object title with description",
+            "Entity identification",
+            "Linked object reference",
+            "Business object header"
+          ],
+          "avoidWhen": [
+            "Simple text (use text)",
+            "Navigation link (use link)",
+            "Avatar with name (use avatar)"
+          ],
           "accessibility": {
             "role": null,
             "ariaAttributes": []
           },
-          "relatedComponents": [],
+          "relatedComponents": [
+            "object-attribute",
+            "link",
+            "avatar"
+          ],
           "dependencies": []
         },
         {
@@ -6516,13 +7599,26 @@
           ],
           "category": "data-display",
           "subcategory": "list",
-          "useCases": [],
-          "avoidWhen": [],
+          "useCases": [
+            "Business object list",
+            "Items with attributes",
+            "Rich list items",
+            "Object summaries"
+          ],
+          "avoidWhen": [
+            "Simple lists (use list)",
+            "Tabular data (use table)",
+            "Card layouts (use grid-list)"
+          ],
           "accessibility": {
             "role": null,
             "ariaAttributes": []
           },
-          "relatedComponents": [],
+          "relatedComponents": [
+            "list",
+            "table",
+            "grid-list"
+          ],
           "dependencies": []
         },
         {
@@ -6564,13 +7660,26 @@
           ],
           "category": "tags",
           "subcategory": null,
-          "useCases": [],
-          "avoidWhen": [],
+          "useCases": [
+            "Favorite indicator",
+            "Flagged item marker",
+            "Draft indicator",
+            "Object state icons"
+          ],
+          "avoidWhen": [
+            "Status text (use object-status)",
+            "Counts (use counter)",
+            "Tags (use token)"
+          ],
           "accessibility": {
             "role": null,
             "ariaAttributes": []
           },
-          "relatedComponents": [],
+          "relatedComponents": [
+            "object-status",
+            "badge",
+            "icon"
+          ],
           "dependencies": []
         },
         {
@@ -6618,7 +7727,12 @@
             {
               "class": "fd-object-number__text",
               "description": "text element",
-              "modifiers": []
+              "modifiers": [
+                {
+                  "class": "fd-object-number__text--bold",
+                  "description": "bold variant of text"
+                }
+              ]
             },
             {
               "class": "fd-object-number__unit",
@@ -6658,13 +7772,26 @@
           ],
           "category": "visual",
           "subcategory": null,
-          "useCases": [],
-          "avoidWhen": [],
+          "useCases": [
+            "Currency display",
+            "Quantity with units",
+            "Metrics and KPIs",
+            "Numeric values with labels"
+          ],
+          "avoidWhen": [
+            "Simple counts (use counter)",
+            "Progress (use progress-indicator)",
+            "Editable numbers (use step-input)"
+          ],
           "accessibility": {
             "role": null,
             "ariaAttributes": []
           },
-          "relatedComponents": [],
+          "relatedComponents": [
+            "counter",
+            "numeric-content",
+            "step-input"
+          ],
           "dependencies": []
         },
         {
@@ -6936,13 +8063,26 @@
           ],
           "category": "visual",
           "subcategory": null,
-          "useCases": [],
-          "avoidWhen": [],
+          "useCases": [
+            "Status indicators",
+            "Semantic state display",
+            "Approval status",
+            "Process state"
+          ],
+          "avoidWhen": [
+            "Colored labels (use info-label)",
+            "Simple badges (use badge)",
+            "Interactive status (use switch)"
+          ],
           "accessibility": {
             "role": null,
             "ariaAttributes": []
           },
-          "relatedComponents": [],
+          "relatedComponents": [
+            "info-label",
+            "badge",
+            "status-indicator"
+          ],
           "dependencies": []
         },
         {
@@ -7046,13 +8186,25 @@
           "examples": [],
           "category": "containers",
           "subcategory": null,
-          "useCases": [],
-          "avoidWhen": [],
+          "useCases": [
+            "Page action footer",
+            "Sticky bottom bar",
+            "Form submit footer",
+            "Page-level actions container"
+          ],
+          "avoidWhen": [
+            "Dialog footer (use bar)",
+            "Inline actions (use toolbar)",
+            "Navigation (use pagination)"
+          ],
           "accessibility": {
             "role": null,
             "ariaAttributes": []
           },
-          "relatedComponents": [],
+          "relatedComponents": [
+            "bar",
+            "toolbar"
+          ],
           "dependencies": []
         },
         {
@@ -7128,13 +8280,26 @@
           "examples": [],
           "category": "containers",
           "subcategory": null,
-          "useCases": [],
-          "avoidWhen": [],
+          "useCases": [
+            "Standard page container",
+            "Page with header and footer",
+            "Content wrapper",
+            "Basic page structure"
+          ],
+          "avoidWhen": [
+            "Collapsible header (use dynamic-page)",
+            "Multi-column layouts (use flexible-column-layout)",
+            "Dialog content (use dialog)"
+          ],
           "accessibility": {
             "role": null,
             "ariaAttributes": []
           },
-          "relatedComponents": [],
+          "relatedComponents": [
+            "dynamic-page",
+            "panel",
+            "section"
+          ],
           "dependencies": []
         },
         {
@@ -7204,13 +8369,25 @@
           ],
           "category": "navigation",
           "subcategory": "page",
-          "useCases": [],
-          "avoidWhen": [],
+          "useCases": [
+            "Table/list pagination",
+            "Page navigation for data",
+            "Result set navigation",
+            "Multi-page content"
+          ],
+          "avoidWhen": [
+            "Infinite scroll (load more button)",
+            "Small datasets (show all)",
+            "Tab navigation (use tabs)"
+          ],
           "accessibility": {
             "role": null,
             "ariaAttributes": []
           },
-          "relatedComponents": [],
+          "relatedComponents": [
+            "table",
+            "list"
+          ],
           "dependencies": []
         },
         {
@@ -7246,7 +8423,12 @@
             {
               "class": "fd-panel__content",
               "description": "content element",
-              "modifiers": []
+              "modifiers": [
+                {
+                  "class": "fd-panel__content--no-padding",
+                  "description": "no-padding variant of content"
+                }
+              ]
             },
             {
               "class": "fd-panel__title",
@@ -7306,13 +8488,26 @@
           ],
           "category": "containers",
           "subcategory": null,
-          "useCases": [],
-          "avoidWhen": [],
+          "useCases": [
+            "Collapsible content section",
+            "Grouped content container",
+            "Expandable information",
+            "Content organization"
+          ],
+          "avoidWhen": [
+            "Cards with actions (use card)",
+            "Non-collapsible sections (use section)",
+            "Full pages (use page)"
+          ],
           "accessibility": {
             "role": null,
             "ariaAttributes": []
           },
-          "relatedComponents": [],
+          "relatedComponents": [
+            "card",
+            "section",
+            "layout-panel"
+          ],
           "dependencies": []
         },
         {
@@ -7365,6 +8560,74 @@
                 {
                   "class": "fd-popover__body--no-arrow",
                   "description": "no-arrow variant of body"
+                },
+                {
+                  "class": "fd-popover__body--padding",
+                  "description": "padding variant of body"
+                },
+                {
+                  "class": "fd-popover__body--left",
+                  "description": "left variant of body"
+                },
+                {
+                  "class": "fd-popover__body--above",
+                  "description": "above variant of body"
+                },
+                {
+                  "class": "fd-popover__body--arrow-bottom",
+                  "description": "arrow-bottom variant of body"
+                },
+                {
+                  "class": "fd-popover__body--center",
+                  "description": "center variant of body"
+                },
+                {
+                  "class": "fd-popover__body--arrow-x-center",
+                  "description": "arrow-x-center variant of body"
+                },
+                {
+                  "class": "fd-popover__body--right",
+                  "description": "right variant of body"
+                },
+                {
+                  "class": "fd-popover__body--arrow-x-end",
+                  "description": "arrow-x-end variant of body"
+                },
+                {
+                  "class": "fd-popover__body--before",
+                  "description": "before variant of body"
+                },
+                {
+                  "class": "fd-popover__body--arrow-right",
+                  "description": "arrow-right variant of body"
+                },
+                {
+                  "class": "fd-popover__body--after",
+                  "description": "after variant of body"
+                },
+                {
+                  "class": "fd-popover__body--arrow-left",
+                  "description": "arrow-left variant of body"
+                },
+                {
+                  "class": "fd-popover__body--middle",
+                  "description": "middle variant of body"
+                },
+                {
+                  "class": "fd-popover__body--arrow-y-center",
+                  "description": "arrow-y-center variant of body"
+                },
+                {
+                  "class": "fd-popover__body--bottom",
+                  "description": "bottom variant of body"
+                },
+                {
+                  "class": "fd-popover__body--arrow-y-bottom",
+                  "description": "arrow-y-bottom variant of body"
+                },
+                {
+                  "class": "fd-popover__body--resizable",
+                  "description": "resizable variant of body"
                 }
               ]
             },
@@ -7372,6 +8635,16 @@
               "class": "fd-popover__resize-handle",
               "description": "resize-handle element",
               "modifiers": []
+            },
+            {
+              "class": "fd-popover__body-footer",
+              "description": "body-footer element",
+              "modifiers": [
+                {
+                  "class": "fd-popover__body-footer--center",
+                  "description": "center variant of body-footer"
+                }
+              ]
             }
           ],
           "accessibility": {
@@ -7589,13 +8862,26 @@
           ],
           "category": "specialized",
           "subcategory": null,
-          "useCases": [],
-          "avoidWhen": [],
+          "useCases": [
+            "App switcher in shellbar",
+            "Product navigation",
+            "Suite application switching",
+            "Cross-app navigation"
+          ],
+          "avoidWhen": [
+            "In-app navigation (use side-nav)",
+            "User menu (use user-menu)",
+            "Simple dropdown (use select)"
+          ],
           "accessibility": {
             "role": null,
             "ariaAttributes": []
           },
-          "relatedComponents": [],
+          "relatedComponents": [
+            "shellbar",
+            "user-menu",
+            "menu"
+          ],
           "dependencies": []
         },
         {
@@ -7726,13 +9012,26 @@
           ],
           "category": "feedback",
           "subcategory": "loading",
-          "useCases": [],
-          "avoidWhen": [],
+          "useCases": [
+            "Upload progress",
+            "Process completion percentage",
+            "Step progress",
+            "Capacity/usage display"
+          ],
+          "avoidWhen": [
+            "Unknown duration (use busy-indicator)",
+            "Step-by-step wizard (use wizard)",
+            "Status only (use object-status)"
+          ],
           "accessibility": {
             "role": null,
             "ariaAttributes": []
           },
-          "relatedComponents": [],
+          "relatedComponents": [
+            "busy-indicator",
+            "wizard",
+            "status-indicator"
+          ],
           "dependencies": []
         },
         {
@@ -7767,13 +9066,26 @@
           "examples": [],
           "category": "ai-components",
           "subcategory": null,
-          "useCases": [],
-          "avoidWhen": [],
+          "useCases": [
+            "AI prompt input field",
+            "Chat input for AI",
+            "LLM query input",
+            "AI assistant input"
+          ],
+          "avoidWhen": [
+            "Regular text input (use input or textarea)",
+            "Search (use search-field)",
+            "Comments (use feed-input)"
+          ],
           "accessibility": {
             "role": null,
             "ariaAttributes": []
           },
-          "relatedComponents": [],
+          "relatedComponents": [
+            "ai-writing-assistant",
+            "textarea",
+            "search-field"
+          ],
           "dependencies": []
         },
         {
@@ -7834,13 +9146,26 @@
           ],
           "category": "dialogs",
           "subcategory": null,
-          "useCases": [],
-          "avoidWhen": [],
+          "useCases": [
+            "Object preview popover",
+            "Contact card preview",
+            "Quick information display",
+            "Hover details"
+          ],
+          "avoidWhen": [
+            "Full object page (use dynamic-page)",
+            "Actions needed (use popover)",
+            "Simple tooltip (use title attribute)"
+          ],
           "accessibility": {
             "role": null,
             "ariaAttributes": []
           },
-          "relatedComponents": [],
+          "relatedComponents": [
+            "popover",
+            "card",
+            "dialog"
+          ],
           "dependencies": []
         },
         {
@@ -8007,12 +9332,22 @@
             {
               "class": "fd-rating-indicator__input",
               "description": "input element",
-              "modifiers": []
+              "modifiers": [
+                {
+                  "class": "fd-rating-indicator__input--zero-rating",
+                  "description": "zero-rating variant of input"
+                }
+              ]
             },
             {
               "class": "fd-rating-indicator__label",
               "description": "label element",
-              "modifiers": []
+              "modifiers": [
+                {
+                  "class": "fd-rating-indicator__label--zero-rating",
+                  "description": "zero-rating variant of label"
+                }
+              ]
             },
             {
               "class": "fd-rating-indicator__container",
@@ -8051,13 +9386,25 @@
           ],
           "category": "form-inputs",
           "subcategory": "numeric",
-          "useCases": [],
-          "avoidWhen": [],
+          "useCases": [
+            "Star ratings display",
+            "User ratings input",
+            "Quality indicators",
+            "Review ratings"
+          ],
+          "avoidWhen": [
+            "Binary like/dislike (use button)",
+            "Progress (use progress-indicator)",
+            "Numeric input (use slider or step-input)"
+          ],
           "accessibility": {
             "role": null,
             "ariaAttributes": []
           },
-          "relatedComponents": [],
+          "relatedComponents": [
+            "slider",
+            "step-input"
+          ],
           "dependencies": []
         },
         {
@@ -8114,13 +9461,26 @@
           "examples": [],
           "category": "layout",
           "subcategory": null,
-          "useCases": [],
-          "avoidWhen": [],
+          "useCases": [
+            "Resizable dashboard cards",
+            "User-configurable layouts",
+            "Draggable card grid",
+            "Personalized dashboards"
+          ],
+          "avoidWhen": [
+            "Fixed layouts (use fixed-card-layout)",
+            "Simple grids (use layout-grid)",
+            "Non-interactive cards (use grid-list)"
+          ],
           "accessibility": {
             "role": null,
             "ariaAttributes": []
           },
-          "relatedComponents": [],
+          "relatedComponents": [
+            "fixed-card-layout",
+            "layout-grid",
+            "card"
+          ],
           "dependencies": []
         },
         {
@@ -8297,13 +9657,25 @@
           ],
           "category": "form-inputs",
           "subcategory": "search",
-          "useCases": [],
-          "avoidWhen": [],
+          "useCases": [
+            "Search input with icon",
+            "Filterable search",
+            "Global search",
+            "List filtering"
+          ],
+          "avoidWhen": [
+            "Simple text filter (use input)",
+            "Advanced filters (use filter bar)",
+            "Dropdown search (use select with search)"
+          ],
           "accessibility": {
             "role": null,
             "ariaAttributes": []
           },
-          "relatedComponents": [],
+          "relatedComponents": [
+            "input",
+            "input-group"
+          ],
           "dependencies": []
         },
         {
@@ -8354,13 +9726,26 @@
           "examples": [],
           "category": "containers",
           "subcategory": null,
-          "useCases": [],
-          "avoidWhen": [],
+          "useCases": [
+            "Page content sections",
+            "Grouped form sections",
+            "Content dividers",
+            "Titled content areas"
+          ],
+          "avoidWhen": [
+            "Collapsible content (use panel)",
+            "Cards (use card)",
+            "Independent panels (use layout-panel)"
+          ],
           "accessibility": {
             "role": null,
             "ariaAttributes": []
           },
-          "relatedComponents": [],
+          "relatedComponents": [
+            "panel",
+            "facet",
+            "form-group"
+          ],
           "dependencies": []
         },
         {
@@ -8399,13 +9784,26 @@
           ],
           "category": "buttons",
           "subcategory": "selection",
-          "useCases": [],
-          "avoidWhen": [],
+          "useCases": [
+            "View switcher",
+            "Single selection from options",
+            "Toggle between modes",
+            "Mutually exclusive choices"
+          ],
+          "avoidWhen": [
+            "Primary action with dropdown (use button-split)",
+            "Multiple selections (use checkbox)",
+            "Many options (use select)"
+          ],
           "accessibility": {
             "role": null,
             "ariaAttributes": []
           },
-          "relatedComponents": [],
+          "relatedComponents": [
+            "button-split",
+            "tabs",
+            "radio"
+          ],
           "dependencies": []
         },
         {
@@ -8538,7 +9936,12 @@
             {
               "class": "fd-settings__content",
               "description": "content element",
-              "modifiers": []
+              "modifiers": [
+                {
+                  "class": "fd-settings__content--no-background",
+                  "description": "no-background variant of content"
+                }
+              ]
             },
             {
               "class": "fd-settings__container",
@@ -8559,6 +9962,16 @@
                 {
                   "class": "fd-settings__container--xl",
                   "description": "xl variant of container"
+                }
+              ]
+            },
+            {
+              "class": "fd-settings__list",
+              "description": "list element",
+              "modifiers": [
+                {
+                  "class": "fd-settings__list--footer",
+                  "description": "footer variant of list"
                 }
               ]
             }
@@ -8586,13 +9999,25 @@
           ],
           "category": "specialized",
           "subcategory": null,
-          "useCases": [],
-          "avoidWhen": [],
+          "useCases": [
+            "Settings page layout",
+            "Preferences organization",
+            "Configuration sections",
+            "Settings navigation"
+          ],
+          "avoidWhen": [
+            "Simple forms (use form-group)",
+            "Navigation (use side-nav)",
+            "Single setting (use switch or select)"
+          ],
           "accessibility": {
             "role": null,
             "ariaAttributes": []
           },
-          "relatedComponents": [],
+          "relatedComponents": [
+            "form-group",
+            "side-nav"
+          ],
           "dependencies": []
         },
         {
@@ -8663,6 +10088,38 @@
                 {
                   "class": "fd-shellbar__avatar--circle",
                   "description": "circle variant of avatar"
+                }
+              ]
+            },
+            {
+              "class": "fd-shellbar__group",
+              "description": "group element",
+              "modifiers": [
+                {
+                  "class": "fd-shellbar__group--product",
+                  "description": "product variant of group"
+                },
+                {
+                  "class": "fd-shellbar__group--context-area",
+                  "description": "context-area variant of group"
+                },
+                {
+                  "class": "fd-shellbar__group--actions",
+                  "description": "actions variant of group"
+                },
+                {
+                  "class": "fd-shellbar__group--full-width",
+                  "description": "full-width variant of group"
+                }
+              ]
+            },
+            {
+              "class": "fd-shellbar__search-category",
+              "description": "search-category element",
+              "modifiers": [
+                {
+                  "class": "fd-shellbar__search-category--collapsed",
+                  "description": "collapsed variant of search-category"
                 }
               ]
             }
@@ -8911,13 +10368,26 @@
           "examples": [],
           "category": "navigation",
           "subcategory": "sidebar",
-          "useCases": [],
-          "avoidWhen": [],
+          "useCases": [
+            "Main application navigation",
+            "Collapsible side menu",
+            "Hierarchical navigation",
+            "App area switching"
+          ],
+          "avoidWhen": [
+            "Horizontal navigation (use tabs or horizontal-navigation)",
+            "Simple menus (use menu)",
+            "Contextual actions (use toolbar)"
+          ],
           "accessibility": {
             "role": null,
             "ariaAttributes": []
           },
-          "relatedComponents": [],
+          "relatedComponents": [
+            "vertical-nav",
+            "shellbar",
+            "navigation-list"
+          ],
           "dependencies": []
         },
         {
@@ -8959,13 +10429,25 @@
           ],
           "category": "feedback",
           "subcategory": null,
-          "useCases": [],
-          "avoidWhen": [],
+          "useCases": [
+            "Content loading placeholder",
+            "Page loading state",
+            "Perceived performance improvement",
+            "Layout preservation during load"
+          ],
+          "avoidWhen": [
+            "Quick operations (use busy-indicator)",
+            "Known progress (use progress-indicator)",
+            "Error states (use illustrated-message)"
+          ],
           "accessibility": {
             "role": null,
             "ariaAttributes": []
           },
-          "relatedComponents": [],
+          "relatedComponents": [
+            "busy-indicator",
+            "progress-indicator"
+          ],
           "dependencies": []
         },
         {
@@ -9027,7 +10509,12 @@
             {
               "class": "fd-slider__tick",
               "description": "tick element",
-              "modifiers": []
+              "modifiers": [
+                {
+                  "class": "fd-slider__tick--in-range",
+                  "description": "in-range variant of tick"
+                }
+              ]
             },
             {
               "class": "fd-slider__label",
@@ -9106,13 +10593,25 @@
           ],
           "category": "form-inputs",
           "subcategory": "numeric",
-          "useCases": [],
-          "avoidWhen": [],
+          "useCases": [
+            "Range value selection",
+            "Volume/brightness controls",
+            "Price range filtering",
+            "Numeric range input"
+          ],
+          "avoidWhen": [
+            "Precise numeric input (use step-input)",
+            "Discrete options (use segmented-button)",
+            "Rating (use rating-indicator)"
+          ],
           "accessibility": {
             "role": null,
             "ariaAttributes": []
           },
-          "relatedComponents": [],
+          "relatedComponents": [
+            "step-input",
+            "rating-indicator"
+          ],
           "dependencies": []
         },
         {
@@ -9284,13 +10783,25 @@
           "examples": [],
           "category": "layout",
           "subcategory": null,
-          "useCases": [],
-          "avoidWhen": [],
+          "useCases": [
+            "Resizable panes",
+            "Two-panel layouts",
+            "Adjustable content areas",
+            "Side-by-side comparison"
+          ],
+          "avoidWhen": [
+            "Three-column responsive (use flexible-column-layout)",
+            "Fixed layouts (use layout-grid)",
+            "Simple side nav (use side-nav)"
+          ],
           "accessibility": {
             "role": null,
             "ariaAttributes": []
           },
-          "relatedComponents": [],
+          "relatedComponents": [
+            "flexible-column-layout",
+            "dynamic-side-content"
+          ],
           "dependencies": []
         },
         {
@@ -9358,6 +10869,10 @@
                 {
                   "class": "fd-status-indicator__label--bottom",
                   "description": "bottom variant of label"
+                },
+                {
+                  "class": "fd-status-indicator__label--lg",
+                  "description": "lg variant of label"
                 }
               ]
             }
@@ -9379,13 +10894,25 @@
           ],
           "category": "feedback",
           "subcategory": null,
-          "useCases": [],
-          "avoidWhen": [],
+          "useCases": [
+            "Process status visualization",
+            "Multi-state indicators",
+            "Quality indicators",
+            "Score visualization"
+          ],
+          "avoidWhen": [
+            "Simple status (use object-status)",
+            "Progress (use progress-indicator)",
+            "Ratings (use rating-indicator)"
+          ],
           "accessibility": {
             "role": null,
             "ariaAttributes": []
           },
-          "relatedComponents": [],
+          "relatedComponents": [
+            "object-status",
+            "progress-indicator"
+          ],
           "dependencies": []
         },
         {
@@ -9439,13 +10966,26 @@
           ],
           "category": "form-inputs",
           "subcategory": "numeric",
-          "useCases": [],
-          "avoidWhen": [],
+          "useCases": [
+            "Quantity input with +/- buttons",
+            "Precise numeric input",
+            "Increment/decrement values",
+            "Quantity selectors"
+          ],
+          "avoidWhen": [
+            "Range selection (use slider)",
+            "Large value ranges (use input)",
+            "Rating (use rating-indicator)"
+          ],
           "accessibility": {
             "role": null,
             "ariaAttributes": []
           },
-          "relatedComponents": [],
+          "relatedComponents": [
+            "slider",
+            "input",
+            "rating-indicator"
+          ],
           "dependencies": []
         },
         {
@@ -9492,12 +11032,30 @@
             {
               "class": "fd-switch__text",
               "description": "text element",
-              "modifiers": []
+              "modifiers": [
+                {
+                  "class": "fd-switch__text--on",
+                  "description": "on variant of text"
+                },
+                {
+                  "class": "fd-switch__text--off",
+                  "description": "off variant of text"
+                }
+              ]
             },
             {
               "class": "fd-switch__icon",
               "description": "icon element",
-              "modifiers": []
+              "modifiers": [
+                {
+                  "class": "fd-switch__icon--on",
+                  "description": "on variant of icon"
+                },
+                {
+                  "class": "fd-switch__icon--off",
+                  "description": "off variant of icon"
+                }
+              ]
             },
             {
               "class": "fd-switch__handle",
@@ -9607,13 +11165,25 @@
           ],
           "category": "form-inputs",
           "subcategory": "toggle",
-          "useCases": [],
-          "avoidWhen": [],
+          "useCases": [
+            "On/off toggles",
+            "Feature enable/disable",
+            "Settings toggles",
+            "Binary state changes"
+          ],
+          "avoidWhen": [
+            "Multiple options (use checkbox)",
+            "Form agreement (use checkbox)",
+            "Toggle between views (use segmented-button)"
+          ],
           "accessibility": {
             "role": null,
             "ariaAttributes": []
           },
-          "relatedComponents": [],
+          "relatedComponents": [
+            "checkbox",
+            "segmented-button"
+          ],
           "dependencies": []
         },
         {
@@ -9781,6 +11351,70 @@
                 {
                   "class": "fd-table__cell--group",
                   "description": "group variant of cell"
+                },
+                {
+                  "class": "fd-table__cell--fit-content",
+                  "description": "fit-content variant of cell"
+                },
+                {
+                  "class": "fd-table__cell--fixed",
+                  "description": "fixed variant of cell"
+                },
+                {
+                  "class": "fd-table__cell--fixed-last",
+                  "description": "fixed-last variant of cell"
+                },
+                {
+                  "class": "fd-table__cell--fixed-end",
+                  "description": "fixed-end variant of cell"
+                },
+                {
+                  "class": "fd-table__cell--fixed-end-last",
+                  "description": "fixed-end-last variant of cell"
+                },
+                {
+                  "class": "fd-table__cell--focusable",
+                  "description": "focusable variant of cell"
+                },
+                {
+                  "class": "fd-table__cell--expand",
+                  "description": "expand variant of cell"
+                },
+                {
+                  "class": "fd-table__cell--activable",
+                  "description": "activable variant of cell"
+                },
+                {
+                  "class": "fd-table__cell--hoverable",
+                  "description": "hoverable variant of cell"
+                },
+                {
+                  "class": "fd-table__cell--no-padding",
+                  "description": "no-padding variant of cell"
+                },
+                {
+                  "class": "fd-table__cell--navigated",
+                  "description": "navigated variant of cell"
+                },
+                {
+                  "class": "fd-table__cell--no-data",
+                  "description": "no-data variant of cell"
+                },
+                {
+                  "class": "fd-table__cell--valid",
+                  "description": "valid variant of cell"
+                },
+                {
+                  "class": "fd-table__cell--warning",
+                  "description": "warning variant of cell"
+                },
+                {
+                  "class": "fd-table__cell--error",
+                  "description": "error variant of cell"
+                },
+                {
+                  "class": "fd-table__cell--information",
+                  "description": "information variant of cell"
                 }
               ]
             },
@@ -9799,18 +11433,40 @@
                 {
                   "class": "fd-table__row--activable",
                   "description": "activable variant of row"
+                },
+                {
+                  "class": "fd-table__row--focusable",
+                  "description": "focusable variant of row"
+                },
+                {
+                  "class": "fd-table__row--main",
+                  "description": "main variant of row"
                 }
               ]
             },
             {
               "class": "fd-table__header",
               "description": "header element",
-              "modifiers": []
+              "modifiers": [
+                {
+                  "class": "fd-table__header--non-interactive",
+                  "description": "non-interactive variant of header"
+                }
+              ]
             },
             {
               "class": "fd-table__body",
               "description": "body element",
-              "modifiers": []
+              "modifiers": [
+                {
+                  "class": "fd-table__body--no-horizontal-borders",
+                  "description": "no-horizontal-borders variant of body"
+                },
+                {
+                  "class": "fd-table__body--no-vertical-borders",
+                  "description": "no-vertical-borders variant of body"
+                }
+              ]
             },
             {
               "class": "fd-table__footer",
@@ -9820,12 +11476,26 @@
             {
               "class": "fd-table__text",
               "description": "text element",
-              "modifiers": []
+              "modifiers": [
+                {
+                  "class": "fd-table__text--no-wrap",
+                  "description": "no-wrap variant of text"
+                },
+                {
+                  "class": "fd-table__text--title",
+                  "description": "title variant of text"
+                }
+              ]
             },
             {
               "class": "fd-table__icon",
               "description": "icon element",
-              "modifiers": []
+              "modifiers": [
+                {
+                  "class": "fd-table__icon--navigation",
+                  "description": "navigation variant of icon"
+                }
+              ]
             },
             {
               "class": "fd-table__inner",
@@ -9869,6 +11539,28 @@
                 {
                   "class": "fd-table__expand--open",
                   "description": "open variant of expand"
+                }
+              ]
+            },
+            {
+              "class": "fd-table__cell--status-indicator",
+              "description": "cell--status-indicator element",
+              "modifiers": [
+                {
+                  "class": "fd-table__cell--status-indicator--valid",
+                  "description": "valid variant of cell--status-indicator"
+                },
+                {
+                  "class": "fd-table__cell--status-indicator--warning",
+                  "description": "warning variant of cell--status-indicator"
+                },
+                {
+                  "class": "fd-table__cell--status-indicator--error",
+                  "description": "error variant of cell--status-indicator"
+                },
+                {
+                  "class": "fd-table__cell--status-indicator--information",
+                  "description": "information variant of cell--status-indicator"
                 }
               ]
             }
@@ -10075,13 +11767,26 @@
           "examples": [],
           "category": "navigation",
           "subcategory": "tabs",
-          "useCases": [],
-          "avoidWhen": [],
+          "useCases": [
+            "Same-page content sections",
+            "Form step organization",
+            "View switching",
+            "Content categorization"
+          ],
+          "avoidWhen": [
+            "App-level navigation (use side-nav)",
+            "Tabs with counts/badges (use icon-tab-bar)",
+            "Sequential steps (use wizard)"
+          ],
           "accessibility": {
             "role": null,
             "ariaAttributes": []
           },
-          "relatedComponents": [],
+          "relatedComponents": [
+            "icon-tab-bar",
+            "side-nav",
+            "wizard"
+          ],
           "dependencies": []
         },
         {
@@ -10117,7 +11822,12 @@
             {
               "class": "fd-text__link",
               "description": "link element",
-              "modifiers": []
+              "modifiers": [
+                {
+                  "class": "fd-text__link--more",
+                  "description": "more variant of link"
+                }
+              ]
             },
             {
               "class": "fd-text__ai-highlight",
@@ -10142,13 +11852,26 @@
           ],
           "category": "typography",
           "subcategory": null,
-          "useCases": [],
-          "avoidWhen": [],
+          "useCases": [
+            "Body text display",
+            "Paragraph content",
+            "Description text",
+            "General text content"
+          ],
+          "avoidWhen": [
+            "Headings (use title)",
+            "Code (use code)",
+            "Links (use link)"
+          ],
           "accessibility": {
             "role": null,
             "ariaAttributes": []
           },
-          "relatedComponents": [],
+          "relatedComponents": [
+            "title",
+            "code",
+            "link"
+          ],
           "dependencies": []
         },
         {
@@ -10365,13 +12088,25 @@
           "examples": [],
           "category": "containers",
           "subcategory": null,
-          "useCases": [],
-          "avoidWhen": [],
+          "useCases": [
+            "Dashboard tiles",
+            "App launcher tiles",
+            "KPI display tiles",
+            "Quick access shortcuts"
+          ],
+          "avoidWhen": [
+            "Rich content cards (use card)",
+            "List items (use list)",
+            "Image galleries (use grid-list)"
+          ],
           "accessibility": {
             "role": null,
             "ariaAttributes": []
           },
-          "relatedComponents": [],
+          "relatedComponents": [
+            "card",
+            "numeric-content"
+          ],
           "dependencies": []
         },
         {
@@ -10415,7 +12150,12 @@
             {
               "class": "fd-time__col",
               "description": "col element",
-              "modifiers": []
+              "modifiers": [
+                {
+                  "class": "fd-time__col--period",
+                  "description": "period variant of col"
+                }
+              ]
             },
             {
               "class": "fd-time__current-indicator",
@@ -10425,12 +12165,26 @@
             {
               "class": "fd-time__wrapper",
               "description": "wrapper element",
-              "modifiers": []
+              "modifiers": [
+                {
+                  "class": "fd-time__wrapper--active",
+                  "description": "active variant of wrapper"
+                },
+                {
+                  "class": "fd-time__wrapper--meridian",
+                  "description": "meridian variant of wrapper"
+                }
+              ]
             },
             {
               "class": "fd-time__item",
               "description": "item element",
-              "modifiers": []
+              "modifiers": [
+                {
+                  "class": "fd-time__item--collapsed",
+                  "description": "collapsed variant of item"
+                }
+              ]
             },
             {
               "class": "fd-time__unit",
@@ -10472,13 +12226,25 @@
           ],
           "category": "date-time",
           "subcategory": null,
-          "useCases": [],
-          "avoidWhen": [],
+          "useCases": [
+            "Time picker component",
+            "Time selection input",
+            "Schedule time input",
+            "Duration input"
+          ],
+          "avoidWhen": [
+            "Date selection (use calendar)",
+            "Date and time (use combined picker)",
+            "Simple text time (use input)"
+          ],
           "accessibility": {
             "role": null,
             "ariaAttributes": []
           },
-          "relatedComponents": [],
+          "relatedComponents": [
+            "calendar",
+            "timepicker"
+          ],
           "dependencies": []
         },
         {
@@ -10583,13 +12349,25 @@
           ],
           "category": "date-time",
           "subcategory": null,
-          "useCases": [],
-          "avoidWhen": [],
+          "useCases": [
+            "Time input with picker",
+            "Schedule time selection",
+            "Time field with dropdown",
+            "Time selection control"
+          ],
+          "avoidWhen": [
+            "Inline time display (use time)",
+            "Date and time (use combined component)",
+            "Simple text time (use input)"
+          ],
           "accessibility": {
             "role": null,
             "ariaAttributes": []
           },
-          "relatedComponents": [],
+          "relatedComponents": [
+            "time",
+            "calendar"
+          ],
           "dependencies": []
         },
         {
@@ -10634,13 +12412,26 @@
           "examples": [],
           "category": "toolbars",
           "subcategory": null,
-          "useCases": [],
-          "avoidWhen": [],
+          "useCases": [
+            "Panel title bar",
+            "Section header bar",
+            "Container header",
+            "Titled content area header"
+          ],
+          "avoidWhen": [
+            "Page headers (use bar or action-bar)",
+            "Dialog headers (use bar)",
+            "Simple titles (use title)"
+          ],
           "accessibility": {
             "role": null,
             "ariaAttributes": []
           },
-          "relatedComponents": [],
+          "relatedComponents": [
+            "bar",
+            "action-bar",
+            "title"
+          ],
           "dependencies": []
         },
         {
@@ -10701,13 +12492,25 @@
           ],
           "category": "typography",
           "subcategory": null,
-          "useCases": [],
-          "avoidWhen": [],
+          "useCases": [
+            "Page headings",
+            "Section titles",
+            "Component headers",
+            "Semantic headings (h1-h6)"
+          ],
+          "avoidWhen": [
+            "Body text (use text)",
+            "Bar titles (use bar with title)",
+            "Form labels (use form-label)"
+          ],
           "accessibility": {
             "role": null,
             "ariaAttributes": []
           },
-          "relatedComponents": [],
+          "relatedComponents": [
+            "text",
+            "title-bar"
+          ],
           "dependencies": []
         },
         {
@@ -10783,13 +12586,26 @@
           ],
           "category": "tags",
           "subcategory": null,
-          "useCases": [],
-          "avoidWhen": [],
+          "useCases": [
+            "Selected filter display",
+            "Removable tags",
+            "Multi-select display",
+            "Chip-style selections"
+          ],
+          "avoidWhen": [
+            "Status labels (use info-label)",
+            "Non-removable tags (use badge)",
+            "Single selection (use select)"
+          ],
           "accessibility": {
             "role": null,
             "ariaAttributes": []
           },
-          "relatedComponents": [],
+          "relatedComponents": [
+            "tokenizer",
+            "info-label",
+            "badge"
+          ],
           "dependencies": []
         },
         {
@@ -10851,13 +12667,26 @@
           ],
           "category": "tags",
           "subcategory": null,
-          "useCases": [],
-          "avoidWhen": [],
+          "useCases": [
+            "Multiple token container",
+            "Multi-select input display",
+            "Tag collection",
+            "Selected items display"
+          ],
+          "avoidWhen": [
+            "Single selection (use select)",
+            "Simple list (use list)",
+            "Editable tags (use input-group)"
+          ],
           "accessibility": {
             "role": null,
             "ariaAttributes": []
           },
-          "relatedComponents": [],
+          "relatedComponents": [
+            "token",
+            "select",
+            "input-group"
+          ],
           "dependencies": []
         },
         {
@@ -10931,13 +12760,26 @@
           "examples": [],
           "category": "toolbars",
           "subcategory": null,
-          "useCases": [],
-          "avoidWhen": [],
+          "useCases": [
+            "Tool application header",
+            "Compact app header",
+            "Utility app header",
+            "Secondary app header"
+          ],
+          "avoidWhen": [
+            "Main app header (use shellbar)",
+            "Page headers (use action-bar)",
+            "Dialog headers (use bar)"
+          ],
           "accessibility": {
             "role": null,
             "ariaAttributes": []
           },
-          "relatedComponents": [],
+          "relatedComponents": [
+            "shellbar",
+            "action-bar",
+            "bar"
+          ],
           "dependencies": []
         },
         {
@@ -11012,13 +12854,26 @@
           "examples": [],
           "category": "layout",
           "subcategory": null,
-          "useCases": [],
-          "avoidWhen": [],
+          "useCases": [
+            "Tool application layout",
+            "Utility page structure",
+            "Secondary app layout",
+            "Tool-specific page container"
+          ],
+          "avoidWhen": [
+            "Standard apps (use page)",
+            "Complex layouts (use flexible-column-layout)",
+            "Simple pages (use layout)"
+          ],
           "accessibility": {
             "role": null,
             "ariaAttributes": []
           },
-          "relatedComponents": [],
+          "relatedComponents": [
+            "page",
+            "layout",
+            "tool-header"
+          ],
           "dependencies": []
         },
         {
@@ -11086,7 +12941,12 @@
             {
               "class": "fd-toolbar__spacer",
               "description": "spacer element",
-              "modifiers": []
+              "modifiers": [
+                {
+                  "class": "fd-toolbar__spacer--fixed",
+                  "description": "fixed variant of spacer"
+                }
+              ]
             },
             {
               "class": "fd-toolbar__separator",
@@ -11140,13 +13000,26 @@
           ],
           "category": "toolbars",
           "subcategory": null,
-          "useCases": [],
-          "avoidWhen": [],
+          "useCases": [
+            "Content area actions",
+            "Table/list toolbar",
+            "Formatting toolbar",
+            "Action button container"
+          ],
+          "avoidWhen": [
+            "Page header (use bar or action-bar)",
+            "Dialog footer (use bar)",
+            "App navigation (use shellbar)"
+          ],
           "accessibility": {
             "role": null,
             "ariaAttributes": []
           },
-          "relatedComponents": [],
+          "relatedComponents": [
+            "bar",
+            "action-bar",
+            "tool-header"
+          ],
           "dependencies": []
         },
         {
@@ -11213,17 +13086,37 @@
             {
               "class": "fd-tree__content",
               "description": "content element",
-              "modifiers": []
+              "modifiers": [
+                {
+                  "class": "fd-tree__content--wrap",
+                  "description": "wrap variant of content"
+                }
+              ]
             },
             {
               "class": "fd-tree__icon",
               "description": "icon element",
-              "modifiers": []
+              "modifiers": [
+                {
+                  "class": "fd-tree__icon--navigation",
+                  "description": "navigation variant of icon"
+                }
+              ]
             },
             {
               "class": "fd-tree__text",
               "description": "text element",
               "modifiers": []
+            },
+            {
+              "class": "fd-tree__item-container",
+              "description": "item-container element",
+              "modifiers": [
+                {
+                  "class": "fd-tree__item-container--active",
+                  "description": "active variant of item-container"
+                }
+              ]
             }
           ],
           "variables": [
@@ -11254,13 +13147,26 @@
           ],
           "category": "data-display",
           "subcategory": "hierarchical",
-          "useCases": [],
-          "avoidWhen": [],
+          "useCases": [
+            "Hierarchical data display",
+            "File/folder structures",
+            "Organizational hierarchies",
+            "Nested category navigation"
+          ],
+          "avoidWhen": [
+            "Flat lists (use list)",
+            "Tabular data (use table)",
+            "Navigation menu (use side-nav)"
+          ],
           "accessibility": {
             "role": null,
             "ariaAttributes": []
           },
-          "relatedComponents": [],
+          "relatedComponents": [
+            "list",
+            "table",
+            "side-nav"
+          ],
           "dependencies": []
         },
         {
@@ -11336,6 +13242,16 @@
               "class": "fd-upload-collection__form-item",
               "description": "form-item element",
               "modifiers": []
+            },
+            {
+              "class": "fd-upload-collection__item",
+              "description": "item element",
+              "modifiers": [
+                {
+                  "class": "fd-upload-collection__item--interactive",
+                  "description": "interactive variant of item"
+                }
+              ]
             }
           ],
           "variables": [],
@@ -11352,13 +13268,25 @@
           ],
           "category": "specialized",
           "subcategory": null,
-          "useCases": [],
-          "avoidWhen": [],
+          "useCases": [
+            "Uploaded files list",
+            "Attachment management",
+            "Document collection",
+            "File list with actions"
+          ],
+          "avoidWhen": [
+            "Simple upload (use file-uploader)",
+            "Image gallery (use grid-list)",
+            "Generic list (use list)"
+          ],
           "accessibility": {
             "role": null,
             "ariaAttributes": []
           },
-          "relatedComponents": [],
+          "relatedComponents": [
+            "file-uploader",
+            "list"
+          ],
           "dependencies": []
         },
         {
@@ -11421,7 +13349,12 @@
             {
               "class": "fd-user-menu__subline",
               "description": "subline element",
-              "modifiers": []
+              "modifiers": [
+                {
+                  "class": "fd-user-menu__subline--truncate",
+                  "description": "truncate variant of subline"
+                }
+              ]
             },
             {
               "class": "fd-user-menu__content-container",
@@ -11470,13 +13403,26 @@
           ],
           "category": "specialized",
           "subcategory": null,
-          "useCases": [],
-          "avoidWhen": [],
+          "useCases": [
+            "User profile menu",
+            "Account settings access",
+            "Sign out option",
+            "User-specific actions"
+          ],
+          "avoidWhen": [
+            "App navigation (use product-switch)",
+            "Generic menu (use menu)",
+            "Settings page (use side-nav)"
+          ],
           "accessibility": {
             "role": null,
             "ariaAttributes": []
           },
-          "relatedComponents": [],
+          "relatedComponents": [
+            "shellbar",
+            "menu",
+            "avatar"
+          ],
           "dependencies": []
         },
         {
@@ -11517,12 +13463,30 @@
             {
               "class": "fd-variant-management__title",
               "description": "title element",
-              "modifiers": []
+              "modifiers": [
+                {
+                  "class": "fd-variant-management__title--object-header",
+                  "description": "object-header variant of title"
+                },
+                {
+                  "class": "fd-variant-management__title--snapped-object-header",
+                  "description": "snapped-object-header variant of title"
+                },
+                {
+                  "class": "fd-variant-management__title--table",
+                  "description": "table variant of title"
+                }
+              ]
             },
             {
               "class": "fd-variant-management__dirty-indicator",
               "description": "dirty-indicator element",
-              "modifiers": []
+              "modifiers": [
+                {
+                  "class": "fd-variant-management__dirty-indicator--custom",
+                  "description": "custom variant of dirty-indicator"
+                }
+              ]
             },
             {
               "class": "fd-variant-management__favourite-state",
@@ -11554,13 +13518,25 @@
           ],
           "category": "specialized",
           "subcategory": null,
-          "useCases": [],
-          "avoidWhen": [],
+          "useCases": [
+            "Saved view management",
+            "Filter variant selection",
+            "Layout preferences",
+            "Personalization options"
+          ],
+          "avoidWhen": [
+            "Simple selection (use select)",
+            "Settings (use settings component)",
+            "One-time choices (use radio)"
+          ],
           "accessibility": {
             "role": null,
             "ariaAttributes": []
           },
-          "relatedComponents": [],
+          "relatedComponents": [
+            "select",
+            "popover"
+          ],
           "dependencies": []
         },
         {
@@ -11642,13 +13618,25 @@
           "examples": [],
           "category": "navigation",
           "subcategory": null,
-          "useCases": [],
-          "avoidWhen": [],
+          "useCases": [
+            "Vertical navigation menu",
+            "Side menu without collapse",
+            "Simple vertical links",
+            "Static navigation list"
+          ],
+          "avoidWhen": [
+            "Collapsible navigation (use side-nav)",
+            "Main app navigation (use side-nav with shellbar)",
+            "Horizontal layout (use tabs)"
+          ],
           "accessibility": {
             "role": null,
             "ariaAttributes": []
           },
-          "relatedComponents": [],
+          "relatedComponents": [
+            "side-nav",
+            "navigation-list"
+          ],
           "dependencies": []
         },
         {
@@ -11737,7 +13725,20 @@
             {
               "class": "fd-wizard__progress-bar",
               "description": "progress-bar element",
-              "modifiers": []
+              "modifiers": [
+                {
+                  "class": "fd-wizard__progress-bar--md",
+                  "description": "md variant of progress-bar"
+                },
+                {
+                  "class": "fd-wizard__progress-bar--sm",
+                  "description": "sm variant of progress-bar"
+                },
+                {
+                  "class": "fd-wizard__progress-bar--xl",
+                  "description": "xl variant of progress-bar"
+                }
+              ]
             },
             {
               "class": "fd-wizard__step-wrapper",
@@ -11759,6 +13760,18 @@
                 {
                   "class": "fd-wizard__step--upcoming",
                   "description": "upcoming variant of step"
+                },
+                {
+                  "class": "fd-wizard__step--current",
+                  "description": "current variant of step"
+                },
+                {
+                  "class": "fd-wizard__step--stacked-top",
+                  "description": "stacked-top variant of step"
+                },
+                {
+                  "class": "fd-wizard__step--no-label",
+                  "description": "no-label variant of step"
                 }
               ]
             },
@@ -11780,7 +13793,12 @@
             {
               "class": "fd-wizard__label-container",
               "description": "label-container element",
-              "modifiers": []
+              "modifiers": [
+                {
+                  "class": "fd-wizard__label-container--optional",
+                  "description": "optional variant of label-container"
+                }
+              ]
             },
             {
               "class": "fd-wizard__label",
@@ -11795,12 +13813,38 @@
             {
               "class": "fd-wizard__connector",
               "description": "connector element",
-              "modifiers": []
+              "modifiers": [
+                {
+                  "class": "fd-wizard__connector--active",
+                  "description": "active variant of connector"
+                },
+                {
+                  "class": "fd-wizard__connector--branching",
+                  "description": "branching variant of connector"
+                }
+              ]
             },
             {
               "class": "fd-wizard__content",
               "description": "content element",
-              "modifiers": []
+              "modifiers": [
+                {
+                  "class": "fd-wizard__content--list",
+                  "description": "list variant of content"
+                },
+                {
+                  "class": "fd-wizard__content--md",
+                  "description": "md variant of content"
+                },
+                {
+                  "class": "fd-wizard__content--sm",
+                  "description": "sm variant of content"
+                },
+                {
+                  "class": "fd-wizard__content--xl",
+                  "description": "xl variant of content"
+                }
+              ]
             },
             {
               "class": "fd-wizard__step-content-container",
@@ -11810,7 +13854,12 @@
             {
               "class": "fd-wizard__next-step",
               "description": "next-step element",
-              "modifiers": []
+              "modifiers": [
+                {
+                  "class": "fd-wizard__next-step--floating",
+                  "description": "floating variant of next-step"
+                }
+              ]
             }
           ],
           "variables": [
@@ -11854,13 +13903,26 @@
           ],
           "category": "specialized",
           "subcategory": null,
-          "useCases": [],
-          "avoidWhen": [],
+          "useCases": [
+            "Multi-step processes",
+            "Guided workflows",
+            "Setup wizards",
+            "Sequential form completion"
+          ],
+          "avoidWhen": [
+            "Non-sequential content (use tabs)",
+            "Simple forms (use form-group)",
+            "Single step (use dialog)"
+          ],
           "accessibility": {
             "role": null,
             "ariaAttributes": []
           },
-          "relatedComponents": [],
+          "relatedComponents": [
+            "tabs",
+            "dialog",
+            "progress-indicator"
+          ],
           "dependencies": []
         }
       ]

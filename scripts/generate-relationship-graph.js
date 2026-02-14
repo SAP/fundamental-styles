@@ -462,7 +462,7 @@ function saveRelationshipGraph(graph) {
   // Save JSON
   fs.writeFileSync(
     CONFIG.graphFile,
-    JSON.stringify(enrichedGraph, null, 2),
+    JSON.stringify(enrichedGraph, null, 2) + '\n',
     'utf8'
   );
 

@@ -71,7 +71,12 @@
                 "enum": [
                   "fd-list__item--growing",
                   "fd-list__item--action",
-                  "fd-list__item--link"
+                  "fd-list__item--link",
+                  "fd-list__item--interractive",
+                  "fd-list__item--unread",
+                  "fd-list__item--inactive",
+                  "fd-list__item--suggestion",
+                  "fd-list__item--byline"
                 ]
               },
               "description": "Available modifiers for this element"
@@ -110,7 +115,9 @@
               "type": "array",
               "items": {
                 "enum": [
-                  "fd-list__title--scope"
+                  "fd-list__title--scope",
+                  "fd-list__title--wrap",
+                  "fd-list__title--truncate"
                 ]
               },
               "description": "Available modifiers for this element"
@@ -124,6 +131,18 @@
             "class": {
               "const": "fd-list__secondary",
               "description": "Element class name"
+            },
+            "modifiers": {
+              "type": "array",
+              "items": {
+                "enum": [
+                  "fd-list__secondary--positive",
+                  "fd-list__secondary--critical",
+                  "fd-list__secondary--negative",
+                  "fd-list__secondary--informative"
+                ]
+              },
+              "description": "Available modifiers for this element"
             }
           }
         },
@@ -149,7 +168,8 @@
               "type": "array",
               "items": {
                 "enum": [
-                  "fd-list__link--navigation-indicator"
+                  "fd-list__link--navigation-indicator",
+                  "fd-list__link--more"
                 ]
               },
               "description": "Available modifiers for this element"
@@ -193,6 +213,65 @@
             "class": {
               "const": "fd-list__item-counter",
               "description": "Element class name"
+            }
+          }
+        },
+        "fd-list__byline": {
+          "type": "object",
+          "description": "byline element",
+          "properties": {
+            "class": {
+              "const": "fd-list__byline",
+              "description": "Element class name"
+            },
+            "modifiers": {
+              "type": "array",
+              "items": {
+                "enum": [
+                  "fd-list__byline--2-col",
+                  "fd-list__byline--wrap"
+                ]
+              },
+              "description": "Available modifiers for this element"
+            }
+          }
+        },
+        "fd-list__byline-right": {
+          "type": "object",
+          "description": "byline-right element",
+          "properties": {
+            "class": {
+              "const": "fd-list__byline-right",
+              "description": "Element class name"
+            },
+            "modifiers": {
+              "type": "array",
+              "items": {
+                "enum": [
+                  "fd-list__byline-right--positive",
+                  "fd-list__byline-right--informative"
+                ]
+              },
+              "description": "Available modifiers for this element"
+            }
+          }
+        },
+        "fd-list__subline": {
+          "type": "object",
+          "description": "subline element",
+          "properties": {
+            "class": {
+              "const": "fd-list__subline",
+              "description": "Element class name"
+            },
+            "modifiers": {
+              "type": "array",
+              "items": {
+                "enum": [
+                  "fd-list__subline--truncate"
+                ]
+              },
+              "description": "Available modifiers for this element"
             }
           }
         }

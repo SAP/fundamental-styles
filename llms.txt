@@ -14,12 +14,23 @@ HTML/CSS component library for building enterprise applications. Framework-agnos
 
 ## AI Resources
 
-- /CLAUDE.md - Quick reference with examples
+Quick Reference:
+- /CLAUDE.md - Quick reference with examples (start here)
+
+Component Discovery:
 - /docs/ai-component-index.md - Full component guide (120 components)
 - /docs/component-catalog.json - Machine-readable component catalog
-- /docs/utility-classes.json - Utility classes (227 classes, 13 categories)
-- /docs/component-relationships.json - Component dependencies (307 relationships)
 - /docs/schemas/*.json - JSON schema per component
+
+Implementation Helpers:
+- /docs/html-examples.json - 10 complete HTML patterns for complex UIs
+- /docs/modifier-rules.json - Mutually exclusive modifier combinations
+- /docs/accessibility.json - ARIA patterns for 72 components
+
+Styling Reference:
+- /docs/utility-classes.json - Utility classes (229 classes, 13 categories)
+- /docs/design-tokens.json - 1,522 CSS custom properties (--sap* tokens)
+- /docs/component-relationships.json - Component dependencies (307 relationships)
 
 ## Quick Start
 

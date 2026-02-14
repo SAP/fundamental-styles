@@ -154,6 +154,47 @@
               "description": "Available modifiers for this element"
             }
           }
+        },
+        "fd-shellbar__group": {
+          "type": "object",
+          "description": "group element",
+          "properties": {
+            "class": {
+              "const": "fd-shellbar__group",
+              "description": "Element class name"
+            },
+            "modifiers": {
+              "type": "array",
+              "items": {
+                "enum": [
+                  "fd-shellbar__group--product",
+                  "fd-shellbar__group--context-area",
+                  "fd-shellbar__group--actions",
+                  "fd-shellbar__group--full-width"
+                ]
+              },
+              "description": "Available modifiers for this element"
+            }
+          }
+        },
+        "fd-shellbar__search-category": {
+          "type": "object",
+          "description": "search-category element",
+          "properties": {
+            "class": {
+              "const": "fd-shellbar__search-category",
+              "description": "Element class name"
+            },
+            "modifiers": {
+              "type": "array",
+              "items": {
+                "enum": [
+                  "fd-shellbar__search-category--collapsed"
+                ]
+              },
+              "description": "Available modifiers for this element"
+            }
+          }
         }
       },
       "additionalProperties": false

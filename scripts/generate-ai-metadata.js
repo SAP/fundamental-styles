@@ -197,6 +197,28 @@ function parseScssFile(filePath) {
     });
   }
 
+  // Also extract element modifiers from stories (these may not be in SCSS)
+  const storyElementModifiers = extractElementModifiersFromStories(fileName, component.baseClass);
+  for (const [elementName, modifierClasses] of storyElementModifiers) {
+    // Ensure the element exists
+    if (!foundElements.has(elementName)) {
+      foundElements.set(elementName, {
+        class: `${component.baseClass}__${elementName}`,
+        description: `${elementName} element`,
+        modifiers: []
+      });
+    }
+
+    // Add modifiers from stories
+    for (const modClass of modifierClasses) {
+      const modifierName = modClass.split('--').pop();
+      foundElements.get(elementName).modifiers.push({
+        class: modClass,
+        description: `${modifierName} variant of ${elementName}`
+      });
+    }
+  }
+
   // Convert to array and deduplicate element modifiers
   component.elements = Array.from(foundElements.values()).map(el => ({
     class: el.class,
@@ -385,6 +407,59 @@ function extractModifiersFromDirectory(dirPath, baseClass, modifiers) {
 
           while ((match = modifierRegex.exec(content)) !== null) {
             modifiers.add(`${baseClass}--${match[1]}`);
+          }
+        } catch (e) {
+          // Ignore file read errors
+        }
+      }
+    }
+  } catch (e) {
+    // Ignore directory read errors
+  }
+}
+
+/**
+ * Extract element modifiers from story HTML files
+ * Pattern: baseClass__element--modifier
+ */
+function extractElementModifiersFromStories(componentName, baseClass) {
+  const elementModifiers = new Map(); // element name -> Set of modifier classes
+
+  const storiesPath = path.join(CONFIG.storiesDir, componentName);
+  if (fs.existsSync(storiesPath)) {
+    extractElementModifiersFromDirectory(storiesPath, baseClass, elementModifiers);
+  }
+
+  return elementModifiers;
+}
+
+/**
+ * Extract element modifiers from HTML files in a directory
+ */
+function extractElementModifiersFromDirectory(dirPath, baseClass, elementModifiers) {
+  try {
+    const files = fs.readdirSync(dirPath, { recursive: true });
+
+    for (const file of files) {
+      if (typeof file === 'string' && file.endsWith('.html')) {
+        const filePath = path.join(dirPath, file);
+        try {
+          const content = fs.readFileSync(filePath, 'utf8');
+
+          // Extract element modifiers from class attributes
+          // Pattern: baseClass__element--modifier
+          const escapedBase = baseClass.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+          const elemModRegex = new RegExp(`${escapedBase}__([a-z0-9-]+)--([a-z0-9-]+)`, 'gi');
+          let match;
+
+          while ((match = elemModRegex.exec(content)) !== null) {
+            const elementName = match[1];
+            const modifierName = match[2];
+
+            if (!elementModifiers.has(elementName)) {
+              elementModifiers.set(elementName, new Set());
+            }
+            elementModifiers.get(elementName).add(`${baseClass}__${elementName}--${modifierName}`);
           }
         } catch (e) {
           // Ignore file read errors
@@ -600,9 +675,17 @@ function updateCatalog(components) {
   const catalog = {
     $schema: 'https://json-schema.org/draft/2020-12/schema',
     version: '0.41.0',
-    lastUpdated: new Date().toISOString().split('T')[0],
     description: 'Machine-readable catalog of Fundamental Library Styles components',
     generatedBy: 'scripts/generate-ai-metadata.js',
+    relatedFiles: {
+      accessibility: 'docs/accessibility.json',
+      designTokens: 'docs/design-tokens.json',
+      htmlExamples: 'docs/html-examples.json',
+      modifierRules: 'docs/modifier-rules.json',
+      utilityClasses: 'docs/utility-classes.json',
+      relationships: 'docs/component-relationships.json',
+      schemas: 'docs/schemas/{component}.schema.json'
+    },
     packages: {
       'fundamental-styles': {
         name: 'fundamental-styles',
@@ -625,7 +708,7 @@ function updateCatalog(components) {
   // Write catalog
   fs.writeFileSync(
     CONFIG.catalogFile,
-    JSON.stringify(catalog, null, 2),
+    JSON.stringify(catalog, null, 2) + '\n',
     'utf8'
   );
 
@@ -753,7 +836,7 @@ function generateSchemas(components) {
     const schema = generateComponentSchema(component);
     const schemaPath = path.join(CONFIG.schemasDir, `${component.id}.schema.json`);
 
-    fs.writeFileSync(schemaPath, JSON.stringify(schema, null, 2), 'utf8');
+    fs.writeFileSync(schemaPath, JSON.stringify(schema, null, 2) + '\n', 'utf8');
     log.verbose(`Generated schema: ${component.id}.schema.json`);
   }
 

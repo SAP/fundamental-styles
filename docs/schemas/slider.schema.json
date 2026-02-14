@@ -92,6 +92,15 @@
             "class": {
               "const": "fd-slider__tick",
               "description": "Element class name"
+            },
+            "modifiers": {
+              "type": "array",
+              "items": {
+                "enum": [
+                  "fd-slider__tick--in-range"
+                ]
+              },
+              "description": "Available modifiers for this element"
             }
           }
         },

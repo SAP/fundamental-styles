@@ -40,6 +40,15 @@
             "class": {
               "const": "fd-action-sheet__wrapper",
               "description": "Element class name"
+            },
+            "modifiers": {
+              "type": "array",
+              "items": {
+                "enum": [
+                  "fd-action-sheet__wrapper--active"
+                ]
+              },
+              "description": "Available modifiers for this element"
             }
           }
         },

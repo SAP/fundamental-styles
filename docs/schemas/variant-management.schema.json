@@ -43,6 +43,17 @@
             "class": {
               "const": "fd-variant-management__title",
               "description": "Element class name"
+            },
+            "modifiers": {
+              "type": "array",
+              "items": {
+                "enum": [
+                  "fd-variant-management__title--object-header",
+                  "fd-variant-management__title--snapped-object-header",
+                  "fd-variant-management__title--table"
+                ]
+              },
+              "description": "Available modifiers for this element"
             }
           }
         },
@@ -53,6 +64,15 @@
             "class": {
               "const": "fd-variant-management__dirty-indicator",
               "description": "Element class name"
+            },
+            "modifiers": {
+              "type": "array",
+              "items": {
+                "enum": [
+                  "fd-variant-management__dirty-indicator--custom"
+                ]
+              },
+              "description": "Available modifiers for this element"
             }
           }
         },

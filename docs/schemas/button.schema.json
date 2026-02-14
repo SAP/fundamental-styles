@@ -53,6 +53,15 @@
             "class": {
               "const": "fd-button__badge",
               "description": "Element class name"
+            },
+            "modifiers": {
+              "type": "array",
+              "items": {
+                "enum": [
+                  "fd-button__badge--attention"
+                ]
+              },
+              "description": "Available modifiers for this element"
             }
           }
         },

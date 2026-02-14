@@ -69,6 +69,15 @@
             "class": {
               "const": "fd-notification__title",
               "description": "Element class name"
+            },
+            "modifiers": {
+              "type": "array",
+              "items": {
+                "enum": [
+                  "fd-notification__title--unread"
+                ]
+              },
+              "description": "Available modifiers for this element"
             }
           }
         },

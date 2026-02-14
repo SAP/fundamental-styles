@@ -1,0 +1,309 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "description": "Modifier combination rules for fundamental-styles components - prevents invalid class combinations",
+  "version": "1.0.0",
+  "relatedFiles": {
+    "componentCatalog": "docs/component-catalog.json",
+    "htmlExamples": "docs/html-examples.json"
+  },
+
+  "components": {
+    "button": {
+      "baseClass": "fd-button",
+      "mutuallyExclusive": [
+        {
+          "group": "type",
+          "description": "Button type/style - only one can be applied",
+          "modifiers": [
+            "fd-button--emphasized",
+            "fd-button--positive",
+            "fd-button--negative",
+            "fd-button--attention",
+            "fd-button--ghost",
+            "fd-button--transparent"
+          ],
+          "note": "Default style (no modifier) is also a type"
+        },
+        {
+          "group": "variant",
+          "description": "Special button variants",
+          "modifiers": [
+            "fd-button--tool-header",
+            "fd-button--nested",
+            "fd-button--nested-square"
+          ]
+        }
+      ],
+      "compatible": [
+        {
+          "description": "Size modifiers can combine with any type",
+          "combinations": [
+            ["fd-button--emphasized", "fd-button--compact"],
+            ["fd-button--positive", "fd-button--compact"],
+            ["fd-button--negative", "fd-button--compact"],
+            ["fd-button--transparent", "fd-button--compact"]
+          ]
+        },
+        {
+          "description": "Menu style can combine with types",
+          "combinations": [
+            ["fd-button--emphasized", "fd-button--menu"],
+            ["fd-button--transparent", "fd-button--menu"]
+          ]
+        },
+        {
+          "description": "Toggle state can combine with any type",
+          "combinations": [
+            ["fd-button--emphasized", "fd-button--toggled"],
+            ["fd-button--transparent", "fd-button--toggled"]
+          ]
+        }
+      ],
+      "stateClasses": ["is-disabled", "is-focus", "is-active", "is-selected"]
+    },
+
+    "input": {
+      "baseClass": "fd-input",
+      "mutuallyExclusive": [
+        {
+          "group": "state",
+          "description": "Validation state - only one can be applied",
+          "modifiers": [
+            "is-error",
+            "is-warning",
+            "is-success",
+            "is-information"
+          ]
+        }
+      ],
+      "compatible": [
+        {
+          "description": "Compact can combine with any state",
+          "combinations": [
+            ["fd-input--compact", "is-error"],
+            ["fd-input--compact", "is-success"]
+          ]
+        }
+      ],
+      "stateClasses": ["is-disabled", "is-readonly", "is-focus"]
+    },
+
+    "message-strip": {
+      "baseClass": "fd-message-strip",
+      "mutuallyExclusive": [
+        {
+          "group": "type",
+          "description": "Message type - only one can be applied",
+          "modifiers": [
+            "fd-message-strip--error",
+            "fd-message-strip--warning",
+            "fd-message-strip--success",
+            "fd-message-strip--information"
+          ]
+        }
+      ],
+      "compatible": [
+        {
+          "description": "Dismissible works with any type",
+          "combinations": [
+            ["fd-message-strip--error", "fd-message-strip--dismissible"],
+            ["fd-message-strip--warning", "fd-message-strip--dismissible"]
+          ]
+        }
+      ]
+    },
+
+    "avatar": {
+      "baseClass": "fd-avatar",
+      "mutuallyExclusive": [
+        {
+          "group": "size",
+          "description": "Avatar size - only one can be applied",
+          "modifiers": [
+            "fd-avatar--xs",
+            "fd-avatar--s",
+            "fd-avatar--m",
+            "fd-avatar--l",
+            "fd-avatar--xl"
+          ]
+        },
+        {
+          "group": "accent",
+          "description": "Accent color - only one can be applied",
+          "modifiers": [
+            "fd-avatar--accent-color-1",
+            "fd-avatar--accent-color-2",
+            "fd-avatar--accent-color-3",
+            "fd-avatar--accent-color-4",
+            "fd-avatar--accent-color-5",
+            "fd-avatar--accent-color-6",
+            "fd-avatar--accent-color-7",
+            "fd-avatar--accent-color-8",
+            "fd-avatar--accent-color-9",
+            "fd-avatar--accent-color-10"
+          ]
+        }
+      ],
+      "compatible": [
+        {
+          "description": "Size and accent can combine",
+          "combinations": [
+            ["fd-avatar--m", "fd-avatar--accent-color-1"],
+            ["fd-avatar--l", "fd-avatar--circle"]
+          ]
+        }
+      ]
+    },
+
+    "list": {
+      "baseClass": "fd-list",
+      "mutuallyExclusive": [
+        {
+          "group": "type",
+          "description": "List type - typically only one",
+          "modifiers": [
+            "fd-list--dropdown",
+            "fd-list--multi-input",
+            "fd-list--navigation",
+            "fd-list--tree"
+          ]
+        }
+      ],
+      "compatible": [
+        {
+          "description": "Selection mode and border options",
+          "combinations": [
+            ["fd-list--selection", "fd-list--no-border"],
+            ["fd-list--dropdown", "fd-list--compact"]
+          ]
+        }
+      ]
+    },
+
+    "dialog": {
+      "baseClass": "fd-dialog",
+      "mutuallyExclusive": [
+        {
+          "group": "size",
+          "description": "Dialog size - only one can be applied",
+          "element": "fd-dialog__content",
+          "modifiers": [
+            "fd-dialog__content--s",
+            "fd-dialog__content--m",
+            "fd-dialog__content--l",
+            "fd-dialog__content--xl"
+          ]
+        }
+      ],
+      "compatible": [
+        {
+          "description": "Size with draggable/resizable",
+          "combinations": [
+            ["fd-dialog__content--m", "fd-dialog__content--draggable"],
+            ["fd-dialog__content--l", "fd-dialog__content--resizable"]
+          ]
+        }
+      ],
+      "stateClasses": ["fd-dialog--active"]
+    },
+
+    "table": {
+      "baseClass": "fd-table",
+      "mutuallyExclusive": [],
+      "compatible": [
+        {
+          "description": "Multiple modifiers can combine",
+          "combinations": [
+            ["fd-table--compact", "fd-table--no-horizontal-borders"],
+            ["fd-table--compact", "fd-table--no-vertical-borders"]
+          ]
+        }
+      ],
+      "rowStates": ["is-selected", "is-navigated", "is-hoverable"]
+    },
+
+    "object-status": {
+      "baseClass": "fd-object-status",
+      "mutuallyExclusive": [
+        {
+          "group": "semantic",
+          "description": "Semantic state - only one can be applied",
+          "modifiers": [
+            "fd-object-status--positive",
+            "fd-object-status--negative",
+            "fd-object-status--critical",
+            "fd-object-status--informative"
+          ]
+        },
+        {
+          "group": "indication",
+          "description": "Indication color - only one can be applied",
+          "modifiers": [
+            "fd-object-status--indication-1",
+            "fd-object-status--indication-2",
+            "fd-object-status--indication-3",
+            "fd-object-status--indication-4",
+            "fd-object-status--indication-5",
+            "fd-object-status--indication-6",
+            "fd-object-status--indication-7",
+            "fd-object-status--indication-8"
+          ]
+        }
+      ]
+    }
+  },
+
+  "globalRules": {
+    "sizeModifiers": {
+      "description": "Size modifiers follow consistent naming",
+      "pattern": "--compact for dense mode, --xs/s/m/l/xl for explicit sizes",
+      "applies": ["button", "input", "select", "table", "list", "avatar"]
+    },
+    "stateClasses": {
+      "description": "State classes use is-* prefix",
+      "classes": ["is-disabled", "is-selected", "is-active", "is-focus", "is-error", "is-success", "is-warning", "is-information"],
+      "note": "State classes can generally combine with modifiers"
+    },
+    "semanticColors": {
+      "description": "Semantic modifiers are mutually exclusive within the same group",
+      "groups": [
+        ["--positive", "--negative", "--critical", "--informative"],
+        ["--error", "--warning", "--success", "--information"]
+      ]
+    }
+  },
+
+  "validationExamples": {
+    "valid": [
+      {
+        "classes": "fd-button fd-button--emphasized fd-button--compact",
+        "explanation": "Emphasized type with compact size - valid combination"
+      },
+      {
+        "classes": "fd-input fd-input--compact is-error",
+        "explanation": "Compact input with error state - valid combination"
+      },
+      {
+        "classes": "fd-avatar fd-avatar--m fd-avatar--accent-color-3 fd-avatar--circle",
+        "explanation": "Medium avatar with accent color and circle shape - valid"
+      }
+    ],
+    "invalid": [
+      {
+        "classes": "fd-button fd-button--emphasized fd-button--ghost",
+        "explanation": "Cannot combine emphasized and ghost - both are button types",
+        "fix": "Choose one: fd-button fd-button--emphasized OR fd-button fd-button--ghost"
+      },
+      {
+        "classes": "fd-input is-error is-success",
+        "explanation": "Cannot have both error and success states",
+        "fix": "Choose one state: fd-input is-error OR fd-input is-success"
+      },
+      {
+        "classes": "fd-avatar fd-avatar--xs fd-avatar--xl",
+        "explanation": "Cannot have two sizes",
+        "fix": "Choose one size: fd-avatar fd-avatar--m"
+      }
+    ]
+  }
+}

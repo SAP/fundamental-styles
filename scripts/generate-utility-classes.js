@@ -368,7 +368,7 @@ async function main() {
     // Write JSON file
     fs.writeFileSync(
       CONFIG.outputFile,
-      JSON.stringify(utilities, null, 2),
+      JSON.stringify(utilities, null, 2) + '\n',
       'utf8'
     );
 

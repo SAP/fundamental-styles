@@ -33,6 +33,15 @@
             "class": {
               "const": "fd-text__link",
               "description": "Element class name"
+            },
+            "modifiers": {
+              "type": "array",
+              "items": {
+                "enum": [
+                  "fd-text__link--more"
+                ]
+              },
+              "description": "Available modifiers for this element"
             }
           }
         },

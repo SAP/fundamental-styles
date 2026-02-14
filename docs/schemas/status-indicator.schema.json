@@ -45,7 +45,8 @@
                   "fd-status-indicator__label--top",
                   "fd-status-indicator__label--right",
                   "fd-status-indicator__label--left",
-                  "fd-status-indicator__label--bottom"
+                  "fd-status-indicator__label--bottom",
+                  "fd-status-indicator__label--lg"
                 ]
               },
               "description": "Available modifiers for this element"

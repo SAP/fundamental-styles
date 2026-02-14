@@ -756,6 +756,84 @@
       "bidirectional": false
     },
     {
+      "from": "action-bar",
+      "to": "bar",
+      "type": "related",
+      "bidirectional": true
+    },
+    {
+      "from": "action-bar",
+      "to": "toolbar",
+      "type": "related",
+      "bidirectional": true
+    },
+    {
+      "from": "action-bar",
+      "to": "shellbar",
+      "type": "related",
+      "bidirectional": true
+    },
+    {
+      "from": "action-sheet",
+      "to": "menu",
+      "type": "related",
+      "bidirectional": true
+    },
+    {
+      "from": "action-sheet",
+      "to": "popover",
+      "type": "related",
+      "bidirectional": true
+    },
+    {
+      "from": "action-sheet",
+      "to": "dialog",
+      "type": "related",
+      "bidirectional": true
+    },
+    {
+      "from": "ai-busy-indicator",
+      "to": "busy-indicator",
+      "type": "related",
+      "bidirectional": true
+    },
+    {
+      "from": "ai-busy-indicator",
+      "to": "ai-loading-bar",
+      "type": "related",
+      "bidirectional": true
+    },
+    {
+      "from": "ai-loading-bar",
+      "to": "progress-indicator",
+      "type": "related",
+      "bidirectional": true
+    },
+    {
+      "from": "ai-text",
+      "to": "text",
+      "type": "related",
+      "bidirectional": true
+    },
+    {
+      "from": "ai-text",
+      "to": "ai-writing-assistant",
+      "type": "related",
+      "bidirectional": true
+    },
+    {
+      "from": "ai-writing-assistant",
+      "to": "prompt-input",
+      "type": "related",
+      "bidirectional": true
+    },
+    {
+      "from": "ai-writing-assistant",
+      "to": "textarea",
+      "type": "related",
+      "bidirectional": true
+    },
+    {
       "from": "alert",
       "to": "message-strip",
       "type": "related",
@@ -774,8 +852,14 @@
       "bidirectional": true
     },
     {
-      "from": "avatar",
-      "to": "avatar-group",
+      "from": "avatar-group",
+      "to": "avatar",
+      "type": "related",
+      "bidirectional": true
+    },
+    {
+      "from": "avatar-group",
+      "to": "list",
       "type": "related",
       "bidirectional": true
     },
@@ -786,8 +870,74 @@
       "bidirectional": true
     },
     {
-      "from": "button",
-      "to": "button-split",
+      "from": "badge",
+      "to": "counter",
+      "type": "related",
+      "bidirectional": true
+    },
+    {
+      "from": "badge",
+      "to": "info-label",
+      "type": "related",
+      "bidirectional": true
+    },
+    {
+      "from": "badge",
+      "to": "object-status",
+      "type": "related",
+      "bidirectional": true
+    },
+    {
+      "from": "bar",
+      "to": "toolbar",
+      "type": "related",
+      "bidirectional": true
+    },
+    {
+      "from": "bar",
+      "to": "shellbar",
+      "type": "related",
+      "bidirectional": true
+    },
+    {
+      "from": "breadcrumb",
+      "to": "side-nav",
+      "type": "related",
+      "bidirectional": true
+    },
+    {
+      "from": "breadcrumb",
+      "to": "shellbar",
+      "type": "related",
+      "bidirectional": true
+    },
+    {
+      "from": "busy-indicator",
+      "to": "progress-indicator",
+      "type": "related",
+      "bidirectional": true
+    },
+    {
+      "from": "busy-indicator",
+      "to": "skeleton",
+      "type": "related",
+      "bidirectional": true
+    },
+    {
+      "from": "button-split",
+      "to": "button",
+      "type": "related",
+      "bidirectional": true
+    },
+    {
+      "from": "button-split",
+      "to": "segmented-button",
+      "type": "related",
+      "bidirectional": true
+    },
+    {
+      "from": "button-split",
+      "to": "menu",
       "type": "related",
       "bidirectional": true
     },
@@ -810,6 +960,18 @@
       "bidirectional": true
     },
     {
+      "from": "calendar",
+      "to": "time",
+      "type": "related",
+      "bidirectional": true
+    },
+    {
+      "from": "calendar",
+      "to": "timepicker",
+      "type": "related",
+      "bidirectional": true
+    },
+    {
       "from": "card",
       "to": "tile",
       "type": "related",
@@ -828,6 +990,18 @@
       "bidirectional": true
     },
     {
+      "from": "carousel",
+      "to": "card",
+      "type": "related",
+      "bidirectional": true
+    },
+    {
+      "from": "carousel",
+      "to": "tile",
+      "type": "related",
+      "bidirectional": true
+    },
+    {
       "from": "checkbox",
       "to": "radio",
       "type": "related",
@@ -842,6 +1016,24 @@
     {
       "from": "checkbox",
       "to": "form-item",
+      "type": "related",
+      "bidirectional": true
+    },
+    {
+      "from": "code",
+      "to": "text",
+      "type": "related",
+      "bidirectional": true
+    },
+    {
+      "from": "counter",
+      "to": "object-number",
+      "type": "related",
+      "bidirectional": true
+    },
+    {
+      "from": "counter",
+      "to": "step-input",
       "type": "related",
       "bidirectional": true
     },
@@ -866,6 +1058,156 @@
     {
       "from": "dialog",
       "to": "bar",
+      "type": "related",
+      "bidirectional": true
+    },
+    {
+      "from": "dynamic-page",
+      "to": "page",
+      "type": "related",
+      "bidirectional": true
+    },
+    {
+      "from": "dynamic-page",
+      "to": "panel",
+      "type": "related",
+      "bidirectional": true
+    },
+    {
+      "from": "dynamic-page",
+      "to": "section",
+      "type": "related",
+      "bidirectional": true
+    },
+    {
+      "from": "dynamic-side-content",
+      "to": "splitter",
+      "type": "related",
+      "bidirectional": true
+    },
+    {
+      "from": "dynamic-side-content",
+      "to": "flexible-column-layout",
+      "type": "related",
+      "bidirectional": true
+    },
+    {
+      "from": "facet",
+      "to": "section",
+      "type": "related",
+      "bidirectional": true
+    },
+    {
+      "from": "facet",
+      "to": "object-attribute",
+      "type": "related",
+      "bidirectional": true
+    },
+    {
+      "from": "facet",
+      "to": "dynamic-page",
+      "type": "related",
+      "bidirectional": true
+    },
+    {
+      "from": "feed-input",
+      "to": "feed-list",
+      "type": "related",
+      "bidirectional": true
+    },
+    {
+      "from": "feed-input",
+      "to": "textarea",
+      "type": "related",
+      "bidirectional": true
+    },
+    {
+      "from": "feed-list",
+      "to": "list",
+      "type": "related",
+      "bidirectional": true
+    },
+    {
+      "from": "feed-list",
+      "to": "notification",
+      "type": "related",
+      "bidirectional": true
+    },
+    {
+      "from": "fieldset",
+      "to": "form-group",
+      "type": "related",
+      "bidirectional": true
+    },
+    {
+      "from": "fieldset",
+      "to": "form-layout-grid",
+      "type": "related",
+      "bidirectional": true
+    },
+    {
+      "from": "file-uploader",
+      "to": "upload-collection",
+      "type": "related",
+      "bidirectional": true
+    },
+    {
+      "from": "file-uploader",
+      "to": "input",
+      "type": "related",
+      "bidirectional": true
+    },
+    {
+      "from": "fixed-card-layout",
+      "to": "resizable-card-layout",
+      "type": "related",
+      "bidirectional": true
+    },
+    {
+      "from": "fixed-card-layout",
+      "to": "layout-grid",
+      "type": "related",
+      "bidirectional": true
+    },
+    {
+      "from": "fixed-card-layout",
+      "to": "card",
+      "type": "related",
+      "bidirectional": true
+    },
+    {
+      "from": "flexible-column-layout",
+      "to": "splitter",
+      "type": "related",
+      "bidirectional": true
+    },
+    {
+      "from": "flexible-column-layout",
+      "to": "layout-grid",
+      "type": "related",
+      "bidirectional": true
+    },
+    {
+      "from": "form-group",
+      "to": "form-layout-grid",
+      "type": "related",
+      "bidirectional": true
+    },
+    {
+      "from": "form-group",
+      "to": "section",
+      "type": "related",
+      "bidirectional": true
+    },
+    {
+      "from": "form-header",
+      "to": "form-group",
+      "type": "related",
+      "bidirectional": true
+    },
+    {
+      "from": "form-header",
+      "to": "title",
       "type": "related",
       "bidirectional": true
     },
@@ -912,6 +1254,96 @@
       "bidirectional": true
     },
     {
+      "from": "form-layout-grid",
+      "to": "layout-grid",
+      "type": "related",
+      "bidirectional": true
+    },
+    {
+      "from": "form-message",
+      "to": "message-popover",
+      "type": "related",
+      "bidirectional": true
+    },
+    {
+      "from": "form-message",
+      "to": "message-strip",
+      "type": "related",
+      "bidirectional": true
+    },
+    {
+      "from": "generic-tag",
+      "to": "token",
+      "type": "related",
+      "bidirectional": true
+    },
+    {
+      "from": "generic-tag",
+      "to": "info-label",
+      "type": "related",
+      "bidirectional": true
+    },
+    {
+      "from": "generic-tag",
+      "to": "object-status",
+      "type": "related",
+      "bidirectional": true
+    },
+    {
+      "from": "grid-list",
+      "to": "list",
+      "type": "related",
+      "bidirectional": true
+    },
+    {
+      "from": "grid-list",
+      "to": "table",
+      "type": "related",
+      "bidirectional": true
+    },
+    {
+      "from": "grid-list",
+      "to": "card",
+      "type": "related",
+      "bidirectional": true
+    },
+    {
+      "from": "horizontal-navigation",
+      "to": "shellbar",
+      "type": "related",
+      "bidirectional": true
+    },
+    {
+      "from": "horizontal-navigation",
+      "to": "tabs",
+      "type": "related",
+      "bidirectional": true
+    },
+    {
+      "from": "horizontal-navigation",
+      "to": "navigation-menu",
+      "type": "related",
+      "bidirectional": true
+    },
+    {
+      "from": "icon-tab-bar",
+      "to": "tabs",
+      "type": "related",
+      "bidirectional": true
+    },
+    {
+      "from": "icon-tab-bar",
+      "to": "toolbar",
+      "type": "related",
+      "bidirectional": true
+    },
+    {
+      "from": "icon-tab-bar",
+      "to": "segmented-button",
+      "type": "related",
+      "bidirectional": true
+    },
+    {
       "from": "icon",
       "to": "button",
       "type": "related",
@@ -924,8 +1356,44 @@
       "bidirectional": true
     },
     {
-      "from": "input",
-      "to": "input-group",
+      "from": "illustrated-message",
+      "to": "message-page",
+      "type": "related",
+      "bidirectional": true
+    },
+    {
+      "from": "illustrated-message",
+      "to": "message-strip",
+      "type": "related",
+      "bidirectional": true
+    },
+    {
+      "from": "info-label",
+      "to": "object-status",
+      "type": "related",
+      "bidirectional": true
+    },
+    {
+      "from": "info-label",
+      "to": "token",
+      "type": "related",
+      "bidirectional": true
+    },
+    {
+      "from": "input-group",
+      "to": "input",
+      "type": "related",
+      "bidirectional": true
+    },
+    {
+      "from": "input-group",
+      "to": "search-field",
+      "type": "related",
+      "bidirectional": true
+    },
+    {
+      "from": "input-group",
+      "to": "select",
       "type": "related",
       "bidirectional": true
     },
@@ -936,14 +1404,38 @@
       "bidirectional": true
     },
     {
-      "from": "list",
-      "to": "table",
+      "from": "layout-panel",
+      "to": "panel",
+      "type": "related",
+      "bidirectional": true
+    },
+    {
+      "from": "layout-panel",
+      "to": "card",
+      "type": "related",
+      "bidirectional": true
+    },
+    {
+      "from": "layout-panel",
+      "to": "section",
+      "type": "related",
+      "bidirectional": true
+    },
+    {
+      "from": "layout",
+      "to": "page",
+      "type": "related",
+      "bidirectional": true
+    },
+    {
+      "from": "layout",
+      "to": "layout-grid",
       "type": "related",
       "bidirectional": true
     },
     {
       "from": "list",
-      "to": "grid-list",
+      "to": "table",
       "type": "related",
       "bidirectional": true
     },
@@ -966,8 +1458,32 @@
       "bidirectional": true
     },
     {
-      "from": "menu",
-      "to": "action-sheet",
+      "from": "message-box",
+      "to": "message-strip",
+      "type": "related",
+      "bidirectional": true
+    },
+    {
+      "from": "message-box",
+      "to": "message-toast",
+      "type": "related",
+      "bidirectional": true
+    },
+    {
+      "from": "message-page",
+      "to": "message-strip",
+      "type": "related",
+      "bidirectional": true
+    },
+    {
+      "from": "message-popover",
+      "to": "message-strip",
+      "type": "related",
+      "bidirectional": true
+    },
+    {
+      "from": "message-popover",
+      "to": "popover",
       "type": "related",
       "bidirectional": true
     },
@@ -978,8 +1494,266 @@
       "bidirectional": true
     },
     {
-      "from": "message-strip",
-      "to": "form-message",
+      "from": "message-toast",
+      "to": "notification",
+      "type": "related",
+      "bidirectional": true
+    },
+    {
+      "from": "micro-process-flow",
+      "to": "wizard",
+      "type": "related",
+      "bidirectional": true
+    },
+    {
+      "from": "micro-process-flow",
+      "to": "progress-indicator",
+      "type": "related",
+      "bidirectional": true
+    },
+    {
+      "from": "navigation-list",
+      "to": "side-nav",
+      "type": "related",
+      "bidirectional": true
+    },
+    {
+      "from": "navigation-list",
+      "to": "menu",
+      "type": "related",
+      "bidirectional": true
+    },
+    {
+      "from": "navigation-menu",
+      "to": "menu",
+      "type": "related",
+      "bidirectional": true
+    },
+    {
+      "from": "navigation-menu",
+      "to": "shellbar",
+      "type": "related",
+      "bidirectional": true
+    },
+    {
+      "from": "navigation",
+      "to": "side-nav",
+      "type": "related",
+      "bidirectional": true
+    },
+    {
+      "from": "navigation",
+      "to": "vertical-nav",
+      "type": "related",
+      "bidirectional": true
+    },
+    {
+      "from": "navigation",
+      "to": "navigation-list",
+      "type": "related",
+      "bidirectional": true
+    },
+    {
+      "from": "notification",
+      "to": "message-strip",
+      "type": "related",
+      "bidirectional": true
+    },
+    {
+      "from": "numeric-content",
+      "to": "object-number",
+      "type": "related",
+      "bidirectional": true
+    },
+    {
+      "from": "numeric-content",
+      "to": "tile",
+      "type": "related",
+      "bidirectional": true
+    },
+    {
+      "from": "numeric-content",
+      "to": "counter",
+      "type": "related",
+      "bidirectional": true
+    },
+    {
+      "from": "object-attribute",
+      "to": "object-status",
+      "type": "related",
+      "bidirectional": true
+    },
+    {
+      "from": "object-attribute",
+      "to": "object-number",
+      "type": "related",
+      "bidirectional": true
+    },
+    {
+      "from": "object-attribute",
+      "to": "object-identifier",
+      "type": "related",
+      "bidirectional": true
+    },
+    {
+      "from": "object-identifier",
+      "to": "link",
+      "type": "related",
+      "bidirectional": true
+    },
+    {
+      "from": "object-identifier",
+      "to": "avatar",
+      "type": "related",
+      "bidirectional": true
+    },
+    {
+      "from": "object-list",
+      "to": "list",
+      "type": "related",
+      "bidirectional": true
+    },
+    {
+      "from": "object-list",
+      "to": "table",
+      "type": "related",
+      "bidirectional": true
+    },
+    {
+      "from": "object-list",
+      "to": "grid-list",
+      "type": "related",
+      "bidirectional": true
+    },
+    {
+      "from": "object-marker",
+      "to": "object-status",
+      "type": "related",
+      "bidirectional": true
+    },
+    {
+      "from": "object-marker",
+      "to": "badge",
+      "type": "related",
+      "bidirectional": true
+    },
+    {
+      "from": "object-marker",
+      "to": "icon",
+      "type": "related",
+      "bidirectional": true
+    },
+    {
+      "from": "object-number",
+      "to": "step-input",
+      "type": "related",
+      "bidirectional": true
+    },
+    {
+      "from": "object-status",
+      "to": "status-indicator",
+      "type": "related",
+      "bidirectional": true
+    },
+    {
+      "from": "page-footer",
+      "to": "bar",
+      "type": "related",
+      "bidirectional": true
+    },
+    {
+      "from": "page-footer",
+      "to": "toolbar",
+      "type": "related",
+      "bidirectional": true
+    },
+    {
+      "from": "page",
+      "to": "panel",
+      "type": "related",
+      "bidirectional": true
+    },
+    {
+      "from": "page",
+      "to": "section",
+      "type": "related",
+      "bidirectional": true
+    },
+    {
+      "from": "pagination",
+      "to": "table",
+      "type": "related",
+      "bidirectional": true
+    },
+    {
+      "from": "pagination",
+      "to": "list",
+      "type": "related",
+      "bidirectional": true
+    },
+    {
+      "from": "panel",
+      "to": "section",
+      "type": "related",
+      "bidirectional": true
+    },
+    {
+      "from": "product-switch",
+      "to": "shellbar",
+      "type": "related",
+      "bidirectional": true
+    },
+    {
+      "from": "product-switch",
+      "to": "user-menu",
+      "type": "related",
+      "bidirectional": true
+    },
+    {
+      "from": "product-switch",
+      "to": "menu",
+      "type": "related",
+      "bidirectional": true
+    },
+    {
+      "from": "progress-indicator",
+      "to": "wizard",
+      "type": "related",
+      "bidirectional": true
+    },
+    {
+      "from": "progress-indicator",
+      "to": "status-indicator",
+      "type": "related",
+      "bidirectional": true
+    },
+    {
+      "from": "prompt-input",
+      "to": "textarea",
+      "type": "related",
+      "bidirectional": true
+    },
+    {
+      "from": "prompt-input",
+      "to": "search-field",
+      "type": "related",
+      "bidirectional": true
+    },
+    {
+      "from": "quick-view",
+      "to": "popover",
+      "type": "related",
+      "bidirectional": true
+    },
+    {
+      "from": "quick-view",
+      "to": "card",
+      "type": "related",
+      "bidirectional": true
+    },
+    {
+      "from": "quick-view",
+      "to": "dialog",
       "type": "related",
       "bidirectional": true
     },
@@ -996,6 +1770,48 @@
       "bidirectional": true
     },
     {
+      "from": "rating-indicator",
+      "to": "slider",
+      "type": "related",
+      "bidirectional": true
+    },
+    {
+      "from": "rating-indicator",
+      "to": "step-input",
+      "type": "related",
+      "bidirectional": true
+    },
+    {
+      "from": "resizable-card-layout",
+      "to": "layout-grid",
+      "type": "related",
+      "bidirectional": true
+    },
+    {
+      "from": "resizable-card-layout",
+      "to": "card",
+      "type": "related",
+      "bidirectional": true
+    },
+    {
+      "from": "search-field",
+      "to": "input",
+      "type": "related",
+      "bidirectional": true
+    },
+    {
+      "from": "segmented-button",
+      "to": "tabs",
+      "type": "related",
+      "bidirectional": true
+    },
+    {
+      "from": "segmented-button",
+      "to": "radio",
+      "type": "related",
+      "bidirectional": true
+    },
+    {
       "from": "select",
       "to": "input",
       "type": "related",
@@ -1004,6 +1820,18 @@
     {
       "from": "select",
       "to": "menu",
+      "type": "related",
+      "bidirectional": true
+    },
+    {
+      "from": "settings",
+      "to": "form-group",
+      "type": "related",
+      "bidirectional": true
+    },
+    {
+      "from": "settings",
+      "to": "side-nav",
       "type": "related",
       "bidirectional": true
     },
@@ -1026,8 +1854,32 @@
       "bidirectional": true
     },
     {
-      "from": "table",
-      "to": "grid-list",
+      "from": "side-nav",
+      "to": "vertical-nav",
+      "type": "related",
+      "bidirectional": true
+    },
+    {
+      "from": "skeleton",
+      "to": "progress-indicator",
+      "type": "related",
+      "bidirectional": true
+    },
+    {
+      "from": "slider",
+      "to": "step-input",
+      "type": "related",
+      "bidirectional": true
+    },
+    {
+      "from": "step-input",
+      "to": "input",
+      "type": "related",
+      "bidirectional": true
+    },
+    {
+      "from": "switch",
+      "to": "segmented-button",
       "type": "related",
       "bidirectional": true
     },
@@ -1039,19 +1891,175 @@
     },
     {
       "from": "table",
-      "to": "pagination",
+      "to": "toolbar",
       "type": "related",
       "bidirectional": true
     },
     {
-      "from": "table",
-      "to": "toolbar",
+      "from": "tabs",
+      "to": "side-nav",
+      "type": "related",
+      "bidirectional": true
+    },
+    {
+      "from": "tabs",
+      "to": "wizard",
+      "type": "related",
+      "bidirectional": true
+    },
+    {
+      "from": "text",
+      "to": "title",
+      "type": "related",
+      "bidirectional": true
+    },
+    {
+      "from": "text",
+      "to": "link",
       "type": "related",
       "bidirectional": true
     },
     {
       "from": "textarea",
       "to": "form-item",
+      "type": "related",
+      "bidirectional": true
+    },
+    {
+      "from": "time",
+      "to": "timepicker",
+      "type": "related",
+      "bidirectional": true
+    },
+    {
+      "from": "title-bar",
+      "to": "bar",
+      "type": "related",
+      "bidirectional": true
+    },
+    {
+      "from": "title-bar",
+      "to": "action-bar",
+      "type": "related",
+      "bidirectional": true
+    },
+    {
+      "from": "title-bar",
+      "to": "title",
+      "type": "related",
+      "bidirectional": true
+    },
+    {
+      "from": "token",
+      "to": "tokenizer",
+      "type": "related",
+      "bidirectional": true
+    },
+    {
+      "from": "token",
+      "to": "badge",
+      "type": "related",
+      "bidirectional": true
+    },
+    {
+      "from": "tokenizer",
+      "to": "select",
+      "type": "related",
+      "bidirectional": true
+    },
+    {
+      "from": "tokenizer",
+      "to": "input-group",
+      "type": "related",
+      "bidirectional": true
+    },
+    {
+      "from": "tool-header",
+      "to": "shellbar",
+      "type": "related",
+      "bidirectional": true
+    },
+    {
+      "from": "tool-header",
+      "to": "action-bar",
+      "type": "related",
+      "bidirectional": true
+    },
+    {
+      "from": "tool-header",
+      "to": "bar",
+      "type": "related",
+      "bidirectional": true
+    },
+    {
+      "from": "tool-layout",
+      "to": "page",
+      "type": "related",
+      "bidirectional": true
+    },
+    {
+      "from": "tool-layout",
+      "to": "layout",
+      "type": "related",
+      "bidirectional": true
+    },
+    {
+      "from": "tool-layout",
+      "to": "tool-header",
+      "type": "related",
+      "bidirectional": true
+    },
+    {
+      "from": "toolbar",
+      "to": "tool-header",
+      "type": "related",
+      "bidirectional": true
+    },
+    {
+      "from": "tree",
+      "to": "side-nav",
+      "type": "related",
+      "bidirectional": true
+    },
+    {
+      "from": "upload-collection",
+      "to": "list",
+      "type": "related",
+      "bidirectional": true
+    },
+    {
+      "from": "user-menu",
+      "to": "menu",
+      "type": "related",
+      "bidirectional": true
+    },
+    {
+      "from": "user-menu",
+      "to": "avatar",
+      "type": "related",
+      "bidirectional": true
+    },
+    {
+      "from": "variant-management",
+      "to": "select",
+      "type": "related",
+      "bidirectional": true
+    },
+    {
+      "from": "variant-management",
+      "to": "popover",
+      "type": "related",
+      "bidirectional": true
+    },
+    {
+      "from": "vertical-nav",
+      "to": "navigation-list",
+      "type": "related",
+      "bidirectional": true
+    },
+    {
+      "from": "wizard",
+      "to": "dialog",
       "type": "related",
       "bidirectional": true
     },
@@ -1121,10 +2129,114 @@
     },
     {
       "from": "breadcrumb",
+      "to": "illustrated-message",
+      "type": "shares-styling",
+      "sharedVariables": [
+        "--fdLink_Line_Height"
+      ]
+    },
+    {
+      "from": "breadcrumb",
       "to": "link",
       "type": "shares-styling",
       "sharedVariables": [
         "--fdLink_Line_Height"
+      ]
+    },
+    {
+      "from": "breadcrumb",
+      "to": "scrollbar",
+      "type": "shares-styling",
+      "sharedVariables": [
+        "--fdLink_Line_Height"
+      ]
+    },
+    {
+      "from": "breadcrumb",
+      "to": "splitter",
+      "type": "shares-styling",
+      "sharedVariables": [
+        "--fdLink_Line_Height"
+      ]
+    },
+    {
+      "from": "illustrated-message",
+      "to": "link",
+      "type": "shares-styling",
+      "sharedVariables": [
+        "--fdLink_Line_Height"
+      ]
+    },
+    {
+      "from": "illustrated-message",
+      "to": "scrollbar",
+      "type": "shares-styling",
+      "sharedVariables": [
+        "--fdLink_Line_Height"
+      ]
+    },
+    {
+      "from": "illustrated-message",
+      "to": "splitter",
+      "type": "shares-styling",
+      "sharedVariables": [
+        "--fdLink_Line_Height"
+      ]
+    },
+    {
+      "from": "link",
+      "to": "scrollbar",
+      "type": "shares-styling",
+      "sharedVariables": [
+        "--fdLink_Line_Height"
+      ]
+    },
+    {
+      "from": "link",
+      "to": "splitter",
+      "type": "shares-styling",
+      "sharedVariables": [
+        "--fdLink_Line_Height"
+      ]
+    },
+    {
+      "from": "scrollbar",
+      "to": "splitter",
+      "type": "shares-styling",
+      "sharedVariables": [
+        "--fdLink_Line_Height"
+      ]
+    },
+    {
+      "from": "button-split",
+      "to": "button",
+      "type": "shares-styling",
+      "sharedVariables": [
+        "--fdButton_Ghost_Background"
+      ]
+    },
+    {
+      "from": "button-split",
+      "to": "input-group",
+      "type": "shares-styling",
+      "sharedVariables": [
+        "--fdButtonPrioritizedBorderColor"
+      ]
+    },
+    {
+      "from": "button-split",
+      "to": "pagination",
+      "type": "shares-styling",
+      "sharedVariables": [
+        "--fdButtonPrioritizedBorderColor"
+      ]
+    },
+    {
+      "from": "button-split",
+      "to": "product-switch",
+      "type": "shares-styling",
+      "sharedVariables": [
+        "--fdButtonPrioritizedBorderColor"
       ]
     },
     {
@@ -1136,16 +2248,256 @@
       ]
     },
     {
-      "from": "button",
-      "to": "feed-input",
+      "from": "button-split",
+      "to": "shellbar",
       "type": "shares-styling",
       "sharedVariables": [
-        "--fdButton_Clickable_Height"
+        "--fdButtonPrioritizedBorderColor"
+      ]
+    },
+    {
+      "from": "button-split",
+      "to": "tile",
+      "type": "shares-styling",
+      "sharedVariables": [
+        "--fdButtonPrioritizedBorderColor"
+      ]
+    },
+    {
+      "from": "button",
+      "to": "input-group",
+      "type": "shares-styling",
+      "sharedVariables": [
+        "--fdButtonPrioritizedBorderColor"
+      ]
+    },
+    {
+      "from": "button",
+      "to": "pagination",
+      "type": "shares-styling",
+      "sharedVariables": [
+        "--fdButtonPrioritizedBorderColor"
+      ]
+    },
+    {
+      "from": "button",
+      "to": "product-switch",
+      "type": "shares-styling",
+      "sharedVariables": [
+        "--fdButtonPrioritizedBorderColor"
+      ]
+    },
+    {
+      "from": "button",
+      "to": "segmented-button",
+      "type": "shares-styling",
+      "sharedVariables": [
+        "--fdButtonPrioritizedBorderColor"
       ]
     },
     {
       "from": "button",
       "to": "shellbar",
+      "type": "shares-styling",
+      "sharedVariables": [
+        "--fdButtonPrioritizedBorderColor"
+      ]
+    },
+    {
+      "from": "button",
+      "to": "tile",
+      "type": "shares-styling",
+      "sharedVariables": [
+        "--fdButtonPrioritizedBorderColor"
+      ]
+    },
+    {
+      "from": "input-group",
+      "to": "pagination",
+      "type": "shares-styling",
+      "sharedVariables": [
+        "--fdButtonPrioritizedBorderColor"
+      ]
+    },
+    {
+      "from": "input-group",
+      "to": "product-switch",
+      "type": "shares-styling",
+      "sharedVariables": [
+        "--fdButtonPrioritizedBorderColor"
+      ]
+    },
+    {
+      "from": "input-group",
+      "to": "segmented-button",
+      "type": "shares-styling",
+      "sharedVariables": [
+        "--fdButtonPrioritizedBorderColor"
+      ]
+    },
+    {
+      "from": "input-group",
+      "to": "shellbar",
+      "type": "shares-styling",
+      "sharedVariables": [
+        "--fdButtonPrioritizedBorderColor"
+      ]
+    },
+    {
+      "from": "input-group",
+      "to": "tile",
+      "type": "shares-styling",
+      "sharedVariables": [
+        "--fdButtonPrioritizedBorderColor"
+      ]
+    },
+    {
+      "from": "pagination",
+      "to": "product-switch",
+      "type": "shares-styling",
+      "sharedVariables": [
+        "--fdButtonPrioritizedBorderColor"
+      ]
+    },
+    {
+      "from": "pagination",
+      "to": "segmented-button",
+      "type": "shares-styling",
+      "sharedVariables": [
+        "--fdButtonPrioritizedBorderColor"
+      ]
+    },
+    {
+      "from": "pagination",
+      "to": "shellbar",
+      "type": "shares-styling",
+      "sharedVariables": [
+        "--fdButtonPrioritizedBorderColor"
+      ]
+    },
+    {
+      "from": "pagination",
+      "to": "tile",
+      "type": "shares-styling",
+      "sharedVariables": [
+        "--fdButtonPrioritizedBorderColor"
+      ]
+    },
+    {
+      "from": "product-switch",
+      "to": "segmented-button",
+      "type": "shares-styling",
+      "sharedVariables": [
+        "--fdButtonPrioritizedBorderColor"
+      ]
+    },
+    {
+      "from": "product-switch",
+      "to": "shellbar",
+      "type": "shares-styling",
+      "sharedVariables": [
+        "--fdButtonPrioritizedBorderColor"
+      ]
+    },
+    {
+      "from": "product-switch",
+      "to": "tile",
+      "type": "shares-styling",
+      "sharedVariables": [
+        "--fdButtonPrioritizedBorderColor"
+      ]
+    },
+    {
+      "from": "segmented-button",
+      "to": "shellbar",
+      "type": "shares-styling",
+      "sharedVariables": [
+        "--fdButtonPrioritizedBorderColor"
+      ]
+    },
+    {
+      "from": "segmented-button",
+      "to": "tile",
+      "type": "shares-styling",
+      "sharedVariables": [
+        "--fdButtonPrioritizedBorderColor"
+      ]
+    },
+    {
+      "from": "shellbar",
+      "to": "tile",
+      "type": "shares-styling",
+      "sharedVariables": [
+        "--fdButtonPrioritizedBorderColor"
+      ]
+    },
+    {
+      "from": "button-split",
+      "to": "carousel",
+      "type": "shares-styling",
+      "sharedVariables": [
+        "--fdButton_Focus_Border_Radius"
+      ]
+    },
+    {
+      "from": "button",
+      "to": "carousel",
+      "type": "shares-styling",
+      "sharedVariables": [
+        "--fdButton_Focus_Border_Radius"
+      ]
+    },
+    {
+      "from": "carousel",
+      "to": "input-group",
+      "type": "shares-styling",
+      "sharedVariables": [
+        "--fdButton_Focus_Border_Radius"
+      ]
+    },
+    {
+      "from": "carousel",
+      "to": "pagination",
+      "type": "shares-styling",
+      "sharedVariables": [
+        "--fdButton_Focus_Border_Radius"
+      ]
+    },
+    {
+      "from": "carousel",
+      "to": "product-switch",
+      "type": "shares-styling",
+      "sharedVariables": [
+        "--fdButton_Focus_Border_Radius"
+      ]
+    },
+    {
+      "from": "carousel",
+      "to": "segmented-button",
+      "type": "shares-styling",
+      "sharedVariables": [
+        "--fdButton_Focus_Border_Radius"
+      ]
+    },
+    {
+      "from": "carousel",
+      "to": "shellbar",
+      "type": "shares-styling",
+      "sharedVariables": [
+        "--fdButton_Focus_Border_Radius"
+      ]
+    },
+    {
+      "from": "carousel",
+      "to": "tile",
+      "type": "shares-styling",
+      "sharedVariables": [
+        "--fdButton_Focus_Border_Radius"
+      ]
+    },
+    {
+      "from": "button",
+      "to": "feed-input",
       "type": "shares-styling",
       "sharedVariables": [
         "--fdButton_Clickable_Height"
@@ -1181,14 +2533,6 @@
       "type": "shares-styling",
       "sharedVariables": [
         "--fdButton_Min_Width"
-      ]
-    },
-    {
-      "from": "button",
-      "to": "pagination",
-      "type": "shares-styling",
-      "sharedVariables": [
-        "--fdButton_Outline_Offset"
       ]
     },
     {
@@ -1232,27 +2576,75 @@
       ]
     },
     {
-      "from": "card",
-      "to": "object-status",
+      "from": "button",
+      "to": "message-popover",
       "type": "shares-styling",
       "sharedVariables": [
-        "--fdObjectStatus_Inverted_Border_Radius"
+        "--fdButtonColor"
       ]
     },
     {
-      "from": "carousel",
-      "to": "message-page",
+      "from": "button",
+      "to": "message-strip",
       "type": "shares-styling",
       "sharedVariables": [
-        "--fdMessage_Page_Container_Corner_Radius"
+        "--fdButtonColor"
       ]
     },
     {
-      "from": "carousel",
+      "from": "icon-tab-bar",
+      "to": "message-popover",
+      "type": "shares-styling",
+      "sharedVariables": [
+        "--fdButtonColor"
+      ]
+    },
+    {
+      "from": "icon-tab-bar",
+      "to": "message-strip",
+      "type": "shares-styling",
+      "sharedVariables": [
+        "--fdButtonColor"
+      ]
+    },
+    {
+      "from": "icon-tab-bar",
       "to": "shellbar",
       "type": "shares-styling",
       "sharedVariables": [
-        "--fdButton_Focus_Border_Radius"
+        "--fdButtonColor"
+      ]
+    },
+    {
+      "from": "message-popover",
+      "to": "message-strip",
+      "type": "shares-styling",
+      "sharedVariables": [
+        "--fdButtonColor"
+      ]
+    },
+    {
+      "from": "message-popover",
+      "to": "shellbar",
+      "type": "shares-styling",
+      "sharedVariables": [
+        "--fdButtonColor"
+      ]
+    },
+    {
+      "from": "message-strip",
+      "to": "shellbar",
+      "type": "shares-styling",
+      "sharedVariables": [
+        "--fdButtonColor"
+      ]
+    },
+    {
+      "from": "button",
+      "to": "dynamic-page",
+      "type": "shares-styling",
+      "sharedVariables": [
+        "--fdButtonBackgroundColor"
       ]
     },
     {
@@ -1288,51 +2680,27 @@
       ]
     },
     {
-      "from": "icon-tab-bar",
-      "to": "message-popover",
+      "from": "button",
+      "to": "object-status",
       "type": "shares-styling",
       "sharedVariables": [
-        "--fdButtonBackgroundColor"
+        "--fdElementTextColor"
       ]
     },
     {
-      "from": "icon-tab-bar",
-      "to": "message-strip",
+      "from": "card",
+      "to": "object-status",
       "type": "shares-styling",
       "sharedVariables": [
-        "--fdButtonBackgroundColor"
+        "--fdObjectStatus_Inverted_Border_Radius"
       ]
     },
     {
-      "from": "icon-tab-bar",
-      "to": "shellbar",
+      "from": "carousel",
+      "to": "message-page",
       "type": "shares-styling",
       "sharedVariables": [
-        "--fdButtonBackgroundColor"
-      ]
-    },
-    {
-      "from": "message-popover",
-      "to": "message-strip",
-      "type": "shares-styling",
-      "sharedVariables": [
-        "--fdButtonBackgroundColor"
-      ]
-    },
-    {
-      "from": "message-popover",
-      "to": "shellbar",
-      "type": "shares-styling",
-      "sharedVariables": [
-        "--fdButtonBackgroundColor"
-      ]
-    },
-    {
-      "from": "message-strip",
-      "to": "shellbar",
-      "type": "shares-styling",
-      "sharedVariables": [
-        "--fdButtonBackgroundColor"
+        "--fdMessage_Page_Container_Corner_Radius"
       ]
     },
     {
@@ -1352,6 +2720,14 @@
       ]
     },
     {
+      "from": "icon-tab-bar",
+      "to": "list",
+      "type": "shares-styling",
+      "sharedVariables": [
+        "--fdList_Navigation_Link_Padding_Left"
+      ]
+    },
+    {
       "from": "icon",
       "to": "message-box",
       "type": "shares-styling",
@@ -1360,11 +2736,19 @@
       ]
     },
     {
-      "from": "input-group",
-      "to": "shellbar",
+      "from": "list",
+      "to": "object-list",
       "type": "shares-styling",
       "sharedVariables": [
-        "--fdInputGroup_Input_Background"
+        "--fdList_Item_Height"
+      ]
+    },
+    {
+      "from": "list",
+      "to": "tree",
+      "type": "shares-styling",
+      "sharedVariables": [
+        "--fdList_Button_Spacing"
       ]
     },
     {
@@ -2676,63 +4060,63 @@
   ],
   "analytics": {
     "totalComponents": 120,
-    "totalRelationships": 307,
+    "totalRelationships": 522,
     "hubComponents": [
       {
         "id": "button",
         "name": "Button",
-        "connections": 15
-      },
-      {
-        "id": "user-menu",
-        "name": "User Menu",
-        "connections": 15
+        "connections": 25
       },
       {
         "id": "shellbar",
         "name": "Shellbar",
-        "connections": 13
-      },
-      {
-        "id": "dynamic-page",
-        "name": "Dynamic Page",
-        "connections": 12
-      },
-      {
-        "id": "settings",
-        "name": "Settings",
-        "connections": 11
+        "connections": 25
       },
       {
         "id": "carousel",
         "name": "Carousel",
-        "connections": 10
+        "connections": 19
       },
       {
-        "id": "layout",
-        "name": "Layout",
-        "connections": 10
+        "id": "product-switch",
+        "name": "Product Switch",
+        "connections": 19
       },
       {
-        "id": "panel",
-        "name": "Panel",
-        "connections": 10
+        "id": "user-menu",
+        "name": "User Menu",
+        "connections": 18
       },
       {
-        "id": "variant-management",
-        "name": "Variant Management",
-        "connections": 10
+        "id": "dynamic-page",
+        "name": "Dynamic Page",
+        "connections": 17
       },
       {
-        "id": "avatar-group",
-        "name": "Avatar Group",
-        "connections": 9
+        "id": "tile",
+        "name": "Tile",
+        "connections": 16
+      },
+      {
+        "id": "bar",
+        "name": "Bar",
+        "connections": 15
+      },
+      {
+        "id": "layout-grid",
+        "name": "Layout Grid",
+        "connections": 14
+      },
+      {
+        "id": "message-strip",
+        "name": "Message Strip",
+        "connections": 14
       }
     ],
     "relationshipTypes": {
       "imports": 5,
-      "related": 50,
-      "shares-styling": 53,
+      "related": 218,
+      "shares-styling": 100,
       "similar": 199
     }
   }
