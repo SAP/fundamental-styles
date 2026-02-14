@@ -26,7 +26,24 @@
           "fd-table--hoverable",
           "fd-table--activable",
           "fd-table--focusable",
-          "fd-table--hidden"
+          "fd-table--hidden",
+          "fd-table--fixed",
+          "fd-table--fixed-end",
+          "fd-table--pop-in",
+          "fd-table--title",
+          "fd-table--main",
+          "fd-table--secondary",
+          "fd-table--no-vertical-borders",
+          "fd-table--no-horizontal-borders",
+          "fd-table--no-vertical-border",
+          "fd-table--no-horizontal-border",
+          "fd-table--responsive",
+          "fd-table--no-outer-border",
+          "fd-table--group",
+          "fd-table--tree",
+          "fd-table--expand",
+          "fd-table--open",
+          "fd-table--condensed"
         ]
       },
       "description": "Optional modifier classes"
@@ -49,7 +66,8 @@
                 "enum": [
                   "fd-table__cell--non-interactive",
                   "fd-table__cell--checkbox",
-                  "fd-table__cell--status-indicator"
+                  "fd-table__cell--status-indicator",
+                  "fd-table__cell--group"
                 ]
               },
               "description": "Available modifiers for this element"
@@ -63,6 +81,17 @@
             "class": {
               "const": "fd-table__row",
               "description": "Element class name"
+            },
+            "modifiers": {
+              "type": "array",
+              "items": {
+                "enum": [
+                  "fd-table__row--hoverable",
+                  "fd-table__row--secondary",
+                  "fd-table__row--activable"
+                ]
+              },
+              "description": "Available modifiers for this element"
             }
           }
         },
@@ -179,6 +208,25 @@
               "items": {
                 "enum": [
                   "fd-table__item--clickable"
+                ]
+              },
+              "description": "Available modifiers for this element"
+            }
+          }
+        },
+        "fd-table__expand": {
+          "type": "object",
+          "description": "expand element",
+          "properties": {
+            "class": {
+              "const": "fd-table__expand",
+              "description": "Element class name"
+            },
+            "modifiers": {
+              "type": "array",
+              "items": {
+                "enum": [
+                  "fd-table__expand--open"
                 ]
               },
               "description": "Available modifiers for this element"

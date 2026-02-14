@@ -24,7 +24,8 @@
           "fd-toolbar--info",
           "fd-toolbar--active",
           "fd-toolbar--fade-in",
-          "fd-toolbar--fade-out"
+          "fd-toolbar--fade-out",
+          "fd-toolbar--title-bar"
         ]
       },
       "description": "Optional modifier classes"

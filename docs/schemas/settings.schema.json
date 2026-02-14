@@ -15,7 +15,9 @@
         "enum": [
           "fd-settings--footer",
           "fd-settings--no-padding",
-          "fd-settings--no-background"
+          "fd-settings--no-background",
+          "fd-settings--md",
+          "fd-settings--sm"
         ]
       },
       "description": "Optional modifier classes"

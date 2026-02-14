@@ -13,8 +13,18 @@
       "type": "array",
       "items": {
         "enum": [
-          "fd-info-label--accent-color-",
-          "fd-info-label--display"
+          "fd-info-label--display",
+          "fd-info-label--accent-color-1",
+          "fd-info-label--accent-color-2",
+          "fd-info-label--accent-color-3",
+          "fd-info-label--accent-color-4",
+          "fd-info-label--accent-color-5",
+          "fd-info-label--accent-color-6",
+          "fd-info-label--accent-color-7",
+          "fd-info-label--accent-color-8",
+          "fd-info-label--accent-color-9",
+          "fd-info-label--accent-color-10",
+          "fd-info-label--numeric"
         ]
       },
       "description": "Optional modifier classes"

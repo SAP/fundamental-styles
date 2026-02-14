@@ -1,0 +1,44 @@
+# fundamental-styles
+
+> CSS framework for SAP Design System with 120 UI components.
+
+## What This Is
+
+HTML/CSS component library for building enterprise applications. Framework-agnostic, works with Angular, React, Vue, or vanilla JS.
+
+## Packages
+
+- fundamental-styles: 120 UI components (buttons, forms, tables, dialogs)
+- @fundamental-styles/common-css: Utility classes (margins, padding, flex)
+- @fundamental-styles/cx: Customer Experience components
+
+## AI Resources
+
+- /CLAUDE.md - Quick reference with examples
+- /docs/ai-component-index.md - Full component guide (120 components)
+- /docs/component-catalog.json - Machine-readable component catalog
+- /docs/utility-classes.json - Utility classes (227 classes, 13 categories)
+- /docs/component-relationships.json - Component dependencies (307 relationships)
+- /docs/schemas/*.json - JSON schema per component
+
+## Quick Start
+
+```html
+<link href="node_modules/fundamental-styles/dist/theming/sap_horizon.css" rel="stylesheet">
+<link href="node_modules/fundamental-styles/dist/button.css" rel="stylesheet">
+
+<button class="fd-button fd-button--emphasized">Primary Button</button>
+```
+
+## Naming Conventions
+
+- Components: `fd-{component}` (e.g., fd-button, fd-input, fd-table)
+- Modifiers: `fd-{component}--{modifier}` (e.g., fd-button--emphasized)
+- Elements: `fd-{component}__{element}` (e.g., fd-table__cell)
+- Utilities: `sap-{category}-{value}` (e.g., sap-margin-small, sap-flex--center)
+
+## Links
+
+- Storybook: https://sap.github.io/fundamental-styles/
+- GitHub: https://github.com/SAP/fundamental-styles
+- NPM: https://www.npmjs.com/package/fundamental-styles

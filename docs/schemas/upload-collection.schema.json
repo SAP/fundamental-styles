@@ -14,7 +14,11 @@
       "items": {
         "enum": [
           "fd-upload-collection--interactive",
-          "fd-upload-collection--sm"
+          "fd-upload-collection--sm",
+          "fd-upload-collection--byline",
+          "fd-upload-collection--2-col",
+          "fd-upload-collection--wrap",
+          "fd-upload-collection--more"
         ]
       },
       "description": "Optional modifier classes"

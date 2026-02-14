@@ -16,7 +16,8 @@
           "fd-tool-header--menu",
           "fd-tool-header--center",
           "fd-tool-header--actions",
-          "fd-tool-header--hidden"
+          "fd-tool-header--hidden",
+          "fd-tool-header--compact"
         ]
       },
       "description": "Optional modifier classes"

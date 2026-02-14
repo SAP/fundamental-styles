@@ -31,7 +31,6 @@
           "fd-calendar--appointment",
           "fd-calendar--work",
           "fd-calendar--non-work",
-          "fd-calendar--placeholder-",
           "fd-calendar--vertical"
         ]
       },

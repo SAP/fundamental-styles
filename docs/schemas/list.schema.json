@@ -8,6 +8,196 @@
     "baseClass": {
       "const": "fd-list",
       "description": "Required base class"
+    },
+    "modifiers": {
+      "type": "array",
+      "items": {
+        "enum": [
+          "fd-list--unread",
+          "fd-list--no-data",
+          "fd-list--interractive",
+          "fd-list--interactive",
+          "fd-list--action",
+          "fd-list--growing",
+          "fd-list--inactive",
+          "fd-list--positive",
+          "fd-list--critical",
+          "fd-list--negative",
+          "fd-list--informative",
+          "fd-list--right",
+          "fd-list--left",
+          "fd-list--error",
+          "fd-list--warning",
+          "fd-list--success",
+          "fd-list--information",
+          "fd-list--no-border",
+          "fd-list--has-message",
+          "fd-list--dropdown",
+          "fd-list--multi-input",
+          "fd-list--no-wrap",
+          "fd-list--byline",
+          "fd-list--2-col",
+          "fd-list--wrap",
+          "fd-list--more",
+          "fd-list--subline",
+          "fd-list--truncate",
+          "fd-list--message-view",
+          "fd-list--suggestion",
+          "fd-list--navigation",
+          "fd-list--navigation-indication",
+          "fd-list--navigation-indicator",
+          "fd-list--selection",
+          "fd-list--unread-indicator",
+          "fd-list--search-results"
+        ]
+      },
+      "description": "Optional modifier classes"
+    },
+    "elements": {
+      "type": "object",
+      "description": "Optional element classes with their available modifiers",
+      "properties": {
+        "fd-list__item": {
+          "type": "object",
+          "description": "item element",
+          "properties": {
+            "class": {
+              "const": "fd-list__item",
+              "description": "Element class name"
+            },
+            "modifiers": {
+              "type": "array",
+              "items": {
+                "enum": [
+                  "fd-list__item--growing",
+                  "fd-list__item--action",
+                  "fd-list__item--link"
+                ]
+              },
+              "description": "Available modifiers for this element"
+            }
+          }
+        },
+        "fd-list__group-header": {
+          "type": "object",
+          "description": "group-header element",
+          "properties": {
+            "class": {
+              "const": "fd-list__group-header",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-list__footer": {
+          "type": "object",
+          "description": "footer element",
+          "properties": {
+            "class": {
+              "const": "fd-list__footer",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-list__title": {
+          "type": "object",
+          "description": "title element",
+          "properties": {
+            "class": {
+              "const": "fd-list__title",
+              "description": "Element class name"
+            },
+            "modifiers": {
+              "type": "array",
+              "items": {
+                "enum": [
+                  "fd-list__title--scope"
+                ]
+              },
+              "description": "Available modifiers for this element"
+            }
+          }
+        },
+        "fd-list__secondary": {
+          "type": "object",
+          "description": "secondary element",
+          "properties": {
+            "class": {
+              "const": "fd-list__secondary",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-list__icon": {
+          "type": "object",
+          "description": "icon element",
+          "properties": {
+            "class": {
+              "const": "fd-list__icon",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-list__link": {
+          "type": "object",
+          "description": "link element",
+          "properties": {
+            "class": {
+              "const": "fd-list__link",
+              "description": "Element class name"
+            },
+            "modifiers": {
+              "type": "array",
+              "items": {
+                "enum": [
+                  "fd-list__link--navigation-indicator"
+                ]
+              },
+              "description": "Available modifiers for this element"
+            }
+          }
+        },
+        "fd-list__bold": {
+          "type": "object",
+          "description": "bold element",
+          "properties": {
+            "class": {
+              "const": "fd-list__bold",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-list__message": {
+          "type": "object",
+          "description": "message element",
+          "properties": {
+            "class": {
+              "const": "fd-list__message",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-list__infinite-scroll": {
+          "type": "object",
+          "description": "infinite-scroll element",
+          "properties": {
+            "class": {
+              "const": "fd-list__infinite-scroll",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-list__item-counter": {
+          "type": "object",
+          "description": "item-counter element",
+          "properties": {
+            "class": {
+              "const": "fd-list__item-counter",
+              "description": "Element class name"
+            }
+          }
+        }
+      },
+      "additionalProperties": false
     }
   },
   "required": [

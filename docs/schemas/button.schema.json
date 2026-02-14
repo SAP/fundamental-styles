@@ -20,7 +20,14 @@
           "fd-button--decisive",
           "fd-button--tool-header",
           "fd-button--nested",
-          "fd-button--nested-square"
+          "fd-button--nested-square",
+          "fd-button--emphasized",
+          "fd-button--negative",
+          "fd-button--positive",
+          "fd-button--transparent",
+          "fd-button--ghost",
+          "fd-button--toggled",
+          "fd-button--compact"
         ]
       },
       "description": "Optional modifier classes"

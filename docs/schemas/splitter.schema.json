@@ -17,7 +17,12 @@
           "fd-splitter--vertical",
           "fd-splitter--translucent",
           "fd-splitter--solid",
-          "fd-splitter--active"
+          "fd-splitter--active",
+          "fd-splitter--subtle",
+          "fd-splitter--undecorated",
+          "fd-splitter--emphasized",
+          "fd-splitter--touch-target",
+          "fd-splitter--inverted"
         ]
       },
       "description": "Optional modifier classes"
@@ -132,6 +137,16 @@
           "properties": {
             "class": {
               "const": "fd-splitter__pagination-item",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-splitter__content": {
+          "type": "object",
+          "description": "content element",
+          "properties": {
+            "class": {
+              "const": "fd-splitter__content",
               "description": "Element class name"
             }
           }

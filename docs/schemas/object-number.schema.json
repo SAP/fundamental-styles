@@ -16,7 +16,11 @@
           "fd-object-number--bold",
           "fd-object-number--large",
           "fd-object-number--inverted",
-          "fd-object-number--interactive"
+          "fd-object-number--interactive",
+          "fd-object-number--negative",
+          "fd-object-number--critical",
+          "fd-object-number--positive",
+          "fd-object-number--informative"
         ]
       },
       "description": "Optional modifier classes"

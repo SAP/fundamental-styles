@@ -14,7 +14,11 @@
       "items": {
         "enum": [
           "fd-progress-indicator--mobile",
-          "fd-progress-indicator--display"
+          "fd-progress-indicator--display",
+          "fd-progress-indicator--informative",
+          "fd-progress-indicator--positive",
+          "fd-progress-indicator--critical",
+          "fd-progress-indicator--negative"
         ]
       },
       "description": "Optional modifier classes"

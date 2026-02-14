@@ -21,9 +21,18 @@
 
 Fundamental Library Styles is a lightweight presentation layer that can be used in conjunction with any UI framework, such as Angular, React, Vue, etc. By utilizing the Fundamental Styles library, which includes a collection of stylesheets and HTML tags, developers can create visually consistent and professional-looking Fiori applications in any web-based technology of their choice.
 
-> **For AI Agents**: See the [AI Component Index](docs/ai-component-index.md) for all 120 components with structured metadata. [Documentation System](docs/AI_DOCUMENTATION_SYSTEM.md) explains the automated documentation architecture.
+## For AI Agents
 
+Quick reference and machine-readable documentation:
 
+| Resource | Description |
+|----------|-------------|
+| [CLAUDE.md](CLAUDE.md) | Quick reference with examples |
+| [llms.txt](llms.txt) | Standard AI discovery file |
+| [docs/ai-component-index.md](docs/ai-component-index.md) | Full component guide (120 components) |
+| [docs/component-catalog.json](docs/component-catalog.json) | Machine-readable component catalog |
+| [docs/utility-classes.json](docs/utility-classes.json) | Utility classes (227 classes) |
+| [docs/component-relationships.json](docs/component-relationships.json) | Component dependencies |
 
 We are also working on [Angular](https://github.com/SAP/fundamental-ngx)
 , [React](https://github.com/SAP/fundamental-react) and [Vue](https://github.com/SAP/fundamental-vue) implementations.

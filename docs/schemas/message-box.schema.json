@@ -14,7 +14,12 @@
       "items": {
         "enum": [
           "fd-message-box--mobile",
-          "fd-message-box--active"
+          "fd-message-box--active",
+          "fd-message-box--information",
+          "fd-message-box--error",
+          "fd-message-box--success",
+          "fd-message-box--warning",
+          "fd-message-box--confirmation"
         ]
       },
       "description": "Optional modifier classes"

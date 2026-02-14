@@ -15,7 +15,13 @@
         "enum": [
           "fd-tree--active",
           "fd-tree--wrap",
-          "fd-tree--navigation"
+          "fd-tree--navigation",
+          "fd-tree--error",
+          "fd-tree--warning",
+          "fd-tree--success",
+          "fd-tree--no-border",
+          "fd-tree--no-data",
+          "fd-tree--independent-multi-selection"
         ]
       },
       "description": "Optional modifier classes"

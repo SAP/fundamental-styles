@@ -18,7 +18,12 @@
           "fd-rating-indicator--display-mode",
           "fd-rating-indicator--non-interactive",
           "fd-rating-indicator--half-star",
-          "fd-rating-indicator--zero-rating"
+          "fd-rating-indicator--zero-rating",
+          "fd-rating-indicator--lg",
+          "fd-rating-indicator--xs",
+          "fd-rating-indicator--sm",
+          "fd-rating-indicator--compact",
+          "fd-rating-indicator--condensed"
         ]
       },
       "description": "Optional modifier classes"

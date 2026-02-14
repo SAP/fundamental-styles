@@ -1,7 +1,7 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "version": "0.41.0",
-  "lastUpdated": "2026-02-13",
+  "lastUpdated": "2026-02-14",
   "description": "Machine-readable catalog of Fundamental Library Styles components",
   "generatedBy": "scripts/generate-ai-metadata.js",
   "packages": {
@@ -399,6 +399,94 @@
             {
               "class": "fd-avatar--group-type",
               "description": "group-type variant"
+            },
+            {
+              "class": "fd-avatar--md",
+              "description": "md variant"
+            },
+            {
+              "class": "fd-avatar--circle",
+              "description": "circle variant"
+            },
+            {
+              "class": "fd-avatar--accent-color-1",
+              "description": "accent-color-1 variant"
+            },
+            {
+              "class": "fd-avatar--accent-color-2",
+              "description": "accent-color-2 variant"
+            },
+            {
+              "class": "fd-avatar--thumbnail",
+              "description": "thumbnail variant"
+            },
+            {
+              "class": "fd-avatar--accent-color-3",
+              "description": "accent-color-3 variant"
+            },
+            {
+              "class": "fd-avatar--border",
+              "description": "border variant"
+            },
+            {
+              "class": "fd-avatar--overflow",
+              "description": "overflow variant"
+            },
+            {
+              "class": "fd-avatar--lg",
+              "description": "lg variant"
+            },
+            {
+              "class": "fd-avatar--xs",
+              "description": "xs variant"
+            },
+            {
+              "class": "fd-avatar--sm",
+              "description": "sm variant"
+            },
+            {
+              "class": "fd-avatar--xl",
+              "description": "xl variant"
+            },
+            {
+              "class": "fd-avatar--accent-color-5",
+              "description": "accent-color-5 variant"
+            },
+            {
+              "class": "fd-avatar--accent-color-8",
+              "description": "accent-color-8 variant"
+            },
+            {
+              "class": "fd-avatar--40",
+              "description": "40 variant"
+            },
+            {
+              "class": "fd-avatar--accent-color-4",
+              "description": "accent-color-4 variant"
+            },
+            {
+              "class": "fd-avatar--accent-color-6",
+              "description": "accent-color-6 variant"
+            },
+            {
+              "class": "fd-avatar--96",
+              "description": "96 variant"
+            },
+            {
+              "class": "fd-avatar--accent-color-7",
+              "description": "accent-color-7 variant"
+            },
+            {
+              "class": "fd-avatar--accent-color-9",
+              "description": "accent-color-9 variant"
+            },
+            {
+              "class": "fd-avatar--accent-color-10",
+              "description": "accent-color-10 variant"
+            },
+            {
+              "class": "fd-avatar--transparent",
+              "description": "transparent variant"
             }
           ],
           "elements": [
@@ -472,10 +560,6 @@
               "description": "interactive variant"
             },
             {
-              "class": "fd-avatar--indication-",
-              "description": "indication- variant"
-            },
-            {
               "class": "fd-avatar--circle",
               "description": "circle variant"
             },
@@ -508,12 +592,128 @@
               "description": "overflow variant"
             },
             {
-              "class": "fd-avatar--accent-color-",
-              "description": "accent-color- variant"
+              "class": "fd-avatar--shell",
+              "description": "shell variant"
             },
             {
-              "class": "fd-avatar--indication-color-",
-              "description": "indication-color- variant"
+              "class": "fd-avatar--accent-color-1",
+              "description": "accent-color-1 variant"
+            },
+            {
+              "class": "fd-avatar--md",
+              "description": "md variant"
+            },
+            {
+              "class": "fd-avatar--accent-color-2",
+              "description": "accent-color-2 variant"
+            },
+            {
+              "class": "fd-avatar--accent-color-3",
+              "description": "accent-color-3 variant"
+            },
+            {
+              "class": "fd-avatar--accent-color-4",
+              "description": "accent-color-4 variant"
+            },
+            {
+              "class": "fd-avatar--accent-color-5",
+              "description": "accent-color-5 variant"
+            },
+            {
+              "class": "fd-avatar--accent-color-6",
+              "description": "accent-color-6 variant"
+            },
+            {
+              "class": "fd-avatar--accent-color-7",
+              "description": "accent-color-7 variant"
+            },
+            {
+              "class": "fd-avatar--accent-color-8",
+              "description": "accent-color-8 variant"
+            },
+            {
+              "class": "fd-avatar--accent-color-9",
+              "description": "accent-color-9 variant"
+            },
+            {
+              "class": "fd-avatar--accent-color-10",
+              "description": "accent-color-10 variant"
+            },
+            {
+              "class": "fd-avatar--indication-color-1",
+              "description": "indication-color-1 variant"
+            },
+            {
+              "class": "fd-avatar--indication-color-2",
+              "description": "indication-color-2 variant"
+            },
+            {
+              "class": "fd-avatar--indication-color-3",
+              "description": "indication-color-3 variant"
+            },
+            {
+              "class": "fd-avatar--indication-color-4",
+              "description": "indication-color-4 variant"
+            },
+            {
+              "class": "fd-avatar--indication-color-5",
+              "description": "indication-color-5 variant"
+            },
+            {
+              "class": "fd-avatar--indication-color-6",
+              "description": "indication-color-6 variant"
+            },
+            {
+              "class": "fd-avatar--indication-color-7",
+              "description": "indication-color-7 variant"
+            },
+            {
+              "class": "fd-avatar--indication-color-8",
+              "description": "indication-color-8 variant"
+            },
+            {
+              "class": "fd-avatar--indication-color-9",
+              "description": "indication-color-9 variant"
+            },
+            {
+              "class": "fd-avatar--indication-color-10",
+              "description": "indication-color-10 variant"
+            },
+            {
+              "class": "fd-avatar--xs",
+              "description": "xs variant"
+            },
+            {
+              "class": "fd-avatar--sm",
+              "description": "sm variant"
+            },
+            {
+              "class": "fd-avatar--lg",
+              "description": "lg variant"
+            },
+            {
+              "class": "fd-avatar--xl",
+              "description": "xl variant"
+            },
+            {
+              "class": "fd-avatar--s",
+              "description": "s variant"
+            },
+            {
+              "class": "fd-avatar--m",
+              "description": "m variant"
+            },
+            {
+              "class": "fd-avatar--l",
+              "description": "l variant"
+            },
+            {
+              "class": "fd-avatar--40",
+              "description": "40 variant"
+            },
+            {
+              "class": "fd-avatar--96",
+              "description": "96 variant"
             }
           ],
           "accessibility": {
@@ -921,6 +1121,26 @@
             {
               "class": "fd-button-split--emphasized",
               "description": "emphasized variant"
+            },
+            {
+              "class": "fd-button-split--transparent",
+              "description": "transparent variant"
+            },
+            {
+              "class": "fd-button-split--ghost",
+              "description": "ghost variant"
+            },
+            {
+              "class": "fd-button-split--positive",
+              "description": "positive variant"
+            },
+            {
+              "class": "fd-button-split--negative",
+              "description": "negative variant"
+            },
+            {
+              "class": "fd-button-split--attention",
+              "description": "attention variant"
             }
           ],
           "elements": [],
@@ -952,7 +1172,9 @@
             "--fdButton_Border_Radius_Right_RTL",
             "--fdButton_Border_Radius_Outline_Right_RTL",
             "--fdButtonSplit_Text_Max_Width",
-            "--fdButton_Menu_Emphasized_Margin"
+            "--fdButton_Menu_Emphasized_Margin",
+            "--fdButton_Focus_Border_Radius",
+            "--fdButton_Outline_Contrast"
           ],
           "tags": [],
           "examples": [
@@ -1019,6 +1241,34 @@
             {
               "class": "fd-button--nested-square",
               "description": "nested-square variant"
+            },
+            {
+              "class": "fd-button--emphasized",
+              "description": "emphasized variant"
+            },
+            {
+              "class": "fd-button--negative",
+              "description": "negative variant"
+            },
+            {
+              "class": "fd-button--positive",
+              "description": "positive variant"
+            },
+            {
+              "class": "fd-button--transparent",
+              "description": "transparent variant"
+            },
+            {
+              "class": "fd-button--ghost",
+              "description": "ghost variant"
+            },
+            {
+              "class": "fd-button--toggled",
+              "description": "toggled variant"
+            },
+            {
+              "class": "fd-button--compact",
+              "description": "compact variant"
             }
           ],
           "elements": [
@@ -1115,7 +1365,28 @@
             "--fdButton_Nested_Background_Focus",
             "--fdButton_Nested_Border_Color_Focus",
             "--fdButton_Nested_Border_Radius_Focus",
-            "--fdButton_Nested_Border_Color_Disabled"
+            "--fdButton_Nested_Border_Color_Disabled",
+            "--fdButton_Focus_Border_Radius",
+            "--fdButton_Outline_Contrast",
+            "--fdButtonPrioritizedBorderColor",
+            "--fdButton_Ghost_Background",
+            "--fdButton_Emphasized_Active_Outline",
+            "--fdButtonColor",
+            "--fdButtonBorderColor",
+            "--fdButtonBackgroundColor",
+            "--fdButtonSelectedPrioritizedBorderColor",
+            "--fdButtonSelectedPrioritizedBackgroundColor",
+            "--fdButtonHoverPrioritizedBorderColor",
+            "--fdButtonHoverPrioritizedBackgroundColor",
+            "--fdButtonActivePrioritizedBorderColor",
+            "--fdButtonActivePrioritizedBackgroundColor",
+            "--fdButtonToggledPrioritizedBorderColor",
+            "--fdButtonToggledPrioritizedBackgroundColor",
+            "--fdButtonPrioritizedBackgroundColor",
+            "--fdButtonToggledActivePrioritizedBorderColor",
+            "--fdButtonToggledActivePrioritizedBackgroundColor",
+            "--fdElementTextColor",
+            "--fdElementIconColor"
           ],
           "examples": [
             "badge-on-button",
@@ -1206,10 +1477,6 @@
             {
               "class": "fd-calendar--non-work",
               "description": "non-work variant"
-            },
-            {
-              "class": "fd-calendar--placeholder-",
-              "description": "placeholder- variant"
             },
             {
               "class": "fd-calendar--vertical",
@@ -3142,7 +3409,24 @@
           "baseClass": "fd-generic-tag",
           "cssImport": "fundamental-styles/dist/generic-tag.css",
           "storybookUrl": "https://sap.github.io/fundamental-styles/?path=/docs/components-generic-tag",
-          "modifiers": [],
+          "modifiers": [
+            {
+              "class": "fd-generic-tag--error",
+              "description": "error variant"
+            },
+            {
+              "class": "fd-generic-tag--success",
+              "description": "success variant"
+            },
+            {
+              "class": "fd-generic-tag--information",
+              "description": "information variant"
+            },
+            {
+              "class": "fd-generic-tag--warning",
+              "description": "warning variant"
+            }
+          ],
           "elements": [
             {
               "class": "fd-generic-tag__icon",
@@ -3730,6 +4014,26 @@
             {
               "class": "fd-illustrated-message--base",
               "description": "base variant"
+            },
+            {
+              "class": "fd-illustrated-message--subtle",
+              "description": "subtle variant"
+            },
+            {
+              "class": "fd-illustrated-message--undecorated",
+              "description": "undecorated variant"
+            },
+            {
+              "class": "fd-illustrated-message--emphasized",
+              "description": "emphasized variant"
+            },
+            {
+              "class": "fd-illustrated-message--touch-target",
+              "description": "touch-target variant"
+            },
+            {
+              "class": "fd-illustrated-message--inverted",
+              "description": "inverted variant"
             }
           ],
           "elements": [
@@ -3762,9 +4066,49 @@
               "class": "fd-illustrated-message__actions",
               "description": "actions element",
               "modifiers": []
+            },
+            {
+              "class": "fd-illustrated-message__content",
+              "description": "content element",
+              "modifiers": []
             }
           ],
-          "variables": [],
+          "variables": [
+            "--fdLink_Text_Decoration",
+            "--fdLink_Text_Content_Decoration",
+            "--fdLink_Text_Decoration_Hover",
+            "--fdLink_Text_Content_Decoration_Hover",
+            "--fdLink_Text_Decoration_Focus",
+            "--fdLink_Text_Content_Decoration_Focus",
+            "--fdLink_Text_Decoration_Active",
+            "--fdLink_Text_Content_Decoration_Active",
+            "--fdLink_Text_Decoration_Disabled",
+            "--fdLink_Text_Content_Decoration_Disabled",
+            "--fdLink_Text_Content_Decoration_Subtle",
+            "--fdLink_Text_Content_Decoration_Subtle_Hover",
+            "--fdLink_Text_Content_Decoration_Subtle_Active",
+            "--fdLink_Text_Decoration_Subtle",
+            "--fdLink_Text_Decoration_Subtle_Hover",
+            "--fdLink_Text_Decoration_Subtle_Active",
+            "--fdLink_Text_Decoration_Visited",
+            "--fdLink_Text_Content_Decoration_Visited",
+            "--fdLink_Display",
+            "--fdLink_Line_Height",
+            "--fdLink_Text_Focus_Color",
+            "--fdLink_Focus_Background",
+            "--fdLink_Focus_Border_Radius",
+            "--fdLink_Focus_Text_Shadow",
+            "--fdLink_Hover_Outline_Offset",
+            "--fdLink_Hover_Outline_Color",
+            "--fdLink_Hover_Outline_Style",
+            "--fdLink_Hover_Outline_Width",
+            "--fdScrollbar_Thumb_Color",
+            "--fdScrollbar_Track_Color",
+            "--fdScrollbar_Dimension",
+            "--fdScrollbar_Thumb_Offset",
+            "--fdScrollbar_Thumb_Border_Radius",
+            "--fdScrollbar_Thumb_Hover_Color"
+          ],
           "tags": [],
           "examples": [
             "base",
@@ -3793,12 +4137,52 @@
           "storybookUrl": "https://sap.github.io/fundamental-styles/?path=/docs/components-info-label",
           "modifiers": [
             {
-              "class": "fd-info-label--accent-color-",
-              "description": "accent-color- variant"
-            },
-            {
               "class": "fd-info-label--display",
               "description": "display variant"
+            },
+            {
+              "class": "fd-info-label--accent-color-1",
+              "description": "accent-color-1 variant"
+            },
+            {
+              "class": "fd-info-label--accent-color-2",
+              "description": "accent-color-2 variant"
+            },
+            {
+              "class": "fd-info-label--accent-color-3",
+              "description": "accent-color-3 variant"
+            },
+            {
+              "class": "fd-info-label--accent-color-4",
+              "description": "accent-color-4 variant"
+            },
+            {
+              "class": "fd-info-label--accent-color-5",
+              "description": "accent-color-5 variant"
+            },
+            {
+              "class": "fd-info-label--accent-color-6",
+              "description": "accent-color-6 variant"
+            },
+            {
+              "class": "fd-info-label--accent-color-7",
+              "description": "accent-color-7 variant"
+            },
+            {
+              "class": "fd-info-label--accent-color-8",
+              "description": "accent-color-8 variant"
+            },
+            {
+              "class": "fd-info-label--accent-color-9",
+              "description": "accent-color-9 variant"
+            },
+            {
+              "class": "fd-info-label--accent-color-10",
+              "description": "accent-color-10 variant"
+            },
+            {
+              "class": "fd-info-label--numeric",
+              "description": "numeric variant"
             }
           ],
           "elements": [
@@ -3946,7 +4330,10 @@
             "--fdInput_Group_Addon_Width",
             "--fdInput_Group_Addon_Height",
             "--fdInput_Field_Margin_Block",
-            "--fdInput_Field_Compact_Margin_Block"
+            "--fdInput_Field_Compact_Margin_Block",
+            "--fdButton_Focus_Border_Radius",
+            "--fdButton_Outline_Contrast",
+            "--fdButtonPrioritizedBorderColor"
           ],
           "tags": [],
           "examples": [],
@@ -4213,8 +4600,232 @@
             "Tabular data (use table instead)",
             "Hierarchical data (use tree instead)"
           ],
-          "modifiers": [],
-          "elements": [],
+          "modifiers": [
+            {
+              "class": "fd-list--unread",
+              "description": "unread variant"
+            },
+            {
+              "class": "fd-list--no-data",
+              "description": "no-data variant"
+            },
+            {
+              "class": "fd-list--interractive",
+              "description": "interractive variant"
+            },
+            {
+              "class": "fd-list--interactive",
+              "description": "interactive variant"
+            },
+            {
+              "class": "fd-list--action",
+              "description": "action variant"
+            },
+            {
+              "class": "fd-list--growing",
+              "description": "growing variant"
+            },
+            {
+              "class": "fd-list--inactive",
+              "description": "inactive variant"
+            },
+            {
+              "class": "fd-list--positive",
+              "description": "positive variant"
+            },
+            {
+              "class": "fd-list--critical",
+              "description": "critical variant"
+            },
+            {
+              "class": "fd-list--negative",
+              "description": "negative variant"
+            },
+            {
+              "class": "fd-list--informative",
+              "description": "informative variant"
+            },
+            {
+              "class": "fd-list--right",
+              "description": "right variant"
+            },
+            {
+              "class": "fd-list--left",
+              "description": "left variant"
+            },
+            {
+              "class": "fd-list--error",
+              "description": "error variant"
+            },
+            {
+              "class": "fd-list--warning",
+              "description": "warning variant"
+            },
+            {
+              "class": "fd-list--success",
+              "description": "success variant"
+            },
+            {
+              "class": "fd-list--information",
+              "description": "information variant"
+            },
+            {
+              "class": "fd-list--no-border",
+              "description": "no-border variant"
+            },
+            {
+              "class": "fd-list--has-message",
+              "description": "has-message variant"
+            },
+            {
+              "class": "fd-list--dropdown",
+              "description": "dropdown variant"
+            },
+            {
+              "class": "fd-list--multi-input",
+              "description": "multi-input variant"
+            },
+            {
+              "class": "fd-list--no-wrap",
+              "description": "no-wrap variant"
+            },
+            {
+              "class": "fd-list--byline",
+              "description": "byline variant"
+            },
+            {
+              "class": "fd-list--2-col",
+              "description": "2-col variant"
+            },
+            {
+              "class": "fd-list--wrap",
+              "description": "wrap variant"
+            },
+            {
+              "class": "fd-list--more",
+              "description": "more variant"
+            },
+            {
+              "class": "fd-list--subline",
+              "description": "subline variant"
+            },
+            {
+              "class": "fd-list--truncate",
+              "description": "truncate variant"
+            },
+            {
+              "class": "fd-list--message-view",
+              "description": "message-view variant"
+            },
+            {
+              "class": "fd-list--suggestion",
+              "description": "suggestion variant"
+            },
+            {
+              "class": "fd-list--navigation",
+              "description": "navigation variant"
+            },
+            {
+              "class": "fd-list--navigation-indication",
+              "description": "navigation-indication variant"
+            },
+            {
+              "class": "fd-list--navigation-indicator",
+              "description": "navigation-indicator variant"
+            },
+            {
+              "class": "fd-list--selection",
+              "description": "selection variant"
+            },
+            {
+              "class": "fd-list--unread-indicator",
+              "description": "unread-indicator variant"
+            },
+            {
+              "class": "fd-list--search-results",
+              "description": "search-results variant"
+            }
+          ],
+          "elements": [
+            {
+              "class": "fd-list__item",
+              "description": "item element",
+              "modifiers": [
+                {
+                  "class": "fd-list__item--growing",
+                  "description": "growing variant of item"
+                },
+                {
+                  "class": "fd-list__item--action",
+                  "description": "action variant of item"
+                },
+                {
+                  "class": "fd-list__item--link",
+                  "description": "link variant of item"
+                }
+              ]
+            },
+            {
+              "class": "fd-list__group-header",
+              "description": "group-header element",
+              "modifiers": []
+            },
+            {
+              "class": "fd-list__footer",
+              "description": "footer element",
+              "modifiers": []
+            },
+            {
+              "class": "fd-list__title",
+              "description": "title element",
+              "modifiers": [
+                {
+                  "class": "fd-list__title--scope",
+                  "description": "scope variant of title"
+                }
+              ]
+            },
+            {
+              "class": "fd-list__secondary",
+              "description": "secondary element",
+              "modifiers": []
+            },
+            {
+              "class": "fd-list__icon",
+              "description": "icon element",
+              "modifiers": []
+            },
+            {
+              "class": "fd-list__link",
+              "description": "link element",
+              "modifiers": [
+                {
+                  "class": "fd-list__link--navigation-indicator",
+                  "description": "navigation-indicator variant of link"
+                }
+              ]
+            },
+            {
+              "class": "fd-list__bold",
+              "description": "bold element",
+              "modifiers": []
+            },
+            {
+              "class": "fd-list__message",
+              "description": "message element",
+              "modifiers": []
+            },
+            {
+              "class": "fd-list__infinite-scroll",
+              "description": "infinite-scroll element",
+              "modifiers": []
+            },
+            {
+              "class": "fd-list__item-counter",
+              "description": "item-counter element",
+              "modifiers": []
+            }
+          ],
           "accessibility": {
             "role": "list",
             "ariaAttributes": [
@@ -4230,7 +4841,31 @@
           ],
           "dependencies": [],
           "tags": [],
-          "variables": [],
+          "variables": [
+            "--fdList_Item_Height",
+            "--fdList_Item_Border_Color",
+            "--fdList_Item_Background_Color",
+            "--fdList_Item_Action_Border",
+            "--fdList_Item_Action_Button_Size",
+            "--fdList_Item_Action_Button_Spacing",
+            "--fdList_Item_Action_Button_Border",
+            "--fdList_Item_Action_Button_Border_Radius",
+            "--fdList_Active_Outline_Color",
+            "--fdList_Growing_Font_Weight",
+            "--fdList_Item_Text_Color",
+            "--fdList_Item_Text_Font_Size",
+            "--fdList_Status_Text_Color",
+            "--fdList_Item_Icon_Font_Size",
+            "--fdList_Message_Background_Color",
+            "--fdList_Button_Spacing",
+            "--fdList_Item_Action_Button_Size_Compact",
+            "--fdListNavigationIndicatorFontSize",
+            "--fdList_Message_View_Item_Byline_Height",
+            "--fdList_Message_View_Title_Size",
+            "--fdList_Message_View_Item_Height",
+            "--fdList_Navigation_Link_Padding_Left",
+            "--fdList_Navigation_Link_Padding_Right"
+          ],
           "examples": []
         },
         {
@@ -4469,6 +5104,26 @@
             {
               "class": "fd-message-box--active",
               "description": "active variant"
+            },
+            {
+              "class": "fd-message-box--information",
+              "description": "information variant"
+            },
+            {
+              "class": "fd-message-box--error",
+              "description": "error variant"
+            },
+            {
+              "class": "fd-message-box--success",
+              "description": "success variant"
+            },
+            {
+              "class": "fd-message-box--warning",
+              "description": "warning variant"
+            },
+            {
+              "class": "fd-message-box--confirmation",
+              "description": "confirmation variant"
             }
           ],
           "elements": [
@@ -4732,8 +5387,84 @@
               "description": "link variant"
             },
             {
-              "class": "fd-message-strip--indication-color-",
-              "description": "indication-color- variant"
+              "class": "fd-message-strip--indication-color-1",
+              "description": "indication-color-1 variant"
+            },
+            {
+              "class": "fd-message-strip--indication-color-1b",
+              "description": "indication-color-1b variant"
+            },
+            {
+              "class": "fd-message-strip--indication-color-2",
+              "description": "indication-color-2 variant"
+            },
+            {
+              "class": "fd-message-strip--indication-color-2b",
+              "description": "indication-color-2b variant"
+            },
+            {
+              "class": "fd-message-strip--indication-color-3",
+              "description": "indication-color-3 variant"
+            },
+            {
+              "class": "fd-message-strip--indication-color-3b",
+              "description": "indication-color-3b variant"
+            },
+            {
+              "class": "fd-message-strip--indication-color-4",
+              "description": "indication-color-4 variant"
+            },
+            {
+              "class": "fd-message-strip--indication-color-4b",
+              "description": "indication-color-4b variant"
+            },
+            {
+              "class": "fd-message-strip--indication-color-5",
+              "description": "indication-color-5 variant"
+            },
+            {
+              "class": "fd-message-strip--indication-color-5b",
+              "description": "indication-color-5b variant"
+            },
+            {
+              "class": "fd-message-strip--indication-color-6",
+              "description": "indication-color-6 variant"
+            },
+            {
+              "class": "fd-message-strip--indication-color-6b",
+              "description": "indication-color-6b variant"
+            },
+            {
+              "class": "fd-message-strip--indication-color-7",
+              "description": "indication-color-7 variant"
+            },
+            {
+              "class": "fd-message-strip--indication-color-7b",
+              "description": "indication-color-7b variant"
+            },
+            {
+              "class": "fd-message-strip--indication-color-8",
+              "description": "indication-color-8 variant"
+            },
+            {
+              "class": "fd-message-strip--indication-color-8b",
+              "description": "indication-color-8b variant"
+            },
+            {
+              "class": "fd-message-strip--indication-color-9",
+              "description": "indication-color-9 variant"
+            },
+            {
+              "class": "fd-message-strip--indication-color-9b",
+              "description": "indication-color-9b variant"
+            },
+            {
+              "class": "fd-message-strip--indication-color-10",
+              "description": "indication-color-10 variant"
+            },
+            {
+              "class": "fd-message-strip--indication-color-10b",
+              "description": "indication-color-10b variant"
             }
           ],
           "accessibility": {
@@ -5193,6 +5924,26 @@
             {
               "class": "fd-navigation--snapped",
               "description": "snapped variant"
+            },
+            {
+              "class": "fd-navigation--phone",
+              "description": "phone variant"
+            },
+            {
+              "class": "fd-navigation--tablet",
+              "description": "tablet variant"
+            },
+            {
+              "class": "fd-navigation--horizontal",
+              "description": "horizontal variant"
+            },
+            {
+              "class": "fd-navigation--vertical",
+              "description": "vertical variant"
+            },
+            {
+              "class": "fd-navigation--popup",
+              "description": "popup variant"
             }
           ],
           "elements": [
@@ -5845,6 +6596,22 @@
             {
               "class": "fd-object-number--interactive",
               "description": "interactive variant"
+            },
+            {
+              "class": "fd-object-number--negative",
+              "description": "negative variant"
+            },
+            {
+              "class": "fd-object-number--critical",
+              "description": "critical variant"
+            },
+            {
+              "class": "fd-object-number--positive",
+              "description": "positive variant"
+            },
+            {
+              "class": "fd-object-number--informative",
+              "description": "informative variant"
             }
           ],
           "elements": [
@@ -5923,6 +6690,110 @@
             {
               "class": "fd-object-status--truncate",
               "description": "truncate variant"
+            },
+            {
+              "class": "fd-object-status--negative",
+              "description": "negative variant"
+            },
+            {
+              "class": "fd-object-status--critical",
+              "description": "critical variant"
+            },
+            {
+              "class": "fd-object-status--positive",
+              "description": "positive variant"
+            },
+            {
+              "class": "fd-object-status--informative",
+              "description": "informative variant"
+            },
+            {
+              "class": "fd-object-status--indication-1",
+              "description": "indication-1 variant"
+            },
+            {
+              "class": "fd-object-status--indication-2",
+              "description": "indication-2 variant"
+            },
+            {
+              "class": "fd-object-status--indication-3",
+              "description": "indication-3 variant"
+            },
+            {
+              "class": "fd-object-status--indication-4",
+              "description": "indication-4 variant"
+            },
+            {
+              "class": "fd-object-status--indication-5",
+              "description": "indication-5 variant"
+            },
+            {
+              "class": "fd-object-status--indication-6",
+              "description": "indication-6 variant"
+            },
+            {
+              "class": "fd-object-status--indication-7",
+              "description": "indication-7 variant"
+            },
+            {
+              "class": "fd-object-status--indication-8",
+              "description": "indication-8 variant"
+            },
+            {
+              "class": "fd-object-status--neutral",
+              "description": "neutral variant"
+            },
+            {
+              "class": "fd-object-status--indication-1b",
+              "description": "indication-1b variant"
+            },
+            {
+              "class": "fd-object-status--indication-2b",
+              "description": "indication-2b variant"
+            },
+            {
+              "class": "fd-object-status--indication-3b",
+              "description": "indication-3b variant"
+            },
+            {
+              "class": "fd-object-status--indication-4b",
+              "description": "indication-4b variant"
+            },
+            {
+              "class": "fd-object-status--indication-5b",
+              "description": "indication-5b variant"
+            },
+            {
+              "class": "fd-object-status--indication-6b",
+              "description": "indication-6b variant"
+            },
+            {
+              "class": "fd-object-status--indication-7b",
+              "description": "indication-7b variant"
+            },
+            {
+              "class": "fd-object-status--indication-8b",
+              "description": "indication-8b variant"
+            },
+            {
+              "class": "fd-object-status--indication-9b",
+              "description": "indication-9b variant"
+            },
+            {
+              "class": "fd-object-status--indication-1b0",
+              "description": "indication-1b0 variant"
+            },
+            {
+              "class": "fd-object-status--indication-9",
+              "description": "indication-9 variant"
+            },
+            {
+              "class": "fd-object-status--indication-10",
+              "description": "indication-10 variant"
+            },
+            {
+              "class": "fd-object-status--icon-only",
+              "description": "icon-only variant"
             }
           ],
           "elements": [
@@ -6315,7 +7186,10 @@
             "--fdPagination_Placeholder_Dots_Width",
             "--fdPagination_Elements_Spacing",
             "--fdPagination_Placeholder_Dots_Width_Compact",
-            "--fdButton_Outline_Offset"
+            "--fdButton_Outline_Offset",
+            "--fdButton_Focus_Border_Radius",
+            "--fdButton_Outline_Contrast",
+            "--fdButtonPrioritizedBorderColor"
           ],
           "tags": [
             "btp",
@@ -6698,7 +7572,10 @@
           "variables": [
             "--fdProduct_Switch_Item_Border_Color",
             "--fdProductSwitch_Shadow",
-            "--fdProductSwitch_Text_Shadow"
+            "--fdProductSwitch_Text_Shadow",
+            "--fdButton_Focus_Border_Radius",
+            "--fdButton_Outline_Contrast",
+            "--fdButtonPrioritizedBorderColor"
           ],
           "tags": [
             "f3",
@@ -6736,6 +7613,22 @@
             {
               "class": "fd-progress-indicator--display",
               "description": "display variant"
+            },
+            {
+              "class": "fd-progress-indicator--informative",
+              "description": "informative variant"
+            },
+            {
+              "class": "fd-progress-indicator--positive",
+              "description": "positive variant"
+            },
+            {
+              "class": "fd-progress-indicator--critical",
+              "description": "critical variant"
+            },
+            {
+              "class": "fd-progress-indicator--negative",
+              "description": "negative variant"
             }
           ],
           "elements": [
@@ -7088,6 +7981,26 @@
             {
               "class": "fd-rating-indicator--zero-rating",
               "description": "zero-rating variant"
+            },
+            {
+              "class": "fd-rating-indicator--lg",
+              "description": "lg variant"
+            },
+            {
+              "class": "fd-rating-indicator--xs",
+              "description": "xs variant"
+            },
+            {
+              "class": "fd-rating-indicator--sm",
+              "description": "sm variant"
+            },
+            {
+              "class": "fd-rating-indicator--compact",
+              "description": "compact variant"
+            },
+            {
+              "class": "fd-rating-indicator--condensed",
+              "description": "condensed variant"
             }
           ],
           "elements": [
@@ -7221,12 +8134,71 @@
             {
               "class": "fd-scrollbar--container",
               "description": "container variant"
+            },
+            {
+              "class": "fd-scrollbar--subtle",
+              "description": "subtle variant"
+            },
+            {
+              "class": "fd-scrollbar--undecorated",
+              "description": "undecorated variant"
+            },
+            {
+              "class": "fd-scrollbar--emphasized",
+              "description": "emphasized variant"
+            },
+            {
+              "class": "fd-scrollbar--touch-target",
+              "description": "touch-target variant"
+            },
+            {
+              "class": "fd-scrollbar--inverted",
+              "description": "inverted variant"
             }
           ],
-          "elements": [],
+          "elements": [
+            {
+              "class": "fd-scrollbar__content",
+              "description": "content element",
+              "modifiers": []
+            }
+          ],
           "variables": [
             "--fdScrollbar_Track_Color",
-            "--fdScrollbar_Border_Radius"
+            "--fdScrollbar_Border_Radius",
+            "--fdLink_Text_Decoration",
+            "--fdLink_Text_Content_Decoration",
+            "--fdLink_Text_Decoration_Hover",
+            "--fdLink_Text_Content_Decoration_Hover",
+            "--fdLink_Text_Decoration_Focus",
+            "--fdLink_Text_Content_Decoration_Focus",
+            "--fdLink_Text_Decoration_Active",
+            "--fdLink_Text_Content_Decoration_Active",
+            "--fdLink_Text_Decoration_Disabled",
+            "--fdLink_Text_Content_Decoration_Disabled",
+            "--fdLink_Text_Content_Decoration_Subtle",
+            "--fdLink_Text_Content_Decoration_Subtle_Hover",
+            "--fdLink_Text_Content_Decoration_Subtle_Active",
+            "--fdLink_Text_Decoration_Subtle",
+            "--fdLink_Text_Decoration_Subtle_Hover",
+            "--fdLink_Text_Decoration_Subtle_Active",
+            "--fdLink_Text_Decoration_Visited",
+            "--fdLink_Text_Content_Decoration_Visited",
+            "--fdLink_Display",
+            "--fdLink_Line_Height",
+            "--fdLink_Text_Focus_Color",
+            "--fdLink_Focus_Background",
+            "--fdLink_Focus_Border_Radius",
+            "--fdLink_Focus_Text_Shadow",
+            "--fdLink_Hover_Outline_Offset",
+            "--fdLink_Hover_Outline_Color",
+            "--fdLink_Hover_Outline_Style",
+            "--fdLink_Hover_Outline_Width",
+            "--fdScrollbar_Thumb_Color",
+            "--fdScrollbar_Dimension",
+            "--fdScrollbar_Thumb_Offset",
+            "--fdScrollbar_Thumb_Border_Radius",
+            "--fdScrollbar_Thumb_Hover_Color"
           ],
           "tags": [
             "f3",
@@ -7416,7 +8388,9 @@
             "--fdButton_Border_Radius_Left_RTL",
             "--fdButton_Border_Radius_Right_RTL",
             "--fdButton_Vertical_Border_Radius_Left",
-            "--fdButton_Vertical_Border_Radius_Right"
+            "--fdButton_Vertical_Border_Radius_Right",
+            "--fdButton_Focus_Border_Radius",
+            "--fdButton_Outline_Contrast"
           ],
           "tags": [],
           "examples": [
@@ -7535,6 +8509,14 @@
             {
               "class": "fd-settings--no-background",
               "description": "no-background variant"
+            },
+            {
+              "class": "fd-settings--md",
+              "description": "md variant"
+            },
+            {
+              "class": "fd-settings--sm",
+              "description": "sm variant"
             }
           ],
           "elements": [
@@ -7874,7 +8856,9 @@
             "--fdShell_Search_Dropdown_Hover_Background",
             "--fdShell_Search_Dropdown_Active_Background",
             "--fdShellbar_Button_Active_Background",
-            "--fdShellbar_Button_Active_Color"
+            "--fdShellbar_Button_Active_Color",
+            "--fdButton_Outline_Contrast",
+            "--fdButtonPrioritizedBorderColor"
           ],
           "examples": [
             "optional-items",
@@ -8158,6 +9142,26 @@
             {
               "class": "fd-splitter--active",
               "description": "active variant"
+            },
+            {
+              "class": "fd-splitter--subtle",
+              "description": "subtle variant"
+            },
+            {
+              "class": "fd-splitter--undecorated",
+              "description": "undecorated variant"
+            },
+            {
+              "class": "fd-splitter--emphasized",
+              "description": "emphasized variant"
+            },
+            {
+              "class": "fd-splitter--touch-target",
+              "description": "touch-target variant"
+            },
+            {
+              "class": "fd-splitter--inverted",
+              "description": "inverted variant"
             }
           ],
           "elements": [
@@ -8215,6 +9219,11 @@
               "class": "fd-splitter__pagination-item",
               "description": "pagination-item element",
               "modifiers": []
+            },
+            {
+              "class": "fd-splitter__content",
+              "description": "content element",
+              "modifiers": []
             }
           ],
           "variables": [
@@ -8235,7 +9244,41 @@
             "--fdSplitter_Resizer_Before_Background",
             "--fdSplitter_Resizer_After_Background",
             "--fdSplitter_Resizer_Line_Border_Radius",
-            "--fdSplitter_Resizer_Border"
+            "--fdSplitter_Resizer_Border",
+            "--fdLink_Text_Decoration",
+            "--fdLink_Text_Content_Decoration",
+            "--fdLink_Text_Decoration_Hover",
+            "--fdLink_Text_Content_Decoration_Hover",
+            "--fdLink_Text_Decoration_Focus",
+            "--fdLink_Text_Content_Decoration_Focus",
+            "--fdLink_Text_Decoration_Active",
+            "--fdLink_Text_Content_Decoration_Active",
+            "--fdLink_Text_Decoration_Disabled",
+            "--fdLink_Text_Content_Decoration_Disabled",
+            "--fdLink_Text_Content_Decoration_Subtle",
+            "--fdLink_Text_Content_Decoration_Subtle_Hover",
+            "--fdLink_Text_Content_Decoration_Subtle_Active",
+            "--fdLink_Text_Decoration_Subtle",
+            "--fdLink_Text_Decoration_Subtle_Hover",
+            "--fdLink_Text_Decoration_Subtle_Active",
+            "--fdLink_Text_Decoration_Visited",
+            "--fdLink_Text_Content_Decoration_Visited",
+            "--fdLink_Display",
+            "--fdLink_Line_Height",
+            "--fdLink_Text_Focus_Color",
+            "--fdLink_Focus_Background",
+            "--fdLink_Focus_Border_Radius",
+            "--fdLink_Focus_Text_Shadow",
+            "--fdLink_Hover_Outline_Offset",
+            "--fdLink_Hover_Outline_Color",
+            "--fdLink_Hover_Outline_Style",
+            "--fdLink_Hover_Outline_Width",
+            "--fdScrollbar_Thumb_Color",
+            "--fdScrollbar_Track_Color",
+            "--fdScrollbar_Dimension",
+            "--fdScrollbar_Thumb_Offset",
+            "--fdScrollbar_Thumb_Border_Radius",
+            "--fdScrollbar_Thumb_Hover_Color"
           ],
           "tags": [],
           "examples": [],
@@ -8265,6 +9308,34 @@
             {
               "class": "fd-status-indicator--link",
               "description": "link variant"
+            },
+            {
+              "class": "fd-status-indicator--negative",
+              "description": "negative variant"
+            },
+            {
+              "class": "fd-status-indicator--lg",
+              "description": "lg variant"
+            },
+            {
+              "class": "fd-status-indicator--critical",
+              "description": "critical variant"
+            },
+            {
+              "class": "fd-status-indicator--positive",
+              "description": "positive variant"
+            },
+            {
+              "class": "fd-status-indicator--sm",
+              "description": "sm variant"
+            },
+            {
+              "class": "fd-status-indicator--md",
+              "description": "md variant"
+            },
+            {
+              "class": "fd-status-indicator--xl",
+              "description": "xl variant"
             }
           ],
           "elements": [
@@ -8620,6 +9691,74 @@
             {
               "class": "fd-table--hidden",
               "description": "hidden variant"
+            },
+            {
+              "class": "fd-table--fixed",
+              "description": "fixed variant"
+            },
+            {
+              "class": "fd-table--fixed-end",
+              "description": "fixed-end variant"
+            },
+            {
+              "class": "fd-table--pop-in",
+              "description": "pop-in variant"
+            },
+            {
+              "class": "fd-table--title",
+              "description": "title variant"
+            },
+            {
+              "class": "fd-table--main",
+              "description": "main variant"
+            },
+            {
+              "class": "fd-table--secondary",
+              "description": "secondary variant"
+            },
+            {
+              "class": "fd-table--no-vertical-borders",
+              "description": "no-vertical-borders variant"
+            },
+            {
+              "class": "fd-table--no-horizontal-borders",
+              "description": "no-horizontal-borders variant"
+            },
+            {
+              "class": "fd-table--no-vertical-border",
+              "description": "no-vertical-border variant"
+            },
+            {
+              "class": "fd-table--no-horizontal-border",
+              "description": "no-horizontal-border variant"
+            },
+            {
+              "class": "fd-table--responsive",
+              "description": "responsive variant"
+            },
+            {
+              "class": "fd-table--no-outer-border",
+              "description": "no-outer-border variant"
+            },
+            {
+              "class": "fd-table--group",
+              "description": "group variant"
+            },
+            {
+              "class": "fd-table--tree",
+              "description": "tree variant"
+            },
+            {
+              "class": "fd-table--expand",
+              "description": "expand variant"
+            },
+            {
+              "class": "fd-table--open",
+              "description": "open variant"
+            },
+            {
+              "class": "fd-table--condensed",
+              "description": "condensed variant"
             }
           ],
           "elements": [
@@ -8638,13 +9777,30 @@
                 {
                   "class": "fd-table__cell--status-indicator",
                   "description": "status-indicator variant of cell"
+                },
+                {
+                  "class": "fd-table__cell--group",
+                  "description": "group variant of cell"
                 }
               ]
             },
             {
               "class": "fd-table__row",
               "description": "row element",
-              "modifiers": []
+              "modifiers": [
+                {
+                  "class": "fd-table__row--hoverable",
+                  "description": "hoverable variant of row"
+                },
+                {
+                  "class": "fd-table__row--secondary",
+                  "description": "secondary variant of row"
+                },
+                {
+                  "class": "fd-table__row--activable",
+                  "description": "activable variant of row"
+                }
+              ]
             },
             {
               "class": "fd-table__header",
@@ -8705,6 +9861,16 @@
                   "description": "clickable variant of item"
                 }
               ]
+            },
+            {
+              "class": "fd-table__expand",
+              "description": "expand element",
+              "modifiers": [
+                {
+                  "class": "fd-table__expand--open",
+                  "description": "open variant of expand"
+                }
+              ]
             }
           ],
           "accessibility": {
@@ -8735,7 +9901,8 @@
             "--fdTable_Cell_Horizontal_Border_Style",
             "--fdTable_Cell_Vertical_Border_Style",
             "--fdTable_Hover_Down_Color",
-            "--fdTable_Condensed_Focus_Outline_Offset"
+            "--fdTable_Condensed_Focus_Outline_Offset",
+            "--fdTable_Group_Header_Background"
           ],
           "examples": [
             "advanced-toolbar",
@@ -9189,7 +10356,10 @@
             "--fdSlide_Tile_Indicator_Active_Dot_Color",
             "--fdSlide_Tile_Indicator_Active_Dot_Border",
             "--fdTile_Box_Shadow",
-            "--fdTile_Background"
+            "--fdTile_Background",
+            "--fdButton_Focus_Border_Radius",
+            "--fdButton_Outline_Contrast",
+            "--fdButtonPrioritizedBorderColor"
           ],
           "tags": [],
           "examples": [],
@@ -9713,6 +10883,10 @@
             {
               "class": "fd-tool-header--hidden",
               "description": "hidden variant"
+            },
+            {
+              "class": "fd-tool-header--compact",
+              "description": "compact variant"
             }
           ],
           "elements": [
@@ -9902,6 +11076,10 @@
             {
               "class": "fd-toolbar--fade-out",
               "description": "fade-out variant"
+            },
+            {
+              "class": "fd-toolbar--title-bar",
+              "description": "title-bar variant"
             }
           ],
           "elements": [
@@ -9990,6 +11168,30 @@
             {
               "class": "fd-tree--navigation",
               "description": "navigation variant"
+            },
+            {
+              "class": "fd-tree--error",
+              "description": "error variant"
+            },
+            {
+              "class": "fd-tree--warning",
+              "description": "warning variant"
+            },
+            {
+              "class": "fd-tree--success",
+              "description": "success variant"
+            },
+            {
+              "class": "fd-tree--no-border",
+              "description": "no-border variant"
+            },
+            {
+              "class": "fd-tree--no-data",
+              "description": "no-data variant"
+            },
+            {
+              "class": "fd-tree--independent-multi-selection",
+              "description": "independent-multi-selection variant"
             }
           ],
           "elements": [
@@ -10032,7 +11234,9 @@
             "--fdTree_Item_Height",
             "--fdTree_Item_Font_Size",
             "--fdTree_Item_Wrap_Text_Line_Height",
-            "--fdButton_Outline_Offset"
+            "--fdButton_Outline_Offset",
+            "--fdTree_Item_Level_Spacing",
+            "--fdTree_Item_Highlight_Color"
           ],
           "tags": [
             "f3",
@@ -10074,6 +11278,22 @@
             {
               "class": "fd-upload-collection--sm",
               "description": "sm variant"
+            },
+            {
+              "class": "fd-upload-collection--byline",
+              "description": "byline variant"
+            },
+            {
+              "class": "fd-upload-collection--2-col",
+              "description": "2-col variant"
+            },
+            {
+              "class": "fd-upload-collection--wrap",
+              "description": "wrap variant"
+            },
+            {
+              "class": "fd-upload-collection--more",
+              "description": "more variant"
             }
           ],
           "elements": [
@@ -10358,6 +11578,18 @@
             {
               "class": "fd-vertical-nav--condensed",
               "description": "condensed variant"
+            },
+            {
+              "class": "fd-vertical-nav--expandable",
+              "description": "expandable variant"
+            },
+            {
+              "class": "fd-vertical-nav--first-level",
+              "description": "first-level variant"
+            },
+            {
+              "class": "fd-vertical-nav--second-level",
+              "description": "second-level variant"
             }
           ],
           "elements": [
@@ -10370,11 +11602,41 @@
               "class": "fd-vertical-nav__utility-section",
               "description": "utility-section element",
               "modifiers": []
+            },
+            {
+              "class": "fd-vertical-nav__navigation-item",
+              "description": "navigation-item element",
+              "modifiers": [
+                {
+                  "class": "fd-vertical-nav__navigation-item--condensed",
+                  "description": "condensed variant of navigation-item"
+                }
+              ]
+            },
+            {
+              "class": "fd-vertical-nav__navigation-item--condensed",
+              "description": "navigation-item--condensed element",
+              "modifiers": []
             }
           ],
           "variables": [
             "--fdVerticalNav_Text_Shadow",
-            "--fdVerticalNav_Item_Border_Top_Bottom"
+            "--fdVerticalNav_Item_Border_Top_Bottom",
+            "--fdVerticalNavigation_Indicator_Spacing",
+            "--fdVerticalNav_Item_Text_Spacing",
+            "--fdVerticalNav_Item_Indicator_Top",
+            "--fdVerticalNav_Item_Indicator_Height",
+            "--fdVerticalNav_Item_Focus_Outline_Offset",
+            "--fdVerticalNav_Item_Indicated_Outline_Offset",
+            "--fdVerticalNav_Item_Expandable_Margin_Block",
+            "--fdVerticalNav_Item_Expanded_Margin",
+            "--fdVerticalNav_Item_Expanded_Border_Radius",
+            "--fdVerticalNav_Item_Expanded_Box_Shadow",
+            "--fdVerticalNav_Item_Expanded_Padding_Left",
+            "--fdVerticalNav_Item_Text_No_Icon_Margin",
+            "--fdVerticalNav_Item_Child_Text_Color",
+            "--fdVerticalNav_Expanded_Item_Margin_Left",
+            "--fdVerticalNav_Icon_Color"
           ],
           "tags": [],
           "examples": [],

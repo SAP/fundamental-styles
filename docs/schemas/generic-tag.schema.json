@@ -9,6 +9,18 @@
       "const": "fd-generic-tag",
       "description": "Required base class"
     },
+    "modifiers": {
+      "type": "array",
+      "items": {
+        "enum": [
+          "fd-generic-tag--error",
+          "fd-generic-tag--success",
+          "fd-generic-tag--information",
+          "fd-generic-tag--warning"
+        ]
+      },
+      "description": "Optional modifier classes"
+    },
     "elements": {
       "type": "object",
       "description": "Optional element classes with their available modifiers",

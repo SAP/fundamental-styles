@@ -25,7 +25,12 @@
           "fd-navigation--menu",
           "fd-navigation--with-expander",
           "fd-navigation--create",
-          "fd-navigation--snapped"
+          "fd-navigation--snapped",
+          "fd-navigation--phone",
+          "fd-navigation--tablet",
+          "fd-navigation--horizontal",
+          "fd-navigation--vertical",
+          "fd-navigation--popup"
         ]
       },
       "description": "Optional modifier classes"

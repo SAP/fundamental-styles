@@ -14,7 +14,14 @@
       "items": {
         "enum": [
           "fd-status-indicator--horizontal-label",
-          "fd-status-indicator--link"
+          "fd-status-indicator--link",
+          "fd-status-indicator--negative",
+          "fd-status-indicator--lg",
+          "fd-status-indicator--critical",
+          "fd-status-indicator--positive",
+          "fd-status-indicator--sm",
+          "fd-status-indicator--md",
+          "fd-status-indicator--xl"
         ]
       },
       "description": "Optional modifier classes"

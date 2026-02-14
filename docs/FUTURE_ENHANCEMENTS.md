@@ -1,14 +1,68 @@
 # Future Enhancements
 
-Based on AI agent testing and identified gaps in the current system.
+Based on AI agent testing and external AI agent feedback.
 
-## Test Results Summary
+## External AI Agent Feedback (2026-02-14)
 
-**Overall System Performance**: 70% effective
-- Component discovery: 100% success
-- Class generation: 90% valid HTML
-- Component selection: 70% correct choice
-- Accessibility compliance
+Feedback from an AI agent attempting to use fundamental-styles from fundamental-ngx repository.
+
+### What Worked
+- AI Component Index referenced in README
+- Consistent BEM naming convention (`fd-{component}`, `sap-margin-{size}`)
+- Comprehensive utility classes
+
+### What Failed
+| Issue | Impact | Current State |
+|-------|--------|---------------|
+| No CLAUDE.md | First place AI agents look | 404 |
+| No llms.txt | Standard AI discovery file | Missing |
+| CSS classes not in README | Had to parse node_modules | Only in source |
+| Storybook not AI-accessible | Returns JS, not CSS | No fallback |
+| Design tokens scattered | No single reference | In SCSS files |
+| Package structure unclear | Which package for what? | Not documented |
+
+---
+
+## Priority 0: AI Discoverability (NEW - From Feedback)
+
+### 1. Create CLAUDE.md (CRITICAL) ✅ DONE
+
+**Status**: Completed 2026-02-14
+**Location**: `/CLAUDE.md` (root)
+**Contains**:
+- Package overview and install commands
+- Quick start HTML examples
+- Common component examples (button, input, table, dialog)
+- Utility classes reference (sap-margin, sap-flex, sap-padding)
+- Design tokens reference (--sap* variables)
+- Theme list
+- Links to detailed docs
+
+### 2. Create llms.txt (HIGH) ✅ DONE
+
+**Status**: Completed 2026-02-14
+**Location**: `/llms.txt` (root)
+**Contains**: Package overview, AI resource links, quick start, naming conventions
+
+### 3. Update README.md with AI Section (MEDIUM) ✅ DONE
+
+**Status**: Completed 2026-02-14
+**Contains**: Table with links to CLAUDE.md, llms.txt, ai-component-index.md, component-catalog.json, component-relationships.json
+
+### 4. Add Utility Classes to JSON (MEDIUM) ✅ DONE
+
+**Status**: Completed 2026-02-14
+**Location**: `/docs/utility-classes.json`
+**Script**: `scripts/generate-utility-classes.js`
+**Statistics**: 13 categories, 227 classes
+
+**Categories**:
+- margin, padding, flex, display
+- shadow, borderRadius, border
+- typography, heading, elevation
+- position, overflow, accessibility
+
+---
 
 ## Priority 1: Critical Gaps (Must Fix)
 
@@ -152,21 +206,41 @@ Based on AI agent testing and identified gaps in the current system.
 
 ## Recommendation
 
-**High-impact priorities** :
-1. Add accessibility - Legal requirement, 90% improvement
-2. Add use cases - 30% better component selection
+**Immediate priorities** (from external feedback):
+1. Create CLAUDE.md - 1-2 hours, immediate AI discoverability
+2. Create llms.txt - 30 min, standard AI discovery
+3. Document utility classes - 2-3 hours, most common use case
 
-This would bring system effectiveness from **70% → 95%**.
+**High-impact priorities** (from testing):
+4. Add accessibility - Legal requirement, 90% improvement
+5. Add use cases - 30% better component selection
 
-**Medium priorities** :
-3. Modifier rules - Prevent invalid combinations
-4. HTML examples - Faster implementation
+**Combined impact**: 70% → 95%+ effectiveness
 
-**Optional enhancements** - Consider based on user feedback and AI agent usage patterns.
+**Medium priorities**:
+6. Design tokens reference - Enables theming
+7. Modifier rules - Prevent invalid combinations
+8. HTML examples - Faster implementation
 
 ---
 
-**Test Date**: 2026-02-13
-**Status**: Priorities identified, implementation optional
-**Expected Impact**: 70% → 95% effectiveness
+## Summary Table
+
+| Priority | Task | Effort | Impact | Status |
+|----------|------|--------|--------|--------|
+| P0 | CLAUDE.md | 1-2h | Critical | ✅ Done |
+| P0 | llms.txt | 30m | High | ✅ Done |
+| P0 | README AI section | 15m | Medium | ✅ Done |
+| P0 | Utility classes in JSON | 2-3h | High | ✅ Done |
+| P1 | Accessibility info | 3-4h | Critical | Pending |
+| P1 | Use case guidance | 2-3h | High | Pending |
+| P2 | Design tokens | 2-3h | Medium | Pending |
+| P2 | Modifier rules | 1-2h | Medium | Pending |
+| P2 | HTML examples | 2-3h | Low | Pending |
+
+---
+
+**Last Updated**: 2026-02-14
+**Status**: Priorities identified from internal testing + external AI agent feedback
+**Expected Impact**: 70% → 95%+ effectiveness
 
