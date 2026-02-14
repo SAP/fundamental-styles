@@ -1,0 +1,86 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://sap.github.io/fundamental-styles/schemas/panel.json",
+  "title": "Panel Component",
+  "description": "The panel is a container for grouping and displaying information. Panels are responsive and can be collapsed to save additional screen space.",
+  "type": "object",
+  "properties": {
+    "baseClass": {
+      "const": "fd-panel",
+      "description": "Required base class"
+    },
+    "modifiers": {
+      "type": "array",
+      "items": {
+        "enum": [
+          "fd-panel--no-padding",
+          "fd-panel--fixed",
+          "fd-panel--sticky",
+          "fd-panel--borderless",
+          "fd-panel--transparent"
+        ]
+      },
+      "description": "Optional modifier classes"
+    },
+    "elements": {
+      "type": "object",
+      "description": "Optional element classes with their available modifiers",
+      "properties": {
+        "fd-panel__content": {
+          "type": "object",
+          "description": "content element",
+          "properties": {
+            "class": {
+              "const": "fd-panel__content",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-panel__title": {
+          "type": "object",
+          "description": "title element",
+          "properties": {
+            "class": {
+              "const": "fd-panel__title",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-panel__header": {
+          "type": "object",
+          "description": "header element",
+          "properties": {
+            "class": {
+              "const": "fd-panel__header",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-panel__expand": {
+          "type": "object",
+          "description": "expand element",
+          "properties": {
+            "class": {
+              "const": "fd-panel__expand",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-panel__button": {
+          "type": "object",
+          "description": "button element",
+          "properties": {
+            "class": {
+              "const": "fd-panel__button",
+              "description": "Element class name"
+            }
+          }
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "required": [
+    "baseClass"
+  ]
+}

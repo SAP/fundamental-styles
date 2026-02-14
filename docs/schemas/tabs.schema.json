@@ -1,0 +1,165 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://sap.github.io/fundamental-styles/schemas/tabs.json",
+  "title": "Tabs Component",
+  "description": "Tabs component",
+  "type": "object",
+  "properties": {
+    "baseClass": {
+      "const": "fd-tabs__process",
+      "description": "Required base class"
+    },
+    "modifiers": {
+      "type": "array",
+      "items": {
+        "enum": [
+          "fd-tabs__process--error",
+          "fd-tabs__process--warning",
+          "fd-tabs__process--success",
+          "fd-tabs__process--information",
+          "fd-tabs__process--neutral",
+          "fd-tabs__process--icon-only",
+          "fd-tabs__process--process",
+          "fd-tabs__process--filter",
+          "fd-tabs__process--header",
+          "fd-tabs__process--s",
+          "fd-tabs__process--m",
+          "fd-tabs__process--l",
+          "fd-tabs__process--xl",
+          "fd-tabs__process--xxl"
+        ]
+      },
+      "description": "Optional modifier classes"
+    },
+    "elements": {
+      "type": "object",
+      "description": "Optional element classes with their available modifiers",
+      "properties": {
+        "fd-tabs__process__count": {
+          "type": "object",
+          "description": "count element",
+          "properties": {
+            "class": {
+              "const": "fd-tabs__process__count",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-tabs__process__link": {
+          "type": "object",
+          "description": "link element",
+          "properties": {
+            "class": {
+              "const": "fd-tabs__process__link",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-tabs__process__item": {
+          "type": "object",
+          "description": "item element",
+          "properties": {
+            "class": {
+              "const": "fd-tabs__process__item",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-tabs__process__icon": {
+          "type": "object",
+          "description": "icon element",
+          "properties": {
+            "class": {
+              "const": "fd-tabs__process__icon",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-tabs__process__tag": {
+          "type": "object",
+          "description": "tag element",
+          "properties": {
+            "class": {
+              "const": "fd-tabs__process__tag",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-tabs__process__panel": {
+          "type": "object",
+          "description": "panel element",
+          "properties": {
+            "class": {
+              "const": "fd-tabs__process__panel",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-tabs__process__counter-header": {
+          "type": "object",
+          "description": "counter-header element",
+          "properties": {
+            "class": {
+              "const": "fd-tabs__process__counter-header",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-tabs__process__overflow": {
+          "type": "object",
+          "description": "overflow element",
+          "properties": {
+            "class": {
+              "const": "fd-tabs__process__overflow",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-tabs__process__process-icon": {
+          "type": "object",
+          "description": "process-icon element",
+          "properties": {
+            "class": {
+              "const": "fd-tabs__process__process-icon",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-tabs__process__label": {
+          "type": "object",
+          "description": "label element",
+          "properties": {
+            "class": {
+              "const": "fd-tabs__process__label",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-tabs__process__separator": {
+          "type": "object",
+          "description": "separator element",
+          "properties": {
+            "class": {
+              "const": "fd-tabs__process__separator",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-tabs__process__header": {
+          "type": "object",
+          "description": "header element",
+          "properties": {
+            "class": {
+              "const": "fd-tabs__process__header",
+              "description": "Element class name"
+            }
+          }
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "required": [
+    "baseClass"
+  ]
+}

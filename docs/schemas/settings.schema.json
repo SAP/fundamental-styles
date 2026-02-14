@@ -1,0 +1,96 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://sap.github.io/fundamental-styles/schemas/settings.json",
+  "title": "Settings Component",
+  "description": "The Settings Dialog allows users to personalize their Fiori experience by adjusting various settings.<br><br> <h3>Layout and Structure</h3>",
+  "type": "object",
+  "properties": {
+    "baseClass": {
+      "const": "fd-settings",
+      "description": "Required base class"
+    },
+    "modifiers": {
+      "type": "array",
+      "items": {
+        "enum": [
+          "fd-settings--footer",
+          "fd-settings--no-padding",
+          "fd-settings--no-background"
+        ]
+      },
+      "description": "Optional modifier classes"
+    },
+    "elements": {
+      "type": "object",
+      "description": "Optional element classes with their available modifiers",
+      "properties": {
+        "fd-settings__list-area": {
+          "type": "object",
+          "description": "list-area element",
+          "properties": {
+            "class": {
+              "const": "fd-settings__list-area",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-settings__list-container": {
+          "type": "object",
+          "description": "list-container element",
+          "properties": {
+            "class": {
+              "const": "fd-settings__list-container",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-settings__detail-area": {
+          "type": "object",
+          "description": "detail-area element",
+          "properties": {
+            "class": {
+              "const": "fd-settings__detail-area",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-settings__content": {
+          "type": "object",
+          "description": "content element",
+          "properties": {
+            "class": {
+              "const": "fd-settings__content",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-settings__container": {
+          "type": "object",
+          "description": "container element",
+          "properties": {
+            "class": {
+              "const": "fd-settings__container",
+              "description": "Element class name"
+            },
+            "modifiers": {
+              "type": "array",
+              "items": {
+                "enum": [
+                  "fd-settings__container--sm",
+                  "fd-settings__container--md",
+                  "fd-settings__container--lg",
+                  "fd-settings__container--xl"
+                ]
+              },
+              "description": "Available modifiers for this element"
+            }
+          }
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "required": [
+    "baseClass"
+  ]
+}

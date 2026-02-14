@@ -1,0 +1,55 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://sap.github.io/fundamental-styles/schemas/token.json",
+  "title": "Token Component",
+  "description": "Tokens are small items of information (similar to tags) that mainly serve to visualize previously selected items. The tokenizer is the container that handles the tokens. Tokens can be added, removed, selected, or deselected.",
+  "type": "object",
+  "properties": {
+    "baseClass": {
+      "const": "fd-token",
+      "description": "Required base class"
+    },
+    "modifiers": {
+      "type": "array",
+      "items": {
+        "enum": [
+          "fd-token--disabled",
+          "fd-token--readonly",
+          "fd-token--display",
+          "fd-token--selected"
+        ]
+      },
+      "description": "Optional modifier classes"
+    },
+    "elements": {
+      "type": "object",
+      "description": "Optional element classes with their available modifiers",
+      "properties": {
+        "fd-token__text": {
+          "type": "object",
+          "description": "text element",
+          "properties": {
+            "class": {
+              "const": "fd-token__text",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-token__close": {
+          "type": "object",
+          "description": "close element",
+          "properties": {
+            "class": {
+              "const": "fd-token__close",
+              "description": "Element class name"
+            }
+          }
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "required": [
+    "baseClass"
+  ]
+}

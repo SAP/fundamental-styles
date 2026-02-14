@@ -1,0 +1,63 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://sap.github.io/fundamental-styles/schemas/action-sheet.json",
+  "title": "Action Sheet Component",
+  "description": "An action sheet consists of a list of options a user can select from to complete an action. Actions can be",
+  "type": "object",
+  "properties": {
+    "baseClass": {
+      "const": "fd-action-sheet",
+      "description": "Required base class"
+    },
+    "modifiers": {
+      "type": "array",
+      "items": {
+        "enum": [
+          "fd-action-sheet--active",
+          "fd-action-sheet--mobile"
+        ]
+      },
+      "description": "Optional modifier classes"
+    },
+    "elements": {
+      "type": "object",
+      "description": "Optional element classes with their available modifiers",
+      "properties": {
+        "fd-action-sheet__item": {
+          "type": "object",
+          "description": "item element",
+          "properties": {
+            "class": {
+              "const": "fd-action-sheet__item",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-action-sheet__wrapper": {
+          "type": "object",
+          "description": "wrapper element",
+          "properties": {
+            "class": {
+              "const": "fd-action-sheet__wrapper",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-action-sheet__title": {
+          "type": "object",
+          "description": "title element",
+          "properties": {
+            "class": {
+              "const": "fd-action-sheet__title",
+              "description": "Element class name"
+            }
+          }
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "required": [
+    "baseClass"
+  ]
+}

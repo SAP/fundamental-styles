@@ -1,0 +1,82 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://sap.github.io/fundamental-styles/schemas/pagination.json",
+  "title": "Pagination Component",
+  "description": "Pagination allows users to separate their content into discrete pages, making it easier to digest and navigate through. Pagination is commonly used for tables and tiles.",
+  "type": "object",
+  "properties": {
+    "baseClass": {
+      "const": "fd-pagination",
+      "description": "Required base class"
+    },
+    "modifiers": {
+      "type": "array",
+      "items": {
+        "enum": [
+          "fd-pagination--mobile",
+          "fd-pagination--short"
+        ]
+      },
+      "description": "Optional modifier classes"
+    },
+    "elements": {
+      "type": "object",
+      "description": "Optional element classes with their available modifiers",
+      "properties": {
+        "fd-pagination__per-page": {
+          "type": "object",
+          "description": "per-page element",
+          "properties": {
+            "class": {
+              "const": "fd-pagination__per-page",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-pagination__nav": {
+          "type": "object",
+          "description": "nav element",
+          "properties": {
+            "class": {
+              "const": "fd-pagination__nav",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-pagination__more": {
+          "type": "object",
+          "description": "more element",
+          "properties": {
+            "class": {
+              "const": "fd-pagination__more",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-pagination__button": {
+          "type": "object",
+          "description": "button element",
+          "properties": {
+            "class": {
+              "const": "fd-pagination__button",
+              "description": "Element class name"
+            },
+            "modifiers": {
+              "type": "array",
+              "items": {
+                "enum": [
+                  "fd-pagination__button--mobile"
+                ]
+              },
+              "description": "Available modifiers for this element"
+            }
+          }
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "required": [
+    "baseClass"
+  ]
+}

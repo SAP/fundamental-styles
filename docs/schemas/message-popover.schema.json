@@ -1,0 +1,33 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://sap.github.io/fundamental-styles/schemas/message-popover.json",
+  "title": "Message Popover Component",
+  "description": "A Message Popover is used to display a summarized list of different types of messages (error, warning, success, and information messages).",
+  "type": "object",
+  "properties": {
+    "baseClass": {
+      "const": "fd-message-popover",
+      "description": "Required base class"
+    },
+    "elements": {
+      "type": "object",
+      "description": "Optional element classes with their available modifiers",
+      "properties": {
+        "fd-message-popover__trigger": {
+          "type": "object",
+          "description": "trigger element",
+          "properties": {
+            "class": {
+              "const": "fd-message-popover__trigger",
+              "description": "Element class name"
+            }
+          }
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "required": [
+    "baseClass"
+  ]
+}

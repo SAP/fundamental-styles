@@ -1,0 +1,55 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://sap.github.io/fundamental-styles/schemas/status-indicator.json",
+  "title": "Status Indicator Component",
+  "description": "The status indicator displays a SVG images that indicate a pictorial representation of an object.",
+  "type": "object",
+  "properties": {
+    "baseClass": {
+      "const": "fd-status-indicator",
+      "description": "Required base class"
+    },
+    "modifiers": {
+      "type": "array",
+      "items": {
+        "enum": [
+          "fd-status-indicator--horizontal-label",
+          "fd-status-indicator--link"
+        ]
+      },
+      "description": "Optional modifier classes"
+    },
+    "elements": {
+      "type": "object",
+      "description": "Optional element classes with their available modifiers",
+      "properties": {
+        "fd-status-indicator__label": {
+          "type": "object",
+          "description": "label element",
+          "properties": {
+            "class": {
+              "const": "fd-status-indicator__label",
+              "description": "Element class name"
+            },
+            "modifiers": {
+              "type": "array",
+              "items": {
+                "enum": [
+                  "fd-status-indicator__label--top",
+                  "fd-status-indicator__label--right",
+                  "fd-status-indicator__label--left",
+                  "fd-status-indicator__label--bottom"
+                ]
+              },
+              "description": "Available modifiers for this element"
+            }
+          }
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "required": [
+    "baseClass"
+  ]
+}

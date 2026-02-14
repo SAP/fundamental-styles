@@ -1,0 +1,57 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://sap.github.io/fundamental-styles/schemas/alert.json",
+  "title": "Alert Component",
+  "description": "Important message banner for critical system messages",
+  "type": "object",
+  "properties": {
+    "baseClass": {
+      "const": "fd-alert",
+      "description": "Required base class"
+    },
+    "modifiers": {
+      "type": "array",
+      "items": {
+        "enum": [
+          "fd-alert--dismissible",
+          "fd-alert--warning",
+          "fd-alert--information",
+          "fd-alert--success",
+          "fd-alert--error",
+          "fd-alert--no-icon"
+        ]
+      },
+      "description": "Optional modifier classes"
+    },
+    "elements": {
+      "type": "object",
+      "description": "Optional element classes with their available modifiers",
+      "properties": {
+        "fd-alert__close": {
+          "type": "object",
+          "description": "close element",
+          "properties": {
+            "class": {
+              "const": "fd-alert__close",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-alert__text": {
+          "type": "object",
+          "description": "text element",
+          "properties": {
+            "class": {
+              "const": "fd-alert__text",
+              "description": "Element class name"
+            }
+          }
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "required": [
+    "baseClass"
+  ]
+}

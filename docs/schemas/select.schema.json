@@ -1,0 +1,43 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://sap.github.io/fundamental-styles/schemas/select.json",
+  "title": "Select Component",
+  "description": "Dropdown selection control for choosing one option from many",
+  "type": "object",
+  "properties": {
+    "baseClass": {
+      "const": "fd-select",
+      "description": "Required base class"
+    },
+    "elements": {
+      "type": "object",
+      "description": "Optional element classes with their available modifiers",
+      "properties": {
+        "fd-select__control": {
+          "type": "object",
+          "description": "control element",
+          "properties": {
+            "class": {
+              "const": "fd-select__control",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-select__text-content": {
+          "type": "object",
+          "description": "text-content element",
+          "properties": {
+            "class": {
+              "const": "fd-select__text-content",
+              "description": "Element class name"
+            }
+          }
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "required": [
+    "baseClass"
+  ]
+}

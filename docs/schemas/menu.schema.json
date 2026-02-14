@@ -1,0 +1,175 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://sap.github.io/fundamental-styles/schemas/menu.json",
+  "title": "Menu Component",
+  "description": "Contextual menu with list of actions or options",
+  "type": "object",
+  "properties": {
+    "baseClass": {
+      "const": "fd-menu",
+      "description": "Required base class"
+    },
+    "modifiers": {
+      "type": "array",
+      "items": {
+        "enum": [
+          "fd-menu--no-shadow",
+          "fd-menu--submenu",
+          "fd-menu--overflow",
+          "fd-menu--full-width",
+          "fd-menu--icons",
+          "fd-menu--mobile"
+        ]
+      },
+      "description": "Optional modifier classes"
+    },
+    "elements": {
+      "type": "object",
+      "description": "Optional element classes with their available modifiers",
+      "properties": {
+        "fd-menu__list": {
+          "type": "object",
+          "description": "list element",
+          "properties": {
+            "class": {
+              "const": "fd-menu__list",
+              "description": "Element class name"
+            },
+            "modifiers": {
+              "type": "array",
+              "items": {
+                "enum": [
+                  "fd-menu__list--overflow"
+                ]
+              },
+              "description": "Available modifiers for this element"
+            }
+          }
+        },
+        "fd-menu__sublist": {
+          "type": "object",
+          "description": "sublist element",
+          "properties": {
+            "class": {
+              "const": "fd-menu__sublist",
+              "description": "Element class name"
+            },
+            "modifiers": {
+              "type": "array",
+              "items": {
+                "enum": [
+                  "fd-menu__sublist--icons"
+                ]
+              },
+              "description": "Available modifiers for this element"
+            }
+          }
+        },
+        "fd-menu__list--overflow": {
+          "type": "object",
+          "description": "list--overflow element",
+          "properties": {
+            "class": {
+              "const": "fd-menu__list--overflow",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-menu__separator": {
+          "type": "object",
+          "description": "separator element",
+          "properties": {
+            "class": {
+              "const": "fd-menu__separator",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-menu__item": {
+          "type": "object",
+          "description": "item element",
+          "properties": {
+            "class": {
+              "const": "fd-menu__item",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-menu__link": {
+          "type": "object",
+          "description": "link element",
+          "properties": {
+            "class": {
+              "const": "fd-menu__link",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-menu__title": {
+          "type": "object",
+          "description": "title element",
+          "properties": {
+            "class": {
+              "const": "fd-menu__title",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-menu__addon-before": {
+          "type": "object",
+          "description": "addon-before element",
+          "properties": {
+            "class": {
+              "const": "fd-menu__addon-before",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-menu__addon-after": {
+          "type": "object",
+          "description": "addon-after element",
+          "properties": {
+            "class": {
+              "const": "fd-menu__addon-after",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-menu__active-dot": {
+          "type": "object",
+          "description": "active-dot element",
+          "properties": {
+            "class": {
+              "const": "fd-menu__active-dot",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-menu__checkmark": {
+          "type": "object",
+          "description": "checkmark element",
+          "properties": {
+            "class": {
+              "const": "fd-menu__checkmark",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-menu__shortcut": {
+          "type": "object",
+          "description": "shortcut element",
+          "properties": {
+            "class": {
+              "const": "fd-menu__shortcut",
+              "description": "Element class name"
+            }
+          }
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "required": [
+    "baseClass"
+  ]
+}

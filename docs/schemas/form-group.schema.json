@@ -1,0 +1,55 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://sap.github.io/fundamental-styles/schemas/form-group.json",
+  "title": "Form Group Component",
+  "description": "Form Group component",
+  "type": "object",
+  "properties": {
+    "baseClass": {
+      "const": "fd-form-group",
+      "description": "Required base class"
+    },
+    "modifiers": {
+      "type": "array",
+      "items": {
+        "enum": [
+          "fd-form-group--inline",
+          "fd-form-group--with-spacing",
+          "fd-form-group--no-padding",
+          "fd-form-group--no-border"
+        ]
+      },
+      "description": "Optional modifier classes"
+    },
+    "elements": {
+      "type": "object",
+      "description": "Optional element classes with their available modifiers",
+      "properties": {
+        "fd-form-group__header": {
+          "type": "object",
+          "description": "header element",
+          "properties": {
+            "class": {
+              "const": "fd-form-group__header",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-form-group__header-text": {
+          "type": "object",
+          "description": "header-text element",
+          "properties": {
+            "class": {
+              "const": "fd-form-group__header-text",
+              "description": "Element class name"
+            }
+          }
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "required": [
+    "baseClass"
+  ]
+}

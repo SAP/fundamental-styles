@@ -1,0 +1,55 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://sap.github.io/fundamental-styles/schemas/facet.json",
+  "title": "Facet Component",
+  "description": "Facet component",
+  "type": "object",
+  "properties": {
+    "baseClass": {
+      "const": "fd-facet",
+      "description": "Required base class"
+    },
+    "modifiers": {
+      "type": "array",
+      "items": {
+        "enum": [
+          "fd-facet--image",
+          "fd-facet--form",
+          "fd-facet--key-value",
+          "fd-facet--rating-indicator"
+        ]
+      },
+      "description": "Optional modifier classes"
+    },
+    "elements": {
+      "type": "object",
+      "description": "Optional element classes with their available modifiers",
+      "properties": {
+        "fd-facet__container": {
+          "type": "object",
+          "description": "container element",
+          "properties": {
+            "class": {
+              "const": "fd-facet__container",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-facet__form-value": {
+          "type": "object",
+          "description": "form-value element",
+          "properties": {
+            "class": {
+              "const": "fd-facet__form-value",
+              "description": "Element class name"
+            }
+          }
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "required": [
+    "baseClass"
+  ]
+}

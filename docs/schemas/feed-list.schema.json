@@ -1,0 +1,98 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://sap.github.io/fundamental-styles/schemas/feed-list.json",
+  "title": "Feed List Component",
+  "description": "The feed list displays feed list items that individually consist of a username, a written entry and an optional image. There is also a separate byline below that can contain a time stamp or an attribute in the form of free text.",
+  "type": "object",
+  "properties": {
+    "baseClass": {
+      "const": "fd-feed-list",
+      "description": "Required base class"
+    },
+    "modifiers": {
+      "type": "array",
+      "items": {
+        "enum": [
+          "fd-feed-list--no-border",
+          "fd-feed-list--more",
+          "fd-feed-list--group",
+          "fd-feed-list--link",
+          "fd-feed-list--byline",
+          "fd-feed-list--s",
+          "fd-feed-list--header"
+        ]
+      },
+      "description": "Optional modifier classes"
+    },
+    "elements": {
+      "type": "object",
+      "description": "Optional element classes with their available modifiers",
+      "properties": {
+        "fd-feed-list__body": {
+          "type": "object",
+          "description": "body element",
+          "properties": {
+            "class": {
+              "const": "fd-feed-list__body",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-feed-list__link": {
+          "type": "object",
+          "description": "link element",
+          "properties": {
+            "class": {
+              "const": "fd-feed-list__link",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-feed-list__actions": {
+          "type": "object",
+          "description": "actions element",
+          "properties": {
+            "class": {
+              "const": "fd-feed-list__actions",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-feed-list__name": {
+          "type": "object",
+          "description": "name element",
+          "properties": {
+            "class": {
+              "const": "fd-feed-list__name",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-feed-list__text": {
+          "type": "object",
+          "description": "text element",
+          "properties": {
+            "class": {
+              "const": "fd-feed-list__text",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-feed-list__footer": {
+          "type": "object",
+          "description": "footer element",
+          "properties": {
+            "class": {
+              "const": "fd-feed-list__footer",
+              "description": "Element class name"
+            }
+          }
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "required": [
+    "baseClass"
+  ]
+}

@@ -1,0 +1,146 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://sap.github.io/fundamental-styles/schemas/splitter.json",
+  "title": "Splitter Component",
+  "description": "Splitter component",
+  "type": "object",
+  "properties": {
+    "baseClass": {
+      "const": "fd-splitter",
+      "description": "Required base class"
+    },
+    "modifiers": {
+      "type": "array",
+      "items": {
+        "enum": [
+          "fd-splitter--horizontal",
+          "fd-splitter--vertical",
+          "fd-splitter--translucent",
+          "fd-splitter--solid",
+          "fd-splitter--active"
+        ]
+      },
+      "description": "Optional modifier classes"
+    },
+    "elements": {
+      "type": "object",
+      "description": "Optional element classes with their available modifiers",
+      "properties": {
+        "fd-splitter__pagination": {
+          "type": "object",
+          "description": "pagination element",
+          "properties": {
+            "class": {
+              "const": "fd-splitter__pagination",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-splitter__pagination-item-dot": {
+          "type": "object",
+          "description": "pagination-item-dot element",
+          "properties": {
+            "class": {
+              "const": "fd-splitter__pagination-item-dot",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-splitter__resizer": {
+          "type": "object",
+          "description": "resizer element",
+          "properties": {
+            "class": {
+              "const": "fd-splitter__resizer",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-splitter__resizer-grip": {
+          "type": "object",
+          "description": "resizer-grip element",
+          "properties": {
+            "class": {
+              "const": "fd-splitter__resizer-grip",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-splitter__resizer-grip-icon": {
+          "type": "object",
+          "description": "resizer-grip-icon element",
+          "properties": {
+            "class": {
+              "const": "fd-splitter__resizer-grip-icon",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-splitter__resizer-decoration-before": {
+          "type": "object",
+          "description": "resizer-decoration-before element",
+          "properties": {
+            "class": {
+              "const": "fd-splitter__resizer-decoration-before",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-splitter__resizer-decoration-after": {
+          "type": "object",
+          "description": "resizer-decoration-after element",
+          "properties": {
+            "class": {
+              "const": "fd-splitter__resizer-decoration-after",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-splitter__pane-container": {
+          "type": "object",
+          "description": "pane-container element",
+          "properties": {
+            "class": {
+              "const": "fd-splitter__pane-container",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-splitter__pane": {
+          "type": "object",
+          "description": "pane element",
+          "properties": {
+            "class": {
+              "const": "fd-splitter__pane",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-splitter__split-pane": {
+          "type": "object",
+          "description": "split-pane element",
+          "properties": {
+            "class": {
+              "const": "fd-splitter__split-pane",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-splitter__pagination-item": {
+          "type": "object",
+          "description": "pagination-item element",
+          "properties": {
+            "class": {
+              "const": "fd-splitter__pagination-item",
+              "description": "Element class name"
+            }
+          }
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "required": [
+    "baseClass"
+  ]
+}

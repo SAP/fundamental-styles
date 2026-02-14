@@ -1,0 +1,93 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://sap.github.io/fundamental-styles/schemas/file-uploader.json",
+  "title": "File Uploader Component",
+  "description": "The File Uploader component allows the user to select the files from the system to upload.",
+  "type": "object",
+  "properties": {
+    "baseClass": {
+      "const": "fd-file-uploader",
+      "description": "Required base class"
+    },
+    "elements": {
+      "type": "object",
+      "description": "Optional element classes with their available modifiers",
+      "properties": {
+        "fd-file-uploader__container": {
+          "type": "object",
+          "description": "container element",
+          "properties": {
+            "class": {
+              "const": "fd-file-uploader__container",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-file-uploader__hidden": {
+          "type": "object",
+          "description": "hidden element",
+          "properties": {
+            "class": {
+              "const": "fd-file-uploader__hidden",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-file-uploader__uploaded-files": {
+          "type": "object",
+          "description": "uploaded-files element",
+          "properties": {
+            "class": {
+              "const": "fd-file-uploader__uploaded-files",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-file-uploader__label": {
+          "type": "object",
+          "description": "label element",
+          "properties": {
+            "class": {
+              "const": "fd-file-uploader__label",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-file-uploader__list": {
+          "type": "object",
+          "description": "list element",
+          "properties": {
+            "class": {
+              "const": "fd-file-uploader__list",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-file-uploader__list-item": {
+          "type": "object",
+          "description": "list-item element",
+          "properties": {
+            "class": {
+              "const": "fd-file-uploader__list-item",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-file-uploader__actions": {
+          "type": "object",
+          "description": "actions element",
+          "properties": {
+            "class": {
+              "const": "fd-file-uploader__actions",
+              "description": "Element class name"
+            }
+          }
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "required": [
+    "baseClass"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://sap.github.io/fundamental-styles/schemas/horizontal-navigation.json",
+  "title": "Horizontal Navigation Component",
+  "description": "Horizontal Navigation component",
+  "type": "object",
+  "properties": {
+    "baseClass": {
+      "const": "fd-horizontal-navigation",
+      "description": "Required base class"
+    }
+  },
+  "required": [
+    "baseClass"
+  ]
+}

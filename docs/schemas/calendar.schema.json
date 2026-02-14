@@ -1,0 +1,183 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://sap.github.io/fundamental-styles/schemas/calendar.json",
+  "title": "Calendar Component",
+  "description": "The calendar component allows users to navigate to a single date, multiple days, whole week(s), or a date range, showing all time-related data within a given timeframe.",
+  "type": "object",
+  "properties": {
+    "baseClass": {
+      "const": "fd-calendar",
+      "description": "Required base class"
+    },
+    "modifiers": {
+      "type": "array",
+      "items": {
+        "enum": [
+          "fd-calendar--arrow-left",
+          "fd-calendar--arrow-right",
+          "fd-calendar--weekend",
+          "fd-calendar--other",
+          "fd-calendar--selected",
+          "fd-calendar--range",
+          "fd-calendar--today",
+          "fd-calendar--side-helper",
+          "fd-calendar--years",
+          "fd-calendar--months",
+          "fd-calendar--screen-reader-only",
+          "fd-calendar--mobile-landscape",
+          "fd-calendar--mobile-portrait",
+          "fd-calendar--mobile",
+          "fd-calendar--auto-column",
+          "fd-calendar--appointment",
+          "fd-calendar--work",
+          "fd-calendar--non-work",
+          "fd-calendar--placeholder-",
+          "fd-calendar--vertical"
+        ]
+      },
+      "description": "Optional modifier classes"
+    },
+    "elements": {
+      "type": "object",
+      "description": "Optional element classes with their available modifiers",
+      "properties": {
+        "fd-calendar__navigation": {
+          "type": "object",
+          "description": "navigation element",
+          "properties": {
+            "class": {
+              "const": "fd-calendar__navigation",
+              "description": "Element class name"
+            },
+            "modifiers": {
+              "type": "array",
+              "items": {
+                "enum": [
+                  "fd-calendar__navigation--main"
+                ]
+              },
+              "description": "Available modifiers for this element"
+            }
+          }
+        },
+        "fd-calendar__action": {
+          "type": "object",
+          "description": "action element",
+          "properties": {
+            "class": {
+              "const": "fd-calendar__action",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-calendar__text-wrapper": {
+          "type": "object",
+          "description": "text-wrapper element",
+          "properties": {
+            "class": {
+              "const": "fd-calendar__text-wrapper",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-calendar__item": {
+          "type": "object",
+          "description": "item element",
+          "properties": {
+            "class": {
+              "const": "fd-calendar__item",
+              "description": "Element class name"
+            },
+            "modifiers": {
+              "type": "array",
+              "items": {
+                "enum": [
+                  "fd-calendar__item--today",
+                  "fd-calendar__item--legend-",
+                  "fd-calendar__item--selected",
+                  "fd-calendar__item--range",
+                  "fd-calendar__item--other"
+                ]
+              },
+              "description": "Available modifiers for this element"
+            }
+          }
+        },
+        "fd-calendar__content": {
+          "type": "object",
+          "description": "content element",
+          "properties": {
+            "class": {
+              "const": "fd-calendar__content",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-calendar__group": {
+          "type": "object",
+          "description": "group element",
+          "properties": {
+            "class": {
+              "const": "fd-calendar__group",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-calendar__row": {
+          "type": "object",
+          "description": "row element",
+          "properties": {
+            "class": {
+              "const": "fd-calendar__row",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-calendar__text": {
+          "type": "object",
+          "description": "text element",
+          "properties": {
+            "class": {
+              "const": "fd-calendar__text",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-calendar__hidden": {
+          "type": "object",
+          "description": "hidden element",
+          "properties": {
+            "class": {
+              "const": "fd-calendar__hidden",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-calendar__navigation--main": {
+          "type": "object",
+          "description": "navigation--main element",
+          "properties": {
+            "class": {
+              "const": "fd-calendar__navigation--main",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-calendar__marker": {
+          "type": "object",
+          "description": "marker element",
+          "properties": {
+            "class": {
+              "const": "fd-calendar__marker",
+              "description": "Element class name"
+            }
+          }
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "required": [
+    "baseClass"
+  ]
+}

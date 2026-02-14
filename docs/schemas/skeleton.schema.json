@@ -1,0 +1,53 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://sap.github.io/fundamental-styles/schemas/skeleton.json",
+  "title": "Skeleton Component",
+  "description": "Placeholder loading is a type of busy indicator that provides the user with a skeleton page as a placeholder while the content is still loading. The aim is to inform the user of the ongoing loading progress.",
+  "type": "object",
+  "properties": {
+    "baseClass": {
+      "const": "fd-skeleton",
+      "description": "Required base class"
+    },
+    "elements": {
+      "type": "object",
+      "description": "Optional element classes with their available modifiers",
+      "properties": {
+        "fd-skeleton__canvas": {
+          "type": "object",
+          "description": "canvas element",
+          "properties": {
+            "class": {
+              "const": "fd-skeleton__canvas",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-skeleton__outer": {
+          "type": "object",
+          "description": "outer element",
+          "properties": {
+            "class": {
+              "const": "fd-skeleton__outer",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-skeleton__middle": {
+          "type": "object",
+          "description": "middle element",
+          "properties": {
+            "class": {
+              "const": "fd-skeleton__middle",
+              "description": "Element class name"
+            }
+          }
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "required": [
+    "baseClass"
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://sap.github.io/fundamental-styles/schemas/tool-layout.json",
+  "title": "Tool Layout Component",
+  "description": "Tool Layout component",
+  "type": "object",
+  "properties": {
+    "baseClass": {
+      "const": "fd-tool-layout",
+      "description": "Required base class"
+    },
+    "modifiers": {
+      "type": "array",
+      "items": {
+        "enum": [
+          "fd-tool-layout--horizontal",
+          "fd-tool-layout--transparent",
+          "fd-tool-layout--list",
+          "fd-tool-layout--horizontal-navigation",
+          "fd-tool-layout--tablet",
+          "fd-tool-layout--phone",
+          "fd-tool-layout--sticky"
+        ]
+      },
+      "description": "Optional modifier classes"
+    },
+    "elements": {
+      "type": "object",
+      "description": "Optional element classes with their available modifiers",
+      "properties": {
+        "fd-tool-layout__container": {
+          "type": "object",
+          "description": "container element",
+          "properties": {
+            "class": {
+              "const": "fd-tool-layout__container",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-tool-layout__header-container": {
+          "type": "object",
+          "description": "header-container element",
+          "properties": {
+            "class": {
+              "const": "fd-tool-layout__header-container",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-tool-layout__navigation-container": {
+          "type": "object",
+          "description": "navigation-container element",
+          "properties": {
+            "class": {
+              "const": "fd-tool-layout__navigation-container",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-tool-layout__content-container": {
+          "type": "object",
+          "description": "content-container element",
+          "properties": {
+            "class": {
+              "const": "fd-tool-layout__content-container",
+              "description": "Element class name"
+            }
+          }
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "required": [
+    "baseClass"
+  ]
+}

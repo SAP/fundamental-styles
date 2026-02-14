@@ -1,0 +1,57 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://sap.github.io/fundamental-styles/schemas/avatar-group.json",
+  "title": "Avatar Group Component",
+  "description": "The avatar group displays a number of avatars, which act as a digital representation of a user. This control is useful for visualizing a team, project team members, or a group of employees, for example. <br />",
+  "type": "object",
+  "properties": {
+    "baseClass": {
+      "const": "fd-avatar",
+      "description": "Required base class"
+    },
+    "modifiers": {
+      "type": "array",
+      "items": {
+        "enum": [
+          "fd-avatar--no-padding",
+          "fd-avatar--no-horizontal-scroll",
+          "fd-avatar--no-vertical-scroll",
+          "fd-avatar--vertical",
+          "fd-avatar--individual-type",
+          "fd-avatar--group-type"
+        ]
+      },
+      "description": "Optional modifier classes"
+    },
+    "elements": {
+      "type": "object",
+      "description": "Optional element classes with their available modifiers",
+      "properties": {
+        "fd-avatar__overflow-body": {
+          "type": "object",
+          "description": "overflow-body element",
+          "properties": {
+            "class": {
+              "const": "fd-avatar__overflow-body",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-avatar__popover-control": {
+          "type": "object",
+          "description": "popover-control element",
+          "properties": {
+            "class": {
+              "const": "fd-avatar__popover-control",
+              "description": "Element class name"
+            }
+          }
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "required": [
+    "baseClass"
+  ]
+}

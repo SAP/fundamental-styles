@@ -1,0 +1,92 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://sap.github.io/fundamental-styles/schemas/quick-view.json",
+  "title": "Quick View Component",
+  "description": "The quick view is similar to a popover but has a predefined structure, a fixed set of UI",
+  "type": "object",
+  "properties": {
+    "baseClass": {
+      "const": "fd-quick-view",
+      "description": "Required base class"
+    },
+    "modifiers": {
+      "type": "array",
+      "items": {
+        "enum": [
+          "fd-quick-view--header-with-subheader"
+        ]
+      },
+      "description": "Optional modifier classes"
+    },
+    "elements": {
+      "type": "object",
+      "description": "Optional element classes with their available modifiers",
+      "properties": {
+        "fd-quick-view__content": {
+          "type": "object",
+          "description": "content element",
+          "properties": {
+            "class": {
+              "const": "fd-quick-view__content",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-quick-view__left": {
+          "type": "object",
+          "description": "left element",
+          "properties": {
+            "class": {
+              "const": "fd-quick-view__left",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-quick-view__middle": {
+          "type": "object",
+          "description": "middle element",
+          "properties": {
+            "class": {
+              "const": "fd-quick-view__middle",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-quick-view__right": {
+          "type": "object",
+          "description": "right element",
+          "properties": {
+            "class": {
+              "const": "fd-quick-view__right",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-quick-view__subheader-text": {
+          "type": "object",
+          "description": "subheader-text element",
+          "properties": {
+            "class": {
+              "const": "fd-quick-view__subheader-text",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-quick-view__subtitle": {
+          "type": "object",
+          "description": "subtitle element",
+          "properties": {
+            "class": {
+              "const": "fd-quick-view__subtitle",
+              "description": "Element class name"
+            }
+          }
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "required": [
+    "baseClass"
+  ]
+}

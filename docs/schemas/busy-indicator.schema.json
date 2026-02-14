@@ -1,0 +1,54 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://sap.github.io/fundamental-styles/schemas/busy-indicator.json",
+  "title": "Busy Indicator Component",
+  "description": "The busy indicator component informs the user about an ongoing operation. Only one busy indicator should be shown at a time.",
+  "type": "object",
+  "properties": {
+    "baseClass": {
+      "const": "fd-busy-indicator",
+      "description": "Required base class"
+    },
+    "modifiers": {
+      "type": "array",
+      "items": {
+        "enum": [
+          "fd-busy-indicator--contrast",
+          "fd-busy-indicator--m",
+          "fd-busy-indicator--l"
+        ]
+      },
+      "description": "Optional modifier classes"
+    },
+    "elements": {
+      "type": "object",
+      "description": "Optional element classes with their available modifiers",
+      "properties": {
+        "fd-busy-indicator__label": {
+          "type": "object",
+          "description": "label element",
+          "properties": {
+            "class": {
+              "const": "fd-busy-indicator__label",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-busy-indicator__circle": {
+          "type": "object",
+          "description": "circle element",
+          "properties": {
+            "class": {
+              "const": "fd-busy-indicator__circle",
+              "description": "Element class name"
+            }
+          }
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "required": [
+    "baseClass"
+  ]
+}

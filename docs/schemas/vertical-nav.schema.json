@@ -1,0 +1,53 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://sap.github.io/fundamental-styles/schemas/vertical-nav.json",
+  "title": "Vertical Nav Component",
+  "description": "Vertical Nav component",
+  "type": "object",
+  "properties": {
+    "baseClass": {
+      "const": "fd-vertical-nav",
+      "description": "Required base class"
+    },
+    "modifiers": {
+      "type": "array",
+      "items": {
+        "enum": [
+          "fd-vertical-nav--overflow",
+          "fd-vertical-nav--condensed"
+        ]
+      },
+      "description": "Optional modifier classes"
+    },
+    "elements": {
+      "type": "object",
+      "description": "Optional element classes with their available modifiers",
+      "properties": {
+        "fd-vertical-nav__main-navigation": {
+          "type": "object",
+          "description": "main-navigation element",
+          "properties": {
+            "class": {
+              "const": "fd-vertical-nav__main-navigation",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-vertical-nav__utility-section": {
+          "type": "object",
+          "description": "utility-section element",
+          "properties": {
+            "class": {
+              "const": "fd-vertical-nav__utility-section",
+              "description": "Element class name"
+            }
+          }
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "required": [
+    "baseClass"
+  ]
+}

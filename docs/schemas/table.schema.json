@@ -1,0 +1,195 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://sap.github.io/fundamental-styles/schemas/table.json",
+  "title": "Table Component",
+  "description": "Structured data table for displaying and interacting with tabular data",
+  "type": "object",
+  "properties": {
+    "baseClass": {
+      "const": "fd-table",
+      "description": "Required base class"
+    },
+    "modifiers": {
+      "type": "array",
+      "items": {
+        "enum": [
+          "fd-table--navigation",
+          "fd-table--non-interactive",
+          "fd-table--no-wrap",
+          "fd-table--no-data",
+          "fd-table--mock",
+          "fd-table--checkbox",
+          "fd-table--fit-content",
+          "fd-table--no-padding",
+          "fd-table--status-indicator",
+          "fd-table--navigated",
+          "fd-table--hoverable",
+          "fd-table--activable",
+          "fd-table--focusable",
+          "fd-table--hidden"
+        ]
+      },
+      "description": "Optional modifier classes"
+    },
+    "elements": {
+      "type": "object",
+      "description": "Optional element classes with their available modifiers",
+      "properties": {
+        "fd-table__cell": {
+          "type": "object",
+          "description": "cell element",
+          "properties": {
+            "class": {
+              "const": "fd-table__cell",
+              "description": "Element class name"
+            },
+            "modifiers": {
+              "type": "array",
+              "items": {
+                "enum": [
+                  "fd-table__cell--non-interactive",
+                  "fd-table__cell--checkbox",
+                  "fd-table__cell--status-indicator"
+                ]
+              },
+              "description": "Available modifiers for this element"
+            }
+          }
+        },
+        "fd-table__row": {
+          "type": "object",
+          "description": "row element",
+          "properties": {
+            "class": {
+              "const": "fd-table__row",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-table__header": {
+          "type": "object",
+          "description": "header element",
+          "properties": {
+            "class": {
+              "const": "fd-table__header",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-table__body": {
+          "type": "object",
+          "description": "body element",
+          "properties": {
+            "class": {
+              "const": "fd-table__body",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-table__footer": {
+          "type": "object",
+          "description": "footer element",
+          "properties": {
+            "class": {
+              "const": "fd-table__footer",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-table__text": {
+          "type": "object",
+          "description": "text element",
+          "properties": {
+            "class": {
+              "const": "fd-table__text",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-table__icon": {
+          "type": "object",
+          "description": "icon element",
+          "properties": {
+            "class": {
+              "const": "fd-table__icon",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-table__inner": {
+          "type": "object",
+          "description": "inner element",
+          "properties": {
+            "class": {
+              "const": "fd-table__inner",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-table__column-header-icons": {
+          "type": "object",
+          "description": "column-header-icons element",
+          "properties": {
+            "class": {
+              "const": "fd-table__column-header-icons",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-table__caption": {
+          "type": "object",
+          "description": "caption element",
+          "properties": {
+            "class": {
+              "const": "fd-table__caption",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-table__item--clickable": {
+          "type": "object",
+          "description": "item--clickable element",
+          "properties": {
+            "class": {
+              "const": "fd-table__item--clickable",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-table__popover": {
+          "type": "object",
+          "description": "popover element",
+          "properties": {
+            "class": {
+              "const": "fd-table__popover",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-table__item": {
+          "type": "object",
+          "description": "item element",
+          "properties": {
+            "class": {
+              "const": "fd-table__item",
+              "description": "Element class name"
+            },
+            "modifiers": {
+              "type": "array",
+              "items": {
+                "enum": [
+                  "fd-table__item--clickable"
+                ]
+              },
+              "description": "Available modifiers for this element"
+            }
+          }
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "required": [
+    "baseClass"
+  ]
+}

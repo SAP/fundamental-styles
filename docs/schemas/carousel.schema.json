@@ -1,0 +1,112 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://sap.github.io/fundamental-styles/schemas/carousel.json",
+  "title": "Carousel Component",
+  "description": "The carousel component is used for browsing through a set of images. One or several items can be displayed at a time, and the user can navigate to either the next or the previous item.",
+  "type": "object",
+  "properties": {
+    "baseClass": {
+      "const": "fd-carousel",
+      "description": "Required base class"
+    },
+    "modifiers": {
+      "type": "array",
+      "items": {
+        "enum": [
+          "fd-carousel--left",
+          "fd-carousel--right",
+          "fd-carousel--up",
+          "fd-carousel--down",
+          "fd-carousel--horizontal",
+          "fd-carousel--solid",
+          "fd-carousel--transparent",
+          "fd-carousel--active",
+          "fd-carousel--translucent",
+          "fd-carousel--no-border",
+          "fd-carousel--no-navigation"
+        ]
+      },
+      "description": "Optional modifier classes"
+    },
+    "elements": {
+      "type": "object",
+      "description": "Optional element classes with their available modifiers",
+      "properties": {
+        "fd-carousel__content": {
+          "type": "object",
+          "description": "content element",
+          "properties": {
+            "class": {
+              "const": "fd-carousel__content",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-carousel__slides": {
+          "type": "object",
+          "description": "slides element",
+          "properties": {
+            "class": {
+              "const": "fd-carousel__slides",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-carousel__item": {
+          "type": "object",
+          "description": "item element",
+          "properties": {
+            "class": {
+              "const": "fd-carousel__item",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-carousel__page-indicator-container": {
+          "type": "object",
+          "description": "page-indicator-container element",
+          "properties": {
+            "class": {
+              "const": "fd-carousel__page-indicator-container",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-carousel__page-indicators": {
+          "type": "object",
+          "description": "page-indicators element",
+          "properties": {
+            "class": {
+              "const": "fd-carousel__page-indicators",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-carousel__page-indicator": {
+          "type": "object",
+          "description": "page-indicator element",
+          "properties": {
+            "class": {
+              "const": "fd-carousel__page-indicator",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-carousel__text": {
+          "type": "object",
+          "description": "text element",
+          "properties": {
+            "class": {
+              "const": "fd-carousel__text",
+              "description": "Element class name"
+            }
+          }
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "required": [
+    "baseClass"
+  ]
+}

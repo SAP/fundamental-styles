@@ -1,0 +1,83 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://sap.github.io/fundamental-styles/schemas/progress-indicator.json",
+  "title": "Progress Indicator Component",
+  "description": "The progress indicator visualizes the current advancement of a process or a degree of accomplishment. The inside of the progress indicator is filled with color to indicate the state of progress. The advancement depends on the specific process. The progress is shown either using absolute numbers or the current percentage of completion together with a progress bar.",
+  "type": "object",
+  "properties": {
+    "baseClass": {
+      "const": "fd-progress-indicator",
+      "description": "Required base class"
+    },
+    "modifiers": {
+      "type": "array",
+      "items": {
+        "enum": [
+          "fd-progress-indicator--mobile",
+          "fd-progress-indicator--display"
+        ]
+      },
+      "description": "Optional modifier classes"
+    },
+    "elements": {
+      "type": "object",
+      "description": "Optional element classes with their available modifiers",
+      "properties": {
+        "fd-progress-indicator__progress-bar": {
+          "type": "object",
+          "description": "progress-bar element",
+          "properties": {
+            "class": {
+              "const": "fd-progress-indicator__progress-bar",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-progress-indicator__icon": {
+          "type": "object",
+          "description": "icon element",
+          "properties": {
+            "class": {
+              "const": "fd-progress-indicator__icon",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-progress-indicator__label": {
+          "type": "object",
+          "description": "label element",
+          "properties": {
+            "class": {
+              "const": "fd-progress-indicator__label",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-progress-indicator__overflow": {
+          "type": "object",
+          "description": "overflow element",
+          "properties": {
+            "class": {
+              "const": "fd-progress-indicator__overflow",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-progress-indicator__overflow-close": {
+          "type": "object",
+          "description": "overflow-close element",
+          "properties": {
+            "class": {
+              "const": "fd-progress-indicator__overflow-close",
+              "description": "Element class name"
+            }
+          }
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "required": [
+    "baseClass"
+  ]
+}

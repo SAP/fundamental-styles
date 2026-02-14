@@ -1,0 +1,98 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://sap.github.io/fundamental-styles/schemas/illustrated-message.json",
+  "title": "Illustrated Message Component",
+  "description": "Illustrated messages for SAP Fiori are a simple yet powerful way to engage users and add personality to the experience.",
+  "type": "object",
+  "properties": {
+    "baseClass": {
+      "const": "fd-illustrated-message",
+      "description": "Required base class"
+    },
+    "modifiers": {
+      "type": "array",
+      "items": {
+        "enum": [
+          "fd-illustrated-message--dialog",
+          "fd-illustrated-message--medium",
+          "fd-illustrated-message--spot",
+          "fd-illustrated-message--small",
+          "fd-illustrated-message--dot",
+          "fd-illustrated-message--xsmall",
+          "fd-illustrated-message--base"
+        ]
+      },
+      "description": "Optional modifier classes"
+    },
+    "elements": {
+      "type": "object",
+      "description": "Optional element classes with their available modifiers",
+      "properties": {
+        "fd-illustrated-message__container": {
+          "type": "object",
+          "description": "container element",
+          "properties": {
+            "class": {
+              "const": "fd-illustrated-message__container",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-illustrated-message__illustration": {
+          "type": "object",
+          "description": "illustration element",
+          "properties": {
+            "class": {
+              "const": "fd-illustrated-message__illustration",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-illustrated-message__figcaption": {
+          "type": "object",
+          "description": "figcaption element",
+          "properties": {
+            "class": {
+              "const": "fd-illustrated-message__figcaption",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-illustrated-message__title": {
+          "type": "object",
+          "description": "title element",
+          "properties": {
+            "class": {
+              "const": "fd-illustrated-message__title",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-illustrated-message__text": {
+          "type": "object",
+          "description": "text element",
+          "properties": {
+            "class": {
+              "const": "fd-illustrated-message__text",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-illustrated-message__actions": {
+          "type": "object",
+          "description": "actions element",
+          "properties": {
+            "class": {
+              "const": "fd-illustrated-message__actions",
+              "description": "Element class name"
+            }
+          }
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "required": [
+    "baseClass"
+  ]
+}

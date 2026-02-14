@@ -1,0 +1,25 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://sap.github.io/fundamental-styles/schemas/counter.json",
+  "title": "Counter Component",
+  "description": "Counter component",
+  "type": "object",
+  "properties": {
+    "baseClass": {
+      "const": "fd-counter",
+      "description": "Required base class"
+    },
+    "modifiers": {
+      "type": "array",
+      "items": {
+        "enum": [
+          "fd-counter--notification"
+        ]
+      },
+      "description": "Optional modifier classes"
+    }
+  },
+  "required": [
+    "baseClass"
+  ]
+}

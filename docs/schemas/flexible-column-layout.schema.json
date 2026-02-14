@@ -1,0 +1,54 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://sap.github.io/fundamental-styles/schemas/flexible-column-layout.json",
+  "title": "Flexible Column Layout Component",
+  "description": "Flexible Column Layout component",
+  "type": "object",
+  "properties": {
+    "baseClass": {
+      "const": "fd-flexible-column-layout",
+      "description": "Required base class"
+    },
+    "modifiers": {
+      "type": "array",
+      "items": {
+        "enum": [
+          "fd-flexible-column-layout--hidden",
+          "fd-flexible-column-layout--translucent",
+          "fd-flexible-column-layout--transparent"
+        ]
+      },
+      "description": "Optional modifier classes"
+    },
+    "elements": {
+      "type": "object",
+      "description": "Optional element classes with their available modifiers",
+      "properties": {
+        "fd-flexible-column-layout__separator": {
+          "type": "object",
+          "description": "separator element",
+          "properties": {
+            "class": {
+              "const": "fd-flexible-column-layout__separator",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-flexible-column-layout__column": {
+          "type": "object",
+          "description": "column element",
+          "properties": {
+            "class": {
+              "const": "fd-flexible-column-layout__column",
+              "description": "Element class name"
+            }
+          }
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "required": [
+    "baseClass"
+  ]
+}

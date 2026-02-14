@@ -1,0 +1,26 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://sap.github.io/fundamental-styles/schemas/form-message.json",
+  "title": "Form Message Component",
+  "description": "Form Message component",
+  "type": "object",
+  "properties": {
+    "baseClass": {
+      "const": "fd-form-message",
+      "description": "Required base class"
+    },
+    "modifiers": {
+      "type": "array",
+      "items": {
+        "enum": [
+          "fd-form-message--static",
+          "fd-form-message--embedded"
+        ]
+      },
+      "description": "Optional modifier classes"
+    }
+  },
+  "required": [
+    "baseClass"
+  ]
+}

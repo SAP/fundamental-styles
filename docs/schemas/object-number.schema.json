@@ -1,0 +1,65 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://sap.github.io/fundamental-styles/schemas/object-number.json",
+  "title": "Object Number Component",
+  "description": "An object number represents a numeric attribute of an object and its unit. The object number should be displayed with semantics to provide more insight to the user about the object's value.",
+  "type": "object",
+  "properties": {
+    "baseClass": {
+      "const": "fd-object-number",
+      "description": "Required base class"
+    },
+    "modifiers": {
+      "type": "array",
+      "items": {
+        "enum": [
+          "fd-object-number--bold",
+          "fd-object-number--large",
+          "fd-object-number--inverted",
+          "fd-object-number--interactive"
+        ]
+      },
+      "description": "Optional modifier classes"
+    },
+    "elements": {
+      "type": "object",
+      "description": "Optional element classes with their available modifiers",
+      "properties": {
+        "fd-object-number__text": {
+          "type": "object",
+          "description": "text element",
+          "properties": {
+            "class": {
+              "const": "fd-object-number__text",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-object-number__unit": {
+          "type": "object",
+          "description": "unit element",
+          "properties": {
+            "class": {
+              "const": "fd-object-number__unit",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-object-number__sr-only": {
+          "type": "object",
+          "description": "sr-only element",
+          "properties": {
+            "class": {
+              "const": "fd-object-number__sr-only",
+              "description": "Element class name"
+            }
+          }
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "required": [
+    "baseClass"
+  ]
+}

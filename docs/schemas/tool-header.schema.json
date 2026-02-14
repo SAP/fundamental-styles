@@ -1,0 +1,95 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://sap.github.io/fundamental-styles/schemas/tool-header.json",
+  "title": "Tool Header Component",
+  "description": "Tool Header component",
+  "type": "object",
+  "properties": {
+    "baseClass": {
+      "const": "fd-tool-header",
+      "description": "Required base class"
+    },
+    "modifiers": {
+      "type": "array",
+      "items": {
+        "enum": [
+          "fd-tool-header--menu",
+          "fd-tool-header--center",
+          "fd-tool-header--actions",
+          "fd-tool-header--hidden"
+        ]
+      },
+      "description": "Optional modifier classes"
+    },
+    "elements": {
+      "type": "object",
+      "description": "Optional element classes with their available modifiers",
+      "properties": {
+        "fd-tool-header__group": {
+          "type": "object",
+          "description": "group element",
+          "properties": {
+            "class": {
+              "const": "fd-tool-header__group",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-tool-header__element": {
+          "type": "object",
+          "description": "element element",
+          "properties": {
+            "class": {
+              "const": "fd-tool-header__element",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-tool-header__logo": {
+          "type": "object",
+          "description": "logo element",
+          "properties": {
+            "class": {
+              "const": "fd-tool-header__logo",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-tool-header__separator": {
+          "type": "object",
+          "description": "separator element",
+          "properties": {
+            "class": {
+              "const": "fd-tool-header__separator",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-tool-header__product-name": {
+          "type": "object",
+          "description": "product-name element",
+          "properties": {
+            "class": {
+              "const": "fd-tool-header__product-name",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-tool-header__second-title": {
+          "type": "object",
+          "description": "second-title element",
+          "properties": {
+            "class": {
+              "const": "fd-tool-header__second-title",
+              "description": "Element class name"
+            }
+          }
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "required": [
+    "baseClass"
+  ]
+}

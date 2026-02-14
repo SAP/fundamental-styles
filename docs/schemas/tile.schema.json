@@ -1,0 +1,183 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://sap.github.io/fundamental-styles/schemas/tile.json",
+  "title": "Tile Component",
+  "description": "Tile component",
+  "type": "object",
+  "properties": {
+    "baseClass": {
+      "const": "fd-tile",
+      "description": "Required base class"
+    },
+    "modifiers": {
+      "type": "array",
+      "items": {
+        "enum": [
+          "fd-tile--2-col",
+          "fd-tile--double",
+          "fd-tile--s",
+          "fd-tile--kpi",
+          "fd-tile--launch",
+          "fd-tile--feed",
+          "fd-tile--slide",
+          "fd-tile--pause",
+          "fd-tile--active",
+          "fd-tile--action",
+          "fd-tile--list",
+          "fd-tile--line"
+        ]
+      },
+      "description": "Optional modifier classes"
+    },
+    "elements": {
+      "type": "object",
+      "description": "Optional element classes with their available modifiers",
+      "properties": {
+        "fd-tile__header": {
+          "type": "object",
+          "description": "header element",
+          "properties": {
+            "class": {
+              "const": "fd-tile__header",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-tile__content": {
+          "type": "object",
+          "description": "content element",
+          "properties": {
+            "class": {
+              "const": "fd-tile__content",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-tile__footer": {
+          "type": "object",
+          "description": "footer element",
+          "properties": {
+            "class": {
+              "const": "fd-tile__footer",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-tile__header-content": {
+          "type": "object",
+          "description": "header-content element",
+          "properties": {
+            "class": {
+              "const": "fd-tile__header-content",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-tile__section": {
+          "type": "object",
+          "description": "section element",
+          "properties": {
+            "class": {
+              "const": "fd-tile__section",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-tile__title": {
+          "type": "object",
+          "description": "title element",
+          "properties": {
+            "class": {
+              "const": "fd-tile__title",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-tile__subtitle": {
+          "type": "object",
+          "description": "subtitle element",
+          "properties": {
+            "class": {
+              "const": "fd-tile__subtitle",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-tile__footer-text": {
+          "type": "object",
+          "description": "footer-text element",
+          "properties": {
+            "class": {
+              "const": "fd-tile__footer-text",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-tile__refresh": {
+          "type": "object",
+          "description": "refresh element",
+          "properties": {
+            "class": {
+              "const": "fd-tile__refresh",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-tile__profile-img": {
+          "type": "object",
+          "description": "profile-img element",
+          "properties": {
+            "class": {
+              "const": "fd-tile__profile-img",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-tile__logo": {
+          "type": "object",
+          "description": "logo element",
+          "properties": {
+            "class": {
+              "const": "fd-tile__logo",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-tile__action-close": {
+          "type": "object",
+          "description": "action-close element",
+          "properties": {
+            "class": {
+              "const": "fd-tile__action-close",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-tile__action-indicator": {
+          "type": "object",
+          "description": "action-indicator element",
+          "properties": {
+            "class": {
+              "const": "fd-tile__action-indicator",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-tile__overlay": {
+          "type": "object",
+          "description": "overlay element",
+          "properties": {
+            "class": {
+              "const": "fd-tile__overlay",
+              "description": "Element class name"
+            }
+          }
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "required": [
+    "baseClass"
+  ]
+}

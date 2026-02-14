@@ -1,0 +1,94 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://sap.github.io/fundamental-styles/schemas/tree.json",
+  "title": "Tree Component",
+  "description": "Tree allows the user to display and work with a hierarchical set of items. Trees are mostly used in the master list for a master-detail scenario using the **Flexible Column Layout** and in **Popovers** or **Dialogs**. In certain use cases, they can also be used in the **Dynamic Page Layout**.",
+  "type": "object",
+  "properties": {
+    "baseClass": {
+      "const": "fd-tree",
+      "description": "Required base class"
+    },
+    "modifiers": {
+      "type": "array",
+      "items": {
+        "enum": [
+          "fd-tree--active",
+          "fd-tree--wrap",
+          "fd-tree--navigation"
+        ]
+      },
+      "description": "Optional modifier classes"
+    },
+    "elements": {
+      "type": "object",
+      "description": "Optional element classes with their available modifiers",
+      "properties": {
+        "fd-tree__item": {
+          "type": "object",
+          "description": "item element",
+          "properties": {
+            "class": {
+              "const": "fd-tree__item",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-tree__button": {
+          "type": "object",
+          "description": "button element",
+          "properties": {
+            "class": {
+              "const": "fd-tree__button",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-tree__expander": {
+          "type": "object",
+          "description": "expander element",
+          "properties": {
+            "class": {
+              "const": "fd-tree__expander",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-tree__content": {
+          "type": "object",
+          "description": "content element",
+          "properties": {
+            "class": {
+              "const": "fd-tree__content",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-tree__icon": {
+          "type": "object",
+          "description": "icon element",
+          "properties": {
+            "class": {
+              "const": "fd-tree__icon",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-tree__text": {
+          "type": "object",
+          "description": "text element",
+          "properties": {
+            "class": {
+              "const": "fd-tree__text",
+              "description": "Element class name"
+            }
+          }
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "required": [
+    "baseClass"
+  ]
+}

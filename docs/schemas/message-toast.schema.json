@@ -1,0 +1,16 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://sap.github.io/fundamental-styles/schemas/message-toast.json",
+  "title": "Message Toast Component",
+  "description": "The message toast is a small, non-disruptive popup for success messages that disappears automatically after a few seconds. When message toast is displayed, it is always centered horizontally at the bottom of the screen and fades in and out automatically.",
+  "type": "object",
+  "properties": {
+    "baseClass": {
+      "const": "fd-message-toast",
+      "description": "Required base class"
+    }
+  },
+  "required": [
+    "baseClass"
+  ]
+}

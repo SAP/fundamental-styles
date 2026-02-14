@@ -1,0 +1,63 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://sap.github.io/fundamental-styles/schemas/avatar.json",
+  "title": "Avatar Component",
+  "description": "User profile picture or initials display",
+  "type": "object",
+  "properties": {
+    "baseClass": {
+      "const": "fd-avatar",
+      "description": "Required base class"
+    },
+    "modifiers": {
+      "type": "array",
+      "items": {
+        "enum": [
+          "fd-avatar--interactive",
+          "fd-avatar--indication-",
+          "fd-avatar--circle",
+          "fd-avatar--background-contain",
+          "fd-avatar--transparent",
+          "fd-avatar--tile",
+          "fd-avatar--placeholder",
+          "fd-avatar--thumbnail",
+          "fd-avatar--border",
+          "fd-avatar--overflow",
+          "fd-avatar--accent-color-",
+          "fd-avatar--indication-color-"
+        ]
+      },
+      "description": "Optional modifier classes"
+    },
+    "elements": {
+      "type": "object",
+      "description": "Optional element classes with their available modifiers",
+      "properties": {
+        "fd-avatar__zoom-icon": {
+          "type": "object",
+          "description": "zoom-icon element",
+          "properties": {
+            "class": {
+              "const": "fd-avatar__zoom-icon",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-avatar__icon": {
+          "type": "object",
+          "description": "icon element",
+          "properties": {
+            "class": {
+              "const": "fd-avatar__icon",
+              "description": "Element class name"
+            }
+          }
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "required": [
+    "baseClass"
+  ]
+}

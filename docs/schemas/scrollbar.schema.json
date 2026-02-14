@@ -1,0 +1,25 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://sap.github.io/fundamental-styles/schemas/scrollbar.json",
+  "title": "Scrollbar Component",
+  "description": "Themeable scrollbar is the scrollbar component made accordingly to the Fiori 3 design guidelines.",
+  "type": "object",
+  "properties": {
+    "baseClass": {
+      "const": "fd-scrollbar",
+      "description": "Required base class"
+    },
+    "modifiers": {
+      "type": "array",
+      "items": {
+        "enum": [
+          "fd-scrollbar--container"
+        ]
+      },
+      "description": "Optional modifier classes"
+    }
+  },
+  "required": [
+    "baseClass"
+  ]
+}

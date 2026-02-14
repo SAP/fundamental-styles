@@ -1,4 +1,23 @@
 #!/bin/sh
 . "$(dirname "$0")/_/husky.sh"
 
+# Check if component-related files changed
+SCSS_CHANGED=$(git diff --cached --name-only | grep -E "packages/styles/src/.*\.scss$" || true)
+STORIES_CHANGED=$(git diff --cached --name-only | grep -E "packages/styles/stories/.*\.stories\.js$" || true)
+EXAMPLES_CHANGED=$(git diff --cached --name-only | grep -E "packages/styles/stories/.*\.example\.html$" || true)
+
+# If component files changed, regenerate AI docs
+if [ -n "$SCSS_CHANGED" ] || [ -n "$STORIES_CHANGED" ] || [ -n "$EXAMPLES_CHANGED" ]; then
+  echo "🤖 Component files changed, regenerating AI documentation..."
+  yarn generate:ai-docs
+
+  # Stage generated files
+  git add docs/component-catalog.json
+  git add docs/component-relationships.json
+  git add docs/schemas/
+
+  echo "✅ AI documentation updated and staged"
+fi
+
+# Run existing pre-commit checks
 yarn run pre-commit

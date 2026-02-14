@@ -1,0 +1,112 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://sap.github.io/fundamental-styles/schemas/bar.json",
+  "title": "Bar Component",
+  "description": "The Bar is a container primarily used for displaying titles, buttons, and input controls. It serves as the foundational design and functionality for page headers, footers, dialogs, and popovers that require a header and/or footer. A header can consist of just a title or a title with a navigation button (back or home) at the front. A subheader can also be included in the header design. Footers can be either fixed or floating. The buttons in the footer are intended for finalizing actions, following a primary-to-tertiary hierarchy, and should be positioned in the right area. <br><br>",
+  "type": "object",
+  "properties": {
+    "baseClass": {
+      "const": "fd-bar",
+      "description": "Required base class"
+    },
+    "modifiers": {
+      "type": "array",
+      "items": {
+        "enum": [
+          "fd-bar--stack-contents-vertically",
+          "fd-bar--responsive-paddings",
+          "fd-bar--header",
+          "fd-bar--subheader",
+          "fd-bar--header-with-subheader",
+          "fd-bar--footer",
+          "fd-bar--floating-footer",
+          "fd-bar--growing",
+          "fd-bar--page",
+          "fd-bar--home-page",
+          "fd-bar--page-s",
+          "fd-bar--page-sm",
+          "fd-bar--home-page-s",
+          "fd-bar--home-page-sm",
+          "fd-bar--page-m",
+          "fd-bar--home-page-m",
+          "fd-bar--page-md",
+          "fd-bar--home-page-md",
+          "fd-bar--page-xl",
+          "fd-bar--home-page-xl",
+          "fd-bar--initial-suggestion-title",
+          "fd-bar--initial-suggestion-subline"
+        ]
+      },
+      "description": "Optional modifier classes"
+    },
+    "elements": {
+      "type": "object",
+      "description": "Optional element classes with their available modifiers",
+      "properties": {
+        "fd-bar__left": {
+          "type": "object",
+          "description": "left element",
+          "properties": {
+            "class": {
+              "const": "fd-bar__left",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-bar__middle": {
+          "type": "object",
+          "description": "middle element",
+          "properties": {
+            "class": {
+              "const": "fd-bar__middle",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-bar__right": {
+          "type": "object",
+          "description": "right element",
+          "properties": {
+            "class": {
+              "const": "fd-bar__right",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-bar__element": {
+          "type": "object",
+          "description": "element element",
+          "properties": {
+            "class": {
+              "const": "fd-bar__element",
+              "description": "Element class name"
+            },
+            "modifiers": {
+              "type": "array",
+              "items": {
+                "enum": [
+                  "fd-bar__element--full-width"
+                ]
+              },
+              "description": "Available modifiers for this element"
+            }
+          }
+        },
+        "fd-bar__element--full-width": {
+          "type": "object",
+          "description": "element--full-width element",
+          "properties": {
+            "class": {
+              "const": "fd-bar__element--full-width",
+              "description": "Element class name"
+            }
+          }
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "required": [
+    "baseClass"
+  ]
+}

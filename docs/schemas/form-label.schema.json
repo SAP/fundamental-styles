@@ -1,0 +1,30 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://sap.github.io/fundamental-styles/schemas/form-label.json",
+  "title": "Form Label Component",
+  "description": "Label for form inputs with required indicator support",
+  "type": "object",
+  "properties": {
+    "baseClass": {
+      "const": "fd-form-label",
+      "description": "Required base class"
+    },
+    "modifiers": {
+      "type": "array",
+      "items": {
+        "enum": [
+          "fd-form-label--disabled",
+          "fd-form-label--unit-description",
+          "fd-form-label--required",
+          "fd-form-label--colon",
+          "fd-form-label--inline-help",
+          "fd-form-label--stand-alone"
+        ]
+      },
+      "description": "Optional modifier classes"
+    }
+  },
+  "required": [
+    "baseClass"
+  ]
+}
