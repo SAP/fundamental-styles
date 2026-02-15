@@ -31,7 +31,6 @@
           "fd-calendar--appointment",
           "fd-calendar--work",
           "fd-calendar--non-work",
-          "fd-calendar--placeholder-",
           "fd-calendar--vertical"
         ]
       },
@@ -67,6 +66,16 @@
             "class": {
               "const": "fd-calendar__action",
               "description": "Element class name"
+            },
+            "modifiers": {
+              "type": "array",
+              "items": {
+                "enum": [
+                  "fd-calendar__action--arrow-left",
+                  "fd-calendar__action--arrow-right"
+                ]
+              },
+              "description": "Available modifiers for this element"
             }
           }
         },
@@ -96,7 +105,17 @@
                   "fd-calendar__item--legend-",
                   "fd-calendar__item--selected",
                   "fd-calendar__item--range",
-                  "fd-calendar__item--other"
+                  "fd-calendar__item--other",
+                  "fd-calendar__item--legend-1",
+                  "fd-calendar__item--weekend",
+                  "fd-calendar__item--legend-5",
+                  "fd-calendar__item--legend-9",
+                  "fd-calendar__item--legend-12",
+                  "fd-calendar__item--legend-16",
+                  "fd-calendar__item--legend-13",
+                  "fd-calendar__item--side-helper",
+                  "fd-calendar__item--legend-7",
+                  "fd-calendar__item--legend-3"
                 ]
               },
               "description": "Available modifiers for this element"
@@ -110,6 +129,18 @@
             "class": {
               "const": "fd-calendar__content",
               "description": "Element class name"
+            },
+            "modifiers": {
+              "type": "array",
+              "items": {
+                "enum": [
+                  "fd-calendar__content--dates",
+                  "fd-calendar__content--screen-reader-only",
+                  "fd-calendar__content--months",
+                  "fd-calendar__content--years"
+                ]
+              },
+              "description": "Available modifiers for this element"
             }
           }
         },

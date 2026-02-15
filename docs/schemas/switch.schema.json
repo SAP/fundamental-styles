@@ -62,6 +62,16 @@
             "class": {
               "const": "fd-switch__text",
               "description": "Element class name"
+            },
+            "modifiers": {
+              "type": "array",
+              "items": {
+                "enum": [
+                  "fd-switch__text--on",
+                  "fd-switch__text--off"
+                ]
+              },
+              "description": "Available modifiers for this element"
             }
           }
         },
@@ -72,6 +82,16 @@
             "class": {
               "const": "fd-switch__icon",
               "description": "Element class name"
+            },
+            "modifiers": {
+              "type": "array",
+              "items": {
+                "enum": [
+                  "fd-switch__icon--on",
+                  "fd-switch__icon--off"
+                ]
+              },
+              "description": "Available modifiers for this element"
             }
           }
         },

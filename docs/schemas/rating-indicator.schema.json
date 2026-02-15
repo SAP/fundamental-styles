@@ -18,7 +18,12 @@
           "fd-rating-indicator--display-mode",
           "fd-rating-indicator--non-interactive",
           "fd-rating-indicator--half-star",
-          "fd-rating-indicator--zero-rating"
+          "fd-rating-indicator--zero-rating",
+          "fd-rating-indicator--lg",
+          "fd-rating-indicator--xs",
+          "fd-rating-indicator--sm",
+          "fd-rating-indicator--compact",
+          "fd-rating-indicator--condensed"
         ]
       },
       "description": "Optional modifier classes"
@@ -34,6 +39,15 @@
             "class": {
               "const": "fd-rating-indicator__input",
               "description": "Element class name"
+            },
+            "modifiers": {
+              "type": "array",
+              "items": {
+                "enum": [
+                  "fd-rating-indicator__input--zero-rating"
+                ]
+              },
+              "description": "Available modifiers for this element"
             }
           }
         },
@@ -44,6 +58,15 @@
             "class": {
               "const": "fd-rating-indicator__label",
               "description": "Element class name"
+            },
+            "modifiers": {
+              "type": "array",
+              "items": {
+                "enum": [
+                  "fd-rating-indicator__label--zero-rating"
+                ]
+              },
+              "description": "Available modifiers for this element"
             }
           }
         },

@@ -19,7 +19,12 @@
           "fd-illustrated-message--small",
           "fd-illustrated-message--dot",
           "fd-illustrated-message--xsmall",
-          "fd-illustrated-message--base"
+          "fd-illustrated-message--base",
+          "fd-illustrated-message--subtle",
+          "fd-illustrated-message--undecorated",
+          "fd-illustrated-message--emphasized",
+          "fd-illustrated-message--touch-target",
+          "fd-illustrated-message--inverted"
         ]
       },
       "description": "Optional modifier classes"
@@ -84,6 +89,16 @@
           "properties": {
             "class": {
               "const": "fd-illustrated-message__actions",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-illustrated-message__content": {
+          "type": "object",
+          "description": "content element",
+          "properties": {
+            "class": {
+              "const": "fd-illustrated-message__content",
               "description": "Element class name"
             }
           }

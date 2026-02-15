@@ -1,0 +1,1020 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "version": "0.41.0",
+  "generatedBy": "scripts/generate-utility-classes.js",
+  "package": "@fundamental-styles/common-css",
+  "description": "Utility CSS classes for spacing, layout, typography, and visual styling",
+  "categories": {
+    "margin": {
+      "description": "Spacing utilities for margins",
+      "prefix": "sap-margin",
+      "cssFile": "sap-margin.css",
+      "classes": [
+        {
+          "class": "sap-margin-tiny",
+          "description": "tiny spacing on all sides"
+        },
+        {
+          "class": "sap-margin-small",
+          "description": "small spacing on all sides"
+        },
+        {
+          "class": "sap-margin-medium",
+          "description": "medium spacing on all sides"
+        },
+        {
+          "class": "sap-margin-large",
+          "description": "large spacing on all sides"
+        },
+        {
+          "class": "sap-margin-top-tiny",
+          "description": "tiny spacing on top"
+        },
+        {
+          "class": "sap-margin-bottom-tiny",
+          "description": "tiny spacing on bottom"
+        },
+        {
+          "class": "sap-margin-begin-tiny",
+          "description": "tiny spacing on begin"
+        },
+        {
+          "class": "sap-margin-end-tiny",
+          "description": "tiny spacing on end"
+        },
+        {
+          "class": "sap-margin-x-tiny",
+          "description": "tiny spacing on x"
+        },
+        {
+          "class": "sap-margin-y-tiny",
+          "description": "tiny spacing on y"
+        },
+        {
+          "class": "sap-margin-top-small",
+          "description": "small spacing on top"
+        },
+        {
+          "class": "sap-margin-bottom-small",
+          "description": "small spacing on bottom"
+        },
+        {
+          "class": "sap-margin-begin-small",
+          "description": "small spacing on begin"
+        },
+        {
+          "class": "sap-margin-end-small",
+          "description": "small spacing on end"
+        },
+        {
+          "class": "sap-margin-x-small",
+          "description": "small spacing on x"
+        },
+        {
+          "class": "sap-margin-y-small",
+          "description": "small spacing on y"
+        },
+        {
+          "class": "sap-margin-top-medium",
+          "description": "medium spacing on top"
+        },
+        {
+          "class": "sap-margin-bottom-medium",
+          "description": "medium spacing on bottom"
+        },
+        {
+          "class": "sap-margin-begin-medium",
+          "description": "medium spacing on begin"
+        },
+        {
+          "class": "sap-margin-end-medium",
+          "description": "medium spacing on end"
+        },
+        {
+          "class": "sap-margin-x-medium",
+          "description": "medium spacing on x"
+        },
+        {
+          "class": "sap-margin-y-medium",
+          "description": "medium spacing on y"
+        },
+        {
+          "class": "sap-margin-top-large",
+          "description": "large spacing on top"
+        },
+        {
+          "class": "sap-margin-bottom-large",
+          "description": "large spacing on bottom"
+        },
+        {
+          "class": "sap-margin-begin-large",
+          "description": "large spacing on begin"
+        },
+        {
+          "class": "sap-margin-end-large",
+          "description": "large spacing on end"
+        },
+        {
+          "class": "sap-margin-x-large",
+          "description": "large spacing on x"
+        },
+        {
+          "class": "sap-margin-y-large",
+          "description": "large spacing on y"
+        },
+        {
+          "class": "sap-margin-responsive",
+          "description": "Responsive margins based on viewport"
+        },
+        {
+          "class": "sap-margin-tiny-negative",
+          "description": "Negative horizontal margin (tiny)"
+        },
+        {
+          "class": "sap-margin-small-negative",
+          "description": "Negative horizontal margin (small)"
+        },
+        {
+          "class": "sap-margin-medium-negative",
+          "description": "Negative horizontal margin (medium)"
+        },
+        {
+          "class": "sap-margin-large-negative",
+          "description": "Negative horizontal margin (large)"
+        },
+        {
+          "class": "sap-margin-top-none",
+          "description": "Remove top margin"
+        },
+        {
+          "class": "sap-margin-bottom-none",
+          "description": "Remove bottom margin"
+        },
+        {
+          "class": "sap-margin-begin-none",
+          "description": "Remove begin margin"
+        },
+        {
+          "class": "sap-margin-end-none",
+          "description": "Remove end margin"
+        },
+        {
+          "class": "sap-margin-block-start-none",
+          "description": "Remove block-start margin"
+        },
+        {
+          "class": "sap-margin-block-end-none",
+          "description": "Remove block-end margin"
+        },
+        {
+          "class": "sap-margin-inline-start-none",
+          "description": "Remove inline-start margin"
+        },
+        {
+          "class": "sap-margin-inline-end-none",
+          "description": "Remove inline-end margin"
+        }
+      ]
+    },
+    "padding": {
+      "description": "Spacing utilities for padding",
+      "prefix": "sap-padding",
+      "cssFile": "sap-padding.css",
+      "classes": [
+        {
+          "class": "sap-padding",
+          "description": "Default padding"
+        },
+        {
+          "class": "sap-padding-x-tiny",
+          "description": "Horizontal padding (tiny)"
+        },
+        {
+          "class": "sap-padding-x-small",
+          "description": "Horizontal padding (small)"
+        },
+        {
+          "class": "sap-padding-x-medium",
+          "description": "Horizontal padding (medium)"
+        },
+        {
+          "class": "sap-padding-x-large",
+          "description": "Horizontal padding (large)"
+        },
+        {
+          "class": "sap-padding-inline-tiny",
+          "description": "Inline padding (tiny)"
+        },
+        {
+          "class": "sap-padding-inline-small",
+          "description": "Inline padding (small)"
+        },
+        {
+          "class": "sap-padding-inline-medium",
+          "description": "Inline padding (medium)"
+        },
+        {
+          "class": "sap-padding-inline-large",
+          "description": "Inline padding (large)"
+        },
+        {
+          "class": "sap-padding-responsive",
+          "description": "Responsive padding based on viewport"
+        },
+        {
+          "class": "sap-padding-responsive-container",
+          "description": "Responsive container padding"
+        },
+        {
+          "class": "sap-padding-none",
+          "description": "Remove all padding"
+        }
+      ]
+    },
+    "flex": {
+      "description": "Flexbox layout utilities",
+      "prefix": "sap-flex",
+      "cssFile": "sap-flex.css",
+      "classes": [
+        {
+          "class": "sap-flex",
+          "description": "Enable flexbox (display: flex)"
+        },
+        {
+          "class": "sap-flex--row",
+          "description": "Flex direction: row"
+        },
+        {
+          "class": "sap-flex--row-reverse",
+          "description": "Flex direction: row-reverse"
+        },
+        {
+          "class": "sap-flex--column",
+          "description": "Flex direction: column"
+        },
+        {
+          "class": "sap-flex--column-reverse",
+          "description": "Flex direction: column-reverse"
+        },
+        {
+          "class": "sap-flex--nowrap",
+          "description": "No wrapping (default)"
+        },
+        {
+          "class": "sap-flex--wrap",
+          "description": "Allow wrapping"
+        },
+        {
+          "class": "sap-flex--wrap-reverse",
+          "description": "Wrap in reverse"
+        },
+        {
+          "class": "sap-flex--justify-flex-start",
+          "description": "justify-content: flex-start"
+        },
+        {
+          "class": "sap-flex--justify-flex-end",
+          "description": "justify-content: flex-end"
+        },
+        {
+          "class": "sap-flex--justify-center",
+          "description": "justify-content: center"
+        },
+        {
+          "class": "sap-flex--justify-space-between",
+          "description": "justify-content: space-between"
+        },
+        {
+          "class": "sap-flex--justify-space-around",
+          "description": "justify-content: space-around"
+        },
+        {
+          "class": "sap-flex--justify-space-evenly",
+          "description": "justify-content: space-evenly"
+        },
+        {
+          "class": "sap-flex--justify-start",
+          "description": "justify-content: start"
+        },
+        {
+          "class": "sap-flex--justify-end",
+          "description": "justify-content: end"
+        },
+        {
+          "class": "sap-flex--justify-left",
+          "description": "justify-content: left"
+        },
+        {
+          "class": "sap-flex--justify-right",
+          "description": "justify-content: right"
+        },
+        {
+          "class": "sap-flex--align-items-stretch",
+          "description": "align-items: stretch"
+        },
+        {
+          "class": "sap-flex--align-items-flex-start",
+          "description": "align-items: flex-start"
+        },
+        {
+          "class": "sap-flex--align-items-flex-end",
+          "description": "align-items: flex-end"
+        },
+        {
+          "class": "sap-flex--align-items-center",
+          "description": "align-items: center"
+        },
+        {
+          "class": "sap-flex--align-items-baseline",
+          "description": "align-items: baseline"
+        },
+        {
+          "class": "sap-flex--align-items-start",
+          "description": "align-items: start"
+        },
+        {
+          "class": "sap-flex--align-items-end",
+          "description": "align-items: end"
+        },
+        {
+          "class": "sap-flex--align-items-self-start",
+          "description": "align-items: self-start"
+        },
+        {
+          "class": "sap-flex--align-items-self-end",
+          "description": "align-items: self-end"
+        },
+        {
+          "class": "sap-flex--align-content-flex-start",
+          "description": "align-content: flex-start"
+        },
+        {
+          "class": "sap-flex--align-content-flex-end",
+          "description": "align-content: flex-end"
+        },
+        {
+          "class": "sap-flex--align-content-center",
+          "description": "align-content: center"
+        },
+        {
+          "class": "sap-flex--align-content-space-between",
+          "description": "align-content: space-between"
+        },
+        {
+          "class": "sap-flex--align-content-space-around",
+          "description": "align-content: space-around"
+        },
+        {
+          "class": "sap-flex--align-content-space-evenly",
+          "description": "align-content: space-evenly"
+        },
+        {
+          "class": "sap-flex--align-content-stretch",
+          "description": "align-content: stretch"
+        },
+        {
+          "class": "sap-flex--align-content-start",
+          "description": "align-content: start"
+        },
+        {
+          "class": "sap-flex--align-content-end",
+          "description": "align-content: end"
+        },
+        {
+          "class": "sap-flex--align-content-baseline",
+          "description": "align-content: baseline"
+        },
+        {
+          "class": "sap-flex--gap-tiny",
+          "description": "Gap between flex items (tiny)"
+        },
+        {
+          "class": "sap-flex--gap-small",
+          "description": "Gap between flex items (small)"
+        },
+        {
+          "class": "sap-flex--gap-medium",
+          "description": "Gap between flex items (medium)"
+        },
+        {
+          "class": "sap-flex--gap-large",
+          "description": "Gap between flex items (large)"
+        },
+        {
+          "class": "sap-flex--row-gap-tiny",
+          "description": "Row gap (tiny)"
+        },
+        {
+          "class": "sap-flex--row-gap-small",
+          "description": "Row gap (small)"
+        },
+        {
+          "class": "sap-flex--row-gap-medium",
+          "description": "Row gap (medium)"
+        },
+        {
+          "class": "sap-flex--row-gap-large",
+          "description": "Row gap (large)"
+        },
+        {
+          "class": "sap-flex--column-gap-tiny",
+          "description": "Column gap (tiny)"
+        },
+        {
+          "class": "sap-flex--column-gap-small",
+          "description": "Column gap (small)"
+        },
+        {
+          "class": "sap-flex--column-gap-medium",
+          "description": "Column gap (medium)"
+        },
+        {
+          "class": "sap-flex--column-gap-large",
+          "description": "Column gap (large)"
+        },
+        {
+          "class": "sap-flex--center",
+          "description": "Center both axes (justify + align center)"
+        },
+        {
+          "class": "sap-flex--center-column",
+          "description": "Center both axes with column direction"
+        },
+        {
+          "class": "sap-flex-order-0",
+          "description": "Set flex order to 0"
+        },
+        {
+          "class": "sap-flex-order-1",
+          "description": "Set flex order to 1"
+        },
+        {
+          "class": "sap-flex-order-2",
+          "description": "Set flex order to 2"
+        },
+        {
+          "class": "sap-flex-order-3",
+          "description": "Set flex order to 3"
+        },
+        {
+          "class": "sap-flex-order-4",
+          "description": "Set flex order to 4"
+        },
+        {
+          "class": "sap-flex-order-5",
+          "description": "Set flex order to 5"
+        },
+        {
+          "class": "sap-flex-order-6",
+          "description": "Set flex order to 6"
+        },
+        {
+          "class": "sap-flex-order-7",
+          "description": "Set flex order to 7"
+        },
+        {
+          "class": "sap-flex-order-8",
+          "description": "Set flex order to 8"
+        },
+        {
+          "class": "sap-flex-order-9",
+          "description": "Set flex order to 9"
+        },
+        {
+          "class": "sap-flex-order-10",
+          "description": "Set flex order to 10"
+        },
+        {
+          "class": "sap-flex-grow-1",
+          "description": "Set flex-grow to 1"
+        },
+        {
+          "class": "sap-flex-grow-2",
+          "description": "Set flex-grow to 2"
+        },
+        {
+          "class": "sap-flex-grow-3",
+          "description": "Set flex-grow to 3"
+        },
+        {
+          "class": "sap-flex-grow-4",
+          "description": "Set flex-grow to 4"
+        },
+        {
+          "class": "sap-flex-grow-5",
+          "description": "Set flex-grow to 5"
+        },
+        {
+          "class": "sap-flex-grow-6",
+          "description": "Set flex-grow to 6"
+        },
+        {
+          "class": "sap-flex-grow-7",
+          "description": "Set flex-grow to 7"
+        },
+        {
+          "class": "sap-flex-grow-8",
+          "description": "Set flex-grow to 8"
+        },
+        {
+          "class": "sap-flex-grow-9",
+          "description": "Set flex-grow to 9"
+        },
+        {
+          "class": "sap-flex-grow-10",
+          "description": "Set flex-grow to 10"
+        },
+        {
+          "class": "sap-flex-shrink-1",
+          "description": "Set flex-shrink to 1"
+        },
+        {
+          "class": "sap-flex-shrink-2",
+          "description": "Set flex-shrink to 2"
+        },
+        {
+          "class": "sap-flex-shrink-3",
+          "description": "Set flex-shrink to 3"
+        },
+        {
+          "class": "sap-flex-shrink-4",
+          "description": "Set flex-shrink to 4"
+        },
+        {
+          "class": "sap-flex-shrink-5",
+          "description": "Set flex-shrink to 5"
+        },
+        {
+          "class": "sap-flex-shrink-6",
+          "description": "Set flex-shrink to 6"
+        },
+        {
+          "class": "sap-flex-shrink-7",
+          "description": "Set flex-shrink to 7"
+        },
+        {
+          "class": "sap-flex-shrink-8",
+          "description": "Set flex-shrink to 8"
+        },
+        {
+          "class": "sap-flex-shrink-9",
+          "description": "Set flex-shrink to 9"
+        },
+        {
+          "class": "sap-flex-shrink-10",
+          "description": "Set flex-shrink to 10"
+        },
+        {
+          "class": "sap-flex-align-self-auto",
+          "description": "align-self: auto"
+        },
+        {
+          "class": "sap-flex-align-self-flex-start",
+          "description": "align-self: flex-start"
+        },
+        {
+          "class": "sap-flex-align-self-flex-end",
+          "description": "align-self: flex-end"
+        },
+        {
+          "class": "sap-flex-align-self-center",
+          "description": "align-self: center"
+        },
+        {
+          "class": "sap-flex-align-self-baseline",
+          "description": "align-self: baseline"
+        },
+        {
+          "class": "sap-flex-align-self-stretch",
+          "description": "align-self: stretch"
+        }
+      ]
+    },
+    "display": {
+      "description": "Display property utilities",
+      "prefix": "sap-display",
+      "cssFile": "sap-display.css",
+      "classes": [
+        {
+          "class": "sap-display-inline",
+          "description": "display: inline"
+        },
+        {
+          "class": "sap-display-block",
+          "description": "display: block"
+        },
+        {
+          "class": "sap-display-contents",
+          "description": "display: contents"
+        },
+        {
+          "class": "sap-display-flex",
+          "description": "display: flex"
+        },
+        {
+          "class": "sap-display-grid",
+          "description": "display: grid"
+        },
+        {
+          "class": "sap-display-inline-block",
+          "description": "display: inline-block"
+        },
+        {
+          "class": "sap-display-inline-flex",
+          "description": "display: inline-flex"
+        },
+        {
+          "class": "sap-display-inline-grid",
+          "description": "display: inline-grid"
+        },
+        {
+          "class": "sap-display-none",
+          "description": "display: none"
+        }
+      ]
+    },
+    "shadow": {
+      "description": "Box shadow and text shadow utilities",
+      "prefix": "sap-has-shadow",
+      "cssFile": "sap-shadow.css",
+      "classes": [
+        {
+          "class": "sap-has-shadow-level-0",
+          "description": "No shadow (level 0)"
+        },
+        {
+          "class": "sap-has-shadow-level-1",
+          "description": "Subtle shadow (level 1)"
+        },
+        {
+          "class": "sap-has-shadow-level-2",
+          "description": "Medium shadow (level 2)"
+        },
+        {
+          "class": "sap-has-shadow-level-3",
+          "description": "Strong shadow (level 3)"
+        },
+        {
+          "class": "sap-has-shadow-header",
+          "description": "Header shadow"
+        },
+        {
+          "class": "sap-has-shadow-shell",
+          "description": "Shell shadow"
+        },
+        {
+          "class": "sap-has-shadow-none",
+          "description": "Remove shadow"
+        },
+        {
+          "class": "sap-has-shadow-interaction",
+          "description": "Interaction shadow"
+        },
+        {
+          "class": "sap-has-shadow-selected",
+          "description": "Selected state shadow"
+        },
+        {
+          "class": "sap-has-shadow-negative",
+          "description": "Negative/error shadow"
+        },
+        {
+          "class": "sap-has-shadow-critical",
+          "description": "Critical/warning shadow"
+        },
+        {
+          "class": "sap-has-shadow-positive",
+          "description": "Positive/success shadow"
+        },
+        {
+          "class": "sap-has-shadow-informative",
+          "description": "Informative shadow"
+        },
+        {
+          "class": "sap-has-shadow-neutral",
+          "description": "Neutral shadow"
+        },
+        {
+          "class": "sap-has-shadow-color",
+          "description": "Shadow color utility"
+        },
+        {
+          "class": "sap-has-shadow-inverted-color",
+          "description": "Inverted/contrast shadow color"
+        },
+        {
+          "class": "sap-has-shadow-text",
+          "description": "Text shadow"
+        },
+        {
+          "class": "sap-has-shadow-contrast-text",
+          "description": "Contrast text shadow"
+        },
+        {
+          "class": "sap-has-shadow-group-title-text",
+          "description": "Group title text shadow"
+        },
+        {
+          "class": "sap-has-shadow-emphasized-text",
+          "description": "Emphasized text shadow"
+        }
+      ]
+    },
+    "borderRadius": {
+      "description": "Border radius utilities",
+      "prefix": "sap-border-radius",
+      "cssFile": "sap-border-radius.css",
+      "classes": [
+        {
+          "class": "sap-border-radius-element",
+          "description": "Element border radius"
+        },
+        {
+          "class": "sap-border-radius-button",
+          "description": "Button border radius"
+        },
+        {
+          "class": "sap-border-radius-field",
+          "description": "Field border radius"
+        },
+        {
+          "class": "sap-border-radius-group",
+          "description": "Group border radius"
+        },
+        {
+          "class": "sap-border-radius-popover",
+          "description": "Popover border radius"
+        },
+        {
+          "class": "sap-border-radius-tile",
+          "description": "Tile border radius"
+        }
+      ]
+    },
+    "border": {
+      "description": "Border style, width, and color utilities",
+      "prefix": "sap-border",
+      "cssFile": "sap-border.css",
+      "classes": [
+        {
+          "class": "sap-border-style-solid",
+          "description": "border-style: solid"
+        },
+        {
+          "class": "sap-border-style-dashed",
+          "description": "border-style: dashed"
+        },
+        {
+          "class": "sap-border-style-dotted",
+          "description": "border-style: dotted"
+        },
+        {
+          "class": "sap-border-style-double",
+          "description": "border-style: double"
+        },
+        {
+          "class": "sap-border-style-hidden",
+          "description": "border-style: hidden"
+        },
+        {
+          "class": "sap-border-style-none",
+          "description": "border-style: none"
+        },
+        {
+          "class": "sap-border-width-1",
+          "description": "Border width 1 (1px)"
+        },
+        {
+          "class": "sap-border-width-2",
+          "description": "Border width 2 (2px)"
+        },
+        {
+          "class": "sap-border-width-3",
+          "description": "Border width 3 (3px)"
+        },
+        {
+          "class": "sap-border-width-4",
+          "description": "Border width 4 (4px)"
+        },
+        {
+          "class": "sap-border-color-error",
+          "description": "Error border color"
+        },
+        {
+          "class": "sap-border-color-warning",
+          "description": "Warning border color"
+        },
+        {
+          "class": "sap-border-color-success",
+          "description": "Success border color"
+        },
+        {
+          "class": "sap-border-color-information",
+          "description": "Information border color"
+        },
+        {
+          "class": "sap-border-color-neutral",
+          "description": "Neutral border color"
+        }
+      ]
+    },
+    "typography": {
+      "description": "Font family, size, and weight utilities",
+      "prefix": "sap-font",
+      "cssFile": "sap-typography.css",
+      "classes": [
+        {
+          "class": "sap-font-regular",
+          "description": "Regular font family"
+        },
+        {
+          "class": "sap-font-light",
+          "description": "Light font family"
+        },
+        {
+          "class": "sap-font-bold",
+          "description": "Bold font family"
+        },
+        {
+          "class": "sap-font-semibold",
+          "description": "Semibold font family"
+        },
+        {
+          "class": "sap-font-header",
+          "description": "Header font family"
+        },
+        {
+          "class": "sap-font-size-small",
+          "description": "Small font size"
+        },
+        {
+          "class": "sap-font-size-medium",
+          "description": "Medium font size (default)"
+        },
+        {
+          "class": "sap-font-size-large",
+          "description": "Large font size"
+        },
+        {
+          "class": "sap-font-size-header-1",
+          "description": "Header 1 font size"
+        },
+        {
+          "class": "sap-font-size-header-2",
+          "description": "Header 2 font size"
+        },
+        {
+          "class": "sap-font-size-header-3",
+          "description": "Header 3 font size"
+        },
+        {
+          "class": "sap-font-size-header-4",
+          "description": "Header 4 font size"
+        },
+        {
+          "class": "sap-font-size-header-5",
+          "description": "Header 5 font size"
+        },
+        {
+          "class": "sap-font-size-header-6",
+          "description": "Header 6 font size"
+        }
+      ]
+    },
+    "heading": {
+      "description": "Heading style utilities",
+      "prefix": "sap-heading",
+      "cssFile": "sap-heading.css",
+      "classes": [
+        {
+          "class": "sap-heading-h1",
+          "description": "Heading 1 style"
+        },
+        {
+          "class": "sap-heading-h2",
+          "description": "Heading 2 style"
+        },
+        {
+          "class": "sap-heading-h3",
+          "description": "Heading 3 style"
+        },
+        {
+          "class": "sap-heading-h4",
+          "description": "Heading 4 style"
+        },
+        {
+          "class": "sap-heading-h5",
+          "description": "Heading 5 style"
+        },
+        {
+          "class": "sap-heading-h6",
+          "description": "Heading 6 style"
+        }
+      ]
+    },
+    "elevation": {
+      "description": "Elevation/z-index utilities",
+      "prefix": "sap-elevation",
+      "cssFile": "sap-elevation.css",
+      "classes": [
+        {
+          "class": "sap-elevation-level-0",
+          "description": "Base level (no elevation)"
+        },
+        {
+          "class": "sap-elevation-level-1",
+          "description": "Level 1 elevation"
+        },
+        {
+          "class": "sap-elevation-level-2",
+          "description": "Level 2 elevation"
+        },
+        {
+          "class": "sap-elevation-level-3",
+          "description": "Level 3 elevation (dialogs)"
+        }
+      ]
+    },
+    "position": {
+      "description": "CSS position utilities",
+      "prefix": "sap-position",
+      "cssFile": "sap-position.css",
+      "classes": [
+        {
+          "class": "sap-position-static",
+          "description": "position: static"
+        },
+        {
+          "class": "sap-position-fixed",
+          "description": "position: fixed"
+        },
+        {
+          "class": "sap-position-absolute",
+          "description": "position: absolute"
+        },
+        {
+          "class": "sap-position-relative",
+          "description": "position: relative"
+        },
+        {
+          "class": "sap-position-sticky",
+          "description": "position: sticky"
+        }
+      ]
+    },
+    "overflow": {
+      "description": "Overflow behavior utilities",
+      "prefix": "sap-overflow",
+      "cssFile": "sap-overflow.css",
+      "classes": [
+        {
+          "class": "sap-overflow-visible",
+          "description": "overflow: visible"
+        },
+        {
+          "class": "sap-overflow-hidden",
+          "description": "overflow: hidden"
+        },
+        {
+          "class": "sap-overflow-scroll",
+          "description": "overflow: scroll"
+        },
+        {
+          "class": "sap-overflow-auto",
+          "description": "overflow: auto"
+        },
+        {
+          "class": "sap-overflow-x-hidden",
+          "description": "overflow-x: hidden"
+        },
+        {
+          "class": "sap-overflow-y-hidden",
+          "description": "overflow-y: hidden"
+        },
+        {
+          "class": "sap-overflow-x-auto",
+          "description": "overflow-x: auto"
+        },
+        {
+          "class": "sap-overflow-y-auto",
+          "description": "overflow-y: auto"
+        }
+      ]
+    },
+    "accessibility": {
+      "description": "Accessibility utilities",
+      "prefix": "sap-sr",
+      "cssFile": "sap-sr-only.css",
+      "classes": [
+        {
+          "class": "sap-sr-only",
+          "description": "Visually hidden but accessible to screen readers"
+        }
+      ]
+    }
+  },
+  "statistics": {
+    "totalCategories": 13,
+    "totalClasses": 229
+  }
+}

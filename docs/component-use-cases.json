@@ -1,0 +1,1436 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "description": "Use case guidance for fundamental-styles components - helps AI agents select the right component",
+  "version": "1.0.0",
+  "generatedBy": "manual",
+
+  "componentGroups": {
+    "feedback": {
+      "description": "Components for displaying messages, status, and feedback to users",
+      "decisionGuide": "Use alert for critical page-level messages, message-strip for inline context, message-toast for temporary confirmations, notification for actionable updates",
+      "components": ["alert", "message-strip", "message-toast", "message-box", "message-page", "message-popover", "notification", "busy-indicator", "progress-indicator", "skeleton", "illustrated-message", "status-indicator"]
+    },
+    "navigation": {
+      "description": "Components for navigating within and between pages",
+      "decisionGuide": "Use shellbar for app header, side-nav for main navigation, tabs for same-page sections, breadcrumb for location context, pagination for data paging",
+      "components": ["shellbar", "side-nav", "vertical-nav", "horizontal-navigation", "navigation", "navigation-list", "navigation-menu", "tabs", "icon-tab-bar", "breadcrumb", "pagination"]
+    },
+    "forms": {
+      "description": "Components for user input and form construction",
+      "decisionGuide": "Use input for text, select for dropdowns, checkbox for multi-select, radio for single-select, switch for toggles, textarea for long text",
+      "components": ["input", "select", "checkbox", "radio", "switch", "textarea", "form-item", "form-label", "form-group", "form-message", "fieldset", "form-layout-grid"]
+    }
+  },
+
+  "useCases": {
+    "action-bar": {
+      "useCases": [
+        "Page-level toolbar at top of content area",
+        "Display page title with back navigation",
+        "Container for page-level action buttons",
+        "Show contextual actions for the current view"
+      ],
+      "avoidWhen": [
+        "App-level navigation (use shellbar)",
+        "Table/list row actions (use toolbar)",
+        "Form actions (use bar with footer mode)"
+      ],
+      "relatedComponents": ["bar", "toolbar", "shellbar"]
+    },
+
+    "action-sheet": {
+      "useCases": [
+        "Mobile-optimized action menu",
+        "Bottom sheet with action options",
+        "Touch-friendly action selection",
+        "Overflow menu on mobile devices"
+      ],
+      "avoidWhen": [
+        "Desktop applications (use menu or popover)",
+        "Complex forms (use dialog)",
+        "Navigation (use menu)"
+      ],
+      "relatedComponents": ["menu", "popover", "dialog"]
+    },
+
+    "bar": {
+      "useCases": [
+        "Header bar for dialogs and pages",
+        "Footer bar with action buttons",
+        "Subheader for additional context",
+        "Container for title and actions"
+      ],
+      "avoidWhen": [
+        "Main app navigation (use shellbar)",
+        "Page-level actions outside dialog (use action-bar)",
+        "Toolbar within content (use toolbar)"
+      ],
+      "relatedComponents": ["action-bar", "toolbar", "shellbar"]
+    },
+
+    "breadcrumb": {
+      "useCases": [
+        "Show current location in hierarchy",
+        "Enable navigation to parent pages",
+        "Display path in multi-level apps",
+        "Provide context in deep navigation"
+      ],
+      "avoidWhen": [
+        "Single-level apps (not needed)",
+        "Primary navigation (use side-nav)",
+        "Tab-based navigation (use tabs)"
+      ],
+      "relatedComponents": ["side-nav", "shellbar"]
+    },
+
+    "busy-indicator": {
+      "useCases": [
+        "Show loading state for async operations",
+        "Indicate content is being fetched",
+        "Block interaction during processing",
+        "Display indeterminate progress"
+      ],
+      "avoidWhen": [
+        "Known progress percentage (use progress-indicator)",
+        "Page-level loading (use skeleton)",
+        "Background operations (no indicator needed)"
+      ],
+      "relatedComponents": ["progress-indicator", "skeleton", "ai-busy-indicator"]
+    },
+
+    "button-split": {
+      "useCases": [
+        "Primary action with additional options",
+        "Save with save-as dropdown",
+        "Send with send options",
+        "Default action plus alternatives"
+      ],
+      "avoidWhen": [
+        "All actions equal priority (use segmented-button)",
+        "Simple single action (use button)",
+        "Menu trigger only (use menu button)"
+      ],
+      "relatedComponents": ["button", "segmented-button", "menu"]
+    },
+
+    "calendar": {
+      "useCases": [
+        "Date picker component",
+        "Date range selection",
+        "Schedule/event display",
+        "Inline date selection"
+      ],
+      "avoidWhen": [
+        "Time-only selection (use time)",
+        "Simple date input (use input with type=date)",
+        "Date and time together (use combined picker)"
+      ],
+      "relatedComponents": ["time", "timepicker"]
+    },
+
+    "carousel": {
+      "useCases": [
+        "Image gallery with navigation",
+        "Product image slideshow",
+        "Feature showcase",
+        "Content rotation"
+      ],
+      "avoidWhen": [
+        "Critical information (users may miss slides)",
+        "Forms or interactive content",
+        "Small number of items (use static layout)"
+      ],
+      "relatedComponents": ["card", "tile"]
+    },
+
+    "counter": {
+      "useCases": [
+        "Show count of items",
+        "Badge with number",
+        "Notification count indicator",
+        "Quantity display"
+      ],
+      "avoidWhen": [
+        "Status indication (use badge or object-status)",
+        "Large numbers with units (use object-number)",
+        "Interactive counters (use step-input)"
+      ],
+      "relatedComponents": ["badge", "object-number", "step-input"]
+    },
+
+    "dynamic-page": {
+      "useCases": [
+        "Object detail pages",
+        "Collapsible header with content",
+        "Pages with hero section",
+        "Master-detail layouts"
+      ],
+      "avoidWhen": [
+        "Simple pages (use page)",
+        "List views (use list or table)",
+        "Dashboard layouts (use layout-grid)"
+      ],
+      "relatedComponents": ["page", "panel", "section"]
+    },
+
+    "feed-input": {
+      "useCases": [
+        "Comment input field",
+        "Chat message input",
+        "Social post creation",
+        "Threaded discussion input"
+      ],
+      "avoidWhen": [
+        "Simple text input (use textarea)",
+        "Form fields (use input)",
+        "Rich text editing (use external editor)"
+      ],
+      "relatedComponents": ["feed-list", "textarea"]
+    },
+
+    "feed-list": {
+      "useCases": [
+        "Activity feed display",
+        "Comment threads",
+        "Timeline of events",
+        "Social updates list"
+      ],
+      "avoidWhen": [
+        "Structured data (use table or list)",
+        "Simple lists (use list)",
+        "Navigation items (use navigation-list)"
+      ],
+      "relatedComponents": ["feed-input", "list", "notification"]
+    },
+
+    "file-uploader": {
+      "useCases": [
+        "Single or multiple file upload",
+        "Document attachment",
+        "Image upload",
+        "Drag and drop file input"
+      ],
+      "avoidWhen": [
+        "File management (use upload-collection)",
+        "Simple text input (use input)",
+        "URL input (use input with validation)"
+      ],
+      "relatedComponents": ["upload-collection", "input"]
+    },
+
+    "flexible-column-layout": {
+      "useCases": [
+        "Master-detail-detail views",
+        "Responsive multi-column layout",
+        "Progressive disclosure patterns",
+        "List to detail navigation"
+      ],
+      "avoidWhen": [
+        "Simple two-column (use splitter)",
+        "Dashboard grids (use layout-grid)",
+        "Single page content (use page)"
+      ],
+      "relatedComponents": ["splitter", "layout-grid", "dynamic-side-content"]
+    },
+
+    "grid-list": {
+      "useCases": [
+        "Card grid layout",
+        "Product catalog display",
+        "Media gallery",
+        "Tile-based content"
+      ],
+      "avoidWhen": [
+        "Tabular data (use table)",
+        "Simple lists (use list)",
+        "Single column (use list)"
+      ],
+      "relatedComponents": ["list", "table", "card"]
+    },
+
+    "horizontal-navigation": {
+      "useCases": [
+        "Secondary navigation below shellbar",
+        "Category navigation",
+        "Horizontal menu bar",
+        "Application areas navigation"
+      ],
+      "avoidWhen": [
+        "Primary navigation (use shellbar)",
+        "Side navigation (use side-nav)",
+        "In-page sections (use tabs)"
+      ],
+      "relatedComponents": ["shellbar", "tabs", "navigation-menu"]
+    },
+
+    "icon-tab-bar": {
+      "useCases": [
+        "Tabs with icons and counts",
+        "Filter bar with visual indicators",
+        "Status-based filtering",
+        "Category switching with badges"
+      ],
+      "avoidWhen": [
+        "Simple text tabs (use tabs)",
+        "Navigation between pages (use side-nav)",
+        "Icon-only actions (use toolbar)"
+      ],
+      "relatedComponents": ["tabs", "toolbar", "segmented-button"]
+    },
+
+    "illustrated-message": {
+      "useCases": [
+        "Empty state with illustration",
+        "Error page with visual",
+        "No results found",
+        "First-time user guidance"
+      ],
+      "avoidWhen": [
+        "Inline errors (use message-strip)",
+        "Simple text messages (use text)",
+        "Temporary feedback (use message-toast)"
+      ],
+      "relatedComponents": ["message-page", "message-strip"]
+    },
+
+    "info-label": {
+      "useCases": [
+        "Colored status labels",
+        "Category tags",
+        "Priority indicators",
+        "Classification badges"
+      ],
+      "avoidWhen": [
+        "Counts (use counter or badge)",
+        "Object status (use object-status)",
+        "Removable tags (use token)"
+      ],
+      "relatedComponents": ["badge", "object-status", "token"]
+    },
+
+    "input-group": {
+      "useCases": [
+        "Input with prefix/suffix",
+        "Input with button addon",
+        "Input with icon",
+        "Combined input controls"
+      ],
+      "avoidWhen": [
+        "Simple inputs (use input)",
+        "Dropdown selection (use select)",
+        "Search functionality (use search-field)"
+      ],
+      "relatedComponents": ["input", "search-field", "select"]
+    },
+
+    "layout-grid": {
+      "useCases": [
+        "Responsive grid layouts",
+        "Dashboard card arrangements",
+        "Form column layouts",
+        "Content grid organization"
+      ],
+      "avoidWhen": [
+        "Simple flexbox needs (use sap-flex utilities)",
+        "Master-detail (use flexible-column-layout)",
+        "List layouts (use list)"
+      ],
+      "relatedComponents": ["flexible-column-layout", "fixed-card-layout"]
+    },
+
+    "message-box": {
+      "useCases": [
+        "Confirmation dialogs",
+        "Error dialogs requiring acknowledgment",
+        "Warning with user decision",
+        "Information requiring OK"
+      ],
+      "avoidWhen": [
+        "Complex forms (use dialog)",
+        "Non-blocking messages (use message-toast)",
+        "Inline feedback (use message-strip)"
+      ],
+      "relatedComponents": ["dialog", "message-strip", "message-toast"]
+    },
+
+    "message-page": {
+      "useCases": [
+        "Full page error states",
+        "404 not found pages",
+        "Access denied pages",
+        "Maintenance mode display"
+      ],
+      "avoidWhen": [
+        "Inline errors (use message-strip)",
+        "Empty states within page (use illustrated-message)",
+        "Temporary messages (use message-toast)"
+      ],
+      "relatedComponents": ["illustrated-message", "message-strip"]
+    },
+
+    "message-popover": {
+      "useCases": [
+        "Form validation summary",
+        "Multiple error messages",
+        "Warning collection display",
+        "Message center popover"
+      ],
+      "avoidWhen": [
+        "Single inline error (use form-message)",
+        "Page-level message (use message-strip)",
+        "Confirmation needed (use message-box)"
+      ],
+      "relatedComponents": ["form-message", "message-strip", "popover"]
+    },
+
+    "message-toast": {
+      "useCases": [
+        "Success confirmations",
+        "Auto-dismissing notifications",
+        "Non-critical updates",
+        "Action completion feedback"
+      ],
+      "avoidWhen": [
+        "Errors requiring action (use message-strip or message-box)",
+        "Persistent messages (use message-strip)",
+        "Messages with actions (use notification)"
+      ],
+      "relatedComponents": ["message-strip", "notification", "message-box"]
+    },
+
+    "navigation": {
+      "useCases": [
+        "Generic navigation container",
+        "Custom navigation structures",
+        "Nested navigation items",
+        "Navigation with groups"
+      ],
+      "avoidWhen": [
+        "Standard side nav (use side-nav)",
+        "Vertical menu (use vertical-nav)",
+        "Tab navigation (use tabs)"
+      ],
+      "relatedComponents": ["side-nav", "vertical-nav", "navigation-list"]
+    },
+
+    "navigation-list": {
+      "useCases": [
+        "Navigation item list",
+        "Menu-style navigation",
+        "Expandable navigation groups",
+        "Nested navigation structure"
+      ],
+      "avoidWhen": [
+        "Full side navigation (use side-nav)",
+        "Simple list (use list)",
+        "Action menu (use menu)"
+      ],
+      "relatedComponents": ["side-nav", "list", "menu"]
+    },
+
+    "navigation-menu": {
+      "useCases": [
+        "Dropdown navigation menu",
+        "Mega menu structures",
+        "Category navigation dropdown",
+        "Multi-level navigation"
+      ],
+      "avoidWhen": [
+        "Action menu (use menu)",
+        "Side navigation (use side-nav)",
+        "Simple tabs (use tabs)"
+      ],
+      "relatedComponents": ["menu", "horizontal-navigation", "shellbar"]
+    },
+
+    "notification": {
+      "useCases": [
+        "Actionable notifications",
+        "System alerts with actions",
+        "Update notifications",
+        "Messages requiring response"
+      ],
+      "avoidWhen": [
+        "Simple confirmations (use message-toast)",
+        "Inline feedback (use message-strip)",
+        "Blocking messages (use message-box)"
+      ],
+      "relatedComponents": ["message-toast", "message-strip", "alert"]
+    },
+
+    "object-attribute": {
+      "useCases": [
+        "Label-value pairs",
+        "Object property display",
+        "Metadata display",
+        "Key-value information"
+      ],
+      "avoidWhen": [
+        "Status display (use object-status)",
+        "Numbers with units (use object-number)",
+        "Form fields (use form-item)"
+      ],
+      "relatedComponents": ["object-status", "object-number", "object-identifier"]
+    },
+
+    "object-identifier": {
+      "useCases": [
+        "Object title with description",
+        "Entity identification",
+        "Linked object reference",
+        "Business object header"
+      ],
+      "avoidWhen": [
+        "Simple text (use text)",
+        "Navigation link (use link)",
+        "Avatar with name (use avatar)"
+      ],
+      "relatedComponents": ["object-attribute", "link", "avatar"]
+    },
+
+    "object-list": {
+      "useCases": [
+        "Business object list",
+        "Items with attributes",
+        "Rich list items",
+        "Object summaries"
+      ],
+      "avoidWhen": [
+        "Simple lists (use list)",
+        "Tabular data (use table)",
+        "Card layouts (use grid-list)"
+      ],
+      "relatedComponents": ["list", "table", "grid-list"]
+    },
+
+    "object-marker": {
+      "useCases": [
+        "Favorite indicator",
+        "Flagged item marker",
+        "Draft indicator",
+        "Object state icons"
+      ],
+      "avoidWhen": [
+        "Status text (use object-status)",
+        "Counts (use counter)",
+        "Tags (use token)"
+      ],
+      "relatedComponents": ["object-status", "badge", "icon"]
+    },
+
+    "object-number": {
+      "useCases": [
+        "Currency display",
+        "Quantity with units",
+        "Metrics and KPIs",
+        "Numeric values with labels"
+      ],
+      "avoidWhen": [
+        "Simple counts (use counter)",
+        "Progress (use progress-indicator)",
+        "Editable numbers (use step-input)"
+      ],
+      "relatedComponents": ["counter", "numeric-content", "step-input"]
+    },
+
+    "object-status": {
+      "useCases": [
+        "Status indicators",
+        "Semantic state display",
+        "Approval status",
+        "Process state"
+      ],
+      "avoidWhen": [
+        "Colored labels (use info-label)",
+        "Simple badges (use badge)",
+        "Interactive status (use switch)"
+      ],
+      "relatedComponents": ["info-label", "badge", "status-indicator"]
+    },
+
+    "page": {
+      "useCases": [
+        "Standard page container",
+        "Page with header and footer",
+        "Content wrapper",
+        "Basic page structure"
+      ],
+      "avoidWhen": [
+        "Collapsible header (use dynamic-page)",
+        "Multi-column layouts (use flexible-column-layout)",
+        "Dialog content (use dialog)"
+      ],
+      "relatedComponents": ["dynamic-page", "panel", "section"]
+    },
+
+    "pagination": {
+      "useCases": [
+        "Table/list pagination",
+        "Page navigation for data",
+        "Result set navigation",
+        "Multi-page content"
+      ],
+      "avoidWhen": [
+        "Infinite scroll (load more button)",
+        "Small datasets (show all)",
+        "Tab navigation (use tabs)"
+      ],
+      "relatedComponents": ["table", "list"]
+    },
+
+    "panel": {
+      "useCases": [
+        "Collapsible content section",
+        "Grouped content container",
+        "Expandable information",
+        "Content organization"
+      ],
+      "avoidWhen": [
+        "Cards with actions (use card)",
+        "Non-collapsible sections (use section)",
+        "Full pages (use page)"
+      ],
+      "relatedComponents": ["card", "section", "layout-panel"]
+    },
+
+    "product-switch": {
+      "useCases": [
+        "App switcher in shellbar",
+        "Product navigation",
+        "Suite application switching",
+        "Cross-app navigation"
+      ],
+      "avoidWhen": [
+        "In-app navigation (use side-nav)",
+        "User menu (use user-menu)",
+        "Simple dropdown (use select)"
+      ],
+      "relatedComponents": ["shellbar", "user-menu", "menu"]
+    },
+
+    "progress-indicator": {
+      "useCases": [
+        "Upload progress",
+        "Process completion percentage",
+        "Step progress",
+        "Capacity/usage display"
+      ],
+      "avoidWhen": [
+        "Unknown duration (use busy-indicator)",
+        "Step-by-step wizard (use wizard)",
+        "Status only (use object-status)"
+      ],
+      "relatedComponents": ["busy-indicator", "wizard", "status-indicator"]
+    },
+
+    "quick-view": {
+      "useCases": [
+        "Object preview popover",
+        "Contact card preview",
+        "Quick information display",
+        "Hover details"
+      ],
+      "avoidWhen": [
+        "Full object page (use dynamic-page)",
+        "Actions needed (use popover)",
+        "Simple tooltip (use title attribute)"
+      ],
+      "relatedComponents": ["popover", "card", "dialog"]
+    },
+
+    "rating-indicator": {
+      "useCases": [
+        "Star ratings display",
+        "User ratings input",
+        "Quality indicators",
+        "Review ratings"
+      ],
+      "avoidWhen": [
+        "Binary like/dislike (use button)",
+        "Progress (use progress-indicator)",
+        "Numeric input (use slider or step-input)"
+      ],
+      "relatedComponents": ["slider", "step-input"]
+    },
+
+    "search-field": {
+      "useCases": [
+        "Search input with icon",
+        "Filterable search",
+        "Global search",
+        "List filtering"
+      ],
+      "avoidWhen": [
+        "Simple text filter (use input)",
+        "Advanced filters (use filter bar)",
+        "Dropdown search (use select with search)"
+      ],
+      "relatedComponents": ["input", "input-group"]
+    },
+
+    "section": {
+      "useCases": [
+        "Page content sections",
+        "Grouped form sections",
+        "Content dividers",
+        "Titled content areas"
+      ],
+      "avoidWhen": [
+        "Collapsible content (use panel)",
+        "Cards (use card)",
+        "Independent panels (use layout-panel)"
+      ],
+      "relatedComponents": ["panel", "facet", "form-group"]
+    },
+
+    "segmented-button": {
+      "useCases": [
+        "View switcher",
+        "Single selection from options",
+        "Toggle between modes",
+        "Mutually exclusive choices"
+      ],
+      "avoidWhen": [
+        "Primary action with dropdown (use button-split)",
+        "Multiple selections (use checkbox)",
+        "Many options (use select)"
+      ],
+      "relatedComponents": ["button-split", "tabs", "radio"]
+    },
+
+    "side-nav": {
+      "useCases": [
+        "Main application navigation",
+        "Collapsible side menu",
+        "Hierarchical navigation",
+        "App area switching"
+      ],
+      "avoidWhen": [
+        "Horizontal navigation (use tabs or horizontal-navigation)",
+        "Simple menus (use menu)",
+        "Contextual actions (use toolbar)"
+      ],
+      "relatedComponents": ["vertical-nav", "shellbar", "navigation-list"]
+    },
+
+    "skeleton": {
+      "useCases": [
+        "Content loading placeholder",
+        "Page loading state",
+        "Perceived performance improvement",
+        "Layout preservation during load"
+      ],
+      "avoidWhen": [
+        "Quick operations (use busy-indicator)",
+        "Known progress (use progress-indicator)",
+        "Error states (use illustrated-message)"
+      ],
+      "relatedComponents": ["busy-indicator", "progress-indicator"]
+    },
+
+    "slider": {
+      "useCases": [
+        "Range value selection",
+        "Volume/brightness controls",
+        "Price range filtering",
+        "Numeric range input"
+      ],
+      "avoidWhen": [
+        "Precise numeric input (use step-input)",
+        "Discrete options (use segmented-button)",
+        "Rating (use rating-indicator)"
+      ],
+      "relatedComponents": ["step-input", "rating-indicator"]
+    },
+
+    "splitter": {
+      "useCases": [
+        "Resizable panes",
+        "Two-panel layouts",
+        "Adjustable content areas",
+        "Side-by-side comparison"
+      ],
+      "avoidWhen": [
+        "Three-column responsive (use flexible-column-layout)",
+        "Fixed layouts (use layout-grid)",
+        "Simple side nav (use side-nav)"
+      ],
+      "relatedComponents": ["flexible-column-layout", "dynamic-side-content"]
+    },
+
+    "status-indicator": {
+      "useCases": [
+        "Process status visualization",
+        "Multi-state indicators",
+        "Quality indicators",
+        "Score visualization"
+      ],
+      "avoidWhen": [
+        "Simple status (use object-status)",
+        "Progress (use progress-indicator)",
+        "Ratings (use rating-indicator)"
+      ],
+      "relatedComponents": ["object-status", "progress-indicator"]
+    },
+
+    "step-input": {
+      "useCases": [
+        "Quantity input with +/- buttons",
+        "Precise numeric input",
+        "Increment/decrement values",
+        "Quantity selectors"
+      ],
+      "avoidWhen": [
+        "Range selection (use slider)",
+        "Large value ranges (use input)",
+        "Rating (use rating-indicator)"
+      ],
+      "relatedComponents": ["slider", "input", "rating-indicator"]
+    },
+
+    "switch": {
+      "useCases": [
+        "On/off toggles",
+        "Feature enable/disable",
+        "Settings toggles",
+        "Binary state changes"
+      ],
+      "avoidWhen": [
+        "Multiple options (use checkbox)",
+        "Form agreement (use checkbox)",
+        "Toggle between views (use segmented-button)"
+      ],
+      "relatedComponents": ["checkbox", "segmented-button"]
+    },
+
+    "tabs": {
+      "useCases": [
+        "Same-page content sections",
+        "Form step organization",
+        "View switching",
+        "Content categorization"
+      ],
+      "avoidWhen": [
+        "App-level navigation (use side-nav)",
+        "Tabs with counts/badges (use icon-tab-bar)",
+        "Sequential steps (use wizard)"
+      ],
+      "relatedComponents": ["icon-tab-bar", "side-nav", "wizard"]
+    },
+
+    "tile": {
+      "useCases": [
+        "Dashboard tiles",
+        "App launcher tiles",
+        "KPI display tiles",
+        "Quick access shortcuts"
+      ],
+      "avoidWhen": [
+        "Rich content cards (use card)",
+        "List items (use list)",
+        "Image galleries (use grid-list)"
+      ],
+      "relatedComponents": ["card", "numeric-content"]
+    },
+
+    "time": {
+      "useCases": [
+        "Time picker component",
+        "Time selection input",
+        "Schedule time input",
+        "Duration input"
+      ],
+      "avoidWhen": [
+        "Date selection (use calendar)",
+        "Date and time (use combined picker)",
+        "Simple text time (use input)"
+      ],
+      "relatedComponents": ["calendar", "timepicker"]
+    },
+
+    "token": {
+      "useCases": [
+        "Selected filter display",
+        "Removable tags",
+        "Multi-select display",
+        "Chip-style selections"
+      ],
+      "avoidWhen": [
+        "Status labels (use info-label)",
+        "Non-removable tags (use badge)",
+        "Single selection (use select)"
+      ],
+      "relatedComponents": ["tokenizer", "info-label", "badge"]
+    },
+
+    "tokenizer": {
+      "useCases": [
+        "Multiple token container",
+        "Multi-select input display",
+        "Tag collection",
+        "Selected items display"
+      ],
+      "avoidWhen": [
+        "Single selection (use select)",
+        "Simple list (use list)",
+        "Editable tags (use input-group)"
+      ],
+      "relatedComponents": ["token", "select", "input-group"]
+    },
+
+    "toolbar": {
+      "useCases": [
+        "Content area actions",
+        "Table/list toolbar",
+        "Formatting toolbar",
+        "Action button container"
+      ],
+      "avoidWhen": [
+        "Page header (use bar or action-bar)",
+        "Dialog footer (use bar)",
+        "App navigation (use shellbar)"
+      ],
+      "relatedComponents": ["bar", "action-bar", "tool-header"]
+    },
+
+    "tree": {
+      "useCases": [
+        "Hierarchical data display",
+        "File/folder structures",
+        "Organizational hierarchies",
+        "Nested category navigation"
+      ],
+      "avoidWhen": [
+        "Flat lists (use list)",
+        "Tabular data (use table)",
+        "Navigation menu (use side-nav)"
+      ],
+      "relatedComponents": ["list", "table", "side-nav"]
+    },
+
+    "upload-collection": {
+      "useCases": [
+        "Uploaded files list",
+        "Attachment management",
+        "Document collection",
+        "File list with actions"
+      ],
+      "avoidWhen": [
+        "Simple upload (use file-uploader)",
+        "Image gallery (use grid-list)",
+        "Generic list (use list)"
+      ],
+      "relatedComponents": ["file-uploader", "list"]
+    },
+
+    "user-menu": {
+      "useCases": [
+        "User profile menu",
+        "Account settings access",
+        "Sign out option",
+        "User-specific actions"
+      ],
+      "avoidWhen": [
+        "App navigation (use product-switch)",
+        "Generic menu (use menu)",
+        "Settings page (use side-nav)"
+      ],
+      "relatedComponents": ["shellbar", "menu", "avatar"]
+    },
+
+    "variant-management": {
+      "useCases": [
+        "Saved view management",
+        "Filter variant selection",
+        "Layout preferences",
+        "Personalization options"
+      ],
+      "avoidWhen": [
+        "Simple selection (use select)",
+        "Settings (use settings component)",
+        "One-time choices (use radio)"
+      ],
+      "relatedComponents": ["select", "popover"]
+    },
+
+    "vertical-nav": {
+      "useCases": [
+        "Vertical navigation menu",
+        "Side menu without collapse",
+        "Simple vertical links",
+        "Static navigation list"
+      ],
+      "avoidWhen": [
+        "Collapsible navigation (use side-nav)",
+        "Main app navigation (use side-nav with shellbar)",
+        "Horizontal layout (use tabs)"
+      ],
+      "relatedComponents": ["side-nav", "navigation-list"]
+    },
+
+    "wizard": {
+      "useCases": [
+        "Multi-step processes",
+        "Guided workflows",
+        "Setup wizards",
+        "Sequential form completion"
+      ],
+      "avoidWhen": [
+        "Non-sequential content (use tabs)",
+        "Simple forms (use form-group)",
+        "Single step (use dialog)"
+      ],
+      "relatedComponents": ["tabs", "dialog", "progress-indicator"]
+    },
+
+    "ai-busy-indicator": {
+      "useCases": [
+        "AI processing indicator",
+        "LLM response loading",
+        "AI feature loading state",
+        "Generative AI operations"
+      ],
+      "avoidWhen": [
+        "Non-AI loading (use busy-indicator)",
+        "Known progress (use progress-indicator)",
+        "Page loading (use skeleton)"
+      ],
+      "relatedComponents": ["busy-indicator", "ai-loading-bar"]
+    },
+
+    "ai-loading-bar": {
+      "useCases": [
+        "AI content generation progress",
+        "LLM streaming response",
+        "AI processing with progress",
+        "Generative AI loading bar"
+      ],
+      "avoidWhen": [
+        "Non-AI progress (use progress-indicator)",
+        "Indeterminate loading (use ai-busy-indicator)",
+        "Quick operations (use busy-indicator)"
+      ],
+      "relatedComponents": ["ai-busy-indicator", "progress-indicator"]
+    },
+
+    "ai-text": {
+      "useCases": [
+        "AI-generated text display",
+        "LLM response formatting",
+        "Streaming text output",
+        "AI content presentation"
+      ],
+      "avoidWhen": [
+        "Regular text (use text)",
+        "User input (use textarea)",
+        "Code display (use code)"
+      ],
+      "relatedComponents": ["text", "ai-writing-assistant"]
+    },
+
+    "ai-writing-assistant": {
+      "useCases": [
+        "AI writing suggestions",
+        "Content assistance UI",
+        "AI-powered text editor",
+        "Writing enhancement tools"
+      ],
+      "avoidWhen": [
+        "Simple text input (use textarea)",
+        "AI status only (use ai-text)",
+        "Non-writing AI features"
+      ],
+      "relatedComponents": ["ai-text", "prompt-input", "textarea"]
+    },
+
+    "prompt-input": {
+      "useCases": [
+        "AI prompt input field",
+        "Chat input for AI",
+        "LLM query input",
+        "AI assistant input"
+      ],
+      "avoidWhen": [
+        "Regular text input (use input or textarea)",
+        "Search (use search-field)",
+        "Comments (use feed-input)"
+      ],
+      "relatedComponents": ["ai-writing-assistant", "textarea", "search-field"]
+    },
+
+    "avatar-group": {
+      "useCases": [
+        "Multiple user avatars",
+        "Team member display",
+        "Participant list preview",
+        "Collaborative users indicator"
+      ],
+      "avoidWhen": [
+        "Single user (use avatar)",
+        "Full user list (use list)",
+        "User selection (use tokenizer)"
+      ],
+      "relatedComponents": ["avatar", "list"]
+    },
+
+    "badge": {
+      "useCases": [
+        "Notification count",
+        "Status indicator",
+        "New item marker",
+        "Unread count display"
+      ],
+      "avoidWhen": [
+        "Semantic status (use object-status)",
+        "Colored labels (use info-label)",
+        "Large numbers (use counter)"
+      ],
+      "relatedComponents": ["counter", "info-label", "object-status"]
+    },
+
+    "code": {
+      "useCases": [
+        "Code snippet display",
+        "Inline code formatting",
+        "Technical values",
+        "Monospace text"
+      ],
+      "avoidWhen": [
+        "Regular text (use text)",
+        "Editable code (use textarea)",
+        "Long code blocks (use external code editor)"
+      ],
+      "relatedComponents": ["text"]
+    },
+
+    "facet": {
+      "useCases": [
+        "Object page header sections",
+        "Key-value facet display",
+        "Metadata grouping",
+        "Object attributes container"
+      ],
+      "avoidWhen": [
+        "Form sections (use form-group)",
+        "Collapsible content (use panel)",
+        "Simple sections (use section)"
+      ],
+      "relatedComponents": ["section", "object-attribute", "dynamic-page"]
+    },
+
+    "fieldset": {
+      "useCases": [
+        "Form field grouping",
+        "Semantic form sections",
+        "Related fields container",
+        "Accessible form groups"
+      ],
+      "avoidWhen": [
+        "Visual grouping only (use form-group)",
+        "Layout sections (use section)",
+        "Complex forms (use form-layout-grid)"
+      ],
+      "relatedComponents": ["form-group", "form-layout-grid"]
+    },
+
+    "form-group": {
+      "useCases": [
+        "Group related form fields",
+        "Form section with header",
+        "Visual form organization",
+        "Field container"
+      ],
+      "avoidWhen": [
+        "Semantic grouping (use fieldset)",
+        "Grid layouts (use form-layout-grid)",
+        "Page sections (use section)"
+      ],
+      "relatedComponents": ["fieldset", "form-layout-grid", "section"]
+    },
+
+    "form-header": {
+      "useCases": [
+        "Form section title",
+        "Form group header",
+        "Section heading in forms",
+        "Form area label"
+      ],
+      "avoidWhen": [
+        "Page titles (use title)",
+        "Panel headers (use panel)",
+        "Section titles outside forms (use section)"
+      ],
+      "relatedComponents": ["form-group", "title"]
+    },
+
+    "form-layout-grid": {
+      "useCases": [
+        "Responsive form layouts",
+        "Multi-column forms",
+        "Complex form structures",
+        "Form field grid"
+      ],
+      "avoidWhen": [
+        "Simple forms (use form-group)",
+        "Single column (use form-item)",
+        "Page layouts (use layout-grid)"
+      ],
+      "relatedComponents": ["form-group", "layout-grid"]
+    },
+
+    "form-message": {
+      "useCases": [
+        "Field validation message",
+        "Input error message",
+        "Field help text",
+        "Inline field feedback"
+      ],
+      "avoidWhen": [
+        "Multiple errors (use message-popover)",
+        "Page messages (use message-strip)",
+        "Success feedback (use message-toast)"
+      ],
+      "relatedComponents": ["message-popover", "message-strip"]
+    },
+
+    "generic-tag": {
+      "useCases": [
+        "Custom tag display",
+        "Label with optional actions",
+        "Categorization tag",
+        "Filterable tag"
+      ],
+      "avoidWhen": [
+        "Status (use object-status)",
+        "Removable tags (use token)",
+        "Simple labels (use info-label)"
+      ],
+      "relatedComponents": ["token", "info-label", "object-status"]
+    },
+
+    "layout-panel": {
+      "useCases": [
+        "Standalone content panel",
+        "Dashboard panel",
+        "Content container with header",
+        "Bordered content area"
+      ],
+      "avoidWhen": [
+        "Collapsible panels (use panel)",
+        "Cards with actions (use card)",
+        "Form sections (use form-group)"
+      ],
+      "relatedComponents": ["panel", "card", "section"]
+    },
+
+    "layout": {
+      "useCases": [
+        "Basic page structure",
+        "Container element",
+        "Content wrapper",
+        "Layout foundation"
+      ],
+      "avoidWhen": [
+        "Complex layouts (use layout-grid)",
+        "Multi-column (use flexible-column-layout)",
+        "Pages (use page component)"
+      ],
+      "relatedComponents": ["page", "layout-grid"]
+    },
+
+    "numeric-content": {
+      "useCases": [
+        "KPI display",
+        "Dashboard metrics",
+        "Large number display",
+        "Tile numeric content"
+      ],
+      "avoidWhen": [
+        "Simple numbers (use object-number)",
+        "Counts (use counter)",
+        "Progress values (use progress-indicator)"
+      ],
+      "relatedComponents": ["object-number", "tile", "counter"]
+    },
+
+    "text": {
+      "useCases": [
+        "Body text display",
+        "Paragraph content",
+        "Description text",
+        "General text content"
+      ],
+      "avoidWhen": [
+        "Headings (use title)",
+        "Code (use code)",
+        "Links (use link)"
+      ],
+      "relatedComponents": ["title", "code", "link"]
+    },
+
+    "title": {
+      "useCases": [
+        "Page headings",
+        "Section titles",
+        "Component headers",
+        "Semantic headings (h1-h6)"
+      ],
+      "avoidWhen": [
+        "Body text (use text)",
+        "Bar titles (use bar with title)",
+        "Form labels (use form-label)"
+      ],
+      "relatedComponents": ["text", "title-bar"]
+    },
+
+    "title-bar": {
+      "useCases": [
+        "Panel title bar",
+        "Section header bar",
+        "Container header",
+        "Titled content area header"
+      ],
+      "avoidWhen": [
+        "Page headers (use bar or action-bar)",
+        "Dialog headers (use bar)",
+        "Simple titles (use title)"
+      ],
+      "relatedComponents": ["bar", "action-bar", "title"]
+    },
+
+    "tool-header": {
+      "useCases": [
+        "Tool application header",
+        "Compact app header",
+        "Utility app header",
+        "Secondary app header"
+      ],
+      "avoidWhen": [
+        "Main app header (use shellbar)",
+        "Page headers (use action-bar)",
+        "Dialog headers (use bar)"
+      ],
+      "relatedComponents": ["shellbar", "action-bar", "bar"]
+    },
+
+    "tool-layout": {
+      "useCases": [
+        "Tool application layout",
+        "Utility page structure",
+        "Secondary app layout",
+        "Tool-specific page container"
+      ],
+      "avoidWhen": [
+        "Standard apps (use page)",
+        "Complex layouts (use flexible-column-layout)",
+        "Simple pages (use layout)"
+      ],
+      "relatedComponents": ["page", "layout", "tool-header"]
+    },
+
+    "timepicker": {
+      "useCases": [
+        "Time input with picker",
+        "Schedule time selection",
+        "Time field with dropdown",
+        "Time selection control"
+      ],
+      "avoidWhen": [
+        "Inline time display (use time)",
+        "Date and time (use combined component)",
+        "Simple text time (use input)"
+      ],
+      "relatedComponents": ["time", "calendar"]
+    },
+
+    "dynamic-side-content": {
+      "useCases": [
+        "Responsive side panel",
+        "Context-sensitive sidebar",
+        "Collapsible side content",
+        "Main content with side panel"
+      ],
+      "avoidWhen": [
+        "Navigation sidebar (use side-nav)",
+        "Fixed layouts (use splitter)",
+        "Multi-column (use flexible-column-layout)"
+      ],
+      "relatedComponents": ["splitter", "flexible-column-layout"]
+    },
+
+    "fixed-card-layout": {
+      "useCases": [
+        "Fixed-size card grid",
+        "Dashboard with fixed cards",
+        "Non-resizable card layout",
+        "Static card arrangement"
+      ],
+      "avoidWhen": [
+        "Resizable cards (use resizable-card-layout)",
+        "Responsive grids (use layout-grid)",
+        "Lists (use grid-list)"
+      ],
+      "relatedComponents": ["resizable-card-layout", "layout-grid", "card"]
+    },
+
+    "resizable-card-layout": {
+      "useCases": [
+        "Resizable dashboard cards",
+        "User-configurable layouts",
+        "Draggable card grid",
+        "Personalized dashboards"
+      ],
+      "avoidWhen": [
+        "Fixed layouts (use fixed-card-layout)",
+        "Simple grids (use layout-grid)",
+        "Non-interactive cards (use grid-list)"
+      ],
+      "relatedComponents": ["fixed-card-layout", "layout-grid", "card"]
+    },
+
+    "micro-process-flow": {
+      "useCases": [
+        "Compact process visualization",
+        "Inline process status",
+        "Small workflow indicator",
+        "Status flow in limited space"
+      ],
+      "avoidWhen": [
+        "Full wizard (use wizard)",
+        "Detailed process (use progress-indicator)",
+        "Navigation steps (use tabs)"
+      ],
+      "relatedComponents": ["wizard", "progress-indicator"]
+    },
+
+    "settings": {
+      "useCases": [
+        "Settings page layout",
+        "Preferences organization",
+        "Configuration sections",
+        "Settings navigation"
+      ],
+      "avoidWhen": [
+        "Simple forms (use form-group)",
+        "Navigation (use side-nav)",
+        "Single setting (use switch or select)"
+      ],
+      "relatedComponents": ["form-group", "side-nav"]
+    },
+
+    "page-footer": {
+      "useCases": [
+        "Page action footer",
+        "Sticky bottom bar",
+        "Form submit footer",
+        "Page-level actions container"
+      ],
+      "avoidWhen": [
+        "Dialog footer (use bar)",
+        "Inline actions (use toolbar)",
+        "Navigation (use pagination)"
+      ],
+      "relatedComponents": ["bar", "toolbar"]
+    }
+  }
+}

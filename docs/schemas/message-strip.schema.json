@@ -20,7 +20,26 @@
           "fd-message-strip--no-icon",
           "fd-message-strip--dismissible",
           "fd-message-strip--link",
-          "fd-message-strip--indication-color-"
+          "fd-message-strip--indication-color-1",
+          "fd-message-strip--indication-color-1b",
+          "fd-message-strip--indication-color-2",
+          "fd-message-strip--indication-color-2b",
+          "fd-message-strip--indication-color-3",
+          "fd-message-strip--indication-color-3b",
+          "fd-message-strip--indication-color-4",
+          "fd-message-strip--indication-color-4b",
+          "fd-message-strip--indication-color-5",
+          "fd-message-strip--indication-color-5b",
+          "fd-message-strip--indication-color-6",
+          "fd-message-strip--indication-color-6b",
+          "fd-message-strip--indication-color-7",
+          "fd-message-strip--indication-color-7b",
+          "fd-message-strip--indication-color-8",
+          "fd-message-strip--indication-color-8b",
+          "fd-message-strip--indication-color-9",
+          "fd-message-strip--indication-color-9b",
+          "fd-message-strip--indication-color-10",
+          "fd-message-strip--indication-color-10b"
         ]
       },
       "description": "Optional modifier classes"

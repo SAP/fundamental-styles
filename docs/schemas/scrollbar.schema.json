@@ -13,10 +13,32 @@
       "type": "array",
       "items": {
         "enum": [
-          "fd-scrollbar--container"
+          "fd-scrollbar--container",
+          "fd-scrollbar--subtle",
+          "fd-scrollbar--undecorated",
+          "fd-scrollbar--emphasized",
+          "fd-scrollbar--touch-target",
+          "fd-scrollbar--inverted"
         ]
       },
       "description": "Optional modifier classes"
+    },
+    "elements": {
+      "type": "object",
+      "description": "Optional element classes with their available modifiers",
+      "properties": {
+        "fd-scrollbar__content": {
+          "type": "object",
+          "description": "content element",
+          "properties": {
+            "class": {
+              "const": "fd-scrollbar__content",
+              "description": "Element class name"
+            }
+          }
+        }
+      },
+      "additionalProperties": false
     }
   },
   "required": [

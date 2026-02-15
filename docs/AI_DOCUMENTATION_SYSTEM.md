@@ -42,6 +42,10 @@ yarn test:ai-docs              # Run validation tests
 | schemas/*.schema.json | 120 JSON validation schemas |
 | component-relationships.json | 307 relationships, analytics |
 | component-graph.md | Mermaid visualization |
+| html-examples.json | 10 complete HTML patterns |
+| modifier-rules.json | Mutually exclusive modifier rules |
+| accessibility.json | ARIA patterns for 72 components |
+| design-tokens.json | 1,522 CSS custom properties |
 
 ## Features
 
@@ -116,7 +120,7 @@ Fully automated via CI/CD. Manual updates only needed for:
 ## Documentation
 
 - [AI_DOCUMENTATION_TESTS.md](AI_DOCUMENTATION_TESTS.md) - Test suite
-- [FUTURE_ENHANCEMENTS.md](FUTURE_ENHANCEMENTS.md) - Identified gaps and priorities
+- [AI_DOCUMENTATION_VALIDATION.md](AI_DOCUMENTATION_VALIDATION.md) - Validation report and fixes
 
 ---
 

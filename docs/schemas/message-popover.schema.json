@@ -20,6 +20,18 @@
             "class": {
               "const": "fd-message-popover__trigger",
               "description": "Element class name"
+            },
+            "modifiers": {
+              "type": "array",
+              "items": {
+                "enum": [
+                  "fd-message-popover__trigger--negative",
+                  "fd-message-popover__trigger--information",
+                  "fd-message-popover__trigger--critical",
+                  "fd-message-popover__trigger--success"
+                ]
+              },
+              "description": "Available modifiers for this element"
             }
           }
         }

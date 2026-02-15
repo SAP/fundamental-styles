@@ -35,6 +35,20 @@
             "class": {
               "const": "fd-dialog__content",
               "description": "Element class name"
+            },
+            "modifiers": {
+              "type": "array",
+              "items": {
+                "enum": [
+                  "fd-dialog__content--s",
+                  "fd-dialog__content--mobile",
+                  "fd-dialog__content--draggable-grab",
+                  "fd-dialog__content--m",
+                  "fd-dialog__content--l",
+                  "fd-dialog__content--xl"
+                ]
+              },
+              "description": "Available modifiers for this element"
             }
           }
         },
@@ -75,6 +89,15 @@
             "class": {
               "const": "fd-dialog__body",
               "description": "Element class name"
+            },
+            "modifiers": {
+              "type": "array",
+              "items": {
+                "enum": [
+                  "fd-dialog__body--no-vertical-padding"
+                ]
+              },
+              "description": "Available modifiers for this element"
             }
           }
         },

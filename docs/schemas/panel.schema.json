@@ -33,6 +33,15 @@
             "class": {
               "const": "fd-panel__content",
               "description": "Element class name"
+            },
+            "modifiers": {
+              "type": "array",
+              "items": {
+                "enum": [
+                  "fd-panel__content--no-padding"
+                ]
+              },
+              "description": "Available modifiers for this element"
             }
           }
         },

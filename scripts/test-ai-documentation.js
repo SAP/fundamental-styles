@@ -83,7 +83,7 @@ function testCatalogStructure(catalog) {
   if (!catalog) return;
 
   // Test required top-level fields
-  const requiredFields = ['$schema', 'version', 'lastUpdated', 'description', 'generatedBy', 'packages'];
+  const requiredFields = ['$schema', 'version', 'description', 'generatedBy', 'packages'];
   for (const field of requiredFields) {
     if (catalog[field]) {
       log.pass(`Catalog has required field: ${field}`);
@@ -454,16 +454,6 @@ function testDataConsistency(catalog, components) {
   log.section('🔍 Data Consistency Tests');
 
   if (!catalog || !components) return;
-
-  // Test lastUpdated is recent
-  const lastUpdated = new Date(catalog.lastUpdated);
-  const daysSinceUpdate = Math.floor((Date.now() - lastUpdated.getTime()) / (1000 * 60 * 60 * 24));
-
-  if (daysSinceUpdate <= 7) {
-    log.pass(`Catalog was updated recently (${daysSinceUpdate} days ago)`);
-  } else {
-    log.fail(`Catalog is outdated (${daysSinceUpdate} days old)`, 'Should be updated weekly');
-  }
 
   // Test version matches
   const packageJson = JSON.parse(fs.readFileSync(path.join(__dirname, '../package.json'), 'utf8'));

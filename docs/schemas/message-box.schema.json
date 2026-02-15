@@ -14,7 +14,12 @@
       "items": {
         "enum": [
           "fd-message-box--mobile",
-          "fd-message-box--active"
+          "fd-message-box--active",
+          "fd-message-box--information",
+          "fd-message-box--error",
+          "fd-message-box--success",
+          "fd-message-box--warning",
+          "fd-message-box--confirmation"
         ]
       },
       "description": "Optional modifier classes"
@@ -30,6 +35,18 @@
             "class": {
               "const": "fd-message-box__content",
               "description": "Element class name"
+            },
+            "modifiers": {
+              "type": "array",
+              "items": {
+                "enum": [
+                  "fd-message-box__content--s",
+                  "fd-message-box__content--m",
+                  "fd-message-box__content--l",
+                  "fd-message-box__content--xl"
+                ]
+              },
+              "description": "Available modifiers for this element"
             }
           }
         },

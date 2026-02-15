@@ -1,14 +1,14 @@
 # AI Component Index - Fundamental Library Styles
 
-> **For AI Agents**: This index provides a structured overview of all 117+ components available in Fundamental Library Styles. Use this to quickly identify the right component for your task.
+> **For AI Agents**: This index provides a structured overview of all 120 components available in Fundamental Library Styles. Use this to quickly identify the right component for your task.
 
 ## Overview
 
-Fundamental Library Styles is a comprehensive HTML/CSS component library for building SAP Fiori applications. All components follow:
+Fundamental Library Styles is a comprehensive HTML/CSS component library for building enterprise applications with the SAP Design System. All components follow:
 - **BEM naming convention**: `fd-{component}`, `fd-{component}__{element}`, `fd-{component}--{modifier}`
 - **Self-contained styling**: No style bleeding in or out
 - **Accessibility-first**: WCAG 2.0 AA compliant with semantic HTML and ARIA support
-- **Theme-able**: Supports 11 SAP themes (Horizon, Fiori 3 variants)
+- **Theme-able**: Supports 11 SAP themes (Horizon, Horizon Dark, High Contrast)
 - **Framework-agnostic**: Works with any web technology
 
 ## How to Use This Index
@@ -22,7 +22,7 @@ Fundamental Library Styles is a comprehensive HTML/CSS component library for bui
 
 | Package | Description | NPM Install |
 |---------|-------------|-------------|
-| `fundamental-styles` | Main component library (117 components) | `npm install fundamental-styles` |
+| `fundamental-styles` | Main component library (120 components) | `npm install fundamental-styles` |
 | `@fundamental-styles/common-css` | Utility CSS classes and mixins | `npm install @fundamental-styles/common-css` |
 | `@fundamental-styles/cx` | Customer Experience components | `npm install @fundamental-styles/cx` |
 
@@ -402,8 +402,8 @@ import '@fundamental-styles/common-css/dist/common-css.css';
 | **Horizon Dark** | `sap_horizon_dark` | Dark mode variant |
 | **Horizon HCB** | `sap_horizon_hcb` | High contrast black |
 | **Horizon HCW** | `sap_horizon_hcw` | High contrast white |
-| **Fiori 3** | `sap_fiori_3` | Legacy Fiori 3 theme |
-| **Fiori 3 Dark** | `sap_fiori_3_dark` | Fiori 3 dark mode |
+| **Fiori 3** | `sap_fiori_3` | Legacy theme |
+| **Fiori 3 Dark** | `sap_fiori_3_dark` | Legacy dark mode |
 
 ---
 
@@ -418,7 +418,7 @@ import '@fundamental-styles/common-css/dist/common-css.css';
 
 ## Component Statistics
 
-- **Total Components**: 117
+- **Total Components**: 120
 - **Form Components**: 19
 - **Navigation Components**: 12
 - **Data Display**: 15

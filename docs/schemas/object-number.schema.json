@@ -16,7 +16,11 @@
           "fd-object-number--bold",
           "fd-object-number--large",
           "fd-object-number--inverted",
-          "fd-object-number--interactive"
+          "fd-object-number--interactive",
+          "fd-object-number--negative",
+          "fd-object-number--critical",
+          "fd-object-number--positive",
+          "fd-object-number--informative"
         ]
       },
       "description": "Optional modifier classes"
@@ -32,6 +36,15 @@
             "class": {
               "const": "fd-object-number__text",
               "description": "Element class name"
+            },
+            "modifiers": {
+              "type": "array",
+              "items": {
+                "enum": [
+                  "fd-object-number__text--bold"
+                ]
+              },
+              "description": "Available modifiers for this element"
             }
           }
         },

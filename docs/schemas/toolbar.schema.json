@@ -24,7 +24,8 @@
           "fd-toolbar--info",
           "fd-toolbar--active",
           "fd-toolbar--fade-in",
-          "fd-toolbar--fade-out"
+          "fd-toolbar--fade-out",
+          "fd-toolbar--title-bar"
         ]
       },
       "description": "Optional modifier classes"
@@ -40,6 +41,15 @@
             "class": {
               "const": "fd-toolbar__spacer",
               "description": "Element class name"
+            },
+            "modifiers": {
+              "type": "array",
+              "items": {
+                "enum": [
+                  "fd-toolbar__spacer--fixed"
+                ]
+              },
+              "description": "Available modifiers for this element"
             }
           }
         },

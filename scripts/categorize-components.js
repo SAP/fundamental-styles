@@ -224,7 +224,7 @@ function categorizeComponents() {
   }
 
   // Save updated catalog
-  fs.writeFileSync(CATALOG_FILE, JSON.stringify(catalog, null, 2), 'utf8');
+  fs.writeFileSync(CATALOG_FILE, JSON.stringify(catalog, null, 2) + '\n', 'utf8');
 
   console.log(`\n📊 Summary:`);
   console.log(`  Newly categorized: ${categorized}`);

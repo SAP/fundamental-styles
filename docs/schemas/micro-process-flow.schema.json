@@ -91,6 +91,37 @@
             "class": {
               "const": "fd-micro-process-flow__connector",
               "description": "Element class name"
+            },
+            "modifiers": {
+              "type": "array",
+              "items": {
+                "enum": [
+                  "fd-micro-process-flow__connector--intermediate"
+                ]
+              },
+              "description": "Available modifiers for this element"
+            }
+          }
+        },
+        "fd-micro-process-flow__item": {
+          "type": "object",
+          "description": "item element",
+          "properties": {
+            "class": {
+              "const": "fd-micro-process-flow__item",
+              "description": "Element class name"
+            },
+            "modifiers": {
+              "type": "array",
+              "items": {
+                "enum": [
+                  "fd-micro-process-flow__item--positive",
+                  "fd-micro-process-flow__item--information",
+                  "fd-micro-process-flow__item--negative",
+                  "fd-micro-process-flow__item--critical"
+                ]
+              },
+              "description": "Available modifiers for this element"
             }
           }
         }

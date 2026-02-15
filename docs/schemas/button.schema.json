@@ -20,7 +20,14 @@
           "fd-button--decisive",
           "fd-button--tool-header",
           "fd-button--nested",
-          "fd-button--nested-square"
+          "fd-button--nested-square",
+          "fd-button--emphasized",
+          "fd-button--negative",
+          "fd-button--positive",
+          "fd-button--transparent",
+          "fd-button--ghost",
+          "fd-button--toggled",
+          "fd-button--compact"
         ]
       },
       "description": "Optional modifier classes"
@@ -46,6 +53,15 @@
             "class": {
               "const": "fd-button__badge",
               "description": "Element class name"
+            },
+            "modifiers": {
+              "type": "array",
+              "items": {
+                "enum": [
+                  "fd-button__badge--attention"
+                ]
+              },
+              "description": "Available modifiers for this element"
             }
           }
         },

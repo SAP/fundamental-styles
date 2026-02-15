@@ -14,7 +14,11 @@
       "items": {
         "enum": [
           "fd-upload-collection--interactive",
-          "fd-upload-collection--sm"
+          "fd-upload-collection--sm",
+          "fd-upload-collection--byline",
+          "fd-upload-collection--2-col",
+          "fd-upload-collection--wrap",
+          "fd-upload-collection--more"
         ]
       },
       "description": "Optional modifier classes"
@@ -100,6 +104,25 @@
             "class": {
               "const": "fd-upload-collection__form-item",
               "description": "Element class name"
+            }
+          }
+        },
+        "fd-upload-collection__item": {
+          "type": "object",
+          "description": "item element",
+          "properties": {
+            "class": {
+              "const": "fd-upload-collection__item",
+              "description": "Element class name"
+            },
+            "modifiers": {
+              "type": "array",
+              "items": {
+                "enum": [
+                  "fd-upload-collection__item--interactive"
+                ]
+              },
+              "description": "Available modifiers for this element"
             }
           }
         }

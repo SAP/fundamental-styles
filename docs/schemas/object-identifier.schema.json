@@ -30,6 +30,15 @@
             "class": {
               "const": "fd-object-identifier__title",
               "description": "Element class name"
+            },
+            "modifiers": {
+              "type": "array",
+              "items": {
+                "enum": [
+                  "fd-object-identifier__title--bold"
+                ]
+              },
+              "description": "Available modifiers for this element"
             }
           }
         },

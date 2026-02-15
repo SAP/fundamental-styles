@@ -55,9 +55,12 @@
     "sync-fiori-components": "npx nx build workspace-plugins && npx nx run styles:sync-entry",
     "sync-entries": "npx nx build workspace-plugins && npx nx run-many --target sync-entry --all",
     "pre-commit": "lint-staged && yarn run lint:pre-commit",
-    "generate:ai-docs": "yarn generate:ai-metadata && yarn generate:relationships",
+    "generate:ai-docs": "yarn generate:ai-metadata && yarn generate:relationships && yarn generate:utility-classes && yarn generate:accessibility && yarn generate:design-tokens",
     "generate:ai-metadata": "node scripts/generate-ai-metadata.js",
     "generate:relationships": "node scripts/generate-relationship-graph.js",
+    "generate:utility-classes": "node scripts/generate-utility-classes.js",
+    "generate:accessibility": "node scripts/generate-accessibility.js && node scripts/merge-accessibility.js",
+    "generate:design-tokens": "node scripts/generate-design-tokens.js",
     "test:ai-docs": "node scripts/test-ai-documentation.js"
   },
   "repository": {

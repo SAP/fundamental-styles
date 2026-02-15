@@ -90,22 +90,41 @@ function parseScssFile(filePath) {
     log.verbose(`Using fallback base class for ${fileName}: ${component.baseClass}`);
   }
 
+  // Collect all content to search (main file + imported mixins)
+  let allContent = content;
+
+  // Parse @import statements and read mixin files
+  const importedContent = parseImportedMixins(filePath, content, fileName);
+  allContent += '\n' + importedContent;
+
   // Extract modifiers (e.g., &--emphasized in SCSS becomes .fd-button--emphasized)
   // Look for &-- patterns (Sass parent selector with modifier)
   const modifierRegex = /&--([a-z0-9-]+)/gi;
   let modifierMatch;
   const foundModifiers = new Set();
 
-  while ((modifierMatch = modifierRegex.exec(content)) !== null) {
+  while ((modifierMatch = modifierRegex.exec(allContent)) !== null) {
     const modifierName = modifierMatch[1];
     const fullClass = `${component.baseClass}--${modifierName}`;
     foundModifiers.add(fullClass);
   }
 
-  component.modifiers = Array.from(foundModifiers).map(mod => ({
-    class: mod,
-    description: `${mod.split('--')[1]} variant`,
-  }));
+  // Also extract modifiers from Sass maps like $button-types-config
+  const typeConfigModifiers = extractModifiersFromSassMaps(allContent, component.baseClass);
+  typeConfigModifiers.forEach(mod => foundModifiers.add(mod));
+
+  // Also check story HTML files for modifiers used in practice
+  const storyModifiers = extractModifiersFromStories(fileName, component.baseClass);
+  storyModifiers.forEach(mod => foundModifiers.add(mod));
+
+  // Filter out incomplete modifiers (ending with hyphen from Sass interpolation)
+  // and convert to array with descriptions
+  component.modifiers = Array.from(foundModifiers)
+    .filter(mod => !mod.endsWith('-'))  // Remove incomplete modifiers like fd-avatar--accent-color-
+    .map(mod => ({
+      class: mod,
+      description: `${mod.split('--')[1]} variant`,
+    }));
 
   // Extract elements (e.g., &__text in SCSS becomes .fd-button__text)
   // Look for &__ patterns (Sass parent selector with element)
@@ -113,7 +132,7 @@ function parseScssFile(filePath) {
   let elementMatch;
   const foundElements = new Map(); // element name -> {class, modifiers[]}
 
-  while ((elementMatch = elementRegex.exec(content)) !== null) {
+  while ((elementMatch = elementRegex.exec(allContent)) !== null) {
     const elementName = elementMatch[1];
     const fullClass = `${component.baseClass}__${elementName}`;
 
@@ -133,7 +152,7 @@ function parseScssFile(filePath) {
   let elemModMatch;
 
   // Pattern 1: &__element--modifier
-  while ((elemModMatch = elementModifierRegex.exec(content)) !== null) {
+  while ((elemModMatch = elementModifierRegex.exec(allContent)) !== null) {
     const elementName = elemModMatch[1];
     const modifierName = elemModMatch[2];
     const fullClass = `${component.baseClass}__${elementName}`;
@@ -156,7 +175,7 @@ function parseScssFile(filePath) {
   }
 
   // Pattern 2: .#{$block}__element--modifier
-  while ((elemModMatch = blockElemModRegex.exec(content)) !== null) {
+  while ((elemModMatch = blockElemModRegex.exec(allContent)) !== null) {
     const elementName = elemModMatch[1];
     const modifierName = elemModMatch[2];
     const fullClass = `${component.baseClass}__${elementName}`;
@@ -178,6 +197,28 @@ function parseScssFile(filePath) {
     });
   }
 
+  // Also extract element modifiers from stories (these may not be in SCSS)
+  const storyElementModifiers = extractElementModifiersFromStories(fileName, component.baseClass);
+  for (const [elementName, modifierClasses] of storyElementModifiers) {
+    // Ensure the element exists
+    if (!foundElements.has(elementName)) {
+      foundElements.set(elementName, {
+        class: `${component.baseClass}__${elementName}`,
+        description: `${elementName} element`,
+        modifiers: []
+      });
+    }
+
+    // Add modifiers from stories
+    for (const modClass of modifierClasses) {
+      const modifierName = modClass.split('--').pop();
+      foundElements.get(elementName).modifiers.push({
+        class: modClass,
+        description: `${modifierName} variant of ${elementName}`
+      });
+    }
+  }
+
   // Convert to array and deduplicate element modifiers
   component.elements = Array.from(foundElements.values()).map(el => ({
     class: el.class,
@@ -190,7 +231,7 @@ function parseScssFile(filePath) {
   let varMatch;
   const foundVars = new Set();
 
-  while ((varMatch = varRegex.exec(content)) !== null) {
+  while ((varMatch = varRegex.exec(allContent)) !== null) {
     foundVars.add(varMatch[0]);
   }
 
@@ -199,6 +240,235 @@ function parseScssFile(filePath) {
   log.verbose(`Parsed ${fileName}: ${component.modifiers.length} modifiers, ${component.elements.length} elements`);
 
   return component;
+}
+
+/**
+ * Parse imported mixin files to get additional content
+ */
+function parseImportedMixins(filePath, content, componentName) {
+  const fileDir = path.dirname(filePath);
+  let importedContent = '';
+
+  // Find @import statements
+  const importRegex = /@import\s+['"]([^'"]+)['"]/g;
+  let importMatch;
+
+  while ((importMatch = importRegex.exec(content)) !== null) {
+    const importPath = importMatch[1];
+
+    // Skip common imports that don't have component-specific modifiers
+    if (importPath.includes('new-settings') ||
+        importPath.includes('functions') ||
+        importPath === './mixins') {
+      continue;
+    }
+
+    // Skip imports of other components (they define their own $block)
+    // Only include actual mixin files from the mixins/ directory
+    if (!importPath.includes('mixins/') && !importPath.startsWith('_')) {
+      // This is likely another component import (like form-group in fieldset)
+      // Skip it to avoid polluting this component with another's modifiers
+      continue;
+    }
+
+    // Try to resolve the import path
+    const possiblePaths = [
+      path.join(fileDir, importPath + '.scss'),
+      path.join(fileDir, importPath),
+      path.join(fileDir, '_' + importPath + '.scss'),
+      path.join(fileDir, importPath.replace('./', '') + '.scss'),
+    ];
+
+    // For paths like './mixins/button/button-types'
+    if (importPath.includes('/')) {
+      const parts = importPath.split('/');
+      const lastPart = parts[parts.length - 1];
+      possiblePaths.push(
+        path.join(fileDir, importPath + '.scss'),
+        path.join(fileDir, parts.slice(0, -1).join('/'), '_' + lastPart + '.scss'),
+      );
+    }
+
+    for (const tryPath of possiblePaths) {
+      if (fs.existsSync(tryPath)) {
+        try {
+          const mixinContent = fs.readFileSync(tryPath, 'utf8');
+
+          // Double-check: skip if this file defines its own $block (it's a component, not a mixin)
+          if (/\$block\s*:\s*#\{\$fd-namespace\}/.test(mixinContent)) {
+            log.verbose(`  Skipped component import: ${path.basename(tryPath)}`);
+            break;
+          }
+
+          importedContent += '\n' + mixinContent;
+          log.verbose(`  Included mixin: ${path.basename(tryPath)}`);
+        } catch (e) {
+          // Ignore read errors
+        }
+        break;
+      }
+    }
+  }
+
+  // Also look for component-specific mixin directories
+  const mixinDir = path.join(fileDir, 'mixins', componentName);
+  if (fs.existsSync(mixinDir)) {
+    try {
+      const mixinFiles = fs.readdirSync(mixinDir);
+      for (const mixinFile of mixinFiles) {
+        if (mixinFile.endsWith('.scss')) {
+          const mixinPath = path.join(mixinDir, mixinFile);
+          const mixinContent = fs.readFileSync(mixinPath, 'utf8');
+          importedContent += '\n' + mixinContent;
+          log.verbose(`  Included mixin: ${componentName}/${mixinFile}`);
+        }
+      }
+    } catch (e) {
+      // Ignore directory read errors
+    }
+  }
+
+  return importedContent;
+}
+
+/**
+ * Extract modifiers from Sass maps like $button-types-config
+ */
+function extractModifiersFromSassMaps(content, baseClass) {
+  const modifiers = new Set();
+
+  // Look for config maps that define types/variants
+  // Pattern: $component-types-config: ( "emphasized": (...), "transparent": (...) )
+  const configMapRegex = /\$[\w-]+-types-config\s*:\s*\(([\s\S]*?)\);/g;
+  let configMatch;
+
+  while ((configMatch = configMapRegex.exec(content)) !== null) {
+    const mapContent = configMatch[1];
+
+    // Extract type names from the map
+    const typeNameRegex = /"([a-z0-9-]+)"\s*:\s*\(/gi;
+    let typeMatch;
+
+    while ((typeMatch = typeNameRegex.exec(mapContent)) !== null) {
+      const typeName = typeMatch[1];
+      modifiers.add(`${baseClass}--${typeName}`);
+    }
+  }
+
+  // Also look for @each loops that generate modifiers from maps
+  // Pattern: @each $type, $props in $button-types-config { &--#{$type} }
+  const eachLoopRegex = /@each\s+\$(\w+)\s*,?\s*\$?\w*\s+in\s+\$[\w-]+-types-config/g;
+  if (eachLoopRegex.test(content)) {
+    // Already captured by the config map regex above
+  }
+
+  return modifiers;
+}
+
+/**
+ * Extract modifiers from story HTML files
+ */
+function extractModifiersFromStories(componentName, baseClass) {
+  const modifiers = new Set();
+
+  // Check component-specific stories folder
+  const storiesPath = path.join(CONFIG.storiesDir, componentName);
+  if (fs.existsSync(storiesPath)) {
+    extractModifiersFromDirectory(storiesPath, baseClass, modifiers);
+  }
+
+  // Always also check BTP stories - they use components like button with compact modifier
+  const btpStoriesPath = path.join(__dirname, '../packages/styles/stories/BTP');
+  if (fs.existsSync(btpStoriesPath)) {
+    extractModifiersFromDirectory(btpStoriesPath, baseClass, modifiers);
+  }
+
+  return modifiers;
+}
+
+/**
+ * Extract modifiers from HTML files in a directory
+ */
+function extractModifiersFromDirectory(dirPath, baseClass, modifiers) {
+  try {
+    const files = fs.readdirSync(dirPath, { recursive: true });
+
+    for (const file of files) {
+      if (typeof file === 'string' && file.endsWith('.html')) {
+        const filePath = path.join(dirPath, file);
+        try {
+          const content = fs.readFileSync(filePath, 'utf8');
+
+          // Extract modifiers from class attributes
+          // Pattern: baseClass--modifierName
+          const escapedBase = baseClass.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+          const modifierRegex = new RegExp(`${escapedBase}--([a-z0-9-]+)`, 'gi');
+          let match;
+
+          while ((match = modifierRegex.exec(content)) !== null) {
+            modifiers.add(`${baseClass}--${match[1]}`);
+          }
+        } catch (e) {
+          // Ignore file read errors
+        }
+      }
+    }
+  } catch (e) {
+    // Ignore directory read errors
+  }
+}
+
+/**
+ * Extract element modifiers from story HTML files
+ * Pattern: baseClass__element--modifier
+ */
+function extractElementModifiersFromStories(componentName, baseClass) {
+  const elementModifiers = new Map(); // element name -> Set of modifier classes
+
+  const storiesPath = path.join(CONFIG.storiesDir, componentName);
+  if (fs.existsSync(storiesPath)) {
+    extractElementModifiersFromDirectory(storiesPath, baseClass, elementModifiers);
+  }
+
+  return elementModifiers;
+}
+
+/**
+ * Extract element modifiers from HTML files in a directory
+ */
+function extractElementModifiersFromDirectory(dirPath, baseClass, elementModifiers) {
+  try {
+    const files = fs.readdirSync(dirPath, { recursive: true });
+
+    for (const file of files) {
+      if (typeof file === 'string' && file.endsWith('.html')) {
+        const filePath = path.join(dirPath, file);
+        try {
+          const content = fs.readFileSync(filePath, 'utf8');
+
+          // Extract element modifiers from class attributes
+          // Pattern: baseClass__element--modifier
+          const escapedBase = baseClass.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+          const elemModRegex = new RegExp(`${escapedBase}__([a-z0-9-]+)--([a-z0-9-]+)`, 'gi');
+          let match;
+
+          while ((match = elemModRegex.exec(content)) !== null) {
+            const elementName = match[1];
+            const modifierName = match[2];
+
+            if (!elementModifiers.has(elementName)) {
+              elementModifiers.set(elementName, new Set());
+            }
+            elementModifiers.get(elementName).add(`${baseClass}__${elementName}--${modifierName}`);
+          }
+        } catch (e) {
+          // Ignore file read errors
+        }
+      }
+    }
+  } catch (e) {
+    // Ignore directory read errors
+  }
 }
 
 /**
@@ -405,9 +675,17 @@ function updateCatalog(components) {
   const catalog = {
     $schema: 'https://json-schema.org/draft/2020-12/schema',
     version: '0.41.0',
-    lastUpdated: new Date().toISOString().split('T')[0],
     description: 'Machine-readable catalog of Fundamental Library Styles components',
     generatedBy: 'scripts/generate-ai-metadata.js',
+    relatedFiles: {
+      accessibility: 'docs/accessibility.json',
+      designTokens: 'docs/design-tokens.json',
+      htmlExamples: 'docs/html-examples.json',
+      modifierRules: 'docs/modifier-rules.json',
+      utilityClasses: 'docs/utility-classes.json',
+      relationships: 'docs/component-relationships.json',
+      schemas: 'docs/schemas/{component}.schema.json'
+    },
     packages: {
       'fundamental-styles': {
         name: 'fundamental-styles',
@@ -430,7 +708,7 @@ function updateCatalog(components) {
   // Write catalog
   fs.writeFileSync(
     CONFIG.catalogFile,
-    JSON.stringify(catalog, null, 2),
+    JSON.stringify(catalog, null, 2) + '\n',
     'utf8'
   );
 
@@ -558,7 +836,7 @@ function generateSchemas(components) {
     const schema = generateComponentSchema(component);
     const schemaPath = path.join(CONFIG.schemasDir, `${component.id}.schema.json`);
 
-    fs.writeFileSync(schemaPath, JSON.stringify(schema, null, 2), 'utf8');
+    fs.writeFileSync(schemaPath, JSON.stringify(schema, null, 2) + '\n', 'utf8');
     log.verbose(`Generated schema: ${component.id}.schema.json`);
   }
 

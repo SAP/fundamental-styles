@@ -101,6 +101,15 @@
             "class": {
               "const": "fd-user-menu__subline",
               "description": "Element class name"
+            },
+            "modifiers": {
+              "type": "array",
+              "items": {
+                "enum": [
+                  "fd-user-menu__subline--truncate"
+                ]
+              },
+              "description": "Available modifiers for this element"
             }
           }
         },

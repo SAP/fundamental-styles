@@ -38,6 +38,15 @@
             "class": {
               "const": "fd-card__header",
               "description": "Element class name"
+            },
+            "modifiers": {
+              "type": "array",
+              "items": {
+                "enum": [
+                  "fd-card__header--interactive"
+                ]
+              },
+              "description": "Available modifiers for this element"
             }
           }
         },
@@ -78,6 +87,15 @@
             "class": {
               "const": "fd-card__header-extended",
               "description": "Element class name"
+            },
+            "modifiers": {
+              "type": "array",
+              "items": {
+                "enum": [
+                  "fd-card__header-extended--bottom-aligned"
+                ]
+              },
+              "description": "Available modifiers for this element"
             }
           }
         },
@@ -88,6 +106,15 @@
             "class": {
               "const": "fd-card__header-column",
               "description": "Element class name"
+            },
+            "modifiers": {
+              "type": "array",
+              "items": {
+                "enum": [
+                  "fd-card__header-column--right-aligned"
+                ]
+              },
+              "description": "Available modifiers for this element"
             }
           }
         },
@@ -348,6 +375,15 @@
             "class": {
               "const": "fd-card__content-container",
               "description": "Element class name"
+            },
+            "modifiers": {
+              "type": "array",
+              "items": {
+                "enum": [
+                  "fd-card__content-container--horizontal"
+                ]
+              },
+              "description": "Available modifiers for this element"
             }
           }
         },

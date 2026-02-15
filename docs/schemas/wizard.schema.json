@@ -55,6 +55,17 @@
             "class": {
               "const": "fd-wizard__progress-bar",
               "description": "Element class name"
+            },
+            "modifiers": {
+              "type": "array",
+              "items": {
+                "enum": [
+                  "fd-wizard__progress-bar--md",
+                  "fd-wizard__progress-bar--sm",
+                  "fd-wizard__progress-bar--xl"
+                ]
+              },
+              "description": "Available modifiers for this element"
             }
           }
         },
@@ -82,7 +93,10 @@
                 "enum": [
                   "fd-wizard__step--completed",
                   "fd-wizard__step--stacked",
-                  "fd-wizard__step--upcoming"
+                  "fd-wizard__step--upcoming",
+                  "fd-wizard__step--current",
+                  "fd-wizard__step--stacked-top",
+                  "fd-wizard__step--no-label"
                 ]
               },
               "description": "Available modifiers for this element"
@@ -126,6 +140,15 @@
             "class": {
               "const": "fd-wizard__label-container",
               "description": "Element class name"
+            },
+            "modifiers": {
+              "type": "array",
+              "items": {
+                "enum": [
+                  "fd-wizard__label-container--optional"
+                ]
+              },
+              "description": "Available modifiers for this element"
             }
           }
         },
@@ -156,6 +179,16 @@
             "class": {
               "const": "fd-wizard__connector",
               "description": "Element class name"
+            },
+            "modifiers": {
+              "type": "array",
+              "items": {
+                "enum": [
+                  "fd-wizard__connector--active",
+                  "fd-wizard__connector--branching"
+                ]
+              },
+              "description": "Available modifiers for this element"
             }
           }
         },
@@ -166,6 +199,18 @@
             "class": {
               "const": "fd-wizard__content",
               "description": "Element class name"
+            },
+            "modifiers": {
+              "type": "array",
+              "items": {
+                "enum": [
+                  "fd-wizard__content--list",
+                  "fd-wizard__content--md",
+                  "fd-wizard__content--sm",
+                  "fd-wizard__content--xl"
+                ]
+              },
+              "description": "Available modifiers for this element"
             }
           }
         },
@@ -186,6 +231,15 @@
             "class": {
               "const": "fd-wizard__next-step",
               "description": "Element class name"
+            },
+            "modifiers": {
+              "type": "array",
+              "items": {
+                "enum": [
+                  "fd-wizard__next-step--floating"
+                ]
+              },
+              "description": "Available modifiers for this element"
             }
           }
         }

@@ -1,0 +1,3677 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "description": "Accessibility metadata extracted from fundamental-styles story examples",
+  "version": "1.0.0",
+  "generatedBy": "scripts/generate-accessibility.js",
+  "source": "packages/styles/stories/Components/**/*.html",
+  "totalComponents": 72,
+  "relatedFiles": {
+    "componentCatalog": "docs/component-catalog.json",
+    "htmlExamples": "docs/html-examples.json"
+  },
+  "globalGuidelines": {
+    "focusIndicator": "All interactive elements must have visible focus indicator",
+    "colorContrast": "Use theme tokens which ensure WCAG AA contrast ratios",
+    "semanticHtml": "Use semantic HTML elements when available (button, input, etc.)",
+    "labelRequired": "All form inputs need associated labels or aria-label",
+    "iconButtons": "Icon-only buttons require aria-label",
+    "liveRegions": "Use aria-live for dynamic content updates",
+    "highContrastThemes": "Use sap_horizon_hcb/hcw for high contrast mode"
+  },
+  "commonPatterns": {
+    "disabledState": {
+      "html": "disabled aria-disabled=\"true\"",
+      "note": "Use both disabled attribute AND aria-disabled for full support"
+    },
+    "requiredField": {
+      "html": "required aria-required=\"true\"",
+      "note": "Use fd-form-label--required for visual indicator"
+    },
+    "errorState": {
+      "html": "class=\"is-error\" aria-invalid=\"true\" aria-describedby=\"error-id\"",
+      "note": "Link input to error message with aria-describedby"
+    },
+    "expandableControl": {
+      "html": "aria-expanded=\"false\" aria-controls=\"panel-id\" aria-haspopup=\"true\"",
+      "note": "Update aria-expanded when state changes"
+    },
+    "selectedItem": {
+      "html": "aria-selected=\"true\"",
+      "note": "Use on list items, tabs, tree items"
+    },
+    "decorativeIcon": {
+      "html": "aria-hidden=\"true\" role=\"presentation\"",
+      "note": "Hide icons that don't convey information"
+    }
+  },
+  "components": {
+    "action-bar": {
+      "roles": [
+        "menuitem",
+        "banner",
+        "group",
+        "menu"
+      ],
+      "requiredAttrs": [
+        {
+          "name": "aria-expanded",
+          "purpose": "Indicates expandable state (true/false)",
+          "exampleValues": [
+            "true"
+          ],
+          "when": "Required for interactive state"
+        }
+      ],
+      "optionalAttrs": [
+        {
+          "name": "aria-labelledby",
+          "purpose": "References visible label element",
+          "exampleValues": [
+            "action-bar-title-5",
+            "action-bar-title-3",
+            "action-bar-title-1"
+          ]
+        },
+        {
+          "name": "aria-controls",
+          "purpose": "References controlled element",
+          "exampleValues": [
+            "wgxzK859",
+            "wgxzK85"
+          ]
+        },
+        {
+          "name": "aria-haspopup",
+          "purpose": "Indicates popup type (menu/listbox/dialog)",
+          "exampleValues": [
+            "true"
+          ]
+        },
+        {
+          "name": "aria-label",
+          "purpose": "Accessible name when no visible text",
+          "exampleValues": [
+            "More actions",
+            "Go back",
+            "Page actions"
+          ]
+        },
+        {
+          "name": "aria-describedby",
+          "purpose": "References description element",
+          "exampleValues": [
+            "action-bar-desc-1",
+            "action-bar-desc-4",
+            "action-bar-desc-2"
+          ]
+        }
+      ],
+      "keyboardSupport": [
+        "Enter",
+        "Space",
+        "Arrow keys",
+        "Escape"
+      ],
+      "focusManagement": null,
+      "notes": []
+    },
+    "action-sheet": {
+      "roles": [
+        "listitem",
+        "list",
+        "toolbar"
+      ],
+      "requiredAttrs": [
+        {
+          "name": "aria-label",
+          "purpose": "Accessible name when no visible text",
+          "exampleValues": [
+            "More Options",
+            "Bar",
+            "List of contextual options"
+          ],
+          "when": "Required when no visible text label"
+        },
+        {
+          "name": "aria-expanded",
+          "purpose": "Indicates expandable state (true/false)",
+          "exampleValues": [
+            "true"
+          ],
+          "when": "Required for interactive state"
+        }
+      ],
+      "optionalAttrs": [
+        {
+          "name": "aria-controls",
+          "purpose": "References controlled element",
+          "exampleValues": [
+            "actionSheetPhone",
+            "actionSheetTablet"
+          ]
+        },
+        {
+          "name": "aria-haspopup",
+          "purpose": "Indicates popup type (menu/listbox/dialog)",
+          "exampleValues": [
+            "true"
+          ]
+        }
+      ],
+      "keyboardSupport": [],
+      "focusManagement": null,
+      "notes": []
+    },
+    "avatar": {
+      "roles": [
+        "button",
+        "img"
+      ],
+      "requiredAttrs": [
+        {
+          "name": "aria-label",
+          "purpose": "Accessible name when no visible text",
+          "exampleValues": [
+            "Avatar",
+            "Image placeholder",
+            "Avatar John Doe"
+          ],
+          "when": "Required when no visible text label"
+        },
+        {
+          "name": "aria-expanded",
+          "purpose": "Indicates expandable state (true/false)",
+          "exampleValues": [
+            "false"
+          ],
+          "when": "Required for interactive state"
+        }
+      ],
+      "optionalAttrs": [
+        {
+          "name": "aria-description",
+          "purpose": "See WAI-ARIA specification",
+          "exampleValues": [
+            "Edit badge. To activate press spacebar.",
+            "To activate press spacebar"
+          ]
+        },
+        {
+          "name": "aria-roledescription",
+          "purpose": "Custom role description",
+          "exampleValues": [
+            "Avatar (Menu) Button"
+          ]
+        },
+        {
+          "name": "aria-haspopup",
+          "purpose": "Indicates popup type (menu/listbox/dialog)",
+          "exampleValues": [
+            "true"
+          ]
+        }
+      ],
+      "keyboardSupport": [
+        "Enter",
+        "Space"
+      ],
+      "focusManagement": "Uses tabindex for focus management",
+      "notes": []
+    },
+    "avatar-group": {
+      "roles": [
+        "img",
+        "button",
+        "group"
+      ],
+      "requiredAttrs": [
+        {
+          "name": "aria-expanded",
+          "purpose": "Indicates expandable state (true/false)",
+          "exampleValues": [
+            "false"
+          ],
+          "when": "Required for interactive state"
+        }
+      ],
+      "optionalAttrs": [
+        {
+          "name": "aria-label",
+          "purpose": "Accessible name when no visible text",
+          "exampleValues": [
+            "Conjoined avatars. 6 displayed, 8 hidden. Activate for complete list.",
+            "Wendy Wallace",
+            "Simon Doe"
+          ]
+        },
+        {
+          "name": "aria-haspopup",
+          "purpose": "Indicates popup type (menu/listbox/dialog)",
+          "exampleValues": [
+            "true"
+          ]
+        },
+        {
+          "name": "aria-labelledby",
+          "purpose": "References visible label element",
+          "exampleValues": [
+            "contactDetails_5z28edb-v",
+            "contactDetails_spbw4q-v",
+            "contactDetails_4ahzcg-v"
+          ]
+        }
+      ],
+      "keyboardSupport": [
+        "Enter",
+        "Space"
+      ],
+      "focusManagement": "Uses tabindex for focus management",
+      "notes": [
+        "Uses tabindex=\"-1\" for programmatic focus"
+      ]
+    },
+    "bar": {
+      "roles": [
+        "toolbar",
+        "img",
+        "group"
+      ],
+      "requiredAttrs": [
+        {
+          "name": "aria-label",
+          "purpose": "Accessible name when no visible text",
+          "exampleValues": [
+            "Bar",
+            "text",
+            "Group label"
+          ],
+          "when": "Required when no visible text label"
+        },
+        {
+          "name": "aria-pressed",
+          "purpose": "Toggle button state (true/false)",
+          "exampleValues": [
+            "true",
+            "false"
+          ],
+          "when": "Required for interactive state"
+        }
+      ],
+      "optionalAttrs": [],
+      "keyboardSupport": [],
+      "focusManagement": null,
+      "notes": []
+    },
+    "breadcrumb": {
+      "roles": [
+        "link",
+        "menuitem",
+        "button",
+        "menu"
+      ],
+      "requiredAttrs": [
+        {
+          "name": "aria-label",
+          "purpose": "Accessible name when no visible text",
+          "exampleValues": [
+            "Breadcrumb Trail",
+            "Root Page 1 of 7",
+            "Parent Page 2 of 7"
+          ],
+          "when": "Required when no visible text label"
+        },
+        {
+          "name": "aria-expanded",
+          "purpose": "Indicates expandable state (true/false)",
+          "exampleValues": [
+            "true"
+          ],
+          "when": "Required for interactive state"
+        }
+      ],
+      "optionalAttrs": [
+        {
+          "name": "aria-current",
+          "purpose": "Indicates current item (page/step/date)",
+          "exampleValues": [
+            "false",
+            "page"
+          ]
+        },
+        {
+          "name": "aria-controls",
+          "purpose": "References controlled element",
+          "exampleValues": [
+            "breadcrumb1"
+          ]
+        },
+        {
+          "name": "aria-haspopup",
+          "purpose": "Indicates popup type (menu/listbox/dialog)",
+          "exampleValues": [
+            "true"
+          ]
+        }
+      ],
+      "keyboardSupport": [
+        "Enter",
+        "Space",
+        "Arrow keys",
+        "Escape"
+      ],
+      "focusManagement": "Uses tabindex for focus management",
+      "notes": [
+        "Uses tabindex=\"-1\" for programmatic focus"
+      ]
+    },
+    "busy-indicator": {
+      "roles": [
+        "progressbar",
+        "dialog"
+      ],
+      "requiredAttrs": [],
+      "optionalAttrs": [
+        {
+          "name": "aria-modal",
+          "purpose": "Indicates modal dialog",
+          "exampleValues": [
+            "true"
+          ]
+        },
+        {
+          "name": "aria-labelledby",
+          "purpose": "References visible label element",
+          "exampleValues": [
+            "dialog-title-2"
+          ]
+        },
+        {
+          "name": "aria-valuemin",
+          "purpose": "See WAI-ARIA specification",
+          "exampleValues": [
+            "0"
+          ]
+        },
+        {
+          "name": "aria-valuemax",
+          "purpose": "See WAI-ARIA specification",
+          "exampleValues": [
+            "100"
+          ]
+        },
+        {
+          "name": "aria-valuetext",
+          "purpose": "See WAI-ARIA specification",
+          "exampleValues": [
+            "Busy"
+          ]
+        }
+      ],
+      "keyboardSupport": [
+        "Escape",
+        "Tab"
+      ],
+      "focusManagement": "Uses tabindex for focus management",
+      "notes": [
+        "Modal dialogs require focus trap",
+        "Use aria-modal=\"true\" for modals"
+      ]
+    },
+    "button": {
+      "roles": [
+        "button"
+      ],
+      "requiredAttrs": [
+        {
+          "name": "aria-label",
+          "purpose": "Accessible name when no visible text",
+          "exampleValues": [
+            "Tag Warning",
+            "Add to cart",
+            "Filter"
+          ],
+          "when": "Required when no visible text label"
+        },
+        {
+          "name": "aria-disabled",
+          "purpose": "Disabled state (use with disabled attr)",
+          "exampleValues": [
+            "true"
+          ],
+          "when": "Required for interactive state"
+        },
+        {
+          "name": "aria-pressed",
+          "purpose": "Toggle button state (true/false)",
+          "exampleValues": [
+            "false",
+            "true"
+          ],
+          "when": "Required for interactive state"
+        }
+      ],
+      "optionalAttrs": [
+        {
+          "name": "aria-describedby",
+          "purpose": "References description element",
+          "exampleValues": [
+            "fd-ONXuqucVcF1",
+            "fd-ONXuqucVcF2",
+            "fd-ONXuqucVcF3"
+          ]
+        },
+        {
+          "name": "aria-live",
+          "purpose": "Announces dynamic content changes",
+          "exampleValues": [
+            "assertive"
+          ]
+        }
+      ],
+      "keyboardSupport": [
+        "Enter",
+        "Space"
+      ],
+      "focusManagement": null,
+      "notes": []
+    },
+    "button-split": {
+      "roles": [
+        "button",
+        "group"
+      ],
+      "requiredAttrs": [
+        {
+          "name": "aria-label",
+          "purpose": "Accessible name when no visible text",
+          "exampleValues": [
+            "Split Button",
+            "button-split"
+          ],
+          "when": "Required when no visible text label"
+        },
+        {
+          "name": "aria-expanded",
+          "purpose": "Indicates expandable state (true/false)",
+          "exampleValues": [
+            "false"
+          ],
+          "when": "Required for interactive state"
+        }
+      ],
+      "optionalAttrs": [
+        {
+          "name": "aria-haspopup",
+          "purpose": "Indicates popup type (menu/listbox/dialog)",
+          "exampleValues": [
+            "menu"
+          ]
+        }
+      ],
+      "keyboardSupport": [
+        "Enter",
+        "Space"
+      ],
+      "focusManagement": "Uses tabindex for focus management",
+      "notes": [
+        "Uses tabindex=\"-1\" for programmatic focus"
+      ]
+    },
+    "calendar": {
+      "roles": [
+        "gridcell",
+        "row",
+        "columnheader",
+        "listitem",
+        "rowheader",
+        "rowgroup",
+        "group",
+        "grid",
+        "list"
+      ],
+      "requiredAttrs": [
+        {
+          "name": "aria-selected",
+          "purpose": "Selection state in a list",
+          "exampleValues": [
+            "false",
+            "true"
+          ],
+          "when": "Required for interactive state"
+        },
+        {
+          "name": "aria-disabled",
+          "purpose": "Disabled state (use with disabled attr)",
+          "exampleValues": [
+            "false"
+          ],
+          "when": "Required for interactive state"
+        }
+      ],
+      "optionalAttrs": [
+        {
+          "name": "aria-roledescription",
+          "purpose": "Custom role description",
+          "exampleValues": [
+            "Calendar",
+            "Gregorian calendar",
+            "Month Picker"
+          ]
+        },
+        {
+          "name": "aria-label",
+          "purpose": "Accessible name when no visible text",
+          "exampleValues": [
+            "Previous",
+            "February",
+            "Next"
+          ]
+        },
+        {
+          "name": "aria-readonly",
+          "purpose": "Indicates read-only field",
+          "exampleValues": [
+            "false"
+          ]
+        },
+        {
+          "name": "aria-multiselectable",
+          "purpose": "See WAI-ARIA specification",
+          "exampleValues": [
+            "true",
+            "false"
+          ]
+        },
+        {
+          "name": "aria-live",
+          "purpose": "Announces dynamic content changes",
+          "exampleValues": [
+            "polite"
+          ]
+        },
+        {
+          "name": "aria-owns",
+          "purpose": "Defines parent-child relationship",
+          "exampleValues": [
+            "item-1 item-2 item-3 item-4 item-5 item-6 item-7",
+            "item-1a item-2a item-3a item-4a item-5a item-6a item-7a \n            item-8a item-9a item-10a item-11a item-12a item-13a item-14a",
+            "item-1b item-2b item-3b item-4b item-5b item-6b item-7b \n            item-8b item-9b item-10b item-11b item-12b item-13b item-14b"
+          ]
+        },
+        {
+          "name": "aria-posinset",
+          "purpose": "Position in set",
+          "exampleValues": [
+            "1",
+            "2",
+            "3"
+          ]
+        },
+        {
+          "name": "aria-setsize",
+          "purpose": "Total items in set",
+          "exampleValues": [
+            "7",
+            "14"
+          ]
+        },
+        {
+          "name": "aria-labelledby",
+          "purpose": "References visible label element",
+          "exampleValues": [
+            "calendar-year",
+            "calendar-year-range",
+            "calendar-year-range-3"
+          ]
+        }
+      ],
+      "keyboardSupport": [],
+      "focusManagement": "Uses tabindex for focus management",
+      "notes": [
+        "Uses tabindex=\"-1\" for programmatic focus"
+      ]
+    },
+    "card": {
+      "roles": [
+        "group",
+        "heading",
+        "region",
+        "img",
+        "button",
+        "listitem",
+        "list"
+      ],
+      "requiredAttrs": [],
+      "optionalAttrs": [
+        {
+          "name": "aria-labelledby",
+          "purpose": "References visible label element",
+          "exampleValues": [
+            "analytical-card-title-1",
+            "analytical-card-title-2",
+            "card-title-1d"
+          ]
+        },
+        {
+          "name": "aria-roledescription",
+          "purpose": "Custom role description",
+          "exampleValues": [
+            "Card",
+            "Card Header",
+            "Card content"
+          ]
+        },
+        {
+          "name": "aria-level",
+          "purpose": "Hierarchy level (headings, tree)",
+          "exampleValues": [
+            "3"
+          ]
+        },
+        {
+          "name": "aria-label",
+          "purpose": "Accessible name when no visible text",
+          "exampleValues": [
+            "decrease",
+            "John Doe",
+            "overflow"
+          ]
+        },
+        {
+          "name": "aria-description",
+          "purpose": "See WAI-ARIA specification",
+          "exampleValues": [
+            "Activate for action/navigation",
+            "Activate for action"
+          ]
+        },
+        {
+          "name": "aria-posinset",
+          "purpose": "Position in set",
+          "exampleValues": [
+            "1",
+            "2",
+            "3"
+          ]
+        },
+        {
+          "name": "aria-setsize",
+          "purpose": "Total items in set",
+          "exampleValues": [
+            "5"
+          ]
+        }
+      ],
+      "keyboardSupport": [
+        "Enter",
+        "Space"
+      ],
+      "focusManagement": "Uses tabindex for focus management",
+      "notes": []
+    },
+    "card-media": {
+      "roles": [
+        "group",
+        "heading",
+        "region",
+        "img",
+        "button"
+      ],
+      "requiredAttrs": [],
+      "optionalAttrs": [
+        {
+          "name": "aria-label",
+          "purpose": "Accessible name when no visible text",
+          "exampleValues": [
+            "Get Ready for the AI Learning Days!",
+            "John Doe",
+            "Activate for action/navigation"
+          ]
+        },
+        {
+          "name": "aria-roledescription",
+          "purpose": "Custom role description",
+          "exampleValues": [
+            "Card Media Block",
+            "Card",
+            "Card Header"
+          ]
+        },
+        {
+          "name": "aria-level",
+          "purpose": "Hierarchy level (headings, tree)",
+          "exampleValues": [
+            "2",
+            "3"
+          ]
+        },
+        {
+          "name": "aria-labelledby",
+          "purpose": "References visible label element",
+          "exampleValues": [
+            "card-title-5m",
+            "card-title-1m",
+            "card-title-6a"
+          ]
+        },
+        {
+          "name": "aria-description",
+          "purpose": "See WAI-ARIA specification",
+          "exampleValues": [
+            "Activate for action/navigation"
+          ]
+        }
+      ],
+      "keyboardSupport": [
+        "Enter",
+        "Space"
+      ],
+      "focusManagement": "Uses tabindex for focus management",
+      "notes": []
+    },
+    "carousel": {
+      "roles": [
+        "img",
+        "button",
+        "listbox",
+        "option",
+        "region",
+        "status"
+      ],
+      "requiredAttrs": [
+        {
+          "name": "aria-selected",
+          "purpose": "Selection state in a list",
+          "exampleValues": [
+            "true"
+          ],
+          "when": "Required for interactive state"
+        },
+        {
+          "name": "aria-label",
+          "purpose": "Accessible name when no visible text",
+          "exampleValues": [
+            "Item 1 of 7 displayed",
+            "Item 2 of 7 displayed",
+            "Item 3 of 7 displayed"
+          ],
+          "when": "Required when no visible text label"
+        }
+      ],
+      "optionalAttrs": [
+        {
+          "name": "aria-roledescription",
+          "purpose": "Custom role description",
+          "exampleValues": [
+            "Carousel"
+          ]
+        },
+        {
+          "name": "aria-activedescendant",
+          "purpose": "Active child element",
+          "exampleValues": [
+            "carousel-item-1",
+            "carousel-item-2",
+            "carousel-item-3"
+          ]
+        },
+        {
+          "name": "aria-setsize",
+          "purpose": "Total items in set",
+          "exampleValues": [
+            "1"
+          ]
+        },
+        {
+          "name": "aria-posinset",
+          "purpose": "Position in set",
+          "exampleValues": [
+            "1"
+          ]
+        },
+        {
+          "name": "aria-live",
+          "purpose": "Announces dynamic content changes",
+          "exampleValues": [
+            "polite"
+          ]
+        }
+      ],
+      "keyboardSupport": [
+        "Enter",
+        "Space",
+        "Arrow keys"
+      ],
+      "focusManagement": null,
+      "notes": []
+    },
+    "counter": {
+      "roles": [
+        "tab",
+        "tablist"
+      ],
+      "requiredAttrs": [
+        {
+          "name": "aria-label",
+          "purpose": "Accessible name when no visible text",
+          "exampleValues": [
+            "Notifications",
+            "Unread count"
+          ],
+          "when": "Required when no visible text label"
+        },
+        {
+          "name": "aria-selected",
+          "purpose": "Selection state in a list",
+          "exampleValues": [
+            "true"
+          ],
+          "when": "Required for interactive state"
+        },
+        {
+          "name": "aria-disabled",
+          "purpose": "Disabled state (use with disabled attr)",
+          "exampleValues": [
+            "true"
+          ],
+          "when": "Required for interactive state"
+        }
+      ],
+      "optionalAttrs": [],
+      "keyboardSupport": [
+        "Arrow keys"
+      ],
+      "focusManagement": null,
+      "notes": []
+    },
+    "dialog": {
+      "roles": [
+        "dialog",
+        "option",
+        "listbox"
+      ],
+      "requiredAttrs": [
+        {
+          "name": "aria-expanded",
+          "purpose": "Indicates expandable state (true/false)",
+          "exampleValues": [
+            "false"
+          ],
+          "when": "Required for interactive state"
+        },
+        {
+          "name": "aria-selected",
+          "purpose": "Selection state in a list",
+          "exampleValues": [
+            "true"
+          ],
+          "when": "Required for interactive state"
+        }
+      ],
+      "optionalAttrs": [
+        {
+          "name": "aria-modal",
+          "purpose": "Indicates modal dialog",
+          "exampleValues": [
+            "true"
+          ]
+        },
+        {
+          "name": "aria-labelledby",
+          "purpose": "References visible label element",
+          "exampleValues": [
+            "dialog-title-1",
+            "dialog-title-12",
+            "dialog-title-6"
+          ]
+        },
+        {
+          "name": "aria-describedby",
+          "purpose": "References description element",
+          "exampleValues": [
+            "dialog-description-1",
+            "dialog-description-12",
+            "dialog-description-7"
+          ]
+        },
+        {
+          "name": "aria-label",
+          "purpose": "Accessible name when no visible text",
+          "exampleValues": [
+            "Loading",
+            "Expand to full screen",
+            "Street Number"
+          ]
+        },
+        {
+          "name": "aria-controls",
+          "purpose": "References controlled element",
+          "exampleValues": [
+            "h031XCM509"
+          ]
+        },
+        {
+          "name": "aria-haspopup",
+          "purpose": "Indicates popup type (menu/listbox/dialog)",
+          "exampleValues": [
+            "listbox"
+          ]
+        }
+      ],
+      "keyboardSupport": [
+        "Escape",
+        "Tab",
+        "Enter",
+        "Space",
+        "Arrow keys"
+      ],
+      "focusManagement": "Uses tabindex for focus management",
+      "notes": [
+        "Uses tabindex=\"-1\" for programmatic focus",
+        "Modal dialogs require focus trap",
+        "Use aria-modal=\"true\" for modals"
+      ]
+    },
+    "feed-input": {
+      "roles": [
+        "group",
+        "button",
+        "img"
+      ],
+      "requiredAttrs": [
+        {
+          "name": "aria-label",
+          "purpose": "Accessible name when no visible text",
+          "exampleValues": [
+            "Feed input disabled example",
+            "John Doe",
+            "Submit"
+          ],
+          "when": "Required when no visible text label"
+        },
+        {
+          "name": "aria-disabled",
+          "purpose": "Disabled state (use with disabled attr)",
+          "exampleValues": [
+            "true",
+            "false"
+          ],
+          "when": "Required for interactive state"
+        }
+      ],
+      "optionalAttrs": [],
+      "keyboardSupport": [
+        "Enter",
+        "Space"
+      ],
+      "focusManagement": null,
+      "notes": []
+    },
+    "feed-list": {
+      "roles": [
+        "img",
+        "listitem",
+        "list"
+      ],
+      "requiredAttrs": [
+        {
+          "name": "aria-label",
+          "purpose": "Accessible name when no visible text",
+          "exampleValues": [
+            "Feed List Item group example",
+            "John Doe",
+            "Feed List Item with user link example"
+          ],
+          "when": "Required when no visible text label"
+        },
+        {
+          "name": "aria-expanded",
+          "purpose": "Indicates expandable state (true/false)",
+          "exampleValues": [
+            "false"
+          ],
+          "when": "Required for interactive state"
+        }
+      ],
+      "optionalAttrs": [
+        {
+          "name": "aria-controls",
+          "purpose": "References controlled element",
+          "exampleValues": [
+            "actionSheetPhone",
+            "actionSheetDesktop"
+          ]
+        },
+        {
+          "name": "aria-haspopup",
+          "purpose": "Indicates popup type (menu/listbox/dialog)",
+          "exampleValues": [
+            "true"
+          ]
+        }
+      ],
+      "keyboardSupport": [],
+      "focusManagement": "Uses tabindex for focus management",
+      "notes": []
+    },
+    "file-uploader": {
+      "roles": [
+        "alert"
+      ],
+      "requiredAttrs": [],
+      "optionalAttrs": [
+        {
+          "name": "aria-label",
+          "purpose": "Accessible name when no visible text",
+          "exampleValues": [
+            "Select a file for uploading",
+            "Download",
+            "Delete"
+          ]
+        },
+        {
+          "name": "aria-live",
+          "purpose": "Announces dynamic content changes",
+          "exampleValues": [
+            "polite"
+          ]
+        },
+        {
+          "name": "aria-atomic",
+          "purpose": "See WAI-ARIA specification",
+          "exampleValues": [
+            "true"
+          ]
+        },
+        {
+          "name": "aria-labelledby",
+          "purpose": "References visible label element",
+          "exampleValues": [
+            "browse_input1_label",
+            "browse_input2_label",
+            "browse_input7_label"
+          ]
+        }
+      ],
+      "keyboardSupport": [],
+      "focusManagement": null,
+      "notes": []
+    },
+    "generic-tag": {
+      "roles": [
+        "button"
+      ],
+      "requiredAttrs": [
+        {
+          "name": "aria-disabled",
+          "purpose": "Disabled state (use with disabled attr)",
+          "exampleValues": [
+            "false"
+          ],
+          "when": "Required for interactive state"
+        }
+      ],
+      "optionalAttrs": [
+        {
+          "name": "aria-roledescription",
+          "purpose": "Custom role description",
+          "exampleValues": [
+            "Object Tag"
+          ]
+        },
+        {
+          "name": "aria-labelledby",
+          "purpose": "References visible label element",
+          "exampleValues": [
+            "generic-tag-decorator-1 generic-tag-name-1 generic-tag-value-1",
+            "generic-tag-decorator-2 generic-tag-name-2 generic-tag-value-2",
+            "generic-tag-decorator-3 generic-tag-name-3 generic-tag-value-3"
+          ]
+        },
+        {
+          "name": "aria-describedby",
+          "purpose": "References description element",
+          "exampleValues": [
+            "generic-tag-instructions-1",
+            "generic-tag-instructions-2",
+            "generic-tag-instructions-3"
+          ]
+        },
+        {
+          "name": "aria-label",
+          "purpose": "Accessible name when no visible text",
+          "exampleValues": [
+            "error",
+            "success",
+            "information"
+          ]
+        }
+      ],
+      "keyboardSupport": [
+        "Enter",
+        "Space"
+      ],
+      "focusManagement": "Uses tabindex for focus management",
+      "notes": []
+    },
+    "generic-tile": {
+      "roles": [
+        "button",
+        "img"
+      ],
+      "requiredAttrs": [
+        {
+          "name": "aria-label",
+          "purpose": "Accessible name when no visible text",
+          "exampleValues": [
+            "Profile Image",
+            "button",
+            "Refresh"
+          ],
+          "when": "Required when no visible text label"
+        }
+      ],
+      "optionalAttrs": [],
+      "keyboardSupport": [
+        "Enter",
+        "Space"
+      ],
+      "focusManagement": "Uses tabindex for focus management",
+      "notes": [
+        "Uses tabindex=\"-1\" for programmatic focus"
+      ]
+    },
+    "icon-tab-bar": {
+      "roles": [
+        "tab",
+        "tablist",
+        "listitem",
+        "tabpanel",
+        "list"
+      ],
+      "requiredAttrs": [
+        {
+          "name": "aria-selected",
+          "purpose": "Selection state in a list",
+          "exampleValues": [
+            "true"
+          ],
+          "when": "Required for interactive state"
+        },
+        {
+          "name": "aria-expanded",
+          "purpose": "Indicates expandable state (true/false)",
+          "exampleValues": [
+            "false",
+            "true"
+          ],
+          "when": "Required for interactive state"
+        }
+      ],
+      "optionalAttrs": [
+        {
+          "name": "aria-labelledby",
+          "purpose": "References visible label element",
+          "exampleValues": [
+            "tab1",
+            "tab2",
+            "tab3"
+          ]
+        },
+        {
+          "name": "aria-controls",
+          "purpose": "References controlled element",
+          "exampleValues": [
+            "popover3",
+            "popover4",
+            "popoverAO4"
+          ]
+        },
+        {
+          "name": "aria-haspopup",
+          "purpose": "Indicates popup type (menu/listbox/dialog)",
+          "exampleValues": [
+            "true"
+          ]
+        },
+        {
+          "name": "aria-label",
+          "purpose": "Accessible name when no visible text",
+          "exampleValues": [
+            "open menu button",
+            "close tab"
+          ]
+        },
+        {
+          "name": "aria-level",
+          "purpose": "Hierarchy level (headings, tree)",
+          "exampleValues": [
+            "1",
+            "2",
+            "3"
+          ]
+        }
+      ],
+      "keyboardSupport": [
+        "Arrow keys"
+      ],
+      "focusManagement": "Uses tabindex for focus management",
+      "notes": [
+        "Uses tabindex=\"-1\" for programmatic focus"
+      ]
+    },
+    "illustrated-message": {
+      "roles": [
+        "region",
+        "img"
+      ],
+      "requiredAttrs": [
+        {
+          "name": "aria-label",
+          "purpose": "Accessible name when no visible text",
+          "exampleValues": [
+            "Illustrated message",
+            "Illustration of a melting icecream",
+            "Contact Delivery Company"
+          ],
+          "when": "Required when no visible text label"
+        }
+      ],
+      "optionalAttrs": [
+        {
+          "name": "aria-describedby",
+          "purpose": "References description element",
+          "exampleValues": [
+            "title-base",
+            "title-large",
+            "title-medium"
+          ]
+        }
+      ],
+      "keyboardSupport": [],
+      "focusManagement": null,
+      "notes": []
+    },
+    "menu": {
+      "roles": [
+        "menuitem",
+        "menu",
+        "dialog"
+      ],
+      "requiredAttrs": [
+        {
+          "name": "aria-expanded",
+          "purpose": "Indicates expandable state (true/false)",
+          "exampleValues": [
+            "true"
+          ],
+          "when": "Required for interactive state"
+        }
+      ],
+      "optionalAttrs": [
+        {
+          "name": "aria-label",
+          "purpose": "Accessible name when no visible text",
+          "exampleValues": [
+            "navigation menu",
+            "navbar",
+            "bar-header"
+          ]
+        },
+        {
+          "name": "aria-labelledby",
+          "purpose": "References visible label element",
+          "exampleValues": [
+            "exampleSubMenuHeader",
+            "subOptionHeader"
+          ]
+        },
+        {
+          "name": "aria-controls",
+          "purpose": "References controlled element",
+          "exampleValues": [
+            "EX100M2"
+          ]
+        },
+        {
+          "name": "aria-haspopup",
+          "purpose": "Indicates popup type (menu/listbox/dialog)",
+          "exampleValues": [
+            "true"
+          ]
+        }
+      ],
+      "keyboardSupport": [
+        "Enter",
+        "Space",
+        "Arrow keys",
+        "Escape",
+        "Tab"
+      ],
+      "focusManagement": "Uses tabindex for focus management",
+      "notes": [
+        "Uses tabindex=\"-1\" for programmatic focus",
+        "Modal dialogs require focus trap",
+        "Use aria-modal=\"true\" for modals"
+      ]
+    },
+    "message-box": {
+      "roles": [
+        "alertdialog"
+      ],
+      "requiredAttrs": [],
+      "optionalAttrs": [
+        {
+          "name": "aria-modal",
+          "purpose": "Indicates modal dialog",
+          "exampleValues": [
+            "true"
+          ]
+        },
+        {
+          "name": "aria-labelledby",
+          "purpose": "References visible label element",
+          "exampleValues": [
+            "fd-message-box-title-7",
+            "fd-message-box-title-8",
+            "fd-message-box-title-9"
+          ]
+        },
+        {
+          "name": "aria-describedby",
+          "purpose": "References description element",
+          "exampleValues": [
+            "fd-message-box-text-7",
+            "fd-message-box-text-8",
+            "fd-message-box-text-9"
+          ]
+        }
+      ],
+      "keyboardSupport": [],
+      "focusManagement": "Uses tabindex for focus management",
+      "notes": [
+        "Uses tabindex=\"-1\" for programmatic focus"
+      ]
+    },
+    "message-page": {
+      "roles": [
+        "status"
+      ],
+      "requiredAttrs": [],
+      "optionalAttrs": [
+        {
+          "name": "aria-live",
+          "purpose": "Announces dynamic content changes",
+          "exampleValues": [
+            "polite"
+          ]
+        }
+      ],
+      "keyboardSupport": [],
+      "focusManagement": "Uses tabindex for focus management",
+      "notes": []
+    },
+    "message-popover": {
+      "roles": [
+        "button",
+        "listitem",
+        "dialog",
+        "list",
+        "group"
+      ],
+      "requiredAttrs": [
+        {
+          "name": "aria-expanded",
+          "purpose": "Indicates expandable state (true/false)",
+          "exampleValues": [
+            "true"
+          ],
+          "when": "Required for interactive state"
+        },
+        {
+          "name": "aria-label",
+          "purpose": "Accessible name when no visible text",
+          "exampleValues": [
+            "Negative",
+            "Dialog Data 1",
+            "Group label"
+          ],
+          "when": "Required when no visible text label"
+        },
+        {
+          "name": "aria-pressed",
+          "purpose": "Toggle button state (true/false)",
+          "exampleValues": [
+            "true",
+            "false"
+          ],
+          "when": "Required for interactive state"
+        }
+      ],
+      "optionalAttrs": [
+        {
+          "name": "aria-controls",
+          "purpose": "References controlled element",
+          "exampleValues": [
+            "popoverHSF3",
+            "popoverHSF5"
+          ]
+        },
+        {
+          "name": "aria-haspopup",
+          "purpose": "Indicates popup type (menu/listbox/dialog)",
+          "exampleValues": [
+            "dialog"
+          ]
+        }
+      ],
+      "keyboardSupport": [
+        "Enter",
+        "Space",
+        "Escape",
+        "Tab"
+      ],
+      "focusManagement": "Uses tabindex for focus management",
+      "notes": [
+        "Modal dialogs require focus trap",
+        "Use aria-modal=\"true\" for modals"
+      ]
+    },
+    "message-strip": {
+      "roles": [
+        "note",
+        "button"
+      ],
+      "requiredAttrs": [],
+      "optionalAttrs": [
+        {
+          "name": "aria-labelledby",
+          "purpose": "References visible label element",
+          "exampleValues": [
+            "message-strip-hidden-text-1 message-strip-text-1",
+            "message-strip-hidden-text-5 message-strip-text-5",
+            "message-strip-hidden-text-2 message-strip-text-2"
+          ]
+        },
+        {
+          "name": "aria-label",
+          "purpose": "Accessible name when no visible text",
+          "exampleValues": [
+            "Error Information Bar Close",
+            "Information Bar Close",
+            "Custom Information Bar Close"
+          ]
+        }
+      ],
+      "keyboardSupport": [
+        "Enter",
+        "Space"
+      ],
+      "focusManagement": "Uses tabindex for focus management",
+      "notes": []
+    },
+    "message-toast": {
+      "roles": [
+        "alert"
+      ],
+      "requiredAttrs": [],
+      "optionalAttrs": [],
+      "keyboardSupport": [],
+      "focusManagement": null,
+      "notes": []
+    },
+    "micro-process-flow": {
+      "roles": [
+        "progressbar",
+        "button"
+      ],
+      "requiredAttrs": [
+        {
+          "name": "aria-label",
+          "purpose": "Accessible name when no visible text",
+          "exampleValues": [
+            "Euro Status Indicator Medium default size",
+            "Status Indicator example for order dispatching",
+            "options"
+          ],
+          "when": "Required when no visible text label"
+        },
+        {
+          "name": "aria-expanded",
+          "purpose": "Indicates expandable state (true/false)",
+          "exampleValues": [
+            "true",
+            "false"
+          ],
+          "when": "Required for interactive state"
+        }
+      ],
+      "optionalAttrs": [
+        {
+          "name": "aria-roledescription",
+          "purpose": "Custom role description",
+          "exampleValues": [
+            "Status Indicator"
+          ]
+        },
+        {
+          "name": "aria-valuetext",
+          "purpose": "See WAI-ARIA specification",
+          "exampleValues": [
+            "50%",
+            "70%"
+          ]
+        },
+        {
+          "name": "aria-controls",
+          "purpose": "References controlled element",
+          "exampleValues": [
+            "popoverMPF1",
+            "popoverMPF2",
+            "popoverMPF3"
+          ]
+        },
+        {
+          "name": "aria-haspopup",
+          "purpose": "Indicates popup type (menu/listbox/dialog)",
+          "exampleValues": [
+            "true",
+            "false"
+          ]
+        }
+      ],
+      "keyboardSupport": [
+        "Enter",
+        "Space"
+      ],
+      "focusManagement": "Uses tabindex for focus management",
+      "notes": []
+    },
+    "notification": {
+      "roles": [
+        "img",
+        "button",
+        "heading",
+        "list",
+        "alert",
+        "toolbar",
+        "note"
+      ],
+      "requiredAttrs": [
+        {
+          "name": "aria-expanded",
+          "purpose": "Indicates expandable state (true/false)",
+          "exampleValues": [
+            "true",
+            "false"
+          ],
+          "when": "Required for interactive state"
+        },
+        {
+          "name": "aria-disabled",
+          "purpose": "Disabled state (use with disabled attr)",
+          "exampleValues": [
+            "false"
+          ],
+          "when": "Required for interactive state"
+        }
+      ],
+      "optionalAttrs": [
+        {
+          "name": "aria-labelledby",
+          "purpose": "References visible label element",
+          "exampleValues": [
+            "\n                fd-notification-title-1b\n                fd-notification-title-status-1b\n                fd-notification-paragraph-1b\n                fd-notification-footnotes-1b\n            ",
+            "\n                fd-notification-title-2b\n                fd-notification-title-status-2b\n                fd-notification-paragraph-2b\n                fd-notification-footnotes-2b\n            ",
+            "message-strip-5"
+          ]
+        },
+        {
+          "name": "aria-label",
+          "purpose": "Accessible name when no visible text",
+          "exampleValues": [
+            "Avatar",
+            "Product placeholder",
+            "Close"
+          ]
+        },
+        {
+          "name": "aria-controls",
+          "purpose": "References controlled element",
+          "exampleValues": [
+            "popoverNotificationsGroup",
+            "fd-notification-group-1",
+            "fd-notification-group-2"
+          ]
+        },
+        {
+          "name": "aria-haspopup",
+          "purpose": "Indicates popup type (menu/listbox/dialog)",
+          "exampleValues": [
+            "true"
+          ]
+        },
+        {
+          "name": "aria-live",
+          "purpose": "Announces dynamic content changes",
+          "exampleValues": [
+            "assertive"
+          ]
+        },
+        {
+          "name": "aria-level",
+          "purpose": "Hierarchy level (headings, tree)",
+          "exampleValues": [
+            "1",
+            "2"
+          ]
+        },
+        {
+          "name": "aria-posinset",
+          "purpose": "Position in set",
+          "exampleValues": [
+            "1",
+            "2",
+            "3"
+          ]
+        },
+        {
+          "name": "aria-setsize",
+          "purpose": "Total items in set",
+          "exampleValues": [
+            "4",
+            "5"
+          ]
+        },
+        {
+          "name": "aria-description",
+          "purpose": "See WAI-ARIA specification",
+          "exampleValues": [
+            "Notification group expanded",
+            "Notification group collapsed"
+          ]
+        }
+      ],
+      "keyboardSupport": [
+        "Enter",
+        "Space"
+      ],
+      "focusManagement": "Uses tabindex for focus management",
+      "notes": []
+    },
+    "object-identifier": {
+      "roles": [],
+      "requiredAttrs": [
+        {
+          "name": "aria-label",
+          "purpose": "Accessible name when no visible text",
+          "exampleValues": [
+            "Object Identifier"
+          ],
+          "when": "Required when no visible text label"
+        }
+      ],
+      "optionalAttrs": [
+        {
+          "name": "aria-describedby",
+          "purpose": "References description element",
+          "exampleValues": [
+            "fd-object-identifier-desc-1 fd-object-identifier-text-1",
+            "fd-object-identifier-desc-2 fd-object-identifier-text-2"
+          ]
+        }
+      ],
+      "keyboardSupport": [],
+      "focusManagement": "Uses tabindex for focus management",
+      "notes": []
+    },
+    "object-list": {
+      "roles": [
+        "listitem",
+        "option",
+        "list",
+        "navigation",
+        "listbox"
+      ],
+      "requiredAttrs": [
+        {
+          "name": "aria-selected",
+          "purpose": "Selection state in a list",
+          "exampleValues": [
+            "true",
+            "false"
+          ],
+          "when": "Required for interactive state"
+        }
+      ],
+      "optionalAttrs": [
+        {
+          "name": "aria-labelledby",
+          "purpose": "References visible label element",
+          "exampleValues": [
+            "objectListItemBorderless",
+            "objectListItemNavigation",
+            "objectListItemRowSelectionAndNavigation"
+          ]
+        },
+        {
+          "name": "aria-label",
+          "purpose": "Accessible name when no visible text",
+          "exampleValues": [
+            "icon for flag",
+            "icon for favourite"
+          ]
+        }
+      ],
+      "keyboardSupport": [
+        "Enter",
+        "Space",
+        "Arrow keys"
+      ],
+      "focusManagement": "Uses tabindex for focus management",
+      "notes": []
+    },
+    "object-marker": {
+      "roles": [
+        "img"
+      ],
+      "requiredAttrs": [],
+      "optionalAttrs": [
+        {
+          "name": "aria-labelledby",
+          "purpose": "References visible label element",
+          "exampleValues": [
+            "fd-object-marker-status fd-object-marker-text-1",
+            "fd-object-marker-status fd-object-marker-text-2",
+            "status"
+          ]
+        }
+      ],
+      "keyboardSupport": [],
+      "focusManagement": "Uses tabindex for focus management",
+      "notes": []
+    },
+    "object-number": {
+      "roles": [
+        "button"
+      ],
+      "requiredAttrs": [],
+      "optionalAttrs": [],
+      "keyboardSupport": [
+        "Enter",
+        "Space"
+      ],
+      "focusManagement": "Uses tabindex for focus management",
+      "notes": []
+    },
+    "object-status": {
+      "roles": [
+        "button"
+      ],
+      "requiredAttrs": [],
+      "optionalAttrs": [
+        {
+          "name": "aria-roledescription",
+          "purpose": "Custom role description",
+          "exampleValues": [
+            "Object Status Button"
+          ]
+        }
+      ],
+      "keyboardSupport": [
+        "Enter",
+        "Space"
+      ],
+      "focusManagement": "Uses tabindex for focus management",
+      "notes": []
+    },
+    "pagination": {
+      "roles": [
+        "navigation",
+        "option",
+        "listbox"
+      ],
+      "requiredAttrs": [
+        {
+          "name": "aria-disabled",
+          "purpose": "Disabled state (use with disabled attr)",
+          "exampleValues": [
+            "true",
+            "false"
+          ],
+          "when": "Required for interactive state"
+        },
+        {
+          "name": "aria-expanded",
+          "purpose": "Indicates expandable state (true/false)",
+          "exampleValues": [
+            "true"
+          ],
+          "when": "Required for interactive state"
+        },
+        {
+          "name": "aria-selected",
+          "purpose": "Selection state in a list",
+          "exampleValues": [
+            "true"
+          ],
+          "when": "Required for interactive state"
+        }
+      ],
+      "optionalAttrs": [
+        {
+          "name": "aria-label",
+          "purpose": "Accessible name when no visible text",
+          "exampleValues": [
+            "first page example, pagination with more than 9 pages",
+            "First page",
+            "Previous page"
+          ]
+        },
+        {
+          "name": "aria-labelledby",
+          "purpose": "References visible label element",
+          "exampleValues": [
+            "firstPageInputPage firstPageInputOf",
+            "firstPageInputShortPage firstPageInputShortOf",
+            "lastPageInputPage lastPageInputOf"
+          ]
+        },
+        {
+          "name": "aria-current",
+          "purpose": "Indicates current item (page/step/date)",
+          "exampleValues": [
+            "true"
+          ]
+        },
+        {
+          "name": "aria-haspopup",
+          "purpose": "Indicates popup type (menu/listbox/dialog)",
+          "exampleValues": [
+            "true",
+            "listbox"
+          ]
+        },
+        {
+          "name": "aria-activedescendant",
+          "purpose": "Active child element",
+          "exampleValues": [
+            "selectCombobox-currentlyFocusedItem",
+            "compactSelectCombobox-currentlyFocusedItem"
+          ]
+        }
+      ],
+      "keyboardSupport": [
+        "Enter",
+        "Space",
+        "Arrow keys"
+      ],
+      "focusManagement": "Uses tabindex for focus management",
+      "notes": [
+        "Uses tabindex=\"-1\" for programmatic focus"
+      ]
+    },
+    "panel": {
+      "roles": [
+        "form",
+        "region",
+        "group"
+      ],
+      "requiredAttrs": [
+        {
+          "name": "aria-expanded",
+          "purpose": "Indicates expandable state (true/false)",
+          "exampleValues": [
+            "false",
+            "true"
+          ],
+          "when": "Required for interactive state"
+        },
+        {
+          "name": "aria-pressed",
+          "purpose": "Toggle button state (true/false)",
+          "exampleValues": [
+            "true",
+            "false"
+          ],
+          "when": "Required for interactive state"
+        }
+      ],
+      "optionalAttrs": [
+        {
+          "name": "aria-labelledby",
+          "purpose": "References visible label element",
+          "exampleValues": [
+            "__panel-title-1",
+            "__panel-title-2",
+            "__panel-title-3"
+          ]
+        },
+        {
+          "name": "aria-haspopup",
+          "purpose": "Indicates popup type (menu/listbox/dialog)",
+          "exampleValues": [
+            "true"
+          ]
+        },
+        {
+          "name": "aria-label",
+          "purpose": "Accessible name when no visible text",
+          "exampleValues": [
+            "expand/collapse panel",
+            "Group label"
+          ]
+        },
+        {
+          "name": "aria-controls",
+          "purpose": "References controlled element",
+          "exampleValues": [
+            "__panel-1",
+            "__panel-2",
+            "__panel-7"
+          ]
+        }
+      ],
+      "keyboardSupport": [],
+      "focusManagement": null,
+      "notes": []
+    },
+    "popover": {
+      "roles": [
+        "button",
+        "dialog",
+        "group"
+      ],
+      "requiredAttrs": [
+        {
+          "name": "aria-label",
+          "purpose": "Accessible name when no visible text",
+          "exampleValues": [
+            "Cart",
+            "Avatar",
+            "navigation items"
+          ],
+          "when": "Required when no visible text label"
+        },
+        {
+          "name": "aria-expanded",
+          "purpose": "Indicates expandable state (true/false)",
+          "exampleValues": [
+            "true"
+          ],
+          "when": "Required for interactive state"
+        },
+        {
+          "name": "aria-pressed",
+          "purpose": "Toggle button state (true/false)",
+          "exampleValues": [
+            "true",
+            "false"
+          ],
+          "when": "Required for interactive state"
+        }
+      ],
+      "optionalAttrs": [
+        {
+          "name": "aria-controls",
+          "purpose": "References controlled element",
+          "exampleValues": [
+            "popoverB4Btp",
+            "popoverB4B",
+            "popoverB2"
+          ]
+        },
+        {
+          "name": "aria-haspopup",
+          "purpose": "Indicates popup type (menu/listbox/dialog)",
+          "exampleValues": [
+            "true",
+            "dialog"
+          ]
+        }
+      ],
+      "keyboardSupport": [
+        "Enter",
+        "Space",
+        "Escape",
+        "Tab"
+      ],
+      "focusManagement": "Uses tabindex for focus management",
+      "notes": [
+        "Modal dialogs require focus trap",
+        "Use aria-modal=\"true\" for modals"
+      ]
+    },
+    "product-switch": {
+      "roles": [
+        "img"
+      ],
+      "requiredAttrs": [
+        {
+          "name": "aria-label",
+          "purpose": "Accessible name when no visible text",
+          "exampleValues": [
+            "Avatar landscape",
+            "Product logo"
+          ],
+          "when": "Required when no visible text label"
+        }
+      ],
+      "optionalAttrs": [],
+      "keyboardSupport": [],
+      "focusManagement": "Uses tabindex for focus management",
+      "notes": []
+    },
+    "progress-indicator": {
+      "roles": [
+        "progressbar"
+      ],
+      "requiredAttrs": [
+        {
+          "name": "aria-label",
+          "purpose": "Accessible name when no visible text",
+          "exampleValues": [
+            "0%",
+            "42%",
+            "69%"
+          ],
+          "when": "Required when no visible text label"
+        }
+      ],
+      "optionalAttrs": [
+        {
+          "name": "aria-valuemin",
+          "purpose": "See WAI-ARIA specification",
+          "exampleValues": [
+            "0"
+          ]
+        },
+        {
+          "name": "aria-valuenow",
+          "purpose": "See WAI-ARIA specification",
+          "exampleValues": [
+            "0",
+            "42",
+            "69"
+          ]
+        },
+        {
+          "name": "aria-valuemax",
+          "purpose": "See WAI-ARIA specification",
+          "exampleValues": [
+            "100"
+          ]
+        },
+        {
+          "name": "aria-valuetext",
+          "purpose": "See WAI-ARIA specification",
+          "exampleValues": [
+            "0%",
+            "42%",
+            "69%"
+          ]
+        }
+      ],
+      "keyboardSupport": [],
+      "focusManagement": "Uses tabindex for focus management",
+      "notes": [
+        "Uses tabindex=\"-1\" for programmatic focus"
+      ]
+    },
+    "quick-view": {
+      "roles": [
+        "group",
+        "dialog"
+      ],
+      "requiredAttrs": [],
+      "optionalAttrs": [
+        {
+          "name": "aria-modal",
+          "purpose": "Indicates modal dialog",
+          "exampleValues": [
+            "true"
+          ]
+        },
+        {
+          "name": "aria-labelledby",
+          "purpose": "References visible label element",
+          "exampleValues": [
+            "dialog-title",
+            "contactDetails",
+            "mainContact"
+          ]
+        }
+      ],
+      "keyboardSupport": [
+        "Escape",
+        "Tab"
+      ],
+      "focusManagement": null,
+      "notes": [
+        "Modal dialogs require focus trap",
+        "Use aria-modal=\"true\" for modals"
+      ]
+    },
+    "rating-indicator": {
+      "roles": [],
+      "requiredAttrs": [
+        {
+          "name": "aria-label",
+          "purpose": "Accessible name when no visible text",
+          "exampleValues": [
+            "Star Rating (out of 5)",
+            "0 star",
+            "1 star"
+          ],
+          "when": "Required when no visible text label"
+        },
+        {
+          "name": "aria-disabled",
+          "purpose": "Disabled state (use with disabled attr)",
+          "exampleValues": [
+            "true"
+          ],
+          "when": "Required for interactive state"
+        }
+      ],
+      "optionalAttrs": [],
+      "keyboardSupport": [],
+      "focusManagement": null,
+      "notes": []
+    },
+    "search-field": {
+      "roles": [],
+      "requiredAttrs": [
+        {
+          "name": "aria-label",
+          "purpose": "Accessible name when no visible text",
+          "exampleValues": [
+            "Search",
+            "Close"
+          ],
+          "when": "Required when no visible text label"
+        },
+        {
+          "name": "aria-disabled",
+          "purpose": "Disabled state (use with disabled attr)",
+          "exampleValues": [
+            "true",
+            "false"
+          ],
+          "when": "Required for interactive state"
+        }
+      ],
+      "optionalAttrs": [],
+      "keyboardSupport": [],
+      "focusManagement": "Uses tabindex for focus management",
+      "notes": [
+        "Uses tabindex=\"-1\" for programmatic focus"
+      ]
+    },
+    "segmented-button": {
+      "roles": [
+        "option",
+        "listbox"
+      ],
+      "requiredAttrs": [
+        {
+          "name": "aria-selected",
+          "purpose": "Selection state in a list",
+          "exampleValues": [
+            "false",
+            "true"
+          ],
+          "when": "Required for interactive state"
+        },
+        {
+          "name": "aria-label",
+          "purpose": "Accessible name when no visible text",
+          "exampleValues": [
+            "Survey",
+            "Database",
+            "Chart"
+          ],
+          "when": "Required when no visible text label"
+        }
+      ],
+      "optionalAttrs": [
+        {
+          "name": "aria-multiselectable",
+          "purpose": "See WAI-ARIA specification",
+          "exampleValues": [
+            "true"
+          ]
+        },
+        {
+          "name": "aria-roledescription",
+          "purpose": "Custom role description",
+          "exampleValues": [
+            "Segmented button group",
+            "Segmented button"
+          ]
+        },
+        {
+          "name": "aria-orientation",
+          "purpose": "See WAI-ARIA specification",
+          "exampleValues": [
+            "vertical",
+            "horizontal"
+          ]
+        },
+        {
+          "name": "aria-setsize",
+          "purpose": "Total items in set",
+          "exampleValues": [
+            "7",
+            "5"
+          ]
+        },
+        {
+          "name": "aria-posinset",
+          "purpose": "Position in set",
+          "exampleValues": [
+            "1",
+            "2",
+            "3"
+          ]
+        }
+      ],
+      "keyboardSupport": [
+        "Enter",
+        "Space",
+        "Arrow keys"
+      ],
+      "focusManagement": "Uses tabindex for focus management",
+      "notes": [
+        "Uses tabindex=\"-1\" for programmatic focus"
+      ]
+    },
+    "select": {
+      "roles": [
+        "option",
+        "combobox",
+        "button",
+        "listbox",
+        "group",
+        "note"
+      ],
+      "requiredAttrs": [
+        {
+          "name": "aria-expanded",
+          "purpose": "Indicates expandable state (true/false)",
+          "exampleValues": [
+            "true",
+            "false"
+          ],
+          "when": "Required for interactive state"
+        },
+        {
+          "name": "aria-selected",
+          "purpose": "Selection state in a list",
+          "exampleValues": [
+            "false",
+            "true"
+          ],
+          "when": "Required for interactive state"
+        },
+        {
+          "name": "aria-disabled",
+          "purpose": "Disabled state (use with disabled attr)",
+          "exampleValues": [
+            "true"
+          ],
+          "when": "Required for interactive state"
+        }
+      ],
+      "optionalAttrs": [
+        {
+          "name": "aria-haspopup",
+          "purpose": "Indicates popup type (menu/listbox/dialog)",
+          "exampleValues": [
+            "true",
+            "listbox"
+          ]
+        },
+        {
+          "name": "aria-roledescription",
+          "purpose": "Custom role description",
+          "exampleValues": [
+            "Contains item list for selection",
+            "Contains all available items"
+          ]
+        },
+        {
+          "name": "aria-controls",
+          "purpose": "References controlled element",
+          "exampleValues": [
+            "formList",
+            "cozyList",
+            "successList"
+          ]
+        },
+        {
+          "name": "aria-activedescendant",
+          "purpose": "Active child element",
+          "exampleValues": [
+            "formListItem2",
+            "cozyListItem2",
+            ""
+          ]
+        },
+        {
+          "name": "aria-labelledby",
+          "purpose": "References visible label element",
+          "exampleValues": [
+            "formSelectLabel",
+            "blankSelectLabel",
+            "cozySelectLabel"
+          ]
+        },
+        {
+          "name": "aria-label",
+          "purpose": "Accessible name when no visible text",
+          "exampleValues": [
+            "Selection options",
+            "close"
+          ]
+        },
+        {
+          "name": "aria-setsize",
+          "purpose": "Total items in set",
+          "exampleValues": [
+            "5",
+            "10",
+            "8"
+          ]
+        },
+        {
+          "name": "aria-posinset",
+          "purpose": "Position in set",
+          "exampleValues": [
+            "1",
+            "2",
+            "3"
+          ]
+        },
+        {
+          "name": "aria-readonly",
+          "purpose": "Indicates read-only field",
+          "exampleValues": [
+            "true"
+          ]
+        }
+      ],
+      "keyboardSupport": [
+        "Enter",
+        "Space",
+        "Arrow keys",
+        "Escape"
+      ],
+      "focusManagement": "Uses tabindex for focus management",
+      "notes": [
+        "Uses tabindex=\"-1\" for programmatic focus",
+        "Requires aria-expanded and aria-haspopup",
+        "Use aria-activedescendant for active option"
+      ]
+    },
+    "settings": {
+      "roles": [
+        "listitem",
+        "list",
+        "dialog",
+        "tab",
+        "tabpanel",
+        "tablist"
+      ],
+      "requiredAttrs": [
+        {
+          "name": "aria-selected",
+          "purpose": "Selection state in a list",
+          "exampleValues": [
+            "true"
+          ],
+          "when": "Required for interactive state"
+        }
+      ],
+      "optionalAttrs": [
+        {
+          "name": "aria-modal",
+          "purpose": "Indicates modal dialog",
+          "exampleValues": [
+            "true"
+          ]
+        },
+        {
+          "name": "aria-labelledby",
+          "purpose": "References visible label element",
+          "exampleValues": [
+            "dialog-title-1",
+            "tab1",
+            "tab2"
+          ]
+        },
+        {
+          "name": "aria-label",
+          "purpose": "Accessible name when no visible text",
+          "exampleValues": [
+            "text",
+            "input",
+            "button"
+          ]
+        }
+      ],
+      "keyboardSupport": [
+        "Escape",
+        "Tab",
+        "Arrow keys"
+      ],
+      "focusManagement": "Uses tabindex for focus management",
+      "notes": [
+        "Uses tabindex=\"-1\" for programmatic focus",
+        "Modal dialogs require focus trap",
+        "Use aria-modal=\"true\" for modals"
+      ]
+    },
+    "shellbar": {
+      "roles": [
+        "button",
+        "banner",
+        "link",
+        "group",
+        "toolbar"
+      ],
+      "requiredAttrs": [
+        {
+          "name": "aria-expanded",
+          "purpose": "Indicates expandable state (true/false)",
+          "exampleValues": [
+            "false",
+            "true"
+          ],
+          "when": "Required for interactive state"
+        }
+      ],
+      "optionalAttrs": [
+        {
+          "name": "aria-label",
+          "purpose": "Accessible name when no visible text",
+          "exampleValues": [
+            "Shell Bar",
+            "Main Navigation",
+            "Back Navigation"
+          ]
+        },
+        {
+          "name": "aria-controls",
+          "purpose": "References controlled element",
+          "exampleValues": [
+            "9GLB269412ow2",
+            "MKFAY276wed",
+            "9GLB269412874"
+          ]
+        },
+        {
+          "name": "aria-haspopup",
+          "purpose": "Indicates popup type (menu/listbox/dialog)",
+          "exampleValues": [
+            "true",
+            "dialog",
+            "listbox"
+          ]
+        },
+        {
+          "name": "aria-labelledby",
+          "purpose": "References visible label element",
+          "exampleValues": [
+            "label1",
+            "cozySelectLabel cozySelectValue"
+          ]
+        }
+      ],
+      "keyboardSupport": [
+        "Enter",
+        "Space"
+      ],
+      "focusManagement": "Uses tabindex for focus management",
+      "notes": []
+    },
+    "side-navigation": {
+      "roles": [
+        "treeitem",
+        "menuitemradio",
+        "group",
+        "tree",
+        "separator",
+        "menu",
+        "menubar",
+        "dialog",
+        "heading",
+        "button"
+      ],
+      "requiredAttrs": [
+        {
+          "name": "aria-checked",
+          "purpose": "Checkbox/radio checked state",
+          "exampleValues": [
+            "false",
+            "true"
+          ],
+          "when": "Required for interactive state"
+        },
+        {
+          "name": "aria-expanded",
+          "purpose": "Indicates expandable state (true/false)",
+          "exampleValues": [
+            "false",
+            "true"
+          ],
+          "when": "Required for interactive state"
+        }
+      ],
+      "optionalAttrs": [
+        {
+          "name": "aria-roledescription",
+          "purpose": "Custom role description",
+          "exampleValues": [
+            "Main Navigation",
+            "Navigation List Tree",
+            "Side Navigation Separator"
+          ]
+        },
+        {
+          "name": "aria-label",
+          "purpose": "Accessible name when no visible text",
+          "exampleValues": [
+            "Home",
+            "Favorites",
+            "Customer Management"
+          ]
+        },
+        {
+          "name": "aria-controls",
+          "purpose": "References controlled element",
+          "exampleValues": [
+            "sideNavPopover1",
+            "sideNavPopover2",
+            "sideNavFloating"
+          ]
+        },
+        {
+          "name": "aria-haspopup",
+          "purpose": "Indicates popup type (menu/listbox/dialog)",
+          "exampleValues": [
+            "menu",
+            "true"
+          ]
+        },
+        {
+          "name": "aria-labelledby",
+          "purpose": "References visible label element",
+          "exampleValues": [
+            "side-nav-item-1",
+            "side-nav-item-4"
+          ]
+        },
+        {
+          "name": "aria-orientation",
+          "purpose": "See WAI-ARIA specification",
+          "exampleValues": [
+            "horizontal"
+          ]
+        }
+      ],
+      "keyboardSupport": [
+        "Arrow keys",
+        "Enter",
+        "Space",
+        "Escape",
+        "Tab"
+      ],
+      "focusManagement": "Uses tabindex for focus management",
+      "notes": [
+        "Uses tabindex=\"-1\" for programmatic focus",
+        "Modal dialogs require focus trap",
+        "Use aria-modal=\"true\" for modals",
+        "Use aria-level for hierarchy depth",
+        "Use aria-expanded for expandable items"
+      ]
+    },
+    "slider": {
+      "roles": [
+        "slider"
+      ],
+      "requiredAttrs": [
+        {
+          "name": "aria-label",
+          "purpose": "Accessible name when no visible text",
+          "exampleValues": [
+            "slider",
+            "range slider left",
+            "range slider right"
+          ],
+          "when": "Required when no visible text label"
+        }
+      ],
+      "optionalAttrs": [
+        {
+          "name": "aria-valuemin",
+          "purpose": "See WAI-ARIA specification",
+          "exampleValues": [
+            "1",
+            "40"
+          ]
+        },
+        {
+          "name": "aria-valuemax",
+          "purpose": "See WAI-ARIA specification",
+          "exampleValues": [
+            "100",
+            "80"
+          ]
+        },
+        {
+          "name": "aria-valuenow",
+          "purpose": "See WAI-ARIA specification",
+          "exampleValues": [
+            "50",
+            "40",
+            "80"
+          ]
+        }
+      ],
+      "keyboardSupport": [
+        "Arrow keys"
+      ],
+      "focusManagement": "Uses tabindex for focus management",
+      "notes": []
+    },
+    "status-indicator": {
+      "roles": [
+        "progressbar"
+      ],
+      "requiredAttrs": [
+        {
+          "name": "aria-label",
+          "purpose": "Accessible name when no visible text",
+          "exampleValues": [
+            "Euro Status Indicator With Negative Filling",
+            "Euro Status Indicator With Critical Filling",
+            "Euro Status Indicator With Positive Filling"
+          ],
+          "when": "Required when no visible text label"
+        }
+      ],
+      "optionalAttrs": [
+        {
+          "name": "aria-roledescription",
+          "purpose": "Custom role description",
+          "exampleValues": [
+            "Status Indicator"
+          ]
+        },
+        {
+          "name": "aria-valuetext",
+          "purpose": "See WAI-ARIA specification",
+          "exampleValues": [
+            "35%",
+            "60%",
+            "100%"
+          ]
+        }
+      ],
+      "keyboardSupport": [],
+      "focusManagement": "Uses tabindex for focus management",
+      "notes": []
+    },
+    "step-input": {
+      "roles": [],
+      "requiredAttrs": [
+        {
+          "name": "aria-label",
+          "purpose": "Accessible name when no visible text",
+          "exampleValues": [
+            "Step down",
+            "Step up"
+          ],
+          "when": "Required when no visible text label"
+        }
+      ],
+      "optionalAttrs": [],
+      "keyboardSupport": [],
+      "focusManagement": "Uses tabindex for focus management",
+      "notes": [
+        "Uses tabindex=\"-1\" for programmatic focus"
+      ]
+    },
+    "table": {
+      "roles": [
+        "gridcell",
+        "img",
+        "listitem",
+        "option",
+        "dialog",
+        "grid",
+        "list",
+        "listbox"
+      ],
+      "requiredAttrs": [
+        {
+          "name": "aria-selected",
+          "purpose": "Selection state in a list",
+          "exampleValues": [
+            "true",
+            "false"
+          ],
+          "when": "Required for interactive state"
+        },
+        {
+          "name": "aria-expanded",
+          "purpose": "Indicates expandable state (true/false)",
+          "exampleValues": [
+            "false"
+          ],
+          "when": "Required for interactive state"
+        },
+        {
+          "name": "aria-checked",
+          "purpose": "Checkbox/radio checked state",
+          "exampleValues": [
+            "false"
+          ],
+          "when": "Required for interactive state"
+        }
+      ],
+      "optionalAttrs": [
+        {
+          "name": "aria-modal",
+          "purpose": "Indicates modal dialog",
+          "exampleValues": [
+            "true"
+          ]
+        },
+        {
+          "name": "aria-labelledby",
+          "purpose": "References visible label element",
+          "exampleValues": [
+            "dialog-filter",
+            "dialog-settings",
+            "fd-NPWFoAxBzUa"
+          ]
+        },
+        {
+          "name": "aria-label",
+          "purpose": "Accessible name when no visible text",
+          "exampleValues": [
+            "navigation",
+            "checkbox",
+            "More"
+          ]
+        },
+        {
+          "name": "aria-multiselectable",
+          "purpose": "See WAI-ARIA specification",
+          "exampleValues": [
+            "true"
+          ]
+        },
+        {
+          "name": "aria-controls",
+          "purpose": "References controlled element",
+          "exampleValues": [
+            "pQqQRFF3",
+            "G54qQRFF3",
+            "popoverA1"
+          ]
+        },
+        {
+          "name": "aria-haspopup",
+          "purpose": "Indicates popup type (menu/listbox/dialog)",
+          "exampleValues": [
+            "true",
+            "listbox"
+          ]
+        },
+        {
+          "name": "aria-describedby",
+          "purpose": "References description element",
+          "exampleValues": [
+            "FU4EwF6st"
+          ]
+        },
+        {
+          "name": "aria-live",
+          "purpose": "Announces dynamic content changes",
+          "exampleValues": [
+            "polite"
+          ]
+        }
+      ],
+      "keyboardSupport": [
+        "Enter",
+        "Space",
+        "Escape",
+        "Tab",
+        "Arrow keys"
+      ],
+      "focusManagement": "Uses tabindex for focus management",
+      "notes": [
+        "Uses tabindex=\"-1\" for programmatic focus",
+        "Modal dialogs require focus trap",
+        "Use aria-modal=\"true\" for modals"
+      ]
+    },
+    "time": {
+      "roles": [],
+      "requiredAttrs": [
+        {
+          "name": "aria-label",
+          "purpose": "Accessible name when no visible text",
+          "exampleValues": [
+            "Increase hours",
+            "Decrease hours",
+            "Change Meridian"
+          ],
+          "when": "Required when no visible text label"
+        }
+      ],
+      "optionalAttrs": [],
+      "keyboardSupport": [],
+      "focusManagement": null,
+      "notes": []
+    },
+    "timepicker": {
+      "roles": [
+        "group",
+        "img"
+      ],
+      "requiredAttrs": [
+        {
+          "name": "aria-label",
+          "purpose": "Accessible name when no visible text",
+          "exampleValues": [
+            "show/hide time picker",
+            "Group label",
+            "AM"
+          ],
+          "when": "Required when no visible text label"
+        },
+        {
+          "name": "aria-expanded",
+          "purpose": "Indicates expandable state (true/false)",
+          "exampleValues": [
+            "true"
+          ],
+          "when": "Required for interactive state"
+        },
+        {
+          "name": "aria-pressed",
+          "purpose": "Toggle button state (true/false)",
+          "exampleValues": [
+            "true"
+          ],
+          "when": "Required for interactive state"
+        }
+      ],
+      "optionalAttrs": [
+        {
+          "name": "aria-haspopup",
+          "purpose": "Indicates popup type (menu/listbox/dialog)",
+          "exampleValues": [
+            "true"
+          ]
+        }
+      ],
+      "keyboardSupport": [],
+      "focusManagement": null,
+      "notes": []
+    },
+    "token": {
+      "roles": [
+        "button"
+      ],
+      "requiredAttrs": [
+        {
+          "name": "aria-label",
+          "purpose": "Accessible name when no visible text",
+          "exampleValues": [
+            "Bibendum token close"
+          ],
+          "when": "Required when no visible text label"
+        }
+      ],
+      "optionalAttrs": [],
+      "keyboardSupport": [
+        "Enter",
+        "Space"
+      ],
+      "focusManagement": "Uses tabindex for focus management",
+      "notes": [
+        "Uses tabindex=\"-1\" for programmatic focus"
+      ]
+    },
+    "tokenizer": {
+      "roles": [
+        "button"
+      ],
+      "requiredAttrs": [
+        {
+          "name": "aria-label",
+          "purpose": "Accessible name when no visible text",
+          "exampleValues": [
+            "Tokenizer input",
+            "Token close"
+          ],
+          "when": "Required when no visible text label"
+        }
+      ],
+      "optionalAttrs": [],
+      "keyboardSupport": [
+        "Enter",
+        "Space"
+      ],
+      "focusManagement": "Uses tabindex for focus management",
+      "notes": [
+        "Uses tabindex=\"-1\" for programmatic focus"
+      ]
+    },
+    "toolbar": {
+      "roles": [
+        "toolbar"
+      ],
+      "requiredAttrs": [
+        {
+          "name": "aria-label",
+          "purpose": "Accessible name when no visible text",
+          "exampleValues": [
+            "Left and right-aligned toolbar",
+            "Left-aligned toolbar",
+            "Centered toolbar"
+          ],
+          "when": "Required when no visible text label"
+        },
+        {
+          "name": "aria-expanded",
+          "purpose": "Indicates expandable state (true/false)",
+          "exampleValues": [
+            "true"
+          ],
+          "when": "Required for interactive state"
+        }
+      ],
+      "optionalAttrs": [
+        {
+          "name": "aria-controls",
+          "purpose": "References controlled element",
+          "exampleValues": [
+            "wgxzK85912"
+          ]
+        },
+        {
+          "name": "aria-haspopup",
+          "purpose": "Indicates popup type (menu/listbox/dialog)",
+          "exampleValues": [
+            "true"
+          ]
+        }
+      ],
+      "keyboardSupport": [],
+      "focusManagement": "Uses tabindex for focus management",
+      "notes": []
+    },
+    "tree": {
+      "roles": [
+        "treeitem",
+        "group",
+        "tree"
+      ],
+      "requiredAttrs": [
+        {
+          "name": "aria-label",
+          "purpose": "Accessible name when no visible text",
+          "exampleValues": [
+            "Root Tree",
+            "Expand level 2",
+            "Edit button"
+          ],
+          "when": "Required when no visible text label"
+        },
+        {
+          "name": "aria-expanded",
+          "purpose": "Indicates expandable state (true/false)",
+          "exampleValues": [
+            "true"
+          ],
+          "when": "Required for interactive state"
+        }
+      ],
+      "optionalAttrs": [
+        {
+          "name": "aria-level",
+          "purpose": "Hierarchy level (headings, tree)",
+          "exampleValues": [
+            "1",
+            "2",
+            "3"
+          ]
+        },
+        {
+          "name": "aria-controls",
+          "purpose": "References controlled element",
+          "exampleValues": [
+            "TREE2L2",
+            "TREE2L3",
+            "TREE3L2"
+          ]
+        },
+        {
+          "name": "aria-haspopup",
+          "purpose": "Indicates popup type (menu/listbox/dialog)",
+          "exampleValues": [
+            "true"
+          ]
+        }
+      ],
+      "keyboardSupport": [
+        "Arrow keys",
+        "Enter",
+        "Space"
+      ],
+      "focusManagement": "Uses tabindex for focus management",
+      "notes": [
+        "Uses tabindex=\"-1\" for programmatic focus",
+        "Use aria-level for hierarchy depth",
+        "Use aria-expanded for expandable items"
+      ]
+    },
+    "upload-collection": {
+      "roles": [
+        "listitem",
+        "list",
+        "img",
+        "status"
+      ],
+      "requiredAttrs": [
+        {
+          "name": "aria-label",
+          "purpose": "Accessible name when no visible text",
+          "exampleValues": [
+            "Edit",
+            "Delete",
+            "icon for request"
+          ],
+          "when": "Required when no visible text label"
+        }
+      ],
+      "optionalAttrs": [
+        {
+          "name": "aria-live",
+          "purpose": "Announces dynamic content changes",
+          "exampleValues": [
+            "polite"
+          ]
+        }
+      ],
+      "keyboardSupport": [],
+      "focusManagement": "Uses tabindex for focus management",
+      "notes": []
+    },
+    "user-menu": {
+      "roles": [
+        "menuitem",
+        "listitem",
+        "menu",
+        "img",
+        "form",
+        "region",
+        "list"
+      ],
+      "requiredAttrs": [
+        {
+          "name": "aria-expanded",
+          "purpose": "Indicates expandable state (true/false)",
+          "exampleValues": [
+            "true",
+            "false"
+          ],
+          "when": "Required for interactive state"
+        }
+      ],
+      "optionalAttrs": [
+        {
+          "name": "aria-label",
+          "purpose": "Accessible name when no visible text",
+          "exampleValues": [
+            "Avatar",
+            "Edit",
+            "button"
+          ]
+        },
+        {
+          "name": "aria-controls",
+          "purpose": "References controlled element",
+          "exampleValues": [
+            "EX100M2A",
+            "__panel-8",
+            "EX100M2B"
+          ]
+        },
+        {
+          "name": "aria-haspopup",
+          "purpose": "Indicates popup type (menu/listbox/dialog)",
+          "exampleValues": [
+            "true"
+          ]
+        },
+        {
+          "name": "aria-labelledby",
+          "purpose": "References visible label element",
+          "exampleValues": [
+            "__panel-title-8",
+            "__panel-title-10"
+          ]
+        },
+        {
+          "name": "aria-role",
+          "purpose": "See WAI-ARIA specification",
+          "exampleValues": [
+            "img"
+          ]
+        }
+      ],
+      "keyboardSupport": [
+        "Enter",
+        "Space",
+        "Arrow keys",
+        "Escape"
+      ],
+      "focusManagement": "Uses tabindex for focus management",
+      "notes": []
+    },
+    "variant-management": {
+      "roles": [
+        "heading"
+      ],
+      "requiredAttrs": [
+        {
+          "name": "aria-disabled",
+          "purpose": "Disabled state (use with disabled attr)",
+          "exampleValues": [
+            "false"
+          ],
+          "when": "Required for interactive state"
+        }
+      ],
+      "optionalAttrs": [
+        {
+          "name": "aria-haspopup",
+          "purpose": "Indicates popup type (menu/listbox/dialog)",
+          "exampleValues": [
+            "true"
+          ]
+        },
+        {
+          "name": "aria-level",
+          "purpose": "Hierarchy level (headings, tree)",
+          "exampleValues": [
+            "4",
+            "3"
+          ]
+        }
+      ],
+      "keyboardSupport": [],
+      "focusManagement": "Uses tabindex for focus management",
+      "notes": []
+    },
+    "vertical-navigation": {
+      "roles": [
+        "listitem"
+      ],
+      "requiredAttrs": [
+        {
+          "name": "aria-label",
+          "purpose": "Accessible name when no visible text",
+          "exampleValues": [
+            "Main Menu 2",
+            "Main Menu List 2",
+            "Main Menu"
+          ],
+          "when": "Required when no visible text label"
+        }
+      ],
+      "optionalAttrs": [],
+      "keyboardSupport": [],
+      "focusManagement": "Uses tabindex for focus management",
+      "notes": []
+    },
+    "wizard": {
+      "roles": [
+        "listitem",
+        "list",
+        "img"
+      ],
+      "requiredAttrs": [
+        {
+          "name": "aria-label",
+          "purpose": "Accessible name when no visible text",
+          "exampleValues": [
+            "Wizard Navigation 2",
+            "Step 1: One line",
+            "Step 2: Very long label that truncates on the second line"
+          ],
+          "when": "Required when no visible text label"
+        },
+        {
+          "name": "aria-disabled",
+          "purpose": "Disabled state (use with disabled attr)",
+          "exampleValues": [
+            "true"
+          ],
+          "when": "Required for interactive state"
+        },
+        {
+          "name": "aria-expanded",
+          "purpose": "Indicates expandable state (true/false)",
+          "exampleValues": [
+            "false"
+          ],
+          "when": "Required for interactive state"
+        }
+      ],
+      "optionalAttrs": [
+        {
+          "name": "aria-current",
+          "purpose": "Indicates current item (page/step/date)",
+          "exampleValues": [
+            "step"
+          ]
+        },
+        {
+          "name": "aria-controls",
+          "purpose": "References controlled element",
+          "exampleValues": [
+            "actionSheetMobile1",
+            "actionSheetMobile2",
+            "actionSheetDesktop"
+          ]
+        },
+        {
+          "name": "aria-haspopup",
+          "purpose": "Indicates popup type (menu/listbox/dialog)",
+          "exampleValues": [
+            "true"
+          ]
+        }
+      ],
+      "keyboardSupport": [],
+      "focusManagement": "Uses tabindex for focus management",
+      "notes": []
+    },
+    "checkbox": {
+      "roles": [],
+      "requiredAttrs": [
+        {
+          "name": "aria-disabled",
+          "purpose": "Disabled state (use with disabled attr)",
+          "exampleValues": [
+            "true"
+          ],
+          "when": "Required for interactive state"
+        }
+      ],
+      "optionalAttrs": [
+        {
+          "name": "aria-required",
+          "purpose": "Indicates required field",
+          "exampleValues": [
+            "true"
+          ]
+        }
+      ],
+      "keyboardSupport": [],
+      "focusManagement": null,
+      "notes": []
+    },
+    "form-group": {
+      "roles": [
+        "group"
+      ],
+      "requiredAttrs": [],
+      "optionalAttrs": [
+        {
+          "name": "aria-labelledby",
+          "purpose": "References visible label element",
+          "exampleValues": [
+            "grid1GroupHeader",
+            "grid2GroupHeader",
+            "grid3GroupHeader"
+          ]
+        }
+      ],
+      "keyboardSupport": [],
+      "focusManagement": null,
+      "notes": []
+    },
+    "form-label": {
+      "roles": [],
+      "requiredAttrs": [
+        {
+          "name": "aria-disabled",
+          "purpose": "Disabled state (use with disabled attr)",
+          "exampleValues": [
+            "true"
+          ],
+          "when": "Required for interactive state"
+        }
+      ],
+      "optionalAttrs": [
+        {
+          "name": "aria-required",
+          "purpose": "Indicates required field",
+          "exampleValues": [
+            "true"
+          ]
+        }
+      ],
+      "keyboardSupport": [],
+      "focusManagement": null,
+      "notes": []
+    },
+    "form-message": {
+      "roles": [],
+      "requiredAttrs": [
+        {
+          "name": "aria-expanded",
+          "purpose": "Indicates expandable state (true/false)",
+          "exampleValues": [
+            "true"
+          ],
+          "when": "Required for interactive state"
+        }
+      ],
+      "optionalAttrs": [
+        {
+          "name": "aria-controls",
+          "purpose": "References controlled element",
+          "exampleValues": [
+            "error-message",
+            "info-message",
+            "success-message"
+          ]
+        },
+        {
+          "name": "aria-haspopup",
+          "purpose": "Indicates popup type (menu/listbox/dialog)",
+          "exampleValues": [
+            "true"
+          ]
+        },
+        {
+          "name": "aria-describedby",
+          "purpose": "References description element",
+          "exampleValues": [
+            "input-error-message error-message",
+            "input-info-message info-message",
+            "input-success-message success-message"
+          ]
+        },
+        {
+          "name": "aria-invalid",
+          "purpose": "Indicates validation error",
+          "exampleValues": [
+            "true"
+          ]
+        }
+      ],
+      "keyboardSupport": [],
+      "focusManagement": null,
+      "notes": []
+    },
+    "input": {
+      "roles": [],
+      "requiredAttrs": [
+        {
+          "name": "aria-disabled",
+          "purpose": "Disabled state (use with disabled attr)",
+          "exampleValues": [
+            "true"
+          ],
+          "when": "Required for interactive state"
+        },
+        {
+          "name": "aria-expanded",
+          "purpose": "Indicates expandable state (true/false)",
+          "exampleValues": [
+            "true"
+          ],
+          "when": "Required for interactive state"
+        }
+      ],
+      "optionalAttrs": [
+        {
+          "name": "aria-required",
+          "purpose": "Indicates required field",
+          "exampleValues": [
+            "true"
+          ]
+        },
+        {
+          "name": "aria-invalid",
+          "purpose": "Indicates validation error",
+          "exampleValues": [
+            "true"
+          ]
+        },
+        {
+          "name": "aria-describedby",
+          "purpose": "References description element",
+          "exampleValues": [
+            "input-error-message",
+            "input-error-hover-message",
+            "input-error-focus-message"
+          ]
+        },
+        {
+          "name": "aria-controls",
+          "purpose": "References controlled element",
+          "exampleValues": [
+            "success-message",
+            "error-message-state",
+            "warn-message"
+          ]
+        },
+        {
+          "name": "aria-haspopup",
+          "purpose": "Indicates popup type (menu/listbox/dialog)",
+          "exampleValues": [
+            "true"
+          ]
+        }
+      ],
+      "keyboardSupport": [],
+      "focusManagement": null,
+      "notes": []
+    },
+    "input-group": {
+      "roles": [],
+      "requiredAttrs": [
+        {
+          "name": "aria-label",
+          "purpose": "Accessible name when no visible text",
+          "exampleValues": [
+            "Submit value",
+            "Show options",
+            "Clear input"
+          ],
+          "when": "Required when no visible text label"
+        }
+      ],
+      "optionalAttrs": [
+        {
+          "name": "aria-describedby",
+          "purpose": "References description element",
+          "exampleValues": [
+            "input-default-note",
+            "input-error-note",
+            "input-success-note"
+          ]
+        }
+      ],
+      "keyboardSupport": [],
+      "focusManagement": null,
+      "notes": []
+    },
+    "prompt-input": {
+      "roles": [],
+      "requiredAttrs": [
+        {
+          "name": "aria-label",
+          "purpose": "Accessible name when no visible text",
+          "exampleValues": [
+            "Clear",
+            "Add to cart"
+          ],
+          "when": "Required when no visible text label"
+        },
+        {
+          "name": "aria-expanded",
+          "purpose": "Indicates expandable state (true/false)",
+          "exampleValues": [
+            "true"
+          ],
+          "when": "Required for interactive state"
+        }
+      ],
+      "optionalAttrs": [
+        {
+          "name": "aria-controls",
+          "purpose": "References controlled element",
+          "exampleValues": [
+            "popoverError"
+          ]
+        },
+        {
+          "name": "aria-haspopup",
+          "purpose": "Indicates popup type (menu/listbox/dialog)",
+          "exampleValues": [
+            "true"
+          ]
+        }
+      ],
+      "keyboardSupport": [],
+      "focusManagement": null,
+      "notes": []
+    },
+    "radio": {
+      "roles": [],
+      "requiredAttrs": [
+        {
+          "name": "aria-disabled",
+          "purpose": "Disabled state (use with disabled attr)",
+          "exampleValues": [
+            "true"
+          ],
+          "when": "Required for interactive state"
+        }
+      ],
+      "optionalAttrs": [
+        {
+          "name": "aria-readonly",
+          "purpose": "Indicates read-only field",
+          "exampleValues": [
+            "true"
+          ]
+        },
+        {
+          "name": "aria-description",
+          "purpose": "See WAI-ARIA specification",
+          "exampleValues": [
+            "This radio button is read-only and cannot be changed."
+          ]
+        }
+      ],
+      "keyboardSupport": [],
+      "focusManagement": null,
+      "notes": []
+    },
+    "textarea": {
+      "roles": [],
+      "requiredAttrs": [
+        {
+          "name": "aria-disabled",
+          "purpose": "Disabled state (use with disabled attr)",
+          "exampleValues": [
+            "true"
+          ],
+          "when": "Required for interactive state"
+        },
+        {
+          "name": "aria-expanded",
+          "purpose": "Indicates expandable state (true/false)",
+          "exampleValues": [
+            "true"
+          ],
+          "when": "Required for interactive state"
+        }
+      ],
+      "optionalAttrs": [
+        {
+          "name": "aria-required",
+          "purpose": "Indicates required field",
+          "exampleValues": [
+            "false"
+          ]
+        },
+        {
+          "name": "aria-labelledby",
+          "purpose": "References visible label element",
+          "exampleValues": [
+            "textarea-2-counter",
+            "textarea-3-count"
+          ]
+        },
+        {
+          "name": "aria-readonly",
+          "purpose": "Indicates read-only field",
+          "exampleValues": [
+            "true"
+          ]
+        },
+        {
+          "name": "aria-controls",
+          "purpose": "References controlled element",
+          "exampleValues": [
+            "popoverT51",
+            "popoverT52",
+            "popoverT53"
+          ]
+        },
+        {
+          "name": "aria-haspopup",
+          "purpose": "Indicates popup type (menu/listbox/dialog)",
+          "exampleValues": [
+            "true"
+          ]
+        },
+        {
+          "name": "aria-describedby",
+          "purpose": "References description element",
+          "exampleValues": [
+            "textarea-3-message popoverT51",
+            "textarea-4-message popoverT52",
+            "textarea-5-message popoverT53"
+          ]
+        },
+        {
+          "name": "aria-invalid",
+          "purpose": "Indicates validation error",
+          "exampleValues": [
+            "true"
+          ]
+        }
+      ],
+      "keyboardSupport": [],
+      "focusManagement": null,
+      "notes": []
+    }
+  }
+}

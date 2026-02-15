@@ -15,7 +15,13 @@
         "enum": [
           "fd-tree--active",
           "fd-tree--wrap",
-          "fd-tree--navigation"
+          "fd-tree--navigation",
+          "fd-tree--error",
+          "fd-tree--warning",
+          "fd-tree--success",
+          "fd-tree--no-border",
+          "fd-tree--no-data",
+          "fd-tree--independent-multi-selection"
         ]
       },
       "description": "Optional modifier classes"
@@ -61,6 +67,15 @@
             "class": {
               "const": "fd-tree__content",
               "description": "Element class name"
+            },
+            "modifiers": {
+              "type": "array",
+              "items": {
+                "enum": [
+                  "fd-tree__content--wrap"
+                ]
+              },
+              "description": "Available modifiers for this element"
             }
           }
         },
@@ -71,6 +86,15 @@
             "class": {
               "const": "fd-tree__icon",
               "description": "Element class name"
+            },
+            "modifiers": {
+              "type": "array",
+              "items": {
+                "enum": [
+                  "fd-tree__icon--navigation"
+                ]
+              },
+              "description": "Available modifiers for this element"
             }
           }
         },
@@ -81,6 +105,25 @@
             "class": {
               "const": "fd-tree__text",
               "description": "Element class name"
+            }
+          }
+        },
+        "fd-tree__item-container": {
+          "type": "object",
+          "description": "item-container element",
+          "properties": {
+            "class": {
+              "const": "fd-tree__item-container",
+              "description": "Element class name"
+            },
+            "modifiers": {
+              "type": "array",
+              "items": {
+                "enum": [
+                  "fd-tree__item-container--active"
+                ]
+              },
+              "description": "Available modifiers for this element"
             }
           }
         }

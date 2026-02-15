@@ -14,7 +14,10 @@
       "items": {
         "enum": [
           "fd-vertical-nav--overflow",
-          "fd-vertical-nav--condensed"
+          "fd-vertical-nav--condensed",
+          "fd-vertical-nav--expandable",
+          "fd-vertical-nav--first-level",
+          "fd-vertical-nav--second-level"
         ]
       },
       "description": "Optional modifier classes"
@@ -39,6 +42,35 @@
           "properties": {
             "class": {
               "const": "fd-vertical-nav__utility-section",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-vertical-nav__navigation-item": {
+          "type": "object",
+          "description": "navigation-item element",
+          "properties": {
+            "class": {
+              "const": "fd-vertical-nav__navigation-item",
+              "description": "Element class name"
+            },
+            "modifiers": {
+              "type": "array",
+              "items": {
+                "enum": [
+                  "fd-vertical-nav__navigation-item--condensed"
+                ]
+              },
+              "description": "Available modifiers for this element"
+            }
+          }
+        },
+        "fd-vertical-nav__navigation-item--condensed": {
+          "type": "object",
+          "description": "navigation-item--condensed element",
+          "properties": {
+            "class": {
+              "const": "fd-vertical-nav__navigation-item--condensed",
               "description": "Element class name"
             }
           }

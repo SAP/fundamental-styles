@@ -15,7 +15,9 @@
         "enum": [
           "fd-settings--footer",
           "fd-settings--no-padding",
-          "fd-settings--no-background"
+          "fd-settings--no-background",
+          "fd-settings--md",
+          "fd-settings--sm"
         ]
       },
       "description": "Optional modifier classes"
@@ -61,6 +63,15 @@
             "class": {
               "const": "fd-settings__content",
               "description": "Element class name"
+            },
+            "modifiers": {
+              "type": "array",
+              "items": {
+                "enum": [
+                  "fd-settings__content--no-background"
+                ]
+              },
+              "description": "Available modifiers for this element"
             }
           }
         },
@@ -80,6 +91,25 @@
                   "fd-settings__container--md",
                   "fd-settings__container--lg",
                   "fd-settings__container--xl"
+                ]
+              },
+              "description": "Available modifiers for this element"
+            }
+          }
+        },
+        "fd-settings__list": {
+          "type": "object",
+          "description": "list element",
+          "properties": {
+            "class": {
+              "const": "fd-settings__list",
+              "description": "Element class name"
+            },
+            "modifiers": {
+              "type": "array",
+              "items": {
+                "enum": [
+                  "fd-settings__list--footer"
                 ]
               },
               "description": "Available modifiers for this element"

@@ -39,7 +39,8 @@
               "type": "array",
               "items": {
                 "enum": [
-                  "fd-menu__list--overflow"
+                  "fd-menu__list--overflow",
+                  "fd-menu__list--no-shadow"
                 ]
               },
               "description": "Available modifiers for this element"
@@ -132,6 +133,15 @@
             "class": {
               "const": "fd-menu__addon-after",
               "description": "Element class name"
+            },
+            "modifiers": {
+              "type": "array",
+              "items": {
+                "enum": [
+                  "fd-menu__addon-after--submenu"
+                ]
+              },
+              "description": "Available modifiers for this element"
             }
           }
         },

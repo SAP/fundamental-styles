@@ -13,7 +13,12 @@
       "type": "array",
       "items": {
         "enum": [
-          "fd-button-split--emphasized"
+          "fd-button-split--emphasized",
+          "fd-button-split--transparent",
+          "fd-button-split--ghost",
+          "fd-button-split--positive",
+          "fd-button-split--negative",
+          "fd-button-split--attention"
         ]
       },
       "description": "Optional modifier classes"

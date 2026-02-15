@@ -181,25 +181,82 @@ graph TB
   form-layout-grid --> layout-grid
   helpers --> layout
   object-list --> list
+  action-bar -.-> bar
+  action-bar -.-> toolbar
+  action-bar -.-> shellbar
+  action-sheet -.-> menu
+  action-sheet -.-> popover
+  action-sheet -.-> dialog
+  ai-busy-indicator -.-> busy-indicator
+  ai-busy-indicator -.-> ai-loading-bar
+  ai-loading-bar -.-> progress-indicator
+  ai-text -.-> text
+  ai-text -.-> ai-writing-assistant
+  ai-writing-assistant -.-> prompt-input
+  ai-writing-assistant -.-> textarea
   alert -.-> message-strip
   alert -.-> message-toast
   alert -.-> notification
-  avatar -.-> avatar-group
+  avatar-group -.-> avatar
+  avatar-group -.-> list
   avatar -.-> icon
-  button -.-> button-split
+  badge -.-> counter
+  badge -.-> info-label
+  badge -.-> object-status
+  bar -.-> toolbar
+  bar -.-> shellbar
+  breadcrumb -.-> side-nav
+  breadcrumb -.-> shellbar
+  busy-indicator -.-> progress-indicator
+  busy-indicator -.-> skeleton
+  button-split -.-> button
+  button-split -.-> segmented-button
+  button-split -.-> menu
   button -.-> segmented-button
   button -.-> link
   button -.-> menu
+  calendar -.-> time
+  calendar -.-> timepicker
   card -.-> tile
   card -.-> panel
   card -.-> layout
+  carousel -.-> card
+  carousel -.-> tile
   checkbox -.-> radio
   checkbox -.-> switch
   checkbox -.-> form-item
+  code -.-> text
+  counter -.-> object-number
+  counter -.-> step-input
   dialog -.-> popover
   dialog -.-> message-box
   dialog -.-> button
   dialog -.-> bar
+  dynamic-page -.-> page
+  dynamic-page -.-> panel
+  dynamic-page -.-> section
+  dynamic-side-content -.-> splitter
+  dynamic-side-content -.-> flexible-column-layout
+  facet -.-> section
+  facet -.-> object-attribute
+  facet -.-> dynamic-page
+  feed-input -.-> feed-list
+  feed-input -.-> textarea
+  feed-list -.-> list
+  feed-list -.-> notification
+  fieldset -.-> form-group
+  fieldset -.-> form-layout-grid
+  file-uploader -.-> upload-collection
+  file-uploader -.-> input
+  fixed-card-layout -.-> resizable-card-layout
+  fixed-card-layout -.-> layout-grid
+  fixed-card-layout -.-> card
+  flexible-column-layout -.-> splitter
+  flexible-column-layout -.-> layout-grid
+  form-group -.-> form-layout-grid
+  form-group -.-> section
+  form-header -.-> form-group
+  form-header -.-> title
   form-item -.-> form-group
   form-item -.-> form-label
   form-item -.-> input
@@ -207,30 +264,141 @@ graph TB
   form-label -.-> input
   form-label -.-> select
   form-label -.-> textarea
+  form-layout-grid -.-> layout-grid
+  form-message -.-> message-popover
+  form-message -.-> message-strip
+  generic-tag -.-> token
+  generic-tag -.-> info-label
+  generic-tag -.-> object-status
+  grid-list -.-> list
+  grid-list -.-> table
+  grid-list -.-> card
+  horizontal-navigation -.-> shellbar
+  horizontal-navigation -.-> tabs
+  horizontal-navigation -.-> navigation-menu
+  icon-tab-bar -.-> tabs
+  icon-tab-bar -.-> toolbar
+  icon-tab-bar -.-> segmented-button
   icon -.-> button
   icon -.-> status-indicator
-  input -.-> input-group
+  illustrated-message -.-> message-page
+  illustrated-message -.-> message-strip
+  info-label -.-> object-status
+  info-label -.-> token
+  input-group -.-> input
+  input-group -.-> search-field
+  input-group -.-> select
   input -.-> textarea
+  layout-panel -.-> panel
+  layout-panel -.-> card
+  layout-panel -.-> section
+  layout -.-> page
+  layout -.-> layout-grid
   list -.-> table
-  list -.-> grid-list
   list -.-> tree
   list -.-> navigation-list
   menu -.-> popover
-  menu -.-> action-sheet
+  message-box -.-> message-strip
+  message-box -.-> message-toast
+  message-page -.-> message-strip
+  message-popover -.-> message-strip
+  message-popover -.-> popover
   message-strip -.-> message-toast
-  message-strip -.-> form-message
+  message-toast -.-> notification
+  micro-process-flow -.-> wizard
+  micro-process-flow -.-> progress-indicator
+  navigation-list -.-> side-nav
+  navigation-list -.-> menu
+  navigation-menu -.-> menu
+  navigation-menu -.-> shellbar
+  navigation -.-> side-nav
+  navigation -.-> vertical-nav
+  navigation -.-> navigation-list
+  notification -.-> message-strip
+  numeric-content -.-> object-number
+  numeric-content -.-> tile
+  numeric-content -.-> counter
+  object-attribute -.-> object-status
+  object-attribute -.-> object-number
+  object-attribute -.-> object-identifier
+  object-identifier -.-> link
+  object-identifier -.-> avatar
+  object-list -.-> list
+  object-list -.-> table
+  object-list -.-> grid-list
+  object-marker -.-> object-status
+  object-marker -.-> badge
+  object-marker -.-> icon
+  object-number -.-> step-input
+  object-status -.-> status-indicator
+  page-footer -.-> bar
+  page-footer -.-> toolbar
+  page -.-> panel
+  page -.-> section
+  pagination -.-> table
+  pagination -.-> list
+  panel -.-> section
+  product-switch -.-> shellbar
+  product-switch -.-> user-menu
+  product-switch -.-> menu
+  progress-indicator -.-> wizard
+  progress-indicator -.-> status-indicator
+  prompt-input -.-> textarea
+  prompt-input -.-> search-field
+  quick-view -.-> popover
+  quick-view -.-> card
+  quick-view -.-> dialog
   radio -.-> select
   radio -.-> form-item
+  rating-indicator -.-> slider
+  rating-indicator -.-> step-input
+  resizable-card-layout -.-> layout-grid
+  resizable-card-layout -.-> card
+  search-field -.-> input
+  segmented-button -.-> tabs
+  segmented-button -.-> radio
   select -.-> input
   select -.-> menu
+  settings -.-> form-group
+  settings -.-> side-nav
   shellbar -.-> side-nav
   shellbar -.-> user-menu
   shellbar -.-> button
-  table -.-> grid-list
+  side-nav -.-> vertical-nav
+  skeleton -.-> progress-indicator
+  slider -.-> step-input
+  step-input -.-> input
+  switch -.-> segmented-button
   table -.-> tree
-  table -.-> pagination
   table -.-> toolbar
+  tabs -.-> side-nav
+  tabs -.-> wizard
+  text -.-> title
+  text -.-> link
   textarea -.-> form-item
+  time -.-> timepicker
+  title-bar -.-> bar
+  title-bar -.-> action-bar
+  title-bar -.-> title
+  token -.-> tokenizer
+  token -.-> badge
+  tokenizer -.-> select
+  tokenizer -.-> input-group
+  tool-header -.-> shellbar
+  tool-header -.-> action-bar
+  tool-header -.-> bar
+  tool-layout -.-> page
+  tool-layout -.-> layout
+  tool-layout -.-> tool-header
+  toolbar -.-> tool-header
+  tree -.-> side-nav
+  upload-collection -.-> list
+  user-menu -.-> menu
+  user-menu -.-> avatar
+  variant-management -.-> select
+  variant-management -.-> popover
+  vertical-nav -.-> navigation-list
+  wizard -.-> dialog
   avatar-group ==> avatar
   badge ==> counter
   bar ==> message-box
@@ -239,37 +407,84 @@ graph TB
   message-box ==> settings
   message-box ==> user-menu
   settings ==> user-menu
+  breadcrumb ==> illustrated-message
   breadcrumb ==> link
+  breadcrumb ==> scrollbar
+  breadcrumb ==> splitter
+  illustrated-message ==> link
+  illustrated-message ==> scrollbar
+  illustrated-message ==> splitter
+  link ==> scrollbar
+  link ==> splitter
+  scrollbar ==> splitter
+  button-split ==> button
+  button-split ==> input-group
+  button-split ==> pagination
+  button-split ==> product-switch
   button-split ==> segmented-button
-  button ==> feed-input
+  button-split ==> shellbar
+  button-split ==> tile
+  button ==> input-group
+  button ==> pagination
+  button ==> product-switch
+  button ==> segmented-button
   button ==> shellbar
+  button ==> tile
+  input-group ==> pagination
+  input-group ==> product-switch
+  input-group ==> segmented-button
+  input-group ==> shellbar
+  input-group ==> tile
+  pagination ==> product-switch
+  pagination ==> segmented-button
+  pagination ==> shellbar
+  pagination ==> tile
+  product-switch ==> segmented-button
+  product-switch ==> shellbar
+  product-switch ==> tile
+  segmented-button ==> shellbar
+  segmented-button ==> tile
+  shellbar ==> tile
+  button-split ==> carousel
+  button ==> carousel
+  carousel ==> input-group
+  carousel ==> pagination
+  carousel ==> product-switch
+  carousel ==> segmented-button
+  carousel ==> shellbar
+  carousel ==> tile
+  button ==> feed-input
   feed-input ==> shellbar
   button ==> message-box
   feed-input ==> message-box
   message-box ==> shellbar
-  button ==> pagination
   button ==> tree
   pagination ==> tree
   button ==> icon-tab-bar
   button ==> search-field
   button ==> navigation
-  card ==> object-status
-  carousel ==> message-page
-  carousel ==> shellbar
-  dynamic-page ==> icon-tab-bar
-  dynamic-page ==> message-popover
-  dynamic-page ==> message-strip
-  dynamic-page ==> shellbar
+  button ==> message-popover
+  button ==> message-strip
   icon-tab-bar ==> message-popover
   icon-tab-bar ==> message-strip
   icon-tab-bar ==> shellbar
   message-popover ==> message-strip
   message-popover ==> shellbar
   message-strip ==> shellbar
+  button ==> dynamic-page
+  dynamic-page ==> icon-tab-bar
+  dynamic-page ==> message-popover
+  dynamic-page ==> message-strip
+  dynamic-page ==> shellbar
+  button ==> object-status
+  card ==> object-status
+  carousel ==> message-page
   grid-list ==> toolbar
   icon-tab-bar ==> tabs
+  icon-tab-bar ==> list
   icon ==> message-box
-  input-group ==> shellbar
+  list ==> object-list
+  list ==> tree
   menu ==> user-menu
   menu ==> panel
   menu ==> popover
@@ -488,11 +703,11 @@ graph TB
 ## Statistics
 
 - **Total Components**: 120
-- **Total Relationships**: 307
+- **Total Relationships**: 522
 - **Relationships by Type**:
   - imports: 5
-  - related: 50
-  - shares-styling: 53
+  - related: 218
+  - shares-styling: 100
   - similar: 199
 
 ## Category Distribution
@@ -521,5 +736,5 @@ graph TB
 - **business-objects**: 2 components
 
 ---
-**Generated**: 2026-02-13
+**Generated**: 2026-02-15
 **Script**: `scripts/generate-relationship-graph.js`
