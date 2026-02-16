@@ -1,6 +1,6 @@
 {
     "name": "@fundamental-styles/common-css",
-    "version": "0.41.0-rc.107",
+    "version": "0.41.0-rc.108",
     "license": "Apache-2.0",
     "homepage": "https://sap.github.io/fundamental-styles/",
     "description": "SAP UI Common CSS - Utility CSS classes and SCSS mixins for rapid UI development",
