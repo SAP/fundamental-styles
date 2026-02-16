@@ -215,6 +215,7 @@
         "timeseries-waterfall-chart",
         "stages-warning",
         "empty-warning",
+        "zoom-to-fit",
         "move-folder",
         "remove-folder",
         "match-case",

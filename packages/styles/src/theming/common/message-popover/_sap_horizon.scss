@@ -1,7 +1,7 @@
 @use "sass:map";
 
 :root {
-  --fdMessagePopover_Trigger_Font_Weight: var(--sapButton_Emphasized_FontWeight);
+  --fdMessagePopover_Trigger_Font_Weight: normal;
   --fdMessagePopover_Trigger_Border_Width: var(--sapButton_BorderWidth);
   --fdMessagePopover_Active_Focus_Outline_Color: var(--sapContent_FocusColor);
 
