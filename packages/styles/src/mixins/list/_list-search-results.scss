@@ -17,8 +17,7 @@
 
       .#{$block}__title {
         font-size: var(--sapFontSize);
-        font-family: var(--sapFontSemiboldDuplexFamily);
-        font-weight: 700;
+        font-weight: normal;
       }
       .#{$block}__subline {
         color: var(--sapContent_LabelColor);
