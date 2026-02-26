@@ -122,6 +122,13 @@ $menu: #{$fd-namespace}-menu;
           border-radius: 0;
       }
     }
+
+    .#{$menu} {
+      &__title:not(.#{$menu}__title--truncate),
+      &__subtitle:not(.#{$menu}__subtitle--truncate) {
+        white-space: normal;
+      }
+    }
   }
 
   .#{$block}__panel {
