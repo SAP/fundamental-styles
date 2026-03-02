@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.41.0-rc.112](https://github.com/SAP/fundamental-styles/compare/v0.41.0-rc.111...v0.41.0-rc.112) (2026-03-02)
+
+### Bug Fixes
+
+- **styles:** add subtitle to Menu, update User Menu [ci visual] ([#6248](https://github.com/SAP/fundamental-styles/issues/6248)) ([6d9c0cf](https://github.com/SAP/fundamental-styles/commit/6d9c0cf3337ee7a3ceed46bb45e10cf231298ce6))
+
 # [0.41.0-rc.111](https://github.com/SAP/fundamental-styles/compare/v0.41.0-rc.110...v0.41.0-rc.111) (2026-03-02)
 
 **Note:** Version bump only for package fundamental-styles
