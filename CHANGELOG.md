@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.41.0-rc.110](https://github.com/SAP/fundamental-styles/compare/v0.41.0-rc.109...v0.41.0-rc.110) (2026-03-02)
+
+### Bug Fixes
+
+- **styles:** search results byline font changes [ci visual] ([#6242](https://github.com/SAP/fundamental-styles/issues/6242)) ([e807872](https://github.com/SAP/fundamental-styles/commit/e8078724bf9f5fc192b6364e8281c49ca16e5226))
+
 # [0.41.0-rc.109](https://github.com/SAP/fundamental-styles/compare/v0.41.0-rc.108...v0.41.0-rc.109) (2026-03-02)
 
 ### Bug Fixes
@@ -6660,9 +6666,9 @@ Co-authored-by: droshev <mladen.droshev@sap.com>
 
 - added a new modifier class to fd-row to achieve even alignment of its elements:fd-row--top in a form.
   Before:
-    <div class="fd-row">
-    After:
-    <div class="fd-row fd-row--top">
+      <div class="fd-row">
+      After:
+      <div class="fd-row fd-row--top">
 
 ### Bug Fixes
 
