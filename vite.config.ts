@@ -1,4 +1,6 @@
-import { defineConfig } from 'vite';
+// @ts-check - Use tsconfig.config.json for this file
+/// <reference types="vitest/config" />
+import { defineConfig } from 'vitest/config';
 import tsconfigPaths from 'vite-tsconfig-paths'
 import react from '@vitejs/plugin-react'
 
@@ -16,6 +18,34 @@ const packagesAliases = [
     {
         find: /^theming-base-content/,
         replacement: resolve(__dirname, 'node_modules/@sap-theming/theming-base-content')
+    },
+    {
+        find: 'fundamental-styles/storybook',
+        replacement: resolve(__dirname, 'packages/storybook/src/index.ts')
+    },
+    {
+        find: 'fundamental-styles/storybook/current-package',
+        replacement: resolve(__dirname, 'packages/storybook/src/lib/addons/current-package')
+    },
+    {
+        find: 'fundamental-styles/configuration',
+        replacement: resolve(__dirname, 'packages/configuration/src/index.ts')
+    },
+    {
+        find: 'fundamental-styles/doc-ui',
+        replacement: resolve(__dirname, 'packages/doc-ui/src/index.ts')
+    },
+    {
+        find: 'fundamental-styles/utils',
+        replacement: resolve(__dirname, 'packages/utils/src/index.ts')
+    },
+    {
+        find: '@fundamental-styles/cx',
+        replacement: resolve(__dirname, 'packages/cx')
+    },
+    {
+        find: 'workspace-plugins',
+        replacement: resolve(__dirname, 'packages/workspace-plugins/src/index.ts')
     }
 ];
 
@@ -30,7 +60,7 @@ export default defineConfig({
     },
     css: {},
     build: {
-        target: 'es2020',
+        target: 'es2022',
         minify: 'terser',
         reportCompressedSize: true,
         sourcemap: false

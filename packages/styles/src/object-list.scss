@@ -10,7 +10,11 @@ $block: #{$fd-namespace}-object-list;
   text-align: $align;
 
   @include fd-rtl() {
-    text-align: if($align == left, right, left);
+    @if $align == left {
+      text-align: right;
+    } @else {
+      text-align: left;
+    }
   }
 }
 

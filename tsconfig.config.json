@@ -1,10 +1,12 @@
 {
-    "extends": "../tsconfig.base.json",
+    "extends": "./tsconfig.base.json",
     "compilerOptions": {
         "module": "ESNext",
         "moduleResolution": "bundler",
         "resolveJsonModule": true,
         "esModuleInterop": true,
+        "skipLibCheck": true,
         "noEmit": true
-    }
+    },
+    "include": ["vite.config.ts", "vitest.setup.ts"]
 }

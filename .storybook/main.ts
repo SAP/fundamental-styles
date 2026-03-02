@@ -1,6 +1,5 @@
 // This file has been automatically migrated to valid ESM format by Storybook.
-import { createRequire } from "node:module";
-import { StorybookConfig } from '@storybook/html-vite';
+import type { StorybookConfig } from '@storybook/html-vite';
 import { readFileSync } from 'fs';
 import { mergeConfig } from 'vite';
 import { loadCsf } from 'storybook/internal/csf-tools';
@@ -10,6 +9,7 @@ import remarkGfm from 'remark-gfm';
 import { storybookPackages } from '../projects.js';
 import { resolve } from 'path';
 import { fileURLToPath } from 'url';
+import { createRequire } from 'node:module';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
@@ -75,7 +75,19 @@ const config: StorybookConfig = {
 
     async viteFinal(config) {
         return mergeConfig(config, {
-            base: process.env.STORYBOOK_BASE_HREF
+            base: process.env.STORYBOOK_BASE_HREF,
+            resolve: {
+                alias: {
+                    'fundamental-styles/storybook': resolve(__dirname, '../packages/storybook/src/index.ts'),
+                    'fundamental-styles/storybook/current-package': resolve(__dirname, '../packages/storybook/src/lib/addons/current-package'),
+                    'fundamental-styles/configuration': resolve(__dirname, '../packages/configuration/src/index.ts'),
+                    'fundamental-styles/doc-ui': resolve(__dirname, '../packages/doc-ui/src/index.ts'),
+                    'fundamental-styles/utils': resolve(__dirname, '../packages/utils/src/index.ts'),
+                    'theming-preview': resolve(__dirname, '../packages/theming-preview/src/index.js'),
+                    '@fundamental-styles/cx': resolve(__dirname, '../packages/cx'),
+                    'workspace-plugins': resolve(__dirname, '../packages/workspace-plugins/src/index.ts')
+                }
+            }
         });
     },
 
