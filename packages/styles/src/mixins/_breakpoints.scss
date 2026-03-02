@@ -4,7 +4,11 @@
 @function fd-breakpoint-min($name, $breakpoints: $fd-breakpoints) {
   $min: map.get($breakpoints, $name);
 
-  @return if($min != 0, $min, null);
+  @if $min != 0 {
+    @return $min;
+  } @else {
+    @return null;
+  }
 }
 
 /*
@@ -12,5 +16,9 @@
  Useful for making responsive utilities.
 */
 @function fd-breakpoint-infix($name, $breakpoints: $fd-breakpoints) {
-  @return if(fd-breakpoint-min($name, $breakpoints) == null, "", "-#{$name}");
+  @if not fd-breakpoint-min($name, $breakpoints) {
+    @return "";
+  } @else {
+    @return "-#{$name}";
+  }
 }

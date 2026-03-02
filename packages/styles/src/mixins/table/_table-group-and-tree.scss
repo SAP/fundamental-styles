@@ -7,7 +7,15 @@
   $second-level-padding: 1.5rem;
   $third-level-padding: 0.75rem;
   $fourth-level-padding: 1.25rem;
-  $expand-padding: if($include-expand, if($content-density-cozy, 2.75rem, 2rem), 0);
+  $expand-padding: 0;
+
+  @if $include-expand {
+    @if $content-density-cozy {
+      $expand-padding: 2.75rem;
+    } @else {
+      $expand-padding: 2rem;
+    }
+  }
 
   @for $i from 1 through $levels {
     &[data-nesting-level='#{$i}'] {
