@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.41.0-rc.109](https://github.com/SAP/fundamental-styles/compare/v0.41.0-rc.108...v0.41.0-rc.109) (2026-03-02)
+
+### Bug Fixes
+
+- **styles:** update oveflow button for Avatar [ci visual] ([#6246](https://github.com/SAP/fundamental-styles/issues/6246)) ([39963a5](https://github.com/SAP/fundamental-styles/commit/39963a55418ab95d6b323e73f7f870066c8452c2))
+
 # [0.41.0-rc.108](https://github.com/SAP/fundamental-styles/compare/v0.41.0-rc.107...v0.41.0-rc.108) (2026-02-16)
 
 **Note:** Version bump only for package fundamental-styles
@@ -6654,9 +6660,9 @@ Co-authored-by: droshev <mladen.droshev@sap.com>
 
 - added a new modifier class to fd-row to achieve even alignment of its elements:fd-row--top in a form.
   Before:
-  <div class="fd-row">
-  After:
-  <div class="fd-row fd-row--top">
+    <div class="fd-row">
+    After:
+    <div class="fd-row fd-row--top">
 
 ### Bug Fixes
 
