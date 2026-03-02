@@ -31,8 +31,7 @@ export const Default = () => defaultExampleHtml;
 Default.parameters = {
   docs: {
     description: {
-      story: `The basic structure of a menu. Place the menu item title in a \`<span>\` tag using class \`fd-menu__title\` and wrap it in the \`fd-menu__link\` and \`fd-menu__item\` classes as shown.
-               <br><b>Note:</b>Use compact menus for the Desktop and use cozy for the Tablet mode.`
+      story: `The basic structure of a menu. Place the menu item title in a \`<span>\` tag using class \`fd-menu__title\` and wrap it in the \`fd-menu__link\` and \`fd-menu__item\` classes as shown.<br><b>Note:</b>Use compact menus for the Desktop and use cozy for the Tablet mode.`
     }
   }
 };
@@ -115,9 +114,7 @@ SegmentedButton.storyName = 'Extended Menu List Items (Segmented Button)';
 SegmentedButton.parameters = {
   docs: {
     description: {
-      story: `Each view of the segmented button gets its own menu item. The selected Button in the Segmented Button gets the Active Dot in front of the Menu List Item and is always separated with a separator.
-      The ‘segmented button menu items’ cannot have an icon in front. Instead, the place is reserved for the Active Dot.
-`
+      story: `Each view of the segmented button gets its own menu item. The selected Button in the Segmented Button gets the Active Dot in front of the Menu List Item and is always separated with a separator. The 'segmented button menu items' cannot have an icon in front. Instead, the place is reserved for the Active Dot.`
     }
   }
 };
@@ -127,10 +124,7 @@ ToggleButton.storyName = 'Extended Menu List Items (Toggle Button)';
 ToggleButton.parameters = {
   docs: {
     description: {
-      story: `The toggle button gets “transformed” into a menu item which can be toggled and untoggled. If the toggle button is toggled, then a checkmark appears in front of the text (on position of an icon).
-      If it’s not toggled, then the space is empty.
-      It is not possible to show an icon for the toggle button in the menu. This spot is reserved for the checkmark.
-`
+      story: `The toggle button gets “transformed” into a menu item which can be toggled and untoggled. If the toggle button is toggled, then a checkmark appears in front of the text (on position of an icon). If It's not toggled, then the space is empty. It is not possible to show an icon for the toggle button in the menu. This spot is reserved for the checkmark.`
     }
   }
 };
@@ -140,11 +134,7 @@ Input.storyName = 'Extended Menu List Items (Input)';
 Input.parameters = {
   docs: {
     description: {
-      story: `An Input field can be placed in a menu item.
-      When an input is placed in a menu item, the text serves as a label. 
-      When there is enough space on desktop-based devices, then the input field is positioned next to the text. If there’s not enough space, it moves to the next line. 
-      The input field is always positioned below the label on mobile devices.
-`
+      story: `An Input field can be placed in a menu item. When an input is placed in a menu item, the text serves as a label. When there is enough space on desktop-based devices, then the input field is positioned next to the text. If there's not enough space, it moves to the next line. The input field is always positioned below the label on mobile devices.`
     }
   }
 };
