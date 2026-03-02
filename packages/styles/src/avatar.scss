@@ -229,6 +229,21 @@ $block: #{$fd-namespace}-avatar;
       --fdAvatarRatio: #{map.get($size-set, "ratio")};
       --fdAvatarFontSize: #{map.get($size-set, "font-size")};
 
+      // Only apply when not inside a vertical avatar group
+      :not(.fd-avatar-group--vertical) > &.#{$block}--overflow {
+        width: fit-content;
+        max-width: fit-content;
+        padding-inline: 0.5rem;
+
+        &.#{$block}--circle {
+          --fdAvatarBorderRadius: calc(0.5 * #{map.get($size-set, "ratio")});
+
+          &:focus::after {
+            border-radius: calc((0.5 * #{map.get($size-set, "ratio")}) + 0.25rem);
+          }
+        }
+      }
+
       .#{$block}__zoom-icon {
         @include fd-icon-selector() {
           --fdAvatarZoomIconDimensions: #{map.get($size-set, "zoomIconDimensions")};
