@@ -18,7 +18,7 @@ jobs:
     runs-on: ubuntu-latest
     name: Lint commit message
     steps:
-      - uses: actions/checkout@v4.2.2
+      - uses: actions/checkout@v6
         with:
           fetch-depth: 0
       - uses: wagoid/commitlint-github-action@v6
@@ -27,7 +27,7 @@ jobs:
     runs-on: ubuntu-latest
     name: Install, Lint, Build
     steps:
-      - uses: actions/checkout@v4.2.2
+      - uses: actions/checkout@v6
       - uses: ./.github/actions/nodejs
         name: Install dependencies
       - run: yarn run lint
