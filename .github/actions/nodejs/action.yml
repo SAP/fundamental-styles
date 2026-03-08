@@ -11,31 +11,26 @@ runs:
   using: composite
   steps:
     - name: Use Node.js ${{ inputs.node-version }}
-      uses: actions/setup-node@v4.3.0
+      uses: actions/setup-node@v6
       with:
         node-version: ${{ inputs.node-version }}
 
-    - name: Install Corepack and Enable Yarn
-      run: |
-          echo "Installing Corepack..."
-          npm install -g corepack || { echo 'Corepack installation failed'; exit 1; }
-          echo "Corepack installed successfully."
-          corepack --version
-          corepack enable yarn
+    - name: Enable Corepack
+      run: corepack enable yarn
       shell: bash
 
     - name: Get yarn cache directory path
-      id: yarn-cache-dir-path
+      id: yarn-cache
       run: echo "dir=$(yarn config get cacheFolder)" >> $GITHUB_OUTPUT
       shell: bash
 
     - name: Use the global Yarn cache if available
       uses: actions/cache@v4.2.3
       with:
-          path: ${{ steps.yarn-cache-dir-path.outputs.dir }}
-          key: ${{ runner.os }}-node-${{ inputs.node_version }}-yarn-${{ hashFiles('**/yarn.lock') }}
-          restore-keys: |
-              ${{ runner.os }}-node-${{ inputs.node_version }}-yarn-
+        path: ${{ steps.yarn-cache.outputs.dir }}
+        key: ${{ runner.os }}-${{ inputs.node-version }}-yarn-${{ hashFiles('**/yarn.lock') }}
+        restore-keys: |
+          ${{ runner.os }}-${{ inputs.node-version }}-yarn-
 
     - uses: actions/cache@v4.2.3
       id: node-modules-cache
@@ -47,6 +42,6 @@ runs:
           ${{ runner.os }}-${{ inputs.node-version }}-node-modules-
 
     - name: Install dependencies
-      if: inputs.frozen-lockfile != 'true' || steps.node_modules.outputs.cache-hit != 'true'
+      if: steps.node-modules-cache.outputs.cache-hit != 'true'
       run: yarn install --immutable
       shell: bash
