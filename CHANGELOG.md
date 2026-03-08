@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.41.0-rc.117](https://github.com/SAP/fundamental-styles/compare/v0.41.0-rc.116...v0.41.0-rc.117) (2026-03-08)
+
+### Bug Fixes
+
+- **ci:** fix ci ([#6255](https://github.com/SAP/fundamental-styles/issues/6255)) ([10ad7df](https://github.com/SAP/fundamental-styles/commit/10ad7df69b6f57af37170a9ab44141a4588a5315))
+- **ci:** npm publish ([#6254](https://github.com/SAP/fundamental-styles/issues/6254)) ([da0bd70](https://github.com/SAP/fundamental-styles/commit/da0bd70ae47e1e17cdd9396afddf2a86428e8f66))
+
 # [0.41.0-rc.116](https://github.com/SAP/fundamental-styles/compare/v0.41.0-rc.115...v0.41.0-rc.116) (2026-03-08)
 
 **Note:** Version bump only for package fundamental-styles
@@ -6692,9 +6699,9 @@ Co-authored-by: droshev <mladen.droshev@sap.com>
 
 - added a new modifier class to fd-row to achieve even alignment of its elements:fd-row--top in a form.
   Before:
-      <div class="fd-row">
-      After:
-      <div class="fd-row fd-row--top">
+  <div class="fd-row">
+  After:
+  <div class="fd-row fd-row--top">
 
 ### Bug Fixes
 
