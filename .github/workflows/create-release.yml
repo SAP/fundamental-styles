@@ -38,19 +38,27 @@ jobs:
                   name: ${{ secrets.GH_NAME }}
                   email: ${{ secrets.GH_EMAIL }}
 
-            - name: Enable Corepack
-              run: corepack enable yarn
-
             - name: Setup Node.js for trusted publishing
               uses: actions/setup-node@v4
               with:
                   node-version: '22.x'
                   # Don't set registry-url to avoid automatic NODE_AUTH_TOKEN setup
 
+            - name: Update npm for trusted publishing
+              run: npm install -g npm@latest
+
             - name: Configure npm for trusted publishing
               run: |
                   npm config set registry https://registry.npmjs.org/
                   npm config delete //registry.npmjs.org/:_authToken || true
+
+            - name: Install Corepack and Enable Yarn
+              run: |
+                  echo "Installing Corepack..."
+                  npm install -g corepack || { echo 'Corepack installation failed'; exit 1; }
+                  echo "Corepack installed successfully."
+                  corepack --version
+                  corepack enable yarn
 
             - name: Get yarn cache directory path
               id: yarn-cache
