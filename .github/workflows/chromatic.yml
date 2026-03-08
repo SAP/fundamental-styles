@@ -1,6 +1,10 @@
 name: "Chromatic"
 on: push
 
+permissions:
+  contents: read
+  statuses: write
+
 env:
   NX_CLOUD_ACCESS_TOKEN: ${{ secrets.NX_CLOUD_AUTH_TOKEN }}
 
