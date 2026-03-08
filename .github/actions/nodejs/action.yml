@@ -10,15 +10,27 @@ inputs:
 runs:
   using: composite
   steps:
-    - name: Enable Corepack
-      run: corepack enable yarn
-      shell: bash
-
     - name: Use Node.js ${{ inputs.node-version }}
       uses: actions/setup-node@v6
       with:
         node-version: ${{ inputs.node-version }}
-        cache: 'yarn'
+
+    - name: Enable Corepack
+      run: corepack enable yarn
+      shell: bash
+
+    - name: Get yarn cache directory path
+      id: yarn-cache
+      run: echo "dir=$(yarn config get cacheFolder)" >> $GITHUB_OUTPUT
+      shell: bash
+
+    - name: Use the global Yarn cache if available
+      uses: actions/cache@v4.2.3
+      with:
+        path: ${{ steps.yarn-cache.outputs.dir }}
+        key: ${{ runner.os }}-${{ inputs.node-version }}-yarn-${{ hashFiles('**/yarn.lock') }}
+        restore-keys: |
+          ${{ runner.os }}-${{ inputs.node-version }}-yarn-
 
     - uses: actions/cache@v4.2.3
       id: node-modules-cache
