@@ -141,12 +141,15 @@ jobs:
               uses: ./.github/actions/generate-conventional-release-notes
 
             - name: Create Release
-              uses: ncipollo/release-action@v1.16.0
-              with:
-                  prerelease: ${{ steps.bumpVersion.outputs.isPrerelease }}
-                  tag: v${{ steps.bumpVersion.outputs.newVersion }}
-                  body: ${{ steps.generate_body.outputs.generatedReleaseNotes }}
-                  token: ${{ secrets.GHACTIONS }}
+              env:
+                  GH_TOKEN: ${{ secrets.GHACTIONS }}
+                  RELEASE_NOTES: ${{ steps.generate_body.outputs.generatedReleaseNotes }}
+              run: |
+                  printf '%s' "$RELEASE_NOTES" > release-notes.md
+                  gh release create "v${{ steps.bumpVersion.outputs.newVersion }}" \
+                    --title "v${{ steps.bumpVersion.outputs.newVersion }}" \
+                    --notes-file release-notes.md \
+                    ${{ steps.bumpVersion.outputs.isPrerelease == 'true' && '--prerelease' || '' }}
             # This step is for pushing into the main only the version change, without anything else.
             # This is useful when user created a Hotfix, and we need to sync the version on main
             # if hotfix version is higher than latest stable and RC versions.
