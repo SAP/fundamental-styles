@@ -3,7 +3,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50">
 	<rect x="0" y="0" width="50" height="50" fill="#fff"/>
 	<rect x="0" y="0" width="50" height="10" fill="#fff"/>
-	<circle cx="7.5" cy="5" r="3" stroke="#ec8b46" fill="transparent"/>
+	<circle cx="7.5" cy="5" r="3" stroke="#e97624" fill="transparent"/>
 	<line x1="17" y1="5" x2="27" y2="5" stroke-width="3" stroke-linecap="round" stroke="#000"/>
 	<rect x="40" y="2" width="99999" height="6" rx="3" stroke="#000" fill="#fff"/>
 	<rect x="0" y="10" width="50" height="10" fill="#fff"/>

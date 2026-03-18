@@ -1,11 +1,11 @@
 /**
 * Copyright (c) 2012-2025 SAP SE or an SAP affiliate company and Theming Base Content contributors. Licensed under the Apache License, Version 2.0 - see LICENSE.txt.
-* Theming Engine 15.0.8
-* data:{"sModified":"2025-04-17T07:08:28Z"}
+* Theming Engine 16.1.14
+* data:{"sModified":"2025-12-12T06:08:32Z"}
 */
 
 
-/******************* FILE /Base/baseLib/baseTheme/base.less (Version 11.29.3) *******************/
+/******************* FILE /Base/baseLib/baseTheme/base.less (Version 11.32.3) *******************/
 
 
 // [Label "Brand Color"]
@@ -34,7 +34,7 @@
 
 // [Label "Shell Header Color"]
 // [Description "The background color of the shell header bar."]
-// [Tags "Quick", "Base", "Shell", "Color", "Mobile", "Protected"]
+// [Tags "Quick", "Base", "Shell", "Color", "Protected"]
 // [Protected "true"]
 // [Category "Shell"]
 // [Type "color"]
@@ -49,7 +49,7 @@
 @sapBackgroundColor: @sapDefault_Color;
 
 // [Label "Font Family"]
-// [Description "The preferred font family."]
+// [Description "A prioritized list of preferred font family names."]
 // [Tags "Quick", "Base", "Content", "Font", "Protected"]
 // [Protected "true"]
 // [Category "Text"]
@@ -474,7 +474,7 @@
 
 // [Label "Icon Color"]
 // [Description "The color of icons."]
-// [Tags "Base", "Content", "Color", "Protected"]
+// [Tags "Base", "Content", "Color", "Protected", "Icon"]
 // [Protected "true"]
 // [Category "Icon"]
 // [Type "color"]
@@ -482,7 +482,7 @@
 
 // [Label "Icon Contrast Color"]
 // [Description "The alternative icon color switched to by a threshold to keep contrast for icons."]
-// [Tags "Base", "Content", "Color", "Protected"]
+// [Tags "Base", "Content", "Color", "Protected", "Icon"]
 // [Protected "true"]
 // [Category "Icon"]
 // [Type "color"]
@@ -491,7 +491,7 @@
 // [Label "Icon Non-interactive Color"]
 // [Description "The color of non-interactive icons."]
 // [TranslationKey "sapContent_NoIntactvIcoClr"]
-// [Tags "Base", "Content", "Color", "Protected"]
+// [Tags "Base", "Content", "Color", "Protected", "Icon"]
 // [Protected "true"]
 // [Category "Icon"]
 // [Type "color"]
@@ -499,7 +499,7 @@
 
 // [Label "Marker Icon Color"]
 // [Description "The color of marker icons."]
-// [Tags "Base", "Content", "Color", "Protected"]
+// [Tags "Base", "Content", "Color", "Protected", "Icon"]
 // [Protected "true"]
 // [Category "Icon"]
 // [Type "color"]
@@ -569,7 +569,7 @@
 
 // [Label "Rated Color"]
 // [Description "Color for rated content items."]
-// [Tags "Base", "Content", "Color", "Protected"]
+// [Tags "Base", "Content", "Color", "Protected", "Icon"]
 // [Protected "true"]
 // [Category "Icon"]
 // [Type "color"]
@@ -577,7 +577,7 @@
 
 // [Label "Unrated Color"]
 // [Description "Color for unrated content items."]
-// [Tags "Base", "Content", "Color", "Protected"]
+// [Tags "Base", "Content", "Color", "Protected", "Icon"]
 // [Protected "true"]
 // [Category "Icon"]
 // [Type "color"]
@@ -776,7 +776,7 @@
 @sapContent_LabelColor: @sapDefault_Color;
 
 // [Label "Monospace Font Family"]
-// [Description "Defines which monospaced font is used for specific texts in the content area."]
+// [Description "A prioritized list of preferred monospace font family names."]
 // [Tags "Base", "Content", "Font", "Protected"]
 // [Protected "true"]
 // [Category "Text"]
@@ -784,7 +784,7 @@
 @sapContent_MonospaceFontFamily: @sapDefault_Font;
 
 // [Label "Monospace Bold Font Family"]
-// [Description "Defines which monospaced bold font is used for specific texts in the content area."]
+// [Description "A prioritized list of preferred monospace bold font family names."]
 // [TranslationKey "sapContent_MonoBoldFontFamily"]
 // [Tags "Base", "Content", "Font", "Protected"]
 // [Protected "true"]
@@ -793,8 +793,8 @@
 @sapContent_MonospaceBoldFontFamily: @sapDefault_Font;
 
 // [Label "Icon Font Family"]
-// [Description "Defines which font is used to display the font icons."]
-// [Tags "Base", "Content", "Font", "Protected"]
+// [Description "A prioritized list of preferred font family names for SAP-icons."]
+// [Tags "Base", "Content", "Font", "Protected", "Icon"]
 // [Protected "true"]
 // [Category "Icon"]
 // [Type "fontFamilies"]
@@ -1254,7 +1254,7 @@
 @sapContent_Space_Large: @sapDefault_Dimension;
 
 // [Label "Content Margin Tiny"]
-// [Description "The tiny value of the four-sided margin used for content."]
+// [Description "Will be deprecated. Use instead: sapContent_Space_Tiny for a constant margin, sapContent_Margin_S for a responsive margin."]
 // [Tags "Base", "Content", "Dimension", "Protected"]
 // [Protected "true"]
 // [Category "Internal"]
@@ -1262,7 +1262,7 @@
 @sapContent_Margin_Tiny: @sapDefault_Dimension;
 
 // [Label "Content Margin Small"]
-// [Description "The small value of the four-sided margin used for content."]
+// [Description "Will be deprecated. Use instead: sapContent_Space_Small for a constant margin, sapContent_Margin_M for a responsive margin."]
 // [Tags "Base", "Content", "Dimension", "Protected"]
 // [Protected "true"]
 // [Category "Internal"]
@@ -1270,7 +1270,7 @@
 @sapContent_Margin_Small: @sapDefault_Dimension;
 
 // [Label "Content Margin Medium"]
-// [Description "The medium value of the four-sided margin used for content."]
+// [Description "Will be deprecated. Use instead: sapContent_Space_Medium for a constant margin, sapContent_Margin_L for a responsive margin."]
 // [Tags "Base", "Content", "Dimension", "Protected"]
 // [Protected "true"]
 // [Category "Internal"]
@@ -1278,12 +1278,44 @@
 @sapContent_Margin_Medium: @sapDefault_Dimension;
 
 // [Label "Content Margin Large"]
-// [Description "The large value of the four-sided margin used for content."]
+// [Description "Will be deprecated. Use instead: sapContent_Space_Large for a constant margin, sapContent_Margin_XL for a responsive margin."]
 // [Tags "Base", "Content", "Dimension", "Protected"]
 // [Protected "true"]
 // [Category "Internal"]
 // [Type "sizing"]
 @sapContent_Margin_Large: @sapDefault_Dimension;
+
+// [Label "Content Margin S"]
+// [Description "The responsive container margin on small devices."]
+// [Tags "Base", "Content", "Dimension", "Protected"]
+// [Protected "true"]
+// [Category "Internal"]
+// [Type "sizing"]
+@sapContent_Margin_S: @sapDefault_Dimension;
+
+// [Label "Content Margin M"]
+// [Description "The responsive container margin on medium devices."]
+// [Tags "Base", "Content", "Dimension", "Protected"]
+// [Protected "true"]
+// [Category "Internal"]
+// [Type "sizing"]
+@sapContent_Margin_M: @sapDefault_Dimension;
+
+// [Label "Content Margin L"]
+// [Description "The responsive container margin on large devices."]
+// [Tags "Base", "Content", "Dimension", "Protected"]
+// [Protected "true"]
+// [Category "Internal"]
+// [Type "sizing"]
+@sapContent_Margin_L: @sapDefault_Dimension;
+
+// [Label "Content Margin XL"]
+// [Description "The responsive container margin on extra large devices."]
+// [Tags "Base", "Content", "Dimension", "Protected"]
+// [Protected "true"]
+// [Category "Internal"]
+// [Type "sizing"]
+@sapContent_Margin_XL: @sapDefault_Dimension;
 
 // [Label "Content Padding S"]
 // [Description "The value of padding used on small devices."]
@@ -1359,7 +1391,7 @@
 @sapContent_Information_HeaderShadow: @sapDefault_Shadow;
 
 // [Label "Light Font Family"]
-// [Description "The preferred light font family."]
+// [Description "A prioritized list of preferred light font family names."]
 // [Tags "Base", "Content", "Font", "Protected"]
 // [Protected "true"]
 // [Category "Text"]
@@ -1367,7 +1399,7 @@
 @sapFontLightFamily: @sapDefault_Font;
 
 // [Label "Bold Font Family"]
-// [Description "The preferred bold font family of headers."]
+// [Description "A prioritized list of preferred bold font family names."]
 // [Tags "Base", "Content", "Font", "Protected"]
 // [Protected "true"]
 // [Category "Text"]
@@ -1375,7 +1407,7 @@
 @sapFontBoldFamily: @sapDefault_Font;
 
 // [Label "Semi Bold Font Family"]
-// [Description "The preferred semi bold font family."]
+// [Description "A prioritized list of preferred semi bold font family names."]
 // [Tags "Base", "Content", "Font", "Protected"]
 // [Protected "true"]
 // [Category "Text"]
@@ -1383,7 +1415,7 @@
 @sapFontSemiboldFamily: @sapDefault_Font;
 
 // [Label "Semi Bold Duplex Font Family"]
-// [Description "The preferred semi bold duplex font family (with the same widths as @sapFontFamily)."]
+// [Description "A prioritized list of preferred semi bold duplex font family names."]
 // [Tags "Base", "Content", "Font", "Protected"]
 // [Protected "true"]
 // [Category "Text"]
@@ -1391,7 +1423,7 @@
 @sapFontSemiboldDuplexFamily: @sapDefault_Font;
 
 // [Label "Black Font Family"]
-// [Description "The preferred black font family of headers."]
+// [Description "A prioritized list of preferred black font family names."]
 // [Tags "Base", "Content", "Font", "Protected"]
 // [Protected "true"]
 // [Category "Text"]
@@ -1399,7 +1431,7 @@
 @sapFontBlackFamily: @sapDefault_Font;
 
 // [Label "Header Font Family"]
-// [Description "The preferred font family of headers."]
+// [Description "A prioritized list of preferred font family names for headers."]
 // [Tags "Base", "Content", "Font", "Protected"]
 // [Protected "true"]
 // [Category "Text"]
@@ -2982,7 +3014,7 @@
 @sapButton_TextColor: @sapDefault_Color;
 
 // [Label "Button Font Family"]
-// [Description "The font family of buttons."]
+// [Description "A prioritized list of preferred font family names for buttons."]
 // [Tags "Base", "Button", "Font", "Protected"]
 // [Protected "true"]
 // [Category "Button", "Standard"]
@@ -3080,7 +3112,7 @@
 @sapButton_Emphasized_TextColor: @sapDefault_Color;
 
 // [Label "Emphasized Button Font Family"]
-// [Description "The font family of emphasized buttons."]
+// [Description "A prioritized list of preferred font family names for emphasized buttons."]
 // [Tags "Base", "Button", "Font", "Protected"]
 // [Protected "true"]
 // [Category "Button", "Emphasized"]
@@ -5934,7 +5966,7 @@
 @sapObjectHeader_Title_SnappedFontSize: @sapDefault_Dimension;
 
 // [Label "Object Header Title Font Family"]
-// [Description "The font family of object header titles."]
+// [Description "A prioritized list of preferred font family names for object header titles."]
 // [TranslationKey "sapObjectHeader_TtlFntFmly"]
 // [Tags "Base", "Page", "Font", "Protected", "ObjectHeader"]
 // [Protected "true"]
@@ -8386,6 +8418,38 @@
 // [Category "Chart", "Data"]
 // [Type "color"]
 @sapChart_Data_Active_Background: @sapDefault_Color;
+
+// [Label "IBCS Chart Actual Color"]
+// [Description "Color of values of the actual period in International Business Communication Standards (IBCS) charts."]
+// [Tags "Base", "Chart", "Color", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "IBCS"]
+// [Type "color"]
+@sapChart_IBCS_Actual: @sapDefault_Color;
+
+// [Label "IBCS Chart Previous Color"]
+// [Description "Color of values of the previous period in International Business Communication Standards (IBCS) charts."]
+// [Tags "Base", "Chart", "Color", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "IBCS"]
+// [Type "color"]
+@sapChart_IBCS_Previous: @sapDefault_Color;
+
+// [Label "IBCS Chart Good Color"]
+// [Description "Color of good values in International Business Communication Standards (IBCS) charts."]
+// [Tags "Base", "Chart", "Color", "Semantic", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "IBCS"]
+// [Type "color"]
+@sapChart_IBCS_Good: @sapDefault_Color;
+
+// [Label "IBCS Chart Bad Color"]
+// [Description "Color of bad values in International Business Communication Standards (IBCS) charts."]
+// [Tags "Base", "Chart", "Color", "Semantic", "Protected"]
+// [Protected "true"]
+// [Category "Chart", "IBCS"]
+// [Type "color"]
+@sapChart_IBCS_Bad: @sapDefault_Color;
 
 // [Label "Chart Ordered Color 1"]
 // [Description "This color is used as an ordered color of a sequence of 12 chart colors. It has a defined contrast to its predecessor and successor."]

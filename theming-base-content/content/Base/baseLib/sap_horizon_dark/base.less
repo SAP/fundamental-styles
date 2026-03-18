@@ -1,11 +1,11 @@
 /**
 * Copyright (c) 2012-2025 SAP SE or an SAP affiliate company and Theming Base Content contributors. Licensed under the Apache License, Version 2.0 - see LICENSE.txt.
-* Theming Engine 15.0.8
-* data:{"sModified":"2025-04-17T07:08:28Z"}
+* Theming Engine 16.1.14
+* data:{"sModified":"2025-12-12T06:08:33Z"}
 */
 
 
-/******************* FILE /Base/baseLib/sap_horizon_dark/base.less (Version 11.29.3) *******************/
+/******************* FILE /Base/baseLib/sap_horizon_dark/base.less (Version 11.32.3) *******************/
 
 
 // [Tags "SapInternal", "Base", "Dimension", "Protected"]
@@ -55,14 +55,6 @@
 // [Category "Internal"]
 // [Type "color"]
 @sapPrimary7: #8396A8;
-
-// [Label "Shell Background Pattern Color"]
-// [Description "The background pattern color of the shell. To turn off the pattern set the value to 'transparent'."]
-// [Tags "ThemeSpecific", "Base", "Shell", "Color", "!Protected"]
-// [Protected "!true"]
-// [Category "Resource"]
-// [Type "color"]
-@sapShell_BackgroundPatternColor: transparent;
 @sapField_HorizonNGEnabled: 0;
 
 // [Tags "!Protected"]
@@ -124,6 +116,9 @@
 // [Tags "!Protected"]
 // [Protected "!true"]
 @sapSelectedColor: @sapHighlightColor;
+
+// [Tags "!Protected"]
+// [Protected "!true"]
 @sapHoverColor: lighten(@sapBackgroundColor, 8);
 
 // [Tags "!Protected"]
@@ -289,9 +284,6 @@
 // [Tags "!Protected"]
 // [Protected "!true"]
 @sapContent_LineHeight: 1.5;
-
-// [Tags "!Protected"]
-// [Protected "!true"]
 @sapContent_IconHeight: @sapContent_GridSize;
 
 // [Tags "!Protected"]
@@ -653,10 +645,14 @@
 @sapContent_Space_Small: 1rem;
 @sapContent_Space_Medium: 2rem;
 @sapContent_Space_Large: 3rem;
-@sapContent_Margin_Tiny: 0 0 1rem;
-@sapContent_Margin_Small: 1rem;
-@sapContent_Margin_Medium: 1rem 2rem;
-@sapContent_Margin_Large: 1rem 3rem;
+@sapContent_Margin_Tiny: @sapContent_Margin_S;
+@sapContent_Margin_Small: @sapContent_Margin_M;
+@sapContent_Margin_Medium: @sapContent_Margin_L;
+@sapContent_Margin_Large: @sapContent_Margin_XL;
+@sapContent_Margin_S: 0 0 1rem;
+@sapContent_Margin_M: 1rem;
+@sapContent_Margin_L: 1rem 2rem;
+@sapContent_Margin_XL: 1rem 3rem;
 @sapContent_Padding_S: 0rem;
 @sapContent_Padding_M: 2rem;
 @sapContent_Padding_L: 2rem;
@@ -776,7 +772,7 @@
 
 // [Tags "!Protected"]
 // [Protected "!true"]
-@sapShell_BorderColor: @sapShellColor;
+@sapShell_BorderColor: lighten(@sapShellColor, 8);
 
 // [Tags "!Protected"]
 // [Protected "!true"]
@@ -2526,6 +2522,10 @@
 
 // [Tags "!Protected"]
 // [Protected "!true"]
+@sapSlider_Selected_Dimension: 0.125 * @sapContent_GridSize;
+
+// [Tags "!Protected"]
+// [Protected "!true"]
 @sapSlider_HandleBackground: @sapPrimary3;
 
 // [Tags "!Protected"]
@@ -2806,7 +2806,7 @@
 
 // [Tags "!Protected"]
 // [Protected "!true"]
-@sapTile_SeparatorColor: lighten(@sapTile_Background, 20);
+@sapTile_SeparatorColor: transparent;
 
 // [Tags "!Protected"]
 // [Protected "!true"]
@@ -3508,6 +3508,22 @@
 
 // [Tags "!Protected"]
 // [Protected "!true"]
+@sapChart_IBCS_Actual: @sapChart_Sequence_Neutral_Plus3;
+
+// [Tags "!Protected"]
+// [Protected "!true"]
+@sapChart_IBCS_Previous: @sapChart_Sequence_Neutral_Minus1;
+
+// [Tags "!Protected"]
+// [Protected "!true"]
+@sapChart_IBCS_Good: @sapChart_Sequence_Good;
+
+// [Tags "!Protected"]
+// [Protected "!true"]
+@sapChart_IBCS_Bad: @sapChart_Sequence_Bad;
+
+// [Tags "!Protected"]
+// [Protected "!true"]
 @sapChart_OrderedColor_1: #3278be;
 
 // [Tags "!Protected"]
@@ -4034,6 +4050,9 @@
 @sapChart_Sequence_Good_Minus5: darken(@sapChart_Sequence_Good, 25);
 @sapChart_Sequence_Good_Minus5_TextColor: contrast(@sapChart_Sequence_Good_Minus5, @sapChart_Data_TextColor, @sapChart_Data_ContrastTextColor, .5);
 @sapChart_Sequence_Good_Minus5_TextShadow: 0 0 .125rem contrast(@sapChart_Sequence_Good_Minus5_TextColor, @sapContent_ShadowColor, @sapChart_ContrastShadowColor, @sapContent_ContrastTextThreshold);
+
+// [Tags "!Protected"]
+// [Protected "!true"]
 @sapChart_Sequence_Neutral_Plus3: lighten(@sapChart_Sequence_Neutral, 40);
 @sapChart_Sequence_Neutral_Plus3_TextColor: contrast(@sapChart_Sequence_Neutral_Plus3, @sapChart_Data_TextColor, @sapChart_Data_ContrastTextColor, .5);
 @sapChart_Sequence_Neutral_Plus3_TextShadow: 0 0 .125rem contrast(@sapChart_Sequence_Neutral_Plus3_TextColor, @sapContent_ShadowColor, @sapChart_ContrastShadowColor, @sapContent_ContrastTextThreshold);
@@ -4050,6 +4069,9 @@
 @sapChart_Sequence_Neutral_TextColor: contrast(@sapChart_Sequence_Neutral, @sapChart_Data_TextColor, @sapChart_Data_ContrastTextColor, .5);
 @sapChart_Sequence_Neutral_TextShadow: 0 0 .125rem contrast(@sapChart_Sequence_Neutral_TextColor, @sapContent_ShadowColor, @sapChart_ContrastShadowColor, @sapContent_ContrastTextThreshold);
 @sapChart_Sequence_Neutral_BorderColor: @sapChart_Sequence_Neutral;
+
+// [Tags "!Protected"]
+// [Protected "!true"]
 @sapChart_Sequence_Neutral_Minus1: darken(@sapChart_Sequence_Neutral, 10);
 @sapChart_Sequence_Neutral_Minus1_TextColor: contrast(@sapChart_Sequence_Neutral_Minus1, @sapChart_Data_TextColor, @sapChart_Data_ContrastTextColor, .5);
 @sapChart_Sequence_Neutral_Minus1_TextShadow: 0 0 .125rem contrast(@sapChart_Sequence_Neutral_Minus1_TextColor, @sapContent_ShadowColor, @sapChart_ContrastShadowColor, @sapContent_ContrastTextThreshold);
@@ -4062,6 +4084,9 @@
 @sapChart_Sequence_Neutral_Minus4: darken(saturate(@sapChart_Sequence_Neutral, 7), 30);
 @sapChart_Sequence_Neutral_Minus4_TextColor: contrast(@sapChart_Sequence_Neutral_Minus4, @sapChart_Data_TextColor, @sapChart_Data_ContrastTextColor, .5);
 @sapChart_Sequence_Neutral_Minus4_TextShadow: 0 0 .125rem contrast(@sapChart_Sequence_Neutral_Minus4_TextColor, @sapContent_ShadowColor, @sapChart_ContrastShadowColor, @sapContent_ContrastTextThreshold);
+
+// [Tags "!Protected"]
+// [Protected "!true"]
 @sapChart_Sequence_Neutral_Minus5: darken(saturate(@sapChart_Sequence_Neutral, 7), 35);
 @sapChart_Sequence_Neutral_Minus5_TextColor: contrast(@sapChart_Sequence_Neutral_Minus5, @sapChart_Data_TextColor, @sapChart_Data_ContrastTextColor, .5);
 @sapChart_Sequence_Neutral_Minus5_TextShadow: 0 0 .125rem contrast(@sapChart_Sequence_Neutral_Minus5_TextColor, @sapContent_ShadowColor, @sapChart_ContrastShadowColor, @sapContent_ContrastTextThreshold);
@@ -4133,3 +4158,12 @@
 @sapBreakpoint_M_Min: 600px;
 @sapBreakpoint_L_Min: 1024px;
 @sapBreakpoint_XL_Min: 1440px;
+
+// [Label "Shell Background Pattern Color"]
+// [Description "This parameter is deprecated and has no effect. There is no background pattern."]
+// [Tags "ThemeSpecific", "Base", "Shell", "Color", "Protected", "Deprecated"]
+// [Protected "true"]
+// [Deprecated "true"]
+// [Category "Resource"]
+// [Type "color"]
+@sapShell_BackgroundPatternColor: transparent;

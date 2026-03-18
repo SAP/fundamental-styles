@@ -1,4 +1,100 @@
 {
+  "Resource": {
+    "_sapShell_BackgroundPatternColorH": {
+      "value": "0",
+      "type": "internal"
+    },
+    "_sapShell_BackgroundPatternColorS": {
+      "value": "0%",
+      "type": "internal"
+    },
+    "_sapShell_BackgroundPatternColorL": {
+      "value": "0%",
+      "type": "internal"
+    },
+    "_sapShell_BackgroundPatternColorA": {
+      "value": "0",
+      "type": "internal"
+    },
+    "sapShell_BackgroundPatternColor": {
+      "value": "hsla({Resource._sapShell_BackgroundPatternColorH}, {Resource._sapShell_BackgroundPatternColorS}, {Resource._sapShell_BackgroundPatternColorL}, {Resource._sapShell_BackgroundPatternColorA})",
+      "type": "color",
+      "description": "This parameter is deprecated and has no effect. There is no background pattern."
+    },
+    "_sapBackgroundColorDefaultH": {
+      "value": "{Internal._sapPrimary3H}",
+      "type": "internal"
+    },
+    "_sapBackgroundColorDefaultS": {
+      "value": "{Internal._sapPrimary3S}",
+      "type": "internal"
+    },
+    "_sapBackgroundColorDefaultL": {
+      "value": "{Internal._sapPrimary3L} - 3%",
+      "type": "internal"
+    },
+    "_sapBackgroundColorDefaultA": {
+      "value": "{Internal._sapPrimary3A}",
+      "type": "internal"
+    },
+    "sapBackgroundColorDefault": {
+      "value": "hsla({Resource._sapBackgroundColorDefaultH}, {Resource._sapBackgroundColorDefaultS}, {Resource._sapBackgroundColorDefaultL}, {Resource._sapBackgroundColorDefaultA})",
+      "type": "color",
+      "description": "The default background color of this theme."
+    },
+    "_sapGroup_FooterBackgroundH": {
+      "value": "0",
+      "type": "internal"
+    },
+    "_sapGroup_FooterBackgroundS": {
+      "value": "0%",
+      "type": "internal"
+    },
+    "_sapGroup_FooterBackgroundL": {
+      "value": "0%",
+      "type": "internal"
+    },
+    "_sapGroup_FooterBackgroundA": {
+      "value": "0",
+      "type": "internal"
+    },
+    "sapGroup_FooterBackground": {
+      "value": "hsla({Resource._sapGroup_FooterBackgroundH}, {Resource._sapGroup_FooterBackgroundS}, {Resource._sapGroup_FooterBackgroundL}, {Resource._sapGroup_FooterBackgroundA})",
+      "type": "color",
+      "description": "The background color of the footer area of a group."
+    },
+    "sapContent_ForcedColorAdjust": {
+      "value": "none",
+      "type": "string",
+      "description": "Decides wether OS high contrast settings should be respected (auto) or ignored (none)."
+    },
+    "sapContent_ContrastTextThreshold": {
+      "value": "0.386",
+      "type": "number",
+      "description": "The threshold to switch to alternative text color to keep contrast for texts."
+    },
+    "_sapHighlightTextColorH": {
+      "value": "{Text._sapContent_ContrastTextColorH}",
+      "type": "internal"
+    },
+    "_sapHighlightTextColorS": {
+      "value": "{Text._sapContent_ContrastTextColorS}",
+      "type": "internal"
+    },
+    "_sapHighlightTextColorL": {
+      "value": "{Text._sapContent_ContrastTextColorL}",
+      "type": "internal"
+    },
+    "_sapHighlightTextColorA": {
+      "value": "{Text._sapContent_ContrastTextColorA}",
+      "type": "internal"
+    },
+    "sapHighlightTextColor": {
+      "value": "hsla({Resource._sapHighlightTextColorH}, {Resource._sapHighlightTextColorS}, {Resource._sapHighlightTextColorL}, {Resource._sapHighlightTextColorA})",
+      "type": "color",
+      "description": "The text color of highlighted screen elements."
+    }
+  },
   "Internal": {
     "sapBreakpoint_XL_Min": {
       "value": "1440px",
@@ -275,25 +371,30 @@
       "type": "sizing",
       "description": "The value of padding used on medium devices."
     },
-    "sapContent_Margin_Large": {
-      "value": "1rem 3rem",
-      "type": "sizing",
-      "description": "The large value of the four-sided margin used for content."
-    },
-    "sapContent_Margin_Medium": {
-      "value": "1rem 2rem",
-      "type": "sizing",
-      "description": "The medium value of the four-sided margin used for content."
-    },
-    "sapContent_Margin_Small": {
+    "sapContent_Margin_M": {
       "value": "1rem",
       "type": "sizing",
-      "description": "The small value of the four-sided margin used for content."
+      "description": "The responsive container margin on medium devices."
+    },
+    "sapContent_Margin_Large": {
+      "value": "{sapContent_Margin_XL}",
+      "type": "sizing",
+      "description": "Will be deprecated. Use instead: sapContent_Space_Large for a constant margin, sapContent_Margin_XL for a responsive margin."
+    },
+    "sapContent_Margin_Medium": {
+      "value": "{sapContent_Margin_L}",
+      "type": "sizing",
+      "description": "Will be deprecated. Use instead: sapContent_Space_Medium for a constant margin, sapContent_Margin_L for a responsive margin."
+    },
+    "sapContent_Margin_Small": {
+      "value": "{Internal.sapContent_Margin_M}",
+      "type": "sizing",
+      "description": "Will be deprecated. Use instead: sapContent_Space_Small for a constant margin, sapContent_Margin_M for a responsive margin."
     },
     "sapContent_Margin_Tiny": {
-      "value": "0 0 1rem",
+      "value": "{sapContent_Margin_S}",
       "type": "sizing",
-      "description": "The tiny value of the four-sided margin used for content."
+      "description": "Will be deprecated. Use instead: sapContent_Space_Tiny for a constant margin, sapContent_Margin_S for a responsive margin."
     },
     "sapContent_Space_Large": {
       "value": "3rem",
@@ -1997,6 +2098,22 @@
       "type": "color",
       "description": "The color of texts in the shell."
     },
+    "_sapShell_BorderColorH": {
+      "value": "{Shell._sapShellColorH}",
+      "type": "internal"
+    },
+    "_sapShell_BorderColorS": {
+      "value": "{Shell._sapShellColorS}",
+      "type": "internal"
+    },
+    "_sapShell_BorderColorL": {
+      "value": "{Shell._sapShellColorL} + 8%",
+      "type": "internal"
+    },
+    "_sapShell_BorderColorA": {
+      "value": "{Shell._sapShellColorA}",
+      "type": "internal"
+    },
     "sapShell_BorderColor": {
       "value": "hsla({Shell._sapShell_BorderColorH}, {Shell._sapShell_BorderColorS}, {Shell._sapShell_BorderColorL}, {Shell._sapShell_BorderColorA})",
       "type": "color",
@@ -2207,22 +2324,6 @@
     },
     "_sapShell_InteractiveBackgroundA": {
       "value": "{Shell._sapShell_BackgroundA}",
-      "type": "internal"
-    },
-    "_sapShell_BorderColorH": {
-      "value": "{Shell._sapShellColorH}",
-      "type": "internal"
-    },
-    "_sapShell_BorderColorS": {
-      "value": "{Shell._sapShellColorS}",
-      "type": "internal"
-    },
-    "_sapShell_BorderColorL": {
-      "value": "{Shell._sapShellColorL}",
-      "type": "internal"
-    },
-    "_sapShell_BorderColorA": {
-      "value": "{Shell._sapShellColorA}",
       "type": "internal"
     },
     "_sapShell_BackgroundH": {
@@ -2777,102 +2878,6 @@
     "_sapList_HeaderBorderColorA": {
       "value": "{Container._sapGroup_TitleBorderColorA}",
       "type": "internal"
-    }
-  },
-  "Resource": {
-    "_sapBackgroundColorDefaultH": {
-      "value": "{Internal._sapPrimary3H}",
-      "type": "internal"
-    },
-    "_sapBackgroundColorDefaultS": {
-      "value": "{Internal._sapPrimary3S}",
-      "type": "internal"
-    },
-    "_sapBackgroundColorDefaultL": {
-      "value": "{Internal._sapPrimary3L} - 3%",
-      "type": "internal"
-    },
-    "_sapBackgroundColorDefaultA": {
-      "value": "{Internal._sapPrimary3A}",
-      "type": "internal"
-    },
-    "sapBackgroundColorDefault": {
-      "value": "hsla({Resource._sapBackgroundColorDefaultH}, {Resource._sapBackgroundColorDefaultS}, {Resource._sapBackgroundColorDefaultL}, {Resource._sapBackgroundColorDefaultA})",
-      "type": "color",
-      "description": "The default background color of this theme."
-    },
-    "_sapGroup_FooterBackgroundH": {
-      "value": "0",
-      "type": "internal"
-    },
-    "_sapGroup_FooterBackgroundS": {
-      "value": "0%",
-      "type": "internal"
-    },
-    "_sapGroup_FooterBackgroundL": {
-      "value": "0%",
-      "type": "internal"
-    },
-    "_sapGroup_FooterBackgroundA": {
-      "value": "0",
-      "type": "internal"
-    },
-    "sapGroup_FooterBackground": {
-      "value": "hsla({Resource._sapGroup_FooterBackgroundH}, {Resource._sapGroup_FooterBackgroundS}, {Resource._sapGroup_FooterBackgroundL}, {Resource._sapGroup_FooterBackgroundA})",
-      "type": "color",
-      "description": "The background color of the footer area of a group."
-    },
-    "sapContent_ForcedColorAdjust": {
-      "value": "none",
-      "type": "string",
-      "description": "Decides wether OS high contrast settings should be respected (auto) or ignored (none)."
-    },
-    "sapContent_ContrastTextThreshold": {
-      "value": "0.386",
-      "type": "number",
-      "description": "The threshold to switch to alternative text color to keep contrast for texts."
-    },
-    "_sapHighlightTextColorH": {
-      "value": "{Text._sapContent_ContrastTextColorH}",
-      "type": "internal"
-    },
-    "_sapHighlightTextColorS": {
-      "value": "{Text._sapContent_ContrastTextColorS}",
-      "type": "internal"
-    },
-    "_sapHighlightTextColorL": {
-      "value": "{Text._sapContent_ContrastTextColorL}",
-      "type": "internal"
-    },
-    "_sapHighlightTextColorA": {
-      "value": "{Text._sapContent_ContrastTextColorA}",
-      "type": "internal"
-    },
-    "sapHighlightTextColor": {
-      "value": "hsla({Resource._sapHighlightTextColorH}, {Resource._sapHighlightTextColorS}, {Resource._sapHighlightTextColorL}, {Resource._sapHighlightTextColorA})",
-      "type": "color",
-      "description": "The text color of highlighted screen elements."
-    },
-    "_sapShell_BackgroundPatternColorH": {
-      "value": "0",
-      "type": "internal"
-    },
-    "_sapShell_BackgroundPatternColorS": {
-      "value": "0%",
-      "type": "internal"
-    },
-    "_sapShell_BackgroundPatternColorL": {
-      "value": "0%",
-      "type": "internal"
-    },
-    "_sapShell_BackgroundPatternColorA": {
-      "value": "0",
-      "type": "internal"
-    },
-    "sapShell_BackgroundPatternColor": {
-      "value": "hsla({Resource._sapShell_BackgroundPatternColorH}, {Resource._sapShell_BackgroundPatternColorS}, {Resource._sapShell_BackgroundPatternColorL}, {Resource._sapShell_BackgroundPatternColorA})",
-      "type": "color",
-      "description": "The background pattern color of the shell. To turn off the pattern set the value to 'transparent'."
     }
   },
   "Chart": {
@@ -11618,6 +11623,92 @@
         "description": "This color is used as an ordered color of a sequence of 12 chart colors. It has a defined contrast to its predecessor and successor."
       }
     },
+    "IBCS": {
+      "_sapChart_IBCS_BadH": {
+        "value": "{Chart.Sequence._sapChart_Sequence_BadH}",
+        "type": "internal"
+      },
+      "_sapChart_IBCS_BadS": {
+        "value": "{Chart.Sequence._sapChart_Sequence_BadS}",
+        "type": "internal"
+      },
+      "_sapChart_IBCS_BadL": {
+        "value": "{Chart.Sequence._sapChart_Sequence_BadL}",
+        "type": "internal"
+      },
+      "_sapChart_IBCS_BadA": {
+        "value": "{Chart.Sequence._sapChart_Sequence_BadA}",
+        "type": "internal"
+      },
+      "sapChart_IBCS_Bad": {
+        "value": "hsla({Chart.IBCS._sapChart_IBCS_BadH}, {Chart.IBCS._sapChart_IBCS_BadS}, {Chart.IBCS._sapChart_IBCS_BadL}, {Chart.IBCS._sapChart_IBCS_BadA})",
+        "type": "color",
+        "description": "Color of bad values in International Business Communication Standards (IBCS) charts."
+      },
+      "_sapChart_IBCS_GoodH": {
+        "value": "{Chart.Sequence._sapChart_Sequence_GoodH}",
+        "type": "internal"
+      },
+      "_sapChart_IBCS_GoodS": {
+        "value": "{Chart.Sequence._sapChart_Sequence_GoodS}",
+        "type": "internal"
+      },
+      "_sapChart_IBCS_GoodL": {
+        "value": "{Chart.Sequence._sapChart_Sequence_GoodL}",
+        "type": "internal"
+      },
+      "_sapChart_IBCS_GoodA": {
+        "value": "{Chart.Sequence._sapChart_Sequence_GoodA}",
+        "type": "internal"
+      },
+      "sapChart_IBCS_Good": {
+        "value": "hsla({Chart.IBCS._sapChart_IBCS_GoodH}, {Chart.IBCS._sapChart_IBCS_GoodS}, {Chart.IBCS._sapChart_IBCS_GoodL}, {Chart.IBCS._sapChart_IBCS_GoodA})",
+        "type": "color",
+        "description": "Color of good values in International Business Communication Standards (IBCS) charts."
+      },
+      "_sapChart_IBCS_PreviousH": {
+        "value": "{Chart.Sequence._sapChart_Sequence_Neutral_Minus1H}",
+        "type": "internal"
+      },
+      "_sapChart_IBCS_PreviousS": {
+        "value": "{Chart.Sequence._sapChart_Sequence_Neutral_Minus1S}",
+        "type": "internal"
+      },
+      "_sapChart_IBCS_PreviousL": {
+        "value": "{Chart.Sequence._sapChart_Sequence_Neutral_Minus1L}",
+        "type": "internal"
+      },
+      "_sapChart_IBCS_PreviousA": {
+        "value": "{Chart.Sequence._sapChart_Sequence_Neutral_Minus1A}",
+        "type": "internal"
+      },
+      "sapChart_IBCS_Previous": {
+        "value": "hsla({Chart.IBCS._sapChart_IBCS_PreviousH}, {Chart.IBCS._sapChart_IBCS_PreviousS}, {Chart.IBCS._sapChart_IBCS_PreviousL}, {Chart.IBCS._sapChart_IBCS_PreviousA})",
+        "type": "color",
+        "description": "Color of values of the previous period in International Business Communication Standards (IBCS) charts."
+      },
+      "_sapChart_IBCS_ActualH": {
+        "value": "{Chart.Sequence._sapChart_Sequence_Neutral_Plus3H}",
+        "type": "internal"
+      },
+      "_sapChart_IBCS_ActualS": {
+        "value": "{Chart.Sequence._sapChart_Sequence_Neutral_Plus3S}",
+        "type": "internal"
+      },
+      "_sapChart_IBCS_ActualL": {
+        "value": "{Chart.Sequence._sapChart_Sequence_Neutral_Plus3L}",
+        "type": "internal"
+      },
+      "_sapChart_IBCS_ActualA": {
+        "value": "{Chart.Sequence._sapChart_Sequence_Neutral_Plus3A}",
+        "type": "internal"
+      },
+      "sapChart_IBCS_Actual": {
+        "value": "hsla({Chart.IBCS._sapChart_IBCS_ActualH}, {Chart.IBCS._sapChart_IBCS_ActualS}, {Chart.IBCS._sapChart_IBCS_ActualL}, {Chart.IBCS._sapChart_IBCS_ActualA})",
+        "type": "color",
+        "description": "Color of values of the actual period in International Business Communication Standards (IBCS) charts."
+      }
+    },
     "Data": {
       "sapChart_Data_Active_Background": {
         "value": "hsla({Chart.Data._sapChart_Data_Active_BackgroundH}, {Chart.Data._sapChart_Data_Active_BackgroundS}, {Chart.Data._sapChart_Data_Active_BackgroundL}, {Chart.Data._sapChart_Data_Active_BackgroundA})",
@@ -16660,19 +16751,19 @@
       "description": "The interactive hover and active state border color of tiles and cards."
     },
     "_sapTile_SeparatorColorH": {
-      "value": "{Tile._sapTile_BackgroundH}",
+      "value": "0",
       "type": "internal"
     },
     "_sapTile_SeparatorColorS": {
-      "value": "{Tile._sapTile_BackgroundS}",
+      "value": "0%",
       "type": "internal"
     },
     "_sapTile_SeparatorColorL": {
-      "value": "{Tile._sapTile_BackgroundL} + 20%",
+      "value": "0%",
       "type": "internal"
     },
     "_sapTile_SeparatorColorA": {
-      "value": "{Tile._sapTile_BackgroundA}",
+      "value": "0",
       "type": "internal"
     },
     "sapTile_SeparatorColor": {
@@ -17757,7 +17848,7 @@
     "sapObjectHeader_Title_FontFamily": {
       "value": "{Text.sapFontBlackFamily}",
       "type": "fontFamilies",
-      "description": "The font family of object header titles."
+      "description": "A prioritized list of preferred font family names for object header titles."
     },
     "sapObjectHeader_Title_SnappedFontSize": {
       "value": "{Text.sapFontHeader4Size}",
@@ -18229,6 +18320,11 @@
       "value": "hsla({Slider._sapSlider_HandleBackgroundH}, {Slider._sapSlider_HandleBackgroundS}, {Slider._sapSlider_HandleBackgroundL}, {Slider._sapSlider_HandleBackgroundA})",
       "type": "color",
       "description": "The background color of the slider handle."
+    },
+    "sapSlider_Selected_Dimension": {
+      "value": "0.125 * {Internal.sapContent_GridSize}",
+      "type": "dimension",
+      "description": "The dimension of the selected part of the slider; usually the width, for vertical sliders the height."
     },
     "sapSlider_Selected_BorderColor": {
       "value": "hsla({Slider._sapSlider_Selected_BorderColorH}, {Slider._sapSlider_Selected_BorderColorS}, {Slider._sapSlider_Selected_BorderColorL}, {Slider._sapSlider_Selected_BorderColorA})",
@@ -21061,7 +21157,7 @@
       "sapButton_FontFamily": {
         "value": "{Text.sapFontSemiboldDuplexFamily}",
         "type": "fontFamilies",
-        "description": "The font family of buttons."
+        "description": "A prioritized list of preferred font family names for buttons."
       },
       "_sapButton_TextColorH": {
         "value": "{Main._sapHighlightColorH}",
@@ -24303,7 +24399,7 @@
       "sapButton_Emphasized_FontFamily": {
         "value": "{Text.sapFontBoldFamily}",
         "type": "fontFamilies",
-        "description": "The font family of emphasized buttons."
+        "description": "A prioritized list of preferred font family names for emphasized buttons."
       },
       "_sapButton_Emphasized_TextColorH": {
         "value": "{Text._sapTextColorH}",
@@ -25950,32 +26046,32 @@
     "sapFontHeaderFamily": {
       "value": "{Text.sapFontBoldFamily}",
       "type": "fontFamilies",
-      "description": "The preferred font family of headers."
+      "description": "A prioritized list of preferred font family names for headers."
     },
     "sapFontBlackFamily": {
       "value": "\"72Black\", \"72Blackfull\", \"72\", \"72full\", Arial, Helvetica, sans-serif",
       "type": "fontFamilies",
-      "description": "The preferred black font family of headers."
+      "description": "A prioritized list of preferred black font family names."
     },
     "sapFontSemiboldDuplexFamily": {
       "value": "\"72-SemiboldDuplex\", \"72-SemiboldDuplexfull\", \"72\", \"72full\", Arial, Helvetica, sans-serif",
       "type": "fontFamilies",
-      "description": "The preferred semi bold duplex font family (with the same widths as @sapFontFamily)."
+      "description": "A prioritized list of preferred semi bold duplex font family names."
     },
     "sapFontSemiboldFamily": {
       "value": "\"72-Semibold\", \"72-Semiboldfull\", \"72\", \"72full\", Arial, Helvetica, sans-serif",
       "type": "fontFamilies",
-      "description": "The preferred semi bold font family."
+      "description": "A prioritized list of preferred semi bold font family names."
     },
     "sapFontBoldFamily": {
       "value": "\"72-Bold\", \"72-Boldfull\", \"72\", \"72full\", Arial, Helvetica, sans-serif",
       "type": "fontFamilies",
-      "description": "The preferred bold font family of headers."
+      "description": "A prioritized list of preferred bold font family names."
     },
     "sapFontLightFamily": {
       "value": "\"72-Light\", \"72-Lightfull\", \"72\", \"72full\", Arial, Helvetica, sans-serif",
       "type": "fontFamilies",
-      "description": "The preferred light font family."
+      "description": "A prioritized list of preferred light font family names."
     },
     "_sapContent_ForegroundTextColorH": {
       "value": "{Text._sapTextColorH}",
@@ -26027,12 +26123,12 @@
     "sapContent_MonospaceBoldFontFamily": {
       "value": "\"72Mono-Bold\", \"72Mono-Boldfull\", lucida console, monospace",
       "type": "fontFamilies",
-      "description": "Defines which monospaced bold font is used for specific texts in the content area."
+      "description": "A prioritized list of preferred monospace bold font family names."
     },
     "sapContent_MonospaceFontFamily": {
       "value": "\"72Mono\", \"72Monofull\", lucida console, monospace",
       "type": "fontFamilies",
-      "description": "Defines which monospaced font is used for specific texts in the content area."
+      "description": "A prioritized list of preferred monospace font family names."
     },
     "sapContent_LabelColor": {
       "value": "hsla({Text._sapContent_LabelColorH}, {Text._sapContent_LabelColorS}, {Text._sapContent_LabelColorL}, {Text._sapContent_LabelColorA})",
@@ -26097,7 +26193,7 @@
     "sapFontFamily": {
       "value": "\"72\", \"72full\", Arial, Helvetica, sans-serif",
       "type": "fontFamilies",
-      "description": "The preferred font family."
+      "description": "A prioritized list of preferred font family names."
     },
     "_sapContent_ContrastTextColorH": {
       "value": "{Internal._sapPrimary3H}",
@@ -26403,6 +26499,21 @@
     "value": "0rem",
     "type": "internal",
     "description": "The value of padding used on small devices."
+  },
+  "sapContent_Margin_XL": {
+    "value": "1rem 3rem",
+    "type": "internal",
+    "description": "The responsive container margin on extra large devices."
+  },
+  "sapContent_Margin_L": {
+    "value": "1rem 2rem",
+    "type": "internal",
+    "description": "The responsive container margin on large devices."
+  },
+  "sapContent_Margin_S": {
+    "value": "0 0 1rem",
+    "type": "internal",
+    "description": "The responsive container margin on small devices."
   },
   "sapContent_Space_XL": {
     "value": "3rem",
@@ -27425,7 +27536,7 @@
     "sapContent_IconFontFamily": {
       "value": "\"SAP-icons\"",
       "type": "fontFamilies",
-      "description": "Defines which font is used to display the font icons."
+      "description": "A prioritized list of preferred font family names for SAP-icons."
     },
     "sapContent_UnratedColor": {
       "value": "hsla({Icon._sapContent_UnratedColorH}, {Icon._sapContent_UnratedColorS}, {Icon._sapContent_UnratedColorL}, {Icon._sapContent_UnratedColorA})",

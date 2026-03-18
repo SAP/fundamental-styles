@@ -41,7 +41,7 @@
 			"Id": "sapShellColor",
 			"CssValue": "#000",
 			"Label": "Shell Header Color",
-			"Tags": "Quick,Base,Shell,Color,Mobile"
+			"Tags": "Quick,Base,Shell,Color"
 		},
 		{
 			"Id": "sapBackgroundColor",

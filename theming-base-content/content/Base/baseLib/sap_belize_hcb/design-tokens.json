@@ -285,25 +285,30 @@
       "type": "sizing",
       "description": "The value of padding used on medium devices."
     },
-    "sapContent_Margin_Large": {
-      "value": "1rem 3rem",
-      "type": "sizing",
-      "description": "The large value of the four-sided margin used for content."
-    },
-    "sapContent_Margin_Medium": {
-      "value": "1rem 2rem",
-      "type": "sizing",
-      "description": "The medium value of the four-sided margin used for content."
-    },
-    "sapContent_Margin_Small": {
+    "sapContent_Margin_M": {
       "value": "1rem",
       "type": "sizing",
-      "description": "The small value of the four-sided margin used for content."
+      "description": "The responsive container margin on medium devices."
+    },
+    "sapContent_Margin_Large": {
+      "value": "{sapContent_Margin_XL}",
+      "type": "sizing",
+      "description": "Will be deprecated. Use instead: sapContent_Space_Large for a constant margin, sapContent_Margin_XL for a responsive margin."
+    },
+    "sapContent_Margin_Medium": {
+      "value": "{sapContent_Margin_L}",
+      "type": "sizing",
+      "description": "Will be deprecated. Use instead: sapContent_Space_Medium for a constant margin, sapContent_Margin_L for a responsive margin."
+    },
+    "sapContent_Margin_Small": {
+      "value": "{Internal.sapContent_Margin_M}",
+      "type": "sizing",
+      "description": "Will be deprecated. Use instead: sapContent_Space_Small for a constant margin, sapContent_Margin_M for a responsive margin."
     },
     "sapContent_Margin_Tiny": {
-      "value": "0 0 1rem",
+      "value": "{sapContent_Margin_S}",
       "type": "sizing",
-      "description": "The tiny value of the four-sided margin used for content."
+      "description": "Will be deprecated. Use instead: sapContent_Space_Tiny for a constant margin, sapContent_Margin_S for a responsive margin."
     },
     "sapContent_Space_Large": {
       "value": "3rem",
@@ -451,6 +456,22 @@
       "value": "hsla({List._sapList_TableGroupHeaderBackgroundH}, {List._sapList_TableGroupHeaderBackgroundS}, {List._sapList_TableGroupHeaderBackgroundL}, {List._sapList_TableGroupHeaderBackgroundA})",
       "type": "color",
       "description": "The background color of table group headers."
+    },
+    "_sapList_GroupHeaderTextColorH": {
+      "value": "{Text._sapTextColorH}",
+      "type": "internal"
+    },
+    "_sapList_GroupHeaderTextColorS": {
+      "value": "{Text._sapTextColorS}",
+      "type": "internal"
+    },
+    "_sapList_GroupHeaderTextColorL": {
+      "value": "{Text._sapTextColorL}",
+      "type": "internal"
+    },
+    "_sapList_GroupHeaderTextColorA": {
+      "value": "{Text._sapTextColorA}",
+      "type": "internal"
     },
     "sapList_GroupHeaderTextColor": {
       "value": "hsla({List._sapList_GroupHeaderTextColorH}, {List._sapList_GroupHeaderTextColorS}, {List._sapList_GroupHeaderTextColorL}, {List._sapList_GroupHeaderTextColorA})",
@@ -729,22 +750,6 @@
       "value": "{HighContrast._sapHC_ReducedBackgroundA}",
       "type": "internal"
     },
-    "_sapList_GroupHeaderTextColorH": {
-      "value": "{List._sapList_TextColorH}",
-      "type": "internal"
-    },
-    "_sapList_GroupHeaderTextColorS": {
-      "value": "{List._sapList_TextColorS}",
-      "type": "internal"
-    },
-    "_sapList_GroupHeaderTextColorL": {
-      "value": "{List._sapList_TextColorL}",
-      "type": "internal"
-    },
-    "_sapList_GroupHeaderTextColorA": {
-      "value": "{List._sapList_TextColorA}",
-      "type": "internal"
-    },
     "_sapList_GroupHeaderBorderColorH": {
       "value": "{HighContrast._sapHC_StandardForegroundH}",
       "type": "internal"
@@ -923,7 +928,7 @@
       "description": "Decides wether OS high contrast settings should be respected (auto) or ignored (none)."
     },
     "sapContent_ContrastTextThreshold": {
-      "value": "0.65",
+      "value": "0.5",
       "type": "number",
       "description": "The threshold to switch to alternative text color to keep contrast for texts."
     },
@@ -13201,6 +13206,92 @@
         "description": "This color is used as an ordered color of a sequence of 12 chart colors. It has a defined contrast to its predecessor and successor."
       }
     },
+    "IBCS": {
+      "_sapChart_IBCS_BadH": {
+        "value": "{Chart.Sequence._sapChart_Sequence_BadH}",
+        "type": "internal"
+      },
+      "_sapChart_IBCS_BadS": {
+        "value": "{Chart.Sequence._sapChart_Sequence_BadS}",
+        "type": "internal"
+      },
+      "_sapChart_IBCS_BadL": {
+        "value": "{Chart.Sequence._sapChart_Sequence_BadL}",
+        "type": "internal"
+      },
+      "_sapChart_IBCS_BadA": {
+        "value": "{Chart.Sequence._sapChart_Sequence_BadA}",
+        "type": "internal"
+      },
+      "sapChart_IBCS_Bad": {
+        "value": "hsla({Chart.IBCS._sapChart_IBCS_BadH}, {Chart.IBCS._sapChart_IBCS_BadS}, {Chart.IBCS._sapChart_IBCS_BadL}, {Chart.IBCS._sapChart_IBCS_BadA})",
+        "type": "color",
+        "description": "Color of bad values in International Business Communication Standards (IBCS) charts."
+      },
+      "_sapChart_IBCS_GoodH": {
+        "value": "{Chart.Sequence._sapChart_Sequence_GoodH}",
+        "type": "internal"
+      },
+      "_sapChart_IBCS_GoodS": {
+        "value": "{Chart.Sequence._sapChart_Sequence_GoodS}",
+        "type": "internal"
+      },
+      "_sapChart_IBCS_GoodL": {
+        "value": "{Chart.Sequence._sapChart_Sequence_GoodL}",
+        "type": "internal"
+      },
+      "_sapChart_IBCS_GoodA": {
+        "value": "{Chart.Sequence._sapChart_Sequence_GoodA}",
+        "type": "internal"
+      },
+      "sapChart_IBCS_Good": {
+        "value": "hsla({Chart.IBCS._sapChart_IBCS_GoodH}, {Chart.IBCS._sapChart_IBCS_GoodS}, {Chart.IBCS._sapChart_IBCS_GoodL}, {Chart.IBCS._sapChart_IBCS_GoodA})",
+        "type": "color",
+        "description": "Color of good values in International Business Communication Standards (IBCS) charts."
+      },
+      "_sapChart_IBCS_PreviousH": {
+        "value": "{Chart.Sequence._sapChart_Sequence_Neutral_Minus1H}",
+        "type": "internal"
+      },
+      "_sapChart_IBCS_PreviousS": {
+        "value": "{Chart.Sequence._sapChart_Sequence_Neutral_Minus1S}",
+        "type": "internal"
+      },
+      "_sapChart_IBCS_PreviousL": {
+        "value": "{Chart.Sequence._sapChart_Sequence_Neutral_Minus1L}",
+        "type": "internal"
+      },
+      "_sapChart_IBCS_PreviousA": {
+        "value": "{Chart.Sequence._sapChart_Sequence_Neutral_Minus1A}",
+        "type": "internal"
+      },
+      "sapChart_IBCS_Previous": {
+        "value": "hsla({Chart.IBCS._sapChart_IBCS_PreviousH}, {Chart.IBCS._sapChart_IBCS_PreviousS}, {Chart.IBCS._sapChart_IBCS_PreviousL}, {Chart.IBCS._sapChart_IBCS_PreviousA})",
+        "type": "color",
+        "description": "Color of values of the previous period in International Business Communication Standards (IBCS) charts."
+      },
+      "_sapChart_IBCS_ActualH": {
+        "value": "{Chart.Sequence._sapChart_Sequence_Neutral_Plus3H}",
+        "type": "internal"
+      },
+      "_sapChart_IBCS_ActualS": {
+        "value": "{Chart.Sequence._sapChart_Sequence_Neutral_Plus3S}",
+        "type": "internal"
+      },
+      "_sapChart_IBCS_ActualL": {
+        "value": "{Chart.Sequence._sapChart_Sequence_Neutral_Plus3L}",
+        "type": "internal"
+      },
+      "_sapChart_IBCS_ActualA": {
+        "value": "{Chart.Sequence._sapChart_Sequence_Neutral_Plus3A}",
+        "type": "internal"
+      },
+      "sapChart_IBCS_Actual": {
+        "value": "hsla({Chart.IBCS._sapChart_IBCS_ActualH}, {Chart.IBCS._sapChart_IBCS_ActualS}, {Chart.IBCS._sapChart_IBCS_ActualL}, {Chart.IBCS._sapChart_IBCS_ActualA})",
+        "type": "color",
+        "description": "Color of values of the actual period in International Business Communication Standards (IBCS) charts."
+      }
+    },
     "Data": {
       "sapChart_Data_Active_Background": {
         "value": "hsla({Chart.Data._sapChart_Data_Active_BackgroundH}, {Chart.Data._sapChart_Data_Active_BackgroundS}, {Chart.Data._sapChart_Data_Active_BackgroundL}, {Chart.Data._sapChart_Data_Active_BackgroundA})",
@@ -18456,19 +18547,19 @@
       "type": "internal"
     },
     "_sapTile_Hover_BackgroundH": {
-      "value": "{Main._sapHighlightColorH}",
+      "value": "{Interaction._sapHoverColorH}",
       "type": "internal"
     },
     "_sapTile_Hover_BackgroundS": {
-      "value": "{Main._sapHighlightColorS}",
+      "value": "{Interaction._sapHoverColorS}",
       "type": "internal"
     },
     "_sapTile_Hover_BackgroundL": {
-      "value": "{Main._sapHighlightColorL}",
+      "value": "{Interaction._sapHoverColorL}",
       "type": "internal"
     },
     "_sapTile_Hover_BackgroundA": {
-      "value": "{Main._sapHighlightColorA}",
+      "value": "{Interaction._sapHoverColorA}",
       "type": "internal"
     },
     "_sapTile_BackgroundH": {
@@ -19356,7 +19447,7 @@
     "sapObjectHeader_Title_FontFamily": {
       "value": "{Text.sapFontFamily}",
       "type": "fontFamilies",
-      "description": "The font family of object header titles."
+      "description": "A prioritized list of preferred font family names for object header titles."
     },
     "sapObjectHeader_Title_SnappedFontSize": {
       "value": "{Text.sapFontHeader3Size}",
@@ -19812,6 +19903,11 @@
       "value": "hsla({Slider._sapSlider_HandleBackgroundH}, {Slider._sapSlider_HandleBackgroundS}, {Slider._sapSlider_HandleBackgroundL}, {Slider._sapSlider_HandleBackgroundA})",
       "type": "color",
       "description": "The background color of the slider handle."
+    },
+    "sapSlider_Selected_Dimension": {
+      "value": "0.25 * {Internal.sapContent_GridSize}",
+      "type": "dimension",
+      "description": "The dimension of the selected part of the slider; usually the width, for vertical sliders the height."
     },
     "sapSlider_Selected_BorderColor": {
       "value": "hsla({Slider._sapSlider_Selected_BorderColorH}, {Slider._sapSlider_Selected_BorderColorS}, {Slider._sapSlider_Selected_BorderColorL}, {Slider._sapSlider_Selected_BorderColorA})",
@@ -22016,19 +22112,19 @@
         "type": "internal"
       },
       "_sapField_ReadOnly_BorderColorH": {
-        "value": "{HighContrast._sapHC_ReducedAltForegroundH}",
+        "value": "{Input.Standard._sapField_BorderColorH}",
         "type": "internal"
       },
       "_sapField_ReadOnly_BorderColorS": {
-        "value": "{HighContrast._sapHC_ReducedAltForegroundS}",
+        "value": "{Input.Standard._sapField_BorderColorS}",
         "type": "internal"
       },
       "_sapField_ReadOnly_BorderColorL": {
-        "value": "{HighContrast._sapHC_ReducedAltForegroundL}",
+        "value": "{Input.Standard._sapField_BorderColorL}",
         "type": "internal"
       },
       "_sapField_ReadOnly_BorderColorA": {
-        "value": "{HighContrast._sapHC_ReducedAltForegroundA}",
+        "value": "{Input.Standard._sapField_BorderColorA}",
         "type": "internal"
       },
       "_sapField_ReadOnly_BackgroundH": {
@@ -22545,7 +22641,7 @@
       "sapButton_FontFamily": {
         "value": "{Text.sapFontFamily}",
         "type": "fontFamilies",
-        "description": "The font family of buttons."
+        "description": "A prioritized list of preferred font family names for buttons."
       },
       "_sapButton_TextColorH": {
         "value": "{Text._sapTextColorH}",
@@ -22701,19 +22797,19 @@
         "type": "internal"
       },
       "_sapButton_Hover_BackgroundH": {
-        "value": "{Main._sapHighlightColorH}",
+        "value": "{Interaction._sapHoverColorH}",
         "type": "internal"
       },
       "_sapButton_Hover_BackgroundS": {
-        "value": "{Main._sapHighlightColorS}",
+        "value": "{Interaction._sapHoverColorS}",
         "type": "internal"
       },
       "_sapButton_Hover_BackgroundL": {
-        "value": "{Main._sapHighlightColorL}",
+        "value": "{Interaction._sapHoverColorL}",
         "type": "internal"
       },
       "_sapButton_Hover_BackgroundA": {
-        "value": "{Main._sapHighlightColorA}",
+        "value": "{Interaction._sapHoverColorA}",
         "type": "internal"
       },
       "_sapButton_BorderColorH": {
@@ -25771,7 +25867,7 @@
       "sapButton_Emphasized_FontFamily": {
         "value": "{Text.sapFontBoldFamily}",
         "type": "fontFamilies",
-        "description": "The font family of emphasized buttons."
+        "description": "A prioritized list of preferred font family names for emphasized buttons."
       },
       "_sapButton_Emphasized_TextColorH": {
         "value": "{Text._sapTextColorH}",
@@ -28658,6 +28754,22 @@
       "type": "color",
       "description": "The background color of interactive shell content."
     },
+    "_sapShell_TextColorH": {
+      "value": "{Text._sapTextColorH}",
+      "type": "internal"
+    },
+    "_sapShell_TextColorS": {
+      "value": "{Text._sapTextColorS}",
+      "type": "internal"
+    },
+    "_sapShell_TextColorL": {
+      "value": "{Text._sapTextColorL}",
+      "type": "internal"
+    },
+    "_sapShell_TextColorA": {
+      "value": "{Text._sapTextColorA}",
+      "type": "internal"
+    },
     "sapShell_TextColor": {
       "value": "hsla({Shell._sapShell_TextColorH}, {Shell._sapShell_TextColorS}, {Shell._sapShell_TextColorL}, {Shell._sapShell_TextColorA})",
       "type": "color",
@@ -28889,22 +29001,6 @@
     },
     "_sapShell_InteractiveTextColorA": {
       "value": "{Shell._sapShell_TextColorA}",
-      "type": "internal"
-    },
-    "_sapShell_TextColorH": {
-      "value": "{Text._sapTextColorH}",
-      "type": "internal"
-    },
-    "_sapShell_TextColorS": {
-      "value": "{Text._sapTextColorS}",
-      "type": "internal"
-    },
-    "_sapShell_TextColorL": {
-      "value": "{Text._sapTextColorL}",
-      "type": "internal"
-    },
-    "_sapShell_TextColorA": {
-      "value": "{Text._sapTextColorA}",
       "type": "internal"
     },
     "_sapShell_BorderColorH": {
@@ -29204,32 +29300,32 @@
     "sapFontHeaderFamily": {
       "value": "{Text.sapFontFamily}",
       "type": "fontFamilies",
-      "description": "The preferred font family of headers."
+      "description": "A prioritized list of preferred font family names for headers."
     },
     "sapFontBlackFamily": {
       "value": "\"72Black\", \"72Blackfull\", \"72\", \"72full\", Arial, Helvetica, sans-serif",
       "type": "fontFamilies",
-      "description": "The preferred black font family of headers."
+      "description": "A prioritized list of preferred black font family names."
     },
     "sapFontSemiboldDuplexFamily": {
       "value": "\"72-SemiboldDuplex\", \"72-SemiboldDuplexfull\", \"72\", \"72full\", Arial, Helvetica, sans-serif",
       "type": "fontFamilies",
-      "description": "The preferred semi bold duplex font family (with the same widths as @sapFontFamily)."
+      "description": "A prioritized list of preferred semi bold duplex font family names."
     },
     "sapFontSemiboldFamily": {
       "value": "\"72-Semibold\", \"72-Semiboldfull\", \"72\", \"72full\", Arial, Helvetica, sans-serif",
       "type": "fontFamilies",
-      "description": "The preferred semi bold font family."
+      "description": "A prioritized list of preferred semi bold font family names."
     },
     "sapFontBoldFamily": {
       "value": "\"72-Bold\", \"72-Boldfull\", \"72\", \"72full\", Arial, Helvetica, sans-serif",
       "type": "fontFamilies",
-      "description": "The preferred bold font family of headers."
+      "description": "A prioritized list of preferred bold font family names."
     },
     "sapFontLightFamily": {
       "value": "\"72-Light\", \"72-Lightfull\", \"72\", \"72full\", Arial, Helvetica, sans-serif",
       "type": "fontFamilies",
-      "description": "The preferred light font family."
+      "description": "A prioritized list of preferred light font family names."
     },
     "_sapContent_ForegroundTextColorH": {
       "value": "{Text._sapTextColorH}",
@@ -29265,12 +29361,12 @@
     "sapContent_MonospaceBoldFontFamily": {
       "value": "\"72Mono-Bold\", \"72Mono-Boldfull\", lucida console, monospace",
       "type": "fontFamilies",
-      "description": "Defines which monospaced bold font is used for specific texts in the content area."
+      "description": "A prioritized list of preferred monospace bold font family names."
     },
     "sapContent_MonospaceFontFamily": {
       "value": "\"72Mono\", \"72Monofull\", lucida console, monospace",
       "type": "fontFamilies",
-      "description": "Defines which monospaced font is used for specific texts in the content area."
+      "description": "A prioritized list of preferred monospace font family names."
     },
     "sapContent_LabelColor": {
       "value": "hsla({Text._sapContent_LabelColorH}, {Text._sapContent_LabelColorS}, {Text._sapContent_LabelColorL}, {Text._sapContent_LabelColorA})",
@@ -29343,7 +29439,7 @@
     "sapFontFamily": {
       "value": "\"72\", \"72full\", Arial, Helvetica, sans-serif",
       "type": "fontFamilies",
-      "description": "The preferred font family."
+      "description": "A prioritized list of preferred font family names."
     },
     "_sapContent_ContrastTextColorH": {
       "value": "{Text._sapTextColorH}",
@@ -29641,6 +29737,21 @@
     "value": "0rem",
     "type": "internal",
     "description": "The value of padding used on small devices."
+  },
+  "sapContent_Margin_XL": {
+    "value": "1rem 3rem",
+    "type": "internal",
+    "description": "The responsive container margin on extra large devices."
+  },
+  "sapContent_Margin_L": {
+    "value": "1rem 2rem",
+    "type": "internal",
+    "description": "The responsive container margin on large devices."
+  },
+  "sapContent_Margin_S": {
+    "value": "0 0 1rem",
+    "type": "internal",
+    "description": "The responsive container margin on small devices."
   },
   "sapContent_Space_XL": {
     "value": "3rem",
@@ -30645,7 +30756,7 @@
     "sapContent_IconFontFamily": {
       "value": "\"SAP-icons\"",
       "type": "fontFamilies",
-      "description": "Defines which font is used to display the font icons."
+      "description": "A prioritized list of preferred font family names for SAP-icons."
     },
     "sapContent_UnratedColor": {
       "value": "hsla({Icon._sapContent_UnratedColorH}, {Icon._sapContent_UnratedColorS}, {Icon._sapContent_UnratedColorL}, {Icon._sapContent_UnratedColorA})",
@@ -31137,11 +31248,11 @@
       "type": "internal"
     },
     "_sapHC_EnhancedForegroundS": {
-      "value": "96.79144385026738%",
+      "value": "96.61016949152543%",
       "type": "internal"
     },
     "_sapHC_EnhancedForegroundL": {
-      "value": "36.666666666666664%",
+      "value": "34.705882352941174%",
       "type": "internal"
     },
     "_sapHC_EnhancedForegroundA": {
@@ -31217,15 +31328,15 @@
       "description": "The high-contrast reference background color used for read-only and disabled items."
     },
     "_sapHC_HighlightAltBackgroundH": {
-      "value": "204.81203007518798",
+      "value": "205",
       "type": "internal"
     },
     "_sapHC_HighlightAltBackgroundS": {
-      "value": "81.59509202453987%",
+      "value": "81.48148148148148%",
       "type": "internal"
     },
     "_sapHC_HighlightAltBackgroundL": {
-      "value": "31.960784313725494%",
+      "value": "31.76470588235294%",
       "type": "internal"
     },
     "_sapHC_HighlightAltBackgroundA": {
