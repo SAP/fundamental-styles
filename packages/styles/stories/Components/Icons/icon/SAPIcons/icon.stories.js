@@ -78,8 +78,9 @@ Backgrounds.parameters = {
 export const AvailableIcons = () => {
   const div = document.createElement('div');
   div.className = 'fddocs-container';
+  div.style.cssText = 'display:flex;flex-wrap:wrap;gap:0.5rem';
   div.innerHTML = data.icons.map(icon => {
-    return '<div class="fddocs-container--icon">' + `<span class="sap-icon sap-icon--${icon}" role="presentation" aria-hidden="true" aria-label="${icon}" style="font-size:3rem"></span>` + `<div>.sap-icon--${icon}</div>` + '</div><br />';
+    return '<div class="fddocs-container--icon" style="display:flex;flex-direction:column;align-items:center;width:8rem;padding:0.5rem;text-align:center">' + `<span class="sap-icon sap-icon--${icon}" role="presentation" aria-hidden="true" aria-label="${icon}" style="font-size:2rem"></span>` + `<div style="font-size:0.625rem;word-break:break-all">.sap-icon--${icon}</div>` + '</div>';
   }).join('');
   return div.outerHTML;
 };

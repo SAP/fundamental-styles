@@ -4523,10 +4523,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@sap-theming/theming-base-content@npm:11.32.3":
-  version: 11.32.3
-  resolution: "@sap-theming/theming-base-content@npm:11.32.3"
-  checksum: 10/d7d52eef15de64b911095caa6822254d83f2572c97ab7803fa6286c6279b6111bd35326319775ad2541f6cbd62a8ac8c1d9e129bd44ca1cf4b9dfec84273693f
+"@sap-theming/theming-base-content@npm:11.34.1":
+  version: 11.34.1
+  resolution: "@sap-theming/theming-base-content@npm:11.34.1"
+  checksum: 10/ab25675cbb63f8d17e91246b5ab6d3e1a195642f1fd6ac36fed706e6a130e95bff76c8e41b4d56f50b9326e22ec52fe65c0d3bc3369f25b21695d55e482b66e8
   languageName: node
   linkType: hard
 
@@ -7613,25 +7613,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"chromatic@npm:^11.25.2":
-  version: 11.29.0
-  resolution: "chromatic@npm:11.29.0"
-  peerDependencies:
-    "@chromatic-com/cypress": ^0.*.* || ^1.0.0
-    "@chromatic-com/playwright": ^0.*.* || ^1.0.0
-  peerDependenciesMeta:
-    "@chromatic-com/cypress":
-      optional: true
-    "@chromatic-com/playwright":
-      optional: true
-  bin:
-    chroma: dist/bin.js
-    chromatic: dist/bin.js
-    chromatic-cli: dist/bin.js
-  checksum: 10/8416acc2f5d61bbbaffb232906244c1a84b6068b2801ae166b76c880a45bc42282bc79ea36c58811a9e6d9e9ea142de5610165940fac2c7bf1d4fc1ba6bc091c
-  languageName: node
-  linkType: hard
-
 "chromatic@npm:^13.3.4":
   version: 13.3.5
   resolution: "chromatic@npm:13.3.5"
@@ -7648,6 +7629,25 @@ __metadata:
     chromatic: dist/bin.js
     chromatic-cli: dist/bin.js
   checksum: 10/d660e926e2763158eb216c12fd443ac909235b62e0855d6485c5ec270cbde8ce6d5467fc9792a988f2cd4c32722efb9899982b26d4bd8265381846c7d7006c21
+  languageName: node
+  linkType: hard
+
+"chromatic@npm:^15.3.0":
+  version: 15.3.0
+  resolution: "chromatic@npm:15.3.0"
+  peerDependencies:
+    "@chromatic-com/cypress": ^0.*.* || ^1.0.0
+    "@chromatic-com/playwright": ^0.*.* || ^1.0.0
+  peerDependenciesMeta:
+    "@chromatic-com/cypress":
+      optional: true
+    "@chromatic-com/playwright":
+      optional: true
+  bin:
+    chroma: dist/bin.js
+    chromatic: dist/bin.js
+    chromatic-cli: dist/bin.js
+  checksum: 10/31186cb4a179144ccd92a9ce1e6f1415e8dfcf2e87199c7d075b5495cc90d630330da7a8595212907cd8906502f3495218648060334dd864a5b40d7b55d332f6
   languageName: node
   linkType: hard
 
@@ -11013,7 +11013,7 @@ __metadata:
     "@nx/plugin": "npm:22.5.3"
     "@nx/react": "npm:22.5.3"
     "@nx/web": "npm:22.5.3"
-    "@sap-theming/theming-base-content": "npm:11.32.3"
+    "@sap-theming/theming-base-content": "npm:11.34.1"
     "@storybook/addon-a11y": "npm:^10.2.14"
     "@storybook/addon-docs": "npm:^10.2.14"
     "@storybook/addon-links": "npm:^10.2.14"
@@ -11030,7 +11030,7 @@ __metadata:
     "@vitejs/plugin-react": "npm:5.1.4"
     autoprefixer: "npm:10.4.21"
     bundlesize: "npm:0.18.2"
-    chromatic: "npm:^11.25.2"
+    chromatic: "npm:^15.3.0"
     clean-css: "npm:5.3.3"
     clean-css-cli: "npm:5.4.1"
     colors: "npm:1.4.0"
