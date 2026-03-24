@@ -41,6 +41,22 @@ $block: #{$fd-namespace}-segmented-button;
     &:not(:last-child) {
       @include fd-set-margin-right(var(--fdButton_Segmented_Border_Offset));
     }
+
+    &.is-disabled.is-selected,
+    &.is-disabled[aria-selected='true'],
+    &:disabled.is-selected,
+    &:disabled[aria-selected='true'],
+    &[aria-disabled='true'].is-selected,
+    &[aria-disabled='true'][aria-selected='true'] {
+      --fdButtonBorderColor: var(--sapButton_Selected_BorderColor);
+      --fdButtonBackgroundColor: var(--sapButton_Selected_Background);
+    }
+  }
+
+  &:has(button.is-disabled):focus-visible,
+  &:has(button:disabled):focus-visible,
+  &:has(button[aria-disabled='true']):focus-visible {
+    outline: none;
   }
 
   &:not(&--vertical) {
