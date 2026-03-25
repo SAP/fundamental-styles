@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.41.1-rc.1](https://github.com/SAP/fundamental-styles/compare/v0.41.1-rc.0...v0.41.1-rc.1) (2026-03-25)
+
+### Bug Fixes
+
+- **styles:** bring CSS for Segmented btn from fund-ngx [ci visual] ([#6262](https://github.com/SAP/fundamental-styles/issues/6262)) ([30bb06b](https://github.com/SAP/fundamental-styles/commit/30bb06b97aa2aadcb73558136a05bc7f0e1c514e))
+
 ## [0.41.1-rc.0](https://github.com/SAP/fundamental-styles/compare/v0.41.0...v0.41.1-rc.0) (2026-03-18)
 
 **Note:** Version bump only for package fundamental-styles
