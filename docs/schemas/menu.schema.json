@@ -14,6 +14,8 @@
       "items": {
         "enum": [
           "fd-menu--no-shadow",
+          "fd-menu--truncate",
+          "fd-menu--active",
           "fd-menu--submenu",
           "fd-menu--overflow",
           "fd-menu--full-width",
@@ -116,6 +118,26 @@
             }
           }
         },
+        "fd-menu__subtitle": {
+          "type": "object",
+          "description": "subtitle element",
+          "properties": {
+            "class": {
+              "const": "fd-menu__subtitle",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-menu__content": {
+          "type": "object",
+          "description": "content element",
+          "properties": {
+            "class": {
+              "const": "fd-menu__content",
+              "description": "Element class name"
+            }
+          }
+        },
         "fd-menu__addon-before": {
           "type": "object",
           "description": "addon-before element",
@@ -138,6 +160,7 @@
               "type": "array",
               "items": {
                 "enum": [
+                  "fd-menu__addon-after--active",
                   "fd-menu__addon-after--submenu"
                 ]
               },

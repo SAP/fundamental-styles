@@ -113,6 +113,26 @@
             }
           }
         },
+        "fd-user-menu__title": {
+          "type": "object",
+          "description": "title element",
+          "properties": {
+            "class": {
+              "const": "fd-user-menu__title",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-user-menu__subtitle": {
+          "type": "object",
+          "description": "subtitle element",
+          "properties": {
+            "class": {
+              "const": "fd-user-menu__subtitle",
+              "description": "Element class name"
+            }
+          }
+        },
         "fd-user-menu__content-container": {
           "type": "object",
           "description": "content-container element",
