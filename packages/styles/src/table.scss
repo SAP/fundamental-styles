@@ -331,6 +331,10 @@ $table-z-index: (
     }
   }
 
+  &__sr-only {
+    @include fd-screen-reader-only();
+  }
+  
   /****** Modifiers ******/
 
   @include fd-compact() {

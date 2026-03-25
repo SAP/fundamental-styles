@@ -5786,6 +5786,14 @@
               "description": "no-shadow variant"
             },
             {
+              "class": "fd-menu--truncate",
+              "description": "truncate variant"
+            },
+            {
+              "class": "fd-menu--active",
+              "description": "active variant"
+            },
+            {
               "class": "fd-menu--submenu",
               "description": "submenu variant"
             },
@@ -5857,6 +5865,16 @@
               "modifiers": []
             },
             {
+              "class": "fd-menu__subtitle",
+              "description": "subtitle element",
+              "modifiers": []
+            },
+            {
+              "class": "fd-menu__content",
+              "description": "content element",
+              "modifiers": []
+            },
+            {
               "class": "fd-menu__addon-before",
               "description": "addon-before element",
               "modifiers": []
@@ -5865,6 +5883,10 @@
               "class": "fd-menu__addon-after",
               "description": "addon-after element",
               "modifiers": [
+                {
+                  "class": "fd-menu__addon-after--active",
+                  "description": "active variant of addon-after"
+                },
                 {
                   "class": "fd-menu__addon-after--submenu",
                   "description": "submenu variant of addon-after"
@@ -11523,6 +11545,11 @@
               "modifiers": []
             },
             {
+              "class": "fd-table__sr-only",
+              "description": "sr-only element",
+              "modifiers": []
+            },
+            {
               "class": "fd-table__item",
               "description": "item element",
               "modifiers": [
@@ -13355,6 +13382,16 @@
                   "description": "truncate variant of subline"
                 }
               ]
+            },
+            {
+              "class": "fd-user-menu__title",
+              "description": "title element",
+              "modifiers": []
+            },
+            {
+              "class": "fd-user-menu__subtitle",
+              "description": "subtitle element",
+              "modifiers": []
             },
             {
               "class": "fd-user-menu__content-container",

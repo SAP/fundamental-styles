@@ -251,6 +251,16 @@
             }
           }
         },
+        "fd-table__sr-only": {
+          "type": "object",
+          "description": "sr-only element",
+          "properties": {
+            "class": {
+              "const": "fd-table__sr-only",
+              "description": "Element class name"
+            }
+          }
+        },
         "fd-table__item": {
           "type": "object",
           "description": "item element",
