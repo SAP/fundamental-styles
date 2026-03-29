@@ -32,7 +32,7 @@
         "build:prod": "npx nx build workspace-plugins --skip-nx-cache && npx nx run common-css:build --configuration=production --skip-nx-cache && npx nx run styles:build --configuration=production --skip-nx-cache && npx nx run cx:build --configuration=production --skip-nx-cache && npx nx run theming-preview:build --configuration=production --skip-nx-cache",
         "build:theming-preview": "npx nx run theming-preview:build",
         "build:visual-stories": "nx run-many --target=build-visual --all",
-        "lint:style": "stylelint \"packages/*/src/**/*.(sa|sc|c)ss\"",
+        "lint:style": "gale \"packages/*/src/**/*.(sa|sc|c)ss\"",
         "lint:js": "eslint . --ext .js",
         "lint": "yarn run sync-entries && yarn run lint:style && yarn run lint:js",
         "lint:fix": "yarn run sync-entries fix && yarn run lint:style --fix && yarn run lint:js --fix",
@@ -129,13 +129,11 @@
         "normalize.css": "8.0.1",
         "npm-run-all": "4.1.5",
         "nx": "22.5.3",
-        "nx-stylelint": "17.1.4",
         "postcss": "8.4.38",
         "postcss-banner": "4.0.1",
         "postcss-cli": "9.1.0",
         "postcss-import": "14.1.0",
         "postcss-normalize-charset": "4.0.1",
-        "postcss-scss": "4.0.9",
         "prettier": "^3.2.5",
         "react": "18.3.1",
         "react-dom": "18.3.1",
@@ -146,10 +144,9 @@
         "standard-version": "9.3.2",
         "start-server-and-test": "1.14.0",
         "storybook": "^10.2.14",
-        "stylelint": "16.8.2",
+        "@lyricalstring/gale": "^0.1.5",
         "stylelint-config-standard": "36.0.1",
         "stylelint-config-standard-scss": "^13.1.0",
-        "stylelint-scss": "6.1.0",
         "through2": "4.0.2",
         "tocbot": "4.12.3",
         "ts-node": "10.9.2",
@@ -167,7 +164,7 @@
         "last 2 versions"
     ],
     "lint-staged": {
-        "{packages,stories,.storybook}/**/*.(sa|sc|c)ss": "stylelint --fix",
+        "{packages,stories,.storybook}/**/*.(sa|sc|c)ss": "gale --fix",
         "*.js": "eslint --fix"
     },
     "dependencies": {

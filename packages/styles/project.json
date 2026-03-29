@@ -53,10 +53,9 @@
             "outputs": ["{options.outputFile}"]
         },
         "stylelint": {
-            "executor": "nx-stylelint:lint",
-            "outputs": ["{options.outputFile}"],
+            "executor": "nx:run-commands",
             "options": {
-                "lintFilePatterns": ["packages/styles/**/*.scss"]
+                "command": "gale 'packages/styles/**/*.scss'"
             }
         },
         "test": {
