@@ -32,7 +32,7 @@ $floating-footer: #{$fd-namespace}-bar--floating-footer;
     justify-content: space-between;
   }
 
-  height: var(--fdBar_Height);
+  min-height: var(--fdBar_Height);
   z-index: var(--fdBar_Z_Index);
   box-shadow: var(--fdBar_Shadow);
   background: var(--fdBar_Background);
@@ -77,6 +77,7 @@ $floating-footer: #{$fd-namespace}-bar--floating-footer;
 
     max-width: 100%;
     max-height: 100%;
+    text-wrap: auto;
     color: var(--fdBar_Element_Text_Color, var(--sapTextColor));
     font-family: var(--fdBar_Element_Text_Font_Family, var(--sapFontFamily));
     font-size: var(--fdBar_Element_Text_Font_Size, var(--sapFontSize));

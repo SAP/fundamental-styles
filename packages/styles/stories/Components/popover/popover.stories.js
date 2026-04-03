@@ -129,9 +129,7 @@ ControlExamplesBtp.storyName = 'BTP Popover';
 ControlExamplesBtp.parameters = {
   docs: {
     description: {
-      story: `This extension of Popover is used by components and patterns in the BTP area. Apply the <code>.fd-popover--btp</code> modifier class to <code>.fd-popover</code> base class. <br>
-      To add padding to the Popover body use the <code>.fd-popover__body--padding</code> modifier class together with <code>.fd-popover__body</code> base class. <br>
-      The content of the footer can be centered by using the <code>.fd-popover__body-footer--center</code> modifier. 
+      story: `This extension of Popover is used by components and patterns in the BTP area. Apply the <code>.fd-popover--btp</code> modifier class to <code>.fd-popover</code> base class. <br>To add padding to the Popover body use the <code>.fd-popover__body--padding</code> modifier class together with <code>.fd-popover__body</code> base class. <br>The content of the footer can be centered by using the <code>.fd-popover__body-footer--center</code> modifier. 
         `
     }
   }

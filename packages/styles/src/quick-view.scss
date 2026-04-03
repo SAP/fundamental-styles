@@ -63,6 +63,10 @@ $fd-quick-view-group-item-indent: 0.75rem;
     @include fd-ellipsis();
 
     color: var(--sapTile_TextColor);
+
+    &--wrap {
+      @include fd-wrap();
+    }
   }
 
   .#{$fd-namespace}-input:not(input) {
