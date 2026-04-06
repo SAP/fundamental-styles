@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.41.1-rc.4](https://github.com/SAP/fundamental-styles/compare/v0.41.1-rc.3...v0.41.1-rc.4) (2026-04-06)
+
+### Features
+
+- **styles:** add wrapping modifier classes for multiple elements [ci visual] ([#6268](https://github.com/SAP/fundamental-styles/issues/6268)) ([cdc4f00](https://github.com/SAP/fundamental-styles/commit/cdc4f0014b6cabe803c4ca826b21ccc6421047c6))
+
 ## [0.41.1-rc.3](https://github.com/SAP/fundamental-styles/compare/v0.41.1-rc.2...v0.41.1-rc.3) (2026-04-06)
 
 **Note:** Version bump only for package fundamental-styles
