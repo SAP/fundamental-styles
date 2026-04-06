@@ -65,6 +65,10 @@ body.fd-overlay-active::before {
     @include fd-disabled() {
       pointer-events: none;
     }
+
+    & > a {
+      white-space: nowrap;
+    }
   }
 
   &__wrapper {

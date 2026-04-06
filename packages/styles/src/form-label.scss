@@ -15,6 +15,10 @@ $block: #{$fd-namespace}-form-label;
     pointer-events: none;
   }
 
+  &--wrap {
+    @include fd-wrap();
+  }
+
   &--unit-description {
     color: var(--sapField_TextColor);
     margin-block: 0;

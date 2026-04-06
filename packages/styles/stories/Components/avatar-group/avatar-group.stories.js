@@ -87,8 +87,7 @@ IndividualType.parameters = {
     story: {
     },
     description: {
-      story: `The Avatar Individual Type component features avatars and an overflow shape, each with its own click area, catering to scenarios where users prioritize detailed information about specific group members. Avatars are displayed adjacent to each other without overlap, making it ideal for smaller groups like project teams.<br>
-      For Individual type add the \`fd-avatar-group--individual-type\` modifier class to the \`fd-avatar-group\` base class.`
+      story: `The Avatar Individual Type component features avatars and an overflow shape, each with its own click area, catering to scenarios where users prioritize detailed information about specific group members. Avatars are displayed adjacent to each other without overlap, making it ideal for smaller groups like project teams.<br>For Individual type add the \`fd-avatar-group--individual-type\` modifier class to the \`fd-avatar-group\` base class.`
     }
   }
 };

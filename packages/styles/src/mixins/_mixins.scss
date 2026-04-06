@@ -195,6 +195,9 @@
   align-items: center;
   transition: all $fd-animation-speed ease-in;
   line-height: inherit;
+  white-space: normal;
+  overflow-wrap: break-word;
+  word-break: break-word;
 
   @include fd-link-underline();
 
@@ -300,6 +303,12 @@
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+
+@mixin fd-wrap {
+  white-space: normal;
+  overflow: visible;
+  text-overflow: clip;
 }
 
 @mixin fd-flex-center {
