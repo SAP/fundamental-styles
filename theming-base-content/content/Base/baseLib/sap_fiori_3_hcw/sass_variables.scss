@@ -1,4 +1,4 @@
-/* Copyright (c) 2012-2025 SAP SE or an SAP affiliate company and Theming Base Content contributors. Licensed under the Apache License, Version 2.0 - see LICENSE.txt..  Theming Engine 16.1.14 */
+/* Copyright (c) 2012-2025 SAP SE or an SAP affiliate company and Theming Base Content contributors. Licensed under the Apache License, Version 2.0 - see LICENSE.txt..  Theming Engine 17.0.3 */
 $sapBrandColor: #e97624;
 $sapHighlightColor: #e97624;
 $sapBaseColor: #fff;
@@ -16,7 +16,6 @@ $sapBackgroundImageRepeat: false;
 $sapSelectedColor: #5c93ff;
 $sapHoverColor: #e97624;
 $sapActiveColor: #e97624;
-$sapHighlightTextColor: #000;
 $sapTitleColor: #000;
 $sapNegativeColor: #ab0000;
 $sapCriticalColor: #5c5c00;
@@ -387,7 +386,6 @@ $sapButton_Emphasized_Active_Background: #e97624;
 $sapButton_Emphasized_Active_BorderColor: #000;
 $sapButton_Emphasized_Active_TextColor: #000;
 $sapButton_Emphasized_TextShadow: transparent;
-$sapButton_Emphasized_FontWeight: bold;
 $sapButton_Reject_Background: #fff;
 $sapButton_Reject_BorderColor: #000;
 $sapButton_Reject_TextColor: #000;
@@ -1468,6 +1466,10 @@ $sapChart_Sequence_Neutral_Minus4_TextShadow: -1px 0 #000, 0 1px #000, 1px 0 #00
 $sapChart_Sequence_Neutral_Minus5: #000;
 $sapChart_Sequence_Neutral_Minus5_TextColor: #fff;
 $sapChart_Sequence_Neutral_Minus5_TextShadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
+$sapBreakpoint_S_Min: 0;
+$sapBreakpoint_M_Min: 600px;
+$sapBreakpoint_L_Min: 1024px;
+$sapBreakpoint_XL_Min: 1440px;
 $sapFontUrl_SAP-icons_ttf: url('../../../Base/baseLib/baseTheme/fonts/SAP-icons.ttf');
 $sapFontUrl_SAP-icons_woff: url('../../../Base/baseLib/baseTheme/fonts/SAP-icons.woff');
 $sapFontUrl_SAP-icons_woff2: url('../../../Base/baseLib/baseTheme/fonts/SAP-icons.woff2');
@@ -1526,7 +1528,7 @@ $sapFontUrl_72Mono_Bold_woff: url('../../../Base/baseLib/baseTheme/fonts/72Mono-
 $sapFontUrl_72Mono_Bold_full_woff2: url('../../../Base/baseLib/baseTheme/fonts/72Mono-Bold-full.woff2');
 $sapFontUrl_72Mono_Bold_full_woff: url('../../../Base/baseLib/baseTheme/fonts/72Mono-Bold-full.woff');
 $sapSapThemeId: sap_fiori_3_hcw;
-$sapBreakpoint_S_Min: 0;
-$sapBreakpoint_M_Min: 600px;
-$sapBreakpoint_L_Min: 1024px;
-$sapBreakpoint_XL_Min: 1440px;
+$sapHighlightTextColor: #000;
+$sapButton_Emphasized_FontWeight: bold;
+$sapShell_BackgroundGradient: linear-gradient(to bottom, #f2f2f2, #fff);
+$sapAt: @;

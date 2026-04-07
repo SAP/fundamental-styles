@@ -1,0 +1,12 @@
+{
+	"sEntity": "Library",
+	"sId": "icons",
+	"aBuildFiles": [
+		"svg"
+	],
+	"aFiles": [
+		"base",
+		"svg"
+	],
+	"sCompiler": "Less"
+}

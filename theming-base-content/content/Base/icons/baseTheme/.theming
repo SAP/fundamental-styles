@@ -1,0 +1,8 @@
+{
+	"sEntity": "Theme",
+	"sId": "baseTheme",
+	"sVendor": "SAP",
+	"sType": "ABSTRACT",
+	"sThemability": "PRIVATE",
+	"sReleaseStage": "GENERAL_AVAILABILITY"
+}

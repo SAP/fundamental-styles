@@ -1,0 +1,9 @@
+{
+	"sEntity": "Theme",
+	"sId": "sap_fiori_3_hcb",
+	"sVendor": "SAP",
+	"oExtends": "Base.icons.baseTheme",
+	"sType": "STANDARD",
+	"sThemability": "PUBLIC",
+	"sReleaseStage": "GENERAL_AVAILABILITY"
+}

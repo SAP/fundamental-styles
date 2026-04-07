@@ -67,19 +67,19 @@
 			"Id": "sapTextColor",
 			"CssValue": "#232629",
 			"Label": "Text Color",
-			"Tags": "Quick,Base,Content,Color,Font,Mobile"
+			"Tags": "Quick,Base,Content,Color,Mobile"
 		},
 		{
 			"Id": "sapLinkColor",
 			"CssValue": "#0a6ed1",
 			"Label": "Link Color",
-			"Tags": "Quick,Base,Content,Color,Font,Link"
+			"Tags": "Quick,Base,Content,Color,Link"
 		},
 		{
 			"Id": "sapContent_Selected_TextColor",
 			"CssValue": "#fff",
 			"Label": "Selected Text Color",
-			"Tags": "Base,Content,Color,Font"
+			"Tags": "Base,Content,Color"
 		},
 		{
 			"Id": "sapContent_Shadow0",
@@ -109,19 +109,19 @@
 			"Id": "sapShell_TextColor",
 			"CssValue": "#fff",
 			"Label": "Shell Text Color",
-			"Tags": "Base,Shell,Color,Font,Mobile"
+			"Tags": "Base,Shell,Color,Mobile"
 		},
 		{
 			"Id": "sapShell_InteractiveTextColor",
 			"CssValue": "#d1e8ff",
 			"Label": "Shell Interactive Text Color",
-			"Tags": "Base,Shell,Color,Font"
+			"Tags": "Base,Shell,Color"
 		},
 		{
 			"Id": "sapShell_GroupTitleTextColor",
 			"CssValue": "#232629",
 			"Label": "Shell Group Title Text Color",
-			"Tags": "Base,Shell,Color,Font"
+			"Tags": "Base,Shell,Color"
 		},
 		{
 			"Id": "sapShell_Shadow",
@@ -139,7 +139,7 @@
 			"Id": "sapShell_Navigation_TextColor",
 			"CssValue": "#fff",
 			"Label": "Shell Navigation Text Color",
-			"Tags": "Base,Shell,Color,Font"
+			"Tags": "Base,Shell,Color"
 		},
 		{
 			"Id": "sapTile_Background",
@@ -163,13 +163,13 @@
 			"Id": "sapTile_TextColor",
 			"CssValue": "#6a6d70",
 			"Label": "Tile Text Color",
-			"Tags": "Base,Tile,Color,Font"
+			"Tags": "Base,Tile,Color"
 		},
 		{
 			"Id": "sapTile_TitleTextColor",
 			"CssValue": "#232629",
 			"Label": "Tile Title Text Color",
-			"Tags": "Base,Tile,Color,Font"
+			"Tags": "Base,Tile,Color"
 		}
 	]
 }
