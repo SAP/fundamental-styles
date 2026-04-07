@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.41.1-rc.7](https://github.com/SAP/fundamental-styles/compare/v0.41.1-rc.6...v0.41.1-rc.7) (2026-04-07)
+
+### Bug Fixes
+
+- **styles:** add modifier class for Dynamic page text wrap [ci visual] ([#6273](https://github.com/SAP/fundamental-styles/issues/6273)) ([082d77e](https://github.com/SAP/fundamental-styles/commit/082d77e64b123797b2362c7d45207abfb52c0971))
+
 ## [0.41.1-rc.6](https://github.com/SAP/fundamental-styles/compare/v0.41.1-rc.5...v0.41.1-rc.6) (2026-04-07)
 
 ### Bug Fixes
@@ -6751,9 +6757,9 @@ Co-authored-by: droshev <mladen.droshev@sap.com>
 
 - added a new modifier class to fd-row to achieve even alignment of its elements:fd-row--top in a form.
   Before:
-      <div class="fd-row">
-      After:
-      <div class="fd-row fd-row--top">
+  <div class="fd-row">
+  After:
+  <div class="fd-row fd-row--top">
 
 ### Bug Fixes
 
