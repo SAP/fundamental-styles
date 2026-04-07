@@ -1,7 +1,6 @@
 @use "sass:map";
 
 :root {
-  --fdMessagePopover_Trigger_Font_Weight: var(--sapFontBoldFamily);
   --fdMessagePopover_Trigger_Border_Width: 0.0625rem;
   --fdMessagePopover_Active_Focus_Outline_Color: var(--sapContent_ContrastFocusColor);
 
