@@ -177,7 +177,7 @@ $block: #{$fd-namespace}-dynamic-page;
     }
 
     &--wrap {
-      white-space: initial;
+      @include fd-wrap();
     }
   }
 
@@ -190,7 +190,7 @@ $block: #{$fd-namespace}-dynamic-page;
     margin-top: 0.25rem;
 
     &--wrap {
-      white-space: initial;
+      @include fd-wrap();
     }
   }
 
@@ -201,6 +201,10 @@ $block: #{$fd-namespace}-dynamic-page;
     padding-block: 0;
     padding-inline: 1rem .2rem;
     vertical-align: baseline;
+
+    &--wrap {
+      @include fd-wrap();
+    }
   }
 
   &__title-subtitle-container {
