@@ -11,7 +11,7 @@ const workspaceProjects = {
  * The map of the project name and the project title
  */
 const projectNames = {
-    styles: 'SAP Fiori',
+    styles: 'SAP Design',
     ['common-css']: 'Common CSS',
     cx: 'CX'
 };

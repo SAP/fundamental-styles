@@ -2,7 +2,7 @@
   "$schema": "http://json-schema.org/draft-07/schema#",
   "$id": "https://sap.github.io/fundamental-styles/schemas/upload-collection.json",
   "title": "Upload Collection Component",
-  "description": "The upload collection control allows users to upload single or multiple files from a device (desktop, tablet, or phone) to the SAP Fiori app. Typically, uploaded files appear in an Attachments tab. However, files can also be displayed elsewhere.",
+  "description": "The upload collection control allows users to upload single or multiple files from a device (desktop, tablet, or phone) to the SAP app. Typically, uploaded files appear in an Attachments tab. However, files can also be displayed elsewhere.",
   "type": "object",
   "properties": {
     "baseClass": {

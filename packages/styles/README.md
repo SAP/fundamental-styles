@@ -21,7 +21,7 @@
 ## What is Fundamental Library Styles?
 
 Fundamental Library Styles is a light-weight presentation layer that can be used with developers' UI framework of
-choice (e.g.Angular, React, Vue, etc.). Developers can build consistent Fiori apps in any web-based technology, by
+choice (e.g.Angular, React, Vue, etc.). Developers can build consistent SAP apps in any web-based technology, by
 combining Fundamental Styles, library of stylesheets and HTML tags.
 
 **Learn more at http://sap.github.io/fundamental-styles/**

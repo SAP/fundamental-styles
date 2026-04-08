@@ -4669,7 +4669,7 @@
         {
           "id": "illustrated-message",
           "name": "Illustrated Message",
-          "description": "Illustrated messages for SAP Fiori are a simple yet powerful way to engage users and add personality to the experience.",
+          "description": "Illustrated messages for SAP are a simple yet powerful way to engage users and add personality to the experience.",
           "baseClass": "fd-illustrated-message",
           "cssImport": "fundamental-styles/dist/illustrated-message.css",
           "storybookUrl": "https://sap.github.io/fundamental-styles/?path=/docs/components-illustrated-message",
@@ -13199,7 +13199,7 @@
         {
           "id": "upload-collection",
           "name": "Upload Collection",
-          "description": "The upload collection control allows users to upload single or multiple files from a device (desktop, tablet, or phone) to the SAP Fiori app. Typically, uploaded files appear in an Attachments tab. However, files can also be displayed elsewhere.",
+          "description": "The upload collection control allows users to upload single or multiple files from a device (desktop, tablet, or phone) to the SAP app. Typically, uploaded files appear in an Attachments tab. However, files can also be displayed elsewhere.",
           "baseClass": "fd-upload-collection",
           "cssImport": "fundamental-styles/dist/upload-collection.css",
           "storybookUrl": "https://sap.github.io/fundamental-styles/?path=/docs/components-upload-collection",

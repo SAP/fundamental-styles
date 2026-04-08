@@ -30,13 +30,13 @@ import '../../../src/dynamic-page.scss';
 export default {
   title: 'Layouts/Dynamic Page',
   parameters: {
-    description: `The dynamic page is the foundation for all pages in SAP Fiori. It is a generic layout designed to support various use cases; therefore, the content of both the header and page can vary.
+    description: `The dynamic page is the foundation for all pages in SAP. It is a generic layout designed to support various use cases; therefore, the content of both the header and page can vary.
         The header of the dynamic page is collapsible, which helps the users focus on the actual page content but still ensures that important header information and actions are readily available.
 
 ## Usage
 **Use the dynamic page if:**
 
-- You want to build a freestyle application that uses the foundation layout components for SAP Fiori pages, such as the dynamic page header and the footer toolbar.
+- You want to build a freestyle application that uses the foundation layout components for SAP pages, such as the dynamic page header and the footer toolbar.
 
 **Do not use the dynamic page if:**
 

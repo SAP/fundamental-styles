@@ -10,13 +10,13 @@ import '../../../src/icon.scss';
 export default {
   title: 'Components/Illustrated Message',
   parameters: {
-    description: `Illustrated messages for SAP Fiori are a simple yet powerful way to engage users and add personality to the experience.
+    description: `Illustrated messages for SAP are a simple yet powerful way to engage users and add personality to the experience.
 
 ## Structure
 **Illustration** - \`.fd-illustrated-message__illustration\`
 Helps clarify the situation. Must always be paired with a message.
 To set the Illustration you need to provide a svg.
-Generalley, illustration from SAP Fiori Moments library intended to use.
+Generalley, illustration from SAP Moments library intended to use.
 
 **Message** - \`.fd-illustrated-message__figcaption\`<br>
 Consists of:

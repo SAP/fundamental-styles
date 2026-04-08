@@ -15,7 +15,7 @@ export default {
   title: 'Components/Upload Collection',
   parameters: {
     description: `
-The upload collection control allows users to upload single or multiple files from a device (desktop, tablet, or phone) to the SAP Fiori app. Typically, uploaded files appear in an Attachments tab. However, files can also be displayed elsewhere.
+The upload collection control allows users to upload single or multiple files from a device (desktop, tablet, or phone) to the SAP app. Typically, uploaded files appear in an Attachments tab. However, files can also be displayed elsewhere.
 
 ##Usage
 
