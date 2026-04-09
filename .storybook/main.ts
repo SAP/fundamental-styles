@@ -76,10 +76,6 @@ const config: StorybookConfig = {
     async viteFinal(config) {
         return mergeConfig(config, {
             base: process.env.STORYBOOK_BASE_HREF,
-            build: {
-                cssMinify: false,
-                cssCodeSplit: false,
-            },
             resolve: {
                 alias: {
                     'fundamental-styles/storybook': resolve(__dirname, '../packages/storybook/src/index.ts'),

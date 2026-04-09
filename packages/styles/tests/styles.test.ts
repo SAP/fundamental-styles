@@ -1,6 +1,5 @@
 import {describe, expect, it} from 'vitest'
 import { sync as fastGlobSync } from 'fast-glob';
-import {resolve} from 'path';
 
 const stories = fastGlobSync('packages/styles/stories/**/*.stories.js');
 
@@ -9,7 +8,7 @@ describe('Check stories', async () => {
         expect(stories.length).gt(1);
     });
     for (const storyFilePath of stories) {
-        const storyModule = await import(resolve(storyFilePath));
+        const storyModule = await import(storyFilePath);
         if (storyModule.default.title.match(/^(Visual|Ignore)/)) {
             continue;
         }
