@@ -77,7 +77,8 @@ const config: StorybookConfig = {
         return mergeConfig(config, {
             base: process.env.STORYBOOK_BASE_HREF,
             build: {
-                cssMinify: 'esbuild'
+                cssMinify: 'esbuild',
+                cssCodeSplit: false
             },
             resolve: {
                 alias: {

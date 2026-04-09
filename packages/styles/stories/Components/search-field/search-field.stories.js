@@ -8,7 +8,6 @@ import '../../../src/select.scss';
 import '../../../src/dialog.scss';
 import '../../../src/toolbar.scss';
 import '../../../src/button.scss';
-import '../../../src/icon.scss';
 import '../../../src/layout-grid.scss';
 import '../../../src/form-item.scss';
 import '../../../src/search-field.scss';

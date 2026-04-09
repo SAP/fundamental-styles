@@ -10,7 +10,6 @@ import '../../../src/input-group.scss';
 import '../../../src/icon.scss';
 import '../../../src/menu.scss';
 import '../../../src/avatar.scss';
-import '../../../src/input-group.scss';
 import '../../../src/popover.scss';
 import '../../../src/product-switch.scss';
 import '../../../src/shellbar.scss';

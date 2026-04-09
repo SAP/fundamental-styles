@@ -13,7 +13,6 @@ import '../../../src/bar.scss';
 import '../../../src/layout-grid.scss';
 import '../../../src/title.scss';
 import '../../../src/quick-view.scss';
-import '../../../src/title.scss';
 import '../../../src/link.scss';
 import '../../../src/form-layout-grid.scss';
 import '../../../src/form-group.scss';

@@ -13,7 +13,6 @@ import '../../../src/icon.scss';
 import '../../../src/bar.scss';
 import '../../../src/button.scss';
 import '../../../src/title.scss';
-import '../../../src/icon.scss';
 import '../../../src/list.scss';
 import '../../../src/checkbox.scss';
 import '../../../src/busy-indicator.scss';

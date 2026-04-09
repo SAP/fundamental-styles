@@ -13,7 +13,6 @@ import '../../../src/bar.scss';
 import '../../../src/title.scss';
 import '../../../src/button.scss';
 import '../../../src/icon.scss';
-import '../../../src/title.scss';
 import '../../../src/badge.scss';
 import '../../../src/navigation-list.scss';
 import '../../../src/input-group.scss';
