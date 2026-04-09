@@ -311,6 +311,10 @@ $navExternalLinkIndicator: #{$block}__external-link-indicator;
 
       & + .#{$navListContainer} {
         --fdNavigation_List_Container_Display: flex;
+
+        .#{$navListParentItems} {
+          --fdNavigation_List_Parent_Items_Display: flex;
+        }
       }
 
       & + .#{$navListParentItems} {

@@ -58,7 +58,14 @@ export default defineConfig({
             ...packagesAliases
         ]
     },
-    css: {},
+    css: {
+        preprocessorOptions: {
+            scss: {
+                // Ensure consistent import resolution
+                includePaths: ['packages/styles/src']
+            }
+        }
+    },
     build: {
         target: 'es2022',
         minify: 'terser',
