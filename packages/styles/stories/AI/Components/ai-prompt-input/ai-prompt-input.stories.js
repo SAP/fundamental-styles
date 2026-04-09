@@ -6,6 +6,7 @@ import '../../../../src/text.scss';
 import '../../../../src/prompt-input.scss';
 import '../../../../src/input.scss';
 import '../../../../src/input-group.scss';
+import '../../../../src/form-label.scss';
 import '../../../../src/form-message.scss';
 import '../../../../src/popover.scss';
 

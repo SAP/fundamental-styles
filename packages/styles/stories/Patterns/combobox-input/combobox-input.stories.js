@@ -15,6 +15,7 @@ import '../../../src/list.scss';
 import '../../../src/button.scss';
 import '../../../src/dialog.scss';
 import '../../../src/bar.scss';
+import '../../../src/select.scss';
 import '../../../src/form-item.scss';
 export default {
   title: 'Patterns/Combobox Input',

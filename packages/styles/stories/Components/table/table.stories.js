@@ -24,6 +24,7 @@ import borderlessbodyExampleHtml from "./borderlessbody.example.html?raw";
 import borderlessExampleHtml from "./borderless.example.html?raw";
 import primaryExampleHtml from "./primary.example.html?raw";
 import '../../../src/button.scss';
+import '../../../src/form-item.scss';
 import '../../../src/form-label.scss';
 import '../../../src/fieldset.scss';
 import '../../../src/icon.scss';

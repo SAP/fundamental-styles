@@ -1,6 +1,7 @@
 import aiAcknowledgmentExampleHtml from "./ai-acknowledgment.example.html?raw";
 import '../../../../src/form-label.scss';
 import '../../../../src/form-item.scss';
+import '../../../../src/form-group.scss';
 import '../../../../src/checkbox.scss';
 import '../../../../src/button.scss';
 import '../../../../src/icon.scss';

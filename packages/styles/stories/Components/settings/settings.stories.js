@@ -5,6 +5,7 @@ import smExampleHtml from "./sm.example.html?raw";
 
 import '../../../src/icon.scss';
 import '../../../src/input.scss';
+import '../../../src/input-group.scss';
 import '../../../src/title.scss';
 import '../../../src/bar.scss';
 import '../../../src/list.scss';

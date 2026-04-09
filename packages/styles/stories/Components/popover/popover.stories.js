@@ -8,9 +8,11 @@ import controlExamplesBtpExampleHtml from "./control-examples-btp.example.html?r
 import '../../../src/avatar.scss';
 import '../../../src/bar.scss';
 import '../../../src/button.scss';
+import '../../../src/form-item.scss';
 import '../../../src/icon.scss';
 import '../../../src/menu.scss';
 import '../../../src/popover.scss';
+import '../../../src/title.scss';
 import '../../../src/segmented-button.scss';
 import '../../../src/layout-grid.scss';
 export default {

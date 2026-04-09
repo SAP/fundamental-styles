@@ -18,6 +18,8 @@ import '../../../src/list.scss';
 import '../../../src/checkbox.scss';
 import '../../../src/busy-indicator.scss';
 import '../../../src/form-label.scss';
+import '../../../src/form-item.scss';
+import '../../../src/form-group.scss';
 import '../../../src/form-layout-grid.scss';
 import '../../../src/layout-grid.scss';
 import '../../../src/input.scss';

@@ -2,6 +2,8 @@ import truncatedTextExampleHtml from "./truncated-text.example.html?raw";
 import disabledLinkExampleHtml from "./disabled-link.example.html?raw";
 import textWithLinkExampleHtml from "./text-with-link.example.html?raw";
 import textExampleHtml from "./text.example.html?raw";
+import '../../../src/object-attribute.scss';
+import '../../../src/link.scss';
 export default {
   title: 'Dev/Object Attribute'
 };

@@ -7,6 +7,7 @@ import matchPopoverBodySizeExampleHtml from "./match-popover-body-size.example.h
 import groupingExampleHtml from "./grouping.example.html?raw";
 import asFormItemExampleHtml from "./as-form-item.example.html?raw";
 import '../../../src/form-label.scss';
+import '../../../src/form-item.scss';
 import '../../../src/popover.scss';
 import '../../../src/radio.scss';
 import '../../../src/title.scss';

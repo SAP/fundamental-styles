@@ -14,6 +14,7 @@ import groupHeaderExampleHtml from "./group-header.example.html?raw";
 import '../../../../../src/list.scss';
 import '../../../../../src/icon.scss';
 import '../../../../../src/checkbox.scss';
+import '../../../../../src/form-item.scss';
 import '../../../../../src/link.scss';
 import '../../../../../src/button.scss';
 import '../../../../../src/info-label.scss';

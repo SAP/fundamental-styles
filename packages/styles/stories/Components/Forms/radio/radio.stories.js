@@ -3,6 +3,7 @@ import interactionStatesExampleHtml from "./interaction-states.example.html?raw"
 import inlineExampleHtml from "./inline.example.html?raw";
 import primaryExampleHtml from "./primary.example.html?raw";
 import '../../../../src/radio.scss';
+import '../../../../src/form-item.scss';
 import '../../../../src/form-label.scss';
 import '../../../../src/fieldset.scss';
 import '../../../../src/form-group.scss';

@@ -3,6 +3,7 @@ import textAndIconExampleHtml from "./text-and-icon.example.html?raw";
 import textOnlyPhoneExampleHtml from "./text-only-phone.example.html?raw";
 import textOnlyExampleHtml from "./text-only.example.html?raw";
 import '../../../src/tool-header.scss';
+import '../../../src/navigation.scss';
 import '../../../src/button.scss';
 import '../../../src/icon.scss';
 import '../../../src/list.scss';

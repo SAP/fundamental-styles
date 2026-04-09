@@ -2,6 +2,8 @@ import semanticSwitchExampleHtml from "./semantic-switch.example.html?raw";
 import withTextExampleHtml from "./with-text.example.html?raw";
 import basicExampleHtml from "./basic.example.html?raw";
 import '../../../src/form-label.scss';
+import '../../../src/form-item.scss';
+import '../../../src/form-group.scss';
 import '../../../src/switch.scss';
 import '../../../src/icon.scss';
 export default {

@@ -13,6 +13,7 @@ import '../../../../src/radio.scss';
 import '../../../../src/checkbox.scss';
 import '../../../../src/avatar.scss';
 import '../../../../src/link.scss';
+import '../../../../src/form-item.scss';
 import '../../../../src/object-status.scss';
 export default {
   title: 'Components/Grid List/Selection',
