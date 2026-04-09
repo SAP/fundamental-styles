@@ -1,7 +1,6 @@
 // @ts-check - Use tsconfig.config.json for this file
 /// <reference types="vitest/config" />
 import { defineConfig } from 'vitest/config';
-import tsconfigPaths from 'vite-tsconfig-paths'
 import react from '@vitejs/plugin-react'
 
 import {resolve, join} from "path";
@@ -50,10 +49,9 @@ const packagesAliases = [
 ];
 
 export default defineConfig({
-    plugins: [tsconfigPaths({
-        root: __dirname,
-    }), react()],
+    plugins: [react()],
     resolve: {
+        tsconfigPaths: true,
         alias: [
             ...packagesAliases
         ]

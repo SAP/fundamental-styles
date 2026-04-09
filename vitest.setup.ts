@@ -1,16 +1,14 @@
-/* eslint-disable @typescript-eslint/no-empty-interface,@typescript-eslint/no-explicit-any,@typescript-eslint/no-unused-vars, @typescript-eslint/no-namespace */
+/* eslint-disable @typescript-eslint/no-empty-interface,@typescript-eslint/no-explicit-any,@typescript-eslint/no-unused-vars */
 import * as matchers from "vitest-axe/matchers";
 import {expect} from "vitest";
-import {A as AxeMatchers} from "vitest-axe/dist/to-have-no-violations-e1679411";
+import type {AxeMatchers} from "vitest-axe/matchers";
 
 expect.extend(matchers);
 
-declare global {
-    namespace Vi {
-        interface Assertion<T = any> extends AxeMatchers {
-        }
+declare module "vitest" {
+    interface Assertion<T = any> extends AxeMatchers {
+    }
 
-        interface AsymmetricMatchersContaining extends AxeMatchers {
-        }
+    interface AsymmetricMatchersContaining extends AxeMatchers {
     }
 }
