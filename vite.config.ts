@@ -62,6 +62,7 @@ export default defineConfig({
     build: {
         target: 'es2022',
         minify: 'terser',
+        cssMinify: 'esbuild',
         reportCompressedSize: true,
         sourcemap: false
     },
