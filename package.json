@@ -25,7 +25,7 @@
         "yarn": ">= 4.12.0",
         "node": ">= 22"
     },
-    "packageManager": "yarn@4.12.0",
+    "packageManager": "yarn@4.13.0",
     "scripts": {
         "transform-stories": "ts-node stories-transformer.ts",
         "build": "npx nx build workspace-plugins && npx nx run-many --target=build --all",
@@ -73,21 +73,21 @@
     "devDependencies": {
         "@actions/core": "1.11.1",
         "@babel/core": "7.23.9",
-        "@chromatic-com/storybook": "^5.0.1",
+        "@chromatic-com/storybook": "^5.1.1",
         "@commitlint/cli": "20.0.0",
         "@commitlint/config-conventional": "20.0.0",
-        "@nx/devkit": "22.5.3",
-        "@nx/eslint": "22.5.3",
-        "@nx/eslint-plugin": "22.5.3",
-        "@nx/js": "22.5.3",
-        "@nx/plugin": "22.5.3",
-        "@nx/react": "22.5.3",
-        "@nx/web": "22.5.3",
+        "@nx/devkit": "22.6.4",
+        "@nx/eslint": "22.6.4",
+        "@nx/eslint-plugin": "22.6.4",
+        "@nx/js": "22.6.4",
+        "@nx/plugin": "22.6.4",
+        "@nx/react": "22.6.4",
+        "@nx/web": "22.6.4",
         "@sap-theming/theming-base-content": "11.34.1",
-        "@storybook/addon-a11y": "^10.2.14",
-        "@storybook/addon-docs": "^10.2.14",
-        "@storybook/addon-links": "^10.2.14",
-        "@storybook/html-vite": "^10.2.14",
+        "@storybook/addon-a11y": "^10.3.5",
+        "@storybook/addon-docs": "^10.3.5",
+        "@storybook/addon-links": "^10.3.5",
+        "@storybook/html-vite": "^10.3.5",
         "@storybook/icons": "^2.0.1",
         "@swc/core": "1.15.8",
         "@testing-library/react": "15.0.6",
@@ -115,7 +115,7 @@
         "eslint-plugin-jsx-a11y": "6.10.1",
         "eslint-plugin-react": "7.31.11",
         "eslint-plugin-react-hooks": "5.0.0",
-        "eslint-plugin-storybook": "^10.2.14",
+        "eslint-plugin-storybook": "^10.3.5",
         "fast-glob": "3.3.2",
         "fs-extra": "11.2.0",
         "git-semver-tags": "4.1.1",
@@ -128,7 +128,7 @@
         "markdown-to-jsx": "7.1.2",
         "normalize.css": "8.0.1",
         "npm-run-all": "4.1.5",
-        "nx": "22.5.3",
+        "nx": "22.6.4",
         "nx-stylelint": "17.1.4",
         "postcss": "8.4.38",
         "postcss-banner": "4.0.1",
@@ -145,7 +145,7 @@
         "semver": "7.5.4",
         "standard-version": "9.3.2",
         "start-server-and-test": "1.14.0",
-        "storybook": "^10.2.14",
+        "storybook": "^10.3.5",
         "stylelint": "16.8.2",
         "stylelint-config-standard": "36.0.1",
         "stylelint-config-standard-scss": "^13.1.0",
@@ -161,7 +161,7 @@
         "vitest-axe": "0.1.0"
     },
     "resolutions": {
-        "nx": "22.5.3"
+        "nx": "22.6.4"
     },
     "browserslist": [
         "last 2 versions"
