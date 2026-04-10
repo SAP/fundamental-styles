@@ -8,7 +8,6 @@ import defaultExampleHtml from "./default.example.html?raw";
 import '../../../src/button.scss';
 import '../../../src/icon.scss';
 import '../../../src/input.scss';
-import '../../../src/input-group.scss';
 import '../../../src/segmented-button.scss';
 import '../../../src/avatar.scss';
 import '../../../src/bar.scss';

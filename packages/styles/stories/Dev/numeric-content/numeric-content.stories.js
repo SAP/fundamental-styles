@@ -4,8 +4,6 @@ import launchIconLargeExampleHtml from "./launch-icon-large.example.html?raw";
 import smallExampleHtml from "./small.example.html?raw";
 import mediumExampleHtml from "./medium.example.html?raw";
 import largeExampleHtml from "./large.example.html?raw";
-import '../../../src/numeric-content.scss';
-import '../../../src/icon.scss';
 export default {
   title: 'Dev/Numeric Content'
 };

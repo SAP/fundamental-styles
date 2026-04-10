@@ -1,7 +1,6 @@
 import {describe, expect, it} from 'vitest'
 import glob from 'glob';
 import {axe} from "vitest-axe";
-import { resolve } from 'path';
 
 const stories = glob.sync('packages/styles/stories/**/*.stories.+(ts|js|jsx|tsx)', {
     ignore: [
@@ -40,7 +39,7 @@ describe('Check Accessibility', async () => {
         expect(stories.length).gt(1);
     });
     for (const storyFilePath of stories) {
-        const storyModule = await import(resolve(storyFilePath));
+        const storyModule = await import(storyFilePath);
         if (storyModule.default.title.match(/^(Visual|Ignore)/)) {
             continue;
         }

@@ -3,7 +3,6 @@ import navigationSnappedExampleHtml from "./navigation-snapped.example.html?raw"
 import navigationPopupExampleHtml from "./navigation-popup.example.html?raw";
 import navigationLegacyExampleHtml from "./navigation-legacy.example.html?raw";
 
-import '../../../../src/list.scss';
 import '../../../../src/navigation.scss';
 import '../../../../src/icon.scss';
 import '../../../../src/popover.scss';

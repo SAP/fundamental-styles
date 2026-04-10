@@ -8,7 +8,6 @@ import twoMonthViewExampleHtml from "./two-month-view.example.html?raw";
 import '../../../src/bar.scss';
 import '../../../src/dialog.scss';
 import '../../../src/tile.scss';
-import '../../../src/title.scss';
 import '../../../src/calendar.scss';
 import '../../../src/button.scss';
 import '../../../src/segmented-button.scss';

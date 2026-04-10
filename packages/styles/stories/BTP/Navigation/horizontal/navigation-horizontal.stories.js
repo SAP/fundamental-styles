@@ -5,7 +5,6 @@ import '../../../../src/navigation.scss';
 import '../../../../src/icon.scss';
 import '../../../../src/popover.scss';
 import '../../../../src/menu.scss';
-import '../../../../src/list.scss';
 import '../../../../src/button.scss';
 
 export default {

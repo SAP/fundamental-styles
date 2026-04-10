@@ -1,6 +1,5 @@
 import tabletModeExampleHtml from "./tablet-mode.example.html?raw";
 import '../../../../src/popover.scss';
-import '../../../../src/form-label.scss';
 import '../../../../src/input.scss';
 import '../../../../src/input-group.scss';
 import '../../../../src/time.scss';

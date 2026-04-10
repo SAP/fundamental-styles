@@ -6,6 +6,8 @@ import '../../../src/bar.scss';
 import '../../../src/button.scss';
 import '../../../src/form-label.scss';
 import '../../../src/form-item.scss';
+import '../../../src/button.scss';
+import '../../../src/button.scss';
 import '../../../src/icon.scss';
 import '../../../src/input.scss';
 export default {

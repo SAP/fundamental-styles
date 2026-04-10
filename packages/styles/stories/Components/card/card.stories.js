@@ -22,7 +22,6 @@ import '../../../src/table.scss';
 import '../../../src/checkbox.scss';
 import '../../../src/list.scss';
 import '../../../src/link.scss';
-import '../../../src/text.scss';
 import '../../../src/icon.scss';
 import '../../../src/form-label.scss';
 import '../../../src/rating-indicator.scss';

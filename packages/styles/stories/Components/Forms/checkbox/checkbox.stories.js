@@ -1,10 +1,8 @@
 import inlineExampleHtml from "./inline.example.html?raw";
 import requiredExampleHtml from "./required.example.html?raw";
 import '../../../../src/form-label.scss';
-import '../../../../src/form-item.scss';
 import '../../../../src/checkbox.scss';
 import '../../../../src/fieldset.scss';
-import '../../../../src/form-group.scss';
 export default {
   title: 'Components/Forms/Checkbox',
   parameters: {

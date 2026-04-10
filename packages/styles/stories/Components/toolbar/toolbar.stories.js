@@ -5,8 +5,6 @@ import overflowExampleHtml from "./overflow.example.html?raw";
 import primaryExampleHtml from "./primary.example.html?raw";
 import '../../../src/toolbar.scss';
 import '../../../src/button.scss';
-import '../../../src/form-label.scss';
-import '../../../src/title.scss';
 import '../../../src/icon.scss';
 import '../../../src/popover.scss';
 export default {

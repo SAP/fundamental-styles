@@ -6,7 +6,6 @@ import borderlessExampleHtml from "./borderless.example.html?raw";
 import primaryExampleHtml from "./primary.example.html?raw";
 import '../../../src/button.scss';
 import '../../../src/checkbox.scss';
-import '../../../src/form-item.scss';
 import '../../../src/icon.scss';
 import '../../../src/radio.scss';
 import '../../../src/tree.scss';

@@ -7,7 +7,6 @@ import '../../../../src/form-item.scss';
 import '../../../../src/form-group.scss';
 import '../../../../src/button.scss';
 import '../../../../src/icon.scss';
-import '../../../../src/popover.scss';
 import '../../../../src/ai-busy-indicator.scss';
 import '../../../../src/ai-loading-bar.scss';
 import '../../../../src/ai-text.scss';

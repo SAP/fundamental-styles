@@ -5,11 +5,11 @@ import overflowToolbarExampleHtml from "./overflow-toolbar.example.html?raw";
 import responsivenessExampleHtml from "./responsiveness.example.html?raw";
 
 import '../../../src/button.scss';
-import '../../../src/input.scss';
 import '../../../src/input-group.scss';
 import '../../../src/icon.scss';
 import '../../../src/menu.scss';
 import '../../../src/avatar.scss';
+import '../../../src/input-group.scss';
 import '../../../src/popover.scss';
 import '../../../src/product-switch.scss';
 import '../../../src/shellbar.scss';
@@ -18,7 +18,6 @@ import '../../../src/object-status.scss';
 import '../../../src/object-marker.scss';
 import '../../../src/switch.scss';
 import '../../../src/toolbar.scss';
-import '../../../src/user-menu.scss';
 
 export default {
   title: 'Components/Shellbar',
