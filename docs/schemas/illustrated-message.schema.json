@@ -2,7 +2,7 @@
   "$schema": "http://json-schema.org/draft-07/schema#",
   "$id": "https://sap.github.io/fundamental-styles/schemas/illustrated-message.json",
   "title": "Illustrated Message Component",
-  "description": "Illustrated messages for SAP Fiori are a simple yet powerful way to engage users and add personality to the experience.",
+  "description": "Illustrated messages for SAP are a simple yet powerful way to engage users and add personality to the experience.",
   "type": "object",
   "properties": {
     "baseClass": {

@@ -11,7 +11,7 @@ Design system provides three content density modes:
 Most of the Components support `compact` mode, they can be rendered with smaller sizes, margins and paddings in order to preserve as much space as possible.
 To enable compact mode, use the class `.is-compact` on the `body`, `html` or any other relevant region of your application.
 
-More information about the content density can be found in the [SAP Fiori Design Guidelines](https://experience.sap.com/fiori-design-web/cozy-compact).
+More information about the content density can be found in the [SAP Design Guidelines](https://experience.sap.com/fiori-design-web/cozy-compact).
 
 ## Usage
 

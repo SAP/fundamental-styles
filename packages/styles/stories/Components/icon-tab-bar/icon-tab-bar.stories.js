@@ -188,7 +188,7 @@ Navigation.storyName = 'Navigation Icon Tab Bar (Shell Navigation)';
 Navigation.parameters = {
   docs: {
     description: {
-      story: `The Navigation Tab Bar is the main/default navigation displayed on the SAP Fiori launchpad home page. It offers the user an easy access to multiple pages per space. The background color of the Shell Navigation is connected the Home/Shell Header to properly differentiate the global shell navigation versus any application specific navigation. The Navigation Bar snaps to top and remains visible while scrolling. It is not visible in App view. <br>The implementation is based on UniversalIconTabBar with some different color parameters that are specific to Shell Bar. <br>If there are more Tabs than the screen can accommodate, the remaining Tabs move into an Overflow.`
+      story: `The Navigation Tab Bar is the main/default navigation displayed on the SAP launchpad home page. It offers the user an easy access to multiple pages per space. The background color of the Shell Navigation is connected the Home/Shell Header to properly differentiate the global shell navigation versus any application specific navigation. The Navigation Bar snaps to top and remains visible while scrolling. It is not visible in App view. <br>The implementation is based on UniversalIconTabBar with some different color parameters that are specific to Shell Bar. <br>If there are more Tabs than the screen can accommodate, the remaining Tabs move into an Overflow.`
     }
   }
 };

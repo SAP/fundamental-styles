@@ -44,7 +44,7 @@ nx g @nx/js:library package-name --importPath=@fundamental-styles/<package-name>
 ```diff
 @@ -92,7 +93,8 @@ export const themes = {
  const projectNames = {
-     styles: 'SAP Fiori',
+     styles: 'SAP Design',
      ['common-css']: 'Common CSS',
 -    cx: 'CX'
 +    cx: 'CX',
