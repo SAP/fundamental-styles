@@ -36,7 +36,8 @@
             "fundamental-styles/utils": ["packages/utils/src/index.ts"],
             "styles": ["packages/styles", "packages/styles/index.ts"],
             "theming-preview": ["packages/theming-preview/src/index.js"],
-            "workspace-plugins": ["packages/workspace-plugins/src/index.ts"]
+            "workspace-plugins": ["packages/workspace-plugins/src/index.ts"],
+            "@fundamental-styles/mcp": ["packages/mcp/src/index.ts"]
         },
         "skipLibCheck": true
     },

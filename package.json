@@ -76,6 +76,7 @@
         "@chromatic-com/storybook": "^5.1.1",
         "@commitlint/cli": "20.0.0",
         "@commitlint/config-conventional": "20.0.0",
+        "@modelcontextprotocol/sdk": "^1.29.0",
         "@nx/devkit": "22.6.4",
         "@nx/eslint": "22.6.4",
         "@nx/eslint-plugin": "22.6.4",
@@ -158,7 +159,8 @@
         "vite": "7.3.2",
         "vite-tsconfig-paths": "6.1.1",
         "vitest": "0.30.1",
-        "vitest-axe": "0.1.0"
+        "vitest-axe": "0.1.0",
+        "zod": "^4.3.6"
     },
     "resolutions": {
         "nx": "22.6.4"

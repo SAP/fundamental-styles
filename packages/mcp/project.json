@@ -1,0 +1,68 @@
+{
+    "name": "mcp",
+    "$schema": "../../node_modules/nx/schemas/project-schema.json",
+    "sourceRoot": "packages/mcp/src",
+    "projectType": "library",
+    "targets": {
+        "build": {
+            "executor": "@nx/js:tsc",
+            "outputs": ["{options.outputPath}"],
+            "options": {
+                "outputPath": "dist/packages/mcp",
+                "tsConfig": "packages/mcp/tsconfig.lib.json",
+                "packageJson": "packages/mcp/package.json",
+                "main": "packages/mcp/src/index.ts",
+                "assets": [
+                    {
+                        "input": "docs",
+                        "glob": "*.json",
+                        "output": "data"
+                    },
+                    {
+                        "input": "docs",
+                        "glob": "*.md",
+                        "output": "data"
+                    },
+                    {
+                        "input": "docs/schemas",
+                        "glob": "*.schema.json",
+                        "output": "data/schemas"
+                    },
+                    {
+                        "input": "packages/styles/stories",
+                        "glob": "**/*.example.html",
+                        "output": "data/examples"
+                    },
+                    {
+                        "input": ".",
+                        "glob": "CHANGELOG.md",
+                        "output": "data"
+                    }
+                ]
+            }
+        },
+        "test": {
+            "executor": "nx:run-commands",
+            "options": {
+                "command": "vitest packages/mcp/tests --run"
+            }
+        },
+        "serve": {
+            "executor": "nx:run-commands",
+            "options": {
+                "command": "npx tsx packages/mcp/src/index.ts"
+            }
+        },
+        "inspect": {
+            "executor": "nx:run-commands",
+            "options": {
+                "command": "npx @modelcontextprotocol/inspector npx tsx packages/mcp/src/index.ts"
+            }
+        },
+        "lint": {
+            "executor": "@nx/eslint:lint",
+            "outputs": ["{options.outputFile}"]
+        }
+    },
+    "tags": []
+}
