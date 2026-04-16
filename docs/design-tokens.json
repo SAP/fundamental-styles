@@ -4,7 +4,7 @@
   "version": "1.0.0",
   "generatedBy": "scripts/generate-design-tokens.js",
   "source": "@sap-theming/theming-base-content (sap_horizon)",
-  "totalTokens": 1522,
+  "totalTokens": 1527,
   "relatedFiles": {
     "componentCatalog": "docs/component-catalog.json",
     "utilityClasses": "docs/utility-classes.json"
@@ -2025,7 +2025,7 @@
         },
         {
           "name": "--sapButton_Selected_TokenBorderWidth",
-          "value": ".125rem",
+          "value": ".0625rem",
           "cssUsage": "var(--sapButton_Selected_TokenBorderWidth)"
         },
         {
@@ -2679,6 +2679,11 @@
           "cssUsage": "var(--sapGroup_BorderWidth)"
         },
         {
+          "name": "--sapGroup_ContentAlternatingBackground",
+          "value": "#eaecee",
+          "cssUsage": "var(--sapGroup_ContentAlternatingBackground)"
+        },
+        {
           "name": "--sapGroup_ContentBackground",
           "value": "#fff",
           "cssUsage": "var(--sapGroup_ContentBackground)"
@@ -2817,6 +2822,11 @@
           "name": "--sapShell_Background",
           "value": "#eff1f2",
           "cssUsage": "var(--sapShell_Background)"
+        },
+        {
+          "name": "--sapShell_BackgroundGradient",
+          "value": "linear-gradient(to bottom, #eff1f2, #eff1f2)",
+          "cssUsage": "var(--sapShell_BackgroundGradient)"
         },
         {
           "name": "--sapShell_BackgroundImage",
@@ -3217,6 +3227,21 @@
           "name": "--sapShell_GroupTitleTextShadow",
           "value": "0 0 0.125rem #fff",
           "cssUsage": "var(--sapShell_GroupTitleTextShadow)"
+        },
+        {
+          "name": "--sapShell_HeroBanner_Background",
+          "value": "#0070f2",
+          "cssUsage": "var(--sapShell_HeroBanner_Background)"
+        },
+        {
+          "name": "--sapShell_HeroBanner_BackgroundImage",
+          "value": "linear-gradient(135deg, #0000 45%, #00000073 75%)",
+          "cssUsage": "var(--sapShell_HeroBanner_BackgroundImage)"
+        },
+        {
+          "name": "--sapShell_HeroBanner_TextColor",
+          "value": "#fff",
+          "cssUsage": "var(--sapShell_HeroBanner_TextColor)"
         },
         {
           "name": "--sapShell_Hover_Background",
@@ -4244,7 +4269,7 @@
         },
         {
           "name": "--sapContent_ImagePlaceholderForegroundColor",
-          "value": "#5b738b",
+          "value": "#556b82",
           "cssUsage": "var(--sapContent_ImagePlaceholderForegroundColor)"
         },
         {
