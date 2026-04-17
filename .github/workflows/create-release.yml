@@ -124,7 +124,7 @@ jobs:
                   fi
                   echo "Using npm tag: $tag"
                   
-                  for package_path in dist/packages/styles dist/packages/common-css dist/packages/theming-preview dist/packages/cx; do
+                  for package_path in dist/packages/styles dist/packages/common-css dist/packages/theming-preview dist/packages/cx dist/packages/mcp; do
                     if [ -f "$package_path/package.json" ]; then
                       package_name=$(node -p "require('./$package_path/package.json').name")
                       echo "Publishing $package_name from $package_path with tag $tag"
