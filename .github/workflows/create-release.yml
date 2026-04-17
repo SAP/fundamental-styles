@@ -130,7 +130,7 @@ jobs:
                       package_version=$(node -p "require('./$package_path/package.json').version")
                       echo "Publishing $package_name@$package_version from $package_path with tag $tag"
                       cd "$package_path"
-                      if npm publish --tag "$tag" --provenance; then
+                      if npm publish --tag "$tag" --provenance --access public; then
                         echo "Successfully published $package_name@$package_version"
                       else
                         if npm view "$package_name@$package_version" version 2>/dev/null; then
