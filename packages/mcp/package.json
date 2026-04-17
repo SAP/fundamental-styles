@@ -1,6 +1,6 @@
 {
     "name": "@fundamental-styles/mcp",
-    "version": "0.41.2-rc.2",
+    "version": "0.41.3-rc.0",
     "description": "MCP server exposing fundamental-styles CSS component metadata for AI coding assistants",
     "license": "Apache-2.0",
     "repository": {
