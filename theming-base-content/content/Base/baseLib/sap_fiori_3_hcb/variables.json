@@ -225,6 +225,9 @@
 		"sapShell_NeutralColor": "#fff",
 		"sapShell_Assistant_ForegroundColor": "#fff",
 		"sapShell_SubBrand_TextColor": "#fff",
+		"sapShell_HeroBanner_Background": "#223548",
+		"sapShell_HeroBanner_BackgroundImage": "linear-gradient(135deg, #0000 45%, #00000073 75%)",
+		"sapShell_HeroBanner_TextColor": "#fff",
 		"sapShell_Category_1_Background": "#000",
 		"sapShell_Category_1_BorderColor": "#6bd3ff",
 		"sapShell_Category_1_TextColor": "#fff",
@@ -605,6 +608,7 @@
 		"sapGroup_TitleTextColor": "#fff",
 		"sapGroup_Title_FontSize": "1.125rem",
 		"sapGroup_ContentBackground": "#000",
+		"sapGroup_ContentAlternatingBackground": "#000",
 		"sapGroup_ContentBorderColor": "#fff",
 		"sapGroup_BorderWidth": ".0625rem",
 		"sapGroup_BorderCornerRadius": "0",
@@ -1531,7 +1535,6 @@
 		"sapSapThemeId": "sap_fiori_3_hcb",
 		"sapHighlightTextColor": "#fff",
 		"sapButton_Emphasized_FontWeight": "bold",
-		"sapShell_BackgroundGradient": "linear-gradient(to bottom, #000, #050505)",
-		"sapAt": "@"
+		"sapShell_BackgroundGradient": "linear-gradient(to bottom, #000, #050505)"
 	}
 }

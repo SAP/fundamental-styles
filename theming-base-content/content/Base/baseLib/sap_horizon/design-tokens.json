@@ -1350,6 +1350,55 @@
         "type": "internal"
       }
     },
+    "HeroBanner": {
+      "_sapShell_HeroBanner_TextColorH": {
+        "value": "{Text._sapContent_ContrastTextColorH}",
+        "type": "internal"
+      },
+      "_sapShell_HeroBanner_TextColorS": {
+        "value": "{Text._sapContent_ContrastTextColorS}",
+        "type": "internal"
+      },
+      "_sapShell_HeroBanner_TextColorL": {
+        "value": "{Text._sapContent_ContrastTextColorL}",
+        "type": "internal"
+      },
+      "_sapShell_HeroBanner_TextColorA": {
+        "value": "{Text._sapContent_ContrastTextColorA}",
+        "type": "internal"
+      },
+      "sapShell_HeroBanner_TextColor": {
+        "value": "hsla({Shell.HeroBanner._sapShell_HeroBanner_TextColorH}, {Shell.HeroBanner._sapShell_HeroBanner_TextColorS}, {Shell.HeroBanner._sapShell_HeroBanner_TextColorL}, {Shell.HeroBanner._sapShell_HeroBanner_TextColorA})",
+        "type": "color",
+        "description": "The text color of the shell hero banner, used for salutation and date. Layered on top of sapShell_HeroBanner_BackgroundImage and sapShell_HeroBanner_Background."
+      },
+      "sapShell_HeroBanner_BackgroundImage": {
+        "value": "linear-gradient(135deg, hsla({_undefinedH}, {_undefinedS}, {_undefinedL}, {_undefinedA}) 45%, hsla({_undefinedH}, {_undefinedS}, {_undefinedL}, {_undefinedA}) 75%)",
+        "type": "linear-gradient",
+        "description": "The background image of the shell hero banner. Top-left aligned, covering the shell hero banner. Layered on top of sapShell_HeroBanner_Background."
+      },
+      "_sapShell_HeroBanner_BackgroundH": {
+        "value": "212.23140495867767",
+        "type": "internal"
+      },
+      "_sapShell_HeroBanner_BackgroundS": {
+        "value": "100%",
+        "type": "internal"
+      },
+      "_sapShell_HeroBanner_BackgroundL": {
+        "value": "47.45098039215686%",
+        "type": "internal"
+      },
+      "_sapShell_HeroBanner_BackgroundA": {
+        "value": "1",
+        "type": "internal"
+      },
+      "sapShell_HeroBanner_Background": {
+        "value": "hsla({Shell.HeroBanner._sapShell_HeroBanner_BackgroundH}, {Shell.HeroBanner._sapShell_HeroBanner_BackgroundS}, {Shell.HeroBanner._sapShell_HeroBanner_BackgroundL}, {Shell.HeroBanner._sapShell_HeroBanner_BackgroundA})",
+        "type": "color",
+        "description": "The background color of the shell hero banner."
+      }
+    },
     "_sapShell_SubBrand_TextColorH": {
       "value": "{Main._sapBrandColorH}",
       "type": "internal"
@@ -21319,6 +21368,27 @@
       "value": "hsla({Container._sapGroup_ContentBorderColorH}, {Container._sapGroup_ContentBorderColorS}, {Container._sapGroup_ContentBorderColorL}, {Container._sapGroup_ContentBorderColorA})",
       "type": "color",
       "description": "The color of the borders of a group's content area."
+    },
+    "_sapGroup_ContentAlternatingBackgroundH": {
+      "value": "{Application._sapBackgroundColorH}",
+      "type": "internal"
+    },
+    "_sapGroup_ContentAlternatingBackgroundS": {
+      "value": "{Application._sapBackgroundColorS}",
+      "type": "internal"
+    },
+    "_sapGroup_ContentAlternatingBackgroundL": {
+      "value": "{Application._sapBackgroundColorL} - 4%",
+      "type": "internal"
+    },
+    "_sapGroup_ContentAlternatingBackgroundA": {
+      "value": "{Application._sapBackgroundColorA}",
+      "type": "internal"
+    },
+    "sapGroup_ContentAlternatingBackground": {
+      "value": "hsla({Container._sapGroup_ContentAlternatingBackgroundH}, {Container._sapGroup_ContentAlternatingBackgroundS}, {Container._sapGroup_ContentAlternatingBackgroundL}, {Container._sapGroup_ContentAlternatingBackgroundA})",
+      "type": "color",
+      "description": "The background color of the content area of an alternating group."
     },
     "sapGroup_ContentBackground": {
       "value": "hsla({Container._sapGroup_ContentBackgroundH}, {Container._sapGroup_ContentBackgroundS}, {Container._sapGroup_ContentBackgroundL}, {Container._sapGroup_ContentBackgroundA})",

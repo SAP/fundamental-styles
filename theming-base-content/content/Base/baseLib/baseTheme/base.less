@@ -1,11 +1,11 @@
 /**
 * Copyright (c) 2012-2025 SAP SE or an SAP affiliate company and Theming Base Content contributors. Licensed under the Apache License, Version 2.0 - see LICENSE.txt.
-* Theming Engine 17.0.3
-* data:{"sModified":"2026-02-25T14:50:27Z"}
+* Theming Engine 17.0.8
+* data:{"sModified":"2026-04-01T08:05:13Z"}
 */
 
 
-/******************* FILE /Base/baseLib/baseTheme/base.less (Version 11.34.1) *******************/
+/******************* FILE /Base/baseLib/baseTheme/base.less (Version 11.35.0) *******************/
 
 
 // [Label "Brand Color"]
@@ -1834,6 +1834,31 @@
 // [Category "Shell"]
 // [Type "color"]
 @sapShell_SubBrand_TextColor: @sapDefault_Color;
+
+// [Label "Shell Hero Banner Background Color"]
+// [Description "The background color of the shell hero banner."]
+// [Tags "Base", "Shell", "Color", "Protected"]
+// [Protected "true"]
+// [Category "Shell", "HeroBanner"]
+// [Type "color"]
+@sapShell_HeroBanner_Background: @sapDefault_Color;
+
+// [Label "Shell Hero Banner Background Image"]
+// [Description "The background image of the shell hero banner. Top-left aligned, covering the shell hero banner. Layered on top of sapShell_HeroBanner_Background."]
+// [Tags "Base", "Shell", "URI", "Image", "Protected"]
+// [Protected "true"]
+// [Category "Shell", "HeroBanner"]
+// [Type "image"]
+// [TranslationKey "sapShell_HeroBanner_BgImage"]
+@sapShell_HeroBanner_BackgroundImage: @sapDefault_URI;
+
+// [Label "Shell Hero Banner Text Color"]
+// [Description "The text color of the shell hero banner, used for salutation and date. Layered on top of sapShell_HeroBanner_BackgroundImage and sapShell_HeroBanner_Background."]
+// [Tags "Base", "Shell", "Color", "Protected"]
+// [Protected "true"]
+// [Category "Shell", "HeroBanner"]
+// [Type "color"]
+@sapShell_HeroBanner_TextColor: @sapDefault_Color;
 
 // [Label "Shell Category 1 Background Color"]
 // [Description "The background color of shell elements of category 1."]
@@ -5048,6 +5073,15 @@
 // [Category "Container"]
 // [Type "color"]
 @sapGroup_ContentBackground: @sapDefault_Color;
+
+// [Label "Group Content Alternating Background Color"]
+// [Description "The background color of the content area of an alternating group."]
+// [Tags "Base", "Group", "Color", "Protected"]
+// [Protected "true"]
+// [Category "Container"]
+// [Type "color"]
+// [TranslationKey "sapGroup_ContentAlternatingBg"]
+@sapGroup_ContentAlternatingBackground: @sapDefault_Color;
 
 // [Label "Group Content Border Color"]
 // [Description "The color of the borders of a group's content area."]

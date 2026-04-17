@@ -1,4 +1,4 @@
-/* Copyright (c) 2012-2025 SAP SE or an SAP affiliate company and Theming Base Content contributors. Licensed under the Apache License, Version 2.0 - see LICENSE.txt..  Theming Engine 17.0.3 */
+/* Copyright (c) 2012-2025 SAP SE or an SAP affiliate company and Theming Base Content contributors. Licensed under the Apache License, Version 2.0 - see LICENSE.txt..  Theming Engine 17.0.8 */
 $sapBrandColor: #0a6ed1;
 $sapHighlightColor: #0854a0;
 $sapBaseColor: #fff;
@@ -224,6 +224,9 @@ $sapShell_InformativeColor: #b1d6fb;
 $sapShell_NeutralColor: #d4d6d7;
 $sapShell_Assistant_ForegroundColor: #9f88ff;
 $sapShell_SubBrand_TextColor: #fff;
+$sapShell_HeroBanner_Background: #0b75e0;
+$sapShell_HeroBanner_BackgroundImage: linear-gradient(135deg, #0000 45%, #00000073 75%);
+$sapShell_HeroBanner_TextColor: #fff;
 $sapShell_Category_1_Background: #286eb4;
 $sapShell_Category_1_BorderColor: #286eb4;
 $sapShell_Category_1_TextColor: #fff;
@@ -604,6 +607,7 @@ $sapGroup_TitleBorderColor: #d9d9d9;
 $sapGroup_TitleTextColor: #232629;
 $sapGroup_Title_FontSize: 1.125rem;
 $sapGroup_ContentBackground: #fff;
+$sapGroup_ContentAlternatingBackground: #fff;
 $sapGroup_ContentBorderColor: #d9d9d9;
 $sapGroup_BorderWidth: .0625rem;
 $sapGroup_BorderCornerRadius: 0;
@@ -1531,4 +1535,3 @@ $sapSapThemeId: sap_fiori_3;
 $sapHighlightTextColor: #fff;
 $sapButton_Emphasized_FontWeight: bold;
 $sapShell_BackgroundGradient: linear-gradient(to bottom, #dfe3e4, #f3f4f5);
-$sapAt: @;

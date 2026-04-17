@@ -22760,6 +22760,11 @@
       "type": "color",
       "description": "The color of the borders of a group's content area."
     },
+    "sapGroup_ContentAlternatingBackground": {
+      "value": "hsla({Container._sapGroup_ContentAlternatingBackgroundH}, {Container._sapGroup_ContentAlternatingBackgroundS}, {Container._sapGroup_ContentAlternatingBackgroundL}, {Container._sapGroup_ContentAlternatingBackgroundA})",
+      "type": "color",
+      "description": "The background color of the content area of an alternating group."
+    },
     "sapGroup_ContentBackground": {
       "value": "hsla({Container._sapGroup_ContentBackgroundH}, {Container._sapGroup_ContentBackgroundS}, {Container._sapGroup_ContentBackgroundL}, {Container._sapGroup_ContentBackgroundA})",
       "type": "color",
@@ -22855,6 +22860,22 @@
     },
     "_sapGroup_ContentBorderColorA": {
       "value": "{HighContrast._sapHC_StandardForegroundA}",
+      "type": "internal"
+    },
+    "_sapGroup_ContentAlternatingBackgroundH": {
+      "value": "{Container._sapGroup_ContentBackgroundH}",
+      "type": "internal"
+    },
+    "_sapGroup_ContentAlternatingBackgroundS": {
+      "value": "{Container._sapGroup_ContentBackgroundS}",
+      "type": "internal"
+    },
+    "_sapGroup_ContentAlternatingBackgroundL": {
+      "value": "{Container._sapGroup_ContentBackgroundL}",
+      "type": "internal"
+    },
+    "_sapGroup_ContentAlternatingBackgroundA": {
+      "value": "{Container._sapGroup_ContentBackgroundA}",
       "type": "internal"
     },
     "_sapGroup_ContentBackgroundH": {
@@ -28374,6 +28395,55 @@
       "_sapShell_Category_1_BackgroundA": {
         "value": "{HighContrast._sapHC_StandardBackgroundA}",
         "type": "internal"
+      }
+    },
+    "HeroBanner": {
+      "_sapShell_HeroBanner_TextColorH": {
+        "value": "{Text._sapTextColorH}",
+        "type": "internal"
+      },
+      "_sapShell_HeroBanner_TextColorS": {
+        "value": "{Text._sapTextColorS}",
+        "type": "internal"
+      },
+      "_sapShell_HeroBanner_TextColorL": {
+        "value": "{Text._sapTextColorL}",
+        "type": "internal"
+      },
+      "_sapShell_HeroBanner_TextColorA": {
+        "value": "{Text._sapTextColorA}",
+        "type": "internal"
+      },
+      "sapShell_HeroBanner_TextColor": {
+        "value": "hsla({Shell.HeroBanner._sapShell_HeroBanner_TextColorH}, {Shell.HeroBanner._sapShell_HeroBanner_TextColorS}, {Shell.HeroBanner._sapShell_HeroBanner_TextColorL}, {Shell.HeroBanner._sapShell_HeroBanner_TextColorA})",
+        "type": "color",
+        "description": "The text color of the shell hero banner, used for salutation and date. Layered on top of sapShell_HeroBanner_BackgroundImage and sapShell_HeroBanner_Background."
+      },
+      "sapShell_HeroBanner_BackgroundImage": {
+        "value": "linear-gradient(135deg, hsla({_undefinedH}, {_undefinedS}, {_undefinedL}, {_undefinedA}) 45%, hsla({_undefinedH}, {_undefinedS}, {_undefinedL}, {_undefinedA}) 75%)",
+        "type": "linear-gradient",
+        "description": "The background image of the shell hero banner. Top-left aligned, covering the shell hero banner. Layered on top of sapShell_HeroBanner_Background."
+      },
+      "_sapShell_HeroBanner_BackgroundH": {
+        "value": "210",
+        "type": "internal"
+      },
+      "_sapShell_HeroBanner_BackgroundS": {
+        "value": "35.84905660377359%",
+        "type": "internal"
+      },
+      "_sapShell_HeroBanner_BackgroundL": {
+        "value": "20.784313725490193%",
+        "type": "internal"
+      },
+      "_sapShell_HeroBanner_BackgroundA": {
+        "value": "1",
+        "type": "internal"
+      },
+      "sapShell_HeroBanner_Background": {
+        "value": "hsla({Shell.HeroBanner._sapShell_HeroBanner_BackgroundH}, {Shell.HeroBanner._sapShell_HeroBanner_BackgroundS}, {Shell.HeroBanner._sapShell_HeroBanner_BackgroundL}, {Shell.HeroBanner._sapShell_HeroBanner_BackgroundA})",
+        "type": "color",
+        "description": "The background color of the shell hero banner."
       }
     },
     "_sapShell_SubBrand_TextColorH": {
