@@ -127,9 +127,19 @@ jobs:
                   for package_path in dist/packages/styles dist/packages/common-css dist/packages/theming-preview dist/packages/cx dist/packages/mcp; do
                     if [ -f "$package_path/package.json" ]; then
                       package_name=$(node -p "require('./$package_path/package.json').name")
-                      echo "Publishing $package_name from $package_path with tag $tag"
+                      package_version=$(node -p "require('./$package_path/package.json').version")
+                      echo "Publishing $package_name@$package_version from $package_path with tag $tag"
                       cd "$package_path"
-                      npm publish --tag "$tag" --provenance
+                      if npm publish --tag "$tag" --provenance; then
+                        echo "Successfully published $package_name@$package_version"
+                      else
+                        if npm view "$package_name@$package_version" version 2>/dev/null; then
+                          echo "Version $package_version of $package_name already published, skipping"
+                        else
+                          echo "Failed to publish $package_name@$package_version"
+                          exit 1
+                        fi
+                      fi
                       cd - > /dev/null
                     fi
                   done
