@@ -1,3 +1,7 @@
+# Project Architecture
+
+This document describes the architectural structure and organization of the fundamental-styles monorepo.
+
 ## Directories and files
 
 First of all, project is using NX workspaces, so everything that is applicable to NX workspaces is applicable to this project as well.

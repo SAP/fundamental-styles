@@ -1,195 +1,351 @@
 # Fundamental Library Styles
 
-<a href="https://badge.fury.io/js/fundamental-styles"><img src="https://badge.fury.io/js/fundamental-styles.svg" alt="NPM Version"/></a>
-<img src="https://github.com/SAP/fundamental-styles/actions/workflows/create-release.yml/badge.svg?branch=main" alt="CI Status"/>
-<img src="https://img.shields.io/npm/dm/fundamental-styles?label=npm%20downloads" alt="NPM Downloads">
-<a href="https://join.slack.com/t/ui-fundamentals/shared_invite/enQtNTIzOTU0Mzc2NTc5LWQzZWI5MWFhYjE5OTc4YzliN2JhOTc1ZjQxZTg1YjZiMWZiYzRkNjMwYzgyMmFkYmNhZDVjMWE5MDIzOWEzMmM">
-    <img src="https://img.shields.io/badge/slack-ui--fundamentals-blue.svg?logo=slack" alt="Slack">
-</a>
-<a href="https://api.reuse.software/info/github.com/SAP/fundamental-styles">
-    <img src="https://api.reuse.software/badge/github.com/SAP/fundamental-styles" alt="REUSE status">
-</a>
+### Lightweight, framework-agnostic CSS component library
 
-<a href="https://storybook.js.org/">
-    <img src="https://raw.githubusercontent.com/storybookjs/brand/main/badge/badge-storybook.svg" alt="StorybookJS" />
-</a>
+<a href="https://badge.fury.io/js/fundamental-styles"><img src="https://badge.fury.io/js/fundamental-styles.svg" alt="NPM Version"/></a><a href="https://github.com/SAP/fundamental-styles/actions"><img src="https://github.com/SAP/fundamental-styles/actions/workflows/create-release.yml/badge.svg?branch=main" alt="CI Status"/></a><a href="https://www.npmjs.com/package/fundamental-styles"><img src="https://img.shields.io/npm/dm/fundamental-styles?label=downloads" alt="NPM Downloads"/></a><a href="https://join.slack.com/t/ui-fundamentals/shared_invite/enQtNTIzOTU0Mzc2NTc5LWQzZWI5MWFhYjE5OTc4YzliN2JhOTc1ZjQxZTg1YjZiMWZiYzRkNjMwYzgyMmFkYmNhZDVjMWE5MDIzOWEzMmM"><img src="https://img.shields.io/badge/slack-ui--fundamentals-blue.svg?logo=slack" alt="Slack"/></a>
+<a href="https://api.reuse.software/info/github.com/SAP/fundamental-styles"><img src="https://api.reuse.software/badge/github.com/SAP/fundamental-styles" alt="REUSE status"/></a><a href="https://storybook.js.org/"><img src="https://raw.githubusercontent.com/storybookjs/brand/main/badge/badge-storybook.svg" alt="Storybook"/></a><a href="https://fundamental-styles.netlify.app"><img src="https://img.shields.io/badge/Hosted%20on-Netlify-00C7B7?style=flat&logo=netlify&logoColor=white" alt="Hosted on Netlify"/></a>
 
-<a href="https://www.netlify.com">
-  <img src="https://www.netlify.com/img/global/badges/netlify-light.svg" alt="Deploys by Netlify" />
-</a>
+A lightweight CSS library for building SAP applications. Framework-agnostic—works with Angular, React, Vue, or vanilla HTML. Provides ready-to-use components and styles that help you create consistent, professional SAP applications quickly.
 
-## What is Fundamental Library Styles?
-
-Fundamental Library Styles is a light-weight presentation layer that can be used with developers' UI framework of
-choice (e.g.Angular, React, Vue, etc.). Developers can build consistent SAP apps in any web-based technology, by
-combining Fundamental Styles, library of stylesheets and HTML tags.
-
-**Learn more at http://sap.github.io/fundamental-styles/**
-
-We are also working on [Angular](https://github.com/SAP/fundamental-ngx)
-, [React](https://github.com/SAP/fundamental-react) and [Vue](https://github.com/SAP/fundamental-vue) implementations.
-
-## Getting Started
-
-The library is modular, so you can use as little or as much as you need.
-
-### CDN
-
-The fully compiled, minified library is available via [unpkg CDN](https://unpkg.com/) for inclusion in your application.
-
-For `prerelease` version use
+## 🚀 Quick Start
 
 ```html
-<link href='https://unpkg.com/fundamental-styles@prerelease/dist/fundamental-styles.css' rel='stylesheet'>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- 1. Theme CSS (required) -->
+  <link href="https://unpkg.com/@sap-theming/theming-base-content/content/Base/baseLib/sap_horizon/css_variables.css" rel="stylesheet">
+  <link href="https://unpkg.com/fundamental-styles@latest/dist/theming/sap_horizon.css" rel="stylesheet">
+
+  <!-- 2. Component CSS -->
+  <link href="https://unpkg.com/fundamental-styles@latest/dist/button.css" rel="stylesheet">
+  <link href="https://unpkg.com/fundamental-styles@latest/dist/input.css" rel="stylesheet">
+</head>
+<body>
+  <button class="fd-button fd-button--emphasized">Hello World</button>
+  <input class="fd-input" type="text" placeholder="Enter text">
+</body>
+</html>
 ```
 
-For `latest` stable version use
+
+## 📦 Installation
+
+### ⬇️ NPM (Recommended)
+
+```bash
+npm install fundamental-styles @sap-theming/theming-base-content
+```
+
+**Import in your JavaScript/TypeScript:**
+
+```javascript
+// Theme CSS (required)
+import '@sap-theming/theming-base-content/content/Base/baseLib/sap_horizon/css_variables.css';
+import 'fundamental-styles/dist/theming/sap_horizon.css';
+
+// Option A: All components
+import 'fundamental-styles/dist/fundamental-styles.css';
+
+// Option B: Only components you need (smaller bundle)
+import 'fundamental-styles/dist/button.css';
+import 'fundamental-styles/dist/input.css';
+import 'fundamental-styles/dist/icon.css';
+```
+
+**Or import in your SCSS/CSS:**
+
+```scss
+@import 'fundamental-styles/dist/fundamental-styles.css';
+```
+
+### 🌐 CDN
 
 ```html
-<link href='https://unpkg.com/fundamental-styles@latest/dist/fundamental-styles.css' rel='stylesheet'>
+<!-- Theme CSS -->
+<link href="https://unpkg.com/@sap-theming/theming-base-content/content/Base/baseLib/sap_horizon/css_variables.css" rel="stylesheet">
+<link href="https://unpkg.com/fundamental-styles@latest/dist/theming/sap_horizon.css" rel="stylesheet">
+
+<!-- All components -->
+<link href="https://unpkg.com/fundamental-styles@latest/dist/fundamental-styles.css" rel="stylesheet">
 ```
 
-You can also include specific version of library into your html via using
+**Pin to specific version:**
 
 ```html
-<link href='https://unpkg.com/fundamental-styles@{versionNumber}/dist/fundamental-styles.css' rel='stylesheet'>
+<link href="https://unpkg.com/fundamental-styles@0.41.4/dist/fundamental-styles.css" rel="stylesheet">
 ```
-where you should replace `{versionNumber}` with desired version number. For example with `0.20.3`
 
-#### Theming
-To use particular theme you need to include two CSS variables files:
+**Use prerelease version:**
 
 ```html
-<link href='https://unpkg.com/@sap-theming/theming-base-content/content/Base/baseLib/{themeName}/css_variables.css' rel='stylesheet'>
+<link href="https://unpkg.com/fundamental-styles@prerelease/dist/fundamental-styles.css" rel="stylesheet">
 ```
+
+
+## 👋 Hello World Example
+
+Complete working example with buttons, forms, and messages:
+
 ```html
-<link href='https://unpkg.com/fundamental-styles@{versionNumber}/dist/theming/{themeName}.css' rel='stylesheet'>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fundamental Styles - Hello World</title>
+
+  <!-- Theme base variables -->
+  <link href="https://unpkg.com/@sap-theming/theming-base-content/content/Base/baseLib/sap_horizon/css_variables.css" rel="stylesheet">
+
+  <!-- Fundamental Styles theme -->
+  <link href="https://unpkg.com/fundamental-styles@latest/dist/theming/sap_horizon.css" rel="stylesheet">
+
+  <!-- Fundamental Styles components -->
+  <link href="https://unpkg.com/fundamental-styles@latest/dist/button.css" rel="stylesheet">
+  <link href="https://unpkg.com/fundamental-styles@latest/dist/input.css" rel="stylesheet">
+  <link href="https://unpkg.com/fundamental-styles@latest/dist/form-item.css" rel="stylesheet">
+  <link href="https://unpkg.com/fundamental-styles@latest/dist/form-label.css" rel="stylesheet">
+  <link href="https://unpkg.com/fundamental-styles@latest/dist/message-strip.css" rel="stylesheet">
+  <link href="https://unpkg.com/fundamental-styles@latest/dist/icon.css" rel="stylesheet">
+</head>
+<body style="padding: 2rem; font-family: '72', Arial, sans-serif;">
+
+  <h1>Welcome to Fundamental Styles</h1>
+
+  <!-- Form with input -->
+  <div class="fd-form-item" style="margin-bottom: 1rem;">
+    <label class="fd-form-label" for="name-input">Your Name</label>
+    <input class="fd-input" id="name-input" type="text" placeholder="Enter your name">
+  </div>
+
+  <!-- Buttons -->
+  <div style="margin-bottom: 1rem;">
+    <button class="fd-button fd-button--emphasized">Submit</button>
+    <button class="fd-button">Cancel</button>
+    <button class="fd-button fd-button--transparent">
+      <span class="sap-icon--settings"></span> Settings
+    </button>
+  </div>
+
+  <!-- Message strips -->
+  <div class="fd-message-strip fd-message-strip--success" role="alert" style="margin-bottom: 0.5rem;">
+    <p class="fd-message-strip__text">Success! Your form is ready.</p>
+  </div>
+
+  <div class="fd-message-strip fd-message-strip--information" role="alert">
+    <p class="fd-message-strip__text">
+      <span class="sap-icon--hint"></span>
+      Explore more components at
+      <a href="https://sap.github.io/fundamental-styles/" target="_blank">sap.github.io/fundamental-styles</a>
+    </p>
+  </div>
+
+</body>
+</html>
 ```
-Available values for `themeName` are
-`sap_horizon`,
-`sap_horizon_dark`,
-`sap_horizon_hcb`,
-`sap_horizon_hcw`,
-`sap_horizon_set`,
-`sap_fiori_3`,
-`sap_fiori_3_dark`,
-`sap_fiori_3_hcb`,
-`sap_fiori_3_hcw`,
-`sap_fiori_3_set`,
-`sap_fiori_3_light_dark`
 
-### NPM Package
+## 🎨 Theming
 
-The compiled CSS for the full library and modules, e.g., core, layout, etc., are distributed
-via [NPM](https://www.npmjs.com/package/fundamental-styles).
+### ⚡ Available Themes
 
-````
-npm install fundamental-styles --save
-````
+| Theme | Description | Path |
+|-------|-------------|------|
+| `sap_horizon` | Morning Horizon (Light) | `dist/theming/sap_horizon.css` |
+| `sap_horizon_dark` | Evening Horizon (Dark) | `dist/theming/sap_horizon_dark.css` |
+| `sap_horizon_hcb` | Horizon High Contrast Black | `dist/theming/sap_horizon_hcb.css` |
+| `sap_horizon_hcw` | Horizon High Contrast White | `dist/theming/sap_horizon_hcw.css` |
+| `sap_horizon_set` | Horizon Set | `dist/theming/sap_horizon_set.css` |
+| `sap_fiori_3` | Quartz Light | `dist/theming/sap_fiori_3.css` |
+| `sap_fiori_3_dark` | Quartz Dark | `dist/theming/sap_fiori_3_dark.css` |
+| `sap_fiori_3_hcb` | Quartz High Contrast Black | `dist/theming/sap_fiori_3_hcb.css` |
+| `sap_fiori_3_hcw` | Quartz High Contrast White | `dist/theming/sap_fiori_3_hcw.css` |
+| `sap_fiori_3_light_dark` | Quartz Auto (Depending on the OS Settings) | `dist/theming/sap_fiori_3_light_dark.css` |
+| `sap_fiori_3_set` | Quartz Set | `dist/theming/sap_fiori_3_set.css` |
+| `sap_belize` | Belize (legacy) | `dist/theming/sap_belize.css` |
 
-> NOTE: We only distribute compiled CSS for each component, not the full project or HTML for specific components.
+### 🎯 How to Apply a Theme
 
+**Always include TWO CSS files:**
 
-### Icons
+> **⚠️ Required:** Both files are mandatory for themes to work correctly.
 
-See the [Icon Component](https://fundamental-styles.netlify.app/?path=/docs/components-icons-sap-icons--sizes) for a
-list of icon class names. See Project Configuration below for instructions to include SAP Fiori icons in your project.
+1. **Theme base variables** (from `@sap-theming/theming-base-content`)
+2. **Fundamental Styles theme customizations** (from `fundamental-styles`)
 
-### Project Configuration
+**Example with CDN:**
 
-This project does not contain fonts and icons - they must be added to your project separately. Download the @sap-theming/theming-base-content library. After adding fonts and icons to your project, include the following in your CSS
-(The icon font files have different design for Fiori 3 themes and they can be found in the folder `@sap-theming/theming-base-content/content/Base/baseLib/baseTheme/fonts/`) as opposed to Horizon where the icons are stored in the subfolder fonts `@sap-theming/theming-base-content/content/Base/sap_horizon/baseTheme/fonts/`. It would require to include everything from `@sap-theming/theming-base-content/content/Base/baseLib/`.
+```html
+<!-- 1. Base variables -->
+<link href="https://unpkg.com/@sap-theming/theming-base-content/content/Base/baseLib/sap_horizon_dark/css_variables.css" rel="stylesheet">
 
-```html {
-    font-size: 16px;
+<!-- 2. Theme customizations -->
+<link href="https://unpkg.com/fundamental-styles@latest/dist/theming/sap_horizon_dark.css" rel="stylesheet">
+```
+
+**Example with NPM:**
+
+```javascript
+import '@sap-theming/theming-base-content/content/Base/baseLib/sap_horizon_dark/css_variables.css';
+import 'fundamental-styles/dist/theming/sap_horizon_dark.css';
+```
+
+### 🔤 Fonts and Icons
+
+Fonts and icons are **not included** in `fundamental-styles`. They come from `@sap-theming/theming-base-content`.
+
+> **💡 Important:** Always install `@sap-theming/theming-base-content` alongside `fundamental-styles` for fonts and icons to work properly.
+
+#### Setup Steps:
+
+**1. Install the theming package**
+
+```bash
+npm install @sap-theming/theming-base-content
+```
+
+**2. Configure your bundler to include fonts**
+
+Fonts are located in the theming package:
+- **Horizon themes**: `@sap-theming/theming-base-content/content/Base/baseLib/sap_horizon/fonts/`
+- **Quartz (Fiori 3) themes**: `@sap-theming/theming-base-content/content/Base/baseLib/baseTheme/fonts/`
+
+Make sure your bundler (Webpack, Vite, etc.) can handle font files from node_modules.
+
+**3. Set the base font size in your global CSS**
+
+Add this to your main CSS file or `index.html`:
+
+```css
+html {
+  font-size: 16px; /* Required for proper component sizing */
 }
 ```
 
+This ensures all components scale correctly. The `16px` base is required for SAP Design specifications.
 
-## Working with the Project
 
-### Download and Installation
+## 📚 Documentation & Resources
 
-1. **Clone Repository** Clone the repo using the git software of your choice or using the git command `git clone https://github.com/SAP/fundamental-styles.git`
+### 📖 Quick Reference
 
-2. **Install NPM Dependencies**: `npm install`
+| Resource | Description |
+|----------|-------------|
+| **[📘 Component Catalog](https://sap.github.io/fundamental-styles/)** | Live examples with code snippets |
+| **[🤖 CLAUDE.md](https://github.com/SAP/fundamental-styles/blob/main/CLAUDE.md)** | Quick reference for AI agents & developers |
+| **[🎨 Icon List](https://fundamental-styles.netlify.app/?path=/docs/sap-design-components-icons-sap-icons--docs)** | All available SAP icons |
 
-3. **Serve the development playground and documentation website locally**
-    1. If you want to serve with development environment run `npm start` 
-    2. For production build serve run `npm run start:prod`
+### Machine-Readable Docs (for AI & Tooling)
 
-### Project Dependencies
+| File | Description |
+|------|-------------|
+| [llms.txt](https://github.com/SAP/fundamental-styles/blob/main/llms.txt) | AI discovery file |
+| [docs/ai-component-index.md](https://github.com/SAP/fundamental-styles/blob/main/docs/ai-component-index.md) | Component guide (120 components) |
+| [docs/component-catalog.json](https://github.com/SAP/fundamental-styles/blob/main/docs/component-catalog.json) | JSON component catalog |
+| [docs/utility-classes.json](https://github.com/SAP/fundamental-styles/blob/main/docs/utility-classes.json) | Utility classes (227 classes) |
+| [docs/component-relationships.json](https://github.com/SAP/fundamental-styles/blob/main/docs/component-relationships.json) | Component dependencies |
 
-The project has the following prerequisites:
+### Framework Implementations
 
-* Git (for downloading this repo)
-* [Node LTS](https://nodejs.org/)
+- **[Angular](https://github.com/SAP/fundamental-ngx)** - Angular wrapper components
 
-## SLA
+## 📦 Monorepo Packages
+
+This repository is a monorepo containing multiple packages:
+
+### 🚀 Publishable Packages
+
+| Package | Description | Install |
+|---------|-------------|---------|
+| **[fundamental-styles](https://github.com/SAP/fundamental-styles/tree/main/packages/styles)** | Core library (120+ components) | `npm i fundamental-styles` |
+| **[common-css](https://github.com/SAP/fundamental-styles/tree/main/packages/common-css)** | Utility classes & SCSS mixins | `npm i @fundamental-styles/common-css` |
+| **[cx](https://github.com/SAP/fundamental-styles/tree/main/packages/cx)** | CX-specific components | `npm i @fundamental-styles/cx` |
+| **[theming-preview](https://github.com/SAP/fundamental-styles/tree/main/packages/theming-preview)** | SAP Theme Designer preview | `npm i @fundamental-styles/theming-preview` |
+
+## 🛠️ Development
+
+### 🎬 Setup
+
+```bash
+# Clone repository
+git clone https://github.com/SAP/fundamental-styles.git
+cd fundamental-styles
+
+# Install dependencies
+npm install
+
+# Start development server
+npm start
+
+# Start with production build
+npm run start:prod
+```
+
+### ⚙️ Prerequisites
+
+- Git
+- [Node.js LTS](https://nodejs.org/)
+
+### 🤝 Contributing
+
+- [SAP Contribution Guidelines](https://github.com/SAP/.github/blob/main/CONTRIBUTING.md)
+- [Contribution Guidelines](https://github.com/SAP/fundamental-styles/wiki/Contribution-Guidelines)
+- [Development Guidelines](https://github.com/SAP/fundamental-styles/wiki/Development-Guidelines)
+- [Visual Testing Guide](https://github.com/SAP/fundamental-styles/wiki/Visual-testing-with-Chromatic)
+
+
+## 📋 SLA (Service Level Agreement)
 
 Our Service Level Agreement. Fundamental Library Styles is aiming to deliver:
 
-### SLA - What
+### Core Commitments
 
-* Consumable CSS that strives for [Fiori](https://www.sap.com/products/fiori.html) compliance.
-* Reference HTML specification that consuming libraries **MUST** adhere to.
+This library provides:
 
-### SLA - How
+- **SAP Design-compliant CSS** - Styles that follow SAP Design System standards
+- **Reference HTML** - Exact markup structure that consuming libraries must follow
+- **Framework compatibility** - Used by [Angular](https://github.com/SAP/fundamental-ngx), [React](https://github.com/SAP/fundamental-react), and [Vue](https://github.com/SAP/fundamental-vue) implementations
 
-* Theme-able components built on top of [SAP Theming Base Content](https://github.com/SAP/theming-base-content) by
-  consuming the CSS Custom Properties delivered by the theming library
-* Self-contained styles. That is, each component's style file contains all the styling needed to be rendered properly.
-  External styling won't bleed-in internal styling won't bleed-out. `Bleeding in` means that CSS global reset won't
-  affect the component and `bleeding out` means that the component styling should not affect other HTML elements)
-* Accessibility support
-    * Accessibility - Color contrast support for WCAG 2.0 level AA (4.5:1 for typical text)
-    * Accessibility - Semantic HTML reference
-    * Accessibility - Aria attributes noted when possible in HTML reference
+### How We Build It
 
-This library is also being consumed by [Fundamental Library for Angular](https://github.com/SAP/fundamental-ngx)
-, [Fundamental Library for React](https://github.com/SAP/fundamental-react),
-and [Fundamental Library for Vue](https://github.com/SAP/fundamental-vue).
+- **Theme-able components** - Built on [SAP Theming Base Content](https://github.com/SAP/theming-base-content) using CSS Custom Properties
+- **Self-contained styles** - Each component includes all necessary CSS with no external dependencies bleeding in or out
+- **Accessibility first**
+  - WCAG 2.0 Level AA color contrast (4.5:1 for text)
+  - Semantic HTML structure
+  - ARIA attributes included in reference HTML
 
-The above SLA is the primary difference between this library and the
-earlier [Fundamental](https://github.com/SAP/fundamental).
 
-## Support
+## 🔢 Versioning
 
-If you encounter an issue, you can create a [ticket](https://github.com/SAP/fundamental-styles/issues/new/choose) or
-post on
-the [Fundamentals Slack channel](https://join.slack.com/t/ui-fundamentals/shared_invite/zt-6op8woeb-0~uRqrGZeMm3updfQehbaw)
-.
+Follows [Semantic Versioning](https://semver.org/): `[MAJOR].[MINOR].[PATCH]`
 
-## Contributing
+### 🚨 Breaking Changes (MAJOR)
 
-If you want to contribute, please check
-the [Contribution Guidelines](https://github.com/SAP/fundamental-styles/wiki/Contribution-Guidelines). Also check
-the [Development Guidelines](https://github.com/SAP/fundamental-styles/wiki/Development-Guidelines)
-and [Visual Testing Guide](https://github.com/SAP/fundamental-styles/wiki/Visual-testing-with-Chromatic).
+- Dropping existing classnames, CSS variables, color names, spacing parameters
+- Altering HTML markup structure
+- Non-visual attribute changes (`role`, `aria-*`, `data-*`)
 
-## Versioning
+> **Note:** Even non-visual HTML changes are breaking because this library provides reference HTML for JS framework implementations.
 
-The `fundamental-styles` library follows [Semantic Versioning](https://semver.org/). These components strictly adhere to
-the `[MAJOR].[MINOR].[PATCH]` numbering system (also known as `[BREAKING].[FEATURE].[FIX]`).
+### ✅ Non-Breaking Changes (MINOR/PATCH)
 
-Merges to the `main` branch will be published as a prerelease. Pre-releases will include an **rc** version (_
-e.g._ `[MAJOR].[MINOR].[PATCH]-rc.[RC]`).
+- Adding new classnames, CSS variables, colors
+- Modifying CSS properties/values of existing classes
 
-The following circumstances will be considered a MAJOR or BREAKING change:
+### 📡 Release Channels
 
-* Dropping existing classnames, CSS variables, color names, color groups, spacing parameters
-* The existing underlying HTML markup of a component is altered
-* Non-visual HTML attribute changes/additions (such as `role`, `aria-*`, `data-*`)
-  > Note: Fundamental Styles provides CSS directly, and HTML as reference to consumers. Because of the reference relationship of the HTML seen in Fundamental Styles, we want to be very clear when we alter that reference so that it is properly reflected in JS implementation libraries. Because of this, even non-visual changes will be treated as breaking.
+- **Stable**: `npm install fundamental-styles@latest`
+- **Prerelease**: `npm install fundamental-styles@prerelease` (merges to `main` branch, includes `-rc.X` suffix)
 
-The following circumstances will NOT be considered a MAJOR or BREAKING change:
 
-* Introducing new classnames, CSS variables, color names, color groups, spacing parameters
-* Adding or modifying CSS properties and values of existing classnames.
+## 💬 Support
 
-## Thanks
+- **[Create an issue](https://github.com/SAP/fundamental-styles/issues/new/choose)** - Bug reports & feature requests
+
+
+## 🙏 Thanks
 
 <a href="https://www.chromatic.com/"><img src="https://user-images.githubusercontent.com/321738/84662277-e3db4f80-af1b-11ea-88f5-91d67a5e59f6.png" width="153" height="30" alt="Chromatic" /></a>
 
-Thanks to [Chromatic](https://www.chromatic.com/) for providing the visual testing platform that helps us review UI
-changes and catch visual regressions.
+Thanks to [Chromatic](https://www.chromatic.com/) for providing the visual testing platform that helps us review UI changes and catch visual regressions.
