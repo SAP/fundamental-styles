@@ -226,7 +226,7 @@
 		"sapShell_Assistant_ForegroundColor": "#5d36ff",
 		"sapShell_SubBrand_TextColor": "#003e87",
 		"sapShell_HeroBanner_Background": "#0070f2",
-		"sapShell_HeroBanner_BackgroundImage": "linear-gradient(135deg, #0000 45%, #00000073 75%)",
+		"sapShell_HeroBanner_BackgroundImage": "linear-gradient(135deg, transparent 45%, rgba(0,0,0,0.45) 75%)",
 		"sapShell_HeroBanner_TextColor": "#fff",
 		"sapShell_Category_1_Background": "#0057d2",
 		"sapShell_Category_1_BorderColor": "#0057d2",

@@ -28420,7 +28420,7 @@
         "description": "The text color of the shell hero banner, used for salutation and date. Layered on top of sapShell_HeroBanner_BackgroundImage and sapShell_HeroBanner_Background."
       },
       "sapShell_HeroBanner_BackgroundImage": {
-        "value": "linear-gradient(135deg, hsla({_undefinedH}, {_undefinedS}, {_undefinedL}, {_undefinedA}) 45%, hsla({_undefinedH}, {_undefinedS}, {_undefinedL}, {_undefinedA}) 75%)",
+        "value": "linear-gradient(135deg, transparent 45%, hsla(0, 0%, 0%, (45) / 100) 75%)",
         "type": "linear-gradient",
         "description": "The background image of the shell hero banner. Top-left aligned, covering the shell hero banner. Layered on top of sapShell_HeroBanner_Background."
       },

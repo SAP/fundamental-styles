@@ -1,4 +1,4 @@
-/* Copyright (c) 2012-2025 SAP SE or an SAP affiliate company and Theming Base Content contributors. Licensed under the Apache License, Version 2.0 - see LICENSE.txt..  Theming Engine 17.0.8 */
+/* Copyright (c) 2012-2025 SAP SE or an SAP affiliate company and Theming Base Content contributors. Licensed under the Apache License, Version 2.0 - see LICENSE.txt..  Theming Engine 17.0.10 */
 $sapBrandColor: #0070f2;
 $sapHighlightColor: #4db1ff;
 $sapBaseColor: #1d232a;
@@ -225,7 +225,7 @@ $sapShell_NeutralColor: #f5f6f7;
 $sapShell_Assistant_ForegroundColor: #8e73ff;
 $sapShell_SubBrand_TextColor: #a5cfff;
 $sapShell_HeroBanner_Background: #0057d2;
-$sapShell_HeroBanner_BackgroundImage: linear-gradient(135deg, #0000 45%, #00000073 75%);
+$sapShell_HeroBanner_BackgroundImage: linear-gradient(135deg, transparent 45%, rgba(0,0,0,0.45) 75%);
 $sapShell_HeroBanner_TextColor: #f5f6f7;
 $sapShell_Category_1_Background: #89d1ff;
 $sapShell_Category_1_BorderColor: #89d1ff;
