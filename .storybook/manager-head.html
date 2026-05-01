@@ -1,0 +1,23 @@
+<style>
+    /* Hide the "Open context menu" button on sidebar nav items */
+    .sidebar-item button[data-testid='context-menu'] {
+        display: none !important;
+    }
+
+    /* Sidebar item spacing and alignment */
+    .sidebar-item {
+        padding-block: 0.25rem;
+        padding-inline: 0.5rem;
+        display: flex !important;
+        align-items: center !important;
+        min-height: 1.75rem !important;
+        margin-block-end: 0.125rem !important;
+        font-weight: 400 !important;
+    }
+
+    /* Group/folder headers get bolder font */
+    .sidebar-item[data-nodetype='group'],
+    .sidebar-item[data-nodetype='root'] {
+        font-weight: 600 !important;
+    }
+</style>

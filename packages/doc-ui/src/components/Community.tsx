@@ -29,11 +29,6 @@ const Community = () => {
                         src='./assets/github.png' alt='github logo'/>github.com/sap/fundamental-styles</a>
                 </li>
                 <li>
-                    <a href='https://join.slack.com/t/ui-fundamentals/shared_invite/enQtNTIzOTU0Mzc2NTc5LWQzZWI5MWFhYjE5OTc4YzliN2JhOTc1ZjQxZTg1YjZiMWZiYzRkNjMwYzgyMmFkYmNhZDVjMWE5MDIzOWEzMmM'
-                       target='_blank' rel="noreferrer">
-                        <img src='./assets/slack.png' alt='slack logo'/>ui-fundamentals-slack.com</a>
-                </li>
-                <li>
                     <a href='https://linkedin.com/company/sap-graph/' target='_blank' rel="noreferrer">
                         <img src='./assets/linkedin.png' alt='linkedin logo'/>Linkedin
                     </a>
