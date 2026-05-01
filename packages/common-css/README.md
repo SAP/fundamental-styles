@@ -1,280 +1,354 @@
-## What is SAP UI Common CSS?
+# Common CSS
 
-The Common CSS package provides a comprehensive collection of utility CSS classes and SCSS mixins designed to simplify styling for SAP applications. It offers a complete toolkit for applying spacing, colors, typography, shadows, positioning, borders, flex layouts, and more without writing custom CSS, ensuring consistency with the SAP Design System.
+A collection of utility CSS classes and SCSS mixins for styling SAP applications. Common CSS provides ready-to-use classes for spacing, layout, typography, colors, and more, eliminating the need to write custom CSS for common styling patterns.
 
-**Key Features:**
+Built to align with the SAP Design System, Common CSS supports responsive design, accessibility standards, and automatic right-to-left (RTL) layout.
 
-- ✅ **Utility CSS Classes** – Apply predefined styles for spacing (margin/padding), colors, typography, borders, shadows, flexbox, positioning, display, overflow, and more
-- ✅ **SCSS Mixins & Variables** – Build custom, reusable styles with parameters for maximum flexibility
-- ✅ **SAP Design System Aligned** – All values and patterns align with SAP theming standards
-- ✅ **BEM Naming Convention** – Clear and predictable class names (e.g., `sap-margin-small`, `sap-padding-inline-tiny`)
-- ✅ **Full and Modular Builds** – Use the entire library or import only what you need (e.g., colors, borders, spacing)
-- ✅ **Responsive & Container Queries** – Built-in support for responsive design and modern container queries
-- ✅ **RTL Support** – Automatic right-to-left layout support for international applications
-- ✅ **Theming Integration** – Works seamlessly with SAP theming variables via @sap-theming/theming-base-content
+## ✨ Features
 
+- **Utility-first CSS** — Ready-to-use classes for rapid prototyping
+- **80+ SCSS mixins** — Build custom components with flexible mixins
+- **BEM naming** — Clear and predictable class names
+- **Logical properties** — Automatic RTL support for international apps
+- **Container queries** — Modern responsive design support
+- **Modular imports** — Optimize bundle size by importing only what you need
+- **Theme-aware** — Seamlessly integrates with SAP Design System variables
+- **Accessibility-first** — Built with semantic utilities and ARIA support
 
+## 🚀 Quick Start
 
-## SAP UI Common CSS Package included in Fundamental Styles
-
-SAP UI Common CSS Package is part of the Fundamental Styles. If you have installed the Fundamental Styles in your project, you automatically get the SAP UI Common CSS Package.
-
-Learn more at [http://sap.github.io/fundamental-styles/](http://sap.github.io/fundamental-styles/)
-
-
-## SAP UI Common CSS Package on its own
-
-SAP UI Common CSS Package can stand on its own. To install the package:
+### 📦 Installation
 
 ```bash
-npm i @fundamental-styles/common-css
+npm install @fundamental-styles/common-css
 ```
 
-## Theming Prerequisites
-The package uses SAP theming variables for colors, sizes, and spacing.
+**💡 Already using fundamental-styles?** Common CSS is included automatically.
 
-To ensure proper theming:
+### 🎨 Theming Requirements
 
-- Install @sap-theming/theming-base-content
-- Ensure your build includes the theming styles (usually provided by SAP Fundamental Styles or your SAP UI library)
+**Required dependency:** Common CSS needs SAP theming variables to work properly.
 
 ```bash
 npm install @sap-theming/theming-base-content
 ```
-Links:
-- [@sap-theming/theming-base-content on NPM](https://www.npmjs.com/package/@sap-theming/theming-base-content)
-- [Theming Base Content on GitHub](https://github.com/SAP/theming-base-content)
 
+### ⚙️ Basic Usage
 
-## Usage Options
-
-### 1. Use Precompiled CSS
-Include the compiled CSS file from the dist folder.
-Full build:
-```bash
-<link rel="stylesheet" href="node_modules/@fundamental-styles/common-css/dist/common-css.css" />
-```
-
-Modular imports (e.g., only colors or borders):
-
-```bash
-<link rel="stylesheet" href="node_modules/@fundamental-styles/common-css/dist/sap-colors.css" />
-<link rel="stylesheet" href="node_modules/@fundamental-styles/common-css/dist/sap-border.css" />
-
-```
-
-### 2. Import CSS in Your Stylesheet
-If you are using a build tool like Webpack, Vite, or Parcel, you can import the CSS files directly:
-
-```bash
-// Import the full build
-@import "~@fundamental-styles/common-css/dist/common-css.css";
-
-// Or import specific modules
-@import "~@fundamental-styles/common-css/dist/sap-colors.css";
-@import "~@fundamental-styles/common-css/dist/sap-border.css";
-
-```
-
-### 3. Use SCSS Mixins for Customization
-If your project uses SCSS, you can leverage the provided mixins and variables for custom values and consistent design.
-
-The sass folder includes:
-- _common-mixins.scss 
-- _common-variables.scss
-- _common-settings.scss
-
-```bash
-@import "~@fundamental-styles/common-css/sass/_common-variables.scss";
-@import "~@fundamental-styles/common-css/sass/_common-mixins.scss";
-
-.my-element {
-  @include sap-padding(1rem);
-}
-
-.card {
-  @include sap-border-radius(0.5rem);
-}
-
-```
-
-## Folder Structure
-
-```bash
-@fundamental-styles/common-css/
-│
-├── dist/
-│   ├── common-css.css                  // Full build with all utilities
-│   ├── sap-colors.css                  // Color utilities
-│   ├── sap-main-colors.css             // Main color palette
-│   ├── sap-border.css                  // Border utilities
-│   ├── sap-border-radius.css           // Border radius utilities
-│   ├── sap-margin.css                  // Margin spacing utilities
-│   ├── sap-padding.css                 // Padding spacing utilities
-│   ├── sap-content-paddings.css        // Responsive content padding utilities
-│   ├── sap-shadow.css                  // Shadow utilities
-│   ├── sap-elevation.css               // Z-index elevation utilities
-│   ├── sap-typography.css              // Font family and size utilities
-│   ├── sap-text.css                    // Text utilities
-│   ├── sap-heading.css                 // Heading utilities
-│   ├── sap-label.css                   // Label utilities
-│   ├── sap-title.css                   // Title utilities
-│   ├── sap-flex.css                    // Flexbox utilities
-│   ├── sap-display.css                 // Display utilities
-│   ├── sap-position.css                // Position utilities
-│   ├── sap-overflow.css                // Overflow utilities
-│   ├── sap-container-type.css          // Container query utilities
-│   ├── sap-busy-indicator.css          // Busy indicator utilities
-│   ├── sap-normalize.css               // Normalize/reset styles
-│   └── sap-sr-only.css                 // Screen reader utilities
-│
-├── sass/
-│   ├── _common-mixins.scss             // 80+ utility mixins
-│   ├── _common-variables.scss          // Design tokens and variables
-│   └── _common-settings.scss           // Default configuration
-
-```
-
-## What's Included
-
-### Utility Classes Available
-
-**Spacing:**
-- Margin utilities: `sap-margin-{tiny|small|medium|large}`, `sap-margin-{side}-{size}`, `sap-margin-responsive`
-- Padding utilities: `sap-padding-{tiny|small|medium|large}`, `sap-padding-{side}-{size}`, `sap-padding-responsive`
-- Content padding utilities with responsive container queries
-
-**Layout:**
-- Flexbox utilities: `sap-flex-{direction}`, `sap-flex-gap-{size}`, `sap-flex-justify-{type}`, `sap-flex-align-{type}`, `sap-flex-wrap-{type}`
-- Display utilities: `sap-display-{block|inline|flex|grid|none}`
-- Position utilities: `sap-position-{absolute|relative|fixed|sticky}`
-- Overflow utilities: `sap-overflow-{auto|hidden|scroll|visible}`
-- Elevation utilities: `sap-elevation-{0-20}`
-
-**Visual:**
-- Color utilities: `sap-color-{colorName}`, `sap-bg-color-{colorName}`
-- Border utilities: `sap-border-{width}-{style}-{color}`, `sap-border-radius-{element|button|field|group|popover|tile}`
-- Shadow utilities: `sap-shadow-{level-0|level-1|level-2|level-3|header|shell}`
-
-**Typography:**
-- Font family: `sap-font-family-{regular|light|bold|semibold|monospaced-regular|monospaced-bold|black|header}`
-- Font size: `sap-font-size-{small|medium|large|header-1|header-2|header-3|header-4|header-5|header-6}`
-- Heading utilities: `sap-heading-{h1|h2|h3|h4|h5|h6}`
-- Text utilities with line clamping, hyphenation, and wrapping support
-- Label utilities with required/colon indicators
-
-**Accessibility:**
-- Screen reader only: `sap-sr-only`
-- Normalize/reset styles
-
-**Advanced:**
-- Container query utilities: `sap-container-type-{inline-size|size|normal}`
-- Busy indicator utilities
-- Responsive design with media query support
-
-### SCSS Mixins Available
-
-Over 80 powerful mixins for custom styling, including:
-
-**State Mixins:**
-- `sap-hover`, `sap-active`, `sap-focus`, `sap-disabled`, `sap-selected`, `sap-readonly`, `sap-pressed`
-
-**Layout Mixins:**
-- `sap-flex($direction)`, `sap-flex-center`, `sap-flex-vertical-center`
-- `sap-position($type, $top, $right, $bottom, $left)`, `sap-position-absolute-center`
-- `sap-display($type)`
-
-**Spacing Mixins:**
-- `sap-padding($value, $side)`, `sap-padding-responsive`
-- `sap-margin($value, $side)`, `sap-margin-responsive`
-- `sap-content-paddings($type, $size)` with container query support
-
-**Visual Mixins:**
-- `sap-border($width, $style, $color, $pos)`, `sap-set-border-radius($value)`
-- `sap-shadow($type)`, `sap-elevation($index)`
-- `sap-color($color)`, `sap-bg-color($color)`
-
-**Typography Mixins:**
-- `sap-font-family($type)`, `sap-font-size($size)`, `sap-font($type)`
-- `sap-heading($size)`, `sap-label($required, $colon)`, `sap-text($modifier)`
-- `sap-ellipsis`
-
-**Responsive Mixins:**
-- `sap-media-sm`, `sap-media-md`, `sap-media-lg`, `sap-media-xl`
-- `sap-container-query-sm`, `sap-container-query-md`, `sap-container-query-lg`, `sap-container-query-xl`
-
-**Focus & Accessibility:**
-- `sap-fiori-focus($offset, $alternative)`, `sap-fake-fiori-focus($offset, $radius, $alternative)`
-- `sap-sr-only`
-
-**RTL Support:**
-- `sap-rtl` for automatic right-to-left layout handling
-- RTL-aware padding, margin, and position mixins
-
-## Examples
-
-### Using Utility Classes
+**Load order matters:** Always load theme variables before Common CSS:
 
 ```html
-<!-- Spacing and layout -->
-<div class="sap-margin-small sap-padding-inline-tiny sap-flex-row sap-flex-gap-small">
-  Flexbox container with margin and padding
-</div>
+<!-- 1. Theme variables first -->
+<link href="https://unpkg.com/@sap-theming/theming-base-content/content/Base/baseLib/sap_horizon/css_variables.css" rel="stylesheet">
 
-<!-- Visual styling -->
-<div class="sap-border-radius-element sap-shadow-level-1 sap-bg-color-neutral sap-padding-medium">
-  Card with border radius, shadow, and background
-</div>
-
-<!-- Typography -->
-<h1 class="sap-heading-h1 sap-margin-bottom-medium">Page Title</h1>
-<p class="sap-font-standard-text sap-text">Regular text content</p>
-
-<!-- Responsive padding with container queries -->
-<div class="sap-container-type-inline-size sap-content-paddings-container-responsive">
-  Responsive container
-</div>
+<!-- 2. Then Common CSS -->
+<link href="https://unpkg.com/@fundamental-styles/common-css@latest/dist/common-css.css" rel="stylesheet">
 ```
 
-### Using SCSS Mixins
+### 📦 Modular Imports
+
+Import only what you need to reduce bundle size:
+
+```javascript
+// Import all utilities
+import '@fundamental-styles/common-css/dist/common-css.css';
+
+// Or import specific modules only
+import '@fundamental-styles/common-css/dist/sap-margin.css';
+import '@fundamental-styles/common-css/dist/sap-padding.css';
+import '@fundamental-styles/common-css/dist/sap-flex.css';
+import '@fundamental-styles/common-css/dist/sap-display.css';
+import '@fundamental-styles/common-css/dist/sap-shadow.css';
+import '@fundamental-styles/common-css/dist/sap-border.css';
+import '@fundamental-styles/common-css/dist/sap-border-radius.css';
+import '@fundamental-styles/common-css/dist/sap-colors.css';
+import '@fundamental-styles/common-css/dist/sap-typography.css';
+import '@fundamental-styles/common-css/dist/sap-heading.css';
+```
+
+
+## 👋 Hello World Example
+
+Copy this HTML file and open it in your browser to see Common CSS in action:
+
+<details>
+<summary><strong>📄 View Complete Example</strong></summary>
+
+```html
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Common CSS - Hello World</title>
+
+    <!-- Theme base variables (required for colors and spacing) -->
+    <link
+      href="https://unpkg.com/@sap-theming/theming-base-content/content/Base/baseLib/sap_horizon/css_variables.css"
+      rel="stylesheet" />
+
+    <!-- Common CSS utilities -->
+    <link
+      href="https://unpkg.com/@fundamental-styles/common-css@latest/dist/common-css.css"
+      rel="stylesheet" />
+
+    <style>
+      body {
+        font-family:
+          "72",
+          -apple-system,
+          BlinkMacSystemFont,
+          "Segoe UI",
+          Arial,
+          sans-serif;
+        line-height: 1.6;
+        background-color: var(--sapBackgroundColor, #f5f5f5);
+      }
+    </style>
+  </head>
+  <body class="sap-margin-medium">
+    <h1
+      class="sap-heading-h1 sap-margin-bottom-medium sap-color-indicationColor_1">
+      Common CSS Utilities Demo
+    </h1>
+
+    <!-- Card with spacing, border, shadow -->
+    <div
+      class="sap-bg-color-tile_Background sap-has-shadow-level-0 sap-border-radius-element sap-padding sap-margin-block-end-medium">
+      <h2
+        class="sap-heading-h3 sap-margin-bottom-small sap-color-indicationColor_2">
+        Spacing & Layout
+      </h2>
+
+      <p class="sap-margin-bottom-small">
+        This card demonstrates utility classes for <strong>padding</strong>,
+        <strong>margin</strong>, <strong>border-radius</strong>, and
+        <strong>shadows</strong>.
+      </p>
+
+      <p>Notice the consistent spacing and elevated shadow effect.</p>
+    </div>
+
+    <!-- Flexbox layout -->
+    <div
+      class="sap-flex sap-flex--row sap-flex--gap-small sap-flex--wrap sap-margin-bottom-large">
+      <div
+        class="sap-padding-inline-medium sap-border-radius-button sap-bg-color-avatar_2_Background sap-color-legendColor4">
+        Tag 1
+      </div>
+
+      <div
+        class="sap-padding-inline-medium sap-border-radius-button sap-bg-color-avatar_3_Background sap-color-legendColor5">
+        Tag 2
+      </div>
+
+      <div
+        class="sap-padding-inline-medium sap-border-radius-button sap-bg-color-avatar_6_Background sap-color-legendColor6">
+        Tag 3
+      </div>
+    </div>
+
+    <!-- Different spacing sizes -->
+    <div
+      class="sap-flex sap-flex--column sap-flex--gap-small sap-border-radius-element sap-margin-block-end-large">
+      <div class="sap-padding-inline-tiny sap-bg-color-avatar_5_Background">
+        <strong>Tiny Padding</strong>
+      </div>
+      <div class="sap-padding-inline-small sap-bg-color-avatar_6_Background">
+        <strong>Small Padding</strong>
+      </div>
+      <div class="sap-padding-inline-medium sap-bg-color-avatar_7_Background">
+        <strong>Medium Padding</strong>
+      </div>
+      <div class="sap-padding-inline-large sap-bg-color-avatar_8_Background">
+        <strong>Large Padding</strong>
+      </div>
+    </div>
+
+    <!-- Shadows demonstration -->
+    <div
+      class="sap-flex sap-flex--row sap-flex--gap-medium sap-flex--wrap sap-margin-bottom-large">
+      <div class="sap-padding sap-border-radius-element sap-has-shadow-level-0">
+        Level 0 Shadow
+      </div>
+
+      <div class="sap-padding sap-border-radius-element sap-has-shadow-level-1">
+        Level 1 Shadow
+      </div>
+
+      <div class="sap-padding sap-border-radius-element sap-has-shadow-level-2">
+        Level 2 Shadow
+      </div>
+    </div>
+
+    <!-- Typography -->
+    <div
+      class="sap-padding sap-border-radius-element sap-has-shadow-critical sap-bg-color-legendBackgroundColor8">
+      <h3
+        class="sap-heading-h4 sap-margin-block-tiny sap-border-block-end-style-double sap-border-block-end-color-assistant">
+        Typography Utilities
+      </h3>
+
+      <p
+        class="sap-font-size-small sap-margin-bottom-tiny sap-color-indicationColor_3">
+        Small text size (sap-font-size-small)
+      </p>
+
+      <p
+        class="sap-font-size-medium sap-margin-bottom-tiny sap-color-indicationColor_4">
+        Medium text size (sap-font-size-medium)
+      </p>
+
+      <p class="sap-font-size-large sap-color-legendColor1">
+        Large text size (sap-font-size-large)
+      </p>
+    </div>
+  </body>
+</html>
+```
+
+</details>
+
+
+## 📖 Core Concepts
+
+### 📝 Naming Convention
+
+Common CSS uses **BEM notation** for complex utilities:
+
+| Type | Pattern | Example |
+|------|---------|---------|
+| **Simple utilities** | `sap-{property}-{value}` | `sap-padding-medium` |
+| **With modifiers** | `sap-{block} sap-{block}--{modifier}` | `sap-flex sap-flex--row` |
+| **With states** | `sap-has-{state}-{value}` | `sap-has-shadow-level-1` |
+
+**⚠️ Important:** Flex utilities require both base class and modifier:
+
+```html
+<!-- ✅ Correct -->
+<div class="sap-flex sap-flex--row">...</div>
+
+<!-- ❌ Wrong -->
+<div class="sap-flex-row">...</div>
+```
+
+
+## 📘 Usage Guide
+
+Common CSS provides two ways to apply styles to your application:
+
+### CSS Utility Classes
+
+**Use when:** You need quick, consistent styling that follows SAP Design System patterns. Perfect for rapid prototyping and standard layouts.
+
+**How it works:** Add predefined classes directly to your HTML elements. Each class applies specific styling that aligns with SAP design guidelines.
+
+**Example:** `<div class="sap-margin-medium sap-padding-small">Content</div>`
+
+### SCSS Mixins
+
+**Use when:** You're building custom components that need more flexibility or need to integrate spacing into your own CSS classes. Mixins allow you to customize parameters and create variations beyond the predefined utility classes.
+
+**How it works:** Import mixins into your SCSS files and include them in your custom classes with optional parameters for fine-grained control.
+
+**Example:** `@include sap-padding(medium); @include sap-margin(custom-value, block-end);`
+
+
+### Spacing
+
+#### CSS Utility Classes
+
+<details>
+<summary><strong>📄 Spacing Example</strong></summary>
+
+```html
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spacing Utilities</title>
+
+    <!-- Theme variables (required) -->
+    <link
+      href="https://unpkg.com/@sap-theming/theming-base-content/content/Base/baseLib/sap_horizon/css_variables.css"
+      rel="stylesheet" />
+
+    <!-- Modular imports - only spacing utilities -->
+    <link
+      href="https://unpkg.com/@fundamental-styles/common-css@latest/dist/sap-margin.css"
+      rel="stylesheet" />
+    <link
+      href="https://unpkg.com/@fundamental-styles/common-css@latest/dist/sap-padding.css"
+      rel="stylesheet" />
+
+    <link
+      href="https://unpkg.com/@fundamental-styles/common-css@latest/dist/sap-colors.css"
+      rel="stylesheet" />
+
+    <style>
+      body {
+        font-family: "72", Arial, sans-serif;
+        background: var(--sapBackgroundColor);
+        padding: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Spacing Utilities Demo</h2>
+
+    <div
+      class="sap-bg-color-legendBackgroundColor1 sap-margin-small sap-padding">
+      <strong>Margin and padding on all sides</strong>
+    </div>
+
+    <div
+      class="sap-bg-color-legendBackgroundColor2 sap-margin-block-medium sap-padding-inline-medium">
+      <strong>Medium vertical margin and medium horizontal padding</strong>
+    </div>
+
+    <div
+      class="sap-bg-color-legendBackgroundColor5 sap-margin-responsive sap-padding-responsive">
+      <strong>Responsive margin and padding</strong> - Adjusts based on screen
+      size
+    </div>
+  </body>
+</html>
+```
+
+</details>
+
+#### SCSS Mixins
 
 ```scss
-// Custom component with spacing and shadow
+@import "@fundamental-styles/common-css/sass/common-mixins";
+
 .my-card {
   @include sap-padding(medium);
-  @include sap-margin(large, y);
-  @include sap-shadow(level-2);
-  @include sap-set-border-radius(element);
+  @include sap-margin(large, block-end);
 }
 
-// Flexbox layout with gap
-.toolbar {
-  @include sap-flex-gap(small, '', row);
-  @include sap-flex-align-items(center);
-}
-
-// Responsive content with container queries
-.responsive-container {
-  @include sap-container-type(inline-size);
-  @include sap-padding-container-responsive();
-}
-
-// Custom heading with focus state
-.custom-heading {
-  @include sap-heading(h2);
-  
-  @include sap-fiori-focus(-0.1875rem) {
-    // Focus styles automatically applied
-  }
-}
-
-// RTL-aware positioning
-.positioned-element {
-  @include sap-set-position-left(1rem); // Automatically flips for RTL
-  @include sap-set-padding-right(0.5rem); // Automatically flips for RTL
+.custom-spacing {
+  @include sap-padding-responsive();
+  @include sap-margin(small, x);
 }
 ```
 
-## Additional Resources
-- [Fundamental Styles Documentation](https://sap.github.io/fundamental-styles/?path=/docs/docs-introduction--docs)
-- [Theming Base Content on GitHub](https://github.com/SAP/theming-base-content)
+## ⚡ Quick Reference
+
+### 📋 Most Common Classes
+
+| Need | Class | Example |
+|------|-------|---------|
+| **Spacing** | `sap-padding`, `sap-margin-*` | `sap-margin-bottom-medium` |
+| **Flexbox** | `sap-flex sap-flex--*` | `sap-flex sap-flex--row sap-flex--gap-small` |
+| **Shadows** | `sap-has-shadow-*` | `sap-has-shadow-level-1` |
+| **Radius** | `sap-border-radius-*` | `sap-border-radius-element` |
+| **Typography** | `sap-heading-*`, `sap-font-size-*` | `sap-heading-h2` |
+| **Display** | `sap-display-*` | `sap-display-none` |
+| **Hide text** | `sap-sr-only` | `sap-sr-only` |
+
+## 📚 Resources
+
+- 📚 [Full Documentation](https://sap.github.io/fundamental-styles/)
+- 🎨 [Theming Base Content](https://github.com/SAP/theming-base-content)
