@@ -34,85 +34,114 @@ HomeExample.parameters = {
     docs: {
         description: {
             story: `
-<table style="width: 100%; border-collapse: collapse; margin-top: 1rem;">
-    <thead>
-        <tr>
-            <th style="padding: 0.25rem;">Size</th>
-            <th style="padding: 0.25rem;">Container Width</th>
-            <th style="padding: 0.25rem;">Container Padding</th>
-            <th style="padding: 0.25rem;">Container Padding Values</th>
-            <th style="padding: 0.25rem;">Class</th>
-            <th style="padding: 0.25rem;">Mixin</th>
-        </tr>
-    </thead>
-    <tbody>
-    <tr>
-        <td style="padding: 0.25rem;">SM</td>
-        <td style="padding: 0.25rem;">max-width: 599px</td>
-        <td style="padding: 0.25rem;">
-            <code>padding-inline-start: var(--sapShell\\_Space\\_S);</code><br>
-            <code>padding-inline-end: var(--sapShell\\_Space\\_S);</code>
-        </td>
-        <td style="padding: 0.25rem;">
-            <code>padding-inline-start: 0.5rem;</code><br>
-            <code>padding-inline-end: 0.5rem;</code>
-        </td>
-        <td style="padding: 0.25rem;"><code>.sap-content-paddings-home-sm</code></td>
-        <td style="padding: 0.25rem;"><code>@include sap-content-paddings(home, sm);</code></td>
-    </tr>
-    <tr>
-        <td style="padding: 0.25rem;">MD</td>
-        <td style="padding: 0.25rem;">min-width: 600px, <br>max-width: 1023px</td>
-        <td style="padding: 0.25rem;">
-            <code>padding-inline-start: var(--sapShell\\_Space\\_M);</code><br>
-            <code>padding-inline-end: var(--sapShell\\_Space\\_M);</code>
-        </td>
-        <td style="padding: 0.25rem;">
-            <code>padding-inline-start: 2rem;</code><br>
-            <code>padding-inline-end: 2rem;</code>
-        </td>
-        <td style="padding: 0.25rem;"><code>.sap-content-paddings-home-md</code></td>
-        <td style="padding: 0.25rem;"><code>@include sap-content-paddings(home, md);</code></td>
-    </tr>
-    <tr>
-        <td style="padding: 0.25rem;">LG</td>
-        <td style="padding: 0.25rem;">min-width: 1024px, <br>max-width: 1439px</td>
-        <td style="padding: 0.25rem;">
-            <code>padding-inline-start: var(--sapShell\\_Space\\_L);</code><br>
-            <code>padding-inline-end: var(--sapShell\\_Space\\_L);</code>
-        </td>
-        <td style="padding: 0.25rem;">
-            <code>padding-inline-start: 2rem;</code><br>
-            <code>padding-inline-end: 2rem;</code>
-        </td>
-        <td style="padding: 0.25rem;"><code>.sap-content-paddings-home-lg</code></td>
-        <td style="padding: 0.25rem;"><code>@include sap-content-paddings(home, lg);</code></td>
-    </tr>
-    <tr>
-        <td style="padding: 0.25rem;">XL</td>
-        <td style="padding: 0.25rem;">min-width: 1440px</td>
-        <td style="padding: 0.25rem;">
-            <code>padding-inline-start: var(--sapShell\\_Space\\_XL);</code><br>
-            <code>padding-inline-end: var(--sapShell\\_Space\\_XL);</code>
-        </td>
-        <td style="padding: 0.25rem;">
-            <code>padding-inline-start: 3rem;</code><br>
-            <code>padding-inline-end: 3rem;</code>
-        </td>
-        <td style="padding: 0.25rem;"><code>.sap-content-paddings-home-xl</code></td>
-        <td style="padding: 0.25rem;"><code>@include sap-content-paddings(home, xl);</code></td>
-    </tr>
-    <tr>
-        <td style="padding: 0.25rem;">Default</td>
-        <td style="padding: 0.25rem;">responsive</td>
-        <td style="padding: 0.25rem;">based on screen size</td>
-        <td style="padding: 0.25rem;">based on screen size</td>
-        <td style="padding: 0.25rem;"><code>.sap-content-paddings-home</code></td>
-        <td style="padding: 0.25rem;"><code>@include sap-content-paddings(home, default);</code> <br> or 
-        <code>@include sap-content-paddings(home);</code></td>
-    </tr>
-    </tbody>
-</table>`
+<style>
+.padding-size-card {
+    background: #f7f8fa;
+    border: 0.0625rem solid #eaecee;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin-block-end: 1rem;
+}
+.padding-size-card h4 {
+    margin: 0 0 0.75rem 0;
+    color: #0a6ed1;
+    font-size: 1rem;
+    font-weight: 600;
+}
+.padding-size-card dl {
+    margin: 0;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 0.5rem 1rem;
+    font-size: 0.875rem;
+    align-items: baseline;
+}
+.padding-size-card dt {
+    font-weight: 600;
+    color: #32363a;
+}
+.padding-size-card dd {
+    margin: 0;
+    color: #6a6d70;
+}
+.padding-size-card code {
+    background: #fff;
+    padding: 0.125rem 0.375rem;
+    border-radius: 0.25rem;
+    font-size: 0.8125rem;
+    border: 0.0625rem solid #e4e4e4;
+    display: inline-block;
+    margin: 0.125rem 0;
+}
+</style>
+
+<div class="padding-size-card">
+    <h4>SM (Small) - up to 599px</h4>
+    <dl>
+        <dt>Padding:</dt>
+        <dd><code>0.5rem</code> (left & right)</dd>
+        <dt>Variable:</dt>
+        <dd><code>var(--sapShell_Space_S)</code></dd>
+        <dt>Class:</dt>
+        <dd><code>.sap-content-paddings-home-sm</code></dd>
+        <dt>Mixin:</dt>
+        <dd><code>@include sap-content-paddings(home, sm);</code></dd>
+    </dl>
+</div>
+
+<div class="padding-size-card">
+    <h4>MD (Medium) - 600px to 1023px</h4>
+    <dl>
+        <dt>Padding:</dt>
+        <dd><code>2rem</code> (left & right)</dd>
+        <dt>Variable:</dt>
+        <dd><code>var(--sapShell_Space_M)</code></dd>
+        <dt>Class:</dt>
+        <dd><code>.sap-content-paddings-home-md</code></dd>
+        <dt>Mixin:</dt>
+        <dd><code>@include sap-content-paddings(home, md);</code></dd>
+    </dl>
+</div>
+
+<div class="padding-size-card">
+    <h4>LG (Large) - 1024px to 1439px</h4>
+    <dl>
+        <dt>Padding:</dt>
+        <dd><code>2rem</code> (left & right)</dd>
+        <dt>Variable:</dt>
+        <dd><code>var(--sapShell_Space_L)</code></dd>
+        <dt>Class:</dt>
+        <dd><code>.sap-content-paddings-home-lg</code></dd>
+        <dt>Mixin:</dt>
+        <dd><code>@include sap-content-paddings(home, lg);</code></dd>
+    </dl>
+</div>
+
+<div class="padding-size-card">
+    <h4>XL (Extra Large) - 1440px and up</h4>
+    <dl>
+        <dt>Padding:</dt>
+        <dd><code>3rem</code> (left & right)</dd>
+        <dt>Variable:</dt>
+        <dd><code>var(--sapShell_Space_XL)</code></dd>
+        <dt>Class:</dt>
+        <dd><code>.sap-content-paddings-home-xl</code></dd>
+        <dt>Mixin:</dt>
+        <dd><code>@include sap-content-paddings(home, xl);</code></dd>
+    </dl>
+</div>
+
+<div class="padding-size-card">
+    <h4>Default (Responsive)</h4>
+    <dl>
+        <dt>Behavior:</dt>
+        <dd>Automatically adjusts based on screen size</dd>
+        <dt>Class:</dt>
+        <dd><code>.sap-content-paddings-home</code></dd>
+        <dt>Mixin:</dt>
+        <dd><code>@include sap-content-paddings(home, default);</code> or <code>@include sap-content-paddings(home);</code></dd>
+    </dl>
+</div>`
         }
     }
 };
@@ -126,85 +155,114 @@ ContainerExample.parameters = {
     docs: {
         description: {
             story: `
-<table style="width: 100%; border-collapse: collapse; margin-top: 1rem;">
-    <thead>
-        <tr>
-            <th style="padding: 0.25rem;">Size</th>
-            <th style="padding: 0.25rem;">Container Width</th>
-            <th style="padding: 0.25rem;">Container Padding</th>
-            <th style="padding: 0.25rem;">Container Padding Values</th>
-            <th style="padding: 0.25rem;">Class</th>
-            <th style="padding: 0.25rem;">Mixin</th>
-        </tr>
-    </thead>
-    <tbody>
-    <tr>
-        <td style="padding: 0.25rem;">SM</td>
-        <td style="padding: 0.25rem;">max-width: 599px</td>
-        <td style="padding: 0.25rem;">
-            <code>padding-inline-start: var(--sapContent\\_Space\\_S);</code><br>
-            <code>padding-inline-end: var(--sapContent\\_Space\\_S);</code>
-        </td>
-        <td style="padding: 0.25rem;">
-            <code>padding-inline-start: 1rem;</code><br>
-            <code>padding-inline-end: 1rem;</code>
-        </td>
-        <td style="padding: 0.25rem;"><code>.sap-content-paddings-container-sm</code></td>
-        <td style="padding: 0.25rem;"><code>@include sap-content-paddings(container, sm);</code></td>
-    </tr>
-    <tr>
-        <td style="padding: 0.25rem;">MD</td>
-        <td style="padding: 0.25rem;">min-width: 600px, <br>max-width: 1023px</td>
-        <td style="padding: 0.25rem;">
-            <code>padding-inline-start: var(--sapContent\\_Space\\_M);</code><br>
-            <code>padding-inline-end: var(--sapContent\\_Space\\_M);</code>
-        </td>
-        <td style="padding: 0.25rem;">
-            <code>padding-inline-start: 2rem;</code><br>
-            <code>padding-inline-end: 2rem;</code>
-        </td>
-        <td style="padding: 0.25rem;"><code>.sap-content-paddings-container-md</code></td>
-        <td style="padding: 0.25rem;"><code>@include sap-content-paddings(container, md);</code></td>
-    </tr>
-    <tr>
-        <td style="padding: 0.25rem;">LG</td>
-        <td style="padding: 0.25rem;">min-width: 1024px, <br>max-width: 1439px</td>
-        <td style="padding: 0.25rem;">
-            <code>padding-inline-start: var(--sapContent\\_Space\\_L);</code><br>
-            <code>padding-inline-end: var(--sapContent\\_Space\\_L);</code>
-        </td>
-        <td style="padding: 0.25rem;">
-            <code>padding-inline-start: 2rem;</code><br>
-            <code>padding-inline-end: 2rem;</code>
-        </td>
-        <td style="padding: 0.25rem;"><code>.sap-content-paddings-container-lg</code></td>
-        <td style="padding: 0.25rem;"><code>@include sap-content-paddings(container, lg);</code></td>
-    </tr>
-    <tr>
-        <td style="padding: 0.25rem;">XL</td>
-        <td style="padding: 0.25rem;">min-width: 1440px</td>
-        <td style="padding: 0.25rem;">
-            <code>padding-inline-start: var(--sapContent\\_Space\\_XL);</code><br>
-            <code>padding-inline-end: var(--sapContent\\_Space\\_XL);</code>
-        </td>
-        <td style="padding: 0.25rem;">
-            <code>padding-inline-start: 3rem;</code><br>
-            <code>padding-inline-end: 3rem;</code>
-        </td>
-        <td style="padding: 0.25rem;"><code>.sap-content-paddings-container-xl</code></td>
-        <td style="padding: 0.25rem;"><code>@include sap-content-paddings(container, xl);</code></td>
-    </tr>
-    <tr>
-        <td style="padding: 0.25rem;">Default</td>
-        <td style="padding: 0.25rem;">responsive</td>
-        <td style="padding: 0.25rem;">based on screen size</td>
-        <td style="padding: 0.25rem;">based on screen size</td>
-        <td style="padding: 0.25rem;"><code>.sap-content-paddings-container</code></td>
-        <td style="padding: 0.25rem;"><code>@include sap-content-paddings(container, default);</code> <br> or 
-        <code>@include sap-content-paddings(container);</code></td>
-    </tr>
-    </tbody>
-</table>`
+<style>
+.padding-size-card {
+    background: #f7f8fa;
+    border: 1px solid #eaecee;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+.padding-size-card h4 {
+    margin: 0 0 0.75rem 0;
+    color: #0a6ed1;
+    font-size: 1rem;
+    font-weight: 600;
+}
+.padding-size-card dl {
+    margin: 0;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 0.5rem 1rem;
+    font-size: 0.875rem;
+    align-items: baseline;
+}
+.padding-size-card dt {
+    font-weight: 600;
+    color: #32363a;
+}
+.padding-size-card dd {
+    margin: 0;
+    color: #6a6d70;
+}
+.padding-size-card code {
+    background: #fff;
+    padding: 0.125rem 0.375rem;
+    border-radius: 0.25rem;
+    font-size: 0.8125rem;
+    border: 1px solid #e4e4e4;
+    display: inline-block;
+    margin: 0.125rem 0;
+}
+</style>
+
+<div class="padding-size-card">
+    <h4>SM (Small) - up to 599px</h4>
+    <dl>
+        <dt>Padding:</dt>
+        <dd><code>1rem</code> (left & right)</dd>
+        <dt>Variable:</dt>
+        <dd><code>var(--sapContent_Space_S)</code></dd>
+        <dt>Class:</dt>
+        <dd><code>.sap-content-paddings-container-sm</code></dd>
+        <dt>Mixin:</dt>
+        <dd><code>@include sap-content-paddings(container, sm);</code></dd>
+    </dl>
+</div>
+
+<div class="padding-size-card">
+    <h4>MD (Medium) - 600px to 1023px</h4>
+    <dl>
+        <dt>Padding:</dt>
+        <dd><code>2rem</code> (left & right)</dd>
+        <dt>Variable:</dt>
+        <dd><code>var(--sapContent_Space_M)</code></dd>
+        <dt>Class:</dt>
+        <dd><code>.sap-content-paddings-container-md</code></dd>
+        <dt>Mixin:</dt>
+        <dd><code>@include sap-content-paddings(container, md);</code></dd>
+    </dl>
+</div>
+
+<div class="padding-size-card">
+    <h4>LG (Large) - 1024px to 1439px</h4>
+    <dl>
+        <dt>Padding:</dt>
+        <dd><code>2rem</code> (left & right)</dd>
+        <dt>Variable:</dt>
+        <dd><code>var(--sapContent_Space_L)</code></dd>
+        <dt>Class:</dt>
+        <dd><code>.sap-content-paddings-container-lg</code></dd>
+        <dt>Mixin:</dt>
+        <dd><code>@include sap-content-paddings(container, lg);</code></dd>
+    </dl>
+</div>
+
+<div class="padding-size-card">
+    <h4>XL (Extra Large) - 1440px and up</h4>
+    <dl>
+        <dt>Padding:</dt>
+        <dd><code>3rem</code> (left & right)</dd>
+        <dt>Variable:</dt>
+        <dd><code>var(--sapContent_Space_XL)</code></dd>
+        <dt>Class:</dt>
+        <dd><code>.sap-content-paddings-container-xl</code></dd>
+        <dt>Mixin:</dt>
+        <dd><code>@include sap-content-paddings(container, xl);</code></dd>
+    </dl>
+</div>
+
+<div class="padding-size-card">
+    <h4>Default (Responsive)</h4>
+    <dl>
+        <dt>Behavior:</dt>
+        <dd>Automatically adjusts based on screen size</dd>
+        <dt>Class:</dt>
+        <dd><code>.sap-content-paddings-container</code></dd>
+        <dt>Mixin:</dt>
+        <dd><code>@include sap-content-paddings(container, default);</code> or <code>@include sap-content-paddings(container);</code></dd>
+    </dl>
+</div>`
         }
     }
 };

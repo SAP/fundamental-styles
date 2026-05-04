@@ -1,51 +1,83 @@
+<style>
+.position-example-card {
+    background: #f7f8fa;
+    border: 0.0625rem solid #eaecee;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin-block-end: 1rem;
+}
+.position-example-card h4 {
+    margin: 0 0 0.75rem 0;
+    color: #0a6ed1;
+    font-size: 0.9375rem;
+    font-weight: 600;
+}
+.position-example-card pre {
+    background: #fff;
+    border: 0.0625rem solid #e4e4e4;
+    border-radius: 0.25rem;
+    padding: 0.75rem 1rem;
+    margin: 0;
+    font-size: 0.875rem;
+    font-family: 'Courier New', Courier, monospace;
+    color: #32363a;
+    overflow-x: auto;
+    line-height: 1.5;
+}
+</style>
 
-<div class="sap-docs-container">
-    <code>
-    .test-position {
-        @include sap-position(absolute, $top: 0, $bottom: 2rem);
-    }
-    </code>
-    <br><br>
-    <code>
-    .test-position-relative {
-        @include sap-position-relative($top: 0, $bottom: 2rem);
-    }
-    </code>
-    <br><br>
-    <code>
-    .test-position-absolute {
-        @include sap-position-absolute($top: 0, $right: 4rem, $bottom: 2rem);
-    }
-    </code>
-    <br><br>
-    <code>
-    .test-position-fixed {
-        @include sap-position-fixed($top: 0, $right: 4rem, $bottom: 2rem, $left: 0);
-    }
-    </code>
-    <br><br>
-    <code>
-    .test-position-sticky {
-        @include sap-position-sticky($bottom: 0);
-    }
-    </code>
-    <br><br>
-    <code>
-    .test-position-absolute-center {
-        @include sap-position-absolute-center();
-    }
-    </code>
-    <br><br>
-    <code>
-    .test-position-absolute-center-horizontally {
-        @include sap-position-absolute-center-x();
-    }
-    </code>
-    <br><br>
-    <code>
-    .test-position-absolute-center-vertically {
-        @include sap-position-absolute-center-y();
-    }
-    </code>
+<div class="position-example-card">
+    <h4>Generic Position with Offsets</h4>
+    <pre>.my-element {
+    @include sap-position(absolute, $top: 0, $bottom: 2rem);
+}</pre>
 </div>
 
+<div class="position-example-card">
+    <h4>Position Relative with Offsets</h4>
+    <pre>.my-element {
+    @include sap-position-relative($top: 0, $bottom: 2rem);
+}</pre>
+</div>
+
+<div class="position-example-card">
+    <h4>Position Absolute with Multiple Offsets</h4>
+    <pre>.my-element {
+    @include sap-position-absolute($top: 0, $right: 4rem, $bottom: 2rem);
+}</pre>
+</div>
+
+<div class="position-example-card">
+    <h4>Position Fixed with All Offsets</h4>
+    <pre>.my-element {
+    @include sap-position-fixed($top: 0, $right: 4rem, $bottom: 2rem, $left: 0);
+}</pre>
+</div>
+
+<div class="position-example-card">
+    <h4>Position Sticky</h4>
+    <pre>.my-element {
+    @include sap-position-sticky($bottom: 0);
+}</pre>
+</div>
+
+<div class="position-example-card">
+    <h4>Absolute Center (Both Axes)</h4>
+    <pre>.my-element {
+    @include sap-position-absolute-center();
+}</pre>
+</div>
+
+<div class="position-example-card">
+    <h4>Absolute Center Horizontally</h4>
+    <pre>.my-element {
+    @include sap-position-absolute-center-x();
+}</pre>
+</div>
+
+<div class="position-example-card">
+    <h4>Absolute Center Vertically</h4>
+    <pre>.my-element {
+    @include sap-position-absolute-center-y();
+}</pre>
+</div>

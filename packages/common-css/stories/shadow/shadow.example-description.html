@@ -1,168 +1,366 @@
+<style>
+.shadow-card {
+    background: #f7f8fa;
+    border: 0.0625rem solid #eaecee;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin-block-end: 1rem;
+}
+.shadow-card h4 {
+    margin: 0 0 0.75rem 0;
+    color: #0a6ed1;
+    font-size: 1rem;
+    font-weight: 600;
+}
+.shadow-card dl {
+    margin: 0;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 0.5rem 1rem;
+    font-size: 0.875rem;
+    align-items: baseline;
+}
+.shadow-card dt {
+    font-weight: 600;
+    color: #32363a;
+}
+.shadow-card dd {
+    margin: 0;
+    color: #6a6d70;
+    word-break: break-word;
+}
+.shadow-card code {
+    background: #fff;
+    padding: 0.125rem 0.375rem;
+    border-radius: 0.25rem;
+    font-size: 0.8125rem;
+    border: 0.0625rem solid #e4e4e4;
+    display: inline-block;
+    margin: 0.125rem 0;
+}
+.shadow-section {
+    margin-block-end: 2rem;
+}
+.shadow-section > h4 {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: #32363a;
+    margin-block-end: 1rem;
+}
+.helper-section {
+    background: #f7f8fa;
+    border: 0.0625rem solid #eaecee;
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    margin-block-end: 1rem;
+}
+.helper-section h3 {
+    margin: 0 0 1rem 0;
+    color: #0a6ed1;
+    font-size: 1.125rem;
+    font-weight: 600;
+}
+.helper-section dl {
+    margin: 0 0 1.5rem 0;
+}
+.helper-section dt {
+    font-weight: 600;
+    color: #32363a;
+    margin-block-end: 0.5rem;
+    font-size: 0.875rem;
+}
+.helper-section dd {
+    margin: 0 0 1rem 0;
+    padding-inline-start: 1rem;
+}
+.helper-section dd code {
+    background: #fff;
+    padding: 0.375rem 0.75rem;
+    border-radius: 0.25rem;
+    font-size: 0.8125rem;
+    border: 0.0625rem solid #e4e4e4;
+    display: block;
+    margin: 0.25rem 0;
+}
+.helper-section .type-list {
+    background: #fff;
+    padding: 1rem;
+    border-radius: 0.25rem;
+    border: 0.0625rem solid #e4e4e4;
+    font-size: 0.8125rem;
+}
+.helper-section .type-list code {
+    background: transparent;
+    padding: 0.125rem 0.25rem;
+    border: none;
+    display: inline;
+    margin: 0;
+    color: #0854a0;
+}
+</style>
+
 <p>Shadows create visual depth and hierarchy. These utilities and mixins offer predefined shadow levels for containers and elements, along with options for interaction and text shadows to improve clarity and user experience.</p>
 
-<h4>Content Shadows</h4>
-<table style="width: 100%; border-collapse: collapse; margin-top: 1rem; text-align: left;">
-    <tr>
-        <th style="padding: 0.5rem 1rem;">Type</th>
-        <th style="padding: 0.5rem 1rem;">Class</th>
-        <th style="padding: 0.5rem 1rem;">Mixin</th>
-        <th style="padding: 0.5rem 1rem;">sap-theming variable</th>
-    </tr>
-    <tr>
-        <td style="padding: 0.5rem 1rem;">Level 0</td>
-        <td style="padding: 0.5rem 1rem;">.sap-has-shadow-level-0</td>
-        <td style="padding: 0.5rem 1rem;">@include sap-shadow(level-0)</td>
-        <td style="padding: 0.5rem 1rem;">--sapContent_Shadow0</td>
-    </tr>
-    <tr>
-        <td style="padding: 0.5rem 1rem;">Level 1</td>
-        <td style="padding: 0.5rem 1rem;">.sap-has-shadow-level-1</td>
-        <td style="padding: 0.5rem 1rem;">@include sap-shadow(level-1)</td>
-        <td style="padding: 0.5rem 1rem;">--sapContent_Shadow1</td>
-    </tr>
-    <tr>
-        <td style="padding: 0.5rem 1rem;">Level 2</td>
-        <td style="padding: 0.5rem 1rem;">.sap-has-shadow-level-2</td>
-        <td style="padding: 0.5rem 1rem;">@include sap-shadow(level-2)</td>
-        <td style="padding: 0.5rem 1rem;">--sapContent_Shadow2</td>
-    </tr>
-    <tr>
-        <td style="padding: 0.5rem 1rem;">Level 3</td>
-        <td style="padding: 0.5rem 1rem;">.sap-has-shadow-level-3</td>
-        <td style="padding: 0.5rem 1rem;">@include sap-shadow(level-3)</td>
-        <td style="padding: 0.5rem 1rem;">--sapContent_Shadow3</td>
-    </tr>
-    <tr>
-        <td style="padding: 0.5rem 1rem;">None</td>
-        <td style="padding: 0.5rem 1rem;">.sap-has-shadow-none</td>
-        <td style="padding: 0.5rem 1rem;">@include sap-shadow(none)</td>
-        <td style="padding: 0.5rem 1rem;">none</td>
-    </tr>
-</table>
+<div class="shadow-section">
+    <h4>Content Shadows</h4>
 
-<br>
+    <div class="shadow-card">
+        <h4>Level 0</h4>
+        <dl>
+            <dt>Class:</dt>
+            <dd><code>.sap-has-shadow-level-0</code></dd>
+            <dt>Mixin:</dt>
+            <dd><code>@include sap-shadow(level-0)</code></dd>
+            <dt>Variable:</dt>
+            <dd><code>--sapContent_Shadow0</code></dd>
+        </dl>
+    </div>
 
-<h4>Header Shadows</h4>
-<table style="width: 100%; border-collapse: collapse; margin-top: 1rem; text-align: left;">
-    <tr>
-        <th style="padding: 0.5rem 1rem;">Type</th>
-        <th style="padding: 0.5rem 1rem;">Class</th>
-        <th style="padding: 0.5rem 1rem;">Mixin</th>
-        <th style="padding: 0.5rem 1rem;">sap-theming variable</th>
-    </tr>
-    <tr>
-        <td style="padding: 0.5rem 1rem;">Header</td>
-        <td style="padding: 0.5rem 1rem;">.sap-has-shadow-header</td>
-        <td style="padding: 0.5rem 1rem;">@include sap-shadow(header)</td>
-        <td style="padding: 0.5rem 1rem;">--sapContent_HeaderShadow</td>
-    </tr>
-    <tr>
-        <td style="padding: 0.5rem 1rem;">Shell</td>
-        <td style="padding: 0.5rem 1rem;">.sap-has-shadow-shell</td>
-        <td style="padding: 0.5rem 1rem;">@include sap-shadow(shell)</td>
-        <td style="padding: 0.5rem 1rem;">--sapShell_Shadow</td>
-    </tr>
-</table>
+    <div class="shadow-card">
+        <h4>Level 1</h4>
+        <dl>
+            <dt>Class:</dt>
+            <dd><code>.sap-has-shadow-level-1</code></dd>
+            <dt>Mixin:</dt>
+            <dd><code>@include sap-shadow(level-1)</code></dd>
+            <dt>Variable:</dt>
+            <dd><code>--sapContent_Shadow1</code></dd>
+        </dl>
+    </div>
 
+    <div class="shadow-card">
+        <h4>Level 2</h4>
+        <dl>
+            <dt>Class:</dt>
+            <dd><code>.sap-has-shadow-level-2</code></dd>
+            <dt>Mixin:</dt>
+            <dd><code>@include sap-shadow(level-2)</code></dd>
+            <dt>Variable:</dt>
+            <dd><code>--sapContent_Shadow2</code></dd>
+        </dl>
+    </div>
 
-<br>
+    <div class="shadow-card">
+        <h4>Level 3</h4>
+        <dl>
+            <dt>Class:</dt>
+            <dd><code>.sap-has-shadow-level-3</code></dd>
+            <dt>Mixin:</dt>
+            <dd><code>@include sap-shadow(level-3)</code></dd>
+            <dt>Variable:</dt>
+            <dd><code>--sapContent_Shadow3</code></dd>
+        </dl>
+    </div>
 
-<h4>Interaction Shadows</h4>
-<table style="width: 100%; border-collapse: collapse; margin-top: 1rem; text-align: left;">
-    <tr>
-        <th style="padding: 0.5rem 1rem;">Type</th>
-        <th style="padding: 0.5rem 1rem;">Class</th>
-        <th style="padding: 0.5rem 1rem;">Mixin</th>
-        <th style="padding: 0.5rem 1rem;">sap-theming variable</th>
-    </tr>
-    <tr>
-        <td style="padding: 0.5rem 1rem;">Interaction</td>
-        <td style="padding: 0.5rem 1rem;">.sap-has-shadow-interaction</td>
-        <td style="padding: 0.5rem 1rem;">@include sap-shadow(interaction)</td>
-        <td style="padding: 0.5rem 1rem;">--sapContent\_Interaction\_Shadow</td>
-    </tr>
-    <tr>
-        <td style="padding: 0.5rem 1rem;">Selected</td>
-        <td style="padding: 0.5rem 1rem;">.sap-has-shadow-selected</td>
-        <td style="padding: 0.5rem 1rem;">@include sap-shadow(selected)</td>
-        <td style="padding: 0.5rem 1rem;">--sapContent\_Selected\_Shadow</td>
-    </tr>
-    <tr>
-        <td style="padding: 0.5rem 1rem;">Negative</td>
-        <td style="padding: 0.5rem 1rem;">.sap-has-shadow-negative</td>
-        <td style="padding: 0.5rem 1rem;">@include sap-shadow(negative)</td>
-        <td style="padding: 0.5rem 1rem;">--sapContent\_Negative\_Shadow</td>
-    </tr>
-    <tr>
-        <td style="padding: 0.5rem 1rem;">Critical</td>
-        <td style="padding: 0.5rem 1rem;">.sap-has-shadow-critical</td>
-        <td style="padding: 0.5rem 1rem;">@include sap-shadow(critical)</td>
-        <td style="padding: 0.5rem 1rem;">--sapContent\_Critical\_Shadow</td>
-    </tr>
-    <tr>
-        <td style="padding: 0.5rem 1rem;">Positive</td>
-        <td style="padding: 0.5rem 1rem;">.sap-has-shadow-positive</td>
-        <td style="padding: 0.5rem 1rem;">@include sap-shadow(positive)</td>
-        <td style="padding: 0.5rem 1rem;">--sapContent\_Positive\_Shadow</td>
-    </tr>
-    <tr>
-        <td style="padding: 0.5rem 1rem;">Informative</td>
-        <td style="padding: 0.5rem 1rem;">.sap-has-shadow-informative</td>
-        <td style="padding: 0.5rem 1rem;">@include sap-shadow(informative)</td>
-        <td style="padding: 0.5rem 1rem;">--sapContent\_Informative\_Shadow</td>
-    </tr>
-    <tr>
-        <td style="padding: 0.5rem 1rem;">Neutral</td>
-        <td style="padding: 0.5rem 1rem;">.sap-has-shadow-neutral</td>
-        <td style="padding: 0.5rem 1rem;">@include sap-shadow(neutral)</td>
-        <td style="padding: 0.5rem 1rem;">--sapContent\_Neutral\_Shadow</td>
-    </tr>
-</table>
+    <div class="shadow-card">
+        <h4>None</h4>
+        <dl>
+            <dt>Class:</dt>
+            <dd><code>.sap-has-shadow-none</code></dd>
+            <dt>Mixin:</dt>
+            <dd><code>@include sap-shadow(none)</code></dd>
+            <dt>Variable:</dt>
+            <dd>none</dd>
+        </dl>
+    </div>
+</div>
 
-<br>
+<div class="shadow-section">
+    <h4>Header Shadows</h4>
 
-<h4>Text Shadows</h4>
-<table style="width: 100%; border-collapse: collapse; margin-top: 1rem; text-align: left;">
-    <tr>
-        <th style="padding: 0.5rem 1rem;">Type</th>
-        <th style="padding: 0.5rem 1rem;">Class</th>
-        <th style="padding: 0.5rem 1rem;">Mixin</th>
-        <th style="padding: 0.5rem 1rem;">sap-theming variable</th>
-    </tr>
-    <tr>
-        <td style="padding: 0.5rem 1rem;">Text</td>
-        <td style="padding: 0.5rem 1rem;">.sap-has-shadow-text</td>
-        <td style="padding: 0.5rem 1rem;">@include sap-shadow(text)</td>
-        <td style="padding: 0.5rem 1rem;">--sapContent_TextShadow</td>
-    </tr>
-    <tr>
-        <td style="padding: 0.5rem 1rem;">Contrast Text</td>
-        <td style="padding: 0.5rem 1rem;">.sap-has-shadow-contrast-text</td>
-        <td style="padding: 0.5rem 1rem;">@include sap-shadow(contrast-text)</td>
-        <td style="padding: 0.5rem 1rem;">--sapContent_ContrastTextShadow</td>
-    </tr>
-    <tr>
-        <td style="padding: 0.5rem 1rem;">Group Title Text</td>
-        <td style="padding: 0.5rem 1rem;">.sap-has-shadow-group-title-text</td>
-        <td style="padding: 0.5rem 1rem;">@include sap-shadow(group-title-text)</td>
-        <td style="padding: 0.5rem 1rem;">--sapShell_GroupTitleTextShadow</td>
-    </tr>
-    <tr>
-        <td style="padding: 0.5rem 1rem;">Emphasized Text</td>
-        <td style="padding: 0.5rem 1rem;">.sap-has-shadow-emphasized-text</td>
-        <td style="padding: 0.5rem 1rem;">@include sap-shadow(emphasized-text)</td>
-        <td style="padding: 0.5rem 1rem;">--sapButton\_Emphasized\_TextShadow</td>
-    </tr>
-</table>
+    <div class="shadow-card">
+        <h4>Header</h4>
+        <dl>
+            <dt>Class:</dt>
+            <dd><code>.sap-has-shadow-header</code></dd>
+            <dt>Mixin:</dt>
+            <dd><code>@include sap-shadow(header)</code></dd>
+            <dt>Variable:</dt>
+            <dd><code>--sapContent_HeaderShadow</code></dd>
+        </dl>
+    </div>
 
-<br>
-<h3>Helper mixins for shadow:</h3>
-<ul>
-    <li>to set <b>box-shadow: </b><code>@include sap-set-box-shadow($value)</code></li>
-    <li>to set <b>text-shadow: </b><code>@include sap-set-text-shadow($value)</code></li>
-    <li><b>box-shadow: </b><code>@include sap-shadow($type)</code></li>
-</ul>
-where:<br>
-<code><b>$value</b></code> can be a css variable or any value specified by the user. For example:
-<code>@include sap-set-box-shadow(var(--sapContent_Shadow0))</code><br>
-<code><b>$type</b></code> can be one of the following: <code>level-0 | level-1 | level-2 | level-3 | text | contrast-text | group-title-text | emphasized-text | header | shell | interaction | selected | negative | critical | positive | informative | neutral | none</code>
+    <div class="shadow-card">
+        <h4>Shell</h4>
+        <dl>
+            <dt>Class:</dt>
+            <dd><code>.sap-has-shadow-shell</code></dd>
+            <dt>Mixin:</dt>
+            <dd><code>@include sap-shadow(shell)</code></dd>
+            <dt>Variable:</dt>
+            <dd><code>--sapShell_Shadow</code></dd>
+        </dl>
+    </div>
+</div>
+
+<div class="shadow-section">
+    <h4>Interaction Shadows</h4>
+
+    <div class="shadow-card">
+        <h4>Interaction</h4>
+        <dl>
+            <dt>Class:</dt>
+            <dd><code>.sap-has-shadow-interaction</code></dd>
+            <dt>Mixin:</dt>
+            <dd><code>@include sap-shadow(interaction)</code></dd>
+            <dt>Variable:</dt>
+            <dd><code>--sapContent_Interaction_Shadow</code></dd>
+        </dl>
+    </div>
+
+    <div class="shadow-card">
+        <h4>Selected</h4>
+        <dl>
+            <dt>Class:</dt>
+            <dd><code>.sap-has-shadow-selected</code></dd>
+            <dt>Mixin:</dt>
+            <dd><code>@include sap-shadow(selected)</code></dd>
+            <dt>Variable:</dt>
+            <dd><code>--sapContent_Selected_Shadow</code></dd>
+        </dl>
+    </div>
+
+    <div class="shadow-card">
+        <h4>Negative</h4>
+        <dl>
+            <dt>Class:</dt>
+            <dd><code>.sap-has-shadow-negative</code></dd>
+            <dt>Mixin:</dt>
+            <dd><code>@include sap-shadow(negative)</code></dd>
+            <dt>Variable:</dt>
+            <dd><code>--sapContent_Negative_Shadow</code></dd>
+        </dl>
+    </div>
+
+    <div class="shadow-card">
+        <h4>Critical</h4>
+        <dl>
+            <dt>Class:</dt>
+            <dd><code>.sap-has-shadow-critical</code></dd>
+            <dt>Mixin:</dt>
+            <dd><code>@include sap-shadow(critical)</code></dd>
+            <dt>Variable:</dt>
+            <dd><code>--sapContent_Critical_Shadow</code></dd>
+        </dl>
+    </div>
+
+    <div class="shadow-card">
+        <h4>Positive</h4>
+        <dl>
+            <dt>Class:</dt>
+            <dd><code>.sap-has-shadow-positive</code></dd>
+            <dt>Mixin:</dt>
+            <dd><code>@include sap-shadow(positive)</code></dd>
+            <dt>Variable:</dt>
+            <dd><code>--sapContent_Positive_Shadow</code></dd>
+        </dl>
+    </div>
+
+    <div class="shadow-card">
+        <h4>Informative</h4>
+        <dl>
+            <dt>Class:</dt>
+            <dd><code>.sap-has-shadow-informative</code></dd>
+            <dt>Mixin:</dt>
+            <dd><code>@include sap-shadow(informative)</code></dd>
+            <dt>Variable:</dt>
+            <dd><code>--sapContent_Informative_Shadow</code></dd>
+        </dl>
+    </div>
+
+    <div class="shadow-card">
+        <h4>Neutral</h4>
+        <dl>
+            <dt>Class:</dt>
+            <dd><code>.sap-has-shadow-neutral</code></dd>
+            <dt>Mixin:</dt>
+            <dd><code>@include sap-shadow(neutral)</code></dd>
+            <dt>Variable:</dt>
+            <dd><code>--sapContent_Neutral_Shadow</code></dd>
+        </dl>
+    </div>
+</div>
+
+<div class="shadow-section">
+    <h4>Text Shadows</h4>
+
+    <div class="shadow-card">
+        <h4>Text</h4>
+        <dl>
+            <dt>Class:</dt>
+            <dd><code>.sap-has-shadow-text</code></dd>
+            <dt>Mixin:</dt>
+            <dd><code>@include sap-shadow(text)</code></dd>
+            <dt>Variable:</dt>
+            <dd><code>--sapContent_TextShadow</code></dd>
+        </dl>
+    </div>
+
+    <div class="shadow-card">
+        <h4>Contrast Text</h4>
+        <dl>
+            <dt>Class:</dt>
+            <dd><code>.sap-has-shadow-contrast-text</code></dd>
+            <dt>Mixin:</dt>
+            <dd><code>@include sap-shadow(contrast-text)</code></dd>
+            <dt>Variable:</dt>
+            <dd><code>--sapContent_ContrastTextShadow</code></dd>
+        </dl>
+    </div>
+
+    <div class="shadow-card">
+        <h4>Group Title Text</h4>
+        <dl>
+            <dt>Class:</dt>
+            <dd><code>.sap-has-shadow-group-title-text</code></dd>
+            <dt>Mixin:</dt>
+            <dd><code>@include sap-shadow(group-title-text)</code></dd>
+            <dt>Variable:</dt>
+            <dd><code>--sapShell_GroupTitleTextShadow</code></dd>
+        </dl>
+    </div>
+
+    <div class="shadow-card">
+        <h4>Emphasized Text</h4>
+        <dl>
+            <dt>Class:</dt>
+            <dd><code>.sap-has-shadow-emphasized-text</code></dd>
+            <dt>Mixin:</dt>
+            <dd><code>@include sap-shadow(emphasized-text)</code></dd>
+            <dt>Variable:</dt>
+            <dd><code>--sapButton_Emphasized_TextShadow</code></dd>
+        </dl>
+    </div>
+</div>
+
+<div class="helper-section">
+    <h3>Helper Mixins</h3>
+
+    <dl>
+        <dt>Set box-shadow with custom value:</dt>
+        <dd>
+            <code>@include sap-set-box-shadow($value)</code>
+            <div style="margin-top: 0.5rem; color: #6a6d70; font-size: 0.8125rem;">
+                Example: <code>@include sap-set-box-shadow(var(--sapContent_Shadow0))</code>
+            </div>
+        </dd>
+
+        <dt>Set text-shadow with custom value:</dt>
+        <dd>
+            <code>@include sap-set-text-shadow($value)</code>
+            <div style="margin-top: 0.5rem; color: #6a6d70; font-size: 0.8125rem;">
+                Example: <code>@include sap-set-text-shadow(var(--sapContent_TextShadow))</code>
+            </div>
+        </dd>
+
+        <dt>Apply predefined shadow by type:</dt>
+        <dd>
+            <code>@include sap-shadow($type)</code>
+        </dd>
+    </dl>
+
+    <p style="margin: 1.5rem 0 0.5rem 0; font-weight: 600; color: #32363a; font-size: 0.875rem;">Available <code>$type</code> values:</p>
+    <div class="type-list">
+        <code>level-0</code> | <code>level-1</code> | <code>level-2</code> | <code>level-3</code> | <code>text</code> | <code>contrast-text</code> | <code>group-title-text</code> | <code>emphasized-text</code> | <code>header</code> | <code>shell</code> | <code>interaction</code> | <code>selected</code> | <code>negative</code> | <code>critical</code> | <code>positive</code> | <code>informative</code> | <code>neutral</code> | <code>none</code>
+    </div>
+</div>
