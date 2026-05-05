@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.41.6-rc.1](https://github.com/SAP/fundamental-styles/compare/v0.41.6-rc.0...v0.41.6-rc.1) (2026-05-05)
+
+### Bug Fixes
+
+- **styles:** update Illustrated message text width in L size [ci visual] ([#6296](https://github.com/SAP/fundamental-styles/issues/6296)) ([4de2169](https://github.com/SAP/fundamental-styles/commit/4de2169be02b93cd86883cc55f9f4ba64576d4f4))
+
 ## [0.41.6-rc.0](https://github.com/SAP/fundamental-styles/compare/v0.41.5...v0.41.6-rc.0) (2026-05-01)
 
 **Note:** Version bump only for package fundamental-styles
