@@ -3,5 +3,28 @@
 @import "../DocsPage/custom";
 
 .sbdocs.sbdocs-content {
-  max-width: 85%;
+  max-width: 56.25rem;
+}
+
+.fd-introduction {
+  h1, h2, h3 {
+    color: #32363a;
+    letter-spacing: -0.01em;
+  }
+
+  p {
+    color: #32363a;
+    font-size: 0.9375rem;
+    line-height: 1.65;
+  }
+
+  a {
+    color: #0a6ed1;
+    text-decoration: none;
+    transition: color 0.15s ease;
+
+    &:hover {
+      color: #0854a0;
+    }
+  }
 }

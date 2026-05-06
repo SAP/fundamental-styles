@@ -3,6 +3,50 @@ import lineHeightExampleHtml from "./line-height.example.html?raw";
 import fontSizeExampleHtml from "./font-size.example.html?raw";
 import fontFamilyExampleHtml from "./font-family.example.html?raw";
 import '../../src/sap-typography.scss';
+
+const typographyCardStyles = `
+<style>
+.typography-card {
+    background: #f7f8fa;
+    border: 0.0625rem solid #eaecee;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin-block-end: 1rem;
+}
+.typography-card div {
+    margin: 0 0 0.75rem 0;
+    color: #0a6ed1;
+    font-size: 1rem;
+    font-weight: 600;
+}
+.typography-card dl {
+    margin: 0;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 0.5rem 1rem;
+    font-size: 0.875rem;
+    align-items: baseline;
+}
+.typography-card dt {
+    font-weight: 600;
+    color: #32363a;
+}
+.typography-card dd {
+    margin: 0;
+    color: #6a6d70;
+}
+.typography-card code {
+    background: #fff;
+    padding: 0.125rem 0.375rem;
+    border-radius: 0.25rem;
+    font-size: 0.8125rem;
+    border: 0.0625rem solid #e4e4e4;
+    display: inline-block;
+    margin: 0.125rem 0;
+}
+</style>
+`;
+
 export default {
   title: 'Typography',
   parameters: {
@@ -10,268 +54,404 @@ export default {
       `
   }
 };
+
 export const FontFamily = () => fontFamilyExampleHtml;
 FontFamily.parameters = {
   docs: {
     description: {
-      story: `To set the <b>font-family</b> of an element use the <code>.sap-font-family-<i style="color: red;">type</i></code>class or the <code>@include sap-font-family(<i style="color: red;">type</i>)</code> mixin <br>
-where <i style="color: red;">type</i> can be one of the following:
-<ul>
-<li>regular</li>
-<li>light</li>
-<li>bold</li>
-<li>semibold</li>
-<li>semibold-duplex</li>
-<li>monospaced-regular</li>
-<li>monospaced-bold</li>
-<li>black</li>
-<li>header</li>
-</ul>
-      
-      
+      story: `${typographyCardStyles}
+<p>To set the <b>font-family</b> of an element use the <code>.sap-font-family-<i style="color: red;">type</i></code> class or the <code>@include sap-font-family(<i style="color: red;">type</i>)</code> mixin.</p>
 
-<table style="width: 100%; border-collapse: collapse; margin-top: 1rem;">
-    <tr>
-        <th style="padding: 0.25rem;">Type</th>
-        <th style="padding: 0.25rem;">Variable</th>
-        <th style="padding: 0.25rem;">Resultant Style</th>
-        <th style="padding: 0.25rem;">Class</th>
-        <th style="padding: 0.25rem;">Mixin</th>
-    </tr>
-    <tr>
-        <td style="padding: 0.25rem;">Regular</td>
-        <td style="padding: 0.25rem;"><code>var(--sapFontFamily)</code></td>
-        <td style="padding: 0.25rem;">font-family: "72", "72full", Arial, Helvetica, sans-serif;</td>
-        <td style="padding: 0.25rem;"><code>.sap-font-family-regular</code></td>
-        <td style="padding: 0.25rem;"><code>@include sap-font-family(regular)</code></td>
-    </tr>
-    <tr>
-        <td style="padding: 0.25rem;">Light</td>
-        <td style="padding: 0.25rem;"><code>var(--sapFontLightFamily)</code></td>
-        <td style="padding: 0.25rem;">font-family: "72-Light" , "72-Lightfull" , "72" , "72full" , Arial, Helvetica, sans-serif;</td>
-        <td style="padding: 0.25rem;"><code>.sap-font-family-light</code></td>
-        <td style="padding: 0.25rem;"><code>@include sap-font-family(light)</code></td>
-    </tr>
-    <tr>
-        <td style="padding: 0.25rem;">Bold</td>
-        <td style="padding: 0.25rem;"><code>var(--sapFontBoldFamily)</code></td>
-        <td style="padding: 0.25rem;">font-family: "72-Bold" , "72-Boldfull" , "72" , "72full" , Arial, Helvetica, sans-serif;</td>
-        <td style="padding: 0.25rem;"><code>.sap-font-family-bold</code></td>
-        <td style="padding: 0.25rem;"><code>@include sap-font-family(bold)</code></td>
-    </tr>
-    <tr>
-        <td style="padding: 0.25rem;">Semibold</td>
-        <td style="padding: 0.25rem;"><code>var(--sapFontSemiboldFamily)</code></td>
-        <td style="padding: 0.25rem;">font-family: "72-Semibold", "72-Semiboldfull", "72", "72full", Arial, Helvetica, sans-serif;</td>
-        <td style="padding: 0.25rem;"><code>.sap-font-family-semibold</code></td>
-        <td style="padding: 0.25rem;"><code>@include sap-font-family(semibold)</code></td>
-    </tr>
-    <tr>
-        <td style="padding: 0.25rem;">Semibold Duplex</td>
-        <td style="padding: 0.25rem;"><code>var(--sapFontSemiboldDuplexFamily)</code></td>
-        <td style="padding: 0.25rem;">font-family: "72-SemiboldDuplex", "72-SemiboldDuplexfull", "72", "72full", Arial, Helvetica, sans-serif</td>
-        <td style="padding: 0.25rem;"><code>.sap-font-family-semibold-duplex</code></td>
-        <td style="padding: 0.25rem;"><code>@include sap-font-family(semibold-duplex)</code></td>
-    </tr>
-    <tr>
-        <td style="padding: 0.25rem;">Monospaced Regular</td>
-        <td style="padding: 0.25rem;"><code>var(--sapContent_MonospaceFontFamily)</code></td>
-        <td style="padding: 0.25rem;">font-family: "72Mono", "72Monofull", Lucida Console, monospace;</td>
-        <td style="padding: 0.25rem;"><code>.sap-font-family-monospaced-regular</code></td>
-        <td style="padding: 0.25rem;"><code>@include sap-font-family(monospaced-regular)</code></td>
-    </tr>
-    <tr>
-        <td style="padding: 0.25rem;">Monospaced Bold</td>
-        <td style="padding: 0.25rem;"><code>var(--sapContent_MonospaceBoldFontFamily)</code></td>
-        <td style="padding: 0.25rem;">font-family: "72Mono-Bold", "72Mono-Boldfull", Lucida Console, monospace;</td>
-        <td style="padding: 0.25rem;"><code>.sap-font-family-monospaced-bold</code></td>
-        <td style="padding: 0.25rem;"><code>@include sap-font-family(monospaced-bold)</code></td>
-    </tr>
-    <tr>
-        <td style="padding: 0.25rem;">Black</td>
-        <td style="padding: 0.25rem;"><code>var(--sapFontBlackFamily)</code></td>
-        <td style="padding: 0.25rem;">font-family: "72Black", "72", "72full", Arial, Helvetica, sans-serif</td>
-        <td style="padding: 0.25rem;"><code>.sap-font-family-black</code></td>
-        <td style="padding: 0.25rem;"><code>@include sap-font-family(black)</code></td>
-    </tr>
-    <tr>
-        <td style="padding: 0.25rem;">Header</td>
-         <td style="padding: 0.25rem;"><code>var(--sapFontHeaderFamily)</code></td>
-        <td style="padding: 0.25rem;">font-family: "72", "72full", Arial, Helvetica, sans-serif;</td>
-        <td style="padding: 0.25rem;"><code>.sap-font-family-header</code></td>
-        <td style="padding: 0.25rem;"><code>@include sap-font-family(header)</code></td>
-    </tr>
-</table>`
+<div class="typography-card">
+    <div>Regular</div>
+    <dl>
+        <dt>Variable:</dt>
+        <dd><code>var(--sapFontFamily)</code></dd>
+        <dt>Style:</dt>
+        <dd><code>"72", "72full", Arial, Helvetica, sans-serif</code></dd>
+        <dt>Class:</dt>
+        <dd><code>.sap-font-family-regular</code></dd>
+        <dt>Mixin:</dt>
+        <dd><code>@include sap-font-family(regular)</code></dd>
+    </dl>
+</div>
+
+<div class="typography-card">
+    <div>Light</div>
+    <dl>
+        <dt>Variable:</dt>
+        <dd><code>var(--sapFontLightFamily)</code></dd>
+        <dt>Style:</dt>
+        <dd><code>"72-Light", "72-Lightfull", "72", "72full", Arial, Helvetica, sans-serif</code></dd>
+        <dt>Class:</dt>
+        <dd><code>.sap-font-family-light</code></dd>
+        <dt>Mixin:</dt>
+        <dd><code>@include sap-font-family(light)</code></dd>
+    </dl>
+</div>
+
+<div class="typography-card">
+    <div>Bold</div>
+    <dl>
+        <dt>Variable:</dt>
+        <dd><code>var(--sapFontBoldFamily)</code></dd>
+        <dt>Style:</dt>
+        <dd><code>"72-Bold", "72-Boldfull", "72", "72full", Arial, Helvetica, sans-serif</code></dd>
+        <dt>Class:</dt>
+        <dd><code>.sap-font-family-bold</code></dd>
+        <dt>Mixin:</dt>
+        <dd><code>@include sap-font-family(bold)</code></dd>
+    </dl>
+</div>
+
+<div class="typography-card">
+    <div>Semibold</div>
+    <dl>
+        <dt>Variable:</dt>
+        <dd><code>var(--sapFontSemiboldFamily)</code></dd>
+        <dt>Style:</dt>
+        <dd><code>"72-Semibold", "72-Semiboldfull", "72", "72full", Arial, Helvetica, sans-serif</code></dd>
+        <dt>Class:</dt>
+        <dd><code>.sap-font-family-semibold</code></dd>
+        <dt>Mixin:</dt>
+        <dd><code>@include sap-font-family(semibold)</code></dd>
+    </dl>
+</div>
+
+<div class="typography-card">
+    <div>Semibold Duplex</div>
+    <dl>
+        <dt>Variable:</dt>
+        <dd><code>var(--sapFontSemiboldDuplexFamily)</code></dd>
+        <dt>Style:</dt>
+        <dd><code>"72-SemiboldDuplex", "72-SemiboldDuplexfull", "72", "72full", Arial, Helvetica, sans-serif</code></dd>
+        <dt>Class:</dt>
+        <dd><code>.sap-font-family-semibold-duplex</code></dd>
+        <dt>Mixin:</dt>
+        <dd><code>@include sap-font-family(semibold-duplex)</code></dd>
+    </dl>
+</div>
+
+<div class="typography-card">
+    <div>Monospaced Regular</div>
+    <dl>
+        <dt>Variable:</dt>
+        <dd><code>var(--sapContent_MonospaceFontFamily)</code></dd>
+        <dt>Style:</dt>
+        <dd><code>"72Mono", "72Monofull", Lucida Console, monospace</code></dd>
+        <dt>Class:</dt>
+        <dd><code>.sap-font-family-monospaced-regular</code></dd>
+        <dt>Mixin:</dt>
+        <dd><code>@include sap-font-family(monospaced-regular)</code></dd>
+    </dl>
+</div>
+
+<div class="typography-card">
+    <div>Monospaced Bold</div>
+    <dl>
+        <dt>Variable:</dt>
+        <dd><code>var(--sapContent_MonospaceBoldFontFamily)</code></dd>
+        <dt>Style:</dt>
+        <dd><code>"72Mono-Bold", "72Mono-Boldfull", Lucida Console, monospace</code></dd>
+        <dt>Class:</dt>
+        <dd><code>.sap-font-family-monospaced-bold</code></dd>
+        <dt>Mixin:</dt>
+        <dd><code>@include sap-font-family(monospaced-bold)</code></dd>
+    </dl>
+</div>
+
+<div class="typography-card">
+    <div>Black</div>
+    <dl>
+        <dt>Variable:</dt>
+        <dd><code>var(--sapFontBlackFamily)</code></dd>
+        <dt>Style:</dt>
+        <dd><code>"72Black", "72", "72full", Arial, Helvetica, sans-serif</code></dd>
+        <dt>Class:</dt>
+        <dd><code>.sap-font-family-black</code></dd>
+        <dt>Mixin:</dt>
+        <dd><code>@include sap-font-family(black)</code></dd>
+    </dl>
+</div>
+
+<div class="typography-card">
+    <div>Header</div>
+    <dl>
+        <dt>Variable:</dt>
+        <dd><code>var(--sapFontHeaderFamily)</code></dd>
+        <dt>Style:</dt>
+        <dd><code>"72", "72full", Arial, Helvetica, sans-serif</code></dd>
+        <dt>Class:</dt>
+        <dd><code>.sap-font-family-header</code></dd>
+        <dt>Mixin:</dt>
+        <dd><code>@include sap-font-family(header)</code></dd>
+    </dl>
+</div>`
     }
   }
 };
+
 export const FontSize = () => fontSizeExampleHtml;
 FontSize.parameters = {
   docs: {
     description: {
-      story: `To set the <b>font-size</b> of an element use the <code>.sap-font-size-<i style="color: red;">value</i></code>class or the <code>@include sap-font-size(<i style="color: red;">value</i>)</code> mixin <br>where <i style="color: red;">value</i> can be one of the following:
-<ul>
-<li>header-6</li>
-<li>header-5</li>
-<li>header-4</li>
-<li>header-3</li>
-<li>header-2</li>
-<li>header-1</li>
-<li>small</li>
-<li>medium</li>
-<li>large</li>
-</ul>
-      
-<table style="width: 100%; border-collapse: collapse; margin-top: 1rem;">
-    <tr>
-        <th style="padding: 0.25rem;">Type</th>
-        <th style="padding: 0.25rem;">Variable</th>
-        <th style="padding: 0.25rem;">Resultant Style</th>
-        <th style="padding: 0.25rem;">Class</th>
-        <th style="padding: 0.25rem;">Mixin</th>
-    </tr>
-    <tr>
-        <td style="padding: 0.25rem;">Header 6</td>
-        <td style="padding: 0.25rem;"><code>var(--sapFontHeader6Size)</code></td>
-        <td style="padding: 0.25rem;">font-size: 0.875rem; (14px)</td>
-        <td style="padding: 0.25rem;"><code>.sap-font-size-header-6</code></td>
-        <td style="padding: 0.25rem;"><code>@include sap-font-size(header-6)</code></td>
-    </tr>
-    <tr>
-        <td style="padding: 0.25rem;">Header 5</td>
-        <td style="padding: 0.25rem;"><code>var(--sapFontHeader5Size)</code></td>
-        <td style="padding: 0.25rem;">font-size: 1rem; (16px)</td>
-        <td style="padding: 0.25rem;"><code>.sap-font-size-header-5</code></td>
-        <td style="padding: 0.25rem;"><code>@include sap-font-size(header-5)</code></td>
-    </tr>
-    <tr>
-        <td style="padding: 0.25rem;">Header 4</td>
-        <td style="padding: 0.25rem;"><code>var(--sapFontHeader4Size)</code></td>
-        <td style="padding: 0.25rem;">font-size: 1.125rem; (18px)</td>
-        <td style="padding: 0.25rem;"><code>.sap-font-size-header-4</code></td>
-        <td style="padding: 0.25rem;"><code>@include sap-font-size(header-4)</code></td>
-    </tr>
-    <tr>
-        <td style="padding: 0.25rem;">Header 3</td>
-        <td style="padding: 0.25rem;"><code>var(--sapFontHeader3Size)</code></td>
-        <td style="padding: 0.25rem;">font-size: 1.25rem; (20px)</td>
-        <td style="padding: 0.25rem;"><code>.sap-font-size-header-3</code></td>
-        <td style="padding: 0.25rem;"><code>@include sap-font-size(header-3)</code></td>
-    </tr>
-    <tr>
-        <td style="padding: 0.25rem;">Header 2</td>
-        <td style="padding: 0.25rem;"><code>var(--sapFontHeader2Size)</code></td>
-        <td style="padding: 0.25rem;">font-size: 1.5rem; (24px)</td>
-        <td style="padding: 0.25rem;"><code>.sap-font-size-header-2</code></td>
-        <td style="padding: 0.25rem;"><code>@include sap-font-size(header-2)</code></td>
-    </tr>
-    <tr>
-        <td style="padding: 0.25rem;">Header 1</td>
-        <td style="padding: 0.25rem;"><code>var(--sapFontHeader1Size)</code></td>
-        <td style="padding: 0.25rem;">font-size: 2.25rem; (36px)</td>
-        <td style="padding: 0.25rem;"><code>.sap-font-size-header-1</code></td>
-        <td style="padding: 0.25rem;"><code>@include sap-font-size(header-1)</code></td>
-    </tr>
-    <tr>
-        <td style="padding: 0.25rem;">Small</td>
-        <td style="padding: 0.25rem;"><code>var(--sapFontSmallSize)</code></td>
-        <td style="padding: 0.25rem;">font-size: 0.75rem; (12px)</td>
-        <td style="padding: 0.25rem;"><code>.sap-font-size-small</code></td>
-        <td style="padding: 0.25rem;"><code>@include sap-font-size(small)</code></td>
-    </tr>
-    <tr>
-        <td style="padding: 0.25rem;">Medium</td>
-        <td style="padding: 0.25rem;"><code>var(--sapFontSize)</code></td>
-        <td style="padding: 0.25rem;">font-size: 0.875rem; (14px)</td>
-        <td style="padding: 0.25rem;"><code>.sap-font-size-medium</code></td>
-        <td style="padding: 0.25rem;"><code>@include sap-font-size(medium)</code></td>
-    </tr>
-    <tr>
-        <td style="padding: 0.25rem;">Large</td>
-        <td style="padding: 0.25rem;"><code>var(--sapFontLargeSize)</code></td>
-        <td style="padding: 0.25rem;">font-size: 1rem; (16px)</td>
-        <td style="padding: 0.25rem;"><code>.sap-font-size-large</code></td>
-        <td style="padding: 0.25rem;"><code>@include sap-font-size(large)</code></td>
-    </tr>
-</table>`
+      story: `${typographyCardStyles}
+<p>To set the <b>font-size</b> of an element use the <code>.sap-font-size-<i style="color: red;">value</i></code> class or the <code>@include sap-font-size(<i style="color: red;">value</i>)</code> mixin.</p>
+
+<div class="typography-card">
+    <div>Header 6</div>
+    <dl>
+        <dt>Variable:</dt>
+        <dd><code>var(--sapFontHeader6Size)</code></dd>
+        <dt>Size:</dt>
+        <dd><code>0.875rem</code> (14px)</dd>
+        <dt>Class:</dt>
+        <dd><code>.sap-font-size-header-6</code></dd>
+        <dt>Mixin:</dt>
+        <dd><code>@include sap-font-size(header-6)</code></dd>
+    </dl>
+</div>
+
+<div class="typography-card">
+    <div>Header 5</div>
+    <dl>
+        <dt>Variable:</dt>
+        <dd><code>var(--sapFontHeader5Size)</code></dd>
+        <dt>Size:</dt>
+        <dd><code>1rem</code> (16px)</dd>
+        <dt>Class:</dt>
+        <dd><code>.sap-font-size-header-5</code></dd>
+        <dt>Mixin:</dt>
+        <dd><code>@include sap-font-size(header-5)</code></dd>
+    </dl>
+</div>
+
+<div class="typography-card">
+    <div>Header 4</div>
+    <dl>
+        <dt>Variable:</dt>
+        <dd><code>var(--sapFontHeader4Size)</code></dd>
+        <dt>Size:</dt>
+        <dd><code>1.125rem</code> (18px)</dd>
+        <dt>Class:</dt>
+        <dd><code>.sap-font-size-header-4</code></dd>
+        <dt>Mixin:</dt>
+        <dd><code>@include sap-font-size(header-4)</code></dd>
+    </dl>
+</div>
+
+<div class="typography-card">
+    <div>Header 3</div>
+    <dl>
+        <dt>Variable:</dt>
+        <dd><code>var(--sapFontHeader3Size)</code></dd>
+        <dt>Size:</dt>
+        <dd><code>1.25rem</code> (20px)</dd>
+        <dt>Class:</dt>
+        <dd><code>.sap-font-size-header-3</code></dd>
+        <dt>Mixin:</dt>
+        <dd><code>@include sap-font-size(header-3)</code></dd>
+    </dl>
+</div>
+
+<div class="typography-card">
+    <div>Header 2</div>
+    <dl>
+        <dt>Variable:</dt>
+        <dd><code>var(--sapFontHeader2Size)</code></dd>
+        <dt>Size:</dt>
+        <dd><code>1.5rem</code> (24px)</dd>
+        <dt>Class:</dt>
+        <dd><code>.sap-font-size-header-2</code></dd>
+        <dt>Mixin:</dt>
+        <dd><code>@include sap-font-size(header-2)</code></dd>
+    </dl>
+</div>
+
+<div class="typography-card">
+    <div>Header 1</div>
+    <dl>
+        <dt>Variable:</dt>
+        <dd><code>var(--sapFontHeader1Size)</code></dd>
+        <dt>Size:</dt>
+        <dd><code>2.25rem</code> (36px)</dd>
+        <dt>Class:</dt>
+        <dd><code>.sap-font-size-header-1</code></dd>
+        <dt>Mixin:</dt>
+        <dd><code>@include sap-font-size(header-1)</code></dd>
+    </dl>
+</div>
+
+<div class="typography-card">
+    <div>Small</div>
+    <dl>
+        <dt>Variable:</dt>
+        <dd><code>var(--sapFontSmallSize)</code></dd>
+        <dt>Size:</dt>
+        <dd><code>0.75rem</code> (12px)</dd>
+        <dt>Class:</dt>
+        <dd><code>.sap-font-size-small</code></dd>
+        <dt>Mixin:</dt>
+        <dd><code>@include sap-font-size(small)</code></dd>
+    </dl>
+</div>
+
+<div class="typography-card">
+    <div>Medium</div>
+    <dl>
+        <dt>Variable:</dt>
+        <dd><code>var(--sapFontSize)</code></dd>
+        <dt>Size:</dt>
+        <dd><code>0.875rem</code> (14px)</dd>
+        <dt>Class:</dt>
+        <dd><code>.sap-font-size-medium</code></dd>
+        <dt>Mixin:</dt>
+        <dd><code>@include sap-font-size(medium)</code></dd>
+    </dl>
+</div>
+
+<div class="typography-card">
+    <div>Large</div>
+    <dl>
+        <dt>Variable:</dt>
+        <dd><code>var(--sapFontLargeSize)</code></dd>
+        <dt>Size:</dt>
+        <dd><code>1rem</code> (16px)</dd>
+        <dt>Class:</dt>
+        <dd><code>.sap-font-size-large</code></dd>
+        <dt>Mixin:</dt>
+        <dd><code>@include sap-font-size(large)</code></dd>
+    </dl>
+</div>`
     }
   }
 };
+
 export const LineHeight = () => lineHeightExampleHtml;
 LineHeight.parameters = {
   docs: {
     description: {
-      story: `In general, there is no line height applied to text, as the line height e.g. affects the padding.
-If a more generous line height is required for long continuous text, a consistent line height of 1.5 is recommended.
+      story: `${typographyCardStyles}
+<p>In general, there is no line height applied to text, as the line height e.g. affects the padding.
+If a more generous line height is required for long continuous text, a consistent line height of 1.5 is recommended.</p>
 
-Use the <code>.sap-font-line-height</code> class to apply <b>normal</b> line-height to the elements and <code>.sap-font-line-height-long</code> class for <b>1.5</b> line-height. 
-<br><br>
-<b>SCSS Mixin: </b> <code>@include sap-font-line-height(<i style="color:red;">$value</i>)</code>. Omit the value for <b>normal</b> line-height: <code>@include sap-font-line-height()</code>.
-`
+<div class="typography-card">
+    <div>Normal Line Height</div>
+    <dl>
+        <dt>Class:</dt>
+        <dd><code>.sap-font-line-height</code></dd>
+        <dt>Mixin:</dt>
+        <dd><code>@include sap-font-line-height()</code></dd>
+        <dt>Value:</dt>
+        <dd>normal</dd>
+    </dl>
+</div>
+
+<div class="typography-card">
+    <div>Long Text Line Height</div>
+    <dl>
+        <dt>Class:</dt>
+        <dd><code>.sap-font-line-height-long</code></dd>
+        <dt>Mixin:</dt>
+        <dd><code>@include sap-font-line-height(1.5)</code></dd>
+        <dt>Value:</dt>
+        <dd>1.5</dd>
+    </dl>
+</div>`
     }
   }
 };
+
 export const CommonCases = () => commonCasesExampleHtml;
 CommonCases.parameters = {
   docs: {
     description: {
-      story: `<table style="width: 100%; border-collapse: collapse; margin-top: 1rem;">
-    <tr>
-        <th style="padding: 0.25rem;">Description</th>
-        <th style="padding: 0.25rem;">Resultant Style (Quartz Light)</th>
-        <th style="padding: 0.25rem;">Usage Examples</th>
-        <th style="padding: 0.25rem;">Class</th>
-        <th style="padding: 0.25rem;">Mixin</th>
-    </tr>
-    <tr>
-        <td style="padding: 0.25rem;">Header Text in Size 3</td>
-        <td style="padding: 0.25rem;">font-family: "72", "72full", Arial, Helvetica, sans-serif;
-         font-size: 20px; color: #32363a;</td>
-        <td style="padding: 0.25rem;">Dynamic page header, object page header</td>
-        <td style="padding: 0.25rem;"><code>.sap-font-header-3</code></td>
-        <td style="padding: 0.25rem;"><code>@include sap-font(header-3)</code></td>
-    </tr>
-    <tr>
-        <td style="padding: 0.25rem;">Standard Text</td>
-        <td style="padding: 0.25rem;">font-family: "72", "72full", Arial, Helvetica, sans-serif;
-         font-size: 14px; color: #32363a;</td>
-        <td style="padding: 0.25rem;">Text control</td>
-        <td style="padding: 0.25rem;"><code>.sap-font-standard-text</code></td>
-        <td style="padding: 0.25rem;"><code>@include sap-font(standard-text)</code></td>
-    </tr>
-    <tr>
-        <td style="padding: 0.25rem;">Small Detail Text</td>
-        <td style="padding: 0.25rem;">font-family: "72", "72full", Arial, Helvetica, sans-serif;
-         font-size: 12px; color: #6a6d70;</td>
-        <td style="padding: 0.25rem;">Time stamps, small bylines</td>
-        <td style="padding: 0.25rem;"><code>.sap-font-small-detail-text</code></td>
-        <td style="padding: 0.25rem;"><code>@include sap-font(small-detail-text)</code></td>
-    </tr>
-    <tr>
-        <td style="padding: 0.25rem;">Standard Field Text</td>
-        <td style="padding: 0.25rem;">font-family: "72", "72full", Arial, Helvetica, sans-serif;
-         font-size: 14px; color: #32363a;</td>
-        <td style="padding: 0.25rem;">Input field, feed input, text area</td>
-        <td style="padding: 0.25rem;"><code>.sap-font-standard-field-text</code></td>
-        <td style="padding: 0.25rem;"><code>@include sap-font(standard-field-text)</code></td>
-    </tr>
-    <tr>
-        <td style="padding: 0.25rem;">Labels</td>
-        <td style="padding: 0.25rem;">font-family: "72", "72full", Arial, Helvetica, sans-serif;
-         font-size: 14px; color: #6a6d70;</td>
-        <td style="padding: 0.25rem;">Labels</td>
-        <td style="padding: 0.25rem;"><code>.sap-font-label</code></td>
-        <td style="padding: 0.25rem;"><code>@include sap-font(label)</code></td>
-    </tr>
-    <tr>
-        <td style="padding: 0.25rem;">Descriptions</td>
-        <td style="padding: 0.25rem;">font-family: "72", "72full", Arial, Helvetica, sans-serif;
-         font-size: 14px; color: #6a6d70;</td>
-        <td style="padding: 0.25rem;">Object attribute</td>
-        <td style="padding: 0.25rem;"><code>.sap-font-description</code></td>
-        <td style="padding: 0.25rem;"><code>@include sap-font(description)</code></td>
-    </tr>
-</table>`
+      story: `${typographyCardStyles}
+<p>Common typography use cases with combined font settings.</p>
+
+<div class="typography-card">
+    <div>Header Text in Size 3</div>
+    <dl>
+        <dt>Style:</dt>
+        <dd><code>"72" font, 20px, #32363a</code></dd>
+        <dt>Usage:</dt>
+        <dd>Dynamic page header, object page header</dd>
+        <dt>Class:</dt>
+        <dd><code>.sap-font-header-3</code></dd>
+        <dt>Mixin:</dt>
+        <dd><code>@include sap-font(header-3)</code></dd>
+    </dl>
+</div>
+
+<div class="typography-card">
+    <div>Standard Text</div>
+    <dl>
+        <dt>Style:</dt>
+        <dd><code>"72" font, 14px, #32363a</code></dd>
+        <dt>Usage:</dt>
+        <dd>Text control</dd>
+        <dt>Class:</dt>
+        <dd><code>.sap-font-standard-text</code></dd>
+        <dt>Mixin:</dt>
+        <dd><code>@include sap-font(standard-text)</code></dd>
+    </dl>
+</div>
+
+<div class="typography-card">
+    <div>Small Detail Text</div>
+    <dl>
+        <dt>Style:</dt>
+        <dd><code>"72" font, 12px, #6a6d70</code></dd>
+        <dt>Usage:</dt>
+        <dd>Time stamps, small bylines</dd>
+        <dt>Class:</dt>
+        <dd><code>.sap-font-small-detail-text</code></dd>
+        <dt>Mixin:</dt>
+        <dd><code>@include sap-font(small-detail-text)</code></dd>
+    </dl>
+</div>
+
+<div class="typography-card">
+    <div>Standard Field Text</div>
+    <dl>
+        <dt>Style:</dt>
+        <dd><code>"72" font, 14px, #32363a</code></dd>
+        <dt>Usage:</dt>
+        <dd>Input field, feed input, text area</dd>
+        <dt>Class:</dt>
+        <dd><code>.sap-font-standard-field-text</code></dd>
+        <dt>Mixin:</dt>
+        <dd><code>@include sap-font(standard-field-text)</code></dd>
+    </dl>
+</div>
+
+<div class="typography-card">
+    <div>Labels</div>
+    <dl>
+        <dt>Style:</dt>
+        <dd><code>"72" font, 14px, #6a6d70</code></dd>
+        <dt>Usage:</dt>
+        <dd>Labels</dd>
+        <dt>Class:</dt>
+        <dd><code>.sap-font-label</code></dd>
+        <dt>Mixin:</dt>
+        <dd><code>@include sap-font(label)</code></dd>
+    </dl>
+</div>
+
+<div class="typography-card">
+    <div>Descriptions</div>
+    <dl>
+        <dt>Style:</dt>
+        <dd><code>"72" font, 14px, #6a6d70</code></dd>
+        <dt>Usage:</dt>
+        <dd>Object attribute</dd>
+        <dt>Class:</dt>
+        <dd><code>.sap-font-description</code></dd>
+        <dt>Mixin:</dt>
+        <dd><code>@include sap-font(description)</code></dd>
+    </dl>
+</div>`
     }
   }
 };

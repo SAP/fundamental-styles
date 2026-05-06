@@ -2,6 +2,28 @@ import fakeFioriFocusWithinExampleHtml from "./fake-fiori-focus-within.example.h
 import fakeFioriFocusExampleHtml from "./fake-fiori-focus.example.html?raw";
 import fioriFocusWithinExampleHtml from "./fiori-focus-within.example.html?raw";
 import fioriFocusExampleHtml from "./fiori-focus.example.html?raw";
+
+const focusStyles = `
+<style>
+.focus-example-card pre {
+    background: #fff;
+    border: 0.0625rem solid #e4e4e4;
+    border-radius: 0.25rem;
+    padding: 0.75rem 1rem;
+    margin: 0.5rem 0;
+    font-size: 0.875rem;
+    font-family: 'Courier New', Courier, monospace;
+    color: #32363a;
+    overflow-x: auto;
+}
+.focus-example-card > div {
+    font-size: 0.875rem;
+    line-height: 1.6;
+    color: #6a6d70;
+}
+</style>
+`;
+
 export default {
   title: 'Focus Visual',
   parameters: {
@@ -9,7 +31,7 @@ export default {
       `
   }
 };
-export const FioriFocus = () => fioriFocusExampleHtml;
+export const FioriFocus = () => `${focusStyles}<div class="focus-example-card">${fioriFocusExampleHtml}</div>`;
 FioriFocus.storyName = 'Mixin sap-fiori-focus';
 FioriFocus.parameters = {
   docs: {
@@ -18,7 +40,7 @@ FioriFocus.parameters = {
     }
   }
 };
-export const FioriFocusWithin = () => fioriFocusWithinExampleHtml;
+export const FioriFocusWithin = () => `${focusStyles}<div class="focus-example-card">${fioriFocusWithinExampleHtml}</div>`;
 FioriFocusWithin.storyName = 'Mixin sap-fiori-focus-within';
 FioriFocusWithin.parameters = {
   docs: {
@@ -27,7 +49,7 @@ FioriFocusWithin.parameters = {
     }
   }
 };
-export const FakeFioriFocus = () => fakeFioriFocusExampleHtml;
+export const FakeFioriFocus = () => `${focusStyles}<div class="focus-example-card">${fakeFioriFocusExampleHtml}</div>`;
 FakeFioriFocus.storyName = 'Mixin sap-fake-fiori-focus';
 FakeFioriFocus.parameters = {
   docs: {
@@ -36,7 +58,7 @@ FakeFioriFocus.parameters = {
     }
   }
 };
-export const FakeFioriFocusWithin = () => fakeFioriFocusWithinExampleHtml;
+export const FakeFioriFocusWithin = () => `${focusStyles}<div class="focus-example-card">${fakeFioriFocusWithinExampleHtml}</div>`;
 FakeFioriFocusWithin.storyName = 'Mixin sap-fake-fiori-focus-within';
 FakeFioriFocusWithin.parameters = {
   docs: {

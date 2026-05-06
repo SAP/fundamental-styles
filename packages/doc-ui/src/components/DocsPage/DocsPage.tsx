@@ -38,7 +38,7 @@ const DocsPage = () => {
                 <Description desc={storyContext.parameters['description']}/>
             </div>
 
-            <Stories title={"Examples"}/>
+            <Stories title={""}/>
             <Community/>
             <Footer/>
         </>

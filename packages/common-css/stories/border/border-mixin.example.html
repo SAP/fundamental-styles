@@ -1,31 +1,93 @@
-<div>
-1. <b>All</b>
+<style>
+.border-example-card {
+    background: #f7f8fa;
+    border: 0.0625rem solid #eaecee;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin-block-end: 1rem;
+}
+.border-example-card h4 {
+    margin: 0 0 0.75rem 0;
+    color: #0a6ed1;
+    font-size: 0.9375rem;
+    font-weight: 600;
+}
+.border-example-card pre {
+    background: #fff;
+    border: 0.0625rem solid #e4e4e4;
+    border-radius: 0.25rem;
+    padding: 0.75rem 1rem;
+    margin: 0.5rem 0;
+    font-size: 0.875rem;
+    font-family: 'Courier New', Courier, monospace;
+    color: #32363a;
+    overflow-x: auto;
+    line-height: 1.5;
+    display: inline-block;
+}
+.border-example-card .alternatives {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.border-example-card .alternatives::before {
+    content: 'or';
+    color: #6a6d70;
+    font-size: 0.875rem;
+    font-style: italic;
+}
+</style>
 
-<pre>@include sap-border(0.125rem, solid, #000);</pre>
-<br>
+<div class="border-example-card">
+    <h4>All Sides</h4>
+    <pre>@include sap-border(0.125rem, solid, #000);</pre>
+</div>
 
-2. <b>Border Top</b>
-<pre>@include sap-border(0.125rem, solid, #000, top);</pre> or <pre>@include sap-border(0.125rem, solid, #000, block-start);</pre>
-<br>
+<div class="border-example-card">
+    <h4>Border Top</h4>
+    <pre>@include sap-border(0.125rem, solid, #000, top);</pre>
+    <div class="alternatives">
+        <pre>@include sap-border(0.125rem, solid, #000, block-start);</pre>
+    </div>
+</div>
 
-3. <b>Border Bottom</b>
-<pre>@include sap-border(0.125rem, solid, #000, bottom);</pre> or <pre>@include sap-border(0.125rem, solid, #000, block-end);</pre>
-<br>
+<div class="border-example-card">
+    <h4>Border Bottom</h4>
+    <pre>@include sap-border(0.125rem, solid, #000, bottom);</pre>
+    <div class="alternatives">
+        <pre>@include sap-border(0.125rem, solid, #000, block-end);</pre>
+    </div>
+</div>
 
-4. <b>Border Left</b>
-<pre>@include sap-border(0.125rem, solid, #000, left);</pre> or <pre>@include sap-border(0.125rem, solid, #000, inline-start);</pre>
-<br>
+<div class="border-example-card">
+    <h4>Border Left</h4>
+    <pre>@include sap-border(0.125rem, solid, #000, left);</pre>
+    <div class="alternatives">
+        <pre>@include sap-border(0.125rem, solid, #000, inline-start);</pre>
+    </div>
+</div>
 
-6. <b>Border Right</b>
-<pre>@include sap-border(0.125rem, solid, #000, right);</pre> or <pre>@include sap-border(0.125rem, solid, #000, inline-end);</pre>
-<br>
+<div class="border-example-card">
+    <h4>Border Right</h4>
+    <pre>@include sap-border(0.125rem, solid, #000, right);</pre>
+    <div class="alternatives">
+        <pre>@include sap-border(0.125rem, solid, #000, inline-end);</pre>
+    </div>
+</div>
 
-7. <b>Border Top and Bottom (y)</b>
-<pre>@include sap-border(0.125rem, solid, #000, y);</pre> or <pre>@include sap-border(0.125rem, solid, #000, block);</pre>
-<br>
+<div class="border-example-card">
+    <h4>Border Top and Bottom (Y-axis)</h4>
+    <pre>@include sap-border(0.125rem, solid, #000, y);</pre>
+    <div class="alternatives">
+        <pre>@include sap-border(0.125rem, solid, #000, block);</pre>
+    </div>
+</div>
 
-8. <b>Border Left and Right (x)</b>
-<pre>@include sap-border(0.125rem, solid, #000, x);</pre> or <pre>@include sap-border(0.125rem, solid, #000, inline);</pre>
-<br>
-
+<div class="border-example-card">
+    <h4>Border Left and Right (X-axis)</h4>
+    <pre>@include sap-border(0.125rem, solid, #000, x);</pre>
+    <div class="alternatives">
+        <pre>@include sap-border(0.125rem, solid, #000, inline);</pre>
+    </div>
 </div>

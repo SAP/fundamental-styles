@@ -7,10 +7,3 @@ addons.setConfig({
   },
   theme: fundamentalTheme
 });
-
-window.addEventListener('load', () => {
-  const sidebarViewport = document.querySelector<HTMLDivElement>('.os-viewport');
-  if (sidebarViewport) {
-    sidebarViewport.style.overflowY = 'scroll';
-  }
-})

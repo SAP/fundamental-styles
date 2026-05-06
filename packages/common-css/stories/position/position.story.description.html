@@ -1,32 +1,93 @@
-<p>Utilities and mixins for controlling element positioning.
-Provides CSS classes for common position types and quick alignment helpers, as well as SCSS mixins to apply position properties with optional offset values.</p>
+<style>
+.position-card {
+    background: #f7f8fa;
+    border: 0.0625rem solid #eaecee;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin-block-end: 1rem;
+}
+.position-card h4 {
+    margin: 0 0 0.75rem 0;
+    color: #0a6ed1;
+    font-size: 1rem;
+    font-weight: 600;
+}
+.position-card pre {
+    background: #fff;
+    border: 0.0625rem solid #e4e4e4;
+    border-radius: 0.25rem;
+    padding: 0.75rem 1rem;
+    margin: 0.5rem 0;
+    font-size: 0.875rem;
+    font-family: 'Courier New', Courier, monospace;
+    color: #32363a;
+    overflow-x: auto;
+}
+.position-card p {
+    font-size: 0.875rem;
+    color: #6a6d70;
+    margin: 0.5rem 0;
+}
+</style>
 
-<b>CSS Classes: </b><br><br>
-<code>.sap-position-<i style="color: red;">type</i></code> &nbsp;&nbsp; <i>(type can be static, fixed, absolute, relative, sticky, inherit)</i>
-<ul>
-    <li><code>.sap-position-absolute-center</code>: center an element horizontally and vertically *</li>
-    <li><code>.sap-position-absolute-center-x</code>: center an element horizontally *</li>
-    <li><code>.sap-position-absolute-center-y</code>: center an element vertically *</li>
-    <li><code>.sap-position-top-0</code></li>
-    <li><code>.sap-position-right-0</code></li>
-    <li><code>.sap-position-bottom-0</code></li>
-    <li><code>.sap-position-left-0</code></li>
-</ul>
+<p>Utilities and mixins for controlling element positioning. Provides CSS classes for common position types and quick alignment helpers, as well as SCSS mixins to apply position properties with optional offset values.</p>
 
-*for this class to work, the parent element must have <code>position: relative</code>
+<h3 style="margin-block: 1.5rem 1rem; font-size: 1.125rem; font-weight: 600; color: #32363a;">CSS Classes</h3>
 
-<br><br><b>SCSS Mixins: </b>
-<ul>
-    <li><code>@include sap-position(<i style="color: red;">type, $args</i>);</code></li>
-    <li><code>@include sap-position-absolute(<i style="color: red;">$args...</i>);</code></li>
-    <li><code>@include sap-position-fixed(<i style="color: red;">$args...</i>);</code><br></li>
-    <li><code>@include sap-position-sticky(<i style="color: red;">$args...</i>);</code></li>
-    <li><code>@include sap-position-relative(<i style="color: red;">$args...</i>);</code></li>
-</ul>
+<div class="position-card">
+    <h4>Position Types</h4>
+    <p>Apply position property to an element:</p>
+    <pre>.sap-position-<i style="color: #d93025;">type</i></pre>
+    <p>Where <code>type</code> can be: <code>static</code>, <code>fixed</code>, <code>absolute</code>, <code>relative</code>, <code>sticky</code>, <code>inherit</code></p>
+</div>
 
+<div class="position-card">
+    <h4>Absolute Centering</h4>
+    <p><strong>Note:</strong> Parent element must have <code>position: relative</code></p>
+    <pre>.sap-position-absolute-center</pre>
+    <p>Center element horizontally and vertically</p>
+    <pre>.sap-position-absolute-center-x</pre>
+    <p>Center element horizontally only</p>
+    <pre>.sap-position-absolute-center-y</pre>
+    <p>Center element vertically only</p>
+</div>
 
-where 
-<ul>
-    <li><code style="color: red;">type</code> can be one of the following:  static, fixed, absolute, relative, sticky, inherit</li>
-    <li><code style="color: red;">args</code> are the offset values for top, right, bottom, left (optional)</li>
-</ul>
+<div class="position-card">
+    <h4>Edge Positioning</h4>
+    <p>Set element edges to 0:</p>
+    <pre>.sap-position-top-0
+.sap-position-right-0
+.sap-position-bottom-0
+.sap-position-left-0</pre>
+</div>
+
+<h3 style="margin-block: 1.5rem 1rem; font-size: 1.125rem; font-weight: 600; color: #32363a;">SCSS Mixins</h3>
+
+<div class="position-card">
+    <h4>Generic Position Mixin</h4>
+    <p>Apply any position type with optional offset values:</p>
+    <pre>@include sap-position(<i style="color: #d93025;">$type</i>, <i style="color: #d93025;">$args</i>);</pre>
+    <p>Where <code>$type</code> is one of: <code>static</code>, <code>fixed</code>, <code>absolute</code>, <code>relative</code>, <code>sticky</code>, <code>inherit</code></p>
+    <p>And <code>$args</code> are optional offset parameters: <code>$top</code>, <code>$right</code>, <code>$bottom</code>, <code>$left</code></p>
+</div>
+
+<div class="position-card">
+    <h4>Specific Position Mixins</h4>
+    <p>Dedicated mixins for common position types:</p>
+    <pre>@include sap-position-absolute(<i style="color: #d93025;">$args...</i>);
+@include sap-position-fixed(<i style="color: #d93025;">$args...</i>);
+@include sap-position-sticky(<i style="color: #d93025;">$args...</i>);
+@include sap-position-relative(<i style="color: #d93025;">$args...</i>);</pre>
+    <p>Where <code>$args</code> are optional: <code>$top</code>, <code>$right</code>, <code>$bottom</code>, <code>$left</code></p>
+</div>
+
+<div class="position-card">
+    <h4>Centering Mixins</h4>
+    <p>Center elements absolutely (parent must be <code>position: relative</code>):</p>
+    <pre>@include sap-position-absolute-center();</pre>
+    <p>Center horizontally and vertically</p>
+    <pre>@include sap-position-absolute-center-x();</pre>
+    <p>Center horizontally only</p>
+    <pre>@include sap-position-absolute-center-y();</pre>
+    <p>Center vertically only</p>
+</div>

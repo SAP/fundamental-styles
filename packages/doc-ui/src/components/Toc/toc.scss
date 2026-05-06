@@ -1,31 +1,46 @@
 @use "sass:map";
 
 @import 'tocbot/src/scss/tocbot-core';
-@import 'tocbot/src/scss/tocbot-default-theme';
 
 /* table of contents (tocbot) overrides */
 .toc {
   box-sizing: border-box;
-  background-color: white;
+  background-color: transparent;
+  display: none;
 
   > .toc-list {
-    padding-left: 0;
+    padding-inline-start: 0;
+    margin: 0;
+  }
+
+  .toc-list-item {
+    list-style: none;
+    margin: 0;
+    padding: 0;
   }
 }
 
+.toc-heading {
+  display: none;
+}
+
 a.toc-link {
-  margin: 2px 0;
+  display: block;
+  margin: 0;
+  padding-block: 0.25rem;
+  padding-inline: 0.5rem;
   color: #0a6ed1;
-  padding-left: 15px;
-  text-indent: -15px;
+  text-decoration: none;
+  font-size: 0.8125rem;
+  line-height: 1.5;
 
   &::before {
-    width: 0;
+    display: none;
   }
 
   &:hover,
   &:focus {
-    color: #085caf;
+    color: #0854a0;
   }
 }
 
@@ -33,34 +48,44 @@ a.toc-link {
   font-weight: 400;
 }
 
-@media (width >= 1024px) {
+@media (width >= 64rem) {
   .toc {
-    width: 200px;
+    display: block;
+    width: 12.5rem;
     position: fixed;
     top: 0;
     right: 0;
-    padding: 75px 0 0;
+    padding-block: 4.5rem 1.5rem;
     height: 100%;
-    font-size: 14px;
+    font-size: 0.8125rem;
+    border-inline-start: 1px solid #eaecee;
+    background: rgb(247 248 250 / 60%);
+    overflow-y: auto;
 
     > .toc-list {
-      padding-left: 14px;
+      padding-block: 0.5rem;
+      padding-inline: 0 0.75rem;
+      margin: 0;
+    }
 
-      &:last-child {
-        margin-block-end: 0;
-      }
+    .toc-list .toc-list {
+      padding-inline-start: 0;
     }
   }
 
   a.toc-link {
-    display: inline-block;
-    margin: 4px 0;
+    display: block;
+    margin: 0;
+    padding-block: 0.3125rem;
+    padding-inline: 1rem 0.625rem;
     text-decoration: none;
-    transition: all 0.125s ease-in;
-    color: #32363a;
+    color: #6a6d70;
+    line-height: 1.5;
+    border-inline-start: 2px solid transparent;
+    transition: color 0.15s ease, border-color 0.15s ease;
 
     &::before {
-      width: 4px;
+      display: none;
     }
 
     &:hover,
@@ -70,11 +95,9 @@ a.toc-link {
   }
 
   .is-active-link {
-    font-weight: 700;
-
-    &::before {
-      background-color: #0e7290;
-    }
+    font-weight: 600;
+    color: #0a6ed1 !important;
+    border-inline-start-color: #0a6ed1 !important;
   }
 
   .toc-heading {
