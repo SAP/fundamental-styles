@@ -90,7 +90,7 @@ $block: #{$fd-namespace}-switch;
   align-items: center;
   cursor: pointer;
   padding-block: var(--fdSwitch_Padding, 0.625rem);
-  padding-inline: 0;
+  padding-inline: 0.3125rem;
   margin-inline: 0;
 
   @include fd-disabled() {
