@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.41.6-rc.3](https://github.com/SAP/fundamental-styles/compare/v0.41.6-rc.2...v0.41.6-rc.3) (2026-05-08)
+
+### Bug Fixes
+
+- **styles:** update touch area size for Switch [ci visual] ([#6297](https://github.com/SAP/fundamental-styles/issues/6297)) ([a1d1c1d](https://github.com/SAP/fundamental-styles/commit/a1d1c1d800887a1b8b242c7a4cbe334a6d4d7a91))
+
 ## [0.41.6-rc.2](https://github.com/SAP/fundamental-styles/compare/v0.41.6-rc.1...v0.41.6-rc.2) (2026-05-06)
 
 **Note:** Version bump only for package fundamental-styles
@@ -6837,9 +6843,9 @@ Co-authored-by: droshev <mladen.droshev@sap.com>
 
 - added a new modifier class to fd-row to achieve even alignment of its elements:fd-row--top in a form.
   Before:
-    <div class="fd-row">
-    After:
-    <div class="fd-row fd-row--top">
+      <div class="fd-row">
+      After:
+      <div class="fd-row fd-row--top">
 
 ### Bug Fixes
 
