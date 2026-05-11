@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.41.6-rc.7](https://github.com/SAP/fundamental-styles/compare/v0.41.6-rc.6...v0.41.6-rc.7) (2026-05-11)
+
+### Bug Fixes
+
+- **styles:** restyle scrollbar for BTP vertical nav [ci visual] ([#6301](https://github.com/SAP/fundamental-styles/issues/6301)) ([b6bb9d0](https://github.com/SAP/fundamental-styles/commit/b6bb9d06be5eea530f4328e60d8f8f777ec42507))
+
 ## [0.41.6-rc.6](https://github.com/SAP/fundamental-styles/compare/v0.41.6-rc.5...v0.41.6-rc.6) (2026-05-11)
 
 **Note:** Version bump only for package fundamental-styles
