@@ -167,9 +167,30 @@ $navExternalLinkIndicator: #{$block}__external-link-indicator;
       @include fd-set-paddings-x-equal(var(--fdNavigation_Padding_X));
 
       height: 100%;
-      overflow: scroll;
+      overflow: hidden scroll;
       position: relative;
       padding-block-end: 0.25rem;
+
+      // Scrollbar styling
+      scrollbar-width: thin;
+      scrollbar-color: var(--sapScrollBar_FaceColor) var(--sapScrollBar_TrackColor);
+
+      &::-webkit-scrollbar {
+        width: 0.75rem;
+      }
+
+      &::-webkit-scrollbar-track {
+        background: var(--sapScrollBar_TrackColor);
+      }
+
+      &::-webkit-scrollbar-thumb {
+        background: var(--sapScrollBar_FaceColor);
+        border-radius: 0.375rem;
+
+        &:hover {
+          background: var(--sapScrollBar_Hover_FaceColor);
+        }
+      }
     }
 
     &--bottom {
