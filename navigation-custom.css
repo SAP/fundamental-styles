@@ -1,0 +1,146 @@
+/* Custom Navigation Redesign - Clean & Modern */
+
+/* Side Navigation & Vertical Navigation - Common Styles */
+.fd-navigation-list__content,
+.fd-navigation__link {
+  height: 2.75rem !important;
+  min-height: 2.75rem !important;
+  padding-top: 0.625rem !important;
+  padding-bottom: 0.625rem !important;
+  border-radius: 0.375rem !important;
+  transition: all 0.15s ease !important;
+  align-items: center !important;
+}
+
+/* Consistent spacing between items */
+.fd-navigation-list {
+  gap: 0.375rem !important;
+}
+
+.fd-navigation__list {
+  gap: 0.375rem !important;
+}
+
+/* Level 2 and 3 items - same height as parents */
+.fd-navigation-list.level-2 .fd-navigation-list__content,
+.fd-navigation-list.level-3 .fd-navigation-list__content {
+  height: 2.75rem !important;
+  min-height: 2.75rem !important;
+}
+
+.fd-navigation__item--child .fd-navigation__link {
+  height: 2.75rem !important;
+  min-height: 2.75rem !important;
+}
+
+/* Parent items - bold text */
+.fd-navigation-list .fd-navigation-list__content:has(+ .fd-navigation-list.level-2) .fd-navigation-list__text,
+.fd-navigation__item:not(.fd-navigation__item--child) .fd-navigation__text {
+  font-weight: 600 !important;
+  font-family: var(--sapFontSemiboldDuplexFamily) !important;
+}
+
+/* Child items - regular weight */
+.fd-navigation-list.level-2 .fd-navigation-list__text,
+.fd-navigation-list.level-3 .fd-navigation-list__text,
+.fd-navigation__item--child .fd-navigation__text {
+  font-weight: 400 !important;
+  font-family: var(--sapFontFamily) !important;
+}
+
+/* Vertically center text content */
+.fd-navigation-list__content-container,
+.fd-navigation__link {
+  display: flex !important;
+  align-items: center !important;
+}
+
+.fd-navigation-list__text,
+.fd-navigation__text {
+  line-height: 1.5rem !important;
+  display: flex !important;
+  align-items: center !important;
+}
+
+/* Selection indicator - modern rounded style */
+.fd-navigation-list__content::before,
+.fd-navigation__selection-indicator {
+  width: 0.25rem !important;
+  height: 1.5rem !important;
+  top: 50% !important;
+  transform: translateY(-50%) !important;
+  border-radius: 0 0.25rem 0.25rem 0 !important;
+}
+
+/* Remove hover expand behavior - keep it simple */
+.fd-navigation-list__content:hover,
+.fd-navigation__link:hover {
+  background: var(--sapList_Hover_Background) !important;
+}
+
+/* No context menu on hover - remove width expansion in collapsed mode */
+.is-collapsed .fd-navigation-list__content:not([aria-expanded="true"]):hover,
+.is-collapsed .fd-navigation-list__content:not([aria-expanded="true"]):focus,
+.is-collapsed .fd-navigation-list__content:not([aria-expanded="true"]):active {
+  width: 3rem !important;
+  min-width: 3rem !important;
+}
+
+.is-collapsed .fd-navigation-list__content:not([aria-expanded="true"]):hover .fd-navigation-list__text,
+.is-collapsed .fd-navigation-list__content:not([aria-expanded="true"]):focus .fd-navigation-list__text,
+.is-collapsed .fd-navigation-list__content:not([aria-expanded="true"]):active .fd-navigation-list__text {
+  display: none !important;
+}
+
+/* Snapped navigation - no hover text reveal */
+.fd-navigation--snapped .fd-navigation__link:hover .fd-navigation__text,
+.fd-navigation--snapped .fd-navigation__link:focus .fd-navigation__text {
+  display: none !important;
+}
+
+.fd-navigation--snapped .fd-navigation__item:not(.fd-navigation__item--child):not(.fd-navigation__item--overflow) > .fd-navigation__link:hover,
+.fd-navigation--snapped .fd-navigation__item:not(.fd-navigation__item--child):not(.fd-navigation__item--overflow) > .fd-navigation__link:focus {
+  width: auto !important;
+  min-width: auto !important;
+  padding-right: 0 !important;
+}
+
+/* Clean hover states - no borders */
+.fd-navigation-list__content:hover,
+.fd-navigation__link:hover {
+  border-color: transparent !important;
+}
+
+/* Focus states - clean outline only */
+.fd-navigation-list__content:focus,
+.fd-navigation__link:focus {
+  outline-offset: -0.125rem !important;
+}
+
+/* Selected state */
+.fd-navigation-list__content.is-selected,
+.fd-navigation__item.is-selected .fd-navigation__link {
+  background: var(--sapList_SelectionBackgroundColor) !important;
+}
+
+.fd-navigation-list__content.is-selected:hover,
+.fd-navigation__item.is-selected .fd-navigation__link:hover {
+  background: var(--sapList_Hover_SelectionBackground) !important;
+}
+
+/* Active state */
+.fd-navigation-list__content:active,
+.fd-navigation__link:active {
+  background: var(--sapList_Active_Background) !important;
+}
+
+/* Group headers - same height but subtle styling */
+.fd-navigation-list__item--group .fd-navigation-list__content {
+  height: 2.75rem !important;
+  min-height: 2.75rem !important;
+}
+
+.fd-navigation__item--group .fd-navigation__link {
+  height: 2.75rem !important;
+  min-height: 2.75rem !important;
+}
