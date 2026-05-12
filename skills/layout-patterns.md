@@ -142,13 +142,16 @@ A two-column layout with a master list on the left and detail panel on the right
       <div class="fd-toolbar">
         <div class="fd-toolbar__group">
           <button class="fd-button fd-button--transparent fd-button--compact">
-            <i class="sap-icon--edit"></i> Edit
+            <i class="sap-icon--edit" role="presentation" aria-hidden="true"></i>
+            <span class="fd-button__text">Edit</span>
           </button>
           <button class="fd-button fd-button--transparent fd-button--compact">
-            <i class="sap-icon--delete"></i> Delete
+            <i class="sap-icon--delete" role="presentation" aria-hidden="true"></i>
+            <span class="fd-button__text">Delete</span>
           </button>
           <button class="fd-button fd-button--transparent fd-button--compact">
-            <i class="sap-icon--share"></i> Share
+            <i class="sap-icon--share" role="presentation" aria-hidden="true"></i>
+            <span class="fd-button__text">Share</span>
           </button>
         </div>
       </div>
@@ -214,10 +217,12 @@ A table with selectable rows, bulk actions toolbar, and per-row action buttons.
   </div>
   <div class="fd-toolbar__group">
     <button class="fd-button fd-button--transparent fd-button--compact">
-      <i class="sap-icon--delete"></i> Delete Selected
+      <i class="sap-icon--delete" role="presentation" aria-hidden="true"></i>
+      <span class="fd-button__text">Delete Selected</span>
     </button>
     <button class="fd-button fd-button--transparent fd-button--compact">
-      <i class="sap-icon--email"></i> Send Email
+      <i class="sap-icon--email" role="presentation" aria-hidden="true"></i>
+      <span class="fd-button__text">Send Email</span>
     </button>
   </div>
 </div>
@@ -430,10 +435,12 @@ A step-by-step wizard for complex forms or processes.
   <!-- Navigation buttons -->
   <div class="fd-wizard__footer" style="margin-top: 2rem; display: flex; justify-content: space-between;">
     <button class="fd-button fd-button--transparent">
-      <i class="sap-icon--slim-arrow-left"></i> Previous
+      <i class="sap-icon--slim-arrow-left" role="presentation" aria-hidden="true"></i>
+      <span class="fd-button__text">Previous</span>
     </button>
     <button class="fd-button fd-button--emphasized">
-      Next <i class="sap-icon--slim-arrow-right"></i>
+      <span class="fd-button__text">Next</span>
+      <i class="sap-icon--slim-arrow-right" role="presentation" aria-hidden="true"></i>
     </button>
   </div>
 </div>

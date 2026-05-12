@@ -1,168 +1,138 @@
-# fundamental-styles Agent Skills
+# Skills
 
-Agent Skills for [fundamental-styles](https://github.com/SAP/fundamental-styles) — portable, structured knowledge files that teach AI coding assistants how to work with SAP's CSS component library.
+Agent Skills for fundamental-styles provide AI assistants with comprehensive guidance on using the component library effectively. These skills help AI agents (like Claude Code) understand when to use components, best practices, and common patterns.
 
-Skills provide domain-specific guidance that goes beyond what a general-purpose LLM knows out of the box.
+## What are Skills?
+
+Skills are markdown-based documentation files specifically designed for AI assistants. They provide:
+
+- **Component guidance** - When to use each component, when to avoid it, and best practices
+- **Design patterns** - Common UI patterns and layouts
+- **Naming conventions** - BEM methodology and class naming rules
+- **Composition patterns** - How to combine components correctly
 
 ## Available Skills
 
-| Skill | Description |
-|-------|-------------|
-| **component-guidance** | SAP Fiori Design Guidelines for components — when to use, when to avoid, and best practices for Avatar, Button, Input, Dialog, Table, Message Strip, and more |
-| **layout-patterns** | Common UI layout patterns — login forms, master-detail layouts, data tables with actions, multi-step wizards, forms with validation, dialogs, and dashboards |
+fundamental-styles provides 10 comprehensive skills organized by topic:
+
+### Component Guidance (6 skills)
+
+Detailed guidance for all 87 components, organized by category:
+
+- **Forms & Inputs** (26 components) - Form controls, inputs, validation
+- **Navigation** (8 components) - Breadcrumbs, menus, links, toolbars
+- **Layout & Containers** (11 components) - Cards, panels, page layouts
+- **Data Display** (23 components) - Tables, lists, trees, avatars
+- **Feedback & Status** (15 components) - Messages, notifications, progress
+- **Actions & Controls** (4 components) - Buttons, switches, controls
+
+### Additional Skills
+
+- **Layout Patterns** - Complete page patterns (login forms, dashboards, master-detail, wizards)
+- **BEM Naming** - Block Element Modifier methodology with examples
+- **Component Composition** - How to combine components with required wrappers
+- **Content Density** - Cozy, compact, and condensed modes for different devices
 
 ## Installation
 
-### Install all fundamental-styles skills
+### Install All Skills (Recommended)
+
+Install the complete skills package with one command:
 
 ```bash
-npx skills add "SAP/fundamental-styles"
+npx skills add SAP/fundamental-styles
 ```
 
-This downloads the skill files into your project (`.claude/skills/` or `.skills/`) so that AI assistants (Claude Code, Copilot, Cursor, etc.) can pick them up automatically.
+This installs all 10 skills automatically.
 
-### Install a specific skill
+### Install Individual Skills
+
+If you only need specific skills, you can install them individually:
 
 ```bash
-npx skills add "SAP/fundamental-styles" --skill "component-guidance"
-npx skills add "SAP/fundamental-styles" --skill "layout-patterns"
+# Install only BEM naming guidance
+npx skills add SAP/fundamental-styles -s bem-naming
+
+# Install only component composition
+npx skills add SAP/fundamental-styles -s component-composition
+
+# Install multiple specific skills
+npx skills add SAP/fundamental-styles -s bem-naming,component-composition,layout-patterns
 ```
 
-## What Are Skills?
+**Available skill IDs:**
+- `component-guidance-forms`
+- `component-guidance-navigation`
+- `component-guidance-layout`
+- `component-guidance-data`
+- `component-guidance-feedback`
+- `component-guidance-actions`
+- `layout-patterns`
+- `bem-naming`
+- `component-composition`
+- `content-density`
 
-Skills are **Markdown files** that contain structured knowledge about how to use a library or framework. They're written in a conversational style that AI assistants can understand and apply when helping you write code.
+## How AI Agents Use Skills
 
-### Skills vs. Documentation
+When you ask an AI assistant like Claude Code a question, it automatically loads the relevant skill:
 
-| Traditional Docs | Agent Skills |
-|------------------|--------------|
-| Reference material | Procedural guidance |
-| "What classes exist" | "How do I build X?" |
-| Searchable by humans | Automatically loaded by AI |
-| Component-focused | Pattern-focused |
+**Example interactions:**
 
-### Skills vs. MCP Servers
+```
+You: "Should I use a checkbox or radio button?"
+→ Loads: component-guidance-forms.md
+→ Provides: Guidance on when to use each component
 
-fundamental-styles provides **both** Skills and an [MCP server](../packages/mcp/):
+You: "How do I build a login form?"
+→ Loads: layout-patterns.md
+→ Provides: Complete login form example
 
-| MCP Server | Skills |
-|------------|--------|
-| Structured data lookup | Conversational guidance |
-| Programmatic API | Natural language |
-| "What CSS classes does button have?" | "Should I use button or link here?" |
-| Component catalog, HTML examples, design tokens | "How do I build a login form?" |
+You: "What does fd-button--emphasized mean?"
+→ Loads: bem-naming.md
+→ Provides: BEM naming explanation with examples
 
-**Use both together** for the best experience! The MCP server provides data, skills provide guidance.
+You: "How do I combine an input with a button?"
+→ Loads: component-composition.md
+→ Provides: Input Group composition pattern
 
-## Using Skills
-
-Once installed, AI assistants automatically have access to the skills. You don't need to do anything special!
-
-### Example Interactions
-
-**Before skills:**
-> You: "Should I use Avatar for product logos?"
->
-> AI: "Yes, you can use Avatar. Here are the CSS classes..."
-
-**After skills:**
-> You: "Should I use Avatar for product logos?"
->
-> AI: "Yes! Use `fd-avatar` with the default **square shape** for product logos. The Fiori guidelines specifically recommend squares for business content. Use circles for people. Also, provide a clear `alt` attribute and avoid unnecessarily large image files."
-
-### Questions Skills Can Answer
-
-**Component Guidance Skill:**
-- "Should I use Avatar or Icon for this?"
-- "Can I make an Avatar clickable?"
-- "What's the difference between Dialog and Popover?"
-- "When should I use Message Strip vs Alert?"
-
-**Layout Patterns Skill:**
-- "How do I build a login form with validation?"
-- "Show me a master-detail layout pattern"
-- "What's the best way to structure a data table with actions?"
-- "How do I create a multi-step wizard?"
-
-## Skill Contents
-
-### component-guidance.md
-
-Covers these components with full Fiori Design Guidelines:
-- **Avatar** - User photos, product images, initials
-- **Button** - Primary, secondary, tertiary actions
-- **Input** - Text fields, validation states
-- **Dialog** - Modal windows, confirmations
-- **Table** - Data grids, selection, actions
-- **Message Strip** - Inline feedback messages
-
-Each component includes:
-- ✅ **When to use** - Appropriate use cases
-- ❌ **When to avoid** - Anti-patterns and alternatives
-- 💡 **Best practices** - Design tips and guidelines
-- 🔗 **Related components** - Similar or complementary components
-- 📝 **Example code** - Working HTML snippets
-- 🌐 **Fiori Guidelines link** - Official documentation
-
-### layout-patterns.md
-
-Complete working examples for:
-1. **Login Form** - Email/password with validation
-2. **Master-Detail Layout** - List + detail panel
-3. **Data Table with Actions** - Bulk selection, row actions
-4. **Multi-Step Wizard** - Step-by-step forms
-5. **Form with Validation** - Field states, error messages
-6. **Dialog with Form** - Modal data entry
-7. **Dashboard with Cards** - Metrics, lists, status
-
-Each pattern includes:
-- 🎯 **When to use** - Appropriate use cases
-- 🧩 **Components used** - List of fundamental-styles components
-- 💻 **Complete example** - Production-ready HTML
-- 🔑 **Key points** - Implementation tips
-- ♿ **Accessibility notes** - ARIA patterns and keyboard support
-
-## Contributing
-
-Want to add more components or patterns?
-
-1. **Component Guidance**: Add new components to `component-guidance.md` following the Avatar/Button structure
-2. **Layout Patterns**: Add new patterns to `layout-patterns.md` following the existing format
-3. **Update manifest**: Add metadata to `skills.json`
-4. **Test**: Try the skill with an AI assistant
-5. **Submit PR**: Share your improvements!
-
-## Complementary Tools
-
-### MCP Server
-
-Install the [fundamental-styles MCP server](../packages/mcp/) for programmatic access to component data:
-
-```bash
-npx -y @fundamental-styles/mcp
+You: "Should I use cozy or compact mode?"
+→ Loads: content-density.md
+→ Provides: Device-specific density recommendations
 ```
 
-The MCP server provides:
-- Component catalog (120+ components)
-- CSS class lookup
-- HTML examples
-- Design tokens
-- Accessibility guidelines
-- Component relationships
+## Skill Structure
 
-### Documentation
+Each skill follows a consistent format:
 
-- **Visual examples**: https://sap.github.io/fundamental-styles/
-- **Fiori Design Guidelines**: https://www.sap.com/design-system/fiori-design-web/
-- **Component catalog**: `docs/component-catalog.json`
-- **AI-friendly index**: `docs/ai-component-index.md`
+### Component Guidance Skills
 
-## License
+For each component, provides:
 
-Apache-2.0 - Same as fundamental-styles
+- **Description** - What the component is and does
+- **When to use** - Appropriate use cases
+- **When to avoid** - Anti-patterns and alternatives
+- **Best practices** - Implementation guidelines
 
-## Support
+**Example:**
 
-- **Issues**: https://github.com/SAP/fundamental-styles/issues
-- **Discussions**: https://github.com/SAP/fundamental-styles/discussions
-- **Slack**: #fundamental-styles (SAP internal)
+```markdown
+## Button
+
+**Description:**
+Buttons enable users to trigger actions...
+
+**When to use:**
+- Trigger specific actions (Save, Cancel, Submit)
+- Use toggle buttons in toolbars
+- Use menu button for multiple options
+
+**When to avoid:**
+- ❌ Linking to a different page → Use link instead
+- ❌ Navigating within process → Use wizard instead
+
+**Best practices:**
+- ✅ Use emphasized button for primary action
+- ✅ Use semantic colors (positive, negative)
+- ⚠️ Only one emphasized button per page
+```
+

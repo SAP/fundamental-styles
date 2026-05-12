@@ -73,6 +73,24 @@
       "file": "layout-patterns.md",
       "tags": ["patterns", "layouts", "examples", "templates"],
       "priority": "high"
+    },
+    {
+      "id": "bem-naming",
+      "name": "BEM Naming in Fundamental Styles",
+      "description": "BEM (Block Element Modifier) methodology and naming conventions used in fundamental-styles with real examples",
+      "file": "bem-naming.md",
+      "tags": ["bem", "naming", "conventions", "methodology", "css", "classes"],
+      "keywords": ["bem", "block-element-modifier", "naming-convention", "css-classes", "fd-prefix", "modifier", "element", "double-underscore", "double-hyphen", "class-names"],
+      "priority": "high"
+    },
+    {
+      "id": "component-composition",
+      "name": "Component Composition",
+      "description": "How to combine fundamental-styles components correctly - required wrappers, nesting rules, and common composition patterns",
+      "file": "component-composition.md",
+      "tags": ["composition", "structure", "nesting", "wrappers", "patterns"],
+      "keywords": ["composition", "combine-components", "nesting", "wrapper-elements", "form-item", "input-group", "popover", "dialog-structure", "required-wrappers", "component-hierarchy", "parent-child", "structure"],
+      "priority": "high"
     }
   ]
 }
