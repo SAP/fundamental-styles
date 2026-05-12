@@ -4,6 +4,7 @@ import {
     AccessibilityFile,
     ComponentCatalog,
     ComponentMetadata,
+    ComponentUseCasesFile,
     DesignToken,
     HtmlExamplesFile,
     ModifierRules,
@@ -43,6 +44,7 @@ export interface LoadedCatalog {
     utilityClasses: UtilityClassesFile | null;
     designTokens: DesignToken[];
     htmlExamples: HtmlExamplesFile | null;
+    componentUseCases: ComponentUseCasesFile | null;
 }
 
 export function loadCatalog(): LoadedCatalog {
@@ -99,6 +101,9 @@ export function loadCatalog(): LoadedCatalog {
     // HTML examples
     const htmlExamples = readJson<HtmlExamplesFile>(resolveDataPath('html-examples.json'));
 
+    // Component use cases
+    const componentUseCases = readJson<ComponentUseCasesFile>(resolveDataPath('component-use-cases.json'));
+
     return {
         version: catalog?.version ?? 'unknown',
         components,
@@ -107,7 +112,8 @@ export function loadCatalog(): LoadedCatalog {
         accessibility,
         utilityClasses,
         designTokens,
-        htmlExamples
+        htmlExamples,
+        componentUseCases
     };
 }
 

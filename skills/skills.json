@@ -1,0 +1,26 @@
+{
+  "name": "fundamental-styles",
+  "version": "1.0.0",
+  "description": "Agent Skills for SAP fundamental-styles - CSS component library for Fiori Design System",
+  "author": "SAP",
+  "homepage": "https://sap.github.io/fundamental-styles/",
+  "repository": "https://github.com/SAP/fundamental-styles",
+  "skills": [
+    {
+      "id": "component-guidance",
+      "name": "Component Guidance",
+      "description": "SAP Fiori Design Guidelines for fundamental-styles components - when to use, when to avoid, and best practices",
+      "file": "component-guidance.md",
+      "tags": ["components", "design", "fiori", "guidance", "best-practices"],
+      "priority": "high"
+    },
+    {
+      "id": "layout-patterns",
+      "name": "Layout Patterns",
+      "description": "Common UI layout patterns using fundamental-styles - login forms, dashboards, master-detail, wizards, and more",
+      "file": "layout-patterns.md",
+      "tags": ["patterns", "layouts", "examples", "templates"],
+      "priority": "high"
+    }
+  ]
+}

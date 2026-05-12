@@ -185,6 +185,30 @@ export interface HtmlExample {
 }
 
 // ---------------------------------------------------------------------------
+// Component Use Cases (docs/component-use-cases.json)
+// ---------------------------------------------------------------------------
+
+export interface ComponentUseCasesFile {
+    componentGroups?: Record<string, ComponentGroup>;
+    useCases: Record<string, ComponentUseCase>;
+}
+
+export interface ComponentGroup {
+    description: string;
+    decisionGuide: string;
+    components: string[];
+}
+
+export interface ComponentUseCase {
+    description?: string;
+    useCases: string[];
+    avoidWhen: string[];
+    bestPractices?: string[];
+    relatedComponents?: string[];
+    fioriGuidelinesUrl?: string;
+}
+
+// ---------------------------------------------------------------------------
 // Package alias for filtering
 // ---------------------------------------------------------------------------
 

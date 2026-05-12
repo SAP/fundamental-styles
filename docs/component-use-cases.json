@@ -24,18 +24,33 @@
 
   "useCases": {
     "action-bar": {
+      "description": "The action bar displays at the top of the page, and includes the page's title, description, back button and action buttons. It provides page-level navigation and actions.",
       "useCases": [
-        "Page-level toolbar at top of content area",
-        "Display page title with back navigation",
-        "Container for page-level action buttons",
-        "Show contextual actions for the current view"
+        "Display the page title and description at the top of the page",
+        "Provide a back button for navigation to the previous page",
+        "Show page-level action buttons that affect all items or the entire view",
+        "Control settings of the UI that apply globally to the page",
+        "Display actions at the top of the screen that are always visible"
       ],
       "avoidWhen": [
-        "App-level navigation (use shellbar)",
-        "Table/list row actions (use toolbar)",
-        "Form actions (use bar with footer mode)"
+        "Finalizing actions at the bottom of the screen (use bar with footer mode)",
+        "Item-specific actions (use toolbar for item-level controls)",
+        "Application-level navigation (use shellbar instead)"
       ],
-      "relatedComponents": ["bar", "toolbar", "shellbar"]
+      "bestPractices": [
+        "Use the fd-title component with proper semantic heading levels (H1 styled as H3)",
+        "Include a back button on the left side for navigation hierarchy",
+        "Place page title and description prominently",
+        "Position primary actions on the right side",
+        "Use fd-button--emphasized for the primary page action",
+        "Keep action buttons concise and clearly labeled",
+        "Make the action bar sticky (fixed to top) for long scrolling pages",
+        "Limit the number of action buttons (3-5 maximum)",
+        "For accessibility, the page title must be an H1 (use fd-title with --h3 for visual styling)",
+        "Don't duplicate actions that appear elsewhere on the page"
+      ],
+      "relatedComponents": ["bar", "toolbar", "shellbar", "title"],
+      "fioriGuidelinesUrl": "https://www.sap.com/design-system/fiori-design-web/v1-145/ui-elements/action-bar"
     },
 
     "action-sheet": {
@@ -1056,6 +1071,34 @@
         "Comments (use feed-input)"
       ],
       "relatedComponents": ["ai-writing-assistant", "textarea", "search-field"]
+    },
+
+    "avatar": {
+      "description": "Avatars are visual representations of users, products, or business entities, helping people quickly identify them within an application. Users can be shown with their own photos or initials, while products can be depicted with representative images or logos.",
+      "useCases": [
+        "Display user photos, initials, or placeholders for personal identification",
+        "Show standardized images for business content such as products, parts, logos, or campaign visuals",
+        "Represent concepts or entities with icons when images aren't available",
+        "Present images with transparent backgrounds when needed for clarity or design fit",
+        "Provide placeholder images when no other source image is available",
+        "Apply avatars consistently in places like lists, cards, and headers to create familiarity and a uniform visual pattern across the interface"
+      ],
+      "avoidWhen": [
+        "Display pictures in a sequence, such as a slideshow or carousel (use carousel component)",
+        "Display an interactive icon (use button with an icon inside)"
+      ],
+      "bestPractices": [
+        "Use a circle for people and a square for product or business-related images",
+        "Use the predefined sizes",
+        "For product icons, replace the default icon with a more suitable icon for your use case",
+        "Provide a clear alternative text for the avatar image",
+        "For interactive avatars and badges, provide both a tooltip and an alternative text",
+        "Avoid unnecessarily large files",
+        "Avoid badges on avatars smaller than size S",
+        "Don't attach actions to icons in the avatar"
+      ],
+      "relatedComponents": ["avatar-group", "button", "icon"],
+      "fioriGuidelinesUrl": "https://www.sap.com/design-system/fiori-design-web/v1-145/ui-elements/avatar"
     },
 
     "avatar-group": {

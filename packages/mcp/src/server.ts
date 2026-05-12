@@ -27,7 +27,8 @@ try {
         accessibility: null,
         utilityClasses: null,
         designTokens: [],
-        htmlExamples: null
+        htmlExamples: null,
+        componentUseCases: null
     };
     console.error('Warning: Failed to load component catalog data.');
 }
@@ -649,6 +650,107 @@ Use this when building complex layouts to understand component composition.`,
                 bidirectional: r.bidirectional
             }))
         };
+
+        return {
+            content: [
+                {
+                    type: 'text' as const,
+                    text: JSON.stringify(result, null, 2)
+                }
+            ]
+        };
+    }
+);
+
+// ---------------------------------------------------------------------------
+// Tool: get_component_guidance
+// ---------------------------------------------------------------------------
+server.tool(
+    'get_component_guidance',
+    `Get Fiori Design Guidelines for a component including when to use it, when to avoid it, and best practices.
+Returns detailed guidance from SAP Fiori Design System including use cases, anti-patterns, and design tips.
+Use this when you need to understand if a component is appropriate for a specific use case or need design guidance.`,
+    {
+        component: z.string().describe('Component name or id (e.g., "avatar", "button", "table")')
+    },
+    async ({ component }) => {
+        const comp = findComponent(component);
+
+        if (!comp) {
+            return {
+                content: [
+                    {
+                        type: 'text' as const,
+                        text: `Component "${component}" not found. Use search_components to find available components.`
+                    }
+                ]
+            };
+        }
+
+        if (!data.componentUseCases) {
+            return {
+                content: [
+                    {
+                        type: 'text' as const,
+                        text: JSON.stringify(
+                            { component: comp.name, error: 'Component use cases data not available.' },
+                            null,
+                            2
+                        )
+                    }
+                ]
+            };
+        }
+
+        const guidance = data.componentUseCases.useCases[comp.id];
+
+        if (!guidance) {
+            return {
+                content: [
+                    {
+                        type: 'text' as const,
+                        text: JSON.stringify(
+                            {
+                                component: comp.name,
+                                note: 'No specific Fiori design guidance available for this component yet.',
+                                suggestion: 'Check the component catalog or Fiori Design Guidelines website.'
+                            },
+                            null,
+                            2
+                        )
+                    }
+                ]
+            };
+        }
+
+        const result: Record<string, unknown> = {
+            component: comp.name,
+            baseClass: comp.baseClass
+        };
+
+        if (guidance.description) {
+            result['description'] = guidance.description;
+        }
+
+        if (guidance.useCases && guidance.useCases.length > 0) {
+            result['whenToUse'] = guidance.useCases;
+        }
+
+        if (guidance.avoidWhen && guidance.avoidWhen.length > 0) {
+            result['whenToAvoid'] = guidance.avoidWhen;
+        }
+
+        if (guidance.bestPractices && guidance.bestPractices.length > 0) {
+            result['bestPractices'] = guidance.bestPractices;
+        }
+
+        if (guidance.relatedComponents && guidance.relatedComponents.length > 0) {
+            result['relatedComponents'] = guidance.relatedComponents;
+        }
+
+        if (guidance.fioriGuidelinesUrl) {
+            result['fioriGuidelinesUrl'] = guidance.fioriGuidelinesUrl;
+        }
 
         return {
             content: [
