@@ -41,7 +41,7 @@ const storybookAddons = [getAbsolutePath("@storybook/addon-links"), getAbsoluteP
     }
 }, getAbsolutePath("./custom/addons/theme-switcher/register"), getAbsolutePath("@chromatic-com/storybook")];
 const config: StorybookConfig = {
-    stories: ['../stories/docs/introduction.stories.ts', '../stories/docs/compact-docs.stories.ts', `../packages/@${includedPackages}/**/*.@${includedStories}.@(ts|tsx|js|jsx)`, `../stories/**/*.@${includedStories}.@(ts|tsx|js|jsx)`],
+    stories: ['../stories/docs/introduction.stories.ts', '../stories/docs/compact-docs.stories.ts', '../stories/docs/skills.stories.ts', `../packages/@${includedPackages}/**/*.@${includedStories}.@(ts|tsx|js|jsx)`, `../stories/**/*.@${includedStories}.@(ts|tsx|js|jsx)`],
     staticDirs: staticDirs,
     addons: storybookAddons,
 
