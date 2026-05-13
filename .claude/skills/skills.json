@@ -5,5 +5,18 @@
   "author": "SAP",
   "homepage": "https://sap.github.io/fundamental-styles/",
   "repository": "https://github.com/SAP/fundamental-styles",
-  "skills": []
+  "skills": [
+    {
+      "name": "scss-style-guide",
+      "path": "scss-style-guide.md",
+      "description": "SCSS/CSS coding standards and patterns for fundamental-styles project",
+      "publishable": false
+    },
+    {
+      "name": "accessibility-guide",
+      "path": "accessibility-guide.md",
+      "description": "Accessibility guidelines for writing component examples with proper ARIA, semantic HTML, and WCAG compliance",
+      "publishable": false
+    }
+  ]
 }
