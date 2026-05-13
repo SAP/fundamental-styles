@@ -28,7 +28,8 @@ try {
         utilityClasses: null,
         designTokens: [],
         htmlExamples: null,
-        componentUseCases: null
+        componentUseCases: null,
+        componentGuidance: null
     };
     console.error('Warning: Failed to load component catalog data.');
 }
@@ -86,13 +87,19 @@ Use this to discover what CSS components are available.`,
             );
         }
 
-        const summary = components.map((c) => ({
-            id: c.id,
-            name: c.name,
-            baseClass: c.baseClass,
-            category: c.category,
-            description: truncate(c.description, 120)
-        }));
+        const summary = components.map((c) => {
+            // Try to get enhanced description from component guidance
+            const guidance = data.componentGuidance?.components[c.id];
+            const description = guidance?.description || c.description;
+
+            return {
+                id: c.id,
+                name: c.name,
+                baseClass: c.baseClass,
+                category: guidance?.category || c.category,
+                description: truncate(description, 120)
+            };
+        });
 
         return {
             content: [
@@ -687,13 +694,14 @@ Use this when you need to understand if a component is appropriate for a specifi
             };
         }
 
-        if (!data.componentUseCases) {
+        // Check if component guidance data is available
+        if (!data.componentGuidance) {
             return {
                 content: [
                     {
                         type: 'text' as const,
                         text: JSON.stringify(
-                            { component: comp.name, error: 'Component use cases data not available.' },
+                            { component: comp.name, error: 'Component guidance data not available.' },
                             null,
                             2
                         )
@@ -702,7 +710,8 @@ Use this when you need to understand if a component is appropriate for a specifi
             };
         }
 
-        const guidance = data.componentUseCases.useCases[comp.id];
+        // Get guidance from the new comprehensive guidance file
+        const guidance = data.componentGuidance.components[comp.id];
 
         if (!guidance) {
             return {
@@ -712,6 +721,7 @@ Use this when you need to understand if a component is appropriate for a specifi
                         text: JSON.stringify(
                             {
                                 component: comp.name,
+                                baseClass: comp.baseClass,
                                 note: 'No specific Fiori design guidance available for this component yet.',
                                 suggestion: 'Check the component catalog or Fiori Design Guidelines website.'
                             },
@@ -725,19 +735,20 @@ Use this when you need to understand if a component is appropriate for a specifi
 
         const result: Record<string, unknown> = {
             component: comp.name,
-            baseClass: comp.baseClass
+            baseClass: comp.baseClass,
+            category: guidance.category
         };
 
         if (guidance.description) {
             result['description'] = guidance.description;
         }
 
-        if (guidance.useCases && guidance.useCases.length > 0) {
-            result['whenToUse'] = guidance.useCases;
+        if (guidance.whenToUse && guidance.whenToUse.length > 0) {
+            result['whenToUse'] = guidance.whenToUse;
         }
 
-        if (guidance.avoidWhen && guidance.avoidWhen.length > 0) {
-            result['whenToAvoid'] = guidance.avoidWhen;
+        if (guidance.whenToAvoid && guidance.whenToAvoid.length > 0) {
+            result['whenToAvoid'] = guidance.whenToAvoid;
         }
 
         if (guidance.bestPractices && guidance.bestPractices.length > 0) {
@@ -746,10 +757,6 @@ Use this when you need to understand if a component is appropriate for a specifi
 
         if (guidance.relatedComponents && guidance.relatedComponents.length > 0) {
             result['relatedComponents'] = guidance.relatedComponents;
-        }
-
-        if (guidance.fioriGuidelinesUrl) {
-            result['fioriGuidelinesUrl'] = guidance.fioriGuidelinesUrl;
         }
 
         return {
@@ -931,6 +938,472 @@ or checking what changed between releases.`,
                 ]
             };
         }
+
+        return {
+            content: [
+                {
+                    type: 'text' as const,
+                    text: JSON.stringify(result, null, 2)
+                }
+            ]
+        };
+    }
+);
+
+// ---------------------------------------------------------------------------
+// Tool: setup_project
+// ---------------------------------------------------------------------------
+server.tool(
+    'setup_project',
+    `Get comprehensive setup instructions for fundamental-styles in a new project.
+Returns detailed step-by-step instructions for both CDN and NPM installation approaches,
+including theme setup, font configuration, component imports, and best practices.
+Use this when starting a new project or helping users get started with fundamental-styles.`,
+    {
+        approach: z
+            .enum(['cdn', 'npm', 'both'] as const)
+            .default('both')
+            .describe('Installation approach: "cdn" for CDN-only, "npm" for NPM-only, "both" for both approaches'),
+        themes: z
+            .union([
+                z.enum([
+                    'sap_horizon',
+                    'sap_horizon_dark',
+                    'sap_horizon_hcb',
+                    'sap_horizon_hcw',
+                    'sap_fiori_3',
+                    'sap_fiori_3_dark',
+                    'sap_fiori_3_hcb',
+                    'sap_fiori_3_hcw',
+                    'all',
+                    'all_horizon',
+                    'all_fiori',
+                    'all_dark',
+                    'all_light',
+                    'all_high_contrast'
+                ] as const),
+                z.array(z.enum([
+                    'sap_horizon',
+                    'sap_horizon_dark',
+                    'sap_horizon_hcb',
+                    'sap_horizon_hcw',
+                    'sap_fiori_3',
+                    'sap_fiori_3_dark',
+                    'sap_fiori_3_hcb',
+                    'sap_fiori_3_hcw'
+                ] as const))
+            ])
+            .optional()
+            .describe('Theme(s) to include. Can be: single theme name, array of theme names, or preset ("all", "all_horizon", "all_fiori", "all_dark", "all_light", "all_high_contrast"). If not provided, defaults to "sap_horizon"'),
+        componentMode: z
+            .enum(['all', 'selective'] as const)
+            .default('selective')
+            .describe('Import all components or selective components (default: selective)'),
+        components: z
+            .array(z.string())
+            .optional()
+            .describe('Specific components to include (e.g., ["button", "input", "table"]). Only used with componentMode="selective"')
+    },
+    async ({ approach, themes, componentMode, components }) => {
+        const componentList = components || ['button', 'input', 'form-item', 'form-label'];
+
+        // All available themes
+        const allThemes = [
+            'sap_horizon',
+            'sap_horizon_dark',
+            'sap_horizon_hcb',
+            'sap_horizon_hcw',
+            'sap_fiori_3',
+            'sap_fiori_3_dark',
+            'sap_fiori_3_hcb',
+            'sap_fiori_3_hcw'
+        ];
+
+        // Theme presets
+        const horizonThemes = ['sap_horizon', 'sap_horizon_dark', 'sap_horizon_hcb', 'sap_horizon_hcw'];
+        const fioriThemes = ['sap_fiori_3', 'sap_fiori_3_dark', 'sap_fiori_3_hcb', 'sap_fiori_3_hcw'];
+        const darkThemes = ['sap_horizon_dark', 'sap_fiori_3_dark'];
+        const lightThemes = ['sap_horizon', 'sap_fiori_3'];
+        const highContrastThemes = ['sap_horizon_hcb', 'sap_horizon_hcw', 'sap_fiori_3_hcb', 'sap_fiori_3_hcw'];
+
+        // Determine which themes to include
+        let selectedThemes: string[];
+
+        if (!themes) {
+            // Default: single sap_horizon theme
+            selectedThemes = ['sap_horizon'];
+        } else if (Array.isArray(themes)) {
+            // Array of specific themes
+            if (themes.includes('all' as any)) {
+                selectedThemes = allThemes;
+            } else {
+                selectedThemes = themes as string[];
+            }
+        } else {
+            // Single value (preset or theme name)
+            const preset = themes as string;
+            switch (preset) {
+                case 'all':
+                    selectedThemes = allThemes;
+                    break;
+                case 'all_horizon':
+                    selectedThemes = horizonThemes;
+                    break;
+                case 'all_fiori':
+                    selectedThemes = fioriThemes;
+                    break;
+                case 'all_dark':
+                    selectedThemes = darkThemes;
+                    break;
+                case 'all_light':
+                    selectedThemes = lightThemes;
+                    break;
+                case 'all_high_contrast':
+                    selectedThemes = highContrastThemes;
+                    break;
+                default:
+                    // Single theme name
+                    selectedThemes = [preset];
+            }
+        }
+
+        // Build theme-specific instructions for each selected theme
+        const themeInstructions = selectedThemes.map(theme => {
+            const themeBaseUrl = `https://unpkg.com/@sap-theming/theming-base-content/content/Base/baseLib/${theme}/css_variables.css`;
+            const themeFundUrl = `https://unpkg.com/fundamental-styles@latest/dist/theming/${theme}.css`;
+
+            const themeNpmBase = `@sap-theming/theming-base-content/content/Base/baseLib/${theme}/css_variables.css`;
+            const themeNpmFund = `fundamental-styles/dist/theming/${theme}.css`;
+
+            return {
+                theme,
+                cdn: {
+                    themeBaseUrl,
+                    themeFundUrl
+                },
+                npm: {
+                    themeNpmBase,
+                    themeNpmFund
+                }
+            };
+        });
+
+        // Use the first theme for the main example
+        const primaryTheme = themeInstructions[0];
+
+        const result: any = {
+            library: 'fundamental-styles',
+            version: data.version,
+            themes: selectedThemes,
+            primaryTheme: primaryTheme.theme,
+            approach: approach
+        };
+
+        // CDN Instructions
+        if (approach === 'cdn' || approach === 'both') {
+            const cdnComponentLinks = componentMode === 'all'
+                ? ['<link href="https://unpkg.com/fundamental-styles@latest/dist/fundamental-styles.css" rel="stylesheet">']
+                : componentList.map(c => `<link href="https://unpkg.com/fundamental-styles@latest/dist/${c}.css" rel="stylesheet">`);
+
+            result.cdn = {
+                description: 'CDN installation requires no build tools. Perfect for prototyping or static HTML projects.',
+                primaryTheme: primaryTheme.theme,
+                themes: themeInstructions.map(t => ({
+                    theme: t.theme,
+                    themeBaseUrl: t.cdn.themeBaseUrl,
+                    themeFundUrl: t.cdn.themeFundUrl
+                })),
+                steps: [
+                    {
+                        step: 1,
+                        title: 'Add Theme CSS to <head>',
+                        description: selectedThemes.length > 1
+                            ? `Two CSS files are REQUIRED for themes to work. Order matters. Showing setup for ${primaryTheme.theme} (primary theme). See 'themes' array for ${selectedThemes.length - 1} additional theme${selectedThemes.length > 2 ? 's' : ''}.`
+                            : 'Two CSS files are REQUIRED for themes to work. Order matters.',
+                        code: `<!-- 1. Theme base variables (required) -->
+<link href="${primaryTheme.cdn.themeBaseUrl}" rel="stylesheet">
+
+<!-- 2. Fundamental Styles theme customizations (required) -->
+<link href="${primaryTheme.cdn.themeFundUrl}" rel="stylesheet">`,
+                        language: 'html'
+                    },
+                    {
+                        step: 2,
+                        title: 'Add Component CSS',
+                        description: componentMode === 'all'
+                            ? 'Import all components in one file (larger bundle size)'
+                            : 'Import only the components you need (smaller bundle size)',
+                        code: cdnComponentLinks.join('\n'),
+                        language: 'html'
+                    },
+                    {
+                        step: 3,
+                        title: 'Set Base Font Size',
+                        description: 'Required for proper component sizing per SAP Design specifications',
+                        code: `<style>
+  html {
+    font-size: 16px; /* Required for proper component sizing */
+  }
+</style>`,
+                        language: 'html'
+                    },
+                    {
+                        step: 4,
+                        title: 'Use Components in HTML',
+                        description: 'Components use BEM naming: fd-{component}, fd-{component}--{modifier}',
+                        code: `<button class="fd-button fd-button--emphasized">Click Me</button>
+<input class="fd-input" type="text" placeholder="Enter text">`,
+                        language: 'html'
+                    }
+                ],
+                completeExample: `<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fundamental Styles - Getting Started</title>
+
+  <!-- 1. Theme base variables (required) -->
+  <link href="${primaryTheme.cdn.themeBaseUrl}" rel="stylesheet">
+
+  <!-- 2. Fundamental Styles theme customizations (required) -->
+  <link href="${primaryTheme.cdn.themeFundUrl}" rel="stylesheet">
+
+  <!-- 3. Component CSS -->
+${cdnComponentLinks.map(l => '  ' + l).join('\n')}
+
+  <!-- 4. Base font size (required) -->
+  <style>
+    html {
+      font-size: 16px;
+    }
+    body {
+      font-family: '72', Arial, sans-serif;
+      padding: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <h1>Hello Fundamental Styles!</h1>
+
+  <div class="fd-form-item" style="margin-bottom: 1rem;">
+    <label class="fd-form-label" for="name">Name</label>
+    <input class="fd-input" id="name" type="text" placeholder="Enter your name">
+  </div>
+
+  <button class="fd-button fd-button--emphasized">Submit</button>
+  <button class="fd-button fd-button--transparent">Cancel</button>
+</body>
+</html>`,
+                notes: [
+                    '📌 Pin to specific version for production: https://unpkg.com/fundamental-styles@0.41.6/dist/...',
+                    '⚠️ Always include BOTH theme CSS files (base variables + fundamental theme)',
+                    '🎨 Fonts and icons are included automatically from @sap-theming/theming-base-content',
+                    '🔗 No JavaScript required - fundamental-styles is CSS-only',
+                    selectedThemes.length > 1 ? `🎨 ${selectedThemes.length} theme${selectedThemes.length > 1 ? 's' : ''} available - see 'themes' array for alternatives` : null
+                ].filter(Boolean)
+            };
+        }
+
+        // NPM Instructions
+        if (approach === 'npm' || approach === 'both') {
+            const npmComponentImports = componentMode === 'all'
+                ? ["import 'fundamental-styles/dist/fundamental-styles.css';"]
+                : componentList.map(c => `import 'fundamental-styles/dist/${c}.css';`);
+
+            result.npm = {
+                description: 'NPM installation for modern build tools (Webpack, Vite, Rollup, etc.)',
+                primaryTheme: primaryTheme.theme,
+                themes: themeInstructions.map(t => ({
+                    theme: t.theme,
+                    themeNpmBase: t.npm.themeNpmBase,
+                    themeNpmFund: t.npm.themeNpmFund
+                })),
+                steps: [
+                    {
+                        step: 1,
+                        title: 'Install Packages',
+                        description: 'fundamental-styles requires @sap-theming/theming-base-content for themes, fonts, and icons',
+                        commands: [
+                            'npm install fundamental-styles @sap-theming/theming-base-content'
+                        ],
+                        language: 'bash'
+                    },
+                    {
+                        step: 2,
+                        title: 'Import Theme CSS',
+                        description: selectedThemes.length > 1
+                            ? `Import in your main JavaScript/TypeScript entry point (e.g., main.js, index.js, App.tsx). Showing ${primaryTheme.theme} (primary theme). See 'themes' array for ${selectedThemes.length - 1} additional theme${selectedThemes.length > 2 ? 's' : ''}.`
+                            : 'Import in your main JavaScript/TypeScript entry point (e.g., main.js, index.js, App.tsx)',
+                        code: `// 1. Theme base variables (required)
+import '${primaryTheme.npm.themeNpmBase}';
+
+// 2. Fundamental Styles theme customizations (required)
+import '${primaryTheme.npm.themeNpmFund}';`,
+                        language: 'javascript'
+                    },
+                    {
+                        step: 3,
+                        title: 'Import Component CSS',
+                        description: componentMode === 'all'
+                            ? 'Import all components (larger bundle, simpler imports)'
+                            : 'Import only what you need (smaller bundle, recommended for production)',
+                        code: npmComponentImports.join('\n'),
+                        language: 'javascript'
+                    },
+                    {
+                        step: 4,
+                        title: 'Configure Bundler for Fonts',
+                        description: 'Ensure your bundler can handle font files from node_modules',
+                        frameworks: {
+                            webpack: {
+                                description: 'Add file-loader or asset/resource rule',
+                                code: `// webpack.config.js
+module.exports = {
+  module: {
+    rules: [
+      {
+        test: /\\.(woff|woff2|ttf|eot|svg)$/,
+        type: 'asset/resource'
+      }
+    ]
+  }
+};`,
+                                language: 'javascript'
+                            },
+                            vite: {
+                                description: 'Vite handles fonts automatically, no configuration needed',
+                                code: '// No configuration needed - Vite handles fonts out of the box ✅',
+                                language: 'javascript'
+                            },
+                            create_react_app: {
+                                description: 'CRA handles fonts automatically',
+                                code: '// No configuration needed - CRA handles fonts out of the box ✅',
+                                language: 'javascript'
+                            },
+                            angular: {
+                                description: 'Add font paths to angular.json assets',
+                                code: `// angular.json
+{
+  "projects": {
+    "your-app": {
+      "architect": {
+        "build": {
+          "options": {
+            "assets": [
+              {
+                "glob": "**/*",
+                "input": "node_modules/@sap-theming/theming-base-content/content/Base/baseLib/${primaryTheme.theme}/fonts",
+                "output": "/fonts"
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}`,
+                                language: 'json'
+                            }
+                        }
+                    },
+                    {
+                        step: 5,
+                        title: 'Set Base Font Size',
+                        description: 'Add to your global CSS file (e.g., index.css, globals.css, styles.css)',
+                        code: `html {
+  font-size: 16px; /* Required for proper component sizing */
+}
+
+body {
+  font-family: '72', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}`,
+                        language: 'css'
+                    },
+                    {
+                        step: 6,
+                        title: 'Use Components',
+                        description: 'Use fundamental-styles classes in your HTML/JSX/templates',
+                        code: `<button className="fd-button fd-button--emphasized">Click Me</button>
+<input className="fd-input" type="text" placeholder="Enter text" />`,
+                        language: 'jsx'
+                    }
+                ],
+                notes: [
+                    '📦 Always install BOTH packages: fundamental-styles AND @sap-theming/theming-base-content',
+                    '⚠️ Import theme CSS before component CSS',
+                    '🎨 Fonts are located in @sap-theming/theming-base-content/content/Base/baseLib/{theme}/fonts/',
+                    '🔧 Most modern bundlers (Vite, CRA, Next.js) handle fonts automatically',
+                    '📝 For TypeScript, no @types package needed - fundamental-styles is CSS-only',
+                    selectedThemes.length > 1 ? `🎨 ${selectedThemes.length} theme${selectedThemes.length > 1 ? 's' : ''} available - see 'themes' array for alternatives` : null
+                ].filter(Boolean)
+            };
+        }
+
+        // Common information for both approaches
+        result.nextSteps = {
+            componentExplorer: 'https://sap.github.io/fundamental-styles/',
+            documentation: [
+                'CLAUDE.md - Quick reference for AI agents: https://github.com/SAP/fundamental-styles/blob/main/CLAUDE.md',
+                'Component catalog (JSON): Use list_components tool',
+                'HTML examples: Use get_html_examples tool',
+                'Component guidance: Use get_component_guidance tool'
+            ],
+            commonPatterns: {
+                buttons: 'fd-button, fd-button--emphasized (primary), fd-button--transparent (ghost)',
+                forms: 'fd-form-item + fd-form-label + fd-input/fd-checkbox/fd-radio',
+                states: 'is-error, is-success, is-warning, is-disabled, is-selected',
+                sizing: 'fd-{component}--compact for dense UIs',
+                icons: 'sap-icon--{icon-name} (e.g., sap-icon--add, sap-icon--delete)'
+            },
+            availableThemes: [
+                'sap_horizon (default, light)',
+                'sap_horizon_dark',
+                'sap_horizon_hcb (high contrast black)',
+                'sap_horizon_hcw (high contrast white)',
+                'sap_fiori_3 (Quartz light)',
+                'sap_fiori_3_dark'
+            ]
+        };
+
+        result.troubleshooting = [
+            {
+                issue: 'Components look unstyled or broken',
+                solution: 'Verify BOTH theme CSS files are loaded (base variables + fundamental theme)'
+            },
+            {
+                issue: 'Fonts not loading',
+                solution: 'Ensure @sap-theming/theming-base-content is installed and bundler can handle font files'
+            },
+            {
+                issue: 'Icons not showing',
+                solution: 'Icons come from @sap-theming/theming-base-content theme CSS. Verify theme is loaded correctly.'
+            },
+            {
+                issue: 'Component sizes are wrong',
+                solution: 'Set html { font-size: 16px; } in your global CSS'
+            },
+            {
+                issue: 'CSS conflicts with existing styles',
+                solution: 'fundamental-styles uses BEM naming (fd-*) to minimize conflicts. Check specificity issues.'
+            }
+        ];
+
+        result.additionalPackages = [
+            {
+                name: '@fundamental-styles/common-css',
+                description: 'Utility classes for margins, padding, flexbox, display (sap-* classes)',
+                install: 'npm install @fundamental-styles/common-css',
+                usage: "import '@fundamental-styles/common-css/dist/common-css.css';"
+            },
+            {
+                name: '@fundamental-styles/cx',
+                description: 'CX-specific components (customer experience)',
+                install: 'npm install @fundamental-styles/cx'
+            }
+        ];
 
         return {
             content: [

@@ -1,5 +1,5 @@
 import { readFileSync, readdirSync } from 'fs';
-import { resolve, basename } from 'path';
+import { resolve } from 'path';
 import {
     AccessibilityFile,
     ComponentCatalog,
@@ -11,6 +11,23 @@ import {
     RelationshipsFile,
     UtilityClassesFile
 } from '../types/component-metadata';
+
+export interface ComponentGuidance {
+    id: string;
+    name: string;
+    category: string;
+    description: string;
+    whenToUse: string[];
+    whenToAvoid: string[];
+    bestPractices: string[];
+    relatedComponents?: string[];
+}
+
+export interface ComponentGuidanceFile {
+    version: string;
+    generated: string;
+    components: Record<string, ComponentGuidance>;
+}
 
 function readJson<T>(filePath: string): T | null {
     try {
@@ -45,6 +62,7 @@ export interface LoadedCatalog {
     designTokens: DesignToken[];
     htmlExamples: HtmlExamplesFile | null;
     componentUseCases: ComponentUseCasesFile | null;
+    componentGuidance: ComponentGuidanceFile | null;
 }
 
 export function loadCatalog(): LoadedCatalog {
@@ -104,6 +122,9 @@ export function loadCatalog(): LoadedCatalog {
     // Component use cases
     const componentUseCases = readJson<ComponentUseCasesFile>(resolveDataPath('component-use-cases.json'));
 
+    // Component guidance (from skills folder)
+    const componentGuidance = readJson<ComponentGuidanceFile>(resolveDataPath('component-guidance.json'));
+
     return {
         version: catalog?.version ?? 'unknown',
         components,
@@ -113,7 +134,8 @@ export function loadCatalog(): LoadedCatalog {
         utilityClasses,
         designTokens,
         htmlExamples,
-        componentUseCases
+        componentUseCases,
+        componentGuidance
     };
 }
 
