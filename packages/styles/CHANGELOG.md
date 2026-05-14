@@ -3,6 +3,10 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.41.7-rc.1](https://github.com/SAP/fundamental-styles/compare/v0.41.7-rc.0...v0.41.7-rc.1) (2026-05-14)
+
+**Note:** Version bump only for package fundamental-styles
+
 ## [0.41.7-rc.0](https://github.com/SAP/fundamental-styles/compare/v0.41.6...v0.41.7-rc.0) (2026-05-13)
 
 **Note:** Version bump only for package fundamental-styles
