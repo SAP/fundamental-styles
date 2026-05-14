@@ -1,11 +1,21 @@
 ---
 name: component-guidance-actions
-description: Fiori guidelines for action components (4 components: Button, Product Switch, User Menu, Scrollbar)
+description: 'Fiori guidelines for action components Button, Product Switch, User Menu, Scrollbar'
 user-invocable: false
 metadata:
-  tags: ["components","actions","buttons","controls"]
-  keywords: ["button","product-switch","user-menu","scrollbar","split-button","menu-button","toggle-button","segmented-button"]
-  component_count: 4
+    tags: ['components', 'actions', 'buttons', 'controls']
+    keywords:
+        [
+            'button',
+            'product-switch',
+            'user-menu',
+            'scrollbar',
+            'split-button',
+            'menu-button',
+            'toggle-button',
+            'segmented-button'
+        ]
+    component_count: 4
 ---
 
 # Component Guidance - Actions & Controls

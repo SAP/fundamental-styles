@@ -1,10 +1,31 @@
 ---
 name: component-guidance-forms
-description: Fiori guidelines for form controls and input components (26 components: Checkbox, Input, Select, Textarea, Date Picker, etc.)
+description: 'Fiori guidelines for form controls and input components such as Checkbox, Input, Select, Textarea, Date Picker, etc'
 user-invocable: false
 metadata:
-  tags: ["components","forms","inputs","validation","data-entry"]
-  keywords: ["checkbox","radio","input","textarea","select","date-picker","time-picker","combobox","multi-input","switch","slider","tokenizer","file-uploader","form-validation","form-label","form-message","input-group","step-input","upload-collection"]
+    tags: ['components', 'forms', 'inputs', 'validation', 'data-entry']
+    keywords:
+        [
+            'checkbox',
+            'radio',
+            'input',
+            'textarea',
+            'select',
+            'date-picker',
+            'time-picker',
+            'combobox',
+            'multi-input',
+            'switch',
+            'slider',
+            'tokenizer',
+            'file-uploader',
+            'form-validation',
+            'form-label',
+            'form-message',
+            'input-group',
+            'step-input',
+            'upload-collection'
+        ]
 ---
 
 # Component Guidance - Forms & Inputs

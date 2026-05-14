@@ -1,11 +1,35 @@
 ---
 name: component-guidance-data
-description: Fiori guidelines for data display components (23 components: Table, List, Tree, Avatar, Calendar, Icons, etc.)
+description: 'Fiori guidelines for data display components such as Table, List, Tree, Avatar, Calendar, Icons, etc'
 user-invocable: false
 metadata:
-  tags: ["components","data","display","visualization"]
-  keywords: ["table","list","tree","avatar","avatar-group","calendar","carousel","icon","title","object-identifier","object-number","object-status","object-marker","object-list","feed-list","grid-list","micro-process-flow","generic-tile","generic-tag","illustrated-message","info-label","variant-management"]
-  component_count: 23
+    tags: ['components', 'data', 'display', 'visualization']
+    keywords:
+        [
+            'table',
+            'list',
+            'tree',
+            'avatar',
+            'avatar-group',
+            'calendar',
+            'carousel',
+            'icon',
+            'title',
+            'object-identifier',
+            'object-number',
+            'object-status',
+            'object-marker',
+            'object-list',
+            'feed-list',
+            'grid-list',
+            'micro-process-flow',
+            'generic-tile',
+            'generic-tag',
+            'illustrated-message',
+            'info-label',
+            'variant-management'
+        ]
+    component_count: 23
 ---
 
 # Component Guidance - Data Display
