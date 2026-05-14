@@ -1,10 +1,30 @@
 ---
 name: component-guidance-feedback
-description: Fiori guidelines for feedback components (15 components: Message Strip, Notification, Dialog, Progress Indicator, etc.)
+description: 'Fiori guidelines for feedback components such as Message Strip, Notification, Dialog, Progress Indicator, etc'
 user-invocable: false
 metadata:
-  tags: ["components","feedback","messages","status","alerts"]
-  keywords: ["message-strip","message-toast","message-box","message-page","message-popover","notification","popover","action-sheet","busy-indicator","progress-indicator","rating-indicator","status-indicator","skeleton","quick-view","contextual-menu","dialog","toast","alert"]
+    tags: ['components', 'feedback', 'messages', 'status', 'alerts']
+    keywords:
+        [
+            'message-strip',
+            'message-toast',
+            'message-box',
+            'message-page',
+            'message-popover',
+            'notification',
+            'popover',
+            'action-sheet',
+            'busy-indicator',
+            'progress-indicator',
+            'rating-indicator',
+            'status-indicator',
+            'skeleton',
+            'quick-view',
+            'contextual-menu',
+            'dialog',
+            'toast',
+            'alert'
+        ]
 ---
 
 # Component Guidance - Feedback & Status
