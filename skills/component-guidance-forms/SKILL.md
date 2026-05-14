@@ -1,3 +1,12 @@
+---
+name: component-guidance-forms
+description: Fiori guidelines for form controls and input components (26 components: Checkbox, Input, Select, Textarea, Date Picker, etc.)
+user-invocable: false
+metadata:
+  tags: ["components","forms","inputs","validation","data-entry"]
+  keywords: ["checkbox","radio","input","textarea","select","date-picker","time-picker","combobox","multi-input","switch","slider","tokenizer","file-uploader","form-validation","form-label","form-message","input-group","step-input","upload-collection"]
+---
+
 # Component Guidance - Forms & Inputs
 
 Form controls and input components for data entry.
@@ -5,6 +14,7 @@ Form controls and input components for data entry.
 ## When to Use This Skill
 
 Use this skill when:
+
 - The user asks "Should I use [component] for [use case]?"
 - The user needs to choose between similar components
 - The user asks about component best practices
@@ -18,18 +28,21 @@ This skill covers: Checkbox, Combobox Input, Date Picker, Fieldset, File Uploade
 A checkbox lets users set a binary value (true/false). When selected, it toggles between checked (state applies), unchecked (state doesn't apply), and optionally tri-state/indeterminate (mixed selection of dependent fields). All options are visible, and users can make one or more independent selections.
 
 **When to use:**
+
 - Only one option can be selected or deselected (e.g., accept terms of use) when meaning is obvious
 - A group or list of options can be selected independently of each other
 - Options are displayed immediately without user interaction
 - Intermediate selection state (tri-state) is required when multiple sub-options are grouped under a parent option
 
 **When to avoid:**
+
 - ❌ User needs to choose multiple options from a large list → Use Combo Box Input instead
 - ❌ User can choose only one option from a list → Use Radio Buttons, Select, or List instead
 - ❌ User needs to perform instantaneous actions without reviewing or confirming → Use Switch instead
 - ❌ Not enough space available on screen → Use Combo Box instead
 
 **Best practices:**
+
 - ✅ Checked state means the described state applies or item is chosen
 - ✅ Unchecked state means the described state doesn't apply
 - ✅ Tri-state/indeterminate indicates neither checked nor unchecked (set via JavaScript `indeterminate` property)
@@ -48,6 +61,7 @@ A checkbox lets users set a binary value (true/false). When selected, it toggles
 Combobox allows users to select item from predefined list. Provides editable input field for filtering list and dropdown menu with available options. If entries not validated by app, users can enter custom value. Combines input field with dropdown selection.
 
 **When to use:**
+
 - Select single item from long list of items
 - List items are secondary information not needing immediate display
 - Need filtering capability for large lists
@@ -56,12 +70,14 @@ Combobox allows users to select item from predefined list. Provides editable inp
 - Select from many options (more than select can handle comfortably)
 
 **When to avoid:**
+
 - ❌ Only two options → Use Switch instead
 - ❌ Short list of items → Use Select component instead
 - ❌ More than 200 list items → Use input field with select dialog or value help dialog
 - ❌ Simple selection without filtering → Use Select
 
 **Best practices:**
+
 - ✅ Editable input field for filtering list
 - ✅ Dropdown menu with available options
 - ✅ Use for long lists of items
@@ -85,6 +101,7 @@ Combobox allows users to select item from predefined list. Provides editable inp
 Date Picker lets users select localized date using touch, mouse, or keyboard input. Responsive behavior for all devices - compact mode (smaller) and cozy mode (touch-friendly). Two parts: Input Field (direct entry or picker) and Date Picker (day/month/year/year ranges views).
 
 **When to use:**
+
 - Users need to enter single date
 - Navigate directly from one month or year to another
 - Enter lots of data fast or primarily using keyboard
@@ -93,12 +110,14 @@ Date Picker lets users select localized date using touch, mouse, or keyboard inp
 - Direct date entry or picker selection
 
 **When to avoid:**
+
 - ❌ Combined date and time input → Use Date/Time Picker instead
 - ❌ Keep calendar visible and prominent → Use Calendar instead
 - ❌ Enter date range → Use Date Range Picker instead
 - ❌ Multiple dates selection → Use appropriate multi-date picker
 
 **Best practices:**
+
 - ✅ Input field for direct date entry or picker selection
 - ✅ Date picker shows day view, month view, year view, year ranges
 - ✅ Compact mode: smaller size
@@ -122,16 +141,19 @@ Date Picker lets users select localized date using touch, mouse, or keyboard inp
 A fieldset gives semantic meaning to a group of elements inside a form (e.g., Billing or Shipping Address). Grouping fields provides styling and accessibility benefits, and is especially important for checkbox groups and radio button groups.
 
 **When to use:**
+
 - Group related form elements semantically (e.g., Billing Address, Shipping Address)
 - Group checkbox groups for accessibility
 - Group radio button groups for accessibility
 - Provide semantic structure to form sections
 
 **When to avoid:**
+
 - ❌ Grouping unrelated form elements together
 - ❌ Using fieldset when simpler grouping methods suffice for non-form content
 
 **Best practices:**
+
 - ✅ Always use fieldset for checkbox groups (accessibility requirement)
 - ✅ Always use fieldset for radio button groups (accessibility requirement)
 - ✅ Use `<legend>` element to provide a label for the fieldset
@@ -150,12 +172,14 @@ A fieldset gives semantic meaning to a group of elements inside a form (e.g., Bi
 The file uploader lets users select and upload one or more files using their local file explorer. It's an opinionated composition of input and button components designed for simple upload tasks with automatic upload start upon file selection.
 
 **When to use:**
+
 - Upload one or more files using local file explorer
 - Upload files by dragging and dropping
 - Simple upload tasks where file management isn't needed
 - Uploading single files (works best for this case)
 
 **When to avoid:**
+
 - ❌ Uploading large files that may take a long time → Use upload collection instead
 - ❌ Users need to see upload status → Use upload collection instead
 - ❌ Users need a preview of uploaded files → Use upload collection instead
@@ -163,6 +187,7 @@ The file uploader lets users select and upload one or more files using their loc
 - ❌ Users need to manage multiple uploads (delete, rearrange, rename files) → Use upload collection instead
 
 **Best practices:**
+
 - ✅ Best suited for uploading single files
 - ✅ Uploading starts automatically when files are selected
 - ✅ Supports both file explorer selection and drag-and-drop
@@ -180,6 +205,7 @@ The file uploader lets users select and upload one or more files using their loc
 The form grid provides responsive layouts for forms on a 12-column grid with four breakpoints (Small <600px, Medium 601-1024px, Large 1025-1440px, Extra-large >1441px). It supports configurable label-field ratios (X:Y:Z format) and adapts layouts based on form width, not screen width.
 
 **When to use:**
+
 - Create responsive form layouts that adapt to different form widths
 - Balance form layout between labels, fields, and empty columns
 - Single-column layouts for mobile/dialogs (Small size)
@@ -188,10 +214,12 @@ The form grid provides responsive layouts for forms on a 12-column grid with fou
 - Forms requiring vertical layout (labels above fields) or horizontal layout (labels beside fields)
 
 **When to avoid:**
+
 - ❌ Simple forms that don't need responsive grid behavior
 - ❌ When a simpler form layout component suffices
 
 **Best practices:**
+
 - ✅ Use single-column layout for small forms (mobile/dialogs) - labels above fields
 - ✅ Use two-column layout for large/extra-large forms to avoid scrolling
 - ✅ Adapt label-field ratio based on context: 2:10:0 (default medium), 4:7:1 (split-screen), 3:5:4 (full-screen)
@@ -213,16 +241,19 @@ The form grid provides responsive layouts for forms on a 12-column grid with fou
 Form groups assemble form elements with labels, messages, and help containers. Components like `fd-form__item` with label and control can be used independently when error messages aren't needed.
 
 **When to use:**
+
 - Assemble complete form elements with labels, controls, messages, and help text
 - Group related form fields with validation messages
 - Create structured form layouts with consistent spacing
 - Need error messages, help text, or validation feedback alongside form fields
 
 **When to avoid:**
+
 - ❌ Simple form fields that don't need error messages or help text → Use `fd-form__item` alone instead
 - ❌ When minimal form structure suffices
 
 **Best practices:**
+
 - ✅ Use full form group when error messages or help containers are needed
 - ✅ Use `fd-form__item` with label and control alone for simpler fields without messages
 - ✅ Components can be used independently based on needs
@@ -240,16 +271,19 @@ Form groups assemble form elements with labels, messages, and help containers. C
 Form headers are titles that provide context about a group of input fields. For example, "Personal Information" would categorize fields like Name, Address, etc.
 
 **When to use:**
+
 - Provide context and categorization for groups of input fields
 - Organize form sections with descriptive titles
 - Help users understand what information belongs in each form section
 - Create visual hierarchy in long or complex forms
 
 **When to avoid:**
+
 - ❌ Single input field that doesn't need categorization
 - ❌ When field labels alone provide sufficient context
 
 **Best practices:**
+
 - ✅ Use descriptive titles that clearly categorize the grouped fields (e.g., "Personal Information", "Billing Address")
 - ✅ Place header before the related group of input fields
 - ✅ Use for organizing complex forms into logical sections
@@ -267,16 +301,19 @@ Form headers are titles that provide context about a group of input fields. For 
 A form item combines a label and an input field. The label clearly describes the expected input and is associated with the input for accessibility.
 
 **When to use:**
+
 - Combine label and input field as a single form element
 - Optional inputs that don't require validation or indication (default)
 - Required inputs that need visual and accessible indication (use `fd-form-label--required`)
 - Ensure accessible association between label and input
 
 **When to avoid:**
+
 - ❌ Input without a label (fails accessibility requirements)
 - ❌ When more complex form structure with messages is needed → Use Form Group instead
 
 **Best practices:**
+
 - ✅ Use default form item for optional inputs without validation
 - ✅ Mark required inputs with `fd-form-label--required` modifier class
 - ✅ Set `aria-required="true"` on required input fields for screen readers
@@ -295,6 +332,7 @@ A form item combines a label and an input field. The label clearly describes the
 Form labels identify form elements like input fields, checkboxes, and radio buttons. Best used as a child element of Form Item component.
 
 **When to use:**
+
 - Identify any form element (input field, checkbox, radio button)
 - Optional fields without special styling (default)
 - Required fields with visual and programmatic indication (`fd-form-label--required`)
@@ -302,10 +340,12 @@ Form labels identify form elements like input fields, checkboxes, and radio butt
 - Disabled form elements requiring visual indication
 
 **When to avoid:**
+
 - ❌ Form elements without labels (fails accessibility)
 - ❌ Using label outside of form context
 
 **Best practices:**
+
 - ✅ Use default form label for optional fields
 - ✅ Add `fd-form-label--required` modifier for required fields
 - ✅ Use `required` and `aria-required="true"` attributes on input for required fields
@@ -325,6 +365,7 @@ Form labels identify form elements like input fields, checkboxes, and radio butt
 Form messages display value state text (success, error, warning, information) shown when focus is on the input field. They work with input control value states to provide feedback to users.
 
 **When to use:**
+
 - Display validation feedback for form inputs
 - Show success messages after successful input
 - Display error messages for invalid input
@@ -333,10 +374,12 @@ Form messages display value state text (success, error, warning, information) sh
 - Communicate value state to users when input has focus
 
 **When to avoid:**
+
 - ❌ Messages unrelated to form validation or input state
 - ❌ Critical system messages → Use message strip or alert instead
 
 **Best practices:**
+
 - ✅ Use `is-success`, `is-error`, `is-warning`, `is-information` classes on input element (`fd-input`)
 - ✅ Use matching `fd-form-message--success`, `--error`, `--warning`, `--information` modifiers on message element
 - ✅ Message appears when focus is on the input field
@@ -352,9 +395,10 @@ Form messages display value state text (success, error, warning, information) sh
 ## Input
 
 **Description:**
-Text input fields allow users to enter and edit single-line text, numbers, dates, or times. They should always be paired with a label, and required fields should have an asterisk (*). Features include autocomplete, suggestions, and value help for valid data entry.
+Text input fields allow users to enter and edit single-line text, numbers, dates, or times. They should always be paired with a label, and required fields should have an asterisk (\*). Features include autocomplete, suggestions, and value help for valid data entry.
 
 **When to use:**
+
 - Enter short, single-line text or numbers, dates, or times
 - Enter password, URL, phone number, or email address
 - Select a single item from a large dataset (more than 200 items)
@@ -363,6 +407,7 @@ Text input fields allow users to enter and edit single-line text, numbers, dates
 - Find items from a list by searching multiple attributes (combobox)
 
 **When to avoid:**
+
 - ❌ Entering dates and times → Use date picker, date range selection, or date/time picker instead
 - ❌ Entering long texts → Use textarea instead
 - ❌ Carrying out a search → Use search field instead
@@ -370,8 +415,9 @@ Text input fields allow users to enter and edit single-line text, numbers, dates
 - ❌ Selecting from small set of values (<20 items) → Consider select control instead
 
 **Best practices:**
+
 - ✅ Always pair input with a label
-- ✅ Mark required fields with asterisk (*) in label
+- ✅ Mark required fields with asterisk (\*) in label
 - ✅ Use autocomplete and suggestions for better user experience
 - ✅ Provide value help for complex data entry
 - ✅ For small sets (<20 items), use select control
@@ -390,6 +436,7 @@ Text input fields allow users to enter and edit single-line text, numbers, dates
 Input Group combines form inputs with add-ons (text, icons, or buttons) to help users understand the information being entered. Add-ons can be positioned before, after, or on both sides of the input field. Supports validation states (success, error, warning, information).
 
 **When to use:**
+
 - Add text add-ons to clarify value format (e.g., currency, units)
 - Add icon add-ons as visual cues (visibility toggles, status indicators)
 - Add button add-ons for actions (submit, search, trigger)
@@ -397,10 +444,12 @@ Input Group combines form inputs with add-ons (text, icons, or buttons) to help 
 - Provide context about expected input format or units
 
 **When to avoid:**
+
 - ❌ Simple inputs that don't need additional context → Use basic input instead
 - ❌ Complex actions that need more than a simple button → Consider separate action buttons
 
 **Best practices:**
+
 - ✅ Position add-ons logically: before (prefix), after (suffix), or both sides
 - ✅ Use text add-ons for units or currency symbols
 - ✅ Use icon add-ons for visual cues (e.g., visibility toggle, status)
@@ -421,6 +470,7 @@ Input Group combines form inputs with add-ons (text, icons, or buttons) to help 
 Multi ComboBox enables users to select options from predefined list or enter custom text. Provides editable input field to filter list and dropdown arrow to open options. Select options have checkboxes permitting multiple selection. Combines filtering with multi-selection capability.
 
 **When to use:**
+
 - Select one or more options from long list (no more than ~200)
 - Values contain secondary information not needing immediate display
 - Multiple selection from filtered list needed
@@ -428,6 +478,7 @@ Multi ComboBox enables users to select options from predefined list or enter cus
 - Multi-select with search/filter capability
 
 **When to avoid:**
+
 - ❌ Select multiple ranges → Use appropriate range selector
 - ❌ Select or search multiple business objects → Use specialized selector
 - ❌ Short list of items → Use simpler multi-select component
@@ -435,6 +486,7 @@ Multi ComboBox enables users to select options from predefined list or enter cus
 - ❌ List contains >200 items → Use dialog-based selection
 
 **Best practices:**
+
 - ✅ Editable input field to filter list
 - ✅ Dropdown arrow to open options list
 - ✅ Checkboxes for multiple selection
@@ -457,6 +509,7 @@ Multi ComboBox enables users to select options from predefined list or enter cus
 Multi Input allows users to enter multiple values displayed as tokens. Provides editable input field for filtering list and dropdown menu with available options. If entries not validated, users can enter custom values. Supports value help for selecting/searching multiple business objects and ranges.
 
 **When to use:**
+
 - Provide value help to select or search multiple business objects
 - Let users select multiple ranges (with value help)
 - Enable users to add custom values
@@ -465,12 +518,14 @@ Multi Input allows users to enter multiple values displayed as tokens. Provides 
 - Value help dialog for complex selection
 
 **When to avoid:**
+
 - ❌ Choose multiple options from large list → Use Multi ComboBox instead
 - ❌ Not enough space on screen → Consider alternative
 - ❌ Choose only one option → Use single-select component
 - ❌ Simple multi-selection without custom values → Use Multi ComboBox
 
 **Best practices:**
+
 - ✅ Multiple values displayed as tokens
 - ✅ Editable input field for filtering
 - ✅ Dropdown menu with available options
@@ -494,6 +549,7 @@ Multi Input allows users to enter multiple values displayed as tokens. Provides 
 Radio buttons provide mutually exclusive options, allowing users to select only one option from two or more choices. They only work in groups and are best for selecting from a small set of clearly different alternatives.
 
 **When to use:**
+
 - Users need to choose only one option from different alternatives
 - Users need to see all options at once without interacting with a dropdown
 - Small set of options (no more than 8)
@@ -501,6 +557,7 @@ Radio buttons provide mutually exclusive options, allowing users to select only 
 - Users need to choose quickly between at least two clearly different choices
 
 **When to avoid:**
+
 - ❌ Users need to select more than one option → Use checkboxes instead
 - ❌ Users need to select items in a list → Use checkboxes or direct tap selection
 - ❌ Users are expected to go with the most common option → Use dropdown with default instead
@@ -510,6 +567,7 @@ Radio buttons provide mutually exclusive options, allowing users to select only 
 - ❌ Users need to select a value from a range → Use slider instead
 
 **Best practices:**
+
 - ✅ Align radio buttons vertically, especially for long labels (easier to read and localize)
 - ✅ Use horizontal alignment only for one-word labels (e.g., background color settings)
 - ✅ Always align vertically in forms (label length varies across languages)
@@ -531,6 +589,7 @@ Radio buttons provide mutually exclusive options, allowing users to select only 
 Select component (dropdown) lets users pick one item from a small, predefined list. Can be placed in toolbars (chart, footer, header), forms, or tables. List stays hidden until opened.
 
 **When to use:**
+
 - Choose only one item from short list (typically 2-12 items)
 - Users don't need to see all options at once
 - Helpful to start with default selection (especially if one option used most often)
@@ -539,6 +598,7 @@ Select component (dropdown) lets users pick one item from a small, predefined li
 - Space-saving alternative to radio buttons
 
 **When to avoid:**
+
 - ❌ Only two options → Use switch instead
 - ❌ Very large set of items → Use combo box instead
 - ❌ Display multiple attributes or search on multiple attributes → Use input field with select dialog or value help dialog
@@ -546,6 +606,7 @@ Select component (dropdown) lets users pick one item from a small, predefined li
 - ❌ More than 12 options → Consider combo box with search
 
 **Best practices:**
+
 - ✅ Keep texts concise, avoid complex content
 - ✅ Define default selection whenever possible
 - ✅ Sort values in meaningful order (common first, then alphabetical/numerical/topical)
@@ -568,6 +629,7 @@ Select component (dropdown) lets users pick one item from a small, predefined li
 Slider allows users to adjust a value along continuous or gradual range. Handles values that change smoothly (volume, brightness). Provides immediate visual feedback. Range Slider variant lets users select min/max value range within predefined interval.
 
 **When to use:**
+
 - Adjust value along continuous or gradual range
 - Handle values that change smoothly (volume, brightness, saturation, contrast)
 - Allow quick adjustments without typing
@@ -576,6 +638,7 @@ Slider allows users to adjust a value along continuous or gradual range. Handles
 - Display and adjust settings visually
 
 **When to avoid:**
+
 - ❌ Making specific choices (categories, list items) → Use radio buttons or checklists
 - ❌ Without full accessibility support → Use dropdown or input field instead
 - ❌ Space is limited (small screens) → Use smaller input options
@@ -583,6 +646,7 @@ Slider allows users to adjust a value along continuous or gradual range. Handles
 - ❌ Single value selection when Range Slider used → Use standard Slider
 
 **Best practices:**
+
 - ✅ Always label slider to indicate what selected value represents
 - ✅ Keep custom slider labels short and meaningful
 - ✅ Use steps that match required precision (smaller steps for exact values)
@@ -608,6 +672,7 @@ Slider allows users to adjust a value along continuous or gradual range. Handles
 Step Input allows users to adjust numeric values in predefined increments (steps) using buttons or direct input. Useful for quantities or measurements without manually typing every number. Supports keyboard and mouse interactions, customizable with min, max, and step values.
 
 **When to use:**
+
 - Adjust amounts, quantities, or numeric values quickly
 - Change values in defined increments (e.g., shopping cart quantities)
 - Need increment/decrement buttons for numeric input
@@ -615,12 +680,14 @@ Step Input allows users to adjust numeric values in predefined increments (steps
 - Quick numeric adjustments needed
 
 **When to avoid:**
+
 - ❌ Fixed numbers (postal code, phone number, ID) → Use regular input field
 - ❌ Values that rarely change or don't follow steps (account number) → Use regular input field
 - ❌ Entering dates or times → Use Date Picker, Time Picker, or Date/Time Picker
 - ❌ Free-form numeric input without increments → Use number input
 
 **Best practices:**
+
 - ✅ Provide increment/decrement buttons
 - ✅ Allow direct input via keyboard
 - ✅ Set appropriate min, max, and step values
@@ -643,6 +710,7 @@ Step Input allows users to adjust numeric values in predefined increments (steps
 Switch mimics a physical switch, allowing users to toggle individual features on or off. Mainly used for settings, personalization, and cases where impact is directly recognizable. Changes take immediate effect.
 
 **When to use:**
+
 - Set something as active or inactive (e.g., dialog, feature toggle)
 - Clearly show mode or state of a setting
 - Change takes immediate effect without confirmation
@@ -651,6 +719,7 @@ Switch mimics a physical switch, allowing users to toggle individual features on
 - Binary choices with immediate impact
 
 **When to avoid:**
+
 - ❌ Additional steps required for changes to take effect → Use Checkbox instead
 - ❌ Requires confirmation or Submit button → Use Checkbox instead
 - ❌ Unclear if showing state or action → Use Checkbox instead
@@ -658,6 +727,7 @@ Switch mimics a physical switch, allowing users to toggle individual features on
 - ❌ Part of form requiring submission → Use Checkbox
 
 **Best practices:**
+
 - ✅ Use for immediate on/off toggles
 - ✅ Clearly show current mode or state
 - ✅ Use for settings and personalization
@@ -679,16 +749,19 @@ Switch mimics a physical switch, allowing users to toggle individual features on
 Textarea is an input component that allows users to enter multiple lines of unformatted text. Optionally includes a character counter displayed below the textarea.
 
 **When to use:**
+
 - Users need to enter multiple lines of text
 - Users need to enter unformatted text across several lines
 - Display character count (entered or remaining) with counter feature
 - Long-form text input without formatting requirements
 
 **When to avoid:**
+
 - ❌ Users only need to enter a single line of text → Use input component instead
 - ❌ Users need to enter formatted text → Use rich text editor instead
 
 **Best practices:**
+
 - ✅ Use for multi-line unformatted text entry
 - ✅ Add counter to display number of characters entered or remaining
 - ✅ Counter is displayed below the textarea
@@ -706,6 +779,7 @@ Textarea is an input component that allows users to enter multiple lines of unfo
 Time component is used to select a time value. Can choose hours, minutes, seconds, and/or period of day. Rarely used alone - typically paired with Time Picker pattern. Supports time selection, time ranges, and detailed durations.
 
 **When to use:**
+
 - User needs to select a specific time
 - User needs to select time range (start time and end time)
 - User needs to select detailed duration (e.g., 1 minute 30 seconds)
@@ -713,12 +787,14 @@ Time component is used to select a time value. Can choose hours, minutes, second
 - Used within Time Picker pattern
 
 **When to avoid:**
+
 - ❌ Selecting simple duration (15min, 30min, 1hr, 2hr) → Use Select component instead
 - ❌ Selecting date and time together → Use Date Picker (date/time variant) instead
 - ❌ Approximate time needed → Consider simpler selection method
 - ❌ Only hour selection needed → Use Select with hour options
 
 **Best practices:**
+
 - ✅ Typically used within Time Picker pattern
 - ✅ Can select hours, minutes, seconds, and period (AM/PM)
 - ✅ Use for precise time selection
@@ -741,6 +817,7 @@ Time component is used to select a time value. Can choose hours, minutes, second
 Time Picker lets users select localized time using touch, mouse, or keyboard in 12/24-hour format. Users can type directly or use visual clock face for hours, minutes, seconds. Contains time input field and time picker popover with clock faces. Supports cozy and compact modes.
 
 **When to use:**
+
 - Users need to select a time
 - Users need to select time range (use two time pickers for start and end)
 - Users need to select specific duration (e.g., 1 minute 30 seconds)
@@ -748,11 +825,13 @@ Time Picker lets users select localized time using touch, mouse, or keyboard in 
 - Precise time input required
 
 **When to avoid:**
+
 - ❌ Selecting simple duration (15min, 30min, 1hr) → Use Select instead
 - ❌ Selecting date and time together → Use Date Picker (date/time variant)
 - ❌ Only approximate time needed → Simpler selection method
 
 **Best practices:**
+
 - ✅ Time input field for direct entry or button to open popover
 - ✅ Time picker popover with clock faces (hours, minutes, optional seconds)
 - ✅ Hours clock face shows 12 or 24 hours based on format
@@ -779,6 +858,7 @@ Time Picker lets users select localized time using touch, mouse, or keyboard in 
 Tokens are small items of information (similar to tags) that visualize previously selected items. Tokenizer is the container that handles tokens. Tokens can be added, removed, selected, or deselected. Used only with Tokenizer container in multi-combo box, multi-input, or value help dialog.
 
 **When to use:**
+
 - Visualize previously selected items
 - Display multiple selections as removable tokens
 - Used within Tokenizer container
@@ -787,12 +867,14 @@ Tokens are small items of information (similar to tags) that visualize previousl
 - Value help dialog with multiple selections
 
 **When to avoid:**
+
 - ❌ Without Tokenizer container → Tokens require Tokenizer
 - ❌ Single selection controls → Use other selection methods
 - ❌ Outside multi-combo box, multi-input, or value help dialog → Not supported
 - ❌ Static tags that cannot be removed → Use Generic Tag instead
 
 **Best practices:**
+
 - ✅ Only use with Tokenizer as container
 - ✅ Use Tokenizer only in multi-combo box, multi-input, or value help dialog
 - ✅ Tokens can be added, removed, selected, or deselected
@@ -814,6 +896,7 @@ Tokens are small items of information (similar to tags) that visualize previousl
 Tokenizer is a container that wraps multiple tokens. Used standalone or within input controls such as Multi Input. In cozy mode, users can swipe tokens left or right. Container for managing multiple token selections.
 
 **When to use:**
+
 - Container for multiple tokens
 - Within Multi Input control
 - Within Multi Combobox control
@@ -822,12 +905,14 @@ Tokenizer is a container that wraps multiple tokens. Used standalone or within i
 - Need to display and manage removable selections
 
 **When to avoid:**
+
 - ❌ Single selection → Use other single-selection controls
 - ❌ Static non-removable items → Use List or other display component
 - ❌ Without tokens → No need for tokenizer
 - ❌ Simple tag display → Use Generic Tag component
 
 **Best practices:**
+
 - ✅ Container that wraps multiple tokens
 - ✅ Use in Multi Input, Multi Combobox, or standalone
 - ✅ Cozy mode: users can swipe tokens left or right
@@ -849,6 +934,7 @@ Tokenizer is a container that wraps multiple tokens. Used standalone or within i
 Upload Collection allows users to upload single or multiple files from device (desktop, tablet, phone) to SAP app. Shows list of uploaded files that can be modified. Users can add/remove files and change file names. Typically displayed in Attachments tab but can appear elsewhere.
 
 **When to use:**
+
 - Show list of uploaded files that can be modified
 - Allow users to add or remove files
 - Allow users to change file names
@@ -858,11 +944,13 @@ Upload Collection allows users to upload single or multiple files from device (d
 - Replacing old sap.ca.ui.FileUpload control
 
 **When to avoid:**
+
 - ❌ User can upload only one file → Use File Uploader control instead
 - ❌ Files are read-only (no modification needed) → Use simple List
 - ❌ Simple file selection without upload management → Use File Uploader
 
 **Best practices:**
+
 - ✅ Use for modifiable list of uploaded files
 - ✅ Allow adding and removing files
 - ✅ Allow changing file names
@@ -880,4 +968,3 @@ Upload Collection allows users to upload single or multiple files from device (d
 ---
 
 ---
-

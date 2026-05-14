@@ -1,0 +1,56 @@
+# Skills Directory Structure
+
+## Current Structure (Skills CLI Format)
+
+```
+skills/
+├── .structure                           # This file - explains the layout
+├── README.md                            # User-facing documentation
+├── skills.json                          # Source manifest (used by conversion script)
+│
+├── bem-naming/
+│   └── SKILL.md                        # BEM methodology skill
+├── component-composition/
+│   └── SKILL.md                        # Component composition patterns
+├── component-guidance-actions/
+│   └── SKILL.md                        # Actions & controls (4 components)
+├── component-guidance-data/
+│   └── SKILL.md                        # Data display (23 components)
+├── component-guidance-feedback/
+│   └── SKILL.md                        # Feedback & status (15 components)
+├── component-guidance-forms/
+│   └── SKILL.md                        # Forms & inputs (26 components)
+├── component-guidance-layout/
+│   └── SKILL.md                        # Layout & containers (11 components)
+├── component-guidance-navigation/
+│   └── SKILL.md                        # Navigation (8 components)
+├── content-density/
+│   └── SKILL.md                        # Cozy/compact/condensed modes
+└── layout-patterns/
+    └── SKILL.md                        # Complete page patterns
+```
+
+## SKILL.md Format
+
+Each `SKILL.md` file has YAML frontmatter:
+
+```yaml
+---
+name: bem-naming                         # Matches folder name (required)
+description: BEM methodology guide...    # Brief description (required)
+user-invocable: false                    # Auto-loaded, not manually invoked
+metadata:                                # Custom metadata (optional)
+  tags: ["bem", "naming", "css"]
+  keywords: ["block-element-modifier"]
+---
+
+# Skill Content Here
+```
+
+## Installation by External Applications
+
+```bash
+npx skills add SAP/fundamental-styles
+```
+
+Installs to: `.claude/skills/fundamental-styles/{skill-id}/SKILL.md`
