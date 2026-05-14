@@ -1,3 +1,12 @@
+---
+name: component-guidance-navigation
+description: Fiori guidelines for navigation components (8 components: Breadcrumb, Menu, Link, Shellbar, Vertical Navigation, etc.)
+user-invocable: false
+metadata:
+  tags: ["components","navigation","wayfinding","menu"]
+  keywords: ["breadcrumb","icon-tab-bar","link","menu","pagination","shellbar","toolbar","vertical-navigation","tabs","nav"]
+---
+
 # Component Guidance - Navigation
 
 Navigation and wayfinding components.
@@ -5,6 +14,7 @@ Navigation and wayfinding components.
 ## When to Use This Skill
 
 Use this skill when:
+
 - The user asks "Should I use [component] for [use case]?"
 - The user needs to choose between similar components
 - The user asks about component best practices
@@ -18,6 +28,7 @@ This skill covers: Breadcrumb, Icon Tab Bar, Link, Menu, Pagination, Shellbar, T
 A breadcrumb (or breadcrumb trail) is a type of secondary navigation that indicates the position of a page in its application hierarchy. It is typically used for drilldown scenarios where users navigate through related object pages, tables, and charts.
 
 **When to use:**
+
 - Show secondary navigation on the object page
 - Show navigation in a table
 - Show navigation in charts
@@ -26,12 +37,14 @@ A breadcrumb (or breadcrumb trail) is a type of secondary navigation that indica
 - Enable navigation back to parent pages
 
 **When to avoid:**
+
 - ❌ Your hierarchy contains only one level
 - ❌ Linking to other floorplans, such as overview pages or list reports
 - ❌ Navigating across applications to unrelated object pages
 - ❌ Linking to standalone object pages, such as fact sheets → Use global navigation instead
 
 **Best practices:**
+
 - ✅ Use separator modifiers: `fd-breadcrumb--backslash` or `fd-breadcrumb--double-greater-than`
 - ✅ Current item can be displayed as non-interactive (without separator) or as a regular link
 - ✅ Use overflow breadcrumb with `fd-popover` for long paths with insufficient horizontal space
@@ -51,6 +64,7 @@ A breadcrumb (or breadcrumb trail) is a type of secondary navigation that indica
 Navigation and filtering control containing tabs that display icons, text, or both, linking to different content areas or views. Two key use cases: navigate between content sections or filter lists (showing all items or those matching specific attributes). Users switch tabs by clicking.
 
 **When to use:**
+
 - Business objects need to show multiple facets simultaneously
 - Allow users to browse through different facets
 - Need prominent or visual filter on top of a list
@@ -59,12 +73,14 @@ Navigation and filtering control containing tabs that display icons, text, or bo
 - Filter lists with option to display all or filtered items
 
 **When to avoid:**
+
 - ❌ Planning to use only one single tab
 - ❌ Displaying tabs in responsive table or grid layout → Use table toolbar instead
 - ❌ Displaying hierarchical navigation → Use tree or breadcrumb instead
 - ❌ Navigating to unrelated pages → Use links or navigation components instead
 
 **Best practices:**
+
 - ✅ Use for multiple facets of business objects
 - ✅ Use for prominent visual filtering
 - ✅ Each tab can display icon, text, or both
@@ -83,6 +99,7 @@ Navigation and filtering control containing tabs that display icons, text, or bo
 Link (hyperlink) is interactive text that allows users to navigate to another page or trigger events. Can include icons and supports touch target sizing for accessibility (WCAG 2.2 minimum touch target requirements).
 
 **When to use:**
+
 - Navigate to another page
 - Trigger an event
 - Point to an object or person (navigate to details or display in quick view)
@@ -90,11 +107,13 @@ Link (hyperlink) is interactive text that allows users to navigate to another pa
 - Primary action inside interactive containers (table cells, list items) - use `fd-link--touch-target` modifier
 
 **When to avoid:**
+
 - ❌ Action could be triggered by Button instead → Use Button
 - ❌ No target or reference to link to
 - ❌ Inline text or dense text areas where increased line height disrupts flow → Don't use `fd-link--touch-target`
 
 **Best practices:**
+
 - ✅ Use meaningful link text (e.g., "Open Sales Order" not "Click Here")
 - ✅ Indicate purpose clearly (avoid generic texts like "Link" or "Click Here")
 - ✅ Use `fd-link--touch-target` for links inside actionable containers (table rows, list items)
@@ -113,16 +132,19 @@ Link (hyperlink) is interactive text that allows users to navigate to another pa
 Menu is a listing structure with optional headers for creating menus. Commonly used as contents for dropdowns, contextual menus, etc., when paired with the popover component.
 
 **When to use:**
+
 - Offer more than one action
 - Users need to stay in a certain context
 - Small number of actions available
 - Create dropdowns or contextual menus (pair with popover component)
 
 **When to avoid:**
+
 - ❌ Providing only one option → Use button instead
 - ❌ Users would benefit from split button (easy-to-access default action with option for other actions) → Use split button instead
 
 **Best practices:**
+
 - ✅ Use for multiple actions (not single action)
 - ✅ Pair with popover component for dropdowns and contextual menus
 - ✅ Include optional headers to organize menu items
@@ -141,6 +163,7 @@ Menu is a listing structure with optional headers for creating menus. Commonly u
 Pagination allows users to separate content into discrete pages, making it easier to digest and navigate through large sets of items. Commonly used for tables and tiles. Supports two display modes: standard (>9 pages with input) and short (<9 pages showing all).
 
 **When to use:**
+
 - User needs to search through several related items (over 30 items)
 - Content contains products users can choose from
 - Allow users to bookmark specific pages
@@ -149,11 +172,13 @@ Pagination allows users to separate content into discrete pages, making it easie
 - Display tables or tile collections with many items
 
 **When to avoid:**
+
 - ❌ Small data sets (under 30 items) → Show all items or use scrolling instead
 - ❌ Real-time data that updates frequently → Use infinite scroll or live updates
 - ❌ Content that should be viewed sequentially → Use stepper or wizard instead
 
 **Best practices:**
+
 - ✅ Use `fd-pagination--short` class for under 9 pages (shows all page buttons)
 - ✅ For over 9 pages: show 9 elements (pages, more symbols, current page) with input field
 - ✅ Highlight current page with active state button
@@ -176,6 +201,7 @@ Pagination allows users to separate content into discrete pages, making it easie
 Shellbar serves as the topmost section across all SAP products, helping users orient within SAP product landscape. Always visible, provides context about current location with product/brand details. Contains two container groups: Product (branding and product elements) and Actions (search, product links, user settings).
 
 **When to use:**
+
 - Topmost navigation section across SAP products
 - Display product and brand information
 - Provide access to search functionality
@@ -185,12 +211,14 @@ Shellbar serves as the topmost section across all SAP products, helping users or
 - Display product context and user actions
 
 **When to avoid:**
+
 - ❌ Application-specific navigation → Use side navigation or tabs
 - ❌ Page-level actions → Use Action Bar instead
 - ❌ Non-SAP products → May not fit branding requirements
 - ❌ Simple single-page apps → May be unnecessary overhead
 
 **Best practices:**
+
 - ✅ Always visible at top of all pages
 - ✅ Use Product container for branding and product elements
 - ✅ Use Actions container for search, links, and user settings
@@ -215,6 +243,7 @@ Shellbar serves as the topmost section across all SAP products, helping users or
 Toolbar enables users to change UI or trigger actions (change views, manipulate data/objects, navigate, perform actions). Usually paired with buttons, which are always right-aligned. Actions can be independent, object-specific, apply to item sets, or control UI content settings.
 
 **When to use:**
+
 - Change views or UI settings
 - Manipulate data or objects
 - Navigate to another page
@@ -225,12 +254,14 @@ Toolbar enables users to change UI or trigger actions (change views, manipulate 
 - Control settings for UI content (e.g., all items in Table)
 
 **When to avoid:**
+
 - ❌ Page-level actions → Use Action Bar instead
 - ❌ Form actions (Submit/Cancel) → Use form footer buttons
 - ❌ Navigation-only actions → Use breadcrumb or side navigation
 - ❌ Single isolated action → Use standalone button
 
 **Best practices:**
+
 - ✅ Buttons are always right-aligned
 - ✅ Support independent actions (not related to specific item)
 - ✅ Support object-specific actions (one item selected)
@@ -255,6 +286,7 @@ Toolbar enables users to change UI or trigger actions (change views, manipulate 
 Vertical Navigation is signature BTP Tools design element for page switching. Four variants: Expanded (default, logical grouping, two hierarchy levels), Snapped (reduced width, frees horizontal space), Popup (navigation in popup, 3-7 items without hierarchy), Horizontal (infinite levels via cascading menus). Use nouns for titles.
 
 **When to use:**
+
 - Switch between different pages of tool
 - Expanded for unknown users
 - Persistence showing last state for known users
@@ -264,6 +296,7 @@ Vertical Navigation is signature BTP Tools design element for page switching. Fo
 - Use nouns for navigation item titles
 
 **When to avoid:**
+
 - ❌ Switching between tools → Use mega menu instead
 - ❌ Switching contexts or views → Use tabs or segmented buttons
 - ❌ Using verbs for titles → Use nouns instead
@@ -275,6 +308,7 @@ Vertical Navigation is signature BTP Tools design element for page switching. Fo
 - ❌ Bottom area for service info → Use settings and user menu
 
 **Best practices:**
+
 - ✅ Expanded: default with logical grouping, two hierarchy levels
 - ✅ Snapped: reduced width freeing horizontal space
 - ✅ Popup: 3-7 items without hierarchy
@@ -291,4 +325,3 @@ Vertical Navigation is signature BTP Tools design element for page switching. Fo
 ---
 
 ---
-

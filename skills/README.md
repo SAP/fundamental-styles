@@ -35,12 +35,14 @@ Detailed guidance for all 87 components, organized by category:
 
 ## Installation
 
+> **Note:** Skills are available starting from version **0.41.7-rc.0**
+
 ### Install All Skills (Recommended)
 
 Install the complete skills package with one command:
 
 ```bash
-npx skills add SAP/fundamental-styles
+npx skills add SAP/fundamental-styles@v0.41.7-rc.0
 ```
 
 This installs all 10 skills automatically.
@@ -51,13 +53,13 @@ If you only need specific skills, you can install them individually:
 
 ```bash
 # Install only BEM naming guidance
-npx skills add SAP/fundamental-styles -s bem-naming
+npx skills add SAP/fundamental-styles@v0.41.7-rc.0 -s bem-naming
 
 # Install only component composition
-npx skills add SAP/fundamental-styles -s component-composition
+npx skills add SAP/fundamental-styles@v0.41.7-rc.0 -s component-composition
 
 # Install multiple specific skills
-npx skills add SAP/fundamental-styles -s bem-naming,component-composition,layout-patterns
+npx skills add SAP/fundamental-styles@v0.41.7-rc.0 -s bem-naming,component-composition,layout-patterns
 ```
 
 **Available skill IDs:**
@@ -80,23 +82,23 @@ When you ask an AI assistant like Claude Code a question, it automatically loads
 
 ```
 You: "Should I use a checkbox or radio button?"
-→ Loads: component-guidance-forms.md
+→ Loads: component-guidance-forms skill
 → Provides: Guidance on when to use each component
 
 You: "How do I build a login form?"
-→ Loads: layout-patterns.md
+→ Loads: layout-patterns skill
 → Provides: Complete login form example
 
 You: "What does fd-button--emphasized mean?"
-→ Loads: bem-naming.md
+→ Loads: bem-naming skill
 → Provides: BEM naming explanation with examples
 
 You: "How do I combine an input with a button?"
-→ Loads: component-composition.md
+→ Loads: component-composition skill
 → Provides: Input Group composition pattern
 
 You: "Should I use cozy or compact mode?"
-→ Loads: content-density.md
+→ Loads: content-density skill
 → Provides: Device-specific density recommendations
 ```
 

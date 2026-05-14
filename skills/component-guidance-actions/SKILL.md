@@ -1,3 +1,13 @@
+---
+name: component-guidance-actions
+description: Fiori guidelines for action components (4 components: Button, Product Switch, User Menu, Scrollbar)
+user-invocable: false
+metadata:
+  tags: ["components","actions","buttons","controls"]
+  keywords: ["button","product-switch","user-menu","scrollbar","split-button","menu-button","toggle-button","segmented-button"]
+  component_count: 4
+---
+
 # Component Guidance - Actions & Controls
 
 Interactive elements and controls for user actions.
@@ -5,6 +15,7 @@ Interactive elements and controls for user actions.
 ## When to Use This Skill
 
 Use this skill when:
+
 - The user asks "Should I use [component] for [use case]?"
 - The user needs to choose between similar components
 - The user asks about component best practices
@@ -18,6 +29,7 @@ This skill covers: Button, Product Switch, Scrollbar, User Menu
 Buttons enable users to trigger actions in applications, from submitting data to opening menus or toggling views. They are available in different types and visual styles to reflect purpose, priority, and intent. Button behavior and appearance can change depending on user interaction, layout context, or the type of task.
 
 **When to use:**
+
 - Trigger specific actions such as Create/Edit/Save, Approve/Reject, Accept/Decline, OK/Cancel
 - Use toggle buttons in a toolbar to activate or deactivate an object or element
 - Use toggle buttons to switch between different states
@@ -26,6 +38,7 @@ Buttons enable users to trigger actions in applications, from submitting data to
 - Use split button to offer a group of actions when one option is used more often than the others
 
 **When to avoid:**
+
 - ❌ Linking to a different page or object → Use link instead
 - ❌ Displaying general navigation functions → Use Home or breadcrumbs instead
 - ❌ Navigating within a multi-step process → Use wizard instead
@@ -37,6 +50,7 @@ Buttons enable users to trigger actions in applications, from submitting data to
 - ❌ Using split button for standalone actions with no additional options → Use button instead
 
 **Best practices:**
+
 - ✅ Use default button for neutral or informative (secondary) actions
 - ✅ Use emphasized button (`fd-button--emphasized`) to indicate the primary action on the screen
 - ✅ Use ghost button to trigger secondary actions or highlight the most important action in a content toolbar
@@ -61,6 +75,7 @@ Buttons enable users to trigger actions in applications, from submitting data to
 Product Switch provides role-based access to multiple products or lines of business (LoBs). Displays an icon button that triggers a Popover with products/LoBs. Single-level navigation only. Typically placed in Shellbar on far-right side.
 
 **When to use:**
+
 - Give users access to several different products or LoBs within same UI
 - Switch between applications or product lines
 - Provide role-based product navigation
@@ -68,12 +83,14 @@ Product Switch provides role-based access to multiple products or lines of busin
 - Enable cross-product navigation from Shellbar
 
 **When to avoid:**
+
 - ❌ Navigation within current product → Use product menu in Shellbar instead
 - ❌ Multi-level navigation hierarchy → Use side navigation or menu
 - ❌ Few products that fit in main navigation → Include in primary nav
 - ❌ Single product application → Not needed
 
 **Best practices:**
+
 - ✅ Place in Shellbar on far-right side
 - ✅ Use SAP Icon Fonts or Avatar component (size S, 48x48 px) for product icons
 - ✅ Support PNG, JPG, and SVG formats for avatars
@@ -96,17 +113,20 @@ Product Switch provides role-based access to multiple products or lines of busin
 Themeable Scrollbar follows Fiori 3 design guidelines. Preferred over browser's default scrollbar in components that support custom scrollbars. Works in Chrome, Safari, WebKit-based browsers; partial support in Firefox (no hover); IE shows default scrollbar.
 
 **When to use:**
+
 - In components with scrollable content following Fiori 3 guidelines
 - Consistent theming across the application
 - WebKit-based browsers (Chrome, Safari, Edge Chromium)
 - Need themed scrollbar matching SAP design system
 
 **When to avoid:**
+
 - ❌ IE browser (not supported) → Default scrollbar shown automatically
 - ❌ Content that fits without scrolling → No scrollbar needed
 - ❌ Native scrolling behavior is required for specific UX
 
 **Best practices:**
+
 - ✅ Preferred over browser default in Fiori 3 components
 - ✅ Automatically themed to match SAP design system
 - ✅ Works best in Chrome, Safari, and WebKit browsers
@@ -128,6 +148,7 @@ Themeable Scrollbar follows Fiori 3 design guidelines. Preferred over browser's 
 User Menu is integral part of Shell Bar, accessed by clicking avatar at far-right end. Provides user-specific options available across all screens. Displays current user info, account switching, user menu items, product-specific functionality. Can include sign in/out actions, settings, legal information.
 
 **When to use:**
+
 - Present user-specific information, settings, and actions
 - Enable account switching
 - Display product-related and legal information
@@ -137,6 +158,7 @@ User Menu is integral part of Shell Bar, accessed by clicking avatar at far-righ
 - Display user-specific menu items
 
 **When to avoid:**
+
 - ❌ Navigation elements → Use side navigation or main menu
 - ❌ Home page customization items → Use page-level controls
 - ❌ Inactive items → Hide instead of showing as disabled
@@ -144,6 +166,7 @@ User Menu is integral part of Shell Bar, accessed by clicking avatar at far-righ
 - ❌ Dynamic content changes within product → Keep menu stable
 
 **Best practices:**
+
 - ✅ Part of Shell Bar, accessed via avatar at far-right
 - ✅ Available across all screens
 - ✅ Display current user information
@@ -162,4 +185,3 @@ User Menu is integral part of Shell Bar, accessed by clicking avatar at far-righ
 ---
 
 ---
-
