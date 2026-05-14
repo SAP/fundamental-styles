@@ -1,10 +1,22 @@
 ---
 name: component-guidance-navigation
-description: Fiori guidelines for navigation components (8 components: Breadcrumb, Menu, Link, Shellbar, Vertical Navigation, etc.)
+description: 'Fiori guidelines for navigation components such as Breadcrumb, Menu, Link, Shellbar, Vertical Navigation, etc'
 user-invocable: false
 metadata:
-  tags: ["components","navigation","wayfinding","menu"]
-  keywords: ["breadcrumb","icon-tab-bar","link","menu","pagination","shellbar","toolbar","vertical-navigation","tabs","nav"]
+    tags: ['components', 'navigation', 'wayfinding', 'menu']
+    keywords:
+        [
+            'breadcrumb',
+            'icon-tab-bar',
+            'link',
+            'menu',
+            'pagination',
+            'shellbar',
+            'toolbar',
+            'vertical-navigation',
+            'tabs',
+            'nav'
+        ]
 ---
 
 # Component Guidance - Navigation

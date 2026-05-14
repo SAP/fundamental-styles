@@ -1,10 +1,25 @@
 ---
 name: component-guidance-layout
-description: Fiori guidelines for layout structures (11 components: Card, Panel, Dynamic Page, Flexible Column Layout, etc.)
+description: 'Fiori guidelines for layout structures such as Card, Panel, Dynamic Page, Flexible Column Layout, etc'
 user-invocable: false
 metadata:
-  tags: ["components","layout","containers","structure"]
-  keywords: ["action-bar","bar","card","dynamic-page","dynamic-side-content","flexible-column-layout","layout-panel","panel","settings","tool-layout","wizard","page-layout","sidebar"]
+    tags: ['components', 'layout', 'containers', 'structure']
+    keywords:
+        [
+            'action-bar',
+            'bar',
+            'card',
+            'dynamic-page',
+            'dynamic-side-content',
+            'flexible-column-layout',
+            'layout-panel',
+            'panel',
+            'settings',
+            'tool-layout',
+            'wizard',
+            'page-layout',
+            'sidebar'
+        ]
 ---
 
 # Component Guidance - Layout & Containers
