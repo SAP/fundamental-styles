@@ -68,3 +68,122 @@ export function truncate(text: string, maxLength: number): string {
     if (firstLine.length <= maxLength) return firstLine;
     return firstLine.slice(0, maxLength - 3) + '...';
 }
+
+/**
+ * Detect if a component has a generic/placeholder description
+ */
+export function hasGenericDescription(comp: ComponentMetadata): boolean {
+    const desc = comp.description.toLowerCase();
+
+    // Patterns that indicate generic descriptions
+    return (
+        desc.includes('component component') ||
+        desc === `${comp.name.toLowerCase()} component` ||
+        desc === comp.name.toLowerCase() ||
+        desc.length < 20 ||
+        desc.match(/^[a-z\s-]+ component$/i) !== null
+    );
+}
+
+/**
+ * Enhance a component description using available guidance data
+ */
+export function enhanceDescription(
+    comp: ComponentMetadata,
+    guidance?: { description?: string; whenToUse?: string[] }
+): { description: string; enhanced: boolean } {
+    // Use guidance description if available and better than catalog description
+    if (guidance?.description && guidance.description.length > 30) {
+        return { description: guidance.description, enhanced: true };
+    }
+
+    // If we have generic description but guidance has whenToUse, construct one
+    if (hasGenericDescription(comp) && guidance?.whenToUse && guidance.whenToUse.length > 0) {
+        const useCase = guidance.whenToUse[0];
+        return {
+            description: `${comp.name} - ${useCase}`,
+            enhanced: true
+        };
+    }
+
+    return { description: comp.description, enhanced: false };
+}
+
+/**
+ * Create data quality warnings for a component
+ */
+export interface DataQualityWarnings {
+    hasGenericDescription?: boolean;
+    missingExamples?: boolean;
+    emptyRelatedComponents?: boolean;
+    suggestions?: string[];
+}
+
+export function checkDataQuality(
+    comp: ComponentMetadata,
+    options: {
+        hasExamples: boolean;
+        hasGuidance: boolean;
+    }
+): DataQualityWarnings {
+    const warnings: DataQualityWarnings = {};
+    const suggestions: string[] = [];
+
+    // Check description quality
+    if (hasGenericDescription(comp)) {
+        warnings.hasGenericDescription = true;
+        if (!options.hasGuidance) {
+            suggestions.push('Component has a generic description. Use get_component_guidance for detailed information.');
+        }
+    }
+
+    // Check for HTML examples
+    if (!options.hasExamples) {
+        warnings.missingExamples = true;
+        suggestions.push(`No HTML examples available. Check the Storybook docs: ${comp.storybookUrl}`);
+    }
+
+    // Check for related components
+    if (!comp.relatedComponents || comp.relatedComponents.length === 0) {
+        warnings.emptyRelatedComponents = true;
+        suggestions.push('No related components documented. Try search_components to find similar components.');
+    }
+
+    if (suggestions.length > 0) {
+        warnings.suggestions = suggestions;
+    }
+
+    return warnings;
+}
+
+/**
+ * Check design token data quality
+ */
+export interface TokenQualityInfo {
+    hasPurpose: boolean;
+    hasValue: boolean;
+    hasCssUsage: boolean;
+    completeness: 'complete' | 'partial' | 'minimal';
+}
+
+export function checkTokenQuality(token: {
+    name: string;
+    purpose?: string;
+    value?: string;
+    cssUsage?: string;
+}): TokenQualityInfo {
+    const hasPurpose = Boolean(token.purpose && token.purpose.trim().length > 0);
+    const hasValue = Boolean(token.value && token.value.trim().length > 0);
+    const hasCssUsage = Boolean(token.cssUsage && token.cssUsage.trim().length > 0);
+
+    let completeness: 'complete' | 'partial' | 'minimal';
+    if (hasPurpose && hasValue && hasCssUsage) {
+        completeness = 'complete';
+    } else if (hasPurpose || hasCssUsage) {
+        completeness = 'partial';
+    } else {
+        completeness = 'minimal';
+    }
+
+    return { hasPurpose, hasValue, hasCssUsage, completeness };
+}

@@ -346,7 +346,11 @@
             "role": null,
             "ariaAttributes": []
           },
-          "relatedComponents": [],
+          "relatedComponents": [
+            "ai-writing-assistant",
+            "ai-text",
+            "ai-busy-indicator"
+          ],
           "dependencies": []
         },
         {
@@ -957,7 +961,7 @@
         {
           "id": "badge",
           "name": "Badge",
-          "description": "Badge component",
+          "description": "Badges display small amounts of color-coded meta information. Use to highlight entity states, notifications, or counts (e.g., \"3 pending items\"). Can be filled or outlined, with semantic colors for status indication.",
           "baseClass": "fd-badge",
           "cssImport": "fundamental-styles/dist/badge.css",
           "storybookUrl": "https://sap.github.io/fundamental-styles/?path=/docs/components-badge",
@@ -1326,7 +1330,7 @@
         {
           "id": "button-split",
           "name": "Button Split",
-          "description": "Button Split component",
+          "description": "Split buttons combine a primary action with a dropdown menu of related secondary actions. The primary action executes immediately when clicked, while the arrow reveals additional options. Use when one option is used more frequently than others.",
           "baseClass": "fd-button-split",
           "cssImport": "fundamental-styles/dist/button-split.css",
           "storybookUrl": "https://sap.github.io/fundamental-styles/?path=/docs/components-button-split",
@@ -2721,7 +2725,7 @@
         {
           "id": "counter",
           "name": "Counter",
-          "description": "Counter component",
+          "description": "Counters display numerical values with optional indicators (e.g., \"5 new messages\"). Typically used in navigation items, cards, or list headers to show counts, notifications, or status summaries.",
           "baseClass": "fd-counter",
           "cssImport": "fundamental-styles/dist/counter.css",
           "storybookUrl": "https://sap.github.io/fundamental-styles/?path=/docs/components-counter",
@@ -2924,7 +2928,7 @@
         {
           "id": "dynamic-page",
           "name": "Dynamic Page",
-          "description": "Dynamic Page component",
+          "description": "Dynamic Page is foundation for all SAP pages. Generic layout supporting various use cases with variable header and page content. Header is collapsible to help users focus on content while keeping important header info and actions readily available. Uses foundation layout components (dynamic page header, footer toolbar).",
           "baseClass": "fd-dynamic-page",
           "cssImport": "fundamental-styles/dist/dynamic-page.css",
           "storybookUrl": "https://sap.github.io/fundamental-styles/?path=/docs/components-dynamic-page",
@@ -3166,7 +3170,7 @@
         {
           "id": "dynamic-side-content",
           "name": "Dynamic Side Content",
-          "description": "Dynamic Side Content component",
+          "description": "Dynamic Side Content is layout control displaying supplemental content in separate area to support understanding of main content. Two elements: side content section (`.fd-dynamic-side__side`) and main content section (`.fd-dynamic-side__main`). Screen width ratio varies based on available space - side displays left/right or bottom if space limited.",
           "baseClass": "fd-dynamic-side-content",
           "cssImport": "fundamental-styles/dist/dynamic-side-content.css",
           "storybookUrl": "https://sap.github.io/fundamental-styles/?path=/docs/components-dynamic-side-content",
@@ -3222,7 +3226,7 @@
         {
           "id": "facet",
           "name": "Facet",
-          "description": "Facet component",
+          "description": "Facets display key-value pairs in a compact, scannable format. Use in object headers or cards to show essential information like status, date, owner, or metrics. Supports icons and semantic colors.",
           "baseClass": "fd-facet",
           "cssImport": "fundamental-styles/dist/facet.css",
           "storybookUrl": "https://sap.github.io/fundamental-styles/?path=/docs/components-facet",
@@ -3476,7 +3480,7 @@
         {
           "id": "fieldset",
           "name": "Fieldset",
-          "description": "Fieldset component",
+          "description": "A fieldset gives semantic meaning to a group of elements inside a form (e.g., Billing or Shipping Address). Grouping fields provides styling and accessibility benefits, and is especially important for checkbox groups and radio button groups.",
           "baseClass": "fd-fieldset",
           "cssImport": "fundamental-styles/dist/fieldset.css",
           "storybookUrl": "https://sap.github.io/fundamental-styles/?path=/docs/components-fieldset",
@@ -3671,7 +3675,7 @@
         {
           "id": "flexible-column-layout",
           "name": "Flexible Column Layout",
-          "description": "Flexible Column Layout component",
+          "description": "Flexible Column Layout is layout control displaying multiple floorplans on single page. Enables faster, more fluid navigation between floorplans than page-by-page. Offers layouts with up to 3 columns (1, 2, 3). Users can resize columns, switch layouts, view rightmost column in full screen. Responsive for desktop and mobile.",
           "baseClass": "fd-flexible-column-layout",
           "cssImport": "fundamental-styles/dist/flexible-column-layout.css",
           "storybookUrl": "https://sap.github.io/fundamental-styles/?path=/docs/components-flexible-column-layout",
@@ -3738,7 +3742,7 @@
         {
           "id": "form-group",
           "name": "Form Group",
-          "description": "Form Group component",
+          "description": "Form groups assemble form elements with labels, messages, and help containers. Components like `fd-form__item` with label and control can be used independently when error messages aren't needed.",
           "baseClass": "fd-form-group",
           "cssImport": "fundamental-styles/dist/form-group.css",
           "storybookUrl": "https://sap.github.io/fundamental-styles/?path=/docs/components-form-group",
@@ -3804,7 +3808,7 @@
         {
           "id": "form-header",
           "name": "Form Header",
-          "description": "Form Header component",
+          "description": "Form headers are titles that provide context about a group of input fields. For example, \"Personal Information\" would categorize fields like Name, Address, etc.",
           "baseClass": "fd-form-header",
           "cssImport": "fundamental-styles/dist/form-header.css",
           "storybookUrl": "https://sap.github.io/fundamental-styles/?path=/docs/components-form-header",
@@ -3991,7 +3995,7 @@
         {
           "id": "form-message",
           "name": "Form Message",
-          "description": "Form Message component",
+          "description": "Form messages display value state text (success, error, warning, information) shown when focus is on the input field. They work with input control value states to provide feedback to users.",
           "baseClass": "fd-form-message",
           "cssImport": "fundamental-styles/dist/form-message.css",
           "storybookUrl": "https://sap.github.io/fundamental-styles/?path=/docs/components-form-message",
@@ -4140,7 +4144,7 @@
         {
           "id": "grid-list",
           "name": "Grid List",
-          "description": "Grid List component",
+          "description": "Grid list displays items in a grid format (not rows), ideal for visual content like images, charts, and object cards that benefit from more height. Usually used as an alternative view for lists or tables, focusing on complete items rather than cells.",
           "baseClass": "fd-item",
           "cssImport": "fundamental-styles/dist/grid-list.css",
           "storybookUrl": "https://sap.github.io/fundamental-styles/?path=/docs/components-grid-list",
@@ -4249,7 +4253,12 @@
             "role": null,
             "ariaAttributes": []
           },
-          "relatedComponents": [],
+          "relatedComponents": [
+            "layout",
+            "layout-grid",
+            "margins",
+            "paddings"
+          ],
           "dependencies": []
         },
         {
@@ -4984,7 +4993,7 @@
         {
           "id": "input-group",
           "name": "Input Group",
-          "description": "Input Group component",
+          "description": "Input Group combines form inputs with add-ons (text, icons, or buttons) to help users understand the information being entered. Add-ons can be positioned before, after, or on both sides of the input field. Supports validation states (success, error, warning, information).",
           "baseClass": "fd-input-group",
           "cssImport": "fundamental-styles/dist/input-group.css",
           "storybookUrl": "https://sap.github.io/fundamental-styles/?path=/docs/components-input-group",
@@ -5172,7 +5181,7 @@
         {
           "id": "layout-panel",
           "name": "Layout Panel",
-          "description": "Layout Panel component",
+          "description": "Layout Panels encapsulate part of content, form elements, lists, collections on a page. Place patterns and interactions within panels to achieve focus and separation for tasks with information displayed inside panel. Organizes content into distinct sections.",
           "baseClass": "fd-layout-panel",
           "cssImport": "fundamental-styles/dist/layout-panel.css",
           "storybookUrl": "https://sap.github.io/fundamental-styles/?path=/docs/components-layout-panel",
@@ -5762,7 +5771,11 @@
             "role": null,
             "ariaAttributes": []
           },
-          "relatedComponents": [],
+          "relatedComponents": [
+            "paddings",
+            "layout",
+            "layout-grid"
+          ],
           "dependencies": []
         },
         {
@@ -8127,7 +8140,10 @@
             "role": null,
             "ariaAttributes": []
           },
-          "relatedComponents": [],
+          "relatedComponents": [
+            "helpers",
+            "link"
+          ],
           "dependencies": []
         },
         {
@@ -8175,7 +8191,11 @@
             "role": null,
             "ariaAttributes": []
           },
-          "relatedComponents": [],
+          "relatedComponents": [
+            "margins",
+            "layout",
+            "layout-grid"
+          ],
           "dependencies": []
         },
         {
@@ -8232,7 +8252,7 @@
         {
           "id": "page",
           "name": "Page",
-          "description": "Page component",
+          "description": "Page is the foundation wrapper for all application pages. Provides consistent structure with optional header, footer, and content areas. Use as the outermost container for every page in your application.",
           "baseClass": "fd-page",
           "cssImport": "fundamental-styles/dist/page.css",
           "storybookUrl": "https://sap.github.io/fundamental-styles/?path=/docs/components-page",
@@ -9598,7 +9618,11 @@
             "role": null,
             "ariaAttributes": []
           },
-          "relatedComponents": [],
+          "relatedComponents": [
+            "layout",
+            "splitter",
+            "dynamic-side-content"
+          ],
           "dependencies": []
         },
         {
@@ -9703,7 +9727,7 @@
         {
           "id": "section",
           "name": "Section",
-          "description": "Section component",
+          "description": "Sections group related content on a page with optional headers and visual separation. Use to organize page content into logical, scannable blocks. Can be collapsible to help users focus on relevant information.",
           "baseClass": "fd-section",
           "cssImport": "fundamental-styles/dist/section.css",
           "storybookUrl": "https://sap.github.io/fundamental-styles/?path=/docs/components-section",
@@ -10351,7 +10375,7 @@
         {
           "id": "side-nav",
           "name": "Side Nav",
-          "description": "Side Nav component",
+          "description": "Side Navigation provides hierarchical navigation for applications. Displays a collapsible sidebar with navigation items, icons, and nested submenus. Use for primary app navigation in the Shellbar or as dedicated sidebar.",
           "baseClass": "fd-side-nav",
           "cssImport": "fundamental-styles/dist/side-nav.css",
           "storybookUrl": "https://sap.github.io/fundamental-styles/?path=/docs/components-side-nav",
@@ -10639,7 +10663,7 @@
         {
           "id": "splitter",
           "name": "Splitter",
-          "description": "Splitter component",
+          "description": "Splitter divides screen into resizable panes separated by a draggable divider. Users can adjust pane sizes by dragging the separator. Use for master-detail layouts or comparing content side-by-side.",
           "baseClass": "fd-splitter",
           "cssImport": "fundamental-styles/dist/splitter.css",
           "storybookUrl": "https://sap.github.io/fundamental-styles/?path=/docs/components-splitter",
@@ -11654,7 +11678,7 @@
         {
           "id": "tabs",
           "name": "Tabs",
-          "description": "Tabs component",
+          "description": "Tabs organize content into separate views, allowing users to switch between different sections without leaving the page. Use for dividing content into meaningful categories that users can explore one at a time.",
           "baseClass": "fd-tabs__process",
           "cssImport": "fundamental-styles/dist/tabs.css",
           "storybookUrl": "https://sap.github.io/fundamental-styles/?path=/docs/components-tabs",
@@ -11955,7 +11979,7 @@
         {
           "id": "tile",
           "name": "Tile",
-          "description": "Tile component",
+          "description": "Tiles display summarized information or entry points to applications, pages, or actions. Use in home pages, launchpads, or dashboards to present options in a grid layout. Can include icons, titles, subtitles, and quick actions.",
           "baseClass": "fd-tile",
           "cssImport": "fundamental-styles/dist/tile.css",
           "storybookUrl": "https://sap.github.io/fundamental-styles/?path=/docs/components-tile",
@@ -12812,7 +12836,7 @@
         {
           "id": "tool-layout",
           "name": "Tool Layout",
-          "description": "Tool Layout component",
+          "description": "Tool Layout consists of three main areas: Tool Header (always present, top-aligned with global actions and navigation controls), Navigation (side navigation in expanded/snapped variants), and Content (empty container for any content). Complete layout structure for tool-based applications.",
           "baseClass": "fd-tool-layout",
           "cssImport": "fundamental-styles/dist/tool-layout.css",
           "storybookUrl": "https://sap.github.io/fundamental-styles/?path=/docs/components-tool-layout",
@@ -13679,7 +13703,7 @@
         {
           "id": "wizard",
           "name": "Wizard",
-          "description": "Wizard component",
+          "description": "Wizard guides user through long or unfamiliar task by dividing into sections, revealing information in digestible way. Consists of walkthrough screen (input required info) and summary page (read-only review before submission). Two types: standard (linear, known steps) and branching (non-linear, variable steps). Supports 3-8 steps, optional steps allowed.",
           "baseClass": "fd-wizard",
           "cssImport": "fundamental-styles/dist/wizard.css",
           "storybookUrl": "https://sap.github.io/fundamental-styles/?path=/docs/components-wizard",
