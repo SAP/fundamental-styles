@@ -3,7 +3,7 @@ import { StdioServerTransport } from '@modelcontextprotocol/sdk/server/stdio.js'
 import { z } from 'zod';
 import { loadCatalog, LoadedCatalog, readDataFile, listSchemas, readSchema } from './data/load-catalog';
 import { loadExamples, ComponentExample } from './data/load-examples';
-import { findComponent as findComp, scoreMatch, truncate } from './helpers';
+import { findComponent as findComp, scoreMatch, truncate, enhanceDescription, checkDataQuality, checkTokenQuality } from './helpers';
 import { extractChangelog, compareVersions, baseVersion, ChangelogEntry } from './data/changelog-extractor';
 import {
     ComponentMetadata,
@@ -66,9 +66,10 @@ Use this to discover what CSS components are available.`,
             .enum(['styles', 'common-css', 'cx'] as const)
             .optional()
             .describe('Filter by package'),
-        category: z.string().optional().describe('Filter by category (e.g., "buttons", "navigation", "feedback")')
+        category: z.string().optional().describe('Filter by category (e.g., "buttons", "navigation", "feedback")'),
+        detailed: z.boolean().optional().default(false).describe('Include modifiers, elements, and usage info (default: false)')
     },
-    async ({ package: pkg, category }) => {
+    async ({ package: pkg, category, detailed }) => {
         let components = data.components;
 
         if (pkg) {
@@ -90,22 +91,73 @@ Use this to discover what CSS components are available.`,
         const summary = components.map((c) => {
             // Try to get enhanced description from component guidance
             const guidance = data.componentGuidance?.components[c.id];
-            const description = guidance?.description || c.description;
+            const { description, enhanced } = enhanceDescription(c, guidance);
 
-            return {
+            const basicInfo: Record<string, unknown> = {
                 id: c.id,
                 name: c.name,
                 baseClass: c.baseClass,
                 category: guidance?.category || c.category,
                 description: truncate(description, 120)
             };
+
+            // Add enhanced flag if description was improved
+            if (enhanced && detailed) {
+                basicInfo['descriptionEnhanced'] = true;
+            }
+
+            // Add detailed information if requested
+            if (detailed) {
+                basicInfo['modifierCount'] = c.modifiers?.length ?? 0;
+                basicInfo['elementCount'] = c.elements?.length ?? 0;
+                basicInfo['cssImport'] = c.cssImport;
+
+                // Sample modifiers (first 5)
+                if (c.modifiers && c.modifiers.length > 0) {
+                    basicInfo['sampleModifiers'] = c.modifiers.slice(0, 5);
+                }
+
+                // Use cases
+                if (c.useCases && c.useCases.length > 0) {
+                    basicInfo['useCases'] = c.useCases;
+                }
+
+                // Related components
+                if (c.relatedComponents && c.relatedComponents.length > 0) {
+                    basicInfo['relatedComponents'] = c.relatedComponents.slice(0, 3);
+                }
+
+                // Tags
+                if (c.tags && c.tags.length > 0) {
+                    basicInfo['tags'] = c.tags;
+                }
+
+                // Data quality warnings
+                const hasExamples = (examples.get(c.id)?.length ?? 0) > 0 ||
+                    (data.htmlExamples?.examples ?? []).some((ex) => ex.components.includes(c.id));
+
+                const qualityWarnings = checkDataQuality(c, {
+                    hasExamples,
+                    hasGuidance: Boolean(guidance)
+                });
+
+                if (Object.keys(qualityWarnings).length > 0) {
+                    basicInfo['dataQuality'] = qualityWarnings;
+                }
+            }
+
+            return basicInfo;
         });
 
         return {
             content: [
                 {
                     type: 'text' as const,
-                    text: JSON.stringify({ count: summary.length, components: summary }, null, 2)
+                    text: JSON.stringify({
+                        count: summary.length,
+                        detailed,
+                        components: summary
+                    }, null, 2)
                 }
             ]
         };
@@ -125,9 +177,10 @@ Use this when you need to find a component by a partial name or feature keyword.
         package: z
             .enum(['styles', 'common-css', 'cx'] as const)
             .optional()
-            .describe('Restrict search to a specific package')
+            .describe('Restrict search to a specific package'),
+        detailed: z.boolean().optional().default(false).describe('Include CSS imports, modifiers, and usage examples (default: false)')
     },
-    async ({ query, package: pkg }) => {
+    async ({ query, package: pkg, detailed }) => {
         const lowerQuery = query.toLowerCase();
         let components = data.components;
 
@@ -144,20 +197,57 @@ Use this when you need to find a component by a partial name or feature keyword.
             .sort((a, b) => b.score - a.score)
             .slice(0, 20);
 
-        const results = scored.map((s) => ({
-            id: s.component.id,
-            name: s.component.name,
-            baseClass: s.component.baseClass,
-            category: s.component.category,
-            description: truncate(s.component.description, 150),
-            relevance: s.score
-        }));
+        const results = scored.map((s) => {
+            const basicInfo: Record<string, unknown> = {
+                id: s.component.id,
+                name: s.component.name,
+                baseClass: s.component.baseClass,
+                category: s.component.category,
+                description: truncate(s.component.description, 150),
+                relevance: s.score
+            };
+
+            // Add detailed information if requested
+            if (detailed) {
+                basicInfo['cssImport'] = s.component.cssImport;
+
+                // Sample modifiers
+                if (s.component.modifiers && s.component.modifiers.length > 0) {
+                    basicInfo['sampleModifiers'] = s.component.modifiers.slice(0, 5);
+                    basicInfo['totalModifiers'] = s.component.modifiers.length;
+                }
+
+                // Usage examples count
+                const exampleCount = (examples.get(s.component.id)?.length ?? 0) +
+                    (data.htmlExamples?.examples ?? []).filter((ex) => ex.components.includes(s.component.id)).length;
+                if (exampleCount > 0) {
+                    basicInfo['htmlExamplesAvailable'] = exampleCount;
+                }
+
+                // Related components
+                if (s.component.relatedComponents && s.component.relatedComponents.length > 0) {
+                    basicInfo['relatedComponents'] = s.component.relatedComponents.slice(0, 3);
+                }
+
+                // Storybook URL
+                if (s.component.storybookUrl) {
+                    basicInfo['storybookUrl'] = s.component.storybookUrl;
+                }
+            }
+
+            return basicInfo;
+        });
 
         return {
             content: [
                 {
                     type: 'text' as const,
-                    text: JSON.stringify({ query, count: results.length, results }, null, 2)
+                    text: JSON.stringify({
+                        query,
+                        count: results.length,
+                        detailed,
+                        results
+                    }, null, 2)
                 }
             ]
         };
@@ -174,9 +264,10 @@ Returns the block class, all element classes, modifier classes, state classes,
 CSS custom properties, and mutually exclusive modifier rules.
 Use this when you need to know exactly what CSS classes to apply.`,
     {
-        component: z.string().describe('Component name, id, or base class (e.g., "button", "fd-button", "dialog")')
+        component: z.string().describe('Component name, id, or base class (e.g., "button", "fd-button", "dialog")'),
+        detailed: z.boolean().optional().default(false).describe('Include full schema, constraints, and examples (default: false)')
     },
-    async ({ component }) => {
+    async ({ component, detailed }) => {
         const comp = findComponent(component);
 
         if (!comp) {
@@ -206,6 +297,55 @@ Use this when you need to know exactly what CSS classes to apply.`,
             result['modifierRules'] = data.modifierRules.components[comp.id];
         }
 
+        // Add detailed information if requested
+        if (detailed) {
+            // Add accessibility requirements
+            const a11yData = data.accessibility?.components?.[comp.id];
+            if (a11yData) {
+                result['accessibilityInfo'] = {
+                    roles: a11yData.roles,
+                    ariaAttributes: a11yData.ariaAttributes,
+                    keyboardPatterns: a11yData.keyboardPatterns
+                };
+            }
+
+            // Add usage constraints
+            if (comp.useCases && comp.useCases.length > 0) {
+                result['useCases'] = comp.useCases;
+            }
+            if (comp.avoidWhen && comp.avoidWhen.length > 0) {
+                result['avoidWhen'] = comp.avoidWhen;
+            }
+
+            // Add dependencies
+            if (comp.dependencies && comp.dependencies.length > 0) {
+                result['dependencies'] = comp.dependencies;
+            }
+
+            // Add component relationships
+            if (data.relationships) {
+                const outgoing = data.relationships.relationships.filter((r) => r.from === comp.id);
+                const incoming = data.relationships.relationships.filter((r) => r.to === comp.id);
+
+                if (outgoing.length > 0 || incoming.length > 0) {
+                    result['relationships'] = {
+                        imports: outgoing.filter((r) => r.type === 'imports').map((r) => r.to),
+                        related: outgoing.filter((r) => r.type === 'related').map((r) => r.to),
+                        similar: outgoing.filter((r) => r.type === 'similar').map((r) => r.to),
+                        sharesStyling: outgoing.filter((r) => r.type === 'shares-styling').map((r) => r.to)
+                    };
+                }
+            }
+
+            // Add HTML examples count
+            const exampleCount = (examples.get(comp.id)?.length ?? 0) +
+                (data.htmlExamples?.examples ?? []).filter((ex) => ex.components.includes(comp.id)).length;
+            if (exampleCount > 0) {
+                result['htmlExamplesAvailable'] = exampleCount;
+                result['suggestion'] = 'Use get_component_html to see usage examples';
+            }
+        }
+
         return {
             content: [
                 {
@@ -227,9 +367,10 @@ Returns real HTML snippets showing correct class usage, ARIA attributes, and str
 Use this when you need to see how to build the HTML for a component.`,
     {
         component: z.string().describe('Component name, id, or base class (e.g., "button", "dialog")'),
-        variant: z.string().optional().describe('Filter examples by variant keyword (e.g., "compact", "states")')
+        variant: z.string().optional().describe('Filter examples by variant keyword (e.g., "compact", "states", "emphasized")'),
+        detailed: z.boolean().optional().default(false).describe('Include accessibility guidance, related components, and best practices (default: false)')
     },
-    async ({ component, variant }) => {
+    async ({ component, variant, detailed }) => {
         const comp = findComponent(component);
 
         if (!comp) {
@@ -245,38 +386,122 @@ Use this when you need to see how to build the HTML for a component.`,
 
         // Get story examples
         let storyExamples = examples.get(comp.id) ?? [];
-
-        if (variant) {
-            const lowerVariant = variant.toLowerCase();
-            storyExamples = storyExamples.filter(
-                (ex) =>
-                    ex.name.toLowerCase().includes(lowerVariant) ||
-                    ex.description.toLowerCase().includes(lowerVariant)
-            );
-        }
-
-        // Get curated examples from html-examples.json
-        const curatedExamples = (data.htmlExamples?.examples ?? []).filter((ex) =>
+        let curatedExamples = (data.htmlExamples?.examples ?? []).filter((ex) =>
             ex.components.includes(comp.id)
         );
 
-        const result = {
+        // Filter by variant if specified
+        if (variant) {
+            const lowerVariant = variant.toLowerCase();
+
+            // Filter story examples by name, description, OR HTML content (to catch class modifiers)
+            storyExamples = storyExamples.filter(
+                (ex) =>
+                    ex.name.toLowerCase().includes(lowerVariant) ||
+                    ex.description.toLowerCase().includes(lowerVariant) ||
+                    ex.html.toLowerCase().includes(lowerVariant)
+            );
+
+            // Filter curated examples by description or HTML content
+            curatedExamples = curatedExamples.filter(
+                (ex) =>
+                    ex.description.toLowerCase().includes(lowerVariant) ||
+                    ex.html.toLowerCase().includes(lowerVariant) ||
+                    ex.id.toLowerCase().includes(lowerVariant)
+            );
+        }
+
+        const totalExamples = storyExamples.length + curatedExamples.length;
+
+        const result: Record<string, unknown> = {
             component: comp.name,
             baseClass: comp.baseClass,
+            variant: variant ?? null,
             storyExamples: storyExamples.map((ex) => ({
                 name: ex.name,
                 description: ex.description,
-                html: ex.html
+                html: ex.html,
+                matchedVariant: variant ? (
+                    ex.name.toLowerCase().includes(variant.toLowerCase()) ? 'name' :
+                    ex.description.toLowerCase().includes(variant.toLowerCase()) ? 'description' : 'html'
+                ) : undefined
             })),
             curatedExamples: curatedExamples.map((ex) => ({
                 id: ex.id,
                 description: ex.description,
                 html: ex.html
             })),
-            totalExamples: storyExamples.length + curatedExamples.length
+            totalExamples,
+            storyExamplesCount: storyExamples.length,
+            curatedExamplesCount: curatedExamples.length
         };
 
-        if (result.totalExamples === 0) {
+        // Add detailed information if requested
+        if (detailed) {
+            // Add accessibility guidance
+            const a11yData = data.accessibility?.components?.[comp.id];
+            if (a11yData) {
+                result['accessibility'] = {
+                    roles: a11yData.roles,
+                    ariaAttributes: a11yData.ariaAttributes,
+                    keyboardPatterns: a11yData.keyboardPatterns,
+                    notes: a11yData.notes
+                };
+            }
+
+            // Add component guidance
+            const guidance = data.componentGuidance?.components[comp.id];
+            if (guidance) {
+                result['guidance'] = {
+                    whenToUse: guidance.whenToUse,
+                    whenToAvoid: guidance.whenToAvoid,
+                    bestPractices: guidance.bestPractices
+                };
+            }
+
+            // Add related components
+            if (comp.relatedComponents && comp.relatedComponents.length > 0) {
+                result['relatedComponents'] = comp.relatedComponents;
+            }
+
+            // Add available modifiers
+            if (comp.modifiers && comp.modifiers.length > 0) {
+                result['availableModifiers'] = comp.modifiers.slice(0, 20);
+            }
+
+            // Add CSS variables
+            if (comp.variables && comp.variables.length > 0) {
+                result['cssVariables'] = comp.variables.slice(0, 10);
+            }
+        }
+
+        if (totalExamples === 0) {
+            // Provide helpful feedback about why no examples were found
+            const totalAvailable = (examples.get(comp.id)?.length ?? 0) +
+                (data.htmlExamples?.examples ?? []).filter((ex) => ex.components.includes(comp.id)).length;
+
+            if (variant && totalAvailable > 0) {
+                return {
+                    content: [
+                        {
+                            type: 'text' as const,
+                            text: JSON.stringify(
+                                {
+                                    component: comp.name,
+                                    baseClass: comp.baseClass,
+                                    variant: variant,
+                                    note: `No examples found matching variant "${variant}". ${totalAvailable} total examples available for this component.`,
+                                    suggestion: `Try without the variant filter, or try variants like: "compact", "states", "emphasized", "transparent"`,
+                                    availableModifiers: comp.modifiers?.slice(0, 10) ?? []
+                                },
+                                null,
+                                2
+                            )
+                        }
+                    ]
+                };
+            }
+
             return {
                 content: [
                     {
@@ -320,32 +545,32 @@ Use this when styling components or building custom layouts with theme-aware val
         category: z
             .string()
             .optional()
-            .describe('Filter by token category (e.g., "brand", "button", "field", "semantic")')
+            .describe('Filter by token category (e.g., "brand", "button", "field", "semantic")'),
+        limit: z.number().optional().default(50).describe('Maximum number of tokens to return (default: 50, max: 200)'),
+        offset: z.number().optional().default(0).describe('Pagination offset (default: 0)')
     },
-    async ({ query, category }) => {
+    async ({ query, category, limit = 50, offset = 0 }) => {
         const lowerQuery = query.toLowerCase();
         let tokens = data.designTokens;
 
+        // Apply category filter
         if (category) {
-            // Re-load from source to filter by category section
-            // For now, filter by token name containing the category
             const lowerCat = category.toLowerCase();
             tokens = tokens.filter(
                 (t) => t.name.toLowerCase().includes(lowerCat) || (t.purpose ?? '').toLowerCase().includes(lowerCat)
             );
         }
 
-        const matches = tokens
-            .filter(
-                (t) =>
-                    t.name.toLowerCase().includes(lowerQuery) ||
-                    (t.purpose ?? '').toLowerCase().includes(lowerQuery) ||
-                    (t.cssUsage ?? '').toLowerCase().includes(lowerQuery) ||
-                    (t.value ?? '').toLowerCase().includes(lowerQuery)
-            )
-            .slice(0, 50);
+        // Apply query filter
+        const allMatches = tokens.filter(
+            (t) =>
+                t.name.toLowerCase().includes(lowerQuery) ||
+                (t.purpose ?? '').toLowerCase().includes(lowerQuery) ||
+                (t.cssUsage ?? '').toLowerCase().includes(lowerQuery) ||
+                (t.value ?? '').toLowerCase().includes(lowerQuery)
+        );
 
-        if (matches.length === 0) {
+        if (allMatches.length === 0) {
             return {
                 content: [
                     {
@@ -365,11 +590,108 @@ Use this when styling components or building custom layouts with theme-aware val
             };
         }
 
+        // Deduplicate by token name (keep first occurrence)
+        const seenNames = new Set<string>();
+        const deduplicated = allMatches.filter((t) => {
+            if (seenNames.has(t.name)) {
+                return false;
+            }
+            seenNames.add(t.name);
+            return true;
+        });
+
+        // Group tokens by semantic category (extracted from token name)
+        const grouped: Record<string, typeof deduplicated> = {};
+        for (const token of deduplicated) {
+            // Extract category from token name (e.g., sapBackground -> Background, sapButton -> Button)
+            const match = token.name.match(/^sap([A-Z][a-z]+)/);
+            const groupName = match ? match[1] : 'Other';
+
+            if (!grouped[groupName]) {
+                grouped[groupName] = [];
+            }
+            grouped[groupName].push(token);
+        }
+
+        // Sort groups by size (most tokens first)
+        const sortedGroups = Object.entries(grouped)
+            .sort(([, a], [, b]) => b.length - a.length)
+            .reduce((acc, [key, value]) => {
+                acc[key] = value;
+                return acc;
+            }, {} as Record<string, typeof deduplicated>);
+
+        // Apply pagination
+        const maxLimit = Math.min(limit, 200);
+        const paginatedTokens = deduplicated.slice(offset, offset + maxLimit);
+
+        // Identify commonly used tokens (those with short, semantic names)
+        const commonTokens = paginatedTokens
+            .filter((t) => {
+                const name = t.name.toLowerCase();
+                return (
+                    name.includes('background') ||
+                    name.includes('text') ||
+                    name.includes('border') ||
+                    name === 'sapbrandcolor' ||
+                    name === 'sappositivecolor' ||
+                    name === 'sapnegativecolor' ||
+                    name === 'sapcriticalcolor' ||
+                    name === 'sapinformativecolor'
+                );
+            })
+            .map((t) => t.name);
+
+        // Check token data quality
+        const qualityStats = {
+            complete: 0,
+            partial: 0,
+            minimal: 0
+        };
+
+        const tokensWithQuality = paginatedTokens.map((token) => {
+            const quality = checkTokenQuality(token);
+            qualityStats[quality.completeness]++;
+
+            return {
+                ...token,
+                _dataQuality: quality.completeness
+            };
+        });
+
+        const result = {
+            query,
+            category: category ?? null,
+            pagination: {
+                total: deduplicated.length,
+                showing: paginatedTokens.length,
+                offset,
+                limit: maxLimit,
+                hasMore: offset + maxLimit < deduplicated.length,
+                nextOffset: offset + maxLimit < deduplicated.length ? offset + maxLimit : null
+            },
+            dataQuality: {
+                complete: qualityStats.complete,
+                partial: qualityStats.partial,
+                minimal: qualityStats.minimal,
+                note: qualityStats.minimal > qualityStats.complete ?
+                    'Most tokens lack purpose/usage documentation. Use token names and CSS inspection for guidance.' :
+                    null
+            },
+            groupedByCategory: Object.entries(sortedGroups).map(([name, tokens]) => ({
+                category: name,
+                count: tokens.length,
+                tokens: tokens.slice(0, 3).map((t) => t.name) // Show first 3 token names as preview
+            })),
+            commonlyUsed: commonTokens,
+            tokens: tokensWithQuality
+        };
+
         return {
             content: [
                 {
                     type: 'text' as const,
-                    text: JSON.stringify({ query, category, count: matches.length, tokens: matches }, null, 2)
+                    text: JSON.stringify(result, null, 2)
                 }
             ]
         };
@@ -518,9 +840,9 @@ server.tool(
     'recommend_components',
     `Given a UI description, recommend which fundamental-styles CSS components to use.
 Describe what you want to build (e.g., "a login form", "a data table with filters",
-"a master-detail layout") and get recommended components with their CSS classes.`,
+"a master-detail layout") and get recommended components with their CSS classes and confidence scores.`,
     {
-        description: z.string().describe('What you want to build (e.g., "a form with validation and submit button")')
+        description: z.string().describe('What you want to build (e.g., "a form with validation and submit button", "something clickable")')
     },
     async ({ description }) => {
         const lowerDesc = description.toLowerCase();
@@ -529,52 +851,121 @@ Describe what you want to build (e.g., "a login form", "a data table with filter
             baseClass: string;
             category: string;
             reason: string;
+            confidence: 'high' | 'medium' | 'low';
+            priority: number;
         }> = [];
 
-        // Pattern-based recommendations
-        for (const [pattern, componentIds] of Object.entries(UI_PATTERNS)) {
-            const keywords = pattern.split('|');
-            if (keywords.some((kw) => lowerDesc.includes(kw))) {
-                for (const id of componentIds) {
-                    const comp = data.components.find((c) => c.id === id);
-                    if (comp && !recommendations.some((r) => r.component === comp.name)) {
-                        recommendations.push({
-                            component: comp.name,
-                            baseClass: comp.baseClass,
-                            category: comp.category,
-                            reason: `Matches "${keywords[0]}" pattern`
-                        });
+        // Handle vague queries with general-purpose components
+        const vaguePhrases = ['something', 'anything', 'component', 'element', 'clickable', 'interactive', 'thing'];
+        const isVague = vaguePhrases.some((phrase) => lowerDesc.includes(phrase));
+
+        if (isVague) {
+            // For vague queries, recommend the most common general-purpose components
+            const generalPurpose = [
+                { id: 'button', reason: 'Primary interactive element - for actions and triggers', confidence: 'high' as const, priority: 1 },
+                { id: 'link', reason: 'For navigation and hyperlinks', confidence: 'high' as const, priority: 2 },
+                { id: 'input', reason: 'For user text input', confidence: 'medium' as const, priority: 3 },
+                { id: 'icon', reason: 'Visual indicators and actions', confidence: 'medium' as const, priority: 4 },
+                { id: 'menu', reason: 'For dropdown actions and selections', confidence: 'medium' as const, priority: 5 }
+            ];
+
+            // Filter by specific hints if present
+            if (lowerDesc.includes('click')) {
+                generalPurpose.unshift(
+                    { id: 'button', reason: 'Clickable action - primary use case for buttons', confidence: 'high' as const, priority: 1 }
+                );
+            }
+
+            for (const item of generalPurpose) {
+                const comp = data.components.find((c) => c.id === item.id);
+                if (comp && !recommendations.some((r) => r.baseClass === comp.baseClass)) {
+                    recommendations.push({
+                        component: comp.name,
+                        baseClass: comp.baseClass,
+                        category: comp.category,
+                        reason: item.reason,
+                        confidence: item.confidence,
+                        priority: item.priority
+                    });
+                }
+            }
+        } else {
+            // Pattern-based recommendations with confidence scores
+            for (const [pattern, componentIds] of Object.entries(UI_PATTERNS)) {
+                const keywords = pattern.split('|');
+                const matchedKeywords = keywords.filter((kw) => lowerDesc.includes(kw));
+
+                if (matchedKeywords.length > 0) {
+                    // Confidence based on specificity of match
+                    const confidence: 'high' | 'medium' | 'low' =
+                        matchedKeywords.length >= 2 ? 'high' :
+                        matchedKeywords[0].length > 4 ? 'high' : 'medium';
+
+                    for (const id of componentIds) {
+                        const comp = data.components.find((c) => c.id === id);
+                        if (comp && !recommendations.some((r) => r.component === comp.name)) {
+                            // Determine priority and specificity
+                            const isCore = ['button', 'input', 'form-item', 'form-label'].includes(id);
+                            const isSpecialized = id.includes('-') && !isCore;
+
+                            recommendations.push({
+                                component: comp.name,
+                                baseClass: comp.baseClass,
+                                category: comp.category,
+                                reason: `Matches "${matchedKeywords.join('", "')}" - ${isCore ? 'essential component' : isSpecialized ? 'specialized variant' : 'recommended for this use case'}`,
+                                confidence,
+                                priority: isCore ? 1 : isSpecialized ? 3 : 2
+                            });
+                        }
+                    }
+                }
+            }
+
+            // Keyword fallback search with lower confidence
+            if (recommendations.length < 3) {
+                const words = lowerDesc.split(/\s+/).filter((w) => w.length > 3);
+                for (const word of words) {
+                    const matches = data.components
+                        .filter(
+                            (c) =>
+                                c.id.includes(word) ||
+                                c.name.toLowerCase().includes(word) ||
+                                c.category?.toLowerCase().includes(word) ||
+                                c.baseClass.includes(word)
+                        )
+                        .slice(0, 3);
+
+                    for (const comp of matches) {
+                        if (!recommendations.some((r) => r.baseClass === comp.baseClass)) {
+                            recommendations.push({
+                                component: comp.name,
+                                baseClass: comp.baseClass,
+                                category: comp.category,
+                                reason: `Component name/category matches "${word}"`,
+                                confidence: 'low',
+                                priority: 4
+                            });
+                        }
                     }
                 }
             }
         }
 
-        // Keyword fallback search
-        if (recommendations.length < 3) {
-            const words = lowerDesc.split(/\s+/).filter((w) => w.length > 3);
-            for (const word of words) {
-                const matches = data.components
-                    .filter(
-                        (c) =>
-                            c.id.includes(word) ||
-                            c.name.toLowerCase().includes(word) ||
-                            c.category?.toLowerCase().includes(word) ||
-                            c.baseClass.includes(word)
-                    )
-                    .slice(0, 3);
+        // Sort by priority, then confidence, then alphabetically
+        const confidenceOrder = { high: 1, medium: 2, low: 3 };
+        recommendations.sort((a, b) => {
+            if (a.priority !== b.priority) return a.priority - b.priority;
+            if (a.confidence !== b.confidence) return confidenceOrder[a.confidence] - confidenceOrder[b.confidence];
+            return a.component.localeCompare(b.component);
+        });
 
-                for (const comp of matches) {
-                    if (!recommendations.some((r) => r.baseClass === comp.baseClass)) {
-                        recommendations.push({
-                            component: comp.name,
-                            baseClass: comp.baseClass,
-                            category: comp.category,
-                            reason: `Name/category matches "${word}"`
-                        });
-                    }
-                }
-            }
-        }
+        // Limit results and group by confidence
+        const limitedRecommendations = recommendations.slice(0, 15);
+        const groupedByConfidence = {
+            high: limitedRecommendations.filter((r) => r.confidence === 'high'),
+            medium: limitedRecommendations.filter((r) => r.confidence === 'medium'),
+            low: limitedRecommendations.filter((r) => r.confidence === 'low')
+        };
 
         return {
             content: [
@@ -583,7 +974,14 @@ Describe what you want to build (e.g., "a login form", "a data table with filter
                     text: JSON.stringify(
                         {
                             description,
-                            recommendations: recommendations.slice(0, 15),
+                            isVagueQuery: isVague,
+                            summary: {
+                                total: limitedRecommendations.length,
+                                highConfidence: groupedByConfidence.high.length,
+                                mediumConfidence: groupedByConfidence.medium.length,
+                                lowConfidence: groupedByConfidence.low.length
+                            },
+                            recommendations: limitedRecommendations,
                             note: 'Use get_css_classes for full class details and get_component_html for usage examples.'
                         },
                         null,
@@ -676,11 +1074,91 @@ server.tool(
     'get_component_guidance',
     `Get Fiori Design Guidelines for a component including when to use it, when to avoid it, and best practices.
 Returns detailed guidance from SAP Fiori Design System including use cases, anti-patterns, and design tips.
-Use this when you need to understand if a component is appropriate for a specific use case or need design guidance.`,
+Can also compare multiple components (e.g., "dialog vs message-box vs popover") to help choose the right one.
+Use this when you need to understand if a component is appropriate for a specific use case, need design guidance,
+or want to compare similar components to make the right choice.`,
     {
-        component: z.string().describe('Component name or id (e.g., "avatar", "button", "table")')
+        component: z.string().describe('Component name or id (e.g., "avatar", "button", "table"), or comparison query (e.g., "dialog vs message-box")')
     },
     async ({ component }) => {
+        // Check if this is a comparison query (contains "vs", "or", "versus")
+        const isComparison = /\s+(vs\.?|versus|or)\s+/i.test(component);
+
+        if (isComparison) {
+            // Extract component names from comparison query
+            const componentNames = component
+                .split(/\s+(?:vs\.?|versus|or)\s+/i)
+                .map((name) => name.trim().toLowerCase());
+
+            const comparedComponents: Array<{
+                component: string;
+                baseClass: string;
+                category: string;
+                description?: string;
+                whenToUse?: string[];
+                whenToAvoid?: string[];
+                bestPractices?: string[];
+                relatedComponents?: string[];
+            }> = [];
+
+            // Gather guidance for each component
+            for (const name of componentNames) {
+                const comp = findComponent(name);
+                if (!comp) continue;
+
+                const guidance = data.componentGuidance?.components[comp.id];
+                if (!guidance) {
+                    comparedComponents.push({
+                        component: comp.name,
+                        baseClass: comp.baseClass,
+                        category: comp.category,
+                        description: comp.description
+                    });
+                } else {
+                    comparedComponents.push({
+                        component: comp.name,
+                        baseClass: comp.baseClass,
+                        category: guidance.category || comp.category,
+                        description: guidance.description,
+                        whenToUse: guidance.whenToUse,
+                        whenToAvoid: guidance.whenToAvoid,
+                        bestPractices: guidance.bestPractices,
+                        relatedComponents: guidance.relatedComponents
+                    });
+                }
+            }
+
+            if (comparedComponents.length === 0) {
+                return {
+                    content: [
+                        {
+                            type: 'text' as const,
+                            text: `No components found for comparison: "${component}". Use search_components to find available components.`
+                        }
+                    ]
+                };
+            }
+
+            // Generate comparison summary
+            const comparison = {
+                query: component,
+                type: 'comparison',
+                componentsCompared: comparedComponents.length,
+                components: comparedComponents,
+                summary: generateComparisonSummary(comparedComponents)
+            };
+
+            return {
+                content: [
+                    {
+                        type: 'text' as const,
+                        text: JSON.stringify(comparison, null, 2)
+                    }
+                ]
+            };
+        }
+
+        // Single component query
         const comp = findComponent(component);
 
         if (!comp) {
@@ -757,6 +1235,7 @@ Use this when you need to understand if a component is appropriate for a specifi
 
         if (guidance.relatedComponents && guidance.relatedComponents.length > 0) {
             result['relatedComponents'] = guidance.relatedComponents;
+            result['comparisonHint'] = `To compare ${comp.name} with alternatives, try: get_component_guidance with "${comp.name} vs ${guidance.relatedComponents[0]}"`;
         }
 
         return {
@@ -769,6 +1248,37 @@ Use this when you need to understand if a component is appropriate for a specifi
         };
     }
 );
+
+/** Generate a comparison summary highlighting key differences between components. */
+function generateComparisonSummary(components: Array<{ component: string; category: string; whenToUse?: string[]; whenToAvoid?: string[] }>): string {
+    if (components.length < 2) {
+        return 'Not enough components to compare.';
+    }
+
+    const summaryParts: string[] = [];
+
+    // Compare categories
+    const categories = [...new Set(components.map((c) => c.category))];
+    if (categories.length === 1) {
+        summaryParts.push(`All components are in the ${categories[0]} category.`);
+    } else {
+        summaryParts.push(`Comparing components from different categories: ${categories.join(', ')}.`);
+    }
+
+    // Highlight key differences in use cases
+    const componentsWithGuidance = components.filter((c) => c.whenToUse && c.whenToUse.length > 0);
+    if (componentsWithGuidance.length >= 2) {
+        summaryParts.push(`Key differences: ${componentsWithGuidance.map((c) => `${c.component} is best for ${c.whenToUse?.[0]}`).join('; ')}.`);
+    }
+
+    // Highlight what to avoid
+    const componentsWithAvoidance = components.filter((c) => c.whenToAvoid && c.whenToAvoid.length > 0);
+    if (componentsWithAvoidance.length > 0) {
+        summaryParts.push(`Avoid: ${componentsWithAvoidance.map((c) => `${c.component} should not be used for ${c.whenToAvoid?.[0]}`).join('; ')}.`);
+    }
+
+    return summaryParts.join(' ') || 'Limited guidance available for comparison.';
+}
 
 // ---------------------------------------------------------------------------
 // Tool: get_theme_info
@@ -841,17 +1351,19 @@ server.tool(
     `Get migration guidance for upgrading fundamental-styles between versions.
 Returns breaking changes, deprecations, new features, and bug fixes.
 Filter by component scope and version range. Use this when upgrading fundamental-styles
-or checking what changed between releases.`,
+or checking what changed between releases. By default, shows changes from the last 6 months,
+prioritizing breaking changes and deprecations.`,
     {
         component: z.string().optional().describe('Filter by component scope (e.g., "button", "dialog", "table")'),
-        from_version: z.string().optional().describe('Starting version (e.g., "0.39.0"). Omit for all history.'),
+        from_version: z.string().optional().describe('Starting version (e.g., "0.39.0"). Defaults to 6 months ago if not specified.'),
         to_version: z.string().optional().describe('Ending version (e.g., "0.41.0"). Omit for latest.'),
         type: z
             .enum(['breaking', 'feature', 'fix', 'deprecation'] as const)
             .optional()
-            .describe('Filter by change type')
+            .describe('Filter by change type. Defaults to prioritizing breaking changes and deprecations.'),
+        limit: z.number().optional().default(100).describe('Maximum number of changes to return (default: 100)')
     },
-    async ({ component, from_version, to_version, type }) => {
+    async ({ component, from_version, to_version, type, limit = 100 }) => {
         if (changelog.length === 0) {
             return {
                 content: [
@@ -865,10 +1377,22 @@ or checking what changed between releases.`,
 
         let entries = changelog;
 
-        // Filter by version range
-        if (from_version) {
+        // Default to last 6 months if no from_version specified
+        if (!from_version) {
+            const sixMonthsAgo = new Date();
+            sixMonthsAgo.setMonth(sixMonthsAgo.getMonth() - 6);
+
+            // Find entries from the last 6 months
+            entries = entries.filter((e) => {
+                if (!e.date) return false;
+                const entryDate = new Date(e.date);
+                return entryDate >= sixMonthsAgo;
+            });
+        } else {
+            // Filter by version range
             entries = entries.filter((e) => compareVersions(e.version, from_version) >= 0);
         }
+
         if (to_version) {
             entries = entries.filter((e) => compareVersions(e.version, to_version) <= 0);
         }
@@ -890,12 +1414,26 @@ or checking what changed between releases.`,
         }
 
         // Deduplicate: collapse RC entries into stable releases
-        // If a change appears in both rc.X and the stable release, keep only the stable one
         const deduped = deduplicateEntries(entries);
+
+        // Prioritize breaking changes and deprecations if no type filter specified
+        let prioritizedEntries = deduped;
+        if (!type) {
+            const breakingAndDeprecations = deduped.filter(
+                (e) => e.type === 'breaking' || e.type === 'deprecation'
+            );
+            const otherEntries = deduped.filter(
+                (e) => e.type !== 'breaking' && e.type !== 'deprecation'
+            );
+            prioritizedEntries = [...breakingAndDeprecations, ...otherEntries];
+        }
+
+        // Apply limit
+        const limitedEntries = prioritizedEntries.slice(0, limit);
 
         // Group by version
         const byVersion: Record<string, ChangelogEntry[]> = {};
-        for (const entry of deduped) {
+        for (const entry of limitedEntries) {
             const key = entry.version;
             if (!byVersion[key]) {
                 byVersion[key] = [];
@@ -906,22 +1444,46 @@ or checking what changed between releases.`,
         // Sort versions descending
         const sortedVersions = Object.keys(byVersion).sort((a, b) => compareVersions(b, a));
 
-        const result = {
-            query: { component, from_version, to_version, type },
-            totalEntries: deduped.length,
-            versions: sortedVersions.map((v) => ({
-                version: v,
-                date: byVersion[v][0]?.date ?? null,
-                changes: byVersion[v].map((e) => ({
-                    type: e.type,
-                    scope: e.scope,
-                    description: e.description,
-                    issueUrl: e.issueUrl
-                }))
-            }))
+        // Count changes by type
+        const typeCounts = {
+            breaking: deduped.filter((e) => e.type === 'breaking').length,
+            deprecation: deduped.filter((e) => e.type === 'deprecation').length,
+            feature: deduped.filter((e) => e.type === 'feature').length,
+            fix: deduped.filter((e) => e.type === 'fix').length
         };
 
-        if (deduped.length === 0) {
+        const result = {
+            query: { component, from_version, to_version, type },
+            summary: {
+                totalMatching: deduped.length,
+                showing: limitedEntries.length,
+                byType: typeCounts,
+                actionRequired: typeCounts.breaking + typeCounts.deprecation,
+                prioritized: !type ? 'Breaking changes and deprecations shown first' : null
+            },
+            versions: sortedVersions.map((v) => {
+                const versionEntries = byVersion[v];
+                const hasBreaking = versionEntries.some((e) => e.type === 'breaking');
+                const hasDeprecation = versionEntries.some((e) => e.type === 'deprecation');
+
+                return {
+                    version: v,
+                    date: versionEntries[0]?.date ?? null,
+                    severity: hasBreaking ? 'breaking' : hasDeprecation ? 'deprecation' : 'normal',
+                    actionRequired: hasBreaking || hasDeprecation,
+                    changes: versionEntries.map((e) => ({
+                        type: e.type,
+                        scope: e.scope,
+                        description: e.description,
+                        issueUrl: e.issueUrl,
+                        actionRequired: e.type === 'breaking' || e.type === 'deprecation'
+                    }))
+                };
+            })
+        };
+
+        if (limitedEntries.length === 0) {
+            const totalAvailable = changelog.length;
             return {
                 content: [
                     {
@@ -929,7 +1491,8 @@ or checking what changed between releases.`,
                         text: JSON.stringify(
                             {
                                 ...result,
-                                note: 'No matching changelog entries found. Try broader filters or omit the version range.'
+                                note: `No matching changelog entries found. ${totalAvailable} total entries available.`,
+                                suggestion: 'Try broader filters, remove the component filter, or extend the date range.'
                             },
                             null,
                             2
@@ -955,46 +1518,35 @@ or checking what changed between releases.`,
 // ---------------------------------------------------------------------------
 server.tool(
     'setup_project',
-    `Get comprehensive setup instructions for fundamental-styles in a new project.
+    `Get comprehensive quick start setup instructions for fundamental-styles in a new project.
 Returns detailed step-by-step instructions for both CDN and NPM installation approaches,
 including theme setup, font configuration, component imports, and best practices.
-Use this when starting a new project or helping users get started with fundamental-styles.`,
+Use this when starting a new project, for quick start guidance, or helping users get started with fundamental-styles.
+Keywords: quick start, getting started, setup, initial setup, new project, bootstrap, scaffold`,
     {
         approach: z
             .enum(['cdn', 'npm', 'both'] as const)
             .default('both')
             .describe('Installation approach: "cdn" for CDN-only, "npm" for NPM-only, "both" for both approaches'),
         themes: z
-            .union([
-                z.enum([
-                    'sap_horizon',
-                    'sap_horizon_dark',
-                    'sap_horizon_hcb',
-                    'sap_horizon_hcw',
-                    'sap_fiori_3',
-                    'sap_fiori_3_dark',
-                    'sap_fiori_3_hcb',
-                    'sap_fiori_3_hcw',
-                    'all',
-                    'all_horizon',
-                    'all_fiori',
-                    'all_dark',
-                    'all_light',
-                    'all_high_contrast'
-                ] as const),
-                z.array(z.enum([
-                    'sap_horizon',
-                    'sap_horizon_dark',
-                    'sap_horizon_hcb',
-                    'sap_horizon_hcw',
-                    'sap_fiori_3',
-                    'sap_fiori_3_dark',
-                    'sap_fiori_3_hcb',
-                    'sap_fiori_3_hcw'
-                ] as const))
-            ])
-            .optional()
-            .describe('Theme(s) to include. Can be: single theme name, array of theme names, or preset ("all", "all_horizon", "all_fiori", "all_dark", "all_light", "all_high_contrast"). If not provided, defaults to "sap_horizon"'),
+            .enum([
+                'sap_horizon',
+                'sap_horizon_dark',
+                'sap_horizon_hcb',
+                'sap_horizon_hcw',
+                'sap_fiori_3',
+                'sap_fiori_3_dark',
+                'sap_fiori_3_hcb',
+                'sap_fiori_3_hcw',
+                'all',
+                'all_horizon',
+                'all_fiori',
+                'all_dark',
+                'all_light',
+                'all_high_contrast'
+            ] as const)
+            .default('sap_horizon')
+            .describe('Theme to include. Individual themes (sap_horizon, sap_horizon_dark, etc.) or presets (all, all_horizon, all_fiori, all_dark, all_light, all_high_contrast)'),
         componentMode: z
             .enum(['all', 'selective'] as const)
             .default('selective')
@@ -1026,45 +1578,31 @@ Use this when starting a new project or helping users get started with fundament
         const lightThemes = ['sap_horizon', 'sap_fiori_3'];
         const highContrastThemes = ['sap_horizon_hcb', 'sap_horizon_hcw', 'sap_fiori_3_hcb', 'sap_fiori_3_hcw'];
 
-        // Determine which themes to include
+        // Determine which themes to include based on selection
         let selectedThemes: string[];
 
-        if (!themes) {
-            // Default: single sap_horizon theme
-            selectedThemes = ['sap_horizon'];
-        } else if (Array.isArray(themes)) {
-            // Array of specific themes
-            if (themes.includes('all' as any)) {
+        switch (themes) {
+            case 'all':
                 selectedThemes = allThemes;
-            } else {
-                selectedThemes = themes as string[];
-            }
-        } else {
-            // Single value (preset or theme name)
-            const preset = themes as string;
-            switch (preset) {
-                case 'all':
-                    selectedThemes = allThemes;
-                    break;
-                case 'all_horizon':
-                    selectedThemes = horizonThemes;
-                    break;
-                case 'all_fiori':
-                    selectedThemes = fioriThemes;
-                    break;
-                case 'all_dark':
-                    selectedThemes = darkThemes;
-                    break;
-                case 'all_light':
-                    selectedThemes = lightThemes;
-                    break;
-                case 'all_high_contrast':
-                    selectedThemes = highContrastThemes;
-                    break;
-                default:
-                    // Single theme name
-                    selectedThemes = [preset];
-            }
+                break;
+            case 'all_horizon':
+                selectedThemes = horizonThemes;
+                break;
+            case 'all_fiori':
+                selectedThemes = fioriThemes;
+                break;
+            case 'all_dark':
+                selectedThemes = darkThemes;
+                break;
+            case 'all_light':
+                selectedThemes = lightThemes;
+                break;
+            case 'all_high_contrast':
+                selectedThemes = highContrastThemes;
+                break;
+            default:
+                // Individual theme name
+                selectedThemes = [themes];
         }
 
         // Build theme-specific instructions for each selected theme
@@ -1091,7 +1629,7 @@ Use this when starting a new project or helping users get started with fundament
         // Use the first theme for the main example
         const primaryTheme = themeInstructions[0];
 
-        const result: any = {
+        const result: Record<string, unknown> = {
             library: 'fundamental-styles',
             version: data.version,
             themes: selectedThemes,
@@ -1105,7 +1643,7 @@ Use this when starting a new project or helping users get started with fundament
                 ? ['<link href="https://unpkg.com/fundamental-styles@latest/dist/fundamental-styles.css" rel="stylesheet">']
                 : componentList.map(c => `<link href="https://unpkg.com/fundamental-styles@latest/dist/${c}.css" rel="stylesheet">`);
 
-            result.cdn = {
+            result['cdn'] = {
                 description: 'CDN installation requires no build tools. Perfect for prototyping or static HTML projects.',
                 primaryTheme: primaryTheme.theme,
                 themes: themeInstructions.map(t => ({
@@ -1211,7 +1749,7 @@ ${cdnComponentLinks.map(l => '  ' + l).join('\n')}
                 ? ["import 'fundamental-styles/dist/fundamental-styles.css';"]
                 : componentList.map(c => `import 'fundamental-styles/dist/${c}.css';`);
 
-            result.npm = {
+            result['npm'] = {
                 description: 'NPM installation for modern build tools (Webpack, Vite, Rollup, etc.)',
                 primaryTheme: primaryTheme.theme,
                 themes: themeInstructions.map(t => ({
@@ -1343,7 +1881,7 @@ body {
         }
 
         // Common information for both approaches
-        result.nextSteps = {
+        result['nextSteps'] = {
             componentExplorer: 'https://sap.github.io/fundamental-styles/',
             documentation: [
                 'CLAUDE.md - Quick reference for AI agents: https://github.com/SAP/fundamental-styles/blob/main/CLAUDE.md',
@@ -1368,7 +1906,7 @@ body {
             ]
         };
 
-        result.troubleshooting = [
+        result['troubleshooting'] = [
             {
                 issue: 'Components look unstyled or broken',
                 solution: 'Verify BOTH theme CSS files are loaded (base variables + fundamental theme)'
@@ -1391,7 +1929,7 @@ body {
             }
         ];
 
-        result.additionalPackages = [
+        result['additionalPackages'] = [
             {
                 name: '@fundamental-styles/common-css',
                 description: 'Utility classes for margins, padding, flexbox, display (sap-* classes)',
