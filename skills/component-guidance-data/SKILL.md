@@ -1,7 +1,7 @@
 ---
 name: component-guidance-data
 description: 'Fiori guidelines for data display components such as Table, List, Tree, Avatar, Calendar, Icons, etc'
-user-invocable: false
+user-invocable: true
 metadata:
     tags: ['components', 'data', 'display', 'visualization']
     keywords:

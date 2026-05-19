@@ -3,8 +3,9 @@ import { StdioServerTransport } from '@modelcontextprotocol/sdk/server/stdio.js'
 import { z } from 'zod';
 import { loadCatalog, LoadedCatalog, readDataFile, listSchemas, readSchema } from './data/load-catalog';
 import { loadExamples, ComponentExample } from './data/load-examples';
-import { findComponent as findComp, scoreMatch, truncate, enhanceDescription, checkDataQuality, checkTokenQuality } from './helpers';
+import { findComponent as findComp, scoreMatch, truncate, enhanceDescription, checkDataQuality, checkTokenQuality, expandQuery, scoreSemanticMatch } from './helpers';
 import { extractChangelog, compareVersions, baseVersion, ChangelogEntry } from './data/changelog-extractor';
+import { suggestDependencies, detectPatterns } from './data/component-dependencies';
 import {
     ComponentMetadata,
     PACKAGE_ALIAS_MAP,
@@ -29,7 +30,8 @@ try {
         designTokens: [],
         htmlExamples: null,
         componentUseCases: null,
-        componentGuidance: null
+        componentGuidance: null,
+        semanticTags: null
     };
     console.error('Warning: Failed to load component catalog data.');
 }
@@ -169,16 +171,17 @@ Use this to discover what CSS components are available.`,
 // ---------------------------------------------------------------------------
 server.tool(
     'search_components',
-    `Search fundamental-styles CSS components by keyword. Searches across component names,
-base classes, modifiers, element classes, descriptions, and CSS variables.
-Use this when you need to find a component by a partial name or feature keyword.`,
+    `Search fundamental-styles CSS components by keyword with semantic understanding.
+Searches across component names, base classes, patterns, use-cases, synonyms, and descriptions.
+Returns results with confidence scores and match reasons.
+Use this when you need to find a component by a partial name, pattern, or use-case keyword.`,
     {
-        query: z.string().describe('Search keyword (e.g., "button", "table", "date", "navigation")'),
+        query: z.string().describe('Search keyword (e.g., "button", "dashboard", "master detail layout", "kpi metric")'),
         package: z
             .enum(['styles', 'common-css', 'cx'] as const)
             .optional()
             .describe('Restrict search to a specific package'),
-        detailed: z.boolean().optional().default(false).describe('Include CSS imports, modifiers, and usage examples (default: false)')
+        detailed: z.boolean().optional().default(false).describe('Include CSS imports, modifiers, match reasons, and usage examples (default: false)')
     },
     async ({ query, package: pkg, detailed }) => {
         const lowerQuery = query.toLowerCase();
@@ -191,8 +194,15 @@ Use this when you need to find a component by a partial name or feature keyword.
             }
         }
 
+        // Expand query with semantic terms
+        const expandedQuery = expandQuery(query);
+
+        // Score all components using semantic matching
         const scored = components
-            .map((c) => ({ component: c, score: scoreMatch(c, lowerQuery) }))
+            .map((c) => {
+                const semanticTags = data.semanticTags?.components[c.id];
+                return scoreSemanticMatch(c, lowerQuery, semanticTags, expandedQuery);
+            })
             .filter((s) => s.score > 0)
             .sort((a, b) => b.score - a.score)
             .slice(0, 20);
@@ -204,8 +214,25 @@ Use this when you need to find a component by a partial name or feature keyword.
                 baseClass: s.component.baseClass,
                 category: s.component.category,
                 description: truncate(s.component.description, 150),
-                relevance: s.score
+                confidence: s.confidence,
+                relevanceScore: s.score
             };
+
+            // Add match reasons if detailed
+            if (detailed && s.matchReasons.length > 0) {
+                basicInfo['matchReasons'] = s.matchReasons.slice(0, 5);
+
+                // Show matched semantic tags
+                if (s.matchedTags.patterns.length > 0) {
+                    basicInfo['matchedPatterns'] = s.matchedTags.patterns.slice(0, 3);
+                }
+                if (s.matchedTags.useCases.length > 0) {
+                    basicInfo['matchedUseCases'] = s.matchedTags.useCases.slice(0, 3);
+                }
+                if (s.matchedTags.synonyms.length > 0) {
+                    basicInfo['matchedSynonyms'] = s.matchedTags.synonyms.slice(0, 3);
+                }
+            }
 
             // Add detailed information if requested
             if (detailed) {
@@ -238,15 +265,113 @@ Use this when you need to find a component by a partial name or feature keyword.
             return basicInfo;
         });
 
+        // Provide helpful search hints if no results
+        let searchHints: Record<string, unknown> | undefined;
+        if (results.length === 0) {
+            searchHints = {
+                message: `No components found for "${query}"`,
+                suggestions: [
+                    'Try broader terms (e.g., "button" instead of "primary action button")',
+                    'Use pattern names (e.g., "master detail", "dashboard", "form")',
+                    'Try category names (e.g., "navigation", "feedback", "forms")'
+                ],
+                commonPatterns: [
+                    { pattern: 'Dashboard with KPIs', suggestedQuery: 'dashboard' },
+                    { pattern: 'Master-detail layout', suggestedQuery: 'master detail' },
+                    { pattern: 'Data table with filtering', suggestedQuery: 'table' },
+                    { pattern: 'Form with validation', suggestedQuery: 'form' },
+                    { pattern: 'Navigation menu', suggestedQuery: 'navigation' }
+                ],
+                browseByCategory: ['layout', 'navigation', 'forms', 'feedback', 'data-display']
+            };
+        }
+
+        // Detect component categories and suggest relevant tools/skills
+        const componentIds = new Set(results.map(r => r['id'] as string));
+        const recommendations: any[] = [];
+
+        // Layout pattern detection
+        const layoutComponents = ['page', 'panel', 'shellbar', 'side-nav', 'dynamic-page', 'flexible-column-layout'];
+        if (results.some(r => layoutComponents.includes(r['id'] as string))) {
+            recommendations.push({
+                tool: 'get_layout_patterns',
+                reason: 'Found layout components. See complete UI layout patterns (navigation shell, master-detail, dashboard grid)',
+                components: results.filter(r => layoutComponents.includes(r['id'] as string)).map(r => r['name']),
+                skill: {
+                    name: 'layout-patterns',
+                    activation: 'Type /layout-patterns',
+                    description: 'Comprehensive layout guidance: 7 complete patterns, responsive design, Fiori guidelines'
+                }
+            });
+        }
+
+        // Interactive component detection
+        const interactiveComponents = ['table', 'dialog', 'popover', 'tabs', 'input', 'side-nav'];
+        if (results.some(r => interactiveComponents.includes(r['id'] as string))) {
+            recommendations.push({
+                tool: 'get_interaction_patterns',
+                reason: 'Found interactive components. See JavaScript patterns for sorting, validation, dialogs, and more',
+                components: results.filter(r => interactiveComponents.includes(r['id'] as string)).map(r => r['name'])
+            });
+        }
+
+        // Component guidance detection
+        if (results.length > 0) {
+            const firstComp = results[0]['id'] as string;
+            // Determine which guidance skill is most relevant
+            let guidanceSkill = 'component-guidance-forms';
+            if (['table', 'list', 'tree', 'object-status'].includes(firstComp)) {
+                guidanceSkill = 'component-guidance-data';
+            } else if (['shellbar', 'side-nav', 'menu', 'breadcrumb', 'tabs'].includes(firstComp)) {
+                guidanceSkill = 'component-guidance-navigation';
+            } else if (['page', 'panel', 'bar', 'flexible-column-layout'].includes(firstComp)) {
+                guidanceSkill = 'component-guidance-layout';
+            } else if (['message-strip', 'popover', 'dialog', 'alert'].includes(firstComp)) {
+                guidanceSkill = 'component-guidance-feedback';
+            } else if (['button', 'link'].includes(firstComp)) {
+                guidanceSkill = 'component-guidance-actions';
+            }
+
+            recommendations.push({
+                tool: 'get_component_guidance',
+                reason: 'Get best practices, when to use, and design guidelines for these components',
+                example: `get_component_guidance("${firstComp}")`,
+                skill: {
+                    name: guidanceSkill,
+                    activation: `Type /${guidanceSkill}`,
+                    description: 'Deep-dive guidance: when to use/avoid, best practices, accessibility, Fiori compliance'
+                }
+            });
+        }
+
+        // Dense data detection
+        const denseDataComponents = ['table', 'list', 'tree'];
+        if (results.some(r => denseDataComponents.includes(r['id'] as string))) {
+            const firstDenseComp = results.find(r => denseDataComponents.includes(r['id'] as string));
+            recommendations.push({
+                tip: 'content-density',
+                reason: 'These components support compact mode (--compact) for dense UIs and desktop applications',
+                modifier: firstDenseComp ? `${firstDenseComp['baseClass']}--compact` : undefined,
+                skill: {
+                    name: 'content-density',
+                    activation: 'Type /content-density',
+                    description: 'Complete density guide: cozy/compact/condensed modes, accessibility, responsive design'
+                }
+            });
+        }
+
         return {
             content: [
                 {
                     type: 'text' as const,
                     text: JSON.stringify({
                         query,
+                        expandedTerms: expandedQuery.slice(0, 10),
                         count: results.length,
                         detailed,
-                        results
+                        results,
+                        recommendations: recommendations.length > 0 ? recommendations : undefined,
+                        searchHints
                     }, null, 2)
                 }
             ]
@@ -364,13 +489,18 @@ server.tool(
     'get_component_html',
     `Get working HTML examples for a fundamental-styles CSS component.
 Returns real HTML snippets showing correct class usage, ARIA attributes, and structure.
-Use this when you need to see how to build the HTML for a component.`,
+Use this when you need to see how to build the HTML for a component.
+
+Smart output control: By default returns 3 essential examples optimized for AI context.
+Use minimal: true for smallest output, or detailed: true with maxExamples for more.`,
     {
         component: z.string().describe('Component name, id, or base class (e.g., "button", "dialog")'),
         variant: z.string().optional().describe('Filter examples by variant keyword (e.g., "compact", "states", "emphasized")'),
-        detailed: z.boolean().optional().default(false).describe('Include accessibility guidance, related components, and best practices (default: false)')
+        detailed: z.boolean().optional().default(false).describe('Include accessibility guidance, related components, and best practices (default: false)'),
+        minimal: z.boolean().optional().default(false).describe('Return only 1-2 essential examples with stripped documentation artifacts (default: false)'),
+        maxExamples: z.number().optional().default(3).describe('Maximum number of examples to return (default: 3, max: 20)')
     },
-    async ({ component, variant, detailed }) => {
+    async ({ component, variant, detailed, minimal = false, maxExamples = 3 }) => {
         const comp = findComponent(component);
 
         if (!comp) {
@@ -411,30 +541,134 @@ Use this when you need to see how to build the HTML for a component.`,
             );
         }
 
-        const totalExamples = storyExamples.length + curatedExamples.length;
+        // Smart example selection based on maxExamples and minimal flags
+        const totalAvailableExamples = storyExamples.length + curatedExamples.length;
+        const effectiveMaxExamples = Math.min(Math.max(1, maxExamples), 20);
+
+        // Strip documentation artifacts if minimal mode
+        const stripDocArtifacts = (html: string): string => {
+            if (!minimal) return html;
+
+            return html
+                // Remove fddocs-* classes
+                .replace(/class="[^"]*fddocs-[^"]*"/g, (match) => {
+                    const cleaned = match.replace(/\s*fddocs-\S+/g, '');
+                    return cleaned === 'class=""' ? '' : cleaned;
+                })
+                // Remove inline documentation comments (multiline safe)
+                .replace(/<!--[\s\S]*?-->/g, '')
+                // Remove excessive whitespace
+                .replace(/\n\s*\n\s*\n/g, '\n\n')
+                .trim();
+        };
+
+        // Prioritize examples: curated first (higher quality), then story examples
+        let selectedStoryExamples = storyExamples;
+        let selectedCuratedExamples = curatedExamples;
+
+        // If minimal mode, prioritize basic/default examples
+        if (minimal) {
+            // Sort curated examples to prioritize basic/simple ones
+            selectedCuratedExamples = curatedExamples.sort((a, b) => {
+                const aScore = (a.id.includes('basic') ? 10 : 0) + (a.id.includes('simple') ? 5 : 0);
+                const bScore = (b.id.includes('basic') ? 10 : 0) + (b.id.includes('simple') ? 5 : 0);
+                return bScore - aScore;
+            });
+
+            // Sort story examples to prioritize basic/styles ones
+            selectedStoryExamples = storyExamples.sort((a, b) => {
+                const aScore = (a.name.includes('styles') || a.name.includes('basic') ? 10 : 0) +
+                              (a.name.includes('default') ? 5 : 0);
+                const bScore = (b.name.includes('styles') || b.name.includes('basic') ? 10 : 0) +
+                              (b.name.includes('default') ? 5 : 0);
+                return bScore - aScore;
+            });
+        }
+
+        // Apply maxExamples limit - prioritize curated over story
+        const curatedLimit = Math.min(selectedCuratedExamples.length, effectiveMaxExamples);
+        selectedCuratedExamples = selectedCuratedExamples.slice(0, curatedLimit);
+
+        const remaining = effectiveMaxExamples - curatedLimit;
+        if (remaining > 0) {
+            selectedStoryExamples = selectedStoryExamples.slice(0, remaining);
+        } else {
+            selectedStoryExamples = [];
+        }
+
+        const totalExamples = selectedStoryExamples.length + selectedCuratedExamples.length;
+
+        // Calculate output size
+        const calculateSize = (examples: { html: string }[]): number => {
+            return examples.reduce((sum, ex) => sum + ex.html.length, 0);
+        };
+
+        const outputSizeBytes = calculateSize([...selectedStoryExamples, ...selectedCuratedExamples]);
+        const outputSizeKB = (outputSizeBytes / 1024).toFixed(1);
 
         const result: Record<string, unknown> = {
             component: comp.name,
             baseClass: comp.baseClass,
+            mode: minimal ? 'minimal' : (detailed ? 'detailed' : 'standard'),
             variant: variant ?? null,
-            storyExamples: storyExamples.map((ex) => ({
+            examplesReturned: totalExamples,
+            totalExamplesAvailable: totalAvailableExamples,
+            outputSize: `${outputSizeKB}KB`,
+            // Curated examples FIRST (hand-crafted, higher quality)
+            curatedExamples: selectedCuratedExamples.map((ex) => ({
+                id: ex.id,
+                description: ex.description,
+                html: stripDocArtifacts(ex.html),
+                sizeBytes: stripDocArtifacts(ex.html).length,
+                quality: 'curated'
+            })),
+            // Story examples SECOND (auto-generated from Storybook)
+            storyExamples: selectedStoryExamples.map((ex) => ({
                 name: ex.name,
                 description: ex.description,
-                html: ex.html,
+                html: stripDocArtifacts(ex.html),
+                sizeBytes: stripDocArtifacts(ex.html).length,
+                quality: 'story',
                 matchedVariant: variant ? (
                     ex.name.toLowerCase().includes(variant.toLowerCase()) ? 'name' :
                     ex.description.toLowerCase().includes(variant.toLowerCase()) ? 'description' : 'html'
                 ) : undefined
             })),
-            curatedExamples: curatedExamples.map((ex) => ({
-                id: ex.id,
-                description: ex.description,
-                html: ex.html
-            })),
-            totalExamples,
-            storyExamplesCount: storyExamples.length,
-            curatedExamplesCount: curatedExamples.length
+            curatedExamplesCount: selectedCuratedExamples.length,
+            storyExamplesCount: selectedStoryExamples.length,
+            qualityNote: selectedCuratedExamples.length > 0
+                ? 'Curated examples are hand-crafted and production-ready. Story examples are auto-generated from Storybook.'
+                : 'Only story examples available for this component. For higher quality examples, check the layout patterns tool.'
         };
+
+        // Add optimization suggestions if output is large or examples were truncated
+        if (totalAvailableExamples > totalExamples) {
+            result['note'] = `Showing ${totalExamples} of ${totalAvailableExamples} examples. Use maxExamples parameter to see more.`;
+        }
+
+        if (parseFloat(outputSizeKB) > 50 && !minimal) {
+            result['suggestion'] = `Output is ${outputSizeKB}KB. Consider using minimal: true for ~90% size reduction or variant filter for specific examples.`;
+        }
+
+        // Add available variants for discoverability
+        const allVariants = new Set<string>();
+        [...storyExamples, ...curatedExamples].forEach(ex => {
+            const exData = 'variant' in ex ? ex : null;
+            if (exData && typeof exData.variant === 'string') {
+                allVariants.add(exData.variant);
+            }
+            // Extract variants from example names/ids
+            const text = ('name' in ex ? ex.name : ex.id).toLowerCase();
+            if (text.includes('compact')) allVariants.add('compact');
+            if (text.includes('emphasized')) allVariants.add('emphasized');
+            if (text.includes('transparent')) allVariants.add('transparent');
+            if (text.includes('navigation')) allVariants.add('navigation');
+            if (text.includes('selection')) allVariants.add('selection');
+        });
+
+        if (allVariants.size > 0) {
+            result['variantsAvailable'] = Array.from(allVariants);
+        }
 
         // Add detailed information if requested
         if (detailed) {
@@ -473,6 +707,100 @@ Use this when you need to see how to build the HTML for a component.`,
             if (comp.variables && comp.variables.length > 0) {
                 result['cssVariables'] = comp.variables.slice(0, 10);
             }
+        }
+
+        // Content Density Options (always show for components that support it)
+        const densityComponents = ['table', 'list', 'tree', 'input', 'button', 'bar', 'toolbar', 'card', 'panel'];
+        if (densityComponents.includes(comp.id)) {
+            result['contentDensity'] = {
+                modes: [
+                    { name: 'Cozy (default)', size: '44px touch targets', usage: 'Mobile, touch devices, accessibility' },
+                    { name: 'Compact', size: '32px touch targets', usage: 'Desktop, mouse users, dense data views', modifier: `${comp.baseClass}--compact` },
+                    { name: 'Condensed', size: 'Ultra-dense', usage: 'Power users, maximum data density', modifier: `${comp.baseClass}--condensed` }
+                ],
+                recommendation: 'Use cozy (default) on mobile/touch. Use compact on desktop for experienced users.',
+                example: `<${comp.baseClass === 'fd-table' ? 'table' : 'div'} class="${comp.baseClass} ${comp.baseClass}--compact">`,
+                learnMore: {
+                    skill: 'content-density',
+                    activation: 'Type /content-density',
+                    description: 'Complete guide: when to use each mode, accessibility considerations, responsive design patterns'
+                }
+            };
+        }
+
+        // Recommendations for related tools/patterns
+        const recommendations: any[] = [];
+
+        // Interactive patterns recommendation
+        const interactiveComponents = {
+            'table': ['table-sorting', 'table-selection'],
+            'dialog': ['dialog-open-close'],
+            'popover': ['popover-toggle'],
+            'tabs': ['tabs-switching'],
+            'input': ['input-validation'],
+            'side-nav': ['side-nav-collapse']
+        };
+        if (interactiveComponents[comp.id]) {
+            recommendations.push({
+                tool: 'get_interaction_patterns',
+                reason: `Add JavaScript interactivity: ${interactiveComponents[comp.id].join(', ')}`,
+                patterns: interactiveComponents[comp.id]
+            });
+        }
+
+        // Layout patterns recommendation
+        const layoutComponents = ['page', 'panel', 'shellbar', 'side-nav', 'dynamic-page'];
+        if (layoutComponents.includes(comp.id)) {
+            recommendations.push({
+                tool: 'get_layout_patterns',
+                reason: 'See complete UI layout patterns using this component',
+                relevantPatterns: comp.id === 'shellbar' || comp.id === 'side-nav' ? ['layout-navigation-shell'] :
+                                 comp.id === 'page' ? ['layout-master-detail', 'layout-dashboard-grid'] : [],
+                skill: {
+                    name: 'layout-patterns',
+                    activation: 'Type /layout-patterns',
+                    description: '7 complete patterns with composition guidance and responsive design'
+                }
+            });
+        }
+
+        // Component guidance recommendation (always relevant)
+        if (!detailed) {
+            // Determine which guidance skill is most relevant
+            let guidanceSkill = 'component-guidance-forms';
+            if (['table', 'list', 'tree', 'object-status'].includes(comp.id)) {
+                guidanceSkill = 'component-guidance-data';
+            } else if (['shellbar', 'side-nav', 'menu', 'breadcrumb', 'tabs'].includes(comp.id)) {
+                guidanceSkill = 'component-guidance-navigation';
+            } else if (['page', 'panel', 'bar', 'flexible-column-layout'].includes(comp.id)) {
+                guidanceSkill = 'component-guidance-layout';
+            } else if (['message-strip', 'popover', 'dialog', 'alert'].includes(comp.id)) {
+                guidanceSkill = 'component-guidance-feedback';
+            } else if (['button', 'link'].includes(comp.id)) {
+                guidanceSkill = 'component-guidance-actions';
+            }
+
+            recommendations.push({
+                tool: 'get_component_guidance',
+                reason: 'Get best practices, when to use, and design guidelines',
+                example: `get_component_guidance("${comp.id}")`,
+                skill: {
+                    name: guidanceSkill,
+                    activation: `Type /${guidanceSkill}`,
+                    description: 'Deep-dive guidance: when to use/avoid, accessibility, Fiori compliance'
+                }
+            });
+        }
+
+        // Dependency detection recommendation
+        recommendations.push({
+            tool: 'setup_project',
+            reason: 'Get smart CSS dependency detection and setup instructions',
+            example: `setup_project(components: ["${comp.id}"])`
+        });
+
+        if (recommendations.length > 0) {
+            result['recommendations'] = recommendations;
         }
 
         if (totalExamples === 0) {
@@ -838,14 +1166,115 @@ Use this when you need helper classes for layout, spacing, or visual styling.`,
 // ---------------------------------------------------------------------------
 server.tool(
     'recommend_components',
-    `Given a UI description, recommend which fundamental-styles CSS components to use.
+    `Given a UI description, recommend which fundamental-styles CSS components to use with semantic understanding.
 Describe what you want to build (e.g., "a login form", "a data table with filters",
-"a master-detail layout") and get recommended components with their CSS classes and confidence scores.`,
+"a dashboard with KPI metrics", "a master-detail layout") and get recommended components with their CSS classes, confidence scores, and usage guidance.
+Returns composite patterns for complex UIs (e.g., suggests multiple components that work together).`,
     {
-        description: z.string().describe('What you want to build (e.g., "a form with validation and submit button", "something clickable")')
+        description: z.string().describe('What you want to build (e.g., "a form with validation and submit button", "dashboard with kpi metrics", "master detail layout")')
     },
     async ({ description }) => {
         const lowerDesc = description.toLowerCase();
+        const expandedTerms = expandQuery(description);
+
+        // Detect composite patterns
+        const compositePatterns: Array<{
+            pattern: string;
+            components: string[];
+            description: string;
+        }> = [];
+
+        // Define composite pattern detection
+        const compositeMatchers: Array<{
+            keywords: string[];
+            pattern: string;
+            components: string[];
+            description: string;
+        }> = [
+            {
+                keywords: ['dashboard', 'kpi', 'metric'],
+                pattern: 'Dashboard with KPI Metrics',
+                components: ['card', 'numeric-content', 'object-status', 'layout-grid', 'title'],
+                description: 'Use Card components in a grid layout, each containing numeric-content for KPI values and object-status for trend indicators'
+            },
+            {
+                keywords: ['master', 'detail', 'split'],
+                pattern: 'Master-Detail Layout',
+                components: ['flexible-column-layout', 'list', 'dynamic-page', 'toolbar'],
+                description: 'Use flexible-column-layout as container, list for master view, and dynamic-page for detail view'
+            },
+            {
+                keywords: ['table', 'filter', 'search', 'toolbar'],
+                pattern: 'Data Table with Filters',
+                components: ['table', 'toolbar', 'search-field', 'input', 'button', 'pagination'],
+                description: 'Use toolbar above table with search-field and filter inputs, table for data display, and pagination below'
+            },
+            {
+                keywords: ['form', 'validation', 'submit'],
+                pattern: 'Form with Validation',
+                components: ['form-item', 'form-label', 'input', 'form-message', 'button', 'card'],
+                description: 'Wrap in card, use form-item for each field (contains form-label, input, and form-message for errors), button for submit'
+            },
+            {
+                keywords: ['login', 'signin', 'auth'],
+                pattern: 'Login Form',
+                components: ['card', 'form-item', 'form-label', 'input', 'button', 'link', 'message-strip'],
+                description: 'Card container with form-items for username/password inputs, button for submit, link for "Forgot Password", message-strip for error messages'
+            },
+            {
+                keywords: ['navigation', 'sidebar', 'menu'],
+                pattern: 'Application Navigation',
+                components: ['shellbar', 'side-nav', 'breadcrumb', 'page'],
+                description: 'Shellbar at top for global nav and user menu, side-nav for main navigation, breadcrumb for current location, page for content'
+            },
+            {
+                keywords: ['wizard', 'multi-step', 'stepper'],
+                pattern: 'Multi-Step Wizard',
+                components: ['wizard', 'bar', 'button', 'form-item', 'progress-indicator'],
+                description: 'Use wizard for step navigation, bar for header/footer, progress-indicator for completion status, buttons for navigation'
+            },
+            {
+                keywords: ['dialog', 'form', 'modal'],
+                pattern: 'Dialog with Form',
+                components: ['dialog', 'bar', 'form-item', 'input', 'button'],
+                description: 'Dialog container with bar for header/footer, form-items for inputs in dialog body, buttons in footer for actions'
+            },
+            {
+                keywords: ['upload', 'file', 'drag', 'drop'],
+                pattern: 'File Upload',
+                components: ['file-uploader', 'button', 'progress-indicator', 'upload-collection', 'message-strip'],
+                description: 'Use file-uploader for file selection, button to trigger, progress-indicator for upload progress, upload-collection to display files, message-strip for errors'
+            },
+            {
+                keywords: ['card', 'grid', 'tile', 'layout'],
+                pattern: 'Card Grid Layout',
+                components: ['layout-grid', 'card', 'title', 'button'],
+                description: 'Use layout-grid or CSS grid for responsive layout, card for each item with title and content, button for actions'
+            }
+        ];
+
+        // Detect composite patterns
+        for (const matcher of compositeMatchers) {
+            const matchCount = matcher.keywords.filter(kw => expandedTerms.includes(kw) || lowerDesc.includes(kw)).length;
+            if (matchCount >= 2) {
+                compositePatterns.push({
+                    pattern: matcher.pattern,
+                    components: matcher.components,
+                    description: matcher.description
+                });
+            }
+        }
+
+        // Use semantic search to find matching components
+        const allMatches = data.components
+            .map((c) => {
+                const semanticTags = data.semanticTags?.components[c.id];
+                return scoreSemanticMatch(c, lowerDesc, semanticTags, expandedTerms);
+            })
+            .filter((s) => s.score > 0)
+            .sort((a, b) => b.score - a.score);
+
+        // Build recommendations
         const recommendations: Array<{
             component: string;
             baseClass: string;
@@ -853,105 +1282,59 @@ Describe what you want to build (e.g., "a login form", "a data table with filter
             reason: string;
             confidence: 'high' | 'medium' | 'low';
             priority: number;
+            suggestedUse?: string;
+            matchedPatterns?: string[];
+            matchedUseCases?: string[];
         }> = [];
 
-        // Handle vague queries with general-purpose components
-        const vaguePhrases = ['something', 'anything', 'component', 'element', 'clickable', 'interactive', 'thing'];
-        const isVague = vaguePhrases.some((phrase) => lowerDesc.includes(phrase));
+        // If we detected composite patterns, prioritize those components
+        if (compositePatterns.length > 0) {
+            const compositeComponentIds = new Set<string>();
+            compositePatterns.forEach(p => p.components.forEach(id => compositeComponentIds.add(id)));
 
-        if (isVague) {
-            // For vague queries, recommend the most common general-purpose components
-            const generalPurpose = [
-                { id: 'button', reason: 'Primary interactive element - for actions and triggers', confidence: 'high' as const, priority: 1 },
-                { id: 'link', reason: 'For navigation and hyperlinks', confidence: 'high' as const, priority: 2 },
-                { id: 'input', reason: 'For user text input', confidence: 'medium' as const, priority: 3 },
-                { id: 'icon', reason: 'Visual indicators and actions', confidence: 'medium' as const, priority: 4 },
-                { id: 'menu', reason: 'For dropdown actions and selections', confidence: 'medium' as const, priority: 5 }
-            ];
+            // Add composite pattern components first
+            for (const match of allMatches) {
+                if (compositeComponentIds.has(match.component.id) && recommendations.length < 15) {
+                    const inPatterns = compositePatterns
+                        .filter(p => p.components.includes(match.component.id))
+                        .map(p => p.pattern);
 
-            // Filter by specific hints if present
-            if (lowerDesc.includes('click')) {
-                generalPurpose.unshift(
-                    { id: 'button', reason: 'Clickable action - primary use case for buttons', confidence: 'high' as const, priority: 1 }
-                );
-            }
-
-            for (const item of generalPurpose) {
-                const comp = data.components.find((c) => c.id === item.id);
-                if (comp && !recommendations.some((r) => r.baseClass === comp.baseClass)) {
                     recommendations.push({
-                        component: comp.name,
-                        baseClass: comp.baseClass,
-                        category: comp.category,
-                        reason: item.reason,
-                        confidence: item.confidence,
-                        priority: item.priority
+                        component: match.component.name,
+                        baseClass: match.component.baseClass,
+                        category: match.component.category,
+                        reason: match.matchReasons[0] || 'Part of recommended composite pattern',
+                        confidence: match.confidence,
+                        priority: 1,
+                        suggestedUse: inPatterns.length > 0 ? `Used in: ${inPatterns.join(', ')}` : undefined,
+                        matchedPatterns: match.matchedTags.patterns.slice(0, 3),
+                        matchedUseCases: match.matchedTags.useCases.slice(0, 3)
                     });
-                }
-            }
-        } else {
-            // Pattern-based recommendations with confidence scores
-            for (const [pattern, componentIds] of Object.entries(UI_PATTERNS)) {
-                const keywords = pattern.split('|');
-                const matchedKeywords = keywords.filter((kw) => lowerDesc.includes(kw));
-
-                if (matchedKeywords.length > 0) {
-                    // Confidence based on specificity of match
-                    const confidence: 'high' | 'medium' | 'low' =
-                        matchedKeywords.length >= 2 ? 'high' :
-                        matchedKeywords[0].length > 4 ? 'high' : 'medium';
-
-                    for (const id of componentIds) {
-                        const comp = data.components.find((c) => c.id === id);
-                        if (comp && !recommendations.some((r) => r.component === comp.name)) {
-                            // Determine priority and specificity
-                            const isCore = ['button', 'input', 'form-item', 'form-label'].includes(id);
-                            const isSpecialized = id.includes('-') && !isCore;
-
-                            recommendations.push({
-                                component: comp.name,
-                                baseClass: comp.baseClass,
-                                category: comp.category,
-                                reason: `Matches "${matchedKeywords.join('", "')}" - ${isCore ? 'essential component' : isSpecialized ? 'specialized variant' : 'recommended for this use case'}`,
-                                confidence,
-                                priority: isCore ? 1 : isSpecialized ? 3 : 2
-                            });
-                        }
-                    }
-                }
-            }
-
-            // Keyword fallback search with lower confidence
-            if (recommendations.length < 3) {
-                const words = lowerDesc.split(/\s+/).filter((w) => w.length > 3);
-                for (const word of words) {
-                    const matches = data.components
-                        .filter(
-                            (c) =>
-                                c.id.includes(word) ||
-                                c.name.toLowerCase().includes(word) ||
-                                c.category?.toLowerCase().includes(word) ||
-                                c.baseClass.includes(word)
-                        )
-                        .slice(0, 3);
-
-                    for (const comp of matches) {
-                        if (!recommendations.some((r) => r.baseClass === comp.baseClass)) {
-                            recommendations.push({
-                                component: comp.name,
-                                baseClass: comp.baseClass,
-                                category: comp.category,
-                                reason: `Component name/category matches "${word}"`,
-                                confidence: 'low',
-                                priority: 4
-                            });
-                        }
-                    }
                 }
             }
         }
 
-        // Sort by priority, then confidence, then alphabetically
+        // Add remaining high-scoring matches
+        for (const match of allMatches) {
+            if (!recommendations.some(r => r.baseClass === match.component.baseClass) && recommendations.length < 20) {
+                // Determine priority based on confidence and specificity
+                const priority = match.confidence === 'high' ? (compositePatterns.length > 0 ? 2 : 1) :
+                                match.confidence === 'medium' ? 3 : 4;
+
+                recommendations.push({
+                    component: match.component.name,
+                    baseClass: match.component.baseClass,
+                    category: match.component.category,
+                    reason: match.matchReasons[0] || 'Semantic match',
+                    confidence: match.confidence,
+                    priority,
+                    matchedPatterns: match.matchedTags.patterns.length > 0 ? match.matchedTags.patterns.slice(0, 3) : undefined,
+                    matchedUseCases: match.matchedTags.useCases.length > 0 ? match.matchedTags.useCases.slice(0, 3) : undefined
+                });
+            }
+        }
+
+        // Sort by priority, then confidence, then score
         const confidenceOrder = { high: 1, medium: 2, low: 3 };
         recommendations.sort((a, b) => {
             if (a.priority !== b.priority) return a.priority - b.priority;
@@ -959,7 +1342,7 @@ Describe what you want to build (e.g., "a login form", "a data table with filter
             return a.component.localeCompare(b.component);
         });
 
-        // Limit results and group by confidence
+        // Limit results
         const limitedRecommendations = recommendations.slice(0, 15);
         const groupedByConfidence = {
             high: limitedRecommendations.filter((r) => r.confidence === 'high'),
@@ -974,7 +1357,11 @@ Describe what you want to build (e.g., "a login form", "a data table with filter
                     text: JSON.stringify(
                         {
                             description,
-                            isVagueQuery: isVague,
+                            interpretation: compositePatterns.length > 0
+                                ? `Detected ${compositePatterns.length} composite pattern(s): ${compositePatterns.map(p => p.pattern).join(', ')}`
+                                : 'Searching for individual component matches',
+                            compositePatterns: compositePatterns.length > 0 ? compositePatterns : undefined,
+                            expandedSearchTerms: expandedTerms.slice(0, 10),
                             summary: {
                                 total: limitedRecommendations.length,
                                 highConfidence: groupedByConfidence.high.length,
@@ -982,7 +1369,7 @@ Describe what you want to build (e.g., "a login form", "a data table with filter
                                 lowConfidence: groupedByConfidence.low.length
                             },
                             recommendations: limitedRecommendations,
-                            note: 'Use get_css_classes for full class details and get_component_html for usage examples.'
+                            note: 'Use get_css_classes for full class details, get_component_html for usage examples, and get_component_relationships for composition guidance.'
                         },
                         null,
                         2
@@ -1559,6 +1946,21 @@ Keywords: quick start, getting started, setup, initial setup, new project, boots
     async ({ approach, themes, componentMode, components }) => {
         const componentList = components || ['button', 'input', 'form-item', 'form-label'];
 
+        // Smart dependency detection
+        let cssDependencies: string[] = [];
+        let dependencyRecommendations: { css: string; reason: string }[] = [];
+        let detectedPatterns: any[] = [];
+
+        if (components && components.length > 0) {
+            const deps = suggestDependencies(components);
+            cssDependencies = Array.from(deps.required);
+            dependencyRecommendations = Array.from(deps.recommended.entries()).map(([css, reason]) => ({
+                css,
+                reason
+            }));
+            detectedPatterns = deps.patterns;
+        }
+
         // All available themes
         const allThemes = [
             'sap_horizon',
@@ -1934,14 +2336,101 @@ body {
                 name: '@fundamental-styles/common-css',
                 description: 'Utility classes for margins, padding, flexbox, display (sap-* classes)',
                 install: 'npm install @fundamental-styles/common-css',
-                usage: "import '@fundamental-styles/common-css/dist/common-css.css';"
+                cdnUrl: 'https://unpkg.com/@fundamental-styles/common-css@latest/dist/common-css.css',
+                usage: "import '@fundamental-styles/common-css/dist/common-css.css';",
+                examples: {
+                    spacing: 'sap-margin-small, sap-padding-medium, sap-margin-top-tiny',
+                    flexbox: 'sap-flex, sap-flex--center, sap-flex--justify-between, sap-flex--gap-small',
+                    display: 'sap-display-none, sap-display-block, sap-display-inline-block'
+                },
+                whenToUse: 'Use for responsive layouts, spacing consistency, and quick prototyping without writing custom CSS'
             },
             {
                 name: '@fundamental-styles/cx',
                 description: 'CX-specific components (customer experience)',
-                install: 'npm install @fundamental-styles/cx'
+                install: 'npm install @fundamental-styles/cx',
+                whenToUse: 'Use for customer-facing experiences, support portals, and CX-specific patterns'
             }
         ];
+
+        // Add smart dependency detection results if components were specified
+        if (cssDependencies.length > 0 || dependencyRecommendations.length > 0) {
+            result['smartDependencies'] = {
+                description: 'Smart CSS dependency detection based on your selected components',
+                selectedComponents: components,
+                required: cssDependencies,
+                recommended: dependencyRecommendations.map(d => ({
+                    css: d.css,
+                    reason: d.reason
+                })),
+                detectedPatterns: detectedPatterns.map(p => ({
+                    pattern: p.name,
+                    confidence: p.confidence,
+                    reason: p.reason,
+                    suggestedDependencies: p.suggestedDependencies,
+                    exampleId: p.exampleId
+                })),
+                note: dependencyRecommendations.length > 0
+                    ? `Based on your component selection, we detected ${dependencyRecommendations.length} recommended CSS file${dependencyRecommendations.length > 1 ? 's' : ''} that are commonly used together.`
+                    : null
+            };
+        }
+
+        // Add tool recommendations based on component selection
+        const toolRecommendations: any[] = [];
+
+        if (components && components.length > 0) {
+            // Check for layout components
+            const layoutComponents = ['page', 'panel', 'shellbar', 'side-nav', 'dynamic-page'];
+            if (components.some(c => layoutComponents.includes(c))) {
+                toolRecommendations.push({
+                    tool: 'get_layout_patterns',
+                    reason: 'You selected layout components. See complete UI patterns: navigation shell, master-detail, dashboard',
+                    components: components.filter(c => layoutComponents.includes(c)),
+                    skill: {
+                        name: 'layout-patterns',
+                        activation: 'Type /layout-patterns',
+                        description: '7 complete patterns with composition guidance and responsive design'
+                    }
+                });
+            }
+
+            // Check for interactive components
+            const interactiveComponents = ['table', 'dialog', 'popover', 'tabs', 'input'];
+            if (components.some(c => interactiveComponents.includes(c))) {
+                toolRecommendations.push({
+                    tool: 'get_interaction_patterns',
+                    reason: 'You selected interactive components. Add JavaScript patterns: sorting, validation, dialogs',
+                    components: components.filter(c => interactiveComponents.includes(c))
+                });
+            }
+
+            // Check for dense data components
+            const denseComponents = ['table', 'list', 'tree'];
+            if (components.some(c => denseComponents.includes(c))) {
+                toolRecommendations.push({
+                    tip: 'content-density',
+                    reason: `Consider using compact mode (--compact) for desktop users with ${components.filter(c => denseComponents.includes(c)).join(', ')}`,
+                    example: components.filter(c => denseComponents.includes(c)).map(c => `fd-${c}--compact`).join(', '),
+                    skill: {
+                        name: 'content-density',
+                        activation: 'Type /content-density',
+                        description: 'Complete guide: when to use each mode, accessibility, responsive design'
+                    }
+                });
+            }
+
+            // Always recommend component guidance
+            toolRecommendations.push({
+                tool: 'get_component_guidance',
+                reason: 'Get best practices and design guidelines for your selected components',
+                example: `get_component_guidance("${components[0]}")`
+            });
+        }
+
+        if (toolRecommendations.length > 0) {
+            result['toolRecommendations'] = toolRecommendations;
+        }
 
         return {
             content: [
@@ -2253,6 +2742,452 @@ const UI_PATTERNS: Record<string, string[]> = {
     'carousel|slider|gallery': ['carousel'],
     'ai|assistant|prompt': ['prompt-input', 'ai-text', 'ai-busy-indicator']
 };
+
+// ---------------------------------------------------------------------------
+// Tool: get_layout_patterns
+// ---------------------------------------------------------------------------
+server.tool(
+    'get_layout_patterns',
+    `Get complete UI layout patterns with HTML examples.
+Returns production-ready layout patterns for enterprise applications including master-detail, dashboard grids, and navigation shells.
+Use this when building application layouts or page structures.`,
+    {
+        pattern: z.string().optional().describe('Filter to specific pattern (e.g., "master-detail", "dashboard", "navigation")'),
+        includeCode: z.boolean().optional().default(true).describe('Include full HTML/CSS/JS code examples (default: true)')
+    },
+    async ({ pattern, includeCode = true }) => {
+        // Get layout pattern examples from htmlExamples
+        let layoutExamples = (data.htmlExamples?.examples ?? []).filter(ex => {
+            const exData: any = ex;
+            return ex.id.startsWith('layout-') ||
+                   (exData.tags && Array.isArray(exData.tags) && exData.tags.includes('layout'));
+        });
+
+        // Filter by pattern if specified
+        if (pattern) {
+            const lowerPattern = pattern.toLowerCase();
+            layoutExamples = layoutExamples.filter(ex => {
+                const exData: any = ex;
+                return ex.id.toLowerCase().includes(lowerPattern) ||
+                       ex.description.toLowerCase().includes(lowerPattern) ||
+                       (exData.tags && Array.isArray(exData.tags) && exData.tags.some((t: string) => t.toLowerCase().includes(lowerPattern)));
+            });
+        }
+
+        if (layoutExamples.length === 0) {
+            return {
+                content: [{
+                    type: 'text' as const,
+                    text: JSON.stringify({
+                        patterns: [],
+                        totalPatterns: 0,
+                        message: pattern
+                            ? `No layout patterns found matching "${pattern}". Try: "master-detail", "dashboard", or "navigation"`
+                            : 'No layout patterns available',
+                        availablePatterns: (data.htmlExamples?.examples ?? [])
+                            .filter(ex => ex.id.startsWith('layout-'))
+                            .map(ex => ex.id.replace('layout-', ''))
+                    }, null, 2)
+                }]
+            };
+        }
+
+        const result = {
+            totalPatterns: layoutExamples.length,
+            patternsReturned: layoutExamples.length,
+            patterns: layoutExamples.map(ex => {
+                const exData: any = ex;
+                const patternInfo: any = {
+                    id: ex.id,
+                    name: ex.id.replace('layout-', '').split('-').map(w =>
+                        w.charAt(0).toUpperCase() + w.slice(1)
+                    ).join(' '),
+                    description: ex.description,
+                    components: ex.components,
+                    useCases: exData.useCases || [],
+                    complexity: exData.complexity || 'medium',
+                    responsive: exData.responsive !== false,
+                    javascriptRequired: exData.javascriptRequired || false
+                };
+
+                if (includeCode) {
+                    patternInfo.htmlExample = ex.html;
+                    patternInfo.sizeKB = (ex.html.length / 1024).toFixed(1);
+                } else {
+                    patternInfo.note = 'Use includeCode: true to get full HTML example';
+                }
+
+                if (exData.tags) {
+                    patternInfo.tags = exData.tags;
+                }
+
+                return patternInfo;
+            })
+        };
+
+        return {
+            content: [{
+                type: 'text' as const,
+                text: JSON.stringify(result, null, 2)
+            }]
+        };
+    }
+);
+
+
+// ---------------------------------------------------------------------------
+// Tool: get_interaction_patterns
+// ---------------------------------------------------------------------------
+server.tool(
+    'get_interaction_patterns',
+    `Get JavaScript interaction patterns for fundamental-styles components.
+Returns complete vanilla JS and React examples for common interactions like:
+- Sortable tables, row selection
+- Dialog open/close with focus management
+- Collapsible navigation
+- Input validation with error display
+- Popover toggle
+- Tab switching with keyboard navigation
+Each pattern includes HTML, JavaScript (vanilla & React), CSS requirements, and accessibility guidance.
+Use this when implementing interactive features or adding JavaScript behavior to components.`,
+    {
+        pattern: z
+            .string()
+            .optional()
+            .describe('Specific pattern name (e.g., "table-sorting", "dialog-open-close"). Omit to see all patterns.'),
+        component: z
+            .string()
+            .optional()
+            .describe('Filter patterns by component (e.g., "table", "dialog")'),
+        includeCode: z
+            .boolean()
+            .optional()
+            .default(true)
+            .describe('Include full JavaScript code examples (default: true)')
+    },
+    async ({ pattern, component, includeCode = true }) => {
+        const interactionPatterns = readDataFile('interaction-patterns.json');
+
+        if (!interactionPatterns) {
+            return {
+                content: [
+                    {
+                        type: 'text' as const,
+                        text: 'Interaction patterns data not available.'
+                    }
+                ]
+            };
+        }
+
+        const patternsData = JSON.parse(interactionPatterns);
+        let patterns = Object.entries(patternsData.patterns).map(([id, p]: [string, any]) => ({
+            id,
+            ...p
+        }));
+
+        // Filter by pattern name
+        if (pattern) {
+            patterns = patterns.filter(p => p.id.toLowerCase().includes(pattern.toLowerCase()) ||
+                p.name.toLowerCase().includes(pattern.toLowerCase()));
+        }
+
+        // Filter by component
+        if (component) {
+            patterns = patterns.filter(p =>
+                p.components.some((c: string) => c.toLowerCase().includes(component.toLowerCase()))
+            );
+        }
+
+        if (patterns.length === 0) {
+            return {
+                content: [
+                    {
+                        type: 'text' as const,
+                        text: `No interaction patterns found${pattern ? ` for "${pattern}"` : ''}${component ? ` with component "${component}"` : ''}. Available patterns: ${Object.keys(patternsData.patterns).join(', ')}`
+                    }
+                ]
+            };
+        }
+
+        // Format output
+        const result: any = {
+            version: patternsData.version,
+            description: patternsData.description,
+            patternsReturned: patterns.length,
+            patterns: patterns.map((p: any) => {
+                const formatted: any = {
+                    id: p.id,
+                    name: p.name,
+                    description: p.description,
+                    components: p.components,
+                    requiredCSS: p.requiredCSS,
+                    complexity: p.complexity,
+                    interactionType: p.interactionType
+                };
+
+                if (includeCode) {
+                    formatted.javascript = p.javascript;
+                    formatted.html = p.html;
+                }
+
+                if (p.accessibility) {
+                    formatted.accessibility = p.accessibility;
+                }
+
+                return formatted;
+            })
+        };
+
+        // Add common pitfalls
+        if (!pattern && !component) {
+            result.commonPitfalls = patternsData.commonPitfalls;
+        }
+
+        return {
+            content: [
+                {
+                    type: 'text' as const,
+                    text: JSON.stringify(result, null, 2)
+                }
+            ]
+        };
+    }
+);
+
+// ---------------------------------------------------------------------------
+// Tool: list_mcp_resources
+// ---------------------------------------------------------------------------
+server.tool(
+    'list_mcp_resources',
+    `List all available resources in the fundamental-styles MCP.
+Shows tools, data categories, component counts, and available patterns.
+Use this to discover what the MCP can help you with.`,
+    {
+        detailed: z.boolean().optional().default(false).describe('Include detailed breakdown of resources (default: false)')
+    },
+    async ({ detailed = false }) => {
+        const layoutPatterns = (data.htmlExamples?.examples ?? []).filter(ex =>
+            ex.id.startsWith('layout-')
+        );
+
+        const componentsByCategory = data.components.reduce((acc, comp) => {
+            const cat = comp.category || 'Other';
+            acc[cat] = (acc[cat] || 0) + 1;
+            return acc;
+        }, {} as Record<string, number>);
+
+        const result: any = {
+            version: data.version,
+            summary: {
+                totalComponents: data.components.length,
+                totalDesignTokens: data.designTokens.length,
+                layoutPatterns: layoutPatterns.length,
+                htmlExamples: data.htmlExamples?.totalExamples || 0,
+                utilityClasses: data.utilityClasses ? Object.keys((data.utilityClasses as any).classes || {}).length : 0
+            },
+            tools: [
+                {
+                    name: 'search_components',
+                    purpose: 'Find components by name, description, or use case',
+                    example: 'search_components("button")',
+                    whenToUse: 'When you need to discover which component to use for a specific need'
+                },
+                {
+                    name: 'get_component',
+                    purpose: 'Get detailed info about a specific component',
+                    example: 'get_component("dialog")',
+                    whenToUse: 'When you know the component name and need CSS classes, modifiers, and structure'
+                },
+                {
+                    name: 'get_component_html',
+                    purpose: 'Get HTML examples for a component',
+                    example: 'get_component_html("table", minimal: true)',
+                    whenToUse: 'When you need working HTML code to copy/paste'
+                },
+                {
+                    name: 'get_layout_patterns',
+                    purpose: 'Get complete UI layout patterns with code',
+                    example: 'get_layout_patterns("master-detail")',
+                    whenToUse: 'Building: navigation shell, master-detail view, dashboard grid, or complete page layouts'
+                },
+                {
+                    name: 'get_interaction_patterns',
+                    purpose: 'Get JavaScript patterns for interactive features',
+                    example: 'get_interaction_patterns(component: "table")',
+                    whenToUse: 'Adding interactivity: table sorting, dialog modals, input validation, tab switching'
+                },
+                {
+                    name: 'get_component_guidance',
+                    purpose: 'Get usage guidance and best practices',
+                    example: 'get_component_guidance("dialog")',
+                    whenToUse: 'Deciding which component to use, understanding when to use/avoid, best practices'
+                },
+                {
+                    name: 'setup_project',
+                    purpose: 'Get project setup with smart CSS dependency detection',
+                    example: 'setup_project(components: ["dialog", "table"])',
+                    whenToUse: 'Starting a new project or adding fundamental-styles to existing project'
+                },
+                {
+                    name: 'get_design_tokens',
+                    purpose: 'Search CSS design tokens/variables',
+                    example: 'get_design_tokens("background")',
+                    whenToUse: 'Customizing styles, theming, or building custom components'
+                },
+                {
+                    name: 'get_css_classes',
+                    purpose: 'Get detailed CSS class documentation',
+                    example: 'get_css_classes("fd-button")',
+                    whenToUse: 'Deep dive into specific component class structure and modifiers'
+                }
+            ],
+            skillActivationGuide: {
+                overview: 'Skills provide comprehensive guidance. Tools provide quick lookups and code generation.',
+                layoutPatterns: {
+                    skill: 'layout-patterns',
+                    activation: 'Type /layout-patterns',
+                    description: '7 complete UI patterns: navigation shell, master-detail, dashboard, form wizard',
+                    relatedTool: 'get_layout_patterns',
+                    triggers: ['Building page layouts', 'Navigation shell', 'Master-detail view', 'Dashboard grid'],
+                    components: ['page', 'panel', 'shellbar', 'side-nav', 'dynamic-page'],
+                    whenToUse: 'Use skill for learning/exploration. Use tool for quick code generation.'
+                },
+                interactionPatterns: {
+                    relatedTool: 'get_interaction_patterns',
+                    triggers: ['Adding JavaScript', 'Sortable tables', 'Dialog handling', 'Form validation', 'Tab switching'],
+                    components: ['table', 'dialog', 'popover', 'tabs', 'input', 'side-nav'],
+                    whenToUse: 'Use tool for implementation examples and code snippets'
+                },
+                componentGuidanceForms: {
+                    skill: 'component-guidance-forms',
+                    activation: 'Type /component-guidance-forms',
+                    description: '26 form components: when to use, when to avoid, best practices, examples',
+                    relatedTool: 'get_component_guidance (category: "forms")',
+                    triggers: ['Choosing form components', 'Input design', 'Checkbox vs radio', 'Form validation'],
+                    components: ['input', 'checkbox', 'radio', 'select', 'switch', 'textarea', 'file-uploader'],
+                    whenToUse: 'Use skill for component selection. Use tool for HTML examples.'
+                },
+                componentGuidanceData: {
+                    skill: 'component-guidance-data',
+                    activation: 'Type /component-guidance-data',
+                    description: '23 data display components: table, list, tree guidance with best practices',
+                    relatedTool: 'get_component_guidance (category: "data-display")',
+                    triggers: ['Data tables', 'Lists vs tables', 'Tree structures', 'Object status'],
+                    components: ['table', 'list', 'tree', 'object-status', 'object-number'],
+                    whenToUse: 'Use skill for design decisions. Use tool for implementation.'
+                },
+                componentGuidanceNavigation: {
+                    skill: 'component-guidance-navigation',
+                    activation: 'Type /component-guidance-navigation',
+                    description: '8 navigation components: shellbar, side-nav, menu, breadcrumb guidance',
+                    relatedTool: 'get_component_guidance (category: "navigation")',
+                    triggers: ['Navigation patterns', 'Menu design', 'Breadcrumbs', 'Tabs'],
+                    components: ['shellbar', 'side-nav', 'menu', 'breadcrumb', 'tabs'],
+                    whenToUse: 'Use skill for navigation architecture. Use tool for code.'
+                },
+                componentGuidanceLayout: {
+                    skill: 'component-guidance-layout',
+                    activation: 'Type /component-guidance-layout',
+                    description: '11 layout components: page, panel, bar, section guidance',
+                    relatedTool: 'get_component_guidance (category: "layout")',
+                    triggers: ['Layout containers', 'Page structure', 'Panels', 'Sections'],
+                    components: ['page', 'panel', 'bar', 'section', 'dynamic-page'],
+                    whenToUse: 'Use skill for layout architecture. Use tool for examples.'
+                },
+                componentGuidanceFeedback: {
+                    skill: 'component-guidance-feedback',
+                    activation: 'Type /component-guidance-feedback',
+                    description: '15 feedback components: message-strip, dialog, popover guidance',
+                    relatedTool: 'get_component_guidance (category: "feedback")',
+                    triggers: ['Error messages', 'Dialogs', 'Notifications', 'Alerts'],
+                    components: ['message-strip', 'dialog', 'popover', 'alert', 'notification'],
+                    whenToUse: 'Use skill for UX decisions. Use tool for implementation.'
+                },
+                componentGuidanceActions: {
+                    skill: 'component-guidance-actions',
+                    activation: 'Type /component-guidance-actions',
+                    description: '4 action components: button, link guidance with hierarchy',
+                    relatedTool: 'get_component_guidance (category: "actions")',
+                    triggers: ['Button styles', 'Link vs button', 'Action hierarchy'],
+                    components: ['button', 'link'],
+                    whenToUse: 'Use skill for action design patterns. Use tool for code.'
+                },
+                contentDensity: {
+                    skill: 'content-density',
+                    activation: 'Type /content-density',
+                    description: 'Complete guide to cozy/compact/condensed modes, accessibility, responsive design',
+                    relatedTool: 'get_component_html (contentDensity section)',
+                    triggers: ['Dense data tables', 'Desktop UIs', 'Compact mode', 'Power users'],
+                    components: ['table', 'list', 'tree', 'input', 'button', 'bar', 'toolbar'],
+                    whenToUse: 'Use skill for design decisions. Use tool for implementation examples.'
+                },
+                bemNaming: {
+                    skill: 'bem-naming',
+                    activation: 'Type /bem-naming',
+                    description: 'BEM naming conventions for fundamental-styles components',
+                    triggers: ['Class naming', 'Custom components', 'CSS architecture'],
+                    whenToUse: 'Building custom components or extending fundamental-styles'
+                },
+                componentComposition: {
+                    skill: 'component-composition',
+                    activation: 'Type /component-composition',
+                    description: 'How to compose components together (e.g., dialog + form, table + toolbar)',
+                    triggers: ['Component combinations', 'Complex patterns', 'Nested components'],
+                    whenToUse: 'Building complex UIs with multiple interacting components'
+                },
+                dependencyDetection: {
+                    tool: 'setup_project',
+                    triggers: ['Project setup', 'Missing CSS', 'Component combinations'],
+                    feature: 'Automatically detects required CSS based on selected components'
+                }
+            },
+            quickStartWorkflows: {
+                'Build a master-detail layout': [
+                    '1. get_layout_patterns("master-detail") - Get complete HTML pattern',
+                    '2. get_component_html("list") - Customize the list',
+                    '3. get_interaction_patterns(component: "list") - Add selection'
+                ],
+                'Create a data table with sorting': [
+                    '1. get_component_html("table") - Get table HTML',
+                    '2. get_interaction_patterns(pattern: "table-sorting") - Add sorting logic',
+                    '3. setup_project(components: ["table"]) - Get CSS dependencies'
+                ],
+                'Build a navigation shell': [
+                    '1. get_layout_patterns("navigation-shell") - Get complete pattern',
+                    '2. get_component_guidance("shellbar") - Understand best practices',
+                    '3. get_interaction_patterns(component: "side-nav") - Add collapse logic'
+                ],
+                'Create a form with validation': [
+                    '1. get_component_html("input") - Get form fields',
+                    '2. get_interaction_patterns(pattern: "input-validation") - Add validation',
+                    '3. setup_project(components: ["input", "button"]) - Get dependencies'
+                ]
+            },
+            componentCategories: Object.entries(componentsByCategory)
+                .sort(([, a], [, b]) => b - a)
+                .map(([category, count]) => ({ category, count }))
+        };
+
+        if (detailed) {
+            result.layoutPatterns = layoutPatterns.map(ex => ({
+                id: ex.id,
+                description: ex.description,
+                components: ex.components
+            }));
+
+            result.topComponents = data.components
+                .slice(0, 20)
+                .map(c => ({ id: c.id, name: c.name, category: c.category }));
+        }
+
+        return {
+            content: [{
+                type: 'text' as const,
+                text: JSON.stringify(result, null, 2)
+            }]
+        };
+    }
+);
 
 // ---------------------------------------------------------------------------
 // Start server

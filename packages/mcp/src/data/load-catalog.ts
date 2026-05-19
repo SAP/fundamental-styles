@@ -11,6 +11,7 @@ import {
     RelationshipsFile,
     UtilityClassesFile
 } from '../types/component-metadata';
+import { SemanticTagsFile } from '../types/semantic-tags';
 
 export interface ComponentGuidance {
     id: string;
@@ -63,6 +64,7 @@ export interface LoadedCatalog {
     htmlExamples: HtmlExamplesFile | null;
     componentUseCases: ComponentUseCasesFile | null;
     componentGuidance: ComponentGuidanceFile | null;
+    semanticTags: SemanticTagsFile | null;
 }
 
 export function loadCatalog(): LoadedCatalog {
@@ -125,6 +127,9 @@ export function loadCatalog(): LoadedCatalog {
     // Component guidance (from skills folder)
     const componentGuidance = readJson<ComponentGuidanceFile>(resolveDataPath('component-guidance.json'));
 
+    // Semantic tags
+    const semanticTags = readJson<SemanticTagsFile>(resolveDataPath('component-semantic-tags.json'));
+
     return {
         version: catalog?.version ?? 'unknown',
         components,
@@ -135,7 +140,8 @@ export function loadCatalog(): LoadedCatalog {
         designTokens,
         htmlExamples,
         componentUseCases,
-        componentGuidance
+        componentGuidance,
+        semanticTags
     };
 }
 

@@ -1,7 +1,7 @@
 ---
 name: layout-patterns
 description: Common UI layout patterns using fundamental-styles - login forms, dashboards, master-detail, wizards, and more
-user-invocable: false
+user-invocable: true
 metadata:
     tags: ['patterns', 'layouts', 'examples', 'templates']
 ---

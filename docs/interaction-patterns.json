@@ -1,0 +1,137 @@
+{
+  "$schema": "interaction-patterns-schema.json",
+  "version": "1.0.0",
+  "description": "JavaScript interaction patterns for fundamental-styles components",
+  "generated": "2026-05-19",
+  "patterns": {
+    "table-sorting": {
+      "name": "Sortable Table",
+      "description": "Enable column sorting with visual indicators",
+      "components": ["table"],
+      "requiredCSS": ["table.css", "icon.css"],
+      "complexity": "medium",
+      "interactionType": "click",
+      "javascript": {
+        "vanilla": "// Add click handlers to table headers\nconst headers = document.querySelectorAll('.fd-table__cell--header-sortable');\nheaders.forEach(header => {\n  header.addEventListener('click', () => {\n    const column = header.dataset.column;\n    const currentSort = header.dataset.sort || 'none';\n    const newSort = currentSort === 'asc' ? 'desc' : 'asc';\n    \n    // Update header attributes\n    header.setAttribute('aria-sort', newSort === 'asc' ? 'ascending' : 'descending');\n    header.dataset.sort = newSort;\n    \n    // Sort table data (implement your sort logic)\n    sortTableByColumn(column, newSort);\n  });\n});",
+        "react": "const [sortConfig, setSortConfig] = useState({ column: null, direction: 'asc' });\n\nconst handleSort = (column) => {\n  const direction = sortConfig.column === column && sortConfig.direction === 'asc' ? 'desc' : 'asc';\n  setSortConfig({ column, direction });\n};\n\nconst sortedData = useMemo(() => {\n  if (!sortConfig.column) return data;\n  return [...data].sort((a, b) => {\n    if (a[sortConfig.column] < b[sortConfig.column]) return sortConfig.direction === 'asc' ? -1 : 1;\n    if (a[sortConfig.column] > b[sortConfig.column]) return sortConfig.direction === 'asc' ? 1 : -1;\n    return 0;\n  });\n}, [data, sortConfig]);\n\n// In JSX:\n<th className=\"fd-table__cell fd-table__cell--header-sortable\"\n    onClick={() => handleSort('name')}\n    aria-sort={sortConfig.column === 'name' ? (sortConfig.direction === 'asc' ? 'ascending' : 'descending') : 'none'}>\n  Name\n</th>"
+      },
+      "html": "<table class=\"fd-table\">\n  <thead class=\"fd-table__header\">\n    <tr class=\"fd-table__row\">\n      <th class=\"fd-table__cell fd-table__cell--header-sortable\"\n          tabindex=\"0\"\n          role=\"button\"\n          aria-sort=\"none\"\n          data-column=\"name\">\n        <span class=\"fd-table__text\">Name</span>\n        <span class=\"fd-table__icon sap-icon--sort\"></span>\n      </th>\n    </tr>\n  </thead>\n</table>",
+      "accessibility": {
+        "ariaAttributes": ["aria-sort"],
+        "keyboardSupport": "Enter/Space to sort, Tab to navigate",
+        "roles": ["button on sortable headers"]
+      }
+    },
+    "table-selection": {
+      "name": "Row Selection",
+      "description": "Enable single or multi-row selection with checkboxes",
+      "components": ["table", "checkbox"],
+      "requiredCSS": ["table.css", "checkbox.css"],
+      "complexity": "easy",
+      "interactionType": "click",
+      "javascript": {
+        "vanilla": "// Handle row selection\nconst checkboxes = document.querySelectorAll('.fd-table__row input[type=\"checkbox\"]');\nconst selectAllCheckbox = document.querySelector('#select-all');\n\ncheckboxes.forEach(checkbox => {\n  checkbox.addEventListener('change', (e) => {\n    const row = e.target.closest('.fd-table__row');\n    if (e.target.checked) {\n      row.classList.add('is-selected');\n      row.setAttribute('aria-selected', 'true');\n    } else {\n      row.classList.remove('is-selected');\n      row.setAttribute('aria-selected', 'false');\n    }\n    updateSelectAllState();\n  });\n});\n\nselectAllCheckbox?.addEventListener('change', (e) => {\n  checkboxes.forEach(cb => {\n    cb.checked = e.target.checked;\n    cb.dispatchEvent(new Event('change'));\n  });\n});",
+        "react": "const [selectedRows, setSelectedRows] = useState(new Set());\n\nconst handleRowSelect = (rowId) => {\n  setSelectedRows(prev => {\n    const newSet = new Set(prev);\n    if (newSet.has(rowId)) {\n      newSet.delete(rowId);\n    } else {\n      newSet.add(rowId);\n    }\n    return newSet;\n  });\n};\n\nconst handleSelectAll = () => {\n  if (selectedRows.size === data.length) {\n    setSelectedRows(new Set());\n  } else {\n    setSelectedRows(new Set(data.map(row => row.id)));\n  }\n};\n\n// In JSX:\n<tr className={`fd-table__row ${selectedRows.has(row.id) ? 'is-selected' : ''}`}\n    aria-selected={selectedRows.has(row.id)}>\n  <td className=\"fd-table__cell\">\n    <input type=\"checkbox\"\n           className=\"fd-checkbox\"\n           checked={selectedRows.has(row.id)}\n           onChange={() => handleRowSelect(row.id)} />\n  </td>\n</tr>"
+      },
+      "html": "<tr class=\"fd-table__row is-selected\" aria-selected=\"true\">\n  <td class=\"fd-table__cell\">\n    <input type=\"checkbox\" class=\"fd-checkbox\" checked />\n  </td>\n  <td class=\"fd-table__cell\">Selected Row</td>\n</tr>"
+    },
+    "dialog-open-close": {
+      "name": "Dialog Open/Close",
+      "description": "Show and hide modal dialogs with proper focus management",
+      "components": ["dialog", "button"],
+      "requiredCSS": ["dialog.css", "button.css"],
+      "complexity": "medium",
+      "interactionType": "click",
+      "javascript": {
+        "vanilla": "// Open dialog\nconst openBtn = document.querySelector('#open-dialog');\nconst dialog = document.querySelector('.fd-dialog');\nconst closeBtn = dialog.querySelector('.fd-dialog__close');\nconst cancelBtn = dialog.querySelector('[data-action=\"cancel\"]');\n\nopenBtn.addEventListener('click', () => {\n  dialog.classList.add('fd-dialog--active');\n  dialog.setAttribute('aria-hidden', 'false');\n  \n  // Focus first focusable element\n  const firstFocusable = dialog.querySelector('button, [href], input, select, textarea, [tabindex]:not([tabindex=\"-1\"])');\n  firstFocusable?.focus();\n  \n  // Trap focus\n  document.addEventListener('keydown', trapFocus);\n});\n\nconst closeDialog = () => {\n  dialog.classList.remove('fd-dialog--active');\n  dialog.setAttribute('aria-hidden', 'true');\n  openBtn.focus(); // Return focus\n  document.removeEventListener('keydown', trapFocus);\n};\n\ncloseBtn.addEventListener('click', closeDialog);\ncancelBtn.addEventListener('click', closeDialog);\n\n// Close on Escape\ndocument.addEventListener('keydown', (e) => {\n  if (e.key === 'Escape' && dialog.classList.contains('fd-dialog--active')) {\n    closeDialog();\n  }\n});",
+        "react": "const [isOpen, setIsOpen] = useState(false);\nconst dialogRef = useRef(null);\nconst openButtonRef = useRef(null);\n\nconst openDialog = () => {\n  setIsOpen(true);\n};\n\nconst closeDialog = () => {\n  setIsOpen(false);\n  openButtonRef.current?.focus();\n};\n\n// Handle Escape key\nuseEffect(() => {\n  const handleEscape = (e) => {\n    if (e.key === 'Escape' && isOpen) {\n      closeDialog();\n    }\n  };\n  document.addEventListener('keydown', handleEscape);\n  return () => document.removeEventListener('keydown', handleEscape);\n}, [isOpen]);\n\n// In JSX:\n<button ref={openButtonRef} onClick={openDialog}>Open Dialog</button>\n<div className={`fd-dialog ${isOpen ? 'fd-dialog--active' : ''}`}\n     aria-hidden={!isOpen}\n     role=\"dialog\">\n  <div className=\"fd-dialog__content\">\n    <button onClick={closeDialog} aria-label=\"Close\">×</button>\n  </div>\n</div>"
+      },
+      "html": "<div class=\"fd-dialog fd-dialog--active\" role=\"dialog\" aria-hidden=\"false\">\n  <div class=\"fd-dialog__content\">\n    <button class=\"fd-button fd-button--transparent fd-dialog__close\" aria-label=\"Close\">\n      <span class=\"sap-icon--decline\"></span>\n    </button>\n  </div>\n</div>",
+      "accessibility": {
+        "ariaAttributes": ["aria-hidden", "role=\"dialog\"", "aria-labelledby", "aria-describedby"],
+        "keyboardSupport": "Escape to close, Tab/Shift+Tab for focus trap",
+        "focusManagement": "Move focus to dialog on open, restore focus on close, trap focus within dialog"
+      }
+    },
+    "side-nav-collapse": {
+      "name": "Collapsible Side Navigation",
+      "description": "Expand and collapse side navigation menu",
+      "components": ["side-nav", "icon"],
+      "requiredCSS": ["side-nav.css", "icon.css"],
+      "complexity": "easy",
+      "interactionType": "click",
+      "javascript": {
+        "vanilla": "const sideNav = document.querySelector('.fd-side-nav');\nconst toggleBtn = document.querySelector('#nav-toggle');\n\ntoggleBtn.addEventListener('click', () => {\n  const isCollapsed = sideNav.classList.toggle('fd-side-nav--condensed');\n  toggleBtn.setAttribute('aria-expanded', !isCollapsed);\n  \n  // Update icon\n  const icon = toggleBtn.querySelector('.sap-icon');\n  if (isCollapsed) {\n    icon.classList.remove('sap-icon--navigation-left-arrow');\n    icon.classList.add('sap-icon--navigation-right-arrow');\n  } else {\n    icon.classList.remove('sap-icon--navigation-right-arrow');\n    icon.classList.add('sap-icon--navigation-left-arrow');\n  }\n});",
+        "react": "const [isCollapsed, setIsCollapsed] = useState(false);\n\nconst toggleNav = () => {\n  setIsCollapsed(!isCollapsed);\n};\n\n// In JSX:\n<div className={`fd-side-nav ${isCollapsed ? 'fd-side-nav--condensed' : ''}`}>\n  <button onClick={toggleNav} aria-expanded={!isCollapsed}>\n    <span className={`sap-icon--navigation-${isCollapsed ? 'right' : 'left'}-arrow`}></span>\n  </button>\n</div>"
+      },
+      "html": "<div class=\"fd-side-nav fd-side-nav--condensed\">\n  <button aria-expanded=\"false\">\n    <span class=\"sap-icon--navigation-right-arrow\"></span>\n  </button>\n</div>"
+    },
+    "input-validation": {
+      "name": "Input Validation",
+      "description": "Real-time form input validation with error messages",
+      "components": ["input", "form-message", "popover"],
+      "requiredCSS": ["input.css", "form-message.css", "popover.css"],
+      "complexity": "medium",
+      "interactionType": "input, blur",
+      "javascript": {
+        "vanilla": "const input = document.querySelector('#email');\nconst errorMsg = document.querySelector('#email-error');\n\nconst validateEmail = (email) => {\n  return /^[^\\s@]+@[^\\s@]+\\.[^\\s@]+$/.test(email);\n};\n\ninput.addEventListener('input', (e) => {\n  const value = e.target.value;\n  if (value && !validateEmail(value)) {\n    input.classList.add('is-error');\n    input.setAttribute('aria-invalid', 'true');\n    errorMsg.textContent = 'Please enter a valid email address';\n    errorMsg.classList.remove('fd-form-message--success');\n    errorMsg.classList.add('fd-form-message--error');\n  } else if (value) {\n    input.classList.remove('is-error');\n    input.classList.add('is-success');\n    input.setAttribute('aria-invalid', 'false');\n    errorMsg.textContent = 'Email is valid';\n    errorMsg.classList.remove('fd-form-message--error');\n    errorMsg.classList.add('fd-form-message--success');\n  } else {\n    input.classList.remove('is-error', 'is-success');\n    input.removeAttribute('aria-invalid');\n    errorMsg.textContent = '';\n  }\n});",
+        "react": "const [email, setEmail] = useState('');\nconst [error, setError] = useState('');\n\nconst validateEmail = (value) => {\n  if (!value) return '';\n  return /^[^\\s@]+@[^\\s@]+\\.[^\\s@]+$/.test(value) ? '' : 'Please enter a valid email address';\n};\n\nconst handleChange = (e) => {\n  const value = e.target.value;\n  setEmail(value);\n  setError(validateEmail(value));\n};\n\n// In JSX:\n<input\n  className={`fd-input ${error ? 'is-error' : (email ? 'is-success' : '')}`}\n  value={email}\n  onChange={handleChange}\n  aria-invalid={!!error}\n  aria-describedby={error ? 'email-error' : undefined}\n/>\n{error && (\n  <span className=\"fd-form-message fd-form-message--error\" id=\"email-error\">\n    {error}\n  </span>\n)}"
+      },
+      "html": "<input class=\"fd-input is-error\"\n       type=\"email\"\n       id=\"email\"\n       aria-invalid=\"true\"\n       aria-describedby=\"email-error\" />\n<span class=\"fd-form-message fd-form-message--error\" id=\"email-error\">\n  Please enter a valid email address\n</span>",
+      "accessibility": {
+        "ariaAttributes": ["aria-invalid", "aria-describedby"],
+        "liveRegions": "Use aria-live=\"polite\" on error container for screen readers",
+        "errorAssociation": "Link input to error message with aria-describedby"
+      }
+    },
+    "popover-toggle": {
+      "name": "Popover Show/Hide",
+      "description": "Toggle popover visibility on button click",
+      "components": ["popover", "button"],
+      "requiredCSS": ["popover.css", "button.css"],
+      "complexity": "easy",
+      "interactionType": "click",
+      "javascript": {
+        "vanilla": "const triggerBtn = document.querySelector('[data-popover-trigger]');\nconst popover = document.querySelector('.fd-popover__popper');\n\ntriggerBtn.addEventListener('click', () => {\n  const isHidden = popover.getAttribute('aria-hidden') === 'true';\n  popover.setAttribute('aria-hidden', !isHidden);\n  triggerBtn.setAttribute('aria-expanded', isHidden);\n  \n  if (isHidden) {\n    popover.style.display = 'block';\n  } else {\n    popover.style.display = 'none';\n  }\n});\n\n// Close on click outside\ndocument.addEventListener('click', (e) => {\n  if (!triggerBtn.contains(e.target) && !popover.contains(e.target)) {\n    popover.setAttribute('aria-hidden', 'true');\n    triggerBtn.setAttribute('aria-expanded', 'false');\n    popover.style.display = 'none';\n  }\n});",
+        "react": "const [isOpen, setIsOpen] = useState(false);\nconst popoverRef = useRef(null);\nconst buttonRef = useRef(null);\n\nconst togglePopover = () => setIsOpen(!isOpen);\n\n// Click outside to close\nuseEffect(() => {\n  const handleClickOutside = (e) => {\n    if (isOpen &&\n        popoverRef.current && !popoverRef.current.contains(e.target) &&\n        buttonRef.current && !buttonRef.current.contains(e.target)) {\n      setIsOpen(false);\n    }\n  };\n  document.addEventListener('click', handleClickOutside);\n  return () => document.removeEventListener('click', handleClickOutside);\n}, [isOpen]);\n\n// In JSX:\n<button ref={buttonRef} onClick={togglePopover} aria-expanded={isOpen}>\n  Options\n</button>\n<div ref={popoverRef}\n     className=\"fd-popover__popper\"\n     aria-hidden={!isOpen}\n     style={{ display: isOpen ? 'block' : 'none' }}>\n  Popover content\n</div>"
+      },
+      "html": "<button class=\"fd-button\" aria-expanded=\"true\" data-popover-trigger>Options</button>\n<div class=\"fd-popover__popper\" aria-hidden=\"false\">\n  <div class=\"fd-popover__body\">Popover content</div>\n</div>"
+    },
+    "tabs-switching": {
+      "name": "Tab Switching",
+      "description": "Switch between tab panels with keyboard navigation",
+      "components": ["tabs"],
+      "requiredCSS": ["tabs.css"],
+      "complexity": "medium",
+      "interactionType": "click, keyboard",
+      "javascript": {
+        "vanilla": "const tabList = document.querySelector('[role=\"tablist\"]');\nconst tabs = tabList.querySelectorAll('[role=\"tab\"]');\nconst panels = document.querySelectorAll('[role=\"tabpanel\"]');\n\ntabs.forEach((tab, index) => {\n  tab.addEventListener('click', () => activateTab(index));\n  \n  tab.addEventListener('keydown', (e) => {\n    if (e.key === 'ArrowRight') {\n      activateTab((index + 1) % tabs.length);\n    } else if (e.key === 'ArrowLeft') {\n      activateTab((index - 1 + tabs.length) % tabs.length);\n    } else if (e.key === 'Home') {\n      activateTab(0);\n    } else if (e.key === 'End') {\n      activateTab(tabs.length - 1);\n    }\n  });\n});\n\nfunction activateTab(index) {\n  tabs.forEach((t, i) => {\n    const isSelected = i === index;\n    t.setAttribute('aria-selected', isSelected);\n    t.setAttribute('tabindex', isSelected ? '0' : '-1');\n    t.classList.toggle('is-selected', isSelected);\n  });\n  \n  panels.forEach((p, i) => {\n    p.hidden = i !== index;\n  });\n  \n  tabs[index].focus();\n}",
+        "react": "const [activeTab, setActiveTab] = useState(0);\n\nconst handleKeyDown = (e, currentIndex) => {\n  if (e.key === 'ArrowRight') {\n    setActiveTab((currentIndex + 1) % tabs.length);\n  } else if (e.key === 'ArrowLeft') {\n    setActiveTab((currentIndex - 1 + tabs.length) % tabs.length);\n  } else if (e.key === 'Home') {\n    setActiveTab(0);\n  } else if (e.key === 'End') {\n    setActiveTab(tabs.length - 1);\n  }\n};\n\n// In JSX:\n<ul role=\"tablist\" className=\"fd-tabs\">\n  {tabs.map((tab, index) => (\n    <li key={index} role=\"presentation\">\n      <a role=\"tab\"\n         className={activeTab === index ? 'is-selected' : ''}\n         aria-selected={activeTab === index}\n         tabIndex={activeTab === index ? 0 : -1}\n         onClick={() => setActiveTab(index)}\n         onKeyDown={(e) => handleKeyDown(e, index)}>\n        {tab.label}\n      </a>\n    </li>\n  ))}\n</ul>"
+      },
+      "html": "<ul role=\"tablist\" class=\"fd-tabs\">\n  <li role=\"presentation\">\n    <a role=\"tab\" class=\"is-selected\" aria-selected=\"true\" tabindex=\"0\">Tab 1</a>\n  </li>\n  <li role=\"presentation\">\n    <a role=\"tab\" aria-selected=\"false\" tabindex=\"-1\">Tab 2</a>\n  </li>\n</ul>\n<div role=\"tabpanel\">Panel 1 content</div>\n<div role=\"tabpanel\" hidden>Panel 2 content</div>",
+      "accessibility": {
+        "ariaAttributes": ["role=\"tab\"", "role=\"tablist\"", "role=\"tabpanel\"", "aria-selected"],
+        "keyboardSupport": "Arrow keys to navigate, Home/End to jump, Tab to enter panel",
+        "focusManagement": "Only active tab is in tab order (tabindex=0), others have tabindex=-1"
+      }
+    }
+  },
+  "commonPitfalls": [
+    {
+      "issue": "Not managing focus properly in dialogs",
+      "solution": "Always move focus to dialog on open and restore it on close. Trap focus within the dialog."
+    },
+    {
+      "issue": "Forgetting aria-hidden on hidden elements",
+      "solution": "Set aria-hidden=\"true\" on elements that are visually hidden but still in DOM"
+    },
+    {
+      "issue": "Not updating ARIA attributes when state changes",
+      "solution": "Update aria-selected, aria-expanded, aria-invalid, etc. whenever visual state changes"
+    },
+    {
+      "issue": "Missing keyboard support for interactive elements",
+      "solution": "Always add keyboard handlers (Enter, Space, Escape, Arrow keys) for custom interactive elements"
+    }
+  ]
+}

@@ -1,7 +1,7 @@
 ---
 name: content-density
 description: Guide to cozy, compact, and condensed modes - when to use each density, how to apply them, and device-specific recommendations
-user-invocable: false
+user-invocable: true
 metadata:
     tags: ['density', 'sizing', 'responsive', 'cozy', 'compact', 'condensed']
     keywords:

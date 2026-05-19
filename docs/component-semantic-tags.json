@@ -1,0 +1,834 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "version": "1.0.0",
+  "description": "Semantic tags for fundamental-styles components - enables pattern-based search and use-case matching",
+  "generatedBy": "manual",
+  "components": {
+    "card": {
+      "patterns": ["dashboard", "grid-layout", "tile-layout", "widget", "panel", "container-layout", "kpi-card", "metric-card"],
+      "useCases": ["kpi", "metric", "summary", "overview", "quick-info", "stats", "analytics", "dashboard-widget", "information-display"],
+      "synonyms": ["panel", "widget", "tile", "box", "container", "block"],
+      "categories": ["data-display", "layout", "container"],
+      "compositionContext": ["works-with: button, title, object-status, numeric-content", "container-for: any-content"]
+    },
+    "numeric-content": {
+      "patterns": ["kpi", "metric-display", "dashboard", "analytics", "statistics"],
+      "useCases": ["kpi", "metric", "number-display", "data-visualization", "analytics", "statistics", "dashboard-metrics"],
+      "synonyms": ["metric", "kpi-display", "number", "statistic", "data-point"],
+      "categories": ["data-display", "business-objects"],
+      "compositionContext": ["works-with: card, object-status", "used-in: dashboard, analytics"]
+    },
+    "object-status": {
+      "patterns": ["status-indicator", "kpi-status", "metric-status", "semantic-color"],
+      "useCases": ["status", "state-indicator", "positive-negative", "success-error", "trend", "semantic-status"],
+      "synonyms": ["status", "indicator", "badge", "state", "semantic-indicator"],
+      "categories": ["data-display", "feedback", "business-objects"],
+      "compositionContext": ["works-with: card, numeric-content, object-number", "shows: positive, negative, critical, informative"]
+    },
+    "flexible-column-layout": {
+      "patterns": ["master-detail", "list-detail", "split-view", "multi-column", "three-column", "two-pane", "responsive-layout"],
+      "useCases": ["navigation-with-detail", "email-client", "file-browser", "settings-panel", "list-with-detail", "sidebar-content"],
+      "synonyms": ["master-detail-layout", "split-panel", "divided-layout", "column-layout", "multi-pane"],
+      "categories": ["layout", "navigation", "composition"],
+      "compositionContext": ["contains: list, dynamic-page, panel", "supports: 1-3 columns"]
+    },
+    "dynamic-side-content": {
+      "patterns": ["side-panel", "sidebar-content", "master-detail", "split-view", "responsive-sidebar"],
+      "useCases": ["side-panel", "contextual-info", "additional-details", "responsive-sidebar", "supplementary-content"],
+      "synonyms": ["side-panel", "sidebar", "aside-content", "companion-panel"],
+      "categories": ["layout", "composition"],
+      "compositionContext": ["main-content-with-side-panel", "responsive-hide-show"]
+    },
+    "splitter": {
+      "patterns": ["resizable-panes", "split-view", "adjustable-layout", "draggable-divider"],
+      "useCases": ["resizable-panels", "split-screen", "adjustable-layout", "code-editor-layout", "file-browser"],
+      "synonyms": ["split-pane", "resizer", "divider", "adjustable-split"],
+      "categories": ["layout", "interactive"],
+      "compositionContext": ["divides: two-sections", "user-adjustable"]
+    },
+    "table": {
+      "patterns": ["data-grid", "data-table", "spreadsheet", "tabular-data", "sortable-table"],
+      "useCases": ["display-data", "data-grid", "spreadsheet", "list-data", "sorting", "filtering", "row-selection"],
+      "synonyms": ["data-grid", "grid", "data-table", "spreadsheet", "list"],
+      "categories": ["data-display", "interactive"],
+      "compositionContext": ["works-with: toolbar, pagination, checkbox", "supports: sorting, selection, inline-edit"]
+    },
+    "toolbar": {
+      "patterns": ["action-bar", "button-group", "tool-strip", "command-bar"],
+      "useCases": ["table-actions", "page-actions", "bulk-actions", "filter-controls", "toolbar-buttons"],
+      "synonyms": ["action-bar", "command-bar", "tool-strip", "button-bar"],
+      "categories": ["actions", "layout"],
+      "compositionContext": ["contains: button, input, select", "used-with: table, page"]
+    },
+    "button": {
+      "patterns": ["action-trigger", "submit", "cta", "clickable", "interactive"],
+      "useCases": ["action", "submit", "cancel", "confirm", "trigger", "cta", "primary-action", "click"],
+      "synonyms": ["btn", "action-button", "cta", "submit-button"],
+      "categories": ["interactive", "actions"],
+      "compositionContext": ["used-everywhere", "primary-interactive-element"]
+    },
+    "input": {
+      "patterns": ["text-field", "form-field", "text-input", "user-input"],
+      "useCases": ["text-entry", "form-field", "user-input", "data-entry", "search", "email", "password", "name"],
+      "synonyms": ["textbox", "text-field", "input-field", "form-control"],
+      "categories": ["forms", "interactive"],
+      "compositionContext": ["works-with: form-label, form-message, form-item", "used-in: forms, search"]
+    },
+    "form-item": {
+      "patterns": ["form-field", "input-group", "label-input-pair"],
+      "useCases": ["form-field", "labeled-input", "form-row", "input-with-label"],
+      "synonyms": ["form-field", "field", "form-row", "input-group"],
+      "categories": ["forms", "layout"],
+      "compositionContext": ["contains: form-label, input, form-message", "structural: form-building-block"]
+    },
+    "form-label": {
+      "patterns": ["field-label", "input-label"],
+      "useCases": ["label-input", "field-label", "form-accessibility"],
+      "synonyms": ["label", "field-label", "input-label"],
+      "categories": ["forms", "accessibility"],
+      "compositionContext": ["associates-with: input", "required: accessibility"]
+    },
+    "form-message": {
+      "patterns": ["validation-message", "error-message", "help-text", "field-feedback"],
+      "useCases": ["validation", "error-display", "help-text", "field-feedback", "inline-error"],
+      "synonyms": ["validation-message", "error-text", "help-text", "field-error"],
+      "categories": ["forms", "feedback"],
+      "compositionContext": ["shows: error, warning, success, info", "below-input"]
+    },
+    "dialog": {
+      "patterns": ["modal", "popup", "overlay", "lightbox", "modal-window"],
+      "useCases": ["modal", "popup", "confirmation", "form-dialog", "detail-view", "overlay-content"],
+      "synonyms": ["modal", "popup", "lightbox", "overlay", "modal-window"],
+      "categories": ["overlay", "interactive"],
+      "compositionContext": ["contains: bar, button, form", "blocks: background"]
+    },
+    "message-box": {
+      "patterns": ["confirm-dialog", "alert-dialog", "confirmation-popup"],
+      "useCases": ["confirmation", "alert", "yes-no", "confirm-delete", "warning-prompt"],
+      "synonyms": ["confirm", "alert-box", "confirmation-dialog", "prompt"],
+      "categories": ["overlay", "feedback"],
+      "compositionContext": ["simple-dialog", "predefined-buttons"]
+    },
+    "popover": {
+      "patterns": ["tooltip", "flyout", "dropdown-content", "contextual-popup"],
+      "useCases": ["tooltip", "contextual-info", "help-text", "additional-info", "flyout", "dropdown-details"],
+      "synonyms": ["tooltip", "flyout", "hover-content", "dropdown-panel"],
+      "categories": ["overlay", "informational"],
+      "compositionContext": ["triggered-by: click, hover", "positioned-relative-to: trigger"]
+    },
+    "message-strip": {
+      "patterns": ["inline-message", "notification-banner", "alert-banner", "inline-feedback"],
+      "useCases": ["inline-message", "contextual-feedback", "validation-summary", "page-message", "banner"],
+      "synonyms": ["alert-banner", "inline-alert", "notification-bar", "message-banner"],
+      "categories": ["feedback", "informational"],
+      "compositionContext": ["inline-in-flow", "types: error, warning, success, info"]
+    },
+    "message-toast": {
+      "patterns": ["toast", "snackbar", "temporary-notification", "pop-up-message"],
+      "useCases": ["toast", "snackbar", "temporary-message", "success-message", "quick-notification"],
+      "synonyms": ["snackbar", "toast-notification", "temporary-alert", "popup-message"],
+      "categories": ["feedback", "overlay"],
+      "compositionContext": ["temporary", "auto-dismiss", "bottom-corner"]
+    },
+    "alert": {
+      "patterns": ["page-alert", "critical-message", "system-message", "page-level-notification"],
+      "useCases": ["critical-message", "system-alert", "page-level-message", "important-notification", "error-banner"],
+      "synonyms": ["page-alert", "system-message", "critical-banner", "system-notification"],
+      "categories": ["feedback", "critical"],
+      "compositionContext": ["page-level", "high-priority", "persistent"]
+    },
+    "notification": {
+      "patterns": ["notification-item", "notification-list", "activity-notification"],
+      "useCases": ["notification", "activity-feed", "update-notification", "system-notification", "notification-center"],
+      "synonyms": ["notification-item", "alert-item", "activity-notification"],
+      "categories": ["feedback", "informational"],
+      "compositionContext": ["used-in: notification-center", "actionable"]
+    },
+    "list": {
+      "patterns": ["item-list", "vertical-list", "simple-list", "data-list"],
+      "useCases": ["list-items", "menu-items", "simple-list", "navigation-list", "item-collection"],
+      "synonyms": ["item-list", "collection", "menu-list", "vertical-list"],
+      "categories": ["data-display", "navigation"],
+      "compositionContext": ["vertical-layout", "clickable-items", "simple-or-complex"]
+    },
+    "side-nav": {
+      "patterns": ["sidebar-navigation", "side-menu", "navigation-drawer", "app-navigation"],
+      "useCases": ["main-navigation", "app-menu", "sidebar-menu", "section-navigation", "left-nav"],
+      "synonyms": ["sidebar", "side-menu", "navigation-drawer", "app-nav", "left-nav"],
+      "categories": ["navigation", "layout"],
+      "compositionContext": ["left-side", "hierarchical", "collapsible"]
+    },
+    "shellbar": {
+      "patterns": ["app-header", "top-bar", "application-bar", "global-header"],
+      "useCases": ["app-header", "global-navigation", "branding", "user-menu", "product-switcher"],
+      "synonyms": ["app-header", "top-bar", "header-bar", "global-header"],
+      "categories": ["navigation", "layout"],
+      "compositionContext": ["top-of-page", "global", "contains: logo, user-menu, search"]
+    },
+    "tabs": {
+      "patterns": ["tab-navigation", "tabbed-content", "view-switcher"],
+      "useCases": ["view-switcher", "tabbed-content", "section-switcher", "content-tabs"],
+      "synonyms": ["tab-bar", "tab-navigation", "tabbed-interface", "view-tabs"],
+      "categories": ["navigation", "interactive"],
+      "compositionContext": ["horizontal-navigation", "same-page-views", "single-selection"]
+    },
+    "wizard": {
+      "patterns": ["multi-step-form", "stepper", "step-by-step", "guided-flow"],
+      "useCases": ["multi-step", "stepper", "guided-process", "onboarding", "setup-wizard"],
+      "synonyms": ["stepper", "multi-step-form", "guided-flow", "step-process"],
+      "categories": ["navigation", "forms"],
+      "compositionContext": ["sequential-steps", "previous-next", "progress-indicator"]
+    },
+    "pagination": {
+      "patterns": ["page-navigation", "pager", "page-controls"],
+      "useCases": ["pagination", "paging", "page-navigation", "next-previous", "page-numbers"],
+      "synonyms": ["pager", "page-controls", "page-navigator"],
+      "categories": ["navigation", "data-display"],
+      "compositionContext": ["works-with: table, list", "bottom-of-data"]
+    },
+    "breadcrumb": {
+      "patterns": ["navigation-path", "location-trail", "page-hierarchy"],
+      "useCases": ["location-trail", "navigation-path", "page-hierarchy", "back-navigation", "context-path"],
+      "synonyms": ["nav-path", "location-path", "trail", "page-path"],
+      "categories": ["navigation", "informational"],
+      "compositionContext": ["top-of-page", "hierarchical-path", "clickable-ancestors"]
+    },
+    "search-field": {
+      "patterns": ["search-box", "search-input", "filter-search"],
+      "useCases": ["search", "filter", "find", "lookup", "query"],
+      "synonyms": ["search-box", "search-input", "find-box", "lookup-field"],
+      "categories": ["forms", "interactive"],
+      "compositionContext": ["with-icon", "trigger-search", "autocomplete"]
+    },
+    "select": {
+      "patterns": ["dropdown", "picker", "combobox", "dropdown-menu"],
+      "useCases": ["dropdown", "picker", "select-option", "choose-one", "dropdown-selection"],
+      "synonyms": ["dropdown", "picker", "combobox", "dropdown-menu", "select-box"],
+      "categories": ["forms", "interactive"],
+      "compositionContext": ["single-selection", "option-list", "dropdown-arrow"]
+    },
+    "checkbox": {
+      "patterns": ["multi-select", "checkable", "toggle-option"],
+      "useCases": ["multi-select", "multiple-choice", "select-multiple", "opt-in", "toggle-option"],
+      "synonyms": ["check-box", "tick-box", "multi-select"],
+      "categories": ["forms", "interactive"],
+      "compositionContext": ["multiple-selection", "checked-unchecked", "form-field"]
+    },
+    "radio": {
+      "patterns": ["single-select", "option-group", "exclusive-choice"],
+      "useCases": ["single-select", "one-choice", "exclusive-option", "option-group", "radio-group"],
+      "synonyms": ["radio-button", "option-button", "single-choice"],
+      "categories": ["forms", "interactive"],
+      "compositionContext": ["single-selection", "mutually-exclusive", "group-required"]
+    },
+    "switch": {
+      "patterns": ["toggle", "on-off", "binary-choice", "feature-toggle"],
+      "useCases": ["toggle", "on-off", "enable-disable", "feature-flag", "settings-toggle"],
+      "synonyms": ["toggle", "toggle-switch", "on-off-switch", "flip-switch"],
+      "categories": ["forms", "interactive"],
+      "compositionContext": ["binary-choice", "immediate-effect", "on-off-state"]
+    },
+    "textarea": {
+      "patterns": ["multi-line-input", "text-area", "long-text-input"],
+      "useCases": ["long-text", "multi-line", "description", "comment", "notes", "message"],
+      "synonyms": ["text-area", "multi-line-input", "text-box", "comment-box"],
+      "categories": ["forms", "interactive"],
+      "compositionContext": ["multi-line", "resizable", "long-content"]
+    },
+    "file-uploader": {
+      "patterns": ["file-upload", "file-picker", "attachment-upload"],
+      "useCases": ["file-upload", "upload", "attach-file", "choose-file", "file-selection"],
+      "synonyms": ["upload", "file-picker", "file-selector", "attachment"],
+      "categories": ["forms", "interactive"],
+      "compositionContext": ["file-input", "drag-drop", "browse-button"]
+    },
+    "slider": {
+      "patterns": ["range-selector", "range-slider", "value-slider"],
+      "useCases": ["range-selection", "value-slider", "numeric-range", "volume-control", "filter-range"],
+      "synonyms": ["range-slider", "range-control", "slide-bar"],
+      "categories": ["forms", "interactive"],
+      "compositionContext": ["continuous-value", "min-max", "draggable-handle"]
+    },
+    "calendar": {
+      "patterns": ["date-picker", "date-selector", "datepicker"],
+      "useCases": ["date-selection", "date-picker", "choose-date", "calendar-view", "date-range"],
+      "synonyms": ["date-picker", "datepicker", "date-selector", "day-picker"],
+      "categories": ["forms", "date-time"],
+      "compositionContext": ["popup-calendar", "date-selection", "month-year-navigation"]
+    },
+    "tile": {
+      "patterns": ["app-launcher", "clickable-tile", "launch-tile", "application-tile"],
+      "useCases": ["app-launcher", "launch-app", "navigation-tile", "dashboard-tile", "app-icon"],
+      "synonyms": ["app-tile", "launcher", "launch-card", "app-icon"],
+      "categories": ["navigation", "interactive"],
+      "compositionContext": ["clickable", "launches-app", "with-icon-title"]
+    },
+    "panel": {
+      "patterns": ["expandable-panel", "collapsible-section", "accordion-panel"],
+      "useCases": ["expandable-content", "collapsible-section", "accordion", "hide-show-content", "expand-collapse"],
+      "synonyms": ["accordion", "collapsible", "expandable-section", "disclosure"],
+      "categories": ["layout", "interactive"],
+      "compositionContext": ["expandable", "header-content", "show-hide"]
+    },
+    "page": {
+      "patterns": ["page-layout", "main-container", "page-structure"],
+      "useCases": ["page-layout", "main-container", "page-structure", "content-wrapper"],
+      "synonyms": ["page-container", "main-page", "page-wrapper", "layout-page"],
+      "categories": ["layout", "structure"],
+      "compositionContext": ["top-level-container", "full-page", "header-content-footer"]
+    },
+    "dynamic-page": {
+      "patterns": ["responsive-page", "collapsible-header", "object-page"],
+      "useCases": ["detail-page", "object-page", "responsive-header", "collapsible-header", "content-page"],
+      "synonyms": ["object-page", "detail-page", "content-page", "responsive-page"],
+      "categories": ["layout", "structure"],
+      "compositionContext": ["header-collapses-on-scroll", "action-bar", "content-sections"]
+    },
+    "bar": {
+      "patterns": ["header-bar", "footer-bar", "action-bar-component"],
+      "useCases": ["header-bar", "footer-bar", "dialog-header", "dialog-footer", "title-actions"],
+      "synonyms": ["header-bar", "footer-bar", "title-bar", "action-container"],
+      "categories": ["layout", "structure"],
+      "compositionContext": ["horizontal-bar", "left-middle-right-sections", "title-actions"]
+    },
+    "action-bar": {
+      "patterns": ["page-action-bar", "page-header", "title-action-bar"],
+      "useCases": ["page-header", "page-title", "page-actions", "back-button", "page-level-actions"],
+      "synonyms": ["page-header", "title-bar", "page-top-bar"],
+      "categories": ["layout", "actions"],
+      "compositionContext": ["top-of-page", "title-back-actions", "page-level"]
+    },
+    "avatar": {
+      "patterns": ["user-avatar", "profile-picture", "user-icon"],
+      "useCases": ["user-picture", "profile-image", "user-icon", "initials", "user-representation"],
+      "synonyms": ["profile-picture", "user-image", "profile-icon", "user-photo"],
+      "categories": ["visual", "user"],
+      "compositionContext": ["circular", "initials-or-image", "user-representation"]
+    },
+    "icon": {
+      "patterns": ["symbol", "glyph", "icon-font"],
+      "useCases": ["icon", "symbol", "visual-indicator", "button-icon", "decorative", "status-icon"],
+      "synonyms": ["symbol", "glyph", "pictogram", "icon-font"],
+      "categories": ["visual", "decorative"],
+      "compositionContext": ["sap-icon-font", "prefix: sap-icon--", "decorative-or-semantic"]
+    },
+    "badge": {
+      "patterns": ["count-badge", "notification-badge", "status-badge"],
+      "useCases": ["count-indicator", "notification-count", "status-badge", "counter", "numeric-badge"],
+      "synonyms": ["count-badge", "counter-badge", "notification-dot", "indicator-badge"],
+      "categories": ["visual", "feedback"],
+      "compositionContext": ["small-circle", "count-or-status", "overlays-element"]
+    },
+    "object-number": {
+      "patterns": ["formatted-number", "numeric-value", "business-number"],
+      "useCases": ["number-display", "formatted-number", "currency", "quantity", "amount"],
+      "synonyms": ["number", "numeric-display", "formatted-value", "amount"],
+      "categories": ["data-display", "business-objects"],
+      "compositionContext": ["formatted", "with-unit", "semantic-color"]
+    },
+    "link": {
+      "patterns": ["hyperlink", "anchor", "navigation-link"],
+      "useCases": ["navigation", "hyperlink", "external-link", "anchor", "clickable-text"],
+      "synonyms": ["hyperlink", "anchor", "text-link", "url-link"],
+      "categories": ["navigation", "interactive"],
+      "compositionContext": ["navigation-not-action", "underlined-text", "href-attribute"]
+    },
+    "menu": {
+      "patterns": ["context-menu", "dropdown-menu", "action-menu"],
+      "useCases": ["context-menu", "dropdown-actions", "action-menu", "right-click-menu", "option-menu"],
+      "synonyms": ["context-menu", "action-menu", "dropdown-menu", "popup-menu"],
+      "categories": ["navigation", "interactive"],
+      "compositionContext": ["vertical-list", "clickable-items", "popup-on-trigger"]
+    },
+    "busy-indicator": {
+      "patterns": ["loading-spinner", "spinner", "loading-indicator"],
+      "useCases": ["loading", "spinner", "busy-state", "processing", "waiting"],
+      "synonyms": ["spinner", "loader", "loading-spinner", "processing-indicator"],
+      "categories": ["feedback", "loading"],
+      "compositionContext": ["animated", "indeterminate", "circular"]
+    },
+    "progress-indicator": {
+      "patterns": ["progress-bar", "loading-bar", "percentage-bar"],
+      "useCases": ["progress-bar", "percentage-display", "task-progress", "upload-progress", "completion-status"],
+      "synonyms": ["progress-bar", "loading-bar", "percentage-bar", "status-bar"],
+      "categories": ["feedback", "loading"],
+      "compositionContext": ["horizontal-bar", "percentage-complete", "determinate"]
+    },
+    "skeleton": {
+      "patterns": ["loading-placeholder", "content-placeholder", "shimmer"],
+      "useCases": ["loading-placeholder", "content-skeleton", "shimmer-effect", "ghost-content", "loading-skeleton"],
+      "synonyms": ["placeholder", "shimmer", "ghost-content", "loading-skeleton"],
+      "categories": ["feedback", "loading"],
+      "compositionContext": ["content-shape", "animated", "pre-load-display"]
+    },
+    "title": {
+      "patterns": ["heading", "page-title", "section-heading"],
+      "useCases": ["heading", "title", "section-title", "page-title", "h1-h6"],
+      "synonyms": ["heading", "header", "section-title", "headline"],
+      "categories": ["typography", "structure"],
+      "compositionContext": ["semantic-heading", "size-variants", "page-section-titles"]
+    },
+    "text": {
+      "patterns": ["body-text", "paragraph", "content-text"],
+      "useCases": ["body-text", "paragraph", "content-text", "description", "text-content"],
+      "synonyms": ["paragraph", "body-text", "copy", "content-text"],
+      "categories": ["typography", "content"],
+      "compositionContext": ["body-content", "readable-text", "formatted-content"]
+    },
+    "token": {
+      "patterns": ["tag", "removable-tag", "selection-tag", "chip"],
+      "useCases": ["tag", "chip", "removable-item", "selected-item", "filter-tag", "multi-select-item"],
+      "synonyms": ["chip", "tag", "pill", "removable-tag"],
+      "categories": ["visual", "interactive"],
+      "compositionContext": ["removable", "multi-select-display", "with-close-button"]
+    },
+    "generic-tag": {
+      "patterns": ["label-tag", "category-tag", "static-tag"],
+      "useCases": ["label", "category", "tag", "classification", "metadata-tag"],
+      "synonyms": ["label", "tag", "category-tag", "classification"],
+      "categories": ["visual", "informational"],
+      "compositionContext": ["static", "categorical", "non-removable"]
+    },
+    "info-label": {
+      "patterns": ["metadata-label", "info-tag", "attribute-label"],
+      "useCases": ["metadata", "attribute", "property-label", "info-tag", "data-label"],
+      "synonyms": ["attribute-label", "metadata-tag", "property-label", "info-tag"],
+      "categories": ["visual", "informational"],
+      "compositionContext": ["small-label", "semantic-color", "metadata-display"]
+    },
+    "illustrated-message": {
+      "patterns": ["empty-state", "no-data", "placeholder-screen", "welcome-screen"],
+      "useCases": ["empty-state", "no-data", "welcome-screen", "error-page", "placeholder-content"],
+      "synonyms": ["empty-state", "no-data-screen", "placeholder-page", "blank-slate"],
+      "categories": ["feedback", "visual"],
+      "compositionContext": ["full-screen", "illustration-title-description", "call-to-action"]
+    },
+    "layout-grid": {
+      "patterns": ["css-grid", "grid-layout", "responsive-grid"],
+      "useCases": ["grid-layout", "responsive-grid", "column-layout", "dashboard-grid", "card-grid"],
+      "synonyms": ["grid", "css-grid", "grid-system", "responsive-grid"],
+      "categories": ["layout", "structure"],
+      "compositionContext": ["css-grid-based", "responsive", "column-row-structure"]
+    },
+    "object-identifier": {
+      "patterns": ["object-title", "item-identifier", "business-object-title"],
+      "useCases": ["object-title", "item-title", "business-object-name", "identifier", "title-description"],
+      "synonyms": ["object-title", "item-name", "entity-identifier", "object-name"],
+      "categories": ["data-display", "business-objects"],
+      "compositionContext": ["title-subtitle", "link-or-text", "object-representation"]
+    },
+    "object-attribute": {
+      "patterns": ["key-value-pair", "attribute-pair", "property-display"],
+      "useCases": ["key-value", "attribute-display", "property-display", "metadata-pair", "data-attribute"],
+      "synonyms": ["key-value", "attribute-pair", "property", "data-field"],
+      "categories": ["data-display", "business-objects"],
+      "compositionContext": ["label-value-pair", "horizontal-or-vertical", "object-properties"]
+    },
+    "rating-indicator": {
+      "patterns": ["star-rating", "rating-stars", "review-rating"],
+      "useCases": ["star-rating", "rating", "review-rating", "score-display", "user-rating"],
+      "synonyms": ["star-rating", "rating-stars", "stars", "review-score"],
+      "categories": ["interactive", "feedback"],
+      "compositionContext": ["stars-1-to-5", "read-only-or-interactive", "rating-display"]
+    },
+    "carousel": {
+      "patterns": ["image-carousel", "slideshow", "content-slider"],
+      "useCases": ["image-carousel", "slideshow", "content-slider", "gallery", "image-rotation"],
+      "synonyms": ["slider", "slideshow", "image-gallery", "content-carousel"],
+      "categories": ["visual", "interactive"],
+      "compositionContext": ["multiple-items", "navigation-arrows", "indicators"]
+    },
+    "quick-view": {
+      "patterns": ["hover-detail", "object-preview", "detail-popover"],
+      "useCases": ["object-preview", "quick-info", "hover-detail", "detail-popover", "summary-view"],
+      "synonyms": ["preview", "detail-popover", "hover-card", "quick-info"],
+      "categories": ["overlay", "informational"],
+      "compositionContext": ["compact-detail", "hover-or-click", "object-summary"]
+    },
+    "action-sheet": {
+      "patterns": ["bottom-sheet", "mobile-action-menu", "mobile-dialog"],
+      "useCases": ["mobile-actions", "bottom-sheet", "mobile-menu", "touch-friendly-menu", "mobile-options"],
+      "synonyms": ["bottom-sheet", "mobile-menu", "drawer", "mobile-dialog"],
+      "categories": ["mobile", "overlay"],
+      "compositionContext": ["mobile-only", "bottom-of-screen", "action-list"]
+    },
+    "product-switch": {
+      "patterns": ["product-switcher", "app-switcher", "product-selector"],
+      "useCases": ["product-switcher", "app-switcher", "switch-product", "sap-products", "product-navigation"],
+      "synonyms": ["app-switcher", "product-selector", "product-menu", "product-launcher"],
+      "categories": ["navigation", "sap-specific"],
+      "compositionContext": ["sap-products", "grid-of-products", "shellbar-integration"]
+    },
+    "user-menu": {
+      "patterns": ["profile-menu", "user-dropdown", "account-menu"],
+      "useCases": ["user-menu", "profile-menu", "account-settings", "user-actions", "logout"],
+      "synonyms": ["profile-menu", "account-menu", "user-dropdown", "profile-dropdown"],
+      "categories": ["navigation", "user"],
+      "compositionContext": ["user-actions", "profile-settings", "shellbar-integration"]
+    },
+    "variant-management": {
+      "patterns": ["view-variant", "saved-view", "view-selector"],
+      "useCases": ["save-view", "view-variant", "view-selector", "custom-view", "personalization"],
+      "synonyms": ["view-selector", "saved-view", "view-management", "custom-view"],
+      "categories": ["sap-specific", "personalization"],
+      "compositionContext": ["save-load-views", "table-variants", "filter-variants"]
+    },
+    "feed-list": {
+      "patterns": ["activity-feed", "timeline", "social-feed"],
+      "useCases": ["activity-feed", "timeline", "social-feed", "notification-feed", "updates-list"],
+      "synonyms": ["activity-feed", "timeline", "social-timeline", "updates-feed"],
+      "categories": ["data-display", "social"],
+      "compositionContext": ["chronological", "post-items", "social-media-style"]
+    },
+    "feed-input": {
+      "patterns": ["post-composer", "comment-input", "social-input"],
+      "useCases": ["compose-post", "comment", "social-input", "message-compose", "post-input"],
+      "synonyms": ["post-composer", "comment-box", "social-composer", "post-input"],
+      "categories": ["forms", "social"],
+      "compositionContext": ["compose-content", "avatar-input", "post-button"]
+    },
+    "message-page": {
+      "patterns": ["error-page", "404-page", "empty-page", "full-page-message"],
+      "useCases": ["error-page", "404", "500", "no-results", "empty-page", "full-page-message"],
+      "synonyms": ["error-page", "full-page-message", "404-page", "empty-page"],
+      "categories": ["feedback", "layout"],
+      "compositionContext": ["full-page", "centered-message", "illustration-text-action"]
+    },
+    "step-input": {
+      "patterns": ["number-stepper", "increment-input", "numeric-spinner"],
+      "useCases": ["numeric-input", "increment-decrement", "number-stepper", "quantity-selector", "stepper-input"],
+      "synonyms": ["number-stepper", "numeric-spinner", "increment-input", "spin-button"],
+      "categories": ["forms", "interactive"],
+      "compositionContext": ["numeric-only", "plus-minus-buttons", "step-value"]
+    },
+    "fixed-card-layout": {
+      "patterns": ["dashboard-layout", "card-dashboard", "fixed-grid"],
+      "useCases": ["dashboard", "card-dashboard", "kpi-dashboard", "fixed-layout", "analytics-dashboard"],
+      "synonyms": ["dashboard-layout", "card-grid", "fixed-dashboard", "kpi-layout"],
+      "categories": ["layout", "dashboard"],
+      "compositionContext": ["fixed-positions", "card-grid", "dashboard-structure"]
+    },
+    "resizable-card-layout": {
+      "patterns": ["resizable-dashboard", "flexible-dashboard", "adjustable-cards"],
+      "useCases": ["resizable-dashboard", "flexible-dashboard", "adjustable-layout", "customizable-dashboard"],
+      "synonyms": ["flexible-dashboard", "adjustable-dashboard", "resizable-grid", "dynamic-dashboard"],
+      "categories": ["layout", "dashboard", "interactive"],
+      "compositionContext": ["user-resizable", "drag-resize", "dashboard-personalization"]
+    },
+    "grid-list": {
+      "patterns": ["image-grid", "card-grid", "tile-grid"],
+      "useCases": ["image-grid", "product-grid", "card-grid", "gallery-grid", "tile-layout"],
+      "synonyms": ["tile-grid", "image-gallery", "product-grid", "card-layout"],
+      "categories": ["data-display", "layout"],
+      "compositionContext": ["responsive-grid", "equal-size-items", "visual-content"]
+    },
+    "object-list": {
+      "patterns": ["business-object-list", "data-list", "entity-list"],
+      "useCases": ["business-objects", "data-list", "entity-list", "structured-list", "complex-list"],
+      "synonyms": ["business-list", "entity-list", "data-list", "object-collection"],
+      "categories": ["data-display", "business-objects"],
+      "compositionContext": ["structured-items", "business-data", "complex-content"]
+    },
+    "tree": {
+      "patterns": ["tree-view", "hierarchical-list", "nested-list"],
+      "useCases": ["hierarchical-data", "tree-view", "nested-list", "folder-structure", "expandable-tree"],
+      "synonyms": ["tree-view", "hierarchy", "nested-structure", "folder-tree"],
+      "categories": ["data-display", "navigation"],
+      "compositionContext": ["parent-child", "expandable-nodes", "hierarchical"]
+    },
+    "time": {
+      "patterns": ["time-display", "formatted-time"],
+      "useCases": ["time-display", "show-time", "formatted-time", "timestamp"],
+      "synonyms": ["time-display", "timestamp", "time-value", "clock-time"],
+      "categories": ["date-time", "data-display"],
+      "compositionContext": ["formatted-time", "read-only", "time-value"]
+    },
+    "timepicker": {
+      "patterns": ["time-selector", "time-picker", "time-input"],
+      "useCases": ["time-selection", "time-picker", "choose-time", "time-input", "set-time"],
+      "synonyms": ["time-selector", "time-input", "time-chooser", "clock-picker"],
+      "categories": ["date-time", "forms"],
+      "compositionContext": ["popup-clock", "hours-minutes", "am-pm"]
+    },
+    "input-group": {
+      "patterns": ["input-addon", "input-with-button", "input-with-icon"],
+      "useCases": ["input-addon", "input-button", "input-icon", "search-with-button", "enhanced-input"],
+      "synonyms": ["input-addon", "enhanced-input", "input-with-addon", "combo-input"],
+      "categories": ["forms", "composition"],
+      "compositionContext": ["input-plus-addon", "button-or-icon", "left-or-right"]
+    },
+    "segmented-button": {
+      "patterns": ["button-group", "toggle-buttons", "option-buttons"],
+      "useCases": ["button-group", "toggle-group", "option-selector", "view-switcher", "single-select-buttons"],
+      "synonyms": ["button-group", "toggle-group", "option-buttons", "segmented-control"],
+      "categories": ["interactive", "forms"],
+      "compositionContext": ["mutually-exclusive", "button-group", "single-selection"]
+    },
+    "button-split": {
+      "patterns": ["split-button", "dropdown-button", "combo-button"],
+      "useCases": ["split-button", "primary-action-dropdown", "button-dropdown", "action-options"],
+      "synonyms": ["split-button", "dropdown-button", "combo-button", "menu-button"],
+      "categories": ["interactive", "actions"],
+      "compositionContext": ["primary-action-plus-menu", "split-design", "dropdown-options"]
+    },
+    "icon-tab-bar": {
+      "patterns": ["icon-tabs", "tab-with-counts", "semantic-tabs"],
+      "useCases": ["icon-tabs", "tabs-with-counts", "semantic-tabs", "filterable-tabs", "tab-counts"],
+      "synonyms": ["icon-tabs", "semantic-tabs", "filter-tabs", "tab-with-badge"],
+      "categories": ["navigation", "interactive"],
+      "compositionContext": ["tabs-with-icons", "count-badges", "semantic-colors"]
+    },
+    "horizontal-navigation": {
+      "patterns": ["horizontal-nav", "top-navigation", "horizontal-menu"],
+      "useCases": ["horizontal-nav", "top-menu", "main-navigation", "top-level-nav", "horizontal-menu"],
+      "synonyms": ["horizontal-nav", "top-nav", "horizontal-menu", "top-menu"],
+      "categories": ["navigation", "layout"],
+      "compositionContext": ["horizontal-layout", "top-of-page", "main-sections"]
+    },
+    "vertical-nav": {
+      "patterns": ["vertical-navigation", "vertical-menu", "side-navigation"],
+      "useCases": ["vertical-navigation", "side-menu", "vertical-menu", "secondary-nav"],
+      "synonyms": ["vertical-navigation", "vertical-menu", "side-menu", "v-nav"],
+      "categories": ["navigation", "layout"],
+      "compositionContext": ["vertical-list", "side-placement", "hierarchical-optional"]
+    },
+    "navigation": {
+      "patterns": ["custom-navigation", "nav-container", "navigation-wrapper"],
+      "useCases": ["custom-navigation", "navigation-container", "nav-wrapper", "navigation-structure"],
+      "synonyms": ["nav-container", "navigation-wrapper", "custom-nav", "nav-structure"],
+      "categories": ["navigation", "layout"],
+      "compositionContext": ["generic-navigation", "customizable", "structural"]
+    },
+    "navigation-list": {
+      "patterns": ["nested-navigation", "hierarchical-nav", "tree-navigation"],
+      "useCases": ["nested-navigation", "hierarchical-nav", "multi-level-nav", "expandable-nav"],
+      "synonyms": ["nested-nav", "tree-nav", "hierarchical-navigation", "expandable-menu"],
+      "categories": ["navigation", "hierarchical"],
+      "compositionContext": ["nested-levels", "expandable", "parent-child"]
+    },
+    "navigation-menu": {
+      "patterns": ["nav-menu", "navigation-with-menu", "menu-navigation"],
+      "useCases": ["nav-menu", "navigation-menu", "menu-items", "nav-with-actions"],
+      "synonyms": ["nav-menu", "menu-nav", "navigation-with-menu", "menu-navigation"],
+      "categories": ["navigation", "interactive"],
+      "compositionContext": ["navigation-plus-menu", "action-items", "hybrid"]
+    },
+    "page-footer": {
+      "patterns": ["footer", "page-bottom", "bottom-bar"],
+      "useCases": ["page-footer", "footer", "bottom-actions", "page-bottom", "footer-content"],
+      "synonyms": ["footer", "page-bottom", "bottom-bar", "footer-bar"],
+      "categories": ["layout", "structure"],
+      "compositionContext": ["bottom-of-page", "footer-content", "actions-or-info"]
+    },
+    "section": {
+      "patterns": ["content-section", "page-section", "section-container"],
+      "useCases": ["content-section", "page-section", "section-divider", "content-group"],
+      "synonyms": ["content-section", "section-container", "page-section", "section-block"],
+      "categories": ["layout", "structure"],
+      "compositionContext": ["content-grouping", "semantic-section", "page-organization"]
+    },
+    "layout": {
+      "patterns": ["custom-layout", "layout-container", "flexible-layout"],
+      "useCases": ["custom-layout", "layout-container", "flexible-layout", "layout-structure"],
+      "synonyms": ["layout-container", "custom-layout", "layout-wrapper", "flex-layout"],
+      "categories": ["layout", "structure"],
+      "compositionContext": ["generic-layout", "customizable", "flexible"]
+    },
+    "layout-panel": {
+      "patterns": ["resizable-panel", "layout-section", "panel-section"],
+      "useCases": ["resizable-panel", "layout-section", "panel-area", "splitter-panel"],
+      "synonyms": ["resizable-panel", "layout-section", "panel-area", "split-panel"],
+      "categories": ["layout", "interactive"],
+      "compositionContext": ["resizable", "layout-part", "splitter-section"]
+    },
+    "tool-layout": {
+      "patterns": ["tool-ui-layout", "utility-layout", "app-layout"],
+      "useCases": ["tool-application", "utility-ui", "app-layout", "tool-interface"],
+      "synonyms": ["tool-ui", "utility-layout", "app-layout", "tool-structure"],
+      "categories": ["layout", "structure"],
+      "compositionContext": ["tool-apps", "specialized-layout", "utility-structure"]
+    },
+    "tool-header": {
+      "patterns": ["tool-app-header", "utility-header", "app-top-bar"],
+      "useCases": ["tool-header", "app-header", "utility-header", "tool-top-bar"],
+      "synonyms": ["tool-top-bar", "app-header", "utility-header", "tool-bar"],
+      "categories": ["layout", "structure"],
+      "compositionContext": ["tool-apps", "top-bar", "app-branding"]
+    },
+    "title-bar": {
+      "patterns": ["window-title-bar", "desktop-title-bar", "app-title-bar"],
+      "useCases": ["window-title", "desktop-title-bar", "app-title-bar", "window-header"],
+      "synonyms": ["window-title", "desktop-header", "app-title-bar", "window-top-bar"],
+      "categories": ["layout", "desktop"],
+      "compositionContext": ["desktop-style", "window-controls", "title-only"]
+    },
+    "upload-collection": {
+      "patterns": ["file-manager", "upload-manager", "file-list"],
+      "useCases": ["file-manager", "upload-list", "file-collection", "attachment-manager", "file-management"],
+      "synonyms": ["file-manager", "upload-list", "file-collection", "attachment-list"],
+      "categories": ["interactive", "data-display"],
+      "compositionContext": ["uploaded-files", "manage-files", "file-list-actions"]
+    },
+    "micro-process-flow": {
+      "patterns": ["process-steps", "workflow-indicator", "status-flow"],
+      "useCases": ["process-visualization", "workflow-steps", "status-flow", "step-indicator", "process-status"],
+      "synonyms": ["process-flow", "workflow-indicator", "step-flow", "status-steps"],
+      "categories": ["visual", "informational"],
+      "compositionContext": ["mini-process", "step-status", "workflow-visualization"]
+    },
+    "object-marker": {
+      "patterns": ["object-type-indicator", "entity-marker", "object-flag"],
+      "useCases": ["object-type", "entity-marker", "object-flag", "type-indicator", "object-classification"],
+      "synonyms": ["type-marker", "object-flag", "entity-indicator", "type-badge"],
+      "categories": ["visual", "business-objects"],
+      "compositionContext": ["object-type", "small-indicator", "classification"]
+    },
+    "status-indicator": {
+      "patterns": ["visual-status", "colored-status", "status-dot"],
+      "useCases": ["status-display", "visual-status", "colored-indicator", "status-dot", "state-visualization"],
+      "synonyms": ["status-dot", "colored-status", "visual-indicator", "status-circle"],
+      "categories": ["visual", "feedback"],
+      "compositionContext": ["small-dot", "semantic-color", "status-visualization"]
+    },
+    "counter": {
+      "patterns": ["count-display", "numeric-badge", "item-count"],
+      "useCases": ["count-display", "item-count", "numeric-indicator", "quantity-display", "counter-badge"],
+      "synonyms": ["count-badge", "numeric-indicator", "item-counter", "quantity-badge"],
+      "categories": ["visual", "data-display"],
+      "compositionContext": ["numeric-only", "small-badge", "count-indicator"]
+    },
+    "avatar-group": {
+      "patterns": ["user-group", "profile-group", "multiple-avatars"],
+      "useCases": ["user-group", "team-display", "multiple-users", "collaborators", "group-members"],
+      "synonyms": ["user-group", "profile-group", "team-avatars", "collaborator-list"],
+      "categories": ["visual", "user"],
+      "compositionContext": ["multiple-avatars", "overlapping-or-grid", "group-representation"]
+    },
+    "tokenizer": {
+      "patterns": ["token-container", "tag-container", "chip-container"],
+      "useCases": ["token-container", "multi-select-display", "tag-collection", "chip-group", "selected-items"],
+      "synonyms": ["token-container", "chip-container", "tag-group", "selection-container"],
+      "categories": ["layout", "forms"],
+      "compositionContext": ["contains-tokens", "multi-select-result", "removable-items"]
+    },
+    "facet": {
+      "patterns": ["grouped-info", "information-group", "data-group"],
+      "useCases": ["grouped-information", "data-group", "information-section", "facet-display", "structured-info"],
+      "synonyms": ["info-group", "data-section", "information-block", "grouped-data"],
+      "categories": ["data-display", "layout"],
+      "compositionContext": ["grouped-fields", "structured-layout", "information-display"]
+    },
+    "scrollbar": {
+      "patterns": ["custom-scrollbar", "styled-scrollbar"],
+      "useCases": ["custom-scrollbar", "styled-scroll", "scrollbar-styling"],
+      "synonyms": ["custom-scroll", "styled-scrollbar", "scroll-styling"],
+      "categories": ["utility", "visual"],
+      "compositionContext": ["scrollable-areas", "custom-styling", "webkit-scrollbar"]
+    },
+    "code": {
+      "patterns": ["code-block", "code-snippet", "code-display"],
+      "useCases": ["code-display", "code-snippet", "code-block", "syntax-display", "code-example"],
+      "synonyms": ["code-block", "code-snippet", "pre-code", "syntax-block"],
+      "categories": ["typography", "data-display"],
+      "compositionContext": ["monospace", "code-formatting", "syntax-highlighting-optional"]
+    },
+    "fieldset": {
+      "patterns": ["form-group", "field-group", "form-section"],
+      "useCases": ["form-group", "field-group", "form-section", "grouped-fields", "fieldset-legend"],
+      "synonyms": ["form-group", "field-group", "input-group-container", "form-section"],
+      "categories": ["forms", "structure"],
+      "compositionContext": ["semantic-grouping", "legend", "related-fields"]
+    },
+    "form-group": {
+      "patterns": ["form-row-group", "field-collection", "form-container"],
+      "useCases": ["form-rows", "field-collection", "form-container", "grouped-inputs", "form-section"],
+      "synonyms": ["form-container", "field-collection", "form-section", "input-container"],
+      "categories": ["forms", "layout"],
+      "compositionContext": ["multiple-form-items", "form-organization", "field-container"]
+    },
+    "form-header": {
+      "patterns": ["form-section-header", "form-title", "fieldset-header"],
+      "useCases": ["form-section-header", "form-title", "section-divider", "form-organization"],
+      "synonyms": ["form-section-header", "form-title", "section-header", "form-divider"],
+      "categories": ["forms", "structure"],
+      "compositionContext": ["section-title", "form-organization", "visual-separator"]
+    },
+    "form-layout-grid": {
+      "patterns": ["form-grid", "responsive-form", "multi-column-form"],
+      "useCases": ["form-grid", "responsive-form", "multi-column-form", "grid-form-layout", "form-columns"],
+      "synonyms": ["form-grid", "grid-form", "responsive-form-layout", "column-form"],
+      "categories": ["forms", "layout"],
+      "compositionContext": ["grid-based-form", "responsive-columns", "form-layout-structure"]
+    },
+    "prompt-input": {
+      "patterns": ["ai-prompt", "ai-input", "assistant-input"],
+      "useCases": ["ai-prompt", "ai-input", "chat-input", "assistant-prompt", "ai-query"],
+      "synonyms": ["ai-input", "chat-input", "assistant-input", "ai-query-field"],
+      "categories": ["ai", "forms"],
+      "compositionContext": ["ai-interaction", "prompt-entry", "assistant-communication"]
+    },
+    "ai-writing-assistant": {
+      "patterns": ["ai-writer", "ai-editor", "writing-assistant"],
+      "useCases": ["ai-writing", "ai-editor", "writing-assistant", "ai-content-generation", "assisted-writing"],
+      "synonyms": ["ai-editor", "writing-assistant", "ai-writer", "content-assistant"],
+      "categories": ["ai", "interactive"],
+      "compositionContext": ["ai-powered", "writing-help", "content-generation"]
+    },
+    "ai-text": {
+      "patterns": ["ai-generated-text", "ai-content", "generated-content"],
+      "useCases": ["ai-generated", "ai-content", "generated-text", "ai-output", "assistant-response"],
+      "synonyms": ["ai-generated", "generated-content", "ai-response", "assistant-text"],
+      "categories": ["ai", "data-display"],
+      "compositionContext": ["ai-generated-content", "styled-ai-output", "assistant-response"]
+    },
+    "ai-busy-indicator": {
+      "patterns": ["ai-loading", "ai-processing", "ai-thinking"],
+      "useCases": ["ai-loading", "ai-processing", "ai-thinking", "ai-busy-state", "assistant-working"],
+      "synonyms": ["ai-loader", "ai-spinner", "ai-processing", "assistant-thinking"],
+      "categories": ["ai", "feedback"],
+      "compositionContext": ["ai-specific-loading", "processing-indicator", "thinking-state"]
+    },
+    "ai-loading-bar": {
+      "patterns": ["ai-progress", "ai-progress-bar", "ai-generation-progress"],
+      "useCases": ["ai-progress", "generation-progress", "ai-task-progress", "ai-processing-progress"],
+      "synonyms": ["ai-progress", "generation-progress", "ai-progress-bar", "ai-task-bar"],
+      "categories": ["ai", "feedback"],
+      "compositionContext": ["ai-specific-progress", "generation-tracking", "ai-task-progress"]
+    },
+    "ai-writing-assistant-versioning": {
+      "patterns": ["ai-version-control", "ai-content-versions", "ai-history"],
+      "useCases": ["ai-versions", "content-versions", "ai-history", "version-management", "ai-revisions"],
+      "synonyms": ["ai-versions", "content-versions", "ai-revision-history", "version-control"],
+      "categories": ["ai", "data-management"],
+      "compositionContext": ["version-history", "ai-generated-versions", "content-management"]
+    },
+    "message-popover": {
+      "patterns": ["message-list-popover", "notification-popover", "message-dropdown"],
+      "useCases": ["message-list", "notification-popover", "message-dropdown", "validation-popover", "error-list"],
+      "synonyms": ["message-list-popover", "validation-popover", "error-popover", "message-dropdown"],
+      "categories": ["overlay", "feedback"],
+      "compositionContext": ["popup-message-list", "multiple-messages", "validation-errors"]
+    },
+    "helpers": {
+      "patterns": ["utility-classes", "helper-classes", "css-utilities"],
+      "useCases": ["utility-classes", "helper-classes", "quick-styling", "css-helpers"],
+      "synonyms": ["utility-classes", "helper-classes", "css-utilities", "styling-helpers"],
+      "categories": ["utility", "css"],
+      "compositionContext": ["non-component", "utility-css", "helper-classes"]
+    },
+    "margins": {
+      "patterns": ["margin-utilities", "spacing-utilities"],
+      "useCases": ["margin", "spacing", "margin-utilities", "external-spacing"],
+      "synonyms": ["margin-utilities", "spacing-classes", "margin-helpers"],
+      "categories": ["utility", "css"],
+      "compositionContext": ["non-component", "spacing-utilities", "margin-classes"]
+    },
+    "paddings": {
+      "patterns": ["padding-utilities", "internal-spacing"],
+      "useCases": ["padding", "internal-spacing", "padding-utilities", "inner-spacing"],
+      "synonyms": ["padding-utilities", "spacing-classes", "padding-helpers"],
+      "categories": ["utility", "css"],
+      "compositionContext": ["non-component", "spacing-utilities", "padding-classes"]
+    }
+  }
+}

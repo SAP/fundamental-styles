@@ -1,7 +1,7 @@
 ---
 name: component-guidance-forms
 description: 'Fiori guidelines for form controls and input components such as Checkbox, Input, Select, Textarea, Date Picker, etc'
-user-invocable: false
+user-invocable: true
 metadata:
     tags: ['components', 'forms', 'inputs', 'validation', 'data-entry']
     keywords:
