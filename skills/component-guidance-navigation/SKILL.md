@@ -1,7 +1,6 @@
 ---
 name: component-guidance-navigation
 description: 'Fiori guidelines for navigation components such as Breadcrumb, Menu, Link, Shellbar, Vertical Navigation, etc'
-user-invocable: true
 metadata:
     tags: ['components', 'navigation', 'wayfinding', 'menu']
     keywords:

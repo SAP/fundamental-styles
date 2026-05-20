@@ -6,6 +6,20 @@ MCP (Model Context Protocol) server that exposes [fundamental-styles](https://gi
 
 ### With Claude Code
 
+**Option 1: Using claude mcp add (Recommended)**
+
+```bash
+# Install latest version
+claude mcp add fundamental-styles -- npx -y @fundamental-styles/mcp
+
+# Or install a specific version
+claude mcp add fundamental-styles -- npx -y @fundamental-styles/mcp@0.41.7-rc.3
+```
+
+This command automatically adds the MCP server to your `.claude/mcp.json` configuration.
+
+**Option 2: Manual configuration**
+
 ```json
 // .claude/mcp.json
 {
@@ -49,9 +63,37 @@ MCP (Model Context Protocol) server that exposes [fundamental-styles](https://gi
 
 ### Direct invocation
 
+You can run the MCP server directly from the command line:
+
 ```bash
+# Run latest version
 npx -y @fundamental-styles/mcp
+
+# Run a specific version
+npx -y @fundamental-styles/mcp@0.41.7-rc.3
 ```
+
+**What gets invoked:**
+- `npx` downloads and runs the `@fundamental-styles/mcp` package from npm
+- The package entry point (`dist/index.js`) starts a Node.js MCP server
+- The server loads component metadata from bundled JSON files (HTML examples, CSS classes, design tokens, accessibility patterns)
+- It listens on **stdio** (standard input/output) for JSON-RPC messages following the [Model Context Protocol](https://modelcontextprotocol.io/)
+- AI clients (like Claude Code) send tool requests over stdio, and the server responds with structured data
+
+**Debugging with MCP Inspector:**
+
+The [MCP Inspector](https://github.com/modelcontextprotocol/inspector) is a web UI for testing MCP servers interactively:
+
+```bash
+# Start the inspector (from the repo root)
+npx @modelcontextprotocol/inspector npx -y @fundamental-styles/mcp
+```
+
+This opens a browser UI where you can:
+- Browse all 13 available tools
+- Send test requests with custom parameters
+- View formatted JSON responses
+- Debug tool behavior without an AI client
 
 The server communicates over **stdio** using the MCP JSON-RPC protocol.
 
@@ -146,106 +188,3 @@ Opens the [MCP Inspector](https://github.com/modelcontextprotocol/inspector) —
 ```bash
 npx nx test mcp
 ```
-
-### Data Quality Scripts
-
-The MCP server includes utility scripts to maintain and improve the quality of component metadata:
-
-#### Validate Data Quality
-
-```bash
-npx tsx packages/mcp/src/validate-data.ts
-```
-
-Analyzes all data files (`docs/*.json`) and reports quality issues:
-
-- **Component descriptions**: Detects generic/placeholder descriptions
-- **HTML examples**: Identifies components without curated examples
-- **Design tokens**: Checks for missing `purpose` and `cssUsage` fields
-- **Related components**: Finds components with empty relationship lists
-
-**Output includes:**
-- Summary by issue type (descriptions, examples, tokens, relationships)
-- Summary by severity (errors, warnings, info)
-- Overall data quality statistics
-
-**Options:**
-- `--detailed`: Show specific issues for each component (first 50 issues)
-
-**Example:**
-```bash
-npx tsx packages/mcp/src/validate-data.ts --detailed
-
-# Sample output:
-# 📝 Checking component descriptions...
-#    Found 14 generic descriptions (12%)
-# 
-# 📄 Checking HTML examples...
-#    84 components have examples, 35 missing (29%)
-# 
-# 🎨 Checking design tokens...
-#    Total tokens: 1485
-#    Tokens without purpose: 1485 (99%)
-```
-
-**Use this when:**
-- Adding new components to the catalog
-- After bulk updates to data files
-- Before publishing a new version
-- Investigating why component info seems incomplete
-
-#### Update Component Descriptions
-
-```bash
-npx tsx packages/mcp/src/update-descriptions.ts
-```
-
-Automatically enhances generic component descriptions by pulling better descriptions from `component-guidance.json`:
-
-- Detects components with placeholder descriptions (e.g., "Component component", "badge", descriptions under 20 chars)
-- Looks up detailed guidance for each component
-- Replaces generic descriptions with meaningful ones from guidance data
-- Saves updated catalog back to `docs/component-catalog.json`
-
-**Example:**
-```bash
-npx tsx packages/mcp/src/update-descriptions.ts
-
-# Sample output:
-# ✅ badge
-#    OLD: "badge"
-#    NEW: "Badge - Display small, status-driven labels..."
-# 
-# ✅ button-split
-#    OLD: "button-split component"
-#    NEW: "Button Split - A button that splits into primary action and dropdown menu..."
-# 
-# ✨ Updated 12 of 119 component descriptions
-```
-
-**Use this when:**
-- Adding new components that need better descriptions
-- After updating component-guidance.json with new documentation
-- Preparing data for a release
-- Improving search relevance for recommend_components tool
-
-**Workflow:**
-
-1. Run validation to identify issues:
-   ```bash
-   npx tsx packages/mcp/src/validate-data.ts --detailed
-   ```
-
-2. Update descriptions from guidance:
-   ```bash
-   npx tsx packages/mcp/src/update-descriptions.ts
-   ```
-
-3. Validate again to verify improvements:
-   ```bash
-   npx tsx packages/mcp/src/validate-data.ts
-   ```
-
-4. Manually address remaining issues (add guidance docs, generate examples, etc.)
-
-**Note:** These scripts modify source data files in `docs/`. Always review changes before committing.

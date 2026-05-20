@@ -1,7 +1,6 @@
 ---
 name: component-guidance-actions
 description: 'Fiori guidelines for action components Button, Product Switch, User Menu, Scrollbar'
-user-invocable: true
 metadata:
     tags: ['components', 'actions', 'buttons', 'controls']
     keywords:

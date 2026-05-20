@@ -1,7 +1,6 @@
 ---
 name: component-guidance-feedback
 description: 'Fiori guidelines for feedback components such as Message Strip, Notification, Dialog, Progress Indicator, etc'
-user-invocable: true
 metadata:
     tags: ['components', 'feedback', 'messages', 'status', 'alerts']
     keywords:

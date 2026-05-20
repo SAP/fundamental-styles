@@ -42,10 +42,23 @@ Detailed guidance for all 87 components, organized by category:
 Install the complete skills package with one command:
 
 ```bash
-npx skills add SAP/fundamental-styles@v0.41.7-rc.0
+# Install at project level (default - only available in this project)
+npx skills add SAP/fundamental-styles
+
+# Or install globally (available across all your projects)
+npx skills add SAP/fundamental-styles -g
 ```
 
 This installs all 10 skills automatically.
+
+### Browse Available Skills
+
+Before installing, you can preview what skills are available:
+
+```bash
+# List all skills in the package without installing
+npx skills add SAP/fundamental-styles -l
+```
 
 ### Install Individual Skills
 
@@ -53,13 +66,13 @@ If you only need specific skills, you can install them individually:
 
 ```bash
 # Install only BEM naming guidance
-npx skills add SAP/fundamental-styles@v0.41.7-rc.0 -s bem-naming
+npx skills add SAP/fundamental-styles -s bem-naming
 
 # Install only component composition
-npx skills add SAP/fundamental-styles@v0.41.7-rc.0 -s component-composition
+npx skills add SAP/fundamental-styles -s component-composition
 
 # Install multiple specific skills
-npx skills add SAP/fundamental-styles@v0.41.7-rc.0 -s bem-naming,component-composition,layout-patterns
+npx skills add SAP/fundamental-styles -s bem-naming,component-composition,layout-patterns
 ```
 
 **Available skill IDs:**
@@ -73,6 +86,28 @@ npx skills add SAP/fundamental-styles@v0.41.7-rc.0 -s bem-naming,component-compo
 - `bem-naming`
 - `component-composition`
 - `content-density`
+
+### Verify Installation
+
+After installing, verify that skills are available:
+
+```bash
+# List installed skills
+npx skills list
+
+# Or list global skills
+npx skills list -g
+```
+
+**In Claude Code**, test by typing a skill command:
+
+```
+/component-guidance-forms
+/bem-naming
+/layout-patterns
+```
+
+The skill content should load immediately. If skills don't appear, try restarting Claude Code.
 
 ## Skills vs MCP Tools
 
@@ -101,26 +136,6 @@ npx skills add SAP/fundamental-styles@v0.41.7-rc.0 -s bem-naming,component-compo
 - 🛠️ Project setup and CSS dependencies
 - 📋 Quick reference during implementation
 - 🎯 Finding specific design tokens or classes
-
-### Example: Building a Data Table
-
-**Option 1: Start with Skill (Learn First)**
-```
-Type: /component-guidance-data
-
-Result: Learn when to use tables vs lists, best practices, 
-accessibility, common mistakes, and design guidelines.
-
-Then: Use get_component_html("table") to get the code.
-```
-
-**Option 2: Start with Tool (Code First)**
-```
-Call: get_component_html("table")
-
-Result: Get HTML immediately, plus a recommendation to 
-Type /component-guidance-data for best practices.
-```
 
 ## How AI Agents Use Skills
 
@@ -183,40 +198,3 @@ Response includes:
   Activation: Type /layout-patterns
   Description: See complete navigation shell pattern
 ```
-
-## Skill Structure
-
-Each skill follows a consistent format:
-
-### Component Guidance Skills
-
-For each component, provides:
-
-- **Description** - What the component is and does
-- **When to use** - Appropriate use cases
-- **When to avoid** - Anti-patterns and alternatives
-- **Best practices** - Implementation guidelines
-
-**Example:**
-
-```markdown
-## Button
-
-**Description:**
-Buttons enable users to trigger actions...
-
-**When to use:**
-- Trigger specific actions (Save, Cancel, Submit)
-- Use toggle buttons in toolbars
-- Use menu button for multiple options
-
-**When to avoid:**
-- ❌ Linking to a different page → Use link instead
-- ❌ Navigating within process → Use wizard instead
-
-**Best practices:**
-- ✅ Use emphasized button for primary action
-- ✅ Use semantic colors (positive, negative)
-- ⚠️ Only one emphasized button per page
-```
-
