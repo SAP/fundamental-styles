@@ -1,4 +1,5 @@
 import { ComponentMetadata } from './types/component-metadata';
+import { SemanticTags } from './types/semantic-tags';
 
 export function findComponent(
     components: ComponentMetadata[],
@@ -186,4 +187,203 @@ export function checkTokenQuality(token: {
     }
 
     return { hasPurpose, hasValue, hasCssUsage, completeness };
+}
+
+/**
+ * Query expansion - expand search terms with synonyms and related terms
+ */
+export function expandQuery(query: string): string[] {
+    const queryLower = query.toLowerCase().trim();
+    const expansions = new Set<string>([queryLower]);
+
+    // Pattern-based expansions (maps common queries to related terms)
+    const expansionMap: Record<string, string[]> = {
+        'dashboard': ['kpi', 'metric', 'analytics', 'stats', 'overview', 'widget', 'grid'],
+        'master detail': ['list-detail', 'split-view', 'two-pane', 'master-detail-layout', 'side-content'],
+        'master-detail': ['list-detail', 'split-view', 'two-pane', 'master-detail-layout', 'side-content'],
+        'table': ['data-grid', 'grid', 'spreadsheet', 'data-table', 'list'],
+        'form': ['input', 'field', 'validation', 'login', 'registration'],
+        'modal': ['dialog', 'popup', 'overlay', 'lightbox'],
+        'popup': ['modal', 'dialog', 'overlay', 'popover'],
+        'notification': ['message', 'alert', 'toast', 'banner'],
+        'menu': ['dropdown', 'context-menu', 'action-menu'],
+        'navigation': ['nav', 'menu', 'sidebar', 'side-nav'],
+        'card': ['tile', 'panel', 'widget', 'container'],
+        'metric': ['kpi', 'number', 'numeric', 'statistic'],
+        'kpi': ['metric', 'number', 'numeric', 'dashboard'],
+        'greeting': ['welcome', 'hello', 'title', 'message'],
+        'hello world': ['greeting', 'welcome', 'title', 'text'],
+        'login': ['form', 'auth', 'authentication', 'signin'],
+        'data grid': ['table', 'spreadsheet', 'data-table'],
+        'spreadsheet': ['table', 'data-grid', 'grid'],
+        'filter': ['search', 'toolbar', 'input'],
+        'sort': ['table', 'data-grid', 'toolbar'],
+        'upload': ['file', 'attachment', 'file-uploader'],
+        'click': ['button', 'link', 'action', 'interactive'],
+        'message': ['notification', 'alert', 'toast', 'feedback']
+    };
+
+    // Add expansion terms
+    for (const [pattern, terms] of Object.entries(expansionMap)) {
+        if (queryLower.includes(pattern)) {
+            terms.forEach(term => expansions.add(term));
+        }
+    }
+
+    // Split multi-word queries and add individual words
+    const words = queryLower.split(/[\s-]+/).filter(w => w.length > 2);
+    words.forEach(word => expansions.add(word));
+
+    return Array.from(expansions);
+}
+
+/**
+ * Semantic score calculation - scores component against query using semantic tags
+ */
+export interface SemanticMatchResult {
+    component: ComponentMetadata;
+    score: number;
+    confidence: 'high' | 'medium' | 'low';
+    matchReasons: string[];
+    matchedTags: {
+        patterns: string[];
+        useCases: string[];
+        synonyms: string[];
+    };
+}
+
+export function scoreSemanticMatch(
+    component: ComponentMetadata,
+    query: string,
+    semanticTags?: SemanticTags,
+    expandedQuery?: string[]
+): SemanticMatchResult {
+    let score = 0;
+    const matchReasons: string[] = [];
+    const matchedTags = { patterns: [] as string[], useCases: [] as string[], synonyms: [] as string[] };
+
+    const queryTerms = expandedQuery || expandQuery(query);
+    const queryLower = query.toLowerCase();
+
+    // Base matching (always done)
+    // Exact matches on core fields
+    if (component.id === queryLower) {
+        score += 100;
+        matchReasons.push('Exact component ID match');
+    } else if (component.id.includes(queryLower)) {
+        score += 50;
+        matchReasons.push('Component ID contains query');
+    }
+
+    if (component.baseClass === queryLower || component.baseClass === `fd-${queryLower}`) {
+        score += 90;
+        matchReasons.push('Exact CSS class match');
+    } else if (component.baseClass.includes(queryLower)) {
+        score += 40;
+        matchReasons.push('CSS class contains query');
+    }
+
+    if (component.name.toLowerCase() === queryLower) {
+        score += 80;
+        matchReasons.push('Exact name match');
+    } else if (component.name.toLowerCase().includes(queryLower)) {
+        score += 35;
+        matchReasons.push('Name contains query');
+    }
+
+    if (component.description.toLowerCase().includes(queryLower)) {
+        score += 20;
+        matchReasons.push('Description match');
+    }
+
+    if (component.category?.toLowerCase().includes(queryLower)) {
+        score += 30;
+        matchReasons.push('Category match');
+    }
+
+    // Semantic matching (if tags available)
+    if (semanticTags) {
+        // Pattern tags (highest priority - architectural patterns)
+        for (const term of queryTerms) {
+            for (const pattern of semanticTags.patterns) {
+                if (pattern.toLowerCase().includes(term) || term.includes(pattern.toLowerCase())) {
+                    score += 60;
+                    matchedTags.patterns.push(pattern);
+                    matchReasons.push(`Pattern match: "${pattern}"`);
+                    break; // Count each pattern once
+                }
+            }
+        }
+
+        // Use-case tags (what developers are trying to build)
+        for (const term of queryTerms) {
+            for (const useCase of semanticTags.useCases) {
+                if (useCase.toLowerCase().includes(term) || term.includes(useCase.toLowerCase())) {
+                    score += 50;
+                    matchedTags.useCases.push(useCase);
+                    matchReasons.push(`Use-case match: "${useCase}"`);
+                    break; // Count each use-case once
+                }
+            }
+        }
+
+        // Synonym tags (alternative names)
+        for (const term of queryTerms) {
+            for (const synonym of semanticTags.synonyms) {
+                if (synonym.toLowerCase().includes(term) || term.includes(synonym.toLowerCase())) {
+                    score += 45;
+                    matchedTags.synonyms.push(synonym);
+                    matchReasons.push(`Synonym match: "${synonym}"`);
+                    break; // Count each synonym once
+                }
+            }
+        }
+
+        // Category tags
+        for (const term of queryTerms) {
+            for (const category of semanticTags.categories) {
+                if (category.toLowerCase().includes(term) || term.includes(category.toLowerCase())) {
+                    score += 25;
+                    matchReasons.push(`Category match: "${category}"`);
+                    break;
+                }
+            }
+        }
+    }
+
+    // Search in modifiers
+    for (const mod of component.modifiers) {
+        if (mod.class.toLowerCase().includes(queryLower)) {
+            score += 15;
+            matchReasons.push(`Modifier match: ${mod.class}`);
+            break;
+        }
+    }
+
+    // Search in elements
+    for (const el of component.elements) {
+        if (el.class.toLowerCase().includes(queryLower)) {
+            score += 10;
+            matchReasons.push(`Element match: ${el.class}`);
+            break;
+        }
+    }
+
+    // Determine confidence
+    let confidence: 'high' | 'medium' | 'low';
+    if (score >= 80) {
+        confidence = 'high';
+    } else if (score >= 40) {
+        confidence = 'medium';
+    } else {
+        confidence = 'low';
+    }
+
+    return {
+        component,
+        score,
+        confidence,
+        matchReasons,
+        matchedTags
+    };
 }

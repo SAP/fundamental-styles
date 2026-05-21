@@ -1,7 +1,6 @@
 ---
 name: component-composition
 description: How to combine fundamental-styles components correctly - required wrappers, nesting rules, and common composition patterns
-user-invocable: false
 metadata:
     tags: ['composition', 'structure', 'nesting', 'wrappers', 'patterns']
     keywords:

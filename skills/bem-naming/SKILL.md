@@ -1,7 +1,6 @@
 ---
 name: bem-naming
 description: BEM (Block Element Modifier) methodology and naming conventions used in fundamental-styles with real examples
-user-invocable: false
 metadata:
     tags: ['bem', 'naming', 'conventions', 'methodology', 'css', 'classes']
     keywords:
