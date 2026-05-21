@@ -28,7 +28,7 @@ export default {
 - You need only a single text box instance. In this case, use the **Textarea** component (for multiple lines) or the text control (for a single line).
 
 `,
-    tags: ['f3', 'a11y', 'theme']
+    tags: []
   }
 };
 export const Standard = () => standardExampleHtml;

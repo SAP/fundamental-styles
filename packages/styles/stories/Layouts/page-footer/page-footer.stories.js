@@ -23,7 +23,7 @@ export default {
 -	You want to display collection of links for menu listing actions at the bottom of the screen.
 
 Note: You may want to display components from right to left on the screen for international purposes. To display them as such, add the \`rtl\` directive to the main element.`,
-    tags: ['non-f3', 'a11y', 'theme']
+    tags: ['non-f3']
   }
 };
 export const SingleLineLink = () => singleLineLinkExampleHtml;

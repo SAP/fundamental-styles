@@ -42,7 +42,7 @@ The grid list is usually used as an alternative view for a list or table. It is 
 - You just need it for layout reasons. In this case, use a layout container such as the CSSGrid.
 - You want to manage complex datasets that need to be extensively sorted, grouped, filtered, or edited. In this case, use a table.
     `,
-    tags: ['f3', 'a11y', 'theme', 'development'],
+    tags: [],
     components: ['grid-list', 'layout-grid', 'toolbar', 'button', 'icon', 'title', 'radio', 'checkbox', 'avatar', 'link', 'object-status']
   }
 };

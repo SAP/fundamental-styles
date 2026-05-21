@@ -64,7 +64,7 @@ Users can enter the time in two ways:
                     - .fd-time-picker\\_\\_number **Modifier classes:** .fd-time-picker\\_\\_number--hover, .fd-time-picker\\_\\_number--invisible, .fd-time-picker\\_\\_number--selected
 `
   },
-  tags: ['f3', 'theme']
+  tags: []
 };
 export const Hours24Cozy = () => hours24CozyExampleHtml;
 Hours24Cozy.storyName = 'Time Picker with 24-hour Clock Face';

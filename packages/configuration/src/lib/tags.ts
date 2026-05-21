@@ -74,4 +74,9 @@ export const tags = {
         "title": "uxc",
         "color": 5
     },
+     "deprecated": {
+        "name": "deprecated",
+        "title": "Deprecated",
+        "color": 1
+    },
 }

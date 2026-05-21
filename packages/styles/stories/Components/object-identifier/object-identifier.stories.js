@@ -30,7 +30,7 @@ The object identifier should be easily read by the users, preferably displaying 
 - You want to display system messages.
 - They are for decorative purposes only.
 `,
-    tags: ['f3']
+    tags: []
   }
 };
 export const TitleOnly = () => titleOnlyExampleHtml;

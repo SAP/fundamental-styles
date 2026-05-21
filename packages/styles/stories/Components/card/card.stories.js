@@ -278,8 +278,7 @@ ListCard.storyName = 'List card';
 ListCard.parameters = {
   docs: {
    description: {
-      story: `A card can display various types of lists. All components placed inside should behave natively.
-            For this kind of card it is not recommended to keep header interactive, or navigable.
+      story: `A card can display various types of lists. All components placed inside should behave natively. For this kind of card it is not recommended to keep header interactive, or navigable.
         `
     }
   }
@@ -304,14 +303,14 @@ ObjectCard.parameters = {
 
 **Within the content area, there are several components:**
 
-Component (class) |	Description
-:---------------- | :-----------
-\`fd-card__content-container\` | a wrapper for the content sections. By default, the content is displayed in one column. To display the content in two columns, add the \`fd-card__content-container--horizontal\` modifier class.
-\`fd-card__content-section\` | a content section. A section contains a group title and one or multiple groups. The min-width of the section is 12rem and it can reach a maximum of 24rem.
-\`fd-card__content-title-container\` | a container for the title.
-\`fd-card__content-group\` | a container for the content group. It can also contain an avatar with size XS, a group label and a group value.
-\`fd-card__content-label-container\` | a container for the label of the group.
-\`fd-card__content-group-container\` | a container for the value of the group.
+| Component (class) | Description |
+|:-------------------|:-------------|
+| \`fd-card__content-container\` | A wrapper for the content sections. By default, the content is displayed in one column. To display the content in two columns, add the \`fd-card__content-container--horizontal\` modifier class. |
+| \`fd-card__content-section\` | A content section. A section contains a group title and one or multiple groups. The min-width of the section is 12rem and it can reach a maximum of 24rem. |
+| \`fd-card__content-title-container\` | A container for the title. |
+| \`fd-card__content-group\` | A container for the content group. It can also contain an avatar with size XS, a group label and a group value. |
+| \`fd-card__content-label-container\` | A container for the label of the group. |
+| \`fd-card__content-group-container\` | A container for the value of the group. |
 `
     }
   }

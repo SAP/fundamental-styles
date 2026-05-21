@@ -35,7 +35,7 @@ export default {
 -       You need only a single text box instance. Instead, use **Text Area**.
 -       You want to display empty fields for the user to input feed entries. Instead, use **Feed Input**.
         `,
-    tags: ['f3', 'a11y', 'theme']
+    tags: []
   }
 };
 export const Standard = () => standardExampleHtml;

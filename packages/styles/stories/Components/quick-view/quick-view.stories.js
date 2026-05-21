@@ -19,9 +19,8 @@ import '../../../src/text.scss';
 export default {
   title: 'Components/Quick View',
   parameters: {
-    description: `The quick view is similar to a popover but has a predefined structure, a fixed set of UI
-        elements, and automatic UI rendering. Should be used in combination with the popover or dialog components`,
-    tags: ['f3', 'a11y', 'theme']
+    description: `The quick view is similar to a popover but has a predefined structure, a fixed set of UI elements, and automatic UI rendering. Should be used in combination with the popover or dialog components`,
+    tags: []
   }
 };
 export const Popover = () => popoverExampleHtml;
@@ -36,8 +35,7 @@ export const Dialog = () => dialogExampleHtml;
 Dialog.parameters = {
   docs: {
     description: {
-      story: `QuickView component as dialog. Because of the dialog structure quick view title should be
-        set within the dialog header but not in the quick view header`
+      story: `QuickView component as dialog. Because of the dialog structure quick view title should be set within the dialog header but not in the quick view header`
     }
   }
 };

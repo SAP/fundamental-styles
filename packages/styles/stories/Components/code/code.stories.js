@@ -5,14 +5,14 @@ export default {
   title: 'Components/Code',
   parameters: {
     description: `The code component helps with formating and styling code snippets. It differantiates the code lines from the normal text.
-##Usage
 
-**Use the code if:**
-* You want to display a block of code.
-* You want to dispaly a line of code.
+##Usage
+Use the code if: <br>
+- You want to display a block of code. <br>
+- You want to dispaly a line of code.
 
 `,
-    tags: ['f3', 'a11y', 'theme', 'development']
+    tags: []
   }
 };
 export const Primary = () => primaryExampleHtml;

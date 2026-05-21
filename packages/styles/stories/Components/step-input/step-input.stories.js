@@ -49,12 +49,12 @@ States.parameters = {
 
 **To display step input in a semantic state, add the following classes to the main elements:**
 
-State | Class
-:------ | :-----------
-Success | \`is-success\`
-Information | \`is-information\`
-Error | \`is-error\`
-Warning | \`is-warning\`
+| State | Class |
+| :------ | :----------- |
+| Success | \`is-success\` |
+| Information | \`is-information\` |
+| Error | \`is-error\` |
+| Warning | \`is-warning\` |
 
         `
     }

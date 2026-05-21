@@ -10,8 +10,8 @@ import '../../../src/layout-grid.scss';
 export default {
   title: 'Patterns/Time Picker',
   parameters: {
-    description: `## DEPRECATED
-        The time picker allows the user to select a localized time. It is smaller in compact mode and provides a touch-friendly size in cozy mode.
+    description: `<br><br> ## DEPRECATED
+The time picker allows the user to select a localized time. It is smaller in compact mode and provides a touch-friendly size in cozy mode.
 
 
 ##Usage
@@ -24,7 +24,7 @@ export default {
 
 
 `,
-    tags: ['f3', 'a11y', 'theme']
+    tags: ['deprecated']
   }
 };
 export const TabletMode = () => tabletModeExampleHtml;

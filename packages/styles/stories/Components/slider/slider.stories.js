@@ -47,7 +47,7 @@ To ensure that both the standard and range sliders are accessible, a div element
 
 `
   },
-  tags: ['f3', 'theme']
+  tags: []
 };
 export const Standard = () => standardExampleHtml;
 Standard.parameters = {

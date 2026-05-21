@@ -12,12 +12,12 @@ export default {
     description: `
 The form grid component provides responsive layouts for forms on a 12-column grid. There are four breakpoints that result in four supported sizes:
 
-Size | Form width | Breakpoint
-:----- | :-------------- | :---------------
-Small | < 600 px | 601 px breaks to medium
-Medium | 601 px – 1024 px | 1025 px breaks to large
-Large | 1025 px – 1440 px | 1441 px breaks to extra-large
-Extra-large&nbsp;&nbsp;&nbsp; | 1441 px and above&nbsp;&nbsp;&nbsp; | _no breakpoint above 1441 px_
+| Size | Form width | Breakpoint |
+| :----- | :-------------- | :--------------- |
+| Small | < 600 px | 601 px breaks to medium |
+| Medium | 601 px – 1024 px | 1025 px breaks to large |
+| Large | 1025 px – 1440 px | 1441 px breaks to extra-large |
+| Extra-large | 1441 px and above | _no breakpoint above 1441 px_ |
 
 **Note:** These breakpoints are not dependent on the screen width, but rather the width of the form.
 

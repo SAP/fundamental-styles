@@ -15,20 +15,23 @@ import '../../../src/numeric-content.scss';
 import '../../../src/icon.scss';
 export default {
   title: 'Components/Generic Tiles',
+  decorators: [
+    (story) => `<style>.fddocs-container { gap: 2rem; }</style>${story()}`
+  ],
   parameters: {
     description: `
 The generic tile is a container that represents an app on the SAP Fiori launchpad home page. They can display types of content based on the data supplied from the app. In addition, they can contain an icon, information text, a title, KPIs, counters and charts. Tiles move to the next row if there is insufficient horizontal screen space to display them all.
 
 ##Guidelines
 
-**Do’s**
+**Do's**
 
 - Only use tiles on the launchpad home page. Don’t use them anywhere else.
 - In the content area, only show content types described on this page. For example, don’t play videos, animations, or gifs in the tiles.
 - If you are not showing a KPI or a chart, try to show an icon instead to help users to distinguish the tiles.
 - Use short tile names.
 
-**Don’ts**
+**Don'ts**
 
 - Do not use the status area for error messages.
 - Do not use the tile subtitle for explanations. Use the subtitle only if you need a differentiator (such as a specific view on the data).

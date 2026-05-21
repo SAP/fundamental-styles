@@ -10,7 +10,7 @@ export default {
     title: 'BTP/Button',
     parameters: {
         description,
-        tags: ['a11y', 'btp', 'horizon-only']
+        tags: ['btp', 'horizon-only']
     }
 };
 

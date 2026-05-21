@@ -47,7 +47,7 @@ export default {
         * \`fd-button__badge\` the badge of the button
         * \`fd-button__instructions\` the instructions for the button usage, not visible, only being read by screen readers
 `,
-tags: ['f3', 'a11y', 'theme']
+tags: []
   }
 };
 export const Styles = () => stylesExampleHtml;

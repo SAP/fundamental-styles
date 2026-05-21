@@ -37,7 +37,7 @@ The ongoing operation only covers part of a screen that has multiple controls, a
 - The operation takes less than one second.
 - You need to block the screen because the user is not supposed to start another operation. In this case, use the **Busy Dialog** component.
         `,
-    tags: ['f3', 'a11y', 'theme']
+    tags: []
   }
 };
 export const Standard = () => standardExampleHtml;

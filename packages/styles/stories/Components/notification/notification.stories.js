@@ -18,7 +18,7 @@ import '../../../src/btp/avatar.scss';
 export default {
   title: 'Components/Notifications',
   parameters: {
-    tags: ['development'],
+    tags: [],
     description: `
 Notifications are used to relay information to the user about a situation or task that requires their input. They can notice and access the notifications by the bell icon in the shell bar on the top-right of the screen. In the notification popover, they take immediate action, navigate to the source of a specific notification or in the case of a notification group, they can sort the list items in various ways.
 

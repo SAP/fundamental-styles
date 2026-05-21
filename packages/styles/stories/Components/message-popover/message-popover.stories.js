@@ -25,7 +25,7 @@ It provides a handy and systematized way to navigate and explore details for eve
 - When you want a way to centrally manage messages and show them to the user without additional work for the developer.
 
 `,
-    tags: ['f3', 'theme']
+    tags: []
   }
 };
 export const CozyMessagePopover = () => cozyMessagePopoverExampleHtml;

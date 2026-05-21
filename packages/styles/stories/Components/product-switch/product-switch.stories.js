@@ -22,7 +22,7 @@ export default {
 
 -	You want your users to navigate within the current product. In this case, use a product menu (see **Shellbar**).
         `,
-    tags: ['f3', 'a11y', 'theme']
+    tags: []
   }
 };
 const localStyles = `

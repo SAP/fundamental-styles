@@ -44,7 +44,7 @@ Users can also enter custom values if the entries are not validated by the appli
 - Your use case requires more options to choose from.
 
 `,
-    tags: ['f3', 'a11y', 'theme'],
+    tags: [],
     components: ['form-label', 'popover', 'radio', 'title', 'token', 'input-group', 'checkbox', 'list', 'button', 'icon', 'tokenizer', 'dialog', 'bar', 'input', 'layout-grid', 'link']
   }
 };

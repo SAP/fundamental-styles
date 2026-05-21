@@ -41,7 +41,7 @@ export default {
  - **Size M & L**: Bar component with additional \`fd-bar--page-m_l\` modifier class and \`fd-page__content--m_l\` modifier class for the content
  - **Size XL**: Bar component with additional \`fd-bar--page-xl\` modifier class and \`fd-page__content--xl\` modifier class for the content
 `,
-    tags: ['f3', 'a11y', 'theme']
+    tags: []
   }
 };
 export const BasicPage = () => basicPageExampleHtml;

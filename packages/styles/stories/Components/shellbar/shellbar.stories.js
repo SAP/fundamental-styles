@@ -22,7 +22,7 @@ import '../../../src/toolbar.scss';
 export default {
   title: 'Components/Shellbar',
   parameters: {
-    tags: ['experimental', 'uxc'],
+    tags: ['uxc'],
     description: `The Shell Bar serves as the topmost section across all SAP products, providing users with a way to orient themselves within the diverse SAP product landscape. It is always visible and offers relevant information about the current context, including product and brand details, while also providing access to specific functions such as search, notifications, user profiles, and more.
 
 **Shellbar has two primary container groups:**
@@ -146,8 +146,7 @@ Responsiveness.storyName = 'Actions in Overflow Toolbar';
 Responsiveness.parameters = {
   docs: {
     description: {
-      story: `Truncation and overflow logic of Shell Bar are based on priorities, such as when a component with a higher priority takes precedence over an element with a lower priority. <br>
-      For all screen sizes the following elements are always displayed:
+      story: `Truncation and overflow logic of Shell Bar are based on priorities, such as when a component with a higher priority takes precedence over an element with a lower priority. <br><br>For all screen sizes the following elements are always displayed:
 <ul>
   <li>Side Navigation Button (if used)</li>
   <li>Avatar (User Menu)</li>

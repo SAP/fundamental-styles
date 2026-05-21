@@ -17,7 +17,7 @@ It allows users to fill the content on a numeric scale, typically from 1 (lowest
 ##Usage
 Use the status indicator in Grids, tables, or in a dialog box.
         `,
-    tags: ['f3', 'a11y', 'theme']
+    tags: []
   }
 };
 export const Sizes = () => sizesExampleHtml;
@@ -75,8 +75,7 @@ StatusIndicatorCoreoGraphy.storyName = 'Status Indicator With Coreographed filli
 StatusIndicatorCoreoGraphy.parameters = {
   docs: {
     description: {
-      story: `
-		Example to demonstrate the order dispatch from the manufacturing unit
+      story: `Example to demonstrate the order dispatch from the manufacturing unit
 		`
     }
   }

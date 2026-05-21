@@ -14,7 +14,7 @@ export default {
   title: 'Components/Wizard',
   parameters: {
     description,
-    tags: ['f3', 'theme', 'development']
+    tags: []
   }
 };
 export const DefaultExample = () => defaultExampleExampleHtml;

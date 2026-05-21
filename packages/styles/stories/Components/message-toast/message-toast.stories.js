@@ -23,7 +23,7 @@ Note: The timing and duration of the message toast is defined by the application
 - You want to interrupt users while they are performing an action.
 - You want to make sure that users read the message before they leave the page.
         `,
-    tags: ['f3', 'a11y', 'theme']
+    tags: []
   }
 };
 export const DefaultToast = () => defaultToastExampleHtml;

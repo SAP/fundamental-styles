@@ -19,7 +19,7 @@ import '../../../src/input.scss';
 export default {
   title: 'Components/Menu',
   parameters: {
-    tags: ['f3', 'a11y', 'theme', 'development'],
+    tags: [],
     description: `
 The menu component is the listing structure with optional headers to create menus.
 

@@ -10,7 +10,7 @@ export default {
     \r\nA skeleton page shows the frame of the final content without the content being fully loaded. Visually, skeleton pages are grey boxes with animations to indicate loading activity.
     \r\nSkeleton pages are used to create an impression of speed and reliability when an app encounters performance barriers. They provide a generic preview of the layout, which makes the app seem to load faster. This improves the overall user experience.
     \r\nThe Placeholder Skeleton is made up of Placeholder Shapes that aim to give an idea of how the actual content will look like. The placeholders can take various forms, depending on the type of content that is being loaded.`,
-    tags: ['f3']
+    tags: []
   }
 };
 export const Skeleton = () => skeletonExampleHtml;

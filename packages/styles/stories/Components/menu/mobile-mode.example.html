@@ -1,36 +1,40 @@
-<div style="width: 20rem; margin: 0 10rem; display: inline-block" class="fd-dialog fd-dialog-docs-static fd-select-docs-max-height fd-dialog--active" id="select-dialog-example">
-    <section
-        aria-labelledby="exampleSubMenuHeader"
-        class="fd-dialog__content fd-dialog__content--mobile"
-        role="dialog">
+<div
+    style="width: 20rem; margin: 3rem; display: inline-block"
+    class="fd-dialog fd-dialog-docs-static fd-select-docs-max-height fd-dialog--active"
+    id="select-dialog-example"
+>
+    <section aria-labelledby="exampleSubMenuHeader" class="fd-dialog__content fd-dialog__content--mobile" role="dialog">
         <header aria-label="bar-header" class="fd-dialog__header fd-bar fd-bar--header">
             <div class="fd-bar__left">
                 <div class="fd-bar__element">
-                    <h3
-                        id="exampleSubMenuHeader"
-                        class="fd-title fd-title--h5">
-                        Example Submenu
-                    </h3>
+                    <h3 id="exampleSubMenuHeader" class="fd-title fd-title--h5">Example Submenu</h3>
                 </div>
             </div>
         </header>
         <div class="fd-dialog__body fd-dialog__body--no-vertical-padding">
-             <nav
+            <nav
                 aria-label="example sub-menu options"
                 class="fd-menu fd-menu--mobile fd-menu--icons"
                 id="parent-menu"
-                tabindex="-1">
+                tabindex="-1"
+            >
                 <ul class="fd-menu__list" role="menu">
                     <li class="fd-menu__item" role="presentation">
                         <a class="fd-menu__link" href="#" role="menuitem">
-                            <span class="fd-menu__addon-before"><i class="sap-icon--grid" role="presentation"></i></span>
+                            <span class="fd-menu__addon-before"
+                                ><i class="sap-icon--grid" role="presentation"></i
+                            ></span>
                             <span class="fd-menu__title">Option 1</span>
-                            <span class="fd-menu__addon-after"><i class="sap-icon--wrench" role="presentation"></i></span>
+                            <span class="fd-menu__addon-after"
+                                ><i class="sap-icon--wrench" role="presentation"></i
+                            ></span>
                         </a>
                     </li>
                     <li class="fd-menu__item" role="presentation">
                         <a class="fd-menu__link is-active" href="#" role="menuitem">
-                            <span class="fd-menu__addon-before"><i class="sap-icon--accept" role="presentation"></i></span>
+                            <span class="fd-menu__addon-before"
+                                ><i class="sap-icon--accept" role="presentation"></i
+                            ></span>
                             <span class="fd-menu__title">Option 2</span>
                             <span class="fd-menu__addon-after fd-menu__addon-after--submenu"></span>
                         </a>
@@ -38,19 +42,27 @@
                     <li class="fd-menu__item" role="presentation">
                         <a class="fd-menu__link" href="#" role="menuitem">
                             <span class="fd-menu__title">Option 3</span>
-                            <span class="fd-menu__addon-after"><i class="sap-icon--lightbulb" role="presentation"></i></span>
+                            <span class="fd-menu__addon-after"
+                                ><i class="sap-icon--lightbulb" role="presentation"></i
+                            ></span>
                         </a>
                     </li>
                     <li class="fd-menu__item" role="presentation">
                         <a class="fd-menu__link" href="#" role="menuitem">
-                            <span class="fd-menu__addon-before"><i class="sap-icon--grid" role="presentation"></i></span>
+                            <span class="fd-menu__addon-before"
+                                ><i class="sap-icon--grid" role="presentation"></i
+                            ></span>
                             <span class="fd-menu__title">Option 4</span>
-                            <span class="fd-menu__addon-after"><i class="sap-icon--history" role="presentation"></i></span>
+                            <span class="fd-menu__addon-after"
+                                ><i class="sap-icon--history" role="presentation"></i
+                            ></span>
                         </a>
                     </li>
                     <li class="fd-menu__item" role="presentation">
                         <a class="fd-menu__link" href="#" role="menuitem">
-                            <span class="fd-menu__addon-before"><i class="sap-icon--grid" role="presentation"></i></span>
+                            <span class="fd-menu__addon-before"
+                                ><i class="sap-icon--grid" role="presentation"></i
+                            ></span>
                             <span class="fd-menu__title">Option 4</span>
                             <span class="fd-menu__shortcut">Ctrl+Alt+L</span>
                         </a>
@@ -58,12 +70,13 @@
                 </ul>
             </nav>
         </div>
-       <footer class="fd-dialog__footer fd-bar fd-bar--footer">
+        <footer class="fd-dialog__footer fd-bar fd-bar--footer">
             <div class="fd-bar__right">
                 <div class="fd-bar__element">
                     <button
                         aria-label="close options dialog"
-                        class="fd-button fd-button--light fd-dialog__decisive-button">
+                        class="fd-button fd-button--light fd-dialog__decisive-button"
+                    >
                         Cancel
                     </button>
                 </div>
@@ -72,33 +85,26 @@
     </section>
 </div>
 
-<div style="display: inline-block; width: auto;" class="fd-dialog fd-dialog-docs-static fd-select-docs-max-height fd-dialog--active" id="select-dialog-example-inner">
-    <section
-        aria-labelledby="subOptionHeader"
-        class="fd-dialog__content fd-dialog__content--mobile"
-        role="dialog">
+<div
+    style="display: inline-block; width: auto"
+    class="fd-dialog fd-dialog-docs-static fd-select-docs-max-height fd-dialog--active"
+    id="select-dialog-example-inner"
+>
+    <section aria-labelledby="subOptionHeader" class="fd-dialog__content fd-dialog__content--mobile" role="dialog">
         <header class="fd-dialog__header fd-bar fd-bar--header">
             <div class="fd-bar__left">
                 <div class="fd-bar__element">
-                <button
-                    aria-label="Show main menu options"
-                    class="fd-button fd-button--transparent">
-                    <i class="sap-icon--navigation-left-arrow" role="presentation"></i>
-                </button>
-            </div>
-            <div class="fd-bar__element">
-                    <h3
-                        class="fd-title fd-title--h5"
-                        id="subOptionHeader">
-                        Option 2
-                    </h3>
+                    <button aria-label="Show main menu options" class="fd-button fd-button--transparent">
+                        <i class="sap-icon--navigation-left-arrow" role="presentation"></i>
+                    </button>
+                </div>
+                <div class="fd-bar__element">
+                    <h3 class="fd-title fd-title--h5" id="subOptionHeader">Option 2</h3>
                 </div>
             </div>
         </header>
         <div class="fd-dialog__body fd-dialog__body--no-vertical-padding">
-             <nav
-                aria-label="option 2 sub-options"
-                class="fd-menu fd-menu--mobile">
+            <nav aria-label="option 2 sub-options" class="fd-menu fd-menu--mobile">
                 <ul class="fd-menu__sublist" role="menu">
                     <li class="fd-menu__item" role="presentation">
                         <a class="fd-menu__link" href="#" role="menuitem">
@@ -122,18 +128,22 @@
                     </li>
                     <li class="fd-menu__item" role="presentation">
                         <a class="fd-menu__link" href="#" role="menuitem">
-                            <span class="fd-menu__title">Sub-option 5 with very very very very very very very very very very very very long text</span>
+                            <span class="fd-menu__title"
+                                >Sub-option 5 with very very very very very very very very very very very very long
+                                text</span
+                            >
                         </a>
                     </li>
                 </ul>
             </nav>
         </div>
-       <footer class="fd-dialog__footer fd-bar fd-bar--footer">
+        <footer class="fd-dialog__footer fd-bar fd-bar--footer">
             <div class="fd-bar__right">
                 <div class="fd-bar__element">
                     <button
                         aria-label="close options dialog"
-                        class="fd-button fd-button--light fd-dialog__decisive-button">
+                        class="fd-button fd-button--light fd-dialog__decisive-button"
+                    >
                         Cancel
                     </button>
                 </div>
