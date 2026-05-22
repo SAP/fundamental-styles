@@ -13,8 +13,9 @@ import '../../../../src/icon.scss';
 export default {
   title: 'Deprecated/Components/Tabs',
   parameters: {
-    tags: ['f3', 'a11y', 'theme'],
+    tags: ['deprecated'],
     description: `Tabs are based on the folder metaphor and used to separate content into different sections. Tabs should be ordered based on priority to create visual hierarchy.
+    
 ## DEPRECATED
 
 This component is deprecated. Please use the *Icon Tab Bar* component instead.
@@ -119,13 +120,13 @@ SemanticMode.parameters = {
     description: {
       story: `Tabs can be displayed with semantic colors to indicate a status. To display semantic tabs, add the following modifier classes to the \`fd-tabs__item\` elements:
 
-State | Modifier class
-:------- | :---------------
-Success | \`fd-tabs__item--success\`
-Warning | \`fd-tabs__item--warning\`
-Information | \`fd-tabs__item--information\`
-Error | \`fd-tabs__item--error\`
-Neutral | \`fd-tabs__item--neutral\`
+| State | Modifier class |
+| :------- | :--------------- |
+| Success | \`fd-tabs__item--success\` |
+| Warning | \`fd-tabs__item--warning\` |
+| Information | \`fd-tabs__item--information\` |
+| Error | \`fd-tabs__item--error\` |
+| Neutral | \`fd-tabs__item--neutral\` |
         `
     }
   }

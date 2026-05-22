@@ -34,7 +34,7 @@ Differently than the Side Navigation, the Horizontal Navigation does not embed a
 Another aspect differentiating the Horizontal Navigation layout is that it has only one display mode. It has no condensed or off-canvas mode, which remain specific states of the Side Navigation.
 
         `,
-    tags: ['btp', 'theme', 'development']
+    tags: ['btp']
   }
 };
 export const TextOnly = () => textOnlyExampleHtml;

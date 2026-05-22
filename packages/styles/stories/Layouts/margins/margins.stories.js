@@ -16,7 +16,7 @@ export default {
     description: `The CSS margin properties are used to create space around elements, outside of any defined borders.
         With CSS, you have full control over the margins. There are properties for setting the margin for each side of an element.
         We now provide a number of predefined margin clases which add predefined margin values.`,
-    tags: ['f3', 'theme']
+    tags: []
   }
 };
 export const AllRoundMargin = () => allRoundMarginExampleHtml;
@@ -24,8 +24,7 @@ AllRoundMargin.storyName = 'All-Round Margin';
 AllRoundMargin.parameters = {
   docs: {
     description: {
-      story: `All-round margin appears on all sides of the container they are applied to. Use \`fd-margin\`
-        class with any of the following modifiers:
+      story: `All-round margin appears on all sides of the container they are applied to. Use \`fd-margin\` class with any of the following modifiers:
 
 | Element | Modifier class | Margin applied |
 | ----------------: | :------------ | :------------ |
@@ -81,12 +80,7 @@ export const NoMargin = () => noMarginExampleHtml;
 NoMargin.parameters = {
   docs: {
     description: {
-      story: `No margin classes remove existing container margins. Use \`fd-margin--none\` or  \`fd-margin-top--none\`
-        or \`fd-margin-end--none\` or \`fd-margin-bottom--none\` or \`fd-margin-begin--none\`
-        modifier classes to remove existing margin. Place the no margin classes last to make sure they will be applied.
-        In the case of \`fd-margin-begin--none\` and \`fd-margin-end--none\`, \`!important\` is not applied since we want
-        the user-specified margins(if any) to be reapplied in the RTL mode. Please note that for RTL to work correctly,
-        you must add \`[dir="rtl"]\` style on the class where these modifiers will be applied.`
+      story: `No margin classes remove existing container margins. Use \`fd-margin--none\` or  \`fd-margin-top--none\` or \`fd-margin-end--none\` or \`fd-margin-bottom--none\` or \`fd-margin-begin--none\` modifier classes to remove existing margin. Place the no margin classes last to make sure they will be applied. In the case of \`fd-margin-begin--none\` and \`fd-margin-end--none\`, \`!important\` is not applied since we want the user-specified margins(if any) to be reapplied in the RTL mode. Please note that for RTL to work correctly, you must add \`[dir="rtl"]\` style on the class where these modifiers will be applied.`
     }
   }
 };

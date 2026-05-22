@@ -25,17 +25,18 @@ export default {
 - You want to display a single value in the form of a fillable shape or a group of shapes that describe their context. Use the status indicator instead.
 
 ##Modifier classes
-State | Modifier class
-:------------- | :-----------------
-Mobile | \`fd-progress-indicator--mobile\`
-Display | \`fd-progress-indicator--display\`
-Informative &nbsp;&nbsp;&nbsp;&nbsp; | \`fd-progress-indicator--informative\`
-Positive | \`fd-progress-indicator--positive\`
-Critical | \`fd-progress-indicator--critical\`
-Negative | \`fd-progress-indicator--negative\`
+
+| State | Modifier class |
+| :------------- | :----------------- |
+| Mobile | \`fd-progress-indicator--mobile\` |
+| Display | \`fd-progress-indicator--display\` |
+| Informative | \`fd-progress-indicator--informative\` |
+| Positive | \`fd-progress-indicator--positive\` |
+| Critical | \`fd-progress-indicator--critical\` |
+| Negative | \`fd-progress-indicator--negative\` |
         `,
     components: ['progress-indicator', 'menu', 'popover', 'icon'],
-    tags: ['f3', 'a11y', 'theme', 'development']
+    tags: []
   }
 };
 export const Layout = () => layoutExampleHtml;

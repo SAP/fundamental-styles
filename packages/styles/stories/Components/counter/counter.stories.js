@@ -10,7 +10,7 @@ export default {
   title: 'Components/Counter',
   parameters: {
     description: 'Counter can be used as a standalone component or linked to another component. The counter of an item quickly shows how many detail elements are related, without having to navigate to the detail page.',
-    tags: ['f3', 'a11y', 'development']
+    tags: []
   }
 };
 export const Primary = () => primaryExampleHtml;

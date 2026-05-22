@@ -45,7 +45,7 @@ In SAP, we distinguish between tables and lists. Both usually contain homogeneou
 - You work with complex hierarchies. In this case, use a **Tree**.
 
 `,
-    tags: ['f3', 'a11y', 'theme', 'development']
+    tags: []
   }
 };
 export const Standard = () => standardExampleHtml;

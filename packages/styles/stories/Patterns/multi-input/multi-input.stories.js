@@ -40,7 +40,7 @@ If the entries are not validated by the application, users can also enter custom
 - You want to enable users to add custom values.
 
 `,
-    tags: ['f3', 'a11y', 'theme'],
+    tags: [],
     components: ['input', 'form-label', 'form-item', 'form-message', 'popover', 'radio', 'title', 'token', 'tokenizer', 'input-group', 'checkbox', 'list', 'button', 'icon', 'bar', 'dialog', 'link', 'menu']
   }
 };

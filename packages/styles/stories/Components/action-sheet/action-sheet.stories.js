@@ -30,7 +30,7 @@ clustered if there is not enough space on the screen.
 **Note:** The action sheet should be used in compact mode if targeting desktop users.
 
         `,
-    tags: ['a11y', 'f3', 'theme', 'responsive']
+    tags: []
   }
 };
 export const Default = () => defaultExampleHtml;
@@ -46,8 +46,7 @@ ActionSheetMobile.parameters = {
     story: {
     },
     description: {
-      story: `To display the action sheet on mobile screens,
-        the container requires a \`fd-action-sheet--mobile\` modifier class and is additionally wrapped by \`fd-action-sheet__wrapper\`.`
+      story: `To display the action sheet on mobile screens, the container requires a \`fd-action-sheet--mobile\` modifier class and is additionally wrapped by \`fd-action-sheet__wrapper\`.`
     }
   }
 };

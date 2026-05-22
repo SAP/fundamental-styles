@@ -18,7 +18,7 @@ Users can expand the column they want to focus on, switch between different layo
 - \`fd-flexible-column-layout--translucent\`: translucent
 - \`fd-flexible-column-layout--transparent\`: transparent
 `,
-    tags: ['f3', 'theme', 'development']
+    tags: []
   }
 };
 export const ThreeColumnsLayout = () => threeColumnsLayoutExampleHtml;

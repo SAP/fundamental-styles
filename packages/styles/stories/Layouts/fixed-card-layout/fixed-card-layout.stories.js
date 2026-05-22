@@ -13,7 +13,7 @@ export default {
   parameters: {
     description: `The fixed card layout is a layout for the overview page. The cards have a fixed width, and the height is determined by the card type and the embedded control.
         `,
-    tags: ['f3', 'a11y', 'theme', 'development'],
+    tags: [],
     components: ['fixed-card-layout', 'avatar', 'card', 'object-status', 'numeric-content', 'table', 'checkbox', 'list', 'icon']
   }
 };

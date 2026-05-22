@@ -12,7 +12,7 @@ export default {
 ##Usage
 - Use tokenizer in the **Multi Input**, **Multi Combobox**, or as a standalone component.
         `,
-    tags: ['f3', 'a11y', 'theme']
+    tags: []
   }
 };
 

@@ -25,7 +25,7 @@ Use the File Uploader if:
 * The user needs to select the files to upload by browsing the system folders.
 * The user needs to select the files based on specific file formats to upload.
 `,
-    tags: ['f3', 'a11y', 'theme']
+    tags: []
   }
 };
 export const Primary = () => primaryExampleHtml;
@@ -33,8 +33,7 @@ Primary.storyName = 'Default';
 Primary.parameters = {
   docs: {
    description: {
-      story: `File Uploader is a composition of the \`fd-input\` class and the \`fd-button\` one. The button triggers the action of searching for
-            the file which needs to be uploaded. The input field shows the predetermined title i.e. Choose a file for upload.`
+      story: `File Uploader is a composition of the \`fd-input\` class and the \`fd-button\` one. The button triggers the action of searching for the file which needs to be uploaded. The input field shows the predetermined title i.e. Choose a file for upload.`
     }
   }
 };
@@ -51,7 +50,7 @@ export const Status = () => statusExampleHtml;
 Status.parameters = {
   docs: {
    description: {
-      story: 'For Status File Uploader apply the corresponding status class `is-success, is-error, is-warning, is-information ` modifier to the input element.'
+      story: 'For Status File Uploader apply the corresponding status class `is-success`, `is-error`, `is-warning`, `is-information ` modifier to the input element.'
     }
   }
 };

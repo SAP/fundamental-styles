@@ -9,7 +9,7 @@ Using the themeable scrollbar is preferred over the browser's default in the com
 Themeable scrollbar works in Chrome, Safari, and other WebKit-based browsers and partially works in Firefox (no hover effects).
 Component not working in the IE, default scrollbar is shown instead.
             `,
-    tags: ['f3', 'theme', 'development']
+    tags: []
   }
 };
 export const DefaultExample = () => defaultExampleExampleHtml;

@@ -17,7 +17,7 @@ The default token is displayed in grey with text, and a close button that will r
 | \`fd-token--disabled\` | change to disabled coursor |
 | \`fd-token--readonly\` | displayed as read-only, indicating that they cannot be interacted with. Read-only tokens should not contain a close button |
         `,
-    tags: ['f3', 'a11y', 'theme']
+    tags: []
   }
 };
 export const Primary = () => primaryExampleHtml;

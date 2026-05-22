@@ -162,10 +162,10 @@ Interactive.parameters = {
       story: `
 The table component can be interactive with hoverable and activable cells and rows.
 
-Interaction | Modifier class
-:------------- | :------------------
-Activate | \`--activable\`
-Hover | \`--hoverable\`
+| Interaction | Modifier class |
+| :------------- | :------------------ |
+| Activate | \`--activable\` |
+| Hover | \`--hoverable\` |
     `
     }
   }
@@ -180,12 +180,12 @@ The table component can display highlight indicators to classify certain items w
 
 **To display semantic highlight indicators, add the following modifier classes to \`fd-table__cell--status-indicator\`:**
 
-Semantic states | Modifier class
-:-------------------- | :-----------------
-Valid | \`--valid\`
-Warning | \`--warning\`
-Error | \`--error\`
-Information | \`--information\`
+| Semantic states | Modifier class |
+| :-------------------- | :----------------- |
+| Valid | \`--valid\` |
+| Warning | \`--warning\` |
+| Error | \`--error\` |
+| Information | \`--information\` |
     `
     }
   }

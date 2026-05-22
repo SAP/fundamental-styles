@@ -34,7 +34,7 @@ Use the **DatePicker** if:
 -    The user needs to enter a single date or a date range.
 -    The user needs to navigate directly from one month or year to another.
       `,
-    tags: ['f3', 'a11y', 'theme']
+    tags: []
   }
 };
 export const TodaySelectionButton = () => todaySelectionButtonExampleHtml;

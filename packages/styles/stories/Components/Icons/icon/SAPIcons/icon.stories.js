@@ -22,7 +22,7 @@ export default {
 
 Note: If an icon needs to be selected or have any interaction states, it is recommended to use the transparent button style. See **Button** for more details on how to implement it.
           `,
-    tags: ['development']
+    tags: []
   }
 };
 export const Sizes = () => sizesExampleHtml;

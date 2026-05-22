@@ -52,7 +52,7 @@ To ensure that the carousel is accessible, a div element with class \`fd-carouse
     * \`fd-carousel__page-indicators\` The carousel page indicators list.
       * \`fd-carousel__page-indicator-item\` The carousel page indicator item.
 `,
-    tags: ['f3', 'a11y', 'theme', 'development']
+    tags: []
   }
 };
 export const CarouselBottom = () => carouselBottomExampleHtml;

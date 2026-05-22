@@ -23,7 +23,7 @@ This layout gives users much greater flexibility in tailoring the overview page 
 
 Cards can be resized vertically in rows of 1 rem and horizontally in steps of 20 rem (minimum width).
         `,
-    tags: ['f3', 'theme', 'development'],
+    tags: [],
     components: ['resizable-card-layout', 'button', 'avatar', 'badge', 'card', 'object-status', 'numeric-content', 'table', 'checkbox', 'list', 'link', 'icon']
   }
 };

@@ -12,7 +12,7 @@ This button type was previously known as "button group" and is comparable to a r
 It can be displayed by using the container with \`fd-segmented-button\` class with \`role="group"\` and the \`aria-label="Group label"\` attribute.
 Active button should have \`aria-pressed="true"\` and \`fd-button--toggled\` class and inactive buttons should have \`aria-pressed="false"\` \n\n**New Feature:** Multiple items can be selected at a time.
     `,
-    tags: ['f3', 'a11y', 'theme']
+    tags: []
   }
 };
 
@@ -31,13 +31,7 @@ Vertical.storyName = 'Vertical alignment';
 Vertical.parameters = {
   docs: {
     description: {
-      story: `Segmented button can also be rendered vertically if \`.fd-segmented-button--vertical\` class modifier is added.
-      <div class="fd-message-strip fd-message-strip--no-icon fd-message-strip--information" role="note" aria-live="assertive" id="message-strip-1" aria-labelledby="message-strip-1">
-        <b class="fd-message-strip__text">
-          Vertical segmented button should only be used with icon-only buttons.
-        </b>
-      </div>
-      `
+      story: `Segmented button can also be rendered vertically if \`.fd-segmented-button--vertical\` class modifier is added.<div class="fd-message-strip fd-message-strip--no-icon fd-message-strip--information" role="note" aria-live="assertive" id="message-strip-1" aria-labelledby="message-strip-1"><b class="fd-message-strip__text">Vertical segmented button should only be used with icon-only buttons.</b></div>`
     }
   }
 };

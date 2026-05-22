@@ -72,7 +72,7 @@ Below are examples of how to add semantic statuses to the components:
            - \`fd-object-list__object-attribute\` object attribute element
 
 `,
-    tags: ['f3', 'a11y', 'theme', 'development']
+    tags: []
   }
 };
 export const Standard = () => standartExampleHtml;

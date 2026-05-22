@@ -1,39 +1,90 @@
-<div class="demo">
-    <h3>legendBackgroundColor1 (--sapLegendBackgroundColor1)</h3>
-    <div class="sap-bg-color-legendBackgroundColor1"></div>
-    <br>
-    <h3>legendBackgroundColor2 (--sapLegendBackgroundColor2)</h3>
-    <div class="sap-bg-color-legendBackgroundColor2"></div>
-    <br>
-    <h3>legendBackgroundColor5 (--sapLegendBackgroundColor5)</h3>
-    <div class="sap-bg-color-legendBackgroundColor5"></div>
-    <br>
-    <h3>legendBackgroundColor6 (--sapLegendBackgroundColor6)</h3>
-    <div class="sap-bg-color-legendBackgroundColor6"></div>
-    <br>
-    <h3>legendBackgroundColor8 (--sapLegendBackgroundColor8)</h3>
-    <div class="sap-bg-color-legendBackgroundColor8"></div>
-    <br>
-    <h3>tile_Background (--sapTile_Background)</h3>
-    <div class="sap-bg-color-tile_Background"></div>
+<style>
+    .color-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        gap: 1rem;
+    }
+    .color-item {
+        background: #fff;
+        border: 0.0625rem solid #e4e4e4;
+        border-radius: 0.5rem;
+        padding: 1rem;
+        text-align: center;
+    }
+    .color-bg-swatch {
+        height: 80px;
+        border-radius: 0.25rem;
+        margin-bottom: 0.75rem;
+        border: 0.0625rem solid rgba(0, 0, 0, 0.1);
+        box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.1);
+    }
+    .color-label {
+        font-size: 0.8125rem;
+        font-weight: 600;
+        color: #32363a;
+        margin-bottom: 0.25rem;
+    }
+    .color-var {
+        font-size: 0.6875rem;
+        font-family: 'Courier New', monospace;
+        color: #6a6d70;
+    }
+</style>
 
-    <br>
-    <h3>pageHeader_Background (--sapPageHeader_Background)</h3>
-    <div class="sap-bg-color-pageHeader_Background"></div>
-
-    <br>
-    <h3>progress_Value_NegativeBackground (--sapProgress_Value_NegativeBackground)</h3>
-    <div class="sap-bg-color-progress_Value_NegativeBackground"></div>
-
-    <br>
-    <h3>button_Information_Background (--sapButton_Information_Background)</h3>
-    <div class="sap-bg-color-button_Information_Background"></div>
-
-    <br>
-    <h3>button_Critical_Background (--sapButton_Critical_Background)</h3>
-    <div class="sap-bg-color-button_Critical_Background"></div>
-
-    <br>
-    <h3>avatar_5_Background (--sapAvatar_5_Background)</h3>
-    <div class="sap-bg-color-avatar_5_Background"></div>
+<div class="color-grid">
+    <div class="color-item">
+        <div class="color-bg-swatch sap-bg-color-legendBackgroundColor1"></div>
+        <div class="color-label">legendBackgroundColor1</div>
+        <div class="color-var">--sapLegendBackgroundColor1</div>
+    </div>
+    <div class="color-item">
+        <div class="color-bg-swatch sap-bg-color-legendBackgroundColor2"></div>
+        <div class="color-label">legendBackgroundColor2</div>
+        <div class="color-var">--sapLegendBackgroundColor2</div>
+    </div>
+    <div class="color-item">
+        <div class="color-bg-swatch sap-bg-color-legendBackgroundColor5"></div>
+        <div class="color-label">legendBackgroundColor5</div>
+        <div class="color-var">--sapLegendBackgroundColor5</div>
+    </div>
+    <div class="color-item">
+        <div class="color-bg-swatch sap-bg-color-legendBackgroundColor6"></div>
+        <div class="color-label">legendBackgroundColor6</div>
+        <div class="color-var">--sapLegendBackgroundColor6</div>
+    </div>
+    <div class="color-item">
+        <div class="color-bg-swatch sap-bg-color-legendBackgroundColor8"></div>
+        <div class="color-label">legendBackgroundColor8</div>
+        <div class="color-var">--sapLegendBackgroundColor8</div>
+    </div>
+    <div class="color-item">
+        <div class="color-bg-swatch sap-bg-color-tile_Background"></div>
+        <div class="color-label">tile_Background</div>
+        <div class="color-var">--sapTile_Background</div>
+    </div>
+    <div class="color-item">
+        <div class="color-bg-swatch sap-bg-color-pageHeader_Background"></div>
+        <div class="color-label">pageHeader_Background</div>
+        <div class="color-var">--sapPageHeader_Background</div>
+    </div>
+    <div class="color-item">
+        <div class="color-bg-swatch sap-bg-color-progress_Value_NegativeBackground"></div>
+        <div class="color-label">progress_Value_NegativeBackground</div>
+        <div class="color-var">--sapProgress_Value_NegativeBackground</div>
+    </div>
+    <div class="color-item">
+        <div class="color-bg-swatch sap-bg-color-button_Information_Background"></div>
+        <div class="color-label">button_Information_Background</div>
+        <div class="color-var">--sapButton_Information_Background</div>
+    </div>
+    <div class="color-item">
+        <div class="color-bg-swatch sap-bg-color-button_Critical_Background"></div>
+        <div class="color-label">button_Critical_Background</div>
+        <div class="color-var">--sapButton_Critical_Background</div>
+    </div>
+    <div class="color-item">
+        <div class="color-bg-swatch sap-bg-color-avatar_5_Background"></div>
+        <div class="color-label">avatar_5_Background</div>
+        <div class="color-var">--sapAvatar_5_Background</div>
+    </div>
 </div>

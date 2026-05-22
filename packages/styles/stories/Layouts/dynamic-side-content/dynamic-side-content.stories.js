@@ -37,7 +37,7 @@ The screen width ratio between the side and main content area will vary dependin
 
 Note: For all screens < 720px, the side content disappears entirely.
 `,
-    tags: ['f3', 'development']
+    tags: []
   }
 };
 export const PositionLeft = () => positionLeftExampleHtml;

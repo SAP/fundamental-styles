@@ -12,12 +12,8 @@ export default {
     title: 'BTP/Tool Header',
     parameters: {
         description: `The Tool Header exists on all BTP tools. It is the uppermost section of the tool. It is always visible to give users access to various functions. <br>
-<div class="fd-message-strip fd-message-strip--warning fd-message-strip--link">
-  <div class="fd-message-strip__icon-container" aria-hidden="true">
-    <span class="sap-icon sap-icon--message-warning" role="presentation" aria-hidden="true"></span>
-  </div><p class="fd-message-strip__text" id="message-strip-text-4">
-    This component is deprecated. Please use the <a class="fd-link fd-link--emphasized" href="../?path=/docs/sap-fiori-components-shellbar--docs" target="_blank">SHELLBAR</a> component instead.
-  </p></div>
+<div class="fd-message-strip fd-message-strip--no-icon fd-message-strip--warning fd-message-strip--link"><p class="fd-message-strip__text" id="message-strip-text-4">
+    This component is deprecated. Please use the <a class="fd-link fd-link--emphasized" href="../?path=/docs/sap-fiori-components-shellbar--docs" target="_blank">SHELLBAR</a> component instead.</p></div>
 
 ## Structure
 - <code>fd-tool-header</code> -&nbsp;<b>(required)</b> Tool Header Container element. Holds all Tool Header UI elements
@@ -39,7 +35,7 @@ export default {
 
 - <code>fd-tool-header__separator</code> -&nbsp; The Separator is an optional element that adds space between the <b>Custom Actions Area</b> (optional), <b>System Actions Area</b> (optional) and <b>User Avatar</b> (required).
 `,
-        tags: ['btp', 'development', 'horizon-only']
+        tags: ['btp', 'deprecated', 'horizon-only']
     }
 };
 export const Desktop = () => desktopExampleHtml;

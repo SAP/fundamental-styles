@@ -10,7 +10,7 @@ export default {
   parameters: {
     description: `The text component displays text inside a form, table, or any other content area.
         It is generally used throughout the entire application and is responsive to all screen sizes.`,
-    tags: ['f3', 'a11y', 'theme']
+    tags: []
   }
 };
 export const DefaultExample = () => defaultExampleExampleHtml;
@@ -18,8 +18,7 @@ DefaultExample.storyName = 'Default';
 DefaultExample.parameters = {
   docs: {
     description: {
-      story: `The default text component can display lines of text that wrap to the next line
-        once they reach the end of the content container width.`
+      story: `The default text component can display lines of text that wrap to the next line once they reach the end of the content container width.`
     }
   }
 };
@@ -27,9 +26,7 @@ export const Whitespace = () => whitespaceExampleHtml;
 Whitespace.parameters = {
   docs: {
     description: {
-      story: `The text component has a property that allows browsers to render specified indents and
-        whitespace. To display indents and/or whitespace, add a
-        \`fd-text--pre-wrap\` modifier class to the main element.`
+      story: `The text component has a property that allows browsers to render specified indents and whitespace. To display indents and/or whitespace, add a \`fd-text--pre-wrap\` modifier class to the main element.`
     }
   }
 };

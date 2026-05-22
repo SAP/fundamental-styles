@@ -30,7 +30,7 @@ For the page title, a Title component is utilized that is an H1 but visually sty
 -	You want to display finalizing actions at the bottom of the screen. Instead, use the **Bar** component and choose a footer.
 
 Note: You may want to display components from right to left on the screen for international purposes. To display them as such, add the \`rtl\` directive to the main element.`,
-    tags: ['non-f3', 'a11y', 'theme']
+    tags: ['non-f3']
   }
 };
 export const BackBtn = () => backBtnExampleHtml;

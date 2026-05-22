@@ -31,22 +31,22 @@ export default {
 ##Elements
 The pagination component consists of the following elements:
 
-Element | Modifier/class | Description
-:------ | :------------- | :----------
-Main | \`fd-pagination\` | The main container
-Navigation | \`fd-pagination__nav\` | The navigation area
-Total page count | \`fd-pagination__total\` | The area where total pages information is placed
-Total page count label | \`fd-pagination__total-label\` | The total number of pages label
-Links | \`fd-pagination__link\` | The page number links that users can select to navigate to a different pages
-Selected page (> 9 pages) | \`fd-pagination__input\` | The input with the page that is currently selected, can be used to navigate to the specific page
-Selected page (< 9 pages) | \`fd-pagination__link.is-active\` | The button with the page number that is currently selected
-Selected page label | \`fd-pagination__label\` | The label of the selected page input. Shown only on mobile.
-First page button | \`fd-pagination__button--mobile\` | The first page button that users can use to navigate to the first page. This button is disabled when on the first page. Shown only on mobile.
-Previous page button | \`fd-pagination__button\` | The previous page button that users can use to navigate backward. This button is disabled when on the first page.
-Next page button | \`fd-pagination__button\` | The next arrow that users can use to navigate forward. This arrow is disabled when on the last page.
-Last page button | \`fd-pagination__button--mobile\` | The last page button that users can use to navigate to the last page. This button is disabled when on the last page. Shown only on mobile.
-Per page | \`fd-pagination__per-page\` | The area where items per page select & its label are placed
-Per page label | \`fd-pagination__per-page-label\` | Per page section label. Hidden on mobile.
+| Element | Modifier/class | Description |
+| :------ | :------------- | :---------- |
+| Main | \`fd-pagination\` | The main container |
+| Navigation | \`fd-pagination__nav\` | The navigation area |
+| Total page count | \`fd-pagination__total\` | The area where total pages information is placed |
+| Total page count label | \`fd-pagination__total-label\` | The total number of pages label |
+| Links | \`fd-pagination__link\` | The page number links that users can select to navigate to a different pages |
+| Selected page (> 9 pages) | \`fd-pagination__input\` | The input with the page that is currently selected, can be used to navigate to the specific page |
+| Selected page (< 9 pages) | \`fd-pagination__link.is-active\` | The button with the page number that is currently selected |
+| Selected page label | \`fd-pagination__label\` | The label of the selected page input. Shown only on mobile. |
+| First page button | \`fd-pagination__button--mobile\` | The first page button that users can use to navigate to the first page. This button is disabled when on the first page. Shown only on mobile. |
+| Previous page button | \`fd-pagination__button\` | The previous page button that users can use to navigate backward. This button is disabled when on the first page. |
+| Next page button | \`fd-pagination__button\` | The next arrow that users can use to navigate forward. This arrow is disabled when on the last page. |
+| Last page button | \`fd-pagination__button--mobile\` | The last page button that users can use to navigate to the last page. This button is disabled when on the last page. Shown only on mobile. |
+| Per page | \`fd-pagination__per-page\` | The area where items per page select & its label are placed |
+| Per page label | \`fd-pagination__per-page-label\` | Per page section label. Hidden on mobile. |
 <br>
 <br>
       `,
@@ -68,9 +68,7 @@ MiddlePage.storyName = 'Middle pages';
 MiddlePage.parameters = {
   docs: {
     description: {
-      story: `Pagination can display middle pages to increase reachability.
-        The ellipsis will not only display before the last page but also after the first page, showing two pages before & two after the current page.
-        In sum 9 elements are shown: first page + more + 2 pages before + current page + 2 pages after + more + last page.
+      story: `Pagination can display middle pages to increase reachability. The ellipsis will not only display before the last page but also after the first page, showing two pages before & two after the current page. In sum 9 elements are shown: first page + more + 2 pages before + current page + 2 pages after + more + last page.
     `
     }
   }
@@ -99,8 +97,7 @@ export const Mobile = () => mobileExampleHtml;
 Mobile.parameters = {
   docs: {
     description: {
-      story: `Pagination component is responsive by default. When the screen's size is smaller than 1024px in width mobile mode is shown and you have nothing to do.
-        If you want to display pagination component always in mobile mode please add \`.fd-pagination--mobile\` modifier class to the component.
+      story: `Pagination component is responsive by default. When the screen's size is smaller than 1024px in width mobile mode is shown and you have nothing to do. If you want to display pagination component always in mobile mode please add \`.fd-pagination--mobile\` modifier class to the component.
     `
     }
   }

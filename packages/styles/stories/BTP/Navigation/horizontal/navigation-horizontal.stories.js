@@ -40,7 +40,7 @@ export default {
 - Avoid using the bottom navigation area for service information. Use settings and user menu instead.
 
 `,
-        tags: ['btp', 'development', 'horizon-only']
+        tags: ['btp', 'horizon-only']
     }
 };
 

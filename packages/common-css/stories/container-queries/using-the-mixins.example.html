@@ -1,13 +1,61 @@
-<pre>
-    .article-container {
-        @include sap-container-type(inline-size);
+<style>
+    .border-example-card {
+        background: #f7f8fa;
+        border: 0.0625rem solid #eaecee;
+        border-radius: 0.5rem;
+        padding: 1rem;
+        margin-block-end: 1rem;
     }
+    .border-example-card h4 {
+        margin: 0 0 0.75rem 0;
+        color: #0a6ed1;
+        font-size: 0.9375rem;
+        font-weight: 600;
+    }
+    .border-example-card pre {
+        background: #fff;
+        border: 0.0625rem solid #e4e4e4;
+        border-radius: 0.25rem;
+        padding: 0.75rem 1rem;
+        margin: 0.5rem 0;
+        font-size: 0.875rem;
+        font-family: 'Courier New', Courier, monospace;
+        color: #32363a;
+        overflow-x: auto;
+        line-height: 1.5;
+    }
+</style>
 
-   
-    @include sap-container-query-from(640px) {
-        .article {
-            font-size: 20px;
-        }
-    }
-    
-</pre>
+<div class="border-example-card">
+    <h4>Container Type</h4>
+    <pre>.article-container {
+  @include sap-container-type(inline-size);
+}</pre>
+</div>
+
+<div class="border-example-card">
+    <h4>Container Query - Minimum Width</h4>
+    <pre>@include sap-container-query-from(640px) {
+  .article {
+    font-size: 20px;
+  }
+}</pre>
+</div>
+
+<div class="border-example-card">
+    <h4>Container Query - Maximum Width</h4>
+    <pre>@include sap-container-query-to(640px) {
+  .article {
+    font-size: 16px;
+  }
+}</pre>
+</div>
+
+<div class="border-example-card">
+    <h4>Container Query - Range</h4>
+    <pre>@include sap-container-query-between(480px, 768px) {
+  .article {
+    font-size: 18px;
+  }
+}</pre>
+</div>

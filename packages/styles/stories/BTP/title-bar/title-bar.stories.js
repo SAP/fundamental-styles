@@ -19,7 +19,7 @@ export default {
 - <b>Title and Subtitle</b>&nbsp;- when an additional line of text is displayed below the title
 - <b>Title and Info Icon</b>&nbsp;- when an additional icon is displayed right after the title
 `,
-        tags: ['btp', 'development', 'horizon-only']
+        tags: ['btp', 'horizon-only']
     }
 };
 export const Desktop = () => desktopExampleHtml;

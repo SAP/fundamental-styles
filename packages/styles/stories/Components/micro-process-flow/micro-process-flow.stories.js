@@ -52,7 +52,7 @@ The micro process flow acts as a generic container in which process steps are la
 - **With independent steps**:  the steps are not connected and can be processed in any order. This type can be used when the user doesn’t need to perform the steps in a linear sequence.
 
         `,
-    tags: ['f3', 'a11y', 'theme']
+    tags: []
   }
 };
 export const DefaultMicroProcessFlow = () => defaultMicroProcessFlowExampleHtml;

@@ -41,16 +41,16 @@ The default behaviour of the list item is that it does not wrap. To enable wrapp
 ##States
 By default, tree items are not interactive; however, there are a few ways to add states (hover, selected, active) depending on the status of the items.
 
-State | Modifier/Class | Description
-:----- | :-------------- | :-----------------
-Active | \`fd-tree--active\` | If all tree items are navigable, add the modifier class to the main element.
-Active | \`fd-tree__item-container--active\`&nbsp;&nbsp;&nbsp; | If only certain tree items are navigable, add the modifier class to the container.
-Selected | \`is-selected\` | If tree items contain single and multiple selection (radio buttons and checkboxes), add the class to the container.
-Navigated&nbsp;&nbsp;&nbsp; | \`is-navigated\` | If a certain tree item has been previously navigated, add the class to the container.
+| State | Modifier/Class | Description |
+| :----- | :-------------- | :----------------- |
+| Active | \`fd-tree--active\` | If all tree items are navigable, add the modifier class to the main element. |
+| Active | \`fd-tree__item-container--active\` | If only certain tree items are navigable, add the modifier class to the container. |
+| Selected | \`is-selected\` | If tree items contain single and multiple selection (radio buttons and checkboxes), add the class to the container. |
+| Navigated | \`is-navigated\` | If a certain tree item has been previously navigated, add the class to the container. |
 
 <br>
 `,
-    tags: ['f3', 'a11y', 'theme', 'development']
+    tags: []
   }
 };
 export const Primary = () => primaryExampleHtml;
@@ -88,12 +88,12 @@ To display tree items with highlight indicators, add the \`has-highlight-indicat
 
 **The semantic states of highlight indicators are:**
 
-State | Modifier class
-:------ | :------------------
-Default | \` has-highlight-indicator\`
-Error | \` has-highlight-indicator--error\`
-Success | \` has-highlight-indicator--success\`
-Warning | \` has-highlight-indicator--warning\`
+| State | Modifier class |
+| :------ | :------------------ |
+| Default | \`has-highlight-indicator\` |
+| Error | \`has-highlight-indicator--error\` |
+| Success | \`has-highlight-indicator--success\` |
+| Warning | \`has-highlight-indicator--warning\` |
 
 `
     }

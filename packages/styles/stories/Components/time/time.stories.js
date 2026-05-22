@@ -33,7 +33,7 @@ The time component consists of three main styles to indicate a specific state:
 - You want the user to select a date and time. In this case, use the **Date Picker**.
 <br>
 `,
-    tags: ['f3', 'a11y', 'theme']
+    tags: []
   }
 };
 export const DefaultCozyMode = () => defaultCozyModeExampleHtml;

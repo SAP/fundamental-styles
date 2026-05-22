@@ -35,7 +35,7 @@ export default {
 - You can define a height for the popover. If the content exceeds the height, a scroll bar is displayed.
 
 `,
-    tags: ['f3', 'a11y', 'theme']
+    tags: []
   }
 };
 export const Variants = () => variantsExampleHtml;

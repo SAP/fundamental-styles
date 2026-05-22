@@ -73,7 +73,7 @@ By default, the background for the Icon Tab Bar header and content is set to "so
 
 <br><br><br>
       `,
-    tags: ['f3', 'development']
+    tags: []
   }
 };
 export const TextOnly = () => textOnlyExampleHtml;

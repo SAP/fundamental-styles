@@ -23,14 +23,14 @@ export default {
 ##Sizes
 There are two sizes of the toolbar that should be chosen based on the type of device and its screen width.
 
-Size&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Modifier class&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Screen width&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Device
-:---- | :-------- | :--------- | :-------
-Cozy | default | < 599 px | Mobile and small tablets
-Compact |  \`is-compact\` | 600 px and above | Desktop
+| Size | Modifier class | Screen width | Device |
+| :---- | :-------- | :--------- | :------- |
+| Cozy | default | < 599 px | Mobile and small tablets |
+| Compact | \`is-compact\` | 600 px and above | Desktop |
 <br>
 
         `,
-    tags: ['f3', 'a11y', 'theme', 'design']
+    tags: []
   }
 };
 export const Primary = () => primaryExampleHtml;
@@ -72,15 +72,15 @@ Types.parameters = {
     description: {
       story: `Toolbar can be styled in various ways depending on the use case.
 
-Types | Modifier class | Description
-:-------- | :------------- | :---------------
-Solid | \`fd-toolbar--solid\` | Displays a solid background color.
-Transparent | \`fd-toolbar--transparent\` | Displays a transparent background.
-Auto | \` fd-toolbar--auto\` | Can inherit the design from the parent component it’s being used with.
-Info | \` fd-toolbar--info\` | When the toolbar is set to the active state it becomes an info bar. The info bar is fully clickable and is not recommended to be used as a generic toolbar. Recommended contents are text and an icon.
-Title | \` fd-toolbar--title\` | Should be used whenever a title is required.
-No border-bottom | \`fd-toolbar--clear\` | This is not a type, but it removes the bottom border of each toolbar type.
-Active | \` fd-toolbar--active\` | This is also not a type, but it enables active and hover states in each type.
+| Types | Modifier class | Description |
+| :-------- | :------------- | :--------------- |
+| Solid | \`fd-toolbar--solid\` | Displays a solid background color. |
+| Transparent | \`fd-toolbar--transparent\` | Displays a transparent background. |
+| Auto | \`fd-toolbar--auto\` | Can inherit the design from the parent component it’s being used with. |
+| Info | \`fd-toolbar--info\` | When the toolbar is set to the active state it becomes an info bar. The info bar is fully clickable and is not recommended to be used as a generic toolbar. Recommended contents are text and an icon. |
+| Title | \`fd-toolbar--title\` | Should be used whenever a title is required. |
+| No border-bottom | \`fd-toolbar--clear\` | This is not a type, but it removes the bottom border of each toolbar type. |
+| Active | \`fd-toolbar--active\` | This is also not a type, but it enables active and hover states in each type. |
 
 `
     }

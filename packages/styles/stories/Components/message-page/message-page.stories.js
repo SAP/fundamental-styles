@@ -26,7 +26,7 @@ export default {
 - The title is also mandatory. Add a description with further details if needed.
 - The message should be as concise as possible.
         `,
-    tags: ['f3', 'a11y', 'theme', 'development']
+    tags: []
   }
 };
 export const Filter = () => filterExampleHtml;

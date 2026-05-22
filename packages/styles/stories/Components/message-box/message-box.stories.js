@@ -53,7 +53,7 @@ Note: Include two action buttons in the message box when the user's decision is 
         - \`.fd-message-box__footer\`: Footer
             - \`.fd-message-box__decisive-button\`: Action buttons in footer
         `,
-    tags: ['f3', 'a11y', 'theme']
+    tags: []
   }
 };
 export const Structure = () => structureExampleHtml;

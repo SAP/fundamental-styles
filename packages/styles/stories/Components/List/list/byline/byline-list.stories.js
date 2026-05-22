@@ -39,14 +39,14 @@ Byline lists allow users to extend standard list items with additional content. 
 ##Elements
 The byline list consists of a few extra elements to add additional text and semantic colors to the list items.
 
-Modifier/Class | Description
-:---------------| :---------------
-\`fd-list__byline--2-col\` | Displays a 2-column byline that consists of two sides: left and right.
-\`fd-list__byline-left\` | The left side is best suited for standard text, and occupies 60% of the available space.
-\`fd-list__byline-right\` | The right side is best suited for supplemental information (can be a semantic status), and occupies 40% of the available space.
-\` fd-list__byline-right--*\` | To represent a semantic status, replace the * with either: _neutral_, _positive_, _negative_, _critical_ or _informative_.
+| Modifier/Class | Description |
+| :--------------- | :--------------- |
+| \`fd-list__byline--2-col\` | Displays a 2-column byline that consists of two sides: left and right. |
+| \`fd-list__byline-left\` | The left side is best suited for standard text, and occupies 60% of the available space. |
+| \`fd-list__byline-right\` | The right side is best suited for supplemental information (can be a semantic status), and occupies 40% of the available space. |
+| \`fd-list__byline-right--*\` | To represent a semantic status, replace the * with either: _neutral_, _positive_, _negative_, _critical_ or _informative_. |
 `,
-    tags: ['f3', 'a11y', 'theme', 'development']
+    tags: []
   }
 };
 export const Standard = () => standardExampleHtml;
@@ -91,8 +91,7 @@ export const Interractive = () => interractiveExampleHtml;
 Interractive.parameters = {
   docs: {
     description: {
-      story: `The \`fd-list__item--interractive\` will force list item to handle hover and active states.
-            Usage of this modifier is not needed on \`Selection\`, \`Navigation\` and \`Action\` modes.`
+      story: `The \`fd-list__item--interractive\` will force list item to handle hover and active states. Usage of this modifier is not needed on \`Selection\`, \`Navigation\` and \`Action\` modes.`
     }
   }
 };

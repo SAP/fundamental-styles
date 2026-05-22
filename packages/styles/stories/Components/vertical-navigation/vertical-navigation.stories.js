@@ -39,7 +39,7 @@ Vertical navigation can be viewed in three different states:
 - **Off-canvas:** side navigation is completely off-screen, and can be triggered via the menu icon in the shellbar.
 **Note:** It is recommend to use only two states per device.
         `,
-    tags: ['btp', 'theme', 'development']
+    tags: ['btp']
   }
 };
 export const Cozy = () => cozyExampleHtml;

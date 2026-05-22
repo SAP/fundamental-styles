@@ -22,7 +22,7 @@ Implementation Guidelines:
 
 - Clicking away from the menu should also close the menu
 `,
-    tags: ['f3', 'a11y', 'theme']
+    tags: []
   }
 };
 export const WithIconAndButton = () => withIconAndButtonExampleHtml;

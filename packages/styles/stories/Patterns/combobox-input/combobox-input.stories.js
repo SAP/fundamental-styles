@@ -28,7 +28,7 @@ Please see the \`select\` documentation for the complete list of modifiers that 
 It provides an editable input field for filtering the list, and a dropdown menu with a list of the available options.
 If the entries are not validated by the application, users can also enter custom values.
 `,
-    tags: ['f3', 'a11y', 'theme']
+    tags: []
   }
 };
 export const AsFormItem = () => asFormItemExampleHtml;

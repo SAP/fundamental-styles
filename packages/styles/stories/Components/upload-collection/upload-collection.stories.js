@@ -32,24 +32,24 @@ The upload collection control allows users to upload single or multiple files fr
 ##Elements
 The upload collection is essentially a byline list with a few additional elements
 
-Modifier/Class | Description
-:---------------| :---------------
-\`fd-upload-collection\` | Applied on \`fd-list\` level.
-\`fd-upload-collection--sm\` | A modifier class applied when the item is less than 30rem.
-\`fd-upload-collection__item\` | Item container for the upload collection.
-\`fd-upload-collection__thumbnail\` | Modifier class for the thumbnail.
-\`fd-upload-collection__title-container\` | Container for the list title. Used when title has additional items such as Object Marker.
-\`fd-upload-collection__title\` | Modifier class for the list title.
-\`fd-upload-collection__description\` | Description element for the upload collection.
-\`fd-upload-collection__text-separator\` | Bullet point text separator for statuses and descriptions.
-\`fd-upload-collection__status-group\` | Status group container for the upload collection.
-\`fd-upload-collection__status-group-item\` | Status group item for the upload collection.
-\`fd-upload-collection__status-group-item-text\` | Status group item text for the upload collection.
-\`fd-upload-collection__button-group\` | Container for the edit/delete/Ok/Cancel buttons.
-\`fd-upload-collection__form-item\` | Form item element.
+| Modifier/Class | Description |
+| :--------------- | :--------------- |
+| \`fd-upload-collection\` | Applied on \`fd-list\` level. |
+| \`fd-upload-collection--sm\` | A modifier class applied when the item is less than 30rem. |
+| \`fd-upload-collection__item\` | Item container for the upload collection. |
+| \`fd-upload-collection__thumbnail\` | Modifier class for the thumbnail. |
+| \`fd-upload-collection__title-container\` | Container for the list title. Used when title has additional items such as Object Marker. |
+| \`fd-upload-collection__title\` | Modifier class for the list title. |
+| \`fd-upload-collection__description\` | Description element for the upload collection. |
+| \`fd-upload-collection__text-separator\` | Bullet point text separator for statuses and descriptions. |
+| \`fd-upload-collection__status-group\` | Status group container for the upload collection. |
+| \`fd-upload-collection__status-group-item\` | Status group item for the upload collection. |
+| \`fd-upload-collection__status-group-item-text\` | Status group item text for the upload collection. |
+| \`fd-upload-collection__button-group\` | Container for the edit/delete/Ok/Cancel buttons. |
+| \`fd-upload-collection__form-item\` | Form item element. |
 \`fd-upload-collection__extension\` | File extension element for the upload collection.
 `,
-    tags: ['f3', 'a11y', 'theme', 'development']
+    tags: []
   }
 };
 export const Standard = () => standardExampleHtml;

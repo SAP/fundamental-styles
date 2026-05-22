@@ -15,7 +15,7 @@ The Drag and Drop Icon Tab Bar can be used for styling state for drag and drop a
 
 <br><br><br>
       `,
-    tags: ['f3', 'theme', 'development']
+    tags: []
   }
 };
 export const HoveredTab = () => hoveredTabExampleHtml;
