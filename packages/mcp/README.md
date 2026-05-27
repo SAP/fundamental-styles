@@ -6,17 +6,26 @@ MCP (Model Context Protocol) server that exposes [fundamental-styles](https://gi
 
 ### With Claude Code
 
-**Option 1: Using claude mcp add (Recommended)**
+**Option 1: Using claude mcp add**
 
 ```bash
-# Install latest version
+# Install for current directory only (default: --scope local)
 claude mcp add fundamental-styles -- npx -y @fundamental-styles/mcp
 
 # Or install a specific version
 claude mcp add fundamental-styles -- npx -y @fundamental-styles/mcp@0.41.7-rc.3
+
+# Make it available across ALL projects (user-level)
+claude mcp add --scope user fundamental-styles -- npx -y @fundamental-styles/mcp
+
+# Make it available for current project (project-level)
+claude mcp add --scope project fundamental-styles -- npx -y @fundamental-styles/mcp
 ```
 
-This command automatically adds the MCP server to your `.claude/mcp.json` configuration.
+**Scope levels:**
+- `local` (default): Adds to `.claude/mcp.json` in current directory
+- `user`: Adds to `~/.claude/mcp.json` - available in all projects for your user account
+- `project`: Adds to `.claude/mcp.json` in the project root (if in a git repo)
 
 **Option 2: Manual configuration**
 
@@ -61,26 +70,7 @@ This command automatically adds the MCP server to your `.claude/mcp.json` config
 }
 ```
 
-### Direct invocation
-
-You can run the MCP server directly from the command line:
-
-```bash
-# Run latest version
-npx -y @fundamental-styles/mcp
-
-# Run a specific version
-npx -y @fundamental-styles/mcp@0.41.7-rc.3
-```
-
-**What gets invoked:**
-- `npx` downloads and runs the `@fundamental-styles/mcp` package from npm
-- The package entry point (`dist/index.js`) starts a Node.js MCP server
-- The server loads component metadata from bundled JSON files (HTML examples, CSS classes, design tokens, accessibility patterns)
-- It listens on **stdio** (standard input/output) for JSON-RPC messages following the [Model Context Protocol](https://modelcontextprotocol.io/)
-- AI clients (like Claude Code) send tool requests over stdio, and the server responds with structured data
-
-**Debugging with MCP Inspector:**
+### MCP Inspector
 
 The [MCP Inspector](https://github.com/modelcontextprotocol/inspector) is a web UI for testing MCP servers interactively:
 
