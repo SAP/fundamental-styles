@@ -13,7 +13,7 @@ Skills are markdown-based documentation files specifically designed for AI assis
 
 ## Available Skills
 
-fundamental-styles provides 10 comprehensive skills organized by topic:
+fundamental-styles provides 11 comprehensive skills organized by topic:
 
 ### Component Guidance (6 skills)
 
@@ -25,6 +25,10 @@ Detailed guidance for all 87 components, organized by category:
 - **Data Display** (23 components) - Tables, lists, trees, avatars
 - **Feedback & Status** (15 components) - Messages, notifications, progress
 - **Actions & Controls** (4 components) - Buttons, switches, controls
+
+### Documentation & Reference
+
+- **Component Documentation Browser** (140+ components) - Browse complete HTML examples with all variants and modifiers from auto-generated Storybook documentation
 
 ### Additional Skills
 
@@ -49,7 +53,7 @@ npx skills add SAP/fundamental-styles
 npx skills add SAP/fundamental-styles -g
 ```
 
-This installs all 10 skills automatically.
+This installs all 11 skills automatically.
 
 ### Browse Available Skills
 
@@ -68,11 +72,11 @@ If you only need specific skills, you can install them individually:
 # Install only BEM naming guidance
 npx skills add SAP/fundamental-styles -s bem-naming
 
-# Install only component composition
-npx skills add SAP/fundamental-styles -s component-composition
+# Install only component documentation browser
+npx skills add SAP/fundamental-styles -s component-docs
 
 # Install multiple specific skills
-npx skills add SAP/fundamental-styles -s bem-naming,component-composition,layout-patterns
+npx skills add SAP/fundamental-styles -s bem-naming,component-docs,layout-patterns
 ```
 
 **Available skill IDs:**
@@ -82,6 +86,7 @@ npx skills add SAP/fundamental-styles -s bem-naming,component-composition,layout
 - `component-guidance-data`
 - `component-guidance-feedback`
 - `component-guidance-actions`
+- `component-docs` ← **NEW: Browse 140+ component examples**
 - `layout-patterns`
 - `bem-naming`
 - `component-composition`
@@ -103,6 +108,7 @@ npx skills list -g
 
 ```
 /component-guidance-forms
+/component-docs
 /bem-naming
 /layout-patterns
 ```
@@ -128,6 +134,7 @@ The skill content should load immediately. If skills don't appear, try restartin
 - 🤔 Design decisions ("Should I use table or list?")
 - 📚 Understanding best practices and patterns
 - 🏗️ Architecture decisions (layout patterns, composition)
+- 📖 Browsing complete component examples with all variants
 - ⚠️ Avoiding common mistakes
 
 **Use MCP Tools for:**
@@ -154,6 +161,10 @@ Type: /content-density
 → Loads content density guidance
 → Shows when to use cozy/compact/condensed modes
 
+Type: /component-docs
+→ Loads component documentation browser
+→ Browse 140+ components with complete HTML examples
+
 Type: /component-guidance-forms
 → Loads forms guidance
 → Shows all 26 form components with best practices
@@ -164,6 +175,10 @@ Type: /component-guidance-forms
 AI assistants like Claude Code will automatically load relevant skills based on your questions:
 
 ```
+You: "Show me button component examples"
+→ AI loads: component-docs skill
+→ Provides: Complete button documentation with 20+ HTML examples
+
 You: "Should I use a checkbox or radio button?"
 → AI loads: component-guidance-forms skill
 → Provides: Guidance on when to use each component

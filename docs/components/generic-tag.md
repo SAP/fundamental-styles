@@ -1,0 +1,747 @@
+---
+component: fd-generic-tag
+title: Components/Generic Tag
+category: Components
+selector: fd-generic-tag
+cssFile: generic-tag.css
+sourcePath: packages/styles/stories/Components/generic-tag/generic-tag.stories.js
+tags: []
+dependencies: ["generic-tag","icon"]
+relatedComponents: ["generic-tag","icon"]
+stability: stable
+generatedAt: 2026-05-28T16:47:21.086Z
+---
+
+# Components/Generic Tag
+
+The generic tag control displays complementary information related to the current page, such as key performance indicators (KPI) and situations.
+
+| Type/State | Modifier class |
+| :--------- | :----------- |
+| Neutral/None | default |
+| Error | \
+
+## Dependencies
+
+This component depends on the following CSS files:
+
+- `generic-tag.css`
+- `icon.css`
+
+## Installation
+
+```bash
+npm install fundamental-styles
+```
+
+```html
+<!-- Include theme -->
+<link href="node_modules/fundamental-styles/dist/theming/sap_horizon.css" rel="stylesheet">
+
+<!-- Include component CSS -->
+<link href="node_modules/fundamental-styles/dist/generic-tag.css" rel="stylesheet">
+
+<!-- Include dependencies -->
+<link href="node_modules/fundamental-styles/dist/generic-tag.css" rel="stylesheet">
+<link href="node_modules/fundamental-styles/dist/icon.css" rel="stylesheet">
+```
+
+## Basic Usage
+
+```html
+<style>
+    .docs-link-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    align-items: center;
+    }
+
+    .docs-link-container-header {
+    margin: 2rem 0;
+    }
+
+    @media (min-width:600px) {
+    .docs-link-container {
+    grid-template-columns: 1fr 1fr;
+    }
+    }
+
+    @media (min-width:1025px) {
+    .docs-link-container {
+    grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+    }
+    }
+</style>
+<div class="docs-link-container">
+    <div>
+        <div class="docs-link-container-header"><b>Regular</b></div>
+        <div
+            class="fd-generic-tag"
+            role="button"
+            tabindex="0"
+            aria-disabled="false"
+            aria-roledescription="Object Tag"
+            aria-labelledby="generic-tag-decorator-1 generic-tag-name-1 generic-tag-value-1"
+            aria-describedby="generic-tag-instructions-1">
+            <span class="fd-generic-tag__sr-only" id="generic-tag-decorator-1">Value State: Neutral</span>
+            <span class="fd-generic-tag__name" id="generic-tag-name-1">Product Cost</span>
+            <span class="fd-generic-tag__value" id="generic-tag-value-1">3.5M EUR</span>
+            <span class="fd-generic-tag__sr-only" id="generic-tag-instructions-1">Activate for details</span>
+        </div>
+
+        <div
+            class="fd-generic-tag fd-generic-tag--error"
+            role="button"
+            tabindex="0"
+            aria-disabled="false"
+            aria-roledescription="Object Tag"
+            aria-labelledby="generic-tag-decorator-2 generic-tag-name-2 generic-tag-value-2"
+            aria-describedby="generic-tag-instructions-2">
+            <span class="fd-generic-tag__sr-only" id="generic-tag-decorator-2">Value State: Error</span>
+            <span class="fd-generic-tag__icon sap-icon--message-error" role="presentation" aria-hidden="true" aria-label="error"></span>
+            <span class="fd-generic-tag__name" id="generic-tag-name-2">Product Cost</span>
+            <span class="fd-generic-tag__value" id="generic-tag-value-2">3.5M EUR</span>
+            <span class="fd-generic-tag__sr-only" id="generic-tag-instructions-2">Activate for details</span>
+        </div>
+
+        <div
+            class="fd-generic-tag fd-generic-tag--success"
+            role="button"
+            tabindex="0"
+            aria-disabled="false"
+            aria-roledescription="Object Tag"
+            aria-labelledby="generic-tag-decorator-3 generic-tag-name-3 generic-tag-value-3"
+            aria-describedby="generic-tag-instructions-3">
+            <span class="fd-generic-tag__sr-only" id="generic-tag-decorator-3">Value State: Success</span>
+            <span class="fd-generic-tag__icon sap-icon--message-success" role="presentation" aria-hidden="true" aria-label="success"></span>
+            <span class="fd-generic-tag__name" id="generic-tag-name-3">Product Cost</span>
+            <span class="fd-generic-tag__value" id="generic-tag-value-3">3.5M EUR</span>
+            <span class="fd-generic-tag__sr-only" id="generic-tag-instructions-3">Activate for details</span>
+
+            <div
+                class="fd-generic-tag fd-generic-tag--information"
+                role="button"
+                tabindex="0"
+                aria-disabled="false"
+                aria-roledescription="Object Tag"
+                aria-labelledby="generic-tag-decorator-4 generic-tag-name-4 generic-tag-value-4"
+                aria-describedby="generic-tag-instructions-4">
+                <span class="fd-generic-tag__sr-only" id="generic-tag-decorator-4">Value State: Information</span>
+                <span class="fd-generic-tag__icon sap-icon--message-information" role="presentation" aria-hidden="true" aria-label="information"></span>
+                <span class="fd-generic-tag__name" id="generic-tag-name-4">Product Cost</span>
+                <span class="fd-generic-tag__value" id="generic-tag-value-4">3.5M EUR</span>
+                <span class="fd-generic-tag__sr-only" id="generic-tag-instructions-4">Activate for details</span>
+
+                <div
+                    class="fd-generic-tag fd-generic-tag--warning"
+                    role="button"
+                    tabindex="0"
+                    aria-disabled="false"
+                    aria-roledescription="Object Tag"
+                    aria-labelledby="generic-tag-decorator-5 generic-tag-name-5 generic-tag-value-5"
+                    aria-describedby="generic-tag-instructions-5">
+                    <span class="fd-generic-tag__sr-only" id="generic-tag-decorator-5">Value State: Warning</span>
+                    <span class="fd-generic-tag__icon sap-icon--message-warning" role="presentation" aria-hidden="true" aria-label="warning"></span>
+                    <span class="fd-generic-tag__name" id="generic-tag-name-5">Product Cost</span>
+                    <span class="fd-generic-tag__value" id="generic-tag-value-5">3.5M EUR</span>
+                    <span class="fd-generic-tag__sr-only" id="generic-tag-instructions-5">Activate for details</span>
+
+                    <div>
+                        <div class="docs-link-container-header"><b>Hover</b></div>
+                        <div
+                            class="fd-generic-tag is-hover"
+                            role="button"
+                            tabindex="0"
+                            aria-disabled="false"
+                            aria-roledescription="Object Tag"
+                            aria-labelledby="generic-tag-decorator-6 generic-tag-name-6 generic-tag-value-6"
+                            aria-describedby="generic-tag-instructions-6">
+                            <span class="fd-generic-tag__sr-only" id="generic-tag-decorator-6">Value State: Neutral</span>
+                            <span class="fd-generic-tag__name" id="generic-tag-name-6">Product Cost</span>
+                            <span class="fd-generic-tag__value" id="generic-tag-value-6">3.5M EUR</span>
+                            <span class="fd-generic-tag__sr-only" id="generic-tag-instructions-6">Activate for details</span>
+                        </div>
+
+                        <div
+                            class="fd-generic-tag fd-generic-tag--error is-hover"
+                            role="button"
+                            tabindex="0"
+                            aria-disabled="false"
+                            aria-roledescription="Object Tag"
+                            aria-labelledby="generic-tag-decorator-7 generic-tag-name-7 generic-tag-value-7"
+                            aria-describedby="generic-tag-instructions-7">
+                            <span class="fd-generic-tag__sr-only" id="generic-tag-decorator-7">Value State: Error</span>
+                            <span class="fd-generic-tag__icon sap-icon--message-error" role="presentation" aria-hidden="true" aria-label="error"></span>
+                            <span class="fd-generic-tag__name" id="generic-tag-name-7">Product Cost</span>
+                            <span class="fd-generic-tag__value" id="generic-tag-value-7">3.5M EUR</span>
+                            <span class="fd-generic-tag__sr-only" id="generic-tag-instructions-7">Activate for details</span>
+
+                            <div
+                                class="fd-generic-tag fd-generic-tag--success is-hover"
+                                role="button"
+                                tabindex="0"
+                                aria-disabled="false"
+                                aria-roledescription="Object Tag"
+                                aria-labelledby="generic-tag-decorator-8 generic-tag-name-8 generic-tag-value-8"
+                                aria-describedby="generic-tag-instructions-8">
+                                <span class="fd-generic-tag__sr-only" id="generic-tag-decorator-8">Value State: Success</span>
+                                <span class="fd-generic-tag__icon sap-icon--message-success" role="presentation" aria-hidden="true" aria-label="success"></span>
+                                <span class="fd-generic-tag__name" id="generic-tag-name-8">Product Cost</span>
+                                <span class="fd-generic-tag__value" id="generic-tag-value-8">3.5M EUR</span>
+                                <span class="fd-generic-tag__sr-only" id="generic-tag-instructions-8">Activate for details</span>
+
+                                <div
+                                    class="fd-generic-tag fd-generic-tag--information is-hover"
+                                    role="button"
+                                    tabindex="0"
+                                    aria-disabled="false"
+                                    aria-roledescription="Object Tag"
+                                    aria-labelledby="generic-tag-decorator-9 generic-tag-name-9 generic-tag-value-9"
+                                    aria-describedby="generic-tag-instructions-9">
+                                    <span class="fd-generic-tag__sr-only" id="generic-tag-decorator-9">Value State: Information</span>
+                                    <span class="fd-generic-tag__icon sap-icon--message-information" role="presentation" aria-hidden="true" aria-label="information"></span>
+                                    <span class="fd-generic-tag__name" id="generic-tag-name-9">Product Cost</span>
+                                    <span class="fd-generic-tag__value" id="generic-tag-value-9">3.5M EUR</span>
+                                    <span class="fd-generic-tag__sr-only" id="generic-tag-instructions-9">Activate for details</span>
+
+                                    <div
+                                        class="fd-generic-tag fd-generic-tag--warning is-hover"
+                                        role="button"
+                                        tabindex="0"
+                                        aria-disabled="false"
+                                        aria-roledescription="Object Tag"
+                                        aria-labelledby="generic-tag-decorator-10 generic-tag-name-10 generic-tag-value-10"
+                                        aria-describedby="generic-tag-instructions-10">
+                                        <span class="fd-generic-tag__sr-only" id="generic-tag-decorator-10">Value State: Warning</span>
+                                        <span class="fd-generic-tag__icon sap-icon--message-warning" role="presentation" aria-hidden="true" aria-label="warning"></span>
+                                        <span class="fd-generic-tag__name" id="generic-tag-name-10">Product Cost</span>
+                                        <span class="fd-generic-tag__value" id="generic-tag-value-10">3.5M EUR</span>
+                                        <span class="fd-generic-tag__sr-only" id="generic-tag-instructions-10">Activate for details</span>
+
+                                        <div>
+                                            <div class="docs-link-container-header"><b>Active</b></div>
+                                            <div class="fd-generic-tag is-active"
+                                                role="button"
+                                                tabindex="0"
+                                                aria-disabled="false"
+                                                aria-roledescription="Object Tag"
+                                                aria-labelledby="generic-tag-decorator-11 generic-tag-name-11 generic-tag-value-11"
+                                                aria-describedby="generic-tag-instructions-11">
+                                                <span class="fd-generic-tag__sr-only" id="generic-tag-decorator-11">Value State: Neutral</span>
+                                                <span class="fd-generic-tag__name" id="generic-tag-name-11">Product Cost</span>
+                                                <span class="fd-generic-tag__value" id="generic-tag-value-11">3.5M EUR</span>
+                                                <span class="fd-generic-tag__sr-only" id="generic-tag-instructions-11">Activate for details</span>
+                                            </div>
+
+                                            <div
+                                                class="fd-generic-tag fd-generic-tag--error is-active"
+                                                role="button"
+                                                tabindex="0"
+                                                aria-disabled="false"
+                                                aria-roledescription="Object Tag"
+                                                aria-labelledby="generic-tag-decorator-12 generic-tag-name-12 generic-tag-value-12"
+                                                aria-describedby="generic-tag-instructions-12">
+                                                <span class="fd-generic-tag__sr-only" id="generic-tag-decorator-12">Value State: Error</span>
+                                                <span class="fd-generic-tag__icon sap-icon--message-error" role="presentation" aria-hidden="true" aria-label="error"></span>
+                                                <span class="fd-generic-tag__name" id="generic-tag-name-12">Product Cost</span>
+                                                <span class="fd-generic-tag__value" id="generic-tag-value-12">3.5M EUR</span>
+                                                <span class="fd-generic-tag__sr-only" id="generic-tag-instructions-12">Activate for details</span>
+
+                                                <div
+                                                    class="fd-generic-tag fd-generic-tag--success is-active"
+                                                    role="button"
+                                                    tabindex="0"
+                                                    aria-disabled="false"
+                                                    aria-roledescription="Object Tag"
+                                                    aria-labelledby="generic-tag-decorator-13 generic-tag-name-13 generic-tag-value-13"
+                                                    aria-describedby="generic-tag-instructions-13">
+                                                    <span class="fd-generic-tag__sr-only" id="generic-tag-decorator-13">Value State: Success</span>
+                                                    <span class="fd-generic-tag__icon sap-icon--message-success" role="presentation" aria-hidden="true" aria-label="success"></span>
+                                                    <span class="fd-generic-tag__name" id="generic-tag-name-13">Product Cost</span>
+                                                    <span class="fd-generic-tag__value" id="generic-tag-value-13">3.5M EUR</span>
+                                                    <span class="fd-generic-tag__sr-only" id="generic-tag-instructions-13">Activate for details</span>
+
+                                                    <div class="fd-generic-tag fd-generic-tag--information is-active"
+                                                        role="button"
+                                                        tabindex="0"
+                                                        aria-disabled="false"
+                                                        aria-roledescription="Object Tag"
+                                                        aria-labelledby="generic-tag-decorator-14 generic-tag-name-14 generic-tag-value-14"
+                                                        aria-describedby="generic-tag-instructions-14">
+                                                        <span class="fd-generic-tag__sr-only" id="generic-tag-decorator-14">Value State: Information</span>
+                                                        <span class="fd-generic-tag__icon sap-icon--message-information" role="presentation" aria-hidden="true" aria-label="information"></span>
+                                                        <span class="fd-generic-tag__name" id="generic-tag-name-14">Product Cost</span>
+                                                        <span class="fd-generic-tag__value" id="generic-tag-value-14">3.5M EUR</span>
+                                                        <span class="fd-generic-tag__sr-only" id="generic-tag-instructions-14">Activate for details</span>
+
+                                                        <div
+                                                            class="fd-generic-tag fd-generic-tag--warning is-active"
+                                                            role="button"
+                                                            tabindex="0"
+                                                            aria-roledescription="Object Tag"
+                                                            aria-disabled="false"
+                                                            aria-labelledby="generic-tag-decorator-15 generic-tag-name-15 generic-tag-value-15"
+                                                            aria-describedby="generic-tag-instructions-15">
+                                                            <span class="fd-generic-tag__sr-only" id="generic-tag-decorator-15">Value State: Warning</span>
+                                                            <span class="fd-generic-tag__icon sap-icon--message-warning" role="presentation" aria-hidden="true" aria-label="warning"></span>
+                                                            <span class="fd-generic-tag__name" id="generic-tag-name-15">Product Cost</span>
+                                                            <span class="fd-generic-tag__value" id="generic-tag-value-15">3.5M EUR</span>
+                                                            <span class="fd-generic-tag__sr-only" id="generic-tag-instructions-15">Activate for details</span>
+
+                                                            <div>
+                                                                <div class="docs-link-container-header"><b>Focus</b></div>
+                                                                <div
+                                                                    class="fd-generic-tag is-focus"
+                                                                    role="button"
+                                                                    tabindex="0"
+                                                                    aria-disabled="false"
+                                                                    aria-roledescription="Object Tag"
+                                                                    aria-labelledby="generic-tag-decorator-16 generic-tag-name-16 generic-tag-value-16"
+                                                                    aria-describedby="generic-tag-instructions-16">
+                                                                    <span class="fd-generic-tag__sr-only" id="generic-tag-decorator-16">Value State: Neutral</span>
+                                                                    <span class="fd-generic-tag__name" id="generic-tag-name-16">Product Cost</span>
+                                                                    <span class="fd-generic-tag__value" id="generic-tag-value-16">3.5M EUR</span>
+                                                                    <span class="fd-generic-tag__sr-only" id="generic-tag-instructions-16">Activate for details</span>
+                                                                </div>
+
+                                                                <div
+                                                                    class="fd-generic-tag fd-generic-tag--error is-focus"
+                                                                    role="button"
+                                                                    tabindex="0"
+                                                                    aria-disabled="false"
+                                                                    aria-roledescription="Object Tag"
+                                                                    aria-labelledby="generic-tag-decorator-17 generic-tag-name-17 generic-tag-value-17"
+                                                                    aria-describedby="generic-tag-instructions-17">
+                                                                    <span class="fd-generic-tag__sr-only" id="generic-tag-decorator-17">Value State: Error</span>
+                                                                    <span class="fd-generic-tag__icon sap-icon--message-error" role="presentation" aria-hidden="true" aria-label="error"></span>
+                                                                    <span class="fd-generic-tag__name" id="generic-tag-name-17">Product Cost</span>
+                                                                    <span class="fd-generic-tag__value" id="generic-tag-value-17">3.5M EUR</span>
+                                                                    <span class="fd-generic-tag__sr-only" id="generic-tag-instructions-17">Activate for details</span>
+
+                                                                    <div class="fd-generic-tag fd-generic-tag--success is-focus"
+                                                                        role="button"
+                                                                        tabindex="0"
+                                                                        aria-roledescription="Object Tag"
+                                                                        aria-disabled="false"
+                                                                        aria-labelledby="generic-tag-decorator-18 generic-tag-name-18 generic-tag-value-18"
+                                                                        aria-describedby="generic-tag-instructions-18">
+                                                                        <span class="fd-generic-tag__sr-only" id="generic-tag-decorator-18">Value State: Success</span>
+                                                                        <span class="fd-generic-tag__icon sap-icon--message-success" role="presentation" aria-hidden="true" aria-label="success"></span>
+                                                                        <span class="fd-generic-tag__name" id="generic-tag-name-18">Product Cost</span>
+                                                                        <span class="fd-generic-tag__value" id="generic-tag-value-18">3.5M EUR</span>
+                                                                        <span class="fd-generic-tag__sr-only" id="generic-tag-instructions-18">Activate for details</span>
+
+                                                                        <div
+                                                                            class="fd-generic-tag fd-generic-tag--information is-focus"
+                                                                            role="button"
+                                                                            tabindex="0"
+                                                                            aria-disabled="false"
+                                                                            aria-roledescription="Object Tag"
+                                                                            aria-labelledby="generic-tag-decorator-19 generic-tag-name-19 generic-tag-value-19"
+                                                                            aria-describedby="generic-tag-instructions-19">
+                                                                            <span class="fd-generic-tag__sr-only" id="generic-tag-decorator-19">Value State: Information</span>
+                                                                            <span class="fd-generic-tag__icon sap-icon--message-information" role="presentation" aria-hidden="true" aria-label="information"></span>
+                                                                            <span class="fd-generic-tag__name" id="generic-tag-name-19">Product Cost</span>
+                                                                            <span class="fd-generic-tag__value" id="generic-tag-value-19">3.5M EUR</span>
+                                                                            <span class="fd-generic-tag__sr-only" id="generic-tag-instructions-19">Activate for details</span>
+
+                                                                            <div
+                                                                                class="fd-generic-tag fd-generic-tag--warning is-focus"
+                                                                                role="button"
+                                                                                tabindex="0"
+                                                                                aria-roledescription="Object Tag"
+                                                                                aria-disabled="false"
+                                                                                aria-labelledby="generic-tag-decorator-20 generic-tag-name-20 generic-tag-value-20"
+                                                                                aria-describedby="generic-tag-instructions-20">
+                                                                                <span class="fd-generic-tag__sr-only" id="generic-tag-decorator-20">Value State: Warning</span>
+                                                                                <span class="fd-generic-tag__icon sap-icon--message-warning" role="presentation" aria-hidden="true" aria-label="warning"></span>
+                                                                                <span class="fd-generic-tag__name" id="generic-tag-name-20">Product Cost</span>
+                                                                                <span class="fd-generic-tag__value" id="generic-tag-value-20">3.5M EUR</span>
+                                                                                <span class="fd-generic-tag__sr-only" id="generic-tag-instructions-20">Activate for details</span>
+```
+
+## Modifiers
+
+| Class | Description |
+|-------|-------------|
+| `fd-generic-tag--error` | Style variant |
+| `fd-generic-tag--information` | Style variant |
+| `fd-generic-tag--success` | Style variant |
+| `fd-generic-tag--warning` | Style variant |
+
+## States
+
+| Class | Description |
+|-------|-------------|
+| `is-active` | Active state |
+| `is-focus` | Focus state |
+| `is-hover` | Hover state |
+
+## BEM Elements
+
+This component uses the following BEM elements:
+
+- `fd-generic-tag__icon`
+- `fd-generic-tag__name`
+- `fd-generic-tag__sr-only`
+- `fd-generic-tag__value`
+
+## Related Components
+
+This component works with or depends on:
+
+- `generic-tag`
+- `icon`
+
+## Design Tokens
+
+Key CSS variables used by this component:
+
+- `--fdGenericTag_Background_Color`
+- `--fdGenericTag_Decorator_Color`
+- `--fdGenericTag_Decorator_Position`
+- `--fdGenericTag_Icon_Color`
+- `--fdGenericTag_Icon_Color_Hover_Error`
+- `--fdGenericTag_Icon_Color_Hover_Information`
+- `--fdGenericTag_Icon_Color_Hover_Neutral`
+- `--fdGenericTag_Icon_Color_Hover_Success`
+- `--fdGenericTag_Icon_Color_Hover_Warning`
+- `--fdGenericTag_Margin`
+- `--fdGenericTag_Name_Color`
+- `--fdGenericTag_Name_Color_Hover`
+- `--fdGenericTag_Name_Text_Shadow`
+- `--fdGenericTag_Spacing`
+- `--fdGenericTag_Spacing_Outline_Offset`
+
+*...and 5 more*
+
+## Examples
+
+### Types
+
+```html
+<style>
+    .docs-link-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    align-items: center;
+    }
+
+    .docs-link-container-header {
+    margin: 2rem 0;
+    }
+
+    @media (min-width:600px) {
+    .docs-link-container {
+    grid-template-columns: 1fr 1fr;
+    }
+    }
+
+    @media (min-width:1025px) {
+    .docs-link-container {
+    grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+    }
+    }
+</style>
+<div class="docs-link-container">
+    <div>
+        <div class="docs-link-container-header"><b>Regular</b></div>
+        <div
+            class="fd-generic-tag"
+            role="button"
+            tabindex="0"
+            aria-disabled="false"
+            aria-roledescription="Object Tag"
+            aria-labelledby="generic-tag-decorator-1 generic-tag-name-1 generic-tag-value-1"
+            aria-describedby="generic-tag-instructions-1">
+            <span class="fd-generic-tag__sr-only" id="generic-tag-decorator-1">Value State: Neutral</span>
+            <span class="fd-generic-tag__name" id="generic-tag-name-1">Product Cost</span>
+            <span class="fd-generic-tag__value" id="generic-tag-value-1">3.5M EUR</span>
+            <span class="fd-generic-tag__sr-only" id="generic-tag-instructions-1">Activate for details</span>
+        </div>
+
+        <div
+            class="fd-generic-tag fd-generic-tag--error"
+            role="button"
+            tabindex="0"
+            aria-disabled="false"
+            aria-roledescription="Object Tag"
+            aria-labelledby="generic-tag-decorator-2 generic-tag-name-2 generic-tag-value-2"
+            aria-describedby="generic-tag-instructions-2">
+            <span class="fd-generic-tag__sr-only" id="generic-tag-decorator-2">Value State: Error</span>
+            <span class="fd-generic-tag__icon sap-icon--message-error" role="presentation" aria-hidden="true" aria-label="error"></span>
+            <span class="fd-generic-tag__name" id="generic-tag-name-2">Product Cost</span>
+            <span class="fd-generic-tag__value" id="generic-tag-value-2">3.5M EUR</span>
+            <span class="fd-generic-tag__sr-only" id="generic-tag-instructions-2">Activate for details</span>
+        </div>
+
+        <div
+            class="fd-generic-tag fd-generic-tag--success"
+            role="button"
+            tabindex="0"
+            aria-disabled="false"
+            aria-roledescription="Object Tag"
+            aria-labelledby="generic-tag-decorator-3 generic-tag-name-3 generic-tag-value-3"
+            aria-describedby="generic-tag-instructions-3">
+            <span class="fd-generic-tag__sr-only" id="generic-tag-decorator-3">Value State: Success</span>
+            <span class="fd-generic-tag__icon sap-icon--message-success" role="presentation" aria-hidden="true" aria-label="success"></span>
+            <span class="fd-generic-tag__name" id="generic-tag-name-3">Product Cost</span>
+            <span class="fd-generic-tag__value" id="generic-tag-value-3">3.5M EUR</span>
+            <span class="fd-generic-tag__sr-only" id="generic-tag-instructions-3">Activate for details</span>
+
+            <div
+                class="fd-generic-tag fd-generic-tag--information"
+                role="button"
+                tabindex="0"
+                aria-disabled="false"
+                aria-roledescription="Object Tag"
+                aria-labelledby="generic-tag-decorator-4 generic-tag-name-4 generic-tag-value-4"
+                aria-describedby="generic-tag-instructions-4">
+                <span class="fd-generic-tag__sr-only" id="generic-tag-decorator-4">Value State: Information</span>
+                <span class="fd-generic-tag__icon sap-icon--message-information" role="presentation" aria-hidden="true" aria-label="information"></span>
+                <span class="fd-generic-tag__name" id="generic-tag-name-4">Product Cost</span>
+                <span class="fd-generic-tag__value" id="generic-tag-value-4">3.5M EUR</span>
+                <span class="fd-generic-tag__sr-only" id="generic-tag-instructions-4">Activate for details</span>
+
+                <div
+                    class="fd-generic-tag fd-generic-tag--warning"
+                    role="button"
+                    tabindex="0"
+                    aria-disabled="false"
+                    aria-roledescription="Object Tag"
+                    aria-labelledby="generic-tag-decorator-5 generic-tag-name-5 generic-tag-value-5"
+                    aria-describedby="generic-tag-instructions-5">
+                    <span class="fd-generic-tag__sr-only" id="generic-tag-decorator-5">Value State: Warning</span>
+                    <span class="fd-generic-tag__icon sap-icon--message-warning" role="presentation" aria-hidden="true" aria-label="warning"></span>
+                    <span class="fd-generic-tag__name" id="generic-tag-name-5">Product Cost</span>
+                    <span class="fd-generic-tag__value" id="generic-tag-value-5">3.5M EUR</span>
+                    <span class="fd-generic-tag__sr-only" id="generic-tag-instructions-5">Activate for details</span>
+
+                    <div>
+                        <div class="docs-link-container-header"><b>Hover</b></div>
+                        <div
+                            class="fd-generic-tag is-hover"
+                            role="button"
+                            tabindex="0"
+                            aria-disabled="false"
+                            aria-roledescription="Object Tag"
+                            aria-labelledby="generic-tag-decorator-6 generic-tag-name-6 generic-tag-value-6"
+                            aria-describedby="generic-tag-instructions-6">
+                            <span class="fd-generic-tag__sr-only" id="generic-tag-decorator-6">Value State: Neutral</span>
+                            <span class="fd-generic-tag__name" id="generic-tag-name-6">Product Cost</span>
+                            <span class="fd-generic-tag__value" id="generic-tag-value-6">3.5M EUR</span>
+                            <span class="fd-generic-tag__sr-only" id="generic-tag-instructions-6">Activate for details</span>
+                        </div>
+
+                        <div
+                            class="fd-generic-tag fd-generic-tag--error is-hover"
+                            role="button"
+                            tabindex="0"
+                            aria-disabled="false"
+                            aria-roledescription="Object Tag"
+                            aria-labelledby="generic-tag-decorator-7 generic-tag-name-7 generic-tag-value-7"
+                            aria-describedby="generic-tag-instructions-7">
+                            <span class="fd-generic-tag__sr-only" id="generic-tag-decorator-7">Value State: Error</span>
+                            <span class="fd-generic-tag__icon sap-icon--message-error" role="presentation" aria-hidden="true" aria-label="error"></span>
+                            <span class="fd-generic-tag__name" id="generic-tag-name-7">Product Cost</span>
+                            <span class="fd-generic-tag__value" id="generic-tag-value-7">3.5M EUR</span>
+                            <span class="fd-generic-tag__sr-only" id="generic-tag-instructions-7">Activate for details</span>
+
+                            <div
+                                class="fd-generic-tag fd-generic-tag--success is-hover"
+                                role="button"
+                                tabindex="0"
+                                aria-disabled="false"
+                                aria-roledescription="Object Tag"
+                                aria-labelledby="generic-tag-decorator-8 generic-tag-name-8 generic-tag-value-8"
+                                aria-describedby="generic-tag-instructions-8">
+                                <span class="fd-generic-tag__sr-only" id="generic-tag-decorator-8">Value State: Success</span>
+                                <span class="fd-generic-tag__icon sap-icon--message-success" role="presentation" aria-hidden="true" aria-label="success"></span>
+                                <span class="fd-generic-tag__name" id="generic-tag-name-8">Product Cost</span>
+                                <span class="fd-generic-tag__value" id="generic-tag-value-8">3.5M EUR</span>
+                                <span class="fd-generic-tag__sr-only" id="generic-tag-instructions-8">Activate for details</span>
+
+                                <div
+                                    class="fd-generic-tag fd-generic-tag--information is-hover"
+                                    role="button"
+                                    tabindex="0"
+                                    aria-disabled="false"
+                                    aria-roledescription="Object Tag"
+                                    aria-labelledby="generic-tag-decorator-9 generic-tag-name-9 generic-tag-value-9"
+                                    aria-describedby="generic-tag-instructions-9">
+                                    <span class="fd-generic-tag__sr-only" id="generic-tag-decorator-9">Value State: Information</span>
+                                    <span class="fd-generic-tag__icon sap-icon--message-information" role="presentation" aria-hidden="true" aria-label="information"></span>
+                                    <span class="fd-generic-tag__name" id="generic-tag-name-9">Product Cost</span>
+                                    <span class="fd-generic-tag__value" id="generic-tag-value-9">3.5M EUR</span>
+                                    <span class="fd-generic-tag__sr-only" id="generic-tag-instructions-9">Activate for details</span>
+
+                                    <div
+                                        class="fd-generic-tag fd-generic-tag--warning is-hover"
+                                        role="button"
+                                        tabindex="0"
+                                        aria-disabled="false"
+                                        aria-roledescription="Object Tag"
+                                        aria-labelledby="generic-tag-decorator-10 generic-tag-name-10 generic-tag-value-10"
+                                        aria-describedby="generic-tag-instructions-10">
+                                        <span class="fd-generic-tag__sr-only" id="generic-tag-decorator-10">Value State: Warning</span>
+                                        <span class="fd-generic-tag__icon sap-icon--message-warning" role="presentation" aria-hidden="true" aria-label="warning"></span>
+                                        <span class="fd-generic-tag__name" id="generic-tag-name-10">Product Cost</span>
+                                        <span class="fd-generic-tag__value" id="generic-tag-value-10">3.5M EUR</span>
+                                        <span class="fd-generic-tag__sr-only" id="generic-tag-instructions-10">Activate for details</span>
+
+                                        <div>
+                                            <div class="docs-link-container-header"><b>Active</b></div>
+                                            <div class="fd-generic-tag is-active"
+                                                role="button"
+                                                tabindex="0"
+                                                aria-disabled="false"
+                                                aria-roledescription="Object Tag"
+                                                aria-labelledby="generic-tag-decorator-11 generic-tag-name-11 generic-tag-value-11"
+                                                aria-describedby="generic-tag-instructions-11">
+                                                <span class="fd-generic-tag__sr-only" id="generic-tag-decorator-11">Value State: Neutral</span>
+                                                <span class="fd-generic-tag__name" id="generic-tag-name-11">Product Cost</span>
+                                                <span class="fd-generic-tag__value" id="generic-tag-value-11">3.5M EUR</span>
+                                                <span class="fd-generic-tag__sr-only" id="generic-tag-instructions-11">Activate for details</span>
+                                            </div>
+
+                                            <div
+                                                class="fd-generic-tag fd-generic-tag--error is-active"
+                                                role="button"
+                                                tabindex="0"
+                                                aria-disabled="false"
+                                                aria-roledescription="Object Tag"
+                                                aria-labelledby="generic-tag-decorator-12 generic-tag-name-12 generic-tag-value-12"
+                                                aria-describedby="generic-tag-instructions-12">
+                                                <span class="fd-generic-tag__sr-only" id="generic-tag-decorator-12">Value State: Error</span>
+                                                <span class="fd-generic-tag__icon sap-icon--message-error" role="presentation" aria-hidden="true" aria-label="error"></span>
+                                                <span class="fd-generic-tag__name" id="generic-tag-name-12">Product Cost</span>
+                                                <span class="fd-generic-tag__value" id="generic-tag-value-12">3.5M EUR</span>
+                                                <span class="fd-generic-tag__sr-only" id="generic-tag-instructions-12">Activate for details</span>
+
+                                                <div
+                                                    class="fd-generic-tag fd-generic-tag--success is-active"
+                                                    role="button"
+                                                    tabindex="0"
+                                                    aria-disabled="false"
+                                                    aria-roledescription="Object Tag"
+                                                    aria-labelledby="generic-tag-decorator-13 generic-tag-name-13 generic-tag-value-13"
+                                                    aria-describedby="generic-tag-instructions-13">
+                                                    <span class="fd-generic-tag__sr-only" id="generic-tag-decorator-13">Value State: Success</span>
+                                                    <span class="fd-generic-tag__icon sap-icon--message-success" role="presentation" aria-hidden="true" aria-label="success"></span>
+                                                    <span class="fd-generic-tag__name" id="generic-tag-name-13">Product Cost</span>
+                                                    <span class="fd-generic-tag__value" id="generic-tag-value-13">3.5M EUR</span>
+                                                    <span class="fd-generic-tag__sr-only" id="generic-tag-instructions-13">Activate for details</span>
+
+                                                    <div class="fd-generic-tag fd-generic-tag--information is-active"
+                                                        role="button"
+                                                        tabindex="0"
+                                                        aria-disabled="false"
+                                                        aria-roledescription="Object Tag"
+                                                        aria-labelledby="generic-tag-decorator-14 generic-tag-name-14 generic-tag-value-14"
+                                                        aria-describedby="generic-tag-instructions-14">
+                                                        <span class="fd-generic-tag__sr-only" id="generic-tag-decorator-14">Value State: Information</span>
+                                                        <span class="fd-generic-tag__icon sap-icon--message-information" role="presentation" aria-hidden="true" aria-label="information"></span>
+                                                        <span class="fd-generic-tag__name" id="generic-tag-name-14">Product Cost</span>
+                                                        <span class="fd-generic-tag__value" id="generic-tag-value-14">3.5M EUR</span>
+                                                        <span class="fd-generic-tag__sr-only" id="generic-tag-instructions-14">Activate for details</span>
+
+                                                        <div
+                                                            class="fd-generic-tag fd-generic-tag--warning is-active"
+                                                            role="button"
+                                                            tabindex="0"
+                                                            aria-roledescription="Object Tag"
+                                                            aria-disabled="false"
+                                                            aria-labelledby="generic-tag-decorator-15 generic-tag-name-15 generic-tag-value-15"
+                                                            aria-describedby="generic-tag-instructions-15">
+                                                            <span class="fd-generic-tag__sr-only" id="generic-tag-decorator-15">Value State: Warning</span>
+                                                            <span class="fd-generic-tag__icon sap-icon--message-warning" role="presentation" aria-hidden="true" aria-label="warning"></span>
+                                                            <span class="fd-generic-tag__name" id="generic-tag-name-15">Product Cost</span>
+                                                            <span class="fd-generic-tag__value" id="generic-tag-value-15">3.5M EUR</span>
+                                                            <span class="fd-generic-tag__sr-only" id="generic-tag-instructions-15">Activate for details</span>
+
+                                                            <div>
+                                                                <div class="docs-link-container-header"><b>Focus</b></div>
+                                                                <div
+                                                                    class="fd-generic-tag is-focus"
+                                                                    role="button"
+                                                                    tabindex="0"
+                                                                    aria-disabled="false"
+                                                                    aria-roledescription="Object Tag"
+                                                                    aria-labelledby="generic-tag-decorator-16 generic-tag-name-16 generic-tag-value-16"
+                                                                    aria-describedby="generic-tag-instructions-16">
+                                                                    <span class="fd-generic-tag__sr-only" id="generic-tag-decorator-16">Value State: Neutral</span>
+                                                                    <span class="fd-generic-tag__name" id="generic-tag-name-16">Product Cost</span>
+                                                                    <span class="fd-generic-tag__value" id="generic-tag-value-16">3.5M EUR</span>
+                                                                    <span class="fd-generic-tag__sr-only" id="generic-tag-instructions-16">Activate for details</span>
+                                                                </div>
+
+                                                                <div
+                                                                    class="fd-generic-tag fd-generic-tag--error is-focus"
+                                                                    role="button"
+                                                                    tabindex="0"
+                                                                    aria-disabled="false"
+                                                                    aria-roledescription="Object Tag"
+                                                                    aria-labelledby="generic-tag-decorator-17 generic-tag-name-17 generic-tag-value-17"
+                                                                    aria-describedby="generic-tag-instructions-17">
+                                                                    <span class="fd-generic-tag__sr-only" id="generic-tag-decorator-17">Value State: Error</span>
+                                                                    <span class="fd-generic-tag__icon sap-icon--message-error" role="presentation" aria-hidden="true" aria-label="error"></span>
+                                                                    <span class="fd-generic-tag__name" id="generic-tag-name-17">Product Cost</span>
+                                                                    <span class="fd-generic-tag__value" id="generic-tag-value-17">3.5M EUR</span>
+                                                                    <span class="fd-generic-tag__sr-only" id="generic-tag-instructions-17">Activate for details</span>
+
+                                                                    <div class="fd-generic-tag fd-generic-tag--success is-focus"
+                                                                        role="button"
+                                                                        tabindex="0"
+                                                                        aria-roledescription="Object Tag"
+                                                                        aria-disabled="false"
+                                                                        aria-labelledby="generic-tag-decorator-18 generic-tag-name-18 generic-tag-value-18"
+                                                                        aria-describedby="generic-tag-instructions-18">
+                                                                        <span class="fd-generic-tag__sr-only" id="generic-tag-decorator-18">Value State: Success</span>
+                                                                        <span class="fd-generic-tag__icon sap-icon--message-success" role="presentation" aria-hidden="true" aria-label="success"></span>
+                                                                        <span class="fd-generic-tag__name" id="generic-tag-name-18">Product Cost</span>
+                                                                        <span class="fd-generic-tag__value" id="generic-tag-value-18">3.5M EUR</span>
+                                                                        <span class="fd-generic-tag__sr-only" id="generic-tag-instructions-18">Activate for details</span>
+
+                                                                        <div
+                                                                            class="fd-generic-tag fd-generic-tag--information is-focus"
+                                                                            role="button"
+                                                                            tabindex="0"
+                                                                            aria-disabled="false"
+                                                                            aria-roledescription="Object Tag"
+                                                                            aria-labelledby="generic-tag-decorator-19 generic-tag-name-19 generic-tag-value-19"
+                                                                            aria-describedby="generic-tag-instructions-19">
+                                                                            <span class="fd-generic-tag__sr-only" id="generic-tag-decorator-19">Value State: Information</span>
+                                                                            <span class="fd-generic-tag__icon sap-icon--message-information" role="presentation" aria-hidden="true" aria-label="information"></span>
+                                                                            <span class="fd-generic-tag__name" id="generic-tag-name-19">Product Cost</span>
+                                                                            <span class="fd-generic-tag__value" id="generic-tag-value-19">3.5M EUR</span>
+                                                                            <span class="fd-generic-tag__sr-only" id="generic-tag-instructions-19">Activate for details</span>
+
+                                                                            <div
+                                                                                class="fd-generic-tag fd-generic-tag--warning is-focus"
+                                                                                role="button"
+                                                                                tabindex="0"
+                                                                                aria-roledescription="Object Tag"
+                                                                                aria-disabled="false"
+                                                                                aria-labelledby="generic-tag-decorator-20 generic-tag-name-20 generic-tag-value-20"
+                                                                                aria-describedby="generic-tag-instructions-20">
+                                                                                <span class="fd-generic-tag__sr-only" id="generic-tag-decorator-20">Value State: Warning</span>
+                                                                                <span class="fd-generic-tag__icon sap-icon--message-warning" role="presentation" aria-hidden="true" aria-label="warning"></span>
+                                                                                <span class="fd-generic-tag__name" id="generic-tag-name-20">Product Cost</span>
+                                                                                <span class="fd-generic-tag__value" id="generic-tag-value-20">3.5M EUR</span>
+                                                                                <span class="fd-generic-tag__sr-only" id="generic-tag-instructions-20">Activate for details</span>
+```
+
+## Accessibility
+
+- Use semantic HTML elements where appropriate
+- Include proper ARIA attributes for interactive elements
+- Ensure keyboard navigation support
+- Provide adequate color contrast
+
+## Source
+
+This documentation was automatically generated from: `packages/styles/stories/Components/generic-tag/generic-tag.stories.js`
+
+For the latest updates and interactive examples, see [Storybook](https://sap.github.io/fundamental-styles/).

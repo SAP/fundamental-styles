@@ -31,7 +31,8 @@ try {
         htmlExamples: null,
         componentUseCases: null,
         componentGuidance: null,
-        semanticTags: null
+        semanticTags: null,
+        markdownDocs: new Map()
     };
     console.error('Warning: Failed to load component catalog data.');
 }
@@ -2948,6 +2949,97 @@ Use this when implementing interactive features or adding JavaScript behavior to
                 {
                     type: 'text' as const,
                     text: JSON.stringify(result, null, 2)
+                }
+            ]
+        };
+    }
+);
+
+// ---------------------------------------------------------------------------
+// Tool: get_component_markdown
+// ---------------------------------------------------------------------------
+server.tool(
+    'get_component_markdown',
+    `Get complete markdown documentation for a component, including all HTML examples with modifiers.
+This returns the full auto-generated component documentation from Storybook stories.
+Contains complete HTML examples with all variants, modifiers, and states.
+Use this when you need comprehensive examples or want to see all available variations.`,
+    {
+        component: z.string().describe('Component ID (e.g., "button", "table", "dialog")'),
+        examplesOnly: z.boolean().optional().default(false).describe('Return only HTML examples without frontmatter/description (default: false)')
+    },
+    async ({ component, examplesOnly = false }) => {
+        const doc = data.markdownDocs.get(component);
+
+        if (!doc) {
+            // Try to find similar component names
+            const similar = Array.from(data.markdownDocs.keys())
+                .filter(id => id.includes(component.toLowerCase()) || component.toLowerCase().includes(id))
+                .slice(0, 5);
+
+            return {
+                content: [
+                    {
+                        type: 'text' as const,
+                        text: JSON.stringify(
+                            {
+                                error: `No markdown documentation found for component: ${component}`,
+                                suggestion: similar.length > 0
+                                    ? `Did you mean one of these? ${similar.join(', ')}`
+                                    : `Try list_components to see all available components.`,
+                                availableComponents: similar.length > 0 ? similar : undefined
+                            },
+                            null,
+                            2
+                        )
+                    }
+                ]
+            };
+        }
+
+        if (examplesOnly) {
+            return {
+                content: [
+                    {
+                        type: 'text' as const,
+                        text: JSON.stringify(
+                            {
+                                component: doc.frontmatter.component,
+                                title: doc.frontmatter.title,
+                                totalExamples: doc.examples.length,
+                                examples: doc.examples
+                            },
+                            null,
+                            2
+                        )
+                    }
+                ]
+            };
+        }
+
+        // Return full documentation
+        return {
+            content: [
+                {
+                    type: 'text' as const,
+                    text: JSON.stringify(
+                        {
+                            component: doc.frontmatter.component,
+                            title: doc.frontmatter.title,
+                            selector: doc.frontmatter.selector,
+                            cssFile: doc.frontmatter.cssFile,
+                            category: doc.frontmatter.category,
+                            subcategory: doc.frontmatter.subcategory,
+                            description: doc.frontmatter.description,
+                            tags: doc.frontmatter.tags,
+                            relatedComponents: doc.frontmatter.relatedComponents,
+                            totalExamples: doc.examples.length,
+                            examples: doc.examples,
+                            fullMarkdown: doc.content
+                        },
+                        null,
+                        2
+                    )
                 }
             ]
         };

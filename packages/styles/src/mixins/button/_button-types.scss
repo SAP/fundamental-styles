@@ -31,6 +31,11 @@ $default-button-config: (
 );
 
 $button-types-config: (
+  /**
+   * Emphasized button - Primary action button.
+   * Used to indicate the main/primary action on a screen.
+   * Should be used sparingly - typically only one per page or section.
+   */
   "emphasized": (
     "default": map.merge(
       map.get($default-button-config, "default"),
@@ -60,6 +65,11 @@ $button-types-config: (
     "toggled": map.get($default-button-config, "toggled"),
     "activeToggled": map.get($default-button-config, "activeToggled")
   ),
+  /**
+   * Attention button - Requires user attention.
+   * Used for actions that need special attention but aren't necessarily positive or negative.
+   * Should always be accompanied by descriptive text.
+   */
   "attention": (
     "default": map.merge(
       map.get($default-button-config, "default"),
@@ -102,6 +112,11 @@ $button-types-config: (
       )
     )
   ),
+  /**
+   * Negative button - Destructive or reject actions.
+   * Used for negative semantic actions like "Delete", "Reject", or "Cancel".
+   * Should always be accompanied by text to clarify the destructive action.
+   */
   "negative": (
     "default": map.merge(
       map.get($default-button-config, "default"),
@@ -144,6 +159,11 @@ $button-types-config: (
       )
     )
   ),
+  /**
+   * Positive button - Affirmative or accept actions.
+   * Used for positive semantic actions like "Accept", "Approve", or "Confirm".
+   * Should always be accompanied by text to clarify the action.
+   */
   "positive": (
     "default": map.merge(
       map.get($default-button-config, "default"),
@@ -186,6 +206,11 @@ $button-types-config: (
       )
     )
   ),
+  /**
+   * Transparent button - Secondary actions in toolbars.
+   * Used for negative path actions within headers/footers, and secondary toolbar actions.
+   * Has minimal visual weight with transparent background by default.
+   */
   "transparent": (
     "default": map.merge(
       map.get($default-button-config, "default"),
@@ -213,6 +238,11 @@ $button-types-config: (
     "toggled": map.get($default-button-config, "toggled"),
     "activeToggled": map.get($default-button-config, "activeToggled")
   ),
+  /**
+   * Ghost button - Secondary highlighted actions.
+   * Used when a page has a primary action but you need to highlight a secondary action.
+   * Common in content toolbars where you want visual emphasis without competing with the primary button.
+   */
   "ghost": (
     "default": map.merge(
       map.get($default-button-config, "default"),

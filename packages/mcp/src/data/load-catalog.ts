@@ -12,6 +12,7 @@ import {
     UtilityClassesFile
 } from '../types/component-metadata';
 import { SemanticTagsFile } from '../types/semantic-tags';
+import { loadMarkdownDocs, ComponentMarkdownDoc } from './load-markdown-docs';
 
 export interface ComponentGuidance {
     id: string;
@@ -65,6 +66,7 @@ export interface LoadedCatalog {
     componentUseCases: ComponentUseCasesFile | null;
     componentGuidance: ComponentGuidanceFile | null;
     semanticTags: SemanticTagsFile | null;
+    markdownDocs: Map<string, ComponentMarkdownDoc>;
 }
 
 export function loadCatalog(): LoadedCatalog {
@@ -130,6 +132,9 @@ export function loadCatalog(): LoadedCatalog {
     // Semantic tags
     const semanticTags = readJson<SemanticTagsFile>(resolveDataPath('component-semantic-tags.json'));
 
+    // Markdown documentation
+    const markdownDocs = loadMarkdownDocs();
+
     return {
         version: catalog?.version ?? 'unknown',
         components,
@@ -141,7 +146,8 @@ export function loadCatalog(): LoadedCatalog {
         htmlExamples,
         componentUseCases,
         componentGuidance,
-        semanticTags
+        semanticTags,
+        markdownDocs
     };
 }
 

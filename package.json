@@ -26,8 +26,19 @@
         "node": ">= 22"
     },
     "packageManager": "yarn@4.13.0",
+    "aiDocs": {
+        "format": "markdown",
+        "location": "./docs/components/",
+        "index": "./docs/components/README.md",
+        "schemas": "./docs/schemas/",
+        "examples": "./docs/html-examples.json",
+        "accessibility": "./docs/accessibility.json",
+        "designTokens": "./docs/design-tokens.json",
+        "usage": "See docs/AI_USAGE.md for integration guide"
+    },
     "scripts": {
         "transform-stories": "ts-node stories-transformer.ts",
+        "docs:extract": "node scripts/extract-docs.js",
         "build": "npx nx build workspace-plugins && npx nx run-many --target=build --all",
         "build:prod": "npx nx build workspace-plugins --skip-nx-cache && npx nx run common-css:build --configuration=production --skip-nx-cache && npx nx run styles:build --configuration=production --skip-nx-cache && npx nx run cx:build --configuration=production --skip-nx-cache && npx nx run theming-preview:build --configuration=production --skip-nx-cache && npx nx run mcp:build --skip-nx-cache",
         "build:theming-preview": "npx nx run theming-preview:build",
@@ -43,7 +54,7 @@
         "start:prod": "yarn run storybook:serve:prod",
         "test": "npx vitest --run",
         "test:accessibility": "vitest accessibility --run",
-        "test:update": "npx nx run-many --target=update-storyshots --all",
+        "test:update": "npx nx run-many --target=update-storyshots --all && yarn run docs:extract",
         "storybook": "yarn run storybook:serve",
         "storybook:serve": "storybook dev -p 6006",
         "storybook:serve:prod": "cross-env NODE_ENV=production yarn run storybook:prep && cross-env NODE_ENV=production yarn run start",
@@ -61,7 +72,8 @@
         "generate:utility-classes": "node scripts/generate-utility-classes.js",
         "generate:accessibility": "node scripts/generate-accessibility.js && node scripts/merge-accessibility.js",
         "generate:design-tokens": "node scripts/generate-design-tokens.js",
-        "test:ai-docs": "node scripts/test-ai-documentation.js"
+        "test:ai-docs": "node scripts/test-ai-documentation.js",
+        "validate:docs": "node scripts/validate-docs.js"
     },
     "repository": {
         "type": "git",
@@ -98,6 +110,8 @@
         "@types/react-dom": "18.3.0",
         "@typescript-eslint/eslint-plugin": "7.18.0",
         "@typescript-eslint/parser": "7.18.0",
+        "ajv": "^8.20.0",
+        "ajv-formats": "^3.0.1",
         "autoprefixer": "10.4.21",
         "bundlesize": "0.18.2",
         "chromatic": "^15.3.0",

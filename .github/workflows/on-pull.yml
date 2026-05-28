@@ -30,6 +30,10 @@ jobs:
       - uses: actions/checkout@v6
       - uses: ./.github/actions/nodejs
         name: Install dependencies
+      - name: Generate and validate AI docs
+        run: |
+          yarn run docs:extract
+          yarn run test:ai-docs
       - run: yarn run lint
       - run: yarn run build:prod
       - run: yarn run size
