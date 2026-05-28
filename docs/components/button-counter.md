@@ -9,7 +9,7 @@ tags: []
 dependencies: ["button","counter","icon","tabs"]
 relatedComponents: ["button","counter","icon","tabs"]
 stability: stable
-generatedAt: 2026-05-28T16:47:20.890Z
+generatedAt: 2026-05-28T20:12:00.348Z
 ---
 
 # Components/Counter

@@ -9,7 +9,7 @@ tags: []
 dependencies: ["avatar","card","checkbox","fixed-card-layout","icon","list","numeric-content","object-status","table"]
 relatedComponents: ["avatar","card","checkbox","fixed-card-layout","icon","list","numeric-content","object-status","table"]
 stability: stable
-generatedAt: 2026-05-28T16:47:21.542Z
+generatedAt: 2026-05-28T20:12:00.943Z
 ---
 
 # Layouts/Fixed Card Layout

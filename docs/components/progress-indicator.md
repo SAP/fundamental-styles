@@ -9,7 +9,7 @@ tags: []
 dependencies: ["icon","menu","popover","progress-indicator"]
 relatedComponents: ["icon","menu","popover","progress-indicator"]
 stability: stable
-generatedAt: 2026-05-28T16:47:21.329Z
+generatedAt: 2026-05-28T20:12:00.734Z
 ---
 
 # Components/Progress Indicator

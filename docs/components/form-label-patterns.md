@@ -9,7 +9,7 @@ tags: []
 dependencies: ["bar","button","checkbox","dialog","form-item","form-label","form-message","icon","input","input-group","link","list","menu","popover","radio","title","token","tokenizer"]
 relatedComponents: ["bar","button","checkbox","dialog","form-item","form-label","form-message","icon","input","input-group","link","list","menu","popover","radio","title","token","tokenizer"]
 stability: stable
-generatedAt: 2026-05-28T16:47:21.453Z
+generatedAt: 2026-05-28T20:12:00.860Z
 ---
 
 # Patterns/Multi Input

@@ -9,7 +9,7 @@ tags: []
 dependencies: ["button","icon","link","message-strip"]
 relatedComponents: ["button","icon","link","message-strip"]
 stability: stable
-generatedAt: 2026-05-28T16:47:21.190Z
+generatedAt: 2026-05-28T20:12:00.616Z
 ---
 
 # Components/Message Strip

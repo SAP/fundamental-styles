@@ -9,7 +9,7 @@ tags: ["btp","deprecated","horizon-only"]
 dependencies: ["avatar","button","icon","message-strip","search-field","tool-header"]
 relatedComponents: ["avatar","button","icon","message-strip","search-field","tool-header"]
 stability: deprecated
-generatedAt: 2026-05-28T16:47:21.425Z
+generatedAt: 2026-05-28T20:12:00.816Z
 ---
 
 # BTP/Tool Header

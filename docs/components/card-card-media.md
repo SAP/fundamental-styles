@@ -9,7 +9,7 @@ tags: ["development"]
 dependencies: ["avatar","badge","button","card","icon","link","object-status"]
 relatedComponents: ["avatar","badge","button","card","icon","link","object-status"]
 stability: stable
-generatedAt: 2026-05-28T16:47:21.031Z
+generatedAt: 2026-05-28T20:12:00.475Z
 ---
 
 # Components/Card/Media Card

@@ -9,7 +9,7 @@ tags: []
 dependencies: ["avatar","avatar-group","bar","button","form-group","form-item","form-label","form-layout-grid","icon","input","layout-grid","link","popover","quick-view","title"]
 relatedComponents: ["avatar","avatar-group","bar","button","form-group","form-item","form-label","form-layout-grid","icon","input","layout-grid","link","popover","quick-view","title"]
 stability: stable
-generatedAt: 2026-05-28T16:47:21.108Z
+generatedAt: 2026-05-28T20:12:00.535Z
 ---
 
 # Components/Avatar Group

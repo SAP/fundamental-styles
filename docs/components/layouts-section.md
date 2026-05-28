@@ -9,7 +9,7 @@ tags: ["non-f3"]
 dependencies: ["layout","layout-grid","layout-panel","section"]
 relatedComponents: ["layout","layout-grid","layout-panel","section"]
 stability: stable
-generatedAt: 2026-05-28T16:47:21.416Z
+generatedAt: 2026-05-28T20:12:00.807Z
 ---
 
 # Layouts/Section

@@ -9,7 +9,7 @@ tags: []
 dependencies: ["breadcrumb","icon","link","list","popover"]
 relatedComponents: ["breadcrumb","icon","link","list","popover"]
 stability: stable
-generatedAt: 2026-05-28T16:47:21.026Z
+generatedAt: 2026-05-28T20:12:00.473Z
 ---
 
 # Components/Breadcrumb

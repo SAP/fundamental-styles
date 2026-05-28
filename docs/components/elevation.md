@@ -9,7 +9,7 @@ tags: []
 dependencies: []
 relatedComponents: []
 stability: stable
-generatedAt: 2026-05-28T16:47:21.394Z
+generatedAt: 2026-05-28T20:12:00.789Z
 ---
 
 # Elevation

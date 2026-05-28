@@ -9,7 +9,7 @@ tags: []
 dependencies: ["sap-busy-indicator"]
 relatedComponents: ["sap-busy-indicator"]
 stability: stable
-generatedAt: 2026-05-28T16:47:21.535Z
+generatedAt: 2026-05-28T20:12:00.938Z
 ---
 
 # Patterns/Busy Indicator

@@ -9,7 +9,7 @@ tags: []
 dependencies: ["bar","button","dialog","form-item","form-label","icon","input","input-group","list","popover","radio","title"]
 relatedComponents: ["bar","button","dialog","form-item","form-label","icon","input","input-group","list","popover","radio","title"]
 stability: stable
-generatedAt: 2026-05-28T16:47:21.522Z
+generatedAt: 2026-05-28T20:12:00.928Z
 ---
 
 # Patterns/Combobox Input

@@ -9,7 +9,7 @@ tags: []
 dependencies: ["action-sheet","avatar","bar","button","icon","popover"]
 relatedComponents: ["action-sheet","avatar","bar","button","icon","popover"]
 stability: stable
-generatedAt: 2026-05-28T16:47:21.104Z
+generatedAt: 2026-05-28T20:12:00.531Z
 ---
 
 # Components/Action Sheet

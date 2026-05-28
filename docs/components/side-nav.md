@@ -9,7 +9,7 @@ tags: []
 dependencies: ["button","icon","navigation-list","popover","side-nav"]
 relatedComponents: ["button","icon","navigation-list","popover","side-nav"]
 stability: stable
-generatedAt: 2026-05-28T16:47:21.248Z
+generatedAt: 2026-05-28T20:12:00.667Z
 ---
 
 # Components/Side Navigation

@@ -9,7 +9,7 @@ tags: ["ai","experimental"]
 dependencies: []
 relatedComponents: []
 stability: experimental
-generatedAt: 2026-05-28T16:47:21.300Z
+generatedAt: 2026-05-28T20:12:00.713Z
 ---
 
 # AI/Components/Prompt Input

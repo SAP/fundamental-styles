@@ -9,7 +9,7 @@ tags: []
 dependencies: ["code"]
 relatedComponents: ["code"]
 stability: stable
-generatedAt: 2026-05-28T16:47:20.761Z
+generatedAt: 2026-05-28T20:12:00.248Z
 ---
 
 # Components/Code

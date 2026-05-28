@@ -9,7 +9,7 @@ tags: []
 dependencies: ["bar","button","calendar","dialog","icon","segmented-button","tile"]
 relatedComponents: ["bar","button","calendar","dialog","icon","segmented-button","tile"]
 stability: stable
-generatedAt: 2026-05-28T16:47:20.914Z
+generatedAt: 2026-05-28T20:12:00.364Z
 ---
 
 # Components/Calendar

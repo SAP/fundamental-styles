@@ -9,7 +9,7 @@ tags: []
 dependencies: ["avatar","bar","button","icon","layout-grid","menu","popover","segmented-button"]
 relatedComponents: ["avatar","bar","button","icon","layout-grid","menu","popover","segmented-button"]
 stability: stable
-generatedAt: 2026-05-28T16:47:20.895Z
+generatedAt: 2026-05-28T20:12:00.353Z
 ---
 
 # Components/Popover

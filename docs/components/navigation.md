@@ -9,7 +9,7 @@ tags: ["btp","horizon-only"]
 dependencies: []
 relatedComponents: []
 stability: stable
-generatedAt: 2026-05-28T16:47:21.484Z
+generatedAt: 2026-05-28T20:12:00.893Z
 ---
 
 # BTP/Navigation/Vertical Navigation

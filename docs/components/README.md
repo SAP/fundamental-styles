@@ -2,8 +2,8 @@
 
 This directory contains AI-consumable documentation extracted from Storybook stories.
 
-**Generated:** 2026-05-28T16:47:21.594Z
-**Total Components:** 153
+**Generated:** 2026-05-28T20:12:00.991Z
+**Total Components:** 166
 
 ## Components by Category
 

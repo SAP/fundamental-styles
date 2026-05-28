@@ -9,7 +9,7 @@ tags: []
 dependencies: []
 relatedComponents: []
 stability: stable
-generatedAt: 2026-05-28T16:47:21.101Z
+generatedAt: 2026-05-28T20:12:00.529Z
 ---
 
 # Components/Icons/SAP Icons

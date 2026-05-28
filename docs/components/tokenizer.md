@@ -9,7 +9,7 @@ tags: []
 dependencies: ["input","token","tokenizer"]
 relatedComponents: ["input","token","tokenizer"]
 stability: stable
-generatedAt: 2026-05-28T16:47:20.993Z
+generatedAt: 2026-05-28T20:12:00.439Z
 ---
 
 # Components/Tokenizer

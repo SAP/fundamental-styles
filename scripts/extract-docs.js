@@ -931,12 +931,15 @@ function extractAllDocs() {
  * Generate index file listing all components
  */
 function generateIndexFile(components) {
+    // Count actual markdown files (excluding README)
+    const actualFileCount = fs.readdirSync(OUTPUT_DIR).filter(f => f.endsWith('.md') && f !== 'README.md').length;
+
     let index = `# Component Documentation Index
 
 This directory contains AI-consumable documentation extracted from Storybook stories.
 
 **Generated:** ${new Date().toISOString()}
-**Total Components:** ${components.length}
+**Total Components:** ${actualFileCount}
 
 ## Components by Category
 

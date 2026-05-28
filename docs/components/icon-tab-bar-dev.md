@@ -9,7 +9,7 @@ tags: []
 dependencies: ["button","icon","icon-tab-bar","list","menu","popover"]
 relatedComponents: ["button","icon","icon-tab-bar","list","menu","popover"]
 stability: experimental
-generatedAt: 2026-05-28T16:47:21.516Z
+generatedAt: 2026-05-28T20:12:00.924Z
 ---
 
 # Dev/Drag and Drop Icon Tab Bar

@@ -9,7 +9,7 @@ tags: ["btp","horizon-only"]
 dependencies: ["button","icon"]
 relatedComponents: ["button","icon"]
 stability: stable
-generatedAt: 2026-05-28T16:47:21.370Z
+generatedAt: 2026-05-28T20:12:00.769Z
 ---
 
 # BTP/Button

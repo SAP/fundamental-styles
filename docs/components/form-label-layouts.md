@@ -9,7 +9,7 @@ tags: ["non-f3"]
 dependencies: ["bar","form-label","icon","link","page-footer"]
 relatedComponents: ["bar","form-label","icon","link","page-footer"]
 stability: stable
-generatedAt: 2026-05-28T16:47:21.445Z
+generatedAt: 2026-05-28T20:12:00.854Z
 ---
 
 # Layouts/Page Footer

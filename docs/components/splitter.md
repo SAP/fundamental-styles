@@ -9,7 +9,7 @@ tags: ["btp"]
 dependencies: ["button","icon","splitter"]
 relatedComponents: ["button","icon","splitter"]
 stability: stable
-generatedAt: 2026-05-28T16:47:21.393Z
+generatedAt: 2026-05-28T20:12:00.788Z
 ---
 
 # BTP/Splitter

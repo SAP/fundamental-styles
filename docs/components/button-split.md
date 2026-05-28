@@ -9,7 +9,7 @@ tags: []
 dependencies: ["button","button-split","icon"]
 relatedComponents: ["button","button-split","icon"]
 stability: stable
-generatedAt: 2026-05-28T16:47:20.983Z
+generatedAt: 2026-05-28T20:12:00.429Z
 ---
 
 # Components/Buttons/Button Split

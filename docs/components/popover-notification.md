@@ -9,7 +9,7 @@ tags: []
 dependencies: ["avatar","bar","btp/avatar","button","icon","link","menu","message-strip","notification","object-status","popover","title","toolbar"]
 relatedComponents: ["avatar","bar","button","icon","link","menu","message-strip","notification","object-status","popover","title","toolbar"]
 stability: stable
-generatedAt: 2026-05-28T16:47:21.154Z
+generatedAt: 2026-05-28T20:12:00.592Z
 ---
 
 # Components/Notifications

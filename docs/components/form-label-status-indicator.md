@@ -9,7 +9,7 @@ tags: []
 dependencies: ["form-label","status-indicator"]
 relatedComponents: ["form-label","status-indicator"]
 stability: stable
-generatedAt: 2026-05-28T16:47:21.297Z
+generatedAt: 2026-05-28T20:12:00.710Z
 ---
 
 # Components/Status Indicator

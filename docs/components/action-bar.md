@@ -9,7 +9,7 @@ tags: ["non-f3"]
 dependencies: ["action-bar","button","icon","menu","popover","title"]
 relatedComponents: ["action-bar","button","icon","menu","popover","title"]
 stability: stable
-generatedAt: 2026-05-28T16:47:21.022Z
+generatedAt: 2026-05-28T20:12:00.468Z
 ---
 
 # Components/Action Bar

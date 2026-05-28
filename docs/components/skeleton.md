@@ -9,7 +9,7 @@ tags: []
 dependencies: ["skeleton"]
 relatedComponents: ["skeleton"]
 stability: stable
-generatedAt: 2026-05-28T16:47:20.981Z
+generatedAt: 2026-05-28T20:12:00.427Z
 ---
 
 # Components/Skeleton

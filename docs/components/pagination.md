@@ -9,7 +9,7 @@ tags: ["btp",""]
 dependencies: ["button","form-label","icon","input","list","pagination","popover","select"]
 relatedComponents: ["button","form-label","icon","input","list","pagination","popover","select"]
 stability: stable
-generatedAt: 2026-05-28T16:47:21.049Z
+generatedAt: 2026-05-28T20:12:00.487Z
 ---
 
 # Components/Pagination

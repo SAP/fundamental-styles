@@ -9,7 +9,7 @@ tags: []
 dependencies: ["button","icon","illustrated-message","message-strip"]
 relatedComponents: ["button","icon","illustrated-message","message-strip"]
 stability: stable
-generatedAt: 2026-05-28T16:47:21.337Z
+generatedAt: 2026-05-28T20:12:00.740Z
 ---
 
 # Components/Illustrated Message

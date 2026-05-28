@@ -9,7 +9,7 @@ tags: ["uxc"]
 dependencies: ["bar","button","dialog","icon","icon-tab-bar","input","list","settings","title","toolbar"]
 relatedComponents: ["bar","button","dialog","icon","icon-tab-bar","input","list","title","toolbar"]
 stability: stable
-generatedAt: 2026-05-28T16:47:20.963Z
+generatedAt: 2026-05-28T20:12:00.409Z
 ---
 
 # Components/Settings

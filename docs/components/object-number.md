@@ -9,7 +9,7 @@ tags: []
 dependencies: ["object-number"]
 relatedComponents: ["object-number"]
 stability: stable
-generatedAt: 2026-05-28T16:47:21.200Z
+generatedAt: 2026-05-28T20:12:00.624Z
 ---
 
 # Components/Object Number

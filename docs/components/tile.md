@@ -9,7 +9,7 @@ tags: []
 dependencies: ["badge","button","icon","numeric-content","tile"]
 relatedComponents: ["badge","button","icon","numeric-content","tile"]
 stability: stable
-generatedAt: 2026-05-28T16:47:21.126Z
+generatedAt: 2026-05-28T20:12:00.556Z
 ---
 
 # Components/Generic Tiles

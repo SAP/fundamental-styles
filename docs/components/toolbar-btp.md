@@ -9,7 +9,7 @@ tags: ["btp","horizon-only"]
 dependencies: ["breadcrumb","button","icon","link","segmented-button","title-bar","toolbar"]
 relatedComponents: ["breadcrumb","button","icon","link","segmented-button","title-bar","toolbar"]
 stability: stable
-generatedAt: 2026-05-28T16:47:21.396Z
+generatedAt: 2026-05-28T20:12:00.791Z
 ---
 
 # BTP/Title Bar

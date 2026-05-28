@@ -9,7 +9,7 @@ tags: []
 dependencies: ["icon","object-status"]
 relatedComponents: ["icon","object-status"]
 stability: stable
-generatedAt: 2026-05-28T16:47:21.207Z
+generatedAt: 2026-05-28T20:12:00.630Z
 ---
 
 # Components/Object Status

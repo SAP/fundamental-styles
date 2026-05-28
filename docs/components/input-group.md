@@ -9,7 +9,7 @@ tags: ["cx","theme"]
 dependencies: ["side-nav"]
 relatedComponents: ["side-nav"]
 stability: stable
-generatedAt: 2026-05-28T16:47:21.276Z
+generatedAt: 2026-05-28T20:12:00.691Z
 ---
 
 # Components/Cx Side Navigation

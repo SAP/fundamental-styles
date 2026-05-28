@@ -9,7 +9,7 @@ tags: []
 dependencies: ["avatar","icon"]
 relatedComponents: ["avatar","icon"]
 stability: stable
-generatedAt: 2026-05-28T16:47:20.826Z
+generatedAt: 2026-05-28T20:12:00.301Z
 ---
 
 # Components/Avatar

@@ -9,7 +9,7 @@ tags: []
 dependencies: ["bar","button","icon","link","message-box","title"]
 relatedComponents: ["bar","button","icon","link","message-box","title"]
 stability: stable
-generatedAt: 2026-05-28T16:47:21.090Z
+generatedAt: 2026-05-28T20:12:00.519Z
 ---
 
 # Components/Message Box

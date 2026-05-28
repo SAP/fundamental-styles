@@ -9,7 +9,7 @@ tags: []
 dependencies: ["tool-layout"]
 relatedComponents: ["tool-layout"]
 stability: stable
-generatedAt: 2026-05-28T16:47:21.448Z
+generatedAt: 2026-05-28T20:12:00.856Z
 ---
 
 # Layouts/Tool Layout

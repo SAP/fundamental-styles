@@ -9,7 +9,7 @@ tags: []
 dependencies: ["button","icon","panel","segmented-button","toolbar"]
 relatedComponents: ["button","icon","panel","segmented-button","toolbar"]
 stability: stable
-generatedAt: 2026-05-28T16:47:20.791Z
+generatedAt: 2026-05-28T20:12:00.276Z
 ---
 
 # Components/Panel

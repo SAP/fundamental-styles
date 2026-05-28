@@ -9,7 +9,7 @@ tags: []
 dependencies: ["icon","object-marker"]
 relatedComponents: ["icon","object-marker"]
 stability: stable
-generatedAt: 2026-05-28T16:47:21.196Z
+generatedAt: 2026-05-28T20:12:00.621Z
 ---
 
 # Components/Object Marker

@@ -9,7 +9,7 @@ tags: []
 dependencies: ["icon","menu","micro-process-flow","popover","status-indicator"]
 relatedComponents: ["icon","menu","micro-process-flow","popover","status-indicator"]
 stability: stable
-generatedAt: 2026-05-28T16:47:21.320Z
+generatedAt: 2026-05-28T20:12:00.726Z
 ---
 
 # Components/Micro Process Flow

@@ -9,7 +9,7 @@ tags: ["btp"]
 dependencies: ["button","icon","list","popover","vertical-nav"]
 relatedComponents: ["button","icon","list","popover","vertical-nav"]
 stability: stable
-generatedAt: 2026-05-28T16:47:21.343Z
+generatedAt: 2026-05-28T20:12:00.744Z
 ---
 
 # Components/Vertical Navigation
