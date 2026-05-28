@@ -11,13 +11,15 @@ env:
     IS_HOTFIX: ${{ github.ref == 'refs/heads/tmp_hotfix_branch' }}
     IS_PRERELEASE: ${{ github.event_name == 'push' && github.ref != 'refs/heads/tmp_hotfix_branch' }}
     IS_MANUAL: ${{ contains(github.event.head_commit.message, 'chore(release)') }}
-    NX_CLOUD_ACCESS_TOKEN: ${{ secrets.NX_CLOUD_AUTH_TOKEN }}
-    NX_CLOUD_AUTH_TOKEN: ${{ secrets.NX_CLOUD_AUTH_TOKEN }}
 
 jobs:
     create_release:
         name: Run release
         runs-on: ubuntu-latest
+        environment: ci
+        env:
+            NX_CLOUD_ACCESS_TOKEN: ${{ secrets.NX_CLOUD_AUTH_TOKEN }}
+            NX_CLOUD_AUTH_TOKEN: ${{ secrets.NX_CLOUD_AUTH_TOKEN }}
         permissions:
             contents: write
             id-token: write
@@ -184,6 +186,7 @@ jobs:
     gh_pages:
         name: Github Pages deploy
         runs-on: ubuntu-latest
+        environment: ci
         permissions:
             contents: write
         needs: create_release
