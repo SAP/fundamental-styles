@@ -27,6 +27,17 @@ if (!fs.existsSync(OUTPUT_DIR)) {
 function extractDesignTokens(scssFilePath) {
     if (!fs.existsSync(scssFilePath)) return [];
 
+    // Safety check: skip files larger than 5MB
+    try {
+        const stats = fs.statSync(scssFilePath);
+        if (stats.size > 5 * 1024 * 1024) {
+            console.warn(`⚠️  SCSS file too large (${(stats.size / 1024 / 1024).toFixed(1)}MB), skipping: ${scssFilePath}`);
+            return [];
+        }
+    } catch (error) {
+        return [];
+    }
+
     const content = fs.readFileSync(scssFilePath, 'utf-8');
     const tokens = new Set();
 
@@ -51,6 +62,16 @@ function extractDesignTokens(scssFilePath) {
  */
 function extractJSDocComments(scssFilePath) {
     if (!fs.existsSync(scssFilePath)) return {};
+
+    // Safety check: skip files larger than 5MB
+    try {
+        const stats = fs.statSync(scssFilePath);
+        if (stats.size > 5 * 1024 * 1024) {
+            return {};
+        }
+    } catch (error) {
+        return {};
+    }
 
     const content = fs.readFileSync(scssFilePath, 'utf-8');
     const comments = {};
