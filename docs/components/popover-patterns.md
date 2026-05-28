@@ -9,7 +9,7 @@ tags: []
 dependencies: ["bar","button","checkbox","dialog","form-label","icon","input","input-group","layout-grid","link","list","popover","radio","title","token","tokenizer"]
 relatedComponents: ["bar","button","checkbox","dialog","form-label","icon","input","input-group","layout-grid","link","list","popover","radio","title","token","tokenizer"]
 stability: stable
-generatedAt: 2026-05-28T20:12:00.933Z
+generatedAt: 2026-06-01T19:24:00.406Z
 ---
 
 # Patterns/Multi ComboBox

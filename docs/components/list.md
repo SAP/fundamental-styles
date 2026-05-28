@@ -9,7 +9,7 @@ tags: []
 dependencies: ["avatar","icon","list","object-identifier","object-list","object-marker","object-number","object-status"]
 relatedComponents: ["avatar","icon","list","object-identifier","object-list","object-marker","object-number","object-status"]
 stability: stable
-generatedAt: 2026-05-28T20:12:00.523Z
+generatedAt: 2026-06-01T19:23:59.890Z
 ---
 
 # Components/Object List

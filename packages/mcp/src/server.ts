@@ -6,6 +6,7 @@ import { loadExamples, ComponentExample } from './data/load-examples';
 import { findComponent as findComp, scoreMatch, truncate, enhanceDescription, checkDataQuality, checkTokenQuality, expandQuery, scoreSemanticMatch } from './helpers';
 import { extractChangelog, compareVersions, baseVersion, ChangelogEntry } from './data/changelog-extractor';
 import { suggestDependencies, detectPatterns } from './data/component-dependencies';
+import { getMarkdownCache } from './data/load-markdown-docs';
 import {
     ComponentMetadata,
     PACKAGE_ALIAS_MAP,
@@ -32,7 +33,7 @@ try {
         componentUseCases: null,
         componentGuidance: null,
         semanticTags: null,
-        markdownDocs: new Map()
+        markdownDocs: getMarkdownCache(50)
     };
     console.error('Warning: Failed to load component catalog data.');
 }

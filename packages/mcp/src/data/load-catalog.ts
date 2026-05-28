@@ -12,7 +12,7 @@ import {
     UtilityClassesFile
 } from '../types/component-metadata';
 import { SemanticTagsFile } from '../types/semantic-tags';
-import { loadMarkdownDocs, ComponentMarkdownDoc } from './load-markdown-docs';
+import { getMarkdownCache, type MarkdownDocCache } from './load-markdown-docs';
 
 export interface ComponentGuidance {
     id: string;
@@ -66,7 +66,7 @@ export interface LoadedCatalog {
     componentUseCases: ComponentUseCasesFile | null;
     componentGuidance: ComponentGuidanceFile | null;
     semanticTags: SemanticTagsFile | null;
-    markdownDocs: Map<string, ComponentMarkdownDoc>;
+    markdownDocs: MarkdownDocCache;
 }
 
 export function loadCatalog(): LoadedCatalog {
@@ -132,8 +132,8 @@ export function loadCatalog(): LoadedCatalog {
     // Semantic tags
     const semanticTags = readJson<SemanticTagsFile>(resolveDataPath('component-semantic-tags.json'));
 
-    // Markdown documentation
-    const markdownDocs = loadMarkdownDocs();
+    // Markdown documentation - use lazy-loading cache instead of loading all docs
+    const markdownDocs = getMarkdownCache(50); // Max 50 docs in memory (~5MB instead of ~50MB)
 
     return {
         version: catalog?.version ?? 'unknown',

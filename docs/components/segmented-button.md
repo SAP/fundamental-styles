@@ -9,7 +9,7 @@ tags: []
 dependencies: ["button","icon","message-strip","segmented-button"]
 relatedComponents: ["button","icon","message-strip","segmented-button"]
 stability: stable
-generatedAt: 2026-05-28T20:12:00.527Z
+generatedAt: 2026-06-01T19:23:59.897Z
 ---
 
 # Components/Buttons/Segmented Button

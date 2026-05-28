@@ -110,7 +110,7 @@ function validateFrontmatter(frontmatter, schema) {
 /**
  * Check for required sections in markdown content
  */
-function checkRequiredSections(content, filePath) {
+function checkRequiredSections(content) {
     const issues = [];
     const warnings = [];
 

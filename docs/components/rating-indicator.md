@@ -9,7 +9,7 @@ tags: []
 dependencies: ["icon","rating-indicator"]
 relatedComponents: ["icon","rating-indicator"]
 stability: stable
-generatedAt: 2026-05-28T20:12:00.704Z
+generatedAt: 2026-06-01T19:24:00.107Z
 ---
 
 # Components/Rating Indicator

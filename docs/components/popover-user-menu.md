@@ -9,7 +9,7 @@ tags: ["uxc"]
 dependencies: ["avatar","badge","bar","button","icon","input","input-group","list","menu","navigation-list","notification","panel","popover","shellbar","tabs","title","toolbar","user-menu"]
 relatedComponents: ["avatar","badge","bar","button","icon","input","input-group","list","menu","navigation-list","notification","panel","popover","shellbar","tabs","title","toolbar","user-menu"]
 stability: stable
-generatedAt: 2026-05-28T20:12:00.442Z
+generatedAt: 2026-06-01T19:23:59.780Z
 ---
 
 # Components/User Menu

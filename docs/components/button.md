@@ -9,7 +9,7 @@ tags: []
 dependencies: ["button","button-split","icon","menu","popover","segmented-button"]
 relatedComponents: ["button","button-split","icon","menu","popover","segmented-button"]
 stability: stable
-generatedAt: 2026-05-28T20:12:00.306Z
+generatedAt: 2026-06-01T19:23:59.610Z
 ---
 
 # Components/Buttons/Button

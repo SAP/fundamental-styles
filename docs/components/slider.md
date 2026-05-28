@@ -9,7 +9,7 @@ tags: []
 dependencies: ["slider"]
 relatedComponents: ["slider"]
 stability: stable
-generatedAt: 2026-05-28T20:12:00.334Z
+generatedAt: 2026-06-01T19:23:59.641Z
 ---
 
 # Components/Slider

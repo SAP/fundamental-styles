@@ -9,7 +9,7 @@ tags: []
 dependencies: ["scrollbar"]
 relatedComponents: ["scrollbar"]
 stability: stable
-generatedAt: 2026-05-28T20:12:00.437Z
+generatedAt: 2026-06-01T19:23:59.772Z
 ---
 
 # Components/Scrollbar

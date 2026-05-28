@@ -9,7 +9,7 @@ tags: []
 dependencies: ["link","object-identifier","table"]
 relatedComponents: ["link","object-identifier","table"]
 stability: stable
-generatedAt: 2026-05-28T20:12:00.719Z
+generatedAt: 2026-06-01T19:24:00.130Z
 ---
 
 # Components/Object Identifier

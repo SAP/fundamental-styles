@@ -9,7 +9,7 @@ tags: []
 dependencies: ["button","checkbox","icon","radio","tree"]
 relatedComponents: ["button","checkbox","icon","radio","tree"]
 stability: stable
-generatedAt: 2026-05-28T20:12:00.268Z
+generatedAt: 2026-06-01T19:23:59.562Z
 ---
 
 # Components/Tree

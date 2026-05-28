@@ -9,7 +9,7 @@ tags: []
 dependencies: ["layout-grid"]
 relatedComponents: ["layout-grid"]
 stability: stable
-generatedAt: 2026-05-28T20:12:00.851Z
+generatedAt: 2026-06-01T19:24:00.288Z
 ---
 
 # Layouts/Layout Grid

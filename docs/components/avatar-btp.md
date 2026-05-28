@@ -9,7 +9,7 @@ tags: ["btp","horizon-only"]
 dependencies: ["btp/avatar","icon"]
 relatedComponents: ["icon"]
 stability: stable
-generatedAt: 2026-05-28T20:12:00.768Z
+generatedAt: 2026-06-01T19:24:00.196Z
 ---
 
 # BTP/Avatar

@@ -9,7 +9,7 @@ tags: []
 dependencies: ["avatar","button","feed-input","icon","textarea"]
 relatedComponents: ["avatar","button","feed-input","icon","textarea"]
 stability: stable
-generatedAt: 2026-05-28T20:12:00.481Z
+generatedAt: 2026-06-01T19:23:59.825Z
 ---
 
 # Components/Feed Input

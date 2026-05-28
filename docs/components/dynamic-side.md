@@ -9,7 +9,7 @@ tags: []
 dependencies: ["dynamic-side-content"]
 relatedComponents: ["dynamic-side-content"]
 stability: stable
-generatedAt: 2026-05-28T20:12:00.971Z
+generatedAt: 2026-06-01T19:24:00.467Z
 ---
 
 # Layouts/Dynamic Side Content

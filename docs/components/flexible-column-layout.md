@@ -9,7 +9,7 @@ tags: []
 dependencies: ["button","flexible-column-layout","icon"]
 relatedComponents: ["button","flexible-column-layout","icon"]
 stability: stable
-generatedAt: 2026-05-28T20:12:00.987Z
+generatedAt: 2026-06-01T19:24:00.494Z
 ---
 
 # Layouts/Flexible Column

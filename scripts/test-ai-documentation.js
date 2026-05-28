@@ -119,7 +119,6 @@ function testComponentStructure(components) {
   if (!components || components.length === 0) return;
 
   const requiredFields = ['id', 'name', 'baseClass', 'cssImport', 'category'];
-  const optionalFields = ['description', 'modifiers', 'elements', 'variables', 'tags', 'examples', 'subcategory'];
 
   let validComponents = 0;
   let invalidComponents = 0;

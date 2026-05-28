@@ -9,7 +9,7 @@ tags: []
 dependencies: ["action-sheet","avatar","button","feed-list","icon","link","menu","popover"]
 relatedComponents: ["action-sheet","avatar","button","feed-list","icon","link","menu","popover"]
 stability: stable
-generatedAt: 2026-05-28T20:12:00.435Z
+generatedAt: 2026-06-01T19:23:59.765Z
 ---
 
 # Components/Feed List and Item

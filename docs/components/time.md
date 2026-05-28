@@ -9,7 +9,7 @@ tags: []
 dependencies: ["button","icon","time"]
 relatedComponents: ["button","icon","time"]
 stability: stable
-generatedAt: 2026-05-28T20:12:00.260Z
+generatedAt: 2026-06-01T19:23:59.556Z
 ---
 
 # Components/Time

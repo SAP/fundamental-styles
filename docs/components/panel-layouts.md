@@ -9,7 +9,7 @@ tags: []
 dependencies: ["margins","panel"]
 relatedComponents: ["margins","panel"]
 stability: stable
-generatedAt: 2026-05-28T20:12:00.805Z
+generatedAt: 2026-06-01T19:24:00.247Z
 ---
 
 # Layouts/Margins

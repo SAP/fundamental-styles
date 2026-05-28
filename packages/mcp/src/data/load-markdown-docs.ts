@@ -1,5 +1,9 @@
 import { readdirSync, readFileSync } from 'fs';
 import { resolve, basename } from 'path';
+import { MarkdownDocCache } from './markdown-cache';
+
+// Re-export for convenience
+export { MarkdownDocCache } from './markdown-cache';
 
 export interface ComponentMarkdownDoc {
     /** Component ID (filename without .md) */
@@ -28,6 +32,21 @@ export interface ComponentMarkdownDoc {
         /** Description if available */
         description?: string;
     }>;
+}
+
+// Global cache instance with LRU eviction (max 50 components in memory)
+// This reduces memory from ~50MB (all 168 docs) to ~5MB
+let markdownCache: MarkdownDocCache | null = null;
+
+/**
+ * Get or create the markdown cache instance
+ * @param maxSize Maximum number of docs to keep in cache (default: 50)
+ */
+export function getMarkdownCache(maxSize: number = 50): MarkdownDocCache {
+    if (!markdownCache) {
+        markdownCache = new MarkdownDocCache(maxSize);
+    }
+    return markdownCache;
 }
 
 /** Resolve path to markdown docs directory — works both from source (dev) and from dist (npm). */
@@ -121,8 +140,15 @@ function extractExamples(body: string): Array<{ title: string; html: string; des
     return examples;
 }
 
-/** Load all component markdown documentation files */
+/**
+ * Load all component markdown documentation files
+ * @deprecated Use getMarkdownCache() for lazy loading instead
+ * This function loads all docs eagerly and can use ~50MB of memory.
+ * The new cache-based approach uses ~5MB.
+ */
 export function loadMarkdownDocs(): Map<string, ComponentMarkdownDoc> {
+    console.warn('Warning: loadMarkdownDocs() loads all docs eagerly. Consider using getMarkdownCache() for lazy loading.');
+
     const docs = new Map<string, ComponentMarkdownDoc>();
     const docsDir = resolveMarkdownDocsPath();
 

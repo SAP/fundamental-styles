@@ -9,7 +9,7 @@ tags: []
 dependencies: ["button","icon","title","variant-management"]
 relatedComponents: ["button","icon","title","variant-management"]
 stability: stable
-generatedAt: 2026-05-28T20:12:00.737Z
+generatedAt: 2026-06-01T19:24:00.156Z
 ---
 
 # Components/Variant Management
