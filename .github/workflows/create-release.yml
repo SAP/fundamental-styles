@@ -204,6 +204,12 @@ jobs:
             - name: Run storybook:static build
               run: npx cross-env STORYBOOK_BASE_HREF=fundamental-styles yarn run storybook:static
 
+            - name: Regenerate component catalog with release version
+              run: yarn generate:ai-docs
+
+            - name: Copy component catalog to storybook output
+              run: cp docs/component-catalog.json storybook-static/component-catalog.json
+
             - name: Publish to gh-pages
               uses: JamesIves/github-pages-deploy-action@v4.7.3
               with:
