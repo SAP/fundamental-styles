@@ -33,7 +33,11 @@ const CONFIG = {
   catalogFile: path.join(__dirname, '../docs/component-catalog.json'),
   schemasDir: path.join(__dirname, '../docs/schemas'),
   verbose: process.argv.includes('--verbose'),
+  packageJsonPath: path.join(__dirname, '../packages/styles/package.json'),
 };
+
+const packageJson = JSON.parse(fs.readFileSync(CONFIG.packageJsonPath, 'utf8'));
+const LIBRARY_VERSION = packageJson.version;
 
 // Logging utility
 const log = {
@@ -674,7 +678,7 @@ function updateCatalog(components) {
 
   const catalog = {
     $schema: 'https://json-schema.org/draft/2020-12/schema',
-    version: '0.41.0',
+    version: LIBRARY_VERSION,
     description: 'Machine-readable catalog of Fundamental Library Styles components',
     generatedBy: 'scripts/generate-ai-metadata.js',
     relatedFiles: {
