@@ -14,6 +14,7 @@
       "items": {
         "enum": [
           "fd-form-label--disabled",
+          "fd-form-label--wrap",
           "fd-form-label--unit-description",
           "fd-form-label--required",
           "fd-form-label--colon",

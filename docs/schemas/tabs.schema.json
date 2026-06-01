@@ -2,7 +2,7 @@
   "$schema": "http://json-schema.org/draft-07/schema#",
   "$id": "https://sap.github.io/fundamental-styles/schemas/tabs.json",
   "title": "Tabs Component",
-  "description": "Tabs component",
+  "description": "Tabs organize content into separate views, allowing users to switch between different sections without leaving the page. Use for dividing content into meaningful categories that users can explore one at a time.",
   "type": "object",
   "properties": {
     "baseClass": {
