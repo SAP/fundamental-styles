@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.41.7-rc.10](https://github.com/SAP/fundamental-styles/compare/v0.41.7-rc.9...v0.41.7-rc.10) (2026-06-02)
+
+### Bug Fixes
+
+- **styles:** remove font weight from Card title [ci visual] ([#6318](https://github.com/SAP/fundamental-styles/issues/6318)) ([ae6a8f8](https://github.com/SAP/fundamental-styles/commit/ae6a8f8e036486997c330c147b1e83d9aaee7e0d))
+
 ## [0.41.7-rc.9](https://github.com/SAP/fundamental-styles/compare/v0.41.7-rc.8...v0.41.7-rc.9) (2026-06-02)
 
 ### Features
@@ -6907,9 +6913,9 @@ Co-authored-by: droshev <mladen.droshev@sap.com>
 
 - added a new modifier class to fd-row to achieve even alignment of its elements:fd-row--top in a form.
   Before:
-      <div class="fd-row">
-      After:
-      <div class="fd-row fd-row--top">
+  <div class="fd-row">
+  After:
+  <div class="fd-row fd-row--top">
 
 ### Bug Fixes
 
