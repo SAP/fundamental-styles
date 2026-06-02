@@ -88,16 +88,15 @@ $select: #{$fd-namespace}-select;
   @include fd-reset();
 
   @include fd-flex-vertical-center () {
-    gap: 1rem;
+    gap: 0.5rem;
     justify-content: space-between;
   }
 
   height: 3.25rem; 
   padding-block: 0;
   background: var(--sapShellColor);
-  box-shadow: var(--sapShell_Shadow); 
   padding-inline: var(--fdShellbar_Inline_Padding, 1rem);
-  border: inset 0 -0.0625rem 0 0 var(--sapShell_BorderColor);
+  box-shadow: inset 0 -0.0625rem 0 0 var(--sapShell_BorderColor);
 
   &__branding {
     @include fd-reset();
@@ -161,7 +160,7 @@ $select: #{$fd-namespace}-select;
 
     font-size: var(--sapFontHeader5Size);
     color: var(--fdShellbar_Title_Color);
-    font-family: var(--sapFontSemiboldFamily);
+    font-family: var(--sapFontSemiboldDuplexFamily);
   }
 
   &__subtitle {
@@ -185,16 +184,17 @@ $select: #{$fd-namespace}-select;
     position: relative;
     display: inline-block;
     vertical-align: middle;
-    margin-inline: 0.25rem;
-    margin-block: 0.0625rem;
+    padding-inline: 0.25rem;
+    padding-block: 0.0625rem;
     background-size: contain;
     background-repeat: no-repeat;
 
     > * {
-      width: auto;
+      @include fd-set-width(3.75rem);
+      @include fd-set-height(1.875rem);
+
       display: block;
       line-height: 0;
-      max-height: 2rem;
     }
 
     &--image-replaced {
