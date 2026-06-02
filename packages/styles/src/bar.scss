@@ -55,11 +55,25 @@ $floating-footer: #{$fd-namespace}-bar--floating-footer;
       gap: 0.5rem;
     }
 
-    width: 100%;
-    max-width: 100%;
+    flex: 0 1 auto;
+    min-width: 0;
 
     &--stack-contents-vertically {
       flex-direction: column;
+    }
+
+    &:has(button, input) {
+      min-width: fit-content;
+    }
+
+    &:has(h1, h2, h3, h4, h5, h6) {
+      flex-shrink: 1;
+      min-width: 0;
+    }
+
+    &:only-child {
+      flex: 1 1 100%;
+      width: 100%;
     }
   }
 
@@ -126,7 +140,7 @@ $floating-footer: #{$fd-namespace}-bar--floating-footer;
     --fdBar_Shadow: none;
     --fdBar_Background: var(--sapPageFooter_Background);
     --fdBar_Element_Text_Color: var(--sapPageFooter_TextColor);
-    
+
     border-top: var(--sapGroup_TitleBorderWidth) solid var(--sapPageFooter_BorderColor);
   }
 
