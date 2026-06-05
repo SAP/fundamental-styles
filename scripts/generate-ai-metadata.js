@@ -33,7 +33,11 @@ const CONFIG = {
   catalogFile: path.join(__dirname, '../docs/component-catalog.json'),
   schemasDir: path.join(__dirname, '../docs/schemas'),
   verbose: process.argv.includes('--verbose'),
+  packageJsonPath: path.join(__dirname, '../packages/styles/package.json'),
 };
+
+const packageJson = JSON.parse(fs.readFileSync(CONFIG.packageJsonPath, 'utf8'));
+const LIBRARY_VERSION = packageJson.version;
 
 // Logging utility
 const log = {
@@ -366,14 +370,29 @@ function extractModifiersFromSassMaps(content, baseClass) {
 }
 
 /**
+ * Find the actual stories directory for a component, case-insensitively.
+ * Needed because directory names may be capitalized (e.g. "List") while
+ * component IDs are always lowercase (e.g. "list").
+ */
+function findStoriesDir(componentName) {
+  try {
+    const entries = fs.readdirSync(CONFIG.storiesDir);
+    const match = entries.find(e => e.toLowerCase() === componentName.toLowerCase());
+    return match ? path.join(CONFIG.storiesDir, match) : null;
+  } catch {
+    return null;
+  }
+}
+
+/**
  * Extract modifiers from story HTML files
  */
 function extractModifiersFromStories(componentName, baseClass) {
   const modifiers = new Set();
 
-  // Check component-specific stories folder
-  const storiesPath = path.join(CONFIG.storiesDir, componentName);
-  if (fs.existsSync(storiesPath)) {
+  // Check component-specific stories folder (case-insensitive lookup)
+  const storiesPath = findStoriesDir(componentName);
+  if (storiesPath) {
     extractModifiersFromDirectory(storiesPath, baseClass, modifiers);
   }
 
@@ -425,8 +444,8 @@ function extractModifiersFromDirectory(dirPath, baseClass, modifiers) {
 function extractElementModifiersFromStories(componentName, baseClass) {
   const elementModifiers = new Map(); // element name -> Set of modifier classes
 
-  const storiesPath = path.join(CONFIG.storiesDir, componentName);
-  if (fs.existsSync(storiesPath)) {
+  const storiesPath = findStoriesDir(componentName);
+  if (storiesPath) {
     extractElementModifiersFromDirectory(storiesPath, baseClass, elementModifiers);
   }
 
@@ -674,7 +693,7 @@ function updateCatalog(components) {
 
   const catalog = {
     $schema: 'https://json-schema.org/draft/2020-12/schema',
-    version: '0.41.0',
+    version: LIBRARY_VERSION,
     description: 'Machine-readable catalog of Fundamental Library Styles components',
     generatedBy: 'scripts/generate-ai-metadata.js',
     relatedFiles: {

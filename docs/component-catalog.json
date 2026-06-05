@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "version": "0.41.0",
+  "version": "0.41.7-rc.8",
   "description": "Machine-readable catalog of Fundamental Library Styles components",
   "generatedBy": "scripts/generate-ai-metadata.js",
   "relatedFiles": {
@@ -93,9 +93,7 @@
             "--fdActionBarInlinePadding"
           ],
           "tags": [
-            "non-f3",
-            "a11y",
-            "theme"
+            "non-f3"
           ],
           "examples": [
             "actions",
@@ -176,12 +174,7 @@
             "--fdActionSheet_Item_Padding_Block",
             "--fdActionSheet_Item_Padding_Inline"
           ],
-          "tags": [
-            "a11y",
-            "f3",
-            "theme",
-            "responsive"
-          ],
+          "tags": [],
           "examples": [
             "action-sheet-mobile",
             "default"
@@ -1291,11 +1284,7 @@
             "--fdBusy_Indicator_Dot_Color",
             "--fdBusy_Indicator_Dot_Contrast_Color"
           ],
-          "tags": [
-            "f3",
-            "a11y",
-            "theme"
-          ],
+          "tags": [],
           "examples": [
             "busy-dialog",
             "contrast-mode",
@@ -1540,11 +1529,7 @@
             "menu"
           ],
           "dependencies": [],
-          "tags": [
-            "f3",
-            "a11y",
-            "theme"
-          ],
+          "tags": [],
           "variables": [
             "--fdButton_Clickable_Height",
             "--fdButton_Padding_X",
@@ -2518,12 +2503,7 @@
             "--fdCarousel_Dot_Selected_Background",
             "--fdButton_Focus_Border_Radius"
           ],
-          "tags": [
-            "f3",
-            "a11y",
-            "theme",
-            "development"
-          ],
+          "tags": [],
           "examples": [
             "carousel-backgrounds",
             "carousel-bottom",
@@ -2690,12 +2670,7 @@
           ],
           "elements": [],
           "variables": [],
-          "tags": [
-            "f3",
-            "a11y",
-            "theme",
-            "development"
-          ],
+          "tags": [],
           "examples": [
             "inline-code",
             "primary"
@@ -2739,11 +2714,7 @@
           "variables": [
             "--fdBadge_Border_Color"
           ],
-          "tags": [
-            "f3",
-            "a11y",
-            "development"
-          ],
+          "tags": [],
           "examples": [
             "notifier",
             "paragraph",
@@ -2907,11 +2878,7 @@
             "bar"
           ],
           "dependencies": [],
-          "tags": [
-            "f3",
-            "a11y",
-            "theme"
-          ],
+          "tags": [],
           "variables": [],
           "examples": [
             "default-dialog",
@@ -3305,11 +3272,7 @@
             "--fdButton_Badge_Margin_Inline_Start",
             "--fdButton_Badge_Size_Attention"
           ],
-          "tags": [
-            "f3",
-            "a11y",
-            "theme"
-          ],
+          "tags": [],
           "examples": [
             "disabled",
             "input-growth",
@@ -3436,11 +3399,7 @@
             "--fdFeed_List_Item_Border_Top",
             "--fdFeed_List_Item_Border_Bottom"
           ],
-          "tags": [
-            "f3",
-            "a11y",
-            "theme"
-          ],
+          "tags": [],
           "examples": [
             "borderless",
             "group",
@@ -3566,11 +3525,7 @@
           "variables": [
             "--fdFileUploaderButtonsSpacing"
           ],
-          "tags": [
-            "f3",
-            "a11y",
-            "theme"
-          ],
+          "tags": [],
           "examples": [
             "file-uploader-with-files",
             "primary",
@@ -3762,6 +3717,10 @@
             {
               "class": "fd-form-group--no-border",
               "description": "no-border variant"
+            },
+            {
+              "class": "fd-form-group--wrap",
+              "description": "wrap variant"
             }
           ],
           "elements": [
@@ -3909,6 +3868,10 @@
             {
               "class": "fd-form-label--disabled",
               "description": "disabled variant"
+            },
+            {
+              "class": "fd-form-label--wrap",
+              "description": "wrap variant"
             },
             {
               "class": "fd-form-label--unit-description",
@@ -4583,10 +4546,7 @@
             "--fdIconTabBar_Button_Shell_Focus_Color",
             "--fdIconTabBar_Button_Shell_Background_Color_Selected"
           ],
-          "tags": [
-            "f3",
-            "development"
-          ],
+          "tags": [],
           "examples": [
             "badge",
             "counter",
@@ -5936,12 +5896,7 @@
             "action-sheet"
           ],
           "dependencies": [],
-          "tags": [
-            "f3",
-            "a11y",
-            "theme",
-            "development"
-          ],
+          "tags": [],
           "variables": [
             "--fdButton_Menu_Border_Radius",
             "--fdMenu_Icon_Width",
@@ -6071,11 +6026,7 @@
             "--fdIcon_Font_Size",
             "--fdIcon_Color"
           ],
-          "tags": [
-            "f3",
-            "a11y",
-            "theme"
-          ],
+          "tags": [],
           "examples": [
             "responsive",
             "structure",
@@ -6171,12 +6122,7 @@
             "--fdMessage_Page_Title_Margin_Top",
             "--fdMessage_Page_Title_Margin_Bottom"
           ],
-          "tags": [
-            "f3",
-            "a11y",
-            "theme",
-            "development"
-          ],
+          "tags": [],
           "examples": [
             "buttons",
             "error",
@@ -6270,10 +6216,7 @@
             "--fdMessagePopover_Information_Focus_Outline_Color",
             "--fdMessagePopover_Active_Focus_Outline_Color"
           ],
-          "tags": [
-            "f3",
-            "theme"
-          ],
+          "tags": [],
           "examples": [
             "cozy-message-popover",
             "details-view",
@@ -6507,11 +6450,7 @@
           "modifiers": [],
           "elements": [],
           "variables": [],
-          "tags": [
-            "f3",
-            "a11y",
-            "theme"
-          ],
+          "tags": [],
           "examples": [
             "default-toast"
           ],
@@ -6644,11 +6583,7 @@
             "--fdMicro_Process_Flow_Icon_Color",
             "--fdMicro_Process_Flow_Active_Icon_Color"
           ],
-          "tags": [
-            "f3",
-            "a11y",
-            "theme"
-          ],
+          "tags": [],
           "examples": [
             "default-micro-process-flow",
             "micro-process-flow-custom-width",
@@ -7297,9 +7232,7 @@
             "--fdNotification_Popover_Max_Width",
             "--fdNotification_Title_Offset"
           ],
-          "tags": [
-            "development"
-          ],
+          "tags": [],
           "examples": [
             "banner",
             "notification-group",
@@ -7509,9 +7442,7 @@
             "--fdObjectIdentifier_Font_Size",
             "--fdObjectIdentifier_Font_Weight"
           ],
-          "tags": [
-            "f3"
-          ],
+          "tags": [],
           "examples": [
             "bold-title",
             "medium-size",
@@ -7619,12 +7550,7 @@
             "--fdObject_List_Title_Font_Size",
             "--fdObject_List_Title_Font_Weight"
           ],
-          "tags": [
-            "f3",
-            "a11y",
-            "theme",
-            "development"
-          ],
+          "tags": [],
           "examples": [
             "borderless",
             "navigation",
@@ -7682,11 +7608,7 @@
             }
           ],
           "variables": [],
-          "tags": [
-            "f3",
-            "a11y",
-            "theme"
-          ],
+          "tags": [],
           "examples": [
             "clickable-object-marker",
             "icon-and-text",
@@ -8701,11 +8623,7 @@
             "menu"
           ],
           "dependencies": [],
-          "tags": [
-            "f3",
-            "a11y",
-            "theme"
-          ],
+          "tags": [],
           "modifiers": [
             {
               "class": "fd-popover--visible",
@@ -8892,11 +8810,7 @@
             "--fdButton_Outline_Contrast",
             "--fdButtonPrioritizedBorderColor"
           ],
-          "tags": [
-            "f3",
-            "a11y",
-            "theme"
-          ],
+          "tags": [],
           "examples": [
             "large",
             "medium",
@@ -9041,12 +8955,7 @@
             "--fdProgress_Indicator_Label_Position",
             "--fdProgress_Indicator_Label_Font_Size"
           ],
-          "tags": [
-            "f3",
-            "a11y",
-            "theme",
-            "development"
-          ],
+          "tags": [],
           "examples": [
             "layout",
             "truncation",
@@ -9141,6 +9050,10 @@
             {
               "class": "fd-quick-view--header-with-subheader",
               "description": "header-with-subheader variant"
+            },
+            {
+              "class": "fd-quick-view--wrap",
+              "description": "wrap variant"
             }
           ],
           "elements": [
@@ -9176,11 +9089,7 @@
             }
           ],
           "variables": [],
-          "tags": [
-            "f3",
-            "a11y",
-            "theme"
-          ],
+          "tags": [],
           "examples": [
             "dialog",
             "no-header",
@@ -9412,11 +9321,7 @@
             "--fdRating_Indicator_Disabled_Unselected_Color",
             "--fdRating_Indicator_Display_Only_Selected_Color"
           ],
-          "tags": [
-            "f3",
-            "a11y",
-            "theme"
-          ],
+          "tags": [],
           "examples": [
             "custom-icons",
             "different-values",
@@ -9602,11 +9507,7 @@
             "--fdScrollbar_Thumb_Border_Radius",
             "--fdScrollbar_Thumb_Hover_Color"
           ],
-          "tags": [
-            "f3",
-            "theme",
-            "development"
-          ],
+          "tags": [],
           "examples": [
             "default-example"
           ],
@@ -9816,6 +9717,8 @@
             "--fdButton_Border_Radius_Left",
             "--fdButton_Border_Radius_Right",
             "--fdButton_Segmented_Border_Offset",
+            "--fdButtonBorderColor",
+            "--fdButtonBackgroundColor",
             "--fdButton_Border_Radius_Left_RTL",
             "--fdButton_Border_Radius_Right_RTL",
             "--fdButton_Vertical_Border_Radius_Left",
@@ -10181,7 +10084,6 @@
           ],
           "dependencies": [],
           "tags": [
-            "experimental",
             "uxc"
           ],
           "modifiers": [
@@ -10464,9 +10366,7 @@
           "variables": [
             "--fdSkeletonGradientMiddleColor"
           ],
-          "tags": [
-            "f3"
-          ],
+          "tags": [],
           "examples": [
             "circle",
             "complex",
@@ -10625,10 +10525,7 @@
             "--fdSlider_Range_Focus_Handle_Background",
             "--fdSlider_Range_Focus_Handle_Border"
           ],
-          "tags": [
-            "f3",
-            "theme"
-          ],
+          "tags": [],
           "examples": [
             "mobile-mode",
             "range",
@@ -10924,11 +10821,7 @@
             }
           ],
           "variables": [],
-          "tags": [
-            "f3",
-            "a11y",
-            "theme"
-          ],
+          "tags": [],
           "examples": [
             "fill-values",
             "sizes",
@@ -11889,11 +11782,7 @@
           "variables": [
             "--fdText_Selected_Background_Color"
           ],
-          "tags": [
-            "f3",
-            "a11y",
-            "theme"
-          ],
+          "tags": [],
           "examples": [
             "default-example",
             "expand",
@@ -12265,11 +12154,7 @@
             "--fdTime_Unit_Line_Height",
             "--fdTime_Text_Shadow"
           ],
-          "tags": [
-            "f3",
-            "a11y",
-            "theme"
-          ],
+          "tags": [],
           "examples": [
             "default-cozy-mode",
             "scrollable-mode",
@@ -12387,10 +12272,7 @@
             "--fdTimePickerTickMarginBlock",
             "--fdTimePickerTickMarginInline"
           ],
-          "tags": [
-            "f3",
-            "theme"
-          ],
+          "tags": [],
           "examples": [
             "hours12-cozy",
             "hours24-cozy",
@@ -12532,9 +12414,7 @@
             "--fdTitle_Color",
             "--fdTitle_Font_Family"
           ],
-          "tags": [
-            "f3"
-          ],
+          "tags": [],
           "examples": [
             "elision",
             "levels",
@@ -12627,11 +12507,7 @@
             "--fdToken_Selected_Font_Family",
             "--fdToken_Border_Color_Selected_Focus"
           ],
-          "tags": [
-            "f3",
-            "a11y",
-            "theme"
-          ],
+          "tags": [],
           "examples": [
             "primary"
           ],
@@ -12707,11 +12583,7 @@
             "--fdTokenizer_Indicator_Color",
             "--fdInput_Field_Compact_Min_Width"
           ],
-          "tags": [
-            "f3",
-            "a11y",
-            "theme"
-          ],
+          "tags": [],
           "examples": [
             "cozy-tokenizer",
             "scrollable-tokenizer"
@@ -13036,12 +12908,7 @@
             "--fdToolbar_Transparent_Background",
             "--fdToolbar_Info_Outline_Color"
           ],
-          "tags": [
-            "f3",
-            "a11y",
-            "theme",
-            "design"
-          ],
+          "tags": [],
           "examples": [
             "alignment",
             "overflow",
@@ -13182,12 +13049,7 @@
             "--fdTree_Item_Level_Spacing",
             "--fdTree_Item_Highlight_Color"
           ],
-          "tags": [
-            "f3",
-            "a11y",
-            "theme",
-            "development"
-          ],
+          "tags": [],
           "examples": [
             "borderless",
             "highlight-indicators",
@@ -13306,12 +13168,7 @@
             }
           ],
           "variables": [],
-          "tags": [
-            "f3",
-            "a11y",
-            "theme",
-            "development"
-          ],
+          "tags": [],
           "examples": [
             "edit",
             "no-data",
@@ -13568,11 +13425,7 @@
             "--fdTitle_Font_Size",
             "--fdTitle_Font_Family"
           ],
-          "tags": [
-            "f3",
-            "theme",
-            "development"
-          ],
+          "tags": [],
           "examples": [
             "dirty-label",
             "sizes"
@@ -13950,11 +13803,7 @@
             "--fdWizard_Step_Content_Container_Spacing",
             "--fdWizard_Step_Content_Container_Background_Color"
           ],
-          "tags": [
-            "f3",
-            "theme",
-            "development"
-          ],
+          "tags": [],
           "examples": [
             "customized",
             "default-example",

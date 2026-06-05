@@ -2,7 +2,7 @@
   "$schema": "http://json-schema.org/draft-07/schema#",
   "$id": "https://sap.github.io/fundamental-styles/schemas/form-group.json",
   "title": "Form Group Component",
-  "description": "Form Group component",
+  "description": "Form groups assemble form elements with labels, messages, and help containers. Components like `fd-form__item` with label and control can be used independently when error messages aren't needed.",
   "type": "object",
   "properties": {
     "baseClass": {
@@ -16,7 +16,8 @@
           "fd-form-group--inline",
           "fd-form-group--with-spacing",
           "fd-form-group--no-padding",
-          "fd-form-group--no-border"
+          "fd-form-group--no-border",
+          "fd-form-group--wrap"
         ]
       },
       "description": "Optional modifier classes"

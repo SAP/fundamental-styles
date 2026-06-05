@@ -2,7 +2,7 @@
   "$schema": "http://json-schema.org/draft-07/schema#",
   "$id": "https://sap.github.io/fundamental-styles/schemas/tool-layout.json",
   "title": "Tool Layout Component",
-  "description": "Tool Layout component",
+  "description": "Tool Layout consists of three main areas: Tool Header (always present, top-aligned with global actions and navigation controls), Navigation (side navigation in expanded/snapped variants), and Content (empty container for any content). Complete layout structure for tool-based applications.",
   "type": "object",
   "properties": {
     "baseClass": {

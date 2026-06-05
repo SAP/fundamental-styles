@@ -2,7 +2,7 @@
   "$schema": "http://json-schema.org/draft-07/schema#",
   "$id": "https://sap.github.io/fundamental-styles/schemas/fieldset.json",
   "title": "Fieldset Component",
-  "description": "Fieldset component",
+  "description": "A fieldset gives semantic meaning to a group of elements inside a form (e.g., Billing or Shipping Address). Grouping fields provides styling and accessibility benefits, and is especially important for checkbox groups and radio button groups.",
   "type": "object",
   "properties": {
     "baseClass": {

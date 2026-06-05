@@ -2,7 +2,7 @@
   "$schema": "http://json-schema.org/draft-07/schema#",
   "$id": "https://sap.github.io/fundamental-styles/schemas/form-header.json",
   "title": "Form Header Component",
-  "description": "Form Header component",
+  "description": "Form headers are titles that provide context about a group of input fields. For example, \"Personal Information\" would categorize fields like Name, Address, etc.",
   "type": "object",
   "properties": {
     "baseClass": {

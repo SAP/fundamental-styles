@@ -2,7 +2,7 @@
   "$schema": "http://json-schema.org/draft-07/schema#",
   "$id": "https://sap.github.io/fundamental-styles/schemas/dynamic-page.json",
   "title": "Dynamic Page Component",
-  "description": "Dynamic Page component",
+  "description": "Dynamic Page is foundation for all SAP pages. Generic layout supporting various use cases with variable header and page content. Header is collapsible to help users focus on content while keeping important header info and actions readily available. Uses foundation layout components (dynamic page header, footer toolbar).",
   "type": "object",
   "properties": {
     "baseClass": {
