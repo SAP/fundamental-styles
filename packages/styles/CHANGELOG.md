@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.41.7-rc.16](https://github.com/SAP/fundamental-styles/compare/v0.41.7-rc.15...v0.41.7-rc.16) (2026-06-08)
+
+### Bug Fixes
+
+- **styles:** prevent overflow content from pushing siblings outside container [ci visual] ([#6323](https://github.com/SAP/fundamental-styles/issues/6323)) ([f279bbc](https://github.com/SAP/fundamental-styles/commit/f279bbcd6c9aa11dedff5590e0c4f590977e56c1))
+
 ## [0.41.7-rc.15](https://github.com/SAP/fundamental-styles/compare/v0.41.7-rc.14...v0.41.7-rc.15) (2026-06-08)
 
 ### Bug Fixes
