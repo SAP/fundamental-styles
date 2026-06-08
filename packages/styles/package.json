@@ -24,7 +24,8 @@
         "url": "https://github.com/SAP/fundamental-styles.git"
     },
     "files": [
-        "/dist"
+        "/dist",
+        "/docs"
     ],
     "author": "",
     "license": "Apache-2.0",

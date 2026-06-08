@@ -2,6 +2,37 @@
 
 CSS component library for SAP Design System. Framework-agnostic, works with any web technology.
 
+## For AI Agents
+
+**Component documentation is auto-generated from Storybook stories and available in structured markdown:**
+
+- **📚 Complete Component Index**: [docs/components/README.md](docs/components/README.md) - All 140+ components
+- **📖 Per-Component Docs**: `docs/components/{component-name}.md` - Detailed examples with modifiers
+- **🔧 Integration Guide**: [docs/AI_USAGE.md](docs/AI_USAGE.md) - How to use these docs in AI tools
+- **📋 Schemas**: `docs/schemas/*.json` - Component structure definitions
+- **♿ Accessibility**: `docs/accessibility.json` - ARIA patterns for all components
+
+**When generating HTML/CSS, always reference the component-specific markdown file for:**
+- Complete list of modifiers (`fd-{component}--{modifier}`)
+- State classes (`is-error`, `is-disabled`, etc.)
+- Correct HTML structure and nesting
+- Accessibility requirements (ARIA attributes)
+
+**Example workflow:**
+1. User asks for a button → Read [docs/components/button.md](docs/components/button.md)
+2. Find the right modifier (e.g., `fd-button--emphasized` for primary action)
+3. Generate HTML with proper structure and ARIA attributes
+
+**Using the MCP Server:**
+If you have the `fundamental-styles` MCP server available, use these tools:
+- `get_component_markdown` - Get complete markdown documentation with all HTML examples
+- `get_component_html` - Get specific HTML variants
+- `list_components` - Browse all available components
+- `search_components` - Find components by keyword
+
+**Using Skills:**
+Type `/component-docs` to browse component documentation interactively.
+
 ## Quick Lookup - "I need a..."
 
 | Need | Component | Class |
@@ -304,6 +335,8 @@ Available in `fundamental-styles/dist/theming/`:
 
 ## More Resources
 
+- **🚀 NEW: Auto-generated component docs**: [docs/components/](docs/components/) (140+ components with full examples)
+- **📘 AI Integration Guide**: [docs/AI_USAGE.md](docs/AI_USAGE.md) (how to use these docs in AI tools)
 - **Full component list**: [docs/ai-component-index.md](docs/ai-component-index.md)
 - **Component schemas**: [docs/schemas/*.json](docs/schemas/)
 - **Utility classes**: [docs/utility-classes.json](docs/utility-classes.json)
@@ -312,3 +345,14 @@ Available in `fundamental-styles/dist/theming/`:
 - **Accessibility patterns**: [docs/accessibility.json](docs/accessibility.json) (ARIA for 72 components)
 - **Design tokens**: [docs/design-tokens.json](docs/design-tokens.json) (1,522 CSS variables)
 - **Visual examples**: https://sap.github.io/fundamental-styles/
+
+## Updating AI Documentation
+
+After modifying component stories, regenerate AI docs:
+
+```bash
+npm run docs:extract
+```
+
+This extracts HTML templates and descriptions from all `.stories.js` files and generates updated markdown in `docs/components/`.
+

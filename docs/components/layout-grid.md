@@ -1,0 +1,447 @@
+---
+component: layout-grid
+title: Layouts/Layout Grid
+category: Layouts
+selector: 
+cssFile: 
+sourcePath: packages/styles/stories/Layouts/layout-grid/layout-grid.stories.js
+generatedAt: 2026-05-28T15:51:35.735Z
+---
+
+# Layouts/Layout Grid
+
+The layout grid is made to separate data into both columns and rows. If there is not enough space on the current line of the same row, the item will go to the next line.
+To use the grid, the user must use all of the \
+
+## Basic Usage
+
+```html
+<div class='fd-container'>
+  <div class='fd-row'>
+      <div class='fd-col'>
+          <div class='docs-layout-grid-bg docs-layout-grid-bg--color-1'>12 columns element</div>
+      </div>
+  </div>
+  <div class='fd-row'>
+      <div class='fd-col fd-col--11'>
+          <div class='docs-layout-grid-bg docs-layout-grid-bg--color-2'>11 columns element</div>
+      </div>
+```
+
+## Modifiers
+
+| Class | Description |
+|-------|-------------|
+| `--color-` | Style variant |
+| `--full` | Style variant |
+| `--no-horizontal-gap` | Style variant |
+| `--no-vertical-gap` | Style variant |
+| `--offset-` | Style variant |
+| `--offset-after-` | Style variant |
+
+## Examples
+
+### DifferentSizeColumns
+
+To define the size of that column use the
+
+```html
+<div class='fd-container'>
+  <div class='fd-row'>
+      <div class='fd-col'>
+          <div class='docs-layout-grid-bg docs-layout-grid-bg--color-1'>12 columns element</div>
+      </div>
+  </div>
+  <div class='fd-row'>
+      <div class='fd-col fd-col--11'>
+          <div class='docs-layout-grid-bg docs-layout-grid-bg--color-2'>11 columns element</div>
+      </div>
+      <div class='fd-col fd-col--1'>
+          <div class='docs-layout-grid-bg docs-layout-grid-bg--color-3'>1 column element</div>
+      </div>
+  </div>
+  <div class='fd-row'>
+      <div class='fd-col fd-col--10'>
+          <div class='docs-layout-grid-bg docs-layout-grid-bg--color-4'>10 columns element</div>
+      </div>
+      <div class='fd-col fd-col--2'>
+          <div class='docs-layout-grid-bg docs-layout-grid-bg--color-5'>2 columns element</div>
+      </div>
+  </div>
+  <div class='fd-row'>
+      <div class='fd-col fd-col--9'>
+          <div class='docs-layout-grid-bg docs-layout-grid-bg--color-6'>9 columns element</div>
+      </div>
+      <div class='fd-col fd-col--3'>
+          <div class='docs-layout-grid-bg docs-layout-grid-bg--color-7'>3 columns element</div>
+      </div>
+  </div>
+  <div class='fd-row'>
+      <div class='fd-col fd-col--8'>
+          <div class='docs-layout-grid-bg docs-layout-grid-bg--color-8'>8 columns element</div>
+      </div>
+      <div class='fd-col fd-col--4'>
+          <div class='docs-layout-grid-bg docs-layout-grid-bg--color-9'>4 columns element</div>
+      </div>
+  </div>
+  <div class='fd-row'>
+      <div class='fd-col fd-col--7'>
+          <div class='docs-layout-grid-bg docs-layout-grid-bg--color-10'>7 columns element</div>
+      </div>
+      <div class='fd-col fd-col--5'>
+          <div class='docs-layout-grid-bg docs-layout-grid-bg--color-11'>5 columns element</div>
+      </div>
+  </div>
+  <div class='fd-row'>
+      <div class='fd-col fd-col--6'>
+          <div class='docs-layout-grid-bg docs-layout-grid-bg--color-12'>6 columns element</div>
+      </div>
+      <div class='fd-col fd-col--6'>
+          <div class='docs-layout-grid-bg docs-layout-grid-bg--color-1'>6 columns element</div>
+      </div>
+  </div>
+  <div class='fd-row'>
+      <div class='fd-col fd-col--5'>
+          <div class='docs-layout-grid-bg docs-layout-grid-bg--color-2'>5 columns element</div>
+      </div>
+      <div class='fd-col fd-col--7'>
+          <div class='docs-layout-grid-bg docs-layout-grid-bg--color-3'>7 columns element</div>
+      </div>
+  </div>
+  <div class='fd-row'>
+      <div class='fd-col fd-col--4'>
+          <div class='docs-layout-grid-bg docs-layout-grid-bg--color-4'>4 columns element</div>
+      </div>
+      <div class='fd-col fd-col--8'>
+          <div class='docs-layout-grid-bg docs-layout-grid-bg--color-5'>8 columns element</div>
+      </div>
+  </div>
+  <div class='fd-row'>
+      <div class='fd-col fd-col--3'>
+          <div class='docs-layout-grid-bg docs-layout-grid-bg--color-6'>3 columns element</div>
+      </div>
+      <div class='fd-col fd-col--9'>
+          <div class='docs-layout-grid-bg docs-layout-grid-bg--color-7'>9 columns element</div>
+      </div>
+  </div>
+  <div class='fd-row'>
+      <div class='fd-col fd-col--2'>
+          <div class='docs-layout-grid-bg docs-layout-grid-bg--color-8'>2 columns element</div>
+      </div>
+      <div class='fd-col fd-col--10'>
+          <div class='docs-layout-grid-bg docs-layout-grid-bg--color-9'>10 columns element</div>
+      </div>
+  </div>
+  <div class='fd-row'>
+      <div class='fd-col fd-col--1'>
+          <div class='docs-layout-grid-bg docs-layout-grid-bg--color-10'>1 column element</div>
+      </div>
+      <div class='fd-col fd-col--11'>
+          <div class='docs-layout-grid-bg docs-layout-grid-bg--color-11'>11 columns element</div>
+      </div>
+  </div>
+  <div class='fd-row'>
+      <div class='fd-col'>
+          <div class='docs-layout-grid-bg docs-layout-grid-bg--color-12'>12 columns element</div>
+      </div>
+  </div>
+</div>
+```
+
+### Responsiveness
+
+You can define different column sizes for each inflection point. In this example for extra large the cells are taking 4 columns out of 12
+
+```html
+<div class='fd-container'>
+  <div class='fd-row'>
+    <div class='fd-col fd-col--12 fd-col-md--6 fd-col-lg--4 fd-col-xl--4'>
+        <div class='docs-layout-grid-bg docs-layout-grid-bg--color-1'>(1 cell)</div>
+    </div>
+    <div class='fd-col fd-col--12 fd-col-md--6 fd-col-lg--4 fd-col-xl--4'>
+        <div class='docs-layout-grid-bg docs-layout-grid-bg--color-2'>(2 cell)</div>
+    </div>
+    <div class='fd-col fd-col--12 fd-col-md--6 fd-col-lg--4 fd-col-xl--4'>
+        <div class='docs-layout-grid-bg docs-layout-grid-bg--color-3'>(3 cell)</div>
+    </div>
+    <div class='fd-col fd-col--12 fd-col-md--6 fd-col-lg--4 fd-col-xl--4'>
+        <div class='docs-layout-grid-bg docs-layout-grid-bg--color-4'>(4 cell)</div>
+    </div>
+  </div>
+</div>
+```
+
+### Nesting
+
+Add an extra
+
+```html
+<div class='fd-container'>
+  <div class='fd-row'>
+    <div class='fd-col fd-col--2'>
+        <div class='docs-layout-grid-bg docs-layout-grid-bg--color-1'>
+            2 col (~17%)
+        </div>
+    </div>
+    <div class='fd-col fd-col--10'>
+        <div class='fd-row'">
+            <div class='fd-col fd-col--2'>
+                <div class='docs-layout-grid-bg docs-layout-grid-bg--color-2'>
+                    2 col inner row 1 (~14%)
+                </div>
+            </div>
+            <div class='fd-col fd-col--10'>
+                <div class='fd-row'>
+                    <div class='fd-col fd-col--6'>
+                        <div class='docs-layout-grid-bg docs-layout-grid-bg--color-3'>
+                            6 coll inner row 2 (~34%)
+                        </div>
+                    </div>
+                    <div class='fd-col fd-col--6'>
+                        <div class='fd-row'>
+                            <div class='fd-col fd-col--4'>
+                                <div class='docs-layout-grid-bg docs-layout-grid-bg--color-4'>
+                                    4 coll inner row 3 (~10%)
+                                </div>
+                            </div>
+                            <div class='fd-col fd-col--8'>
+                                <div class='docs-layout-grid-bg docs-layout-grid-bg--color-5'>
+                                    8 coll inner row 3 (~23%)
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+```
+
+### Offset
+
+To add an offset to the left of the column for all sizes use the
+
+```html
+<div class='fd-container'>
+    <div class='fd-row'>
+        <div class='fd-col'>
+            <div class='docs-layout-grid-bg docs-layout-grid-bg--color-1'>
+                12 columns
+            </div>
+        </div>
+    </div>
+    <div class='fd-row'>
+        <div class='fd-col fd-col--6'>
+            <div class='docs-layout-grid-bg docs-layout-grid-bg--color-3'>
+                6 columns
+            </div>
+        </div>
+    </div>
+    <div class='fd-row'>
+        <div class='fd-col fd-col--8 fd-col--offset-4 fd-col-md--6 fd-col-md--offset-2 fd-col-lg--4 fd-col-lg--offset-4 fd-col-lx--3 fd-col-lx--offset-6'>
+            <div class='docs-layout-grid-bg docs-layout-grid-bg--color-5'>
+                Different column-width and offset in different inflection points
+            </div>
+        </div>
+    </div>
+    <div class='fd-row'>
+        <div class='fd-col fd-col--6 fd-col--offset-6'>
+            <div class='docs-layout-grid-bg docs-layout-grid-bg--color-7'>
+                6 columns with 6-column offset
+            </div>
+        </div>
+    </div>
+    <div class='fd-row'>
+        <div class='fd-col fd-col--3 fd-col--offset-after-1 fd-col-md--offset-after-2 fd-col-lg--offset-after-2 fd-col-xl--offset-after-1'>
+            <div class='docs-layout-grid-bg docs-layout-grid-bg--color-8'>
+                2 column-width and offset after in different inflection points
+            </div>
+        </div>
+        <div class='fd-col fd-col--4 fd-col--offset-after-1'>
+            <div class='docs-layout-grid-bg docs-layout-grid-bg--color-9'>
+                4 columns with 2-column offset after
+            </div>
+        </div>
+        <div class='fd-col fd-col--2'>
+            <div class='docs-layout-grid-bg docs-layout-grid-bg--color-12'>
+                2 column element
+            </div>
+        </div>
+    </div>
+</div>
+```
+
+### NoHorizontalGap
+
+To remove gutters between columns apply the
+
+```html
+<div class='fd-container fd-container--no-horizontal-gap'>
+    <div class='fd-row'>
+        <div class='fd-col fd-col--8'>
+            <div class='docs-layout-grid-bg docs-layout-grid-bg--color-1'>
+                8 col no gap
+            </div>
+        </div>
+        <div class='fd-col fd-col--4'>
+            <div class='docs-layout-grid-bg docs-layout-grid-bg--color-2'>
+                4 col no gap
+            </div>
+        </div>
+    </div>
+    <div class='fd-row'>
+        <div class='fd-col fd-col--6'>
+            <div class='docs-layout-grid-bg docs-layout-grid-bg--color-3'>
+                6 col no gap
+            </div>
+        </div>
+        <div class='fd-col fd-col--6'>
+            <div class='docs-layout-grid-bg docs-layout-grid-bg--color-4'>
+                6 col no gap
+            </div>
+        </div>
+    </div>
+    <div class='fd-row'>
+        <div class='fd-col fd-col--4'>
+            <div class='docs-layout-grid-bg docs-layout-grid-bg--color-5'>
+                4 col no gap
+            </div>
+        </div>
+        <div class='fd-col fd-col--8'>
+            <div class='docs-layout-grid-bg docs-layout-grid-bg--color-6'>
+                8 col no gap
+            </div>
+        </div>
+    </div>
+</div>
+```
+
+### NoVerticalGap
+
+To remove gutters between rows apply the
+
+```html
+<div class='fd-container fd-container--no-vertical-gap'>
+    <div class='fd-row'>
+        <div class='fd-col fd-col--8'>
+            <div class='docs-layout-grid-bg docs-layout-grid-bg--color-1'>
+                8 col no gap
+            </div>
+        </div>
+        <div class='fd-col fd-col--4'>
+            <div class='docs-layout-grid-bg docs-layout-grid-bg--color-2'>
+                4 col no gap
+            </div>
+        </div>
+    </div>
+    <div class='fd-row'>
+        <div class='fd-col fd-col--6'>
+            <div class='docs-layout-grid-bg docs-layout-grid-bg--color-3'>
+                6 col no gap
+            </div>
+        </div>
+        <div class='fd-col fd-col--6'>
+            <div class='docs-layout-grid-bg docs-layout-grid-bg--color-4'>
+                6 col no gap
+            </div>
+        </div>
+    </div>
+    <div class='fd-row'>
+        <div class='fd-col fd-col--4'>
+            <div class='docs-layout-grid-bg docs-layout-grid-bg--color-5'>
+                4 col no gap
+            </div>
+        </div>
+        <div class='fd-col fd-col--8'>
+            <div class='docs-layout-grid-bg docs-layout-grid-bg--color-6'>
+                8 col no gap
+            </div>
+        </div>
+    </div>
+</div>
+```
+
+### NoGap
+
+To remove gutters between rows and columns apply both the
+
+```html
+<div class='fd-container fd-container--no-horizontal-gap fd-container--no-vertical-gap'>
+  <div class='fd-row'>
+        <div class='fd-col fd-col--8'>
+            <div class='docs-layout-grid-bg docs-layout-grid-bg--color-1'>
+                8 col no gap
+            </div>
+        </div>
+        <div class='fd-col fd-col--4'>
+            <div class='docs-layout-grid-bg docs-layout-grid-bg--color-2'>
+                4 col no gap
+            </div>
+        </div>
+    </div>
+    <div class='fd-row'>
+        <div class='fd-col fd-col--6'>
+            <div class='docs-layout-grid-bg docs-layout-grid-bg--color-3'>
+                6 col no gap
+            </div>
+        </div>
+        <div class='fd-col fd-col--6'>
+            <div class='docs-layout-grid-bg docs-layout-grid-bg--color-4'>
+                6 col no gap
+            </div>
+        </div>
+    </div>
+    <div class='fd-row'>
+        <div class='fd-col fd-col--4'>
+            <div class='docs-layout-grid-bg docs-layout-grid-bg--color-5'>
+                4 col no gap
+            </div>
+        </div>
+        <div class='fd-col fd-col--8'>
+            <div class='docs-layout-grid-bg docs-layout-grid-bg--color-6'>
+                8 col no gap
+            </div>
+        </div>
+    </div>
+</div>
+```
+
+### AutoAdjusting
+
+To make the column auto adjust and occupy the remaining space of the row use the
+
+```html
+<div class='fd-container'>
+    <div class='fd-row'>
+        <div class='fd-col fd-col--full'>
+            <div class='docs-layout-grid-bg docs-layout-grid-bg--color-1'>
+                Auto adjusting col before 7 col
+            </div>
+        </div>
+        <div class='fd-col fd-col--7'>
+            <div class='docs-layout-grid-bg docs-layout-grid-bg--color-2'>
+                7 col
+            </div>
+        </div>
+        <div class='fd-col fd-col--full'>
+            <div class='docs-layout-grid-bg docs-layout-grid-bg--color-1'>
+                Auto adjusting col after 7 col
+            </div>
+        </div>
+    </div>
+</div>
+```
+
+## Accessibility
+
+- Use semantic HTML elements where appropriate
+- Include proper ARIA attributes for interactive elements
+- Ensure keyboard navigation support
+- Provide adequate color contrast
+
+## Source
+
+This documentation was automatically generated from: `packages/styles/stories/Layouts/layout-grid/layout-grid.stories.js`
+
+For the latest updates and interactive examples, see [Storybook](https://sap.github.io/fundamental-styles/).

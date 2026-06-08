@@ -15,6 +15,7 @@
 import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
+import glob from 'glob';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -23,6 +24,7 @@ const __dirname = path.dirname(__filename);
 const CATALOG_FILE = path.join(__dirname, '../docs/component-catalog.json');
 const RELATIONSHIPS_FILE = path.join(__dirname, '../docs/component-relationships.json');
 const SCHEMAS_DIR = path.join(__dirname, '../docs/schemas');
+const COMPONENTS_DIR = path.join(__dirname, '../docs/components');
 
 // Test results
 let totalTests = 0;
@@ -117,7 +119,6 @@ function testComponentStructure(components) {
   if (!components || components.length === 0) return;
 
   const requiredFields = ['id', 'name', 'baseClass', 'cssImport', 'category'];
-  const optionalFields = ['description', 'modifiers', 'elements', 'variables', 'tags', 'examples', 'subcategory'];
 
   let validComponents = 0;
   let invalidComponents = 0;
@@ -488,7 +489,7 @@ function testDataConsistency(catalog, components) {
 async function runTests() {
   console.log('🧪 AI Documentation Test Suite\n');
 
-  // Test 1: Catalog
+  // Test 1: Catalog (JSON-based docs)
   const catalog = testCatalogExists();
   const components = testCatalogStructure(catalog);
   testComponentStructure(components);
@@ -506,6 +507,9 @@ async function runTests() {
   // Test 5: Consistency
   testDataConsistency(catalog, components);
 
+  // Test 6: Markdown Docs (NEW)
+  testMarkdownDocs();
+
   // Summary
   console.log('\n' + '='.repeat(60));
   console.log(`\n📊 Test Results:`);
@@ -520,6 +524,117 @@ async function runTests() {
   } else {
     console.log('\n✅ All tests passed!');
     process.exit(0);
+  }
+}
+
+/**
+ * Test: Markdown Documentation (NEW)
+ */
+function testMarkdownDocs() {
+  log.section('📝 Markdown Documentation Tests');
+
+  if (!fs.existsSync(COMPONENTS_DIR)) {
+    log.fail('Components directory missing', `Expected: ${COMPONENTS_DIR}`);
+    return;
+  }
+
+  log.pass('Components directory exists');
+
+  const mdFiles = glob.sync(`${COMPONENTS_DIR}/*.md`).filter(f => !f.endsWith('README.md'));
+
+  if (mdFiles.length === 0) {
+    log.fail('No markdown files found in components directory');
+    return;
+  }
+
+  log.pass(`Found ${mdFiles.length} component markdown files`);
+
+  // Test each markdown file
+  let validFiles = 0;
+  let filesWithExamples = 0;
+  let totalExamples = 0;
+
+  for (const file of mdFiles) {
+    const content = fs.readFileSync(file, 'utf-8');
+    const basename = path.basename(file);
+    let isValid = true;
+
+    // Test 1: Has frontmatter
+    if (!content.startsWith('---')) {
+      log.fail(`${basename}: Missing frontmatter`);
+      isValid = false;
+      continue;
+    }
+
+    // Test 2: Has required frontmatter fields
+    const frontmatterMatch = content.match(/^---\n([\s\S]+?)\n---/);
+    if (frontmatterMatch) {
+      const frontmatter = frontmatterMatch[1];
+      const requiredFields = ['component', 'title', 'selector', 'cssFile'];
+
+      for (const field of requiredFields) {
+        if (!frontmatter.includes(`${field}:`)) {
+          log.fail(`${basename}: Missing frontmatter field: ${field}`);
+          isValid = false;
+        }
+      }
+    }
+
+    // Test 3: Has HTML examples
+    const htmlBlocks = [...content.matchAll(/```html\n([\s\S]+?)\n```/g)];
+    if (htmlBlocks.length > 0) {
+      filesWithExamples++;
+      totalExamples += htmlBlocks.length;
+    } else {
+      log.info(`${basename}: No HTML examples found`);
+    }
+
+    // Test 4: HTML examples are valid (basic check)
+    for (const block of htmlBlocks) {
+      const html = block[1];
+      const openTags = [...html.matchAll(/<([a-z][a-z0-9]*)[^>]*>/gi)].map(m => m[1].toLowerCase());
+      const closeTags = [...html.matchAll(/<\/([a-z][a-z0-9]*)>/gi)].map(m => m[1].toLowerCase());
+
+      // Check for common void elements that don't need closing
+      const voidElements = ['img', 'input', 'br', 'hr', 'meta', 'link', 'i'];
+      const nonVoidOpen = openTags.filter(tag => !voidElements.includes(tag));
+
+      // Simple check: should have some closing tags if we have non-void open tags
+      if (nonVoidOpen.length > 0 && closeTags.length === 0) {
+        log.fail(`${basename}: HTML example may be missing closing tags`);
+        isValid = false;
+        break;
+      }
+    }
+
+    if (isValid) {
+      validFiles++;
+    }
+  }
+
+  log.pass(`${validFiles}/${mdFiles.length} markdown files are valid`);
+  log.pass(`${filesWithExamples} files contain HTML examples (${totalExamples} total examples)`);
+
+  // Test README.md
+  const readmePath = path.join(COMPONENTS_DIR, 'README.md');
+  if (fs.existsSync(readmePath)) {
+    log.pass('README.md exists');
+
+    const readme = fs.readFileSync(readmePath, 'utf-8');
+    const countMatch = readme.match(/\*\*Total Components:\*\*\s+(\d+)/);
+
+    if (countMatch) {
+      const documentedCount = parseInt(countMatch[1]);
+      if (documentedCount === mdFiles.length) {
+        log.pass(`README component count matches: ${mdFiles.length}`);
+      } else {
+        log.fail(`README count mismatch: documented ${documentedCount}, actual ${mdFiles.length}`);
+      }
+    } else {
+      log.fail('README missing component count');
+    }
+  } else {
+    log.fail('README.md not found');
   }
 }
 

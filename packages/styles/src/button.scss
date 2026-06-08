@@ -124,6 +124,11 @@ $fd-button-badge-spacing: 0.25rem;
     --fdButton_Badge_Size_Attention: 0.625rem;
   }
 
+  /**
+   * Menu button modifier.
+   * The menu button is the default trigger for dropdown menus.
+   * It's tightly coupled with the Menu component and cannot be used independently.
+   */
   &--menu {
     @include fd-ellipsis();
 
@@ -140,6 +145,11 @@ $fd-button-badge-spacing: 0.25rem;
     }
   }
 
+  /**
+   * Full-width button modifier.
+   * Makes the button expand to fill the full width of its container.
+   * Use for prominent actions in narrow containers or mobile layouts.
+   */
   &--full-width {
     @include fd-flex-center();
 
@@ -147,6 +157,11 @@ $fd-button-badge-spacing: 0.25rem;
     min-width: 100%;
   }
 
+  /**
+   * Text alignment modifiers for buttons with text.
+   * --text-alignment-left: Aligns button text and content to the left
+   * --text-alignment-right: Aligns button text and content to the right
+   */
   &--text-alignment {
     &-left {
       text-align: left;
@@ -159,6 +174,11 @@ $fd-button-badge-spacing: 0.25rem;
     }
   }
 
+  /**
+   * Decisive button modifier.
+   * Sets a minimum width for buttons in decisive actions (OK, Cancel, etc.).
+   * Ensures buttons are large enough for clear user interaction.
+   */
   &--decisive {
     min-width: 4rem;
   }
