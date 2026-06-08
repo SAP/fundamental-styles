@@ -3,6 +3,46 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.41.7-rc.15](https://github.com/SAP/fundamental-styles/compare/v0.41.7-rc.14...v0.41.7-rc.15) (2026-06-08)
+
+### Bug Fixes
+
+- **styles:** address ShellBar review comments [ci visual] ([#6324](https://github.com/SAP/fundamental-styles/issues/6324)) ([e2c01dd](https://github.com/SAP/fundamental-styles/commit/e2c01dd8eda3210dfd2e6b63be529dd8d77befef))
+
+## [0.41.7-rc.14](https://github.com/SAP/fundamental-styles/compare/v0.41.7-rc.13...v0.41.7-rc.14) (2026-06-05)
+
+**Note:** Version bump only for package fundamental-styles
+
+## [0.41.7-rc.13](https://github.com/SAP/fundamental-styles/compare/v0.41.7-rc.12...v0.41.7-rc.13) (2026-06-05)
+
+### Bug Fixes
+
+- expose component catalog ([#6316](https://github.com/SAP/fundamental-styles/issues/6316)) ([5e4043d](https://github.com/SAP/fundamental-styles/commit/5e4043d55392a3212753c21dc6838b5d36e54ed8))
+
+## [0.41.7-rc.12](https://github.com/SAP/fundamental-styles/compare/v0.41.7-rc.11...v0.41.7-rc.12) (2026-06-04)
+
+**Note:** Version bump only for package fundamental-styles
+
+## [0.41.7-rc.11](https://github.com/SAP/fundamental-styles/compare/v0.41.7-rc.10...v0.41.7-rc.11) (2026-06-04)
+
+**Note:** Version bump only for package fundamental-styles
+
+## [0.41.7-rc.10](https://github.com/SAP/fundamental-styles/compare/v0.41.7-rc.9...v0.41.7-rc.10) (2026-06-02)
+
+### Bug Fixes
+
+- **styles:** remove font weight from Card title [ci visual] ([#6318](https://github.com/SAP/fundamental-styles/issues/6318)) ([ae6a8f8](https://github.com/SAP/fundamental-styles/commit/ae6a8f8e036486997c330c147b1e83d9aaee7e0d))
+
+## [0.41.7-rc.9](https://github.com/SAP/fundamental-styles/compare/v0.41.7-rc.8...v0.41.7-rc.9) (2026-06-02)
+
+### Features
+
+- **styles:** add header content area to User Menu [ci visual] ([#6321](https://github.com/SAP/fundamental-styles/issues/6321)) ([38df315](https://github.com/SAP/fundamental-styles/commit/38df3159af475c470477eab1cd0d70b4f7cf59fa))
+
+## [0.41.7-rc.8](https://github.com/SAP/fundamental-styles/compare/v0.41.7-rc.7...v0.41.7-rc.8) (2026-05-29)
+
+**Note:** Version bump only for package fundamental-styles
+
 ## [0.41.7-rc.7](https://github.com/SAP/fundamental-styles/compare/v0.41.7-rc.6...v0.41.7-rc.7) (2026-05-27)
 
 **Note:** Version bump only for package fundamental-styles
@@ -6897,9 +6937,9 @@ Co-authored-by: droshev <mladen.droshev@sap.com>
 
 - added a new modifier class to fd-row to achieve even alignment of its elements:fd-row--top in a form.
   Before:
-  <div class="fd-row">
-  After:
-  <div class="fd-row fd-row--top">
+      <div class="fd-row">
+      After:
+      <div class="fd-row fd-row--top">
 
 ### Bug Fixes
 

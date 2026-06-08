@@ -9,7 +9,7 @@ tags: []
 dependencies: ["button","form-item","form-label","icon","input","step-input"]
 relatedComponents: ["button","form-item","form-label","icon","input","step-input"]
 stability: stable
-generatedAt: 2026-06-01T19:23:59.850Z
+generatedAt: 2026-06-08T17:49:01.891Z
 ---
 
 # Components/Step Input

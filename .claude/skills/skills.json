@@ -8,14 +8,20 @@
   "skills": [
     {
       "name": "scss-style-guide",
-      "path": "scss-style-guide.md",
+      "path": "scss-style-guide/SKILL.md",
       "description": "SCSS/CSS coding standards and patterns for fundamental-styles project",
       "publishable": false
     },
     {
       "name": "accessibility-guide",
-      "path": "accessibility-guide.md",
+      "path": "accessibility-guide/SKILL.md",
       "description": "Accessibility guidelines for writing component examples with proper ARIA, semantic HTML, and WCAG compliance",
+      "publishable": false
+    },
+    {
+      "name": "review-pr",
+      "path": "review-pr/SKILL.md",
+      "description": "Review a pull request in fundamental-styles against SCSS coding standards, accessibility guidelines, BEM conventions, and project patterns. Use when the user says \"review pr\", \"review pull request\", \"check pr\", or provides a PR number to review.",
       "publishable": false
     }
   ]

@@ -9,7 +9,7 @@ tags: []
 dependencies: ["avatar","button","icon","popover","product-switch","shellbar"]
 relatedComponents: ["avatar","button","icon","popover","product-switch","shellbar"]
 stability: stable
-generatedAt: 2026-06-01T19:24:00.044Z
+generatedAt: 2026-06-08T17:49:02.101Z
 ---
 
 # Components/Product Switch

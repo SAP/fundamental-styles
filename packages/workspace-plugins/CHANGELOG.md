@@ -3,6 +3,38 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.41.7-rc.15](https://github.com/SAP/fundamental-styles/compare/v0.41.7-rc.14...v0.41.7-rc.15) (2026-06-08)
+
+**Note:** Version bump only for package workspace-plugins
+
+## [0.41.7-rc.14](https://github.com/SAP/fundamental-styles/compare/v0.41.7-rc.13...v0.41.7-rc.14) (2026-06-05)
+
+**Note:** Version bump only for package workspace-plugins
+
+## [0.41.7-rc.13](https://github.com/SAP/fundamental-styles/compare/v0.41.7-rc.12...v0.41.7-rc.13) (2026-06-05)
+
+**Note:** Version bump only for package workspace-plugins
+
+## [0.41.7-rc.12](https://github.com/SAP/fundamental-styles/compare/v0.41.7-rc.11...v0.41.7-rc.12) (2026-06-04)
+
+**Note:** Version bump only for package workspace-plugins
+
+## [0.41.7-rc.11](https://github.com/SAP/fundamental-styles/compare/v0.41.7-rc.10...v0.41.7-rc.11) (2026-06-04)
+
+**Note:** Version bump only for package workspace-plugins
+
+## [0.41.7-rc.10](https://github.com/SAP/fundamental-styles/compare/v0.41.7-rc.9...v0.41.7-rc.10) (2026-06-02)
+
+**Note:** Version bump only for package workspace-plugins
+
+## [0.41.7-rc.9](https://github.com/SAP/fundamental-styles/compare/v0.41.7-rc.8...v0.41.7-rc.9) (2026-06-02)
+
+**Note:** Version bump only for package workspace-plugins
+
+## [0.41.7-rc.8](https://github.com/SAP/fundamental-styles/compare/v0.41.7-rc.7...v0.41.7-rc.8) (2026-05-29)
+
+**Note:** Version bump only for package workspace-plugins
+
 ## [0.41.7-rc.7](https://github.com/SAP/fundamental-styles/compare/v0.41.7-rc.6...v0.41.7-rc.7) (2026-05-27)
 
 **Note:** Version bump only for package workspace-plugins

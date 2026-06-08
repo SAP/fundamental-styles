@@ -20,6 +20,7 @@ import '../../../src/input-group.scss';
 import '../../../src/panel.scss';
 import '../../../src/toolbar.scss';
 import '../../../src/menu.scss';
+import '../../../src/message-strip.scss';
 
 export default {
   title: 'Components/User Menu',

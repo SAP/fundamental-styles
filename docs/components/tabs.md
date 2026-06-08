@@ -9,7 +9,7 @@ tags: ["deprecated"]
 dependencies: []
 relatedComponents: []
 stability: deprecated
-generatedAt: 2026-06-01T19:23:59.794Z
+generatedAt: 2026-06-08T17:49:01.817Z
 ---
 
 # Deprecated/Components/Tabs

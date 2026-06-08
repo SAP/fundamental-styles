@@ -9,7 +9,7 @@ tags: []
 dependencies: ["bar","button","form-item","form-label","icon","input","page"]
 relatedComponents: ["bar","button","form-item","form-label","icon","input","page"]
 stability: stable
-generatedAt: 2026-06-01T19:24:00.210Z
+generatedAt: 2026-06-08T17:49:02.264Z
 ---
 
 # Layouts/Page

@@ -9,7 +9,7 @@ tags: []
 dependencies: ["message-toast"]
 relatedComponents: ["message-toast"]
 stability: stable
-generatedAt: 2026-06-01T19:24:00.000Z
+generatedAt: 2026-06-08T17:49:02.060Z
 ---
 
 # Components/Message Toast

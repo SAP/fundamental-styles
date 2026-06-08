@@ -9,7 +9,7 @@ tags: ["btp"]
 dependencies: ["avatar","button","form-label","horizontal-navigation","icon","icon-tab-bar","input-group","list","popover","text","title","tool-header"]
 relatedComponents: ["avatar","button","form-label","horizontal-navigation","icon","icon-tab-bar","input-group","list","popover","text","title","tool-header"]
 stability: stable
-generatedAt: 2026-06-01T19:24:00.484Z
+generatedAt: 2026-06-08T17:49:02.499Z
 ---
 
 # Patterns/Horizontal Navigation

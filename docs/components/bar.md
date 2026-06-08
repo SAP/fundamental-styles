@@ -9,7 +9,7 @@ tags: []
 dependencies: ["avatar","bar","button","icon","input","segmented-button","title"]
 relatedComponents: ["avatar","bar","button","icon","input","segmented-button","title"]
 stability: stable
-generatedAt: 2026-06-01T19:23:59.515Z
+generatedAt: 2026-06-08T17:49:01.537Z
 ---
 
 # Components/Bar

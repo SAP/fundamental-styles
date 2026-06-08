@@ -59,6 +59,63 @@ What's the correct way to handle hover states according to our standards?
 
 ---
 
+### 🔍 review-pr
+
+**Purpose:** Comprehensive pull request review against SCSS coding standards, accessibility guidelines, BEM conventions, and project patterns.
+
+**When to use:**
+- Reviewing pull requests before merge
+- Quality checking code changes
+- Ensuring standards compliance
+- Catching common issues early
+- Learning from code review feedback
+
+**What it covers:**
+- Commit and PR format validation (conventional commits)
+- SCSS code style compliance (all style guide rules)
+- Accessibility requirements (ARIA, labels, semantic HTML)
+- Component patterns (BEM, self-contained, design tokens)
+- Documentation completeness
+- Testing and quality checks
+- File organization
+
+**How to use:**
+
+```
+/review-pr 1234
+```
+
+```
+review pr #1234
+```
+
+```
+check pr 1234 for issues
+```
+
+**Review categories:**
+- **Blocking** - Must fix before merge (breaking issues)
+- **Suggestions** - Should fix (best practices)
+- **Nits** - Optional improvements (style preferences)
+
+**Critical checks (flagged as Blocking):**
+- ❌ Cross-component styling (`.fd-card .fd-button { }`)
+- ❌ Missing `@include fd-reset()`
+- ❌ Any `px` units (must use `rem`)
+- ❌ Directional properties (breaks RTL: `margin-left`, `padding-right`, etc.)
+- ❌ Missing ARIA labels or invalid ID references
+- ❌ Required ARIA attributes missing for roles
+
+**Output format:**
+- Structured summary with severity levels
+- File and line number references
+- Specific fix recommendations with code examples
+- Missing tests/docs/breaking changes
+- Positive highlights
+- Clear next steps for contributors
+
+---
+
 ### ♿ accessibility-guide
 
 **Purpose:** Comprehensive accessibility guidelines for writing component examples with proper ARIA, semantic HTML, and WCAG compliance.

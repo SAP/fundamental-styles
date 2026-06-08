@@ -9,7 +9,7 @@ tags: []
 dependencies: ["button","icon","link","message-page"]
 relatedComponents: ["button","icon","link","message-page"]
 stability: stable
-generatedAt: 2026-06-01T19:23:59.960Z
+generatedAt: 2026-06-08T17:49:02.028Z
 ---
 
 # Components/Message Page

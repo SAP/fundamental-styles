@@ -9,7 +9,7 @@ tags: []
 dependencies: ["button","file-uploader","form-item","form-label","info-label","input","message-strip","object-status"]
 relatedComponents: ["button","file-uploader","form-item","form-label","info-label","input","message-strip","object-status"]
 stability: stable
-generatedAt: 2026-06-01T19:23:59.985Z
+generatedAt: 2026-06-08T17:49:02.046Z
 ---
 
 # Components/File Uploader

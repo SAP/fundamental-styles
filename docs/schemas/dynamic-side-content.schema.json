@@ -2,7 +2,7 @@
   "$schema": "http://json-schema.org/draft-07/schema#",
   "$id": "https://sap.github.io/fundamental-styles/schemas/dynamic-side-content.json",
   "title": "Dynamic Side Content Component",
-  "description": "Dynamic Side Content component",
+  "description": "Dynamic Side Content is layout control displaying supplemental content in separate area to support understanding of main content. Two elements: side content section (`.fd-dynamic-side__side`) and main content section (`.fd-dynamic-side__main`). Screen width ratio varies based on available space - side displays left/right or bottom if space limited.",
   "type": "object",
   "properties": {
     "baseClass": {

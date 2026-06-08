@@ -9,7 +9,7 @@ tags: ["ai","experimental"]
 dependencies: []
 relatedComponents: []
 stability: experimental
-generatedAt: 2026-06-01T19:24:00.071Z
+generatedAt: 2026-06-08T17:49:02.132Z
 ---
 
 # AI/Components/Loading Bar

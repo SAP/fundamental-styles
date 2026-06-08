@@ -9,7 +9,7 @@ tags: []
 dependencies: ["avatar","bar","breadcrumb","button","dynamic-page","facet","form-label","icon","link","margins","object-number","object-status","paddings","popover","rating-indicator","tabs","text","title","toolbar"]
 relatedComponents: ["avatar","bar","breadcrumb","button","dynamic-page","facet","form-label","icon","link","margins","object-number","object-status","paddings","popover","rating-indicator","tabs","text","title","toolbar"]
 stability: experimental
-generatedAt: 2026-06-01T19:24:00.202Z
+generatedAt: 2026-06-08T17:49:02.255Z
 ---
 
 # Dev/Facets

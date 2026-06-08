@@ -9,7 +9,7 @@ tags: []
 dependencies: ["form-label","icon","switch"]
 relatedComponents: ["form-label","icon","switch"]
 stability: stable
-generatedAt: 2026-06-01T19:23:59.644Z
+generatedAt: 2026-06-08T17:49:01.690Z
 ---
 
 # Components/Switch

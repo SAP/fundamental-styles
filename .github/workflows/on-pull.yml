@@ -6,9 +6,6 @@ on:
 permissions:
   contents: read
 
-env:
-  NX_CLOUD_ACCESS_TOKEN: ${{ secrets.NX_CLOUD_AUTH_TOKEN }}
-
 concurrency:
   group: ${{ github.workflow }}-${{ github.event.number || github.ref }}
   cancel-in-progress: true
@@ -26,6 +23,9 @@ jobs:
   install-lint-build:
     runs-on: ubuntu-latest
     name: Install, Lint, Build
+    environment: ci
+    env:
+      NX_CLOUD_ACCESS_TOKEN: ${{ secrets.NX_CLOUD_AUTH_TOKEN }}
     steps:
       - uses: actions/checkout@v6
       - uses: ./.github/actions/nodejs
@@ -37,3 +37,18 @@ jobs:
       - run: yarn run lint
       - run: yarn run build:prod
       - run: yarn run size
+
+  check-catalog-freshness:
+    runs-on: ubuntu-latest
+    name: Check component catalog is up to date
+    steps:
+      - uses: actions/checkout@v6
+      - uses: ./.github/actions/nodejs
+        name: Install dependencies
+      - run: yarn generate:ai-metadata
+      - name: Fail if catalog is stale
+        run: |
+          if ! git diff --exit-code docs/component-catalog.json docs/schemas/; then
+            echo "component-catalog.json or schemas are out of date. Run 'yarn generate:ai-metadata' and commit the result."
+            exit 1
+          fi

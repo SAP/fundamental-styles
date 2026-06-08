@@ -9,7 +9,7 @@ tags: []
 dependencies: []
 relatedComponents: []
 stability: stable
-generatedAt: 2026-06-01T19:23:59.872Z
+generatedAt: 2026-06-08T17:49:01.922Z
 ---
 
 # Components/Forms/Checkbox

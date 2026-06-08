@@ -9,7 +9,7 @@ tags: ["btp"]
 dependencies: ["button","dialog","form-item","form-label","form-message","icon","layout-grid","list","popover","search-field","select","toolbar"]
 relatedComponents: ["button","dialog","form-item","form-label","form-message","icon","layout-grid","list","popover","search-field","select","toolbar"]
 stability: stable
-generatedAt: 2026-06-01T19:23:59.977Z
+generatedAt: 2026-06-08T17:49:02.043Z
 ---
 
 # BTP/Search Field

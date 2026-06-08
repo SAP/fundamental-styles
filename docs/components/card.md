@@ -9,7 +9,7 @@ tags: ["development"]
 dependencies: ["avatar","badge","button","card","checkbox","form-label","icon","illustrated-message","link","list","numeric-content","object-status","rating-indicator","table"]
 relatedComponents: ["avatar","badge","button","card","checkbox","form-label","icon","illustrated-message","link","list","numeric-content","object-status","rating-indicator","table"]
 stability: stable
-generatedAt: 2026-06-01T19:23:59.527Z
+generatedAt: 2026-06-08T17:49:01.548Z
 ---
 
 # Components/Card/Card

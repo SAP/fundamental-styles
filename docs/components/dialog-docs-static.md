@@ -9,7 +9,7 @@ tags: []
 dependencies: ["bar","busy-indicator","button","checkbox","dialog","form-label","form-layout-grid","icon","input","input-group","layout-grid","list","popover","select","textarea","title"]
 relatedComponents: ["bar","busy-indicator","button","checkbox","dialog","form-label","form-layout-grid","icon","input","input-group","layout-grid","list","popover","select","textarea","title"]
 stability: stable
-generatedAt: 2026-06-01T19:23:59.615Z
+generatedAt: 2026-06-08T17:49:01.660Z
 ---
 
 # Components/Dialog

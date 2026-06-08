@@ -9,7 +9,7 @@ tags: []
 dependencies: ["button","carousel","icon","link","message-page"]
 relatedComponents: ["button","carousel","icon","link","message-page"]
 stability: stable
-generatedAt: 2026-06-01T19:23:59.710Z
+generatedAt: 2026-06-08T17:49:01.753Z
 ---
 
 # Components/Carousel

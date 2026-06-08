@@ -9,7 +9,7 @@ tags: []
 dependencies: ["bar","button","dialog","icon","input","menu","title"]
 relatedComponents: ["bar","button","dialog","icon","input","menu","title"]
 stability: stable
-generatedAt: 2026-06-01T19:23:59.548Z
+generatedAt: 2026-06-08T17:49:01.574Z
 ---
 
 # Components/Menu

@@ -64,6 +64,16 @@
             }
           }
         },
+        "fd-user-menu__header-content-area": {
+          "type": "object",
+          "description": "header-content-area element",
+          "properties": {
+            "class": {
+              "const": "fd-user-menu__header-content-area",
+              "description": "Element class name"
+            }
+          }
+        },
         "fd-user-menu__user-name": {
           "type": "object",
           "description": "user-name element",

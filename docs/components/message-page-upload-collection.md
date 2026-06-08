@@ -9,7 +9,7 @@ tags: []
 dependencies: ["button","form-group","icon","input","link","list","message-page","object-marker","object-status","upload-collection"]
 relatedComponents: ["button","form-group","icon","input","link","list","message-page","object-marker","object-status","upload-collection"]
 stability: stable
-generatedAt: 2026-06-01T19:24:00.137Z
+generatedAt: 2026-06-08T17:49:02.188Z
 ---
 
 # Components/Upload Collection
