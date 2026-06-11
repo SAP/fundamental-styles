@@ -2,7 +2,7 @@
   "$schema": "http://json-schema.org/draft-07/schema#",
   "$id": "https://sap.github.io/fundamental-styles/schemas/grid-list.json",
   "title": "Grid List Component",
-  "description": "Grid list displays items in a grid format (not rows), ideal for visual content like images, charts, and object cards that benefit from more height. Usually used as an alternative view for lists or tables, focusing on complete items rather than cells.",
+  "description": "Grid List component",
   "type": "object",
   "properties": {
     "baseClass": {

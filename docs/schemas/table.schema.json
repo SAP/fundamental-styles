@@ -2,7 +2,7 @@
   "$schema": "http://json-schema.org/draft-07/schema#",
   "$id": "https://sap.github.io/fundamental-styles/schemas/table.json",
   "title": "Table Component",
-  "description": "Structured data table for displaying and interacting with tabular data",
+  "description": "A table contains a set of line items and usually comprises rows (with each row showing one line item) and columns. Line items can contain data of any kind, but also interactive elements, for example, for editing the data, navigating, or triggering actions relating to the line item.",
   "type": "object",
   "properties": {
     "baseClass": {

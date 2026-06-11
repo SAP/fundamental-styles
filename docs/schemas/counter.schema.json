@@ -2,7 +2,7 @@
   "$schema": "http://json-schema.org/draft-07/schema#",
   "$id": "https://sap.github.io/fundamental-styles/schemas/counter.json",
   "title": "Counter Component",
-  "description": "Counters display numerical values with optional indicators (e.g., \"5 new messages\"). Typically used in navigation items, cards, or list headers to show counts, notifications, or status summaries.",
+  "description": "Counter component",
   "type": "object",
   "properties": {
     "baseClass": {

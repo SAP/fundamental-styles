@@ -2,7 +2,7 @@
   "$schema": "http://json-schema.org/draft-07/schema#",
   "$id": "https://sap.github.io/fundamental-styles/schemas/form-item.json",
   "title": "Form Item Component",
-  "description": "Container for individual form field with label and input",
+  "description": "Form Item component",
   "type": "object",
   "properties": {
     "baseClass": {

@@ -2,7 +2,7 @@
   "$schema": "http://json-schema.org/draft-07/schema#",
   "$id": "https://sap.github.io/fundamental-styles/schemas/message-strip.json",
   "title": "Message Strip Component",
-  "description": "Inline informational message for contextual feedback",
+  "description": "Message Strip is a component that enables the embedding of application-related messages in the application. They are useed to draw the user’s attention to information that is important in the context of the page content. This could be a warning or a change of state, that would be easy to miss it.",
   "type": "object",
   "properties": {
     "baseClass": {

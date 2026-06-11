@@ -2,7 +2,7 @@
   "$schema": "http://json-schema.org/draft-07/schema#",
   "$id": "https://sap.github.io/fundamental-styles/schemas/card.json",
   "title": "Card Component",
-  "description": "Content card container for grouping related information",
+  "description": "The Card is a container that consists of a <b>Header</b>, <b>Extended Header</b>, <b>Numeric Content</b>, <b>Content</b> and <b>Footer area</b>. ",
   "type": "object",
   "properties": {
     "baseClass": {

@@ -2,7 +2,7 @@
   "$schema": "http://json-schema.org/draft-07/schema#",
   "$id": "https://sap.github.io/fundamental-styles/schemas/avatar.json",
   "title": "Avatar Component",
-  "description": "User profile picture or initials display",
+  "description": "The avatar control is used for presenting various images, including user profiles, user initials, placeholder images, icons, or business-related images like product pictures.",
   "type": "object",
   "properties": {
     "baseClass": {

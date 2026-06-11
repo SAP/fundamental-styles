@@ -2,7 +2,7 @@
   "$schema": "http://json-schema.org/draft-07/schema#",
   "$id": "https://sap.github.io/fundamental-styles/schemas/tile.json",
   "title": "Tile Component",
-  "description": "Tiles display summarized information or entry points to applications, pages, or actions. Use in home pages, launchpads, or dashboards to present options in a grid layout. Can include icons, titles, subtitles, and quick actions.",
+  "description": "Tile component",
   "type": "object",
   "properties": {
     "baseClass": {

@@ -2,7 +2,7 @@
   "$schema": "http://json-schema.org/draft-07/schema#",
   "$id": "https://sap.github.io/fundamental-styles/schemas/select.json",
   "title": "Select Component",
-  "description": "Dropdown selection control for choosing one option from many",
+  "description": "The select component is commonly used to enable users to select an item from a predefined list. It should be used when there are less than 12 items to choose from.",
   "type": "object",
   "properties": {
     "baseClass": {
