@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "version": "0.41.7-rc.8",
+  "version": "0.41.7-rc.14",
   "description": "Machine-readable catalog of Fundamental Library Styles components",
   "generatedBy": "scripts/generate-ai-metadata.js",
   "relatedFiles": {
@@ -2284,7 +2284,6 @@
             "--fdCard_Footer_Border_Top",
             "--fdCard_Footer_Actions_Item_Spacing",
             "--fdCard_Title_Font_Size",
-            "--fdCard_Title_Font_Weight",
             "--fdCard_Counter_Margin",
             "--fdObjectStatus_Inverted_Border_Radius",
             "--fdObjectStatus_Inverted_Padding_Block",
@@ -13237,6 +13236,11 @@
             {
               "class": "fd-user-menu__subheader",
               "description": "subheader element",
+              "modifiers": []
+            },
+            {
+              "class": "fd-user-menu__header-content-area",
+              "description": "header-content-area element",
               "modifiers": []
             },
             {
