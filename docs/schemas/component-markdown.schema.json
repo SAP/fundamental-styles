@@ -1,0 +1,81 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://sap.github.io/fundamental-styles/schemas/component-markdown.schema.json",
+  "title": "Component Markdown Schema",
+  "description": "JSON Schema for validating component markdown frontmatter in fundamental-styles",
+  "type": "object",
+  "required": [
+    "component",
+    "title",
+    "category",
+    "selector",
+    "cssFile",
+    "sourcePath",
+    "generatedAt"
+  ],
+  "properties": {
+    "component": {
+      "type": "string",
+      "description": "Component identifier (typically the fd- class name)",
+      "pattern": "^fd-[a-z][a-z0-9-]*$"
+    },
+    "title": {
+      "type": "string",
+      "description": "Human-readable component title",
+      "minLength": 1
+    },
+    "category": {
+      "type": "string",
+      "description": "Component category (Components, BTP, Patterns, AI, Layouts, etc.)",
+      "enum": [
+        "AI",
+        "BTP",
+        "Components",
+        "Deprecated",
+        "Layouts",
+        "Patterns",
+        "Visuals",
+        "common-css",
+        "cx"
+      ]
+    },
+    "selector": {
+      "type": "string",
+      "description": "CSS selector for the component",
+      "pattern": "^fd-[a-z][a-z0-9-]*$"
+    },
+    "cssFile": {
+      "type": "string",
+      "description": "CSS file name for the component",
+      "pattern": "^[a-z][a-z0-9-]*\\.css$"
+    },
+    "sourcePath": {
+      "type": "string",
+      "description": "Path to the source story file",
+      "pattern": "^packages/.*\\.stories\\.js$"
+    },
+    "tags": {
+      "type": "array",
+      "description": "Tags for the component (from Storybook)",
+      "items": {
+        "type": "string"
+      },
+      "uniqueItems": true
+    },
+    "dependencies": {
+      "type": "array",
+      "description": "CSS dependencies required by this component",
+      "items": {
+        "type": "string",
+        "pattern": "^[a-z][a-z0-9-]*$"
+      },
+      "uniqueItems": true
+    },
+    "generatedAt": {
+      "type": "string",
+      "description": "Timestamp when the documentation was generated",
+      "format": "date-time"
+    }
+  },
+  "additionalProperties": false
+}

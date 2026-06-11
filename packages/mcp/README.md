@@ -97,6 +97,7 @@ The server communicates over **stdio** using the MCP JSON-RPC protocol.
 | `get_component_guidance` | Get component usage guidance - when to use, when to avoid, best practices |
 | `get_css_classes` | Full BEM class hierarchy — block, elements, modifiers, states, variables |
 | `get_component_html` | Working HTML examples from 484 story files |
+| `get_component_markdown` | Complete markdown docs with all HTML examples and variants |
 | `get_design_tokens` | Search 1500+ SAP CSS custom properties |
 | `get_accessibility_guide` | ARIA roles, attributes, keyboard patterns per component |
 | `get_utility_classes` | Browse margin, padding, flex, typography helper classes |
@@ -117,6 +118,12 @@ The server communicates over **stdio** using the MCP JSON-RPC protocol.
 
 "Show me HTML for a compact table"
   → get_component_html with component "table", variant "compact"
+
+"Show me all button examples with modifiers"
+  → get_component_markdown with component "button"
+
+"Get just the HTML examples for input fields"
+  → get_component_markdown with component "input", examplesOnly: true
 
 "What broke between 0.40.0 and 0.41.0?"
   → get_migration_guide with from_version "0.40.0", to_version "0.41.0", type "breaking"

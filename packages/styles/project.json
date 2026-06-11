@@ -14,6 +14,16 @@
                     "packages/styles/*.md",
                     {
                         "glob": "**/*",
+                        "input": "docs/components",
+                        "output": "docs/components"
+                    },
+                    {
+                        "glob": "AI_USAGE.md",
+                        "input": "docs",
+                        "output": "docs"
+                    },
+                    {
+                        "glob": "**/*",
                         "input": "packages/styles/src/images",
                         "output": "dist/images"
                     }

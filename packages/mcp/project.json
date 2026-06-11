@@ -29,6 +29,11 @@
                         "output": "data/schemas"
                     },
                     {
+                        "input": "docs/components",
+                        "glob": "*.md",
+                        "output": "data/components"
+                    },
+                    {
                         "input": "packages/styles/stories",
                         "glob": "**/*.example.html",
                         "output": "data/examples"

@@ -100,6 +100,15 @@
       "tags": ["density", "sizing", "responsive", "cozy", "compact", "condensed"],
       "keywords": ["content-density", "cozy", "compact", "condensed", "is-compact", "is-cozy", "is-condensed", "touch-target", "rem", "spacing", "device-specific", "mobile", "desktop", "responsive"],
       "priority": "high"
+    },
+    {
+      "id": "component-docs",
+      "name": "Component Documentation Browser",
+      "description": "Browse complete component documentation with all HTML examples from auto-generated markdown files (140+ components)",
+      "file": "component-docs/SKILL.md",
+      "tags": ["components", "documentation", "examples", "html"],
+      "keywords": ["component-examples", "html", "markdown", "documentation", "code-examples", "modifiers", "variants", "storybook"],
+      "priority": "high"
     }
   ]
 }
