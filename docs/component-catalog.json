@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "version": "0.41.7",
+  "version": "0.41.8-rc.0",
   "description": "Machine-readable catalog of Fundamental Library Styles components",
   "generatedBy": "scripts/generate-ai-metadata.js",
   "relatedFiles": {
