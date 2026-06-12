@@ -113,7 +113,9 @@ jobs:
                   npx lerna version ${{ steps.bumpVersion.outputs.newVersion }} --yes --force-publish --message="chore(release): publish %v [ci skip]" --no-push
 
             - name: Generate AI Documentation
-              run: yarn run docs:extract
+              run: |
+                  yarn run docs:extract
+                  yarn generate:ai-metadata
 
             - run: yarn run lint
             - run: yarn run build:prod
