@@ -2,7 +2,7 @@
   "$schema": "http://json-schema.org/draft-07/schema#",
   "$id": "https://sap.github.io/fundamental-styles/schemas/input-group.json",
   "title": "Input Group Component",
-  "description": "Input Group component",
+  "description": "Input Group combines form inputs with add-ons (text, icons, or buttons) to help users understand the information being entered. Add-ons can be positioned before, after, or on both sides of the input field. Supports validation states (success, error, warning, information).",
   "type": "object",
   "properties": {
     "baseClass": {

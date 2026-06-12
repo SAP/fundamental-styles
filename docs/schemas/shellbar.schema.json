@@ -2,7 +2,7 @@
   "$schema": "http://json-schema.org/draft-07/schema#",
   "$id": "https://sap.github.io/fundamental-styles/schemas/shellbar.json",
   "title": "Shellbar Component",
-  "description": "The Shell Bar serves as the topmost section across all SAP products, providing users with a way to orient themselves within the diverse SAP product landscape. It is always visible and offers relevant information about the current context, including product and brand details, while also providing access to specific functions such as search, notifications, user profiles, and more.",
+  "description": "Application header bar with branding, navigation, and actions",
   "type": "object",
   "properties": {
     "baseClass": {

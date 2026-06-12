@@ -2,7 +2,7 @@
   "$schema": "http://json-schema.org/draft-07/schema#",
   "$id": "https://sap.github.io/fundamental-styles/schemas/section.json",
   "title": "Section Component",
-  "description": "Section component",
+  "description": "Sections group related content on a page with optional headers and visual separation. Use to organize page content into logical, scannable blocks. Can be collapsible to help users focus on relevant information.",
   "type": "object",
   "properties": {
     "baseClass": {

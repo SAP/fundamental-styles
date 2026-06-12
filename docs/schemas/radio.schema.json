@@ -1,8 +1,8 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
   "$id": "https://sap.github.io/fundamental-styles/schemas/radio.json",
-  "title": "Radio Component",
-  "description": "Radio component",
+  "title": "Radio Button Component",
+  "description": "Single selection control for choosing one option from a group",
   "type": "object",
   "properties": {
     "baseClass": {

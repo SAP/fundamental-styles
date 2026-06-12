@@ -2,7 +2,7 @@
   "$schema": "http://json-schema.org/draft-07/schema#",
   "$id": "https://sap.github.io/fundamental-styles/schemas/popover.json",
   "title": "Popover Component",
-  "description": "The popover displays additional information for an object in a compact way without leaving the page. The component contains two essential elements: the control (trigger) and body (content). It can also be paired with a **Menu**, whereas the menu button would trigger a dropdown (body).",
+  "description": "Contextual popup for displaying supplementary information",
   "type": "object",
   "properties": {
     "baseClass": {

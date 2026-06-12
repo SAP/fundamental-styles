@@ -2,7 +2,7 @@
   "$schema": "http://json-schema.org/draft-07/schema#",
   "$id": "https://sap.github.io/fundamental-styles/schemas/button.json",
   "title": "Button Component",
-  "description": "The button component is used to trigger an action. All buttons are characterized by the \\",
+  "description": "Action trigger with multiple styles for different semantic meanings",
   "type": "object",
   "properties": {
     "baseClass": {

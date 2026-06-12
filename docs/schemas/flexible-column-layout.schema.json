@@ -2,7 +2,7 @@
   "$schema": "http://json-schema.org/draft-07/schema#",
   "$id": "https://sap.github.io/fundamental-styles/schemas/flexible-column-layout.json",
   "title": "Flexible Column Layout Component",
-  "description": "Flexible Column Layout component",
+  "description": "Flexible Column Layout is layout control displaying multiple floorplans on single page. Enables faster, more fluid navigation between floorplans than page-by-page. Offers layouts with up to 3 columns (1, 2, 3). Users can resize columns, switch layouts, view rightmost column in full screen. Responsive for desktop and mobile.",
   "type": "object",
   "properties": {
     "baseClass": {

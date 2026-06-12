@@ -2,7 +2,7 @@
   "$schema": "http://json-schema.org/draft-07/schema#",
   "$id": "https://sap.github.io/fundamental-styles/schemas/textarea.json",
   "title": "Textarea Component",
-  "description": "Textarea component",
+  "description": "Multi-line text input for collecting long-form content",
   "type": "object",
   "properties": {
     "baseClass": {
