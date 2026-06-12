@@ -33,6 +33,7 @@ jobs:
       - name: Generate and validate AI docs
         run: |
           yarn run docs:extract
+          yarn generate:ai-metadata
           yarn run test:ai-docs
       - run: yarn run lint
       - run: yarn run build:prod
