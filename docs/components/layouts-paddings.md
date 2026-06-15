@@ -9,7 +9,6 @@ tags: []
 dependencies: ["paddings"]
 relatedComponents: ["paddings"]
 stability: stable
-generatedAt: 2026-06-08T17:49:02.311Z
 ---
 
 # Layouts/Paddings

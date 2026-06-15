@@ -9,7 +9,6 @@ tags: []
 dependencies: ["button","dialog","form-item","form-label","form-message","icon","layout-grid","list","popover","select","toolbar"]
 relatedComponents: ["button","dialog","form-item","form-label","form-message","icon","layout-grid","list","popover","select","toolbar"]
 stability: stable
-generatedAt: 2026-06-08T17:49:01.671Z
 ---
 
 # Components/Select

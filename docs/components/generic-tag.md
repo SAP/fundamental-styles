@@ -9,7 +9,6 @@ tags: []
 dependencies: ["generic-tag","icon"]
 relatedComponents: ["generic-tag","icon"]
 stability: stable
-generatedAt: 2026-06-08T17:49:01.927Z
 ---
 
 # Components/Generic Tag

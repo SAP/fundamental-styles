@@ -9,7 +9,6 @@ tags: []
 dependencies: ["bar","button","calendar","dialog","icon","segmented-button","tile"]
 relatedComponents: ["bar","button","calendar","dialog","icon","segmented-button","tile"]
 stability: stable
-generatedAt: 2026-06-08T17:49:01.724Z
 ---
 
 # Components/Calendar

@@ -9,7 +9,6 @@ tags: []
 dependencies: ["avatar","badge","button","card","checkbox","icon","link","list","numeric-content","object-status","resizable-card-layout","table"]
 relatedComponents: ["avatar","badge","button","card","checkbox","icon","link","list","numeric-content","object-status","resizable-card-layout","table"]
 stability: stable
-generatedAt: 2026-06-08T17:49:02.491Z
 ---
 
 # Layouts/Resizable Card Layout

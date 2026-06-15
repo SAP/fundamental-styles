@@ -9,7 +9,6 @@ tags: ["a11y"]
 dependencies: ["off-screen","text"]
 relatedComponents: ["off-screen","text"]
 stability: experimental
-generatedAt: 2026-06-08T17:49:02.308Z
 ---
 
 # Dev/Off Screen

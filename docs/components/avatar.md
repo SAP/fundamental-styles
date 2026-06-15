@@ -9,7 +9,6 @@ tags: []
 dependencies: ["avatar","icon"]
 relatedComponents: ["avatar","icon"]
 stability: stable
-generatedAt: 2026-06-08T17:49:01.643Z
 ---
 
 # Components/Avatar

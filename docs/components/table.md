@@ -9,7 +9,6 @@ tags: []
 dependencies: ["bar","button","checkbox","dialog","fieldset","form-label","icon","input","input-group","link","list","menu","object-marker","object-number","object-status","pagination","popover","select","table","text","title","toolbar"]
 relatedComponents: ["bar","button","checkbox","dialog","fieldset","form-label","icon","input","input-group","link","list","menu","object-marker","object-number","object-status","pagination","popover","select","table","text","title","toolbar"]
 stability: stable
-generatedAt: 2026-06-08T17:49:01.621Z
 ---
 
 # Components/Table

@@ -9,7 +9,6 @@ tags: []
 dependencies: ["bar","busy-indicator","button","dialog","message-toast","text","title"]
 relatedComponents: ["bar","busy-indicator","button","dialog","message-toast","text","title"]
 stability: stable
-generatedAt: 2026-06-08T17:49:02.083Z
 ---
 
 # Components/Busy Indicator
