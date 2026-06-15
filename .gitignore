@@ -26,6 +26,9 @@ introduction.stories.mdx
 !.yarn/sdks
 !.yarn/versions
 
+# npm lockfile (repo uses Yarn)
+package-lock.json
+
 .nx/cache
 .nx/workspace-data
 .cursor/rules/nx-rules.mdc
