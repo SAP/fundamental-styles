@@ -84,7 +84,7 @@
     "homepage": "https://sap.github.io/fundamental-styles/",
     "devDependencies": {
         "@actions/core": "1.11.1",
-        "@babel/core": "7.23.9",
+        "@babel/core": "7.29.6",
         "@chromatic-com/storybook": "^5.1.1",
         "@commitlint/cli": "20.0.0",
         "@commitlint/config-conventional": "20.0.0",
