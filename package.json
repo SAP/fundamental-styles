@@ -89,13 +89,13 @@
         "@commitlint/cli": "20.0.0",
         "@commitlint/config-conventional": "20.0.0",
         "@modelcontextprotocol/sdk": "^1.29.0",
-        "@nx/devkit": "22.6.4",
-        "@nx/eslint": "22.6.4",
-        "@nx/eslint-plugin": "22.6.4",
-        "@nx/js": "22.6.4",
-        "@nx/plugin": "22.6.4",
-        "@nx/react": "22.6.4",
-        "@nx/web": "22.6.4",
+        "@nx/devkit": "22.7.5",
+        "@nx/eslint": "22.7.5",
+        "@nx/eslint-plugin": "22.7.5",
+        "@nx/js": "22.7.5",
+        "@nx/plugin": "22.7.5",
+        "@nx/react": "22.7.5",
+        "@nx/web": "22.7.5",
         "@sap-theming/theming-base-content": "11.36.3",
         "@storybook/addon-a11y": "^10.4.5",
         "@storybook/addon-docs": "^10.4.5",
@@ -143,7 +143,7 @@
         "markdown-to-jsx": "7.1.2",
         "normalize.css": "8.0.1",
         "npm-run-all": "4.1.5",
-        "nx": "22.6.4",
+        "nx": "22.7.5",
         "nx-stylelint": "17.1.4",
         "postcss": "8.5.10",
         "postcss-banner": "4.0.1",
@@ -177,7 +177,7 @@
         "zod": "^4.3.6"
     },
     "resolutions": {
-        "nx": "22.6.4"
+        "nx": "22.7.5"
     },
     "browserslist": [
         "last 2 versions"
