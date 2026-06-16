@@ -39,3 +39,6 @@ package-lock.json
 # Generated AI metadata (regenerated at release time via generate:ai-metadata)
 docs/component-catalog.json
 docs/schemas/
+
+.nx/polygraph
+.nx/self-healing
