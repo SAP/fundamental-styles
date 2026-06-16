@@ -9,7 +9,6 @@ tags: []
 dependencies: ["button","icon","popover","toolbar"]
 relatedComponents: ["button","icon","popover","toolbar"]
 stability: stable
-generatedAt: 2026-06-08T17:49:01.720Z
 ---
 
 # Components/Toolbar

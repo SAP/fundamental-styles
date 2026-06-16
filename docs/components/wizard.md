@@ -9,7 +9,6 @@ tags: []
 dependencies: ["action-sheet","bar","button","icon","popover","wizard"]
 relatedComponents: ["action-sheet","bar","button","icon","popover","wizard"]
 stability: stable
-generatedAt: 2026-06-08T17:49:01.698Z
 ---
 
 # Components/Wizard

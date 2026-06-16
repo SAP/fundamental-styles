@@ -9,7 +9,6 @@ tags: []
 dependencies: []
 relatedComponents: []
 stability: stable
-generatedAt: 2026-06-08T17:49:02.048Z
 ---
 
 # Components/Forms/Form Group

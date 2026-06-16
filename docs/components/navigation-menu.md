@@ -9,7 +9,6 @@ tags: ["btp","horizon-only"]
 dependencies: ["icon","navigation-menu"]
 relatedComponents: ["icon","navigation-menu"]
 stability: stable
-generatedAt: 2026-06-08T17:49:02.403Z
 ---
 
 # Dev/Navigation Menu

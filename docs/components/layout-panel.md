@@ -9,7 +9,6 @@ tags: []
 dependencies: ["button","layout-panel","title"]
 relatedComponents: ["button","layout-panel","title"]
 stability: stable
-generatedAt: 2026-06-08T17:49:02.372Z
 ---
 
 # Layouts/Layout Panel

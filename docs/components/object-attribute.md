@@ -9,7 +9,6 @@ tags: []
 dependencies: []
 relatedComponents: []
 stability: experimental
-generatedAt: 2026-06-08T17:49:02.421Z
 ---
 
 # Dev/Object Attribute

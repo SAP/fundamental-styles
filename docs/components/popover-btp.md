@@ -9,7 +9,6 @@ tags: ["btp"]
 dependencies: ["avatar","bar","btp/avatar","button","icon","navigation","popover","user-menu"]
 relatedComponents: ["avatar","bar","button","icon","navigation","popover","user-menu"]
 stability: stable
-generatedAt: 2026-06-08T17:49:02.285Z
 ---
 
 # BTP/User Menu

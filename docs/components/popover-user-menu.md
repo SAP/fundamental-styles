@@ -9,7 +9,6 @@ tags: ["uxc"]
 dependencies: ["avatar","badge","bar","button","icon","input","input-group","list","menu","message-strip","navigation-list","notification","panel","popover","shellbar","tabs","title","toolbar","user-menu"]
 relatedComponents: ["avatar","badge","bar","button","icon","input","input-group","list","menu","message-strip","navigation-list","notification","panel","popover","shellbar","tabs","title","toolbar","user-menu"]
 stability: stable
-generatedAt: 2026-06-08T17:49:01.803Z
 ---
 
 # Components/User Menu

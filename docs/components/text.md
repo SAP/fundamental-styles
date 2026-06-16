@@ -9,7 +9,6 @@ tags: []
 dependencies: ["link","text"]
 relatedComponents: ["link","text"]
 stability: stable
-generatedAt: 2026-06-08T17:49:01.586Z
 ---
 
 # Components/Text

@@ -9,7 +9,6 @@ tags: ["uxc"]
 dependencies: ["avatar","button","icon","input-group","menu","object-marker","object-status","popover","product-switch","select","shellbar","switch","toolbar"]
 relatedComponents: ["avatar","button","icon","input-group","menu","object-marker","object-status","popover","product-switch","select","shellbar","switch","toolbar"]
 stability: stable
-generatedAt: 2026-06-08T17:49:01.773Z
 ---
 
 # Components/Shellbar

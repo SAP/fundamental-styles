@@ -9,7 +9,6 @@ tags: []
 dependencies: ["sap-label"]
 relatedComponents: ["sap-label"]
 stability: stable
-generatedAt: 2026-06-08T17:49:02.304Z
 ---
 
 # Patterns/Label

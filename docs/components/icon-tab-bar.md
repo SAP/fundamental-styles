@@ -9,7 +9,6 @@ tags: []
 dependencies: ["button","icon","icon-tab-bar","list","menu","popover"]
 relatedComponents: ["button","icon","icon-tab-bar","list","menu","popover"]
 stability: stable
-generatedAt: 2026-06-08T17:49:02.015Z
 ---
 
 # Components/Icon Tab Bar
