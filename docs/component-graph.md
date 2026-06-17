@@ -192,6 +192,9 @@ graph TB
   ai-loading-bar -.-> progress-indicator
   ai-text -.-> text
   ai-text -.-> ai-writing-assistant
+  ai-writing-assistant-versioning -.-> ai-writing-assistant
+  ai-writing-assistant-versioning -.-> ai-text
+  ai-writing-assistant-versioning -.-> ai-busy-indicator
   ai-writing-assistant -.-> prompt-input
   ai-writing-assistant -.-> textarea
   alert -.-> message-strip
@@ -273,6 +276,10 @@ graph TB
   grid-list -.-> list
   grid-list -.-> table
   grid-list -.-> card
+  helpers -.-> layout
+  helpers -.-> layout-grid
+  helpers -.-> margins
+  helpers -.-> paddings
   horizontal-navigation -.-> shellbar
   horizontal-navigation -.-> tabs
   horizontal-navigation -.-> navigation-menu
@@ -297,6 +304,9 @@ graph TB
   list -.-> table
   list -.-> tree
   list -.-> navigation-list
+  margins -.-> paddings
+  margins -.-> layout
+  margins -.-> layout-grid
   menu -.-> popover
   message-box -.-> message-strip
   message-box -.-> message-toast
@@ -331,6 +341,10 @@ graph TB
   object-marker -.-> icon
   object-number -.-> step-input
   object-status -.-> status-indicator
+  off-screen -.-> helpers
+  off-screen -.-> link
+  paddings -.-> layout
+  paddings -.-> layout-grid
   page-footer -.-> bar
   page-footer -.-> toolbar
   page -.-> panel
@@ -354,6 +368,9 @@ graph TB
   rating-indicator -.-> step-input
   resizable-card-layout -.-> layout-grid
   resizable-card-layout -.-> card
+  scrollbar -.-> layout
+  scrollbar -.-> splitter
+  scrollbar -.-> dynamic-side-content
   search-field -.-> input
   segmented-button -.-> tabs
   segmented-button -.-> radio
@@ -471,10 +488,14 @@ graph TB
   message-popover ==> message-strip
   message-popover ==> shellbar
   message-strip ==> shellbar
+  icon-tab-bar ==> segmented-button
+  message-popover ==> segmented-button
+  message-strip ==> segmented-button
   button ==> dynamic-page
   dynamic-page ==> icon-tab-bar
   dynamic-page ==> message-popover
   dynamic-page ==> message-strip
+  dynamic-page ==> segmented-button
   dynamic-page ==> shellbar
   button ==> object-status
   card ==> object-status
@@ -703,11 +724,11 @@ graph TB
 ## Statistics
 
 - **Total Components**: 120
-- **Total Relationships**: 522
+- **Total Relationships**: 543
 - **Relationships by Type**:
   - imports: 5
-  - related: 218
-  - shares-styling: 100
+  - related: 235
+  - shares-styling: 104
   - similar: 199
 
 ## Category Distribution
@@ -736,5 +757,5 @@ graph TB
 - **business-objects**: 2 components
 
 ---
-**Generated**: 2026-02-15
+**Generated**: 2026-06-17
 **Script**: `scripts/generate-relationship-graph.js`

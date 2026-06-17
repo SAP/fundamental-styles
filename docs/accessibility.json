@@ -2044,21 +2044,47 @@
     },
     "product-switch": {
       "roles": [
-        "img"
+        "menuitem",
+        "img",
+        "menu"
       ],
       "requiredAttrs": [
         {
           "name": "aria-label",
           "purpose": "Accessible name when no visible text",
           "exampleValues": [
-            "Avatar landscape",
-            "Product logo"
+            "Home Home Home Home Home Home Home Home Central Home Central Home Central Home Central Home",
+            "Home",
+            "Analytics Cloud Analytics Cloud Analytics Cloud"
           ],
           "when": "Required when no visible text label"
         }
       ],
-      "optionalAttrs": [],
-      "keyboardSupport": [],
+      "optionalAttrs": [
+        {
+          "name": "aria-posinset",
+          "purpose": "Position in set",
+          "exampleValues": [
+            "1",
+            "2",
+            "3"
+          ]
+        },
+        {
+          "name": "aria-setsize",
+          "purpose": "Total items in set",
+          "exampleValues": [
+            "14",
+            "5"
+          ]
+        }
+      ],
+      "keyboardSupport": [
+        "Enter",
+        "Space",
+        "Arrow keys",
+        "Escape"
+      ],
       "focusManagement": "Uses tabindex for focus management",
       "notes": []
     },
@@ -3123,7 +3149,8 @@
         "img",
         "form",
         "region",
-        "list"
+        "list",
+        "note"
       ],
       "requiredAttrs": [
         {
@@ -3166,6 +3193,7 @@
           "name": "aria-labelledby",
           "purpose": "References visible label element",
           "exampleValues": [
+            "message-strip-hidden-text-2 message-strip-text-2",
             "__panel-title-8",
             "__panel-title-10"
           ]
