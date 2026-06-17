@@ -822,6 +822,24 @@
       "bidirectional": true
     },
     {
+      "from": "ai-writing-assistant-versioning",
+      "to": "ai-writing-assistant",
+      "type": "related",
+      "bidirectional": true
+    },
+    {
+      "from": "ai-writing-assistant-versioning",
+      "to": "ai-text",
+      "type": "related",
+      "bidirectional": true
+    },
+    {
+      "from": "ai-writing-assistant-versioning",
+      "to": "ai-busy-indicator",
+      "type": "related",
+      "bidirectional": true
+    },
+    {
       "from": "ai-writing-assistant",
       "to": "prompt-input",
       "type": "related",
@@ -1308,6 +1326,30 @@
       "bidirectional": true
     },
     {
+      "from": "helpers",
+      "to": "layout",
+      "type": "related",
+      "bidirectional": true
+    },
+    {
+      "from": "helpers",
+      "to": "layout-grid",
+      "type": "related",
+      "bidirectional": true
+    },
+    {
+      "from": "helpers",
+      "to": "margins",
+      "type": "related",
+      "bidirectional": true
+    },
+    {
+      "from": "helpers",
+      "to": "paddings",
+      "type": "related",
+      "bidirectional": true
+    },
+    {
       "from": "horizontal-navigation",
       "to": "shellbar",
       "type": "related",
@@ -1448,6 +1490,24 @@
     {
       "from": "list",
       "to": "navigation-list",
+      "type": "related",
+      "bidirectional": true
+    },
+    {
+      "from": "margins",
+      "to": "paddings",
+      "type": "related",
+      "bidirectional": true
+    },
+    {
+      "from": "margins",
+      "to": "layout",
+      "type": "related",
+      "bidirectional": true
+    },
+    {
+      "from": "margins",
+      "to": "layout-grid",
       "type": "related",
       "bidirectional": true
     },
@@ -1656,6 +1716,30 @@
       "bidirectional": true
     },
     {
+      "from": "off-screen",
+      "to": "helpers",
+      "type": "related",
+      "bidirectional": true
+    },
+    {
+      "from": "off-screen",
+      "to": "link",
+      "type": "related",
+      "bidirectional": true
+    },
+    {
+      "from": "paddings",
+      "to": "layout",
+      "type": "related",
+      "bidirectional": true
+    },
+    {
+      "from": "paddings",
+      "to": "layout-grid",
+      "type": "related",
+      "bidirectional": true
+    },
+    {
       "from": "page-footer",
       "to": "bar",
       "type": "related",
@@ -1790,6 +1874,24 @@
     {
       "from": "resizable-card-layout",
       "to": "card",
+      "type": "related",
+      "bidirectional": true
+    },
+    {
+      "from": "scrollbar",
+      "to": "layout",
+      "type": "related",
+      "bidirectional": true
+    },
+    {
+      "from": "scrollbar",
+      "to": "splitter",
+      "type": "related",
+      "bidirectional": true
+    },
+    {
+      "from": "scrollbar",
+      "to": "dynamic-side-content",
       "type": "related",
       "bidirectional": true
     },
@@ -2640,6 +2742,30 @@
       ]
     },
     {
+      "from": "icon-tab-bar",
+      "to": "segmented-button",
+      "type": "shares-styling",
+      "sharedVariables": [
+        "--fdButtonBorderColor"
+      ]
+    },
+    {
+      "from": "message-popover",
+      "to": "segmented-button",
+      "type": "shares-styling",
+      "sharedVariables": [
+        "--fdButtonBorderColor"
+      ]
+    },
+    {
+      "from": "message-strip",
+      "to": "segmented-button",
+      "type": "shares-styling",
+      "sharedVariables": [
+        "--fdButtonBorderColor"
+      ]
+    },
+    {
       "from": "button",
       "to": "dynamic-page",
       "type": "shares-styling",
@@ -2666,6 +2792,14 @@
     {
       "from": "dynamic-page",
       "to": "message-strip",
+      "type": "shares-styling",
+      "sharedVariables": [
+        "--fdButtonBackgroundColor"
+      ]
+    },
+    {
+      "from": "dynamic-page",
+      "to": "segmented-button",
       "type": "shares-styling",
       "sharedVariables": [
         "--fdButtonBackgroundColor"
@@ -4060,7 +4194,7 @@
   ],
   "analytics": {
     "totalComponents": 120,
-    "totalRelationships": 522,
+    "totalRelationships": 543,
     "hubComponents": [
       {
         "id": "button",
@@ -4083,40 +4217,40 @@
         "connections": 19
       },
       {
+        "id": "dynamic-page",
+        "name": "Dynamic Page",
+        "connections": 18
+      },
+      {
+        "id": "segmented-button",
+        "name": "Segmented Button",
+        "connections": 18
+      },
+      {
         "id": "user-menu",
         "name": "User Menu",
         "connections": 18
       },
       {
-        "id": "dynamic-page",
-        "name": "Dynamic Page",
+        "id": "layout-grid",
+        "name": "Layout Grid",
+        "connections": 17
+      },
+      {
+        "id": "layout",
+        "name": "Layout",
         "connections": 17
       },
       {
         "id": "tile",
         "name": "Tile",
         "connections": 16
-      },
-      {
-        "id": "bar",
-        "name": "Bar",
-        "connections": 15
-      },
-      {
-        "id": "layout-grid",
-        "name": "Layout Grid",
-        "connections": 14
-      },
-      {
-        "id": "message-strip",
-        "name": "Message Strip",
-        "connections": 14
       }
     ],
     "relationshipTypes": {
       "imports": 5,
-      "related": 218,
-      "shares-styling": 100,
+      "related": 235,
+      "shares-styling": 104,
       "similar": 199
     }
   }

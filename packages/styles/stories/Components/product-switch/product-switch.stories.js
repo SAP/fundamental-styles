@@ -42,16 +42,16 @@ export const Shellbar = () => `${localStyles}
             <div class="fd-product-switch">
                 <div class="fd-popover fd-popover--right">
                     <button class="fd-button fd-button--transparent fd-popover__control fd-shellbar__button"
-                        aria-label="Image label"
+                        aria-label="Products"
                         aria-controls="product-switch-body"
                         aria-expanded="true"
                         aria-haspopup="true">
                         <i class="sap-icon--grid"></i>
                     </button>
-                    <div class="fd-popover__body fd-popover__body--right" aria-hidden="false" id="product-switch-body">
+                    <div class="fd-popover__body fd-popover__body--right" role="dialog" aria-modal="false" aria-label="Products" aria-hidden="false" id="product-switch-body">
                         <div class="fd-product-switch__body">
-                            <ul class="fd-product-switch__list">
-                                <li class="fd-product-switch__item selected" tabindex="0">
+                            <ul class="fd-product-switch__list" role="menu">
+                                <li class="fd-product-switch__item selected" tabindex="0" role="menuitem" aria-label="Home Home Home Home Home Home Home Home Central Home Central Home Central Home Central Home" aria-posinset="1" aria-setsize="14">
                                     <span class="fd-avatar fd-avatar--sm fd-avatar--transparent" role="img" aria-label="Home">
                                         <i role="presentation" aria-hidden="true" class="fd-avatar__icon sap-icon--home"></i>
                                     </span>
@@ -60,7 +60,7 @@ export const Shellbar = () => `${localStyles}
                                         <div class="fd-product-switch__subtitle">Central Home Central Home Central Home Central Home</div>
                                     </div>
                                 </li>
-                                <li class="fd-product-switch__item" tabindex="0">
+                                <li class="fd-product-switch__item" tabindex="0" role="menuitem" aria-label="Analytics Cloud Analytics Cloud Analytics Cloud" aria-posinset="2" aria-setsize="14">
                                     <span class="fd-avatar fd-avatar--sm fd-avatar--transparent" role="img" aria-label="Analytics Cloud">
                                         <i role="presentation" aria-hidden="true" class="fd-avatar__icon sap-icon--business-objects-experience"></i>
                                     </span>
@@ -69,7 +69,7 @@ export const Shellbar = () => `${localStyles}
                                         <div class="fd-product-switch__subtitle">Analytics Cloud</div>
                                     </div>
                                 </li>
-                                <li class="fd-product-switch__item" tabindex="0">
+                                <li class="fd-product-switch__item" tabindex="0" role="menuitem" aria-label="Catalog Ariba" aria-posinset="3" aria-setsize="14">
                                     <span class="fd-avatar fd-avatar--sm fd-avatar--transparent" role="img" aria-label="Catalog">
                                         <i role="presentation" aria-hidden="true" class="fd-avatar__icon sap-icon--contacts"></i>
                                     </span>
@@ -78,13 +78,13 @@ export const Shellbar = () => `${localStyles}
                                         <div class="fd-product-switch__subtitle">Ariba</div>
                                     </div>
                                 </li>
-                                <li class="fd-product-switch__item" tabindex="0">
+                                <li class="fd-product-switch__item" tabindex="0" role="menuitem" aria-label="Guided Buying" aria-posinset="4" aria-setsize="14">
                                     <span class="fd-avatar fd-avatar--sm fd-avatar--thumbnail" style="background-image: url('/assets/images/landscape/demo-avatar.png')" role="img" aria-label="Guided Buying"></span>
                                     <div class="fd-product-switch__text">
                                         <div class="fd-product-switch__title">Guided Buying</div>
                                     </div>
                                 </li>
-                                <li class="fd-product-switch__item" tabindex="0">
+                                <li class="fd-product-switch__item" tabindex="0" role="menuitem" aria-label="Strategic Procurement" aria-posinset="5" aria-setsize="14">
                                     <span class="fd-avatar fd-avatar--sm fd-avatar--transparent" role="img" aria-label="Strategic Procurement">
                                         <i role="presentation" aria-hidden="true" class="fd-avatar__icon sap-icon--cart-3"></i>
                                     </span>
@@ -92,7 +92,7 @@ export const Shellbar = () => `${localStyles}
                                         <div class="fd-product-switch__title">Strategic Procurement</div>
                                     </div>
                                 </li>
-                                <li class="fd-product-switch__item" tabindex="0">
+                                <li class="fd-product-switch__item" tabindex="0" role="menuitem" aria-label="Travel &amp; Expense Concur" aria-posinset="6" aria-setsize="14">
                                     <span class="fd-avatar fd-avatar--sm fd-avatar--transparent" role="img" aria-label="Travel &amp; Expense">
                                         <i role="presentation" aria-hidden="true" class="fd-avatar__icon sap-icon--flight"></i>
                                     </span>
@@ -101,7 +101,7 @@ export const Shellbar = () => `${localStyles}
                                         <div class="fd-product-switch__subtitle">Concur</div>
                                     </div>
                                 </li>
-                                <li class="fd-product-switch__item" tabindex="0">
+                                <li class="fd-product-switch__item" tabindex="0" role="menuitem" aria-label="Vendor Management Fieldglass" aria-posinset="7" aria-setsize="14">
                                     <span class="fd-avatar fd-avatar--sm fd-avatar--transparent" role="img" aria-label="Vendor Management">
                                         <i role="presentation" aria-hidden="true" class="fd-avatar__icon sap-icon--shipping-status"></i>
                                     </span>
@@ -110,7 +110,7 @@ export const Shellbar = () => `${localStyles}
                                         <div class="fd-product-switch__subtitle">Fieldglass</div>
                                     </div>
                                 </li>
-                                <li class="fd-product-switch__item" tabindex="0">
+                                <li class="fd-product-switch__item" tabindex="0" role="menuitem" aria-label="Human Capital Management" aria-posinset="8" aria-setsize="14">
                                     <span class="fd-avatar fd-avatar--sm fd-avatar--transparent" role="img" aria-label="Human Capital Management">
                                         <i role="presentation" aria-hidden="true" class="fd-avatar__icon sap-icon--customer"></i>
                                     </span>
@@ -118,7 +118,7 @@ export const Shellbar = () => `${localStyles}
                                         <div class="fd-product-switch__title">Human Capital Management</div>
                                     </div>
                                 </li>
-                                <li class="fd-product-switch__item" tabindex="0">
+                                <li class="fd-product-switch__item" tabindex="0" role="menuitem" aria-label="Sales Cloud Sales Cloud" aria-posinset="9" aria-setsize="14">
                                     <span class="fd-avatar fd-avatar--sm fd-avatar--transparent" role="img" aria-label="Sales Cloud">
                                         <i role="presentation" aria-hidden="true" class="fd-avatar__icon sap-icon--sales-notification"></i>
                                     </span>
@@ -127,7 +127,7 @@ export const Shellbar = () => `${localStyles}
                                         <div class="fd-product-switch__subtitle">Sales Cloud</div>
                                     </div>
                                 </li>
-                                <li class="fd-product-switch__item" tabindex="0">
+                                <li class="fd-product-switch__item" tabindex="0" role="menuitem" aria-label="Commerce Cloud Commerce Cloud" aria-posinset="10" aria-setsize="14">
                                     <span class="fd-avatar fd-avatar--sm fd-avatar--transparent" role="img" aria-label="Commerce Cloud">
                                         <i role="presentation" aria-hidden="true" class="fd-avatar__icon sap-icon--retail-store"></i>
                                     </span>
@@ -136,7 +136,7 @@ export const Shellbar = () => `${localStyles}
                                         <div class="fd-product-switch__subtitle">Commerce Cloud</div>
                                     </div>
                                 </li>
-                                <li class="fd-product-switch__item" tabindex="0">
+                                <li class="fd-product-switch__item" tabindex="0" role="menuitem" aria-label="Marketing Cloud Marketing Cloud" aria-posinset="11" aria-setsize="14">
                                     <span class="fd-avatar fd-avatar--sm fd-avatar--transparent" role="img" aria-label="Marketing Cloud">
                                         <i role="presentation" aria-hidden="true" class="fd-avatar__icon sap-icon--marketing-campaign"></i>
                                     </span>
@@ -145,7 +145,7 @@ export const Shellbar = () => `${localStyles}
                                         <div class="fd-product-switch__subtitle">Marketing Cloud</div>
                                     </div>
                                 </li>
-                                <li class="fd-product-switch__item" tabindex="0">
+                                <li class="fd-product-switch__item" tabindex="0" role="menuitem" aria-label="Service Cloud" aria-posinset="12" aria-setsize="14">
                                     <span class="fd-avatar fd-avatar--sm fd-avatar--transparent" role="img" aria-label="Service Cloud">
                                         <i role="presentation" aria-hidden="true" class="fd-avatar__icon sap-icon--family-care"></i>
                                     </span>
@@ -153,7 +153,7 @@ export const Shellbar = () => `${localStyles}
                                         <div class="fd-product-switch__title">Service Cloud</div>
                                     </div>
                                 </li>
-                                <li class="fd-product-switch__item" tabindex="0">
+                                <li class="fd-product-switch__item" tabindex="0" role="menuitem" aria-label="Customer Data Cloud" aria-posinset="13" aria-setsize="14">
                                     <span class="fd-avatar fd-avatar--sm fd-avatar--transparent" role="img" aria-label="Customer Data Cloud">
                                         <i role="presentation" aria-hidden="true" class="fd-avatar__icon sap-icon--customer-briefing"></i>
                                     </span>
@@ -161,7 +161,7 @@ export const Shellbar = () => `${localStyles}
                                         <div class="fd-product-switch__title">Customer Data Cloud</div>
                                     </div>
                                 </li>
-                                <li class="fd-product-switch__item" tabindex="0">
+                                <li class="fd-product-switch__item" tabindex="0" role="menuitem" aria-label="S/4HANA" aria-posinset="14" aria-setsize="14">
                                     <span class="fd-avatar fd-avatar--sm fd-avatar--transparent" role="img" aria-label="S/4HANA">
                                         <i role="presentation" aria-hidden="true" class="fd-avatar__icon sap-icon--batch-payments"></i>
                                     </span>
