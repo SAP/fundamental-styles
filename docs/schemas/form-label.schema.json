@@ -2,7 +2,7 @@
   "$schema": "http://json-schema.org/draft-07/schema#",
   "$id": "https://sap.github.io/fundamental-styles/schemas/form-label.json",
   "title": "Form Label Component",
-  "description": "Label for form inputs with required indicator support",
+  "description": "Form Label component",
   "type": "object",
   "properties": {
     "baseClass": {

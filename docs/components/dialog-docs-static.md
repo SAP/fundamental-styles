@@ -9,7 +9,6 @@ tags: []
 dependencies: ["bar","busy-indicator","button","checkbox","dialog","form-label","form-layout-grid","icon","input","input-group","layout-grid","list","popover","select","textarea","title"]
 relatedComponents: ["bar","busy-indicator","button","checkbox","dialog","form-label","form-layout-grid","icon","input","input-group","layout-grid","list","popover","select","textarea","title"]
 stability: stable
-generatedAt: 2026-06-08T17:49:01.660Z
 ---
 
 # Components/Dialog
@@ -813,12 +812,13 @@ To properly support resizing for all input methods, the optional resize handle i
         aria-labelledby="dialog-title-12"
         aria-describedby="dialog-description-12"
         >
-
         <header class="fd-dialog__header fd-bar fd-bar--header">
             <div class="fd-bar__left">
                 <div class="fd-bar__element">
                     <h2 class="fd-title fd-title--h5" id="dialog-title-12">
-                        Lorem ipsum
+                        Lorem ipsum lorem ipsum lorem ipsum ipsum lorem ipsum lorem ipsumipsum lorem ipsum lorem ipsum
+                        ipsum lorem ipsum lorem ipsum ipsum lorem ipsum lorem ipsum ipsum lorem ipsum lorem ipsum ipsum
+                        lorem ipsum lorem ipsum
                     </h2>
                 </div>
             </div>
@@ -851,14 +851,17 @@ To properly support resizing for all input methods, the optional resize handle i
     <div>Full Screen Button: visible (<code>sap-icon--full-screen</code>)</div>
     <div>Resize Handle: visible</div>
     <section class="fd-dialog-docs-static fd-dialog fd-dialog--active">
-        <div class="fd-dialog__content fd-dialog__content--s" role="dialog" aria-modal="true" aria-labelledby="dialog-title-6">
+        <div
+            class="fd-dialog__content fd-dialog__content--s"
+            role="dialog"
+            aria-modal="true"
+            aria-labelledby="dialog-title-6"
+            >
             <span class="fd-dialog__resize-handle"></span>
             <header class="fd-dialog__header fd-bar fd-bar--header">
                 <div class="fd-bar__left">
                     <div class="fd-bar__element">
-                        <h2 class="fd-title fd-title--h5" id="dialog-title-6">
-                            Lorem ipsum
-                        </h2>
+                        <h2 class="fd-title fd-title--h5" id="dialog-title-6">Lorem ipsum</h2>
                     </div>
                 </div>
                 <div class="fd-bar__right">
@@ -882,83 +885,86 @@ To properly support resizing for all input methods, the optional resize handle i
                     </div>
                 </div>
             </footer>
-        </div>
-    </section>
+        </section>
 
-    <h3>Hybrid device</h3>
-    <div>Full Screen Button: visible (<code>sap-icon--full-screen</code>)</div>
-    <div>Resize Handle: visible</div>
-    <section class="fd-dialog-docs-static fd-dialog fd-dialog--active">
-        <div class="fd-dialog__content fd-dialog__content--s" role="dialog" aria-modal="true" aria-labelledby="dialog-title-6">
-            <span class="fd-dialog__resize-handle"></span>
-            <header class="fd-dialog__header fd-bar fd-bar--header fd-bar--compact">
-                <div class="fd-bar__left">
-                    <div class="fd-bar__element">
-                        <h2 class="fd-title fd-title--h5" id="dialog-title-6">
-                            Lorem ipsum
-                        </h2>
+        <h3>Hybrid device</h3>
+        <div>Full Screen Button: visible (<code>sap-icon--full-screen</code>)</div>
+        <div>Resize Handle: visible</div>
+        <section class="fd-dialog-docs-static fd-dialog fd-dialog--active">
+            <div
+                class="fd-dialog__content fd-dialog__content--s"
+                role="dialog"
+                aria-modal="true"
+                aria-labelledby="dialog-title-6"
+                >
+                <span class="fd-dialog__resize-handle"></span>
+                <header class="fd-dialog__header fd-bar fd-bar--header fd-bar--compact">
+                    <div class="fd-bar__left">
+                        <div class="fd-bar__element">
+                            <h2 class="fd-title fd-title--h5" id="dialog-title-6">Lorem ipsum</h2>
+                        </div>
                     </div>
+                    <div class="fd-bar__right">
+                        <div class="fd-bar__element">
+                            <button aria-label="Expand to full screen" class="fd-button fd-button--transparent">
+                                <i class="sap-icon--full-screen"></i>
+                            </button>
+                        </div>
+                    </div>
+                </header>
+                <div class="fd-dialog__body">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
                 </div>
-                <div class="fd-bar__right">
-                    <div class="fd-bar__element">
-                        <button aria-label="Expand to full screen" class="fd-button fd-button--transparent">
-                            <i class="sap-icon--full-screen"></i>
-                        </button>
+                <footer class="fd-dialog__footer fd-bar fd-bar--compact fd-bar--footer">
+                    <div class="fd-bar__right">
+                        <div class="fd-bar__element">
+                            <button class="fd-dialog__decisive-button fd-button fd-button--emphasized">Save</button>
+                        </div>
+                        <div class="fd-bar__element">
+                            <button class="fd-dialog__decisive-button fd-button fd-button--transparent">Cancel</button>
+                        </div>
                     </div>
-                </div>
-            </header>
-            <div class="fd-dialog__body">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-            </div>
-            <footer class="fd-dialog__footer fd-bar fd-bar--compact fd-bar--footer">
-                <div class="fd-bar__right">
-                    <div class="fd-bar__element">
-                        <button class="fd-dialog__decisive-button fd-button fd-button--emphasized">Save</button>
-                    </div>
-                    <div class="fd-bar__element">
-                        <button class="fd-dialog__decisive-button fd-button fd-button--transparent">Cancel</button>
-                    </div>
-                </div>
-            </footer>
-        </div>
-    </section>
+                </footer>
+            </section>
 
-    <h3>Full screen</h3>
-    <div>Full Screen Button: visible (<code>sap-icon--exitfullscreen</code>)</div>
-    <div>Resize Handle: not visible</div>
-    <section class="fd-dialog-docs-static fd-dialog fd-dialog--active">
-        <div class="fd-dialog__content fd-dialog__content--s  fd-dialog__content--mobile" role="dialog" aria-modal="true" aria-labelledby="dialog-title-6">
-            <header class="fd-dialog__header fd-bar fd-bar--header">
-                <div class="fd-bar__left">
-                    <div class="fd-bar__element">
-                        <h2 class="fd-title fd-title--h5" id="dialog-title-6">
-                            Lorem ipsum
-                        </h2>
+            <h3>Full screen</h3>
+            <div>Full Screen Button: visible (<code>sap-icon--exitfullscreen</code>)</div>
+            <div>Resize Handle: not visible</div>
+            <section class="fd-dialog-docs-static fd-dialog fd-dialog--active">
+                <div
+                    class="fd-dialog__content fd-dialog__content--s fd-dialog__content--mobile"
+                    role="dialog"
+                    aria-modal="true"
+                    aria-labelledby="dialog-title-6"
+                    >
+                    <header class="fd-dialog__header fd-bar fd-bar--header">
+                        <div class="fd-bar__left">
+                            <div class="fd-bar__element">
+                                <h2 class="fd-title fd-title--h5" id="dialog-title-6">Lorem ipsum</h2>
+                            </div>
+                        </div>
+                        <div class="fd-bar__right">
+                            <div class="fd-bar__element">
+                                <button aria-label="Expand to full screen" class="fd-button fd-button--transparent">
+                                    <i class="sap-icon--exitfullscreen"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </header>
+                    <div class="fd-dialog__body">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
                     </div>
-                </div>
-                <div class="fd-bar__right">
-                    <div class="fd-bar__element">
-                        <button aria-label="Expand to full screen" class="fd-button fd-button--transparent">
-                            <i class="sap-icon--exitfullscreen"></i>
-                        </button>
-                    </div>
-                </div>
-            </header>
-            <div class="fd-dialog__body">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-            </div>
-            <footer class="fd-dialog__footer fd-bar fd-bar--footer">
-                <div class="fd-bar__right">
-                    <div class="fd-bar__element">
-                        <button class="fd-dialog__decisive-button fd-button fd-button--emphasized">Save</button>
-                    </div>
-                    <div class="fd-bar__element">
-                        <button class="fd-dialog__decisive-button fd-button fd-button--transparent">Cancel</button>
-                    </div>
-                </div>
-            </footer>
-        </div>
-    </section>
+                    <footer class="fd-dialog__footer fd-bar fd-bar--footer">
+                        <div class="fd-bar__right">
+                            <div class="fd-bar__element">
+                                <button class="fd-dialog__decisive-button fd-button fd-button--emphasized">Save</button>
+                            </div>
+                            <div class="fd-bar__element">
+                                <button class="fd-dialog__decisive-button fd-button fd-button--transparent">Cancel</button>
+                            </div>
+                        </div>
+                    </footer>
+                </section>
 ```
 
 ## Accessibility

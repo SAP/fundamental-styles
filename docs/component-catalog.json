@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "version": "0.41.8-rc.0",
+  "version": "0.41.8-rc.8",
   "description": "Machine-readable catalog of Fundamental Library Styles components",
   "generatedBy": "scripts/generate-ai-metadata.js",
   "relatedFiles": {
@@ -105,28 +105,15 @@
             "responsive-l",
             "responsive-xl"
           ],
-          "category": "toolbars",
+          "category": "uncategorized",
           "subcategory": null,
-          "useCases": [
-            "Page-level toolbar at top of content area",
-            "Display page title with back navigation",
-            "Container for page-level action buttons",
-            "Show contextual actions for the current view"
-          ],
-          "avoidWhen": [
-            "App-level navigation (use shellbar)",
-            "Table/list row actions (use toolbar)",
-            "Form actions (use bar with footer mode)"
-          ],
+          "useCases": [],
+          "avoidWhen": [],
           "accessibility": {
             "role": null,
             "ariaAttributes": []
           },
-          "relatedComponents": [
-            "bar",
-            "toolbar",
-            "shellbar"
-          ],
+          "relatedComponents": [],
           "dependencies": []
         },
         {
@@ -179,28 +166,15 @@
             "action-sheet-mobile",
             "default"
           ],
-          "category": "toolbars",
+          "category": "uncategorized",
           "subcategory": null,
-          "useCases": [
-            "Mobile-optimized action menu",
-            "Bottom sheet with action options",
-            "Touch-friendly action selection",
-            "Overflow menu on mobile devices"
-          ],
-          "avoidWhen": [
-            "Desktop applications (use menu or popover)",
-            "Complex forms (use dialog)",
-            "Navigation (use menu)"
-          ],
+          "useCases": [],
+          "avoidWhen": [],
           "accessibility": {
             "role": null,
             "ariaAttributes": []
           },
-          "relatedComponents": [
-            "menu",
-            "popover",
-            "dialog"
-          ],
+          "relatedComponents": [],
           "dependencies": []
         },
         {
@@ -221,27 +195,15 @@
           "variables": [],
           "tags": [],
           "examples": [],
-          "category": "ai-components",
+          "category": "uncategorized",
           "subcategory": null,
-          "useCases": [
-            "AI processing indicator",
-            "LLM response loading",
-            "AI feature loading state",
-            "Generative AI operations"
-          ],
-          "avoidWhen": [
-            "Non-AI loading (use busy-indicator)",
-            "Known progress (use progress-indicator)",
-            "Page loading (use skeleton)"
-          ],
+          "useCases": [],
+          "avoidWhen": [],
           "accessibility": {
             "role": null,
             "ariaAttributes": []
           },
-          "relatedComponents": [
-            "busy-indicator",
-            "ai-loading-bar"
-          ],
+          "relatedComponents": [],
           "dependencies": []
         },
         {
@@ -256,27 +218,15 @@
           "variables": [],
           "tags": [],
           "examples": [],
-          "category": "ai-components",
+          "category": "uncategorized",
           "subcategory": null,
-          "useCases": [
-            "AI content generation progress",
-            "LLM streaming response",
-            "AI processing with progress",
-            "Generative AI loading bar"
-          ],
-          "avoidWhen": [
-            "Non-AI progress (use progress-indicator)",
-            "Indeterminate loading (use ai-busy-indicator)",
-            "Quick operations (use busy-indicator)"
-          ],
+          "useCases": [],
+          "avoidWhen": [],
           "accessibility": {
             "role": null,
             "ariaAttributes": []
           },
-          "relatedComponents": [
-            "ai-busy-indicator",
-            "progress-indicator"
-          ],
+          "relatedComponents": [],
           "dependencies": []
         },
         {
@@ -296,27 +246,15 @@
           "variables": [],
           "tags": [],
           "examples": [],
-          "category": "ai-components",
+          "category": "uncategorized",
           "subcategory": null,
-          "useCases": [
-            "AI-generated text display",
-            "LLM response formatting",
-            "Streaming text output",
-            "AI content presentation"
-          ],
-          "avoidWhen": [
-            "Regular text (use text)",
-            "User input (use textarea)",
-            "Code display (use code)"
-          ],
+          "useCases": [],
+          "avoidWhen": [],
           "accessibility": {
             "role": null,
             "ariaAttributes": []
           },
-          "relatedComponents": [
-            "text",
-            "ai-writing-assistant"
-          ],
+          "relatedComponents": [],
           "dependencies": []
         },
         {
@@ -331,7 +269,7 @@
           "variables": [],
           "tags": [],
           "examples": [],
-          "category": "ai-components",
+          "category": "uncategorized",
           "subcategory": null,
           "useCases": [],
           "avoidWhen": [],
@@ -339,11 +277,7 @@
             "role": null,
             "ariaAttributes": []
           },
-          "relatedComponents": [
-            "ai-writing-assistant",
-            "ai-text",
-            "ai-busy-indicator"
-          ],
+          "relatedComponents": [],
           "dependencies": []
         },
         {
@@ -360,49 +294,24 @@
           ],
           "tags": [],
           "examples": [],
-          "category": "ai-components",
+          "category": "uncategorized",
           "subcategory": null,
-          "useCases": [
-            "AI writing suggestions",
-            "Content assistance UI",
-            "AI-powered text editor",
-            "Writing enhancement tools"
-          ],
-          "avoidWhen": [
-            "Simple text input (use textarea)",
-            "AI status only (use ai-text)",
-            "Non-writing AI features"
-          ],
+          "useCases": [],
+          "avoidWhen": [],
           "accessibility": {
             "role": null,
             "ariaAttributes": []
           },
-          "relatedComponents": [
-            "ai-text",
-            "prompt-input",
-            "textarea"
-          ],
+          "relatedComponents": [],
           "dependencies": []
         },
         {
           "id": "alert",
           "name": "Alert",
-          "category": "feedback",
-          "subcategory": "messages",
-          "description": "Important message banner for critical system messages",
+          "description": "Alert component",
           "baseClass": "fd-alert",
           "cssImport": "fundamental-styles/dist/alert.css",
           "storybookUrl": "https://sap.github.io/fundamental-styles/?path=/docs/components-alert",
-          "useCases": [
-            "Display critical messages",
-            "System notifications",
-            "Important announcements",
-            "Error notifications"
-          ],
-          "avoidWhen": [
-            "Inline feedback (use message-strip)",
-            "Temporary messages (use message-toast)"
-          ],
           "modifiers": [
             {
               "class": "fd-alert--dismissible",
@@ -429,20 +338,6 @@
               "description": "no-icon variant"
             }
           ],
-          "accessibility": {
-            "role": "alert",
-            "ariaAttributes": [
-              "aria-live"
-            ],
-            "focusManagement": true
-          },
-          "relatedComponents": [
-            "message-strip",
-            "message-toast",
-            "notification"
-          ],
-          "dependencies": [],
-          "tags": [],
           "elements": [
             {
               "class": "fd-alert__close",
@@ -456,7 +351,18 @@
             }
           ],
           "variables": [],
-          "examples": []
+          "tags": [],
+          "examples": [],
+          "category": "uncategorized",
+          "subcategory": null,
+          "useCases": [],
+          "avoidWhen": [],
+          "accessibility": {
+            "role": null,
+            "ariaAttributes": []
+          },
+          "relatedComponents": [],
+          "dependencies": []
         },
         {
           "id": "avatar-group",
@@ -618,44 +524,24 @@
             "individual-type",
             "overflow"
           ],
-          "category": "visual",
+          "category": "uncategorized",
           "subcategory": null,
-          "useCases": [
-            "Multiple user avatars",
-            "Team member display",
-            "Participant list preview",
-            "Collaborative users indicator"
-          ],
-          "avoidWhen": [
-            "Single user (use avatar)",
-            "Full user list (use list)",
-            "User selection (use tokenizer)"
-          ],
+          "useCases": [],
+          "avoidWhen": [],
           "accessibility": {
             "role": null,
             "ariaAttributes": []
           },
-          "relatedComponents": [
-            "avatar",
-            "list"
-          ],
+          "relatedComponents": [],
           "dependencies": []
         },
         {
           "id": "avatar",
           "name": "Avatar",
-          "category": "visual",
-          "subcategory": "identity",
-          "description": "User profile picture or initials display",
+          "description": "The avatar control is used for presenting various images, including user profiles, user initials, placeholder images, icons, or business-related images like product pictures.",
           "baseClass": "fd-avatar",
           "cssImport": "fundamental-styles/dist/avatar.css",
           "storybookUrl": "https://sap.github.io/fundamental-styles/?path=/docs/components-avatar",
-          "useCases": [
-            "Display user images",
-            "Show user initials",
-            "Represent users in UI",
-            "Profile indicators"
-          ],
           "modifiers": [
             {
               "class": "fd-avatar--interactive",
@@ -818,19 +704,6 @@
               "description": "96 variant"
             }
           ],
-          "accessibility": {
-            "role": "img",
-            "ariaAttributes": [
-              "aria-label"
-            ],
-            "altTextRequired": true
-          },
-          "relatedComponents": [
-            "avatar-group",
-            "icon"
-          ],
-          "dependencies": [],
-          "tags": [],
           "elements": [
             {
               "class": "fd-avatar__zoom-icon",
@@ -933,6 +806,7 @@
             "--fdAvatar_Overflow_Border_Width",
             "--fdAvatarZoomIconOffset"
           ],
+          "tags": [],
           "examples": [
             "accent-colors-shell-header-context",
             "accent-colors",
@@ -949,12 +823,21 @@
             "value-states",
             "zoom-icon"
           ],
-          "avoidWhen": []
+          "category": "uncategorized",
+          "subcategory": null,
+          "useCases": [],
+          "avoidWhen": [],
+          "accessibility": {
+            "role": null,
+            "ariaAttributes": []
+          },
+          "relatedComponents": [],
+          "dependencies": []
         },
         {
           "id": "badge",
           "name": "Badge",
-          "description": "Badges display small amounts of color-coded meta information. Use to highlight entity states, notifications, or counts (e.g., \"3 pending items\"). Can be filled or outlined, with semantic colors for status indication.",
+          "description": "Badge component",
           "baseClass": "fd-badge",
           "cssImport": "fundamental-styles/dist/badge.css",
           "storybookUrl": "https://sap.github.io/fundamental-styles/?path=/docs/components-badge",
@@ -970,28 +853,15 @@
           ],
           "tags": [],
           "examples": [],
-          "category": "visual",
+          "category": "uncategorized",
           "subcategory": null,
-          "useCases": [
-            "Notification count",
-            "Status indicator",
-            "New item marker",
-            "Unread count display"
-          ],
-          "avoidWhen": [
-            "Semantic status (use object-status)",
-            "Colored labels (use info-label)",
-            "Large numbers (use counter)"
-          ],
+          "useCases": [],
+          "avoidWhen": [],
           "accessibility": {
             "role": null,
             "ariaAttributes": []
           },
-          "relatedComponents": [
-            "counter",
-            "info-label",
-            "object-status"
-          ],
+          "relatedComponents": [],
           "dependencies": []
         },
         {
@@ -1148,28 +1018,15 @@
             "responsive",
             "subheader"
           ],
-          "category": "toolbars",
+          "category": "uncategorized",
           "subcategory": null,
-          "useCases": [
-            "Header bar for dialogs and pages",
-            "Footer bar with action buttons",
-            "Subheader for additional context",
-            "Container for title and actions"
-          ],
-          "avoidWhen": [
-            "Main app navigation (use shellbar)",
-            "Page-level actions outside dialog (use action-bar)",
-            "Toolbar within content (use toolbar)"
-          ],
+          "useCases": [],
+          "avoidWhen": [],
           "accessibility": {
             "role": null,
             "ariaAttributes": []
           },
-          "relatedComponents": [
-            "action-bar",
-            "toolbar",
-            "shellbar"
-          ],
+          "relatedComponents": [],
           "dependencies": []
         },
         {
@@ -1224,27 +1081,15 @@
             "standard",
             "styles"
           ],
-          "category": "navigation",
-          "subcategory": "hierarchical",
-          "useCases": [
-            "Show current location in hierarchy",
-            "Enable navigation to parent pages",
-            "Display path in multi-level apps",
-            "Provide context in deep navigation"
-          ],
-          "avoidWhen": [
-            "Single-level apps (not needed)",
-            "Primary navigation (use side-nav)",
-            "Tab-based navigation (use tabs)"
-          ],
+          "category": "uncategorized",
+          "subcategory": null,
+          "useCases": [],
+          "avoidWhen": [],
           "accessibility": {
             "role": null,
             "ariaAttributes": []
           },
-          "relatedComponents": [
-            "side-nav",
-            "shellbar"
-          ],
+          "relatedComponents": [],
           "dependencies": []
         },
         {
@@ -1292,34 +1137,21 @@
             "extended-busy-indicator",
             "standard"
           ],
-          "category": "feedback",
-          "subcategory": "loading",
-          "useCases": [
-            "Show loading state for async operations",
-            "Indicate content is being fetched",
-            "Block interaction during processing",
-            "Display indeterminate progress"
-          ],
-          "avoidWhen": [
-            "Known progress percentage (use progress-indicator)",
-            "Page-level loading (use skeleton)",
-            "Background operations (no indicator needed)"
-          ],
+          "category": "uncategorized",
+          "subcategory": null,
+          "useCases": [],
+          "avoidWhen": [],
           "accessibility": {
             "role": null,
             "ariaAttributes": []
           },
-          "relatedComponents": [
-            "progress-indicator",
-            "skeleton",
-            "ai-busy-indicator"
-          ],
+          "relatedComponents": [],
           "dependencies": []
         },
         {
           "id": "button-split",
           "name": "Button Split",
-          "description": "Split buttons combine a primary action with a dropdown menu of related secondary actions. The primary action executes immediately when clicked, while the arrow reveals additional options. Use when one option is used more frequently than others.",
+          "description": "Button Split component",
           "baseClass": "fd-button-split",
           "cssImport": "fundamental-styles/dist/button-split.css",
           "storybookUrl": "https://sap.github.io/fundamental-styles/?path=/docs/components-button-split",
@@ -1386,48 +1218,24 @@
           "examples": [
             "split-menu-button"
           ],
-          "category": "buttons",
-          "subcategory": "action",
-          "useCases": [
-            "Primary action with additional options",
-            "Save with save-as dropdown",
-            "Send with send options",
-            "Default action plus alternatives"
-          ],
-          "avoidWhen": [
-            "All actions equal priority (use segmented-button)",
-            "Simple single action (use button)",
-            "Menu trigger only (use menu button)"
-          ],
+          "category": "uncategorized",
+          "subcategory": null,
+          "useCases": [],
+          "avoidWhen": [],
           "accessibility": {
             "role": null,
             "ariaAttributes": []
           },
-          "relatedComponents": [
-            "button",
-            "segmented-button",
-            "menu"
-          ],
+          "relatedComponents": [],
           "dependencies": []
         },
         {
           "id": "button",
           "name": "Button",
-          "category": "interactive",
-          "subcategory": "buttons",
-          "description": "Action trigger with multiple styles for different semantic meanings",
+          "description": "The button component is used to trigger an action. All buttons are characterized by the \\",
           "baseClass": "fd-button",
           "cssImport": "fundamental-styles/dist/button.css",
           "storybookUrl": "https://sap.github.io/fundamental-styles/?path=/docs/components-button",
-          "useCases": [
-            "Trigger actions",
-            "Submit forms",
-            "Open dialogs",
-            "Primary and secondary actions"
-          ],
-          "avoidWhen": [
-            "Navigating to a different page (use link instead)"
-          ],
           "modifiers": [
             {
               "class": "fd-button--attention",
@@ -1512,24 +1320,6 @@
               "modifiers": []
             }
           ],
-          "accessibility": {
-            "role": "button",
-            "ariaAttributes": [
-              "aria-pressed",
-              "aria-label",
-              "aria-disabled"
-            ],
-            "keyboardSupport": true,
-            "screenReaderSupport": true
-          },
-          "relatedComponents": [
-            "button-split",
-            "segmented-button",
-            "link",
-            "menu"
-          ],
-          "dependencies": [],
-          "tags": [],
           "variables": [
             "--fdButton_Clickable_Height",
             "--fdButton_Padding_X",
@@ -1608,6 +1398,7 @@
             "--fdElementTextColor",
             "--fdElementIconColor"
           ],
+          "tags": [],
           "examples": [
             "badge-on-button",
             "button-states",
@@ -1616,7 +1407,17 @@
             "menu-button",
             "styles",
             "toggle"
-          ]
+          ],
+          "category": "uncategorized",
+          "subcategory": null,
+          "useCases": [],
+          "avoidWhen": [],
+          "accessibility": {
+            "role": null,
+            "ariaAttributes": []
+          },
+          "relatedComponents": [],
+          "dependencies": []
         },
         {
           "id": "calendar",
@@ -1905,43 +1706,65 @@
             "two-month-view",
             "years"
           ],
-          "category": "date-time",
+          "category": "uncategorized",
           "subcategory": null,
-          "useCases": [
-            "Date picker component",
-            "Date range selection",
-            "Schedule/event display",
-            "Inline date selection"
-          ],
-          "avoidWhen": [
-            "Time-only selection (use time)",
-            "Simple date input (use input with type=date)",
-            "Date and time together (use combined picker)"
-          ],
+          "useCases": [],
+          "avoidWhen": [],
           "accessibility": {
             "role": null,
             "ariaAttributes": []
           },
-          "relatedComponents": [
-            "time",
-            "timepicker"
-          ],
+          "relatedComponents": [],
           "dependencies": []
         },
         {
           "id": "card",
           "name": "Card",
-          "category": "containers",
-          "subcategory": "cards",
-          "description": "Content card container for grouping related information",
+          "description": "The Card is a container that consists of a <b>Header</b>, <b>Extended Header</b>, <b>Numeric Content</b>, <b>Content</b> and <b>Footer area</b>. ",
           "baseClass": "fd-card",
           "cssImport": "fundamental-styles/dist/card.css",
           "storybookUrl": "https://sap.github.io/fundamental-styles/?path=/docs/components-card",
-          "useCases": [
-            "Group related content",
-            "Dashboard widgets",
-            "Content previews",
-            "Visual grouping"
+          "modifiers": [
+            {
+              "class": "fd-card--interactive",
+              "description": "interactive variant"
+            },
+            {
+              "class": "fd-card--top-aligned",
+              "description": "top-aligned variant"
+            },
+            {
+              "class": "fd-card--bottom-aligned",
+              "description": "bottom-aligned variant"
+            },
+            {
+              "class": "fd-card--right-aligned",
+              "description": "right-aligned variant"
+            },
+            {
+              "class": "fd-card--with-spacing",
+              "description": "with-spacing variant"
+            },
+            {
+              "class": "fd-card--horizontal",
+              "description": "horizontal variant"
+            },
+            {
+              "class": "fd-card--analytical",
+              "description": "analytical variant"
+            },
+            {
+              "class": "fd-card--table",
+              "description": "table variant"
+            },
+            {
+              "class": "fd-card--object",
+              "description": "object variant"
+            },
+            {
+              "class": "fd-card--banner",
+              "description": "banner variant"
+            }
           ],
           "elements": [
             {
@@ -2206,57 +2029,6 @@
               "modifiers": []
             }
           ],
-          "relatedComponents": [
-            "tile",
-            "panel",
-            "layout"
-          ],
-          "dependencies": [],
-          "tags": [
-            "development"
-          ],
-          "modifiers": [
-            {
-              "class": "fd-card--interactive",
-              "description": "interactive variant"
-            },
-            {
-              "class": "fd-card--top-aligned",
-              "description": "top-aligned variant"
-            },
-            {
-              "class": "fd-card--bottom-aligned",
-              "description": "bottom-aligned variant"
-            },
-            {
-              "class": "fd-card--right-aligned",
-              "description": "right-aligned variant"
-            },
-            {
-              "class": "fd-card--with-spacing",
-              "description": "with-spacing variant"
-            },
-            {
-              "class": "fd-card--horizontal",
-              "description": "horizontal variant"
-            },
-            {
-              "class": "fd-card--analytical",
-              "description": "analytical variant"
-            },
-            {
-              "class": "fd-card--table",
-              "description": "table variant"
-            },
-            {
-              "class": "fd-card--object",
-              "description": "object variant"
-            },
-            {
-              "class": "fd-card--banner",
-              "description": "banner variant"
-            }
-          ],
           "variables": [
             "--fdCard_Border",
             "--fdCard_Border_Corner_Radius",
@@ -2314,6 +2086,9 @@
             "--fdCard_Media_Image_Width",
             "--fdCard_Media_Image_Height"
           ],
+          "tags": [
+            "development"
+          ],
           "examples": [
             "analytical-card",
             "card-anatomy",
@@ -2330,11 +2105,16 @@
             "object-card",
             "table-card"
           ],
+          "category": "uncategorized",
+          "subcategory": null,
+          "useCases": [],
           "avoidWhen": [],
           "accessibility": {
             "role": null,
             "ariaAttributes": []
-          }
+          },
+          "relatedComponents": [],
+          "dependencies": []
         },
         {
           "id": "carousel",
@@ -2511,47 +2291,24 @@
             "error",
             "horizontal-carousel"
           ],
-          "category": "specialized",
+          "category": "uncategorized",
           "subcategory": null,
-          "useCases": [
-            "Image gallery with navigation",
-            "Product image slideshow",
-            "Feature showcase",
-            "Content rotation"
-          ],
-          "avoidWhen": [
-            "Critical information (users may miss slides)",
-            "Forms or interactive content",
-            "Small number of items (use static layout)"
-          ],
+          "useCases": [],
+          "avoidWhen": [],
           "accessibility": {
             "role": null,
             "ariaAttributes": []
           },
-          "relatedComponents": [
-            "card",
-            "tile"
-          ],
+          "relatedComponents": [],
           "dependencies": []
         },
         {
           "id": "checkbox",
           "name": "Checkbox",
-          "category": "forms",
-          "subcategory": "selection",
-          "description": "Multiple selection control for selecting multiple options",
+          "description": "Checkbox component",
           "baseClass": "fd-checkbox",
           "cssImport": "fundamental-styles/dist/checkbox.css",
           "storybookUrl": "https://sap.github.io/fundamental-styles/?path=/docs/components-checkbox",
-          "useCases": [
-            "Multiple selections",
-            "Toggle options on/off",
-            "Agree to terms"
-          ],
-          "avoidWhen": [
-            "Single selection (use radio button)",
-            "Binary toggle (consider switch)"
-          ],
           "modifiers": [
             {
               "class": "fd-checkbox--required",
@@ -2562,21 +2319,6 @@
               "description": "wrap variant"
             }
           ],
-          "accessibility": {
-            "role": "checkbox",
-            "ariaAttributes": [
-              "aria-checked",
-              "aria-label"
-            ],
-            "labelRequired": true
-          },
-          "relatedComponents": [
-            "radio",
-            "switch",
-            "form-item"
-          ],
-          "dependencies": [],
-          "tags": [],
           "elements": [
             {
               "class": "fd-checkbox__label",
@@ -2652,7 +2394,18 @@
             "--fdCheckbox_Tristate_Compact_Offset",
             "--fdCheckbox_Compact_Outline_Border_Radius"
           ],
-          "examples": []
+          "tags": [],
+          "examples": [],
+          "category": "uncategorized",
+          "subcategory": null,
+          "useCases": [],
+          "avoidWhen": [],
+          "accessibility": {
+            "role": null,
+            "ariaAttributes": []
+          },
+          "relatedComponents": [],
+          "dependencies": []
         },
         {
           "id": "code",
@@ -2674,32 +2427,21 @@
             "inline-code",
             "primary"
           ],
-          "category": "typography",
+          "category": "uncategorized",
           "subcategory": null,
-          "useCases": [
-            "Code snippet display",
-            "Inline code formatting",
-            "Technical values",
-            "Monospace text"
-          ],
-          "avoidWhen": [
-            "Regular text (use text)",
-            "Editable code (use textarea)",
-            "Long code blocks (use external code editor)"
-          ],
+          "useCases": [],
+          "avoidWhen": [],
           "accessibility": {
             "role": null,
             "ariaAttributes": []
           },
-          "relatedComponents": [
-            "text"
-          ],
+          "relatedComponents": [],
           "dependencies": []
         },
         {
           "id": "counter",
           "name": "Counter",
-          "description": "Counters display numerical values with optional indicators (e.g., \"5 new messages\"). Typically used in navigation items, cards, or list headers to show counts, notifications, or status summaries.",
+          "description": "Counter component",
           "baseClass": "fd-counter",
           "cssImport": "fundamental-styles/dist/counter.css",
           "storybookUrl": "https://sap.github.io/fundamental-styles/?path=/docs/components-counter",
@@ -2720,49 +2462,24 @@
             "primary",
             "tabs"
           ],
-          "category": "visual",
+          "category": "uncategorized",
           "subcategory": null,
-          "useCases": [
-            "Show count of items",
-            "Badge with number",
-            "Notification count indicator",
-            "Quantity display"
-          ],
-          "avoidWhen": [
-            "Status indication (use badge or object-status)",
-            "Large numbers with units (use object-number)",
-            "Interactive counters (use step-input)"
-          ],
+          "useCases": [],
+          "avoidWhen": [],
           "accessibility": {
             "role": null,
             "ariaAttributes": []
           },
-          "relatedComponents": [
-            "badge",
-            "object-number",
-            "step-input"
-          ],
+          "relatedComponents": [],
           "dependencies": []
         },
         {
           "id": "dialog",
           "name": "Dialog",
-          "category": "overlays",
-          "subcategory": "dialogs",
-          "description": "Modal dialog window for displaying important information or forms",
+          "description": "The dialog component is a container that appears in response to an action made by the user. It interrupts the app’s current process to prompt the user for either information or a confirmation, which requires them to make a decision before the process can continue. Dialog displays in a fixed position and is activated by adding the \\",
           "baseClass": "fd-dialog",
           "cssImport": "fundamental-styles/dist/dialog.css",
           "storybookUrl": "https://sap.github.io/fundamental-styles/?path=/docs/components-dialog",
-          "useCases": [
-            "Display important information",
-            "Show forms in overlay",
-            "Get user confirmation",
-            "Critical decisions"
-          ],
-          "avoidWhen": [
-            "Supplementary info (use popover)",
-            "Simple confirmations (use message-box)"
-          ],
           "modifiers": [
             {
               "class": "fd-dialog--active",
@@ -2860,25 +2577,8 @@
               "modifiers": []
             }
           ],
-          "accessibility": {
-            "role": "dialog",
-            "ariaAttributes": [
-              "aria-labelledby",
-              "aria-describedby",
-              "aria-modal"
-            ],
-            "focusManagement": true,
-            "escapeKey": true
-          },
-          "relatedComponents": [
-            "popover",
-            "message-box",
-            "button",
-            "bar"
-          ],
-          "dependencies": [],
-          "tags": [],
           "variables": [],
+          "tags": [],
           "examples": [
             "default-dialog",
             "device-specifications",
@@ -2889,12 +2589,22 @@
             "selectable",
             "sizes",
             "vertical-form-in-dialog"
-          ]
+          ],
+          "category": "uncategorized",
+          "subcategory": null,
+          "useCases": [],
+          "avoidWhen": [],
+          "accessibility": {
+            "role": null,
+            "ariaAttributes": []
+          },
+          "relatedComponents": [],
+          "dependencies": []
         },
         {
           "id": "dynamic-page",
           "name": "Dynamic Page",
-          "description": "Dynamic Page is foundation for all SAP pages. Generic layout supporting various use cases with variable header and page content. Header is collapsible to help users focus on content while keeping important header info and actions readily available. Uses foundation layout components (dynamic page header, footer toolbar).",
+          "description": "Dynamic Page component",
           "baseClass": "fd-dynamic-page",
           "cssImport": "fundamental-styles/dist/dynamic-page.css",
           "storybookUrl": "https://sap.github.io/fundamental-styles/?path=/docs/components-dynamic-page",
@@ -3109,34 +2819,21 @@
           ],
           "tags": [],
           "examples": [],
-          "category": "specialized",
+          "category": "uncategorized",
           "subcategory": null,
-          "useCases": [
-            "Object detail pages",
-            "Collapsible header with content",
-            "Pages with hero section",
-            "Master-detail layouts"
-          ],
-          "avoidWhen": [
-            "Simple pages (use page)",
-            "List views (use list or table)",
-            "Dashboard layouts (use layout-grid)"
-          ],
+          "useCases": [],
+          "avoidWhen": [],
           "accessibility": {
             "role": null,
             "ariaAttributes": []
           },
-          "relatedComponents": [
-            "page",
-            "panel",
-            "section"
-          ],
+          "relatedComponents": [],
           "dependencies": []
         },
         {
           "id": "dynamic-side-content",
           "name": "Dynamic Side Content",
-          "description": "Dynamic Side Content is layout control displaying supplemental content in separate area to support understanding of main content. Two elements: side content section (`.fd-dynamic-side__side`) and main content section (`.fd-dynamic-side__main`). Screen width ratio varies based on available space - side displays left/right or bottom if space limited.",
+          "description": "Dynamic Side Content component",
           "baseClass": "fd-dynamic-side-content",
           "cssImport": "fundamental-styles/dist/dynamic-side-content.css",
           "storybookUrl": "https://sap.github.io/fundamental-styles/?path=/docs/components-dynamic-side-content",
@@ -3166,33 +2863,21 @@
           "variables": [],
           "tags": [],
           "examples": [],
-          "category": "layout",
+          "category": "uncategorized",
           "subcategory": null,
-          "useCases": [
-            "Responsive side panel",
-            "Context-sensitive sidebar",
-            "Collapsible side content",
-            "Main content with side panel"
-          ],
-          "avoidWhen": [
-            "Navigation sidebar (use side-nav)",
-            "Fixed layouts (use splitter)",
-            "Multi-column (use flexible-column-layout)"
-          ],
+          "useCases": [],
+          "avoidWhen": [],
           "accessibility": {
             "role": null,
             "ariaAttributes": []
           },
-          "relatedComponents": [
-            "splitter",
-            "flexible-column-layout"
-          ],
+          "relatedComponents": [],
           "dependencies": []
         },
         {
           "id": "facet",
           "name": "Facet",
-          "description": "Facets display key-value pairs in a compact, scannable format. Use in object headers or cards to show essential information like status, date, owner, or metrics. Supports icons and semantic colors.",
+          "description": "Facet component",
           "baseClass": "fd-facet",
           "cssImport": "fundamental-styles/dist/facet.css",
           "storybookUrl": "https://sap.github.io/fundamental-styles/?path=/docs/components-facet",
@@ -3229,28 +2914,15 @@
           "variables": [],
           "tags": [],
           "examples": [],
-          "category": "containers",
+          "category": "uncategorized",
           "subcategory": null,
-          "useCases": [
-            "Object page header sections",
-            "Key-value facet display",
-            "Metadata grouping",
-            "Object attributes container"
-          ],
-          "avoidWhen": [
-            "Form sections (use form-group)",
-            "Collapsible content (use panel)",
-            "Simple sections (use section)"
-          ],
+          "useCases": [],
+          "avoidWhen": [],
           "accessibility": {
             "role": null,
             "ariaAttributes": []
           },
-          "relatedComponents": [
-            "section",
-            "object-attribute",
-            "dynamic-page"
-          ],
+          "relatedComponents": [],
           "dependencies": []
         },
         {
@@ -3281,27 +2953,15 @@
             "standard",
             "without-user-image"
           ],
-          "category": "social",
+          "category": "uncategorized",
           "subcategory": null,
-          "useCases": [
-            "Comment input field",
-            "Chat message input",
-            "Social post creation",
-            "Threaded discussion input"
-          ],
-          "avoidWhen": [
-            "Simple text input (use textarea)",
-            "Form fields (use input)",
-            "Rich text editing (use external editor)"
-          ],
+          "useCases": [],
+          "avoidWhen": [],
           "accessibility": {
             "role": null,
             "ariaAttributes": []
           },
-          "relatedComponents": [
-            "feed-list",
-            "textarea"
-          ],
+          "relatedComponents": [],
           "dependencies": []
         },
         {
@@ -3411,34 +3071,21 @@
             "standard",
             "with-actions"
           ],
-          "category": "social",
+          "category": "uncategorized",
           "subcategory": null,
-          "useCases": [
-            "Activity feed display",
-            "Comment threads",
-            "Timeline of events",
-            "Social updates list"
-          ],
-          "avoidWhen": [
-            "Structured data (use table or list)",
-            "Simple lists (use list)",
-            "Navigation items (use navigation-list)"
-          ],
+          "useCases": [],
+          "avoidWhen": [],
           "accessibility": {
             "role": null,
             "ariaAttributes": []
           },
-          "relatedComponents": [
-            "feed-input",
-            "list",
-            "notification"
-          ],
+          "relatedComponents": [],
           "dependencies": []
         },
         {
           "id": "fieldset",
           "name": "Fieldset",
-          "description": "A fieldset gives semantic meaning to a group of elements inside a form (e.g., Billing or Shipping Address). Grouping fields provides styling and accessibility benefits, and is especially important for checkbox groups and radio button groups.",
+          "description": "Fieldset component",
           "baseClass": "fd-fieldset",
           "cssImport": "fundamental-styles/dist/fieldset.css",
           "storybookUrl": "https://sap.github.io/fundamental-styles/?path=/docs/components-fieldset",
@@ -3453,27 +3100,15 @@
           "variables": [],
           "tags": [],
           "examples": [],
-          "category": "form-layout",
+          "category": "uncategorized",
           "subcategory": null,
-          "useCases": [
-            "Form field grouping",
-            "Semantic form sections",
-            "Related fields container",
-            "Accessible form groups"
-          ],
-          "avoidWhen": [
-            "Visual grouping only (use form-group)",
-            "Layout sections (use section)",
-            "Complex forms (use form-layout-grid)"
-          ],
+          "useCases": [],
+          "avoidWhen": [],
           "accessibility": {
             "role": null,
             "ariaAttributes": []
           },
-          "relatedComponents": [
-            "form-group",
-            "form-layout-grid"
-          ],
+          "relatedComponents": [],
           "dependencies": []
         },
         {
@@ -3531,27 +3166,15 @@
             "selected",
             "status"
           ],
-          "category": "form-inputs",
-          "subcategory": "file",
-          "useCases": [
-            "Single or multiple file upload",
-            "Document attachment",
-            "Image upload",
-            "Drag and drop file input"
-          ],
-          "avoidWhen": [
-            "File management (use upload-collection)",
-            "Simple text input (use input)",
-            "URL input (use input with validation)"
-          ],
+          "category": "uncategorized",
+          "subcategory": null,
+          "useCases": [],
+          "avoidWhen": [],
           "accessibility": {
             "role": null,
             "ariaAttributes": []
           },
-          "relatedComponents": [
-            "upload-collection",
-            "input"
-          ],
+          "relatedComponents": [],
           "dependencies": []
         },
         {
@@ -3602,34 +3225,21 @@
           "variables": [],
           "tags": [],
           "examples": [],
-          "category": "layout",
+          "category": "uncategorized",
           "subcategory": null,
-          "useCases": [
-            "Fixed-size card grid",
-            "Dashboard with fixed cards",
-            "Non-resizable card layout",
-            "Static card arrangement"
-          ],
-          "avoidWhen": [
-            "Resizable cards (use resizable-card-layout)",
-            "Responsive grids (use layout-grid)",
-            "Lists (use grid-list)"
-          ],
+          "useCases": [],
+          "avoidWhen": [],
           "accessibility": {
             "role": null,
             "ariaAttributes": []
           },
-          "relatedComponents": [
-            "resizable-card-layout",
-            "layout-grid",
-            "card"
-          ],
+          "relatedComponents": [],
           "dependencies": []
         },
         {
           "id": "flexible-column-layout",
           "name": "Flexible Column Layout",
-          "description": "Flexible Column Layout is layout control displaying multiple floorplans on single page. Enables faster, more fluid navigation between floorplans than page-by-page. Offers layouts with up to 3 columns (1, 2, 3). Users can resize columns, switch layouts, view rightmost column in full screen. Responsive for desktop and mobile.",
+          "description": "Flexible Column Layout component",
           "baseClass": "fd-flexible-column-layout",
           "cssImport": "fundamental-styles/dist/flexible-column-layout.css",
           "storybookUrl": "https://sap.github.io/fundamental-styles/?path=/docs/components-flexible-column-layout",
@@ -3669,34 +3279,21 @@
           ],
           "tags": [],
           "examples": [],
-          "category": "layout",
+          "category": "uncategorized",
           "subcategory": null,
-          "useCases": [
-            "Master-detail-detail views",
-            "Responsive multi-column layout",
-            "Progressive disclosure patterns",
-            "List to detail navigation"
-          ],
-          "avoidWhen": [
-            "Simple two-column (use splitter)",
-            "Dashboard grids (use layout-grid)",
-            "Single page content (use page)"
-          ],
+          "useCases": [],
+          "avoidWhen": [],
           "accessibility": {
             "role": null,
             "ariaAttributes": []
           },
-          "relatedComponents": [
-            "splitter",
-            "layout-grid",
-            "dynamic-side-content"
-          ],
+          "relatedComponents": [],
           "dependencies": []
         },
         {
           "id": "form-group",
           "name": "Form Group",
-          "description": "Form groups assemble form elements with labels, messages, and help containers. Components like `fd-form__item` with label and control can be used independently when error messages aren't needed.",
+          "description": "Form Group component",
           "baseClass": "fd-form-group",
           "cssImport": "fundamental-styles/dist/form-group.css",
           "storybookUrl": "https://sap.github.io/fundamental-styles/?path=/docs/components-form-group",
@@ -3739,34 +3336,21 @@
           ],
           "tags": [],
           "examples": [],
-          "category": "form-layout",
+          "category": "uncategorized",
           "subcategory": null,
-          "useCases": [
-            "Group related form fields",
-            "Form section with header",
-            "Visual form organization",
-            "Field container"
-          ],
-          "avoidWhen": [
-            "Semantic grouping (use fieldset)",
-            "Grid layouts (use form-layout-grid)",
-            "Page sections (use section)"
-          ],
+          "useCases": [],
+          "avoidWhen": [],
           "accessibility": {
             "role": null,
             "ariaAttributes": []
           },
-          "relatedComponents": [
-            "fieldset",
-            "form-layout-grid",
-            "section"
-          ],
+          "relatedComponents": [],
           "dependencies": []
         },
         {
           "id": "form-header",
           "name": "Form Header",
-          "description": "Form headers are titles that provide context about a group of input fields. For example, \"Personal Information\" would categorize fields like Name, Address, etc.",
+          "description": "Form Header component",
           "baseClass": "fd-form-header",
           "cssImport": "fundamental-styles/dist/form-header.css",
           "storybookUrl": "https://sap.github.io/fundamental-styles/?path=/docs/components-form-header",
@@ -3783,42 +3367,29 @@
           ],
           "tags": [],
           "examples": [],
-          "category": "form-layout",
+          "category": "uncategorized",
           "subcategory": null,
-          "useCases": [
-            "Form section title",
-            "Form group header",
-            "Section heading in forms",
-            "Form area label"
-          ],
-          "avoidWhen": [
-            "Page titles (use title)",
-            "Panel headers (use panel)",
-            "Section titles outside forms (use section)"
-          ],
+          "useCases": [],
+          "avoidWhen": [],
           "accessibility": {
             "role": null,
             "ariaAttributes": []
           },
-          "relatedComponents": [
-            "form-group",
-            "title"
-          ],
+          "relatedComponents": [],
           "dependencies": []
         },
         {
           "id": "form-item",
           "name": "Form Item",
-          "category": "forms",
-          "subcategory": "layout",
-          "description": "Container for individual form field with label and input",
+          "description": "Form Item component",
           "baseClass": "fd-form-item",
           "cssImport": "fundamental-styles/dist/form-item.css",
           "storybookUrl": "https://sap.github.io/fundamental-styles/?path=/docs/components-form-item",
-          "useCases": [
-            "Wrap form inputs with labels",
-            "Structure form fields",
-            "Group label and input together"
+          "modifiers": [
+            {
+              "class": "fd-form-item--horizontal",
+              "description": "horizontal variant"
+            }
           ],
           "elements": [
             {
@@ -3827,42 +3398,27 @@
               "modifiers": []
             }
           ],
-          "accessibility": {
-            "labelInputAssociation": true
-          },
-          "relatedComponents": [
-            "form-group",
-            "form-label",
-            "input",
-            "select",
-            "checkbox"
-          ],
-          "dependencies": [],
-          "tags": [],
-          "modifiers": [
-            {
-              "class": "fd-form-item--horizontal",
-              "description": "horizontal variant"
-            }
-          ],
           "variables": [],
+          "tags": [],
           "examples": [],
-          "avoidWhen": []
+          "category": "uncategorized",
+          "subcategory": null,
+          "useCases": [],
+          "avoidWhen": [],
+          "accessibility": {
+            "role": null,
+            "ariaAttributes": []
+          },
+          "relatedComponents": [],
+          "dependencies": []
         },
         {
           "id": "form-label",
           "name": "Form Label",
-          "category": "forms",
-          "subcategory": "labels",
-          "description": "Label for form inputs with required indicator support",
+          "description": "Form Label component",
           "baseClass": "fd-form-label",
           "cssImport": "fundamental-styles/dist/form-label.css",
           "storybookUrl": "https://sap.github.io/fundamental-styles/?path=/docs/components-form-label",
-          "useCases": [
-            "Label form inputs",
-            "Indicate required fields",
-            "Associate labels with inputs"
-          ],
           "modifiers": [
             {
               "class": "fd-form-label--disabled",
@@ -3893,22 +3449,20 @@
               "description": "stand-alone variant"
             }
           ],
-          "accessibility": {
-            "forAttribute": true,
-            "required": true
-          },
-          "relatedComponents": [
-            "form-item",
-            "input",
-            "select",
-            "textarea"
-          ],
-          "dependencies": [],
-          "tags": [],
           "elements": [],
           "variables": [],
+          "tags": [],
           "examples": [],
-          "avoidWhen": []
+          "category": "uncategorized",
+          "subcategory": null,
+          "useCases": [],
+          "avoidWhen": [],
+          "accessibility": {
+            "role": null,
+            "ariaAttributes": []
+          },
+          "relatedComponents": [],
+          "dependencies": []
         },
         {
           "id": "form-layout-grid",
@@ -3931,33 +3485,21 @@
           "variables": [],
           "tags": [],
           "examples": [],
-          "category": "form-layout",
+          "category": "uncategorized",
           "subcategory": null,
-          "useCases": [
-            "Responsive form layouts",
-            "Multi-column forms",
-            "Complex form structures",
-            "Form field grid"
-          ],
-          "avoidWhen": [
-            "Simple forms (use form-group)",
-            "Single column (use form-item)",
-            "Page layouts (use layout-grid)"
-          ],
+          "useCases": [],
+          "avoidWhen": [],
           "accessibility": {
             "role": null,
             "ariaAttributes": []
           },
-          "relatedComponents": [
-            "form-group",
-            "layout-grid"
-          ],
+          "relatedComponents": [],
           "dependencies": []
         },
         {
           "id": "form-message",
           "name": "Form Message",
-          "description": "Form messages display value state text (success, error, warning, information) shown when focus is on the input field. They work with input control value states to provide feedback to users.",
+          "description": "Form Message component",
           "baseClass": "fd-form-message",
           "cssImport": "fundamental-styles/dist/form-message.css",
           "storybookUrl": "https://sap.github.io/fundamental-styles/?path=/docs/components-form-message",
@@ -3980,27 +3522,15 @@
           ],
           "tags": [],
           "examples": [],
-          "category": "form-layout",
+          "category": "uncategorized",
           "subcategory": null,
-          "useCases": [
-            "Field validation message",
-            "Input error message",
-            "Field help text",
-            "Inline field feedback"
-          ],
-          "avoidWhen": [
-            "Multiple errors (use message-popover)",
-            "Page messages (use message-strip)",
-            "Success feedback (use message-toast)"
-          ],
+          "useCases": [],
+          "avoidWhen": [],
           "accessibility": {
             "role": null,
             "ariaAttributes": []
           },
-          "relatedComponents": [
-            "message-popover",
-            "message-strip"
-          ],
+          "relatedComponents": [],
           "dependencies": []
         },
         {
@@ -4079,34 +3609,21 @@
           "examples": [
             "primary"
           ],
-          "category": "tags",
+          "category": "uncategorized",
           "subcategory": null,
-          "useCases": [
-            "Custom tag display",
-            "Label with optional actions",
-            "Categorization tag",
-            "Filterable tag"
-          ],
-          "avoidWhen": [
-            "Status (use object-status)",
-            "Removable tags (use token)",
-            "Simple labels (use info-label)"
-          ],
+          "useCases": [],
+          "avoidWhen": [],
           "accessibility": {
             "role": null,
             "ariaAttributes": []
           },
-          "relatedComponents": [
-            "token",
-            "info-label",
-            "object-status"
-          ],
+          "relatedComponents": [],
           "dependencies": []
         },
         {
           "id": "grid-list",
           "name": "Grid List",
-          "description": "Grid list displays items in a grid format (not rows), ideal for visual content like images, charts, and object cards that benefit from more height. Usually used as an alternative view for lists or tables, focusing on complete items rather than cells.",
+          "description": "Grid List component",
           "baseClass": "fd-item",
           "cssImport": "fundamental-styles/dist/grid-list.css",
           "storybookUrl": "https://sap.github.io/fundamental-styles/?path=/docs/components-grid-list",
@@ -4171,28 +3688,15 @@
           ],
           "tags": [],
           "examples": [],
-          "category": "data-display",
-          "subcategory": "grid",
-          "useCases": [
-            "Card grid layout",
-            "Product catalog display",
-            "Media gallery",
-            "Tile-based content"
-          ],
-          "avoidWhen": [
-            "Tabular data (use table)",
-            "Simple lists (use list)",
-            "Single column (use list)"
-          ],
+          "category": "uncategorized",
+          "subcategory": null,
+          "useCases": [],
+          "avoidWhen": [],
           "accessibility": {
             "role": null,
             "ariaAttributes": []
           },
-          "relatedComponents": [
-            "list",
-            "table",
-            "card"
-          ],
+          "relatedComponents": [],
           "dependencies": []
         },
         {
@@ -4207,7 +3711,7 @@
           "variables": [],
           "tags": [],
           "examples": [],
-          "category": "utilities",
+          "category": "uncategorized",
           "subcategory": null,
           "useCases": [],
           "avoidWhen": [],
@@ -4215,12 +3719,7 @@
             "role": null,
             "ariaAttributes": []
           },
-          "relatedComponents": [
-            "layout",
-            "layout-grid",
-            "margins",
-            "paddings"
-          ],
+          "relatedComponents": [],
           "dependencies": []
         },
         {
@@ -4235,28 +3734,15 @@
           "variables": [],
           "tags": [],
           "examples": [],
-          "category": "navigation",
+          "category": "uncategorized",
           "subcategory": null,
-          "useCases": [
-            "Secondary navigation below shellbar",
-            "Category navigation",
-            "Horizontal menu bar",
-            "Application areas navigation"
-          ],
-          "avoidWhen": [
-            "Primary navigation (use shellbar)",
-            "Side navigation (use side-nav)",
-            "In-page sections (use tabs)"
-          ],
+          "useCases": [],
+          "avoidWhen": [],
           "accessibility": {
             "role": null,
             "ariaAttributes": []
           },
-          "relatedComponents": [
-            "shellbar",
-            "tabs",
-            "navigation-menu"
-          ],
+          "relatedComponents": [],
           "dependencies": []
         },
         {
@@ -4566,73 +4052,43 @@
             "text-only-semantic",
             "text-only"
           ],
-          "category": "navigation",
-          "subcategory": "tabs",
-          "useCases": [
-            "Tabs with icons and counts",
-            "Filter bar with visual indicators",
-            "Status-based filtering",
-            "Category switching with badges"
-          ],
-          "avoidWhen": [
-            "Simple text tabs (use tabs)",
-            "Navigation between pages (use side-nav)",
-            "Icon-only actions (use toolbar)"
-          ],
+          "category": "uncategorized",
+          "subcategory": null,
+          "useCases": [],
+          "avoidWhen": [],
           "accessibility": {
             "role": null,
             "ariaAttributes": []
           },
-          "relatedComponents": [
-            "tabs",
-            "toolbar",
-            "segmented-button"
-          ],
+          "relatedComponents": [],
           "dependencies": []
         },
         {
           "id": "icon",
           "name": "Icon",
-          "category": "visual",
-          "subcategory": "icons",
-          "description": "SAP icon font for displaying icons throughout the UI",
+          "description": "Icon component",
           "baseClass": "fd-icon",
           "cssImport": "fundamental-styles/dist/icon.css",
           "storybookUrl": "https://sap.github.io/fundamental-styles/?path=/docs/components-icon",
-          "useCases": [
-            "Visual indicators",
-            "Action buttons",
-            "Status indicators",
-            "Navigation elements"
-          ],
           "modifiers": [],
-          "accessibility": {
-            "role": "presentation",
-            "ariaAttributes": [
-              "aria-label"
-            ],
-            "ariaHidden": "Use when decorative"
-          },
-          "relatedComponents": [
-            "button",
-            "avatar",
-            "status-indicator"
-          ],
-          "dependencies": [],
-          "iconCatalogs": [
-            "SAP Icons",
-            "TNT Icons",
-            "Business Suite Icons"
-          ],
-          "tags": [],
           "elements": [],
           "variables": [
             "--fdIcon_Font_Size",
             "--fdIcon_Color",
             "--fdIcon_Background_Color"
           ],
+          "tags": [],
           "examples": [],
-          "avoidWhen": []
+          "category": "uncategorized",
+          "subcategory": null,
+          "useCases": [],
+          "avoidWhen": [],
+          "accessibility": {
+            "role": null,
+            "ariaAttributes": []
+          },
+          "relatedComponents": [],
+          "dependencies": []
         },
         {
           "id": "illustrated-message",
@@ -4772,27 +4228,15 @@
             "small",
             "xsmall"
           ],
-          "category": "feedback",
+          "category": "uncategorized",
           "subcategory": null,
-          "useCases": [
-            "Empty state with illustration",
-            "Error page with visual",
-            "No results found",
-            "First-time user guidance"
-          ],
-          "avoidWhen": [
-            "Inline errors (use message-strip)",
-            "Simple text messages (use text)",
-            "Temporary feedback (use message-toast)"
-          ],
+          "useCases": [],
+          "avoidWhen": [],
           "accessibility": {
             "role": null,
             "ariaAttributes": []
           },
-          "relatedComponents": [
-            "message-page",
-            "message-strip"
-          ],
+          "relatedComponents": [],
           "dependencies": []
         },
         {
@@ -4925,34 +4369,21 @@
             "info-label-with-icon",
             "numeric-info-label"
           ],
-          "category": "visual",
+          "category": "uncategorized",
           "subcategory": null,
-          "useCases": [
-            "Colored status labels",
-            "Category tags",
-            "Priority indicators",
-            "Classification badges"
-          ],
-          "avoidWhen": [
-            "Counts (use counter or badge)",
-            "Object status (use object-status)",
-            "Removable tags (use token)"
-          ],
+          "useCases": [],
+          "avoidWhen": [],
           "accessibility": {
             "role": null,
             "ariaAttributes": []
           },
-          "relatedComponents": [
-            "badge",
-            "object-status",
-            "token"
-          ],
+          "relatedComponents": [],
           "dependencies": []
         },
         {
           "id": "input-group",
           "name": "Input Group",
-          "description": "Input Group combines form inputs with add-ons (text, icons, or buttons) to help users understand the information being entered. Add-ons can be positioned before, after, or on both sides of the input field. Supports validation states (success, error, warning, information).",
+          "description": "Input Group component",
           "baseClass": "fd-input-group",
           "cssImport": "fundamental-styles/dist/input-group.css",
           "storybookUrl": "https://sap.github.io/fundamental-styles/?path=/docs/components-input-group",
@@ -5017,72 +4448,30 @@
           ],
           "tags": [],
           "examples": [],
-          "category": "form-inputs",
-          "subcategory": "composite",
-          "useCases": [
-            "Input with prefix/suffix",
-            "Input with button addon",
-            "Input with icon",
-            "Combined input controls"
-          ],
-          "avoidWhen": [
-            "Simple inputs (use input)",
-            "Dropdown selection (use select)",
-            "Search functionality (use search-field)"
-          ],
+          "category": "uncategorized",
+          "subcategory": null,
+          "useCases": [],
+          "avoidWhen": [],
           "accessibility": {
             "role": null,
             "ariaAttributes": []
           },
-          "relatedComponents": [
-            "input",
-            "search-field",
-            "select"
-          ],
+          "relatedComponents": [],
           "dependencies": []
         },
         {
           "id": "input",
           "name": "Input",
-          "category": "forms",
-          "subcategory": "input",
-          "description": "Single-line text input field for collecting user data",
+          "description": "Input component",
           "baseClass": "fd-input",
           "cssImport": "fundamental-styles/dist/input.css",
           "storybookUrl": "https://sap.github.io/fundamental-styles/?path=/docs/components-input",
-          "useCases": [
-            "Collect short text",
-            "Enter numbers",
-            "Email addresses",
-            "Search terms"
-          ],
-          "avoidWhen": [
-            "Long-form text input (use textarea instead)"
-          ],
           "modifiers": [
             {
               "class": "fd-input--no-number-spinner",
               "description": "no-number-spinner variant"
             }
           ],
-          "accessibility": {
-            "role": "textbox",
-            "ariaAttributes": [
-              "aria-label",
-              "aria-describedby",
-              "aria-invalid",
-              "aria-required"
-            ],
-            "labelRequired": true
-          },
-          "relatedComponents": [
-            "input-group",
-            "form-item",
-            "form-label",
-            "textarea"
-          ],
-          "dependencies": [],
-          "tags": [],
           "elements": [
             {
               "class": "fd-input__sr-only",
@@ -5091,7 +4480,18 @@
             }
           ],
           "variables": [],
-          "examples": []
+          "tags": [],
+          "examples": [],
+          "category": "uncategorized",
+          "subcategory": null,
+          "useCases": [],
+          "avoidWhen": [],
+          "accessibility": {
+            "role": null,
+            "ariaAttributes": []
+          },
+          "relatedComponents": [],
+          "dependencies": []
         },
         {
           "id": "layout-grid",
@@ -5114,33 +4514,21 @@
           "variables": [],
           "tags": [],
           "examples": [],
-          "category": "layout",
+          "category": "uncategorized",
           "subcategory": null,
-          "useCases": [
-            "Responsive grid layouts",
-            "Dashboard card arrangements",
-            "Form column layouts",
-            "Content grid organization"
-          ],
-          "avoidWhen": [
-            "Simple flexbox needs (use sap-flex utilities)",
-            "Master-detail (use flexible-column-layout)",
-            "List layouts (use list)"
-          ],
+          "useCases": [],
+          "avoidWhen": [],
           "accessibility": {
             "role": null,
             "ariaAttributes": []
           },
-          "relatedComponents": [
-            "flexible-column-layout",
-            "fixed-card-layout"
-          ],
+          "relatedComponents": [],
           "dependencies": []
         },
         {
           "id": "layout-panel",
           "name": "Layout Panel",
-          "description": "Layout Panels encapsulate part of content, form elements, lists, collections on a page. Place patterns and interactions within panels to achieve focus and separation for tasks with information displayed inside panel. Organizes content into distinct sections.",
+          "description": "Layout Panel component",
           "baseClass": "fd-layout-panel",
           "cssImport": "fundamental-styles/dist/layout-panel.css",
           "storybookUrl": "https://sap.github.io/fundamental-styles/?path=/docs/components-layout-panel",
@@ -5206,28 +4594,15 @@
           "variables": [],
           "tags": [],
           "examples": [],
-          "category": "layout",
+          "category": "uncategorized",
           "subcategory": null,
-          "useCases": [
-            "Standalone content panel",
-            "Dashboard panel",
-            "Content container with header",
-            "Bordered content area"
-          ],
-          "avoidWhen": [
-            "Collapsible panels (use panel)",
-            "Cards with actions (use card)",
-            "Form sections (use form-group)"
-          ],
+          "useCases": [],
+          "avoidWhen": [],
           "accessibility": {
             "role": null,
             "ariaAttributes": []
           },
-          "relatedComponents": [
-            "panel",
-            "card",
-            "section"
-          ],
+          "relatedComponents": [],
           "dependencies": []
         },
         {
@@ -5242,59 +4617,25 @@
           "variables": [],
           "tags": [],
           "examples": [],
-          "category": "layout",
+          "category": "uncategorized",
           "subcategory": null,
-          "useCases": [
-            "Basic page structure",
-            "Container element",
-            "Content wrapper",
-            "Layout foundation"
-          ],
-          "avoidWhen": [
-            "Complex layouts (use layout-grid)",
-            "Multi-column (use flexible-column-layout)",
-            "Pages (use page component)"
-          ],
+          "useCases": [],
+          "avoidWhen": [],
           "accessibility": {
             "role": null,
             "ariaAttributes": []
           },
-          "relatedComponents": [
-            "page",
-            "layout-grid"
-          ],
+          "relatedComponents": [],
           "dependencies": []
         },
         {
           "id": "link",
           "name": "Link",
-          "category": "interactive",
-          "subcategory": "navigation",
-          "description": "Navigation link for moving to different pages or sections",
+          "description": "A link (also known as hyperlink) is an interactive text element that allows users to navigate to another page or trigger a certain event.",
           "baseClass": "fd-link",
           "cssImport": "fundamental-styles/dist/link.css",
           "storybookUrl": "https://sap.github.io/fundamental-styles/?path=/docs/components-link",
-          "useCases": [
-            "Navigate to another page",
-            "Link to external resources",
-            "In-page navigation"
-          ],
-          "avoidWhen": [
-            "Triggering actions (use button instead)"
-          ],
           "modifiers": [],
-          "accessibility": {
-            "role": "link",
-            "ariaAttributes": [
-              "aria-label"
-            ],
-            "semanticHtml": true
-          },
-          "relatedComponents": [
-            "button"
-          ],
-          "dependencies": [],
-          "tags": [],
           "elements": [
             {
               "class": "fd-link__sr-only",
@@ -5309,27 +4650,26 @@
             "--fdLink_Text_Focus_Color",
             "--fdLink_Text_Decoration_Active"
           ],
-          "examples": []
+          "tags": [],
+          "examples": [],
+          "category": "uncategorized",
+          "subcategory": null,
+          "useCases": [],
+          "avoidWhen": [],
+          "accessibility": {
+            "role": null,
+            "ariaAttributes": []
+          },
+          "relatedComponents": [],
+          "dependencies": []
         },
         {
           "id": "list",
           "name": "List",
-          "category": "data-display",
-          "subcategory": "lists",
-          "description": "Vertical list of items for simple or complex data display",
+          "description": "List component",
           "baseClass": "fd-list",
           "cssImport": "fundamental-styles/dist/list.css",
           "storybookUrl": "https://sap.github.io/fundamental-styles/?path=/docs/components-list",
-          "useCases": [
-            "Display simple lists",
-            "Navigation menus",
-            "Selection lists",
-            "Action lists"
-          ],
-          "avoidWhen": [
-            "Tabular data (use table instead)",
-            "Hierarchical data (use tree instead)"
-          ],
           "modifiers": [
             {
               "class": "fd-list--unread",
@@ -5643,21 +4983,6 @@
               ]
             }
           ],
-          "accessibility": {
-            "role": "list",
-            "ariaAttributes": [
-              "aria-label"
-            ],
-            "semanticHtml": true
-          },
-          "relatedComponents": [
-            "table",
-            "grid-list",
-            "tree",
-            "navigation-list"
-          ],
-          "dependencies": [],
-          "tags": [],
           "variables": [
             "--fdList_Item_Height",
             "--fdList_Item_Border_Color",
@@ -5683,7 +5008,18 @@
             "--fdList_Navigation_Link_Padding_Left",
             "--fdList_Navigation_Link_Padding_Right"
           ],
-          "examples": []
+          "tags": [],
+          "examples": [],
+          "category": "uncategorized",
+          "subcategory": null,
+          "useCases": [],
+          "avoidWhen": [],
+          "accessibility": {
+            "role": null,
+            "ariaAttributes": []
+          },
+          "relatedComponents": [],
+          "dependencies": []
         },
         {
           "id": "margins",
@@ -5722,7 +5058,7 @@
           "variables": [],
           "tags": [],
           "examples": [],
-          "category": "utilities",
+          "category": "uncategorized",
           "subcategory": null,
           "useCases": [],
           "avoidWhen": [],
@@ -5730,28 +5066,16 @@
             "role": null,
             "ariaAttributes": []
           },
-          "relatedComponents": [
-            "paddings",
-            "layout",
-            "layout-grid"
-          ],
+          "relatedComponents": [],
           "dependencies": []
         },
         {
           "id": "menu",
           "name": "Menu",
-          "category": "interactive",
-          "subcategory": "menus",
-          "description": "Contextual menu with list of actions or options",
+          "description": "The menu component is the listing structure with optional headers to create menus.",
           "baseClass": "fd-menu",
           "cssImport": "fundamental-styles/dist/menu.css",
           "storybookUrl": "https://sap.github.io/fundamental-styles/?path=/docs/components-menu",
-          "useCases": [
-            "Display action lists",
-            "Context menus",
-            "Dropdown options",
-            "Navigation menus"
-          ],
           "modifiers": [
             {
               "class": "fd-menu--no-shadow",
@@ -5881,21 +5205,6 @@
               "modifiers": []
             }
           ],
-          "accessibility": {
-            "role": "menu",
-            "ariaAttributes": [
-              "aria-label",
-              "aria-expanded"
-            ],
-            "keyboardNavigation": true
-          },
-          "relatedComponents": [
-            "button",
-            "popover",
-            "action-sheet"
-          ],
-          "dependencies": [],
-          "tags": [],
           "variables": [
             "--fdButton_Menu_Border_Radius",
             "--fdMenu_Icon_Width",
@@ -5921,6 +5230,7 @@
             "--fdMenu_Text_Shadow",
             "--fdMenu_Affordance_Arrow_Size"
           ],
+          "tags": [],
           "examples": [
             "buttons",
             "default",
@@ -5934,7 +5244,16 @@
             "toggle-button",
             "with-submenu"
           ],
-          "avoidWhen": []
+          "category": "uncategorized",
+          "subcategory": null,
+          "useCases": [],
+          "avoidWhen": [],
+          "accessibility": {
+            "role": null,
+            "ariaAttributes": []
+          },
+          "relatedComponents": [],
+          "dependencies": []
         },
         {
           "id": "message-box",
@@ -6031,28 +5350,15 @@
             "structure",
             "types"
           ],
-          "category": "dialogs",
-          "subcategory": "confirmation",
-          "useCases": [
-            "Confirmation dialogs",
-            "Error dialogs requiring acknowledgment",
-            "Warning with user decision",
-            "Information requiring OK"
-          ],
-          "avoidWhen": [
-            "Complex forms (use dialog)",
-            "Non-blocking messages (use message-toast)",
-            "Inline feedback (use message-strip)"
-          ],
+          "category": "uncategorized",
+          "subcategory": null,
+          "useCases": [],
+          "avoidWhen": [],
           "accessibility": {
             "role": null,
             "ariaAttributes": []
           },
-          "relatedComponents": [
-            "dialog",
-            "message-strip",
-            "message-toast"
-          ],
+          "relatedComponents": [],
           "dependencies": []
         },
         {
@@ -6129,27 +5435,15 @@
             "no-items",
             "search"
           ],
-          "category": "feedback",
+          "category": "uncategorized",
           "subcategory": null,
-          "useCases": [
-            "Full page error states",
-            "404 not found pages",
-            "Access denied pages",
-            "Maintenance mode display"
-          ],
-          "avoidWhen": [
-            "Inline errors (use message-strip)",
-            "Empty states within page (use illustrated-message)",
-            "Temporary messages (use message-toast)"
-          ],
+          "useCases": [],
+          "avoidWhen": [],
           "accessibility": {
             "role": null,
             "ariaAttributes": []
           },
-          "relatedComponents": [
-            "illustrated-message",
-            "message-strip"
-          ],
+          "relatedComponents": [],
           "dependencies": []
         },
         {
@@ -6221,49 +5515,24 @@
             "details-view",
             "message-trigger"
           ],
-          "category": "dialogs",
+          "category": "uncategorized",
           "subcategory": null,
-          "useCases": [
-            "Form validation summary",
-            "Multiple error messages",
-            "Warning collection display",
-            "Message center popover"
-          ],
-          "avoidWhen": [
-            "Single inline error (use form-message)",
-            "Page-level message (use message-strip)",
-            "Confirmation needed (use message-box)"
-          ],
+          "useCases": [],
+          "avoidWhen": [],
           "accessibility": {
             "role": null,
             "ariaAttributes": []
           },
-          "relatedComponents": [
-            "form-message",
-            "message-strip",
-            "popover"
-          ],
+          "relatedComponents": [],
           "dependencies": []
         },
         {
           "id": "message-strip",
           "name": "Message Strip",
-          "category": "feedback",
-          "subcategory": "messages",
-          "description": "Inline informational message for contextual feedback",
+          "description": "Message Strip is a component that enables the embedding of application-related messages in the application. They are useed to draw the user’s attention to information that is important in the context of the page content. This could be a warning or a change of state, that would be easy to miss it.",
           "baseClass": "fd-message-strip",
           "cssImport": "fundamental-styles/dist/message-strip.css",
           "storybookUrl": "https://sap.github.io/fundamental-styles/?path=/docs/components-message-strip",
-          "useCases": [
-            "Inline feedback",
-            "Form validation messages",
-            "Contextual information",
-            "Page-level messages"
-          ],
-          "avoidWhen": [
-            "Critical system messages (use alert)",
-            "Temporary notifications (use message-toast)"
-          ],
           "modifiers": [
             {
               "class": "fd-message-strip--warning",
@@ -6374,19 +5643,6 @@
               "description": "indication-color-10b variant"
             }
           ],
-          "accessibility": {
-            "role": "status",
-            "ariaAttributes": [
-              "aria-live"
-            ]
-          },
-          "relatedComponents": [
-            "alert",
-            "message-toast",
-            "form-message"
-          ],
-          "dependencies": [],
-          "tags": [],
           "elements": [
             {
               "class": "fd-message-strip__text",
@@ -6426,6 +5682,7 @@
             "--fdButtonBackgroundColor",
             "--fdButtonBorderColor"
           ],
+          "tags": [],
           "examples": [
             "default-strip",
             "error",
@@ -6437,7 +5694,17 @@
             "no-icons",
             "success",
             "warning"
-          ]
+          ],
+          "category": "uncategorized",
+          "subcategory": null,
+          "useCases": [],
+          "avoidWhen": [],
+          "accessibility": {
+            "role": null,
+            "ariaAttributes": []
+          },
+          "relatedComponents": [],
+          "dependencies": []
         },
         {
           "id": "message-toast",
@@ -6453,28 +5720,15 @@
           "examples": [
             "default-toast"
           ],
-          "category": "feedback",
+          "category": "uncategorized",
           "subcategory": null,
-          "useCases": [
-            "Success confirmations",
-            "Auto-dismissing notifications",
-            "Non-critical updates",
-            "Action completion feedback"
-          ],
-          "avoidWhen": [
-            "Errors requiring action (use message-strip or message-box)",
-            "Persistent messages (use message-strip)",
-            "Messages with actions (use notification)"
-          ],
+          "useCases": [],
+          "avoidWhen": [],
           "accessibility": {
             "role": null,
             "ariaAttributes": []
           },
-          "relatedComponents": [
-            "message-strip",
-            "notification",
-            "message-box"
-          ],
+          "relatedComponents": [],
           "dependencies": []
         },
         {
@@ -6592,27 +5846,15 @@
             "micro-process-flow-with-popover",
             "overflow-micro-process-flow"
           ],
-          "category": "specialized",
+          "category": "uncategorized",
           "subcategory": null,
-          "useCases": [
-            "Compact process visualization",
-            "Inline process status",
-            "Small workflow indicator",
-            "Status flow in limited space"
-          ],
-          "avoidWhen": [
-            "Full wizard (use wizard)",
-            "Detailed process (use progress-indicator)",
-            "Navigation steps (use tabs)"
-          ],
+          "useCases": [],
+          "avoidWhen": [],
           "accessibility": {
             "role": null,
             "ariaAttributes": []
           },
-          "relatedComponents": [
-            "wizard",
-            "progress-indicator"
-          ],
+          "relatedComponents": [],
           "dependencies": []
         },
         {
@@ -6707,28 +5949,15 @@
           ],
           "tags": [],
           "examples": [],
-          "category": "navigation",
-          "subcategory": "list",
-          "useCases": [
-            "Navigation item list",
-            "Menu-style navigation",
-            "Expandable navigation groups",
-            "Nested navigation structure"
-          ],
-          "avoidWhen": [
-            "Full side navigation (use side-nav)",
-            "Simple list (use list)",
-            "Action menu (use menu)"
-          ],
+          "category": "uncategorized",
+          "subcategory": null,
+          "useCases": [],
+          "avoidWhen": [],
           "accessibility": {
             "role": null,
             "ariaAttributes": []
           },
-          "relatedComponents": [
-            "side-nav",
-            "list",
-            "menu"
-          ],
+          "relatedComponents": [],
           "dependencies": []
         },
         {
@@ -6818,28 +6047,15 @@
           ],
           "tags": [],
           "examples": [],
-          "category": "navigation",
+          "category": "uncategorized",
           "subcategory": null,
-          "useCases": [
-            "Dropdown navigation menu",
-            "Mega menu structures",
-            "Category navigation dropdown",
-            "Multi-level navigation"
-          ],
-          "avoidWhen": [
-            "Action menu (use menu)",
-            "Side navigation (use side-nav)",
-            "Simple tabs (use tabs)"
-          ],
+          "useCases": [],
+          "avoidWhen": [],
           "accessibility": {
             "role": null,
             "ariaAttributes": []
           },
-          "relatedComponents": [
-            "menu",
-            "horizontal-navigation",
-            "shellbar"
-          ],
+          "relatedComponents": [],
           "dependencies": []
         },
         {
@@ -7047,28 +6263,15 @@
           ],
           "tags": [],
           "examples": [],
-          "category": "navigation",
+          "category": "uncategorized",
           "subcategory": null,
-          "useCases": [
-            "Generic navigation container",
-            "Custom navigation structures",
-            "Nested navigation items",
-            "Navigation with groups"
-          ],
-          "avoidWhen": [
-            "Standard side nav (use side-nav)",
-            "Vertical menu (use vertical-nav)",
-            "Tab navigation (use tabs)"
-          ],
+          "useCases": [],
+          "avoidWhen": [],
           "accessibility": {
             "role": null,
             "ariaAttributes": []
           },
-          "relatedComponents": [
-            "side-nav",
-            "vertical-nav",
-            "navigation-list"
-          ],
+          "relatedComponents": [],
           "dependencies": []
         },
         {
@@ -7237,28 +6440,15 @@
             "notification-group",
             "primary"
           ],
-          "category": "feedback",
-          "subcategory": "toast",
-          "useCases": [
-            "Actionable notifications",
-            "System alerts with actions",
-            "Update notifications",
-            "Messages requiring response"
-          ],
-          "avoidWhen": [
-            "Simple confirmations (use message-toast)",
-            "Inline feedback (use message-strip)",
-            "Blocking messages (use message-box)"
-          ],
+          "category": "uncategorized",
+          "subcategory": null,
+          "useCases": [],
+          "avoidWhen": [],
           "accessibility": {
             "role": null,
             "ariaAttributes": []
           },
-          "relatedComponents": [
-            "message-toast",
-            "message-strip",
-            "alert"
-          ],
+          "relatedComponents": [],
           "dependencies": []
         },
         {
@@ -7333,28 +6523,15 @@
           "variables": [],
           "tags": [],
           "examples": [],
-          "category": "business-objects",
+          "category": "uncategorized",
           "subcategory": null,
-          "useCases": [
-            "KPI display",
-            "Dashboard metrics",
-            "Large number display",
-            "Tile numeric content"
-          ],
-          "avoidWhen": [
-            "Simple numbers (use object-number)",
-            "Counts (use counter)",
-            "Progress values (use progress-indicator)"
-          ],
+          "useCases": [],
+          "avoidWhen": [],
           "accessibility": {
             "role": null,
             "ariaAttributes": []
           },
-          "relatedComponents": [
-            "object-number",
-            "tile",
-            "counter"
-          ],
+          "relatedComponents": [],
           "dependencies": []
         },
         {
@@ -7374,28 +6551,15 @@
           "variables": [],
           "tags": [],
           "examples": [],
-          "category": "business-objects",
+          "category": "uncategorized",
           "subcategory": null,
-          "useCases": [
-            "Label-value pairs",
-            "Object property display",
-            "Metadata display",
-            "Key-value information"
-          ],
-          "avoidWhen": [
-            "Status display (use object-status)",
-            "Numbers with units (use object-number)",
-            "Form fields (use form-item)"
-          ],
+          "useCases": [],
+          "avoidWhen": [],
           "accessibility": {
             "role": null,
             "ariaAttributes": []
           },
-          "relatedComponents": [
-            "object-status",
-            "object-number",
-            "object-identifier"
-          ],
+          "relatedComponents": [],
           "dependencies": []
         },
         {
@@ -7449,28 +6613,15 @@
             "title-as-link",
             "title-only"
           ],
-          "category": "visual",
+          "category": "uncategorized",
           "subcategory": null,
-          "useCases": [
-            "Object title with description",
-            "Entity identification",
-            "Linked object reference",
-            "Business object header"
-          ],
-          "avoidWhen": [
-            "Simple text (use text)",
-            "Navigation link (use link)",
-            "Avatar with name (use avatar)"
-          ],
+          "useCases": [],
+          "avoidWhen": [],
           "accessibility": {
             "role": null,
             "ariaAttributes": []
           },
-          "relatedComponents": [
-            "object-attribute",
-            "link",
-            "avatar"
-          ],
+          "relatedComponents": [],
           "dependencies": []
         },
         {
@@ -7557,28 +6708,15 @@
             "selection",
             "standart"
           ],
-          "category": "data-display",
-          "subcategory": "list",
-          "useCases": [
-            "Business object list",
-            "Items with attributes",
-            "Rich list items",
-            "Object summaries"
-          ],
-          "avoidWhen": [
-            "Simple lists (use list)",
-            "Tabular data (use table)",
-            "Card layouts (use grid-list)"
-          ],
+          "category": "uncategorized",
+          "subcategory": null,
+          "useCases": [],
+          "avoidWhen": [],
           "accessibility": {
             "role": null,
             "ariaAttributes": []
           },
-          "relatedComponents": [
-            "list",
-            "table",
-            "grid-list"
-          ],
+          "relatedComponents": [],
           "dependencies": []
         },
         {
@@ -7614,28 +6752,15 @@
             "icon-only",
             "marker-text"
           ],
-          "category": "tags",
+          "category": "uncategorized",
           "subcategory": null,
-          "useCases": [
-            "Favorite indicator",
-            "Flagged item marker",
-            "Draft indicator",
-            "Object state icons"
-          ],
-          "avoidWhen": [
-            "Status text (use object-status)",
-            "Counts (use counter)",
-            "Tags (use token)"
-          ],
+          "useCases": [],
+          "avoidWhen": [],
           "accessibility": {
             "role": null,
             "ariaAttributes": []
           },
-          "relatedComponents": [
-            "object-status",
-            "badge",
-            "icon"
-          ],
+          "relatedComponents": [],
           "dependencies": []
         },
         {
@@ -7726,28 +6851,15 @@
             "large",
             "primary"
           ],
-          "category": "visual",
+          "category": "uncategorized",
           "subcategory": null,
-          "useCases": [
-            "Currency display",
-            "Quantity with units",
-            "Metrics and KPIs",
-            "Numeric values with labels"
-          ],
-          "avoidWhen": [
-            "Simple counts (use counter)",
-            "Progress (use progress-indicator)",
-            "Editable numbers (use step-input)"
-          ],
+          "useCases": [],
+          "avoidWhen": [],
           "accessibility": {
             "role": null,
             "ariaAttributes": []
           },
-          "relatedComponents": [
-            "counter",
-            "numeric-content",
-            "step-input"
-          ],
+          "relatedComponents": [],
           "dependencies": []
         },
         {
@@ -8017,28 +7129,15 @@
             "text",
             "truncate-example"
           ],
-          "category": "visual",
+          "category": "uncategorized",
           "subcategory": null,
-          "useCases": [
-            "Status indicators",
-            "Semantic state display",
-            "Approval status",
-            "Process state"
-          ],
-          "avoidWhen": [
-            "Colored labels (use info-label)",
-            "Simple badges (use badge)",
-            "Interactive status (use switch)"
-          ],
+          "useCases": [],
+          "avoidWhen": [],
           "accessibility": {
             "role": null,
             "ariaAttributes": []
           },
-          "relatedComponents": [
-            "info-label",
-            "badge",
-            "status-indicator"
-          ],
+          "relatedComponents": [],
           "dependencies": []
         },
         {
@@ -8053,7 +7152,7 @@
           "variables": [],
           "tags": [],
           "examples": [],
-          "category": "utilities",
+          "category": "uncategorized",
           "subcategory": null,
           "useCases": [],
           "avoidWhen": [],
@@ -8061,10 +7160,7 @@
             "role": null,
             "ariaAttributes": []
           },
-          "relatedComponents": [
-            "helpers",
-            "link"
-          ],
+          "relatedComponents": [],
           "dependencies": []
         },
         {
@@ -8104,7 +7200,7 @@
           "variables": [],
           "tags": [],
           "examples": [],
-          "category": "utilities",
+          "category": "uncategorized",
           "subcategory": null,
           "useCases": [],
           "avoidWhen": [],
@@ -8112,11 +7208,7 @@
             "role": null,
             "ariaAttributes": []
           },
-          "relatedComponents": [
-            "margins",
-            "layout",
-            "layout-grid"
-          ],
+          "relatedComponents": [],
           "dependencies": []
         },
         {
@@ -8147,33 +7239,21 @@
           "variables": [],
           "tags": [],
           "examples": [],
-          "category": "containers",
+          "category": "uncategorized",
           "subcategory": null,
-          "useCases": [
-            "Page action footer",
-            "Sticky bottom bar",
-            "Form submit footer",
-            "Page-level actions container"
-          ],
-          "avoidWhen": [
-            "Dialog footer (use bar)",
-            "Inline actions (use toolbar)",
-            "Navigation (use pagination)"
-          ],
+          "useCases": [],
+          "avoidWhen": [],
           "accessibility": {
             "role": null,
             "ariaAttributes": []
           },
-          "relatedComponents": [
-            "bar",
-            "toolbar"
-          ],
+          "relatedComponents": [],
           "dependencies": []
         },
         {
           "id": "page",
           "name": "Page",
-          "description": "Page is the foundation wrapper for all application pages. Provides consistent structure with optional header, footer, and content areas. Use as the outermost container for every page in your application.",
+          "description": "Page component",
           "baseClass": "fd-page",
           "cssImport": "fundamental-styles/dist/page.css",
           "storybookUrl": "https://sap.github.io/fundamental-styles/?path=/docs/components-page",
@@ -8241,28 +7321,15 @@
           ],
           "tags": [],
           "examples": [],
-          "category": "containers",
+          "category": "uncategorized",
           "subcategory": null,
-          "useCases": [
-            "Standard page container",
-            "Page with header and footer",
-            "Content wrapper",
-            "Basic page structure"
-          ],
-          "avoidWhen": [
-            "Collapsible header (use dynamic-page)",
-            "Multi-column layouts (use flexible-column-layout)",
-            "Dialog content (use dialog)"
-          ],
+          "useCases": [],
+          "avoidWhen": [],
           "accessibility": {
             "role": null,
             "ariaAttributes": []
           },
-          "relatedComponents": [
-            "dynamic-page",
-            "panel",
-            "section"
-          ],
+          "relatedComponents": [],
           "dependencies": []
         },
         {
@@ -8330,27 +7397,15 @@
             "mobile",
             "per-page"
           ],
-          "category": "navigation",
-          "subcategory": "page",
-          "useCases": [
-            "Table/list pagination",
-            "Page navigation for data",
-            "Result set navigation",
-            "Multi-page content"
-          ],
-          "avoidWhen": [
-            "Infinite scroll (load more button)",
-            "Small datasets (show all)",
-            "Tab navigation (use tabs)"
-          ],
+          "category": "uncategorized",
+          "subcategory": null,
+          "useCases": [],
+          "avoidWhen": [],
           "accessibility": {
             "role": null,
             "ariaAttributes": []
           },
-          "relatedComponents": [
-            "table",
-            "list"
-          ],
+          "relatedComponents": [],
           "dependencies": []
         },
         {
@@ -8449,48 +7504,101 @@
             "sticky-header",
             "transparent"
           ],
-          "category": "containers",
+          "category": "uncategorized",
           "subcategory": null,
-          "useCases": [
-            "Collapsible content section",
-            "Grouped content container",
-            "Expandable information",
-            "Content organization"
-          ],
-          "avoidWhen": [
-            "Cards with actions (use card)",
-            "Non-collapsible sections (use section)",
-            "Full pages (use page)"
-          ],
+          "useCases": [],
+          "avoidWhen": [],
           "accessibility": {
             "role": null,
             "ariaAttributes": []
           },
-          "relatedComponents": [
-            "card",
-            "section",
-            "layout-panel"
-          ],
+          "relatedComponents": [],
           "dependencies": []
         },
         {
           "id": "popover",
           "name": "Popover",
-          "category": "overlays",
-          "subcategory": "popovers",
-          "description": "Contextual popup for displaying supplementary information",
+          "description": "The popover displays additional information for an object in a compact way without leaving the page. The component contains two essential elements: the control (trigger) and body (content). It can also be paired with a **Menu**, whereas the menu button would trigger a dropdown (body).",
           "baseClass": "fd-popover",
           "cssImport": "fundamental-styles/dist/popover.css",
           "storybookUrl": "https://sap.github.io/fundamental-styles/?path=/docs/components-popover",
-          "useCases": [
-            "Show additional context",
-            "Display help text",
-            "Contextual menus",
-            "Quick info"
-          ],
-          "avoidWhen": [
-            "Critical information (use dialog)",
-            "Complex forms (use dialog)"
+          "modifiers": [
+            {
+              "class": "fd-popover--visible",
+              "description": "visible variant"
+            },
+            {
+              "class": "fd-popover--no-arrow",
+              "description": "no-arrow variant"
+            },
+            {
+              "class": "fd-popover--left",
+              "description": "left variant"
+            },
+            {
+              "class": "fd-popover--center",
+              "description": "center variant"
+            },
+            {
+              "class": "fd-popover--right",
+              "description": "right variant"
+            },
+            {
+              "class": "fd-popover--before",
+              "description": "before variant"
+            },
+            {
+              "class": "fd-popover--after",
+              "description": "after variant"
+            },
+            {
+              "class": "fd-popover--middle",
+              "description": "middle variant"
+            },
+            {
+              "class": "fd-popover--bottom",
+              "description": "bottom variant"
+            },
+            {
+              "class": "fd-popover--above",
+              "description": "above variant"
+            },
+            {
+              "class": "fd-popover--arrow",
+              "description": "arrow variant"
+            },
+            {
+              "class": "fd-popover--dropdown",
+              "description": "dropdown variant"
+            },
+            {
+              "class": "fd-popover--static",
+              "description": "static variant"
+            },
+            {
+              "class": "fd-popover--input-message-group",
+              "description": "input-message-group variant"
+            },
+            {
+              "class": "fd-popover--inline-help",
+              "description": "inline-help variant"
+            },
+            {
+              "class": "fd-popover--slider",
+              "description": "slider variant"
+            },
+            {
+              "class": "fd-popover--full-width",
+              "description": "full-width variant"
+            },
+            {
+              "class": "fd-popover--btp",
+              "description": "btp variant"
+            },
+            {
+              "class": "fd-popover--padding",
+              "description": "padding variant"
+            }
           ],
           "elements": [
             {
@@ -8610,97 +7718,6 @@
               ]
             }
           ],
-          "accessibility": {
-            "ariaAttributes": [
-              "aria-haspopup",
-              "aria-expanded"
-            ],
-            "focusManagement": true
-          },
-          "relatedComponents": [
-            "dialog",
-            "menu"
-          ],
-          "dependencies": [],
-          "tags": [],
-          "modifiers": [
-            {
-              "class": "fd-popover--visible",
-              "description": "visible variant"
-            },
-            {
-              "class": "fd-popover--no-arrow",
-              "description": "no-arrow variant"
-            },
-            {
-              "class": "fd-popover--left",
-              "description": "left variant"
-            },
-            {
-              "class": "fd-popover--center",
-              "description": "center variant"
-            },
-            {
-              "class": "fd-popover--right",
-              "description": "right variant"
-            },
-            {
-              "class": "fd-popover--before",
-              "description": "before variant"
-            },
-            {
-              "class": "fd-popover--after",
-              "description": "after variant"
-            },
-            {
-              "class": "fd-popover--middle",
-              "description": "middle variant"
-            },
-            {
-              "class": "fd-popover--bottom",
-              "description": "bottom variant"
-            },
-            {
-              "class": "fd-popover--above",
-              "description": "above variant"
-            },
-            {
-              "class": "fd-popover--arrow",
-              "description": "arrow variant"
-            },
-            {
-              "class": "fd-popover--dropdown",
-              "description": "dropdown variant"
-            },
-            {
-              "class": "fd-popover--static",
-              "description": "static variant"
-            },
-            {
-              "class": "fd-popover--input-message-group",
-              "description": "input-message-group variant"
-            },
-            {
-              "class": "fd-popover--inline-help",
-              "description": "inline-help variant"
-            },
-            {
-              "class": "fd-popover--slider",
-              "description": "slider variant"
-            },
-            {
-              "class": "fd-popover--full-width",
-              "description": "full-width variant"
-            },
-            {
-              "class": "fd-popover--btp",
-              "description": "btp variant"
-            },
-            {
-              "class": "fd-popover--padding",
-              "description": "padding variant"
-            }
-          ],
           "variables": [
             "--fdModal_BackgroundColor",
             "--fdPopover_Display",
@@ -8727,6 +7744,7 @@
             "--fdPopover_Border_Color",
             "--fdPopover_Resize_Handle_Container_Justify"
           ],
+          "tags": [],
           "examples": [
             "control-examples-btp",
             "control-examples",
@@ -8735,7 +7753,17 @@
             "resizable",
             "scrollable",
             "variants"
-          ]
+          ],
+          "category": "uncategorized",
+          "subcategory": null,
+          "useCases": [],
+          "avoidWhen": [],
+          "accessibility": {
+            "role": null,
+            "ariaAttributes": []
+          },
+          "relatedComponents": [],
+          "dependencies": []
         },
         {
           "id": "product-switch",
@@ -8815,28 +7843,15 @@
             "medium",
             "small"
           ],
-          "category": "specialized",
+          "category": "uncategorized",
           "subcategory": null,
-          "useCases": [
-            "App switcher in shellbar",
-            "Product navigation",
-            "Suite application switching",
-            "Cross-app navigation"
-          ],
-          "avoidWhen": [
-            "In-app navigation (use side-nav)",
-            "User menu (use user-menu)",
-            "Simple dropdown (use select)"
-          ],
+          "useCases": [],
+          "avoidWhen": [],
           "accessibility": {
             "role": null,
             "ariaAttributes": []
           },
-          "relatedComponents": [
-            "shellbar",
-            "user-menu",
-            "menu"
-          ],
+          "relatedComponents": [],
           "dependencies": []
         },
         {
@@ -8960,28 +7975,15 @@
             "truncation",
             "value-states"
           ],
-          "category": "feedback",
-          "subcategory": "loading",
-          "useCases": [
-            "Upload progress",
-            "Process completion percentage",
-            "Step progress",
-            "Capacity/usage display"
-          ],
-          "avoidWhen": [
-            "Unknown duration (use busy-indicator)",
-            "Step-by-step wizard (use wizard)",
-            "Status only (use object-status)"
-          ],
+          "category": "uncategorized",
+          "subcategory": null,
+          "useCases": [],
+          "avoidWhen": [],
           "accessibility": {
             "role": null,
             "ariaAttributes": []
           },
-          "relatedComponents": [
-            "busy-indicator",
-            "wizard",
-            "status-indicator"
-          ],
+          "relatedComponents": [],
           "dependencies": []
         },
         {
@@ -9014,34 +8016,21 @@
           ],
           "tags": [],
           "examples": [],
-          "category": "ai-components",
+          "category": "uncategorized",
           "subcategory": null,
-          "useCases": [
-            "AI prompt input field",
-            "Chat input for AI",
-            "LLM query input",
-            "AI assistant input"
-          ],
-          "avoidWhen": [
-            "Regular text input (use input or textarea)",
-            "Search (use search-field)",
-            "Comments (use feed-input)"
-          ],
+          "useCases": [],
+          "avoidWhen": [],
           "accessibility": {
             "role": null,
             "ariaAttributes": []
           },
-          "relatedComponents": [
-            "ai-writing-assistant",
-            "textarea",
-            "search-field"
-          ],
+          "relatedComponents": [],
           "dependencies": []
         },
         {
           "id": "quick-view",
           "name": "Quick View",
-          "description": "The quick view is similar to a popover but has a predefined structure, a fixed set of UI",
+          "description": "The quick view is similar to a popover but has a predefined structure, a fixed set of UI elements, and automatic UI rendering. Should be used in combination with the popover or dialog components",
           "baseClass": "fd-quick-view",
           "cssImport": "fundamental-styles/dist/quick-view.css",
           "storybookUrl": "https://sap.github.io/fundamental-styles/?path=/docs/components-quick-view",
@@ -9094,70 +8083,30 @@
             "no-header",
             "popover"
           ],
-          "category": "dialogs",
+          "category": "uncategorized",
           "subcategory": null,
-          "useCases": [
-            "Object preview popover",
-            "Contact card preview",
-            "Quick information display",
-            "Hover details"
-          ],
-          "avoidWhen": [
-            "Full object page (use dynamic-page)",
-            "Actions needed (use popover)",
-            "Simple tooltip (use title attribute)"
-          ],
+          "useCases": [],
+          "avoidWhen": [],
           "accessibility": {
             "role": null,
             "ariaAttributes": []
           },
-          "relatedComponents": [
-            "popover",
-            "card",
-            "dialog"
-          ],
+          "relatedComponents": [],
           "dependencies": []
         },
         {
           "id": "radio",
-          "name": "Radio Button",
-          "category": "forms",
-          "subcategory": "selection",
-          "description": "Single selection control for choosing one option from a group",
+          "name": "Radio",
+          "description": "Radio component",
           "baseClass": "fd-radio",
           "cssImport": "fundamental-styles/dist/radio.css",
           "storybookUrl": "https://sap.github.io/fundamental-styles/?path=/docs/components-radio",
-          "useCases": [
-            "Single selection from group",
-            "Mutually exclusive options",
-            "Form choices"
-          ],
-          "avoidWhen": [
-            "Multiple selections (use checkbox)",
-            "Too many options (consider select)"
-          ],
           "modifiers": [
             {
               "class": "fd-radio--wrap",
               "description": "wrap variant"
             }
           ],
-          "accessibility": {
-            "role": "radio",
-            "ariaAttributes": [
-              "aria-checked",
-              "aria-label"
-            ],
-            "labelRequired": true,
-            "grouping": "fieldset"
-          },
-          "relatedComponents": [
-            "checkbox",
-            "select",
-            "form-item"
-          ],
-          "dependencies": [],
-          "tags": [],
           "elements": [
             {
               "class": "fd-radio__label",
@@ -9223,7 +8172,18 @@
             "--fdRadio_Inner_Content_Padding_Compact",
             "--fdRadio_Compact_Outline_Border_radius"
           ],
-          "examples": []
+          "tags": [],
+          "examples": [],
+          "category": "uncategorized",
+          "subcategory": null,
+          "useCases": [],
+          "avoidWhen": [],
+          "accessibility": {
+            "role": null,
+            "ariaAttributes": []
+          },
+          "relatedComponents": [],
+          "dependencies": []
         },
         {
           "id": "rating-indicator",
@@ -9330,27 +8290,15 @@
             "non-interactive",
             "sizes"
           ],
-          "category": "form-inputs",
-          "subcategory": "numeric",
-          "useCases": [
-            "Star ratings display",
-            "User ratings input",
-            "Quality indicators",
-            "Review ratings"
-          ],
-          "avoidWhen": [
-            "Binary like/dislike (use button)",
-            "Progress (use progress-indicator)",
-            "Numeric input (use slider or step-input)"
-          ],
+          "category": "uncategorized",
+          "subcategory": null,
+          "useCases": [],
+          "avoidWhen": [],
           "accessibility": {
             "role": null,
             "ariaAttributes": []
           },
-          "relatedComponents": [
-            "slider",
-            "step-input"
-          ],
+          "relatedComponents": [],
           "dependencies": []
         },
         {
@@ -9405,28 +8353,15 @@
           "variables": [],
           "tags": [],
           "examples": [],
-          "category": "layout",
+          "category": "uncategorized",
           "subcategory": null,
-          "useCases": [
-            "Resizable dashboard cards",
-            "User-configurable layouts",
-            "Draggable card grid",
-            "Personalized dashboards"
-          ],
-          "avoidWhen": [
-            "Fixed layouts (use fixed-card-layout)",
-            "Simple grids (use layout-grid)",
-            "Non-interactive cards (use grid-list)"
-          ],
+          "useCases": [],
+          "avoidWhen": [],
           "accessibility": {
             "role": null,
             "ariaAttributes": []
           },
-          "relatedComponents": [
-            "fixed-card-layout",
-            "layout-grid",
-            "card"
-          ],
+          "relatedComponents": [],
           "dependencies": []
         },
         {
@@ -9510,7 +8445,7 @@
           "examples": [
             "default-example"
           ],
-          "category": "utilities",
+          "category": "uncategorized",
           "subcategory": null,
           "useCases": [],
           "avoidWhen": [],
@@ -9518,11 +8453,7 @@
             "role": null,
             "ariaAttributes": []
           },
-          "relatedComponents": [
-            "layout",
-            "splitter",
-            "dynamic-side-content"
-          ],
+          "relatedComponents": [],
           "dependencies": []
         },
         {
@@ -9601,33 +8532,21 @@
           "examples": [
             "default"
           ],
-          "category": "form-inputs",
-          "subcategory": "search",
-          "useCases": [
-            "Search input with icon",
-            "Filterable search",
-            "Global search",
-            "List filtering"
-          ],
-          "avoidWhen": [
-            "Simple text filter (use input)",
-            "Advanced filters (use filter bar)",
-            "Dropdown search (use select with search)"
-          ],
+          "category": "uncategorized",
+          "subcategory": null,
+          "useCases": [],
+          "avoidWhen": [],
           "accessibility": {
             "role": null,
             "ariaAttributes": []
           },
-          "relatedComponents": [
-            "input",
-            "input-group"
-          ],
+          "relatedComponents": [],
           "dependencies": []
         },
         {
           "id": "section",
           "name": "Section",
-          "description": "Sections group related content on a page with optional headers and visual separation. Use to organize page content into logical, scannable blocks. Can be collapsible to help users focus on relevant information.",
+          "description": "Section component",
           "baseClass": "fd-section",
           "cssImport": "fundamental-styles/dist/section.css",
           "storybookUrl": "https://sap.github.io/fundamental-styles/?path=/docs/components-section",
@@ -9670,28 +8589,15 @@
           "variables": [],
           "tags": [],
           "examples": [],
-          "category": "containers",
+          "category": "uncategorized",
           "subcategory": null,
-          "useCases": [
-            "Page content sections",
-            "Grouped form sections",
-            "Content dividers",
-            "Titled content areas"
-          ],
-          "avoidWhen": [
-            "Collapsible content (use panel)",
-            "Cards (use card)",
-            "Independent panels (use layout-panel)"
-          ],
+          "useCases": [],
+          "avoidWhen": [],
           "accessibility": {
             "role": null,
             "ariaAttributes": []
           },
-          "relatedComponents": [
-            "panel",
-            "facet",
-            "form-group"
-          ],
+          "relatedComponents": [],
           "dependencies": []
         },
         {
@@ -9730,64 +8636,25 @@
             "segmented-button-vertical",
             "segmented-button"
           ],
-          "category": "buttons",
-          "subcategory": "selection",
-          "useCases": [
-            "View switcher",
-            "Single selection from options",
-            "Toggle between modes",
-            "Mutually exclusive choices"
-          ],
-          "avoidWhen": [
-            "Primary action with dropdown (use button-split)",
-            "Multiple selections (use checkbox)",
-            "Many options (use select)"
-          ],
+          "category": "uncategorized",
+          "subcategory": null,
+          "useCases": [],
+          "avoidWhen": [],
           "accessibility": {
             "role": null,
             "ariaAttributes": []
           },
-          "relatedComponents": [
-            "button-split",
-            "tabs",
-            "radio"
-          ],
+          "relatedComponents": [],
           "dependencies": []
         },
         {
           "id": "select",
           "name": "Select",
-          "category": "forms",
-          "subcategory": "input",
-          "description": "Dropdown selection control for choosing one option from many",
+          "description": "The select component is commonly used to enable users to select an item from a predefined list. It should be used when there are less than 12 items to choose from.",
           "baseClass": "fd-select",
           "cssImport": "fundamental-styles/dist/select.css",
           "storybookUrl": "https://sap.github.io/fundamental-styles/?path=/docs/components-select",
-          "useCases": [
-            "Choose one option from list",
-            "Dropdown menus in forms",
-            "Single selection"
-          ],
-          "avoidWhen": [
-            "Multiple selections (use checkbox list)",
-            "Very long lists (consider search/filter)"
-          ],
           "modifiers": [],
-          "accessibility": {
-            "role": "combobox",
-            "ariaAttributes": [
-              "aria-label",
-              "aria-required"
-            ],
-            "labelRequired": true
-          },
-          "relatedComponents": [
-            "input",
-            "menu",
-            "form-item"
-          ],
-          "dependencies": [],
-          "tags": [],
           "elements": [
             {
               "class": "fd-select__control",
@@ -9819,6 +8686,7 @@
             "--fdSelect_Text_Content_Color",
             "--fdSelect_Text_Padding_Inline_Start"
           ],
+          "tags": [],
           "examples": [
             "as-form-item",
             "blank",
@@ -9834,7 +8702,17 @@
             "text-wrapping",
             "two-column",
             "two-columns-and-icons"
-          ]
+          ],
+          "category": "uncategorized",
+          "subcategory": null,
+          "useCases": [],
+          "avoidWhen": [],
+          "accessibility": {
+            "role": null,
+            "ariaAttributes": []
+          },
+          "relatedComponents": [],
+          "dependencies": []
         },
         {
           "id": "settings",
@@ -9945,146 +8823,24 @@
             "xl-default",
             "xl"
           ],
-          "category": "specialized",
+          "category": "uncategorized",
           "subcategory": null,
-          "useCases": [
-            "Settings page layout",
-            "Preferences organization",
-            "Configuration sections",
-            "Settings navigation"
-          ],
-          "avoidWhen": [
-            "Simple forms (use form-group)",
-            "Navigation (use side-nav)",
-            "Single setting (use switch or select)"
-          ],
+          "useCases": [],
+          "avoidWhen": [],
           "accessibility": {
             "role": null,
             "ariaAttributes": []
           },
-          "relatedComponents": [
-            "form-group",
-            "side-nav"
-          ],
+          "relatedComponents": [],
           "dependencies": []
         },
         {
           "id": "shellbar",
           "name": "Shellbar",
-          "category": "navigation",
-          "subcategory": "headers",
-          "description": "Application header bar with branding, navigation, and actions",
+          "description": "The Shell Bar serves as the topmost section across all SAP products, providing users with a way to orient themselves within the diverse SAP product landscape. It is always visible and offers relevant information about the current context, including product and brand details, while also providing access to specific functions such as search, notifications, user profiles, and more.",
           "baseClass": "fd-shellbar",
           "cssImport": "fundamental-styles/dist/shellbar.css",
           "storybookUrl": "https://sap.github.io/fundamental-styles/?path=/docs/components-shellbar",
-          "useCases": [
-            "Application header",
-            "Main navigation",
-            "Branding area",
-            "Global actions"
-          ],
-          "elements": [
-            {
-              "class": "fd-shellbar__branding",
-              "description": "branding element",
-              "modifiers": []
-            },
-            {
-              "class": "fd-shellbar__title",
-              "description": "title element",
-              "modifiers": []
-            },
-            {
-              "class": "fd-shellbar__subtitle",
-              "description": "subtitle element",
-              "modifiers": []
-            },
-            {
-              "class": "fd-shellbar__product",
-              "description": "product element",
-              "modifiers": []
-            },
-            {
-              "class": "fd-shellbar__logo",
-              "description": "logo element",
-              "modifiers": []
-            },
-            {
-              "class": "fd-shellbar__separator",
-              "description": "separator element",
-              "modifiers": []
-            },
-            {
-              "class": "fd-shellbar__spacer",
-              "description": "spacer element",
-              "modifiers": []
-            },
-            {
-              "class": "fd-shellbar__button",
-              "description": "button element",
-              "modifiers": [
-                {
-                  "class": "fd-shellbar__button--menu",
-                  "description": "menu variant of button"
-                }
-              ]
-            },
-            {
-              "class": "fd-shellbar__avatar",
-              "description": "avatar element",
-              "modifiers": [
-                {
-                  "class": "fd-shellbar__avatar--circle",
-                  "description": "circle variant of avatar"
-                }
-              ]
-            },
-            {
-              "class": "fd-shellbar__group",
-              "description": "group element",
-              "modifiers": [
-                {
-                  "class": "fd-shellbar__group--product",
-                  "description": "product variant of group"
-                },
-                {
-                  "class": "fd-shellbar__group--context-area",
-                  "description": "context-area variant of group"
-                },
-                {
-                  "class": "fd-shellbar__group--actions",
-                  "description": "actions variant of group"
-                },
-                {
-                  "class": "fd-shellbar__group--full-width",
-                  "description": "full-width variant of group"
-                }
-              ]
-            },
-            {
-              "class": "fd-shellbar__search-category",
-              "description": "search-category element",
-              "modifiers": [
-                {
-                  "class": "fd-shellbar__search-category--collapsed",
-                  "description": "collapsed variant of search-category"
-                }
-              ]
-            }
-          ],
-          "accessibility": {
-            "role": "banner",
-            "landmark": true
-          },
-          "relatedComponents": [
-            "side-nav",
-            "user-menu",
-            "button"
-          ],
-          "dependencies": [],
-          "tags": [
-            "uxc"
-          ],
           "modifiers": [
             {
               "class": "fd-shellbar--mobile-flex",
@@ -10191,6 +8947,95 @@
               "description": "responsive-paddings variant"
             }
           ],
+          "elements": [
+            {
+              "class": "fd-shellbar__branding",
+              "description": "branding element",
+              "modifiers": []
+            },
+            {
+              "class": "fd-shellbar__title",
+              "description": "title element",
+              "modifiers": []
+            },
+            {
+              "class": "fd-shellbar__subtitle",
+              "description": "subtitle element",
+              "modifiers": []
+            },
+            {
+              "class": "fd-shellbar__product",
+              "description": "product element",
+              "modifiers": []
+            },
+            {
+              "class": "fd-shellbar__logo",
+              "description": "logo element",
+              "modifiers": []
+            },
+            {
+              "class": "fd-shellbar__separator",
+              "description": "separator element",
+              "modifiers": []
+            },
+            {
+              "class": "fd-shellbar__spacer",
+              "description": "spacer element",
+              "modifiers": []
+            },
+            {
+              "class": "fd-shellbar__button",
+              "description": "button element",
+              "modifiers": [
+                {
+                  "class": "fd-shellbar__button--menu",
+                  "description": "menu variant of button"
+                }
+              ]
+            },
+            {
+              "class": "fd-shellbar__avatar",
+              "description": "avatar element",
+              "modifiers": [
+                {
+                  "class": "fd-shellbar__avatar--circle",
+                  "description": "circle variant of avatar"
+                }
+              ]
+            },
+            {
+              "class": "fd-shellbar__group",
+              "description": "group element",
+              "modifiers": [
+                {
+                  "class": "fd-shellbar__group--product",
+                  "description": "product variant of group"
+                },
+                {
+                  "class": "fd-shellbar__group--context-area",
+                  "description": "context-area variant of group"
+                },
+                {
+                  "class": "fd-shellbar__group--actions",
+                  "description": "actions variant of group"
+                },
+                {
+                  "class": "fd-shellbar__group--full-width",
+                  "description": "full-width variant of group"
+                }
+              ]
+            },
+            {
+              "class": "fd-shellbar__search-category",
+              "description": "search-category element",
+              "modifiers": [
+                {
+                  "class": "fd-shellbar__search-category--collapsed",
+                  "description": "collapsed variant of search-category"
+                }
+              ]
+            }
+          ],
           "variables": [
             "--fdSelect_Text_Content_Display",
             "--fdSelect_Min_Width",
@@ -10264,6 +9109,9 @@
             "--fdButton_Outline_Contrast",
             "--fdButtonPrioritizedBorderColor"
           ],
+          "tags": [
+            "uxc"
+          ],
           "examples": [
             "optional-items",
             "overflow-toolbar",
@@ -10271,12 +9119,21 @@
             "responsive-paddings",
             "responsiveness"
           ],
-          "avoidWhen": []
+          "category": "uncategorized",
+          "subcategory": null,
+          "useCases": [],
+          "avoidWhen": [],
+          "accessibility": {
+            "role": null,
+            "ariaAttributes": []
+          },
+          "relatedComponents": [],
+          "dependencies": []
         },
         {
           "id": "side-nav",
           "name": "Side Nav",
-          "description": "Side Navigation provides hierarchical navigation for applications. Displays a collapsible sidebar with navigation items, icons, and nested submenus. Use for primary app navigation in the Shellbar or as dedicated sidebar.",
+          "description": "Side Nav component",
           "baseClass": "fd-side-nav",
           "cssImport": "fundamental-styles/dist/side-nav.css",
           "storybookUrl": "https://sap.github.io/fundamental-styles/?path=/docs/components-side-nav",
@@ -10313,28 +9170,15 @@
           ],
           "tags": [],
           "examples": [],
-          "category": "navigation",
-          "subcategory": "sidebar",
-          "useCases": [
-            "Main application navigation",
-            "Collapsible side menu",
-            "Hierarchical navigation",
-            "App area switching"
-          ],
-          "avoidWhen": [
-            "Horizontal navigation (use tabs or horizontal-navigation)",
-            "Simple menus (use menu)",
-            "Contextual actions (use toolbar)"
-          ],
+          "category": "uncategorized",
+          "subcategory": null,
+          "useCases": [],
+          "avoidWhen": [],
           "accessibility": {
             "role": null,
             "ariaAttributes": []
           },
-          "relatedComponents": [
-            "vertical-nav",
-            "shellbar",
-            "navigation-list"
-          ],
+          "relatedComponents": [],
           "dependencies": []
         },
         {
@@ -10372,27 +9216,15 @@
             "lines",
             "skeleton"
           ],
-          "category": "feedback",
+          "category": "uncategorized",
           "subcategory": null,
-          "useCases": [
-            "Content loading placeholder",
-            "Page loading state",
-            "Perceived performance improvement",
-            "Layout preservation during load"
-          ],
-          "avoidWhen": [
-            "Quick operations (use busy-indicator)",
-            "Known progress (use progress-indicator)",
-            "Error states (use illustrated-message)"
-          ],
+          "useCases": [],
+          "avoidWhen": [],
           "accessibility": {
             "role": null,
             "ariaAttributes": []
           },
-          "relatedComponents": [
-            "busy-indicator",
-            "progress-indicator"
-          ],
+          "relatedComponents": [],
           "dependencies": []
         },
         {
@@ -10533,33 +9365,21 @@
             "ticks",
             "vertical-mode"
           ],
-          "category": "form-inputs",
-          "subcategory": "numeric",
-          "useCases": [
-            "Range value selection",
-            "Volume/brightness controls",
-            "Price range filtering",
-            "Numeric range input"
-          ],
-          "avoidWhen": [
-            "Precise numeric input (use step-input)",
-            "Discrete options (use segmented-button)",
-            "Rating (use rating-indicator)"
-          ],
+          "category": "uncategorized",
+          "subcategory": null,
+          "useCases": [],
+          "avoidWhen": [],
           "accessibility": {
             "role": null,
             "ariaAttributes": []
           },
-          "relatedComponents": [
-            "step-input",
-            "rating-indicator"
-          ],
+          "relatedComponents": [],
           "dependencies": []
         },
         {
           "id": "splitter",
           "name": "Splitter",
-          "description": "Splitter divides screen into resizable panes separated by a draggable divider. Users can adjust pane sizes by dragging the separator. Use for master-detail layouts or comparing content side-by-side.",
+          "description": "Splitter component",
           "baseClass": "fd-splitter",
           "cssImport": "fundamental-styles/dist/splitter.css",
           "storybookUrl": "https://sap.github.io/fundamental-styles/?path=/docs/components-splitter",
@@ -10723,27 +9543,15 @@
           ],
           "tags": [],
           "examples": [],
-          "category": "layout",
+          "category": "uncategorized",
           "subcategory": null,
-          "useCases": [
-            "Resizable panes",
-            "Two-panel layouts",
-            "Adjustable content areas",
-            "Side-by-side comparison"
-          ],
-          "avoidWhen": [
-            "Three-column responsive (use flexible-column-layout)",
-            "Fixed layouts (use layout-grid)",
-            "Simple side nav (use side-nav)"
-          ],
+          "useCases": [],
+          "avoidWhen": [],
           "accessibility": {
             "role": null,
             "ariaAttributes": []
           },
-          "relatedComponents": [
-            "flexible-column-layout",
-            "dynamic-side-content"
-          ],
+          "relatedComponents": [],
           "dependencies": []
         },
         {
@@ -10830,27 +9638,15 @@
             "status-indicator-linear-filling",
             "status-indicator-radial-filling"
           ],
-          "category": "feedback",
+          "category": "uncategorized",
           "subcategory": null,
-          "useCases": [
-            "Process status visualization",
-            "Multi-state indicators",
-            "Quality indicators",
-            "Score visualization"
-          ],
-          "avoidWhen": [
-            "Simple status (use object-status)",
-            "Progress (use progress-indicator)",
-            "Ratings (use rating-indicator)"
-          ],
+          "useCases": [],
+          "avoidWhen": [],
           "accessibility": {
             "role": null,
             "ariaAttributes": []
           },
-          "relatedComponents": [
-            "object-status",
-            "progress-indicator"
-          ],
+          "relatedComponents": [],
           "dependencies": []
         },
         {
@@ -10902,28 +9698,15 @@
             "read-only",
             "states"
           ],
-          "category": "form-inputs",
-          "subcategory": "numeric",
-          "useCases": [
-            "Quantity input with +/- buttons",
-            "Precise numeric input",
-            "Increment/decrement values",
-            "Quantity selectors"
-          ],
-          "avoidWhen": [
-            "Range selection (use slider)",
-            "Large value ranges (use input)",
-            "Rating (use rating-indicator)"
-          ],
+          "category": "uncategorized",
+          "subcategory": null,
+          "useCases": [],
+          "avoidWhen": [],
           "accessibility": {
             "role": null,
             "ariaAttributes": []
           },
-          "relatedComponents": [
-            "slider",
-            "input",
-            "rating-indicator"
-          ],
+          "relatedComponents": [],
           "dependencies": []
         },
         {
@@ -11101,48 +9884,24 @@
             "semantic-switch",
             "with-text"
           ],
-          "category": "form-inputs",
-          "subcategory": "toggle",
-          "useCases": [
-            "On/off toggles",
-            "Feature enable/disable",
-            "Settings toggles",
-            "Binary state changes"
-          ],
-          "avoidWhen": [
-            "Multiple options (use checkbox)",
-            "Form agreement (use checkbox)",
-            "Toggle between views (use segmented-button)"
-          ],
+          "category": "uncategorized",
+          "subcategory": null,
+          "useCases": [],
+          "avoidWhen": [],
           "accessibility": {
             "role": null,
             "ariaAttributes": []
           },
-          "relatedComponents": [
-            "checkbox",
-            "segmented-button"
-          ],
+          "relatedComponents": [],
           "dependencies": []
         },
         {
           "id": "table",
           "name": "Table",
-          "category": "data-display",
-          "subcategory": "tables",
-          "description": "Structured data table for displaying and interacting with tabular data",
+          "description": "A table contains a set of line items and usually comprises rows (with each row showing one line item) and columns. Line items can contain data of any kind, but also interactive elements, for example, for editing the data, navigating, or triggering actions relating to the line item.",
           "baseClass": "fd-table",
           "cssImport": "fundamental-styles/dist/table.css",
           "storybookUrl": "https://sap.github.io/fundamental-styles/?path=/docs/components-table",
-          "useCases": [
-            "Display structured data",
-            "Sortable columns",
-            "Selectable rows",
-            "Large datasets"
-          ],
-          "avoidWhen": [
-            "Simple lists (use list component)",
-            "Visual card layouts (use grid-list)"
-          ],
           "modifiers": [
             {
               "class": "fd-table--navigation",
@@ -11508,23 +10267,6 @@
               ]
             }
           ],
-          "accessibility": {
-            "role": "table",
-            "ariaAttributes": [
-              "aria-label",
-              "aria-describedby"
-            ],
-            "semanticHtml": true
-          },
-          "relatedComponents": [
-            "list",
-            "grid-list",
-            "tree",
-            "pagination",
-            "toolbar"
-          ],
-          "dependencies": [],
-          "tags": [],
           "variables": [
             "--fdTable_Header_Cell_Height",
             "--fdTable_Cell_Height",
@@ -11539,6 +10281,7 @@
             "--fdTable_Condensed_Focus_Outline_Offset",
             "--fdTable_Group_Header_Background"
           ],
+          "tags": [],
           "examples": [
             "advanced-toolbar",
             "borderless",
@@ -11565,12 +10308,22 @@
             "responsive-table",
             "semantic-rows",
             "tree-rows-table"
-          ]
+          ],
+          "category": "uncategorized",
+          "subcategory": null,
+          "useCases": [],
+          "avoidWhen": [],
+          "accessibility": {
+            "role": null,
+            "ariaAttributes": []
+          },
+          "relatedComponents": [],
+          "dependencies": []
         },
         {
           "id": "tabs",
           "name": "Tabs",
-          "description": "Tabs organize content into separate views, allowing users to switch between different sections without leaving the page. Use for dividing content into meaningful categories that users can explore one at a time.",
+          "description": "Tabs component",
           "baseClass": "fd-tabs__process",
           "cssImport": "fundamental-styles/dist/tabs.css",
           "storybookUrl": "https://sap.github.io/fundamental-styles/?path=/docs/components-tabs",
@@ -11708,28 +10461,15 @@
           ],
           "tags": [],
           "examples": [],
-          "category": "navigation",
-          "subcategory": "tabs",
-          "useCases": [
-            "Same-page content sections",
-            "Form step organization",
-            "View switching",
-            "Content categorization"
-          ],
-          "avoidWhen": [
-            "App-level navigation (use side-nav)",
-            "Tabs with counts/badges (use icon-tab-bar)",
-            "Sequential steps (use wizard)"
-          ],
+          "category": "uncategorized",
+          "subcategory": null,
+          "useCases": [],
+          "avoidWhen": [],
           "accessibility": {
             "role": null,
             "ariaAttributes": []
           },
-          "relatedComponents": [
-            "icon-tab-bar",
-            "side-nav",
-            "wizard"
-          ],
+          "relatedComponents": [],
           "dependencies": []
         },
         {
@@ -11789,69 +10529,30 @@
             "max-lines",
             "whitespace"
           ],
-          "category": "typography",
+          "category": "uncategorized",
           "subcategory": null,
-          "useCases": [
-            "Body text display",
-            "Paragraph content",
-            "Description text",
-            "General text content"
-          ],
-          "avoidWhen": [
-            "Headings (use title)",
-            "Code (use code)",
-            "Links (use link)"
-          ],
+          "useCases": [],
+          "avoidWhen": [],
           "accessibility": {
             "role": null,
             "ariaAttributes": []
           },
-          "relatedComponents": [
-            "title",
-            "code",
-            "link"
-          ],
+          "relatedComponents": [],
           "dependencies": []
         },
         {
           "id": "textarea",
           "name": "Textarea",
-          "category": "forms",
-          "subcategory": "input",
-          "description": "Multi-line text input for collecting long-form content",
+          "description": "Textarea component",
           "baseClass": "fd-textarea",
           "cssImport": "fundamental-styles/dist/textarea.css",
           "storybookUrl": "https://sap.github.io/fundamental-styles/?path=/docs/components-textarea",
-          "useCases": [
-            "Long-form text input",
-            "Comments and descriptions",
-            "Multi-line content",
-            "Notes and feedback"
-          ],
-          "avoidWhen": [
-            "Short text input (use input instead)"
-          ],
           "modifiers": [
             {
               "class": "fd-textarea--ai",
               "description": "ai variant"
             }
           ],
-          "accessibility": {
-            "role": "textbox",
-            "ariaAttributes": [
-              "aria-label",
-              "aria-describedby",
-              "aria-required"
-            ],
-            "labelRequired": true
-          },
-          "relatedComponents": [
-            "input",
-            "form-item"
-          ],
-          "dependencies": [],
-          "tags": [],
           "elements": [
             {
               "class": "fd-textarea__sr-only",
@@ -11862,12 +10563,23 @@
           "variables": [
             "--fdTextarea_Line_Height"
           ],
-          "examples": []
+          "tags": [],
+          "examples": [],
+          "category": "uncategorized",
+          "subcategory": null,
+          "useCases": [],
+          "avoidWhen": [],
+          "accessibility": {
+            "role": null,
+            "ariaAttributes": []
+          },
+          "relatedComponents": [],
+          "dependencies": []
         },
         {
           "id": "tile",
           "name": "Tile",
-          "description": "Tiles display summarized information or entry points to applications, pages, or actions. Use in home pages, launchpads, or dashboards to present options in a grid layout. Can include icons, titles, subtitles, and quick actions.",
+          "description": "Tile component",
           "baseClass": "fd-tile",
           "cssImport": "fundamental-styles/dist/tile.css",
           "storybookUrl": "https://sap.github.io/fundamental-styles/?path=/docs/components-tile",
@@ -12025,27 +10737,15 @@
           ],
           "tags": [],
           "examples": [],
-          "category": "containers",
+          "category": "uncategorized",
           "subcategory": null,
-          "useCases": [
-            "Dashboard tiles",
-            "App launcher tiles",
-            "KPI display tiles",
-            "Quick access shortcuts"
-          ],
-          "avoidWhen": [
-            "Rich content cards (use card)",
-            "List items (use list)",
-            "Image galleries (use grid-list)"
-          ],
+          "useCases": [],
+          "avoidWhen": [],
           "accessibility": {
             "role": null,
             "ariaAttributes": []
           },
-          "relatedComponents": [
-            "card",
-            "numeric-content"
-          ],
+          "relatedComponents": [],
           "dependencies": []
         },
         {
@@ -12159,27 +10859,15 @@
             "scrollable-mode",
             "tablet-mode"
           ],
-          "category": "date-time",
+          "category": "uncategorized",
           "subcategory": null,
-          "useCases": [
-            "Time picker component",
-            "Time selection input",
-            "Schedule time input",
-            "Duration input"
-          ],
-          "avoidWhen": [
-            "Date selection (use calendar)",
-            "Date and time (use combined picker)",
-            "Simple text time (use input)"
-          ],
+          "useCases": [],
+          "avoidWhen": [],
           "accessibility": {
             "role": null,
             "ariaAttributes": []
           },
-          "relatedComponents": [
-            "calendar",
-            "timepicker"
-          ],
+          "relatedComponents": [],
           "dependencies": []
         },
         {
@@ -12279,27 +10967,15 @@
             "mobile",
             "seconds-cozy"
           ],
-          "category": "date-time",
+          "category": "uncategorized",
           "subcategory": null,
-          "useCases": [
-            "Time input with picker",
-            "Schedule time selection",
-            "Time field with dropdown",
-            "Time selection control"
-          ],
-          "avoidWhen": [
-            "Inline time display (use time)",
-            "Date and time (use combined component)",
-            "Simple text time (use input)"
-          ],
+          "useCases": [],
+          "avoidWhen": [],
           "accessibility": {
             "role": null,
             "ariaAttributes": []
           },
-          "relatedComponents": [
-            "time",
-            "calendar"
-          ],
+          "relatedComponents": [],
           "dependencies": []
         },
         {
@@ -12342,28 +11018,15 @@
           ],
           "tags": [],
           "examples": [],
-          "category": "toolbars",
+          "category": "uncategorized",
           "subcategory": null,
-          "useCases": [
-            "Panel title bar",
-            "Section header bar",
-            "Container header",
-            "Titled content area header"
-          ],
-          "avoidWhen": [
-            "Page headers (use bar or action-bar)",
-            "Dialog headers (use bar)",
-            "Simple titles (use title)"
-          ],
+          "useCases": [],
+          "avoidWhen": [],
           "accessibility": {
             "role": null,
             "ariaAttributes": []
           },
-          "relatedComponents": [
-            "bar",
-            "action-bar",
-            "title"
-          ],
+          "relatedComponents": [],
           "dependencies": []
         },
         {
@@ -12420,27 +11083,15 @@
             "visual-level",
             "wrapping"
           ],
-          "category": "typography",
+          "category": "uncategorized",
           "subcategory": null,
-          "useCases": [
-            "Page headings",
-            "Section titles",
-            "Component headers",
-            "Semantic headings (h1-h6)"
-          ],
-          "avoidWhen": [
-            "Body text (use text)",
-            "Bar titles (use bar with title)",
-            "Form labels (use form-label)"
-          ],
+          "useCases": [],
+          "avoidWhen": [],
           "accessibility": {
             "role": null,
             "ariaAttributes": []
           },
-          "relatedComponents": [
-            "text",
-            "title-bar"
-          ],
+          "relatedComponents": [],
           "dependencies": []
         },
         {
@@ -12510,28 +11161,15 @@
           "examples": [
             "primary"
           ],
-          "category": "tags",
+          "category": "uncategorized",
           "subcategory": null,
-          "useCases": [
-            "Selected filter display",
-            "Removable tags",
-            "Multi-select display",
-            "Chip-style selections"
-          ],
-          "avoidWhen": [
-            "Status labels (use info-label)",
-            "Non-removable tags (use badge)",
-            "Single selection (use select)"
-          ],
+          "useCases": [],
+          "avoidWhen": [],
           "accessibility": {
             "role": null,
             "ariaAttributes": []
           },
-          "relatedComponents": [
-            "tokenizer",
-            "info-label",
-            "badge"
-          ],
+          "relatedComponents": [],
           "dependencies": []
         },
         {
@@ -12587,28 +11225,15 @@
             "cozy-tokenizer",
             "scrollable-tokenizer"
           ],
-          "category": "tags",
+          "category": "uncategorized",
           "subcategory": null,
-          "useCases": [
-            "Multiple token container",
-            "Multi-select input display",
-            "Tag collection",
-            "Selected items display"
-          ],
-          "avoidWhen": [
-            "Single selection (use select)",
-            "Simple list (use list)",
-            "Editable tags (use input-group)"
-          ],
+          "useCases": [],
+          "avoidWhen": [],
           "accessibility": {
             "role": null,
             "ariaAttributes": []
           },
-          "relatedComponents": [
-            "token",
-            "select",
-            "input-group"
-          ],
+          "relatedComponents": [],
           "dependencies": []
         },
         {
@@ -12680,34 +11305,21 @@
           ],
           "tags": [],
           "examples": [],
-          "category": "toolbars",
+          "category": "uncategorized",
           "subcategory": null,
-          "useCases": [
-            "Tool application header",
-            "Compact app header",
-            "Utility app header",
-            "Secondary app header"
-          ],
-          "avoidWhen": [
-            "Main app header (use shellbar)",
-            "Page headers (use action-bar)",
-            "Dialog headers (use bar)"
-          ],
+          "useCases": [],
+          "avoidWhen": [],
           "accessibility": {
             "role": null,
             "ariaAttributes": []
           },
-          "relatedComponents": [
-            "shellbar",
-            "action-bar",
-            "bar"
-          ],
+          "relatedComponents": [],
           "dependencies": []
         },
         {
           "id": "tool-layout",
           "name": "Tool Layout",
-          "description": "Tool Layout consists of three main areas: Tool Header (always present, top-aligned with global actions and navigation controls), Navigation (side navigation in expanded/snapped variants), and Content (empty container for any content). Complete layout structure for tool-based applications.",
+          "description": "Tool Layout component",
           "baseClass": "fd-tool-layout",
           "cssImport": "fundamental-styles/dist/tool-layout.css",
           "storybookUrl": "https://sap.github.io/fundamental-styles/?path=/docs/components-tool-layout",
@@ -12774,28 +11386,15 @@
           ],
           "tags": [],
           "examples": [],
-          "category": "layout",
+          "category": "uncategorized",
           "subcategory": null,
-          "useCases": [
-            "Tool application layout",
-            "Utility page structure",
-            "Secondary app layout",
-            "Tool-specific page container"
-          ],
-          "avoidWhen": [
-            "Standard apps (use page)",
-            "Complex layouts (use flexible-column-layout)",
-            "Simple pages (use layout)"
-          ],
+          "useCases": [],
+          "avoidWhen": [],
           "accessibility": {
             "role": null,
             "ariaAttributes": []
           },
-          "relatedComponents": [
-            "page",
-            "layout",
-            "tool-header"
-          ],
+          "relatedComponents": [],
           "dependencies": []
         },
         {
@@ -12915,28 +11514,15 @@
             "separator",
             "types"
           ],
-          "category": "toolbars",
+          "category": "uncategorized",
           "subcategory": null,
-          "useCases": [
-            "Content area actions",
-            "Table/list toolbar",
-            "Formatting toolbar",
-            "Action button container"
-          ],
-          "avoidWhen": [
-            "Page header (use bar or action-bar)",
-            "Dialog footer (use bar)",
-            "App navigation (use shellbar)"
-          ],
+          "useCases": [],
+          "avoidWhen": [],
           "accessibility": {
             "role": null,
             "ariaAttributes": []
           },
-          "relatedComponents": [
-            "bar",
-            "action-bar",
-            "tool-header"
-          ],
+          "relatedComponents": [],
           "dependencies": []
         },
         {
@@ -13057,28 +11643,15 @@
             "selection",
             "tree-with-no-data"
           ],
-          "category": "data-display",
-          "subcategory": "hierarchical",
-          "useCases": [
-            "Hierarchical data display",
-            "File/folder structures",
-            "Organizational hierarchies",
-            "Nested category navigation"
-          ],
-          "avoidWhen": [
-            "Flat lists (use list)",
-            "Tabular data (use table)",
-            "Navigation menu (use side-nav)"
-          ],
+          "category": "uncategorized",
+          "subcategory": null,
+          "useCases": [],
+          "avoidWhen": [],
           "accessibility": {
             "role": null,
             "ariaAttributes": []
           },
-          "relatedComponents": [
-            "list",
-            "table",
-            "side-nav"
-          ],
+          "relatedComponents": [],
           "dependencies": []
         },
         {
@@ -13173,27 +11746,15 @@
             "no-data",
             "standard"
           ],
-          "category": "specialized",
+          "category": "uncategorized",
           "subcategory": null,
-          "useCases": [
-            "Uploaded files list",
-            "Attachment management",
-            "Document collection",
-            "File list with actions"
-          ],
-          "avoidWhen": [
-            "Simple upload (use file-uploader)",
-            "Image gallery (use grid-list)",
-            "Generic list (use list)"
-          ],
+          "useCases": [],
+          "avoidWhen": [],
           "accessibility": {
             "role": null,
             "ariaAttributes": []
           },
-          "relatedComponents": [
-            "file-uploader",
-            "list"
-          ],
+          "relatedComponents": [],
           "dependencies": []
         },
         {
@@ -13323,28 +11884,15 @@
             "default",
             "mobile"
           ],
-          "category": "specialized",
+          "category": "uncategorized",
           "subcategory": null,
-          "useCases": [
-            "User profile menu",
-            "Account settings access",
-            "Sign out option",
-            "User-specific actions"
-          ],
-          "avoidWhen": [
-            "App navigation (use product-switch)",
-            "Generic menu (use menu)",
-            "Settings page (use side-nav)"
-          ],
+          "useCases": [],
+          "avoidWhen": [],
           "accessibility": {
             "role": null,
             "ariaAttributes": []
           },
-          "relatedComponents": [
-            "shellbar",
-            "menu",
-            "avatar"
-          ],
+          "relatedComponents": [],
           "dependencies": []
         },
         {
@@ -13434,27 +11982,15 @@
             "dirty-label",
             "sizes"
           ],
-          "category": "specialized",
+          "category": "uncategorized",
           "subcategory": null,
-          "useCases": [
-            "Saved view management",
-            "Filter variant selection",
-            "Layout preferences",
-            "Personalization options"
-          ],
-          "avoidWhen": [
-            "Simple selection (use select)",
-            "Settings (use settings component)",
-            "One-time choices (use radio)"
-          ],
+          "useCases": [],
+          "avoidWhen": [],
           "accessibility": {
             "role": null,
             "ariaAttributes": []
           },
-          "relatedComponents": [
-            "select",
-            "popover"
-          ],
+          "relatedComponents": [],
           "dependencies": []
         },
         {
@@ -13534,33 +12070,21 @@
           ],
           "tags": [],
           "examples": [],
-          "category": "navigation",
+          "category": "uncategorized",
           "subcategory": null,
-          "useCases": [
-            "Vertical navigation menu",
-            "Side menu without collapse",
-            "Simple vertical links",
-            "Static navigation list"
-          ],
-          "avoidWhen": [
-            "Collapsible navigation (use side-nav)",
-            "Main app navigation (use side-nav with shellbar)",
-            "Horizontal layout (use tabs)"
-          ],
+          "useCases": [],
+          "avoidWhen": [],
           "accessibility": {
             "role": null,
             "ariaAttributes": []
           },
-          "relatedComponents": [
-            "side-nav",
-            "navigation-list"
-          ],
+          "relatedComponents": [],
           "dependencies": []
         },
         {
           "id": "wizard",
           "name": "Wizard",
-          "description": "Wizard guides user through long or unfamiliar task by dividing into sections, revealing information in digestible way. Consists of walkthrough screen (input required info) and summary page (read-only review before submission). Two types: standard (linear, known steps) and branching (non-linear, variable steps). Supports 3-8 steps, optional steps allowed.",
+          "description": "Wizard component",
           "baseClass": "fd-wizard",
           "cssImport": "fundamental-styles/dist/wizard.css",
           "storybookUrl": "https://sap.github.io/fundamental-styles/?path=/docs/components-wizard",
@@ -13815,199 +12339,21 @@
             "responsive",
             "reverted-steps"
           ],
-          "category": "specialized",
+          "category": "uncategorized",
           "subcategory": null,
-          "useCases": [
-            "Multi-step processes",
-            "Guided workflows",
-            "Setup wizards",
-            "Sequential form completion"
-          ],
-          "avoidWhen": [
-            "Non-sequential content (use tabs)",
-            "Simple forms (use form-group)",
-            "Single step (use dialog)"
-          ],
+          "useCases": [],
+          "avoidWhen": [],
           "accessibility": {
             "role": null,
             "ariaAttributes": []
           },
-          "relatedComponents": [
-            "tabs",
-            "dialog",
-            "progress-indicator"
-          ],
+          "relatedComponents": [],
           "dependencies": []
         }
       ]
     }
   },
-  "componentCategories": {
-    "toolbars": [
-      "action-bar",
-      "action-sheet",
-      "bar",
-      "title-bar",
-      "tool-header",
-      "toolbar"
-    ],
-    "ai-components": [
-      "ai-busy-indicator",
-      "ai-loading-bar",
-      "ai-text",
-      "ai-writing-assistant-versioning",
-      "ai-writing-assistant",
-      "prompt-input"
-    ],
-    "feedback": [
-      "alert",
-      "busy-indicator",
-      "illustrated-message",
-      "message-page",
-      "message-strip",
-      "message-toast",
-      "notification",
-      "progress-indicator",
-      "skeleton",
-      "status-indicator"
-    ],
-    "visual": [
-      "avatar-group",
-      "avatar",
-      "badge",
-      "counter",
-      "icon",
-      "info-label",
-      "object-identifier",
-      "object-number",
-      "object-status"
-    ],
-    "navigation": [
-      "breadcrumb",
-      "horizontal-navigation",
-      "icon-tab-bar",
-      "navigation-list",
-      "navigation-menu",
-      "navigation",
-      "pagination",
-      "shellbar",
-      "side-nav",
-      "tabs",
-      "vertical-nav"
-    ],
-    "buttons": [
-      "button-split",
-      "segmented-button"
-    ],
-    "interactive": [
-      "button",
-      "link",
-      "menu"
-    ],
-    "date-time": [
-      "calendar",
-      "time",
-      "timepicker"
-    ],
-    "containers": [
-      "card",
-      "facet",
-      "page-footer",
-      "page",
-      "panel",
-      "section",
-      "tile"
-    ],
-    "specialized": [
-      "carousel",
-      "dynamic-page",
-      "micro-process-flow",
-      "product-switch",
-      "settings",
-      "upload-collection",
-      "user-menu",
-      "variant-management",
-      "wizard"
-    ],
-    "forms": [
-      "checkbox",
-      "form-item",
-      "form-label",
-      "input",
-      "radio",
-      "select",
-      "textarea"
-    ],
-    "typography": [
-      "code",
-      "text",
-      "title"
-    ],
-    "overlays": [
-      "dialog",
-      "popover"
-    ],
-    "layout": [
-      "dynamic-side-content",
-      "fixed-card-layout",
-      "flexible-column-layout",
-      "layout-grid",
-      "layout-panel",
-      "layout",
-      "resizable-card-layout",
-      "splitter",
-      "tool-layout"
-    ],
-    "social": [
-      "feed-input",
-      "feed-list"
-    ],
-    "form-layout": [
-      "fieldset",
-      "form-group",
-      "form-header",
-      "form-layout-grid",
-      "form-message"
-    ],
-    "form-inputs": [
-      "file-uploader",
-      "input-group",
-      "rating-indicator",
-      "search-field",
-      "slider",
-      "step-input",
-      "switch"
-    ],
-    "tags": [
-      "generic-tag",
-      "object-marker",
-      "token",
-      "tokenizer"
-    ],
-    "data-display": [
-      "grid-list",
-      "list",
-      "object-list",
-      "table",
-      "tree"
-    ],
-    "utilities": [
-      "helpers",
-      "margins",
-      "off-screen",
-      "paddings",
-      "scrollbar"
-    ],
-    "dialogs": [
-      "message-box",
-      "message-popover",
-      "quick-view"
-    ],
-    "business-objects": [
-      "numeric-content",
-      "object-attribute"
-    ]
-  },
+  "componentCategories": {},
   "selectionGuide": {
     "action": "button",
     "navigation": "link",

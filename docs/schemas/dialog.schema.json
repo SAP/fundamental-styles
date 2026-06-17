@@ -2,7 +2,7 @@
   "$schema": "http://json-schema.org/draft-07/schema#",
   "$id": "https://sap.github.io/fundamental-styles/schemas/dialog.json",
   "title": "Dialog Component",
-  "description": "Modal dialog window for displaying important information or forms",
+  "description": "The dialog component is a container that appears in response to an action made by the user. It interrupts the app’s current process to prompt the user for either information or a confirmation, which requires them to make a decision before the process can continue. Dialog displays in a fixed position and is activated by adding the \\",
   "type": "object",
   "properties": {
     "baseClass": {

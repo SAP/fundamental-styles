@@ -9,7 +9,6 @@ tags: ["btp"]
 dependencies: ["icon","info-label"]
 relatedComponents: ["icon","info-label"]
 stability: stable
-generatedAt: 2026-06-08T17:49:01.848Z
 ---
 
 # Components/Info Label

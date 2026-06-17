@@ -2,7 +2,7 @@
   "$schema": "http://json-schema.org/draft-07/schema#",
   "$id": "https://sap.github.io/fundamental-styles/schemas/splitter.json",
   "title": "Splitter Component",
-  "description": "Splitter divides screen into resizable panes separated by a draggable divider. Users can adjust pane sizes by dragging the separator. Use for master-detail layouts or comparing content side-by-side.",
+  "description": "Splitter component",
   "type": "object",
   "properties": {
     "baseClass": {

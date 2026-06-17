@@ -8,7 +8,7 @@
 [build]
   ignore = 'git log -1 --pretty=%B | grep dependabot'
   publish = "storybook-static"
-  command = "yarn run storybook:static && cp docs/component-catalog.json storybook-static/component-catalog.json"
+  command = "yarn generate:ai-metadata && yarn run storybook:static && cp docs/component-catalog.json storybook-static/component-catalog.json"
 
 [build.environment]
   NODE_VERSION = "24.11.1"

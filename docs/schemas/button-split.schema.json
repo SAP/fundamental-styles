@@ -2,7 +2,7 @@
   "$schema": "http://json-schema.org/draft-07/schema#",
   "$id": "https://sap.github.io/fundamental-styles/schemas/button-split.json",
   "title": "Button Split Component",
-  "description": "Split buttons combine a primary action with a dropdown menu of related secondary actions. The primary action executes immediately when clicked, while the arrow reveals additional options. Use when one option is used more frequently than others.",
+  "description": "Button Split component",
   "type": "object",
   "properties": {
     "baseClass": {

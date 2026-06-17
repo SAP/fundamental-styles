@@ -107,16 +107,35 @@ jobs:
                   bumpTag: ${{ steps.bumpVersion.outputs.releaseTag }}
                   bumpedVersion: ${{ steps.bumpVersion.outputs.newVersion }}
 
+            - name: Check tag does not already exist
+              if: env.IS_MANUAL == 'false'
+              env:
+                  NEW_TAG: v${{ steps.bumpVersion.outputs.newVersion }}
+              run: |
+                  if git ls-remote --tags origin | grep -q "refs/tags/$NEW_TAG$"; then
+                    echo "::error::Tag $NEW_TAG already exists on remote. A previous run may have partially succeeded."
+                    echo "To recover: gh api -X DELETE repos/${{ github.repository }}/git/refs/tags/$NEW_TAG (only if npm was NOT yet published for this version)"
+                    exit 1
+                  fi
+
             - name: Update using lerna # Skipping push, in case something goes wrong later during build/prepare
               if: env.IS_MANUAL == 'false'
               run: |
                   npx lerna version ${{ steps.bumpVersion.outputs.newVersion }} --yes --force-publish --message="chore(release): publish %v [ci skip]" --no-push
 
             - name: Generate AI Documentation
-              run: yarn run docs:extract
+              run: |
+                  yarn run docs:extract
+                  yarn generate:ai-metadata
 
             - run: yarn run lint
             - run: yarn run build:prod
+
+            # Push git commit and tag BEFORE publishing to npm.
+            # If push fails here, nothing is published yet — state remains clean and re-running is safe.
+            - name: Push changes
+              if: env.IS_MANUAL == 'false'
+              run: git push --follow-tags
 
             - name: Publish packages to NPM
               run: |
@@ -128,7 +147,7 @@ jobs:
                     tag="latest"
                   fi
                   echo "Using npm tag: $tag"
-                  
+
                   for package_path in dist/packages/styles dist/packages/common-css dist/packages/theming-preview dist/packages/cx dist/packages/mcp; do
                     if [ -f "$package_path/package.json" ]; then
                       package_name=$(node -p "require('./$package_path/package.json').name")
@@ -148,13 +167,6 @@ jobs:
                       cd - > /dev/null
                     fi
                   done
-            
-            # This step is for pushing into the main repo if version has been updated by the CI.
-            # Commit is created by the lerna version command
-            # This Will NOT trigger this workflow again, so it is okay
-            - name: Push changes
-              if: env.IS_MANUAL == 'false'
-              run: git push --follow-tags
 
             - name: Generate Release Body
               id: generate_body

@@ -2,7 +2,7 @@
   "$schema": "http://json-schema.org/draft-07/schema#",
   "$id": "https://sap.github.io/fundamental-styles/schemas/layout-panel.json",
   "title": "Layout Panel Component",
-  "description": "Layout Panels encapsulate part of content, form elements, lists, collections on a page. Place patterns and interactions within panels to achieve focus and separation for tasks with information displayed inside panel. Organizes content into distinct sections.",
+  "description": "Layout Panel component",
   "type": "object",
   "properties": {
     "baseClass": {

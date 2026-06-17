@@ -2,7 +2,7 @@
   "$schema": "http://json-schema.org/draft-07/schema#",
   "$id": "https://sap.github.io/fundamental-styles/schemas/quick-view.json",
   "title": "Quick View Component",
-  "description": "The quick view is similar to a popover but has a predefined structure, a fixed set of UI",
+  "description": "The quick view is similar to a popover but has a predefined structure, a fixed set of UI elements, and automatic UI rendering. Should be used in combination with the popover or dialog components",
   "type": "object",
   "properties": {
     "baseClass": {

@@ -68,3 +68,24 @@ Edit `test-bump-version.mjs` and add to the `tests` array:
 
 - [Conventional Commits](https://www.conventionalcommits.org/)
 - [Semantic Versioning](https://semver.org/)
+
+---
+
+## Release Guard Tests
+
+### Quick Start
+
+```bash
+node .github/actions/release-guard/test-release-guard.mjs
+```
+
+### What Gets Tested
+
+- **Duplicate tag detection**: `checkTagExists` returns true/false correctly against a real git repo
+- **npm publish idempotency**: `simulateNpmPublish` skips already-published versions without error
+- **Workflow step ordering**: asserts `Push changes` appears before `Publish packages to NPM` and the tag guard appears before `Update using lerna`
+
+### When to Run
+
+- Before committing changes to `.github/workflows/create-release.yml`
+- After any change to `.github/actions/release-guard/index.mjs`

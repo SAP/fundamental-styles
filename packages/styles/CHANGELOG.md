@@ -3,6 +3,34 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.41.8-rc.8](https://github.com/SAP/fundamental-styles/compare/v0.41.8-rc.7...v0.41.8-rc.8) (2026-06-16)
+
+**Note:** Version bump only for package fundamental-styles
+
+## [0.41.8-rc.7](https://github.com/SAP/fundamental-styles/compare/v0.41.8-rc.6...v0.41.8-rc.7) (2026-06-16)
+
+**Note:** Version bump only for package fundamental-styles
+
+## [0.41.8-rc.6](https://github.com/SAP/fundamental-styles/compare/v0.41.8-rc.5...v0.41.8-rc.6) (2026-06-16)
+
+**Note:** Version bump only for package fundamental-styles
+
+## [0.41.8-rc.5](https://github.com/SAP/fundamental-styles/compare/v0.41.8-rc.3...v0.41.8-rc.5) (2026-06-16)
+
+**Note:** Version bump only for package fundamental-styles
+
+## [0.41.8-rc.3](https://github.com/SAP/fundamental-styles/compare/v0.41.8-rc.2...v0.41.8-rc.3) (2026-06-15)
+
+**Note:** Version bump only for package fundamental-styles
+
+## [0.41.8-rc.2](https://github.com/SAP/fundamental-styles/compare/v0.41.8-rc.1...v0.41.8-rc.2) (2026-06-15)
+
+**Note:** Version bump only for package fundamental-styles
+
+## [0.41.8-rc.1](https://github.com/SAP/fundamental-styles/compare/v0.41.8-rc.0...v0.41.8-rc.1) (2026-06-15)
+
+**Note:** Version bump only for package fundamental-styles
+
 ## [0.41.8-rc.0](https://github.com/SAP/fundamental-styles/compare/v0.41.7...v0.41.8-rc.0) (2026-06-11)
 
 **Note:** Version bump only for package fundamental-styles

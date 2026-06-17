@@ -9,7 +9,6 @@ tags: []
 dependencies: ["avatar","icon","list","object-identifier","object-list","object-marker","object-number","object-status"]
 relatedComponents: ["avatar","icon","list","object-identifier","object-list","object-marker","object-number","object-status"]
 stability: stable
-generatedAt: 2026-06-08T17:49:01.936Z
 ---
 
 # Components/Object List

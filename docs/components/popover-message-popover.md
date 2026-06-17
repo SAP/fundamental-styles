@@ -9,7 +9,6 @@ tags: []
 dependencies: ["bar","button","icon","link","list","message-popover","object-status","popover","scrollbar","segmented-button"]
 relatedComponents: ["bar","button","icon","link","list","message-popover","object-status","popover","scrollbar","segmented-button"]
 stability: stable
-generatedAt: 2026-06-08T17:49:02.109Z
 ---
 
 # Components/Message Popover

@@ -617,7 +617,6 @@ tags: ${JSON.stringify(tags)}
 dependencies: ${JSON.stringify(dependencies)}
 relatedComponents: ${JSON.stringify(relatedComponents || [])}
 stability: ${stability}
-generatedAt: ${new Date().toISOString()}
 ---
 
 # ${title}
@@ -919,9 +918,13 @@ function extractAllDocs() {
             const outputFileName = generateUniqueFilename(componentData, existingFiles);
             const outputPath = path.join(OUTPUT_DIR, outputFileName);
 
-            fs.writeFileSync(outputPath, markdown);
-
-            console.log(`  ✅ Generated: docs/components/${outputFileName}\n`);
+            const existingContent = fs.existsSync(outputPath) ? fs.readFileSync(outputPath, 'utf-8') : null;
+            if (existingContent !== markdown) {
+                fs.writeFileSync(outputPath, markdown);
+                console.log(`  ✅ Generated: docs/components/${outputFileName}\n`);
+            } else {
+                console.log(`  ⏭️  Unchanged: docs/components/${outputFileName}\n`);
+            }
             successCount++;
 
             components.push({
@@ -959,7 +962,6 @@ function generateIndexFile(components) {
 
 This directory contains AI-consumable documentation extracted from Storybook stories.
 
-**Generated:** ${new Date().toISOString()}
 **Total Components:** ${actualFileCount}
 
 ## Components by Category
@@ -1013,8 +1015,13 @@ This should be run whenever component stories are updated.
 `;
 
     const indexPath = path.join(OUTPUT_DIR, 'README.md');
-    fs.writeFileSync(indexPath, index);
-    console.log(`  ✅ Generated: docs/components/README.md\n`);
+    const existingIndex = fs.existsSync(indexPath) ? fs.readFileSync(indexPath, 'utf-8') : null;
+    if (existingIndex !== index) {
+        fs.writeFileSync(indexPath, index);
+        console.log(`  ✅ Generated: docs/components/README.md\n`);
+    } else {
+        console.log(`  ⏭️  Unchanged: docs/components/README.md\n`);
+    }
 }
 
 // Run the extraction

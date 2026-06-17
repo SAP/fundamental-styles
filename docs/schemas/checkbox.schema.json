@@ -2,7 +2,7 @@
   "$schema": "http://json-schema.org/draft-07/schema#",
   "$id": "https://sap.github.io/fundamental-styles/schemas/checkbox.json",
   "title": "Checkbox Component",
-  "description": "Multiple selection control for selecting multiple options",
+  "description": "Checkbox component",
   "type": "object",
   "properties": {
     "baseClass": {

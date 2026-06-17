@@ -9,7 +9,6 @@ tags: []
 dependencies: ["avatar","bar","breadcrumb","button","dynamic-page","facet","form-label","icon","link","margins","object-number","object-status","paddings","popover","rating-indicator","tabs","text","title","toolbar"]
 relatedComponents: ["avatar","bar","breadcrumb","button","dynamic-page","facet","form-label","icon","link","margins","object-number","object-status","paddings","popover","rating-indicator","tabs","text","title","toolbar"]
 stability: stable
-generatedAt: 2026-06-08T17:49:02.359Z
 ---
 
 # Layouts/Dynamic Page

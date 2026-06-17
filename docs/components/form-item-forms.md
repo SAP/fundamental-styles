@@ -9,7 +9,6 @@ tags: []
 dependencies: []
 relatedComponents: []
 stability: stable
-generatedAt: 2026-06-08T17:49:01.925Z
 ---
 
 # Components/Forms/Textarea

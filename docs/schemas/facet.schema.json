@@ -2,7 +2,7 @@
   "$schema": "http://json-schema.org/draft-07/schema#",
   "$id": "https://sap.github.io/fundamental-styles/schemas/facet.json",
   "title": "Facet Component",
-  "description": "Facets display key-value pairs in a compact, scannable format. Use in object headers or cards to show essential information like status, date, owner, or metrics. Supports icons and semantic colors.",
+  "description": "Facet component",
   "type": "object",
   "properties": {
     "baseClass": {
