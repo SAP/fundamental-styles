@@ -1,0 +1,106 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://sap.github.io/fundamental-styles/schemas/layout-panel.json",
+  "title": "Layout Panel Component",
+  "description": "Layout Panel component",
+  "type": "object",
+  "properties": {
+    "baseClass": {
+      "const": "fd-layout-panel",
+      "description": "Required base class"
+    },
+    "modifiers": {
+      "type": "array",
+      "items": {
+        "enum": [
+          "fd-layout-panel--transparent",
+          "fd-layout-panel--full-bleed",
+          "fd-layout-panel--bleed",
+          "fd-layout-panel--end",
+          "fd-layout-panel--start"
+        ]
+      },
+      "description": "Optional modifier classes"
+    },
+    "elements": {
+      "type": "object",
+      "description": "Optional element classes with their available modifiers",
+      "properties": {
+        "fd-layout-panel__header": {
+          "type": "object",
+          "description": "header element",
+          "properties": {
+            "class": {
+              "const": "fd-layout-panel__header",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-layout-panel__head": {
+          "type": "object",
+          "description": "head element",
+          "properties": {
+            "class": {
+              "const": "fd-layout-panel__head",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-layout-panel__description": {
+          "type": "object",
+          "description": "description element",
+          "properties": {
+            "class": {
+              "const": "fd-layout-panel__description",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-layout-panel__actions": {
+          "type": "object",
+          "description": "actions element",
+          "properties": {
+            "class": {
+              "const": "fd-layout-panel__actions",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-layout-panel__filters": {
+          "type": "object",
+          "description": "filters element",
+          "properties": {
+            "class": {
+              "const": "fd-layout-panel__filters",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-layout-panel__body": {
+          "type": "object",
+          "description": "body element",
+          "properties": {
+            "class": {
+              "const": "fd-layout-panel__body",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-layout-panel__footer": {
+          "type": "object",
+          "description": "footer element",
+          "properties": {
+            "class": {
+              "const": "fd-layout-panel__footer",
+              "description": "Element class name"
+            }
+          }
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "required": [
+    "baseClass"
+  ]
+}

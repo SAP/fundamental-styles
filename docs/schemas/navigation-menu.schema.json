@@ -1,0 +1,105 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://sap.github.io/fundamental-styles/schemas/navigation-menu.json",
+  "title": "Navigation Menu Component",
+  "description": "Navigation Menu component",
+  "type": "object",
+  "properties": {
+    "baseClass": {
+      "const": "fd-navigation-menu",
+      "description": "Required base class"
+    },
+    "elements": {
+      "type": "object",
+      "description": "Optional element classes with their available modifiers",
+      "properties": {
+        "fd-navigation-menu__item": {
+          "type": "object",
+          "description": "item element",
+          "properties": {
+            "class": {
+              "const": "fd-navigation-menu__item",
+              "description": "Element class name"
+            },
+            "modifiers": {
+              "type": "array",
+              "items": {
+                "enum": [
+                  "fd-navigation-menu__item--has-children",
+                  "fd-navigation-menu__item--has-link-indicator",
+                  "fd-navigation-menu__item--child",
+                  "fd-navigation-menu__item--group"
+                ]
+              },
+              "description": "Available modifiers for this element"
+            }
+          }
+        },
+        "fd-navigation-menu__item--has-children": {
+          "type": "object",
+          "description": "item--has-children element",
+          "properties": {
+            "class": {
+              "const": "fd-navigation-menu__item--has-children",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-navigation-menu__item--has-link-indicator": {
+          "type": "object",
+          "description": "item--has-link-indicator element",
+          "properties": {
+            "class": {
+              "const": "fd-navigation-menu__item--has-link-indicator",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-navigation-menu__item--child": {
+          "type": "object",
+          "description": "item--child element",
+          "properties": {
+            "class": {
+              "const": "fd-navigation-menu__item--child",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-navigation-menu__item--group": {
+          "type": "object",
+          "description": "item--group element",
+          "properties": {
+            "class": {
+              "const": "fd-navigation-menu__item--group",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-navigation-menu__icon": {
+          "type": "object",
+          "description": "icon element",
+          "properties": {
+            "class": {
+              "const": "fd-navigation-menu__icon",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-navigation-menu__text": {
+          "type": "object",
+          "description": "text element",
+          "properties": {
+            "class": {
+              "const": "fd-navigation-menu__text",
+              "description": "Element class name"
+            }
+          }
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "required": [
+    "baseClass"
+  ]
+}

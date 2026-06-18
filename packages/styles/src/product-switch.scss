@@ -172,7 +172,6 @@ $block: #{$fd-namespace}-product-switch;
   &__title {
     @include fd-reset();
 
-    line-height: 1.25rem;
     font-size: var(--sapFontSize);
     color: var(--sapTitleColor);
     white-space: normal;
@@ -195,7 +194,6 @@ $block: #{$fd-namespace}-product-switch;
     @include fd-reset();
 
     white-space: normal;
-    line-height: 1.25rem;
     font-size: var(--sapFontSmallSize);
     color: var(--sapContent_LabelColor);
   }
@@ -243,8 +241,9 @@ $block: #{$fd-namespace}-product-switch;
         gap: 0.75rem;
       };
 
+      min-height: 5rem;
       max-width: 100%;
-      padding-block: 0.75rem;
+      padding-block: 1rem;
       padding-inline: 1rem;
       text-align: left;
       border-radius: var(--sapElement_BorderCornerRadius);
@@ -327,8 +326,6 @@ $block: #{$fd-namespace}-product-switch;
 
         .#{$block}__subtitle {
           @include fd-ellipsis();
-
-          line-height: 1.25rem;
 
           &::before {
             right: $before-right;

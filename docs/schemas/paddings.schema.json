@@ -1,0 +1,30 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://sap.github.io/fundamental-styles/schemas/paddings.json",
+  "title": "Paddings Component",
+  "description": "Paddings component",
+  "type": "object",
+  "properties": {
+    "baseClass": {
+      "const": "fd-paddings",
+      "description": "Required base class"
+    },
+    "modifiers": {
+      "type": "array",
+      "items": {
+        "enum": [
+          "fd-paddings--tiny",
+          "fd-paddings--sm",
+          "fd-paddings--md",
+          "fd-paddings--lg",
+          "fd-paddings--none",
+          "fd-paddings--xl"
+        ]
+      },
+      "description": "Optional modifier classes"
+    }
+  },
+  "required": [
+    "baseClass"
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://sap.github.io/fundamental-styles/schemas/breadcrumb.json",
+  "title": "Breadcrumb Component",
+  "description": "The breadcrumb component is a type of navigation that indicates the position of a page within the application’s page hierarchy. Users can navigate backward by selecting the previous pages in the navigation path.",
+  "type": "object",
+  "properties": {
+    "baseClass": {
+      "const": "fd-breadcrumb",
+      "description": "Required base class"
+    },
+    "modifiers": {
+      "type": "array",
+      "items": {
+        "enum": [
+          "fd-breadcrumb--backslash",
+          "fd-breadcrumb--double-slash",
+          "fd-breadcrumb--double-backslash",
+          "fd-breadcrumb--greater-than",
+          "fd-breadcrumb--double-greater-than"
+        ]
+      },
+      "description": "Optional modifier classes"
+    },
+    "elements": {
+      "type": "object",
+      "description": "Optional element classes with their available modifiers",
+      "properties": {
+        "fd-breadcrumb__item": {
+          "type": "object",
+          "description": "item element",
+          "properties": {
+            "class": {
+              "const": "fd-breadcrumb__item",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-breadcrumb__separator": {
+          "type": "object",
+          "description": "separator element",
+          "properties": {
+            "class": {
+              "const": "fd-breadcrumb__separator",
+              "description": "Element class name"
+            }
+          }
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "required": [
+    "baseClass"
+  ]
+}

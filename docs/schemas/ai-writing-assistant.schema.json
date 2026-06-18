@@ -1,0 +1,16 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://sap.github.io/fundamental-styles/schemas/ai-writing-assistant.json",
+  "title": "Ai Writing Assistant Component",
+  "description": "Ai Writing Assistant component",
+  "type": "object",
+  "properties": {
+    "baseClass": {
+      "const": "fd-ai-writing-assistant",
+      "description": "Required base class"
+    }
+  },
+  "required": [
+    "baseClass"
+  ]
+}

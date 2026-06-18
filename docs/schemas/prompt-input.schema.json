@@ -1,0 +1,53 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://sap.github.io/fundamental-styles/schemas/prompt-input.json",
+  "title": "Prompt Input Component",
+  "description": "Prompt Input component",
+  "type": "object",
+  "properties": {
+    "baseClass": {
+      "const": "fd-prompt-input",
+      "description": "Required base class"
+    },
+    "elements": {
+      "type": "object",
+      "description": "Optional element classes with their available modifiers",
+      "properties": {
+        "fd-prompt-input__wrapper": {
+          "type": "object",
+          "description": "wrapper element",
+          "properties": {
+            "class": {
+              "const": "fd-prompt-input__wrapper",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-prompt-input__inner-wrapper": {
+          "type": "object",
+          "description": "inner-wrapper element",
+          "properties": {
+            "class": {
+              "const": "fd-prompt-input__inner-wrapper",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-prompt-input__counter": {
+          "type": "object",
+          "description": "counter element",
+          "properties": {
+            "class": {
+              "const": "fd-prompt-input__counter",
+              "description": "Element class name"
+            }
+          }
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "required": [
+    "baseClass"
+  ]
+}

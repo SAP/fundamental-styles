@@ -1,0 +1,296 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://sap.github.io/fundamental-styles/schemas/icon-tab-bar.json",
+  "title": "Icon Tab Bar Component",
+  "description": "The Icon Tab Bar can be used for navigation within an object, or as a filter. Each tab of the component links to a different content area or view.",
+  "type": "object",
+  "properties": {
+    "baseClass": {
+      "const": "fd-icon-tab-bar__popover",
+      "description": "Required base class"
+    },
+    "modifiers": {
+      "type": "array",
+      "items": {
+        "enum": [
+          "fd-icon-tab-bar__popover--single-click",
+          "fd-icon-tab-bar__popover--dnd-preview",
+          "fd-icon-tab-bar__popover--dnd-hovered",
+          "fd-icon-tab-bar__popover--dnd-separator",
+          "fd-icon-tab-bar__popover--filter",
+          "fd-icon-tab-bar__popover--animated",
+          "fd-icon-tab-bar__popover--transparent",
+          "fd-icon-tab-bar__popover--translucent",
+          "fd-icon-tab-bar__popover--counters",
+          "fd-icon-tab-bar__popover--icon-only",
+          "fd-icon-tab-bar__popover--icon",
+          "fd-icon-tab-bar__popover--process",
+          "fd-icon-tab-bar__popover--with-separator",
+          "fd-icon-tab-bar__popover--navigation-horizontal",
+          "fd-icon-tab-bar__popover--responsive-paddings",
+          "fd-icon-tab-bar__popover--overflow"
+        ]
+      },
+      "description": "Optional modifier classes"
+    },
+    "elements": {
+      "type": "object",
+      "description": "Optional element classes with their available modifiers",
+      "properties": {
+        "fd-icon-tab-bar__popover__header": {
+          "type": "object",
+          "description": "header element",
+          "properties": {
+            "class": {
+              "const": "fd-icon-tab-bar__popover__header",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-icon-tab-bar__popover__panel": {
+          "type": "object",
+          "description": "panel element",
+          "properties": {
+            "class": {
+              "const": "fd-icon-tab-bar__popover__panel",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-icon-tab-bar__popover__item": {
+          "type": "object",
+          "description": "item element",
+          "properties": {
+            "class": {
+              "const": "fd-icon-tab-bar__popover__item",
+              "description": "Element class name"
+            },
+            "modifiers": {
+              "type": "array",
+              "items": {
+                "enum": [
+                  "fd-icon-tab-bar__popover__item--overflow",
+                  "fd-icon-tab-bar__popover__item--multi-click",
+                  "fd-icon-tab-bar__popover__item--closable"
+                ]
+              },
+              "description": "Available modifiers for this element"
+            }
+          }
+        },
+        "fd-icon-tab-bar__popover__button-container": {
+          "type": "object",
+          "description": "button-container element",
+          "properties": {
+            "class": {
+              "const": "fd-icon-tab-bar__popover__button-container",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-icon-tab-bar__popover__tab": {
+          "type": "object",
+          "description": "tab element",
+          "properties": {
+            "class": {
+              "const": "fd-icon-tab-bar__popover__tab",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-icon-tab-bar__popover__tab-container": {
+          "type": "object",
+          "description": "tab-container element",
+          "properties": {
+            "class": {
+              "const": "fd-icon-tab-bar__popover__tab-container",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-icon-tab-bar__popover__arrow": {
+          "type": "object",
+          "description": "arrow element",
+          "properties": {
+            "class": {
+              "const": "fd-icon-tab-bar__popover__arrow",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-icon-tab-bar__popover__tag": {
+          "type": "object",
+          "description": "tag element",
+          "properties": {
+            "class": {
+              "const": "fd-icon-tab-bar__popover__tag",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-icon-tab-bar__popover__counter": {
+          "type": "object",
+          "description": "counter element",
+          "properties": {
+            "class": {
+              "const": "fd-icon-tab-bar__popover__counter",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-icon-tab-bar__popover__icon": {
+          "type": "object",
+          "description": "icon element",
+          "properties": {
+            "class": {
+              "const": "fd-icon-tab-bar__popover__icon",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-icon-tab-bar__popover__details": {
+          "type": "object",
+          "description": "details element",
+          "properties": {
+            "class": {
+              "const": "fd-icon-tab-bar__popover__details",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-icon-tab-bar__popover__label": {
+          "type": "object",
+          "description": "label element",
+          "properties": {
+            "class": {
+              "const": "fd-icon-tab-bar__popover__label",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-icon-tab-bar__popover__separator": {
+          "type": "object",
+          "description": "separator element",
+          "properties": {
+            "class": {
+              "const": "fd-icon-tab-bar__popover__separator",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-icon-tab-bar__popover__container": {
+          "type": "object",
+          "description": "container element",
+          "properties": {
+            "class": {
+              "const": "fd-icon-tab-bar__popover__container",
+              "description": "Element class name"
+            },
+            "modifiers": {
+              "type": "array",
+              "items": {
+                "enum": [
+                  "fd-icon-tab-bar__popover__container--filter"
+                ]
+              },
+              "description": "Available modifiers for this element"
+            }
+          }
+        },
+        "fd-icon-tab-bar__popover__filter-label": {
+          "type": "object",
+          "description": "filter-label element",
+          "properties": {
+            "class": {
+              "const": "fd-icon-tab-bar__popover__filter-label",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-icon-tab-bar__popover__filter-counter": {
+          "type": "object",
+          "description": "filter-counter element",
+          "properties": {
+            "class": {
+              "const": "fd-icon-tab-bar__popover__filter-counter",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-icon-tab-bar__popover__overflow": {
+          "type": "object",
+          "description": "overflow element",
+          "properties": {
+            "class": {
+              "const": "fd-icon-tab-bar__popover__overflow",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-icon-tab-bar__popover__badge": {
+          "type": "object",
+          "description": "badge element",
+          "properties": {
+            "class": {
+              "const": "fd-icon-tab-bar__popover__badge",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-icon-tab-bar__popover__icon-separator": {
+          "type": "object",
+          "description": "icon-separator element",
+          "properties": {
+            "class": {
+              "const": "fd-icon-tab-bar__popover__icon-separator",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-icon-tab-bar__popover__line-separator": {
+          "type": "object",
+          "description": "line-separator element",
+          "properties": {
+            "class": {
+              "const": "fd-icon-tab-bar__popover__line-separator",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-icon-tab-bar__popover__list": {
+          "type": "object",
+          "description": "list element",
+          "properties": {
+            "class": {
+              "const": "fd-icon-tab-bar__popover__list",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-icon-tab-bar__popover__list-item": {
+          "type": "object",
+          "description": "list-item element",
+          "properties": {
+            "class": {
+              "const": "fd-icon-tab-bar__popover__list-item",
+              "description": "Element class name"
+            },
+            "modifiers": {
+              "type": "array",
+              "items": {
+                "enum": [
+                  "fd-icon-tab-bar__popover__list-item--closable"
+                ]
+              },
+              "description": "Available modifiers for this element"
+            }
+          }
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "required": [
+    "baseClass"
+  ]
+}

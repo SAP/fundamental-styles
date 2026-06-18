@@ -1,0 +1,30 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://sap.github.io/fundamental-styles/schemas/margins.json",
+  "title": "Margins Component",
+  "description": "Margins component",
+  "type": "object",
+  "properties": {
+    "baseClass": {
+      "const": "fd-margins",
+      "description": "Required base class"
+    },
+    "modifiers": {
+      "type": "array",
+      "items": {
+        "enum": [
+          "fd-margins--tiny",
+          "fd-margins--sm",
+          "fd-margins--md",
+          "fd-margins--lg",
+          "fd-margins--none",
+          "fd-margins--xl"
+        ]
+      },
+      "description": "Optional modifier classes"
+    }
+  },
+  "required": [
+    "baseClass"
+  ]
+}

@@ -1,0 +1,136 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://sap.github.io/fundamental-styles/schemas/timepicker.json",
+  "title": "Timepicker Component",
+  "description": "The time picker allows the user to select a localized time, based on the 12-hour syste or the 24-hour system. It can be used with touch, mouse, or keyboard input. <br> For more information visit <a href=\"https://experience.sap.com/fiori-design-web//time-picker/\" target=\"_blank\">Fiori Design Guidelines</a>",
+  "type": "object",
+  "properties": {
+    "baseClass": {
+      "const": "fd-timepicker",
+      "description": "Required base class"
+    },
+    "modifiers": {
+      "type": "array",
+      "items": {
+        "enum": [
+          "fd-timepicker--inner",
+          "fd-timepicker--hour",
+          "fd-timepicker--selected",
+          "fd-timepicker--hover",
+          "fd-timepicker--invisible"
+        ]
+      },
+      "description": "Optional modifier classes"
+    },
+    "elements": {
+      "type": "object",
+      "description": "Optional element classes with their available modifiers",
+      "properties": {
+        "fd-timepicker__dropdown": {
+          "type": "object",
+          "description": "dropdown element",
+          "properties": {
+            "class": {
+              "const": "fd-timepicker__dropdown",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-timepicker__header": {
+          "type": "object",
+          "description": "header element",
+          "properties": {
+            "class": {
+              "const": "fd-timepicker__header",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-timepicker__output": {
+          "type": "object",
+          "description": "output element",
+          "properties": {
+            "class": {
+              "const": "fd-timepicker__output",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-timepicker__colon": {
+          "type": "object",
+          "description": "colon element",
+          "properties": {
+            "class": {
+              "const": "fd-timepicker__colon",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-timepicker__clock-container": {
+          "type": "object",
+          "description": "clock-container element",
+          "properties": {
+            "class": {
+              "const": "fd-timepicker__clock-container",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-timepicker__clock": {
+          "type": "object",
+          "description": "clock element",
+          "properties": {
+            "class": {
+              "const": "fd-timepicker__clock",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-timepicker__label": {
+          "type": "object",
+          "description": "label element",
+          "properties": {
+            "class": {
+              "const": "fd-timepicker__label",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-timepicker__item": {
+          "type": "object",
+          "description": "item element",
+          "properties": {
+            "class": {
+              "const": "fd-timepicker__item",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-timepicker__tick": {
+          "type": "object",
+          "description": "tick element",
+          "properties": {
+            "class": {
+              "const": "fd-timepicker__tick",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-timepicker__number": {
+          "type": "object",
+          "description": "number element",
+          "properties": {
+            "class": {
+              "const": "fd-timepicker__number",
+              "description": "Element class name"
+            }
+          }
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "required": [
+    "baseClass"
+  ]
+}

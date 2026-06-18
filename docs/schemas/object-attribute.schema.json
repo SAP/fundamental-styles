@@ -1,0 +1,25 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://sap.github.io/fundamental-styles/schemas/object-attribute.json",
+  "title": "Object Attribute Component",
+  "description": "Object Attribute component",
+  "type": "object",
+  "properties": {
+    "baseClass": {
+      "const": "fd-object-attribute",
+      "description": "Required base class"
+    },
+    "modifiers": {
+      "type": "array",
+      "items": {
+        "enum": [
+          "fd-object-attribute--link"
+        ]
+      },
+      "description": "Optional modifier classes"
+    }
+  },
+  "required": [
+    "baseClass"
+  ]
+}

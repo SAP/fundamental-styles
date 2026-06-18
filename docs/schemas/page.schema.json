@@ -1,0 +1,87 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://sap.github.io/fundamental-styles/schemas/page.json",
+  "title": "Page Component",
+  "description": "Page component",
+  "type": "object",
+  "properties": {
+    "baseClass": {
+      "const": "fd-page",
+      "description": "Required base class"
+    },
+    "modifiers": {
+      "type": "array",
+      "items": {
+        "enum": [
+          "fd-page--solid",
+          "fd-page--list",
+          "fd-page--transparent",
+          "fd-page--home"
+        ]
+      },
+      "description": "Optional modifier classes"
+    },
+    "elements": {
+      "type": "object",
+      "description": "Optional element classes with their available modifiers",
+      "properties": {
+        "fd-page__content": {
+          "type": "object",
+          "description": "content element",
+          "properties": {
+            "class": {
+              "const": "fd-page__content",
+              "description": "Element class name"
+            },
+            "modifiers": {
+              "type": "array",
+              "items": {
+                "enum": [
+                  "fd-page__content--s",
+                  "fd-page__content--m",
+                  "fd-page__content--xl",
+                  "fd-page__content--S"
+                ]
+              },
+              "description": "Available modifiers for this element"
+            }
+          }
+        },
+        "fd-page__content--s": {
+          "type": "object",
+          "description": "content--s element",
+          "properties": {
+            "class": {
+              "const": "fd-page__content--s",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-page__content--m": {
+          "type": "object",
+          "description": "content--m element",
+          "properties": {
+            "class": {
+              "const": "fd-page__content--m",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-page__content--xl": {
+          "type": "object",
+          "description": "content--xl element",
+          "properties": {
+            "class": {
+              "const": "fd-page__content--xl",
+              "description": "Element class name"
+            }
+          }
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "required": [
+    "baseClass"
+  ]
+}

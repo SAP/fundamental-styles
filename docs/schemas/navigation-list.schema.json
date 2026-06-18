@@ -1,0 +1,105 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://sap.github.io/fundamental-styles/schemas/navigation-list.json",
+  "title": "Navigation List Component",
+  "description": "Navigation List component",
+  "type": "object",
+  "properties": {
+    "baseClass": {
+      "const": "fd-navigation-list__content",
+      "description": "Required base class"
+    },
+    "modifiers": {
+      "type": "array",
+      "items": {
+        "enum": [
+          "fd-navigation-list__content--separator",
+          "fd-navigation-list__content--group",
+          "fd-navigation-list__content--quick-create",
+          "fd-navigation-list__content--two-click"
+        ]
+      },
+      "description": "Optional modifier classes"
+    },
+    "elements": {
+      "type": "object",
+      "description": "Optional element classes with their available modifiers",
+      "properties": {
+        "fd-navigation-list__content__item": {
+          "type": "object",
+          "description": "item element",
+          "properties": {
+            "class": {
+              "const": "fd-navigation-list__content__item",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-navigation-list__content__content": {
+          "type": "object",
+          "description": "content element",
+          "properties": {
+            "class": {
+              "const": "fd-navigation-list__content__content",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-navigation-list__content__content-container": {
+          "type": "object",
+          "description": "content-container element",
+          "properties": {
+            "class": {
+              "const": "fd-navigation-list__content__content-container",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-navigation-list__content__icon": {
+          "type": "object",
+          "description": "icon element",
+          "properties": {
+            "class": {
+              "const": "fd-navigation-list__content__icon",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-navigation-list__content__text": {
+          "type": "object",
+          "description": "text element",
+          "properties": {
+            "class": {
+              "const": "fd-navigation-list__content__text",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-navigation-list__content__navigation-indicator": {
+          "type": "object",
+          "description": "navigation-indicator element",
+          "properties": {
+            "class": {
+              "const": "fd-navigation-list__content__navigation-indicator",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-navigation-list__content__indication-arrow": {
+          "type": "object",
+          "description": "indication-arrow element",
+          "properties": {
+            "class": {
+              "const": "fd-navigation-list__content__indication-arrow",
+              "description": "Element class name"
+            }
+          }
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "required": [
+    "baseClass"
+  ]
+}

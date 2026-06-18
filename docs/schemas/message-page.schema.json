@@ -1,0 +1,122 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://sap.github.io/fundamental-styles/schemas/message-page.json",
+  "title": "Message Page Component",
+  "description": "Message page displays a message to the user when an app or list is empty or if an error has occurred. The text and icon on the message page changes depending on the use case, however, the layout stays the same. It is responsive and adjusts to fit the available screen space.",
+  "type": "object",
+  "properties": {
+    "baseClass": {
+      "const": "fd-message-page",
+      "description": "Required base class"
+    },
+    "modifiers": {
+      "type": "array",
+      "items": {
+        "enum": [
+          "fd-message-page--center"
+        ]
+      },
+      "description": "Optional modifier classes"
+    },
+    "elements": {
+      "type": "object",
+      "description": "Optional element classes with their available modifiers",
+      "properties": {
+        "fd-message-page__container": {
+          "type": "object",
+          "description": "container element",
+          "properties": {
+            "class": {
+              "const": "fd-message-page__container",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-message-page__content": {
+          "type": "object",
+          "description": "content element",
+          "properties": {
+            "class": {
+              "const": "fd-message-page__content",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-message-page__title": {
+          "type": "object",
+          "description": "title element",
+          "properties": {
+            "class": {
+              "const": "fd-message-page__title",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-message-page__subtitle": {
+          "type": "object",
+          "description": "subtitle element",
+          "properties": {
+            "class": {
+              "const": "fd-message-page__subtitle",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-message-page__actions": {
+          "type": "object",
+          "description": "actions element",
+          "properties": {
+            "class": {
+              "const": "fd-message-page__actions",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-message-page__more": {
+          "type": "object",
+          "description": "more element",
+          "properties": {
+            "class": {
+              "const": "fd-message-page__more",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-message-page__illustration-container": {
+          "type": "object",
+          "description": "illustration-container element",
+          "properties": {
+            "class": {
+              "const": "fd-message-page__illustration-container",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-message-page__icon-container": {
+          "type": "object",
+          "description": "icon-container element",
+          "properties": {
+            "class": {
+              "const": "fd-message-page__icon-container",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-message-page__icon": {
+          "type": "object",
+          "description": "icon element",
+          "properties": {
+            "class": {
+              "const": "fd-message-page__icon",
+              "description": "Element class name"
+            }
+          }
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "required": [
+    "baseClass"
+  ]
+}

@@ -1,0 +1,91 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://sap.github.io/fundamental-styles/schemas/object-status.json",
+  "title": "Object Status Component",
+  "description": "Object Status is a short text that represents the semantic status of an object. It has a semantic",
+  "type": "object",
+  "properties": {
+    "baseClass": {
+      "const": "fd-object-status",
+      "description": "Required base class"
+    },
+    "modifiers": {
+      "type": "array",
+      "items": {
+        "enum": [
+          "fd-object-status--link",
+          "fd-object-status--large",
+          "fd-object-status--inverted",
+          "fd-object-status--truncate",
+          "fd-object-status--negative",
+          "fd-object-status--critical",
+          "fd-object-status--positive",
+          "fd-object-status--informative",
+          "fd-object-status--indication-1",
+          "fd-object-status--indication-2",
+          "fd-object-status--indication-3",
+          "fd-object-status--indication-4",
+          "fd-object-status--indication-5",
+          "fd-object-status--indication-6",
+          "fd-object-status--indication-7",
+          "fd-object-status--indication-8",
+          "fd-object-status--neutral",
+          "fd-object-status--indication-1b",
+          "fd-object-status--indication-2b",
+          "fd-object-status--indication-3b",
+          "fd-object-status--indication-4b",
+          "fd-object-status--indication-5b",
+          "fd-object-status--indication-6b",
+          "fd-object-status--indication-7b",
+          "fd-object-status--indication-8b",
+          "fd-object-status--indication-9b",
+          "fd-object-status--indication-1b0",
+          "fd-object-status--indication-9",
+          "fd-object-status--indication-10",
+          "fd-object-status--icon-only"
+        ]
+      },
+      "description": "Optional modifier classes"
+    },
+    "elements": {
+      "type": "object",
+      "description": "Optional element classes with their available modifiers",
+      "properties": {
+        "fd-object-status__text": {
+          "type": "object",
+          "description": "text element",
+          "properties": {
+            "class": {
+              "const": "fd-object-status__text",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-object-status__icon": {
+          "type": "object",
+          "description": "icon element",
+          "properties": {
+            "class": {
+              "const": "fd-object-status__icon",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-object-status__sr-only": {
+          "type": "object",
+          "description": "sr-only element",
+          "properties": {
+            "class": {
+              "const": "fd-object-status__sr-only",
+              "description": "Element class name"
+            }
+          }
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "required": [
+    "baseClass"
+  ]
+}

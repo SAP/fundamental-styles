@@ -1,0 +1,91 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://sap.github.io/fundamental-styles/schemas/fixed-card-layout.json",
+  "title": "Fixed Card Layout Component",
+  "description": "Fixed Card Layout component",
+  "type": "object",
+  "properties": {
+    "baseClass": {
+      "const": "fd-fixed-card-layout",
+      "description": "Required base class"
+    },
+    "modifiers": {
+      "type": "array",
+      "items": {
+        "enum": [
+          "fd-fixed-card-layout--single"
+        ]
+      },
+      "description": "Optional modifier classes"
+    },
+    "elements": {
+      "type": "object",
+      "description": "Optional element classes with their available modifiers",
+      "properties": {
+        "fd-fixed-card-layout__card-layout": {
+          "type": "object",
+          "description": "card-layout element",
+          "properties": {
+            "class": {
+              "const": "fd-fixed-card-layout__card-layout",
+              "description": "Element class name"
+            },
+            "modifiers": {
+              "type": "array",
+              "items": {
+                "enum": [
+                  "fd-fixed-card-layout__card-layout--columns-"
+                ]
+              },
+              "description": "Available modifiers for this element"
+            }
+          }
+        },
+        "fd-fixed-card-layout__card": {
+          "type": "object",
+          "description": "card element",
+          "properties": {
+            "class": {
+              "const": "fd-fixed-card-layout__card",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-fixed-card-layout__card-placeholder": {
+          "type": "object",
+          "description": "card-placeholder element",
+          "properties": {
+            "class": {
+              "const": "fd-fixed-card-layout__card-placeholder",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-fixed-card-layout__card-preview": {
+          "type": "object",
+          "description": "card-preview element",
+          "properties": {
+            "class": {
+              "const": "fd-fixed-card-layout__card-preview",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-fixed-card-layout__clearfix": {
+          "type": "object",
+          "description": "clearfix element",
+          "properties": {
+            "class": {
+              "const": "fd-fixed-card-layout__clearfix",
+              "description": "Element class name"
+            }
+          }
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "required": [
+    "baseClass"
+  ]
+}

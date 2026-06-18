@@ -1,0 +1,62 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://sap.github.io/fundamental-styles/schemas/step-input.json",
+  "title": "Step Input Component",
+  "description": "The step input control allows the user to change the input values in predefined increments (steps).",
+  "type": "object",
+  "properties": {
+    "baseClass": {
+      "const": "fd-step-input",
+      "description": "Required base class"
+    },
+    "modifiers": {
+      "type": "array",
+      "items": {
+        "enum": [
+          "fd-step-input--full-width"
+        ]
+      },
+      "description": "Optional modifier classes"
+    },
+    "elements": {
+      "type": "object",
+      "description": "Optional element classes with their available modifiers",
+      "properties": {
+        "fd-step-input__button": {
+          "type": "object",
+          "description": "button element",
+          "properties": {
+            "class": {
+              "const": "fd-step-input__button",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-step-input__input": {
+          "type": "object",
+          "description": "input element",
+          "properties": {
+            "class": {
+              "const": "fd-step-input__input",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-step-input__container": {
+          "type": "object",
+          "description": "container element",
+          "properties": {
+            "class": {
+              "const": "fd-step-input__container",
+              "description": "Element class name"
+            }
+          }
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "required": [
+    "baseClass"
+  ]
+}

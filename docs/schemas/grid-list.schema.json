@@ -1,0 +1,77 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://sap.github.io/fundamental-styles/schemas/grid-list.json",
+  "title": "Grid List Component",
+  "description": "Grid List component",
+  "type": "object",
+  "properties": {
+    "baseClass": {
+      "const": "fd-item",
+      "description": "Required base class"
+    },
+    "modifiers": {
+      "type": "array",
+      "items": {
+        "enum": [
+          "fd-item--height-auto",
+          "fd-item--unread",
+          "fd-item--link",
+          "fd-item--no-padding",
+          "fd-item--no-margin",
+          "fd-item--mode"
+        ]
+      },
+      "description": "Optional modifier classes"
+    },
+    "elements": {
+      "type": "object",
+      "description": "Optional element classes with their available modifiers",
+      "properties": {
+        "fd-item__group-header": {
+          "type": "object",
+          "description": "group-header element",
+          "properties": {
+            "class": {
+              "const": "fd-item__group-header",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-item__more": {
+          "type": "object",
+          "description": "more element",
+          "properties": {
+            "class": {
+              "const": "fd-item__more",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-item__footer": {
+          "type": "object",
+          "description": "footer element",
+          "properties": {
+            "class": {
+              "const": "fd-item__footer",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-item__highlight": {
+          "type": "object",
+          "description": "highlight element",
+          "properties": {
+            "class": {
+              "const": "fd-item__highlight",
+              "description": "Element class name"
+            }
+          }
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "required": [
+    "baseClass"
+  ]
+}

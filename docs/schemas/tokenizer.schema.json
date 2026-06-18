@@ -1,0 +1,74 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://sap.github.io/fundamental-styles/schemas/tokenizer.json",
+  "title": "Tokenizer Component",
+  "description": "Tokenizer is a container that wraps multiple tokens. The Tokenizer is used either stand alone or within Input controls such as **MultiInput**.In cozy mode the user can swipe the tokens to the left or right.",
+  "type": "object",
+  "properties": {
+    "baseClass": {
+      "const": "fd-tokenizer",
+      "description": "Required base class"
+    },
+    "modifiers": {
+      "type": "array",
+      "items": {
+        "enum": [
+          "fd-tokenizer--readonly",
+          "fd-tokenizer--display",
+          "fd-tokenizer--scrollable"
+        ]
+      },
+      "description": "Optional modifier classes"
+    },
+    "elements": {
+      "type": "object",
+      "description": "Optional element classes with their available modifiers",
+      "properties": {
+        "fd-tokenizer__inner": {
+          "type": "object",
+          "description": "inner element",
+          "properties": {
+            "class": {
+              "const": "fd-tokenizer__inner",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-tokenizer__indicator": {
+          "type": "object",
+          "description": "indicator element",
+          "properties": {
+            "class": {
+              "const": "fd-tokenizer__indicator",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-tokenizer__control": {
+          "type": "object",
+          "description": "control element",
+          "properties": {
+            "class": {
+              "const": "fd-tokenizer__control",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-tokenizer__body": {
+          "type": "object",
+          "description": "body element",
+          "properties": {
+            "class": {
+              "const": "fd-tokenizer__body",
+              "description": "Element class name"
+            }
+          }
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "required": [
+    "baseClass"
+  ]
+}

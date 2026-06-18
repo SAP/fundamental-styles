@@ -1,0 +1,88 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://sap.github.io/fundamental-styles/schemas/message-strip.json",
+  "title": "Message Strip Component",
+  "description": "Message Strip is a component that enables the embedding of application-related messages in the application. They are useed to draw the user’s attention to information that is important in the context of the page content. This could be a warning or a change of state, that would be easy to miss it.",
+  "type": "object",
+  "properties": {
+    "baseClass": {
+      "const": "fd-message-strip",
+      "description": "Required base class"
+    },
+    "modifiers": {
+      "type": "array",
+      "items": {
+        "enum": [
+          "fd-message-strip--warning",
+          "fd-message-strip--error",
+          "fd-message-strip--success",
+          "fd-message-strip--information",
+          "fd-message-strip--no-icon",
+          "fd-message-strip--dismissible",
+          "fd-message-strip--link",
+          "fd-message-strip--indication-color-1",
+          "fd-message-strip--indication-color-1b",
+          "fd-message-strip--indication-color-2",
+          "fd-message-strip--indication-color-2b",
+          "fd-message-strip--indication-color-3",
+          "fd-message-strip--indication-color-3b",
+          "fd-message-strip--indication-color-4",
+          "fd-message-strip--indication-color-4b",
+          "fd-message-strip--indication-color-5",
+          "fd-message-strip--indication-color-5b",
+          "fd-message-strip--indication-color-6",
+          "fd-message-strip--indication-color-6b",
+          "fd-message-strip--indication-color-7",
+          "fd-message-strip--indication-color-7b",
+          "fd-message-strip--indication-color-8",
+          "fd-message-strip--indication-color-8b",
+          "fd-message-strip--indication-color-9",
+          "fd-message-strip--indication-color-9b",
+          "fd-message-strip--indication-color-10",
+          "fd-message-strip--indication-color-10b"
+        ]
+      },
+      "description": "Optional modifier classes"
+    },
+    "elements": {
+      "type": "object",
+      "description": "Optional element classes with their available modifiers",
+      "properties": {
+        "fd-message-strip__text": {
+          "type": "object",
+          "description": "text element",
+          "properties": {
+            "class": {
+              "const": "fd-message-strip__text",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-message-strip__icon-container": {
+          "type": "object",
+          "description": "icon-container element",
+          "properties": {
+            "class": {
+              "const": "fd-message-strip__icon-container",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-message-strip__sr-only": {
+          "type": "object",
+          "description": "sr-only element",
+          "properties": {
+            "class": {
+              "const": "fd-message-strip__sr-only",
+              "description": "Element class name"
+            }
+          }
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "required": [
+    "baseClass"
+  ]
+}

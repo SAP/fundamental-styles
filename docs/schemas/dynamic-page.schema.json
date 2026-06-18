@@ -1,0 +1,297 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://sap.github.io/fundamental-styles/schemas/dynamic-page.json",
+  "title": "Dynamic Page Component",
+  "description": "Dynamic Page component",
+  "type": "object",
+  "properties": {
+    "baseClass": {
+      "const": "fd-dynamic-page",
+      "description": "Required base class"
+    },
+    "modifiers": {
+      "type": "array",
+      "items": {
+        "enum": [
+          "fd-dynamic-page--collapsed",
+          "fd-dynamic-page--wrap",
+          "fd-dynamic-page--actions",
+          "fd-dynamic-page--content",
+          "fd-dynamic-page--no-shadow",
+          "fd-dynamic-page--overflow",
+          "fd-dynamic-page--add-shadow",
+          "fd-dynamic-page--left-gradient",
+          "fd-dynamic-page--right-gradient",
+          "fd-dynamic-page--button-group",
+          "fd-dynamic-page--sm",
+          "fd-dynamic-page--md",
+          "fd-dynamic-page--lg",
+          "fd-dynamic-page--xl",
+          "fd-dynamic-page--list-bg",
+          "fd-dynamic-page--transparent-bg"
+        ]
+      },
+      "description": "Optional modifier classes"
+    },
+    "elements": {
+      "type": "object",
+      "description": "Optional element classes with their available modifiers",
+      "properties": {
+        "fd-dynamic-page__sr-only": {
+          "type": "object",
+          "description": "sr-only element",
+          "properties": {
+            "class": {
+              "const": "fd-dynamic-page__sr-only",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-dynamic-page__header-button": {
+          "type": "object",
+          "description": "header-button element",
+          "properties": {
+            "class": {
+              "const": "fd-dynamic-page__header-button",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-dynamic-page__header-fixed": {
+          "type": "object",
+          "description": "header-fixed element",
+          "properties": {
+            "class": {
+              "const": "fd-dynamic-page__header-fixed",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-dynamic-page__header": {
+          "type": "object",
+          "description": "header element",
+          "properties": {
+            "class": {
+              "const": "fd-dynamic-page__header",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-dynamic-page__title-area": {
+          "type": "object",
+          "description": "title-area element",
+          "properties": {
+            "class": {
+              "const": "fd-dynamic-page__title-area",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-dynamic-page__main-container": {
+          "type": "object",
+          "description": "main-container element",
+          "properties": {
+            "class": {
+              "const": "fd-dynamic-page__main-container",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-dynamic-page__title-container": {
+          "type": "object",
+          "description": "title-container element",
+          "properties": {
+            "class": {
+              "const": "fd-dynamic-page__title-container",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-dynamic-page__breadcrumb": {
+          "type": "object",
+          "description": "breadcrumb element",
+          "properties": {
+            "class": {
+              "const": "fd-dynamic-page__breadcrumb",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-dynamic-page__breadcrumb-title-container": {
+          "type": "object",
+          "description": "breadcrumb-title-container element",
+          "properties": {
+            "class": {
+              "const": "fd-dynamic-page__breadcrumb-title-container",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-dynamic-page__breadcrumb-container": {
+          "type": "object",
+          "description": "breadcrumb-container element",
+          "properties": {
+            "class": {
+              "const": "fd-dynamic-page__breadcrumb-container",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-dynamic-page__title": {
+          "type": "object",
+          "description": "title element",
+          "properties": {
+            "class": {
+              "const": "fd-dynamic-page__title",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-dynamic-page__subtitle": {
+          "type": "object",
+          "description": "subtitle element",
+          "properties": {
+            "class": {
+              "const": "fd-dynamic-page__subtitle",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-dynamic-page__title-content": {
+          "type": "object",
+          "description": "title-content element",
+          "properties": {
+            "class": {
+              "const": "fd-dynamic-page__title-content",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-dynamic-page__title-subtitle-container": {
+          "type": "object",
+          "description": "title-subtitle-container element",
+          "properties": {
+            "class": {
+              "const": "fd-dynamic-page__title-subtitle-container",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-dynamic-page__toolbar-container": {
+          "type": "object",
+          "description": "toolbar-container element",
+          "properties": {
+            "class": {
+              "const": "fd-dynamic-page__toolbar-container",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-dynamic-page__summarized-title-area": {
+          "type": "object",
+          "description": "summarized-title-area element",
+          "properties": {
+            "class": {
+              "const": "fd-dynamic-page__summarized-title-area",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-dynamic-page__summarized-title": {
+          "type": "object",
+          "description": "summarized-title element",
+          "properties": {
+            "class": {
+              "const": "fd-dynamic-page__summarized-title",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-dynamic-page__collapsible-header-container": {
+          "type": "object",
+          "description": "collapsible-header-container element",
+          "properties": {
+            "class": {
+              "const": "fd-dynamic-page__collapsible-header-container",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-dynamic-page__collapsible-header": {
+          "type": "object",
+          "description": "collapsible-header element",
+          "properties": {
+            "class": {
+              "const": "fd-dynamic-page__collapsible-header",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-dynamic-page__collapsible-header-visibility-container": {
+          "type": "object",
+          "description": "collapsible-header-visibility-container element",
+          "properties": {
+            "class": {
+              "const": "fd-dynamic-page__collapsible-header-visibility-container",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-dynamic-page__pin-button": {
+          "type": "object",
+          "description": "pin-button element",
+          "properties": {
+            "class": {
+              "const": "fd-dynamic-page__pin-button",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-dynamic-page__expand-button": {
+          "type": "object",
+          "description": "expand-button element",
+          "properties": {
+            "class": {
+              "const": "fd-dynamic-page__expand-button",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-dynamic-page__collapse-button": {
+          "type": "object",
+          "description": "collapse-button element",
+          "properties": {
+            "class": {
+              "const": "fd-dynamic-page__collapse-button",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-dynamic-page__content": {
+          "type": "object",
+          "description": "content element",
+          "properties": {
+            "class": {
+              "const": "fd-dynamic-page__content",
+              "description": "Element class name"
+            }
+          }
+        },
+        "fd-dynamic-page__footer": {
+          "type": "object",
+          "description": "footer element",
+          "properties": {
+            "class": {
+              "const": "fd-dynamic-page__footer",
+              "description": "Element class name"
+            }
+          }
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "required": [
+    "baseClass"
+  ]
+}
