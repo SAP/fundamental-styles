@@ -172,7 +172,6 @@ $block: #{$fd-namespace}-product-switch;
   &__title {
     @include fd-reset();
 
-    font-size: var(--sapFontSize);
     color: var(--sapTitleColor);
     white-space: normal;
     z-index: 1;
