@@ -7,6 +7,7 @@ import summaryLineExampleHtml from "./summary-line.example.html?raw";
 import mobileCollapsedExampleHtml from "./mobile-collapsed.example.html?raw";
 import mobileExampleHtml from "./mobile.example.html?raw";
 import tabletExampleHtml from "./tablet.example.html?raw";
+import largeExampleHtml from "./large.example.html?raw";
 import desktopExampleHtml from "./desktop.example.html?raw";
 import '../../../src/bar.scss';
 import '../../../src/breadcrumb.scss';
@@ -105,6 +106,14 @@ Desktop.parameters = {
       story: `Optimized for desktop screens (L, XL, and XXL sizes). Apply the \`fd-dynamic-page--xl\` modifier class.
 
 For proper box-shadow styling, add \`fd-dynamic-page__tabs--add-shadow\` to the tabs list and wrap it in a \`fd-dynamic-page__tabs--overflow\` container.`
+    }
+  }
+};
+export const Large = () => largeExampleHtml;
+Large.parameters = {
+  docs: {
+    description: {
+      story: `Optimized for large screens (L size, 1024–1439px). Apply the \`fd-dynamic-page--lg\` modifier class.`
     }
   }
 };

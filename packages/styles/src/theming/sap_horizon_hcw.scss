@@ -72,7 +72,7 @@
   --fdSwitch_Slider_Box_Sizing: border-box;
 
   /* Dynamic Page Layout */
-  --fdDynamicPage_Hover_Border_Bottom: solid 0.0625rem var(--sapObjectHeader_Hover_Background);
+  --fdDynamicPage_Hover_Border_Bottom: solid 0.0625rem var(--sapObjectHeader_BorderColor);
   --fdDynamicPage_Title_Header_Transparent_Background: var(--sapObjectHeader_Background);
   --fdDynamicPage_Button_Left_Gradient: linear-gradient(to left, var(--sapObjectHeader_BorderColor), transparent);
   --fdDynamicPage_Button_Right_Gradient: linear-gradient(to right, var(--sapObjectHeader_BorderColor), transparent);

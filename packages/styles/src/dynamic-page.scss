@@ -106,10 +106,15 @@ $block: #{$fd-namespace}-dynamic-page;
 
     &--collapsed {
       padding-block-end: 1rem;
+      box-shadow: var(--sapContent_HeaderShadow);
 
       .#{$block}__title {
         font-size: var(--fdDynamicPage_Title_Collapsed_Font_Size);
       }
+    }
+
+    &--no-shadow {
+      @include no-shadow();
     }
 
     &[aria-hidden="true"] {
@@ -131,6 +136,8 @@ $block: #{$fd-namespace}-dynamic-page;
     @include fd-flex() {
       align-items: center;
     }
+
+    padding-block-start: 0.3125rem;
   }
 
   &__breadcrumb {
@@ -176,6 +183,10 @@ $block: #{$fd-namespace}-dynamic-page;
       vertical-align: bottom;
     }
 
+    &--condensed {
+      font-size: var(--fdDynamicPage_Title_Collapsed_Font_Size);
+    }
+
     &--wrap {
       @include fd-wrap();
     }
@@ -199,7 +210,7 @@ $block: #{$fd-namespace}-dynamic-page;
     @include fd-ellipsis();
 
     padding-block: 0;
-    padding-inline: 1rem .2rem;
+    padding-inline-start: 1rem;
     vertical-align: baseline;
 
     &--wrap {
@@ -223,7 +234,7 @@ $block: #{$fd-namespace}-dynamic-page;
   .#{$block}__toolbar {
     @include fd-reset-spacing();
 
-    padding-inline-start: 1rem;
+    padding-inline: 1rem 0.25rem;
     background: transparent;
 
     &--actions,
@@ -279,6 +290,11 @@ $block: #{$fd-namespace}-dynamic-page;
     background-color: $fd-dynamic-page-background-color;
     padding-block: $fd-dynamic-page-header-padding-top-bottom;
     padding-inline: 0;
+    box-shadow: $fd-dynamic-page-box-shadow;
+
+    &--no-shadow {
+      @include no-shadow();
+    }
 
     &[aria-hidden="true"] {
       display: none;
@@ -354,7 +370,7 @@ $block: #{$fd-namespace}-dynamic-page;
     $fd-dynamic-page-button-clickable-height: 2rem;
     $fd-dynamic-page-button-touchable-area: ($fd-dynamic-page-button-clickable-height - $fd-dynamic-page-button-height) * 0.5;
 
-    --fdButtonBackgroundColor: var(--fdDynamicPage_Button_Pin_Background);
+    --fdButtonBackgroundColor: var(--sapObjectHeader_Background);
 
     margin-block: 0;
     margin-inline: 0.25rem;
@@ -394,7 +410,7 @@ $block: #{$fd-namespace}-dynamic-page;
   }
 
   &--sm {
-    @include fd-responsive-page($fd-dynamic-page-header-padding-top-bottom);
+    @include fd-responsive-page($fd-dynamic-page-header-padding-top-bottom, var(--sapContent_Space_S));
 
     .#{$block}__breadcrumb {
       padding-inline: 0;
@@ -417,11 +433,11 @@ $block: #{$fd-namespace}-dynamic-page;
 
   &--md,
   &--lg {
-    @include fd-responsive-page($fd-dynamic-page-header-padding-top-bottom, 2rem);
+    @include fd-responsive-page($fd-dynamic-page-header-padding-top-bottom, var(--sapContent_Space_M));
   }
 
   &--xl {
-    @include fd-responsive-page($fd-dynamic-page-header-padding-top-bottom, 3rem);
+    @include fd-responsive-page($fd-dynamic-page-header-padding-top-bottom, var(--sapContent_Space_XL));
   }
 
   &--md {
