@@ -106,15 +106,10 @@ $block: #{$fd-namespace}-dynamic-page;
 
     &--collapsed {
       padding-block-end: 1rem;
-      box-shadow: var(--sapContent_HeaderShadow);
 
       .#{$block}__title {
         font-size: var(--fdDynamicPage_Title_Collapsed_Font_Size);
       }
-    }
-
-    &--no-shadow {
-      @include no-shadow();
     }
 
     &[aria-hidden="true"] {
@@ -290,11 +285,6 @@ $block: #{$fd-namespace}-dynamic-page;
     background-color: $fd-dynamic-page-background-color;
     padding-block: $fd-dynamic-page-header-padding-top-bottom;
     padding-inline: 0;
-    box-shadow: $fd-dynamic-page-box-shadow;
-
-    &--no-shadow {
-      @include no-shadow();
-    }
 
     &[aria-hidden="true"] {
       display: none;
