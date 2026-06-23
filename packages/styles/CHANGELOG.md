@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.41.8-rc.9](https://github.com/SAP/fundamental-styles/compare/v0.41.8-rc.8...v0.41.8-rc.9) (2026-06-23)
+
+### Features
+
+- **styles:** update product switch to match the new specs ([#6329](https://github.com/SAP/fundamental-styles/issues/6329)) ([0dbe859](https://github.com/SAP/fundamental-styles/commit/0dbe859051b1d3b5ec811c16ab0e125a5de63bf5))
+
 ## [0.41.8-rc.8](https://github.com/SAP/fundamental-styles/compare/v0.41.8-rc.7...v0.41.8-rc.8) (2026-06-16)
 
 **Note:** Version bump only for package fundamental-styles
