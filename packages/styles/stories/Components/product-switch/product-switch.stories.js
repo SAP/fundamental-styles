@@ -42,105 +42,129 @@ export const Shellbar = () => `${localStyles}
             <div class="fd-product-switch">
                 <div class="fd-popover fd-popover--right">
                     <button class="fd-button fd-button--transparent fd-popover__control fd-shellbar__button"
-                        aria-label="Image label"
+                        aria-label="Products"
                         aria-controls="product-switch-body"
                         aria-expanded="true"
                         aria-haspopup="true">
                         <i class="sap-icon--grid"></i>
                     </button>
-                    <div class="fd-popover__body fd-popover__body--right" aria-hidden="false" id="product-switch-body">
+                    <div class="fd-popover__body fd-popover__body--right" role="dialog" aria-modal="false" aria-label="Products" aria-hidden="false" id="product-switch-body">
                         <div class="fd-product-switch__body">
-                            <ul class="fd-product-switch__list">
-                                <li class="fd-product-switch__item selected" tabindex="0">
-                                    <i role="presentation" class="fd-product-switch__icon sap-icon--home"></i>
+                            <ul class="fd-product-switch__list" role="menu">
+                                <li class="fd-product-switch__item selected" tabindex="0" role="menuitem" aria-label="Home Home Home Home Home Home Home Home Central Home Central Home Central Home Central Home" aria-posinset="1" aria-setsize="14">
+                                    <span class="fd-avatar fd-avatar--sm fd-avatar--transparent" role="img" aria-label="Home">
+                                        <i role="presentation" aria-hidden="true" class="fd-avatar__icon sap-icon--home"></i>
+                                    </span>
                                     <div class="fd-product-switch__text">
-                                        <div class="fd-product-switch__title">Home</div>
-                                        <div class="fd-product-switch__subtitle">Central Home</div>
+                                        <div class="fd-product-switch__title">Home Home Home Home Home Home Home Home</div>
+                                        <div class="fd-product-switch__subtitle">Central Home Central Home Central Home Central Home</div>
                                     </div>
                                 </li>
-                                <li class="fd-product-switch__item" tabindex="0" selected>
-                                    <i role="presentation" class="fd-product-switch__icon sap-icon--business-objects-experience"></i>
+                                <li class="fd-product-switch__item" tabindex="0" role="menuitem" aria-label="Analytics Cloud Analytics Cloud Analytics Cloud" aria-posinset="2" aria-setsize="14">
+                                    <span class="fd-avatar fd-avatar--sm fd-avatar--transparent" role="img" aria-label="Analytics Cloud">
+                                        <i role="presentation" aria-hidden="true" class="fd-avatar__icon sap-icon--business-objects-experience"></i>
+                                    </span>
                                     <div class="fd-product-switch__text">
                                         <div class="fd-product-switch__title">Analytics Cloud</div>
                                         <div class="fd-product-switch__subtitle">Analytics Cloud</div>
                                     </div>
                                 </li>
-                                <li class="fd-product-switch__item" tabindex="0">
-                                    <span class="fd-avatar fd-avatar--indication-color-3 fd-avatar--sm" role="img" aria-label="Avatar">
-                                        <i role="presentation" aria-hidden="true" aria-label="contacts" class="fd-avatar__icon sap-icon--contacts"></i>
+                                <li class="fd-product-switch__item" tabindex="0" role="menuitem" aria-label="Catalog Ariba" aria-posinset="3" aria-setsize="14">
+                                    <span class="fd-avatar fd-avatar--sm fd-avatar--transparent" role="img" aria-label="Catalog">
+                                        <i role="presentation" aria-hidden="true" class="fd-avatar__icon sap-icon--contacts"></i>
                                     </span>
                                     <div class="fd-product-switch__text">
                                         <div class="fd-product-switch__title">Catalog</div>
                                         <div class="fd-product-switch__subtitle">Ariba</div>
                                     </div>
                                 </li>
-                                <li class="fd-product-switch__item" tabindex="0">
-                                    <span class="fd-avatar fd-avatar--sm fd-avatar--thumbnail" style="background-image: url('/assets/images/landscape/demo-avatar.png')" role="img" aria-label="Product logo"></span>
+                                <li class="fd-product-switch__item" tabindex="0" role="menuitem" aria-label="Guided Buying" aria-posinset="4" aria-setsize="14">
+                                    <span class="fd-avatar fd-avatar--sm fd-avatar--thumbnail" style="background-image: url('/assets/images/landscape/demo-avatar.png')" role="img" aria-label="Guided Buying"></span>
                                     <div class="fd-product-switch__text">
                                         <div class="fd-product-switch__title">Guided Buying</div>
                                     </div>
                                 </li>
-                                <li class="fd-product-switch__item" tabindex="0">
-                                    <i role="presentation" class="fd-product-switch__icon sap-icon--cart-3"></i>
+                                <li class="fd-product-switch__item" tabindex="0" role="menuitem" aria-label="Strategic Procurement" aria-posinset="5" aria-setsize="14">
+                                    <span class="fd-avatar fd-avatar--sm fd-avatar--transparent" role="img" aria-label="Strategic Procurement">
+                                        <i role="presentation" aria-hidden="true" class="fd-avatar__icon sap-icon--cart-3"></i>
+                                    </span>
                                     <div class="fd-product-switch__text">
                                         <div class="fd-product-switch__title">Strategic Procurement</div>
                                     </div>
                                 </li>
-                                <li class="fd-product-switch__item" tabindex="0">
-                                    <i role="presentation" class="fd-product-switch__icon sap-icon--flight"></i>
+                                <li class="fd-product-switch__item" tabindex="0" role="menuitem" aria-label="Travel &amp; Expense Concur" aria-posinset="6" aria-setsize="14">
+                                    <span class="fd-avatar fd-avatar--sm fd-avatar--transparent" role="img" aria-label="Travel &amp; Expense">
+                                        <i role="presentation" aria-hidden="true" class="fd-avatar__icon sap-icon--flight"></i>
+                                    </span>
                                     <div class="fd-product-switch__text">
                                         <div class="fd-product-switch__title">Travel & Expense</div>
                                         <div class="fd-product-switch__subtitle">Concur</div>
                                     </div>
                                 </li>
-                                <li class="fd-product-switch__item" tabindex="0">
-                                    <i role="presentation" class="fd-product-switch__icon sap-icon--shipping-status"></i>
+                                <li class="fd-product-switch__item" tabindex="0" role="menuitem" aria-label="Vendor Management Fieldglass" aria-posinset="7" aria-setsize="14">
+                                    <span class="fd-avatar fd-avatar--sm fd-avatar--transparent" role="img" aria-label="Vendor Management">
+                                        <i role="presentation" aria-hidden="true" class="fd-avatar__icon sap-icon--shipping-status"></i>
+                                    </span>
                                     <div class="fd-product-switch__text">
                                         <div class="fd-product-switch__title">Vendor Management</div>
                                         <div class="fd-product-switch__subtitle">Fieldglass</div>
                                     </div>
                                 </li>
-                                <li class="fd-product-switch__item" tabindex="0">
-                                    <i role="presentation" class="fd-product-switch__icon sap-icon--customer"></i>
+                                <li class="fd-product-switch__item" tabindex="0" role="menuitem" aria-label="Human Capital Management" aria-posinset="8" aria-setsize="14">
+                                    <span class="fd-avatar fd-avatar--sm fd-avatar--transparent" role="img" aria-label="Human Capital Management">
+                                        <i role="presentation" aria-hidden="true" class="fd-avatar__icon sap-icon--customer"></i>
+                                    </span>
                                     <div class="fd-product-switch__text">
                                         <div class="fd-product-switch__title">Human Capital Management</div>
                                     </div>
                                 </li>
-                                <li class="fd-product-switch__item" tabindex="0">
-                                    <i role="presentation" class="fd-product-switch__icon sap-icon--sales-notification"></i>
+                                <li class="fd-product-switch__item" tabindex="0" role="menuitem" aria-label="Sales Cloud Sales Cloud" aria-posinset="9" aria-setsize="14">
+                                    <span class="fd-avatar fd-avatar--sm fd-avatar--transparent" role="img" aria-label="Sales Cloud">
+                                        <i role="presentation" aria-hidden="true" class="fd-avatar__icon sap-icon--sales-notification"></i>
+                                    </span>
                                     <div class="fd-product-switch__text">
                                         <div class="fd-product-switch__title">Sales Cloud</div>
                                         <div class="fd-product-switch__subtitle">Sales Cloud</div>
                                     </div>
                                 </li>
-                                <li class="fd-product-switch__item" tabindex="0">
-                                    <i role="presentation" class="fd-product-switch__icon sap-icon--retail-store"></i>
+                                <li class="fd-product-switch__item" tabindex="0" role="menuitem" aria-label="Commerce Cloud Commerce Cloud" aria-posinset="10" aria-setsize="14">
+                                    <span class="fd-avatar fd-avatar--sm fd-avatar--transparent" role="img" aria-label="Commerce Cloud">
+                                        <i role="presentation" aria-hidden="true" class="fd-avatar__icon sap-icon--retail-store"></i>
+                                    </span>
                                     <div class="fd-product-switch__text">
                                         <div class="fd-product-switch__title">Commerce Cloud</div>
                                         <div class="fd-product-switch__subtitle">Commerce Cloud</div>
                                     </div>
                                 </li>
-                                <li class="fd-product-switch__item" tabindex="0">
-                                    <i role="presentation" class="fd-product-switch__icon sap-icon--marketing-campaign"></i>
+                                <li class="fd-product-switch__item" tabindex="0" role="menuitem" aria-label="Marketing Cloud Marketing Cloud" aria-posinset="11" aria-setsize="14">
+                                    <span class="fd-avatar fd-avatar--sm fd-avatar--transparent" role="img" aria-label="Marketing Cloud">
+                                        <i role="presentation" aria-hidden="true" class="fd-avatar__icon sap-icon--marketing-campaign"></i>
+                                    </span>
                                     <div class="fd-product-switch__text">
                                         <div class="fd-product-switch__title">Marketing Cloud</div>
                                         <div class="fd-product-switch__subtitle">Marketing Cloud</div>
                                     </div>
                                 </li>
-                                <li class="fd-product-switch__item" tabindex="0">
-                                    <i role="presentation" class="fd-product-switch__icon sap-icon--family-care"></i>
+                                <li class="fd-product-switch__item" tabindex="0" role="menuitem" aria-label="Service Cloud" aria-posinset="12" aria-setsize="14">
+                                    <span class="fd-avatar fd-avatar--sm fd-avatar--transparent" role="img" aria-label="Service Cloud">
+                                        <i role="presentation" aria-hidden="true" class="fd-avatar__icon sap-icon--family-care"></i>
+                                    </span>
                                     <div class="fd-product-switch__text">
                                         <div class="fd-product-switch__title">Service Cloud</div>
                                     </div>
                                 </li>
-                                <li class="fd-product-switch__item" tabindex="0">
-                                    <i role="presentation" class="fd-product-switch__icon sap-icon--customer-briefing"></i>
+                                <li class="fd-product-switch__item" tabindex="0" role="menuitem" aria-label="Customer Data Cloud" aria-posinset="13" aria-setsize="14">
+                                    <span class="fd-avatar fd-avatar--sm fd-avatar--transparent" role="img" aria-label="Customer Data Cloud">
+                                        <i role="presentation" aria-hidden="true" class="fd-avatar__icon sap-icon--customer-briefing"></i>
+                                    </span>
                                     <div class="fd-product-switch__text">
                                         <div class="fd-product-switch__title">Customer Data Cloud</div>
                                     </div>
                                 </li>
-                                <li class="fd-product-switch__item" tabindex="0">
-                                    <i role="presentation" class="fd-product-switch__icon sap-icon--batch-payments"></i>
+                                <li class="fd-product-switch__item" tabindex="0" role="menuitem" aria-label="S/4HANA" aria-posinset="14" aria-setsize="14">
+                                    <span class="fd-avatar fd-avatar--sm fd-avatar--transparent" role="img" aria-label="S/4HANA">
+                                        <i role="presentation" aria-hidden="true" class="fd-avatar__icon sap-icon--batch-payments"></i>
+                                    </span>
                                     <div class="fd-product-switch__text">
                                         <div class="fd-product-switch__title">S/4HANA</div>
                                     </div>
@@ -158,7 +182,9 @@ export const Shellbar = () => `${localStyles}
 Shellbar.parameters = {
   docs: {
     description: {
-      story: `The product switch button is typically displayed within a **Shellbar** on the far-right side. <br> <b>Note: </b>Products are represented by application icons, implemented using either SAP Icon Fonts or the Avatar component in size S (48x48 px). The Avatar component supports PNG, JPG, and SVG formats. To maintain visual consistency, all icons must be rendered within a 48x48 px bounding box.
+      story: `The product switch button is typically displayed within a **Shellbar** on the far-right side.
+<br> <b>Note: </b>Products are represented by application icons, implemented using the Avatar component in size S (48x48 px). The Avatar component supports PNG, JPG, and SVG formats. To maintain visual consistency, all icons must be rendered within a 48x48 px bounding box.
+<br> Both **title** and **subtitle** are recommended to wrap at maximum of 2 lines of text although text is never truncated. If the title or subtitle exceeds 2 lines of text, the item height will grow to accommodate the text.
         `
     }
   }

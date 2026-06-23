@@ -4,7 +4,7 @@
   "version": "1.0.0",
   "generatedBy": "scripts/generate-design-tokens.js",
   "source": "@sap-theming/theming-base-content (sap_horizon)",
-  "totalTokens": 1527,
+  "totalTokens": 1528,
   "relatedFiles": {
     "componentCatalog": "docs/component-catalog.json",
     "utilityClasses": "docs/utility-classes.json"
@@ -3235,7 +3235,7 @@
         },
         {
           "name": "--sapShell_HeroBanner_BackgroundImage",
-          "value": "linear-gradient(135deg, #0000 45%, #00000073 75%)",
+          "value": "linear-gradient(135deg, transparent 45%, rgba(0,0,0,0.45) 75%)",
           "cssUsage": "var(--sapShell_HeroBanner_BackgroundImage)"
         },
         {
