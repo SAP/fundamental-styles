@@ -437,6 +437,24 @@ $block: #{$fd-namespace}-dynamic-page;
     }
   }
 
+  &--responsive-paddings {
+    @include fd-media-sm() {
+      @include fd-responsive-page($fd-dynamic-page-header-padding-top-bottom, var(--sapContent_Space_S));
+    }
+
+    @include fd-media-md() {
+      @include fd-responsive-page($fd-dynamic-page-header-padding-top-bottom, var(--sapContent_Space_M));
+    }
+
+    @include fd-media-lg() {
+      @include fd-responsive-page($fd-dynamic-page-header-padding-top-bottom, var(--sapContent_Space_M));
+    }
+
+    @include fd-media-xl() {
+      @include fd-responsive-page($fd-dynamic-page-header-padding-top-bottom, var(--sapContent_Space_XL));
+    }
+  }
+
   &--list-bg {
     .#{$block}__content {
       background-color: var(--fdDynamicPage_Content_List_Background);
