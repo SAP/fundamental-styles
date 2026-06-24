@@ -85,6 +85,7 @@ To display a sticky header, use the \`fd-dynamic-page__header-fixed\` class inst
 | Add shadow to tabs when tabs are used | <code style="margin-left: 2rem;">fd-dynamic-page__tabs--add-shadow</code>       |
 | Collapsed styles when header is collapsed | <code style="margin-left: 2rem;">fd-dynamic-page__title-area--collapsed</code>      |
 ||<code style="margin-left: 2rem;">fd-dynamic-page__summarized-title--collapsed</code>        |
+| Smaller title font size in all header states | <code style="margin-left: 2rem;">fd-dynamic-page__title--small</code>      |
 | The pin/collapse button group | <code style="margin-left: 2rem;">fd-dynamic-page__header-visibility-container--button-group</code>      |
 | The left gradient of the button group | <code style="margin-left: 2rem;">fd-dynamic-page__header-visibility-container--left-gradient</code>      |
 | The right gradient of the button group | <code style="margin-left: 2rem;">fd-dynamic-page__header-visibility-container--right-gradient</code>      |
