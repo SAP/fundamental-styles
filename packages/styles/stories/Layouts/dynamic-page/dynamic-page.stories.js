@@ -7,6 +7,8 @@ import summaryLineExampleHtml from "./summary-line.example.html?raw";
 import mobileCollapsedExampleHtml from "./mobile-collapsed.example.html?raw";
 import mobileExampleHtml from "./mobile.example.html?raw";
 import tabletExampleHtml from "./tablet.example.html?raw";
+import largeExampleHtml from "./large.example.html?raw";
+import responsivePaddingsExampleHtml from "./responsive-paddings.example.html?raw";
 import desktopExampleHtml from "./desktop.example.html?raw";
 import '../../../src/bar.scss';
 import '../../../src/breadcrumb.scss';
@@ -83,9 +85,11 @@ To display a sticky header, use the \`fd-dynamic-page__header-fixed\` class inst
 | Add shadow to tabs when tabs are used | <code style="margin-left: 2rem;">fd-dynamic-page__tabs--add-shadow</code>       |
 | Collapsed styles when header is collapsed | <code style="margin-left: 2rem;">fd-dynamic-page__title-area--collapsed</code>      |
 ||<code style="margin-left: 2rem;">fd-dynamic-page__summarized-title--collapsed</code>        |
+| Smaller title font size in all header states | <code style="margin-left: 2rem;">fd-dynamic-page__title--small</code>      |
 | The pin/collapse button group | <code style="margin-left: 2rem;">fd-dynamic-page__header-visibility-container--button-group</code>      |
 | The left gradient of the button group | <code style="margin-left: 2rem;">fd-dynamic-page__header-visibility-container--left-gradient</code>      |
 | The right gradient of the button group | <code style="margin-left: 2rem;">fd-dynamic-page__header-visibility-container--right-gradient</code>      |
+| Responsive inline padding based on viewport width | <code style="margin-left: 2rem;">fd-dynamic-page--responsive-paddings</code>      |
 ## Background variants
 
 | **Description** | <span style="margin-left: 2rem;">**Modifier class**</span> |
@@ -108,6 +112,14 @@ For proper box-shadow styling, add \`fd-dynamic-page__tabs--add-shadow\` to the 
     }
   }
 };
+export const Large = () => largeExampleHtml;
+Large.parameters = {
+  docs: {
+    description: {
+      story: `Optimized for large screens (L size, 1024–1439px). Apply the \`fd-dynamic-page--lg\` modifier class.`
+    }
+  }
+};
 export const Tablet = () => tabletExampleHtml;
 Tablet.parameters = {
   docs: {
@@ -125,6 +137,14 @@ Mobile.parameters = {
       story: `Optimized for mobile screens (S size). Apply the \`fd-dynamic-page--sm\` modifier class.
 
 Wrap the breadcrumb and close button in \`fd-dynamic-page__breadcrumb-container\`. For title content within an overflow toolbar, use \`fd-dynamic-page__toolbar--content\`.`
+    }
+  }
+};
+export const ResponsivePaddings = () => responsivePaddingsExampleHtml;
+ResponsivePaddings.parameters = {
+  docs: {
+    description: {
+      story: `When the page needs to adapt its inline padding automatically based on the viewport width, use the \`fd-dynamic-page--responsive-paddings\` modifier instead of a fixed size modifier. The padding follows the Responsive Spacing System: 1rem for Size S (≤599px), 2rem for Sizes M and L (600–1439px), and 3rem for Size XL (≥1440px).`
     }
   }
 };

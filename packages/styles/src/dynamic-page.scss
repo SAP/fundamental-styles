@@ -131,6 +131,8 @@ $block: #{$fd-namespace}-dynamic-page;
     @include fd-flex() {
       align-items: center;
     }
+
+    padding-block-start: 0.3125rem;
   }
 
   &__breadcrumb {
@@ -176,6 +178,10 @@ $block: #{$fd-namespace}-dynamic-page;
       vertical-align: bottom;
     }
 
+    &--small {
+      font-size: var(--fdDynamicPage_Title_Collapsed_Font_Size);
+    }
+
     &--wrap {
       @include fd-wrap();
     }
@@ -199,7 +205,7 @@ $block: #{$fd-namespace}-dynamic-page;
     @include fd-ellipsis();
 
     padding-block: 0;
-    padding-inline: 1rem .2rem;
+    padding-inline-start: 1rem;
     vertical-align: baseline;
 
     &--wrap {
@@ -223,7 +229,7 @@ $block: #{$fd-namespace}-dynamic-page;
   .#{$block}__toolbar {
     @include fd-reset-spacing();
 
-    padding-inline-start: 1rem;
+    padding-inline: 1rem 0.25rem;
     background: transparent;
 
     &--actions,
@@ -354,7 +360,7 @@ $block: #{$fd-namespace}-dynamic-page;
     $fd-dynamic-page-button-clickable-height: 2rem;
     $fd-dynamic-page-button-touchable-area: ($fd-dynamic-page-button-clickable-height - $fd-dynamic-page-button-height) * 0.5;
 
-    --fdButtonBackgroundColor: var(--fdDynamicPage_Button_Pin_Background);
+    --fdButtonBackgroundColor: var(--sapObjectHeader_Background);
 
     margin-block: 0;
     margin-inline: 0.25rem;
@@ -394,7 +400,7 @@ $block: #{$fd-namespace}-dynamic-page;
   }
 
   &--sm {
-    @include fd-responsive-page($fd-dynamic-page-header-padding-top-bottom);
+    @include fd-responsive-page($fd-dynamic-page-header-padding-top-bottom, 1rem);
 
     .#{$block}__breadcrumb {
       padding-inline: 0;
@@ -428,6 +434,24 @@ $block: #{$fd-namespace}-dynamic-page;
     .#{$block}__toolbar {
       padding-inline: 0;
       padding-block: 0;
+    }
+  }
+
+  &--responsive-paddings {
+    @include fd-media-sm() {
+      @include fd-responsive-page($fd-dynamic-page-header-padding-top-bottom, 1rem);
+    }
+
+    @include fd-media-md() {
+      @include fd-responsive-page($fd-dynamic-page-header-padding-top-bottom, 2rem);
+    }
+
+    @include fd-media-lg() {
+      @include fd-responsive-page($fd-dynamic-page-header-padding-top-bottom, 2rem);
+    }
+
+    @include fd-media-xl() {
+      @include fd-responsive-page($fd-dynamic-page-header-padding-top-bottom, 3rem);
     }
   }
 
