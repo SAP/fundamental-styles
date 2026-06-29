@@ -1,6 +1,7 @@
 {
     "name": "@fundamental-styles/mcp",
     "version": "0.41.8-rc.10",
+    "mcpName": "io.github.sap/fundamental-styles-mcp",
     "description": "MCP server exposing fundamental-styles CSS component metadata for AI coding assistants",
     "license": "Apache-2.0",
     "repository": {
