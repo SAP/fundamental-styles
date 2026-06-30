@@ -29,11 +29,38 @@ $fd-input-border-radius: var(--sapField_BorderCornerRadius);
   --fdInput_Height: 100%;
   --fdInput_Compact_Height: 100%;
 
+  &.is-focus,
   &:has(input:is(:focus)) {
-    background: var(--sapField_Focus_Background);
-    outline: var(--fdInput_Outline_Color) var(--sapContent_FocusStyle) var(--sapContent_FocusWidth);
-    outline-offset: var(--fdInput_Outline_Offset);
+    outline: none;
     box-shadow: none;
+    position: relative;
+    background: var(--sapField_Focus_Background);
+
+    &::after {
+      content: "";
+      position: absolute;
+      pointer-events: none;
+      inset: var(--fdInputGroup_Outline_Offset);
+      border-radius: var(--fdInput_Outline_Border_Radius);
+      border: var(--fdInput_Outline_Color) var(--sapContent_FocusStyle) var(--sapContent_FocusWidth);
+    }
+
+    &.is-success {
+      --fdInput_Outline_Color: var(--fdInput_Success_Outline_Color);
+    }
+
+    &.is-alert,
+    &.is-warning {
+      --fdInput_Outline_Color: var(--fdInput_Warning_Outline_Color);
+    }
+
+    &.is-error {
+      --fdInput_Outline_Color: var(--fdInput_Error_Outline_Color);
+    }
+
+    &.is-information {
+     --fdInput_Outline_Color: var(--fdInput_Information_Outline_Color);
+    }
   }
 
   .#{$block}__input {
@@ -148,6 +175,10 @@ $fd-input-border-radius: var(--sapField_BorderCornerRadius);
   &[readonly],
   &.is-readonly {
     overflow: visible;
+    
+    .#{$block}__addon {
+      overflow: hidden;
+    }
   }
 
   &--display,
