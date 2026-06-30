@@ -41,10 +41,6 @@ $block: #{$fd-namespace}-settings;
     overflow-y: hidden;
   }
 
-  .#{$block}__header {
-    margin-block-start: var(--fdSettings_Header_Margin_Top, 1rem);
-  }
-
   &__list-area {
     @include fd-reset();
     @include fd-flex(column);
@@ -126,6 +122,11 @@ $block: #{$fd-namespace}-settings;
     .#{$block}__dialog-body {
         border-radius: 0;
     }
+
+    .#{$block}__dialog-footer {
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+    }
   }
 
   &:has(.#{$block}__container--md) {
@@ -148,5 +149,73 @@ $block: #{$fd-namespace}-settings;
       --fdSettings_Dialog_Content_Min_Height: 42.5rem;
       --fdSettings_Dialog_Content_Max_Width: 60rem;
       --fdSettings_Dialog_Content_Max_Height: 42.5rem;
+  }
+
+  // NEW STUFF
+
+  &__spacing {
+    @include fd-reset();
+
+    width: 100%;
+    display: block;
+    height: var(--fdSettings_Spacing_Height, 0.5rem);
+
+    &--small {
+      --fdSettings_Spacing_Height: 1rem;
+    }
+
+    &--medium {
+      --fdSettings_Spacing_Height: 2rem;
+    }
+
+    &--large {
+      --fdSettings_Spacing_Height: 3rem;
+    }
+  }
+
+  &__content-container {
+     @include fd-reset();
+
+     flex: 1;
+  }
+
+  &__detail-area {
+    max-width: 100%;
+    overflow: hidden;
+  }
+
+  &__profile-card {
+    @include fd-reset();
+    @include fd-flex(column) {
+      gap: 0.25rem;
+      align-items: center;
+    };
+
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+    padding-block: 2.5rem 1rem;
+
+    button {
+      margin-block-start: 0.25rem;
+    }
+  }
+
+  &__profile-card-name {
+    @include fd-reset();
+
+    white-space: normal;
+    word-break: break-all;
+    color: var(--sapTextColor);
+    margin-block-start: 0.25rem;
+    font-size: var(--sapFontLargeSize);
+    font-family: var(--sapFontBoldFamily);
+  }
+
+  &__profile-card-subline {
+    @include fd-reset();
+
+    word-break: break-all;
+    color: var(--sapContent_LabelColor);
   }
 }

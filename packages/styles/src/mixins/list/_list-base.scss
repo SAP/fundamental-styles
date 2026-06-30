@@ -328,6 +328,19 @@
     padding-block-start: 2rem;
   }
 
+  &--theme {
+    .fd-list__item:not(.fd-list__group-header) {
+      --fdList_Item_Height: auto;
+
+      padding-inline: 1rem;
+      padding-block: 0.625rem;
+
+      .fd-list__title {
+          white-space: normal;
+      }
+    }
+  }
+
   &__infinite-scroll {
     overflow: scroll;
     outline: none;
