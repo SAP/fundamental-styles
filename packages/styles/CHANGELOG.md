@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.41.8-rc.12](https://github.com/SAP/fundamental-styles/compare/v0.41.8-rc.11...v0.41.8-rc.12) (2026-06-30)
+
+### Bug Fixes
+
+- **styles:** replace outline with fake focus in Input Group [ci visual] ([#6347](https://github.com/SAP/fundamental-styles/issues/6347)) ([80ad171](https://github.com/SAP/fundamental-styles/commit/80ad1719a401d441cbf207ff58382a45071b255e))
+
 ## [0.41.8-rc.11](https://github.com/SAP/fundamental-styles/compare/v0.41.8-rc.10...v0.41.8-rc.11) (2026-06-29)
 
 **Note:** Version bump only for package fundamental-styles
