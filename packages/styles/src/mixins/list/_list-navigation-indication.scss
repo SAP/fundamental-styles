@@ -21,6 +21,7 @@ $fd-list-navigation-indicator-width: 2.5rem !default;
       }
     }
 
+    .#{$block}__item,
     .#{$block}__link {
       &::after {
         min-width: $fd-list-navigation-indicator-width;

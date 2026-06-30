@@ -181,12 +181,6 @@ $fd-list-byline-section-text-color: var(--sapContent_LabelColor) !default;
       }
     }
 
-    @include fd-compact-or-condensed() {
-      .#{$block}__title {
-        font-size: $fd-list-normal-font-size;
-      }
-    }
-
     &.#{$block}--no-border {
       .#{$block}__item {
         @include fd-set-paddings-y-equal($fd-list-byline-borderless-item-padding-y);
@@ -201,6 +195,37 @@ $fd-list-byline-section-text-color: var(--sapContent_LabelColor) !default;
 
       .#{$block}__item:last-child {
         padding-block-end: $fd-list-byline-item-padding-y;
+      }
+    }
+
+    &.#{$block}--notification {
+      .#{$block}__item {
+        padding-block: 1rem 0.9375rem;
+        height: auto;
+        align-items: center;
+        min-height: var(--fdList_Notification_Item_Height, var(--sapElement_LineHeight));
+
+        & > * {
+          align-self: center;
+        }
+      }
+
+      .#{$block}__content {
+        padding-block: 0;
+        min-height: auto;
+      }
+     
+      .#{$block}__title, .#{$block}__byline {
+        white-space: normal;
+        text-overflow: initial;
+      }
+    }
+
+    @include fd-compact-or-condensed() {
+      --fdList_Notification_Item_Height: var(--sapElement_Compact_LineHeight);
+      
+      .#{$block}__title {
+        font-size: $fd-list-normal-font-size;
       }
     }
   }

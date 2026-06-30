@@ -1,8 +1,12 @@
-import defaultExampleHtml from "./xl-default.example.html?raw";
+import userAccountExampleHtml from "./xl-user-account.example.html?raw";
+import appearanceExampleHtml from "./xl-appearance.example.html?raw";
+import notificationsExampleHtml from "./xl-notifications.example.html?raw";
+import notificationsDetailsExampleHtml from "./xl-notifications-details.example.html?raw";
 import xlExampleHtml from "./xl.example.html?raw";
 import mdExampleHtml from "./md.example.html?raw";
 import smExampleHtml from "./sm.example.html?raw";
 
+import '../../../src/avatar.scss';
 import '../../../src/icon.scss';
 import '../../../src/input.scss';
 import '../../../src/title.scss';
@@ -12,7 +16,11 @@ import '../../../src/dialog.scss';
 import '../../../src/toolbar.scss';
 import '../../../src/icon-tab-bar.scss';
 import '../../../src/button.scss';
+import '../../../src/message-strip.scss';
 import '../../../src/settings.scss';
+import '../../../src/switch.scss';
+import '../../../src/popover.scss';
+import '../../../src/select.scss';
 
 
 export default {
@@ -45,9 +53,39 @@ export default {
   }
 };
 
-export const XLDefault = () => defaultExampleHtml;
-XLDefault.storyName = 'L-XL-XXL';
-XLDefault.parameters = {
+export const UserAccount = () => userAccountExampleHtml;
+UserAccount.storyName = 'User Account (L-XL-XXL)';
+UserAccount.parameters = {
+  docs: {
+    description: {
+      story: ''
+    }
+  }
+};
+
+export const Appearance = () => appearanceExampleHtml;
+Appearance.storyName = 'Appearance (L-XL-XXL)';
+Appearance.parameters = {
+  docs: {
+    description: {
+      story: ''
+    }
+  }
+};
+
+export const Notifications = () => notificationsExampleHtml;
+Notifications.storyName = 'Notifications (L-XL-XXL)';
+Notifications.parameters = {
+  docs: {
+    description: {
+      story: ''
+    }
+  }
+};
+
+export const NotificationsDetails = () => notificationsDetailsExampleHtml;
+NotificationsDetails.storyName = 'Notifications Details (L-XL-XXL)';
+NotificationsDetails.parameters = {
   docs: {
     description: {
       story: ''
