@@ -31,7 +31,6 @@ $block: #{$fd-namespace}-panel;
     border-bottom: var(--sapGroup_TitleBorderWidth) solid var(--fdPanel_Header_Border_Color, var(--sapGroup_TitleBorderColor));
     width: var(--fdPanel_Header_Width);
     min-width: var(--fdPanel_Header_Width);
-    height: var(--fdPanel_Header_Height);
     min-height: var(--fdPanel_Header_Height);
     top: var(--fdPanel_Header_Position_Top, unset);
     background-color: var(--sapGroup_TitleBackground);
@@ -55,7 +54,6 @@ $block: #{$fd-namespace}-panel;
 
   &__title {
     @include fd-typography(var(--sapGroup_Title_FontSize));
-    @include fd-ellipsis();
 
     flex: 1;
     width: 100%;
