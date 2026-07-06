@@ -4202,7 +4202,7 @@
     "rtl": "none"
   },
   "0xe1ab": {
-    "names": ["status-positive"],
+    "names": ["status-positive", "status-completed"],
     "groups": ["status", "message"],
     "tags": [
       "positive",
@@ -4216,7 +4216,7 @@
     "rtl": "none"
   },
   "0xe1ac": {
-    "names": ["status-negative"],
+    "names": ["status-negative", "status-error"],
     "groups": ["status", "message"],
     "tags": [
       "negative",
@@ -4243,7 +4243,7 @@
     "rtl": "none"
   },
   "0xe1ae": {
-    "names": ["status-critical"],
+    "names": ["status-critical", "status-in-process"],
     "groups": ["status", "message"],
     "tags": [
       "critical",

@@ -1,4 +1,4 @@
-import{z as n,d as t}from"./iframe-C0hDTCBm.js";import{R as s}from"./IntroductionPageWrapper-CD7Om6_4.js";import"./preload-helper-CR6acF8F.js";const a=`# CX - Customer Experience
+import{t as n,D as t}from"./iframe-BlosdONt.js";import{R as s}from"./IntroductionPageWrapper-ChPJejmG.js";import"./preload-helper-CR6acF8F.js";const a=`# CX - Customer Experience
 
 A specialized CSS component library for SAP Customer Experience (CX) applications. Built following CX style guidelines, this package provides components designed and maintained by the CX team.
 

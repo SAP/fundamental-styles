@@ -186,7 +186,7 @@
 		"sapFontHeader6Size": ".875rem",
 		"sapLink_TextDecoration": "underline",
 		"sapLink_Hover_Color": "#000",
-		"sapLink_Hover_TextDecoration": "none",
+		"sapLink_Hover_TextDecoration": "underline",
 		"sapLink_Active_Color": "#000",
 		"sapLink_Active_TextDecoration": "underline",
 		"sapLink_Visited_Color": "#000",
@@ -1535,6 +1535,7 @@
 		"sapSapThemeId": "sap_horizon_hcw",
 		"sapHighlightTextColor": "#000",
 		"sapButton_Emphasized_FontWeight": "bold",
-		"sapShell_BackgroundGradient": "linear-gradient(to bottom, #fff, #fff)"
+		"sapShell_BackgroundGradient": "linear-gradient(to bottom, #fff, #fff)",
+		"sapAt": "@"
 	}
 }

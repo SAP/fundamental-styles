@@ -1,4 +1,4 @@
-import{z as s,d as a}from"./iframe-C0hDTCBm.js";import{R as e}from"./IntroductionPageWrapper-CD7Om6_4.js";import"./preload-helper-CR6acF8F.js";const i=`# Common CSS
+import{t as s,D as a}from"./iframe-BlosdONt.js";import{R as e}from"./IntroductionPageWrapper-ChPJejmG.js";import"./preload-helper-CR6acF8F.js";const i=`# Common CSS
 
 A collection of utility CSS classes and SCSS mixins for styling SAP applications. Common CSS provides ready-to-use classes for spacing, layout, typography, colors, and more, eliminating the need to write custom CSS for common styling patterns.
 

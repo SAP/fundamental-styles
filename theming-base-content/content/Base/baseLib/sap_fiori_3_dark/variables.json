@@ -1535,6 +1535,7 @@
 		"sapSapThemeId": "sap_fiori_3_dark",
 		"sapHighlightTextColor": "#29313a",
 		"sapButton_Emphasized_FontWeight": "bold",
-		"sapShell_BackgroundGradient": "linear-gradient(to bottom, #181d22, #272f37)"
+		"sapShell_BackgroundGradient": "linear-gradient(to bottom, #181d22, #272f37)",
+		"sapAt": "@"
 	}
 }

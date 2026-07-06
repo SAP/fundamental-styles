@@ -1,4 +1,4 @@
-import{z as n,d as t}from"./iframe-C0hDTCBm.js";import{R as s}from"./IntroductionPageWrapper-CD7Om6_4.js";import"./preload-helper-CR6acF8F.js";const o=`# MCP Server
+import{t as n,D as t}from"./iframe-BlosdONt.js";import{R as s}from"./IntroductionPageWrapper-ChPJejmG.js";import"./preload-helper-CR6acF8F.js";const o=`# MCP Server
 
 MCP (Model Context Protocol) server that exposes [fundamental-styles](https://github.com/SAP/fundamental-styles) CSS component metadata to AI coding assistants.
 

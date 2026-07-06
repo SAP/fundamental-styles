@@ -1,4 +1,4 @@
-/* empty css            *//* empty css                   *//* empty css             *//* empty css             *//* empty css                *//* empty css              *//* empty css             *//* empty css               *//* empty css                *//* empty css                     *//* empty css                   *//* empty css                      *//* empty css                      *//* empty css                         *//* empty css               *//* empty css                *//* empty css                 *//* empty css             */const c=`<div class="mobile-container">
+/* empty css            *//* empty css                   *//* empty css             *//* empty css             *//* empty css                *//* empty css              *//* empty css             *//* empty css               *//* empty css                *//* empty css                     *//* empty css                   *//* empty css                      *//* empty css                      *//* empty css                         *//* empty css               *//* empty css                *//* empty css                 *//* empty css             */const p=`<div class="mobile-container">
         <article class="fd-dynamic-page fd-dynamic-page--sm" aria-roledescription="Dynamic Page">
             <header class="fd-dynamic-page__header">
                 <span 
@@ -243,7 +243,7 @@
             </footer>
         </article>
     </div>
-`,u=`<article class="fd-dynamic-page fd-dynamic-page--xl" aria-roledescription="Dynamic Page">
+`,m=`<article class="fd-dynamic-page fd-dynamic-page--xl" aria-roledescription="Dynamic Page">
         <header class="fd-dynamic-page__header">
             <span 
                 role="button" 
@@ -518,7 +518,7 @@
             </div>
         </footer>
     </article>
-`,p=`<article class="fd-dynamic-page fd-dynamic-page--xl" aria-roledescription="Dynamic Page">
+`,b=`<article class="fd-dynamic-page fd-dynamic-page--xl" aria-roledescription="Dynamic Page">
         <header class="fd-dynamic-page__header">
             <span 
                 role="button" 
@@ -599,7 +599,7 @@
             dolorem cumque ullam perspiciatis omnis et asperiores dolores, consequatur, suscipit sint animi amet?
         </div>
     </article>
-`,m=`<article class="fd-dynamic-page fd-dynamic-page--xl" aria-roledescription="Dynamic Page">
+`,f=`<article class="fd-dynamic-page fd-dynamic-page--xl" aria-roledescription="Dynamic Page">
         <header class="fd-dynamic-page__header">
             <span 
                 role="button" 
@@ -684,7 +684,7 @@
             dolorem cumque ullam perspiciatis omnis et asperiores dolores, consequatur, suscipit sint animi amet?
         </div>
     </article>
-`,b=`<article class="fd-dynamic-page fd-dynamic-page--xl" aria-roledescription="Dynamic Page" xmlns="http://www.w3.org/1999/html">
+`,_=`<article class="fd-dynamic-page fd-dynamic-page--xl" aria-roledescription="Dynamic Page" xmlns="http://www.w3.org/1999/html">
         <header class="fd-dynamic-page__header">
             <span 
                 role="button" 
@@ -769,7 +769,7 @@
             dolorem cumque ullam perspiciatis omnis et asperiores dolores, consequatur, suscipit sint animi amet?
         </div>
     </article>
-`,f=`<div class="mobile-container">
+`,g=`<div class="mobile-container">
         <article class="fd-dynamic-page fd-dynamic-page--sm" aria-roledescription="Dynamic Page">
             <header class="fd-dynamic-page__header">
                 <div
@@ -789,7 +789,7 @@
                             </button>
                     </div>
                 </div>
-                <div class="fd-dynamic-page__title-area  fd-dynamic-page__title-area--collapsed"
+                <div class="fd-dynamic-page__title-area fd-dynamic-page__title-area--collapsed"
                     aria-hidden="true">
                     <div class="fd-dynamic-page__breadcrumb-title-container">
                         <nav aria-label="Breadcrumbs">
@@ -893,7 +893,7 @@
             </footer>
         </article>
     </div>
-`,_=`<div class="mobile-container">
+`,v=`<div class="mobile-container">
         <article class="fd-dynamic-page fd-dynamic-page--sm" aria-label="Dynamic Page Mobile Collapsed Example">
             <header class="fd-dynamic-page__header">
                 <span 
@@ -904,7 +904,7 @@
                     tabindex="0"
                     class="fd-dynamic-page__header-button">
                 </span>
-                <div class="fd-dynamic-page__title-area  fd-dynamic-page__title-area--collapsed">
+                <div class="fd-dynamic-page__title-area fd-dynamic-page__title-area--collapsed">
                     <div class="fd-dynamic-page__main-container">
                         <div class="fd-dynamic-page__breadcrumb-title-container">
                             <div class="fd-dynamic-page__breadcrumb-container">
@@ -1053,7 +1053,7 @@
             </footer>
         </article>
     </div>
-`,g=`<div class="mobile-container">
+`,h=`<div class="mobile-container">
         <article class="fd-dynamic-page fd-dynamic-page--sm" aria-roledescription="Dynamic Page">
             <header class="fd-dynamic-page__header">
                 <span 
@@ -1213,7 +1213,7 @@
             </footer>
         </article>
     </div>
-`,v=`
+`,y=`
     <article class="fd-dynamic-page fd-dynamic-page--md" aria-roledescription="Dynamic Page">
         <header class="fd-dynamic-page__header">
             <span 
@@ -1384,7 +1384,284 @@
         </footer>
     </article>
     <br /><br />
-`,h=`
+`,q=`
+    <article class="fd-dynamic-page fd-dynamic-page--lg" aria-roledescription="Dynamic Page">
+        <header class="fd-dynamic-page__header">
+            <span
+                role="button"
+                aria-expanded="true"
+                aria-labelledby="fd-dynamic-page-title-lg"
+                aria-label="Toggle header"
+                tabindex="0"
+                class="fd-dynamic-page__header-button">
+            </span>
+            <div class="fd-dynamic-page__title-area">
+                <div class="fd-dynamic-page__main-container">
+                    <div class="fd-dynamic-page__breadcrumb-title-container">
+                        <div class="fd-dynamic-page__breadcrumb-container">
+                            <nav aria-label="Breadcrumbs">
+                                <ul class="fd-dynamic-page__breadcrumb fd-breadcrumb">
+                                    <li class="fd-breadcrumb__item">
+                                        <a class="fd-link" tabindex="0" href="#">
+                                            <span class="fd-link__content">Men</span>
+                                        </a>
+                                        <span class="fd-breadcrumb__separator" aria-hidden="true"></span>
+                                    </li>
+                                    <li class="fd-breadcrumb__item">
+                                        <a class="fd-link" tabindex="0" href="#">
+                                            <span class="fd-link__content">Shoes</span>
+                                        </a>
+                                        <span class="fd-breadcrumb__separator" aria-hidden="true"></span>
+                                    </li>
+                                    <li class="fd-breadcrumb__item">
+                                        <a aria-current="page" class="fd-link" tabindex="0" href="#">
+                                            <span class="fd-link__content">Running Shoes</span>
+                                        </a>
+                                        <span class="fd-breadcrumb__separator" aria-hidden="true"></span>
+                                    </li>
+                                </ul>
+                            </nav>
+                            <div class="fd-dynamic-page__toolbar-container">
+                                <div
+                                    role="toolbar"
+                                    aria-label="Product actions"
+                                    class="fd-dynamic-page__toolbar fd-toolbar fd-toolbar--clear fd-toolbar--transparent"
+                                >
+                                    <button class="fd-button fd-button--transparent" aria-label="Resize">
+                                        <i class="sap-icon--resize"></i>
+                                    </button>
+                                    <button class="fd-button fd-button--transparent" aria-label="Exit fullscreen">
+                                        <i class="sap-icon--exitfullscreen"></i>
+                                    </button>
+                                    <button class="fd-button fd-button--transparent" aria-label="Close">
+                                        <i class="sap-icon--decline"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="fd-dynamic-page__title-container">
+                            <div
+                                id="fd-dynamic-page-title-lg"
+                                aria-level="2"
+                                role="heading"
+                                class="fd-title fd-dynamic-page__title"
+                                title="Balenciaga Triple S Trainers">
+                                Balenciaga Triple S Trainers
+                            </div>
+                            <div class="fd-dynamic-page__title-content" title="Some RANDOM things">
+                                Some RANDOM things
+                            </div>
+                            <div class="fd-dynamic-page__toolbar-container">
+                                <div
+                                    role="toolbar"
+                                    aria-label="Navigation actions"
+                                    class="fd-dynamic-page__toolbar fd-dynamic-page__toolbar--actions fd-toolbar fd-toolbar--clear fd-toolbar--transparent"
+                                >
+                                    <button class="fd-button fd-button--positive">Accept</button>
+                                    <button class="fd-button fd-button--reject">Reject</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="fd-dynamic-page__subtitle"> Oversized multimaterial sneakers with quilted effect</div>
+            </div>
+            <div class="fd-dynamic-page__collapsible-header-container">
+                <section class="fd-dynamic-page__collapsible-header" role="region" aria-hidden="false" id="fddplhvc-lg" aria-label="Expanded header">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam possimus corrupti architecto perspiciatis, delectus
+                    necessitatibus incidunt numquam asperiores tenetur iure. Cum consequuntur impedit repellendus esse, facere autem optio
+                    consequatur nobis?
+                </section>
+                <div class="fd-dynamic-page__collapsible-header-visibility-container">
+                    <div class="fd-dynamic-page__collapsible-header-visibility-container--left-gradient"></div>
+                    <div
+                        role="toolbar"
+                        aria-label="Header actions"
+                        class="fd-dynamic-page__collapsible-header-visibility-container--button-group"
+                    >
+                        <button
+                            class="fd-dynamic-page__collapse-button fd-button"
+                            aria-label="See More"
+                            aria-expanded="true"
+                            aria-haspopup="true"
+                            aria-controls="fddplhvc-lg"
+                        >
+                            <i class="sap-icon--slim-arrow-up"></i>
+                        </button>
+                        <button class="fd-dynamic-page__pin-button fd-button" aria-label="Pin this">
+                            <i class="sap-icon--pushpin-off"></i>
+                        </button>
+                    </div>
+                    <div class="fd-dynamic-page__collapsible-header-visibility-container--right-gradient"></div>
+                </div>
+            </div>
+            <div class="fd-dynamic-page__tabs--overflow">
+                <ul class="fd-tabs fd-tabs--l fd-dynamic-page__tabs fd-dynamic-page__tabs--add-shadow" role="tablist">
+                    <li role="tab" class="fd-tabs__item" aria-controls="fuCwV-lg1">
+                        <a class="fd-tabs__link" href="#fuCwV-lg1">
+                            <span class="fd-tabs__tag">Link</span>
+                        </a>
+                    </li>
+                    <li role="tab" class="fd-tabs__item" aria-selected="true" aria-controls="AiWfz-lg2">
+                        <a class="fd-tabs__link" href="#AiWfz-lg2">
+                            <span class="fd-tabs__tag">Selected</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </header>
+        <div class="fd-dynamic-page__content">
+            <div class="fd-tabs__panel" aria-expanded="false" id="fuCwV-lg1" role="tabpanel">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum illo voluptatem, unde voluptate aliquam eum tempore aliquid
+                dolorem cumque ullam perspiciatis omnis et asperiores dolores, consequatur, suscipit sint animi amet? Lorem ipsum dolor, sit
+                amet consectetur adipisicing elit. Rerum illo voluptatem, unde voluptate aliquam eum tempore aliquid dolorem cumque ullam
+                perspiciatis omnis et asperiores dolores, consequatur, suscipit sint animi amet?
+            </div>
+            <div class="fd-tabs__panel" aria-expanded="true" id="AiWfz-lg2" role="tabpanel">
+                Dolor sit Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius assumenda, quidem natus optio repudiandae deleniti in
+                atque quis, sed cum asperiores minus rerum incidunt unde quod fuga amet ea reprehenderit. Dolor sit Lorem ipsum dolor sit amet,
+                consectetur adipisicing elit. Eius assumenda, quidem natus optio repudiandae deleniti in atque quis, sed cum asperiores minus
+                rerum incidunt unde quod fuga amet ea reprehenderit.
+            </div>
+        </div>
+        <footer class="fd-bar fd-bar--floating-footer" style="position:relative">
+            <div role="toolbar" aria-label="Finalizing actions" class="fd-bar__right">
+                <div class="fd-bar__element">
+                    <button aria-label="button" class="fd-button fd-button--emphasized">
+                        Save
+                    </button>
+                </div>
+                <div class="fd-bar__element">
+                    <button aria-label="button" class="fd-button fd-button--transparent">
+                        Cancel
+                    </button>
+                </div>
+            </div>
+        </footer>
+    </article>
+    <br /><br />
+`,x=`
+    <article class="fd-dynamic-page fd-dynamic-page--responsive-paddings" aria-roledescription="Dynamic Page">
+        <header class="fd-dynamic-page__header">
+            <span
+                role="button"
+                aria-expanded="true"
+                aria-labelledby="fd-dynamic-page-title-rp"
+                aria-label="Toggle header"
+                tabindex="0"
+                class="fd-dynamic-page__header-button">
+            </span>
+            <div class="fd-dynamic-page__title-area">
+                <div class="fd-dynamic-page__main-container">
+                    <div class="fd-dynamic-page__breadcrumb-title-container">
+                        <nav aria-label="Breadcrumbs">
+                            <ul class="fd-dynamic-page__breadcrumb fd-breadcrumb">
+                                <li class="fd-breadcrumb__item"><a class="fd-link" tabindex="0" href="#"><span class="fd-link__content">Men</span></a><span class="fd-breadcrumb__separator" aria-hidden="true"></span></li>
+                                <li class="fd-breadcrumb__item"><a class="fd-link" tabindex="0" href="#"><span class="fd-link__content">Shoes</span></a><span class="fd-breadcrumb__separator" aria-hidden="true"></span></li>
+                                <li class="fd-breadcrumb__item"><a aria-current="page" class="fd-link" tabindex="0" href="#"><span class="fd-link__content">Running Shoes</span></a><span class="fd-breadcrumb__separator" aria-hidden="true"></span></li>
+                            </ul>
+                        </nav>
+                        <div class="fd-dynamic-page__title-container">
+                            <div
+                                id="fd-dynamic-page-title-rp"
+                                aria-level="2"
+                                role="heading"
+                                class="fd-title fd-dynamic-page__title"
+                                title="Balenciaga Triple S Trainers">
+                                Balenciaga Triple S Trainers
+                            </div>
+                            <div class="fd-dynamic-page__title-content" title="Some RANDOM things"> Some RANDOM things </div>
+                            <div class="fd-dynamic-page__toolbar-container">
+                                <div role="toolbar" aria-label="Product actions" class="fd-dynamic-page__toolbar fd-toolbar fd-toolbar--clear fd-toolbar--transparent">
+                                    <button class="fd-button fd-button--positive">Accept</button>
+                                    <button class="fd-button fd-button--reject">Reject</button>
+                                    <span class="fd-toolbar__separator"></span>
+                                </div>
+                                <div role="toolbar" aria-label="Navigation actions" class="fd-dynamic-page__toolbar fd-dynamic-page__toolbar--actions fd-toolbar fd-toolbar--clear fd-toolbar--transparent">
+                                    <button class="fd-button fd-button--transparent" aria-label="Resize">
+                                        <i class="sap-icon--resize"></i>
+                                    </button>
+                                    <button class="fd-button fd-button--transparent" aria-label="Exit fullscreen">
+                                        <i class="sap-icon--exitfullscreen"></i>
+                                    </button>
+                                    <button class="fd-button fd-button--transparent" aria-label="Close">
+                                        <i class="sap-icon--decline"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="fd-dynamic-page__subtitle"> Oversized multimaterial sneakers with quilted effect </div>
+            </div>
+            <div class="fd-dynamic-page__collapsible-header-container">
+                <section class="fd-dynamic-page__collapsible-header" role="region" id="fddplhvc-rp" aria-label="Expanded header">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam possimus corrupti architecto perspiciatis,
+                    delectus necessitatibus incidunt numquam asperiores tenetur iure.
+                    Cum consequuntur impedit repellendus esse, facere autem optio consequatur nobis?
+                </section>
+                <div class="fd-dynamic-page__collapsible-header-visibility-container fd-dynamic-page__collapsible-header-visibility-container--no-shadow">
+                    <div class="fd-dynamic-page__collapsible-header-visibility-container--left-gradient"></div>
+                    <div role="toolbar" aria-label="Header actions" class="fd-dynamic-page__collapsible-header-visibility-container--button-group">
+                        <button class="fd-dynamic-page__collapse-button fd-button"
+                                aria-label="See More"
+                                aria-expanded="true"
+                                aria-haspopup="true"
+                                aria-controls="fddplhvc-rp">
+                                <i class="sap-icon--slim-arrow-up"></i>
+                        </button>
+                        <button class="fd-dynamic-page__pin-button fd-button"
+                                aria-label="Pin this">
+                                <i class="sap-icon--pushpin-off"></i>
+                        </button>
+                    </div>
+                    <div class="fd-dynamic-page__collapsible-header-visibility-container--right-gradient"></div>
+                </div>
+            </div>
+            <div class="fd-dynamic-page__tabs--overflow">
+                <ul class="fd-tabs fd-tabs--l fd-dynamic-page__tabs fd-dynamic-page__tabs--add-shadow" role="tablist">
+                    <li role="tab" class="fd-tabs__item">
+                        <a class="fd-tabs__link" aria-controls="fuCwV550rp" href="#fuCwV550rp">
+                            <span class="fd-tabs__tag">
+                                Link
+                            </span>
+                        </a>
+                    </li>
+                    <li role="tab" class="fd-tabs__item" aria-selected="true">
+                        <a class="fd-tabs__link" aria-controls="AiWfz165rp" href="#AiWfz165rp">
+                            <span class="fd-tabs__tag">
+                                Selected
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </header>
+        <div class="fd-dynamic-page__content">
+            <div class="fd-tabs__panel" aria-expanded="false" id="fuCwV550rp" role="tabpanel">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum illo voluptatem, unde voluptate aliquam
+                eum tempore aliquid dolorem cumque ullam perspiciatis omnis et asperiores dolores, consequatur, suscipit sint animi amet?
+            </div>
+            <div class="fd-tabs__panel" aria-expanded="true" id="AiWfz165rp" role="tabpanel">
+                Dolor sit Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius assumenda, quidem natus optio repudiandae deleniti
+                in atque quis, sed cum asperiores minus rerum incidunt unde quod fuga amet ea reprehenderit.
+                Dolor sit Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius assumenda, quidem natus optio repudiandae deleniti
+                in atque quis, sed cum asperiores minus rerum incidunt unde quod fuga amet ea reprehenderit.
+            </div>
+        </div>
+        <footer class="fd-bar fd-bar--floating-footer" style="position:relative">
+            <div role="toolbar" aria-label="Finalizing actions" class="fd-bar__right">
+                <div class="fd-bar__element">
+                    <button aria-label="button" class="fd-button fd-button--emphasized">Save</button>
+                </div>
+                <div class="fd-bar__element">
+                    <button aria-label="button" class="fd-button fd-button--transparent">Cancel</button>
+                </div>
+            </div>
+        </footer>
+    </article>
+    <br /><br />
+`,w=`
     <article class="fd-dynamic-page fd-dynamic-page--xl" aria-roledescription="Dynamic Page">
         <header class="fd-dynamic-page__header">
             <span 
@@ -1523,7 +1800,7 @@
         </footer>
     </article>
     <br /><br />
-`,P={title:"Layouts/Dynamic Page",parameters:{description:`The dynamic page is the foundation for all pages in SAP. It is a generic layout designed to support various use cases; therefore, the content of both the header and page can vary.
+`,N={title:"Layouts/Dynamic Page",parameters:{description:`The dynamic page is the foundation for all pages in SAP. It is a generic layout designed to support various use cases; therefore, the content of both the header and page can vary.
         The header of the dynamic page is collapsible, which helps the users focus on the actual page content but still ensures that important header information and actions are readily available.
 
 ## Usage
@@ -1576,9 +1853,11 @@ To display a sticky header, use the \`fd-dynamic-page__header-fixed\` class inst
 | Add shadow to tabs when tabs are used | <code style="margin-left: 2rem;">fd-dynamic-page__tabs--add-shadow</code>       |
 | Collapsed styles when header is collapsed | <code style="margin-left: 2rem;">fd-dynamic-page__title-area--collapsed</code>      |
 ||<code style="margin-left: 2rem;">fd-dynamic-page__summarized-title--collapsed</code>        |
+| Smaller title font size in all header states | <code style="margin-left: 2rem;">fd-dynamic-page__title--small</code>      |
 | The pin/collapse button group | <code style="margin-left: 2rem;">fd-dynamic-page__header-visibility-container--button-group</code>      |
 | The left gradient of the button group | <code style="margin-left: 2rem;">fd-dynamic-page__header-visibility-container--left-gradient</code>      |
 | The right gradient of the button group | <code style="margin-left: 2rem;">fd-dynamic-page__header-visibility-container--right-gradient</code>      |
+| Responsive inline padding based on viewport width | <code style="margin-left: 2rem;">fd-dynamic-page--responsive-paddings</code>      |
 ## Background variants
 
 | **Description** | <span style="margin-left: 2rem;">**Modifier class**</span> |
@@ -1586,4 +1865,4 @@ To display a sticky header, use the \`fd-dynamic-page__header-fixed\` class inst
 | List background for content area| <code style="margin-left: 2rem;">fd-dynamic-page--list-bg</code>        |
 | Transparent background for all areas |  <code style="margin-left: 2rem;">fd-dynamic-page--transparent-bg</code>
 
-`,tags:[],components:["bar","breadcrumb","tabs","link","toolbar","title","icon","button","popover","facet","form-label","object-status","object-number","rating-indicator","avatar","margins","paddings","text","dynamic-page"]}},s=()=>h;s.parameters={docs:{description:{story:"Optimized for desktop screens (L, XL, and XXL sizes). Apply the `fd-dynamic-page--xl` modifier class.\n\nFor proper box-shadow styling, add `fd-dynamic-page__tabs--add-shadow` to the tabs list and wrap it in a `fd-dynamic-page__tabs--overflow` container."}}};const d=()=>v;d.parameters={docs:{description:{story:"Optimized for tablet screens (M size). Apply the `fd-dynamic-page--md` modifier class.\n\nNavigation actions should appear in a separate row above product actions, aligned with the breadcrumb component."}}};const l=()=>g;l.parameters={docs:{description:{story:"Optimized for mobile screens (S size). Apply the `fd-dynamic-page--sm` modifier class.\n\nWrap the breadcrumb and close button in `fd-dynamic-page__breadcrumb-container`. For title content within an overflow toolbar, use `fd-dynamic-page__toolbar--content`."}}};const a=()=>_;a.storyName="Collapsed Header (mobile)";a.parameters={docs:{description:{story:"Displays the dynamic page with a collapsed header on mobile screens."}}};const e=()=>f;e.storyName="Summary Line (mobile)";e.parameters={docs:{description:{story:"On mobile, a summary line can replace the expand/collapse header to help users focus on page content. Add `fd-dynamic-page__summarized-title` within the `fd-dynamic-page__summarized-title-area` element."}}};const n=()=>b;n.storyName="Expanded Header";n.parameters={docs:{description:{story:"The header can be expanded or collapsed using the toggle buttons. Users can pin the header to keep it visible while scrolling. To collapse the header, add the `--collapsed` modifier to the title area and title elements."}}};const r=()=>m;r.parameters={docs:{description:{story:"Displays the dynamic page with a collapsed header on desktop screens."}}};const i=()=>p;i.storyName="Without pin";i.parameters={docs:{description:{story:"The header can be configured without a pin button, allowing users to only expand or collapse the header area."}}};const t=()=>u;t.storyName="With header facets";t.parameters={docs:{description:{story:"To position the image facet next to the title, add `fd-facet` with `fd-facet--image` and `fd-facet--image-header-title` modifiers to the `fd-dynamic-page__title-container`. Place the title and subtitle within `fd-dynamic-page__title-subtitle-container` for proper alignment."}}};const o=()=>c;o.storyName="With header facets (mobile)";s.parameters={...s.parameters,docs:{...s.parameters?.docs,source:{originalSource:"() => desktopExampleHtml",...s.parameters?.docs?.source}}};d.parameters={...d.parameters,docs:{...d.parameters?.docs,source:{originalSource:"() => tabletExampleHtml",...d.parameters?.docs?.source}}};l.parameters={...l.parameters,docs:{...l.parameters?.docs,source:{originalSource:"() => mobileExampleHtml",...l.parameters?.docs?.source}}};a.parameters={...a.parameters,docs:{...a.parameters?.docs,source:{originalSource:"() => mobileCollapsedExampleHtml",...a.parameters?.docs?.source}}};e.parameters={...e.parameters,docs:{...e.parameters?.docs,source:{originalSource:"() => summaryLineExampleHtml",...e.parameters?.docs?.source}}};n.parameters={...n.parameters,docs:{...n.parameters?.docs,source:{originalSource:"() => expandableExampleHtml",...n.parameters?.docs?.source}}};r.parameters={...r.parameters,docs:{...r.parameters?.docs,source:{originalSource:"() => collapsedHeaderExampleHtml",...r.parameters?.docs?.source}}};i.parameters={...i.parameters,docs:{...i.parameters?.docs,source:{originalSource:"() => onlyCollapseExampleHtml",...i.parameters?.docs?.source}}};t.parameters={...t.parameters,docs:{...t.parameters?.docs,source:{originalSource:"() => withFacetsExampleHtml",...t.parameters?.docs?.source}}};o.parameters={...o.parameters,docs:{...o.parameters?.docs,source:{originalSource:"() => withFacetsMobileExampleHtml",...o.parameters?.docs?.source}}};const F=["Desktop","Tablet","Mobile","MobileCollapsed","SummaryLine","Expandable","CollapsedHeader","OnlyCollapse","WithFacets","WithFacetsMobile"];export{r as CollapsedHeader,s as Desktop,n as Expandable,l as Mobile,a as MobileCollapsed,i as OnlyCollapse,e as SummaryLine,d as Tablet,t as WithFacets,o as WithFacetsMobile,F as __namedExportsOrder,P as default};
+`,tags:[],components:["bar","breadcrumb","tabs","link","toolbar","title","icon","button","popover","facet","form-label","object-status","object-number","rating-indicator","avatar","margins","paddings","text","dynamic-page"]}},s=()=>w;s.parameters={docs:{description:{story:"Optimized for desktop screens (L, XL, and XXL sizes). Apply the `fd-dynamic-page--xl` modifier class.\n\nFor proper box-shadow styling, add `fd-dynamic-page__tabs--add-shadow` to the tabs list and wrap it in a `fd-dynamic-page__tabs--overflow` container."}}};const d=()=>q;d.parameters={docs:{description:{story:"Optimized for large screens (L size, 1024–1439px). Apply the `fd-dynamic-page--lg` modifier class."}}};const l=()=>y;l.parameters={docs:{description:{story:"Optimized for tablet screens (M size). Apply the `fd-dynamic-page--md` modifier class.\n\nNavigation actions should appear in a separate row above product actions, aligned with the breadcrumb component."}}};const r=()=>h;r.parameters={docs:{description:{story:"Optimized for mobile screens (S size). Apply the `fd-dynamic-page--sm` modifier class.\n\nWrap the breadcrumb and close button in `fd-dynamic-page__breadcrumb-container`. For title content within an overflow toolbar, use `fd-dynamic-page__toolbar--content`."}}};const o=()=>x;o.parameters={docs:{description:{story:"When the page needs to adapt its inline padding automatically based on the viewport width, use the `fd-dynamic-page--responsive-paddings` modifier instead of a fixed size modifier. The padding follows the Responsive Spacing System: 1rem for Size S (≤599px), 2rem for Sizes M and L (600–1439px), and 3rem for Size XL (≥1440px)."}}};const a=()=>v;a.storyName="Collapsed Header (mobile)";a.parameters={docs:{description:{story:"Displays the dynamic page with a collapsed header on mobile screens."}}};const e=()=>g;e.storyName="Summary Line (mobile)";e.parameters={docs:{description:{story:"On mobile, a summary line can replace the expand/collapse header to help users focus on page content. Add `fd-dynamic-page__summarized-title` within the `fd-dynamic-page__summarized-title-area` element."}}};const n=()=>_;n.storyName="Expanded Header";n.parameters={docs:{description:{story:"The header can be expanded or collapsed using the toggle buttons. Users can pin the header to keep it visible while scrolling. To collapse the header, add the `--collapsed` modifier to the title area and title elements."}}};const c=()=>f;c.parameters={docs:{description:{story:"Displays the dynamic page with a collapsed header on desktop screens."}}};const i=()=>b;i.storyName="Without pin";i.parameters={docs:{description:{story:"The header can be configured without a pin button, allowing users to only expand or collapse the header area."}}};const t=()=>m;t.storyName="With header facets";t.parameters={docs:{description:{story:"To position the image facet next to the title, add `fd-facet` with `fd-facet--image` and `fd-facet--image-header-title` modifiers to the `fd-dynamic-page__title-container`. Place the title and subtitle within `fd-dynamic-page__title-subtitle-container` for proper alignment."}}};const u=()=>p;u.storyName="With header facets (mobile)";s.parameters={...s.parameters,docs:{...s.parameters?.docs,source:{originalSource:"() => desktopExampleHtml",...s.parameters?.docs?.source}}};d.parameters={...d.parameters,docs:{...d.parameters?.docs,source:{originalSource:"() => largeExampleHtml",...d.parameters?.docs?.source}}};l.parameters={...l.parameters,docs:{...l.parameters?.docs,source:{originalSource:"() => tabletExampleHtml",...l.parameters?.docs?.source}}};r.parameters={...r.parameters,docs:{...r.parameters?.docs,source:{originalSource:"() => mobileExampleHtml",...r.parameters?.docs?.source}}};o.parameters={...o.parameters,docs:{...o.parameters?.docs,source:{originalSource:"() => responsivePaddingsExampleHtml",...o.parameters?.docs?.source}}};a.parameters={...a.parameters,docs:{...a.parameters?.docs,source:{originalSource:"() => mobileCollapsedExampleHtml",...a.parameters?.docs?.source}}};e.parameters={...e.parameters,docs:{...e.parameters?.docs,source:{originalSource:"() => summaryLineExampleHtml",...e.parameters?.docs?.source}}};n.parameters={...n.parameters,docs:{...n.parameters?.docs,source:{originalSource:"() => expandableExampleHtml",...n.parameters?.docs?.source}}};c.parameters={...c.parameters,docs:{...c.parameters?.docs,source:{originalSource:"() => collapsedHeaderExampleHtml",...c.parameters?.docs?.source}}};i.parameters={...i.parameters,docs:{...i.parameters?.docs,source:{originalSource:"() => onlyCollapseExampleHtml",...i.parameters?.docs?.source}}};t.parameters={...t.parameters,docs:{...t.parameters?.docs,source:{originalSource:"() => withFacetsExampleHtml",...t.parameters?.docs?.source}}};u.parameters={...u.parameters,docs:{...u.parameters?.docs,source:{originalSource:"() => withFacetsMobileExampleHtml",...u.parameters?.docs?.source}}};const V=["Desktop","Large","Tablet","Mobile","ResponsivePaddings","MobileCollapsed","SummaryLine","Expandable","CollapsedHeader","OnlyCollapse","WithFacets","WithFacetsMobile"];export{c as CollapsedHeader,s as Desktop,n as Expandable,d as Large,r as Mobile,a as MobileCollapsed,i as OnlyCollapse,o as ResponsivePaddings,e as SummaryLine,l as Tablet,t as WithFacets,u as WithFacetsMobile,V as __namedExportsOrder,N as default};

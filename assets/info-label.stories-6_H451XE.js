@@ -1,4 +1,4 @@
-import"./iframe-C0hDTCBm.js";/* empty css             */import"./preload-helper-CR6acF8F.js";const s=`<span class="fd-info-label fd-info-label--accent-color-1 fd-info-label--display">
+import"./iframe-BlosdONt.js";/* empty css             */import"./preload-helper-CR6acF8F.js";const s=`<span class="fd-info-label fd-info-label--accent-color-1 fd-info-label--display">
     <span class="fd-info-label__sr-only">Info Label</span>
     <span class="fd-info-label__text">color 1</span>
 </span>

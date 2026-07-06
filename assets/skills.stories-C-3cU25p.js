@@ -1,4 +1,4 @@
-import{z as e,d as o}from"./iframe-C0hDTCBm.js";import{R as s}from"./IntroductionPageWrapper-CD7Om6_4.js";import"./preload-helper-CR6acF8F.js";const t=`# Skills
+import{t as e,D as o}from"./iframe-BlosdONt.js";import{R as s}from"./IntroductionPageWrapper-ChPJejmG.js";import"./preload-helper-CR6acF8F.js";const t=`# Skills
 
 Agent Skills for fundamental-styles provide AI assistants with comprehensive guidance on using the component library effectively. These skills help AI agents (like Claude Code) understand when to use components, best practices, and common patterns.
 

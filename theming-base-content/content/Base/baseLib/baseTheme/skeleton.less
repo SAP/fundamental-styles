@@ -1,14 +1,341 @@
 /**
 * Copyright (c) 2012-2025 SAP SE or an SAP affiliate company and Theming Base Content contributors. Licensed under the Apache License, Version 2.0 - see LICENSE.txt.
-* Theming Engine 17.0.10
-* data:{"sModified":"2026-04-15T12:13:35Z"}
+* Theming Engine 17.0.18
+* data:{"sModified":"2026-05-26T10:32:59Z"}
 */
 
 
-/******************* FILE /Base/baseLib/baseTheme/skeleton.less (Version 11.35.1) *******************/
+/******************* FILE /Base/baseLib/baseTheme/skeleton.less (Version 11.36.3) *******************/
 
 /*!SAP_POSTPROCESS_REDUCE_START*/
-
+/*<SAP_FREETEXT_LESS>*/
+@sapAt: ~"@";
+@{sapAt}property --sapCompanyLogo {
+syntax: "<image> | none";
+initial-value: url("data:,");
+inherits: true;
+}
+@{sapAt}property --sapFavicon {
+syntax: "<image> | none";
+initial-value: url("data:,");
+inherits: true;
+}
+@{sapAt}property --sapBackgroundImage {
+syntax: "<image> | none";
+initial-value: url("data:,");
+inherits: true;
+}
+@{sapAt}property --sapShell_BackgroundImage {
+syntax: "<image> | none";
+initial-value: url("data:,");
+inherits: true;
+}
+@{sapAt}property --sapShell_Favicon {
+syntax: "<image> | none";
+initial-value: url("data:,");
+inherits: true;
+}
+@{sapAt}property --sapShell_HeroBanner_BackgroundImage {
+syntax: "<image> | none";
+initial-value: url("data:,");
+inherits: true;
+}
+@{sapAt}property --sapAssistant_BackgroundGradient {
+syntax: "<image> | none";
+initial-value: url("data:,");
+inherits: true;
+}
+@{sapAt}property --sapFontUrl_SAP-icons_ttf {
+syntax: "<url>";
+initial-value: url("data:,");
+inherits: true;
+}
+@{sapAt}property --sapFontUrl_SAP-icons_woff {
+syntax: "<url>";
+initial-value: url("data:,");
+inherits: true;
+}
+@{sapAt}property --sapFontUrl_SAP-icons_woff2 {
+syntax: "<url>";
+initial-value: url("data:,");
+inherits: true;
+}
+@{sapAt}property --sapFontUrl_SAP-icons-TNT_ttf {
+syntax: "<url>";
+initial-value: url("data:,");
+inherits: true;
+}
+@{sapAt}property --sapFontUrl_SAP-icons-TNT_woff {
+syntax: "<url>";
+initial-value: url("data:,");
+inherits: true;
+}
+@{sapAt}property --sapFontUrl_SAP-icons-TNT_woff2 {
+syntax: "<url>";
+initial-value: url("data:,");
+inherits: true;
+}
+@{sapAt}property --sapFontUrl_SAP-icons-Business-Suite_ttf {
+syntax: "<url>";
+initial-value: url("data:,");
+inherits: true;
+}
+@{sapAt}property --sapFontUrl_SAP-icons-Business-Suite_woff {
+syntax: "<url>";
+initial-value: url("data:,");
+inherits: true;
+}
+@{sapAt}property --sapFontUrl_SAP-icons-Business-Suite_woff2 {
+syntax: "<url>";
+initial-value: url("data:,");
+inherits: true;
+}
+@{sapAt}property --sapFontUrl_72_Regular_woff2 {
+syntax: "<url>";
+initial-value: url("data:,");
+inherits: true;
+}
+@{sapAt}property --sapFontUrl_72_Regular_woff {
+syntax: "<url>";
+initial-value: url("data:,");
+inherits: true;
+}
+@{sapAt}property --sapFontUrl_72_Regular_full_woff2 {
+syntax: "<url>";
+initial-value: url("data:,");
+inherits: true;
+}
+@{sapAt}property --sapFontUrl_72_Regular_full_woff {
+syntax: "<url>";
+initial-value: url("data:,");
+inherits: true;
+}
+@{sapAt}property --sapFontUrl_72_Bold_woff2 {
+syntax: "<url>";
+initial-value: url("data:,");
+inherits: true;
+}
+@{sapAt}property --sapFontUrl_72_Bold_woff {
+syntax: "<url>";
+initial-value: url("data:,");
+inherits: true;
+}
+@{sapAt}property --sapFontUrl_72_Bold_full_woff2 {
+syntax: "<url>";
+initial-value: url("data:,");
+inherits: true;
+}
+@{sapAt}property --sapFontUrl_72_Bold_full_woff {
+syntax: "<url>";
+initial-value: url("data:,");
+inherits: true;
+}
+@{sapAt}property --sapFontUrl_72_Semibold_woff2 {
+syntax: "<url>";
+initial-value: url("data:,");
+inherits: true;
+}
+@{sapAt}property --sapFontUrl_72_Semibold_woff {
+syntax: "<url>";
+initial-value: url("data:,");
+inherits: true;
+}
+@{sapAt}property --sapFontUrl_72_Semibold_full_woff2 {
+syntax: "<url>";
+initial-value: url("data:,");
+inherits: true;
+}
+@{sapAt}property --sapFontUrl_72_Semibold_full_woff {
+syntax: "<url>";
+initial-value: url("data:,");
+inherits: true;
+}
+@{sapAt}property --sapFontUrl_72_SemiboldDuplex_woff2 {
+syntax: "<url>";
+initial-value: url("data:,");
+inherits: true;
+}
+@{sapAt}property --sapFontUrl_72_SemiboldDuplex_woff {
+syntax: "<url>";
+initial-value: url("data:,");
+inherits: true;
+}
+@{sapAt}property --sapFontUrl_72_SemiboldDuplex_full_woff2 {
+syntax: "<url>";
+initial-value: url("data:,");
+inherits: true;
+}
+@{sapAt}property --sapFontUrl_72_SemiboldDuplex_full_woff {
+syntax: "<url>";
+initial-value: url("data:,");
+inherits: true;
+}
+@{sapAt}property --sapFontUrl_72_Light_woff2 {
+syntax: "<url>";
+initial-value: url("data:,");
+inherits: true;
+}
+@{sapAt}property --sapFontUrl_72_Light_woff {
+syntax: "<url>";
+initial-value: url("data:,");
+inherits: true;
+}
+@{sapAt}property --sapFontUrl_72_Light_full_woff2 {
+syntax: "<url>";
+initial-value: url("data:,");
+inherits: true;
+}
+@{sapAt}property --sapFontUrl_72_Light_full_woff {
+syntax: "<url>";
+initial-value: url("data:,");
+inherits: true;
+}
+@{sapAt}property --sapFontUrl_72_Black_woff2 {
+syntax: "<url>";
+initial-value: url("data:,");
+inherits: true;
+}
+@{sapAt}property --sapFontUrl_72_Black_woff {
+syntax: "<url>";
+initial-value: url("data:,");
+inherits: true;
+}
+@{sapAt}property --sapFontUrl_72_Black_full_woff2 {
+syntax: "<url>";
+initial-value: url("data:,");
+inherits: true;
+}
+@{sapAt}property --sapFontUrl_72_Black_full_woff {
+syntax: "<url>";
+initial-value: url("data:,");
+inherits: true;
+}
+@{sapAt}property --sapFontUrl_72_BoldItalic_woff2 {
+syntax: "<url>";
+initial-value: url("data:,");
+inherits: true;
+}
+@{sapAt}property --sapFontUrl_72_BoldItalic_woff {
+syntax: "<url>";
+initial-value: url("data:,");
+inherits: true;
+}
+@{sapAt}property --sapFontUrl_72_BoldItalic_full_woff2 {
+syntax: "<url>";
+initial-value: url("data:,");
+inherits: true;
+}
+@{sapAt}property --sapFontUrl_72_BoldItalic_full_woff {
+syntax: "<url>";
+initial-value: url("data:,");
+inherits: true;
+}
+@{sapAt}property --sapFontUrl_72_Condensed_woff2 {
+syntax: "<url>";
+initial-value: url("data:,");
+inherits: true;
+}
+@{sapAt}property --sapFontUrl_72_Condensed_woff {
+syntax: "<url>";
+initial-value: url("data:,");
+inherits: true;
+}
+@{sapAt}property --sapFontUrl_72_Condensed_full_woff2 {
+syntax: "<url>";
+initial-value: url("data:,");
+inherits: true;
+}
+@{sapAt}property --sapFontUrl_72_Condensed_full_woff {
+syntax: "<url>";
+initial-value: url("data:,");
+inherits: true;
+}
+@{sapAt}property --sapFontUrl_72_CondensedBold_woff2 {
+syntax: "<url>";
+initial-value: url("data:,");
+inherits: true;
+}
+@{sapAt}property --sapFontUrl_72_CondensedBold_woff {
+syntax: "<url>";
+initial-value: url("data:,");
+inherits: true;
+}
+@{sapAt}property --sapFontUrl_72_CondensedBold_full_woff2 {
+syntax: "<url>";
+initial-value: url("data:,");
+inherits: true;
+}
+@{sapAt}property --sapFontUrl_72_CondensedBold_full_woff {
+syntax: "<url>";
+initial-value: url("data:,");
+inherits: true;
+}
+@{sapAt}property --sapFontUrl_72_Italic_woff2 {
+syntax: "<url>";
+initial-value: url("data:,");
+inherits: true;
+}
+@{sapAt}property --sapFontUrl_72_Italic_woff {
+syntax: "<url>";
+initial-value: url("data:,");
+inherits: true;
+}
+@{sapAt}property --sapFontUrl_72_Italic_full_woff2 {
+syntax: "<url>";
+initial-value: url("data:,");
+inherits: true;
+}
+@{sapAt}property --sapFontUrl_72_Italic_full_woff {
+syntax: "<url>";
+initial-value: url("data:,");
+inherits: true;
+}
+@{sapAt}property --sapFontUrl_72Mono_Regular_woff2 {
+syntax: "<url>";
+initial-value: url("data:,");
+inherits: true;
+}
+@{sapAt}property --sapFontUrl_72Mono_Regular_woff {
+syntax: "<url>";
+initial-value: url("data:,");
+inherits: true;
+}
+@{sapAt}property --sapFontUrl_72Mono_Regular_full_woff2 {
+syntax: "<url>";
+initial-value: url("data:,");
+inherits: true;
+}
+@{sapAt}property --sapFontUrl_72Mono_Regular_full_woff {
+syntax: "<url>";
+initial-value: url("data:,");
+inherits: true;
+}
+@{sapAt}property --sapFontUrl_72Mono_Bold_woff2 {
+syntax: "<url>";
+initial-value: url("data:,");
+inherits: true;
+}
+@{sapAt}property --sapFontUrl_72Mono_Bold_woff {
+syntax: "<url>";
+initial-value: url("data:,");
+inherits: true;
+}
+@{sapAt}property --sapFontUrl_72Mono_Bold_full_woff2 {
+syntax: "<url>";
+initial-value: url("data:,");
+inherits: true;
+}
+@{sapAt}property --sapFontUrl_72Mono_Bold_full_woff {
+syntax: "<url>";
+initial-value: url("data:,");
+inherits: true;
+}
+@{sapAt}property --sapShell_BackgroundGradient {
+syntax: "<image> | none";
+initial-value: url("data:,");
+inherits: true;
+}
+/*</SAP_FREETEXT_LESS>*/
 :root {
   --sapBrandColor: @sapBrandColor;
   --sapHighlightColor: @sapHighlightColor;
@@ -1546,6 +1873,7 @@
   --sapHighlightTextColor: @sapHighlightTextColor;
   --sapButton_Emphasized_FontWeight: @sapButton_Emphasized_FontWeight;
   --sapShell_BackgroundGradient: @sapShell_BackgroundGradient;
+  --sapAt: @sapAt;
 }
 /*<SAP_FREETEXT_LESS>*/
 .sapCss_BackgroundImage_sapCompanyLogo() {

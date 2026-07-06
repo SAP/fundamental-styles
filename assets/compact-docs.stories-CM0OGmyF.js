@@ -1,4 +1,4 @@
-import{z as n,d as t}from"./iframe-C0hDTCBm.js";import{R as o}from"./IntroductionPageWrapper-CD7Om6_4.js";import"./preload-helper-CR6acF8F.js";const s=`# Content density
+import{t as n,D as t}from"./iframe-BlosdONt.js";import{R as o}from"./IntroductionPageWrapper-ChPJejmG.js";import"./preload-helper-CR6acF8F.js";const s=`# Content density
 
 SAP's Content density modes give you ability to render elements in different sizes. Majority of components in library support content density features.
 

@@ -1,4 +1,4 @@
-/* empty css               *//* empty css             *//* empty css              *//* empty css                         *//* empty css                */const u=`<div class="fd-panel fd-panel--transparent" aria-labelledby="__panel-title-4" role="form">
+/* empty css               *//* empty css             *//* empty css              *//* empty css                         *//* empty css                */const l=`<div class="fd-panel fd-panel--transparent" aria-labelledby="__panel-title-4" role="form">
     <div class="fd-panel__header">
         <div class="fd-panel__expand">
             <button onclick="toggleExpandedButton(event)" class="fd-button fd-button--transparent fd-panel__button" aria-expanded="true"
@@ -6,7 +6,7 @@
                 <i class="sap-icon--slim-arrow-down"></i>
             </button>
         </div>
-        <h4 class="fd-panel__title" id="__panel-title-4">Panel header expanded</h4>
+        <h4 class="fd-panel__title fd-panel__title--wrap" id="__panel-title-4">Panel header expanded</h4>
     </div>
     <div role="region" aria-labelledby="__panel-title-4" class="fd-panel__content" aria-hidden="false" id="__panel-4">
         <span>
@@ -25,7 +25,7 @@
 
 <div class="fd-panel fd-panel--transparent" aria-labelledby="__panel-title-5" role="form">
     <div class="fd-panel__header">
-        <h4 class="fd-panel__title" id="__panel-title-5">Panel header</h4>
+        <h4 class="fd-panel__title fd-panel__title--wrap" id="__panel-title-5">Panel header</h4>
         <div class="fd-toolbar fd-toolbar--clear fd-toolbar--transparent">
             <span class="fd-toolbar__spacer fd-toolbar__spacer--auto"> </span>
             <div class="fd-segmented-button" role="group" aria-label="Group label">
@@ -45,7 +45,7 @@
         Vestibulum tristique euismod enim, ac volutpat odio cursus sit amet.
     </div>
 </div>
-`,l=`<div class="fd-panel fd-panel--borderless" aria-labelledby="__panel-title-1" role="form">
+`,u=`<div class="fd-panel fd-panel--borderless" aria-labelledby="__panel-title-1" role="form">
     <div class="fd-panel__header">
         <div class="fd-panel__expand">
             <button class="fd-button fd-button--transparent fd-panel__button" onclick="toggleExpandedButton(event)"
@@ -53,7 +53,7 @@
                 <i class="sap-icon--slim-arrow-right"></i>
             </button>
         </div>
-        <h4 class="fd-panel__title" id="__panel-title-1">Panel header collapsed</h4>
+        <h4 class="fd-panel__title fd-panel__title--wrap" id="__panel-title-1">Panel header collapsed</h4>
         <div class="fd-toolbar fd-toolbar--clear fd-toolbar--transparent">
             <span class="fd-toolbar__spacer fd-toolbar__spacer--auto"> </span>
             <div class="fd-segmented-button" role="group" aria-label="Group label">
@@ -86,7 +86,7 @@
                 <i class="sap-icon--slim-arrow-down"></i>
             </button>
         </div>
-        <h4 class="fd-panel__title" id="__panel-title-2">Panel header expanded</h4>
+        <h4 class="fd-panel__title fd-panel__title--wrap" id="__panel-title-2">Panel header expanded</h4>
     </div>
     <div role="region" aria-labelledby="__panel-title-2" class="fd-panel__content" aria-hidden="false" id="__panel-2">
         <span>
@@ -105,7 +105,7 @@
 
 <div class="fd-panel fd-panel--fixed fd-panel--borderless" aria-labelledby="__panel-title-3" role="form">
     <div class="fd-panel__header">
-        <h4 class="fd-panel__title" id="__panel-title-3">Panel header</h4>
+        <h4 class="fd-panel__title fd-panel__title--wrap" id="__panel-title-3">Panel header</h4>
         <div class="fd-toolbar fd-toolbar--clear fd-toolbar--transparent">
             <span class="fd-toolbar__spacer fd-toolbar__spacer--auto"></span>
             <div class="fd-segmented-button" role="group" aria-label="Group label">
@@ -133,7 +133,7 @@
                 <i class="sap-icon--slim-arrow-down"></i>
             </button>
         </div>
-        <h4 class="fd-panel__title" id="__panel-title-fixed">Panel header expanded</h4>
+        <h4 class="fd-panel__title fd-panel__title--wrap" id="__panel-title-fixed">Panel header expanded</h4>
     </div>
     <div role="region" aria-labelledby="__panel-title-fixed" class="fd-panel__content" aria-hidden="false" id="__panel-fixed" style="height: 150px;">
         <span>
@@ -161,7 +161,7 @@
                 <i class="sap-icon--slim-arrow-right"></i>
             </button>
         </div>
-        <h4 class="fd-panel__title" id="__panel-title-7">Panel header collapsed</h4>
+        <h4 class="fd-panel__title fd-panel__title--wrap" id="__panel-title-7">Panel header collapsed</h4>
         <div class="fd-toolbar fd-toolbar--clear fd-toolbar--transparent">
             <span class="fd-toolbar__spacer fd-toolbar__spacer--auto"> </span>
             <div class="fd-segmented-button" role="group" aria-label="Group label">
@@ -192,7 +192,7 @@
                 <i class="sap-icon--slim-arrow-down"></i>
             </button>
         </div>
-        <h4 class="fd-panel__title" id="__panel-title-8">Panel header expanded</h4>
+        <h4 class="fd-panel__title fd-panel__title--wrap" id="__panel-title-8">Panel header expanded</h4>
     </div>
     <div role="region" aria-labelledby="__panel-title-8" class="fd-panel__content" aria-hidden="false" id="__panel-8">
         <span>
@@ -208,7 +208,7 @@
 </div>
 `,d=`<div class="fd-panel" aria-labelledby="__panel-title-6" role="form">
     <div class="fd-panel__header">
-        <h4 class="fd-panel__title" id="__panel-title-6">Panel header</h4>
+        <h4 class="fd-panel__title fd-panel__title--wrap" id="__panel-title-6">Panel header with a long title that reflows at narrow viewports (320px)</h4>
         <div class="fd-toolbar fd-toolbar--clear fd-toolbar--transparent">
             <span class="fd-toolbar__spacer fd-toolbar__spacer--auto"> </span>
             <div class="fd-segmented-button" role="group" aria-label="Group label">
@@ -237,7 +237,7 @@
                     <i class="sap-icon--slim-arrow-down"></i>
                 </button>
             </div>
-            <h4 class="fd-panel__title" id="__panel-title-sticky">Panel sticky header</h4>
+            <h4 class="fd-panel__title fd-panel__title--wrap" id="__panel-title-sticky">Panel sticky header</h4>
         </div>
         <div role="region" aria-labelledby="__panel-title-sticky" class="fd-panel__content" aria-hidden="false" id="__panel-sticky">
             <span>
@@ -329,7 +329,10 @@ The panel is a container for grouping and displaying information. Panels are res
 ##Types
 There are two types of panels: fixed and expandable.
 
+##Title wrapping
+By default, the panel title truncates with an ellipsis when it exceeds the available width. To allow the title to wrap onto multiple lines instead — for example, to comply with WCAG 1.4.10 (Reflow) at narrow viewports — add the \`.fd-panel__title--wrap\` modifier class to the \`.fd-panel__title\` element.
+
   `}},i=()=>d;i.parameters={docs:{description:{story:`
         `}}};const t=()=>r;t.parameters={docs:{description:{story:`Expandable panels are much like fixed panels, except their content can be expanded and collapsed (including the info toolbar, if available).
         `}}};const e=()=>o;e.storyName="Fixed height";e.parameters={docs:{description:{story:`When the height of the panel's content is set to a fixed size, the content area becomes scrollable.
-        `}}};const a=()=>l;a.parameters={docs:{description:{story:"Panel may have a border or not. For Panel without border use the `.fd-panel--borderless ` modifier class.\n        "}}};const s=()=>u;s.parameters={docs:{description:{story:"The background of the content can be set to transparent by applying the `.fd-panel--transparent ` modifier class. <br> The padding of the content can be removed with the `.fd-panel__content--no-padding ` modifier class added to `.fd-panel__content ` base class.\n        "}}};const n=()=>c;n.parameters={docs:{description:{story:"Sticky header can be achieved by applying the `.fd-panel--sticky ` modifier class to the panel. The container should have a fixed height, position relative and overflow-y set to scroll."}}};i.parameters={...i.parameters,docs:{...i.parameters?.docs,source:{originalSource:"() => fixedExampleHtml",...i.parameters?.docs?.source}}};t.parameters={...t.parameters,docs:{...t.parameters?.docs,source:{originalSource:"() => expandableExampleHtml",...t.parameters?.docs?.source}}};e.parameters={...e.parameters,docs:{...e.parameters?.docs,source:{originalSource:"() => fixedHeightContentExampleHtml",...e.parameters?.docs?.source}}};a.parameters={...a.parameters,docs:{...a.parameters?.docs,source:{originalSource:"() => borderlessExampleHtml",...a.parameters?.docs?.source}}};s.parameters={...s.parameters,docs:{...s.parameters?.docs,source:{originalSource:"() => transparentExampleHtml",...s.parameters?.docs?.source}}};n.parameters={...n.parameters,docs:{...n.parameters?.docs,source:{originalSource:"() => stickyHeaderExampleHtml",...n.parameters?.docs?.source}}};const _=["Fixed","Expandable","FixedHeightContent","Borderless","Transparent","StickyHeader"];export{a as Borderless,t as Expandable,i as Fixed,e as FixedHeightContent,n as StickyHeader,s as Transparent,_ as __namedExportsOrder,f as default};
+        `}}};const a=()=>u;a.parameters={docs:{description:{story:"Panel may have a border or not. For Panel without border use the `.fd-panel--borderless ` modifier class.\n        "}}};const s=()=>l;s.parameters={docs:{description:{story:"The background of the content can be set to transparent by applying the `.fd-panel--transparent ` modifier class. <br> The padding of the content can be removed with the `.fd-panel__content--no-padding ` modifier class added to `.fd-panel__content ` base class.\n        "}}};const n=()=>c;n.parameters={docs:{description:{story:"Sticky header can be achieved by applying the `.fd-panel--sticky ` modifier class to the panel. The container should have a fixed height, position relative and overflow-y set to scroll."}}};i.parameters={...i.parameters,docs:{...i.parameters?.docs,source:{originalSource:"() => fixedExampleHtml",...i.parameters?.docs?.source}}};t.parameters={...t.parameters,docs:{...t.parameters?.docs,source:{originalSource:"() => expandableExampleHtml",...t.parameters?.docs?.source}}};e.parameters={...e.parameters,docs:{...e.parameters?.docs,source:{originalSource:"() => fixedHeightContentExampleHtml",...e.parameters?.docs?.source}}};a.parameters={...a.parameters,docs:{...a.parameters?.docs,source:{originalSource:"() => borderlessExampleHtml",...a.parameters?.docs?.source}}};s.parameters={...s.parameters,docs:{...s.parameters?.docs,source:{originalSource:"() => transparentExampleHtml",...s.parameters?.docs?.source}}};n.parameters={...n.parameters,docs:{...n.parameters?.docs,source:{originalSource:"() => stickyHeaderExampleHtml",...n.parameters?.docs?.source}}};const _=["Fixed","Expandable","FixedHeightContent","Borderless","Transparent","StickyHeader"];export{a as Borderless,t as Expandable,i as Fixed,e as FixedHeightContent,n as StickyHeader,s as Transparent,_ as __namedExportsOrder,f as default};

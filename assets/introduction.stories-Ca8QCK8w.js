@@ -1,8 +1,9 @@
-import{z as e,d as t}from"./iframe-C0hDTCBm.js";import{R as s}from"./IntroductionPageWrapper-CD7Om6_4.js";import"./preload-helper-CR6acF8F.js";const a=`# Fundamental Library Styles
+import{t as e,D as t}from"./iframe-BlosdONt.js";import{R as s}from"./IntroductionPageWrapper-ChPJejmG.js";import"./preload-helper-CR6acF8F.js";const a=`# Fundamental Library Styles
 
 ### Lightweight, framework-agnostic CSS component library
 
-<a href="https://badge.fury.io/js/fundamental-styles"><img src="https://badge.fury.io/js/fundamental-styles.svg" alt="NPM Version"/></a><a href="https://github.com/SAP/fundamental-styles/actions"><img src="https://github.com/SAP/fundamental-styles/actions/workflows/create-release.yml/badge.svg?branch=main" alt="CI Status"/></a><a href="https://www.npmjs.com/package/fundamental-styles"><img src="https://img.shields.io/npm/dm/fundamental-styles?label=downloads" alt="NPM Downloads"/></a><a href="https://join.slack.com/t/ui-fundamentals/shared_invite/enQtNTIzOTU0Mzc2NTc5LWQzZWI5MWFhYjE5OTc4YzliN2JhOTc1ZjQxZTg1YjZiMWZiYzRkNjMwYzgyMmFkYmNhZDVjMWE5MDIzOWEzMmM"><img src="https://img.shields.io/badge/slack-ui--fundamentals-blue.svg?logo=slack" alt="Slack"/></a><a href="https://api.reuse.software/info/github.com/SAP/fundamental-styles"><img src="https://api.reuse.software/badge/github.com/SAP/fundamental-styles" alt="REUSE status"/></a><a href="https://storybook.js.org/"><img src="https://raw.githubusercontent.com/storybookjs/brand/main/badge/badge-storybook.svg" alt="Storybook"/></a><a href="https://fundamental-styles.netlify.app"><img src="https://img.shields.io/badge/Hosted%20on-Netlify-00C7B7?style=flat&logo=netlify&logoColor=white" alt="Hosted on Netlify"/></a>
+<a href="https://badge.fury.io/js/fundamental-styles"><img src="https://badge.fury.io/js/fundamental-styles.svg" alt="NPM Version"/></a><a href="https://github.com/SAP/fundamental-styles/actions"><img src="https://github.com/SAP/fundamental-styles/actions/workflows/create-release.yml/badge.svg?branch=main" alt="CI Status"/></a><a href="https://www.npmjs.com/package/fundamental-styles"><img src="https://img.shields.io/npm/dm/fundamental-styles?label=downloads" alt="NPM Downloads"/></a><a href="https://join.slack.com/t/ui-fundamentals/shared_invite/enQtNTIzOTU0Mzc2NTc5LWQzZWI5MWFhYjE5OTc4YzliN2JhOTc1ZjQxZTg1YjZiMWZiYzRkNjMwYzgyMmFkYmNhZDVjMWE5MDIzOWEzMmM"><img src="https://img.shields.io/badge/slack-ui--fundamentals-blue.svg?logo=slack" alt="Slack"/></a>
+<a href="https://api.reuse.software/info/github.com/SAP/fundamental-styles"><img src="https://api.reuse.software/badge/github.com/SAP/fundamental-styles" alt="REUSE status"/></a><a href="https://storybook.js.org/"><img src="https://raw.githubusercontent.com/storybookjs/brand/main/badge/badge-storybook.svg" alt="Storybook"/></a><a href="https://fundamental-styles.netlify.app"><img src="https://img.shields.io/badge/Hosted%20on-Netlify-00C7B7?style=flat&logo=netlify&logoColor=white" alt="Hosted on Netlify"/></a>
 
 A lightweight CSS library for building SAP applications. Framework-agnostic—works with Angular, React, Vue, or vanilla HTML. Provides ready-to-use components and styles that help you create consistent, professional SAP applications quickly.
 
@@ -337,6 +338,7 @@ Follows [Semantic Versioning](https://semver.org/): \`[MAJOR].[MINOR].[PATCH]\`
 - **Stable**: \`npm install fundamental-styles@latest\`
 - **Prerelease**: \`npm install fundamental-styles@prerelease\` (merges to \`main\` branch, includes \`-rc.X\` suffix)
 
+
 ## 💬 Support
 
 - **[Create an issue](https://github.com/SAP/fundamental-styles/issues/new/choose)** - Bug reports & feature requests
@@ -347,7 +349,7 @@ Follows [Semantic Versioning](https://semver.org/): \`[MAJOR].[MINOR].[PATCH]\`
 <a href="https://www.chromatic.com/"><img src="https://user-images.githubusercontent.com/321738/84662277-e3db4f80-af1b-11ea-88f5-91d67a5e59f6.png" width="153" height="30" alt="Chromatic" /></a>
 
 Thanks to [Chromatic](https://www.chromatic.com/) for providing the visual testing platform that helps us review UI changes and catch visual regressions.
-`,r={title:"Docs / Introduction",component:()=>null,parameters:{docs:{container:t,page:s(a),theme:e},previewTabs:{canvas:{hidden:!0}},viewMode:"docs",visualDisabled:!0,docsOnly:!0}},n={render:()=>"<div></div>",parameters:{title:"Overview",storyshots:{disable:!0},viewMode:"docs",docsOnly:!0}};n.parameters={...n.parameters,docs:{...n.parameters?.docs,source:{originalSource:`{
+`,r={title:"Introduction",component:()=>null,parameters:{docs:{container:t,page:s(a),theme:e},previewTabs:{canvas:{hidden:!0}},viewMode:"docs",visualDisabled:!0,docsOnly:!0}},n={render:()=>"<div></div>",parameters:{storyshots:{disable:!0},docsOnly:!0}};n.parameters={...n.parameters,docs:{...n.parameters?.docs,source:{originalSource:`{
   render: () => {
     /*
       this will serve as default redirect to the docs page,
@@ -357,11 +359,9 @@ Thanks to [Chromatic](https://www.chromatic.com/) for providing the visual testi
     return '<div></div>';
   },
   parameters: {
-    title: 'Overview',
     storyshots: {
       disable: true
     },
-    viewMode: 'docs',
     docsOnly: true
   }
-}`,...n.parameters?.docs?.source}}};const m=["Overview"];export{n as Overview,m as __namedExportsOrder,r as default};
+}`,...n.parameters?.docs?.source}}};const m=["Styles"];export{n as Styles,m as __namedExportsOrder,r as default};

@@ -25207,7 +25207,7 @@
       },
       "sapField_InformationBackgroundStyle": {
         "value": "none",
-        "type": "asset",
+        "type": "string",
         "description": "The background style of an input field indicating an information status."
       },
       "sapField_InformationBackground": {
@@ -25302,7 +25302,7 @@
       },
       "sapField_SuccessBackgroundStyle": {
         "value": "none",
-        "type": "asset",
+        "type": "string",
         "description": "The background style of an input field indicating a successful user action."
       },
       "sapField_SuccessBackground": {
@@ -25397,7 +25397,7 @@
       },
       "sapField_WarningBackgroundStyle": {
         "value": "none",
-        "type": "asset",
+        "type": "string",
         "description": "The background style of an input field indicating a warning."
       },
       "sapField_WarningBackground": {
@@ -25492,7 +25492,7 @@
       },
       "sapField_InvalidBackgroundStyle": {
         "value": "none",
-        "type": "asset",
+        "type": "string",
         "description": "The background style of an input field with an invalid value."
       },
       "sapField_InvalidBackground": {
@@ -25582,7 +25582,7 @@
       },
       "sapField_ReadOnly_BackgroundStyle": {
         "value": "none",
-        "type": "asset",
+        "type": "string",
         "description": "The background style of read-only input fields."
       },
       "sapField_ReadOnly_Background": {
@@ -25702,7 +25702,7 @@
       },
       "sapField_Hover_BackgroundStyle": {
         "value": "none",
-        "type": "asset",
+        "type": "string",
         "description": "The background style of input fields on hover."
       },
       "sapField_Hover_Background": {
@@ -25752,7 +25752,7 @@
       },
       "sapField_BackgroundStyle": {
         "value": "none",
-        "type": "asset",
+        "type": "string",
         "description": "The background style of input fields."
       },
       "sapField_Background": {
@@ -28407,12 +28407,12 @@
       "sapShell_HeroBanner_TextColor": {
         "value": "hsla({Shell.HeroBanner._sapShell_HeroBanner_TextColorH}, {Shell.HeroBanner._sapShell_HeroBanner_TextColorS}, {Shell.HeroBanner._sapShell_HeroBanner_TextColorL}, {Shell.HeroBanner._sapShell_HeroBanner_TextColorA})",
         "type": "color",
-        "description": "The text color of the shell hero banner, used for salutation and date. Layered on top of sapShell_HeroBanner_BackgroundImage and sapShell_HeroBanner_Background."
+        "description": "Defines the text color used in the Shell Hero Banner on the homepage. Also applies to the Homepage Banner. Layered on top of sapShell_HeroBanner_BackgroundImage and sapShell_HeroBanner_Background."
       },
       "sapShell_HeroBanner_BackgroundImage": {
         "value": "linear-gradient(135deg, transparent 45%, hsla(0, 0%, 0%, (45) / 100) 75%)",
         "type": "linear-gradient",
-        "description": "The background image of the shell hero banner. Top-left aligned, covering the shell hero banner. Layered on top of sapShell_HeroBanner_Background."
+        "description": "Defines the background image of the Shell Hero Banner on the homepage. Also applies to the Homepage Banner. Top-left aligned, covering the shell hero banner. Layered on top of sapShell_HeroBanner_Background."
       },
       "_sapShell_HeroBanner_BackgroundH": {
         "value": "210",
@@ -28433,7 +28433,7 @@
       "sapShell_HeroBanner_Background": {
         "value": "hsla({Shell.HeroBanner._sapShell_HeroBanner_BackgroundH}, {Shell.HeroBanner._sapShell_HeroBanner_BackgroundS}, {Shell.HeroBanner._sapShell_HeroBanner_BackgroundL}, {Shell.HeroBanner._sapShell_HeroBanner_BackgroundA})",
         "type": "color",
-        "description": "The background color of the shell hero banner."
+        "description": "Defines the background color of the Shell Hero Banner on the homepage. Also applies to the Homepage Banner."
       }
     },
     "_sapShell_SubBrand_TextColorH": {
@@ -29188,7 +29188,7 @@
       "description": "The active state color of links."
     },
     "sapLink_Hover_TextDecoration": {
-      "value": "none",
+      "value": "underline",
       "type": "textDecoration",
       "description": "The hover state text decoration of links."
     },

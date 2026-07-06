@@ -1226,12 +1226,12 @@
       "sapShell_HeroBanner_TextColor": {
         "value": "hsla({Shell.HeroBanner._sapShell_HeroBanner_TextColorH}, {Shell.HeroBanner._sapShell_HeroBanner_TextColorS}, {Shell.HeroBanner._sapShell_HeroBanner_TextColorL}, {Shell.HeroBanner._sapShell_HeroBanner_TextColorA})",
         "type": "color",
-        "description": "The text color of the shell hero banner, used for salutation and date. Layered on top of sapShell_HeroBanner_BackgroundImage and sapShell_HeroBanner_Background."
+        "description": "Defines the text color used in the Shell Hero Banner on the homepage. Also applies to the Homepage Banner. Layered on top of sapShell_HeroBanner_BackgroundImage and sapShell_HeroBanner_Background."
       },
       "sapShell_HeroBanner_BackgroundImage": {
         "value": "linear-gradient(135deg, transparent 45%, hsla(0, 0%, 0%, (45) / 100) 75%)",
         "type": "linear-gradient",
-        "description": "The background image of the shell hero banner. Top-left aligned, covering the shell hero banner. Layered on top of sapShell_HeroBanner_Background."
+        "description": "Defines the background image of the Shell Hero Banner on the homepage. Also applies to the Homepage Banner. Top-left aligned, covering the shell hero banner. Layered on top of sapShell_HeroBanner_Background."
       },
       "_sapShell_HeroBanner_BackgroundH": {
         "value": "215.1428571428571",
@@ -1252,7 +1252,7 @@
       "sapShell_HeroBanner_Background": {
         "value": "hsla({Shell.HeroBanner._sapShell_HeroBanner_BackgroundH}, {Shell.HeroBanner._sapShell_HeroBanner_BackgroundS}, {Shell.HeroBanner._sapShell_HeroBanner_BackgroundL}, {Shell.HeroBanner._sapShell_HeroBanner_BackgroundA})",
         "type": "color",
-        "description": "The background color of the shell hero banner."
+        "description": "Defines the background color of the Shell Hero Banner on the homepage. Also applies to the Homepage Banner."
       }
     },
     "_sapShell_SubBrand_TextColorH": {
@@ -23721,7 +23721,7 @@
       },
       "sapField_InformationBackgroundStyle": {
         "value": "0 100% / 100% {Input.Information.sapField_InformationBorderWidth} no-repeat linear-gradient(0deg, {Input.Information.sapField_InformationColor}, {Input.Information.sapField_InformationColor}) border-box",
-        "type": "asset",
+        "type": "string",
         "description": "The background style of an input field indicating an information status."
       },
       "sapField_InformationBackground": {
@@ -23825,7 +23825,7 @@
       },
       "sapField_SuccessBackgroundStyle": {
         "value": "0 100% / 100% {Input.Success.sapField_SuccessBorderWidth} no-repeat linear-gradient(0deg, {Input.Success.sapField_SuccessColor}, {Input.Success.sapField_SuccessColor}) border-box",
-        "type": "asset",
+        "type": "string",
         "description": "The background style of an input field indicating a successful user action."
       },
       "sapField_SuccessBackground": {
@@ -23929,7 +23929,7 @@
       },
       "sapField_WarningBackgroundStyle": {
         "value": "0 100% / 100% {Input.Warning.sapField_WarningBorderWidth} no-repeat linear-gradient(0deg, {Input.Warning.sapField_WarningColor}, {Input.Warning.sapField_WarningColor}) border-box",
-        "type": "asset",
+        "type": "string",
         "description": "The background style of an input field indicating a warning."
       },
       "sapField_WarningBackground": {
@@ -24033,7 +24033,7 @@
       },
       "sapField_InvalidBackgroundStyle": {
         "value": "0 100% / 100% {Input.Invalid.sapField_InvalidBorderWidth} no-repeat linear-gradient(0deg, {Input.Invalid.sapField_InvalidColor}, {Input.Invalid.sapField_InvalidColor}) border-box",
-        "type": "asset",
+        "type": "string",
         "description": "The background style of an input field with an invalid value."
       },
       "sapField_InvalidBackground": {
@@ -24123,7 +24123,7 @@
       },
       "sapField_ReadOnly_BackgroundStyle": {
         "value": "0 100% / 0.375rem {Input.Standard.sapField_BorderWidth} repeat-x linear-gradient(90deg, {Input.Readonly.sapField_ReadOnly_BorderColor} 0, {Input.Readonly.sapField_ReadOnly_BorderColor} 0.25rem, transparent 0.25rem) border-box",
-        "type": "asset",
+        "type": "string",
         "description": "The background style of read-only input fields."
       },
       "_sapField_ReadOnly_BackgroundH": {
@@ -24268,7 +24268,7 @@
       },
       "sapField_Hover_BackgroundStyle": {
         "value": "0 100% / 100% {Input.Standard.sapField_BorderWidth} no-repeat linear-gradient(0deg, {Input.Standard.sapField_Hover_BorderColor}, {Input.Standard.sapField_Hover_BorderColor}) border-box",
-        "type": "asset",
+        "type": "string",
         "description": "The background style of input fields on hover."
       },
       "sapField_Hover_Background": {
@@ -24343,7 +24343,7 @@
       },
       "sapField_BackgroundStyle": {
         "value": "0 100% / 100% {Input.Standard.sapField_BorderWidth} no-repeat linear-gradient(0deg, {Input.Standard.sapField_BorderColor}, {Input.Standard.sapField_BorderColor}) border-box",
-        "type": "asset",
+        "type": "string",
         "description": "The background style of input fields."
       },
       "_sapField_BackgroundH": {

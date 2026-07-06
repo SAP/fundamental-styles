@@ -1535,6 +1535,7 @@
 		"sapSapThemeId": "sap_belize_hcw",
 		"sapHighlightTextColor": "#000",
 		"sapButton_Emphasized_FontWeight": "bold",
-		"sapShell_BackgroundGradient": "linear-gradient(to bottom, #fff, #fff)"
+		"sapShell_BackgroundGradient": "linear-gradient(to bottom, #fff, #fff)",
+		"sapAt": "@"
 	}
 }
