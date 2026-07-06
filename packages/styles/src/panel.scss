@@ -31,7 +31,6 @@ $block: #{$fd-namespace}-panel;
     border-bottom: var(--sapGroup_TitleBorderWidth) solid var(--fdPanel_Header_Border_Color, var(--sapGroup_TitleBorderColor));
     width: var(--fdPanel_Header_Width);
     min-width: var(--fdPanel_Header_Width);
-    height: var(--fdPanel_Header_Height);
     min-height: var(--fdPanel_Header_Height);
     top: var(--fdPanel_Header_Position_Top, unset);
     background-color: var(--sapGroup_TitleBackground);
@@ -62,6 +61,10 @@ $block: #{$fd-namespace}-panel;
     max-width: 100%;
     font-size: var(--fdPanel_Title_Font_Size);
     padding-inline-start: 0.25rem;
+
+    &--wrap {
+      @include fd-wrap();
+    }
   }
 
   &__content {
