@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.41.8-rc.13](https://github.com/SAP/fundamental-styles/compare/v0.41.8-rc.12...v0.41.8-rc.13) (2026-07-06)
+
+### Bug Fixes
+
+- **styles:** ACC-282.1 (Level AA) Section headers truncated at 320px viewport width ([#6350](https://github.com/SAP/fundamental-styles/issues/6350)) ([d821be0](https://github.com/SAP/fundamental-styles/commit/d821be01a72d868efaf18a7c03bd826ef63e8dc8))
+
 ## [0.41.8-rc.12](https://github.com/SAP/fundamental-styles/compare/v0.41.8-rc.11...v0.41.8-rc.12) (2026-06-30)
 
 ### Bug Fixes
