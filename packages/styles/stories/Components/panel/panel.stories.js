@@ -32,6 +32,9 @@ The panel is a container for grouping and displaying information. Panels are res
 ##Types
 There are two types of panels: fixed and expandable.
 
+##Title wrapping
+By default, the panel title truncates with an ellipsis when it exceeds the available width. To allow the title to wrap onto multiple lines instead — for example, to comply with WCAG 1.4.10 (Reflow) at narrow viewports — add the \`.fd-panel__title--wrap\` modifier class to the \`.fd-panel__title\` element.
+
   `
   }
 };
