@@ -13,21 +13,21 @@ stability: stable
 
 # Components/Product Switch
 
-The product switch provides users with role-based access to several products or lines of businesses (LoBs). The product switch displays an icon button that triggers a **Popover** with the products or LoBs. Because it is designed to be as simple as possible, the product switch only has one level of navigation.
+The product switch (App Launcher) provides users with role-based access to several products or lines of businesses (LoBs). The product switch displays an icon button that triggers a **Popover** with the products or LoBs. Because it is designed to be as simple as possible, the product switch only has one level of navigation.
 
 ##Usage
-**Use the product switch if:**
+**Use the product switch (App Launcher) if:**
 
 -	You want give your users access to several different products or LoBs within the same UI.
 
 
-**Do not use the product switch if:**
+**Do not use the product switch (App Launcher) if:**
 
 -	You want your users to navigate within the current product. In this case, use a product menu (see **Shellbar**).
 
 ## Usage Guidelines
 
-**Use the product switch if:**
+**Use the product switch (App Launcher) if:**
 
 -	You want give your users access to several different products or LoBs within the same UI.
 

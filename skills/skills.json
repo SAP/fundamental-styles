@@ -59,7 +59,7 @@
     {
       "id": "component-guidance-actions",
       "name": "Component Guidance - Actions & Controls",
-      "description": "Fiori guidelines for action components (4 components: Button, Product Switch, User Menu, Scrollbar)",
+      "description": "Fiori guidelines for action components (4 components: Button, Product Switch (App Launcher), User Menu, Scrollbar)",
       "file": "component-guidance-actions.md",
       "tags": ["components", "actions", "buttons", "controls"],
       "keywords": ["button", "product-switch", "user-menu", "scrollbar", "split-button", "menu-button", "toggle-button", "segmented-button"],
