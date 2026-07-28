@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.41.9-rc.7](https://github.com/SAP/fundamental-styles/compare/v0.41.9-rc.6...v0.41.9-rc.7) (2026-07-28)
+
+### Bug Fixes
+
+- **styles:** update Product Switch name to App Launcher [ci visual] ([#6361](https://github.com/SAP/fundamental-styles/issues/6361)) ([10da034](https://github.com/SAP/fundamental-styles/commit/10da034f1f1b38009375b7e44d75236179c525c8))
+
 ## [0.41.9-rc.6](https://github.com/SAP/fundamental-styles/compare/v0.41.9-rc.5...v0.41.9-rc.6) (2026-07-25)
 
 **Note:** Version bump only for package @fundamental-styles/mcp
