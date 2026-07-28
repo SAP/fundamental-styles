@@ -10,17 +10,17 @@ import '../../../src/avatar.scss';
 export default {
   title: 'Components/Product Switch',
   parameters: {
-    description: `The product switch provides users with role-based access to several products or lines of businesses (LoBs). The product switch displays an icon button that triggers a **Popover** with the products or LoBs. Because it is designed to be as simple as possible, the product switch only has one level of navigation.
+    description: `The Product Switch, also known as App Launcher, provides users with role-based access to several products or lines of businesses (LoBs). The product switch displays an icon button that triggers a **Popover** with the products or LoBs. Because it is designed to be as simple as possible, the product switch only has one level of navigation.
 
 ##Usage
-**Use the product switch if:**
+**Use the Product Switch (App Launcher) if:**
 
--	You want give your users access to several different products or LoBs within the same UI.
+-	You want to give your users access to several different products or LoBs within the same UI.
 
 
-**Do not use the product switch if:**
+**Do not use the Product Switch (App Launcher) if:**
 
--	You want your users to navigate within the current product. In this case, use a product menu (see **Shellbar**).
+-	You want your users to navigate within the current product. In this case, use a Product Menu (see **Shellbar**).
         `,
     tags: []
   }
@@ -42,7 +42,8 @@ export const Shellbar = () => `${localStyles}
             <div class="fd-product-switch">
                 <div class="fd-popover fd-popover--right">
                     <button class="fd-button fd-button--transparent fd-popover__control fd-shellbar__button"
-                        aria-label="Products"
+                        aria-label="App Launcher"
+                        title="App Launcher"
                         aria-controls="product-switch-body"
                         aria-expanded="true"
                         aria-haspopup="true">

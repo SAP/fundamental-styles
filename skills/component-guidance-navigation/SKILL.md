@@ -237,7 +237,7 @@ Shellbar serves as the topmost section across all SAP products, helping users or
 - ✅ Provide search access (if applicable)
 - ✅ Show notifications icon with count badge
 - ✅ Include user menu/profile access
-- ✅ Add Product Switch for multi-product access
+- ✅ Add Product Switch (App Launcher) for multi-product access
 - ✅ Keep consistent across all pages in application
 - ✅ Provide context about current product/location
 - ⚠️ Don't overload with too many actions

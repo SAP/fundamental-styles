@@ -44,9 +44,9 @@
     },
     "product-switch": {
       "id": "product-switch",
-      "name": "Product Switch",
+      "name": "Product Switch (App Launcher)",
       "category": "Actions & Controls",
-      "description": "Product Switch provides role-based access to multiple products or lines of business (LoBs). Displays an icon button that triggers a Popover with products/LoBs. Single-level navigation only. Typically placed in Shellbar on far-right side.",
+      "description": "Product Switch (App Launcher) provides role-based access to multiple products or lines of business (LoBs). Displays an icon button that triggers a Popover with products/LoBs. Single-level navigation only. Typically placed in Shellbar on far-right side.",
       "whenToUse": [
         "Give users access to several different products or LoBs within same UI",
         "Switch between applications or product lines",

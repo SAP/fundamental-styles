@@ -274,7 +274,7 @@ The following elements of the Shell Bar are optional:
   <li><b>Additional Actions:</b> You can add unlimited custom actions to the Shell Bar, but it's recommended to limit them to seven, ensuring they impact the entire product, use icon-only buttons, and include tooltips. The order is flexible, except for the Support action, which is always placed on the right.</li>
   <li><b>Help:</b> used to trigger the help functionality within products.</li>
   <li><b>Feedback:</b> used to trigger the "Leave Feedback" functionality within products.</li>
-  <li><b>Product Switch:</b> used for global navigation, allowing users to switch between different SAP products and services.</li>
+  <li><b>Product Switch (App Launcher):</b> used for global navigation, allowing users to switch between different SAP products and services.</li>
   <li><b>Separator:</b> creates a small distance between elements in additional context area.</li>
   <li><b>Spacer:</b> creates space between groups of elements in context area. Visually separates the context area into left and right group.</li>
 </ul>
@@ -603,8 +603,8 @@ The following elements of the Shell Bar are optional:
                                                 <div class="fd-popover fd-popover--right">
                                                     <button
                                                         class="fd-button fd-button--transparent fd-shellbar__button fd-popover__control"
-                                                        aria-label="Product Switcher"
-                                                        title="Product Switcher"
+                                                        aria-label="App Launcher"
+                                                        title="App Launcher"
                                                         aria-controls="product-switch-body"
                                                         aria-expanded="false"
                                                         aria-haspopup="dialog"
@@ -824,8 +824,8 @@ When Side Navigation is displayed, the left and right spacing is fixed at 1rem (
                                 <div class="fd-popover fd-popover--right">
                                     <button
                                         class="fd-button fd-button--transparent fd-shellbar__button fd-popover__control"
-                                        aria-label="Product Switcher"
-                                        title="Product Switcher"
+                                        aria-label="App Launcher"
+                                        title="App Launcher"
                                         aria-controls="YSGDGFD82347"
                                         aria-expanded="false"
                                         aria-haspopup="dialog"
@@ -1040,8 +1040,8 @@ When Side Navigation is displayed, the left and right spacing is fixed at 1rem (
                                                                 <div class="fd-popover fd-popover--right">
                                                                     <button
                                                                         class="fd-button fd-button--transparent fd-shellbar__button fd-popover__control"
-                                                                        aria-label="Product Switcher"
-                                                                        title="Product Switcher"
+                                                                        aria-label="App Launcher"
+                                                                        title="App Launcher"
                                                                         aria-controls="YSGDGFD82347f"
                                                                         aria-expanded="false"
                                                                         aria-haspopup="dialog"
@@ -1264,8 +1264,8 @@ Controls like Search, Notifications, Joule, Help, and Feedback can be placed ins
                                     <div class="fd-popover fd-popover--right">
                                         <button
                                             class="fd-button fd-button--transparent fd-shellbar__button fd-popover__control"
-                                            aria-label="Product Switcher"
-                                            title="Product Switcher"
+                                            aria-label="App Launcher"
+                                            title="App Launcher"
                                             aria-controls="UYYAY276YRW"
                                             aria-expanded="false"
                                             aria-haspopup="dialog"
@@ -1319,7 +1319,7 @@ Truncation and overflow logic of Shell Bar are based on priorities, such as when
 <ul>
   <li>Side Navigation Button (if used)</li>
   <li>Avatar (User Menu)</li>
-  <li>Product Switcher (if used)</li>
+  <li>Product Switcher (App Launcher) (if used)</li>
 </ul>
 
 <div style="font-weight: bold; font-size: 1.2rem;">XXL (1920=>) / XL (1440 – 1919) / L (1024 - 1439) / M (600 - 1023)</div>
@@ -1333,7 +1333,7 @@ Truncation and overflow logic of Shell Bar are based on priorities, such as when
   <li>Search positioned right (expanded or collapsed)</li>
   <li>Shell Actions Buttons (visible or hidden under overflow)</li>
   <li>User Profile</li>
-  <li>Product Switcher</li>
+  <li>Product Switcher (App Launcher)</li>
 </ul>
 
 <div style="font-weight: bold; font-size: 1.2rem;">S (599<=)</div>
@@ -1346,7 +1346,7 @@ Truncation and overflow logic of Shell Bar are based on priorities, such as when
   <li>Additional context area</li>
   <li>Overflow Button with all Shell Actions including search & notifications (if there are more than 1 action)</li>
   <li>User Profile</li>
-  <li>Product Switcher</li>
+  <li>Product Switcher (App Launcher)</li>
 </ul>
 
 <br>
@@ -1504,8 +1504,8 @@ The overflow is displayed via a Popover and is used when there is more than one 
                                 <div class="fd-popover fd-popover--right">
                                     <button
                                         class="fd-button fd-button--transparent fd-shellbar__button fd-popover__control"
-                                        aria-label="Product Switcher"
-                                        title="Product Switcher"
+                                        aria-label="App Launcher"
+                                        title="App Launcher"
                                         aria-controls="POIYRQW"
                                         aria-expanded="false"
                                         aria-haspopup="dialog"
@@ -1689,8 +1689,8 @@ The overflow is displayed via a Popover and is used when there is more than one 
                                                     <div class="fd-popover fd-popover--right">
                                                         <button
                                                             class="fd-button fd-button--transparent fd-shellbar__button fd-popover__control"
-                                                            aria-label="Product Switcher"
-                                                            title="Product Switcher"
+                                                            aria-label="App Launcher"
+                                                            title="App Launcher"
                                                             aria-controls="QWERTYI"
                                                             aria-expanded="false"
                                                             aria-haspopup="dialog"
@@ -1885,8 +1885,8 @@ The overflow is displayed via a Popover and is used when there is more than one 
                                                                                                 <div class="fd-popover fd-popover--right">
                                                                                                     <button
                                                                                                         class="fd-button fd-button--transparent fd-shellbar__button fd-popover__control"
-                                                                                                        aria-label="Product Switcher"
-                                                                                                        title="Product Switcher"
+                                                                                                        aria-label="App Launcher"
+                                                                                                        title="App Launcher"
                                                                                                         aria-controls="NHYUJM,KI"
                                                                                                         aria-expanded="false"
                                                                                                         aria-haspopup="dialog"
@@ -2078,8 +2078,8 @@ The overflow is displayed via a Popover and is used when there is more than one 
                                                                                                                                                 <div class="fd-popover fd-popover--right">
                                                                                                                                                     <button
                                                                                                                                                         class="fd-button fd-button--transparent fd-shellbar__button fd-popover__control"
-                                                                                                                                                        aria-label="Product Switcher"
-                                                                                                                                                        title="Product Switcher"
+                                                                                                                                                        aria-label="App Launcher"
+                                                                                                                                                        title="App Launcher"
                                                                                                                                                         aria-controls="CVSNZCVSDCUY"
                                                                                                                                                         aria-expanded="false"
                                                                                                                                                         aria-haspopup="dialog"
