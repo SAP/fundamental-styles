@@ -2,17 +2,20 @@ import navigationExampleHtml from "./navigation.example.html?raw";
 import navigationSnappedExampleHtml from "./navigation-snapped.example.html?raw";
 import navigationPopupExampleHtml from "./navigation-popup.example.html?raw";
 import navigationLegacyExampleHtml from "./navigation-legacy.example.html?raw";
+import navigationTagsHtml from "./navigation-tags.example.html?raw";
 
 import '../../../../src/navigation.scss';
 import '../../../../src/icon.scss';
 import '../../../../src/popover.scss';
 import '../../../../src/menu.scss';
 import '../../../../src/button.scss';
+import '../../../../src/object-status.scss';
 
 export default {
   title: 'BTP/Navigation/Vertical Navigation',
   parameters: {
     description: `The navigation is one of the signature design elements of BTP Tools. 
+
 ## Navigation Types:
 - <b>Vertical Navigation - Expanded</b>. The default navigation visualization provides a logical grouping of navigation items and two levels of hierarchy.
 - <b>Vertical Navigation - Snapped</b>. The snapped vertical navigation variant reduces the navigation width to free horizontal space.
@@ -85,6 +88,23 @@ NavigationPopup.parameters = {
   docs: {
     description: {
       story: `An alternative to the expanded/snapped variant, which places the navigation items in a popup.
+`
+    }
+  }
+};
+
+export const NavigationTags = () => navigationTagsHtml;
+NavigationTags.storyName = 'Vertical Navigation - Indication Tags';
+NavigationTags.parameters = {
+  docs: {
+    description: {
+      story: `Navigation items can display indication tags (e.g., "New", "Beta", "Deprecated") using the Object Status component.
+
+**Guidelines:**
+- One tag per navigation item (parent or child items only)
+- Avoid semantic colors 1-4 (may be confused with error/success/warning states)
+- Limit tag width to 64px (4rem) — use abbreviations if needed (e.g., "Experimental" → "Exp")
+- Tags are visual indicators only (non-interactive, no tooltips or actions)
 `
     }
   }

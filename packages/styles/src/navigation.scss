@@ -83,7 +83,7 @@ $navExternalLinkIndicator: #{$block}__external-link-indicator;
   // Navigation Item
   --fdNavigation_Item_Group_Display: flex;
   --fdNavigation_Item_Title_Display: none;
-  --fdNavigation_Item_Text_Display: inline-block;
+  --fdNavigation_Item_Text_Display: inline-flex;
   --fdNavigation_Item_Selected_Background: var(--sapList_SelectionBackgroundColor);
 
   // Navigation List
@@ -498,9 +498,6 @@ $navExternalLinkIndicator: #{$block}__external-link-indicator;
   }
 
   &__text {
-    @include fd-reset();
-    @include fd-ellipsis();
-
     width: 100%;
     line-height: 1rem;
     vertical-align: baseline;
@@ -508,6 +505,10 @@ $navExternalLinkIndicator: #{$block}__external-link-indicator;
     font-size: var(--fdNavigation_Link_Font_Size);
     display: var(--fdNavigation_Item_Text_Display);
     font-family: var(--fdNavigation_Link_Font_Family);
+    flex-wrap: wrap;
+    gap: 0.25rem 0.5rem;
+    align-items: baseline;
+    margin-block: 0.25rem;
   }
 
   &__selection-indicator {
@@ -721,10 +722,11 @@ $navExternalLinkIndicator: #{$block}__external-link-indicator;
         }
 
         @include fd-hover-focus() {
-          --fdNavigation_Link_Padding_Right: 1rem;
+          --fdNavigation_Link_Padding_Right: 0.375rem;
           --fdNavigation_Link_Spacing: 0.5rem;
-          
+
           min-width: fit-content;
+          width: max-content;
 
           &:has(.#{$navChildrenIndicator}) {
             .#{$navChildrenIndicator} {
@@ -740,7 +742,11 @@ $navExternalLinkIndicator: #{$block}__external-link-indicator;
           }
 
           .#{$navText} {
-            --fdNavigation_Item_Text_Display: inline-block;
+            --fdNavigation_Item_Text_Display: inline-flex;
+
+            min-width: fit-content;
+            width: max-content;
+            flex-wrap: nowrap;
           }
         }
       }
@@ -765,7 +771,7 @@ $navExternalLinkIndicator: #{$block}__external-link-indicator;
             --fdNavigation_Link_Padding_Right: calc(var(--fdNavigation_Controls_Width) + 1.3125rem);
 
             .#{$navText} {
-              --fdNavigation_Item_Text_Display: inline-block;
+              --fdNavigation_Item_Text_Display: inline-flex;
             }
 
             & + .#{$navChildrenIndicator} {
@@ -981,7 +987,7 @@ $navExternalLinkIndicator: #{$block}__external-link-indicator;
               width: 100%;
 
               .#{$navText} {
-                --fdNavigation_Item_Text_Display: inline-block;
+                --fdNavigation_Item_Text_Display: inline-flex;
               }
             }
           }
