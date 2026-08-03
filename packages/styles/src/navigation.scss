@@ -255,6 +255,16 @@ $navExternalLinkIndicator: #{$block}__external-link-indicator;
     &--overflow {
       position: relative;
     }
+
+    &--home {
+      top: 0;
+      z-index: 1;
+      position: sticky;
+
+      &:has(input) {
+        background: var(--sapList_Background);
+      }
+    }
   }
 
   &__link {
@@ -498,6 +508,8 @@ $navExternalLinkIndicator: #{$block}__external-link-indicator;
   }
 
   &__text {
+    @include fd-reset();
+    
     width: 100%;
     line-height: 1rem;
     vertical-align: baseline;

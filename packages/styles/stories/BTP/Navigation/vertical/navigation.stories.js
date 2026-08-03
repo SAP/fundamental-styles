@@ -9,6 +9,8 @@ import '../../../../src/icon.scss';
 import '../../../../src/popover.scss';
 import '../../../../src/menu.scss';
 import '../../../../src/button.scss';
+import '../../../../src/input.scss';
+import '../../../../src/input-group.scss';
 import '../../../../src/object-status.scss';
 
 export default {

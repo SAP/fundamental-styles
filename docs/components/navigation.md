@@ -69,7 +69,7 @@ npm install fundamental-styles
     >
     <div class="fd-navigation__container fd-navigation__container--top">
         <ul class="fd-navigation__list" role="tree" aria-roledescription="Navigation List Tree" tabindex="-1">
-            <li class="fd-navigation__list-item fd-navigation__list-item--home" aria-hidden="true">
+            <li class="fd-navigation__list-item" aria-hidden="true">
                 <div
                     class="fd-navigation__item"
                     aria-level="1"
@@ -852,7 +852,7 @@ Vertical navigation is the most common and preferred way of navigating BTP tools
     >
     <div class="fd-navigation__container fd-navigation__container--top">
         <ul class="fd-navigation__list" role="tree" aria-roledescription="Navigation List Tree" tabindex="-1">
-            <li class="fd-navigation__list-item fd-navigation__list-item--home" aria-hidden="true">
+            <li class="fd-navigation__list-item" aria-hidden="true">
                 <div
                     class="fd-navigation__item"
                     aria-level="1"
@@ -1592,7 +1592,7 @@ By default, the Parent Navigation Item functions as a Navigation Group. A small 
     >
     <div class="fd-navigation__container fd-navigation__container--top">
         <ul class="fd-navigation__list" role="tree" aria-roledescription="Navigation List Tree" tabindex="-1">
-            <li class="fd-navigation__list-item fd-navigation__list-item--home" aria-hidden="true">
+            <li class="fd-navigation__list-item" aria-hidden="true">
                 <div
                     class="fd-navigation__item"
                     aria-level="1"
@@ -2188,7 +2188,7 @@ The snapped vertical navigation variant reduces the navigation width to free hor
             aria-roledescription="Navigation List Tree"
             tabindex="-1"
             >
-            <li class="fd-navigation__list-item fd-navigation__list-item--home" aria-hidden="true">
+            <li class="fd-navigation__list-item" aria-hidden="true">
                 <div
                     class="fd-navigation__item"
                     role="menuitemradio"
@@ -2827,7 +2827,7 @@ An alternative to the expanded/snapped variant, which places the navigation item
     >
     <div class="fd-navigation__container fd-navigation__container--top">
         <ul class="fd-navigation__list" role="tree" aria-roledescription="Navigation List Tree" tabindex="-1">
-            <li class="fd-navigation__list-item fd-navigation__list-item--home" aria-hidden="true">
+            <li class="fd-navigation__list-item" aria-hidden="true">
                 <div
                     class="fd-navigation__item"
                     aria-level="1"
@@ -3577,7 +3577,29 @@ Navigation items can display indication tags (e.g., "New", "Beta", "Deprecated")
     >
     <div class="fd-navigation__container fd-navigation__container--top">
         <ul class="fd-navigation__list" role="tree" aria-roledescription="Navigation List Tree" tabindex="-1">
-            <li class="fd-navigation__list-item fd-navigation__list-item--home" aria-hidden="true">
+            <li class="fd-navigation__list-item fd-navigation__list-item--home" role="presentation" aria-hidden="true">
+                <div class="fd-input-group">
+                    <input
+                    class="fd-input fd-input-group__input"
+                    type="text"
+                    id="side-nav-search"
+                    name="two-icon-actions"
+                    placeholder="Search"
+                    autocomplete="off"
+                    />
+                    <span class="fd-input-group__addon fd-input-group__addon--button">
+                        <button
+                            class="fd-input-group__button fd-button fd-button--icon fd-button--transparent"
+                            type="button"
+                            aria-label="Search value"
+                            >
+                            <i class="sap-icon--search" aria-hidden="true" role="presentation"></i>
+                        </button>
+                    </span>
+                </div>
+            </li>
+
+            <li class="fd-navigation__list-item" aria-hidden="true">
                 <div
                     class="fd-navigation__item"
                     aria-level="1"
@@ -3607,7 +3629,7 @@ Navigation items can display indication tags (e.g., "New", "Beta", "Deprecated")
                     </div>
                 </li>
 
-                <li class="fd-navigation__list-item fd-navigation__list-item--home" aria-hidden="true">
+                <li class="fd-navigation__list-item" aria-hidden="true">
                     <div
                         class="fd-navigation__item"
                         aria-level="1"

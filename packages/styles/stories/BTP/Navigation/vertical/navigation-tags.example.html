@@ -6,7 +6,29 @@
 >
     <div class="fd-navigation__container fd-navigation__container--top">
         <ul class="fd-navigation__list" role="tree" aria-roledescription="Navigation List Tree" tabindex="-1">
-            <li class="fd-navigation__list-item fd-navigation__list-item--home" aria-hidden="true">
+            <li class="fd-navigation__list-item fd-navigation__list-item--home" role="presentation" aria-hidden="true">
+                <div class="fd-input-group">
+                    <input
+                        class="fd-input fd-input-group__input"
+                        type="text"
+                        id="side-nav-search"
+                        name="two-icon-actions"
+                        placeholder="Search"
+                        autocomplete="off"
+                    />
+                    <span class="fd-input-group__addon fd-input-group__addon--button">
+                        <button
+                            class="fd-input-group__button fd-button fd-button--icon fd-button--transparent"
+                            type="button"
+                            aria-label="Search value"
+                        >
+                            <i class="sap-icon--search" aria-hidden="true" role="presentation"></i>
+                        </button>
+                    </span>
+                </div>
+            </li>
+
+            <li class="fd-navigation__list-item" aria-hidden="true">
                 <div
                     class="fd-navigation__item"
                     aria-level="1"
@@ -36,7 +58,7 @@
                 </div>
             </li>
 
-            <li class="fd-navigation__list-item fd-navigation__list-item--home" aria-hidden="true">
+            <li class="fd-navigation__list-item" aria-hidden="true">
                 <div
                     class="fd-navigation__item"
                     aria-level="1"

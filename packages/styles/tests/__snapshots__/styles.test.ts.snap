@@ -1454,16 +1454,10 @@ exports[`Check stories > BTP/Button > Story ToolHeaderButton > Should match snap
 
 exports[`Check stories > BTP/Navigation/Horizontal Navigation > Story NavigationHorizontal > Should match snapshot 1`] = `
 "<div style=\\"height: 500px\\">
-    <nav
-        class=\\"fd-navigation fd-navigation--horizontal\\"
-        aria-label=\\"Horizontal Navigation\\">
+    <nav class=\\"fd-navigation fd-navigation--horizontal\\" aria-label=\\"Horizontal Navigation\\">
         <div class=\\"fd-navigation__container\\">
-            <ul
-                class=\\"fd-navigation__list\\"
-                role=\\"menubar\\"
-                aria-label=\\"Horizontal Navigation\\"
-            >
-                <li role=\\"none\\" tabindex=\\"-1\\" class=\\"fd-navigation__list-item fd-navigation__list-item--home\\" aria-hidden=\\"true\\">
+            <ul class=\\"fd-navigation__list\\" role=\\"menubar\\" aria-label=\\"Horizontal Navigation\\">
+                <li role=\\"none\\" tabindex=\\"-1\\" class=\\"fd-navigation__list-item\\" aria-hidden=\\"true\\">
                     <div
                         class=\\"fd-navigation__item\\"
                         aria-current=\\"page\\"
@@ -1472,69 +1466,94 @@ exports[`Check stories > BTP/Navigation/Horizontal Navigation > Story Navigation
                         role=\\"menuitem\\"
                     >
                         <a class=\\"fd-navigation__link\\" role=\\"link\\" href=\\"#\\">
-                            <span class=\\"fd-navigation__icon sap-icon--home\\" role=\\"presentation\\" aria-hidden=\\"true\\"></span>
+                            <span
+                                class=\\"fd-navigation__icon sap-icon--home\\"
+                                role=\\"presentation\\"
+                                aria-hidden=\\"true\\"
+                            ></span>
                             <span class=\\"fd-navigation__text\\">Home</span>
-                            <span class=\\"fd-navigation__selection-indicator\\" role=\\"presentation\\" aria-hidden=\\"true\\" aria-label=\\"selection indicator\\"></span>
+                            <span
+                                class=\\"fd-navigation__selection-indicator\\"
+                                role=\\"presentation\\"
+                                aria-hidden=\\"true\\"
+                                aria-label=\\"selection indicator\\"
+                            ></span>
                         </a>
                     </div>
                 </li>
 
                 <li role=\\"none\\" tabindex=\\"-1\\" class=\\"fd-navigation__list-item\\" aria-hidden=\\"true\\">
-                    <div
-                        class=\\"fd-navigation__item\\"
-                        aria-current=\\"false\\"
-                        aria-expanded=\\"false\\"
-                        role=\\"menuitem\\"
-                    >
+                    <div class=\\"fd-navigation__item\\" aria-current=\\"false\\" aria-expanded=\\"false\\" role=\\"menuitem\\">
                         <a class=\\"fd-navigation__link\\" role=\\"link\\" href=\\"#\\">
-                            <span class=\\"fd-navigation__icon sap-icon--calendar\\" role=\\"presentation\\" aria-hidden=\\"true\\"></span>
+                            <span
+                                class=\\"fd-navigation__icon sap-icon--calendar\\"
+                                role=\\"presentation\\"
+                                aria-hidden=\\"true\\"
+                            ></span>
                             <span class=\\"fd-navigation__text\\">Appointment</span>
-                            <span class=\\"fd-navigation__selection-indicator\\" role=\\"presentation\\" aria-hidden=\\"true\\" aria-label=\\"selection indicator\\"></span>
+                            <span
+                                class=\\"fd-navigation__selection-indicator\\"
+                                role=\\"presentation\\"
+                                aria-hidden=\\"true\\"
+                                aria-label=\\"selection indicator\\"
+                            ></span>
                         </a>
                     </div>
                 </li>
 
                 <li role=\\"none\\" tabindex=\\"-1\\" class=\\"fd-navigation__list-item\\" aria-hidden=\\"true\\">
-                    <div
-                        class=\\"fd-navigation__item\\"
-                        aria-current=\\"false\\"
-                        aria-expanded=\\"false\\"
-                        role=\\"menuitem\\"
-                    >
+                    <div class=\\"fd-navigation__item\\" aria-current=\\"false\\" aria-expanded=\\"false\\" role=\\"menuitem\\">
                         <a class=\\"fd-navigation__link\\" role=\\"link\\" href=\\"#\\">
-                            <span class=\\"fd-navigation__icon sap-icon--database\\" role=\\"presentation\\" aria-hidden=\\"true\\"></span>
+                            <span
+                                class=\\"fd-navigation__icon sap-icon--database\\"
+                                role=\\"presentation\\"
+                                aria-hidden=\\"true\\"
+                            ></span>
                             <span class=\\"fd-navigation__text\\">Data</span>
-                            <span class=\\"fd-navigation__selection-indicator\\" role=\\"presentation\\" aria-hidden=\\"true\\" aria-label=\\"selection indicator\\"></span>
+                            <span
+                                class=\\"fd-navigation__selection-indicator\\"
+                                role=\\"presentation\\"
+                                aria-hidden=\\"true\\"
+                                aria-label=\\"selection indicator\\"
+                            ></span>
                         </a>
                     </div>
                 </li>
 
                 <li role=\\"none\\" tabindex=\\"-1\\" class=\\"fd-navigation__list-item\\" aria-hidden=\\"true\\">
-                    <div
-                        class=\\"fd-navigation__item\\"
-                        aria-current=\\"false\\"
-                        aria-expanded=\\"false\\"
-                        role=\\"menuitem\\"
-                    >
+                    <div class=\\"fd-navigation__item\\" aria-current=\\"false\\" aria-expanded=\\"false\\" role=\\"menuitem\\">
                         <a class=\\"fd-navigation__link\\" role=\\"link\\" href=\\"#\\">
-                            <span class=\\"fd-navigation__icon sap-icon--attachment\\" role=\\"presentation\\" aria-hidden=\\"true\\"></span>
+                            <span
+                                class=\\"fd-navigation__icon sap-icon--attachment\\"
+                                role=\\"presentation\\"
+                                aria-hidden=\\"true\\"
+                            ></span>
                             <span class=\\"fd-navigation__text\\">Attachment</span>
-                            <span class=\\"fd-navigation__selection-indicator\\" role=\\"presentation\\" aria-hidden=\\"true\\" aria-label=\\"selection indicator\\"></span>
+                            <span
+                                class=\\"fd-navigation__selection-indicator\\"
+                                role=\\"presentation\\"
+                                aria-hidden=\\"true\\"
+                                aria-label=\\"selection indicator\\"
+                            ></span>
                         </a>
                     </div>
                 </li>
 
                 <li role=\\"none\\" tabindex=\\"-1\\" class=\\"fd-navigation__list-item\\" aria-hidden=\\"true\\">
-                    <div
-                        class=\\"fd-navigation__item\\"
-                        aria-current=\\"false\\"
-                        aria-expanded=\\"false\\"
-                        role=\\"menuitem\\"
-                    >
+                    <div class=\\"fd-navigation__item\\" aria-current=\\"false\\" aria-expanded=\\"false\\" role=\\"menuitem\\">
                         <a class=\\"fd-navigation__link\\" role=\\"link\\" href=\\"#\\">
-                            <span class=\\"fd-navigation__icon sap-icon--create-entry-time\\" role=\\"presentation\\" aria-hidden=\\"true\\"></span>
+                            <span
+                                class=\\"fd-navigation__icon sap-icon--create-entry-time\\"
+                                role=\\"presentation\\"
+                                aria-hidden=\\"true\\"
+                            ></span>
                             <span class=\\"fd-navigation__text\\">Time</span>
-                            <span class=\\"fd-navigation__selection-indicator\\" role=\\"presentation\\" aria-hidden=\\"true\\" aria-label=\\"selection indicator\\"></span>
+                            <span
+                                class=\\"fd-navigation__selection-indicator\\"
+                                role=\\"presentation\\"
+                                aria-hidden=\\"true\\"
+                                aria-label=\\"selection indicator\\"
+                            ></span>
                         </a>
                     </div>
                 </li>
@@ -1548,53 +1567,146 @@ exports[`Check stories > BTP/Navigation/Horizontal Navigation > Story Navigation
                         role=\\"menuitem\\"
                     >
                         <a class=\\"fd-navigation__link\\" role=\\"button\\" tabindex=\\"0\\">
-                            <span class=\\"fd-navigation__icon sap-icon--basket\\" role=\\"presentation\\" aria-hidden=\\"true\\"></span>
+                            <span
+                                class=\\"fd-navigation__icon sap-icon--basket\\"
+                                role=\\"presentation\\"
+                                aria-hidden=\\"true\\"
+                            ></span>
                             <span class=\\"fd-navigation__text\\">Basket</span>
-                            <span class=\\"fd-navigation__selection-indicator\\" role=\\"presentation\\" aria-hidden=\\"true\\" aria-label=\\"selection indicator\\"></span>
-                            <span class=\\"fd-navigation__has-children-indicator\\" role=\\"presentation\\" aria-hidden=\\"true\\" aria-label=\\"has children indicator\\"></span>
+                            <span
+                                class=\\"fd-navigation__selection-indicator\\"
+                                role=\\"presentation\\"
+                                aria-hidden=\\"true\\"
+                                aria-label=\\"selection indicator\\"
+                            ></span>
+                            <span
+                                class=\\"fd-navigation__has-children-indicator\\"
+                                role=\\"presentation\\"
+                                aria-hidden=\\"true\\"
+                                aria-label=\\"has children indicator\\"
+                            ></span>
                         </a>
                     </div>
-                    <div class=\\"fd-navigation__list-container fd-popover__body fd-popover__body--no-arrow\\"  aria-hidden=\\"false\\">
+                    <div
+                        class=\\"fd-navigation__list-container fd-popover__body fd-popover__body--no-arrow\\"
+                        aria-hidden=\\"false\\"
+                    >
                         <div class=\\"fd-navigation__list-wrapper fd-popover__wrapper\\">
-                            <ul class=\\"fd-navigation__list fd-navigation__list--child-items\\" role=\\"tree\\" aria-roledescription=\\"Navigation List Tree - Child Items\\" tabindex=\\"-1\\" aria-hidden=\\"true\\">
+                            <ul
+                                class=\\"fd-navigation__list fd-navigation__list--child-items\\"
+                                role=\\"tree\\"
+                                aria-roledescription=\\"Navigation List Tree - Child Items\\"
+                                tabindex=\\"-1\\"
+                                aria-hidden=\\"true\\"
+                            >
                                 <li class=\\"fd-navigation__list-item\\" aria-hidden=\\"true\\">
-                                    <div class=\\"fd-navigation__item fd-navigation__item--child\\" aria-level=\\"1\\" role=\\"treeitem\\" title=\\"Future Orders\\" aria-roledescription=\\"Navigation List Menu Item - Child\\" aria-expanded=\\"false\\" aria-selected=\\"false\\">
+                                    <div
+                                        class=\\"fd-navigation__item fd-navigation__item--child\\"
+                                        aria-level=\\"1\\"
+                                        role=\\"treeitem\\"
+                                        title=\\"Future Orders\\"
+                                        aria-roledescription=\\"Navigation List Menu Item - Child\\"
+                                        aria-expanded=\\"false\\"
+                                        aria-selected=\\"false\\"
+                                    >
                                         <a class=\\"fd-navigation__link\\" role=\\"link\\" href=\\"#\\">
                                             <span class=\\"fd-navigation__text\\">Future Orders</span>
-                                            <span class=\\"fd-navigation__selection-indicator\\" role=\\"presentation\\" aria-hidden=\\"true\\" aria-label=\\"selection indicator\\"></span>
+                                            <span
+                                                class=\\"fd-navigation__selection-indicator\\"
+                                                role=\\"presentation\\"
+                                                aria-hidden=\\"true\\"
+                                                aria-label=\\"selection indicator\\"
+                                            ></span>
                                         </a>
                                     </div>
                                 </li>
                                 <li class=\\"fd-navigation__list-item\\" aria-hidden=\\"true\\">
-                                    <div class=\\"fd-navigation__item fd-navigation__item--child\\" aria-level=\\"1\\" role=\\"treeitem\\" title=\\"Current Orders\\" aria-roledescription=\\"Navigation List Menu Item - Child\\" aria-expanded=\\"false\\" aria-selected=\\"true\\">
+                                    <div
+                                        class=\\"fd-navigation__item fd-navigation__item--child\\"
+                                        aria-level=\\"1\\"
+                                        role=\\"treeitem\\"
+                                        title=\\"Current Orders\\"
+                                        aria-roledescription=\\"Navigation List Menu Item - Child\\"
+                                        aria-expanded=\\"false\\"
+                                        aria-selected=\\"true\\"
+                                    >
                                         <a class=\\"fd-navigation__link\\" role=\\"link\\" href=\\"#\\">
                                             <span class=\\"fd-navigation__text\\">Current Orders (selected)</span>
-                                            <span class=\\"fd-navigation__selection-indicator\\" role=\\"presentation\\" aria-hidden=\\"true\\" aria-label=\\"selection indicator\\"></span>
+                                            <span
+                                                class=\\"fd-navigation__selection-indicator\\"
+                                                role=\\"presentation\\"
+                                                aria-hidden=\\"true\\"
+                                                aria-label=\\"selection indicator\\"
+                                            ></span>
                                         </a>
                                     </div>
                                 </li>
                                 <li class=\\"fd-navigation__list-item\\" aria-hidden=\\"true\\">
-                                    <div class=\\"fd-navigation__item fd-navigation__item--child\\" aria-level=\\"1\\" role=\\"treeitem\\" title=\\"Past Orders\\" aria-roledescription=\\"Navigation List Menu Item - Child\\" aria-expanded=\\"false\\" aria-selected=\\"false\\">
+                                    <div
+                                        class=\\"fd-navigation__item fd-navigation__item--child\\"
+                                        aria-level=\\"1\\"
+                                        role=\\"treeitem\\"
+                                        title=\\"Past Orders\\"
+                                        aria-roledescription=\\"Navigation List Menu Item - Child\\"
+                                        aria-expanded=\\"false\\"
+                                        aria-selected=\\"false\\"
+                                    >
                                         <a class=\\"fd-navigation__link\\" role=\\"link\\" href=\\"#\\">
                                             <span class=\\"fd-navigation__text\\">Past Orders</span>
-                                            <span class=\\"fd-navigation__selection-indicator\\" role=\\"presentation\\" aria-hidden=\\"true\\" aria-label=\\"selection indicator\\"></span>
+                                            <span
+                                                class=\\"fd-navigation__selection-indicator\\"
+                                                role=\\"presentation\\"
+                                                aria-hidden=\\"true\\"
+                                                aria-label=\\"selection indicator\\"
+                                            ></span>
                                         </a>
                                     </div>
                                 </li>
                                 <li class=\\"fd-navigation__list-item\\" aria-hidden=\\"true\\">
-                                    <div class=\\"fd-navigation__item fd-navigation__item--child\\" aria-level=\\"1\\" role=\\"treeitem\\" title=\\"Lost Orders\\" aria-roledescription=\\"Navigation List Menu Item - Child\\" aria-expanded=\\"false\\" aria-selected=\\"false\\">
+                                    <div
+                                        class=\\"fd-navigation__item fd-navigation__item--child\\"
+                                        aria-level=\\"1\\"
+                                        role=\\"treeitem\\"
+                                        title=\\"Lost Orders\\"
+                                        aria-roledescription=\\"Navigation List Menu Item - Child\\"
+                                        aria-expanded=\\"false\\"
+                                        aria-selected=\\"false\\"
+                                    >
                                         <a class=\\"fd-navigation__link\\" role=\\"link\\" href=\\"#\\">
                                             <span class=\\"fd-navigation__text\\">Lost Orders</span>
-                                            <span class=\\"fd-navigation__selection-indicator\\" role=\\"presentation\\" aria-hidden=\\"true\\" aria-label=\\"selection indicator\\"></span>
+                                            <span
+                                                class=\\"fd-navigation__selection-indicator\\"
+                                                role=\\"presentation\\"
+                                                aria-hidden=\\"true\\"
+                                                aria-label=\\"selection indicator\\"
+                                            ></span>
                                         </a>
                                     </div>
                                 </li>
                                 <li class=\\"fd-navigation__list-item\\" aria-hidden=\\"true\\">
-                                    <div class=\\"fd-navigation__item fd-navigation__item--child\\" aria-level=\\"1\\" role=\\"treeitem\\" title=\\"Forgotten Orders\\" aria-roledescription=\\"Navigation List Menu Item - Child\\" aria-expanded=\\"false\\" aria-selected=\\"false\\">
+                                    <div
+                                        class=\\"fd-navigation__item fd-navigation__item--child\\"
+                                        aria-level=\\"1\\"
+                                        role=\\"treeitem\\"
+                                        title=\\"Forgotten Orders\\"
+                                        aria-roledescription=\\"Navigation List Menu Item - Child\\"
+                                        aria-expanded=\\"false\\"
+                                        aria-selected=\\"false\\"
+                                    >
                                         <a class=\\"fd-navigation__link\\" role=\\"link\\" href=\\"#\\">
                                             <span class=\\"fd-navigation__text\\">Forgotten Orders (external link)</span>
-                                            <span class=\\"fd-navigation__selection-indicator\\" role=\\"presentation\\" aria-hidden=\\"true\\" aria-label=\\"selection indicator\\"></span>
-                                            <span class=\\"fd-navigation__external-link-indicator\\" role=\\"presentation\\" aria-hidden=\\"true\\" aria-label=\\"external link indicator\\"></span>
+                                            <span
+                                                class=\\"fd-navigation__selection-indicator\\"
+                                                role=\\"presentation\\"
+                                                aria-hidden=\\"true\\"
+                                                aria-label=\\"selection indicator\\"
+                                            ></span>
+                                            <span
+                                                class=\\"fd-navigation__external-link-indicator\\"
+                                                role=\\"presentation\\"
+                                                aria-hidden=\\"true\\"
+                                                aria-label=\\"external link indicator\\"
+                                            ></span>
                                         </a>
                                     </div>
                                 </li>
@@ -1604,58 +1716,82 @@ exports[`Check stories > BTP/Navigation/Horizontal Navigation > Story Navigation
                 </li>
 
                 <li role=\\"none\\" tabindex=\\"-1\\" class=\\"fd-navigation__list-item\\" aria-hidden=\\"true\\">
-                    <div
-                        class=\\"fd-navigation__item\\"
-                        aria-current=\\"false\\"
-                        aria-expanded=\\"false\\"
-                        role=\\"menuitem\\"
-                    >
+                    <div class=\\"fd-navigation__item\\" aria-current=\\"false\\" aria-expanded=\\"false\\" role=\\"menuitem\\">
                         <a class=\\"fd-navigation__link\\" role=\\"link\\" href=\\"#\\">
-                            <span class=\\"fd-navigation__icon sap-icon--shield\\" role=\\"presentation\\" aria-hidden=\\"true\\"></span>
+                            <span
+                                class=\\"fd-navigation__icon sap-icon--shield\\"
+                                role=\\"presentation\\"
+                                aria-hidden=\\"true\\"
+                            ></span>
                             <span class=\\"fd-navigation__text\\">Shield</span>
-                            <span class=\\"fd-navigation__selection-indicator\\" role=\\"presentation\\" aria-hidden=\\"true\\" aria-label=\\"selection indicator\\"></span>
+                            <span
+                                class=\\"fd-navigation__selection-indicator\\"
+                                role=\\"presentation\\"
+                                aria-hidden=\\"true\\"
+                                aria-label=\\"selection indicator\\"
+                            ></span>
                         </a>
                     </div>
                 </li>
 
                 <li role=\\"none\\" tabindex=\\"-1\\" class=\\"fd-navigation__list-item\\" aria-hidden=\\"true\\">
-                    <div
-                        class=\\"fd-navigation__item\\"
-                        aria-current=\\"false\\"
-                        aria-expanded=\\"false\\"
-                        role=\\"menuitem\\"
-                    >
+                    <div class=\\"fd-navigation__item\\" aria-current=\\"false\\" aria-expanded=\\"false\\" role=\\"menuitem\\">
                         <a class=\\"fd-navigation__link\\" role=\\"link\\" href=\\"#\\">
-                            <span class=\\"fd-navigation__icon sap-icon--action-settings\\" role=\\"presentation\\" aria-hidden=\\"true\\"></span>
+                            <span
+                                class=\\"fd-navigation__icon sap-icon--action-settings\\"
+                                role=\\"presentation\\"
+                                aria-hidden=\\"true\\"
+                            ></span>
                             <span class=\\"fd-navigation__text\\">Cog</span>
-                            <span class=\\"fd-navigation__selection-indicator\\" role=\\"presentation\\" aria-hidden=\\"true\\" aria-label=\\"selection indicator\\"></span>
-                            <span class=\\"fd-navigation__has-children-indicator\\" role=\\"presentation\\" aria-hidden=\\"true\\" aria-label=\\"has children indicator, expanded\\"></span>
+                            <span
+                                class=\\"fd-navigation__selection-indicator\\"
+                                role=\\"presentation\\"
+                                aria-hidden=\\"true\\"
+                                aria-label=\\"selection indicator\\"
+                            ></span>
+                            <span
+                                class=\\"fd-navigation__has-children-indicator\\"
+                                role=\\"presentation\\"
+                                aria-hidden=\\"true\\"
+                                aria-label=\\"has children indicator, expanded\\"
+                            ></span>
                         </a>
                     </div>
                 </li>
 
-                <li class=\\"fd-navigation__list-item fd-navigation__list-item--spacer\\" role=\\"presentation\\" aria-hidden=\\"true\\">
-                </li>
+                <li
+                    class=\\"fd-navigation__list-item fd-navigation__list-item--spacer\\"
+                    role=\\"presentation\\"
+                    aria-hidden=\\"true\\"
+                ></li>
 
-                <li role=\\"none\\" tabindex=\\"-1\\" class=\\"fd-navigation__list-item fd-navigation__list-item--overflow\\" aria-hidden=\\"true\\">
-                    <div
-                        class=\\"fd-navigation__item\\"
-                        aria-current=\\"false\\"
-                        aria-expanded=\\"true\\"
-                        role=\\"menuitem\\"
-                    >
+                <li
+                    role=\\"none\\"
+                    tabindex=\\"-1\\"
+                    class=\\"fd-navigation__list-item fd-navigation__list-item--overflow\\"
+                    aria-hidden=\\"true\\"
+                >
+                    <div class=\\"fd-navigation__item\\" aria-current=\\"false\\" aria-expanded=\\"true\\" role=\\"menuitem\\">
                         <a class=\\"fd-navigation__link\\" role=\\"button\\" tabindex=\\"0\\">
-                            <span class=\\"fd-navigation__icon sap-icon--overflow\\" role=\\"presentation\\" aria-hidden=\\"true\\"></span>
+                            <span
+                                class=\\"fd-navigation__icon sap-icon--overflow\\"
+                                role=\\"presentation\\"
+                                aria-hidden=\\"true\\"
+                            ></span>
                         </a>
                     </div>
-                    <div class=\\"fd-navigation__list-container fd-navigation__list-container--menu fd-menu\\" aria-hidden=\\"false\\" id=\\"navMenuOverflow\\">
+                    <div
+                        class=\\"fd-navigation__list-container fd-navigation__list-container--menu fd-menu\\"
+                        aria-hidden=\\"false\\"
+                        id=\\"navMenuOverflow\\"
+                    >
                         <div class=\\"fd-navigation__list-wrapper\\">
                             <ul
                                 class=\\"fd-navigation__list fd-navigation__list--parent-items fd-menu__list\\"
                                 role=\\"menu\\"
                                 aria-roledescription=\\"Navigation List Tree\\"
-                                tabindex=\\"-1\\">
-
+                                tabindex=\\"-1\\"
+                            >
                                 <li class=\\"fd-navigation__list-item\\" aria-hidden=\\"true\\">
                                     <div
                                         class=\\"fd-navigation__item fd-navigation__item--overflow\\"
@@ -1668,7 +1804,11 @@ exports[`Check stories > BTP/Navigation/Horizontal Navigation > Story Navigation
                                         aria-expanded=\\"false\\"
                                     >
                                         <a class=\\"fd-navigation__link\\" role=\\"link\\" href=\\"#\\">
-                                            <span class=\\"fd-navigation__icon sap-icon--notes\\" role=\\"presentation\\" aria-hidden=\\"true\\"></span>
+                                            <span
+                                                class=\\"fd-navigation__icon sap-icon--notes\\"
+                                                role=\\"presentation\\"
+                                                aria-hidden=\\"true\\"
+                                            ></span>
                                             <span class=\\"fd-navigation__text\\" id=\\"txt-1\\">Parent Item</span>
                                             <span class=\\"fd-navigation__selection-indicator\\"></span>
                                         </a>
@@ -1687,19 +1827,40 @@ exports[`Check stories > BTP/Navigation/Horizontal Navigation > Story Navigation
                                         aria-expanded=\\"true\\"
                                         aria-owns=\\"children-menu\\"
                                     >
-                                        <a class=\\"fd-navigation__link\\" role=\\"button\\" tabindex=\\"0\\" aria-controls=\\"navPopover3\\">
-                                            <span class=\\"fd-navigation__icon sap-icon--horizontal-bar-chart\\" role=\\"presentation\\" aria-hidden=\\"true\\"></span>
+                                        <a
+                                            class=\\"fd-navigation__link\\"
+                                            role=\\"button\\"
+                                            tabindex=\\"0\\"
+                                            aria-controls=\\"navPopover3\\"
+                                        >
+                                            <span
+                                                class=\\"fd-navigation__icon sap-icon--horizontal-bar-chart\\"
+                                                role=\\"presentation\\"
+                                                aria-hidden=\\"true\\"
+                                            ></span>
                                             <span class=\\"fd-navigation__text\\" id=\\"txt-2\\">Parent Item</span>
-                                            <span class=\\"fd-navigation__selection-indicator\\" role=\\"presentation\\" aria-hidden=\\"true\\" aria-label=\\"selection indicator\\"></span>
-                                            <span class=\\"fd-navigation__has-children-indicator\\" role=\\"presentation\\" aria-hidden=\\"true\\" aria-label=\\"has children indicator, expanded\\"></span>
+                                            <span
+                                                class=\\"fd-navigation__selection-indicator\\"
+                                                role=\\"presentation\\"
+                                                aria-hidden=\\"true\\"
+                                                aria-label=\\"selection indicator\\"
+                                            ></span>
+                                            <span
+                                                class=\\"fd-navigation__has-children-indicator\\"
+                                                role=\\"presentation\\"
+                                                aria-hidden=\\"true\\"
+                                                aria-label=\\"has children indicator, expanded\\"
+                                            ></span>
                                         </a>
                                     </div>
                                     <div
                                         class=\\"fd-navigation__list-container fd-navigation__list-container--submenu\\"
-                                        aria-hidden=\\"false\\">
+                                        aria-hidden=\\"false\\"
+                                    >
                                         <div class=\\"fd-navigation__list-wrapper\\">
                                             <ul
-                                                class=\\"fd-navigation__list fd-navigation__list--child-items\\" id=\\"children-menu\\"
+                                                class=\\"fd-navigation__list fd-navigation__list--child-items\\"
+                                                id=\\"children-menu\\"
                                                 role=\\"menu\\"
                                                 aria-roledescription=\\"Navigation List Tree - Children Items\\"
                                                 tabindex=\\"-1\\"
@@ -1715,7 +1876,9 @@ exports[`Check stories > BTP/Navigation/Horizontal Navigation > Story Navigation
                                                         aria-selected=\\"false\\"
                                                     >
                                                         <a class=\\"fd-navigation__link\\" role=\\"link\\" href=\\"#\\">
-                                                            <span class=\\"fd-navigation__text\\" id=\\"txt-child-1\\">Child Item</span>
+                                                            <span class=\\"fd-navigation__text\\" id=\\"txt-child-1\\"
+                                                                >Child Item</span
+                                                            >
                                                             <span class=\\"fd-navigation__selection-indicator\\"></span>
                                                         </a>
                                                     </div>
@@ -1731,7 +1894,9 @@ exports[`Check stories > BTP/Navigation/Horizontal Navigation > Story Navigation
                                                         aria-selected=\\"false\\"
                                                     >
                                                         <a class=\\"fd-navigation__link\\" role=\\"link\\" href=\\"#\\">
-                                                            <span class=\\"fd-navigation__text\\" id=\\"txt-child-2\\">Child Item</span>
+                                                            <span class=\\"fd-navigation__text\\" id=\\"txt-child-2\\"
+                                                                >Child Item</span
+                                                            >
                                                             <span class=\\"fd-navigation__selection-indicator\\"></span>
                                                         </a>
                                                     </div>
@@ -1747,12 +1912,13 @@ exports[`Check stories > BTP/Navigation/Horizontal Navigation > Story Navigation
                                                         aria-selected=\\"true\\"
                                                     >
                                                         <a class=\\"fd-navigation__link\\" role=\\"link\\" href=\\"#\\">
-                                                            <span class=\\"fd-navigation__text\\" id=\\"txt-child-3\\">Child Item</span>
+                                                            <span class=\\"fd-navigation__text\\" id=\\"txt-child-3\\"
+                                                                >Child Item</span
+                                                            >
                                                             <span class=\\"fd-navigation__selection-indicator\\"></span>
                                                         </a>
                                                     </div>
                                                 </li>
-
                                             </ul>
                                         </div>
                                     </div>
@@ -1770,7 +1936,11 @@ exports[`Check stories > BTP/Navigation/Horizontal Navigation > Story Navigation
                                         aria-expanded=\\"false\\"
                                     >
                                         <a class=\\"fd-navigation__link\\" role=\\"link\\" href=\\"#\\">
-                                            <span class=\\"fd-navigation__icon sap-icon--notes\\" role=\\"presentation\\" aria-hidden=\\"true\\"></span>
+                                            <span
+                                                class=\\"fd-navigation__icon sap-icon--notes\\"
+                                                role=\\"presentation\\"
+                                                aria-hidden=\\"true\\"
+                                            ></span>
                                             <span class=\\"fd-navigation__text\\" id=\\"txt-3\\">Parent Item</span>
                                             <span class=\\"fd-navigation__selection-indicator\\"></span>
                                         </a>
@@ -1792,12 +1962,7 @@ exports[`Check stories > BTP/Navigation/Horizontal Navigation > Story Navigation
     <nav class=\\"fd-navigation fd-navigation--horizontal\\" aria-label=\\"Horizontal Navigation\\">
         <div class=\\"fd-navigation__container\\">
             <ul class=\\"fd-navigation__list\\" role=\\"menubar\\" aria-label=\\"Horizontal Navigation\\">
-                <li
-                    role=\\"none\\"
-                    tabindex=\\"-1\\"
-                    class=\\"fd-navigation__list-item fd-navigation__list-item--home\\"
-                    aria-hidden=\\"true\\"
-                >
+                <li role=\\"none\\" tabindex=\\"-1\\" class=\\"fd-navigation__list-item\\" aria-hidden=\\"true\\">
                     <div
                         class=\\"fd-navigation__item\\"
                         aria-current=\\"page\\"
@@ -2313,7 +2478,7 @@ exports[`Check stories > BTP/Navigation/Vertical Navigation > Story Navigation >
 >
     <div class=\\"fd-navigation__container fd-navigation__container--top\\">
         <ul class=\\"fd-navigation__list\\" role=\\"tree\\" aria-roledescription=\\"Navigation List Tree\\" tabindex=\\"-1\\">
-            <li class=\\"fd-navigation__list-item fd-navigation__list-item--home\\" aria-hidden=\\"true\\">
+            <li class=\\"fd-navigation__list-item\\" aria-hidden=\\"true\\">
                 <div
                     class=\\"fd-navigation__item\\"
                     aria-level=\\"1\\"
@@ -3078,7 +3243,7 @@ exports[`Check stories > BTP/Navigation/Vertical Navigation > Story NavigationLe
 >
     <div class=\\"fd-navigation__container fd-navigation__container--top\\">
         <ul class=\\"fd-navigation__list\\" role=\\"tree\\" aria-roledescription=\\"Navigation List Tree\\" tabindex=\\"-1\\">
-            <li class=\\"fd-navigation__list-item fd-navigation__list-item--home\\" aria-hidden=\\"true\\">
+            <li class=\\"fd-navigation__list-item\\" aria-hidden=\\"true\\">
                 <div
                     class=\\"fd-navigation__item\\"
                     aria-level=\\"1\\"
@@ -3687,7 +3852,7 @@ exports[`Check stories > BTP/Navigation/Vertical Navigation > Story NavigationPo
 >
     <div class=\\"fd-navigation__container fd-navigation__container--top\\">
         <ul class=\\"fd-navigation__list\\" role=\\"tree\\" aria-roledescription=\\"Navigation List Tree\\" tabindex=\\"-1\\">
-            <li class=\\"fd-navigation__list-item fd-navigation__list-item--home\\" aria-hidden=\\"true\\">
+            <li class=\\"fd-navigation__list-item\\" aria-hidden=\\"true\\">
                 <div
                     class=\\"fd-navigation__item\\"
                     aria-level=\\"1\\"
@@ -4462,7 +4627,7 @@ exports[`Check stories > BTP/Navigation/Vertical Navigation > Story NavigationSn
             aria-roledescription=\\"Navigation List Tree\\"
             tabindex=\\"-1\\"
         >
-            <li class=\\"fd-navigation__list-item fd-navigation__list-item--home\\" aria-hidden=\\"true\\">
+            <li class=\\"fd-navigation__list-item\\" aria-hidden=\\"true\\">
                 <div
                     class=\\"fd-navigation__item\\"
                     role=\\"menuitemradio\\"
@@ -5122,7 +5287,29 @@ exports[`Check stories > BTP/Navigation/Vertical Navigation > Story NavigationTa
 >
     <div class=\\"fd-navigation__container fd-navigation__container--top\\">
         <ul class=\\"fd-navigation__list\\" role=\\"tree\\" aria-roledescription=\\"Navigation List Tree\\" tabindex=\\"-1\\">
-            <li class=\\"fd-navigation__list-item fd-navigation__list-item--home\\" aria-hidden=\\"true\\">
+            <li class=\\"fd-navigation__list-item fd-navigation__list-item--home\\" role=\\"presentation\\" aria-hidden=\\"true\\">
+                <div class=\\"fd-input-group\\">
+                    <input
+                        class=\\"fd-input fd-input-group__input\\"
+                        type=\\"text\\"
+                        id=\\"side-nav-search\\"
+                        name=\\"two-icon-actions\\"
+                        placeholder=\\"Search\\"
+                        autocomplete=\\"off\\"
+                    />
+                    <span class=\\"fd-input-group__addon fd-input-group__addon--button\\">
+                        <button
+                            class=\\"fd-input-group__button fd-button fd-button--icon fd-button--transparent\\"
+                            type=\\"button\\"
+                            aria-label=\\"Search value\\"
+                        >
+                            <i class=\\"sap-icon--search\\" aria-hidden=\\"true\\" role=\\"presentation\\"></i>
+                        </button>
+                    </span>
+                </div>
+            </li>
+
+            <li class=\\"fd-navigation__list-item\\" aria-hidden=\\"true\\">
                 <div
                     class=\\"fd-navigation__item\\"
                     aria-level=\\"1\\"
@@ -5152,7 +5339,7 @@ exports[`Check stories > BTP/Navigation/Vertical Navigation > Story NavigationTa
                 </div>
             </li>
 
-            <li class=\\"fd-navigation__list-item fd-navigation__list-item--home\\" aria-hidden=\\"true\\">
+            <li class=\\"fd-navigation__list-item\\" aria-hidden=\\"true\\">
                 <div
                     class=\\"fd-navigation__item\\"
                     aria-level=\\"1\\"
