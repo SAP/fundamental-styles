@@ -2386,12 +2386,12 @@ The snapped vertical navigation variant reduces the navigation width to free hor
                                                                                                         <span class="fd-navigation__text">
                                                                                                             Contacts
                                                                                                             <span
-                                                                                                                class="fd-object-status fd-object-status--inverted fd-object-status--indication-2b"
+                                                                                                                class="fd-object-status fd-object-status--inverted fd-object-status--indication-8b"
                                                                                                                 >
                                                                                                                 <span class="fd-object-status__text">Beta</span>
                                                                                                                 <span class="fd-object-status__sr-only">Object Status</span>
                                                                                                                 <span class="fd-object-status__sr-only"
-                                                                                                                    >Indication Color 2b</span
+                                                                                                                    >Indication Color 8b</span
                                                                                                                     >
                                                                                                                 </span>
                                                                                                             </span>
@@ -3586,6 +3586,7 @@ Navigation items can display indication tags (e.g., "New", "Beta", "Deprecated")
                     name="two-icon-actions"
                     placeholder="Search"
                     autocomplete="off"
+                    aria-label="Search"
                     />
                     <span class="fd-input-group__addon fd-input-group__addon--button">
                         <button
@@ -3754,7 +3755,7 @@ Navigation items can display indication tags (e.g., "New", "Beta", "Deprecated")
                                                                                     <span class="fd-navigation__text"
                                                                                         >My Accounts
                                                                                         <span
-                                                                                            class="fd-object-status fd-object-status--inverted fd-object-status--indication-2b"
+                                                                                            class="fd-object-status fd-object-status--inverted fd-object-status--indication-10b"
                                                                                             >
                                                                                             <span class="fd-object-status__text"
                                                                                                 >Beta Lorem ipsum dolor sit amet consectetur adipisicing
@@ -3762,7 +3763,7 @@ Navigation items can display indication tags (e.g., "New", "Beta", "Deprecated")
                                                                                                 >
                                                                                                 <span class="fd-object-status__sr-only">Object Status</span>
                                                                                                 <span class="fd-object-status__sr-only"
-                                                                                                    >Indication Color 2b</span
+                                                                                                    >Indication Color 10b</span
                                                                                                     >
                                                                                                 </span>
                                                                                             </span>
@@ -3823,11 +3824,11 @@ Navigation items can display indication tags (e.g., "New", "Beta", "Deprecated")
                                                                                                 <span class="fd-navigation__text"
                                                                                                     >Reports
                                                                                                     <span
-                                                                                                        class="fd-object-status fd-object-status--inverted fd-object-status--indication-4"
+                                                                                                        class="fd-object-status fd-object-status--inverted fd-object-status--indication-7"
                                                                                                         >
                                                                                                         <span class="fd-object-status__text">Alpha</span>
                                                                                                         <span class="fd-object-status__sr-only">Object Status</span>
-                                                                                                        <span class="fd-object-status__sr-only">Indication Color 4</span>
+                                                                                                        <span class="fd-object-status__sr-only">Indication Color 7</span>
                                                                                                     </span>
                                                                                                 </span>
                                                                                                 <span
