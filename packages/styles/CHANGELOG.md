@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.41.9-rc.9](https://github.com/SAP/fundamental-styles/compare/v0.41.9-rc.8...v0.41.9-rc.9) (2026-08-05)
+
+### Bug Fixes
+
+- **styles:** add Indication tag to Side Nav [ci visual] ([#6362](https://github.com/SAP/fundamental-styles/issues/6362)) ([566e033](https://github.com/SAP/fundamental-styles/commit/566e0334d41fff59591e37c1232be5e39aad6fd3))
+
 ## [0.41.9-rc.8](https://github.com/SAP/fundamental-styles/compare/v0.41.9-rc.7...v0.41.9-rc.8) (2026-08-05)
 
 **Note:** Version bump only for package fundamental-styles
