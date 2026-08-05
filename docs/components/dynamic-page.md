@@ -232,13 +232,13 @@ Key CSS variables used by this component:
 - `--fdButtonBackgroundColor`
 - `--fdDynamicPage_Button_Group_Background`
 - `--fdDynamicPage_Button_Left_Gradient`
-- `--fdDynamicPage_Button_Pin_Background`
 - `--fdDynamicPage_Button_Right_Gradient`
 - `--fdDynamicPage_Content_List_Background`
 - `--fdDynamicPage_Content_Transparent_Background`
 - `--fdDynamicPage_Hover_Border_Bottom`
 - `--fdDynamicPage_Subtitle_Color`
 - `--fdDynamicPage_Title_Collapsed_Font_Size`
+- `--fdDynamicPage_Title_Color`
 
 *...and 5 more*
 

@@ -239,7 +239,9 @@ npm install fundamental-styles
 
 | Class | Description |
 |-------|-------------|
+| `fd-dynamic-page--lg` | Style variant |
 | `fd-dynamic-page--md` | Style variant |
+| `fd-dynamic-page--responsive-paddings` | Style variant |
 | `fd-dynamic-page--sm` | Style variant |
 | `fd-dynamic-page--xl` | Optimized for desktop screens (L, XL, and XXL sizes) |
 
@@ -324,13 +326,13 @@ Key CSS variables used by this component:
 - `--fdButtonBackgroundColor`
 - `--fdDynamicPage_Button_Group_Background`
 - `--fdDynamicPage_Button_Left_Gradient`
-- `--fdDynamicPage_Button_Pin_Background`
 - `--fdDynamicPage_Button_Right_Gradient`
 - `--fdDynamicPage_Content_List_Background`
 - `--fdDynamicPage_Content_Transparent_Background`
 - `--fdDynamicPage_Hover_Border_Bottom`
 - `--fdDynamicPage_Subtitle_Color`
 - `--fdDynamicPage_Title_Collapsed_Font_Size`
+- `--fdDynamicPage_Title_Color`
 
 *...and 5 more*
 
@@ -477,6 +479,163 @@ Optimized for desktop screens (L, XL, and XXL sizes). Apply the \
             </div>
         </footer>
     </article>
+```
+
+### Large
+
+Optimized for large screens (L size, 1024–1439px). Apply the \
+
+```html
+<article class="fd-dynamic-page fd-dynamic-page--lg" aria-roledescription="Dynamic Page">
+    <header class="fd-dynamic-page__header">
+        <span
+            role="button"
+            aria-expanded="true"
+            aria-labelledby="fd-dynamic-page-title-lg"
+            aria-label="Toggle header"
+            tabindex="0"
+            class="fd-dynamic-page__header-button">
+        </span>
+        <div class="fd-dynamic-page__title-area">
+            <div class="fd-dynamic-page__main-container">
+                <div class="fd-dynamic-page__breadcrumb-title-container">
+                    <div class="fd-dynamic-page__breadcrumb-container">
+                        <nav aria-label="Breadcrumbs">
+                            <ul class="fd-dynamic-page__breadcrumb fd-breadcrumb">
+                                <li class="fd-breadcrumb__item">
+                                    <a class="fd-link" tabindex="0" href="#">
+                                        <span class="fd-link__content">Men</span>
+                                    </a>
+                                    <span class="fd-breadcrumb__separator" aria-hidden="true"></span>
+                                </li>
+                                <li class="fd-breadcrumb__item">
+                                    <a class="fd-link" tabindex="0" href="#">
+                                        <span class="fd-link__content">Shoes</span>
+                                    </a>
+                                    <span class="fd-breadcrumb__separator" aria-hidden="true"></span>
+                                </li>
+                                <li class="fd-breadcrumb__item">
+                                    <a aria-current="page" class="fd-link" tabindex="0" href="#">
+                                        <span class="fd-link__content">Running Shoes</span>
+                                    </a>
+                                    <span class="fd-breadcrumb__separator" aria-hidden="true"></span>
+                                </li>
+                            </ul>
+                        </nav>
+                        <div class="fd-dynamic-page__toolbar-container">
+                            <div
+                                role="toolbar"
+                                aria-label="Product actions"
+                                class="fd-dynamic-page__toolbar fd-toolbar fd-toolbar--clear fd-toolbar--transparent"
+                                >
+                                <button class="fd-button fd-button--transparent" aria-label="Resize">
+                                    <i class="sap-icon--resize"></i>
+                                </button>
+                                <button class="fd-button fd-button--transparent" aria-label="Exit fullscreen">
+                                    <i class="sap-icon--exitfullscreen"></i>
+                                </button>
+                                <button class="fd-button fd-button--transparent" aria-label="Close">
+                                    <i class="sap-icon--decline"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="fd-dynamic-page__title-container">
+                        <div
+                            id="fd-dynamic-page-title-lg"
+                            aria-level="2"
+                            role="heading"
+                            class="fd-title fd-dynamic-page__title"
+                            title="Balenciaga Triple S Trainers">
+                            Balenciaga Triple S Trainers
+                        </div>
+                        <div class="fd-dynamic-page__title-content" title="Some RANDOM things">
+                            Some RANDOM things
+                        </div>
+                        <div class="fd-dynamic-page__toolbar-container">
+                            <div
+                                role="toolbar"
+                                aria-label="Navigation actions"
+                                class="fd-dynamic-page__toolbar fd-dynamic-page__toolbar--actions fd-toolbar fd-toolbar--clear fd-toolbar--transparent"
+                                >
+                                <button class="fd-button fd-button--positive">Accept</button>
+                                <button class="fd-button fd-button--reject">Reject</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="fd-dynamic-page__subtitle"> Oversized multimaterial sneakers with quilted effect</div>
+                    <div class="fd-dynamic-page__collapsible-header-container">
+                        <section class="fd-dynamic-page__collapsible-header" role="region" aria-hidden="false" id="fddplhvc-lg" aria-label="Expanded header">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam possimus corrupti architecto perspiciatis, delectus
+                            necessitatibus incidunt numquam asperiores tenetur iure. Cum consequuntur impedit repellendus esse, facere autem optio
+                            consequatur nobis?
+                        </section>
+                        <div class="fd-dynamic-page__collapsible-header-visibility-container">
+
+                            <div
+                                role="toolbar"
+                                aria-label="Header actions"
+                                class="fd-dynamic-page__collapsible-header-visibility-container--button-group"
+                                >
+                                <button
+                                    class="fd-dynamic-page__collapse-button fd-button"
+                                    aria-label="See More"
+                                    aria-expanded="true"
+                                    aria-haspopup="true"
+                                    aria-controls="fddplhvc-lg"
+                                    >
+                                    <i class="sap-icon--slim-arrow-up"></i>
+                                </button>
+                                <button class="fd-dynamic-page__pin-button fd-button" aria-label="Pin this">
+                                    <i class="sap-icon--pushpin-off"></i>
+                                </button>
+                            </div>
+
+                        </div>
+                        <div class="fd-dynamic-page__tabs--overflow">
+                            <ul class="fd-tabs fd-tabs--l fd-dynamic-page__tabs fd-dynamic-page__tabs--add-shadow" role="tablist">
+                                <li role="tab" class="fd-tabs__item" aria-controls="fuCwV-lg1">
+                                    <a class="fd-tabs__link" href="#fuCwV-lg1">
+                                        <span class="fd-tabs__tag">Link</span>
+                                    </a>
+                                </li>
+                                <li role="tab" class="fd-tabs__item" aria-selected="true" aria-controls="AiWfz-lg2">
+                                    <a class="fd-tabs__link" href="#AiWfz-lg2">
+                                        <span class="fd-tabs__tag">Selected</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </header>
+                    <div class="fd-dynamic-page__content">
+                        <div class="fd-tabs__panel" aria-expanded="false" id="fuCwV-lg1" role="tabpanel">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum illo voluptatem, unde voluptate aliquam eum tempore aliquid
+                            dolorem cumque ullam perspiciatis omnis et asperiores dolores, consequatur, suscipit sint animi amet? Lorem ipsum dolor, sit
+                            amet consectetur adipisicing elit. Rerum illo voluptatem, unde voluptate aliquam eum tempore aliquid dolorem cumque ullam
+                            perspiciatis omnis et asperiores dolores, consequatur, suscipit sint animi amet?
+                        </div>
+                        <div class="fd-tabs__panel" aria-expanded="true" id="AiWfz-lg2" role="tabpanel">
+                            Dolor sit Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius assumenda, quidem natus optio repudiandae deleniti in
+                            atque quis, sed cum asperiores minus rerum incidunt unde quod fuga amet ea reprehenderit. Dolor sit Lorem ipsum dolor sit amet,
+                            consectetur adipisicing elit. Eius assumenda, quidem natus optio repudiandae deleniti in atque quis, sed cum asperiores minus
+                            rerum incidunt unde quod fuga amet ea reprehenderit.
+                        </div>
+                    </div>
+                    <footer class="fd-bar fd-bar--floating-footer">
+                        <div role="toolbar" aria-label="Finalizing actions" class="fd-bar__right">
+                            <div class="fd-bar__element">
+                                <button aria-label="button" class="fd-button fd-button--emphasized">
+                                    Save
+                                </button>
+                            </div>
+                            <div class="fd-bar__element">
+                                <button aria-label="button" class="fd-button fd-button--transparent">
+                                    Cancel
+                                </button>
+                            </div>
+                        </div>
+                    </footer>
+                </article>
 ```
 
 ### Tablet
@@ -815,6 +974,131 @@ Optimized for mobile screens (S size). Apply the \
             </article>
 ```
 
+### ResponsivePaddings
+
+When the page needs to adapt its inline padding automatically based on the viewport width, use the \
+
+```html
+<article class="fd-dynamic-page fd-dynamic-page--responsive-paddings" aria-roledescription="Dynamic Page">
+    <header class="fd-dynamic-page__header">
+        <span
+            role="button"
+            aria-expanded="true"
+            aria-labelledby="fd-dynamic-page-title-rp"
+            aria-label="Toggle header"
+            tabindex="0"
+            class="fd-dynamic-page__header-button">
+        </span>
+        <div class="fd-dynamic-page__title-area">
+            <div class="fd-dynamic-page__main-container">
+                <div class="fd-dynamic-page__breadcrumb-title-container">
+                    <nav aria-label="Breadcrumbs">
+                        <ul class="fd-dynamic-page__breadcrumb fd-breadcrumb">
+                            <li class="fd-breadcrumb__item"><a class="fd-link" tabindex="0" href="#"><span class="fd-link__content">Men</span></a><span class="fd-breadcrumb__separator" aria-hidden="true"></span></li>
+                            <li class="fd-breadcrumb__item"><a class="fd-link" tabindex="0" href="#"><span class="fd-link__content">Shoes</span></a><span class="fd-breadcrumb__separator" aria-hidden="true"></span></li>
+                            <li class="fd-breadcrumb__item"><a aria-current="page" class="fd-link" tabindex="0" href="#"><span class="fd-link__content">Running Shoes</span></a><span class="fd-breadcrumb__separator" aria-hidden="true"></span></li>
+                        </ul>
+                    </nav>
+                    <div class="fd-dynamic-page__title-container">
+                        <div
+                            id="fd-dynamic-page-title-rp"
+                            aria-level="2"
+                            role="heading"
+                            class="fd-title fd-dynamic-page__title"
+                            title="Balenciaga Triple S Trainers">
+                            Balenciaga Triple S Trainers
+                        </div>
+                        <div class="fd-dynamic-page__title-content" title="Some RANDOM things"> Some RANDOM things </div>
+                        <div class="fd-dynamic-page__toolbar-container">
+                            <div role="toolbar" aria-label="Product actions" class="fd-dynamic-page__toolbar fd-toolbar fd-toolbar--clear fd-toolbar--transparent">
+                                <button class="fd-button fd-button--positive">Accept</button>
+                                <button class="fd-button fd-button--reject">Reject</button>
+                                <span class="fd-toolbar__separator"></span>
+                            </div>
+                            <div role="toolbar" aria-label="Navigation actions" class="fd-dynamic-page__toolbar fd-dynamic-page__toolbar--actions fd-toolbar fd-toolbar--clear fd-toolbar--transparent">
+                                <button class="fd-button fd-button--transparent" aria-label="Resize">
+                                    <i class="sap-icon--resize"></i>
+                                </button>
+                                <button class="fd-button fd-button--transparent" aria-label="Exit fullscreen">
+                                    <i class="sap-icon--exitfullscreen"></i>
+                                </button>
+                                <button class="fd-button fd-button--transparent" aria-label="Close">
+                                    <i class="sap-icon--decline"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="fd-dynamic-page__subtitle"> Oversized multimaterial sneakers with quilted effect </div>
+            <div class="fd-dynamic-page__collapsible-header-container">
+                <section class="fd-dynamic-page__collapsible-header" role="region" id="fddplhvc-rp" aria-label="Expanded header">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam possimus corrupti architecto perspiciatis,
+                    delectus necessitatibus incidunt numquam asperiores tenetur iure.
+                    Cum consequuntur impedit repellendus esse, facere autem optio consequatur nobis?
+                </section>
+                <div class="fd-dynamic-page__collapsible-header-visibility-container fd-dynamic-page__collapsible-header-visibility-container--no-shadow">
+
+                    <div role="toolbar" aria-label="Header actions" class="fd-dynamic-page__collapsible-header-visibility-container--button-group">
+                        <button class="fd-dynamic-page__collapse-button fd-button"
+                            aria-label="See More"
+                            aria-expanded="true"
+                            aria-haspopup="true"
+                            aria-controls="fddplhvc-rp">
+                            <i class="sap-icon--slim-arrow-up"></i>
+                        </button>
+                        <button class="fd-dynamic-page__pin-button fd-button"
+                            aria-label="Pin this">
+                            <i class="sap-icon--pushpin-off"></i>
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+            <div class="fd-dynamic-page__tabs--overflow">
+                <ul class="fd-tabs fd-tabs--l fd-dynamic-page__tabs fd-dynamic-page__tabs--add-shadow" role="tablist">
+                    <li role="tab" class="fd-tabs__item">
+                        <a class="fd-tabs__link" aria-controls="fuCwV550rp" href="#fuCwV550rp">
+                            <span class="fd-tabs__tag">
+                                Link
+                            </span>
+                        </a>
+                    </li>
+                    <li role="tab" class="fd-tabs__item" aria-selected="true">
+                        <a class="fd-tabs__link" aria-controls="AiWfz165rp" href="#AiWfz165rp">
+                            <span class="fd-tabs__tag">
+                                Selected
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </header>
+        <div class="fd-dynamic-page__content">
+            <div class="fd-tabs__panel" aria-expanded="false" id="fuCwV550rp" role="tabpanel">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum illo voluptatem, unde voluptate aliquam
+                eum tempore aliquid dolorem cumque ullam perspiciatis omnis et asperiores dolores, consequatur, suscipit sint animi amet?
+            </div>
+            <div class="fd-tabs__panel" aria-expanded="true" id="AiWfz165rp" role="tabpanel">
+                Dolor sit Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius assumenda, quidem natus optio repudiandae deleniti
+                in atque quis, sed cum asperiores minus rerum incidunt unde quod fuga amet ea reprehenderit.
+                Dolor sit Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius assumenda, quidem natus optio repudiandae deleniti
+                in atque quis, sed cum asperiores minus rerum incidunt unde quod fuga amet ea reprehenderit.
+            </div>
+        </div>
+        <footer class="fd-bar fd-bar--floating-footer">
+            <div role="toolbar" aria-label="Finalizing actions" class="fd-bar__right">
+                <div class="fd-bar__element">
+                    <button aria-label="button" class="fd-button fd-button--emphasized">Save</button>
+                </div>
+                <div class="fd-bar__element">
+                    <button aria-label="button" class="fd-button fd-button--transparent">Cancel</button>
+                </div>
+            </div>
+        </footer>
+    </article>
+```
+
 ### Collapsed Header (mobile)
 
 Displays the dynamic page with a collapsed header on mobile screens.
@@ -831,7 +1115,7 @@ Displays the dynamic page with a collapsed header on mobile screens.
                 tabindex="0"
                 class="fd-dynamic-page__header-button">
             </span>
-            <div class="fd-dynamic-page__title-area  fd-dynamic-page__title-area--collapsed">
+            <div class="fd-dynamic-page__title-area fd-dynamic-page__title-area--collapsed">
                 <div class="fd-dynamic-page__main-container">
                     <div class="fd-dynamic-page__breadcrumb-title-container">
                         <div class="fd-dynamic-page__breadcrumb-container">
@@ -1002,7 +1286,7 @@ On mobile, a summary line can replace the expand/collapse header to help users f
                     <button class="fd-button fd-button--transparent" aria-label="Expand">
                         <i class="sap-icon--slim-arrow-down"></i>
                     </button>
-                    <div class="fd-dynamic-page__title-area  fd-dynamic-page__title-area--collapsed"
+                    <div class="fd-dynamic-page__title-area fd-dynamic-page__title-area--collapsed"
                         aria-hidden="true">
                         <div class="fd-dynamic-page__breadcrumb-title-container">
                             <nav aria-label="Breadcrumbs">
