@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.41.9-rc.12](https://github.com/SAP/fundamental-styles/compare/v0.41.9-rc.11...v0.41.9-rc.12) (2026-08-12)
+
+### Bug Fixes
+
+- ignore nx folder to remediate "Maximum call stack size exceeded" error ([#6370](https://github.com/SAP/fundamental-styles/issues/6370)) ([2a911fc](https://github.com/SAP/fundamental-styles/commit/2a911fc03e63cff734a6004d1e4a55b999b8642d))
+
 ## [0.41.9-rc.11](https://github.com/SAP/fundamental-styles/compare/v0.41.9-rc.10...v0.41.9-rc.11) (2026-08-07)
 
 **Note:** Version bump only for package fundamental-styles
@@ -7067,9 +7073,9 @@ Co-authored-by: droshev <mladen.droshev@sap.com>
 
 - added a new modifier class to fd-row to achieve even alignment of its elements:fd-row--top in a form.
   Before:
-    <div class="fd-row">
-    After:
-    <div class="fd-row fd-row--top">
+      <div class="fd-row">
+      After:
+      <div class="fd-row fd-row--top">
 
 ### Bug Fixes
 

@@ -3,6 +3,10 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.41.9-rc.12](https://github.com/SAP/fundamental-styles/compare/v0.41.9-rc.11...v0.41.9-rc.12) (2026-08-12)
+
+**Note:** Version bump only for package @fundamental-styles/mcp
+
 ## [0.41.9-rc.11](https://github.com/SAP/fundamental-styles/compare/v0.41.9-rc.10...v0.41.9-rc.11) (2026-08-07)
 
 **Note:** Version bump only for package @fundamental-styles/mcp
