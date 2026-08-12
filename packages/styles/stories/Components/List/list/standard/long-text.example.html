@@ -1,0 +1,55 @@
+<div style="margin-bottom: 2rem;">
+    <p class="fd-form-label" style="margin-bottom: 0.5rem;">Default — truncation</p>
+    <ul class="fd-list" role="list">
+        <li role="listitem" tabindex="0" class="fd-list__item">
+            <span class="fd-list__title">Very long title truncated by default, Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</span>
+            <span class="fd-list__secondary">Secondary text also truncated, Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia saepe doloribus.</span>
+        </li>
+    </ul>
+</div>
+
+<div style="margin-bottom: 2rem;">
+    <p class="fd-form-label" style="margin-bottom: 0.5rem;">List level — <code>fd-list--wrap</code></p>
+    <ul class="fd-list fd-list--wrap" role="list">
+        <li role="listitem" tabindex="0" class="fd-list__item">
+            <span class="fd-list__title">All titles wrap at list level, Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</span>
+            <span class="fd-list__secondary">Secondary text wraps too, Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia saepe doloribus nulla aliquid soluta aperiam.</span>
+        </li>
+        <li role="listitem" tabindex="0" class="fd-list__item">
+            <span class="fd-list__title">Second item also wraps, Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span>
+        </li>
+    </ul>
+</div>
+
+<div style="margin-bottom: 2rem;">
+    <p class="fd-form-label" style="margin-bottom: 0.5rem;">Item level — <code>fd-list__item--wrap</code> (collapsed and expanded states)</p>
+    <!-- In the collapsed state fd-list__link--more is a right-aligned sibling so it
+         stays visible when the title truncates. In the expanded state (fd-list__item--wrap
+         applied) the title is fully visible so the Less link can sit inline at the end. -->
+    <ul class="fd-list" role="list">
+        <li role="listitem" tabindex="0" class="fd-list__item">
+            <span class="fd-list__title">This item truncates normally, Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</span>
+        </li>
+        <li role="listitem" tabindex="0" class="fd-list__item">
+            <span class="fd-list__title">Collapsed — title truncated, Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</span>
+            <a href="#" class="fd-link fd-list__link--more" aria-expanded="false" tabindex="0"><span class="fd-link__content">More</span></a>
+        </li>
+        <li role="listitem" tabindex="0" class="fd-list__item fd-list__item--wrap">
+            <span class="fd-list__title">Expanded — fd-list__item--wrap applied, Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco. <a href="#" class="fd-link fd-list__link--more" aria-expanded="true" tabindex="0"><span class="fd-link__content">Less</span></a></span>
+            <span class="fd-list__secondary">Secondary text wraps too, Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia saepe doloribus nulla aliquid.</span>
+        </li>
+        <li role="listitem" tabindex="0" class="fd-list__item">
+            <span class="fd-list__title">This item truncates normally again, Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</span>
+        </li>
+    </ul>
+</div>
+
+<div>
+    <p class="fd-form-label" style="margin-bottom: 0.5rem;">Element level — <code>fd-list__title--wrap</code> / <code>fd-list__secondary--wrap</code></p>
+    <ul class="fd-list" role="list">
+        <li role="listitem" tabindex="0" class="fd-list__item">
+            <span class="fd-list__title fd-list__title--wrap">Only the title wraps here, Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</span>
+            <span class="fd-list__secondary">Secondary still truncates, Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
+        </li>
+    </ul>
+</div>

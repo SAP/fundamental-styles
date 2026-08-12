@@ -1,0 +1,53 @@
+<!-- List level: fd-list--wrap makes all items wrap -->
+<ul class="fd-list fd-list--subline fd-list--wrap" role="list">
+    <li role="listitem" tabindex="0" class="fd-list__item fd-list__item--interractive">
+        <span class="fd-avatar fd-avatar--sm fd-avatar--circle fd-avatar--accent-color-10" role="img" aria-label="John Doe">JD</span>
+        <div class="fd-list__content">
+            <div class="fd-list__title">All titles wrap at list level, Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, quod deleniti optio earum voluptatem in, nam et ratione aliquam error facilis expedita magnam repudiandae rerum sint blanditiis rem quo?</div>
+            <div class="fd-list__subline">All sublines wrap too, Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia saepe doloribus nulla aliquid soluta aperiam, amet iste sint? Explicabo dicta doloremque amet minima perferendis.</div>
+        </div>
+    </li>
+    <li role="listitem" tabindex="0" class="fd-list__item fd-list__item--interractive">
+        <span class="fd-avatar fd-avatar--sm fd-avatar--thumbnail" style="background-image: url('/assets/images/landscape/L1.jpg')" role="img" aria-label="Jane Doe"></span>
+        <div class="fd-list__content">
+            <div class="fd-list__title">Second item wraps too, Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, quod deleniti optio earum voluptatem in, nam et ratione aliquam.</div>
+            <div class="fd-list__subline">Second subline wraps, Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque asperiores id deleniti quae?</div>
+        </div>
+    </li>
+</ul>
+
+<!-- Item level: fd-list__item--wrap wraps a single item -->
+<ul class="fd-list fd-list--subline" role="list">
+    <li role="listitem" tabindex="0" class="fd-list__item fd-list__item--interractive">
+        <span class="fd-avatar fd-avatar--sm fd-avatar--circle fd-avatar--accent-color-10" role="img" aria-label="John Doe">JD</span>
+        <div class="fd-list__content">
+            <div class="fd-list__title">This item truncates normally, Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, quod deleniti optio earum voluptatem in, nam et ratione aliquam error.</div>
+            <div class="fd-list__subline">Subline also truncates, Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia saepe doloribus nulla aliquid.</div>
+        </div>
+    </li>
+    <li role="listitem" tabindex="0" class="fd-list__item fd-list__item--interractive fd-list__item--wrap">
+        <span class="fd-avatar fd-avatar--sm fd-avatar--thumbnail" style="background-image: url('/assets/images/landscape/L1.jpg')" role="img" aria-label="Jane Doe"></span>
+        <div class="fd-list__content">
+            <div class="fd-list__title">Only this item wraps, Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, quod deleniti optio earum voluptatem in, nam et ratione aliquam error facilis expedita magnam repudiandae rerum sint blanditiis rem quo?</div>
+            <div class="fd-list__subline">Subline wraps too, Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia saepe doloribus nulla aliquid soluta aperiam, amet iste sint? Explicabo dicta doloremque.</div>
+        </div>
+    </li>
+    <li role="listitem" tabindex="0" class="fd-list__item fd-list__item--interractive">
+        <span class="fd-avatar fd-avatar--sm fd-avatar--circle fd-avatar--accent-color-10" role="img" aria-label="John Doe">JD</span>
+        <div class="fd-list__content">
+            <div class="fd-list__title">This item truncates normally again, Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, quod deleniti optio earum.</div>
+            <div class="fd-list__subline">Subline truncates again, Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+        </div>
+    </li>
+</ul>
+
+<!-- Element level: fd-list__title--wrap / fd-list__subline--wrap for individual control -->
+<ul class="fd-list fd-list--subline" role="list">
+    <li role="listitem" tabindex="0" class="fd-list__item fd-list__item--interractive">
+        <span class="fd-avatar fd-avatar--sm fd-avatar--circle fd-avatar--accent-color-10" role="img" aria-label="John Doe">JD</span>
+        <div class="fd-list__content">
+            <div class="fd-list__title fd-list__title--wrap">Only the title wraps here, Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, quod deleniti optio earum voluptatem in, nam et ratione aliquam error facilis expedita magnam repudiandae rerum sint blanditiis rem quo?</div>
+            <div class="fd-list__subline fd-list__subline--wrap">Only this subline wraps, Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia saepe doloribus nulla aliquid soluta aperiam, amet iste sint? Explicabo dicta doloremque amet minima perferendis.</div>
+        </div>
+    </li>
+</ul>

@@ -143,6 +143,11 @@
     font-size: var(--fdList_Item_Text_Font_Size);
     min-height: var(--fdList_Item_Text_Font_Size);
 
+    &--wrap {
+      white-space: normal;
+      overflow: visible;
+    }
+
     &:last-child:first-child {
       flex-basis: auto;
     }
@@ -162,6 +167,11 @@
     font-size: var(--sapFontSize);
     color: var(--fdList_Status_Text_Color);
     padding-inline-start: 1rem;
+
+    &--wrap {
+      white-space: normal;
+      overflow: visible;
+    }
 
     &--positive {
       --fdList_Status_Text_Color: var(--sapPositiveTextColor);
@@ -232,6 +242,11 @@
       font-size: var(--sapFontHeader6Size);
       font-family: var(--sapFontHeaderFamily);
       color: var(--sapList_TableGroupHeaderTextColor);
+
+      &--wrap {
+        white-space: normal;
+        overflow: visible;
+      }
     }
   }
 
@@ -307,6 +322,35 @@
           height: var(--fdList_Item_Action_Button_Size_Compact);
         }
       }
+    }
+  }
+
+  &--wrap {
+    .#{$block}__item {
+      height: auto;
+      min-height: var(--fdList_Item_Height);
+      align-items: flex-start;
+      padding-block: 0.75rem;
+    }
+
+    .#{$block}__title,
+    .#{$block}__secondary {
+      white-space: normal;
+      overflow: visible;
+    }
+  }
+
+  &__item--wrap,
+  &__item:has(.#{$block}__title--wrap, .#{$block}__secondary--wrap) {
+    height: auto;
+    min-height: var(--fdList_Item_Height);
+    align-items: flex-start;
+    padding-block: 0.75rem;
+
+    .#{$block}__title,
+    .#{$block}__secondary {
+      white-space: normal;
+      overflow: visible;
     }
   }
 

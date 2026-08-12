@@ -3,6 +3,7 @@ import inactiveExampleHtml from "./inactive.example.html?raw";
 import selectionExampleHtml from "./selection.example.html?raw";
 import borderlessExampleHtml from "./borderless.example.html?raw";
 import footerExampleHtml from "./footer.example.html?raw";
+import longTextExampleHtml from "./long-text.example.html?raw";
 import groupsExampleHtml from "./groups.example.html?raw";
 import iconsExampleHtml from "./icons.example.html?raw";
 import itemCounterExampleHtml from "./item-counter.example.html?raw";
@@ -218,6 +219,30 @@ SearchResults.parameters = {
   docs: {
     description: {
       story: `To be used in a popover containing sophisticated search results.`
+    }
+  }
+};
+
+export const LongText = () => longTextExampleHtml;
+LongText.storyName = 'List with long Title and Secondary Text';
+LongText.parameters = {
+  docs: {
+    description: {
+      story: `By default, long title and secondary text is truncated with an ellipsis. Wrapping can be enabled at three levels:
+
+**List level** — add \`fd-list--wrap\` to the root element to wrap all items:
+\`\`\`html
+<ul class="fd-list fd-list--wrap">
+\`\`\`
+
+**Item level** — add \`fd-list__item--wrap\` to a single list item:
+\`\`\`html
+<li class="fd-list__item fd-list__item--wrap">
+\`\`\`
+
+**Element level** — add modifier classes to individual elements:
+- \`fd-list__title--wrap\`
+- \`fd-list__secondary--wrap\``
     }
   }
 };
