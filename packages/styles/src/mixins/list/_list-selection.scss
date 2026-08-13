@@ -32,6 +32,13 @@
       }
     }
 
+    .#{$block}__item--wrap,
+    .#{$block}__item:has(.#{$block}__title--wrap, .#{$block}__secondary--wrap) {
+      .#{$block}__form-item {
+        top: 0.75rem;
+      }
+    }
+
     // SELECTION + Byline
     &.#{$block}--byline {
       .#{$block}__item {
@@ -40,6 +47,13 @@
 
       .#{$block}__form-item {
         top: 0.3125rem;
+      }
+
+      .#{$block}__item--wrap,
+      .#{$block}__item:has(.#{$block}__title--wrap, .#{$block}__byline--wrap) {
+        .#{$block}__form-item {
+          top: $fd-list-byline-item-padding-y;
+        }
       }
 
       @include fd-compact-or-condensed() {
