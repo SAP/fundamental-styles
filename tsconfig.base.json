@@ -34,7 +34,7 @@
             "fundamental-styles/storybook": ["packages/storybook/src/index.ts"],
             "fundamental-styles/storybook/current-package": ["packages/storybook/src/lib/addons/current-package"],
             "fundamental-styles/utils": ["packages/utils/src/index.ts"],
-            "styles": ["packages/styles", "packages/styles/index.ts"],
+            "styles": ["packages/styles/index.ts"],
             "theming-preview": ["packages/theming-preview/src/index.js"],
             "workspace-plugins": ["packages/workspace-plugins/src/index.ts"],
             "@fundamental-styles/mcp": ["packages/mcp/src/index.ts"]
@@ -46,7 +46,8 @@
         "compilerOptions": {
             "module": "CommonJS"
         },
-        "transpileOnly": true
+        "transpileOnly": true,
+        "ignore": ["(?:^|/)node_modules/", "(?:^|/)\\.nx/"]
     },
     "exclude": ["node_modules", "tmp"]
 }
