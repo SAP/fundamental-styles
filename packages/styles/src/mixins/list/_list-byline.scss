@@ -94,8 +94,7 @@ $fd-list-byline-section-text-color: var(--sapContent_LabelColor) !default;
       min-height: $fd-list-byline-text-line-height;
 
       &--wrap {
-        white-space: normal;
-        overflow: visible;
+        @include fd-wrap();
       }
     }
 
@@ -114,8 +113,7 @@ $fd-list-byline-section-text-color: var(--sapContent_LabelColor) !default;
       }
 
       &--wrap {
-        white-space: normal;
-        overflow: visible;
+        @include fd-wrap();
 
         .#{$block}__byline-right,
         .#{$block}__byline-left {
@@ -136,16 +134,14 @@ $fd-list-byline-section-text-color: var(--sapContent_LabelColor) !default;
     &.#{$block}--wrap {
       .#{$block}__title,
       .#{$block}__byline {
-        white-space: normal;
-        overflow: visible;
+        @include fd-wrap();
       }
     }
 
     .#{$block}__item--wrap {
       .#{$block}__title,
       .#{$block}__byline {
-        white-space: normal;
-        overflow: visible;
+        @include fd-wrap();
       }
     }
 

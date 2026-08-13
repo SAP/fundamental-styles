@@ -144,8 +144,7 @@
     min-height: var(--fdList_Item_Text_Font_Size);
 
     &--wrap {
-      white-space: normal;
-      overflow: visible;
+      @include fd-wrap();
     }
 
     &:last-child:first-child {
@@ -169,8 +168,7 @@
     padding-inline-start: 1rem;
 
     &--wrap {
-      white-space: normal;
-      overflow: visible;
+      @include fd-wrap();
     }
 
     &--positive {
@@ -244,8 +242,7 @@
       color: var(--sapList_TableGroupHeaderTextColor);
 
       &--wrap {
-        white-space: normal;
-        overflow: visible;
+        @include fd-wrap();
       }
     }
   }
@@ -335,13 +332,11 @@
 
     .#{$block}__title,
     .#{$block}__secondary {
-      white-space: normal;
-      overflow: visible;
+      @include fd-wrap();
     }
   }
 
-  &__item--wrap,
-  &__item:has(.#{$block}__title--wrap, .#{$block}__secondary--wrap) {
+  &__item--wrap {
     height: auto;
     min-height: var(--fdList_Item_Height);
     align-items: flex-start;
@@ -349,9 +344,15 @@
 
     .#{$block}__title,
     .#{$block}__secondary {
-      white-space: normal;
-      overflow: visible;
+      @include fd-wrap();
     }
+  }
+
+  &__item:has(.#{$block}__title--wrap, .#{$block}__secondary--wrap) {
+    height: auto;
+    min-height: var(--fdList_Item_Height);
+    align-items: flex-start;
+    padding-block: 0.75rem;
   }
 
   &--no-border {

@@ -27,10 +27,6 @@
       };
 
       overflow: hidden;
-
-      &:has(.#{$block}__title--wrap, .#{$block}__subline--wrap) {
-        overflow: visible;
-      }
     }
 
     .#{$block}__title {
@@ -45,8 +41,7 @@
       @include fd-ellipsis();
 
       &--wrap {
-        white-space: normal;
-        overflow: visible;
+        @include fd-wrap();
       }
 
       // @deprecated: --truncate is a no-op since truncation is now the default
@@ -69,8 +64,7 @@
       @include fd-ellipsis();
 
       &--wrap {
-        white-space: normal;
-        overflow: visible;
+        @include fd-wrap();
       }
 
       // @deprecated: --truncate is a no-op since truncation is now the default
@@ -90,13 +84,11 @@
 
       .#{$block}__title,
       .#{$block}__subline {
-        white-space: normal;
-        overflow: visible;
+        @include fd-wrap();
       }
     }
 
-    .#{$block}__item--wrap,
-    .#{$block}__item:has(.#{$block}__title--wrap, .#{$block}__subline--wrap) {
+    .#{$block}__item--wrap {
       align-items: flex-start;
 
       .#{$block}__content {
@@ -105,9 +97,12 @@
 
       .#{$block}__title,
       .#{$block}__subline {
-        white-space: normal;
-        overflow: visible;
+        @include fd-wrap();
       }
+    }
+
+    .#{$block}__item:has(.#{$block}__title--wrap, .#{$block}__subline--wrap) {
+      align-items: flex-start;
     }
 
     .#{$block}__active-indicator {
