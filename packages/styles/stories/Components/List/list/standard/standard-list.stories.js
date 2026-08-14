@@ -191,6 +191,8 @@ Selection.parameters = {
   docs: {
     description: {
       story: `Standard list items can display checkboxes that users can select from. To display standard list items with selection, add the \`fd-list--selection\` modifier class to the main element. To create checkbox form items, add the \`fd-list__form-item\` class within each list element.
+
+When items contain wrapping text (via \`fd-list__item--wrap\` or \`fd-list__title--wrap\`), the checkbox is **centered by default**. To top-align the checkbox instead, add \`fd-list__item--wrap-top-aligned\` to the \`<li>\` element.
 `
     }
   }

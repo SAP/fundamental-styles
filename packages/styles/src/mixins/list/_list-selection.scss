@@ -34,8 +34,19 @@
 
     .#{$block}__item--wrap,
     .#{$block}__item:has(.#{$block}__title--wrap, .#{$block}__secondary--wrap) {
+      // Centered by default; excluded when --wrap-top-aligned is present so there is no specificity conflict.
+      &:not(.#{$block}__item--wrap-top-aligned) {
+        .#{$block}__form-item {
+          top: 50%;
+          transform: translateY(-50%);
+        }
+      }
+    }
+
+    .#{$block}__item--wrap-top-aligned {
       .#{$block}__form-item {
-        top: 0.75rem;
+        top: 0;
+        transform: none;
       }
     }
 
@@ -52,7 +63,8 @@
       .#{$block}__item--wrap,
       .#{$block}__item:has(.#{$block}__title--wrap, .#{$block}__byline--wrap) {
         .#{$block}__form-item {
-          top: $fd-list-byline-item-padding-y;
+          top: 0.3125rem;
+          transform: none;
         }
       }
 
