@@ -326,17 +326,12 @@
     .#{$block}__item {
       height: auto;
       min-height: var(--fdList_Item_Height);
-      align-items: flex-start;
-      padding-block: 0.75rem;
+      align-items: center;
     }
 
-    // __link is the visual content container (height: 100%; padding-block: 0 by default);
-    // padding set on the item is not visible — reset it and move it onto __link instead.
+    // __link has height: 100% by default; override to let it grow with content.
     .#{$block}__item--link {
-      padding-block: 0;
-
       .#{$block}__link {
-        padding-block: 0.75rem;
         height: auto;
       }
     }
@@ -346,9 +341,10 @@
       @include fd-wrap();
     }
 
-    // Counter and icon never wrap; keep them centered so they don't sit at the top of a tall item.
+    // Counter, icon and button never wrap; keep them centered so they don't sit at the top of a tall item.
     .#{$block}__item-counter,
-    .#{$block}__icon {
+    .#{$block}__icon,
+    .#{$block}__button {
       align-self: center;
     }
   }
@@ -356,27 +352,23 @@
   &__item--wrap {
     height: auto;
     min-height: var(--fdList_Item_Height);
-    align-items: flex-start;
-    padding-block: 0.75rem;
+    align-items: center;
 
     .#{$block}__title,
     .#{$block}__secondary {
       @include fd-wrap();
     }
 
-    // Counter and icon never wrap; keep them centered so they don't sit at the top of a tall item.
+    // Counter, icon and button never wrap; keep them centered so they don't sit at the top of a tall item.
     .#{$block}__item-counter,
-    .#{$block}__icon {
+    .#{$block}__icon,
+    .#{$block}__button {
       align-self: center;
     }
 
-    // __link is the visual content container (height: 100%; padding-block: 0 by default);
-    // padding set on the item is not visible — reset it and move it onto __link instead.
+    // __link has height: 100% by default; override to let it grow with content.
     &.#{$block}__item--link {
-      padding-block: 0;
-
       .#{$block}__link {
-        padding-block: 0.75rem;
         height: auto;
       }
     }
@@ -385,8 +377,7 @@
   &__item:has(.#{$block}__title--wrap, .#{$block}__secondary--wrap) {
     height: auto;
     min-height: var(--fdList_Item_Height);
-    align-items: flex-start;
-    padding-block: 0.75rem;
+    align-items: center;
 
     // Secondary without --wrap is a short fixed-height label; keep it centered
     // rather than top-aligned so it visually aligns with the content, not just the first line.
@@ -394,20 +385,43 @@
       align-self: center;
     }
 
-    // Counter and icon never wrap; keep them centered so they don't sit at the top of a tall item.
+    // Counter, icon and button never wrap; keep them centered so they don't sit at the top of a tall item.
     .#{$block}__item-counter,
-    .#{$block}__icon {
+    .#{$block}__icon,
+    .#{$block}__button {
       align-self: center;
     }
 
-    // __link is the visual content container (height: 100%; padding-block: 0 by default);
-    // padding set on the item is not visible — reset it and move it onto __link instead.
+    // __link has height: 100% by default; override to let it grow with content.
     &.#{$block}__item--link {
-      padding-block: 0;
-
       .#{$block}__link {
-        padding-block: 0.75rem;
         height: auto;
+      }
+    }
+  }
+
+  // Vertical breathing room for wrapped text in standard (non-byline) lists. In byline lists
+  // __title lives inside __content (a flex column), so margin-block would shift the title
+  // down within that column and break alignment with the sibling icon.
+  &--wrap:not(.#{$block}--byline) {
+    .#{$block}__title,
+    .#{$block}__secondary {
+      margin-block: 0.75rem;
+    }
+  }
+
+  &:not(.#{$block}--byline) {
+    .#{$block}__item--wrap {
+      .#{$block}__title,
+      .#{$block}__secondary {
+        margin-block: 0.75rem;
+      }
+    }
+
+    .#{$block}__item:has(.#{$block}__title--wrap, .#{$block}__secondary--wrap) {
+      .#{$block}__title--wrap,
+      .#{$block}__secondary--wrap {
+        margin-block: 0.75rem;
       }
     }
   }

@@ -136,12 +136,46 @@ $fd-list-byline-section-text-color: var(--sapContent_LabelColor) !default;
       .#{$block}__byline {
         @include fd-wrap();
       }
+
+      // In byline link items __thumbnail and __icon are children of __link (not __item).
+      // __link uses fd-flex-vertical-center() which sets align-items: center; override to
+      // top-align the thumbnail/icon with the content when text wraps.
+      .#{$block}__link {
+        align-items: flex-start;
+
+        // The navigation arrow is a decorative ::after with height: 100%, but height: 100%
+        // does not resolve on a flex item inside an auto-height container, so the arrow
+        // collapses to icon size and sits at the top. Keep it centered instead.
+        &--navigation-indicator::after {
+          align-self: center;
+        }
+      }
     }
 
     .#{$block}__item--wrap {
       .#{$block}__title,
       .#{$block}__byline {
         @include fd-wrap();
+      }
+
+      // Same __link / ::after alignment fix as &--wrap above.
+      .#{$block}__link {
+        align-items: flex-start;
+
+        &--navigation-indicator::after {
+          align-self: center;
+        }
+      }
+    }
+
+    .#{$block}__item:has(.#{$block}__title--wrap, .#{$block}__byline--wrap) {
+      // Same __link / ::after alignment fix as &--wrap above.
+      .#{$block}__link {
+        align-items: flex-start;
+
+        &--navigation-indicator::after {
+          align-self: center;
+        }
       }
     }
 
