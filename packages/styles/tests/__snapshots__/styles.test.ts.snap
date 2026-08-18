@@ -7730,8 +7730,8 @@ exports[`Check stories > BTP/User Menu > Story UserMenuExample > Should match sn
                             style=\\"background-image: url('assets/images/avatars/3.svg');\\"></span>
                     </div>
                     <div class=\\"fd-user-menu__subheader\\">
-                        <div class=\\"fd-user-menu__user-name\\">Kevin Miller</div>
-                        <div class=\\"fd-user-menu__user-role\\">Design Expert</div>
+                        <div class=\\"fd-user-menu__user-name fd-user-menu__user-name--wrap\\">Kevin Miller</div>
+                        <div class=\\"fd-user-menu__user-role fd-user-menu__user-role--wrap\\">Design Expert</div>
                     </div>
                     <div class=\\"fd-user-menu__navigation-menu\\">
                         <div class=\\"fd-navigation\\">
@@ -7916,8 +7916,8 @@ exports[`Check stories > BTP/User Menu > Story UserMenuPhoneExample > Should mat
                             style=\\"background-image: url('assets/images/avatars/3.svg');\\"></span>
                     </div>
                     <div class=\\"fd-user-menu__subheader\\">
-                        <div class=\\"fd-user-menu__user-name\\">Kevin Miller</div>
-                        <div class=\\"fd-user-menu__user-role\\">Design Expert</div>
+                        <div class=\\"fd-user-menu__user-name fd-user-menu__user-name--wrap\\">Kevin Miller</div>
+                        <div class=\\"fd-user-menu__user-role fd-user-menu__user-role--wrap\\">Design Expert</div>
                     </div>
                     <div class=\\"fd-user-menu__navigation-menu\\">
                         <div class=\\"fd-navigation fd-navigation--phone\\">
@@ -8155,8 +8155,8 @@ exports[`Check stories > BTP/User Menu > Story UserMenuTabletExample > Should ma
                             style=\\"background-image: url('assets/images/avatars/3.svg');\\"></span>
                     </div>
                     <div class=\\"fd-user-menu__subheader\\">
-                        <div class=\\"fd-user-menu__user-name\\">Kevin Miller</div>
-                        <div class=\\"fd-user-menu__user-role\\">Design Expert</div>
+                        <div class=\\"fd-user-menu__user-name fd-user-menu__user-name--wrap\\">Kevin Miller</div>
+                        <div class=\\"fd-user-menu__user-role fd-user-menu__user-role--wrap\\">Design Expert</div>
                     </div>
                     <div class=\\"fd-user-menu__navigation-menu\\">
                         <div class=\\"fd-navigation fd-navigation--tablet\\">
@@ -60888,15 +60888,15 @@ exports[`Check stories > Components/User Menu > Story Default > Should match sna
                             ></i>
                         </span>
                         <div class=\\"fd-user-menu__header-container\\">
-                            <div class=\\"fd-user-menu__user-name\\">
+                            <div class=\\"fd-user-menu__user-name fd-user-menu__user-name--wrap\\">
                                 Lisa Miller Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa consequuntur
                                 cum voluptate iure tenetu!
                             </div>
-                            <div class=\\"fd-user-menu__subline\\">
+                            <div class=\\"fd-user-menu__subline fd-user-menu__subline--wrap\\">
                                 lisa.miller@test.com Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem
                                 quod accusamus quis magnam, reprehenderit anim.
                             </div>
-                            <div class=\\"fd-user-menu__subline\\">
+                            <div class=\\"fd-user-menu__subline fd-user-menu__subline--wrap\\">
                                 A very long subline 2 that can be displayed by wrapping behaviour in the subtitle like
                                 this.
                             </div>
@@ -60951,15 +60951,15 @@ exports[`Check stories > Components/User Menu > Story Default > Should match sna
                                             aria-label=\\"Jane Doe\\"
                                         ></span>
                                         <div class=\\"fd-list__content\\">
-                                            <div class=\\"fd-list__title\\">
+                                            <div class=\\"fd-list__title fd-list__title--wrap\\">
                                                 Lisa Miller Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                                                 Autem minima ex distinctio dolores vitae!
                                             </div>
-                                            <div class=\\"fd-list__subline\\">
+                                            <div class=\\"fd-list__subline fd-list__subline--wrap\\">
                                                 lisa.miller@test.com Lorem, ipsum dolor sit amet consectetur adipisicing
                                                 elit.
                                             </div>
-                                            <div class=\\"fd-list__subline\\">
+                                            <div class=\\"fd-list__subline fd-list__subline--wrap\\">
                                                 Delivery Manager Lorem ipsum dolor sit amet consectetur adipisicing
                                                 elit.
                                             </div>
@@ -61178,9 +61178,9 @@ exports[`Check stories > Components/User Menu > Story Mobile > Should match snap
                                     <span class=\\"fd-menu__title\\">About</span>
                                 </a>
                             </li>
-                            
+
                         </ul>
-                    </nav>  
+                    </nav>
                 </div>
             </div>
             <div class=\\"fd-bar fd-bar--footer fd-user-menu__footer\\">
@@ -61233,7 +61233,7 @@ exports[`Check stories > Components/User Menu > Story Mobile > Should match snap
                             </div>
                         </li>
                     </ul>
-                </nav>  
+                </nav>
             </div>
         </div>
     </div>
