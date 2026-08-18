@@ -75,7 +75,7 @@
 
     &.#{$block}--wrap {
       .#{$block}__item {
-        align-items: flex-start;
+        align-items: center;
       }
 
       .#{$block}__content {
@@ -89,7 +89,7 @@
     }
 
     .#{$block}__item--wrap {
-      align-items: flex-start;
+      align-items: center;
 
       .#{$block}__content {
         overflow: visible;
@@ -102,7 +102,7 @@
     }
 
     .#{$block}__item:has(.#{$block}__title--wrap, .#{$block}__subline--wrap) {
-      align-items: flex-start;
+      align-items: center;
     }
 
     .#{$block}__active-indicator {

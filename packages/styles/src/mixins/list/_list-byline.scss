@@ -105,7 +105,7 @@ $fd-list-byline-section-text-color: var(--sapContent_LabelColor) !default;
       font-size: $fd-list-normal-font-size;
       color: $fd-list-byline-section-text-color;
       line-height: $fd-list-byline-text-line-height;
-      padding-block-start: 0.5rem;
+      padding-block-start: 0.75rem;
 
       &--2-col {
         display: flex;

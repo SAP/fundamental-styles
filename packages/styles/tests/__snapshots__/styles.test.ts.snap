@@ -7730,8 +7730,8 @@ exports[`Check stories > BTP/User Menu > Story UserMenuExample > Should match sn
                             style=\\"background-image: url('assets/images/avatars/3.svg');\\"></span>
                     </div>
                     <div class=\\"fd-user-menu__subheader\\">
-                        <div class=\\"fd-user-menu__user-name fd-user-menu__user-name--wrap\\">Kevin Miller</div>
-                        <div class=\\"fd-user-menu__user-role fd-user-menu__user-role--wrap\\">Design Expert</div>
+                        <div class=\\"fd-user-menu__user-name\\">Kevin Miller</div>
+                        <div class=\\"fd-user-menu__user-role\\">Design Expert</div>
                     </div>
                     <div class=\\"fd-user-menu__navigation-menu\\">
                         <div class=\\"fd-navigation\\">
@@ -7916,8 +7916,8 @@ exports[`Check stories > BTP/User Menu > Story UserMenuPhoneExample > Should mat
                             style=\\"background-image: url('assets/images/avatars/3.svg');\\"></span>
                     </div>
                     <div class=\\"fd-user-menu__subheader\\">
-                        <div class=\\"fd-user-menu__user-name fd-user-menu__user-name--wrap\\">Kevin Miller</div>
-                        <div class=\\"fd-user-menu__user-role fd-user-menu__user-role--wrap\\">Design Expert</div>
+                        <div class=\\"fd-user-menu__user-name\\">Kevin Miller</div>
+                        <div class=\\"fd-user-menu__user-role\\">Design Expert</div>
                     </div>
                     <div class=\\"fd-user-menu__navigation-menu\\">
                         <div class=\\"fd-navigation fd-navigation--phone\\">
@@ -8155,8 +8155,8 @@ exports[`Check stories > BTP/User Menu > Story UserMenuTabletExample > Should ma
                             style=\\"background-image: url('assets/images/avatars/3.svg');\\"></span>
                     </div>
                     <div class=\\"fd-user-menu__subheader\\">
-                        <div class=\\"fd-user-menu__user-name fd-user-menu__user-name--wrap\\">Kevin Miller</div>
-                        <div class=\\"fd-user-menu__user-role fd-user-menu__user-role--wrap\\">Design Expert</div>
+                        <div class=\\"fd-user-menu__user-name\\">Kevin Miller</div>
+                        <div class=\\"fd-user-menu__user-role\\">Design Expert</div>
                     </div>
                     <div class=\\"fd-user-menu__navigation-menu\\">
                         <div class=\\"fd-navigation fd-navigation--tablet\\">
