@@ -224,6 +224,11 @@
     border-bottom: var(--sapList_BorderWidth) solid var(--fdList_Item_Border_Color);
     background: var(--fdList_Item_Background_Color);
     cursor: pointer;
+
+    &--more {
+      text-transform: capitalize;
+      pointer-events: all;
+    }
   }
 
   &__group-header {

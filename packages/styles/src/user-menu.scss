@@ -91,8 +91,6 @@ $menu: #{$fd-namespace}-menu;
 
     &--wrap {
       display: block;
-      -webkit-line-clamp: unset;
-      -webkit-box-orient: unset;
       overflow: visible;
       max-height: none;
     }
