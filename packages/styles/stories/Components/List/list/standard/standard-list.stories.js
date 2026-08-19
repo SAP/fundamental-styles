@@ -19,6 +19,7 @@ import searchResultsExampleHtml from "./search-results.example.html?raw";
 import '../../../../../src/list.scss';
 import '../../../../../src/icon.scss';
 import '../../../../../src/checkbox.scss';
+import '../../../../../src/link.scss';
 import '../../../../../src/button.scss';
 import '../../../../../src/busy-indicator.scss';
 import '../../../../../src/avatar.scss';
