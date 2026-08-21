@@ -9,6 +9,7 @@ $block: #{$fd-namespace}-product-switch;
 
 .#{$block} {
   --fdProduct_Switch_Item_Border_Color: transparent;
+  --fdProductSwitch_Body_BorderRadius: var(--sapPopover_BorderCornerRadius, var(--sapElement_BorderCornerRadius));
 
   @mixin fd-product-pseudo-element-background($background) {
     .#{$block}__title {
@@ -92,26 +93,6 @@ $block: #{$fd-namespace}-product-switch;
       }
     }
 
-    &.selected {
-      --fdProduct_Switch_Item_Border_Color: var(--sapContent_FocusColor);
-
-      background-color: var(--sapList_SelectionBackgroundColor);
-
-      @include fd-product-pseudo-element-background(var(--sapList_SelectionBackgroundColor));
-
-      @include fd-hover() {
-        background-color: var(--sapList_Hover_SelectionBackground);
-
-        @include fd-product-pseudo-element-background(var(--sapList_Hover_SelectionBackground));
-      }
-
-      @include fd-active() {
-        background-color: var(--sapList_Active_Background);
-
-        @include fd-product-pseudo-element-background(var(--sapList_Active_Background));
-      }
-    }
-
     @include fd-fiori-focus();
 
     &.dragged {
@@ -133,11 +114,6 @@ $block: #{$fd-namespace}-product-switch;
           .#{$block}__subtitle {
             color: var(--sapContent_LabelColor);
           }
-        }
-
-        &.selected {
-          border: none;
-          box-shadow: var(--sapContent_Shadow2);
         }
 
         @include fd-hover() {
@@ -202,12 +178,18 @@ $block: #{$fd-namespace}-product-switch;
     @include fd-scrollbar();
 
     width: fit-content;
-    max-height: calc(100vh - 76px);
+    max-height: 33rem;
     overflow-y: auto;
     padding-block: 1.5rem;
     padding-inline: 1rem;
     background-color: var(--sapList_Background);
-    border-radius: var(--sapElement_BorderCornerRadius);
+    border-radius: var(--fdProductSwitch_Body_BorderRadius);
+  }
+
+  &__body--col-2 {
+    .#{$block}__list {
+      width: 23rem;
+    }
   }
 
   &__body--col-3 {
@@ -240,7 +222,7 @@ $block: #{$fd-namespace}-product-switch;
         gap: 0.75rem;
       };
 
-      min-height: 5rem;
+      min-height: 6rem;
       max-width: 100%;
       padding-block: 1rem;
       padding-inline: 1rem;
@@ -259,18 +241,6 @@ $block: #{$fd-namespace}-product-switch;
 
         @include fd-fiori-focus() {
           outline-color: var(--sapContent_FocusColor);
-        }
-      }
-
-      &.selected {
-        @include fd-product-pseudo-element-background(var(--sapList_Background));
-
-        @include fd-hover() {
-          @include fd-product-pseudo-element-background(var(--sapList_Hover_SelectionBackground));
-        }
-
-        @include fd-active() {
-          @include fd-product-pseudo-element-background(var(--sapList_Active_Background));
         }
       }
 
