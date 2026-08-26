@@ -29,6 +29,10 @@ $block: #{$fd-namespace}-form-group;
     background-color: var(--sapGroup_TitleBackground);
     border-bottom: var(--sapGroup_TitleBorderWidth) solid var(--sapGroup_TitleBorderColor);
 
+    @include fd-compact-or-condensed() {
+      min-height: var(--sapElement_Compact_LineHeight);
+    }
+
     &--no-padding {
       --fdFormGroupPaddingInline: 0;
     }
