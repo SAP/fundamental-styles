@@ -15,11 +15,9 @@ $gridCol: #{$fd-namespace}-col;
   .#{$gridContainer}.#{$formContainer}.#{$verticalSelector} {
     &.#{$formGroup},
     .#{$formGroup} {
-      .#{$formItem} {
-        margin-top: 0.625rem;
-
-        &:first-of-type {
-          margin-top: 0;
+      .#{$formItem}:not(:first-of-type) {
+        > .#{$gridCol} > .#{$fd-namespace}-form-label {
+          padding-block-start: $marginTop;
         }
       }
     }
@@ -85,8 +83,8 @@ $gridCol: #{$fd-namespace}-col;
 
         &--required {
           padding-inline-end: 0.5rem;
-          
-          &.#{$fd-namespace}-form-label--colon{
+
+          &.#{$fd-namespace}-form-label--colon {
             padding-inline-end: 0.75rem;
           }
         }
@@ -109,6 +107,50 @@ $gridCol: #{$fd-namespace}-col;
   }
 }
 
+.#{$gridContainer}.#{$formContainer}.#{$formContainer}--display-mode {
+  &.#{$formGroup},
+  .#{$formGroup} {
+    .#{$formItem} {
+      .#{$fd-namespace}-form-label {
+        margin-inline-end: 0.5rem;
+      }
+
+      .#{$fd-namespace}-text {
+        padding-block: 0.625rem;
+
+        @include fd-compact-or-condensed() {
+          padding-block: 0.3125rem;
+        }
+      }
+    }
+  }
+
+  .#{$gridRow} {
+    .#{$gridCol},
+    .#{$gridCol}--12 {
+      > .#{$fd-namespace}-form-label {
+        padding-block-end: 0.25rem;
+      }
+    }
+  }
+
+  // 1rem vertical spacing between label+value pairs (spec vertical C)
+  // Covers explicit vertical modifiers at all breakpoints
+  &.#{$formContainer}--vertical,
+  &.#{$formContainer}--md-vertical,
+  &.#{$formContainer}--lg-vertical,
+  &.#{$formContainer}--xl-vertical {
+    &.#{$formGroup},
+    .#{$formGroup} {
+      .#{$formItem}:not(:first-of-type) {
+        > .#{$gridCol} > .#{$fd-namespace}-form-label {
+          padding-block-start: 1rem;
+        }
+      }
+    }
+  }
+}
+
 @media (width >= 0) {
   @include fd-form-vertical(#{$formContainer}--vertical);
   @include fd-form-col-paddings('fd-col');
@@ -116,6 +158,18 @@ $gridCol: #{$fd-namespace}-col;
 
 @media (width >= 0) and (width <= 599px) {
   @include fd-form-vertical(#{$formContainer});
+
+  // Display mode at S breakpoint: all forms are vertical, use 1rem pair spacing
+  .#{$gridContainer}.#{$formContainer}.#{$formContainer}--display-mode {
+    &.#{$formGroup},
+    .#{$formGroup} {
+      .#{$formItem}:not(:first-of-type) {
+        > .#{$gridCol} > .#{$fd-namespace}-form-label {
+          padding-block-start: 1rem;
+        }
+      }
+    }
+  }
 }
 
 @media (width >= 600px) {

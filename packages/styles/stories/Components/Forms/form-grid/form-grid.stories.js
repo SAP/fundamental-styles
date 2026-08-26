@@ -6,6 +6,7 @@ import '../../../../src/popover.scss';
 import '../../../../src/select.scss';
 import '../../../../src/icon.scss';
 import '../../../../src/button.scss';
+import '../../../../src/text.scss';
 export default {
   title: 'Components/Forms/Form Grid',
   parameters: {
@@ -1726,6 +1727,124 @@ To display form in vertical layout under different breakpoints apply modifier cl
 | \`.fd-form-layout-grid-container--lg-vertical\` | **LG**
 | \`.fd-form-layout-grid-container--xl-vertical\` | **XL**
         `
+    }
+  }
+};
+
+export const DisplayModeHorizontal = () => `
+<div class="fd-container fd-form-layout-grid-container fd-form-layout-grid-container--display-mode fd-form-group">
+    <div class="fd-row fd-form-item">
+        <div class="fd-col fd-col-md--4">
+            <label class="fd-form-label fd-form-label--colon" for="dm-h-name">Name</label>
+        </div>
+        <div class="fd-col fd-col-md--8">
+            <p class="fd-text" id="dm-h-name">Amelia Perry</p>
+        </div>
+    </div>
+    <div class="fd-row fd-form-item">
+        <div class="fd-col fd-col-md--4">
+            <label class="fd-form-label fd-form-label--colon" for="dm-h-street">Street/No.</label>
+        </div>
+        <div class="fd-col fd-col-md--8">
+            <p class="fd-text" id="dm-h-street">Myrtle St. 495</p>
+        </div>
+    </div>
+    <div class="fd-row fd-form-item">
+        <div class="fd-col fd-col-md--4">
+            <label class="fd-form-label fd-form-label--colon" for="dm-h-zip">ZIP Code/City</label>
+        </div>
+        <div class="fd-col fd-col-md--8">
+            <p class="fd-text" id="dm-h-zip">43823 Downtown</p>
+        </div>
+    </div>
+    <div class="fd-row fd-form-item">
+        <div class="fd-col fd-col-md--4">
+            <label class="fd-form-label fd-form-label--colon" for="dm-h-country">Country</label>
+        </div>
+        <div class="fd-col fd-col-md--8">
+            <p class="fd-text" id="dm-h-country">United States</p>
+        </div>
+    </div>
+    <div class="fd-row fd-form-item">
+        <div class="fd-col fd-col-md--4">
+            <label class="fd-form-label fd-form-label--colon" for="dm-h-notes">Notes</label>
+        </div>
+        <div class="fd-col fd-col-md--8">
+            <p class="fd-text" id="dm-h-notes" style="font-style: italic;">&ndash;</p>
+        </div>
+    </div>
+</div>
+` + docsStyles;
+DisplayModeHorizontal.storyName = 'Display mode - Horizontal layout';
+DisplayModeHorizontal.parameters = {
+  docs: {
+    description: {
+      story: `
+Form in display mode renders field values as static text instead of interactive controls.
+Labels use the same \`fd-form-label\` classes as in edit mode. Values are rendered using the \`fd-text\` element.
+
+Empty fields are indicated by an en dash (–) in italic font style.
+
+The horizontal layout uses a label column (\`fd-col-md--4\`) and a value column (\`fd-col-md--8\`) at the MD breakpoint and above.
+      `
+    }
+  }
+};
+
+export const DisplayModeVertical = () => `
+<div class="fd-container fd-form-layout-grid-container fd-form-layout-grid-container--display-mode fd-form-layout-grid-container--vertical fd-form-group" style="max-width:600px;">
+    <div class="fd-row fd-form-item">
+        <div class="fd-col">
+            <label class="fd-form-label" for="dm-v-name">Name</label>
+        </div>
+        <div class="fd-col">
+            <p class="fd-text" id="dm-v-name">Amelia Perry</p>
+        </div>
+    </div>
+    <div class="fd-row fd-form-item">
+        <div class="fd-col">
+            <label class="fd-form-label" for="dm-v-street">Street/No.</label>
+        </div>
+        <div class="fd-col">
+            <p class="fd-text" id="dm-v-street">Myrtle St. 495</p>
+        </div>
+    </div>
+    <div class="fd-row fd-form-item">
+        <div class="fd-col">
+            <label class="fd-form-label" for="dm-v-zip">ZIP Code/City</label>
+        </div>
+        <div class="fd-col">
+            <p class="fd-text" id="dm-v-zip">43823 Downtown</p>
+        </div>
+    </div>
+    <div class="fd-row fd-form-item">
+        <div class="fd-col">
+            <label class="fd-form-label" for="dm-v-country">Country</label>
+        </div>
+        <div class="fd-col">
+            <p class="fd-text" id="dm-v-country">United States</p>
+        </div>
+    </div>
+    <div class="fd-row fd-form-item">
+        <div class="fd-col">
+            <label class="fd-form-label" for="dm-v-notes">Notes</label>
+        </div>
+        <div class="fd-col">
+            <p class="fd-text" id="dm-v-notes" style="font-style: italic;">&ndash;</p>
+        </div>
+    </div>
+</div>
+` + docsStyles;
+DisplayModeVertical.storyName = 'Display mode - Vertical layout';
+DisplayModeVertical.parameters = {
+  docs: {
+    description: {
+      story: `
+Form in display mode with vertical layout stacks the label above the value for each field.
+Apply \`fd-form-layout-grid-container--vertical\` (or the breakpoint-specific variants) to the container.
+
+Empty fields are indicated by an en dash (–) in italic font style.
+      `
     }
   }
 };
