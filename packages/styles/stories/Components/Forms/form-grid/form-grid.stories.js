@@ -1795,7 +1795,7 @@ export const DisplayModeVertical = () => `
 <div class="fd-container fd-form-layout-grid-container fd-form-layout-grid-container--display-mode fd-form-layout-grid-container--vertical fd-form-group" style="max-width:600px;">
     <div class="fd-row fd-form-item">
         <div class="fd-col">
-            <label class="fd-form-label" for="dm-v-name">Name</label>
+            <label class="fd-form-label fd-form-label--colon" for="dm-v-name">Name</label>
         </div>
         <div class="fd-col">
             <p class="fd-text" id="dm-v-name">Amelia Perry</p>
@@ -1803,7 +1803,7 @@ export const DisplayModeVertical = () => `
     </div>
     <div class="fd-row fd-form-item">
         <div class="fd-col">
-            <label class="fd-form-label" for="dm-v-street">Street/No.</label>
+            <label class="fd-form-label fd-form-label--colon" for="dm-v-street">Street/No.</label>
         </div>
         <div class="fd-col">
             <p class="fd-text" id="dm-v-street">Myrtle St. 495</p>
@@ -1811,7 +1811,7 @@ export const DisplayModeVertical = () => `
     </div>
     <div class="fd-row fd-form-item">
         <div class="fd-col">
-            <label class="fd-form-label" for="dm-v-zip">ZIP Code/City</label>
+            <label class="fd-form-label fd-form-label--colon" for="dm-v-zip">ZIP Code/City</label>
         </div>
         <div class="fd-col">
             <p class="fd-text" id="dm-v-zip">43823 Downtown</p>
@@ -1819,7 +1819,7 @@ export const DisplayModeVertical = () => `
     </div>
     <div class="fd-row fd-form-item">
         <div class="fd-col">
-            <label class="fd-form-label" for="dm-v-country">Country</label>
+            <label class="fd-form-label fd-form-label--colon" for="dm-v-country">Country</label>
         </div>
         <div class="fd-col">
             <p class="fd-text" id="dm-v-country">United States</p>
@@ -1827,7 +1827,7 @@ export const DisplayModeVertical = () => `
     </div>
     <div class="fd-row fd-form-item">
         <div class="fd-col">
-            <label class="fd-form-label" for="dm-v-notes">Notes</label>
+            <label class="fd-form-label fd-form-label--colon" for="dm-v-notes">Notes</label>
         </div>
         <div class="fd-col">
             <p class="fd-text" id="dm-v-notes" style="font-style: italic;">&ndash;</p>

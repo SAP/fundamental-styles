@@ -144,9 +144,11 @@ $gridCol: #{$fd-namespace}-col;
   &.#{$formContainer}--xl-vertical {
     &.#{$formGroup},
     .#{$formGroup} {
-      .#{$formItem}:not(:first-of-type) {
-        > .#{$gridCol} > .#{$fd-namespace}-form-label {
-          padding-block-start: 1rem;
+      .#{$formItem} {
+        margin-top: 1rem;
+
+        &:first-of-type {
+          margin-top: 0;
         }
       }
     }
@@ -165,9 +167,11 @@ $gridCol: #{$fd-namespace}-col;
   .#{$gridContainer}.#{$formContainer}.#{$formContainer}--display-mode {
     &.#{$formGroup},
     .#{$formGroup} {
-      .#{$formItem}:not(:first-of-type) {
-        > .#{$gridCol} > .#{$fd-namespace}-form-label {
-          padding-block-start: 1rem;
+      .#{$formItem} {
+        margin-top: 1rem;
+
+        &:first-of-type {
+          margin-top: 0;
         }
       }
     }
