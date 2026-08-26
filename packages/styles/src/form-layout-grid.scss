@@ -15,9 +15,11 @@ $gridCol: #{$fd-namespace}-col;
   .#{$gridContainer}.#{$formContainer}.#{$verticalSelector} {
     &.#{$formGroup},
     .#{$formGroup} {
-      .#{$formItem}:not(:first-of-type) {
-        > .#{$gridCol} > .#{$fd-namespace}-form-label {
-          padding-block-start: $marginTop;
+      .#{$formItem} {
+        margin-top: $marginTop;
+
+        &:first-of-type {
+          margin-top: 0;
         }
       }
     }
