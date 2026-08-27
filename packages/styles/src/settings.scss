@@ -186,6 +186,7 @@ $block: #{$fd-namespace}-settings;
 
   &__profile-card {
     @include fd-reset();
+    
     @include fd-flex(column) {
       gap: 0.25rem;
       align-items: center;
