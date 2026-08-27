@@ -198,29 +198,6 @@ $fd-list-byline-section-text-color: var(--sapContent_LabelColor) !default;
       }
     }
 
-    &.#{$block}--notification {
-      .#{$block}__item {
-        padding-block: 1rem 0.9375rem;
-        height: auto;
-        align-items: center;
-        min-height: var(--fdList_Notification_Item_Height, var(--sapElement_LineHeight));
-
-        & > * {
-          align-self: center;
-        }
-      }
-
-      .#{$block}__content {
-        padding-block: 0;
-        min-height: auto;
-      }
-     
-      .#{$block}__title, .#{$block}__byline {
-        white-space: normal;
-        text-overflow: initial;
-      }
-    }
-
     @include fd-compact-or-condensed() {
       --fdList_Notification_Item_Height: var(--sapElement_Compact_LineHeight);
       

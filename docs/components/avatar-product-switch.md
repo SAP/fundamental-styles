@@ -73,16 +73,14 @@ npm install fundamental-styles
 ```html
 <div class="fd-product-switch__body">
     <ul class="fd-product-switch__list" role="menu">
-        <li class="fd-product-switch__item" tabindex="0" role="menuitem" aria-label="Home Home Home Home Home Home Home Home Central Home Central Home Central Home Central Home" aria-posinset="1" aria-setsize="14">
-            <span class="fd-avatar fd-avatar--sm fd-avatar--transparent" role="img" aria-label="Home">
-                <i role="presentation" aria-hidden="true" class="fd-avatar__icon sap-icon--home"></i>
-            </span>
+        <li class="fd-product-switch__item" tabindex="0" role="menuitem" aria-label="SAP Start Central Home" aria-posinset="1" aria-setsize="20">
+            <span class="fd-avatar fd-avatar--sm fd-avatar--thumbnail" role="img" aria-label="SAP Start"></span>
             <div class="fd-product-switch__text">
-                <div class="fd-product-switch__title">Home Home Home Home Home Home Home Home</div>
-                <div class="fd-product-switch__subtitle">Central Home Central Home Central Home Central Home</div>
+                <div class="fd-product-switch__title">SAP Start</div>
+                <div class="fd-product-switch__subtitle">Central Home</div>
             </div>
         </li>
-        <li class="fd-product-switch__item selected" tabindex="0" role="menuitem" aria-label="Analytics Cloud Analytics Cloud Analytics Cloud" aria-posinset="2" aria-setsize="14">
+        <li class="fd-product-switch__item" tabindex="0" role="menuitem" aria-label="Analytics Cloud Analytics Cloud Analytics Cloud" aria-posinset="2" aria-setsize="20">
             <span
                 class="fd-avatar fd-avatar--sm fd-avatar--thumbnail"
 
@@ -94,7 +92,7 @@ npm install fundamental-styles
                     <div class="fd-product-switch__subtitle">Analytics Cloud</div>
                 </div>
             </li>
-            <li class="fd-product-switch__item" tabindex="0" role="menuitem" aria-label="Catalog Ariba" aria-posinset="3" aria-setsize="14">
+            <li class="fd-product-switch__item" tabindex="0" role="menuitem" aria-label="Catalog Ariba" aria-posinset="3" aria-setsize="20">
                 <span class="fd-avatar fd-avatar--sm fd-avatar--thumbnail" role="img" aria-label="Catalog">
                     <i role="presentation" aria-hidden="true" class="fd-product-switch__icon sap-icon--contacts"></i>
                 </span>
@@ -103,7 +101,7 @@ npm install fundamental-styles
                     <div class="fd-product-switch__subtitle">Ariba</div>
                 </div>
             </li>
-            <li class="fd-product-switch__item" tabindex="0" role="menuitem" aria-label="Guided Buying" aria-posinset="4" aria-setsize="14">
+            <li class="fd-product-switch__item" tabindex="0" role="menuitem" aria-label="Guided Buying" aria-posinset="4" aria-setsize="20">
                 <span class="fd-avatar fd-avatar--sm fd-avatar--thumbnail" role="img" aria-label="Guided Buying">
                     <i role="presentation" aria-hidden="true" class="fd-product-switch__icon sap-icon--credit-card"></i>
                 </span>
@@ -111,7 +109,7 @@ npm install fundamental-styles
                     <div class="fd-product-switch__title">Guided Buying</div>
                 </div>
             </li>
-            <li class="fd-product-switch__item" tabindex="0" role="menuitem" aria-label="Strategic Procurement" aria-posinset="5" aria-setsize="14">
+            <li class="fd-product-switch__item" tabindex="0" role="menuitem" aria-label="Strategic Procurement" aria-posinset="5" aria-setsize="20">
                 <span class="fd-avatar fd-avatar--sm fd-avatar--thumbnail" role="img" aria-label="Strategic Procurement">
                     <i role="presentation" aria-hidden="true" class="fd-product-switch__icon sap-icon--cart-3"></i>
                 </span>
@@ -119,7 +117,7 @@ npm install fundamental-styles
                     <div class="fd-product-switch__title">Strategic Procurement</div>
                 </div>
             </li>
-            <li class="fd-product-switch__item" tabindex="0" role="menuitem" aria-label="Travel &amp; Expense Concur" aria-posinset="6" aria-setsize="14">
+            <li class="fd-product-switch__item" tabindex="0" role="menuitem" aria-label="Travel &amp; Expense Concur" aria-posinset="6" aria-setsize="20">
                 <span class="fd-avatar fd-avatar--sm fd-avatar--thumbnail" role="img" aria-label="Travel &amp; Expense">
                     <i role="presentation" aria-hidden="true" class="fd-product-switch__icon sap-icon--flight"></i>
                 </span>
@@ -128,7 +126,7 @@ npm install fundamental-styles
                     <div class="fd-product-switch__subtitle">Concur</div>
                 </div>
             </li>
-            <li class="fd-product-switch__item" tabindex="0" role="menuitem" aria-label="Vendor Management Fieldglass" aria-posinset="7" aria-setsize="14">
+            <li class="fd-product-switch__item" tabindex="0" role="menuitem" aria-label="Vendor Management Fieldglass" aria-posinset="7" aria-setsize="20">
                 <span class="fd-avatar fd-avatar--sm fd-avatar--thumbnail" role="img" aria-label="Vendor Management">
                     <i role="presentation" aria-hidden="true" class="fd-product-switch__icon sap-icon--shipping-status"></i>
                 </span>
@@ -137,7 +135,7 @@ npm install fundamental-styles
                     <div class="fd-product-switch__subtitle">Fieldglass</div>
                 </div>
             </li>
-            <li class="fd-product-switch__item" tabindex="0" role="menuitem" aria-label="Human Capital Management Human Capital Management" aria-posinset="8" aria-setsize="14">
+            <li class="fd-product-switch__item" tabindex="0" role="menuitem" aria-label="Human Capital Management Human Capital Management" aria-posinset="8" aria-setsize="20">
                 <span class="fd-avatar fd-avatar--sm fd-avatar--thumbnail" role="img" aria-label="Human Capital Management">
                     <i role="presentation" aria-hidden="true" class="fd-product-switch__icon sap-icon--customer"></i>
                 </span>
@@ -145,7 +143,7 @@ npm install fundamental-styles
                     <div class="fd-product-switch__title">Human Capital Management Human Capital Management</div>
                 </div>
             </li>
-            <li class="fd-product-switch__item" tabindex="0" role="menuitem" aria-label="Sales Cloud Sales Cloud" aria-posinset="9" aria-setsize="14">
+            <li class="fd-product-switch__item" tabindex="0" role="menuitem" aria-label="Sales Cloud Sales Cloud" aria-posinset="9" aria-setsize="20">
                 <span class="fd-avatar fd-avatar--sm fd-avatar--thumbnail" role="img" aria-label="Sales Cloud">
                     <i role="presentation" aria-hidden="true" class="fd-product-switch__icon sap-icon--sales-notification"></i>
                 </span>
@@ -154,7 +152,7 @@ npm install fundamental-styles
                     <div class="fd-product-switch__subtitle">Sales Cloud</div>
                 </div>
             </li>
-            <li class="fd-product-switch__item" tabindex="0" role="menuitem" aria-label="Commerce Cloud Commerce Cloud" aria-posinset="10" aria-setsize="14">
+            <li class="fd-product-switch__item" tabindex="0" role="menuitem" aria-label="Commerce Cloud Commerce Cloud" aria-posinset="10" aria-setsize="20">
                 <span class="fd-avatar fd-avatar--sm fd-avatar--thumbnail" role="img" aria-label="Commerce Cloud">
                     <i role="presentation" aria-hidden="true" class="fd-product-switch__icon sap-icon--retail-store"></i>
                 </span>
@@ -163,7 +161,7 @@ npm install fundamental-styles
                     <div class="fd-product-switch__subtitle">Commerce Cloud</div>
                 </div>
             </li>
-            <li class="fd-product-switch__item" tabindex="0" role="menuitem" aria-label="Marketing Cloud Marketing Cloud" aria-posinset="11" aria-setsize="14">
+            <li class="fd-product-switch__item" tabindex="0" role="menuitem" aria-label="Marketing Cloud Marketing Cloud" aria-posinset="11" aria-setsize="20">
                 <span class="fd-avatar fd-avatar--sm fd-avatar--thumbnail" role="img" aria-label="Marketing Cloud">
                     <i role="presentation" aria-hidden="true" class="fd-product-switch__icon sap-icon--marketing-campaign"></i>
                 </span>
@@ -172,7 +170,7 @@ npm install fundamental-styles
                     <div class="fd-product-switch__subtitle">Marketing Cloud</div>
                 </div>
             </li>
-            <li class="fd-product-switch__item" tabindex="0" role="menuitem" aria-label="Service Cloud" aria-posinset="12" aria-setsize="14">
+            <li class="fd-product-switch__item" tabindex="0" role="menuitem" aria-label="Service Cloud" aria-posinset="12" aria-setsize="20">
                 <span class="fd-avatar fd-avatar--sm fd-avatar--thumbnail" role="img" aria-label="Service Cloud">
                     <i role="presentation" aria-hidden="true" class="fd-product-switch__icon sap-icon--family-care"></i>
                 </span>
@@ -180,7 +178,7 @@ npm install fundamental-styles
                     <div class="fd-product-switch__title">Service Cloud</div>
                 </div>
             </li>
-            <li class="fd-product-switch__item" tabindex="0" role="menuitem" aria-label="Customer Data Cloud" aria-posinset="13" aria-setsize="14">
+            <li class="fd-product-switch__item" tabindex="0" role="menuitem" aria-label="Customer Data Cloud" aria-posinset="13" aria-setsize="20">
                 <span class="fd-avatar fd-avatar--sm fd-avatar--thumbnail" role="img" aria-label="Customer Data Cloud">
                     <i role="presentation" aria-hidden="true" class="fd-product-switch__icon sap-icon--customer-briefing"></i>
                 </span>
@@ -188,12 +186,60 @@ npm install fundamental-styles
                     <div class="fd-product-switch__title">Customer Data Cloud</div>
                 </div>
             </li>
-            <li class="fd-product-switch__item" tabindex="0" role="menuitem" aria-label="S/4HANA" aria-posinset="14" aria-setsize="14">
+            <li class="fd-product-switch__item" tabindex="0" role="menuitem" aria-label="S/4HANA" aria-posinset="14" aria-setsize="20">
                 <span class="fd-avatar fd-avatar--sm fd-avatar--thumbnail" role="img" aria-label="S/4HANA">
                     <i role="presentation" aria-hidden="true" class="fd-product-switch__icon sap-icon--batch-payments"></i>
                 </span>
                 <div class="fd-product-switch__text">
                     <div class="fd-product-switch__title">S/4HANA</div>
+                </div>
+            </li>
+            <li class="fd-product-switch__item" tabindex="0" role="menuitem" aria-label="Business Technology Platform" aria-posinset="15" aria-setsize="20">
+                <span class="fd-avatar fd-avatar--sm fd-avatar--transparent" role="img" aria-label="Business Technology Platform">
+                    <i role="presentation" aria-hidden="true" class="fd-avatar__icon sap-icon--cloud"></i>
+                </span>
+                <div class="fd-product-switch__text">
+                    <div class="fd-product-switch__title">Business Technology Platform</div>
+                </div>
+            </li>
+            <li class="fd-product-switch__item" tabindex="0" role="menuitem" aria-label="Intelligent Spend Management" aria-posinset="16" aria-setsize="20">
+                <span class="fd-avatar fd-avatar--sm fd-avatar--transparent" role="img" aria-label="Intelligent Spend Management">
+                    <i role="presentation" aria-hidden="true" class="fd-avatar__icon sap-icon--expense-report"></i>
+                </span>
+                <div class="fd-product-switch__text">
+                    <div class="fd-product-switch__title">Intelligent Spend Management</div>
+                </div>
+            </li>
+            <li class="fd-product-switch__item" tabindex="0" role="menuitem" aria-label="Supply Chain Management" aria-posinset="17" aria-setsize="20">
+                <span class="fd-avatar fd-avatar--sm fd-avatar--transparent" role="img" aria-label="Supply Chain Management">
+                    <i role="presentation" aria-hidden="true" class="fd-avatar__icon sap-icon--supplier"></i>
+                </span>
+                <div class="fd-product-switch__text">
+                    <div class="fd-product-switch__title">Supply Chain Management</div>
+                </div>
+            </li>
+            <li class="fd-product-switch__item" tabindex="0" role="menuitem" aria-label="Asset Management" aria-posinset="18" aria-setsize="20">
+                <span class="fd-avatar fd-avatar--sm fd-avatar--transparent" role="img" aria-label="Asset Management">
+                    <i role="presentation" aria-hidden="true" class="fd-avatar__icon sap-icon--iphone"></i>
+                </span>
+                <div class="fd-product-switch__text">
+                    <div class="fd-product-switch__title">Asset Management</div>
+                </div>
+            </li>
+            <li class="fd-product-switch__item" tabindex="0" role="menuitem" aria-label="Extended Planning &amp; Analysis" aria-posinset="19" aria-setsize="20">
+                <span class="fd-avatar fd-avatar--sm fd-avatar--transparent" role="img" aria-label="Extended Planning &amp; Analysis">
+                    <i role="presentation" aria-hidden="true" class="fd-avatar__icon sap-icon--chart-axis"></i>
+                </span>
+                <div class="fd-product-switch__text">
+                    <div class="fd-product-switch__title">Extended Planning & Analysis</div>
+                </div>
+            </li>
+            <li class="fd-product-switch__item" tabindex="0" role="menuitem" aria-label="Financial Management" aria-posinset="20" aria-setsize="20">
+                <span class="fd-avatar fd-avatar--sm fd-avatar--transparent" role="img" aria-label="Financial Management">
+                    <i role="presentation" aria-hidden="true" class="fd-avatar__icon sap-icon--money-bills"></i>
+                </span>
+                <div class="fd-product-switch__text">
+                    <div class="fd-product-switch__title">Financial Management</div>
                 </div>
             </li>
         </ul>
@@ -251,21 +297,19 @@ Key CSS variables used by this component:
 
 ### Large
 
-Product switch is displayed with a maximum of 4 columns on large desktop screens. When the popover contains too many items, it will grow until the maximum is reached. Once the maximum is reached, the popover can be scrolled vertically.
+Product switch is displayed with a maximum of 4 columns on large desktop screens. The body grows to accommodate up to 4 rows of items (max-height: 33rem / 528px). Once that limit is reached, additional items are accessible via vertical scroll.
 
 ```html
 <div class="fd-product-switch__body">
     <ul class="fd-product-switch__list" role="menu">
-        <li class="fd-product-switch__item" tabindex="0" role="menuitem" aria-label="Home Home Home Home Home Home Home Home Central Home Central Home Central Home Central Home" aria-posinset="1" aria-setsize="14">
-            <span class="fd-avatar fd-avatar--sm fd-avatar--transparent" role="img" aria-label="Home">
-                <i role="presentation" aria-hidden="true" class="fd-avatar__icon sap-icon--home"></i>
-            </span>
+        <li class="fd-product-switch__item" tabindex="0" role="menuitem" aria-label="SAP Start Central Home" aria-posinset="1" aria-setsize="20">
+            <span class="fd-avatar fd-avatar--sm fd-avatar--thumbnail" role="img" aria-label="SAP Start"></span>
             <div class="fd-product-switch__text">
-                <div class="fd-product-switch__title">Home Home Home Home Home Home Home Home</div>
-                <div class="fd-product-switch__subtitle">Central Home Central Home Central Home Central Home</div>
+                <div class="fd-product-switch__title">SAP Start</div>
+                <div class="fd-product-switch__subtitle">Central Home</div>
             </div>
         </li>
-        <li class="fd-product-switch__item selected" tabindex="0" role="menuitem" aria-label="Analytics Cloud Analytics Cloud Analytics Cloud" aria-posinset="2" aria-setsize="14">
+        <li class="fd-product-switch__item" tabindex="0" role="menuitem" aria-label="Analytics Cloud Analytics Cloud Analytics Cloud" aria-posinset="2" aria-setsize="20">
             <span
                 class="fd-avatar fd-avatar--sm fd-avatar--thumbnail"
 
@@ -277,7 +321,7 @@ Product switch is displayed with a maximum of 4 columns on large desktop screens
                     <div class="fd-product-switch__subtitle">Analytics Cloud</div>
                 </div>
             </li>
-            <li class="fd-product-switch__item" tabindex="0" role="menuitem" aria-label="Catalog Ariba" aria-posinset="3" aria-setsize="14">
+            <li class="fd-product-switch__item" tabindex="0" role="menuitem" aria-label="Catalog Ariba" aria-posinset="3" aria-setsize="20">
                 <span class="fd-avatar fd-avatar--sm fd-avatar--thumbnail" role="img" aria-label="Catalog">
                     <i role="presentation" aria-hidden="true" class="fd-product-switch__icon sap-icon--contacts"></i>
                 </span>
@@ -286,7 +330,7 @@ Product switch is displayed with a maximum of 4 columns on large desktop screens
                     <div class="fd-product-switch__subtitle">Ariba</div>
                 </div>
             </li>
-            <li class="fd-product-switch__item" tabindex="0" role="menuitem" aria-label="Guided Buying" aria-posinset="4" aria-setsize="14">
+            <li class="fd-product-switch__item" tabindex="0" role="menuitem" aria-label="Guided Buying" aria-posinset="4" aria-setsize="20">
                 <span class="fd-avatar fd-avatar--sm fd-avatar--thumbnail" role="img" aria-label="Guided Buying">
                     <i role="presentation" aria-hidden="true" class="fd-product-switch__icon sap-icon--credit-card"></i>
                 </span>
@@ -294,7 +338,7 @@ Product switch is displayed with a maximum of 4 columns on large desktop screens
                     <div class="fd-product-switch__title">Guided Buying</div>
                 </div>
             </li>
-            <li class="fd-product-switch__item" tabindex="0" role="menuitem" aria-label="Strategic Procurement" aria-posinset="5" aria-setsize="14">
+            <li class="fd-product-switch__item" tabindex="0" role="menuitem" aria-label="Strategic Procurement" aria-posinset="5" aria-setsize="20">
                 <span class="fd-avatar fd-avatar--sm fd-avatar--thumbnail" role="img" aria-label="Strategic Procurement">
                     <i role="presentation" aria-hidden="true" class="fd-product-switch__icon sap-icon--cart-3"></i>
                 </span>
@@ -302,7 +346,7 @@ Product switch is displayed with a maximum of 4 columns on large desktop screens
                     <div class="fd-product-switch__title">Strategic Procurement</div>
                 </div>
             </li>
-            <li class="fd-product-switch__item" tabindex="0" role="menuitem" aria-label="Travel &amp; Expense Concur" aria-posinset="6" aria-setsize="14">
+            <li class="fd-product-switch__item" tabindex="0" role="menuitem" aria-label="Travel &amp; Expense Concur" aria-posinset="6" aria-setsize="20">
                 <span class="fd-avatar fd-avatar--sm fd-avatar--thumbnail" role="img" aria-label="Travel &amp; Expense">
                     <i role="presentation" aria-hidden="true" class="fd-product-switch__icon sap-icon--flight"></i>
                 </span>
@@ -311,7 +355,7 @@ Product switch is displayed with a maximum of 4 columns on large desktop screens
                     <div class="fd-product-switch__subtitle">Concur</div>
                 </div>
             </li>
-            <li class="fd-product-switch__item" tabindex="0" role="menuitem" aria-label="Vendor Management Fieldglass" aria-posinset="7" aria-setsize="14">
+            <li class="fd-product-switch__item" tabindex="0" role="menuitem" aria-label="Vendor Management Fieldglass" aria-posinset="7" aria-setsize="20">
                 <span class="fd-avatar fd-avatar--sm fd-avatar--thumbnail" role="img" aria-label="Vendor Management">
                     <i role="presentation" aria-hidden="true" class="fd-product-switch__icon sap-icon--shipping-status"></i>
                 </span>
@@ -320,7 +364,7 @@ Product switch is displayed with a maximum of 4 columns on large desktop screens
                     <div class="fd-product-switch__subtitle">Fieldglass</div>
                 </div>
             </li>
-            <li class="fd-product-switch__item" tabindex="0" role="menuitem" aria-label="Human Capital Management Human Capital Management" aria-posinset="8" aria-setsize="14">
+            <li class="fd-product-switch__item" tabindex="0" role="menuitem" aria-label="Human Capital Management Human Capital Management" aria-posinset="8" aria-setsize="20">
                 <span class="fd-avatar fd-avatar--sm fd-avatar--thumbnail" role="img" aria-label="Human Capital Management">
                     <i role="presentation" aria-hidden="true" class="fd-product-switch__icon sap-icon--customer"></i>
                 </span>
@@ -328,7 +372,7 @@ Product switch is displayed with a maximum of 4 columns on large desktop screens
                     <div class="fd-product-switch__title">Human Capital Management Human Capital Management</div>
                 </div>
             </li>
-            <li class="fd-product-switch__item" tabindex="0" role="menuitem" aria-label="Sales Cloud Sales Cloud" aria-posinset="9" aria-setsize="14">
+            <li class="fd-product-switch__item" tabindex="0" role="menuitem" aria-label="Sales Cloud Sales Cloud" aria-posinset="9" aria-setsize="20">
                 <span class="fd-avatar fd-avatar--sm fd-avatar--thumbnail" role="img" aria-label="Sales Cloud">
                     <i role="presentation" aria-hidden="true" class="fd-product-switch__icon sap-icon--sales-notification"></i>
                 </span>
@@ -337,7 +381,7 @@ Product switch is displayed with a maximum of 4 columns on large desktop screens
                     <div class="fd-product-switch__subtitle">Sales Cloud</div>
                 </div>
             </li>
-            <li class="fd-product-switch__item" tabindex="0" role="menuitem" aria-label="Commerce Cloud Commerce Cloud" aria-posinset="10" aria-setsize="14">
+            <li class="fd-product-switch__item" tabindex="0" role="menuitem" aria-label="Commerce Cloud Commerce Cloud" aria-posinset="10" aria-setsize="20">
                 <span class="fd-avatar fd-avatar--sm fd-avatar--thumbnail" role="img" aria-label="Commerce Cloud">
                     <i role="presentation" aria-hidden="true" class="fd-product-switch__icon sap-icon--retail-store"></i>
                 </span>
@@ -346,7 +390,7 @@ Product switch is displayed with a maximum of 4 columns on large desktop screens
                     <div class="fd-product-switch__subtitle">Commerce Cloud</div>
                 </div>
             </li>
-            <li class="fd-product-switch__item" tabindex="0" role="menuitem" aria-label="Marketing Cloud Marketing Cloud" aria-posinset="11" aria-setsize="14">
+            <li class="fd-product-switch__item" tabindex="0" role="menuitem" aria-label="Marketing Cloud Marketing Cloud" aria-posinset="11" aria-setsize="20">
                 <span class="fd-avatar fd-avatar--sm fd-avatar--thumbnail" role="img" aria-label="Marketing Cloud">
                     <i role="presentation" aria-hidden="true" class="fd-product-switch__icon sap-icon--marketing-campaign"></i>
                 </span>
@@ -355,7 +399,7 @@ Product switch is displayed with a maximum of 4 columns on large desktop screens
                     <div class="fd-product-switch__subtitle">Marketing Cloud</div>
                 </div>
             </li>
-            <li class="fd-product-switch__item" tabindex="0" role="menuitem" aria-label="Service Cloud" aria-posinset="12" aria-setsize="14">
+            <li class="fd-product-switch__item" tabindex="0" role="menuitem" aria-label="Service Cloud" aria-posinset="12" aria-setsize="20">
                 <span class="fd-avatar fd-avatar--sm fd-avatar--thumbnail" role="img" aria-label="Service Cloud">
                     <i role="presentation" aria-hidden="true" class="fd-product-switch__icon sap-icon--family-care"></i>
                 </span>
@@ -363,7 +407,7 @@ Product switch is displayed with a maximum of 4 columns on large desktop screens
                     <div class="fd-product-switch__title">Service Cloud</div>
                 </div>
             </li>
-            <li class="fd-product-switch__item" tabindex="0" role="menuitem" aria-label="Customer Data Cloud" aria-posinset="13" aria-setsize="14">
+            <li class="fd-product-switch__item" tabindex="0" role="menuitem" aria-label="Customer Data Cloud" aria-posinset="13" aria-setsize="20">
                 <span class="fd-avatar fd-avatar--sm fd-avatar--thumbnail" role="img" aria-label="Customer Data Cloud">
                     <i role="presentation" aria-hidden="true" class="fd-product-switch__icon sap-icon--customer-briefing"></i>
                 </span>
@@ -371,12 +415,60 @@ Product switch is displayed with a maximum of 4 columns on large desktop screens
                     <div class="fd-product-switch__title">Customer Data Cloud</div>
                 </div>
             </li>
-            <li class="fd-product-switch__item" tabindex="0" role="menuitem" aria-label="S/4HANA" aria-posinset="14" aria-setsize="14">
+            <li class="fd-product-switch__item" tabindex="0" role="menuitem" aria-label="S/4HANA" aria-posinset="14" aria-setsize="20">
                 <span class="fd-avatar fd-avatar--sm fd-avatar--thumbnail" role="img" aria-label="S/4HANA">
                     <i role="presentation" aria-hidden="true" class="fd-product-switch__icon sap-icon--batch-payments"></i>
                 </span>
                 <div class="fd-product-switch__text">
                     <div class="fd-product-switch__title">S/4HANA</div>
+                </div>
+            </li>
+            <li class="fd-product-switch__item" tabindex="0" role="menuitem" aria-label="Business Technology Platform" aria-posinset="15" aria-setsize="20">
+                <span class="fd-avatar fd-avatar--sm fd-avatar--transparent" role="img" aria-label="Business Technology Platform">
+                    <i role="presentation" aria-hidden="true" class="fd-avatar__icon sap-icon--cloud"></i>
+                </span>
+                <div class="fd-product-switch__text">
+                    <div class="fd-product-switch__title">Business Technology Platform</div>
+                </div>
+            </li>
+            <li class="fd-product-switch__item" tabindex="0" role="menuitem" aria-label="Intelligent Spend Management" aria-posinset="16" aria-setsize="20">
+                <span class="fd-avatar fd-avatar--sm fd-avatar--transparent" role="img" aria-label="Intelligent Spend Management">
+                    <i role="presentation" aria-hidden="true" class="fd-avatar__icon sap-icon--expense-report"></i>
+                </span>
+                <div class="fd-product-switch__text">
+                    <div class="fd-product-switch__title">Intelligent Spend Management</div>
+                </div>
+            </li>
+            <li class="fd-product-switch__item" tabindex="0" role="menuitem" aria-label="Supply Chain Management" aria-posinset="17" aria-setsize="20">
+                <span class="fd-avatar fd-avatar--sm fd-avatar--transparent" role="img" aria-label="Supply Chain Management">
+                    <i role="presentation" aria-hidden="true" class="fd-avatar__icon sap-icon--supplier"></i>
+                </span>
+                <div class="fd-product-switch__text">
+                    <div class="fd-product-switch__title">Supply Chain Management</div>
+                </div>
+            </li>
+            <li class="fd-product-switch__item" tabindex="0" role="menuitem" aria-label="Asset Management" aria-posinset="18" aria-setsize="20">
+                <span class="fd-avatar fd-avatar--sm fd-avatar--transparent" role="img" aria-label="Asset Management">
+                    <i role="presentation" aria-hidden="true" class="fd-avatar__icon sap-icon--iphone"></i>
+                </span>
+                <div class="fd-product-switch__text">
+                    <div class="fd-product-switch__title">Asset Management</div>
+                </div>
+            </li>
+            <li class="fd-product-switch__item" tabindex="0" role="menuitem" aria-label="Extended Planning &amp; Analysis" aria-posinset="19" aria-setsize="20">
+                <span class="fd-avatar fd-avatar--sm fd-avatar--transparent" role="img" aria-label="Extended Planning &amp; Analysis">
+                    <i role="presentation" aria-hidden="true" class="fd-avatar__icon sap-icon--chart-axis"></i>
+                </span>
+                <div class="fd-product-switch__text">
+                    <div class="fd-product-switch__title">Extended Planning & Analysis</div>
+                </div>
+            </li>
+            <li class="fd-product-switch__item" tabindex="0" role="menuitem" aria-label="Financial Management" aria-posinset="20" aria-setsize="20">
+                <span class="fd-avatar fd-avatar--sm fd-avatar--transparent" role="img" aria-label="Financial Management">
+                    <i role="presentation" aria-hidden="true" class="fd-avatar__icon sap-icon--money-bills"></i>
+                </span>
+                <div class="fd-product-switch__text">
+                    <div class="fd-product-switch__title">Financial Management</div>
                 </div>
             </li>
         </ul>
@@ -390,16 +482,14 @@ If there are 6 (or less) items to display, it is recommended to use the 3-column
 ```html
 <div class="fd-product-switch__body fd-product-switch__body--col-3">
     <ul class="fd-product-switch__list" role="menu">
-        <li class="fd-product-switch__item" tabindex="0" role="menuitem" aria-label="Home Home Home Home Home Home Home Central Home Central Home Central Home Central Home" aria-posinset="1" aria-setsize="5">
-            <span class="fd-avatar fd-avatar--sm fd-avatar--transparent" role="img" aria-label="Home">
-                <i role="presentation" aria-hidden="true" class="fd-avatar__icon sap-icon--home"></i>
-            </span>
+        <li class="fd-product-switch__item" tabindex="0" role="menuitem" aria-label="SAP Start Central Home" aria-posinset="1" aria-setsize="5">
+            <span class="fd-avatar fd-avatar--sm fd-avatar--thumbnail" role="img" aria-label="SAP Start"></span>
             <div class="fd-product-switch__text">
-                <div class="fd-product-switch__title">Home Home Home Home Home Home Home</div>
-                <div class="fd-product-switch__subtitle">Central Home Central Home Central Home Central Home</div>
+                <div class="fd-product-switch__title">SAP Start</div>
+                <div class="fd-product-switch__subtitle">Central Home</div>
             </div>
         </li>
-        <li class="fd-product-switch__item selected" tabindex="0" role="menuitem" aria-label="Analytics Cloud Analytics Cloud Analytics Cloud" aria-posinset="2" aria-setsize="5">
+        <li class="fd-product-switch__item" tabindex="0" role="menuitem" aria-label="Analytics Cloud Analytics Cloud Analytics Cloud" aria-posinset="2" aria-setsize="5">
             <span
                 class="fd-avatar fd-avatar--sm fd-avatar--thumbnail"
 
@@ -440,6 +530,33 @@ If there are 6 (or less) items to display, it is recommended to use the 3-column
     </div>
 ```
 
+### Two Column
+
+When fewer than 3 items are provided, use the 2-column layout to hug the content width. Add the \
+
+```html
+<div class="fd-product-switch__body fd-product-switch__body--col-2">
+    <ul class="fd-product-switch__list" role="menu">
+        <li class="fd-product-switch__item" tabindex="0" role="menuitem" aria-label="SAP Start Central Home" aria-posinset="1" aria-setsize="2">
+            <span class="fd-avatar fd-avatar--sm fd-avatar--thumbnail" role="img" aria-label="SAP Start"></span>
+            <div class="fd-product-switch__text">
+                <div class="fd-product-switch__title">SAP Start</div>
+                <div class="fd-product-switch__subtitle">Central Home</div>
+            </div>
+        </li>
+        <li class="fd-product-switch__item" tabindex="0" role="menuitem" aria-label="Analytics Cloud Analytics Cloud" aria-posinset="2" aria-setsize="2">
+            <span class="fd-avatar fd-avatar--sm fd-avatar--transparent" role="img" aria-label="Analytics Cloud">
+                <i role="presentation" aria-hidden="true" class="fd-avatar__icon sap-icon--business-objects-experience"></i>
+            </span>
+            <div class="fd-product-switch__text">
+                <div class="fd-product-switch__title">Analytics Cloud</div>
+                <div class="fd-product-switch__subtitle">Analytics Cloud</div>
+            </div>
+        </li>
+    </ul>
+</div>
+```
+
 ### Small
 
 For smaller screens (mobile), the product switch is displayed in list format. To achieve this style, add the \
@@ -447,15 +564,13 @@ For smaller screens (mobile), the product switch is displayed in list format. To
 ```html
 <div class="fd-product-switch__body fd-product-switch__body--mobile">
     <ul class="fd-product-switch__list" role="menu">
-        <li class="fd-product-switch__item" tabindex="0" role="menuitem" aria-label="Home Central Home" aria-posinset="1" aria-setsize="14">
-            <span class="fd-avatar fd-avatar--sm fd-avatar--thumbnail" role="img" aria-label="Home">
-                <i role="presentation" aria-hidden="true" class="fd-product-switch__icon sap-icon--home"></i>
-            </span>
+        <li class="fd-product-switch__item" tabindex="0" role="menuitem" aria-label="SAP Start Central Home" aria-posinset="1" aria-setsize="14">
+            <span class="fd-avatar fd-avatar--sm fd-avatar--thumbnail" role="img" aria-label="SAP Start"></span>
             <div class="fd-product-switch__text">
-                <div class="fd-product-switch__title">Home</div>
+                <div class="fd-product-switch__title">SAP Start</div>
                 <div class="fd-product-switch__subtitle">Central Home</div>
             </li>
-            <li class="fd-product-switch__item selected" tabindex="0" role="menuitem" aria-label="Analytics Cloud Analytics Cloud Analytics Cloud Analytics Cloud Analytics Cloud Analytics Cloud Analytics Cloud Analytics Cloud Analytics Cloud Analytics Cloud Analytics Cloud Analytics Cloud Analytics Cloud" aria-posinset="2" aria-setsize="14">
+            <li class="fd-product-switch__item" tabindex="0" role="menuitem" aria-label="Analytics Cloud Analytics Cloud Analytics Cloud Analytics Cloud Analytics Cloud Analytics Cloud Analytics Cloud Analytics Cloud Analytics Cloud Analytics Cloud Analytics Cloud Analytics Cloud Analytics Cloud" aria-posinset="2" aria-setsize="14">
                 <span class="fd-avatar fd-avatar--sm fd-avatar--thumbnail" role="img" aria-label="SAP Start">
                     <i role="presentation" aria-hidden="true" class="fd-product-switch__icon sap-icon--business-objects-experience"></i>
                 </span>

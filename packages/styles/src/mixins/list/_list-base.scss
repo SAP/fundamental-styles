@@ -328,18 +328,52 @@
     padding-block-start: 2rem;
   }
 
-  &--theme {
-    .fd-list__item:not(.fd-list__group-header) {
+  &.#{$block}--theme {
+    .#{$block}__item {
       --fdList_Item_Height: auto;
 
       padding-inline: 1rem;
       padding-block: 0.625rem;
 
-      .fd-list__title {
+      .#{$block}__title {
           white-space: normal;
       }
     }
   }
+
+  &.#{$block}--notification {
+    .#{$block}__item {
+      padding-inline: 0;
+      height: auto;
+      align-items: center;
+      min-height: var(--fdList_Notification_Item_Height, var(--sapElement_LineHeight));
+
+      & > * {
+        align-self: center;
+      }
+
+      @include fd-focus() {
+        &::before {
+          inset: 0.125rem -0.25rem;
+        }
+      }
+    }
+
+    .#{$block}__group-header {
+      padding-inline: 0;
+    }
+
+    .#{$block}__content {
+      padding-block: 0;
+      min-height: auto;
+    }
+    
+    .#{$block}__title, .#{$block}__byline {
+      white-space: normal;
+      text-overflow: initial;
+    }
+  }
+
 
   &__infinite-scroll {
     overflow: scroll;
