@@ -16,10 +16,10 @@ $gridCol: #{$fd-namespace}-col;
     &.#{$formGroup},
     .#{$formGroup} {
       .#{$formItem} {
-        margin-top: $marginTop;
+        margin-top: var(--fdFormLayoutGridItemMarginTop, #{$marginTop});
 
         &:first-of-type {
-          margin-top: 0;
+          margin-top: var(--fdFormLayoutGridItemFirstOfTypeMarginTop, 0);
         }
       }
     }
@@ -110,6 +110,19 @@ $gridCol: #{$fd-namespace}-col;
 }
 
 .#{$gridContainer}.#{$formContainer}.#{$formContainer}--display-mode {
+  @include fd-compact-or-condensed() {
+    --fdFormLayoutGridTextPaddingBlock: 0.3125rem;
+  }
+
+  // 1rem vertical spacing between label+value pairs (spec vertical C)
+  &.#{$formContainer}--vertical,
+  &.#{$formContainer}--md-vertical,
+  &.#{$formContainer}--lg-vertical,
+  &.#{$formContainer}--xl-vertical {
+    --fdFormLayoutGridItemMarginTop: 1rem;
+    --fdFormLayoutGridItemFirstOfTypeMarginTop: 0;
+  }
+
   &.#{$formGroup},
   .#{$formGroup} {
     .#{$formItem} {
@@ -118,11 +131,7 @@ $gridCol: #{$fd-namespace}-col;
       }
 
       .#{$fd-namespace}-text {
-        padding-block: 0.625rem;
-
-        @include fd-compact-or-condensed() {
-          padding-block: 0.3125rem;
-        }
+        padding-block: var(--fdFormLayoutGridTextPaddingBlock, 0.625rem);
       }
     }
   }
@@ -132,24 +141,6 @@ $gridCol: #{$fd-namespace}-col;
     .#{$gridCol}--12 {
       > .#{$fd-namespace}-form-label {
         padding-block-end: 0.25rem;
-      }
-    }
-  }
-
-  // 1rem vertical spacing between label+value pairs (spec vertical C)
-  // Covers explicit vertical modifiers at all breakpoints
-  &.#{$formContainer}--vertical,
-  &.#{$formContainer}--md-vertical,
-  &.#{$formContainer}--lg-vertical,
-  &.#{$formContainer}--xl-vertical {
-    &.#{$formGroup},
-    .#{$formGroup} {
-      .#{$formItem} {
-        margin-top: 1rem;
-
-        &:first-of-type {
-          margin-top: 0;
-        }
       }
     }
   }
@@ -165,16 +156,8 @@ $gridCol: #{$fd-namespace}-col;
 
   // Display mode at S breakpoint: all forms are vertical, use 1rem pair spacing
   .#{$gridContainer}.#{$formContainer}.#{$formContainer}--display-mode {
-    &.#{$formGroup},
-    .#{$formGroup} {
-      .#{$formItem} {
-        margin-top: 1rem;
-
-        &:first-of-type {
-          margin-top: 0;
-        }
-      }
-    }
+    --fdFormLayoutGridItemMarginTop: 1rem;
+    --fdFormLayoutGridItemFirstOfTypeMarginTop: 0;
   }
 }
 
