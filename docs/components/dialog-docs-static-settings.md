@@ -6,8 +6,8 @@ selector: fd-dialog-docs-static
 cssFile: dialog-docs-static.css
 sourcePath: packages/styles/stories/Components/settings/settings.stories.js
 tags: ["uxc"]
-dependencies: ["avatar","bar","button","dialog","icon","icon-tab-bar","input","list","message-strip","popover","select","settings","switch","title","toolbar"]
-relatedComponents: ["avatar","bar","button","dialog","icon","icon-tab-bar","input","list","message-strip","popover","select","switch","title","toolbar"]
+dependencies: ["avatar","bar","button","dialog","form-group","form-item","form-label","icon","icon-tab-bar","input","input-group","list","message-strip","popover","select","settings","switch","title","toolbar"]
+relatedComponents: ["avatar","bar","button","dialog","form-group","form-item","form-label","icon","icon-tab-bar","input","input-group","list","message-strip","popover","select","switch","title","toolbar"]
 stability: stable
 ---
 
@@ -44,9 +44,13 @@ This component depends on the following CSS files:
 - `bar.css`
 - `button.css`
 - `dialog.css`
+- `form-group.css`
+- `form-item.css`
+- `form-label.css`
 - `icon.css`
 - `icon-tab-bar.css`
 - `input.css`
+- `input-group.css`
 - `list.css`
 - `message-strip.css`
 - `popover.css`
@@ -74,9 +78,13 @@ npm install fundamental-styles
 <link href="node_modules/fundamental-styles/dist/bar.css" rel="stylesheet">
 <link href="node_modules/fundamental-styles/dist/button.css" rel="stylesheet">
 <link href="node_modules/fundamental-styles/dist/dialog.css" rel="stylesheet">
+<link href="node_modules/fundamental-styles/dist/form-group.css" rel="stylesheet">
+<link href="node_modules/fundamental-styles/dist/form-item.css" rel="stylesheet">
+<link href="node_modules/fundamental-styles/dist/form-label.css" rel="stylesheet">
 <link href="node_modules/fundamental-styles/dist/icon.css" rel="stylesheet">
 <link href="node_modules/fundamental-styles/dist/icon-tab-bar.css" rel="stylesheet">
 <link href="node_modules/fundamental-styles/dist/input.css" rel="stylesheet">
+<link href="node_modules/fundamental-styles/dist/input-group.css" rel="stylesheet">
 <link href="node_modules/fundamental-styles/dist/list.css" rel="stylesheet">
 <link href="node_modules/fundamental-styles/dist/message-strip.css" rel="stylesheet">
 <link href="node_modules/fundamental-styles/dist/popover.css" rel="stylesheet">
@@ -218,9 +226,13 @@ This component works with or depends on:
 - `bar`
 - `button`
 - `dialog`
+- `form-group`
+- `form-item`
+- `form-label`
 - `icon`
 - `icon-tab-bar`
 - `input`
+- `input-group`
 - `list`
 - `message-strip`
 - `popover`
@@ -719,6 +731,244 @@ This component works with or depends on:
                                                                                         </div>
                                                                                     </footer>
                                                                                 </section>
+```
+
+### Language & Region (L-XL-XXL)
+
+```html
+<section class="fd-dialog-docs-static fd-dialog fd-settings fd-dialog--active">
+    <div
+        class="fd-dialog__content fd-settings__dialog-content"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="dialog-title-1"
+
+        >
+        <div class="fd-dialog__body fd-settings__dialog-body">
+            <div class="fd-settings__container">
+                <div class="fd-settings__list-area">
+                    <div class="fd-bar fd-bar--header">
+                        <div class="fd-bar__left">
+                            <div class="fd-bar__element">
+                                <h1 class="fd-title fd-title--h5" aria-label="text">Settings</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="fd-settings__list-container">
+                        <ul
+                            class="fd-list fd-list--navigation fd-list--navigation-indication fd-list--no-border fd-settings__list"
+                            role="list"
+                            >
+                            <li tabindex="-1" role="listitem" class="fd-list__item fd-list__item--link">
+                                <a tabindex="0" class="fd-list__link fd-list__link--navigation-indicator" href="#">
+                                    <i role="presentation" class="fd-list__icon sap-icon--user-settings"></i>
+                                    <span class="fd-list__title">User Account</span>
+                                </a>
+                            </li>
+                            <li tabindex="-1" role="listitem" class="fd-list__item fd-list__item--link">
+                                <a tabindex="0" class="fd-list__link fd-list__link--navigation-indicator" href="#">
+                                    <i role="presentation" class="fd-list__icon sap-icon--palette"></i>
+                                    <span class="fd-list__title">Appearance</span>
+                                </a>
+                            </li>
+                            <li tabindex="-1" role="listitem" class="fd-list__item fd-list__item--link is-selected">
+                                <a tabindex="0" class="fd-list__link fd-list__link--navigation-indicator" href="#">
+                                    <i role="presentation" class="fd-list__icon sap-icon--globe"></i>
+                                    <span class="fd-list__title">Language & Region</span>
+                                </a>
+                            </li>
+                            <li tabindex="-1" role="listitem" class="fd-list__item fd-list__item--link">
+                                <a tabindex="0" class="fd-list__link fd-list__link--navigation-indicator" href="#">
+                                    <i role="presentation" class="fd-list__icon sap-icon--iphone"></i>
+                                    <span class="fd-list__title">SAP Mobile Start Application</span>
+                                </a>
+                            </li>
+                            <li tabindex="-1" role="listitem" class="fd-list__item fd-list__item--link">
+                                <a tabindex="0" class="fd-list__link fd-list__link--navigation-indicator" href="#">
+                                    <i role="presentation" class="fd-list__icon sap-icon--bell"></i>
+                                    <span class="fd-list__title">Notifications</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="fd-settings__detail-area">
+                    <div class="fd-bar fd-bar--header fd-settings__header">
+                        <div class="fd-bar__left">
+                            <div class="fd-bar__element">
+                                <h2 class="fd-title fd-title--h5" aria-label="text">Language & Region</h2>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="fd-settings__content fd-settings__content--no-background">
+                        <div
+                            role="note"
+                            aria-labelledby="message-strip-hidden-text message-strip-text"
+                            class="fd-message-strip fd-message-strip--information"
+                            >
+                            <span class="fd-message-strip__sr-only" id="message-strip-hidden-text"
+                                >Information Bar</span
+                                >
+
+                                <div class="fd-message-strip__icon-container" aria-hidden="true">
+                                    <span
+                                        class="sap-icon sap-icon--message-information"
+                                        role="presentation"
+                                        aria-hidden="true"
+                                        ></span>
+                                    </div>
+
+                                    <p class="fd-message-strip__text" id="message-strip-text">
+                                        Close to apply your chosen language - the page will reload.
+                                    </p>
+                                </div>
+
+                                <div class="fd-form-group">
+                                    <div class="fd-form-item">
+                                        <label for="form-item-1" class="fd-form-label">Display Language:</label>
+                                        <div class="fd-input-group fd-input-group--control">
+                                            <input
+                                            type="text"
+                                            class="fd-input fd-input-group__input"
+                                            id="form-item-1"
+                                            value="English (United States)"
+                                            />
+                                            <span class="fd-input-group__addon fd-input-group__addon--button">
+                                                <button
+                                                    aria-label="show/hide language options"
+                                                    class="fd-input-group__button fd-button fd-button--transparent"
+                                                    >
+                                                    <i class="sap-icon--navigation-down-arrow"></i>
+                                                </button>
+                                            </span>
+                                        </div>
+                                    </div>
+
+                                    <div class="fd-form-item">
+                                        <label for="form-item-1" class="fd-form-label">Region:</label>
+                                        <div class="fd-input-group fd-input-group--control">
+                                            <input
+                                            type="text"
+                                            class="fd-input fd-input-group__input"
+                                            id="form-item-2"
+                                            value="United States"
+                                            />
+                                            <span class="fd-input-group__addon fd-input-group__addon--button">
+                                                <button
+                                                    aria-label="show/hide region options"
+                                                    class="fd-input-group__button fd-button fd-button--transparent"
+                                                    >
+                                                    <i class="sap-icon--navigation-down-arrow"></i>
+                                                </button>
+                                            </span>
+                                        </div>
+                                    </div>
+
+                                    <div class="fd-form-item">
+                                        <label for="form-item-3" class="fd-form-label">Date Format:</label>
+                                        <div class="fd-input-group fd-input-group--control">
+                                            <input
+                                            type="text"
+                                            class="fd-input fd-input-group__input"
+                                            id="form-item-3"
+                                            value="MM.DD.YYYY"
+                                            />
+                                            <span class="fd-input-group__addon fd-input-group__addon--button">
+                                                <button
+                                                    aria-label="show/hide date format options"
+                                                    class="fd-input-group__button fd-button fd-button--transparent"
+                                                    >
+                                                    <i class="sap-icon--navigation-down-arrow"></i>
+                                                </button>
+                                            </span>
+                                        </div>
+                                    </div>
+
+                                    <div class="fd-form-item">
+                                        <label for="form-item-4" class="fd-form-label">Time Format:</label>
+                                        <div class="fd-input-group fd-input-group--control">
+                                            <input
+                                            type="text"
+                                            class="fd-input fd-input-group__input"
+                                            id="form-item-4"
+                                            value="12 Hour"
+                                            />
+                                            <span class="fd-input-group__addon fd-input-group__addon--button">
+                                                <button
+                                                    aria-label="show/hide time format options"
+                                                    class="fd-input-group__button fd-button fd-button--transparent"
+                                                    >
+                                                    <i class="sap-icon--navigation-down-arrow"></i>
+                                                </button>
+                                            </span>
+                                        </div>
+                                    </div>
+
+                                    <div class="fd-form-item">
+                                        <label for="form-item-5" class="fd-form-label">Time Zone:</label>
+                                        <div class="fd-input-group fd-input-group--control">
+                                            <input
+                                            type="text"
+                                            class="fd-input fd-input-group__input"
+                                            id="form-item-5"
+                                            value="GMT-5:00 Eastern Time (US & Canada)"
+                                            />
+                                            <span class="fd-input-group__addon fd-input-group__addon--button">
+                                                <button
+                                                    aria-label="show/hide time zone options"
+                                                    class="fd-input-group__button fd-button fd-button--transparent"
+                                                    >
+                                                    <i class="sap-icon--navigation-down-arrow"></i>
+                                                </button>
+                                            </span>
+                                        </div>
+
+                                        <div class="fd-form-item">
+                                            <label for="form-item-6" class="fd-form-label">Currency:</label>
+                                            <div class="fd-input-group fd-input-group--control">
+                                                <input
+                                                type="text"
+                                                class="fd-input fd-input-group__input"
+                                                id="form-item-6"
+                                                value="USD - United States Dollar"
+                                                />
+                                                <span class="fd-input-group__addon fd-input-group__addon--button">
+                                                    <button
+                                                        aria-label="show/hide currency options"
+                                                        class="fd-input-group__button fd-button fd-button--transparent"
+                                                        >
+                                                        <i class="sap-icon--navigation-down-arrow"></i>
+                                                    </button>
+                                                </span>
+                                            </div>
+
+                                            <div class="fd-form-item">
+                                                <label for="form-item-7" class="fd-form-label">Number Format:</label>
+                                                <div class="fd-input-group fd-input-group--control">
+                                                    <input
+                                                    type="text"
+                                                    class="fd-input fd-input-group__input"
+                                                    id="form-item-7"
+                                                    value="1,234.56"
+                                                    />
+                                                    <span class="fd-input-group__addon fd-input-group__addon--button">
+                                                        <button
+                                                            aria-label="show/hide number format options"
+                                                            class="fd-input-group__button fd-button fd-button--transparent"
+                                                            >
+                                                            <i class="sap-icon--navigation-down-arrow"></i>
+                                                        </button>
+                                                    </span>
+                                                </div>
+                                                <footer class="fd-dialog__footer fd-bar fd-bar--footer fd-settings__dialog-footer">
+                                                    <div class="fd-bar__right">
+                                                        <div class="fd-bar__element">
+                                                            <button class="fd-dialog__decisive-button fd-button fd-button--transparent">Close</button>
+                                                        </div>
+                                                    </div>
+                                                </footer>
+                                            </section>
 ```
 
 ### Notifications (L-XL-XXL)
@@ -1331,6 +1581,19 @@ This component works with or depends on:
 
 ### L-XL-XXL (with Tabs and overflowing content)
 
+For large screen sizes, the Settings Dialog uses a fixed-width layout with scrollable content:
+<ul>
+  <li><b>L (1024px - 1439px)</b></li>
+  <li><b>XL (1440px - 1919px)</b></li>
+  <li><b>XXL (1920px and above)</b></li>
+</ul>
+<b>Dimensions:</b>
+<ul>
+  <li><b>Width:</b> Fixed at 960px</li>
+  <li><b>Height:</b> 680px or 88% of screen height (whichever is smaller)</li>
+</ul>
+If the content height exceeds the available space, users can scroll through the content area.
+
 ```html
 <section class="fd-dialog-docs-static fd-dialog fd-settings fd-dialog--active">
     <div
@@ -1599,6 +1862,9 @@ This component works with or depends on:
         </div>
         <footer class="fd-dialog__footer fd-bar fd-bar--footer fd-settings__dialog-footer">
             <div class="fd-bar__right">
+                <div class="fd-bar__element">
+                    <button class="fd-dialog__decisive-button fd-button fd-button--emphasized">Save</button>
+                </div>
                 <div class="fd-bar__element">
                     <button class="fd-dialog__decisive-button fd-button fd-button--transparent">Close</button>
                 </div>

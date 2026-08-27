@@ -160,6 +160,10 @@ $block: #{$fd-namespace}-settings;
     display: block;
     height: var(--fdSettings_Spacing_Height, 0.5rem);
 
+    &--form {
+      --fdSettings_Spacing_Height: 0.625rem;
+    }
+
     &--small {
       --fdSettings_Spacing_Height: 1rem;
     }

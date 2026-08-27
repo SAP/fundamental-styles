@@ -1,5 +1,6 @@
 import userAccountExampleHtml from "./xl-user-account.example.html?raw";
 import appearanceExampleHtml from "./xl-appearance.example.html?raw";
+import languageRegionExampleHtml from "./xl-language-region.example.html?raw";
 import notificationsExampleHtml from "./xl-notifications.example.html?raw";
 import notificationsDetailsExampleHtml from "./xl-notifications-details.example.html?raw";
 import xlExampleHtml from "./xl.example.html?raw";
@@ -21,6 +22,10 @@ import '../../../src/settings.scss';
 import '../../../src/switch.scss';
 import '../../../src/popover.scss';
 import '../../../src/select.scss';
+import '../../../src/input-group.scss';
+import '../../../src/form-group.scss';
+import '../../../src/form-item.scss';
+import '../../../src/form-label.scss';
 
 
 export default {
@@ -55,70 +60,63 @@ export default {
 
 export const UserAccount = () => userAccountExampleHtml;
 UserAccount.storyName = 'User Account (L-XL-XXL)';
-UserAccount.parameters = {
-  docs: {
-    description: {
-      story: ''
-    }
-  }
-};
 
 export const Appearance = () => appearanceExampleHtml;
 Appearance.storyName = 'Appearance (L-XL-XXL)';
-Appearance.parameters = {
-  docs: {
-    description: {
-      story: ''
-    }
-  }
-};
+
+export const LanguageRegion = () => languageRegionExampleHtml;
+LanguageRegion.storyName = 'Language & Region (L-XL-XXL)';
 
 export const Notifications = () => notificationsExampleHtml;
 Notifications.storyName = 'Notifications (L-XL-XXL)';
-Notifications.parameters = {
-  docs: {
-    description: {
-      story: ''
-    }
-  }
-};
 
 export const NotificationsDetails = () => notificationsDetailsExampleHtml;
 NotificationsDetails.storyName = 'Notifications Details (L-XL-XXL)';
-NotificationsDetails.parameters = {
-  docs: {
-    description: {
-      story: ''
-    }
-  }
-};
 
 export const Xl = () => xlExampleHtml;
 Xl.storyName = 'L-XL-XXL (with Tabs and overflowing content)';
 Xl.parameters = {
   docs: {
     description: {
-      story: ''
+      story: `For large screen sizes, the Settings Dialog uses a fixed-width layout with scrollable content:
+<ul>
+  <li><b>L (1024px - 1439px)</b></li>
+  <li><b>XL (1440px - 1919px)</b></li>
+  <li><b>XXL (1920px and above)</b></li>
+</ul>
+<b>Dimensions:</b>
+<ul>
+  <li><b>Width:</b> Fixed at 960px</li>
+  <li><b>Height:</b> 680px or 88% of screen height (whichever is smaller)</li>
+</ul>
+If the content height exceeds the available space, users can scroll through the content area.`
     }
   }
 };
 
 export const Md = () =>mdExampleHtml;
-Md.storyName = 'MD';
+Md.storyName = 'MD (600 - 1023)';
 Md.parameters = {
   docs: {
     description: {
-      story: ''
+      story: `For medium screen sizes (M 600px - 1023px), the Settings Dialog should adapt to the available space:
+<ul>
+  <li><b>At 600px width:</b> Minimum Width: 80% of screen, Minimum Height: 88% of screen</li>
+  <li><b>At 1023px width:</b> Maximum Width: 640px, Maximum Height: 680px</li>
+</ul>`
     }
   }
 };
 
 export const Sm = () =>smExampleHtml;
-Sm.storyName = 'SM';
+Sm.storyName = 'SM (<= 599)';
 Sm.parameters = {
   docs: {
     description: {
-      story: ''
+      story: `The Settings Dialog behaves differently on smartphones (S) compared to tablets or desktops (M and above). On S, the dialog can take up the entire screen. 
+On small screen sizes (S), the dialog can either be stretched to full screen or used as a standard dialog. 
+
+For S, it's recommended to use the dialog in full-screen mode to help users focus on the content. This recommendation applies to both portrait and landscape orientations.`
     }
   }
 };
