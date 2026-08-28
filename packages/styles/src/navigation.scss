@@ -38,6 +38,7 @@ $navListParentItems: #{$block}__list--parent-items;
 // Nav Container
 $navContainer: #{$block}__container;
 $navContainerTop: #{$block}__container--top;
+$navContainerSticky: #{$block}__container--sticky;
 $navContainerBottom: #{$block}__container--bottom;
 
 // Nav List Container
@@ -75,6 +76,7 @@ $navExternalLinkIndicator: #{$block}__external-link-indicator;
   --fdNavigation_Link_Selection_Indicator_Display: none;
   --fdNavigation_Link_Back_Indicator_Icon: '\e1ee';
   --fdNavigation_Link_Has_Child_Indicator_Icon: '\e1ed';
+  --fdNavigation_Link_Has_Child_Indicator_Icon_RTL: '\e1ee';
   --fdNavigation_Link_External_Link_Indicator_Icon: '\e04c';
   --fdNavigation_Link_Background: var(--sapNavigation_Background);
   --fdNavigation_Link_Border_Color: var(--fdNavigation_Link_Border_Color_Normal);
@@ -158,6 +160,21 @@ $navExternalLinkIndicator: #{$block}__external-link-indicator;
     }
   }
 
+  @mixin fd-navigation-separator {
+    content: '';
+    width: 100%;
+    height: 0.0625rem;
+    display: flex;
+    margin-block-end: 0.25rem;
+    background: var(--sapToolbar_SeparatorColor);
+  }
+
+  @mixin fd-navigation-sticky {
+    z-index: 1;
+    position: sticky;
+    inset-block-start: 0;
+  }
+
   @include fd-reset();
 
   &__container {
@@ -191,18 +208,24 @@ $navExternalLinkIndicator: #{$block}__external-link-indicator;
           background: var(--sapScrollBar_Hover_FaceColor);
         }
       }
+
+      &.#{$navContainerSticky} {
+        @include fd-navigation-sticky();
+
+        overflow: visible;
+        height: auto;
+
+        &::after {
+          @include fd-navigation-separator();
+        }
+      }
     }
 
     &--bottom {
       @include fd-set-paddings-x-equal(var(--fdNavigation_Padding_X));
 
       &::before {
-        content: '';
-        width: 100%;
-        height: 0.0625rem;
-        display: flex;
-        margin-block-end: 0.25rem;
-        background: var(--sapToolbar_SeparatorColor);
+        @include fd-navigation-separator();
       }
     }
   }
@@ -256,10 +279,9 @@ $navExternalLinkIndicator: #{$block}__external-link-indicator;
       position: relative;
     }
 
+    &--sticky,
     &--home {
-      top: 0;
-      z-index: 1;
-      position: sticky;
+      @include fd-navigation-sticky();
 
       &:has(input) {
         background: var(--sapList_Background);
@@ -290,13 +312,13 @@ $navExternalLinkIndicator: #{$block}__external-link-indicator;
     &::before {
       @include fd-set-position-left-pseudo(0);
 
-      top: 0;
       content: '';
       width: 100%;
       height: 100%;
       position: absolute;
+      inset-block-start: 0;
       border: solid 0.0625rem var(--fdNavigation_Link_Border_Color);
-      border-bottom: solid 0.0625rem var(--fdNavigation_Link_Border_Bottom_Color);
+      border-block-end: solid 0.0625rem var(--fdNavigation_Link_Border_Bottom_Color);
     }
 
     @include _fd-nav-item-state();
@@ -334,10 +356,7 @@ $navExternalLinkIndicator: #{$block}__external-link-indicator;
     @include fd-expanded() {
       .#{$navChildrenIndicator} {
         --fdNavigation_Link_Has_Child_Indicator_Icon: '\e1ef';
-
-        @include fd-rtl() {
-          --fdNavigation_Link_Has_Child_Indicator_Icon: '\e1ef';
-        }
+        --fdNavigation_Link_Has_Child_Indicator_Icon_RTL: '\e1ef';
       }
 
       & + .#{$navListContainer} {
@@ -411,10 +430,7 @@ $navExternalLinkIndicator: #{$block}__external-link-indicator;
       @include fd-expanded() {
         .#{$navChildrenIndicator} {
           --fdNavigation_Link_Has_Child_Indicator_Icon: '\e1ed';
-
-          @include fd-rtl() {
-            --fdNavigation_Link_Has_Child_Indicator_Icon: '\e1ee';
-          }
+          --fdNavigation_Link_Has_Child_Indicator_Icon_RTL: '\e1ee';
         }
 
         --fdNavigation_Link_Background: var(--sapNavigation_Active_Background);
@@ -437,9 +453,10 @@ $navExternalLinkIndicator: #{$block}__external-link-indicator;
       .#{$navChildrenIndicator} {
         --fdNavigation_Link_Has_Child_Indicator_Display: flex;
 
+        @include fd-set-position-right(var(--fdNavigation_Link_Has_Child_Indicator_Pos_Right, 0.375rem));
+
         z-index: 20;
         position: absolute;
-        right: var(--fdNavigation_Link_Has_Child_Indicator_Pos_Right, 0.375rem);
         cursor: pointer;
 
         &::after {
@@ -449,7 +466,12 @@ $navExternalLinkIndicator: #{$block}__external-link-indicator;
           width: 0.0625rem;
           left: -0.25rem;
           position: absolute;
-          display: var(--fdNavigation_Link_Has_Child_Indicator_Div_Display, inline-block)
+          display: var(--fdNavigation_Link_Has_Child_Indicator_Div_Display, inline-block);
+
+          @include fd-rtl-pseudo() {
+            left: auto;
+            right: -0.25rem;
+          }
         }
       }
 
@@ -490,8 +512,6 @@ $navExternalLinkIndicator: #{$block}__external-link-indicator;
 
       --fdNavigation_Link_Text_Color: var(--sapButton_TextColor);
       --fdNavigation_Link_Icon_Color: var(--sapButton_TextColor);
-
-
     }
   }
 
@@ -529,14 +549,14 @@ $navExternalLinkIndicator: #{$block}__external-link-indicator;
 
 
     position: absolute;
-    top: 0;
+    inset-block-start: 0;
     width: 0.188rem;
     height: 100%;
     background: var(--sapList_SelectionBorderColor);
     display: var(--fdNavigation_Link_Selection_Indicator_Display);
   }
 
-  &__has-children-indicator {
+  .#{$navChildrenIndicator} {
     @include fd-reset();
     @include fd-flex-center();
     @include fd-set-width(var(--fdNavigation_Controls_Width));
@@ -546,18 +566,19 @@ $navExternalLinkIndicator: #{$block}__external-link-indicator;
       font-size: 1rem;
       font-family: SAP-icons;
       content: var(--fdNavigation_Link_Has_Child_Indicator_Icon);
+
+      
+      @include fd-rtl-pseudo() {
+        content: var(--fdNavigation_Link_Has_Child_Indicator_Icon_RTL);
+      }
     }
 
     color: var(--sapList_TextColor);
     transition: opacity 0.3s ease-in-out;
     display: var(--fdNavigation_Link_Has_Child_Indicator_Display);
-
-    @include fd-rtl-pseudo() {
-      --fdNavigation_Link_Has_Child_Indicator_Icon: '\e1ee';
-    }
   }
 
-  &__external-link-indicator {
+  .#{$navExternalLinkIndicator} {
     @include fd-reset();
     @include fd-flex-center();
     @include fd-set-width(var(--fdNavigation_Controls_Width));
@@ -618,7 +639,7 @@ $navExternalLinkIndicator: #{$block}__external-link-indicator;
       &.#{$navListContainerMenu} {
         @include fd-set-position-left(calc(100% + 0.1875rem));
 
-        top: 0;
+        inset-block-start: 0;
         position: absolute;
         padding-block: 0.5rem;
         padding-inline: 0.5rem;
@@ -638,12 +659,7 @@ $navExternalLinkIndicator: #{$block}__external-link-indicator;
           @include fd-expanded() {
             .#{$navChildrenIndicator} {
               --fdNavigation_Link_Has_Child_Indicator_Icon: '\e1ed';
-            }
-          }
-
-          @include fd-rtl-pseudo() {
-            .#{$navChildrenIndicator} {
-              --fdNavigation_Link_Has_Child_Indicator_Icon: '\e1ee';
+              --fdNavigation_Link_Has_Child_Indicator_Icon_RTL: '\e1ee';
             }
           }
         }
@@ -657,7 +673,7 @@ $navExternalLinkIndicator: #{$block}__external-link-indicator;
         margin-block: 0;
         padding-inline: 0.5rem;
         padding-block: 0.5rem;
-        top: calc(var(--fdNavigation_Link_Min_Height) - 0.5rem);    
+        inset-block-start: calc(var(--fdNavigation_Link_Min_Height) - 0.5rem);
       }
 
       // Parents List Items
@@ -726,6 +742,7 @@ $navExternalLinkIndicator: #{$block}__external-link-indicator;
         .#{$navChildrenIndicator} {
           --fdNavigation_Controls_Width: 1rem;
           --fdNavigation_Link_Has_Child_Indicator_Icon: '\e1ed';
+          --fdNavigation_Link_Has_Child_Indicator_Icon_RTL: '\e1ee';
         }
 
         &:has(.#{$navExternalLinkIndicator}) {
@@ -770,6 +787,7 @@ $navExternalLinkIndicator: #{$block}__external-link-indicator;
           & + .#{$navChildrenIndicator} {
             --fdNavigation_Controls_Width: 1rem;
             --fdNavigation_Link_Has_Child_Indicator_Icon: '\e1ed';
+            --fdNavigation_Link_Has_Child_Indicator_Icon_RTL: '\e1ee';
             --fdNavigation_Link_Has_Child_Indicator_Pos_Right: 0;
             --fdNavigation_Link_Has_Child_Indicator_Div_Display: none;
           }
@@ -789,6 +807,7 @@ $navExternalLinkIndicator: #{$block}__external-link-indicator;
             & + .#{$navChildrenIndicator} {
               --fdNavigation_Controls_Width: 2.25rem;
               --fdNavigation_Link_Has_Child_Indicator_Icon: '\e1ed';
+              --fdNavigation_Link_Has_Child_Indicator_Icon_RTL: '\e1ee';
               --fdNavigation_Link_Has_Child_Indicator_Pos_Right: 0.375rem;
               --fdNavigation_Link_Has_Child_Indicator_Div_Display: inline-block;
             }
@@ -808,6 +827,7 @@ $navExternalLinkIndicator: #{$block}__external-link-indicator;
               & + .#{$navChildrenIndicator} {
                 --fdNavigation_Controls_Width: 1rem;
                 --fdNavigation_Link_Has_Child_Indicator_Icon: '\e1ed';
+                --fdNavigation_Link_Has_Child_Indicator_Icon_RTL: '\e1ee';
                 --fdNavigation_Link_Has_Child_Indicator_Pos_Right: 0;
                 --fdNavigation_Link_Has_Child_Indicator_Div_Display: none;
               }
@@ -821,6 +841,7 @@ $navExternalLinkIndicator: #{$block}__external-link-indicator;
           .#{$navChildrenIndicator} {
             --fdNavigation_Controls_Width: 1rem;
             --fdNavigation_Link_Has_Child_Indicator_Icon: '\e1ed';
+            --fdNavigation_Link_Has_Child_Indicator_Icon_RTL: '\e1ee';
           }
 
           @include fd-hover-focus() {
@@ -938,6 +959,7 @@ $navExternalLinkIndicator: #{$block}__external-link-indicator;
 
       .#{$navChildrenIndicator} {
         --fdNavigation_Link_Has_Child_Indicator_Icon: '\e287';
+        --fdNavigation_Link_Has_Child_Indicator_Icon_RTL: '\e287';
       }
     }
 
@@ -980,12 +1002,10 @@ $navExternalLinkIndicator: #{$block}__external-link-indicator;
           @include fd-expanded() {
             .#{$navChildrenIndicator} {
               --fdNavigation_Link_Has_Child_Indicator_Icon: '\e1ed';
-
-              @include fd-rtl-pseudo() {
-                --fdNavigation_Link_Has_Child_Indicator_Icon: '\e1ee';
-              }
+              --fdNavigation_Link_Has_Child_Indicator_Icon_RTL: '\e1ee';
             }
           }
+          
           &.#{$navItemOverflow} {
             .#{$navChildrenIndicator} {
               display: none;

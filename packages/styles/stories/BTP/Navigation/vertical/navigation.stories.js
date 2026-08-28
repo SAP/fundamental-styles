@@ -3,6 +3,8 @@ import navigationSnappedExampleHtml from "./navigation-snapped.example.html?raw"
 import navigationPopupExampleHtml from "./navigation-popup.example.html?raw";
 import navigationLegacyExampleHtml from "./navigation-legacy.example.html?raw";
 import navigationTagsHtml from "./navigation-tags.example.html?raw";
+import navigationSearchHtml from "./navigation-search.example.html?raw";
+import navigationStickyAreaHtml from "./navigation-sticky-area.example.html?raw";
 
 import '../../../../src/navigation.scss';
 import '../../../../src/icon.scss';
@@ -108,6 +110,29 @@ NavigationTags.parameters = {
 - Limit tag width to 64px (4rem) — use abbreviations if needed (e.g., "Experimental" → "Exp")
 - Tags are visual indicators only (non-interactive, no tooltips or actions)
 `
+    }
+  }
+};
+
+
+export const NavigationStickyArea = () => navigationStickyAreaHtml;
+NavigationStickyArea.storyName = 'Vertical Navigation - Sticky Area';
+NavigationStickyArea.parameters = {
+  docs: {
+    description: {
+      story: `Fixed header area that is separated by a separator similar to the footer area. Top-aligned and fixed/sticky (always visible). Contains the optional search field. Add <code>.fd-navigation__container--sticky</code> together with <code>.fd-navigation__container--top</code> modifier class to the <code>.fd-navigation__container</code> base class to make the top area sticky.<br>
+Guideline: Recommended not to contain more than 4 items.`
+    }
+  }
+};
+
+export const NavigationSearch = () => navigationSearchHtml;
+NavigationSearch.storyName = 'Vertical Navigation - Search';
+NavigationSearch.parameters = {
+  docs: {
+    description: {
+      story: `Search Only: for a sticky search field, the sticky header area with separator is not needed. The search field can be sticky by applying <code>.fd-navigation__list-item--sticky</code> modifier class to the parent navigation list item.
+<br><br><strong>Note:</strong> The <code>.fd-navigation__list-item--home</code> class is still supported for backward compatibility and functions identically to <code>.fd-navigation__list-item--sticky</code>. It was originally intended specifically for Home navigation link, but <code>.fd-navigation__list-item--sticky</code> is now the recommended approach as it can be applied to any list item that needs to be sticky at the top.`
     }
   }
 };
