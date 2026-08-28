@@ -343,8 +343,9 @@
 
   &.#{$block}--notification {
     .#{$block}__item {
+      --fdList_Item_Height: auto;
+
       padding-inline: 0;
-      height: auto;
       align-items: center;
       min-height: var(--fdList_Notification_Item_Height, var(--sapElement_LineHeight));
 
@@ -373,7 +374,6 @@
       text-overflow: initial;
     }
   }
-
 
   &__infinite-scroll {
     overflow: scroll;

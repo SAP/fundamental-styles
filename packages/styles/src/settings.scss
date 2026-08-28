@@ -115,43 +115,41 @@ $block: #{$fd-namespace}-settings;
     --fdSettings_List_Area_Border: none;
 
     .#{$block}__dialog-content {
-        box-shadow: none;
-        border-radius: 0;
+      box-shadow: none;
+      border-radius: 0;
     }
 
     .#{$block}__dialog-body {
-        border-radius: 0;
+      border-radius: 0;
     }
 
     .#{$block}__dialog-footer {
-        border-bottom-left-radius: 0;
-        border-bottom-right-radius: 0;
+      border-bottom-left-radius: 0;
+      border-bottom-right-radius: 0;
     }
   }
 
   &:has(.#{$block}__container--md) {
-      --fdSettings_List_Area_Width: 100%;
-      --fdSettings_Header_Margin_Top: 0;
-      --fdSettings_List_Nav_Indicator_Content: '\e1ed';
-      --fdSettings_Dialog_Content_Min_Width: 80%;
-      --fdSettings_Dialog_Content_Min_Height: 88%;
-      --fdSettings_Dialog_Content_Max_Width: 40rem;
-      --fdSettings_Dialog_Content_Max_Height: 42.5rem;
-      --fdSettings_List_Area_Border: none;
+    --fdSettings_List_Area_Width: 100%;
+    --fdSettings_Header_Margin_Top: 0;
+    --fdSettings_List_Nav_Indicator_Content: '\e1ed';
+    --fdSettings_Dialog_Content_Min_Width: 80%;
+    --fdSettings_Dialog_Content_Min_Height: 88%;
+    --fdSettings_Dialog_Content_Max_Width: 40rem;
+    --fdSettings_Dialog_Content_Max_Height: 42.5rem;
+    --fdSettings_List_Area_Border: none;
   }
 
   &:has(.#{$block}__container--lg),
   &:has(.#{$block}__container--xl) {
-      --fdSettings_List_Area_Width: 20rem;
-      --fdSettings_Header_Margin_Top: 1rem;
-      --fdSettings_List_Nav_Indicator_Content: none;
-      --fdSettings_Dialog_Content_Min_Width: 60rem;
-      --fdSettings_Dialog_Content_Min_Height: 42.5rem;
-      --fdSettings_Dialog_Content_Max_Width: 60rem;
-      --fdSettings_Dialog_Content_Max_Height: 42.5rem;
+    --fdSettings_List_Area_Width: 20rem;
+    --fdSettings_Header_Margin_Top: 1rem;
+    --fdSettings_List_Nav_Indicator_Content: none;
+    --fdSettings_Dialog_Content_Min_Width: 60rem;
+    --fdSettings_Dialog_Content_Min_Height: 42.5rem;
+    --fdSettings_Dialog_Content_Max_Width: 60rem;
+    --fdSettings_Dialog_Content_Max_Height: 42.5rem;
   }
-
-  // NEW STUFF
 
   &__spacing {
     @include fd-reset();
@@ -184,6 +182,8 @@ $block: #{$fd-namespace}-settings;
   }
 
   &__detail-area {
+    @include fd-reset();
+
     max-width: 100%;
     overflow: hidden;
   }
