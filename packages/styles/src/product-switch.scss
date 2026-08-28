@@ -13,7 +13,6 @@ $block: #{$fd-namespace}-product-switch;
 }
 
 .#{$block} {
-
   @mixin fd-product-pseudo-element-background($background) {
     .#{$block}__title {
       &::after,
