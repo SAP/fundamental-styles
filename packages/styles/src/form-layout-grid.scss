@@ -16,10 +16,10 @@ $gridCol: #{$fd-namespace}-col;
     &.#{$formGroup},
     .#{$formGroup} {
       .#{$formItem} {
-        margin-top: 0.625rem;
+        margin-top: var(--fdFormLayoutGridItemMarginTop, #{$marginTop});
 
         &:first-of-type {
-          margin-top: 0;
+          margin-top: var(--fdFormLayoutGridItemFirstOfTypeMarginTop, 0);
         }
       }
     }
@@ -85,8 +85,8 @@ $gridCol: #{$fd-namespace}-col;
 
         &--required {
           padding-inline-end: 0.5rem;
-          
-          &.#{$fd-namespace}-form-label--colon{
+
+          &.#{$fd-namespace}-form-label--colon {
             padding-inline-end: 0.75rem;
           }
         }
@@ -109,6 +109,43 @@ $gridCol: #{$fd-namespace}-col;
   }
 }
 
+.#{$gridContainer}.#{$formContainer}.#{$formContainer}--display-mode {
+  @include fd-compact-or-condensed() {
+    --fdFormLayoutGridTextPaddingBlock: 0.3125rem;
+  }
+
+  // 1rem vertical spacing between label+value pairs (spec vertical C)
+  &.#{$formContainer}--vertical,
+  &.#{$formContainer}--md-vertical,
+  &.#{$formContainer}--lg-vertical,
+  &.#{$formContainer}--xl-vertical {
+    --fdFormLayoutGridItemMarginTop: 1rem;
+    --fdFormLayoutGridItemFirstOfTypeMarginTop: 0;
+  }
+
+  &.#{$formGroup},
+  .#{$formGroup} {
+    .#{$formItem} {
+      .#{$fd-namespace}-form-label {
+        margin-inline-end: 0.5rem;
+      }
+
+      .#{$fd-namespace}-text {
+        padding-block: var(--fdFormLayoutGridTextPaddingBlock, 0.625rem);
+      }
+    }
+  }
+
+  .#{$gridRow} {
+    .#{$gridCol},
+    .#{$gridCol}--12 {
+      > .#{$fd-namespace}-form-label {
+        padding-block-end: 0.25rem;
+      }
+    }
+  }
+}
+
 @media (width >= 0) {
   @include fd-form-vertical(#{$formContainer}--vertical);
   @include fd-form-col-paddings('fd-col');
@@ -116,6 +153,12 @@ $gridCol: #{$fd-namespace}-col;
 
 @media (width >= 0) and (width <= 599px) {
   @include fd-form-vertical(#{$formContainer});
+
+  // Display mode at S breakpoint: all forms are vertical, use 1rem pair spacing
+  .#{$gridContainer}.#{$formContainer}.#{$formContainer}--display-mode {
+    --fdFormLayoutGridItemMarginTop: 1rem;
+    --fdFormLayoutGridItemFirstOfTypeMarginTop: 0;
+  }
 }
 
 @media (width >= 600px) {

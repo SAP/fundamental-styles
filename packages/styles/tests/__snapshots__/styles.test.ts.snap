@@ -24414,6 +24414,116 @@ exports[`Check stories > Components/Forms/Form Grid > Story ColumnRecommended > 
 "
 `;
 
+exports[`Check stories > Components/Forms/Form Grid > Story DisplayModeHorizontal > Should match snapshot 1`] = `
+"
+<div class=\\"fd-container fd-form-layout-grid-container fd-form-layout-grid-container--display-mode fd-form-group\\">
+    <div class=\\"fd-row fd-form-item\\">
+        <div class=\\"fd-col fd-col-md--4\\">
+            <label class=\\"fd-form-label fd-form-label--colon\\" for=\\"dm-h-name\\">Name</label>
+        </div>
+        <div class=\\"fd-col fd-col-md--8\\">
+            <p class=\\"fd-text\\" id=\\"dm-h-name\\">Amelia Perry</p>
+        </div>
+    </div>
+    <div class=\\"fd-row fd-form-item\\">
+        <div class=\\"fd-col fd-col-md--4\\">
+            <label class=\\"fd-form-label fd-form-label--colon\\" for=\\"dm-h-street\\">Street/No.</label>
+        </div>
+        <div class=\\"fd-col fd-col-md--8\\">
+            <p class=\\"fd-text\\" id=\\"dm-h-street\\">Myrtle St. 495</p>
+        </div>
+    </div>
+    <div class=\\"fd-row fd-form-item\\">
+        <div class=\\"fd-col fd-col-md--4\\">
+            <label class=\\"fd-form-label fd-form-label--colon\\" for=\\"dm-h-zip\\">ZIP Code/City</label>
+        </div>
+        <div class=\\"fd-col fd-col-md--8\\">
+            <p class=\\"fd-text\\" id=\\"dm-h-zip\\">43823 Downtown</p>
+        </div>
+    </div>
+    <div class=\\"fd-row fd-form-item\\">
+        <div class=\\"fd-col fd-col-md--4\\">
+            <label class=\\"fd-form-label fd-form-label--colon\\" for=\\"dm-h-country\\">Country</label>
+        </div>
+        <div class=\\"fd-col fd-col-md--8\\">
+            <p class=\\"fd-text\\" id=\\"dm-h-country\\">United States</p>
+        </div>
+    </div>
+    <div class=\\"fd-row fd-form-item\\">
+        <div class=\\"fd-col fd-col-md--4\\">
+            <label class=\\"fd-form-label fd-form-label--colon\\" for=\\"dm-h-notes\\">Notes</label>
+        </div>
+        <div class=\\"fd-col fd-col-md--8\\">
+            <p class=\\"fd-text\\" id=\\"dm-h-notes\\" style=\\"font-style: italic;\\">&ndash;</p>
+        </div>
+    </div>
+</div>
+
+  <!-- Styles related to the docs -->
+  <style>
+      .fd-form-layout-grid-container {
+        border: 1px solid; margin: 0 auto;
+      }
+  </style>
+
+"
+`;
+
+exports[`Check stories > Components/Forms/Form Grid > Story DisplayModeVertical > Should match snapshot 1`] = `
+"
+<div class=\\"fd-container fd-form-layout-grid-container fd-form-layout-grid-container--display-mode fd-form-layout-grid-container--vertical fd-form-group\\" style=\\"max-width:600px;\\">
+    <div class=\\"fd-row fd-form-item\\">
+        <div class=\\"fd-col\\">
+            <label class=\\"fd-form-label fd-form-label--colon\\" for=\\"dm-v-name\\">Name</label>
+        </div>
+        <div class=\\"fd-col\\">
+            <p class=\\"fd-text\\" id=\\"dm-v-name\\">Amelia Perry</p>
+        </div>
+    </div>
+    <div class=\\"fd-row fd-form-item\\">
+        <div class=\\"fd-col\\">
+            <label class=\\"fd-form-label fd-form-label--colon\\" for=\\"dm-v-street\\">Street/No.</label>
+        </div>
+        <div class=\\"fd-col\\">
+            <p class=\\"fd-text\\" id=\\"dm-v-street\\">Myrtle St. 495</p>
+        </div>
+    </div>
+    <div class=\\"fd-row fd-form-item\\">
+        <div class=\\"fd-col\\">
+            <label class=\\"fd-form-label fd-form-label--colon\\" for=\\"dm-v-zip\\">ZIP Code/City</label>
+        </div>
+        <div class=\\"fd-col\\">
+            <p class=\\"fd-text\\" id=\\"dm-v-zip\\">43823 Downtown</p>
+        </div>
+    </div>
+    <div class=\\"fd-row fd-form-item\\">
+        <div class=\\"fd-col\\">
+            <label class=\\"fd-form-label fd-form-label--colon\\" for=\\"dm-v-country\\">Country</label>
+        </div>
+        <div class=\\"fd-col\\">
+            <p class=\\"fd-text\\" id=\\"dm-v-country\\">United States</p>
+        </div>
+    </div>
+    <div class=\\"fd-row fd-form-item\\">
+        <div class=\\"fd-col\\">
+            <label class=\\"fd-form-label fd-form-label--colon\\" for=\\"dm-v-notes\\">Notes</label>
+        </div>
+        <div class=\\"fd-col\\">
+            <p class=\\"fd-text\\" id=\\"dm-v-notes\\" style=\\"font-style: italic;\\">&ndash;</p>
+        </div>
+    </div>
+</div>
+
+  <!-- Styles related to the docs -->
+  <style>
+      .fd-form-layout-grid-container {
+        border: 1px solid; margin: 0 auto;
+      }
+  </style>
+
+"
+`;
+
 exports[`Check stories > Components/Forms/Form Grid > Story LSizeDefault > Should match snapshot 1`] = `
 "<div class=\\"fd-container fd-form-layout-grid-container fd-form-group\\" style=\\"max-width:1440px;\\">
   <div class=\\"fd-row fd-form-item\\">
@@ -25860,6 +25970,116 @@ exports[`Check stories > Components/Forms/Form Group > Story GroupHeaderInFormGr
 
     </div>
 </form>
+"
+`;
+
+exports[`Check stories > Components/Forms/Form Group > Story GroupHeaderInFormGridDisplayMode > Should match snapshot 1`] = `
+"<div class=\\"fd-container fd-form-layout-grid-container fd-form-layout-grid-container--display-mode\\">
+    <div class=\\"fd-row\\">
+        <!-- Group 1 -->
+        <div class=\\"fd-form-group fd-form-group--with-spacing fd-col fd-col-md--6 fd-col-lg--6 fd-col-xl--6 fd-col--wrap\\" role=\\"group\\" aria-labelledby=\\"dm-grid1GroupHeader\\">
+            <div class=\\"fd-form-group__header\\" id=\\"dm-grid1GroupHeader\\">
+                <h4 class=\\"fd-form-group__header-text\\">Personal Information</h4>
+            </div>
+
+            <div class=\\"fd-form-item fd-row\\">
+                <div class=\\"fd-col fd-col-md--2 fd-col-lg--4 fd-col-xl--12\\">
+                    <label class=\\"fd-form-label fd-form-label--colon\\" for=\\"dm-input-14-name\\">Full Name</label>
+                </div>
+                <div class=\\"fd-col fd-col-md--10 fd-col-lg--8 fd-col-xl--12\\">
+                    <p class=\\"fd-text\\" id=\\"dm-input-14-name\\">Amelia Perry</p>
+                </div>
+            </div>
+
+            <div class=\\"fd-form-item fd-row\\">
+                <div class=\\"fd-col fd-col-md--2 fd-col-lg--4 fd-col-xl--12\\">
+                    <label class=\\"fd-form-label fd-form-label--colon\\" for=\\"dm-input-14x-name\\">City of Residence</label>
+                </div>
+                <div class=\\"fd-col fd-col-md--10 fd-col-lg--8 fd-col-xl--12\\">
+                    <p class=\\"fd-text\\" id=\\"dm-input-14x-name\\">New York</p>
+                </div>
+            </div>
+
+            <div class=\\"fd-form-item fd-row\\">
+                <div class=\\"fd-col fd-col-md--2 fd-col-lg--4 fd-col-xl--12\\">
+                    <label class=\\"fd-form-label fd-form-label--colon\\" for=\\"dm-input-14y-name\\">Job Title</label>
+                </div>
+                <div class=\\"fd-col fd-col-md--10 fd-col-lg--8 fd-col-xl--12\\">
+                    <p class=\\"fd-text\\" id=\\"dm-input-14y-name\\">Product Designer</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Group 2 -->
+        <div class=\\"fd-form-group fd-form-group--with-spacing fd-col fd-col-md--6 fd-col-lg--6 fd-col-xl--6 fd-col--wrap\\" role=\\"group\\" aria-labelledby=\\"dm-grid2GroupHeader\\">
+            <div class=\\"fd-form-group__header\\">
+                <h4 class=\\"fd-form-group__header-text\\" id=\\"dm-grid2GroupHeader\\">Contact Details</h4>
+            </div>
+
+            <div class=\\"fd-form-item fd-row\\">
+                <div class=\\"fd-col fd-col-md--2 fd-col-lg--4 fd-col-xl--12\\">
+                    <label class=\\"fd-form-label fd-form-label--colon\\" for=\\"dm-input-14a-name\\">Email Address</label>
+                </div>
+                <div class=\\"fd-col fd-col-md--10 fd-col-lg--8 fd-col-xl--12\\">
+                    <p class=\\"fd-text\\" id=\\"dm-input-14a-name\\">amelia.perry@example.com</p>
+                </div>
+            </div>
+
+            <div class=\\"fd-form-item fd-row\\">
+                <div class=\\"fd-col fd-col-md--2 fd-col-lg--4 fd-col-xl--12\\">
+                    <label class=\\"fd-form-label fd-form-label--colon\\" for=\\"dm-input-14b-name\\">Phone Number</label>
+                </div>
+                <div class=\\"fd-col fd-col-md--10 fd-col-lg--8 fd-col-xl--12\\">
+                    <p class=\\"fd-text\\" id=\\"dm-input-14b-name\\">+1 555 123 4567</p>
+                </div>
+            </div>
+
+            <div class=\\"fd-form-item fd-row\\">
+                <div class=\\"fd-col fd-col-md--2 fd-col-lg--4 fd-col-xl--12\\">
+                    <label class=\\"fd-form-label fd-form-label--colon\\" for=\\"dm-input-14c-name\\">LinkedIn Profile</label>
+                </div>
+                <div class=\\"fd-col fd-col-md--10 fd-col-lg--8 fd-col-xl--12\\">
+                    <p class=\\"fd-text\\" id=\\"dm-input-14c-name\\">linkedin.com/in/amelia-perry</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Group 3 -->
+        <div class=\\"fd-form-group fd-form-group--with-spacing fd-col fd-col-md--6 fd-col-lg--6 fd-col-xl--6 fd-col--wrap\\" role=\\"group\\" aria-labelledby=\\"dm-grid3GroupHeader\\">
+            <div class=\\"fd-form-group__header\\">
+                <h4 class=\\"fd-form-group__header-text\\" id=\\"dm-grid3GroupHeader\\">Security Questions</h4>
+            </div>
+
+            <div class=\\"fd-form-item fd-row\\">
+                <div class=\\"fd-col fd-col-md--2 fd-col-lg--4 fd-col-xl--12\\">
+                    <label class=\\"fd-form-label fd-form-label--colon\\" for=\\"dm-input-14j-name\\">What was your childhood nickname?</label>
+                </div>
+                <div class=\\"fd-col fd-col-md--10 fd-col-lg--8 fd-col-xl--12\\">
+                    <p class=\\"fd-text\\" id=\\"dm-input-14j-name\\">Mimi</p>
+                </div>
+            </div>
+
+            <div class=\\"fd-form-item fd-row\\">
+                <div class=\\"fd-col fd-col-md--2 fd-col-lg--4 fd-col-xl--12\\">
+                    <label class=\\"fd-form-label fd-form-label--colon\\" for=\\"dm-input-14h-name\\">What was the name of your first pet?</label>
+                </div>
+                <div class=\\"fd-col fd-col-md--10 fd-col-lg--8 fd-col-xl--12\\">
+                    <p class=\\"fd-text\\" id=\\"dm-input-14h-name\\">Charlie</p>
+                </div>
+            </div>
+
+            <div class=\\"fd-form-item fd-row\\">
+                <div class=\\"fd-col fd-col-md--2 fd-col-lg--4 fd-col-xl--12\\">
+                    <label class=\\"fd-form-label fd-form-label--colon\\" for=\\"dm-input-14k-name\\">What city were you born in?</label>
+                </div>
+                <div class=\\"fd-col fd-col-md--10 fd-col-lg--8 fd-col-xl--12\\">
+                    <p class=\\"fd-text\\" id=\\"dm-input-14k-name\\">Boston</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
 "
 `;
 
