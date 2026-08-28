@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.41.9-rc.16](https://github.com/SAP/fundamental-styles/compare/v0.41.9-rc.15...v0.41.9-rc.16) (2026-08-28)
+
+### Bug Fixes
+
+- **styles:** form layout fields spacing ([#6379](https://github.com/SAP/fundamental-styles/issues/6379)) ([86a2d7a](https://github.com/SAP/fundamental-styles/commit/86a2d7a629ec04ddd764a45af2317abcedb74fe9))
+
 ## [0.41.9-rc.15](https://github.com/SAP/fundamental-styles/compare/v0.41.9-rc.14...v0.41.9-rc.15) (2026-08-26)
 
 ### Bug Fixes
