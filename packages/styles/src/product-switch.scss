@@ -7,9 +7,12 @@
 
 $block: #{$fd-namespace}-product-switch;
 
-.#{$block} {
+:root {
   --fdProduct_Switch_Item_Border_Color: transparent;
   --fdProductSwitch_Body_BorderRadius: var(--sapPopover_BorderCornerRadius, var(--sapElement_BorderCornerRadius));
+}
+
+.#{$block} {
 
   @mixin fd-product-pseudo-element-background($background) {
     .#{$block}__title {
