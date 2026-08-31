@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.41.9-rc.18](https://github.com/SAP/fundamental-styles/compare/v0.41.9-rc.17...v0.41.9-rc.18) (2026-08-31)
+
+### Bug Fixes
+
+- **styles:** add sticky header area, sticky search to Vertical navigation [ci visual] ([#6382](https://github.com/SAP/fundamental-styles/issues/6382)) ([5dba40c](https://github.com/SAP/fundamental-styles/commit/5dba40c24c43cc1be7b052d9147a2eeef193aaf5))
+
 ## [0.41.9-rc.17](https://github.com/SAP/fundamental-styles/compare/v0.41.9-rc.16...v0.41.9-rc.17) (2026-08-31)
 
 **Note:** Version bump only for package fundamental-styles
