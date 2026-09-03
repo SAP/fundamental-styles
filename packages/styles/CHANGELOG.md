@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.41.9-rc.22](https://github.com/SAP/fundamental-styles/compare/v0.41.9-rc.21...v0.41.9-rc.22) (2026-09-03)
+
+### Features
+
+- **styles:** updates for Settings Dialog ([#6380](https://github.com/SAP/fundamental-styles/issues/6380)) ([314b092](https://github.com/SAP/fundamental-styles/commit/314b092f3574d6d2c4ee88c20ad3145e550858a9))
+
 ## [0.41.9-rc.21](https://github.com/SAP/fundamental-styles/compare/v0.41.9-rc.20...v0.41.9-rc.21) (2026-09-03)
 
 **Note:** Version bump only for package fundamental-styles
