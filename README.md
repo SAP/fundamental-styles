@@ -271,19 +271,20 @@ git clone https://github.com/SAP/fundamental-styles.git
 cd fundamental-styles
 
 # Install dependencies
-npm install
+yarn install
 
 # Start development server
-npm start
+yarn start
 
 # Start with production build
-npm run start:prod
+yarn run start:prod
 ```
 
 ### ⚙️ Prerequisites
 
 - Git
-- [Node.js LTS](https://nodejs.org/)
+- [Node.js](https://nodejs.org/) v24.11.1 (see `.nvmrc` — run `nvm use` to switch automatically)
+- [Yarn](https://yarnpkg.com/)
 
 ### 🤝 Contributing
 

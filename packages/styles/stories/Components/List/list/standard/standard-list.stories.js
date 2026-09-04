@@ -3,6 +3,7 @@ import inactiveExampleHtml from "./inactive.example.html?raw";
 import selectionExampleHtml from "./selection.example.html?raw";
 import borderlessExampleHtml from "./borderless.example.html?raw";
 import footerExampleHtml from "./footer.example.html?raw";
+import longTextExampleHtml from "./long-text.example.html?raw";
 import groupsExampleHtml from "./groups.example.html?raw";
 import iconsExampleHtml from "./icons.example.html?raw";
 import itemCounterExampleHtml from "./item-counter.example.html?raw";
@@ -18,6 +19,7 @@ import searchResultsExampleHtml from "./search-results.example.html?raw";
 import '../../../../../src/list.scss';
 import '../../../../../src/icon.scss';
 import '../../../../../src/checkbox.scss';
+import '../../../../../src/link.scss';
 import '../../../../../src/button.scss';
 import '../../../../../src/busy-indicator.scss';
 import '../../../../../src/avatar.scss';
@@ -190,6 +192,8 @@ Selection.parameters = {
   docs: {
     description: {
       story: `Standard list items can display checkboxes that users can select from. To display standard list items with selection, add the \`fd-list--selection\` modifier class to the main element. To create checkbox form items, add the \`fd-list__form-item\` class within each list element.
+
+When items contain wrapping text (via \`fd-list__item--wrap\` or \`fd-list__title--wrap\`), the checkbox is **centered by default**. To top-align the checkbox instead, add \`fd-list__item--wrap-top-aligned\` to the \`<li>\` element.
 `
     }
   }
@@ -218,6 +222,30 @@ SearchResults.parameters = {
   docs: {
     description: {
       story: `To be used in a popover containing sophisticated search results.`
+    }
+  }
+};
+
+export const LongText = () => longTextExampleHtml;
+LongText.storyName = 'List with long Title and Secondary Text';
+LongText.parameters = {
+  docs: {
+    description: {
+      story: `By default, long title and secondary text is truncated with an ellipsis. Wrapping can be enabled at three levels:
+
+**List level** — add \`fd-list--wrap\` to the root element to wrap all items:
+\`\`\`html
+<ul class="fd-list fd-list--wrap">
+\`\`\`
+
+**Item level** — add \`fd-list__item--wrap\` to a single list item:
+\`\`\`html
+<li class="fd-list__item fd-list__item--wrap">
+\`\`\`
+
+**Element level** — add modifier classes to individual elements:
+- \`fd-list__title--wrap\`
+- \`fd-list__secondary--wrap\``
     }
   }
 };

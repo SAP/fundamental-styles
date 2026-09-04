@@ -1,14 +1,35 @@
-
 <ul class="fd-list fd-list--byline" role="list">
     <li role="listitem" class="fd-list__item">
         <span class="fd-list__thumbnail"><i role="presentation" class="sap-icon--activate"></i></span>
         <div class="fd-list__content">
-            <span class="fd-list__title">List item 1</span>
+            <span class="fd-list__title fd-list__title--wrap">List item 1</span>
+            <span class="fd-list__byline">Byline (description) List item 1 </span>
         </div>
-        <button class="fd-button fd-button--transparent fd-list__button">
+        <button class="fd-button fd-button--transparent fd-list__button" aria-label="Edit>
             <i class="sap-icon--edit"></i>
         </button>
-        <button class="fd-button fd-button--transparent fd-list__button">
+        <button class="fd-button fd-button--transparent fd-list__button" aria-label="Decline">
+            <i class="sap-icon--decline"></i>
+        </button>
+    </li>
+    <li role="listitem" class="fd-list__item">
+        <span class="fd-list__thumbnail"><i role="presentation" class="sap-icon--activate"></i></span>
+        <div class="fd-list__content">
+            <span class="fd-list__title fd-list__title--wrap"
+                >Title that wraps. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat, duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</span
+            >
+            <span class="fd-list__byline fd-list__byline--wrap"
+                >Byline that wraps. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Donec velit
+                neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Proin elementum sapien vel enim facilisis, at faucibus
+                nibh ornare. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas</span
+            >
+        </div>
+        <button class="fd-button fd-button--transparent fd-list__button" aria-label="Edit">
+            <i class="sap-icon--edit"></i>
+        </button>
+        <button class="fd-button fd-button--transparent fd-list__button" aria-label="Decline">
             <i class="sap-icon--decline"></i>
         </button>
     </li>

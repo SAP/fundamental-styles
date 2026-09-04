@@ -18,7 +18,7 @@
 
     .#{$block}__content {
       @include fd-reset();
-      
+
       @include fd-flex(column) {
         flex: 1;
         gap: 0.25rem;
@@ -34,11 +34,17 @@
       max-width: 100%;
       font-style: normal;
       line-height: normal;
-      white-space: normal;
       font-size: var(--sapFontSize);
       color: var(--sapList_TextColor);
       font-family: var(--sapFontSemiboldDuplexFamily);
 
+      @include fd-ellipsis();
+
+      &--wrap {
+        @include fd-wrap();
+      }
+
+      // @deprecated: --truncate is a no-op since truncation is now the default
       &--truncate {
         @include fd-ellipsis();
       }
@@ -51,14 +57,52 @@
       max-width: 100%;
       font-style: normal;
       line-height: normal;
-      white-space: normal;
       font-size: var(--sapFontSize);
       font-family: var(--sapFontFamily);
       color: var(--sapContent_LabelColor);
 
+      @include fd-ellipsis();
+
+      &--wrap {
+        @include fd-wrap();
+      }
+
+      // @deprecated: --truncate is a no-op since truncation is now the default
       &--truncate {
         @include fd-ellipsis();
       }
+    }
+
+    &.#{$block}--wrap {
+      .#{$block}__item {
+        align-items: center;
+      }
+
+      .#{$block}__content {
+        overflow: visible;
+      }
+
+      .#{$block}__title,
+      .#{$block}__subline {
+        @include fd-wrap();
+      }
+    }
+
+    .#{$block}__item--wrap {
+      align-items: center;
+
+      .#{$block}__content {
+        overflow: visible;
+      }
+
+      .#{$block}__title,
+      .#{$block}__subline {
+        @include fd-wrap();
+      }
+    }
+
+    .#{$block}__item:has(.#{$block}__title--wrap, .#{$block}__subline--wrap) {
+      align-items: center;
     }
 
     .#{$block}__active-indicator {

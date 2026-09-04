@@ -92,6 +92,10 @@ $fd-list-byline-section-text-color: var(--sapContent_LabelColor) !default;
 
       font-size: $fd-list-large-font-size;
       min-height: $fd-list-byline-text-line-height;
+
+      &--wrap {
+        @include fd-wrap();
+      }
     }
 
     .#{$block}__byline {
@@ -101,7 +105,7 @@ $fd-list-byline-section-text-color: var(--sapContent_LabelColor) !default;
       font-size: $fd-list-normal-font-size;
       color: $fd-list-byline-section-text-color;
       line-height: $fd-list-byline-text-line-height;
-      padding-block-start: 0.5rem;
+      padding-block-start: 0.75rem;
 
       &--2-col {
         display: flex;
@@ -109,6 +113,8 @@ $fd-list-byline-section-text-color: var(--sapContent_LabelColor) !default;
       }
 
       &--wrap {
+        @include fd-wrap();
+
         .#{$block}__byline-right,
         .#{$block}__byline-left {
           padding-inline: 0;
@@ -125,16 +131,58 @@ $fd-list-byline-section-text-color: var(--sapContent_LabelColor) !default;
       }
     }
 
+    &.#{$block}--wrap {
+      .#{$block}__title,
+      .#{$block}__byline {
+        @include fd-wrap();
+      }
+
+      // In byline link items __thumbnail and __icon are children of __link (not __item).
+      // __link uses fd-flex-vertical-center() which sets align-items: center; override to
+      // top-align the thumbnail/icon with the content when text wraps.
+      .#{$block}__link {
+        align-items: flex-start;
+
+        // The navigation arrow is a decorative ::after with height: 100%, but height: 100%
+        // does not resolve on a flex item inside an auto-height container, so the arrow
+        // collapses to icon size and sits at the top. Keep it centered instead.
+        &--navigation-indicator::after {
+          align-self: center;
+        }
+      }
+    }
+
+    .#{$block}__item--wrap {
+      .#{$block}__title,
+      .#{$block}__byline {
+        @include fd-wrap();
+      }
+
+      // Same __link / ::after alignment fix as &--wrap above.
+      .#{$block}__link {
+        align-items: flex-start;
+
+        &--navigation-indicator::after {
+          align-self: center;
+        }
+      }
+    }
+
+    .#{$block}__item:has(.#{$block}__title--wrap, .#{$block}__byline--wrap) {
+      // Same __link / ::after alignment fix as &--wrap above.
+      .#{$block}__link {
+        align-items: flex-start;
+
+        &--navigation-indicator::after {
+          align-self: center;
+        }
+      }
+    }
+
     .#{$block}__link {
       &--more {
         text-transform: capitalize;
         pointer-events: all;
-      }
-    }
-
-    .#{$block}__title, .#{$block}__byline {
-      &--wrap {
-        white-space: normal;
       }
     }
 
@@ -184,9 +232,6 @@ $fd-list-byline-section-text-color: var(--sapContent_LabelColor) !default;
     &.#{$block}--no-border {
       .#{$block}__item {
         @include fd-set-paddings-y-equal($fd-list-byline-borderless-item-padding-y);
-
-        max-height: $fd-list-byline-item-height;
-        height: 100%;
       }
 
       .#{$block}__item:first-child {
