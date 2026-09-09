@@ -18082,15 +18082,15 @@
       "description": "The background color for elements showing indication 10."
     },
     "_sapIndicationColor_10H": {
-      "value": "209.99999999999977",
+      "value": "0",
       "type": "internal"
     },
     "_sapIndicationColor_10S": {
-      "value": "10.526315789473728%",
+      "value": "0%",
       "type": "internal"
     },
     "_sapIndicationColor_10L": {
-      "value": "92.54901960784314%",
+      "value": "28.627450980392155%",
       "type": "internal"
     },
     "_sapIndicationColor_10A": {
@@ -18202,7 +18202,7 @@
       "type": "internal"
     },
     "_sapIndicationColor_9L": {
-      "value": "100%",
+      "value": "0%",
       "type": "internal"
     },
     "_sapIndicationColor_9A": {

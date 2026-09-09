@@ -1,11 +1,11 @@
 /**
 * Copyright (c) 2012-2025 SAP SE or an SAP affiliate company and Theming Base Content contributors. Licensed under the Apache License, Version 2.0 - see LICENSE.txt.
-* Theming Engine 17.0.18
-* data:{"sModified":"2026-05-26T10:32:59Z"}
+* Theming Engine 17.0.47
+* data:{"sModified":"2026-07-29T12:42:34Z"}
 */
 
 
-/******************* FILE /Base/baseLib/baseTheme/base.less (Version 11.36.3) *******************/
+/******************* FILE /Base/baseLib/baseTheme/base.less (Version 11.36.5) *******************/
 
 
 // [Label "Brand Color"]
@@ -13103,309 +13103,422 @@
 @sapCss_72MonoBold: @sapCss_72Mono;
 @sapCss_72MonoBoldfull: @sapCss_72MonoBold;
 /*!SAP_POSTPROCESS_REDUCE_START*/
-/*<SAP_FREETEXT_LESS>*/
+
 .sapCss_SAP-icons() when (@sapCss_SAP-icons) {
+  font-family: 'SAP-icons';
+  src: @sapFontUrl_SAP-icons_woff2 format('woff2'), @sapFontUrl_SAP-icons_woff format('woff'), @sapFontUrl_SAP-icons_ttf format('truetype'), local('SAP-icons');
+  font-weight: normal;
+  font-style: normal;
+}
+
 @font-face {
-font-family: 'SAP-icons';
-src: @sapFontUrl_SAP-icons_woff2 format('woff2'), @sapFontUrl_SAP-icons_woff format('woff'), @sapFontUrl_SAP-icons_ttf format('truetype'), local('SAP-icons');
-font-weight: normal;
-font-style: normal;
+  .sapCss_SAP-icons();
 }
-}
-.sapCss_SAP-icons();
+
 .sapCss_SAP-icons-TNT() when (@sapCss_SAP-icons-TNT) {
+  font-family: 'SAP-icons-TNT';
+  src: @sapFontUrl_SAP-icons-TNT_woff2 format('woff2'), @sapFontUrl_SAP-icons-TNT_woff format('woff'), @sapFontUrl_SAP-icons-TNT_ttf format('truetype'), local('SAP-icons-TNT');
+  font-weight: normal;
+  font-style: normal;
+}
+
 @font-face {
-font-family: 'SAP-icons-TNT';
-src: @sapFontUrl_SAP-icons-TNT_woff2 format('woff2'), @sapFontUrl_SAP-icons-TNT_woff format('woff'), @sapFontUrl_SAP-icons-TNT_ttf format('truetype'), local('SAP-icons-TNT');
-font-weight: normal;
-font-style: normal;
+  .sapCss_SAP-icons-TNT();
 }
-}
-.sapCss_SAP-icons-TNT();
+
 .sapCss_SAP-icons-Business-Suite() when (@sapCss_SAP-icons-Business-Suite) {
+  font-family: 'SAP-icons-Business-Suite';
+  src: @sapFontUrl_SAP-icons-Business-Suite_woff2 format('woff2'), @sapFontUrl_SAP-icons-Business-Suite_woff format('woff'), @sapFontUrl_SAP-icons-Business-Suite_ttf format('truetype'), local('SAP-icons-Business-Suite_woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
 @font-face {
-font-family: 'SAP-icons-Business-Suite';
-src: @sapFontUrl_SAP-icons-Business-Suite_woff2 format('woff2'), @sapFontUrl_SAP-icons-Business-Suite_woff format('woff'), @sapFontUrl_SAP-icons-Business-Suite_ttf format('truetype'), local('SAP-icons-Business-Suite_woff2');
-font-weight: normal;
-font-style: normal;
+  .sapCss_SAP-icons-Business-Suite();
 }
-}
-.sapCss_SAP-icons-Business-Suite();
+
 .sapCss_72() when (@sapCss_72) {
+  font-family: '72';
+  font-style: normal;
+  font-weight: 400;
+  src: @sapFontUrl_72_Regular_woff2 format('woff2'), @sapFontUrl_72_Regular_woff format('woff'), local('72');
+  unicode-range: U+00, U+0D, U+20-7E, U+A0-FF, U+131, U+152-153, U+161, U+178, U+17D-17E, U+192, U+237, U+2C6, U+2DC, U+3BC, U+1E9E, U+2013-2014, U+2018-201A, U+201C-201E, U+2020-2022, U+2026, U+2030, U+2039-203A, U+2044, U+20AC, U+2122;
+}
+
 @font-face {
-font-family: '72';
-font-style: normal;
-font-weight: 400;
-src: @sapFontUrl_72_Regular_woff2 format('woff2'), @sapFontUrl_72_Regular_woff format('woff'), local('72');
-unicode-range: U+00, U+0D, U+20-7E, U+A0-FF, U+131, U+152-153, U+161, U+178, U+17D-17E, U+192, U+237, U+2C6, U+2DC, U+3BC, U+1E9E, U+2013-2014, U+2018-201A, U+201C-201E, U+2020-2022, U+2026, U+2030, U+2039-203A, U+2044, U+20AC, U+2122;
+  .sapCss_72();
 }
-}
-.sapCss_72();
+
 .sapCss_72full() when (@sapCss_72full) {
+  font-family: '72full';
+  font-style: normal;
+  font-weight: 400;
+  src: @sapFontUrl_72_Regular_full_woff2 format('woff2'), @sapFontUrl_72_Regular_full_woff format('woff');
+}
+
 @font-face {
-font-family: '72full';
-font-style: normal;
-font-weight: 400;
-src: @sapFontUrl_72_Regular_full_woff2 format('woff2'), @sapFontUrl_72_Regular_full_woff format('woff');
+  .sapCss_72full();
 }
-}
-.sapCss_72full();
+
 .sapCss_72Bold() when (@sapCss_72Bold) {
+  font-family: '72-Bold';
+  src: @sapFontUrl_72_Bold_woff2 format('woff2'), @sapFontUrl_72_Bold_woff format('woff'), local('72-Bold');
+  unicode-range: U+00, U+0D, U+20-7E, U+A0-FF, U+131, U+152-153, U+161, U+178, U+17D-17E, U+192, U+237, U+2C6, U+2DC, U+3BC, U+1E9E, U+2013-2014, U+2018-201A, U+201C-201E, U+2020-2022, U+2026, U+2030, U+2039-203A, U+2044, U+20AC, U+2122;
+}
+
+.sapCss_72Bold_weight() when (@sapCss_72Bold) {
+  font-family: '72';
+  font-style: normal;
+  font-weight: 700;
+  src: @sapFontUrl_72_Bold_woff2 format('woff2'), @sapFontUrl_72_Bold_woff format('woff'), local('72-Bold');
+  unicode-range: U+00, U+0D, U+20-7E, U+A0-FF, U+131, U+152-153, U+161, U+178, U+17D-17E, U+192, U+237, U+2C6, U+2DC, U+3BC, U+1E9E, U+2013-2014, U+2018-201A, U+201C-201E, U+2020-2022, U+2026, U+2030, U+2039-203A, U+2044, U+20AC, U+2122;
+}
+
 @font-face {
-font-family: '72-Bold';
-src: @sapFontUrl_72_Bold_woff2 format('woff2'), @sapFontUrl_72_Bold_woff format('woff'), local('72-Bold');
-unicode-range: U+00, U+0D, U+20-7E, U+A0-FF, U+131, U+152-153, U+161, U+178, U+17D-17E, U+192, U+237, U+2C6, U+2DC, U+3BC, U+1E9E, U+2013-2014, U+2018-201A, U+201C-201E, U+2020-2022, U+2026, U+2030, U+2039-203A, U+2044, U+20AC, U+2122;
+  .sapCss_72Bold();
 }
+
 @font-face {
-font-family: '72';
-font-style: normal;
-font-weight: 700;
-src: @sapFontUrl_72_Bold_woff2 format('woff2'), @sapFontUrl_72_Bold_woff format('woff'), local('72-Bold');
-unicode-range: U+00, U+0D, U+20-7E, U+A0-FF, U+131, U+152-153, U+161, U+178, U+17D-17E, U+192, U+237, U+2C6, U+2DC, U+3BC, U+1E9E, U+2013-2014, U+2018-201A, U+201C-201E, U+2020-2022, U+2026, U+2030, U+2039-203A, U+2044, U+20AC, U+2122;
+  .sapCss_72Bold_weight();
 }
-}
-.sapCss_72Bold();
+
 .sapCss_72Boldfull() when (@sapCss_72Boldfull) {
+  font-family: '72-Boldfull';
+  src: @sapFontUrl_72_Bold_full_woff2 format('woff2'), @sapFontUrl_72_Bold_full_woff format('woff');
+}
+
+.sapCss_72Boldfull_weight() when (@sapCss_72Boldfull) {
+  font-family: '72full';
+  font-style: normal;
+  font-weight: 700;
+  src: @sapFontUrl_72_Bold_full_woff2 format('woff2'), @sapFontUrl_72_Bold_full_woff format('woff');
+}
+
 @font-face {
-font-family: '72-Boldfull';
-src: @sapFontUrl_72_Bold_full_woff2 format('woff2'), @sapFontUrl_72_Bold_full_woff format('woff');
+  .sapCss_72Boldfull();
 }
+
 @font-face {
-font-family: '72full';
-font-style: normal;
-font-weight: 700;
-src: @sapFontUrl_72_Bold_full_woff2 format('woff2'), @sapFontUrl_72_Bold_full_woff format('woff');
+  .sapCss_72Boldfull_weight();
 }
-}
-.sapCss_72Boldfull();
+
 .sapCss_72Semibold() when (@sapCss_72Semibold) {
+  font-family: '72-Semibold';
+  src: @sapFontUrl_72_Semibold_woff2 format('woff2'), @sapFontUrl_72_Semibold_woff format('woff'), local('72-Semibold');
+  unicode-range: U+00, U+0D, U+20-7E, U+A0-FF, U+131, U+152-153, U+161, U+178, U+17D-17E, U+192, U+237, U+2C6, U+2DC, U+3BC, U+1E9E, U+2013-2014, U+2018-201A, U+201C-201E, U+2020-2022, U+2026, U+2030, U+2039-203A, U+2044, U+20AC, U+2122;
+}
+
+.sapCss_72Semibold_weight() when (@sapCss_72Semibold) {
+  font-family: '72';
+  font-style: normal;
+  font-weight: 600;
+  src: @sapFontUrl_72_Semibold_woff2 format('woff2'), @sapFontUrl_72_Semibold_woff format('woff'), local('72-Semibold');
+  unicode-range: U+00, U+0D, U+20-7E, U+A0-FF, U+131, U+152-153, U+161, U+178, U+17D-17E, U+192, U+237, U+2C6, U+2DC, U+3BC, U+1E9E, U+2013-2014, U+2018-201A, U+201C-201E, U+2020-2022, U+2026, U+2030, U+2039-203A, U+2044, U+20AC, U+2122;
+}
+
 @font-face {
-font-family: '72-Semibold';
-src: @sapFontUrl_72_Semibold_woff2 format('woff2'), @sapFontUrl_72_Semibold_woff format('woff'), local('72-Semibold');
-unicode-range: U+00, U+0D, U+20-7E, U+A0-FF, U+131, U+152-153, U+161, U+178, U+17D-17E, U+192, U+237, U+2C6, U+2DC, U+3BC, U+1E9E, U+2013-2014, U+2018-201A, U+201C-201E, U+2020-2022, U+2026, U+2030, U+2039-203A, U+2044, U+20AC, U+2122;
+  .sapCss_72Semibold();
 }
+
 @font-face {
-font-family: '72';
-font-style: normal;
-font-weight: 600;
-src: @sapFontUrl_72_Semibold_woff2 format('woff2'), @sapFontUrl_72_Semibold_woff format('woff'), local('72-Semibold');
-unicode-range: U+00, U+0D, U+20-7E, U+A0-FF, U+131, U+152-153, U+161, U+178, U+17D-17E, U+192, U+237, U+2C6, U+2DC, U+3BC, U+1E9E, U+2013-2014, U+2018-201A, U+201C-201E, U+2020-2022, U+2026, U+2030, U+2039-203A, U+2044, U+20AC, U+2122;
+  .sapCss_72Semibold_weight();
 }
-}
-.sapCss_72Semibold();
+
 .sapCss_72Semiboldfull() when (@sapCss_72Semiboldfull) {
+  font-family: '72-Semiboldfull';
+  src: @sapFontUrl_72_Semibold_full_woff2 format('woff2'), @sapFontUrl_72_Semibold_full_woff format('woff');
+}
+
+.sapCss_72Semiboldfull_weight() when (@sapCss_72Semiboldfull) {
+  font-family: '72full';
+  font-style: normal;
+  font-weight: 600;
+  src: @sapFontUrl_72_Semibold_full_woff2 format('woff2'), @sapFontUrl_72_Semibold_full_woff format('woff');
+}
+
 @font-face {
-font-family: '72-Semiboldfull';
-src: @sapFontUrl_72_Semibold_full_woff2 format('woff2'), @sapFontUrl_72_Semibold_full_woff format('woff');
+  .sapCss_72Semiboldfull();
 }
+
 @font-face {
-font-family: '72full';
-font-style: normal;
-font-weight: 600;
-src: @sapFontUrl_72_Semibold_full_woff2 format('woff2'), @sapFontUrl_72_Semibold_full_woff format('woff');
+  .sapCss_72Semiboldfull_weight();
 }
-}
-.sapCss_72Semiboldfull();
+
 .sapCss_72SemiboldDuplex() when (@sapCss_72SemiboldDuplex) {
+  font-family: '72-SemiboldDuplex';
+  src: @sapFontUrl_72_SemiboldDuplex_woff2 format('woff2'), @sapFontUrl_72_SemiboldDuplex_woff format('woff'), local('72-SemiboldDuplex');
+  unicode-range: U+00, U+0D, U+20-7E, U+A0-FF, U+131, U+152-153, U+161, U+178, U+17D-17E, U+192, U+237, U+2C6, U+2DC, U+3BC, U+1E9E, U+2013-2014, U+2018-201A, U+201C-201E, U+2020-2022, U+2026, U+2030, U+2039-203A, U+2044, U+20AC, U+2122;
+}
+
 @font-face {
-font-family: '72-SemiboldDuplex';
-src: @sapFontUrl_72_SemiboldDuplex_woff2 format('woff2'), @sapFontUrl_72_SemiboldDuplex_woff format('woff'), local('72-SemiboldDuplex');
-unicode-range: U+00, U+0D, U+20-7E, U+A0-FF, U+131, U+152-153, U+161, U+178, U+17D-17E, U+192, U+237, U+2C6, U+2DC, U+3BC, U+1E9E, U+2013-2014, U+2018-201A, U+201C-201E, U+2020-2022, U+2026, U+2030, U+2039-203A, U+2044, U+20AC, U+2122;
+  .sapCss_72SemiboldDuplex();
 }
-}
-.sapCss_72SemiboldDuplex();
+
 .sapCss_72SemiboldDuplexfull() when (@sapCss_72SemiboldDuplexfull) {
+  font-family: '72-SemiboldDuplexfull';
+  src: @sapFontUrl_72_SemiboldDuplex_full_woff2 format('woff2'), @sapFontUrl_72_SemiboldDuplex_full_woff format('woff');
+}
+
 @font-face {
-font-family: '72-SemiboldDuplexfull';
-src: @sapFontUrl_72_SemiboldDuplex_full_woff2 format('woff2'), @sapFontUrl_72_SemiboldDuplex_full_woff format('woff');
+  .sapCss_72SemiboldDuplexfull();
 }
-}
-.sapCss_72SemiboldDuplexfull();
+
 .sapCss_72Light() when (@sapCss_72Light) {
+  font-family: '72-Light';
+  src: @sapFontUrl_72_Light_woff2 format('woff2'), @sapFontUrl_72_Light_woff format('woff'), local('72-Light');
+  unicode-range: U+00, U+0D, U+20-7E, U+A0-FF, U+131, U+152-153, U+161, U+178, U+17D-17E, U+192, U+237, U+2C6, U+2DC, U+3BC, U+1E9E, U+2013-2014, U+2018-201A, U+201C-201E, U+2020-2022, U+2026, U+2030, U+2039-203A, U+2044, U+20AC, U+2122;
+}
+
+.sapCss_72Light_weight() when (@sapCss_72Light) {
+  font-family: '72';
+  font-style: normal;
+  font-weight: 300;
+  src: @sapFontUrl_72_Light_woff2 format('woff2'), @sapFontUrl_72_Light_woff format('woff'), local('72-Light');
+  unicode-range: U+00, U+0D, U+20-7E, U+A0-FF, U+131, U+152-153, U+161, U+178, U+17D-17E, U+192, U+237, U+2C6, U+2DC, U+3BC, U+1E9E, U+2013-2014, U+2018-201A, U+201C-201E, U+2020-2022, U+2026, U+2030, U+2039-203A, U+2044, U+20AC, U+2122;
+}
+
 @font-face {
-font-family: '72-Light';
-src: @sapFontUrl_72_Light_woff2 format('woff2'), @sapFontUrl_72_Light_woff format('woff'), local('72-Light');
-unicode-range: U+00, U+0D, U+20-7E, U+A0-FF, U+131, U+152-153, U+161, U+178, U+17D-17E, U+192, U+237, U+2C6, U+2DC, U+3BC, U+1E9E, U+2013-2014, U+2018-201A, U+201C-201E, U+2020-2022, U+2026, U+2030, U+2039-203A, U+2044, U+20AC, U+2122;
+  .sapCss_72Light();
 }
+
 @font-face {
-font-family: '72';
-font-style: normal;
-font-weight: 300;
-src: @sapFontUrl_72_Light_woff2 format('woff2'), @sapFontUrl_72_Light_woff format('woff'), local('72-Light');
-unicode-range: U+00, U+0D, U+20-7E, U+A0-FF, U+131, U+152-153, U+161, U+178, U+17D-17E, U+192, U+237, U+2C6, U+2DC, U+3BC, U+1E9E, U+2013-2014, U+2018-201A, U+201C-201E, U+2020-2022, U+2026, U+2030, U+2039-203A, U+2044, U+20AC, U+2122;
+  .sapCss_72Light_weight();
 }
-}
-.sapCss_72Light();
+
 .sapCss_72Lightfull() when (@sapCss_72Lightfull) {
+  font-family: '72-Lightfull';
+  src: @sapFontUrl_72_Light_full_woff2 format('woff2'), @sapFontUrl_72_Light_full_woff format('woff');
+}
+
+.sapCss_72Lightfull_weight() when (@sapCss_72Lightfull) {
+  font-family: '72full';
+  font-style: normal;
+  font-weight: 300;
+  src: @sapFontUrl_72_Light_full_woff2 format('woff2'), @sapFontUrl_72_Light_full_woff format('woff');
+}
+
 @font-face {
-font-family: '72-Lightfull';
-src: @sapFontUrl_72_Light_full_woff2 format('woff2'), @sapFontUrl_72_Light_full_woff format('woff');
+  .sapCss_72Lightfull();
 }
+
 @font-face {
-font-family: '72full';
-font-style: normal;
-font-weight: 300;
-src: @sapFontUrl_72_Light_full_woff2 format('woff2'), @sapFontUrl_72_Light_full_woff format('woff');
+  .sapCss_72Lightfull_weight();
 }
-}
-.sapCss_72Lightfull();
+
 .sapCss_72Black() when (@sapCss_72Black) {
+  font-family: '72Black';
+  src: @sapFontUrl_72_Black_woff2 format('woff2'), @sapFontUrl_72_Black_woff format('woff'), local('72Black');
+  unicode-range: U+00, U+0D, U+20-7E, U+A0-FF, U+131, U+152-153, U+160-161, U+178, U+17D-17E, U+192, U+237, U+2C6-2C7, U+2DC, U+3BC, U+1E0E, U+2013-2014, U+2018-2019, U+201A, U+201C-201E, U+2020-2022, U+2026, U+2030, U+2039-203A, U+2044, U+20AC, U+2122;
+}
+
+.sapCss_72Black_weight() when (@sapCss_72Black) {
+  font-family: '72';
+  font-style: normal;
+  font-weight: 900;
+  src: @sapFontUrl_72_Black_woff2 format('woff2'), @sapFontUrl_72_Black_woff format('woff'), local('72Black');
+  unicode-range: U+00, U+0D, U+20-7E, U+A0-FF, U+131, U+152-153, U+160-161, U+178, U+17D-17E, U+192, U+237, U+2C6-2C7, U+2DC, U+3BC, U+1E0E, U+2013-2014, U+2018-2019, U+201A, U+201C-201E, U+2020-2022, U+2026, U+2030, U+2039-203A, U+2044, U+20AC, U+2122;
+}
+
 @font-face {
-font-family: '72Black';
-src: @sapFontUrl_72_Black_woff2 format('woff2'), @sapFontUrl_72_Black_woff format('woff'), local('72Black');
-unicode-range: U+00, U+0D, U+20-7E, U+A0-FF, U+131, U+152-153, U+160-161, U+178, U+17D-17E, U+192, U+237, U+2C6-2C7, U+2DC, U+3BC, U+1E0E, U+2013-2014, U+2018-2019, U+201A, U+201C-201E, U+2020-2022, U+2026, U+2030, U+2039-203A, U+2044, U+20AC, U+2122;
+  .sapCss_72Black();
 }
+
 @font-face {
-font-family: '72';
-font-style: normal;
-font-weight: 900;
-src: @sapFontUrl_72_Black_woff2 format('woff2'), @sapFontUrl_72_Black_woff format('woff'), local('72Black');
-unicode-range: U+00, U+0D, U+20-7E, U+A0-FF, U+131, U+152-153, U+160-161, U+178, U+17D-17E, U+192, U+237, U+2C6-2C7, U+2DC, U+3BC, U+1E0E, U+2013-2014, U+2018-2019, U+201A, U+201C-201E, U+2020-2022, U+2026, U+2030, U+2039-203A, U+2044, U+20AC, U+2122;
+  .sapCss_72Black_weight();
 }
-}
-.sapCss_72Black();
+
 .sapCss_72Blackfull() when (@sapCss_72Blackfull) {
+  font-family: '72Blackfull';
+  src: @sapFontUrl_72_Black_full_woff2 format('woff2'), @sapFontUrl_72_Black_full_woff format('woff');
+}
+
+.sapCss_72Blackfull_weight() when (@sapCss_72Blackfull) {
+  font-family: '72full';
+  font-style: normal;
+  font-weight: 900;
+  src: @sapFontUrl_72_Black_full_woff2 format('woff2'), @sapFontUrl_72_Black_full_woff format('woff');
+}
+
 @font-face {
-font-family: '72Blackfull';
-src: @sapFontUrl_72_Black_full_woff2 format('woff2'), @sapFontUrl_72_Black_full_woff format('woff');
+  .sapCss_72Blackfull();
 }
+
 @font-face {
-font-family: '72full';
-font-style: normal;
-font-weight: 900;
-src: @sapFontUrl_72_Black_full_woff2 format('woff2'), @sapFontUrl_72_Black_full_woff format('woff');
+  .sapCss_72Blackfull_weight();
 }
-}
-.sapCss_72Blackfull();
+
 .sapCss_72BoldItalic() when (@sapCss_72BoldItalic) {
+  font-family: '72-BoldItalic';
+  src: @sapFontUrl_72_BoldItalic_woff2 format('woff2'), @sapFontUrl_72_BoldItalic_woff format('woff'), local('72-BoldItalic');
+  unicode-range: U+00, U+0D, U+20-7E, U+A0-FF, U+131, U+152-153, U+161, U+178, U+17D-17E, U+192, U+237, U+2C6, U+2DC, U+3BC, U+1E9E, U+2013-2014, U+2018-201A, U+201C-201E, U+2020-2022, U+2026, U+2030, U+2039-203A, U+2044, U+20AC, U+2122;
+}
+
+.sapCss_72BoldItalic_weight() when (@sapCss_72BoldItalic) {
+  font-family: '72';
+  font-style: italic;
+  font-weight: 700;
+  src: @sapFontUrl_72_BoldItalic_woff2 format('woff2'), @sapFontUrl_72_BoldItalic_woff format('woff'), local('72-BoldItalic');
+  unicode-range: U+00, U+0D, U+20-7E, U+A0-FF, U+131, U+152-153, U+161, U+178, U+17D-17E, U+192, U+237, U+2C6, U+2DC, U+3BC, U+1E9E, U+2013-2014, U+2018-201A, U+201C-201E, U+2020-2022, U+2026, U+2030, U+2039-203A, U+2044, U+20AC, U+2122;
+}
+
 @font-face {
-font-family: '72-BoldItalic';
-src: @sapFontUrl_72_BoldItalic_woff2 format('woff2'), @sapFontUrl_72_BoldItalic_woff format('woff'), local('72-BoldItalic');
-unicode-range: U+00, U+0D, U+20-7E, U+A0-FF, U+131, U+152-153, U+161, U+178, U+17D-17E, U+192, U+237, U+2C6, U+2DC, U+3BC, U+1E9E, U+2013-2014, U+2018-201A, U+201C-201E, U+2020-2022, U+2026, U+2030, U+2039-203A, U+2044, U+20AC, U+2122;
+  .sapCss_72BoldItalic();
 }
+
 @font-face {
-font-family: '72';
-font-style: italic;
-font-weight: 700;
-src: @sapFontUrl_72_BoldItalic_woff2 format('woff2'), @sapFontUrl_72_BoldItalic_woff format('woff'), local('72-BoldItalic');
-unicode-range: U+00, U+0D, U+20-7E, U+A0-FF, U+131, U+152-153, U+161, U+178, U+17D-17E, U+192, U+237, U+2C6, U+2DC, U+3BC, U+1E9E, U+2013-2014, U+2018-201A, U+201C-201E, U+2020-2022, U+2026, U+2030, U+2039-203A, U+2044, U+20AC, U+2122;
+  .sapCss_72BoldItalic_weight();
 }
-}
-.sapCss_72BoldItalic();
+
 .sapCss_72BoldItalicfull() when (@sapCss_72BoldItalicfull) {
+  font-family: '72full';
+  font-style: italic;
+  font-weight: 700;
+  src: @sapFontUrl_72_BoldItalic_full_woff2 format('woff2'), @sapFontUrl_72_BoldItalic_full_woff format('woff');
+}
+
 @font-face {
-font-family: '72full';
-font-style: italic;
-font-weight: 700;
-src: @sapFontUrl_72_BoldItalic_full_woff2 format('woff2'), @sapFontUrl_72_BoldItalic_full_woff format('woff');
+  .sapCss_72BoldItalicfull();
 }
-}
-.sapCss_72BoldItalicfull();
+
 .sapCss_72Condensed() when (@sapCss_72Condensed) {
+  font-family: '72-Condensed';
+  src: @sapFontUrl_72_Condensed_woff2 format('woff2'), @sapFontUrl_72_Condensed_woff format('woff'), local('72-Condensed');
+  unicode-range: U+00, U+0D, U+20-7E, U+A0-FF, U+131, U+152-153, U+161, U+178, U+17D-17E, U+192, U+237, U+2C6, U+2DC, U+3BC, U+1E9E, U+2013-2014, U+2018-201A, U+201C-201E, U+2020-2022, U+2026, U+2030, U+2039-203A, U+2044, U+20AC, U+2122;
+}
+
+.sapCss_72Condensed_weight() when (@sapCss_72Condensed) {
+  font-family: '72';
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: condensed;
+  src: @sapFontUrl_72_Condensed_woff2 format('woff2'), @sapFontUrl_72_Condensed_woff format('woff'), local('72-Condensed');
+  unicode-range: U+00, U+0D, U+20-7E, U+A0-FF, U+131, U+152-153, U+161, U+178, U+17D-17E, U+192, U+237, U+2C6, U+2DC, U+3BC, U+1E9E, U+2013-2014, U+2018-201A, U+201C-201E, U+2020-2022, U+2026, U+2030, U+2039-203A, U+2044, U+20AC, U+2122;
+}
+
 @font-face {
-font-family: '72-Condensed';
-src: @sapFontUrl_72_Condensed_woff2 format('woff2'), @sapFontUrl_72_Condensed_woff format('woff'), local('72-Condensed');
-unicode-range: U+00, U+0D, U+20-7E, U+A0-FF, U+131, U+152-153, U+161, U+178, U+17D-17E, U+192, U+237, U+2C6, U+2DC, U+3BC, U+1E9E, U+2013-2014, U+2018-201A, U+201C-201E, U+2020-2022, U+2026, U+2030, U+2039-203A, U+2044, U+20AC, U+2122;
+  .sapCss_72Condensed();
 }
+
 @font-face {
-font-family: '72';
-font-style: normal;
-font-weight: 400;
-font-stretch: condensed;
-src: @sapFontUrl_72_Condensed_woff2 format('woff2'), @sapFontUrl_72_Condensed_woff format('woff'), local('72-Condensed');
-unicode-range: U+00, U+0D, U+20-7E, U+A0-FF, U+131, U+152-153, U+161, U+178, U+17D-17E, U+192, U+237, U+2C6, U+2DC, U+3BC, U+1E9E, U+2013-2014, U+2018-201A, U+201C-201E, U+2020-2022, U+2026, U+2030, U+2039-203A, U+2044, U+20AC, U+2122;
+  .sapCss_72Condensed_weight();
 }
-}
-.sapCss_72Condensed();
+
 .sapCss_72Condensedfull() when (@sapCss_72Condensedfull) {
+  font-family: '72';
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: condensed;
+  src: @sapFontUrl_72_Condensed_full_woff2 format('woff2'), @sapFontUrl_72_Condensed_full_woff format('woff');
+  unicode-range: U+00, U+0D, U+20-7E, U+A0-FF, U+131, U+152-153, U+161, U+178, U+17D-17E, U+192, U+237, U+2C6, U+2DC, U+3BC, U+1E9E, U+2013-2014, U+2018-201A, U+201C-201E, U+2020-2022, U+2026, U+2030, U+2039-203A, U+2044, U+20AC, U+2122;
+}
+
 @font-face {
-font-family: '72';
-font-style: normal;
-font-weight: 400;
-font-stretch: condensed;
-src: @sapFontUrl_72_Condensed_full_woff2 format('woff2'), @sapFontUrl_72_Condensed_full_woff format('woff');
-unicode-range: U+00, U+0D, U+20-7E, U+A0-FF, U+131, U+152-153, U+161, U+178, U+17D-17E, U+192, U+237, U+2C6, U+2DC, U+3BC, U+1E9E, U+2013-2014, U+2018-201A, U+201C-201E, U+2020-2022, U+2026, U+2030, U+2039-203A, U+2044, U+20AC, U+2122;
+  .sapCss_72Condensedfull();
 }
-}
-.sapCss_72Condensedfull();
+
 .sapCss_72CondensedBold() when (@sapCss_72CondensedBold) {
+  font-family: '72-CondensedBold';
+  src: @sapFontUrl_72_CondensedBold_woff2 format('woff2'), @sapFontUrl_72_CondensedBold_woff format('woff'), local('72-CondensedBold');
+  unicode-range: U+00, U+0D, U+20-7E, U+A0-FF, U+131, U+152-153, U+161, U+178, U+17D-17E, U+192, U+237, U+2C6, U+2DC, U+3BC, U+1E9E, U+2013-2014, U+2018-201A, U+201C-201E, U+2020-2022, U+2026, U+2030, U+2039-203A, U+2044, U+20AC, U+2122;
+}
+
+.sapCss_72CondensedBold_weight() when (@sapCss_72CondensedBold) {
+  font-family: '72';
+  font-style: normal;
+  font-weight: 700;
+  font-stretch: condensed;
+  src: @sapFontUrl_72_CondensedBold_woff2 format('woff2'), @sapFontUrl_72_CondensedBold_woff format('woff'), local('72-CondensedBold');
+  unicode-range: U+00, U+0D, U+20-7E, U+A0-FF, U+131, U+152-153, U+161, U+178, U+17D-17E, U+192, U+237, U+2C6, U+2DC, U+3BC, U+1E9E, U+2013-2014, U+2018-201A, U+201C-201E, U+2020-2022, U+2026, U+2030, U+2039-203A, U+2044, U+20AC, U+2122;
+}
+
 @font-face {
-font-family: '72-CondensedBold';
-src: @sapFontUrl_72_CondensedBold_woff2 format('woff2'), @sapFontUrl_72_CondensedBold_woff format('woff'), local('72-CondensedBold');
-unicode-range: U+00, U+0D, U+20-7E, U+A0-FF, U+131, U+152-153, U+161, U+178, U+17D-17E, U+192, U+237, U+2C6, U+2DC, U+3BC, U+1E9E, U+2013-2014, U+2018-201A, U+201C-201E, U+2020-2022, U+2026, U+2030, U+2039-203A, U+2044, U+20AC, U+2122;
+  .sapCss_72CondensedBold();
 }
+
 @font-face {
-font-family: '72';
-font-style: normal;
-font-weight: 700;
-font-stretch: condensed;
-src: @sapFontUrl_72_CondensedBold_woff2 format('woff2'), @sapFontUrl_72_CondensedBold_woff format('woff'), local('72-CondensedBold');
-unicode-range: U+00, U+0D, U+20-7E, U+A0-FF, U+131, U+152-153, U+161, U+178, U+17D-17E, U+192, U+237, U+2C6, U+2DC, U+3BC, U+1E9E, U+2013-2014, U+2018-201A, U+201C-201E, U+2020-2022, U+2026, U+2030, U+2039-203A, U+2044, U+20AC, U+2122;
+  .sapCss_72CondensedBold_weight();
 }
-}
-.sapCss_72CondensedBold();
+
 .sapCss_72CondensedBoldfull() when (@sapCss_72CondensedBoldfull) {
+  font-family: '72full';
+  font-style: normal;
+  font-weight: 700;
+  font-stretch: condensed;
+  src: @sapFontUrl_72_CondensedBold_full_woff2 format('woff2'), @sapFontUrl_72_CondensedBold_full_woff format('woff');
+}
+
 @font-face {
-font-family: '72full';
-font-style: normal;
-font-weight: 700;
-font-stretch: condensed;
-src: @sapFontUrl_72_CondensedBold_full_woff2 format('woff2'), @sapFontUrl_72_CondensedBold_full_woff format('woff');
+  .sapCss_72CondensedBoldfull();
 }
-}
-.sapCss_72CondensedBoldfull();
+
 .sapCss_72Italic() when (@sapCss_72Italic) {
+  font-family: '72-Italic';
+  src: @sapFontUrl_72_Italic_woff2 format('woff2'), @sapFontUrl_72_Italic_woff format('woff'), local('72-Italic');
+  unicode-range: U+00, U+0D, U+20-7E, U+A0-FF, U+131, U+152-153, U+161, U+178, U+17D-17E, U+192, U+237, U+2C6, U+2DC, U+3BC, U+1E9E, U+2013-2014, U+2018-201A, U+201C-201E, U+2020-2022, U+2026, U+2030, U+2039-203A, U+2044, U+20AC, U+2122;
+}
+
+.sapCss_72Italic_weight() when (@sapCss_72Italic) {
+  font-family: '72';
+  font-style: italic;
+  font-weight: 400;
+  src: @sapFontUrl_72_Italic_woff2 format('woff2'), @sapFontUrl_72_Italic_woff format('woff'), local('72-Italic');
+  unicode-range: U+00, U+0D, U+20-7E, U+A0-FF, U+131, U+152-153, U+161, U+178, U+17D-17E, U+192, U+237, U+2C6, U+2DC, U+3BC, U+1E9E, U+2013-2014, U+2018-201A, U+201C-201E, U+2020-2022, U+2026, U+2030, U+2039-203A, U+2044, U+20AC, U+2122;
+}
+
 @font-face {
-font-family: '72-Italic';
-src: @sapFontUrl_72_Italic_woff2 format('woff2'), @sapFontUrl_72_Italic_woff format('woff'), local('72-Italic');
-unicode-range: U+00, U+0D, U+20-7E, U+A0-FF, U+131, U+152-153, U+161, U+178, U+17D-17E, U+192, U+237, U+2C6, U+2DC, U+3BC, U+1E9E, U+2013-2014, U+2018-201A, U+201C-201E, U+2020-2022, U+2026, U+2030, U+2039-203A, U+2044, U+20AC, U+2122;
+  .sapCss_72Italic();
 }
+
 @font-face {
-font-family: '72';
-font-style: italic;
-font-weight: 400;
-src: @sapFontUrl_72_Italic_woff2 format('woff2'), @sapFontUrl_72_Italic_woff format('woff'), local('72-Italic');
-unicode-range: U+00, U+0D, U+20-7E, U+A0-FF, U+131, U+152-153, U+161, U+178, U+17D-17E, U+192, U+237, U+2C6, U+2DC, U+3BC, U+1E9E, U+2013-2014, U+2018-201A, U+201C-201E, U+2020-2022, U+2026, U+2030, U+2039-203A, U+2044, U+20AC, U+2122;
+  .sapCss_72Italic_weight();
 }
-}
-.sapCss_72Italic();
+
 .sapCss_72Italicfull() when (@sapCss_72Italicfull) {
+  font-family: '72full';
+  font-style: italic;
+  font-weight: 400;
+  src: @sapFontUrl_72_Italic_full_woff2 format('woff2'), @sapFontUrl_72_Italic_full_woff format('woff');
+}
+
 @font-face {
-font-family: '72full';
-font-style: italic;
-font-weight: 400;
-src: @sapFontUrl_72_Italic_full_woff2 format('woff2'), @sapFontUrl_72_Italic_full_woff format('woff');
+  .sapCss_72Italicfull();
 }
-}
-.sapCss_72Italicfull();
+
 .sapCss_72Mono() when (@sapCss_72Mono) {
+  font-family: '72Mono';
+  src: @sapFontUrl_72Mono_Regular_woff2 format('woff2'), @sapFontUrl_72Mono_Regular_woff format('woff'), local('72Mono');
+  unicode-range: U+00, U+0D, U+20-7E, U+A0-FF, U+131, U+152-153, U+161, U+178, U+17D-17E, U+192, U+237, U+2C6, U+2DC, U+3BC, U+1E9E, U+2013-2014, U+2018-201A, U+201C-201E, U+2020-2022, U+2026, U+2030, U+2039-203A, U+2044, U+20AC, U+2122;
+}
+
 @font-face {
-font-family: '72Mono';
-src: @sapFontUrl_72Mono_Regular_woff2 format('woff2'), @sapFontUrl_72Mono_Regular_woff format('woff'), local('72Mono');
-unicode-range: U+00, U+0D, U+20-7E, U+A0-FF, U+131, U+152-153, U+161, U+178, U+17D-17E, U+192, U+237, U+2C6, U+2DC, U+3BC, U+1E9E, U+2013-2014, U+2018-201A, U+201C-201E, U+2020-2022, U+2026, U+2030, U+2039-203A, U+2044, U+20AC, U+2122;
+  .sapCss_72Mono();
 }
-}
-.sapCss_72Mono();
+
 .sapCss_72Monofull() when (@sapCss_72Monofull) {
+  font-family: '72Monofull';
+  src: @sapFontUrl_72Mono_Regular_full_woff2 format('woff2'), @sapFontUrl_72Mono_Regular_full_woff format('woff');
+}
+
 @font-face {
-font-family: '72Monofull';
-src: @sapFontUrl_72Mono_Regular_full_woff2 format('woff2'), @sapFontUrl_72Mono_Regular_full_woff format('woff');
+  .sapCss_72Monofull();
 }
-}
-.sapCss_72Monofull();
+
 .sapCss_72MonoBold() when (@sapCss_72MonoBold) {
+  font-family: '72Mono-Bold';
+  src: @sapFontUrl_72Mono_Bold_woff2 format('woff2'), @sapFontUrl_72Mono_Bold_woff format('woff'), local('72Mono-Bold');
+  unicode-range: U+00, U+0D, U+20-7E, U+A0-FF, U+131, U+152-153, U+161, U+178, U+17D-17E, U+192, U+237, U+2C6, U+2DC, U+3BC, U+1E9E, U+2013-2014, U+2018-201A, U+201C-201E, U+2020-2022, U+2026, U+2030, U+2039-203A, U+2044, U+20AC, U+2122;
+}
+
 @font-face {
-font-family: '72Mono-Bold';
-src: @sapFontUrl_72Mono_Bold_woff2 format('woff2'), @sapFontUrl_72Mono_Bold_woff format('woff'), local('72Mono-Bold');
-unicode-range: U+00, U+0D, U+20-7E, U+A0-FF, U+131, U+152-153, U+161, U+178, U+17D-17E, U+192, U+237, U+2C6, U+2DC, U+3BC, U+1E9E, U+2013-2014, U+2018-201A, U+201C-201E, U+2020-2022, U+2026, U+2030, U+2039-203A, U+2044, U+20AC, U+2122;
+  .sapCss_72MonoBold();
 }
-}
-.sapCss_72MonoBold();
+
 .sapCss_72MonoBoldfull() when (@sapCss_72MonoBoldfull) {
+  font-family: '72Mono-Boldfull';
+  src: @sapFontUrl_72Mono_Bold_full_woff2 format('woff2'), @sapFontUrl_72Mono_Bold_full_woff format('woff');
+}
+
 @font-face {
-font-family: '72Mono-Boldfull';
-src: @sapFontUrl_72Mono_Bold_full_woff2 format('woff2'), @sapFontUrl_72Mono_Bold_full_woff format('woff');
+  .sapCss_72MonoBoldfull();
 }
-}
-.sapCss_72MonoBoldfull();
-/*</SAP_FREETEXT_LESS>*//*!SAP_POSTPROCESS_REDUCE_END*/
+/*!SAP_POSTPROCESS_REDUCE_END*/
