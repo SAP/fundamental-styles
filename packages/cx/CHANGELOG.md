@@ -3,6 +3,50 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.41.9](https://github.com/SAP/fundamental-styles/compare/v0.41.9-rc.22...v0.41.9) (2026-09-09)
+
+**Note:** Version bump only for package @fundamental-styles/cx
+
+## [0.41.9-rc.22](https://github.com/SAP/fundamental-styles/compare/v0.41.9-rc.21...v0.41.9-rc.22) (2026-09-03)
+
+**Note:** Version bump only for package @fundamental-styles/cx
+
+## [0.41.9-rc.21](https://github.com/SAP/fundamental-styles/compare/v0.41.9-rc.20...v0.41.9-rc.21) (2026-09-03)
+
+**Note:** Version bump only for package @fundamental-styles/cx
+
+## [0.41.9-rc.20](https://github.com/SAP/fundamental-styles/compare/v0.41.9-rc.19...v0.41.9-rc.20) (2026-09-02)
+
+**Note:** Version bump only for package @fundamental-styles/cx
+
+## [0.41.9-rc.19](https://github.com/SAP/fundamental-styles/compare/v0.41.9-rc.18...v0.41.9-rc.19) (2026-09-01)
+
+**Note:** Version bump only for package @fundamental-styles/cx
+
+## [0.41.9-rc.18](https://github.com/SAP/fundamental-styles/compare/v0.41.9-rc.17...v0.41.9-rc.18) (2026-08-31)
+
+**Note:** Version bump only for package @fundamental-styles/cx
+
+## [0.41.9-rc.17](https://github.com/SAP/fundamental-styles/compare/v0.41.9-rc.16...v0.41.9-rc.17) (2026-08-31)
+
+**Note:** Version bump only for package @fundamental-styles/cx
+
+## [0.41.9-rc.16](https://github.com/SAP/fundamental-styles/compare/v0.41.9-rc.15...v0.41.9-rc.16) (2026-08-28)
+
+**Note:** Version bump only for package @fundamental-styles/cx
+
+## [0.41.9-rc.15](https://github.com/SAP/fundamental-styles/compare/v0.41.9-rc.14...v0.41.9-rc.15) (2026-08-26)
+
+**Note:** Version bump only for package @fundamental-styles/cx
+
+## [0.41.9-rc.14](https://github.com/SAP/fundamental-styles/compare/v0.41.9-rc.13...v0.41.9-rc.14) (2026-08-14)
+
+**Note:** Version bump only for package @fundamental-styles/cx
+
+## [0.41.9-rc.13](https://github.com/SAP/fundamental-styles/compare/v0.41.9-rc.12...v0.41.9-rc.13) (2026-08-13)
+
+**Note:** Version bump only for package @fundamental-styles/cx
+
 ## [0.41.9-rc.12](https://github.com/SAP/fundamental-styles/compare/v0.41.9-rc.11...v0.41.9-rc.12) (2026-08-12)
 
 **Note:** Version bump only for package @fundamental-styles/cx

@@ -6,6 +6,29 @@
 >
     <div class="fd-navigation__container fd-navigation__container--top">
         <ul class="fd-navigation__list" role="tree" aria-roledescription="Navigation List Tree" tabindex="-1">
+            <li class="fd-navigation__list-item fd-navigation__list-item--sticky">
+                <div class="fd-input-group">
+                    <input
+                        class="fd-input fd-input-group__input"
+                        type="text"
+                        id="side-nav-search"
+                        name="two-icon-actions"
+                        placeholder="Search"
+                        autocomplete="off"
+                        aria-label="Search"
+                    />
+                    <span class="fd-input-group__addon fd-input-group__addon--button">
+                        <button
+                            class="fd-input-group__button fd-button fd-button--icon fd-button--transparent"
+                            type="button"
+                            aria-label="Search value"
+                        >
+                            <i class="sap-icon--search" aria-hidden="true" role="presentation"></i>
+                        </button>
+                    </span>
+                </div>
+            </li>
+
             <li class="fd-navigation__list-item" aria-hidden="true">
                 <div
                     class="fd-navigation__item"
@@ -13,19 +36,12 @@
                     role="treeitem"
                     title="Home"
                     aria-roledescription="Navigation List Tree Item"
-                    aria-selected="true"
+                    aria-selected="false"
                     aria-expanded="false"
                 >
                     <a class="fd-navigation__link" role="link" tabindex="-1" href="#">
                         <span class="fd-navigation__icon sap-icon--home" role="presentation" aria-hidden="true"></span>
-                        <span class="fd-navigation__text"
-                            >Home
-                            <span class="fd-object-status fd-object-status--inverted fd-object-status--indication-8">
-                                <span class="fd-object-status__text">Beta</span>
-                                <span class="fd-object-status__sr-only">Object Status</span>
-                                <span class="fd-object-status__sr-only">Indication Color 8</span>
-                            </span>
-                        </span>
+                        <span class="fd-navigation__text">Home</span>
                         <span
                             class="fd-navigation__selection-indicator"
                             role="presentation"
@@ -52,14 +68,7 @@
                             role="presentation"
                             aria-hidden="true"
                         ></span>
-                        <span class="fd-navigation__text">
-                            Resource Planning and Business Management Solutions
-                            <span class="fd-object-status fd-object-status--inverted fd-object-status--indication-6b">
-                                <span class="fd-object-status__text">Beta</span>
-                                <span class="fd-object-status__sr-only">Object Status</span>
-                                <span class="fd-object-status__sr-only">Indication Color 6b</span>
-                            </span>
-                        </span>
+                        <span class="fd-navigation__text"> Resource Planning and Business Management Solutions </span>
                         <span
                             class="fd-navigation__selection-indicator"
                             role="presentation"
@@ -161,21 +170,7 @@
                                             aria-selected="false"
                                         >
                                             <a class="fd-navigation__link" role="link" tabindex="-1" href="#">
-                                                <span class="fd-navigation__text"
-                                                    >My Accounts
-                                                    <span
-                                                        class="fd-object-status fd-object-status--inverted fd-object-status--indication-10b"
-                                                    >
-                                                        <span class="fd-object-status__text"
-                                                            >Beta Lorem ipsum dolor sit amet consectetur adipisicing
-                                                            elit</span
-                                                        >
-                                                        <span class="fd-object-status__sr-only">Object Status</span>
-                                                        <span class="fd-object-status__sr-only"
-                                                            >Indication Color 10b</span
-                                                        >
-                                                    </span>
-                                                </span>
+                                                <span class="fd-navigation__text">My Accounts</span>
                                                 <span
                                                     class="fd-navigation__selection-indicator"
                                                     role="presentation"
@@ -232,16 +227,7 @@
                                     role="presentation"
                                     aria-hidden="true"
                                 ></span>
-                                <span class="fd-navigation__text"
-                                    >Reports
-                                    <span
-                                        class="fd-object-status fd-object-status--inverted fd-object-status--indication-7"
-                                    >
-                                        <span class="fd-object-status__text">Alpha</span>
-                                        <span class="fd-object-status__sr-only">Object Status</span>
-                                        <span class="fd-object-status__sr-only">Indication Color 7</span>
-                                    </span>
-                                </span>
+                                <span class="fd-navigation__text">Reports</span>
                                 <span
                                     class="fd-navigation__selection-indicator"
                                     role="presentation"
@@ -264,6 +250,27 @@
                                     aria-roledescription="Navigation List Tree - Child Items"
                                     tabindex="-1"
                                 >
+                                    <li class="fd-navigation__list-item" aria-hidden="true">
+                                        <div
+                                            class="fd-navigation__item fd-navigation__item--child"
+                                            aria-level="3"
+                                            role="treeitem"
+                                            title="Sales Reports"
+                                            aria-roledescription="Navigation List Tree Item - Child"
+                                            aria-expanded="false"
+                                            aria-selected="false"
+                                        >
+                                            <a class="fd-navigation__link" role="link" tabindex="-1" href="#">
+                                                <span class="fd-navigation__text">Sales Reports</span>
+                                                <span
+                                                    class="fd-navigation__selection-indicator"
+                                                    role="presentation"
+                                                    aria-hidden="true"
+                                                    aria-label="selection indicator"
+                                                ></span>
+                                            </a>
+                                        </div>
+                                    </li>
                                     <li class="fd-navigation__list-item" aria-hidden="true">
                                         <div
                                             class="fd-navigation__item fd-navigation__item--child"
@@ -296,18 +303,7 @@
                                             aria-selected="false"
                                         >
                                             <a class="fd-navigation__link" role="link" tabindex="-1" href="#">
-                                                <span class="fd-navigation__text"
-                                                    >Partners (external link)
-                                                    <span
-                                                        class="fd-object-status fd-object-status--inverted fd-object-status--indication-7b"
-                                                    >
-                                                        <span class="fd-object-status__text">New</span>
-                                                        <span class="fd-object-status__sr-only">Object Status</span>
-                                                        <span class="fd-object-status__sr-only"
-                                                            >Indication Color 7b</span
-                                                        >
-                                                    </span>
-                                                </span>
+                                                <span class="fd-navigation__text">Partners (external link)</span>
 
                                                 <span
                                                     class="fd-navigation__selection-indicator"
@@ -501,14 +497,7 @@
                             role="presentation"
                             aria-hidden="true"
                         ></span>
-                        <span class="fd-navigation__text"
-                            >Customer Management
-                            <span class="fd-object-status fd-object-status--inverted fd-object-status--indication-9b">
-                                <span class="fd-object-status__text">Preview</span>
-                                <span class="fd-object-status__sr-only">Object Status</span>
-                                <span class="fd-object-status__sr-only">Indication Color 9b</span>
-                            </span>
-                        </span>
+                        <span class="fd-navigation__text">Customer Management</span>
                         <span
                             class="fd-navigation__selection-indicator"
                             role="presentation"
@@ -618,7 +607,7 @@
                     title="Additional Items"
                     aria-roledescription="Navigation List Tree Item - Group"
                     aria-selected="false"
-                    aria-expanded="false"
+                    aria-expanded="true"
                 >
                     <a class="fd-navigation__link" role="button" tabindex="-1" onclick="toggleNavigationSubmenu(event)">
                         <span class="fd-navigation__text">Additional Items</span>

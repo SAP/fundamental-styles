@@ -1,6 +1,7 @@
 import smallExampleHtml from "./small.example.html?raw";
 import mediumExampleHtml from "./medium.example.html?raw";
 import largeExampleHtml from "./large.example.html?raw";
+import twoColumnExampleHtml from "./two-column.example.html?raw";
 import '../../../src/product-switch.scss';
 import '../../../src/popover.scss';
 import '../../../src/button.scss';
@@ -52,16 +53,14 @@ export const Shellbar = () => `${localStyles}
                     <div class="fd-popover__body fd-popover__body--right" role="dialog" aria-modal="false" aria-label="Products" aria-hidden="false" id="product-switch-body">
                         <div class="fd-product-switch__body">
                             <ul class="fd-product-switch__list" role="menu">
-                                <li class="fd-product-switch__item selected" tabindex="0" role="menuitem" aria-label="Home Home Home Home Home Home Home Home Central Home Central Home Central Home Central Home" aria-posinset="1" aria-setsize="14">
-                                    <span class="fd-avatar fd-avatar--sm fd-avatar--transparent" role="img" aria-label="Home">
-                                        <i role="presentation" aria-hidden="true" class="fd-avatar__icon sap-icon--home"></i>
-                                    </span>
+                                <li class="fd-product-switch__item" tabindex="0" role="menuitem" aria-label="SAP Start" aria-posinset="1" aria-setsize="14">
+                                     <span class="fd-avatar fd-avatar--sm fd-avatar--thumbnail" style="background-image: url('/assets/images/landscape/demo-avatar.png')" role="img" aria-label="Guided Buying"></span>
                                     <div class="fd-product-switch__text">
-                                        <div class="fd-product-switch__title">Home Home Home Home Home Home Home Home</div>
-                                        <div class="fd-product-switch__subtitle">Central Home Central Home Central Home Central Home</div>
+                                        <div class="fd-product-switch__title">SAP Start</div>
+                                        <div class="fd-product-switch__subtitle">Central Home</div>
                                     </div>
                                 </li>
-                                <li class="fd-product-switch__item" tabindex="0" role="menuitem" aria-label="Analytics Cloud Analytics Cloud Analytics Cloud" aria-posinset="2" aria-setsize="14">
+                                <li class="fd-product-switch__item" tabindex="0" role="menuitem" aria-label="Analytics Cloud" aria-posinset="2" aria-setsize="14">
                                     <span class="fd-avatar fd-avatar--sm fd-avatar--transparent" role="img" aria-label="Analytics Cloud">
                                         <i role="presentation" aria-hidden="true" class="fd-avatar__icon sap-icon--business-objects-experience"></i>
                                     </span>
@@ -80,7 +79,9 @@ export const Shellbar = () => `${localStyles}
                                     </div>
                                 </li>
                                 <li class="fd-product-switch__item" tabindex="0" role="menuitem" aria-label="Guided Buying" aria-posinset="4" aria-setsize="14">
-                                    <span class="fd-avatar fd-avatar--sm fd-avatar--thumbnail" style="background-image: url('/assets/images/landscape/demo-avatar.png')" role="img" aria-label="Guided Buying"></span>
+                                    <span class="fd-avatar fd-avatar--sm fd-avatar--transparent" role="img" aria-label="Guided Buying">
+                                        <i role="presentation" aria-hidden="true" class="fd-avatar__icon sap-icon--home"></i>
+                                    </span>
                                     <div class="fd-product-switch__text">
                                         <div class="fd-product-switch__title">Guided Buying</div>
                                     </div>
@@ -194,7 +195,7 @@ export const Large = () => largeExampleHtml;
 Large.parameters = {
   docs: {
     description: {
-      story: 'Product switch is displayed with a maximum of 4 columns on large desktop screens. When the popover contains too many items, it will grow until the maximum is reached. Once the maximum is reached, the popover can be scrolled vertically.',
+      story: 'Product switch is displayed with a maximum of 4 columns on large desktop screens. The body grows to accommodate up to 4 rows of items (max-height: 33rem / 528px). Once that limit is reached, additional items are accessible via vertical scroll.',
     }
   }
 };
@@ -204,6 +205,15 @@ Medium.parameters = {
     description: {
       story: `If there are 6 (or less) items to display, it is recommended to use the 3-column layout (medium). To display a medium-sized product switch, add the \`fd-product-switchbody--col-3\` modifier class to the main element.
         `
+    }
+  }
+};
+export const TwoColumn = () => twoColumnExampleHtml;
+TwoColumn.storyName = 'Two Column';
+TwoColumn.parameters = {
+  docs: {
+    description: {
+      story: `When fewer than 3 items are provided, use the 2-column layout to hug the content width. Add the \`fd-product-switch__body--col-2\` modifier class to the body element.`
     }
   }
 };

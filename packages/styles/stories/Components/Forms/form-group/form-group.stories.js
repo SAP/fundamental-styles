@@ -1,4 +1,5 @@
 import groupHeaderInFormGridExampleHtml from "./group-header-in-form-grid.example.html?raw";
+import groupHeaderInFormGridDisplayModeExampleHtml from "./group-header-in-form-grid-display-mode.example.html?raw";
 import groupHeaderExampleHtml from "./group-header.example.html?raw";
 import requiredExampleHtml from "./required.example.html?raw";
 import primaryExampleHtml from "./primary.example.html?raw";
@@ -7,6 +8,7 @@ import '../../../../src/form-group.scss';
 import '../../../../src/form-item.scss';
 import '../../../../src/form-label.scss';
 import '../../../../src/input.scss';
+import '../../../../src/text.scss';
 export default {
   title: 'Components/Forms/Form Group',
   parameters: {
@@ -50,6 +52,18 @@ GroupHeaderInFormGrid.parameters = {
     description: {
       story: `
 When group headers are displayed in a **Form Grid**, paddings are added to the groups.
+        `
+    }
+  }
+};
+
+export const GroupHeaderInFormGridDisplayMode = () => groupHeaderInFormGridDisplayModeExampleHtml;
+GroupHeaderInFormGridDisplayMode.storyName = 'Group header (form grid) – display mode';
+GroupHeaderInFormGridDisplayMode.parameters = {
+  docs: {
+    description: {
+      story: `
+Display mode variant of the group header form grid. Add \`fd-form-layout-grid-container--display-mode\` to the container and replace \`fd-input\` controls with \`fd-text\` paragraphs to render field values as static text.
         `
     }
   }

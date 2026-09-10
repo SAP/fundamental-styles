@@ -3,6 +3,58 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.41.9](https://github.com/SAP/fundamental-styles/compare/v0.41.9-rc.22...v0.41.9) (2026-09-09)
+
+**Note:** Version bump only for package fundamental-styles
+
+## [0.41.9-rc.22](https://github.com/SAP/fundamental-styles/compare/v0.41.9-rc.21...v0.41.9-rc.22) (2026-09-03)
+
+### Features
+
+- **styles:** updates for Settings Dialog ([#6380](https://github.com/SAP/fundamental-styles/issues/6380)) ([314b092](https://github.com/SAP/fundamental-styles/commit/314b092f3574d6d2c4ee88c20ad3145e550858a9))
+
+## [0.41.9-rc.21](https://github.com/SAP/fundamental-styles/compare/v0.41.9-rc.20...v0.41.9-rc.21) (2026-09-03)
+
+**Note:** Version bump only for package fundamental-styles
+
+## [0.41.9-rc.20](https://github.com/SAP/fundamental-styles/compare/v0.41.9-rc.19...v0.41.9-rc.20) (2026-09-02)
+
+**Note:** Version bump only for package fundamental-styles
+
+## [0.41.9-rc.19](https://github.com/SAP/fundamental-styles/compare/v0.41.9-rc.18...v0.41.9-rc.19) (2026-09-01)
+
+**Note:** Version bump only for package fundamental-styles
+
+## [0.41.9-rc.18](https://github.com/SAP/fundamental-styles/compare/v0.41.9-rc.17...v0.41.9-rc.18) (2026-08-31)
+
+### Bug Fixes
+
+- **styles:** add sticky header area, sticky search to Vertical navigation [ci visual] ([#6382](https://github.com/SAP/fundamental-styles/issues/6382)) ([5dba40c](https://github.com/SAP/fundamental-styles/commit/5dba40c24c43cc1be7b052d9147a2eeef193aaf5))
+
+## [0.41.9-rc.17](https://github.com/SAP/fundamental-styles/compare/v0.41.9-rc.16...v0.41.9-rc.17) (2026-08-31)
+
+**Note:** Version bump only for package fundamental-styles
+
+## [0.41.9-rc.16](https://github.com/SAP/fundamental-styles/compare/v0.41.9-rc.15...v0.41.9-rc.16) (2026-08-28)
+
+### Bug Fixes
+
+- **styles:** form layout fields spacing ([#6379](https://github.com/SAP/fundamental-styles/issues/6379)) ([86a2d7a](https://github.com/SAP/fundamental-styles/commit/86a2d7a629ec04ddd764a45af2317abcedb74fe9))
+
+## [0.41.9-rc.15](https://github.com/SAP/fundamental-styles/compare/v0.41.9-rc.14...v0.41.9-rc.15) (2026-08-26)
+
+### Bug Fixes
+
+- **styles:** product switch design updates feedback ([#6377](https://github.com/SAP/fundamental-styles/issues/6377)) ([d0065ca](https://github.com/SAP/fundamental-styles/commit/d0065ca52baabe5988847d0c742ae94ffc5ac6fd))
+
+## [0.41.9-rc.14](https://github.com/SAP/fundamental-styles/compare/v0.41.9-rc.13...v0.41.9-rc.14) (2026-08-14)
+
+**Note:** Version bump only for package fundamental-styles
+
+## [0.41.9-rc.13](https://github.com/SAP/fundamental-styles/compare/v0.41.9-rc.12...v0.41.9-rc.13) (2026-08-13)
+
+**Note:** Version bump only for package fundamental-styles
+
 ## [0.41.9-rc.12](https://github.com/SAP/fundamental-styles/compare/v0.41.9-rc.11...v0.41.9-rc.12) (2026-08-12)
 
 ### Bug Fixes
@@ -7073,9 +7125,9 @@ Co-authored-by: droshev <mladen.droshev@sap.com>
 
 - added a new modifier class to fd-row to achieve even alignment of its elements:fd-row--top in a form.
   Before:
-      <div class="fd-row">
-      After:
-      <div class="fd-row fd-row--top">
+    <div class="fd-row">
+    After:
+    <div class="fd-row fd-row--top">
 
 ### Bug Fixes
 
