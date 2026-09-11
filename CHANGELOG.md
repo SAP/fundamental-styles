@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.41.10-rc.0](https://github.com/SAP/fundamental-styles/compare/v0.41.9...v0.41.10-rc.0) (2026-09-11)
+
+### Features
+
+- **styles:** new truncation rules for standard and byline lists ([#6371](https://github.com/SAP/fundamental-styles/issues/6371)) ([828530d](https://github.com/SAP/fundamental-styles/commit/828530dbe41e4b0d5bde819e23d921ab2b93920c))
+
+## [0.41.9](https://github.com/SAP/fundamental-styles/compare/v0.41.9-rc.22...v0.41.9) (2026-09-09)
+
+**Note:** Version bump only for package fundamental-styles
+
 ## [0.41.9-rc.22](https://github.com/SAP/fundamental-styles/compare/v0.41.9-rc.21...v0.41.9-rc.22) (2026-09-03)
 
 ### Features
@@ -7121,9 +7131,9 @@ Co-authored-by: droshev <mladen.droshev@sap.com>
 
 - added a new modifier class to fd-row to achieve even alignment of its elements:fd-row--top in a form.
   Before:
-  <div class="fd-row">
-  After:
-  <div class="fd-row fd-row--top">
+      <div class="fd-row">
+      After:
+      <div class="fd-row fd-row--top">
 
 ### Bug Fixes
 

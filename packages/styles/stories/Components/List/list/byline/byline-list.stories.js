@@ -150,10 +150,30 @@ LongText.storyName = 'List with long Title and Byline';
 LongText.parameters = {
   docs: {
     description: {
-      story: `By default, To allow the title and byline text to wrap, add these following modifier classes to the the title and byline respectively:
+      story: `By default, long title and byline text is truncated with an ellipsis. Wrapping can be enabled at three levels:
 
+**List level** — add \`fd-list--wrap\` to the root element to wrap all items:
+\`\`\`html
+<ul class="fd-list fd-list--byline fd-list--wrap">
+\`\`\`
+
+**Item level** — add \`fd-list__item--wrap\` to a single list item:
+\`\`\`html
+<li class="fd-list__item fd-list__item--wrap">
+\`\`\`
+
+**Element level** — add modifier classes to individual elements:
 - \`fd-list__title--wrap\`
 - \`fd-list__byline--wrap\`
+
+**Show More / Show Less accessibility** — when a trigger link is present, use \`aria-expanded\` to communicate the current state to assistive technologies. Set \`aria-expanded="false"\` in the collapsed (truncated) state and \`aria-expanded="true"\` in the expanded (wrapped) state. The JS toggling logic lives in the consuming framework; fund-styles provides only the visual affordance via \`fd-list__link--more\`:
+\`\`\`html
+<!-- Collapsed -->
+<a href="#" class="fd-link fd-list__link--more" aria-expanded="false">More</a>
+
+<!-- Expanded -->
+<a href="#" class="fd-link fd-list__link--more" aria-expanded="true">Less</a>
+\`\`\`
 
 When more than 100 characters for small screens or 300 characters for medium to large screens are used, a clickable "MORE" link should be displayed to reveal the entire contents of the text.`
     }
