@@ -35576,7 +35576,7 @@ style=\\"background-image: url('assets/images/backgrounds/Godafoss_waterfall_in_
 <li role=\\"listitem\\" tabindex=\\"0\\" class=\\"fd-list__item\\">
     <span class=\\"fd-list__thumbnail\\"><i role=\\"presentation\\" class=\\"sap-icon--world\\"></i></span>
   <div class=\\"fd-list__content\\">
-      <div class=\\"fd-list__title\\">List item with 2-column byline (with an additional semantic byline)</div>
+      <div class=\\"fd-list__title fd-list__title--wrap\\">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat, duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</div>
       <div class=\\"fd-list__byline fd-list__byline--2-col\\">
           <div class=\\"fd-list__byline-left\\">First text item in byline (standard text)</div>
           <div class=\\"fd-list__byline-right fd-list__byline-right--informative\\">Second text item in byline (information)</div>
@@ -35588,17 +35588,38 @@ style=\\"background-image: url('assets/images/backgrounds/Godafoss_waterfall_in_
 `;
 
 exports[`Check stories > Components/List/Byline > Story Buttons > Should match snapshot 1`] = `
-"
-<ul class=\\"fd-list fd-list--byline\\" role=\\"list\\">
+"<ul class=\\"fd-list fd-list--byline\\" role=\\"list\\">
     <li role=\\"listitem\\" class=\\"fd-list__item\\">
         <span class=\\"fd-list__thumbnail\\"><i role=\\"presentation\\" class=\\"sap-icon--activate\\"></i></span>
         <div class=\\"fd-list__content\\">
-            <span class=\\"fd-list__title\\">List item 1</span>
+            <span class=\\"fd-list__title fd-list__title--wrap\\">List item 1</span>
+            <span class=\\"fd-list__byline\\">Byline (description) List item 1 </span>
         </div>
-        <button class=\\"fd-button fd-button--transparent fd-list__button\\">
+        <button class=\\"fd-button fd-button--transparent fd-list__button\\" aria-label=\\"Edit>
             <i class=\\"sap-icon--edit\\"></i>
         </button>
-        <button class=\\"fd-button fd-button--transparent fd-list__button\\">
+        <button class=\\"fd-button fd-button--transparent fd-list__button\\" aria-label=\\"Decline\\">
+            <i class=\\"sap-icon--decline\\"></i>
+        </button>
+    </li>
+    <li role=\\"listitem\\" class=\\"fd-list__item\\">
+        <span class=\\"fd-list__thumbnail\\"><i role=\\"presentation\\" class=\\"sap-icon--activate\\"></i></span>
+        <div class=\\"fd-list__content\\">
+            <span class=\\"fd-list__title fd-list__title--wrap\\"
+                >Title that wraps. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat, duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</span
+            >
+            <span class=\\"fd-list__byline fd-list__byline--wrap\\"
+                >Byline that wraps. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Donec velit
+                neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Proin elementum sapien vel enim facilisis, at faucibus
+                nibh ornare. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas</span
+            >
+        </div>
+        <button class=\\"fd-button fd-button--transparent fd-list__button\\" aria-label=\\"Edit\\">
+            <i class=\\"sap-icon--edit\\"></i>
+        </button>
+        <button class=\\"fd-button fd-button--transparent fd-list__button\\" aria-label=\\"Decline\\">
             <i class=\\"sap-icon--decline\\"></i>
         </button>
     </li>
@@ -35612,8 +35633,8 @@ exports[`Check stories > Components/List/Byline > Story Counter > Should match s
 <li role=\\"listitem\\" tabindex=\\"0\\" class=\\"fd-list__item\\">
     <span class=\\"fd-list__thumbnail\\"><i role=\\"presentation\\" class=\\"sap-icon--activate\\"></i></span>
     <div class=\\"fd-list__content\\">
-      <div class=\\"fd-list__title\\">List Item Title</div>
-      <div class=\\"fd-list__byline\\">Byline (description)</div>
+      <div class=\\"fd-list__title fd-list__title--wrap\\">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat, duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</div>
+      <div class=\\"fd-list__byline fd-list__byline--wrap\\">Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Proin elementum sapien vel enim facilisis, at faucibus nibh ornare. Pellentesque habitant morbi tristique senectus et netus</div>
     </div>
     <span class=\\"fd-list__item-counter\\">123</span>
 </li>
@@ -35763,40 +35784,71 @@ exports[`Check stories > Components/List/Byline > Story Interractive > Should ma
 `;
 
 exports[`Check stories > Components/List/Byline > Story LongText > Should match snapshot 1`] = `
-"
-<ul class=\\"fd-list fd-list--byline\\" role=\\"list\\">
-<li role=\\"listitem\\" tabindex=\\"0\\" class=\\"fd-list__item\\">
-    <span class=\\"fd-list__thumbnail\\"><i role=\\"presentation\\" class=\\"sap-icon--activate\\"></i></span>
-    <div class=\\"fd-list__content\\">
-      <div class=\\"fd-list__title\\">List Item Title</div>
-      <div class=\\"fd-list__byline fd-list__byline--wrap\\">Very Long Byline (description), Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat... <a href=\\"#\\" class=\\"fd-link fd-list__link--more\\" tabindex=\\"0\\"><span class=\\"fd-link__content\\">More</span></a></div>
-    </div>
-    <span class=\\"fd-list__item-counter\\">12345</span>
-</li>
-<li role=\\"listitem\\" tabindex=\\"0\\" class=\\"fd-list__item\\">
-    <span class=\\"fd-list__thumbnail\\"><i role=\\"presentation\\" class=\\"sap-icon--employee\\"></i></span>
-    <div class=\\"fd-list__content\\">
-      <div class=\\"fd-list__title fd-list__title--wrap\\">Very long list item with no byline, Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
-    </div>
-</li>
-<li role=\\"listitem\\" tabindex=\\"0\\" class=\\"fd-list__item\\">
-  <span class=\\"fd-image--s fd-list__thumbnail\\" aria-label=\\"Godafoss waterfall in northern Iceland\\"
-style=\\"background-image: url('assets/images/backgrounds/Godafoss_waterfall_in_northern_Iceland.jpg'); background-size:cover;\\"></span>
-  <div class=\\"fd-list__content\\">
-      <div class=\\"fd-list__title fd-list__title--wrap\\">Very long title, Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
-      <div class=\\"fd-list__byline fd-list__byline--wrap\\">
-          <div class=\\"fd-list__byline-left\\">First text item in byline (standard text), Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<a href=\\"#\\" class=\\"fd-link fd-list__link--more\\" tabindex=\\"0\\"><span class=\\"fd-link__content\\">Less</span></a></div>
-          <div class=\\"fd-list__byline-right\\">Second text item in byline (can be semantic)</div>
-      </div>
-  </div>
-</li>
-<li role=\\"listitem\\" tabindex=\\"0\\" class=\\"fd-list__item\\">
-    <div class=\\"fd-list__content\\">
-      <div class=\\"fd-list__title\\">Text-only list item</div>
-      <div class=\\"fd-list__byline\\">Byline (description)</div>
-    </div>
-</li>
-</ul>
+"<div style=\\"margin-bottom: 2rem;\\">
+    <p class=\\"fd-form-label\\" style=\\"margin-bottom: 0.5rem;\\">Default — truncation</p>
+    <ul class=\\"fd-list fd-list--byline\\" role=\\"list\\">
+        <li role=\\"listitem\\" tabindex=\\"0\\" class=\\"fd-list__item\\">
+            <span class=\\"fd-list__thumbnail\\"><i role=\\"presentation\\" class=\\"sap-icon--activate\\"></i></span>
+            <div class=\\"fd-list__content\\">
+                <div class=\\"fd-list__title\\">Annual Budget Review for Q3 and Q4 — please review the attached documents and provide your feedback before the end of the fiscal quarter to ensure timely processing.</div>
+                <div class=\\"fd-list__byline\\">Finance · Updated 2 hours ago by Michael Thompson, Senior Analyst, Global Finance Division, Central Europe · Reviewed by Anna Schmidt, Finance Controller · Pending approval from Regional CFO</div>
+            </div>
+        </li>
+    </ul>
+</div>
+
+<div style=\\"margin-bottom: 2rem;\\">
+    <p class=\\"fd-form-label\\" style=\\"margin-bottom: 0.5rem;\\">List level — <code>fd-list--wrap</code></p>
+    <ul class=\\"fd-list fd-list--byline fd-list--wrap\\" role=\\"list\\">
+        <li role=\\"listitem\\" tabindex=\\"0\\" class=\\"fd-list__item\\">
+            <span class=\\"fd-list__thumbnail\\"><i role=\\"presentation\\" class=\\"sap-icon--employee\\"></i></span>
+            <div class=\\"fd-list__content\\">
+                <div class=\\"fd-list__title\\">All titles wrap at list level, Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</div>
+                <div class=\\"fd-list__byline\\">All bylines wrap too, Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</div>
+            </div>
+        </li>
+    </ul>
+</div>
+
+<div style=\\"margin-bottom: 2rem;\\">
+    <p class=\\"fd-form-label\\" style=\\"margin-bottom: 0.5rem;\\">Item level — <code>fd-list__item--wrap</code> (collapsed and expanded states)</p>
+    <!-- The fd-list__link--more element is placed outside fd-list__title so it stays
+         visible even when the title truncates. -->
+    <ul class=\\"fd-list fd-list--byline\\" role=\\"list\\">
+        <li role=\\"listitem\\" tabindex=\\"0\\" class=\\"fd-list__item\\">
+            <span class=\\"fd-list__thumbnail\\"><i role=\\"presentation\\" class=\\"sap-icon--employee\\"></i></span>
+            <div class=\\"fd-list__content\\">
+                <div class=\\"fd-list__title\\">Collapsed — title truncated, Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</div>
+                <a href=\\"#\\" class=\\"fd-link fd-list__link--more\\" aria-expanded=\\"false\\" tabindex=\\"0\\"><span class=\\"fd-link__content\\">More</span></a>
+                <div class=\\"fd-list__byline\\">Byline truncated, Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</div>
+            </div>
+        </li>
+        <li role=\\"listitem\\" tabindex=\\"0\\" class=\\"fd-list__item fd-list__item--wrap\\">
+            <span class=\\"fd-list__thumbnail\\"><i role=\\"presentation\\" class=\\"sap-icon--employee\\"></i></span>
+            <div class=\\"fd-list__content\\">
+                <div class=\\"fd-list__title\\">Expanded — fd-list__item--wrap applied, Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco. <a href=\\"#\\" class=\\"fd-link fd-list__link--more\\" aria-expanded=\\"true\\" tabindex=\\"0\\"><span class=\\"fd-link__content\\">Less</span></a></div>
+                <div class=\\"fd-list__byline\\">Byline wraps too, Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</div>
+            </div>
+        </li>
+    </ul>
+</div>
+
+<div>
+    <p class=\\"fd-form-label\\" style=\\"margin-bottom: 0.5rem;\\">Element level — <code>fd-list__title--wrap</code> / <code>fd-list__byline--wrap</code></p>
+    <ul class=\\"fd-list fd-list--byline\\" role=\\"list\\">
+        <li role=\\"listitem\\" tabindex=\\"0\\" class=\\"fd-list__item\\">
+            <span class=\\"fd-image--s fd-list__thumbnail\\" role=\\"img\\" aria-label=\\"Godafoss waterfall in northern Iceland\\"
+                style=\\"background-image: url('assets/images/backgrounds/Godafoss_waterfall_in_northern_Iceland.jpg'); background-size:cover;\\"></span>
+            <div class=\\"fd-list__content\\">
+                <div class=\\"fd-list__title fd-list__title--wrap\\">Only the title wraps here, Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</div>
+                <div class=\\"fd-list__byline fd-list__byline--2-col fd-list__byline--wrap\\">
+                    <div class=\\"fd-list__byline-left\\">First text item in byline, Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+                    <div class=\\"fd-list__byline-right\\">Second text item (semantic)</div>
+                </div>
+            </div>
+        </li>
+    </ul>
+</div>
 "
 `;
 
@@ -35846,12 +35898,12 @@ exports[`Check stories > Components/List/Byline > Story Navigation > Should matc
 
 exports[`Check stories > Components/List/Byline > Story NavigationIndicator > Should match snapshot 1`] = `
 "<ul class=\\"fd-list fd-list--byline fd-list--navigation fd-list--navigation-indication\\" role=\\"list\\">
-<li role=\\"listitem\\" tabindex=\\"-1\\" class=\\"fd-list__item fd-list__item--link\\">
+<li role=\\"listitem\\" tabindex=\\"-1\\" class=\\"fd-list__item fd-list__item--link \\">
   <a tabindex=\\"0\\" class=\\"fd-list__link fd-list__link--navigation-indicator\\" href=\\"#\\">
     <span class=\\"fd-list__thumbnail\\"><i role=\\"presentation\\" class=\\"sap-icon--activate\\"></i></span>
     <div class=\\"fd-list__content\\">
-      <div class=\\"fd-list__title\\">Title</div>
-      <div class=\\"fd-list__byline\\">Byline (description)</div>
+      <div class=\\"fd-list__title fd-list__title--wrap\\">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat, duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</div>
+      <div class=\\"fd-list__byline fd-list__byline--wrap\\">Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Proin elementum sapien vel enim facilisis, at faucibus nibh ornare. Pellentesque habitant morbi tristique senectus et netus</div>
     </div>
   </a>
 </li>
@@ -35880,7 +35932,7 @@ exports[`Check stories > Components/List/Byline > Story NavigationIndicator > Sh
 
 exports[`Check stories > Components/List/Byline > Story Selection > Should match snapshot 1`] = `
 "<ul class=\\"fd-list fd-list--selection fd-list--byline\\" role=\\"listbox\\" aria-labelledby=\\"O09lk9\\">
-    <li role=\\"option\\" tabindex=\\"0\\" class=\\"fd-list__item is-selected\\">
+    <li role=\\"option\\" tabindex=\\"0\\" class=\\"fd-list__item fd-list__item--wrap is-selected\\">
         <div class=\\"fd-form-item fd-list__form-item\\">
             <input type=\\"checkbox\\" class=\\"fd-checkbox\\" id=\\"Ai4ez6111Z\\" checked aria-labelledby=\\"O09lk1\\">
             <label tabindex=\\"-1\\" class=\\"fd-checkbox__label\\" for=\\"Ai4ez6111Z\\">
@@ -35889,8 +35941,8 @@ exports[`Check stories > Components/List/Byline > Story Selection > Should match
         </div>
         <span class=\\"fd-list__thumbnail\\"><i role=\\"presentation\\" class=\\"sap-icon--activate\\"></i></span>
         <div class=\\"fd-list__content\\">
-            <span class=\\"fd-list__title\\" id=\\"O09lk1\\">Title</span>
-            <span class=\\"fd-list__byline\\">Byline (description)</span>
+            <span class=\\"fd-list__title\\" id=\\"O09lk1\\">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat, duis aute irure dolor in reprehenderit</span>
+            <span class=\\"fd-list__byline\\">Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Proin elementum sapien vel enim facilisis</span>
         </div>
     </li>
     <li role=\\"option\\" tabindex=\\"0\\" class=\\"fd-list__item\\">
@@ -35903,9 +35955,9 @@ exports[`Check stories > Components/List/Byline > Story Selection > Should match
         <span class=\\"fd-image--s fd-list__thumbnail\\" aria-label=\\"Godafoss waterfall in northern Iceland\\"
               style=\\"background-image: url('assets/images/backgrounds/Godafoss_waterfall_in_northern_Iceland.jpg'); background-size:cover;\\"></span>
         <div class=\\"fd-list__content\\">
-            <div class=\\"fd-list__title\\" id=\\"O09lk2\\">List item with 2-column byline</div>
-            <div class=\\"fd-list__byline fd-list__byline--2-col\\">
-                <div class=\\"fd-list__byline-left\\">First text item in byline (standard text)</div>
+            <div class=\\"fd-list__title fd-list__title--wrap\\" id=\\"O09lk2\\">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat, duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</div>
+            <div class=\\"fd-list__byline fd-list__byline--wrap fd-list__byline--2-col\\">
+                <div class=\\"fd-list__byline-left\\">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur, excepteur sint occaecat cupidatat non proident</div>
                 <div class=\\"fd-list__byline-right\\">Second text item in byline (can be semantic)</div>
             </div>
         </div>
@@ -36196,20 +36248,20 @@ exports[`Check stories > Components/List/Standard > Story Borderless > Should ma
 
 exports[`Check stories > Components/List/Standard > Story Buttons > Should match snapshot 1`] = `
 "<ul class=\\"fd-list\\" role=\\"list\\">
-  <li tabindex=\\"-1\\" role=\\"listitem\\" class=\\"fd-list__item\\">
-    <span class=\\"fd-list__title\\">List item 1</span>
+  <li tabindex=\\"-1\\" role=\\"listitem\\" class=\\"fd-list__item fd-list__item--wrap\\">
+    <span class=\\"fd-list__title\\">List item 1 that wraps. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua, ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur, excepteur sint occaecat cupidatat non proident</span>
     <button class=\\"fd-button fd-button--transparent fd-list__button\\">
         <i class=\\"sap-icon--edit\\"></i>
     </button>
   </li>
   <li tabindex=\\"-1\\" role=\\"listitem\\" class=\\"fd-list__item\\">
-    <span class=\\"fd-list__title\\">List item 1</span>
+    <span class=\\"fd-list__title fd-list__title--wrap\\">List item 2 that wraps. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat, duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</span>
     <button class=\\"fd-button fd-button--transparent fd-list__button\\">
         <i class=\\"sap-icon--decline\\"></i>
     </button>
   </li>
   <li tabindex=\\"-1\\" role=\\"listitem\\" class=\\"fd-list__item\\">
-    <span class=\\"fd-list__title\\">List item 2</span>
+    <span class=\\"fd-list__title\\">List item 3</span>
     <button class=\\"fd-button fd-button--transparent fd-list__button\\">
         <i class=\\"sap-icon--edit\\"></i>
     </button>
@@ -36278,16 +36330,16 @@ exports[`Check stories > Components/List/Standard > Story Icons > Should match s
       <i role=\\"presentation\\" class=\\"fd-list__icon sap-icon--cart\\"></i>
       <span class=\\"fd-list__title\\">List item 1</span>
   </li>
-  <li role=\\"listitem\\" tabindex=\\"0\\" class=\\"fd-list__item\\">
+  <li role=\\"listitem\\" tabindex=\\"0\\" class=\\"fd-list__item fd-list__item--wrap\\">
       <i role=\\"presentation\\" class=\\"fd-list__icon sap-icon--wrench\\"></i>
-      <span class=\\"fd-list__title\\">List item 2</span>
+      <span class=\\"fd-list__title\\">List item 2 that wraps. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat, duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</span>
   </li>
   <li role=\\"listitem\\" tabindex=\\"0\\" class=\\"fd-list__item\\">
       <span class=\\"fd-list__title\\">List item 3</span>
       <i role=\\"presentation\\" class=\\"fd-list__icon sap-icon--lightbulb\\"></i>
   </li>
   <li role=\\"listitem\\" tabindex=\\"0\\" class=\\"fd-list__item\\">
-      <span class=\\"fd-list__title\\">List item 4</span>
+      <span class=\\"fd-list__title fd-list__title--wrap\\">List item 4 that wraps. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur, excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</span>
       <i role=\\"presentation\\" class=\\"fd-list__icon sap-icon--history\\"></i>
   </li>
 </ul>"
@@ -36349,17 +36401,17 @@ exports[`Check stories > Components/List/Standard > Story Interactive > Should m
 
 exports[`Check stories > Components/List/Standard > Story ItemCounter > Should match snapshot 1`] = `
 "<ul class=\\"fd-list\\" role=\\"list\\">
-  <li role=\\"listitem\\" tabindex=\\"0\\" class=\\"fd-list__item\\">
-      <span class=\\"fd-list__title\\">List item 1</span>
+  <li role=\\"listitem\\" tabindex=\\"0\\" class=\\"fd-list__item fd-list__item--wrap\\">
+      <span class=\\"fd-list__title\\">List item 1 that wraps. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat, duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</span>
       <span class=\\"fd-list__item-counter\\">12345</span>
   </li>
   <li role=\\"listitem\\" tabindex=\\"0\\" class=\\"fd-list__item\\">
-      <span class=\\"fd-list__title\\">List item 2</span>
+      <span class=\\"fd-list__title fd-list__title--wrap\\">List item 2</span>
       <span class=\\"fd-list__item-counter\\">12345</span>
   </li>
   <li role=\\"listitem\\" tabindex=\\"0\\" class=\\"fd-list__item\\">
       <i role=\\"presentation\\" class=\\"fd-list__icon sap-icon--lightbulb\\"></i>
-      <span class=\\"fd-list__title\\">List item 3</span>
+      <span class=\\"fd-list__title fd-list__title--wrap\\">List item 3 that wraps. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat, duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</span>
       <span class=\\"fd-list__item-counter\\">12345</span>
   </li>
   <li role=\\"listitem\\" tabindex=\\"0\\" class=\\"fd-list__item\\">
@@ -36368,6 +36420,69 @@ exports[`Check stories > Components/List/Standard > Story ItemCounter > Should m
       <span class=\\"fd-list__item-counter\\">12345</span>
   </li>
 </ul>
+"
+`;
+
+exports[`Check stories > Components/List/Standard > Story LongText > Should match snapshot 1`] = `
+"<div style=\\"margin-bottom: 2rem;\\">
+    <p class=\\"fd-form-label\\" style=\\"margin-bottom: 0.5rem;\\">Default — truncation</p>
+    <ul class=\\"fd-list\\" role=\\"list\\">
+        <li role=\\"listitem\\" tabindex=\\"0\\" class=\\"fd-list__item\\">
+            <span class=\\"fd-list__title\\">Annual Budget Review for Q3 and Q4 — please review the attached documents and provide your feedback before the end of the fiscal quarter to ensure timely processing.</span>
+            <span class=\\"fd-list__secondary\\">Finance · Updated 2 hours ago by Michael Thompson, Senior Analyst, Global Finance Division</span>
+        </li>
+    </ul>
+</div>
+
+<div style=\\"margin-bottom: 2rem;\\">
+    <p class=\\"fd-form-label\\" style=\\"margin-bottom: 0.5rem;\\">List level — <code>fd-list--wrap</code></p>
+    <ul class=\\"fd-list fd-list--wrap\\" role=\\"list\\">
+        <li role=\\"listitem\\" tabindex=\\"0\\" class=\\"fd-list__item\\">
+            <span class=\\"fd-list__title\\">All titles wrap at list level, Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</span>
+            <span class=\\"fd-list__secondary\\">Secondary text wraps too, Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia saepe doloribus nulla aliquid soluta aperiam.</span>
+        </li>
+        <li role=\\"listitem\\" tabindex=\\"0\\" class=\\"fd-list__item\\">
+            <span class=\\"fd-list__title\\">Second item also wraps, Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span>
+        </li>
+    </ul>
+</div>
+
+<div style=\\"margin-bottom: 2rem;\\">
+    <p class=\\"fd-form-label\\" style=\\"margin-bottom: 0.5rem;\\">Item level — <code>fd-list__item--wrap</code> (collapsed and expanded states)</p>
+    <!-- In the collapsed state fd-list__link--more is a right-aligned sibling so it
+         stays visible when the title truncates. In the expanded state (fd-list__item--wrap
+         applied) the title is fully visible so the Less link can sit inline at the end. -->
+    <ul class=\\"fd-list\\" role=\\"list\\">
+        <li role=\\"listitem\\" tabindex=\\"0\\" class=\\"fd-list__item\\">
+            <span class=\\"fd-list__title\\">This item truncates normally, Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</span>
+        </li>
+        <li role=\\"listitem\\" tabindex=\\"0\\" class=\\"fd-list__item\\">
+            <span class=\\"fd-list__title\\">Collapsed — title truncated, Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</span>
+            <a href=\\"#\\" class=\\"fd-link fd-list__link--more\\" aria-expanded=\\"false\\" tabindex=\\"0\\"><span class=\\"fd-link__content\\">More</span></a>
+        </li>
+        <li role=\\"listitem\\" tabindex=\\"0\\" class=\\"fd-list__item fd-list__item--wrap\\">
+            <span class=\\"fd-list__title\\">Expanded — fd-list__item--wrap applied, Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco. <a href=\\"#\\" class=\\"fd-link fd-list__link--more\\" aria-expanded=\\"true\\" tabindex=\\"0\\"><span class=\\"fd-link__content\\">Less</span></a></span>
+            <span class=\\"fd-list__secondary\\">Secondary text wraps too, Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia saepe doloribus nulla aliquid.</span>
+        </li>
+        <li role=\\"listitem\\" tabindex=\\"0\\" class=\\"fd-list__item\\">
+            <span class=\\"fd-list__title\\">This item truncates normally again, Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</span>
+        </li>
+    </ul>
+</div>
+
+<div>
+    <p class=\\"fd-form-label\\" style=\\"margin-bottom: 0.5rem;\\">Element level — <code>fd-list__title--wrap</code> / <code>fd-list__secondary--wrap</code></p>
+    <ul class=\\"fd-list\\" role=\\"list\\">
+        <li role=\\"listitem\\" tabindex=\\"0\\" class=\\"fd-list__item\\">
+            <span class=\\"fd-list__title fd-list__title--wrap\\">Only the title wraps here, Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</span>
+            <span class=\\"fd-list__secondary\\">Secondary still truncates, Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
+        </li>
+        <li role=\\"listitem\\" tabindex=\\"0\\" class=\\"fd-list__item\\">
+            <span class=\\"fd-list__title\\">Title still truncates, Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span>
+            <span class=\\"fd-list__secondary fd-list__secondary--wrap\\">Only the secondary wraps here, Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</span>
+        </li>
+    </ul>
+</div>
 "
 `;
 
@@ -36396,15 +36511,15 @@ exports[`Check stories > Components/List/Standard > Story Navigation > Should ma
 
 exports[`Check stories > Components/List/Standard > Story NavigationIndicator > Should match snapshot 1`] = `
 "<ul class=\\"fd-list fd-list--navigation fd-list--navigation-indication\\" role=\\"list\\">
-  <li tabindex=\\"-1\\" role=\\"listitem\\" class=\\"fd-list__item fd-list__item--link\\">
+  <li tabindex=\\"-1\\" role=\\"listitem\\" class=\\"fd-list__item fd-list__item--wrap fd-list__item--link\\">
       <a tabindex=\\"0\\" class=\\"fd-list__link fd-list__link--navigation-indicator\\" href=\\"#\\">
-        <span class=\\"fd-list__title\\">List item 1</span>
+        <span class=\\"fd-list__title\\">List item 1 that wraps. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua, ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur, excepteur sint occaecat cupidatat non proident</span>
       </a>
   </li>
   <li tabindex=\\"-1\\" role=\\"listitem\\" class=\\"fd-list__item fd-list__item--link\\">
       <a tabindex=\\"0\\" class=\\"fd-list__link fd-list__link--navigation-indicator is-selected\\" href=\\"#\\">
         <i role=\\"presentation\\" class=\\"fd-list__icon sap-icon--history\\"></i>
-        <span class=\\"fd-list__title\\">List item 2</span>
+        <span class=\\"fd-list__title fd-list__title--wrap\\">List item 2 that wraps. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat, duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur, excepteur sint occaecat cupidatat non proident. Sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit</span>
       </a>
   </li>
   <li tabindex=\\"0\\" role=\\"listitem\\" class=\\"fd-list__item\\">
@@ -36417,7 +36532,7 @@ exports[`Check stories > Components/List/Standard > Story NavigationIndicator > 
   </li>
   <li tabindex=\\"-1\\" role=\\"listitem\\" class=\\"fd-list__item fd-list__item--link\\">
       <a tabindex=\\"0\\" class=\\"fd-list__link fd-list__link--navigation-indicator is-navigated\\" href=\\"#\\">
-        <span class=\\"fd-list__title\\">List item 5</span>
+        <span class=\\"fd-list__title\\">List item 4</span>
         <i role=\\"presentation\\" class=\\"fd-list__icon sap-icon--map\\"></i>
       </a>
   </li>
@@ -36566,12 +36681,12 @@ exports[`Check stories > Components/List/Standard > Story SearchResults > Should
 
 exports[`Check stories > Components/List/Standard > Story SecondaryData > Should match snapshot 1`] = `
 "<ul class=\\"fd-list\\" role=\\"list\\">
-  <li role=\\"listitem\\" tabindex=\\"0\\" class=\\"fd-list__item\\">
-      <span class=\\"fd-list__title\\">List item 1</span>
+  <li role=\\"listitem\\" tabindex=\\"0\\" class=\\"fd-list__item fd-list__item--wrap\\">
+      <span class=\\"fd-list__title\\">List item 1 that wraps. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat, duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</span>
       <span class=\\"fd-list__secondary\\">Neutral Status</span>
   </li>
   <li role=\\"listitem\\" tabindex=\\"0\\" class=\\"fd-list__item\\">
-      <span class=\\"fd-list__title\\">List item 2</span>
+      <span class=\\"fd-list__title fd-list__title--wrap\\">List item 2 that wraps. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat, duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</span>
       <span class=\\"fd-list__secondary fd-list__secondary--positive\\">Positive Status</span>
   </li>
   <li role=\\"listitem\\" tabindex=\\"0\\" class=\\"fd-list__item\\">
@@ -36592,23 +36707,23 @@ exports[`Check stories > Components/List/Standard > Story SecondaryData > Should
 
 exports[`Check stories > Components/List/Standard > Story Selection > Should match snapshot 1`] = `
 "<ul class=\\"fd-list fd-list--selection\\" role=\\"listbox\\" aria-labelledby=\\"XezW11\\">
-  <li role=\\"option\\" tabindex=\\"0\\" class=\\"fd-list__item\\">
+  <li role=\\"option\\" tabindex=\\"0\\" class=\\"fd-list__item fd-list__item--wrap\\">
       <div class=\\"fd-form-item fd-list__form-item\\">
           <input type=\\"checkbox\\" class=\\"fd-checkbox\\" id=\\"Ai4ez1\\" aria-labelledby=\\"Az0bg1\\">
           <label tabindex=\\"-1\\" class=\\"fd-checkbox__label\\" for=\\"Ai4ez1\\">
             <span class=\\"fd-checkbox__checkmark\\" aria-hidden=\\"true\\"></span>
           </label>
       </div>
-      <span class=\\"fd-list__title\\" id=\\"Az0bg1\\">List item 1</span>
+      <span class=\\"fd-list__title\\" id=\\"Az0bg1\\">List item 1 that wraps with a centered checkbox. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat, duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</span>
   </li>
-  <li role=\\"option\\" tabindex=\\"0\\" class=\\"fd-list__item is-selected\\" aria-selected=\\"true\\">
+  <li role=\\"option\\" tabindex=\\"0\\" class=\\"fd-list__item is-selected fd-list__item--wrap fd-list__item--wrap-top-aligned\\" aria-selected=\\"true\\">
       <div class=\\"fd-form-item fd-list__form-item\\">
           <input type=\\"checkbox\\" class=\\"fd-checkbox\\" id=\\"Ai4ez2\\" checked aria-labelledby=\\"Az0bg2\\">
           <label tabindex=\\"-1\\" class=\\"fd-checkbox__label\\" for=\\"Ai4ez2\\">
             <span class=\\"fd-checkbox__checkmark\\" aria-hidden=\\"true\\"></span>
           </label>
       </div>
-      <span class=\\"fd-list__title\\" id=\\"Az0bg2\\">List item 2</span>
+      <span class=\\"fd-list__title fd-list__title--wrap\\" id=\\"Az0bg2\\">List item 2 that wraps with a top-aligned checkbox. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat, duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</span>
   </li>
   <li role=\\"option\\" tabindex=\\"0\\" class=\\"fd-list__item\\">
       <div class=\\"fd-form-item fd-list__form-item\\">
@@ -36660,6 +36775,78 @@ exports[`Check stories > Components/List/Standard > Story Unread > Should match 
 "
 `;
 
+exports[`Check stories > Components/List/Subline > Story LongText > Should match snapshot 1`] = `
+"<div style=\\"margin-bottom: 2rem;\\">
+    <p class=\\"fd-form-label\\" style=\\"margin-bottom: 0.5rem;\\">Default — truncation</p>
+    <ul class=\\"fd-list fd-list--subline\\" role=\\"list\\">
+        <li role=\\"listitem\\" tabindex=\\"0\\" class=\\"fd-list__item fd-list__item--interractive\\">
+            <span class=\\"fd-avatar fd-avatar--sm fd-avatar--circle fd-avatar--accent-color-10\\" role=\\"img\\" aria-label=\\"Michael Thompson\\">MT</span>
+            <div class=\\"fd-list__content\\">
+                <div class=\\"fd-list__title\\">Annual Budget Review for Q3 and Q4 — please review the attached documents and provide your feedback before the end of the fiscal quarter to ensure timely processing.</div>
+                <div class=\\"fd-list__subline\\">Finance · Updated 2 hours ago by Michael Thompson, Senior Analyst, Global Finance Division · Reviewed by Anna Schmidt · Pending CFO approval</div>
+            </div>
+        </li>
+    </ul>
+</div>
+
+<div style=\\"margin-bottom: 2rem;\\">
+    <p class=\\"fd-form-label\\" style=\\"margin-bottom: 0.5rem;\\">List level — <code>fd-list--wrap</code></p>
+    <ul class=\\"fd-list fd-list--subline fd-list--wrap\\" role=\\"list\\">
+        <li role=\\"listitem\\" tabindex=\\"0\\" class=\\"fd-list__item fd-list__item--interractive\\">
+            <span class=\\"fd-avatar fd-avatar--sm fd-avatar--circle fd-avatar--accent-color-10\\" role=\\"img\\" aria-label=\\"John Doe\\">JD</span>
+            <div class=\\"fd-list__content\\">
+                <div class=\\"fd-list__title\\">All titles wrap at list level, Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, quod deleniti optio earum voluptatem in, nam et ratione aliquam error facilis expedita magnam repudiandae rerum sint blanditiis rem quo?</div>
+                <div class=\\"fd-list__subline\\">All sublines wrap too, Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia saepe doloribus nulla aliquid soluta aperiam, amet iste sint? Explicabo dicta doloremque amet minima perferendis.</div>
+            </div>
+        </li>
+    </ul>
+</div>
+
+<div style=\\"margin-bottom: 2rem;\\">
+    <p class=\\"fd-form-label\\" style=\\"margin-bottom: 0.5rem;\\">Item level — <code>fd-list__item--wrap</code> (collapsed and expanded states)</p>
+    <!-- The fd-list__link--more element is placed outside fd-list__title so it stays
+         visible even when the title truncates. -->
+    <ul class=\\"fd-list fd-list--subline\\" role=\\"list\\">
+        <li role=\\"listitem\\" tabindex=\\"0\\" class=\\"fd-list__item fd-list__item--interractive\\">
+            <span class=\\"fd-avatar fd-avatar--sm fd-avatar--circle fd-avatar--accent-color-10\\" role=\\"img\\" aria-label=\\"John Doe\\">JD</span>
+            <div class=\\"fd-list__content\\">
+                <div class=\\"fd-list__title\\">Collapsed — title truncated, Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, quod deleniti optio earum voluptatem in, nam et ratione aliquam error facilis expedita magnam repudiandae rerum sint blanditiis rem quo?</div>
+                <a href=\\"#\\" class=\\"fd-link fd-list__link--more\\" aria-expanded=\\"false\\" tabindex=\\"0\\"><span class=\\"fd-link__content\\">More</span></a>
+                <div class=\\"fd-list__subline\\">Subline truncated, Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia saepe doloribus nulla aliquid soluta aperiam, amet iste sint? Explicabo dicta doloremque.</div>
+            </div>
+        </li>
+        <li role=\\"listitem\\" tabindex=\\"0\\" class=\\"fd-list__item fd-list__item--interractive fd-list__item--wrap\\">
+            <span class=\\"fd-avatar fd-avatar--sm fd-avatar--circle fd-avatar--accent-color-10\\" role=\\"img\\" aria-label=\\"John Doe\\">JD</span>
+            <div class=\\"fd-list__content\\">
+                <div class=\\"fd-list__title\\">Expanded — fd-list__item--wrap applied, Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, quod deleniti optio earum voluptatem in, nam et ratione aliquam error facilis expedita magnam repudiandae rerum sint blanditiis rem quo? <a href=\\"#\\" class=\\"fd-link fd-list__link--more\\" aria-expanded=\\"true\\" tabindex=\\"0\\"><span class=\\"fd-link__content\\">Less</span></a></div>
+                <div class=\\"fd-list__subline\\">Subline wraps too, Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia saepe doloribus nulla aliquid soluta aperiam, amet iste sint? Explicabo dicta doloremque amet minima perferendis.</div>
+            </div>
+        </li>
+    </ul>
+</div>
+
+<div>
+    <p class=\\"fd-form-label\\" style=\\"margin-bottom: 0.5rem;\\">Element level — <code>fd-list__title--wrap</code> / <code>fd-list__subline--wrap</code></p>
+    <ul class=\\"fd-list fd-list--subline\\" role=\\"list\\">
+        <li role=\\"listitem\\" tabindex=\\"0\\" class=\\"fd-list__item fd-list__item--interractive\\">
+            <span class=\\"fd-avatar fd-avatar--sm fd-avatar--circle fd-avatar--accent-color-10\\" role=\\"img\\" aria-label=\\"John Doe\\">JD</span>
+            <div class=\\"fd-list__content\\">
+                <div class=\\"fd-list__title fd-list__title--wrap\\">Only the title wraps here, Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, quod deleniti optio earum voluptatem in, nam et ratione aliquam error facilis expedita magnam repudiandae rerum sint blanditiis rem quo?</div>
+                <div class=\\"fd-list__subline\\">Subline still truncates, Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia saepe doloribus nulla aliquid soluta aperiam, amet iste sint? Explicabo dicta doloremque.</div>
+            </div>
+        </li>
+        <li role=\\"listitem\\" tabindex=\\"0\\" class=\\"fd-list__item fd-list__item--interractive\\">
+            <span class=\\"fd-avatar fd-avatar--sm fd-avatar--circle fd-avatar--accent-color-6\\" role=\\"img\\" aria-label=\\"Jane Doe\\">JD</span>
+            <div class=\\"fd-list__content\\">
+                <div class=\\"fd-list__title\\">Title still truncates, Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, quod deleniti optio earum voluptatem in, nam et ratione aliquam error facilis expedita.</div>
+                <div class=\\"fd-list__subline fd-list__subline--wrap\\">Only the subline wraps here, Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia saepe doloribus nulla aliquid soluta aperiam, amet iste sint? Explicabo dicta doloremque amet minima perferendis.</div>
+            </div>
+        </li>
+    </ul>
+</div>
+"
+`;
+
 exports[`Check stories > Components/List/Subline > Story Standard > Should match snapshot 1`] = `
 "<ul class=\\"fd-list fd-list--subline\\" role=\\"list\\">
     <li role=\\"listitem\\" tabindex=\\"0\\" class=\\"fd-list__item fd-list__item--interractive\\">
@@ -36680,19 +36867,19 @@ exports[`Check stories > Components/List/Subline > Story Standard > Should match
         <span class=\\"fd-list__active-indicator sap-icon--sys-enter-2\\"></span>
     </li>
     <li role=\\"listitem\\" tabindex=\\"0\\" class=\\"fd-list__item fd-list__item--interractive\\">
-        <span class=\\"fd-avatar fd-avatar--sm fd-avatar--circle fd-avatar--accent-color-10\\" aria-role=\\"img\\" aria-label=\\"John Doe\\">JD</span>
+        <span class=\\"fd-avatar fd-avatar--sm fd-avatar--circle fd-avatar--accent-color-10\\" role=\\"img\\" aria-label=\\"John Doe\\">JD</span>
         <div class=\\"fd-list__content\\">
-            <div class=\\"fd-list__title\\">List Item Title Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt, quod deleniti optio earum voluptatem in, nam et ratione aliquam error facilis expedita magnam repudiandae rerum sint blanditiis rem quo? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt, quod deleniti optio earum voluptatem in, nam et ratione aliquam error facilis expedita magnam repudiandae rerum sint blanditiis rem quo!</div>
-            <div class=\\"fd-list__subline\\">List Item Subline Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia saepe doloribus nulla aliquid soluta aperiam, amet iste sint? Explicabo dicta doloremque amet minima perferendis. Necessitatibus reiciendis voluptatum id nesciunt earum! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt, quod deleniti optio earum voluptatem in, nam et ratione aliquam error facilis expedita magnam repudiandae rerum sint blanditiis rem quo.</div>
-            <div class=\\"fd-list__subline\\">List Item Subline Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque asperiores id deleniti quae? Amet officia cum assumenda. Ab, dolores ea dignissimos, aliquid beatae magnam commodi, tenetur facere harum ex nemo? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt, quod deleniti optio earum voluptatem in, nam et ratione aliquam error facilis expedita magnam repudiandae rerum sint blanditiis rem quo.</div>
+            <div class=\\"fd-list__title\\">List Item Title Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt, quod deleniti optio earum voluptatem in, nam et ratione aliquam error facilis expedita magnam repudiandae rerum sint blanditiis rem quo?</div>
+            <div class=\\"fd-list__subline\\">List Item Subline Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia saepe doloribus nulla aliquid soluta aperiam, amet iste sint? Explicabo dicta doloremque amet minima perferendis.</div>
+            <div class=\\"fd-list__subline\\">List Item Subline Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque asperiores id deleniti quae? Amet officia cum assumenda.</div>
         </div>
     </li>
     <li role=\\"listitem\\" tabindex=\\"0\\" class=\\"fd-list__item fd-list__item--interractive\\">
         <span class=\\"fd-avatar fd-avatar--sm fd-avatar--thumbnail\\" style=\\"background-image: url('/assets/images/landscape/L1.jpg')\\" role=\\"img\\" aria-label=\\"John Doe\\"></span>
         <div class=\\"fd-list__content\\">
-            <div class=\\"fd-list__title fd-list__title--truncate\\">List Item Title Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt, quod deleniti optio earum voluptatem in, nam et ratione aliquam error facilis expedita magnam repudiandae rerum sint blanditiis rem quo? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt, quod deleniti optio earum voluptatem in, nam et ratione aliquam error facilis expedita magnam repudiandae rerum sint blanditiis rem quo!</div>
-            <div class=\\"fd-list__subline fd-list__subline--truncate\\">List Item Subline Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia saepe doloribus nulla aliquid soluta aperiam, amet iste sint? Explicabo dicta doloremque amet minima perferendis. Necessitatibus reiciendis voluptatum id nesciunt earum! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt, quod deleniti optio earum voluptatem in, nam et ratione aliquam error facilis expedita magnam repudiandae rerum sint blanditiis rem quo.</div>
-            <div class=\\"fd-list__subline fd-list__subline--truncate\\">List Item Subline Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque asperiores id deleniti quae? Amet officia cum assumenda. Ab, dolores ea dignissimos, aliquid beatae magnam commodi, tenetur facere harum ex nemo? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt, quod deleniti optio earum voluptatem in, nam et ratione aliquam error facilis expedita magnam repudiandae rerum sint blanditiis rem quo.</div>
+            <div class=\\"fd-list__title fd-list__title--wrap\\">List Item Title Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt, quod deleniti optio earum voluptatem in, nam et ratione aliquam error facilis expedita magnam repudiandae rerum sint blanditiis rem quo?</div>
+            <div class=\\"fd-list__subline fd-list__subline--wrap\\">List Item Subline Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia saepe doloribus nulla aliquid soluta aperiam, amet iste sint? Explicabo dicta doloremque amet minima perferendis.</div>
+            <div class=\\"fd-list__subline fd-list__subline--wrap\\">List Item Subline Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque asperiores id deleniti quae? Amet officia cum assumenda.</div>
         </div>
     </li>
 </ul>
@@ -41867,10 +42054,12 @@ exports[`Check stories > Components/Object List > Story Standard > Should match 
 "
 <h4 id=\\"objectListItemHeader\\">Object List Item</h4>
 <ul class=\\"fd-list fd-object-list\\" role=\\"list\\" aria-labelledby=\\"objectListItemHeader\\">
+
+  <!-- Default: all text truncates -->
   <li role=\\"listitem\\" tabindex=\\"0\\" class=\\"fd-list__item fd-object-list__item\\">
     <div class=\\"fd-object-list__container\\">
       <div class=\\"fd-object-list__intro\\">
-       Optional inline text very very very long
+       Optional inline text very very very long optional inline text very very very long optional inline text Optional inline text very very very long optional inline text very very very long optional inline text
       </div>
       <div class=\\"fd-object-list__header\\">
         <span class=\\"fd-avatar fd-avatar--s\\"
@@ -41879,7 +42068,7 @@ exports[`Check stories > Components/Object List > Story Standard > Should match 
         <div class=\\"fd-object-list__header-left\\">
          <div class=\\"fd-object-identifier fd-object-list__object-identifier\\">
           <p class=\\"fd-object-identifier__title\\">
-           Fitbit Versa Smart Watch, Black Fitbit Versa Smart Watch
+           Fitbit Versa Smart Watch, Black Fitbit Versa Smart Watch Fitbit Versa Smart Watch, Black Fitbit Versa Smart Watch Fitbit Versa Smart Watch, Black Fitbit Versa Smart Watch Fitbit Versa Smart Watch, Black Fitbit Versa Smart Watch
           </p>
          </div>
         </div>
@@ -41894,46 +42083,47 @@ exports[`Check stories > Components/Object List > Story Standard > Should match 
         <div class=\\"fd-object-list__row\\">
           <div class=\\"fd-object-list__row-left\\">
             <div class=\\"fd-object-list__object-attribute\\">
-
-              First Attribute
+              First Attribute very very very long first attribute text that should truncate
             </div>
           </div>
           <div class=\\"fd-object-list__row-right\\">
             <div class=\\"fd-object-marker\\">
-              <i class=\\"fd-object-marker__icon sap-icon--flag\\"
+              <i role=\\"img\\" class=\\"fd-object-marker__icon sap-icon--flag\\"
                aria-label=\\"icon for flag\\"></i>
             </div>
             <div class=\\"fd-object-marker\\">
-              <i class=\\"fd-object-marker__icon sap-icon--favorite\\" aria-label=\\"icon for favourite\\"></i>
+              <i role=\\"img\\" class=\\"fd-object-marker__icon sap-icon--favorite\\" aria-label=\\"icon for favourite\\"></i>
             </div>
           </div>
         </div>
         <div class=\\"fd-object-list__row\\">
           <div class=\\"fd-object-list__row-left\\">
             <div class=\\"fd-object-list__object-attribute\\">
-              Second Attribute
+              Second Attribute  very very very long first attribute text that should truncate
             </div>
           </div>
           <div class=\\"fd-object-list__row-right\\">
             <span class=\\"fd-object-status fd-object-status--critical\\">
-              <span class=\\"fd-object-status__text\\">Critical very very very long</span>
+              <span class=\\"fd-object-status__text\\">Critical very very very long critical status text that should truncate  very very very long first attribute text that should truncate</span>
             </span>
           </div>
         </div>
         <div class=\\"fd-object-list__row\\">
           <div class=\\"fd-object-list__row-left\\">
             <div class=\\"fd-object-list__object-attribute\\">
-              Third Attribute
+              Third Attribute very very very long first attribute text that should truncate  very very very long first attribute text that should truncate  very very very long first attribute text that should truncate
             </div>
+          </div>
         </div>
       </div>
     </div>
-    </div>
   </li>
+
+  <!-- __intro--wrap: long intro text wraps -->
   <li role=\\"listitem\\" tabindex=\\"0\\" class=\\"fd-list__item fd-object-list__item\\">
     <div class=\\"fd-object-list__container\\">
-      <div class=\\"fd-object-list__intro\\">
-       Optional inline text very very very long
+      <div class=\\"fd-object-list__intro fd-object-list__intro--wrap\\">
+       Optional inline text very very very long optional inline text very very very long optional inline text very very very long optional inline text  optional inline text very very very long optional inline text 
       </div>
       <div class=\\"fd-object-list__header\\">
         <span class=\\"fd-avatar fd-avatar--s\\"
@@ -41941,8 +42131,8 @@ exports[`Check stories > Components/Object List > Story Standard > Should match 
         </span>
         <div class=\\"fd-object-list__header-left\\">
          <div class=\\"fd-object-identifier fd-object-list__object-identifier\\">
-          <p class=\\"fd-object-identifier__title\\">
-           Fitbit Versa Smart Watch, Black Fitbit Versa Smart Watch
+          <p class=\\"fd-object-identifier__title fd-object-identifier__title--wrap\\">
+           Fitbit Versa Smart Watch, Black Fitbit Versa Smart Watch Fitbit Versa Smart Watch, Black Fitbit Versa Smart Watch Fitbit Versa Smart Watch, Black Fitbit Versa Smart Watch Fitbit Versa Smart Watch, Black Fitbit Versa Smart Watch
           </p>
          </div>
         </div>
@@ -41984,12 +42174,14 @@ exports[`Check stories > Components/Object List > Story Standard > Should match 
             <div class=\\"fd-object-list__object-attribute\\">
               Third Attribute
             </div>
+          </div>
         </div>
       </div>
     </div>
-    </div>
   </li>
-  <li role=\\"listitem\\" tabindex=\\"0\\" class=\\"fd-list__item fd-object-list__item\\">
+
+  <!-- __row-right--wrap: long status text wraps -->
+  <li role=\\"listitem\\" tabindex=\\"0\\" class=\\"fd-list__item fd-object-list__item fd-list__item--wrap\\">
     <div class=\\"fd-object-list__container\\">
       <div class=\\"fd-object-list__intro\\">
        Optional inline text very very very long
@@ -42023,15 +42215,17 @@ exports[`Check stories > Components/Object List > Story Standard > Should match 
         </div>
         <div class=\\"fd-object-list__row\\">
           <div class=\\"fd-object-list__row-left\\"></div>
-          <div class=\\"fd-object-list__row-right\\">
+          <div class=\\"fd-object-list__row-right fd-object-list__row-right--wrap\\">
             <span class=\\"fd-object-status fd-object-status--critical\\">
-              <span class=\\"fd-object-status__text\\">Critical</span>
+              <span class=\\"fd-object-status__text\\">Critical very very very long critical status text that should now wrap instead of truncating with ellipsis</span>
             </span>
           </div>
         </div>
       </div>
     </div>
   </li>
+
+  <!-- __object-attribute--wrap: long attribute text wraps -->
   <li role=\\"listitem\\" tabindex=\\"0\\" class=\\"fd-list__item fd-object-list__item\\">
     <div class=\\"fd-object-list__container\\">
       <div class=\\"fd-object-list__intro\\">
@@ -42058,8 +42252,8 @@ exports[`Check stories > Components/Object List > Story Standard > Should match 
       <div class=\\"fd-object-list__content\\">
         <div class=\\"fd-object-list__row\\">
           <div class=\\"fd-object-list__row-left\\">
-            <div class=\\"fd-object-list__object-attribute\\">
-              First Attribute
+            <div class=\\"fd-object-list__object-attribute fd-object-list__object-attribute--wrap\\">
+              First Attribute very very very long first attribute text that should now wrap instead of truncating with ellipsis
             </div>
           </div>
           <div class=\\"fd-object-list__row-right\\">
@@ -42081,9 +42275,9 @@ exports[`Check stories > Components/Object List > Story Standard > Should match 
             <div class=\\"fd-object-list__object-attribute\\">
               Third Attribute
             </div>
+          </div>
         </div>
       </div>
-    </div>
     </div>
   </li>
 </ul>
@@ -63894,15 +64088,15 @@ exports[`Check stories > Components/User Menu > Story Default > Should match sna
                             ></i>
                         </span>
                         <div class=\\"fd-user-menu__header-container\\">
-                            <div class=\\"fd-user-menu__user-name\\">
+                            <div class=\\"fd-user-menu__user-name fd-user-menu__user-name--wrap\\">
                                 Lisa Miller Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa consequuntur
                                 cum voluptate iure tenetu!
                             </div>
-                            <div class=\\"fd-user-menu__subline\\">
+                            <div class=\\"fd-user-menu__subline fd-user-menu__subline--wrap\\">
                                 lisa.miller@test.com Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem
                                 quod accusamus quis magnam, reprehenderit anim.
                             </div>
-                            <div class=\\"fd-user-menu__subline\\">
+                            <div class=\\"fd-user-menu__subline fd-user-menu__subline--wrap\\">
                                 A very long subline 2 that can be displayed by wrapping behaviour in the subtitle like
                                 this.
                             </div>
@@ -63957,15 +64151,15 @@ exports[`Check stories > Components/User Menu > Story Default > Should match sna
                                             aria-label=\\"Jane Doe\\"
                                         ></span>
                                         <div class=\\"fd-list__content\\">
-                                            <div class=\\"fd-list__title\\">
+                                            <div class=\\"fd-list__title fd-list__title--wrap\\">
                                                 Lisa Miller Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                                                 Autem minima ex distinctio dolores vitae!
                                             </div>
-                                            <div class=\\"fd-list__subline\\">
+                                            <div class=\\"fd-list__subline fd-list__subline--wrap\\">
                                                 lisa.miller@test.com Lorem, ipsum dolor sit amet consectetur adipisicing
                                                 elit.
                                             </div>
-                                            <div class=\\"fd-list__subline\\">
+                                            <div class=\\"fd-list__subline fd-list__subline--wrap\\">
                                                 Delivery Manager Lorem ipsum dolor sit amet consectetur adipisicing
                                                 elit.
                                             </div>
@@ -64184,9 +64378,9 @@ exports[`Check stories > Components/User Menu > Story Mobile > Should match snap
                                     <span class=\\"fd-menu__title\\">About</span>
                                 </a>
                             </li>
-                            
+
                         </ul>
-                    </nav>  
+                    </nav>
                 </div>
             </div>
             <div class=\\"fd-bar fd-bar--footer fd-user-menu__footer\\">
@@ -64239,7 +64433,7 @@ exports[`Check stories > Components/User Menu > Story Mobile > Should match snap
                             </div>
                         </li>
                     </ul>
-                </nav>  
+                </nav>
             </div>
         </div>
     </div>

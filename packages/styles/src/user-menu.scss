@@ -78,33 +78,45 @@ $menu: #{$fd-namespace}-menu;
 
   &__user-name {
     @include fd-reset();
-   
+
     max-width: 100%;
     line-height: 1.4rem;
-    white-space: normal;
     color: var(--sapTextColor);
     font-size: var(--sapFontLargeSize);
     font-family: var(--fdUserMenu_User_Name_Font_Family);
 
-    &--truncate {
-      @include fd-line-clamp(2);
+    @include fd-line-clamp(2);
 
-      max-height: 2.8rem;
+    max-height: 2.8rem;
+
+    &--wrap {
+      display: block;
+      overflow: visible;
+      max-height: none;
     }
-  }  
+
+    &--truncate {
+      // deprecated no-op: truncation is now the default
+    }
+  }
 
   &__user-info,
   &__user-role,
   &__subline {
     @include fd-reset();
-    
+
     width: 100%;
     max-width: 100%;
-    white-space: normal;
     color: var(--sapContent_LabelColor);
 
+    @include fd-ellipsis();
+
+    &--wrap {
+      @include fd-wrap();
+    }
+
     &--truncate {
-      @include fd-ellipsis();
+      // deprecated no-op: truncation is now the default
     }
   }
 
