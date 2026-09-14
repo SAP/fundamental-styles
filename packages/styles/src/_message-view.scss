@@ -14,8 +14,12 @@ $block: #{$fd-namespace}-message-view;
     @include fd-reset();
 
     max-height: 50vh;
-    width: 26rem;
-    max-width: 100%;
+    max-width: 26rem;
+
+    .fd-list--wrap {
+      width: 26rem;
+      max-width: 100%;
+    }
 
     &--hidden {
       opacity: 0;
