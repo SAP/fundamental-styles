@@ -358,6 +358,20 @@ $fd-list-second-level-popover-position: 3.25rem !default;
         text-overflow: initial;
         line-height: normal;
       }
+
+      .#{$blockList}__navigation-item.is-expanded {
+        padding-block: 0.875rem 0;
+      }
+
+      .#{$blockList}__navigation-item.is-expanded .#{$blockList} {
+        margin-block-start: 0.5rem;
+      }
+
+      .#{$blockList}__navigation-item.is-expanded .#{$blockList}__navigation-item {
+        .#{$blockList}__navigation-item-text {
+          line-height: normal;
+        }
+      }
     }
   }
 
