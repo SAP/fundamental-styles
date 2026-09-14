@@ -95,6 +95,7 @@ npm install fundamental-styles
 | `fd-list--no-border` | Style variant |
 | `fd-list--selection` | Byline list items can contain navigation links |
 | `fd-list--unread-indicator` | Style variant |
+| `fd-list--wrap` | By default, long title and byline text is truncated with an ellipsis |
 
 ## States
 
@@ -125,6 +126,7 @@ This component uses the following BEM elements:
 - `fd-list__item--interractive`
 - `fd-list__item--link`
 - `fd-list__item--unread`
+- `fd-list__item--wrap`
 - `fd-list__item-counter`
 - `fd-list__link`
 - `fd-list__link--more`
@@ -280,16 +282,38 @@ Byline list items can contain navigation links. To add navigation, add the \
     <li role="listitem" class="fd-list__item">
         <span class="fd-list__thumbnail"><i role="presentation" class="sap-icon--activate"></i></span>
         <div class="fd-list__content">
-            <span class="fd-list__title">List item 1</span>
+            <span class="fd-list__title fd-list__title--wrap">List item 1</span>
+            <span class="fd-list__byline">Byline (description) List item 1 </span>
         </div>
-        <button class="fd-button fd-button--transparent fd-list__button">
+        <button class="fd-button fd-button--transparent fd-list__button" aria-label="Edit>
             <i class="sap-icon--edit"></i>
         </button>
-        <button class="fd-button fd-button--transparent fd-list__button">
+        <button class="fd-button fd-button--transparent fd-list__button" aria-label="Decline">
             <i class="sap-icon--decline"></i>
         </button>
     </li>
-</ul>
+    <li role="listitem" class="fd-list__item">
+        <span class="fd-list__thumbnail"><i role="presentation" class="sap-icon--activate"></i></span>
+        <div class="fd-list__content">
+            <span class="fd-list__title fd-list__title--wrap"
+                >Title that wraps. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat, duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</span
+                >
+                <span class="fd-list__byline fd-list__byline--wrap"
+                    >Byline that wraps. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Donec velit
+                    neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Proin elementum sapien vel enim facilisis, at faucibus
+                    nibh ornare. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas</span
+                    >
+                </div>
+                <button class="fd-button fd-button--transparent fd-list__button" aria-label="Edit">
+                    <i class="sap-icon--edit"></i>
+                </button>
+                <button class="fd-button fd-button--transparent fd-list__button" aria-label="Decline">
+                    <i class="sap-icon--decline"></i>
+                </button>
+            </li>
+        </ul>
 ```
 
 ### Interractive
@@ -356,12 +380,12 @@ If only some of the list items are navigable, you should indicate them with an a
 
 ```html
 <ul class="fd-list fd-list--byline fd-list--navigation fd-list--navigation-indication" role="list">
-    <li role="listitem" tabindex="-1" class="fd-list__item fd-list__item--link">
+    <li role="listitem" tabindex="-1" class="fd-list__item fd-list__item--link ">
         <a tabindex="0" class="fd-list__link fd-list__link--navigation-indicator" href="#">
             <span class="fd-list__thumbnail"><i role="presentation" class="sap-icon--activate"></i></span>
             <div class="fd-list__content">
-                <div class="fd-list__title">Title</div>
-                <div class="fd-list__byline">Byline (description)</div>
+                <div class="fd-list__title fd-list__title--wrap">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat, duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</div>
+                <div class="fd-list__byline fd-list__byline--wrap">Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Proin elementum sapien vel enim facilisis, at faucibus nibh ornare. Pellentesque habitant morbi tristique senectus et netus</div>
             </div>
         </a>
     </li>
@@ -420,7 +444,7 @@ To display a borderless byline list, add the \
         <li role="listitem" tabindex="0" class="fd-list__item">
             <span class="fd-list__thumbnail"><i role="presentation" class="sap-icon--world"></i></span>
             <div class="fd-list__content">
-                <div class="fd-list__title">List item with 2-column byline (with an additional semantic byline)</div>
+                <div class="fd-list__title fd-list__title--wrap">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat, duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</div>
                 <div class="fd-list__byline fd-list__byline--2-col">
                     <div class="fd-list__byline-left">First text item in byline (standard text)</div>
                     <div class="fd-list__byline-right fd-list__byline-right--informative">Second text item in byline (information)</div>
@@ -436,7 +460,7 @@ Byline list items can display checkboxes that users can select from. To display 
 
 ```html
 <ul class="fd-list fd-list--selection fd-list--byline" role="listbox" aria-labelledby="O09lk9">
-    <li role="option" tabindex="0" class="fd-list__item is-selected">
+    <li role="option" tabindex="0" class="fd-list__item fd-list__item--wrap is-selected">
         <div class="fd-form-item fd-list__form-item">
             <input type="checkbox" class="fd-checkbox" id="Ai4ez6111Z" checked aria-labelledby="O09lk1">
             <label tabindex="-1" class="fd-checkbox__label" for="Ai4ez6111Z">
@@ -445,8 +469,8 @@ Byline list items can display checkboxes that users can select from. To display 
         </div>
         <span class="fd-list__thumbnail"><i role="presentation" class="sap-icon--activate"></i></span>
         <div class="fd-list__content">
-            <span class="fd-list__title" id="O09lk1">Title</span>
-            <span class="fd-list__byline">Byline (description)</span>
+            <span class="fd-list__title" id="O09lk1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat, duis aute irure dolor in reprehenderit</span>
+            <span class="fd-list__byline">Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Proin elementum sapien vel enim facilisis</span>
         </div>
     </li>
     <li role="option" tabindex="0" class="fd-list__item">
@@ -459,9 +483,9 @@ Byline list items can display checkboxes that users can select from. To display 
         <span class="fd-image--s fd-list__thumbnail" aria-label="Godafoss waterfall in northern Iceland"
             ></span>
             <div class="fd-list__content">
-                <div class="fd-list__title" id="O09lk2">List item with 2-column byline</div>
-                <div class="fd-list__byline fd-list__byline--2-col">
-                    <div class="fd-list__byline-left">First text item in byline (standard text)</div>
+                <div class="fd-list__title fd-list__title--wrap" id="O09lk2">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat, duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</div>
+                <div class="fd-list__byline fd-list__byline--wrap fd-list__byline--2-col">
+                    <div class="fd-list__byline-left">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur, excepteur sint occaecat cupidatat non proident</div>
                     <div class="fd-list__byline-right">Second text item in byline (can be semantic)</div>
                 </div>
             </div>
@@ -546,8 +570,8 @@ To display byline list items with selection and navigation, add these following 
     <li role="listitem" tabindex="0" class="fd-list__item">
         <span class="fd-list__thumbnail"><i role="presentation" class="sap-icon--activate"></i></span>
         <div class="fd-list__content">
-            <div class="fd-list__title">List Item Title</div>
-            <div class="fd-list__byline">Byline (description)</div>
+            <div class="fd-list__title fd-list__title--wrap">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat, duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</div>
+            <div class="fd-list__byline fd-list__byline--wrap">Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Proin elementum sapien vel enim facilisis, at faucibus nibh ornare. Pellentesque habitant morbi tristique senectus et netus</div>
         </div>
         <span class="fd-list__item-counter">123</span>
     </li>
@@ -582,44 +606,70 @@ To display byline list items with selection and navigation, add these following 
 
 ### List with long Title and Byline
 
-By default, To allow the title and byline text to wrap, add these following modifier classes to the the title and byline respectively:
+By default, long title and byline text is truncated with an ellipsis. Wrapping can be enabled at three levels:
 
-- \
+**List level** — add \
 
 ```html
+<p class="fd-form-label">Default — truncation</p>
 <ul class="fd-list fd-list--byline" role="list">
     <li role="listitem" tabindex="0" class="fd-list__item">
         <span class="fd-list__thumbnail"><i role="presentation" class="sap-icon--activate"></i></span>
         <div class="fd-list__content">
-            <div class="fd-list__title">List Item Title</div>
-            <div class="fd-list__byline fd-list__byline--wrap">Very Long Byline (description), Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat... <a href="#" class="fd-link fd-list__link--more" tabindex="0"><span class="fd-link__content">More</span></a></div>
-        </div>
-        <span class="fd-list__item-counter">12345</span>
-    </li>
+            <div class="fd-list__title">Annual Budget Review for Q3 and Q4 — please review the attached documents and provide your feedback before the end of the fiscal quarter to ensure timely processing.</div>
+            <div class="fd-list__byline">Finance · Updated 2 hours ago by Michael Thompson, Senior Analyst, Global Finance Division, Central Europe · Reviewed by Anna Schmidt, Finance Controller · Pending approval from Regional CFO</div>
+        </li>
+    </ul>
+</div>
+
+<p class="fd-form-label">List level — <code>fd-list--wrap</code></p>
+<ul class="fd-list fd-list--byline fd-list--wrap" role="list">
     <li role="listitem" tabindex="0" class="fd-list__item">
         <span class="fd-list__thumbnail"><i role="presentation" class="sap-icon--employee"></i></span>
         <div class="fd-list__content">
-            <div class="fd-list__title fd-list__title--wrap">Very long list item with no byline, Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
-        </div>
-    </li>
-    <li role="listitem" tabindex="0" class="fd-list__item">
-        <span class="fd-image--s fd-list__thumbnail" aria-label="Godafoss waterfall in northern Iceland"
-            style="background-image: url('assets/images/backgrounds/Godafoss_waterfall_in_northern_Iceland.jpg'); background-size:cover;"></span>
-            <div class="fd-list__content">
-                <div class="fd-list__title fd-list__title--wrap">Very long title, Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
-                <div class="fd-list__byline fd-list__byline--wrap">
-                    <div class="fd-list__byline-left">First text item in byline (standard text), Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<a href="#" class="fd-link fd-list__link--more" tabindex="0"><span class="fd-link__content">Less</span></a></div>
-                    <div class="fd-list__byline-right">Second text item in byline (can be semantic)</div>
-                </div>
-            </div>
+            <div class="fd-list__title">All titles wrap at list level, Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</div>
+            <div class="fd-list__byline">All bylines wrap too, Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</div>
         </li>
-        <li role="listitem" tabindex="0" class="fd-list__item">
+    </ul>
+</div>
+
+<p class="fd-form-label">Item level — <code>fd-list__item--wrap</code> (collapsed and expanded states)</p>
+<!-- The fd-list__link--more element is placed outside fd-list__title so it stays
+visible even when the title truncates. -->
+<ul class="fd-list fd-list--byline" role="list">
+    <li role="listitem" tabindex="0" class="fd-list__item">
+        <span class="fd-list__thumbnail"><i role="presentation" class="sap-icon--employee"></i></span>
+        <div class="fd-list__content">
+            <div class="fd-list__title">Collapsed — title truncated, Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</div>
+            <a href="#" class="fd-link fd-list__link--more" aria-expanded="false" tabindex="0"><span class="fd-link__content">More</span></a>
+            <div class="fd-list__byline">Byline truncated, Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</div>
+        </li>
+        <li role="listitem" tabindex="0" class="fd-list__item fd-list__item--wrap">
+            <span class="fd-list__thumbnail"><i role="presentation" class="sap-icon--employee"></i></span>
             <div class="fd-list__content">
-                <div class="fd-list__title">Text-only list item</div>
-                <div class="fd-list__byline">Byline (description)</div>
+                <div class="fd-list__title">Expanded — fd-list__item--wrap applied, Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco. <a href="#" class="fd-link fd-list__link--more" aria-expanded="true" tabindex="0"><span class="fd-link__content">Less</span></a></div>
+                <div class="fd-list__byline">Byline wraps too, Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</div>
             </div>
         </li>
     </ul>
+</div>
+
+<div>
+    <p class="fd-form-label">Element level — <code>fd-list__title--wrap</code> / <code>fd-list__byline--wrap</code></p>
+    <ul class="fd-list fd-list--byline" role="list">
+        <li role="listitem" tabindex="0" class="fd-list__item">
+            <span class="fd-image--s fd-list__thumbnail" role="img" aria-label="Godafoss waterfall in northern Iceland"
+                ></span>
+                <div class="fd-list__content">
+                    <div class="fd-list__title fd-list__title--wrap">Only the title wraps here, Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</div>
+                    <div class="fd-list__byline fd-list__byline--2-col fd-list__byline--wrap">
+                        <div class="fd-list__byline-left">First text item in byline, Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+                        <div class="fd-list__byline-right">Second text item (semantic)</div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
 ```
 
 ### With Group Header

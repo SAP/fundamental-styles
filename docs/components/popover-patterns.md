@@ -1085,6 +1085,146 @@ The user can filter selectable having 2 options by typing in the input. A button
 </div>
 ```
 
+### Long text
+
+Multi ComboBox dropdown list items wrap long option text by default (\
+
+```html
+<div class="fd-form-item">
+    <label for="lt-mcb-wrap" class="fd-form-label">Notification recipients</label>
+    <div class="fd-popover">
+        <div class="fd-popover__control">
+            <div class="fd-input-group fd-input-group--control" tabindex="0">
+                <div class="fd-tokenizer">
+                    <div class="fd-tokenizer__inner">
+                        <span class="fd-token" role="button" tabindex="0">
+                            <span class="fd-token__text">Database Monitoring</span>
+                            <button class="fd-token__close" aria-label="unselect option: Database Monitoring"></button>
+                        </span>
+                        <input class="fd-input fd-input-group__input fd-tokenizer__input" id="lt-mcb-wrap" aria-label="Notification recipients" />
+                    </div>
+                    <span class="fd-input-group__addon fd-input-group__addon--button">
+                        <button aria-label="Show options" aria-controls="lt-mcb-wrap-body" aria-expanded="true" aria-haspopup="true" class="fd-input-group__button fd-button fd-button--transparent">
+                            <i class="sap-icon--navigation-down-arrow"></i>
+                        </button>
+                    </span>
+                </div>
+            </div>
+            <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--dropdown fd-popover__body--dropdown-fill" aria-hidden="false" id="lt-mcb-wrap-body">
+                <div class="fd-popover__wrapper">
+                    <ul class="fd-list fd-list--multi-input" role="listbox" aria-multiselectable="true" aria-label="Notification recipients options">
+                        <li role="option" tabindex="0" class="fd-list__item is-selected" aria-selected="true">
+                            <div class="fd-form-item fd-list__form-item">
+                                <input type="checkbox" class="fd-checkbox" id="lt-mcb-1" checked aria-labelledby="lt-mcb-t1">
+                                <label tabindex="-1" class="fd-checkbox__label" for="lt-mcb-1">
+                                    <span class="fd-checkbox__checkmark" aria-hidden="true"></span>
+                                </label>
+                            </div>
+                            <span class="fd-list__title" id="lt-mcb-t1">Database Connectivity and Performance Monitoring Alert Group</span>
+                        </li>
+                        <li role="option" tabindex="0" class="fd-list__item">
+                            <div class="fd-form-item fd-list__form-item">
+                                <input type="checkbox" class="fd-checkbox" id="lt-mcb-2" aria-labelledby="lt-mcb-t2">
+                                <label tabindex="-1" class="fd-checkbox__label" for="lt-mcb-2">
+                                    <span class="fd-checkbox__checkmark" aria-hidden="true"></span>
+                                </label>
+                            </div>
+                            <span class="fd-list__title" id="lt-mcb-t2">Enterprise Infrastructure and Cloud Resource Management Team</span>
+                        </li>
+                        <li role="option" tabindex="0" class="fd-list__item">
+                            <div class="fd-form-item fd-list__form-item">
+                                <input type="checkbox" class="fd-checkbox" id="lt-mcb-3" aria-labelledby="lt-mcb-t3">
+                                <label tabindex="-1" class="fd-checkbox__label" for="lt-mcb-3">
+                                    <span class="fd-checkbox__checkmark" aria-hidden="true"></span>
+                                </label>
+                            </div>
+                            <span class="fd-list__title" id="lt-mcb-t3">Security Incident Response and Compliance Audit Notification List</span>
+                        </li>
+                        <li role="option" tabindex="0" class="fd-list__item">
+                            <div class="fd-form-item fd-list__form-item">
+                                <input type="checkbox" class="fd-checkbox" id="lt-mcb-4" aria-labelledby="lt-mcb-t4">
+                                <label tabindex="-1" class="fd-checkbox__label" for="lt-mcb-4">
+                                    <span class="fd-checkbox__checkmark" aria-hidden="true"></span>
+                                </label>
+                            </div>
+                            <span class="fd-list__title" id="lt-mcb-t4">Customer Escalation and Service Level Agreement Breach Alerts</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <p>Default — wraps</p>
+    </div>
+
+    <div class="fd-form-item">
+        <label for="lt-mcb-nowrap" class="fd-form-label">Notification recipients</label>
+        <div class="fd-popover">
+            <div class="fd-popover__control">
+                <div class="fd-input-group fd-input-group--control" tabindex="0">
+                    <div class="fd-tokenizer">
+                        <div class="fd-tokenizer__inner">
+                            <span class="fd-token" role="button" tabindex="0">
+                                <span class="fd-token__text">Database Monitoring</span>
+                                <button class="fd-token__close" aria-label="unselect option: Database Monitoring"></button>
+                            </span>
+                            <input class="fd-input fd-input-group__input fd-tokenizer__input" id="lt-mcb-nowrap" aria-label="Notification recipients" />
+                        </div>
+                    </div>
+                    <span class="fd-input-group__addon fd-input-group__addon--button">
+                        <button aria-label="Show options" aria-controls="lt-mcb-nowrap-body" aria-expanded="true" aria-haspopup="true" class="fd-input-group__button fd-button fd-button--transparent">
+                            <i class="sap-icon--navigation-down-arrow"></i>
+                        </button>
+                    </span>
+                </div>
+            </div>
+            <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--dropdown fd-popover__body--dropdown-fill" aria-hidden="false" id="lt-mcb-nowrap-body">
+                <div class="fd-popover__wrapper">
+                    <ul class="fd-list fd-list--multi-input" role="listbox" aria-multiselectable="true" aria-label="Notification recipients options">
+                        <li role="option" tabindex="0" class="fd-list__item is-selected" aria-selected="true">
+                            <div class="fd-form-item fd-list__form-item">
+                                <input type="checkbox" class="fd-checkbox" id="lt-mcb-n1" checked aria-labelledby="lt-mcb-nt1">
+                                <label tabindex="-1" class="fd-checkbox__label" for="lt-mcb-n1">
+                                    <span class="fd-checkbox__checkmark" aria-hidden="true"></span>
+                                </label>
+                            </div>
+                            <span class="fd-list__title fd-list__title--no-wrap" id="lt-mcb-nt1">Database Connectivity and Performance Monitoring Alert Group</span>
+                        </li>
+                        <li role="option" tabindex="0" class="fd-list__item">
+                            <div class="fd-form-item fd-list__form-item">
+                                <input type="checkbox" class="fd-checkbox" id="lt-mcb-n2" aria-labelledby="lt-mcb-nt2">
+                                <label tabindex="-1" class="fd-checkbox__label" for="lt-mcb-n2">
+                                    <span class="fd-checkbox__checkmark" aria-hidden="true"></span>
+                                </label>
+                            </div>
+                            <span class="fd-list__title fd-list__title--no-wrap" id="lt-mcb-nt2">Enterprise Infrastructure and Cloud Resource Management Team</span>
+                        </li>
+                        <li role="option" tabindex="0" class="fd-list__item">
+                            <div class="fd-form-item fd-list__form-item">
+                                <input type="checkbox" class="fd-checkbox" id="lt-mcb-n3" aria-labelledby="lt-mcb-nt3">
+                                <label tabindex="-1" class="fd-checkbox__label" for="lt-mcb-n3">
+                                    <span class="fd-checkbox__checkmark" aria-hidden="true"></span>
+                                </label>
+                            </div>
+                            <span class="fd-list__title fd-list__title--no-wrap" id="lt-mcb-nt3">Security Incident Response and Compliance Audit Notification List</span>
+                        </li>
+                        <li role="option" tabindex="0" class="fd-list__item">
+                            <div class="fd-form-item fd-list__form-item">
+                                <input type="checkbox" class="fd-checkbox" id="lt-mcb-n4" aria-labelledby="lt-mcb-nt4">
+                                <label tabindex="-1" class="fd-checkbox__label" for="lt-mcb-n4">
+                                    <span class="fd-checkbox__checkmark" aria-hidden="true"></span>
+                                </label>
+                            </div>
+                            <span class="fd-list__title fd-list__title--no-wrap" id="lt-mcb-nt4">Customer Escalation and Service Level Agreement Breach Alerts</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <p>With <code>fd-list__title--no-wrap</code> (opt-out)</p>
+    </div>
+</div>
+```
+
 ## Accessibility
 
 - Use semantic HTML elements where appropriate

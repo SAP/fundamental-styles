@@ -23490,6 +23490,118 @@ exports[`Check stories > Components/Dialog > Story Loading > Should match snapsh
 </div>"
 `;
 
+exports[`Check stories > Components/Dialog > Story LongTextList > Should match snapshot 1`] = `
+"<h3>Default (truncation)</h3>
+<div class=\\"fd-dialog-docs-static fd-dialog fd-dialog--active\\">
+    <div class=\\"fd-dialog__content\\" role=\\"dialog\\" aria-modal=\\"true\\" aria-labelledby=\\"lt-dialog-title-1\\">
+        <header class=\\"fd-dialog__header fd-bar fd-bar--header\\">
+            <div class=\\"fd-bar__left\\">
+                <div class=\\"fd-bar__element\\">
+                    <h2 class=\\"fd-title fd-title--h5\\" id=\\"lt-dialog-title-1\\">Select Items</h2>
+                </div>
+            </div>
+        </header>
+        <section class=\\"fd-dialog__body fd-dialog__body--no-vertical-padding\\">
+            <ul class=\\"fd-list fd-list--selection fd-list--no-border\\" aria-label=\\"selection list\\" role=\\"listbox\\">
+                <li role=\\"option\\" tabindex=\\"0\\" class=\\"fd-list__item\\">
+                    <div class=\\"fd-form-item fd-list__form-item\\">
+                        <input type=\\"checkbox\\" class=\\"fd-checkbox\\" id=\\"lt-dlg-1\\" aria-labelledby=\\"lt-dlg-t1\\">
+                        <label tabindex=\\"-1\\" class=\\"fd-checkbox__label\\" for=\\"lt-dlg-1\\">
+                            <span class=\\"fd-checkbox__checkmark\\" aria-hidden=\\"true\\"></span>
+                        </label>
+                    </div>
+                    <span class=\\"fd-list__title\\" id=\\"lt-dlg-t1\\">Annual Budget Planning Document for All Departments in the Fiscal Year 2025</span>
+                </li>
+                <li role=\\"option\\" tabindex=\\"0\\" class=\\"fd-list__item is-selected\\" aria-selected=\\"true\\">
+                    <div class=\\"fd-form-item fd-list__form-item\\">
+                        <input type=\\"checkbox\\" class=\\"fd-checkbox\\" id=\\"lt-dlg-2\\" checked aria-labelledby=\\"lt-dlg-t2\\">
+                        <label tabindex=\\"-1\\" class=\\"fd-checkbox__label\\" for=\\"lt-dlg-2\\">
+                            <span class=\\"fd-checkbox__checkmark\\" aria-hidden=\\"true\\"></span>
+                        </label>
+                    </div>
+                    <span class=\\"fd-list__title\\" id=\\"lt-dlg-t2\\">Customer Satisfaction Survey Consolidated Results and Analysis Report Q3 2024</span>
+                </li>
+                <li role=\\"option\\" tabindex=\\"0\\" class=\\"fd-list__item\\">
+                    <div class=\\"fd-form-item fd-list__form-item\\">
+                        <input type=\\"checkbox\\" class=\\"fd-checkbox\\" id=\\"lt-dlg-3\\" aria-labelledby=\\"lt-dlg-t3\\">
+                        <label tabindex=\\"-1\\" class=\\"fd-checkbox__label\\" for=\\"lt-dlg-3\\">
+                            <span class=\\"fd-checkbox__checkmark\\" aria-hidden=\\"true\\"></span>
+                        </label>
+                    </div>
+                    <span class=\\"fd-list__title\\" id=\\"lt-dlg-t3\\">Vendor Contract Review and Regulatory Compliance Assessment Final Report</span>
+                </li>
+            </ul>
+        </section>
+        <footer class=\\"fd-dialog__footer fd-bar fd-bar--footer\\">
+            <div class=\\"fd-bar__right\\">
+                <div class=\\"fd-bar__element\\">
+                    <button class=\\"fd-button fd-button--emphasized fd-button--compact\\">Select</button>
+                </div>
+                <div class=\\"fd-bar__element\\">
+                    <button class=\\"fd-button fd-button--transparent fd-button--compact\\">Cancel</button>
+                </div>
+            </div>
+        </footer>
+    </div>
+</div>
+
+<br /><br />
+<h3>With <code>fd-list--wrap</code> and <code>fd-list__item--wrap</code></h3>
+<div class=\\"fd-dialog-docs-static fd-dialog fd-dialog--active\\">
+    <div class=\\"fd-dialog__content\\" role=\\"dialog\\" aria-modal=\\"true\\" aria-labelledby=\\"lt-dialog-title-2\\">
+        <header class=\\"fd-dialog__header fd-bar fd-bar--header\\">
+            <div class=\\"fd-bar__left\\">
+                <div class=\\"fd-bar__element\\">
+                    <h2 class=\\"fd-title fd-title--h5\\" id=\\"lt-dialog-title-2\\">Select Items</h2>
+                </div>
+            </div>
+        </header>
+        <section class=\\"fd-dialog__body fd-dialog__body--no-vertical-padding\\">
+            <ul class=\\"fd-list fd-list--selection fd-list--no-border fd-list--wrap\\" aria-label=\\"selection list\\" role=\\"listbox\\">
+                <li role=\\"option\\" tabindex=\\"0\\" class=\\"fd-list__item fd-list__item--wrap\\">
+                    <div class=\\"fd-form-item fd-list__form-item\\">
+                        <input type=\\"checkbox\\" class=\\"fd-checkbox\\" id=\\"lt-dlg-w1\\" aria-labelledby=\\"lt-dlg-wt1\\">
+                        <label tabindex=\\"-1\\" class=\\"fd-checkbox__label\\" for=\\"lt-dlg-w1\\">
+                            <span class=\\"fd-checkbox__checkmark\\" aria-hidden=\\"true\\"></span>
+                        </label>
+                    </div>
+                    <span class=\\"fd-list__title\\" id=\\"lt-dlg-wt1\\">Annual Budget Planning Document for All Departments in the Fiscal Year 2025</span>
+                </li>
+                <li role=\\"option\\" tabindex=\\"0\\" class=\\"fd-list__item fd-list__item--wrap is-selected\\" aria-selected=\\"true\\">
+                    <div class=\\"fd-form-item fd-list__form-item\\">
+                        <input type=\\"checkbox\\" class=\\"fd-checkbox\\" id=\\"lt-dlg-w2\\" checked aria-labelledby=\\"lt-dlg-wt2\\">
+                        <label tabindex=\\"-1\\" class=\\"fd-checkbox__label\\" for=\\"lt-dlg-w2\\">
+                            <span class=\\"fd-checkbox__checkmark\\" aria-hidden=\\"true\\"></span>
+                        </label>
+                    </div>
+                    <span class=\\"fd-list__title\\" id=\\"lt-dlg-wt2\\">Customer Satisfaction Survey Consolidated Results and Analysis Report Q3 2024</span>
+                </li>
+                <li role=\\"option\\" tabindex=\\"0\\" class=\\"fd-list__item fd-list__item--wrap\\">
+                    <div class=\\"fd-form-item fd-list__form-item\\">
+                        <input type=\\"checkbox\\" class=\\"fd-checkbox\\" id=\\"lt-dlg-w3\\" aria-labelledby=\\"lt-dlg-wt3\\">
+                        <label tabindex=\\"-1\\" class=\\"fd-checkbox__label\\" for=\\"lt-dlg-w3\\">
+                            <span class=\\"fd-checkbox__checkmark\\" aria-hidden=\\"true\\"></span>
+                        </label>
+                    </div>
+                    <span class=\\"fd-list__title\\" id=\\"lt-dlg-wt3\\">Vendor Contract Review and Regulatory Compliance Assessment Final Report</span>
+                </li>
+            </ul>
+        </section>
+        <footer class=\\"fd-dialog__footer fd-bar fd-bar--footer\\">
+            <div class=\\"fd-bar__right\\">
+                <div class=\\"fd-bar__element\\">
+                    <button class=\\"fd-button fd-button--emphasized fd-button--compact\\">Select</button>
+                </div>
+                <div class=\\"fd-bar__element\\">
+                    <button class=\\"fd-button fd-button--transparent fd-button--compact\\">Cancel</button>
+                </div>
+            </div>
+        </footer>
+    </div>
+</div>
+"
+`;
+
 exports[`Check stories > Components/Dialog > Story Resizable > Should match snapshot 1`] = `
 "
 <div class=\\"fd-dialog-docs-static fd-dialog fd-dialog--active\\">
@@ -38394,6 +38506,74 @@ exports[`Check stories > Components/Message Popover > Story DetailsView > Should
 "
 `;
 
+exports[`Check stories > Components/Message Popover > Story LongText > Should match snapshot 1`] = `
+"<div style=\\"height: 500px;\\">
+    <div class=\\"fd-popover\\">
+        <div class=\\"fd-popover__control\\">
+            <button aria-controls=\\"msgPopoverWrap\\" aria-expanded=\\"true\\" aria-haspopup=\\"dialog\\" class=\\"fd-button fd-message-popover__trigger fd-message-popover__trigger--negative\\" role=\\"button\\">
+                <i class=\\"sap-icon--message-error\\" role=\\"presentation\\" aria-hidden=\\"true\\"></i>
+                <span class=\\"fd-button__text\\">2</span>
+            </button>
+        </div>
+        <section aria-hidden=\\"false\\" class=\\"fd-popover__body fd-popover__body--no-arrow\\" id=\\"msgPopoverWrap\\" aria-label=\\"Messages\\" role=\\"dialog\\">
+            <header class=\\"fd-popover__body-header\\">
+                <div class=\\"fd-bar fd-bar--header fd-bar--growing\\">
+                    <div class=\\"fd-bar__left\\">
+                        <div class=\\"fd-bar__element\\">
+                            <div class=\\"fd-segmented-button\\" role=\\"group\\" aria-label=\\"Filter messages\\">
+                                <button class=\\"fd-button fd-button--toggled\\" aria-pressed=\\"true\\"><span class=\\"fd-button__text\\">All</span></button>
+                                <button class=\\"fd-button\\" aria-pressed=\\"false\\">
+                                    <span class=\\"fd-object-status fd-object-status--negative\\"><i class=\\"fd-button__icon fd-object-status__icon sap-icon--message-error\\" aria-label=\\"Negative\\"></i></span>
+                                    <span class=\\"fd-button__text\\">1</span>
+                                </button>
+                                <button class=\\"fd-button\\" aria-pressed=\\"false\\">
+                                    <span class=\\"fd-object-status fd-object-status--critical\\"><i class=\\"fd-button__icon fd-object-status__icon sap-icon--message-warning\\" aria-label=\\"Warning\\"></i></span>
+                                    <span class=\\"fd-button__text\\">1</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class=\\"fd-bar__right\\">
+                        <button aria-label=\\"Close\\" class=\\"fd-button fd-button--transparent\\"><i class=\\"sap-icon--decline\\" role=\\"presentation\\" aria-hidden=\\"true\\"></i></button>
+                    </div>
+                </div>
+            </header>
+            <div>
+                <div class=\\"fd-message-view fd-scrollbar\\">
+                    <section class=\\"fd-message-view__list\\">
+                        <ul class=\\"fd-list fd-list--navigation-indication fd-list--navigation fd-list--message-view fd-list--wrap\\" role=\\"list\\">
+                            <li role=\\"listitem\\" tabindex=\\"0\\" class=\\"fd-list__item fd-list__item--byline fd-list__item--link\\">
+                                <a tabindex=\\"0\\" class=\\"fd-list__link fd-list__link--navigation-indicator\\">
+                                    <span class=\\"fd-object-status fd-object-status--negative fd-list__icon\\" role=\\"img\\" aria-label=\\"Error\\">
+                                        <i class=\\"fd-object-status__icon sap-icon--message-error\\" role=\\"presentation\\"></i>
+                                    </span>
+                                    <span class=\\"fd-list__content\\">
+                                        <span class=\\"fd-list__title\\">The file could not be uploaded because it does not meet the security requirements for this system.</span>
+                                        <span class=\\"fd-list__subtitle\\">Please review the file type, size, and content before attempting to upload it again to the document management system.</span>
+                                    </span>
+                                </a>
+                            </li>
+                            <li role=\\"listitem\\" tabindex=\\"0\\" class=\\"fd-list__item fd-list__item--byline fd-list__item--link\\">
+                                <a tabindex=\\"0\\" class=\\"fd-list__link fd-list__link--navigation-indicator\\">
+                                    <span class=\\"fd-object-status fd-object-status--critical fd-list__icon\\" role=\\"img\\" aria-label=\\"Warning\\">
+                                        <i class=\\"fd-object-status__icon sap-icon--message-warning\\" role=\\"presentation\\"></i>
+                                    </span>
+                                    <span class=\\"fd-list__content\\">
+                                        <span class=\\"fd-list__title\\">Missing configuration for the purchase order approval workflow in the procurement module.</span>
+                                        <span class=\\"fd-list__subtitle\\">Contact your system administrator to configure the required approval thresholds and delegations.</span>
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </section>
+                </div>
+            </div>
+        </section>
+    </div>
+</div>
+"
+`;
+
 exports[`Check stories > Components/Message Popover > Story MessageTrigger > Should match snapshot 1`] = `
 "
 <div style=\\"height: 500px\\">
@@ -41579,6 +41759,109 @@ exports[`Check stories > Components/Object List > Story Borderless > Should matc
 "
 `;
 
+exports[`Check stories > Components/Object List > Story LongText > Should match snapshot 1`] = `
+"<div style=\\"display: flex; flex-direction: column; gap: 2rem;\\">
+    <div style=\\"max-width: 450px;\\">
+        <p style=\\"margin-block-end: 0.5rem; font-family: var(--sapFontFamily); font-size: var(--sapFontSize);\\">Default (truncation)</p>
+        <ul class=\\"fd-list fd-object-list\\" role=\\"list\\">
+            <li role=\\"listitem\\" tabindex=\\"0\\" class=\\"fd-list__item fd-object-list__item\\">
+                <div class=\\"fd-object-list__container\\">
+                    <div class=\\"fd-object-list__intro\\">
+                        Optional additional context about this sales order line item originating from the global procurement and supply chain management system
+                    </div>
+                    <div class=\\"fd-object-list__header\\">
+                        <div class=\\"fd-object-list__header-left\\">
+                            <div class=\\"fd-object-identifier fd-object-list__object-identifier\\">
+                                <p class=\\"fd-object-identifier__title\\">
+                                    Dell XPS 15 Laptop with 11th Gen Intel Core i7 Processor and NVIDIA GeForce RTX Graphics
+                                </p>
+                            </div>
+                        </div>
+                        <div class=\\"fd-object-list__header-right\\">
+                            <span class=\\"fd-object-number fd-object-list__object-number\\">
+                                <span class=\\"fd-object-number__text\\">1,299.00</span>
+                                <span class=\\"fd-object-number__unit\\">USD</span>
+                            </span>
+                        </div>
+                    </div>
+                    <div class=\\"fd-object-list__content\\">
+                        <div class=\\"fd-object-list__row\\">
+                            <div class=\\"fd-object-list__row-left\\">
+                                <div class=\\"fd-object-list__object-attribute\\">
+                                    Enterprise Resource Planning Product Category
+                                </div>
+                            </div>
+                            <div class=\\"fd-object-list__row-right\\">
+                                <span class=\\"fd-object-status fd-object-status--critical\\">
+                                    <span class=\\"fd-object-status__text\\">Below Minimum Required Inventory Level for Restocking</span>
+                                </span>
+                            </div>
+                        </div>
+                        <div class=\\"fd-object-list__row\\">
+                            <div class=\\"fd-object-list__row-left\\">
+                                <div class=\\"fd-object-list__object-attribute\\">
+                                    Country of Origin and Manufacturing Facility
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <div style=\\"max-width: 450px;\\">
+        <p style=\\"margin-block-end: 0.5rem; font-family: var(--sapFontFamily); font-size: var(--sapFontSize);\\">With <code>fd-object-list--wrap</code></p>
+        <ul class=\\"fd-list fd-object-list fd-object-list--wrap\\" role=\\"list\\">
+            <li role=\\"listitem\\" tabindex=\\"0\\" class=\\"fd-list__item fd-object-list__item\\">
+                <div class=\\"fd-object-list__container\\">
+                    <div class=\\"fd-object-list__intro\\">
+                        Optional additional context about this sales order line item originating from the global procurement and supply chain management system
+                    </div>
+                    <div class=\\"fd-object-list__header\\">
+                        <div class=\\"fd-object-list__header-left\\">
+                            <div class=\\"fd-object-identifier fd-object-list__object-identifier\\">
+                                <p class=\\"fd-object-identifier__title\\">
+                                    Dell XPS 15 Laptop with 11th Gen Intel Core i7 Processor and NVIDIA GeForce RTX Graphics
+                                </p>
+                            </div>
+                        </div>
+                        <div class=\\"fd-object-list__header-right\\">
+                            <span class=\\"fd-object-number fd-object-list__object-number\\">
+                                <span class=\\"fd-object-number__text\\">1,299.00</span>
+                                <span class=\\"fd-object-number__unit\\">USD</span>
+                            </span>
+                        </div>
+                    </div>
+                    <div class=\\"fd-object-list__content\\">
+                        <div class=\\"fd-object-list__row\\">
+                            <div class=\\"fd-object-list__row-left\\">
+                                <div class=\\"fd-object-list__object-attribute\\">
+                                    Enterprise Resource Planning Product Category
+                                </div>
+                            </div>
+                            <div class=\\"fd-object-list__row-right\\">
+                                <span class=\\"fd-object-status fd-object-status--critical\\">
+                                    <span class=\\"fd-object-status__text\\">Below Minimum Required Inventory Level for Restocking</span>
+                                </span>
+                            </div>
+                        </div>
+                        <div class=\\"fd-object-list__row\\">
+                            <div class=\\"fd-object-list__row-left\\">
+                                <div class=\\"fd-object-list__object-attribute\\">
+                                    Country of Origin and Manufacturing Facility
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+"
+`;
+
 exports[`Check stories > Components/Object List > Story Navigation > Should match snapshot 1`] = `
 "
 
@@ -42054,12 +42337,10 @@ exports[`Check stories > Components/Object List > Story Standard > Should match 
 "
 <h4 id=\\"objectListItemHeader\\">Object List Item</h4>
 <ul class=\\"fd-list fd-object-list\\" role=\\"list\\" aria-labelledby=\\"objectListItemHeader\\">
-
-  <!-- Default: all text truncates -->
   <li role=\\"listitem\\" tabindex=\\"0\\" class=\\"fd-list__item fd-object-list__item\\">
     <div class=\\"fd-object-list__container\\">
       <div class=\\"fd-object-list__intro\\">
-       Optional inline text very very very long optional inline text very very very long optional inline text Optional inline text very very very long optional inline text very very very long optional inline text
+       Optional inline text very very very long
       </div>
       <div class=\\"fd-object-list__header\\">
         <span class=\\"fd-avatar fd-avatar--s\\"
@@ -42068,7 +42349,7 @@ exports[`Check stories > Components/Object List > Story Standard > Should match 
         <div class=\\"fd-object-list__header-left\\">
          <div class=\\"fd-object-identifier fd-object-list__object-identifier\\">
           <p class=\\"fd-object-identifier__title\\">
-           Fitbit Versa Smart Watch, Black Fitbit Versa Smart Watch Fitbit Versa Smart Watch, Black Fitbit Versa Smart Watch Fitbit Versa Smart Watch, Black Fitbit Versa Smart Watch Fitbit Versa Smart Watch, Black Fitbit Versa Smart Watch
+           Fitbit Versa Smart Watch, Black Fitbit Versa Smart Watch
           </p>
          </div>
         </div>
@@ -42083,47 +42364,46 @@ exports[`Check stories > Components/Object List > Story Standard > Should match 
         <div class=\\"fd-object-list__row\\">
           <div class=\\"fd-object-list__row-left\\">
             <div class=\\"fd-object-list__object-attribute\\">
-              First Attribute very very very long first attribute text that should truncate
+
+              First Attribute
             </div>
           </div>
           <div class=\\"fd-object-list__row-right\\">
             <div class=\\"fd-object-marker\\">
-              <i role=\\"img\\" class=\\"fd-object-marker__icon sap-icon--flag\\"
+              <i class=\\"fd-object-marker__icon sap-icon--flag\\"
                aria-label=\\"icon for flag\\"></i>
             </div>
             <div class=\\"fd-object-marker\\">
-              <i role=\\"img\\" class=\\"fd-object-marker__icon sap-icon--favorite\\" aria-label=\\"icon for favourite\\"></i>
+              <i class=\\"fd-object-marker__icon sap-icon--favorite\\" aria-label=\\"icon for favourite\\"></i>
             </div>
           </div>
         </div>
         <div class=\\"fd-object-list__row\\">
           <div class=\\"fd-object-list__row-left\\">
             <div class=\\"fd-object-list__object-attribute\\">
-              Second Attribute  very very very long first attribute text that should truncate
+              Second Attribute
             </div>
           </div>
           <div class=\\"fd-object-list__row-right\\">
             <span class=\\"fd-object-status fd-object-status--critical\\">
-              <span class=\\"fd-object-status__text\\">Critical very very very long critical status text that should truncate  very very very long first attribute text that should truncate</span>
+              <span class=\\"fd-object-status__text\\">Critical very very very long</span>
             </span>
           </div>
         </div>
         <div class=\\"fd-object-list__row\\">
           <div class=\\"fd-object-list__row-left\\">
             <div class=\\"fd-object-list__object-attribute\\">
-              Third Attribute very very very long first attribute text that should truncate  very very very long first attribute text that should truncate  very very very long first attribute text that should truncate
+              Third Attribute
             </div>
-          </div>
         </div>
       </div>
     </div>
+    </div>
   </li>
-
-  <!-- __intro--wrap: long intro text wraps -->
   <li role=\\"listitem\\" tabindex=\\"0\\" class=\\"fd-list__item fd-object-list__item\\">
     <div class=\\"fd-object-list__container\\">
-      <div class=\\"fd-object-list__intro fd-object-list__intro--wrap\\">
-       Optional inline text very very very long optional inline text very very very long optional inline text very very very long optional inline text  optional inline text very very very long optional inline text 
+      <div class=\\"fd-object-list__intro\\">
+       Optional inline text very very very long
       </div>
       <div class=\\"fd-object-list__header\\">
         <span class=\\"fd-avatar fd-avatar--s\\"
@@ -42131,8 +42411,8 @@ exports[`Check stories > Components/Object List > Story Standard > Should match 
         </span>
         <div class=\\"fd-object-list__header-left\\">
          <div class=\\"fd-object-identifier fd-object-list__object-identifier\\">
-          <p class=\\"fd-object-identifier__title fd-object-identifier__title--wrap\\">
-           Fitbit Versa Smart Watch, Black Fitbit Versa Smart Watch Fitbit Versa Smart Watch, Black Fitbit Versa Smart Watch Fitbit Versa Smart Watch, Black Fitbit Versa Smart Watch Fitbit Versa Smart Watch, Black Fitbit Versa Smart Watch
+          <p class=\\"fd-object-identifier__title\\">
+           Fitbit Versa Smart Watch, Black Fitbit Versa Smart Watch
           </p>
          </div>
         </div>
@@ -42174,14 +42454,12 @@ exports[`Check stories > Components/Object List > Story Standard > Should match 
             <div class=\\"fd-object-list__object-attribute\\">
               Third Attribute
             </div>
-          </div>
         </div>
       </div>
     </div>
+    </div>
   </li>
-
-  <!-- __row-right--wrap: long status text wraps -->
-  <li role=\\"listitem\\" tabindex=\\"0\\" class=\\"fd-list__item fd-object-list__item fd-list__item--wrap\\">
+  <li role=\\"listitem\\" tabindex=\\"0\\" class=\\"fd-list__item fd-object-list__item\\">
     <div class=\\"fd-object-list__container\\">
       <div class=\\"fd-object-list__intro\\">
        Optional inline text very very very long
@@ -42215,17 +42493,15 @@ exports[`Check stories > Components/Object List > Story Standard > Should match 
         </div>
         <div class=\\"fd-object-list__row\\">
           <div class=\\"fd-object-list__row-left\\"></div>
-          <div class=\\"fd-object-list__row-right fd-object-list__row-right--wrap\\">
+          <div class=\\"fd-object-list__row-right\\">
             <span class=\\"fd-object-status fd-object-status--critical\\">
-              <span class=\\"fd-object-status__text\\">Critical very very very long critical status text that should now wrap instead of truncating with ellipsis</span>
+              <span class=\\"fd-object-status__text\\">Critical</span>
             </span>
           </div>
         </div>
       </div>
     </div>
   </li>
-
-  <!-- __object-attribute--wrap: long attribute text wraps -->
   <li role=\\"listitem\\" tabindex=\\"0\\" class=\\"fd-list__item fd-object-list__item\\">
     <div class=\\"fd-object-list__container\\">
       <div class=\\"fd-object-list__intro\\">
@@ -42252,8 +42528,8 @@ exports[`Check stories > Components/Object List > Story Standard > Should match 
       <div class=\\"fd-object-list__content\\">
         <div class=\\"fd-object-list__row\\">
           <div class=\\"fd-object-list__row-left\\">
-            <div class=\\"fd-object-list__object-attribute fd-object-list__object-attribute--wrap\\">
-              First Attribute very very very long first attribute text that should now wrap instead of truncating with ellipsis
+            <div class=\\"fd-object-list__object-attribute\\">
+              First Attribute
             </div>
           </div>
           <div class=\\"fd-object-list__row-right\\">
@@ -42275,9 +42551,9 @@ exports[`Check stories > Components/Object List > Story Standard > Should match 
             <div class=\\"fd-object-list__object-attribute\\">
               Third Attribute
             </div>
-          </div>
         </div>
       </div>
+    </div>
     </div>
   </li>
 </ul>
@@ -52067,7 +52343,7 @@ exports[`Check stories > Components/Settings > Story NotificationsDetails > Shou
                                 </div>
                                 <label class=\\"fd-switch\\">
                                     <span class=\\"fd-switch__control\\">
-                                        <input checked class=\\"fd-switch__input\\" type=\\"checkbox\\" name=\\"\\" value=\\"\\" />
+                                        <input checked class=\\"fd-switch__input\\" type=\\"checkbox\\" value=\\"\\" />
                                         <div class=\\"fd-switch__slider\\">
                                             <div class=\\"fd-switch__track\\">
                                                 <i
@@ -52093,7 +52369,7 @@ exports[`Check stories > Components/Settings > Story NotificationsDetails > Shou
                                 </div>
                                 <label class=\\"fd-switch\\">
                                     <span class=\\"fd-switch__control\\">
-                                        <input checked class=\\"fd-switch__input\\" type=\\"checkbox\\" name=\\"\\" value=\\"\\" />
+                                        <input checked class=\\"fd-switch__input\\" type=\\"checkbox\\" value=\\"\\" />
                                         <div class=\\"fd-switch__slider\\">
                                             <div class=\\"fd-switch__track\\">
                                                 <i
@@ -52124,7 +52400,7 @@ exports[`Check stories > Components/Settings > Story NotificationsDetails > Shou
                                 </div>
                                 <label class=\\"fd-switch\\">
                                     <span class=\\"fd-switch__control\\">
-                                        <input checked class=\\"fd-switch__input\\" type=\\"checkbox\\" name=\\"\\" value=\\"\\" />
+                                        <input checked class=\\"fd-switch__input\\" type=\\"checkbox\\" value=\\"\\" />
                                         <div class=\\"fd-switch__slider\\">
                                             <div class=\\"fd-switch__track\\">
                                                 <i
@@ -52150,7 +52426,7 @@ exports[`Check stories > Components/Settings > Story NotificationsDetails > Shou
                                 </div>
                                 <label class=\\"fd-switch\\">
                                     <span class=\\"fd-switch__control\\">
-                                        <input checked class=\\"fd-switch__input\\" type=\\"checkbox\\" name=\\"\\" value=\\"\\" />
+                                        <input checked class=\\"fd-switch__input\\" type=\\"checkbox\\" value=\\"\\" />
                                         <div class=\\"fd-switch__slider\\">
                                             <div class=\\"fd-switch__track\\">
                                                 <i
@@ -55957,6 +56233,147 @@ exports[`Check stories > Components/Side Navigation > Story Floating > Should ma
 
 
 
+"
+`;
+
+exports[`Check stories > Components/Side Navigation > Story LongText > Should match snapshot 1`] = `
+"<div style=\\"display: flex; gap: 2rem;\\">
+    <div>
+        <p style=\\"margin-block-end: 0.5rem; font-family: var(--sapFontFamily); font-size: var(--sapFontSize);\\">Default (truncation)</p>
+        <nav class=\\"fd-side-nav\\" aria-roledescription=\\"Main Navigation\\" style=\\"width: 18rem;\\">
+            <div class=\\"fd-side-nav__container fd-side-nav__container--top\\">
+                <ul class=\\"fd-navigation-list level-1\\" role=\\"tree\\" aria-roledescription=\\"Navigation List Tree\\">
+                    <li class=\\"fd-navigation-list__item\\" role=\\"none\\">
+                        <a class=\\"fd-navigation-list__content\\" role=\\"treeitem\\" tabindex=\\"0\\" aria-expanded=\\"true\\">
+                            <div class=\\"fd-navigation-list__content-container\\">
+                                <span class=\\"fd-navigation-list__icon\\">
+                                    <i class=\\"sap-icon--settings\\" role=\\"presentation\\"></i>
+                                </span>
+                                <span class=\\"fd-navigation-list__text\\">Enterprise Resource Planning Configuration and Settings</span>
+                            </div>
+                            <div class=\\"fd-navigation-list__navigation-indicator\\" role=\\"presentation\\" aria-hidden=\\"true\\">
+                                <i class=\\"sap-icon--navigation-down-arrow\\" role=\\"presentation\\"></i>
+                            </div>
+                        </a>
+                        <ul class=\\"fd-navigation-list level-2\\" role=\\"group\\">
+                            <li class=\\"fd-navigation-list__item\\" role=\\"none\\">
+                                <a class=\\"fd-navigation-list__content is-selected\\" role=\\"treeitem\\" tabindex=\\"0\\">
+                                    <div class=\\"fd-navigation-list__content-container\\">
+                                        <span class=\\"fd-navigation-list__text\\">General Ledger and Financial Accounting Configuration</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class=\\"fd-navigation-list__item\\" role=\\"none\\">
+                                <a class=\\"fd-navigation-list__content\\" role=\\"treeitem\\" tabindex=\\"0\\">
+                                    <div class=\\"fd-navigation-list__content-container\\">
+                                        <span class=\\"fd-navigation-list__text\\">Supply Chain and Logistics Management</span>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class=\\"fd-navigation-list__item\\" role=\\"none\\">
+                        <a class=\\"fd-navigation-list__content\\" role=\\"treeitem\\" tabindex=\\"0\\" aria-expanded=\\"true\\">
+                            <div class=\\"fd-navigation-list__content-container\\">
+                                <span class=\\"fd-navigation-list__icon\\">
+                                    <i class=\\"sap-icon--employee\\" role=\\"presentation\\"></i>
+                                </span>
+                                <span class=\\"fd-navigation-list__text\\">Human Capital Management Reports and Analytics</span>
+                            </div>
+                            <div class=\\"fd-navigation-list__navigation-indicator\\" role=\\"presentation\\" aria-hidden=\\"true\\">
+                                <i class=\\"sap-icon--navigation-down-arrow\\" role=\\"presentation\\"></i>
+                            </div>
+                        </a>
+                        <ul class=\\"fd-navigation-list level-2\\" role=\\"group\\">
+                            <li class=\\"fd-navigation-list__item\\" role=\\"none\\">
+                                <a class=\\"fd-navigation-list__content\\" role=\\"treeitem\\" tabindex=\\"0\\">
+                                    <div class=\\"fd-navigation-list__content-container\\">
+                                        <span class=\\"fd-navigation-list__text\\">Employee Performance Review and Development Tracking</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class=\\"fd-navigation-list__item\\" role=\\"none\\">
+                                <a class=\\"fd-navigation-list__content\\" role=\\"treeitem\\" tabindex=\\"0\\">
+                                    <div class=\\"fd-navigation-list__content-container\\">
+                                        <span class=\\"fd-navigation-list__text\\">Payroll and Compensation Management</span>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <div>
+        <p style=\\"margin-block-end: 0.5rem; font-family: var(--sapFontFamily); font-size: var(--sapFontSize);\\">With <code>fd-navigation-list--wrap</code></p>
+        <nav class=\\"fd-side-nav\\" aria-roledescription=\\"Main Navigation\\" style=\\"width: 18rem;\\">
+            <div class=\\"fd-side-nav__container fd-side-nav__container--top\\">
+                <ul class=\\"fd-navigation-list fd-navigation-list--wrap level-1\\" role=\\"tree\\" aria-roledescription=\\"Navigation List Tree\\">
+                    <li class=\\"fd-navigation-list__item\\" role=\\"none\\">
+                        <a class=\\"fd-navigation-list__content\\" role=\\"treeitem\\" tabindex=\\"0\\" aria-expanded=\\"true\\">
+                            <div class=\\"fd-navigation-list__content-container\\">
+                                <span class=\\"fd-navigation-list__icon\\">
+                                    <i class=\\"sap-icon--settings\\" role=\\"presentation\\"></i>
+                                </span>
+                                <span class=\\"fd-navigation-list__text\\">Enterprise Resource Planning Configuration and Settings</span>
+                            </div>
+                            <div class=\\"fd-navigation-list__navigation-indicator\\" role=\\"presentation\\" aria-hidden=\\"true\\">
+                                <i class=\\"sap-icon--navigation-down-arrow\\" role=\\"presentation\\"></i>
+                            </div>
+                        </a>
+                        <ul class=\\"fd-navigation-list fd-navigation-list--wrap level-2\\" role=\\"group\\">
+                            <li class=\\"fd-navigation-list__item\\" role=\\"none\\">
+                                <a class=\\"fd-navigation-list__content is-selected\\" role=\\"treeitem\\" tabindex=\\"0\\">
+                                    <div class=\\"fd-navigation-list__content-container\\">
+                                        <span class=\\"fd-navigation-list__text\\">General Ledger and Financial Accounting Configuration</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class=\\"fd-navigation-list__item\\" role=\\"none\\">
+                                <a class=\\"fd-navigation-list__content\\" role=\\"treeitem\\" tabindex=\\"0\\">
+                                    <div class=\\"fd-navigation-list__content-container\\">
+                                        <span class=\\"fd-navigation-list__text\\">Supply Chain and Logistics Management</span>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class=\\"fd-navigation-list__item\\" role=\\"none\\">
+                        <a class=\\"fd-navigation-list__content\\" role=\\"treeitem\\" tabindex=\\"0\\" aria-expanded=\\"true\\">
+                            <div class=\\"fd-navigation-list__content-container\\">
+                                <span class=\\"fd-navigation-list__icon\\">
+                                    <i class=\\"sap-icon--employee\\" role=\\"presentation\\"></i>
+                                </span>
+                                <span class=\\"fd-navigation-list__text\\">Human Capital Management Reports and Analytics</span>
+                            </div>
+                            <div class=\\"fd-navigation-list__navigation-indicator\\" role=\\"presentation\\" aria-hidden=\\"true\\">
+                                <i class=\\"sap-icon--navigation-down-arrow\\" role=\\"presentation\\"></i>
+                            </div>
+                        </a>
+                        <ul class=\\"fd-navigation-list fd-navigation-list--wrap level-2\\" role=\\"group\\">
+                            <li class=\\"fd-navigation-list__item\\" role=\\"none\\">
+                                <a class=\\"fd-navigation-list__content\\" role=\\"treeitem\\" tabindex=\\"0\\">
+                                    <div class=\\"fd-navigation-list__content-container\\">
+                                        <span class=\\"fd-navigation-list__text\\">Employee Performance Review and Development Tracking</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class=\\"fd-navigation-list__item\\" role=\\"none\\">
+                                <a class=\\"fd-navigation-list__content\\" role=\\"treeitem\\" tabindex=\\"0\\">
+                                    <div class=\\"fd-navigation-list__content-container\\">
+                                        <span class=\\"fd-navigation-list__text\\">Payroll and Compensation Management</span>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+</div>
 "
 `;
 
@@ -62788,6 +63205,71 @@ exports[`Check stories > Components/Tree > Story HighlightIndicators > Should ma
 "
 `;
 
+exports[`Check stories > Components/Tree > Story LongText > Should match snapshot 1`] = `
+"<h4>Default (truncation)</h4>
+<ul role=\\"tree\\" aria-label=\\"Financial Reports\\" id=\\"LT_TREE1L1\\" class=\\"fd-tree expanded-level-1\\">
+            <li role=\\"treeitem\\" aria-level=\\"1\\" aria-expanded=\\"true\\" class=\\"fd-tree__item\\">
+                <div class=\\"fd-tree__item-container\\" tabindex=\\"0\\">
+                    <span class=\\"fd-tree__expander is-expanded\\" aria-controls=\\"LT_TREE1L2\\" aria-haspopup=\\"true\\" aria-label=\\"Expand level 2\\" aria-expanded=\\"true\\">
+                        <i class=\\"fd-tree__icon sap-icon--navigation-down-arrow\\" role=\\"presentation\\"></i>
+                    </span>
+                    <div class=\\"fd-tree__content\\">
+                        <span class=\\"fd-tree__text\\">Annual Financial Report 2024 — Consolidated Balance Sheet, Income Statement and Statement of Cash Flows for the Fiscal Year Ended December 31, 2024 including all subsidiaries and joint ventures</span>
+                    </div>
+                </div>
+                <ul role=\\"group\\" class=\\"fd-tree\\" id=\\"LT_TREE1L2\\" aria-hidden=\\"false\\">
+                    <li role=\\"treeitem\\" aria-level=\\"2\\" class=\\"fd-tree__item\\">
+                        <div class=\\"fd-tree__item-container\\" tabindex=\\"0\\">
+                            <div class=\\"fd-tree__content\\">
+                                <span class=\\"fd-tree__text\\">Revenue from Contracts with Customers — Product Sales, Multi-Year Service Agreements, Software Licensing Fees and Support Renewals consolidated across all Business Units and Regions</span>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </li>
+            <li role=\\"treeitem\\" aria-level=\\"1\\" class=\\"fd-tree__item\\">
+                <div class=\\"fd-tree__item-container\\" tabindex=\\"0\\">
+                    <div class=\\"fd-tree__content\\">
+                        <span class=\\"fd-tree__text\\">Capital Expenditure and Investment Plan Q1–Q4 2025 — Infrastructure Modernisation, Data Centre Consolidation and Digital Transformation Initiatives across all regions</span>
+                    </div>
+                </div>
+            </li>
+        </ul>
+
+<div style=\\"margin-bottom: 1.5rem\\"></div>
+
+<h4>With fd-tree--wrap</h4>
+<ul role=\\"tree\\" aria-label=\\"Financial Reports with wrapping\\" id=\\"LT_TREE2L1\\" class=\\"fd-tree fd-tree--wrap expanded-level-1\\">
+            <li role=\\"treeitem\\" aria-level=\\"1\\" aria-expanded=\\"true\\" class=\\"fd-tree__item\\">
+                <div class=\\"fd-tree__item-container\\" tabindex=\\"0\\">
+                    <span class=\\"fd-tree__expander is-expanded\\" aria-controls=\\"LT_TREE2L2\\" aria-haspopup=\\"true\\" aria-label=\\"Expand level 2\\" aria-expanded=\\"true\\">
+                        <i class=\\"fd-tree__icon sap-icon--navigation-down-arrow\\" role=\\"presentation\\"></i>
+                    </span>
+                    <div class=\\"fd-tree__content\\">
+                        <span class=\\"fd-tree__text\\">Annual Financial Report 2024 — Consolidated Balance Sheet, Income Statement and Statement of Cash Flows for the Fiscal Year Ended December 31, 2024 including all subsidiaries and joint ventures</span>
+                    </div>
+                </div>
+                <ul role=\\"group\\" class=\\"fd-tree\\" id=\\"LT_TREE2L2\\" aria-hidden=\\"false\\">
+                    <li role=\\"treeitem\\" aria-level=\\"2\\" class=\\"fd-tree__item\\">
+                        <div class=\\"fd-tree__item-container\\" tabindex=\\"0\\">
+                            <div class=\\"fd-tree__content\\">
+                                <span class=\\"fd-tree__text\\">Revenue from Contracts with Customers — Product Sales, Multi-Year Service Agreements, Software Licensing Fees and Support Renewals consolidated across all Business Units and Regions Revenue from Contracts with Customers — Product Sales, Multi-Year Service Agreements, Software Licensing Fees and Support Renewals consolidated across all Business Units and Regions</span>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </li>
+            <li role=\\"treeitem\\" aria-level=\\"1\\" class=\\"fd-tree__item\\">
+                <div class=\\"fd-tree__item-container\\" tabindex=\\"0\\">
+                    <div class=\\"fd-tree__content\\">
+                        <span class=\\"fd-tree__text\\">Capital Expenditure and Investment Plan Q1–Q4 2025 — Infrastructure Modernisation, Data Centre Consolidation and Digital Transformation Initiatives across all regions</span>
+                    </div>
+                </div>
+            </li>
+        </ul>
+"
+`;
+
 exports[`Check stories > Components/Tree > Story Navigable > Should match snapshot 1`] = `
 "<ul role=\\"tree\\" aria-label=\\"Root Tree\\" id=\\"TREE6CL1\\" class=\\"fd-tree expanded-level-6\\">
     <li role=\\"treeitem\\" aria-level=\\"1\\" aria-expanded=\\"true\\" class=\\"fd-tree__item\\">
@@ -63493,6 +63975,125 @@ exports[`Check stories > Components/Upload Collection > Story Edit > Should matc
     </li>
 </ul>
 
+"
+`;
+
+exports[`Check stories > Components/Upload Collection > Story LongText > Should match snapshot 1`] = `
+"<div style=\\"display: flex; gap: 2rem; align-items: flex-start;\\">
+    <div>
+        <p style=\\"margin-block-end: 0.5rem; font-family: var(--sapFontFamily); font-size: var(--sapFontSize);\\">Default (truncation)</p>
+        <ul class=\\"fd-list fd-list--byline fd-upload-collection\\" role=\\"list\\" style=\\"width: 22rem;\\">
+            <li role=\\"listitem\\" tabindex=\\"0\\" class=\\"fd-list__item fd-upload-collection__item\\">
+                <span class=\\"fd-list__thumbnail fd-upload-collection__thumbnail\\">
+                    <i role=\\"presentation\\" class=\\"sap-icon--pdf-attachment\\"></i>
+                </span>
+                <div class=\\"fd-list__content\\">
+                    <a href=\\"#\\" class=\\"fd-list__title fd-link fd-upload-collection__title\\">
+                        Annual_Financial_Report_Q4_2024_Consolidated_Version_Final_Approved.pdf
+                    </a>
+                    <div class=\\"fd-upload-collection__description\\">
+                        Uploaded by John Smith on behalf of Finance Department
+                        <span class=\\"fd-upload-collection__text-separator\\"> </span>
+                        Version 3.2
+                    </div>
+                    <div class=\\"fd-upload-collection__status-group\\">
+                        <span class=\\"fd-object-status fd-upload-collection__status-group-item fd-object-status--positive\\">
+                            <span class=\\"fd-object-status__text fd-upload-collection__status-group-item-text\\">Upload complete – available for download</span>
+                        </span>
+                    </div>
+                </div>
+                <div class=\\"fd-upload-collection__button-group\\">
+                    <button aria-label=\\"Edit\\" class=\\"fd-button fd-button--transparent\\"><i class=\\"sap-icon--edit\\"></i></button>
+                    <button aria-label=\\"Delete\\" class=\\"fd-button fd-button--transparent\\"><i class=\\"sap-icon--decline\\"></i></button>
+                </div>
+            </li>
+            <li role=\\"listitem\\" tabindex=\\"0\\" class=\\"fd-list__item fd-upload-collection__item\\">
+                <span class=\\"fd-list__thumbnail fd-upload-collection__thumbnail\\">
+                    <i role=\\"presentation\\" class=\\"sap-icon--excel-attachment\\"></i>
+                </span>
+                <div class=\\"fd-list__content\\">
+                    <div class=\\"fd-upload-collection__title-container\\">
+                        <a href=\\"#\\" class=\\"fd-list__title fd-link fd-upload-collection__title\\">
+                            Customer_Data_Export_EMEA_Region_December_2024_Unprocessed_Raw.xlsx
+                        </a>
+                        <div class=\\"fd-object-marker\\">
+                            <i class=\\"fd-object-marker__icon sap-icon--request\\" aria-label=\\"icon for request\\" role=\\"img\\"></i>
+                        </div>
+                    </div>
+                    <div class=\\"fd-upload-collection__description\\">
+                        Exported from Customer Intelligence Platform by Sarah Johnson
+                    </div>
+                    <div class=\\"fd-upload-collection__status-group\\">
+                        <span class=\\"fd-object-status fd-upload-collection__status-group-item fd-object-status--negative\\">
+                            <span class=\\"fd-object-status__text fd-upload-collection__status-group-item-text\\">Virus scan failed – file quarantined pending review</span>
+                        </span>
+                    </div>
+                </div>
+                <div class=\\"fd-upload-collection__button-group\\">
+                    <button aria-label=\\"Edit\\" class=\\"fd-button fd-button--transparent\\"><i class=\\"sap-icon--edit\\"></i></button>
+                    <button aria-label=\\"Delete\\" class=\\"fd-button fd-button--transparent\\"><i class=\\"sap-icon--decline\\"></i></button>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <div>
+        <p style=\\"margin-block-end: 0.5rem; font-family: var(--sapFontFamily); font-size: var(--sapFontSize);\\">With <code>fd-list--wrap</code></p>
+        <ul class=\\"fd-list fd-list--byline fd-list--wrap fd-upload-collection\\" role=\\"list\\" style=\\"width: 22rem;\\">
+            <li role=\\"listitem\\" tabindex=\\"0\\" class=\\"fd-list__item fd-upload-collection__item\\">
+                <span class=\\"fd-list__thumbnail fd-upload-collection__thumbnail\\">
+                    <i role=\\"presentation\\" class=\\"sap-icon--pdf-attachment\\"></i>
+                </span>
+                <div class=\\"fd-list__content\\">
+                    <a href=\\"#\\" class=\\"fd-list__title fd-link fd-upload-collection__title\\">
+                        Annual_Financial_Report_Q4_2024_Consolidated_Version_Final_Approved.pdf
+                    </a>
+                    <div class=\\"fd-upload-collection__description\\">
+                        Uploaded by John Smith on behalf of Finance Department
+                        <span class=\\"fd-upload-collection__text-separator\\"> </span>
+                        Version 3.2
+                    </div>
+                    <div class=\\"fd-upload-collection__status-group\\">
+                        <span class=\\"fd-object-status fd-upload-collection__status-group-item fd-object-status--positive\\">
+                            <span class=\\"fd-object-status__text fd-upload-collection__status-group-item-text\\">Upload complete – available for download</span>
+                        </span>
+                    </div>
+                </div>
+                <div class=\\"fd-upload-collection__button-group\\">
+                    <button aria-label=\\"Edit\\" class=\\"fd-button fd-button--transparent\\"><i class=\\"sap-icon--edit\\"></i></button>
+                    <button aria-label=\\"Delete\\" class=\\"fd-button fd-button--transparent\\"><i class=\\"sap-icon--decline\\"></i></button>
+                </div>
+            </li>
+            <li role=\\"listitem\\" tabindex=\\"0\\" class=\\"fd-list__item fd-upload-collection__item\\">
+                <span class=\\"fd-list__thumbnail fd-upload-collection__thumbnail\\">
+                    <i role=\\"presentation\\" class=\\"sap-icon--excel-attachment\\"></i>
+                </span>
+                <div class=\\"fd-list__content\\">
+                    <div class=\\"fd-upload-collection__title-container\\">
+                        <a href=\\"#\\" class=\\"fd-list__title fd-link fd-upload-collection__title\\">
+                            Customer_Data_Export_EMEA_Region_December_2024_Unprocessed_Raw.xlsx
+                        </a>
+                        <div class=\\"fd-object-marker\\">
+                            <i class=\\"fd-object-marker__icon sap-icon--request\\" aria-label=\\"icon for request\\" role=\\"img\\"></i>
+                        </div>
+                    </div>
+                    <div class=\\"fd-upload-collection__description\\">
+                        Exported from Customer Intelligence Platform by Sarah Johnson
+                    </div>
+                    <div class=\\"fd-upload-collection__status-group\\">
+                        <span class=\\"fd-object-status fd-upload-collection__status-group-item fd-object-status--negative\\">
+                            <span class=\\"fd-object-status__text fd-upload-collection__status-group-item-text\\">Virus scan failed – file quarantined pending review</span>
+                        </span>
+                    </div>
+                </div>
+                <div class=\\"fd-upload-collection__button-group\\">
+                    <button aria-label=\\"Edit\\" class=\\"fd-button fd-button--transparent\\"><i class=\\"sap-icon--edit\\"></i></button>
+                    <button aria-label=\\"Delete\\" class=\\"fd-button fd-button--transparent\\"><i class=\\"sap-icon--decline\\"></i></button>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
 "
 `;
 
@@ -64378,9 +64979,9 @@ exports[`Check stories > Components/User Menu > Story Mobile > Should match snap
                                     <span class=\\"fd-menu__title\\">About</span>
                                 </a>
                             </li>
-
+                            
                         </ul>
-                    </nav>
+                    </nav>  
                 </div>
             </div>
             <div class=\\"fd-bar fd-bar--footer fd-user-menu__footer\\">
@@ -64433,7 +65034,7 @@ exports[`Check stories > Components/User Menu > Story Mobile > Should match snap
                             </div>
                         </li>
                     </ul>
-                </nav>
+                </nav>  
             </div>
         </div>
     </div>
@@ -64844,6 +65445,73 @@ exports[`Check stories > Components/Vertical Navigation > Story Indication > Sho
             </li>
         </ul>
     </nav>
+</div>
+"
+`;
+
+exports[`Check stories > Components/Vertical Navigation > Story LongText > Should match snapshot 1`] = `
+"<div style=\\"display: flex; gap: 2rem; align-items: flex-start;\\">
+    <div>
+        <p style=\\"margin-block-end: 0.5rem; font-family: var(--sapFontFamily); font-size: var(--sapFontSize);\\">Default (truncation)</p>
+        <div class=\\"fd-vertical-nav\\">
+            <nav class=\\"fd-vertical-nav__main-navigation\\" aria-label=\\"Main Menu\\">
+                <ul class=\\"fd-list\\" aria-label=\\"Main Menu List\\">
+                    <li class=\\"fd-list__navigation-item\\" tabindex=\\"0\\">
+                        <i role=\\"presentation\\" class=\\"fd-list__navigation-item-icon sap-icon--home\\"></i>
+                        <span class=\\"fd-list__navigation-item-text\\">Enterprise Resource Planning Configuration and Dashboard Overview</span>
+                    </li>
+                    <li class=\\"fd-list__navigation-item fd-list__navigation-item--expandable is-expanded\\">
+                        <i role=\\"presentation\\" class=\\"fd-list__navigation-item-icon sap-icon--calendar\\"></i>
+                        <span class=\\"fd-list__navigation-item-text\\">Human Capital Management and Payroll Processing</span>
+                        <button class=\\"fd-list__navigation-item-arrow sap-icon--navigation-down-arrow is-expanded\\" aria-label=\\"Expand submenu\\"></button>
+                        <ul class=\\"fd-list\\">
+                            <li class=\\"fd-list__navigation-item\\" tabindex=\\"0\\">
+                                <span class=\\"fd-list__navigation-item-text\\">Employee Performance and Development Tracking</span>
+                            </li>
+                            <li class=\\"fd-list__navigation-item\\" tabindex=\\"0\\">
+                                <span class=\\"fd-list__navigation-item-text\\">Payroll and Compensation Management for All Regions</span>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class=\\"fd-list__navigation-item\\" tabindex=\\"0\\">
+                        <i role=\\"presentation\\" class=\\"fd-list__navigation-item-icon sap-icon--shipping-status\\"></i>
+                        <span class=\\"fd-list__navigation-item-text\\">Supply Chain and Logistics Management</span>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <div>
+        <p style=\\"margin-block-end: 0.5rem; font-family: var(--sapFontFamily); font-size: var(--sapFontSize);\\">With <code>fd-list--wrap</code></p>
+        <div class=\\"fd-vertical-nav\\">
+            <nav class=\\"fd-vertical-nav__main-navigation\\" aria-label=\\"Main Menu\\">
+                <ul class=\\"fd-list fd-list--wrap\\" aria-label=\\"Main Menu List\\">
+                    <li class=\\"fd-list__navigation-item\\" tabindex=\\"0\\">
+                        <i role=\\"presentation\\" class=\\"fd-list__navigation-item-icon sap-icon--home\\"></i>
+                        <span class=\\"fd-list__navigation-item-text\\">Enterprise Resource Planning Configuration and Dashboard Overview</span>
+                    </li>
+                    <li class=\\"fd-list__navigation-item fd-list__navigation-item--expandable is-expanded\\">
+                        <i role=\\"presentation\\" class=\\"fd-list__navigation-item-icon sap-icon--calendar\\"></i>
+                        <span class=\\"fd-list__navigation-item-text\\">Human Capital Management and Payroll Processing</span>
+                        <button class=\\"fd-list__navigation-item-arrow sap-icon--navigation-down-arrow is-expanded\\" aria-label=\\"Expand submenu\\"></button>
+                        <ul class=\\"fd-list fd-list--wrap\\">
+                            <li class=\\"fd-list__navigation-item\\" tabindex=\\"0\\">
+                                <span class=\\"fd-list__navigation-item-text\\">Employee Performance and Development Tracking</span>
+                            </li>
+                            <li class=\\"fd-list__navigation-item\\" tabindex=\\"0\\">
+                                <span class=\\"fd-list__navigation-item-text\\">Payroll and Compensation Management for All Regions</span>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class=\\"fd-list__navigation-item\\" tabindex=\\"0\\">
+                        <i role=\\"presentation\\" class=\\"fd-list__navigation-item-icon sap-icon--shipping-status\\"></i>
+                        <span class=\\"fd-list__navigation-item-text\\">Supply Chain and Logistics Management</span>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
 </div>
 "
 `;
@@ -72503,6 +73171,77 @@ exports[`Check stories > Patterns/Combobox Input > Story DisabledAndReadOnly > S
 "
 `;
 
+exports[`Check stories > Patterns/Combobox Input > Story LongText > Should match snapshot 1`] = `
+"<div style=\\"display: flex; gap: 2rem; align-items: flex-start; height: 280px;\\">
+    <div class=\\"fd-form-item\\" style=\\"flex: 1; min-width: 0;\\">
+        <label for=\\"lt-combobox-wrap\\" class=\\"fd-form-label\\">Configuration template</label>
+        <div class=\\"fd-popover\\">
+            <div class=\\"fd-popover__control\\">
+                <div class=\\"fd-input-group fd-input-group--control\\">
+                    <input type=\\"text\\" class=\\"fd-input fd-input-group__input\\" id=\\"lt-combobox-wrap\\" value=\\"Database Connectivity Protocol Configuration for Production Environment\\">
+                    <span class=\\"fd-input-group__addon fd-input-group__addon--button\\">
+                        <button aria-label=\\"Show options\\" aria-controls=\\"lt-combobox-wrap-body\\" aria-expanded=\\"true\\" aria-haspopup=\\"true\\" class=\\"fd-input-group__button fd-button fd-button--transparent\\">
+                            <i class=\\"sap-icon--navigation-down-arrow\\"></i>
+                        </button>
+                    </span>
+                </div>
+            </div>
+            <div class=\\"fd-popover__body fd-popover__body--no-arrow fd-popover__body--dropdown fd-popover__body--dropdown-fill\\" aria-hidden=\\"false\\" id=\\"lt-combobox-wrap-body\\">
+                <ul aria-label=\\"Configuration template options\\" class=\\"fd-list fd-list--dropdown\\" role=\\"listbox\\">
+                    <li role=\\"option\\" tabindex=\\"0\\" class=\\"fd-list__item is-selected\\">
+                        <span class=\\"fd-list__title\\">Database Connectivity Protocol Configuration for Production Environment Cluster</span>
+                    </li>
+                    <li role=\\"option\\" tabindex=\\"0\\" class=\\"fd-list__item\\">
+                        <span class=\\"fd-list__title\\">Enterprise Resource Planning System Integration with Legacy SAP Backend Services</span>
+                    </li>
+                    <li role=\\"option\\" tabindex=\\"0\\" class=\\"fd-list__item\\">
+                        <span class=\\"fd-list__title\\">Supply Chain Management Workflow Automation and Real-Time Inventory Synchronisation</span>
+                    </li>
+                    <li role=\\"option\\" tabindex=\\"0\\" class=\\"fd-list__item\\">
+                        <span class=\\"fd-list__title\\">Customer Relationship Management Analytics Dashboard Configuration Template</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <p style=\\"margin-block-start: 0.5rem; font-family: var(--sapFontFamily); font-size: var(--sapFontSize); color: var(--sapContent_LabelColor);\\">Default — wraps</p>
+    </div>
+
+    <div class=\\"fd-form-item\\" style=\\"flex: 1; min-width: 0;\\">
+        <label for=\\"lt-combobox-nowrap\\" class=\\"fd-form-label\\">Configuration template</label>
+        <div class=\\"fd-popover\\">
+            <div class=\\"fd-popover__control\\">
+                <div class=\\"fd-input-group fd-input-group--control\\">
+                    <input type=\\"text\\" class=\\"fd-input fd-input-group__input\\" id=\\"lt-combobox-nowrap\\" value=\\"Database Connectivity Protocol Configuration for Production Environment\\">
+                    <span class=\\"fd-input-group__addon fd-input-group__addon--button\\">
+                        <button aria-label=\\"Show options\\" aria-controls=\\"lt-combobox-nowrap-body\\" aria-expanded=\\"true\\" aria-haspopup=\\"true\\" class=\\"fd-input-group__button fd-button fd-button--transparent\\">
+                            <i class=\\"sap-icon--navigation-down-arrow\\"></i>
+                        </button>
+                    </span>
+                </div>
+            </div>
+            <div class=\\"fd-popover__body fd-popover__body--no-arrow fd-popover__body--dropdown fd-popover__body--dropdown-fill\\" aria-hidden=\\"false\\" id=\\"lt-combobox-nowrap-body\\">
+                <ul aria-label=\\"Configuration template options\\" class=\\"fd-list fd-list--dropdown\\" role=\\"listbox\\">
+                    <li role=\\"option\\" tabindex=\\"0\\" class=\\"fd-list__item is-selected\\">
+                        <span class=\\"fd-list__title fd-list__title--no-wrap\\">Database Connectivity Protocol Configuration for Production Environment Cluster</span>
+                    </li>
+                    <li role=\\"option\\" tabindex=\\"0\\" class=\\"fd-list__item\\">
+                        <span class=\\"fd-list__title fd-list__title--no-wrap\\">Enterprise Resource Planning System Integration with Legacy SAP Backend Services</span>
+                    </li>
+                    <li role=\\"option\\" tabindex=\\"0\\" class=\\"fd-list__item\\">
+                        <span class=\\"fd-list__title fd-list__title--no-wrap\\">Supply Chain Management Workflow Automation and Real-Time Inventory Synchronisation</span>
+                    </li>
+                    <li role=\\"option\\" tabindex=\\"0\\" class=\\"fd-list__item\\">
+                        <span class=\\"fd-list__title fd-list__title--no-wrap\\">Customer Relationship Management Analytics Dashboard Configuration Template</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <p style=\\"margin-block-start: 0.5rem; font-family: var(--sapFontFamily); font-size: var(--sapFontSize); color: var(--sapContent_LabelColor);\\">With <code>fd-list__title--no-wrap</code> (opt-out)</p>
+    </div>
+</div>
+"
+`;
+
 exports[`Check stories > Patterns/Combobox Input > Story MatchPopoverBodySize > Should match snapshot 1`] = `
 "<div style=\\"display:flex;height:250px\\">
     <div style=\\"display:flex;flex-direction:column\\">
@@ -74842,6 +75581,145 @@ exports[`Check stories > Patterns/Multi ComboBox > Story Grouping > Should match
 "
 `;
 
+exports[`Check stories > Patterns/Multi ComboBox > Story LongText > Should match snapshot 1`] = `
+"<div style=\\"display: flex; gap: 2rem; align-items: flex-start; height: 340px;\\">
+    <div class=\\"fd-form-item\\" style=\\"flex: 1; min-width: 0;\\">
+        <label for=\\"lt-mcb-wrap\\" class=\\"fd-form-label\\">Notification recipients</label>
+        <div class=\\"fd-popover\\">
+            <div class=\\"fd-popover__control\\">
+                <div class=\\"fd-input-group fd-input-group--control\\" tabindex=\\"0\\">
+                    <div class=\\"fd-tokenizer\\">
+                        <div class=\\"fd-tokenizer__inner\\">
+                            <span class=\\"fd-token\\" role=\\"button\\" tabindex=\\"0\\">
+                                <span class=\\"fd-token__text\\">Database Monitoring</span>
+                                <button class=\\"fd-token__close\\" aria-label=\\"unselect option: Database Monitoring\\"></button>
+                            </span>
+                            <input class=\\"fd-input fd-input-group__input fd-tokenizer__input\\" id=\\"lt-mcb-wrap\\" aria-label=\\"Notification recipients\\" />
+                        </div>
+                    </div>
+                    <span class=\\"fd-input-group__addon fd-input-group__addon--button\\">
+                        <button aria-label=\\"Show options\\" aria-controls=\\"lt-mcb-wrap-body\\" aria-expanded=\\"true\\" aria-haspopup=\\"true\\" class=\\"fd-input-group__button fd-button fd-button--transparent\\">
+                            <i class=\\"sap-icon--navigation-down-arrow\\"></i>
+                        </button>
+                    </span>
+                </div>
+            </div>
+            <div class=\\"fd-popover__body fd-popover__body--no-arrow fd-popover__body--dropdown fd-popover__body--dropdown-fill\\" aria-hidden=\\"false\\" id=\\"lt-mcb-wrap-body\\">
+                <div class=\\"fd-popover__wrapper\\">
+                    <ul class=\\"fd-list fd-list--multi-input\\" role=\\"listbox\\" aria-multiselectable=\\"true\\" aria-label=\\"Notification recipients options\\">
+                        <li role=\\"option\\" tabindex=\\"0\\" class=\\"fd-list__item is-selected\\" aria-selected=\\"true\\">
+                            <div class=\\"fd-form-item fd-list__form-item\\">
+                                <input type=\\"checkbox\\" class=\\"fd-checkbox\\" id=\\"lt-mcb-1\\" checked aria-labelledby=\\"lt-mcb-t1\\">
+                                <label tabindex=\\"-1\\" class=\\"fd-checkbox__label\\" for=\\"lt-mcb-1\\">
+                                    <span class=\\"fd-checkbox__checkmark\\" aria-hidden=\\"true\\"></span>
+                                </label>
+                            </div>
+                            <span class=\\"fd-list__title\\" id=\\"lt-mcb-t1\\">Database Connectivity and Performance Monitoring Alert Group</span>
+                        </li>
+                        <li role=\\"option\\" tabindex=\\"0\\" class=\\"fd-list__item\\">
+                            <div class=\\"fd-form-item fd-list__form-item\\">
+                                <input type=\\"checkbox\\" class=\\"fd-checkbox\\" id=\\"lt-mcb-2\\" aria-labelledby=\\"lt-mcb-t2\\">
+                                <label tabindex=\\"-1\\" class=\\"fd-checkbox__label\\" for=\\"lt-mcb-2\\">
+                                    <span class=\\"fd-checkbox__checkmark\\" aria-hidden=\\"true\\"></span>
+                                </label>
+                            </div>
+                            <span class=\\"fd-list__title\\" id=\\"lt-mcb-t2\\">Enterprise Infrastructure and Cloud Resource Management Team</span>
+                        </li>
+                        <li role=\\"option\\" tabindex=\\"0\\" class=\\"fd-list__item\\">
+                            <div class=\\"fd-form-item fd-list__form-item\\">
+                                <input type=\\"checkbox\\" class=\\"fd-checkbox\\" id=\\"lt-mcb-3\\" aria-labelledby=\\"lt-mcb-t3\\">
+                                <label tabindex=\\"-1\\" class=\\"fd-checkbox__label\\" for=\\"lt-mcb-3\\">
+                                    <span class=\\"fd-checkbox__checkmark\\" aria-hidden=\\"true\\"></span>
+                                </label>
+                            </div>
+                            <span class=\\"fd-list__title\\" id=\\"lt-mcb-t3\\">Security Incident Response and Compliance Audit Notification List</span>
+                        </li>
+                        <li role=\\"option\\" tabindex=\\"0\\" class=\\"fd-list__item\\">
+                            <div class=\\"fd-form-item fd-list__form-item\\">
+                                <input type=\\"checkbox\\" class=\\"fd-checkbox\\" id=\\"lt-mcb-4\\" aria-labelledby=\\"lt-mcb-t4\\">
+                                <label tabindex=\\"-1\\" class=\\"fd-checkbox__label\\" for=\\"lt-mcb-4\\">
+                                    <span class=\\"fd-checkbox__checkmark\\" aria-hidden=\\"true\\"></span>
+                                </label>
+                            </div>
+                            <span class=\\"fd-list__title\\" id=\\"lt-mcb-t4\\">Customer Escalation and Service Level Agreement Breach Alerts</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <p style=\\"margin-block-start: 0.5rem; font-family: var(--sapFontFamily); font-size: var(--sapFontSize); color: var(--sapContent_LabelColor);\\">Default — wraps</p>
+    </div>
+
+    <div class=\\"fd-form-item\\" style=\\"flex: 1; min-width: 0;\\">
+        <label for=\\"lt-mcb-nowrap\\" class=\\"fd-form-label\\">Notification recipients</label>
+        <div class=\\"fd-popover\\">
+            <div class=\\"fd-popover__control\\">
+                <div class=\\"fd-input-group fd-input-group--control\\" tabindex=\\"0\\">
+                    <div class=\\"fd-tokenizer\\">
+                        <div class=\\"fd-tokenizer__inner\\">
+                            <span class=\\"fd-token\\" role=\\"button\\" tabindex=\\"0\\">
+                                <span class=\\"fd-token__text\\">Database Monitoring</span>
+                                <button class=\\"fd-token__close\\" aria-label=\\"unselect option: Database Monitoring\\"></button>
+                            </span>
+                            <input class=\\"fd-input fd-input-group__input fd-tokenizer__input\\" id=\\"lt-mcb-nowrap\\" aria-label=\\"Notification recipients\\" />
+                        </div>
+                    </div>
+                    <span class=\\"fd-input-group__addon fd-input-group__addon--button\\">
+                        <button aria-label=\\"Show options\\" aria-controls=\\"lt-mcb-nowrap-body\\" aria-expanded=\\"true\\" aria-haspopup=\\"true\\" class=\\"fd-input-group__button fd-button fd-button--transparent\\">
+                            <i class=\\"sap-icon--navigation-down-arrow\\"></i>
+                        </button>
+                    </span>
+                </div>
+            </div>
+            <div class=\\"fd-popover__body fd-popover__body--no-arrow fd-popover__body--dropdown fd-popover__body--dropdown-fill\\" aria-hidden=\\"false\\" id=\\"lt-mcb-nowrap-body\\">
+                <div class=\\"fd-popover__wrapper\\">
+                    <ul class=\\"fd-list fd-list--multi-input\\" role=\\"listbox\\" aria-multiselectable=\\"true\\" aria-label=\\"Notification recipients options\\">
+                        <li role=\\"option\\" tabindex=\\"0\\" class=\\"fd-list__item is-selected\\" aria-selected=\\"true\\">
+                            <div class=\\"fd-form-item fd-list__form-item\\">
+                                <input type=\\"checkbox\\" class=\\"fd-checkbox\\" id=\\"lt-mcb-n1\\" checked aria-labelledby=\\"lt-mcb-nt1\\">
+                                <label tabindex=\\"-1\\" class=\\"fd-checkbox__label\\" for=\\"lt-mcb-n1\\">
+                                    <span class=\\"fd-checkbox__checkmark\\" aria-hidden=\\"true\\"></span>
+                                </label>
+                            </div>
+                            <span class=\\"fd-list__title fd-list__title--no-wrap\\" id=\\"lt-mcb-nt1\\">Database Connectivity and Performance Monitoring Alert Group</span>
+                        </li>
+                        <li role=\\"option\\" tabindex=\\"0\\" class=\\"fd-list__item\\">
+                            <div class=\\"fd-form-item fd-list__form-item\\">
+                                <input type=\\"checkbox\\" class=\\"fd-checkbox\\" id=\\"lt-mcb-n2\\" aria-labelledby=\\"lt-mcb-nt2\\">
+                                <label tabindex=\\"-1\\" class=\\"fd-checkbox__label\\" for=\\"lt-mcb-n2\\">
+                                    <span class=\\"fd-checkbox__checkmark\\" aria-hidden=\\"true\\"></span>
+                                </label>
+                            </div>
+                            <span class=\\"fd-list__title fd-list__title--no-wrap\\" id=\\"lt-mcb-nt2\\">Enterprise Infrastructure and Cloud Resource Management Team</span>
+                        </li>
+                        <li role=\\"option\\" tabindex=\\"0\\" class=\\"fd-list__item\\">
+                            <div class=\\"fd-form-item fd-list__form-item\\">
+                                <input type=\\"checkbox\\" class=\\"fd-checkbox\\" id=\\"lt-mcb-n3\\" aria-labelledby=\\"lt-mcb-nt3\\">
+                                <label tabindex=\\"-1\\" class=\\"fd-checkbox__label\\" for=\\"lt-mcb-n3\\">
+                                    <span class=\\"fd-checkbox__checkmark\\" aria-hidden=\\"true\\"></span>
+                                </label>
+                            </div>
+                            <span class=\\"fd-list__title fd-list__title--no-wrap\\" id=\\"lt-mcb-nt3\\">Security Incident Response and Compliance Audit Notification List</span>
+                        </li>
+                        <li role=\\"option\\" tabindex=\\"0\\" class=\\"fd-list__item\\">
+                            <div class=\\"fd-form-item fd-list__form-item\\">
+                                <input type=\\"checkbox\\" class=\\"fd-checkbox\\" id=\\"lt-mcb-n4\\" aria-labelledby=\\"lt-mcb-nt4\\">
+                                <label tabindex=\\"-1\\" class=\\"fd-checkbox__label\\" for=\\"lt-mcb-n4\\">
+                                    <span class=\\"fd-checkbox__checkmark\\" aria-hidden=\\"true\\"></span>
+                                </label>
+                            </div>
+                            <span class=\\"fd-list__title fd-list__title--no-wrap\\" id=\\"lt-mcb-nt4\\">Customer Escalation and Service Level Agreement Breach Alerts</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <p style=\\"margin-block-start: 0.5rem; font-family: var(--sapFontFamily); font-size: var(--sapFontSize); color: var(--sapContent_LabelColor);\\">With <code>fd-list__title--no-wrap</code> (opt-out)</p>
+    </div>
+</div>
+"
+`;
+
 exports[`Check stories > Patterns/Multi ComboBox > Story MatchPopoverBodySize > Should match snapshot 1`] = `
 "<div style=\\"height: 300px;\\">
     <div class=\\"fd-popover\\">
@@ -75700,6 +76578,95 @@ exports[`Check stories > Patterns/Multi Input > Story Grouping > Should match sn
             </ul>
         </div>
         </div>
+    </div>
+</div>
+"
+`;
+
+exports[`Check stories > Patterns/Multi Input > Story LongText > Should match snapshot 1`] = `
+"<div style=\\"display: flex; gap: 2rem; align-items: flex-start;\\">
+    <div>
+        <p style=\\"margin-block-end: 0.5rem; font-family: var(--sapFontFamily); font-size: var(--sapFontSize);\\">Default (truncation)</p>
+        <ul aria-multiselectable=\\"true\\" role=\\"listbox\\" class=\\"fd-list fd-list--multi-input\\" style=\\"width: 18rem;\\">
+            <li class=\\"fd-list__item is-selected\\" role=\\"option\\">
+                <input type=\\"checkbox\\" checked class=\\"fd-checkbox fd-list__input\\" id=\\"lt-mi-1\\">
+                <label class=\\"fd-checkbox__label fd-list__label\\" for=\\"lt-mi-1\\">
+                    <span class=\\"fd-checkbox__checkmark\\" aria-hidden=\\"true\\"></span>
+                    <div class=\\"fd-checkbox__label-container\\">
+                        <span class=\\"fd-checkbox__text\\">Forecast Category Override Reason</span>
+                    </div>
+                </label>
+            </li>
+            <li class=\\"fd-list__item is-selected\\" role=\\"option\\">
+                <input type=\\"checkbox\\" checked class=\\"fd-checkbox fd-list__input\\" id=\\"lt-mi-2\\">
+                <label class=\\"fd-checkbox__label fd-list__label\\" for=\\"lt-mi-2\\">
+                    <span class=\\"fd-checkbox__checkmark\\" aria-hidden=\\"true\\"></span>
+                    <div class=\\"fd-checkbox__label-container\\">
+                        <span class=\\"fd-checkbox__text\\">Purchase Order Approval Threshold Exceeded</span>
+                    </div>
+                </label>
+            </li>
+            <li class=\\"fd-list__item\\" role=\\"option\\">
+                <input type=\\"checkbox\\" class=\\"fd-checkbox fd-list__input\\" id=\\"lt-mi-3\\">
+                <label class=\\"fd-checkbox__label fd-list__label\\" for=\\"lt-mi-3\\">
+                    <span class=\\"fd-checkbox__checkmark\\" aria-hidden=\\"true\\"></span>
+                    <div class=\\"fd-checkbox__label-container\\">
+                        <span class=\\"fd-checkbox__text\\">Customer Satisfaction Score Below Target</span>
+                    </div>
+                </label>
+            </li>
+            <li class=\\"fd-list__item\\" role=\\"option\\">
+                <input type=\\"checkbox\\" class=\\"fd-checkbox fd-list__input\\" id=\\"lt-mi-4\\">
+                <label class=\\"fd-checkbox__label fd-list__label\\" for=\\"lt-mi-4\\">
+                    <span class=\\"fd-checkbox__checkmark\\" aria-hidden=\\"true\\"></span>
+                    <div class=\\"fd-checkbox__label-container\\">
+                        <span class=\\"fd-checkbox__text\\">Delivery Confirmation Required</span>
+                    </div>
+                </label>
+            </li>
+        </ul>
+    </div>
+
+    <div>
+        <p style=\\"margin-block-end: 0.5rem; font-family: var(--sapFontFamily); font-size: var(--sapFontSize);\\">With <code>fd-list__label--wrap</code></p>
+        <ul aria-multiselectable=\\"true\\" role=\\"listbox\\" class=\\"fd-list fd-list--multi-input\\" style=\\"width: 18rem;\\">
+            <li class=\\"fd-list__item is-selected\\" role=\\"option\\">
+                <input type=\\"checkbox\\" checked class=\\"fd-checkbox fd-list__input\\" id=\\"lt-mi-w-1\\">
+                <label class=\\"fd-checkbox__label fd-list__label fd-list__label--wrap\\" for=\\"lt-mi-w-1\\">
+                    <span class=\\"fd-checkbox__checkmark\\" aria-hidden=\\"true\\"></span>
+                    <div class=\\"fd-checkbox__label-container\\">
+                        <span class=\\"fd-checkbox__text\\">Forecast Category Override Reason</span>
+                    </div>
+                </label>
+            </li>
+            <li class=\\"fd-list__item is-selected\\" role=\\"option\\">
+                <input type=\\"checkbox\\" checked class=\\"fd-checkbox fd-list__input\\" id=\\"lt-mi-w-2\\">
+                <label class=\\"fd-checkbox__label fd-list__label fd-list__label--wrap\\" for=\\"lt-mi-w-2\\">
+                    <span class=\\"fd-checkbox__checkmark\\" aria-hidden=\\"true\\"></span>
+                    <div class=\\"fd-checkbox__label-container\\">
+                        <span class=\\"fd-checkbox__text\\">Purchase Order Approval Threshold Exceeded</span>
+                    </div>
+                </label>
+            </li>
+            <li class=\\"fd-list__item\\" role=\\"option\\">
+                <input type=\\"checkbox\\" class=\\"fd-checkbox fd-list__input\\" id=\\"lt-mi-w-3\\">
+                <label class=\\"fd-checkbox__label fd-list__label fd-list__label--wrap\\" for=\\"lt-mi-w-3\\">
+                    <span class=\\"fd-checkbox__checkmark\\" aria-hidden=\\"true\\"></span>
+                    <div class=\\"fd-checkbox__label-container\\">
+                        <span class=\\"fd-checkbox__text\\">Customer Satisfaction Score Below Target</span>
+                    </div>
+                </label>
+            </li>
+            <li class=\\"fd-list__item\\" role=\\"option\\">
+                <input type=\\"checkbox\\" class=\\"fd-checkbox fd-list__input\\" id=\\"lt-mi-w-4\\">
+                <label class=\\"fd-checkbox__label fd-list__label fd-list__label--wrap\\" for=\\"lt-mi-w-4\\">
+                    <span class=\\"fd-checkbox__checkmark\\" aria-hidden=\\"true\\"></span>
+                    <div class=\\"fd-checkbox__label-container\\">
+                        <span class=\\"fd-checkbox__text\\">Delivery Confirmation Required</span>
+                    </div>
+                </label>
+            </li>
+        </ul>
     </div>
 </div>
 "
