@@ -6,6 +6,7 @@ import readOnlyAndDisabledExampleHtml from "./read-only-and-disabled.example.htm
 import matchPopoverBodySizeExampleHtml from "./match-popover-body-size.example.html?raw";
 import groupingExampleHtml from "./grouping.example.html?raw";
 import asFormItemExampleHtml from "./as-form-item.example.html?raw";
+import longTextExampleHtml from "./long-text.example.html?raw";
 import '../../../src/form-label.scss';
 import '../../../src/popover.scss';
 import '../../../src/radio.scss';
@@ -134,6 +135,18 @@ TwoColumnComboBox.parameters = {
     description: {
       story: `
 The user can filter selectable having 2 options by typing in the input. A button with the text "Show All" should be displayed, that when clicked, will clear the text in the input and show all options in the list.`
+    }
+  }
+};
+
+export const LongText = () => longTextExampleHtml;
+LongText.storyName = 'Long text';
+LongText.parameters = {
+  docs: {
+    description: {
+      story: `
+Multi ComboBox dropdown list items wrap long option text by default (\`white-space: normal\`). To opt out and truncate instead, add the \`fd-list__title--no-wrap\` modifier to the \`fd-list__title\` span inside each list item.
+`
     }
   }
 };

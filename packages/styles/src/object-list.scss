@@ -147,4 +147,40 @@ $block: #{$fd-namespace}-object-list;
 
     color: var(--sapContent_LabelColor);
   }
+
+  &--wrap {
+    .#{$block}__intro {
+      white-space: normal;
+      overflow: visible;
+      text-overflow: initial;
+    }
+
+    .#{$block}__row-left,
+    .#{$block}__row-right {
+      white-space: normal;
+      overflow: visible;
+      text-overflow: initial;
+
+      .#{$fd-namespace}-object-status__text {
+        white-space: normal;
+        overflow: visible;
+        text-overflow: initial;
+      }
+    }
+
+    .#{$block}__object-attribute {
+      white-space: normal;
+      overflow: visible;
+      text-overflow: initial;
+    }
+
+    .#{$block}__object-identifier {
+      .#{$fd-namespace}-object-identifier__title {
+        display: block;
+        -webkit-line-clamp: initial;
+        -webkit-box-orient: initial;
+        overflow: visible;
+      }
+    }
+  }
 }

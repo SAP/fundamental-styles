@@ -1,6 +1,7 @@
 import noDataExampleHtml from "./no-data.example.html?raw";
 import editExampleHtml from "./edit.example.html?raw";
 import standardExampleHtml from "./standard.example.html?raw";
+import longTextExampleHtml from "./long-text.example.html?raw";
 import '../../../src/upload-collection.scss';
 import '../../../src/list.scss';
 import '../../../src/icon.scss';
@@ -74,6 +75,18 @@ NoData.parameters = {
   docs: {
     description: {
       story: 'Use a message page component when the user has yet to upload any files.'
+    }
+  }
+};
+
+export const LongText = () => longTextExampleHtml;
+LongText.storyName = 'Long text';
+LongText.parameters = {
+  docs: {
+    description: {
+      story: `
+Upload collection file names truncate long text by default. Add the \`fd-list--wrap\` modifier class to the \`fd-list\` element to enable file name text wrapping.
+`
     }
   }
 };

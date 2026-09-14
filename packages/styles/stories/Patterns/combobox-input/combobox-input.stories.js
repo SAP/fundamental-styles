@@ -4,6 +4,7 @@ import disabledAndReadOnlyExampleHtml from "./disabled-and-read-only.example.htm
 import matchPopoverBodySizeExampleHtml from "./match-popover-body-size.example.html?raw";
 import twoItemsAndItemsGroupingExampleHtml from "./two-items-and-items-grouping.example.html?raw";
 import asFormItemExampleHtml from "./as-form-item.example.html?raw";
+import longTextExampleHtml from "./long-text.example.html?raw";
 import '../../../src/radio.scss';
 import '../../../src/title.scss';
 import '../../../src/form-label.scss';
@@ -100,6 +101,18 @@ Mobile.parameters = {
       story: `
 For mobile devices, or tablets, combobox component should be displayed in fullscreen mode.
 So instead of using popover and dropdown, it should be wrapped in \`dialog\` and \`bar\` components.
+`
+    }
+  }
+};
+
+export const LongText = () => longTextExampleHtml;
+LongText.storyName = 'Long text';
+LongText.parameters = {
+  docs: {
+    description: {
+      story: `
+Combobox dropdown list items wrap long option text by default (\`white-space: normal\`). To opt out and truncate instead, add the \`fd-list__title--no-wrap\` modifier to the \`fd-list__title\` span inside each list item.
 `
     }
   }

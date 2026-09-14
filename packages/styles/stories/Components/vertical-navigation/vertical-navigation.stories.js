@@ -5,6 +5,7 @@ import textExampleHtml from "./text.example.html?raw";
 import condensedExampleHtml from "./condensed.example.html?raw";
 import utilityExampleHtml from "./utility.example.html?raw";
 import cozyExampleHtml from "./cozy.example.html?raw";
+import longTextExampleHtml from "./long-text.example.html?raw";
 import '../../../src/vertical-nav.scss';
 import '../../../src/button.scss';
 import '../../../src/icon.scss';
@@ -112,6 +113,18 @@ GroupingOverflow.parameters = {
     description: {
       story: `To clip the content and add a vertical scroll to the Vertical Navigation add the  \`fd-vertical-nav--overflow\` modifier class to the \`fd-vertical-nav\` base class. You need to manually set the max-height of the element on the \`fd-vertical-nav\` level. For example: \`style="max-height: 200px;"\`.
         `
+    }
+  }
+};
+
+export const LongText = () => longTextExampleHtml;
+LongText.storyName = 'Long text';
+LongText.parameters = {
+  docs: {
+    description: {
+      story: `
+Navigation list items truncate long text by default. Add the \`fd-list--wrap\` modifier class to the \`fd-list\` element to enable text wrapping.
+`
     }
   }
 };

@@ -201,6 +201,23 @@ $fd-tree-item-selected-border-bottom: var(--sapList_BorderWidth) solid var(--sap
   }
 
   // MODIFIERS
+  &--wrap {
+    .#{$block}__item-container {
+      padding-top: 0.25rem;
+      padding-bottom: 0.25rem;
+    }
+
+    .#{$block}__content {
+      @include text-wrapping-behaviour();
+
+      .#{$block}__text {
+        @include text-wrapping-behaviour();
+
+        line-height: var(--fdTree_Item_Wrap_Text_Line_Height);
+      }
+    }
+  }
+
   @include fd-tree-borderless($block);
   @include fd-tree-active($block);
   @include fd-tree-no-data($block);

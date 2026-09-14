@@ -60,5 +60,18 @@
       --fdList_Message_View_Title_Size: var(--sapFontHeader6Size);
       --fdList_Message_View_Item_Byline_Height: calc(3.25rem + var(--sapList_BorderWidth));
     }
+
+    &.#{$block}--wrap {
+      .#{$block}__content {
+        overflow: visible;
+      }
+
+      .#{$block}__title,
+      .#{$block}__subtitle {
+        white-space: normal;
+        overflow: visible;
+        text-overflow: initial;
+      }
+    }
   }
 }

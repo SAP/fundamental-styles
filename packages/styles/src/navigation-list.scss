@@ -20,6 +20,8 @@ $block: #{$fd-namespace}-navigation-list;
   // Icon
   --fdNavigationList_Icon_Font_Size: 1rem;
 
+  // Wrap
+  --fdNavigationList_Content_Wrap_Padding_Block: 0.875rem;
 
   // Expander
   --fdNavigationList_Expander_Width: 2.25rem;
@@ -294,7 +296,7 @@ $block: #{$fd-namespace}-navigation-list;
     --fdNavigationList_Content_Height: var(--sapElement_Compact_LineHeight);
     --fdNavigationList_Expander_Height: 1.5625rem;
     --fdNavigationList_Expander_Width: 2rem;
-    
+
   }
 
   @include fd-collapsed() {
@@ -382,6 +384,26 @@ $block: #{$fd-namespace}-navigation-list;
 
     .fd-navigation-list__item--group > .fd-navigation-list__content{
       display: none;
+    }
+  }
+
+  &--wrap {
+    .#{$block}__content {
+      height: auto;
+      min-height: var(--fdNavigationList_Content_Height);
+      overflow: visible;
+      padding-block: var(--fdNavigationList_Content_Wrap_Padding_Block);
+
+      @include fd-compact-or-condensed() {
+        padding-block: 0.5rem;
+      }
+    }
+
+    .#{$block}__text {
+      white-space: normal;
+      overflow: visible;
+      text-overflow: initial;
+      line-height: normal;
     }
   }
 }

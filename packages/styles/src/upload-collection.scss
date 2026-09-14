@@ -110,6 +110,20 @@ $fd-upload-collection-button-group-small-margin: 0.5rem !default;
     }
   }
 
+  &.fd-list--wrap {
+    .#{$block}__description {
+      white-space: normal;
+      overflow: visible;
+      text-overflow: initial;
+    }
+
+    .#{$block}__status-group-item-text {
+      white-space: normal;
+      overflow: visible;
+      text-overflow: initial;
+    }
+  }
+
   &--sm {
     .#{$block}__item {
       flex-wrap: wrap;
