@@ -42054,12 +42054,10 @@ exports[`Check stories > Components/Object List > Story Standard > Should match 
 "
 <h4 id=\\"objectListItemHeader\\">Object List Item</h4>
 <ul class=\\"fd-list fd-object-list\\" role=\\"list\\" aria-labelledby=\\"objectListItemHeader\\">
-
-  <!-- Default: all text truncates -->
   <li role=\\"listitem\\" tabindex=\\"0\\" class=\\"fd-list__item fd-object-list__item\\">
     <div class=\\"fd-object-list__container\\">
       <div class=\\"fd-object-list__intro\\">
-       Optional inline text very very very long optional inline text very very very long optional inline text Optional inline text very very very long optional inline text very very very long optional inline text
+       Optional inline text very very very long
       </div>
       <div class=\\"fd-object-list__header\\">
         <span class=\\"fd-avatar fd-avatar--s\\"
@@ -42068,7 +42066,7 @@ exports[`Check stories > Components/Object List > Story Standard > Should match 
         <div class=\\"fd-object-list__header-left\\">
          <div class=\\"fd-object-identifier fd-object-list__object-identifier\\">
           <p class=\\"fd-object-identifier__title\\">
-           Fitbit Versa Smart Watch, Black Fitbit Versa Smart Watch Fitbit Versa Smart Watch, Black Fitbit Versa Smart Watch Fitbit Versa Smart Watch, Black Fitbit Versa Smart Watch Fitbit Versa Smart Watch, Black Fitbit Versa Smart Watch
+           Fitbit Versa Smart Watch, Black Fitbit Versa Smart Watch
           </p>
          </div>
         </div>
@@ -42083,47 +42081,46 @@ exports[`Check stories > Components/Object List > Story Standard > Should match 
         <div class=\\"fd-object-list__row\\">
           <div class=\\"fd-object-list__row-left\\">
             <div class=\\"fd-object-list__object-attribute\\">
-              First Attribute very very very long first attribute text that should truncate
+
+              First Attribute
             </div>
           </div>
           <div class=\\"fd-object-list__row-right\\">
             <div class=\\"fd-object-marker\\">
-              <i role=\\"img\\" class=\\"fd-object-marker__icon sap-icon--flag\\"
+              <i class=\\"fd-object-marker__icon sap-icon--flag\\"
                aria-label=\\"icon for flag\\"></i>
             </div>
             <div class=\\"fd-object-marker\\">
-              <i role=\\"img\\" class=\\"fd-object-marker__icon sap-icon--favorite\\" aria-label=\\"icon for favourite\\"></i>
+              <i class=\\"fd-object-marker__icon sap-icon--favorite\\" aria-label=\\"icon for favourite\\"></i>
             </div>
           </div>
         </div>
         <div class=\\"fd-object-list__row\\">
           <div class=\\"fd-object-list__row-left\\">
             <div class=\\"fd-object-list__object-attribute\\">
-              Second Attribute  very very very long first attribute text that should truncate
+              Second Attribute
             </div>
           </div>
           <div class=\\"fd-object-list__row-right\\">
             <span class=\\"fd-object-status fd-object-status--critical\\">
-              <span class=\\"fd-object-status__text\\">Critical very very very long critical status text that should truncate  very very very long first attribute text that should truncate</span>
+              <span class=\\"fd-object-status__text\\">Critical very very very long</span>
             </span>
           </div>
         </div>
         <div class=\\"fd-object-list__row\\">
           <div class=\\"fd-object-list__row-left\\">
             <div class=\\"fd-object-list__object-attribute\\">
-              Third Attribute very very very long first attribute text that should truncate  very very very long first attribute text that should truncate  very very very long first attribute text that should truncate
+              Third Attribute
             </div>
-          </div>
         </div>
       </div>
     </div>
+    </div>
   </li>
-
-  <!-- __intro--wrap: long intro text wraps -->
   <li role=\\"listitem\\" tabindex=\\"0\\" class=\\"fd-list__item fd-object-list__item\\">
     <div class=\\"fd-object-list__container\\">
-      <div class=\\"fd-object-list__intro fd-object-list__intro--wrap\\">
-       Optional inline text very very very long optional inline text very very very long optional inline text very very very long optional inline text  optional inline text very very very long optional inline text 
+      <div class=\\"fd-object-list__intro\\">
+       Optional inline text very very very long
       </div>
       <div class=\\"fd-object-list__header\\">
         <span class=\\"fd-avatar fd-avatar--s\\"
@@ -42131,8 +42128,8 @@ exports[`Check stories > Components/Object List > Story Standard > Should match 
         </span>
         <div class=\\"fd-object-list__header-left\\">
          <div class=\\"fd-object-identifier fd-object-list__object-identifier\\">
-          <p class=\\"fd-object-identifier__title fd-object-identifier__title--wrap\\">
-           Fitbit Versa Smart Watch, Black Fitbit Versa Smart Watch Fitbit Versa Smart Watch, Black Fitbit Versa Smart Watch Fitbit Versa Smart Watch, Black Fitbit Versa Smart Watch Fitbit Versa Smart Watch, Black Fitbit Versa Smart Watch
+          <p class=\\"fd-object-identifier__title\\">
+           Fitbit Versa Smart Watch, Black Fitbit Versa Smart Watch
           </p>
          </div>
         </div>
@@ -42174,14 +42171,12 @@ exports[`Check stories > Components/Object List > Story Standard > Should match 
             <div class=\\"fd-object-list__object-attribute\\">
               Third Attribute
             </div>
-          </div>
         </div>
       </div>
     </div>
+    </div>
   </li>
-
-  <!-- __row-right--wrap: long status text wraps -->
-  <li role=\\"listitem\\" tabindex=\\"0\\" class=\\"fd-list__item fd-object-list__item fd-list__item--wrap\\">
+  <li role=\\"listitem\\" tabindex=\\"0\\" class=\\"fd-list__item fd-object-list__item\\">
     <div class=\\"fd-object-list__container\\">
       <div class=\\"fd-object-list__intro\\">
        Optional inline text very very very long
@@ -42215,17 +42210,15 @@ exports[`Check stories > Components/Object List > Story Standard > Should match 
         </div>
         <div class=\\"fd-object-list__row\\">
           <div class=\\"fd-object-list__row-left\\"></div>
-          <div class=\\"fd-object-list__row-right fd-object-list__row-right--wrap\\">
+          <div class=\\"fd-object-list__row-right\\">
             <span class=\\"fd-object-status fd-object-status--critical\\">
-              <span class=\\"fd-object-status__text\\">Critical very very very long critical status text that should now wrap instead of truncating with ellipsis</span>
+              <span class=\\"fd-object-status__text\\">Critical</span>
             </span>
           </div>
         </div>
       </div>
     </div>
   </li>
-
-  <!-- __object-attribute--wrap: long attribute text wraps -->
   <li role=\\"listitem\\" tabindex=\\"0\\" class=\\"fd-list__item fd-object-list__item\\">
     <div class=\\"fd-object-list__container\\">
       <div class=\\"fd-object-list__intro\\">
@@ -42252,8 +42245,8 @@ exports[`Check stories > Components/Object List > Story Standard > Should match 
       <div class=\\"fd-object-list__content\\">
         <div class=\\"fd-object-list__row\\">
           <div class=\\"fd-object-list__row-left\\">
-            <div class=\\"fd-object-list__object-attribute fd-object-list__object-attribute--wrap\\">
-              First Attribute very very very long first attribute text that should now wrap instead of truncating with ellipsis
+            <div class=\\"fd-object-list__object-attribute\\">
+              First Attribute
             </div>
           </div>
           <div class=\\"fd-object-list__row-right\\">
@@ -42275,9 +42268,9 @@ exports[`Check stories > Components/Object List > Story Standard > Should match 
             <div class=\\"fd-object-list__object-attribute\\">
               Third Attribute
             </div>
-          </div>
         </div>
       </div>
+    </div>
     </div>
   </li>
 </ul>
@@ -51778,7 +51771,7 @@ exports[`Check stories > Components/Settings > Story Notifications > Should matc
                                 <button
                                     role=\\"button\\"
                                     title=\\"Click to navigate\\"
-                                    class=\\"fd-button fd-button--transparent\\"
+                                    class=\\"fd-button fd-button--transparent fd-list__button\\"
                                 >
                                     <i
                                         class=\\"sap-icon--navigation-right-arrow\\"
@@ -51812,7 +51805,7 @@ exports[`Check stories > Components/Settings > Story Notifications > Should matc
                                 <button
                                     role=\\"button\\"
                                     title=\\"Click to navigate\\"
-                                    class=\\"fd-button fd-button--transparent\\"
+                                    class=\\"fd-button fd-button--transparent fd-list__button\\"
                                 >
                                     <i
                                         class=\\"sap-icon--navigation-right-arrow\\"
@@ -51846,7 +51839,7 @@ exports[`Check stories > Components/Settings > Story Notifications > Should matc
                                 <button
                                     role=\\"button\\"
                                     title=\\"Click to navigate\\"
-                                    class=\\"fd-button fd-button--transparent\\"
+                                    class=\\"fd-button fd-button--transparent fd-list__button\\"
                                 >
                                     <i
                                         class=\\"sap-icon--navigation-right-arrow\\"
@@ -51883,7 +51876,7 @@ exports[`Check stories > Components/Settings > Story Notifications > Should matc
                                 <button
                                     role=\\"button\\"
                                     title=\\"Click to navigate\\"
-                                    class=\\"fd-button fd-button--transparent\\"
+                                    class=\\"fd-button fd-button--transparent fd-list__button\\"
                                 >
                                     <i
                                         class=\\"sap-icon--navigation-right-arrow\\"
@@ -51917,7 +51910,7 @@ exports[`Check stories > Components/Settings > Story Notifications > Should matc
                                 <button
                                     role=\\"button\\"
                                     title=\\"Click to navigate\\"
-                                    class=\\"fd-button fd-button--transparent\\"
+                                    class=\\"fd-button fd-button--transparent fd-list__button\\"
                                 >
                                     <i
                                         class=\\"sap-icon--navigation-right-arrow\\"
@@ -51951,7 +51944,7 @@ exports[`Check stories > Components/Settings > Story Notifications > Should matc
                                 <button
                                     role=\\"button\\"
                                     title=\\"Click to navigate\\"
-                                    class=\\"fd-button fd-button--transparent\\"
+                                    class=\\"fd-button fd-button--transparent fd-list__button\\"
                                 >
                                     <i
                                         class=\\"sap-icon--navigation-right-arrow\\"
@@ -51968,7 +51961,9 @@ exports[`Check stories > Components/Settings > Story Notifications > Should matc
         <footer class=\\"fd-dialog__footer fd-bar fd-bar--footer fd-settings__dialog-footer\\">
             <div class=\\"fd-bar__right\\">
                 <div class=\\"fd-bar__element\\">
-                    <button class=\\"fd-dialog__decisive-button fd-button fd-button--transparent\\">Close</button>
+                    <button class=\\"fd-dialog__decisive-button fd-button fd-button--transparent fd-list__button\\">
+                        Close
+                    </button>
                 </div>
             </div>
         </footer>
@@ -52067,7 +52062,7 @@ exports[`Check stories > Components/Settings > Story NotificationsDetails > Shou
                                 </div>
                                 <label class=\\"fd-switch\\">
                                     <span class=\\"fd-switch__control\\">
-                                        <input checked class=\\"fd-switch__input\\" type=\\"checkbox\\" name=\\"\\" value=\\"\\" />
+                                        <input checked class=\\"fd-switch__input\\" type=\\"checkbox\\" value=\\"\\" />
                                         <div class=\\"fd-switch__slider\\">
                                             <div class=\\"fd-switch__track\\">
                                                 <i
@@ -52093,7 +52088,7 @@ exports[`Check stories > Components/Settings > Story NotificationsDetails > Shou
                                 </div>
                                 <label class=\\"fd-switch\\">
                                     <span class=\\"fd-switch__control\\">
-                                        <input checked class=\\"fd-switch__input\\" type=\\"checkbox\\" name=\\"\\" value=\\"\\" />
+                                        <input checked class=\\"fd-switch__input\\" type=\\"checkbox\\" value=\\"\\" />
                                         <div class=\\"fd-switch__slider\\">
                                             <div class=\\"fd-switch__track\\">
                                                 <i
@@ -52124,7 +52119,7 @@ exports[`Check stories > Components/Settings > Story NotificationsDetails > Shou
                                 </div>
                                 <label class=\\"fd-switch\\">
                                     <span class=\\"fd-switch__control\\">
-                                        <input checked class=\\"fd-switch__input\\" type=\\"checkbox\\" name=\\"\\" value=\\"\\" />
+                                        <input checked class=\\"fd-switch__input\\" type=\\"checkbox\\" value=\\"\\" />
                                         <div class=\\"fd-switch__slider\\">
                                             <div class=\\"fd-switch__track\\">
                                                 <i
@@ -52150,7 +52145,7 @@ exports[`Check stories > Components/Settings > Story NotificationsDetails > Shou
                                 </div>
                                 <label class=\\"fd-switch\\">
                                     <span class=\\"fd-switch__control\\">
-                                        <input checked class=\\"fd-switch__input\\" type=\\"checkbox\\" name=\\"\\" value=\\"\\" />
+                                        <input checked class=\\"fd-switch__input\\" type=\\"checkbox\\" value=\\"\\" />
                                         <div class=\\"fd-switch__slider\\">
                                             <div class=\\"fd-switch__track\\">
                                                 <i
@@ -64378,9 +64373,9 @@ exports[`Check stories > Components/User Menu > Story Mobile > Should match snap
                                     <span class=\\"fd-menu__title\\">About</span>
                                 </a>
                             </li>
-
+                            
                         </ul>
-                    </nav>
+                    </nav>  
                 </div>
             </div>
             <div class=\\"fd-bar fd-bar--footer fd-user-menu__footer\\">
@@ -64433,7 +64428,7 @@ exports[`Check stories > Components/User Menu > Story Mobile > Should match snap
                             </div>
                         </li>
                     </ul>
-                </nav>
+                </nav>  
             </div>
         </div>
     </div>

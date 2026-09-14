@@ -474,10 +474,6 @@
         align-self: center;
       }
 
-      button {
-        margin-inline-start: 0.125rem;
-      }
-
       @include fd-focus() {
         &::before {
           inset: 0.125rem -0.25rem;
