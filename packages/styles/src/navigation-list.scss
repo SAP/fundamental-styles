@@ -22,6 +22,7 @@ $block: #{$fd-namespace}-navigation-list;
 
   // Wrap
   --fdNavigationList_Content_Wrap_Padding_Block: 0.875rem;
+  --fdNavigationList_Content_Wrap_Compact_Padding_Block: 0.5rem;
 
   // Expander
   --fdNavigationList_Expander_Width: 2.25rem;
@@ -395,7 +396,7 @@ $block: #{$fd-namespace}-navigation-list;
       padding-block: var(--fdNavigationList_Content_Wrap_Padding_Block);
 
       @include fd-compact-or-condensed() {
-        padding-block: 0.5rem;
+        padding-block: var(--fdNavigationList_Content_Wrap_Compact_Padding_Block);
       }
     }
 

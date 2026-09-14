@@ -161,6 +161,7 @@ $block: #{$fd-namespace}-object-list;
       overflow: visible;
       text-overflow: initial;
 
+      // fd-object-status__text carries its own fd-ellipsis() and cannot be reached from the outer modifier
       .#{$fd-namespace}-object-status__text {
         white-space: normal;
         overflow: visible;
@@ -175,6 +176,7 @@ $block: #{$fd-namespace}-object-list;
     }
 
     .#{$block}__object-identifier {
+      // fd-object-identifier__title uses fd-line-clamp() which cannot be reached from the outer modifier
       .#{$fd-namespace}-object-identifier__title {
         display: block;
         -webkit-line-clamp: initial;

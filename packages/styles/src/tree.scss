@@ -203,8 +203,7 @@ $fd-tree-item-selected-border-bottom: var(--sapList_BorderWidth) solid var(--sap
   // MODIFIERS
   &--wrap {
     .#{$block}__item-container {
-      padding-top: 0.25rem;
-      padding-bottom: 0.25rem;
+      padding-block: 0.25rem;
     }
 
     .#{$block}__content {
