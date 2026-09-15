@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.41.10-rc.4](https://github.com/SAP/fundamental-styles/compare/v0.41.10-rc.3...v0.41.10-rc.4) (2026-09-15)
+
+### Bug Fixes
+
+- **styles:** update List spacings in Notifications view of Settings dialog ([#6400](https://github.com/SAP/fundamental-styles/issues/6400)) ([940e18d](https://github.com/SAP/fundamental-styles/commit/940e18dec205a0111d40ef7d89e6ab77b07d5b72))
+
 ## [0.41.10-rc.3](https://github.com/SAP/fundamental-styles/compare/v0.41.10-rc.2...v0.41.10-rc.3) (2026-09-11)
 
 **Note:** Version bump only for package fundamental-styles
