@@ -11,12 +11,6 @@ $button: #{$fd-namespace}-button;
 $fd-tree-item-transparent-border-bottom: var(--sapList_BorderWidth) solid transparent !default;
 $fd-tree-item-selected-border-bottom: var(--sapList_BorderWidth) solid var(--sapList_SelectionBorderColor) !default;
 
-@mixin text-wrapping-behaviour() {
-  white-space: normal;
-  overflow: visible;
-  text-overflow: initial;
-}
-
 // BLOCK
 .#{$block} {
   --fdTree_Button_Spacing: var(--fdList_Button_Spacing);
@@ -154,10 +148,10 @@ $fd-tree-item-selected-border-bottom: var(--sapList_BorderWidth) solid var(--sap
     text-decoration: none;
 
     &--wrap {
-      @include text-wrapping-behaviour();
+      @include fd-wrap();
 
       .#{$block}__text {
-        @include text-wrapping-behaviour();
+        @include fd-wrap();
 
         line-height: var(--fdTree_Item_Wrap_Text_Line_Height);
       }
@@ -207,10 +201,10 @@ $fd-tree-item-selected-border-bottom: var(--sapList_BorderWidth) solid var(--sap
     }
 
     .#{$block}__content {
-      @include text-wrapping-behaviour();
+      @include fd-wrap();
 
       .#{$block}__text {
-        @include text-wrapping-behaviour();
+        @include fd-wrap();
 
         line-height: var(--fdTree_Item_Wrap_Text_Line_Height);
       }

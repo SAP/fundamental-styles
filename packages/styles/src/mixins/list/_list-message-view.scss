@@ -62,15 +62,16 @@
     }
 
     &.#{$block}--wrap {
+      width: 26rem;
+      max-width: 100%;
+
       .#{$block}__content {
         overflow: visible;
       }
 
       .#{$block}__title,
       .#{$block}__subtitle {
-        white-space: normal;
-        overflow: visible;
-        text-overflow: initial;
+        @include fd-wrap();
       }
     }
   }

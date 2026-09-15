@@ -353,9 +353,8 @@ $fd-list-second-level-popover-position: 3.25rem !default;
       }
 
       .#{$blockList}__navigation-item-text {
-        white-space: normal;
-        overflow: visible;
-        text-overflow: initial;
+        @include fd-wrap();
+        
         line-height: normal;
       }
 

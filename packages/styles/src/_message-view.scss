@@ -16,11 +16,6 @@ $block: #{$fd-namespace}-message-view;
     max-height: 50vh;
     max-width: 26rem;
 
-    .fd-list--wrap {
-      width: 26rem;
-      max-width: 100%;
-    }
-
     &--hidden {
       opacity: 0;
     }

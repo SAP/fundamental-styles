@@ -150,37 +150,27 @@ $block: #{$fd-namespace}-object-list;
 
   &--wrap {
     .#{$block}__intro {
-      white-space: normal;
-      overflow: visible;
-      text-overflow: initial;
+      @include fd-wrap();
     }
 
     .#{$block}__row-left,
     .#{$block}__row-right {
-      white-space: normal;
-      overflow: visible;
-      text-overflow: initial;
+      @include fd-wrap();
 
       // fd-object-status__text carries its own fd-ellipsis() and cannot be reached from the outer modifier
       .#{$fd-namespace}-object-status__text {
-        white-space: normal;
-        overflow: visible;
-        text-overflow: initial;
+        @include fd-wrap();
       }
     }
 
     .#{$block}__object-attribute {
-      white-space: normal;
-      overflow: visible;
-      text-overflow: initial;
+      @include fd-wrap();
     }
 
     .#{$block}__object-identifier {
       // fd-object-identifier__title uses fd-line-clamp() which cannot be reached from the outer modifier
       .#{$fd-namespace}-object-identifier__title {
         display: block;
-        -webkit-line-clamp: initial;
-        -webkit-box-orient: initial;
         overflow: visible;
       }
     }
