@@ -110,6 +110,16 @@ $fd-upload-collection-button-group-small-margin: 0.5rem !default;
     }
   }
 
+  &.#{$fd-namespace}-list--wrap {
+    .#{$block}__description {
+      @include fd-wrap();
+    }
+
+    .#{$block}__status-group-item-text {
+      @include fd-wrap();
+    }
+  }
+
   &--sm {
     .#{$block}__item {
       flex-wrap: wrap;

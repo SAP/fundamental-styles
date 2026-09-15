@@ -147,4 +147,32 @@ $block: #{$fd-namespace}-object-list;
 
     color: var(--sapContent_LabelColor);
   }
+
+  &--wrap {
+    .#{$block}__intro {
+      @include fd-wrap();
+    }
+
+    .#{$block}__row-left,
+    .#{$block}__row-right {
+      @include fd-wrap();
+
+      // fd-object-status__text carries its own fd-ellipsis() and cannot be reached from the outer modifier
+      .#{$fd-namespace}-object-status__text {
+        @include fd-wrap();
+      }
+    }
+
+    .#{$block}__object-attribute {
+      @include fd-wrap();
+    }
+
+    .#{$block}__object-identifier {
+      // fd-object-identifier__title uses fd-line-clamp() which cannot be reached from the outer modifier
+      .#{$fd-namespace}-object-identifier__title {
+        display: block;
+        overflow: visible;
+      }
+    }
+  }
 }

@@ -4,6 +4,7 @@ import navigableExampleHtml from "./navigable.example.html?raw";
 import highlightIndicatorsExampleHtml from "./highlight-indicators.example.html?raw";
 import borderlessExampleHtml from "./borderless.example.html?raw";
 import primaryExampleHtml from "./primary.example.html?raw";
+import longTextExampleHtml from "./long-text.example.html?raw";
 import '../../../src/button.scss';
 import '../../../src/checkbox.scss';
 import '../../../src/icon.scss';
@@ -143,6 +144,17 @@ TreeWithNoData.parameters = {
     description: {
       story: `
 If there is no data to display, add the \`fd-tree--no-data\` modifier class to the root tree.
+`
+    }
+  }
+};
+export const LongText = () => longTextExampleHtml;
+LongText.storyName = 'Long text';
+LongText.parameters = {
+  docs: {
+    description: {
+      story: `
+Tree items truncate long text by default. To enable text wrapping on all items, add the \`fd-tree--wrap\` modifier class to the root tree element. Individual items can also wrap by adding \`fd-tree__content--wrap\` to the \`fd-tree__content\` element.
 `
     }
   }

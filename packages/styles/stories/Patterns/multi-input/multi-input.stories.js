@@ -1,4 +1,5 @@
 import filteringExampleHtml from "./filtering.example.html?raw";
+import longTextExampleHtml from "./long-text.example.html?raw";
 import mobileModeExampleHtml from "./mobile-mode.example.html?raw";
 import semanticExampleHtml from "./semantic.example.html?raw";
 import multiInputModesExampleHtml from "./multi-input-modes.example.html?raw";
@@ -124,6 +125,18 @@ Filtering.parameters = {
     description: {
       story: `
 The user can filter selectable options by typing in the input. A button with the text "Show All" should be displayed, that when clicked, will clear the text in the input and show all options in the list.`
+    }
+  }
+};
+
+export const LongText = () => longTextExampleHtml;
+LongText.storyName = 'Long text';
+LongText.parameters = {
+  docs: {
+    description: {
+      story: `
+Multi input list option labels truncate long text by default. Add the \`fd-list__label--wrap\` modifier class to the \`fd-list__label\` element to enable text wrapping.
+`
     }
   }
 };

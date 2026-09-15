@@ -1428,7 +1428,7 @@ This component works with or depends on:
                                 </div>
                                 <label class="fd-switch">
                                     <span class="fd-switch__control">
-                                        <input checked class="fd-switch__input" type="checkbox" name="" value="" />
+                                        <input checked class="fd-switch__input" type="checkbox" value="" />
                                         <div class="fd-switch__slider">
                                             <div class="fd-switch__track">
                                                 <i
@@ -1454,7 +1454,7 @@ This component works with or depends on:
                                         </div>
                                         <label class="fd-switch">
                                             <span class="fd-switch__control">
-                                                <input checked class="fd-switch__input" type="checkbox" name="" value="" />
+                                                <input checked class="fd-switch__input" type="checkbox" value="" />
                                                 <div class="fd-switch__slider">
                                                     <div class="fd-switch__track">
                                                         <i
@@ -1485,7 +1485,7 @@ This component works with or depends on:
                                                 </div>
                                                 <label class="fd-switch">
                                                     <span class="fd-switch__control">
-                                                        <input checked class="fd-switch__input" type="checkbox" name="" value="" />
+                                                        <input checked class="fd-switch__input" type="checkbox" value="" />
                                                         <div class="fd-switch__slider">
                                                             <div class="fd-switch__track">
                                                                 <i
@@ -1511,7 +1511,7 @@ This component works with or depends on:
                                                         </div>
                                                         <label class="fd-switch">
                                                             <span class="fd-switch__control">
-                                                                <input checked class="fd-switch__input" type="checkbox" name="" value="" />
+                                                                <input checked class="fd-switch__input" type="checkbox" value="" />
                                                                 <div class="fd-switch__slider">
                                                                     <div class="fd-switch__track">
                                                                         <i

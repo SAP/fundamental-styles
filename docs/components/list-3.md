@@ -84,6 +84,7 @@ npm install fundamental-styles
 | `fd-list--no-border` | Style variant |
 | `fd-list--search-results` | To be used in a popover containing sophisticated search results. |
 | `fd-list--selection` | Standard list items can display checkboxes that users can select from |
+| `fd-list--wrap` | By default, long title and secondary text is truncated with an ellipsis |
 
 ## States
 
@@ -116,18 +117,23 @@ This component uses the following BEM elements:
 - `fd-list__item--link`
 - `fd-list__item--suggestion`
 - `fd-list__item--unread`
+- `fd-list__item--wrap`
+- `fd-list__item--wrap-top-aligned`
 - `fd-list__item-counter`
 - `fd-list__link`
+- `fd-list__link--more`
 - `fd-list__link--navigation-indicator`
 - `fd-list__secondary`
 - `fd-list__secondary--critical`
 - `fd-list__secondary--informative`
 - `fd-list__secondary--negative`
 - `fd-list__secondary--positive`
+- `fd-list__secondary--wrap`
 - `fd-list__subline`
 - `fd-list__thumbnail`
 - `fd-list__title`
 - `fd-list__title--scope`
+- `fd-list__title--wrap`
 - `fd-list__title-text`
 
 ## Examples
@@ -236,20 +242,20 @@ Standard list items can contain navigation links. To add navigation, add the \
 
 ```html
 <ul class="fd-list" role="list">
-    <li tabindex="-1" role="listitem" class="fd-list__item">
-        <span class="fd-list__title">List item 1</span>
+    <li tabindex="-1" role="listitem" class="fd-list__item fd-list__item--wrap">
+        <span class="fd-list__title">List item 1 that wraps. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua, ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur, excepteur sint occaecat cupidatat non proident</span>
         <button class="fd-button fd-button--transparent fd-list__button">
             <i class="sap-icon--edit"></i>
         </button>
     </li>
     <li tabindex="-1" role="listitem" class="fd-list__item">
-        <span class="fd-list__title">List item 1</span>
+        <span class="fd-list__title fd-list__title--wrap">List item 2 that wraps. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat, duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</span>
         <button class="fd-button fd-button--transparent fd-list__button">
             <i class="sap-icon--decline"></i>
         </button>
     </li>
     <li tabindex="-1" role="listitem" class="fd-list__item">
-        <span class="fd-list__title">List item 2</span>
+        <span class="fd-list__title">List item 3</span>
         <button class="fd-button fd-button--transparent fd-list__button">
             <i class="sap-icon--edit"></i>
         </button>
@@ -266,15 +272,15 @@ If only a subset of the list items is navigable you should indicate them with an
 
 ```html
 <ul class="fd-list fd-list--navigation fd-list--navigation-indication" role="list">
-    <li tabindex="-1" role="listitem" class="fd-list__item fd-list__item--link">
+    <li tabindex="-1" role="listitem" class="fd-list__item fd-list__item--wrap fd-list__item--link">
         <a tabindex="0" class="fd-list__link fd-list__link--navigation-indicator" href="#">
-            <span class="fd-list__title">List item 1</span>
+            <span class="fd-list__title">List item 1 that wraps. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua, ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur, excepteur sint occaecat cupidatat non proident</span>
         </a>
     </li>
     <li tabindex="-1" role="listitem" class="fd-list__item fd-list__item--link">
         <a tabindex="0" class="fd-list__link fd-list__link--navigation-indicator is-selected" href="#">
             <i role="presentation" class="fd-list__icon sap-icon--history"></i>
-            <span class="fd-list__title">List item 2</span>
+            <span class="fd-list__title fd-list__title--wrap">List item 2 that wraps. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat, duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur, excepteur sint occaecat cupidatat non proident. Sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit</span>
         </a>
     </li>
     <li tabindex="0" role="listitem" class="fd-list__item">
@@ -287,7 +293,7 @@ If only a subset of the list items is navigable you should indicate them with an
     </li>
     <li tabindex="-1" role="listitem" class="fd-list__item fd-list__item--link">
         <a tabindex="0" class="fd-list__link fd-list__link--navigation-indicator is-navigated" href="#">
-            <span class="fd-list__title">List item 5</span>
+            <span class="fd-list__title">List item 4</span>
             <i role="presentation" class="fd-list__icon sap-icon--map"></i>
         </a>
     </li>
@@ -364,12 +370,12 @@ To display secondary data in standard list items, add a span element with \
 
 ```html
 <ul class="fd-list" role="list">
-    <li role="listitem" tabindex="0" class="fd-list__item">
-        <span class="fd-list__title">List item 1</span>
+    <li role="listitem" tabindex="0" class="fd-list__item fd-list__item--wrap">
+        <span class="fd-list__title">List item 1 that wraps. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat, duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</span>
         <span class="fd-list__secondary">Neutral Status</span>
     </li>
     <li role="listitem" tabindex="0" class="fd-list__item">
-        <span class="fd-list__title">List item 2</span>
+        <span class="fd-list__title fd-list__title--wrap">List item 2 that wraps. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat, duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</span>
         <span class="fd-list__secondary fd-list__secondary--positive">Positive Status</span>
     </li>
     <li role="listitem" tabindex="0" class="fd-list__item">
@@ -393,17 +399,17 @@ The item counter is vertically aligned within the list item, to the right. The m
 
 ```html
 <ul class="fd-list" role="list">
-    <li role="listitem" tabindex="0" class="fd-list__item">
-        <span class="fd-list__title">List item 1</span>
+    <li role="listitem" tabindex="0" class="fd-list__item fd-list__item--wrap">
+        <span class="fd-list__title">List item 1 that wraps. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat, duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</span>
         <span class="fd-list__item-counter">12345</span>
     </li>
     <li role="listitem" tabindex="0" class="fd-list__item">
-        <span class="fd-list__title">List item 2</span>
+        <span class="fd-list__title fd-list__title--wrap">List item 2</span>
         <span class="fd-list__item-counter">12345</span>
     </li>
     <li role="listitem" tabindex="0" class="fd-list__item">
         <i role="presentation" class="fd-list__icon sap-icon--lightbulb"></i>
-        <span class="fd-list__title">List item 3</span>
+        <span class="fd-list__title fd-list__title--wrap">List item 3 that wraps. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat, duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</span>
         <span class="fd-list__item-counter">12345</span>
     </li>
     <li role="listitem" tabindex="0" class="fd-list__item">
@@ -424,16 +430,16 @@ To display an icon inside standard list items, add the \
         <i role="presentation" class="fd-list__icon sap-icon--cart"></i>
         <span class="fd-list__title">List item 1</span>
     </li>
-    <li role="listitem" tabindex="0" class="fd-list__item">
+    <li role="listitem" tabindex="0" class="fd-list__item fd-list__item--wrap">
         <i role="presentation" class="fd-list__icon sap-icon--wrench"></i>
-        <span class="fd-list__title">List item 2</span>
+        <span class="fd-list__title">List item 2 that wraps. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat, duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</span>
     </li>
     <li role="listitem" tabindex="0" class="fd-list__item">
         <span class="fd-list__title">List item 3</span>
         <i role="presentation" class="fd-list__icon sap-icon--lightbulb"></i>
     </li>
     <li role="listitem" tabindex="0" class="fd-list__item">
-        <span class="fd-list__title">List item 4</span>
+        <span class="fd-list__title fd-list__title--wrap">List item 4 that wraps. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur, excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</span>
         <i role="presentation" class="fd-list__icon sap-icon--history"></i>
     </li>
 </ul>
@@ -523,23 +529,23 @@ Standard list items can display checkboxes that users can select from. To displa
 
 ```html
 <ul class="fd-list fd-list--selection" role="listbox" aria-labelledby="XezW11">
-    <li role="option" tabindex="0" class="fd-list__item">
+    <li role="option" tabindex="0" class="fd-list__item fd-list__item--wrap">
         <div class="fd-form-item fd-list__form-item">
             <input type="checkbox" class="fd-checkbox" id="Ai4ez1" aria-labelledby="Az0bg1">
             <label tabindex="-1" class="fd-checkbox__label" for="Ai4ez1">
                 <span class="fd-checkbox__checkmark" aria-hidden="true"></span>
             </label>
         </div>
-        <span class="fd-list__title" id="Az0bg1">List item 1</span>
+        <span class="fd-list__title" id="Az0bg1">List item 1 that wraps with a centered checkbox. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat, duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</span>
     </li>
-    <li role="option" tabindex="0" class="fd-list__item is-selected" aria-selected="true">
+    <li role="option" tabindex="0" class="fd-list__item is-selected fd-list__item--wrap fd-list__item--wrap-top-aligned" aria-selected="true">
         <div class="fd-form-item fd-list__form-item">
             <input type="checkbox" class="fd-checkbox" id="Ai4ez2" checked aria-labelledby="Az0bg2">
             <label tabindex="-1" class="fd-checkbox__label" for="Ai4ez2">
                 <span class="fd-checkbox__checkmark" aria-hidden="true"></span>
             </label>
         </div>
-        <span class="fd-list__title" id="Az0bg2">List item 2</span>
+        <span class="fd-list__title fd-list__title--wrap" id="Az0bg2">List item 2 that wraps with a top-aligned checkbox. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat, duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</span>
     </li>
     <li role="option" tabindex="0" class="fd-list__item">
         <div class="fd-form-item fd-list__form-item">
@@ -717,6 +723,68 @@ To be used in a popover containing sophisticated search results.
             </div>
         </div>
     </div>
+</div>
+```
+
+### List with long Title and Secondary Text
+
+By default, long title and secondary text is truncated with an ellipsis. Wrapping can be enabled at three levels:
+
+**List level** — add \
+
+```html
+<p class="fd-form-label">Default — truncation</p>
+<ul class="fd-list" role="list">
+    <li role="listitem" tabindex="0" class="fd-list__item">
+        <span class="fd-list__title">Annual Budget Review for Q3 and Q4 — please review the attached documents and provide your feedback before the end of the fiscal quarter to ensure timely processing.</span>
+        <span class="fd-list__secondary">Finance · Updated 2 hours ago by Michael Thompson, Senior Analyst, Global Finance Division</span>
+    </li>
+</ul>
+
+<p class="fd-form-label">List level — <code>fd-list--wrap</code></p>
+<ul class="fd-list fd-list--wrap" role="list">
+    <li role="listitem" tabindex="0" class="fd-list__item">
+        <span class="fd-list__title">All titles wrap at list level, Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</span>
+        <span class="fd-list__secondary">Secondary text wraps too, Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia saepe doloribus nulla aliquid soluta aperiam.</span>
+    </li>
+    <li role="listitem" tabindex="0" class="fd-list__item">
+        <span class="fd-list__title">Second item also wraps, Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span>
+    </li>
+</ul>
+
+<p class="fd-form-label">Item level — <code>fd-list__item--wrap</code> (collapsed and expanded states)</p>
+<!-- In the collapsed state fd-list__link--more is a right-aligned sibling so it
+stays visible when the title truncates. In the expanded state (fd-list__item--wrap
+applied) the title is fully visible so the Less link can sit inline at the end. -->
+<ul class="fd-list" role="list">
+    <li role="listitem" tabindex="0" class="fd-list__item">
+        <span class="fd-list__title">This item truncates normally, Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</span>
+    </li>
+    <li role="listitem" tabindex="0" class="fd-list__item">
+        <span class="fd-list__title">Collapsed — title truncated, Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</span>
+        <a href="#" class="fd-link fd-list__link--more" aria-expanded="false" tabindex="0"><span class="fd-link__content">More</span></a>
+    </li>
+    <li role="listitem" tabindex="0" class="fd-list__item fd-list__item--wrap">
+        <span class="fd-list__title">Expanded — fd-list__item--wrap applied, Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco. <a href="#" class="fd-link fd-list__link--more" aria-expanded="true" tabindex="0"><span class="fd-link__content">Less</span></a></span>
+        <span class="fd-list__secondary">Secondary text wraps too, Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia saepe doloribus nulla aliquid.</span>
+    </li>
+    <li role="listitem" tabindex="0" class="fd-list__item">
+        <span class="fd-list__title">This item truncates normally again, Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</span>
+    </li>
+</ul>
+
+<div>
+    <p class="fd-form-label">Element level — <code>fd-list__title--wrap</code> / <code>fd-list__secondary--wrap</code></p>
+    <ul class="fd-list" role="list">
+        <li role="listitem" tabindex="0" class="fd-list__item">
+            <span class="fd-list__title fd-list__title--wrap">Only the title wraps here, Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</span>
+            <span class="fd-list__secondary">Secondary still truncates, Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
+        </li>
+        <li role="listitem" tabindex="0" class="fd-list__item">
+            <span class="fd-list__title">Title still truncates, Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span>
+            <span class="fd-list__secondary fd-list__secondary--wrap">Only the secondary wraps here, Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</span>
+        </li>
+    </ul>
 </div>
 ```
 

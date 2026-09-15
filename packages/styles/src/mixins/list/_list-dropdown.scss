@@ -49,6 +49,25 @@ $fd-checkbox-dimensions: 1.375rem !default;
       text-overflow: ellipsis;
       margin-inline-end: 0;
 
+      &--wrap {
+        overflow: visible;
+        text-overflow: initial;
+        white-space: normal;
+
+        // fd-checkbox__label-container and fd-checkbox__text each carry their own
+        // overflow/white-space constraints and cannot be reached from the outer modifier
+        .fd-checkbox__label-container {
+          height: auto;
+          overflow: visible;
+          white-space: normal;
+        }
+
+        .fd-checkbox__text {
+          overflow: visible;
+          white-space: normal;
+        }
+      }
+
       &::before {
         margin-block: (1rem - $fd-checkbox-dimensions) * 0.5 (1rem - $fd-checkbox-dimensions) * 0.5;
       }

@@ -48,10 +48,10 @@ Represents the current user and includes:
 <ul>
     <li>Popover: Contains the entire User Menu content.</li>
     <li>Avatar: A key visual element displaying the user's profile picture. If no profile picture is available, it shows the user's initials. If the user is not signed in, an icon is displayed.</li>
-    <li>Title: A required UI element showing the user's First and Last names. To truncate long titles use the <code>.fd-user-menu\\_\\_user-name--truncate</code> modifier class.</li>
-    <li>Subtitle 1 (subline): An optional secondary identifier, such as user ID or email.</li>
-    <li>Subtitle 2 (subline): An optional identifier, such as role, position, organization, or unit.</li>
-    <li>Subtitle 3 (subline): An optional identifier, such as role, position, organization, or unit. To truncate long subtitles use the <code>.fd-user-menu\\_\\_subline--truncate</code> modifier class.</li>
+    <li>Title: A required UI element showing the user's First and Last names. By default, long titles are clamped to two lines. To allow the title to wrap across multiple lines, use the <code>.fd-user-menu\\_\\_user-name--wrap</code> modifier class.</li>
+    <li>Subtitle 1 (subline): An optional secondary identifier, such as user ID or email. By default, long subtitles are truncated. To allow a subtitle to wrap across multiple lines, use the <code>.fd-user-menu\\_\\_subline--wrap</code> modifier class.</li>
+    <li>Subtitle 2 (subline): An optional identifier, such as role, position, organization, or unit. To allow it to wrap across multiple lines, use the <code>.fd-user-menu\\_\\_subline--wrap</code> modifier class.</li>
+    <li>Subtitle 3 (subline): An optional identifier, such as role, position, organization, or unit. By default, long subtitles are truncated. To allow it to wrap across multiple lines, use the <code>.fd-user-menu\\_\\_subline--wrap</code> modifier class.</li>
     <li>Manage Account Button: Links to account settings.</li>
 </ul>
 
@@ -500,15 +500,15 @@ npm install fundamental-styles
                                                                                                 ></i>
                                                                                             </span>
                                                                                             <div class="fd-user-menu__header-container">
-                                                                                                <div class="fd-user-menu__user-name">
+                                                                                                <div class="fd-user-menu__user-name fd-user-menu__user-name--wrap">
                                                                                                     Lisa Miller Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa consequuntur
                                                                                                     cum voluptate iure tenetu!
                                                                                                 </div>
-                                                                                                <div class="fd-user-menu__subline">
+                                                                                                <div class="fd-user-menu__subline fd-user-menu__subline--wrap">
                                                                                                     lisa.miller@test.com Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem
                                                                                                     quod accusamus quis magnam, reprehenderit anim.
                                                                                                 </div>
-                                                                                                <div class="fd-user-menu__subline">
+                                                                                                <div class="fd-user-menu__subline fd-user-menu__subline--wrap">
                                                                                                     A very long subline 2 that can be displayed by wrapping behaviour in the subtitle like
                                                                                                     this.
                                                                                                 </div>
@@ -563,15 +563,15 @@ npm install fundamental-styles
                                                                                                                 aria-label="Jane Doe"
                                                                                                                 ></span>
                                                                                                                 <div class="fd-list__content">
-                                                                                                                    <div class="fd-list__title">
+                                                                                                                    <div class="fd-list__title fd-list__title--wrap">
                                                                                                                         Lisa Miller Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                                                                                                                         Autem minima ex distinctio dolores vitae!
                                                                                                                     </div>
-                                                                                                                    <div class="fd-list__subline">
+                                                                                                                    <div class="fd-list__subline fd-list__subline--wrap">
                                                                                                                         lisa.miller@test.com Lorem, ipsum dolor sit amet consectetur adipisicing
                                                                                                                         elit.
                                                                                                                     </div>
-                                                                                                                    <div class="fd-list__subline">
+                                                                                                                    <div class="fd-list__subline fd-list__subline--wrap">
                                                                                                                         Delivery Manager Lorem ipsum dolor sit amet consectetur adipisicing
                                                                                                                         elit.
                                                                                                                     </div>
@@ -1111,15 +1111,15 @@ Key CSS variables used by this component:
                                                                                                 ></i>
                                                                                             </span>
                                                                                             <div class="fd-user-menu__header-container">
-                                                                                                <div class="fd-user-menu__user-name">
+                                                                                                <div class="fd-user-menu__user-name fd-user-menu__user-name--wrap">
                                                                                                     Lisa Miller Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa consequuntur
                                                                                                     cum voluptate iure tenetu!
                                                                                                 </div>
-                                                                                                <div class="fd-user-menu__subline">
+                                                                                                <div class="fd-user-menu__subline fd-user-menu__subline--wrap">
                                                                                                     lisa.miller@test.com Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem
                                                                                                     quod accusamus quis magnam, reprehenderit anim.
                                                                                                 </div>
-                                                                                                <div class="fd-user-menu__subline">
+                                                                                                <div class="fd-user-menu__subline fd-user-menu__subline--wrap">
                                                                                                     A very long subline 2 that can be displayed by wrapping behaviour in the subtitle like
                                                                                                     this.
                                                                                                 </div>
@@ -1174,15 +1174,15 @@ Key CSS variables used by this component:
                                                                                                                 aria-label="Jane Doe"
                                                                                                                 ></span>
                                                                                                                 <div class="fd-list__content">
-                                                                                                                    <div class="fd-list__title">
+                                                                                                                    <div class="fd-list__title fd-list__title--wrap">
                                                                                                                         Lisa Miller Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                                                                                                                         Autem minima ex distinctio dolores vitae!
                                                                                                                     </div>
-                                                                                                                    <div class="fd-list__subline">
+                                                                                                                    <div class="fd-list__subline fd-list__subline--wrap">
                                                                                                                         lisa.miller@test.com Lorem, ipsum dolor sit amet consectetur adipisicing
                                                                                                                         elit.
                                                                                                                     </div>
-                                                                                                                    <div class="fd-list__subline">
+                                                                                                                    <div class="fd-list__subline fd-list__subline--wrap">
                                                                                                                         Delivery Manager Lorem ipsum dolor sit amet consectetur adipisicing
                                                                                                                         elit.
                                                                                                                     </div>

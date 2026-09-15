@@ -3,6 +3,7 @@ import collapsedExampleHtml from "./collapsed.example.html?raw";
 import expandedExampleHtml from "./expanded.example.html?raw";
 import expandedAddExampleHtml from "./expanded-add.example.html?raw";
 import floatingExampleHtml from "./floating.example.html?raw";
+import longTextExampleHtml from "./long-text.example.html?raw";
 import '../../../src/side-nav.scss';
 import '../../../src/navigation-list.scss';
 import '../../../src/button.scss';
@@ -85,6 +86,18 @@ Floating.parameters = {
   docs: {
     description: {
       story: `Additional to the fixed default style a floating variant of the Side Navigation is possible. This is always expanded.`
+    }
+  }
+};
+
+export const LongText = () => longTextExampleHtml;
+LongText.storyName = 'Long text';
+LongText.parameters = {
+  docs: {
+    description: {
+      story: `
+Navigation list items truncate long text by default. To enable wrapping, add the \`fd-navigation-list--wrap\` modifier class to the root navigation list element.
+`
     }
   }
 };
