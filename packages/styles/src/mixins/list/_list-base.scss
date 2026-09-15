@@ -488,11 +488,25 @@
     .#{$block}__content {
       padding-block: 0;
       min-height: auto;
+
+      &:not(:only-child) {
+        padding-inline-end: 0.75rem;
+      }
     }
     
     .#{$block}__title, .#{$block}__byline {
       white-space: normal;
       text-overflow: initial;
+    }
+
+    &.#{$block}--byline {
+      .#{$block}__item {
+        padding-block: 0.625rem 0.5625rem;
+      }
+
+      .#{$block}__byline {
+        padding-block-start: 0.5rem;
+      }
     }
   }
 
