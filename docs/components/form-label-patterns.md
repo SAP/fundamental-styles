@@ -1160,6 +1160,96 @@ The user can filter selectable options by typing in the input. A button with the
 </div>
 ```
 
+### Long text
+
+Multi input list option labels truncate long text by default. Add the \
+
+```html
+<div>
+    <p>Default (truncation)</p>
+    <ul aria-multiselectable="true" role="listbox" class="fd-list fd-list--multi-input">
+        <li class="fd-list__item is-selected" role="option">
+            <input type="checkbox" checked class="fd-checkbox fd-list__input" id="lt-mi-1">
+            <label class="fd-checkbox__label fd-list__label" for="lt-mi-1">
+                <span class="fd-checkbox__checkmark" aria-hidden="true"></span>
+                <div class="fd-checkbox__label-container">
+                    <span class="fd-checkbox__text">Forecast Category Override Reason</span>
+                </label>
+            </li>
+            <li class="fd-list__item is-selected" role="option">
+                <input type="checkbox" checked class="fd-checkbox fd-list__input" id="lt-mi-2">
+                <label class="fd-checkbox__label fd-list__label" for="lt-mi-2">
+                    <span class="fd-checkbox__checkmark" aria-hidden="true"></span>
+                    <div class="fd-checkbox__label-container">
+                        <span class="fd-checkbox__text">Purchase Order Approval Threshold Exceeded</span>
+                    </div>
+                </label>
+            </li>
+            <li class="fd-list__item" role="option">
+                <input type="checkbox" class="fd-checkbox fd-list__input" id="lt-mi-3">
+                <label class="fd-checkbox__label fd-list__label" for="lt-mi-3">
+                    <span class="fd-checkbox__checkmark" aria-hidden="true"></span>
+                    <div class="fd-checkbox__label-container">
+                        <span class="fd-checkbox__text">Customer Satisfaction Score Below Target</span>
+                    </div>
+                </label>
+            </li>
+            <li class="fd-list__item" role="option">
+                <input type="checkbox" class="fd-checkbox fd-list__input" id="lt-mi-4">
+                <label class="fd-checkbox__label fd-list__label" for="lt-mi-4">
+                    <span class="fd-checkbox__checkmark" aria-hidden="true"></span>
+                    <div class="fd-checkbox__label-container">
+                        <span class="fd-checkbox__text">Delivery Confirmation Required</span>
+                    </div>
+                </label>
+            </li>
+        </ul>
+    </div>
+
+    <div>
+        <p>With <code>fd-list__label--wrap</code></p>
+        <ul aria-multiselectable="true" role="listbox" class="fd-list fd-list--multi-input">
+            <li class="fd-list__item is-selected" role="option">
+                <input type="checkbox" checked class="fd-checkbox fd-list__input" id="lt-mi-w-1">
+                <label class="fd-checkbox__label fd-list__label fd-list__label--wrap" for="lt-mi-w-1">
+                    <span class="fd-checkbox__checkmark" aria-hidden="true"></span>
+                    <div class="fd-checkbox__label-container">
+                        <span class="fd-checkbox__text">Forecast Category Override Reason</span>
+                    </div>
+                </label>
+            </li>
+            <li class="fd-list__item is-selected" role="option">
+                <input type="checkbox" checked class="fd-checkbox fd-list__input" id="lt-mi-w-2">
+                <label class="fd-checkbox__label fd-list__label fd-list__label--wrap" for="lt-mi-w-2">
+                    <span class="fd-checkbox__checkmark" aria-hidden="true"></span>
+                    <div class="fd-checkbox__label-container">
+                        <span class="fd-checkbox__text">Purchase Order Approval Threshold Exceeded</span>
+                    </div>
+                </label>
+            </li>
+            <li class="fd-list__item" role="option">
+                <input type="checkbox" class="fd-checkbox fd-list__input" id="lt-mi-w-3">
+                <label class="fd-checkbox__label fd-list__label fd-list__label--wrap" for="lt-mi-w-3">
+                    <span class="fd-checkbox__checkmark" aria-hidden="true"></span>
+                    <div class="fd-checkbox__label-container">
+                        <span class="fd-checkbox__text">Customer Satisfaction Score Below Target</span>
+                    </div>
+                </label>
+            </li>
+            <li class="fd-list__item" role="option">
+                <input type="checkbox" class="fd-checkbox fd-list__input" id="lt-mi-w-4">
+                <label class="fd-checkbox__label fd-list__label fd-list__label--wrap" for="lt-mi-w-4">
+                    <span class="fd-checkbox__checkmark" aria-hidden="true"></span>
+                    <div class="fd-checkbox__label-container">
+                        <span class="fd-checkbox__text">Delivery Confirmation Required</span>
+                    </div>
+                </label>
+            </li>
+        </ul>
+    </div>
+</div>
+```
+
 ## Accessibility
 
 - Use semantic HTML elements where appropriate

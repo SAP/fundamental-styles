@@ -144,6 +144,7 @@ Key CSS variables used by this component:
 - `--inline`
 - `--no-border`
 - `--no-padding`
+- `--sapElement_Compact_LineHeight`
 - `--sapElement_LineHeight`
 - `--sapFontHeaderFamily`
 - `--sapGroup_TitleBackground`

@@ -591,6 +591,78 @@ So instead of using popover and dropdown, it should be wrapped in \
     </section>
 ```
 
+### Long text
+
+Combobox dropdown list items wrap long option text by default (\
+
+```html
+<div class="fd-form-item">
+    <label for="lt-combobox-wrap" class="fd-form-label">Configuration template</label>
+    <div class="fd-popover">
+        <div class="fd-popover__control">
+            <div class="fd-input-group fd-input-group--control">
+                <input type="text" class="fd-input fd-input-group__input" id="lt-combobox-wrap" value="Database Connectivity Protocol Configuration for Production Environment">
+                <span class="fd-input-group__addon fd-input-group__addon--button">
+                    <button aria-label="Show options" aria-controls="lt-combobox-wrap-body" aria-expanded="true" aria-haspopup="true" class="fd-input-group__button fd-button fd-button--transparent">
+                        <i class="sap-icon--navigation-down-arrow"></i>
+                    </button>
+                </span>
+            </div>
+            <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--dropdown fd-popover__body--dropdown-fill" aria-hidden="false" id="lt-combobox-wrap-body">
+                <ul aria-label="Configuration template options" class="fd-list fd-list--dropdown" role="listbox">
+                    <li role="option" tabindex="0" class="fd-list__item is-selected">
+                        <span class="fd-list__title">Database Connectivity Protocol Configuration for Production Environment Cluster</span>
+                    </li>
+                    <li role="option" tabindex="0" class="fd-list__item">
+                        <span class="fd-list__title">Enterprise Resource Planning System Integration with Legacy SAP Backend Services</span>
+                    </li>
+                    <li role="option" tabindex="0" class="fd-list__item">
+                        <span class="fd-list__title">Supply Chain Management Workflow Automation and Real-Time Inventory Synchronisation</span>
+                    </li>
+                    <li role="option" tabindex="0" class="fd-list__item">
+                        <span class="fd-list__title">Customer Relationship Management Analytics Dashboard Configuration Template</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <p>Default — wraps</p>
+    </div>
+
+    <div class="fd-form-item">
+        <label for="lt-combobox-nowrap" class="fd-form-label">Configuration template</label>
+        <div class="fd-popover">
+            <div class="fd-popover__control">
+                <div class="fd-input-group fd-input-group--control">
+                    <input type="text" class="fd-input fd-input-group__input" id="lt-combobox-nowrap" value="Database Connectivity Protocol Configuration for Production Environment">
+                    <span class="fd-input-group__addon fd-input-group__addon--button">
+                        <button aria-label="Show options" aria-controls="lt-combobox-nowrap-body" aria-expanded="true" aria-haspopup="true" class="fd-input-group__button fd-button fd-button--transparent">
+                            <i class="sap-icon--navigation-down-arrow"></i>
+                        </button>
+                    </span>
+                </div>
+            </div>
+            <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--dropdown fd-popover__body--dropdown-fill" aria-hidden="false" id="lt-combobox-nowrap-body">
+                <ul aria-label="Configuration template options" class="fd-list fd-list--dropdown" role="listbox">
+                    <li role="option" tabindex="0" class="fd-list__item is-selected">
+                        <span class="fd-list__title fd-list__title--no-wrap">Database Connectivity Protocol Configuration for Production Environment Cluster</span>
+                    </li>
+                    <li role="option" tabindex="0" class="fd-list__item">
+                        <span class="fd-list__title fd-list__title--no-wrap">Enterprise Resource Planning System Integration with Legacy SAP Backend Services</span>
+                    </li>
+                    <li role="option" tabindex="0" class="fd-list__item">
+                        <span class="fd-list__title fd-list__title--no-wrap">Supply Chain Management Workflow Automation and Real-Time Inventory Synchronisation</span>
+                    </li>
+                    <li role="option" tabindex="0" class="fd-list__item">
+                        <span class="fd-list__title fd-list__title--no-wrap">Customer Relationship Management Analytics Dashboard Configuration Template</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <p>With <code>fd-list__title--no-wrap</code> (opt-out)</p>
+    </div>
+</div>
+```
+
 ## Accessibility
 
 - Use semantic HTML elements where appropriate

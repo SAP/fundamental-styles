@@ -574,6 +574,74 @@ To clip the content and add a vertical scroll to the Vertical Navigation add the
     </div>
 ```
 
+### Long text
+
+Navigation list items truncate long text by default. Add the \
+
+```html
+<div>
+    <p>Default (truncation)</p>
+    <div class="fd-vertical-nav">
+        <nav class="fd-vertical-nav__main-navigation" aria-label="Main Menu">
+            <ul class="fd-list" aria-label="Main Menu List">
+                <li class="fd-list__navigation-item" tabindex="0">
+                    <i role="presentation" class="fd-list__navigation-item-icon sap-icon--home"></i>
+                    <span class="fd-list__navigation-item-text">Enterprise Resource Planning Configuration and Dashboard Overview</span>
+                </li>
+                <li class="fd-list__navigation-item fd-list__navigation-item--expandable is-expanded">
+                    <i role="presentation" class="fd-list__navigation-item-icon sap-icon--calendar"></i>
+                    <span class="fd-list__navigation-item-text">Human Capital Management and Payroll Processing</span>
+                    <button class="fd-list__navigation-item-arrow sap-icon--navigation-down-arrow is-expanded" aria-label="Expand submenu"></button>
+                    <ul class="fd-list">
+                        <li class="fd-list__navigation-item" tabindex="0">
+                            <span class="fd-list__navigation-item-text">Employee Performance and Development Tracking</span>
+                        </li>
+                        <li class="fd-list__navigation-item" tabindex="0">
+                            <span class="fd-list__navigation-item-text">Payroll and Compensation Management for All Regions</span>
+                        </li>
+                    </ul>
+                </li>
+                <li class="fd-list__navigation-item" tabindex="0">
+                    <i role="presentation" class="fd-list__navigation-item-icon sap-icon--shipping-status"></i>
+                    <span class="fd-list__navigation-item-text">Supply Chain and Logistics Management</span>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <div>
+        <p>With <code>fd-list--wrap</code></p>
+        <div class="fd-vertical-nav">
+            <nav class="fd-vertical-nav__main-navigation" aria-label="Main Menu">
+                <ul class="fd-list fd-list--wrap" aria-label="Main Menu List">
+                    <li class="fd-list__navigation-item" tabindex="0">
+                        <i role="presentation" class="fd-list__navigation-item-icon sap-icon--home"></i>
+                        <span class="fd-list__navigation-item-text">Enterprise Resource Planning Configuration and Dashboard Overview</span>
+                    </li>
+                    <li class="fd-list__navigation-item fd-list__navigation-item--expandable is-expanded">
+                        <i role="presentation" class="fd-list__navigation-item-icon sap-icon--calendar"></i>
+                        <span class="fd-list__navigation-item-text">Human Capital Management and Payroll Processing</span>
+                        <button class="fd-list__navigation-item-arrow sap-icon--navigation-down-arrow is-expanded" aria-label="Expand submenu"></button>
+                        <ul class="fd-list fd-list--wrap">
+                            <li class="fd-list__navigation-item" tabindex="0">
+                                <span class="fd-list__navigation-item-text">Employee Performance and Development Tracking</span>
+                            </li>
+                            <li class="fd-list__navigation-item" tabindex="0">
+                                <span class="fd-list__navigation-item-text">Payroll and Compensation Management for All Regions</span>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="fd-list__navigation-item" tabindex="0">
+                        <i role="presentation" class="fd-list__navigation-item-icon sap-icon--shipping-status"></i>
+                        <span class="fd-list__navigation-item-text">Supply Chain and Logistics Management</span>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</div>
+```
+
 ## Accessibility
 
 - Use semantic HTML elements where appropriate

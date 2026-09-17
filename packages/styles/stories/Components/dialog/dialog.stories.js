@@ -7,6 +7,7 @@ import resizableExampleHtml from "./resizable.example.html?raw";
 import sizesExampleHtml from "./sizes.example.html?raw";
 import defaultDialogExampleHtml from "./default-dialog.example.html?raw";
 import deviceSpecificationsExampleHtml from "./device-specifications.example.html?raw";
+import longTextListExampleHtml from "./long-text-list.example.html?raw";
 import '../../../src/dialog.scss';
 import '../../../src/input-group.scss';
 import '../../../src/icon.scss';
@@ -182,6 +183,18 @@ TabletAndHybridDeviceSpecification.parameters = {
   docs: {
     description: {
       story: 'To properly support resizing for all input methods, the optional resize handle is context-dependent. Depending on the device, a full screen button is also shown for touch interaction.'
+    }
+  }
+};
+
+export const LongTextList = () => longTextListExampleHtml;
+LongTextList.storyName = 'Long text list';
+LongTextList.parameters = {
+  docs: {
+    description: {
+      story: `
+Dialogs can contain lists with long item text. List items truncate text by default. Add the \`fd-list--wrap\` modifier class to the \`fd-list\` element, and \`fd-list__item--wrap\` to each item, to enable text wrapping within the dialog body.
+`
     }
   }
 };

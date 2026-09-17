@@ -155,6 +155,7 @@ npm install fundamental-styles
 | `fd-tree--independent-multi-selection` | Style variant |
 | `fd-tree--no-border` | Style variant |
 | `fd-tree--no-data` | If there is no data to display, add the \ |
+| `fd-tree--wrap` | Tree items truncate long text by default |
 
 ## States
 
@@ -1010,6 +1011,71 @@ If there is no data to display, add the \
         <div class="fd-tree__item-container" tabindex="0">
             <div class="fd-tree__content">
                 <span class="fd-tree__text">No data</span>
+            </div>
+        </div>
+    </li>
+</ul>
+```
+
+### Long text
+
+Tree items truncate long text by default. To enable text wrapping on all items, add the \
+
+```html
+<ul role="tree" aria-label="Financial Reports" id="LT_TREE1L1" class="fd-tree expanded-level-1">
+    <li role="treeitem" aria-level="1" aria-expanded="true" class="fd-tree__item">
+        <div class="fd-tree__item-container" tabindex="0">
+            <span class="fd-tree__expander is-expanded" aria-controls="LT_TREE1L2" aria-haspopup="true" aria-label="Expand level 2" aria-expanded="true">
+                <i class="fd-tree__icon sap-icon--navigation-down-arrow" role="presentation"></i>
+            </span>
+            <div class="fd-tree__content">
+                <span class="fd-tree__text">Annual Financial Report 2024 — Consolidated Balance Sheet, Income Statement and Statement of Cash Flows for the Fiscal Year Ended December 31, 2024 including all subsidiaries and joint ventures</span>
+            </div>
+        </div>
+        <ul role="group" class="fd-tree" id="LT_TREE1L2" aria-hidden="false">
+            <li role="treeitem" aria-level="2" class="fd-tree__item">
+                <div class="fd-tree__item-container" tabindex="0">
+                    <div class="fd-tree__content">
+                        <span class="fd-tree__text">Revenue from Contracts with Customers — Product Sales, Multi-Year Service Agreements, Software Licensing Fees and Support Renewals consolidated across all Business Units and Regions</span>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </li>
+    <li role="treeitem" aria-level="1" class="fd-tree__item">
+        <div class="fd-tree__item-container" tabindex="0">
+            <div class="fd-tree__content">
+                <span class="fd-tree__text">Capital Expenditure and Investment Plan Q1–Q4 2025 — Infrastructure Modernisation, Data Centre Consolidation and Digital Transformation Initiatives across all regions</span>
+            </div>
+        </div>
+    </li>
+</ul>
+
+<h4>With fd-tree--wrap</h4>
+<ul role="tree" aria-label="Financial Reports with wrapping" id="LT_TREE2L1" class="fd-tree fd-tree--wrap expanded-level-1">
+    <li role="treeitem" aria-level="1" aria-expanded="true" class="fd-tree__item">
+        <div class="fd-tree__item-container" tabindex="0">
+            <span class="fd-tree__expander is-expanded" aria-controls="LT_TREE2L2" aria-haspopup="true" aria-label="Expand level 2" aria-expanded="true">
+                <i class="fd-tree__icon sap-icon--navigation-down-arrow" role="presentation"></i>
+            </span>
+            <div class="fd-tree__content">
+                <span class="fd-tree__text">Annual Financial Report 2024 — Consolidated Balance Sheet, Income Statement and Statement of Cash Flows for the Fiscal Year Ended December 31, 2024 including all subsidiaries and joint ventures</span>
+            </div>
+        </div>
+        <ul role="group" class="fd-tree" id="LT_TREE2L2" aria-hidden="false">
+            <li role="treeitem" aria-level="2" class="fd-tree__item">
+                <div class="fd-tree__item-container" tabindex="0">
+                    <div class="fd-tree__content">
+                        <span class="fd-tree__text">Revenue from Contracts with Customers — Product Sales, Multi-Year Service Agreements, Software Licensing Fees and Support Renewals consolidated across all Business Units and Regions Revenue from Contracts with Customers — Product Sales, Multi-Year Service Agreements, Software Licensing Fees and Support Renewals consolidated across all Business Units and Regions</span>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </li>
+    <li role="treeitem" aria-level="1" class="fd-tree__item">
+        <div class="fd-tree__item-container" tabindex="0">
+            <div class="fd-tree__content">
+                <span class="fd-tree__text">Capital Expenditure and Investment Plan Q1–Q4 2025 — Infrastructure Modernisation, Data Centre Consolidation and Digital Transformation Initiatives across all regions</span>
             </div>
         </div>
     </li>

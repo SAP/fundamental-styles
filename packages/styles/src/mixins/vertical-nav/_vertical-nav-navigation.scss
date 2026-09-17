@@ -344,6 +344,34 @@ $fd-list-second-level-popover-position: 3.25rem !default;
         border-bottom: var(--fdVerticalNav_Item_Border_Top_Bottom);
       }
     }
+    
+    &--wrap {
+      .#{$blockList}__navigation-item {
+        height: auto;
+        min-height: $fd-list-navigation-item-height;
+        padding-block: 0.875rem;
+      }
+
+      .#{$blockList}__navigation-item-text {
+        @include fd-wrap();
+        
+        line-height: normal;
+      }
+
+      .#{$blockList}__navigation-item.is-expanded {
+        padding-block: 0.875rem 0;
+      }
+
+      .#{$blockList}__navigation-item.is-expanded .#{$blockList} {
+        margin-block-start: 0.5rem;
+      }
+
+      .#{$blockList}__navigation-item.is-expanded .#{$blockList}__navigation-item {
+        .#{$blockList}__navigation-item-text {
+          line-height: normal;
+        }
+      }
+    }
   }
 
   .#{$blockList}__navigation-item-icon + .#{$blockList}__navigation-item-text + .#{$blockList}__navigation-item-arrow + .#{$blockList} {

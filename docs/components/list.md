@@ -1271,6 +1271,106 @@ Object list items can be displayed without borders. To display a borderless list
     </div>
 ```
 
+### Long text
+
+Object list items truncate long text by default. Add the \
+
+```html
+<p>Default (truncation)</p>
+<ul class="fd-list fd-object-list" role="list">
+    <li role="listitem" tabindex="0" class="fd-list__item fd-object-list__item">
+        <div class="fd-object-list__container">
+            <div class="fd-object-list__intro">
+                Optional additional context about this sales order line item originating from the global procurement and supply chain management system
+                <div class="fd-object-list__header">
+                    <div class="fd-object-list__header-left">
+                        <div class="fd-object-identifier fd-object-list__object-identifier">
+                            <p class="fd-object-identifier__title">
+                                Dell XPS 15 Laptop with 11th Gen Intel Core i7 Processor and NVIDIA GeForce RTX Graphics
+                            </p>
+                        </div>
+                        <div class="fd-object-list__header-right">
+                            <span class="fd-object-number fd-object-list__object-number">
+                                <span class="fd-object-number__text">1,299.00</span>
+                                <span class="fd-object-number__unit">USD</span>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="fd-object-list__content">
+                        <div class="fd-object-list__row">
+                            <div class="fd-object-list__row-left">
+                                <div class="fd-object-list__object-attribute">
+                                    Enterprise Resource Planning Product Category
+                                </div>
+                            </div>
+                            <div class="fd-object-list__row-right">
+                                <span class="fd-object-status fd-object-status--critical">
+                                    <span class="fd-object-status__text">Below Minimum Required Inventory Level for Restocking</span>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="fd-object-list__row">
+                            <div class="fd-object-list__row-left">
+                                <div class="fd-object-list__object-attribute">
+                                    Country of Origin and Manufacturing Facility
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <p>With <code>fd-object-list--wrap</code></p>
+    <ul class="fd-list fd-object-list fd-object-list--wrap" role="list">
+        <li role="listitem" tabindex="0" class="fd-list__item fd-object-list__item">
+            <div class="fd-object-list__container">
+                <div class="fd-object-list__intro">
+                    Optional additional context about this sales order line item originating from the global procurement and supply chain management system
+                    <div class="fd-object-list__header">
+                        <div class="fd-object-list__header-left">
+                            <div class="fd-object-identifier fd-object-list__object-identifier">
+                                <p class="fd-object-identifier__title">
+                                    Dell XPS 15 Laptop with 11th Gen Intel Core i7 Processor and NVIDIA GeForce RTX Graphics
+                                </p>
+                            </div>
+                        </div>
+                        <div class="fd-object-list__header-right">
+                            <span class="fd-object-number fd-object-list__object-number">
+                                <span class="fd-object-number__text">1,299.00</span>
+                                <span class="fd-object-number__unit">USD</span>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="fd-object-list__content">
+                        <div class="fd-object-list__row">
+                            <div class="fd-object-list__row-left">
+                                <div class="fd-object-list__object-attribute">
+                                    Enterprise Resource Planning Product Category
+                                </div>
+                            </div>
+                            <div class="fd-object-list__row-right">
+                                <span class="fd-object-status fd-object-status--critical">
+                                    <span class="fd-object-status__text">Below Minimum Required Inventory Level for Restocking</span>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="fd-object-list__row">
+                            <div class="fd-object-list__row-left">
+                                <div class="fd-object-list__object-attribute">
+                                    Country of Origin and Manufacturing Facility
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+```
+
 ## Accessibility
 
 - Use semantic HTML elements where appropriate

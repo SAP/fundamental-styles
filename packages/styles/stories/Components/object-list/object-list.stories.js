@@ -3,6 +3,7 @@ import selectionWithNavigationExampleHtml from "./selection-with-navigation.exam
 import selectionExampleHtml from "./selection.example.html?raw";
 import navigationExampleHtml from "./navigation.example.html?raw";
 import standartExampleHtml from "./standart.example.html?raw";
+import longTextExampleHtml from "./long-text.example.html?raw";
 import '../../../src/list.scss';
 import '../../../src/icon.scss';
 import '../../../src/object-identifier.scss';
@@ -112,6 +113,18 @@ Borderless.parameters = {
   docs: {
     description: {
       story: 'Object list items can be displayed without borders. To display a borderless list, add the `fd-list--no-border` modifier class to the list element.'
+    }
+  }
+};
+
+export const LongText = () => longTextExampleHtml;
+LongText.storyName = 'Long text';
+LongText.parameters = {
+  docs: {
+    description: {
+      story: `
+Object list items truncate long text by default. Add the \`fd-object-list--wrap\` modifier class to the \`fd-object-list\` element to enable text wrapping for intro text, attributes, and the object identifier title.
+`
     }
   }
 };
