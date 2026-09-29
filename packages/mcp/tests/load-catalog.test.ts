@@ -5,7 +5,7 @@ describe('loadCatalog', () => {
     const catalog = loadCatalog();
 
     it('should load components from component-catalog.json', () => {
-        expect(catalog.components.length).toBeGreaterThan(100);
+        expect(catalog.components.map((component) => component.id)).toEqual(['button', 'table', 'dialog']);
     });
 
     it('should have version info', () => {
@@ -101,9 +101,7 @@ describe('readDataFile', () => {
 describe('schemas', () => {
     it('should list available schemas', () => {
         const schemas = listSchemas();
-        expect(schemas.length).toBeGreaterThan(50);
-        expect(schemas).toContain('button');
-        expect(schemas).toContain('dialog');
+        expect(schemas.sort()).toEqual(['button', 'dialog', 'table']);
     });
 
     it('should read a component schema', () => {

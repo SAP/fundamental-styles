@@ -3,11 +3,14 @@
     "$schema": "../../node_modules/nx/schemas/project-schema.json",
     "sourceRoot": "packages/storybook/src",
     "projectType": "library",
+    "tags": [],
     "targets": {
-        "lint": {
-            "executor": "@nx/eslint:lint",
-            "outputs": ["{options.outputFile}"]
+        "typecheck": {
+            "executor": "nx:run-commands",
+            "options": {
+                "cwd": "packages/storybook",
+                "command": "tsc --project tsconfig.json --noEmit"
+            }
         }
-    },
-    "tags": []
+    }
 }

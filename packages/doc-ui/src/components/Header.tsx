@@ -18,16 +18,23 @@ const HeaderSectionButton = styled.div(({ theme }) => ({
 
 const Header = () => {
     const { storyPackage, storyContext } = useContext(SAPContext);
-    const isVisualStory = storyContext?.parameters['fileName']?.match(/\.visual\.ts$/);
+    const isVisualStory = storyContext?.['parameters']['fileName']?.match(/\.visual\.ts$/);
 
     return (
         <header className="fddocs-header">
-            <Versions/>
+            <Versions />
             <IfBlock condition={!isVisualStory}>
-                <HeaderSectionButton><DirectionalitySelect /></HeaderSectionButton>
-                <HeaderSectionButton><ContentDensitySelect /></HeaderSectionButton>
-                {(storyPackage?.themes || []).length > 0 &&
-                    <HeaderSectionButton><ThemeSelect /></HeaderSectionButton>}
+                <HeaderSectionButton>
+                    <DirectionalitySelect />
+                </HeaderSectionButton>
+                <HeaderSectionButton>
+                    <ContentDensitySelect />
+                </HeaderSectionButton>
+                {(storyPackage?.themes || []).length > 0 && (
+                    <HeaderSectionButton>
+                        <ThemeSelect />
+                    </HeaderSectionButton>
+                )}
             </IfBlock>
             <GithubLink />
         </header>

@@ -3,6 +3,7 @@
     "$schema": "../../node_modules/nx/schemas/project-schema.json",
     "sourceRoot": "packages/cx/src",
     "projectType": "library",
+    "tags": [],
     "targets": {
         "build": {
             "executor": "workspace-plugins:build",
@@ -20,30 +21,21 @@
         },
         "sync-entry": {
             "executor": "workspace-plugins:sync-components",
+            "dependsOn": ["workspace-plugins:build"],
+            "outputs": ["{options.entry}"],
             "options": {
                 "entry": "{projectRoot}/src/fundamental-cx.scss",
-                "include": [
-                    "{projectRoot}/src/*.scss",
-                    "{projectRoot}/src/btp/*.scss"
-                ],
-                "exclude": [
-                    "{options.entry}",
-                    "{projectRoot}/src/**/_*.scss"
-                ]
-            },
-            "outputs": ["{options.entry}"]
+                "include": ["{projectRoot}/src/*.scss", "{projectRoot}/src/btp/*.scss"],
+                "exclude": ["{options.entry}", "{projectRoot}/src/**/_*.scss"]
+            }
         },
         "build-visual": {
             "executor": "workspace-plugins:visual-stories",
+            "outputs": ["{workspaceRoot}/stories/Visuals/cx"],
             "options": {
                 "themes": ["sap_horizon_hcb", "sap_horizon"],
                 "excludedStoriesKinds": ["^(Helpers|Dev)"]
-            },
-            "outputs": ["{workspaceRoot}/stories/Visuals/cx"]
-        },
-        "lint": {
-            "executor": "@nx/eslint:lint",
-            "outputs": ["{options.outputFile}"]
+            }
         },
         "stylelint": {
             "executor": "nx-stylelint:lint",
@@ -52,6 +44,5 @@
                 "lintFilePatterns": ["packages/cx/**/*.scss"]
             }
         }
-    },
-    "tags": []
+    }
 }

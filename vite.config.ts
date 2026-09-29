@@ -1,10 +1,9 @@
 // @ts-check - Use tsconfig.config.json for this file
-/// <reference types="vitest/config" />
 import { defineConfig } from 'vitest/config';
-import tsconfigPaths from 'vite-tsconfig-paths'
-import react from '@vitejs/plugin-react'
+import tsconfigPaths from 'vite-tsconfig-paths';
+import react from '@vitejs/plugin-react';
 
-import {resolve, join} from "path";
+import { resolve, join } from 'path';
 
 const packagesAliases = [
     {
@@ -50,13 +49,14 @@ const packagesAliases = [
 ];
 
 export default defineConfig({
-    plugins: [tsconfigPaths({
-        root: __dirname,
-    }), react()],
+    plugins: [
+        tsconfigPaths({
+            root: __dirname
+        }),
+        react()
+    ],
     resolve: {
-        alias: [
-            ...packagesAliases
-        ]
+        alias: [...packagesAliases]
     },
     css: {},
     build: {
@@ -65,11 +65,9 @@ export default defineConfig({
         reportCompressedSize: true,
         sourcemap: false
     },
-    assetsInclude: [
-        '**/*.md'
-    ],
+    assetsInclude: ['**/*.md'],
     test: {
         environment: 'jsdom',
         setupFiles: [resolve(join(__dirname, 'vitest.setup.ts'))]
-    },
+    }
 });

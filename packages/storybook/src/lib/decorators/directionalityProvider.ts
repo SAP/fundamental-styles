@@ -1,10 +1,10 @@
-import {makeDecorator} from 'storybook/preview-api';
+import { makeDecorator } from 'storybook/preview-api';
 
 export const withDirectionality = makeDecorator({
     name: 'directionalityProvider',
     parameterName: 'directionality',
     wrapper: (storyFn, context) => {
-        const directionality = context?.globals?.directionality || 'ltr';
+        const directionality = context?.globals?.['directionality'] || 'ltr';
         const story = storyFn(context);
         if (typeof story === 'string') {
             // visual stories return HTMLElements, whereas ordinary stories return html strings

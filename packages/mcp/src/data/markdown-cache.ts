@@ -15,7 +15,7 @@ export class MarkdownDocCache {
     private readonly docsPath: string;
     private availableIds: Set<string> | null = null;
 
-    constructor(maxSize: number = 50) {
+    constructor(maxSize = 50) {
         this.maxSize = maxSize;
         this.docsPath = this.resolveMarkdownDocsPath();
     }
@@ -225,7 +225,7 @@ export class MarkdownDocCache {
         return {
             size: this.cache.size,
             maxSize: this.maxSize,
-            hitRate: this.cache.size > 0 ? (this.accessOrder.length / this.cache.size) : 0,
+            hitRate: this.cache.size > 0 ? this.accessOrder.length / this.cache.size : 0,
             totalComponents: this.getAvailableIds().size
         };
     }

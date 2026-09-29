@@ -31,6 +31,7 @@ package-lock.json
 
 .nx/cache
 .nx/workspace-data
+.nx/migrate-runs
 .cursor/rules/nx-rules.mdc
 .github/instructions/nx.instructions.md
 .claude/worktrees

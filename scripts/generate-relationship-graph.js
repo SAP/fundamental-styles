@@ -123,6 +123,7 @@ function findSharedVariables(components) {
             from: componentIds[i],
             to: componentIds[j],
             type: 'shares-styling',
+            bidirectional: true,
             sharedVariables: [variable],
           });
         }
@@ -159,6 +160,7 @@ function findSimilarComponents(components) {
             from: componentIds[i],
             to: componentIds[j],
             type: 'similar',
+            bidirectional: true,
             reason: category,
           });
         }

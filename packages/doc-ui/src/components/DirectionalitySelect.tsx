@@ -1,19 +1,21 @@
-import {SAPContext} from "../contexts/SAPContext";
-import {useContext, useMemo} from "react";
-import {IconButton, TooltipLinkList, WithTooltip} from "storybook/internal/components";
-import IconButtonLabel from "./IconButtonLabel";
-import { ParagraphIcon } from "@storybook/icons";
+import { SAPContext } from '../contexts/SAPContext';
+import { useContext, useMemo } from 'react';
+import { IconButton, TooltipLinkList, WithTooltip } from 'storybook/internal/components';
+import IconButtonLabel from './IconButtonLabel';
+import { ParagraphIcon } from '@storybook/icons';
 
 export default () => {
     const sapContext = useContext(SAPContext);
-    const currentDirectionality = useMemo(() => sapContext.directionalities.find(directionality => directionality.value === sapContext.directionality), [sapContext.directionalities, sapContext.directionality]);
+    const currentDirectionality = useMemo(
+        () => sapContext.directionalities.find((directionality) => directionality.value === sapContext.directionality),
+        [sapContext.directionalities, sapContext.directionality]
+    );
     return (
         <WithTooltip
             placement="top"
             trigger="click"
-            closeOnClick
-            tooltip={({onHide}) => {
-                const directionalities = sapContext.directionalities.map(dir => {
+            tooltip={({ onHide }) => {
+                const directionalities = sapContext.directionalities.map((dir) => {
                     return {
                         id: dir.value,
                         title: dir.title,
@@ -22,9 +24,9 @@ export default () => {
                             sapContext.setDirectionality(dir.value);
                             onHide();
                         }
-                    }
+                    };
                 });
-                return <TooltipLinkList links={directionalities}/>;
+                return <TooltipLinkList links={directionalities} />;
             }}
         >
             <IconButton
@@ -35,7 +37,7 @@ export default () => {
                 autoFocus={false}
                 rev={undefined}
             >
-                <ParagraphIcon/>
+                <ParagraphIcon />
                 {!!currentDirectionality && <IconButtonLabel>{currentDirectionality.title}</IconButtonLabel>}
             </IconButton>
         </WithTooltip>

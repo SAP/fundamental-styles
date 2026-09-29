@@ -1,0 +1,75 @@
+{
+    "version": "test-fixture",
+    "packages": {
+        "fundamental-styles": {
+            "name": "fundamental-styles",
+            "description": "Fixture package",
+            "npmPackage": "fundamental-styles",
+            "components": [
+                {
+                    "id": "button",
+                    "name": "Button",
+                    "description": "A button triggers an action.",
+                    "baseClass": "fd-button",
+                    "cssImport": "button",
+                    "storybookUrl": "button",
+                    "modifiers": [
+                        { "class": "fd-button--emphasized", "description": "Emphasized button" },
+                        { "class": "fd-button--transparent", "description": "Transparent button" }
+                    ],
+                    "elements": [],
+                    "variables": [],
+                    "tags": [],
+                    "examples": [],
+                    "category": "Buttons",
+                    "subcategory": null,
+                    "useCases": [],
+                    "avoidWhen": [],
+                    "accessibility": { "role": "button", "ariaAttributes": [] },
+                    "relatedComponents": [],
+                    "dependencies": []
+                },
+                {
+                    "id": "table",
+                    "name": "Table",
+                    "description": "A table presents structured data.",
+                    "baseClass": "fd-table",
+                    "cssImport": "table",
+                    "storybookUrl": "table",
+                    "modifiers": [],
+                    "elements": [],
+                    "variables": [],
+                    "tags": [],
+                    "examples": [],
+                    "category": "Tables",
+                    "subcategory": null,
+                    "useCases": [],
+                    "avoidWhen": [],
+                    "accessibility": { "role": "table", "ariaAttributes": [] },
+                    "relatedComponents": [],
+                    "dependencies": []
+                },
+                {
+                    "id": "dialog",
+                    "name": "Dialog",
+                    "description": "A dialog presents focused content.",
+                    "baseClass": "fd-dialog",
+                    "cssImport": "dialog",
+                    "storybookUrl": "dialog",
+                    "modifiers": [],
+                    "elements": [],
+                    "variables": [],
+                    "tags": [],
+                    "examples": [],
+                    "category": "Overlays",
+                    "subcategory": null,
+                    "useCases": [],
+                    "avoidWhen": [],
+                    "accessibility": { "role": "dialog", "ariaAttributes": [] },
+                    "relatedComponents": [],
+                    "dependencies": []
+                }
+            ]
+        }
+    }
+}

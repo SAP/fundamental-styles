@@ -42,7 +42,7 @@ let markdownCache: MarkdownDocCache | null = null;
  * Get or create the markdown cache instance
  * @param maxSize Maximum number of docs to keep in cache (default: 50)
  */
-export function getMarkdownCache(maxSize: number = 50): MarkdownDocCache {
+export function getMarkdownCache(maxSize = 50): MarkdownDocCache {
     if (!markdownCache) {
         markdownCache = new MarkdownDocCache(maxSize);
     }
@@ -147,7 +147,9 @@ function extractExamples(body: string): Array<{ title: string; html: string; des
  * The new cache-based approach uses ~5MB.
  */
 export function loadMarkdownDocs(): Map<string, ComponentMarkdownDoc> {
-    console.warn('Warning: loadMarkdownDocs() loads all docs eagerly. Consider using getMarkdownCache() for lazy loading.');
+    console.warn(
+        'Warning: loadMarkdownDocs() loads all docs eagerly. Consider using getMarkdownCache() for lazy loading.'
+    );
 
     const docs = new Map<string, ComponentMarkdownDoc>();
     const docsDir = resolveMarkdownDocsPath();

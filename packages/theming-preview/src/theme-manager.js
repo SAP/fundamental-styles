@@ -9,19 +9,24 @@ class ThemeManager {
     }
 
     determineThemeRoot(sapThemeUrlParameter) {
-        let values = sapThemeUrlParameter.split('@');
-        let themeRoot = values.length > 1 ? values[1] : '';
+        const values = sapThemeUrlParameter.split('@');
+        const themeRoot = values.length > 1 ? values[1] : '';
         return themeRoot;
     }
 
     determineThemeId(sapThemeUrlParameter) {
-        let values = sapThemeUrlParameter.split('@');
-        let themeId = values.length > 0 ? values[0] : 'sap_horizon';
+        const values = sapThemeUrlParameter.split('@');
+        const themeId = values.length > 0 ? values[0] : 'sap_horizon';
         return themeId;
     }
 
     determineCssVariablesUrl() {
-        let cssVariablesUrl = this.pathJoin(this.themeRoot, this.cssVariablesPath, this.themeId, this.cssVariablesFileName);
+        const cssVariablesUrl = this.pathJoin(
+            this.themeRoot,
+            this.cssVariablesPath,
+            this.themeId,
+            this.cssVariablesFileName
+        );
         return cssVariablesUrl;
     }
 
@@ -43,9 +48,9 @@ class ThemeManager {
     }
 
     getUrlParameter(parameterName) {
-        var params = document.location.search.substring(1).split('&');
-        for (var i = 0; i < params.length; i++) {
-            var param = params[i].split('=');
+        const params = document.location.search.substring(1).split('&');
+        for (let i = 0; i < params.length; i++) {
+            const param = params[i].split('=');
             if (param[0] === parameterName) {
                 return encodeURI(decodeURIComponent(param[1]));
             }
@@ -54,14 +59,14 @@ class ThemeManager {
     }
 
     addCssVariables() {
-        var styleSheet = document.createElement('link');
+        const styleSheet = document.createElement('link');
         styleSheet.rel = 'stylesheet';
         styleSheet.href = this.cssVariablesUrl;
         document.head.appendChild(styleSheet);
     }
 }
 
-(function() {
-    let themeManager = new ThemeManager();
+(function () {
+    const themeManager = new ThemeManager();
     themeManager.addCssVariables();
 })();

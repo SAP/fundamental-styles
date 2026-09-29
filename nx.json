@@ -27,15 +27,15 @@
         "sharedGlobals": [
             "{workspaceRoot}/package.json",
             "{workspaceRoot}/lerna.json",
-            "{workspaceRoot}/lerna.json",
             "{workspaceRoot}/tsconfig.json",
+            "{workspaceRoot}/typing.d.ts",
             "{workspaceRoot}/nx.json"
         ],
         "production": [
             "default",
             "!{projectRoot}/**/*.spec.[jt]s",
             "!{projectRoot}/tsconfig.spec.json",
-            "!{projectRoot}/.eslintrc.json"
+            "!{projectRoot}/eslint.config.mjs"
         ]
     },
     "generators": {
@@ -55,5 +55,14 @@
     "nxCloudAccessToken": "MzM5YTVjNjAtNDlkMC00OTg0LWFkM2UtZWM5NDcyYTYzZDcyfHJlYWQ=",
     "parallel": 5,
     "defaultBase": "main",
-    "analytics": false
+    "analytics": false,
+    "plugins": [
+        {
+            "plugin": "@nx/eslint/plugin",
+            "options": {
+                "targetName": "lint"
+            },
+            "include": ["packages/**/*"]
+        }
+    ]
 }

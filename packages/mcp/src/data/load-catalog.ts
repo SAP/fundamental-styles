@@ -44,9 +44,16 @@ export function resolveDataPath(fileName: string): string {
     // __dirname is src/data/ (source) or dist/packages/mcp/src/data/ (compiled)
     // dist data is at dist/packages/mcp/data/ (two levels up from src/data/)
     const distPath = resolve(__dirname, '..', '..', 'data', fileName);
+    const configuredPath = process.env['FUNDAMENTAL_STYLES_MCP_DATA_DIR']
+        ? resolve(process.env['FUNDAMENTAL_STYLES_MCP_DATA_DIR'], fileName)
+        : null;
     // Source data is at <repo>/docs/ (five levels up from packages/mcp/src/data/)
     const srcPath = resolve(__dirname, '..', '..', '..', '..', 'docs', fileName);
     try {
+        if (configuredPath) {
+            readFileSync(configuredPath, 'utf-8');
+            return configuredPath;
+        }
         readFileSync(distPath, 'utf-8');
         return distPath;
     } catch {
@@ -83,7 +90,16 @@ export function loadCatalog(): LoadedCatalog {
     const modifierRules = readJson<ModifierRules>(resolveDataPath('modifier-rules.json'));
 
     // Component relationships
-    const relationships = readJson<RelationshipsFile>(resolveDataPath('component-relationships.json'));
+    const rawRelationships = readJson<RelationshipsFile>(resolveDataPath('component-relationships.json'));
+    const relationships = rawRelationships
+        ? {
+              ...rawRelationships,
+              relationships: rawRelationships.relationships.map((relationship) => ({
+                  ...relationship,
+                  bidirectional: relationship.bidirectional ?? false
+              }))
+          }
+        : null;
 
     // Accessibility
     const accessibility = readJson<AccessibilityFile>(resolveDataPath('accessibility.json'));
@@ -98,9 +114,15 @@ export function loadCatalog(): LoadedCatalog {
         // Extract tokens from all levels: top-level sections and nested categories
         const extractTokens = (obj: Record<string, unknown>) => {
             for (const [key, value] of Object.entries(obj)) {
-                if (key.startsWith('$') || key === 'totalTokens' || key === 'description' ||
-                    key === 'version' || key === 'generatedBy' || key === 'source' ||
-                    key === 'relatedFiles') {
+                if (
+                    key.startsWith('$') ||
+                    key === 'totalTokens' ||
+                    key === 'description' ||
+                    key === 'version' ||
+                    key === 'generatedBy' ||
+                    key === 'source' ||
+                    key === 'relatedFiles'
+                ) {
                     continue;
                 }
                 const section = value as Record<string, unknown>;
@@ -163,8 +185,15 @@ export function readDataFile(fileName: string): string | null {
 /** Resolve path to a schema file — works from source and dist. */
 function resolveSchemaPath(schemaName: string): string {
     const distPath = resolve(__dirname, '..', '..', 'data', 'schemas', schemaName);
+    const configuredPath = process.env['FUNDAMENTAL_STYLES_MCP_DATA_DIR']
+        ? resolve(process.env['FUNDAMENTAL_STYLES_MCP_DATA_DIR'], 'schemas', schemaName)
+        : null;
     const srcPath = resolve(__dirname, '..', '..', '..', '..', 'docs', 'schemas', schemaName);
     try {
+        if (configuredPath) {
+            readFileSync(configuredPath, 'utf-8');
+            return configuredPath;
+        }
         readFileSync(distPath, 'utf-8');
         return distPath;
     } catch {
@@ -176,12 +205,20 @@ function resolveSchemaPath(schemaName: string): string {
 export function listSchemas(): string[] {
     // Try dist first, then source
     const distDir = resolve(__dirname, '..', '..', 'data', 'schemas');
+    const configuredDir = process.env['FUNDAMENTAL_STYLES_MCP_DATA_DIR']
+        ? resolve(process.env['FUNDAMENTAL_STYLES_MCP_DATA_DIR'], 'schemas')
+        : null;
     const srcDir = resolve(__dirname, '..', '..', '..', '..', 'docs', 'schemas');
-    let dir = distDir;
+    let dir = configuredDir ?? distDir;
     try {
-        readdirSync(distDir);
+        readdirSync(dir);
     } catch {
-        dir = srcDir;
+        try {
+            readdirSync(distDir);
+            dir = distDir;
+        } catch {
+            dir = srcDir;
+        }
     }
     try {
         return readdirSync(dir)

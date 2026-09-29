@@ -1,0 +1,6 @@
+{
+    "title": "Table Component",
+    "properties": {
+        "baseClass": { "const": "fd-table" }
+    }
+}

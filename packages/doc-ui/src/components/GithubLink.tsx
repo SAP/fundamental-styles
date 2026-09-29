@@ -9,28 +9,27 @@ const StyledSpan = styled.span(({ theme }) => ({
 }));
 
 const StyledGhButtonContainer = styled.div`
-  display: inline-block;
+    display: inline-block;
 
-  > a {
-    padding-top: 0;
-    padding-bottom: 0;
-    margin-top: 6px;
-  }
+    > a {
+        padding-top: 0;
+        padding-bottom: 0;
+        margin-top: 6px;
+    }
 `;
 
-export default () => <StyledGhButtonContainer>
-    <IconButton
-        href={`https://github.com/SAP/fundamental-styles/tree/v${lernaJson.version}`}
-        target={'_blank'}
-        title={'Github Link'}
-        content={undefined}
-        rel={undefined}
-        autoFocus={false}
-        rev={undefined}
-    >
-        <GithubIcon/>
-        <StyledSpan>
-            {`v${lernaJson.version}`}
-        </StyledSpan>
-    </IconButton>
-</StyledGhButtonContainer>;
+export default () => (
+    <StyledGhButtonContainer>
+        <IconButton asChild ariaLabel="GitHub">
+            <a
+                href={`https://github.com/SAP/fundamental-styles/tree/v${lernaJson.version}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                title="GitHub"
+            >
+                <GithubIcon />
+                <StyledSpan>{`v${lernaJson.version}`}</StyledSpan>
+            </a>
+        </IconButton>
+    </StyledGhButtonContainer>
+);

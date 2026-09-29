@@ -1,0 +1,6 @@
+{
+    "title": "Button Component",
+    "properties": {
+        "baseClass": { "const": "fd-button" }
+    }
+}

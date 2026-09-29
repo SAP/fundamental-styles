@@ -3,6 +3,7 @@
     "$schema": "../../node_modules/nx/schemas/project-schema.json",
     "sourceRoot": "packages/common-css/src",
     "projectType": "library",
+    "tags": [],
     "targets": {
         "build": {
             "executor": "workspace-plugins:build",
@@ -37,22 +38,17 @@
         },
         "sync-entry": {
             "executor": "workspace-plugins:sync-components",
+            "dependsOn": ["workspace-plugins:build"],
+            "outputs": ["{options.entry}"],
             "options": {
                 "entry": "{projectRoot}/src/common-css.scss",
-                "include": [
-                    "{projectRoot}/src/*.scss"
-                ],
+                "include": ["{projectRoot}/src/*.scss"],
                 "exclude": [
                     "{options.entry}",
                     "{projectRoot}/src/_common-mixins.scss",
                     "{projectRoot}/src/_common-variables.scss"
                 ]
-            },
-            "outputs": ["{options.entry}"]
-        },
-        "lint": {
-            "executor": "@nx/eslint:lint",
-            "outputs": ["{options.outputFile}"]
+            }
         },
         "stylelint": {
             "executor": "nx-stylelint:lint",
@@ -61,6 +57,5 @@
                 "lintFilePatterns": ["packages/common-css/**/*.scss"]
             }
         }
-    },
-    "tags": []
+    }
 }
