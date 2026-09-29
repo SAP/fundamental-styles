@@ -17,17 +17,8 @@ $block: #{$fd-namespace}-rating-indicator;
   --ratingIndicator_Color: var(--sapContent_UnratedColor);
   --ratingIndicator_Container_Outline: var(--sapContent_FocusWidth) var(--sapContent_FocusStyle) var(--sapContent_FocusColor);
 
-  @mixin rating-indicator-unselected-items-readonly-disabled($font-size, $spacing) {
+  @mixin rating-indicator-unselected-items-readonly($font-size, $spacing) {
     @include fd-readonly() {
-      .fd-rating-indicator__item {
-        &:has(.fd-rating-indicator__icon--unselected + .fd-rating-indicator__icon--unselected) {
-          --ratingIndicator_Font_Size: #{$font-size};
-          --ratingIndicator_Inline_Spacing: #{$spacing};
-        }
-      }
-    }
-
-    @include fd-disabled() {
       .fd-rating-indicator__item {
         &:has(.fd-rating-indicator__icon--unselected + .fd-rating-indicator__icon--unselected) {
           --ratingIndicator_Font_Size: #{$font-size};
@@ -56,10 +47,11 @@ $block: #{$fd-namespace}-rating-indicator;
     @include fd-reset();
     @include fd-inline-flex-vertical-center();
 
+    padding: 0.25rem;
     border-radius: var(--fdRatingIndicator_Container_Border_Radius);
-    
+
     @include fd-focus() {
-      outline-offset: 0.1875rem;
+      outline-offset: -0.125rem;
       outline: var(--ratingIndicator_Container_Outline);
     }
   }
@@ -145,11 +137,11 @@ $block: #{$fd-namespace}-rating-indicator;
     --ratingIndicator_Opacity_Hover: var(--sapContent_DisabledOpacity);
   }
 
-  @include rating-indicator-unselected-items-readonly-disabled(1.125rem, 0.1875rem);
+  @include rating-indicator-unselected-items-readonly(1.125rem, 0.1875rem);
 
   // Sizes
   &--lg {
-    @include rating-indicator-unselected-items-readonly-disabled(2rem, 0);
+    @include rating-indicator-unselected-items-readonly(1.5rem, 0.25rem);
 
     --ratingIndicator_Margin_Block: 0.75rem;
     --ratingIndicator_Margin_Block_Compact: 0.5rem;
@@ -158,7 +150,7 @@ $block: #{$fd-namespace}-rating-indicator;
   }
 
   &--md {
-    @include rating-indicator-unselected-items-readonly-disabled(1.5rem, 0);
+    @include rating-indicator-unselected-items-readonly(1.125rem, 0.1875rem);
 
     --ratingIndicator_Margin_Block: 0.75rem;
     --ratingIndicator_Margin_Block_Compact: 0.5rem;
@@ -167,7 +159,7 @@ $block: #{$fd-namespace}-rating-indicator;
   }
 
   &--sm {
-    @include rating-indicator-unselected-items-readonly-disabled(1.375rem, 0);
+    @include rating-indicator-unselected-items-readonly(1.03125rem, 0.171875rem);
 
     --ratingIndicator_Margin_Block: 0.75rem;
     --ratingIndicator_Margin_Block_Compact: 0.5rem;
@@ -176,7 +168,7 @@ $block: #{$fd-namespace}-rating-indicator;
   }
 
   &--xs {
-    @include rating-indicator-unselected-items-readonly-disabled(0.75rem, 0);
+    @include rating-indicator-unselected-items-readonly(0.5625rem, 0.09375rem);
 
     --ratingIndicator_Margin_Block: 0.75rem;
     --ratingIndicator_Margin_Block_Compact: 0.5rem;

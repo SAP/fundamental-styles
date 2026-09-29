@@ -18,8 +18,8 @@ Although the maximum is 7, it is highly recommended to use the default of 5.
 ##Structure
 Each star is a \`fd-rating-indicator__item\` (\`<li>\`) containing two \`fd-rating-indicator__icon\` (\`<span>\`) elements.
 The first span is clipped to the left half of the star, the second to the right half.
-Add \`fd-rating-indicator__icon--selected\` to a span to render it in the rated (filled) color;
-omit it (or add \`--unselected\`) to render in the unrated (outline) color.
+Add \`fd-rating-indicator__icon--selected\` to a span to render it in the rated color;
+omit it (or add \`--unselected\`) to render in the unrated color.
 This split allows half-star precision without additional markup.
 
 The \`fd-rating-indicator__list\` (\`<ul>\`) carries \`aria-hidden="true"\` — it is purely visual.
@@ -73,9 +73,8 @@ CustomIcons.parameters = {
   docs: {
     description: {
       story: `
-To use custom icons, add \`.fd-rating-indicator--icon\` to the outer \`fd-rating-indicator\` element,
-then replace the default \`sap-icon--favorite\` / \`sap-icon--unfavorite\` icon classes on each
-\`fd-rating-indicator__icon\` span with your chosen icon names.
+To use custom icons, replace the default \`sap-icon--favorite\` / \`sap-icon--unfavorite\` icon classes
+on each \`fd-rating-indicator__icon\` span with your chosen icon names.
 
 Use the rated icon (e.g. \`sap-icon--notification\`) on spans that are \`--selected\`,
 and the unrated icon (e.g. \`sap-icon--bo-strategy-management\`) on spans that are \`--unselected\`.
@@ -123,8 +122,9 @@ inline running text. Add \`.fd-rating-indicator--display-mode\` and the \`readon
 outer element. Replace \`role="slider"\` with \`role="img"\` on the \`__container\` and provide an
 \`aria-label\` such as \`"Rating: 2 of 5 stars"\`. Remove \`tabindex\` — the element is not focusable.
 
-The spec defines a single read-only state. \`fd-rating-indicator--non-interactive\` is a semantic alias
-for the same state and produces identical styling.
+In display mode, unselected icons are rendered at 75% of the selected icon size.
+This size reduction is a visual-only accessibility aid — it allows selected and unselected ratings to be distinguished by shape rather than color alone.
+The smaller icons are scaled from their center and offset with additional margin so the overall control width stays stable.
 `
     }
   }
