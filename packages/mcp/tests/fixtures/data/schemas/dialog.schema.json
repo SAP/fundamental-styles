@@ -1,0 +1,6 @@
+{
+    "title": "Dialog Component",
+    "properties": {
+        "baseClass": { "const": "fd-dialog" }
+    }
+}

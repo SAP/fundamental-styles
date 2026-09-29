@@ -31,7 +31,9 @@ function extractDesignTokens(scssFilePath) {
     try {
         const stats = fs.statSync(scssFilePath);
         if (stats.size > 5 * 1024 * 1024) {
-            console.warn(`⚠️  SCSS file too large (${(stats.size / 1024 / 1024).toFixed(1)}MB), skipping: ${scssFilePath}`);
+            console.warn(
+                `⚠️  SCSS file too large (${(stats.size / 1024 / 1024).toFixed(1)}MB), skipping: ${scssFilePath}`
+            );
             return [];
         }
     } catch (error) {
@@ -86,8 +88,8 @@ function extractJSDocComments(scssFilePath) {
             // Clean up the comment text
             const cleaned = commentText
                 .split('\n')
-                .map(line => line.replace(/^\s*\*\s?/, '').trim())
-                .filter(line => line.length > 0)
+                .map((line) => line.replace(/^\s*\*\s?/, '').trim())
+                .filter((line) => line.length > 0)
                 .join(' ');
 
             if (cleaned.length > 0) {
@@ -110,8 +112,8 @@ function extractJSDocComments(scssFilePath) {
             const [, commentText, typeName] = typeMatch;
             const cleaned = commentText
                 .split('\n')
-                .map(line => line.replace(/^\s*\*\s?/, '').trim())
-                .filter(line => line.length > 0)
+                .map((line) => line.replace(/^\s*\*\s?/, '').trim())
+                .filter((line) => line.length > 0)
                 .join(' ');
 
             if (cleaned.length > 0 && !comments[typeName]) {
@@ -136,10 +138,12 @@ function extractRelatedComponents(content) {
     while ((match = importRegex.exec(content)) !== null) {
         const component = match[1];
         // Skip mixins, settings, and common files
-        if (!component.startsWith('_') &&
+        if (
+            !component.startsWith('_') &&
             !component.includes('mixin') &&
             !component.includes('setting') &&
-            !component.includes('common')) {
+            !component.includes('common')
+        ) {
             related.add(component);
         }
     }
@@ -187,17 +191,19 @@ function extractStructure(description) {
  */
 function extractStability(content, category, tags) {
     // Check if component is deprecated
-    const isDeprecated = category.toLowerCase().includes('deprecated') ||
-                        tags.some(tag => tag.toLowerCase().includes('deprecated')) ||
-                        content.toLowerCase().includes('@deprecated');
+    const isDeprecated =
+        category.toLowerCase().includes('deprecated') ||
+        tags.some((tag) => tag.toLowerCase().includes('deprecated')) ||
+        content.toLowerCase().includes('@deprecated');
 
     // Check if it's experimental/dev
-    const isExperimental = category.toLowerCase() === 'dev' ||
-                          tags.some(tag => tag.toLowerCase().includes('experimental')) ||
-                          content.toLowerCase().includes('@experimental');
+    const isExperimental =
+        category.toLowerCase() === 'dev' ||
+        tags.some((tag) => tag.toLowerCase().includes('experimental')) ||
+        content.toLowerCase().includes('@experimental');
 
     return {
-        status: isDeprecated ? 'deprecated' : (isExperimental ? 'experimental' : 'stable'),
+        status: isDeprecated ? 'deprecated' : isExperimental ? 'experimental' : 'stable',
         isDeprecated,
         isExperimental
     };
@@ -231,7 +237,7 @@ function parseStoryFile(filePath) {
     const tags = [];
     const tagsMatch = content.match(/tags:\s*\[([^\]]+)\]/);
     if (tagsMatch) {
-        const tagsList = tagsMatch[1].split(',').map(t => t.trim().replace(/['"]/g, ''));
+        const tagsList = tagsMatch[1].split(',').map((t) => t.trim().replace(/['"]/g, ''));
         tags.push(...tagsList);
     }
 
@@ -241,7 +247,8 @@ function parseStoryFile(filePath) {
     let cssMatch;
     while ((cssMatch = importCSSRegex.exec(content)) !== null) {
         const depFile = cssMatch[1];
-        if (!depFile.startsWith('_')) { // Skip partials
+        if (!depFile.startsWith('_')) {
+            // Skip partials
             dependencies.push(depFile.replace('.scss', ''));
         }
     }
@@ -301,18 +308,24 @@ function parseStoryFile(filePath) {
         const storyName = storyNameMatch ? storyNameMatch[1] : exportName;
 
         // Find description (try backtick format first)
-        const descRegex = new RegExp(`${exportName}\\.parameters = \\{[^}]*docs:\\s*\\{[^}]*description:\\s*\\{[^}]*story:\\s*\`([^\`]+)\``, 's');
+        const descRegex = new RegExp(
+            `${exportName}\\.parameters = \\{[^}]*docs:\\s*\\{[^}]*description:\\s*\\{[^}]*story:\\s*\`([^\`]+)\``,
+            's'
+        );
         const descMatch = content.match(descRegex);
         let storyDescription = descMatch ? descMatch[1].trim() : '';
 
         // Try single/double quote format
         if (!storyDescription) {
-            const descRegex2 = new RegExp(`${exportName}\\.parameters = \\{[^}]*docs:\\s*\\{[^}]*description:\\s*\\{[^}]*story:\\s*['"]([^'"]+)['"]`, 's');
+            const descRegex2 = new RegExp(
+                `${exportName}\\.parameters = \\{[^}]*docs:\\s*\\{[^}]*description:\\s*\\{[^}]*story:\\s*['"]([^'"]+)['"]`,
+                's'
+            );
             const descMatch2 = content.match(descRegex2);
             storyDescription = descMatch2 ? descMatch2[1].trim() : '';
         }
 
-        const htmlImport = htmlImports.find(imp => imp.varName === data.htmlVar);
+        const htmlImport = htmlImports.find((imp) => imp.varName === data.htmlVar);
 
         stories.push({
             exportName: data.exportName,
@@ -333,7 +346,7 @@ function parseStoryFile(filePath) {
 
     // Extract modifiers from HTML examples with enhanced descriptions
     const modifiers = new Map(); // Use Map to store modifier -> description
-    htmlImports.forEach(imp => {
+    htmlImports.forEach((imp) => {
         if (selector) {
             const modifierRegex = new RegExp(`${selector}--([a-z-]+)`, 'g');
             let modMatch;
@@ -347,14 +360,15 @@ function parseStoryFile(filePath) {
     });
 
     // Match modifiers to story descriptions
-    stories.forEach(story => {
+    stories.forEach((story) => {
         if (story.description) {
             modifiers.forEach((_, modName) => {
                 // Check if story mentions this modifier
-                if (story.storyName.toLowerCase().includes(modName) ||
+                if (
+                    story.storyName.toLowerCase().includes(modName) ||
                     story.description.toLowerCase().includes(modName) ||
-                    story.description.toLowerCase().includes(modName.replace(/-/g, ' '))) {
-
+                    story.description.toLowerCase().includes(modName.replace(/-/g, ' '))
+                ) {
                     // Extract first sentence as description
                     const sentences = story.description.split(/[.!?]\s/);
                     if (sentences.length > 0 && !modifiers.get(modName)) {
@@ -367,7 +381,7 @@ function parseStoryFile(filePath) {
 
     // Extract state classes (is-*)
     const states = new Set();
-    htmlImports.forEach(imp => {
+    htmlImports.forEach((imp) => {
         const stateRegex = /\bis-([a-z-]+)/g;
         let stateMatch;
         while ((stateMatch = stateRegex.exec(imp.content)) !== null) {
@@ -377,7 +391,7 @@ function parseStoryFile(filePath) {
 
     // NEW: Extract BEM elements from HTML (fd-component__element)
     const elements = new Set();
-    htmlImports.forEach(imp => {
+    htmlImports.forEach((imp) => {
         if (selector) {
             const elementRegex = new RegExp(`${selector}__([a-z-]+)`, 'g');
             let elementMatch;
@@ -390,20 +404,29 @@ function parseStoryFile(filePath) {
     // NEW: Try to find and parse SCSS file for design tokens and JSDoc comments
     let designTokens = [];
     let jsdocComments = {};
-    const scssPath = path.join(path.dirname(filePath), '..', '..', '..', 'src', `${selector ? selector.replace('fd-', '') : fileName}.scss`);
+    const scssPath = path.join(
+        path.dirname(filePath),
+        '..',
+        '..',
+        '..',
+        'src',
+        `${selector ? selector.replace('fd-', '') : fileName}.scss`
+    );
     if (fs.existsSync(scssPath)) {
         designTokens = extractDesignTokens(scssPath);
         jsdocComments = extractJSDocComments(scssPath);
     }
 
     // Enhance modifier descriptions with JSDoc comments
-    const enhancedModifiers = Array.from(modifiers.entries()).map(([name, desc]) => {
-        const jsdocDesc = jsdocComments[name];
-        return {
-            name,
-            description: jsdocDesc || desc || 'Style variant'
-        };
-    }).sort((a, b) => a.name.localeCompare(b.name));
+    const enhancedModifiers = Array.from(modifiers.entries())
+        .map(([name, desc]) => {
+            const jsdocDesc = jsdocComments[name];
+            return {
+                name,
+                description: jsdocDesc || desc || 'Style variant'
+            };
+        })
+        .sort((a, b) => a.name.localeCompare(b.name));
 
     return {
         fileName,
@@ -464,12 +487,20 @@ function cleanHTML(html) {
         }
 
         // Skip h1-h6 headers that are just demo labels
-        if (trimmed.match(/^<h[1-6][^>]*>(?:Default|Example|States?|Inactive|Active|Disabled|Normal|Selected|Hover|Focus|Toggled):?[^<]*<\/h[1-6]>$/i)) {
+        if (
+            trimmed.match(
+                /^<h[1-6][^>]*>(?:Default|Example|States?|Inactive|Active|Disabled|Normal|Selected|Hover|Focus|Toggled):?[^<]*<\/h[1-6]>$/i
+            )
+        ) {
             continue;
         }
 
         // Skip paragraph wrappers that are just state labels
-        if (trimmed.match(/^<p[^>]*>(?:Default state:|Inactive state:|Active state:|hover|active|focus|disabled|normal|selected):?<\/p>$/i)) {
+        if (
+            trimmed.match(
+                /^<p[^>]*>(?:Default state:|Inactive state:|Active state:|hover|active|focus|disabled|normal|selected):?<\/p>$/i
+            )
+        ) {
             continue;
         }
 
@@ -519,7 +550,7 @@ function cleanHTML(html) {
 
     // Remove orphaned closing divs (ones that don't have matching opening)
     let divDepth = 0;
-    const finalLines = cleaned.split('\n').filter(line => {
+    const finalLines = cleaned.split('\n').filter((line) => {
         const trimmed = line.trim();
 
         // Track div depth
@@ -563,7 +594,21 @@ function normalizeIndentation(html) {
     const normalized = [];
 
     // Self-closing tags and tags that don't need closing
-    const selfClosing = ['br', 'hr', 'img', 'input', 'link', 'meta', 'area', 'base', 'col', 'embed', 'param', 'source', 'track'];
+    const selfClosing = [
+        'br',
+        'hr',
+        'img',
+        'input',
+        'link',
+        'meta',
+        'area',
+        'base',
+        'col',
+        'embed',
+        'param',
+        'source',
+        'track'
+    ];
 
     for (const line of lines) {
         const trimmed = line.trim();
@@ -585,7 +630,8 @@ function normalizeIndentation(html) {
 
         // Check for opening tags (but not self-closing)
         const openingTag = trimmed.match(/^<([a-z][a-z0-9]*)/i);
-        const isSelfClosing = trimmed.endsWith('/>') || (openingTag && selfClosing.includes(openingTag[1].toLowerCase()));
+        const isSelfClosing =
+            trimmed.endsWith('/>') || (openingTag && selfClosing.includes(openingTag[1].toLowerCase()));
         const hasClosingOnSameLine = trimmed.match(/<\/[a-z][a-z0-9]*>\s*$/i);
 
         if (openingTag && !isSelfClosing && !hasClosingOnSameLine && !closingTag) {
@@ -601,9 +647,26 @@ function normalizeIndentation(html) {
  */
 function generateMarkdown(componentData) {
     const {
-        title, selector, description, usage, doNotUse, tags, dependencies, stories,
-        modifiers, states, elements, category, sourcePath, cssFile, structure,
-        stability, isDeprecated, isExperimental, relatedComponents, designTokens
+        title,
+        selector,
+        description,
+        usage,
+        doNotUse,
+        tags,
+        dependencies,
+        stories,
+        modifiers,
+        states,
+        elements,
+        category,
+        sourcePath,
+        cssFile,
+        structure,
+        stability,
+        isDeprecated,
+        isExperimental,
+        relatedComponents,
+        designTokens
     } = componentData;
 
     let md = `---
@@ -656,7 +719,7 @@ ${doNotUse}
 
 This component depends on the following CSS files:
 
-${dependencies.map(dep => `- \`${dep}.css\``).join('\n')}
+${dependencies.map((dep) => `- \`${dep}.css\``).join('\n')}
 
 `;
     }
@@ -675,7 +738,7 @@ npm install fundamental-styles
 
 <!-- Include component CSS -->
 <link href="node_modules/fundamental-styles/dist/${cssFile}" rel="stylesheet">
-${dependencies.length > 0 ? '\n<!-- Include dependencies -->\n' + dependencies.map(dep => `<link href="node_modules/fundamental-styles/dist/${dep}.css" rel="stylesheet">`).join('\n') : ''}
+${dependencies.length > 0 ? '\n<!-- Include dependencies -->\n' + dependencies.map((dep) => `<link href="node_modules/fundamental-styles/dist/${dep}.css" rel="stylesheet">`).join('\n') : ''}
 \`\`\`
 
 `;
@@ -700,7 +763,7 @@ ${cleaned}
 | Class | Description |
 |-------|-------------|
 `;
-        modifiers.forEach(mod => {
+        modifiers.forEach((mod) => {
             const modClass = `${selector}--${mod.name}`;
             const desc = mod.description || 'Style variant';
             md += `| \`${modClass}\` | ${desc} |\n`;
@@ -715,7 +778,7 @@ ${cleaned}
 | Class | Description |
 |-------|-------------|
 `;
-        states.forEach(state => {
+        states.forEach((state) => {
             md += `| \`is-${state}\` | ${state.charAt(0).toUpperCase() + state.slice(1)} state |\n`;
         });
         md += '\n';
@@ -728,7 +791,7 @@ ${cleaned}
 This component uses the following BEM elements:
 
 `;
-        elements.forEach(element => {
+        elements.forEach((element) => {
             md += `- \`${selector}__${element}\`\n`;
         });
         md += '\n';
@@ -750,7 +813,7 @@ ${structure.text}
 This component works with or depends on:
 
 `;
-        relatedComponents.forEach(comp => {
+        relatedComponents.forEach((comp) => {
             md += `- \`${comp}\`\n`;
         });
         md += '\n';
@@ -763,7 +826,7 @@ This component works with or depends on:
 Key CSS variables used by this component:
 
 `;
-        designTokens.slice(0, 15).forEach(token => {
+        designTokens.slice(0, 15).forEach((token) => {
             md += `- \`${token}\`\n`;
         });
         if (designTokens.length > 15) {
@@ -776,7 +839,7 @@ Key CSS variables used by this component:
     if (stories.length > 0) {
         md += `## Examples\n\n`;
 
-        stories.forEach(story => {
+        stories.forEach((story) => {
             md += `### ${story.storyName}\n\n`;
 
             if (story.description) {
@@ -822,9 +885,7 @@ function generateUniqueFilename(componentData, existingFiles) {
     const { selector, title, category, subcategory } = componentData;
 
     // Base filename from selector or title
-    let baseFilename = selector
-        ? selector.replace('fd-', '')
-        : title.toLowerCase().replace(/[^a-z0-9]+/g, '-');
+    const baseFilename = selector ? selector.replace('fd-', '') : title.toLowerCase().replace(/[^a-z0-9]+/g, '-');
 
     // If file doesn't exist, use base filename
     const baseFile = `${baseFilename}.md`;
@@ -878,7 +939,7 @@ function extractAllDocs() {
     console.log('🔍 Scanning for story files...\n');
 
     // Find all story files
-    let storyFiles = glob.sync('packages/*/stories/**/*.stories.js', {
+    const storyFiles = glob.sync('packages/*/stories/**/*.stories.js', {
         ignore: ['**/node_modules/**', '**/introduction.stories.js']
     });
 
@@ -903,7 +964,7 @@ function extractAllDocs() {
     const components = [];
     const existingFiles = new Map();
 
-    storyFiles.forEach(filePath => {
+    storyFiles.forEach((filePath) => {
         try {
             console.log(`Processing: ${path.relative(process.cwd(), filePath)}`);
 
@@ -956,7 +1017,7 @@ function extractAllDocs() {
  */
 function generateIndexFile(components) {
     // Count actual markdown files (excluding README)
-    const actualFileCount = fs.readdirSync(OUTPUT_DIR).filter(f => f.endsWith('.md') && f !== 'README.md').length;
+    const actualFileCount = fs.readdirSync(OUTPUT_DIR).filter((f) => f.endsWith('.md') && f !== 'README.md').length;
 
     let index = `# Component Documentation Index
 
@@ -970,7 +1031,7 @@ This directory contains AI-consumable documentation extracted from Storybook sto
 
     // Group by category
     const byCategory = {};
-    components.forEach(comp => {
+    components.forEach((comp) => {
         const cat = comp.category || 'Other';
         if (!byCategory[cat]) byCategory[cat] = [];
         byCategory[cat].push(comp);
@@ -979,14 +1040,14 @@ This directory contains AI-consumable documentation extracted from Storybook sto
     // Sort categories
     const categories = Object.keys(byCategory).sort();
 
-    categories.forEach(category => {
+    categories.forEach((category) => {
         index += `### ${category}\n\n`;
         index += `| Component | Selector | File |\n`;
         index += `|-----------|----------|------|\n`;
 
         byCategory[category]
             .sort((a, b) => a.title.localeCompare(b.title))
-            .forEach(comp => {
+            .forEach((comp) => {
                 index += `| ${comp.title} | \`${comp.selector}\` | [${comp.file}](./${comp.file}) |\n`;
             });
 

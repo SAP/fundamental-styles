@@ -1,5 +1,5 @@
 import { create } from 'storybook/theming';
-import packageJson from '../../../../package.json';
+import lernaJson from '../../../../lerna.json';
 
 export default create({
     base: 'light',
@@ -35,7 +35,7 @@ export default create({
     inputBorderRadius: 4,
 
     // Branding
-    brandTitle: `Fundamental Styles v${packageJson.version}`,
+    brandTitle: `Fundamental Styles v${lernaJson.version}`,
     brandUrl: 'https://github.com/sap/fundamental-styles',
     brandImage: './logo_text.png'
 });

@@ -44,8 +44,8 @@ export const withThemeProvider = makeDecorator({
             acc[key.replace('-theme', '')] = globals[key];
             return acc;
         }, {});
-        if (context.parameters.theme && pkg) {
-            themes[pkg.value] = context.parameters.theme;
+        if (context.parameters['theme'] && pkg) {
+            themes[pkg.value] = context.parameters['theme'];
         }
         if (pkg && !themes[pkg.value] && pkg.defaultTheme) {
             themes[pkg.value] = pkg.defaultTheme;

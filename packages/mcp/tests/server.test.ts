@@ -8,10 +8,7 @@ import { loadCatalog, LoadedCatalog } from '../src/data/load-catalog';
 import { loadExamples, ComponentExample } from '../src/data/load-examples';
 import { extractChangelog, compareVersions, baseVersion, ChangelogEntry } from '../src/data/changelog-extractor';
 import { findComponent as findComp, scoreMatch } from '../src/helpers';
-import {
-    ComponentMetadata,
-    PACKAGE_ALIAS_MAP
-} from '../src/types/component-metadata';
+import { ComponentMetadata, PACKAGE_ALIAS_MAP } from '../src/types/component-metadata';
 
 let data: LoadedCatalog;
 let examples: Map<string, ComponentExample[]>;
@@ -29,13 +26,12 @@ beforeAll(() => {
 
 describe('list_components', () => {
     it('should return all components', () => {
-        expect(data.components.length).toBeGreaterThan(100);
+        expect(data.components.map((component) => component.id)).toEqual(['button', 'table', 'dialog']);
     });
 
     it('should filter by category', () => {
         const buttons = data.components.filter(
-            (c) => c.category?.toLowerCase().includes('button') ||
-                   c.subcategory?.toLowerCase().includes('button')
+            (c) => c.category?.toLowerCase().includes('button') || c.subcategory?.toLowerCase().includes('button')
         );
         expect(buttons.length).toBeGreaterThan(0);
     });
@@ -217,9 +213,7 @@ describe('get_migration_guide', () => {
     });
 
     it('should filter by component scope', () => {
-        const stylesEntries = changelog.filter(
-            (e) => e.scope?.toLowerCase() === 'styles'
-        );
+        const stylesEntries = changelog.filter((e) => e.scope?.toLowerCase() === 'styles');
         expect(stylesEntries.length).toBeGreaterThan(0);
     });
 

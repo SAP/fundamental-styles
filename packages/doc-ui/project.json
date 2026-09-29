@@ -5,9 +5,12 @@
     "projectType": "library",
     "tags": [],
     "targets": {
-        "lint": {
-            "executor": "@nx/eslint:lint",
-            "outputs": ["{options.outputFile}"]
+        "typecheck": {
+            "executor": "nx:run-commands",
+            "options": {
+                "cwd": "packages/doc-ui",
+                "command": "tsc --project tsconfig.json --noEmit"
+            }
         }
     }
 }

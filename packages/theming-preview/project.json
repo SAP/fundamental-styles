@@ -6,6 +6,7 @@
     "targets": {
         "build": {
             "executor": "workspace-plugins:build-theming-preview",
+            "dependsOn": ["workspace-plugins:build"],
             "configurations": {
                 "production": {
                     "minify": true

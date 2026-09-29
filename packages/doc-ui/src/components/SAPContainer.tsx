@@ -11,24 +11,24 @@ import { getPackage } from 'fundamental-styles/utils';
  * and enriches it with the SAPContext.
  * This component is a single source of truth for the SAPContext.
  */
-export const SAPContainer = ({children}) => {
+export const SAPContainer = ({ children }) => {
     const channel = useMemo(() => addons.getChannel(), []);
     const docsContext = useContext(DocsContext);
     const story = docsContext.storyById();
     const storyContext = docsContext.getStoryContext(story);
 
     const params = {
-        ...storyContext.globals,
-        ...storyContext.parameters
+        ...storyContext['globals'],
+        ...storyContext['parameters']
     };
 
     const [storyPackage, setStoryPackage] = useState(getPackage(storyContext));
     const [themeValue, setThemeValue] = useState('');
-    const [directionalityValue, setDirectionalityValue] = useState(params["directionality"]);
-    const [contentDensityValue, setContentDensityValue] = useState(params["contentDensity"]);
+    const [directionalityValue, setDirectionalityValue] = useState(params['directionality']);
+    const [contentDensityValue, setContentDensityValue] = useState(params['contentDensity']);
 
     useEffect(() => {
-        setStoryPackage(getPackage(storyContext))
+        setStoryPackage(getPackage(storyContext));
     }, [storyContext]);
 
     useEffect(() => {
@@ -36,28 +36,27 @@ export const SAPContainer = ({children}) => {
             const theme = params[`${storyPackage.value}-theme`] || storyPackage.defaultTheme;
             setThemeValue(theme);
         }
-    }, [storyContext, storyPackage, params])
-
+    }, [storyContext, storyPackage, params]);
 
     const setTheme = (theme: string) => {
         channel.emit(UPDATE_GLOBALS, {
             globals: {
-                ...storyContext.globals,
+                ...storyContext['globals'],
                 [`${storyPackage?.value}-theme`]: theme
             }
         });
         setThemeValue(theme);
-    }
+    };
 
     const setContentDensity = (contentDensity: string) => {
-        channel.emit(UPDATE_GLOBALS, {globals: {...storyContext.globals, contentDensity}});
+        channel.emit(UPDATE_GLOBALS, { globals: { ...storyContext['globals'], contentDensity } });
         setContentDensityValue(contentDensity);
-    }
+    };
 
     const setDirectionality = (directionality: string) => {
-        channel.emit(UPDATE_GLOBALS, {globals: {...storyContext.globals, directionality}});
+        channel.emit(UPDATE_GLOBALS, { globals: { ...storyContext['globals'], directionality } });
         setDirectionalityValue(directionality);
-    }
+    };
 
     return (
         <SAPContext.Provider
