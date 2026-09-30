@@ -3,7 +3,7 @@ import displayModeExampleHtml from "./display-mode.example.html?raw";
 import disabledExampleHtml from "./disabled.example.html?raw";
 import halfValuesExampleHtml from "./half-values.example.html?raw";
 import customIconsExampleHtml from "./custom-icons.example.html?raw";
-import sizesExampleHtml from "./custom-sizes.example.html?raw";
+import sizesExampleHtml from "./sizes.example.html?raw";
 
 import '../../../src/rating-indicator.scss';
 import '../../../src/icon.scss';
@@ -117,7 +117,7 @@ DisplayMode.parameters = {
     description: {
       story: `
 Use display mode for any read-only rating — display-only forms, object headers, cards, facets, and
-inline running text. Add \`.fd-rating-indicator--display-mode\` and the \`readonly\` attribute to the
+inline running text. Add \`.fd-rating-indicator--display-mode\` and \`.is-readonly\` to the
 outer element. Keep \`role="slider"\` on the \`__container\` and add \`aria-readonly="true"\` so the
 value and read-only state are both communicated to assistive technology. The \`tabindex="0"\` keeps
 the element reachable by keyboard for screen reader navigation.

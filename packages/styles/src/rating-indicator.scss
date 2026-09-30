@@ -5,6 +5,17 @@
 
 $block: #{$fd-namespace}-rating-indicator;
 
+@mixin rating-indicator-unselected-items-readonly($font-size, $spacing) {
+  @include fd-readonly() {
+    .fd-rating-indicator__item {
+      &:has(.fd-rating-indicator__icon--unselected + .fd-rating-indicator__icon--unselected) {
+        --ratingIndicator_Font_Size: #{$font-size};
+        --ratingIndicator_Inline_Spacing: #{$spacing};
+      }
+    }
+  }
+}
+
 .#{$block} {
   --ratingIndicator_Opacity: 1;
   --ratingIndicator_Opacity_Hover: 0.9;
@@ -15,17 +26,6 @@ $block: #{$fd-namespace}-rating-indicator;
   --ratingIndicator_Margin_Block: 0.8125rem;
   --ratingIndicator_Color: var(--sapContent_UnratedColor);
   --ratingIndicator_Container_Outline: var(--sapContent_FocusWidth) var(--sapContent_FocusStyle) var(--sapContent_FocusColor);
-
-  @mixin rating-indicator-unselected-items-readonly($font-size, $spacing) {
-    @include fd-readonly() {
-      .fd-rating-indicator__item {
-        &:has(.fd-rating-indicator__icon--unselected + .fd-rating-indicator__icon--unselected) {
-          --ratingIndicator_Font_Size: #{$font-size};
-          --ratingIndicator_Inline_Spacing: #{$spacing};
-        }
-      }
-    }
-  }
 
   @include fd-reset();
 
@@ -72,33 +72,30 @@ $block: #{$fd-namespace}-rating-indicator;
   }
 
   &__icon {
+    @include fd-reset();
+
     &[class*="sap-icon"] {
       color: var(--ratingIndicator_Color);
       font-size: var(--ratingIndicator_Font_Size, 1.5rem);
       box-shadow: var(--sapContent_TextShadow);
     }
-    
+
     position: absolute;
+    inset-inline-start: 0;
 
     &:first-child {
       clip-path: inset(0 48% 0 0);
-      left: 0;
 
       @include fd-rtl() {
         clip-path: inset(0 0 0 48%);
-        left: auto;
-        right: 0;
       }
     }
 
     &:last-child {
       clip-path: inset(0 0 0 50%);
-      left: 0;
 
       @include fd-rtl() {
         clip-path: inset(0 50% 0 0);
-        left: auto;
-        right: 0;
       }
     }
 
