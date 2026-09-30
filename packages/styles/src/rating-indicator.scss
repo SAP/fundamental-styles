@@ -13,7 +13,6 @@ $block: #{$fd-namespace}-rating-indicator;
   --ratingIndicator_Inline_Spacing: 0;
   --ratingIndicator_Item_Spacing: 0.1875rem;
   --ratingIndicator_Margin_Block: 0.8125rem;
-  --ratingIndicator_Margin_Block_Compact: 0.8125rem;
   --ratingIndicator_Color: var(--sapContent_UnratedColor);
   --ratingIndicator_Container_Outline: var(--sapContent_FocusWidth) var(--sapContent_FocusStyle) var(--sapContent_FocusColor);
 
@@ -38,10 +37,6 @@ $block: #{$fd-namespace}-rating-indicator;
   margin-block: var(--ratingIndicator_Margin_Block);
   opacity: var(--ratingIndicator_Opacity);
   cursor: var(--ratingIndicator_Cursor);
-
-  @include fd-compact-or-condensed() {
-    margin-block: var(--ratingIndicator_Margin_Block_Compact);
-  }
 
   &__container {
     @include fd-reset();
@@ -143,8 +138,6 @@ $block: #{$fd-namespace}-rating-indicator;
   &--lg {
     @include rating-indicator-unselected-items-readonly(1.5rem, 0.25rem);
 
-    --ratingIndicator_Margin_Block: 0.75rem;
-    --ratingIndicator_Margin_Block_Compact: 0.5rem;
     --ratingIndicator_Font_Size: 2rem;
     --ratingIndicator_Item_Spacing: 0.25rem;
   }
@@ -152,26 +145,20 @@ $block: #{$fd-namespace}-rating-indicator;
   &--md {
     @include rating-indicator-unselected-items-readonly(1.125rem, 0.1875rem);
 
-    --ratingIndicator_Margin_Block: 0.75rem;
-    --ratingIndicator_Margin_Block_Compact: 0.5rem;
     --ratingIndicator_Font_Size: 1.5rem;
     --ratingIndicator_Item_Spacing: 0.1875rem;
   }
 
   &--sm {
-    @include rating-indicator-unselected-items-readonly(1.03125rem, 0.171875rem);
+    @include rating-indicator-unselected-items-readonly(1.0313rem, 0.1719rem);
 
-    --ratingIndicator_Margin_Block: 0.75rem;
-    --ratingIndicator_Margin_Block_Compact: 0.5rem;
     --ratingIndicator_Font_Size: 1.375rem;
     --ratingIndicator_Item_Spacing: 0.1875rem;
   }
 
   &--xs {
-    @include rating-indicator-unselected-items-readonly(0.5625rem, 0.09375rem);
+    @include rating-indicator-unselected-items-readonly(0.5625rem, 0.0938rem);
 
-    --ratingIndicator_Margin_Block: 0.75rem;
-    --ratingIndicator_Margin_Block_Compact: 0.5rem;
     --ratingIndicator_Font_Size: 0.75rem;
     --ratingIndicator_Item_Spacing: 0.0625rem;
   }

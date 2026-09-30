@@ -60,9 +60,8 @@ margin (\`margin-block\`) but do not change the icon size.
 | Small           | 1.375rem   | \`--sm\`                  |
 | Medium/Default  | 1.5rem     | _n/a_                     |
 | Large           | 2rem       | \`--lg\`                  |
-| Cozy            | 1.5rem     | _n/a_ (default density)   |
-| Compact         | 1.5rem     | \`--compact\`             |
-| Condensed       | 1.5rem     | \`--condensed\`           |
+
+Compact and condensed content density reduces \`margin-block\` automatically — apply the density class at the page or shell level (\`sap-is-compact\` / \`sap-is-condensed\`).
 `
     }
   }
@@ -119,8 +118,9 @@ DisplayMode.parameters = {
       story: `
 Use display mode for any read-only rating — display-only forms, object headers, cards, facets, and
 inline running text. Add \`.fd-rating-indicator--display-mode\` and the \`readonly\` attribute to the
-outer element. Replace \`role="slider"\` with \`role="img"\` on the \`__container\` and provide an
-\`aria-label\` such as \`"Rating: 2 of 5 stars"\`. Remove \`tabindex\` — the element is not focusable.
+outer element. Keep \`role="slider"\` on the \`__container\` and add \`aria-readonly="true"\` so the
+value and read-only state are both communicated to assistive technology. The \`tabindex="0"\` keeps
+the element reachable by keyboard for screen reader navigation.
 
 In display mode, unselected icons are rendered at 75% of the selected icon size.
 This size reduction is a visual-only accessibility aid — it allows selected and unselected ratings to be distinguished by shape rather than color alone.
