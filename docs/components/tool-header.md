@@ -31,11 +31,11 @@ The Tool Header exists on all BTP tools. It is the uppermost section of the tool
 - <code>fd-tool-header__element</code> -&nbsp;a wrapping HTML element around every UI control. The spacing between individual elements in the group is 0.375rem;
         - <code>fd-tool-header__element--hidden</code> -&nbsp;modifier class to hide an element depending on the screen size;
 
-- <code>fd-tool-header__logo</code> -&nbsp;<b>(required)</b> the logo is the logo of the company using the tool. The SAP logo is used as default. The logo is an interactive element that always navigates to the tool's homepage. 
+- <code>fd-tool-header__logo</code> -&nbsp;<b>(required)</b> the logo is the logo of the company using the tool. The SAP logo is used as default. The logo is an interactive element that always navigates to the tool's homepage.
 
-- <code>fd-tool-header__product-name</code> -&nbsp;<b>(required)</b> the Product Name is the official name of the tool. 
+- <code>fd-tool-header__product-name</code> -&nbsp;<b>(required)</b> the Product Name is the official name of the tool.
 
-- <code>fd-tool-header__second-title</code> -&nbsp; the Second Title is an optional second text identifier of the tool. 
+- <code>fd-tool-header__second-title</code> -&nbsp; the Second Title is an optional second text identifier of the tool.
 
 - <code>fd-tool-header__separator</code> -&nbsp; The Separator is an optional element that adds space between the <b>Custom Actions Area</b> (optional), <b>System Actions Area</b> (optional) and <b>User Avatar</b> (required).
 
@@ -372,11 +372,11 @@ This component uses the following BEM elements:
 - <code>fd-tool-header__element</code> -&nbsp;a wrapping HTML element around every UI control. The spacing between individual elements in the group is 0.375rem;
         - <code>fd-tool-header__element--hidden</code> -&nbsp;modifier class to hide an element depending on the screen size;
 
-- <code>fd-tool-header__logo</code> -&nbsp;<b>(required)</b> the logo is the logo of the company using the tool. The SAP logo is used as default. The logo is an interactive element that always navigates to the tool's homepage. 
+- <code>fd-tool-header__logo</code> -&nbsp;<b>(required)</b> the logo is the logo of the company using the tool. The SAP logo is used as default. The logo is an interactive element that always navigates to the tool's homepage.
 
-- <code>fd-tool-header__product-name</code> -&nbsp;<b>(required)</b> the Product Name is the official name of the tool. 
+- <code>fd-tool-header__product-name</code> -&nbsp;<b>(required)</b> the Product Name is the official name of the tool.
 
-- <code>fd-tool-header__second-title</code> -&nbsp; the Second Title is an optional second text identifier of the tool. 
+- <code>fd-tool-header__second-title</code> -&nbsp; the Second Title is an optional second text identifier of the tool.
 
 - <code>fd-tool-header__separator</code> -&nbsp; The Separator is an optional element that adds space between the <b>Custom Actions Area</b> (optional), <b>System Actions Area</b> (optional) and <b>User Avatar</b> (required).
 

@@ -29,7 +29,8 @@ There are two sizes of the toolbar that should be chosen based on the type of de
 | Size | Modifier class | Screen width | Device |
 | :---- | :-------- | :--------- | :------- |
 | Cozy | default | < 599 px | Mobile and small tablets |
-| Compact | \
+| Compact | `is-compact` | 600 px and above | Desktop |
+<br>
 
 ## Usage Guidelines
 
@@ -95,13 +96,13 @@ npm install fundamental-styles
 
 | Class | Description |
 |-------|-------------|
-| `fd-toolbar--active` | Style variant |
-| `fd-toolbar--auto` | Style variant |
-| `fd-toolbar--clear` | Style variant |
-| `fd-toolbar--info` | Style variant |
+| `fd-toolbar--active` | Toolbar can be styled in various ways depending on the use case |
+| `fd-toolbar--auto` | Toolbar can be styled in various ways depending on the use case |
+| `fd-toolbar--clear` | Toolbar can be styled in various ways depending on the use case |
+| `fd-toolbar--info` | Toolbar can be styled in various ways depending on the use case |
 | `fd-toolbar--solid` | Toolbar can be styled in various ways depending on the use case |
-| `fd-toolbar--title` | Style variant |
-| `fd-toolbar--transparent` | Style variant |
+| `fd-toolbar--title` | Toolbar can be styled in various ways depending on the use case |
+| `fd-toolbar--transparent` | Toolbar can be styled in various ways depending on the use case |
 
 ## States
 
@@ -183,7 +184,10 @@ The primary toolbar displays several actions separated by icon buttons. It is di
 
 The Overflow behaviour of the toolbar can place elements in an overflow state when there is not enough space to display all of them.
       The overflowing elements are represented by a button and upon interacting with the button a popover with a list of elements is shown. <br> The vertical spacing between the elements is achieved by additional modifier classes: <br>
-- \
+- `fd-toolbar__overflow-button` for buttons <br>
+- `fd-toolbar__overflow-button--menu` for menu button<br>
+- `fd-toolbar__overflow-label` for label <br>
+- `fd-toolbar__overflow-form-label` for form label <br>
 
 ```html
 <div class="fd-toolbar" role="toolbar" aria-label="Toolbar">
@@ -204,23 +208,24 @@ The Overflow behaviour of the toolbar can place elements in an overflow state wh
                 aria-label="More">
                 <i class="sap-icon--overflow"></i>
             </button>
-            <div class="fd-popover__body fd-popover__body--right fd-popover__body--no-arrow"
-                aria-hidden="false"
-                id="wgxzK85912">
-                <div class="fd-toolbar__overflow">
-                    <button class="fd-button fd-button--transparent fd-toolbar__overflow-button">Edit</button>
-                    <span class="fd-toolbar__separator"></span>
-                    <button class="fd-button fd-button--transparent fd-toolbar__overflow-button">Delete</button>
-                    <span class="fd-toolbar__separator"></span>
-                    <button class="fd-button fd-button--transparent fd-toolbar__overflow-button">Assign</button>
-                    <button class="fd-button fd-button--transparent fd-toolbar__overflow-button">Exit</button>
-                    <span class="fd-toolbar__separator"></span>
-                    <label class="fd-label fd-toolbar__overflow-label">Label</label>
-                    <label class="fd-form-label fd-toolbar__overflow-label">Form Label</label>
-                </div>
+        </div>
+        <div class="fd-popover__body fd-popover__body--right fd-popover__body--no-arrow"
+            aria-hidden="false"
+            id="wgxzK85912">
+            <div class="fd-toolbar__overflow">
+                <button class="fd-button fd-button--transparent fd-toolbar__overflow-button">Edit</button>
+                <span class="fd-toolbar__separator"></span>
+                <button class="fd-button fd-button--transparent fd-toolbar__overflow-button">Delete</button>
+                <span class="fd-toolbar__separator"></span>
+                <button class="fd-button fd-button--transparent fd-toolbar__overflow-button">Assign</button>
+                <button class="fd-button fd-button--transparent fd-toolbar__overflow-button">Exit</button>
+                <span class="fd-toolbar__separator"></span>
+                <label class="fd-label fd-toolbar__overflow-label">Label</label>
+                <label class="fd-form-label fd-toolbar__overflow-label">Form Label</label>
             </div>
         </div>
     </div>
+</div>
 ```
 
 ### Types
@@ -229,7 +234,13 @@ Toolbar can be styled in various ways depending on the use case.
 
 | Types | Modifier class | Description |
 | :-------- | :------------- | :--------------- |
-| Solid | \
+| Solid | `fd-toolbar--solid` | Displays a solid background color. |
+| Transparent | `fd-toolbar--transparent` | Displays a transparent background. |
+| Auto | `fd-toolbar--auto` | Can inherit the design from the parent component it’s being used with. |
+| Info | `fd-toolbar--info` | When the toolbar is set to the active state it becomes an info bar. The info bar is fully clickable and is not recommended to be used as a generic toolbar. Recommended contents are text and an icon. |
+| Title | `fd-toolbar--title` | Should be used whenever a title is required. |
+| No border-bottom | `fd-toolbar--clear` | This is not a type, but it removes the bottom border of each toolbar type. |
+| Active | `fd-toolbar--active` | This is also not a type, but it enables active and hover states in each type. |
 
 ```html
 <h3>Solid</h3>
@@ -249,94 +260,94 @@ Toolbar can be styled in various ways depending on the use case.
     <button class="fd-button fd-button--transparent" aria-label="Chart">
         <i class="sap-icon--pie-chart"></i>
     </button>
-    <h3>Transparent</h3>
-    <div class="fd-toolbar fd-toolbar--transparent" role="toolbar" aria-label="Transparent toolbar">
-        <button class="fd-button fd-button--transparent">Create</button>
-        <button class="fd-button fd-button--transparent">Save</button>
-        <span class="fd-toolbar__spacer"> </span>
-        <button class="fd-button fd-button--transparent">Edit</button>
-        <button class="fd-button fd-button--transparent">Delete</button>
-        <span class="fd-toolbar__separator"></span>
-        <button class="fd-button fd-button--transparent" aria-label="Survey">
-            <i class="sap-icon--survey"></i>
-        </button>
-        <button class="fd-button fd-button--transparent" aria-label="Pool">
-            <i class="sap-icon--pool"></i>
-        </button>
-        <button class="fd-button fd-button--transparent" aria-label="Chart">
-            <i class="sap-icon--pie-chart"></i>
-        </button>
-    </div>
-    <h3>Auto</h3>
-    <div class="fd-toolbar fd-toolbar--auto" role="toolbar" aria-label="Auto toolbar">
-        <button class="fd-button fd-button--transparent">Create</button>
-        <span class="fd-toolbar__spacer"> </span>
-        <button class="fd-button fd-button--transparent">Edit</button>
-        <button class="fd-button fd-button--transparent">Delete</button>
-        <span class="fd-toolbar__separator"></span>
-        <button class="fd-button fd-button--transparent" aria-label="Survey">
-            <i class="sap-icon--survey"></i>
-        </button>
-        <button class="fd-button fd-button--transparent" aria-label="Pool">
-            <i class="sap-icon--pool"></i>
-        </button>
-        <button class="fd-button fd-button--transparent" aria-label="Chart">
-            <i class="sap-icon--pie-chart"></i>
-        </button>
-    </div>
-    <h3>Clear</h3>
-    <div class="fd-toolbar fd-toolbar--clear" role="toolbar" aria-label="Clear toolbar">
-        <span class="fd-toolbar__spacer "> </span>
-        <button class="fd-button fd-button--transparent">Edit</button>
-        <button class="fd-button fd-button--transparent">Delete</button>
-        <span class="fd-toolbar__separator"></span>
-        <button class="fd-button fd-button--transparent" aria-label="Survey">
-            <i class="sap-icon--survey"></i>
-        </button>
-        <button class="fd-button fd-button--transparent" aria-label="Pool">
-            <i class="sap-icon--pool"></i>
-        </button>
-        <button class="fd-button fd-button--transparent" aria-label="Chart">
-            <i class="sap-icon--pie-chart"></i>
-        </button>
-    </div>
-    <h3>Info (not active)</h3>
-    <div class="fd-toolbar fd-toolbar--info" role="toolbar" aria-label="Info, not active toolbar">
-        <span>3 item selected</span>
-        <span class="fd-toolbar__spacer"></span>
-        <i class="sap-icon--undo"></i>
-    </div>
-    <h3>Info (active)</h3>
-    <div class="fd-toolbar fd-toolbar--info fd-toolbar--active" tabindex="0" role="toolbar" aria-label="Info, active toolbar">
-        <span>3 item selected</span>
-        <span class="fd-toolbar__spacer"></span>
-        <i class="sap-icon--undo"></i>
-    </div>
-    <h3>Info (active, hover state)</h3>
-    <div class="fd-toolbar fd-toolbar--info fd-toolbar--active is-hover" tabindex="0" role="toolbar" aria-label="Info, active toolbar, hover state">
-        <span>3 item selected</span>
-        <span class="fd-toolbar__spacer"></span>
-        <i class="sap-icon--undo"></i>
-    </div>
-    <h3>Info (active, active state)</h3>
-    <div class="fd-toolbar fd-toolbar--info fd-toolbar--active is-active" tabindex="0" role="toolbar" aria-label="Info, active toolbar, active state">
-        <span>3 item selected</span>
-        <span class="fd-toolbar__spacer"></span>
-        <i class="sap-icon--undo"></i>
-    </div>
-    <h3>Title</h3>
-    <div class="fd-toolbar fd-toolbar--title" role="toolbar" aria-label="Title toolbar">
-        <h4 class="fd-title fd-title--h4 fd-toolbar__title">Products (104)</h4>
-        <span class="fd-toolbar__spacer"></span>
-        <button class="fd-button fd-button--transparent">Save</button>
-        <button class="fd-button fd-button--transparent">Delete</button>
-    </div>
+</div>
+<h3>Transparent</h3>
+<div class="fd-toolbar fd-toolbar--transparent" role="toolbar" aria-label="Transparent toolbar">
+    <button class="fd-button fd-button--transparent">Create</button>
+    <button class="fd-button fd-button--transparent">Save</button>
+    <span class="fd-toolbar__spacer"> </span>
+    <button class="fd-button fd-button--transparent">Edit</button>
+    <button class="fd-button fd-button--transparent">Delete</button>
+    <span class="fd-toolbar__separator"></span>
+    <button class="fd-button fd-button--transparent" aria-label="Survey">
+        <i class="sap-icon--survey"></i>
+    </button>
+    <button class="fd-button fd-button--transparent" aria-label="Pool">
+        <i class="sap-icon--pool"></i>
+    </button>
+    <button class="fd-button fd-button--transparent" aria-label="Chart">
+        <i class="sap-icon--pie-chart"></i>
+    </button>
+</div>
+<h3>Auto</h3>
+<div class="fd-toolbar fd-toolbar--auto" role="toolbar" aria-label="Auto toolbar">
+    <button class="fd-button fd-button--transparent">Create</button>
+    <span class="fd-toolbar__spacer"> </span>
+    <button class="fd-button fd-button--transparent">Edit</button>
+    <button class="fd-button fd-button--transparent">Delete</button>
+    <span class="fd-toolbar__separator"></span>
+    <button class="fd-button fd-button--transparent" aria-label="Survey">
+        <i class="sap-icon--survey"></i>
+    </button>
+    <button class="fd-button fd-button--transparent" aria-label="Pool">
+        <i class="sap-icon--pool"></i>
+    </button>
+    <button class="fd-button fd-button--transparent" aria-label="Chart">
+        <i class="sap-icon--pie-chart"></i>
+    </button>
+</div>
+<h3>Clear</h3>
+<div class="fd-toolbar fd-toolbar--clear" role="toolbar" aria-label="Clear toolbar">
+    <span class="fd-toolbar__spacer "> </span>
+    <button class="fd-button fd-button--transparent">Edit</button>
+    <button class="fd-button fd-button--transparent">Delete</button>
+    <span class="fd-toolbar__separator"></span>
+    <button class="fd-button fd-button--transparent" aria-label="Survey">
+        <i class="sap-icon--survey"></i>
+    </button>
+    <button class="fd-button fd-button--transparent" aria-label="Pool">
+        <i class="sap-icon--pool"></i>
+    </button>
+    <button class="fd-button fd-button--transparent" aria-label="Chart">
+        <i class="sap-icon--pie-chart"></i>
+    </button>
+</div>
+<h3>Info (not active)</h3>
+<div class="fd-toolbar fd-toolbar--info" role="toolbar" aria-label="Info, not active toolbar">
+    <span>3 item selected</span>
+    <span class="fd-toolbar__spacer"></span>
+    <i class="sap-icon--undo"></i>
+</div>
+<h3>Info (active)</h3>
+<div class="fd-toolbar fd-toolbar--info fd-toolbar--active" tabindex="0" role="toolbar" aria-label="Info, active toolbar">
+    <span>3 item selected</span>
+    <span class="fd-toolbar__spacer"></span>
+    <i class="sap-icon--undo"></i>
+</div>
+<h3>Info (active, hover state)</h3>
+<div class="fd-toolbar fd-toolbar--info fd-toolbar--active is-hover" tabindex="0" role="toolbar" aria-label="Info, active toolbar, hover state">
+    <span>3 item selected</span>
+    <span class="fd-toolbar__spacer"></span>
+    <i class="sap-icon--undo"></i>
+</div>
+<h3>Info (active, active state)</h3>
+<div class="fd-toolbar fd-toolbar--info fd-toolbar--active is-active" tabindex="0" role="toolbar" aria-label="Info, active toolbar, active state">
+    <span>3 item selected</span>
+    <span class="fd-toolbar__spacer"></span>
+    <i class="sap-icon--undo"></i>
+</div>
+<h3>Title</h3>
+<div class="fd-toolbar fd-toolbar--title" role="toolbar" aria-label="Title toolbar">
+    <h4 class="fd-title fd-title--h4 fd-toolbar__title">Products (104)</h4>
+    <span class="fd-toolbar__spacer"></span>
+    <button class="fd-button fd-button--transparent">Save</button>
+    <button class="fd-button fd-button--transparent">Delete</button>
 </div>
 ```
 
 ### Separators
 
-Separators should be used to visually separate items from each other. To display separators in toolbars, add the \
+Separators should be used to visually separate items from each other. To display separators in toolbars, add the `fd-toolbar__separator` class after the component you are separating.
 
 ```html
 <div class="fd-toolbar" role="toolbar" aria-label="Toolbar">
@@ -363,7 +374,9 @@ Separators should be used to visually separate items from each other. To display
 
 ### Alignment
 
-Toolbars are typically used for left/right alignment; however, they can be displayed in any way with the \
+Toolbars are typically used for left/right alignment; however, they can be displayed in any way with the `fd-toolbar__spacer` class.
+
+**Note:** Spacers share the horizontal space equally; therefore, the content is not centered as precisely as it is in the **Bar** component.
 
 ```html
 <h3>Left and right-aligned</h3>

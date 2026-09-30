@@ -2,8 +2,8 @@
 component: text
 title: Text
 category: text
-selector: 
-cssFile: 
+selector:
+cssFile:
 sourcePath: packages/common-css/stories/text/text.stories.js
 tags: []
 dependencies: []
@@ -117,7 +117,7 @@ The default text component can display lines of text that wrap to the next line 
 
 ### Whitespace
 
-The text component has a property that allows browsers to render specified indents and whitespace. To display indents and/or whitespace, use the \
+The text component has a property that allows browsers to render specified indents and whitespace. To display indents and/or whitespace, use the `.fd-text-pre-wrap` class or `data-wrap` attribute to `.fd-text` class.
 
 ```html
 <style>
@@ -187,7 +187,14 @@ The text component has a property that allows browsers to render specified inden
 
 The text component can be displayed with a maximum number of lines.
 When the maximum is reached, the text truncates and displays an ellipsis. To display text with a maximum line count,
-use the \
+use the `.fd-text-max-lines` class and an inline style rule with the number of
+lines to the main element. For example, add `style="-webkit-line-clamp: 3;"` to display
+three lines of text.
+
+You can also add the `data-lines` attribute to `.fd-text` class and specify the number of lines.
+
+**Note**: The property `-webkit-line-clamp` doesn't work in IE11 and should be changed
+to `height`. For example, `style="height: 200px;"`.
 
 ```html
 <style>
@@ -304,7 +311,18 @@ use the \
 ### Hyphenation
 
 The text component can display words that are broken at appropriate hyphenation
-points in a text block. To display hyphens, use the \
+points in a text block. To display hyphens, use the `.fd-text-hyphenation` class or or `data-hyphens` attribute to `.fd-text` class.
+
+**It is also possible to suggest line break opportunities with two Unicode characters that manually specify
+potential line breakpoints:**
+
+- Hyphen: The "hard" hyphen character indicates a visible line break opportunity.
+Even if the line is not actually broken at that point, the hyphen is still displayed.
+
+- Shy: An invisible, "soft" hyphen. Although this character is not visible, it marks a place
+where the browser should break the word if hyphenation is necessary.
+
+In HTML, add the `&shy;` Unicode to insert a soft hyphen.
 
 ```html
 <style>

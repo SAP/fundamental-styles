@@ -2,8 +2,8 @@
 component: icon
 title: Components/Icons/SAP Icons
 category: Components
-selector: 
-cssFile: 
+selector:
+cssFile:
 sourcePath: packages/styles/stories/Components/Icons/icon/SAPIcons/icon.stories.js
 generatedAt: 2026-05-28T15:51:35.542Z
 ---

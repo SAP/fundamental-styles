@@ -1238,143 +1238,141 @@ For <code>Narrow</code> variant of Side Navigation apply <code>.fdx-side-nav--na
 
 ```html
 <h3>Level 1 Header</h3>
-<div class="fd-popover">
-    <div class="fd-popover__control">
 
-        <nav class="fdx-side-nav__popover-body fd-popover__body fd-popover__body--no-arrow"">
-            <ul class="fdx-nested-list level-2">
-                <li class="fdx-nested-list__item fdx-nested-list__item--header">
-                    <h3 class="fdx-nested-list__link">
-                        <div class="fdx-nested-list__link-container">
-                            <span class="fdx-nested-list__title">Sales</span>
-                        </div>
-                    </h3>
-                </li>
-                <li class="fdx-nested-list__item">
-                    <a class="fdx-nested-list__link" href="#">
-                        <div class="fdx-nested-list__link-container">
-                            <span class="fdx-nested-list__title">Level 2 Item</span>
-                        </div>
-                    </a>
-                </li>
-                <li class="fdx-nested-list__item">
-                    <button class="fdx-nested-list__link is-selected" aria-expanded="true" aria-label="Expand Level 3">
-                        <div class="fdx-nested-list__link-container">
-                            <span class="fdx-nested-list__title">Level 2 Item</span>
-                            <i class="fdx-nested-list__arrow sap-icon--navigation-down-arrow" role="presentation"></i>
-                        </div>
-                    </button>
-                    <ul class="fdx-nested-list level-3" aria-hidden="false">
-                        <li class="fdx-nested-list__item">
-                            <a class="fdx-nested-list__link" href="#">
-                                <div class="fdx-nested-list__link-container">
-                                    <span class="fdx-nested-list__title">Level 3 Item</span>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="fdx-nested-list__item">
-                            <a class="fdx-nested-list__link" href="#">
-                                <div class="fdx-nested-list__link-container">
-                                    <span class="fdx-nested-list__title">Level 3 Item</span>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="fdx-nested-list__item">
-                            <a class="fdx-nested-list__link" href="#">
-                                <div class="fdx-nested-list__link-container">
-                                    <span class="fdx-nested-list__title">Level 3 Item</span>
-                                </div>
-                            </a>
-                        </li>
-                    </ul>
-                </li>
-                <li class="fdx-nested-list__item">
-                    <a class="fdx-nested-list__link" href="#">
-                        <div class="fdx-nested-list__link-container">
-                            <span class="fdx-nested-list__title">Level 2 Item</span>
-                        </div>
-                    </a>
-                </li>
-                <li class="fdx-nested-list__item">
-                    <a class="fdx-nested-list__link" href="#">
-                        <div class="fdx-nested-list__link-container">
-                            <span class="fdx-nested-list__title">Level 2 Item</span>
-                        </div>
-                    </a>
-                </li>
-            </ul>
-        </nav>
-    </div>
+<div class="fd-popover">
+
+    <nav class="fdx-side-nav__popover-body fd-popover__body fd-popover__body--no-arrow"">
+        <ul class="fdx-nested-list level-2">
+            <li class="fdx-nested-list__item fdx-nested-list__item--header">
+                <h3 class="fdx-nested-list__link">
+                    <div class="fdx-nested-list__link-container">
+                        <span class="fdx-nested-list__title">Sales</span>
+                    </div>
+                </h3>
+            </li>
+            <li class="fdx-nested-list__item">
+                <a class="fdx-nested-list__link" href="#">
+                    <div class="fdx-nested-list__link-container">
+                        <span class="fdx-nested-list__title">Level 2 Item</span>
+                    </div>
+                </a>
+            </li>
+            <li class="fdx-nested-list__item">
+                <button class="fdx-nested-list__link is-selected" aria-expanded="true" aria-label="Expand Level 3">
+                    <div class="fdx-nested-list__link-container">
+                        <span class="fdx-nested-list__title">Level 2 Item</span>
+                        <i class="fdx-nested-list__arrow sap-icon--navigation-down-arrow" role="presentation"></i>
+                    </div>
+                </button>
+                <ul class="fdx-nested-list level-3" aria-hidden="false">
+                    <li class="fdx-nested-list__item">
+                        <a class="fdx-nested-list__link" href="#">
+                            <div class="fdx-nested-list__link-container">
+                                <span class="fdx-nested-list__title">Level 3 Item</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="fdx-nested-list__item">
+                        <a class="fdx-nested-list__link" href="#">
+                            <div class="fdx-nested-list__link-container">
+                                <span class="fdx-nested-list__title">Level 3 Item</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="fdx-nested-list__item">
+                        <a class="fdx-nested-list__link" href="#">
+                            <div class="fdx-nested-list__link-container">
+                                <span class="fdx-nested-list__title">Level 3 Item</span>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li class="fdx-nested-list__item">
+                <a class="fdx-nested-list__link" href="#">
+                    <div class="fdx-nested-list__link-container">
+                        <span class="fdx-nested-list__title">Level 2 Item</span>
+                    </div>
+                </a>
+            </li>
+            <li class="fdx-nested-list__item">
+                <a class="fdx-nested-list__link" href="#">
+                    <div class="fdx-nested-list__link-container">
+                        <span class="fdx-nested-list__title">Level 2 Item</span>
+                    </div>
+                </a>
+            </li>
+        </ul>
+    </nav>
 </div>
 
 <h3>Level 1 Navigation</h3>
-<div class="fd-popover">
-    <div class="fd-popover__control">
 
-        <nav class="fdx-side-nav__popover-body fd-popover__body fd-popover__body--no-arrow"">
-            <ul class="fdx-nested-list level-2">
-                <li class="fdx-nested-list__item fdx-nested-list__item--header">
-                    <a class="fdx-nested-list__link">
-                        <div class="fdx-nested-list__link-container">
-                            <span class="fdx-nested-list__title">Sales</span>
-                        </div>
-                    </a>
-                </li>
-                <li class="fdx-nested-list__item">
-                    <a class="fdx-nested-list__link" href="#">
-                        <div class="fdx-nested-list__link-container">
-                            <span class="fdx-nested-list__title">Level 2 Item</span>
-                        </div>
-                    </a>
-                </li>
-                <li class="fdx-nested-list__item">
-                    <button class="fdx-nested-list__link is-selected" aria-expanded="true" aria-label="Expand Level 3">
-                        <div class="fdx-nested-list__link-container">
-                            <span class="fdx-nested-list__title">Level 2 Item</span>
-                            <i class="fdx-nested-list__arrow sap-icon--navigation-down-arrow" role="presentation"></i>
-                        </div>
-                    </button>
-                    <ul class="fdx-nested-list level-3" aria-hidden="false">
-                        <li class="fdx-nested-list__item">
-                            <a class="fdx-nested-list__link" href="#">
-                                <div class="fdx-nested-list__link-container">
-                                    <span class="fdx-nested-list__title">Level 3 Item</span>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="fdx-nested-list__item">
-                            <a class="fdx-nested-list__link" href="#">
-                                <div class="fdx-nested-list__link-container">
-                                    <span class="fdx-nested-list__title">Level 3 Item</span>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="fdx-nested-list__item">
-                            <a class="fdx-nested-list__link" href="#">
-                                <div class="fdx-nested-list__link-container">
-                                    <span class="fdx-nested-list__title">Level 3 Item</span>
-                                </div>
-                            </a>
-                        </li>
-                    </ul>
-                </li>
-                <li class="fdx-nested-list__item">
-                    <a class="fdx-nested-list__link" href="#">
-                        <div class="fdx-nested-list__link-container">
-                            <span class="fdx-nested-list__title">Level 2 Item</span>
-                        </div>
-                    </a>
-                </li>
-                <li class="fdx-nested-list__item">
-                    <a class="fdx-nested-list__link" href="#">
-                        <div class="fdx-nested-list__link-container">
-                            <span class="fdx-nested-list__title">Level 2 Item</span>
-                        </div>
-                    </a>
-                </li>
-            </ul>
-        </nav>
-    </div>
+<div class="fd-popover">
+
+    <nav class="fdx-side-nav__popover-body fd-popover__body fd-popover__body--no-arrow"">
+        <ul class="fdx-nested-list level-2">
+            <li class="fdx-nested-list__item fdx-nested-list__item--header">
+                <a class="fdx-nested-list__link">
+                    <div class="fdx-nested-list__link-container">
+                        <span class="fdx-nested-list__title">Sales</span>
+                    </div>
+                </a>
+            </li>
+            <li class="fdx-nested-list__item">
+                <a class="fdx-nested-list__link" href="#">
+                    <div class="fdx-nested-list__link-container">
+                        <span class="fdx-nested-list__title">Level 2 Item</span>
+                    </div>
+                </a>
+            </li>
+            <li class="fdx-nested-list__item">
+                <button class="fdx-nested-list__link is-selected" aria-expanded="true" aria-label="Expand Level 3">
+                    <div class="fdx-nested-list__link-container">
+                        <span class="fdx-nested-list__title">Level 2 Item</span>
+                        <i class="fdx-nested-list__arrow sap-icon--navigation-down-arrow" role="presentation"></i>
+                    </div>
+                </button>
+                <ul class="fdx-nested-list level-3" aria-hidden="false">
+                    <li class="fdx-nested-list__item">
+                        <a class="fdx-nested-list__link" href="#">
+                            <div class="fdx-nested-list__link-container">
+                                <span class="fdx-nested-list__title">Level 3 Item</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="fdx-nested-list__item">
+                        <a class="fdx-nested-list__link" href="#">
+                            <div class="fdx-nested-list__link-container">
+                                <span class="fdx-nested-list__title">Level 3 Item</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="fdx-nested-list__item">
+                        <a class="fdx-nested-list__link" href="#">
+                            <div class="fdx-nested-list__link-container">
+                                <span class="fdx-nested-list__title">Level 3 Item</span>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li class="fdx-nested-list__item">
+                <a class="fdx-nested-list__link" href="#">
+                    <div class="fdx-nested-list__link-container">
+                        <span class="fdx-nested-list__title">Level 2 Item</span>
+                    </div>
+                </a>
+            </li>
+            <li class="fdx-nested-list__item">
+                <a class="fdx-nested-list__link" href="#">
+                    <div class="fdx-nested-list__link-container">
+                        <span class="fdx-nested-list__title">Level 2 Item</span>
+                    </div>
+                </a>
+            </li>
+        </ul>
+    </nav>
 </div>
 ```
 
@@ -1384,72 +1382,70 @@ Side Navigation Popover can react dynamically to long label texts in navigationa
 
 ```html
 <div class="fd-popover">
-    <div class="fd-popover__control">
 
-        <nav class="fdx-side-nav__popover-body fdx-side-nav__popover-body--dynamic-width fd-popover__body fd-popover__body--no-arrow"">
-            <ul class="fdx-nested-list level-2">
-                <li class="fdx-nested-list__item fdx-nested-list__item--header">
-                    <h3 class="fdx-nested-list__link">
-                        <div class="fdx-nested-list__link-container">
-                            <span class="fdx-nested-list__title">Sales</span>
-                        </div>
-                    </h3>
-                </li>
-                <li class="fdx-nested-list__item">
-                    <a class="fdx-nested-list__link" href="#">
-                        <div class="fdx-nested-list__link-container">
-                            <span class="fdx-nested-list__title">Level 2 Item</span>
-                        </div>
-                    </a>
-                </li>
-                <li class="fdx-nested-list__item">
-                    <button class="fdx-nested-list__link is-selected" aria-expanded="true" aria-label="Expand Level 3">
-                        <div class="fdx-nested-list__link-container">
-                            <span class="fdx-nested-list__title">Lorem ipsum dolor sit amet, consectetur adipiscing elit</span>
-                            <i class="fdx-nested-list__arrow sap-icon--navigation-down-arrow" role="presentation"></i>
-                        </div>
-                    </button>
-                    <ul class="fdx-nested-list level-3" aria-hidden="false">
-                        <li class="fdx-nested-list__item">
-                            <a class="fdx-nested-list__link" href="#">
-                                <div class="fdx-nested-list__link-container">
-                                    <span class="fdx-nested-list__title">Level 3 Item</span>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="fdx-nested-list__item">
-                            <a class="fdx-nested-list__link" href="#">
-                                <div class="fdx-nested-list__link-container">
-                                    <span class="fdx-nested-list__title">Level 3 Item</span>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="fdx-nested-list__item">
-                            <a class="fdx-nested-list__link" href="#">
-                                <div class="fdx-nested-list__link-container">
-                                    <span class="fdx-nested-list__title">Level 3 Item</span>
-                                </div>
-                            </a>
-                        </li>
-                    </ul>
-                </li>
-                <li class="fdx-nested-list__item">
-                    <a class="fdx-nested-list__link" href="#">
-                        <div class="fdx-nested-list__link-container">
-                            <span class="fdx-nested-list__title">Level 2 Item</span>
-                        </div>
-                    </a>
-                </li>
-                <li class="fdx-nested-list__item">
-                    <a class="fdx-nested-list__link" href="#">
-                        <div class="fdx-nested-list__link-container">
-                            <span class="fdx-nested-list__title">Level 2 Item</span>
-                        </div>
-                    </a>
-                </li>
-            </ul>
-        </nav>
-    </div>
+    <nav class="fdx-side-nav__popover-body fdx-side-nav__popover-body--dynamic-width fd-popover__body fd-popover__body--no-arrow"">
+        <ul class="fdx-nested-list level-2">
+            <li class="fdx-nested-list__item fdx-nested-list__item--header">
+                <h3 class="fdx-nested-list__link">
+                    <div class="fdx-nested-list__link-container">
+                        <span class="fdx-nested-list__title">Sales</span>
+                    </div>
+                </h3>
+            </li>
+            <li class="fdx-nested-list__item">
+                <a class="fdx-nested-list__link" href="#">
+                    <div class="fdx-nested-list__link-container">
+                        <span class="fdx-nested-list__title">Level 2 Item</span>
+                    </div>
+                </a>
+            </li>
+            <li class="fdx-nested-list__item">
+                <button class="fdx-nested-list__link is-selected" aria-expanded="true" aria-label="Expand Level 3">
+                    <div class="fdx-nested-list__link-container">
+                        <span class="fdx-nested-list__title">Lorem ipsum dolor sit amet, consectetur adipiscing elit</span>
+                        <i class="fdx-nested-list__arrow sap-icon--navigation-down-arrow" role="presentation"></i>
+                    </div>
+                </button>
+                <ul class="fdx-nested-list level-3" aria-hidden="false">
+                    <li class="fdx-nested-list__item">
+                        <a class="fdx-nested-list__link" href="#">
+                            <div class="fdx-nested-list__link-container">
+                                <span class="fdx-nested-list__title">Level 3 Item</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="fdx-nested-list__item">
+                        <a class="fdx-nested-list__link" href="#">
+                            <div class="fdx-nested-list__link-container">
+                                <span class="fdx-nested-list__title">Level 3 Item</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="fdx-nested-list__item">
+                        <a class="fdx-nested-list__link" href="#">
+                            <div class="fdx-nested-list__link-container">
+                                <span class="fdx-nested-list__title">Level 3 Item</span>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li class="fdx-nested-list__item">
+                <a class="fdx-nested-list__link" href="#">
+                    <div class="fdx-nested-list__link-container">
+                        <span class="fdx-nested-list__title">Level 2 Item</span>
+                    </div>
+                </a>
+            </li>
+            <li class="fdx-nested-list__item">
+                <a class="fdx-nested-list__link" href="#">
+                    <div class="fdx-nested-list__link-container">
+                        <span class="fdx-nested-list__title">Level 2 Item</span>
+                    </div>
+                </a>
+            </li>
+        </ul>
+    </nav>
 </div>
 ```
 
@@ -1605,72 +1601,70 @@ For <code>Narrow</code> variant of Side Navigation in compact mode apply <code>.
 
 ```html
 <div class="fd-popover">
-    <div class="fd-popover__control">
 
-        <nav class="fdx-side-nav__popover-body fd-popover__body fd-popover__body--no-arrow"">
-            <ul class="fdx-nested-list fdx-nested-list--compact level-2">
-                <li class="fdx-nested-list__item fdx-nested-list__item--header">
-                    <h3 class="fdx-nested-list__link">
-                        <div class="fdx-nested-list__link-container">
-                            <span class="fdx-nested-list__title">Sales</span>
-                        </div>
-                    </h3>
-                </li>
-                <li class="fdx-nested-list__item">
-                    <a class="fdx-nested-list__link" href="#">
-                        <div class="fdx-nested-list__link-container">
-                            <span class="fdx-nested-list__title">Level 2 Item</span>
-                        </div>
-                    </a>
-                </li>
-                <li class="fdx-nested-list__item">
-                    <button class="fdx-nested-list__link is-selected" aria-expanded="true" aria-label="Expand Level 3">
-                        <div class="fdx-nested-list__link-container">
-                            <span class="fdx-nested-list__title">Level 2 Item</span>
-                            <i class="fdx-nested-list__arrow sap-icon--navigation-down-arrow" role="presentation"></i>
-                        </div>
-                    </button>
-                    <ul class="fdx-nested-list level-3" aria-hidden="false">
-                        <li class="fdx-nested-list__item">
-                            <a class="fdx-nested-list__link" href="#">
-                                <div class="fdx-nested-list__link-container">
-                                    <span class="fdx-nested-list__title">Level 3 Item</span>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="fdx-nested-list__item">
-                            <a class="fdx-nested-list__link" href="#">
-                                <div class="fdx-nested-list__link-container">
-                                    <span class="fdx-nested-list__title">Level 3 Item</span>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="fdx-nested-list__item">
-                            <a class="fdx-nested-list__link" href="#">
-                                <div class="fdx-nested-list__link-container">
-                                    <span class="fdx-nested-list__title">Level 3 Item</span>
-                                </div>
-                            </a>
-                        </li>
-                    </ul>
-                </li>
-                <li class="fdx-nested-list__item">
-                    <a class="fdx-nested-list__link" href="#">
-                        <div class="fdx-nested-list__link-container">
-                            <span class="fdx-nested-list__title">Level 2 Item</span>
-                        </div>
-                    </a>
-                </li>
-                <li class="fdx-nested-list__item">
-                    <a class="fdx-nested-list__link" href="#">
-                        <div class="fdx-nested-list__link-container">
-                            <span class="fdx-nested-list__title">Level 2 Item</span>
-                        </div>
-                    </a>
-                </li>
-            </ul>
-        </nav>
-    </div>
+    <nav class="fdx-side-nav__popover-body fd-popover__body fd-popover__body--no-arrow"">
+        <ul class="fdx-nested-list fdx-nested-list--compact level-2">
+            <li class="fdx-nested-list__item fdx-nested-list__item--header">
+                <h3 class="fdx-nested-list__link">
+                    <div class="fdx-nested-list__link-container">
+                        <span class="fdx-nested-list__title">Sales</span>
+                    </div>
+                </h3>
+            </li>
+            <li class="fdx-nested-list__item">
+                <a class="fdx-nested-list__link" href="#">
+                    <div class="fdx-nested-list__link-container">
+                        <span class="fdx-nested-list__title">Level 2 Item</span>
+                    </div>
+                </a>
+            </li>
+            <li class="fdx-nested-list__item">
+                <button class="fdx-nested-list__link is-selected" aria-expanded="true" aria-label="Expand Level 3">
+                    <div class="fdx-nested-list__link-container">
+                        <span class="fdx-nested-list__title">Level 2 Item</span>
+                        <i class="fdx-nested-list__arrow sap-icon--navigation-down-arrow" role="presentation"></i>
+                    </div>
+                </button>
+                <ul class="fdx-nested-list level-3" aria-hidden="false">
+                    <li class="fdx-nested-list__item">
+                        <a class="fdx-nested-list__link" href="#">
+                            <div class="fdx-nested-list__link-container">
+                                <span class="fdx-nested-list__title">Level 3 Item</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="fdx-nested-list__item">
+                        <a class="fdx-nested-list__link" href="#">
+                            <div class="fdx-nested-list__link-container">
+                                <span class="fdx-nested-list__title">Level 3 Item</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="fdx-nested-list__item">
+                        <a class="fdx-nested-list__link" href="#">
+                            <div class="fdx-nested-list__link-container">
+                                <span class="fdx-nested-list__title">Level 3 Item</span>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li class="fdx-nested-list__item">
+                <a class="fdx-nested-list__link" href="#">
+                    <div class="fdx-nested-list__link-container">
+                        <span class="fdx-nested-list__title">Level 2 Item</span>
+                    </div>
+                </a>
+            </li>
+            <li class="fdx-nested-list__item">
+                <a class="fdx-nested-list__link" href="#">
+                    <div class="fdx-nested-list__link-container">
+                        <span class="fdx-nested-list__title">Level 2 Item</span>
+                    </div>
+                </a>
+            </li>
+        </ul>
+    </nav>
 </div>
 ```
 
@@ -1769,6 +1763,154 @@ By default, side navigation will wrap long text into multiple lines if the width
                     <div class="fdx-nested-list__link-container">
                         <i role="presentation" class="fdx-nested-list__icon sap-icon--home"></i>
                         <span class="fdx-nested-list__title">Overview</span>
+                    </div>
+                </a>
+            </li>
+            <li class="fdx-nested-list__item">
+                <a class="fdx-nested-list__link is-selected" href="#">
+                    <div class="fdx-nested-list__link-container">
+                        <i role="presentation" class="fdx-nested-list__icon sap-icon--calendar"></i>
+                        <span class="fdx-nested-list__title"
+                            >Lorem ipsum dolor sit amet, consectetur adipiscing elit</span
+                            >
+                        </div>
+                    </a>
+                </li>
+                <li class="fdx-nested-list__item">
+                    <a class="fdx-nested-list__link" href="#">
+                        <div class="fdx-nested-list__link-container">
+                            <i role="presentation" class="fdx-nested-list__icon sap-icon--employee"></i>
+                            <span class="fdx-nested-list__title">Sed do eiusmod tempor incididunt ut labore</span>
+                        </div>
+                    </a>
+                </li>
+                <li class="fdx-nested-list__item">
+                    <a class="fdx-nested-list__link" href="#">
+                        <div class="fdx-nested-list__link-container">
+                            <i role="presentation" class="fdx-nested-list__icon sap-icon--activities"></i>
+                            <span class="fdx-nested-list__title">Nemo enim ipsam</span>
+                        </div>
+                    </a>
+                </li>
+                <li class="fdx-nested-list__item fdx-nested-list__item--group">
+                    <span class="fdx-nested-list__title">Group Header</span>
+                </li>
+                <li class="fdx-nested-list__item">
+                    <a class="fdx-nested-list__link" href="#">
+                        <div class="fdx-nested-list__link-container">
+                            <i role="presentation" class="fdx-nested-list__icon sap-icon--lightbulb"></i>
+                            <span class="fdx-nested-list__title">Neque porro quisquam est, qui dolorem ipsum</span>
+                        </div>
+                    </a>
+                </li>
+                <li class="fdx-nested-list__item">
+                    <a class="fdx-nested-list__link" href="#">
+                        <div class="fdx-nested-list__link-container">
+                            <i role="presentation" class="fdx-nested-list__icon sap-icon--history"></i>
+                            <span class="fdx-nested-list__title">Quis autem vel eum iure</span>
+                        </div>
+                    </a>
+                </li>
+                <li class="fdx-nested-list__item">
+                    <a class="fdx-nested-list__link" href="#">
+                        <div class="fdx-nested-list__link-container">
+                            <i role="presentation" class="fdx-nested-list__icon sap-icon--future"></i>
+                            <span class="fdx-nested-list__title">Excepteur sint occaecat cupidatat</span>
+                        </div>
+                    </a>
+                </li>
+                <li class="fdx-nested-list__item">
+                    <a class="fdx-nested-list__link" href="#">
+                        <div class="fdx-nested-list__link-container">
+                            <i role="presentation" class="fdx-nested-list__icon sap-icon--activities"></i>
+                            <span class="fdx-nested-list__title">Ut enim ad minima veniam</span>
+                        </div>
+                    </a>
+                </li>
+                <li class="fdx-nested-list__item">
+                    <a class="fdx-nested-list__link" href="#">
+                        <div class="fdx-nested-list__link-container">
+                            <i role="presentation" class="fdx-nested-list__icon sap-icon--lead"></i>
+                            <span class="fdx-nested-list__title">Neque porro quisquam</span>
+                        </div>
+                    </a>
+                </li>
+                <li class="fdx-nested-list__item">
+                    <a class="fdx-nested-list__link" href="#">
+                        <div class="fdx-nested-list__link-container">
+                            <i role="presentation" class="fdx-nested-list__icon sap-icon--notes"></i>
+                            <span class="fdx-nested-list__title">Excepteur sint occaecat cupidatat</span>
+                        </div>
+                    </a>
+                </li>
+                <li class="fdx-nested-list__item">
+                    <a class="fdx-nested-list__link" href="#">
+                        <div class="fdx-nested-list__link-container">
+                            <i role="presentation" class="fdx-nested-list__icon sap-icon--map"></i>
+                            <span class="fdx-nested-list__title">Neque porro quisquam</span>
+                        </div>
+                    </a>
+                </li>
+                <li class="fdx-nested-list__item">
+                    <a class="fdx-nested-list__link" href="#">
+                        <div class="fdx-nested-list__link-container">
+                            <i role="presentation" class="fdx-nested-list__icon sap-icon--log"></i>
+                            <span class="fdx-nested-list__title">Ut enim ad minima veniam</span>
+                        </div>
+                    </a>
+                </li>
+                <li class="fdx-nested-list__item">
+                    <a class="fdx-nested-list__link" href="#">
+                        <div class="fdx-nested-list__link-container">
+                            <i role="presentation" class="fdx-nested-list__icon sap-icon--phone"></i>
+                            <span class="fdx-nested-list__title">Excepteur sint occaecat cupidatat</span>
+                        </div>
+                    </a>
+                </li>
+                <li class="fdx-nested-list__item">
+                    <a class="fdx-nested-list__link" href="#">
+                        <div class="fdx-nested-list__link-container">
+                            <i role="presentation" class="fdx-nested-list__icon sap-icon--product"></i>
+                            <span class="fdx-nested-list__title">Ut enim ad minima veniam</span>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <nav class="fdx-side-nav__utility" aria-label="Utility Menu">
+            <ul class="fdx-nested-list level-1">
+                <li class="fdx-nested-list__item">
+                    <a class="fdx-nested-list__link" href="#">
+                        <div class="fdx-nested-list__link-container">
+                            <i role="presentation" class="fdx-nested-list__icon sap-icon--compare"></i>
+                            <span class="fdx-nested-list__title">Duis aute irure dolor </span>
+                        </div>
+                    </a>
+                </li>
+                <li class="fdx-nested-list__item">
+                    <a class="fdx-nested-list__link" href="#">
+                        <div class="fdx-nested-list__link-container">
+                            <i role="presentation" class="fdx-nested-list__icon sap-icon--chain-link"></i>
+                            <span class="fdx-nested-list__title">Neque porro quisquam</span>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="fdx-side-nav fdx-side-nav--single-line">
+        <nav class="fdx-side-nav__main-navigation" aria-label="Main Menu">
+            <ul class="fdx-nested-list level-1">
+                <li class="fdx-nested-list__item fdx-nested-list__item--group">
+                    <span class="fdx-nested-list__title">Group Header</span>
+                </li>
+                <li class="fdx-nested-list__item">
+                    <a class="fdx-nested-list__link" href="#">
+                        <div class="fdx-nested-list__link-container">
+                            <i role="presentation" class="fdx-nested-list__icon sap-icon--home"></i>
+                            <span class="fdx-nested-list__title">Overview</span>
+                        </div>
                     </a>
                 </li>
                 <li class="fdx-nested-list__item">
@@ -1902,154 +2044,6 @@ By default, side navigation will wrap long text into multiple lines if the width
                     </li>
                 </ul>
             </nav>
-        </div>
-
-        <div class="fdx-side-nav fdx-side-nav--single-line">
-            <nav class="fdx-side-nav__main-navigation" aria-label="Main Menu">
-                <ul class="fdx-nested-list level-1">
-                    <li class="fdx-nested-list__item fdx-nested-list__item--group">
-                        <span class="fdx-nested-list__title">Group Header</span>
-                    </li>
-                    <li class="fdx-nested-list__item">
-                        <a class="fdx-nested-list__link" href="#">
-                            <div class="fdx-nested-list__link-container">
-                                <i role="presentation" class="fdx-nested-list__icon sap-icon--home"></i>
-                                <span class="fdx-nested-list__title">Overview</span>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="fdx-nested-list__item">
-                        <a class="fdx-nested-list__link is-selected" href="#">
-                            <div class="fdx-nested-list__link-container">
-                                <i role="presentation" class="fdx-nested-list__icon sap-icon--calendar"></i>
-                                <span class="fdx-nested-list__title"
-                                    >Lorem ipsum dolor sit amet, consectetur adipiscing elit</span
-                                    >
-                                </div>
-                            </a>
-                        </li>
-                        <li class="fdx-nested-list__item">
-                            <a class="fdx-nested-list__link" href="#">
-                                <div class="fdx-nested-list__link-container">
-                                    <i role="presentation" class="fdx-nested-list__icon sap-icon--employee"></i>
-                                    <span class="fdx-nested-list__title">Sed do eiusmod tempor incididunt ut labore</span>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="fdx-nested-list__item">
-                            <a class="fdx-nested-list__link" href="#">
-                                <div class="fdx-nested-list__link-container">
-                                    <i role="presentation" class="fdx-nested-list__icon sap-icon--activities"></i>
-                                    <span class="fdx-nested-list__title">Nemo enim ipsam</span>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="fdx-nested-list__item fdx-nested-list__item--group">
-                            <span class="fdx-nested-list__title">Group Header</span>
-                        </li>
-                        <li class="fdx-nested-list__item">
-                            <a class="fdx-nested-list__link" href="#">
-                                <div class="fdx-nested-list__link-container">
-                                    <i role="presentation" class="fdx-nested-list__icon sap-icon--lightbulb"></i>
-                                    <span class="fdx-nested-list__title">Neque porro quisquam est, qui dolorem ipsum</span>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="fdx-nested-list__item">
-                            <a class="fdx-nested-list__link" href="#">
-                                <div class="fdx-nested-list__link-container">
-                                    <i role="presentation" class="fdx-nested-list__icon sap-icon--history"></i>
-                                    <span class="fdx-nested-list__title">Quis autem vel eum iure</span>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="fdx-nested-list__item">
-                            <a class="fdx-nested-list__link" href="#">
-                                <div class="fdx-nested-list__link-container">
-                                    <i role="presentation" class="fdx-nested-list__icon sap-icon--future"></i>
-                                    <span class="fdx-nested-list__title">Excepteur sint occaecat cupidatat</span>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="fdx-nested-list__item">
-                            <a class="fdx-nested-list__link" href="#">
-                                <div class="fdx-nested-list__link-container">
-                                    <i role="presentation" class="fdx-nested-list__icon sap-icon--activities"></i>
-                                    <span class="fdx-nested-list__title">Ut enim ad minima veniam</span>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="fdx-nested-list__item">
-                            <a class="fdx-nested-list__link" href="#">
-                                <div class="fdx-nested-list__link-container">
-                                    <i role="presentation" class="fdx-nested-list__icon sap-icon--lead"></i>
-                                    <span class="fdx-nested-list__title">Neque porro quisquam</span>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="fdx-nested-list__item">
-                            <a class="fdx-nested-list__link" href="#">
-                                <div class="fdx-nested-list__link-container">
-                                    <i role="presentation" class="fdx-nested-list__icon sap-icon--notes"></i>
-                                    <span class="fdx-nested-list__title">Excepteur sint occaecat cupidatat</span>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="fdx-nested-list__item">
-                            <a class="fdx-nested-list__link" href="#">
-                                <div class="fdx-nested-list__link-container">
-                                    <i role="presentation" class="fdx-nested-list__icon sap-icon--map"></i>
-                                    <span class="fdx-nested-list__title">Neque porro quisquam</span>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="fdx-nested-list__item">
-                            <a class="fdx-nested-list__link" href="#">
-                                <div class="fdx-nested-list__link-container">
-                                    <i role="presentation" class="fdx-nested-list__icon sap-icon--log"></i>
-                                    <span class="fdx-nested-list__title">Ut enim ad minima veniam</span>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="fdx-nested-list__item">
-                            <a class="fdx-nested-list__link" href="#">
-                                <div class="fdx-nested-list__link-container">
-                                    <i role="presentation" class="fdx-nested-list__icon sap-icon--phone"></i>
-                                    <span class="fdx-nested-list__title">Excepteur sint occaecat cupidatat</span>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="fdx-nested-list__item">
-                            <a class="fdx-nested-list__link" href="#">
-                                <div class="fdx-nested-list__link-container">
-                                    <i role="presentation" class="fdx-nested-list__icon sap-icon--product"></i>
-                                    <span class="fdx-nested-list__title">Ut enim ad minima veniam</span>
-                                </div>
-                            </a>
-                        </li>
-                    </ul>
-                </nav>
-                <nav class="fdx-side-nav__utility" aria-label="Utility Menu">
-                    <ul class="fdx-nested-list level-1">
-                        <li class="fdx-nested-list__item">
-                            <a class="fdx-nested-list__link" href="#">
-                                <div class="fdx-nested-list__link-container">
-                                    <i role="presentation" class="fdx-nested-list__icon sap-icon--compare"></i>
-                                    <span class="fdx-nested-list__title">Duis aute irure dolor </span>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="fdx-nested-list__item">
-                            <a class="fdx-nested-list__link" href="#">
-                                <div class="fdx-nested-list__link-container">
-                                    <i role="presentation" class="fdx-nested-list__icon sap-icon--chain-link"></i>
-                                    <span class="fdx-nested-list__title">Neque porro quisquam</span>
-                                </div>
-                            </a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
         </div>
 ```
 

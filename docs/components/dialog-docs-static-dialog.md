@@ -30,10 +30,10 @@ npm install fundamental-styles
 
 ```html
 <div class="fd-dialog-docs-static fd-dialog fd-dialog--active">
-    <div 
-        class="fd-dialog__content fd-dialog__content--s" 
-        role="dialog" 
-        aria-modal="true" 
+    <div
+        class="fd-dialog__content fd-dialog__content--s"
+        role="dialog"
+        aria-modal="true"
         aria-labelledby="dialog-title-1"
         aria-describedby="dialog-description-1">
         <span class="fd-dialog__resize-handle" role="presentation" aria-hidden="true"></span>
@@ -90,10 +90,10 @@ The default dialog component displays a container comprising a header, title, an
 
 ```html
 <div class="fd-dialog-docs-static fd-dialog fd-dialog--active">
-    <div 
-        class="fd-dialog__content fd-dialog__content--s" 
-        role="dialog" 
-        aria-modal="true" 
+    <div
+        class="fd-dialog__content fd-dialog__content--s"
+        role="dialog"
+        aria-modal="true"
         aria-labelledby="dialog-title-1"
         aria-describedby="dialog-description-1">
         <span class="fd-dialog__resize-handle" role="presentation" aria-hidden="true"></span>
@@ -150,14 +150,14 @@ These modifier classes are used to display horizontal padding for dialog's heade
 
 ```html
 <div class="fd-dialog-docs-static fd-dialog fd-dialog--active">
-    <div 
-        class="fd-dialog__content fd-dialog__content--s" 
-        role="dialog" 
-        aria-modal="true" 
+    <div
+        class="fd-dialog__content fd-dialog__content--s"
+        role="dialog"
+        aria-modal="true"
         aria-labelledby="dialog-title-2"
         aria-describedby="dialog-description-2"
     >
-        
+
         <header class="fd-dialog__header fd-bar fd-bar--header">
             <div class="fd-bar__left">
                 <div class="fd-bar__element">
@@ -167,11 +167,11 @@ These modifier classes are used to display horizontal padding for dialog's heade
                 </div>
             </div>
         </header>
-        
+
         <section class="fd-dialog__body" id="dialog-description-2">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
         </section>
-        
+
         <footer class="fd-dialog__footer fd-bar fd-bar--footer">
             <div class="fd-bar__right">
                 <div class="fd-bar__element">
@@ -186,14 +186,14 @@ These modifier classes are used to display horizontal padding for dialog's heade
 </div>
 <br />
 <div class="fd-dialog-docs-static fd-dialog fd-dialog--active">
-    <div 
-        class="fd-dialog__content fd-dialog__content--m" 
-        role="dialog" 
-        aria-modal="true" 
-        aria-labelledby="dialog-title-3" 
+    <div
+        class="fd-dialog__content fd-dialog__content--m"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="dialog-title-3"
         aria-describedby="dialog-description-3"
     >
-        
+
         <header class="fd-dialog__header fd-bar fd-bar--header">
             <div class="fd-bar__left">
                 <div class="fd-bar__element">
@@ -203,11 +203,11 @@ These modifier classes are used to display horizontal padding for dialog's heade
                 </div>
             </div>
         </header>
-        
+
         <section class="fd-dialog__body" id="dialog-description-3">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
         </section>
-        
+
         <footer class="fd-dialog__footer fd-bar fd-bar--footer">
             <div class="fd-bar__right">
                 <div class="fd-bar__element">
@@ -222,14 +222,14 @@ These modifier classes are used to display horizontal padding for dialog's heade
 </div>
 <br />
 <div class="fd-dialog-docs-static fd-dialog fd-dialog--active">
-    <div 
-        class="fd-dialog__content fd-dialog__content--l" 
-        role="dialog" 
-        aria-modal="true" 
+    <div
+        class="fd-dialog__content fd-dialog__content--l"
+        role="dialog"
+        aria-modal="true"
         aria-labelledby="dialog-title-4"
         aria-describedby="dialog-description-4"
     >
-        
+
         <header class="fd-dialog__header fd-bar fd-bar--header">
             <div class="fd-bar__left">
                 <div class="fd-bar__element">
@@ -239,11 +239,11 @@ These modifier classes are used to display horizontal padding for dialog's heade
                 </div>
             </div>
         </header>
-        
+
         <section class="fd-dialog__body" id="dialog-description-4">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
         </section>
-        
+
         <footer class="fd-dialog__footer fd-bar fd-bar--footer">
             <div class="fd-bar__right">
                 <div class="fd-bar__element">
@@ -260,14 +260,14 @@ These modifier classes are used to display horizontal padding for dialog's heade
 <br />
 
 <div class="fd-dialog-docs-static fd-dialog fd-dialog--active">
-    <div 
-        class="fd-dialog__content fd-dialog__content--xl" 
-        role="dialog" 
-        aria-modal="true" 
+    <div
+        class="fd-dialog__content fd-dialog__content--xl"
+        role="dialog"
+        aria-modal="true"
         aria-labelledby="dialog-title-5"
         aria-describedby="dialog-description-5"
     >
-        
+
         <header class="fd-dialog__header fd-bar fd-bar--header">
             <div class="fd-bar__left">
                 <div class="fd-bar__element">
@@ -277,11 +277,11 @@ These modifier classes are used to display horizontal padding for dialog's heade
                 </div>
             </div>
         </header>
-        
+
         <section class="fd-dialog__body" id="dialog-description-5">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
         </section>
-        
+
         <footer class="fd-dialog__footer fd-bar fd-bar--footer">
             <div class="fd-bar__right">
                 <div class="fd-bar__element">
@@ -302,15 +302,15 @@ Dialog can also be displayed with a resize handle by adding a span element with 
 
 ```html
 <div class="fd-dialog-docs-static fd-dialog fd-dialog--active">
-    <div 
-        class="fd-dialog__content fd-dialog__content--s" 
-        role="dialog" 
-        aria-modal="true" 
+    <div
+        class="fd-dialog__content fd-dialog__content--s"
+        role="dialog"
+        aria-modal="true"
         aria-labelledby="dialog-title-6"
         aria-describedby="dialog-description-6"
     >
         <span class="fd-dialog__resize-handle" role="presentation" aria-hidden="true"></span>
-        
+
         <header class="fd-dialog__header fd-bar fd-bar--header">
             <div class="fd-bar__left">
                 <div class="fd-bar__element">
@@ -320,11 +320,11 @@ Dialog can also be displayed with a resize handle by adding a span element with 
                 </div>
             </div>
         </header>
-        
+
         <section class="fd-dialog__body" id="dialog-description-6">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
         </section>
-        
+
         <footer class="fd-dialog__footer fd-bar fd-bar--footer">
             <div class="fd-bar__right">
                 <div class="fd-bar__element">
@@ -349,10 +349,10 @@ Dialog can be draggable, enabling the user to drag the container around with the
 
 ```html
 <div class="fd-dialog-docs-static fd-dialog fd-dialog--active">
-    <div 
-        class="fd-dialog__content fd-dialog__content--draggable-grab fd-dialog__content--s" 
-        role="dialog" 
-        aria-modal="true" 
+    <div
+        class="fd-dialog__content fd-dialog__content--draggable-grab fd-dialog__content--s"
+        role="dialog"
+        aria-modal="true"
         aria-labelledby="dialog-title-7"
         aria-describedby="dialog-description-7"
     >
@@ -369,7 +369,7 @@ Dialog can be draggable, enabling the user to drag the container around with the
         <section class="fd-dialog__body" id="dialog-description-7">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
         </section>
-        
+
         <footer class="fd-dialog__footer fd-bar fd-bar--footer">
             <div class="fd-bar__right">
                 <div class="fd-bar__element">
@@ -390,10 +390,10 @@ The selectable dialog displays list items in the content area that can be select
 
 ```html
 <div class="fd-dialog-docs-static fd-dialog fd-dialog--active" id="select-dialog-example">
-    <div 
-        class="fd-dialog__content" 
-        role="dialog" 
-        aria-modal="true" 
+    <div
+        class="fd-dialog__content"
+        role="dialog"
+        aria-modal="true"
         aria-labelledby="dialog-title-8"
     >
         <header class="fd-dialog__header fd-bar fd-bar--header-with-subheader">
@@ -506,14 +506,14 @@ Dialog can display a busy indicator that signals to the user that data is loadin
 
 ```html
 <div class="fd-dialog-docs-static fd-dialog fd-dialog--active" id="loading-dialog-example">
-    <div 
-        class="fd-dialog__content fd-dialog__content--s" 
-        role="dialog" 
-        aria-modal="true" 
+    <div
+        class="fd-dialog__content fd-dialog__content--s"
+        role="dialog"
+        aria-modal="true"
         aria-labelledby="dialog-title-9"
         aria-describedby="dialog-description-9"
     >
-        
+
         <header class="fd-dialog__header fd-bar fd-bar--header">
             <div class="fd-bar__left">
                 <div class="fd-bar__element">
@@ -550,13 +550,13 @@ Horizontal Form displays all the components aligned horizontally. It is created 
 
 ```html
 <div class="fd-dialog-docs-static fd-dialog fd-dialog--active">
-    <div 
-        class="fd-dialog__content fd-dialog__content--s" 
-        role="dialog" 
-        aria-modal="true" 
+    <div
+        class="fd-dialog__content fd-dialog__content--s"
+        role="dialog"
+        aria-modal="true"
         aria-labelledby="dialog-title-2"
     >
-        
+
         <header class="fd-dialog__header fd-bar fd-bar--header">
             <div class="fd-bar__left">
             <div class="fd-bar__element">
@@ -566,7 +566,7 @@ Horizontal Form displays all the components aligned horizontally. It is created 
             </div>
             </div>
         </header>
-        
+
         <section class="fd-dialog__body">
             <div class="fd-container fd-form-layout-grid-container fd-form-group">
                 <div class="fd-row fd-form-item">
@@ -639,7 +639,7 @@ Horizontal Form displays all the components aligned horizontally. It is created 
                 </div>
             </div>
         </section>
-        
+
         <footer class="fd-dialog__footer fd-bar fd-bar--footer">
             <div class="fd-bar__right">
                 <div class="fd-bar__element">
@@ -660,12 +660,12 @@ Verical Form displays all the components aligned vertically. It is created by po
 
 ```html
 <div class="fd-dialog-docs-static fd-dialog fd-dialog--active">
-    <div 
-        class="fd-dialog__content fd-dialog__content--s" 
-        role="dialog" 
-        aria-modal="true" 
+    <div
+        class="fd-dialog__content fd-dialog__content--s"
+        role="dialog"
+        aria-modal="true"
         aria-labelledby="dialog-title-2">
-        
+
         <header class="fd-dialog__header fd-bar fd-bar--header">
             <div class="fd-bar__left">
             <div class="fd-bar__element">
@@ -748,7 +748,7 @@ Verical Form displays all the components aligned vertically. It is created by po
                 </div>
             </div>
         </section>
-        
+
         <footer class="fd-dialog__footer fd-bar fd-bar--footer">
             <div class="fd-bar__right">
                 <div class="fd-bar__element">
@@ -773,14 +773,14 @@ To properly support resizing for all input methods, the optional resize handle i
 <div>Resize Handle: not visible</div>
 <br>
 <div class="fd-dialog-docs-static fd-dialog fd-dialog--active">
-    <div 
-        class="fd-dialog__content fd-dialog__content--s" 
-        role="dialog" 
-        aria-modal="true" 
+    <div
+        class="fd-dialog__content fd-dialog__content--s"
+        role="dialog"
+        aria-modal="true"
         aria-labelledby="dialog-title-12"
         aria-describedby="dialog-description-12"
     >
-        
+
         <header class="fd-dialog__header fd-bar fd-bar--header">
             <div class="fd-bar__left">
                 <div class="fd-bar__element">
@@ -813,7 +813,7 @@ To properly support resizing for all input methods, the optional resize handle i
             </div>
         </footer>
     </div>
-</div>  
+</div>
 
 <br><br>
 <h3>Tablet with mouse attached</h3>
@@ -853,7 +853,7 @@ To properly support resizing for all input methods, the optional resize handle i
             </div>
         </footer>
     </div>
-</section>    
+</section>
 
 <br><br>
 <h3>Hybrid device</h3>
@@ -893,7 +893,7 @@ To properly support resizing for all input methods, the optional resize handle i
             </div>
         </footer>
     </div>
-</section>  
+</section>
 
 <br><br>
 <h3>Full screen</h3>

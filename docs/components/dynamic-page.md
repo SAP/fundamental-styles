@@ -463,7 +463,26 @@ Counter added to a tab
 ### Facets in Object Page
 
 All facet types used together in the context of a dynamic page. To have the image from the image facet appear next to the title, add the class
-        \
+        `fd-facet` and apply the modifiers `fd-facet--image` and `fd-facet--image-header-title` to the
+        `fd-dynamic-page__title-container` class. Note that the dynamic page title and subtitle should be placed in the `fd-dynamic-page__title-subtitle-container` class
+        for proper alignment with the image.
+
+The final structure of a collapsed header with image next to the title is shown below with changes marked in bold:
+
+- `fd-dynamic-page__title-area` The area holding title, KPI content, subtitle, and actions
+  - `fd-dynamic-page__main-container` Main container that holds Breadcrumb, image, title, title content and actions
+    - `fd-dynamic-page__breadcrumb-title-container` Container that holds breadcrumb, title, and title content
+        - `fd-dynamic-page__breadcrumb-container` Breadcrumbs Container, can contain toolbar container
+            - `fd-dynamic-page__breadcrumb` Breadcrumbs
+        - **`fd-dynamic-page__title-container` The container for image, title, subtitle and toolbar**
+            - **`fd-facet fd-facet--image fd-facet--image-header-title` The image facet**
+            - **`fd-facet__title-subtitle-container` The container for title and subtitle**
+                - `fd-dynamic-page__title` Dynamic page title
+                - **`fd-dynamic-page__subtitle` Dynamic page subtitle**
+            - `fd-dynamic-page__title-content` The KPI content
+            - `fd-dynamic-page__toolbar-container` Container that holds toolbar-related actions
+                - `fd-dynamic-page__toolbar` Toolbar container for actions
+                - `fd-dynamic-page__toolbar--actions` Navigation actions
 
 ```html
 <section class="fd-dynamic-page fd-dynamic-page--xl" aria-label="Dynamic Page Desktop Example">
@@ -846,116 +865,118 @@ All facet types used together in the context of a dynamic page. To have the imag
                         </div>
                     </div>
                 </div>
-                <div class="fd-dynamic-page__collapsible-header-container">
-                    <div class="fd-dynamic-page__collapsible-header" role="region" id="fddplhvc7" aria-hidden="false" aria-label="Dynamic Page Mobile Header">
-                        <div class="fd-facet-group">
-                            <div class="fd-facet fd-facet--image fd-margin-end--sm fd-margin-bottom--tiny">
-                                <span class="fd-avatar fd-avatar--l" aria-label="Avatar">
-                                    <i class="fd-avatar__icon sap-icon--camera" role="presentation"></i>
-                                </span>
-                            </div>
-
-                            <div class="fd-facet fd-facet--key-value fd-margin-end--md  fd-margin-bottom--sm" role="group" aria-labelledby="kvFacetTitle13">
-                                <h1 class="fd-title fd-title--h5 fd-margin-bottom--sm" id="kvFacetTitle13">Availablity</h1>
-                                <span class="fd-object-status fd-object-status--positive fd-object-status--large fd-facet__object-status">
-                                    <span class="fd-object-status__text fd-facet__object-status-text">In Stock</span>
-                                </span>
-                            </div>
-                            <div class="fd-facet fd-facet--key-value fd-margin-end--md  fd-margin-bottom--sm" role="group" aria-labelledby="kvFacetTitle14">
-                                <h1 class="fd-title fd-title--h5 fd-margin-bottom--sm" id="kvFacetTitle14">Price </h1>
-                                <span class="fd-object-number fd-object-number--large fd-object-number--informative">
-                                    <span class="fd-object-number__text">750</span><span class="fd-object-number__unit">EUR</span>
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="fd-dynamic-page__collapsible-header-visibility-container fd-dynamic-page__collapsible-header-visibility-container--no-shadow">
-
-                        <div role="toolbar" aria-label="Header actions" class="fd-dynamic-page__collapsible-header-visibility-container--button-group">
-                            <button class="fd-dynamic-page__collapse-button fd-button"
-                                aria-label="Collapse header"
-                                aria-expanded="true"
-                                aria-hidden="false"
-                                id="expandBtnMobile"
-                                aria-haspopup="true"
-                                onclick="
-                                toggleElAttrs('fddplhvc7', ['aria-hidden']);
-                                toggleElAttrs('expandBtnMobile', ['aria-expanded']);
-                                toggleElAttrs('expandBtnMobile', ['aria-hidden']);
-                                toggleElAttrs('collapseBtnMobile', ['aria-expanded']);
-                                toggleElAttrs('collapseBtnMobile', ['aria-hidden']);
-                                toggleElAttrs('mainContainerMobile', ['aria-hidden']);
-                                toggleElAttrs('mainImageContainerMobile', ['aria-hidden']);
-                                "
-                                >
-                                <i class="sap-icon--slim-arrow-up"></i>
-                            </button>
-                            <button class="fd-dynamic-page__collapse-button fd-button"
-                                aria-label="Expand header"
-                                aria-expanded="false"
-                                aria-hidden="true"
-                                id="collapseBtnMobile"
-                                aria-haspopup="true"
-                                onclick="
-                                toggleElAttrs('fddplhvc7', ['aria-hidden']);
-                                toggleElAttrs('collapseBtnMobile', ['aria-expanded']);
-                                toggleElAttrs('collapseBtnMobile', ['aria-hidden']);
-                                toggleElAttrs('expandBtnMobile', ['aria-expanded']);
-                                toggleElAttrs('expandBtnMobile', ['aria-hidden']);
-                                toggleElAttrs('mainContainerMobile', ['aria-hidden']);
-                                toggleElAttrs('mainImageContainerMobile', ['aria-hidden']);
-                                "
-                                >
-                                <i class="sap-icon--slim-arrow-down"></i>
-                            </button>
+            </div>
+            <div class="fd-dynamic-page__collapsible-header-container">
+                <div class="fd-dynamic-page__collapsible-header" role="region" id="fddplhvc7" aria-hidden="false" aria-label="Dynamic Page Mobile Header">
+                    <div class="fd-facet-group">
+                        <div class="fd-facet fd-facet--image fd-margin-end--sm fd-margin-bottom--tiny">
+                            <span class="fd-avatar fd-avatar--l" aria-label="Avatar">
+                                <i class="fd-avatar__icon sap-icon--camera" role="presentation"></i>
+                            </span>
                         </div>
 
+                        <div class="fd-facet fd-facet--key-value fd-margin-end--md  fd-margin-bottom--sm" role="group" aria-labelledby="kvFacetTitle13">
+                            <h1 class="fd-title fd-title--h5 fd-margin-bottom--sm" id="kvFacetTitle13">Availablity</h1>
+                            <span class="fd-object-status fd-object-status--positive fd-object-status--large fd-facet__object-status">
+                                <span class="fd-object-status__text fd-facet__object-status-text">In Stock</span>
+                            </span>
+                        </div>
+                        <div class="fd-facet fd-facet--key-value fd-margin-end--md  fd-margin-bottom--sm" role="group" aria-labelledby="kvFacetTitle14">
+                            <h1 class="fd-title fd-title--h5 fd-margin-bottom--sm" id="kvFacetTitle14">Price </h1>
+                            <span class="fd-object-number fd-object-number--large fd-object-number--informative">
+                                <span class="fd-object-number__text">750</span><span class="fd-object-number__unit">EUR</span>
+                            </span>
+                        </div>
                     </div>
                 </div>
-                <div class="fd-dynamic-page__tabs--overflow">
-                    <ul class="fd-tabs fd-dynamic-page__tabs fd-dynamic-page__tabs--add-shadow" role="tablist">
-                        <li class="fd-tabs__item" aria-controls="fuCwV559" role="tab">
-                            <a class="fd-tabs__link" href="#fuCwV559">
-                                <span class="fd-tabs__tag">
-                                    Link
-                                </span>
-                            </a>
-                        </li>
-                        <li class="fd-tabs__item" aria-selected="true" role="tab">
-                            <a class="fd-tabs__link" aria-controls="AiWfz161" href="#AiWfz161">
-                                <span class="fd-tabs__tag">
-                                    Selected
-                                </span>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </header>
-            <div class="fd-dynamic-page__content">
-                <div class="fd-tabs__panel" aria-expanded="false" id="fuCwV559" role="tabpanel">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum illo voluptatem, unde voluptate aliquam
-                    eum tempore aliquid dolorem cumque ullam perspiciatis omnis et asperiores dolores, consequatur, suscipit sint animi amet?
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum illo voluptatem, unde voluptate aliquam eum tempore aliquid
-                    dolorem cumque ullam perspiciatis omnis et asperiores dolores, consequatur, suscipit sint animi amet?
-                </div>
-                <div class="fd-tabs__panel" aria-expanded="true" id="AiWfz161" role="tabpanel">
-                    Dolor sit Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius assumenda, quidem natus optio repudiandae deleniti
-                    in atque quis, sed cum asperiores minus rerum incidunt unde quod fuga amet ea reprehenderit.
-                    Dolor sit Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius assumenda, quidem natus optio repudiandae deleniti
-                    in atque quis, sed cum asperiores minus rerum incidunt unde quod fuga amet ea reprehenderit.
+                <div class="fd-dynamic-page__collapsible-header-visibility-container fd-dynamic-page__collapsible-header-visibility-container--no-shadow">
+
+                    <div role="toolbar" aria-label="Header actions" class="fd-dynamic-page__collapsible-header-visibility-container--button-group">
+                        <button class="fd-dynamic-page__collapse-button fd-button"
+                            aria-label="Collapse header"
+                            aria-expanded="true"
+                            aria-hidden="false"
+                            id="expandBtnMobile"
+                            aria-haspopup="true"
+                            onclick="
+                            toggleElAttrs('fddplhvc7', ['aria-hidden']);
+                            toggleElAttrs('expandBtnMobile', ['aria-expanded']);
+                            toggleElAttrs('expandBtnMobile', ['aria-hidden']);
+                            toggleElAttrs('collapseBtnMobile', ['aria-expanded']);
+                            toggleElAttrs('collapseBtnMobile', ['aria-hidden']);
+                            toggleElAttrs('mainContainerMobile', ['aria-hidden']);
+                            toggleElAttrs('mainImageContainerMobile', ['aria-hidden']);
+                            "
+                            >
+                            <i class="sap-icon--slim-arrow-up"></i>
+                        </button>
+                        <button class="fd-dynamic-page__collapse-button fd-button"
+                            aria-label="Expand header"
+                            aria-expanded="false"
+                            aria-hidden="true"
+                            id="collapseBtnMobile"
+                            aria-haspopup="true"
+                            onclick="
+                            toggleElAttrs('fddplhvc7', ['aria-hidden']);
+                            toggleElAttrs('collapseBtnMobile', ['aria-expanded']);
+                            toggleElAttrs('collapseBtnMobile', ['aria-hidden']);
+                            toggleElAttrs('expandBtnMobile', ['aria-expanded']);
+                            toggleElAttrs('expandBtnMobile', ['aria-hidden']);
+                            toggleElAttrs('mainContainerMobile', ['aria-hidden']);
+                            toggleElAttrs('mainImageContainerMobile', ['aria-hidden']);
+                            "
+                            >
+                            <i class="sap-icon--slim-arrow-down"></i>
+                        </button>
+                    </div>
+
                 </div>
             </div>
-            <footer class="fd-bar fd-bar--floating-footer">
-                <div role="toolbar" aria-label="Finalizing actions" class="fd-bar__right">
-                    <div class="fd-bar__element">
-                        <button aria-label="button" class="fd-button fd-button--emphasized">Save</button>
-                    </div>
-                    <div class="fd-bar__element">
-                        <button aria-label="button" class="fd-button fd-button--transparent">Cancel</button>
-                    </div>
+            <div class="fd-dynamic-page__tabs--overflow">
+                <ul class="fd-tabs fd-dynamic-page__tabs fd-dynamic-page__tabs--add-shadow" role="tablist">
+                    <li class="fd-tabs__item" aria-controls="fuCwV559" role="tab">
+                        <a class="fd-tabs__link" href="#fuCwV559">
+                            <span class="fd-tabs__tag">
+                                Link
+                            </span>
+                        </a>
+                    </li>
+                    <li class="fd-tabs__item" aria-selected="true" role="tab">
+                        <a class="fd-tabs__link" aria-controls="AiWfz161" href="#AiWfz161">
+                            <span class="fd-tabs__tag">
+                                Selected
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </header>
+        <div class="fd-dynamic-page__content">
+            <div class="fd-tabs__panel" aria-expanded="false" id="fuCwV559" role="tabpanel">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum illo voluptatem, unde voluptate aliquam
+                eum tempore aliquid dolorem cumque ullam perspiciatis omnis et asperiores dolores, consequatur, suscipit sint animi amet?
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum illo voluptatem, unde voluptate aliquam eum tempore aliquid
+                dolorem cumque ullam perspiciatis omnis et asperiores dolores, consequatur, suscipit sint animi amet?
+            </div>
+            <div class="fd-tabs__panel" aria-expanded="true" id="AiWfz161" role="tabpanel">
+                Dolor sit Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius assumenda, quidem natus optio repudiandae deleniti
+                in atque quis, sed cum asperiores minus rerum incidunt unde quod fuga amet ea reprehenderit.
+                Dolor sit Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius assumenda, quidem natus optio repudiandae deleniti
+                in atque quis, sed cum asperiores minus rerum incidunt unde quod fuga amet ea reprehenderit.
+            </div>
+        </div>
+        <footer class="fd-bar fd-bar--floating-footer">
+            <div role="toolbar" aria-label="Finalizing actions" class="fd-bar__right">
+                <div class="fd-bar__element">
+                    <button aria-label="button" class="fd-button fd-button--emphasized">Save</button>
                 </div>
-            </footer>
-        </section>
+                <div class="fd-bar__element">
+                    <button aria-label="button" class="fd-button fd-button--transparent">Cancel</button>
+                </div>
+            </div>
+        </footer>
+    </section>
+</div>
 ```
 
 ## Accessibility

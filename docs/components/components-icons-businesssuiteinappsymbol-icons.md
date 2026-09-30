@@ -2,8 +2,8 @@
 component: iconBusinessSuite
 title: Components/Icons/BusinessSuiteInAppSymbol Icons
 category: Components
-selector: 
-cssFile: 
+selector:
+cssFile:
 sourcePath: packages/styles/stories/Components/Icons/icon/BusinessSuiteInAppSymbols/iconBusinessSuite.stories.js
 tags: []
 dependencies: []

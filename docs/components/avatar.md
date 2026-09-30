@@ -36,7 +36,13 @@ The avatar control is adaptive and has five predefined sizes. These are the same
 
 | **Size** | **rem** | &nbsp;&nbsp; **Use for images in…** | **Modifier class** |
 | :--------- | ----------: | :----------------------- | :--------------- |
-| XS | 2 rem | &nbsp;&nbsp; Table list items, Card list items &nbsp;&nbsp;  | \
+| XS | 2 rem | &nbsp;&nbsp; Table list items, Card list items &nbsp;&nbsp;  | `fd-avatar--xs` |
+| S | 3 rem | &nbsp;&nbsp; Card headers, Card list items &nbsp;&nbsp; | `fd-avatar--s` or <br/>`fd-avatar--sm` |
+| M | 4 rem | &nbsp;&nbsp; App headers for small screen sizes &nbsp;&nbsp; | `fd-avatar--m` or <br/>`fd-avatar--md` |
+| L | 5 rem | &nbsp;&nbsp; App headers for normal screen sizes &nbsp;&nbsp; | `fd-avatar--l` or <br/>`fd-avatar--lg` |
+| XL | 7 rem | &nbsp;&nbsp; App headers for large screen sizes &nbsp;&nbsp; | `fd-avatar--xl` |
+
+<br><br><br>
 
 ## Dependencies
 
@@ -80,7 +86,7 @@ npm install fundamental-styles
 | Class | Description |
 |-------|-------------|
 | `fd-avatar--accent-color-` | The Avatar can have different background colors depending on the scenario |
-| `fd-avatar--background-contain` | Style variant |
+| `fd-avatar--background-contain` | An avatar is a visual representation of an user or a product in the digital space |
 | `fd-avatar--border` | You can add a very subtle border to the avatar with the `fd-avatar--border` modifier class. |
 | `fd-avatar--circle` | Placeholders are used when there is no other image available |
 | `fd-avatar--indication-color-` | The Avatar can have different background colors depending on the scenario |
@@ -92,7 +98,7 @@ npm install fundamental-styles
 | `fd-avatar--s` | An avatar is a visual representation of an user or a product in the digital space |
 | `fd-avatar--shell` | When used in Shell header context, an additional modifier class `fd-avatar--shell` should be added to the `fd-avatar` base class and the modifier class specifying the accent color `fd-avatar--accent-color-*`. |
 | `fd-avatar--sm` | Style variant |
-| `fd-avatar--thumbnail` | Style variant |
+| `fd-avatar--thumbnail` | An avatar is a visual representation of an user or a product in the digital space |
 | `fd-avatar--tile` | An avatar with a tile icon background can be displayed by adding the `fd-avatar--tile` modifier class. |
 | `fd-avatar--transparent` | A transparent style can be displayed by adding the `fd-avatar--transparent` modifier class to the `fd-avatar` base class |
 | `fd-avatar--xl` | Style variant |
@@ -154,7 +160,13 @@ Key CSS variables used by this component:
 ### Image, Person
 
 An avatar is a visual representation of an user or a product in the digital space. For representing a person, the circular shape is used. For representing a product or object, the square shape is used. <br/>
-This type of Avatar requires the \
+This type of Avatar requires the `fd-avatar--thumbnail` modifier class.
+There are two options to set the background: Cover (default) and Contain.
+
+- <b>Cover:</b> The size of the image is scaled up to completely cover the control area. As a result, parts of the image may be outside the shape.
+- <b>Contain:</b> The image is scaled down to fit into the control area. The entire image is displayed, but might not fully fill the shape. In this case, the control displays a default background color. The image itself is always centered inside the shape.
+
+Changing the default `background-size: cover` to `background-size: contain` CSS property can be achieved by adding `fd-avatar--background-contain` modifier class.
 
 ```html
 <span class="fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--thumbnail" role="img" aria-label="Avatar John Doe"></span>
@@ -349,6 +361,7 @@ The Avatar can have different background colors depending on the scenario. To ch
 <span class="fd-avatar fd-avatar--accent-color-10 fd-avatar--md" aria-label="Avatar" role="img">
     <i class="fd-avatar__icon sap-icon--product" role="presentation" aria-hidden="true" aria-label="Image placeholder"></i>
 </span>
+
 <span class="fd-avatar fd-avatar--indication-color-1 fd-avatar--md" aria-label="Avatar" role="img">
     <i class="fd-avatar__icon sap-icon--product" role="presentation" aria-hidden="true" aria-label="Image placeholder"></i>
 </span>
@@ -462,7 +475,7 @@ Each interactive avatar type can have an optional badge and icon assigned. A bad
 
 ### ValueStates
 
-Value States can be added to the Avatar badge. <br>For <b>positive</b> value state use the \
+Value States can be added to the Avatar badge. <br>For <b>positive</b> value state use the `.fd-avatar__zoom-icon--positive` modifier class with the `fd-avatar__zoom-icon` base class. <br>For <b>caution</b> value state apply the `.fd-avatar__zoom-icon--caution` modifier class. <br>The <b>negative</b> value state can be achieved with `.fd-avatar__zoom-icon--negative` modifier class. <br><b>Information</b> value state would require adding `.fd-avatar__zoom-icon--information` to the `fd-avatar__zoom-icon` base class.
 
 ```html
 <span class="fd-avatar fd-avatar--xl fd-avatar--circle fd-avatar--accent-color-1" tabindex="0" role="button" aria-label="Avatar" aria-description="Edit badge. To activate press spacebar." title="Edit Avatar">
@@ -504,7 +517,7 @@ Value States can be added to the Avatar badge. <br>For <b>positive</b> value sta
 
 ### BadgeIndicationColors
 
-The avatar's badge color is extended with the first set of  indication color palette. Use modifier classes \
+The avatar's badge color is extended with the first set of  indication color palette. Use modifier classes `fd-avatar__zoom-icon--indication-*` to apply the desired color. Valid values are from 1 to 10.
 
 ```html
 <span class="fd-avatar fd-avatar--xl fd-avatar--circle" tabindex="0" role="button" aria-label="Avatar" aria-description="Edit badge. To activate press spacebar." title="Edit Avatar">
@@ -588,6 +601,7 @@ You can add a very subtle border to the avatar with the `fd-avatar--border` modi
 
 ```html
 <h3>Regular State</h3>
+
 <span class="fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--accent-color-1" tabindex="0" role="button" aria-roledescription="Avatar (Menu) Button" aria-haspopup="true" aria-expanded="false" aria-description="To activate press spacebar" aria-label="Avatar">
     <i class="fd-avatar__icon sap-icon--person-placeholder" role="presentation" aria-hidden="true"></i>
 </span>

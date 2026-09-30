@@ -28,7 +28,6 @@ npm install fundamental-styles
 
 <!-- Include component CSS -->
 <link href="node_modules/fundamental-styles/dist/fieldset.css" rel="stylesheet">
-
 ```
 
 ## Basic Usage

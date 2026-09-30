@@ -27,7 +27,6 @@ npm install fundamental-styles
 
 <!-- Include component CSS -->
 <link href="node_modules/fundamental-styles/dist/form-item.css" rel="stylesheet">
-
 ```
 
 ## Basic Usage

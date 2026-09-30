@@ -445,7 +445,7 @@ npm install fundamental-styles
             </div>
         </div>
         <span class="fd-toolbar__spacer"></span>
-        
+
         <button class="fd-button fd-button--transparent" aria-label="Filter">
             <i class="sap-icon--filter" role="presentation"></i>
         </button>

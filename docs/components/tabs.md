@@ -16,7 +16,7 @@ stability: deprecated
 > **⚠️ DEPRECATED**: This component is deprecated and should not be used in new projects.
 
 Tabs are based on the folder metaphor and used to separate content into different sections. Tabs should be ordered based on priority to create visual hierarchy.
-    
+
 ## DEPRECATED
 
 This component is deprecated. Please use the *Icon Tab Bar* component instead.
@@ -43,7 +43,12 @@ These modifier classes are used to display horizontal padding for tabs in variou
 
 | rem&nbsp;&nbsp; | Min-width&nbsp;&nbsp; | Max-width&nbsp;&nbsp; | Modifier class |
 | ---- | ---------- | ---------- | ----------- |
-| 1rem&nbsp;&nbsp; | _n/a_ | 599 px | \
+| 1rem&nbsp;&nbsp; | _n/a_ | 599 px | `fd-tabs--s` |
+| 2rem&nbsp;&nbsp; | 600 px | 1023 px | `fd-tabs--m` |
+| 2rem&nbsp;&nbsp; | 1024 px | 1439 px| `fd-tabs--l` |
+| 3rem&nbsp;&nbsp; | 1440 px | _n/a_ | `fd-tabs--xl` |
+
+<br>
 
 ## When Not To Use
 
@@ -61,7 +66,6 @@ npm install fundamental-styles
 
 <!-- Include component CSS -->
 <link href="node_modules/fundamental-styles/dist/tabs.css" rel="stylesheet">
-
 ```
 
 ## Basic Usage
@@ -109,11 +113,11 @@ npm install fundamental-styles
 | Class | Description |
 |-------|-------------|
 | `fd-tabs--filter` | Tabs can be displayed in filter mode, indicating to the user that a value has been filtered into separate tabs |
-| `fd-tabs--icon-only` | Style variant |
+| `fd-tabs--icon-only` | Tabs can display icons instead of text with the ` fd-tabs__icon` class (see **Icon** for a list of available icons) |
 | `fd-tabs--l` | By default, tabs are displayed in a bar and are either inactive or active (highlighted in blue) |
 | `fd-tabs--process` | Tabs can be displayed in subsequent steps, indicating to the user that there is a process to follow |
 | `fd-tabs--s` | By default, tabs are displayed in a bar and are either inactive or active (highlighted in blue) |
-| `fd-tabs--xl` | Style variant |
+| `fd-tabs--xl` | Tabs can be displayed with counters to indicate that there are a number of resources the user can or should access |
 
 ## States
 
@@ -191,7 +195,9 @@ By default, tabs are displayed in a bar and are either inactive or active (highl
 
 ### Counters
 
-Tabs can be displayed with counters to indicate that there are a number of resources the user can or should access. To display counters, wrap the \
+Tabs can be displayed with counters to indicate that there are a number of resources the user can or should access. To display counters, wrap the `fd-tabs__count` class in paragraph tags below the `fd-tabs__link` element.
+
+In the example below, the tabs component is optimized for an extra-large screen with the `fd-tabs--xl` modifier class, which adds 3rem horizontal paddings.
 
 ```html
 <ul class="fd-tabs fd-tabs--xl" role="tablist">
@@ -236,7 +242,7 @@ Tabs can be displayed with counters to indicate that there are a number of resou
 
 ### Navigable
 
-Tabs can be navigable by applying the \
+Tabs can be navigable by applying the `role=”navigation”` attribute to the main element.
 
 ```html
 <nav class="fd-tabs fd-tabs--l" role="navigation">
@@ -278,7 +284,7 @@ Tabs can be navigable by applying the \
 
 ### Icon
 
-Tabs can display icons instead of text with the \
+Tabs can display icons instead of text with the ` fd-tabs__icon` class (see **Icon** for a list of available icons). To display icon tabs without text, you will also need to add the `fd-tabs--icon-only` modifier class to the main element.
 
 ```html
 <ul class="fd-tabs fd-tabs--s fd-tabs--icon-only" role="tablist">
@@ -323,7 +329,7 @@ Tabs can display icons instead of text with the \
 
 ### Process mode
 
-Tabs can be displayed in subsequent steps, indicating to the user that there is a process to follow. To display tabs in process mode, add the \
+Tabs can be displayed in subsequent steps, indicating to the user that there is a process to follow. To display tabs in process mode, add the `fd-tabs--process` modifier class to the main element.
 
 ```html
 <ul class="fd-tabs fd-tabs--l fd-tabs--process" role="tablist">
@@ -379,7 +385,7 @@ Tabs can be displayed in subsequent steps, indicating to the user that there is 
 
 ### Filter mode
 
-Tabs can be displayed in filter mode, indicating to the user that a value has been filtered into separate tabs. To display tabs in filter mode, add the \
+Tabs can be displayed in filter mode, indicating to the user that a value has been filtered into separate tabs. To display tabs in filter mode, add the `fd-tabs--filter` modifier class to the main element.
 
 ```html
 <ul class="fd-tabs fd-tabs--l fd-tabs--filter" role="tablist">
@@ -439,7 +445,15 @@ Tabs can be displayed in filter mode, indicating to the user that a value has be
 
 ### Semantic mode
 
-Tabs can be displayed with semantic colors to indicate a status. To display semantic tabs, add the following modifier classes to the \
+Tabs can be displayed with semantic colors to indicate a status. To display semantic tabs, add the following modifier classes to the `fd-tabs__item` elements:
+
+| State | Modifier class |
+| :------- | :--------------- |
+| Success | `fd-tabs__item--success` |
+| Warning | `fd-tabs__item--warning` |
+| Information | `fd-tabs__item--information` |
+| Error | `fd-tabs__item--error` |
+| Neutral | `fd-tabs__item--neutral` |
 
 ```html
 <ul class="fd-tabs fd-tabs--l fd-tabs--icon-only" role="tablist">
@@ -506,7 +520,7 @@ Tabs can be displayed with semantic colors to indicate a status. To display sema
 
 ### Semantic filter mode
 
-Tabs can be displayed in filter mode with semantic colors. As detailed in the previous examples, add the \
+Tabs can be displayed in filter mode with semantic colors. As detailed in the previous examples, add the `fd-tabs--filter` modifier class to the main element and add the semantic modifier classes to the `fd-tabs__item` elements (see **semantic mode** example for modifier class names).
 
 ```html
 <ul class="fd-tabs fd-tabs--l fd-tabs--filter" role="tablist">
@@ -578,7 +592,7 @@ Tabs can be displayed in filter mode with semantic colors. As detailed in the pr
 
 ### Semantic inline
 
-Tabs can be displayed with inline text in semantic colors. To display inline text tabs, add the \
+Tabs can be displayed with inline text in semantic colors. To display inline text tabs, add the `fd-tabs__tag` class below the `fd-tabs__link` element.
 
 ```html
 <ul class="fd-tabs fd-tabs--l" role="tablist">

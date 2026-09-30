@@ -2,8 +2,8 @@
 component: overflow
 title: Overflow
 category: overflow
-selector: 
-cssFile: 
+selector:
+cssFile:
 sourcePath: packages/common-css/stories/overflow/overflow.stories.js
 tags: []
 dependencies: []

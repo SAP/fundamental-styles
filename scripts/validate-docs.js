@@ -15,23 +15,16 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 // Paths
-const DOCS_DIR = path.join(__dirname, '..', 'docs', 'components');
-const SCHEMA_PATH = path.join(__dirname, '..', 'docs', 'schemas', 'component-frontmatter.schema.json');
+const DOCS_DIR = process.env.FUNDAMENTAL_DOCS_DIR
+    ? path.resolve(process.env.FUNDAMENTAL_DOCS_DIR)
+    : path.join(__dirname, '..', 'docs', 'components');
+const SCHEMA_PATH = path.join(__dirname, 'schemas', 'component-frontmatter.schema.json');
 
 // Required sections in documentation
-const REQUIRED_SECTIONS = [
-    '# ',           // Title
-    '## Installation',
-    '## Basic Usage',
-    '## Accessibility'
-];
+const REQUIRED_SECTIONS = ['# ', '## Accessibility'];
 
 // Optional but recommended sections
-const RECOMMENDED_SECTIONS = [
-    '## Modifiers',
-    '## States',
-    '## Examples'
-];
+const RECOMMENDED_SECTIONS = ['## Modifiers', '## States', '## Examples'];
 
 // Validation results
 const results = {
@@ -96,7 +89,7 @@ function validateFrontmatter(frontmatter, schema) {
     if (!valid) {
         return {
             valid: false,
-            errors: validate.errors.map(err => ({
+            errors: validate.errors.map((err) => ({
                 path: err.instancePath || err.dataPath,
                 message: err.message,
                 params: err.params
@@ -110,12 +103,15 @@ function validateFrontmatter(frontmatter, schema) {
 /**
  * Check for required sections in markdown content
  */
-function checkRequiredSections(content) {
+function checkRequiredSections(content, frontmatter) {
     const issues = [];
     const warnings = [];
+    const requiredSections = frontmatter.cssFile
+        ? [...REQUIRED_SECTIONS, '## Installation', '## Basic Usage']
+        : REQUIRED_SECTIONS;
 
     // Check required sections
-    for (const section of REQUIRED_SECTIONS) {
+    for (const section of requiredSections) {
         if (!content.includes(section)) {
             issues.push(`Missing required section: "${section}"`);
         }
@@ -134,8 +130,25 @@ function checkRequiredSections(content) {
 /**
  * Validate HTML code blocks
  */
-function validateHTMLBlocks(content, filePath) {
-    const issues = [];
+function validateHTMLBlocks(content) {
+    const errors = [];
+    const warnings = [];
+    const voidElements = new Set([
+        'area',
+        'base',
+        'br',
+        'col',
+        'embed',
+        'hr',
+        'img',
+        'input',
+        'link',
+        'meta',
+        'param',
+        'source',
+        'track',
+        'wbr'
+    ]);
 
     // Find all HTML code blocks
     const htmlBlockRegex = /```html\s*([\s\S]*?)```/g;
@@ -145,35 +158,88 @@ function validateHTMLBlocks(content, filePath) {
     while ((match = htmlBlockRegex.exec(content)) !== null) {
         blockIndex++;
         const html = match[1];
+        const openTags = [];
+        const htmlTokenRegex = /<!--[\s\S]*?-->|<![^>]*>|<\?[^>]*\?>|<\/?[a-z][^>]*>/gi;
+        let htmlTokenMatch;
+
+        while ((htmlTokenMatch = htmlTokenRegex.exec(html)) !== null) {
+            const tag = htmlTokenMatch[0];
+            if (tag.startsWith('<!--') || tag.startsWith('<!') || tag.startsWith('<?')) {
+                continue;
+            }
+
+            const tagMatch = tag.match(/^<\s*(\/?)\s*([a-z][a-z0-9:-]*)\b/i);
+            if (!tagMatch) {
+                continue;
+            }
+
+            const tagName = tagMatch[2].toLowerCase();
+            const isClosing = Boolean(tagMatch[1]);
+            if (voidElements.has(tagName) || (!isClosing && /\/\s*>$/.test(tag))) {
+                continue;
+            }
+
+            if (!isClosing) {
+                openTags.push(tagName);
+                continue;
+            }
+
+            const expectedTag = openTags.at(-1);
+            if (!expectedTag) {
+                errors.push(`HTML block ${blockIndex}: Unmatched closing tag </${tagName}>`);
+                continue;
+            }
+
+            if (expectedTag !== tagName) {
+                errors.push(
+                    `HTML block ${blockIndex}: Misnested closing tag </${tagName}>; expected </${expectedTag}>`
+                );
+                const matchingOpeningIndex = openTags.lastIndexOf(tagName);
+                if (matchingOpeningIndex >= 0) {
+                    openTags.splice(matchingOpeningIndex);
+                }
+                continue;
+            }
+
+            openTags.pop();
+        }
+
+        if (openTags.length > 0) {
+            errors.push(
+                `HTML block ${blockIndex}: Unclosed tag${openTags.length === 1 ? '' : 's'}: ${openTags
+                    .map((tagName) => `<${tagName}>`)
+                    .join(', ')}`
+            );
+        }
 
         // Check for common issues
         if (html.includes('fddocs-')) {
-            issues.push(`HTML block ${blockIndex}: Contains 'fddocs-' classes (should be cleaned)`);
+            warnings.push(`HTML block ${blockIndex}: Contains 'fddocs-' classes (should be cleaned)`);
         }
 
         if (html.includes('style=')) {
-            issues.push(`HTML block ${blockIndex}: Contains inline styles (should be removed)`);
+            warnings.push(`HTML block ${blockIndex}: Contains inline styles (should be removed)`);
         }
 
         if (html.includes('data-testid') || html.includes('data-test')) {
-            issues.push(`HTML block ${blockIndex}: Contains test attributes (should be removed)`);
+            warnings.push(`HTML block ${blockIndex}: Contains test attributes (should be removed)`);
         }
 
         if (html.includes('<br>') || html.includes('<br/>')) {
-            issues.push(`HTML block ${blockIndex}: Contains <br> tags (should be removed)`);
+            warnings.push(`HTML block ${blockIndex}: Contains <br> tags (should be removed)`);
         }
 
         // Check for proper indentation (should be 4 spaces)
-        const lines = html.split('\n').filter(l => l.trim());
+        const lines = html.split('\n').filter((l) => l.trim());
         if (lines.length > 0) {
             const firstLine = lines[0];
             if (firstLine.startsWith('  ') && !firstLine.startsWith('    ')) {
-                issues.push(`HTML block ${blockIndex}: Uses 2-space indentation (should be 4 spaces)`);
+                warnings.push(`HTML block ${blockIndex}: Uses 2-space indentation (should be 4 spaces)`);
             }
         }
     }
 
-    return issues;
+    return { errors, warnings };
 }
 
 /**
@@ -195,9 +261,12 @@ function validateModifierTable(content) {
     }
 
     // Check for empty descriptions
-    const tableRows = modifierSection.split('\n').filter(line => line.startsWith('|') && !line.includes('Class'));
+    const tableRows = modifierSection.split('\n').filter((line) => line.startsWith('|') && !line.includes('Class'));
     for (const row of tableRows) {
-        const cells = row.split('|').map(c => c.trim()).filter(c => c);
+        const cells = row
+            .split('|')
+            .map((c) => c.trim())
+            .filter((c) => c);
         if (cells.length >= 2 && (!cells[1] || cells[1] === 'Style variant')) {
             issues.push(`Modifier "${cells[0]}" has generic or missing description`);
         }
@@ -231,7 +300,7 @@ function validateFile(filePath, schema) {
         const { valid, errors: schemaErrors } = validateFrontmatter(frontmatter, schema);
         if (!valid) {
             results.failed++;
-            schemaErrors.forEach(err => {
+            schemaErrors.forEach((err) => {
                 const errorMsg = `Frontmatter validation: ${err.path} ${err.message}`;
                 results.errors.push({ file: relativePath, error: errorMsg });
                 console.log(`  ❌ ${errorMsg}`);
@@ -240,10 +309,10 @@ function validateFile(filePath, schema) {
         }
 
         // Check required sections
-        const { issues: sectionIssues, warnings: sectionWarnings } = checkRequiredSections(content, filePath);
+        const { issues: sectionIssues, warnings: sectionWarnings } = checkRequiredSections(content, frontmatter);
         if (sectionIssues.length > 0) {
             results.failed++;
-            sectionIssues.forEach(issue => {
+            sectionIssues.forEach((issue) => {
                 results.errors.push({ file: relativePath, error: issue });
                 console.log(`  ❌ ${issue}`);
             });
@@ -253,16 +322,24 @@ function validateFile(filePath, schema) {
         // Check for warnings
         if (sectionWarnings.length > 0) {
             results.warnings += sectionWarnings.length;
-            sectionWarnings.forEach(warning => {
+            sectionWarnings.forEach((warning) => {
                 console.log(`  ⚠️  ${warning}`);
             });
         }
 
         // Validate HTML blocks
-        const htmlIssues = validateHTMLBlocks(content, filePath);
-        if (htmlIssues.length > 0) {
-            results.warnings += htmlIssues.length;
-            htmlIssues.forEach(issue => {
+        const { errors: htmlErrors, warnings: htmlWarnings } = validateHTMLBlocks(content);
+        if (htmlErrors.length > 0) {
+            results.failed++;
+            htmlErrors.forEach((issue) => {
+                results.errors.push({ file: relativePath, error: issue });
+                console.log(`  ❌ ${issue}`);
+            });
+        }
+
+        if (htmlWarnings.length > 0) {
+            results.warnings += htmlWarnings.length;
+            htmlWarnings.forEach((issue) => {
                 console.log(`  ⚠️  ${issue}`);
             });
         }
@@ -271,14 +348,17 @@ function validateFile(filePath, schema) {
         const modifierIssues = validateModifierTable(content);
         if (modifierIssues.length > 0) {
             results.warnings += modifierIssues.length;
-            modifierIssues.forEach(issue => {
+            modifierIssues.forEach((issue) => {
                 console.log(`  ⚠️  ${issue}`);
             });
         }
 
+        if (htmlErrors.length > 0) {
+            return;
+        }
+
         results.passed++;
         console.log(`  ✅ Valid`);
-
     } catch (err) {
         results.failed++;
         const errorMsg = `Exception: ${err.message}`;
@@ -299,16 +379,17 @@ function validateAllDocs() {
     console.log(`✅ Schema loaded: ${schema.title}\n`);
 
     // Find all markdown files
-    const files = fs.readdirSync(DOCS_DIR)
-        .filter(f => f.endsWith('.md') && f !== 'README.md')
-        .map(f => path.join(DOCS_DIR, f))
+    const files = fs
+        .readdirSync(DOCS_DIR)
+        .filter((f) => f.endsWith('.md') && f !== 'README.md')
+        .map((f) => path.join(DOCS_DIR, f))
         .sort();
 
     console.log(`Found ${files.length} component documentation files\n`);
     console.log('='.repeat(60));
 
     // Validate each file
-    files.forEach(file => validateFile(file, schema));
+    files.forEach((file) => validateFile(file, schema));
 
     // Print summary
     console.log('\n' + '='.repeat(60));
@@ -330,7 +411,7 @@ function validateAllDocs() {
 
         Object.entries(errorsByFile).forEach(([file, errors]) => {
             console.log(`\n  ${file}:`);
-            errors.forEach(err => console.log(`    - ${err}`));
+            errors.forEach((err) => console.log(`    - ${err}`));
         });
 
         process.exit(1);
@@ -348,4 +429,4 @@ if (import.meta.url === `file://${process.argv[1]}`) {
     validateAllDocs();
 }
 
-export { validateFile, parseFrontmatter, validateFrontmatter };
+export { SCHEMA_PATH, validateFile, validateHTMLBlocks, parseFrontmatter, validateFrontmatter };

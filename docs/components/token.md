@@ -21,8 +21,10 @@ Tokens are small items of information (similar to tags) that mainly serve to vis
 The default token is displayed in grey with text, and a close button that will remove the token when selected.
 
 | **Modifier Class** | **Usage** |
-| -----: | :----- | 
-| \
+| -----: | :----- |
+| `fd-token--selected` | signaling to the user that they are selected |
+| `fd-token--disabled` | change to disabled coursor |
+| `fd-token--readonly` | displayed as read-only, indicating that they cannot be interacted with. Read-only tokens should not contain a close button |
 
 ## Usage Guidelines
 
@@ -31,8 +33,10 @@ The default token is displayed in grey with text, and a close button that will r
 The default token is displayed in grey with text, and a close button that will remove the token when selected.
 
 | **Modifier Class** | **Usage** |
-| -----: | :----- | 
-| \
+| -----: | :----- |
+| `fd-token--selected` | signaling to the user that they are selected |
+| `fd-token--disabled` | change to disabled coursor |
+| `fd-token--readonly` | displayed as read-only, indicating that they cannot be interacted with. Read-only tokens should not contain a close button |
 
 ## Dependencies
 

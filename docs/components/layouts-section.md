@@ -2,8 +2,8 @@
 component: section
 title: Layouts/Section
 category: Layouts
-selector: 
-cssFile: 
+selector:
+cssFile:
 sourcePath: packages/styles/stories/Layouts/section/section.stories.js
 tags: ["non-f3"]
 dependencies: ["layout","layout-grid","layout-panel","section"]
@@ -18,7 +18,8 @@ The section is a page-level structure container used to divide a page into stack
 You will generally use a section inside a page container which will give you the appropriate side margins. Since a section is full-width by default it can be used as a well with background colors or images.
 
 Can hold two child types:
-- \
+- `.fd-layout-panel`
+- `.fd-container`, `.fd-row` and `fd-col--[num]` can be used to organize panels or content when a grid layout is not desired.
 
 ## Dependencies
 

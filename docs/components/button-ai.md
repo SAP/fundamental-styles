@@ -49,7 +49,6 @@ npm install fundamental-styles
 
 <!-- Include component CSS -->
 <link href="node_modules/fundamental-styles/dist/button.css" rel="stylesheet">
-
 ```
 
 ## Basic Usage

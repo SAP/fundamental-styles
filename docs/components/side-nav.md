@@ -24,10 +24,10 @@ The Side Navigation consists of the following elements: <br>
 </ul>
 
 
-The List structure is based on **Navigation List** 
+The List structure is based on **Navigation List**
 <ul>
   <li>
-    **<code>.fd-navigation-list</code>** with modifier classes **<code>.level-1</code>** and **<code>.level-2</code>** 
+    **<code>.fd-navigation-list</code>** with modifier classes **<code>.level-1</code>** and **<code>.level-2</code>**
   </li>
   <li>
     **<code>.fd-navigation-list\\_\\_item</code>**
@@ -89,268 +89,268 @@ npm install fundamental-styles
                             <i class=" sap-icon--home" role="presentation"></i>
                         </span>
                         <span class="fd-navigation-list__text">Home</span>
-                    </a>
-                </li>
+                    </div>
+                </a>
+            </li>
 
-                <li class="fd-navigation-list__item" role="none">
-                    <a class="fd-navigation-list__content" role="treeitem" tabindex="0" aria-expanded="true">
-                        <div class="fd-navigation-list__content-container">
-                            <span class="fd-navigation-list__icon">
-                                <i class="sap-icon--unfavorite" role="presentation"></i>
-                            </span>
-                            <span class="fd-navigation-list__text">Favorites</span>
-                        </div>
-                        <div class="fd-navigation-list__navigation-indicator" role="presentation" aria-hidden="true">
-                            <i class="sap-icon--navigation-down-arrow" role="presentation"></i>
-                        </div>
-                    </a>
-                    <ul class="fd-navigation-list level-2" role="group">
-                        <li class="fd-navigation-list__item" role="none">
-                            <a class="fd-navigation-list__content" role="treeitem" tabindex="0">
-                                <div class="fd-navigation-list__content-container">
-                                    <span class="fd-navigation-list__text">My Accounts</span>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="fd-navigation-list__item" role="none">
-                            <a class="fd-navigation-list__content" role="treeitem" tabindex="0">
-                                <div class="fd-navigation-list__content-container">
-                                    <span class="fd-navigation-list__text">My Orders</span>
-                                </div>
-                            </a>
-                        </li>
-                    </ul>
-                </li>
+            <li class="fd-navigation-list__item" role="none">
+                <a class="fd-navigation-list__content" role="treeitem" tabindex="0" aria-expanded="true">
+                    <div class="fd-navigation-list__content-container">
+                        <span class="fd-navigation-list__icon">
+                            <i class="sap-icon--unfavorite" role="presentation"></i>
+                        </span>
+                        <span class="fd-navigation-list__text">Favorites</span>
+                    </div>
+                    <div class="fd-navigation-list__navigation-indicator" role="presentation" aria-hidden="true">
+                        <i class="sap-icon--navigation-down-arrow" role="presentation"></i>
+                    </div>
+                </a>
+                <ul class="fd-navigation-list level-2" role="group">
+                    <li class="fd-navigation-list__item" role="none">
+                        <a class="fd-navigation-list__content" role="treeitem" tabindex="0">
+                            <div class="fd-navigation-list__content-container">
+                                <span class="fd-navigation-list__text">My Accounts</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="fd-navigation-list__item" role="none">
+                        <a class="fd-navigation-list__content" role="treeitem" tabindex="0">
+                            <div class="fd-navigation-list__content-container">
+                                <span class="fd-navigation-list__text">My Orders</span>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </li>
 
-                <li class="fd-navigation-list__item" role="none">
-                    <a class="fd-navigation-list__content" role="treeitem" tabindex="0" aria-expanded="true">
-                        <div class="fd-navigation-list__content-container">
-                            <span class="fd-navigation-list__icon">
-                                <i class="sap-icon--account" role="presentation"></i>
-                            </span>
-                            <span class="fd-navigation-list__text">Customer Management</span>
-                        </div>
-                        <div class="fd-navigation-list__navigation-indicator" role="presentation" aria-hidden="true">
-                            <i class="sap-icon--navigation-down-arrow" role="presentation"></i>
-                        </div>
-                    </a>
-                    <ul class="fd-navigation-list level-2" role="group">
-                        <li class="fd-navigation-list__item" role="none">
-                            <a class="fd-navigation-list__content" role="treeitem" tabindex="0">
-                                <div class="fd-navigation-list__content-container">
-                                    <span class="fd-navigation-list__text">Contacts</span>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="fd-navigation-list__item" role="none">
-                            <a class="fd-navigation-list__content" role="treeitem" tabindex="0">
-                                <div class="fd-navigation-list__content-container">
-                                    <span class="fd-navigation-list__text">Companies</span>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="fd-navigation-list__item" role="none">
-                            <a class="fd-navigation-list__content" role="treeitem" tabindex="0">
-                                <div class="fd-navigation-list__content-container">
-                                    <span class="fd-navigation-list__text">Partners</span>
-                                </div>
-                            </a>
-                        </li>
-                    </ul>
-                </li>
+            <li class="fd-navigation-list__item" role="none">
+                <a class="fd-navigation-list__content" role="treeitem" tabindex="0" aria-expanded="true">
+                    <div class="fd-navigation-list__content-container">
+                        <span class="fd-navigation-list__icon">
+                            <i class="sap-icon--account" role="presentation"></i>
+                        </span>
+                        <span class="fd-navigation-list__text">Customer Management</span>
+                    </div>
+                    <div class="fd-navigation-list__navigation-indicator" role="presentation" aria-hidden="true">
+                        <i class="sap-icon--navigation-down-arrow" role="presentation"></i>
+                    </div>
+                </a>
+                <ul class="fd-navigation-list level-2" role="group">
+                    <li class="fd-navigation-list__item" role="none">
+                        <a class="fd-navigation-list__content" role="treeitem" tabindex="0">
+                            <div class="fd-navigation-list__content-container">
+                                <span class="fd-navigation-list__text">Contacts</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="fd-navigation-list__item" role="none">
+                        <a class="fd-navigation-list__content" role="treeitem" tabindex="0">
+                            <div class="fd-navigation-list__content-container">
+                                <span class="fd-navigation-list__text">Companies</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="fd-navigation-list__item" role="none">
+                        <a class="fd-navigation-list__content" role="treeitem" tabindex="0">
+                            <div class="fd-navigation-list__content-container">
+                                <span class="fd-navigation-list__text">Partners</span>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </li>
 
-                <li class="fd-navigation-list__item" role="none">
-                    <a class="fd-navigation-list__content" role="treeitem" tabindex="0" aria-expanded="true">
-                        <div class="fd-navigation-list__content-container">
-                            <span class="fd-navigation-list__icon">
-                                <i class="sap-icon--crm-sales" role="presentation"></i>
-                            </span>
-                            <span class="fd-navigation-list__text">Sales</span>
-                        </div>
-                        <div class="fd-navigation-list__navigation-indicator" role="presentation" aria-hidden="true">
-                            <i class="sap-icon--navigation-down-arrow" role="presentation"></i>
-                        </div>
-                    </a>
-                    <ul class="fd-navigation-list level-2" role="group">
-                        <li class="fd-navigation-list__item" role="none">
-                            <a class="fd-navigation-list__content" role="treeitem" tabindex="0">
-                                <div class="fd-navigation-list__content-container">
-                                    <span class="fd-navigation-list__text">Leads</span>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="fd-navigation-list__item" role="none">
-                            <a class="fd-navigation-list__content" role="treeitem" tabindex="0">
-                                <div class="fd-navigation-list__content-container">
-                                    <span class="fd-navigation-list__text">Opportunities</span>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="fd-navigation-list__item" role="none">
-                            <a class="fd-navigation-list__content" role="treeitem" tabindex="0">
-                                <div class="fd-navigation-list__content-container">
-                                    <span class="fd-navigation-list__text">Quotes</span>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="fd-navigation-list__item" role="none">
-                            <a class="fd-navigation-list__content" role="treeitem" tabindex="0">
-                                <div class="fd-navigation-list__content-container">
-                                    <span class="fd-navigation-list__text">Orders</span>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="fd-navigation-list__item" role="none">
-                            <a class="fd-navigation-list__content" role="treeitem" tabindex="0">
-                                <div class="fd-navigation-list__content-container">
-                                    <span class="fd-navigation-list__text">Invoices</span>
-                                </div>
-                            </a>
-                        </li>
-                    </ul>
-                </li>
+            <li class="fd-navigation-list__item" role="none">
+                <a class="fd-navigation-list__content" role="treeitem" tabindex="0" aria-expanded="true">
+                    <div class="fd-navigation-list__content-container">
+                        <span class="fd-navigation-list__icon">
+                            <i class="sap-icon--crm-sales" role="presentation"></i>
+                        </span>
+                        <span class="fd-navigation-list__text">Sales</span>
+                    </div>
+                    <div class="fd-navigation-list__navigation-indicator" role="presentation" aria-hidden="true">
+                        <i class="sap-icon--navigation-down-arrow" role="presentation"></i>
+                    </div>
+                </a>
+                <ul class="fd-navigation-list level-2" role="group">
+                    <li class="fd-navigation-list__item" role="none">
+                        <a class="fd-navigation-list__content" role="treeitem" tabindex="0">
+                            <div class="fd-navigation-list__content-container">
+                                <span class="fd-navigation-list__text">Leads</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="fd-navigation-list__item" role="none">
+                        <a class="fd-navigation-list__content" role="treeitem" tabindex="0">
+                            <div class="fd-navigation-list__content-container">
+                                <span class="fd-navigation-list__text">Opportunities</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="fd-navigation-list__item" role="none">
+                        <a class="fd-navigation-list__content" role="treeitem" tabindex="0">
+                            <div class="fd-navigation-list__content-container">
+                                <span class="fd-navigation-list__text">Quotes</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="fd-navigation-list__item" role="none">
+                        <a class="fd-navigation-list__content" role="treeitem" tabindex="0">
+                            <div class="fd-navigation-list__content-container">
+                                <span class="fd-navigation-list__text">Orders</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="fd-navigation-list__item" role="none">
+                        <a class="fd-navigation-list__content" role="treeitem" tabindex="0">
+                            <div class="fd-navigation-list__content-container">
+                                <span class="fd-navigation-list__text">Invoices</span>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </li>
 
-                <li class="fd-navigation-list__item" role="none">
-                    <a class="fd-navigation-list__content" role="treeitem" tabindex="0" aria-expanded="true">
-                        <div class="fd-navigation-list__content-container">
-                            <span class="fd-navigation-list__icon">
-                                <i class="sap-icon--customer-view" role="presentation"></i>
-                            </span>
-                            <span class="fd-navigation-list__text">Products</span>
-                        </div>
-                        <div class="fd-navigation-list__navigation-indicator" role="presentation" aria-hidden="true">
-                            <i class="sap-icon--navigation-down-arrow" role="presentation"></i>
-                        </div>
-                    </a>
-                    <ul class="fd-navigation-list level-2" role="group">
-                        <li class="fd-navigation-list__item" role="none">
-                            <a class="fd-navigation-list__content" role="treeitem" tabindex="0">
-                                <div class="fd-navigation-list__content-container">
-                                    <span class="fd-navigation-list__text">Product Catalog</span>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="fd-navigation-list__item" role="none">
-                            <a class="fd-navigation-list__content" role="treeitem" tabindex="0">
-                                <div class="fd-navigation-list__content-container">
-                                    <span class="fd-navigation-list__text">Pricing</span>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="fd-navigation-list__item" role="none">
-                            <a class="fd-navigation-list__content" role="treeitem" tabindex="0">
-                                <div class="fd-navigation-list__content-container">
-                                    <span class="fd-navigation-list__text">Inventory Management</span>
-                                </div>
-                            </a>
-                        </li>
-                    </ul>
-                </li>
+            <li class="fd-navigation-list__item" role="none">
+                <a class="fd-navigation-list__content" role="treeitem" tabindex="0" aria-expanded="true">
+                    <div class="fd-navigation-list__content-container">
+                        <span class="fd-navigation-list__icon">
+                            <i class="sap-icon--customer-view" role="presentation"></i>
+                        </span>
+                        <span class="fd-navigation-list__text">Products</span>
+                    </div>
+                    <div class="fd-navigation-list__navigation-indicator" role="presentation" aria-hidden="true">
+                        <i class="sap-icon--navigation-down-arrow" role="presentation"></i>
+                    </div>
+                </a>
+                <ul class="fd-navigation-list level-2" role="group">
+                    <li class="fd-navigation-list__item" role="none">
+                        <a class="fd-navigation-list__content" role="treeitem" tabindex="0">
+                            <div class="fd-navigation-list__content-container">
+                                <span class="fd-navigation-list__text">Product Catalog</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="fd-navigation-list__item" role="none">
+                        <a class="fd-navigation-list__content" role="treeitem" tabindex="0">
+                            <div class="fd-navigation-list__content-container">
+                                <span class="fd-navigation-list__text">Pricing</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="fd-navigation-list__item" role="none">
+                        <a class="fd-navigation-list__content" role="treeitem" tabindex="0">
+                            <div class="fd-navigation-list__content-container">
+                                <span class="fd-navigation-list__text">Inventory Management</span>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </li>
 
-                <li class="fd-navigation-list__item" role="none">
-                    <a class="fd-navigation-list__content" role="treeitem" tabindex="0" aria-expanded="true">
-                        <div class="fd-navigation-list__content-container">
-                            <span class="fd-navigation-list__icon">
-                                <i class="sap-icon--marketing-campaign" role="presentation"></i>
-                            </span>
-                            <span class="fd-navigation-list__text">Marketing</span>
-                        </div>
-                        <div class="fd-navigation-list__navigation-indicator" role="presentation" aria-hidden="true">
-                            <i class="sap-icon--navigation-down-arrow" role="presentation"></i>
-                        </div>
-                    </a>
-                    <ul class="fd-navigation-list level-2" role="group">
-                        <li class="fd-navigation-list__item" role="none">
-                            <a class="fd-navigation-list__content" role="treeitem" tabindex="0">
-                                <div class="fd-navigation-list__content-container">
-                                    <span class="fd-navigation-list__text">Campaigns</span>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="fd-navigation-list__item" role="none">
-                            <a class="fd-navigation-list__content" role="treeitem" tabindex="0">
-                                <div class="fd-navigation-list__content-container">
-                                    <span class="fd-navigation-list__text">E-Mail Marketing</span>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="fd-navigation-list__item" role="none">
-                            <a class="fd-navigation-list__content" role="treeitem" tabindex="0">
-                                <div class="fd-navigation-list__content-container">
-                                    <span class="fd-navigation-list__text">Marketing Automation</span>
-                                </div>
-                            </a>
-                        </li>
-                    </ul>
-                </li>
+            <li class="fd-navigation-list__item" role="none">
+                <a class="fd-navigation-list__content" role="treeitem" tabindex="0" aria-expanded="true">
+                    <div class="fd-navigation-list__content-container">
+                        <span class="fd-navigation-list__icon">
+                            <i class="sap-icon--marketing-campaign" role="presentation"></i>
+                        </span>
+                        <span class="fd-navigation-list__text">Marketing</span>
+                    </div>
+                    <div class="fd-navigation-list__navigation-indicator" role="presentation" aria-hidden="true">
+                        <i class="sap-icon--navigation-down-arrow" role="presentation"></i>
+                    </div>
+                </a>
+                <ul class="fd-navigation-list level-2" role="group">
+                    <li class="fd-navigation-list__item" role="none">
+                        <a class="fd-navigation-list__content" role="treeitem" tabindex="0">
+                            <div class="fd-navigation-list__content-container">
+                                <span class="fd-navigation-list__text">Campaigns</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="fd-navigation-list__item" role="none">
+                        <a class="fd-navigation-list__content" role="treeitem" tabindex="0">
+                            <div class="fd-navigation-list__content-container">
+                                <span class="fd-navigation-list__text">E-Mail Marketing</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="fd-navigation-list__item" role="none">
+                        <a class="fd-navigation-list__content" role="treeitem" tabindex="0">
+                            <div class="fd-navigation-list__content-container">
+                                <span class="fd-navigation-list__text">Marketing Automation</span>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </li>
 
-                <li class="fd-navigation-list__item" role="none">
-                    <a class="fd-navigation-list__content" role="treeitem" tabindex="0" aria-expanded="true">
-                        <div class="fd-navigation-list__content-container">
-                            <span class="fd-navigation-list__icon">
-                                <i class="sap-icon--manager-insight" role="presentation"></i>
-                            </span>
-                            <span class="fd-navigation-list__text">Reports</span>
-                        </div>
-                        <div class="fd-navigation-list__navigation-indicator" role="presentation" aria-hidden="true">
-                            <i class="sap-icon--navigation-down-arrow" role="presentation"></i>
-                        </div>
-                    </a>
-                    <ul class="fd-navigation-list level-2" role="group">
-                        <li class="fd-navigation-list__item" role="none">
-                            <a class="fd-navigation-list__content" role="treeitem" tabindex="0">
-                                <div class="fd-navigation-list__content-container">
-                                    <span class="fd-navigation-list__text">Sales Reports</span>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="fd-navigation-list__item" role="none">
-                            <a class="fd-navigation-list__content" role="treeitem" tabindex="0">
-                                <div class="fd-navigation-list__content-container">
-                                    <span class="fd-navigation-list__text">Customer Reports</span>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="fd-navigation-list__item" role="none">
-                            <a class="fd-navigation-list__content" role="treeitem" tabindex="0">
-                                <div class="fd-navigation-list__content-container">
-                                    <span class="fd-navigation-list__text">Marketing Reports</span>
-                                </div>
-                            </a>
-                        </li>
-                    </ul>
-                </li>
+            <li class="fd-navigation-list__item" role="none">
+                <a class="fd-navigation-list__content" role="treeitem" tabindex="0" aria-expanded="true">
+                    <div class="fd-navigation-list__content-container">
+                        <span class="fd-navigation-list__icon">
+                            <i class="sap-icon--manager-insight" role="presentation"></i>
+                        </span>
+                        <span class="fd-navigation-list__text">Reports</span>
+                    </div>
+                    <div class="fd-navigation-list__navigation-indicator" role="presentation" aria-hidden="true">
+                        <i class="sap-icon--navigation-down-arrow" role="presentation"></i>
+                    </div>
+                </a>
+                <ul class="fd-navigation-list level-2" role="group">
+                    <li class="fd-navigation-list__item" role="none">
+                        <a class="fd-navigation-list__content" role="treeitem" tabindex="0">
+                            <div class="fd-navigation-list__content-container">
+                                <span class="fd-navigation-list__text">Sales Reports</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="fd-navigation-list__item" role="none">
+                        <a class="fd-navigation-list__content" role="treeitem" tabindex="0">
+                            <div class="fd-navigation-list__content-container">
+                                <span class="fd-navigation-list__text">Customer Reports</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="fd-navigation-list__item" role="none">
+                        <a class="fd-navigation-list__content" role="treeitem" tabindex="0">
+                            <div class="fd-navigation-list__content-container">
+                                <span class="fd-navigation-list__text">Marketing Reports</span>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </li>
 
-            </ul>
-        </div>
+        </ul>
+    </div>
 
-        <div  class="fd-side-nav__container fd-side-nav__container--bottom">
-            <ul class="fd-navigation-list level-1" role="tree" tabindex="-1" aria-roledescription="Navigation List Tree">
-                <li class="fd-navigation-list__item fd-navigation-list__item--quick-create" role="none">
-                    <a class="fd-navigation-list__content" role="treeitem" tabindex="0">
-                        <div class="fd-navigation-list__content-container">
-                            <span class="fd-navigation-list__icon">
-                                <i class=" sap-icon--add" role="presentation"></i>
-                            </span>
-                            <span class="fd-navigation-list__text">Quick Create</span>
-                        </div>
-                    </a>
-                </li>
+    <div  class="fd-side-nav__container fd-side-nav__container--bottom">
+        <ul class="fd-navigation-list level-1" role="tree" tabindex="-1" aria-roledescription="Navigation List Tree">
+            <li class="fd-navigation-list__item fd-navigation-list__item--quick-create" role="none">
+                <a class="fd-navigation-list__content" role="treeitem" tabindex="0">
+                    <div class="fd-navigation-list__content-container">
+                        <span class="fd-navigation-list__icon">
+                            <i class=" sap-icon--add" role="presentation"></i>
+                        </span>
+                        <span class="fd-navigation-list__text">Quick Create</span>
+                    </div>
+                </a>
+            </li>
 
-                <li class="fd-navigation-list__item" role="none">
-                    <a class="fd-navigation-list__content" role="treeitem" tabindex="0">
-                        <div class="fd-navigation-list__content-container">
-                            <span class="fd-navigation-list__icon">
-                                <i class=" sap-icon--settings" role="presentation"></i>
-                            </span>
-                            <span class="fd-navigation-list__text">Product Settings</span>
-                        </div>
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-</div>
+            <li class="fd-navigation-list__item" role="none">
+                <a class="fd-navigation-list__content" role="treeitem" tabindex="0">
+                    <div class="fd-navigation-list__content-container">
+                        <span class="fd-navigation-list__icon">
+                            <i class=" sap-icon--settings" role="presentation"></i>
+                        </span>
+                        <span class="fd-navigation-list__text">Product Settings</span>
+                    </div>
+                </a>
+            </li>
+        </ul>
+    </div>
+</nav>
 ```
 
 ## States
@@ -405,268 +405,268 @@ Key CSS variables used by this component:
                             <i class=" sap-icon--home" role="presentation"></i>
                         </span>
                         <span class="fd-navigation-list__text">Home</span>
-                    </a>
-                </li>
+                    </div>
+                </a>
+            </li>
 
-                <li class="fd-navigation-list__item" role="none">
-                    <a class="fd-navigation-list__content" role="treeitem" tabindex="0" aria-expanded="true">
-                        <div class="fd-navigation-list__content-container">
-                            <span class="fd-navigation-list__icon">
-                                <i class="sap-icon--unfavorite" role="presentation"></i>
-                            </span>
-                            <span class="fd-navigation-list__text">Favorites</span>
-                        </div>
-                        <div class="fd-navigation-list__navigation-indicator" role="presentation" aria-hidden="true">
-                            <i class="sap-icon--navigation-down-arrow" role="presentation"></i>
-                        </div>
-                    </a>
-                    <ul class="fd-navigation-list level-2" role="group">
-                        <li class="fd-navigation-list__item" role="none">
-                            <a class="fd-navigation-list__content" role="treeitem" tabindex="0">
-                                <div class="fd-navigation-list__content-container">
-                                    <span class="fd-navigation-list__text">My Accounts</span>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="fd-navigation-list__item" role="none">
-                            <a class="fd-navigation-list__content" role="treeitem" tabindex="0">
-                                <div class="fd-navigation-list__content-container">
-                                    <span class="fd-navigation-list__text">My Orders</span>
-                                </div>
-                            </a>
-                        </li>
-                    </ul>
-                </li>
+            <li class="fd-navigation-list__item" role="none">
+                <a class="fd-navigation-list__content" role="treeitem" tabindex="0" aria-expanded="true">
+                    <div class="fd-navigation-list__content-container">
+                        <span class="fd-navigation-list__icon">
+                            <i class="sap-icon--unfavorite" role="presentation"></i>
+                        </span>
+                        <span class="fd-navigation-list__text">Favorites</span>
+                    </div>
+                    <div class="fd-navigation-list__navigation-indicator" role="presentation" aria-hidden="true">
+                        <i class="sap-icon--navigation-down-arrow" role="presentation"></i>
+                    </div>
+                </a>
+                <ul class="fd-navigation-list level-2" role="group">
+                    <li class="fd-navigation-list__item" role="none">
+                        <a class="fd-navigation-list__content" role="treeitem" tabindex="0">
+                            <div class="fd-navigation-list__content-container">
+                                <span class="fd-navigation-list__text">My Accounts</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="fd-navigation-list__item" role="none">
+                        <a class="fd-navigation-list__content" role="treeitem" tabindex="0">
+                            <div class="fd-navigation-list__content-container">
+                                <span class="fd-navigation-list__text">My Orders</span>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </li>
 
-                <li class="fd-navigation-list__item" role="none">
-                    <a class="fd-navigation-list__content" role="treeitem" tabindex="0" aria-expanded="true">
-                        <div class="fd-navigation-list__content-container">
-                            <span class="fd-navigation-list__icon">
-                                <i class="sap-icon--account" role="presentation"></i>
-                            </span>
-                            <span class="fd-navigation-list__text">Customer Management</span>
-                        </div>
-                        <div class="fd-navigation-list__navigation-indicator" role="presentation" aria-hidden="true">
-                            <i class="sap-icon--navigation-down-arrow" role="presentation"></i>
-                        </div>
-                    </a>
-                    <ul class="fd-navigation-list level-2" role="group">
-                        <li class="fd-navigation-list__item" role="none">
-                            <a class="fd-navigation-list__content" role="treeitem" tabindex="0">
-                                <div class="fd-navigation-list__content-container">
-                                    <span class="fd-navigation-list__text">Contacts</span>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="fd-navigation-list__item" role="none">
-                            <a class="fd-navigation-list__content" role="treeitem" tabindex="0">
-                                <div class="fd-navigation-list__content-container">
-                                    <span class="fd-navigation-list__text">Companies</span>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="fd-navigation-list__item" role="none">
-                            <a class="fd-navigation-list__content" role="treeitem" tabindex="0">
-                                <div class="fd-navigation-list__content-container">
-                                    <span class="fd-navigation-list__text">Partners</span>
-                                </div>
-                            </a>
-                        </li>
-                    </ul>
-                </li>
+            <li class="fd-navigation-list__item" role="none">
+                <a class="fd-navigation-list__content" role="treeitem" tabindex="0" aria-expanded="true">
+                    <div class="fd-navigation-list__content-container">
+                        <span class="fd-navigation-list__icon">
+                            <i class="sap-icon--account" role="presentation"></i>
+                        </span>
+                        <span class="fd-navigation-list__text">Customer Management</span>
+                    </div>
+                    <div class="fd-navigation-list__navigation-indicator" role="presentation" aria-hidden="true">
+                        <i class="sap-icon--navigation-down-arrow" role="presentation"></i>
+                    </div>
+                </a>
+                <ul class="fd-navigation-list level-2" role="group">
+                    <li class="fd-navigation-list__item" role="none">
+                        <a class="fd-navigation-list__content" role="treeitem" tabindex="0">
+                            <div class="fd-navigation-list__content-container">
+                                <span class="fd-navigation-list__text">Contacts</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="fd-navigation-list__item" role="none">
+                        <a class="fd-navigation-list__content" role="treeitem" tabindex="0">
+                            <div class="fd-navigation-list__content-container">
+                                <span class="fd-navigation-list__text">Companies</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="fd-navigation-list__item" role="none">
+                        <a class="fd-navigation-list__content" role="treeitem" tabindex="0">
+                            <div class="fd-navigation-list__content-container">
+                                <span class="fd-navigation-list__text">Partners</span>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </li>
 
-                <li class="fd-navigation-list__item" role="none">
-                    <a class="fd-navigation-list__content" role="treeitem" tabindex="0" aria-expanded="true">
-                        <div class="fd-navigation-list__content-container">
-                            <span class="fd-navigation-list__icon">
-                                <i class="sap-icon--crm-sales" role="presentation"></i>
-                            </span>
-                            <span class="fd-navigation-list__text">Sales</span>
-                        </div>
-                        <div class="fd-navigation-list__navigation-indicator" role="presentation" aria-hidden="true">
-                            <i class="sap-icon--navigation-down-arrow" role="presentation"></i>
-                        </div>
-                    </a>
-                    <ul class="fd-navigation-list level-2" role="group">
-                        <li class="fd-navigation-list__item" role="none">
-                            <a class="fd-navigation-list__content" role="treeitem" tabindex="0">
-                                <div class="fd-navigation-list__content-container">
-                                    <span class="fd-navigation-list__text">Leads</span>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="fd-navigation-list__item" role="none">
-                            <a class="fd-navigation-list__content" role="treeitem" tabindex="0">
-                                <div class="fd-navigation-list__content-container">
-                                    <span class="fd-navigation-list__text">Opportunities</span>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="fd-navigation-list__item" role="none">
-                            <a class="fd-navigation-list__content" role="treeitem" tabindex="0">
-                                <div class="fd-navigation-list__content-container">
-                                    <span class="fd-navigation-list__text">Quotes</span>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="fd-navigation-list__item" role="none">
-                            <a class="fd-navigation-list__content" role="treeitem" tabindex="0">
-                                <div class="fd-navigation-list__content-container">
-                                    <span class="fd-navigation-list__text">Orders</span>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="fd-navigation-list__item" role="none">
-                            <a class="fd-navigation-list__content" role="treeitem" tabindex="0">
-                                <div class="fd-navigation-list__content-container">
-                                    <span class="fd-navigation-list__text">Invoices</span>
-                                </div>
-                            </a>
-                        </li>
-                    </ul>
-                </li>
+            <li class="fd-navigation-list__item" role="none">
+                <a class="fd-navigation-list__content" role="treeitem" tabindex="0" aria-expanded="true">
+                    <div class="fd-navigation-list__content-container">
+                        <span class="fd-navigation-list__icon">
+                            <i class="sap-icon--crm-sales" role="presentation"></i>
+                        </span>
+                        <span class="fd-navigation-list__text">Sales</span>
+                    </div>
+                    <div class="fd-navigation-list__navigation-indicator" role="presentation" aria-hidden="true">
+                        <i class="sap-icon--navigation-down-arrow" role="presentation"></i>
+                    </div>
+                </a>
+                <ul class="fd-navigation-list level-2" role="group">
+                    <li class="fd-navigation-list__item" role="none">
+                        <a class="fd-navigation-list__content" role="treeitem" tabindex="0">
+                            <div class="fd-navigation-list__content-container">
+                                <span class="fd-navigation-list__text">Leads</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="fd-navigation-list__item" role="none">
+                        <a class="fd-navigation-list__content" role="treeitem" tabindex="0">
+                            <div class="fd-navigation-list__content-container">
+                                <span class="fd-navigation-list__text">Opportunities</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="fd-navigation-list__item" role="none">
+                        <a class="fd-navigation-list__content" role="treeitem" tabindex="0">
+                            <div class="fd-navigation-list__content-container">
+                                <span class="fd-navigation-list__text">Quotes</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="fd-navigation-list__item" role="none">
+                        <a class="fd-navigation-list__content" role="treeitem" tabindex="0">
+                            <div class="fd-navigation-list__content-container">
+                                <span class="fd-navigation-list__text">Orders</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="fd-navigation-list__item" role="none">
+                        <a class="fd-navigation-list__content" role="treeitem" tabindex="0">
+                            <div class="fd-navigation-list__content-container">
+                                <span class="fd-navigation-list__text">Invoices</span>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </li>
 
-                <li class="fd-navigation-list__item" role="none">
-                    <a class="fd-navigation-list__content" role="treeitem" tabindex="0" aria-expanded="true">
-                        <div class="fd-navigation-list__content-container">
-                            <span class="fd-navigation-list__icon">
-                                <i class="sap-icon--customer-view" role="presentation"></i>
-                            </span>
-                            <span class="fd-navigation-list__text">Products</span>
-                        </div>
-                        <div class="fd-navigation-list__navigation-indicator" role="presentation" aria-hidden="true">
-                            <i class="sap-icon--navigation-down-arrow" role="presentation"></i>
-                        </div>
-                    </a>
-                    <ul class="fd-navigation-list level-2" role="group">
-                        <li class="fd-navigation-list__item" role="none">
-                            <a class="fd-navigation-list__content" role="treeitem" tabindex="0">
-                                <div class="fd-navigation-list__content-container">
-                                    <span class="fd-navigation-list__text">Product Catalog</span>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="fd-navigation-list__item" role="none">
-                            <a class="fd-navigation-list__content" role="treeitem" tabindex="0">
-                                <div class="fd-navigation-list__content-container">
-                                    <span class="fd-navigation-list__text">Pricing</span>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="fd-navigation-list__item" role="none">
-                            <a class="fd-navigation-list__content" role="treeitem" tabindex="0">
-                                <div class="fd-navigation-list__content-container">
-                                    <span class="fd-navigation-list__text">Inventory Management</span>
-                                </div>
-                            </a>
-                        </li>
-                    </ul>
-                </li>
+            <li class="fd-navigation-list__item" role="none">
+                <a class="fd-navigation-list__content" role="treeitem" tabindex="0" aria-expanded="true">
+                    <div class="fd-navigation-list__content-container">
+                        <span class="fd-navigation-list__icon">
+                            <i class="sap-icon--customer-view" role="presentation"></i>
+                        </span>
+                        <span class="fd-navigation-list__text">Products</span>
+                    </div>
+                    <div class="fd-navigation-list__navigation-indicator" role="presentation" aria-hidden="true">
+                        <i class="sap-icon--navigation-down-arrow" role="presentation"></i>
+                    </div>
+                </a>
+                <ul class="fd-navigation-list level-2" role="group">
+                    <li class="fd-navigation-list__item" role="none">
+                        <a class="fd-navigation-list__content" role="treeitem" tabindex="0">
+                            <div class="fd-navigation-list__content-container">
+                                <span class="fd-navigation-list__text">Product Catalog</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="fd-navigation-list__item" role="none">
+                        <a class="fd-navigation-list__content" role="treeitem" tabindex="0">
+                            <div class="fd-navigation-list__content-container">
+                                <span class="fd-navigation-list__text">Pricing</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="fd-navigation-list__item" role="none">
+                        <a class="fd-navigation-list__content" role="treeitem" tabindex="0">
+                            <div class="fd-navigation-list__content-container">
+                                <span class="fd-navigation-list__text">Inventory Management</span>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </li>
 
-                <li class="fd-navigation-list__item" role="none">
-                    <a class="fd-navigation-list__content" role="treeitem" tabindex="0" aria-expanded="true">
-                        <div class="fd-navigation-list__content-container">
-                            <span class="fd-navigation-list__icon">
-                                <i class="sap-icon--marketing-campaign" role="presentation"></i>
-                            </span>
-                            <span class="fd-navigation-list__text">Marketing</span>
-                        </div>
-                        <div class="fd-navigation-list__navigation-indicator" role="presentation" aria-hidden="true">
-                            <i class="sap-icon--navigation-down-arrow" role="presentation"></i>
-                        </div>
-                    </a>
-                    <ul class="fd-navigation-list level-2" role="group">
-                        <li class="fd-navigation-list__item" role="none">
-                            <a class="fd-navigation-list__content" role="treeitem" tabindex="0">
-                                <div class="fd-navigation-list__content-container">
-                                    <span class="fd-navigation-list__text">Campaigns</span>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="fd-navigation-list__item" role="none">
-                            <a class="fd-navigation-list__content" role="treeitem" tabindex="0">
-                                <div class="fd-navigation-list__content-container">
-                                    <span class="fd-navigation-list__text">E-Mail Marketing</span>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="fd-navigation-list__item" role="none">
-                            <a class="fd-navigation-list__content" role="treeitem" tabindex="0">
-                                <div class="fd-navigation-list__content-container">
-                                    <span class="fd-navigation-list__text">Marketing Automation</span>
-                                </div>
-                            </a>
-                        </li>
-                    </ul>
-                </li>
+            <li class="fd-navigation-list__item" role="none">
+                <a class="fd-navigation-list__content" role="treeitem" tabindex="0" aria-expanded="true">
+                    <div class="fd-navigation-list__content-container">
+                        <span class="fd-navigation-list__icon">
+                            <i class="sap-icon--marketing-campaign" role="presentation"></i>
+                        </span>
+                        <span class="fd-navigation-list__text">Marketing</span>
+                    </div>
+                    <div class="fd-navigation-list__navigation-indicator" role="presentation" aria-hidden="true">
+                        <i class="sap-icon--navigation-down-arrow" role="presentation"></i>
+                    </div>
+                </a>
+                <ul class="fd-navigation-list level-2" role="group">
+                    <li class="fd-navigation-list__item" role="none">
+                        <a class="fd-navigation-list__content" role="treeitem" tabindex="0">
+                            <div class="fd-navigation-list__content-container">
+                                <span class="fd-navigation-list__text">Campaigns</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="fd-navigation-list__item" role="none">
+                        <a class="fd-navigation-list__content" role="treeitem" tabindex="0">
+                            <div class="fd-navigation-list__content-container">
+                                <span class="fd-navigation-list__text">E-Mail Marketing</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="fd-navigation-list__item" role="none">
+                        <a class="fd-navigation-list__content" role="treeitem" tabindex="0">
+                            <div class="fd-navigation-list__content-container">
+                                <span class="fd-navigation-list__text">Marketing Automation</span>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </li>
 
-                <li class="fd-navigation-list__item" role="none">
-                    <a class="fd-navigation-list__content" role="treeitem" tabindex="0" aria-expanded="true">
-                        <div class="fd-navigation-list__content-container">
-                            <span class="fd-navigation-list__icon">
-                                <i class="sap-icon--manager-insight" role="presentation"></i>
-                            </span>
-                            <span class="fd-navigation-list__text">Reports</span>
-                        </div>
-                        <div class="fd-navigation-list__navigation-indicator" role="presentation" aria-hidden="true">
-                            <i class="sap-icon--navigation-down-arrow" role="presentation"></i>
-                        </div>
-                    </a>
-                    <ul class="fd-navigation-list level-2" role="group">
-                        <li class="fd-navigation-list__item" role="none">
-                            <a class="fd-navigation-list__content" role="treeitem" tabindex="0">
-                                <div class="fd-navigation-list__content-container">
-                                    <span class="fd-navigation-list__text">Sales Reports</span>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="fd-navigation-list__item" role="none">
-                            <a class="fd-navigation-list__content" role="treeitem" tabindex="0">
-                                <div class="fd-navigation-list__content-container">
-                                    <span class="fd-navigation-list__text">Customer Reports</span>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="fd-navigation-list__item" role="none">
-                            <a class="fd-navigation-list__content" role="treeitem" tabindex="0">
-                                <div class="fd-navigation-list__content-container">
-                                    <span class="fd-navigation-list__text">Marketing Reports</span>
-                                </div>
-                            </a>
-                        </li>
-                    </ul>
-                </li>
+            <li class="fd-navigation-list__item" role="none">
+                <a class="fd-navigation-list__content" role="treeitem" tabindex="0" aria-expanded="true">
+                    <div class="fd-navigation-list__content-container">
+                        <span class="fd-navigation-list__icon">
+                            <i class="sap-icon--manager-insight" role="presentation"></i>
+                        </span>
+                        <span class="fd-navigation-list__text">Reports</span>
+                    </div>
+                    <div class="fd-navigation-list__navigation-indicator" role="presentation" aria-hidden="true">
+                        <i class="sap-icon--navigation-down-arrow" role="presentation"></i>
+                    </div>
+                </a>
+                <ul class="fd-navigation-list level-2" role="group">
+                    <li class="fd-navigation-list__item" role="none">
+                        <a class="fd-navigation-list__content" role="treeitem" tabindex="0">
+                            <div class="fd-navigation-list__content-container">
+                                <span class="fd-navigation-list__text">Sales Reports</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="fd-navigation-list__item" role="none">
+                        <a class="fd-navigation-list__content" role="treeitem" tabindex="0">
+                            <div class="fd-navigation-list__content-container">
+                                <span class="fd-navigation-list__text">Customer Reports</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="fd-navigation-list__item" role="none">
+                        <a class="fd-navigation-list__content" role="treeitem" tabindex="0">
+                            <div class="fd-navigation-list__content-container">
+                                <span class="fd-navigation-list__text">Marketing Reports</span>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </li>
 
-            </ul>
-        </div>
+        </ul>
+    </div>
 
-        <div  class="fd-side-nav__container fd-side-nav__container--bottom">
-            <ul class="fd-navigation-list level-1" role="tree" tabindex="-1" aria-roledescription="Navigation List Tree">
-                <li class="fd-navigation-list__item fd-navigation-list__item--quick-create" role="none">
-                    <a class="fd-navigation-list__content" role="treeitem" tabindex="0">
-                        <div class="fd-navigation-list__content-container">
-                            <span class="fd-navigation-list__icon">
-                                <i class=" sap-icon--add" role="presentation"></i>
-                            </span>
-                            <span class="fd-navigation-list__text">Quick Create</span>
-                        </div>
-                    </a>
-                </li>
+    <div  class="fd-side-nav__container fd-side-nav__container--bottom">
+        <ul class="fd-navigation-list level-1" role="tree" tabindex="-1" aria-roledescription="Navigation List Tree">
+            <li class="fd-navigation-list__item fd-navigation-list__item--quick-create" role="none">
+                <a class="fd-navigation-list__content" role="treeitem" tabindex="0">
+                    <div class="fd-navigation-list__content-container">
+                        <span class="fd-navigation-list__icon">
+                            <i class=" sap-icon--add" role="presentation"></i>
+                        </span>
+                        <span class="fd-navigation-list__text">Quick Create</span>
+                    </div>
+                </a>
+            </li>
 
-                <li class="fd-navigation-list__item" role="none">
-                    <a class="fd-navigation-list__content" role="treeitem" tabindex="0">
-                        <div class="fd-navigation-list__content-container">
-                            <span class="fd-navigation-list__icon">
-                                <i class=" sap-icon--settings" role="presentation"></i>
-                            </span>
-                            <span class="fd-navigation-list__text">Product Settings</span>
-                        </div>
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-</div>
+            <li class="fd-navigation-list__item" role="none">
+                <a class="fd-navigation-list__content" role="treeitem" tabindex="0">
+                    <div class="fd-navigation-list__content-container">
+                        <span class="fd-navigation-list__icon">
+                            <i class=" sap-icon--settings" role="presentation"></i>
+                        </span>
+                        <span class="fd-navigation-list__text">Product Settings</span>
+                    </div>
+                </a>
+            </li>
+        </ul>
+    </div>
+</nav>
 ```
 
 ### Expanded State, Defaut (fixed) Style with Additional Features (Grouping, Two-click items, External Navigation)
@@ -682,317 +682,317 @@ Key CSS variables used by this component:
                             <i class=" sap-icon--home" role="presentation"></i>
                         </span>
                         <span class="fd-navigation-list__text">Home</span>
-                    </a>
-                </li>
-                <li class="fd-navigation-list__item" role="none">
-                    <a class="fd-navigation-list__content" role="treeitem" tabindex="0">
-                        <div class="fd-navigation-list__content-container">
-                            <span class="fd-navigation-list__icon">
-                                <i class=" sap-icon--unfavorite" role="presentation"></i>
-                            </span>
-                            <span class="fd-navigation-list__text">Favorites</span>
-                        </div>
-                    </a>
-                </li>
+                    </div>
+                </a>
+            </li>
+            <li class="fd-navigation-list__item" role="none">
+                <a class="fd-navigation-list__content" role="treeitem" tabindex="0">
+                    <div class="fd-navigation-list__content-container">
+                        <span class="fd-navigation-list__icon">
+                            <i class=" sap-icon--unfavorite" role="presentation"></i>
+                        </span>
+                        <span class="fd-navigation-list__text">Favorites</span>
+                    </div>
+                </a>
+            </li>
 
-                <li class="fd-navigation-list__item fd-navigation-list__item--group" role="none">
-                    <a class="fd-navigation-list__content" role="treeitem" tabindex="0" aria-expanded="true">
-                        <div class="fd-navigation-list__content-container">
-                            <span class="fd-navigation-list__text">Cusomers</span>
-                        </div>
-                        <div class="fd-navigation-list__navigation-indicator" role="presentation" aria-hidden="true">
-                            <i class="sap-icon--navigation-down-arrow" role="presentation"></i>
-                        </div>
-                    </a>
-                    <ul class="fd-navigation-list level-1" role="group">
-                        <li class="fd-navigation-list__item" role="none">
-                            <a class="fd-navigation-list__content" role="treeitem" tabindex="0" aria-expanded="true">
-                                <div class="fd-navigation-list__content-container">
-                                    <span class="fd-navigation-list__icon">
-                                        <i class=" sap-icon--account" role="presentation"></i>
-                                    </span>
-                                    <span class="fd-navigation-list__text">Customer Management</span>
-                                </div>
-                                <div class="fd-navigation-list__navigation-indicator" role="presentation" aria-hidden="true">
-                                    <i class="sap-icon--navigation-down-arrow" role="presentation"></i>
-                                </div>
-                            </a>
-                            <ul class="fd-navigation-list level-2" role="group">
-                                <li class="fd-navigation-list__item" role="none">
-                                    <a class="fd-navigation-list__content" role="treeitem" tabindex="0">
-                                        <div class="fd-navigation-list__content-container">
-                                            <span class="fd-navigation-list__text">Contacts</span>
-                                        </div>
-                                    </a>
-                                </li>
-                                <li class="fd-navigation-list__item" role="none">
-                                    <a class="fd-navigation-list__content is-selected" role="treeitem" tabindex="0">
-                                        <div class="fd-navigation-list__content-container">
-                                            <span class="fd-navigation-list__text">Companies</span>
-                                        </div>
-                                    </a>
-                                </li>
-                                <li class="fd-navigation-list__item" role="none">
-                                    <a class="fd-navigation-list__content" role="treeitem" tabindex="0">
-                                        <div class="fd-navigation-list__content-container">
-                                            <span class="fd-navigation-list__text">Partners</span>
-                                        </div>
-                                        <div class="fd-navigation-list__indication-arrow" role="presentation" aria-hidden="true">
-                                            <i class="sap-icon--arrow-right" role="presentation"></i>
-                                        </div>
-                                    </a>
-                                </li>
-                            </ul>
-                        </li>
+            <li class="fd-navigation-list__item fd-navigation-list__item--group" role="none">
+                <a class="fd-navigation-list__content" role="treeitem" tabindex="0" aria-expanded="true">
+                    <div class="fd-navigation-list__content-container">
+                        <span class="fd-navigation-list__text">Cusomers</span>
+                    </div>
+                    <div class="fd-navigation-list__navigation-indicator" role="presentation" aria-hidden="true">
+                        <i class="sap-icon--navigation-down-arrow" role="presentation"></i>
+                    </div>
+                </a>
+                <ul class="fd-navigation-list level-1" role="group">
+                    <li class="fd-navigation-list__item" role="none">
+                        <a class="fd-navigation-list__content" role="treeitem" tabindex="0" aria-expanded="true">
+                            <div class="fd-navigation-list__content-container">
+                                <span class="fd-navigation-list__icon">
+                                    <i class=" sap-icon--account" role="presentation"></i>
+                                </span>
+                                <span class="fd-navigation-list__text">Customer Management</span>
+                            </div>
+                            <div class="fd-navigation-list__navigation-indicator" role="presentation" aria-hidden="true">
+                                <i class="sap-icon--navigation-down-arrow" role="presentation"></i>
+                            </div>
+                        </a>
+                        <ul class="fd-navigation-list level-2" role="group">
+                            <li class="fd-navigation-list__item" role="none">
+                                <a class="fd-navigation-list__content" role="treeitem" tabindex="0">
+                                    <div class="fd-navigation-list__content-container">
+                                        <span class="fd-navigation-list__text">Contacts</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="fd-navigation-list__item" role="none">
+                                <a class="fd-navigation-list__content is-selected" role="treeitem" tabindex="0">
+                                    <div class="fd-navigation-list__content-container">
+                                        <span class="fd-navigation-list__text">Companies</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="fd-navigation-list__item" role="none">
+                                <a class="fd-navigation-list__content" role="treeitem" tabindex="0">
+                                    <div class="fd-navigation-list__content-container">
+                                        <span class="fd-navigation-list__text">Partners</span>
+                                    </div>
+                                    <div class="fd-navigation-list__indication-arrow" role="presentation" aria-hidden="true">
+                                        <i class="sap-icon--arrow-right" role="presentation"></i>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
 
-                        <li class="fd-navigation-list__item" role="none">
-                            <a class="fd-navigation-list__content" role="treeitem" tabindex="0" aria-expanded="true">
-                                <div class="fd-navigation-list__content-container">
-                                    <span class="fd-navigation-list__icon">
-                                        <i class="sap-icon--crm-sales" role="presentation"></i>
-                                    </span>
-                                    <span class="fd-navigation-list__text">Sales</span>
-                                </div>
-                                <div class="fd-navigation-list__navigation-indicator" role="presentation" aria-hidden="true">
-                                    <i class="sap-icon--navigation-down-arrow" role="presentation"></i>
-                                </div>
-                            </a>
-                            <ul class="fd-navigation-list level-2" role="group">
-                                <li class="fd-navigation-list__item" role="none">
-                                    <a class="fd-navigation-list__content" role="treeitem" tabindex="0">
-                                        <div class="fd-navigation-list__content-container">
-                                            <span class="fd-navigation-list__text">Leads</span>
-                                        </div>
-                                    </a>
-                                </li>
-                                <li class="fd-navigation-list__item" role="none">
-                                    <a class="fd-navigation-list__content" role="treeitem" tabindex="0">
-                                        <div class="fd-navigation-list__content-container">
-                                            <span class="fd-navigation-list__text">Opportunities</span>
-                                        </div>
-                                    </a>
-                                </li>
-                                <li class="fd-navigation-list__item" role="none">
-                                    <a class="fd-navigation-list__content" role="treeitem" tabindex="0">
-                                        <div class="fd-navigation-list__content-container">
-                                            <span class="fd-navigation-list__text">Quotes</span>
-                                        </div>
-                                    </a>
-                                </li>
-                                <li class="fd-navigation-list__item" role="none">
-                                    <a class="fd-navigation-list__content" role="treeitem" tabindex="0">
-                                        <div class="fd-navigation-list__content-container">
-                                            <span class="fd-navigation-list__text">Orders</span>
-                                        </div>
-                                    </a>
-                                </li>
-                                <li class="fd-navigation-list__item" role="none">
-                                    <a class="fd-navigation-list__content" role="treeitem" tabindex="0">
-                                        <div class="fd-navigation-list__content-container">
-                                            <span class="fd-navigation-list__text">Invoices</span>
-                                        </div>
-                                    </a>
-                                </li>
-                            </ul>
-                        </li>
+                    <li class="fd-navigation-list__item" role="none">
+                        <a class="fd-navigation-list__content" role="treeitem" tabindex="0" aria-expanded="true">
+                            <div class="fd-navigation-list__content-container">
+                                <span class="fd-navigation-list__icon">
+                                    <i class="sap-icon--crm-sales" role="presentation"></i>
+                                </span>
+                                <span class="fd-navigation-list__text">Sales</span>
+                            </div>
+                            <div class="fd-navigation-list__navigation-indicator" role="presentation" aria-hidden="true">
+                                <i class="sap-icon--navigation-down-arrow" role="presentation"></i>
+                            </div>
+                        </a>
+                        <ul class="fd-navigation-list level-2" role="group">
+                            <li class="fd-navigation-list__item" role="none">
+                                <a class="fd-navigation-list__content" role="treeitem" tabindex="0">
+                                    <div class="fd-navigation-list__content-container">
+                                        <span class="fd-navigation-list__text">Leads</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="fd-navigation-list__item" role="none">
+                                <a class="fd-navigation-list__content" role="treeitem" tabindex="0">
+                                    <div class="fd-navigation-list__content-container">
+                                        <span class="fd-navigation-list__text">Opportunities</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="fd-navigation-list__item" role="none">
+                                <a class="fd-navigation-list__content" role="treeitem" tabindex="0">
+                                    <div class="fd-navigation-list__content-container">
+                                        <span class="fd-navigation-list__text">Quotes</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="fd-navigation-list__item" role="none">
+                                <a class="fd-navigation-list__content" role="treeitem" tabindex="0">
+                                    <div class="fd-navigation-list__content-container">
+                                        <span class="fd-navigation-list__text">Orders</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="fd-navigation-list__item" role="none">
+                                <a class="fd-navigation-list__content" role="treeitem" tabindex="0">
+                                    <div class="fd-navigation-list__content-container">
+                                        <span class="fd-navigation-list__text">Invoices</span>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
 
-                        <li class="fd-navigation-list__item" role="none">
-                            <a class="fd-navigation-list__content" role="treeitem" tabindex="0" aria-expanded="true">
-                                <div class="fd-navigation-list__content-container">
-                                    <span class="fd-navigation-list__icon">
-                                        <i class="sap-icon--customer-view" role="presentation"></i>
-                                    </span>
-                                    <span class="fd-navigation-list__text">Products</span>
-                                </div>
-                                <div class="fd-navigation-list__navigation-indicator" role="presentation" aria-hidden="true">
-                                    <i class="sap-icon--navigation-down-arrow" role="presentation"></i>
-                                </div>
-                            </a>
-                            <ul class="fd-navigation-list level-2" role="group">
-                                <li class="fd-navigation-list__item" role="none">
-                                    <a class="fd-navigation-list__content" role="treeitem" tabindex="0">
-                                        <div class="fd-navigation-list__content-container">
-                                            <span class="fd-navigation-list__text">Product Catalog</span>
-                                        </div>
-                                    </a>
-                                </li>
-                                <li class="fd-navigation-list__item" role="none">
-                                    <a class="fd-navigation-list__content" role="treeitem" tabindex="0">
-                                        <div class="fd-navigation-list__content-container">
-                                            <span class="fd-navigation-list__text">Pricing</span>
-                                        </div>
-                                    </a>
-                                </li>
-                                <li class="fd-navigation-list__item" role="none">
-                                    <a class="fd-navigation-list__content" role="treeitem" tabindex="0">
-                                        <div class="fd-navigation-list__content-container">
-                                            <span class="fd-navigation-list__text">Inventory Management</span>
-                                        </div>
-                                    </a>
-                                </li>
-                            </ul>
-                        </li>
+                    <li class="fd-navigation-list__item" role="none">
+                        <a class="fd-navigation-list__content" role="treeitem" tabindex="0" aria-expanded="true">
+                            <div class="fd-navigation-list__content-container">
+                                <span class="fd-navigation-list__icon">
+                                    <i class="sap-icon--customer-view" role="presentation"></i>
+                                </span>
+                                <span class="fd-navigation-list__text">Products</span>
+                            </div>
+                            <div class="fd-navigation-list__navigation-indicator" role="presentation" aria-hidden="true">
+                                <i class="sap-icon--navigation-down-arrow" role="presentation"></i>
+                            </div>
+                        </a>
+                        <ul class="fd-navigation-list level-2" role="group">
+                            <li class="fd-navigation-list__item" role="none">
+                                <a class="fd-navigation-list__content" role="treeitem" tabindex="0">
+                                    <div class="fd-navigation-list__content-container">
+                                        <span class="fd-navigation-list__text">Product Catalog</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="fd-navigation-list__item" role="none">
+                                <a class="fd-navigation-list__content" role="treeitem" tabindex="0">
+                                    <div class="fd-navigation-list__content-container">
+                                        <span class="fd-navigation-list__text">Pricing</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="fd-navigation-list__item" role="none">
+                                <a class="fd-navigation-list__content" role="treeitem" tabindex="0">
+                                    <div class="fd-navigation-list__content-container">
+                                        <span class="fd-navigation-list__text">Inventory Management</span>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
 
-                        <li class="fd-navigation-list__item fd-navigation-list__item--two-click" role="none">
-                            <a class="fd-navigation-list__content" role="treeitem" tabindex="0" aria-expanded="false">
-                                <div class="fd-navigation-list__content-container">
-                                    <span class="fd-navigation-list__icon">
-                                        <i class=" sap-icon--customer-view" role="presentation"></i>
-                                    </span>
-                                    <span class="fd-navigation-list__text">Marketing</span>
-                                </div>
-                                <div class="fd-navigation-list__navigation-indicator" role="presentation" aria-hidden="true">
-                                    <i class="sap-icon--navigation-right-arrow" role="presentation"></i>
-                                </div>
-                            </a>
-                            <ul class="fd-navigation-list level-2" role="group">
-                                <li class="fd-navigation-list__item" role="none">
-                                    <a class="fd-navigation-list__content" role="treeitem" tabindex="0">
-                                        <div class="fd-navigation-list__content-container">
-                                            <span class="fd-navigation-list__text">Campaigns</span>
-                                        </div>
-                                    </a>
-                                </li>
-                                <li class="fd-navigation-list__item" role="none">
-                                    <a class="fd-navigation-list__content is-selected" role="treeitem" tabindex="0">
-                                        <div class="fd-navigation-list__content-container">
-                                            <span class="fd-navigation-list__text">E-Mail Marketing</span>
-                                        </div>
-                                    </a>
-                                </li>
-                                <li class="fd-navigation-list__item" role="none">
-                                    <a class="fd-navigation-list__content" role="treeitem" tabindex="0">
-                                        <div class="fd-navigation-list__content-container">
-                                            <span class="fd-navigation-list__text">Marketing Automation</span>
-                                        </div>
-                                    </a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="fd-navigation-list__item" role="none">
-                            <a class="fd-navigation-list__content" role="treeitem" tabindex="0">
-                                <div class="fd-navigation-list__content-container">
-                                    <span class="fd-navigation-list__icon">
-                                        <i class=" sap-icon--manager-insight" role="presentation"></i>
-                                    </span>
-                                    <span class="fd-navigation-list__text">Reports</span>
-                                </div>
-                                <div class="fd-navigation-list__indication-arrow" role="presentation" aria-hidden="true">
-                                    <i class="sap-icon--arrow-right" role="presentation"></i>
-                                </div>
-                            </a>
-                        </li>
-                    </ul>
-                </li>
+                    <li class="fd-navigation-list__item fd-navigation-list__item--two-click" role="none">
+                        <a class="fd-navigation-list__content" role="treeitem" tabindex="0" aria-expanded="false">
+                            <div class="fd-navigation-list__content-container">
+                                <span class="fd-navigation-list__icon">
+                                    <i class=" sap-icon--customer-view" role="presentation"></i>
+                                </span>
+                                <span class="fd-navigation-list__text">Marketing</span>
+                            </div>
+                            <div class="fd-navigation-list__navigation-indicator" role="presentation" aria-hidden="true">
+                                <i class="sap-icon--navigation-right-arrow" role="presentation"></i>
+                            </div>
+                        </a>
+                        <ul class="fd-navigation-list level-2" role="group">
+                            <li class="fd-navigation-list__item" role="none">
+                                <a class="fd-navigation-list__content" role="treeitem" tabindex="0">
+                                    <div class="fd-navigation-list__content-container">
+                                        <span class="fd-navigation-list__text">Campaigns</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="fd-navigation-list__item" role="none">
+                                <a class="fd-navigation-list__content is-selected" role="treeitem" tabindex="0">
+                                    <div class="fd-navigation-list__content-container">
+                                        <span class="fd-navigation-list__text">E-Mail Marketing</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="fd-navigation-list__item" role="none">
+                                <a class="fd-navigation-list__content" role="treeitem" tabindex="0">
+                                    <div class="fd-navigation-list__content-container">
+                                        <span class="fd-navigation-list__text">Marketing Automation</span>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="fd-navigation-list__item" role="none">
+                        <a class="fd-navigation-list__content" role="treeitem" tabindex="0">
+                            <div class="fd-navigation-list__content-container">
+                                <span class="fd-navigation-list__icon">
+                                    <i class=" sap-icon--manager-insight" role="presentation"></i>
+                                </span>
+                                <span class="fd-navigation-list__text">Reports</span>
+                            </div>
+                            <div class="fd-navigation-list__indication-arrow" role="presentation" aria-hidden="true">
+                                <i class="sap-icon--arrow-right" role="presentation"></i>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </li>
 
-                <li class="fd-navigation-list__item fd-navigation-list__item--group" role="none">
-                    <a class="fd-navigation-list__content" role="treeitem" tabindex="0" aria-expanded="false">
-                        <div class="fd-navigation-list__content-container">
-                            <span class="fd-navigation-list__text">Recents</span>
-                        </div>
-                        <div class="fd-navigation-list__navigation-indicator" role="presentation" aria-hidden="true">
-                            <i class="sap-icon--navigation-right-arrow" role="presentation"></i>
-                        </div>
-                    </a>
-                    <ul class="fd-navigation-list level-1" role="group">
-                        <li class="fd-navigation-list__item" role="none">
-                            <a class="fd-navigation-list__content" role="treeitem" tabindex="0" aria-expanded="true">
-                                <div class="fd-navigation-list__content-container">
-                                    <span class="fd-navigation-list__icon">
-                                        <i class=" sap-icon--palette" role="presentation"></i>
-                                    </span>
-                                    <span class="fd-navigation-list__text">Nav Item</span>
-                                </div>
-                                <div class="fd-navigation-list__navigation-indicator" role="presentation" aria-hidden="true">
-                                    <i class="sap-icon--navigation-down-arrow" role="presentation"></i>
-                                </div>
-                            </a>
-                            <ul class="fd-navigation-list level-2" role="group">
-                                <li class="fd-navigation-list__item" role="none">
-                                    <a class="fd-navigation-list__content" role="treeitem" tabindex="0">
-                                        <div class="fd-navigation-list__content-container">
-                                            <span class="fd-navigation-list__text">Child Item</span>
-                                        </div>
-                                    </a>
-                                </li>
-                                <li class="fd-navigation-list__item" role="none">
-                                    <a class="fd-navigation-list__content is-selected" role="treeitem" tabindex="0">
-                                        <div class="fd-navigation-list__content-container">
-                                            <span class="fd-navigation-list__text">Child Item</span>
-                                        </div>
-                                    </a>
-                                </li>
-                                <li class="fd-navigation-list__item" role="none">
-                                    <a class="fd-navigation-list__content" role="treeitem" tabindex="0">
-                                        <div class="fd-navigation-list__content-container">
-                                            <span class="fd-navigation-list__text">Child Item</span>
-                                        </div>
-                                    </a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="fd-navigation-list__item" role="none">
-                            <a class="fd-navigation-list__content" role="treeitem" tabindex="0">
-                                <div class="fd-navigation-list__content-container">
-                                    <span class="fd-navigation-list__icon">
-                                        <i class=" sap-icon--sales-notification" role="presentation"></i>
-                                    </span>
-                                    <span class="fd-navigation-list__text">Nav Item</span>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="fd-navigation-list__item" role="none">
-                            <a class="fd-navigation-list__content" role="treeitem" tabindex="0">
-                                <div class="fd-navigation-list__content-container">
-                                    <span class="fd-navigation-list__icon">
-                                        <i class=" sap-icon--nurse" role="presentation"></i>
-                                    </span>
-                                    <span class="fd-navigation-list__text">Nav Item</span>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="fd-navigation-list__item" role="none">
-                            <a class="fd-navigation-list__content" role="treeitem" tabindex="0">
-                                <div class="fd-navigation-list__content-container">
-                                    <span class="fd-navigation-list__icon">
-                                        <i class=" sap-icon--travel-request" role="presentation"></i>
-                                    </span>
-                                    <span class="fd-navigation-list__text">Nav Item</span>
-                                </div>
-                            </a>
-                        </li>
-                    </ul>
-                </li>
-            </ul>
-        </div>
+            <li class="fd-navigation-list__item fd-navigation-list__item--group" role="none">
+                <a class="fd-navigation-list__content" role="treeitem" tabindex="0" aria-expanded="false">
+                    <div class="fd-navigation-list__content-container">
+                        <span class="fd-navigation-list__text">Recents</span>
+                    </div>
+                    <div class="fd-navigation-list__navigation-indicator" role="presentation" aria-hidden="true">
+                        <i class="sap-icon--navigation-right-arrow" role="presentation"></i>
+                    </div>
+                </a>
+                <ul class="fd-navigation-list level-1" role="group">
+                    <li class="fd-navigation-list__item" role="none">
+                        <a class="fd-navigation-list__content" role="treeitem" tabindex="0" aria-expanded="true">
+                            <div class="fd-navigation-list__content-container">
+                                <span class="fd-navigation-list__icon">
+                                    <i class=" sap-icon--palette" role="presentation"></i>
+                                </span>
+                                <span class="fd-navigation-list__text">Nav Item</span>
+                            </div>
+                            <div class="fd-navigation-list__navigation-indicator" role="presentation" aria-hidden="true">
+                                <i class="sap-icon--navigation-down-arrow" role="presentation"></i>
+                            </div>
+                        </a>
+                        <ul class="fd-navigation-list level-2" role="group">
+                            <li class="fd-navigation-list__item" role="none">
+                                <a class="fd-navigation-list__content" role="treeitem" tabindex="0">
+                                    <div class="fd-navigation-list__content-container">
+                                        <span class="fd-navigation-list__text">Child Item</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="fd-navigation-list__item" role="none">
+                                <a class="fd-navigation-list__content is-selected" role="treeitem" tabindex="0">
+                                    <div class="fd-navigation-list__content-container">
+                                        <span class="fd-navigation-list__text">Child Item</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="fd-navigation-list__item" role="none">
+                                <a class="fd-navigation-list__content" role="treeitem" tabindex="0">
+                                    <div class="fd-navigation-list__content-container">
+                                        <span class="fd-navigation-list__text">Child Item</span>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="fd-navigation-list__item" role="none">
+                        <a class="fd-navigation-list__content" role="treeitem" tabindex="0">
+                            <div class="fd-navigation-list__content-container">
+                                <span class="fd-navigation-list__icon">
+                                    <i class=" sap-icon--sales-notification" role="presentation"></i>
+                                </span>
+                                <span class="fd-navigation-list__text">Nav Item</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="fd-navigation-list__item" role="none">
+                        <a class="fd-navigation-list__content" role="treeitem" tabindex="0">
+                            <div class="fd-navigation-list__content-container">
+                                <span class="fd-navigation-list__icon">
+                                    <i class=" sap-icon--nurse" role="presentation"></i>
+                                </span>
+                                <span class="fd-navigation-list__text">Nav Item</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="fd-navigation-list__item" role="none">
+                        <a class="fd-navigation-list__content" role="treeitem" tabindex="0">
+                            <div class="fd-navigation-list__content-container">
+                                <span class="fd-navigation-list__icon">
+                                    <i class=" sap-icon--travel-request" role="presentation"></i>
+                                </span>
+                                <span class="fd-navigation-list__text">Nav Item</span>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
 
-        <div  class="fd-side-nav__container fd-side-nav__container--bottom">
-            <ul class="fd-navigation-list level-1" role="tree" tabindex="-1" aria-roledescription="Navigation List Tree">
-                <li class="fd-navigation-list__item fd-navigation-list__item--quick-create" role="none">
-                    <a class="fd-navigation-list__content" role="treeitem" tabindex="0">
-                        <div class="fd-navigation-list__content-container">
-                            <span class="fd-navigation-list__icon">
-                                <i class=" sap-icon--add" role="presentation"></i>
-                            </span>
-                            <span class="fd-navigation-list__text">Quick Create</span>
-                        </div>
-                    </a>
-                </li>
+    <div  class="fd-side-nav__container fd-side-nav__container--bottom">
+        <ul class="fd-navigation-list level-1" role="tree" tabindex="-1" aria-roledescription="Navigation List Tree">
+            <li class="fd-navigation-list__item fd-navigation-list__item--quick-create" role="none">
+                <a class="fd-navigation-list__content" role="treeitem" tabindex="0">
+                    <div class="fd-navigation-list__content-container">
+                        <span class="fd-navigation-list__icon">
+                            <i class=" sap-icon--add" role="presentation"></i>
+                        </span>
+                        <span class="fd-navigation-list__text">Quick Create</span>
+                    </div>
+                </a>
+            </li>
 
-                <li class="fd-navigation-list__item" role="none">
-                    <a class="fd-navigation-list__content" role="treeitem" tabindex="0">
-                        <div class="fd-navigation-list__content-container">
-                            <span class="fd-navigation-list__icon">
-                                <i class=" sap-icon--settings" role="presentation"></i>
-                            </span>
-                            <span class="fd-navigation-list__text">Product Settings</span>
-                        </div>
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-</div>
+            <li class="fd-navigation-list__item" role="none">
+                <a class="fd-navigation-list__content" role="treeitem" tabindex="0">
+                    <div class="fd-navigation-list__content-container">
+                        <span class="fd-navigation-list__icon">
+                            <i class=" sap-icon--settings" role="presentation"></i>
+                        </span>
+                        <span class="fd-navigation-list__text">Product Settings</span>
+                    </div>
+                </a>
+            </li>
+        </ul>
+    </div>
+</nav>
 ```
 
 ### Collapsed State, Defaut (fixed) Style
@@ -1008,247 +1008,247 @@ Key CSS variables used by this component:
                             <i class=" sap-icon--home" role="presentation"></i>
                         </span>
                         <span class="fd-navigation-list__text">Home</span>
-                    </a>
-                </li>
+                    </div>
+                </a>
+            </li>
 
-                <li class="fd-navigation-list__item" role="none">
-                    <a class="fd-navigation-list__content" role="menuitemradio" aria-label="Favorites" aria-checked="false" tabindex="0">
-                        <div class="fd-navigation-list__content-container">
-                            <span class="fd-navigation-list__icon">
-                                <i class=" sap-icon--unfavorite" role="presentation"></i>
-                            </span>
-                            <span class="fd-navigation-list__text">Favorites</span>
-                        </a>
-                    </li>
+            <li class="fd-navigation-list__item" role="none">
+                <a class="fd-navigation-list__content" role="menuitemradio" aria-label="Favorites" aria-checked="false" tabindex="0">
+                    <div class="fd-navigation-list__content-container">
+                        <span class="fd-navigation-list__icon">
+                            <i class=" sap-icon--unfavorite" role="presentation"></i>
+                        </span>
+                        <span class="fd-navigation-list__text">Favorites</span>
+                    </div>
+                </a>
+            </li>
 
-                    <li class="fd-navigation-list__item" role="none">
-                        <a class="fd-navigation-list__content" role="menuitemradio" aria-label="Customer Management" aria-checked="false" tabindex="0">
+            <li class="fd-navigation-list__item" role="none">
+                <a class="fd-navigation-list__content" role="menuitemradio" aria-label="Customer Management" aria-checked="false" tabindex="0">
+                    <div class="fd-navigation-list__content-container">
+                        <span class="fd-navigation-list__icon">
+                            <i class=" sap-icon--account" role="presentation"></i>
+                        </span>
+                        <span class="fd-navigation-list__text">Customer Management</span>
+                    </div>
+                </a>
+            </li>
+
+            <li class="fd-navigation-list__item fd-navigation-list__item--group" role="none">
+                <a class="fd-navigation-list__content" role="menuitemradio" aria-label="Nav Item" aria-checked="false" tabindex="0" aria-expanded="false">
+                    <div class="fd-navigation-list__content-container">
+                        <span class="fd-navigation-list__text">Navigation Group</span>
+                    </div>
+                    <div class="fd-navigation-list__navigation-indicator" role="presentation" aria-hidden="true">
+                        <i class="sap-icon--navigation-right-arrow" role="presentation"></i>
+                    </div>
+                </a>
+                <ul class="fd-navigation-list level-1" role="group">
+                    <li class="fd-navigation-list__item fd-popover" role="none">
+                        <a class="fd-navigation-list__content fd-popover__control" role="menuitemradio" aria-label="Nav Item" aria-checked="false" tabindex="0" aria-expanded="true" aria-controls="sideNavPopover1" aria-haspopup="menu" onclick="onPopoverClick('sideNavPopover1');">
                             <div class="fd-navigation-list__content-container">
                                 <span class="fd-navigation-list__icon">
-                                    <i class=" sap-icon--account" role="presentation"></i>
+                                    <i class=" sap-icon--crm-sales" role="presentation"></i>
                                 </span>
-                                <span class="fd-navigation-list__text">Customer Management</span>
-                            </div>
-                        </a>
-                    </li>
-
-                    <li class="fd-navigation-list__item fd-navigation-list__item--group" role="none">
-                        <a class="fd-navigation-list__content" role="menuitemradio" aria-label="Nav Item" aria-checked="false" tabindex="0" aria-expanded="false">
-                            <div class="fd-navigation-list__content-container">
-                                <span class="fd-navigation-list__text">Navigation Group</span>
+                                <span class="fd-navigation-list__text">Sales</span>
                             </div>
                             <div class="fd-navigation-list__navigation-indicator" role="presentation" aria-hidden="true">
                                 <i class="sap-icon--navigation-right-arrow" role="presentation"></i>
                             </div>
                         </a>
-                        <ul class="fd-navigation-list level-1" role="group">
-                            <li class="fd-navigation-list__item fd-popover" role="none">
-                                <a class="fd-navigation-list__content fd-popover__control" role="menuitemradio" aria-label="Nav Item" aria-checked="false" tabindex="0" aria-expanded="true" aria-controls="sideNavPopover1" aria-haspopup="menu" onclick="onPopoverClick('sideNavPopover1');">
-                                    <div class="fd-navigation-list__content-container">
-                                        <span class="fd-navigation-list__icon">
-                                            <i class=" sap-icon--crm-sales" role="presentation"></i>
-                                        </span>
-                                        <span class="fd-navigation-list__text">Sales</span>
-                                    </div>
-                                    <div class="fd-navigation-list__navigation-indicator" role="presentation" aria-hidden="true">
-                                        <i class="sap-icon--navigation-right-arrow" role="presentation"></i>
-                                    </div>
-                                </a>
-                                <div id="sideNavPopover1" class="fd-navigation-list__popover-body fd-popover__body fd-popover__body--after fd-popover__body--arrow-left" role="dialog">
-                                    <div class="fd-popover__wrapper">
-                                        <div class="fd-navigation-list__item">
-                                            <a class="fd-navigation-list__content" role="heading" id="side-nav-item-1" tabindex="0">
-                                                <div class="fd-navigation-list__content-container">
-                                                    <span class="fd-navigation-list__icon">
-                                                        <i class=" sap-icon--crm-sales" role="presentation"></i>
-                                                    </span>
-                                                    <span class="fd-navigation-list__text">Sales</span>
-                                                </div>
-                                            </a>
-
-                                            <ul class="fd-navigation-list level-2" role="menu" aria-labelledby="side-nav-item-1">
-                                                <li class="fd-navigation-list__item" role="none">
-                                                    <a class="fd-navigation-list__content" role="menuitemradio" aria-label="Nav Item" aria-checked="false" tabindex="0">
-                                                        <div class="fd-navigation-list__content-container">
-                                                            <span class="fd-navigation-list__text">Leads</span>
-                                                        </div>
-                                                    </a>
-                                                </li>
-                                                <li class="fd-navigation-list__item" role="none">
-                                                    <a class="fd-navigation-list__content" role="menuitemradio" aria-label="Nav Item" aria-checked="false" tabindex="0">
-                                                        <div class="fd-navigation-list__content-container">
-                                                            <span class="fd-navigation-list__text">Opportunities</span>
-                                                        </div>
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="fd-navigation-list__item" role="none">
-                                <a class="fd-navigation-list__content" role="menuitemradio" aria-label="Nav Item" aria-checked="false" tabindex="0">
-                                    <div class="fd-navigation-list__content-container">
-                                        <span class="fd-navigation-list__icon">
-                                            <i class=" sap-icon--customer-view" role="presentation"></i>
-                                        </span>
-                                        <span class="fd-navigation-list__text">Products</span>
-                                    </div>
-                                </a>
-                            </li>
-                            <li class="fd-navigation-list__item" role="none">
-                                <a class="fd-navigation-list__content" role="menuitemradio" aria-label=Marketing" aria-checked="false" tabindex="0">
-                                    <div class="fd-navigation-list__content-container">
-                                        <span class="fd-navigation-list__icon">
-                                            <i class=" sap-icon--marketing-campaign" role="presentation"></i>
-                                        </span>
-                                        <span class="fd-navigation-list__text">Marketing</span>
-                                    </div>
-                                </a>
-                            </li>
-                            <li class="fd-navigation-list__item" role="none">
-                                <a class="fd-navigation-list__content" role="menuitemradio" aria-label="Reports" aria-checked="false" tabindex="0" aria-expanded="false">
-                                    <div class="fd-navigation-list__content-container">
-                                        <span class="fd-navigation-list__icon">
-                                            <i class=" sap-icon--manager-insight" role="presentation"></i>
-                                        </span>
-                                        <span class="fd-navigation-list__text">Reports</span>
-                                    </div>
-                                    <div class="fd-navigation-list__navigation-indicator" role="presentation" aria-hidden="true">
-                                        <i class="sap-icon--navigation-right-arrow" role="presentation"></i>
-                                    </div>
-                                </a>
-                                <ul class="fd-navigation-list level-2" role="group">
-                                    <li class="fd-navigation-list__item" role="none">
-                                        <a class="fd-navigation-list__content" role="menuitemradio" aria-label="Nav Item" aria-checked="false" tabindex="0">
-                                            <div class="fd-navigation-list__content-container">
-                                                <span class="fd-navigation-list__text">Sales Reports</span>
-                                            </div>
-                                        </a>
-                                    </li>
-                                    <li class="fd-navigation-list__item" role="none">
-                                        <a class="fd-navigation-list__content is-selected" role="menuitemradio" aria-label="Nav Item" aria-checked="true" tabindex="0">
-                                            <div class="fd-navigation-list__content-container">
-                                                <span class="fd-navigation-list__text">Customer Reports</span>
-                                            </div>
-                                        </a>
-                                    </li>
-                                    <li class="fd-navigation-list__item" role="none">
-                                        <a class="fd-navigation-list__content" role="menuitemradio" aria-label="Nav Item" aria-checked="false" tabindex="0">
-                                            <div class="fd-navigation-list__content-container">
-                                                <span class="fd-navigation-list__text">Marketing Reports</span>
-                                            </div>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </li>
-
-                    <li class="fd-navigation-list__item fd-popover" role="none">
-                        <a class="fd-navigation-list__content is-selected fd-popover__control" role="menuitemradio" aria-label="Nav Item" aria-checked="true" tabindex="0" aria-expanded="true" aria-controls="sideNavPopover2" aria-haspopup="menu" onclick="onPopoverClick('sideNavPopover2');">
-                            <div class="fd-navigation-list__content-container">
-                                <span class="fd-navigation-list__icon">
-                                    <i class=" sap-icon--overflow" role="presentation"></i>
-                                </span>
-                            </div>
-                        </a>
-                        <div id="sideNavPopover2" class="fd-navigation-list__popover-body fd-popover__body fd-popover__body--after fd-popover__body--arrow-left" role="dialog">
-                            <ul class="fd-popover__wrapper fd-navigation-list level-1" role="menu">
-                                <li class="fd-navigation-list__item">
-                                    <a class="fd-navigation-list__content" role="menuitemradio" id="side-nav-item-4" tabindex="0">
+                        <div id="sideNavPopover1" class="fd-navigation-list__popover-body fd-popover__body fd-popover__body--after fd-popover__body--arrow-left" role="dialog">
+                            <div class="fd-popover__wrapper">
+                                <div class="fd-navigation-list__item">
+                                    <a class="fd-navigation-list__content" role="heading" id="side-nav-item-1" tabindex="0">
                                         <div class="fd-navigation-list__content-container">
                                             <span class="fd-navigation-list__icon">
-                                                <i class=" sap-icon--shield" role="presentation"></i>
+                                                <i class=" sap-icon--crm-sales" role="presentation"></i>
                                             </span>
-                                            <span class="fd-navigation-list__text">Sales and Procurement</span>
-                                        </div>
-                                        <div class="fd-navigation-list__navigation-indicator" role="presentation" aria-hidden="true">
-                                            <i class="sap-icon--navigation-down-arrow" role="presentation"></i>
+                                            <span class="fd-navigation-list__text">Sales</span>
                                         </div>
                                     </a>
 
-                                    <ul class="fd-navigation-list level-2" role="menu" aria-labelledby="side-nav-item-4">
+                                    <ul class="fd-navigation-list level-2" role="menu" aria-labelledby="side-nav-item-1">
                                         <li class="fd-navigation-list__item" role="none">
                                             <a class="fd-navigation-list__content" role="menuitemradio" aria-label="Nav Item" aria-checked="false" tabindex="0">
                                                 <div class="fd-navigation-list__content-container">
-                                                    <span class="fd-navigation-list__text">Royalty Reporting</span>
+                                                    <span class="fd-navigation-list__text">Leads</span>
                                                 </div>
                                             </a>
                                         </li>
                                         <li class="fd-navigation-list__item" role="none">
-                                            <a class="fd-navigation-list__content is-selected" role="menuitemradio" aria-label="Nav Item" aria-checked="true" tabindex="0">
+                                            <a class="fd-navigation-list__content" role="menuitemradio" aria-label="Nav Item" aria-checked="false" tabindex="0">
                                                 <div class="fd-navigation-list__content-container">
-                                                    <span class="fd-navigation-list__text">Purchasing Retail</span>
+                                                    <span class="fd-navigation-list__text">Opportunities</span>
                                                 </div>
                                             </a>
                                         </li>
                                     </ul>
-                                </li>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="fd-navigation-list__item" role="none">
+                        <a class="fd-navigation-list__content" role="menuitemradio" aria-label="Nav Item" aria-checked="false" tabindex="0">
+                            <div class="fd-navigation-list__content-container">
+                                <span class="fd-navigation-list__icon">
+                                    <i class=" sap-icon--customer-view" role="presentation"></i>
+                                </span>
+                                <span class="fd-navigation-list__text">Products</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="fd-navigation-list__item" role="none">
+                        <a class="fd-navigation-list__content" role="menuitemradio" aria-label=Marketing" aria-checked="false" tabindex="0">
+                            <div class="fd-navigation-list__content-container">
+                                <span class="fd-navigation-list__icon">
+                                    <i class=" sap-icon--marketing-campaign" role="presentation"></i>
+                                </span>
+                                <span class="fd-navigation-list__text">Marketing</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="fd-navigation-list__item" role="none">
+                        <a class="fd-navigation-list__content" role="menuitemradio" aria-label="Reports" aria-checked="false" tabindex="0" aria-expanded="false">
+                            <div class="fd-navigation-list__content-container">
+                                <span class="fd-navigation-list__icon">
+                                    <i class=" sap-icon--manager-insight" role="presentation"></i>
+                                </span>
+                                <span class="fd-navigation-list__text">Reports</span>
+                            </div>
+                            <div class="fd-navigation-list__navigation-indicator" role="presentation" aria-hidden="true">
+                                <i class="sap-icon--navigation-right-arrow" role="presentation"></i>
+                            </div>
+                        </a>
+                        <ul class="fd-navigation-list level-2" role="group">
+                            <li class="fd-navigation-list__item" role="none">
+                                <a class="fd-navigation-list__content" role="menuitemradio" aria-label="Nav Item" aria-checked="false" tabindex="0">
+                                    <div class="fd-navigation-list__content-container">
+                                        <span class="fd-navigation-list__text">Sales Reports</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="fd-navigation-list__item" role="none">
+                                <a class="fd-navigation-list__content is-selected" role="menuitemradio" aria-label="Nav Item" aria-checked="true" tabindex="0">
+                                    <div class="fd-navigation-list__content-container">
+                                        <span class="fd-navigation-list__text">Customer Reports</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="fd-navigation-list__item" role="none">
+                                <a class="fd-navigation-list__content" role="menuitemradio" aria-label="Nav Item" aria-checked="false" tabindex="0">
+                                    <div class="fd-navigation-list__content-container">
+                                        <span class="fd-navigation-list__text">Marketing Reports</span>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+
+            <li class="fd-navigation-list__item fd-popover" role="none">
+                <a class="fd-navigation-list__content is-selected fd-popover__control" role="menuitemradio" aria-label="Nav Item" aria-checked="true" tabindex="0" aria-expanded="true" aria-controls="sideNavPopover2" aria-haspopup="menu" onclick="onPopoverClick('sideNavPopover2');">
+                    <div class="fd-navigation-list__content-container">
+                        <span class="fd-navigation-list__icon">
+                            <i class=" sap-icon--overflow" role="presentation"></i>
+                        </span>
+                    </div>
+                </a>
+                <div id="sideNavPopover2" class="fd-navigation-list__popover-body fd-popover__body fd-popover__body--after fd-popover__body--arrow-left" role="dialog">
+                    <ul class="fd-popover__wrapper fd-navigation-list level-1" role="menu">
+                        <li class="fd-navigation-list__item">
+                            <a class="fd-navigation-list__content" role="menuitemradio" id="side-nav-item-4" tabindex="0">
+                                <div class="fd-navigation-list__content-container">
+                                    <span class="fd-navigation-list__icon">
+                                        <i class=" sap-icon--shield" role="presentation"></i>
+                                    </span>
+                                    <span class="fd-navigation-list__text">Sales and Procurement</span>
+                                </div>
+                                <div class="fd-navigation-list__navigation-indicator" role="presentation" aria-hidden="true">
+                                    <i class="sap-icon--navigation-down-arrow" role="presentation"></i>
+                                </div>
+                            </a>
+
+                            <ul class="fd-navigation-list level-2" role="menu" aria-labelledby="side-nav-item-4">
                                 <li class="fd-navigation-list__item" role="none">
-                                    <a class="fd-navigation-list__content" role="menuitemradio" aria-label="Manufacturing" aria-checked="false" tabindex="0">
+                                    <a class="fd-navigation-list__content" role="menuitemradio" aria-label="Nav Item" aria-checked="false" tabindex="0">
                                         <div class="fd-navigation-list__content-container">
-                                            <span class="fd-navigation-list__icon">
-                                                <i class=" sap-icon--official-service" role="presentation"></i>
-                                            </span>
-                                            <span class="fd-navigation-list__text">Manufacturing</span>
+                                            <span class="fd-navigation-list__text">Royalty Reporting</span>
                                         </div>
                                     </a>
                                 </li>
                                 <li class="fd-navigation-list__item" role="none">
-                                    <a class="fd-navigation-list__content" role="menuitemradio" aria-label="Help" aria-checked="false" tabindex="0">
+                                    <a class="fd-navigation-list__content is-selected" role="menuitemradio" aria-label="Nav Item" aria-checked="true" tabindex="0">
                                         <div class="fd-navigation-list__content-container">
-                                            <span class="fd-navigation-list__icon">
-                                                <i class=" sap-icon--sys-help" role="presentation"></i>
-                                            </span>
-                                            <span class="fd-navigation-list__text">Help</span>
-                                        </div>
-                                    </a>
-                                </li>
-                                <li class="fd-navigation-list__item" role="none">
-                                    <a class="fd-navigation-list__content" role="menuitemradio" aria-label="Finance" aria-checked="false" tabindex="0">
-                                        <div class="fd-navigation-list__content-container">
-                                            <span class="fd-navigation-list__icon">
-                                                <i class=" sap-icon--customer-financial-fact-sheet" role="presentation"></i>
-                                            </span>
-                                            <span class="fd-navigation-list__text">Finance</span>
+                                            <span class="fd-navigation-list__text">Purchasing Retail</span>
                                         </div>
                                     </a>
                                 </li>
                             </ul>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-
-            <div  class="fd-side-nav__container fd-side-nav__container--bottom">
-                <ul class="fd-navigation-list level-1" role="menubar" aria-roledescription="Navigation List Tree" tabindex="-1">
-                    <li class="fd-navigation-list__item fd-navigation-list__item--quick-create" role="none">
-                        <a class="fd-navigation-list__content" role="treeitem" tabindex="0">
-                            <div class="fd-navigation-list__content-container">
-                                <span class="fd-navigation-list__icon">
-                                    <i class=" sap-icon--add" role="presentation"></i>
-                                </span>
-                                <span class="fd-navigation-list__text">Quick Create</span>
-                            </div>
-                        </a>
-                    </li>
-
-                    <li class="fd-navigation-list__item" role="none">
-                        <a class="fd-navigation-list__content" role="menuitemradio" aria-label="Product Settings" aria-checked="false" tabindex="0">
-                            <div class="fd-navigation-list__content-container">
-                                <span class="fd-navigation-list__icon">
-                                    <i class=" sap-icon--settings" role="presentation"></i>
-                                </span>
-                                <span class="fd-navigation-list__text">Product Settings</span>
-                            </div>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
+                        </li>
+                        <li class="fd-navigation-list__item" role="none">
+                            <a class="fd-navigation-list__content" role="menuitemradio" aria-label="Manufacturing" aria-checked="false" tabindex="0">
+                                <div class="fd-navigation-list__content-container">
+                                    <span class="fd-navigation-list__icon">
+                                        <i class=" sap-icon--official-service" role="presentation"></i>
+                                    </span>
+                                    <span class="fd-navigation-list__text">Manufacturing</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="fd-navigation-list__item" role="none">
+                            <a class="fd-navigation-list__content" role="menuitemradio" aria-label="Help" aria-checked="false" tabindex="0">
+                                <div class="fd-navigation-list__content-container">
+                                    <span class="fd-navigation-list__icon">
+                                        <i class=" sap-icon--sys-help" role="presentation"></i>
+                                    </span>
+                                    <span class="fd-navigation-list__text">Help</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="fd-navigation-list__item" role="none">
+                            <a class="fd-navigation-list__content" role="menuitemradio" aria-label="Finance" aria-checked="false" tabindex="0">
+                                <div class="fd-navigation-list__content-container">
+                                    <span class="fd-navigation-list__icon">
+                                        <i class=" sap-icon--customer-financial-fact-sheet" role="presentation"></i>
+                                    </span>
+                                    <span class="fd-navigation-list__text">Finance</span>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
     </div>
-</div>
+
+    <div  class="fd-side-nav__container fd-side-nav__container--bottom">
+        <ul class="fd-navigation-list level-1" role="menubar" aria-roledescription="Navigation List Tree" tabindex="-1">
+            <li class="fd-navigation-list__item fd-navigation-list__item--quick-create" role="none">
+                <a class="fd-navigation-list__content" role="treeitem" tabindex="0">
+                    <div class="fd-navigation-list__content-container">
+                        <span class="fd-navigation-list__icon">
+                            <i class=" sap-icon--add" role="presentation"></i>
+                        </span>
+                        <span class="fd-navigation-list__text">Quick Create</span>
+                    </div>
+                </a>
+            </li>
+
+            <li class="fd-navigation-list__item" role="none">
+                <a class="fd-navigation-list__content" role="menuitemradio" aria-label="Product Settings" aria-checked="false" tabindex="0">
+                    <div class="fd-navigation-list__content-container">
+                        <span class="fd-navigation-list__icon">
+                            <i class=" sap-icon--settings" role="presentation"></i>
+                        </span>
+                        <span class="fd-navigation-list__text">Product Settings</span>
+                    </div>
+                </a>
+            </li>
+        </ul>
+    </div>
+</nav>
 ```
 
 ### Floating (Overlay) Style, Always Expanded
@@ -1268,288 +1268,287 @@ Additional to the fixed default style a floating variant of the Side Navigation 
             role="button">
             <i class="sap-icon--menu2" role="presentation"></i>
         </button>
-        <div class="fd-popover__body" aria-hidden="false" id="sideNavFloating">
-            <nav class="fd-side-nav" aria-roledescription="Main Navigation" id="fd-side-nav">
-                <div class="fd-side-nav__container fd-side-nav__container--top">
-                    <ul class="fd-navigation-list level-1" role="tree" aria-roledescription="Navigation List Tree">
-                        <li class="fd-navigation-list__item" role="none">
-                            <a class="fd-navigation-list__content is-selected" role="treeitem" tabindex="0">
-                                <div class="fd-navigation-list__content-container">
-                                    <span class="fd-navigation-list__icon">
-                                        <i class=" sap-icon--home" role="presentation"></i>
-                                    </span>
-                                    <span class="fd-navigation-list__text">Home</span>
-                                </div>
-                            </a>
-                        </li>
-
-                        <li class="fd-navigation-list__item" role="none">
-                            <a class="fd-navigation-list__content" role="treeitem" tabindex="0" aria-expanded="true">
-                                <div class="fd-navigation-list__content-container">
-                                    <span class="fd-navigation-list__icon">
-                                        <i class="sap-icon--unfavorite" role="presentation"></i>
-                                    </span>
-                                    <span class="fd-navigation-list__text">Favorites</span>
-                                </div>
-                                <div class="fd-navigation-list__navigation-indicator" role="presentation" aria-hidden="true">
-                                    <i class="sap-icon--navigation-down-arrow" role="presentation"></i>
-                                </div>
-                            </a>
-                            <ul class="fd-navigation-list level-2" role="group">
-                                <li class="fd-navigation-list__item" role="none">
-                                    <a class="fd-navigation-list__content" role="treeitem" tabindex="0">
-                                        <div class="fd-navigation-list__content-container">
-                                            <span class="fd-navigation-list__text">My Accounts</span>
-                                        </div>
-                                    </a>
-                                </li>
-                                <li class="fd-navigation-list__item" role="none">
-                                    <a class="fd-navigation-list__content" role="treeitem" tabindex="0">
-                                        <div class="fd-navigation-list__content-container">
-                                            <span class="fd-navigation-list__text">My Orders</span>
-                                        </div>
-                                    </a>
-                                </li>
-                            </ul>
-                        </li>
-
-                        <li class="fd-navigation-list__item" role="none">
-                            <a class="fd-navigation-list__content" role="treeitem" tabindex="0" aria-expanded="true">
-                                <div class="fd-navigation-list__content-container">
-                                    <span class="fd-navigation-list__icon">
-                                        <i class="sap-icon--account" role="presentation"></i>
-                                    </span>
-                                    <span class="fd-navigation-list__text">Customer Management</span>
-                                </div>
-                                <div class="fd-navigation-list__navigation-indicator" role="presentation" aria-hidden="true">
-                                    <i class="sap-icon--navigation-down-arrow" role="presentation"></i>
-                                </div>
-                            </a>
-                            <ul class="fd-navigation-list level-2" role="group">
-                                <li class="fd-navigation-list__item" role="none">
-                                    <a class="fd-navigation-list__content" role="treeitem" tabindex="0">
-                                        <div class="fd-navigation-list__content-container">
-                                            <span class="fd-navigation-list__text">Contacts</span>
-                                        </div>
-                                    </a>
-                                </li>
-                                <li class="fd-navigation-list__item" role="none">
-                                    <a class="fd-navigation-list__content" role="treeitem" tabindex="0">
-                                        <div class="fd-navigation-list__content-container">
-                                            <span class="fd-navigation-list__text">Companies</span>
-                                        </div>
-                                    </a>
-                                </li>
-                                <li class="fd-navigation-list__item" role="none">
-                                    <a class="fd-navigation-list__content" role="treeitem" tabindex="0">
-                                        <div class="fd-navigation-list__content-container">
-                                            <span class="fd-navigation-list__text">Partners</span>
-                                        </div>
-                                    </a>
-                                </li>
-                            </ul>
-                        </li>
-
-                        <li class="fd-navigation-list__item" role="none">
-                            <a class="fd-navigation-list__content" role="treeitem" tabindex="0" aria-expanded="true">
-                                <div class="fd-navigation-list__content-container">
-                                    <span class="fd-navigation-list__icon">
-                                        <i class="sap-icon--crm-sales" role="presentation"></i>
-                                    </span>
-                                    <span class="fd-navigation-list__text">Sales</span>
-                                </div>
-                                <div class="fd-navigation-list__navigation-indicator" role="presentation" aria-hidden="true">
-                                    <i class="sap-icon--navigation-down-arrow" role="presentation"></i>
-                                </div>
-                            </a>
-                            <ul class="fd-navigation-list level-2" role="group">
-                                <li class="fd-navigation-list__item" role="none">
-                                    <a class="fd-navigation-list__content" role="treeitem" tabindex="0">
-                                        <div class="fd-navigation-list__content-container">
-                                            <span class="fd-navigation-list__text">Leads</span>
-                                        </div>
-                                    </a>
-                                </li>
-                                <li class="fd-navigation-list__item" role="none">
-                                    <a class="fd-navigation-list__content" role="treeitem" tabindex="0">
-                                        <div class="fd-navigation-list__content-container">
-                                            <span class="fd-navigation-list__text">Opportunities</span>
-                                        </div>
-                                    </a>
-                                </li>
-                                <li class="fd-navigation-list__item" role="none">
-                                    <a class="fd-navigation-list__content" role="treeitem" tabindex="0">
-                                        <div class="fd-navigation-list__content-container">
-                                            <span class="fd-navigation-list__text">Quotes</span>
-                                        </div>
-                                    </a>
-                                </li>
-                                <li class="fd-navigation-list__item" role="none">
-                                    <a class="fd-navigation-list__content" role="treeitem" tabindex="0">
-                                        <div class="fd-navigation-list__content-container">
-                                            <span class="fd-navigation-list__text">Orders</span>
-                                        </div>
-                                    </a>
-                                </li>
-                                <li class="fd-navigation-list__item" role="none">
-                                    <a class="fd-navigation-list__content" role="treeitem" tabindex="0">
-                                        <div class="fd-navigation-list__content-container">
-                                            <span class="fd-navigation-list__text">Invoices</span>
-                                        </div>
-                                    </a>
-                                </li>
-                            </ul>
-                        </li>
-
-                        <li class="fd-navigation-list__item" role="none">
-                            <a class="fd-navigation-list__content" role="treeitem" tabindex="0" aria-expanded="true">
-                                <div class="fd-navigation-list__content-container">
-                                    <span class="fd-navigation-list__icon">
-                                        <i class="sap-icon--customer-view" role="presentation"></i>
-                                    </span>
-                                    <span class="fd-navigation-list__text">Products</span>
-                                </div>
-                                <div class="fd-navigation-list__navigation-indicator" role="presentation" aria-hidden="true">
-                                    <i class="sap-icon--navigation-down-arrow" role="presentation"></i>
-                                </div>
-                            </a>
-                            <ul class="fd-navigation-list level-2" role="group">
-                                <li class="fd-navigation-list__item" role="none">
-                                    <a class="fd-navigation-list__content" role="treeitem" tabindex="0">
-                                        <div class="fd-navigation-list__content-container">
-                                            <span class="fd-navigation-list__text">Product Catalog</span>
-                                        </div>
-                                    </a>
-                                </li>
-                                <li class="fd-navigation-list__item" role="none">
-                                    <a class="fd-navigation-list__content" role="treeitem" tabindex="0">
-                                        <div class="fd-navigation-list__content-container">
-                                            <span class="fd-navigation-list__text">Pricing</span>
-                                        </div>
-                                    </a>
-                                </li>
-                                <li class="fd-navigation-list__item" role="none">
-                                    <a class="fd-navigation-list__content" role="treeitem" tabindex="0">
-                                        <div class="fd-navigation-list__content-container">
-                                            <span class="fd-navigation-list__text">Inventory Management</span>
-                                        </div>
-                                    </a>
-                                </li>
-                            </ul>
-                        </li>
-
-                        <li class="fd-navigation-list__item" role="none">
-                            <a class="fd-navigation-list__content" role="treeitem" tabindex="0" aria-expanded="true">
-                                <div class="fd-navigation-list__content-container">
-                                    <span class="fd-navigation-list__icon">
-                                        <i class="sap-icon--customer-view" role="presentation"></i>
-                                    </span>
-                                    <span class="fd-navigation-list__text">Marketing</span>
-                                </div>
-                                <div class="fd-navigation-list__navigation-indicator" role="presentation" aria-hidden="true">
-                                    <i class="sap-icon--navigation-down-arrow" role="presentation"></i>
-                                </div>
-                            </a>
-                            <ul class="fd-navigation-list level-2" role="group">
-                                <li class="fd-navigation-list__item" role="none">
-                                    <a class="fd-navigation-list__content" role="treeitem" tabindex="0">
-                                        <div class="fd-navigation-list__content-container">
-                                            <span class="fd-navigation-list__text">Campaigns</span>
-                                        </div>
-                                    </a>
-                                </li>
-                                <li class="fd-navigation-list__item" role="none">
-                                    <a class="fd-navigation-list__content" role="treeitem" tabindex="0">
-                                        <div class="fd-navigation-list__content-container">
-                                            <span class="fd-navigation-list__text">E-Mail Marketing</span>
-                                        </div>
-                                    </a>
-                                </li>
-                                <li class="fd-navigation-list__item" role="none">
-                                    <a class="fd-navigation-list__content" role="treeitem" tabindex="0">
-                                        <div class="fd-navigation-list__content-container">
-                                            <span class="fd-navigation-list__text">Marketing Automation</span>
-                                        </div>
-                                    </a>
-                                </li>
-                            </ul>
-                        </li>
-
-                        <li class="fd-navigation-list__item" role="none">
-                            <a class="fd-navigation-list__content" role="treeitem" tabindex="0" aria-expanded="true">
-                                <div class="fd-navigation-list__content-container">
-                                    <span class="fd-navigation-list__icon">
-                                        <i class="sap-icon--manager-insight" role="presentation"></i>
-                                    </span>
-                                    <span class="fd-navigation-list__text">Reports</span>
-                                </div>
-                                <div class="fd-navigation-list__navigation-indicator" role="presentation" aria-hidden="true">
-                                    <i class="sap-icon--navigation-down-arrow" role="presentation"></i>
-                                </div>
-                            </a>
-                            <ul class="fd-navigation-list level-2" role="group">
-                                <li class="fd-navigation-list__item" role="none">
-                                    <a class="fd-navigation-list__content" role="treeitem" tabindex="0">
-                                        <div class="fd-navigation-list__content-container">
-                                            <span class="fd-navigation-list__text">Campaigns</span>
-                                        </div>
-                                    </a>
-                                </li>
-                                <li class="fd-navigation-list__item" role="none">
-                                    <a class="fd-navigation-list__content" role="treeitem" tabindex="0">
-                                        <div class="fd-navigation-list__content-container">
-                                            <span class="fd-navigation-list__text">E-Mail Marketing</span>
-                                        </div>
-                                    </a>
-                                </li>
-                                <li class="fd-navigation-list__item" role="none">
-                                    <a class="fd-navigation-list__content" role="treeitem" tabindex="0">
-                                        <div class="fd-navigation-list__content-container">
-                                            <span class="fd-navigation-list__text">Marketing Automation</span>
-                                        </div>
-                                    </a>
-                                </li>
-                            </ul>
-                        </li>
-
-                    </ul>
-                </div>
-
-                <div  class="fd-side-nav__container fd-side-nav__container--bottom">
-                    <ul class="fd-navigation-list level-1" role="tree" tabindex="-1" aria-roledescription="Navigation List Tree">
-                        <li class="fd-navigation-list__item fd-navigation-list__item--quick-create" role="none">
-                            <a class="fd-navigation-list__content" role="treeitem" tabindex="0">
-                                <div class="fd-navigation-list__content-container">
-                                    <span class="fd-navigation-list__icon">
-                                        <i class=" sap-icon--add" role="presentation"></i>
-                                    </span>
-                                    <span class="fd-navigation-list__text">Quick Create</span>
-                                </div>
-                            </a>
-                        </li>
-
-                        <li class="fd-navigation-list__item" role="none">
-                            <a class="fd-navigation-list__content" role="treeitem" tabindex="0">
-                                <div class="fd-navigation-list__content-container">
-                                    <span class="fd-navigation-list__icon">
-                                        <i class=" sap-icon--settings" role="presentation"></i>
-                                    </span>
-                                    <span class="fd-navigation-list__text">Product Settings</span>
-                                </div>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-        </div>
     </div>
+    <div class="fd-popover__body" aria-hidden="false" id="sideNavFloating">
+        <nav class="fd-side-nav" aria-roledescription="Main Navigation" id="fd-side-nav">
+            <div class="fd-side-nav__container fd-side-nav__container--top">
+                <ul class="fd-navigation-list level-1" role="tree" aria-roledescription="Navigation List Tree">
+                    <li class="fd-navigation-list__item" role="none">
+                        <a class="fd-navigation-list__content is-selected" role="treeitem" tabindex="0">
+                            <div class="fd-navigation-list__content-container">
+                                <span class="fd-navigation-list__icon">
+                                    <i class=" sap-icon--home" role="presentation"></i>
+                                </span>
+                                <span class="fd-navigation-list__text">Home</span>
+                            </div>
+                        </a>
+                    </li>
 
+                    <li class="fd-navigation-list__item" role="none">
+                        <a class="fd-navigation-list__content" role="treeitem" tabindex="0" aria-expanded="true">
+                            <div class="fd-navigation-list__content-container">
+                                <span class="fd-navigation-list__icon">
+                                    <i class="sap-icon--unfavorite" role="presentation"></i>
+                                </span>
+                                <span class="fd-navigation-list__text">Favorites</span>
+                            </div>
+                            <div class="fd-navigation-list__navigation-indicator" role="presentation" aria-hidden="true">
+                                <i class="sap-icon--navigation-down-arrow" role="presentation"></i>
+                            </div>
+                        </a>
+                        <ul class="fd-navigation-list level-2" role="group">
+                            <li class="fd-navigation-list__item" role="none">
+                                <a class="fd-navigation-list__content" role="treeitem" tabindex="0">
+                                    <div class="fd-navigation-list__content-container">
+                                        <span class="fd-navigation-list__text">My Accounts</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="fd-navigation-list__item" role="none">
+                                <a class="fd-navigation-list__content" role="treeitem" tabindex="0">
+                                    <div class="fd-navigation-list__content-container">
+                                        <span class="fd-navigation-list__text">My Orders</span>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="fd-navigation-list__item" role="none">
+                        <a class="fd-navigation-list__content" role="treeitem" tabindex="0" aria-expanded="true">
+                            <div class="fd-navigation-list__content-container">
+                                <span class="fd-navigation-list__icon">
+                                    <i class="sap-icon--account" role="presentation"></i>
+                                </span>
+                                <span class="fd-navigation-list__text">Customer Management</span>
+                            </div>
+                            <div class="fd-navigation-list__navigation-indicator" role="presentation" aria-hidden="true">
+                                <i class="sap-icon--navigation-down-arrow" role="presentation"></i>
+                            </div>
+                        </a>
+                        <ul class="fd-navigation-list level-2" role="group">
+                            <li class="fd-navigation-list__item" role="none">
+                                <a class="fd-navigation-list__content" role="treeitem" tabindex="0">
+                                    <div class="fd-navigation-list__content-container">
+                                        <span class="fd-navigation-list__text">Contacts</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="fd-navigation-list__item" role="none">
+                                <a class="fd-navigation-list__content" role="treeitem" tabindex="0">
+                                    <div class="fd-navigation-list__content-container">
+                                        <span class="fd-navigation-list__text">Companies</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="fd-navigation-list__item" role="none">
+                                <a class="fd-navigation-list__content" role="treeitem" tabindex="0">
+                                    <div class="fd-navigation-list__content-container">
+                                        <span class="fd-navigation-list__text">Partners</span>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="fd-navigation-list__item" role="none">
+                        <a class="fd-navigation-list__content" role="treeitem" tabindex="0" aria-expanded="true">
+                            <div class="fd-navigation-list__content-container">
+                                <span class="fd-navigation-list__icon">
+                                    <i class="sap-icon--crm-sales" role="presentation"></i>
+                                </span>
+                                <span class="fd-navigation-list__text">Sales</span>
+                            </div>
+                            <div class="fd-navigation-list__navigation-indicator" role="presentation" aria-hidden="true">
+                                <i class="sap-icon--navigation-down-arrow" role="presentation"></i>
+                            </div>
+                        </a>
+                        <ul class="fd-navigation-list level-2" role="group">
+                            <li class="fd-navigation-list__item" role="none">
+                                <a class="fd-navigation-list__content" role="treeitem" tabindex="0">
+                                    <div class="fd-navigation-list__content-container">
+                                        <span class="fd-navigation-list__text">Leads</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="fd-navigation-list__item" role="none">
+                                <a class="fd-navigation-list__content" role="treeitem" tabindex="0">
+                                    <div class="fd-navigation-list__content-container">
+                                        <span class="fd-navigation-list__text">Opportunities</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="fd-navigation-list__item" role="none">
+                                <a class="fd-navigation-list__content" role="treeitem" tabindex="0">
+                                    <div class="fd-navigation-list__content-container">
+                                        <span class="fd-navigation-list__text">Quotes</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="fd-navigation-list__item" role="none">
+                                <a class="fd-navigation-list__content" role="treeitem" tabindex="0">
+                                    <div class="fd-navigation-list__content-container">
+                                        <span class="fd-navigation-list__text">Orders</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="fd-navigation-list__item" role="none">
+                                <a class="fd-navigation-list__content" role="treeitem" tabindex="0">
+                                    <div class="fd-navigation-list__content-container">
+                                        <span class="fd-navigation-list__text">Invoices</span>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="fd-navigation-list__item" role="none">
+                        <a class="fd-navigation-list__content" role="treeitem" tabindex="0" aria-expanded="true">
+                            <div class="fd-navigation-list__content-container">
+                                <span class="fd-navigation-list__icon">
+                                    <i class="sap-icon--customer-view" role="presentation"></i>
+                                </span>
+                                <span class="fd-navigation-list__text">Products</span>
+                            </div>
+                            <div class="fd-navigation-list__navigation-indicator" role="presentation" aria-hidden="true">
+                                <i class="sap-icon--navigation-down-arrow" role="presentation"></i>
+                            </div>
+                        </a>
+                        <ul class="fd-navigation-list level-2" role="group">
+                            <li class="fd-navigation-list__item" role="none">
+                                <a class="fd-navigation-list__content" role="treeitem" tabindex="0">
+                                    <div class="fd-navigation-list__content-container">
+                                        <span class="fd-navigation-list__text">Product Catalog</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="fd-navigation-list__item" role="none">
+                                <a class="fd-navigation-list__content" role="treeitem" tabindex="0">
+                                    <div class="fd-navigation-list__content-container">
+                                        <span class="fd-navigation-list__text">Pricing</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="fd-navigation-list__item" role="none">
+                                <a class="fd-navigation-list__content" role="treeitem" tabindex="0">
+                                    <div class="fd-navigation-list__content-container">
+                                        <span class="fd-navigation-list__text">Inventory Management</span>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="fd-navigation-list__item" role="none">
+                        <a class="fd-navigation-list__content" role="treeitem" tabindex="0" aria-expanded="true">
+                            <div class="fd-navigation-list__content-container">
+                                <span class="fd-navigation-list__icon">
+                                    <i class="sap-icon--customer-view" role="presentation"></i>
+                                </span>
+                                <span class="fd-navigation-list__text">Marketing</span>
+                            </div>
+                            <div class="fd-navigation-list__navigation-indicator" role="presentation" aria-hidden="true">
+                                <i class="sap-icon--navigation-down-arrow" role="presentation"></i>
+                            </div>
+                        </a>
+                        <ul class="fd-navigation-list level-2" role="group">
+                            <li class="fd-navigation-list__item" role="none">
+                                <a class="fd-navigation-list__content" role="treeitem" tabindex="0">
+                                    <div class="fd-navigation-list__content-container">
+                                        <span class="fd-navigation-list__text">Campaigns</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="fd-navigation-list__item" role="none">
+                                <a class="fd-navigation-list__content" role="treeitem" tabindex="0">
+                                    <div class="fd-navigation-list__content-container">
+                                        <span class="fd-navigation-list__text">E-Mail Marketing</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="fd-navigation-list__item" role="none">
+                                <a class="fd-navigation-list__content" role="treeitem" tabindex="0">
+                                    <div class="fd-navigation-list__content-container">
+                                        <span class="fd-navigation-list__text">Marketing Automation</span>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="fd-navigation-list__item" role="none">
+                        <a class="fd-navigation-list__content" role="treeitem" tabindex="0" aria-expanded="true">
+                            <div class="fd-navigation-list__content-container">
+                                <span class="fd-navigation-list__icon">
+                                    <i class="sap-icon--manager-insight" role="presentation"></i>
+                                </span>
+                                <span class="fd-navigation-list__text">Reports</span>
+                            </div>
+                            <div class="fd-navigation-list__navigation-indicator" role="presentation" aria-hidden="true">
+                                <i class="sap-icon--navigation-down-arrow" role="presentation"></i>
+                            </div>
+                        </a>
+                        <ul class="fd-navigation-list level-2" role="group">
+                            <li class="fd-navigation-list__item" role="none">
+                                <a class="fd-navigation-list__content" role="treeitem" tabindex="0">
+                                    <div class="fd-navigation-list__content-container">
+                                        <span class="fd-navigation-list__text">Campaigns</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="fd-navigation-list__item" role="none">
+                                <a class="fd-navigation-list__content" role="treeitem" tabindex="0">
+                                    <div class="fd-navigation-list__content-container">
+                                        <span class="fd-navigation-list__text">E-Mail Marketing</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="fd-navigation-list__item" role="none">
+                                <a class="fd-navigation-list__content" role="treeitem" tabindex="0">
+                                    <div class="fd-navigation-list__content-container">
+                                        <span class="fd-navigation-list__text">Marketing Automation</span>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                </ul>
+            </div>
+
+            <div  class="fd-side-nav__container fd-side-nav__container--bottom">
+                <ul class="fd-navigation-list level-1" role="tree" tabindex="-1" aria-roledescription="Navigation List Tree">
+                    <li class="fd-navigation-list__item fd-navigation-list__item--quick-create" role="none">
+                        <a class="fd-navigation-list__content" role="treeitem" tabindex="0">
+                            <div class="fd-navigation-list__content-container">
+                                <span class="fd-navigation-list__icon">
+                                    <i class=" sap-icon--add" role="presentation"></i>
+                                </span>
+                                <span class="fd-navigation-list__text">Quick Create</span>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li class="fd-navigation-list__item" role="none">
+                        <a class="fd-navigation-list__content" role="treeitem" tabindex="0">
+                            <div class="fd-navigation-list__content-container">
+                                <span class="fd-navigation-list__icon">
+                                    <i class=" sap-icon--settings" role="presentation"></i>
+                                </span>
+                                <span class="fd-navigation-list__text">Product Settings</span>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
 </div>
 ```
 
 ### Long text
 
-Navigation list items truncate long text by default. To enable wrapping, add the \
+Navigation list items truncate long text by default. To enable wrapping, add the `fd-navigation-list--wrap` modifier class to the root navigation list element.
 
 ```html
 <div>
@@ -1564,128 +1563,128 @@ Navigation list items truncate long text by default. To enable wrapping, add the
                                 <i class="sap-icon--settings" role="presentation"></i>
                             </span>
                             <span class="fd-navigation-list__text">Enterprise Resource Planning Configuration and Settings</span>
-                            <div class="fd-navigation-list__navigation-indicator" role="presentation" aria-hidden="true">
-                                <i class="sap-icon--navigation-down-arrow" role="presentation"></i>
-                            </div>
-                        </a>
-                        <ul class="fd-navigation-list level-2" role="group">
-                            <li class="fd-navigation-list__item" role="none">
-                                <a class="fd-navigation-list__content is-selected" role="treeitem" tabindex="0">
-                                    <div class="fd-navigation-list__content-container">
-                                        <span class="fd-navigation-list__text">General Ledger and Financial Accounting Configuration</span>
-                                    </div>
-                                </a>
-                            </li>
-                            <li class="fd-navigation-list__item" role="none">
-                                <a class="fd-navigation-list__content" role="treeitem" tabindex="0">
-                                    <div class="fd-navigation-list__content-container">
-                                        <span class="fd-navigation-list__text">Supply Chain and Logistics Management</span>
-                                    </div>
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="fd-navigation-list__item" role="none">
-                        <a class="fd-navigation-list__content" role="treeitem" tabindex="0" aria-expanded="true">
-                            <div class="fd-navigation-list__content-container">
-                                <span class="fd-navigation-list__icon">
-                                    <i class="sap-icon--employee" role="presentation"></i>
-                                </span>
-                                <span class="fd-navigation-list__text">Human Capital Management Reports and Analytics</span>
-                            </div>
-                            <div class="fd-navigation-list__navigation-indicator" role="presentation" aria-hidden="true">
-                                <i class="sap-icon--navigation-down-arrow" role="presentation"></i>
-                            </div>
-                        </a>
-                        <ul class="fd-navigation-list level-2" role="group">
-                            <li class="fd-navigation-list__item" role="none">
-                                <a class="fd-navigation-list__content" role="treeitem" tabindex="0">
-                                    <div class="fd-navigation-list__content-container">
-                                        <span class="fd-navigation-list__text">Employee Performance Review and Development Tracking</span>
-                                    </div>
-                                </a>
-                            </li>
-                            <li class="fd-navigation-list__item" role="none">
-                                <a class="fd-navigation-list__content" role="treeitem" tabindex="0">
-                                    <div class="fd-navigation-list__content-container">
-                                        <span class="fd-navigation-list__text">Payroll and Compensation Management</span>
-                                    </div>
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-    </div>
+                        </div>
+                        <div class="fd-navigation-list__navigation-indicator" role="presentation" aria-hidden="true">
+                            <i class="sap-icon--navigation-down-arrow" role="presentation"></i>
+                        </div>
+                    </a>
+                    <ul class="fd-navigation-list level-2" role="group">
+                        <li class="fd-navigation-list__item" role="none">
+                            <a class="fd-navigation-list__content is-selected" role="treeitem" tabindex="0">
+                                <div class="fd-navigation-list__content-container">
+                                    <span class="fd-navigation-list__text">General Ledger and Financial Accounting Configuration</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="fd-navigation-list__item" role="none">
+                            <a class="fd-navigation-list__content" role="treeitem" tabindex="0">
+                                <div class="fd-navigation-list__content-container">
+                                    <span class="fd-navigation-list__text">Supply Chain and Logistics Management</span>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="fd-navigation-list__item" role="none">
+                    <a class="fd-navigation-list__content" role="treeitem" tabindex="0" aria-expanded="true">
+                        <div class="fd-navigation-list__content-container">
+                            <span class="fd-navigation-list__icon">
+                                <i class="sap-icon--employee" role="presentation"></i>
+                            </span>
+                            <span class="fd-navigation-list__text">Human Capital Management Reports and Analytics</span>
+                        </div>
+                        <div class="fd-navigation-list__navigation-indicator" role="presentation" aria-hidden="true">
+                            <i class="sap-icon--navigation-down-arrow" role="presentation"></i>
+                        </div>
+                    </a>
+                    <ul class="fd-navigation-list level-2" role="group">
+                        <li class="fd-navigation-list__item" role="none">
+                            <a class="fd-navigation-list__content" role="treeitem" tabindex="0">
+                                <div class="fd-navigation-list__content-container">
+                                    <span class="fd-navigation-list__text">Employee Performance Review and Development Tracking</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="fd-navigation-list__item" role="none">
+                            <a class="fd-navigation-list__content" role="treeitem" tabindex="0">
+                                <div class="fd-navigation-list__content-container">
+                                    <span class="fd-navigation-list__text">Payroll and Compensation Management</span>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</div>
 
-    <div>
-        <p>With <code>fd-navigation-list--wrap</code></p>
-        <nav class="fd-side-nav" aria-roledescription="Main Navigation">
-            <div class="fd-side-nav__container fd-side-nav__container--top">
-                <ul class="fd-navigation-list fd-navigation-list--wrap level-1" role="tree" aria-roledescription="Navigation List Tree">
-                    <li class="fd-navigation-list__item" role="none">
-                        <a class="fd-navigation-list__content" role="treeitem" tabindex="0" aria-expanded="true">
-                            <div class="fd-navigation-list__content-container">
-                                <span class="fd-navigation-list__icon">
-                                    <i class="sap-icon--settings" role="presentation"></i>
-                                </span>
-                                <span class="fd-navigation-list__text">Enterprise Resource Planning Configuration and Settings</span>
-                            </div>
-                            <div class="fd-navigation-list__navigation-indicator" role="presentation" aria-hidden="true">
-                                <i class="sap-icon--navigation-down-arrow" role="presentation"></i>
-                            </div>
-                        </a>
-                        <ul class="fd-navigation-list fd-navigation-list--wrap level-2" role="group">
-                            <li class="fd-navigation-list__item" role="none">
-                                <a class="fd-navigation-list__content is-selected" role="treeitem" tabindex="0">
-                                    <div class="fd-navigation-list__content-container">
-                                        <span class="fd-navigation-list__text">General Ledger and Financial Accounting Configuration</span>
-                                    </div>
-                                </a>
-                            </li>
-                            <li class="fd-navigation-list__item" role="none">
-                                <a class="fd-navigation-list__content" role="treeitem" tabindex="0">
-                                    <div class="fd-navigation-list__content-container">
-                                        <span class="fd-navigation-list__text">Supply Chain and Logistics Management</span>
-                                    </div>
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="fd-navigation-list__item" role="none">
-                        <a class="fd-navigation-list__content" role="treeitem" tabindex="0" aria-expanded="true">
-                            <div class="fd-navigation-list__content-container">
-                                <span class="fd-navigation-list__icon">
-                                    <i class="sap-icon--employee" role="presentation"></i>
-                                </span>
-                                <span class="fd-navigation-list__text">Human Capital Management Reports and Analytics</span>
-                            </div>
-                            <div class="fd-navigation-list__navigation-indicator" role="presentation" aria-hidden="true">
-                                <i class="sap-icon--navigation-down-arrow" role="presentation"></i>
-                            </div>
-                        </a>
-                        <ul class="fd-navigation-list fd-navigation-list--wrap level-2" role="group">
-                            <li class="fd-navigation-list__item" role="none">
-                                <a class="fd-navigation-list__content" role="treeitem" tabindex="0">
-                                    <div class="fd-navigation-list__content-container">
-                                        <span class="fd-navigation-list__text">Employee Performance Review and Development Tracking</span>
-                                    </div>
-                                </a>
-                            </li>
-                            <li class="fd-navigation-list__item" role="none">
-                                <a class="fd-navigation-list__content" role="treeitem" tabindex="0">
-                                    <div class="fd-navigation-list__content-container">
-                                        <span class="fd-navigation-list__text">Payroll and Compensation Management</span>
-                                    </div>
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-    </div>
+<div>
+    <p>With <code>fd-navigation-list--wrap</code></p>
+    <nav class="fd-side-nav" aria-roledescription="Main Navigation">
+        <div class="fd-side-nav__container fd-side-nav__container--top">
+            <ul class="fd-navigation-list fd-navigation-list--wrap level-1" role="tree" aria-roledescription="Navigation List Tree">
+                <li class="fd-navigation-list__item" role="none">
+                    <a class="fd-navigation-list__content" role="treeitem" tabindex="0" aria-expanded="true">
+                        <div class="fd-navigation-list__content-container">
+                            <span class="fd-navigation-list__icon">
+                                <i class="sap-icon--settings" role="presentation"></i>
+                            </span>
+                            <span class="fd-navigation-list__text">Enterprise Resource Planning Configuration and Settings</span>
+                        </div>
+                        <div class="fd-navigation-list__navigation-indicator" role="presentation" aria-hidden="true">
+                            <i class="sap-icon--navigation-down-arrow" role="presentation"></i>
+                        </div>
+                    </a>
+                    <ul class="fd-navigation-list fd-navigation-list--wrap level-2" role="group">
+                        <li class="fd-navigation-list__item" role="none">
+                            <a class="fd-navigation-list__content is-selected" role="treeitem" tabindex="0">
+                                <div class="fd-navigation-list__content-container">
+                                    <span class="fd-navigation-list__text">General Ledger and Financial Accounting Configuration</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="fd-navigation-list__item" role="none">
+                            <a class="fd-navigation-list__content" role="treeitem" tabindex="0">
+                                <div class="fd-navigation-list__content-container">
+                                    <span class="fd-navigation-list__text">Supply Chain and Logistics Management</span>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="fd-navigation-list__item" role="none">
+                    <a class="fd-navigation-list__content" role="treeitem" tabindex="0" aria-expanded="true">
+                        <div class="fd-navigation-list__content-container">
+                            <span class="fd-navigation-list__icon">
+                                <i class="sap-icon--employee" role="presentation"></i>
+                            </span>
+                            <span class="fd-navigation-list__text">Human Capital Management Reports and Analytics</span>
+                        </div>
+                        <div class="fd-navigation-list__navigation-indicator" role="presentation" aria-hidden="true">
+                            <i class="sap-icon--navigation-down-arrow" role="presentation"></i>
+                        </div>
+                    </a>
+                    <ul class="fd-navigation-list fd-navigation-list--wrap level-2" role="group">
+                        <li class="fd-navigation-list__item" role="none">
+                            <a class="fd-navigation-list__content" role="treeitem" tabindex="0">
+                                <div class="fd-navigation-list__content-container">
+                                    <span class="fd-navigation-list__text">Employee Performance Review and Development Tracking</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="fd-navigation-list__item" role="none">
+                            <a class="fd-navigation-list__content" role="treeitem" tabindex="0">
+                                <div class="fd-navigation-list__content-container">
+                                    <span class="fd-navigation-list__text">Payroll and Compensation Management</span>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
 </div>
 ```
 

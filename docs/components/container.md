@@ -15,7 +15,7 @@ stability: stable
 
 Form groups are used to assemble form elements with labels, messages, and help containers.
 
-These components can be used alone. For example, the \
+These components can be used alone. For example, the `fd-form__item` element with the label and control could be used without the full form group since not every form field will need error messages.
 
 ## Installation
 
@@ -29,7 +29,6 @@ npm install fundamental-styles
 
 <!-- Include component CSS -->
 <link href="node_modules/fundamental-styles/dist/container.css" rel="stylesheet">
-
 ```
 
 ## Basic Usage
@@ -58,7 +57,7 @@ npm install fundamental-styles
 
 ### Required
 
-To indicate to the user that it's required to fill out an input field, add the \
+To indicate to the user that it's required to fill out an input field, add the `fd-form-label--required` modifier class to the `fd-form-label` element.
 
 ```html
 <div class="fd-form-group">
@@ -71,7 +70,7 @@ To indicate to the user that it's required to fill out an input field, add the \
 
 ### Group header
 
-Form groups can be grouped together under a header with the \
+Form groups can be grouped together under a header with the `fd-form-group__header` class. To remove the border on the bottom use <code>fd-form-group__header--no-border</code> modifier class. For a header with no inline padding use <code>fd-form-group__header--no-padding</code> modifier class with <code>fd-form-group__header</code> base class. Both modifiers can be used together for a header with no inline padding and no border.
 
 ```html
 <div class="fd-form-group" role="group" aria-labelledby="basicGroupHeader">
@@ -214,7 +213,7 @@ When group headers are displayed in a **Form Grid**, paddings are added to the g
 
 ### Group header (form grid) – display mode
 
-Display mode variant of the group header form grid. Add \
+Display mode variant of the group header form grid. Add `fd-form-layout-grid-container--display-mode` to the container and replace `fd-input` controls with `fd-text` paragraphs to render field values as static text.
 
 ```html
 <div class="fd-container fd-form-layout-grid-container fd-form-layout-grid-container--display-mode">

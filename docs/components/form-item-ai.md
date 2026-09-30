@@ -15,7 +15,7 @@ stability: experimental
 
 > **🧪 EXPERIMENTAL**: This component is experimental and its API may change.
 
-AI Progress Indicator provides information about the status of a user's request while they wait for the content to be generated. The main goal of this pattern is to keep the user engaged and informed, manage their expectations and show that the system is actively working. 
+AI Progress Indicator provides information about the status of a user's request while they wait for the content to be generated. The main goal of this pattern is to keep the user engaged and informed, manage their expectations and show that the system is actively working.
         <br><br>
 <b>Use Progress Indicator: </b>
 <ul>
@@ -44,7 +44,6 @@ npm install fundamental-styles
 
 <!-- Include component CSS -->
 <link href="node_modules/fundamental-styles/dist/form-item.css" rel="stylesheet">
-
 ```
 
 ## Basic Usage

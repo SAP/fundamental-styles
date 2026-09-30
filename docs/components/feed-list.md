@@ -85,25 +85,19 @@ npm install fundamental-styles
 ```html
 <ul class="fd-feed-list" aria-label="Feed List Item default example">
     <li class="fd-feed-list__body">
-        <div
-            class="fd-avatar fd-avatar--circle fd-avatar--s fd-avatar--thumbnail fd-feed-list__thumb"
 
-            role="img"
-            aria-label="John Doe"
-            title="John Doe">
-
-            <div class="fd-feed-list__content">
-                <p class="fd-feed-list__text">
-                    <span class="fd-feed-list__name">Joe Doe: </span>
-                    Suspendisse facilisis sed odio in mollis. Donec quis justo aliquam, porta justo a, accumsan lorem.
-                </p>
-                <div class="fd-feed-list__footer">
-                    <small class="fd-feed-list__footer--byline">Aug 20, 2020</small>
-                    <small class="fd-feed-list__footer--byline">Reply</small>
-                </div>
+        <div class="fd-feed-list__content">
+            <p class="fd-feed-list__text">
+                <span class="fd-feed-list__name">Joe Doe: </span>
+                Suspendisse facilisis sed odio in mollis. Donec quis justo aliquam, porta justo a, accumsan lorem.
+            </p>
+            <div class="fd-feed-list__footer">
+                <small class="fd-feed-list__footer--byline">Aug 20, 2020</small>
+                <small class="fd-feed-list__footer--byline">Reply</small>
             </div>
-        </li>
-    </ul>
+        </div>
+    </li>
+</ul>
 ```
 
 ## Modifiers
@@ -171,25 +165,19 @@ The standard feed list item displays a user\
 ```html
 <ul class="fd-feed-list" aria-label="Feed List Item default example">
     <li class="fd-feed-list__body">
-        <div
-            class="fd-avatar fd-avatar--circle fd-avatar--s fd-avatar--thumbnail fd-feed-list__thumb"
 
-            role="img"
-            aria-label="John Doe"
-            title="John Doe">
-
-            <div class="fd-feed-list__content">
-                <p class="fd-feed-list__text">
-                    <span class="fd-feed-list__name">Joe Doe: </span>
-                    Suspendisse facilisis sed odio in mollis. Donec quis justo aliquam, porta justo a, accumsan lorem.
-                </p>
-                <div class="fd-feed-list__footer">
-                    <small class="fd-feed-list__footer--byline">Aug 20, 2020</small>
-                    <small class="fd-feed-list__footer--byline">Reply</small>
-                </div>
+        <div class="fd-feed-list__content">
+            <p class="fd-feed-list__text">
+                <span class="fd-feed-list__name">Joe Doe: </span>
+                Suspendisse facilisis sed odio in mollis. Donec quis justo aliquam, porta justo a, accumsan lorem.
+            </p>
+            <div class="fd-feed-list__footer">
+                <small class="fd-feed-list__footer--byline">Aug 20, 2020</small>
+                <small class="fd-feed-list__footer--byline">Reply</small>
             </div>
-        </li>
-    </ul>
+        </div>
+    </li>
+</ul>
 ```
 
 ### Placeholder image
@@ -205,20 +193,21 @@ The feed list item will display a placeholder image if the user does not have an
             aria-label="John Doe"
             title="John Doe">
             <i class="sap-icon--person-placeholder"></i>
+        </div>
 
-            <div class="fd-feed-list__content">
-                <p class="fd-feed-list__text">
-                    <span class="fd-feed-list__name">Joe Doe: </span>
-                    Suspendisse facilisis sed odio in mollis. Donec quis justo aliquam, porta justo a, accumsan lorem.
-                </p>
+        <div class="fd-feed-list__content">
+            <p class="fd-feed-list__text">
+                <span class="fd-feed-list__name">Joe Doe: </span>
+                Suspendisse facilisis sed odio in mollis. Donec quis justo aliquam, porta justo a, accumsan lorem.
+            </p>
 
-                <div class="fd-feed-list__footer">
-                    <small class="fd-feed-list__footer--byline">Aug 20, 2020</small>
-                    <small class="fd-feed-list__footer--byline">Reply</small>
-                </div>
+            <div class="fd-feed-list__footer">
+                <small class="fd-feed-list__footer--byline">Aug 20, 2020</small>
+                <small class="fd-feed-list__footer--byline">Reply</small>
             </div>
-        </li>
-    </ul>
+        </div>
+    </li>
+</ul>
 ```
 
 ### No image
@@ -263,8 +252,9 @@ The feed list item can display linked usernames (and images). To display a linke
                 <small class="fd-feed-list__footer--byline">Aug 20, 2020</small>
                 <small class="fd-feed-list__footer--byline">Reply</small>
             </div>
-        </li>
-    </ul>
+        </div>
+    </li>
+</ul>
 ```
 
 ### Show more
@@ -286,8 +276,9 @@ Feed list items can display a <i>MORE</i> link that can show more text (when/if 
                 <small class='fd-feed-list__footer--byline'>Aug 20, 2020</small>
                 <small class='fd-feed-list__footer--byline'>Reply</small>
             </div>
-        </li>
-    </ul>
+        </div>
+    </li>
+</ul>
 ```
 
 ### Show less
@@ -309,8 +300,9 @@ Similarly, feed list items can display a <i>LESS</i> link that will revert the t
                 <small class="fd-feed-list__footer--byline">Aug 20, 2020</small>
                 <small class="fd-feed-list__footer--byline">Reply</small>
             </div>
-        </li>
-    </ul>
+        </div>
+    </li>
+</ul>
 ```
 
 ### Actions
@@ -320,58 +312,52 @@ Feed list items can display actions that users can perform on their individual f
 ```html
 <ul class="fd-feed-list" aria-label="Feed List Item with popover actions example">
     <li class="fd-feed-list__body">
-        <div
-            class="fd-avatar fd-avatar--circle fd-avatar--s fd-avatar--thumbnail fd-feed-list__thumb"
 
-            role="img"
-            aria-label="John Doe"
-            title="John Doe">
-
-            <div class="fd-feed-list__content">
-                <div class="fd-feed-list__actions">
-                    <div class="fd-popover">
-                        <div class="fd-popover__control">
-                            <button class="fd-button fd-button--transparent"
-                                aria-label="More Options" aria-controls="actionSheetDesktop" aria-expanded="false"
-                                aria-haspopup="true" onclick="onPopoverClick('actionSheetDesktop');">
-                                <i class="sap-icon--overflow"></i>
-                            </button>
-                        </div>
-                        <div class="fd-popover__body fd-popover__body--right" aria-hidden="true" id="actionSheetDesktop">
-                            <ul class="fd-action-sheet" role="list" aria-label="List of contextual options">
-                                <li class="fd-action-sheet__item" role="listitem">
-                                    <button class="fd-button fd-button--full-width fd-button--transparent fd-button--text-alignment-left">
-                                        <i class="sap-icon--attachment"></i>
-                                        <span class="fd-button__text">Button 1</span>
-                                    </button>
-                                </li>
-                                <li class="fd-action-sheet__item" role="listitem">
-                                    <button class="fd-button fd-button--full-width fd-button--transparent fd-button--text-alignment-left">
-                                        <i class="sap-icon--add"></i>
-                                        <span class="fd-button__text">Button 2</span>
-                                    </button>
-                                </li>
-                                <li class="fd-action-sheet__item" role="listitem">
-                                    <button class="fd-button fd-button--full-width fd-button--transparent fd-button--text-alignment-left">
-                                        <i class="sap-icon--print"></i>
-                                        <span class="fd-button__text">Button 3</span>
-                                    </button>
-                                </li>
-                            </ul>
-                        </div>
+        <div class="fd-feed-list__content">
+            <div class="fd-feed-list__actions">
+                <div class="fd-popover">
+                    <div class="fd-popover__control">
+                        <button class="fd-button fd-button--transparent"
+                            aria-label="More Options" aria-controls="actionSheetDesktop" aria-expanded="false"
+                            aria-haspopup="true" onclick="onPopoverClick('actionSheetDesktop');">
+                            <i class="sap-icon--overflow"></i>
+                        </button>
+                    </div>
+                    <div class="fd-popover__body fd-popover__body--right" aria-hidden="true" id="actionSheetDesktop">
+                        <ul class="fd-action-sheet" role="list" aria-label="List of contextual options">
+                            <li class="fd-action-sheet__item" role="listitem">
+                                <button class="fd-button fd-button--full-width fd-button--transparent fd-button--text-alignment-left">
+                                    <i class="sap-icon--attachment"></i>
+                                    <span class="fd-button__text">Button 1</span>
+                                </button>
+                            </li>
+                            <li class="fd-action-sheet__item" role="listitem">
+                                <button class="fd-button fd-button--full-width fd-button--transparent fd-button--text-alignment-left">
+                                    <i class="sap-icon--add"></i>
+                                    <span class="fd-button__text">Button 2</span>
+                                </button>
+                            </li>
+                            <li class="fd-action-sheet__item" role="listitem">
+                                <button class="fd-button fd-button--full-width fd-button--transparent fd-button--text-alignment-left">
+                                    <i class="sap-icon--print"></i>
+                                    <span class="fd-button__text">Button 3</span>
+                                </button>
+                            </li>
+                        </ul>
                     </div>
                 </div>
-                <p class="fd-feed-list__text">
-                    <span class="fd-feed-list__name">Joe Doe: </span>
-                    <span>In hac habitasse platea dictumst. Fusce eu dui viverra, dictum justo in, pul aug. Praesent aliquam massa non lectus commodo, id vestibulum lectus auctor. Proin lorem quam, accumsan ac dui et, cursus ornare dui. Nunc ultricies dolor felis, in viverra mi venenatis in. Sed vel nisl a dui posuere ullamcorper. Donec posuere id massa at dictum. Suspendisse potenti.</span>
-                </p>
-                <div class="fd-feed-list__footer">
-                    <small class="fd-feed-list__footer--byline">Aug 20, 2020</small>
-                    <small class="fd-feed-list__footer--byline">Reply</small>
-                </div>
             </div>
-        </li>
-    </ul>
+            <p class="fd-feed-list__text">
+                <span class="fd-feed-list__name">Joe Doe: </span>
+                <span>In hac habitasse platea dictumst. Fusce eu dui viverra, dictum justo in, pul aug. Praesent aliquam massa non lectus commodo, id vestibulum lectus auctor. Proin lorem quam, accumsan ac dui et, cursus ornare dui. Nunc ultricies dolor felis, in viverra mi venenatis in. Sed vel nisl a dui posuere ullamcorper. Donec posuere id massa at dictum. Suspendisse potenti.</span>
+            </p>
+            <div class="fd-feed-list__footer">
+                <small class="fd-feed-list__footer--byline">Aug 20, 2020</small>
+                <small class="fd-feed-list__footer--byline">Reply</small>
+            </div>
+        </div>
+    </li>
+</ul>
 ```
 
 ### Group
@@ -387,51 +373,47 @@ Evidently, feed list items can be displayed in a group. The example below displa
             aria-label="John Doe"
             title="John Doe">
             <i class="sap-icon--person-placeholder"></i>
-            <div class="fd-feed-list__content">
-                <p class="fd-feed-list__text">
-                    <span class="fd-feed-list__name">Cruz: </span>
-                    <span>Maecenas convallis velit quis felis dictum, in ultrices quam faucibus. </span>
-                </p>
-                <div class="fd-feed-list__footer">
-                    <small class="fd-feed-list__footer--byline">Aug 21, 2020</small>
-                    <small class="fd-feed-list__footer--byline">Reply</small>
-                </div>
+        </div>
+        <div class="fd-feed-list__content">
+            <p class="fd-feed-list__text">
+                <span class="fd-feed-list__name">Cruz: </span>
+                <span>Maecenas convallis velit quis felis dictum, in ultrices quam faucibus. </span>
+            </p>
+            <div class="fd-feed-list__footer">
+                <small class="fd-feed-list__footer--byline">Aug 21, 2020</small>
+                <small class="fd-feed-list__footer--byline">Reply</small>
             </div>
-        </li>
+        </div>
+    </li>
 
-        <li class="fd-feed-list__body">
-            <div
-                class="fd-avatar fd-avatar--circle fd-avatar--s fd-avatar--thumbnail fd-feed-list__thumb"
+    <li class="fd-feed-list__body">
 
-                role="img"
-                aria-label="John Doe"
-                title="John Doe">
+        <div class="fd-feed-list__content">
+            <p class="fd-feed-list__text">
+                <span class="fd-feed-list__name">Joe Doe: </span>
+                <span>Maecenas convallis velit quis felis dictum, in ultrices quam faucibus. </span>
+            </p>
+            <div class="fd-feed-list__footer">
+                <small class="fd-feed-list__footer--byline">Aug 22, 2020</small>
+                <small class="fd-feed-list__footer--byline">Reply</small>
+            </div>
+        </div>
+    </li>
 
-                <div class="fd-feed-list__content">
-                    <p class="fd-feed-list__text">
-                        <span class="fd-feed-list__name">Joe Doe: </span>
-                        <span>Maecenas convallis velit quis felis dictum, in ultrices quam faucibus. </span>
-                    </p>
-                    <div class="fd-feed-list__footer">
-                        <small class="fd-feed-list__footer--byline">Aug 22, 2020</small>
-                        <small class="fd-feed-list__footer--byline">Reply</small>
-                    </div>
-                </div>
-            </li>
+    <li class="fd-feed-list__body">
 
-            <li class="fd-feed-list__body">
-
-                <div class="fd-feed-list__content">
-                    <p class="fd-feed-list__text">
-                        <span class="fd-feed-list__name">Sanchez: </span>
-                        <span>Maecenas convallis velit quis felis dictum, in ultrices quam faucibus.</span>
-                    </p>
-                    <div class="fd-feed-list__footer">
-                        <small class="fd-feed-list__footer--byline">Aug 20, 2020</small>
-                        <small class="fd-feed-list__footer--byline">Reply</small>
-                    </div>
-                </li>
-            </ul>
+        <div class="fd-feed-list__content">
+            <p class="fd-feed-list__text">
+                <span class="fd-feed-list__name">Sanchez: </span>
+                <span>Maecenas convallis velit quis felis dictum, in ultrices quam faucibus.</span>
+            </p>
+            <div class="fd-feed-list__footer">
+                <small class="fd-feed-list__footer--byline">Aug 20, 2020</small>
+                <small class="fd-feed-list__footer--byline">Reply</small>
+            </div>
+        </div>
+    </li>
+</ul>
 ```
 
 ### Borderless group
@@ -447,51 +429,47 @@ When feed list items are displayed in a group, they are usually separated by bor
             aria-label="John Doe"
             title="John Doe">
             <i class="sap-icon--person-placeholder"></i>
-            <div class="fd-feed-list__content">
-                <p class="fd-feed-list__text">
-                    <span class="fd-feed-list__name">Cruz: </span>
-                    <span>Maecenas convallis velit quis felis dictum, in ultrices quam faucibus.</span>
-                </p>
-                <div class="fd-feed-list__footer">
-                    <small class="fd-feed-list__footer--byline">Aug 21, 2020</small>
-                    <small class="fd-feed-list__footer--byline">Reply</small>
-                </div>
+        </div>
+        <div class="fd-feed-list__content">
+            <p class="fd-feed-list__text">
+                <span class="fd-feed-list__name">Cruz: </span>
+                <span>Maecenas convallis velit quis felis dictum, in ultrices quam faucibus.</span>
+            </p>
+            <div class="fd-feed-list__footer">
+                <small class="fd-feed-list__footer--byline">Aug 21, 2020</small>
+                <small class="fd-feed-list__footer--byline">Reply</small>
             </div>
-        </li>
+        </div>
+    </li>
 
-        <li class="fd-feed-list__body">
-            <div
-                class="fd-avatar fd-avatar--circle fd-avatar--s fd-avatar--thumbnail fd-feed-list__thumb"
+    <li class="fd-feed-list__body">
 
-                role="img"
-                aria-label="John Doe"
-                title="John Doe">
+        <div class="fd-feed-list__content">
+            <p class="fd-feed-list__text">
+                <span class="fd-feed-list__name">Joe Doe: </span>
+                <span>Maecenas convallis velit quis felis dictum, in ultrices quam faucibus.</span>
+            </p>
+            <div class="fd-feed-list__footer">
+                <small class="fd-feed-list__footer--byline">Aug 22, 2020</small>
+                <small class="fd-feed-list__footer--byline">Reply</small>
+            </div>
+        </div>
+    </li>
 
-                <div class="fd-feed-list__content">
-                    <p class="fd-feed-list__text">
-                        <span class="fd-feed-list__name">Joe Doe: </span>
-                        <span>Maecenas convallis velit quis felis dictum, in ultrices quam faucibus.</span>
-                    </p>
-                    <div class="fd-feed-list__footer">
-                        <small class="fd-feed-list__footer--byline">Aug 22, 2020</small>
-                        <small class="fd-feed-list__footer--byline">Reply</small>
-                    </div>
-                </div>
-            </li>
+    <li class="fd-feed-list__body">
 
-            <li class="fd-feed-list__body">
-
-                <div class="fd-feed-list__content">
-                    <p class="fd-feed-list__text">
-                        <span class="fd-feed-list__name">Sanchez: </span>
-                        <span>Maecenas convallis velit quis felis dictum, in ultrices quam faucibus.</span>
-                    </p>
-                    <div class="fd-feed-list__footer">
-                        <small class="fd-feed-list__footer--byline">Aug 20, 2020</small>
-                        <small class="fd-feed-list__footer--byline">Reply</small>
-                    </div>
-                </li>
-            </ul>
+        <div class="fd-feed-list__content">
+            <p class="fd-feed-list__text">
+                <span class="fd-feed-list__name">Sanchez: </span>
+                <span>Maecenas convallis velit quis felis dictum, in ultrices quam faucibus.</span>
+            </p>
+            <div class="fd-feed-list__footer">
+                <small class="fd-feed-list__footer--byline">Aug 20, 2020</small>
+                <small class="fd-feed-list__footer--byline">Reply</small>
+            </div>
+        </div>
+    </li>
+</ul>
 ```
 
 ### Mobile
@@ -503,66 +481,61 @@ The feed list item can be mobile responsive by adding the `fd-feed-list--s` modi
     <li class="fd-feed-list__body">
         <div class="fd-feed-list__wrapper">
             <div class="fd-feed-list__wrapper fd-feed-list__wrapper--header">
-                <div
-                    class="fd-avatar fd-avatar--circle fd-avatar--s fd-avatar--thumbnail fd-feed-list__thumb"
 
-                    role="img"
-                    aria-label="John Doe"
-                    title="John Doe">
-                    <div>
-                        <span class="fd-feed-list__name">Joe Doe: </span>
-                        <div class="fd-feed-list__footer">
-                            <small class="fd-feed-list__footer--byline">Aug 20, 2020</small>
-                            <small class="fd-feed-list__footer--byline">Reply</small>
-                        </div>
+                <div>
+                    <span class="fd-feed-list__name">Joe Doe: </span>
+                    <div class="fd-feed-list__footer">
+                        <small class="fd-feed-list__footer--byline">Aug 20, 2020</small>
+                        <small class="fd-feed-list__footer--byline">Reply</small>
                     </div>
-
                 </div>
-                <div class="fd-feed-list__actions">
-                    <button class="fd-button fd-button--transparent"
-                        aria-label="More Options" aria-controls="actionSheetPhone" aria-expanded="false"
-                        aria-haspopup="true" onclick="toggleClass('actionSheetPhone', 'fd-action-sheet__wrapper--active');">
-                        <i class="sap-icon--overflow"></i>
+
+            </div>
+            <div class="fd-feed-list__actions">
+                <button class="fd-button fd-button--transparent"
+                    aria-label="More Options" aria-controls="actionSheetPhone" aria-expanded="false"
+                    aria-haspopup="true" onclick="toggleClass('actionSheetPhone', 'fd-action-sheet__wrapper--active');">
+                    <i class="sap-icon--overflow"></i>
+                </button>
+            </div>
+        </div>
+
+        <div class="fd-feed-list__content">
+            <p class="fd-feed-list__text">
+                Suspendisse facilisis sed odio in mollis. Donec quis justo aliquam, porta justo a, accumsan lorem.
+            </p>
+        </div>
+        <div class="fd-action-sheet__wrapper" id="actionSheetPhone">
+            <h6 class="fd-action-sheet__title">Press cancel to hide action sheet</h6>
+            <ul class="fd-action-sheet fd-action-sheet--mobile" role="list" aria-label="List of contextual options">
+                <li class="fd-action-sheet__item" role="listitem">
+                    <button class="fd-button fd-button--full-width fd-button--transparent fd-button--text-alignment-left">
+                        <i class="sap-icon--attachment"></i>
+                        <span class="fd-button__text">Button 1</span>
                     </button>
-                </div>
-            </div>
-
-            <div class="fd-feed-list__content">
-                <p class="fd-feed-list__text">
-                    Suspendisse facilisis sed odio in mollis. Donec quis justo aliquam, porta justo a, accumsan lorem.
-                </p>
-            </div>
-            <div class="fd-action-sheet__wrapper" id="actionSheetPhone">
-                <h6 class="fd-action-sheet__title">Press cancel to hide action sheet</h6>
-                <ul class="fd-action-sheet fd-action-sheet--mobile" role="list" aria-label="List of contextual options">
-                    <li class="fd-action-sheet__item" role="listitem">
-                        <button class="fd-button fd-button--full-width fd-button--transparent fd-button--text-alignment-left">
-                            <i class="sap-icon--attachment"></i>
-                            <span class="fd-button__text">Button 1</span>
-                        </button>
-                    </li>
-                    <li class="fd-action-sheet__item" role="listitem">
-                        <button class="fd-button fd-button--full-width fd-button--transparent fd-button--text-alignment-left">
-                            <i class="sap-icon--add"></i>
-                            <span class="fd-button__text">Button 2</span>
-                        </button>
-                    </li>
-                    <li class="fd-action-sheet__item" role="listitem">
-                        <button class="fd-button fd-button--full-width fd-button--transparent fd-button--text-alignment-left">
-                            <i class="sap-icon--print"></i>
-                            <span class="fd-button__text">Button 3</span>
-                        </button>
-                    </li>
-                    <li class="fd-action-sheet__item" role="listitem">
-                        <button class="fd-button fd-button--full-width fd-button--negative"
-                            onclick="toggleClass('actionSheetPhone', 'fd-action-sheet__wrapper--active');">
-                            <span class="fd-button__text">Cancel</span>
-                        </button>
-                    </li>
-                </ul>
-            </div>
-        </li>
-    </ul>
+                </li>
+                <li class="fd-action-sheet__item" role="listitem">
+                    <button class="fd-button fd-button--full-width fd-button--transparent fd-button--text-alignment-left">
+                        <i class="sap-icon--add"></i>
+                        <span class="fd-button__text">Button 2</span>
+                    </button>
+                </li>
+                <li class="fd-action-sheet__item" role="listitem">
+                    <button class="fd-button fd-button--full-width fd-button--transparent fd-button--text-alignment-left">
+                        <i class="sap-icon--print"></i>
+                        <span class="fd-button__text">Button 3</span>
+                    </button>
+                </li>
+                <li class="fd-action-sheet__item" role="listitem">
+                    <button class="fd-button fd-button--full-width fd-button--negative"
+                        onclick="toggleClass('actionSheetPhone', 'fd-action-sheet__wrapper--active');">
+                        <span class="fd-button__text">Cancel</span>
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </li>
+</ul>
 ```
 
 ## Accessibility

@@ -22,8 +22,8 @@ The split menu button can behave in two different ways:
 
 1. The main button triggers the default action set by the developer. If no default action is defined, the first item in the menu list should be the default.
 2. The main button triggers the last action chosen by the user from the menu list. Initially, it triggers the default action. However, when the user selects a different action, the default switches to the last action selected by the user.
-    
-The split menu button can be displayed by using container with \
+
+The split menu button can be displayed by using container with `fd-button-split` class with `role=”group”` and the `aria-label=”button-split”` attribute.
 
 ## Dependencies
 
@@ -136,6 +136,7 @@ npm install fundamental-styles
         <i class="sap-icon--slim-arrow-down" role="presentation" aria-hidden="true"></i>
     </button>
 </div>
+
 <p>Arrow toggled:</p>
 <div class="fd-button-split fd-button-split--emphasized is-hover" role="group" tabindex="-1" aria-label="button-split">
     <button role="button" class="fd-button fd-button--emphasized">
@@ -360,6 +361,7 @@ Key CSS variables used by this component:
         <i class="sap-icon--slim-arrow-down" role="presentation" aria-hidden="true"></i>
     </button>
 </div>
+
 <p>Arrow toggled:</p>
 <div class="fd-button-split fd-button-split--emphasized is-hover" role="group" tabindex="-1" aria-label="button-split">
     <button role="button" class="fd-button fd-button--emphasized">

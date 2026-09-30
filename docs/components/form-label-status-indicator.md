@@ -210,7 +210,10 @@ Key CSS variables used by this component:
 
 | **Size**       | **rem**    | **Modifier class**        |
 | :----------    | :--------- | -----------------------:  |
-| Small          | 0.75rem    | \
+| Small          | 0.75rem    | `--sm`         |
+| Medium/Default | 0.875rem   | `--md`         |
+| Large          | 1.125rem   | `--lg`         |
+| Extra Large    | 1.875rem   | `--xl`         |
 
 ```html
 <div class="example-container">
@@ -345,7 +348,8 @@ Key CSS variables used by this component:
 
 ### Fill values
 
-To display fill values with the status indicator i.e 'critical,negative,positive', add the \
+To display fill values with the status indicator i.e 'critical,negative,positive', add the `fd-status-indicator--negative`
+modifier class together with the `fd-status-indicator` class.
 
 ```html
 <div  class="example-container">
@@ -448,7 +452,8 @@ To display fill values with the status indicator i.e 'critical,negative,positive
 
 ### Status Indicator With Label
 
-To display label values with the Status indicator i.e label and indicator image, add the \
+To display label values with the Status indicator i.e label and indicator image, add the `fd-status-indicator--lg__text ` and `fd-status-indicator--positive__text `
+modifier class for defining the font size and colour of the Label together with the `fd-status-indicator--htext` for horizontal positioning of the label.
 
 ```html
 <div class="example-container">
@@ -587,7 +592,7 @@ To display label values with the Status indicator i.e label and indicator image,
 
 ### Status Indicator With Linear filling
 
-To display Linear filling from left to right instead default bottom to top approach type of the status indicator Object, The object can be filled based on changing the value of  \
+To display Linear filling from left to right instead default bottom to top approach type of the status indicator Object, The object can be filled based on changing the value of  `<linearGradient>` property  `x1,Y1,x2,y2`. Filling can be done either clockwise or counterclockwise.
 
 ```html
 <div class="example-container">
@@ -834,11 +839,12 @@ Example to demonstrate the order dispatch from the manufacturing unit
             </svg>
         </svg>
     </div>
+</div>
 ```
 
 ### Status Indicator With Radial filling
 
-To display Radial filling instead of default bottom to top approach type of status indicator Object, The object can be filled based on changing the value of  \
+To display Radial filling instead of default bottom to top approach type of status indicator Object, The object can be filled based on changing the value of  `<radialGradient>` property  `cx,cy,r,fx,fy`. Filling can be done either clockwise or counterclockwise.
 
 ```html
 <div class="example-container">
@@ -912,7 +918,7 @@ To display Radial filling instead of default bottom to top approach type of stat
 
 ### Status Indicator With Angular filling
 
-To display Angular filling instead of default bottom to top approach type of status indicator Object, The object can be filled based on changing the value of  \
+To display Angular filling instead of default bottom to top approach type of status indicator Object, The object can be filled based on changing the value of  `<linearGradient>` property  `x1,Y1,x2,y2`. Filling can be done either clockwise or counterclockwise.
 
 ```html
 <div class="example-container">

@@ -241,19 +241,59 @@ npm install fundamental-styles
 
 | Class | Description |
 |-------|-------------|
-| `fd-rating-indicator--compact` | Style variant |
-| `fd-rating-indicator--condensed` | Style variant |
-| `fd-rating-indicator--display-mode` | Style variant |
-| `fd-rating-indicator--half-star` | Style variant |
+| `fd-rating-indicator--compact` | | **Size**       | **rem**    | **Modifier class**        |
+| :----------    | :--------- | -----------------------:  |
+| Extra small    | 0.75rem    | `--xs`         |
+| Small          | 1rem       | `--sm`         |
+| Medium/Default | 1.375rem   | _n/a_                     |
+| Large          | 2rem       | `--lg`         |
+| Cozy           | 1.5rem     | `--cozy`       |
+| Compact        | 1rem       | `--compact`    |
+| Condensed      | 1rem       | `--condensed`  | |
+| `fd-rating-indicator--condensed` | | **Size**       | **rem**    | **Modifier class**        |
+| :----------    | :--------- | -----------------------:  |
+| Extra small    | 0.75rem    | `--xs`         |
+| Small          | 1rem       | `--sm`         |
+| Medium/Default | 1.375rem   | _n/a_                     |
+| Large          | 2rem       | `--lg`         |
+| Cozy           | 1.5rem     | `--cozy`       |
+| Compact        | 1rem       | `--compact`    |
+| Condensed      | 1rem       | `--condensed`  | |
+| `fd-rating-indicator--display-mode` | Data can be presented as label-value field pairs without editable fields in display-only forms, see <a href="../?path=/docs/components-forms-form-grid--s-size">Form Grid</a> for more details |
+| `fd-rating-indicator--half-star` | To display half values with the rating indicator i.e 2.5 stars, add the `fd-rating-indicator--half-star`
+modifier class together with the `fd-rating-indicator` class. |
 | `fd-rating-indicator--hide-dynamic-text` | Style variant |
-| `fd-rating-indicator--icon` | To make the rating indicator to use custom icons needs to be added class \ |
-| `fd-rating-indicator--lg` | Style variant |
+| `fd-rating-indicator--icon` | To make the rating indicator to use custom icons needs to be added class `.fd-rating-indicator--icon`
+to the `fd-rating-indicator` element |
+| `fd-rating-indicator--lg` | | **Size**       | **rem**    | **Modifier class**        |
+| :----------    | :--------- | -----------------------:  |
+| Extra small    | 0.75rem    | `--xs`         |
+| Small          | 1rem       | `--sm`         |
+| Medium/Default | 1.375rem   | _n/a_                     |
+| Large          | 2rem       | `--lg`         |
+| Cozy           | 1.5rem     | `--cozy`       |
+| Compact        | 1rem       | `--compact`    |
+| Condensed      | 1rem       | `--condensed`  | |
 | `fd-rating-indicator--non-interactive` | If you want to include a rating indicator in a display-only form,
-add the \ |
+add the `.fd-rating-indicator--non-interactive` class to the `fd-rating-indicator` element. |
 | `fd-rating-indicator--sm` | | **Size**       | **rem**    | **Modifier class**        |
 | :----------    | :--------- | -----------------------:  |
-| Extra small    | 0.75rem    | \ |
-| `fd-rating-indicator--xs` | Style variant |
+| Extra small    | 0.75rem    | `--xs`         |
+| Small          | 1rem       | `--sm`         |
+| Medium/Default | 1.375rem   | _n/a_                     |
+| Large          | 2rem       | `--lg`         |
+| Cozy           | 1.5rem     | `--cozy`       |
+| Compact        | 1rem       | `--compact`    |
+| Condensed      | 1rem       | `--condensed`  | |
+| `fd-rating-indicator--xs` | | **Size**       | **rem**    | **Modifier class**        |
+| :----------    | :--------- | -----------------------:  |
+| Extra small    | 0.75rem    | `--xs`         |
+| Small          | 1rem       | `--sm`         |
+| Medium/Default | 1.375rem   | _n/a_                     |
+| Large          | 2rem       | `--lg`         |
+| Cozy           | 1.5rem     | `--cozy`       |
+| Compact        | 1rem       | `--compact`    |
+| Condensed      | 1rem       | `--condensed`  | |
 
 ## BEM Elements
 
@@ -303,7 +343,13 @@ Key CSS variables used by this component:
 
 | **Size**       | **rem**    | **Modifier class**        |
 | :----------    | :--------- | -----------------------:  |
-| Extra small    | 0.75rem    | \
+| Extra small    | 0.75rem    | `--xs`         |
+| Small          | 1rem       | `--sm`         |
+| Medium/Default | 1.375rem   | _n/a_                     |
+| Large          | 2rem       | `--lg`         |
+| Cozy           | 1.5rem     | `--cozy`       |
+| Compact        | 1rem       | `--compact`    |
+| Condensed      | 1rem       | `--condensed`  |
 
 ```html
 <div class="example-container">
@@ -493,7 +539,9 @@ Key CSS variables used by this component:
 
 ### Custom icons
 
-To make the rating indicator to use custom icons needs to be added class \
+To make the rating indicator to use custom icons needs to be added class `.fd-rating-indicator--icon`
+to the `fd-rating-indicator` element.
+Also, you need to set the icon class that will implement the icon
 
 ```html
 <div class="example-container">
@@ -539,7 +587,8 @@ To make the rating indicator to use custom icons needs to be added class \
 
 ### Half values
 
-To display half values with the rating indicator i.e 2.5 stars, add the \
+To display half values with the rating indicator i.e 2.5 stars, add the `fd-rating-indicator--half-star`
+modifier class together with the `fd-rating-indicator` class.
 
 ```html
 <div class="example-container">
@@ -728,7 +777,12 @@ To display half values with the rating indicator i.e 2.5 stars, add the \
 
 ### Disabled
 
-To disable rating indicator, the \
+To disable rating indicator, the `[disabled]` attribute needs to be added to all inputs.
+Additionally, one of the selectors listed below needs to be added to the `fd-rating-indicator` element:
+
+- `.is-disabled`
+- `aria-disabled="true"`
+- `[disabled]`
 
 ```html
 <div class="example-container">
@@ -940,7 +994,7 @@ To disable rating indicator, the \
 ### Display mode
 
 Data can be presented as label-value field pairs without editable fields in display-only forms, see <a href="../?path=/docs/components-forms-form-grid--s-size">Form Grid</a> for more details.
-If you want to include a rating indicator in a display-only form, add the \
+If you want to include a rating indicator in a display-only form, add the `.fd-rating-indicator--display-mode` to the `fd-rating-indicator` element.
 
 ```html
 <div class="example-container">
@@ -1152,7 +1206,7 @@ If you want to include a rating indicator in a display-only form, add the \
 ### Non-interactive
 
 If you want to include a rating indicator in a display-only form,
-add the \
+add the `.fd-rating-indicator--non-interactive` class to the `fd-rating-indicator` element.
 
 ```html
 <div class="example-container">

@@ -58,9 +58,8 @@ npm install fundamental-styles
 |-------|-------------|
 | `fd-text--hyphenation` | The text component can display words that are broken at appropriate hyphenation
 points in a text block |
-| `fd-text--max-lines` | Along with max lines, text component can display "More" and "Less" links that can show
-more or less of the text. |
-| `fd-text--pre-wrap` | Style variant |
+| `fd-text--max-lines` | The text component can be displayed with a maximum number of lines |
+| `fd-text--pre-wrap` | The text component has a property that allows browsers to render specified indents and whitespace |
 
 ## BEM Elements
 
@@ -106,7 +105,7 @@ The default text component can display lines of text that wrap to the next line 
 
 ### Whitespace
 
-The text component has a property that allows browsers to render specified indents and whitespace. To display indents and/or whitespace, add a \
+The text component has a property that allows browsers to render specified indents and whitespace. To display indents and/or whitespace, add a `fd-text--pre-wrap` modifier class to the main element.
 
 ```html
 <h3>No indents or whitespace</h3>
@@ -131,7 +130,12 @@ The text component has a property that allows browsers to render specified inden
 
 The text component can be displayed with a maximum number of lines.
 When the maximum is reached, the text truncates and displays an ellipsis. To display text with a maximum line count,
-add the \
+add the `fd-text--max-lines` modifier class and an inline style rule with the number of
+lines to the main element. For example, add `style="-webkit-line-clamp: 3;"` to display
+three lines of text.
+
+**Note**: The property `-webkit-line-clamp` doesn't work in IE11 and should be changed
+to `height`. For example, `style="height: 200px;"`.
 
 ```html
 <h3>No max lines rule</h3>
@@ -218,7 +222,18 @@ more or less of the text.
 ### Hyphenation
 
 The text component can display words that are broken at appropriate hyphenation
-points in a text block. To display hyphens, add the \
+points in a text block. To display hyphens, add the `fd-text--hyphenation` to the main element.
+
+**It is also possible to suggest line break opportunities with two Unicode characters that manually specify
+potential line breakpoints:**
+
+- Hyphen: The "hard" hyphen character indicates a visible line break opportunity.
+Even if the line is not actually broken at that point, the hyphen is still displayed.
+
+- Shy: An invisible, "soft" hyphen. Although this character is not visible, it marks a place
+where the browser should break the word if hyphenation is necessary.
+
+In HTML, add the `&shy;` Unicode to insert a soft hyphen.
 
 ```html
 <div class="example-container">

@@ -133,7 +133,7 @@ npm install fundamental-styles
 |-------|-------------|
 | `fd-tokenizer--display` | Style variant |
 | `fd-tokenizer--readonly` | Style variant |
-| `fd-tokenizer--scrollable` | The tokenizer can be scrollable by adding the \ |
+| `fd-tokenizer--scrollable` | The tokenizer can be scrollable by adding the `fd-tokenizer--scrollable` modifier class to the main element |
 
 ## States
 
@@ -264,7 +264,7 @@ Key CSS variables used by this component:
 
 <section class="docs-tokenizer">
     <div>
-        <div>Readonly Mode:</div>
+        Readonly Mode:
         <div class="fd-tokenizer fd-tokenizer--readonly">
             <div class="fd-tokenizer__inner">
                 <span class="fd-token fd-token--readonly" role="button" tabindex="0">
@@ -287,7 +287,7 @@ Key CSS variables used by this component:
         </div>
     </div>
     <div>
-        <div>Display-only Mode:</div>
+        Display-only Mode:
         <div class="fd-tokenizer fd-tokenizer--display">
             <div class="fd-tokenizer__inner">
                 <span class="fd-token fd-token--display" role="presentation" tabindex="0">
@@ -314,7 +314,7 @@ Key CSS variables used by this component:
 
 ### Scrollable tokenizer
 
-The tokenizer can be scrollable by adding the \
+The tokenizer can be scrollable by adding the `fd-tokenizer--scrollable` modifier class to the main element. The user can view the tokens by pressing the `Tab` key, then `Shift + Tab` to jump to the next one.
 
 ```html
 <div class="fd-tokenizer fd-tokenizer--scrollable">

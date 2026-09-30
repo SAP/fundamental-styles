@@ -2,8 +2,8 @@
 component: typography
 title: Typography
 category: typography
-selector: 
-cssFile: 
+selector:
+cssFile:
 sourcePath: packages/common-css/stories/typography/typography.stories.js
 tags: []
 dependencies: []

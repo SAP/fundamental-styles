@@ -2,8 +2,8 @@
 component: elevation
 title: Elevation
 category: elevation
-selector: 
-cssFile: 
+selector:
+cssFile:
 sourcePath: packages/common-css/stories/elevation/elevation.stories.js
 tags: []
 dependencies: []

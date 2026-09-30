@@ -188,7 +188,7 @@ npm install fundamental-styles
 </div>
 
 <br><br>
-  
+
 <div class="fd-form-item fd-form-item--horizontal">
     <label class="fd-form-label" for="input-horizontal">Department</label>
     <input class="fd-input" type="text" id="input-horizontal" placeholder="e.g., Marketing">
@@ -370,7 +370,7 @@ The standard input component can be displayed by using `fd-input` class
 </div>
 
 <br><br>
-  
+
 <div class="fd-form-item fd-form-item--horizontal">
     <label class="fd-form-label" for="input-horizontal">Department</label>
     <input class="fd-input" type="text" id="input-horizontal" placeholder="e.g., Marketing">
@@ -398,9 +398,9 @@ The standard input component can be displayed by using `fd-input` class
       autocomplete="off"
     >
   </div>
-  
+
   <br><br>
-  
+
   <!-- Success Input with Message -->
   <div class="fd-form-item">
     <label class="fd-form-label" for="input-success-field">Email Address</label>
@@ -421,9 +421,9 @@ The standard input component can be displayed by using `fd-input` class
       </div>
     </div>
   </div>
-  
+
   <br><br><br><br>
-  
+
   <!-- Error Input with Message -->
   <div class="fd-form-item">
     <label class="fd-form-label" for="input-error-field">Username</label>
@@ -446,9 +446,9 @@ The standard input component can be displayed by using `fd-input` class
     </div>
   </div>
 
-  
+
   <br><br><br><br>
-  
+
   <!-- Warning Input with Message -->
   <div class="fd-form-item">
     <label class="fd-form-label" for="input-warning-field">Security Answer</label>
@@ -470,7 +470,7 @@ The standard input component can be displayed by using `fd-input` class
     </div>
   </div>
   <br><br><br><br>
-  
+
   <!-- Information Input with Message -->
   <div class="fd-form-item">
     <label class="fd-form-label" for="input-info-field">Additional Notes</label>
@@ -491,9 +491,9 @@ The standard input component can be displayed by using `fd-input` class
       </div>
     </div>
   </div>
-  
+
   <br><br><br><br>
-  
+
   <!-- Disabled Input -->
   <div class="fd-form-item">
     <label class="fd-form-label fd-form-label--disabled" for="input-disabled-field" aria-disabled="true">Organization</label>
@@ -507,9 +507,9 @@ The standard input component can be displayed by using `fd-input` class
       disabled
     >
   </div>
-  
+
   <br><br>
-  
+
   <!-- Read-Only Input -->
   <div class="fd-form-item">
     <label class="fd-form-label" for="input-readonly-field">Country</label>

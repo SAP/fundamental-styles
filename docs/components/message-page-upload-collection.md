@@ -32,7 +32,20 @@ The upload collection is essentially a byline list with a few additional element
 
 | Modifier/Class | Description |
 | :--------------- | :--------------- |
-| \
+| `fd-upload-collection` | Applied on `fd-list` level. |
+| `fd-upload-collection--sm` | A modifier class applied when the item is less than 30rem. |
+| `fd-upload-collection__item` | Item container for the upload collection. |
+| `fd-upload-collection__thumbnail` | Modifier class for the thumbnail. |
+| `fd-upload-collection__title-container` | Container for the list title. Used when title has additional items such as Object Marker. |
+| `fd-upload-collection__title` | Modifier class for the list title. |
+| `fd-upload-collection__description` | Description element for the upload collection. |
+| `fd-upload-collection__text-separator` | Bullet point text separator for statuses and descriptions. |
+| `fd-upload-collection__status-group` | Status group container for the upload collection. |
+| `fd-upload-collection__status-group-item` | Status group item for the upload collection. |
+| `fd-upload-collection__status-group-item-text` | Status group item text for the upload collection. |
+| `fd-upload-collection__button-group` | Container for the edit/delete/Ok/Cancel buttons. |
+| `fd-upload-collection__form-item` | Form item element. |
+`fd-upload-collection__extension` | File extension element for the upload collection.
 
 ## Usage Guidelines
 
@@ -650,13 +663,13 @@ Use a message page component when the user has yet to upload any files.
     <div class="fd-message-page__container">
         <div class="fd-message-page__icon-container">
             <i role="presentation" class="sap-icon--attachment fd-message-page__icon"></i>
-            <div role="status" aria-live="polite" class="fd-message-page__content">
-                <div class="fd-message-page__title">
-                    No files found.
-                </div>
-                <div class="fd-message-page__subtitle">
-                    Drop files to upload, or use the "+" button.
-                </div>
+        </div>
+        <div role="status" aria-live="polite" class="fd-message-page__content">
+            <div class="fd-message-page__title">
+                No files found.
+            </div>
+            <div class="fd-message-page__subtitle">
+                Drop files to upload, or use the "+" button.
             </div>
         </div>
     </div>
@@ -665,7 +678,7 @@ Use a message page component when the user has yet to upload any files.
 
 ### Long text
 
-Upload collection file names truncate long text by default. Add the \
+Upload collection file names truncate long text by default. Add the `fd-list--wrap` modifier class to the `fd-list` element to enable file name text wrapping.
 
 ```html
 <div>
@@ -683,103 +696,103 @@ Upload collection file names truncate long text by default. Add the \
                     Uploaded by John Smith on behalf of Finance Department
                     <span class="fd-upload-collection__text-separator"> </span>
                     Version 3.2
-                    <div class="fd-upload-collection__status-group">
-                        <span class="fd-object-status fd-upload-collection__status-group-item fd-object-status--positive">
-                            <span class="fd-object-status__text fd-upload-collection__status-group-item-text">Upload complete – available for download</span>
-                        </span>
-                    </div>
                 </div>
-                <div class="fd-upload-collection__button-group">
-                    <button aria-label="Edit" class="fd-button fd-button--transparent"><i class="sap-icon--edit"></i></button>
-                    <button aria-label="Delete" class="fd-button fd-button--transparent"><i class="sap-icon--decline"></i></button>
+                <div class="fd-upload-collection__status-group">
+                    <span class="fd-object-status fd-upload-collection__status-group-item fd-object-status--positive">
+                        <span class="fd-object-status__text fd-upload-collection__status-group-item-text">Upload complete – available for download</span>
+                    </span>
                 </div>
-            </li>
-            <li role="listitem" tabindex="0" class="fd-list__item fd-upload-collection__item">
-                <span class="fd-list__thumbnail fd-upload-collection__thumbnail">
-                    <i role="presentation" class="sap-icon--excel-attachment"></i>
-                </span>
-                <div class="fd-list__content">
-                    <div class="fd-upload-collection__title-container">
-                        <a href="#" class="fd-list__title fd-link fd-upload-collection__title">
-                            Customer_Data_Export_EMEA_Region_December_2024_Unprocessed_Raw.xlsx
-                        </a>
-                        <div class="fd-object-marker">
-                            <i class="fd-object-marker__icon sap-icon--request" aria-label="icon for request" role="img"></i>
-                        </div>
-                    </div>
-                    <div class="fd-upload-collection__description">
-                        Exported from Customer Intelligence Platform by Sarah Johnson
-                    </div>
-                    <div class="fd-upload-collection__status-group">
-                        <span class="fd-object-status fd-upload-collection__status-group-item fd-object-status--negative">
-                            <span class="fd-object-status__text fd-upload-collection__status-group-item-text">Virus scan failed – file quarantined pending review</span>
-                        </span>
-                    </div>
-                </div>
-                <div class="fd-upload-collection__button-group">
-                    <button aria-label="Edit" class="fd-button fd-button--transparent"><i class="sap-icon--edit"></i></button>
-                    <button aria-label="Delete" class="fd-button fd-button--transparent"><i class="sap-icon--decline"></i></button>
-                </div>
-            </li>
-        </ul>
-    </div>
-
-    <div>
-        <p>With <code>fd-list--wrap</code></p>
-        <ul class="fd-list fd-list--byline fd-list--wrap fd-upload-collection" role="list">
-            <li role="listitem" tabindex="0" class="fd-list__item fd-upload-collection__item">
-                <span class="fd-list__thumbnail fd-upload-collection__thumbnail">
-                    <i role="presentation" class="sap-icon--pdf-attachment"></i>
-                </span>
-                <div class="fd-list__content">
+            </div>
+            <div class="fd-upload-collection__button-group">
+                <button aria-label="Edit" class="fd-button fd-button--transparent"><i class="sap-icon--edit"></i></button>
+                <button aria-label="Delete" class="fd-button fd-button--transparent"><i class="sap-icon--decline"></i></button>
+            </div>
+        </li>
+        <li role="listitem" tabindex="0" class="fd-list__item fd-upload-collection__item">
+            <span class="fd-list__thumbnail fd-upload-collection__thumbnail">
+                <i role="presentation" class="sap-icon--excel-attachment"></i>
+            </span>
+            <div class="fd-list__content">
+                <div class="fd-upload-collection__title-container">
                     <a href="#" class="fd-list__title fd-link fd-upload-collection__title">
-                        Annual_Financial_Report_Q4_2024_Consolidated_Version_Final_Approved.pdf
+                        Customer_Data_Export_EMEA_Region_December_2024_Unprocessed_Raw.xlsx
                     </a>
-                    <div class="fd-upload-collection__description">
-                        Uploaded by John Smith on behalf of Finance Department
-                        <span class="fd-upload-collection__text-separator"> </span>
-                        Version 3.2
-                    </div>
-                    <div class="fd-upload-collection__status-group">
-                        <span class="fd-object-status fd-upload-collection__status-group-item fd-object-status--positive">
-                            <span class="fd-object-status__text fd-upload-collection__status-group-item-text">Upload complete – available for download</span>
-                        </span>
+                    <div class="fd-object-marker">
+                        <i class="fd-object-marker__icon sap-icon--request" aria-label="icon for request" role="img"></i>
                     </div>
                 </div>
-                <div class="fd-upload-collection__button-group">
-                    <button aria-label="Edit" class="fd-button fd-button--transparent"><i class="sap-icon--edit"></i></button>
-                    <button aria-label="Delete" class="fd-button fd-button--transparent"><i class="sap-icon--decline"></i></button>
+                <div class="fd-upload-collection__description">
+                    Exported from Customer Intelligence Platform by Sarah Johnson
                 </div>
-            </li>
-            <li role="listitem" tabindex="0" class="fd-list__item fd-upload-collection__item">
-                <span class="fd-list__thumbnail fd-upload-collection__thumbnail">
-                    <i role="presentation" class="sap-icon--excel-attachment"></i>
-                </span>
-                <div class="fd-list__content">
-                    <div class="fd-upload-collection__title-container">
-                        <a href="#" class="fd-list__title fd-link fd-upload-collection__title">
-                            Customer_Data_Export_EMEA_Region_December_2024_Unprocessed_Raw.xlsx
-                        </a>
-                        <div class="fd-object-marker">
-                            <i class="fd-object-marker__icon sap-icon--request" aria-label="icon for request" role="img"></i>
-                        </div>
-                    </div>
-                    <div class="fd-upload-collection__description">
-                        Exported from Customer Intelligence Platform by Sarah Johnson
-                    </div>
-                    <div class="fd-upload-collection__status-group">
-                        <span class="fd-object-status fd-upload-collection__status-group-item fd-object-status--negative">
-                            <span class="fd-object-status__text fd-upload-collection__status-group-item-text">Virus scan failed – file quarantined pending review</span>
-                        </span>
+                <div class="fd-upload-collection__status-group">
+                    <span class="fd-object-status fd-upload-collection__status-group-item fd-object-status--negative">
+                        <span class="fd-object-status__text fd-upload-collection__status-group-item-text">Virus scan failed – file quarantined pending review</span>
+                    </span>
+                </div>
+            </div>
+            <div class="fd-upload-collection__button-group">
+                <button aria-label="Edit" class="fd-button fd-button--transparent"><i class="sap-icon--edit"></i></button>
+                <button aria-label="Delete" class="fd-button fd-button--transparent"><i class="sap-icon--decline"></i></button>
+            </div>
+        </li>
+    </ul>
+</div>
+
+<div>
+    <p>With <code>fd-list--wrap</code></p>
+    <ul class="fd-list fd-list--byline fd-list--wrap fd-upload-collection" role="list">
+        <li role="listitem" tabindex="0" class="fd-list__item fd-upload-collection__item">
+            <span class="fd-list__thumbnail fd-upload-collection__thumbnail">
+                <i role="presentation" class="sap-icon--pdf-attachment"></i>
+            </span>
+            <div class="fd-list__content">
+                <a href="#" class="fd-list__title fd-link fd-upload-collection__title">
+                    Annual_Financial_Report_Q4_2024_Consolidated_Version_Final_Approved.pdf
+                </a>
+                <div class="fd-upload-collection__description">
+                    Uploaded by John Smith on behalf of Finance Department
+                    <span class="fd-upload-collection__text-separator"> </span>
+                    Version 3.2
+                </div>
+                <div class="fd-upload-collection__status-group">
+                    <span class="fd-object-status fd-upload-collection__status-group-item fd-object-status--positive">
+                        <span class="fd-object-status__text fd-upload-collection__status-group-item-text">Upload complete – available for download</span>
+                    </span>
+                </div>
+            </div>
+            <div class="fd-upload-collection__button-group">
+                <button aria-label="Edit" class="fd-button fd-button--transparent"><i class="sap-icon--edit"></i></button>
+                <button aria-label="Delete" class="fd-button fd-button--transparent"><i class="sap-icon--decline"></i></button>
+            </div>
+        </li>
+        <li role="listitem" tabindex="0" class="fd-list__item fd-upload-collection__item">
+            <span class="fd-list__thumbnail fd-upload-collection__thumbnail">
+                <i role="presentation" class="sap-icon--excel-attachment"></i>
+            </span>
+            <div class="fd-list__content">
+                <div class="fd-upload-collection__title-container">
+                    <a href="#" class="fd-list__title fd-link fd-upload-collection__title">
+                        Customer_Data_Export_EMEA_Region_December_2024_Unprocessed_Raw.xlsx
+                    </a>
+                    <div class="fd-object-marker">
+                        <i class="fd-object-marker__icon sap-icon--request" aria-label="icon for request" role="img"></i>
                     </div>
                 </div>
-                <div class="fd-upload-collection__button-group">
-                    <button aria-label="Edit" class="fd-button fd-button--transparent"><i class="sap-icon--edit"></i></button>
-                    <button aria-label="Delete" class="fd-button fd-button--transparent"><i class="sap-icon--decline"></i></button>
+                <div class="fd-upload-collection__description">
+                    Exported from Customer Intelligence Platform by Sarah Johnson
                 </div>
-            </li>
-        </ul>
-    </div>
+                <div class="fd-upload-collection__status-group">
+                    <span class="fd-object-status fd-upload-collection__status-group-item fd-object-status--negative">
+                        <span class="fd-object-status__text fd-upload-collection__status-group-item-text">Virus scan failed – file quarantined pending review</span>
+                    </span>
+                </div>
+            </div>
+            <div class="fd-upload-collection__button-group">
+                <button aria-label="Edit" class="fd-button fd-button--transparent"><i class="sap-icon--edit"></i></button>
+                <button aria-label="Delete" class="fd-button fd-button--transparent"><i class="sap-icon--decline"></i></button>
+            </div>
+        </li>
+    </ul>
 </div>
 ```
 

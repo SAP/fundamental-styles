@@ -1417,7 +1417,8 @@
         "listitem",
         "dialog",
         "list",
-        "group"
+        "group",
+        "img"
       ],
       "requiredAttrs": [
         {
@@ -1454,7 +1455,8 @@
           "purpose": "References controlled element",
           "exampleValues": [
             "popoverHSF3",
-            "popoverHSF5"
+            "popoverHSF5",
+            "msgPopoverWrap"
           ]
         },
         {
@@ -1728,8 +1730,8 @@
     "object-list": {
       "roles": [
         "listitem",
-        "option",
         "list",
+        "option",
         "navigation",
         "listbox"
       ],
@@ -2053,8 +2055,8 @@
           "name": "aria-label",
           "purpose": "Accessible name when no visible text",
           "exampleValues": [
-            "Home Home Home Home Home Home Home Home Central Home Central Home Central Home Central Home",
-            "Home",
+            "SAP Start Central Home",
+            "SAP Start",
             "Analytics Cloud Analytics Cloud Analytics Cloud"
           ],
           "when": "Required when no visible text label"
@@ -2074,8 +2076,9 @@
           "name": "aria-setsize",
           "purpose": "Total items in set",
           "exampleValues": [
-            "14",
-            "5"
+            "20",
+            "5",
+            "14"
           ]
         }
       ],
@@ -2444,10 +2447,15 @@
       "roles": [
         "listitem",
         "list",
+        "img",
         "dialog",
+        "button",
         "tab",
         "tabpanel",
-        "tablist"
+        "tablist",
+        "note",
+        "toolbar",
+        "combobox"
       ],
       "requiredAttrs": [
         {
@@ -2455,6 +2463,14 @@
           "purpose": "Selection state in a list",
           "exampleValues": [
             "true"
+          ],
+          "when": "Required for interactive state"
+        },
+        {
+          "name": "aria-expanded",
+          "purpose": "Indicates expandable state (true/false)",
+          "exampleValues": [
+            "false"
           ],
           "when": "Required for interactive state"
         }
@@ -2484,18 +2500,37 @@
             "input",
             "button"
           ]
+        },
+        {
+          "name": "aria-haspopup",
+          "purpose": "Indicates popup type (menu/listbox/dialog)",
+          "exampleValues": [
+            "true",
+            "listbox"
+          ]
+        },
+        {
+          "name": "aria-roledescription",
+          "purpose": "Custom role description",
+          "exampleValues": [
+            "Contains item list for selection"
+          ]
         }
       ],
       "keyboardSupport": [
         "Escape",
         "Tab",
+        "Enter",
+        "Space",
         "Arrow keys"
       ],
       "focusManagement": "Uses tabindex for focus management",
       "notes": [
         "Uses tabindex=\"-1\" for programmatic focus",
         "Modal dialogs require focus trap",
-        "Use aria-modal=\"true\" for modals"
+        "Use aria-modal=\"true\" for modals",
+        "Requires aria-expanded and aria-haspopup",
+        "Use aria-activedescendant for active option"
       ]
     },
     "shellbar": {
@@ -2564,8 +2599,8 @@
     "side-navigation": {
       "roles": [
         "treeitem",
-        "menuitemradio",
         "group",
+        "menuitemradio",
         "tree",
         "separator",
         "menu",
@@ -3369,9 +3404,9 @@
           "name": "aria-labelledby",
           "purpose": "References visible label element",
           "exampleValues": [
-            "grid1GroupHeader",
-            "grid2GroupHeader",
-            "grid3GroupHeader"
+            "dm-grid1GroupHeader",
+            "dm-grid2GroupHeader",
+            "dm-grid3GroupHeader"
           ]
         }
       ],

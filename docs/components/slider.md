@@ -37,7 +37,18 @@ The slider itself is not responsive. It adjusts to the responsiveness of its par
 
 
 ## Accessibility
-To ensure that both the standard and range sliders are accessible, a div element with class \
+To ensure that both the standard and range sliders are accessible, a div element with class `fd-slider__handle` must have the following aria attributes:
+
+- `tabindex="0"`
+- `role="slider"`
+- `aria-label`: a string that labels the element
+- `aria-labelledby`: an ID reference to a visible element that labels the slider, used if `aria-label` isn't provided
+- `aria-valuemin`: the decimal value representing the minimum allowed value of the slider
+- `aria-valuemax`: the decimal value representing the maximum allowed value of the slider
+- `aria-valuenow`: the decimal value representing the current value of the slider
+- `aria-valuetext`: a string representation of the current value if needed (e.g., 20$, 33°C)
+
+**Note:** It should be possible to change slider's value by pressing the arrow keys.
 
 ## Usage Guidelines
 
@@ -105,7 +116,7 @@ npm install fundamental-styles
 
 | Class | Description |
 |-------|-------------|
-| `fd-slider--lg` | Style variant |
+| `fd-slider--lg` | By default, the slider is not responsive |
 | `fd-slider--range` | The range slider displays a track with two handles, indicating that a range between two values can be selected |
 | `fd-slider--vertical` | By default, the slider is not responsive |
 
@@ -200,7 +211,7 @@ The standard slider displays a track with a handle. When the user hovers over th
 
 ### Range
 
-The range slider displays a track with two handles, indicating that a range between two values can be selected. To display a range slider, add the \
+The range slider displays a track with two handles, indicating that a range between two values can be selected. To display a range slider, add the `fd-slider__track-range` class to the `fd-slider__track` element.
 
 ```html
 <h3>Regular</h3>
@@ -251,7 +262,7 @@ The range slider displays a track with two handles, indicating that a range betw
 
 ### Ticks
 
-The slider can display ticks on the bar to help guide the user. If a tick is in selected range (Active Area), the \
+The slider can display ticks on the bar to help guide the user. If a tick is in selected range (Active Area), the `fd-slider__tick--in-range` modifier class should be applied to the `fd-slider__tick` base class.
 
 ```html
 <div class="slider-container">
@@ -268,7 +279,7 @@ The slider can display ticks on the bar to help guide the user. If a tick is in 
 
 ### Ticks and labels
 
-The slider can display labels that indicate the values of each tick. Labels can be displayed with the \
+The slider can display labels that indicate the values of each tick. Labels can be displayed with the `fd-slider__label` class. Be advised that this styling does not include the positioning of the labels.
 
 ```html
 <div class="slider-container">
@@ -298,7 +309,8 @@ The slider can display labels that indicate the values of each tick. Labels can 
 
 ### Mobile
 
-By default, the slider is not responsive. However, to make the slider more mobile-friendly, you may enlarge the slider handle and its hit area by adding \
+By default, the slider is not responsive. However, to make the slider more mobile-friendly, you may enlarge the slider handle and its hit area by adding `fd-slider__handle--lg` class to `fd-slider__handle` element.
+To add horizontal paddings of `0.8125rem` use the `fd-slider--lg` modifier class
 
 ```html
 <div class="slider-container">
@@ -312,68 +324,71 @@ By default, the slider is not responsive. However, to make the slider more mobil
 
 ### Vertical Slider
 
-By default, the slider is not responsive. However, to make the slider more mobile-friendly, you may enlarge the slider handle and its hit area by adding \
+By default, the slider is not responsive. However, to make the slider more mobile-friendly, you may enlarge the slider handle and its hit area by adding `fd-slider__handle--lg` class to `fd-slider__handle` element.
+To add horizontal paddings of `0.8125rem` use the `fd-slider--lg` modifier class
 
 ```html
 <div>
     <p>Standard vertical slider</p>
+
     <div class="slider-container">
         <div class="fd-slider fd-slider--vertical">
             <div class="fd-slider__inner">
 
             </div>
-            <div class="slider-container">
-                <div class="fd-slider fd-slider--vertical">
-                    <div class="fd-slider__inner">
+        </div>
+    </div>
+    <div class="slider-container">
+        <div class="fd-slider fd-slider--vertical">
+            <div class="fd-slider__inner">
 
-                    </div>
-                </div>
             </div>
-            <div class="slider-container">
-                <div class="fd-slider fd-slider--vertical">
-                    <div class="fd-slider__inner">
+        </div>
+    </div>
+    <div class="slider-container">
+        <div class="fd-slider fd-slider--vertical">
+            <div class="fd-slider__inner">
 
+            </div>
+        </div>
+    </div>
+
+</div>
+<div>
+    <p>Mobile vertical slider with ticks and labels</p>
+    <div class="slider-container">
+        <div class="fd-slider fd-slider--lg fd-slider--vertical">
+            <div class="fd-slider__inner">
+
+                <div class="fd-slider__tick-wrapper">
+
+                    <div class="fd-slider__labels">
+                        <div class="fd-slider__label">0</div>
+                        <div class="fd-slider__label">10</div>
+                        <div class="fd-slider__label">20</div>
+                        <div class="fd-slider__label">30</div>
+                        <div class="fd-slider__label">40</div>
+                        <div class="fd-slider__label">50</div>
+                        <div class="fd-slider__label">60</div>
+                        <div class="fd-slider__label">70</div>
+                        <div class="fd-slider__label">80</div>
+                        <div class="fd-slider__label">90</div>
+                        <div class="fd-slider__label">100</div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <div>
-        <p>Mobile vertical slider with ticks and labels</p>
-        <div class="slider-container">
-            <div class="fd-slider fd-slider--lg fd-slider--vertical">
-                <div class="fd-slider__inner">
-
-                    <div class="fd-slider__tick-wrapper">
-
-                        <div class="fd-slider__labels">
-                            <div class="fd-slider__label">0</div>
-                            <div class="fd-slider__label">10</div>
-                            <div class="fd-slider__label">20</div>
-                            <div class="fd-slider__label">30</div>
-                            <div class="fd-slider__label">40</div>
-                            <div class="fd-slider__label">50</div>
-                            <div class="fd-slider__label">60</div>
-                            <div class="fd-slider__label">70</div>
-                            <div class="fd-slider__label">80</div>
-                            <div class="fd-slider__label">90</div>
-                            <div class="fd-slider__label">100</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div>
-        <p>Range slider</p>
-        <div class="slider-container slider-container--range">
-            <div class="fd-slider fd-slider--range fd-slider--vertical">
-                <div class="fd-slider__inner">
-                    <div class="fd-slider__track">
-
-                    </div>
+</div>
+<div>
+    <p>Range slider</p>
+    <div class="slider-container slider-container--range">
+        <div class="fd-slider fd-slider--range fd-slider--vertical">
+            <div class="fd-slider__inner">
+                <div class="fd-slider__track">
 
                 </div>
+
             </div>
         </div>
     </div>

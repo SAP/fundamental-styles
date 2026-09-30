@@ -122,304 +122,304 @@ npm install fundamental-styles
                 </button>
             </span>
         </div>
-        <div class="fd-popover__body fd-popover__body--no-arrow" aria-hidden="false">
-            <div class="fd-time-picker__dropdown">
-                <div class="fd-time-picker__header">
-                    <div class="fd-time-picker__output">
-                        <button class="fd-button fd-button--toggled">
-                            19
-                        </button>
-                        <span class="fd-time-picker__colon">:</span>
-                        <button class="fd-button" aria-pressed="true">
-                            00
-                        </button>
-                    </div>
+    </div>
+    <div class="fd-popover__body fd-popover__body--no-arrow" aria-hidden="false">
+        <div class="fd-time-picker__dropdown">
+            <div class="fd-time-picker__header">
+                <div class="fd-time-picker__output">
+                    <button class="fd-button fd-button--toggled">
+                        19
+                    </button>
+                    <span class="fd-time-picker__colon">:</span>
+                    <button class="fd-button" aria-pressed="true">
+                        00
+                    </button>
                 </div>
-                <div role="img" aria-label="Clock Dial" class="fd-time-picker__clock-container">
-                    <div aria-hidden="true" class="fd-time-picker__clock fd-time-picker__clock--inner">
+            </div>
+            <div role="img" aria-label="Clock Dial" class="fd-time-picker__clock-container">
+                <div aria-hidden="true" class="fd-time-picker__clock fd-time-picker__clock--inner">
 
-                        <div>
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick"></span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick"></span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick"></span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick"></span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--hour"></span>
-                                <span class="fd-time-picker__number">1</span>
-                                <span class="fd-time-picker__number">13</span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick"></span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick"></span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick"></span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick"></span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--hour"></span>
-                                <span class="fd-time-picker__number">2</span>
-                                <span class="fd-time-picker__number">14</span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick"></span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick"></span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick"></span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick"></span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--hour"></span>
-                                <span class="fd-time-picker__number">3</span>
-                                <span class="fd-time-picker__number">15</span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick"></span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick"></span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick"></span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick"></span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--hour"></span>
-                                <span class="fd-time-picker__number fd-time-picker__number--hover">4</span>
-                                <span class="fd-time-picker__number">16</span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick"></span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick"></span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick"></span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick"></span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--hour"></span>
-                                <span class="fd-time-picker__number">5</span>
-                                <span class="fd-time-picker__number">17</span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick"></span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick"></span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick"></span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick"></span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--hour"></span>
-                                <span class="fd-time-picker__number">6</span>
-                                <span class="fd-time-picker__number">18</span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick"></span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick"></span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick"></span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick"></span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--hour"></span>
-                                <span class="fd-time-picker__number">7</span>
-                                <span class="fd-time-picker__number">19</span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick"></span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick"></span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick"></span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick"></span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--hour"></span>
-                                <span class="fd-time-picker__number">8</span>
-                                <span class="fd-time-picker__number">20</span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick"></span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick"></span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick"></span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick"></span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--hour"></span>
-                                <span class="fd-time-picker__number">9</span>
-                                <span class="fd-time-picker__number">21</span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick"></span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick"></span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick"></span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick"></span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--hour"></span>
-                                <span class="fd-time-picker__number">10</span>
-                                <span class="fd-time-picker__number">22</span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick"></span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick"></span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick"></span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick"></span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--hour"></span>
-                                <span class="fd-time-picker__number">11</span>
-                                <span class="fd-time-picker__number">23</span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick"></span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick"></span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick"></span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick"></span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--hour"></span>
-                                <span class="fd-time-picker__number">12</span>
-                                <span class="fd-time-picker__number">00</span>
-                            </div>
+                    <div>
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick"></span>
                         </div>
 
                         <div class="fd-time-picker__item">
-
-                            <div class="fd-time-picker__number fd-time-picker__number--selected">19</div>
+                            <span class="fd-time-picker__tick"></span>
                         </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick"></span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick"></span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick fd-time-picker__tick--hour"></span>
+                            <span class="fd-time-picker__number">1</span>
+                            <span class="fd-time-picker__number">13</span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick"></span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick"></span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick"></span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick"></span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick fd-time-picker__tick--hour"></span>
+                            <span class="fd-time-picker__number">2</span>
+                            <span class="fd-time-picker__number">14</span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick"></span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick"></span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick"></span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick"></span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick fd-time-picker__tick--hour"></span>
+                            <span class="fd-time-picker__number">3</span>
+                            <span class="fd-time-picker__number">15</span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick"></span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick"></span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick"></span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick"></span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick fd-time-picker__tick--hour"></span>
+                            <span class="fd-time-picker__number fd-time-picker__number--hover">4</span>
+                            <span class="fd-time-picker__number">16</span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick"></span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick"></span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick"></span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick"></span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick fd-time-picker__tick--hour"></span>
+                            <span class="fd-time-picker__number">5</span>
+                            <span class="fd-time-picker__number">17</span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick"></span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick"></span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick"></span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick"></span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick fd-time-picker__tick--hour"></span>
+                            <span class="fd-time-picker__number">6</span>
+                            <span class="fd-time-picker__number">18</span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick"></span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick"></span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick"></span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick"></span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick fd-time-picker__tick--hour"></span>
+                            <span class="fd-time-picker__number">7</span>
+                            <span class="fd-time-picker__number">19</span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick"></span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick"></span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick"></span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick"></span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick fd-time-picker__tick--hour"></span>
+                            <span class="fd-time-picker__number">8</span>
+                            <span class="fd-time-picker__number">20</span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick"></span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick"></span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick"></span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick"></span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick fd-time-picker__tick--hour"></span>
+                            <span class="fd-time-picker__number">9</span>
+                            <span class="fd-time-picker__number">21</span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick"></span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick"></span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick"></span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick"></span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick fd-time-picker__tick--hour"></span>
+                            <span class="fd-time-picker__number">10</span>
+                            <span class="fd-time-picker__number">22</span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick"></span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick"></span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick"></span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick"></span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick fd-time-picker__tick--hour"></span>
+                            <span class="fd-time-picker__number">11</span>
+                            <span class="fd-time-picker__number">23</span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick"></span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick"></span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick"></span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick"></span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick fd-time-picker__tick--hour"></span>
+                            <span class="fd-time-picker__number">12</span>
+                            <span class="fd-time-picker__number">00</span>
+                        </div>
+                    </div>
+
+                    <div class="fd-time-picker__item">
+
+                        <div class="fd-time-picker__number fd-time-picker__number--selected">19</div>
                     </div>
                 </div>
             </div>
-            <div class="fd-popover__body-footer">
-                <div class="fd-bar fd-bar--footer">
-                    <div class="fd-bar__right">
-                        <div class="fd-bar__element">
-                            <button class="fd-button fd-button--decisive fd-button--emphasized">Ok</button>
-                        </div>
-                        <div class="fd-bar__element">
-                            <button class="fd-button fd-button--decisive fd-button--transparent">Cancel</button>
-                        </div>
+        </div>
+        <div class="fd-popover__body-footer">
+            <div class="fd-bar fd-bar--footer">
+                <div class="fd-bar__right">
+                    <div class="fd-bar__element">
+                        <button class="fd-button fd-button--decisive fd-button--emphasized">Ok</button>
+                    </div>
+                    <div class="fd-bar__element">
+                        <button class="fd-button fd-button--decisive fd-button--transparent">Cancel</button>
                     </div>
                 </div>
             </div>
@@ -502,304 +502,304 @@ The 24-hour clock face shows an additional inner circle for the times from 13:00
                 </button>
             </span>
         </div>
-        <div class="fd-popover__body fd-popover__body--no-arrow" aria-hidden="false">
-            <div class="fd-time-picker__dropdown">
-                <div class="fd-time-picker__header">
-                    <div class="fd-time-picker__output">
-                        <button class="fd-button fd-button--toggled">
-                            19
-                        </button>
-                        <span class="fd-time-picker__colon">:</span>
-                        <button class="fd-button" aria-pressed="true">
-                            00
-                        </button>
-                    </div>
+    </div>
+    <div class="fd-popover__body fd-popover__body--no-arrow" aria-hidden="false">
+        <div class="fd-time-picker__dropdown">
+            <div class="fd-time-picker__header">
+                <div class="fd-time-picker__output">
+                    <button class="fd-button fd-button--toggled">
+                        19
+                    </button>
+                    <span class="fd-time-picker__colon">:</span>
+                    <button class="fd-button" aria-pressed="true">
+                        00
+                    </button>
                 </div>
-                <div role="img" aria-label="Clock Dial" class="fd-time-picker__clock-container">
-                    <div aria-hidden="true" class="fd-time-picker__clock fd-time-picker__clock--inner">
+            </div>
+            <div role="img" aria-label="Clock Dial" class="fd-time-picker__clock-container">
+                <div aria-hidden="true" class="fd-time-picker__clock fd-time-picker__clock--inner">
 
-                        <div>
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick"></span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick"></span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick"></span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick"></span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--hour"></span>
-                                <span class="fd-time-picker__number">1</span>
-                                <span class="fd-time-picker__number">13</span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick"></span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick"></span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick"></span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick"></span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--hour"></span>
-                                <span class="fd-time-picker__number">2</span>
-                                <span class="fd-time-picker__number">14</span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick"></span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick"></span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick"></span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick"></span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--hour"></span>
-                                <span class="fd-time-picker__number">3</span>
-                                <span class="fd-time-picker__number">15</span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick"></span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick"></span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick"></span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick"></span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--hour"></span>
-                                <span class="fd-time-picker__number fd-time-picker__number--hover">4</span>
-                                <span class="fd-time-picker__number">16</span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick"></span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick"></span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick"></span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick"></span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--hour"></span>
-                                <span class="fd-time-picker__number">5</span>
-                                <span class="fd-time-picker__number">17</span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick"></span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick"></span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick"></span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick"></span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--hour"></span>
-                                <span class="fd-time-picker__number">6</span>
-                                <span class="fd-time-picker__number">18</span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick"></span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick"></span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick"></span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick"></span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--hour"></span>
-                                <span class="fd-time-picker__number">7</span>
-                                <span class="fd-time-picker__number">19</span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick"></span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick"></span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick"></span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick"></span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--hour"></span>
-                                <span class="fd-time-picker__number">8</span>
-                                <span class="fd-time-picker__number">20</span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick"></span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick"></span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick"></span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick"></span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--hour"></span>
-                                <span class="fd-time-picker__number">9</span>
-                                <span class="fd-time-picker__number">21</span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick"></span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick"></span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick"></span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick"></span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--hour"></span>
-                                <span class="fd-time-picker__number">10</span>
-                                <span class="fd-time-picker__number">22</span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick"></span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick"></span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick"></span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick"></span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--hour"></span>
-                                <span class="fd-time-picker__number">11</span>
-                                <span class="fd-time-picker__number">23</span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick"></span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick"></span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick"></span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick"></span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--hour"></span>
-                                <span class="fd-time-picker__number">12</span>
-                                <span class="fd-time-picker__number">00</span>
-                            </div>
+                    <div>
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick"></span>
                         </div>
 
                         <div class="fd-time-picker__item">
-
-                            <div class="fd-time-picker__number fd-time-picker__number--selected">19</div>
+                            <span class="fd-time-picker__tick"></span>
                         </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick"></span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick"></span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick fd-time-picker__tick--hour"></span>
+                            <span class="fd-time-picker__number">1</span>
+                            <span class="fd-time-picker__number">13</span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick"></span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick"></span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick"></span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick"></span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick fd-time-picker__tick--hour"></span>
+                            <span class="fd-time-picker__number">2</span>
+                            <span class="fd-time-picker__number">14</span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick"></span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick"></span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick"></span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick"></span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick fd-time-picker__tick--hour"></span>
+                            <span class="fd-time-picker__number">3</span>
+                            <span class="fd-time-picker__number">15</span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick"></span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick"></span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick"></span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick"></span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick fd-time-picker__tick--hour"></span>
+                            <span class="fd-time-picker__number fd-time-picker__number--hover">4</span>
+                            <span class="fd-time-picker__number">16</span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick"></span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick"></span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick"></span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick"></span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick fd-time-picker__tick--hour"></span>
+                            <span class="fd-time-picker__number">5</span>
+                            <span class="fd-time-picker__number">17</span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick"></span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick"></span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick"></span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick"></span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick fd-time-picker__tick--hour"></span>
+                            <span class="fd-time-picker__number">6</span>
+                            <span class="fd-time-picker__number">18</span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick"></span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick"></span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick"></span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick"></span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick fd-time-picker__tick--hour"></span>
+                            <span class="fd-time-picker__number">7</span>
+                            <span class="fd-time-picker__number">19</span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick"></span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick"></span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick"></span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick"></span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick fd-time-picker__tick--hour"></span>
+                            <span class="fd-time-picker__number">8</span>
+                            <span class="fd-time-picker__number">20</span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick"></span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick"></span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick"></span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick"></span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick fd-time-picker__tick--hour"></span>
+                            <span class="fd-time-picker__number">9</span>
+                            <span class="fd-time-picker__number">21</span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick"></span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick"></span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick"></span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick"></span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick fd-time-picker__tick--hour"></span>
+                            <span class="fd-time-picker__number">10</span>
+                            <span class="fd-time-picker__number">22</span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick"></span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick"></span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick"></span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick"></span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick fd-time-picker__tick--hour"></span>
+                            <span class="fd-time-picker__number">11</span>
+                            <span class="fd-time-picker__number">23</span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick"></span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick"></span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick"></span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick"></span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick fd-time-picker__tick--hour"></span>
+                            <span class="fd-time-picker__number">12</span>
+                            <span class="fd-time-picker__number">00</span>
+                        </div>
+                    </div>
+
+                    <div class="fd-time-picker__item">
+
+                        <div class="fd-time-picker__number fd-time-picker__number--selected">19</div>
                     </div>
                 </div>
             </div>
-            <div class="fd-popover__body-footer">
-                <div class="fd-bar fd-bar--footer">
-                    <div class="fd-bar__right">
-                        <div class="fd-bar__element">
-                            <button class="fd-button fd-button--decisive fd-button--emphasized">Ok</button>
-                        </div>
-                        <div class="fd-bar__element">
-                            <button class="fd-button fd-button--decisive fd-button--transparent">Cancel</button>
-                        </div>
+        </div>
+        <div class="fd-popover__body-footer">
+            <div class="fd-bar fd-bar--footer">
+                <div class="fd-bar__right">
+                    <div class="fd-bar__element">
+                        <button class="fd-button fd-button--decisive fd-button--emphasized">Ok</button>
+                    </div>
+                    <div class="fd-bar__element">
+                        <button class="fd-button fd-button--decisive fd-button--transparent">Cancel</button>
                     </div>
                 </div>
             </div>
@@ -823,303 +823,303 @@ The 12-hour clock face shows only one circle and an AM/PM switch is displayed.
                 </button>
             </span>
         </div>
-        <div class="fd-popover__body fd-popover__body--no-arrow" aria-hidden="false">
-            <div class="fd-time-picker__dropdown">
-                <div class="fd-time-picker__header">
-                    <div class="fd-time-picker__output">
-                        <button class="fd-button fd-button--toggled">
-                            07
-                        </button>
-                        <span class="fd-time-picker__colon">:</span>
-                        <button class="fd-button" aria-pressed="true">
-                            00
-                        </button>
-                    </div>
-                    <div class="fd-segmented-button" role="group" aria-label="Group label">
-                        <button aria-label="AM" class="fd-button">
-                            AM
-                        </button>
-                        <button aria-label="PM" class="fd-button fd-button--toggled" aria-pressed="true">
-                            PM
-                        </button>
-                    </div>
-                    <button class="fd-button fd-button--transparent" aria-label="Time Now">
-                        <i class="sap-icon--present"></i>
+    </div>
+    <div class="fd-popover__body fd-popover__body--no-arrow" aria-hidden="false">
+        <div class="fd-time-picker__dropdown">
+            <div class="fd-time-picker__header">
+                <div class="fd-time-picker__output">
+                    <button class="fd-button fd-button--toggled">
+                        07
+                    </button>
+                    <span class="fd-time-picker__colon">:</span>
+                    <button class="fd-button" aria-pressed="true">
+                        00
                     </button>
                 </div>
-                <div role="img" aria-label="Clock Dial" class="fd-time-picker__clock-container">
-                    <div aria-hidden="true" class="fd-time-picker__clock fd-time-picker__clock--inner">
+                <div class="fd-segmented-button" role="group" aria-label="Group label">
+                    <button aria-label="AM" class="fd-button">
+                        AM
+                    </button>
+                    <button aria-label="PM" class="fd-button fd-button--toggled" aria-pressed="true">
+                        PM
+                    </button>
+                </div>
+                <button class="fd-button fd-button--transparent" aria-label="Time Now">
+                    <i class="sap-icon--present"></i>
+                </button>
+            </div>
+            <div role="img" aria-label="Clock Dial" class="fd-time-picker__clock-container">
+                <div aria-hidden="true" class="fd-time-picker__clock fd-time-picker__clock--inner">
 
-                        <div>
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick"></span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick"></span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick"></span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick"></span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--hour"></span>
-                                <span class="fd-time-picker__number fd-time-picker__number--hover">1</span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick"></span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick"></span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick"></span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick"></span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--hour"></span>
-                                <span class="fd-time-picker__number">2</span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick"></span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick"></span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick"></span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick"></span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--hour"></span>
-                                <span class="fd-time-picker__number">3</span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick"></span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick"></span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick"></span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick"></span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--hour"></span>
-                                <span class="fd-time-picker__number">4</span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick"></span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick"></span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick"></span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick"></span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--hour"></span>
-                                <span class="fd-time-picker__number">5</span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick"></span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick"></span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick"></span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick"></span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--hour"></span>
-                                <span class="fd-time-picker__number">6</span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick"></span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick"></span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick"></span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick"></span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--hour"></span>
-                                <span class="fd-time-picker__number">7</span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick"></span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick"></span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick"></span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick"></span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--hour"></span>
-                                <span class="fd-time-picker__number">8</span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick"></span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick"></span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick"></span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick"></span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--hour"></span>
-                                <span class="fd-time-picker__number">9</span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick"></span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick"></span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick"></span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick"></span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--hour"></span>
-                                <span class="fd-time-picker__number">10</span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick"></span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick"></span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick"></span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick"></span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--hour"></span>
-                                <span class="fd-time-picker__number">11</span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick"></span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick"></span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick"></span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick"></span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--hour"></span>
-                                <span class="fd-time-picker__number">12</span>
-                            </div>
+                    <div>
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick"></span>
                         </div>
 
                         <div class="fd-time-picker__item">
-
-                            <div class="fd-time-picker__number fd-time-picker__number--selected">7</div>
+                            <span class="fd-time-picker__tick"></span>
                         </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick"></span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick"></span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick fd-time-picker__tick--hour"></span>
+                            <span class="fd-time-picker__number fd-time-picker__number--hover">1</span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick"></span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick"></span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick"></span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick"></span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick fd-time-picker__tick--hour"></span>
+                            <span class="fd-time-picker__number">2</span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick"></span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick"></span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick"></span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick"></span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick fd-time-picker__tick--hour"></span>
+                            <span class="fd-time-picker__number">3</span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick"></span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick"></span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick"></span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick"></span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick fd-time-picker__tick--hour"></span>
+                            <span class="fd-time-picker__number">4</span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick"></span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick"></span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick"></span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick"></span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick fd-time-picker__tick--hour"></span>
+                            <span class="fd-time-picker__number">5</span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick"></span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick"></span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick"></span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick"></span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick fd-time-picker__tick--hour"></span>
+                            <span class="fd-time-picker__number">6</span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick"></span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick"></span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick"></span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick"></span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick fd-time-picker__tick--hour"></span>
+                            <span class="fd-time-picker__number">7</span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick"></span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick"></span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick"></span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick"></span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick fd-time-picker__tick--hour"></span>
+                            <span class="fd-time-picker__number">8</span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick"></span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick"></span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick"></span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick"></span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick fd-time-picker__tick--hour"></span>
+                            <span class="fd-time-picker__number">9</span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick"></span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick"></span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick"></span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick"></span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick fd-time-picker__tick--hour"></span>
+                            <span class="fd-time-picker__number">10</span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick"></span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick"></span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick"></span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick"></span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick fd-time-picker__tick--hour"></span>
+                            <span class="fd-time-picker__number">11</span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick"></span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick"></span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick"></span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick"></span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick fd-time-picker__tick--hour"></span>
+                            <span class="fd-time-picker__number">12</span>
+                        </div>
+                    </div>
+
+                    <div class="fd-time-picker__item">
+
+                        <div class="fd-time-picker__number fd-time-picker__number--selected">7</div>
                     </div>
                 </div>
             </div>
-            <div class="fd-popover__body-footer">
-                <div class="fd-bar fd-bar--footer">
-                    <div class="fd-bar__right">
-                        <div class="fd-bar__element">
-                            <button class="fd-button fd-button--decisive fd-button--emphasized">Ok</button>
-                        </div>
-                        <div class="fd-bar__element">
-                            <button class="fd-button fd-button--decisive fd-button--transparent">Cancel</button>
-                        </div>
+        </div>
+        <div class="fd-popover__body-footer">
+            <div class="fd-bar fd-bar--footer">
+                <div class="fd-bar__right">
+                    <div class="fd-bar__element">
+                        <button class="fd-button fd-button--decisive fd-button--emphasized">Ok</button>
+                    </div>
+                    <div class="fd-bar__element">
+                        <button class="fd-button fd-button--decisive fd-button--transparent">Cancel</button>
                     </div>
                 </div>
             </div>
@@ -1143,303 +1143,303 @@ When the minutes value is selected in the time display, the minutes clock face i
                 </button>
             </span>
         </div>
-        <div class="fd-popover__body fd-popover__body--no-arrow" aria-hidden="false">
-            <div class="fd-time-picker__dropdown">
-                <div class="fd-time-picker__header">
-                    <div class="fd-time-picker__output">
-                        <button class="fd-button">
-                            07
-                        </button>
-                        <span class="fd-time-picker__colon">:</span>
-                        <button class="fd-button fd-button--toggled" aria-pressed="true">
-                            18
-                        </button>
-                    </div>
-                    <div class="fd-segmented-button" role="group" aria-label="Group label">
-                        <button aria-label="AM" class="fd-button">
-                            AM
-                        </button>
-                        <button aria-label="PM" class="fd-button fd-button--toggled" aria-pressed="true">
-                            PM
-                        </button>
-                    </div>
-                    <button class="fd-button fd-button--transparent" aria-label="Time Now">
-                        <i class="sap-icon--present"></i>
+    </div>
+    <div class="fd-popover__body fd-popover__body--no-arrow" aria-hidden="false">
+        <div class="fd-time-picker__dropdown">
+            <div class="fd-time-picker__header">
+                <div class="fd-time-picker__output">
+                    <button class="fd-button">
+                        07
+                    </button>
+                    <span class="fd-time-picker__colon">:</span>
+                    <button class="fd-button fd-button--toggled" aria-pressed="true">
+                        18
                     </button>
                 </div>
-                <div role="img" aria-label="Clock Dial" class="fd-time-picker__clock-container">
-                    <div class="fd-time-picker__clock fd-time-picker__clock--inner fd-time-picker__clock--active">
+                <div class="fd-segmented-button" role="group" aria-label="Group label">
+                    <button aria-label="AM" class="fd-button">
+                        AM
+                    </button>
+                    <button aria-label="PM" class="fd-button fd-button--toggled" aria-pressed="true">
+                        PM
+                    </button>
+                </div>
+                <button class="fd-button fd-button--transparent" aria-label="Time Now">
+                    <i class="sap-icon--present"></i>
+                </button>
+            </div>
+            <div role="img" aria-label="Clock Dial" class="fd-time-picker__clock-container">
+                <div class="fd-time-picker__clock fd-time-picker__clock--inner fd-time-picker__clock--active">
 
-                        <div>
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick"></span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick"></span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick"></span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick"></span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--hour"></span>
-                                <span class="fd-time-picker__number">5</span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick"></span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick"></span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick"></span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick"></span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--hour"></span>
-                                <span class="fd-time-picker__number">10</span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick"></span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick"></span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick"></span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick"></span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--hour"></span>
-                                <span class="fd-time-picker__number">15</span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick"></span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick"></span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick"></span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick"></span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--hour"></span>
-                                <span class="fd-time-picker__number">20</span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick"></span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick"></span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick"></span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick"></span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--hour"></span>
-                                <span class="fd-time-picker__number">25</span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick"></span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick"></span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick"></span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick"></span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--hour"></span>
-                                <span class="fd-time-picker__number fd-time-picker__number--hover">30</span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick"></span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick"></span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick"></span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick"></span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--hour"></span>
-                                <span class="fd-time-picker__number">35</span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick"></span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick"></span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick"></span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick"></span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--hour"></span>
-                                <span class="fd-time-picker__number">40</span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick"></span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick"></span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick"></span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick"></span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--hour"></span>
-                                <span class="fd-time-picker__number">45</span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick"></span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick"></span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick"></span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick"></span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--hour"></span>
-                                <span class="fd-time-picker__number">50</span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick"></span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick"></span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick"></span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick"></span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--hour"></span>
-                                <span class="fd-time-picker__number">55</span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick"></span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick"></span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick"></span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick"></span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--hour"></span>
-                                <span class="fd-time-picker__number">0</span>
-                            </div>
+                    <div>
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick"></span>
                         </div>
 
                         <div class="fd-time-picker__item">
-
-                            <div class="fd-time-picker__number fd-time-picker__number--selected">18</div>
+                            <span class="fd-time-picker__tick"></span>
                         </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick"></span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick"></span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick fd-time-picker__tick--hour"></span>
+                            <span class="fd-time-picker__number">5</span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick"></span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick"></span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick"></span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick"></span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick fd-time-picker__tick--hour"></span>
+                            <span class="fd-time-picker__number">10</span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick"></span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick"></span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick"></span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick"></span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick fd-time-picker__tick--hour"></span>
+                            <span class="fd-time-picker__number">15</span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick"></span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick"></span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick"></span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick"></span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick fd-time-picker__tick--hour"></span>
+                            <span class="fd-time-picker__number">20</span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick"></span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick"></span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick"></span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick"></span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick fd-time-picker__tick--hour"></span>
+                            <span class="fd-time-picker__number">25</span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick"></span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick"></span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick"></span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick"></span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick fd-time-picker__tick--hour"></span>
+                            <span class="fd-time-picker__number fd-time-picker__number--hover">30</span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick"></span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick"></span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick"></span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick"></span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick fd-time-picker__tick--hour"></span>
+                            <span class="fd-time-picker__number">35</span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick"></span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick"></span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick"></span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick"></span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick fd-time-picker__tick--hour"></span>
+                            <span class="fd-time-picker__number">40</span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick"></span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick"></span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick"></span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick"></span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick fd-time-picker__tick--hour"></span>
+                            <span class="fd-time-picker__number">45</span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick"></span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick"></span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick"></span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick"></span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick fd-time-picker__tick--hour"></span>
+                            <span class="fd-time-picker__number">50</span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick"></span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick"></span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick"></span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick"></span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick fd-time-picker__tick--hour"></span>
+                            <span class="fd-time-picker__number">55</span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick"></span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick"></span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick"></span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick"></span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick fd-time-picker__tick--hour"></span>
+                            <span class="fd-time-picker__number">0</span>
+                        </div>
+                    </div>
+
+                    <div class="fd-time-picker__item">
+
+                        <div class="fd-time-picker__number fd-time-picker__number--selected">18</div>
                     </div>
                 </div>
             </div>
-            <div class="fd-popover__body-footer">
-                <div class="fd-bar fd-bar--footer">
-                    <div class="fd-bar__right">
-                        <div class="fd-bar__element">
-                            <button class="fd-button fd-button--decisive fd-button--emphasized">Ok</button>
-                        </div>
-                        <div class="fd-bar__element">
-                            <button class="fd-button fd-button--decisive fd-button--transparent">Cancel</button>
-                        </div>
+        </div>
+        <div class="fd-popover__body-footer">
+            <div class="fd-bar fd-bar--footer">
+                <div class="fd-bar__right">
+                    <div class="fd-bar__element">
+                        <button class="fd-button fd-button--decisive fd-button--emphasized">Ok</button>
+                    </div>
+                    <div class="fd-bar__element">
+                        <button class="fd-button fd-button--decisive fd-button--transparent">Cancel</button>
                     </div>
                 </div>
             </div>
@@ -1463,304 +1463,304 @@ When the seconds value is selected in the time display, the seconds clock face i
                 </button>
             </span>
         </div>
-        <div class="fd-popover__body fd-popover__body--no-arrow" aria-hidden="false">
-            <div class="fd-time-picker__dropdown">
-                <div class="fd-time-picker__header">
-                    <div class="fd-time-picker__output">
-                        <button class="fd-button">
-                            07
-                        </button>
-                        <span class="fd-time-picker__colon">:</span>
-                        <button class="fd-button" aria-pressed="true">
-                            18
-                        </button>
-                        <span class="fd-time-picker__colon">:</span>
-                        <button class="fd-button fd-button--toggled" aria-pressed="true">
-                            13
-                        </button>
-                    </div>
-                    <div class="fd-segmented-button" role="group" aria-label="Group label">
-                        <button aria-label="AM" class="fd-button">
-                            AM
-                        </button>
-                        <button aria-label="PM" class="fd-button fd-button--toggled" aria-pressed="true">
-                            PM
-                        </button>
-                    </div>
+    </div>
+    <div class="fd-popover__body fd-popover__body--no-arrow" aria-hidden="false">
+        <div class="fd-time-picker__dropdown">
+            <div class="fd-time-picker__header">
+                <div class="fd-time-picker__output">
+                    <button class="fd-button">
+                        07
+                    </button>
+                    <span class="fd-time-picker__colon">:</span>
+                    <button class="fd-button" aria-pressed="true">
+                        18
+                    </button>
+                    <span class="fd-time-picker__colon">:</span>
+                    <button class="fd-button fd-button--toggled" aria-pressed="true">
+                        13
+                    </button>
                 </div>
-                <div role="img" aria-label="Clock Dial" class="fd-time-picker__clock-container">
-                    <div class="fd-time-picker__clock fd-time-picker__clock--inner fd-time-picker__clock--active">
+                <div class="fd-segmented-button" role="group" aria-label="Group label">
+                    <button aria-label="AM" class="fd-button">
+                        AM
+                    </button>
+                    <button aria-label="PM" class="fd-button fd-button--toggled" aria-pressed="true">
+                        PM
+                    </button>
+                </div>
+            </div>
+            <div role="img" aria-label="Clock Dial" class="fd-time-picker__clock-container">
+                <div class="fd-time-picker__clock fd-time-picker__clock--inner fd-time-picker__clock--active">
 
-                        <div>
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick"></span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick"></span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick"></span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick"></span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--hour"></span>
-                                <span class="fd-time-picker__number">5</span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick"></span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick"></span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick"></span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick"></span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--hour"></span>
-                                <span class="fd-time-picker__number">10</span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick"></span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick"></span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick"></span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick"></span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--hour"></span>
-                                <span class="fd-time-picker__number">15</span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick"></span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick"></span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick"></span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick"></span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--hour"></span>
-                                <span class="fd-time-picker__number">20</span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick"></span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick"></span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick"></span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick"></span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--hour"></span>
-                                <span class="fd-time-picker__number">25</span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick"></span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick"></span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick"></span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick"></span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--hour"></span>
-                                <span class="fd-time-picker__number fd-time-picker__number--hover">30</span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick"></span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick"></span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick"></span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick"></span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--hour"></span>
-                                <span class="fd-time-picker__number">35</span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick"></span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick"></span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick"></span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick"></span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--hour"></span>
-                                <span class="fd-time-picker__number">40</span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick"></span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick"></span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick"></span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick"></span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--hour"></span>
-                                <span class="fd-time-picker__number">45</span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick"></span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick"></span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick"></span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick"></span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--hour"></span>
-                                <span class="fd-time-picker__number">50</span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick"></span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick"></span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick"></span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick"></span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--hour"></span>
-                                <span class="fd-time-picker__number">55</span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick"></span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick"></span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick"></span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick"></span>
-                            </div>
-
-                            <div class="fd-time-picker__item">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--hour"></span>
-                                <span class="fd-time-picker__number">0</span>
-                            </div>
+                    <div>
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick"></span>
                         </div>
 
                         <div class="fd-time-picker__item">
-
-                            <div class="fd-time-picker__number fd-time-picker__number--selected">13</div>
+                            <span class="fd-time-picker__tick"></span>
                         </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick"></span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick"></span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick fd-time-picker__tick--hour"></span>
+                            <span class="fd-time-picker__number">5</span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick"></span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick"></span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick"></span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick"></span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick fd-time-picker__tick--hour"></span>
+                            <span class="fd-time-picker__number">10</span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick"></span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick"></span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick"></span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick"></span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick fd-time-picker__tick--hour"></span>
+                            <span class="fd-time-picker__number">15</span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick"></span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick"></span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick"></span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick"></span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick fd-time-picker__tick--hour"></span>
+                            <span class="fd-time-picker__number">20</span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick"></span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick"></span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick"></span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick"></span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick fd-time-picker__tick--hour"></span>
+                            <span class="fd-time-picker__number">25</span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick"></span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick"></span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick"></span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick"></span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick fd-time-picker__tick--hour"></span>
+                            <span class="fd-time-picker__number fd-time-picker__number--hover">30</span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick"></span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick"></span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick"></span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick"></span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick fd-time-picker__tick--hour"></span>
+                            <span class="fd-time-picker__number">35</span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick"></span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick"></span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick"></span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick"></span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick fd-time-picker__tick--hour"></span>
+                            <span class="fd-time-picker__number">40</span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick"></span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick"></span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick"></span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick"></span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick fd-time-picker__tick--hour"></span>
+                            <span class="fd-time-picker__number">45</span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick"></span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick"></span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick"></span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick"></span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick fd-time-picker__tick--hour"></span>
+                            <span class="fd-time-picker__number">50</span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick"></span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick"></span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick"></span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick"></span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick fd-time-picker__tick--hour"></span>
+                            <span class="fd-time-picker__number">55</span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick"></span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick"></span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick"></span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick"></span>
+                        </div>
+
+                        <div class="fd-time-picker__item">
+                            <span class="fd-time-picker__tick fd-time-picker__tick--hour"></span>
+                            <span class="fd-time-picker__number">0</span>
+                        </div>
+                    </div>
+
+                    <div class="fd-time-picker__item">
+
+                        <div class="fd-time-picker__number fd-time-picker__number--selected">13</div>
                     </div>
                 </div>
             </div>
-            <div class="fd-popover__body-footer">
-                <div class="fd-bar fd-bar--footer">
-                    <div class="fd-bar__right">
-                        <div class="fd-bar__element">
-                            <button class="fd-button fd-button--decisive fd-button--emphasized">Ok</button>
-                        </div>
-                        <div class="fd-bar__element">
-                            <button class="fd-button fd-button--decisive fd-button--transparent">Cancel</button>
-                        </div>
+        </div>
+        <div class="fd-popover__body-footer">
+            <div class="fd-bar fd-bar--footer">
+                <div class="fd-bar__right">
+                    <div class="fd-bar__element">
+                        <button class="fd-button fd-button--decisive fd-button--emphasized">Ok</button>
+                    </div>
+                    <div class="fd-bar__element">
+                        <button class="fd-button fd-button--decisive fd-button--transparent">Cancel</button>
                     </div>
                 </div>
             </div>
@@ -1784,35 +1784,35 @@ On phones, focusing on the time input field opens a time input popover. The user
                 </button>
             </span>
         </div>
-        <div class="fd-popover__body fd-popover__body--no-arrow" aria-hidden="false">
-            <div class="fd-time-picker__dropdown">
-                <div class="fd-time-picker__header">
-                    <div class="fd-time-picker__output">
-                        <input class="fd-input" type="text" value="07">
-                        <span class="fd-time-picker__colon">:</span>
-                        <input class="fd-input" type="text" value="00">
-                        <span class="fd-time-picker__colon">:</span>
-                        <input class="fd-input" type="text" value="00">
-                    </div>
-                    <div class="fd-segmented-button" role="group" aria-label="Group label">
-                        <button aria-label="AM" class="fd-button fd-button--toggled">
-                            AM
-                        </button>
-                        <button aria-label="PM" class="fd-button" aria-pressed="true">
-                            PM
-                        </button>
-                    </div>
+    </div>
+    <div class="fd-popover__body fd-popover__body--no-arrow" aria-hidden="false">
+        <div class="fd-time-picker__dropdown">
+            <div class="fd-time-picker__header">
+                <div class="fd-time-picker__output">
+                    <input class="fd-input" type="text" value="07">
+                    <span class="fd-time-picker__colon">:</span>
+                    <input class="fd-input" type="text" value="00">
+                    <span class="fd-time-picker__colon">:</span>
+                    <input class="fd-input" type="text" value="00">
+                </div>
+                <div class="fd-segmented-button" role="group" aria-label="Group label">
+                    <button aria-label="AM" class="fd-button fd-button--toggled">
+                        AM
+                    </button>
+                    <button aria-label="PM" class="fd-button" aria-pressed="true">
+                        PM
+                    </button>
                 </div>
             </div>
-            <div class="fd-popover__body-footer">
-                <div class="fd-bar fd-bar--footer">
-                    <div class="fd-bar__right">
-                        <div class="fd-bar__element">
-                            <button class="fd-button fd-button--decisive fd-button--emphasized">Ok</button>
-                        </div>
-                        <div class="fd-bar__element">
-                            <button class="fd-button fd-button--decisive fd-button--transparent">Cancel</button>
-                        </div>
+        </div>
+        <div class="fd-popover__body-footer">
+            <div class="fd-bar fd-bar--footer">
+                <div class="fd-bar__right">
+                    <div class="fd-bar__element">
+                        <button class="fd-button fd-button--decisive fd-button--emphasized">Ok</button>
+                    </div>
+                    <div class="fd-bar__element">
+                        <button class="fd-button fd-button--decisive fd-button--transparent">Cancel</button>
                     </div>
                 </div>
             </div>

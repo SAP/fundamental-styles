@@ -14,7 +14,7 @@ stability: stable
 # Components/Settings
 
 The Settings Dialog allows users to personalize their Fiori experience by adjusting various settings.<br><br> <h3>Layout and Structure</h3>
-    The Settings Dialog follows a standard dialog format with a split layout inside the content area. On the left, a list of option groups is displayed. Selecting a group reveals its corresponding settings in the detail area on the right.<br><br> 
+    The Settings Dialog follows a standard dialog format with a split layout inside the content area. On the left, a list of option groups is displayed. Selecting a group reveals its corresponding settings in the detail area on the right.<br><br>
     <ul>
       <li><b>List Area - </b>The area which contains the list of settings.</li>
       <li><b>Detail Area - </b>This area contains:.
@@ -186,30 +186,23 @@ npm install fundamental-styles
                                 </button>
                             </div>
                             <div class="fd-settings__content-container">
-                                <div
-                                    style="
-                                    background: cornsilk;
-                                    height: 17.3rem;
-                                    width: 100%;
-                                    display: flex;
-                                    justify-content: center;
-                                    align-items: center;
-                                    "
-                                    >
-                                    Content Area
-                                </div>
+
+                                Content Area
+
                             </div>
                         </div>
                     </div>
                 </div>
-                <footer class="fd-dialog__footer fd-bar fd-bar--footer fd-settings__dialog-footer">
-                    <div class="fd-bar__right">
-                        <div class="fd-bar__element">
-                            <button class="fd-dialog__decisive-button fd-button fd-button--transparent">Close</button>
-                        </div>
+            </div>
+            <footer class="fd-dialog__footer fd-bar fd-bar--footer fd-settings__dialog-footer">
+                <div class="fd-bar__right">
+                    <div class="fd-bar__element">
+                        <button class="fd-dialog__decisive-button fd-button fd-button--transparent">Close</button>
                     </div>
-                </footer>
-            </section>
+                </div>
+            </footer>
+        </div>
+    </section>
 ```
 
 ## States
@@ -334,30 +327,23 @@ This component works with or depends on:
                                 </button>
                             </div>
                             <div class="fd-settings__content-container">
-                                <div
-                                    style="
-                                    background: cornsilk;
-                                    height: 17.3rem;
-                                    width: 100%;
-                                    display: flex;
-                                    justify-content: center;
-                                    align-items: center;
-                                    "
-                                    >
-                                    Content Area
-                                </div>
+
+                                Content Area
+
                             </div>
                         </div>
                     </div>
                 </div>
-                <footer class="fd-dialog__footer fd-bar fd-bar--footer fd-settings__dialog-footer">
-                    <div class="fd-bar__right">
-                        <div class="fd-bar__element">
-                            <button class="fd-dialog__decisive-button fd-button fd-button--transparent">Close</button>
-                        </div>
+            </div>
+            <footer class="fd-dialog__footer fd-bar fd-bar--footer fd-settings__dialog-footer">
+                <div class="fd-bar__right">
+                    <div class="fd-bar__element">
+                        <button class="fd-dialog__decisive-button fd-button fd-button--transparent">Close</button>
                     </div>
-                </footer>
-            </section>
+                </div>
+            </footer>
+        </div>
+    </section>
 ```
 
 ### Appearance (L-XL-XXL)
@@ -430,18 +416,9 @@ This component works with or depends on:
 
                     <div class="fd-settings__content fd-settings__content--no-background">
                         <div class="fd-settings__content-container">
-                            <div
-                                style="
-                                background: cornsilk;
-                                height: 5rem;
-                                width: 100%;
-                                display: flex;
-                                justify-content: center;
-                                align-items: center;
-                                "
-                                >
-                                Content Area
-                            </div>
+
+                            Content Area
+
                         </div>
 
                         <div class="fd-toolbar fd-toolbar--title" role="toolbar" aria-label="Title toolbar">
@@ -723,14 +700,16 @@ This component works with or depends on:
                                                                                             </div>
                                                                                         </div>
                                                                                     </div>
-                                                                                    <footer class="fd-dialog__footer fd-bar fd-bar--footer fd-settings__dialog-footer">
-                                                                                        <div class="fd-bar__right">
-                                                                                            <div class="fd-bar__element">
-                                                                                                <button class="fd-dialog__decisive-button fd-button fd-button--transparent">Close</button>
-                                                                                            </div>
+                                                                                </div>
+                                                                                <footer class="fd-dialog__footer fd-bar fd-bar--footer fd-settings__dialog-footer">
+                                                                                    <div class="fd-bar__right">
+                                                                                        <div class="fd-bar__element">
+                                                                                            <button class="fd-dialog__decisive-button fd-button fd-button--transparent">Close</button>
                                                                                         </div>
-                                                                                    </footer>
-                                                                                </section>
+                                                                                    </div>
+                                                                                </footer>
+                                                                            </div>
+                                                                        </section>
 ```
 
 ### Language & Region (L-XL-XXL)
@@ -923,52 +902,61 @@ This component works with or depends on:
                                                 </button>
                                             </span>
                                         </div>
+                                    </div>
 
-                                        <div class="fd-form-item">
-                                            <label for="form-item-6" class="fd-form-label">Currency:</label>
-                                            <div class="fd-input-group fd-input-group--control">
-                                                <input
-                                                type="text"
-                                                class="fd-input fd-input-group__input"
-                                                id="form-item-6"
-                                                value="USD - United States Dollar"
-                                                />
-                                                <span class="fd-input-group__addon fd-input-group__addon--button">
-                                                    <button
-                                                        aria-label="show/hide currency options"
-                                                        class="fd-input-group__button fd-button fd-button--transparent"
-                                                        >
-                                                        <i class="sap-icon--navigation-down-arrow"></i>
-                                                    </button>
-                                                </span>
-                                            </div>
+                                    <div class="fd-form-item">
+                                        <label for="form-item-6" class="fd-form-label">Currency:</label>
+                                        <div class="fd-input-group fd-input-group--control">
+                                            <input
+                                            type="text"
+                                            class="fd-input fd-input-group__input"
+                                            id="form-item-6"
+                                            value="USD - United States Dollar"
+                                            />
+                                            <span class="fd-input-group__addon fd-input-group__addon--button">
+                                                <button
+                                                    aria-label="show/hide currency options"
+                                                    class="fd-input-group__button fd-button fd-button--transparent"
+                                                    >
+                                                    <i class="sap-icon--navigation-down-arrow"></i>
+                                                </button>
+                                            </span>
+                                        </div>
+                                    </div>
 
-                                            <div class="fd-form-item">
-                                                <label for="form-item-7" class="fd-form-label">Number Format:</label>
-                                                <div class="fd-input-group fd-input-group--control">
-                                                    <input
-                                                    type="text"
-                                                    class="fd-input fd-input-group__input"
-                                                    id="form-item-7"
-                                                    value="1,234.56"
-                                                    />
-                                                    <span class="fd-input-group__addon fd-input-group__addon--button">
-                                                        <button
-                                                            aria-label="show/hide number format options"
-                                                            class="fd-input-group__button fd-button fd-button--transparent"
-                                                            >
-                                                            <i class="sap-icon--navigation-down-arrow"></i>
-                                                        </button>
-                                                    </span>
-                                                </div>
-                                                <footer class="fd-dialog__footer fd-bar fd-bar--footer fd-settings__dialog-footer">
-                                                    <div class="fd-bar__right">
-                                                        <div class="fd-bar__element">
-                                                            <button class="fd-dialog__decisive-button fd-button fd-button--transparent">Close</button>
-                                                        </div>
-                                                    </div>
-                                                </footer>
-                                            </section>
+                                    <div class="fd-form-item">
+                                        <label for="form-item-7" class="fd-form-label">Number Format:</label>
+                                        <div class="fd-input-group fd-input-group--control">
+                                            <input
+                                            type="text"
+                                            class="fd-input fd-input-group__input"
+                                            id="form-item-7"
+                                            value="1,234.56"
+                                            />
+                                            <span class="fd-input-group__addon fd-input-group__addon--button">
+                                                <button
+                                                    aria-label="show/hide number format options"
+                                                    class="fd-input-group__button fd-button fd-button--transparent"
+                                                    >
+                                                    <i class="sap-icon--navigation-down-arrow"></i>
+                                                </button>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <footer class="fd-dialog__footer fd-bar fd-bar--footer fd-settings__dialog-footer">
+                    <div class="fd-bar__right">
+                        <div class="fd-bar__element">
+                            <button class="fd-dialog__decisive-button fd-button fd-button--transparent">Close</button>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+        </section>
 ```
 
 ### Notifications (L-XL-XXL)
@@ -1144,7 +1132,7 @@ This component works with or depends on:
                                                                 <button
                                                                     role="button"
                                                                     title="Click to navigate"
-                                                                    class="fd-button fd-button--transparent"
+                                                                    class="fd-button fd-button--transparent fd-list__button"
                                                                     >
                                                                     <i
                                                                         class="sap-icon--navigation-right-arrow"
@@ -1178,7 +1166,7 @@ This component works with or depends on:
                                                                             <button
                                                                                 role="button"
                                                                                 title="Click to navigate"
-                                                                                class="fd-button fd-button--transparent"
+                                                                                class="fd-button fd-button--transparent fd-list__button"
                                                                                 >
                                                                                 <i
                                                                                     class="sap-icon--navigation-right-arrow"
@@ -1212,7 +1200,7 @@ This component works with or depends on:
                                                                                         <button
                                                                                             role="button"
                                                                                             title="Click to navigate"
-                                                                                            class="fd-button fd-button--transparent"
+                                                                                            class="fd-button fd-button--transparent fd-list__button"
                                                                                             >
                                                                                             <i
                                                                                                 class="sap-icon--navigation-right-arrow"
@@ -1249,7 +1237,7 @@ This component works with or depends on:
                                                                                                     <button
                                                                                                         role="button"
                                                                                                         title="Click to navigate"
-                                                                                                        class="fd-button fd-button--transparent"
+                                                                                                        class="fd-button fd-button--transparent fd-list__button"
                                                                                                         >
                                                                                                         <i
                                                                                                             class="sap-icon--navigation-right-arrow"
@@ -1283,7 +1271,7 @@ This component works with or depends on:
                                                                                                                 <button
                                                                                                                     role="button"
                                                                                                                     title="Click to navigate"
-                                                                                                                    class="fd-button fd-button--transparent"
+                                                                                                                    class="fd-button fd-button--transparent fd-list__button"
                                                                                                                     >
                                                                                                                     <i
                                                                                                                         class="sap-icon--navigation-right-arrow"
@@ -1317,7 +1305,7 @@ This component works with or depends on:
                                                                                                                             <button
                                                                                                                                 role="button"
                                                                                                                                 title="Click to navigate"
-                                                                                                                                class="fd-button fd-button--transparent"
+                                                                                                                                class="fd-button fd-button--transparent fd-list__button"
                                                                                                                                 >
                                                                                                                                 <i
                                                                                                                                     class="sap-icon--navigation-right-arrow"
@@ -1330,14 +1318,18 @@ This component works with or depends on:
                                                                                                                     </div>
                                                                                                                 </div>
                                                                                                             </div>
-                                                                                                            <footer class="fd-dialog__footer fd-bar fd-bar--footer fd-settings__dialog-footer">
-                                                                                                                <div class="fd-bar__right">
-                                                                                                                    <div class="fd-bar__element">
-                                                                                                                        <button class="fd-dialog__decisive-button fd-button fd-button--transparent">Close</button>
-                                                                                                                    </div>
+                                                                                                        </div>
+                                                                                                        <footer class="fd-dialog__footer fd-bar fd-bar--footer fd-settings__dialog-footer">
+                                                                                                            <div class="fd-bar__right">
+                                                                                                                <div class="fd-bar__element">
+                                                                                                                    <button class="fd-dialog__decisive-button fd-button fd-button--transparent fd-list__button">
+                                                                                                                        Close
+                                                                                                                    </button>
                                                                                                                 </div>
-                                                                                                            </footer>
-                                                                                                        </section>
+                                                                                                            </div>
+                                                                                                        </footer>
+                                                                                                    </div>
+                                                                                                </section>
 ```
 
 ### Notifications Details (L-XL-XXL)
@@ -1569,14 +1561,16 @@ This component works with or depends on:
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <footer class="fd-dialog__footer fd-bar fd-bar--footer fd-settings__dialog-footer">
-                                                    <div class="fd-bar__right">
-                                                        <div class="fd-bar__element">
-                                                            <button class="fd-dialog__decisive-button fd-button fd-button--transparent">Close</button>
-                                                        </div>
+                                            </div>
+                                            <footer class="fd-dialog__footer fd-bar fd-bar--footer fd-settings__dialog-footer">
+                                                <div class="fd-bar__right">
+                                                    <div class="fd-bar__element">
+                                                        <button class="fd-dialog__decisive-button fd-button fd-button--transparent">Close</button>
                                                     </div>
-                                                </footer>
-                                            </section>
+                                                </div>
+                                            </footer>
+                                        </div>
+                                    </section>
 ```
 
 ### L-XL-XXL (with Tabs and overflowing content)
@@ -1870,7 +1864,8 @@ If the content height exceeds the available space, users can scroll through the 
                 </div>
             </div>
         </footer>
-    </section>
+    </div>
+</section>
 ```
 
 ## Accessibility

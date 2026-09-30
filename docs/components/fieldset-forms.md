@@ -64,7 +64,6 @@ npm install fundamental-styles
 
 <!-- Include component CSS -->
 <link href="node_modules/fundamental-styles/dist/fieldset.css" rel="stylesheet">
-
 ```
 
 ## Basic Usage
@@ -96,7 +95,7 @@ This component uses the following BEM elements:
 
 ### Required
 
-To show that a checkbox input is required, use the \
+To show that a checkbox input is required, use the `fd-checkbox__label--required` class.
 
 ```html
 <fieldset class="fd-fieldset">

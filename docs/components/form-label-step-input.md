@@ -200,7 +200,10 @@ Step input can be displayed in various states such as Success, Information, Erro
 
 | State | Class |
 | :------ | :----------- |
-| Success | \
+| Success | `is-success` |
+| Information | `is-information` |
+| Error | `is-error` |
+| Warning | `is-warning` |
 
 ```html
 <label class="fd-form-label" for="step-5">Success Step Input</label><div class="fd-step-input is-success">
@@ -301,7 +304,7 @@ Step input can be displayed in various states such as Success, Information, Erro
 
 ### Focused
 
-To enable the focused state add the \
+To enable the focused state add the `.is-focus` class to the main element with class `.fd-step-input`.
 
 ```html
 <label class="fd-form-label" for="step-20">Focused Step Input</label><div class="fd-step-input is-focus">
@@ -426,7 +429,7 @@ To enable the focused state add the \
 
 ### Disabled
 
-Step input can be disabled by adding the \
+Step input can be disabled by adding the `is-disabled` class to the main element.
 
 ```html
 <label class="fd-form-label" for="step-13">Disabled Step Input</label><div class="fd-step-input is-disabled">
@@ -456,7 +459,7 @@ Step input can be disabled by adding the \
 
 ### Read-only
 
-Step input can be displayed as read-only by adding the \
+Step input can be displayed as read-only by adding the `is-readonly` class to the main element.
 
 ```html
 <label class="fd-form-label" for="step-14">Temperature set to</label><div class="fd-form-item fd-form-item--horizontal">
@@ -489,7 +492,7 @@ Step input can be displayed as read-only by adding the \
 
 ### FullWidth
 
-For Step Input that takes the whole width of the container element add the \
+For Step Input that takes the whole width of the container element add the `fd-step-input--full-width` modifier class to the main element.
 
 ```html
 <label class="fd-form-label" for="step-3f">Default Step Input</label><div class="fd-step-input fd-step-input--full-width">

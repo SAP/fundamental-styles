@@ -16,7 +16,8 @@ stability: experimental
 > **🧪 EXPERIMENTAL**: This component is experimental and its API may change.
 
 For aria-live to read any change in element, we need to place element but it should not be visible to user.
-            At the same time, it can not be made \
+            At the same time, it can not be made `visibility: hidden` or `display: none`, as screen reader will not be able to pick this element.
+            This component will make sure that element is not visible on screen but it can be read by screen reader.
 
 ## Dependencies
 

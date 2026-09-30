@@ -99,7 +99,7 @@ npm install fundamental-styles
                                 <span class="fd-menu__title">Change Tone</span>
                                 <span class="fd-menu__addon-after fd-menu__addon-after--submenu"></span>
                         </span>
-                        <ul class="fd-menu__sublist" id="EX_AI_1" aria-hidden="true" role="menu">                            
+                        <ul class="fd-menu__sublist" id="EX_AI_1" aria-hidden="true" role="menu">
                             <li class="fd-menu__item" role="presentation">
                                 <a class="fd-menu__link" href="#" role="menuitem">
                                     <span class="fd-menu__title">Option 1</span>
@@ -261,7 +261,7 @@ npm install fundamental-styles
                                 <span class="fd-menu__title">Change Tone</span>
                                 <span class="fd-menu__addon-after fd-menu__addon-after--submenu"></span>
                         </span>
-                        <ul class="fd-menu__sublist" id="EX_AI_1b" aria-hidden="true" role="menu">                            
+                        <ul class="fd-menu__sublist" id="EX_AI_1b" aria-hidden="true" role="menu">
                             <li class="fd-menu__item" role="presentation">
                                 <a class="fd-menu__link" href="#" role="menuitem">
                                     <span class="fd-menu__title">Option 1</span>
@@ -439,7 +439,7 @@ npm install fundamental-styles
                                 <span class="fd-menu__title">Change Tone</span>
                                 <span class="fd-menu__addon-after fd-menu__addon-after--submenu"></span>
                         </span>
-                        <ul class="fd-menu__sublist" id="EX_AI_1" aria-hidden="true" role="menu">                            
+                        <ul class="fd-menu__sublist" id="EX_AI_1" aria-hidden="true" role="menu">
                             <li class="fd-menu__item" role="presentation">
                                 <a class="fd-menu__link" href="#" role="menuitem">
                                     <span class="fd-menu__title">Option 1</span>
@@ -601,7 +601,7 @@ npm install fundamental-styles
                                 <span class="fd-menu__title">Change Tone</span>
                                 <span class="fd-menu__addon-after fd-menu__addon-after--submenu"></span>
                         </span>
-                        <ul class="fd-menu__sublist" id="EX_AI_1b" aria-hidden="true" role="menu">                            
+                        <ul class="fd-menu__sublist" id="EX_AI_1b" aria-hidden="true" role="menu">
                             <li class="fd-menu__item" role="presentation">
                                 <a class="fd-menu__link" href="#" role="menuitem">
                                     <span class="fd-menu__title">Option 1</span>

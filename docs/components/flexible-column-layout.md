@@ -19,7 +19,9 @@ The flexible column layout offers different layouts with up to three columns.
 Users can expand the column they want to focus on, switch between different layouts, and view the rightmost column in full screen mode.
 
 ### Background Designs
-- \
+- `fd-flexible-column-layout`: solid (default)
+- `fd-flexible-column-layout--translucent`: translucent
+- `fd-flexible-column-layout--transparent`: transparent
 
 ## Dependencies
 
@@ -75,9 +77,12 @@ npm install fundamental-styles
 | Class | Description |
 |-------|-------------|
 | `fd-flexible-column-layout--translucent` | Flexible Column Layout with translucent separators
-- Max width of the device: \ |
+- Max width of the device: `960px`
+- Column width: `100%` |
 | `fd-flexible-column-layout--transparent` | Flexible Column with transparent separators
-- Width of the device: Max: \ |
+- Width of the device: Max: `1280px`, Min: 961px
+- Wide column width: `67%`
+- Narrow column width: `33%` |
 
 ## BEM Elements
 
@@ -114,7 +119,9 @@ Key CSS variables used by this component:
 
 ### ThreeColumnsLayout
 
-- Minimum width of the device: \
+- Minimum width of the device: `1281px`
+- Wide column width: `50%`
+- Narrow columns width: `25%`
 
 ```html
 <div class="fd-flexible-column-layout">
@@ -139,54 +146,53 @@ Key CSS variables used by this component:
 ### TwoColumnsLayout
 
 Flexible Column with transparent separators
-- Width of the device: Max: \
+- Width of the device: Max: `1280px`, Min: 961px
+- Wide column width: `67%`
+- Narrow column width: `33%`
 
 ```html
 <div class="fd-flexible-column-layout fd-flexible-column-layout--transparent">
-    <div class="fd-flexible-column-layout__column">
 
-        <div class="fd-flexible-column-layout__separator">
-            <button class="fd-button fd-button--transparent fd-flexible-column-layout__button"
-                aria-label="Expand">
-                <i class="sap-icon--slim-arrow-right" role="presentation"></i>
-            </button>
-        </div>
-
-        <div class="fd-flexible-column-layout__separator">
-            <button class="fd-button fd-button--transparent fd-flexible-column-layout__button"
-                aria-label="Expand">
-                <i class="sap-icon--slim-arrow-left" role="presentation"></i>
-            </button>
-        </div>
-
+    <div class="fd-flexible-column-layout__separator">
+        <button class="fd-button fd-button--transparent fd-flexible-column-layout__button"
+            aria-label="Expand">
+            <i class="sap-icon--slim-arrow-right" role="presentation"></i>
+        </button>
     </div>
+
+    <div class="fd-flexible-column-layout__separator">
+        <button class="fd-button fd-button--transparent fd-flexible-column-layout__button"
+            aria-label="Expand">
+            <i class="sap-icon--slim-arrow-left" role="presentation"></i>
+        </button>
+    </div>
+
 </div>
 ```
 
 ### OneColumnsLayout
 
 Flexible Column Layout with translucent separators
-- Max width of the device: \
+- Max width of the device: `960px`
+- Column width: `100%`
 
 ```html
 <div class="fd-flexible-column-layout fd-flexible-column-layout--translucent">
-    <div class="fd-flexible-column-layout__column fd-flexible-column-layout__column--hidden">
 
-        <div class="fd-flexible-column-layout__separator">
-            <button class="fd-button fd-button--transparent fd-flexible-column-layout__button"
-                aria-label="Expand">
-                <i class="sap-icon--slim-arrow-right" role="presentation"></i>
-            </button>
-        </div>
-
-        <div class="fd-flexible-column-layout__separator">
-            <button class="fd-button fd-button--transparent fd-flexible-column-layout__button"
-                aria-label="Expand">
-                <i class="sap-icon--slim-arrow-left" role="presentation"></i>
-            </button>
-        </div>
-
+    <div class="fd-flexible-column-layout__separator">
+        <button class="fd-button fd-button--transparent fd-flexible-column-layout__button"
+            aria-label="Expand">
+            <i class="sap-icon--slim-arrow-right" role="presentation"></i>
+        </button>
     </div>
+
+    <div class="fd-flexible-column-layout__separator">
+        <button class="fd-button fd-button--transparent fd-flexible-column-layout__button"
+            aria-label="Expand">
+            <i class="sap-icon--slim-arrow-left" role="presentation"></i>
+        </button>
+    </div>
+
 </div>
 ```
 

@@ -2,8 +2,8 @@
 component: media-queries
 title: Media Queries
 category: media-queries
-selector: 
-cssFile: 
+selector:
+cssFile:
 sourcePath: packages/common-css/stories/media-queries/media-queries.stories.js
 tags: []
 dependencies: []
@@ -85,7 +85,7 @@ stability: stable
 
 ## Examples
 
-###  
+###
 
 ```html
 <style>

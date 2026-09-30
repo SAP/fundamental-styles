@@ -14,7 +14,12 @@ stability: stable
 # Patterns/Combobox Input
 
 The Combobox Input component is an opinionated composition of the input group, popover and list components.
-The popover and \
+The popover and `dropdown list` is shared between the multi-input and select components.
+Please see the `select` documentation for the complete list of modifiers that are also  supported by the combobox component.
+
+`Combobox` allows users to select an item from a predefined list.
+It provides an editable input field for filtering the list, and a dropdown menu with a list of the available options.
+If the entries are not validated by the application, users can also enter custom values.
 
 ## Dependencies
 
@@ -82,55 +87,56 @@ npm install fundamental-styles
                         <i class="sap-icon--navigation-down-arrow"></i></button>
                     </span>
                 </div>
-                <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--dropdown fd-popover__body--dropdown-fill" aria-hidden="false" id="amsfiaufuaskhjd">
-                    <div class="fd-popover__wrapper docs-max-height">
-                        <ul aria-label="fruit options" class="fd-list fd-list--dropdown" role="listbox">
-                            <li role="option" tabindex="0" class="fd-list__item is-selected">
-                                <span class="fd-list__title">
-                                    <span class="fd-list__bold">App</span>le
-                                    </span>
-                                </li>
-                                <li role="option" tabindex="0" class="fd-list__item">
-                                    <span class="fd-list__title">Orange</span>
-                                </li>
-                                <li role="option" tabindex="0" class="fd-list__item">
-                                    <span class="fd-list__title">Banana</span>
-                                </li>
-                                <li role="option" tabindex="0" class="fd-list__item">
-                                    <span class="fd-list__title">Kiwi</span>
-                                </li>
-                                <li role="option" tabindex="0" class="fd-list__item">
-                                    <span class="fd-list__title">Nectarine</span>
-                                </li>
-                                <li role="option" tabindex="0" class="fd-list__item">
-                                    <span class="fd-list__title">Apricots</span>
-                                </li>
-                                <li role="option" tabindex="0" class="fd-list__item">
-                                    <span class="fd-list__title">Peache</span>
-                                </li>
-                                <li role="option" tabindex="0" class="fd-list__item">
-                                    <span class="fd-list__title">Plum</span>
-                                </li>
-                                <li role="option" tabindex="0" class="fd-list__item">
-                                    <span class="fd-list__title">Mango</span>
-                                </li>
-                                <li role="option" tabindex="0" class="fd-list__item">
-                                    <span class="fd-list__title">Strawberry</span>
-                                </li>
-                                <li role="option" tabindex="0" class="fd-list__item">
-                                    <span class="fd-list__title">Blueberry</span>
-                                </li>
-                                <li role="option" tabindex="0" class="fd-list__item">
-                                    <span class="fd-list__title">Watermelon</span>
-                                </li>
-                                <li role="option" tabindex="0" class="fd-list__item">
-                                    <span class="fd-list__title">Honeydew</span>
-                                </li>
-                            </ul>
-                        </div>
+            </div>
+            <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--dropdown fd-popover__body--dropdown-fill" aria-hidden="false" id="amsfiaufuaskhjd">
+                <div class="fd-popover__wrapper docs-max-height">
+                    <ul aria-label="fruit options" class="fd-list fd-list--dropdown" role="listbox">
+                        <li role="option" tabindex="0" class="fd-list__item is-selected">
+                            <span class="fd-list__title">
+                                <span class="fd-list__bold">App</span>le
+                                </span>
+                            </li>
+                            <li role="option" tabindex="0" class="fd-list__item">
+                                <span class="fd-list__title">Orange</span>
+                            </li>
+                            <li role="option" tabindex="0" class="fd-list__item">
+                                <span class="fd-list__title">Banana</span>
+                            </li>
+                            <li role="option" tabindex="0" class="fd-list__item">
+                                <span class="fd-list__title">Kiwi</span>
+                            </li>
+                            <li role="option" tabindex="0" class="fd-list__item">
+                                <span class="fd-list__title">Nectarine</span>
+                            </li>
+                            <li role="option" tabindex="0" class="fd-list__item">
+                                <span class="fd-list__title">Apricots</span>
+                            </li>
+                            <li role="option" tabindex="0" class="fd-list__item">
+                                <span class="fd-list__title">Peache</span>
+                            </li>
+                            <li role="option" tabindex="0" class="fd-list__item">
+                                <span class="fd-list__title">Plum</span>
+                            </li>
+                            <li role="option" tabindex="0" class="fd-list__item">
+                                <span class="fd-list__title">Mango</span>
+                            </li>
+                            <li role="option" tabindex="0" class="fd-list__item">
+                                <span class="fd-list__title">Strawberry</span>
+                            </li>
+                            <li role="option" tabindex="0" class="fd-list__item">
+                                <span class="fd-list__title">Blueberry</span>
+                            </li>
+                            <li role="option" tabindex="0" class="fd-list__item">
+                                <span class="fd-list__title">Watermelon</span>
+                            </li>
+                            <li role="option" tabindex="0" class="fd-list__item">
+                                <span class="fd-list__title">Honeydew</span>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
+        </div>
 ```
 
 ## Modifiers
@@ -217,60 +223,63 @@ Applications are free to override this in their custom styles if needed and own 
                         <i class="sap-icon--navigation-down-arrow"></i></button>
                     </span>
                 </div>
-                <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--dropdown fd-popover__body--dropdown-fill" aria-hidden="false" id="amsfiaufuaskhjd">
-                    <div class="fd-popover__wrapper docs-max-height">
-                        <ul aria-label="fruit options" class="fd-list fd-list--dropdown" role="listbox">
-                            <li role="option" tabindex="0" class="fd-list__item is-selected">
-                                <span class="fd-list__title">
-                                    <span class="fd-list__bold">App</span>le
-                                    </span>
-                                </li>
-                                <li role="option" tabindex="0" class="fd-list__item">
-                                    <span class="fd-list__title">Orange</span>
-                                </li>
-                                <li role="option" tabindex="0" class="fd-list__item">
-                                    <span class="fd-list__title">Banana</span>
-                                </li>
-                                <li role="option" tabindex="0" class="fd-list__item">
-                                    <span class="fd-list__title">Kiwi</span>
-                                </li>
-                                <li role="option" tabindex="0" class="fd-list__item">
-                                    <span class="fd-list__title">Nectarine</span>
-                                </li>
-                                <li role="option" tabindex="0" class="fd-list__item">
-                                    <span class="fd-list__title">Apricots</span>
-                                </li>
-                                <li role="option" tabindex="0" class="fd-list__item">
-                                    <span class="fd-list__title">Peache</span>
-                                </li>
-                                <li role="option" tabindex="0" class="fd-list__item">
-                                    <span class="fd-list__title">Plum</span>
-                                </li>
-                                <li role="option" tabindex="0" class="fd-list__item">
-                                    <span class="fd-list__title">Mango</span>
-                                </li>
-                                <li role="option" tabindex="0" class="fd-list__item">
-                                    <span class="fd-list__title">Strawberry</span>
-                                </li>
-                                <li role="option" tabindex="0" class="fd-list__item">
-                                    <span class="fd-list__title">Blueberry</span>
-                                </li>
-                                <li role="option" tabindex="0" class="fd-list__item">
-                                    <span class="fd-list__title">Watermelon</span>
-                                </li>
-                                <li role="option" tabindex="0" class="fd-list__item">
-                                    <span class="fd-list__title">Honeydew</span>
-                                </li>
-                            </ul>
-                        </div>
+            </div>
+            <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--dropdown fd-popover__body--dropdown-fill" aria-hidden="false" id="amsfiaufuaskhjd">
+                <div class="fd-popover__wrapper docs-max-height">
+                    <ul aria-label="fruit options" class="fd-list fd-list--dropdown" role="listbox">
+                        <li role="option" tabindex="0" class="fd-list__item is-selected">
+                            <span class="fd-list__title">
+                                <span class="fd-list__bold">App</span>le
+                                </span>
+                            </li>
+                            <li role="option" tabindex="0" class="fd-list__item">
+                                <span class="fd-list__title">Orange</span>
+                            </li>
+                            <li role="option" tabindex="0" class="fd-list__item">
+                                <span class="fd-list__title">Banana</span>
+                            </li>
+                            <li role="option" tabindex="0" class="fd-list__item">
+                                <span class="fd-list__title">Kiwi</span>
+                            </li>
+                            <li role="option" tabindex="0" class="fd-list__item">
+                                <span class="fd-list__title">Nectarine</span>
+                            </li>
+                            <li role="option" tabindex="0" class="fd-list__item">
+                                <span class="fd-list__title">Apricots</span>
+                            </li>
+                            <li role="option" tabindex="0" class="fd-list__item">
+                                <span class="fd-list__title">Peache</span>
+                            </li>
+                            <li role="option" tabindex="0" class="fd-list__item">
+                                <span class="fd-list__title">Plum</span>
+                            </li>
+                            <li role="option" tabindex="0" class="fd-list__item">
+                                <span class="fd-list__title">Mango</span>
+                            </li>
+                            <li role="option" tabindex="0" class="fd-list__item">
+                                <span class="fd-list__title">Strawberry</span>
+                            </li>
+                            <li role="option" tabindex="0" class="fd-list__item">
+                                <span class="fd-list__title">Blueberry</span>
+                            </li>
+                            <li role="option" tabindex="0" class="fd-list__item">
+                                <span class="fd-list__title">Watermelon</span>
+                            </li>
+                            <li role="option" tabindex="0" class="fd-list__item">
+                                <span class="fd-list__title">Honeydew</span>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
+        </div>
 ```
 
 ### TwoItemsAndItemsGrouping
 
-The \
+The `ComboBox` component can be customized by adding additional information in additional columns as seen below.
+
+In cases where the list items need to be categorized into groups, it is possible to add headers for each category.
 
 ```html
 <label for="twoItems" class="fd-form-label">Product prices</label>
@@ -295,98 +304,103 @@ The \
                     <i class="sap-icon--navigation-down-arrow"></i>
                 </button>
             </span>
-            <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--dropdown fd-popover__body--dropdown-fill" aria-hidden="false" id="F4GRTGLK6">
-                <div class="fd-popover__wrapper">
-                    <ul aria-label="fruit options" class="fd-list fd-list--dropdown" role="listbox">
-                        <li class="fd-list__item is-selected" role="option" tabindex="0">
-                            <span class="fd-list__title">Product 1</span>
-                            <span class="fd-list__secondary">1000 EUR</span>
-                        </li>
-                        <li class="fd-list__item" role="option" tabindex="0">
-                            <span class="fd-list__title">Product 2</span>
-                            <span class="fd-list__secondary">750 EUR</span>
-                        </li>
-                        <li class="fd-list__item" role="option" tabindex="0">
-                            <span class="fd-list__title">Product 3</span>
-                            <span class="fd-list__secondary">780 EUR</span>
-                        </li>
-                        <li class="fd-list__item" role="option" tabindex="0">
-                            <span class="fd-list__title">Product 4</span>
-                            <span class="fd-list__secondary">40 EUR</span>
-                        </li>
-                    </ul>
-                </div>
-            </div>
         </div>
     </div>
-    <label for="groupedItems" class="fd-form-label">Fruits and Vegetables</label>
-    <div class="fd-popover">
-        <div class="fd-popover__control" aria-controls="F4GcXLK6" aria-expanded="true" aria-haspopup="true"
-            id="mad09sudka"
-            onclick="
-            toggleElAttrs('F4GcXLK6', ['aria-hidden']);
-            toggleElAttrs('mad09sudka', ['aria-expanded']);
-            toggleElAttrs('masioda8sdh', ['aria-expanded']);
-            ">
-            <div class="fd-input-group fd-input-group--control">
-                <input type="text" class="fd-input fd-input-group__input" id="groupedItems" placeholder="Select Ingredient">
-                <span class="fd-input-group__addon fd-input-group__addon--button">
-                    <button
-                        id="masioda8sdh"
-                        aria-label="show/hide fruit options"
-                        aria-controls="F4GcXLK6"
-                        aria-expanded="true"
-                        aria-haspopup="true"
-                        class="fd-input-group__button fd-button fd-button--transparent">
-                        <i class="sap-icon--navigation-down-arrow"></i>
-                    </button>
-                </span>
-            </div>
-            <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--dropdown fd-popover__body--dropdown-fill" aria-hidden="false" id="F4GcXLK6">
-                <div class="fd-popover__wrapper">
-                    <label id="fruitListHeader" class="fd-list__group-header">
-                        <span class="fd-list__title">Fruits</span>
-                    </label>
-                    <ul aria-labelledby="fruitListHeader" class="fd-list fd-list--dropdown" role="listbox">
-                        <li role="option" tabindex="0" class="fd-list__item is-selected">
-                            <span class="fd-list__title">Apple</span>
-                        </li>
-                        <li role="option" tabindex="0" class="fd-list__item">
-                            <span class="fd-list__title">Orange</span>
-                        </li>
-                        <li role="option" tabindex="0" class="fd-list__item">
-                            <span class="fd-list__title">Banana</span>
-                        </li>
-                        <li role="option" tabindex="0" class="fd-list__item">
-                            <span class="fd-list__title">Kiwi</span>
-                        </li>
-                    </ul>
-                    <label id="vegListHeader" class="fd-list__group-header">
-                        <span class="fd-list__title">Vegetables</span>
-                    </label>
-                    <ul aria-labelledby="vegListHeader" class="fd-list fd-list--dropdown" role="listbox">
-                        <li role="option" tabindex="0" class="fd-list__item">
-                            <span class="fd-list__title">Tomato</span>
-                        </li>
-                        <li role="option" tabindex="0" class="fd-list__item">
-                            <span class="fd-list__title">Onion</span>
-                        </li>
-                        <li role="option" tabindex="0" class="fd-list__item">
-                            <span class="fd-list__title">Spinach</span>
-                        </li>
-                        <li role="option" tabindex="0" class="fd-list__item">
-                            <span class="fd-list__title">Potato</span>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+    <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--dropdown fd-popover__body--dropdown-fill" aria-hidden="false" id="F4GRTGLK6">
+        <div class="fd-popover__wrapper">
+            <ul aria-label="fruit options" class="fd-list fd-list--dropdown" role="listbox">
+                <li class="fd-list__item is-selected" role="option" tabindex="0">
+                    <span class="fd-list__title">Product 1</span>
+                    <span class="fd-list__secondary">1000 EUR</span>
+                </li>
+                <li class="fd-list__item" role="option" tabindex="0">
+                    <span class="fd-list__title">Product 2</span>
+                    <span class="fd-list__secondary">750 EUR</span>
+                </li>
+                <li class="fd-list__item" role="option" tabindex="0">
+                    <span class="fd-list__title">Product 3</span>
+                    <span class="fd-list__secondary">780 EUR</span>
+                </li>
+                <li class="fd-list__item" role="option" tabindex="0">
+                    <span class="fd-list__title">Product 4</span>
+                    <span class="fd-list__secondary">40 EUR</span>
+                </li>
+            </ul>
         </div>
+    </div>
+</div>
+
+<label for="groupedItems" class="fd-form-label">Fruits and Vegetables</label>
+<div class="fd-popover">
+    <div class="fd-popover__control" aria-controls="F4GcXLK6" aria-expanded="true" aria-haspopup="true"
+        id="mad09sudka"
+        onclick="
+        toggleElAttrs('F4GcXLK6', ['aria-hidden']);
+        toggleElAttrs('mad09sudka', ['aria-expanded']);
+        toggleElAttrs('masioda8sdh', ['aria-expanded']);
+        ">
+        <div class="fd-input-group fd-input-group--control">
+            <input type="text" class="fd-input fd-input-group__input" id="groupedItems" placeholder="Select Ingredient">
+            <span class="fd-input-group__addon fd-input-group__addon--button">
+                <button
+                    id="masioda8sdh"
+                    aria-label="show/hide fruit options"
+                    aria-controls="F4GcXLK6"
+                    aria-expanded="true"
+                    aria-haspopup="true"
+                    class="fd-input-group__button fd-button fd-button--transparent">
+                    <i class="sap-icon--navigation-down-arrow"></i>
+                </button>
+            </span>
+        </div>
+    </div>
+    <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--dropdown fd-popover__body--dropdown-fill" aria-hidden="false" id="F4GcXLK6">
+        <div class="fd-popover__wrapper">
+            <label id="fruitListHeader" class="fd-list__group-header">
+                <span class="fd-list__title">Fruits</span>
+            </label>
+            <ul aria-labelledby="fruitListHeader" class="fd-list fd-list--dropdown" role="listbox">
+                <li role="option" tabindex="0" class="fd-list__item is-selected">
+                    <span class="fd-list__title">Apple</span>
+                </li>
+                <li role="option" tabindex="0" class="fd-list__item">
+                    <span class="fd-list__title">Orange</span>
+                </li>
+                <li role="option" tabindex="0" class="fd-list__item">
+                    <span class="fd-list__title">Banana</span>
+                </li>
+                <li role="option" tabindex="0" class="fd-list__item">
+                    <span class="fd-list__title">Kiwi</span>
+                </li>
+            </ul>
+            <label id="vegListHeader" class="fd-list__group-header">
+                <span class="fd-list__title">Vegetables</span>
+            </label>
+            <ul aria-labelledby="vegListHeader" class="fd-list fd-list--dropdown" role="listbox">
+                <li role="option" tabindex="0" class="fd-list__item">
+                    <span class="fd-list__title">Tomato</span>
+                </li>
+                <li role="option" tabindex="0" class="fd-list__item">
+                    <span class="fd-list__title">Onion</span>
+                </li>
+                <li role="option" tabindex="0" class="fd-list__item">
+                    <span class="fd-list__title">Spinach</span>
+                </li>
+                <li role="option" tabindex="0" class="fd-list__item">
+                    <span class="fd-list__title">Potato</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
 ```
 
 ### MatchPopoverBodySize
 
 The default length size of the popover body is often different from the text length.
-The body length can be adjusted to match the text length by adding the \
+The body length can be adjusted to match the text length by adding the `fd-popover__body--dropdown-fill` class to the `fd-popover__body`.
+This class has been added to all the `Combobox` examples above.
+In the example you can see how the `Combobox` component looks without the `fd-popover__body--dropdown-fill` modifier.
 
 ```html
 <label for="matchPopoverBodySize" class="fd-form-label">Match Popover Body Size</label>
@@ -411,31 +425,36 @@ The body length can be adjusted to match the text length by adding the \
                     <i class="sap-icon--navigation-down-arrow"></i>
                 </button>
             </span>
-            <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--dropdown" aria-hidden="false" id="F4HTFDLK6">
-                <div class="fd-popover__wrapper">
-                    <ul aria-label="fruit options" class="fd-list fd-list--dropdown" role="listbox">
-                        <li role="option" tabindex="0" class="fd-list__item is-selected">
-                            <span class="fd-list__title">Apple</span>
-                        </li>
-                        <li role="option" tabindex="0" class="fd-list__item">
-                            <span class="fd-list__title">Orange</span>
-                        </li>
-                        <li role="option" tabindex="0" class="fd-list__item">
-                            <span class="fd-list__title">Banana</span>
-                        </li>
-                        <li role="option" tabindex="0" class="fd-list__item">
-                            <span class="fd-list__title">Kiwi</span>
-                        </li>
-                    </ul>
-                </div>
-            </div>
         </div>
     </div>
+    <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--dropdown" aria-hidden="false" id="F4HTFDLK6">
+        <div class="fd-popover__wrapper">
+            <ul aria-label="fruit options" class="fd-list fd-list--dropdown" role="listbox">
+                <li role="option" tabindex="0" class="fd-list__item is-selected">
+                    <span class="fd-list__title">Apple</span>
+                </li>
+                <li role="option" tabindex="0" class="fd-list__item">
+                    <span class="fd-list__title">Orange</span>
+                </li>
+                <li role="option" tabindex="0" class="fd-list__item">
+                    <span class="fd-list__title">Banana</span>
+                </li>
+                <li role="option" tabindex="0" class="fd-list__item">
+                    <span class="fd-list__title">Kiwi</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
 ```
 
 ### DisabledAndReadOnly
 
-To disable a \
+To disable a `Combobox` component, the disabled attribute needs to be added to the `fd-popover__control` and the `fd-input__control` elements.
+The disabled state can also be achieved by adding the `.is-disable` class or the `aria-disabled="true"` attribute.
+
+To make the `Combobox` component read-only, the readonly attribute needs to be added to the `fd-nput-group` element.
+This can also be done by using the `.is-readonly` class or `aria-readonly="true"` attribute.
 
 ```html
 <label for="disabledCombobox" class="fd-form-label">Disabled</label>
@@ -450,18 +469,23 @@ To disable a \
             </span>
         </div>
     </div>
-    <label for="readonlyCombobox" class="fd-form-label">Readonly</label>
-    <div class="fd-popover">
-        <div class="fd-popover__control" aria-controls="F4GcX348" aria-expanded="false" aria-haspopup="false" aria-readonly="true" readonly>
-            <input type="text" class="fd-input fd-input-group__input" id="readonlyCombobox" value="Orange" aria-readonly="true" readonly>
-        </div>
+</div>
+
+<label for="readonlyCombobox" class="fd-form-label">Readonly</label>
+<div class="fd-popover">
+    <div class="fd-popover__control" aria-controls="F4GcX348" aria-expanded="false" aria-haspopup="false" aria-readonly="true" readonly>
+        <input type="text" class="fd-input fd-input-group__input" id="readonlyCombobox" value="Orange" aria-readonly="true" readonly>
     </div>
 </div>
 ```
 
 ### Semantic
 
-For a complete list of states supported by the \
+For a complete list of states supported by the `combobox` component, please see the documentation for the form or select components.
+
+The semantic mode can be used to modify the combobox component by adding one of
+`is-error` | `is-success` | `is-warning` | `is-information` classes into fd-input-group element.
+To add text in the `body` of the component, simply include your text in the `fd-list__message` under the `ul` element.
 
 ```html
 <label for="semanticCombobox" class="fd-form-label">Semantic Combobox</label>
@@ -483,34 +507,35 @@ For a complete list of states supported by the \
                 </button>
             </span>
         </div>
-        <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--dropdown fd-popover__body--dropdown-fill" aria-hidden="false" id="F4GcEX34">
-            <div class="fd-popover__wrapper">
-                <span class="fd-list__message fd-list__message--success">Success message</span>
-                <ul aria-label="fruit options" class="fd-list fd-list--has-message fd-list--dropdown" role="listbox">
-                    <li role="option" tabindex="0" class="fd-list__item is-selected">
-                        <span class="fd-list__title">
-                            <span class="fd-list__bold">App</span>le
-                            </span>
-                        </li>
-                        <li role="option" tabindex="0" class="fd-list__item">
-                            <span class="fd-list__title">Orange</span>
-                        </li>
-                        <li role="option" tabindex="0" class="fd-list__item">
-                            <span class="fd-list__title">Banana</span>
-                        </li>
-                        <li role="option" tabindex="0" class="fd-list__item">
-                            <span class="fd-list__title">Kiwi</span>
-                        </li>
-                    </ul>
-                </div>
+    </div>
+    <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--dropdown fd-popover__body--dropdown-fill" aria-hidden="false" id="F4GcEX34">
+        <div class="fd-popover__wrapper">
+            <span class="fd-list__message fd-list__message--success">Success message</span>
+            <ul aria-label="fruit options" class="fd-list fd-list--has-message fd-list--dropdown" role="listbox">
+                <li role="option" tabindex="0" class="fd-list__item is-selected">
+                    <span class="fd-list__title">
+                        <span class="fd-list__bold">App</span>le
+                        </span>
+                    </li>
+                    <li role="option" tabindex="0" class="fd-list__item">
+                        <span class="fd-list__title">Orange</span>
+                    </li>
+                    <li role="option" tabindex="0" class="fd-list__item">
+                        <span class="fd-list__title">Banana</span>
+                    </li>
+                    <li role="option" tabindex="0" class="fd-list__item">
+                        <span class="fd-list__title">Kiwi</span>
+                    </li>
+                </ul>
             </div>
         </div>
+    </div>
 ```
 
 ### Mobile
 
 For mobile devices, or tablets, combobox component should be displayed in fullscreen mode.
-So instead of using popover and dropdown, it should be wrapped in \
+So instead of using popover and dropdown, it should be wrapped in `dialog` and `bar` components.
 
 ```html
 <div class="fd-dialog fd-dialog-docs-static fd-select-docs-max-height fd-dialog--active"
@@ -589,11 +614,12 @@ So instead of using popover and dropdown, it should be wrapped in \
             </div>
         </footer>
     </section>
+</div>
 ```
 
 ### Long text
 
-Combobox dropdown list items wrap long option text by default (\
+Combobox dropdown list items wrap long option text by default (`white-space: normal`). To opt out and truncate instead, add the `fd-list__title--no-wrap` modifier to the `fd-list__title` span inside each list item.
 
 ```html
 <div class="fd-form-item">
@@ -608,58 +634,58 @@ Combobox dropdown list items wrap long option text by default (\
                     </button>
                 </span>
             </div>
-            <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--dropdown fd-popover__body--dropdown-fill" aria-hidden="false" id="lt-combobox-wrap-body">
-                <ul aria-label="Configuration template options" class="fd-list fd-list--dropdown" role="listbox">
-                    <li role="option" tabindex="0" class="fd-list__item is-selected">
-                        <span class="fd-list__title">Database Connectivity Protocol Configuration for Production Environment Cluster</span>
-                    </li>
-                    <li role="option" tabindex="0" class="fd-list__item">
-                        <span class="fd-list__title">Enterprise Resource Planning System Integration with Legacy SAP Backend Services</span>
-                    </li>
-                    <li role="option" tabindex="0" class="fd-list__item">
-                        <span class="fd-list__title">Supply Chain Management Workflow Automation and Real-Time Inventory Synchronisation</span>
-                    </li>
-                    <li role="option" tabindex="0" class="fd-list__item">
-                        <span class="fd-list__title">Customer Relationship Management Analytics Dashboard Configuration Template</span>
-                    </li>
-                </ul>
-            </div>
         </div>
-        <p>Default — wraps</p>
+        <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--dropdown fd-popover__body--dropdown-fill" aria-hidden="false" id="lt-combobox-wrap-body">
+            <ul aria-label="Configuration template options" class="fd-list fd-list--dropdown" role="listbox">
+                <li role="option" tabindex="0" class="fd-list__item is-selected">
+                    <span class="fd-list__title">Database Connectivity Protocol Configuration for Production Environment Cluster</span>
+                </li>
+                <li role="option" tabindex="0" class="fd-list__item">
+                    <span class="fd-list__title">Enterprise Resource Planning System Integration with Legacy SAP Backend Services</span>
+                </li>
+                <li role="option" tabindex="0" class="fd-list__item">
+                    <span class="fd-list__title">Supply Chain Management Workflow Automation and Real-Time Inventory Synchronisation</span>
+                </li>
+                <li role="option" tabindex="0" class="fd-list__item">
+                    <span class="fd-list__title">Customer Relationship Management Analytics Dashboard Configuration Template</span>
+                </li>
+            </ul>
+        </div>
     </div>
+    <p>Default — wraps</p>
+</div>
 
-    <div class="fd-form-item">
-        <label for="lt-combobox-nowrap" class="fd-form-label">Configuration template</label>
-        <div class="fd-popover">
-            <div class="fd-popover__control">
-                <div class="fd-input-group fd-input-group--control">
-                    <input type="text" class="fd-input fd-input-group__input" id="lt-combobox-nowrap" value="Database Connectivity Protocol Configuration for Production Environment">
-                    <span class="fd-input-group__addon fd-input-group__addon--button">
-                        <button aria-label="Show options" aria-controls="lt-combobox-nowrap-body" aria-expanded="true" aria-haspopup="true" class="fd-input-group__button fd-button fd-button--transparent">
-                            <i class="sap-icon--navigation-down-arrow"></i>
-                        </button>
-                    </span>
-                </div>
-            </div>
-            <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--dropdown fd-popover__body--dropdown-fill" aria-hidden="false" id="lt-combobox-nowrap-body">
-                <ul aria-label="Configuration template options" class="fd-list fd-list--dropdown" role="listbox">
-                    <li role="option" tabindex="0" class="fd-list__item is-selected">
-                        <span class="fd-list__title fd-list__title--no-wrap">Database Connectivity Protocol Configuration for Production Environment Cluster</span>
-                    </li>
-                    <li role="option" tabindex="0" class="fd-list__item">
-                        <span class="fd-list__title fd-list__title--no-wrap">Enterprise Resource Planning System Integration with Legacy SAP Backend Services</span>
-                    </li>
-                    <li role="option" tabindex="0" class="fd-list__item">
-                        <span class="fd-list__title fd-list__title--no-wrap">Supply Chain Management Workflow Automation and Real-Time Inventory Synchronisation</span>
-                    </li>
-                    <li role="option" tabindex="0" class="fd-list__item">
-                        <span class="fd-list__title fd-list__title--no-wrap">Customer Relationship Management Analytics Dashboard Configuration Template</span>
-                    </li>
-                </ul>
+<div class="fd-form-item">
+    <label for="lt-combobox-nowrap" class="fd-form-label">Configuration template</label>
+    <div class="fd-popover">
+        <div class="fd-popover__control">
+            <div class="fd-input-group fd-input-group--control">
+                <input type="text" class="fd-input fd-input-group__input" id="lt-combobox-nowrap" value="Database Connectivity Protocol Configuration for Production Environment">
+                <span class="fd-input-group__addon fd-input-group__addon--button">
+                    <button aria-label="Show options" aria-controls="lt-combobox-nowrap-body" aria-expanded="true" aria-haspopup="true" class="fd-input-group__button fd-button fd-button--transparent">
+                        <i class="sap-icon--navigation-down-arrow"></i>
+                    </button>
+                </span>
             </div>
         </div>
-        <p>With <code>fd-list__title--no-wrap</code> (opt-out)</p>
+        <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--dropdown fd-popover__body--dropdown-fill" aria-hidden="false" id="lt-combobox-nowrap-body">
+            <ul aria-label="Configuration template options" class="fd-list fd-list--dropdown" role="listbox">
+                <li role="option" tabindex="0" class="fd-list__item is-selected">
+                    <span class="fd-list__title fd-list__title--no-wrap">Database Connectivity Protocol Configuration for Production Environment Cluster</span>
+                </li>
+                <li role="option" tabindex="0" class="fd-list__item">
+                    <span class="fd-list__title fd-list__title--no-wrap">Enterprise Resource Planning System Integration with Legacy SAP Backend Services</span>
+                </li>
+                <li role="option" tabindex="0" class="fd-list__item">
+                    <span class="fd-list__title fd-list__title--no-wrap">Supply Chain Management Workflow Automation and Real-Time Inventory Synchronisation</span>
+                </li>
+                <li role="option" tabindex="0" class="fd-list__item">
+                    <span class="fd-list__title fd-list__title--no-wrap">Customer Relationship Management Analytics Dashboard Configuration Template</span>
+                </li>
+            </ul>
+        </div>
     </div>
+    <p>With <code>fd-list__title--no-wrap</code> (opt-out)</p>
 </div>
 ```
 

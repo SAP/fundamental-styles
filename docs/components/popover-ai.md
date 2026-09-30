@@ -35,7 +35,7 @@ Guided prompts provide structured input-UIs to guide the user in instructing the
 The <b>input content</b> within the container includes a variety of input controls, selected based on the use case. It's important to use a diverse range of controls and avoid relying solely on drop-down menus. All controls should adhere to the Design System's visual, behavioral, and interaction guidelines.<br>
 The <b>action</b> for the guided prompt is defined according to the use case and aligned with User Assistance. The placement of the action follows the container's general guidelines, while the button's visual design adheres to the AI-specific guidance. <br><br>
 
-<b>Variants:</b> 
+<b>Variants:</b>
 <b>Popover:</b> Ideal for guiding prompts tied to a specific input, such as text. It offers quick, limited options that directly affect the related content.<br>
 <b>Dialog:</b> Suitable for more complex guided prompts. Avoid layering multiple dialogs.<br>
 <b>Dynamic Side Content:</b> Useful for displaying dense information without losing connection to the main content. It's great for complex prompts without causing significant disruption.
@@ -53,7 +53,6 @@ npm install fundamental-styles
 
 <!-- Include component CSS -->
 <link href="node_modules/fundamental-styles/dist/popover.css" rel="stylesheet">
-
 ```
 
 ## Basic Usage
@@ -225,23 +224,25 @@ npm install fundamental-styles
                     <button aria-label="Pool" class="fd-button"><span class="fd-button__text">Formal</span></button>
                 </div>
             </div>
+        </div>
 
-            <footer class="fd-popover__body-footer">
-                <div class="fd-bar fd-bar--footer">
-                    <div class="fd-bar__right">
-                        <div class="fd-bar__element">
-                            <button class="fd-button fd-button--emphasized">
-                                <i class="sap-icon--ai"></i>
-                                <span class="fd-button__text">Apply</span>
-                            </button>
-                        </div>
-                        <div class="fd-bar__element">
-                            <button class="fd-button fd-button--transparent"><span class="fd-button__text">Close</span></button>
-                        </div>
+        <footer class="fd-popover__body-footer">
+            <div class="fd-bar fd-bar--footer">
+                <div class="fd-bar__right">
+                    <div class="fd-bar__element">
+                        <button class="fd-button fd-button--emphasized">
+                            <i class="sap-icon--ai"></i>
+                            <span class="fd-button__text">Apply</span>
+                        </button>
+                    </div>
+                    <div class="fd-bar__element">
+                        <button class="fd-button fd-button--transparent"><span class="fd-button__text">Close</span></button>
                     </div>
                 </div>
-            </footer>
-        </section>
+            </div>
+        </footer>
+    </section>
+</div>
 ```
 
 ## States
@@ -432,23 +433,25 @@ This component uses the following BEM elements:
                     <button aria-label="Pool" class="fd-button"><span class="fd-button__text">Formal</span></button>
                 </div>
             </div>
+        </div>
 
-            <footer class="fd-popover__body-footer">
-                <div class="fd-bar fd-bar--footer">
-                    <div class="fd-bar__right">
-                        <div class="fd-bar__element">
-                            <button class="fd-button fd-button--emphasized">
-                                <i class="sap-icon--ai"></i>
-                                <span class="fd-button__text">Apply</span>
-                            </button>
-                        </div>
-                        <div class="fd-bar__element">
-                            <button class="fd-button fd-button--transparent"><span class="fd-button__text">Close</span></button>
-                        </div>
+        <footer class="fd-popover__body-footer">
+            <div class="fd-bar fd-bar--footer">
+                <div class="fd-bar__right">
+                    <div class="fd-bar__element">
+                        <button class="fd-button fd-button--emphasized">
+                            <i class="sap-icon--ai"></i>
+                            <span class="fd-button__text">Apply</span>
+                        </button>
+                    </div>
+                    <div class="fd-bar__element">
+                        <button class="fd-button fd-button--transparent"><span class="fd-button__text">Close</span></button>
                     </div>
                 </div>
-            </footer>
-        </section>
+            </div>
+        </footer>
+    </section>
+</div>
 ```
 
 ## Accessibility

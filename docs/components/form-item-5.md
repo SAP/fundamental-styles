@@ -18,7 +18,24 @@ The input control offers four value states, for which can be shown an additional
 
 ##Modifier classes.
 
-Apply the following modifier classes to the \
+Apply the following modifier classes to the `fd-input` element to reflect various input states:
+
+States | Class
+:----- | :----
+Success | `is-success`
+Error |`is-error`
+Warning | `is-warning`
+Information |  `is-information`
+
+<br>
+Apply the following modifier classes to the `fd-form-message ` element to indicate different message types:
+
+States | Class
+:----- | :----
+Success | `fd-form-message--success`
+Error | `fd-form-message--error`
+Warning |  `fd-form-message--warning`
+Information |  `fd-form-message--information`
 
 ## Installation
 
@@ -32,7 +49,6 @@ npm install fundamental-styles
 
 <!-- Include component CSS -->
 <link href="node_modules/fundamental-styles/dist/form-item.css" rel="stylesheet">
-
 ```
 
 ## Basic Usage

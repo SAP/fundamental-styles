@@ -65,7 +65,7 @@ Key CSS variables used by this component:
 
 ### Default
 
-To use themeable scrollbar use \
+To use themeable scrollbar use `fd-scrollbar` class on scrollable element.
 
 ```html
 

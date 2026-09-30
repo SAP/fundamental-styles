@@ -655,7 +655,9 @@ Key CSS variables used by this component:
 ### Fixed card layout with 3 columns
 
 Cards arrangement in a 3 column layout.
-* Use \
+* Use `fd-fixed-card-layout__card-layout` class for the wrapper element, specify amount of columns with `fd-fixed-card-layout__card-layout--columns-N` class, where `1 < N < 11`.
+Layout is single column by default. Also, set `height` or `max-height` for the wrapper element.
+* Apply `fd-fixed-card-layout__card` class to the every card element.
 
 ```html
 <div class="fd-fixed-card-layout__card-layout fd-fixed-card-layout__card-layout--columns-3" >
