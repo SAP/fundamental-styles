@@ -130,6 +130,114 @@ function checkRequiredSections(content, frontmatter) {
 /**
  * Validate HTML code blocks
  */
+function* scanHTMLTokens(html) {
+    const rawTextElements = new Set(['iframe', 'noembed', 'noframes', 'script', 'style', 'textarea', 'title', 'xmp']);
+    let cursor = 0;
+    let rawTextElement = null;
+
+    while (cursor < html.length) {
+        if (rawTextElement) {
+            const closingTagRegex = new RegExp(`</\\s*${rawTextElement}\\s*>`, 'gi');
+            closingTagRegex.lastIndex = cursor;
+            const closingTagMatch = closingTagRegex.exec(html);
+            if (!closingTagMatch) {
+                return;
+            }
+
+            yield {
+                value: closingTagMatch[0],
+                index: closingTagMatch.index,
+                end: closingTagRegex.lastIndex
+            };
+            cursor = closingTagRegex.lastIndex;
+            rawTextElement = null;
+            continue;
+        }
+
+        const tokenStart = html.indexOf('<', cursor);
+        if (tokenStart < 0) {
+            return;
+        }
+
+        if (html.startsWith('<!--', tokenStart)) {
+            const commentEnd = html.indexOf('-->', tokenStart + 4);
+            if (commentEnd < 0) {
+                return;
+            }
+
+            const tokenEnd = commentEnd + 3;
+            yield { value: html.slice(tokenStart, tokenEnd), index: tokenStart, end: tokenEnd };
+            cursor = tokenEnd;
+            continue;
+        }
+
+        if (html.startsWith('<![CDATA[', tokenStart)) {
+            const cdataEnd = html.indexOf(']]>', tokenStart + 9);
+            if (cdataEnd < 0) {
+                return;
+            }
+
+            const tokenEnd = cdataEnd + 3;
+            yield { value: html.slice(tokenStart, tokenEnd), index: tokenStart, end: tokenEnd };
+            cursor = tokenEnd;
+            continue;
+        }
+
+        let tagCursor = tokenStart + 1;
+        if (html[tagCursor] === '/') {
+            tagCursor++;
+        }
+
+        const isDeclaration = html[tagCursor] === '!' || html[tagCursor] === '?';
+        if (!isDeclaration && !/[a-z]/i.test(html[tagCursor] ?? '')) {
+            cursor = tokenStart + 1;
+            continue;
+        }
+
+        let quote = null;
+        let quotedGreaterThan = -1;
+        let tokenEnd = -1;
+        for (let index = tagCursor + 1; index < html.length; index++) {
+            const character = html[index];
+            if (quote) {
+                if (character === quote) {
+                    quote = null;
+                    quotedGreaterThan = -1;
+                } else if (character === '>') {
+                    quotedGreaterThan = index;
+                } else if (character === '<' && quotedGreaterThan >= 0) {
+                    tokenEnd = quotedGreaterThan + 1;
+                    break;
+                }
+            } else if (character === '"' || character === "'") {
+                let previousIndex = index - 1;
+                while (/\s/.test(html[previousIndex] ?? '')) {
+                    previousIndex--;
+                }
+                if (html[previousIndex] === '=') {
+                    quote = character;
+                }
+            } else if (character === '>') {
+                tokenEnd = index + 1;
+                break;
+            }
+        }
+
+        if (tokenEnd < 0) {
+            return;
+        }
+
+        const value = html.slice(tokenStart, tokenEnd);
+        yield { value, index: tokenStart, end: tokenEnd };
+        cursor = tokenEnd;
+
+        const tagMatch = value.match(/^<\s*(\/?)\s*([a-z][a-z0-9:-]*)\b/i);
+        if (tagMatch && !tagMatch[1] && !/\/\s*>$/.test(value) && rawTextElements.has(tagMatch[2].toLowerCase())) {
+            rawTextElement = tagMatch[2].toLowerCase();
+        }
+    }
+}
+
 function validateHTMLBlocks(content) {
     const errors = [];
     const warnings = [];
@@ -159,11 +267,8 @@ function validateHTMLBlocks(content) {
         blockIndex++;
         const html = match[1];
         const openTags = [];
-        const htmlTokenRegex = /<!--[\s\S]*?-->|<![^>]*>|<\?[^>]*\?>|<\/?[a-z][^>]*>/gi;
-        let htmlTokenMatch;
-
-        while ((htmlTokenMatch = htmlTokenRegex.exec(html)) !== null) {
-            const tag = htmlTokenMatch[0];
+        for (const htmlToken of scanHTMLTokens(html)) {
+            const tag = htmlToken.value;
             if (tag.startsWith('<!--') || tag.startsWith('<!') || tag.startsWith('<?')) {
                 continue;
             }

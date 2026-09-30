@@ -186,6 +186,22 @@ describe('documentation extractor', () => {
         expect(validateHTMLBlocks(markdown).errors).toEqual([]);
     });
 
+    it('preserves paired tags when quoted attributes contain tag delimiters', () => {
+        const storyPath = createStoryFixture(
+            'Quoted delimiter fixture.',
+            '<div class="fd-fixture" title="/>"><span aria-label="1 > 0">Content</span></div>'
+        );
+
+        const markdown = generateMarkdown(parseStoryFile(storyPath));
+        const basicUsage = markdown.split('## Basic Usage')[1]?.split('##')[0] ?? '';
+        const htmlBlock = basicUsage.match(/```html\s*([\s\S]*?)```/)?.[1].trim() ?? '';
+
+        expect(htmlBlock).toContain('title="/>"');
+        expect(htmlBlock).toContain('aria-label="1 > 0"');
+        expect(htmlBlock).toContain('</div>');
+        expect(validateHTMLBlocks(`\`\`\`html\n${htmlBlock}\n\`\`\``).errors).toEqual([]);
+    });
+
     it('does not copy trailing whitespace from source prose into generated Markdown', () => {
         const storyPath = createStoryFixture(
             'First generated line.  \nSecond generated line.',
@@ -218,6 +234,15 @@ describe('documentation validator command', () => {
     <img src="fixture.svg" alt="">
     <span>Content</span>
 </div>
+\`\`\``;
+
+        expect(validateHTMLBlocks(markdown).errors).toEqual([]);
+    });
+
+    it('accepts tag-like text in raw-text elements', () => {
+        const markdown = `\`\`\`html
+<script>const template = "<div>";</script>
+<style>.fixture::before { content: "</span>"; }</style>
 \`\`\``;
 
         expect(validateHTMLBlocks(markdown).errors).toEqual([]);
