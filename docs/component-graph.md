@@ -549,5 +549,4 @@ graph TB
 - **business-objects**: 2 components
 
 ---
-**Generated**: 2026-09-30
 **Script**: `scripts/generate-relationship-graph.js`

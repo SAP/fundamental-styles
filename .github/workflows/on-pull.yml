@@ -20,6 +20,28 @@ jobs:
           fetch-depth: 0
       - uses: wagoid/commitlint-github-action@v6
 
+  docs-integrity:
+    runs-on: ubuntu-latest
+    name: Docs integrity
+    steps:
+      - uses: actions/checkout@v6
+      - uses: ./.github/actions/nodejs
+        name: Install dependencies
+      - name: Test documentation extraction
+        run: yarn vitest packages/styles/tests/docs-extractor.test.ts --run --reporter=verbose
+      - name: Generate documentation
+        run: |
+          yarn run docs:extract
+          yarn generate:ai-docs
+      - name: Validate documentation
+        run: |
+          yarn validate:docs
+          yarn run test:ai-docs
+      - name: Check generated documentation drift
+        run: |
+          git diff --exit-code -- docs/
+          test -z "$(git ls-files --others --exclude-standard -- docs/)"
+
   install-lint-build:
     runs-on: ubuntu-latest
     name: Install, Lint, Build
@@ -30,11 +52,6 @@ jobs:
       - uses: actions/checkout@v6
       - uses: ./.github/actions/nodejs
         name: Install dependencies
-      - name: Generate and validate AI docs
-        run: |
-          yarn run docs:extract
-          yarn generate:ai-metadata
-          yarn run test:ai-docs
       - run: yarn run lint
       - run: yarn run build:prod
       - run: yarn run size

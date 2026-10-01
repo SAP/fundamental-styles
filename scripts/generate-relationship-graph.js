@@ -372,7 +372,6 @@ function generateMermaidDiagram(graph) {
 
   lines.push('');
   lines.push('---');
-  lines.push(`**Generated**: ${new Date().toISOString().split('T')[0]}`);
   lines.push('**Script**: `scripts/generate-relationship-graph.js`');
   lines.push(''); // Ensure trailing newline
 
