@@ -18,6 +18,7 @@ import wrappingLongTextExampleHtml from "./wrapping-long-text.example.html?raw";
 import '../../../src/side-nav.scss';
 import '../../../src/_nested-list.scss';
 import '../../../../styles/src/button.scss';
+import '../../../../styles/src/message-strip.scss';
 import '../../../../styles/src/icon.scss';
 import '../../../../styles/src/popover.scss';
 import '../../../../styles/src/input.scss';
@@ -26,7 +27,15 @@ import '../../../../styles/src/scrollbar.scss';
 export default {
   title: 'Components/Cx Side Navigation',
   parameters: {
-    description: `The Side Navigation can display structures of up to three levels.
+    description: `<br><div  role="note" class="fd-message-strip fd-message-strip--warning"><div class="fd-message-strip__icon-container" aria-hidden="true">
+    <span class="sap-icon sap-icon--message-warning" role="presentation" aria-hidden="true"></span>
+  </div>
+  <p class="fd-message-strip__text" style="line-height: 1; margin: 0;">
+    The component has been deprecated, use <b>BTP Side Navigation</b> instead.
+  </p>
+</div>
+    
+The Side Navigation can display structures of up to three levels.
 <br><br>In the <code>Wide</code> variant:
 - The first levels always shows an icon
 - If first-level items have children, they show the expand/collapse arrows
@@ -42,7 +51,7 @@ In the <code>Narrow</code> variant:
 - Second level items do not display an icon and are not indented
 - If second-level items have children, they show the expand/collapse arrows
 - Third level items do not display an icon and are indented by 2 rem (32px)`,
-    tags: ['cx', 'theme']
+    tags: ['deprecated', 'cx']
   }
 };
 export const CozyWideIcons = () => cozyWideIconsExampleHtml;

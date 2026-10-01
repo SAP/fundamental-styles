@@ -16,89 +16,74 @@ import '../../../../src/input-group.scss';
 import '../../../../src/object-status.scss';
 
 export default {
-  title: 'BTP/Navigation/Vertical Navigation',
+  title: 'BTP/Side Navigation',
   parameters: {
-    description: `The navigation is one of the signature design elements of BTP Tools. 
+    description: `The side navigation component provides a vertical menu that lets users open applications or modules in your product. It can be implemented as an embedded panel or as an overlay. In embedded mode, the navigation can be expanded or collapsed using the side navigation button. In overlay mode, the button opens the navigation as an overlay. For more details, see <a href="https://www.sap.com/design-system/fiori-design-web/v1-151/ui-elements/side-navigation">SAP Design Guidelines</a>.
 
-## Navigation Types:
-- <b>Vertical Navigation - Expanded</b>. The default navigation visualization provides a logical grouping of navigation items and two levels of hierarchy.
-- <b>Vertical Navigation - Snapped</b>. The snapped vertical navigation variant reduces the navigation width to free horizontal space.
-- <b>Vertical Navigation - Popup</b>. An alternative to the expanded/snapped variant, which places the navigation items in a popup.
-- <b>Horizontal Navigation</b>&nbsp;- The horizontal variant allows for infinite levels of navigation hierarchy through cascading menus.
-    
+## Embedded Mode
+The side navigation is embedded into the page and can expand or collapse. The button toggles between expanded and collapsed states. On screens wider than 600px, the navigation stays embedded. On smaller screens (600px or less) and phones, it becomes a full-screen overlay instead.
+
+## Overlay Mode
+The side navigation opens as a popover and closes when you select an item. On web and tablets, it appears as a responsive popover. On phones, it always appears as a full-screen dialog.
 
 ## Usage
 ### Recommended
-- Use the navigation to switch between different pages of your tool.
-- Use expanded vertical navigation for unknown users.
-- Use persistence and display the last state the vertical navigation was in for know users.
-- Use the snapped variant when the content area displays multi-column content relationships.
-- Use the popup variant to display between 3 and 7 navigation items without hierarchy.
-- Use the horizontal navigation variant to display more than two levels of hierarchy.
-- Use nouns for the titles of navigation items.
+- As the main navigation paradigm across the application, to navigate to multiple targets.
 
 ### Not Recommended
-- Avoid using the navigation for switching between tools. Use the mega menu instead.
-- Avoid using the navigation to switch contexts or views. Use tabs or segmented buttons instead.
-- Avoid using verbs for the titles of navigation items. Use nouns instead.
-- Avoid using the Navigation Items for both navigation and groups. Use only one of the options.
-- Avoid having more than three levels of hierarchy in the horizontal variant.
-- Avoid using icons in secondary navigation and navigation groups.
-- Avoid using spacers to separate navigation content. Use separators instead.
-- Avoid using dividers to separate groups. Use separators instead.
-- Avoid using the bottom navigation area for service information. Use settings and user menu instead.
-
-`,
-    tags: ['btp', 'horizon-only']
+- For structuring the application layout or implementing application-specific logic.
+- If your product has only a single navigation target.
+- In a combination of embedded and overlay modes. Use either of them.
+`
   }
 };
 
 export const Navigation = () => navigationExampleHtml;
-Navigation.storyName = 'Vertical Navigation - Expanded';
+Navigation.storyName = 'Embedded Mode - Expanded';
 Navigation.parameters = {
   docs: {
     description: {
-      story: `Vertical navigation is the most common and preferred way of navigating BTP tools. It comprises many elements that work together to provide a logical information hierarchy and inform users of their current position.
+      story: `
 `
     }
   }
 };
 
 export const NavigationLegacy = () => navigationLegacyExampleHtml;
-NavigationLegacy.storyName = 'Vertical Navigation - Parent Navigation as Link';
+NavigationLegacy.storyName = 'Parent Navigation as Link';
 NavigationLegacy.parameters = {
   docs: {
     description: {
-      story: `By default, the Parent Navigation Item functions as a Navigation Group. A small arrow icon shows the item's expanded/collapsed state in this scenario. In the snapped variant, clicking on such a navigation item will open a popover that displays the title and Child Items.<br>Although not recommended, the Navigation Item can function for navigation and expansion/collapse. In this case, clicking on the arrow will show/hide Child Items, and clicking on the item will perform the navigation.
+      story: `By default, parent items act as navigation groups with an arrow icon showing their expanded/collapsed state. When collapsed, clicking a parent item opens a popover with its child items.<br>Alternatively (not recommended), parent items can both navigate and expand/collapse: clicking the arrow toggles child items, while clicking the item navigates.
 `
     }
   }
 };
 
 export const NavigationSnapped = () => navigationSnappedExampleHtml;
-NavigationSnapped.storyName = 'Vertical Navigation - Snapped';
+NavigationSnapped.storyName = 'Embedded Mode - Collapsed (Snapped)';
 NavigationSnapped.parameters = {
   docs: {
     description: {
-      story: `The snapped vertical navigation variant reduces the navigation width to free horizontal space.
+      story: `When collapsed, child items appear in a popover. Navigation elements move to an overflow area when space is limited. Items with children display as cascaded menus in the overflow. Selecting an overflow item brings its parent into view above the overflow button.
       `
     }
   }
 };
 
 export const NavigationPopup = () => navigationPopupExampleHtml;
-NavigationPopup.storyName = 'Vertical Navigation - Popup';
+NavigationPopup.storyName = 'Overlay Mode (Popup)';
 NavigationPopup.parameters = {
   docs: {
     description: {
-      story: `An alternative to the expanded/snapped variant, which places the navigation items in a popup.
+      story: `In overlay mode, the side navigation button opens and closes the popover. The navigation items are displayed within the popover, allowing access to all levels of the navigation hierarchy without occupying permanent screen space.
 `
     }
   }
 };
 
 export const NavigationTags = () => navigationTagsHtml;
-NavigationTags.storyName = 'Vertical Navigation - Indication Tags';
+NavigationTags.storyName = 'Indication Tags';
 NavigationTags.parameters = {
   docs: {
     description: {
@@ -116,23 +101,23 @@ NavigationTags.parameters = {
 
 
 export const NavigationStickyArea = () => navigationStickyAreaHtml;
-NavigationStickyArea.storyName = 'Vertical Navigation - Sticky Area';
+NavigationStickyArea.storyName = 'Sticky Area';
 NavigationStickyArea.parameters = {
   docs: {
     description: {
-      story: `Fixed header area that is separated by a separator similar to the footer area. Top-aligned and fixed/sticky (always visible). Contains the optional search field. Add <code>.fd-navigation__container--sticky</code> together with <code>.fd-navigation__container--top</code> modifier class to the <code>.fd-navigation__container</code> base class to make the top area sticky.<br>
-Guideline: Recommended not to contain more than 4 items.`
+      story: `Fixed header area that is separated by a separator similar to the footer area. Top-aligned and fixed/sticky (always visible). Contains the optional search field. Add <code>.fd-navigation__container--sticky</code> together with <code>.fd-navigation__container--top</code> modifier class to the <code>.fd-navigation__container</code> base class to make the top area sticky.<br><br>
+Guideline: Recommended not to contain more than 4 items.<br><br>For more details, see <a href="https://www.sap.com/design-system/fiori-design-web/v1-151/ui-elements/side-navigation">SAP Design Guidelines</a>.`
     }
   }
 };
 
 export const NavigationSearch = () => navigationSearchHtml;
-NavigationSearch.storyName = 'Vertical Navigation - Search';
+NavigationSearch.storyName = 'Search';
 NavigationSearch.parameters = {
   docs: {
     description: {
       story: `Search Only: for a sticky search field, the sticky header area with separator is not needed. The search field can be sticky by applying <code>.fd-navigation__list-item--sticky</code> modifier class to the parent navigation list item.
-<br><br><strong>Note:</strong> The <code>.fd-navigation__list-item--home</code> class is still supported for backward compatibility and functions identically to <code>.fd-navigation__list-item--sticky</code>. It was originally intended specifically for Home navigation link, but <code>.fd-navigation__list-item--sticky</code> is now the recommended approach as it can be applied to any list item that needs to be sticky at the top.`
+<br><br><strong>Note:</strong> The <code>.fd-navigation__list-item--home</code> class is still supported for backward compatibility and functions identically to <code>.fd-navigation__list-item--sticky</code>. It was originally intended specifically for Home navigation link, but <code>.fd-navigation__list-item--sticky</code> is now the recommended approach as it can be applied to any list item that needs to be sticky at the top.<br> <br>For more details, see <a href="https://www.sap.com/design-system/fiori-design-web/v1-151/ui-elements/side-navigation">SAP Design Guidelines</a>.`
     }
   }
 };
